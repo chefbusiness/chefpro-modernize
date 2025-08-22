@@ -126,7 +126,7 @@ export default function ModernPricing() {
             {plan.popular && (
               <Badge 
                 variant="default" 
-                className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2"
+                className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1"
               >
                 🔥 Más Popular
               </Badge>
