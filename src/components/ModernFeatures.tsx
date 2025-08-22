@@ -33,14 +33,17 @@ export default function ModernFeatures() {
         </p>
       </div>
 
-      {/* Main Feature Image */}
+      {/* Main Feature Video */}
       <div className="mx-auto max-w-4xl mt-12 mb-12">
         <div className="relative rounded-xl border bg-muted/30 p-4 overflow-hidden">
-          <img 
-            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=612,h=415,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---basic-apps-dWxb1bDVBVI55E7q.png"
-            alt="AI Chef Pro Basic Apps"
-            className="w-full h-auto rounded-lg"
-          />
+          <div className="relative pb-[56.25%] h-0">
+            <iframe 
+              src="https://www.loom.com/embed/ec50c20372974b76b7c3c000500bf48b"
+              frameBorder="0" 
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-lg"
+            />
+          </div>
         </div>
       </div>
 
