@@ -48,7 +48,7 @@ export const featuredApps: FeaturedApp[] = [
       author: 'Chef Ana Rodrigo',
       role: 'Especialista en Fermentación'
     },
-    image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=227,fit=crop/AVLbeJ7l3JfrlNJr/chef-diego-schattenhofer-aichef-ALpokN25zMuQ7oWJ.jpg',
+    image: '/lovable-uploads/63181b9a-0605-4608-b9ce-f331d980d4b6.png',
     ctaText: 'Dominar Fermentación',
     slug: 'fermentus'
   },
