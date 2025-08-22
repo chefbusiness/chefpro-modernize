@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 
 const screenshots = [
   {
@@ -85,14 +85,46 @@ const screenshots = [
 
 export default function ScreenshotGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoRotating, setIsAutoRotating] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const nextSlide = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev + 1) % screenshots.length);
+    setTimeout(() => setIsTransitioning(false), 300);
   };
 
   const prevSlide = () => {
+    if (isTransitioning) return;
+    setIsAutoRotating(false);
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev - 1 + screenshots.length) % screenshots.length);
+    setTimeout(() => setIsTransitioning(false), 300);
   };
+
+  const goToSlide = (index: number) => {
+    if (isTransitioning || index === currentIndex) return;
+    setIsAutoRotating(false);
+    setIsTransitioning(true);
+    setCurrentIndex(index);
+    setTimeout(() => setIsTransitioning(false), 300);
+  };
+
+  const toggleAutoRotation = () => {
+    setIsAutoRotating(!isAutoRotating);
+  };
+
+  // Auto-rotation effect
+  useEffect(() => {
+    if (!isAutoRotating) return;
+    
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoRotating, currentIndex]);
 
   const currentScreenshot = screenshots[currentIndex];
 
@@ -116,7 +148,9 @@ export default function ScreenshotGallery() {
           <img
             src={currentScreenshot.image}
             alt={currentScreenshot.title}
-            className="w-full h-auto object-contain"
+            className={`w-full h-auto object-contain transition-opacity duration-300 ${
+              isTransitioning ? 'opacity-50' : 'opacity-100'
+            }`}
             onError={(e) => {
               // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;
@@ -130,6 +164,15 @@ export default function ScreenshotGallery() {
               `)}`;
             }}
           />
+          {/* Auto-rotation indicator */}
+          {isAutoRotating && (
+            <div className="absolute top-4 right-4">
+              <div className="flex items-center gap-2 bg-black/20 backdrop-blur-sm rounded-full px-3 py-1">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-white text-xs font-medium">Auto</span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* App Info Below Image */}
@@ -152,22 +195,43 @@ export default function ScreenshotGallery() {
             size="sm"
             onClick={prevSlide}
             className="flex items-center gap-2"
+            disabled={isTransitioning}
           >
             <ChevronLeft className="w-4 h-4" />
             Anterior
           </Button>
 
-          {/* Dots Indicator */}
-          <div className="flex space-x-2">
-            {screenshots.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? 'bg-primary' : 'bg-muted-foreground/30'
-                }`}
-              />
-            ))}
+          {/* Center Controls: Dots + Play/Pause */}
+          <div className="flex items-center space-x-4">
+            {/* Auto-rotation toggle */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleAutoRotation}
+              className="flex items-center gap-2"
+            >
+              {isAutoRotating ? (
+                <Pause className="w-4 h-4" />
+              ) : (
+                <Play className="w-4 h-4" />
+              )}
+            </Button>
+
+            {/* Dots Indicator */}
+            <div className="flex space-x-2">
+              {screenshots.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  disabled={isTransitioning}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 hover:scale-110 ${
+                    index === currentIndex 
+                      ? 'bg-primary scale-110' 
+                      : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
 
           <Button
@@ -175,6 +239,7 @@ export default function ScreenshotGallery() {
             size="sm"
             onClick={nextSlide}
             className="flex items-center gap-2"
+            disabled={isTransitioning}
           >
             Siguiente
             <ChevronRight className="w-4 h-4" />
