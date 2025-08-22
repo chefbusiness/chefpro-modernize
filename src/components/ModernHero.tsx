@@ -68,33 +68,6 @@ export default function ModernHero() {
         </Button>
       </div>
 
-      <div className="w-full max-w-5xl mt-12 animate-fade-up">
-        <div className="relative rounded-xl border bg-muted/30 p-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="space-y-2">
-              <img 
-                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=227,fit=crop/AVLbeJ7l3JfrlNJr/chef-diego-schattenhofer-aichef-ALpokN25zMuQ7oWJ.jpg"
-                alt="Chef Diego Schattenhofer - AI Chef Pro"
-                className="w-full h-40 object-cover rounded-lg"
-              />
-            </div>
-            <div className="space-y-2">
-              <img 
-                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=222,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---basic-apps-dWxb1bDVBVI55E7q.png"
-                alt="AI Chef Pro Apps"
-                className="w-full h-40 object-cover rounded-lg"
-              />
-            </div>
-            <div className="space-y-2">
-              <img 
-                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=225,fit=crop/AVLbeJ7l3JfrlNJr/captura-de-pantalla-2024-08-29-a-las-11.58.02-AoPG8GrzGrFKWpoL.png"
-                alt="ID Alérgenos - AI Chef Pro"
-                className="w-full h-40 object-cover rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import ModernHeader from '@/components/ModernHeader';
 import ModernHero from '@/components/ModernHero';
+import ScreenshotSection from '@/components/ScreenshotSection';
 import SocialProofStrip from '@/components/SocialProofStrip';
 import AppsCategories from '@/components/AppsCategories';
 import AppsFinder from '@/components/AppsFinder';
@@ -22,6 +23,7 @@ const Index = () => {
       <ModernHeader />
       <main>
         <ModernHero />
+        <ScreenshotSection />
         <SocialProofStrip />
         <AppsCategories />
         <AppsFinder />
