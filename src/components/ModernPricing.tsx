@@ -24,7 +24,7 @@ export default function ModernPricing() {
       name: 'Pro',
       price: '10€',
       period: '/mes',
-      description: 'Ideal para chefs individuales',
+      description: 'Ideal para profesionales gastronómicos independientes',
       features: [
         'Todas las funciones básicas',
         'Generador de recetas avanzado',
@@ -38,10 +38,10 @@ export default function ModernPricing() {
       name: 'Premium',
       price: '15€',
       period: '/mes',
-      description: 'Para uso frecuente y mayor creatividad',
+      description: 'Para profesionales con uso frecuente y mayor creatividad',
       features: [
         'Todas las funciones Pro',
-        'Coaching para Chefs',
+        'Coaching profesional gastronómico',
         'Análisis nutricional avanzado',
         'Personalización completa',
         'Integraciones avanzadas'
@@ -52,7 +52,7 @@ export default function ModernPricing() {
       name: 'Premium Pro',
       price: '25€',
       period: '/mes',
-      description: 'Para chefs en roles de liderazgo',
+      description: 'Para dueños y managers de negocios gastronómicos',
       features: [
         'Todas las funciones Premium',
         'Gestión de equipo',
@@ -66,7 +66,7 @@ export default function ModernPricing() {
       name: 'Premium Plus',
       price: '50€',
       period: '/mes',
-      description: 'Uso ilimitado para chefs ejecutivos',
+      description: 'Para empresarios gastronómicos y cadenas de restaurantes',
       features: [
         'Acceso ilimitado completo',
         'Soporte 24/7',
@@ -82,7 +82,7 @@ export default function ModernPricing() {
       period: '/año',
       originalPrice: '600€',
       discount: 'Ahorra 100€',
-      description: 'Ideal para Chefs Ejecutivos y Directivos en Dirección Gastronómica',
+      description: 'Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos',
       features: [
         'Todas las 55+ herramientas incluidas',
         'Uso ilimitado durante todo el año',
@@ -107,9 +107,9 @@ export default function ModernPricing() {
           Planes y Precios
         </h2>
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
-          Planes adaptados a diferentes etapas de tu carrera como chef. 
-          Cada plan está diseñado para apoyar tu crecimiento profesional 
-          y adaptarse a tus necesidades cambiantes.
+          Planes adaptados para todos los profesionales gastronómicos: chefs, dueños de restaurantes, 
+          managers, bartenders, panaderos, pasteleros, chocolateros y emprendedores del sector. 
+          Cada plan está diseñado para impulsar tu negocio gastronómico.
         </p>
       </div>
 
