@@ -88,19 +88,19 @@ export default function ScreenshotGallery() {
               `)}`;
             }}
           />
-          
-          {/* Overlay Info */}
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-            <Badge variant="secondary" className="mb-2">
-              {currentScreenshot.category}
-            </Badge>
-            <h3 className="text-white text-xl font-bold mb-2">
-              {currentScreenshot.title}
-            </h3>
-            <p className="text-gray-200 text-sm">
-              {currentScreenshot.description}
-            </p>
-          </div>
+        </div>
+
+        {/* App Info Below Image */}
+        <div className="text-center mt-6 space-y-3">
+          <Badge variant="secondary">
+            {currentScreenshot.category}
+          </Badge>
+          <h3 className="text-2xl font-bold">
+            {currentScreenshot.title}
+          </h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            {currentScreenshot.description}
+          </p>
         </div>
 
         {/* Navigation Controls */}
