@@ -22,7 +22,7 @@ export const featuredApps: FeaturedApp[] = [
       author: 'Chef M. García',
       role: 'Chef Ejecutivo, Restaurante Michelin'
     },
-    image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=222,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---basic-apps-dWxb1bDVBVI55E7q.png',
+    image: '/lovable-uploads/69dc47f9-78f7-4d07-9be2-86a312f39d0d.png',
     ctaText: 'Explorar Ingredientes',
     slug: 'sosa-ingredients'
   },
