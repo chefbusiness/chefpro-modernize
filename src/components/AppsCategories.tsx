@@ -31,39 +31,39 @@ export default function AppsCategories() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {appCategories.map((category) => {
           const IconComponent = category.icon;
           return (
             <Card 
               key={category.id}
-              className="group hover:shadow-lg transition-all duration-300 cursor-pointer hover:scale-105 border-border/50 hover:border-accent/50"
+              className="group hover:shadow-lg transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-[0.98] border-border/50 hover:border-accent/50"
               onClick={() => scrollToSection(category.id)}
             >
-              <CardHeader>
+              <CardHeader className="p-4 sm:p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <IconComponent className="h-8 w-8 text-accent group-hover:text-accent-dark transition-colors" />
-                  <Badge variant="secondary" className="bg-accent/10 text-accent-dark font-semibold">
+                  <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
+                  <Badge variant="secondary" className="bg-accent/10 text-accent-dark font-semibold text-xs">
                     {category.count} Apps
                   </Badge>
                 </div>
-                <CardTitle className="text-xl group-hover:text-accent transition-colors">
+                <CardTitle className="text-lg sm:text-xl group-hover:text-accent transition-colors leading-tight">
                   {category.name}
                 </CardTitle>
-                <CardDescription className="text-base">
+                <CardDescription className="text-sm sm:text-base leading-relaxed">
                   {category.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 sm:p-6 pt-0">
                 <div className="flex flex-wrap gap-1">
-                  {category.apps.slice(0, 4).map((app) => (
+                  {category.apps.slice(0, 3).map((app) => (
                     <Badge key={app.id} variant="outline" className="text-xs">
                       {app.name}
                     </Badge>
                   ))}
-                  {category.apps.length > 4 && (
+                  {category.apps.length > 3 && (
                     <Badge variant="outline" className="text-xs text-muted-foreground">
-                      +{category.apps.length - 4} más
+                      +{category.apps.length - 3} más
                     </Badge>
                   )}
                   {category.id === 'worldCookbooks' && (

@@ -21,29 +21,29 @@ export default function BusinessToolsShowcase() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {businessTools.map((tool) => {
           const IconComponent = tool.icon;
           
           return (
             <Card key={tool.id} className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
-              <CardHeader>
-                <div className="flex items-center justify-between">
-                  <IconComponent className="h-8 w-8 text-accent group-hover:text-accent-dark transition-colors" />
+              <CardHeader className="p-4 sm:p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
                 </div>
-                <CardTitle className="text-lg group-hover:text-accent transition-colors">{tool.name}</CardTitle>
-                <CardDescription>{tool.description}</CardDescription>
+                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{tool.name}</CardTitle>
+                <CardDescription className="text-sm leading-relaxed">{tool.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="p-4 sm:p-6 pt-0">
                 <div className="bg-muted/50 p-3 rounded text-sm">
-                  <p className="text-muted-foreground mb-1">Caso de uso:</p>
-                  <p className="font-medium">"{tool.preview}"</p>
+                  <p className="text-muted-foreground mb-1 text-xs">Caso de uso:</p>
+                  <p className="font-medium text-xs sm:text-sm leading-relaxed">"{tool.preview}"</p>
                 </div>
               </CardContent>
-              <CardFooter>
+              <CardFooter className="p-4 sm:p-6 pt-0">
                 <Button 
                   variant="outline" 
-                  className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                  className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
                   onClick={() => handleAppClick(tool.slug)}
                 >
                   Usar Herramienta

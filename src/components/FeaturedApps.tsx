@@ -30,16 +30,16 @@ export default function FeaturedApps() {
       </div>
 
       <Carousel className="w-full max-w-5xl mx-auto">
-        <CarouselContent>
+        <CarouselContent className="-ml-2 md:-ml-4">
           {featuredApps.map((app) => (
-            <CarouselItem key={app.id} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={app.id} className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3">
               <Card className="group h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
-                <CardHeader>
+                <CardHeader className="p-4 sm:p-6">
                   <div className="relative mb-4">
                     <img 
                       src={app.image} 
                       alt={`${app.name} screenshot`}
-                      className="w-full h-40 object-cover rounded-lg"
+                      className="w-full h-32 sm:h-40 object-cover rounded-lg"
                       loading="lazy"
                     />
                     <div className="absolute top-2 right-2">
@@ -49,24 +49,24 @@ export default function FeaturedApps() {
                       </div>
                     </div>
                   </div>
-                  <CardTitle className="text-lg group-hover:text-accent transition-colors">
+                  <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">
                     {app.name}
                   </CardTitle>
-                  <CardDescription>{app.description}</CardDescription>
+                  <CardDescription className="text-sm leading-relaxed">{app.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <blockquote className="border-l-4 border-accent/30 pl-4 italic text-sm">
-                    <p className="mb-2">"{app.testimonial.text}"</p>
+                <CardContent className="p-4 sm:p-6 pt-0">
+                  <blockquote className="border-l-4 border-accent/30 pl-3 sm:pl-4 italic text-sm">
+                    <p className="mb-2 text-xs sm:text-sm leading-relaxed">"{app.testimonial.text}"</p>
                     <footer className="text-muted-foreground">
-                      <strong>{app.testimonial.author}</strong>
+                      <strong className="text-xs sm:text-sm">{app.testimonial.author}</strong>
                       <br />
                       <span className="text-xs">{app.testimonial.role}</span>
                     </footer>
                   </blockquote>
                 </CardContent>
-                <CardFooter>
+                <CardFooter className="p-4 sm:p-6 pt-0">
                   <Button 
-                    className="w-full btn-gold group-hover:shadow-lg"
+                    className="w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
                     onClick={() => handleAppClick(app.slug)}
                   >
                     {app.ctaText}

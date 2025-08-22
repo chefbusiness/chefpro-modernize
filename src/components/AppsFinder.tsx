@@ -23,12 +23,12 @@ export default function AppsFinder() {
       </div>
 
       <Tabs defaultValue="chef-ejecutivo" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8">
+        <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 mb-6 sm:mb-8 h-auto">
           {personas.map((persona) => (
-            <TabsTrigger key={persona.id} value={persona.id} className="text-xs md:text-sm">
-              <span className="mr-1">{persona.emoji}</span>
-              <span className="hidden sm:inline">{persona.name.split(' ').slice(-1)}</span>
-              <span className="sm:hidden">{persona.emoji}</span>
+            <TabsTrigger key={persona.id} value={persona.id} className="text-xs sm:text-sm p-2 sm:p-3 flex-col sm:flex-row gap-1 h-auto min-h-[3rem] sm:min-h-[2.5rem]">
+              <span className="text-sm sm:text-base">{persona.emoji}</span>
+              <span className="hidden md:inline text-center leading-tight">{persona.name.split(' ').slice(-2).join(' ')}</span>
+              <span className="md:hidden text-center text-xs leading-tight">{persona.name.split(' ').slice(-1)}</span>
             </TabsTrigger>
           ))}
         </TabsList>
@@ -45,30 +45,30 @@ export default function AppsFinder() {
                 <p className="text-muted-foreground">{persona.description}</p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
                 {recommendedApps.map((app) => {
                   if (!app) return null;
                   const IconComponent = app.icon;
                   
                   return (
-                    <Card key={app.id} className="group hover:shadow-lg transition-all duration-300">
-                      <CardHeader>
+                    <Card key={app.id} className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
+                      <CardHeader className="p-4 sm:p-6">
                         <div className="flex items-center justify-between mb-2">
-                          <IconComponent className="h-6 w-6 text-accent" />
+                          <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
                         </div>
-                        <CardTitle className="text-lg">{app.name}</CardTitle>
-                        <CardDescription>{app.description}</CardDescription>
+                        <CardTitle className="text-base sm:text-lg leading-tight">{app.name}</CardTitle>
+                        <CardDescription className="text-sm leading-relaxed">{app.description}</CardDescription>
                       </CardHeader>
-                      <CardContent>
+                      <CardContent className="p-4 sm:p-6 pt-0">
                         <div className="bg-muted/50 p-3 rounded text-sm">
-                          <p className="text-muted-foreground mb-1">Preview:</p>
-                          <p className="font-medium text-sm">"{app.preview}"</p>
+                          <p className="text-muted-foreground mb-1 text-xs">Preview:</p>
+                          <p className="font-medium text-xs sm:text-sm leading-relaxed">"{app.preview}"</p>
                         </div>
                       </CardContent>
-                      <CardFooter>
+                      <CardFooter className="p-4 sm:p-6 pt-0">
                         <Button 
                           variant="outline" 
-                          className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors"
+                          className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
                           onClick={() => handleAppClick(app.slug)}
                         >
                           Probar Ahora

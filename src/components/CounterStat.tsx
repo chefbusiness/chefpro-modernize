@@ -71,11 +71,11 @@ export default function CounterStat({
   }, [isVisible, end, duration]);
 
   return (
-    <div ref={counterRef} className="text-center">
-      <div className="text-2xl md:text-3xl font-bold gradient-text">
+    <div ref={counterRef} className="text-center p-2">
+      <div className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text">
         {prefix}{count}{suffix}
       </div>
-      <div className="text-sm text-muted-foreground font-medium">
+      <div className="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">
         {label}
       </div>
     </div>

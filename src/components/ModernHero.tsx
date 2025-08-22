@@ -31,7 +31,7 @@ export default function ModernHero() {
       </p>
 
       {/* Counter Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-8 p-6 bg-muted/30 rounded-xl border">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 my-6 sm:my-8 p-4 sm:p-6 bg-muted/30 rounded-xl border">
         <CounterStat end={55} suffix="+" label="Apps Especializadas" />
         <CounterStat end={25} suffix="+" label="Recetarios Regionales" />
         <CounterStat end={10} suffix="+" label="Herramientas de Negocio" />
@@ -49,11 +49,11 @@ export default function ModernHero() {
         </span>
       </div>
 
-      <div className="flex gap-4 animate-fade-up">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up w-full sm:w-auto">
         <Button 
           size="lg" 
           onClick={handleCTAClick}
-          className="btn-gold hover:shadow-gold-glow"
+          className="btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]"
         >
           {t.cta.primary}
           <ArrowRight className="ml-2 h-4 w-4" />
@@ -62,7 +62,7 @@ export default function ModernHero() {
           variant="outline" 
           size="lg"
           onClick={() => window.open('https://blog.aichef.pro', '_blank')}
-          className="btn-gold-outline"
+          className="btn-gold-outline w-full sm:w-auto min-h-[3rem]"
         >
           Ver Recursos
         </Button>

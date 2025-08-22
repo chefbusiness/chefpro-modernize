@@ -20,26 +20,28 @@ export default function WorldCookbooks() {
       <div className="space-y-8">
         {/* Europa */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-            🌍 <span className="gradient-text">Europa</span>
-            <Badge variant="secondary">10 Cocinas</Badge>
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
+            <span className="flex items-center gap-2">
+              🌍 <span className="gradient-text">Europa</span>
+            </span>
+            <Badge variant="secondary" className="text-xs w-fit">10 Cocinas</Badge>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             {worldCookbooks.europa.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50"
+                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
                 onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-center text-lg flex flex-col items-center gap-1">
-                    <span className="text-2xl">{cuisine.flag}</span>
-                    <span className="text-sm">{cuisine.name}</span>
+                <CardHeader className="p-3 sm:p-4 pb-2">
+                  <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
+                    <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
-                  <CardContent className="pt-0">
-                    <CardDescription className="text-xs">
+                  <CardContent className="p-3 sm:p-4 pt-0">
+                    <CardDescription className="text-xs leading-relaxed">
                       {cuisine.preview}
                     </CardDescription>
                   </CardContent>
@@ -51,26 +53,28 @@ export default function WorldCookbooks() {
 
         {/* Latinoamérica */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-            🌎 <span className="gradient-text">Latinoamérica</span>
-            <Badge variant="secondary">11 Cocinas</Badge>
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
+            <span className="flex items-center gap-2">
+              🌎 <span className="gradient-text">Latinoamérica</span>
+            </span>
+            <Badge variant="secondary" className="text-xs w-fit">11 Cocinas</Badge>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
             {worldCookbooks.latinoamerica.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50"
+                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
                 onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-center text-lg flex flex-col items-center gap-1">
-                    <span className="text-2xl">{cuisine.flag}</span>
-                    <span className="text-sm">{cuisine.name}</span>
+                <CardHeader className="p-3 sm:p-4 pb-2">
+                  <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
+                    <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
-                  <CardContent className="pt-0">
-                    <CardDescription className="text-xs">
+                  <CardContent className="p-3 sm:p-4 pt-0">
+                    <CardDescription className="text-xs leading-relaxed">
                       {cuisine.preview}
                     </CardDescription>
                   </CardContent>
@@ -82,26 +86,28 @@ export default function WorldCookbooks() {
 
         {/* Asia */}
         <div>
-          <h3 className="text-2xl font-semibold mb-4 flex items-center gap-2">
-            🌏 <span className="gradient-text">Asia</span>
-            <Badge variant="secondary">4 Cocinas</Badge>
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
+            <span className="flex items-center gap-2">
+              🌏 <span className="gradient-text">Asia</span>
+            </span>
+            <Badge variant="secondary" className="text-xs w-fit">4 Cocinas</Badge>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {worldCookbooks.asia.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50"
+                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
                 onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-center text-lg flex flex-col items-center gap-1">
-                    <span className="text-2xl">{cuisine.flag}</span>
-                    <span className="text-sm">{cuisine.name}</span>
+                <CardHeader className="p-3 sm:p-4 pb-2">
+                  <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
+                    <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
-                  <CardContent className="pt-0">
-                    <CardDescription className="text-xs">
+                  <CardContent className="p-3 sm:p-4 pt-0">
+                    <CardDescription className="text-xs leading-relaxed">
                       {cuisine.preview}
                     </CardDescription>
                   </CardContent>
