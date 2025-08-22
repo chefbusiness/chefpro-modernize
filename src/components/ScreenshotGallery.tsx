@@ -70,11 +70,11 @@ export default function ScreenshotGallery() {
 
       <div className="max-w-6xl mx-auto">
         {/* Screenshot Display */}
-        <div className="relative rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300" style={{ aspectRatio: '16/10' }}>
+        <div className="relative rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 bg-white">
           <img
             src={currentScreenshot.image}
             alt={currentScreenshot.title}
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain"
             onError={(e) => {
               // Fallback to placeholder if image fails to load
               const target = e.target as HTMLImageElement;
