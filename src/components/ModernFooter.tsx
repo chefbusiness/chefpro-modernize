@@ -18,8 +18,11 @@ export default function ModernFooter() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2">
-              <div className="h-6 w-6 rounded bg-primary" />
-              <span className="text-lg font-bold">AI Chef Pro</span>
+              <img 
+                src="/src/assets/logo-ai-chef-pro.svg" 
+                alt="AI Chef Pro Logo" 
+                className="h-8 w-auto"
+              />
             </div>
             <p className="mt-4 text-sm text-muted-foreground max-w-md">
               <strong>Inteligencia Artificial para el Chef de Hoy.</strong> 

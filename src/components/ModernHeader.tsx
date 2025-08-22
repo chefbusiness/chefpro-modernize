@@ -45,8 +45,11 @@ export default function ModernHeader() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <div className="h-6 w-6 rounded bg-primary" />
-            <span className="font-bold">AI Chef Pro</span>
+            <img 
+              src="/src/assets/logo-ai-chef-pro.svg" 
+              alt="AI Chef Pro Logo" 
+              className="h-8 w-auto"
+            />
           </a>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a
