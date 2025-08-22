@@ -60,7 +60,7 @@ export default function ModernPricing() {
         'API access',
         'Consultoría mensual'
       ],
-      popular: true
+      popular: false
     },
     {
       name: 'Premium Plus',
@@ -75,6 +75,24 @@ export default function ModernPricing() {
         'Integración enterprise'
       ],
       popular: false
+    },
+    {
+      name: 'Premium Plus Anual',
+      price: '500€',
+      period: '/año',
+      originalPrice: '600€',
+      discount: 'Ahorra 100€',
+      description: 'Ideal para Chefs Ejecutivos y Directivos en Dirección Gastronómica',
+      features: [
+        'Todas las 55+ herramientas incluidas',
+        'Uso ilimitado durante todo el año',
+        'Acceso a todas las cocinas del mundo',
+        'Herramientas avanzadas de negocio',
+        'Soporte premium 24/7',
+        'Consultoría mensual personalizada'
+      ],
+      popular: true,
+      isAnnual: true
     }
   ];
 
@@ -95,7 +113,7 @@ export default function ModernPricing() {
         </p>
       </div>
 
-      <div className="grid w-full items-start gap-6 overflow-visible py-12 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="grid w-full items-start gap-6 overflow-visible py-12 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6">
         {plans.map((plan, index) => (
           <Card 
             key={index} 
@@ -114,13 +132,29 @@ export default function ModernPricing() {
               </Badge>
             )}
             
+            {plan.discount && (
+              <Badge 
+                variant="secondary" 
+                className="absolute -top-3 right-4 bg-green-500/10 text-green-600 border-green-500/20"
+              >
+                {plan.discount}
+              </Badge>
+            )}
+            
             <CardHeader className="text-center pb-2">
               <CardTitle className="text-lg font-medium">{plan.name}</CardTitle>
-              <div className="flex items-baseline justify-center gap-1">
-                <span className="text-3xl font-bold">{plan.price}</span>
-                {plan.period && (
-                  <span className="text-muted-foreground">{plan.period}</span>
+              <div className="flex flex-col items-center gap-1">
+                {plan.originalPrice && (
+                  <span className="text-sm text-muted-foreground line-through">
+                    {plan.originalPrice}
+                  </span>
                 )}
+                <div className="flex items-baseline justify-center gap-1">
+                  <span className="text-3xl font-bold">{plan.price}</span>
+                  {plan.period && (
+                    <span className="text-muted-foreground">{plan.period}</span>
+                  )}
+                </div>
               </div>
               <CardDescription className="text-sm">{plan.description}</CardDescription>
             </CardHeader>
