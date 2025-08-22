@@ -162,11 +162,11 @@ export default function ModernPricing() {
             <CardContent className="grid gap-4">
               <Button 
                 onClick={handlePlanClick}
-                variant={plan.popular ? "default" : "secondary"}
-                className={`w-full ${
+                variant="default"
+                className={`w-full transition-all duration-300 ${
                   plan.popular 
-                    ? 'btn-gold hover:shadow-gold-glow' 
-                    : 'bg-primary text-primary-foreground hover:bg-primary/90'
+                    ? 'btn-gold hover:shadow-gold-glow scale-105' 
+                    : 'bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold'
                 }`}
               >
                 {plan.price === 'Gratis' ? 'Empezar Gratis' : 'Seleccionar Plan'}
