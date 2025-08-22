@@ -7,7 +7,8 @@ import {
 } from '@/components/ui/carousel';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Star } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Star, ZoomIn } from 'lucide-react';
 import { featuredApps } from '@/data/featured';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -35,13 +36,37 @@ export default function FeaturedApps() {
             <CarouselItem key={app.id} className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3">
               <Card className="group h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
                 <CardHeader className="p-4 sm:p-6">
-                  <div className="relative mb-4">
-                    <img 
-                      src={app.image} 
-                      alt={`${app.name} screenshot`}
-                      className="w-full h-32 sm:h-40 object-cover rounded-lg"
-                      loading="lazy"
-                    />
+                  <div className="relative mb-4 group/image">
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <div className="relative cursor-pointer">
+                          <img 
+                            src={app.image} 
+                            alt={`${app.name} screenshot`}
+                            className="w-full h-32 sm:h-40 object-cover rounded-lg transition-all duration-300 group-hover/image:scale-105"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-black/30 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
+                            <ZoomIn className="h-8 w-8 text-white" />
+                          </div>
+                        </div>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl w-[95vw] h-[95vh] p-4">
+                        <div className="relative w-full h-full flex flex-col">
+                          <div className="mb-4">
+                            <h3 className="text-xl font-bold">{app.name}</h3>
+                            <p className="text-muted-foreground">{app.description}</p>
+                          </div>
+                          <div className="flex-1 flex items-center justify-center">
+                            <img 
+                              src={app.image} 
+                              alt={`${app.name} screenshot`}
+                              className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                            />
+                          </div>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                     <div className="absolute top-2 right-2">
                       <div className="flex items-center gap-1 bg-background/90 backdrop-blur-sm px-2 py-1 rounded-full">
                         <Star className="h-3 w-3 fill-accent text-accent" />

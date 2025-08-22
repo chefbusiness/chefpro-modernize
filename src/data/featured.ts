@@ -28,14 +28,14 @@ export const featuredApps: FeaturedApp[] = [
   },
   {
     id: 'menu-plate-seo-featured',
-    name: 'Menu Plate Local SEO',
+    name: 'MenuDish Local SEO',
     description: 'Optimiza cada plato para buscadores',
     testimonial: {
       text: 'Mis platos ahora aparecen en Google cuando la gente busca comida local. Las reservas han aumentado un 40%',
       author: 'Restaurante El Olivo',
       role: 'Propietario'
     },
-    image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=172,h=225,fit=crop/AVLbeJ7l3JfrlNJr/captura-de-pantalla-2024-08-29-a-las-11.58.02-AoPG8GrzGrFKWpoL.png',
+    image: '/lovable-uploads/f48cf594-86e2-4b91-8c3e-a84ee90031ff.png',
     ctaText: 'Optimizar Mi Menú',
     slug: 'menu-plate-seo'
   },
