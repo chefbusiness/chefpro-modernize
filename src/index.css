@@ -2,131 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AI Chef Pro Design System - Modern SaaS Style */
+/* AI Chef Pro Design System - Shadcn.com Style */
 
 @layer base {
   :root {
-    /* AI Chef Pro Color Palette */
+    /* Shadcn-inspired neutral palette */
     --background: 0 0% 100%;
-    --foreground: 222 84% 5%;
+    --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
+    --card-foreground: 240 10% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 5%;
+    --popover-foreground: 240 10% 3.9%;
 
-    /* Primary: Golden Yellow for CTAs */
-    --primary: 42 88% 61%; /* #F5C842 */
-    --primary-foreground: 222 84% 5%;
-    --primary-hover: 42 88% 55%;
+    /* Primary: Subtle dark for modern look */
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
 
-    /* Secondary: Dark Blue/Black */
-    --secondary: 210 40% 16%; /* #2c3e50 */
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary: Very subtle gray */
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
 
-    /* Accent: Blue */
-    --accent: 217 91% 60%; /* #3b82f6 */
-    --accent-foreground: 0 0% 98%;
+    /* Accent: AI Chef Pro gold but very subtle */
+    --accent: 42 100% 50%;
+    --accent-foreground: 240 5.9% 10%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 42 88% 61%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
 
-    /* AI Chef Pro Specific Tokens */
-    --chef-gold: 42 88% 61%;
-    --chef-dark: 222 84% 5%;
-    --chef-blue: 217 91% 60%;
-    --chef-gray: 220 9% 46%;
-    
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--chef-dark)) 0%, hsl(210 40% 20%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(220 14% 98%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(var(--chef-gold)) 0%, hsl(42 88% 55%) 100%);
-    
-    /* Shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--chef-dark) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--chef-gold) / 0.2);
-    --shadow-card: 0 4px 20px -2px hsl(var(--chef-dark) / 0.05);
-    
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222 84% 5%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
-    --card: 222 84% 5%;
+    --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 222 84% 5%;
+    --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 42 88% 61%;
-    --primary-foreground: 222 84% 5%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
 
-    --secondary: 210 40% 20%;
+    --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 217 33% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
 
-    --accent: 217 91% 60%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 42 100% 50%;
+    --accent-foreground: 240 5.9% 10%;
 
-    --destructive: 0 63% 31%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 217 33% 18%;
-    --input: 217 33% 18%;
-    --ring: 42 88% 61%;
-    
-    --chef-gold: 42 88% 61%;
-    --chef-dark: 0 0% 98%;
-    --chef-blue: 217 91% 60%;
-    --chef-gray: 215 20% 65%;
-    
-    --gradient-hero: linear-gradient(135deg, hsl(222 84% 5%) 0%, hsl(210 40% 10%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(222 84% 5%) 0%, hsl(217 33% 15%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(var(--chef-gold)) 0%, hsl(42 88% 55%) 100%);
-    
-    --shadow-elegant: 0 10px 30px -10px hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 40px hsl(var(--chef-gold) / 0.3);
-    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.2);
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
 
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 240 5% 96%;
-    --sidebar-primary: 224 76% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4% 16%;
-    --sidebar-accent-foreground: 240 5% 96%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -136,68 +96,43 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
-  /* Custom Animations */
-  @keyframes fade-in-up {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+
+  /* Typography improvements like shadcn */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
   }
-  
-  @keyframes scale-in {
-    0% {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes glow-pulse {
-    0%, 100% {
-      box-shadow: 0 0 20px hsl(var(--chef-gold) / 0.2);
-    }
-    50% {
-      box-shadow: 0 0 30px hsl(var(--chef-gold) / 0.4);
-    }
+
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
 @layer components {
-  .chef-gradient-text {
-    background: linear-gradient(135deg, hsl(var(--chef-gold)), hsl(42 88% 55%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  /* Shadcn-style animations */
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out forwards;
   }
-  
-  .chef-cta-button {
-    @apply bg-gradient-to-r from-[hsl(var(--chef-gold))] to-[hsl(42_88%_55%)] text-[hsl(var(--chef-dark))] font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  
-  .chef-card {
-    @apply bg-card border border-border rounded-2xl p-6 shadow-[var(--shadow-card)] transition-all duration-300 hover:shadow-[var(--shadow-elegant)];
+
+  /* Modern hover effects */
+  .hover-card {
+    @apply transition-all duration-200 hover:shadow-md hover:border-border/80;
   }
-  
-  .animate-fade-in-up {
-    animation: fade-in-up 0.6s ease-out;
-  }
-  
-  .animate-scale-in {
-    animation: scale-in 0.4s ease-out;
-  }
-  
-  .animate-glow-pulse {
-    animation: glow-pulse 2s ease-in-out infinite;
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent;
   }
 }
