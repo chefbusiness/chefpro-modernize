@@ -3,9 +3,32 @@ import { Badge } from '@/components/ui/badge';
 import { Star, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import CounterStat from './CounterStat';
+import { useState, useEffect } from 'react';
 
 export default function ModernHero() {
   const { t, getAppUrl, currentLanguage } = useLanguage();
+  
+  // Rotating words for dynamic title
+  const businessTypes = [
+    'Gestión', 'Restaurante', 'Catering', 'Pizzería', 'Hamburguesería', 
+    'Panadería', 'Pastelería', 'Chocolatería', 'Heladería', 'Dark Kitchen', 
+    'Cafetería', 'Brunch'
+  ];
+  
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentWordIndex((prev) => (prev + 1) % businessTypes.length);
+        setIsAnimating(false);
+      }, 300); // Half of transition duration
+    }, 3000); // Change word every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [businessTypes.length]);
 
   const handleCTAClick = () => {
     window.open(getAppUrl(currentLanguage) + '/pricing', '_blank');
@@ -18,7 +41,15 @@ export default function ModernHero() {
       </Badge>
       
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
-        {t.hero.title.split(' ').slice(0, -3).join(' ')}{" "}
+        Transforma tu{" "}
+        <span 
+          className={`inline-block transition-all duration-300 gradient-text ${
+            isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+          }`}
+        >
+          {businessTypes[currentWordIndex]}
+        </span>
+        {" "}con{" "}
         <span className="gradient-text">AI Chef Pro</span>
       </h1>
       
