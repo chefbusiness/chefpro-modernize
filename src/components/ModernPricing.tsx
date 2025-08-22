@@ -46,7 +46,7 @@ export default function ModernPricing() {
         'Personalización completa',
         'Integraciones avanzadas'
       ],
-      popular: true
+      popular: false
     },
     {
       name: 'Premium Pro',
@@ -60,7 +60,7 @@ export default function ModernPricing() {
         'API access',
         'Consultoría mensual'
       ],
-      popular: false
+      popular: true
     },
     {
       name: 'Premium Plus',
