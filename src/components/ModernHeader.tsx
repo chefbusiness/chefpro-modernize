@@ -3,6 +3,14 @@ import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu } from 'lucide-react';
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '@/components/ui/navigation-menu';
+import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -51,34 +59,117 @@ export default function ModernHeader() {
               className="h-8 w-auto"
             />
           </a>
-          <nav className="hidden md:flex items-center gap-6 text-sm">
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#inicio"
-            >
-              {t.nav.inicio}
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#herramientas"
-            >
-              Herramientas
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#pricing"
-            >
-              Precios
-            </a>
-            <a
-              className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="https://blog.aichef.pro"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t.nav.blog}
-            </a>
-          </nav>
+          <NavigationMenu className="hidden md:flex">
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink 
+                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  href="#inicio"
+                >
+                  {t.nav.inicio}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                  Aplicaciones
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[600px] gap-3 p-4 md:grid-cols-3">
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">Creatividad</h4>
+                      <div className="grid gap-1">
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#showcase-creatividad"
+                        >
+                          Cocina Creativa
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#showcase-creatividad"
+                        >
+                          Pastelería
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#showcase-creatividad"
+                        >
+                          Food Pairing
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">Recetarios</h4>
+                      <div className="grid gap-1">
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#recetarios"
+                        >
+                          Europa (10)
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#recetarios"
+                        >
+                          Latinoamérica (11)
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#recetarios"
+                        >
+                          Asia (4)
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">Business</h4>
+                      <div className="grid gap-1">
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#herramientas-business"
+                        >
+                          Mermas GenCal
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#herramientas-business"
+                        >
+                          ID Alérgenos
+                        </NavigationMenuLink>
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="#herramientas-business"
+                        >
+                          Mental Coach
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <NavigationMenuLink 
+                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  href="#pricing"
+                >
+                  Precios
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <NavigationMenuLink 
+                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  href="https://blog.aichef.pro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.nav.blog}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
@@ -140,7 +231,19 @@ export default function ModernHeader() {
                     <a href="#inicio" className="font-medium">
                       {t.nav.inicio}
                     </a>
-                    <a href="#herramientas" className="font-medium">
+                    <a href="#categorias-apps" className="font-medium">
+                      Aplicaciones
+                    </a>
+                    <a href="#filtro-apps" className="font-medium">
+                      Encuentra tu App
+                    </a>
+                    <a href="#showcase-creatividad" className="font-medium">
+                      Creatividad
+                    </a>
+                    <a href="#recetarios" className="font-medium">
+                      Recetarios
+                    </a>
+                    <a href="#herramientas-business" className="font-medium">
                       Herramientas
                     </a>
                     <a href="#pricing" className="font-medium">

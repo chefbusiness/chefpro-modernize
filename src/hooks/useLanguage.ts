@@ -19,7 +19,8 @@ const translations = {
     },
     hero: {
       title: 'Transforma tu Gestión con AI Chef Pro',
-      subtitle: 'Suite de Herramientas y Aplicaciones de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.',
+      subtitle: '55+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.',
+      description: 'Suite de Herramientas y Aplicaciones de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.',
       rating: 'Calificación: 5 estrellas'
     }
   },
@@ -39,7 +40,8 @@ const translations = {
     },
     hero: {
       title: 'Transform your Management with AI Chef Pro',
-      subtitle: 'Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.',
+      subtitle: '55+ Specialized AI Tools for Chefs. From Culinary Creativity to Digital Marketing.',
+      description: 'Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.',
       rating: 'Rating: 5 stars'
     }
   },
@@ -59,7 +61,8 @@ const translations = {
     },
     hero: {
       title: 'Transformez votre Gestion avec AI Chef Pro',
-      subtitle: 'Suite d\'outils IA et applications, modèles entraînés pour l\'usage quotidien des Chefs, Cuisiniers et professionnels de l\'hôtellerie.',
+      subtitle: '55+ Outils IA Spécialisés pour Chefs. De la Créativité Culinaire au Marketing Digital.',
+      description: 'Suite d\'outils IA et applications, modèles entraînés pour l\'usage quotidien des Chefs, Cuisiniers et professionnels de l\'hôtellerie.',
       rating: 'Note: 5 étoiles'
     }
   },
@@ -79,7 +82,8 @@ const translations = {
     },
     hero: {
       title: 'Transformieren Sie Ihr Management mit AI Chef Pro',
-      subtitle: 'Suite von KI-Tools und Anwendungen, Modelle für den täglichen Gebrauch von Köchen und Gastronomiefachleuten.',
+      subtitle: '55+ Spezialisierte KI-Tools für Köche. Von Kulinarischer Kreativität bis Digital Marketing.',
+      description: 'Suite von KI-Tools und Anwendungen, Modelle für den täglichen Gebrauch von Köchen und Gastronomiefachleuten.',
       rating: 'Bewertung: 5 Sterne'
     }
   },
@@ -99,7 +103,8 @@ const translations = {
     },
     hero: {
       title: 'Trasforma la tua Gestione con AI Chef Pro',
-      subtitle: 'Suite di Strumenti IA e Applicazioni, modelli addestrati per l\'uso quotidiano di Chef, Cuochi e professionisti dell\'ospitalità.',
+      subtitle: '55+ Strumenti IA Specializzati per Chef. Dalla Creatività Culinaria al Marketing Digitale.',
+      description: 'Suite di Strumenti IA e Applicazioni, modelli addestrati per l\'uso quotidiano di Chef, Cuochi e professionisti dell\'ospitalità.',
       rating: 'Valutazione: 5 stelle'
     }
   },
@@ -119,7 +124,8 @@ const translations = {
     },
     hero: {
       title: 'Transforme sua Gestão com AI Chef Pro',
-      subtitle: 'Suite de Ferramentas IA e Aplicações, modelos treinados para uso diário de Chefs, Cozinheiros e profissionais da hospitalidade.',
+      subtitle: '55+ Ferramentas IA Especializadas para Chefs. Da Criatividade Culinária ao Marketing Digital.',
+      description: 'Suite de Ferramentas IA e Aplicações, modelos treinados para uso diário de Chefs, Cozinheiros e profissionais da hospitalidade.',
       rating: 'Avaliação: 5 estrelas'
     }
   },
@@ -139,7 +145,8 @@ const translations = {
     },
     hero: {
       title: 'Transformeer uw Beheer met AI Chef Pro',
-      subtitle: 'Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.',
+      subtitle: '55+ Gespecialiseerde AI-tools voor Chefs. Van Culinaire Creativiteit tot Digitale Marketing.',
+      description: 'Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.',
       rating: 'Beoordeling: 5 sterren'
     }
   }
