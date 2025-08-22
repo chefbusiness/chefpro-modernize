@@ -61,7 +61,7 @@ export const featuredApps: FeaturedApp[] = [
       author: 'Chef Roberto Silva',
       role: 'Chef Ejecutivo'
     },
-    image: 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=222,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---basic-apps-dWxb1bDVBVI55E7q.png',
+    image: '/lovable-uploads/560b8fe6-fc4e-4d21-91a4-1e1b944af022.png',
     ctaText: 'Mejorar Liderazgo',
     slug: 'mental-coach'
   }
