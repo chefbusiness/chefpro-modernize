@@ -160,7 +160,7 @@
 
   /* Golden button variants */
   .btn-gold {
-    @apply bg-accent text-accent-foreground hover:bg-accent-dark shadow-gold transition-all duration-200;
+    @apply bg-accent text-accent-foreground hover:bg-accent-dark shadow-lg transition-all duration-200;
   }
   
   .btn-gold-outline {
@@ -169,11 +169,14 @@
   
   /* Popular plan styling */
   .popular-plan {
-    @apply border-accent shadow-gold bg-gradient-to-br from-accent-light/10 to-accent/5;
+    @apply border-accent shadow-lg;
+    background: linear-gradient(135deg, hsl(var(--accent-light) / 0.1) 0%, hsl(var(--accent) / 0.05) 100%);
   }
   
   .popular-badge {
-    @apply bg-gradient-to-r from-accent-dark to-accent text-white shadow-gold-glow animate-pulse;
+    @apply text-white shadow-lg;
+    background: linear-gradient(135deg, hsl(var(--accent-dark)) 0%, hsl(var(--accent)) 100%);
+    animation: pulse 2s ease-in-out infinite;
   }
 
   /* Golden highlights */
