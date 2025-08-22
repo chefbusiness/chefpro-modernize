@@ -38,6 +38,48 @@ const screenshots = [
     description: 'Generador de recetas de cocina creativa de calidad profesional con historias de fondo',
     image: '/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png',
     category: 'Creatividad Culinaria'
+  },
+  {
+    id: 6,
+    title: 'Sosa Ingredients Agent',
+    description: 'Asistente IA especializado en ingredientes de vanguardia Sosa para cocina profesional y técnicas innovadoras',
+    image: '/lovable-uploads/ed9e5325-4d1f-44fb-9643-e01fa3de208c.png',
+    category: 'Proveedores Gastro'
+  },
+  {
+    id: 7,
+    title: 'Casual Restaurants AI+',
+    description: 'Experto en restaurantes familiares, bistrós, mesones y gastrobares. Asesoramiento completo para propietarios y personal',
+    image: '/lovable-uploads/4a01fa26-97e9-40ce-9cf6-d17c71b10abd.png',
+    category: 'Conceptos de Negocio'
+  },
+  {
+    id: 8,
+    title: 'MenuDish Local SEO',
+    description: 'Genera contenido SEO optimizado para cada plato de tu carta y potencia la visibilidad local de tu restaurante',
+    image: '/lovable-uploads/6cfe3941-1762-441d-b87b-5bd37a8a3667.png',
+    category: 'Marketing & Contenido'
+  },
+  {
+    id: 9,
+    title: 'Cocina Peruana',
+    description: 'Generador especializado en recetas auténticas de la rica gastronomía peruana con historias culturales e ingredientes precisos',
+    image: '/lovable-uploads/a1eb6b5e-e0c6-47e2-88d5-7a8247807000.png',
+    category: 'Recetarios Mundiales'
+  },
+  {
+    id: 10,
+    title: 'Cocina Francesa',
+    description: 'Maestro en la tradición culinaria francesa, desde clásicos bistró hasta alta cocina con técnicas profesionales',
+    image: '/lovable-uploads/26949727-8432-41b4-8f59-8cc40151efa4.png',
+    category: 'Recetarios Mundiales'
+  },
+  {
+    id: 11,
+    title: 'Fermentus Con AI+',
+    description: 'Asistente experto en fermentación creativa y conservas de autor. Domina koji, kombuchas, misos y técnicas innovadoras',
+    image: '/lovable-uploads/64a2d776-3e86-49cc-bdc7-9df927d3624a.png',
+    category: 'Creatividad Culinaria'
   }
 ];
 
