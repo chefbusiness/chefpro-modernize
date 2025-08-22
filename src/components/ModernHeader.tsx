@@ -46,7 +46,7 @@ export default function ModernHeader() {
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             <img 
-              src="/src/assets/logo-ai-chef-pro.svg" 
+              src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
               alt="AI Chef Pro Logo" 
               className="h-8 w-auto"
             />
@@ -54,13 +54,13 @@ export default function ModernHeader() {
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#docs"
+              href="#inicio"
             >
               {t.nav.inicio}
             </a>
             <a
               className="transition-colors hover:text-foreground/80 text-foreground/60"
-              href="#components"
+              href="#herramientas"
             >
               Herramientas
             </a>
@@ -74,6 +74,7 @@ export default function ModernHeader() {
               className="transition-colors hover:text-foreground/80 text-foreground/60"
               href="https://blog.aichef.pro"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {t.nav.blog}
             </a>
@@ -136,16 +137,16 @@ export default function ModernHeader() {
                 </SheetHeader>
                 <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                   <div className="flex flex-col space-y-3">
-                    <a href="#docs" className="font-medium">
+                    <a href="#inicio" className="font-medium">
                       {t.nav.inicio}
                     </a>
-                    <a href="#components" className="font-medium">
+                    <a href="#herramientas" className="font-medium">
                       Herramientas
                     </a>
                     <a href="#pricing" className="font-medium">
                       Precios
                     </a>
-                    <a href="https://blog.aichef.pro" target="_blank" className="font-medium">
+                    <a href="https://blog.aichef.pro" target="_blank" rel="noopener noreferrer" className="font-medium">
                       {t.nav.blog}
                     </a>
                   </div>

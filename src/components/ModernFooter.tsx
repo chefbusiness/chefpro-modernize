@@ -19,7 +19,7 @@ export default function ModernFooter() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2">
               <img 
-                src="/src/assets/logo-ai-chef-pro.svg" 
+                src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
                 alt="AI Chef Pro Logo" 
                 className="h-8 w-auto"
               />

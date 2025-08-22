@@ -11,7 +11,7 @@ export default function ModernHero() {
   };
 
   return (
-    <section className="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+    <section id="inicio" className="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
       <Badge variant="outline" className="px-4 py-1.5">
         Nuevo: Inteligencia Artificial para Chefs
       </Badge>
