@@ -31,7 +31,7 @@ export default function BusinessToolsShowcase() {
                 <div className="flex items-center justify-between mb-2">
                   <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
                 </div>
-                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{tool.name}</CardTitle>
+                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">4.1</CardTitle>
                 <CardDescription className="text-sm leading-relaxed">{tool.description}</CardDescription>
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0">
