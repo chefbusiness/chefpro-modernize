@@ -6,37 +6,37 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const screenshots = [
   {
     id: 1,
-    title: 'Catering AI+',
-    description: 'Modelo de conocimiento impulsado por inteligencia artificial para chefs, cocineros y emprendedores en el negocio de catering',
-    image: '/lovable-uploads/975877a4-27f4-4215-9f8a-63882f278540.png',
-    category: 'Conceptos de Negocio'
+    title: 'Cocina Creativa',
+    description: 'Generador de recetas de cocina creativa de calidad profesional con historias de fondo',
+    image: '/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png',
+    category: 'Creatividad Culinaria'
   },
   {
     id: 2,
-    title: 'Food Pairing AI',
-    description: 'Descubre maridajes científicos y combinaciones innovadoras basadas en perfiles aromáticos',
-    image: '/lovable-uploads/c01838d8-9dd4-430c-a4d8-98359573a299.png',
-    category: 'Creatividad Culinaria'
-  },
-  {
-    id: 3,
-    title: 'Pastelería Creativa',
-    description: 'Genera recetas de pastelería de alta calidad con presentaciones profesionales estilo Michelin',
-    image: '/lovable-uploads/f2d20b90-077c-4486-a944-1c6c7fdc570e.png',
-    category: 'Creatividad Culinaria'
-  },
-  {
-    id: 4,
     title: 'Platos de Autor',
     description: 'Crea platos contemporáneos únicos con ingredientes de temporada y técnicas innovadoras',
     image: '/lovable-uploads/5863854b-f30c-47d7-89f0-6124f57cfacf.png',
     category: 'Creatividad Culinaria'
   },
   {
+    id: 3,
+    title: 'Catering AI+',
+    description: 'Modelo de conocimiento impulsado por inteligencia artificial para chefs, cocineros y emprendedores en el negocio de catering',
+    image: '/lovable-uploads/975877a4-27f4-4215-9f8a-63882f278540.png',
+    category: 'Conceptos de Negocio'
+  },
+  {
+    id: 4,
+    title: 'Food Pairing AI',
+    description: 'Descubre maridajes científicos y combinaciones innovadoras basadas en perfiles aromáticos',
+    image: '/lovable-uploads/c01838d8-9dd4-430c-a4d8-98359573a299.png',
+    category: 'Creatividad Culinaria'
+  },
+  {
     id: 5,
-    title: 'Cocina Creativa',
-    description: 'Generador de recetas de cocina creativa de calidad profesional con historias de fondo',
-    image: '/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png',
+    title: 'Pastelería Creativa',
+    description: 'Genera recetas de pastelería de alta calidad con presentaciones profesionales estilo Michelin',
+    image: '/lovable-uploads/f2d20b90-077c-4486-a944-1c6c7fdc570e.png',
     category: 'Creatividad Culinaria'
   },
   {
