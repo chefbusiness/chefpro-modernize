@@ -134,8 +134,8 @@ export default function ModernPricing() {
             
             {plan.discount && (
               <Badge 
-                variant="secondary" 
-                className="absolute -top-3 right-4 bg-green-500/10 text-green-600 border-green-500/20"
+                variant="default" 
+                className="absolute -top-3 right-4 bg-green-600 text-white border-green-600 shadow-lg font-bold"
               >
                 {plan.discount}
               </Badge>
@@ -162,11 +162,11 @@ export default function ModernPricing() {
             <CardContent className="grid gap-4">
               <Button 
                 onClick={handlePlanClick}
-                variant={plan.popular ? "default" : "outline"}
+                variant={plan.popular ? "default" : "secondary"}
                 className={`w-full ${
                   plan.popular 
                     ? 'btn-gold hover:shadow-gold-glow' 
-                    : 'hover:border-accent hover:text-accent'
+                    : 'bg-primary text-primary-foreground hover:bg-primary/90'
                 }`}
               >
                 {plan.price === 'Gratis' ? 'Empezar Gratis' : 'Seleccionar Plan'}
