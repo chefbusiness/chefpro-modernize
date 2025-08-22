@@ -74,7 +74,7 @@ export default function ModernPricing() {
         'Desarrollo de características customizadas',
         'Integración enterprise'
       ],
-      popular: false
+      popular: true
     },
     {
       name: 'Premium Plus Anual',
@@ -91,7 +91,7 @@ export default function ModernPricing() {
         'Soporte premium 24/7',
         'Consultoría mensual personalizada'
       ],
-      popular: true,
+      popular: false,
       isAnnual: true
     }
   ];
