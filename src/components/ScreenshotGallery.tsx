@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ChevronLeft, ChevronRight, Maximize2, Minimize2, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const screenshots = [
   {
@@ -70,63 +69,39 @@ export default function ScreenshotGallery() {
       </div>
 
       <div className="max-w-6xl mx-auto">
-        {/* Computer Frame */}
-        <Card className="relative overflow-hidden bg-slate-800 p-2 shadow-2xl">
-          {/* Browser Header */}
-          <div className="flex items-center justify-between bg-slate-700 rounded-t-lg px-4 py-3 mb-2">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            </div>
-            <div className="flex items-center space-x-1 text-slate-300">
-              <Minimize2 className="w-4 h-4" />
-              <Maximize2 className="w-4 h-4" />
-              <X className="w-4 h-4" />
-            </div>
+        {/* Screenshot Display */}
+        <div className="relative rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300" style={{ aspectRatio: '16/10' }}>
+          <img
+            src={currentScreenshot.image}
+            alt={currentScreenshot.title}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              // Fallback to placeholder if image fails to load
+              const target = e.target as HTMLImageElement;
+              target.src = `data:image/svg+xml;base64,${btoa(`
+                <svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100%" height="100%" fill="#f3f4f6"/>
+                  <text x="50%" y="50%" text-anchor="middle" font-family="Arial" font-size="24" fill="#6b7280">
+                    ${currentScreenshot.title}
+                  </text>
+                </svg>
+              `)}`;
+            }}
+          />
+          
+          {/* Overlay Info */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+            <Badge variant="secondary" className="mb-2">
+              {currentScreenshot.category}
+            </Badge>
+            <h3 className="text-white text-xl font-bold mb-2">
+              {currentScreenshot.title}
+            </h3>
+            <p className="text-gray-200 text-sm">
+              {currentScreenshot.description}
+            </p>
           </div>
-
-          {/* Address Bar */}
-          <div className="bg-slate-600 rounded px-4 py-2 mb-4 mx-2">
-            <div className="text-slate-300 text-sm">
-              🔒 app.aichef.pro/{currentScreenshot.title.toLowerCase().replace(/\s+/g, '-')}
-            </div>
-          </div>
-
-          {/* Screenshot Display */}
-          <div className="relative bg-white rounded-lg overflow-hidden mx-2 mb-2" style={{ aspectRatio: '16/10' }}>
-            <img
-              src={currentScreenshot.image}
-              alt={currentScreenshot.title}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to placeholder if image fails to load
-                const target = e.target as HTMLImageElement;
-                target.src = `data:image/svg+xml;base64,${btoa(`
-                  <svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100%" height="100%" fill="#f3f4f6"/>
-                    <text x="50%" y="50%" text-anchor="middle" font-family="Arial" font-size="24" fill="#6b7280">
-                      ${currentScreenshot.title}
-                    </text>
-                  </svg>
-                `)}`;
-              }}
-            />
-            
-            {/* Overlay Info */}
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-              <Badge variant="secondary" className="mb-2">
-                {currentScreenshot.category}
-              </Badge>
-              <h3 className="text-white text-xl font-bold mb-2">
-                {currentScreenshot.title}
-              </h3>
-              <p className="text-gray-200 text-sm">
-                {currentScreenshot.description}
-              </p>
-            </div>
-          </div>
-        </Card>
+        </div>
 
         {/* Navigation Controls */}
         <div className="flex items-center justify-between mt-6">
