@@ -27,9 +27,28 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    /* Accent: AI Chef Pro gold but very subtle */
+    /* Accent: AI Chef Pro gold variations */
     --accent: 42 100% 50%;
     --accent-foreground: 240 5.9% 10%;
+    --accent-light: 42 100% 85%;
+    --accent-dark: 42 100% 40%;
+    
+    /* Chef Pro Golden System */
+    --chef-gold: 42 100% 50%;
+    --chef-gold-light: 42 100% 85%;
+    --chef-gold-dark: 42 100% 40%;
+    --chef-dark: 240 5.9% 10%;
+    --chef-blue: 217.2 91.2% 59.8%;
+    --chef-gray: 240 3.8% 46.1%;
+
+    /* Golden gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
+    --gradient-gold-soft: linear-gradient(135deg, hsl(var(--accent-light)) 0%, hsl(var(--accent)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--accent-light)) 100%);
+    
+    /* Golden shadows */
+    --shadow-gold: 0 10px 30px -10px hsl(var(--accent) / 0.3);
+    --shadow-gold-glow: 0 0 40px hsl(var(--accent) / 0.4);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -69,8 +88,15 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
 
-    --accent: 42 100% 50%;
+    /* Dark mode golden colors */
+    --accent: 42 100% 60%;
     --accent-foreground: 240 5.9% 10%;
+    --accent-light: 42 100% 75%;
+    --accent-dark: 42 100% 45%;
+    
+    --chef-gold: 42 100% 60%;
+    --chef-gold-light: 42 100% 75%;
+    --chef-gold-dark: 42 100% 45%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -132,12 +158,30 @@
     }
   }
 
-  /* Modern hover effects */
-  .hover-card {
-    @apply transition-all duration-200 hover:shadow-md hover:border-border/80;
+  /* Golden button variants */
+  .btn-gold {
+    @apply bg-accent text-accent-foreground hover:bg-accent-dark shadow-gold transition-all duration-200;
+  }
+  
+  .btn-gold-outline {
+    @apply border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-200;
+  }
+  
+  /* Popular plan styling */
+  .popular-plan {
+    @apply border-accent shadow-gold bg-gradient-to-br from-accent-light/10 to-accent/5;
+  }
+  
+  .popular-badge {
+    @apply bg-gradient-to-r from-accent-dark to-accent text-white shadow-gold-glow animate-pulse;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent;
+  /* Golden highlights */
+  .gold-highlight {
+    @apply text-accent font-semibold;
+  }
+
+  .gold-border {
+    @apply border-accent;
   }
 }

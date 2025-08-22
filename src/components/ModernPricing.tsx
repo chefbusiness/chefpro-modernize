@@ -99,18 +99,18 @@ export default function ModernPricing() {
         {plans.map((plan, index) => (
           <Card 
             key={index} 
-            className={`hover-card relative ${
+            className={`hover-card relative transition-all duration-300 ${
               plan.popular 
-                ? 'border-primary shadow-lg scale-105' 
-                : ''
+                ? 'popular-plan scale-105 ring-2 ring-accent/20' 
+                : 'hover:scale-[1.02]'
             }`}
           >
             {plan.popular && (
               <Badge 
                 variant="default" 
-                className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground"
+                className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2"
               >
-                Más Popular
+                🔥 Más Popular
               </Badge>
             )}
             
@@ -129,7 +129,11 @@ export default function ModernPricing() {
               <Button 
                 onClick={handlePlanClick}
                 variant={plan.popular ? "default" : "outline"}
-                className="w-full"
+                className={`w-full ${
+                  plan.popular 
+                    ? 'btn-gold hover:shadow-gold-glow' 
+                    : 'hover:border-accent hover:text-accent'
+                }`}
               >
                 {plan.price === 'Gratis' ? 'Empezar Gratis' : 'Seleccionar Plan'}
               </Button>
@@ -137,7 +141,7 @@ export default function ModernPricing() {
               <ul className="grid gap-2 text-sm">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
+                    <Check className={`h-4 w-4 ${plan.popular ? 'text-accent' : 'text-primary'}`} />
                     <span className="text-xs leading-5">{feature}</span>
                   </li>
                 ))}

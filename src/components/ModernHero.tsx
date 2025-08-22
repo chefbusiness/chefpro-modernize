@@ -30,11 +30,11 @@ export default function ModernHero() {
       <div className="flex items-center gap-2 mb-4">
         <div className="flex">
           {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+            <Star key={i} className="h-4 w-4 fill-accent text-accent" />
           ))}
         </div>
         <span className="text-sm text-muted-foreground font-medium">
-          Calificación: 5 estrellas
+          Calificación: <span className="gold-highlight">5 estrellas</span>
         </span>
       </div>
 
@@ -42,7 +42,7 @@ export default function ModernHero() {
         <Button 
           size="lg" 
           onClick={handleCTAClick}
-          className="bg-primary text-primary-foreground hover:bg-primary/90"
+          className="btn-gold hover:shadow-gold-glow"
         >
           {t.cta.primary}
           <ArrowRight className="ml-2 h-4 w-4" />
@@ -51,6 +51,7 @@ export default function ModernHero() {
           variant="outline" 
           size="lg"
           onClick={() => window.open('https://blog.aichef.pro', '_blank')}
+          className="btn-gold-outline"
         >
           Ver Recursos
         </Button>
