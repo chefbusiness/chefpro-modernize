@@ -43,7 +43,7 @@ export default function ModernHero() {
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
         Transforma tu{" "}
         <span 
-          className={`inline-block transition-all duration-300 gradient-text ${
+          className={`inline-block transition-all duration-300 dynamic-hero-text ${
             isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
           }`}
         >
