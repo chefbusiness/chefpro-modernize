@@ -20,22 +20,25 @@
     "learn_more": "Learn More"
   },
   "hero": {
-    "badge": "New feature! Sosa Ingredients Agent available",
-    "title": "Transform your Management with AI Chef Pro",
+    "badge": "New: Artificial Intelligence for Chefs",
+    "title_prefix": "Transform your",
+    "title_suffix": "with",
+    "title_brand": "AI Chef Pro",
     "subtitle": "55+ Specialized AI Tools for Chefs. From Culinary Creativity to Digital Marketing.",
     "description": "Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.",
     "rating": "Rating: 5 stars",
-    "business_types": ["Restaurants", "Bakeries", "Food Trucks", "Catering", "Hotels"]
+    "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger Bar", "Bakery", "Pastry Shop", "Chocolate Shop", "Ice Cream Shop", "Dark Kitchen", "Coffee Shop", "Brunch"],
+    "see_resources": "See Resources"
   },
   "stats": {
     "apps": "55+",
     "apps_label": "Specialized Apps",
-    "cookbooks": "21",
-    "cookbooks_label": "Regional Cookbooks",
+    "cookbooks": "25+",
+    "cookbooks_label": "Regional Cookbooks", 
     "tools": "10+",
     "tools_label": "Business Tools",
-    "content": "5+",
-    "content_label": "Content Modules"
+    "categories": "6",
+    "categories_label": "Professional Categories"
   },
   "categories": {
     "title": "Explore Our 6 App Categories",

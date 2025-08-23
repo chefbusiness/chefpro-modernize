@@ -20,22 +20,25 @@
     "learn_more": "Meer Weten"
   },
   "hero": {
-    "badge": "Nieuwe functie! Sosa Ingredients Agent beschikbaar",
-    "title": "Transformeer uw Beheer met AI Chef Pro",
+    "badge": "Nieuw: Kunstmatige Intelligentie voor Chefs",
+    "title_prefix": "Transformeer uw",
+    "title_suffix": "met",
+    "title_brand": "AI Chef Pro",
     "subtitle": "55+ Gespecialiseerde AI-tools voor Chefs. Van Culinaire Creativiteit tot Digitale Marketing.",
     "description": "Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.",
     "rating": "Beoordeling: 5 sterren",
-    "business_types": ["Restaurants", "Bakkerijen", "Food Trucks", "Catering", "Hotels"]
+    "business_types": ["Beheer", "Restaurant", "Catering", "Pizzeria", "Hamburger Bar", "Bakkerij", "Banketbakkerij", "Chocolaterie", "IJssalon", "Dark Kitchen", "Café", "Brunch"],
+    "see_resources": "Zie Bronnen"
   },
   "stats": {
     "apps": "55+",
     "apps_label": "Gespecialiseerde Apps",
-    "cookbooks": "21",
+    "cookbooks": "25+",
     "cookbooks_label": "Regionale Kookboeken",
     "tools": "10+",
     "tools_label": "Business Tools",
-    "content": "5+",
-    "content_label": "Content Modules"
+    "categories": "6",
+    "categories_label": "Professionele Categorieën"
   },
   "categories": {
     "title": "Ontdek onze 6 App Categorieën",
