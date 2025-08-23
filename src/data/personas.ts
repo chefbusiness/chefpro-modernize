@@ -13,43 +13,43 @@ export interface Persona {
 export const personas: Persona[] = [
   {
     id: 'chef-ejecutivo',
-    name: 'Soy Chef Ejecutivo',
-    description: 'Lidero equipos y diseño menús estratégicos',
+    name: 'chef-ejecutivo',
+    description: 'chef-ejecutivo',
     emoji: '👨‍🍳',
     recommendedApps: ['mental-coach', 'gastro-lexicum', 'catering-ai', 'menu-plate-seo']
   },
   {
     id: 'panaderia',
-    name: 'Tengo una Panadería',
-    description: 'Especialista en panes y productos horneados',
+    name: 'panaderia',
+    description: 'panaderia',
     emoji: '🥖',
     recommendedApps: ['panaderia-creativa', 'mermas-gencal', 'calcula-pax', 'instaflow-ai']
   },
   {
     id: 'food-truck',
-    name: 'Dirijo un Food Truck',
-    description: 'Cocina móvil con menús optimizados',
+    name: 'food-truck',
+    description: 'food-truck',
     emoji: '🚚',
     recommendedApps: ['food-truck-ai', 'cocina-creativa', 'id-alergenos', 'gastro-calendar']
   },
   {
     id: 'estudiante',
-    name: 'Soy Estudiante de Gastronomía',
-    description: 'Aprendiendo técnicas y expandiendo conocimiento',
+    name: 'estudiante',
+    description: 'estudiante',
     emoji: '🎓',
     recommendedApps: ['gastro-lexicum', 'cocina-creativa', 'mental-coach', 'conversor-ing']
   },
   {
     id: 'restaurante',
-    name: 'Tengo un Restaurante',
-    description: 'Gestiono un establecimiento gastronómico',
+    name: 'restaurante',
+    description: 'restaurante',
     emoji: '🏪',
     recommendedApps: ['casual-restaurants-ai', 'food-pairing', 'mermas-gencal', 'menu-plate-seo']
   },
   {
     id: 'reposteria',
-    name: 'Me especializo en Repostería',
-    description: 'Maestro en postres y dulces de autor',
+    name: 'reposteria',
+    description: 'reposteria',
     emoji: '🧁',
     recommendedApps: ['pasteleria-creativa', 'chocolateria-creativa', 'heladeria-creativa', 'pinterai-content']
   }

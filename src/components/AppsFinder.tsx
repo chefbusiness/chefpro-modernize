@@ -58,13 +58,13 @@ export default function AppsFinder() {
                         <div className="flex items-center justify-between mb-2">
                           <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
                         </div>
-                        <CardTitle className="text-base sm:text-lg leading-tight">{t(`apps.${app.category}.${app.slug}.name`)}</CardTitle>
-                        <CardDescription className="text-sm leading-relaxed">{t(`apps.${app.category}.${app.slug}.description`)}</CardDescription>
+                        <CardTitle className="text-base sm:text-lg leading-tight">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.name`)}</CardTitle>
+                        <CardDescription className="text-sm leading-relaxed">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.description`)}</CardDescription>
                       </CardHeader>
                       <CardContent className="p-4 sm:p-6 pt-0">
                         <div className="bg-muted/50 p-3 rounded text-sm">
                           <p className="text-muted-foreground mb-1 text-xs">{t('finder.preview_label')}:</p>
-                          <p className="font-medium text-xs sm:text-sm leading-relaxed">"{t(`apps.${app.category}.${app.slug}.preview`)}"</p>
+                          <p className="font-medium text-xs sm:text-sm leading-relaxed">"{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.preview`)}"</p>
                         </div>
                       </CardContent>
                       <CardFooter className="p-4 sm:p-6 pt-0">
