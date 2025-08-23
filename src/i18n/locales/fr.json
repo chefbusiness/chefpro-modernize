@@ -38,7 +38,11 @@
     "tools": "10+",
     "tools_label": "Outils Business",
     "categories": "6",
-    "categories_label": "Catégories Professionnelles"
+    "categories_label": "Catégories Professionnelles",
+    "new_app": "1",
+    "new_app_label": "Nouvelle App Chaque Semaine",
+    "chefs": "10000+",
+    "chefs_label": "Chefs Utilisateurs"
   },
   "categories": {
     "title": "Explorez nos 6 Catégories d'Apps",
