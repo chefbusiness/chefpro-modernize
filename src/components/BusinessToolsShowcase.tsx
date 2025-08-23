@@ -4,7 +4,7 @@ import { businessTools } from '@/data/apps';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function BusinessToolsShowcase() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const handleAppClick = (appSlug: string) => {
     window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
@@ -14,10 +14,10 @@ export default function BusinessToolsShowcase() {
     <section id="herramientas-business" className="container py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          <span className="gradient-text">Herramientas Business</span>
+          <span className="gradient-text">{t('showcase.business_title')}</span>
         </h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          6 aplicaciones esenciales para optimizar tu operación diaria
+          {t('showcase.business_description')}
         </p>
       </div>
 
@@ -31,13 +31,13 @@ export default function BusinessToolsShowcase() {
                 <div className="flex items-center justify-between mb-2">
                   <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
                 </div>
-                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{tool.name}</CardTitle>
-                <CardDescription className="text-sm leading-relaxed">{tool.description}</CardDescription>
+                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(`apps.${tool.category}.${tool.id.replace(/-/g, '_')}.name`)}</CardTitle>
+                <CardDescription className="text-sm leading-relaxed">{t(`apps.${tool.category}.${tool.id.replace(/-/g, '_')}.description`)}</CardDescription>
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0">
                 <div className="bg-muted/50 p-3 rounded text-sm">
-                  <p className="text-muted-foreground mb-1 text-xs">Caso de uso:</p>
-                  <p className="font-medium text-xs sm:text-sm leading-relaxed">"{tool.preview}"</p>
+                  <p className="text-muted-foreground mb-1 text-xs">{t('showcase.use_case_label')}:</p>
+                  <p className="font-medium text-xs sm:text-sm leading-relaxed">"{t(`apps.${tool.category}.${tool.id.replace(/-/g, '_')}.preview`)}"</p>
                 </div>
               </CardContent>
               <CardFooter className="p-4 sm:p-6 pt-0">
@@ -46,7 +46,7 @@ export default function BusinessToolsShowcase() {
                   className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
                   onClick={() => handleAppClick(tool.slug)}
                 >
-                  Usar Herramienta
+                  {t('showcase.use_tool')}
                 </Button>
               </CardFooter>
             </Card>

@@ -2,18 +2,20 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { worldCookbooks } from '@/data/apps';
 import { useState } from 'react';
+import { useLanguage } from '@/hooks/useLanguage';
 
 export default function WorldCookbooks() {
   const [selectedCuisine, setSelectedCuisine] = useState<string | null>(null);
+  const { t } = useLanguage();
 
   return (
     <section id="recetarios" className="container py-16 bg-muted/20">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          <span className="gradient-text">Recetarios Mundiales</span>
+          <span className="gradient-text">{t('showcase.world_title')}</span>
         </h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          25 cocinas del mundo con recetas auténticas y técnicas tradicionales
+          {t('showcase.world_description')}
         </p>
       </div>
 
@@ -22,9 +24,9 @@ export default function WorldCookbooks() {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
             <span className="flex items-center gap-2">
-              🌍 <span className="gradient-text">Europa</span>
+              🌍 <span className="gradient-text">{t('categories.world_cookbooks.europa.name')}</span>
             </span>
-            <Badge variant="secondary" className="text-xs w-fit">10 Cocinas</Badge>
+            <Badge variant="secondary" className="text-xs w-fit">{t('categories.world_cookbooks.europa.count')}</Badge>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             {worldCookbooks.europa.map((cuisine) => (
@@ -36,7 +38,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
@@ -55,9 +57,9 @@ export default function WorldCookbooks() {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
             <span className="flex items-center gap-2">
-              🌎 <span className="gradient-text">Latinoamérica</span>
+              🌎 <span className="gradient-text">{t('categories.world_cookbooks.latinoamerica.name')}</span>
             </span>
-            <Badge variant="secondary" className="text-xs w-fit">11 Cocinas</Badge>
+            <Badge variant="secondary" className="text-xs w-fit">{t('categories.world_cookbooks.latinoamerica.count')}</Badge>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
             {worldCookbooks.latinoamerica.map((cuisine) => (
@@ -69,7 +71,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
@@ -88,9 +90,9 @@ export default function WorldCookbooks() {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
             <span className="flex items-center gap-2">
-              🌏 <span className="gradient-text">Asia</span>
+              🌏 <span className="gradient-text">{t('categories.world_cookbooks.asia.name')}</span>
             </span>
-            <Badge variant="secondary" className="text-xs w-fit">4 Cocinas</Badge>
+            <Badge variant="secondary" className="text-xs w-fit">{t('categories.world_cookbooks.asia.count')}</Badge>
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {worldCookbooks.asia.map((cuisine) => (
@@ -102,7 +104,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{cuisine.name}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (

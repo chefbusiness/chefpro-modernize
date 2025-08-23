@@ -75,6 +75,20 @@
       "title": "Marketing & Contenido",
       "description": "Potencia tu presencia digital",
       "count": "4 apps"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europa",
+        "count": "10 Cocinas"
+      },
+      "latinoamerica": {
+        "name": "Latinoamérica",
+        "count": "11 Cocinas"
+      },
+      "asia": {
+        "name": "Asia",
+        "count": "4 Cocinas"
+      }
     }
   },
   "finder": {
@@ -355,12 +369,14 @@
     "creativity_title": "Creatividad Culinaria",
     "creativity_subtitle": "Showcase",
     "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
-    "world_title": "Recetarios del Mundo",
-    "world_description": "Explora cocinas auténticas de diferentes culturas",
-    "business_title": "Herramientas de Negocio", 
-    "business_description": "Optimiza la gestión y operación de tu establecimiento",
+    "world_title": "Recetarios Mundiales",
+    "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
+    "business_title": "Herramientas Business", 
+    "business_description": "6 aplicaciones esenciales para optimizar tu operación diaria",
     "preview_label": "Preview",
-    "explore_app": "Explorar App"
+    "explore_app": "Explorar App",
+    "use_case_label": "Caso de uso",
+    "use_tool": "Usar Herramienta"
   },
   "features": {
     "title": "Características Principales",

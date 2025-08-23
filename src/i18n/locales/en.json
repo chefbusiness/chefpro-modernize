@@ -79,6 +79,20 @@
       "title": "Marketing & Content",
       "description": "Boost your digital presence",
       "count": "4 apps"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europe",
+        "count": "10 Cuisines"
+      },
+      "latinoamerica": {
+        "name": "Latin America",
+        "count": "11 Cuisines"
+      },
+      "asia": {
+        "name": "Asia",
+        "count": "4 Cuisines"
+      }
     }
   },
   "finder": {
@@ -130,11 +144,13 @@
     "creativity_subtitle": "Showcase", 
     "creativity_description": "8 specialized applications to take you beyond the conventional",
     "world_title": "World Cookbooks",
-    "world_description": "Explore authentic cuisines from different cultures",
+    "world_description": "25 world cuisines with authentic recipes and traditional techniques",
     "business_title": "Business Tools",
-    "business_description": "Optimize the management and operation of your establishment",
+    "business_description": "6 essential applications to optimize your daily operation",
     "preview_label": "Preview",
-    "explore_app": "Explore App"
+    "explore_app": "Explore App",
+    "use_case_label": "Use case",
+    "use_tool": "Use Tool"
   },
   "features": {
     "title": "Advanced Culinary Tools",
