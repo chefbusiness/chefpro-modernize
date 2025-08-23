@@ -84,6 +84,72 @@
     "restaurante": "Restaurante",
     "reposteria": "Repostería"
   },
+  "gallery": {
+    "badge": "55+ Apps Especializadas en Acción",
+    "title": "Descubre el Poder de AI Chef Pro", 
+    "description": "Explora capturas reales de nuestras aplicaciones especializadas para profesionales gastronómicos",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "counter": "{current} de {total} aplicaciones mostradas", 
+    "explore_all": "Explorar Todas las Apps"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Cocina Creativa",
+      "description": "Generador de recetas de cocina creativa de calidad profesional con historias de fondo"
+    },
+    "platos_autor": {
+      "title": "Platos de Autor",
+      "description": "Crea platos contemporáneos únicos con ingredientes de temporada y técnicas innovadoras"
+    },
+    "catering_ai": {
+      "title": "Catering AI+", 
+      "description": "Modelo de conocimiento impulsado por inteligencia artificial para chefs, cocineros y emprendedores en el negocio de catering"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Descubre maridajes científicos y combinaciones innovadoras basadas en perfiles aromáticos"
+    },
+    "pasteleria_creativa": {
+      "title": "Pastelería Creativa",
+      "description": "Genera recetas de pastelería de alta calidad con presentaciones profesionales estilo Michelin"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "Asistente IA especializado en ingredientes de vanguardia Sosa para cocina profesional y técnicas innovadoras"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Experto en restaurantes familiares, bistrós, mesones y gastrobares. Asesoramiento completo para propietarios y personal"
+    },
+    "menu_local_seo": {
+      "title": "MenuDish Local SEO",
+      "description": "Genera contenido SEO optimizado para cada plato de tu carta y potencia la visibilidad local de tu restaurante"
+    },
+    "cocina_peruana": {
+      "title": "Cocina Peruana",
+      "description": "Generador especializado en recetas auténticas de la rica gastronomía peruana con historias culturales e ingredientes precisos"
+    },
+    "cocina_francesa": {
+      "title": "Cocina Francesa",
+      "description": "Maestro en la tradición culinaria francesa, desde clásicos bistró hasta alta cocina con técnicas profesionales"
+    },
+    "fermentus": {
+      "title": "Fermentus Con AI+",
+      "description": "Asistente experto en fermentación creativa y conservas de autor. Domina koji, kombuchas, misos y técnicas innovadoras"
+    },
+    "cocina_india": {
+      "title": "Cocina India Recetario",
+      "description": "Explora la rica gastronomía india con recetas auténticas como samosas, curries y chutneys tradicionales"
+    }
+  },
+  "categories_labels": {
+    "creatividad": "Creatividad Culinaria",
+    "conceptos": "Conceptos de Negocio",
+    "proveedores": "Proveedores Gastro", 
+    "marketing": "Marketing & Contenido",
+    "recetarios": "Recetarios Mundiales"
+  },
   "showcase": {
     "creativity_title": "Creatividad Culinaria",
     "creativity_description": "Herramientas especializadas para liberar tu creatividad gastronómica",

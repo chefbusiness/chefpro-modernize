@@ -363,9 +363,70 @@
     "japonesa": "Tonkotsu ramen with chashu and marinated egg...",
     "tailandesa": "Authentic pad thai with tamarind and peanuts..."
   },
-  "seo": {
-    "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
-    "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",
-    "keywords": "chef ai, gastronomy tools, ai recipes, culinary artificial intelligence, restaurant management"
-  }
+  "gallery": {
+    "badge": "55+ Specialized Apps in Action",
+    "title": "Discover the Power of AI Chef Pro",
+    "description": "Explore real screenshots of our specialized applications for gastronomy professionals",
+    "previous": "Previous",
+    "next": "Next", 
+    "counter": "{current} of {total} applications shown",
+    "explore_all": "Explore All Apps"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Creative Kitchen",
+      "description": "Professional quality creative kitchen recipe generator with background stories"
+    },
+    "platos_autor": {
+      "title": "Signature Dishes",  
+      "description": "Create unique contemporary dishes with seasonal ingredients and innovative techniques"
+    },
+    "catering_ai": {
+      "title": "Catering AI+",
+      "description": "AI-powered knowledge model for chefs, cooks and catering business entrepreneurs"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Discover scientific pairings and innovative combinations based on aromatic profiles"
+    },
+    "pasteleria_creativa": {
+      "title": "Creative Pastry",
+      "description": "Generate high-quality pastry recipes with Michelin-style professional presentations"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",  
+      "description": "AI assistant specialized in Sosa avant-garde ingredients for professional cuisine and innovative techniques"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Expert in family restaurants, bistros, taverns and gastrobars. Complete advice for owners and staff"
+    },
+    "menu_local_seo": {
+      "title": "MenuDish Local SEO",
+      "description": "Generate SEO optimized content for each dish on your menu and boost your restaurant's local visibility"
+    },
+    "cocina_peruana": {
+      "title": "Peruvian Cuisine",
+      "description": "Generator specialized in authentic recipes from rich Peruvian gastronomy with cultural stories and precise ingredients"
+    },
+    "cocina_francesa": {
+      "title": "French Cuisine", 
+      "description": "Master of French culinary tradition, from classic bistro to haute cuisine with professional techniques"
+    },
+    "fermentus": {
+      "title": "Fermentus Con AI+",
+      "description": "Expert assistant in creative fermentation and signature preserves. Master koji, kombuchas, misos and innovative techniques"
+    },
+    "cocina_india": {
+      "title": "Indian Cuisine Cookbook",
+      "description": "Explore rich Indian gastronomy with authentic recipes like samosas, curries and traditional chutneys"
+    }
+  },
+  "categories_labels": {
+    "creatividad": "Culinary Creativity",
+    "conceptos": "Business Concepts", 
+    "proveedores": "Gastro Suppliers",
+    "marketing": "Marketing & Content",
+    "recetarios": "World Cookbooks"
+  },
 }
