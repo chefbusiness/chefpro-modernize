@@ -80,6 +80,13 @@ const screenshots = [
     description: 'Asistente experto en fermentación creativa y conservas de autor. Domina koji, kombuchas, misos y técnicas innovadoras',
     image: '/lovable-uploads/64a2d776-3e86-49cc-bdc7-9df927d3624a.png',
     category: 'Creatividad Culinaria'
+  },
+  {
+    id: 12,
+    title: 'Cocina India Recetario',
+    description: 'Explora la rica gastronomía india con recetas auténticas como samosas, curries y chutneys tradicionales',
+    image: '/lovable-uploads/c7595f12-a770-4c58-939f-69a9c3c8a1f8.png',
+    category: 'Recetarios Mundiales'
   }
 ];
 
