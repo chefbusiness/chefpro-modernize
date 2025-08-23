@@ -526,6 +526,54 @@
     "free_trial": "7 Tage kostenlos testen",
     "most_popular": "Am Beliebtesten"
   },
+  "featured": {
+    "title_main": "Ausgewählte Apps",
+    "title_sub": "der Woche",
+    "description": "Entdecken Sie die Anwendungen, die die Gastronomiebranche revolutionieren",
+    "badge": "Ausgewählt",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Arbeiten Sie mit Avant-Garde-Zutaten",
+        "testimonial": {
+          "text": "Es hilft mir, die besten Sosa-Produkte für meine Haute-Cuisine-Kreationen auszuwählen",
+          "author": "Chef M. García",
+          "role": "Küchenchef, Michelin-Restaurant"
+        },
+        "cta": "Zutaten Erkunden"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimieren Sie jedes Gericht für Suchmaschinen",
+        "testimonial": {
+          "text": "Meine Gerichte erscheinen jetzt in Google, wenn Leute nach lokalem Essen suchen. Die Reservierungen sind um 40% gestiegen",
+          "author": "Restaurante El Olivo",
+          "role": "Inhaber"
+        },
+        "cta": "Mein Menü Optimieren"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentation und Signature-Konserven",
+        "testimonial": {
+          "text": "Es revolutionierte mein Verständnis von Fermentation. Jetzt kreiere ich einzigartige Aromen, die meine Kunden lieben",
+          "author": "Chef Ana Rodrigo",
+          "role": "Fermentationsspezialist"
+        },
+        "cta": "Fermentation Meistern"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Wohlbefinden und Führung in der Küche",
+        "testimonial": {
+          "text": "Mein Team ist motivierter und die Atmosphäre in der Küche ist völlig anders. Weniger Stress, mehr Kreativität",
+          "author": "Chef Roberto Silva",
+          "role": "Küchenchef"
+        },
+        "cta": "Führung Verbessern"
+      }
+    }
+  },
   "faq": {
     "title": "Häufig gestellte Fragen"
   },

@@ -526,6 +526,54 @@
     "free_trial": "Teste grátis 7 dias",
     "most_popular": "Mais Popular"
   },
+  "featured": {
+    "title_main": "Apps em Destaque",
+    "title_sub": "da Semana",
+    "description": "Descubra as aplicações que estão revolucionando a indústria gastronômica",
+    "badge": "Destaque",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Trabalhe com ingredientes de vanguarda",
+        "testimonial": {
+          "text": "Me ajuda a selecionar os melhores produtos Sosa para minhas criações de alta gastronomia",
+          "author": "Chef M. García",
+          "role": "Chef Executivo, Restaurante Michelin"
+        },
+        "cta": "Explorar Ingredientes"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Otimize cada prato para buscadores",
+        "testimonial": {
+          "text": "Meus pratos agora aparecem no Google quando as pessoas procuram comida local. As reservas aumentaram 40%",
+          "author": "Restaurante El Olivo",
+          "role": "Proprietário"
+        },
+        "cta": "Otimizar Meu Menu"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentação e conservas de autor",
+        "testimonial": {
+          "text": "Revolucionou minha compreensão da fermentação. Agora crio sabores únicos que meus clientes adoram",
+          "author": "Chef Ana Rodrigo",
+          "role": "Especialista em Fermentação"
+        },
+        "cta": "Dominar Fermentação"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Bem-estar e liderança na cozinha",
+        "testimonial": {
+          "text": "Minha equipe está mais motivada e o ambiente na cozinha é completamente diferente. Menos estresse, mais criatividade",
+          "author": "Chef Roberto Silva",
+          "role": "Chef Executivo"
+        },
+        "cta": "Melhorar Liderança"
+      }
+    }
+  },
   "faq": {
     "title": "Perguntas Frequentes"
   },

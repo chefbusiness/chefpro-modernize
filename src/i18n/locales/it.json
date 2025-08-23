@@ -526,6 +526,54 @@
     "free_trial": "Prova gratuita 7 giorni",
     "most_popular": "Più Popolare"
   },
+  "featured": {
+    "title_main": "App in Evidenza",
+    "title_sub": "della Settimana",
+    "description": "Scopri le applicazioni che stanno rivoluzionando l'industria gastronomica",
+    "badge": "In Evidenza",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Lavora con ingredienti all'avanguardia",
+        "testimonial": {
+          "text": "Mi aiuta a selezionare i migliori prodotti Sosa per le mie creazioni di haute cuisine",
+          "author": "Chef M. García",
+          "role": "Chef Esecutivo, Ristorante Michelin"
+        },
+        "cta": "Esplora Ingredienti"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Ottimizza ogni piatto per i motori di ricerca",
+        "testimonial": {
+          "text": "I miei piatti ora appaiono su Google quando le persone cercano cibo locale. Le prenotazioni sono aumentate del 40%",
+          "author": "Restaurante El Olivo",
+          "role": "Proprietario"
+        },
+        "cta": "Ottimizza il Mio Menu"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentazione e conserve d'autore",
+        "testimonial": {
+          "text": "Ha rivoluzionato la mia comprensione della fermentazione. Ora creo sapori unici che i miei clienti adorano",
+          "author": "Chef Ana Rodrigo",
+          "role": "Specialista in Fermentazione"
+        },
+        "cta": "Padroneggia la Fermentazione"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Benessere e leadership in cucina",
+        "testimonial": {
+          "text": "Il mio team è più motivato e l'atmosfera in cucina è completamente diversa. Meno stress, più creatività",
+          "author": "Chef Roberto Silva",
+          "role": "Chef Esecutivo"
+        },
+        "cta": "Migliora la Leadership"
+      }
+    }
+  },
   "faq": {
     "title": "Domande Frequenti"
   },

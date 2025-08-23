@@ -526,6 +526,54 @@
     "free_trial": "7 dagen gratis proberen",
     "most_popular": "Meest Populair"
   },
+  "featured": {
+    "title_main": "Uitgelichte Apps",
+    "title_sub": "van de Week",
+    "description": "Ontdek de applicaties die de gastronomische industrie revolutioneren",
+    "badge": "Uitgelicht",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Werk met avant-garde ingrediënten",
+        "testimonial": {
+          "text": "Het helpt me de beste Sosa-producten te selecteren voor mijn haute cuisine creaties",
+          "author": "Chef M. García",
+          "role": "Chef-kok, Michelin Restaurant"
+        },
+        "cta": "Ingrediënten Verkennen"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimaliseer elk gerecht voor zoekmachines",
+        "testimonial": {
+          "text": "Mijn gerechten verschijnen nu in Google wanneer mensen zoeken naar lokaal eten. Reserveringen zijn met 40% gestegen",
+          "author": "Restaurante El Olivo",
+          "role": "Eigenaar"
+        },
+        "cta": "Mijn Menu Optimaliseren"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentatie en signature conserven",
+        "testimonial": {
+          "text": "Het heeft mijn begrip van fermentatie gerevolutioneerd. Nu creëer ik unieke smaken waar mijn klanten van houden",
+          "author": "Chef Ana Rodrigo",
+          "role": "Fermentatie Specialist"
+        },
+        "cta": "Fermentatie Beheersen"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Welzijn en leiderschap in de keuken",
+        "testimonial": {
+          "text": "Mijn team is gemotiveerder en de sfeer in de keuken is compleet anders. Minder stress, meer creativiteit",
+          "author": "Chef Roberto Silva",
+          "role": "Chef-kok"
+        },
+        "cta": "Leiderschap Verbeteren"
+      }
+    }
+  },
   "faq": {
     "title": "Veelgestelde Vragen"
   },
