@@ -79,14 +79,48 @@
     }
   },
   "finder": {
-    "title": "Trouvez votre App Parfaite",
+    "title_prefix": "Trouvez votre",
+    "title_highlight": "App Parfaite",
     "description": "Sélectionnez votre profil professionnel et découvrez les outils les plus pertinents pour vous",
-    "chef_ejecutivo": "Chef Exécutif",
-    "panaderia": "Boulangerie",
-    "food_truck": "Food Truck",
-    "estudiante": "Étudiant en Gastronomie",
-    "restaurante": "Restaurant",
-    "reposteria": "Pâtisserie"
+    "preview_label": "Aperçu",
+    "personas": {
+      "chef-ejecutivo": {
+        "name": "Chef Exécutif",
+        "short_name": "Chef Exécutif",
+        "mobile_name": "Chef",
+        "description": "Je dirige une cuisine professionnelle"
+      },
+      "panaderia": {
+        "name": "Propriétaire de Boulangerie",
+        "short_name": "Boulangerie",
+        "mobile_name": "Boulanger",
+        "description": "J'opère une boulangerie artisanale"
+      },
+      "food-truck": {
+        "name": "Propriétaire de Food Truck",
+        "short_name": "Food Truck",
+        "mobile_name": "Food Truck",
+        "description": "J'opère un commerce de nourriture mobile"
+      },
+      "estudiante": {
+        "name": "Étudiant en Gastronomie",
+        "short_name": "Étudiant",
+        "mobile_name": "Étudiant",
+        "description": "J'étudie les arts culinaires"
+      },
+      "restaurante": {
+        "name": "Propriétaire de Restaurant",
+        "short_name": "Restaurant",
+        "mobile_name": "Restaurant",
+        "description": "Je gère un restaurant"
+      },
+      "reposteria": {
+        "name": "Chef Pâtissier",
+        "short_name": "Pâtisserie",
+        "mobile_name": "Pâtissier",
+        "description": "Je me spécialise dans la pâtisserie"
+      }
+    }
   },
   "showcase": {
     "creativity_title": "Créativité Culinaire",
@@ -190,6 +224,138 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions de Service",
     "cookies": "Politique des Cookies"
+  },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Cuisine Créative",
+        "description": "Génère des plats uniques avec histoire",
+        "preview": "Tartar de betterave rôtie avec gel d'agrumes et fleurs comestibles..."
+      },
+      "pasteleria_creativa": {
+        "name": "Pâtisserie Créative",
+        "description": "Desserts d'auteur étape par étape",
+        "preview": "Soufflé au chocolat avec pralinés à la vanille et coulis de framboise..."
+      },
+      "chocolateria_creativa": {
+        "name": "Chocolaterie Créative",
+        "description": "Bonbons et chocolat d'avant-garde",
+        "preview": "Ganache infusé au thé matcha et cristaux de sel rose..."
+      },
+      "heladeria_creativa": {
+        "name": "Glacerie Créative",
+        "description": "Glaces artisanales professionnelles",
+        "preview": "Sorbet gin-tonic aux notes d'agrumes et herbes aromatiques..."
+      },
+      "panaderia_creativa": {
+        "name": "Boulangerie Créative",
+        "description": "Pains uniques et fermentations",
+        "preview": "Pain au levain avec graines grillées et miel de fleur d'oranger..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentation et conserves d'auteur",
+        "preview": "Kimchi de betterave au gingembre et piment coréen fermenté..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "Cuisine végétale de haut niveau",
+        "preview": "Ceviche de pleurote royal au lait de tigre de coco et piments..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Découvre des accords scientifiques",
+        "preview": "Chocolat + fenouil par composés phénoliques partagés..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Assistant IA général le plus avancé",
+        "preview": "Aide aux questions techniques et planification de menus saisonniers"
+      },
+      "mermas_gencal": {
+        "name": "Mermas GenCal",
+        "description": "Optimise rendements et réduit gaspillages",
+        "preview": "Économise jusqu'à 30% sur les coûts d'ingrédients avec calculs précis"
+      },
+      "id_alergenos": {
+        "name": "ID Allergènes",
+        "description": "Identifie allergènes automatiquement",
+        "preview": "Respecte réglementations de sécurité alimentaire sans erreurs"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Bien-être et leadership en cuisine",
+        "preview": "Réduit stress et améliore ambiance de travail d'équipe"
+      },
+      "conversor_ing": {
+        "name": "Convertisseur Ing",
+        "description": "Convertit mesures et poids instantanément",
+        "preview": "Adapte recettes entre systèmes métriques sans erreurs"
+      },
+      "calcula_pax": {
+        "name": "Calcul Portions",
+        "description": "Ajuste quantités selon convives",
+        "preview": "Mise à l'échelle recettes avec précision mathématique pour tout événement"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Spécialisez-vous dans le catering professionnel",
+        "preview": "Menus pour événements avec logistique et coûts optimisés"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfectionnez votre burger bar",
+        "preview": "Recettes gourmet et techniques de cuisson pour burgers premium"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Optimisez votre food truck",
+        "preview": "Menus mobiles rentables avec ingrédients polyvalents"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Cocktails et tapas d'auteur",
+        "preview": "Combinaisons uniques de boissons et accords parfaits"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Gestion intégrale de restaurant",
+        "preview": "Du menu jusqu'à l'expérience client"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Optimise chaque plat pour moteurs de recherche",
+        "preview": "Vos plats apparaissent sur Google lors de recherches culinaires locales"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Planifie contenu gastronomique",
+        "preview": "Calendrier éditorial avec tendances et dates clés"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Contenu Instagram automatisé",
+        "preview": "Posts, stories et reels qui charment votre audience"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Maîtrisez Pinterest gastronomique",
+        "preview": "Épingles virales avec recettes générant du trafic réel"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Accédez au savoir culinaire universel",
+        "preview": "Encyclopédie gastronomique avec techniques et termes professionnels"
+      }
+    }
   },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
