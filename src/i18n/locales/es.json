@@ -78,14 +78,48 @@
     }
   },
   "finder": {
-    "title": "Encuentra tu App Perfecta",
-    "description": "Selecciona tu perfil profesional y descubre las herramientas más relevantes para ti",
-    "chef_ejecutivo": "Chef Ejecutivo",
-    "panaderia": "Panadería",
-    "food_truck": "Food Truck",
-    "estudiante": "Estudiante de Gastronomía",
-    "restaurante": "Restaurante",
-    "reposteria": "Repostería"
+    "title_prefix": "Encuentra tu",
+    "title_highlight": "App Perfecta",
+    "description": "Selecciona tu perfil y descubre las herramientas que mejor se adaptan a tus necesidades",
+    "preview_label": "Preview",
+    "personas": {
+      "chef-ejecutivo": {
+        "name": "Chef Ejecutivo",
+        "short_name": "Chef Ejecutivo",
+        "mobile_name": "Chef",
+        "description": "Lidero equipos y diseño menús estratégicos"
+      },
+      "panaderia": {
+        "name": "Panadería",
+        "short_name": "Panadería",
+        "mobile_name": "Panad.",
+        "description": "Dirijo una panadería y creo panes artesanales"
+      },
+      "food-truck": {
+        "name": "Food Truck",
+        "short_name": "Food Truck",
+        "mobile_name": "Truck",
+        "description": "Opero un negocio de comida móvil"
+      },
+      "estudiante": {
+        "name": "Estudiante de Gastronomía",
+        "short_name": "Estudiante",
+        "mobile_name": "Estud.",
+        "description": "Estoy aprendiendo gastronomía profesionalmente"
+      },
+      "restaurante": {
+        "name": "Restaurante",
+        "short_name": "Restaurante",
+        "mobile_name": "Rest.",
+        "description": "Gestiono un restaurante"
+      },
+      "reposteria": {
+        "name": "Repostería",
+        "short_name": "Repostería",
+        "mobile_name": "Repost.",
+        "description": "Me especializo en repostería y postres"
+      }
+    }
   },
   "gallery": {
     "badge": "55+ Apps Especializadas en Acción",

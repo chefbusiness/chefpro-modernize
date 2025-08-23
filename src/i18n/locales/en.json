@@ -82,14 +82,48 @@
     }
   },
   "finder": {
-    "title": "Find Your Perfect App",
-    "description": "Select your professional profile and discover the most relevant tools for you",
-    "chef_ejecutivo": "Executive Chef",
-    "panaderia": "Bakery",
-    "food_truck": "Food Truck",
-    "estudiante": "Culinary Student",
-    "restaurante": "Restaurant",
-    "reposteria": "Pastry"
+    "title_prefix": "Find Your",
+    "title_highlight": "Perfect App",
+    "description": "Select your profile and discover the tools that best fit your needs",
+    "preview_label": "Preview",
+    "personas": {
+      "chef-ejecutivo": {
+        "name": "Executive Chef",
+        "short_name": "Executive Chef",
+        "mobile_name": "Chef",
+        "description": "I lead teams and design strategic menus"
+      },
+      "panaderia": {
+        "name": "Bakery Owner",
+        "short_name": "Bakery",
+        "mobile_name": "Bakery",
+        "description": "I run a bakery and create artisan breads"
+      },
+      "food-truck": {
+        "name": "Food Truck Owner",
+        "short_name": "Food Truck",
+        "mobile_name": "Truck",
+        "description": "I operate a mobile food business"
+      },
+      "estudiante": {
+        "name": "Culinary Student",
+        "short_name": "Student",
+        "mobile_name": "Student",
+        "description": "I'm learning gastronomy professionally"
+      },
+      "restaurante": {
+        "name": "Restaurant Owner",
+        "short_name": "Restaurant",
+        "mobile_name": "Rest.",
+        "description": "I manage a restaurant operation"
+      },
+      "reposteria": {
+        "name": "Pastry Specialist",
+        "short_name": "Pastry",
+        "mobile_name": "Pastry",
+        "description": "I specialize in pastry and desserts"
+      }
+    }
   },
   "showcase": {
     "creativity_title": "Culinary Creativity",
