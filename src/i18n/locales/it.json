@@ -319,6 +319,138 @@
       }
     }
   },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Creatività Culinaria",
+        "description": "Ricette creative professionali di cucina",
+        "preview": "Piatti contemporanei unici con tecniche innovative..."
+      },
+      "pasteleria_creativa": {
+        "name": "Pasticceria Creativa",
+        "description": "Dolci signature passo dopo passo",
+        "preview": "Tecniche moderne di pasticceria per creazioni straordinarie..."
+      },
+      "chocolateria_creativa": {
+        "name": "Cioccolateria Creativa",
+        "description": "Praline e cioccolato d'avanguardia",
+        "preview": "Ganache innovative e texture per cioccolato gourmet..."
+      },
+      "heladeria_creativa": {
+        "name": "Gelateria Creativa",
+        "description": "Gelato artigianale professionale",
+        "preview": "Sorbetti e gelati unici con sapori inaspettati..."
+      },
+      "panaderia_creativa": {
+        "name": "Panetteria Creativa",
+        "description": "Pani unici e fermentazioni",
+        "preview": "Pani a lievito madre con ingredienti e tecniche innovative..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentazione e conserve signature",
+        "preview": "Tecniche di fermentazione controllata per conserve gourmet..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "Cucina vegetale di alto livello",
+        "preview": "Ceviche di king oyster con latte di tigre al cocco e peperoncini..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Scopri abbinamenti scientifici",
+        "preview": "Cioccolato + finocchio per composti fenolici condivisi..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Assistente IA generale più avanzato",
+        "preview": "Aiuta con dubbi tecnici e pianificazione menu stagionali"
+      },
+      "mermas_gencal": {
+        "name": "Mermas GenCal",
+        "description": "Ottimizza rese e riduce sprechi",
+        "preview": "Risparmia fino al 30% sui costi ingredienti con calcoli precisi"
+      },
+      "id_alergenos": {
+        "name": "ID Allergeni",
+        "description": "Identifica allergeni automaticamente",
+        "preview": "Rispetta normative sicurezza alimentare senza errori"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Benessere e leadership in cucina",
+        "preview": "Riduce stress e migliora clima lavorativo del team"
+      },
+      "conversor_ing": {
+        "name": "Convertitore Ing",
+        "description": "Converte misure e pesi istantaneamente",
+        "preview": "Adatta ricette tra sistemi metrici senza errori"
+      },
+      "calcula_pax": {
+        "name": "Calcula Pax",
+        "description": "Regola quantità secondo commensali",
+        "preview": "Scala ricette con precisione matematica per qualsiasi evento"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Specializzati nel catering professionale",
+        "preview": "Menu per eventi con logistica e costi ottimizzati"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfeziona la tua hamburgeria",
+        "preview": "Ricette gourmet e tecniche di cottura per burger premium"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Ottimizza il tuo food truck",
+        "preview": "Menu mobili redditizi con ingredienti versatili"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Cocktail e tapas signature",
+        "preview": "Combinazioni uniche di bevande e abbinamenti perfetti"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Gestione integrale del ristorante",
+        "preview": "Dal menu all'esperienza del cliente"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Ottimizza ogni piatto per i motori di ricerca",
+        "preview": "I tuoi piatti appaiono su Google nelle ricerche locali di cibo"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Pianifica contenuti gastronomici",
+        "preview": "Calendario editoriale con tendenze e date chiave"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Automatizza i tuoi contenuti Instagram",
+        "preview": "Post professionali con perfetta coerenza ed engagement"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Contenuti Pinterest per gastronomi",
+        "preview": "Ricette visive ottimizzate per massima portata"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Accesso alla conoscenza culinaria universale",
+        "preview": "Enciclopedia gastronomica con tecniche e termini professionali"
+      }
+    }
+  },
   "features": {
     "title": "Caratteristiche Principali",
     "ai_powered": "Intelligenza Artificiale Avanzata",

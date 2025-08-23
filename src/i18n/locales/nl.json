@@ -319,6 +319,138 @@
       }
     }
   },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Culinaire Creativiteit",
+        "description": "Professionele creatieve keukenrecepten",
+        "preview": "Unieke hedendaagse gerechten met innovatieve technieken..."
+      },
+      "pasteleria_creativa": {
+        "name": "Creatieve Banketbakkerij",
+        "description": "Signature desserts stap voor stap",
+        "preview": "Moderne banketbakkerij technieken voor buitengewone creaties..."
+      },
+      "chocolateria_creativa": {
+        "name": "Creatieve Chocolaterie",
+        "description": "Bonbons en avant-garde chocolade",
+        "preview": "Innovatieve ganaches en texturen voor gourmet chocolade..."
+      },
+      "heladeria_creativa": {
+        "name": "Creatieve IJssalon",
+        "description": "Artisanaal professioneel ijs",
+        "preview": "Unieke sorbets en gelato's met onverwachte smaken..."
+      },
+      "panaderia_creativa": {
+        "name": "Creatieve Bakkerij",
+        "description": "Unieke broden en fermentaties",
+        "preview": "Zuurdesembroden met innovatieve ingrediënten en technieken..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentatie en signature conserven",
+        "preview": "Gecontroleerde fermentatietechnieken voor gourmet conserven..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "Hoogwaardige plantaardige keuken",
+        "preview": "King oyster ceviche met kokos tijgermelk en pepers..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Ontdek wetenschappelijke pairings",
+        "preview": "Chocolade + venkel door gedeelde fenolische verbindingen..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Meest geavanceerde algemene AI-assistent",
+        "preview": "Helpt met technische vragen en seizoensgebonden menuplannen"
+      },
+      "mermas_gencal": {
+        "name": "Mermas GenCal",
+        "description": "Optimaliseert opbrengsten en vermindert verspilling",
+        "preview": "Bespaart tot 30% op ingrediëntenkosten met precieze berekeningen"
+      },
+      "id_alergenos": {
+        "name": "ID Allergenen",
+        "description": "Identificeert allergenen automatisch",
+        "preview": "Voldoet aan voedselveiligheidsnormen zonder fouten"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Welzijn en leiderschap in de keuken",
+        "preview": "Vermindert stress en verbetert werksfeer van het team"
+      },
+      "conversor_ing": {
+        "name": "Convertor Ing",
+        "description": "Converteert maten en gewichten direct",
+        "preview": "Past recepten aan tussen metrische systemen zonder fouten"
+      },
+      "calcula_pax": {
+        "name": "Calcula Pax",
+        "description": "Past hoeveelheden aan volgens gasten",
+        "preview": "Schaalt recepten met wiskundige precisie voor elk evenement"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Specialiseer in professionele catering",
+        "preview": "Evenementmenu's met geoptimaliseerde logistiek en kosten"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfectioneer je hamburgerbar",
+        "preview": "Gourmet recepten en kooktechnieken voor premium burgers"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Optimaliseer je food truck",
+        "preview": "Winstgevende mobiele menu's met veelzijdige ingrediënten"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Signature cocktails en tapas",
+        "preview": "Unieke drankcombinaties en perfecte pairings"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Integraal restaurantbeheer",
+        "preview": "Van menu tot klantervaring"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Optimaliseer elk gerecht voor zoekmachines",
+        "preview": "Je gerechten verschijnen in Google bij lokale voedselzoekopdrachten"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Plan gastronomische inhoud",
+        "preview": "Redactionele kalender met trends en belangrijke data"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Automatiseer je Instagram-inhoud",
+        "preview": "Professionele posts met perfecte consistentie en betrokkenheid"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Pinterest-inhoud voor gastronomen",
+        "preview": "Visuele recepten geoptimaliseerd voor maximaal bereik"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Toegang tot universele culinaire kennis",
+        "preview": "Gastronomische encyclopedie met professionele technieken en termen"
+      }
+    }
+  },
   "features": {
     "title": "Hoofdkenmerken",
     "ai_powered": "Geavanceerde Kunstmatige Intelligentie",
