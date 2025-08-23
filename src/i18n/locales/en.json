@@ -233,6 +233,29 @@
     "image2_alt": "Taste 1973 team with AI Chef Pro",
     "image3_alt": "Culinary innovation with AI Chef Pro"
   },
+  "category_ctas": {
+    "title_start": "Start Your",
+    "title_highlight": "Transformation",
+    "title_end": "Today",
+    "description": "Choose your path and access the tools that will revolutionize your kitchen",
+    "cta_button": "Start Now",
+    "creativity": {
+      "title": "Explore Culinary Creativity",
+      "description": "Unlock your creative potential"
+    },
+    "world": {
+      "title": "Master World Cuisines",
+      "description": "25 culinary traditions"
+    },
+    "business": {
+      "title": "Optimize Your Business",
+      "description": "Tools for efficiency"
+    },
+    "marketing": {
+      "title": "Boost Your Marketing",
+      "description": "Content that converts"
+    }
+  },
   "pricing": {
     "title": "Plans and Pricing",
     "description": "Plans adapted for all gastronomic professionals: chefs, restaurant owners, managers, bartenders, bakers, pastry chefs, chocolatiers and entrepreneurs in the sector. Each plan is designed to boost your gastronomic business.",

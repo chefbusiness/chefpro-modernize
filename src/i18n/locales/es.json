@@ -424,6 +424,29 @@
     "image2_alt": "Equipo Taste 1973 con AI Chef Pro",
     "image3_alt": "Innovación culinaria con AI Chef Pro"
   },
+  "category_ctas": {
+    "title_start": "Comienza tu",
+    "title_highlight": "Transformación",
+    "title_end": "Hoy",
+    "description": "Elige tu camino y accede a las herramientas que revolucionarán tu cocina",
+    "cta_button": "Comenzar Ahora",
+    "creativity": {
+      "title": "Explora Creatividad Culinaria",
+      "description": "Desbloquea tu potencial creativo"
+    },
+    "world": {
+      "title": "Domina Cocinas del Mundo",
+      "description": "25 tradiciones culinarias"
+    },
+    "business": {
+      "title": "Optimiza tu Negocio",
+      "description": "Herramientas para la eficiencia"
+    },
+    "marketing": {
+      "title": "Potencia tu Marketing",
+      "description": "Contenido que convierte"
+    }
+  },
   "pricing": {
     "title": "Planes y Precios",
     "description": "Planes adaptados para todos los profesionales gastronómicos: chefs, dueños de restaurantes, managers, bartenders, panaderos, pasteleros, chocolateros y emprendedores del sector. Cada plan está diseñado para impulsar tu negocio gastronómico.",

@@ -3,34 +3,38 @@ import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function CategoryCTAs() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const ctaButtons = [
     {
+      id: 'creativity',
       icon: ChefHat,
-      title: 'Explora Creatividad Culinaria',
-      description: 'Desbloquea tu potencial creativo',
+      title: t('category_ctas.creativity.title'),
+      description: t('category_ctas.creativity.description'),
       path: '/cocina-creativa',
       color: 'from-orange-500 to-red-600'
     },
     {
+      id: 'world',
       icon: Globe,
-      title: 'Domina Cocinas del Mundo',
-      description: '25 tradiciones culinarias',
+      title: t('category_ctas.world.title'),
+      description: t('category_ctas.world.description'),
       path: '/recetarios',
       color: 'from-blue-500 to-cyan-600'
     },
     {
+      id: 'business',
       icon: Calculator,
-      title: 'Optimiza tu Negocio',
-      description: 'Herramientas para la eficiencia',
+      title: t('category_ctas.business.title'),
+      description: t('category_ctas.business.description'),
       path: '/herramientas',
       color: 'from-green-500 to-emerald-600'
     },
     {
+      id: 'marketing',
       icon: Camera,
-      title: 'Potencia tu Marketing',
-      description: 'Contenido que convierte',
+      title: t('category_ctas.marketing.title'),
+      description: t('category_ctas.marketing.description'),
       path: '/contenidos',
       color: 'from-purple-500 to-pink-600'
     }
@@ -44,10 +48,10 @@ export default function CategoryCTAs() {
     <section id="category-ctas" className="container py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          Comienza tu <span className="gradient-text">Transformación</span> Hoy
+          {t('category_ctas.title_start')} <span className="gradient-text">{t('category_ctas.title_highlight')}</span> {t('category_ctas.title_end')}
         </h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Elige tu camino y accede a las herramientas que revolucionarán tu cocina
+          {t('category_ctas.description')}
         </p>
       </div>
 
@@ -71,7 +75,7 @@ export default function CategoryCTAs() {
                     className="w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
                     onClick={() => handleCTAClick(cta.path)}
                   >
-                    Comenzar Ahora
+                    {t('category_ctas.cta_button')}
                   </Button>
                 </div>
               </div>
