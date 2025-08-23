@@ -369,7 +369,7 @@
     "description": "Explore real screenshots of our specialized applications for gastronomy professionals",
     "previous": "Previous",
     "next": "Next", 
-    "counter": "{current} of {total} applications shown",
+    "counter": "{{current}} of {{total}} applications shown",
     "explore_all": "Explore All Apps"
   },
   "screenshots": {

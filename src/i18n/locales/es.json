@@ -90,7 +90,7 @@
     "description": "Explora capturas reales de nuestras aplicaciones especializadas para profesionales gastronómicos",
     "previous": "Anterior",
     "next": "Siguiente",
-    "counter": "{current} de {total} aplicaciones mostradas", 
+    "counter": "{{current}} de {{total}} aplicaciones mostradas", 
     "explore_all": "Explorar Todas las Apps"
   },
   "screenshots": {
