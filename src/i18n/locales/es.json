@@ -41,7 +41,11 @@
     "tools": "10+", 
     "tools_label": "Herramientas de Negocio",
     "categories": "6",
-    "categories_label": "Categorías Profesionales"
+    "categories_label": "Categorías Profesionales",
+    "new_app": "1",
+    "new_app_label": "Nueva App Cada Semana",
+    "chefs": "764+",
+    "chefs_label": "Chefs y Profesionales de Hostelería"
   },
   "categories": {
     "title": "Explora Nuestras 6 Categorías de Apps",
