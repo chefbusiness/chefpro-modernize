@@ -462,6 +462,17 @@
       }
     }
   },
+  "chef_section": {
+    "title_part1": "Recettes instantanées.",
+    "title_part2": "Productivité accrue.",
+    "title_part3": "Inspiration infinie.",
+    "description_start": "Chef",
+    "description_end": "et son équipe utilisant AI Chef Pro",
+    "cta": "Essayer AI Chef Pro",
+    "image1_alt": "Chef Diego Schattenhofer utilisant AI Chef Pro - Taste 1973",
+    "image2_alt": "Équipe Taste 1973 avec AI Chef Pro",
+    "image3_alt": "Innovation culinaire avec AI Chef Pro"
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
     "description": "Transformez votre cuisine avec 55+ outils IA spécialisés. Créativité culinaire, livres de recettes mondiaux, gestion d'entreprise et marketing gastronomique.",
