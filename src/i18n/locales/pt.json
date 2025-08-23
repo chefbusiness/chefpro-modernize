@@ -521,10 +521,96 @@
   },
   "pricing": {
     "title": "Planos e Preços",
+    "description": "Planos adaptados para todos os profissionais gastronômicos: chefs, donos de restaurantes, gerentes, bartenders, padeiros, confeiteiros, chocolateiros e empreendedores do setor. Cada plano é projetado para impulsionar seu negócio gastronômico.",
     "monthly": "Mensal",
     "annual": "Anual",
     "free_trial": "Teste grátis 7 dias",
-    "most_popular": "Mais Popular"
+    "most_popular": "Mais Popular",
+    "start_free": "Começar Grátis",
+    "select_plan": "Selecionar Plano",
+    "enterprise_question": "Precisa de um plano enterprise?",
+    "contact_us": "Entre em contato para uma solução personalizada",
+    "plans": {
+      "member": {
+        "name": "Membro",
+        "price": "Grátis",
+        "description": "Para explorar funcionalidades básicas",
+        "features": {
+          "0": "Acesso básico às ferramentas",
+          "1": "Receitas básicas",
+          "2": "Suporte por email",
+          "3": "Funcionalidades limitadas"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "10€",
+        "period": "/mês",
+        "description": "Ideal para profissionais gastronômicos independentes",
+        "features": {
+          "0": "Todas as funções básicas",
+          "1": "Gerador de receitas avançado",
+          "2": "Food Pairing AI",
+          "3": "Suporte prioritário",
+          "4": "Mais de 20 livros de receitas"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "15€",
+        "period": "/mês",
+        "description": "Para profissionais com uso frequente e maior criatividade",
+        "features": {
+          "0": "Todas as funções Pro",
+          "1": "Coaching profissional gastronômico",
+          "2": "Análise nutricional avançada",
+          "3": "Personalização completa",
+          "4": "Integrações avançadas"
+        }
+      },
+      "premium_pro": {
+        "name": "Premium Pro",
+        "price": "25€",
+        "period": "/mês",
+        "description": "Para donos e gerentes de negócios gastronômicos",
+        "features": {
+          "0": "Todas as funções Premium",
+          "1": "Gestão de equipe",
+          "2": "Analytics avançadas",
+          "3": "Acesso à API",
+          "4": "Consultoria mensal"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "50€",
+        "period": "/mês",
+        "description": "Para empresários gastronômicos e redes de restaurantes",
+        "features": {
+          "0": "Acesso ilimitado completo",
+          "1": "Suporte 24/7",
+          "2": "Consultoria personalizada",
+          "3": "Desenvolvimento de características customizadas",
+          "4": "Integração enterprise"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Anual",
+        "price": "500€",
+        "period": "/ano",
+        "original_price": "600€",
+        "discount": "Economize 100€",
+        "description": "Ideal para empresários gastronômicos, donos de restaurantes e executivos",
+        "features": {
+          "0": "Todas as 55+ ferramentas incluídas",
+          "1": "Uso ilimitado durante todo o ano",
+          "2": "Acesso a todas as cozinhas do mundo",
+          "3": "Ferramentas avançadas de negócio",
+          "4": "Suporte premium 24/7",
+          "5": "Consultoria mensal personalizada"
+        }
+      }
+    }
   },
   "featured": {
     "title_main": "Apps em Destaque",

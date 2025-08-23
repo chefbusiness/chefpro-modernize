@@ -521,10 +521,96 @@
   },
   "pricing": {
     "title": "Plannen en Prijzen",
+    "description": "Plannen aangepast voor alle gastronomische professionals: chefs, restauranteigenaren, managers, barkeepers, bakkers, banketbakkers, chocolatiers en ondernemers in de sector. Elk plan is ontworpen om uw gastronomische bedrijf te stimuleren.",
     "monthly": "Maandelijks",
     "annual": "Jaarlijks",
     "free_trial": "7 dagen gratis proberen",
-    "most_popular": "Meest Populair"
+    "most_popular": "Meest Populair",
+    "start_free": "Gratis Beginnen",
+    "select_plan": "Plan Selecteren",
+    "enterprise_question": "Heeft u een enterprise-plan nodig?",
+    "contact_us": "Neem contact met ons op voor een gepersonaliseerde oplossing",
+    "plans": {
+      "member": {
+        "name": "Lid",
+        "price": "Gratis",
+        "description": "Om basisfunctionaliteiten te verkennen",
+        "features": {
+          "0": "Basis toegang tot tools",
+          "1": "Basis recepten",
+          "2": "E-mailondersteuning",
+          "3": "Beperkte functionaliteiten"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "10€",
+        "period": "/maand",
+        "description": "Ideaal voor onafhankelijke gastronomische professionals",
+        "features": {
+          "0": "Alle basisfuncties",
+          "1": "Geavanceerde receptgenerator",
+          "2": "Food Pairing AI",
+          "3": "Prioriteitsondersteuning",
+          "4": "Meer dan 20 kookboeken"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "15€",
+        "period": "/maand",
+        "description": "Voor professionals met frequent gebruik en meer creativiteit",
+        "features": {
+          "0": "Alle Pro-functies",
+          "1": "Professionele gastronomische coaching",
+          "2": "Geavanceerde voedingsanalyse",
+          "3": "Volledige personalisatie",
+          "4": "Geavanceerde integraties"
+        }
+      },
+      "premium_pro": {
+        "name": "Premium Pro",
+        "price": "25€",
+        "period": "/maand",
+        "description": "Voor eigenaren en managers van gastronomische bedrijven",
+        "features": {
+          "0": "Alle Premium-functies",
+          "1": "Teambeheer",
+          "2": "Geavanceerde analytics",
+          "3": "API-toegang",
+          "4": "Maandelijkse consultatie"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "50€",
+        "period": "/maand",
+        "description": "Voor gastronomische ondernemers en restaurantketens",
+        "features": {
+          "0": "Volledige onbeperkte toegang",
+          "1": "24/7 ondersteuning",
+          "2": "Gepersonaliseerde consultatie",
+          "3": "Ontwikkeling van aangepaste functies",
+          "4": "Enterprise-integratie"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Jaarlijks",
+        "price": "500€",
+        "period": "/jaar",
+        "original_price": "600€",
+        "discount": "Bespaar 100€",
+        "description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en leidinggevenden",
+        "features": {
+          "0": "Alle 55+ tools inbegrepen",
+          "1": "Onbeperkt gebruik het hele jaar",
+          "2": "Toegang tot alle wereldkeukens",
+          "3": "Geavanceerde bedrijfstools",
+          "4": "Premium 24/7 ondersteuning",
+          "5": "Maandelijkse gepersonaliseerde consultatie"
+        }
+      }
+    }
   },
   "featured": {
     "title_main": "Uitgelichte Apps",
