@@ -32,7 +32,21 @@ const SEOHead = ({
   
   // Generate hreflang URLs for all supported languages
   const languages = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
-  const canonicalUrl = canonical || `${siteUrl}/${currentLanguage === 'es' ? '' : currentLanguage}`;
+  const canonicalUrl = canonical || `${siteUrl}${currentLanguage === 'es' ? '' : `/${currentLanguage}`}`;
+  
+  // Map language codes to proper og:locale format
+  const getOGLocale = (lang: string) => {
+    const localeMap: Record<string, string> = {
+      'es': 'es_ES',
+      'en': 'en_US', 
+      'fr': 'fr_FR',
+      'de': 'de_DE',
+      'it': 'it_IT',
+      'pt': 'pt_PT',
+      'nl': 'nl_NL'
+    };
+    return localeMap[lang] || 'es_ES';
+  };
   
   return (
     <Helmet>
@@ -64,44 +78,81 @@ const SEOHead = ({
       <meta property="og:description" content={pageDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+      <meta property="og:image" content={`${siteUrl}/og-image.jpg`} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="AI Chef Pro" />
-      <meta property="og:locale" content={currentLanguage === 'es' ? 'es_ES' : `${currentLanguage}_${currentLanguage.toUpperCase()}`} />
+      <meta property="og:locale" content={getOGLocale(currentLanguage)} />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@aichefpro" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={pageDescription} />
-      <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+      <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
       
       {/* Additional SEO */}
       <meta name="theme-color" content="#f59e0b" />
       <meta name="msapplication-TileColor" content="#f59e0b" />
       
-      {/* Structured Data */}
+      {/* Enhanced Structured Data */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "WebApplication",
-          "name": "AI Chef Pro",
-          "description": pageDescription,
-          "url": siteUrl,
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "offers": {
-            "@type": "Offer",
-            "category": "SaaS",
-            "priceCurrency": "EUR",
-            "price": "0",
-            "priceValidUntil": "2025-12-31"
+        {JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "AI Chef Pro",
+            "url": siteUrl,
+            "logo": `${siteUrl}/logo-ai-chef-pro.svg`,
+            "sameAs": [
+              "https://twitter.com/aichefpro",
+              "https://www.linkedin.com/company/aichefpro"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "info@aichef.pro",
+              "telephone": "+34744717942",
+              "contactType": "customer service"
+            }
           },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "ratingCount": "847"
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "AI Chef Pro",
+            "url": siteUrl,
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": `${siteUrl}/search?q={search_term_string}`
+              },
+              "query-input": "required name=search_term_string"
+            },
+            "inLanguage": languages
           },
-          "inLanguage": languages
-        })}
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "AI Chef Pro",
+            "description": pageDescription,
+            "url": siteUrl,
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "offers": {
+              "@type": "Offer",
+              "category": "SaaS",
+              "priceCurrency": "EUR",
+              "price": "0",
+              "priceValidUntil": "2025-12-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "ratingCount": "847"
+            },
+            "inLanguage": languages
+          }
+        ])}
       </script>
     </Helmet>
   );
