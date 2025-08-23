@@ -559,6 +559,29 @@
     "image2_alt": "Équipe Taste 1973 avec AI Chef Pro",
     "image3_alt": "Innovation culinaire avec AI Chef Pro"
   },
+  "category_ctas": {
+    "title_start": "Commencez votre",
+    "title_highlight": "Transformation",
+    "title_end": "Aujourd'hui",
+    "description": "Choisissez votre voie et accédez aux outils qui révolutionneront votre cuisine",
+    "cta_button": "Commencer Maintenant",
+    "creativity": {
+      "title": "Explorez la Créativité Culinaire",
+      "description": "Libérez votre potentiel créatif"
+    },
+    "world": {
+      "title": "Maîtrisez les Cuisines du Monde",
+      "description": "25 traditions culinaires"
+    },
+    "business": {
+      "title": "Optimisez votre Entreprise",
+      "description": "Outils pour l'efficacité"
+    },
+    "marketing": {
+      "title": "Boostez votre Marketing",
+      "description": "Contenu qui convertit"
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
     "description": "Transformez votre cuisine avec 55+ outils IA spécialisés. Créativité culinaire, livres de recettes mondiaux, gestion d'entreprise et marketing gastronomique.",
