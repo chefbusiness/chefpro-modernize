@@ -695,7 +695,20 @@
     "image3_alt": "Kulinarische Innovation mit AI Chef Pro"
   },
   "faq": {
-    "title": "Häufig gestellte Fragen"
+    "title": "Häufig gestellte Fragen",
+    "description": "Finden Sie Antworten auf die häufigsten Fragen zu AI Chef Pro",
+    "q1": "Was ist in AI Chef Pro enthalten?",
+    "a1": "AI Chef Pro umfasst 55+ auf Gastronomie spezialisierte Anwendungen, von kulinarischer Kreativität bis hin zu Business-Tools. Sie erhalten Zugang zu Kochbüchern aus 25 Weltküchen, KI-Rezeptgeneratoren, wissenschaftlichem Food Pairing, Management-Tools und vielem mehr.",
+    "q2": "Kann ich AI Chef Pro als Anfänger verwenden?",
+    "a2": "Absolut! AI Chef Pro ist für Profis aller Erfahrungsstufen konzipiert. Unsere Tools enthalten detaillierte Erklärungen, Schritt-für-Schritt-Techniken und Coaching, die Ihnen helfen, Ihre gastronomischen Fähigkeiten zu entwickeln.",
+    "q3": "Wie funktioniert die kostenlose Testversion?",
+    "a3": "Sie können AI Chef Pro 7 Tage lang kostenlos mit vollem Zugang zu allen Funktionen testen. Sie benötigen keine Kreditkarte zum Starten. Registrieren Sie sich einfach und beginnen Sie, alle unsere Tools zu erkunden.",
+    "q4": "Passen sich die Rezepte an verschiedene Portionsgrößen an?",
+    "a4": "Ja, alle unsere Tools enthalten automatische Portionsberechnung. Sie können jedes Rezept für 1 Person oder für 1000 Gäste anpassen, und unser System berechnet automatisch die genauen Mengen jeder Zutat.",
+    "q5": "Unterstützt es Nahrungsmittelbeschränkungen?",
+    "a5": "Definitiv. AI Chef Pro umfasst automatische Allergenidentifikation, Anpassung für vegane, vegetarische, glutenfreie, Keto- und viele andere Beschränkungen. Es beinhaltet auch vollständige Nährwertanalyse.",
+    "q6": "Kann ich mein Abonnement jederzeit kündigen?",
+    "a6": "Ja, Sie können Ihr Abonnement jederzeit über Ihr Benutzerpanel kündigen. Es gibt keine Strafen oder Kündigungsgebühren. Bei Kündigung behalten Sie den Zugang bis zum Ende Ihrer aktuellen Abrechnungsperiode."
   },
   "footer": {
     "description": "KI-Tools Suite für kulinarische Fachkräfte",

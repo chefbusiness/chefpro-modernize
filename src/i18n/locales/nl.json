@@ -695,7 +695,20 @@
     "image3_alt": "Culinaire innovatie met AI Chef Pro"
   },
   "faq": {
-    "title": "Veelgestelde Vragen"
+    "title": "Veelgestelde Vragen",
+    "description": "Vind antwoorden op de meest gestelde vragen over AI Chef Pro",
+    "q1": "Wat is inbegrepen in AI Chef Pro?",
+    "a1": "AI Chef Pro omvat 55+ gespecialiseerde gastronomische applicaties, van culinaire creativiteit tot bedrijfstools. U krijgt toegang tot kookboeken van 25 wereldkeukens, AI-receptgeneratoren, wetenschappelijke food pairing, managementtools en veel meer.",
+    "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
+    "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
+    "q3": "Hoe werkt de gratis proefperiode?",
+    "a3": "U kunt AI Chef Pro 7 dagen gratis proberen met volledige toegang tot alle functionaliteiten. U heeft geen creditcard nodig om te beginnen. Registreer uzelf gewoon en begin alle onze tools te verkennen.",
+    "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
+    "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
+    "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
+    "a5": "Zeker. AI Chef Pro bevat automatische allergeenidentificatie, aanpassing voor veganistische, vegetarische, glutenvrije, keto en vele andere beperkingen. Het bevat ook volledige voedingsanalyse.",
+    "q6": "Kan ik mijn abonnement op elk moment opzeggen?",
+    "a6": "Ja, u kunt uw abonnement op elk moment opzeggen via uw gebruikerspaneel. Er zijn geen boetes of opzegkosten. Als u opzegt, behoudt u toegang tot het einde van uw huidige factureringsperiode."
   },
   "footer": {
     "description": "AI-tools suite voor culinaire professionals",

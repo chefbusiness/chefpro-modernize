@@ -695,7 +695,20 @@
     "image3_alt": "Innovazione culinaria con AI Chef Pro"
   },
   "faq": {
-    "title": "Domande Frequenti"
+    "title": "Domande Frequenti",
+    "description": "Trova le risposte alle domande più comuni su AI Chef Pro",
+    "q1": "Cosa include AI Chef Pro?",
+    "a1": "AI Chef Pro include 55+ applicazioni specializzate in gastronomia, dalla creatività culinaria agli strumenti business. Avrai accesso a ricettari di 25 cucine del mondo, generatori di ricette con IA, food pairing scientifico, strumenti di gestione e molto altro.",
+    "q2": "Posso usare AI Chef Pro se sono principiante?",
+    "a2": "Assolutamente! AI Chef Pro è progettato per professionisti di tutti i livelli. I nostri strumenti includono spiegazioni dettagliate, tecniche passo dopo passo e coaching che ti aiuteranno a sviluppare le tue competenze gastronomiche.",
+    "q3": "Come funziona la prova gratuita?",
+    "a3": "Puoi provare AI Chef Pro gratuitamente per 7 giorni con accesso completo a tutte le funzionalità. Non hai bisogno di carta di credito per iniziare. Registrati semplicemente e inizia a esplorare tutti i nostri strumenti.",
+    "q4": "Le ricette si adattano a diverse dimensioni di porzione?",
+    "a4": "Sì, tutti i nostri strumenti includono calcolo automatico delle porzioni. Puoi adattare qualsiasi ricetta per 1 persona o per 1000 commensali, e il nostro sistema calcolerà automaticamente le quantità esatte di ogni ingrediente.",
+    "q5": "Include supporto per restrizioni alimentari?",
+    "a5": "Definitivamente. AI Chef Pro include identificazione automatica degli allergeni, adattamento per diete vegane, vegetariane, senza glutine, keto e molte altre restrizioni. Include anche analisi nutrizionale completa.",
+    "q6": "Posso cancellare il mio abbonamento in qualsiasi momento?",
+    "a6": "Sì, puoi cancellare il tuo abbonamento in qualsiasi momento dal tuo pannello utente. Non ci sono penali o commissioni di cancellazione. Se cancelli, manterrai l'accesso fino alla fine del tuo periodo di fatturazione attuale."
   },
   "footer": {
     "description": "Suite di strumenti IA per professionisti culinari",

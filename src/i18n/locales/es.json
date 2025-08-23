@@ -569,7 +569,20 @@
     "business_tools_desc": "Optimiza costos, mermas y operaciones"
   },
   "faq": {
-    "title": "Preguntas Frecuentes"
+    "title": "Preguntas Frecuentes",
+    "description": "Encuentra respuestas a las preguntas más comunes sobre AI Chef Pro",
+    "q1": "¿Qué incluye AI Chef Pro?",
+    "a1": "AI Chef Pro incluye 55+ aplicaciones especializadas en gastronomía, desde creatividad culinaria hasta herramientas de negocio. Tendrás acceso a recetarios de 25 cocinas del mundo, generadores de recetas con IA, food pairing científico, herramientas de gestión y mucho más.",
+    "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
+    "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
+    "q3": "¿Cómo funciona la prueba gratuita?",
+    "a3": "Puedes probar AI Chef Pro gratis durante 7 días con acceso completo a todas las funcionalidades. No necesitas tarjeta de crédito para comenzar. Simplemente regístrate y empieza a explorar todas nuestras herramientas.",
+    "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
+    "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
+    "q5": "¿Incluye soporte para restricciones alimentarias?",
+    "a5": "Definitivamente. AI Chef Pro incluye identificación automática de alérgenos, adaptación para dietas veganas, vegetarianas, sin gluten, keto y muchas otras restricciones. También incluye análisis nutricional completo.",
+    "q6": "¿Puedo cancelar mi suscripción en cualquier momento?",
+    "a6": "Sí, puedes cancelar tu suscripción en cualquier momento desde tu panel de usuario. No hay penalizaciones ni tarifas de cancelación. Si cancelas, mantendrás acceso hasta el final de tu período de facturación actual."
   },
   "footer": {
     "description": "Suite de herramientas de IA para profesionales gastronómicos",
