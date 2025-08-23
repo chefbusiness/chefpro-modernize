@@ -424,8 +424,102 @@
     "image2_alt": "Equipo Taste 1973 con AI Chef Pro",
     "image3_alt": "Innovación culinaria con AI Chef Pro"
   },
+  "pricing": {
+    "title": "Planes y Precios",
+    "description": "Planes adaptados para todos los profesionales gastronómicos: chefs, dueños de restaurantes, managers, bartenders, panaderos, pasteleros, chocolateros y emprendedores del sector. Cada plan está diseñado para impulsar tu negocio gastronómico.",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "free_trial": "Prueba gratuita de 7 días",
+    "most_popular": "Más Popular",
+    "start_free": "Empezar Gratis",
+    "select_plan": "Seleccionar Plan",
+    "enterprise_question": "¿Necesitas un plan enterprise?",
+    "contact_us": "Contáctanos para una solución personalizada",
+    "plans": {
+      "member": {
+        "name": "Miembro",
+        "price": "Gratis",
+        "description": "Para explorar funcionalidades básicas",
+        "features": {
+          "0": "Acceso básico a herramientas",
+          "1": "Recetas básicas",
+          "2": "Soporte por email",
+          "3": "Funcionalidades limitadas"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "10€",
+        "period": "/mes",
+        "description": "Ideal para profesionales gastronómicos independientes",
+        "features": {
+          "0": "Todas las funciones básicas",
+          "1": "Generador de recetas avanzado",
+          "2": "Food Pairing AI",
+          "3": "Soporte prioritario",
+          "4": "Más de 20 recetarios"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "15€",
+        "period": "/mes",
+        "description": "Para profesionales con uso frecuente y mayor creatividad",
+        "features": {
+          "0": "Todas las funciones Pro",
+          "1": "Coaching profesional gastronómico",
+          "2": "Análisis nutricional avanzado",
+          "3": "Personalización completa",
+          "4": "Integraciones avanzadas"
+        }
+      },
+      "premium_pro": {
+        "name": "Premium Pro",
+        "price": "25€",
+        "period": "/mes",
+        "description": "Para dueños y managers de negocios gastronómicos",
+        "features": {
+          "0": "Todas las funciones Premium",
+          "1": "Gestión de equipo",
+          "2": "Analíticas avanzadas",
+          "3": "API access",
+          "4": "Consultoría mensual"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "50€",
+        "period": "/mes",
+        "description": "Para empresarios gastronómicos y cadenas de restaurantes",
+        "features": {
+          "0": "Acceso ilimitado completo",
+          "1": "Soporte 24/7",
+          "2": "Consultoría personalizada",
+          "3": "Desarrollo de características customizadas",
+          "4": "Integración enterprise"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Anual",
+        "price": "500€",
+        "period": "/año",
+        "original_price": "600€",
+        "discount": "Ahorra 100€",
+        "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos",
+        "features": {
+          "0": "Todas las 55+ herramientas incluidas",
+          "1": "Uso ilimitado durante todo el año",
+          "2": "Acceso a todas las cocinas del mundo",
+          "3": "Herramientas avanzadas de negocio",
+          "4": "Soporte premium 24/7",
+          "5": "Consultoría mensual personalizada"
+        }
+      }
+    }
+  },
   "showcase": {
     "creativity_title": "Creatividad Culinaria",
+    "creativity_subtitle": "Showcase",
     "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
     "world_title": "Recetarios Mundiales",
     "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
@@ -446,13 +540,6 @@
     "global_desc": "21 recetarios de cocinas del mundo",
     "business_tools": "Gestión de Negocio",
     "business_tools_desc": "Optimiza costos, mermas y operaciones"
-  },
-  "pricing": {
-    "title": "Planes y Precios",
-    "monthly": "Mensual",
-    "annual": "Anual",
-    "free_trial": "Prueba gratis 7 días",
-    "most_popular": "Más Popular"
   },
   "faq": {
     "title": "Preguntas Frecuentes"

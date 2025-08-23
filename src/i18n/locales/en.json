@@ -235,10 +235,96 @@
   },
   "pricing": {
     "title": "Plans and Pricing",
+    "description": "Plans adapted for all gastronomic professionals: chefs, restaurant owners, managers, bartenders, bakers, pastry chefs, chocolatiers and entrepreneurs in the sector. Each plan is designed to boost your gastronomic business.",
     "monthly": "Monthly",
     "annual": "Annual",
     "free_trial": "7-day free trial",
-    "most_popular": "Most Popular"
+    "most_popular": "Most Popular",
+    "start_free": "Start Free",
+    "select_plan": "Select Plan",
+    "enterprise_question": "Need an enterprise plan?",
+    "contact_us": "Contact us for a personalized solution",
+    "plans": {
+      "member": {
+        "name": "Member",
+        "price": "Free",
+        "description": "To explore basic functionalities",
+        "features": {
+          "0": "Basic access to tools",
+          "1": "Basic recipes",
+          "2": "Email support",
+          "3": "Limited functionalities"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "€10",
+        "period": "/month",
+        "description": "Ideal for independent gastronomic professionals",
+        "features": {
+          "0": "All basic functions",
+          "1": "Advanced recipe generator",
+          "2": "Food Pairing AI",
+          "3": "Priority support",
+          "4": "More than 20 cookbooks"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "€15",
+        "period": "/month",
+        "description": "For professionals with frequent use and greater creativity",
+        "features": {
+          "0": "All Pro functions",
+          "1": "Professional gastronomic coaching",
+          "2": "Advanced nutritional analysis",
+          "3": "Complete customization",
+          "4": "Advanced integrations"
+        }
+      },
+      "premium_pro": {
+        "name": "Premium Pro",
+        "price": "€25",
+        "period": "/month",
+        "description": "For owners and managers of gastronomic businesses",
+        "features": {
+          "0": "All Premium functions",
+          "1": "Team management",
+          "2": "Advanced analytics",
+          "3": "API access",
+          "4": "Monthly consulting"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "€50",
+        "period": "/month",
+        "description": "For gastronomic entrepreneurs and restaurant chains",
+        "features": {
+          "0": "Complete unlimited access",
+          "1": "24/7 support",
+          "2": "Personalized consulting",
+          "3": "Custom feature development",
+          "4": "Enterprise integration"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Annual",
+        "price": "€500",
+        "period": "/year",
+        "original_price": "€600",
+        "discount": "Save €100",
+        "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "Unlimited use throughout the year",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Premium 24/7 support",
+          "5": "Personalized monthly consulting"
+        }
+      }
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",

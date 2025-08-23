@@ -5,91 +5,97 @@ import { Check } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function ModernPricing() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const plans = [
     {
-      name: 'Miembro',
-      price: 'Gratis',
-      description: 'Para explorar funcionalidades básicas',
+      id: 'member',
+      name: t('pricing.plans.member.name'),
+      price: t('pricing.plans.member.price'),
+      description: t('pricing.plans.member.description'),
       features: [
-        'Acceso básico a herramientas',
-        'Recetas básicas',
-        'Soporte por email',
-        'Funcionalidades limitadas'
+        t('pricing.plans.member.features.0'),
+        t('pricing.plans.member.features.1'),
+        t('pricing.plans.member.features.2'),
+        t('pricing.plans.member.features.3')
       ],
       popular: false
     },
     {
-      name: 'Pro',
-      price: '10€',
-      period: '/mes',
-      description: 'Ideal para profesionales gastronómicos independientes',
+      id: 'pro',
+      name: t('pricing.plans.pro.name'),
+      price: t('pricing.plans.pro.price'),
+      period: t('pricing.plans.pro.period'),
+      description: t('pricing.plans.pro.description'),
       features: [
-        'Todas las funciones básicas',
-        'Generador de recetas avanzado',
-        'Food Pairing AI',
-        'Soporte prioritario',
-        'Más de 20 recetarios'
+        t('pricing.plans.pro.features.0'),
+        t('pricing.plans.pro.features.1'),
+        t('pricing.plans.pro.features.2'),
+        t('pricing.plans.pro.features.3'),
+        t('pricing.plans.pro.features.4')
       ],
       popular: false
     },
     {
-      name: 'Premium',
-      price: '15€',
-      period: '/mes',
-      description: 'Para profesionales con uso frecuente y mayor creatividad',
+      id: 'premium',
+      name: t('pricing.plans.premium.name'),
+      price: t('pricing.plans.premium.price'),
+      period: t('pricing.plans.premium.period'),
+      description: t('pricing.plans.premium.description'),
       features: [
-        'Todas las funciones Pro',
-        'Coaching profesional gastronómico',
-        'Análisis nutricional avanzado',
-        'Personalización completa',
-        'Integraciones avanzadas'
+        t('pricing.plans.premium.features.0'),
+        t('pricing.plans.premium.features.1'),
+        t('pricing.plans.premium.features.2'),
+        t('pricing.plans.premium.features.3'),
+        t('pricing.plans.premium.features.4')
       ],
       popular: false
     },
     {
-      name: 'Premium Pro',
-      price: '25€',
-      period: '/mes',
-      description: 'Para dueños y managers de negocios gastronómicos',
+      id: 'premium_pro',
+      name: t('pricing.plans.premium_pro.name'),
+      price: t('pricing.plans.premium_pro.price'),
+      period: t('pricing.plans.premium_pro.period'),
+      description: t('pricing.plans.premium_pro.description'),
       features: [
-        'Todas las funciones Premium',
-        'Gestión de equipo',
-        'Analíticas avanzadas',
-        'API access',
-        'Consultoría mensual'
+        t('pricing.plans.premium_pro.features.0'),
+        t('pricing.plans.premium_pro.features.1'),
+        t('pricing.plans.premium_pro.features.2'),
+        t('pricing.plans.premium_pro.features.3'),
+        t('pricing.plans.premium_pro.features.4')
       ],
       popular: false
     },
     {
-      name: 'Premium Plus',
-      price: '50€',
-      period: '/mes',
-      description: 'Para empresarios gastronómicos y cadenas de restaurantes',
+      id: 'premium_plus',
+      name: t('pricing.plans.premium_plus.name'),
+      price: t('pricing.plans.premium_plus.price'),
+      period: t('pricing.plans.premium_plus.period'),
+      description: t('pricing.plans.premium_plus.description'),
       features: [
-        'Acceso ilimitado completo',
-        'Soporte 24/7',
-        'Consultoría personalizada',
-        'Desarrollo de características customizadas',
-        'Integración enterprise'
+        t('pricing.plans.premium_plus.features.0'),
+        t('pricing.plans.premium_plus.features.1'),
+        t('pricing.plans.premium_plus.features.2'),
+        t('pricing.plans.premium_plus.features.3'),
+        t('pricing.plans.premium_plus.features.4')
       ],
       popular: true
     },
     {
-      name: 'Premium Plus Anual',
-      price: '500€',
-      period: '/año',
-      originalPrice: '600€',
-      discount: 'Ahorra 100€',
-      description: 'Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos',
+      id: 'premium_plus_annual',
+      name: t('pricing.plans.premium_plus_annual.name'),
+      price: t('pricing.plans.premium_plus_annual.price'),
+      period: t('pricing.plans.premium_plus_annual.period'),
+      originalPrice: t('pricing.plans.premium_plus_annual.original_price'),
+      discount: t('pricing.plans.premium_plus_annual.discount'),
+      description: t('pricing.plans.premium_plus_annual.description'),
       features: [
-        'Todas las 55+ herramientas incluidas',
-        'Uso ilimitado durante todo el año',
-        'Acceso a todas las cocinas del mundo',
-        'Herramientas avanzadas de negocio',
-        'Soporte premium 24/7',
-        'Consultoría mensual personalizada'
+        t('pricing.plans.premium_plus_annual.features.0'),
+        t('pricing.plans.premium_plus_annual.features.1'),
+        t('pricing.plans.premium_plus_annual.features.2'),
+        t('pricing.plans.premium_plus_annual.features.3'),
+        t('pricing.plans.premium_plus_annual.features.4'),
+        t('pricing.plans.premium_plus_annual.features.5')
       ],
       popular: false,
       isAnnual: true
@@ -104,12 +110,10 @@ export default function ModernPricing() {
     <section id="pricing" className="container py-8 md:py-12 lg:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
-          Planes y Precios
+          {t('pricing.title')}
         </h2>
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
-          Planes adaptados para todos los profesionales gastronómicos: chefs, dueños de restaurantes, 
-          managers, bartenders, panaderos, pasteleros, chocolateros y emprendedores del sector. 
-          Cada plan está diseñado para impulsar tu negocio gastronómico.
+          {t('pricing.description')}
         </p>
       </div>
 
@@ -128,7 +132,7 @@ export default function ModernPricing() {
                 variant="default" 
                 className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1"
               >
-                🔥 Más Popular
+                🔥 {t('pricing.most_popular')}
               </Badge>
             )}
             
@@ -169,7 +173,7 @@ export default function ModernPricing() {
                     : 'bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold'
                 }`}
               >
-                {plan.price === 'Gratis' ? 'Empezar Gratis' : 'Seleccionar Plan'}
+                {plan.price === t('pricing.plans.member.price') ? t('pricing.start_free') : t('pricing.select_plan')}
               </Button>
               
               <ul className="grid gap-2 text-sm">
@@ -187,12 +191,12 @@ export default function ModernPricing() {
 
       <div className="text-center">
         <p className="text-muted-foreground text-sm">
-          ¿Necesitas un plan enterprise?{" "}
+          {t('pricing.enterprise_question')}{" "}
           <a 
             href="#contacto" 
             className="font-medium text-primary hover:underline"
           >
-            Contáctanos para una solución personalizada
+            {t('pricing.contact_us')}
           </a>
         </p>
       </div>
