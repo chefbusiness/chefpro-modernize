@@ -519,6 +519,29 @@
     "business_tools": "Gestione Aziendale",
     "business_tools_desc": "Ottimizza costi, sprechi e operazioni"
   },
+  "category_ctas": {
+    "title_start": "Inizia la Tua",
+    "title_highlight": "Trasformazione",
+    "title_end": "Oggi",
+    "description": "Scegli il tuo percorso e accedi agli strumenti che rivoluzioneranno la tua cucina",
+    "cta_button": "Inizia Ora",
+    "creativity": {
+      "title": "Esplora la Creatività Culinaria",
+      "description": "Sblocca il tuo potenziale creativo"
+    },
+    "world": {
+      "title": "Domina le Cucine del Mondo",
+      "description": "25 tradizioni culinarie"
+    },
+    "business": {
+      "title": "Ottimizza il Tuo Business",
+      "description": "Strumenti per l'efficienza"
+    },
+    "marketing": {
+      "title": "Potenzia il Tuo Marketing",
+      "description": "Contenuti che convertono"
+    }
+  },
   "pricing": {
     "title": "Piani e Prezzi",
     "description": "Piani adattati per tutti i professionisti gastronomici: chef, proprietari di ristoranti, manager, barman, panettieri, pasticceri, cioccolatieri e imprenditori del settore. Ogni piano è progettato per promuovere la tua attività gastronomica.",

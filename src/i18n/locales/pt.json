@@ -519,6 +519,29 @@
     "business_tools": "Gestão de Negócios",
     "business_tools_desc": "Otimize custos, desperdícios e operações"
   },
+  "category_ctas": {
+    "title_start": "Comece Sua",
+    "title_highlight": "Transformação",
+    "title_end": "Hoje",
+    "description": "Escolha seu caminho e acesse as ferramentas que revolucionarão sua cozinha",
+    "cta_button": "Começar Agora",
+    "creativity": {
+      "title": "Explore Criatividade Culinária",
+      "description": "Desbloqueie seu potencial criativo"
+    },
+    "world": {
+      "title": "Domine Cozinhas do Mundo",
+      "description": "25 tradições culinárias"
+    },
+    "business": {
+      "title": "Otimize Seu Negócio",
+      "description": "Ferramentas para eficiência"
+    },
+    "marketing": {
+      "title": "Potencialize Seu Marketing",
+      "description": "Conteúdo que converte"
+    }
+  },
   "pricing": {
     "title": "Planos e Preços",
     "description": "Planos adaptados para todos os profissionais gastronômicos: chefs, donos de restaurantes, gerentes, bartenders, padeiros, confeiteiros, chocolateiros e empreendedores do setor. Cada plano é projetado para impulsionar seu negócio gastronômico.",

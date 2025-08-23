@@ -519,6 +519,29 @@
     "business_tools": "Unternehmensführung",
     "business_tools_desc": "Optimieren Sie Kosten, Abfall und Abläufe"
   },
+  "category_ctas": {
+    "title_start": "Beginnen Sie Ihre",
+    "title_highlight": "Transformation",
+    "title_end": "Heute",
+    "description": "Wählen Sie Ihren Weg und erhalten Sie Zugang zu den Tools, die Ihre Küche revolutionieren werden",
+    "cta_button": "Jetzt Beginnen",
+    "creativity": {
+      "title": "Erkunden Sie Kulinarische Kreativität",
+      "description": "Entfesseln Sie Ihr kreatives Potenzial"
+    },
+    "world": {
+      "title": "Beherrschen Sie Weltküchen",
+      "description": "25 kulinarische Traditionen"
+    },
+    "business": {
+      "title": "Optimieren Sie Ihr Geschäft",
+      "description": "Tools für Effizienz"
+    },
+    "marketing": {
+      "title": "Stärken Sie Ihr Marketing",
+      "description": "Inhalte, die konvertieren"
+    }
+  },
   "pricing": {
     "title": "Pläne und Preise",
     "description": "Pläne für alle gastronomischen Fachkräfte: Köche, Restaurantbesitzer, Manager, Barkeeper, Bäcker, Konditoren, Chocolatiers und Unternehmer der Branche. Jeder Plan ist darauf ausgelegt, Ihr gastronomisches Geschäft zu fördern.",

@@ -519,6 +519,29 @@
     "business_tools": "Bedrijfsbeheer",
     "business_tools_desc": "Optimaliseer kosten, afval en operaties"
   },
+  "category_ctas": {
+    "title_start": "Begin Uw",
+    "title_highlight": "Transformatie",
+    "title_end": "Vandaag",
+    "description": "Kies uw pad en krijg toegang tot de tools die uw keuken zullen revolutioneren",
+    "cta_button": "Nu Beginnen",
+    "creativity": {
+      "title": "Verken Culinaire Creativiteit",
+      "description": "Ontgrendel uw creatieve potentieel"
+    },
+    "world": {
+      "title": "Beheers Wereldkeukens",
+      "description": "25 culinaire tradities"
+    },
+    "business": {
+      "title": "Optimaliseer Uw Bedrijf",
+      "description": "Tools voor efficiëntie"
+    },
+    "marketing": {
+      "title": "Versterk Uw Marketing",
+      "description": "Inhoud die converteert"
+    }
+  },
   "pricing": {
     "title": "Plannen en Prijzen",
     "description": "Plannen aangepast voor alle gastronomische professionals: chefs, restauranteigenaren, managers, barkeepers, bakkers, banketbakkers, chocolatiers en ondernemers in de sector. Elk plan is ontworpen om uw gastronomische bedrijf te stimuleren.",
