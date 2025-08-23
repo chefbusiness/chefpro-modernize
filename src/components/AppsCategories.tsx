@@ -1,83 +1,150 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { appCategories } from '@/data/apps';
+import { 
+  ChefHat, 
+  Globe, 
+  Calculator, 
+  Building, 
+  Camera 
+} from 'lucide-react';
+import { useLanguage } from '@/hooks/useLanguage';
+
+const scrollToSection = (categoryId: string) => {
+  const sectionIds: { [key: string]: string } = {
+    'creativity': 'creatividad-showcase',
+    'worldCookbooks': 'recetarios-mundiales',
+    'knowledge': 'gastro-conocimiento',
+    'business': 'herramientas-business',
+    'concepts': 'conceptos-negocio',
+    'marketing': 'marketing-contenido'
+  };
+  
+  const targetId = sectionIds[categoryId] || categoryId;
+  const element = document.getElementById(targetId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
 
 export default function AppsCategories() {
-  const scrollToSection = (categoryId: string) => {
-    const sectionMap: { [key: string]: string } = {
-      creativity: 'showcase-creatividad',
-      worldCookbooks: 'recetarios',
-      knowledge: 'gastro-conocimiento',
-      business: 'herramientas-business',
-      concepts: 'conceptos-negocio',
-      marketing: 'marketing-contenido'
-    };
-    
-    const targetId = sectionMap[categoryId] || categoryId;
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const { t } = useLanguage();
+
+  const appCategories = [
+    {
+      id: 'creativity',
+      name: t('categories.creativity.title'),
+      description: t('categories.creativity.description'),
+      icon: ChefHat,
+      count: t('categories.creativity.count'),
+      apps: [
+        t('apps.creativity.cocina_creativa.name'),
+        t('apps.creativity.pasteleria_creativa.name'),
+        t('apps.creativity.chocolateria_creativa.name'),
+        '+5 ' + t('common.more')
+      ]
+    },
+    {
+      id: 'worldCookbooks',
+      name: t('categories.cookbooks.title'),
+      description: t('categories.cookbooks.description'),
+      icon: Globe,
+      count: t('categories.cookbooks.count'),
+      apps: [
+        t('cookbooks.europa') + ' (10)',
+        t('cookbooks.latinoamerica') + ' (11)',
+        t('cookbooks.asia') + ' (4)'
+      ]
+    },
+    {
+      id: 'knowledge',
+      name: t('categories.knowledge.title'),
+      description: t('categories.knowledge.description'),
+      icon: Globe,
+      count: t('categories.knowledge.count'),
+      apps: [t('apps.knowledge.gastro_lexicum.name')]
+    },
+    {
+      id: 'business',
+      name: t('categories.tools.title'),
+      description: t('categories.tools.description'),
+      icon: Calculator,
+      count: t('categories.tools.count'),
+      apps: [
+        t('apps.business.chatgpt_4o.name'),
+        t('apps.business.mermas_gencal.name'),
+        t('apps.business.id_alergenos.name'),
+        '+3 ' + t('common.more')
+      ]
+    },
+    {
+      id: 'concepts',
+      name: t('categories.business.title'),
+      description: t('categories.business.description'),
+      icon: Building,
+      count: t('categories.business.count'),
+      apps: [
+        t('apps.concepts.catering_ai.name'),
+        t('apps.concepts.burger_pro_ai.name'),
+        t('apps.concepts.food_truck_ai.name'),
+        '+2 ' + t('common.more')
+      ]
+    },
+    {
+      id: 'marketing',
+      name: t('categories.marketing.title'),
+      description: t('categories.marketing.description'),
+      icon: Camera,
+      count: t('categories.marketing.count'),
+      apps: [
+        t('apps.marketing.menu_plate_seo.name'),
+        t('apps.marketing.gastro_calendar.name'),
+        t('apps.marketing.instaflow_ai.name'),
+        '+1 ' + t('common.more')
+      ]
     }
-  };
+  ];
 
   return (
-    <section id="categorias-apps" className="container py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          Explora Nuestras <span className="gradient-text">6 Categorías</span> de Apps
+    <section className="container py-8 md:py-12 lg:py-24">
+      <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+        <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
+          {t('categories.title')}
         </h2>
-        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Cada categoría está diseñada para potenciar un aspecto específico de tu trabajo culinario
+        <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
+          {t('categories.description')}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {appCategories.map((category) => {
-          const IconComponent = category.icon;
-          return (
-            <Card 
-              key={category.id}
-              className="group hover:shadow-lg transition-all duration-300 cursor-pointer hover:scale-[1.02] active:scale-[0.98] border-border/50 hover:border-accent/50"
-              onClick={() => scrollToSection(category.id)}
-            >
-              <CardHeader className="p-4 sm:p-6">
-                <div className="flex items-center justify-between mb-2">
-                  <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
-                  <Badge variant="secondary" className="bg-accent/10 text-accent-dark font-semibold text-xs">
-                    {category.count} Apps
+      <div className="mx-auto grid justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-12">
+        {appCategories.map((category) => (
+          <Card 
+            key={category.id} 
+            className="cursor-pointer hover-card group"
+            onClick={() => scrollToSection(category.id)}
+          >
+            <CardHeader>
+              <div className="flex items-center justify-between">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <category.icon className="h-6 w-6 text-primary" />
+                </div>
+                <Badge variant="secondary">{category.count}</Badge>
+              </div>
+              <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                {category.name}
+              </CardTitle>
+              <CardDescription>{category.description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-1">
+                {category.apps.map((app, index) => (
+                  <Badge key={index} variant="outline" className="text-xs">
+                    {app}
                   </Badge>
-                </div>
-                <CardTitle className="text-lg sm:text-xl group-hover:text-accent transition-colors leading-tight">
-                  {category.name}
-                </CardTitle>
-                <CardDescription className="text-sm sm:text-base leading-relaxed">
-                  {category.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-4 sm:p-6 pt-0">
-                <div className="flex flex-wrap gap-1">
-                  {category.apps.slice(0, 3).map((app) => (
-                    <Badge key={app.id} variant="outline" className="text-xs">
-                      {app.name}
-                    </Badge>
-                  ))}
-                  {category.apps.length > 3 && (
-                    <Badge variant="outline" className="text-xs text-muted-foreground">
-                      +{category.apps.length - 3} más
-                    </Badge>
-                  )}
-                  {category.id === 'worldCookbooks' && (
-                    <>
-                      <Badge variant="outline" className="text-xs">Europa (10)</Badge>
-                      <Badge variant="outline" className="text-xs">Latinoamérica (11)</Badge>
-                      <Badge variant="outline" className="text-xs">Asia (4)</Badge>
-                    </>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          );
-        })}
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );

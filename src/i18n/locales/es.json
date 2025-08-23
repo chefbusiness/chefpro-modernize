@@ -11,6 +11,9 @@
     "blog": "Blog",
     "login": "Iniciar Sesión"
   },
+  "common": {
+    "more": "más"
+  },
   "cta": {
     "primary": "PROBAR GRATIS AHORA",
     "secondary": "Prueba AI Chef Pro",
@@ -149,6 +152,170 @@
     "proveedores": "Proveedores Gastro", 
     "marketing": "Marketing & Contenido",
     "recetarios": "Recetarios Mundiales"
+  },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Cocina Creativa",
+        "description": "Genera platos únicos con historia",
+        "preview": "Tartar de remolacha asada con gel de cítricos y flores comestibles..."
+      },
+      "pasteleria_creativa": {
+        "name": "Pastelería Creativa",
+        "description": "Postres de autor paso a paso",
+        "preview": "Soufflé de chocolate con pralinés de vainilla y coulis de frambuesa..."
+      },
+      "chocolateria_creativa": {
+        "name": "Chocolatería Creativa",
+        "description": "Bombones y chocolate de vanguardia",
+        "preview": "Ganache infusionado con té matcha y cristales de sal rosa..."
+      },
+      "heladeria_creativa": {
+        "name": "Heladería Creativa",
+        "description": "Helados artesanales profesionales",
+        "preview": "Sorbete de gin-tonic con notas cítricas y hierbas aromáticas..."
+      },
+      "panaderia_creativa": {
+        "name": "Panadería Creativa",
+        "description": "Panes únicos y fermentaciones",
+        "preview": "Pan de masa madre con semillas tostadas y miel de azahar..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentación y conservas de autor",
+        "preview": "Kimchi de remolacha con jengibre y chili coreano fermentado..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "Cocina vegetal de alto nivel",
+        "preview": "Ceviche de king oyster con leche de tigre de coco y ajíes..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Descubre maridajes científicos",
+        "preview": "Chocolate + hinojo por compuestos fenólicos compartidos..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Asistente general IA más avanzado",
+        "preview": "Ayuda con dudas técnicas y planning de menús estacionales"
+      },
+      "mermas_gencal": {
+        "name": "Mermas GenCal",
+        "description": "Optimiza rendimientos y reduce desperdicios",
+        "preview": "Ahorra hasta 30% en costes de ingredientes con cálculos precisos"
+      },
+      "id_alergenos": {
+        "name": "ID Alérgenos",
+        "description": "Identifica alérgenos automáticamente",
+        "preview": "Cumple normativas de seguridad alimentaria sin errores"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Bienestar y liderazgo en la cocina",
+        "preview": "Reduce estrés y mejora ambiente laboral del equipo"
+      },
+      "conversor_ing": {
+        "name": "Conversor Ing",
+        "description": "Convierte medidas y pesos al instante",
+        "preview": "Adapta recetas entre sistemas métricos sin errores"
+      },
+      "calcula_pax": {
+        "name": "Calcula Pax",
+        "description": "Ajusta cantidades según comensales",
+        "preview": "Escala recetas con precisión matemática para cualquier evento"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Especialízate en catering profesional",
+        "preview": "Menús para eventos con logística y costes optimizados"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfecciona tu hamburguesería",
+        "preview": "Recetas gourmet y técnicas de cocción para burgers premium"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Optimiza tu food truck",
+        "preview": "Menús móviles rentables con ingredientes versátiles"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Cocktails y tapas de autor",
+        "preview": "Combinaciones únicas de bebidas y maridajes perfectos"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Gestión integral de restaurante",
+        "preview": "Desde el menú hasta la experiencia del cliente"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Optimiza cada plato para buscadores",
+        "preview": "Tus platos aparecen en Google cuando buscan comida local"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Planifica contenido gastronómico",
+        "preview": "Calendario editorial con tendencias y fechas clave"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Contenido para Instagram automatizado",
+        "preview": "Posts, stories y reels que enamoran a tu audiencia"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Domina Pinterest gastronómico",
+        "preview": "Pins virales con recetas que generan tráfico real"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Accede al saber culinario universal",
+        "preview": "Enciclopedia gastronómica con técnicas y términos profesionales"
+      }
+    }
+  },
+  "cookbooks": {
+    "title": "Recetarios del Mundo",
+    "description": "Explora cocinas auténticas de diferentes culturas con más de 25 recetarios regionales",
+    "europa": "Europa",
+    "latinoamerica": "Latinoamérica", 
+    "asia": "Asia",
+    "alemana": "Alemana",
+    "belga": "Belga",
+    "britanica": "Británica",
+    "espanola": "Española",
+    "francesa": "Francesa",
+    "griega": "Griega",
+    "portuguesa": "Portuguesa",
+    "paises_bajos": "Países Bajos",
+    "suiza": "Suiza",
+    "turca": "Turca",
+    "argentina": "Argentina",
+    "brasilena": "Brasileña",
+    "chilena": "Chilena",
+    "colombiana": "Colombiana",
+    "dominicana": "Dominicana",
+    "ecuatoriana": "Ecuatoriana",
+    "jamaicana": "Jamaicana",
+    "mexicana": "Mexicana",
+    "paraguaya": "Paraguaya",
+    "peruana": "Peruana",
+    "venezolana": "Venezolana",
+    "china": "China",
+    "india": "India",
+    "japonesa": "Japonesa",
+    "tailandesa": "Tailandesa"
   },
   "showcase": {
     "creativity_title": "Creatividad Culinaria",

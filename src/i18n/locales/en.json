@@ -11,6 +11,9 @@
     "blog": "Blog",
     "login": "Sign In"
   },
+  "common": {
+    "more": "more"
+  },
   "cta": {
     "primary": "TRY FREE NOW",
     "secondary": "Try AI Chef Pro",
