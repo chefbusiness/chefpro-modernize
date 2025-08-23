@@ -4,6 +4,15 @@ import { worldCookbooks } from '@/data/apps';
 import { useState } from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 
+// Utility function to normalize cuisine names for translation keys
+const normalizeCuisineName = (name: string): string => {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove accents
+    .replace(/\s+/g, '_'); // Replace spaces with underscores
+};
+
 export default function WorldCookbooks() {
   const [selectedCuisine, setSelectedCuisine] = useState<string | null>(null);
   const { t } = useLanguage();
@@ -38,7 +47,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
@@ -71,7 +80,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
@@ -104,7 +113,7 @@ export default function WorldCookbooks() {
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
                     <span className="text-xl sm:text-2xl">{cuisine.flag}</span>
-                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${cuisine.name.toLowerCase()}`)}</span>
+                    <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
                 {selectedCuisine === cuisine.name && (
