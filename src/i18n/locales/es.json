@@ -413,8 +413,19 @@
       }
     }
   },
+  "chef_section": {
+    "title_part1": "Recetas instantáneas.",
+    "title_part2": "Mayor Productividad.",
+    "title_part3": "Inspiración sin fin.",
+    "description_start": "Chef",
+    "description_end": "y su equipo usando AI Chef Pro", 
+    "cta": "Prueba AI Chef Pro",
+    "image1_alt": "Chef Diego Schattenhofer usando AI Chef Pro - Taste 1973",
+    "image2_alt": "Equipo Taste 1973 con AI Chef Pro",
+    "image3_alt": "Innovación culinaria con AI Chef Pro"
+  },
   "showcase": {
-    "creativity_subtitle": "Showcase",
+    "creativity_title": "Creatividad Culinaria",
     "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
     "world_title": "Recetarios Mundiales",
     "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",

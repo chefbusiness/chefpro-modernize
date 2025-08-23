@@ -223,11 +223,15 @@
     "cta": "TRY IT FREE NOW"
   },
   "chef_section": {
-    "title": "AI Chef Pro",
-    "subtitle": "Multiplies Your Productivity",
-    "description": "Facilitates your <strong>inspiration</strong> and <strong>creativity</strong>",
-    "chef_link": "Chef Diego Schattenhofer",
-    "cta": "Try AI Chef Pro"
+    "title_part1": "Instant Recipes.",
+    "title_part2": "Greater Productivity.",
+    "title_part3": "Endless Inspiration.",
+    "description_start": "Chef",
+    "description_end": "and his team using AI Chef Pro",
+    "cta": "Try AI Chef Pro",
+    "image1_alt": "Chef Diego Schattenhofer using AI Chef Pro - Taste 1973",
+    "image2_alt": "Taste 1973 team with AI Chef Pro",
+    "image3_alt": "Culinary innovation with AI Chef Pro"
   },
   "pricing": {
     "title": "Plans and Pricing",
