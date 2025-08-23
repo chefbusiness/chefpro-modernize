@@ -13,7 +13,7 @@ import { featuredApps } from '@/data/featured';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function FeaturedApps() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const handleAppClick = (appSlug: string) => {
     window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
@@ -23,10 +23,10 @@ export default function FeaturedApps() {
     <section id="destacadas" className="container py-16 bg-muted/20">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          <span className="gradient-text">Apps Destacadas</span> de la Semana
+          <span className="gradient-text">{t('featured.title_main')}</span> {t('featured.title_sub')}
         </h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Descubre las aplicaciones que están revolucionando la industria gastronómica
+          {t('featured.description')}
         </p>
       </div>
 
@@ -54,8 +54,8 @@ export default function FeaturedApps() {
                       <DialogContent className="max-w-4xl w-[95vw] h-[95vh] p-4">
                         <div className="relative w-full h-full flex flex-col">
                           <div className="mb-4">
-                            <h3 className="text-xl font-bold">{app.name}</h3>
-                            <p className="text-muted-foreground">{app.description}</p>
+                             <h3 className="text-xl font-bold">{t(`featured.apps.${app.id.replace(/-/g, '_')}.name`)}</h3>
+                             <p className="text-muted-foreground">{t(`featured.apps.${app.id.replace(/-/g, '_')}.description`)}</p>
                           </div>
                           <div className="flex-1 flex items-center justify-center">
                             <img 
@@ -70,22 +70,22 @@ export default function FeaturedApps() {
                     <div className="absolute top-2 right-2">
                       <div className="flex items-center gap-1 bg-background/90 backdrop-blur-sm px-2 py-1 rounded-full">
                         <Star className="h-3 w-3 fill-accent text-accent" />
-                        <span className="text-xs font-medium">Destacada</span>
+                        <span className="text-xs font-medium">{t('featured.badge')}</span>
                       </div>
                     </div>
                   </div>
                   <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">
-                    {app.name}
+                    {t(`featured.apps.${app.id.replace(/-/g, '_')}.name`)}
                   </CardTitle>
-                  <CardDescription className="text-sm leading-relaxed">{app.description}</CardDescription>
+                  <CardDescription className="text-sm leading-relaxed">{t(`featured.apps.${app.id.replace(/-/g, '_')}.description`)}</CardDescription>
                 </CardHeader>
                 <CardContent className="p-4 sm:p-6 pt-0">
                   <blockquote className="border-l-4 border-accent/30 pl-3 sm:pl-4 italic text-sm">
-                    <p className="mb-2 text-xs sm:text-sm leading-relaxed">"{app.testimonial.text}"</p>
+                    <p className="mb-2 text-xs sm:text-sm leading-relaxed">"{t(`featured.apps.${app.id.replace(/-/g, '_')}.testimonial.text`)}"</p>
                     <footer className="text-muted-foreground">
-                      <strong className="text-xs sm:text-sm">{app.testimonial.author}</strong>
+                      <strong className="text-xs sm:text-sm">{t(`featured.apps.${app.id.replace(/-/g, '_')}.testimonial.author`)}</strong>
                       <br />
-                      <span className="text-xs">{app.testimonial.role}</span>
+                      <span className="text-xs">{t(`featured.apps.${app.id.replace(/-/g, '_')}.testimonial.role`)}</span>
                     </footer>
                   </blockquote>
                 </CardContent>
@@ -94,7 +94,7 @@ export default function FeaturedApps() {
                     className="w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
                     onClick={() => handleAppClick(app.slug)}
                   >
-                    {app.ctaText}
+                    {t(`featured.apps.${app.id.replace(/-/g, '_')}.cta`)}
                   </Button>
                 </CardFooter>
               </Card>

@@ -152,8 +152,55 @@
     "use_case_label": "Use case",
     "use_tool": "Use Tool"
   },
+  "featured": {
+    "title_main": "Featured Apps",
+    "title_sub": "of the Week",
+    "description": "Discover the applications that are revolutionizing the gastronomic industry",
+    "badge": "Featured",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Work with cutting-edge ingredients",
+        "testimonial": {
+          "text": "It helps me select the best Sosa products for my haute cuisine creations",
+          "author": "Chef M. García",
+          "role": "Executive Chef, Michelin Restaurant"
+        },
+        "cta": "Explore Ingredients"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimize every dish for search engines",
+        "testimonial": {
+          "text": "My dishes now appear on Google when people search for local food. Bookings have increased by 40%",
+          "author": "El Olivo Restaurant",
+          "role": "Owner"
+        },
+        "cta": "Optimize My Menu"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentation and signature preserves",
+        "testimonial": {
+          "text": "It revolutionized my understanding of fermentation. Now I create unique flavors that my customers love",
+          "author": "Chef Ana Rodrigo",
+          "role": "Fermentation Specialist"
+        },
+        "cta": "Master Fermentation"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Wellness and leadership in the kitchen",
+        "testimonial": {
+          "text": "My team is more motivated and the atmosphere in the kitchen is completely different. Less stress, more creativity",
+          "author": "Chef Roberto Silva",
+          "role": "Executive Chef"
+        },
+        "cta": "Improve Leadership"
+      }
+    }
+  },
   "features": {
-    "title": "Advanced Culinary Tools",
     "description": "Complete suite of AI tools and applications for chefs and cooks who want to accelerate and optimize their daily work in professional kitchens and unleash their creativity.",
     "ai_assistant": "AI Culinary Assistant Model",
     "ai_assistant_desc": "Personalized recipe and technique recommendations adapted to your culinary preferences. Over 20 cookbooks.",

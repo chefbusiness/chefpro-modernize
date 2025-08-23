@@ -365,8 +365,55 @@
     "japonesa": "Japonesa",
     "tailandesa": "Tailandesa"
   },
+  "featured": {
+    "title_main": "Apps Destacadas",
+    "title_sub": "de la Semana",
+    "description": "Descubre las aplicaciones que están revolucionando la industria gastronómica",
+    "badge": "Destacada",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Trabaja con ingredientes de vanguardia",
+        "testimonial": {
+          "text": "Me ayuda a seleccionar los mejores productos Sosa para mis creaciones de alta cocina",
+          "author": "Chef M. García",
+          "role": "Chef Ejecutivo, Restaurante Michelin"
+        },
+        "cta": "Explorar Ingredientes"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimiza cada plato para buscadores",
+        "testimonial": {
+          "text": "Mis platos ahora aparecen en Google cuando la gente busca comida local. Las reservas han aumentado un 40%",
+          "author": "Restaurante El Olivo",
+          "role": "Propietario"
+        },
+        "cta": "Optimizar Mi Menú"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentación y conservas de autor",
+        "testimonial": {
+          "text": "Revolucionó mi comprensión de la fermentación. Ahora creo sabores únicos que mis clientes adoran",
+          "author": "Chef Ana Rodrigo",
+          "role": "Especialista en Fermentación"
+        },
+        "cta": "Dominar Fermentación"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Bienestar y liderazgo en la cocina",
+        "testimonial": {
+          "text": "Mi equipo está más motivado y el ambiente en la cocina es completamente diferente. Menos estrés, más creatividad",
+          "author": "Chef Roberto Silva",
+          "role": "Chef Ejecutivo"
+        },
+        "cta": "Mejorar Liderazgo"
+      }
+    }
+  },
   "showcase": {
-    "creativity_title": "Creatividad Culinaria",
     "creativity_subtitle": "Showcase",
     "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
     "world_title": "Recetarios Mundiales",
