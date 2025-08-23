@@ -179,7 +179,9 @@
     "world_title": "Libri di Ricette del Mondo",
     "world_description": "Esplora cucine autentiche di diverse culture",
     "business_title": "Strumenti Business",
-    "business_description": "Ottimizza la gestione e l'operatività del tuo locale"
+    "business_description": "Ottimizza la gestione e l'operatività del tuo locale",
+    "use_case_label": "Caso d'uso",
+    "use_tool": "Usa Strumento"
   },
   "gallery": {
     "badge": "55+ App Specializzate in Azione",

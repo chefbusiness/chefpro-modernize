@@ -179,7 +179,9 @@
     "world_title": "Wereldwijde Kookboeken",
     "world_description": "Ontdek authentieke keukens van verschillende culturen",
     "business_title": "Business Tools",
-    "business_description": "Optimaliseer het beheer en de werking van uw etablissement"
+    "business_description": "Optimaliseer het beheer en de werking van uw etablissement",
+    "use_case_label": "Gebruikscase",
+    "use_tool": "Gebruik Tool"
   },
   "gallery": {
     "badge": "55+ Gespecialiseerde Apps in Actie",

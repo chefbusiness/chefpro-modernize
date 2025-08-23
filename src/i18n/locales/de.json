@@ -179,7 +179,9 @@
     "world_title": "Kochbücher der Welt",
     "world_description": "Entdecken Sie authentische Küchen verschiedener Kulturen",
     "business_title": "Business Tools",
-    "business_description": "Optimieren Sie das Management und den Betrieb Ihres Establishments"
+    "business_description": "Optimieren Sie das Management und den Betrieb Ihres Establishments",
+    "use_case_label": "Anwendungsfall",
+    "use_tool": "Tool Verwenden"
   },
   "gallery": {
     "badge": "55+ Spezialisierte Apps in Aktion",

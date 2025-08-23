@@ -179,7 +179,9 @@
     "world_title": "Livros de Receitas do Mundo",
     "world_description": "Explore culinárias autênticas de diferentes culturas",
     "business_title": "Ferramentas Business",
-    "business_description": "Otimize a gestão e operação do seu estabelecimento"
+    "business_description": "Otimize a gestão e operação do seu estabelecimento",
+    "use_case_label": "Caso de uso",
+    "use_tool": "Usar Ferramenta"
   },
   "gallery": {
     "badge": "55+ Apps Especializadas em Ação",
