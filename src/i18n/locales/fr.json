@@ -414,6 +414,54 @@
     "japonesa": "Japonaise",
     "tailandesa": "Thaïlandaise"
   },
+  "featured": {
+    "title_main": "Apps Vedettes",
+    "title_sub": "de la Semaine",
+    "description": "Découvrez les applications qui révolutionnent l'industrie gastronomique",
+    "badge": "Vedette",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Travaillez avec des ingrédients d'avant-garde",
+        "testimonial": {
+          "text": "Il m'aide à sélectionner les meilleurs produits Sosa pour mes créations de haute cuisine",
+          "author": "Chef M. García",
+          "role": "Chef Exécutif, Restaurant Michelin"
+        },
+        "cta": "Explorer les Ingrédients"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimisez chaque plat pour les moteurs de recherche",
+        "testimonial": {
+          "text": "Mes plats apparaissent maintenant sur Google quand les gens cherchent de la cuisine locale. Les réservations ont augmenté de 40%",
+          "author": "Restaurant El Olivo",
+          "role": "Propriétaire"
+        },
+        "cta": "Optimiser Mon Menu"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentation et conserves d'auteur",
+        "testimonial": {
+          "text": "Cela a révolutionné ma compréhension de la fermentation. Je crée maintenant des saveurs uniques que mes clients adorent",
+          "author": "Chef Ana Rodrigo",
+          "role": "Spécialiste en Fermentation"
+        },
+        "cta": "Maîtriser la Fermentation"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Bien-être et leadership en cuisine",
+        "testimonial": {
+          "text": "Mon équipe est plus motivée et l'ambiance en cuisine est complètement différente. Moins de stress, plus de créativité",
+          "author": "Chef Roberto Silva",
+          "role": "Chef Exécutif"
+        },
+        "cta": "Améliorer le Leadership"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
     "description": "Transformez votre cuisine avec 55+ outils IA spécialisés. Créativité culinaire, livres de recettes mondiaux, gestion d'entreprise et marketing gastronomique.",
