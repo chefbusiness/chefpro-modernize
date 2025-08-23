@@ -79,6 +79,47 @@
   "finder": {
     "title": "Encontre sua App Perfeita",
     "description": "Selecione seu perfil profissional e descubra as ferramentas mais relevantes para você",
+    "title_prefix": "Encontre sua",
+    "title_highlight": "App Perfeita",
+    "preview_label": "Prévia",
+    "personas": {
+      "chef-ejecutivo": {
+        "name": "Chef Executivo",
+        "short_name": "Chef Executivo",
+        "mobile_name": "Chef",
+        "description": "Lidero equipes e projeto cardápios estratégicos"
+      },
+      "panaderia": {
+        "name": "Padaria",
+        "short_name": "Padaria",
+        "mobile_name": "Padar.",
+        "description": "Dirijo uma padaria e crio pães artesanais"
+      },
+      "food-truck": {
+        "name": "Food Truck",
+        "short_name": "Food Truck",
+        "mobile_name": "Truck",
+        "description": "Opero um negócio de comida móvel"
+      },
+      "estudiante": {
+        "name": "Estudante de Gastronomia",
+        "short_name": "Estudante",
+        "mobile_name": "Estud.",
+        "description": "Estou aprendendo gastronomia profissionalmente"
+      },
+      "restaurante": {
+        "name": "Restaurante",
+        "short_name": "Restaurante",
+        "mobile_name": "Rest.",
+        "description": "Gerencio um restaurante"
+      },
+      "reposteria": {
+        "name": "Confeitaria",
+        "short_name": "Confeitaria",
+        "mobile_name": "Conf.",
+        "description": "Me especializo em confeitaria e sobremesas"
+      }
+    },
     "chef_ejecutivo": "Chef Executivo",
     "panaderia": "Padaria",
     "food_truck": "Food Truck",
@@ -151,6 +192,131 @@
     "cocina_india": {
       "title": "Culinária Indiana",
       "description": "Descubra as especiarias e técnicas da culinária indiana com receitas regionais autênticas"
+    }
+  },
+  "recommended_apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Criatividade Culinária",
+        "description": "Receitas criativas profissionais de cozinha",
+        "preview": "Pratos contemporâneos únicos com técnicas inovadoras..."
+      },
+      "pasteleria_creativa": {
+        "name": "Confeitaria Criativa",
+        "description": "Sobremesas signature passo a passo",
+        "preview": "Técnicas modernas de confeitaria para criações extraordinárias..."
+      },
+      "chocolateria_creativa": {
+        "name": "Chocolataria Criativa",
+        "description": "Bombons e chocolate de vanguarda",
+        "preview": "Ganaches inovadoras e texturas para chocolate gourmet..."
+      },
+      "heladeria_creativa": {
+        "name": "Sorveteria Criativa",
+        "description": "Sorvetes artesanais profissionais",
+        "preview": "Sorbetos e gelatos únicos com sabores inesperados..."
+      },
+      "panaderia_creativa": {
+        "name": "Padaria Criativa",
+        "description": "Pães únicos e fermentações",
+        "preview": "Pães de massa madre com ingredientes e técnicas inovadoras..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentação e conservas signature",
+        "preview": "Técnicas de fermentação controlada para conservas gourmet..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "Cozinha vegetal de alto nível",
+        "preview": "Ceviche de king oyster com leite de tigre de coco e pimentas..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Descubra harmonizações científicas",
+        "preview": "Chocolate + funcho por compostos fenólicos compartilhados..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Assistente IA geral mais avançado",
+        "preview": "Ajuda com dúvidas técnicas e planejamento de cardápios sazonais"
+      },
+      "mermas_gencal": {
+        "name": "Mermas GenCal",
+        "description": "Otimiza rendimentos e reduz desperdícios",
+        "preview": "Economiza até 30% em custos de ingredientes com cálculos precisos"
+      },
+      "id_alergenos": {
+        "name": "ID Alérgenos",
+        "description": "Identifica alérgenos automaticamente",
+        "preview": "Cumpre normas de segurança alimentar sem erros"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Bem-estar e liderança na cozinha",
+        "preview": "Reduz estresse e melhora ambiente de trabalho da equipe"
+      },
+      "conversor_ing": {
+        "name": "Conversor Ing",
+        "description": "Converte medidas e pesos instantaneamente",
+        "preview": "Adapta receitas entre sistemas métricos sem erros"
+      },
+      "calcula_pax": {
+        "name": "Calcula Pax",
+        "description": "Ajusta quantidades conforme comensais",
+        "preview": "Escala receitas com precisão matemática para qualquer evento"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Especialize-se em catering profissional",
+        "preview": "Cardápios para eventos com logística e custos otimizados"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Aperfeiçoe sua hamburgueria",
+        "preview": "Receitas gourmet e técnicas de cocção para burgers premium"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Otimize seu food truck",
+        "preview": "Cardápios móveis rentáveis com ingredientes versáteis"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Cocktails e tapas signature",
+        "preview": "Combinações únicas de bebidas e harmonizações perfeitas"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Gestão integral de restaurante",
+        "preview": "Do cardápio à experiência do cliente"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Otimize cada prato para buscadores",
+        "preview": "Seus pratos aparecem no Google em buscas locais de comida"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Planeje conteúdo gastronômico",
+        "preview": "Calendário editorial com tendências e datas importantes"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Automatize seus conteúdos Instagram",
+        "preview": "Posts profissionais com perfeita consistência e engajamento"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Conteúdos Pinterest para gastrônomos",
+        "preview": "Receitas visuais otimizadas para máximo alcance"
+      }
     }
   },
   "features": {
