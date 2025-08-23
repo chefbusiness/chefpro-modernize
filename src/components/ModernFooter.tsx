@@ -5,7 +5,7 @@ import { Facebook, Instagram, Twitter, Youtube, Music } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function ModernFooter() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,27 +24,25 @@ export default function ModernFooter() {
                 className="h-8 w-auto"
               />
             </div>
-            <p className="mt-4 text-sm text-muted-foreground max-w-md">
-              <strong>Inteligencia Artificial para el Chef de Hoy.</strong> 
-              Desarrolla tu potencial profesional con el uso y el apoyo de la 
-              inteligencia artificial en tu día a día.
-            </p>
+            <p 
+              className="mt-4 text-sm text-muted-foreground max-w-md"
+              dangerouslySetInnerHTML={{ __html: t('footer.brand_desc') }}
+            />
             <p className="mt-2 text-xs text-muted-foreground">
-              Suite de Herramientas y Aplicaciones de Inteligencia Artificial 
-              modeladas para Chefs, Cocineros y profesionales de la hostelería.
+              {t('footer.suite_desc')}
             </p>
 
             {/* Newsletter */}
             <div className="mt-6">
-              <h4 className="text-sm font-semibold">BOLETÍN IA PARA CHEFS PRO</h4>
+              <h4 className="text-sm font-semibold">{t('footer.newsletter_title')}</h4>
               <form onSubmit={handleNewsletterSubmit} className="mt-3 flex max-w-md gap-2">
                 <Input
                   type="email"
-                  placeholder="Ingresa tu correo electrónico"
+                  placeholder={t('footer.newsletter_placeholder')}
                   className="flex-1"
                 />
                 <Button type="submit" size="sm">
-                  Suscribirme
+                  {t('footer.newsletter_button')}
                 </Button>
               </form>
             </div>
@@ -52,21 +50,21 @@ export default function ModernFooter() {
 
           {/* Links Column */}
           <div>
-            <h4 className="text-sm font-semibold">Navegación</h4>
+            <h4 className="text-sm font-semibold">{t('footer.nav_title')}</h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <a href="#inicio" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Inicio
+                  {t('footer.nav_home')}
                 </a>
               </li>
               <li>
                 <a href="#herramientas" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Herramientas
+                  {t('footer.nav_tools')}
                 </a>
               </li>
               <li>
                 <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Precios
+                  {t('footer.nav_pricing')}
                 </a>
               </li>
               <li>
@@ -76,7 +74,7 @@ export default function ModernFooter() {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Blog
+                  {t('footer.nav_blog')}
                 </a>
               </li>
               <li>
@@ -86,7 +84,7 @@ export default function ModernFooter() {
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Herramientas Gratuitas 🪄
+                  {t('footer.nav_free_tools')}
                 </a>
               </li>
             </ul>
@@ -94,7 +92,7 @@ export default function ModernFooter() {
 
           {/* Contact Column */}
           <div>
-            <h4 className="text-sm font-semibold">Contacto</h4>
+            <h4 className="text-sm font-semibold">{t('footer.contact_title')}</h4>
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <a 
@@ -121,7 +119,7 @@ export default function ModernFooter() {
                 className="w-full text-sm"
                 size="sm"
               >
-                Planes y Precios
+                {t('footer.plans_button')}
               </Button>
               <Button 
                 variant="outline" 
@@ -129,13 +127,13 @@ export default function ModernFooter() {
                 className="w-full text-sm"
                 size="sm"
               >
-                Probar Gratis
+                {t('footer.try_free_button')}
               </Button>
             </div>
 
             {/* Social Media */}
             <div className="mt-6">
-              <h5 className="text-sm font-semibold mb-3">Síguenos</h5>
+              <h5 className="text-sm font-semibold mb-3">{t('footer.follow_us')}</h5>
               <div className="flex space-x-3">
                 <a 
                   href="https://www.facebook.com/profile.php?id=61565177312061" 

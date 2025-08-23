@@ -38,7 +38,11 @@
     "tools": "10+",
     "tools_label": "Business Tools",
     "categories": "6",
-    "categories_label": "Professional Categories"
+    "categories_label": "Professional Categories",
+    "new_app": "1",
+    "new_app_label": "New App Every Week",
+    "chefs": "10,000+",
+    "chefs_label": "Chefs Trust Us"
   },
   "categories": {
     "title": "Explore Our 6 App Categories",
@@ -65,7 +69,7 @@
     },
     "business": {
       "title": "Business Concepts",
-      "description": "Specialize in your niche",
+      "description": "specialize in your niche",
       "count": "5 apps"
     },
     "marketing": {
@@ -93,15 +97,34 @@
     "business_description": "Optimize the management and operation of your establishment"
   },
   "features": {
-    "title": "Key Features",
-    "ai_powered": "Advanced Artificial Intelligence",
-    "ai_powered_desc": "GPT models specialized in gastronomy",
-    "specialized": "Specialized Tools",
-    "specialized_desc": "55+ applications for every gastronomic need",
-    "global": "Global Cuisine",
-    "global_desc": "21 cookbooks from world cuisines",
-    "business_tools": "Business Management",
-    "business_tools_desc": "Optimize costs, waste and operations"
+    "title": "Advanced Culinary Tools",
+    "description": "Complete suite of AI tools and applications for chefs and cooks who want to accelerate and optimize their daily work in professional kitchens and unleash their creativity.",
+    "ai_assistant": "AI Culinary Assistant Model",
+    "ai_assistant_desc": "Personalized recipe and technique recommendations adapted to your culinary preferences. Over 20 cookbooks.",
+    "food_pairing": "Food Pairing & Ingredient Substitutions",
+    "food_pairing_desc": "Find ideal alternatives for ingredients you need to replace in your recipes.",
+    "coaching": "Chef Coaching",
+    "coaching_desc": "Psychological and motivational support to improve performance and wellness in the kitchen.",
+    "llm_title": "Advanced LLM Technology",
+    "llm_description": "Language models specialized for the gastronomic sector"
+  },
+  "about": {
+    "title": "About AI Chef Pro",
+    "description": "<strong>AI Chef Pro</strong> is your <strong>ideal culinary assistant</strong>, offering innovative tools for <strong>chefs</strong> and <strong>cooks</strong> who seek to improve their <strong>efficiency</strong> and <strong>creativity</strong> supported by the potential that <strong>artificial intelligence</strong> offers today.",
+    "mission_title": "Our Mission",
+    "mission_desc": "Facilitate the use of <strong>generative artificial intelligence</strong> to all professionals in <strong>cooking</strong>, <strong>restaurants</strong> and <strong>hospitality</strong> in general.",
+    "creativity_title": "Expand Your Creativity",
+    "creativity_desc": "Use cutting-edge tools to enhance and boost your management capacity, creativity and leadership in today's gastronomic world.",
+    "chef_title": "Chef Diego Schattenhofer",
+    "chef_desc": "Developed by renowned chef Diego Schattenhofer and his professional team.",
+    "cta": "TRY IT FREE NOW"
+  },
+  "chef_section": {
+    "title": "AI Chef Pro",
+    "subtitle": "Multiplies Your Productivity",
+    "description": "Facilitates your <strong>inspiration</strong> and <strong>creativity</strong>",
+    "chef_link": "Chef Diego Schattenhofer",
+    "cta": "Try AI Chef Pro"
   },
   "pricing": {
     "title": "Plans and Pricing",
@@ -111,15 +134,234 @@
     "most_popular": "Most Popular"
   },
   "faq": {
-    "title": "Frequently Asked Questions"
+    "title": "Frequently Asked Questions",
+    "description": "We solve the most common questions about AI Chef Pro",
+    "q1": "What is AI Chef Pro and how can it benefit me as a chef or gastronomy professional?",
+    "a1": "AI Chef Pro is a Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals. It offers tools that boost your creativity, improve your management and expand your culinary knowledge. As a leader in any field of cooking or gastronomy, you'll be able to explore new flavor combinations, optimize your processes and stay up to date with the latest gastronomic trends. AI Chef Pro allows you to focus on your culinary passion while AI assists you in repetitive tasks, helps you solve scenarios and inspires you with new ideas.",
+    "q2": "What specific tools does AI Chef Pro offer for my professional management?",
+    "a2": "AI Chef Pro offers a variety of tools focused on your growth as a chef: Catering AI+ for event planning, Food Pairing AI for discovering innovative combinations, Mermas GenCal for optimizing ingredient use, ID Allergens for ensuring food safety, Mental Coach for your professional wellbeing, and others. It also includes thematic recipe generators, weekly the system releases a new app within the suite that responds to a solution.",
+    "q3": "What are the available subscription plans and their prices?",
+    "a3": "We offer plans adapted to different stages of your career as a chef: Member (Free) to explore basic functionalities, Pro (€10/month) ideal for individual chefs, Premium (€15/month) for frequent use and greater creativity, Premium Pro (€25/month) for chefs in leadership roles, and Premium Plus (€50/month) with unlimited use for executive chefs. Each plan is designed to support your professional growth and adapt to your changing needs as a chef.",
+    "q4": "What level of technological experience do I need to use AI Chef Pro?",
+    "a4": "AI Chef Pro is designed with chefs and professionals of all technological levels in mind. The interface is intuitive and easy to use, accessible from computers and mobile devices so you can use it in the kitchen or wherever you need it. The system learns from your preferences, offering increasingly relevant suggestions. You don't need to be a technology expert; if you can use a smartphone, you'll be able to make the most of AI Chef Pro.",
+    "q5": "How does AI Chef Pro protect my recipes and personal data?",
+    "a5": "We understand that your recipes are your most valuable intellectual property. At AI Chef Pro, we use advanced encryption technologies to protect all your information. Your recipes and personal data are kept strictly confidential and never shared. We offer regular backup options to ensure you never lose your work. Your creativity and privacy are safe with us.",
+    "q6": "Can I try AI Chef Pro before subscribing?",
+    "a6": "Absolutely! We offer a free Member plan that lets you explore AI Chef Pro's basic functionalities without commitment. It's an excellent way to discover how the platform can enhance your creativity and efficiency as a chef. When you're ready to access more features and take your kitchen to the next level, you can easily upgrade to one of our paid plans."
   },
   "footer": {
     "description": "AI tools suite for culinary professionals",
+    "brand_desc": "<strong>Artificial Intelligence for Today's Chef.</strong> Develop your professional potential with the use and support of artificial intelligence in your daily life.",
+    "suite_desc": "Suite of AI Tools and Applications modeled for Chefs, Cooks and hospitality professionals.",
+    "newsletter_title": "AI NEWSLETTER FOR PRO CHEFS",
+    "newsletter_placeholder": "Enter your email address",
+    "newsletter_button": "Subscribe",
+    "nav_title": "Navigation",
+    "nav_home": "Home",
+    "nav_tools": "Tools",
+    "nav_pricing": "Pricing",
+    "nav_blog": "Blog",
+    "nav_free_tools": "Free Tools 🪄",
+    "contact_title": "Contact",
+    "follow_us": "Follow Us",
+    "plans_button": "Plans and Pricing",
+    "try_free_button": "Try Free",
     "links": "Links",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Policy"
+  },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Creative Kitchen",
+        "description": "Generate unique dishes with history",
+        "preview": "Roasted beet tartar with citrus gel and edible flowers..."
+      },
+      "pasteleria_creativa": {
+        "name": "Creative Pastry",
+        "description": "Signature desserts step by step",
+        "preview": "Chocolate soufflé with vanilla pralines and raspberry coulis..."
+      },
+      "chocolateria_creativa": {
+        "name": "Creative Chocolate",
+        "description": "Avant-garde bonbons and chocolate",
+        "preview": "Ganache infused with matcha tea and pink salt crystals..."
+      },
+      "heladeria_creativa": {
+        "name": "Creative Ice Cream",
+        "description": "Professional artisan ice creams",
+        "preview": "Gin-tonic sorbet with citrus notes and aromatic herbs..."
+      },
+      "panaderia_creativa": {
+        "name": "Creative Bakery",
+        "description": "Unique breads and fermentations",
+        "preview": "Sourdough bread with toasted seeds and orange blossom honey..."
+      },
+      "fermentus": {
+        "name": "Fermentus Con AI+",
+        "description": "Fermentation and signature preserves",
+        "preview": "Beet kimchi with ginger and fermented Korean chili..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "High-level plant cuisine",
+        "preview": "King oyster ceviche with coconut tiger's milk and peppers..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Discover scientific pairings",
+        "preview": "Chocolate + fennel through shared phenolic compounds..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Most advanced general AI assistant",
+        "preview": "Help with technical questions and seasonal menu planning"
+      },
+      "mermas_gencal": {
+        "name": "Waste Calculator",
+        "description": "Optimize yields and reduce waste",
+        "preview": "Save up to 30% on ingredient costs with precise calculations"
+      },
+      "id_alergenos": {
+        "name": "Allergen ID",
+        "description": "Automatically identify allergens",
+        "preview": "Comply with food safety regulations without errors"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Kitchen wellness and leadership",
+        "preview": "Reduce stress and improve team work environment"
+      },
+      "conversor_ing": {
+        "name": "Unit Converter",
+        "description": "Convert measurements and weights instantly",
+        "preview": "Adapt recipes between metric systems without errors"
+      },
+      "calcula_pax": {
+        "name": "Portion Calculator",
+        "description": "Adjust quantities according to diners",
+        "preview": "Scale recipes with mathematical precision for any event"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Specialize in professional catering",
+        "preview": "Event menus with optimized logistics and costs"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfect your burger restaurant",
+        "preview": "Gourmet recipes and cooking techniques for premium burgers"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Optimize your food truck",
+        "preview": "Profitable mobile menus with versatile ingredients"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Signature cocktails and tapas",
+        "preview": "Unique drink combinations and perfect pairings"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Comprehensive restaurant management",
+        "preview": "From menu to customer experience"
+      }
+    },
+    "marketing": {
+      "menu_plate_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Optimize every dish for search engines",
+        "preview": "Your dishes appear on Google when searching for local food"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Plan gastronomic content",
+        "preview": "Editorial calendar with trends and key dates"
+      },
+      "instaflow_ai": {
+        "name": "InstaFlow AI Pro",
+        "description": "Automated Instagram content",
+        "preview": "Posts, stories and reels that captivate your audience"
+      },
+      "pinterai_content": {
+        "name": "PinterAI Content Pro",
+        "description": "Master gastronomic Pinterest",
+        "preview": "Viral pins with recipes that generate real traffic"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Access universal culinary knowledge",
+        "preview": "Gastronomic encyclopedia with professional techniques and terms"
+      }
+    }
+  },
+  "cookbooks": {
+    "title": "World Cookbooks",
+    "description": "Explore authentic cuisines from different cultures with over 25 regional cookbooks",
+    "europa": "Europe",
+    "latinoamerica": "Latin America", 
+    "asia": "Asia",
+    "alemana": "German",
+    "belga": "Belgian",
+    "britanica": "British",
+    "espanola": "Spanish",
+    "francesa": "French",
+    "griega": "Greek",
+    "portuguesa": "Portuguese",
+    "paises_bajos": "Netherlands",
+    "suiza": "Swiss",
+    "turca": "Turkish",
+    "argentina": "Argentine",
+    "brasilena": "Brazilian",
+    "chilena": "Chilean",
+    "colombiana": "Colombian",
+    "dominicana": "Dominican",
+    "ecuatoriana": "Ecuadorian",
+    "jamaicana": "Jamaican",
+    "mexicana": "Mexican",
+    "paraguaya": "Paraguayan",
+    "peruana": "Peruvian",
+    "venezolana": "Venezuelan",
+    "china": "Chinese",
+    "india": "Indian",
+    "japonesa": "Japanese",
+    "tailandesa": "Thai"
+  },
+  "previews": {
+    "alemana": "Sauerbraten with homemade spätzle and red cabbage...",
+    "belga": "Flemish carbonade with Trappist beer and toasted bread...",
+    "britanica": "Fish and chips with crispy batter and tartar sauce...",
+    "espanola": "Traditional Valencian paella with La Mancha saffron...",
+    "francesa": "Burgundy coq au vin with Provence herbs...",
+    "griega": "Authentic moussaka with eggplant and béchamel sauce...",
+    "portuguesa": "Bacalhau à Brás with straw potatoes and black olives...",
+    "paises_bajos": "Kale stamppot with smoked sausage...",
+    "suiza": "Alpine cheese fondue with artisan bread...",
+    "turca": "Lamb kebab with herb yogurt and pilaf...",
+    "argentina": "Creole barbecue with chimichurri and provoleta...",
+    "brasilena": "Complete feijoada with farofa and caipirinha...",
+    "chilena": "Pot curanto with seafood and Chiloé potatoes...",
+    "colombiana": "Bandeja paisa with beans, chicharrón and arepa...",
+    "dominicana": "Mangu with little onions and Dominican fried cheese...",
+    "ecuatoriana": "Mixed ceviche with tiger's milk and cancha...",
+    "jamaicana": "Jerk chicken with Caribbean rice and peas...",
+    "mexicana": "Traditional mole poblano with chocolate and chilies...",
+    "paraguaya": "Paraguayan soup with fresh cheese and onion...",
+    "peruana": "Lomo saltado with golden potatoes and yellow pepper...",
+    "venezolana": "Pabellón criollo with black beans and plantain slices...",
+    "china": "Peking lacquered duck with scallion pancakes...",
+    "india": "Butter chicken with homemade naan and basmati rice...",
+    "japonesa": "Tonkotsu ramen with chashu and marinated egg...",
+    "tailandesa": "Authentic pad thai with tamarind and peanuts..."
   },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",

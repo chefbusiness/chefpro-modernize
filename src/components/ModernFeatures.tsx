@@ -1,35 +1,36 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Utensils, Heart } from 'lucide-react';
-
-const features = [
-  {
-    icon: Brain,
-    title: 'Modelo de Asistente Culinario AI',
-    description: 'Recomendaciones personalizadas de recetas y técnicas adaptadas a tus preferencias culinarias. Más de 20 recetarios.'
-  },
-  {
-    icon: Utensils,
-    title: 'Food Pairing y Sustituciones de Ingredientes',
-    description: 'Encuentra alternativas ideales para ingredientes que necesitas reemplazar en tus recetas.'
-  },
-  {
-    icon: Heart,
-    title: 'Coaching para Chefs',
-    description: 'Apoyo psicológico y motivacional para mejorar el rendimiento y bienestar en la cocina.'
-  }
-];
+import { useLanguage } from '@/hooks/useLanguage';
 
 export default function ModernFeatures() {
+  const { t } = useLanguage();
+
+  const features = [
+    {
+      icon: Brain,
+      title: t('features.ai_assistant'),
+      description: t('features.ai_assistant_desc')
+    },
+    {
+      icon: Utensils,
+      title: t('features.food_pairing'),
+      description: t('features.food_pairing_desc')
+    },
+    {
+      icon: Heart,
+      title: t('features.coaching'),
+      description: t('features.coaching_desc')
+    }
+  ];
+
   return (
     <section id="herramientas" className="container py-8 md:py-12 lg:py-24">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
-          Herramientas Culinarias Avanzadas
+          {t('features.title')}
         </h2>
         <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
-          Completa suite de herramientas y aplicaciones de inteligencia artificial 
-          para chefs y cocineros que quieran acelerar y optimizar su trabajo diario 
-          en la cocina profesional y explotar su creatividad.
+          {t('features.description')}
         </p>
       </div>
 
@@ -69,9 +70,9 @@ export default function ModernFeatures() {
       {/* LLM Models */}
       <div className="mt-16">
         <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold mb-2">Tecnología LLM Avanzada</h3>
+          <h3 className="text-2xl font-bold mb-2">{t('features.llm_title')}</h3>
           <p className="text-muted-foreground">
-            Modelos de lenguaje especializados para el sector gastronómico
+            {t('features.llm_description')}
           </p>
         </div>
         
