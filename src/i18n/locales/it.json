@@ -315,7 +315,48 @@
         "name": "Calcula Pax",
         "description": "Regola quantità secondo commensali",
         "preview": "Scala ricette con precisione matematica per qualsiasi evento"
-      }
+  },
+  "pages": {
+    "services": {
+      "title": "Servizi - AI Chef Pro",
+      "description": "Scopri tutti i servizi di IA offerti da AI Chef Pro per i professionisti della gastronomia.",
+      "heading": "I Nostri Servizi",
+      "content": "In AI Chef Pro offriamo una vasta gamma di servizi di intelligenza artificiale specializzati per chef, cuochi e professionisti dell'ospitalità."
+    },
+    "legal": {
+      "title": "Note Legali - AI Chef Pro",
+      "description": "Informazioni legali su AI Chef Pro, termini di utilizzo e condizioni generali.",
+      "heading": "Note Legali",
+      "content": "Questa pagina contiene le informazioni legali relative all'uso di AI Chef Pro e dei suoi servizi."
+    },
+    "cookies": {
+      "title": "Politica sui Cookie - AI Chef Pro",
+      "description": "Informazioni sull'uso dei cookie su AI Chef Pro e come gestire le tue preferenze.",
+      "heading": "Politica sui Cookie",
+      "content": "In AI Chef Pro utilizziamo i cookie per migliorare la tua esperienza utente e offrirti contenuti personalizzati."
+    },
+    "privacy": {
+      "title": "Politica sulla Privacy - AI Chef Pro",
+      "description": "Informazioni su come proteggiamo e trattiamo i tuoi dati personali in AI Chef Pro.",
+      "heading": "Politica sulla Privacy",
+      "content": "La tua privacy è importante per noi. Questa politica spiega come raccogliamo, utilizziamo e proteggiamo le tue informazioni personali."
+    },
+    "terms": {
+      "title": "Termini e Condizioni - AI Chef Pro",
+      "description": "Termini e condizioni di utilizzo di AI Chef Pro e dei suoi servizi.",
+      "heading": "Termini e Condizioni",
+      "content": "Questi termini e condizioni regolano l'uso di AI Chef Pro e dei suoi servizi."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Impostazioni Cookie",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza, analizzare il traffico e personalizzare i contenuti. Puoi accettare tutti i cookie o configurare le tue preferenze.",
+      "accept": "Accetta tutti",
+      "reject": "Rifiuta opzionali",
+      "learn_more": "Scopri di più"
+    }
+  }
     },
     "concepts": {
       "catering_ai": {

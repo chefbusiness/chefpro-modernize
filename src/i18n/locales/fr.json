@@ -321,7 +321,48 @@
           "3": "Outils business avancés",
           "4": "Support premium 24/7",
           "5": "Consultation mensuelle personnalisée"
-        }
+  },
+  "pages": {
+    "services": {
+      "title": "Services - AI Chef Pro",
+      "description": "Découvrez tous les services d'IA proposés par AI Chef Pro pour les professionnels de la gastronomie.",
+      "heading": "Nos Services",
+      "content": "Chez AI Chef Pro, nous proposons une large gamme de services d'intelligence artificielle spécialisés pour les chefs, cuisiniers et professionnels de l'hôtellerie."
+    },
+    "legal": {
+      "title": "Mentions Légales - AI Chef Pro",
+      "description": "Informations légales sur AI Chef Pro, conditions d'utilisation et conditions générales.",
+      "heading": "Mentions Légales",
+      "content": "Cette page contient les informations légales relatives à l'utilisation d'AI Chef Pro et de ses services."
+    },
+    "cookies": {
+      "title": "Politique de Cookies - AI Chef Pro",
+      "description": "Informations sur l'utilisation des cookies sur AI Chef Pro et comment gérer vos préférences.",
+      "heading": "Politique de Cookies",
+      "content": "Chez AI Chef Pro, nous utilisons des cookies pour améliorer votre expérience utilisateur et vous offrir du contenu personnalisé."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité - AI Chef Pro",
+      "description": "Informations sur la façon dont nous protégeons et traitons vos données personnelles chez AI Chef Pro.",
+      "heading": "Politique de Confidentialité",
+      "content": "Votre confidentialité est importante pour nous. Cette politique explique comment nous collectons, utilisons et protégeons vos informations personnelles."
+    },
+    "terms": {
+      "title": "Conditions Générales - AI Chef Pro",
+      "description": "Conditions générales d'utilisation d'AI Chef Pro et de ses services.",
+      "heading": "Conditions Générales",
+      "content": "Ces conditions générales régissent l'utilisation d'AI Chef Pro et de ses services."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Paramètres des Cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. Vous pouvez accepter tous les cookies ou configurer vos préférences.",
+      "accept": "Tout accepter",
+      "reject": "Rejeter optionnels",
+      "learn_more": "En savoir plus"
+    }
+  }
       }
     }
   },

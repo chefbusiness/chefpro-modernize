@@ -316,7 +316,48 @@
           "2": "Advanced analytics",
           "3": "API access",
           "4": "Monthly consulting"
-        }
+  },
+  "pages": {
+    "services": {
+      "title": "Services - AI Chef Pro",
+      "description": "Discover all AI services offered by AI Chef Pro for gastronomy professionals.",
+      "heading": "Our Services",
+      "content": "At AI Chef Pro we offer a wide range of artificial intelligence services specialized for chefs, cooks and hospitality professionals. From culinary creativity tools to business management solutions."
+    },
+    "legal": {
+      "title": "Legal Notice - AI Chef Pro",
+      "description": "Legal information about AI Chef Pro, terms of use and general conditions.",
+      "heading": "Legal Notice",
+      "content": "This page contains legal information related to the use of AI Chef Pro and its services."
+    },
+    "cookies": {
+      "title": "Cookie Policy - AI Chef Pro",
+      "description": "Information about the use of cookies on AI Chef Pro and how to manage your preferences.",
+      "heading": "Cookie Policy",
+      "content": "At AI Chef Pro we use cookies to improve your user experience and offer you personalized content."
+    },
+    "privacy": {
+      "title": "Privacy Policy - AI Chef Pro",
+      "description": "Information about how we protect and treat your personal data at AI Chef Pro.",
+      "heading": "Privacy Policy",
+      "content": "Your privacy is important to us. This policy explains how we collect, use and protect your personal information."
+    },
+    "terms": {
+      "title": "Terms and Conditions - AI Chef Pro",
+      "description": "Terms and conditions of use of AI Chef Pro and its services.",
+      "heading": "Terms and Conditions",
+      "content": "These terms and conditions govern the use of AI Chef Pro and its services."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to improve your experience, analyze traffic and personalize content. You can accept all cookies or configure your preferences.",
+      "accept": "Accept all",
+      "reject": "Reject optional",
+      "learn_more": "Learn more"
+    }
+  }
       },
       "premium_plus": {
         "name": "Premium Plus",

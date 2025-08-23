@@ -315,7 +315,48 @@
         "name": "Calcula Pax",
         "description": "Ajusta quantidades conforme comensais",
         "preview": "Escala receitas com precisão matemática para qualquer evento"
-      }
+  },
+  "pages": {
+    "services": {
+      "title": "Serviços - AI Chef Pro",
+      "description": "Descubra todos os serviços de IA oferecidos pela AI Chef Pro para profissionais da gastronomia.",
+      "heading": "Nossos Serviços",
+      "content": "Na AI Chef Pro oferecemos uma ampla gama de serviços de inteligência artificial especializados para chefs, cozinheiros e profissionais da hospitalidade."
+    },
+    "legal": {
+      "title": "Aviso Legal - AI Chef Pro",
+      "description": "Informações legais sobre a AI Chef Pro, termos de uso e condições gerais.",
+      "heading": "Aviso Legal",
+      "content": "Esta página contém as informações legais relacionadas ao uso da AI Chef Pro e seus serviços."
+    },
+    "cookies": {
+      "title": "Política de Cookies - AI Chef Pro",
+      "description": "Informações sobre o uso de cookies na AI Chef Pro e como gerenciar suas preferências.",
+      "heading": "Política de Cookies", 
+      "content": "Na AI Chef Pro utilizamos cookies para melhorar sua experiência de usuário e oferecer conteúdo personalizado."
+    },
+    "privacy": {
+      "title": "Política de Privacidade - AI Chef Pro",
+      "description": "Informações sobre como protegemos e tratamos seus dados pessoais na AI Chef Pro.",
+      "heading": "Política de Privacidade",
+      "content": "Sua privacidade é importante para nós. Esta política explica como coletamos, usamos e protegemos suas informações pessoais."
+    },
+    "terms": {
+      "title": "Termos e Condições - AI Chef Pro",
+      "description": "Termos e condições de uso da AI Chef Pro e seus serviços.",
+      "heading": "Termos e Condições",
+      "content": "Estes termos e condições regulam o uso da AI Chef Pro e seus serviços."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Configurações de Cookies",
+      "description": "Utilizamos cookies para melhorar sua experiência, analisar o tráfego e personalizar o conteúdo. Você pode aceitar todos os cookies ou configurar suas preferências.",
+      "accept": "Aceitar todos",
+      "reject": "Rejeitar opcionais",
+      "learn_more": "Saiba mais"
+    }
+  }
     },
     "concepts": {
       "catering_ai": {

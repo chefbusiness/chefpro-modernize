@@ -315,7 +315,48 @@
         "name": "Calcula Pax",
         "description": "Passt Mengen je nach Gästen an",
         "preview": "Skaliert Rezepte mit mathematischer Präzision für jede Veranstaltung"
-      }
+  },
+  "pages": {
+    "services": {
+      "title": "Services - AI Chef Pro",
+      "description": "Entdecken Sie alle KI-Services von AI Chef Pro für Gastronomie-Profis.",
+      "heading": "Unsere Services",
+      "content": "Bei AI Chef Pro bieten wir eine breite Palette von KI-Services für Köche und Gastronomieprofis."
+    },
+    "legal": {
+      "title": "Impressum - AI Chef Pro",
+      "description": "Rechtliche Informationen über AI Chef Pro, Nutzungsbedingungen und allgemeine Geschäftsbedingungen.",
+      "heading": "Impressum",
+      "content": "Diese Seite enthält rechtliche Informationen zur Nutzung von AI Chef Pro und seinen Services."
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie - AI Chef Pro",
+      "description": "Informationen über die Verwendung von Cookies bei AI Chef Pro und wie Sie Ihre Einstellungen verwalten.",
+      "heading": "Cookie-Richtlinie",
+      "content": "Bei AI Chef Pro verwenden wir Cookies, um Ihre Benutzererfahrung zu verbessern und Ihnen personalisierte Inhalte anzubieten."
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie - AI Chef Pro",
+      "description": "Informationen darüber, wie wir Ihre persönlichen Daten bei AI Chef Pro schützen und behandeln.",
+      "heading": "Datenschutzrichtlinie",
+      "content": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen."
+    },
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen - AI Chef Pro",
+      "description": "Allgemeine Geschäftsbedingungen für die Nutzung von AI Chef Pro und seinen Services.",
+      "heading": "Allgemeine Geschäftsbedingungen",
+      "content": "Diese allgemeinen Geschäftsbedingungen regeln die Nutzung von AI Chef Pro und seinen Services."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Cookie-Einstellungen",
+      "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern, den Traffic zu analysieren und Inhalte zu personalisieren. Sie können alle Cookies akzeptieren oder Ihre Einstellungen konfigurieren.",
+      "accept": "Alle akzeptieren",
+      "reject": "Optionale ablehnen",
+      "learn_more": "Mehr erfahren"
+    }
+  }
     },
     "concepts": {
       "catering_ai": {

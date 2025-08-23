@@ -1,0 +1,33 @@
+import { useTranslation } from 'react-i18next';
+import ModernHeader from '@/components/ModernHeader';
+import ModernFooter from '@/components/ModernFooter';
+import SEOHead from '@/components/SEOHead';
+
+const Terms = () => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="min-h-screen bg-background">
+      <SEOHead 
+        title={t('pages.terms.title')}
+        description={t('pages.terms.description')}
+      />
+      <ModernHeader />
+      <main className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold text-foreground mb-8">
+              {t('pages.terms.heading')}
+            </h1>
+            <div className="prose prose-lg max-w-none text-muted-foreground">
+              <p>{t('pages.terms.content')}</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <ModernFooter />
+    </div>
+  );
+};
+
+export default Terms;

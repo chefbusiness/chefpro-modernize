@@ -16,6 +16,7 @@ import CategoryCTAs from '@/components/CategoryCTAs';
 import ModernFAQ from '@/components/ModernFAQ';
 import ModernFooter from '@/components/ModernFooter';
 import ConversionNotifications from '@/components/ConversionNotifications';
+import CookieBanner from '@/components/CookieBanner';
 import SEOHead from '@/components/SEOHead';
 
 const Index = () => {
@@ -41,6 +42,7 @@ const Index = () => {
         <ConversionNotifications />
       </main>
       <ModernFooter />
+      <CookieBanner />
     </div>
   );
 };

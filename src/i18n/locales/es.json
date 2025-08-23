@@ -305,7 +305,48 @@
         "name": "Casual Restaurants AI+",
         "description": "Gestión integral de restaurante",
         "preview": "Desde el menú hasta la experiencia del cliente"
-      }
+  },
+  "pages": {
+    "services": {
+      "title": "Servicios - AI Chef Pro",
+      "description": "Descubre todos los servicios de inteligencia artificial que ofrece AI Chef Pro para profesionales de la gastronomía.",
+      "heading": "Nuestros Servicios",
+      "content": "En AI Chef Pro ofrecemos una amplia gama de servicios de inteligencia artificial especializados para chefs, cocineros y profesionales de la hostelería. Desde herramientas de creatividad culinaria hasta soluciones de gestión empresarial."
+    },
+    "legal": {
+      "title": "Aviso Legal - AI Chef Pro", 
+      "description": "Información legal sobre AI Chef Pro, términos de uso y condiciones generales.",
+      "heading": "Aviso Legal",
+      "content": "Esta página contiene la información legal relacionada con el uso de AI Chef Pro y sus servicios."
+    },
+    "cookies": {
+      "title": "Política de Cookies - AI Chef Pro",
+      "description": "Información sobre el uso de cookies en AI Chef Pro y cómo gestionar tus preferencias.",
+      "heading": "Política de Cookies", 
+      "content": "En AI Chef Pro utilizamos cookies para mejorar tu experiencia de usuario y ofrecerte contenido personalizado."
+    },
+    "privacy": {
+      "title": "Política de Privacidad - AI Chef Pro",
+      "description": "Información sobre cómo protegemos y tratamos tus datos personales en AI Chef Pro.",
+      "heading": "Política de Privacidad",
+      "content": "Tu privacidad es importante para nosotros. Esta política explica cómo recopilamos, usamos y protegemos tu información personal."
+    },
+    "terms": {
+      "title": "Términos y Condiciones - AI Chef Pro",
+      "description": "Términos y condiciones de uso de AI Chef Pro y sus servicios.",
+      "heading": "Términos y Condiciones", 
+      "content": "Estos términos y condiciones regulan el uso de AI Chef Pro y sus servicios."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Configuración de Cookies",
+      "description": "Utilizamos cookies para mejorar tu experiencia, analizar el tráfico y personalizar el contenido. Puedes aceptar todas las cookies o configurar tus preferencias.",
+      "accept": "Aceptar todas",
+      "reject": "Rechazar opcionales", 
+      "learn_more": "Más información"
+    }
+  }
     },
     "marketing": {
       "menu_plate_seo": {

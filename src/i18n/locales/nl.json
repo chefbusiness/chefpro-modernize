@@ -315,7 +315,48 @@
         "name": "Calcula Pax",
         "description": "Past hoeveelheden aan volgens gasten",
         "preview": "Schaalt recepten met wiskundige precisie voor elk evenement"
-      }
+  },
+  "pages": {
+    "services": {
+      "title": "Services - AI Chef Pro",
+      "description": "Ontdek alle AI-services die AI Chef Pro aanbiedt voor gastronomie professionals.",
+      "heading": "Onze Services",
+      "content": "Bij AI Chef Pro bieden we een breed scala aan kunstmatige intelligentie services gespecialiseerd voor koks en horeca professionals."
+    },
+    "legal": {
+      "title": "Juridische Kennisgeving - AI Chef Pro",
+      "description": "Juridische informatie over AI Chef Pro, gebruiksvoorwaarden en algemene voorwaarden.",
+      "heading": "Juridische Kennisgeving",
+      "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services."
+    },
+    "cookies": {
+      "title": "Cookie Beleid - AI Chef Pro",
+      "description": "Informatie over het gebruik van cookies op AI Chef Pro en hoe u uw voorkeuren kunt beheren.",
+      "heading": "Cookie Beleid",
+      "content": "Bij AI Chef Pro gebruiken we cookies om uw gebruikerservaring te verbeteren en u gepersonaliseerde content aan te bieden."
+    },
+    "privacy": {
+      "title": "Privacybeleid - AI Chef Pro",
+      "description": "Informatie over hoe we uw persoonlijke gegevens beschermen en behandelen bij AI Chef Pro.",
+      "heading": "Privacybeleid",
+      "content": "Uw privacy is belangrijk voor ons. Dit beleid legt uit hoe we uw persoonlijke informatie verzamelen, gebruiken en beschermen."
+    },
+    "terms": {
+      "title": "Algemene Voorwaarden - AI Chef Pro",
+      "description": "Algemene voorwaarden voor het gebruik van AI Chef Pro en zijn services.",
+      "heading": "Algemene Voorwaarden",
+      "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Cookie Instellingen",
+      "description": "We gebruiken cookies om uw ervaring te verbeteren, verkeer te analyseren en content te personaliseren. U kunt alle cookies accepteren of uw voorkeuren configureren.",
+      "accept": "Alles accepteren",
+      "reject": "Optionele weigeren",
+      "learn_more": "Meer informatie"
+    }
+  }
     },
     "concepts": {
       "catering_ai": {
