@@ -74,6 +74,20 @@
       "title": "Marketing & Contenuti",
       "description": "Potenzia la tua presenza digitale",
       "count": "4 app"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europa",
+        "count": "10 Cucine"
+      },
+      "latinoamerica": {
+        "name": "America Latina",
+        "count": "11 Cucine"
+      },
+      "asia": {
+        "name": "Asia",
+        "count": "4 Cucine"
+      }
     }
   },
   "finder": {
@@ -126,6 +140,38 @@
     "estudiante": "Studente di Gastronomia",
     "restaurante": "Ristorante",
     "reposteria": "Pasticceria"
+  },
+  "cookbooks": {
+    "title": "Libri di Ricette del Mondo",
+    "description": "Esplora cucine autentiche di diverse culture con oltre 25 libri di ricette regionali",
+    "europa": "Europa",
+    "latinoamerica": "America Latina",
+    "asia": "Asia",
+    "alemana": "Tedesca",
+    "belga": "Belga",
+    "britanica": "Britannica",
+    "espanola": "Spagnola",
+    "francesa": "Francese",
+    "griega": "Greca",
+    "portuguesa": "Portoghese",
+    "paises_bajos": "Olandese",
+    "suiza": "Svizzera",
+    "turca": "Turca",
+    "argentina": "Argentina",
+    "brasilena": "Brasiliana",
+    "chilena": "Cilena",
+    "colombiana": "Colombiana",
+    "dominicana": "Dominicana",
+    "ecuatoriana": "Ecuadoriana",
+    "jamaicana": "Giamaicana",
+    "mexicana": "Messicana",
+    "paraguaya": "Paraguaiana",
+    "peruana": "Peruviana",
+    "venezolana": "Venezuelana",
+    "china": "Cinese",
+    "india": "Indiana",
+    "japonesa": "Giapponese",
+    "tailandesa": "Tailandese"
   },
   "showcase": {
     "creativity_title": "Creatività Culinaria",

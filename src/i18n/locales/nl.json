@@ -74,6 +74,20 @@
       "title": "Marketing & Content",
       "description": "Versterk uw digitale aanwezigheid",
       "count": "4 apps"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europa",
+        "count": "10 Keukens"
+      },
+      "latinoamerica": {
+        "name": "Latijns-Amerika",
+        "count": "11 Keukens"
+      },
+      "asia": {
+        "name": "Azië",
+        "count": "4 Keukens"
+      }
     }
   },
   "finder": {
@@ -126,6 +140,38 @@
     "estudiante": "Gastronomie Student",
     "restaurante": "Restaurant",
     "reposteria": "Banketbakkerij"
+  },
+  "cookbooks": {
+    "title": "Wereldwijde Kookboeken",
+    "description": "Verken authentieke keukens van verschillende culturen met meer dan 25 regionale kookboeken",
+    "europa": "Europa",
+    "latinoamerica": "Latijns-Amerika",
+    "asia": "Azië",
+    "alemana": "Duits",
+    "belga": "Belgisch",
+    "britanica": "Brits",
+    "espanola": "Spaans",
+    "francesa": "Frans",
+    "griega": "Grieks",
+    "portuguesa": "Portugees",
+    "paises_bajos": "Nederlands",
+    "suiza": "Zwitsers",
+    "turca": "Turks",
+    "argentina": "Argentijns",
+    "brasilena": "Braziliaans",
+    "chilena": "Chileens",
+    "colombiana": "Colombiaans",
+    "dominicana": "Dominicaans",
+    "ecuatoriana": "Ecuadoriaans",
+    "jamaicana": "Jamaicaans",
+    "mexicana": "Mexicaans",
+    "paraguaya": "Paraguayaans",
+    "peruana": "Peruaans",
+    "venezolana": "Venezolaans",
+    "china": "Chinees",
+    "india": "Indiaas",
+    "japonesa": "Japans",
+    "tailandesa": "Thais"
   },
   "showcase": {
     "creativity_title": "Culinaire Creativiteit",
