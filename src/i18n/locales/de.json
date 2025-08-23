@@ -92,6 +92,65 @@
     "business_title": "Business Tools",
     "business_description": "Optimieren Sie das Management und den Betrieb Ihres Establishments"
   },
+  "gallery": {
+    "badge": "55+ Spezialisierte Apps in Aktion",
+    "title": "Entdecken Sie die Macht von AI Chef Pro",
+    "description": "Erkunden Sie echte Screenshots unserer spezialisierten Anwendungen für Gastronomiefachleute",
+    "previous": "Vorherige",
+    "next": "Nächste",
+    "counter": "{{current}} von {{total}} gezeigten Anwendungen",
+    "explore_all": "Alle Apps Erkunden"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Kreative Küche",
+      "description": "Professioneller kreativer Küchenrezeptgenerator mit Hintergrundgeschichten"
+    },
+    "platos_autor": {
+      "title": "Signature-Gerichte",
+      "description": "Erstellen Sie einzigartige zeitgenössische Gerichte mit saisonalen Zutaten und innovativen Techniken"
+    },
+    "catering_ai": {
+      "title": "Catering AI+",
+      "description": "KI-gestütztes Wissensmodell für Köche, Köche und Catering-Unternehmer"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Entdecken Sie wissenschaftliche Paarungen perfekter Zutaten durch Analyse aromatischer Verbindungen"
+    },
+    "pasteleria_creativa": {
+      "title": "Kreative Konditorei",
+      "description": "Signature-Desserts Schritt für Schritt mit fortgeschrittenen modernen Konditortechniken"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "Arbeiten Sie mit Avant-Garde-Zutaten der Marke Sosa für die Haute Cuisine"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Spezialisiert auf das Management von zwanglosen Restaurants mit angepassten KI-Tools"
+    },
+    "menu_local_seo": {
+      "title": "Menu Local SEO",
+      "description": "Optimieren Sie jedes Gericht für Suchmaschinen und verbessern Sie Ihre lokale Sichtbarkeit"
+    },
+    "cocina_peruana": {
+      "title": "Peruanische Küche",
+      "description": "Erkunden Sie die authentischen Aromen Perus mit traditionellen und zeitgenössischen Rezepten"
+    },
+    "cocina_francesa": {
+      "title": "Französische Küche",
+      "description": "Meistern Sie klassische französische Techniken mit authentischen und modernen Rezepten"
+    },
+    "fermentus": {
+      "title": "Fermentus Con AI+",
+      "description": "Fermentation und Signature-Konserven mit fortgeschrittenen kontrollierten Fermentationstechniken"
+    },
+    "cocina_india": {
+      "title": "Indische Küche",
+      "description": "Entdecken Sie die Gewürze und Techniken der indischen Küche mit authentischen regionalen Rezepten"
+    }
+  },
   "features": {
     "title": "Hauptmerkmale",
     "ai_powered": "Fortgeschrittene Künstliche Intelligenz",

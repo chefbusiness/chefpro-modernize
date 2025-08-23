@@ -92,6 +92,65 @@
     "business_title": "Business Tools",
     "business_description": "Optimaliseer het beheer en de werking van uw etablissement"
   },
+  "gallery": {
+    "badge": "55+ Gespecialiseerde Apps in Actie",
+    "title": "Ontdek de Kracht van AI Chef Pro",
+    "description": "Bekijk echte screenshots van onze gespecialiseerde applicaties voor gastronomie professionals",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "counter": "{{current}} van {{total}} getoonde applicaties",
+    "explore_all": "Ontdek Alle Apps"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Creatieve Keuken",
+      "description": "Professionele kwaliteit creatieve keuken receptgenerator met achtergrondverhalen"
+    },
+    "platos_autor": {
+      "title": "Signature Gerechten",
+      "description": "Creëer unieke hedendaagse gerechten met seizoensgebonden ingrediënten en innovatieve technieken"
+    },
+    "catering_ai": {
+      "title": "Catering AI+",
+      "description": "AI-aangedreven kennismodel voor chefs, koks en catering ondernemers"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Ontdek wetenschappelijke perfecte pairings tussen ingrediënten door analyse van aromatische verbindingen"
+    },
+    "pasteleria_creativa": {
+      "title": "Creatieve Banketbakkerij",
+      "description": "Signature desserts stap voor stap met geavanceerde moderne banketbakkerij technieken"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "Werk met avant-garde ingrediënten van het merk Sosa voor haute cuisine"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Gespecialiseerd in het beheer van casual restaurants met aangepaste AI-tools"
+    },
+    "menu_local_seo": {
+      "title": "Menu Local SEO",
+      "description": "Optimaliseer elk gerecht voor zoekmachines en verbeter uw lokale zichtbaarheid"
+    },
+    "cocina_peruana": {
+      "title": "Peruaanse Keuken",
+      "description": "Ontdek de authentieke smaken van Peru met traditionele en hedendaagse recepten"
+    },
+    "cocina_francesa": {
+      "title": "Franse Keuken",
+      "description": "Beheers klassieke Franse technieken met authentieke en moderne recepten"
+    },
+    "fermentus": {
+      "title": "Fermentus Con AI+",
+      "description": "Fermentatie en signature conserven met geavanceerde gecontroleerde fermentatietechnieken"
+    },
+    "cocina_india": {
+      "title": "Indiase Keuken",
+      "description": "Ontdek de kruiden en technieken van de Indiase keuken met authentieke regionale recepten"
+    }
+  },
   "features": {
     "title": "Hoofdkenmerken",
     "ai_powered": "Geavanceerde Kunstmatige Intelligentie",
