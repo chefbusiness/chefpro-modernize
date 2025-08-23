@@ -77,71 +77,71 @@ export default function ModernHeader() {
                 <NavigationMenuContent>
                   <div className="grid w-[600px] gap-3 p-4 md:grid-cols-3">
                     <div className="space-y-2">
-                      <h4 className="font-medium leading-none text-accent">Creatividad</h4>
+                      <h4 className="font-medium leading-none text-accent">{t('categories_labels.creatividad')}</h4>
                       <div className="grid gap-1">
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#showcase-creatividad"
                         >
-                          Cocina Creativa
+                          {t('nav.creatividad')}
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#showcase-creatividad"
                         >
-                          Pastelería
+                          {t('apps.creativity.pasteleria_creativa.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#showcase-creatividad"
                         >
-                          Food Pairing
+                          {t('apps.creativity.food_pairing.name')}
                         </NavigationMenuLink>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <h4 className="font-medium leading-none text-accent">Recetarios</h4>
+                      <h4 className="font-medium leading-none text-accent">{t('categories_labels.recetarios')}</h4>
                       <div className="grid gap-1">
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#recetarios"
                         >
-                          Europa (10)
+                          {t('categories.world_cookbooks.europa.name')} ({t('categories.world_cookbooks.europa.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#recetarios"
                         >
-                          Latinoamérica (11)
+                          {t('categories.world_cookbooks.latinoamerica.name')} ({t('categories.world_cookbooks.latinoamerica.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#recetarios"
                         >
-                          Asia (4)
+                          {t('categories.world_cookbooks.asia.name')} ({t('categories.world_cookbooks.asia.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <h4 className="font-medium leading-none text-accent">Business</h4>
+                      <h4 className="font-medium leading-none text-accent">{t('showcase.business_title')}</h4>
                       <div className="grid gap-1">
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#herramientas-business"
                         >
-                          Mermas GenCal
+                          {t('apps.business.mermas_gencal.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#herramientas-business"
                         >
-                          ID Alérgenos
+                          {t('apps.business.id_alergenos.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href="#herramientas-business"
                         >
-                          Mental Coach
+                          {t('apps.business.mental_coach.name')}
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -205,7 +205,7 @@ export default function ModernHeader() {
               onClick={handleLoginClick}
               className="hidden md:inline-flex"
             >
-              Login
+              {t('nav.login')}
             </Button>
             
             <Button 
@@ -232,22 +232,22 @@ export default function ModernHeader() {
                       {t('nav.inicio')}
                     </a>
                     <a href="#categorias-apps" className="font-medium">
-                      Aplicaciones
+                      {t('nav.aplicaciones')}
                     </a>
                     <a href="#filtro-apps" className="font-medium">
-                      Encuentra tu App
+                      {t('finder.title_prefix')} {t('finder.title_highlight')}
                     </a>
                     <a href="#showcase-creatividad" className="font-medium">
-                      Creatividad
+                      {t('nav.creatividad')}
                     </a>
                     <a href="#recetarios" className="font-medium">
-                      Recetarios
+                      {t('nav.recetarios')}
                     </a>
                     <a href="#herramientas-business" className="font-medium">
-                      Herramientas
+                      {t('nav.herramientas')}
                     </a>
                     <a href="#pricing" className="font-medium">
-                      Precios
+                      {t('nav.precios')}
                     </a>
                     <a href="https://blog.aichef.pro" target="_blank" rel="noopener noreferrer" className="font-medium">
                       {t('nav.blog')}
@@ -281,7 +281,7 @@ export default function ModernHeader() {
                       onClick={handleLoginClick}
                       className="w-full justify-start"
                     >
-                      Login
+                      {t('nav.login')}
                     </Button>
                     <Button 
                       onClick={handleCTAClick}
