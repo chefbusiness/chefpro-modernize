@@ -353,11 +353,14 @@
   },
   "showcase": {
     "creativity_title": "Creatividad Culinaria",
-    "creativity_description": "Herramientas especializadas para liberar tu creatividad gastronómica",
+    "creativity_subtitle": "Showcase",
+    "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
     "world_title": "Recetarios del Mundo",
     "world_description": "Explora cocinas auténticas de diferentes culturas",
     "business_title": "Herramientas de Negocio", 
-    "business_description": "Optimiza la gestión y operación de tu establecimiento"
+    "business_description": "Optimiza la gestión y operación de tu establecimiento",
+    "preview_label": "Preview",
+    "explore_app": "Explorar App"
   },
   "features": {
     "title": "Características Principales",

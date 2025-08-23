@@ -4,7 +4,7 @@ import { creativityApps } from '@/data/apps';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export default function CreatividadShowcase() {
-  const { getAppUrl, currentLanguage } = useLanguage();
+  const { getAppUrl, currentLanguage, t } = useLanguage();
 
   const handleAppClick = (appSlug: string) => {
     window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
@@ -14,10 +14,10 @@ export default function CreatividadShowcase() {
     <section id="showcase-creatividad" className="container py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-          <span className="gradient-text">Creatividad Culinaria</span> Showcase
+          <span className="gradient-text">{t('showcase.creativity_title')}</span> {t('showcase.creativity_subtitle')}
         </h2>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-          8 aplicaciones especializadas para llevarte más allá de lo convencional
+          {t('showcase.creativity_description')}
         </p>
       </div>
 
@@ -31,13 +31,13 @@ export default function CreatividadShowcase() {
                 <div className="flex items-center justify-between mb-2">
                   <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
                 </div>
-                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{app.name}</CardTitle>
-                <CardDescription className="text-sm leading-relaxed">{app.description}</CardDescription>
+                <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.name`)}</CardTitle>
+                <CardDescription className="text-sm leading-relaxed">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.description`)}</CardDescription>
               </CardHeader>
               <CardContent className="p-4 sm:p-6 pt-0">
                 <div className="bg-muted/50 p-3 rounded text-sm">
-                  <p className="text-muted-foreground mb-1 text-xs">Preview:</p>
-                  <p className="font-medium text-xs sm:text-sm leading-relaxed">"{app.preview}"</p>
+                  <p className="text-muted-foreground mb-1 text-xs">{t('showcase.preview_label')}:</p>
+                  <p className="font-medium text-xs sm:text-sm leading-relaxed">"{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.preview`)}"</p>
                 </div>
               </CardContent>
               <CardFooter className="p-4 sm:p-6 pt-0">
@@ -46,7 +46,7 @@ export default function CreatividadShowcase() {
                   className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
                   onClick={() => handleAppClick(app.slug)}
                 >
-                  Explorar App
+                  {t('showcase.explore_app')}
                 </Button>
               </CardFooter>
             </Card>
