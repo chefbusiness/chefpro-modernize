@@ -326,7 +326,20 @@
     }
   },
   "faq": {
-    "title": "Questions Fréquemment Posées"
+    "title": "Questions Fréquemment Posées",
+    "description": "Nous répondons aux questions les plus courantes sur AI Chef Pro",
+    "q1": "Qu'est-ce qu'AI Chef Pro et comment peut-il m'aider en tant que chef ou professionnel de la gastronomie ?",
+    "a1": "AI Chef Pro est une Suite d'Outils et Applications IA, des modèles entraînés pour l'usage quotidien des Chefs, Cuisiniers et professionnels de l'hôtellerie. Elle offre des outils qui boostent votre créativité, améliorent votre gestion et élargissent vos connaissances culinaires. En tant que leader dans n'importe quel domaine de la cuisine ou gastronomie, vous pourrez explorer de nouvelles combinaisons de saveurs, optimiser vos processus et rester à jour avec les dernières tendances gastronomiques. AI Chef Pro vous permet de vous concentrer sur votre passion culinaire pendant que l'IA vous assiste dans les tâches répétitives, vous aide à résoudre des scénarios et vous inspire avec de nouvelles idées.",
+    "q2": "Quels outils spécifiques AI Chef Pro offre-t-il pour ma gestion professionnelle ?",
+    "a2": "AI Chef Pro offre une variété d'outils axés sur votre croissance en tant que chef : Catering AI+ pour la planification d'événements, Food Pairing AI pour découvrir des combinaisons innovantes, Mermas GenCal pour optimiser l'utilisation des ingrédients, ID Allergènes pour assurer la sécurité alimentaire, Mental Coach pour votre bien-être professionnel, et d'autres. Il inclut aussi des générateurs de recettes thématiques, chaque semaine le système lance une nouvelle app dans la suite qui répond à une solution.",
+    "q3": "Quels sont les plans d'abonnement disponibles et leurs prix ?",
+    "a3": "Nous offrons des plans adaptés aux différentes étapes de votre carrière de chef : Membre (Gratuit) pour explorer les fonctionnalités de base, Pro (10€/mois) idéal pour les chefs individuels, Premium (15€/mois) pour un usage fréquent et plus de créativité, Premium Pro (25€/mois) pour les chefs en rôles de leadership, et Premium Plus (50€/mois) avec usage illimité pour les chefs exécutifs. Chaque plan est conçu pour soutenir votre croissance professionnelle et s'adapter à vos besoins changeants en tant que chef.",
+    "q4": "Quel niveau d'expérience technologique ai-je besoin pour utiliser AI Chef Pro ?",
+    "a4": "AI Chef Pro est conçu en pensant aux chefs et professionnels de tous niveaux technologiques. L'interface est intuitive et facile à utiliser, accessible depuis ordinateurs et appareils mobiles pour que vous puissiez l'utiliser en cuisine ou partout où vous en avez besoin. Le système apprend de vos préférences, offrant des suggestions de plus en plus pertinentes. Vous n'avez pas besoin d'être un expert en technologie ; si vous pouvez utiliser un smartphone, vous pourrez tirer le maximum d'AI Chef Pro.",
+    "q5": "Comment AI Chef Pro protège-t-il mes recettes et données personnelles ?",
+    "a5": "Nous comprenons que vos recettes sont votre propriété intellectuelle la plus précieuse. Chez AI Chef Pro, nous utilisons des technologies de cryptage avancées pour protéger toutes vos informations. Vos recettes et données personnelles sont gardées strictement confidentielles et jamais partagées. Nous offrons des options de sauvegarde régulières pour assurer que vous ne perdiez jamais votre travail. Votre créativité et confidentialité sont en sécurité avec nous.",
+    "q6": "Puis-je essayer AI Chef Pro avant de m'abonner ?",
+    "a6": "Absolument ! Nous offrons un plan Membre gratuit qui vous permet d'explorer les fonctionnalités de base d'AI Chef Pro sans engagement. C'est un excellent moyen de découvrir comment la plateforme peut améliorer votre créativité et efficacité en tant que chef. Quand vous êtes prêt à accéder à plus de fonctionnalités et faire passer votre cuisine au niveau supérieur, vous pouvez facilement passer à l'un de nos plans payants."
   },
   "footer": {
     "description": "Suite d'outils IA pour professionnels culinaires",
