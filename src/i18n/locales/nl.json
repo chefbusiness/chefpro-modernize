@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "aplicaciones": "Applicaties",
+    "creatividad": "Culinaire Creativiteit",
+    "recetarios": "Wereldwijde Kookboeken",
+    "herramientas": "Business Tools",
+    "marketing": "Marketing & Content",
+    "conceptos": "Business Concepten",
+    "precios": "Prijzen",
+    "blog": "Blog",
+    "login": "Inloggen"
+  },
+  "cta": {
+    "primary": "PROBEER NU GRATIS",
+    "secondary": "Probeer AI Chef Pro",
+    "started": "Begin Nu",
+    "explore": "Verken App",
+    "use_tool": "Gebruik Tool",
+    "learn_more": "Meer Weten"
+  },
+  "hero": {
+    "badge": "Nieuwe functie! Sosa Ingredients Agent beschikbaar",
+    "title": "Transformeer uw Beheer met AI Chef Pro",
+    "subtitle": "55+ Gespecialiseerde AI-tools voor Chefs. Van Culinaire Creativiteit tot Digitale Marketing.",
+    "description": "Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.",
+    "rating": "Beoordeling: 5 sterren",
+    "business_types": ["Restaurants", "Bakkerijen", "Food Trucks", "Catering", "Hotels"]
+  },
+  "stats": {
+    "apps": "55+",
+    "apps_label": "Gespecialiseerde Apps",
+    "cookbooks": "21",
+    "cookbooks_label": "Regionale Kookboeken",
+    "tools": "10+",
+    "tools_label": "Business Tools",
+    "content": "5+",
+    "content_label": "Content Modules"
+  },
+  "categories": {
+    "title": "Ontdek onze 6 App Categorieën",
+    "description": "Elke categorie is ontworpen om specifieke aspecten van uw culinaire bedrijf te verbeteren",
+    "creativity": {
+      "title": "Culinaire Creativiteit",
+      "description": "Innoveer zonder grenzen met AI",
+      "count": "8 apps"
+    },
+    "cookbooks": {
+      "title": "Wereldwijde Kookboeken",
+      "description": "Beheers de wereldkeuken",
+      "count": "21 apps"
+    },
+    "knowledge": {
+      "title": "Gastro Kennis",
+      "description": "Toegang tot culinaire wijsheid",
+      "count": "1 app"
+    },
+    "tools": {
+      "title": "Tools & Utilities",
+      "description": "Optimaliseer uw dagelijkse activiteiten",
+      "count": "6 apps"
+    },
+    "business": {
+      "title": "Business Concepten",
+      "description": "Specialiseer in uw niche",
+      "count": "5 apps"
+    },
+    "marketing": {
+      "title": "Marketing & Content",
+      "description": "Versterk uw digitale aanwezigheid",
+      "count": "4 apps"
+    }
+  },
+  "finder": {
+    "title": "Vind uw Perfecte App",
+    "description": "Selecteer uw professionele profiel en ontdek de meest relevante tools voor u",
+    "chef_ejecutivo": "Executive Chef",
+    "panaderia": "Bakkerij",
+    "food_truck": "Food Truck",
+    "estudiante": "Gastronomie Student",
+    "restaurante": "Restaurant",
+    "reposteria": "Banketbakkerij"
+  },
+  "showcase": {
+    "creativity_title": "Culinaire Creativiteit",
+    "creativity_description": "Gespecialiseerde tools om uw gastronomische creativiteit te ontketenen",
+    "world_title": "Wereldwijde Kookboeken",
+    "world_description": "Ontdek authentieke keukens van verschillende culturen",
+    "business_title": "Business Tools",
+    "business_description": "Optimaliseer het beheer en de werking van uw etablissement"
+  },
+  "features": {
+    "title": "Hoofdkenmerken",
+    "ai_powered": "Geavanceerde Kunstmatige Intelligentie",
+    "ai_powered_desc": "GPT-modellen gespecialiseerd in gastronomie",
+    "specialized": "Gespecialiseerde Tools",
+    "specialized_desc": "55+ applicaties voor elke gastronomische behoefte",
+    "global": "Wereldkeuken",
+    "global_desc": "21 kookboeken van wereldkeukens",
+    "business_tools": "Bedrijfsbeheer",
+    "business_tools_desc": "Optimaliseer kosten, afval en operaties"
+  },
+  "pricing": {
+    "title": "Plannen en Prijzen",
+    "monthly": "Maandelijks",
+    "annual": "Jaarlijks",
+    "free_trial": "7 dagen gratis proberen",
+    "most_popular": "Meest Populair"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen"
+  },
+  "footer": {
+    "description": "AI-tools suite voor culinaire professionals",
+    "links": "Links",
+    "legal": "Juridisch",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden",
+    "cookies": "Cookiebeleid"
+  },
+  "seo": {
+    "title": "AI Chef Pro - 55+ AI-tools voor Chefs | Culinaire Suite",
+    "description": "Transformeer uw keuken met 55+ gespecialiseerde AI-tools. Culinaire creativiteit, wereldwijde kookboeken, bedrijfsbeheer en gastronomische marketing.",
+    "keywords": "chef ai, gastronomie tools, ai recepten, culinaire kunstmatige intelligentie, restaurant management"
+  }
+}

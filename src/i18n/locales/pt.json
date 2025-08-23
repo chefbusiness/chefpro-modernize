@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "inicio": "Início",
+    "aplicaciones": "Aplicações",
+    "creatividad": "Criatividade Culinária",
+    "recetarios": "Livros de Receitas Mundiais",
+    "herramientas": "Ferramentas Business",
+    "marketing": "Marketing & Conteúdo",
+    "conceptos": "Conceitos Business",
+    "precios": "Preços",
+    "blog": "Blog",
+    "login": "Entrar"
+  },
+  "cta": {
+    "primary": "TESTAR GRÁTIS AGORA",
+    "secondary": "Testar AI Chef Pro",
+    "started": "Começar Agora",
+    "explore": "Explorar App",
+    "use_tool": "Usar Ferramenta",
+    "learn_more": "Saber Mais"
+  },
+  "hero": {
+    "badge": "Nova funcionalidade! Sosa Ingredients Agent disponível",
+    "title": "Transforme sua Gestão com AI Chef Pro",
+    "subtitle": "55+ Ferramentas IA Especializadas para Chefs. Da Criatividade Culinária ao Marketing Digital.",
+    "description": "Suite de Ferramentas IA e Aplicações, modelos treinados para uso diário de Chefs, Cozinheiros e profissionais da hospitalidade.",
+    "rating": "Avaliação: 5 estrelas",
+    "business_types": ["Restaurantes", "Padarias", "Food Trucks", "Catering", "Hotéis"]
+  },
+  "stats": {
+    "apps": "55+", 
+    "apps_label": "Apps Especializadas",
+    "cookbooks": "21",
+    "cookbooks_label": "Livros de Receitas Regionais",
+    "tools": "10+",
+    "tools_label": "Ferramentas Business",
+    "content": "5+",
+    "content_label": "Módulos de Conteúdo"
+  },
+  "categories": {
+    "title": "Explore nossas 6 Categorias de Apps",
+    "description": "Cada categoria é projetada para melhorar aspectos específicos do seu negócio culinário",
+    "creativity": {
+      "title": "Criatividade Culinária",
+      "description": "Inove sem limites com IA",
+      "count": "8 apps"
+    },
+    "cookbooks": {
+      "title": "Livros de Receitas Mundiais",
+      "description": "Domine a culinária global",
+      "count": "21 apps"
+    },
+    "knowledge": {
+      "title": "Conhecimento Gastronômico",
+      "description": "Acesse a sabedoria culinária",
+      "count": "1 app"
+    },
+    "tools": {
+      "title": "Ferramentas & Utilitários",
+      "description": "Otimize suas operações diárias",
+      "count": "6 apps"
+    },
+    "business": {
+      "title": "Conceitos Business",
+      "description": "Especialize-se no seu nicho",
+      "count": "5 apps"
+    },
+    "marketing": {
+      "title": "Marketing & Conteúdo",
+      "description": "Potencialize sua presença digital",
+      "count": "4 apps"
+    }
+  },
+  "finder": {
+    "title": "Encontre sua App Perfeita",
+    "description": "Selecione seu perfil profissional e descubra as ferramentas mais relevantes para você",
+    "chef_ejecutivo": "Chef Executivo",
+    "panaderia": "Padaria",
+    "food_truck": "Food Truck",
+    "estudiante": "Estudante de Gastronomia",
+    "restaurante": "Restaurante",
+    "reposteria": "Confeitaria"
+  },
+  "showcase": {
+    "creativity_title": "Criatividade Culinária",
+    "creativity_description": "Ferramentas especializadas para liberar sua criatividade gastronômica",
+    "world_title": "Livros de Receitas do Mundo",
+    "world_description": "Explore culinárias autênticas de diferentes culturas",
+    "business_title": "Ferramentas Business",
+    "business_description": "Otimize a gestão e operação do seu estabelecimento"
+  },
+  "features": {
+    "title": "Características Principais",
+    "ai_powered": "Inteligência Artificial Avançada",
+    "ai_powered_desc": "Modelos GPT especializados em gastronomia",
+    "specialized": "Ferramentas Especializadas",
+    "specialized_desc": "55+ aplicações para cada necessidade gastronômica",
+    "global": "Culinária Global",
+    "global_desc": "21 livros de receitas de culinárias do mundo",
+    "business_tools": "Gestão de Negócios",
+    "business_tools_desc": "Otimize custos, desperdícios e operações"
+  },
+  "pricing": {
+    "title": "Planos e Preços",
+    "monthly": "Mensal",
+    "annual": "Anual",
+    "free_trial": "Teste grátis 7 dias",
+    "most_popular": "Mais Popular"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes"
+  },
+  "footer": {
+    "description": "Suite de ferramentas IA para profissionais culinários",
+    "links": "Links",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "cookies": "Política de Cookies"
+  },
+  "seo": {
+    "title": "AI Chef Pro - 55+ Ferramentas IA para Chefs | Suite Culinária",
+    "description": "Transforme sua cozinha com 55+ ferramentas IA especializadas. Criatividade culinária, livros de receitas mundiais, gestão de negócios e marketing gastronômico.",
+    "keywords": "chef ia, ferramentas gastronomia, receitas ai, inteligência artificial culinária, gestão restaurante"
+  }
+}

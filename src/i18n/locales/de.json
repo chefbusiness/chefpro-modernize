@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "inicio": "Startseite",
+    "aplicaciones": "Anwendungen", 
+    "creatividad": "Kulinarische Kreativität",
+    "recetarios": "Weltweite Kochbücher",
+    "herramientas": "Business Tools",
+    "marketing": "Marketing & Inhalt",
+    "conceptos": "Business Konzepte",
+    "precios": "Preise",
+    "blog": "Blog",
+    "login": "Anmelden"
+  },
+  "cta": {
+    "primary": "JETZT KOSTENLOS TESTEN",
+    "secondary": "AI Chef Pro testen",
+    "started": "Loslegen",
+    "explore": "App Erkunden",
+    "use_tool": "Tool Verwenden",
+    "learn_more": "Mehr erfahren"
+  },
+  "hero": {
+    "badge": "Neue Funktion! Sosa Ingredients Agent verfügbar",
+    "title": "Transformieren Sie Ihr Management mit AI Chef Pro",
+    "subtitle": "55+ Spezialisierte KI-Tools für Köche. Von Kulinarischer Kreativität bis Digital Marketing.",
+    "description": "Suite von KI-Tools und Anwendungen, Modelle für den täglichen Gebrauch von Köchen und Gastronomiefachleuten.",
+    "rating": "Bewertung: 5 Sterne",
+    "business_types": ["Restaurants", "Bäckereien", "Food Trucks", "Catering", "Hotels"]
+  },
+  "stats": {
+    "apps": "55+",
+    "apps_label": "Spezialisierte Apps",
+    "cookbooks": "21", 
+    "cookbooks_label": "Regionale Kochbücher",
+    "tools": "10+",
+    "tools_label": "Business Tools",
+    "content": "5+",
+    "content_label": "Inhaltsmodule"
+  },
+  "categories": {
+    "title": "Entdecken Sie unsere 6 App-Kategorien",
+    "description": "Jede Kategorie ist darauf ausgelegt, spezifische Aspekte Ihres kulinarischen Geschäfts zu verbessern",
+    "creativity": {
+      "title": "Kulinarische Kreativität",
+      "description": "Grenzenlos innovieren mit KI",
+      "count": "8 Apps"
+    },
+    "cookbooks": {
+      "title": "Weltweite Kochbücher",
+      "description": "Beherrschen Sie die Weltküche",
+      "count": "21 Apps"
+    },
+    "knowledge": {
+      "title": "Gastro Wissen",
+      "description": "Zugang zu kulinarischer Weisheit",
+      "count": "1 App"
+    },
+    "tools": {
+      "title": "Tools & Utilities",
+      "description": "Optimieren Sie Ihre täglichen Abläufe",
+      "count": "6 Apps"
+    },
+    "business": {
+      "title": "Business Konzepte",
+      "description": "Spezialisieren Sie sich auf Ihre Nische",
+      "count": "5 Apps"
+    },
+    "marketing": {
+      "title": "Marketing & Inhalt",
+      "description": "Stärken Sie Ihre digitale Präsenz",
+      "count": "4 Apps"
+    }
+  },
+  "finder": {
+    "title": "Finden Sie Ihre perfekte App",
+    "description": "Wählen Sie Ihr Berufsprofil und entdecken Sie die relevantesten Tools für Sie",
+    "chef_ejecutivo": "Küchenchef",
+    "panaderia": "Bäckerei",
+    "food_truck": "Food Truck",
+    "estudiante": "Gastronomiestudent",
+    "restaurante": "Restaurant",
+    "reposteria": "Konditorei"
+  },
+  "showcase": {
+    "creativity_title": "Kulinarische Kreativität",
+    "creativity_description": "Spezialisierte Tools zur Entfaltung Ihrer gastronomischen Kreativität",
+    "world_title": "Kochbücher der Welt",
+    "world_description": "Entdecken Sie authentische Küchen verschiedener Kulturen",
+    "business_title": "Business Tools",
+    "business_description": "Optimieren Sie das Management und den Betrieb Ihres Establishments"
+  },
+  "features": {
+    "title": "Hauptmerkmale",
+    "ai_powered": "Fortgeschrittene Künstliche Intelligenz",
+    "ai_powered_desc": "GPT-Modelle spezialisiert auf Gastronomie",
+    "specialized": "Spezialisierte Tools",
+    "specialized_desc": "55+ Anwendungen für jeden gastronomischen Bedarf",
+    "global": "Weltküche",
+    "global_desc": "21 Kochbücher aus Weltküchen",
+    "business_tools": "Unternehmensführung",
+    "business_tools_desc": "Optimieren Sie Kosten, Abfall und Abläufe"
+  },
+  "pricing": {
+    "title": "Pläne und Preise",
+    "monthly": "Monatlich",
+    "annual": "Jährlich",
+    "free_trial": "7 Tage kostenlos testen",
+    "most_popular": "Am Beliebtesten"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen"
+  },
+  "footer": {
+    "description": "KI-Tools Suite für kulinarische Fachkräfte",
+    "links": "Links",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "cookies": "Cookie-Richtlinie"
+  },
+  "seo": {
+    "title": "AI Chef Pro - 55+ KI-Tools für Köche | Kulinarische Suite",
+    "description": "Transformieren Sie Ihre Küche mit 55+ spezialisierten KI-Tools. Kulinarische Kreativität, Weltkochbücher, Unternehmensführung und gastronomisches Marketing.",
+    "keywords": "koch ki, gastronomie tools, ki rezepte, kulinarische künstliche intelligenz, restaurant management"
+  }
+}

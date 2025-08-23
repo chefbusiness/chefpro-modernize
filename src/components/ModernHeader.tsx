@@ -66,13 +66,13 @@ export default function ModernHeader() {
                   className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href="#inicio"
                 >
-                  {t.nav.inicio}
+                  {t('nav.inicio')}
                 </NavigationMenuLink>
               </NavigationMenuItem>
               
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
-                  Aplicaciones
+                  {t('nav.aplicaciones')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid w-[600px] gap-3 p-4 md:grid-cols-3">
@@ -154,7 +154,7 @@ export default function ModernHeader() {
                   className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href="#pricing"
                 >
-                  Precios
+                  {t('nav.precios')}
                 </NavigationMenuLink>
               </NavigationMenuItem>
               
@@ -165,7 +165,7 @@ export default function ModernHeader() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {t.nav.blog}
+                  {t('nav.blog')}
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -213,7 +213,7 @@ export default function ModernHeader() {
               onClick={handleCTAClick}
               className="bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex"
             >
-              {t.cta.primary}
+              {t('cta.primary')}
             </Button>
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -229,7 +229,7 @@ export default function ModernHeader() {
                 <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
                   <div className="flex flex-col space-y-3">
                     <a href="#inicio" className="font-medium">
-                      {t.nav.inicio}
+                      {t('nav.inicio')}
                     </a>
                     <a href="#categorias-apps" className="font-medium">
                       Aplicaciones
@@ -250,7 +250,7 @@ export default function ModernHeader() {
                       Precios
                     </a>
                     <a href="https://blog.aichef.pro" target="_blank" rel="noopener noreferrer" className="font-medium">
-                      {t.nav.blog}
+                      {t('nav.blog')}
                     </a>
                   </div>
                   <div className="mt-6 space-y-3">
@@ -287,7 +287,7 @@ export default function ModernHeader() {
                       onClick={handleCTAClick}
                       className="w-full justify-start"
                     >
-                      {t.cta.primary}
+                      {t('cta.primary')}
                     </Button>
                   </div>
                 </div>

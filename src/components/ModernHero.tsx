@@ -54,11 +54,11 @@ export default function ModernHero() {
       </h1>
       
       <p className="max-w-[42rem] text-center text-lg text-accent-dark font-semibold sm:text-xl text-balance leading-7 mb-2">
-        {t.hero.subtitle}
+        {t('hero.subtitle')}
       </p>
       
       <p className="max-w-[42rem] text-center text-base text-muted-foreground text-balance leading-6">
-        {t.hero.description}
+        {t('hero.description')}
       </p>
 
       {/* Counter Stats */}
@@ -76,7 +76,7 @@ export default function ModernHero() {
           ))}
         </div>
         <span className="text-sm text-muted-foreground font-medium">
-          {t.hero.rating}
+          {t('hero.rating')}
         </span>
       </div>
 
@@ -86,7 +86,7 @@ export default function ModernHero() {
           onClick={handleCTAClick}
           className="btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]"
         >
-          {t.cta.primary}
+          {t('cta.primary')}
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
         <Button 

@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "aplicaciones": "Applications",
+    "creatividad": "Culinary Creativity",
+    "recetarios": "World Cookbooks",
+    "herramientas": "Business Tools",
+    "marketing": "Marketing & Content",
+    "conceptos": "Business Concepts",
+    "precios": "Pricing",
+    "blog": "Blog",
+    "login": "Sign In"
+  },
+  "cta": {
+    "primary": "TRY FREE NOW",
+    "secondary": "Try AI Chef Pro",
+    "started": "Get Started",
+    "explore": "Explore App",
+    "use_tool": "Use Tool",
+    "learn_more": "Learn More"
+  },
+  "hero": {
+    "badge": "New feature! Sosa Ingredients Agent available",
+    "title": "Transform your Management with AI Chef Pro",
+    "subtitle": "55+ Specialized AI Tools for Chefs. From Culinary Creativity to Digital Marketing.",
+    "description": "Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.",
+    "rating": "Rating: 5 stars",
+    "business_types": ["Restaurants", "Bakeries", "Food Trucks", "Catering", "Hotels"]
+  },
+  "stats": {
+    "apps": "55+",
+    "apps_label": "Specialized Apps",
+    "cookbooks": "21",
+    "cookbooks_label": "Regional Cookbooks",
+    "tools": "10+",
+    "tools_label": "Business Tools",
+    "content": "5+",
+    "content_label": "Content Modules"
+  },
+  "categories": {
+    "title": "Explore Our 6 App Categories",
+    "description": "Each category is designed to enhance specific aspects of your culinary business",
+    "creativity": {
+      "title": "Culinary Creativity",
+      "description": "Innovate without limits with AI",
+      "count": "8 apps"
+    },
+    "cookbooks": {
+      "title": "World Cookbooks",
+      "description": "Master global cuisine",
+      "count": "21 apps"
+    },
+    "knowledge": {
+      "title": "Gastro Knowledge",
+      "description": "Access culinary wisdom",
+      "count": "1 app"
+    },
+    "tools": {
+      "title": "Tools & Utilities",
+      "description": "Optimize your daily operations",
+      "count": "6 apps"
+    },
+    "business": {
+      "title": "Business Concepts",
+      "description": "Specialize in your niche",
+      "count": "5 apps"
+    },
+    "marketing": {
+      "title": "Marketing & Content",
+      "description": "Boost your digital presence",
+      "count": "4 apps"
+    }
+  },
+  "finder": {
+    "title": "Find Your Perfect App",
+    "description": "Select your professional profile and discover the most relevant tools for you",
+    "chef_ejecutivo": "Executive Chef",
+    "panaderia": "Bakery",
+    "food_truck": "Food Truck",
+    "estudiante": "Culinary Student",
+    "restaurante": "Restaurant",
+    "reposteria": "Pastry"
+  },
+  "showcase": {
+    "creativity_title": "Culinary Creativity",
+    "creativity_description": "Specialized tools to unleash your gastronomic creativity",
+    "world_title": "World Cookbooks",
+    "world_description": "Explore authentic cuisines from different cultures",
+    "business_title": "Business Tools",
+    "business_description": "Optimize the management and operation of your establishment"
+  },
+  "features": {
+    "title": "Key Features",
+    "ai_powered": "Advanced Artificial Intelligence",
+    "ai_powered_desc": "GPT models specialized in gastronomy",
+    "specialized": "Specialized Tools",
+    "specialized_desc": "55+ applications for every gastronomic need",
+    "global": "Global Cuisine",
+    "global_desc": "21 cookbooks from world cuisines",
+    "business_tools": "Business Management",
+    "business_tools_desc": "Optimize costs, waste and operations"
+  },
+  "pricing": {
+    "title": "Plans and Pricing",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "free_trial": "7-day free trial",
+    "most_popular": "Most Popular"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "footer": {
+    "description": "AI tools suite for culinary professionals",
+    "links": "Links",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "seo": {
+    "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
+    "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",
+    "keywords": "chef ai, gastronomy tools, ai recipes, culinary artificial intelligence, restaurant management"
+  }
+}

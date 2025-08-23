@@ -16,10 +16,12 @@ import CategoryCTAs from '@/components/CategoryCTAs';
 import ModernFAQ from '@/components/ModernFAQ';
 import ModernFooter from '@/components/ModernFooter';
 import ConversionNotifications from '@/components/ConversionNotifications';
+import SEOHead from '@/components/SEOHead';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead />
       <ModernHeader />
       <main>
         <ModernHero />
