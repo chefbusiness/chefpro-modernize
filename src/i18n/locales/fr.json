@@ -234,10 +234,96 @@
   },
   "pricing": {
     "title": "Plans et Tarifs",
+    "description": "Plans adaptés pour tous les professionnels gastronomiques : chefs, propriétaires de restaurants, gérants, barmans, boulangers, pâtissiers, chocolatiers et entrepreneurs du secteur. Chaque plan est conçu pour booster votre entreprise gastronomique.",
     "monthly": "Mensuel",
     "annual": "Annuel",
     "free_trial": "Essai gratuit 7 jours",
-    "most_popular": "Le Plus Populaire"
+    "most_popular": "Le Plus Populaire",
+    "start_free": "Commencer Gratuitement",
+    "select_plan": "Sélectionner le Plan",
+    "enterprise_question": "Besoin d'un plan entreprise ?",
+    "contact_us": "Contactez-nous pour une solution personnalisée",
+    "plans": {
+      "member": {
+        "name": "Membre",
+        "price": "Gratuit",
+        "description": "Pour explorer les fonctionnalités de base",
+        "features": {
+          "0": "Accès de base aux outils",
+          "1": "Recettes de base",
+          "2": "Support par email",
+          "3": "Fonctionnalités limitées"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "10€",
+        "period": "/mois",
+        "description": "Idéal pour les professionnels gastronomiques indépendants",
+        "features": {
+          "0": "Toutes les fonctions de base",
+          "1": "Générateur de recettes avancé",
+          "2": "Food Pairing AI",
+          "3": "Support prioritaire",
+          "4": "Plus de 20 livres de recettes"
+        }
+      },
+      "premium": {
+        "name": "Premium",
+        "price": "15€",
+        "period": "/mois",
+        "description": "Pour les professionnels avec usage fréquent et plus de créativité",
+        "features": {
+          "0": "Toutes les fonctions Pro",
+          "1": "Coaching professionnel gastronomique",
+          "2": "Analyse nutritionnelle avancée",
+          "3": "Personnalisation complète",
+          "4": "Intégrations avancées"
+        }
+      },
+      "premium_pro": {
+        "name": "Premium Pro",
+        "price": "25€",
+        "period": "/mois",
+        "description": "Pour les propriétaires et gérants d'entreprises gastronomiques",
+        "features": {
+          "0": "Toutes les fonctions Premium",
+          "1": "Gestion d'équipe",
+          "2": "Analyses avancées",
+          "3": "Accès API",
+          "4": "Consultation mensuelle"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "50€",
+        "period": "/mois",
+        "description": "Pour les entrepreneurs gastronomiques et chaînes de restaurants",
+        "features": {
+          "0": "Accès illimité complet",
+          "1": "Support 24/7",
+          "2": "Consultation personnalisée",
+          "3": "Développement de fonctionnalités sur mesure",
+          "4": "Intégration entreprise"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Annuel",
+        "price": "500€",
+        "period": "/an",
+        "original_price": "600€",
+        "discount": "Économisez 100€",
+        "description": "Idéal pour les Entrepreneurs Gastronomiques, Propriétaires de Restaurants et Dirigeants",
+        "features": {
+          "0": "Tous les 55+ outils inclus",
+          "1": "Usage illimité toute l'année",
+          "2": "Accès à toutes les cuisines du monde",
+          "3": "Outils business avancés",
+          "4": "Support premium 24/7",
+          "5": "Consultation mensuelle personnalisée"
+        }
+      }
+    }
   },
   "faq": {
     "title": "Questions Fréquemment Posées"
