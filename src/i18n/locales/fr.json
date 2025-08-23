@@ -76,6 +76,20 @@
       "title": "Marketing & Contenu",
       "description": "Boostez votre présence digitale",
       "count": "4 apps"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europe",
+        "count": "10 Cuisines"
+      },
+      "latinoamerica": {
+        "name": "Amérique Latine",
+        "count": "11 Cuisines"
+      },
+      "asia": {
+        "name": "Asie",
+        "count": "4 Cuisines"
+      }
     }
   },
   "finder": {
@@ -356,6 +370,38 @@
         "preview": "Encyclopédie gastronomique avec techniques et termes professionnels"
       }
     }
+  },
+  "cookbooks": {
+    "title": "Livres de Recettes du Monde",
+    "description": "Explorez des cuisines authentiques de différentes cultures avec plus de 25 livres de recettes régionales",
+    "europa": "Europe",
+    "latinoamerica": "Amérique Latine",
+    "asia": "Asie",
+    "alemana": "Allemande",
+    "belga": "Belge",
+    "britanica": "Britannique",
+    "espanola": "Espagnole",
+    "francesa": "Française",
+    "griega": "Grecque",
+    "portuguesa": "Portugaise",
+    "paises_bajos": "Pays-Bas",
+    "suiza": "Suisse",
+    "turca": "Turque",
+    "argentina": "Argentine",
+    "brasilena": "Brésilienne",
+    "chilena": "Chilienne",
+    "colombiana": "Colombienne",
+    "dominicana": "Dominicaine",
+    "ecuatoriana": "Équatorienne",
+    "jamaicana": "Jamaïcaine",
+    "mexicana": "Mexicaine",
+    "paraguaya": "Paraguayenne",
+    "peruana": "Péruvienne",
+    "venezolana": "Vénézuélienne",
+    "china": "Chinoise",
+    "india": "Indienne",
+    "japonesa": "Japonaise",
+    "tailandesa": "Thaïlandaise"
   },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
