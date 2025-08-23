@@ -574,6 +574,17 @@
       }
     }
   },
+  "chef_section": {
+    "title_part1": "Instant Recepten.",
+    "title_part2": "Hogere Productiviteit.",
+    "title_part3": "Eindeloze Inspiratie.",
+    "description_start": "Chef",
+    "description_end": "en zijn team gebruiken AI Chef Pro",
+    "cta": "Test AI Chef Pro",
+    "image1_alt": "Chef Diego Schattenhofer gebruikt AI Chef Pro - Taste 1973",
+    "image2_alt": "Taste 1973 team met AI Chef Pro",
+    "image3_alt": "Culinaire innovatie met AI Chef Pro"
+  },
   "faq": {
     "title": "Veelgestelde Vragen"
   },

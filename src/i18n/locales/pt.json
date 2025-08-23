@@ -574,6 +574,17 @@
       }
     }
   },
+  "chef_section": {
+    "title_part1": "Receitas Instantâneas.",
+    "title_part2": "Maior Produtividade.",
+    "title_part3": "Inspiração Infinita.",
+    "description_start": "Chef",
+    "description_end": "e sua equipe usando AI Chef Pro",
+    "cta": "Teste AI Chef Pro",
+    "image1_alt": "Chef Diego Schattenhofer usando AI Chef Pro - Taste 1973",
+    "image2_alt": "Equipe Taste 1973 com AI Chef Pro",
+    "image3_alt": "Inovação culinária com AI Chef Pro"
+  },
   "faq": {
     "title": "Perguntas Frequentes"
   },
