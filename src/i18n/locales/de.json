@@ -38,7 +38,9 @@
     "tools": "10+",
     "tools_label": "Business Tools",
     "categories": "6",
-    "categories_label": "Professionelle Kategorien"
+    "categories_label": "Professionelle Kategorien",
+    "new_app_label": "Neue App Jede Woche",
+    "chefs_label": "Köche und Gastronomieprofis vertrauen uns"
   },
   "categories": {
     "title": "Entdecken Sie unsere 6 App-Kategorien",

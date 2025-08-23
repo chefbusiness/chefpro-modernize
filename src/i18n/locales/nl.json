@@ -38,7 +38,9 @@
     "tools": "10+",
     "tools_label": "Business Tools",
     "categories": "6",
-    "categories_label": "Professionele Categorieën"
+    "categories_label": "Professionele Categorieën",
+    "new_app_label": "Nieuwe App Elke Week",
+    "chefs_label": "Chefs en Horeca Professionals vertrouwen ons"
   },
   "categories": {
     "title": "Ontdek onze 6 App Categorieën",

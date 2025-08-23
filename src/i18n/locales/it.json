@@ -38,7 +38,9 @@
     "tools": "10+",
     "tools_label": "Strumenti Business",
     "categories": "6",
-    "categories_label": "Categorie Professionali"
+    "categories_label": "Categorie Professionali",
+    "new_app_label": "Nuova App Ogni Settimana",
+    "chefs_label": "Chef e Professionisti dell'Ospitalità si fidano di noi"
   },
   "categories": {
     "title": "Esplora le nostre 6 Categorie di App",
