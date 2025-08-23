@@ -92,6 +92,72 @@
     "business_title": "Outils Business",
     "business_description": "Optimisez la gestion et l'exploitation de votre établissement"
   },
+  "gallery": {
+    "badge": "55+ Apps Spécialisées en Action",
+    "title": "Découvrez la Puissance d'AI Chef Pro",
+    "description": "Explorez des captures réelles de nos applications spécialisées pour les professionnels gastronomiques",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "counter": "{{current}} de {{total}} applications montrées",
+    "explore_all": "Explorer Toutes les Apps"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Cuisine Créative",
+      "description": "Générateur de recettes de cuisine créative de qualité professionnelle avec histoires de fond"
+    },
+    "platos_autor": {
+      "title": "Plats d'Auteur",
+      "description": "Créez des plats contemporains uniques avec des ingrédients de saison et des techniques innovantes"
+    },
+    "catering_ai": {
+      "title": "Catering AI+",
+      "description": "Modèle de connaissance alimenté par l'intelligence artificielle pour chefs, cuisiniers et entrepreneurs dans le secteur traiteur"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Découvrez des accords scientifiques parfaits entre ingrédients grâce à l'analyse des composés aromatiques"
+    },
+    "pasteleria_creativa": {
+      "title": "Pâtisserie Créative",
+      "description": "Desserts d'auteur étape par étape avec techniques avancées de pâtisserie moderne"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "Travaillez avec des ingrédients d'avant-garde de la marque Sosa pour la haute cuisine"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Spécialisez-vous dans la gestion de restaurants décontractés avec des outils IA adaptés"
+    },
+    "menu_local_seo": {
+      "title": "Menu Local SEO",
+      "description": "Optimisez chaque plat pour les moteurs de recherche et améliorez votre visibilité locale"
+    },
+    "cocina_peruana": {
+      "title": "Cuisine Péruvienne",
+      "description": "Explorez les saveurs authentiques du Pérou avec des recettes traditionnelles et contemporaines"
+    },
+    "cocina_francesa": {
+      "title": "Cuisine Française",
+      "description": "Maîtrisez les techniques classiques françaises avec des recettes authentiques et modernes"
+    },
+    "fermentus": {
+      "title": "Fermentus Con AI+",
+      "description": "Fermentation et conserves d'auteur avec techniques avancées de fermentation contrôlée"
+    },
+    "cocina_india": {
+      "title": "Cuisine Indienne",
+      "description": "Découvrez les épices et techniques de la cuisine indienne avec des recettes régionales authentiques"
+    }
+  },
+  "categories_labels": {
+    "creatividad": "Créativité Culinaire",
+    "conceptos": "Concepts Business",
+    "proveedores": "Fournisseurs Gastro",
+    "marketing": "Marketing & Contenu",
+    "recetarios": "Livres de Recettes Mondiales"
+  },
   "features": {
     "title": "Caractéristiques Principales",
     "ai_powered": "Intelligence Artificielle Avancée",
