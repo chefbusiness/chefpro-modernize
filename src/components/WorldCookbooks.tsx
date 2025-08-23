@@ -14,7 +14,6 @@ const normalizeCuisineName = (name: string): string => {
 };
 
 export default function WorldCookbooks() {
-  const [selectedCuisine, setSelectedCuisine] = useState<string | null>(null);
   const { t } = useLanguage();
 
   return (
@@ -42,7 +41,6 @@ export default function WorldCookbooks() {
               <Card 
                 key={cuisine.name}
                 className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
-                onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
@@ -50,13 +48,6 @@ export default function WorldCookbooks() {
                     <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
-                {selectedCuisine === cuisine.name && (
-                  <CardContent className="p-3 sm:p-4 pt-0">
-                    <CardDescription className="text-xs leading-relaxed">
-                      {cuisine.preview}
-                    </CardDescription>
-                  </CardContent>
-                )}
               </Card>
             ))}
           </div>
@@ -75,7 +66,6 @@ export default function WorldCookbooks() {
               <Card 
                 key={cuisine.name}
                 className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
-                onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
@@ -83,13 +73,6 @@ export default function WorldCookbooks() {
                     <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
-                {selectedCuisine === cuisine.name && (
-                  <CardContent className="p-3 sm:p-4 pt-0">
-                    <CardDescription className="text-xs leading-relaxed">
-                      {cuisine.preview}
-                    </CardDescription>
-                  </CardContent>
-                )}
               </Card>
             ))}
           </div>
@@ -108,7 +91,6 @@ export default function WorldCookbooks() {
               <Card 
                 key={cuisine.name}
                 className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
-                onClick={() => setSelectedCuisine(selectedCuisine === cuisine.name ? null : cuisine.name)}
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
@@ -116,13 +98,6 @@ export default function WorldCookbooks() {
                     <span className="text-xs sm:text-sm leading-tight">{t(`cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
                   </CardTitle>
                 </CardHeader>
-                {selectedCuisine === cuisine.name && (
-                  <CardContent className="p-3 sm:p-4 pt-0">
-                    <CardDescription className="text-xs leading-relaxed">
-                      {cuisine.preview}
-                    </CardDescription>
-                  </CardContent>
-                )}
               </Card>
             ))}
           </div>
