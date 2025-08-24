@@ -318,16 +318,6 @@
           "3": "API access",
           "4": "Monthly consulting"
   },
-  "cookies": {
-    "banner": {
-      "title": "We use cookies",
-      "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to the use of all cookies.",
-      "accept": "Accept",
-      "reject": "Reject",
-      "learn_more": "Learn more",
-      "close": "Close"
-    }
-  },
   "pages": {
     "services": {
       "title": "Services - AI Chef Pro",
@@ -362,14 +352,16 @@
   },
   "cookies": {
     "banner": {
-      "title": "Cookie Settings",
-      "description": "We use cookies to improve your experience, analyze traffic and personalize content. You can accept all cookies or configure your preferences.",
-      "accept": "Accept all",
-      "reject": "Reject optional",
-      "learn_more": "Learn more"
+      "title": "We use cookies",
+      "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to the use of all cookies.",
+      "accept": "Accept",
+      "reject": "Reject",
+      "learn_more": "Learn more",
+      "close": "Close"
     }
-  }
-      },
+  },
+  "pricing": {
+    "plans": {
       "premium_plus": {
         "name": "Premium Plus",
         "price": "€50",

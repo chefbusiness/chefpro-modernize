@@ -321,6 +321,9 @@
           "3": "Outils business avancés",
           "4": "Support premium 24/7",
           "5": "Consultation mensuelle personnalisée"
+        }
+      }
+    }
   },
   "cookies": {
     "banner": {
@@ -362,18 +365,6 @@
       "description": "Conditions générales d'utilisation d'AI Chef Pro et de ses services.",
       "heading": "Conditions Générales",
       "content": "Ces conditions générales régissent l'utilisation d'AI Chef Pro et de ses services."
-    }
-  },
-  "cookies": {
-    "banner": {
-      "title": "Paramètres des Cookies",
-      "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser le trafic et personnaliser le contenu. Vous pouvez accepter tous les cookies ou configurer vos préférences.",
-      "accept": "Tout accepter",
-      "reject": "Rejeter optionnels",
-      "learn_more": "En savoir plus"
-    }
-  }
-      }
     }
   },
   "faq": {
