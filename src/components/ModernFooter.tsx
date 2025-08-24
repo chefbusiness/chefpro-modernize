@@ -88,6 +88,45 @@ export default function ModernFooter() {
                 </a>
               </li>
             </ul>
+
+            {/* Legal Section */}
+            <div className="mt-8">
+              <h4 className="text-sm font-semibold mb-4">Legal</h4>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <a 
+                    href={currentLanguage === 'es' ? '/legales' : `/${currentLanguage}/legales`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t('footer.legal')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href={currentLanguage === 'es' ? '/privacidad' : `/${currentLanguage}/privacidad`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t('footer.privacy')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href={currentLanguage === 'es' ? '/terminos' : `/${currentLanguage}/terminos`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t('footer.terms')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href={currentLanguage === 'es' ? '/cookies' : `/${currentLanguage}/cookies`}
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t('footer.cookies')}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Contact Column */}
