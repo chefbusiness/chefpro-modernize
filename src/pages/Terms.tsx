@@ -19,8 +19,10 @@ const Terms = () => {
             <h1 className="text-4xl font-bold text-foreground mb-8">
               {t('pages.terms.heading')}
             </h1>
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p>{t('pages.terms.content')}</p>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              {(t('pages.terms.content_paragraphs', { returnObjects: true }) as string[])?.map((paragraph, index) => (
+                <div key={index} dangerouslySetInnerHTML={{ __html: paragraph.replace(/\n/g, '<br />') }} />
+              )) || <p>{t('pages.terms.content')}</p>}
             </div>
           </div>
         </div>
