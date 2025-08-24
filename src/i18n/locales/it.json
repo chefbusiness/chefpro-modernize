@@ -316,6 +316,16 @@
         "description": "Regola quantità secondo commensali",
         "preview": "Scala ricette con precisione matematica per qualsiasi evento"
   },
+  "cookies": {
+    "banner": {
+      "title": "Utilizziamo i cookie",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico del sito e personalizzare i contenuti. Cliccando su 'Accetta', acconsenti all'uso di tutti i cookie.",
+      "accept": "Accettare",
+      "reject": "Rifiutare",
+      "learn_more": "Saperne di più",
+      "close": "Chiudere"
+    }
+  },
   "pages": {
     "services": {
       "title": "Servizi - AI Chef Pro",

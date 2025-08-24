@@ -306,6 +306,16 @@
         "description": "Gestión integral de restaurante",
         "preview": "Desde el menú hasta la experiencia del cliente"
   },
+  "cookies": {
+    "banner": {
+      "title": "Utilizamos cookies",
+      "description": "Utilizamos cookies para mejorar tu experiencia de navegación, analizar el tráfico del sitio y personalizar el contenido. Al hacer clic en 'Aceptar', consientes el uso de todas las cookies.",
+      "accept": "Aceptar",
+      "reject": "Rechazar",
+      "learn_more": "Más información",
+      "close": "Cerrar"
+    }
+  },
   "pages": {
     "services": {
       "title": "Servicios - AI Chef Pro",

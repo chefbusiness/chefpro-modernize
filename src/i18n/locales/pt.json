@@ -316,6 +316,16 @@
         "description": "Ajusta quantidades conforme comensais",
         "preview": "Escala receitas com precisão matemática para qualquer evento"
   },
+  "cookies": {
+    "banner": {
+      "title": "Utilizamos cookies",
+      "description": "Utilizamos cookies para melhorar sua experiência de navegação, analisar o tráfego do site e personalizar o conteúdo. Ao clicar em 'Aceitar', você consente o uso de todos os cookies.",
+      "accept": "Aceitar",
+      "reject": "Rejeitar",
+      "learn_more": "Saber mais",
+      "close": "Fechar"
+    }
+  },
   "pages": {
     "services": {
       "title": "Serviços - AI Chef Pro",

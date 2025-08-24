@@ -316,6 +316,16 @@
         "description": "Past hoeveelheden aan volgens gasten",
         "preview": "Schaalt recepten met wiskundige precisie voor elk evenement"
   },
+  "cookies": {
+    "banner": {
+      "title": "We gebruiken cookies",
+      "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
+      "accept": "Accepteren",
+      "reject": "Weigeren",
+      "learn_more": "Meer informatie",
+      "close": "Sluiten"
+    }
+  },
   "pages": {
     "services": {
       "title": "Services - AI Chef Pro",

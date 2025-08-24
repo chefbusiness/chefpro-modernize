@@ -322,6 +322,16 @@
           "4": "Support premium 24/7",
           "5": "Consultation mensuelle personnalisée"
   },
+  "cookies": {
+    "banner": {
+      "title": "Nous utilisons des cookies",
+      "description": "Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu. En cliquant sur 'Accepter', vous consentez à l'utilisation de tous les cookies.",
+      "accept": "Accepter",
+      "reject": "Refuser",
+      "learn_more": "En savoir plus",
+      "close": "Fermer"
+    }
+  },
   "pages": {
     "services": {
       "title": "Services - AI Chef Pro",

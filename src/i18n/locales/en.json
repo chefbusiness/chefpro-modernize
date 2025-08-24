@@ -317,6 +317,16 @@
           "3": "API access",
           "4": "Monthly consulting"
   },
+  "cookies": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to the use of all cookies.",
+      "accept": "Accept",
+      "reject": "Reject",
+      "learn_more": "Learn more",
+      "close": "Close"
+    }
+  },
   "pages": {
     "services": {
       "title": "Services - AI Chef Pro",
