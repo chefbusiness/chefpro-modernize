@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { X } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const CookieBanner = () => {
+  const { i18n } = useTranslation();
   const { t, currentLanguage } = useLanguage();
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
+
+  // Don't render until i18n is ready
+  if (!i18n.isInitialized || !t('cookies.banner.title') || t('cookies.banner.title').startsWith('cookies.banner')) {
+    return null;
+  }
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie-consent');
