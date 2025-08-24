@@ -348,15 +348,6 @@
       "content": "Estos términos y condiciones regulan el uso de AI Chef Pro y sus servicios."
     }
   },
-  "cookies": {
-    "banner": {
-      "title": "Configuración de Cookies",
-      "description": "Utilizamos cookies para mejorar tu experiencia, analizar el tráfico y personalizar el contenido. Puedes aceptar todas las cookies o configurar tus preferencias.",
-      "accept": "Aceptar todas",
-      "reject": "Rechazar opcionales", 
-      "learn_more": "Más información"
-    }
-  }
     },
     "marketing": {
       "menu_plate_seo": {
@@ -610,6 +601,15 @@
   },
   "features": {
     "title": "Características Principales",
+    "description": "Suite completa de herramientas y aplicaciones de IA para chefs y cocineros que desean acelerar y optimizar su trabajo diario en cocinas profesionales y liberar su creatividad.",
+    "ai_assistant": "Modelo de Asistente Culinario IA",
+    "ai_assistant_desc": "Recomendaciones personalizadas de recetas y técnicas adaptadas a tus preferencias culinarias. Más de 20 recetarios.",
+    "food_pairing": "Food Pairing y Sustituciones de Ingredientes",
+    "food_pairing_desc": "Encuentra alternativas ideales para ingredientes que necesitas reemplazar en tus recetas.",
+    "coaching": "Chef Coaching",
+    "coaching_desc": "Soporte psicológico y motivacional para mejorar el rendimiento y bienestar en la cocina.",
+    "llm_title": "Tecnología LLM Avanzada",
+    "llm_description": "Modelos de lenguaje especializados para el sector gastronómico",
     "ai_powered": "Inteligencia Artificial Avanzada",
     "ai_powered_desc": "Modelos GPT especializados en gastronomía",
     "specialized": "Herramientas Especializadas",

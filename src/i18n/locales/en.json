@@ -201,6 +201,7 @@
     }
   },
   "features": {
+    "title": "Key Features",
     "description": "Complete suite of AI tools and applications for chefs and cooks who want to accelerate and optimize their daily work in professional kitchens and unleash their creativity.",
     "ai_assistant": "AI Culinary Assistant Model",
     "ai_assistant_desc": "Personalized recipe and technique recommendations adapted to your culinary preferences. Over 20 cookbooks.",

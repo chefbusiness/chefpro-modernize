@@ -215,14 +215,6 @@
   "features": {
     "title": "Caractéristiques Principales",
     "description": "Suite complète d'outils et applications IA pour chefs et cuisiniers qui souhaitent accélérer et optimiser leur travail quotidien en cuisine professionnelle et libérer leur créativité.",
-    "ai_powered": "Intelligence Artificielle Avancée",
-    "ai_powered_desc": "Modèles GPT spécialisés en gastronomie",
-    "specialized": "Outils Spécialisés",
-    "specialized_desc": "55+ applications pour chaque besoin gastronomique",
-    "global": "Cuisine Mondiale",
-    "global_desc": "21 livres de recettes de cuisines du monde",
-    "business_tools": "Gestion d'Entreprise",
-    "business_tools_desc": "Optimisez les coûts, les déchets et les opérations",
     "ai_assistant": "Modèle d'Assistant Culinaire IA",
     "ai_assistant_desc": "Recommandations personnalisées de recettes et techniques adaptées à vos préférences culinaires. Plus de 20 livres de recettes.",
     "food_pairing": "Accords Culinaires & Substitutions d'Ingrédients",
@@ -230,7 +222,15 @@
     "coaching": "Coaching de Chef",
     "coaching_desc": "Soutien psychologique et motivationnel pour améliorer les performances et le bien-être en cuisine.",
     "llm_title": "Technologie LLM Avancée",
-    "llm_description": "Modèles de langage spécialisés pour le secteur gastronomique"
+    "llm_description": "Modèles de langage spécialisés pour le secteur gastronomique",
+    "ai_powered": "Intelligence Artificielle Avancée",
+    "ai_powered_desc": "Modèles GPT spécialisés en gastronomie",
+    "specialized": "Outils Spécialisés",
+    "specialized_desc": "55+ applications pour chaque besoin gastronomique",
+    "global": "Cuisine Mondiale",
+    "global_desc": "21 livres de recettes de cuisines du monde",
+    "business_tools": "Gestion d'Entreprise",
+    "business_tools_desc": "Optimisez les coûts, les déchets et les opérations"
   },
   "pricing": {
     "title": "Plans et Tarifs",
