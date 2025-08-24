@@ -1,19 +1,23 @@
 import { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { X } from 'lucide-react';
+import { useLanguage } from '@/hooks/useLanguage';
 
 const CookieBanner = () => {
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useLanguage();
+  const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie-consent');
-    if (!consent) {
+    const isCookiePage = location.pathname.includes('/cookies') || location.pathname.includes('/cookie');
+    
+    if (!consent && !isCookiePage) {
       setIsVisible(true);
     }
-  }, []);
+  }, [location.pathname]);
 
   const acceptCookies = () => {
     localStorage.setItem('cookie-consent', 'accepted');
@@ -23,6 +27,17 @@ const CookieBanner = () => {
   const rejectCookies = () => {
     localStorage.setItem('cookie-consent', 'rejected');
     setIsVisible(false);
+  };
+
+  const closeBanner = () => {
+    setIsVisible(false);
+  };
+
+  const getCookiePageUrl = () => {
+    if (currentLanguage === 'es') {
+      return '/cookies';
+    }
+    return `/${currentLanguage}/cookies`;
   };
 
   if (!isVisible) return null;
@@ -46,7 +61,7 @@ const CookieBanner = () => {
                 {t('cookies.banner.reject')}
               </Button>
               <Button variant="ghost" size="sm" asChild>
-                <a href="/cookies" target="_blank" rel="noopener noreferrer">
+                <a href={getCookiePageUrl()} target="_blank" rel="noopener noreferrer">
                   {t('cookies.banner.learn_more')}
                 </a>
               </Button>
@@ -55,8 +70,9 @@ const CookieBanner = () => {
           <Button
             variant="ghost"
             size="sm"
-            onClick={rejectCookies}
+            onClick={closeBanner}
             className="shrink-0"
+            aria-label={t('cookies.banner.close')}
           >
             <X className="h-4 w-4" />
           </Button>
