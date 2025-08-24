@@ -46,7 +46,12 @@ export const useLanguage = () => {
   };
 
   const getCurrentLanguage = (): Language => {
-    return i18n.language as Language;
+    const currentLang = i18n.language;
+    // Normalize language codes (es-ES -> es, en-US -> en, etc.)
+    const simpleLang = currentLang.split('-')[0];
+    return (['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'].includes(simpleLang) 
+      ? simpleLang 
+      : 'es') as Language;
   };
   
   return {
