@@ -11,6 +11,9 @@ export default function ModernFooter() {
     e.preventDefault();
   };
 
+  const legalHref = (slug: string) => 
+    currentLanguage === 'es' ? `/${slug}` : `/${currentLanguage}/${slug}`;
+
   return (
     <footer className="border-t bg-background">
       <div className="container py-14">
@@ -88,45 +91,6 @@ export default function ModernFooter() {
                 </a>
               </li>
             </ul>
-
-            {/* Legal Section */}
-            <div className="mt-8">
-              <h4 className="text-sm font-semibold mb-4">Legal</h4>
-              <ul className="space-y-3 text-sm">
-                <li>
-                  <a 
-                    href={currentLanguage === 'es' ? '/legales' : `/${currentLanguage}/legales`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t('footer.legal')}
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href={currentLanguage === 'es' ? '/privacidad' : `/${currentLanguage}/privacidad`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t('footer.privacy')}
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href={currentLanguage === 'es' ? '/terminos' : `/${currentLanguage}/terminos`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t('footer.terms')}
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href={currentLanguage === 'es' ? '/cookies' : `/${currentLanguage}/cookies`}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {t('footer.cookies')}
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
 
           {/* Contact Column */}
@@ -222,8 +186,12 @@ export default function ModernFooter() {
         <Separator className="my-8" />
         
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-          <div className="text-center text-sm text-muted-foreground md:text-left">
-            © 2024. All rights reserved.
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2 text-center text-sm text-muted-foreground md:text-left">
+            <span>© 2024. All rights reserved.</span>
+            <a href={legalHref('legales')} className="hover:text-foreground transition-colors">{t('footer.legal')}</a>
+            <a href={legalHref('privacidad')} className="hover:text-foreground transition-colors">{t('footer.privacy')}</a>
+            <a href={legalHref('terminos')} className="hover:text-foreground transition-colors">{t('footer.terms')}</a>
+            <a href={legalHref('cookies')} className="hover:text-foreground transition-colors">{t('footer.cookies')}</a>
           </div>
           
           <div className="flex items-center gap-4 text-sm">
