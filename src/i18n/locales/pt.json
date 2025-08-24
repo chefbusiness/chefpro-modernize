@@ -360,11 +360,12 @@
   },
   "cookies": {
     "banner": {
-      "title": "Configurações de Cookies",
-      "description": "Utilizamos cookies para melhorar sua experiência, analisar o tráfego e personalizar o conteúdo. Você pode aceitar todos os cookies ou configurar suas preferências.",
-      "accept": "Aceitar todos",
-      "reject": "Rejeitar opcionais",
-      "learn_more": "Saiba mais"
+      "title": "Utilizamos cookies",
+      "description": "Utilizamos cookies para melhorar sua experiência de navegação, analisar o tráfego do site e personalizar o conteúdo. Ao clicar em 'Aceitar', você consente o uso de todos os cookies.",
+      "accept": "Aceitar",
+      "reject": "Rejeitar",
+      "learn_more": "Saber mais",
+      "close": "Fechar"
     }
   }
     },

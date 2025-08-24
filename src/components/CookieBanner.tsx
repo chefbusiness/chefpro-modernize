@@ -22,8 +22,8 @@ const CookieBanner = () => {
     }
   }, [location.pathname]);
 
-  // Don't render until i18n is ready
-  if (!i18n.isInitialized || !t('cookies.banner.title') || t('cookies.banner.title').startsWith('cookies.banner')) {
+  // Don't render until i18n is ready and cookies translation exists
+  if (!i18n.isInitialized || !i18n.exists('cookies.banner.title', { lng: currentLanguage })) {
     return null;
   }
 

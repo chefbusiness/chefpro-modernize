@@ -360,11 +360,12 @@
   },
   "cookies": {
     "banner": {
-      "title": "Cookie Instellingen",
-      "description": "We gebruiken cookies om uw ervaring te verbeteren, verkeer te analyseren en content te personaliseren. U kunt alle cookies accepteren of uw voorkeuren configureren.",
-      "accept": "Alles accepteren",
-      "reject": "Optionele weigeren",
-      "learn_more": "Meer informatie"
+      "title": "We gebruiken cookies",
+      "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
+      "accept": "Accepteren",
+      "reject": "Weigeren",
+      "learn_more": "Meer informatie",
+      "close": "Sluiten"
     }
   }
     },
