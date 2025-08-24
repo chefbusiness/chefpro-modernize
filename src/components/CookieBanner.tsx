@@ -12,11 +12,7 @@ const CookieBanner = () => {
   const location = useLocation();
   const [isVisible, setIsVisible] = useState(false);
 
-  // Don't render until i18n is ready
-  if (!i18n.isInitialized || !t('cookies.banner.title') || t('cookies.banner.title').startsWith('cookies.banner')) {
-    return null;
-  }
-
+  // All hooks must be called before any conditional returns
   useEffect(() => {
     const consent = localStorage.getItem('cookie-consent');
     const isCookiePage = location.pathname.includes('/cookies') || location.pathname.includes('/cookie');
@@ -25,6 +21,11 @@ const CookieBanner = () => {
       setIsVisible(true);
     }
   }, [location.pathname]);
+
+  // Don't render until i18n is ready
+  if (!i18n.isInitialized || !t('cookies.banner.title') || t('cookies.banner.title').startsWith('cookies.banner')) {
+    return null;
+  }
 
   const acceptCookies = () => {
     localStorage.setItem('cookie-consent', 'accepted');
