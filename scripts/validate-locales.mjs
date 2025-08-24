@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { spawn } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
@@ -136,4 +137,18 @@ function validateLocales() {
   }
 }
 
+// Run validation
 validateLocales();
+
+// Test build to ensure JSON files work in production
+console.log('\n🏗️ Testing build process...');
+const buildProcess = spawn('npm', ['run', 'build:dev'], { stdio: 'inherit' });
+
+buildProcess.on('close', (code) => {
+  if (code === 0) {
+    console.log('\n✅ Build successful! All locale files are working correctly.');
+  } else {
+    console.log('\n❌ Build failed. Please check the errors above.');
+    process.exit(1);
+  }
+});

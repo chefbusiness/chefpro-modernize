@@ -317,6 +317,38 @@
           "2": "Advanced analytics",
           "3": "API access",
           "4": "Monthly consulting"
+        }
+      },
+      "premium_plus": {
+        "name": "Premium Plus",
+        "price": "€50",
+        "period": "/month",
+        "description": "For gastronomic entrepreneurs and restaurant chains",
+        "features": {
+          "0": "Complete unlimited access",
+          "1": "24/7 support",
+          "2": "Personalized consulting",
+          "3": "Custom feature development",
+          "4": "Enterprise integration"
+        }
+      },
+      "premium_plus_annual": {
+        "name": "Premium Plus Annual",
+        "price": "€500",
+        "period": "/year",
+        "original_price": "€600",
+        "discount": "Save €100",
+        "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "Unlimited use throughout the year",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Premium 24/7 support",
+          "5": "Personalized monthly consulting"
+        }
+      }
+    }
   },
   "pages": {
     "services": {
@@ -358,39 +390,6 @@
       "reject": "Reject",
       "learn_more": "Learn more",
       "close": "Close"
-    }
-  },
-  "pricing": {
-    "plans": {
-      "premium_plus": {
-        "name": "Premium Plus",
-        "price": "€50",
-        "period": "/month",
-        "description": "For gastronomic entrepreneurs and restaurant chains",
-        "features": {
-          "0": "Complete unlimited access",
-          "1": "24/7 support",
-          "2": "Personalized consulting",
-          "3": "Custom feature development",
-          "4": "Enterprise integration"
-        }
-      },
-      "premium_plus_annual": {
-        "name": "Premium Plus Annual",
-        "price": "€500",
-        "period": "/year",
-        "original_price": "€600",
-        "discount": "Save €100",
-        "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
-        "features": {
-          "0": "All 55+ tools included",
-          "1": "Unlimited use throughout the year",
-          "2": "Access to all world cuisines",
-          "3": "Advanced business tools",
-          "4": "Premium 24/7 support",
-          "5": "Personalized monthly consulting"
-        }
-      }
     }
   },
   "faq": {
