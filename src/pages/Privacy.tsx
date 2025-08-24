@@ -20,9 +20,15 @@ const Privacy = () => {
               {t('pages.privacy.heading')}
             </h1>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-              {(t('pages.privacy.content_paragraphs', { returnObjects: true }) as string[])?.map((paragraph, index) => (
-                <div key={index} dangerouslySetInnerHTML={{ __html: paragraph.replace(/\n/g, '<br />') }} />
-              )) || <p>{t('pages.privacy.content')}</p>}
+              {(() => {
+                const paragraphs = t('pages.privacy.content_paragraphs', { returnObjects: true });
+                if (Array.isArray(paragraphs)) {
+                  return paragraphs.map((paragraph, index) => (
+                    <div key={index} dangerouslySetInnerHTML={{ __html: paragraph.replace(/\n/g, '<br />') }} />
+                  ));
+                }
+                return <p>{t('pages.privacy.content')}</p>;
+              })()}
             </div>
           </div>
         </div>
