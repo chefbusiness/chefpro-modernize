@@ -367,19 +367,49 @@
       "title": "Cookie Policy - AI Chef Pro",
       "description": "Information about the use of cookies on AI Chef Pro and how to manage your preferences.",
       "heading": "Cookie Policy",
-      "content": "At AI Chef Pro we use cookies to improve your user experience and offer you personalized content."
+      "content": "At AI Chef Pro we use cookies to improve your user experience and offer you personalized content.",
+      "content_paragraphs": [
+        "<h2>1. What are cookies?</h2><p>Cookies are small text files that are stored on your device when you visit AI Chef Pro. They help us remember your preferences and improve your experience with our culinary artificial intelligence tools.</p>",
+        "<h2>2. Types of Cookies We Use</h2><p><strong>Essential cookies:</strong> Necessary for the basic functioning of our AI applications.</p><p><strong>Preference cookies:</strong> Remember your personalized culinary settings.</p><p><strong>Analytical cookies:</strong> Help us understand how you use our tools to improve them.</p>",
+        "<h2>3. Purpose of Cookies</h2><p>We use cookies to personalize your gastronomic experience, remember your favorite recipes, keep your sessions active and analyze the use of our culinary AI applications to improve our services.</p>",
+        "<h2>4. Cookie Management</h2><p>You can configure your browser to reject cookies, although this could affect the functionality of some of our AI tools. You can also delete stored cookies at any time from your browser settings.</p>",
+        "<h2>5. Third Party Cookies</h2><p>Some cookies may be set by third party services we use for analytics and additional functionality. These third parties have their own privacy policies.</p>",
+        "<h2>6. Updates</h2><p>This cookie policy may be updated periodically. We will notify you of significant changes and the date of the last update.</p>",
+        "<h2>7. Contact</h2><p>If you have questions about our use of cookies, contact us at: <strong>info@aichef.pro</strong> or <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "privacy": {
       "title": "Privacy Policy - AI Chef Pro",
       "description": "Information about how we protect and treat your personal data at AI Chef Pro.",
       "heading": "Privacy Policy",
-      "content": "Your privacy is important to us. This policy explains how we collect, use and protect your personal information."
+      "content": "Your privacy is important to us. This policy explains how we collect, use and protect your personal information.",
+      "content_paragraphs": [
+        "<h2>1. Information We Collect</h2><p>At AI Chef Pro, we collect information when you interact with our culinary artificial intelligence services. This includes registration data, gastronomic preferences, and technical information about the use of our applications.</p>",
+        "<h2>2. Use of Information</h2><p>We use your information to personalize your culinary experience, improve our AI tools, provide technical support and develop new gastronomic functionalities that adapt to your professional needs.</p>",
+        "<h2>3. Data Protection</h2><p>We implement technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure or destruction. Your data is encrypted and stored securely.</p>",
+        "<h2>4. Information Sharing</h2><p>We do not sell, market or transfer your personal information to third parties, except when necessary to provide our services or when required by law.</p>",
+        "<h2>5. Your Rights</h2><p>You have the right to access, rectify, delete and port your personal data. You can also object to processing and request its limitation by contacting us.</p>",
+        "<h2>6. Cookies and Similar Technologies</h2><p>We use cookies to improve the functionality of our culinary AI applications and personalize your experience. You can manage your cookie preferences at any time.</p>",
+        "<h2>7. Contact</h2><p>For any inquiries related to this privacy policy, you can contact us at: <strong>info@aichef.pro</strong> or <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "terms": {
       "title": "Terms and Conditions - AI Chef Pro",
       "description": "Terms and conditions of use of AI Chef Pro and its services.",
       "heading": "Terms and Conditions",
-      "content": "These terms and conditions govern the use of AI Chef Pro and its services."
+      "content": "These terms and conditions govern the use of AI Chef Pro and its services.",
+      "content_paragraphs": [
+        "<h2>1. Acceptance of Terms</h2><p>By accessing and using AI Chef Pro, you accept these terms and conditions. If you do not agree with any part of these terms, you should not use our culinary artificial intelligence services.</p>",
+        "<h2>2. Service Description</h2><p>AI Chef Pro is an artificial intelligence platform specialized in gastronomy that offers more than 55 tools for cooking professionals, including culinary creativity, world cookbooks and business management.</p>",
+        "<h2>3. User Registration and Account</h2><p>To access certain functionalities, you must create an account providing accurate and updated information. You are responsible for maintaining the confidentiality of your account and password.</p>",
+        "<h2>4. Permitted Use</h2><p>You may use AI Chef Pro for legitimate gastronomic professional purposes. Use for illegal activities, spam, or any activity that may harm our services or other users is not permitted.</p>",
+        "<h2>5. Intellectual Property</h2><p>All content, trademarks, logos and technologies of AI Chef Pro are owned by John Guerrero or its licensors. Recipes and content generated by AI may be used by the user according to their subscription.</p>",
+        "<h2>6. Subscriptions and Payments</h2><p>We offer different subscription plans with different functionalities. Payments are processed securely and renewals are automatic according to the chosen plan.</p>",
+        "<h2>7. Limitations and Responsibilities</h2><p>AI Chef Pro is provided 'as is'. We do not guarantee that the service is free of errors or interruptions. Our responsibility is limited to the amount paid for the service.</p>",
+        "<h2>8. Termination</h2><p>We may suspend or terminate your account if you breach these terms. You can cancel your subscription at any time from your user panel.</p>",
+        "<h2>9. Modifications</h2><p>We reserve the right to modify these terms at any time. We will notify you of important changes by email or through notices on the platform.</p>",
+        "<h2>10. Contact</h2><p>For any inquiries about these terms, you can contact us at: <strong>info@aichef.pro</strong> or <strong>+34 744 717 942</strong></p>"
+      ]
     }
   },
   "cookies": {

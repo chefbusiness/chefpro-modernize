@@ -349,7 +349,13 @@
       "title": "Política de Privacidade - AI Chef Pro",
       "description": "Informações sobre como protegemos e tratamos seus dados pessoais na AI Chef Pro.",
       "heading": "Política de Privacidade",
-      "content": "Sua privacidade é importante para nós. Esta política explica como coletamos, usamos e protegemos suas informações pessoais."
+      "content": "Sua privacidade é importante para nós. Esta política explica como coletamos, usamos e protegemos suas informações pessoais.",
+      "content_paragraphs": [
+        "<h2>1. Informações que Coletamos</h2><p>Na AI Chef Pro, coletamos informações quando você interage com nossos serviços de inteligência artificial culinária. Isso inclui dados de registro, preferências gastronômicas e informações técnicas sobre o uso de nossas aplicações.</p>",
+        "<h2>2. Uso das Informações</h2><p>Usamos suas informações para personalizar sua experiência culinária, melhorar nossas ferramentas de IA, fornecer suporte técnico e desenvolver novas funcionalidades gastronômicas que se adaptem às suas necessidades profissionais.</p>",
+        "<h2>3. Proteção de Dados</h2><p>Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Seus dados são criptografados e armazenados com segurança.</p>",
+        "<h2>7. Contato</h2><p>Para dúvidas sobre esta política de privacidade, entre em contato: <strong>info@aichef.pro</strong> ou <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "terms": {
       "title": "Termos e Condições - AI Chef Pro",
