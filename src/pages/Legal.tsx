@@ -19,8 +19,16 @@ const Legal = () => {
             <h1 className="text-4xl font-bold text-foreground mb-8">
               {t('pages.legal.heading')}
             </h1>
-            <div className="prose prose-lg max-w-none text-muted-foreground">
-              <p>{t('pages.legal.content')}</p>
+            <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+              {(() => {
+                const paragraphs = t('pages.legal.content_paragraphs', { returnObjects: true });
+                if (Array.isArray(paragraphs)) {
+                  return paragraphs.map((paragraph, index) => (
+                    <div key={index} dangerouslySetInnerHTML={{ __html: paragraph.replace(/\n/g, '<br />') }} />
+                  ));
+                }
+                return <p>{t('pages.legal.content')}</p>;
+              })()}
             </div>
           </div>
         </div>
