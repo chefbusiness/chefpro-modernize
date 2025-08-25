@@ -343,19 +343,36 @@
       "title": "Cookie Beleid - AI Chef Pro",
       "description": "Informatie over het gebruik van cookies op AI Chef Pro en hoe u uw voorkeuren kunt beheren.",
       "heading": "Cookie Beleid",
-      "content": "Bij AI Chef Pro gebruiken we cookies om uw gebruikerservaring te verbeteren en u gepersonaliseerde content aan te bieden."
+      "content": "Bij AI Chef Pro gebruiken we cookies om uw gebruikerservaring te verbeteren en u gepersonaliseerde content aan te bieden.",
+      "content_paragraphs": [
+        "<h2>1. Wat zijn cookies?</h2><p>Cookies zijn kleine tekstbestanden die worden opgeslagen op je apparaat wanneer je AI Chef Pro bezoekt. Ze helpen ons je voorkeuren te onthouden en je ervaring met onze culinaire kunstmatige intelligentie tools te verbeteren.</p>",
+        "<h2>2. Soorten Cookies die we Gebruiken</h2><p><strong>Essentiële cookies:</strong> Noodzakelijk voor de basisfunctionaliteit van onze AI-applicaties.</p><p><strong>Voorkeur cookies:</strong> Onthouden je gepersonaliseerde culinaire instellingen.</p><p><strong>Analytische cookies:</strong> Helpen ons begrijpen hoe je onze tools gebruikt om ze te verbeteren.</p>",
+        "<h2>7. Contact</h2><p>Als je vragen hebt over ons gebruik van cookies, neem dan contact met ons op via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "privacy": {
       "title": "Privacybeleid - AI Chef Pro",
-      "description": "Informatie over hoe we uw persoonlijke gegevens beschermen en behandelen bij AI Chef Pro.",
+      "description": "Informatie over hoe we je persoonlijke gegevens beschermen en behandelen bij AI Chef Pro.",
       "heading": "Privacybeleid",
-      "content": "Uw privacy is belangrijk voor ons. Dit beleid legt uit hoe we uw persoonlijke informatie verzamelen, gebruiken en beschermen."
+      "content": "Je privacy is belangrijk voor ons. Dit beleid legt uit hoe we je persoonlijke informatie verzamelen, gebruiken en beschermen.",
+      "content_paragraphs": [
+        "<h2>1. Informatie die we Verzamelen</h2><p>Bij AI Chef Pro verzamelen we informatie wanneer je interacteert met onze culinaire kunstmatige intelligentie services. Dit omvat registratiegegevens, gastronomische voorkeuren en technische informatie over het gebruik van onze applicaties.</p>",
+        "<h2>2. Gebruik van Informatie</h2><p>We gebruiken je informatie om je culinaire ervaring te personaliseren, onze AI-tools te verbeteren, technische ondersteuning te bieden en nieuwe gastronomische functionaliteiten te ontwikkelen die aansluiten bij je professionele behoeften.</p>",
+        "<h2>3. Gegevensbescherming</h2><p>We implementeren technische en organisatorische beveiligingsmaatregelen om je persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Je gegevens zijn versleuteld en veilig opgeslagen.</p>",
+        "<h2>7. Contact</h2><p>Voor vragen over dit privacybeleid kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "terms": {
       "title": "Algemene Voorwaarden - AI Chef Pro",
       "description": "Algemene voorwaarden voor het gebruik van AI Chef Pro en zijn services.",
       "heading": "Algemene Voorwaarden",
-      "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services."
+      "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services.",
+      "content_paragraphs": [
+        "<h2>1. Acceptatie van de Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, accepteer je deze algemene voorwaarden. Als je niet akkoord gaat met een deel van deze voorwaarden, mag je onze culinaire kunstmatige intelligentie services niet gebruiken.</p>",
+        "<h2>2. Service Beschrijving</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor kookprofessionals, inclusief culinaire creativiteit, wereldkookboeken en bedrijfsbeheer.</p>",
+        "<h2>3. Gebruikersregistratie en Account</h2><p>Om toegang te krijgen tot bepaalde functionaliteiten, moet je een account aanmaken door nauwkeurige en bijgewerkte informatie te verstrekken. Je bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van je account en wachtwoord.</p>",
+        "<h2>10. Contact</h2><p>Voor vragen over deze voorwaarden kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     }
   },
   "cookies": {
