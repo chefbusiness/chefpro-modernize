@@ -637,7 +637,17 @@
       "title": "Aviso Legal - AI Chef Pro", 
       "description": "Información legal sobre AI Chef Pro, términos de uso y condiciones generales.",
       "heading": "Aviso Legal",
-      "content": "Esta página contiene la información legal relacionada con el uso de AI Chef Pro y sus servicios."
+      "content": "Esta página contiene la información legal relacionada con el uso de AI Chef Pro y sus servicios.",
+      "content_paragraphs": [
+        "<h2>1. Información General</h2><p><strong>Titular del Sitio Web:</strong> John Guerrero</p><p><strong>Denominación Comercial:</strong> AI Chef Pro</p><p><strong>Email de Contacto:</strong> info@aichef.pro</p><p><strong>Teléfono:</strong> +34 744 717 942</p>",
+        "<h2>2. Objeto y Actividad</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece herramientas y aplicaciones para profesionales de la cocina. Nuestros servicios incluyen más de 55 aplicaciones especializadas que cubren desde creatividad culinaria hasta gestión empresarial gastronómica.</p>",
+        "<h2>3. Propiedad Intelectual</h2><p>Todos los contenidos, marcas, logos, diseños, códigos fuente, bases de datos y cualquier otro elemento que forme parte de AI Chef Pro están protegidos por las leyes de propiedad intelectual e industrial. Queda prohibida la reproducción, distribución o comunicación pública sin autorización expresa.</p>",
+        "<h2>4. Responsabilidad de Contenidos</h2><p>AI Chef Pro se reserva el derecho de modificar, actualizar o eliminar los contenidos sin previo aviso. No garantizamos la disponibilidad, continuidad o infalibilidad del servicio, aunque ponemos todos los medios técnicos a nuestro alcance para evitar interrupciones.</p>",
+        "<h2>5. Enlaces Externos</h2><p>Nuestro sitio web puede contener enlaces a sitios web de terceros. AI Chef Pro no se hace responsable del contenido, políticas de privacidad o prácticas de estos sitios externos.</p>",
+        "<h2>6. Política de Privacidad</h2><p>El tratamiento de datos personales se rige por nuestra Política de Privacidad, disponible en este mismo sitio web, donde se informa detalladamente sobre la recopilación, uso y protección de datos personales.</p>",
+        "<h2>7. Legislación Aplicable</h2><p>Este aviso legal se rige por la legislación española. Para cualquier disputa, las partes se someterán a los juzgados y tribunales competentes según la legislación vigente.</p>",
+        "<h2>8. Contacto</h2><p>Para cualquier consulta legal o reclamación, puede contactarnos en: <strong>info@aichef.pro</strong> o <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "cookies": {
       "title": "Política de Cookies - AI Chef Pro",

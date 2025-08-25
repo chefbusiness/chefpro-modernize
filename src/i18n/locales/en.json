@@ -361,7 +361,17 @@
       "title": "Legal Notice - AI Chef Pro",
       "description": "Legal information about AI Chef Pro, terms of use and general conditions.",
       "heading": "Legal Notice",
-      "content": "This page contains legal information related to the use of AI Chef Pro and its services."
+      "content": "This page contains legal information related to the use of AI Chef Pro and its services.",
+      "content_paragraphs": [
+        "<h2>1. General Information</h2><p><strong>Website Owner:</strong> John Guerrero</p><p><strong>Trade Name:</strong> AI Chef Pro</p><p><strong>Contact Email:</strong> info@aichef.pro</p><p><strong>Phone:</strong> +34 744 717 942</p>",
+        "<h2>2. Purpose and Activity</h2><p>AI Chef Pro is an artificial intelligence platform specialized in gastronomy that offers tools and applications for cooking professionals. Our services include more than 55 specialized applications covering from culinary creativity to gastronomic business management.</p>",
+        "<h2>3. Intellectual Property</h2><p>All content, trademarks, logos, designs, source codes, databases and any other elements that are part of AI Chef Pro are protected by intellectual and industrial property laws. Reproduction, distribution or public communication without express authorization is prohibited.</p>",
+        "<h2>4. Content Responsibility</h2><p>AI Chef Pro reserves the right to modify, update or delete content without prior notice. We do not guarantee the availability, continuity or infallibility of the service, although we put all technical means at our disposal to avoid interruptions.</p>",
+        "<h2>5. External Links</h2><p>Our website may contain links to third-party websites. AI Chef Pro is not responsible for the content, privacy policies or practices of these external sites.</p>",
+        "<h2>6. Privacy Policy</h2><p>The processing of personal data is governed by our Privacy Policy, available on this same website, where detailed information is provided about the collection, use and protection of personal data.</p>",
+        "<h2>7. Applicable Legislation</h2><p>This legal notice is governed by Spanish legislation. For any dispute, the parties submit to the competent courts and tribunals according to current legislation.</p>",
+        "<h2>8. Contact</h2><p>For any legal consultation or complaint, you can contact us at: <strong>info@aichef.pro</strong> or <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "cookies": {
       "title": "Cookie Policy - AI Chef Pro",

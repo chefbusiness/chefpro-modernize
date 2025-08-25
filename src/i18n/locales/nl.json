@@ -337,7 +337,12 @@
       "title": "Juridische Kennisgeving - AI Chef Pro",
       "description": "Juridische informatie over AI Chef Pro, gebruiksvoorwaarden en algemene voorwaarden.",
       "heading": "Juridische Kennisgeving",
-      "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services."
+      "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services.",
+      "content_paragraphs": [
+        "<h2>1. Algemene Informatie</h2><p><strong>Website Eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact Email:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
+        "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat tools en applicaties biedt voor kookprofessionals. Onze services omvatten meer dan 55 gespecialiseerde applicaties van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
+        "<h2>8. Contact</h2><p>Voor juridisch advies of klachten kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "cookies": {
       "title": "Cookie Beleid - AI Chef Pro",

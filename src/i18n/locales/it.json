@@ -337,7 +337,12 @@
       "title": "Note Legali - AI Chef Pro",
       "description": "Informazioni legali su AI Chef Pro, termini di utilizzo e condizioni generali.",
       "heading": "Note Legali",
-      "content": "Questa pagina contiene le informazioni legali relative all'uso di AI Chef Pro e dei suoi servizi."
+      "content": "Questa pagina contiene le informazioni legali relative all'uso di AI Chef Pro e dei suoi servizi.",
+      "content_paragraphs": [
+        "<h2>1. Informazioni Generali</h2><p><strong>Proprietario del Sito Web:</strong> John Guerrero</p><p><strong>Denominazione Commerciale:</strong> AI Chef Pro</p><p><strong>Email di Contatto:</strong> info@aichef.pro</p><p><strong>Telefono:</strong> +34 744 717 942</p>",
+        "<h2>2. Oggetto e Attività</h2><p>AI Chef Pro è una piattaforma di intelligenza artificiale specializzata in gastronomia che offre strumenti e applicazioni per professionisti della cucina. I nostri servizi includono più di 55 applicazioni specializzate che coprono dalla creatività culinaria alla gestione aziendale gastronomica.</p>",
+        "<h2>8. Contatto</h2><p>Per qualsiasi consulenza legale o reclamo, puoi contattarci a: <strong>info@aichef.pro</strong> o <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "cookies": {
       "title": "Politica sui Cookie - AI Chef Pro",
