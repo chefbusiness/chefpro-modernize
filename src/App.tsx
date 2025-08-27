@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieBanner from "@/components/CookieBanner";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import MentoriaOnline from "./pages/MentoriaOnline";
 import Legal from "./pages/Legal";
 import Cookies from "./pages/Cookies";
 import Privacy from "./pages/Privacy";
@@ -29,6 +30,7 @@ const App = () => (
             
             {/* Spanish routes */}
             <Route path="/servicios" element={<Services />} />
+            <Route path="/mentoria-online" element={<MentoriaOnline />} />
             <Route path="/legales" element={<Legal />} />
             <Route path="/cookies" element={<Cookies />} />
             <Route path="/privacidad" element={<Privacy />} />
@@ -36,6 +38,7 @@ const App = () => (
             
             {/* Multi-language routes */}
             <Route path="/:lang/servicios" element={<Services />} />
+            <Route path="/:lang/mentoria-online" element={<MentoriaOnline />} />
             <Route path="/:lang/legales" element={<Legal />} />
             <Route path="/:lang/cookies" element={<Cookies />} />
             <Route path="/:lang/privacidad" element={<Privacy />} />

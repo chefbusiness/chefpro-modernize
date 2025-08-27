@@ -1,6 +1,8 @@
 {
   "nav": {
     "inicio": "Home",
+    "servicios": "Services",
+    "mentoria_online": "Online Mentoring",
     "aplicaciones": "Applications",
     "creatividad": "Culinary Creativity",
     "recetarios": "World Cookbooks",
@@ -349,9 +351,101 @@
         }
       }
     }
-  },
-  "pages": {
-    "services": {
+    },
+    "pages": {
+      "mentoria": {
+        "seo": {
+          "title": "Online Mentoring - AI Chef Pro | Accelerate Your Culinary Career",
+          "description": "Personalized mentoring for chefs with artificial intelligence. Accelerate your professional development with specialized gastronomy coaching.",
+          "keywords": "chef mentoring, culinary coaching, professional gastronomy development, personalized chef training"
+        },
+        "hero": {
+          "badge": "AI-Powered Personalized Mentoring",
+          "title": "Accelerate Your Culinary Career",
+          "subtitle": "Personalized mentoring that combines expert chef experience with the power of artificial intelligence to accelerate your professional development.",
+          "cta": "Request Mentoring",
+          "rating": "Rated 5/5 by over 200 chefs"
+        },
+        "benefits": {
+          "title": "Why choose our mentoring?",
+          "subtitle": "Transform your career with a personalized approach that adapts to your unique goals",
+          "items": {
+            "personalized": {
+              "title": "Personalized Mentoring",
+              "description": "Development plan adapted to your level, goals and specific culinary style"
+            },
+            "goals": {
+              "title": "Clear Objectives",
+              "description": "We define specific and measurable goals to accelerate your professional progress"
+            },
+            "accelerated": {
+              "title": "Accelerated Learning",
+              "description": "Proven methodologies that compress years of experience into months of training"
+            },
+            "network": {
+              "title": "Professional Network",
+              "description": "Access to an exclusive community of chefs and industry professionals"
+            }
+          }
+        },
+        "features": {
+          "title": "What does mentoring include?",
+          "subtitle": "Comprehensive program covering all aspects of culinary professional development",
+          "items": {
+            "ai_integration": {
+              "title": "AI Integration",
+              "description": "Learn to use all AI Chef Pro tools to maximize your efficiency and creativity"
+            },
+            "practical_sessions": {
+              "title": "Practical Sessions",
+              "description": "Virtual and in-person workshops where you'll apply advanced techniques with direct feedback"
+            },
+            "business_strategy": {
+              "title": "Business Strategy",
+              "description": "Develop business skills to open your own restaurant or advance as an executive chef"
+            },
+            "marketing_digital": {
+              "title": "Digital Marketing",
+              "description": "Build your personal brand and learn to position yourself as a reference chef on social media"
+            },
+            "menu_optimization": {
+              "title": "Menu Optimization",
+              "description": "Advanced techniques to create profitable, creative menus that delight diners"
+            },
+            "cost_management": {
+              "title": "Cost Management",
+              "description": "Master cost control, inventory management and operational process optimization"
+            }
+          }
+        },
+        "testimonials": {
+          "title": "What our mentees say",
+          "items": {
+            "testimonial_1": {
+              "quote": "The mentoring completely changed my perspective. In 6 months I achieved the promotion I had been seeking for years.",
+              "name": "Carlos Mendoza",
+              "role": "Sous Chef → Executive Chef"
+            },
+            "testimonial_2": {
+              "quote": "I not only improved my culinary techniques, I also learned to manage a team and understand the business.",
+              "name": "Ana Sofía Ruiz",
+              "role": "Line Chef → Restaurant Owner"
+            },
+            "testimonial_3": {
+              "quote": "The combination of human mentoring with AI tools is revolutionary. My productivity tripled.",
+              "name": "Diego Fernández",
+              "role": "Pastry Chef"
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready to accelerate your career?",
+          "subtitle": "Join over 200 chefs who are already transforming their professional future",
+          "button": "Request Mentoring",
+          "availability": "Limited spots - Only 10 mentees per month"
+        }
+      },
+      "services": {
       "title": "Services - AI Chef Pro",
       "description": "Discover all AI services offered by AI Chef Pro for gastronomy professionals.",
       "heading": "Our Services",

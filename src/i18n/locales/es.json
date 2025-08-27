@@ -1,6 +1,8 @@
 {
   "nav": {
     "inicio": "Inicio",
+    "servicios": "Servicios",
+    "mentoria_online": "Mentoría Online",
     "aplicaciones": "Aplicaciones",
     "creatividad": "Creatividad Culinaria",
     "recetarios": "Recetarios Mundiales",
@@ -627,6 +629,98 @@
     }
   },
   "pages": {
+    "mentoria": {
+      "seo": {
+        "title": "Mentoría Online - AI Chef Pro | Acelera tu Carrera Culinaria",
+        "description": "Mentoría personalizada para chefs con inteligencia artificial. Acelera tu desarrollo profesional con coaching especializado en gastronomía.",
+        "keywords": "mentoría chef, coaching culinario, desarrollo profesional gastronomía, entrenamiento personalizado chef"
+      },
+      "hero": {
+        "badge": "Mentoría Personalizada con IA",
+        "title": "Acelera tu Carrera Culinaria",
+        "subtitle": "Mentoría personalizada que combina la experiencia de chefs expertos con el poder de la inteligencia artificial para acelerar tu desarrollo profesional.",
+        "cta": "Solicitar Mentoría",
+        "rating": "Valorado 5/5 por más de 200 chefs"
+      },
+      "benefits": {
+        "title": "¿Por qué elegir nuestra mentoría?",
+        "subtitle": "Transforma tu carrera con un enfoque personalizado que se adapta a tus objetivos únicos",
+        "items": {
+          "personalized": {
+            "title": "Mentoría Personalizada",
+            "description": "Plan de desarrollo adaptado a tu nivel, objetivos y estilo culinario específico"
+          },
+          "goals": {
+            "title": "Objetivos Claros",
+            "description": "Definimos metas específicas y medibles para acelerar tu progreso profesional"
+          },
+          "accelerated": {
+            "title": "Aprendizaje Acelerado",
+            "description": "Metodologías probadas que comprimen años de experiencia en meses de entrenamiento"
+          },
+          "network": {
+            "title": "Red Profesional",
+            "description": "Acceso a una comunidad exclusiva de chefs y profesionales de la industria"
+          }
+        }
+      },
+      "features": {
+        "title": "¿Qué incluye la mentoría?",
+        "subtitle": "Programa integral que cubre todos los aspectos del desarrollo profesional culinario",
+        "items": {
+          "ai_integration": {
+            "title": "Integración con IA",
+            "description": "Aprende a utilizar todas las herramientas de AI Chef Pro para maximizar tu eficiencia y creatividad"
+          },
+          "practical_sessions": {
+            "title": "Sesiones Prácticas",
+            "description": "Workshops virtuales y presenciales donde aplicarás técnicas avanzadas con retroalimentación directa"
+          },
+          "business_strategy": {
+            "title": "Estrategia de Negocio",
+            "description": "Desarrolla habilidades empresariales para abrir tu propio restaurante o avanzar como chef ejecutivo"
+          },
+          "marketing_digital": {
+            "title": "Marketing Digital",
+            "description": "Construye tu marca personal y aprende a posicionarte como chef de referencia en redes sociales"
+          },
+          "menu_optimization": {
+            "title": "Optimización de Menús",
+            "description": "Técnicas avanzadas para crear menús rentables, creativos y que encanten a los comensales"
+          },
+          "cost_management": {
+            "title": "Gestión de Costos",
+            "description": "Domina el control de costos, gestión de inventarios y optimización de procesos operativos"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Lo que dicen nuestros mentees",
+        "items": {
+          "testimonial_1": {
+            "quote": "La mentoría cambió completamente mi perspectiva. En 6 meses logré la promoción que buscaba desde hace años.",
+            "name": "Carlos Mendoza",
+            "role": "Sous Chef → Chef Ejecutivo"
+          },
+          "testimonial_2": {
+            "quote": "No solo mejoré mis técnicas culinarias, también aprendí a gestionar un equipo y entender el negocio.",
+            "name": "Ana Sofía Ruiz",
+            "role": "Chef de Línea → Propietaria de Restaurante"
+          },
+          "testimonial_3": {
+            "quote": "La combinación de mentoría humana con herramientas de IA es revolucionaria. Mi productividad se triplicó.",
+            "name": "Diego Fernández",
+            "role": "Chef de Pastelería"
+          }
+        }
+      },
+      "cta": {
+        "title": "¿Listo para acelerar tu carrera?",
+        "subtitle": "Únete a más de 200 chefs que ya están transformando su futuro profesional",
+        "button": "Solicitar Mentoría",
+        "availability": "Plazas limitadas - Solo 10 mentees por mes"
+      }
+    },
     "services": {
       "title": "Servicios - AI Chef Pro",
       "description": "Descubre todos los servicios de inteligencia artificial que ofrece AI Chef Pro para profesionales de la gastronomía.",

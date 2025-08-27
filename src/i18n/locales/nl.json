@@ -1,6 +1,8 @@
 {
   "nav": {
     "inicio": "Home",
+    "servicios": "Diensten",
+    "mentoria_online": "Online Mentoring",
     "aplicaciones": "Applicaties",
     "creatividad": "Culinaire Creativiteit",
     "recetarios": "Wereldwijde Kookboeken",
@@ -325,9 +327,101 @@
       "learn_more": "Meer informatie",
       "close": "Sluiten"
     }
-  },
-  "pages": {
-    "services": {
+    },
+    "pages": {
+      "mentoria": {
+        "seo": {
+          "title": "Online Mentoring - AI Chef Pro | Versnel Uw Culinaire Carrière",
+          "description": "Gepersonaliseerde mentoring voor koks met kunstmatige intelligentie. Versnel uw professionele ontwikkeling met gespecialiseerde gastronomie coaching.",
+          "keywords": "kok mentoring, culinaire coaching, professionele gastronomie ontwikkeling, gepersonaliseerde kok training"
+        },
+        "hero": {
+          "badge": "AI-Gedreven Gepersonaliseerde Mentoring",
+          "title": "Versnel Uw Culinaire Carrière",
+          "subtitle": "Gepersonaliseerde mentoring die de ervaring van expert koks combineert met de kracht van kunstmatige intelligentie om uw professionele ontwikkeling te versnellen.",
+          "cta": "Mentoring Aanvragen",
+          "rating": "Beoordeeld 5/5 door meer dan 200 koks"
+        },
+        "benefits": {
+          "title": "Waarom onze mentoring kiezen?",
+          "subtitle": "Transformeer uw carrière met een gepersonaliseerde aanpak die zich aanpast aan uw unieke doelen",
+          "items": {
+            "personalized": {
+              "title": "Gepersonaliseerde Mentoring",
+              "description": "Ontwikkelingsplan aangepast aan uw niveau, doelen en specifieke kookstijl"
+            },
+            "goals": {
+              "title": "Duidelijke Doelstellingen",
+              "description": "We definiëren specifieke en meetbare doelen om uw professionele vooruitgang te versnellen"
+            },
+            "accelerated": {
+              "title": "Versneld Leren",
+              "description": "Bewezen methodologieën die jaren ervaring comprimeren in maanden training"
+            },
+            "network": {
+              "title": "Professioneel Netwerk",
+              "description": "Toegang tot een exclusieve gemeenschap van koks en industrie professionals"
+            }
+          }
+        },
+        "features": {
+          "title": "Wat omvat de mentoring?",
+          "subtitle": "Uitgebreid programma dat alle aspecten van culinaire professionele ontwikkeling dekt",
+          "items": {
+            "ai_integration": {
+              "title": "AI Integratie",
+              "description": "Leer alle AI Chef Pro tools te gebruiken om uw efficiëntie en creativiteit te maximaliseren"
+            },
+            "practical_sessions": {
+              "title": "Praktische Sessies",
+              "description": "Virtuele en persoonlijke workshops waar u geavanceerde technieken toepast met directe feedback"
+            },
+            "business_strategy": {
+              "title": "Bedrijfsstrategie",
+              "description": "Ontwikkel zakelijke vaardigheden om uw eigen restaurant te openen of door te groeien als executive chef"
+            },
+            "marketing_digital": {
+              "title": "Digitale Marketing",
+              "description": "Bouw uw persoonlijke merk en leer uzelf te positioneren als referentie kok op sociale media"
+            },
+            "menu_optimization": {
+              "title": "Menu Optimalisatie",
+              "description": "Geavanceerde technieken om winstgevende, creatieve menu's te creëren die gasten bekoren"
+            },
+            "cost_management": {
+              "title": "Kostenbeheer",
+              "description": "Beheers kostencontrole, voorraadmanagement en optimalisatie van operationele processen"
+            }
+          }
+        },
+        "testimonials": {
+          "title": "Wat onze mentees zeggen",
+          "items": {
+            "testimonial_1": {
+              "quote": "De mentoring veranderde mijn perspectief compleet. In 6 maanden behaalde ik de promotie waar ik jaren naar zocht.",
+              "name": "Carlos Mendoza",
+              "role": "Sous Chef → Executive Chef"
+            },
+            "testimonial_2": {
+              "quote": "Ik verbeterde niet alleen mijn culinaire technieken, ik leerde ook een team te leiden en de business te begrijpen.",
+              "name": "Ana Sofía Ruiz",
+              "role": "Lijn Chef → Restaurant Eigenaar"
+            },
+            "testimonial_3": {
+              "quote": "De combinatie van menselijke mentoring met AI tools is revolutionair. Mijn productiviteit verdrievoudigde.",
+              "name": "Diego Fernández",
+              "role": "Banketbakker Chef"
+            }
+          }
+        },
+        "cta": {
+          "title": "Klaar om uw carrière te versnellen?",
+          "subtitle": "Sluit u aan bij meer dan 200 koks die al hun professionele toekomst transformeren",
+          "button": "Mentoring Aanvragen",
+          "availability": "Beperkte plekken - Slechts 10 mentees per maand"
+        }
+      },
+      "services": {
       "title": "Services - AI Chef Pro",
       "description": "Ontdek alle AI-services die AI Chef Pro aanbiedt voor gastronomie professionals.",
       "heading": "Onze Services",

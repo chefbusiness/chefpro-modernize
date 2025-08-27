@@ -61,6 +61,11 @@ export default function ModernFooter() {
                 </a>
               </li>
               <li>
+                <a href="/mentoria-online" className="text-muted-foreground hover:text-foreground transition-colors">
+                  {t('nav.mentoria_online')}
+                </a>
+              </li>
+              <li>
                 <a href="#herramientas" className="text-muted-foreground hover:text-foreground transition-colors">
                   {t('footer.nav_tools')}
                 </a>

@@ -72,6 +72,27 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                  {t('nav.servicios')}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[400px] gap-3 p-4 md:grid-cols-1">
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">{t('nav.servicios')}</h4>
+                      <div className="grid gap-1">
+                        <NavigationMenuLink 
+                          className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                          href="/mentoria-online"
+                        >
+                          {t('nav.mentoria_online')}
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
                   {t('nav.aplicaciones')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>

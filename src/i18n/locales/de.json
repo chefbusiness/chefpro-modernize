@@ -1,6 +1,8 @@
 {
   "nav": {
     "inicio": "Startseite",
+    "servicios": "Dienstleistungen",
+    "mentoria_online": "Online-Mentoring",
     "aplicaciones": "Anwendungen", 
     "creatividad": "Kulinarische Kreativität",
     "recetarios": "Weltweite Kochbücher",
@@ -325,9 +327,101 @@
       "learn_more": "Mehr erfahren",
       "close": "Schließen"
     }
-  },
-  "pages": {
-    "services": {
+    },
+    "pages": {
+      "mentoria": {
+        "seo": {
+          "title": "Online-Mentoring - AI Chef Pro | Beschleunigen Sie Ihre Kochkarriere",
+          "description": "Personalisiertes Mentoring für Köche mit künstlicher Intelligenz. Beschleunigen Sie Ihre berufliche Entwicklung mit spezialisiertem Gastronomie-Coaching.",
+          "keywords": "koch mentoring, kulinarisches coaching, professionelle gastronomie entwicklung, personalisierte koch ausbildung"
+        },
+        "hero": {
+          "badge": "KI-gestütztes Personalisiertes Mentoring",
+          "title": "Beschleunigen Sie Ihre Kochkarriere",
+          "subtitle": "Personalisiertes Mentoring, das die Erfahrung von Experten-Köchen mit der Kraft der künstlichen Intelligenz kombiniert, um Ihre berufliche Entwicklung zu beschleunigen.",
+          "cta": "Mentoring Anfragen",
+          "rating": "Bewertet mit 5/5 von über 200 Köchen"
+        },
+        "benefits": {
+          "title": "Warum unser Mentoring wählen?",
+          "subtitle": "Transformieren Sie Ihre Karriere mit einem personalisierten Ansatz, der sich an Ihre einzigartigen Ziele anpasst",
+          "items": {
+            "personalized": {
+              "title": "Personalisiertes Mentoring",
+              "description": "Entwicklungsplan angepasst an Ihr Niveau, Ihre Ziele und Ihren spezifischen Kochstil"
+            },
+            "goals": {
+              "title": "Klare Ziele",
+              "description": "Wir definieren spezifische und messbare Ziele, um Ihren beruflichen Fortschritt zu beschleunigen"
+            },
+            "accelerated": {
+              "title": "Beschleunigtes Lernen",
+              "description": "Bewährte Methodologien, die jahrelange Erfahrung in Monate des Trainings komprimieren"
+            },
+            "network": {
+              "title": "Professionelles Netzwerk",
+              "description": "Zugang zu einer exklusiven Gemeinschaft von Köchen und Branchenprofis"
+            }
+          }
+        },
+        "features": {
+          "title": "Was beinhaltet das Mentoring?",
+          "subtitle": "Umfassendes Programm, das alle Aspekte der kulinarischen Berufsentwicklung abdeckt",
+          "items": {
+            "ai_integration": {
+              "title": "KI-Integration",
+              "description": "Lernen Sie, alle AI Chef Pro Tools zu nutzen, um Ihre Effizienz und Kreativität zu maximieren"
+            },
+            "practical_sessions": {
+              "title": "Praktische Sitzungen",
+              "description": "Virtuelle und persönliche Workshops, wo Sie fortgeschrittene Techniken mit direktem Feedback anwenden"
+            },
+            "business_strategy": {
+              "title": "Geschäftsstrategie",
+              "description": "Entwickeln Sie Geschäftsfähigkeiten, um Ihr eigenes Restaurant zu eröffnen oder als Küchenchef aufzusteigen"
+            },
+            "marketing_digital": {
+              "title": "Digitales Marketing",
+              "description": "Bauen Sie Ihre persönliche Marke auf und lernen Sie, sich als Referenz-Koch in sozialen Medien zu positionieren"
+            },
+            "menu_optimization": {
+              "title": "Menü-Optimierung",
+              "description": "Fortgeschrittene Techniken zur Erstellung profitabler, kreativer Menüs, die Gäste begeistern"
+            },
+            "cost_management": {
+              "title": "Kostenmanagement",
+              "description": "Meistern Sie Kostenkontrolle, Bestandsmanagement und Optimierung operationeller Prozesse"
+            }
+          }
+        },
+        "testimonials": {
+          "title": "Was unsere Mentees sagen",
+          "items": {
+            "testimonial_1": {
+              "quote": "Das Mentoring hat meine Perspektive komplett verändert. In 6 Monaten erreichte ich die Beförderung, die ich seit Jahren suchte.",
+              "name": "Carlos Mendoza",
+              "role": "Sous Chef → Küchenchef"
+            },
+            "testimonial_2": {
+              "quote": "Ich verbesserte nicht nur meine kulinarischen Techniken, sondern lernte auch, ein Team zu führen und das Geschäft zu verstehen.",
+              "name": "Ana Sofía Ruiz",
+              "role": "Linienkoch → Restaurantbesitzerin"
+            },
+            "testimonial_3": {
+              "quote": "Die Kombination aus menschlichem Mentoring mit KI-Tools ist revolutionär. Meine Produktivität verdreifachte sich.",
+              "name": "Diego Fernández",
+              "role": "Konditor"
+            }
+          }
+        },
+        "cta": {
+          "title": "Bereit, Ihre Karriere zu beschleunigen?",
+          "subtitle": "Schließen Sie sich über 200 Köchen an, die bereits ihre berufliche Zukunft transformieren",
+          "button": "Mentoring Anfragen",
+          "availability": "Begrenzte Plätze - Nur 10 Mentees pro Monat"
+        }
+      },
+      "services": {
       "title": "Services - AI Chef Pro",
       "description": "Entdecken Sie alle KI-Services von AI Chef Pro für Gastronomie-Profis.",
       "heading": "Unsere Services",

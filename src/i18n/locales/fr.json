@@ -1,6 +1,8 @@
 {
   "nav": {
     "inicio": "Accueil",
+    "servicios": "Services",
+    "mentoria_online": "Mentorat en Ligne",
     "aplicaciones": "Applications",
     "creatividad": "Créativité Culinaire",
     "recetarios": "Livres de Recettes Mondiales",
@@ -336,6 +338,98 @@
     }
   },
   "pages": {
+    "mentoria": {
+      "seo": {
+        "title": "Mentorat en Ligne - AI Chef Pro | Accélérez Votre Carrière Culinaire",
+        "description": "Mentorat personnalisé pour chefs avec intelligence artificielle. Accélérez votre développement professionnel avec un coaching gastronomique spécialisé.",
+        "keywords": "mentorat chef, coaching culinaire, développement professionnel gastronomie, formation personnalisée chef"
+      },
+      "hero": {
+        "badge": "Mentorat Personnalisé avec IA",
+        "title": "Accélérez Votre Carrière Culinaire",
+        "subtitle": "Mentorat personnalisé qui combine l'expérience de chefs experts avec la puissance de l'intelligence artificielle pour accélérer votre développement professionnel.",
+        "cta": "Demander un Mentorat",
+        "rating": "Noté 5/5 par plus de 200 chefs"
+      },
+      "benefits": {
+        "title": "Pourquoi choisir notre mentorat?",
+        "subtitle": "Transformez votre carrière avec une approche personnalisée qui s'adapte à vos objectifs uniques",
+        "items": {
+          "personalized": {
+            "title": "Mentorat Personnalisé",
+            "description": "Plan de développement adapté à votre niveau, objectifs et style culinaire spécifique"
+          },
+          "goals": {
+            "title": "Objectifs Clairs",
+            "description": "Nous définissons des objectifs spécifiques et mesurables pour accélérer votre progrès professionnel"
+          },
+          "accelerated": {
+            "title": "Apprentissage Accéléré",
+            "description": "Méthodologies éprouvées qui compriment des années d'expérience en mois de formation"
+          },
+          "network": {
+            "title": "Réseau Professionnel",
+            "description": "Accès à une communauté exclusive de chefs et professionnels de l'industrie"
+          }
+        }
+      },
+      "features": {
+        "title": "Qu'inclut le mentorat?",
+        "subtitle": "Programme complet couvrant tous les aspects du développement professionnel culinaire",
+        "items": {
+          "ai_integration": {
+            "title": "Intégration IA",
+            "description": "Apprenez à utiliser tous les outils d'AI Chef Pro pour maximiser votre efficacité et créativité"
+          },
+          "practical_sessions": {
+            "title": "Sessions Pratiques",
+            "description": "Ateliers virtuels et en présentiel où vous appliquerez des techniques avancées avec des retours directs"
+          },
+          "business_strategy": {
+            "title": "Stratégie d'Entreprise",
+            "description": "Développez des compétences commerciales pour ouvrir votre propre restaurant ou progresser comme chef exécutif"
+          },
+          "marketing_digital": {
+            "title": "Marketing Digital",
+            "description": "Construisez votre marque personnelle et apprenez à vous positionner comme chef de référence sur les réseaux sociaux"
+          },
+          "menu_optimization": {
+            "title": "Optimisation des Menus",
+            "description": "Techniques avancées pour créer des menus rentables, créatifs et qui enchantent les convives"
+          },
+          "cost_management": {
+            "title": "Gestion des Coûts",
+            "description": "Maîtrisez le contrôle des coûts, la gestion des stocks et l'optimisation des processus opérationnels"
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Ce que disent nos mentorés",
+        "items": {
+          "testimonial_1": {
+            "quote": "Le mentorat a complètement changé ma perspective. En 6 mois j'ai obtenu la promotion que je cherchais depuis des années.",
+            "name": "Carlos Mendoza",
+            "role": "Sous Chef → Chef Exécutif"
+          },
+          "testimonial_2": {
+            "quote": "Je n'ai pas seulement amélioré mes techniques culinaires, j'ai aussi appris à gérer une équipe et comprendre le business.",
+            "name": "Ana Sofía Ruiz",
+            "role": "Chef de Ligne → Propriétaire de Restaurant"
+          },
+          "testimonial_3": {
+            "quote": "La combinaison de mentorat humain avec des outils d'IA est révolutionnaire. Ma productivité a triplé.",
+            "name": "Diego Fernández",
+            "role": "Chef Pâtissier"
+          }
+        }
+      },
+      "cta": {
+        "title": "Prêt à accélérer votre carrière?",
+        "subtitle": "Rejoignez plus de 200 chefs qui transforment déjà leur avenir professionnel",
+        "button": "Demander un Mentorat",
+        "availability": "Places limitées - Seulement 10 mentorés par mois"
+      }
+    },
     "services": {
       "title": "Services - AI Chef Pro",
       "description": "Découvrez tous les services d'IA proposés par AI Chef Pro pour les professionnels de la gastronomie.",
