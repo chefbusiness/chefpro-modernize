@@ -154,7 +154,7 @@ const MentoriaOnline = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Plan Express */}
-              <Card className="relative border-2 border-border hover:border-primary/50 transition-colors">
+              <Card className="hover-card relative transition-all duration-300 hover:scale-[1.02]">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl font-bold">Sesión Express</CardTitle>
                   <div className="text-4xl font-bold text-primary">€150</div>
@@ -184,7 +184,7 @@ const MentoriaOnline = () => {
                       <strong>Ideal para:</strong> Usuarios nuevos o con necesidades específicas puntuales
                     </p>
                     <Button 
-                      className="w-full" 
+                      className="w-full bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-express-ai-chef-pro', '_blank')}
                     >
                       Reservar ahora
@@ -194,36 +194,36 @@ const MentoriaOnline = () => {
               </Card>
 
               {/* Plan Estándar - Most Popular */}
-              <Card className="relative border-2 border-primary shadow-lg scale-105">
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-primary text-primary-foreground px-4 py-2">Más popular</Badge>
-                </div>
+              <Card className="hover-card relative popular-plan scale-105 ring-2 ring-accent/20 transition-all duration-300">
+                <Badge className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1">
+                  🔥 Más popular
+                </Badge>
                 <CardHeader className="text-center pt-8">
                   <CardTitle className="text-2xl font-bold">Sesión Estándar</CardTitle>
                   <div className="text-4xl font-bold text-primary">€275</div>
                   <div className="text-lg text-muted-foreground">3 horas</div>
-                  <Badge variant="secondary" className="mx-auto">Ahorra un 8%</Badge>
+                  <Badge variant="default" className="mx-auto bg-green-600 text-white border-green-600 shadow-lg font-bold">Ahorra un 8%</Badge>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span>Análisis completo de necesidades</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span>Configuración avanzada del perfil</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span>Estrategia para 3-4 herramientas clave</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span>Plan de implementación a 30 días</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span>Material complementario exclusivo</span>
                     </li>
                   </ul>
@@ -232,7 +232,7 @@ const MentoriaOnline = () => {
                       <strong>Ideal para:</strong> Restaurantes, pastelerías y negocios establecidos
                     </p>
                     <Button 
-                      className="w-full" 
+                      className="w-full btn-gold hover:shadow-gold-glow scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-estandar-ai-chef-pro', '_blank')}
                     >
                       Reservar ahora
@@ -242,12 +242,12 @@ const MentoriaOnline = () => {
               </Card>
 
               {/* Plan Intensiva */}
-              <Card className="relative border-2 border-border hover:border-primary/50 transition-colors">
+              <Card className="hover-card relative transition-all duration-300 hover:scale-[1.02]">
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl font-bold">Sesión Intensiva</CardTitle>
                   <div className="text-4xl font-bold text-primary">€360</div>
                   <div className="text-lg text-muted-foreground">4 horas</div>
-                  <Badge variant="secondary" className="mx-auto">Ahorra un 20%</Badge>
+                  <Badge variant="default" className="mx-auto bg-blue-600 text-white border-blue-600 shadow-lg font-bold">Ahorra un 20%</Badge>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
@@ -277,7 +277,7 @@ const MentoriaOnline = () => {
                       <strong>Ideal para:</strong> Grupos de restauración, empresas de catering y negocios medianos
                     </p>
                     <Button 
-                      className="w-full" 
+                      className="w-full bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-intensiva-ai-chef-pro', '_blank')}
                     >
                       Reservar ahora
