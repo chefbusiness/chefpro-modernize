@@ -30,7 +30,7 @@ export default function WorldCookbooks() {
       <div className="space-y-8">
         {/* Europa */}
         <div>
-          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center justify-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row items-center justify-center text-center gap-2">
             <span className="flex items-center gap-2">
               🌍 <span className="gradient-text">{t('categories.world_cookbooks.europa.name')}</span>
             </span>
@@ -55,7 +55,7 @@ export default function WorldCookbooks() {
 
         {/* Latinoamérica */}
         <div>
-          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center justify-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row items-center justify-center text-center gap-2">
             <span className="flex items-center gap-2">
               🌎 <span className="gradient-text">{t('categories.world_cookbooks.latinoamerica.name')}</span>
             </span>
@@ -80,7 +80,7 @@ export default function WorldCookbooks() {
 
         {/* Asia */}
         <div>
-          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row sm:items-center justify-center gap-2">
+          <h3 className="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row items-center justify-center text-center gap-2">
             <span className="flex items-center gap-2">
               🌏 <span className="gradient-text">{t('categories.world_cookbooks.asia.name')}</span>
             </span>

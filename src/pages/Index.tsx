@@ -20,7 +20,7 @@ import SEOHead from '@/components/SEOHead';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <SEOHead />
       <ModernHeader />
       <main>
