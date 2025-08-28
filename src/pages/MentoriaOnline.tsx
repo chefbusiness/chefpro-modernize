@@ -707,10 +707,13 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-primary-foreground">
               <h2 className="text-3xl font-bold mb-4">
-                Reserva tu Mentoría Online Ahora
+                {currentLanguage === 'es' ? 'Reserva tu Mentoría Online Ahora' : t('mentoriaOnline.sections.final_cta.title')}
               </h2>
               <p className="text-lg mb-8 opacity-90">
-                Selecciona el tipo de sesión que prefieres y encuentra el momento perfecto para potenciar tu negocio con AI Chef Pro. Aprovecha la inteligencia artificial en tu día a día al máximo.
+                {currentLanguage === 'es' 
+                  ? 'Selecciona el tipo de sesión que prefieres y encuentra el momento perfecto para potenciar tu negocio con AI Chef Pro. Aprovecha la inteligencia artificial en tu día a día al máximo.' 
+                  : t('mentoriaOnline.sections.final_cta.description')
+                }
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
@@ -719,7 +722,7 @@ const MentoriaOnline = () => {
                   variant="secondary"
                   className="bg-white text-primary hover:bg-white/90"
                 >
-                  Ver Planes de Mentoría
+                  {currentLanguage === 'es' ? 'Ver Planes de Mentoría' : t('mentoriaOnline.sections.final_cta.button')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -732,23 +735,26 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-2xl mx-auto">
               <h2 className="text-2xl font-bold text-foreground mb-4">
-                ¿No estás seguro de qué paquete elegir?
+                {currentLanguage === 'es' ? '¿No estás seguro de qué paquete elegir?' : t('mentoriaOnline.sections.free_consultation.title')}
               </h2>
               <p className="text-muted-foreground mb-6">
-                Agenda una micro-sesión gratuita de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.
+                {currentLanguage === 'es' 
+                  ? 'Agenda una micro-sesión gratuita de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.' 
+                  : t('mentoriaOnline.sections.free_consultation.description')
+                }
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   variant="outline" 
                   onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/micro-sesion-gratuita-15-min', '_blank')}
                 >
-                  Agendar micro-sesión gratuita
+                  {currentLanguage === 'es' ? 'Agendar micro-sesión gratuita' : t('mentoriaOnline.sections.free_consultation.button1')}
                 </Button>
                 <Button 
                   variant="outline" 
                   onClick={() => window.open('/contacto', '_blank')}
                 >
-                  Contactar ahora
+                  {currentLanguage === 'es' ? 'Contactar ahora' : t('mentoriaOnline.sections.free_consultation.button2')}
                 </Button>
               </div>
             </div>

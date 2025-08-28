@@ -222,6 +222,17 @@
             "answer": "Absolutely. In the preliminary form you can detail exactly what specific aspects you want to work on, whether it's a specific AI Chef Pro tool or a particular challenge in your business."
           }
         }
+      },
+      "final_cta": {
+        "title": "Book Your Online Mentoring Now",
+        "description": "Select the type of session you prefer and find the perfect time to boost your business with AI Chef Pro. Make the most of artificial intelligence in your daily routine.",
+        "button": "View Mentoring Plans"
+      },
+      "free_consultation": {
+        "title": "Not sure which package to choose?",
+        "description": "Schedule a free 15-minute micro-session to discuss your needs and determine the best option for your business.",
+        "button1": "Schedule free micro-session",
+        "button2": "Contact now"
       }
     }
   },

@@ -958,6 +958,17 @@
             "answer": "Absolutamente. En el formulario previo podrás detallar exactamente qué aspectos específicos quieres trabajar, ya sea una herramienta concreta de AI Chef Pro o un desafío particular de tu negocio."
           }
         }
+      },
+      "final_cta": {
+        "title": "Reserva tu Mentoría Online Ahora",
+        "description": "Selecciona el tipo de sesión que prefieres y encuentra el momento perfecto para potenciar tu negocio con AI Chef Pro. Aprovecha la inteligencia artificial en tu día a día al máximo.",
+        "button": "Ver Planes de Mentoría"
+      },
+      "free_consultation": {
+        "title": "¿No estás seguro de qué paquete elegir?",
+        "description": "Agenda una micro-sesión gratuita de 15 minutos para discutir tus necesidades y determinar cuál es la mejor opción para tu negocio.",
+        "button1": "Agendar micro-sesión gratuita",
+        "button2": "Contactar ahora"
       }
     }
   },
