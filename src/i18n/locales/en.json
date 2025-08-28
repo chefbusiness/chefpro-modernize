@@ -1009,6 +1009,21 @@
     "marketing": "Marketing & Content",
     "recetarios": "World Cookbooks"
   },
+  "mentoriaOnline": {
+    "seo": {
+      "title": "AI Chef Pro Online Mentoring | Personalized Consulting",
+      "description": "Strategic 1:1 sessions with gastronomy and AI experts. Accelerate results in your gastronomic business.",
+      "keywords": "chef mentoring, gastronomic consulting, AI Chef Pro, culinary advisory"
+    },
+    "hero": {
+      "title": "AI Chef Pro Personalized Online Mentoring",
+      "subtitle": "Maximize AI Chef Pro's potential with specialized advisory"
+    },
+    "sections": {
+      "description": "Strategic 1:1 sessions with gastronomy and AI experts to accelerate results in your business",
+      "cta_button": "Book Your Mentoring Now"
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
     "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",

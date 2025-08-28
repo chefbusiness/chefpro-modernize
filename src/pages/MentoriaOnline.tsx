@@ -56,10 +56,10 @@ const MentoriaOnline = () => {
                   {currentLanguage === 'es' ? 'Maximiza el potencial de AI Chef Pro con asesoría especializada' : t('mentoriaOnline.hero.subtitle')}
                 </h3>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Sesiones estratégicas 1:1 con expertos en gastronomía e IA para acelerar resultados en tu negocio
+                  {currentLanguage === 'es' ? 'Sesiones estratégicas 1:1 con expertos en gastronomía e IA para acelerar resultados en tu negocio' : t('mentoriaOnline.sections.description')}
                 </p>
                 <Button size="lg" onClick={scrollToCalendly} className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Reserva tu Mentoría Ahora
+                  {currentLanguage === 'es' ? 'Reserva tu Mentoría Ahora' : t('mentoriaOnline.sections.cta_button')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
