@@ -56,7 +56,7 @@ export const useLanguage = () => {
 
   const getAppUrl = (language?: Language) => {
     const targetLang = language || i18n.language as Language;
-    return targetLang === 'en' ? 'https://appen.aichef.pro' : 'https://app.aichef.pro';
+    return targetLang === 'en' ? 'https://enapp.aichef.pro' : 'https://app.aichef.pro';
   };
 
   const getCurrentLanguage = (): Language => {
