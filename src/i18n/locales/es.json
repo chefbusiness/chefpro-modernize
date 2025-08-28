@@ -801,6 +801,29 @@
     "hero": {
       "title": "Mentoría Online Personalizada AI Chef Pro",
       "subtitle": "Maximiza el potencial de AI Chef Pro con asesoría especializada"
+    },
+    "sections": {
+      "description": "Sesiones estratégicas 1:1 con expertos en gastronomía e IA para acelerar resultados en tu negocio",
+      "cta_button": "Reserva tu Mentoría Ahora",
+      "benefits": {
+        "title": "¿Por qué necesitas una consultoría personalizada?",
+        "accelerated_results": {
+          "title": "Resultados acelerados",
+          "description": "Reduce meses de prueba y error a una sola sesión estratégica. ROI inmediato en tu inversión en AI Chef Pro."
+        },
+        "custom_strategy": {
+          "title": "Estrategia a medida",
+          "description": "Recibe un plan personalizado para tu tipo específico de negocio gastronómico, adaptado a tus objetivos particulares."
+        },
+        "advanced_techniques": {
+          "title": "Técnicas avanzadas",
+          "description": "Accede a metodologías y prompts exclusivos no documentados que solo los usuarios expertos conocen."
+        },
+        "time_saving": {
+          "title": "Ahorro de tiempo",
+          "description": "Elimina la curva de aprendizaje y comienza a implementar soluciones efectivas desde el primer día."
+        }
+      }
     }
   },
   "seo": {

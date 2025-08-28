@@ -1021,7 +1021,26 @@
     },
     "sections": {
       "description": "Strategic 1:1 sessions with gastronomy and AI experts to accelerate results in your business",
-      "cta_button": "Book Your Mentoring Now"
+      "cta_button": "Book Your Mentoring Now",
+      "benefits": {
+        "title": "Why do you need personalized consulting?",
+        "accelerated_results": {
+          "title": "Accelerated results",
+          "description": "Reduce months of trial and error to a single strategic session. Immediate ROI on your AI Chef Pro investment."
+        },
+        "custom_strategy": {
+          "title": "Custom strategy",
+          "description": "Receive a personalized plan for your specific type of gastronomic business, adapted to your particular objectives."
+        },
+        "advanced_techniques": {
+          "title": "Advanced techniques",
+          "description": "Access exclusive methodologies and undocumented prompts that only expert users know."
+        },
+        "time_saving": {
+          "title": "Time saving",
+          "description": "Eliminate the learning curve and start implementing effective solutions from day one."
+        }
+      }
     }
   },
   "seo": {
