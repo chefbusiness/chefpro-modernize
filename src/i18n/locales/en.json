@@ -35,6 +35,11 @@
     "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger Bar", "Bakery", "Pastry Shop", "Chocolate Shop", "Ice Cream Shop", "Dark Kitchen", "Coffee Shop", "Brunch"],
     "see_resources": "See Resources"
   },
+  "notifications": {
+    "someone_from": "Someone from",
+    "registered": "registered 💜 to the {{plan}} Plan",
+    "minutes_ago": "{{minutes}} minutes ago"
+  },
   "stats": {
     "apps": "55+",
     "apps_label": "Specialized Apps",

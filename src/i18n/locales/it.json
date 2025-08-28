@@ -32,6 +32,11 @@
     "business_types": ["Gestione", "Ristorante", "Catering", "Pizzeria", "Hamburgheria", "Panetteria", "Pasticceria", "Cioccolateria", "Gelateria", "Dark Kitchen", "Caffetteria", "Brunch"],
     "see_resources": "Vedi Risorse"
   },
+  "notifications": {
+    "someone_from": "Qualcuno da",
+    "registered": "si è registrato 💜 al Piano",
+    "minutes_ago": "{{minutes}} minuti fa"
+  },
   "stats": {
     "apps": "55+",
     "apps_label": "App Specializzate",

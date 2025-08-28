@@ -32,6 +32,11 @@
     "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger-Bar", "Bäckerei", "Konditorei", "Chocolaterie", "Eisdiele", "Dark Kitchen", "Café", "Brunch"],
     "see_resources": "Ressourcen Ansehen"
   },
+  "notifications": {
+    "someone_from": "Jemand aus",
+    "registered": "hat sich 💜 für den {{plan}} Plan angemeldet",
+    "minutes_ago": "vor {{minutes}} Minuten"
+  },
   "stats": {
     "apps": "55+",
     "apps_label": "Spezialisierte Apps",

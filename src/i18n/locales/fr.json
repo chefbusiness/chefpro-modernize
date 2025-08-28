@@ -32,6 +32,11 @@
     "business_types": ["Gestion", "Restaurant", "Traiteur", "Pizzeria", "Burger", "Boulangerie", "Pâtisserie", "Chocolaterie", "Glacerie", "Dark Kitchen", "Café", "Brunch"],
     "see_resources": "Voir Ressources"
   },
+  "notifications": {
+    "someone_from": "Quelqu'un de",
+    "registered": "s'est inscrit 💜 au Plan",
+    "minutes_ago": "Il y a {{minutes}} minutes"
+  },
   "stats": {
     "apps": "55+",
     "apps_label": "Apps Spécialisées",

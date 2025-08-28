@@ -32,6 +32,11 @@
     "business_types": ["Gestão", "Restaurante", "Catering", "Pizzaria", "Hamburgueria", "Padaria", "Confeitaria", "Chocolataria", "Sorveteria", "Dark Kitchen", "Cafeteria", "Brunch"],
     "see_resources": "Ver Recursos"
   },
+  "notifications": {
+    "someone_from": "Alguém de",
+    "registered": "registrou-se 💜 no Plano",
+    "minutes_ago": "há {{minutes}} minutos"
+  },
   "stats": {
     "apps": "55+", 
     "apps_label": "Apps Especializadas",
