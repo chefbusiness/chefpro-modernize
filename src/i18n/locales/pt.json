@@ -417,13 +417,8 @@
         "cta": {
           "title": "Pronto para acelerar sua carreira?",
           "subtitle": "Junte-se a mais de 200 chefs que já estão transformando seu futuro profissional",
-          "button": "Solicitar Mentoria", 
+          "button": "Solicitar Mentoria",
           "availability": "Vagas limitadas - Apenas 10 mentees por mês"
-        },
-        "plans": {
-          "express": { "title": "Express", "subtitle": "Consultoria específica e eficiente", "features": { "0": "Sessão de 90 minutos", "1": "Análise inicial situação", "2": "Recomendações específicas", "3": "Guia implementação" }, "cta": "Reservar Express" },
-          "standard": { "title": "Padrão", "subtitle": "Mentoria completa e estratégica", "features": { "0": "Sessão de 120 minutos", "1": "Análise aprofundada personalizada", "2": "Estratégia implementação", "3": "Recursos e materiais", "4": "Follow-up por email" }, "cta": "Reservar Padrão" },
-          "intensive": { "title": "Intensiva", "subtitle": "Transformação profissional completa", "features": { "0": "Sessão de 180 minutos", "1": "Análise exaustiva", "2": "Plano ação detalhado", "3": "Recursos premium", "4": "Follow-up estendido", "5": "Sessão revisão" }, "cta": "Reservar Intensiva" }
         }
       },
       "services": {
