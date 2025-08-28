@@ -236,6 +236,520 @@
       }
     }
   },
+  "categories": {
+    "title": "Explore Our 6 App Categories",
+    "description": "Each category is designed to enhance specific aspects of your gastronomic business",
+    "creativity": {
+      "title": "Culinary Creativity",
+      "description": "Innovate without limits with AI",
+      "count": "8 apps"
+    },
+    "cookbooks": {
+      "title": "World Cookbooks", 
+      "description": "Master global cuisine",
+      "count": "21 apps"
+    },
+    "knowledge": {
+      "title": "Gastro Knowledge",
+      "description": "Access culinary wisdom",
+      "count": "1 app"
+    },
+    "tools": {
+      "title": "Tools & Utilities",
+      "description": "Optimize your daily operation",
+      "count": "6 apps"
+    },
+    "business": {
+      "title": "Business Concepts",
+      "description": "Specialize in your niche",
+      "count": "5 apps"
+    },
+    "marketing": {
+      "title": "Marketing & Content",
+      "description": "Boost your digital presence",
+      "count": "4 apps"
+    },
+    "world_cookbooks": {
+      "europa": {
+        "name": "Europe",
+        "count": "10 Cuisines"
+      },
+      "latinoamerica": {
+        "name": "Latin America",
+        "count": "11 Cuisines"
+      },
+      "asia": {
+        "name": "Asia",
+        "count": "4 Cuisines"
+      }
+    }
+  },
+  "finder": {
+    "title_prefix": "Find Your",
+    "title_highlight": "Perfect App",
+    "description": "Select your profile and discover the tools that best fit your needs",
+    "preview_label": "Preview",
+    "personas": {
+      "chef-ejecutivo": {
+        "name": "Executive Chef",
+        "short_name": "Executive Chef",
+        "mobile_name": "Chef",
+        "description": "I lead teams and design strategic menus"
+      },
+      "panaderia": {
+        "name": "Bakery",
+        "short_name": "Bakery",
+        "mobile_name": "Bakery",
+        "description": "I run a bakery and create artisanal breads"
+      },
+      "food-truck": {
+        "name": "Food Truck",
+        "short_name": "Food Truck",
+        "mobile_name": "Truck",
+        "description": "I operate a mobile food business"
+      },
+      "estudiante": {
+        "name": "Gastronomy Student",
+        "short_name": "Student",
+        "mobile_name": "Stud.",
+        "description": "I'm learning professional gastronomy"
+      },
+      "restaurante": {
+        "name": "Restaurant",
+        "short_name": "Restaurant",
+        "mobile_name": "Rest.",
+        "description": "I manage a restaurant"
+      },
+      "reposteria": {
+        "name": "Pastry",
+        "short_name": "Pastry",
+        "mobile_name": "Pastry",
+        "description": "I specialize in pastry and desserts"
+      }
+    }
+  },
+  "gallery": {
+    "badge": "55+ Specialized Apps in Action",
+    "title": "Discover the Power of AI Chef Pro", 
+    "description": "Explore real screenshots of our specialized applications for gastronomic professionals",
+    "previous": "Previous",
+    "next": "Next",
+    "counter": "{{current}} of {{total}} applications shown", 
+    "explore_all": "Explore All Apps"
+  },
+  "screenshots": {
+    "cocina_creativa": {
+      "title": "Creative Cooking",
+      "description": "Professional quality creative cooking recipe generator with background stories"
+    },
+    "platos_autor": {
+      "title": "Signature Dishes",
+      "description": "Create unique contemporary dishes with seasonal ingredients and innovative techniques"
+    },
+    "catering_ai": {
+      "title": "Catering AI+", 
+      "description": "AI-powered knowledge model for chefs, cooks and entrepreneurs in the catering business"
+    },
+    "food_pairing": {
+      "title": "Food Pairing AI",
+      "description": "Discover scientific pairings and innovative combinations based on aromatic profiles"
+    },
+    "pasteleria_creativa": {
+      "title": "Creative Pastry",
+      "description": "Generate high-quality pastry recipes with Michelin-style professional presentations"
+    },
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "AI assistant specialized in avant-garde Sosa ingredients for professional cooking and innovative techniques"
+    },
+    "casual_restaurants": {
+      "title": "Casual Restaurants AI+",
+      "description": "Expert in family restaurants, bistros, taverns and gastrobars. Complete advisory for owners and staff"
+    },
+    "menu_local_seo": {
+      "title": "MenuDish Local SEO",
+      "description": "Generate SEO-optimized content for each dish on your menu and boost your restaurant's local visibility"
+    },
+    "cocina_peruana": {
+      "title": "Peruvian Cuisine",
+      "description": "Specialized generator in authentic recipes from rich Peruvian gastronomy with cultural stories and precise ingredients"
+    },
+    "cocina_francesa": {
+      "title": "French Cuisine",
+      "description": "Master in French culinary tradition, from classic bistro to haute cuisine with professional techniques"
+    },
+    "fermentus": {
+      "title": "Fermentus With AI+",
+      "description": "Expert assistant in creative fermentation and signature preserves. Master koji, kombuchas, misos and innovative techniques"
+    },
+    "cocina_india": {
+      "title": "Indian Cuisine Cookbook",
+      "description": "Explore rich Indian gastronomy with authentic recipes like samosas, curries and traditional chutneys"
+    }
+  },
+  "apps": {
+    "creativity": {
+      "cocina_creativa": {
+        "name": "Creative Cooking",
+        "description": "Generate unique dishes with story",
+        "preview": "Roasted beetroot tartar with citrus gel and edible flowers..."
+      },
+      "pasteleria_creativa": {
+        "name": "Creative Pastry",
+        "description": "Signature desserts step by step",
+        "preview": "Chocolate soufflé with vanilla pralines and raspberry coulis..."
+      },
+      "chocolateria_creativa": {
+        "name": "Creative Chocolaterie",
+        "description": "Avant-garde bonbons and chocolate",
+        "preview": "Ganache infused with matcha tea and pink salt crystals..."
+      },
+      "heladeria_creativa": {
+        "name": "Creative Ice Cream",
+        "description": "Professional artisanal ice creams",
+        "preview": "Gin-tonic sorbet with citrus notes and aromatic herbs..."
+      },
+      "panaderia_creativa": {
+        "name": "Creative Bakery",
+        "description": "Unique breads and fermentations",
+        "preview": "Sourdough bread with toasted seeds and orange blossom honey..."
+      },
+      "fermentus": {
+        "name": "Fermentus With AI+",
+        "description": "Signature fermentation and preserves",
+        "preview": "Beetroot kimchi with ginger and fermented Korean chili..."
+      },
+      "vegchef": {
+        "name": "VegChef Plant-Based",
+        "description": "High-level plant cooking",
+        "preview": "King oyster ceviche with coconut tiger's milk and chilies..."
+      },
+      "food_pairing": {
+        "name": "Food Pairing AI",
+        "description": "Discover scientific pairings",
+        "preview": "Chocolate + fennel by shared phenolic compounds..."
+      }
+    },
+    "business": {
+      "chatgpt_4o": {
+        "name": "ChatGPT 4.1",
+        "description": "Most advanced general AI assistant",
+        "preview": "Help with technical questions and seasonal menu planning"
+      },
+      "mermas_gencal": {
+        "name": "Waste GenCal",
+        "description": "Optimize yields and reduce waste",
+        "preview": "Save up to 30% in ingredient costs with precise calculations"
+      },
+      "id_alergenos": {
+        "name": "Allergen ID",
+        "description": "Automatically identify allergens",
+        "preview": "Comply with food safety regulations without errors"
+      },
+      "mental_coach": {
+        "name": "Mental Coach",
+        "description": "Kitchen wellness and leadership",
+        "preview": "Reduce stress and improve team work environment"
+      },
+      "conversor_ing": {
+        "name": "Unit Converter",
+        "description": "Convert measurements and weights instantly",
+        "preview": "Adapt recipes between metric systems without errors"
+      },
+      "calcula_pax": {
+        "name": "Portion Calculator",
+        "description": "Adjust quantities according to diners",
+        "preview": "Scale recipes with mathematical precision for any event"
+      }
+    },
+    "concepts": {
+      "catering_ai": {
+        "name": "Catering AI+",
+        "description": "Specialize in professional catering",
+        "preview": "Event menus with optimized logistics and costs"
+      },
+      "burger_pro_ai": {
+        "name": "Burger Pro AI+",
+        "description": "Perfect your burger joint",
+        "preview": "Gourmet recipes and cooking techniques for premium burgers"
+      },
+      "food_truck_ai": {
+        "name": "Food Truck AI+",
+        "description": "Optimize your food truck",
+        "preview": "Profitable mobile menus with versatile ingredients"
+      },
+      "bar_lounge_ai": {
+        "name": "Bar & Lounge AI+",
+        "description": "Master mixology and bar service",
+        "preview": "Signature cocktails and premium bar management"
+      },
+      "casual_restaurants_ai": {
+        "name": "Casual Restaurants AI+",
+        "description": "Family restaurant expertise",
+        "preview": "Complete management for bistros and casual dining"
+      }
+    },
+    "marketing": {
+      "menu_plate_local_seo": {
+        "name": "Menu Plate Local SEO",
+        "description": "Optimize each dish for search engines",
+        "preview": "Your dishes appear on Google when people search for local food"
+      },
+      "gastro_calendar": {
+        "name": "Gastro Calendar",
+        "description": "Content planning for gastronomy",
+        "preview": "Strategic social media calendar with seasonal content"
+      },
+      "instaflow_ai_pro": {
+        "name": "InstaFlow AI Pro",
+        "description": "Professional Instagram content",
+        "preview": "Engaging posts and stories for your gastronomic brand"
+      },
+      "pinterai_content_pro": {
+        "name": "PinterAI Content Pro",
+        "description": "Pinterest content optimization",
+        "preview": "Visual content that drives traffic to your restaurant"
+      }
+    },
+    "knowledge": {
+      "gastro_lexicum": {
+        "name": "Gastro Lexicum",
+        "description": "Access universal culinary knowledge",
+        "preview": "Gastronomic encyclopedia with professional techniques and terms"
+      }
+    }
+  },
+  "features": {
+    "title": "Main Features",
+    "description": "Complete suite of AI tools and applications for chefs and cooks who want to accelerate and optimize their daily work in professional kitchens and unleash their creativity.",
+    "assistant": {
+      "title": "Culinary AI Assistant Model",
+      "description": "Personalized recipe and technique recommendations adapted to your culinary preferences. More than 20 cookbooks."
+    },
+    "food_pairing": {
+      "title": "Food Pairing and Ingredient Substitutions",
+      "description": "Find ideal alternatives for ingredients you need to replace in your recipes."
+    },
+    "coaching": {
+      "title": "Chef Coaching",
+      "description": "Psychological and motivational support to improve performance and well-being in the kitchen."
+    },
+    "technology": {
+      "title": "Advanced LLM Technology",
+      "description": "Language models specialized for the gastronomic sector"
+    }
+  },
+  "featured": {
+    "title": "Featured Apps of the Week",
+    "description": "Discover the applications that are revolutionizing the gastronomic industry",
+    "sosa_ingredients": {
+      "title": "Sosa Ingredients Agent",
+      "description": "Work with avant-garde ingredients",
+      "testimonial": "It helps me select the best Sosa products for my haute cuisine creations",
+      "author": "Chef M. García",
+      "position": "Executive Chef, Michelin Restaurant",
+      "cta": "Explore Ingredients"
+    },
+    "menu_local_seo": {
+      "title": "MenuDish Local SEO",
+      "description": "Optimize each dish for search engines",
+      "testimonial": "My dishes now appear on Google when people search for local food. Bookings have increased by 40%",
+      "author": "El Olivo Restaurant",
+      "position": "Owner",
+      "cta": "Optimize My Menu"
+    },
+    "fermentus": {
+      "title": "Fermentus With AI+",
+      "description": "Signature fermentation and preserves",
+      "testimonial": "It revolutionized my understanding of fermentation. Now I create unique flavors that my customers love",
+      "author": "Chef Ana Rodrigo",
+      "position": "Fermentation Specialist",
+      "cta": "Master Fermentation"
+    },
+    "mental_coach": {
+      "title": "Mental Coach",
+      "description": "Kitchen wellness and leadership",
+      "testimonial": "My team is more motivated and the kitchen atmosphere is completely different. Less stress, more creativity",
+      "author": "Chef Roberto Silva",
+      "position": "Executive Chef",
+      "cta": "Improve Leadership"
+    }
+  },
+  "about": {
+    "title": "Instant recipes. Greater Productivity. Endless inspiration.",
+    "description": "Chef Diego Schattenhofer and his team using AI Chef Pro",
+    "cta": "Try AI Chef Pro"
+  },
+  "pricing": {
+    "title": "Plans and Pricing",
+    "description": "Plans adapted for all gastronomic professionals: chefs, restaurant owners, managers, bartenders, bakers, pastry chefs, chocolatiers and entrepreneurs in the sector. Each plan is designed to boost your gastronomic business.",
+    "member": {
+      "title": "Member",
+      "price": "Free",
+      "description": "To explore basic functionalities",
+      "cta": "Start Free",
+      "features": [
+        "Basic access to tools",
+        "Basic recipes", 
+        "Email support",
+        "Limited functionalities"
+      ]
+    },
+    "pro": {
+      "title": "Pro",
+      "price": "€10",
+      "period": "/month",
+      "description": "Ideal for independent gastronomic professionals",
+      "cta": "Select Plan",
+      "features": [
+        "All basic functions",
+        "Advanced recipe generator",
+        "Food Pairing AI",
+        "Priority support",
+        "More than 20 cookbooks"
+      ]
+    },
+    "premium": {
+      "title": "Premium",
+      "price": "€15",
+      "period": "/month",
+      "description": "For professionals with frequent use and greater creativity",
+      "cta": "Select Plan",
+      "features": [
+        "All Pro functions",
+        "Professional gastronomic coaching",
+        "Advanced nutritional analysis",
+        "Complete customization",
+        "Advanced integrations"
+      ]
+    },
+    "premium_pro": {
+      "title": "Premium Pro",
+      "price": "€25",
+      "period": "/month",
+      "description": "For owners and managers of gastronomic businesses",
+      "cta": "Select Plan",
+      "badge": "🔥 Most Popular",
+      "features": [
+        "All Premium functions",
+        "Team management",
+        "Advanced analytics",
+        "API access",
+        "Monthly consulting"
+      ]
+    },
+    "premium_plus": {
+      "title": "Premium Plus",
+      "price": "€50",
+      "period": "/month",
+      "description": "For gastronomic entrepreneurs and restaurant chains",
+      "cta": "Select Plan",
+      "features": [
+        "Complete unlimited access",
+        "24/7 support",
+        "Personalized consulting",
+        "Custom feature development",
+        "Enterprise integration"
+      ]
+    },
+    "premium_plus_annual": {
+      "title": "Premium Plus Annual",
+      "price": "€500",
+      "original_price": "€600",
+      "period": "/year",
+      "save": "Save €100",
+      "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
+      "cta": "Select Plan",
+      "features": [
+        "All 55+ tools included",
+        "Unlimited use throughout the year",
+        "Access to all world cuisines",
+        "Advanced business tools",
+        "Premium 24/7 support",
+        "Monthly personalized consulting"
+      ]
+    },
+    "enterprise": "Need an enterprise plan? Contact us for a personalized solution"
+  },
+  "category_ctas": {
+    "title": "Start Your Transformation Today",
+    "description": "Choose your path and access the tools that will revolutionize your kitchen",
+    "creativity": {
+      "title": "Explore Culinary Creativity",
+      "description": "Unlock your creative potential",
+      "cta": "Start Now"
+    },
+    "cookbooks": {
+      "title": "Master World Cuisines",
+      "description": "25 culinary traditions",
+      "cta": "Start Now"
+    },
+    "business": {
+      "title": "Optimize Your Business",
+      "description": "Tools for efficiency",
+      "cta": "Start Now"
+    },
+    "marketing": {
+      "title": "Boost Your Marketing",
+      "description": "Content that converts",
+      "cta": "Start Now"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to the most common questions about AI Chef Pro",
+    "q1": "What does AI Chef Pro include?",
+    "a1": "AI Chef Pro includes 55+ specialized applications for gastronomy professionals, covering everything from culinary creativity to business management and digital marketing.",
+    "q2": "Can I use AI Chef Pro if I'm a beginner?",
+    "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
+    "q3": "How does the free trial work?",
+    "a3": "You can access our basic plan for free with limited functionalities. To access all tools and features, you can upgrade to any of our paid plans at any time.",
+    "q4": "Do recipes adapt to different portion sizes?",
+    "a4": "Yes, all our applications include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
+    "q5": "Does it include support for dietary restrictions?",
+    "a5": "Yes, our tools can generate recipes adapted to allergies, intolerances, and specific diets (vegan, gluten-free, keto, etc.).",
+    "q6": "Can I cancel my subscription at any time?",
+    "a6": "Yes, you can cancel your subscription at any time from your user panel. There are no permanence commitments or cancellation fees."
+  },
+  "footer": {
+    "description": "Artificial Intelligence for Today's Chef. Develop your professional potential with the use and support of artificial intelligence in your daily routine.",
+    "subtitle": "Suite of AI Tools and Applications modeled for Chefs, Cooks and hospitality professionals.",
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "placeholder": "Enter your email",
+      "cta": "Subscribe"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "online_mentoring": "Online Mentoring",
+      "tools": "Tools",
+      "pricing": "Pricing",
+      "blog": "Blog",
+      "free_tools": "Free Tools"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "info@aichef.pro",
+      "phone": "+34 744 717 942"
+    },
+    "cta": {
+      "plans": "View Plans",
+      "try_free": "Try Free"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "legal": {
+      "copyright": "© 2024. All rights reserved.",
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "company": "Chefbusiness Gastronomic Consulting",
+      "gastroseo": "GastroSEO"
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
     "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",
