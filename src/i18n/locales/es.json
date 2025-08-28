@@ -892,6 +892,24 @@
           "title": "Food Trucks, Dark Kitchens y Conceptos Emergentes",
           "description": "Eficiencia en espacios reducidos, optimización de carta y estrategias de crecimiento"
         }
+      },
+      "testimonials": {
+        "title": "Lo que dicen nuestros clientes",
+        "testimonial1": {
+          "quote": "\"En solo dos horas reorganizamos completamente nuestro approach a la cocina creativa. Estamos creando platos innovadores con la mitad del esfuerzo y doble impacto en el cliente.\"",
+          "name": "Chef Martín Rodríguez",
+          "position": "Restaurante Fusión, Valencia"
+        },
+        "testimonial2": {
+          "quote": "\"Reducimos nuestras mermas del 14% al 5% en menos de un mes aplicando las estrategias de la consultoría. El ROI fue instantáneo, literalmente pagamos la sesión con lo que ahorramos la primera semana.\"",
+          "name": "Laura García",
+          "position": "Directora de Operaciones, Grupo Gastronómico BCN"
+        },
+        "testimonial3": {
+          "quote": "\"Conseguimos desarrollar una línea completa de 12 postres de autor para nuestro catálogo de verano en tiempo récord. La consultoría nos enseñó a exprimir al máximo las herramientas creativas de AI Chef Pro.\"",
+          "name": "Carlos Ruiz",
+          "position": "Maestro Pastelero, Sweet Dreams Madrid"
+        }
       }
     }
   },

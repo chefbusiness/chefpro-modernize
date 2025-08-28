@@ -234,6 +234,44 @@
     "title": "🎁 Free Micro-Session",
     "description": "Not sure which plan is right for you? Book a free 30-minute consultation.",
     "cta": "Book Free Consultation"
+  },
+  "specialization": {
+    "title": "Specialized Mentoring by Professional Profile or Business Concept Consulting",
+    "subtitle": "All our 1, 2 or 3 hour sessions adapt to your specific profile within the gastronomic industry and/or your business concept. Our training and capacity building mentorships will be configured and focused on your reality so you can make the most of using this suite of tools powered by artificial intelligence that are useful for restaurant owners, executive/corporate chefs, restaurant managers or directors, team leaders in general in hospitality and the restaurant industry.",
+    "restaurants": {
+      "title": "Restaurants",
+      "description": "Menu optimization, cost management, differential creativity and diner experience"
+    },
+    "catering": {
+      "title": "Catering Companies",
+      "description": "Event management, scalability, logistics optimization and margin maximization"
+    },
+    "bakery": {
+      "title": "Bakeries/Pastry Shops",
+      "description": "Creativity, formulation optimization, waste reduction and differentiation"
+    },
+    "food_truck": {
+      "title": "Food Trucks, Dark Kitchens & Emerging Concepts",
+      "description": "Efficiency in reduced spaces, menu optimization and growth strategies"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonial1": {
+      "quote": "\"In just two hours we completely reorganized our approach to creative cooking. We're creating innovative dishes with half the effort and double the client impact.\"",
+      "name": "Chef Martín Rodríguez",
+      "position": "Fusion Restaurant, Valencia"
+    },
+    "testimonial2": {
+      "quote": "\"We reduced our waste from 14% to 5% in less than a month by applying the consulting strategies. The ROI was instant, we literally paid for the session with what we saved the first week.\"",
+      "name": "Laura García",
+      "position": "Operations Director, BCN Gastronomic Group"
+    },
+    "testimonial3": {
+      "quote": "\"We managed to develop a complete line of 12 signature desserts for our summer catalog in record time. The consulting taught us to maximize AI Chef Pro's creative tools.\"",
+      "name": "Carlos Ruiz",
+      "position": "Master Pastry Chef, Sweet Dreams Madrid"
+    }
   }
   },
   "categories": {

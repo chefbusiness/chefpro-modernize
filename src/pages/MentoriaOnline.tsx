@@ -444,7 +444,7 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Lo que dicen nuestros clientes
+                {currentLanguage === 'es' ? 'Lo que dicen nuestros clientes' : t('mentoriaOnline.sections.testimonials.title')}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -456,17 +456,24 @@ const MentoriaOnline = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "En solo dos horas reorganizamos completamente nuestro approach a la cocina creativa. Estamos creando platos innovadores con la mitad del esfuerzo y doble impacto en el cliente."
+                    {currentLanguage === 'es' 
+                      ? '"En solo dos horas reorganizamos completamente nuestro approach a la cocina creativa. Estamos creando platos innovadores con la mitad del esfuerzo y doble impacto en el cliente."'
+                      : t('mentoriaOnline.sections.testimonials.testimonial1.quote')
+                    }
                   </p>
                   <div className="flex items-center gap-3">
                     <img 
                       src="https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Martin.png" 
-                      alt="Chef Martín" 
+                      alt={currentLanguage === 'es' ? 'Chef Martín' : t('mentoriaOnline.sections.testimonials.testimonial1.name')} 
                       className="w-12 h-12 rounded-full"
                     />
                     <div>
-                      <p className="font-semibold text-foreground">Chef Martín Rodríguez</p>
-                      <p className="text-sm text-muted-foreground">Restaurante Fusión, Valencia</p>
+                      <p className="font-semibold text-foreground">
+                        {currentLanguage === 'es' ? 'Chef Martín Rodríguez' : t('mentoriaOnline.sections.testimonials.testimonial1.name')}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {currentLanguage === 'es' ? 'Restaurante Fusión, Valencia' : t('mentoriaOnline.sections.testimonials.testimonial1.position')}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -480,17 +487,24 @@ const MentoriaOnline = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "Reducimos nuestras mermas del 14% al 5% en menos de un mes aplicando las estrategias de la consultoría. El ROI fue instantáneo, literalmente pagamos la sesión con lo que ahorramos la primera semana."
+                    {currentLanguage === 'es' 
+                      ? '"Reducimos nuestras mermas del 14% al 5% en menos de un mes aplicando las estrategias de la consultoría. El ROI fue instantáneo, literalmente pagamos la sesión con lo que ahorramos la primera semana."'
+                      : t('mentoriaOnline.sections.testimonials.testimonial2.quote')
+                    }
                   </p>
                   <div className="flex items-center gap-3">
                     <img 
                       src="https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Laura.png" 
-                      alt="Laura García" 
+                      alt={currentLanguage === 'es' ? 'Laura García' : t('mentoriaOnline.sections.testimonials.testimonial2.name')} 
                       className="w-12 h-12 rounded-full"
                     />
                     <div>
-                      <p className="font-semibold text-foreground">Laura García</p>
-                      <p className="text-sm text-muted-foreground">Directora de Operaciones, Grupo Gastronómico BCN</p>
+                      <p className="font-semibold text-foreground">
+                        {currentLanguage === 'es' ? 'Laura García' : t('mentoriaOnline.sections.testimonials.testimonial2.name')}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {currentLanguage === 'es' ? 'Directora de Operaciones, Grupo Gastronómico BCN' : t('mentoriaOnline.sections.testimonials.testimonial2.position')}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -504,17 +518,24 @@ const MentoriaOnline = () => {
                     ))}
                   </div>
                   <p className="text-muted-foreground mb-4 italic">
-                    "Conseguimos desarrollar una línea completa de 12 postres de autor para nuestro catálogo de verano en tiempo récord. La consultoría nos enseñó a exprimir al máximo las herramientas creativas de AI Chef Pro."
+                    {currentLanguage === 'es' 
+                      ? '"Conseguimos desarrollar una línea completa de 12 postres de autor para nuestro catálogo de verano en tiempo récord. La consultoría nos enseñó a exprimir al máximo las herramientas creativas de AI Chef Pro."'
+                      : t('mentoriaOnline.sections.testimonials.testimonial3.quote')
+                    }
                   </p>
                   <div className="flex items-center gap-3">
                     <img 
                       src="https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Carlos.png" 
-                      alt="Carlos Ruiz" 
+                      alt={currentLanguage === 'es' ? 'Carlos Ruiz' : t('mentoriaOnline.sections.testimonials.testimonial3.name')} 
                       className="w-12 h-12 rounded-full"
                     />
                     <div>
-                      <p className="font-semibold text-foreground">Carlos Ruiz</p>
-                      <p className="text-sm text-muted-foreground">Maestro Pastelero, Sweet Dreams Madrid</p>
+                      <p className="font-semibold text-foreground">
+                        {currentLanguage === 'es' ? 'Carlos Ruiz' : t('mentoriaOnline.sections.testimonials.testimonial3.name')}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {currentLanguage === 'es' ? 'Maestro Pastelero, Sweet Dreams Madrid' : t('mentoriaOnline.sections.testimonials.testimonial3.position')}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
