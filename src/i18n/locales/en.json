@@ -567,39 +567,51 @@
     "llm_description": "Language models specialized for the gastronomic sector"
   },
   "featured": {
-    "title": "Featured Apps of the Week",
+    "title_main": "Featured Apps",
+    "title_sub": "of the Week",
     "description": "Discover the applications that are revolutionizing the gastronomic industry",
-    "sosa_ingredients": {
-      "title": "Sosa Ingredients Agent",
-      "description": "Work with avant-garde ingredients",
-      "testimonial": "It helps me select the best Sosa products for my haute cuisine creations",
-      "author": "Chef M. García",
-      "position": "Executive Chef, Michelin Restaurant",
-      "cta": "Explore Ingredients"
-    },
-    "menu_local_seo": {
-      "title": "MenuDish Local SEO",
-      "description": "Optimize each dish for search engines",
-      "testimonial": "My dishes now appear on Google when people search for local food. Bookings have increased by 40%",
-      "author": "El Olivo Restaurant",
-      "position": "Owner",
-      "cta": "Optimize My Menu"
-    },
-    "fermentus": {
-      "title": "Fermentus With AI+",
-      "description": "Signature fermentation and preserves",
-      "testimonial": "It revolutionized my understanding of fermentation. Now I create unique flavors that my customers love",
-      "author": "Chef Ana Rodrigo",
-      "position": "Fermentation Specialist",
-      "cta": "Master Fermentation"
-    },
-    "mental_coach": {
-      "title": "Mental Coach",
-      "description": "Kitchen wellness and leadership",
-      "testimonial": "My team is more motivated and the kitchen atmosphere is completely different. Less stress, more creativity",
-      "author": "Chef Roberto Silva",
-      "position": "Executive Chef",
-      "cta": "Improve Leadership"
+    "badge": "Featured",
+    "apps": {
+      "sosa_ingredients": {
+        "name": "Sosa Ingredients Agent",
+        "description": "Work with avant-garde ingredients",
+        "testimonial": {
+          "text": "It helps me select the best Sosa products for my haute cuisine creations",
+          "author": "Chef M. García",
+          "role": "Executive Chef, Michelin Restaurant"
+        },
+        "cta": "Explore Ingredients"
+      },
+      "menu_plate_seo_featured": {
+        "name": "MenuDish Local SEO",
+        "description": "Optimize each dish for search engines",
+        "testimonial": {
+          "text": "My dishes now appear on Google when people search for local food. Bookings have increased by 40%",
+          "author": "El Olivo Restaurant",
+          "role": "Owner"
+        },
+        "cta": "Optimize My Menu"
+      },
+      "fermentus_featured": {
+        "name": "Fermentus With AI+",
+        "description": "Signature fermentation and preserves",
+        "testimonial": {
+          "text": "It revolutionized my understanding of fermentation. Now I create unique flavors that my customers love",
+          "author": "Chef Ana Rodrigo",
+          "role": "Fermentation Specialist"
+        },
+        "cta": "Master Fermentation"
+      },
+      "mental_coach_featured": {
+        "name": "Mental Coach",
+        "description": "Kitchen wellness and leadership",
+        "testimonial": {
+          "text": "My team is more motivated and the kitchen atmosphere is completely different. Less stress, more creativity",
+          "author": "Chef Roberto Silva",
+          "role": "Executive Chef"
+        },
+        "cta": "Improve Leadership"
+      }
     }
   },
   "about": {
