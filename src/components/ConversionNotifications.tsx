@@ -54,8 +54,8 @@ const ConversionNotifications = () => {
   if (!currentNotification) return null;
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 animate-fade-in-up">
-      <Card className="chef-card border-chef-gold/20 bg-white/95 backdrop-blur-sm shadow-glow max-w-sm">
+    <div className="fixed inset-x-4 bottom-4 md:left-6 md:right-auto md:bottom-6 z-50 animate-fade-in-up">
+      <Card className="chef-card border-chef-gold/20 bg-white/95 backdrop-blur-sm shadow-glow w-full md:max-w-sm">
         <CardContent className="p-4">
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">

@@ -198,20 +198,34 @@ export default function ScreenshotGallery() {
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex items-center justify-between mt-6">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={prevSlide}
-            className="flex items-center gap-2"
-            disabled={isTransitioning}
-          >
-            <ChevronLeft className="w-4 h-4" />
-            {t('gallery.previous')}
-          </Button>
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mt-6 gap-4">
+          {/* Mobile: Top row with Previous/Next buttons */}
+          <div className="flex items-center justify-between w-full md:w-auto md:contents">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={prevSlide}
+              className="flex items-center gap-2"
+              disabled={isTransitioning}
+            >
+              <ChevronLeft className="w-4 h-4" />
+              <span className="hidden sm:inline">{t('gallery.previous')}</span>
+            </Button>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={nextSlide}
+              className="flex items-center gap-2 md:order-3"
+              disabled={isTransitioning}
+            >
+              <span className="hidden sm:inline">{t('gallery.next')}</span>
+              <ChevronRight className="w-4 h-4" />
+            </Button>
+          </div>
 
           {/* Center Controls: Dots + Play/Pause */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 md:order-2">
             {/* Auto-rotation toggle */}
             <Button
               variant="ghost"
@@ -227,13 +241,13 @@ export default function ScreenshotGallery() {
             </Button>
 
             {/* Dots Indicator */}
-            <div className="flex space-x-2">
+            <div className="flex flex-wrap justify-center space-x-1 md:space-x-2 max-w-[70vw] md:max-w-none">
               {screenshots.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
                   disabled={isTransitioning}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 hover:scale-110 ${
+                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 hover:scale-110 ${
                     index === currentIndex 
                       ? 'bg-primary scale-110' 
                       : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'
@@ -242,17 +256,6 @@ export default function ScreenshotGallery() {
               ))}
             </div>
           </div>
-
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={nextSlide}
-            className="flex items-center gap-2"
-            disabled={isTransitioning}
-          >
-            {t('gallery.next')}
-            <ChevronRight className="w-4 h-4" />
-          </Button>
         </div>
 
         {/* App Counter */}
