@@ -798,6 +798,12 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Policy"
   },
+  "notfound": {
+    "title": "404 - Page not found | AI Chef Pro",
+    "description": "Sorry, the page you are looking for does not exist. Return to AI Chef Pro home.",
+    "message": "Oops! Page not found",
+    "back_home": "Back to Home"
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
     "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",

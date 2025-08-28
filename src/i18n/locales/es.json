@@ -1007,6 +1007,12 @@
       }
     }
   },
+  "notfound": {
+    "title": "404 - Página no encontrada | AI Chef Pro",
+    "description": "Lo sentimos, la página que buscas no existe. Regresa al inicio de AI Chef Pro.",
+    "message": "¡Oops! Página no encontrada",
+    "back_home": "Volver al Inicio"
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Herramientas de IA para Chefs | Suite Gastronómica",
     "description": "Transforma tu cocina con 55+ herramientas de IA especializadas. Creatividad culinaria, recetarios mundiales, gestión de negocio y marketing gastronómico.",
