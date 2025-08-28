@@ -549,7 +549,7 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                ¿Cómo funciona el proceso?
+                {currentLanguage === 'es' ? '¿Cómo funciona el proceso?' : t('mentoriaOnline.sections.process.title')}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -557,9 +557,14 @@ const MentoriaOnline = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Reserva tu sesión</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  {currentLanguage === 'es' ? 'Reserva tu sesión' : t('mentoriaOnline.sections.process.step1.title')}
+                </h3>
                 <p className="text-muted-foreground">
-                  Selecciona el plan que mejor se adapte a tus necesidades y reserva tu espacio en nuestro calendario. Nuestra recomendación es que inicialmente contrates una hora. Si son necesarias más sesiones de 2 o 3 horas lo podremos valorar juntos y así podrás aprovechar mejor el tiempo y el conocimiento que podrás adquirir
+                  {currentLanguage === 'es' 
+                    ? 'Selecciona el plan que mejor se adapte a tus necesidades y reserva tu espacio en nuestro calendario. Nuestra recomendación es que inicialmente contrates una hora. Si son necesarias más sesiones de 2 o 3 horas lo podremos valorar juntos y así podrás aprovechar mejor el tiempo y el conocimiento que podrás adquirir'
+                    : t('mentoriaOnline.sections.process.step1.description')
+                  }
                 </p>
               </div>
 
@@ -567,9 +572,14 @@ const MentoriaOnline = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Completa el cuestionario previo</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  {currentLanguage === 'es' ? 'Completa el cuestionario previo' : t('mentoriaOnline.sections.process.step2.title')}
+                </h3>
                 <p className="text-muted-foreground">
-                  Recibirás un formulario para completar 48h antes de la sesión para que podamos prepararnos específicamente para tus necesidades.
+                  {currentLanguage === 'es' 
+                    ? 'Recibirás un formulario para completar 48h antes de la sesión para que podamos prepararnos específicamente para tus necesidades.'
+                    : t('mentoriaOnline.sections.process.step2.description')
+                  }
                 </p>
               </div>
 
@@ -577,9 +587,14 @@ const MentoriaOnline = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Sesión personalizada</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  {currentLanguage === 'es' ? 'Sesión personalizada' : t('mentoriaOnline.sections.process.step3.title')}
+                </h3>
                 <p className="text-muted-foreground">
-                  Conectamos por videoconferencia para la sesión de consultoría, donde desarrollaremos estrategias específicas para tu negocio.
+                  {currentLanguage === 'es' 
+                    ? 'Conectamos por videoconferencia para la sesión de consultoría, donde desarrollaremos estrategias específicas para tu negocio.'
+                    : t('mentoriaOnline.sections.process.step3.description')
+                  }
                 </p>
               </div>
 
@@ -587,9 +602,14 @@ const MentoriaOnline = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">4</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Implementación y seguimiento</h3>
+                <h3 className="text-xl font-semibold mb-3">
+                  {currentLanguage === 'es' ? 'Implementación y seguimiento' : t('mentoriaOnline.sections.process.step4.title')}
+                </h3>
                 <p className="text-muted-foreground">
-                  Recibirás un plan de acción detallado y recursos complementarios. Incluimos seguimiento para asegurar resultados.
+                  {currentLanguage === 'es' 
+                    ? 'Recibirás un plan de acción detallado y recursos complementarios. Incluimos seguimiento para asegurar resultados.'
+                    : t('mentoriaOnline.sections.process.step4.description')
+                  }
                 </p>
               </div>
             </div>

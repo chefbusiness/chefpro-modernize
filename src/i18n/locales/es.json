@@ -910,6 +910,25 @@
           "name": "Carlos Ruiz",
           "position": "Maestro Pastelero, Sweet Dreams Madrid"
         }
+      },
+      "process": {
+        "title": "¿Cómo funciona el proceso?",
+        "step1": {
+          "title": "Reserva tu sesión",
+          "description": "Selecciona el plan que mejor se adapte a tus necesidades y reserva tu espacio en nuestro calendario. Nuestra recomendación es que inicialmente contrates una hora. Si son necesarias más sesiones de 2 o 3 horas lo podremos valorar juntos y así podrás aprovechar mejor el tiempo y el conocimiento que podrás adquirir"
+        },
+        "step2": {
+          "title": "Completa el cuestionario previo",
+          "description": "Recibirás un formulario para completar 48h antes de la sesión para que podamos prepararnos específicamente para tus necesidades."
+        },
+        "step3": {
+          "title": "Sesión personalizada",
+          "description": "Conectamos por videoconferencia para la sesión de consultoría, donde desarrollaremos estrategias específicas para tu negocio."
+        },
+        "step4": {
+          "title": "Implementación y seguimiento",
+          "description": "Recibirás un plan de acción detallado y recursos complementarios. Incluimos seguimiento para asegurar resultados."
+        }
       }
     }
   },
