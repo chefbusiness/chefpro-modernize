@@ -823,6 +823,55 @@
           "title": "Ahorro de tiempo",
           "description": "Elimina la curva de aprendizaje y comienza a implementar soluciones efectivas desde el primer día."
         }
+      },
+      "pricing": {
+        "title": "Nuestros Planes de Consultoría y Mentoría Online",
+        "subtitle": "Selección el plan, agenda la mentoría y prepárate para en una o varias sesiones dominar el potencial de la inteligencia artificial aplicado a la gestión de restaurantes y el mundo de la gastronomía y la hostelería en general.",
+        "ideal_for": "Ideal para:",
+        "express": {
+          "title": "Sesión Express",
+          "price": "€150",
+          "duration": "2 horas",
+          "features": [
+            "Diagnóstico rápido de necesidades",
+            "Configuración inicial personalizada",
+            "Enfoque en 1-2 herramientas clave",
+            "Soluciones de implementación inmediata"
+          ],
+          "ideal": "Usuarios nuevos o con necesidades específicas puntuales",
+          "button": "Reservar ahora"
+        },
+        "standard": {
+          "title": "Sesión Estándar",
+          "price": "€275",
+          "duration": "3 horas",
+          "badge": "🔥 Más popular",
+          "save": "Ahorra un 8%",
+          "features": [
+            "Análisis completo de necesidades",
+            "Configuración avanzada del perfil",
+            "Estrategia para 3-4 herramientas clave",
+            "Plan de implementación a 30 días",
+            "Material complementario exclusivo"
+          ],
+          "ideal": "Restaurantes, pastelerías y negocios establecidos",
+          "button": "Reservar ahora"
+        },
+        "intensive": {
+          "title": "Sesión Intensiva",
+          "price": "€360",
+          "duration": "4 horas",
+          "save": "Ahorra un 20%",
+          "features": [
+            "Plan estratégico de integración total",
+            "Formación avanzada en todas las herramientas",
+            "Optimización de prompts personalizados",
+            "Seguimiento a 7 días incluido",
+            "Acceso a recursos premium exclusivos"
+          ],
+          "ideal": "Grupos de restauración, empresas de catering y negocios medianos",
+          "button": "Reservar ahora"
+        }
       }
     }
   },

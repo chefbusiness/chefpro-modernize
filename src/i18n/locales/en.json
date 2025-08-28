@@ -1040,6 +1040,55 @@
           "title": "Time saving",
           "description": "Eliminate the learning curve and start implementing effective solutions from day one."
         }
+      },
+      "pricing": {
+        "title": "Our Online Consulting and Mentoring Plans",
+        "subtitle": "Select the plan, schedule the mentoring and prepare to master the potential of artificial intelligence applied to restaurant management and the world of gastronomy and hospitality in general in one or more sessions.",
+        "ideal_for": "Ideal for:",
+        "express": {
+          "title": "Express Session",
+          "price": "€150",
+          "duration": "2 hours",
+          "features": [
+            "Quick needs diagnosis",
+            "Personalized initial setup",
+            "Focus on 1-2 key tools",
+            "Immediate implementation solutions"
+          ],
+          "ideal": "New users or those with specific punctual needs",
+          "button": "Book now"
+        },
+        "standard": {
+          "title": "Standard Session",
+          "price": "€275",
+          "duration": "3 hours",
+          "badge": "🔥 Most popular",
+          "save": "Save 8%",
+          "features": [
+            "Complete needs analysis",
+            "Advanced profile configuration",
+            "Strategy for 3-4 key tools",
+            "30-day implementation plan",
+            "Exclusive complementary material"
+          ],
+          "ideal": "Restaurants, bakeries and established businesses",
+          "button": "Book now"
+        },
+        "intensive": {
+          "title": "Intensive Session",
+          "price": "€360",
+          "duration": "4 hours",
+          "save": "Save 20%",
+          "features": [
+            "Total integration strategic plan",
+            "Advanced training in all tools",
+            "Personalized prompt optimization",
+            "7-day follow-up included",
+            "Access to exclusive premium resources"
+          ],
+          "ideal": "Restaurant groups, catering companies and medium businesses",
+          "button": "Book now"
+        }
       }
     }
   },

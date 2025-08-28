@@ -167,10 +167,13 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Nuestros Planes de Consultoría y Mentoría Online
+                {currentLanguage === 'es' ? 'Nuestros Planes de Consultoría y Mentoría Online' : t('mentoriaOnline.sections.pricing.title')}
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                Selección el plan, agenda la mentoría y prepárate para en una o varias sesiones dominar el potencial de la inteligencia artificial aplicado a la gestión de restaurantes y el mundo de la gastronomía y la hostelería en general.
+                {currentLanguage === 'es' 
+                  ? 'Selección el plan, agenda la mentoría y prepárate para en una o varias sesiones dominar el potencial de la inteligencia artificial aplicado a la gestión de restaurantes y el mundo de la gastronomía y la hostelería en general.' 
+                  : t('mentoriaOnline.sections.pricing.subtitle')
+                }
               </p>
             </div>
 
@@ -178,38 +181,44 @@ const MentoriaOnline = () => {
               {/* Plan Express */}
               <Card className="hover-card relative transition-all duration-300 hover:scale-[1.02]">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-bold">Sesión Express</CardTitle>
-                  <div className="text-4xl font-bold text-primary">€150</div>
-                  <div className="text-lg text-muted-foreground">2 horas</div>
+                  <CardTitle className="text-2xl font-bold">
+                    {currentLanguage === 'es' ? 'Sesión Express' : t('mentoriaOnline.sections.pricing.express.title')}
+                  </CardTitle>
+                  <div className="text-4xl font-bold text-primary">
+                    {currentLanguage === 'es' ? '€150' : t('mentoriaOnline.sections.pricing.express.price')}
+                  </div>
+                  <div className="text-lg text-muted-foreground">
+                    {currentLanguage === 'es' ? '2 horas' : t('mentoriaOnline.sections.pricing.express.duration')}
+                  </div>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Diagnóstico rápido de necesidades</span>
+                      <span>{currentLanguage === 'es' ? 'Diagnóstico rápido de necesidades' : t('mentoriaOnline.sections.pricing.express.features.0')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Configuración inicial personalizada</span>
+                      <span>{currentLanguage === 'es' ? 'Configuración inicial personalizada' : t('mentoriaOnline.sections.pricing.express.features.1')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Enfoque en 1-2 herramientas clave</span>
+                      <span>{currentLanguage === 'es' ? 'Enfoque en 1-2 herramientas clave' : t('mentoriaOnline.sections.pricing.express.features.2')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Soluciones de implementación inmediata</span>
+                      <span>{currentLanguage === 'es' ? 'Soluciones de implementación inmediata' : t('mentoriaOnline.sections.pricing.express.features.3')}</span>
                     </li>
                   </ul>
                   <div className="pt-4">
                     <p className="text-sm text-muted-foreground mb-4">
-                      <strong>Ideal para:</strong> Usuarios nuevos o con necesidades específicas puntuales
+                      <strong>{currentLanguage === 'es' ? 'Ideal para:' : t('mentoriaOnline.sections.pricing.ideal_for')}</strong> {currentLanguage === 'es' ? 'Usuarios nuevos o con necesidades específicas puntuales' : t('mentoriaOnline.sections.pricing.express.ideal')}
                     </p>
                     <Button 
                       className="w-full bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-express-ai-chef-pro', '_blank')}
                     >
-                      Reservar ahora
+                      {currentLanguage === 'es' ? 'Reservar ahora' : t('mentoriaOnline.sections.pricing.express.button')}
                     </Button>
                   </div>
                 </CardContent>
@@ -218,46 +227,54 @@ const MentoriaOnline = () => {
               {/* Plan Estándar - Most Popular */}
               <Card className="hover-card relative popular-plan scale-105 ring-2 ring-accent/20 transition-all duration-300">
                 <Badge className="popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1">
-                  🔥 Más popular
+                  {currentLanguage === 'es' ? '🔥 Más popular' : t('mentoriaOnline.sections.pricing.standard.badge')}
                 </Badge>
                 <CardHeader className="text-center pt-8">
-                  <CardTitle className="text-2xl font-bold">Sesión Estándar</CardTitle>
-                  <div className="text-4xl font-bold text-primary">€275</div>
-                  <div className="text-lg text-muted-foreground">3 horas</div>
-                  <Badge variant="default" className="mx-auto bg-green-600 text-white border-green-600 shadow-lg font-bold">Ahorra un 8%</Badge>
+                  <CardTitle className="text-2xl font-bold">
+                    {currentLanguage === 'es' ? 'Sesión Estándar' : t('mentoriaOnline.sections.pricing.standard.title')}
+                  </CardTitle>
+                  <div className="text-4xl font-bold text-primary">
+                    {currentLanguage === 'es' ? '€275' : t('mentoriaOnline.sections.pricing.standard.price')}
+                  </div>
+                  <div className="text-lg text-muted-foreground">
+                    {currentLanguage === 'es' ? '3 horas' : t('mentoriaOnline.sections.pricing.standard.duration')}
+                  </div>
+                  <Badge variant="default" className="mx-auto bg-green-600 text-white border-green-600 shadow-lg font-bold">
+                    {currentLanguage === 'es' ? 'Ahorra un 8%' : t('mentoriaOnline.sections.pricing.standard.save')}
+                  </Badge>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                      <span>Análisis completo de necesidades</span>
+                      <span>{currentLanguage === 'es' ? 'Análisis completo de necesidades' : t('mentoriaOnline.sections.pricing.standard.features.0')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                      <span>Configuración avanzada del perfil</span>
+                      <span>{currentLanguage === 'es' ? 'Configuración avanzada del perfil' : t('mentoriaOnline.sections.pricing.standard.features.1')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                      <span>Estrategia para 3-4 herramientas clave</span>
+                      <span>{currentLanguage === 'es' ? 'Estrategia para 3-4 herramientas clave' : t('mentoriaOnline.sections.pricing.standard.features.2')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                      <span>Plan de implementación a 30 días</span>
+                      <span>{currentLanguage === 'es' ? 'Plan de implementación a 30 días' : t('mentoriaOnline.sections.pricing.standard.features.3')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-                      <span>Material complementario exclusivo</span>
+                      <span>{currentLanguage === 'es' ? 'Material complementario exclusivo' : t('mentoriaOnline.sections.pricing.standard.features.4')}</span>
                     </li>
                   </ul>
                   <div className="pt-4">
                     <p className="text-sm text-muted-foreground mb-4">
-                      <strong>Ideal para:</strong> Restaurantes, pastelerías y negocios establecidos
+                      <strong>{currentLanguage === 'es' ? 'Ideal para:' : t('mentoriaOnline.sections.pricing.ideal_for')}</strong> {currentLanguage === 'es' ? 'Restaurantes, pastelerías y negocios establecidos' : t('mentoriaOnline.sections.pricing.standard.ideal')}
                     </p>
                     <Button 
                       className="w-full btn-gold hover:shadow-gold-glow scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-estandar-ai-chef-pro', '_blank')}
                     >
-                      Reservar ahora
+                      {currentLanguage === 'es' ? 'Reservar ahora' : t('mentoriaOnline.sections.pricing.standard.button')}
                     </Button>
                   </div>
                 </CardContent>
@@ -266,43 +283,51 @@ const MentoriaOnline = () => {
               {/* Plan Intensiva */}
               <Card className="hover-card relative transition-all duration-300 hover:scale-[1.02]">
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-bold">Sesión Intensiva</CardTitle>
-                  <div className="text-4xl font-bold text-primary">€360</div>
-                  <div className="text-lg text-muted-foreground">4 horas</div>
-                  <Badge variant="default" className="mx-auto bg-blue-600 text-white border-blue-600 shadow-lg font-bold">Ahorra un 20%</Badge>
+                  <CardTitle className="text-2xl font-bold">
+                    {currentLanguage === 'es' ? 'Sesión Intensiva' : t('mentoriaOnline.sections.pricing.intensive.title')}
+                  </CardTitle>
+                  <div className="text-4xl font-bold text-primary">
+                    {currentLanguage === 'es' ? '€360' : t('mentoriaOnline.sections.pricing.intensive.price')}
+                  </div>
+                  <div className="text-lg text-muted-foreground">
+                    {currentLanguage === 'es' ? '4 horas' : t('mentoriaOnline.sections.pricing.intensive.duration')}
+                  </div>
+                  <Badge variant="default" className="mx-auto bg-blue-600 text-white border-blue-600 shadow-lg font-bold">
+                    {currentLanguage === 'es' ? 'Ahorra un 20%' : t('mentoriaOnline.sections.pricing.intensive.save')}
+                  </Badge>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Plan estratégico de integración total</span>
+                      <span>{currentLanguage === 'es' ? 'Plan estratégico de integración total' : t('mentoriaOnline.sections.pricing.intensive.features.0')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Formación avanzada en todas las herramientas</span>
+                      <span>{currentLanguage === 'es' ? 'Formación avanzada en todas las herramientas' : t('mentoriaOnline.sections.pricing.intensive.features.1')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Optimización de prompts personalizados</span>
+                      <span>{currentLanguage === 'es' ? 'Optimización de prompts personalizados' : t('mentoriaOnline.sections.pricing.intensive.features.2')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Seguimiento a 7 días incluido</span>
+                      <span>{currentLanguage === 'es' ? 'Seguimiento a 7 días incluido' : t('mentoriaOnline.sections.pricing.intensive.features.3')}</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span>Acceso a recursos premium exclusivos</span>
+                      <span>{currentLanguage === 'es' ? 'Acceso a recursos premium exclusivos' : t('mentoriaOnline.sections.pricing.intensive.features.4')}</span>
                     </li>
                   </ul>
                   <div className="pt-4">
                     <p className="text-sm text-muted-foreground mb-4">
-                      <strong>Ideal para:</strong> Grupos de restauración, empresas de catering y negocios medianos
+                      <strong>{currentLanguage === 'es' ? 'Ideal para:' : t('mentoriaOnline.sections.pricing.ideal_for')}</strong> {currentLanguage === 'es' ? 'Grupos de restauración, empresas de catering y negocios medianos' : t('mentoriaOnline.sections.pricing.intensive.ideal')}
                     </p>
                     <Button 
                       className="w-full bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold transition-all duration-300" 
                       onClick={() => window.open('https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-intensiva-ai-chef-pro', '_blank')}
                     >
-                      Reservar ahora
+                      {currentLanguage === 'es' ? 'Reservar ahora' : t('mentoriaOnline.sections.pricing.intensive.button')}
                     </Button>
                   </div>
                 </CardContent>
