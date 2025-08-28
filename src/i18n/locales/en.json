@@ -46,8 +46,195 @@
     "categories_label": "Professional Categories",
     "new_app": "1",
     "new_app_label": "New App Every Week",
-    "chefs": "764+",
-    "chefs_label": "Chefs & Hospitality Professionals trust us"
+  "chefs": "764+",
+  "chefs_label": "Chefs & Hospitality Professionals trust us"
+},
+"mentoriaOnline": {
+  "seo": {
+    "title": "AI Chef Pro Personalized Online Mentoring - Maximize your potential",
+    "description": "Strategic 1:1 sessions with gastronomy and AI experts to accelerate results in your business. Plans from €150. Book now.",
+    "keywords": "chef mentoring, ai chef pro consulting, gastronomic advisory, restaurant artificial intelligence"
+  },
+  "hero": {
+    "title": "AI Chef Pro Mentoring",
+    "subtitle": "Incorporate Professional Artificial Intelligence into your daily routine. We offer customized Training and Advisory plans.",
+    "cta": "Book your Mentoring Now"
+  },
+  "secondHero": {
+    "title": "AI Chef Pro Personalized Online Mentoring",
+    "subtitle": "Maximize AI Chef Pro's potential with specialized advisory",
+    "description": "Strategic 1:1 sessions with gastronomy and AI experts to accelerate results in your business",
+    "imageAlt": "AI Chef Pro Consulting"
+  },
+  "benefits": {
+    "title": "Why do you need personalized consulting?",
+    "cards": [
+      {
+        "title": "Accelerated results",
+        "description": "Reduce months of trial and error to a single strategic session. Immediate ROI on your AI Chef Pro investment."
+      },
+      {
+        "title": "Tailored strategy",
+        "description": "Receive a personalized plan for your specific type of gastronomic business, adapted to your particular objectives."
+      },
+      {
+        "title": "Advanced techniques",
+        "description": "Access exclusive methodologies and undocumented prompts that only expert users know."
+      },
+      {
+        "title": "Time saving",
+        "description": "Eliminate the learning curve and start implementing effective solutions from day one."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Our Online Consulting and Mentoring Plans",
+    "description": "Select the plan, schedule the mentoring and get ready to master the potential of artificial intelligence applied to restaurant management and the world of gastronomy and hospitality in general in one or several sessions.",
+    "plans": [
+      {
+        "name": "Express Session",
+        "price": "€150",
+        "duration": "2 hours",
+        "features": [
+          "Quick needs diagnosis",
+          "Personalized initial setup", 
+          "Focus on 1-2 key tools",
+          "Immediate implementation solutions"
+        ],
+        "idealFor": "New users or those with specific punctual needs",
+        "cta": "Book now"
+      },
+      {
+        "name": "Standard Session", 
+        "price": "€275",
+        "duration": "3 hours",
+        "popular": "🔥 Most popular",
+        "discount": "Save 8%",
+        "features": [
+          "Complete needs analysis",
+          "Advanced profile configuration",
+          "Strategy for 3-4 key tools",
+          "30-day implementation plan",
+          "Exclusive complementary material"
+        ],
+        "idealFor": "Restaurants, bakeries and established businesses",
+        "cta": "Book now"
+      },
+      {
+        "name": "Intensive Session",
+        "price": "€360", 
+        "duration": "4 hours",
+        "discount": "Save 20%",
+        "features": [
+          "Total integration strategic plan",
+          "Advanced training on all tools",
+          "Personalized prompt optimization",
+          "7-day follow-up included",
+          "Access to exclusive premium resources"
+        ],
+        "idealFor": "Restaurant groups, catering companies and medium-sized businesses",
+        "cta": "Book now"
+      }
+    ]
+  },
+  "specialization": {
+    "title": "Specialized Mentoring by Professional Profile or Business Concept Consulting",
+    "description": "All our 1, 2 or 3 hour sessions adapt to your specific profile within the gastronomic industry and/or your business concept. Our training and capacity building mentorships will be configured and focused on your reality so you can make the most of using this suite of tools powered by artificial intelligence that are useful for restaurant owners, executive/corporate chefs, restaurant managers or directors, team leaders in general in hospitality and the restaurant industry.",
+    "profiles": [
+      {
+        "title": "Restaurants",
+        "description": "Menu optimization, cost management, differential creativity and diner experience"
+      },
+      {
+        "title": "Catering",
+        "description": "Large-scale planning, logistics optimization and operational efficiency"
+      },
+      {
+        "title": "Pastries",
+        "description": "Creative techniques, premium presentation and product diversification"
+      },
+      {
+        "title": "Food Trucks",
+        "description": "Menu adaptation, mobility strategies and digital presence"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "items": [
+      {
+        "quote": "The mentoring transformed how we use AI Chef Pro. In just 3 hours we learned what would have taken us months to discover.",
+        "author": "María González",
+        "role": "Executive Chef, Restaurant La Mesa"
+      },
+      {
+        "quote": "The investment paid off from the first week. Our operational efficiency increased by 30%.",
+        "author": "Carlos Ruiz", 
+        "role": "Owner, Catering Delicious"
+      },
+      {
+        "quote": "The advanced techniques they taught us have given us a competitive advantage in our market.",
+        "author": "Ana Martín",
+        "role": "Pastry Chef, Sweet Dreams"
+      }
+    ]
+  },
+  "process": {
+    "title": "How Does Our Mentoring Process Work?",
+    "steps": [
+      {
+        "title": "1. Initial Assessment",
+        "description": "We analyze your current business and specific needs to customize the session."
+      },
+      {
+        "title": "2. Personalized Session",
+        "description": "Live mentoring focused on your objectives with practical exercises and real cases."
+      },
+      {
+        "title": "3. Implementation Plan",
+        "description": "We deliver a detailed action plan with next steps and recommended resources."
+      },
+      {
+        "title": "4. Follow-up Support",
+        "description": "We provide ongoing support to ensure successful implementation of strategies."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "Do I need to have AI Chef Pro to take the mentoring?",
+        "answer": "Yes, the mentoring is designed to maximize the use of AI Chef Pro. If you don't have it yet, we recommend getting familiar with the platform before the session."
+      },
+      {
+        "question": "Can the session be recorded?",
+        "answer": "Yes, with prior authorization we can record the session so you can review the content later."
+      },
+      {
+        "question": "What if I need more than one session?",
+        "answer": "No problem. Many clients opt for multiple sessions to deepen different areas. We offer special packages for multiple sessions."
+      },
+      {
+        "question": "Is there ongoing support after the mentoring?",
+        "answer": "Yes, all plans include email support for questions that may arise during implementation."
+      },
+      {
+        "question": "Can I reschedule my session?",
+        "answer": "Yes, you can reschedule up to 24 hours before the scheduled session without additional cost."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to Transform Your Business with AI?",
+    "description": "Don't wait any longer. Book your personalized mentoring session and start maximizing the potential of AI Chef Pro today.",
+    "cta": "View Plans and Book Now"
+  },
+  "microSession": {
+    "title": "🎁 Free Micro-Session",
+    "description": "Not sure which plan is right for you? Book a free 30-minute consultation.",
+    "cta": "Book Free Consultation"
+  }
   },
   "categories": {
     "title": "Explore Our 6 App Categories",

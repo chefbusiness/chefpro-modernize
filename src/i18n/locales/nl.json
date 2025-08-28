@@ -44,6 +44,193 @@
     "new_app_label": "Nieuwe App Elke Week",
     "chefs_label": "Chefs en Horeca Professionals vertrouwen ons"
   },
+  "mentoriaOnline": {
+    "seo": {
+      "title": "AI Chef Pro Gepersonaliseerde Online Mentoring - Maximaliseer uw potentieel",
+      "description": "Strategische 1-op-1 sessies met gastronomie en AI-experts om resultaten in uw bedrijf te versnellen. Plannen vanaf €150. Boek nu.",
+      "keywords": "chef mentoring, ai chef pro consultancy, gastronomisch advies, restaurant kunstmatige intelligentie"
+    },
+    "hero": {
+      "title": "AI Chef Pro Mentoring",
+      "subtitle": "Integreer Professionele Kunstmatige Intelligentie in uw dagelijkse routine. Wij bieden op maat gemaakte Training en Adviesplannen.",
+      "cta": "Boek uw Mentoring Nu"
+    },
+    "secondHero": {
+      "title": "AI Chef Pro Gepersonaliseerde Online Mentoring",
+      "subtitle": "Maximaliseer het potentieel van AI Chef Pro met gespecialiseerd advies",
+      "description": "Strategische 1-op-1 sessies met gastronomie en AI-experts om resultaten in uw bedrijf te versnellen",
+      "imageAlt": "AI Chef Pro Consultancy"
+    },
+    "benefits": {
+      "title": "Waarom heeft u gepersonaliseerde consultancy nodig?",
+      "cards": [
+        {
+          "title": "Versnelde resultaten",
+          "description": "Reduceer maanden van vallen en opstaan tot één strategische sessie. Onmiddellijk ROI op uw AI Chef Pro investering."
+        },
+        {
+          "title": "Op maat gemaakte strategie",
+          "description": "Ontvang een gepersonaliseerd plan voor uw specifieke type gastronomisch bedrijf, aangepast aan uw particuliere doelstellingen."
+        },
+        {
+          "title": "Geavanceerde technieken",
+          "description": "Toegang tot exclusieve methodologieën en niet-gedocumenteerde prompts die alleen expertgebruikers kennen."
+        },
+        {
+          "title": "Tijdsbesparing",
+          "description": "Elimineer de leercurve en begin vanaf dag één met het implementeren van effectieve oplossingen."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Onze Online Consultancy en Mentoring Plannen",
+      "description": "Selecteer het plan, plan de mentoring en bereid u voor om het potentieel van kunstmatige intelligentie toegepast op restaurantmanagement en de wereld van gastronomie en horeca in het algemeen te beheersen in één of meerdere sessies.",
+      "plans": [
+        {
+          "name": "Express Sessie",
+          "price": "€150",
+          "duration": "2 uur",
+          "features": [
+            "Snelle behoeftediagnose",
+            "Gepersonaliseerde initiële setup",
+            "Focus op 1-2 kerntools",
+            "Onmiddellijke implementatieoplossingen"
+          ],
+          "idealFor": "Nieuwe gebruikers of degenen met specifieke punctuele behoeften",
+          "cta": "Boek nu"
+        },
+        {
+          "name": "Standaard Sessie",
+          "price": "€275",
+          "duration": "3 uur",
+          "popular": "🔥 Meest populair",
+          "discount": "Bespaar 8%",
+          "features": [
+            "Volledige behoefteanalyse",
+            "Geavanceerde profielconfiguratie",
+            "Strategie voor 3-4 kerntools",
+            "30-dagen implementatieplan",
+            "Exclusief aanvullend materiaal"
+          ],
+          "idealFor": "Restaurants, bakkerijen en gevestigde bedrijven",
+          "cta": "Boek nu"
+        },
+        {
+          "name": "Intensieve Sessie",
+          "price": "€360",
+          "duration": "4 uur",
+          "discount": "Bespaar 20%",
+          "features": [
+            "Strategisch totale integratieplan",
+            "Geavanceerde training op alle tools",
+            "Gepersonaliseerde prompt optimalisatie",
+            "7-dagen follow-up inbegrepen",
+            "Toegang tot exclusieve premium bronnen"
+          ],
+          "idealFor": "Restaurantgroepen, cateringbedrijven en middelgrote bedrijven",
+          "cta": "Boek nu"
+        }
+      ]
+    },
+    "specialization": {
+      "title": "Gespecialiseerde Mentoring per Professioneel Profiel of Consultancy per Bedrijfsconcept",
+      "description": "Al onze 1, 2 of 3 uur sessies passen zich aan uw specifieke profiel binnen de gastronomische industrie en/of uw bedrijfsconcept. Onze trainings- en capaciteitsopbouw mentoringen zullen geconfigureerd en gefocust zijn op uw realiteit zodat u het beste kunt halen uit het gebruik van deze suite van tools aangedreven door kunstmatige intelligentie die nuttig zijn voor restauranteigenaren, uitvoerende/bedrijfschefs, restaurant managers of directeuren, teamleiders in het algemeen in de horeca en restaurant industrie.",
+      "profiles": [
+        {
+          "title": "Restaurants",
+          "description": "Menu optimalisatie, kostenbeheer, differentiële creativiteit en diner ervaring"
+        },
+        {
+          "title": "Catering",
+          "description": "Grootschalige planning, logistieke optimalisatie en operationele efficiëntie"
+        },
+        {
+          "title": "Patisseries",
+          "description": "Creatieve technieken, premium presentatie en productdiversificatie"
+        },
+        {
+          "title": "Food Trucks",
+          "description": "Menu aanpassing, mobiliteitsstrategieën en digitale aanwezigheid"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Wat onze klanten zeggen",
+      "items": [
+        {
+          "quote": "De mentoring transformeerde ons gebruik van AI Chef Pro. In slechts 3 uur leerden we wat ons maanden zou hebben gekost om te ontdekken.",
+          "author": "María González",
+          "role": "Uitvoerende Chef, Restaurant La Mesa"
+        },
+        {
+          "quote": "De investering betaalde zich terug vanaf de eerste week. Onze operationele efficiëntie steeg met 30%.",
+          "author": "Carlos Ruiz",
+          "role": "Eigenaar, Catering Delicious"
+        },
+        {
+          "quote": "De geavanceerde technieken die ze ons leerden gaven ons een concurrentievoordeel op onze markt.",
+          "author": "Ana Martín",
+          "role": "Patissier, Sweet Dreams"
+        }
+      ]
+    },
+    "process": {
+      "title": "Hoe werkt ons mentoring proces?",
+      "steps": [
+        {
+          "title": "1. Initiële beoordeling",
+          "description": "We analyseren uw huidige bedrijf en specifieke behoeften om de sessie te personaliseren."
+        },
+        {
+          "title": "2. Gepersonaliseerde sessie",
+          "description": "Live mentoring gefocust op uw doelstellingen met praktische oefeningen en echte cases."
+        },
+        {
+          "title": "3. Implementatieplan",
+          "description": "We leveren een gedetailleerd actieplan met volgende stappen en aanbevolen bronnen."
+        },
+        {
+          "title": "4. Follow-up ondersteuning",
+          "description": "We bieden voortdurende ondersteuning om succesvolle implementatie van strategieën te waarborgen."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Veelgestelde Vragen",
+      "items": [
+        {
+          "question": "Moet ik AI Chef Pro hebben om de mentoring te volgen?",
+          "answer": "Ja, de mentoring is ontworpen om het gebruik van AI Chef Pro te maximaliseren. Als u het nog niet heeft, raden we aan om vertrouwd te raken met het platform voor de sessie."
+        },
+        {
+          "question": "Kan de sessie worden opgenomen?",
+          "answer": "Ja, met voorafgaande toestemming kunnen we de sessie opnemen zodat u de inhoud later kunt bekijken."
+        },
+        {
+          "question": "Wat als ik meer dan één sessie nodig heb?",
+          "answer": "Geen probleem. Veel klanten kiezen voor meerdere sessies om verschillende gebieden te verdiepen. We bieden speciale pakketten voor meerdere sessies."
+        },
+        {
+          "question": "Is er voortdurende ondersteuning na de mentoring?",
+          "answer": "Ja, alle plannen bevatten e-mail ondersteuning voor vragen die kunnen ontstaan tijdens implementatie."
+        },
+        {
+          "question": "Kan ik mijn sessie opnieuw inplannen?",
+          "answer": "Ja, u kunt tot 24 uur voor de geplande sessie opnieuw inplannen zonder extra kosten."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Klaar om uw Bedrijf te Transformeren met AI?",
+      "description": "Wacht niet langer. Boek uw gepersonaliseerde mentoring sessie en begin vandaag met het maximaliseren van het potentieel van AI Chef Pro.",
+      "cta": "Bekijk Plannen en Boek Nu"
+    },
+    "microSession": {
+      "title": "🎁 Gratis Micro-Sessie",
+      "description": "Niet zeker welk plan geschikt is voor u? Boek een gratis 30-minuten consultatie.",
+      "cta": "Boek Gratis Consultatie"
+    }
+  },
   "categories": {
     "title": "Ontdek onze 6 App Categorieën",
     "description": "Elke categorie is ontworpen om specifieke aspecten van uw culinaire bedrijf te verbeteren",

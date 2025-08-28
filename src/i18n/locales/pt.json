@@ -44,6 +44,193 @@
     "new_app_label": "Nova App Toda Semana",
     "chefs_label": "Chefs e Profissionais da Hospitalidade confiam em nós"
   },
+  "mentoriaOnline": {
+    "seo": {
+      "title": "Mentoria Online Personalizada AI Chef Pro - Maximize seu potencial",
+      "description": "Sessões estratégicas 1:1 com especialistas em gastronomia e IA para acelerar resultados no seu negócio. Planos a partir de 150€. Reserve agora.",
+      "keywords": "mentoria chef, consultoria ai chef pro, consultoria gastronômica, inteligência artificial restaurantes"
+    },
+    "hero": {
+      "title": "Mentoria AI Chef Pro",
+      "subtitle": "Incorpore a Inteligência Artificial Profissional no seu dia a dia. Oferecemos planos de Treinamento e Consultoria personalizados.",
+      "cta": "Reserve sua Mentoria Agora"
+    },
+    "secondHero": {
+      "title": "Mentoria Online Personalizada AI Chef Pro",
+      "subtitle": "Maximize o potencial do AI Chef Pro com consultoria especializada",
+      "description": "Sessões estratégicas 1:1 com especialistas em gastronomia e IA para acelerar resultados no seu negócio",
+      "imageAlt": "Consultoria AI Chef Pro"
+    },
+    "benefits": {
+      "title": "Por que você precisa de uma consultoria personalizada?",
+      "cards": [
+        {
+          "title": "Resultados acelerados",
+          "description": "Reduza meses de tentativa e erro a uma única sessão estratégica. ROI imediato no seu investimento em AI Chef Pro."
+        },
+        {
+          "title": "Estratégia personalizada",
+          "description": "Receba um plano personalizado para seu tipo específico de negócio gastronômico, adaptado aos seus objetivos particulares."
+        },
+        {
+          "title": "Técnicas avançadas",
+          "description": "Acesse metodologias exclusivas e prompts não documentados que apenas usuários experientes conhecem."
+        },
+        {
+          "title": "Economia de tempo",
+          "description": "Elimine a curva de aprendizado e comece a implementar soluções eficazes desde o primeiro dia."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Nossos Planos de Consultoria e Mentoria Online",
+      "description": "Selecione o plano, agende a mentoria e prepare-se para dominar o potencial da inteligência artificial aplicada à gestão de restaurantes e ao mundo da gastronomia e hospitalidade em geral em uma ou várias sessões.",
+      "plans": [
+        {
+          "name": "Sessão Express",
+          "price": "150€",
+          "duration": "2 horas",
+          "features": [
+            "Diagnóstico rápido de necessidades",
+            "Configuração inicial personalizada",
+            "Foco em 1-2 ferramentas-chave",
+            "Soluções de implementação imediata"
+          ],
+          "idealFor": "Novos usuários ou aqueles com necessidades específicas pontuais",
+          "cta": "Reserve agora"
+        },
+        {
+          "name": "Sessão Padrão",
+          "price": "275€",
+          "duration": "3 horas",
+          "popular": "🔥 Mais popular",
+          "discount": "Economize 8%",
+          "features": [
+            "Análise completa de necessidades",
+            "Configuração avançada do perfil",
+            "Estratégia para 3-4 ferramentas-chave",
+            "Plano de implementação de 30 dias",
+            "Material complementar exclusivo"
+          ],
+          "idealFor": "Restaurantes, padarias e negócios estabelecidos",
+          "cta": "Reserve agora"
+        },
+        {
+          "name": "Sessão Intensiva",
+          "price": "360€",
+          "duration": "4 horas",
+          "discount": "Economize 20%",
+          "features": [
+            "Plano estratégico de integração total",
+            "Treinamento avançado em todas as ferramentas",
+            "Otimização de prompts personalizados",
+            "Acompanhamento de 7 dias incluído",
+            "Acesso a recursos premium exclusivos"
+          ],
+          "idealFor": "Grupos de restauração, empresas de catering e negócios médios",
+          "cta": "Reserve agora"
+        }
+      ]
+    },
+    "specialization": {
+      "title": "Mentoria Especializada por Perfil Profissional ou Consultoria por Conceito de Negócio",
+      "description": "Todas as nossas sessões de 1, 2 ou 3 horas se adaptam ao seu perfil específico na indústria gastronômica e/ou ao seu conceito de negócio. Nossas mentorias de treinamento e capacitação serão configuradas e focadas na sua realidade para que você possa aproveitar ao máximo o uso desta suíte de ferramentas alimentadas por inteligência artificial que são úteis para proprietários de restaurantes, chefs executivos/corporativos, gerentes ou diretores de restaurantes, líderes de equipe em geral na hospitalidade e indústria da restauração.",
+      "profiles": [
+        {
+          "title": "Restaurantes",
+          "description": "Otimização de cardápio, gestão de custos, criatividade diferencial e experiência do comensal"
+        },
+        {
+          "title": "Catering",
+          "description": "Planejamento em larga escala, otimização logística e eficiência operacional"
+        },
+        {
+          "title": "Confeitarias",
+          "description": "Técnicas criativas, apresentação premium e diversificação de produtos"
+        },
+        {
+          "title": "Food Trucks",
+          "description": "Adaptação de cardápio, estratégias de mobilidade e presença digital"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "O que dizem nossos clientes",
+      "items": [
+        {
+          "quote": "A mentoria transformou nosso uso do AI Chef Pro. Em apenas 3 horas aprendemos o que levaria meses para descobrir.",
+          "author": "María González",
+          "role": "Chef Executiva, Restaurante La Mesa"
+        },
+        {
+          "quote": "O investimento se pagou desde a primeira semana. Nossa eficiência operacional aumentou 30%.",
+          "author": "Carlos Ruiz",
+          "role": "Proprietário, Catering Delicious"
+        },
+        {
+          "quote": "As técnicas avançadas que nos ensinaram nos deram uma vantagem competitiva no nosso mercado.",
+          "author": "Ana Martín",
+          "role": "Chef Confeiteira, Sweet Dreams"
+        }
+      ]
+    },
+    "process": {
+      "title": "Como funciona nosso processo de mentoria?",
+      "steps": [
+        {
+          "title": "1. Avaliação inicial",
+          "description": "Analisamos seu negócio atual e necessidades específicas para personalizar a sessão."
+        },
+        {
+          "title": "2. Sessão personalizada",
+          "description": "Mentoria ao vivo focada nos seus objetivos com exercícios práticos e casos reais."
+        },
+        {
+          "title": "3. Plano de implementação",
+          "description": "Entregamos um plano de ação detalhado com próximos passos e recursos recomendados."
+        },
+        {
+          "title": "4. Suporte de acompanhamento",
+          "description": "Fornecemos suporte contínuo para garantir a implementação bem-sucedida das estratégias."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "items": [
+        {
+          "question": "Preciso ter o AI Chef Pro para fazer a mentoria?",
+          "answer": "Sim, a mentoria é projetada para maximizar o uso do AI Chef Pro. Se você ainda não tem, recomendamos se familiarizar com a plataforma antes da sessão."
+        },
+        {
+          "question": "A sessão pode ser gravada?",
+          "answer": "Sim, com autorização prévia podemos gravar a sessão para que você possa revisar o conteúdo posteriormente."
+        },
+        {
+          "question": "E se eu precisar de mais de uma sessão?",
+          "answer": "Sem problema. Muitos clientes optam por várias sessões para aprofundar diferentes áreas. Oferecemos pacotes especiais para sessões múltiplas."
+        },
+        {
+          "question": "Há suporte contínuo após a mentoria?",
+          "answer": "Sim, todos os planos incluem suporte por email para dúvidas que possam surgir durante a implementação."
+        },
+        {
+          "question": "Posso reagendar minha sessão?",
+          "answer": "Sim, você pode reagendar até 24 horas antes da sessão programada sem custo adicional."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar seu Negócio com IA?",
+      "description": "Não espere mais. Reserve sua sessão de mentoria personalizada e comece a maximizar o potencial do AI Chef Pro hoje.",
+      "cta": "Ver Planos e Reservar Agora"
+    },
+    "microSession": {
+      "title": "🎁 Micro-Sessão Gratuita",
+      "description": "Não tem certeza de qual plano é o certo para você? Reserve uma consulta gratuita de 30 minutos.",
+      "cta": "Reservar Consulta Gratuita"
+    }
+  },
   "categories": {
     "title": "Explore nossas 6 Categorias de Apps",
     "description": "Cada categoria é projetada para melhorar aspectos específicos do seu negócio culinário",

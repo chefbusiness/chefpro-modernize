@@ -7,9 +7,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, Users, Star, ArrowRight, BookOpen, Target, Zap, TrendingUp, Search, Lightbulb, Timer, ChevronDown, ChevronRight } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useLanguage } from '@/hooks/useLanguage';
 
 const MentoriaOnline = () => {
   const { t } = useTranslation();
+  const { currentLanguage } = useLanguage();
 
   const scrollToCalendly = () => {
     const calendlySection = document.getElementById('calendly-section');
@@ -21,9 +23,9 @@ const MentoriaOnline = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title="Mentoría Online Personalizada AI Chef Pro - Maximiza tu potencial"
-        description="Sesiones estratégicas 1:1 con expertos en gastronomía e IA para acelerar resultados en tu negocio. Planes desde €150. Reserva ahora."
-        keywords="mentoría chef, consultoría ai chef pro, asesoramiento gastronómico, inteligencia artificial restaurantes"
+        title={t('mentoriaOnline.seo.title')}
+        description={t('mentoriaOnline.seo.description')}
+        keywords={t('mentoriaOnline.seo.keywords')}
       />
       <ModernHeader />
       
@@ -33,10 +35,10 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl mb-6">
-                Mentoría AI Chef Pro
+                {t('mentoriaOnline.hero.title')}
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Incorpora el uso de la Inteligencia Artificial Profesional a tu día a día. Te Ofrecemos planes de Asesoramiento y Entrenamiento a medida.
+                {t('mentoriaOnline.hero.subtitle')}
               </p>
             </div>
           </div>

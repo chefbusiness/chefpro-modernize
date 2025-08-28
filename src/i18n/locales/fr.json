@@ -43,8 +43,195 @@
     "categories_label": "Catégories Professionnelles",
     "new_app": "1",
     "new_app_label": "Nouvelle App Chaque Semaine",
-    "chefs": "764+",
-    "chefs_label": "Chefs et Professionnels de l'Hôtellerie nous font confiance"
+  "chefs": "764+",
+  "chefs_label": "Chefs et Professionnels de l'Hôtellerie nous font confiance"
+},
+"mentoriaOnline": {
+  "seo": {
+    "title": "Mentorat en Ligne Personnalisé AI Chef Pro - Maximisez votre potentiel",
+    "description": "Séances stratégiques 1:1 avec des experts en gastronomie et IA pour accélérer les résultats de votre entreprise. Plans à partir de 150€. Réservez maintenant.",
+    "keywords": "mentorat chef, conseil ai chef pro, conseil gastronomique, intelligence artificielle restaurants"
+  },
+  "hero": {
+    "title": "Mentorat AI Chef Pro",
+    "subtitle": "Intégrez l'Intelligence Artificielle Professionnelle dans votre quotidien. Nous offrons des plans de Formation et Conseil sur mesure.",
+    "cta": "Réservez votre Mentorat Maintenant"
+  },
+  "secondHero": {
+    "title": "Mentorat en Ligne Personnalisé AI Chef Pro",
+    "subtitle": "Maximisez le potentiel d'AI Chef Pro avec un conseil spécialisé",
+    "description": "Séances stratégiques 1:1 avec des experts en gastronomie et IA pour accélérer les résultats de votre entreprise",
+    "imageAlt": "Conseil AI Chef Pro"
+  },
+  "benefits": {
+    "title": "Pourquoi avez-vous besoin d'un conseil personnalisé?",
+    "cards": [
+      {
+        "title": "Résultats accélérés",
+        "description": "Réduisez des mois d'essais et erreurs à une seule séance stratégique. ROI immédiat sur votre investissement AI Chef Pro."
+      },
+      {
+        "title": "Stratégie sur mesure",
+        "description": "Recevez un plan personnalisé pour votre type spécifique d'entreprise gastronomique, adapté à vos objectifs particuliers."
+      },
+      {
+        "title": "Techniques avancées",
+        "description": "Accédez à des méthodologies exclusives et des prompts non documentés que seuls les utilisateurs experts connaissent."
+      },
+      {
+        "title": "Gain de temps",
+        "description": "Éliminez la courbe d'apprentissage et commencez à implémenter des solutions efficaces dès le premier jour."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Nos Plans de Conseil et Mentorat en Ligne",
+    "description": "Sélectionnez le plan, programmez le mentorat et préparez-vous à maîtriser le potentiel de l'intelligence artificielle appliquée à la gestion de restaurants et au monde de la gastronomie et de l'hôtellerie en général en une ou plusieurs séances.",
+    "plans": [
+      {
+        "name": "Séance Express",
+        "price": "150€",
+        "duration": "2 heures",
+        "features": [
+          "Diagnostic rapide des besoins",
+          "Configuration initiale personnalisée",
+          "Focus sur 1-2 outils clés",
+          "Solutions d'implémentation immédiate"
+        ],
+        "idealFor": "Nouveaux utilisateurs ou ceux avec des besoins spécifiques ponctuels",
+        "cta": "Réserver maintenant"
+      },
+      {
+        "name": "Séance Standard",
+        "price": "275€",
+        "duration": "3 heures", 
+        "popular": "🔥 Plus populaire",
+        "discount": "Économisez 8%",
+        "features": [
+          "Analyse complète des besoins",
+          "Configuration avancée du profil",
+          "Stratégie pour 3-4 outils clés",
+          "Plan d'implémentation de 30 jours",
+          "Matériel complémentaire exclusif"
+        ],
+        "idealFor": "Restaurants, boulangeries et entreprises établies",
+        "cta": "Réserver maintenant"
+      },
+      {
+        "name": "Séance Intensive",
+        "price": "360€",
+        "duration": "4 heures",
+        "discount": "Économisez 20%",
+        "features": [
+          "Plan stratégique d'intégration totale",
+          "Formation avancée sur tous les outils",
+          "Optimisation de prompts personnalisés",
+          "Suivi de 7 jours inclus",
+          "Accès aux ressources premium exclusives"
+        ],
+        "idealFor": "Groupes de restauration, entreprises de traiteur et entreprises moyennes",
+        "cta": "Réserver maintenant"
+      }
+    ]
+  },
+  "specialization": {
+    "title": "Mentorat Spécialisé par Profil Professionnel ou Conseil par Concept d'Entreprise",
+    "description": "Toutes nos séances de 1, 2 ou 3 heures s'adaptent à votre profil spécifique dans l'industrie gastronomique et/ou votre concept d'entreprise. Nos mentorings de formation et de renforcement des capacités seront configurés et axés sur votre réalité pour que vous puissiez tirer le meilleur parti de l'utilisation de cette suite d'outils alimentés par l'intelligence artificielle qui sont utiles pour les propriétaires de restaurants, les chefs exécutifs/corporatifs, les managers ou directeurs de restaurants, les leaders d'équipe en général dans l'hôtellerie et l'industrie de la restauration.",
+    "profiles": [
+      {
+        "title": "Restaurants",
+        "description": "Optimisation de carte, gestion des coûts, créativité différentielle et expérience du convive"
+      },
+      {
+        "title": "Traiteur",
+        "description": "Planification à grande échelle, optimisation logistique et efficacité opérationnelle"
+      },
+      {
+        "title": "Pâtisseries",
+        "description": "Techniques créatives, présentation premium et diversification de produits"
+      },
+      {
+        "title": "Food Trucks",
+        "description": "Adaptation de menu, stratégies de mobilité et présence numérique"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients",
+    "items": [
+      {
+        "quote": "Le mentorat a transformé notre utilisation d'AI Chef Pro. En seulement 3 heures, nous avons appris ce qui nous aurait pris des mois à découvrir.",
+        "author": "María González",
+        "role": "Chef Exécutive, Restaurant La Mesa"
+      },
+      {
+        "quote": "L'investissement s'est rentabilisé dès la première semaine. Notre efficacité opérationnelle a augmenté de 30%.",
+        "author": "Carlos Ruiz",
+        "role": "Propriétaire, Traiteur Delicious"
+      },
+      {
+        "quote": "Les techniques avancées qu'ils nous ont enseignées nous ont donné un avantage concurrentiel sur notre marché.",
+        "author": "Ana Martín",
+        "role": "Chef Pâtissière, Sweet Dreams"
+      }
+    ]
+  },
+  "process": {
+    "title": "Comment fonctionne notre processus de mentorat?",
+    "steps": [
+      {
+        "title": "1. Évaluation initiale",
+        "description": "Nous analysons votre entreprise actuelle et vos besoins spécifiques pour personnaliser la séance."
+      },
+      {
+        "title": "2. Séance personnalisée",
+        "description": "Mentorat en direct axé sur vos objectifs avec des exercices pratiques et des cas réels."
+      },
+      {
+        "title": "3. Plan d'implémentation",
+        "description": "Nous fournissons un plan d'action détaillé avec les prochaines étapes et les ressources recommandées."
+      },
+      {
+        "title": "4. Support de suivi",
+        "description": "Nous offrons un support continu pour assurer la mise en œuvre réussie des stratégies."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "items": [
+      {
+        "question": "Dois-je avoir AI Chef Pro pour suivre le mentorat?",
+        "answer": "Oui, le mentorat est conçu pour maximiser l'utilisation d'AI Chef Pro. Si vous ne l'avez pas encore, nous recommandons de vous familiariser avec la plateforme avant la séance."
+      },
+      {
+        "question": "La séance peut-elle être enregistrée?",
+        "answer": "Oui, avec autorisation préalable, nous pouvons enregistrer la séance pour que vous puissiez réviser le contenu plus tard."
+      },
+      {
+        "question": "Et si j'ai besoin de plus d'une séance?",
+        "answer": "Pas de problème. Beaucoup de clients optent pour plusieurs séances pour approfondir différents domaines. Nous offrons des packages spéciaux pour plusieurs séances."
+      },
+      {
+        "question": "Y a-t-il un support continu après le mentorat?",
+        "answer": "Oui, tous les plans incluent un support par email pour les questions qui peuvent survenir pendant l'implémentation."
+      },
+      {
+        "question": "Puis-je reprogrammer ma séance?",
+        "answer": "Oui, vous pouvez reprogrammer jusqu'à 24 heures avant la séance programmée sans coût supplémentaire."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à Transformer Votre Entreprise avec l'IA?",
+    "description": "N'attendez plus. Réservez votre séance de mentorat personnalisée et commencez à maximiser le potentiel d'AI Chef Pro aujourd'hui.",
+    "cta": "Voir les Plans et Réserver Maintenant"
+  },
+  "microSession": {
+    "title": "🎁 Micro-Séance Gratuite",
+    "description": "Pas sûr du plan qui vous convient? Réservez une consultation gratuite de 30 minutes.",
+    "cta": "Réserver une Consultation Gratuite"
+  }
   },
   "categories": {
     "title": "Explorez nos 6 Catégories d'Apps",
