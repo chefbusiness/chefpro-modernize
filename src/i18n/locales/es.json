@@ -929,6 +929,35 @@
           "title": "Implementación y seguimiento",
           "description": "Recibirás un plan de acción detallado y recursos complementarios. Incluimos seguimiento para asegurar resultados."
         }
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "questions": {
+          "question1": {
+            "question": "¿Necesito tener una suscripción activa a AI Chef Pro?",
+            "answer": "Sí, necesitas tener una cuenta activa en AI Chef Pro para poder aprovechar al máximo la consultoría. Recomendamos al menos el plan Pro para acceder a la mayoría de las funcionalidades que trabajaremos durante la sesión."
+          },
+          "question2": {
+            "question": "¿Qué plataforma se usa para las consultorías?",
+            "answer": "Utilizamos Google Meet para las sesiones de consultoría, lo que nos permite compartir pantalla, grabar la sesión (si lo deseas) y tener una comunicación fluida. Recibirás un enlace personalizado tras confirmar tu reserva."
+          },
+          "question3": {
+            "question": "¿Cómo me preparo para la sesión?",
+            "answer": "Te enviaremos un cuestionario completo 48 horas antes de la sesión. Para aprovechar al máximo, te recomendamos tener claros tus objetivos, acceso a tu cuenta de AI Chef Pro, y cualquier dato relevante de tu negocio (menús actuales, información sobre costes, etc.)."
+          },
+          "question4": {
+            "question": "¿Cuál es la política de cancelación?",
+            "answer": "Puedes reprogramar tu sesión hasta 24 horas antes sin coste adicional. Las cancelaciones con menos de 24 horas de antelación están sujetas a un cargo del 50%. Si necesitas cancelar, contáctanos cuanto antes para buscar la mejor solución."
+          },
+          "question5": {
+            "question": "¿Ofrecen garantía de satisfacción?",
+            "answer": "Sí, ofrecemos una garantía de satisfacción completa. Si al finalizar los primeros 30 minutos de la sesión consideras que no estás recibiendo el valor esperado, te reembolsaremos el 100% del importe."
+          },
+          "question6": {
+            "question": "¿Puedo solicitar una consultoría para un tema muy específico?",
+            "answer": "Absolutamente. En el formulario previo podrás detallar exactamente qué aspectos específicos quieres trabajar, ya sea una herramienta concreta de AI Chef Pro o un desafío particular de tu negocio."
+          }
+        }
       }
     }
   },

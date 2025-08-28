@@ -621,62 +621,80 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Preguntas Frecuentes
+                {currentLanguage === 'es' ? 'Preguntas Frecuentes' : t('mentoriaOnline.sections.faq.title')}
               </h2>
             </div>
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="w-full space-y-4">
                 <AccordionItem value="item-1" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Necesito tener una suscripción activa a AI Chef Pro?
+                    {currentLanguage === 'es' ? '¿Necesito tener una suscripción activa a AI Chef Pro?' : t('mentoriaOnline.sections.faq.questions.question1.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Sí, necesitas tener una cuenta activa en AI Chef Pro para poder aprovechar al máximo la consultoría. Recomendamos al menos el plan Pro para acceder a la mayoría de las funcionalidades que trabajaremos durante la sesión.
+                    {currentLanguage === 'es' 
+                      ? 'Sí, necesitas tener una cuenta activa en AI Chef Pro para poder aprovechar al máximo la consultoría. Recomendamos al menos el plan Pro para acceder a la mayoría de las funcionalidades que trabajaremos durante la sesión.'
+                      : t('mentoriaOnline.sections.faq.questions.question1.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Qué plataforma se usa para las consultorías?
+                    {currentLanguage === 'es' ? '¿Qué plataforma se usa para las consultorías?' : t('mentoriaOnline.sections.faq.questions.question2.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Utilizamos Google Meet para las sesiones de consultoría, lo que nos permite compartir pantalla, grabar la sesión (si lo deseas) y tener una comunicación fluida. Recibirás un enlace personalizado tras confirmar tu reserva.
+                    {currentLanguage === 'es' 
+                      ? 'Utilizamos Google Meet para las sesiones de consultoría, lo que nos permite compartir pantalla, grabar la sesión (si lo deseas) y tener una comunicación fluida. Recibirás un enlace personalizado tras confirmar tu reserva.'
+                      : t('mentoriaOnline.sections.faq.questions.question2.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Cómo me preparo para la sesión?
+                    {currentLanguage === 'es' ? '¿Cómo me preparo para la sesión?' : t('mentoriaOnline.sections.faq.questions.question3.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Te enviaremos un cuestionario completo 48 horas antes de la sesión. Para aprovechar al máximo, te recomendamos tener claros tus objetivos, acceso a tu cuenta de AI Chef Pro, y cualquier dato relevante de tu negocio (menús actuales, información sobre costes, etc.).
+                    {currentLanguage === 'es' 
+                      ? 'Te enviaremos un cuestionario completo 48 horas antes de la sesión. Para aprovechar al máximo, te recomendamos tener claros tus objetivos, acceso a tu cuenta de AI Chef Pro, y cualquier dato relevante de tu negocio (menús actuales, información sobre costes, etc.).'
+                      : t('mentoriaOnline.sections.faq.questions.question3.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Cuál es la política de cancelación?
+                    {currentLanguage === 'es' ? '¿Cuál es la política de cancelación?' : t('mentoriaOnline.sections.faq.questions.question4.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Puedes reprogramar tu sesión hasta 24 horas antes sin coste adicional. Las cancelaciones con menos de 24 horas de antelación están sujetas a un cargo del 50%. Si necesitas cancelar, contáctanos cuanto antes para buscar la mejor solución.
+                    {currentLanguage === 'es' 
+                      ? 'Puedes reprogramar tu sesión hasta 24 horas antes sin coste adicional. Las cancelaciones con menos de 24 horas de antelación están sujetas a un cargo del 50%. Si necesitas cancelar, contáctanos cuanto antes para buscar la mejor solución.'
+                      : t('mentoriaOnline.sections.faq.questions.question4.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Ofrecen garantía de satisfacción?
+                    {currentLanguage === 'es' ? '¿Ofrecen garantía de satisfacción?' : t('mentoriaOnline.sections.faq.questions.question5.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Sí, ofrecemos una garantía de satisfacción completa. Si al finalizar los primeros 30 minutos de la sesión consideras que no estás recibiendo el valor esperado, te reembolsaremos el 100% del importe.
+                    {currentLanguage === 'es' 
+                      ? 'Sí, ofrecemos una garantía de satisfacción completa. Si al finalizar los primeros 30 minutos de la sesión consideras que no estás recibiendo el valor esperado, te reembolsaremos el 100% del importe.'
+                      : t('mentoriaOnline.sections.faq.questions.question5.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-6" className="border border-border rounded-lg px-6">
                   <AccordionTrigger className="text-left">
-                    ¿Puedo solicitar una consultoría para un tema muy específico?
+                    {currentLanguage === 'es' ? '¿Puedo solicitar una consultoría para un tema muy específico?' : t('mentoriaOnline.sections.faq.questions.question6.question')}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Absolutamente. En el formulario previo podrás detallar exactamente qué aspectos específicos quieres trabajar, ya sea una herramienta concreta de AI Chef Pro o un desafío particular de tu negocio.
+                    {currentLanguage === 'es' 
+                      ? 'Absolutamente. En el formulario previo podrás detallar exactamente qué aspectos específicos quieres trabajar, ya sea una herramienta concreta de AI Chef Pro o un desafío particular de tu negocio.'
+                      : t('mentoriaOnline.sections.faq.questions.question6.answer')
+                    }
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

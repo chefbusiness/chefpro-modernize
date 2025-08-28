@@ -193,6 +193,35 @@
           "title": "Implementation and Follow-up",
           "description": "You will receive a detailed action plan and complementary resources. We include follow-up to ensure results."
         }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "questions": {
+          "question1": {
+            "question": "Do I need to have an active AI Chef Pro subscription?",
+            "answer": "Yes, you need to have an active account on AI Chef Pro to take full advantage of the consultation. We recommend at least the Pro plan to access most of the functionalities we will work with during the session."
+          },
+          "question2": {
+            "question": "What platform is used for consultations?",
+            "answer": "We use Google Meet for consultation sessions, which allows us to share screen, record the session (if you wish) and have fluid communication. You will receive a personalized link after confirming your reservation."
+          },
+          "question3": {
+            "question": "How do I prepare for the session?",
+            "answer": "We will send you a complete questionnaire 48 hours before the session. To make the most of it, we recommend having clear objectives, access to your AI Chef Pro account, and any relevant business data (current menus, cost information, etc.)."
+          },
+          "question4": {
+            "question": "What is the cancellation policy?",
+            "answer": "You can reschedule your session up to 24 hours in advance at no additional cost. Cancellations with less than 24 hours notice are subject to a 50% charge. If you need to cancel, contact us as soon as possible to find the best solution."
+          },
+          "question5": {
+            "question": "Do you offer a satisfaction guarantee?",
+            "answer": "Yes, we offer a complete satisfaction guarantee. If at the end of the first 30 minutes of the session you consider that you are not receiving the expected value, we will refund 100% of the amount."
+          },
+          "question6": {
+            "question": "Can I request a consultation for a very specific topic?",
+            "answer": "Absolutely. In the preliminary form you can detail exactly what specific aspects you want to work on, whether it's a specific AI Chef Pro tool or a particular challenge in your business."
+          }
+        }
       }
     }
   },
