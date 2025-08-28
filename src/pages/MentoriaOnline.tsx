@@ -79,7 +79,7 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                ¿Por qué necesitas una consultoría personalizada?
+                {currentLanguage === 'es' ? '¿Por qué necesitas una consultoría personalizada?' : t('mentoriaOnline.sections.benefits.title')}
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -88,11 +88,16 @@ const MentoriaOnline = () => {
                   <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <TrendingUp className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">Resultados acelerados</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Resultados acelerados' : t('mentoriaOnline.sections.benefits.accelerated_results.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Reduce meses de prueba y error a una sola sesión estratégica. ROI inmediato en tu inversión en AI Chef Pro.
+                    {currentLanguage === 'es' 
+                      ? 'Reduce meses de prueba y error a una sola sesión estratégica. ROI inmediato en tu inversión en AI Chef Pro.' 
+                      : t('mentoriaOnline.sections.benefits.accelerated_results.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -102,11 +107,16 @@ const MentoriaOnline = () => {
                   <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Search className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">Estrategia a medida</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Estrategia a medida' : t('mentoriaOnline.sections.benefits.custom_strategy.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Recibe un plan personalizado para tu tipo específico de negocio gastronómico, adaptado a tus objetivos particulares.
+                    {currentLanguage === 'es' 
+                      ? 'Recibe un plan personalizado para tu tipo específico de negocio gastronómico, adaptado a tus objetivos particulares.' 
+                      : t('mentoriaOnline.sections.benefits.custom_strategy.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -116,11 +126,16 @@ const MentoriaOnline = () => {
                   <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Lightbulb className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">Técnicas avanzadas</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Técnicas avanzadas' : t('mentoriaOnline.sections.benefits.advanced_techniques.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Accede a metodologías y prompts exclusivos no documentados que solo los usuarios expertos conocen.
+                    {currentLanguage === 'es' 
+                      ? 'Accede a metodologías y prompts exclusivos no documentados que solo los usuarios expertos conocen.' 
+                      : t('mentoriaOnline.sections.benefits.advanced_techniques.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -130,11 +145,16 @@ const MentoriaOnline = () => {
                   <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Timer className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">Ahorro de tiempo</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Ahorro de tiempo' : t('mentoriaOnline.sections.benefits.time_saving.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Elimina la curva de aprendizaje y comienza a implementar soluciones efectivas desde el primer día.
+                    {currentLanguage === 'es' 
+                      ? 'Elimina la curva de aprendizaje y comienza a implementar soluciones efectivas desde el primer día.' 
+                      : t('mentoriaOnline.sections.benefits.time_saving.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
