@@ -341,10 +341,13 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                Mentoría Especializada por Perfil Profesional o Consultoría por Concepto de Negocio
+                {currentLanguage === 'es' ? 'Mentoría Especializada por Perfil Profesional o Consultoría por Concepto de Negocio' : t('mentoriaOnline.sections.specialization.title')}
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-                Todas nuestras sesiones de 1 hora, 2 o 3 horas se adaptan a tu perfil específico dentro de la industria gastronómica y/o a tu concepto de negocio. Nuestras mentorías de entrenamiento y capacitación estarán configuradas y enfocadas en tu realidad para que puedas aprovechar al máximo el uso de esta suite de herramientas impulsadas con inteligencia artificial son útiles para <strong>dueños de restaurantes, chefs ejecutivos / corporativos, managers o directores de restaurantes, líderes de equipos en general en la hostelería y la industria de la restauración.</strong>
+                {currentLanguage === 'es' 
+                  ? 'Todas nuestras sesiones de 1 hora, 2 o 3 horas se adaptan a tu perfil específico dentro de la industria gastronómica y/o a tu concepto de negocio. Nuestras mentorías de entrenamiento y capacitación estarán configuradas y enfocadas en tu realidad para que puedas aprovechar al máximo el uso de esta suite de herramientas impulsadas con inteligencia artificial son útiles para dueños de restaurantes, chefs ejecutivos / corporativos, managers o directores de restaurantes, líderes de equipos en general en la hostelería y la industria de la restauración.' 
+                  : t('mentoriaOnline.sections.specialization.subtitle')
+                }
               </p>
             </div>
 
@@ -353,14 +356,19 @@ const MentoriaOnline = () => {
                 <CardHeader>
                   <img 
                     src="https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Restaurnte.jpeg" 
-                    alt="Restaurantes" 
+                    alt={currentLanguage === 'es' ? 'Restaurantes' : t('mentoriaOnline.sections.specialization.restaurants.title')} 
                     className="w-16 h-16 mx-auto mb-4 rounded-lg"
                   />
-                  <CardTitle className="text-xl">Restaurantes</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Restaurantes' : t('mentoriaOnline.sections.specialization.restaurants.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Optimización de carta, gestión de costes, creatividad diferencial y experiencia del comensal
+                    {currentLanguage === 'es' 
+                      ? 'Optimización de carta, gestión de costes, creatividad diferencial y experiencia del comensal' 
+                      : t('mentoriaOnline.sections.specialization.restaurants.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -369,14 +377,19 @@ const MentoriaOnline = () => {
                 <CardHeader>
                   <img 
                     src="https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Catering.jpeg" 
-                    alt="Catering" 
+                    alt={currentLanguage === 'es' ? 'Catering' : t('mentoriaOnline.sections.specialization.catering.title')} 
                     className="w-16 h-16 mx-auto mb-4 rounded-lg"
                   />
-                  <CardTitle className="text-xl">Empresas de Catering</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Empresas de Catering' : t('mentoriaOnline.sections.specialization.catering.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Gestión de eventos, escalabilidad, optimización logística y maximización de márgenes
+                    {currentLanguage === 'es' 
+                      ? 'Gestión de eventos, escalabilidad, optimización logística y maximización de márgenes' 
+                      : t('mentoriaOnline.sections.specialization.catering.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -385,14 +398,19 @@ const MentoriaOnline = () => {
                 <CardHeader>
                   <img 
                     src="https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Pastelerias.jpeg" 
-                    alt="Pastelería" 
+                    alt={currentLanguage === 'es' ? 'Pastelería' : t('mentoriaOnline.sections.specialization.bakery.title')} 
                     className="w-16 h-16 mx-auto mb-4 rounded-lg"
                   />
-                  <CardTitle className="text-xl">Pastelerías/Panaderías</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Pastelerías/Panaderías' : t('mentoriaOnline.sections.specialization.bakery.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Creatividad, optimización de formulaciones, reducción de mermas y diferenciación
+                    {currentLanguage === 'es' 
+                      ? 'Creatividad, optimización de formulaciones, reducción de mermas y diferenciación' 
+                      : t('mentoriaOnline.sections.specialization.bakery.description')
+                    }
                   </p>
                 </CardContent>
               </Card>
@@ -401,14 +419,19 @@ const MentoriaOnline = () => {
                 <CardHeader>
                   <img 
                     src="https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Food-truck.jpeg" 
-                    alt="Food Truck" 
+                    alt={currentLanguage === 'es' ? 'Food Truck' : t('mentoriaOnline.sections.specialization.food_truck.title')} 
                     className="w-16 h-16 mx-auto mb-4 rounded-lg"
                   />
-                  <CardTitle className="text-xl">Food Trucks, Dark Kitchens y Conceptos Emergentes</CardTitle>
+                  <CardTitle className="text-xl">
+                    {currentLanguage === 'es' ? 'Food Trucks, Dark Kitchens y Conceptos Emergentes' : t('mentoriaOnline.sections.specialization.food_truck.title')}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Eficiencia en espacios reducidos, optimización de carta y estrategias de crecimiento
+                    {currentLanguage === 'es' 
+                      ? 'Eficiencia en espacios reducidos, optimización de carta y estrategias de crecimiento' 
+                      : t('mentoriaOnline.sections.specialization.food_truck.description')
+                    }
                   </p>
                 </CardContent>
               </Card>

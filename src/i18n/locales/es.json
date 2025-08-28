@@ -872,6 +872,26 @@
           "ideal": "Grupos de restauración, empresas de catering y negocios medianos",
           "button": "Reservar ahora"
         }
+      },
+      "specialization": {
+        "title": "Mentoría Especializada por Perfil Profesional o Consultoría por Concepto de Negocio",
+        "subtitle": "Todas nuestras sesiones de 1 hora, 2 o 3 horas se adaptan a tu perfil específico dentro de la industria gastronómica y/o a tu concepto de negocio. Nuestras mentorías de entrenamiento y capacitación estarán configuradas y enfocadas en tu realidad para que puedas aprovechar al máximo el uso de esta suite de herramientas impulsadas con inteligencia artificial son útiles para dueños de restaurantes, chefs ejecutivos / corporativos, managers o directores de restaurantes, líderes de equipos en general en la hostelería y la industria de la restauración.",
+        "restaurants": {
+          "title": "Restaurantes",
+          "description": "Optimización de carta, gestión de costes, creatividad diferencial y experiencia del comensal"
+        },
+        "catering": {
+          "title": "Empresas de Catering",
+          "description": "Gestión de eventos, escalabilidad, optimización logística y maximización de márgenes"
+        },
+        "bakery": {
+          "title": "Pastelerías/Panaderías",
+          "description": "Creatividad, optimización de formulaciones, reducción de mermas y diferenciación"
+        },
+        "food_truck": {
+          "title": "Food Trucks, Dark Kitchens y Conceptos Emergentes",
+          "description": "Eficiencia en espacios reducidos, optimización de carta y estrategias de crecimiento"
+        }
       }
     }
   },

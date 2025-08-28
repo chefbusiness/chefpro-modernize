@@ -1089,6 +1089,26 @@
           "ideal": "Restaurant groups, catering companies and medium businesses",
           "button": "Book now"
         }
+      },
+      "specialization": {
+        "title": "Specialized Mentoring by Professional Profile or Business Concept Consulting",
+        "subtitle": "All our 1, 2 or 3-hour sessions adapt to your specific profile within the gastronomic industry and/or your business concept. Our training and coaching mentorships will be configured and focused on your reality so you can make the most of using this suite of artificial intelligence-powered tools useful for restaurant owners, executive/corporate chefs, restaurant managers or directors, team leaders in general in hospitality and the restaurant industry.",
+        "restaurants": {
+          "title": "Restaurants",
+          "description": "Menu optimization, cost management, differential creativity and diner experience"
+        },
+        "catering": {
+          "title": "Catering Companies",
+          "description": "Event management, scalability, logistics optimization and margin maximization"
+        },
+        "bakery": {
+          "title": "Pastries/Bakeries",
+          "description": "Creativity, formulation optimization, waste reduction and differentiation"
+        },
+        "food_truck": {
+          "title": "Food Trucks, Dark Kitchens and Emerging Concepts",
+          "description": "Efficiency in reduced spaces, menu optimization and growth strategies"
+        }
       }
     }
   },
