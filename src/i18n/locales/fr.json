@@ -423,12 +423,86 @@
           }
         }
       },
-      "cta": {
-        "title": "Prêt à accélérer votre carrière?",
-        "subtitle": "Rejoignez plus de 200 chefs qui transforment déjà leur avenir professionnel",
-        "button": "Demander un Mentorat",
-        "availability": "Places limitées - Seulement 10 mentorés par mois"
-      }
+        "cta": {
+          "title": "Prêt à accélérer votre carrière?",
+          "subtitle": "Rejoignez plus de 200 chefs qui transforment déjà leur avenir professionnel",
+          "button": "Demander un Mentorat",
+          "availability": "Places limitées - Seulement 10 mentorés par mois"
+        },
+        "plans": {
+          "express": {
+            "title": "Express",
+            "subtitle": "Consultation spécifique et efficace",
+            "features": {
+              "0": "Séance de 90 minutes",
+              "1": "Analyse initiale de votre situation",
+              "2": "Recommandations spécifiques",
+              "3": "Guide d'implémentation"
+            },
+            "cta": "Réserver Express"
+          },
+          "standard": {
+            "title": "Standard",
+            "subtitle": "Mentorat complet et stratégique",
+            "features": {
+              "0": "Séance de 120 minutes",
+              "1": "Analyse approfondie personnalisée",
+              "2": "Stratégie d'implémentation",
+              "3": "Ressources et matériaux",
+              "4": "Suivi par email"
+            },
+            "cta": "Réserver Standard"
+          },
+          "intensive": {
+            "title": "Intensive",
+            "subtitle": "Transformation professionnelle complète",
+            "features": {
+              "0": "Séance de 180 minutes",
+              "1": "Analyse exhaustive",
+              "2": "Plan d'action détaillé",
+              "3": "Ressources premium",
+              "4": "Suivi prolongé",
+              "5": "Séance de révision"
+            },
+            "cta": "Réserver Intensive"
+          }
+        },
+        "faq": {
+          "items": {
+            "q1": {
+              "question": "Qu'inclut exactement chaque séance de mentorat?",
+              "answer": "Chaque séance comprend une consultation personnalisée où nous analysons vos objectifs spécifiques, révisons votre utilisation actuelle d'AI Chef Pro, identifions les opportunités d'amélioration et créons un plan d'action concret. Vous recevez également du matériel de soutien et un suivi par email."
+            },
+            "q2": {
+              "question": "Ai-je besoin d'expérience préalable avec l'IA pour bénéficier du mentorat?",
+              "answer": "Aucune expérience préalable n'est nécessaire. Nos mentorats sont conçus pour tous les niveaux, des débutants aux utilisateurs avancés. Nous adaptons le contenu à votre niveau actuel et vous guidons étape par étape."
+            },
+            "q3": {
+              "question": "Quelle est la différence entre les plans Express, Standard et Intensive?",
+              "answer": "Le plan Express (90 min) se concentre sur des consultations spécifiques et la résolution rapide de problèmes. Le Standard (120 min) inclut une analyse plus approfondie et des stratégies personnalisées. L'Intensive (180 min) est l'option la plus complète avec analyse exhaustive, plan d'implémentation détaillé et suivi prolongé."
+            },
+            "q4": {
+              "question": "Les séances sont-elles virtuelles ou en présentiel?",
+              "answer": "Toutes les séances sont virtuelles par appel vidéo, vous permettant d'accéder depuis n'importe où dans le monde. Cela nous permet aussi d'enregistrer la séance (avec votre consentement) pour que vous puissiez la réviser plus tard."
+            },
+            "q5": {
+              "question": "Puis-je programmer plusieurs séances?",
+              "answer": "Oui, vous pouvez programmer autant de séances que nécessaire. Beaucoup de nos mentorés travaillent avec des plans mensuels ou trimestriels pour obtenir de meilleurs résultats à long terme."
+            }
+          }
+        },
+        "free_session": {
+          "title": "Pas sûr? Commencez avec une Micro-Séance GRATUITE!",
+          "description": "15 minutes gratuites pour nous connaître et voir si nous pouvons vous aider à maximiser votre potentiel avec AI Chef Pro",
+          "card_title": "Micro-Séance Gratuite",
+          "card_subtitle": "15 minutes pour nous connaître",
+          "features": {
+            "0": "Évaluation rapide de votre situation",
+            "1": "Recommandations initiales",
+            "2": "Sans engagement"
+          },
+          "cta": "Réserver Gratuit"
+        }
     },
     "services": {
       "title": "Services - AI Chef Pro",

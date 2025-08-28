@@ -419,6 +419,80 @@
           "subtitle": "Schließen Sie sich über 200 Köchen an, die bereits ihre berufliche Zukunft transformieren",
           "button": "Mentoring Anfragen",
           "availability": "Begrenzte Plätze - Nur 10 Mentees pro Monat"
+        },
+        "plans": {
+          "express": {
+            "title": "Express",
+            "subtitle": "Spezifische und effiziente Beratung",
+            "features": {
+              "0": "90-Minuten-Sitzung",
+              "1": "Erste Situationsanalyse",
+              "2": "Spezifische Empfehlungen",
+              "3": "Umsetzungsleitfaden"
+            },
+            "cta": "Express Buchen"
+          },
+          "standard": {
+            "title": "Standard",
+            "subtitle": "Vollständiges und strategisches Mentoring",
+            "features": {
+              "0": "120-Minuten-Sitzung",
+              "1": "Tiefe personalisierte Analyse",
+              "2": "Umsetzungsstrategie",
+              "3": "Ressourcen und Materialien",
+              "4": "E-Mail-Nachverfolgung"
+            },
+            "cta": "Standard Buchen"
+          },
+          "intensive": {
+            "title": "Intensiv",
+            "subtitle": "Vollständige berufliche Transformation",
+            "features": {
+              "0": "180-Minuten-Sitzung",
+              "1": "Umfassende Analyse",
+              "2": "Detaillierter Aktionsplan",
+              "3": "Premium-Ressourcen",
+              "4": "Erweiterte Nachverfolgung",
+              "5": "Überprüfungssitzung"
+            },
+            "cta": "Intensiv Buchen"
+          }
+        },
+        "faq": {
+          "items": {
+            "q1": {
+              "question": "Was beinhaltet jede Mentoring-Sitzung genau?",
+              "answer": "Jede Sitzung beinhaltet eine personalisierte Beratung, bei der wir Ihre spezifischen Ziele analysieren, Ihre aktuelle Nutzung von AI Chef Pro überprüfen, Verbesserungsmöglichkeiten identifizieren und einen konkreten Aktionsplan erstellen. Sie erhalten auch Unterstützungsmaterialien und E-Mail-Nachverfolgung."
+            },
+            "q2": {
+              "question": "Benötige ich Vorerfahrung mit KI, um vom Mentoring zu profitieren?",
+              "answer": "Keine Vorerfahrung ist notwendig. Unsere Mentorings sind für alle Stufen konzipiert, von Anfängern bis zu fortgeschrittenen Benutzern. Wir passen den Inhalt an Ihr aktuelles Niveau an und führen Sie Schritt für Schritt."
+            },
+            "q3": {
+              "question": "Was ist der Unterschied zwischen Express-, Standard- und Intensiv-Plänen?",
+              "answer": "Der Express-Plan (90 Min) konzentriert sich auf spezifische Beratungen und schnelle Problemlösung. Standard (120 Min) beinhaltet tiefere Analyse und personalisierte Strategien. Intensiv (180 Min) ist die umfassendste Option mit erschöpfender Analyse, detailliertem Umsetzungsplan und erweiterter Nachverfolgung."
+            },
+            "q4": {
+              "question": "Sind die Sitzungen virtuell oder persönlich?",
+              "answer": "Alle Sitzungen sind virtuell über Videoanruf, wodurch Sie von überall auf der Welt zugreifen können. Dies ermöglicht uns auch, die Sitzung (mit Ihrer Zustimmung) aufzuzeichnen, damit Sie sie später überprüfen können."
+            },
+            "q5": {
+              "question": "Kann ich mehrere Sitzungen planen?",
+              "answer": "Ja, Sie können so viele Sitzungen planen, wie Sie benötigen. Viele unserer Mentees arbeiten mit monatlichen oder vierteljährlichen Plänen, um bessere Langzeitergebnisse zu erzielen."
+            }
+          }
+        },
+        "free_session": {
+          "title": "Nicht sicher? Beginnen Sie mit einer KOSTENLOSEN Mikro-Sitzung!",
+          "description": "15 Minuten kostenlos, um uns kennenzulernen und zu sehen, ob wir Ihnen helfen können, Ihr Potenzial mit AI Chef Pro zu maximieren",
+          "card_title": "Kostenlose Mikro-Sitzung",
+          "card_subtitle": "15 Minuten zum Kennenlernen",
+          "features": {
+            "0": "Schnelle Bewertung Ihrer Situation",
+            "1": "Erste Empfehlungen",
+            "2": "Keine Verpflichtung"
+          },
+          "cta": "Kostenlos Buchen"
         }
       },
       "services": {

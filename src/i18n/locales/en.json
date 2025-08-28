@@ -443,6 +443,80 @@
           "subtitle": "Join over 200 chefs who are already transforming their professional future",
           "button": "Request Mentoring",
           "availability": "Limited spots - Only 10 mentees per month"
+        },
+        "plans": {
+          "express": {
+            "title": "Express",
+            "subtitle": "Specific and efficient consultation",
+            "features": {
+              "0": "90-minute session",
+              "1": "Initial situation analysis",
+              "2": "Specific recommendations",
+              "3": "Implementation guide"
+            },
+            "cta": "Book Express"
+          },
+          "standard": {
+            "title": "Standard",
+            "subtitle": "Complete and strategic mentoring",
+            "features": {
+              "0": "120-minute session",
+              "1": "Deep personalized analysis",
+              "2": "Implementation strategy",
+              "3": "Resources and materials",
+              "4": "Email follow-up"
+            },
+            "cta": "Book Standard"
+          },
+          "intensive": {
+            "title": "Intensive",
+            "subtitle": "Complete professional transformation",
+            "features": {
+              "0": "180-minute session",
+              "1": "Exhaustive analysis",
+              "2": "Detailed action plan",
+              "3": "Premium resources",
+              "4": "Extended follow-up",
+              "5": "Review session"
+            },
+            "cta": "Book Intensive"
+          }
+        },
+        "faq": {
+          "items": {
+            "q1": {
+              "question": "What exactly does each mentoring session include?",
+              "answer": "Each session includes a personalized consultation where we analyze your specific goals, review your current use of AI Chef Pro, identify improvement opportunities and create a concrete action plan. You also receive support materials and email follow-up."
+            },
+            "q2": {
+              "question": "Do I need prior experience with AI to benefit from mentoring?",
+              "answer": "No prior experience is necessary. Our mentorships are designed for all levels, from beginners to advanced users. We adapt the content to your current level and guide you step by step."
+            },
+            "q3": {
+              "question": "What's the difference between Express, Standard and Intensive plans?",
+              "answer": "The Express plan (90 min) focuses on specific consultations and quick problem solving. Standard (120 min) includes deeper analysis and personalized strategies. Intensive (180 min) is the most complete option with exhaustive analysis, detailed implementation plan and extended follow-up."
+            },
+            "q4": {
+              "question": "Are sessions virtual or in-person?",
+              "answer": "All sessions are virtual via video call, allowing you to access from anywhere in the world. This also allows us to record the session (with your consent) so you can review it later."
+            },
+            "q5": {
+              "question": "Can I schedule multiple sessions?",
+              "answer": "Yes, you can schedule as many sessions as you need. Many of our mentees work with monthly or quarterly plans to achieve better long-term results."
+            }
+          }
+        },
+        "free_session": {
+          "title": "Not sure? Start with a FREE Micro-Session!",
+          "description": "15 minutes free to get to know each other and see if we can help you maximize your potential with AI Chef Pro",
+          "card_title": "Free Micro-Session",
+          "card_subtitle": "15 minutes to get to know each other",
+          "features": {
+            "0": "Quick assessment of your situation",
+            "1": "Initial recommendations",
+            "2": "No commitment"
+          },
+          "cta": "Book Free"
         }
       },
       "services": {
