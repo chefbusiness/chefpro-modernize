@@ -57,7 +57,10 @@ const ConversionNotifications = () => {
       className="fixed inset-x-4 bottom-4 md:left-6 md:right-auto md:bottom-6 z-50 animate-fade-in-up"
       aria-live="polite"
     >
-      <Card className="border-accent/20 bg-accent-light/90 backdrop-blur-sm shadow-glow w-full md:max-w-sm">
+      <Card className="border-accent shadow-lg w-full md:max-w-sm" style={{
+        background: 'linear-gradient(135deg, hsl(var(--accent-light) / 0.1) 0%, hsl(var(--accent) / 0.05) 100%)',
+        backdropFilter: 'blur(8px)'
+      }}>
         <CardContent className="p-4">
           <div className="flex items-start justify-between gap-3">
             <div className="flex items-center gap-3">
