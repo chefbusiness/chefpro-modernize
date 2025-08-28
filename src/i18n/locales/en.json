@@ -557,22 +557,14 @@
   "features": {
     "title": "Main Features",
     "description": "Complete suite of AI tools and applications for chefs and cooks who want to accelerate and optimize their daily work in professional kitchens and unleash their creativity.",
-    "assistant": {
-      "title": "Culinary AI Assistant Model",
-      "description": "Personalized recipe and technique recommendations adapted to your culinary preferences. More than 20 cookbooks."
-    },
-    "food_pairing": {
-      "title": "Food Pairing and Ingredient Substitutions",
-      "description": "Find ideal alternatives for ingredients you need to replace in your recipes."
-    },
-    "coaching": {
-      "title": "Chef Coaching",
-      "description": "Psychological and motivational support to improve performance and well-being in the kitchen."
-    },
-    "technology": {
-      "title": "Advanced LLM Technology",
-      "description": "Language models specialized for the gastronomic sector"
-    }
+    "ai_assistant": "Culinary AI Assistant Model",
+    "ai_assistant_desc": "Personalized recipe and technique recommendations adapted to your culinary preferences. More than 20 cookbooks.",
+    "food_pairing": "Food Pairing and Ingredient Substitutions",
+    "food_pairing_desc": "Find ideal alternatives for ingredients you need to replace in your recipes.",
+    "coaching": "Chef Coaching",
+    "coaching_desc": "Psychological and motivational support to improve performance and well-being in the kitchen.",
+    "llm_title": "Advanced LLM Technology",
+    "llm_description": "Language models specialized for the gastronomic sector"
   },
   "featured": {
     "title": "Featured Apps of the Week",
