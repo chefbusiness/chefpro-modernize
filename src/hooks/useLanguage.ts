@@ -35,8 +35,22 @@ export const useLanguage = () => {
         navigate(`/${newLang}`, { replace: true });
       }
     } else {
-      // For other pages, we'll handle this when we create them
-      window.location.href = newLang === 'es' ? '/' : `/${newLang}`;
+      // Handle language switching for specific pages
+      let newPath = '';
+      
+      // Remove current language prefix if exists
+      const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
+      const cleanPath = pathWithoutLang || '/';
+      
+      if (newLang === 'es') {
+        // For Spanish, no language prefix needed
+        newPath = cleanPath === '/' ? '/' : cleanPath;
+      } else {
+        // For other languages, add language prefix
+        newPath = `/${newLang}${cleanPath}`;
+      }
+      
+      navigate(newPath, { replace: true });
     }
   };
 

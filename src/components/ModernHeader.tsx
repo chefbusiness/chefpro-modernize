@@ -81,7 +81,7 @@ export default function ModernHeader() {
                       <div className="grid gap-1">
                         <NavigationMenuLink 
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="/mentoria-online"
+                          href={currentLanguage === 'es' ? '/mentoria-online' : `/${currentLanguage}/mentoria-online`}
                         >
                           {t('nav.mentoria_online')}
                         </NavigationMenuLink>

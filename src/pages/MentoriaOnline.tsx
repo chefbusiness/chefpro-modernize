@@ -50,10 +50,10 @@ const MentoriaOnline = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Mentoría Online Personalizada AI Chef Pro
+                  {currentLanguage === 'es' ? 'Mentoría Online Personalizada AI Chef Pro' : t('mentoriaOnline.hero.title')}
                 </h2>
                 <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Maximiza el potencial de AI Chef Pro con asesoría especializada
+                  {currentLanguage === 'es' ? 'Maximiza el potencial de AI Chef Pro con asesoría especializada' : t('mentoriaOnline.hero.subtitle')}
                 </h3>
                 <p className="text-lg text-muted-foreground mb-8">
                   Sesiones estratégicas 1:1 con expertos en gastronomía e IA para acelerar resultados en tu negocio
