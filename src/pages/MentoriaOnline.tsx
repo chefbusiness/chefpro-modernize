@@ -157,10 +157,10 @@ const MentoriaOnline = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-foreground mb-4">
-                {t('pricing.title')}
+                Planes de Mentoría Personalizada
               </h2>
               <p className="text-xl text-muted-foreground">
-                {t('pricing.description')}
+                Elige el plan que mejor se adapte a tus objetivos profesionales. Diseñado específicamente para chefs, pasteleros, chocolateros y emprendedores del sector. Cada plan está diseñado para impulsar tu negocio gastronómico.
               </p>
             </div>
             
@@ -170,7 +170,7 @@ const MentoriaOnline = () => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl font-bold">Express</CardTitle>
                   <CardDescription className="text-lg">
-                    {t('pricing.plans.express.subtitle')}
+                    Consulta específica y eficiente
                   </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">€150</span>
@@ -181,24 +181,24 @@ const MentoriaOnline = () => {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.express.features.0')}</span>
+                      <span>Sesión de 90 minutos</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.express.features.1')}</span>
+                      <span>Análisis inicial de tu situación</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.express.features.2')}</span>
+                      <span>Recomendaciones específicas</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.express.features.3')}</span>
+                      <span>Guía de implementación</span>
                     </li>
                   </ul>
                   <Button className="w-full btn-gold text-black hover:bg-yellow-400" asChild>
                     <a href="https://calendly.com/johnito9/mentoria-express-ai-chef-pro-150" target="_blank" rel="noopener noreferrer">
-                      {t('pricing.plans.express.cta')}
+                      Reservar Express
                     </a>
                   </Button>
                 </CardContent>
@@ -208,13 +208,13 @@ const MentoriaOnline = () => {
               <Card className="relative border-2 border-primary popular-plan">
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <Badge className="popular-badge">
-                    {t('pricing.popular')}
+                    Más Popular
                   </Badge>
                 </div>
                 <CardHeader className="text-center pt-6">
                   <CardTitle className="text-2xl font-bold">Estándar</CardTitle>
                   <CardDescription className="text-lg">
-                    {t('pricing.plans.standard.subtitle')}
+                    Mentoría completa y estratégica
                   </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">€275</span>
@@ -225,28 +225,28 @@ const MentoriaOnline = () => {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.standard.features.0')}</span>
+                      <span>Sesión de 120 minutos</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.standard.features.1')}</span>
+                      <span>Análisis profundo personalizado</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.standard.features.2')}</span>
+                      <span>Estrategia de implementación</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.standard.features.3')}</span>
+                      <span>Recursos y materiales</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.standard.features.4')}</span>
+                      <span>Seguimiento por email</span>
                     </li>
                   </ul>
                   <Button className="w-full btn-gold text-black hover:bg-yellow-400" asChild>
                     <a href="https://calendly.com/johnito9/mentoria-estandar-ai-chef-pro-275" target="_blank" rel="noopener noreferrer">
-                      {t('pricing.plans.standard.cta')}
+                      Reservar Estándar
                     </a>
                   </Button>
                 </CardContent>
@@ -257,7 +257,7 @@ const MentoriaOnline = () => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl font-bold">Intensiva</CardTitle>
                   <CardDescription className="text-lg">
-                    {t('pricing.plans.intensive.subtitle')}
+                    Transformación profesional completa
                   </CardDescription>
                   <div className="mt-4">
                     <span className="text-4xl font-bold">€360</span>
@@ -268,32 +268,32 @@ const MentoriaOnline = () => {
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.0')}</span>
+                      <span>Sesión de 180 minutos</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.1')}</span>
+                      <span>Análisis exhaustivo</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.2')}</span>
+                      <span>Plan de acción detallado</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.3')}</span>
+                      <span>Recursos premium</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.4')}</span>
+                      <span>Seguimiento extendido</span>
                     </li>
                     <li className="flex items-center">
                       <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                      <span>{t('pricing.plans.intensive.features.5')}</span>
+                      <span>Sesión de revisión</span>
                     </li>
                   </ul>
                   <Button className="w-full btn-gold text-black hover:bg-yellow-400" asChild>
                     <a href="https://calendly.com/johnito9/mentoria-intensiva-ai-chef-pro-360" target="_blank" rel="noopener noreferrer">
-                      {t('pricing.plans.intensive.cta')}
+                      Reservar Intensiva
                     </a>
                   </Button>
                 </CardContent>
