@@ -200,6 +200,41 @@
       "description": "Explora la rica gastronomía india con recetas auténticas como samosas, curries y chutneys tradicionales"
     }
   },
+  "showcase": {
+    "world_title": "Recetarios Mundiales",
+    "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
+    "business_title": "Herramientas Business",
+    "business_description": "6 aplicaciones esenciales para optimizar tu operación diaria",
+    "use_case_label": "Caso de uso",
+    "use_tool": "Usar Herramienta"
+  },
+  "cookbooks": {
+    "alemana": "Alemana",
+    "belga": "Belga",
+    "britanica": "Británica",
+    "espanola": "Española",
+    "francesa": "Francesa",
+    "griega": "Griega",
+    "portuguesa": "Portuguesa",
+    "paises_bajos": "Países Bajos",
+    "suiza": "Suiza",
+    "turca": "Turca",
+    "argentina": "Argentina",
+    "brasilena": "Brasileña",
+    "chilena": "Chilena",
+    "colombiana": "Colombiana",
+    "dominicana": "Dominicana",
+    "ecuatoriana": "Ecuatoriana",
+    "jamaicana": "Jamaicana",
+    "mexicana": "Mexicana",
+    "paraguaya": "Paraguaya",
+    "peruana": "Peruana",
+    "venezolana": "Venezolana",
+    "china": "China",
+    "india": "India",
+    "japonesa": "Japonesa",
+    "tailandesa": "Tailandesa"
+  },
   "categories_labels": {
     "creatividad": "Creatividad Culinaria",
     "conceptos": "Conceptos de Negocio",

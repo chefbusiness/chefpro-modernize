@@ -387,6 +387,41 @@
       "description": "Explore rich Indian gastronomy with authentic recipes like samosas, curries and traditional chutneys"
     }
   },
+  "showcase": {
+    "world_title": "World Cookbooks",
+    "world_description": "25 world cuisines with authentic recipes and traditional techniques",
+    "business_title": "Business Tools",
+    "business_description": "6 essential applications to optimize your daily operation",
+    "use_case_label": "Use case",
+    "use_tool": "Use Tool"
+  },
+  "cookbooks": {
+    "alemana": "German",
+    "belga": "Belgian",
+    "britanica": "British",
+    "espanola": "Spanish",
+    "francesa": "French",
+    "griega": "Greek",
+    "portuguesa": "Portuguese",
+    "paises_bajos": "Dutch",
+    "suiza": "Swiss",
+    "turca": "Turkish",
+    "argentina": "Argentine",
+    "brasilena": "Brazilian",
+    "chilena": "Chilean",
+    "colombiana": "Colombian",
+    "dominicana": "Dominican",
+    "ecuatoriana": "Ecuadorian",
+    "jamaicana": "Jamaican",
+    "mexicana": "Mexican",
+    "paraguaya": "Paraguayan",
+    "peruana": "Peruvian",
+    "venezolana": "Venezuelan",
+    "china": "Chinese",
+    "india": "Indian",
+    "japonesa": "Japanese",
+    "tailandesa": "Thai"
+  },
   "apps": {
     "creativity": {
       "cocina_creativa": {
