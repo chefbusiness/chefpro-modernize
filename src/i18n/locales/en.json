@@ -388,10 +388,15 @@
     }
   },
   "showcase": {
+    "creativity_title": "Culinary Creativity",
+    "creativity_subtitle": "Showcase",
+    "creativity_description": "8 specialized applications to take you beyond the conventional",
     "world_title": "World Cookbooks",
     "world_description": "25 world cuisines with authentic recipes and traditional techniques",
     "business_title": "Business Tools",
     "business_description": "6 essential applications to optimize your daily operation",
+    "preview_label": "Preview",
+    "explore_app": "Explore App",
     "use_case_label": "Use case",
     "use_tool": "Use Tool"
   },
