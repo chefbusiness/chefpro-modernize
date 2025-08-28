@@ -778,43 +778,25 @@
     "a6": "Yes, you can cancel your subscription at any time from your user panel. There are no permanence commitments or cancellation fees."
   },
   "footer": {
-    "description": "Artificial Intelligence for Today's Chef. Develop your professional potential with the use and support of artificial intelligence in your daily routine.",
-    "subtitle": "Suite of AI Tools and Applications modeled for Chefs, Cooks and hospitality professionals.",
-    "newsletter": {
-      "title": "Subscribe to Our Newsletter",
-      "placeholder": "Enter your email",
-      "cta": "Subscribe"
-    },
-    "navigation": {
-      "title": "Navigation",
-      "home": "Home",
-      "online_mentoring": "Online Mentoring",
-      "tools": "Tools",
-      "pricing": "Pricing",
-      "blog": "Blog",
-      "free_tools": "Free Tools"
-    },
-    "contact": {
-      "title": "Contact",
-      "email": "info@aichef.pro",
-      "phone": "+34 744 717 942"
-    },
-    "cta": {
-      "plans": "View Plans",
-      "try_free": "Try Free"
-    },
-    "social": {
-      "title": "Follow Us"
-    },
-    "legal": {
-      "copyright": "© 2024. All rights reserved.",
-      "title": "Legal",
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "cookies": "Cookie Policy",
-      "company": "Chefbusiness Gastronomic Consulting",
-      "gastroseo": "GastroSEO"
-    }
+    "brand_desc": "Artificial Intelligence for Today's Chef. Develop your professional potential with the use and support of artificial intelligence in your daily routine.",
+    "suite_desc": "Suite of AI Tools and Applications modeled for Chefs, Cooks and hospitality professionals.",
+    "newsletter_title": "Subscribe to Our Newsletter",
+    "newsletter_placeholder": "Enter your email",
+    "newsletter_button": "Subscribe",
+    "nav_title": "Navigation",
+    "nav_home": "Home",
+    "nav_tools": "Tools",
+    "nav_pricing": "Pricing",
+    "nav_blog": "Blog",
+    "nav_free_tools": "Free Tools",
+    "contact_title": "Contact",
+    "plans_button": "View Plans",
+    "try_free_button": "Try Free",
+    "follow_us": "Follow Us",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
   },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
