@@ -729,11 +729,20 @@
     }
   },
   "category_ctas": {
+    "title_start": "Start Your",
+    "title_highlight": "Transformation",
+    "title_end": "Today",
     "title": "Start Your Transformation Today",
     "description": "Choose your path and access the tools that will revolutionize your kitchen",
+    "cta_button": "Start Now",
     "creativity": {
       "title": "Explore Culinary Creativity",
       "description": "Unlock your creative potential",
+      "cta": "Start Now"
+    },
+    "world": {
+      "title": "Master World Cuisines",
+      "description": "25 culinary traditions",
       "cta": "Start Now"
     },
     "cookbooks": {
