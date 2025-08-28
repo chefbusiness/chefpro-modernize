@@ -620,7 +620,7 @@
     "global": "Cocina Global",
     "global_desc": "21 recetarios de cocinas del mundo",
     "business_tools": "Gestión de Negocio",
-    "business_tools_desc": "Optimiza costos, mermas y operaciones",
+    "business_tools_desc": "Optimiza costos, mermas y operaciones"
   },
   "faq": {
     "title": "Preguntas Frecuentes",
