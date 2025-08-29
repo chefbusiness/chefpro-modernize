@@ -251,13 +251,12 @@ export default function ModernHeader() {
               >
                 {/* Header */}
                 <div className="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b px-6 py-4">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center justify-center">
                     <img 
                       src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
                       alt="AI Chef Pro" 
-                      className="h-8 w-8" 
+                      className="h-12 w-auto" 
                     />
-                    <span className="font-bold text-lg">AI Chef Pro</span>
                   </div>
                 </div>
 
