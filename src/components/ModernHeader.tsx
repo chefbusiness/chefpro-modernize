@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check } from 'lucide-react';
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import {
   NavigationMenu,
@@ -23,15 +23,17 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Separator } from '@/components/ui/separator';
 
-const languages: { code: Language; name: string }[] = [
-  { code: 'es', name: 'ES' },
-  { code: 'en', name: 'EN' },
-  { code: 'fr', name: 'FR' },
-  { code: 'de', name: 'DE' },
-  { code: 'it', name: 'IT' },
-  { code: 'pt', name: 'PT' },
-  { code: 'nl', name: 'NL' },
+const languages: { code: Language; name: string; flag: string }[] = [
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+  { code: 'pt', name: 'Português', flag: '🇵🇹' },
+  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
 ];
 
 export default function ModernHeader() {
@@ -243,71 +245,161 @@ export default function ModernHeader() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="pr-0">
-                <SheetHeader>
-                  <SheetTitle>Menu</SheetTitle>
-                </SheetHeader>
-                <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-                  <div className="flex flex-col space-y-3">
-                    <a href="#inicio" className="font-medium">
-                      {t('nav.inicio')}
-                    </a>
-                    <a href="#categorias-apps" className="font-medium">
-                      {t('nav.aplicaciones')}
-                    </a>
-                    <a href="#filtro-apps" className="font-medium">
-                      {t('finder.title_prefix')} {t('finder.title_highlight')}
-                    </a>
-                    <a href="#showcase-creatividad" className="font-medium">
-                      {t('nav.creatividad')}
-                    </a>
-                    <a href="#recetarios" className="font-medium">
-                      {t('nav.recetarios')}
-                    </a>
-                    <a href="#herramientas-business" className="font-medium">
-                      {t('nav.herramientas')}
-                    </a>
-                    <a href="#pricing" className="font-medium">
-                      {t('nav.precios')}
-                    </a>
-                    <a href="https://blog.aichef.pro" target="_blank" rel="noopener noreferrer" className="font-medium">
-                      {t('nav.blog')}
-                    </a>
+              <SheetContent 
+                side="right" 
+                className="p-0 w-full sm:max-w-sm bg-card/95 backdrop-blur-lg border-l rounded-l-2xl"
+              >
+                {/* Header */}
+                <div className="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b px-6 py-4">
+                  <div className="flex items-center justify-center">
+                    <img 
+                      src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
+                      alt="AI Chef Pro" 
+                      className="h-12 w-auto" 
+                    />
                   </div>
-                  <div className="mt-6 space-y-3">
-                    <DropdownMenu>
-                      <DropdownMenuTrigger asChild>
-                        <Button variant="outline" className="w-full justify-between">
-                          <span>
-                            {currentLang?.name}
-                          </span>
-                          <ChevronDown className="h-4 w-4" />
-                        </Button>
-                      </DropdownMenuTrigger>
-                      <DropdownMenuContent className="w-full bg-popover border border-border shadow-lg z-[100]">
-                        {languages.map((lang) => (
-                          <DropdownMenuItem
-                            key={lang.code}
-                            onClick={() => changeLanguage(lang.code)}
-                            className="hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground"
-                          >
-                            {lang.name}
-                          </DropdownMenuItem>
-                        ))}
-                      </DropdownMenuContent>
-                    </DropdownMenu>
+                </div>
 
-                    <Button 
-                      variant="outline" 
-                      onClick={handleLoginClick}
-                      className="w-full justify-start"
-                    >
+                {/* Scrollable Content */}
+                <ScrollArea className="flex-1" style={{ height: 'calc(100vh - 140px)' }}>
+                  <nav className="p-6 space-y-6">
+                    {/* Main Navigation */}
+                    <div className="space-y-1">
+                      <a
+                        href="#inicio"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <Home className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.inicio')}
+                      </a>
+                      <a
+                        href={currentLanguage === 'es' ? '/servicios' : `/${currentLanguage}/servicios`}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <Briefcase className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.servicios')}
+                      </a>
+                      <a
+                        href={currentLanguage === 'es' ? '/mentoria-online' : `/${currentLanguage}/mentoria-online`}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <GraduationCap className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.mentoria_online')}
+                      </a>
+                      <a
+                        href="#pricing"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <Settings className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.precios')}
+                      </a>
+                      <a
+                        href="https://blog.aichef.pro"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                      >
+                        <Globe2 className="h-5 w-5 text-muted-foreground" />
+                        {t('nav.blog')}
+                      </a>
+                    </div>
+
+                    <Separator />
+
+                    {/* Applications Section */}
+                    <div className="space-y-3">
+                      <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">
+                        {t('nav.aplicaciones')}
+                      </h3>
+                      <div className="space-y-1">
+                        <a
+                          href="#showcase-creatividad"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                        >
+                          <Palette className="h-4 w-4 text-muted-foreground" />
+                          {t('nav.creatividad')}
+                        </a>
+                        <a
+                          href="#recetarios"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                        >
+                          <Globe2 className="h-4 w-4 text-muted-foreground" />
+                          {t('nav.recetarios')}
+                        </a>
+                        <a
+                          href="#herramientas-business"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                        >
+                          <Settings className="h-4 w-4 text-muted-foreground" />
+                          {t('nav.herramientas')}
+                        </a>
+                        <a
+                          href="#filtro-apps"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                        >
+                          <Settings className="h-4 w-4 text-muted-foreground" />
+                          {t('finder.title_prefix')} {t('finder.title_highlight')}
+                        </a>
+                      </div>
+                    </div>
+
+                    <Separator />
+
+                    {/* Language Selector */}
+                    <div className="space-y-3">
+                      <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">
+                        Idioma / Language
+                      </h3>
+                      <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                          <Button variant="ghost" className="w-full justify-start gap-3 px-3 py-3 h-auto">
+                            <Globe className="h-4 w-4" />
+                            <span className="flex items-center gap-2">
+                              <span className="text-lg">{languages.find(lang => lang.code === currentLanguage)?.flag}</span>
+                              {languages.find(lang => lang.code === currentLanguage)?.name}
+                            </span>
+                            <ChevronDown className="ml-auto h-4 w-4" />
+                          </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="start" className="w-56">
+                          {languages.map((language) => (
+                            <DropdownMenuItem
+                              key={language.code}
+                              onClick={() => {
+                                changeLanguage(language.code);
+                                setMobileMenuOpen(false);
+                              }}
+                              className="flex items-center gap-3 py-2"
+                            >
+                              <span className="text-lg">{language.flag}</span>
+                              {language.name}
+                              {currentLanguage === language.code && (
+                                <Check className="ml-auto h-4 w-4" />
+                              )}
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuContent>
+                      </DropdownMenu>
+                    </div>
+                  </nav>
+                </ScrollArea>
+
+                {/* Sticky Footer */}
+                <div className="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t p-4" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
+                  <div className="flex gap-2">
+                    <Button variant="outline" onClick={handleLoginClick} className="flex-1 h-10 text-sm">
                       {t('nav.login')}
                     </Button>
-                    <Button 
-                      onClick={handleCTAClick}
-                      className="w-full justify-start"
-                    >
+                    <Button onClick={handleCTAClick} className="flex-1 h-10 text-xs font-medium">
                       {t('cta.primary')}
                     </Button>
                   </div>
