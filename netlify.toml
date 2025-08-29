@@ -6,6 +6,13 @@
   NODE_VERSION = "18"
   VITE_SITE_URL = "https://aichef.pro"
 
+# Force redirect from www to non-www for canonical URLs
+[[redirects]]
+  from = "https://www.aichef.pro/*"
+  to = "https://aichef.pro/:splat"
+  status = 301
+  force = true
+
 # Main site redirects (SPA routing)
 [[redirects]]
   from = "/*"
@@ -54,3 +61,10 @@
   for = "/*.svg"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# Sitemap headers
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+    Cache-Control = "public, max-age=3600"

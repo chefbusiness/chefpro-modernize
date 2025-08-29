@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <!-- Spanish (default) -->
   <url>
     <loc>https://aichef.pro/</loc>
-    <lastmod>2025-01-23</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
@@ -15,11 +14,37 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
   </url>
-  
-  <!-- English -->
+  <url>
+    <loc>https://aichef.pro/services</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/services" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/services" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/services" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/services" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/mentoria-online</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/mentoria-online" />
+  </url>
   <url>
     <loc>https://aichef.pro/en</loc>
-    <lastmod>2025-01-23</lastmod>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
@@ -31,84 +56,32 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
   </url>
-  
-  <!-- French -->
   <url>
-    <loc>https://aichef.pro/fr</loc>
-    <lastmod>2025-01-23</lastmod>
+    <loc>https://aichef.pro/en/services</loc>
+    <lastmod>2025-08-29</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/services" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/services" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/services" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/services" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/services" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/services" />
   </url>
-  
-  <!-- German -->
   <url>
-    <loc>https://aichef.pro/de</loc>
-    <lastmod>2025-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
-  </url>
-  
-  <!-- Italian -->
-  <url>
-    <loc>https://aichef.pro/it</loc>
-    <lastmod>2025-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
-  </url>
-  
-  <!-- Portuguese -->
-  <url>
-    <loc>https://aichef.pro/pt</loc>
-    <lastmod>2025-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
-  </url>
-  
-  <!-- Dutch -->
-  <url>
-    <loc>https://aichef.pro/nl</loc>
-    <lastmod>2025-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt" />
-    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/" />
+    <loc>https://aichef.pro/en/mentoria-online</loc>
+    <lastmod>2025-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/mentoria-online" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/mentoria-online" />
   </url>
 </urlset>
