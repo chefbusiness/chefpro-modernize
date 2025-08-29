@@ -395,13 +395,13 @@ export default function ModernHeader() {
                 </ScrollArea>
 
                 {/* Sticky Footer */}
-                <div className="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t p-6" style={{ paddingBottom: 'max(24px, env(safe-area-inset-bottom))' }}>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="lg" onClick={handleLoginClick} className="flex-1 h-12">
+                <div className="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t p-4" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
+                  <div className="flex gap-2">
+                    <Button variant="outline" onClick={handleLoginClick} className="flex-1 h-10 text-sm">
                       {t('nav.login')}
                     </Button>
-                    <Button size="lg" onClick={handleCTAClick} className="flex-1 h-12">
-                      {t('cta.primary')}
+                    <Button onClick={handleCTAClick} className="flex-1 h-10 text-sm font-medium">
+                      {t('cta.tryFree')}
                     </Button>
                   </div>
                 </div>
