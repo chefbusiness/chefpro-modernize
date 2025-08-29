@@ -400,8 +400,8 @@ export default function ModernHeader() {
                     <Button variant="outline" onClick={handleLoginClick} className="flex-1 h-10 text-sm">
                       {t('nav.login')}
                     </Button>
-                    <Button onClick={handleCTAClick} className="flex-1 h-10 text-sm font-medium">
-                      {t('cta.tryFree')}
+                    <Button onClick={handleCTAClick} className="flex-1 h-10 text-xs font-medium">
+                      {t('cta.primary')}
                     </Button>
                   </div>
                 </div>
