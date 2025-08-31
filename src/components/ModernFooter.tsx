@@ -14,6 +14,10 @@ export default function ModernFooter() {
   const legalHref = (slug: string) => 
     currentLanguage === 'es' ? `/${slug}` : `/${currentLanguage}/${slug}`;
 
+  const START_YEAR = 2024;
+  const currentYear = new Date().getFullYear();
+  const yearText = START_YEAR === currentYear ? `${currentYear}` : `${START_YEAR} - ${currentYear}`;
+
   return (
     <footer className="border-t bg-background">
       <div className="container py-14">
@@ -192,7 +196,7 @@ export default function ModernFooter() {
         
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2 text-center text-sm text-muted-foreground md:text-left">
-            <span>© 2024. All rights reserved.</span>
+            <span>© {yearText}. All rights reserved.</span>
             <a href={legalHref('legales')} className="hover:text-foreground transition-colors">{t('footer.legal')}</a>
             <a href={legalHref('privacidad')} className="hover:text-foreground transition-colors">{t('footer.privacy')}</a>
             <a href={legalHref('terminos')} className="hover:text-foreground transition-colors">{t('footer.terms')}</a>
