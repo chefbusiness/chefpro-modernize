@@ -3,6 +3,7 @@ import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { Facebook, Instagram, Twitter, Youtube, Music } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
@@ -26,7 +27,7 @@ export default function ModernFooter() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2">
               <img 
-                src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
+                src={logoAiChefPro} 
                 alt="AI Chef Pro Logo" 
                 className="h-8 w-auto"
               />
