@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check } from 'lucide-react';
 import { useLanguage, type Language } from '@/hooks/useLanguage';
+import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -56,7 +57,7 @@ export default function ModernHeader() {
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
             <img 
-              src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
+              src={logoAiChefPro} 
               alt="AI Chef Pro Logo" 
               className="h-8 w-auto"
             />
@@ -253,7 +254,7 @@ export default function ModernHeader() {
                 <div className="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b px-6 py-4">
                   <div className="flex items-center justify-center">
                     <img 
-                      src="https://assets.zyrosite.com/AVLbeJ7l3JfrlNJr/logo-ai-chef-pro-24-m2Wp64Vqqwso1ZQN.svg" 
+                      src={logoAiChefPro} 
                       alt="AI Chef Pro" 
                       className="h-12 w-auto" 
                     />
