@@ -1,9 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Brain, Utensils, Heart } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import llmAiChefPro from '@/assets/llm-ai-chef-pro.png';
+import llmMistral from '@/assets/llm-mistral.png';
+import llmOpenAI from '@/assets/llm-openai.png';
+import llmAnthropic from '@/assets/llm-anthropic.png';
+import llmMetaLlama from '@/assets/llm-meta-llama.png';
 
 export default function ModernFeatures() {
   const { t } = useLanguage();
+
+  const llmModels = [
+    { image: llmAiChefPro, name: t('features.llm_models.ai_chef_pro') },
+    { image: llmMistral, name: t('features.llm_models.mistral') },
+    { image: llmOpenAI, name: t('features.llm_models.openai') },
+    { image: llmAnthropic, name: t('features.llm_models.anthropic') },
+    { image: llmMetaLlama, name: t('features.llm_models.meta_llama') }
+  ];
 
   const features = [
     {
@@ -77,17 +90,11 @@ export default function ModernFeatures() {
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-          {[1, 2, 3, 4, 5].map((num) => (
-            <div key={num} className="rounded-lg border bg-card overflow-hidden hover-card">
+          {llmModels.map((model, index) => (
+            <div key={index} className="rounded-lg border bg-card overflow-hidden hover-card">
               <img 
-                src={`https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=223,h=133,fit=crop/AVLbeJ7l3JfrlNJr/llm-${num}-${
-                  num === 1 ? 'ALpok1ga1EfzpLrj' : 
-                  num === 2 ? 'Yan98lK48Rc9D9ae' :
-                  num === 3 ? 'dWxbkzgNN0treDe0' :
-                  num === 4 ? 'A854KvXJ93I5kvw8' :
-                  'A0xVJaXEGXFge8VZ'
-                }.png`}
-                alt={`LLM Model ${num}`}
+                src={model.image}
+                alt={model.name}
                 className="w-full h-20 object-cover"
               />
             </div>
