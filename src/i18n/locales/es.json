@@ -610,6 +610,13 @@
     "coaching_desc": "Soporte psicológico y motivacional para mejorar el rendimiento y bienestar en la cocina.",
     "llm_title": "Tecnología LLM Avanzada",
      "llm_description": "Modelos de lenguaje especializados para el sector gastronómico",
+     "llm_models": {
+       "ai_chef_pro": "Modelos LLM de AI Chef Pro",
+       "mistral": "Mistral AI",
+       "openai": "OpenAI",
+       "anthropic": "Anthropic Claude",
+       "meta_llama": "Meta Llama 3"
+     },
      "ai_powered": "Inteligencia Artificial Avanzada",
      "ai_powered_desc": "Modelos GPT especializados en gastronomía",
      "specialized": "Herramientas Especializadas",
