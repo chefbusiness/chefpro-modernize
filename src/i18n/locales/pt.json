@@ -870,6 +870,13 @@
     "coaching_desc": "Desenvolva bem-estar e habilidades de liderança na cozinha",
     "llm_title": "Modelos LLM Avançados",
     "llm_description": "Alimentados pelos mais recentes modelos de linguagem especializados para gastronomia",
+    "llm_models": {
+      "ai_chef_pro": "Modelos LLM da AI Chef Pro",
+      "mistral": "Mistral AI",
+      "openai": "OpenAI",
+      "anthropic": "Anthropic Claude",
+      "meta_llama": "Meta Llama 3"
+    },
     "ai_powered": "Inteligência Artificial Avançada",
     "ai_powered_desc": "Modelos GPT especializados em gastronomia",
     "specialized": "Ferramentas Especializadas",

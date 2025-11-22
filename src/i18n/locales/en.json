@@ -574,7 +574,14 @@
     "coaching": "Chef Coaching",
     "coaching_desc": "Psychological and motivational support to improve performance and well-being in the kitchen.",
     "llm_title": "Advanced LLM Technology",
-    "llm_description": "Language models specialized for the gastronomic sector"
+    "llm_description": "Language models specialized for the gastronomic sector",
+    "llm_models": {
+      "ai_chef_pro": "AI Chef Pro LLM Models",
+      "mistral": "Mistral AI",
+      "openai": "OpenAI",
+      "anthropic": "Anthropic Claude",
+      "meta_llama": "Meta Llama 3"
+    }
   },
   "featured": {
     "title_main": "Featured Apps",

@@ -865,6 +865,13 @@
     "coaching_desc": "Ontwikkel welzijn en leiderschapsvaardigheden in de keuken",
     "llm_title": "Geavanceerde LLM-Modellen",
     "llm_description": "Aangedreven door de nieuwste taalmodellen gespecialiseerd voor gastronomie",
+    "llm_models": {
+      "ai_chef_pro": "AI Chef Pro LLM-Modellen",
+      "mistral": "Mistral AI",
+      "openai": "OpenAI",
+      "anthropic": "Anthropic Claude",
+      "meta_llama": "Meta Llama 3"
+    },
     "ai_powered": "Geavanceerde Kunstmatige Intelligentie",
     "ai_powered_desc": "GPT-modellen gespecialiseerd in gastronomie",
     "specialized": "Gespecialiseerde Tools",

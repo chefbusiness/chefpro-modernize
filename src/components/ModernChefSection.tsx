@@ -2,6 +2,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import chefTeam1 from '@/assets/chef-team-1.jpg';
+import chefTeam2 from '@/assets/chef-team-2.jpg';
+import chefTeam3 from '@/assets/chef-team-3.jpg';
 
 export default function ModernChefSection() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
@@ -49,7 +52,7 @@ export default function ModernChefSection() {
           <Card className="hover-card overflow-hidden">
             <CardContent className="p-0">
                <img 
-                 src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=564,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---taste-1973-AE0ozo9ZB9TyR5p7.jpg"
+                 src={chefTeam1}
                  alt={t('chef_section.image1_alt')}
                  className="w-full h-64 object-cover"
                />
@@ -59,7 +62,7 @@ export default function ModernChefSection() {
           <Card className="hover-card overflow-hidden">
             <CardContent className="p-0">
                <img 
-                 src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=276,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---taste-1973-2-AE0ozo9Z1Bi9KX9r.jpg"
+                 src={chefTeam2}
                  alt={t('chef_section.image2_alt')}
                  className="w-full h-64 object-cover"
                />
@@ -69,7 +72,7 @@ export default function ModernChefSection() {
           <Card className="hover-card overflow-hidden">
             <CardContent className="p-0">
                <img 
-                 src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=194,h=276,fit=crop/AVLbeJ7l3JfrlNJr/ai-chef-pro---taste-1973-3-A1awjw67oetpZEvK.jpg"
+                 src={chefTeam3}
                  alt={t('chef_section.image3_alt')}
                  className="w-full h-64 object-cover"
                />
