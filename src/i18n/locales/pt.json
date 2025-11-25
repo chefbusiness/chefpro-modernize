@@ -1111,7 +1111,7 @@
     },
     "generated_with": "Gerado com",
     "cta": "Experimentar Geração de Imagens",
-    "counter": "Imagem {current} de {total}",
+    "counter": "Imagem {{current}} de {{total}}",
     "images": {
       "image_1": {
         "title": "Rabanada Caramelizada com Sorvete",

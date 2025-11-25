@@ -1124,7 +1124,7 @@
     },
     "generated_with": "Generato con",
     "cta": "Prova la Generazione di Immagini",
-    "counter": "Immagine {current} di {total}",
+    "counter": "Immagine {{current}} di {{total}}",
     "images": {
       "image_1": {
         "title": "Torrija Caramellata con Gelato",

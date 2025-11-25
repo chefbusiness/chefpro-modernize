@@ -1124,7 +1124,7 @@
     },
     "generated_with": "Erstellt mit",
     "cta": "Bildgenerierung Ausprobieren",
-    "counter": "Bild {current} von {total}",
+    "counter": "Bild {{current}} von {{total}}",
     "images": {
       "image_1": {
         "title": "Karamellisierte Torrija mit Eis",
