@@ -29,12 +29,12 @@ const Index = () => {
         <ScreenshotSection />
         <SocialProofStrip />
         <AppsCategories />
+        <AIImageGallery />
         <AppsFinder />
         <CreatividadShowcase />
         <WorldCookbooks />
         <BusinessToolsShowcase />
         <ModernFeatures />
-        <AIImageGallery />
         <FeaturedApps />
         <ModernChefSection />
         <ModernPricing />
