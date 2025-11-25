@@ -1095,6 +1095,77 @@
     "terms": "Servicevoorwaarden",
     "cookies": "Cookiebeleid"
   },
+  "ai_gallery": {
+    "badge": "AI-beeldgeneratie",
+    "title": "Visualiseer uw Culinaire Creaties",
+    "description": "Genereer professionele afbeeldingen van uw recepten met de meest geavanceerde AI-modellen. Perfect voor menu's, sociale media en presentaties.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Gegenereerd met",
+    "cta": "Probeer Beeldgeneratie",
+    "counter": "Afbeelding {current} van {total}",
+    "images": {
+      "image_1": {
+        "title": "Gekarameliseerde Torrija met IJs",
+        "description": "Traditioneel Spaans dessert opnieuw uitgevonden met moderne techniek en signature presentatie"
+      },
+      "image_2": {
+        "title": "Innovatie en Design in Restaurants",
+        "description": "Eigentijds gastronomisch ruimteconcept met geavanceerde verlichting en design"
+      },
+      "image_3": {
+        "title": "Iberisch Varkensvlees Tataki en Chimichurri",
+        "description": "Perfecte fusie tussen Japanse techniek en Argentijnse smaken met premium product"
+      },
+      "image_4": {
+        "title": "Knoflookgarnalen",
+        "description": "Spaanse gastronomie klassieker met extra vierge olijfolie en geconfijte knoflook"
+      },
+      "image_5": {
+        "title": "Oester met Gin-Tonic Lucht",
+        "description": "High-end keuken die zee en botanicals combineert in een unieke ervaring"
+      },
+      "image_6": {
+        "title": "Geroosterd Speenvarken",
+        "description": "Traditioneel Castiliaans speenvarken met knapperige huid en perfect mals vlees"
+      },
+      "image_7": {
+        "title": "Avocado en Krab Cannelloni",
+        "description": "Eigentijdse creatie met avocado, krabvlees en citrus emulsie"
+      },
+      "image_8": {
+        "title": "Lage Temperatuur Ei met Truffel",
+        "description": "Perfecte sous-vide techniek met geschaafde zwarte truffel en paddenstoelenreductie"
+      },
+      "image_9": {
+        "title": "Iberische Ham Kroket",
+        "description": "Romige eikel-gevoede Iberische ham kroket met ambachtelijke bechamel en knapperig korstje"
+      },
+      "image_10": {
+        "title": "Vals Risotto van Zaden en Plankton",
+        "description": "Moleculaire keuken met geroosterde zaden texturen en mariene smaak van plankton"
+      },
+      "image_11": {
+        "title": "Innovatie en Design in Restaurants",
+        "description": "Moderne gastronomische sfeer met interieurarchitectuur en complete zintuiglijke ervaring"
+      },
+      "image_12": {
+        "title": "Garnalen Carpaccio",
+        "description": "Witte garnalen carpaccio met olijfolie, vlokkenzout en microgreens"
+      },
+      "image_13": {
+        "title": "Klassieke Andalusische Gazpacho",
+        "description": "Traditionele koude soep met rijpe tomaten, paprika, komkommer en vierge olijfolie"
+      },
+      "image_14": {
+        "title": "Vloeibare Olijven Sferificatie",
+        "description": "Moleculaire gastronomie techniek met vloeibare olijfolie bollen en intense smaak"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ AI-tools voor Chefs | Culinaire Suite",
     "description": "Transformeer uw keuken met 55+ gespecialiseerde AI-tools. Culinaire creativiteit, wereldwijde kookboeken, bedrijfsbeheer en gastronomische marketing.",
