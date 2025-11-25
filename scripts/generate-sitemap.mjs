@@ -24,11 +24,11 @@ const generateHreflangs = (path = '') => {
 // Define pages to include in sitemap
 const pages = [
   { path: '', priority: '1.0', changefreq: 'weekly' },
-  { path: '/services', priority: '0.8', changefreq: 'weekly' },
+  { path: '/servicios', priority: '0.8', changefreq: 'weekly' },
   { path: '/mentoria-online', priority: '0.8', changefreq: 'monthly' },
-  { path: '/legal', priority: '0.3', changefreq: 'yearly' },
-  { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
-  { path: '/terms', priority: '0.3', changefreq: 'yearly' },
+  { path: '/legales', priority: '0.3', changefreq: 'yearly' },
+  { path: '/privacidad', priority: '0.3', changefreq: 'yearly' },
+  { path: '/terminos', priority: '0.3', changefreq: 'yearly' },
   { path: '/cookies', priority: '0.3', changefreq: 'yearly' }
 ];
 
