@@ -1098,7 +1098,7 @@
   "ai_gallery": {
     "badge": "AI-beeldgeneratie",
     "title": "Visualiseer uw Culinaire Creaties",
-    "description": "Genereer professionele afbeeldingen van uw recepten met de meest geavanceerde AI-modellen. Perfect voor menu's, sociale media en presentaties.",
+    "description": "Genereer professionele referentieafbeeldingen van uw recepten met de meest geavanceerde AI-modellen. Perfect voor menu's, sociale media en presentaties.",
     "models": {
       "nano_banana": "Nano Banana Pro",
       "seedream": "Seedream 3",

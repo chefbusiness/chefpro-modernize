@@ -1103,7 +1103,7 @@
   "ai_gallery": {
     "badge": "Geração de Imagens com IA",
     "title": "Visualize suas Criações Culinárias",
-    "description": "Gere imagens profissionais de suas receitas com os modelos de IA mais avançados. Perfeitas para menus, redes sociais e apresentações.",
+    "description": "Gere imagens profissionais de referência de suas receitas com os modelos de IA mais avançados. Perfeitas para menus, redes sociais e apresentações.",
     "models": {
       "nano_banana": "Nano Banana Pro",
       "seedream": "Seedream 3",
