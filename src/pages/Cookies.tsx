@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
@@ -6,12 +7,36 @@ import SEOHead from '@/components/SEOHead';
 const Cookies = () => {
   const { t } = useTranslation();
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://aichef.pro"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": t('pages.cookies.heading'),
+        "item": "https://aichef.pro/cookies"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
         title={t('pages.cookies.title')}
         description={t('pages.cookies.description')}
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
       <ModernHeader />
       <main className="py-20">
         <div className="container mx-auto px-4">
