@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
@@ -9,6 +9,7 @@ export default function ScreenshotGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoRotating, setIsAutoRotating] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const screenshots = [
     {
@@ -126,14 +127,24 @@ export default function ScreenshotGallery() {
 
   // Auto-rotation effect
   useEffect(() => {
+    // Clear existing interval
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+
     if (!isAutoRotating) return;
     
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 4000); // Change image every 4 seconds
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % screenshots.length);
+    }, 4000);
 
-    return () => clearInterval(interval);
-  }, [isAutoRotating, currentIndex]);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [isAutoRotating, screenshots.length]);
 
   const currentScreenshot = screenshots[currentIndex];
 
