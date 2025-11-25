@@ -167,7 +167,7 @@
   }
   
   .btn-gold-outline {
-    @apply border-2 border-accent-dark text-accent-dark hover:bg-accent hover:text-accent-foreground transition-all duration-200 font-semibold;
+    @apply border-2 border-accent-dark bg-accent-light/30 text-foreground hover:bg-accent hover:text-accent-foreground transition-all duration-200 font-semibold;
   }
   
   /* Popular plan styling */
