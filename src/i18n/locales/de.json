@@ -1116,7 +1116,7 @@
   "ai_gallery": {
     "badge": "KI-Bildgenerierung",
     "title": "Visualisieren Sie Ihre kulinarischen Kreationen",
-    "description": "Erstellen Sie professionelle Bilder Ihrer Rezepte mit den fortschrittlichsten KI-Modellen. Perfekt für Menüs, soziale Medien und Präsentationen.",
+    "description": "Erstellen Sie professionelle Referenzbilder Ihrer Rezepte mit den fortschrittlichsten KI-Modellen. Perfekt für Menüs, soziale Medien und Präsentationen.",
     "models": {
       "nano_banana": "Nano Banana Pro",
       "seedream": "Seedream 3",
