@@ -86,6 +86,7 @@ export default function ModernHero() {
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       <Button 
+        variant="ghost"
         size="lg"
         onClick={() => window.open('https://blog.aichef.pro', '_blank')}
         className="btn-gold-outline w-full sm:w-auto min-h-[3rem]"
