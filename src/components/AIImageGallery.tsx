@@ -116,7 +116,7 @@ const AIImageGallery = () => {
               {images.map((image) => (
                 <div key={image.id} className="flex-[0_0_100%] min-w-0 px-4">
                   <div className="relative group">
-                    <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
+                    <div className="relative aspect-[2/3] md:aspect-[16/10] rounded-2xl overflow-hidden bg-slate-800/50 backdrop-blur-sm border border-slate-700/50">
                       <img
                         src={image.src}
                         alt={t(`ai_gallery.images.image_${image.id}.title`)}
@@ -125,16 +125,16 @@ const AIImageGallery = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent" />
                       
                       {/* Content Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                        <div className="mb-3">
-                          <Badge variant="outline" className={getModelBadge(image.model).className}>
+                      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 text-white">
+                        <div className="mb-2 md:mb-3">
+                          <Badge variant="outline" className={`${getModelBadge(image.model).className} text-xs md:text-sm`}>
                             {t('ai_gallery.generated_with')} {getModelBadge(image.model).label}
                           </Badge>
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                        <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
                           {t(`ai_gallery.images.image_${image.id}.title`)}
                         </h3>
-                        <p className="text-slate-300 text-sm md:text-base">
+                        <p className="text-slate-300 text-xs md:text-sm lg:text-base">
                           {t(`ai_gallery.images.image_${image.id}.description`)}
                         </p>
                       </div>
@@ -150,17 +150,17 @@ const AIImageGallery = () => {
             variant="outline"
             size="icon"
             onClick={scrollPrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-slate-900/90 backdrop-blur-sm border-slate-700 hover:bg-slate-800 text-white h-12 w-12 rounded-full shadow-xl"
+            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 bg-slate-900/90 backdrop-blur-sm border-slate-700 hover:bg-slate-800 text-white h-10 w-10 md:h-12 md:w-12 rounded-full shadow-xl"
           >
-            <ChevronLeft className="h-6 w-6" />
+            <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
           </Button>
           <Button
             variant="outline"
             size="icon"
             onClick={scrollNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-slate-900/90 backdrop-blur-sm border-slate-700 hover:bg-slate-800 text-white h-12 w-12 rounded-full shadow-xl"
+            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 bg-slate-900/90 backdrop-blur-sm border-slate-700 hover:bg-slate-800 text-white h-10 w-10 md:h-12 md:w-12 rounded-full shadow-xl"
           >
-            <ChevronRight className="h-6 w-6" />
+            <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
           </Button>
 
           {/* Dot Indicators */}
