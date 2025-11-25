@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import {
   Accordion,
   AccordionContent,
@@ -36,8 +37,28 @@ export default function ModernFAQ() {
     }
   ];
 
+  // Generate FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <section className="container py-8 md:py-12 lg:py-24">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
+      
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
           {t('faq.title')}

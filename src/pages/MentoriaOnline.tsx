@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
@@ -20,6 +21,25 @@ const MentoriaOnline = () => {
     }
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://aichef.pro"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": t('mentoriaOnline.hero.title'),
+        "item": "https://aichef.pro/mentoria-online"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
@@ -27,6 +47,11 @@ const MentoriaOnline = () => {
         description={t('mentoriaOnline.seo.description')}
         keywords={t('mentoriaOnline.seo.keywords')}
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
       <ModernHeader />
       
       <main>
