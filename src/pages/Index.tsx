@@ -9,6 +9,7 @@ import WorldCookbooks from '@/components/WorldCookbooks';
 import BusinessToolsShowcase from '@/components/BusinessToolsShowcase';
 import ModernAbout from '@/components/ModernAbout';
 import ModernFeatures from '@/components/ModernFeatures';
+import AIImageGallery from '@/components/AIImageGallery';
 import FeaturedApps from '@/components/FeaturedApps';
 import ModernChefSection from '@/components/ModernChefSection';
 import ModernPricing from '@/components/ModernPricing';
@@ -33,6 +34,7 @@ const Index = () => {
         <WorldCookbooks />
         <BusinessToolsShowcase />
         <ModernFeatures />
+        <AIImageGallery />
         <FeaturedApps />
         <ModernChefSection />
         <ModernPricing />

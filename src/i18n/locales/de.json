@@ -1113,6 +1113,97 @@
     "terms": "Nutzungsbedingungen",
     "cookies": "Cookie-Richtlinie"
   },
+  "ai_gallery": {
+    "badge": "KI-Bildgenerierung",
+    "title": "Visualisieren Sie Ihre kulinarischen Kreationen",
+    "description": "Erstellen Sie professionelle Bilder Ihrer Rezepte mit den fortschrittlichsten KI-Modellen. Perfekt für Menüs, soziale Medien und Präsentationen.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Erstellt mit",
+    "cta": "Bildgenerierung Ausprobieren",
+    "counter": "Bild {{current}} von {{total}}",
+    "images": {
+      "image_1": {
+        "title": "Karamellisierte Torrija mit Eis",
+        "description": "Traditionelles spanisches Dessert neu interpretiert mit moderner Technik und Signature-Präsentation"
+      },
+      "image_2": {
+        "title": "Innovation und Design in Restaurants",
+        "description": "Zeitgenössisches gastronomisches Raumkonzept mit innovativer Beleuchtung und Design"
+      },
+      "image_3": {
+        "title": "Iberisches Schweine-Tataki und Chimichurri",
+        "description": "Perfekte Fusion von japanischer Technik und argentinischen Aromen mit Premium-Produkt"
+      },
+      "image_4": {
+        "title": "Knoblauchgarnelen",
+        "description": "Klassiker der spanischen Gastronomie mit nativem Olivenöl extra und kandiertem Knoblauch"
+      },
+      "image_5": {
+        "title": "Auster mit Gin-Tonic-Luft",
+        "description": "High-End-Küche, die Meer und Botanicals in einem einzigartigen Erlebnis vereint"
+      },
+      "image_6": {
+        "title": "Gebratenes Spanferkel",
+        "description": "Traditionelles kastilisches Spanferkel mit knuspriger Haut und perfekt zartem Fleisch"
+      },
+      "image_7": {
+        "title": "Avocado-Krabben-Cannelloni",
+        "description": "Zeitgenössische Kreation mit Avocado, Krabbenfleisch und Zitrus-Emulsion"
+      },
+      "image_8": {
+        "title": "Niedertemperatur-Ei mit Trüffel",
+        "description": "Perfekte Sous-vide-Technik mit gehobeltem schwarzem Trüffel und Pilzreduktion"
+      },
+      "image_9": {
+        "title": "Iberische Schinken-Krokette",
+        "description": "Cremige Eichelmast-Iberico-Schinken-Krokette mit hausgemachter Béchamel und knuspriger Panade"
+      },
+      "image_10": {
+        "title": "Falsches Risotto mit Samen und Plankton",
+        "description": "Molekulare Küche mit gerösteten Samen-Texturen und marinem Geschmack aus Plankton"
+      },
+      "image_11": {
+        "title": "Innovation und Design in Restaurants",
+        "description": "Modernes gastronomisches Ambiente mit Innenarchitektur und vollständigem Sinneserlebnis"
+      },
+      "image_12": {
+        "title": "Garnelen-Carpaccio",
+        "description": "Weißgarnelen-Carpaccio mit Olivenöl, Flockensalz und Microgreens"
+      },
+      "image_13": {
+        "title": "Klassischer Andalusischer Gazpacho",
+        "description": "Traditionelle kalte Suppe mit reifen Tomaten, Paprika, Gurke und nativem Olivenöl"
+      },
+      "image_14": {
+        "title": "Flüssige Oliven Sphärifizierung",
+        "description": "Molekulargastronomie-Technik mit flüssigen Olivenöl-Kugeln und intensivem Geschmack"
+      },
+      "image_15": {
+        "title": "Gin Game Cocktail",
+        "description": "Signature-Cocktail mit Chartreuse, Premium-Gin und Bouquet aus frischen aromatischen Kräutern"
+      },
+      "image_16": {
+        "title": "Würzige Grüne Margarita",
+        "description": "Grüne Margarita mit Patrón Tequila, Ancho Reyes Verde, Limette und Rauchsalzrand"
+      },
+      "image_17": {
+        "title": "Super Fashion Old Fashioned",
+        "description": "Molekulare Mixologie mit italienischem Brandy, geklärtem Tamarinden-Cordial und Orangen-Bitter"
+      },
+      "image_18": {
+        "title": "Gerösteter Ananas-Tepache",
+        "description": "Traditionelles mexikanisches fermentiertes Getränk mit gerösteter Ananas, Zimt, Nelke und Kardamom"
+      },
+      "image_19": {
+        "title": "Fermentierter Garibaldi",
+        "description": "Neuinterpretation des italienischen Klassikers mit Campari, fermentierten Zitrusfrüchten und cremigem Schaum"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ KI-Tools für Köche | Kulinarische Suite",
     "description": "Transformieren Sie Ihre Küche mit 55+ spezialisierten KI-Tools. Kulinarische Kreativität, Weltkochbücher, Unternehmensführung und gastronomisches Marketing.",

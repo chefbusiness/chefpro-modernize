@@ -981,6 +981,97 @@
       "description": "Contenu qui convertit"
     }
   },
+  "ai_gallery": {
+    "badge": "Génération d'Images par IA",
+    "title": "Visualisez vos Créations Culinaires",
+    "description": "Générez des images professionnelles de vos recettes avec les modèles d'IA les plus avancés. Parfaites pour menus, réseaux sociaux et présentations.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Généré avec",
+    "cta": "Essayer la Génération d'Images",
+    "counter": "Image {{current}} sur {{total}}",
+    "images": {
+      "image_1": {
+        "title": "Torrija Caramélisée avec Glace",
+        "description": "Dessert espagnol traditionnel réinventé avec technique moderne et présentation signature"
+      },
+      "image_2": {
+        "title": "Innovation et Design de Restaurants",
+        "description": "Concept d'espace gastronomique contemporain avec éclairage et design d'avant-garde"
+      },
+      "image_3": {
+        "title": "Tataki de Porc Ibérique et Chimichurri",
+        "description": "Fusion parfaite entre technique japonaise et saveurs argentines avec produit premium"
+      },
+      "image_4": {
+        "title": "Crevettes à l'Ail",
+        "description": "Classique de la gastronomie espagnole avec huile d'olive extra vierge et ail confit"
+      },
+      "image_5": {
+        "title": "Huître avec Air de Gin-Tonic",
+        "description": "Haute cuisine combinant mer et botaniques dans une expérience unique"
+      },
+      "image_6": {
+        "title": "Cochon de Lait Rôti",
+        "description": "Cochon de lait castillan traditionnel avec peau croustillante et viande tendre parfaite"
+      },
+      "image_7": {
+        "title": "Cannelloni d'Avocat et Crabe",
+        "description": "Création contemporaine avec avocat, chair de crabe et émulsion d'agrumes"
+      },
+      "image_8": {
+        "title": "Œuf Basse Température avec Truffe",
+        "description": "Technique sous-vide parfaite avec truffe noire râpée et réduction de champignons"
+      },
+      "image_9": {
+        "title": "Croquette de Jambon Ibérique",
+        "description": "Croquette crémeuse de jambon ibérique de bellota avec béchamel artisanale et panure croustillante"
+      },
+      "image_10": {
+        "title": "Faux Risotto de Graines et Plancton",
+        "description": "Cuisine moléculaire avec textures de graines grillées et saveur marine du plancton"
+      },
+      "image_11": {
+        "title": "Innovation et Design de Restaurants",
+        "description": "Ambiance gastronomique moderne avec architecture intérieure et expérience sensorielle complète"
+      },
+      "image_12": {
+        "title": "Carpaccio de Crevettes",
+        "description": "Carpaccio de crevette blanche avec huile d'olive, sel en flocons et micro-pousses"
+      },
+      "image_13": {
+        "title": "Gaspacho Classique Andalou",
+        "description": "Soupe froide traditionnelle avec tomates mûres, poivron, concombre et huile d'olive vierge"
+      },
+      "image_14": {
+        "title": "Olives Liquides Sphérification",
+        "description": "Technique de gastronomie moléculaire avec sphères liquides d'huile d'olive et saveur intense"
+      },
+      "image_15": {
+        "title": "Cocktail Gin Game",
+        "description": "Cocktail signature avec Chartreuse, gin premium et bouquet d'herbes aromatiques fraîches"
+      },
+      "image_16": {
+        "title": "Margarita Verte Épicée",
+        "description": "Margarita verte avec tequila Patrón, Ancho Reyes Verde, citron vert et sel fumé"
+      },
+      "image_17": {
+        "title": "Super Fashion Old Fashioned",
+        "description": "Mixologie moléculaire avec brandy italien, cordial de tamarin clarifié et bitter d'orange"
+      },
+      "image_18": {
+        "title": "Tepache d'Ananas Rôti",
+        "description": "Boisson fermentée mexicaine traditionnelle avec ananas rôti, cannelle, clou de girofle et cardamome"
+      },
+      "image_19": {
+        "title": "Garibaldi Fermenté",
+        "description": "Réinvention du classique italien avec Campari, agrumes fermentés et mousse crémeuse"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Outils IA pour Chefs | Suite Culinaire",
     "description": "Transformez votre cuisine avec 55+ outils IA spécialisés. Créativité culinaire, livres de recettes mondiaux, gestion d'entreprise et marketing gastronomique.",

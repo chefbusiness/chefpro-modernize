@@ -1100,6 +1100,97 @@
     "terms": "Termos de Serviço",
     "cookies": "Política de Cookies"
   },
+  "ai_gallery": {
+    "badge": "Geração de Imagens com IA",
+    "title": "Visualize suas Criações Culinárias",
+    "description": "Gere imagens profissionais de suas receitas com os modelos de IA mais avançados. Perfeitas para menus, redes sociais e apresentações.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Gerado com",
+    "cta": "Experimentar Geração de Imagens",
+    "counter": "Imagem {{current}} de {{total}}",
+    "images": {
+      "image_1": {
+        "title": "Rabanada Caramelizada com Sorvete",
+        "description": "Sobremesa espanhola tradicional reinventada com técnica moderna e apresentação de autor"
+      },
+      "image_2": {
+        "title": "Inovação e Design em Restaurantes",
+        "description": "Conceito de espaço gastronômico contemporâneo com iluminação e design de vanguarda"
+      },
+      "image_3": {
+        "title": "Tataki de Porco Ibérico e Chimichurri",
+        "description": "Fusão perfeita entre técnica japonesa e sabores argentinos com produto premium"
+      },
+      "image_4": {
+        "title": "Camarões ao Alho",
+        "description": "Clássico da gastronomia espanhola com azeite extra virgem e alho confitado"
+      },
+      "image_5": {
+        "title": "Ostra com Ar de Gin-Tônica",
+        "description": "Alta cozinha combinando mar e botânicos em uma experiência única"
+      },
+      "image_6": {
+        "title": "Leitão Assado",
+        "description": "Leitão castelhano tradicional com pele crocante e carne macia no ponto perfeito"
+      },
+      "image_7": {
+        "title": "Canelone de Abacate e Caranguejo",
+        "description": "Criação contemporânea com abacate, carne de caranguejo e emulsão de cítricos"
+      },
+      "image_8": {
+        "title": "Ovo em Baixa Temperatura com Trufa",
+        "description": "Técnica sous-vide perfeita com trufa negra ralada e redução de cogumelos"
+      },
+      "image_9": {
+        "title": "Croquete de Presunto Ibérico",
+        "description": "Croquete cremoso de presunto ibérico de bolota com bechamel artesanal e empanado crocante"
+      },
+      "image_10": {
+        "title": "Falso Risoto de Sementes e Plâncton",
+        "description": "Cozinha molecular com texturas de sementes torradas e sabor marinho do plâncton"
+      },
+      "image_11": {
+        "title": "Inovação e Design em Restaurantes",
+        "description": "Ambiente gastronômico moderno com arquitetura de interiores e experiência sensorial completa"
+      },
+      "image_12": {
+        "title": "Carpaccio de Camarões",
+        "description": "Carpaccio de camarão branco com azeite, sal em flocos e microverdes"
+      },
+      "image_13": {
+        "title": "Gaspacho Clássico Andaluz",
+        "description": "Sopa fria tradicional com tomates maduros, pimentão, pepino e azeite virgem"
+      },
+      "image_14": {
+        "title": "Azeitonas Líquidas Esferificação",
+        "description": "Técnica de gastronomia molecular com esferas líquidas de azeite e sabor intenso"
+      },
+      "image_15": {
+        "title": "Coquetel Gin Game",
+        "description": "Coquetel de autor com Chartreuse, gin premium e buquê de ervas aromáticas frescas"
+      },
+      "image_16": {
+        "title": "Margarita Verde Picante",
+        "description": "Margarita verde com tequila Patrón, Ancho Reyes Verde, limão e borda de sal defumado"
+      },
+      "image_17": {
+        "title": "Super Fashion Old Fashioned",
+        "description": "Coquetelaria molecular com brandy italiano, cordial de tamarindo clarificado e bitter de laranja"
+      },
+      "image_18": {
+        "title": "Tepache de Abacaxi Assado",
+        "description": "Bebida fermentada tradicional mexicana com abacaxi assado, canela, cravo e cardamomo"
+      },
+      "image_19": {
+        "title": "Garibaldi Fermentado",
+        "description": "Reinvenção do clássico italiano com Campari, cítricos fermentados e espuma cremosa"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Ferramentas IA para Chefs | Suite Culinária",
     "description": "Transforme sua cozinha com 55+ ferramentas IA especializadas. Criatividade culinária, livros de receitas mundiais, gestão de negócios e marketing gastronômico.",
