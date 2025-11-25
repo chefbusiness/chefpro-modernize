@@ -33,7 +33,7 @@
     "description": "Suite de Herramientas y Aplicaciones de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
     "rating": "Calificación: 5 estrellas",
     "business_types": ["Gestión", "Restaurante", "Catering", "Pizzería", "Hamburguesería", "Panadería", "Pastelería", "Chocolatería", "Heladería", "Dark Kitchen", "Cafetería", "Brunch"],
-    "see_resources": "Ver Recursos"
+    "see_resources": "VER RECURSOS"
   },
   "notifications": {
     "someone_from": "Alguien de",
