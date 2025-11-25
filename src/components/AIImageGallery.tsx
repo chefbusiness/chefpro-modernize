@@ -33,6 +33,11 @@ const AIImageGallery = () => {
     { id: 12, src: '/lovable-uploads/ai-gallery/carpaccio-gambas.jpeg', model: 'ideogram' },
     { id: 13, src: '/lovable-uploads/ai-gallery/gazpacho-clasico.jpeg', model: 'ideogram' },
     { id: 14, src: '/lovable-uploads/ai-gallery/aceitunas-liquidas.jpeg', model: 'ideogram' },
+    { id: 15, src: '/lovable-uploads/ai-gallery/cocktail-gin-game.jpeg', model: 'nano_banana' },
+    { id: 16, src: '/lovable-uploads/ai-gallery/cocktail-green-margarita.jpeg', model: 'seedream' },
+    { id: 17, src: '/lovable-uploads/ai-gallery/cocktail-super-fashion.jpeg', model: 'ideogram' },
+    { id: 18, src: '/lovable-uploads/ai-gallery/cocktail-tepache-pina-asada.jpeg', model: 'nano_banana' },
+    { id: 19, src: '/lovable-uploads/ai-gallery/cocktail-garibaldi-fermentado.jpeg', model: 'seedream' },
   ];
 
   const scrollPrev = useCallback(() => {

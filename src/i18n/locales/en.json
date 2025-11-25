@@ -884,6 +884,26 @@
       "image_14": {
         "title": "Liquid Olives Spherification",
         "description": "Molecular gastronomy technique with liquid spheres of olive oil and intense flavor"
+      },
+      "image_15": {
+        "title": "Gin Game Cocktail",
+        "description": "Signature cocktail with Chartreuse, premium gin and bouquet of fresh aromatic herbs"
+      },
+      "image_16": {
+        "title": "Spicy Green Margarita",
+        "description": "Green margarita with Patrón tequila, Ancho Reyes Verde, lime and smoked salt rim"
+      },
+      "image_17": {
+        "title": "Super Fashion Old Fashioned",
+        "description": "Molecular mixology with Italian brandy, clarified tamarind cordial and orange bitters"
+      },
+      "image_18": {
+        "title": "Roasted Pineapple Tepache",
+        "description": "Traditional Mexican fermented drink with roasted pineapple, cinnamon, clove and cardamom"
+      },
+      "image_19": {
+        "title": "Fermented Garibaldi",
+        "description": "Reimagination of Italian classic with Campari, fermented citrus and creamy foam"
       }
     }
   },
