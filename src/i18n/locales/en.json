@@ -904,6 +904,30 @@
       "image_19": {
         "title": "Fermented Garibaldi",
         "description": "Reimagination of Italian classic with Campari, fermented citrus and creamy foam"
+      },
+      "image_20": {
+        "title": "French Toast with Berries",
+        "description": "Classic French brunch with caramelized brioche, fresh berries and maple syrup"
+      },
+      "image_21": {
+        "title": "Vanilla Mille-feuille with Raspberries",
+        "description": "Caramelized crispy puff pastry with vanilla diplomat cream and fresh raspberries"
+      },
+      "image_22": {
+        "title": "Yuzu and Meringue Tartlet",
+        "description": "Japanese citrus tart with yuzu cream and torched Italian meringue"
+      },
+      "image_23": {
+        "title": "Bicolor Butter Croissant",
+        "description": "Artisan croissant with double lamination of chocolate and French butter"
+      },
+      "image_24": {
+        "title": "Garden Focaccia High Hydration",
+        "description": "Italian bread decorated with vegetables and edible flowers on high hydration dough"
+      },
+      "image_25": {
+        "title": "Sourdough Loaf with Ear",
+        "description": "Artisan bread with slow fermentation, rustic crust and perfect scoring"
       }
     }
   },

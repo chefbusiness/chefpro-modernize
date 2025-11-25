@@ -1201,6 +1201,30 @@
       "image_19": {
         "title": "Garibaldi Fermentato",
         "description": "Rivisitazione del classico italiano con Campari, agrumi fermentati e schiuma cremosa"
+      },
+      "image_20": {
+        "title": "French Toast ai Frutti di Bosco",
+        "description": "Classico brunch francese con brioche caramellata, frutti di bosco e sciroppo d'acero"
+      },
+      "image_21": {
+        "title": "Millefoglie alla Vaniglia con Lamponi",
+        "description": "Sfoglia croccante caramellata con crema diplomatica alla vaniglia e lamponi freschi"
+      },
+      "image_22": {
+        "title": "Crostatina di Yuzu e Meringa",
+        "description": "Crostata giapponese agli agrumi con crema di yuzu e meringa italiana bruciata"
+      },
+      "image_23": {
+        "title": "Croissant Bicolore al Burro",
+        "description": "Croissant artigianale con doppia laminazione cioccolato e burro francese"
+      },
+      "image_24": {
+        "title": "Focaccia Giardino Alta Idratazione",
+        "description": "Pane italiano decorato con verdure e fiori commestibili su impasto ad alta idratazione"
+      },
+      "image_25": {
+        "title": "Pagnotta di Lievito Madre con Orecchia",
+        "description": "Pane artigianale a lenta fermentazione con crosta rustica e taglio perfetto"
       }
     }
   },
