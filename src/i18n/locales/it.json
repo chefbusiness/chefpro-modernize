@@ -1113,6 +1113,77 @@
     "terms": "Termini di Servizio",
     "cookies": "Politica sui Cookie"
   },
+  "ai_gallery": {
+    "badge": "Generazione di Immagini con IA",
+    "title": "Visualizza le tue Creazioni Culinarie",
+    "description": "Genera immagini professionali delle tue ricette con i modelli di IA più avanzati. Perfette per menu, social media e presentazioni.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Generato con",
+    "cta": "Prova la Generazione di Immagini",
+    "counter": "Immagine {current} di {total}",
+    "images": {
+      "image_1": {
+        "title": "Torrija Caramellata con Gelato",
+        "description": "Dessert spagnolo tradizionale reinterpretato con tecnica moderna e presentazione d'autore"
+      },
+      "image_2": {
+        "title": "Innovazione e Design nei Ristoranti",
+        "description": "Concept di spazio gastronomico contemporaneo con illuminazione e design d'avanguardia"
+      },
+      "image_3": {
+        "title": "Tataki di Maiale Iberico e Chimichurri",
+        "description": "Fusione perfetta tra tecnica giapponese e sapori argentini con prodotto premium"
+      },
+      "image_4": {
+        "title": "Gamberi all'Aglio",
+        "description": "Classico della gastronomia spagnola con olio extravergine d'oliva e aglio confitato"
+      },
+      "image_5": {
+        "title": "Ostrica con Aria di Gin-Tonic",
+        "description": "Alta cucina che combina mare e botaniche in un'esperienza unica"
+      },
+      "image_6": {
+        "title": "Maialino Arrosto",
+        "description": "Maialino castigliano tradizionale con pelle croccante e carne tenera al punto perfetto"
+      },
+      "image_7": {
+        "title": "Cannellone di Avocado e Granchio",
+        "description": "Creazione contemporanea con avocado, polpa di granchio ed emulsione di agrumi"
+      },
+      "image_8": {
+        "title": "Uovo a Bassa Temperatura con Tartufo",
+        "description": "Tecnica sous-vide perfetta con tartufo nero grattugiato e riduzione di funghi"
+      },
+      "image_9": {
+        "title": "Crocchetta di Prosciutto Iberico",
+        "description": "Crocchetta cremosa di prosciutto iberico de bellota con besciamella artigianale e impanatura croccante"
+      },
+      "image_10": {
+        "title": "Falso Risotto di Semi e Plancton",
+        "description": "Cucina molecolare con texture di semi tostati e sapore marino del plancton"
+      },
+      "image_11": {
+        "title": "Innovazione e Design nei Ristoranti",
+        "description": "Ambiente gastronomico moderno con architettura d'interni ed esperienza sensoriale completa"
+      },
+      "image_12": {
+        "title": "Carpaccio di Gamberi",
+        "description": "Carpaccio di gambero bianco con olio d'oliva, sale in scaglie e microgreens"
+      },
+      "image_13": {
+        "title": "Gazpacho Classico Andaluso",
+        "description": "Zuppa fredda tradizionale con pomodori maturi, peperone, cetriolo e olio d'oliva vergine"
+      },
+      "image_14": {
+        "title": "Olive Liquide Sferificazione",
+        "description": "Tecnica di gastronomia molecolare con sfere liquide di olio d'oliva e sapore intenso"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ Strumenti IA per Chef | Suite Culinaria",
     "description": "Trasforma la tua cucina con 55+ strumenti IA specializzati. Creatività culinaria, libri di ricette mondiali, gestione aziendale e marketing gastronomico.",

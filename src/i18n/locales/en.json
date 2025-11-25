@@ -816,6 +816,77 @@
     "message": "Oops! Page not found",
     "back_home": "Back to Home"
   },
+  "ai_gallery": {
+    "badge": "AI Image Generation",
+    "title": "Visualize Your Culinary Creations",
+    "description": "Generate professional images of your recipes with the most advanced AI models. Perfect for menus, social media, and presentations.",
+    "models": {
+      "nano_banana": "Nano Banana Pro",
+      "seedream": "Seedream 3",
+      "ideogram": "Ideogram 3"
+    },
+    "generated_with": "Generated with",
+    "cta": "Try Image Generation",
+    "counter": "Image {current} of {total}",
+    "images": {
+      "image_1": {
+        "title": "Caramelized Torrija with Ice Cream",
+        "description": "Traditional Spanish dessert reimagined with modern technique and signature presentation"
+      },
+      "image_2": {
+        "title": "Restaurant Innovation and Design",
+        "description": "Contemporary gastronomic space concept with cutting-edge lighting and design"
+      },
+      "image_3": {
+        "title": "Iberian Pork Tataki and Chimichurri",
+        "description": "Perfect fusion of Japanese technique and Argentine flavors with premium product"
+      },
+      "image_4": {
+        "title": "Garlic Prawns",
+        "description": "Spanish gastronomy classic with extra virgin olive oil and candied garlic"
+      },
+      "image_5": {
+        "title": "Oyster with Gin-Tonic Air",
+        "description": "High-end cuisine combining sea and botanicals in a unique experience"
+      },
+      "image_6": {
+        "title": "Roast Suckling Pig",
+        "description": "Traditional Castilian suckling pig with crispy skin and perfectly tender meat"
+      },
+      "image_7": {
+        "title": "Avocado and Crab Cannelloni",
+        "description": "Contemporary creation with avocado, crab meat, and citrus emulsion"
+      },
+      "image_8": {
+        "title": "Low-Temperature Egg with Truffle",
+        "description": "Perfect sous-vide technique with shaved black truffle and mushroom reduction"
+      },
+      "image_9": {
+        "title": "Iberian Ham Croquette",
+        "description": "Creamy acorn-fed Iberian ham croquette with artisanal béchamel and crispy coating"
+      },
+      "image_10": {
+        "title": "False Risotto with Seeds and Plankton",
+        "description": "Molecular cuisine with toasted seed textures and marine flavor from plankton"
+      },
+      "image_11": {
+        "title": "Restaurant Innovation and Design",
+        "description": "Modern gastronomic atmosphere with interior architecture and complete sensory experience"
+      },
+      "image_12": {
+        "title": "Prawn Carpaccio",
+        "description": "White prawn carpaccio with olive oil, flake salt, and microgreens"
+      },
+      "image_13": {
+        "title": "Classic Andalusian Gazpacho",
+        "description": "Traditional cold soup with ripe tomatoes, pepper, cucumber, and virgin olive oil"
+      },
+      "image_14": {
+        "title": "Liquid Olives Spherification",
+        "description": "Molecular gastronomy technique with liquid spheres of olive oil and intense flavor"
+      }
+    }
+  },
   "seo": {
     "title": "AI Chef Pro - 55+ AI Tools for Chefs | Culinary Suite",
     "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",
