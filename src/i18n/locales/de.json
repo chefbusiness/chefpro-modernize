@@ -1201,6 +1201,30 @@
       "image_19": {
         "title": "Fermentierter Garibaldi",
         "description": "Neuinterpretation des italienischen Klassikers mit Campari, fermentierten Zitrusfrüchten und cremigem Schaum"
+      },
+      "image_20": {
+        "title": "French Toast mit Beeren",
+        "description": "Klassischer französischer Brunch mit karamellisierter Brioche, frischen Beeren und Ahornsirup"
+      },
+      "image_21": {
+        "title": "Vanille-Mille-feuille mit Himbeeren",
+        "description": "Karamellisierter knuspriger Blätterteig mit Vanille-Diplomat-Creme und frischen Himbeeren"
+      },
+      "image_22": {
+        "title": "Yuzu- und Baiser-Törtchen",
+        "description": "Japanische Zitrus-Tarte mit Yuzu-Creme und flambierter italienischer Baiser"
+      },
+      "image_23": {
+        "title": "Zweifarbiges Butter-Croissant",
+        "description": "Handwerkliches Croissant mit doppelter Laminierung aus Schokolade und französischer Butter"
+      },
+      "image_24": {
+        "title": "Garten-Focaccia Hohe Hydratation",
+        "description": "Italienisches Brot dekoriert mit Gemüse und essbaren Blumen auf hoch hydratisiertem Teig"
+      },
+      "image_25": {
+        "title": "Sauerteig-Brot mit Ohr",
+        "description": "Handwerkliches Brot mit langsamer Fermentation, rustikaler Kruste und perfektem Schnitt"
       }
     }
   },

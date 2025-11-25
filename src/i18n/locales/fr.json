@@ -1069,6 +1069,30 @@
       "image_19": {
         "title": "Garibaldi Fermenté",
         "description": "Réinvention du classique italien avec Campari, agrumes fermentés et mousse crémeuse"
+      },
+      "image_20": {
+        "title": "Pain Perdu aux Fruits Rouges",
+        "description": "Brunch français classique avec brioche caramélisée, fruits rouges et sirop d'érable"
+      },
+      "image_21": {
+        "title": "Mille-feuille à la Vanille et Framboises",
+        "description": "Pâte feuilletée croustillante caramélisée avec crème diplomate vanille et framboises fraîches"
+      },
+      "image_22": {
+        "title": "Tartelette au Yuzu et Meringue",
+        "description": "Tarte japonaise aux agrumes avec crème de yuzu et meringue italienne flambée"
+      },
+      "image_23": {
+        "title": "Croissant Bicolore au Beurre",
+        "description": "Croissant artisanal avec double feuilletage chocolat et beurre français"
+      },
+      "image_24": {
+        "title": "Focaccia Jardin Haute Hydratation",
+        "description": "Pain italien décoré de légumes et fleurs comestibles sur pâte à haute hydratation"
+      },
+      "image_25": {
+        "title": "Miche au Levain avec Grigne",
+        "description": "Pain artisanal à fermentation lente avec croûte rustique et grigne parfaite"
       }
     }
   },

@@ -38,6 +38,12 @@ const AIImageGallery = () => {
     { id: 17, src: '/lovable-uploads/ai-gallery/cocktail-super-fashion.jpeg', model: 'ideogram' },
     { id: 18, src: '/lovable-uploads/ai-gallery/cocktail-tepache-pina-asada.jpeg', model: 'nano_banana' },
     { id: 19, src: '/lovable-uploads/ai-gallery/cocktail-garibaldi-fermentado.jpeg', model: 'seedream' },
+    { id: 20, src: '/lovable-uploads/ai-gallery/tres-tostadas-francesas-aichefpro.jpeg', model: 'nano_banana' },
+    { id: 21, src: '/lovable-uploads/ai-gallery/milhojas-vertical-de-vainilla-con-frambuesas-aichefpro-2.jpeg', model: 'seedream' },
+    { id: 22, src: '/lovable-uploads/ai-gallery/tartaleta-de-yuzu-y-merengue.jpeg', model: 'ideogram' },
+    { id: 23, src: '/lovable-uploads/ai-gallery/croissant-bicolor-de-mantequilla-aichefpro.jpeg', model: 'nano_banana' },
+    { id: 24, src: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg', model: 'seedream' },
+    { id: 25, src: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg', model: 'ideogram' },
   ];
 
   const scrollPrev = useCallback(() => {

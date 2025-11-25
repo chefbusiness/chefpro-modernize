@@ -1113,6 +1113,30 @@
       "image_19": {
         "title": "Garibaldi Fermentado",
         "description": "Reinvención del clásico italiano con Campari, cítricos fermentados y espuma cremosa"
+      },
+      "image_20": {
+        "title": "Tostadas Francesas con Frutos Rojos",
+        "description": "Clásico brunch francés con pan brioche caramelizado, frutos rojos y sirope de arce"
+      },
+      "image_21": {
+        "title": "Milhojas de Vainilla con Frambuesas",
+        "description": "Hojaldre crujiente caramelizado con crema diplomática de vainilla y frambuesas frescas"
+      },
+      "image_22": {
+        "title": "Tartaleta de Yuzu y Merengue",
+        "description": "Tarta cítrica japonesa con crema de yuzu y merengue italiano torchado"
+      },
+      "image_23": {
+        "title": "Croissant Bicolor de Mantequilla",
+        "description": "Croissant artesanal con doble laminado de chocolate y mantequilla francesa"
+      },
+      "image_24": {
+        "title": "Focaccia Jardín Alta Hidratación",
+        "description": "Pan italiano decorado con vegetales y flores comestibles sobre masa de alta hidratación"
+      },
+      "image_25": {
+        "title": "Hogaza de Masa Madre con Oreja",
+        "description": "Pan artesanal de fermentación lenta con corteza rústica y greña perfecta"
       }
     }
   },
