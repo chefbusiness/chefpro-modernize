@@ -1106,7 +1106,7 @@
     },
     "generated_with": "Gegenereerd met",
     "cta": "Probeer Beeldgeneratie",
-    "counter": "Afbeelding {current} van {total}",
+    "counter": "Afbeelding {{current}} van {{total}}",
     "images": {
       "image_1": {
         "title": "Gekarameliseerde Torrija met IJs",

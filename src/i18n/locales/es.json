@@ -1036,7 +1036,7 @@
     },
     "generated_with": "Generado con",
     "cta": "Probar Generación de Imágenes",
-    "counter": "Imagen {current} de {total}",
+    "counter": "Imagen {{current}} de {{total}}",
     "images": {
       "image_1": {
         "title": "Torrija Caramelizada con Helado",

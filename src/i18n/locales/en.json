@@ -827,7 +827,7 @@
     },
     "generated_with": "Generated with",
     "cta": "Try Image Generation",
-    "counter": "Image {current} of {total}",
+    "counter": "Image {{current}} of {{total}}",
     "images": {
       "image_1": {
         "title": "Caramelized Torrija with Ice Cream",

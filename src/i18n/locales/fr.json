@@ -992,7 +992,7 @@
     },
     "generated_with": "Généré avec",
     "cta": "Essayer la Génération d'Images",
-    "counter": "Image {current} sur {total}",
+    "counter": "Image {{current}} sur {{total}}",
     "images": {
       "image_1": {
         "title": "Torrija Caramélisée avec Glace",
