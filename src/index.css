@@ -41,6 +41,14 @@
     --chef-blue: 217.2 91.2% 59.8%;
     --chef-gray: 240 3.8% 46.1%;
 
+    /* Category colors for visual variety */
+    --category-creativity: 25 95% 53%;      /* Naranja cálido - pasión creativa */
+    --category-cookbooks: 199 89% 48%;      /* Azul océano - cocinas del mundo */
+    --category-knowledge: 152 69% 40%;      /* Verde esmeralda - sabiduría */
+    --category-tools: 262 83% 58%;          /* Púrpura - eficiencia */
+    --category-business: 330 81% 60%;       /* Rosa magenta - emprendimiento */
+    --category-marketing: 42 100% 50%;      /* Amarillo dorado - marca */
+
     /* Golden gradients */
     --gradient-gold: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
     --gradient-gold-soft: linear-gradient(135deg, hsl(var(--accent-light)) 0%, hsl(var(--accent)) 100%);
@@ -235,5 +243,48 @@
       bottom: -0.1rem;
       height: 0.12rem;
     }
+  }
+
+  /* Category card styles with subtle gradients */
+  .category-card-creativity {
+    background: linear-gradient(135deg, hsl(var(--category-creativity) / 0.08) 0%, hsl(var(--category-creativity) / 0.02) 100%);
+  }
+  .category-card-creativity .category-icon {
+    @apply bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400;
+  }
+
+  .category-card-cookbooks {
+    background: linear-gradient(135deg, hsl(var(--category-cookbooks) / 0.08) 0%, hsl(var(--category-cookbooks) / 0.02) 100%);
+  }
+  .category-card-cookbooks .category-icon {
+    @apply bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400;
+  }
+
+  .category-card-knowledge {
+    background: linear-gradient(135deg, hsl(var(--category-knowledge) / 0.08) 0%, hsl(var(--category-knowledge) / 0.02) 100%);
+  }
+  .category-card-knowledge .category-icon {
+    @apply bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400;
+  }
+
+  .category-card-tools {
+    background: linear-gradient(135deg, hsl(var(--category-tools) / 0.08) 0%, hsl(var(--category-tools) / 0.02) 100%);
+  }
+  .category-card-tools .category-icon {
+    @apply bg-violet-100 text-violet-600 dark:bg-violet-900/30 dark:text-violet-400;
+  }
+
+  .category-card-business {
+    background: linear-gradient(135deg, hsl(var(--category-business) / 0.08) 0%, hsl(var(--category-business) / 0.02) 100%);
+  }
+  .category-card-business .category-icon {
+    @apply bg-pink-100 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400;
+  }
+
+  .category-card-marketing {
+    background: linear-gradient(135deg, hsl(var(--category-marketing) / 0.08) 0%, hsl(var(--category-marketing) / 0.02) 100%);
+  }
+  .category-card-marketing .category-icon {
+    @apply bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400;
   }
 }

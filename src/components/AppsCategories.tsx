@@ -36,6 +36,7 @@ export default function AppsCategories() {
       description: t('categories.creativity.description'),
       icon: ChefHat,
       count: t('categories.creativity.count'),
+      colorClass: 'category-card-creativity',
       apps: [
         t('apps.creativity.cocina_creativa.name'),
         t('apps.creativity.pasteleria_creativa.name'),
@@ -49,6 +50,7 @@ export default function AppsCategories() {
       description: t('categories.cookbooks.description'),
       icon: Globe,
       count: t('categories.cookbooks.count'),
+      colorClass: 'category-card-cookbooks',
       apps: [
         t('cookbooks.europa') + ' (10)',
         t('cookbooks.latinoamerica') + ' (11)',
@@ -61,6 +63,7 @@ export default function AppsCategories() {
       description: t('categories.knowledge.description'),
       icon: Globe,
       count: t('categories.knowledge.count'),
+      colorClass: 'category-card-knowledge',
       apps: [t('apps.knowledge.gastro_lexicum.name')]
     },
     {
@@ -69,6 +72,7 @@ export default function AppsCategories() {
       description: t('categories.tools.description'),
       icon: Calculator,
       count: t('categories.tools.count'),
+      colorClass: 'category-card-tools',
       apps: [
         t('apps.business.chatgpt_4o.name'),
         t('apps.business.mermas_gencal.name'),
@@ -82,6 +86,7 @@ export default function AppsCategories() {
       description: t('categories.business.description'),
       icon: Building,
       count: t('categories.business.count'),
+      colorClass: 'category-card-business',
       apps: [
         t('apps.concepts.catering_ai.name'),
         t('apps.concepts.burger_pro_ai.name'),
@@ -95,6 +100,7 @@ export default function AppsCategories() {
       description: t('categories.marketing.description'),
       icon: Camera,
       count: t('categories.marketing.count'),
+      colorClass: 'category-card-marketing',
       apps: [
         t('apps.marketing.menu_plate_seo.name'),
         t('apps.marketing.gastro_calendar.name'),
@@ -119,13 +125,13 @@ export default function AppsCategories() {
         {appCategories.map((category) => (
           <Card 
             key={category.id} 
-            className="cursor-pointer hover-card group"
+            className={`cursor-pointer hover-card group ${category.colorClass}`}
             onClick={() => scrollToSection(category.id)}
           >
             <CardHeader>
               <div className="flex items-center justify-between">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <category.icon className="h-6 w-6 text-primary" />
+                <div className="category-icon h-12 w-12 rounded-full flex items-center justify-center">
+                  <category.icon className="h-6 w-6" />
                 </div>
                 <Badge variant="secondary">{category.count}</Badge>
               </div>
