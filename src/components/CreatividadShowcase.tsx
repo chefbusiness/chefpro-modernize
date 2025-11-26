@@ -26,10 +26,12 @@ export default function CreatividadShowcase() {
           const IconComponent = app.icon;
           
           return (
-            <Card key={app.id} className="group cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 border-border/50 hover:border-accent/50">
+            <Card key={app.id} className="category-card-creativity group cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 border-border/50 hover:border-accent/50">
               <CardHeader className="p-4 sm:p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
+                  <div className="category-icon h-10 w-10 rounded-full flex items-center justify-center">
+                    <IconComponent className="h-5 w-5" />
+                  </div>
                 </div>
                 <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.name`)}</CardTitle>
                 <CardDescription className="text-sm leading-relaxed">{t(`apps.${app.category}.${app.id.replace(/-/g, '_')}.description`)}</CardDescription>

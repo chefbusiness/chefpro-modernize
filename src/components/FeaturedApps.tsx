@@ -34,7 +34,7 @@ export default function FeaturedApps() {
         <CarouselContent className="-ml-2 md:-ml-4">
           {featuredApps.map((app) => (
             <CarouselItem key={app.id} className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3">
-              <Card className="group h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
+              <Card className="category-card-marketing group h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
                 <CardHeader className="p-4 sm:p-6">
                   <div className="relative mb-4 group/image">
                     <Dialog>

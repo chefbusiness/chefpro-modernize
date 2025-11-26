@@ -22,9 +22,9 @@ export default function ModernAbout() {
       </div>
 
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 mt-12">
-        <Card className="hover-card">
+        <Card className="category-card-business hover-card">
           <CardContent className="flex flex-col items-center space-y-2 p-6">
-            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="category-icon h-12 w-12 rounded-full flex items-center justify-center">
               <div className="h-6 w-6 rounded bg-accent" />
             </div>
             <h3 className="text-xl font-bold">{t('about.mission_title')}</h3>
@@ -35,9 +35,9 @@ export default function ModernAbout() {
           </CardContent>
         </Card>
 
-        <Card className="hover-card">
+        <Card className="category-card-business hover-card">
           <CardContent className="flex flex-col items-center space-y-2 p-6">
-            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="category-icon h-12 w-12 rounded-full flex items-center justify-center">
               <div className="h-6 w-6 rounded bg-accent" />
             </div>
             <h3 className="text-xl font-bold">{t('about.creativity_title')}</h3>
@@ -47,9 +47,9 @@ export default function ModernAbout() {
           </CardContent>
         </Card>
 
-        <Card className="hover-card">
+        <Card className="category-card-business hover-card">
           <CardContent className="flex flex-col items-center space-y-2 p-6">
-            <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="category-icon h-12 w-12 rounded-full flex items-center justify-center">
               <div className="h-6 w-6 rounded bg-accent" />
             </div>
             <h3 className="text-xl font-bold">{t('about.chef_title')}</h3>
