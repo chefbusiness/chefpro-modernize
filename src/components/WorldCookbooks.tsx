@@ -40,7 +40,7 @@ export default function WorldCookbooks() {
             {worldCookbooks.europa.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
+                className="category-card-cookbooks group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
@@ -65,7 +65,7 @@ export default function WorldCookbooks() {
             {worldCookbooks.latinoamerica.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
+                className="category-card-cookbooks group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
@@ -90,7 +90,7 @@ export default function WorldCookbooks() {
             {worldCookbooks.asia.map((cuisine) => (
               <Card 
                 key={cuisine.name}
-                className="group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
+                className="category-card-cookbooks group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95"
               >
                 <CardHeader className="p-3 sm:p-4 pb-2">
                   <CardTitle className="text-center text-sm sm:text-base flex flex-col items-center gap-1">
