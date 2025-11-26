@@ -10,6 +10,18 @@ export default function CreatividadShowcase() {
     window.open(`${getAppUrl(currentLanguage)}/${appSlug}`, '_blank');
   };
 
+  // Mapeo de colores individuales por app
+  const appColorClasses: Record<string, string> = {
+    'cocina-creativa': 'app-card-cocina-creativa',
+    'pasteleria-creativa': 'app-card-pasteleria-creativa',
+    'chocolateria-creativa': 'app-card-chocolateria-creativa',
+    'heladeria-creativa': 'app-card-heladeria-creativa',
+    'panaderia-creativa': 'app-card-panaderia-creativa',
+    'fermentus': 'app-card-fermentus',
+    'vegchef': 'app-card-vegchef',
+    'food-pairing': 'app-card-food-pairing',
+  };
+
   return (
     <section id="showcase-creatividad" className="container py-16">
       <div className="text-center mb-12">
@@ -26,7 +38,7 @@ export default function CreatividadShowcase() {
           const IconComponent = app.icon;
           
           return (
-            <Card key={app.id} className="category-card-creativity group cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 border-border/50 hover:border-accent/50">
+            <Card key={app.id} className={`${appColorClasses[app.id] || 'category-card-creativity'} group cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 border-border/50 hover:border-accent/50`}>
               <CardHeader className="p-4 sm:p-6">
                 <div className="flex items-center justify-between mb-2">
                   <div className="category-icon h-10 w-10 rounded-full flex items-center justify-center">
