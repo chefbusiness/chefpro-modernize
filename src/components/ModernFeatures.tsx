@@ -11,11 +11,11 @@ export default function ModernFeatures() {
   const { t } = useLanguage();
 
   const llmModels = [
-    { image: llmAiChefPro, name: t('features.llm_models.ai_chef_pro') },
-    { image: llmMistral, name: t('features.llm_models.mistral') },
-    { image: llmOpenAI, name: t('features.llm_models.openai') },
-    { image: llmAnthropic, name: t('features.llm_models.anthropic') },
-    { image: llmMetaLlama, name: t('features.llm_models.meta_llama') }
+    { image: llmAiChefPro, name: t('features.llm_models.ai_chef_pro'), alt: t('alt_texts.llm_ai_chef_pro') },
+    { image: llmMistral, name: t('features.llm_models.mistral'), alt: t('alt_texts.llm_mistral') },
+    { image: llmOpenAI, name: t('features.llm_models.openai'), alt: t('alt_texts.llm_openai') },
+    { image: llmAnthropic, name: t('features.llm_models.anthropic'), alt: t('alt_texts.llm_anthropic') },
+    { image: llmMetaLlama, name: t('features.llm_models.meta_llama'), alt: t('alt_texts.llm_meta_llama') }
   ];
 
   const features = [
@@ -94,8 +94,9 @@ export default function ModernFeatures() {
             <div key={index} className="rounded-lg border bg-card overflow-hidden hover-card">
               <img 
                 src={model.image}
-                alt={model.name}
+                alt={model.alt}
                 className="w-full h-20 object-cover"
+                loading="lazy"
               />
             </div>
           ))}

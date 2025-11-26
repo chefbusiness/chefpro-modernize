@@ -1218,6 +1218,52 @@
   "seo": {
     "title": "AI Chef Pro - 55+ Ferramentas IA para Chefs | Suite Culinária",
     "description": "Transforme sua cozinha com 55+ ferramentas IA especializadas. Criatividade culinária, livros de receitas mundiais, gestão de negócios e marketing gastronômico.",
-    "keywords": "chef ia, ferramentas gastronomia, receitas ai, inteligência artificial culinária, gestão restaurante"
+    "keywords": "chef ia, ferramentas gastronomia, receitas ai, inteligência artificial culinária, gestão restaurante, software chef, aplicações culinárias, ia cozinha, ferramentas chef profissional, livro receitas digital",
+    "og_image_alt": "AI Chef Pro - Suite de 55+ Ferramentas IA para Chefs Profissionais"
+  },
+  "pages": {
+    "index": {
+      "seo_title": "AI Chef Pro - 55+ Ferramentas IA para Chefs Profissionais",
+      "seo_description": "Suite completa de inteligência artificial para gastronomia. Criatividade culinária, 25 livros de receitas mundiais, gestão de negócios e marketing. Teste grátis.",
+      "seo_keywords": "chef ia, ferramentas chef, receitas inteligência artificial, cozinha profissional, software restaurante, aplicações gastronomia"
+    },
+    "mentoria_online": {
+      "seo_title": "Mentoria Online para Chefs - Consultoria IA Gastronômica | AI Chef Pro",
+      "seo_description": "Sessões de mentoria 1:1 com especialistas em gastronomia e IA. A partir de €150. Maximize AI Chef Pro e acelere resultados no seu negócio culinário.",
+      "seo_keywords": "mentoria chef, consultoria gastronomia, coaching culinário, consultoria restaurante, formação chef ia"
+    },
+    "legal": {
+      "seo_title": "Aviso Legal - AI Chef Pro | Informação Jurídica",
+      "seo_description": "Informação legal sobre AI Chef Pro. Termos de uso, propriedade intelectual e legislação aplicável.",
+      "seo_keywords": "aviso legal ai chef pro, termos legais, informação jurídica"
+    },
+    "privacy": {
+      "seo_title": "Política de Privacidade - AI Chef Pro | Proteção de Dados",
+      "seo_description": "Política de privacidade da AI Chef Pro. Como protegemos seus dados pessoais segundo o RGPD.",
+      "seo_keywords": "política privacidade, proteção dados, rgpd ai chef pro"
+    },
+    "cookies": {
+      "seo_title": "Política de Cookies - AI Chef Pro | Gestão de Cookies",
+      "seo_description": "Informações sobre cookies utilizados na AI Chef Pro. Configure suas preferências de privacidade.",
+      "seo_keywords": "política cookies, gestão cookies, preferências privacidade"
+    },
+    "terms": {
+      "seo_title": "Termos de Serviço - AI Chef Pro | Condições de Uso",
+      "seo_description": "Termos e condições de uso da AI Chef Pro. Direitos, obrigações e políticas de subscrição.",
+      "seo_keywords": "termos serviço, condições uso, políticas subscrição"
+    },
+    "services": {
+      "seo_title": "Serviços - AI Chef Pro | Soluções IA para Gastronomia",
+      "seo_description": "Descubra todos os serviços da AI Chef Pro. Suite completa de ferramentas IA para profissionais gastronômicos.",
+      "seo_keywords": "serviços ai chef pro, soluções gastronomia, ferramentas ia cozinha"
+    }
+  },
+  "alt_texts": {
+    "llm_ai_chef_pro": "Logo AI Chef Pro - Modelos de Linguagem Especializados em Gastronomia",
+    "llm_mistral": "Logo Mistral AI - Tecnologia IA avançada para AI Chef Pro",
+    "llm_openai": "Logo OpenAI GPT - Motor de inteligência artificial da AI Chef Pro",
+    "llm_anthropic": "Logo Anthropic Claude - IA conversacional para chefs",
+    "llm_meta_llama": "Logo Meta Llama 3 - Modelo de linguagem para cozinha profissional",
+    "mentoria_hero": "Sessão de mentoria online personalizada com AI Chef Pro para profissionais gastronômicos"
   }
 }

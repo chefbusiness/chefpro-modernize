@@ -1213,6 +1213,52 @@
   "seo": {
     "title": "AI Chef Pro - 55+ AI-tools voor Chefs | Culinaire Suite",
     "description": "Transformeer uw keuken met 55+ gespecialiseerde AI-tools. Culinaire creativiteit, wereldwijde kookboeken, bedrijfsbeheer en gastronomische marketing.",
-    "keywords": "chef ai, gastronomie tools, ai recepten, culinaire kunstmatige intelligentie, restaurant management"
+    "keywords": "chef ai, gastronomie tools, ai recepten, culinaire kunstmatige intelligentie, restaurant management, chef software, culinaire applicaties, keuken ai, professionele chef tools, digitaal receptenboek",
+    "og_image_alt": "AI Chef Pro - Suite van 55+ AI-tools voor Professionele Chefs"
+  },
+  "pages": {
+    "index": {
+      "seo_title": "AI Chef Pro - 55+ AI-tools voor Professionele Chefs",
+      "seo_description": "Complete kunstmatige intelligentie suite voor gastronomie. Culinaire creativiteit, 25 wereldwijde kookboeken, bedrijfsbeheer en marketing. Gratis proberen.",
+      "seo_keywords": "chef ai, chef tools, ai recepten, professioneel koken, restaurant software, gastronomie applicaties"
+    },
+    "mentoria_online": {
+      "seo_title": "Online Mentorschap voor Chefs - AI Gastronomisch Advies | AI Chef Pro",
+      "seo_description": "1:1 mentorschap sessies met experts in gastronomie en AI. Vanaf €150. Maximaliseer AI Chef Pro en versnel resultaten in uw culinaire bedrijf.",
+      "seo_keywords": "chef mentorschap, gastronomie advies, culinaire coaching, restaurant advies, chef ai training"
+    },
+    "legal": {
+      "seo_title": "Juridische Kennisgeving - AI Chef Pro | Juridische Informatie",
+      "seo_description": "Juridische informatie over AI Chef Pro. Gebruiksvoorwaarden, intellectueel eigendom en toepasselijke wetgeving.",
+      "seo_keywords": "ai chef pro juridische kennisgeving, juridische voorwaarden, juridische informatie"
+    },
+    "privacy": {
+      "seo_title": "Privacybeleid - AI Chef Pro | Gegevensbescherming",
+      "seo_description": "Privacybeleid van AI Chef Pro. Hoe wij uw persoonlijke gegevens beschermen volgens AVG.",
+      "seo_keywords": "privacybeleid, gegevensbescherming, avg ai chef pro"
+    },
+    "cookies": {
+      "seo_title": "Cookiebeleid - AI Chef Pro | Cookiebeheer",
+      "seo_description": "Informatie over cookies gebruikt in AI Chef Pro. Configureer uw privacyvoorkeuren.",
+      "seo_keywords": "cookiebeleid, cookiebeheer, privacyvoorkeuren"
+    },
+    "terms": {
+      "seo_title": "Servicevoorwaarden - AI Chef Pro | Gebruiksvoorwaarden",
+      "seo_description": "Algemene voorwaarden van AI Chef Pro. Rechten, verplichtingen en abonnementsbeleid.",
+      "seo_keywords": "servicevoorwaarden, gebruiksvoorwaarden, abonnementsbeleid"
+    },
+    "services": {
+      "seo_title": "Services - AI Chef Pro | AI-oplossingen voor Gastronomie",
+      "seo_description": "Ontdek alle diensten van AI Chef Pro. Complete suite van AI-tools voor gastronomische professionals.",
+      "seo_keywords": "ai chef pro services, gastronomie oplossingen, ai keuken tools"
+    }
+  },
+  "alt_texts": {
+    "llm_ai_chef_pro": "AI Chef Pro Logo - Gespecialiseerde Taalmodellen in Gastronomie",
+    "llm_mistral": "Mistral AI Logo - Geavanceerde AI-technologie voor AI Chef Pro",
+    "llm_openai": "OpenAI GPT Logo - Kunstmatige intelligentie engine van AI Chef Pro",
+    "llm_anthropic": "Anthropic Claude Logo - Conversationele AI voor chefs",
+    "llm_meta_llama": "Meta Llama 3 Logo - Taalmodel voor professioneel koken",
+    "mentoria_hero": "Gepersonaliseerde online mentorschap sessie met AI Chef Pro voor gastronomische professionals"
   }
 }

@@ -1231,6 +1231,52 @@
   "seo": {
     "title": "AI Chef Pro - 55+ KI-Tools für Köche | Kulinarische Suite",
     "description": "Transformieren Sie Ihre Küche mit 55+ spezialisierten KI-Tools. Kulinarische Kreativität, Weltkochbücher, Unternehmensführung und gastronomisches Marketing.",
-    "keywords": "koch ki, gastronomie tools, ki rezepte, kulinarische künstliche intelligenz, restaurant management"
+    "keywords": "koch ki, gastronomie tools, ki rezepte, kulinarische künstliche intelligenz, restaurant management, koch software, kulinarische anwendungen, küchen ki, professionelle koch tools, digitales rezeptbuch",
+    "og_image_alt": "AI Chef Pro - Suite mit 55+ KI-Tools für Profiköche"
+  },
+  "pages": {
+    "index": {
+      "seo_title": "AI Chef Pro - 55+ KI-Tools für Profiköche",
+      "seo_description": "Komplette künstliche Intelligenz Suite für Gastronomie. Kulinarische Kreativität, 25 Weltkochbücher, Unternehmensführung und Marketing. Kostenlos testen.",
+      "seo_keywords": "koch ki, koch tools, ki rezepte, professionelles kochen, restaurant software, gastronomie anwendungen"
+    },
+    "mentoria_online": {
+      "seo_title": "Online-Mentoring für Köche - KI-Gastronomie-Beratung | AI Chef Pro",
+      "seo_description": "1:1 Mentoring-Sitzungen mit Experten für Gastronomie und KI. Ab €150. Maximieren Sie AI Chef Pro und beschleunigen Sie Ergebnisse in Ihrem kulinarischen Geschäft.",
+      "seo_keywords": "koch mentoring, gastronomie beratung, kulinarisches coaching, restaurant beratung, koch ki schulung"
+    },
+    "legal": {
+      "seo_title": "Impressum - AI Chef Pro | Rechtliche Informationen",
+      "seo_description": "Rechtliche Informationen über AI Chef Pro. Nutzungsbedingungen, geistiges Eigentum und anwendbares Recht.",
+      "seo_keywords": "ai chef pro impressum, rechtliche bedingungen, rechtliche informationen"
+    },
+    "privacy": {
+      "seo_title": "Datenschutzrichtlinie - AI Chef Pro | Datenschutz",
+      "seo_description": "Datenschutzrichtlinie von AI Chef Pro. Wie wir Ihre persönlichen Daten gemäß DSGVO schützen.",
+      "seo_keywords": "datenschutzrichtlinie, datenschutz, dsgvo ai chef pro"
+    },
+    "cookies": {
+      "seo_title": "Cookie-Richtlinie - AI Chef Pro | Cookie-Verwaltung",
+      "seo_description": "Informationen über in AI Chef Pro verwendete Cookies. Konfigurieren Sie Ihre Datenschutzeinstellungen.",
+      "seo_keywords": "cookie richtlinie, cookie verwaltung, datenschutzeinstellungen"
+    },
+    "terms": {
+      "seo_title": "Nutzungsbedingungen - AI Chef Pro | Geschäftsbedingungen",
+      "seo_description": "Allgemeine Geschäftsbedingungen von AI Chef Pro. Rechte, Pflichten und Abonnementrichtlinien.",
+      "seo_keywords": "nutzungsbedingungen, geschäftsbedingungen, abonnementrichtlinien"
+    },
+    "services": {
+      "seo_title": "Dienstleistungen - AI Chef Pro | KI-Lösungen für Gastronomie",
+      "seo_description": "Entdecken Sie alle Dienstleistungen von AI Chef Pro. Komplette Suite von KI-Tools für Gastronomie-Profis.",
+      "seo_keywords": "ai chef pro dienstleistungen, gastronomie lösungen, ki küchen tools"
+    }
+  },
+  "alt_texts": {
+    "llm_ai_chef_pro": "AI Chef Pro Logo - Spezialisierte Sprachmodelle in Gastronomie",
+    "llm_mistral": "Mistral AI Logo - Fortschrittliche KI-Technologie für AI Chef Pro",
+    "llm_openai": "OpenAI GPT Logo - Künstliche Intelligenz Engine von AI Chef Pro",
+    "llm_anthropic": "Anthropic Claude Logo - Konversations-KI für Köche",
+    "llm_meta_llama": "Meta Llama 3 Logo - Sprachmodell für professionelles Kochen",
+    "mentoria_hero": "Personalisierte Online-Mentoring-Sitzung mit AI Chef Pro für Gastronomie-Profis"
   }
 }

@@ -40,16 +40,56 @@ const MentoriaOnline = () => {
     ]
   };
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": t('mentoriaOnline.hero.title'),
+    "description": t('mentoriaOnline.seo.description'),
+    "provider": {
+      "@type": "Organization",
+      "name": "AI Chef Pro",
+      "url": "https://aichef.pro"
+    },
+    "serviceType": "Professional Mentoring",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": currentLanguage === 'es' ? 'Sesión Express' : t('mentoriaOnline.sections.pricing.express.title'),
+        "price": "150",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "name": currentLanguage === 'es' ? 'Sesión Estándar' : t('mentoriaOnline.sections.pricing.standard.title'),
+        "price": "275",
+        "priceCurrency": "EUR"
+      },
+      {
+        "@type": "Offer",
+        "name": currentLanguage === 'es' ? 'Sesión Intensiva' : t('mentoriaOnline.sections.pricing.intensive.title'),
+        "price": "360",
+        "priceCurrency": "EUR"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title={t('mentoriaOnline.seo.title')}
-        description={t('mentoriaOnline.seo.description')}
-        keywords={t('mentoriaOnline.seo.keywords')}
+        title={t('pages.mentoria_online.seo_title')}
+        description={t('pages.mentoria_online.seo_description')}
+        keywords={t('pages.mentoria_online.seo_keywords')}
       />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(serviceSchema)}
         </script>
       </Helmet>
       <ModernHeader />
@@ -91,8 +131,9 @@ const MentoriaOnline = () => {
               <div className="relative">
                 <img 
                   src="https://blog.aichef.pro/wp-content/uploads/2025/03/Untitled-design.jpeg" 
-                  alt="Consultoría AI Chef Pro" 
+                  alt={t('alt_texts.mentoria_hero')}
                   className="rounded-lg shadow-xl w-full"
+                  loading="lazy"
                 />
               </div>
             </div>
