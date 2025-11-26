@@ -29,8 +29,9 @@ const Cookies = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title={t('pages.cookies.title')}
-        description={t('pages.cookies.description')}
+        title={t('pages.cookies.seo_title')}
+        description={t('pages.cookies.seo_description')}
+        keywords={t('pages.cookies.seo_keywords')}
       />
       <Helmet>
         <script type="application/ld+json">
