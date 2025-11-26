@@ -64,10 +64,10 @@ export default function ModernFeatures() {
       {/* Feature Cards */}
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
         {features.map((feature, index) => (
-          <Card key={index} className="hover-card">
+          <Card key={index} className="category-card-knowledge hover-card">
             <CardHeader>
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
-                <feature.icon className="h-6 w-6 text-primary" />
+              <div className="category-icon h-12 w-12 rounded-full flex items-center justify-center mb-2">
+                <feature.icon className="h-6 w-6" />
               </div>
               <CardTitle className="text-lg">{feature.title}</CardTitle>
             </CardHeader>

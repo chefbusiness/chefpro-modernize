@@ -26,10 +26,12 @@ export default function BusinessToolsShowcase() {
           const IconComponent = tool.icon;
           
           return (
-            <Card key={tool.id} className="group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
+            <Card key={tool.id} className="category-card-tools group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
               <CardHeader className="p-4 sm:p-6">
                 <div className="flex items-center justify-between mb-2">
-                  <IconComponent className="h-6 w-6 sm:h-8 sm:w-8 text-accent group-hover:text-accent-dark transition-colors" />
+                  <div className="category-icon h-10 w-10 rounded-full flex items-center justify-center">
+                    <IconComponent className="h-5 w-5" />
+                  </div>
                 </div>
                 <CardTitle className="text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(`apps.${tool.category}.${tool.id.replace(/-/g, '_')}.name`)}</CardTitle>
                 <CardDescription className="text-sm leading-relaxed">{t(`apps.${tool.category}.${tool.id.replace(/-/g, '_')}.description`)}</CardDescription>
