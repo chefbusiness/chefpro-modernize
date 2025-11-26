@@ -29,8 +29,9 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title={t('pages.privacy.title')}
-        description={t('pages.privacy.description')}
+        title={t('pages.privacy.seo_title')}
+        description={t('pages.privacy.seo_description')}
+        keywords={t('pages.privacy.seo_keywords')}
       />
       <Helmet>
         <script type="application/ld+json">

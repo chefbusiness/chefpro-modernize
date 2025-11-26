@@ -29,8 +29,9 @@ const Legal = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title={t('pages.legal.title')}
-        description={t('pages.legal.description')}
+        title={t('pages.legal.seo_title')}
+        description={t('pages.legal.seo_description')}
+        keywords={t('pages.legal.seo_keywords')}
       />
       <Helmet>
         <script type="application/ld+json">

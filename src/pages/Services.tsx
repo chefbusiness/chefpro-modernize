@@ -29,8 +29,9 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead 
-        title={t('pages.services.title')}
-        description={t('pages.services.description')}
+        title={t('pages.services.seo_title')}
+        description={t('pages.services.seo_description')}
+        keywords={t('pages.services.seo_keywords')}
       />
       <Helmet>
         <script type="application/ld+json">

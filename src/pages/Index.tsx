@@ -18,11 +18,18 @@ import ModernFAQ from '@/components/ModernFAQ';
 import ModernFooter from '@/components/ModernFooter';
 import ConversionNotifications from '@/components/ConversionNotifications';
 import SEOHead from '@/components/SEOHead';
+import { useTranslation } from 'react-i18next';
 
 const Index = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
-      <SEOHead />
+      <SEOHead 
+        title={t('pages.index.seo_title')}
+        description={t('pages.index.seo_description')}
+        keywords={t('pages.index.seo_keywords')}
+      />
       <ModernHeader />
       <main>
         <ModernHero />
