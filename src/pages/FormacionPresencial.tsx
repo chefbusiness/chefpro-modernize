@@ -185,7 +185,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Consultoría Estratégica In-House",
-          "description": "Transformación Digital Total"
+          "description": "Transformación Digital Total de tu Negocio"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -244,7 +244,7 @@ const FormacionPresencial = () => {
     id: 'consultoria',
     icon: Building2,
     name: 'Consultoría Estratégica In-House',
-    subtitle: '"Transformación Digital Total"',
+    subtitle: '"Transformación Digital Total de tu Negocio"',
     duration: '2-5 días (proyecto a medida)',
     attendees: 'Toda la organización',
     price: 'Desde 4.990€',
