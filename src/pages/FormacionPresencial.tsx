@@ -432,16 +432,17 @@ const FormacionPresencial = () => {
       <ModernHeader />
 
       {/* Hero Section - With warm gradient and image */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden overflow-x-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-background to-orange-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/40 via-transparent to-transparent" />
         
         <div className="container relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <Badge className="mb-4 px-4 py-2 bg-amber-100 text-amber-800 border-amber-300">
-                <GraduationCap className="h-4 w-4 mr-2" />
-                AI Chef Pro Academy - Formación Presencial
+              <Badge className="mb-4 px-3 py-1.5 md:px-4 md:py-2 bg-amber-100 text-amber-800 border-amber-300 text-xs md:text-sm">
+                <GraduationCap className="h-3 w-3 md:h-4 md:w-4 mr-1.5 md:mr-2 flex-shrink-0" />
+                <span className="hidden sm:inline">AI Chef Pro Academy - Formación Presencial</span>
+                <span className="sm:hidden">Formación Presencial</span>
               </Badge>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
