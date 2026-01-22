@@ -1,8 +1,9 @@
 {
-  "nav": {
+"nav": {
     "inicio": "Inicio",
     "servicios": "Servicios",
     "mentoria_online": "Mentoría Online",
+    "formacion_presencial": "Formación Presencial",
     "aplicaciones": "Aplicaciones",
     "creatividad": "Creatividad Culinaria",
     "recetarios": "Recetarios Mundiales",
