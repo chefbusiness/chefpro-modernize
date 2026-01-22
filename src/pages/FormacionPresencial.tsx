@@ -158,7 +158,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Workshop Intensivo",
-          "description": "Domina la IA en tu Cocina"
+          "description": "Domina la IA en tu Negocio Gastronómico"
         },
         "price": "1490",
         "priceCurrency": "EUR"
@@ -210,7 +210,7 @@ const FormacionPresencial = () => {
     id: 'workshop',
     icon: Users,
     name: 'Workshop Intensivo',
-    subtitle: '"Domina la IA en tu Cocina"',
+    subtitle: '"Domina la IA en tu Negocio Gastronómico"',
     duration: '4 horas',
     attendees: '12-25 personas',
     price: '1.490€',
