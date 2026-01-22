@@ -149,7 +149,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Conferencia Magistral",
-          "description": "La Revolución de la IA en la Gastronomía Profesional"
+          "description": "La Revolución de la IA en la Cocina Profesional"
         },
         "price": "990",
         "priceCurrency": "EUR"
@@ -158,7 +158,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Workshop Intensivo",
-          "description": "Domina la IA en tu Negocio Gastronómico"
+          "description": "Domina la IA en tu Cocina"
         },
         "price": "1490",
         "priceCurrency": "EUR"
@@ -167,7 +167,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Programa Formativo Completo",
-          "description": "Transformación Digital de tu Restaurante con IA"
+          "description": "Transformación Digital de tu Cocina con IA"
         },
         "price": "2490",
         "priceCurrency": "EUR"
@@ -185,7 +185,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Consultoría Estratégica In-House",
-          "description": "Transformación Digital Total de tu Negocio"
+          "description": "Transformación Digital Total"
         },
         "priceSpecification": {
           "@type": "PriceSpecification",
@@ -199,7 +199,7 @@ const FormacionPresencial = () => {
     id: 'conferencia',
     icon: Mic,
     name: 'Conferencia Magistral',
-    subtitle: '"La Revolución de la IA en la Gastronomía Profesional"',
+    subtitle: '"La Revolución de la IA en la Cocina Profesional"',
     duration: '90-120 minutos',
     attendees: 'Hasta 200 personas',
     price: '990€',
@@ -210,7 +210,7 @@ const FormacionPresencial = () => {
     id: 'workshop',
     icon: Users,
     name: 'Workshop Intensivo',
-    subtitle: '"Domina la IA en tu Negocio Gastronómico"',
+    subtitle: '"Domina la IA en tu Cocina"',
     duration: '4 horas',
     attendees: '12-25 personas',
     price: '1.490€',
@@ -221,7 +221,7 @@ const FormacionPresencial = () => {
     id: 'programa-completo',
     icon: GraduationCap,
     name: 'Programa Formativo Completo',
-    subtitle: '"Transformación Digital de tu Restaurante con IA"',
+    subtitle: '"Transformación Digital de tu Cocina con IA"',
     duration: '8 horas (jornada completa)',
     attendees: '10-20 personas',
     price: '2.490€',
@@ -244,7 +244,7 @@ const FormacionPresencial = () => {
     id: 'consultoria',
     icon: Building2,
     name: 'Consultoría Estratégica In-House',
-    subtitle: '"Transformación Digital Total de tu Negocio"',
+    subtitle: '"Transformación Digital Total"',
     duration: '2-5 días (proyecto a medida)',
     attendees: 'Toda la organización',
     price: 'Desde 4.990€',
@@ -432,61 +432,59 @@ const FormacionPresencial = () => {
       <ModernHeader />
 
       {/* Hero Section - With warm gradient and image */}
-      <section className="relative py-12 sm:py-16 md:py-24 overflow-hidden">
+      <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-background to-orange-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/40 via-transparent to-transparent" />
         
-        <div className="container relative px-4 sm:px-6 max-w-full overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="container relative">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <Badge className="mb-4 px-3 py-1.5 md:px-4 md:py-2 bg-amber-100 text-amber-800 border-amber-300 text-xs md:text-sm">
-                <GraduationCap className="h-3 w-3 md:h-4 md:w-4 mr-1.5 md:mr-2 flex-shrink-0" />
-                <span className="hidden sm:inline">AI Chef Pro Academy - Formación Presencial</span>
-                <span className="sm:hidden">Formación Presencial</span>
+              <Badge className="mb-4 px-4 py-2 bg-amber-100 text-amber-800 border-amber-300">
+                <GraduationCap className="h-4 w-4 mr-2" />
+                AI Chef Pro Academy - Formación Presencial
               </Badge>
               
-              <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6 break-words">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                 Llevo la Revolución de la IA{' '}
-                <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent block sm:inline">
+                <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                   Directamente a Tu Negocio
                 </span>
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 sm:mb-8">
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Formación presencial especializada en Inteligencia Artificial aplicada a la gastronomía profesional. 
                 Workshops, conferencias y programas in-house para escuelas de cocina, grupos de restauración y equipos de hostelería.
               </p>
               
-              <div className="flex flex-col gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-12">
-                <Button size="lg" onClick={scrollToForm} className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white w-full sm:w-auto">
-                  <Send className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="hidden sm:inline">Solicitar Propuesta Personalizada</span>
-                  <span className="sm:hidden">Solicitar Propuesta</span>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
+                <Button size="lg" onClick={scrollToForm} className="text-lg px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
+                  <Send className="mr-2 h-5 w-5" />
+                  Solicitar Propuesta Personalizada
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => document.getElementById('servicios')?.scrollIntoView({
                 behavior: 'smooth'
-              })} className="border-amber-500/50 hover:bg-amber-50 w-full sm:w-auto text-sm sm:text-base">
+              })} className="border-amber-500/50 hover:bg-amber-50">
                   Ver Servicios y Precios
                 </Button>
               </div>
               
               {/* Stats with color */}
-              <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-4">
-                <div className="bg-amber-100/80 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-amber-200">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-amber-700">55+</div>
-                  <div className="text-xs sm:text-sm text-amber-600">Herramientas IA</div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="bg-amber-100/80 rounded-xl p-4 text-center border border-amber-200">
+                  <div className="text-3xl font-bold text-amber-700">55+</div>
+                  <div className="text-sm text-amber-600">Herramientas IA</div>
                 </div>
-                <div className="bg-emerald-100/80 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-emerald-200">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-700">100%</div>
-                  <div className="text-xs sm:text-sm text-emerald-600">IA Gastronómica</div>
+                <div className="bg-emerald-100/80 rounded-xl p-4 text-center border border-emerald-200">
+                  <div className="text-3xl font-bold text-emerald-700">100%</div>
+                  <div className="text-sm text-emerald-600">IA Gastronómica</div>
                 </div>
-                <div className="bg-blue-100/80 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-blue-200">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-700">Único</div>
-                  <div className="text-xs sm:text-sm text-blue-600">en España</div>
+                <div className="bg-blue-100/80 rounded-xl p-4 text-center border border-blue-200">
+                  <div className="text-3xl font-bold text-blue-700">Único</div>
+                  <div className="text-sm text-blue-600">en España</div>
                 </div>
-                <div className="bg-purple-100/80 rounded-lg sm:rounded-xl p-2 sm:p-4 text-center border border-purple-200">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-700">ROI</div>
-                  <div className="text-xs sm:text-sm text-purple-600">Inmediato</div>
+                <div className="bg-purple-100/80 rounded-xl p-4 text-center border border-purple-200">
+                  <div className="text-3xl font-bold text-purple-700">ROI</div>
+                  <div className="text-sm text-purple-600">Inmediato</div>
                 </div>
               </div>
             </div>
@@ -734,8 +732,7 @@ const FormacionPresencial = () => {
       <section className="py-16 bg-gradient-to-r from-amber-50/50 via-background to-orange-50/50">
         <div className="container">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-teal-100 text-teal-800 border-teal-300">
-              <Star className="h-3 w-3 mr-1" />
+            <Badge className="mb-4 bg-teal-100 text-teal-800 border-teal-300">¿Listo para Transformar tu Negocio de Hostelería con la Inteligencia Artificial?<Star className="h-3 w-3 mr-1" />
               Valor Incluido
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Qué Incluyen Nuestras Formaciones</h2>
