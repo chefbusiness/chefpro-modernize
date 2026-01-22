@@ -167,7 +167,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Programa Formativo Completo",
-          "description": "Transformación Digital de tu Cocina con IA"
+          "description": "Transformación Digital de tu Restaurante o Cocina con IA"
         },
         "price": "2490",
         "priceCurrency": "EUR"
@@ -221,7 +221,7 @@ const FormacionPresencial = () => {
     id: 'programa-completo',
     icon: GraduationCap,
     name: 'Programa Formativo Completo',
-    subtitle: '"Transformación Digital de tu Cocina con IA"',
+    subtitle: '"Transformación Digital de tu Restaurante o Cocina con IA"',
     duration: '8 horas (jornada completa)',
     attendees: '10-20 personas',
     price: '2.490€',
