@@ -46,6 +46,7 @@ import formacionWorkshop from '@/assets/formacion-workshop.jpg';
 import formacionConferencia from '@/assets/formacion-conferencia.jpg';
 import formacionPractica from '@/assets/formacion-practica.jpg';
 import formacionInhouse from '@/assets/formacion-inhouse.jpg';
+import chefJohnGuerrero from '@/assets/chef-john-guerrero.png';
 
 // Form validation schema
 const contactFormSchema = z.object({
@@ -674,8 +675,12 @@ const FormacionPresencial = () => {
                 <div className="bg-gradient-to-br from-amber-400 via-orange-500 to-amber-600 p-8 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-[url('data:image/svg+xml,...')] opacity-10" />
                   <div className="text-center relative z-10">
-                    <div className="w-32 h-32 rounded-full bg-white/20 mx-auto mb-4 flex items-center justify-center backdrop-blur-sm border-4 border-white/30">
-                      <ChefHat className="h-16 w-16 text-white" />
+                    <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden border-4 border-white/30 shadow-xl">
+                      <img 
+                        src={chefJohnGuerrero} 
+                        alt="Chef John Guerrero - Especialista en IA Gastronómica"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <h3 className="text-xl font-bold text-white">Chef John Guerrero</h3>
                     <p className="text-sm text-amber-100">Desarrollador de AI Chef Pro</p>
