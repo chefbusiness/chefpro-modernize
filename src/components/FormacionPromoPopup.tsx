@@ -16,7 +16,7 @@ import formacionInhouse from '@/assets/formacion-inhouse.jpg';
 const STORAGE_KEY_DISMISSED = 'formacion-promo-dismissed';
 const STORAGE_KEY_NEVER_SHOW = 'formacion-promo-never-show';
 const STORAGE_KEY_VISITED = 'has-visited-formacion';
-const DISMISS_DURATION_DAYS = 7;
+const DISMISS_DURATION_HOURS = 1; // 1 hora
 const POPUP_DELAY_MS = 10000; // 10 seconds
 
 const FormacionPromoPopup = () => {
@@ -37,12 +37,12 @@ const FormacionPromoPopup = () => {
     const hasVisited = localStorage.getItem(STORAGE_KEY_VISITED);
     if (hasVisited === 'true') return;
 
-    // Check if dismissed recently (within 7 days)
+    // Check if dismissed recently (within 1 hour)
     const dismissedTimestamp = localStorage.getItem(STORAGE_KEY_DISMISSED);
     if (dismissedTimestamp) {
       const dismissedDate = parseInt(dismissedTimestamp, 10);
-      const daysSinceDismissed = (Date.now() - dismissedDate) / (1000 * 60 * 60 * 24);
-      if (daysSinceDismissed < DISMISS_DURATION_DAYS) return;
+      const hoursSinceDismissed = (Date.now() - dismissedDate) / (1000 * 60 * 60);
+      if (hoursSinceDismissed < DISMISS_DURATION_HOURS) return;
     }
 
     // Show popup after delay
@@ -80,6 +80,7 @@ const FormacionPromoPopup = () => {
           <img 
             src={formacionInhouse} 
             alt="Formación In-House AI Chef Pro" 
+            loading="lazy"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
