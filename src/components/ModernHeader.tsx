@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check } from 'lucide-react';
+import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School } from 'lucide-react';
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -88,6 +88,14 @@ export default function ModernHeader() {
                         >
                           {t('nav.mentoria_online')}
                         </NavigationMenuLink>
+                        {currentLanguage === 'es' && (
+                          <NavigationMenuLink 
+                            className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
+                            href="/formacion-presencial"
+                          >
+                            {t('nav.formacion_presencial')}
+                          </NavigationMenuLink>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -290,6 +298,16 @@ export default function ModernHeader() {
                         <GraduationCap className="h-5 w-5 text-muted-foreground" />
                         {t('nav.mentoria_online')}
                       </a>
+                      {currentLanguage === 'es' && (
+                        <a
+                          href="/formacion-presencial"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                        >
+                          <School className="h-5 w-5 text-muted-foreground" />
+                          {t('nav.formacion_presencial')}
+                        </a>
+                      )}
                       <a
                         href="#pricing"
                         onClick={() => setMobileMenuOpen(false)}
