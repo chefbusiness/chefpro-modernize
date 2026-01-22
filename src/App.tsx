@@ -6,7 +6,6 @@ import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieBanner from "@/components/CookieBanner";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
 import MentoriaOnline from "./pages/MentoriaOnline";
 import FormacionPresencial from "./pages/FormacionPresencial";
 import Legal from "./pages/Legal";
@@ -30,7 +29,6 @@ const App = () => (
             <Route path="/:lang" element={<Index />} />
             
             {/* Spanish routes */}
-            <Route path="/servicios" element={<Services />} />
             <Route path="/mentoria-online" element={<MentoriaOnline />} />
             <Route path="/formacion-presencial" element={<FormacionPresencial />} />
             <Route path="/legales" element={<Legal />} />
@@ -39,7 +37,6 @@ const App = () => (
             <Route path="/terminos" element={<Terms />} />
             
             {/* Multi-language routes */}
-            <Route path="/:lang/servicios" element={<Services />} />
             <Route path="/:lang/mentoria-online" element={<MentoriaOnline />} />
             <Route path="/es/formacion-presencial" element={<FormacionPresencial />} />
             <Route path="/:lang/legales" element={<Legal />} />

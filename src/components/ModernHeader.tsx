@@ -26,6 +26,7 @@ import {
 } from '@/components/ui/sheet';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 const languages: { code: Language; name: string; flag: string }[] = [
   { code: 'es', name: 'Español', flag: '🇪🇸' },
@@ -282,32 +283,35 @@ export default function ModernHeader() {
                         <Home className="h-5 w-5 text-muted-foreground" />
                         {t('nav.inicio')}
                       </a>
-                      <a
-                        href={currentLanguage === 'es' ? '/servicios' : `/${currentLanguage}/servicios`}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
-                      >
-                        <Briefcase className="h-5 w-5 text-muted-foreground" />
-                        {t('nav.servicios')}
-                      </a>
-                      <a
-                        href={currentLanguage === 'es' ? '/mentoria-online' : `/${currentLanguage}/mentoria-online`}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
-                      >
-                        <GraduationCap className="h-5 w-5 text-muted-foreground" />
-                        {t('nav.mentoria_online')}
-                      </a>
-                      {currentLanguage === 'es' && (
-                        <a
-                          href="/formacion-presencial"
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
-                        >
-                          <School className="h-5 w-5 text-muted-foreground" />
-                          {t('nav.formacion_presencial')}
-                        </a>
-                      )}
+                      <Collapsible>
+                        <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation group">
+                          <div className="flex items-center gap-3">
+                            <Briefcase className="h-5 w-5 text-muted-foreground" />
+                            {t('nav.servicios')}
+                          </div>
+                          <ChevronDown className="h-4 w-4 text-muted-foreground transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                        </CollapsibleTrigger>
+                        <CollapsibleContent className="pl-8 space-y-1 mt-1">
+                          <a
+                            href={currentLanguage === 'es' ? '/mentoria-online' : `/${currentLanguage}/mentoria-online`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                          >
+                            <GraduationCap className="h-4 w-4 text-muted-foreground" />
+                            {t('nav.mentoria_online')}
+                          </a>
+                          {currentLanguage === 'es' && (
+                            <a
+                              href="/formacion-presencial"
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
+                            >
+                              <School className="h-4 w-4 text-muted-foreground" />
+                              {t('nav.formacion_presencial')}
+                            </a>
+                          )}
+                        </CollapsibleContent>
+                      </Collapsible>
                       <a
                         href="#pricing"
                         onClick={() => setMobileMenuOpen(false)}
