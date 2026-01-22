@@ -43,6 +43,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/mentoria-online" />
   </url>
   <url>
+    <loc>https://aichef.pro/formacion-presencial</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://aichef.pro/en</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>weekly</changefreq>
