@@ -149,7 +149,7 @@ const FormacionPresencial = () => {
         "itemOffered": {
           "@type": "Course",
           "name": "Conferencia Magistral",
-          "description": "La Revolución de la IA en la Cocina Profesional"
+          "description": "La Revolución de la IA en la Gastronomía Profesional"
         },
         "price": "990",
         "priceCurrency": "EUR"
@@ -199,7 +199,7 @@ const FormacionPresencial = () => {
     id: 'conferencia',
     icon: Mic,
     name: 'Conferencia Magistral',
-    subtitle: '"La Revolución de la IA en la Cocina Profesional"',
+    subtitle: '"La Revolución de la IA en la Gastronomía Profesional"',
     duration: '90-120 minutos',
     attendees: 'Hasta 200 personas',
     price: '990€',
