@@ -1145,10 +1145,10 @@ const FormacionPresencial = () => {
                 size="lg" 
                 variant="outline" 
                 className="text-lg px-8 border-amber-500/50 text-amber-400 hover:bg-amber-500/10"
-                onClick={() => window.location.href = 'mailto:hola@aichef.pro'}
+                onClick={() => window.location.href = 'mailto:info@aichef.pro'}
               >
                 <MapPin className="mr-2 h-5 w-5" />
-                hola@aichef.pro
+                info@aichef.pro
               </Button>
             </div>
           </div>
