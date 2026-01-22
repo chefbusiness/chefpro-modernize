@@ -469,6 +469,8 @@ const FormacionPresencial = () => {
     'Restaurante / Grupo de Restauración',
     'Hotel / Resort',
     'Asociación Profesional',
+    'Jornadas Gastronómicas',
+    'Congreso Gastronómico',
     'Centro de I+D Alimentario',
     'Empresa de Catering',
     'Otro'
