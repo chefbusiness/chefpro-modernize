@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GraduationCap, Building2, ChefHat, Hotel } from 'lucide-react';
+import { GraduationCap, ChefHat, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
+import { Badge } from '@/components/ui/badge';
 import {
   Dialog,
   DialogContent,
@@ -10,6 +11,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { useLanguage } from '@/hooks/useLanguage';
+import formacionInhouse from '@/assets/formacion-inhouse.jpg';
 
 const STORAGE_KEY_DISMISSED = 'formacion-promo-dismissed';
 const STORAGE_KEY_NEVER_SHOW = 'formacion-promo-never-show';
@@ -72,46 +74,61 @@ const FormacionPromoPopup = () => {
 
   return (
     <Dialog open={isVisible} onOpenChange={(open) => !open && handleDismiss()}>
-      <DialogContent className="sm:max-w-md border-0 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 p-0 overflow-hidden">
-        {/* Decorative top bar */}
-        <div className="h-2 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600" />
+      <DialogContent className="sm:max-w-lg border border-border/50 bg-gradient-to-br from-background via-background to-muted/30 p-0 overflow-hidden shadow-2xl">
+        {/* Hero Image */}
+        <div className="relative h-36 sm:h-44 overflow-hidden">
+          <img 
+            src={formacionInhouse} 
+            alt="Formación In-House AI Chef Pro" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+          
+          {/* New Badge */}
+          <Badge className="absolute top-3 left-3 bg-emerald-500 hover:bg-emerald-500 text-white border-0 shadow-lg">
+            <Sparkles className="h-3 w-3 mr-1" />
+            Nuevo
+          </Badge>
+          
+          {/* Title overlay on image */}
+          <div className="absolute bottom-3 left-4 right-4">
+            <h3 className="text-white text-lg sm:text-xl font-bold drop-shadow-lg">
+              Formaciones Presenciales
+            </h3>
+            <p className="text-white/90 text-sm">
+              IA Gastronómica para tu organización
+            </p>
+          </div>
+        </div>
         
-        <div className="p-6 pt-4">
-          <DialogHeader className="text-center space-y-4">
-            {/* Icon cluster */}
-            <div className="flex justify-center gap-2 mb-2">
-              <div className="p-2 bg-amber-100 rounded-full">
-                <Building2 className="h-5 w-5 text-amber-600" />
-              </div>
-              <div className="p-3 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full shadow-lg">
-                <GraduationCap className="h-7 w-7 text-white" />
-              </div>
-              <div className="p-2 bg-amber-100 rounded-full">
-                <Hotel className="h-5 w-5 text-amber-600" />
-              </div>
+        <div className="p-5 pt-4">
+          <DialogHeader className="text-center space-y-3">
+            {/* Attention message */}
+            <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-lg p-3">
+              <p className="text-sm text-emerald-800 dark:text-emerald-200 font-medium leading-relaxed">
+                <Sparkles className="inline h-4 w-4 mr-1.5 text-emerald-600" />
+                Por fin, lo que durante más de un año nos habéis pedido...
+                <span className="font-bold block mt-1">¡Ya está aquí!</span>
+              </p>
             </div>
 
-            <DialogTitle className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-amber-700 to-orange-600 bg-clip-text text-transparent">
-              IA Gastronómica para tu Organización
+            <DialogTitle className="text-lg sm:text-xl font-bold text-foreground sr-only">
+              Formaciones Presenciales en España
             </DialogTitle>
-            
-            <p className="text-sm text-amber-700 font-medium">
-              Formación presencial e in-house en España
-            </p>
           </DialogHeader>
 
-          <div className="mt-6 space-y-4">
+          <div className="mt-4 space-y-4">
             {/* Segmentation question */}
-            <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border border-amber-200/50">
+            <div className="bg-muted/50 backdrop-blur-sm rounded-xl p-4 border border-border/50">
               <p className="text-sm sm:text-base text-foreground text-center leading-relaxed">
-                <span className="font-semibold text-amber-800">¿Diriges una escuela de cocina, grupo de restauración, hotel o centro gastronómico?</span>
+                <span className="font-semibold">¿Diriges una escuela de cocina, grupo de restauración, hotel o centro gastronómico?</span>
               </p>
             </div>
 
             {/* Value proposition */}
             <p className="text-center text-sm text-muted-foreground">
               Llevo la revolución de la IA directamente a tu equipo con{' '}
-              <span className="font-semibold text-amber-700">programas personalizados desde 990€</span>
+              <span className="font-semibold text-foreground">programas personalizados desde 990€</span>
             </p>
 
             {/* Audience badges */}
@@ -119,7 +136,7 @@ const FormacionPromoPopup = () => {
               {['Escuelas', 'Restaurantes', 'Hoteles', 'Catering'].map((badge) => (
                 <span 
                   key={badge}
-                  className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700 border border-amber-200"
+                  className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground border border-border"
                 >
                   <ChefHat className="h-3 w-3 mr-1" />
                   {badge}
@@ -131,10 +148,10 @@ const FormacionPromoPopup = () => {
             <div className="space-y-3 pt-2">
               <Button 
                 onClick={handleCTAClick}
-                className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold py-5 text-base shadow-lg hover:shadow-xl transition-all"
+                className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 dark:text-slate-900 text-white font-semibold py-5 text-base shadow-lg hover:shadow-xl transition-all"
               >
                 <GraduationCap className="mr-2 h-5 w-5" />
-                Descubrir Servicios de Formación
+                Descubrir Formaciones
               </Button>
               
               <button
@@ -146,12 +163,12 @@ const FormacionPromoPopup = () => {
             </div>
 
             {/* Never show again checkbox */}
-            <div className="flex items-center justify-center gap-2 pt-2">
+            <div className="flex items-center justify-center gap-2 pt-1">
               <Checkbox 
                 id="never-show" 
                 checked={neverShowAgain}
                 onCheckedChange={(checked) => setNeverShowAgain(checked === true)}
-                className="border-amber-300 data-[state=checked]:bg-amber-500 data-[state=checked]:border-amber-500"
+                className="border-muted-foreground/30 data-[state=checked]:bg-emerald-600 data-[state=checked]:border-emerald-600"
               />
               <label 
                 htmlFor="never-show" 
