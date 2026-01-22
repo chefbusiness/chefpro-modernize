@@ -976,7 +976,7 @@ const FormacionPresencial = () => {
               </span>
             </h2>
             <p className="text-xl text-slate-300 mb-8">
-              Solicita tu propuesta personalizada hoy y lleva la revolución de la IA directamente a tu cocina
+              Solicita tu propuesta personalizada hoy y lleva la revolución de la IA directamente a tu cocina, restaurante u otro negocio de hostelería
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" onClick={scrollToForm} className="text-lg px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
