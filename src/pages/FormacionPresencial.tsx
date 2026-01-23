@@ -7,6 +7,7 @@ import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import AIImageGallery from '@/components/AIImageGallery';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -994,6 +995,7 @@ const FormacionPresencial = () => {
       </section>
 
       <ModernFooter />
+      <WhatsAppFloatingButton />
     </div>;
 };
 export default FormacionPresencial;

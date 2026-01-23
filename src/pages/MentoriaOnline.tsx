@@ -3,10 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Clock, Users, Star, ArrowRight, BookOpen, Target, Zap, TrendingUp, Search, Lightbulb, Timer, ChevronDown, ChevronRight } from 'lucide-react';
+import { CheckCircle, Star, ArrowRight, TrendingUp, Search, Lightbulb, Timer } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -829,6 +830,7 @@ const MentoriaOnline = () => {
       </main>
 
       <ModernFooter />
+      <WhatsAppFloatingButton />
     </div>
   );
 };
