@@ -458,10 +458,9 @@ const FormacionPresencial = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-12">
-                <Button size="lg" onClick={scrollToForm} className="w-full sm:w-auto text-base sm:text-lg px-4 sm:px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white whitespace-normal">
+                <Button size="lg" onClick={scrollToForm} className="w-full sm:w-auto text-base sm:text-lg px-4 sm:px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
                   <Send className="mr-2 h-5 w-5 flex-shrink-0" />
-                  <span className="sm:hidden">Solicitar Propuesta</span>
-                  <span className="hidden sm:inline">Solicitar Propuesta Personalizada</span>
+                  Solicitar Propuesta
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => document.getElementById('servicios')?.scrollIntoView({
                 behavior: 'smooth'
