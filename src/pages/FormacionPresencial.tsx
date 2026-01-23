@@ -445,7 +445,7 @@ const FormacionPresencial = () => {
               </Badge>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight text-balance break-words">
-                Llevo la Revolución de la IA{' '}
+                Llevamos la Revolución de la IA{' '}
                 <span className="block sm:inline bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                   Directamente a Tu Negocio
                 </span>
