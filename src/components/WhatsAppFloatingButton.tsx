@@ -12,21 +12,21 @@ const WhatsAppFloatingButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contacta con nosotros en WhatsApp"
-      className="fixed bottom-6 left-6 z-50 group"
+      className="fixed bottom-6 right-6 z-50 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Tooltip */}
       <div
-        className={`absolute left-full ml-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 whitespace-nowrap transition-all duration-300 ${
-          isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 pointer-events-none'
+        className={`absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-4 py-2 whitespace-nowrap transition-all duration-300 ${
+          isHovered ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2 pointer-events-none'
         }`}
       >
         <span className="text-sm font-medium text-gray-800">
           Contacta con nosotros en WhatsApp
         </span>
         {/* Arrow */}
-        <div className="absolute right-full top-1/2 -translate-y-1/2 border-8 border-transparent border-r-white/95" />
+        <div className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95" />
       </div>
 
       {/* Button Container */}
