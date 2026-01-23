@@ -7,6 +7,7 @@ import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import AIImageGallery from '@/components/AIImageGallery';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -417,7 +418,7 @@ const FormacionPresencial = () => {
     };
     return colors[color] || colors.amber;
   };
-  return <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background overflow-x-hidden">
       <SEOHead title="Formación Presencial IA para Restaurantes | AI Chef Pro Academy" description="Workshops, conferencias y programas in-house de IA para hostelería. Chef John Guerrero lleva las 55+ herramientas de AI Chef Pro directamente a tu cocina." keywords="formación IA restaurantes, curso inteligencia artificial hostelería, workshop IA cocina profesional, consultoría IA restaurantes, formación presencial IA gastronomía" />
       
       <Helmet>
@@ -432,59 +433,60 @@ const FormacionPresencial = () => {
       <ModernHeader />
 
       {/* Hero Section - With warm gradient and image */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
+      <section className="relative py-12 sm:py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-background to-orange-50" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100/40 via-transparent to-transparent" />
         
-        <div className="container relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <Badge className="mb-4 px-4 py-2 bg-amber-100 text-amber-800 border-amber-300">
-                <GraduationCap className="h-4 w-4 mr-2" />
-                AI Chef Pro Academy - Formación Presencial
+        <div className="container relative px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="text-center lg:text-left max-w-full">
+              <Badge className="mb-4 px-3 sm:px-4 py-2 bg-amber-100 text-amber-800 border-amber-300 max-w-full flex-wrap">
+                <GraduationCap className="h-4 w-4 mr-2 flex-shrink-0" />
+                <span className="text-xs sm:text-sm">AI Chef Pro Academy - Formación Presencial</span>
               </Badge>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                Llevo la Revolución de la IA{' '}
-                <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight text-balance break-words">
+                Llevamos la Revolución de la IA{' '}
+                <span className="block sm:inline bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                   Directamente a Tu Negocio
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8">
                 Formación presencial especializada en Inteligencia Artificial aplicada a la gastronomía profesional. 
                 Workshops, conferencias y programas in-house para escuelas de cocina, grupos de restauración y equipos de hostelería.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                <Button size="lg" onClick={scrollToForm} className="text-lg px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white">
-                  <Send className="mr-2 h-5 w-5" />
-                  Solicitar Propuesta Personalizada
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-8 sm:mb-12">
+                <Button size="lg" onClick={scrollToForm} className="w-full sm:w-auto text-base sm:text-lg px-4 sm:px-8 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white whitespace-normal">
+                  <Send className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <span className="sm:hidden">Solicitar Propuesta</span>
+                  <span className="hidden sm:inline">Solicitar Propuesta Personalizada</span>
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => document.getElementById('servicios')?.scrollIntoView({
                 behavior: 'smooth'
-              })} className="border-amber-500/50 hover:bg-amber-50">
+              })} className="w-full sm:w-auto border-amber-500/50 hover:bg-amber-50">
                   Ver Servicios y Precios
                 </Button>
               </div>
               
-              {/* Stats with color */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-amber-100/80 rounded-xl p-4 text-center border border-amber-200">
-                  <div className="text-3xl font-bold text-amber-700">55+</div>
-                  <div className="text-sm text-amber-600">Herramientas IA</div>
+              {/* Stats with color - Responsive */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+                <div className="bg-amber-100/80 rounded-xl p-3 sm:p-4 text-center border border-amber-200 min-w-0">
+                  <div className="text-2xl sm:text-3xl font-bold text-amber-700">55+</div>
+                  <div className="text-xs sm:text-sm text-amber-600">Herramientas IA</div>
                 </div>
-                <div className="bg-emerald-100/80 rounded-xl p-4 text-center border border-emerald-200">
-                  <div className="text-3xl font-bold text-emerald-700">100%</div>
-                  <div className="text-sm text-emerald-600">IA Gastronómica</div>
+                <div className="bg-emerald-100/80 rounded-xl p-3 sm:p-4 text-center border border-emerald-200 min-w-0">
+                  <div className="text-2xl sm:text-3xl font-bold text-emerald-700">100%</div>
+                  <div className="text-xs sm:text-sm text-emerald-600">IA Gastronómica</div>
                 </div>
-                <div className="bg-blue-100/80 rounded-xl p-4 text-center border border-blue-200">
-                  <div className="text-3xl font-bold text-blue-700">Único</div>
-                  <div className="text-sm text-blue-600">en España</div>
+                <div className="bg-blue-100/80 rounded-xl p-3 sm:p-4 text-center border border-blue-200 min-w-0">
+                  <div className="text-2xl sm:text-3xl font-bold text-blue-700">Único</div>
+                  <div className="text-xs sm:text-sm text-blue-600">en España</div>
                 </div>
-                <div className="bg-purple-100/80 rounded-xl p-4 text-center border border-purple-200">
-                  <div className="text-3xl font-bold text-purple-700">ROI</div>
-                  <div className="text-sm text-purple-600">Inmediato</div>
+                <div className="bg-purple-100/80 rounded-xl p-3 sm:p-4 text-center border border-purple-200 min-w-0">
+                  <div className="text-2xl sm:text-3xl font-bold text-purple-700">ROI</div>
+                  <div className="text-xs sm:text-sm text-purple-600">Inmediato</div>
                 </div>
               </div>
             </div>
@@ -993,6 +995,7 @@ const FormacionPresencial = () => {
       </section>
 
       <ModernFooter />
+      <WhatsAppFloatingButton />
     </div>;
 };
 export default FormacionPresencial;
