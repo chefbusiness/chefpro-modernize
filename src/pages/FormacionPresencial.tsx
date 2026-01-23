@@ -942,7 +942,7 @@ const FormacionPresencial = () => {
                     <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white text-lg" disabled={isSubmitting}>
                       {isSubmitting ? <>Enviando...</> : <>
                           <Send className="mr-2 h-5 w-5" />
-                          Enviar Solicitud de Propuesta
+                          Enviar Solicitud
                         </>}
                     </Button>
                     
