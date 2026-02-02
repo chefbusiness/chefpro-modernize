@@ -190,7 +190,7 @@ export default function ModernPricing() {
                 </div>
                 {plan.uses && (
                   <div className="text-xs text-muted-foreground mt-1">
-                    <span className="font-semibold uppercase tracking-wide">USOS: </span>
+                    <span className="font-semibold uppercase tracking-wide">{t('pricing.uses_label')}: </span>
                     <span className="font-bold text-primary">{plan.uses}</span>
                   </div>
                 )}
