@@ -501,6 +501,7 @@
     "annual": "Anual",
     "free_trial": "Prueba gratuita de 7 días",
     "most_popular": "Más Popular",
+    "unlimited_badge": "Uso Ilimitado",
     "start_free": "Empezar Gratis",
     "select_plan": "Seleccionar Plan",
     "enterprise_question": "¿Necesitas un plan enterprise?",
@@ -557,7 +558,9 @@
           "1": "Uso ilimitado mensual",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
-          "4": "Soporte premium 24/7"
+          "4": "Soporte premium 24/7",
+          "5": "Acceso anticipado a nuevas funciones",
+          "6": "Formación exclusiva sobre novedades"
         }
       },
       "premium_plus_annual": {

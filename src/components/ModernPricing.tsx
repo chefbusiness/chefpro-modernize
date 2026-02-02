@@ -62,12 +62,15 @@ export default function ModernPricing() {
       period: t('pricing.plans.premium_max.period'),
       uses: t('pricing.plans.premium_max.uses'),
       description: t('pricing.plans.premium_max.description'),
+      unlimitedBadge: t('pricing.unlimited_badge'),
       features: [
         t('pricing.plans.premium_max.features.0'),
         t('pricing.plans.premium_max.features.1'),
         t('pricing.plans.premium_max.features.2'),
         t('pricing.plans.premium_max.features.3'),
-        t('pricing.plans.premium_max.features.4')
+        t('pricing.plans.premium_max.features.4'),
+        t('pricing.plans.premium_max.features.5'),
+        t('pricing.plans.premium_max.features.6')
       ],
       popular: false
     },
@@ -150,11 +153,22 @@ export default function ModernPricing() {
                 🔥 {t('pricing.most_popular')}
               </Badge>
             )}
+
+            {plan.unlimitedBadge && !plan.popular && (
+              <Badge 
+                variant="default" 
+                className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1 shadow-lg"
+                style={{ backgroundColor: 'hsl(270, 70%, 50%)', borderColor: 'hsl(270, 70%, 50%)' }}
+              >
+                ∞ {plan.unlimitedBadge}
+              </Badge>
+            )}
             
             {plan.discount && (
               <Badge 
                 variant="default" 
-                className="absolute -top-3 right-4 bg-green-600 text-white border-green-600 shadow-lg font-bold"
+                className="absolute -top-3 right-4 shadow-lg font-bold"
+                style={{ backgroundColor: 'hsl(142, 70%, 40%)', borderColor: 'hsl(142, 70%, 40%)' }}
               >
                 {plan.discount}
               </Badge>

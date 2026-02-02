@@ -911,6 +911,7 @@
     "annual": "Jaarlijks",
     "free_trial": "7 dagen gratis proberen",
     "most_popular": "Meest Populair",
+    "unlimited_badge": "Onbeperkt Gebruik",
     "start_free": "Gratis Beginnen",
     "select_plan": "Plan Selecteren",
     "enterprise_question": "Heeft u een enterprise-plan nodig?",
@@ -967,7 +968,9 @@
           "1": "Onbeperkt maandelijks gebruik",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
-          "4": "Premium 24/7 ondersteuning"
+          "4": "Premium 24/7 ondersteuning",
+          "5": "Vroege toegang tot nieuwe functies",
+          "6": "Exclusieve training over nieuwe releases"
         }
       },
       "premium_plus_annual": {
