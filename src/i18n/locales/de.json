@@ -929,78 +929,73 @@
     "annual": "Jährlich",
     "free_trial": "7 Tage kostenlos testen",
     "most_popular": "Am Beliebtesten",
+    "unlimited_badge": "Unbegrenzte Nutzung",
     "start_free": "Kostenlos Starten",
     "select_plan": "Plan Auswählen",
     "enterprise_question": "Benötigen Sie einen Enterprise-Plan?",
     "contact_us": "Kontaktieren Sie uns für eine maßgeschneiderte Lösung",
     "plans": {
       "member": {
-        "name": "Mitglied",
+        "name": "AI Chef Mitglied",
         "price": "Kostenlos",
-        "description": "Zur Erkundung grundlegender Funktionen",
+        "uses": "2/Monat",
+        "description": "Ideal für Küchenhelfer, Köche und Postenchefs",
         "features": {
-          "0": "Grundlegender Zugang zu Tools",
-          "1": "Grundrezepte",
-          "2": "E-Mail-Support",
-          "3": "Begrenzte Funktionen"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "price": "10€",
-        "period": "/Monat",
-        "description": "Ideal für unabhängige gastronomische Fachkräfte",
-        "features": {
-          "0": "Alle Grundfunktionen",
-          "1": "Erweiterte Rezeptgenerierung",
-          "2": "Food Pairing AI",
-          "3": "Priority Support",
-          "4": "Über 20 Kochbücher"
-        }
-      },
-      "premium": {
-        "name": "Premium",
-        "price": "15€",
-        "period": "/Monat",
-        "description": "Für Profis mit häufiger Nutzung und höherer Kreativität",
-        "features": {
-          "0": "Alle Pro-Funktionen",
-          "1": "Professionelles gastronomisches Coaching",
-          "2": "Erweiterte Nährwertanalyse",
-          "3": "Vollständige Personalisierung",
-          "4": "Erweiterte Integrationen"
+          "0": "Zugang zu allen 55+ Tools",
+          "1": "2 monatliche Credits",
+          "2": "Weltweite Kochbücher",
+          "3": "E-Mail-Support"
         }
       },
       "premium_pro": {
-        "name": "Premium Pro",
+        "name": "AI Chef Premium Pro",
         "price": "25€",
         "period": "/Monat",
-        "description": "Für Besitzer und Manager gastronomischer Betriebe",
+        "uses": "150/Monat",
+        "description": "Für Küchenchefs, Chefköche und Restaurantmanager",
         "features": {
-          "0": "Alle Premium-Funktionen",
-          "1": "Team-Management",
-          "2": "Erweiterte Analytik",
-          "3": "API-Zugang",
-          "4": "Monatliche Beratung"
+          "0": "Alle 55+ Tools enthalten",
+          "1": "150 monatliche Credits",
+          "2": "Zugang zu allen Weltküchen",
+          "3": "Erweiterte Business-Tools",
+          "4": "Prioritäts-Support"
         }
       },
       "premium_plus": {
-        "name": "Premium Plus",
+        "name": "AI Chef Premium Plus",
         "price": "50€",
         "period": "/Monat",
+        "uses": "350/Monat",
         "description": "Für gastronomische Unternehmer und Restaurantketten",
         "features": {
-          "0": "Vollständiger unbegrenzter Zugang",
-          "1": "24/7 Support",
-          "2": "Personalisierte Beratung",
-          "3": "Entwicklung maßgeschneiderter Funktionen",
-          "4": "Enterprise-Integration"
+          "0": "Alle 55+ Tools enthalten",
+          "1": "350 monatliche Credits",
+          "2": "Zugang zu allen Weltküchen",
+          "3": "Erweiterte Business-Tools",
+          "4": "Premium 24/7 Support"
+        }
+      },
+      "premium_max": {
+        "name": "AI Chef Premium Max",
+        "price": "95€",
+        "period": "/Monat",
+        "uses": "∞",
+        "description": "Unbegrenzte monatliche Nutzung für anspruchsvolle Profis",
+        "features": {
+          "0": "Alle 55+ Tools enthalten",
+          "1": "Unbegrenzte monatliche Nutzung",
+          "2": "Zugang zu allen Weltküchen",
+          "3": "Erweiterte Business-Tools",
+          "4": "Premium 24/7 Support",
+          "5": "Früher Zugang zu neuen Funktionen",
+          "6": "Exklusive Schulung zu Neuheiten"
         }
       },
       "premium_plus_annual": {
-        "name": "Premium Plus Jährlich",
+        "name": "AI Chef Premium Plus Jährlich",
         "price": "500€",
         "period": "/Jahr",
+        "uses": "∞",
         "original_price": "600€",
         "discount": "Sparen Sie 100€",
         "description": "Ideal für gastronomische Unternehmer, Restaurantbesitzer und Manager",
