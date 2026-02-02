@@ -13,6 +13,7 @@ export default function ModernPricing() {
       id: 'member',
       name: t('pricing.plans.member.name'),
       price: t('pricing.plans.member.price'),
+      uses: t('pricing.plans.member.uses'),
       description: t('pricing.plans.member.description'),
       features: [
         t('pricing.plans.member.features.0'),
@@ -23,40 +24,11 @@ export default function ModernPricing() {
       popular: false
     },
     {
-      id: 'pro',
-      name: t('pricing.plans.pro.name'),
-      price: t('pricing.plans.pro.price'),
-      period: t('pricing.plans.pro.period'),
-      description: t('pricing.plans.pro.description'),
-      features: [
-        t('pricing.plans.pro.features.0'),
-        t('pricing.plans.pro.features.1'),
-        t('pricing.plans.pro.features.2'),
-        t('pricing.plans.pro.features.3'),
-        t('pricing.plans.pro.features.4')
-      ],
-      popular: false
-    },
-    {
-      id: 'premium',
-      name: t('pricing.plans.premium.name'),
-      price: t('pricing.plans.premium.price'),
-      period: t('pricing.plans.premium.period'),
-      description: t('pricing.plans.premium.description'),
-      features: [
-        t('pricing.plans.premium.features.0'),
-        t('pricing.plans.premium.features.1'),
-        t('pricing.plans.premium.features.2'),
-        t('pricing.plans.premium.features.3'),
-        t('pricing.plans.premium.features.4')
-      ],
-      popular: false
-    },
-    {
       id: 'premium_pro',
       name: t('pricing.plans.premium_pro.name'),
       price: t('pricing.plans.premium_pro.price'),
       period: t('pricing.plans.premium_pro.period'),
+      uses: t('pricing.plans.premium_pro.uses'),
       description: t('pricing.plans.premium_pro.description'),
       features: [
         t('pricing.plans.premium_pro.features.0'),
@@ -72,6 +44,7 @@ export default function ModernPricing() {
       name: t('pricing.plans.premium_plus.name'),
       price: t('pricing.plans.premium_plus.price'),
       period: t('pricing.plans.premium_plus.period'),
+      uses: t('pricing.plans.premium_plus.uses'),
       description: t('pricing.plans.premium_plus.description'),
       features: [
         t('pricing.plans.premium_plus.features.0'),
@@ -83,10 +56,27 @@ export default function ModernPricing() {
       popular: true
     },
     {
+      id: 'premium_max',
+      name: t('pricing.plans.premium_max.name'),
+      price: t('pricing.plans.premium_max.price'),
+      period: t('pricing.plans.premium_max.period'),
+      uses: t('pricing.plans.premium_max.uses'),
+      description: t('pricing.plans.premium_max.description'),
+      features: [
+        t('pricing.plans.premium_max.features.0'),
+        t('pricing.plans.premium_max.features.1'),
+        t('pricing.plans.premium_max.features.2'),
+        t('pricing.plans.premium_max.features.3'),
+        t('pricing.plans.premium_max.features.4')
+      ],
+      popular: false
+    },
+    {
       id: 'premium_plus_annual',
       name: t('pricing.plans.premium_plus_annual.name'),
       price: t('pricing.plans.premium_plus_annual.price'),
       period: t('pricing.plans.premium_plus_annual.period'),
+      uses: t('pricing.plans.premium_plus_annual.uses'),
       originalPrice: t('pricing.plans.premium_plus_annual.original_price'),
       discount: t('pricing.plans.premium_plus_annual.discount'),
       description: t('pricing.plans.premium_plus_annual.description'),
@@ -142,7 +132,7 @@ export default function ModernPricing() {
         </p>
       </div>
 
-      <div className="grid w-full items-start gap-6 overflow-visible py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="grid w-full items-start gap-6 overflow-visible py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {plans.map((plan, index) => (
           <Card 
             key={index} 
@@ -184,6 +174,12 @@ export default function ModernPricing() {
                     <span className="text-muted-foreground">{plan.period}</span>
                   )}
                 </div>
+                {plan.uses && (
+                  <div className="text-xs text-muted-foreground mt-1">
+                    <span className="font-semibold uppercase tracking-wide">USOS: </span>
+                    <span className="font-bold text-primary">{plan.uses}</span>
+                  </div>
+                )}
               </div>
               <CardDescription className="text-sm">{plan.description}</CardDescription>
             </CardHeader>

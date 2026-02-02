@@ -922,72 +922,64 @@
     "contact_us": "Entre em contato para uma solução personalizada",
     "plans": {
       "member": {
-        "name": "Membro",
+        "name": "AI Chef Membro",
         "price": "Grátis",
-        "description": "Para explorar funcionalidades básicas",
+        "uses": "2/mês",
+        "description": "Ideal para auxiliares de cozinha, cozinheiros e chefs de partida",
         "features": {
-          "0": "Acesso básico às ferramentas",
-          "1": "Receitas básicas",
-          "2": "Suporte por email",
-          "3": "Funcionalidades limitadas"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "price": "10€",
-        "period": "/mês",
-        "description": "Ideal para profissionais gastronômicos independentes",
-        "features": {
-          "0": "Todas as funções básicas",
-          "1": "Gerador de receitas avançado",
-          "2": "Food Pairing AI",
-          "3": "Suporte prioritário",
-          "4": "Mais de 20 livros de receitas"
-        }
-      },
-      "premium": {
-        "name": "Premium",
-        "price": "15€",
-        "period": "/mês",
-        "description": "Para profissionais com uso frequente e maior criatividade",
-        "features": {
-          "0": "Todas as funções Pro",
-          "1": "Coaching profissional gastronômico",
-          "2": "Análise nutricional avançada",
-          "3": "Personalização completa",
-          "4": "Integrações avançadas"
+          "0": "Acesso a todas as 55+ ferramentas",
+          "1": "2 créditos mensais",
+          "2": "Receituários mundiais",
+          "3": "Suporte por email"
         }
       },
       "premium_pro": {
-        "name": "Premium Pro",
+        "name": "AI Chef Premium Pro",
         "price": "25€",
         "period": "/mês",
-        "description": "Para donos e gerentes de negócios gastronômicos",
+        "uses": "150/mês",
+        "description": "Para Chefs de Cozinha, Chefs Executivos e Gerentes de Restaurantes",
         "features": {
-          "0": "Todas as funções Premium",
-          "1": "Gestão de equipe",
-          "2": "Analytics avançadas",
-          "3": "Acesso à API",
-          "4": "Consultoria mensal"
+          "0": "Todas as 55+ ferramentas incluídas",
+          "1": "150 créditos mensais",
+          "2": "Acesso a todas as cozinhas do mundo",
+          "3": "Ferramentas avançadas de negócio",
+          "4": "Suporte prioritário"
         }
       },
       "premium_plus": {
-        "name": "Premium Plus",
+        "name": "AI Chef Premium Plus",
         "price": "50€",
         "period": "/mês",
+        "uses": "350/mês",
         "description": "Para empresários gastronômicos e redes de restaurantes",
         "features": {
-          "0": "Acesso ilimitado completo",
-          "1": "Suporte 24/7",
-          "2": "Consultoria personalizada",
-          "3": "Desenvolvimento de características customizadas",
-          "4": "Integração enterprise"
+          "0": "Todas as 55+ ferramentas incluídas",
+          "1": "350 créditos mensais",
+          "2": "Acesso a todas as cozinhas do mundo",
+          "3": "Ferramentas avançadas de negócio",
+          "4": "Suporte premium 24/7"
+        }
+      },
+      "premium_max": {
+        "name": "AI Chef Premium Max",
+        "price": "95€",
+        "period": "/mês",
+        "uses": "∞",
+        "description": "Uso ilimitado mensal para profissionais exigentes",
+        "features": {
+          "0": "Todas as 55+ ferramentas incluídas",
+          "1": "Uso ilimitado mensal",
+          "2": "Acesso a todas as cozinhas do mundo",
+          "3": "Ferramentas avançadas de negócio",
+          "4": "Suporte premium 24/7"
         }
       },
       "premium_plus_annual": {
-        "name": "Premium Plus Anual",
+        "name": "AI Chef Premium Plus Anual",
         "price": "500€",
         "period": "/ano",
+        "uses": "∞",
         "original_price": "600€",
         "discount": "Economize 100€",
         "description": "Ideal para empresários gastronômicos, donos de restaurantes e executivos",
