@@ -660,83 +660,75 @@
     "contact_us": "Contact us for a personalized solution",
     "plans": {
       "member": {
-        "name": "Member",
+        "name": "AI Chef Member",
         "price": "Free",
-        "description": "To explore basic functionalities",
-        "features": [
-          "Basic access to tools",
-          "Basic recipes", 
-          "Email support",
-          "Limited functionalities"
-        ]
-      },
-      "pro": {
-        "name": "Pro",
-        "price": "€10",
-        "period": "/month",
-        "description": "Ideal for independent gastronomic professionals",
-        "features": [
-          "All basic functions",
-          "Advanced recipe generator",
-          "Food Pairing AI",
-          "Priority support",
-          "More than 20 cookbooks"
-        ]
-      },
-      "premium": {
-        "name": "Premium",
-        "price": "€15",
-        "period": "/month",
-        "description": "For professionals with frequent use and greater creativity",
-        "features": [
-          "All Pro functions",
-          "Professional gastronomic coaching",
-          "Advanced nutritional analysis",
-          "Complete customization",
-          "Advanced integrations"
-        ]
+        "uses": "2/month",
+        "description": "Ideal for kitchen assistants, cooks and station chefs",
+        "features": {
+          "0": "Access to all 55+ tools",
+          "1": "2 monthly credits",
+          "2": "World cookbooks",
+          "3": "Email support"
+        }
       },
       "premium_pro": {
-        "name": "Premium Pro",
+        "name": "AI Chef Premium Pro",
         "price": "€25",
         "period": "/month",
-        "description": "For owners and managers of gastronomic businesses",
-        "features": [
-          "All Premium functions",
-          "Team management",
-          "Advanced analytics",
-          "API access",
-          "Monthly consulting"
-        ]
+        "uses": "150/month",
+        "description": "For Kitchen Chefs, Executive Chefs and Restaurant Managers",
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "150 monthly credits",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Priority support"
+        }
       },
       "premium_plus": {
-        "name": "Premium Plus",
+        "name": "AI Chef Premium Plus",
         "price": "€50",
         "period": "/month",
+        "uses": "350/month",
         "description": "For gastronomic entrepreneurs and restaurant chains",
-        "features": [
-          "Complete unlimited access",
-          "24/7 support",
-          "Personalized consulting",
-          "Custom feature development",
-          "Enterprise integration"
-        ]
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "350 monthly credits",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Premium 24/7 support"
+        }
+      },
+      "premium_max": {
+        "name": "AI Chef Premium Max",
+        "price": "€95",
+        "period": "/month",
+        "uses": "∞",
+        "description": "Unlimited monthly use for demanding professionals",
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "Unlimited monthly use",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Premium 24/7 support"
+        }
       },
       "premium_plus_annual": {
-        "name": "Premium Plus Annual",
+        "name": "AI Chef Premium Plus Annual",
         "price": "€500",
-        "original_price": "€600",
         "period": "/year",
+        "uses": "∞",
+        "original_price": "€600",
         "discount": "Save €100",
         "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
-        "features": [
-          "All 55+ tools included",
-          "Unlimited use throughout the year",
-          "Access to all world cuisines",
-          "Advanced business tools",
-          "Premium 24/7 support",
-          "Monthly personalized consulting"
-        ]
+        "features": {
+          "0": "All 55+ tools included",
+          "1": "Unlimited use throughout the year",
+          "2": "Access to all world cuisines",
+          "3": "Advanced business tools",
+          "4": "Premium 24/7 support",
+          "5": "Monthly personalized consulting"
+        }
       }
     }
   },

@@ -917,74 +917,66 @@
     "contact_us": "Neem contact met ons op voor een gepersonaliseerde oplossing",
     "plans": {
       "member": {
-        "name": "Lid",
+        "name": "AI Chef Lid",
         "price": "Gratis",
-        "description": "Om basisfunctionaliteiten te verkennen",
+        "uses": "2/maand",
+        "description": "Ideaal voor keukenhulpen, koks en postchefs",
         "features": {
-          "0": "Basis toegang tot tools",
-          "1": "Basis recepten",
-          "2": "E-mailondersteuning",
-          "3": "Beperkte functionaliteiten"
-        }
-      },
-      "pro": {
-        "name": "Pro",
-        "price": "10€",
-        "period": "/maand",
-        "description": "Ideaal voor onafhankelijke gastronomische professionals",
-        "features": {
-          "0": "Alle basisfuncties",
-          "1": "Geavanceerde receptgenerator",
-          "2": "Food Pairing AI",
-          "3": "Prioriteitsondersteuning",
-          "4": "Meer dan 20 kookboeken"
-        }
-      },
-      "premium": {
-        "name": "Premium",
-        "price": "15€",
-        "period": "/maand",
-        "description": "Voor professionals met frequent gebruik en meer creativiteit",
-        "features": {
-          "0": "Alle Pro-functies",
-          "1": "Professionele gastronomische coaching",
-          "2": "Geavanceerde voedingsanalyse",
-          "3": "Volledige personalisatie",
-          "4": "Geavanceerde integraties"
+          "0": "Toegang tot alle 55+ tools",
+          "1": "2 maandelijkse credits",
+          "2": "Wereldwijde kookboeken",
+          "3": "E-mailondersteuning"
         }
       },
       "premium_pro": {
-        "name": "Premium Pro",
-        "price": "25€",
+        "name": "AI Chef Premium Pro",
+        "price": "€25",
         "period": "/maand",
-        "description": "Voor eigenaren en managers van gastronomische bedrijven",
+        "uses": "150/maand",
+        "description": "Voor Keukenchefs, Chefkoks en Restaurantmanagers",
         "features": {
-          "0": "Alle Premium-functies",
-          "1": "Teambeheer",
-          "2": "Geavanceerde analytics",
-          "3": "API-toegang",
-          "4": "Maandelijkse consultatie"
+          "0": "Alle 55+ tools inbegrepen",
+          "1": "150 maandelijkse credits",
+          "2": "Toegang tot alle wereldkeukens",
+          "3": "Geavanceerde bedrijfstools",
+          "4": "Prioriteitsondersteuning"
         }
       },
       "premium_plus": {
-        "name": "Premium Plus",
-        "price": "50€",
+        "name": "AI Chef Premium Plus",
+        "price": "€50",
         "period": "/maand",
+        "uses": "350/maand",
         "description": "Voor gastronomische ondernemers en restaurantketens",
         "features": {
-          "0": "Volledige onbeperkte toegang",
-          "1": "24/7 ondersteuning",
-          "2": "Gepersonaliseerde consultatie",
-          "3": "Ontwikkeling van aangepaste functies",
-          "4": "Enterprise-integratie"
+          "0": "Alle 55+ tools inbegrepen",
+          "1": "350 maandelijkse credits",
+          "2": "Toegang tot alle wereldkeukens",
+          "3": "Geavanceerde bedrijfstools",
+          "4": "Premium 24/7 ondersteuning"
+        }
+      },
+      "premium_max": {
+        "name": "AI Chef Premium Max",
+        "price": "€95",
+        "period": "/maand",
+        "uses": "∞",
+        "description": "Onbeperkt maandelijks gebruik voor veeleisende professionals",
+        "features": {
+          "0": "Alle 55+ tools inbegrepen",
+          "1": "Onbeperkt maandelijks gebruik",
+          "2": "Toegang tot alle wereldkeukens",
+          "3": "Geavanceerde bedrijfstools",
+          "4": "Premium 24/7 ondersteuning"
         }
       },
       "premium_plus_annual": {
-        "name": "Premium Plus Jaarlijks",
-        "price": "500€",
+        "name": "AI Chef Premium Plus Jaarlijks",
+        "price": "€500",
         "period": "/jaar",
-        "original_price": "600€",
-        "discount": "Bespaar 100€",
+        "uses": "∞",
+        "original_price": "€600",
+        "discount": "Bespaar €100",
         "description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en leidinggevenden",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
