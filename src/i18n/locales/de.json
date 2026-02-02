@@ -929,6 +929,7 @@
     "annual": "Jährlich",
     "free_trial": "7 Tage kostenlos testen",
     "most_popular": "Am Beliebtesten",
+    "unlimited_badge": "Unbegrenzte Nutzung",
     "start_free": "Kostenlos Starten",
     "select_plan": "Plan Auswählen",
     "enterprise_question": "Benötigen Sie einen Enterprise-Plan?",
@@ -985,7 +986,9 @@
           "1": "Unbegrenzte monatliche Nutzung",
           "2": "Zugang zu allen Weltküchen",
           "3": "Erweiterte Business-Tools",
-          "4": "Premium 24/7 Support"
+          "4": "Premium 24/7 Support",
+          "5": "Früher Zugang zu neuen Funktionen",
+          "6": "Exklusive Schulung zu Neuheiten"
         }
       },
       "premium_plus_annual": {

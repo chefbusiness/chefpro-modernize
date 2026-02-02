@@ -654,6 +654,7 @@
     "annual": "Annual",
     "free_trial": "7-day free trial",
     "most_popular": "Most Popular",
+    "unlimited_badge": "Unlimited Usage",
     "start_free": "Start Free",
     "select_plan": "Select Plan",
     "enterprise_question": "Need an enterprise plan?",
@@ -710,7 +711,9 @@
           "1": "Unlimited monthly use",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
-          "4": "Premium 24/7 support"
+          "4": "Premium 24/7 support",
+          "5": "Early access to new features",
+          "6": "Exclusive training on new releases"
         }
       },
       "premium_plus_annual": {
