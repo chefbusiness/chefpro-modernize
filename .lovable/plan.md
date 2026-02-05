@@ -1,141 +1,129 @@
 
 
-# Plan: Social Proof con Avatares y Contador en Hero
+# Plan: Mejorar Social Proof con Perfiles Diversos y Layout Centrado
 
-## Resumen
+## Resumen de Cambios
 
-Reemplazar el Badge actual ("Nuevo: Inteligencia Artificial para Chefs") por un componente visual de social proof que muestre:
-- 5 avatares de usuarios (generados con IA)
-- 4.5 estrellas de calificacion
-- Contador de "Soluciones y recetas generadas"
+1. **Reducir el contador** de 3.748.149 a **48.149** (numero mas razonable)
+2. **Aumentar avatares de 5 a 8** con perfiles diversos de la industria
+3. **Centrar visualmente** el social proof en desktop
+4. **Generar nuevos avatares** representando diferentes profesionales
 
 ---
 
-## Diseno Visual
+## Nuevos Perfiles a Generar (8 avatares diversos)
+
+| # | Archivo | Perfil | Descripcion |
+|---|---------|--------|-------------|
+| 1 | `avatar-1.jpg` | Bartender hombre | Profesional de bar con chaleco/camisa |
+| 2 | `avatar-2.jpg` | Chef mujer | Cocinera profesional |
+| 3 | `avatar-3.jpg` | Gerente restaurante | Hombre con camisa formal |
+| 4 | `avatar-4.jpg` | Pastelera | Mujer con delantal de reposteria |
+| 5 | `avatar-5.jpg` | Dueno restaurante | Persona con aspecto ejecutivo/casual |
+| 6 | `avatar-6.jpg` | Bartender mujer | Profesional de cocteleria |
+| 7 | `avatar-7.jpg` | Panadero | Hombre con delantal/uniforme panaderia |
+| 8 | `avatar-8.jpg` | Chef senior | Chef experimentado |
+
+---
+
+## Cambios en HeroSocialProof.tsx
+
+### Estructura Visual Mejorada
 
 ```text
-[Avatar1][Avatar2][Avatar3][Avatar4][Avatar5]    ★★★★☆    3.748.149 Soluciones y recetas generadas
-    (superpuestos -8px)                          (4.5)
+              [Avatar Stack - 8 perfiles superpuestos]
+              ★★★★☆  48.149 Soluciones y recetas generadas
 ```
 
----
+### Cambios Especificos
 
-## Archivos a Crear
+1. **Contador**: `3748149` → `48149`
+2. **Layout centrado**: Cambiar de `flex-row` a layout apilado verticalmente centrado en todas las resoluciones
+3. **Avatares**: Importar 8 avatares en lugar de 5
+4. **Alt text**: Cambiar de "Chef X" a "Professional X" para reflejar diversidad
 
-### 1. Generar 5 avatares con IA
-
-Crear 5 imagenes de perfiles diversos de chefs/profesionales de hosteleria:
-- `src/assets/avatars/chef-avatar-1.jpg` - Chef hombre joven
-- `src/assets/avatars/chef-avatar-2.jpg` - Chef mujer
-- `src/assets/avatars/chef-avatar-3.jpg` - Chef hombre con gorra
-- `src/assets/avatars/chef-avatar-4.jpg` - Pastelera
-- `src/assets/avatars/chef-avatar-5.jpg` - Chef senior
-
-### 2. Nuevo componente: `src/components/HeroSocialProof.tsx`
+### Codigo Actualizado
 
 ```tsx
-// Estructura del componente
-<div className="flex items-center gap-4 mb-6">
-  {/* Avatares superpuestos */}
-  <div className="flex -space-x-3">
-    {avatars.map((avatar, i) => (
-      <Avatar key={i} className="border-2 border-background w-10 h-10">
-        <AvatarImage src={avatar} />
-      </Avatar>
-    ))}
-  </div>
-  
-  {/* Estrellas y contador */}
-  <div className="flex flex-col items-start">
-    <div className="flex items-center gap-1">
-      {/* 4 estrellas llenas + 1 media */}
-      <Star className="fill-accent text-accent" />
-      <Star className="fill-accent text-accent" />
-      <Star className="fill-accent text-accent" />
-      <Star className="fill-accent text-accent" />
-      <StarHalf className="fill-accent text-accent" />
+// 8 avatares diversos
+const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8];
+
+return (
+  <div className="flex flex-col items-center gap-2 mb-4">
+    {/* Avatares centrados */}
+    <div className="flex -space-x-3 justify-center">
+      {avatars.map((avatar, i) => (
+        <Avatar key={i} className="...">
+          <AvatarImage src={avatar} alt={`Professional ${i + 1}`} />
+        </Avatar>
+      ))}
     </div>
-    <span className="text-sm font-semibold">
-      <span className="text-lg font-bold">3.748.149</span> {t('hero.social_proof_label')}
-    </span>
+    
+    {/* Estrellas y contador centrados */}
+    <div className="flex flex-col items-center gap-0.5">
+      <div className="flex items-center gap-0.5">
+        {/* 5 estrellas */}
+      </div>
+      <span className="text-sm text-muted-foreground">
+        <span className="font-bold">{formatNumber(48149)}</span>
+        {t('hero.social_proof_label')}
+      </span>
+    </div>
   </div>
-</div>
+);
 ```
-
----
-
-## Traducciones a Agregar (7 idiomas)
-
-Nueva clave: `hero.social_proof_label`
-
-| Idioma | Texto |
-|--------|-------|
-| ES | "Soluciones y recetas generadas" |
-| EN | "Solutions and recipes generated" |
-| FR | "Solutions et recettes generees" |
-| DE | "Losungen und Rezepte generiert" |
-| IT | "Soluzioni e ricette generate" |
-| PT | "Solucoes e receitas geradas" |
-| NL | "Oplossingen en recepten gegenereerd" |
-
----
-
-## Cambios en ModernHero.tsx
-
-### Antes:
-```tsx
-<Badge variant="outline" className="px-4 py-1.5">
-  {t('hero.badge')}
-</Badge>
-```
-
-### Despues:
-```tsx
-<HeroSocialProof />
-```
-
-Se elimina el Badge y se reemplaza por el nuevo componente de social proof.
 
 ---
 
 ## Archivos a Modificar
 
-1. **Generar con IA**: 5 avatares de chefs profesionales
-2. **Crear**: `src/components/HeroSocialProof.tsx` - Nuevo componente
-3. **Modificar**: `src/components/ModernHero.tsx` - Reemplazar Badge
-4. **Modificar**: `src/i18n/locales/es.json` - Agregar traduccion
-5. **Modificar**: `src/i18n/locales/en.json` - Agregar traduccion
-6. **Modificar**: `src/i18n/locales/fr.json` - Agregar traduccion
-7. **Modificar**: `src/i18n/locales/de.json` - Agregar traduccion
-8. **Modificar**: `src/i18n/locales/it.json` - Agregar traduccion
-9. **Modificar**: `src/i18n/locales/pt.json` - Agregar traduccion
-10. **Modificar**: `src/i18n/locales/nl.json` - Agregar traduccion
+1. **Generar con IA**: 8 avatares profesionales diversos
+   - `src/assets/avatars/avatar-1.jpg` (Bartender hombre)
+   - `src/assets/avatars/avatar-2.jpg` (Chef mujer)
+   - `src/assets/avatars/avatar-3.jpg` (Gerente restaurante)
+   - `src/assets/avatars/avatar-4.jpg` (Pastelera)
+   - `src/assets/avatars/avatar-5.jpg` (Dueno restaurante)
+   - `src/assets/avatars/avatar-6.jpg` (Bartender mujer)
+   - `src/assets/avatars/avatar-7.jpg` (Panadero)
+   - `src/assets/avatars/avatar-8.jpg` (Chef senior)
+
+2. **Modificar**: `src/components/HeroSocialProof.tsx`
+   - Importar 8 avatares
+   - Cambiar contador a 48.149
+   - Centrar layout verticalmente
+   - Actualizar alt text generico
+
+3. **Eliminar**: Avatares antiguos de chef (opcional, o mantener para otros usos)
 
 ---
 
 ## Resultado Visual Esperado
 
+### Desktop
 ```text
-                    [👨‍🍳][👩‍🍳][👨][👩‍🍳][👨‍🍳]  ★★★★☆  3.748.149 Soluciones y recetas generadas
+                    [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
+                           ★★★★★
+                    48.149 Soluciones y recetas generadas
                     
-                         Transforma tu [Restaurante] con AI Chef Pro
-                         
-                    55+ Herramientas de IA Especializadas para Chefs...
+                    Transforma tu [Restaurante] con AI Chef Pro
 ```
 
-El nuevo componente de social proof:
-- Genera confianza visual inmediata
-- Muestra una comunidad activa de profesionales
-- Destaca el volumen de uso (3.7M+ recetas generadas)
-- Mantiene el rating de 5 estrellas pero con visual mas atractivo
+### Mobile/Tablet (igual, centrado)
+```text
+        [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
+               ★★★★★
+        48.149 Soluciones y recetas generadas
+        
+        Transforma tu [Restaurante]
+            con AI Chef Pro
+```
 
 ---
 
-## Detalles Tecnicos
+## Beneficios
 
-- Usar componente `Avatar` de shadcn/ui para los avatares
-- Avatares con borde blanco y superposicion con `-space-x-3`
-- Contador con formato numerico local (3.748.149 en ES, 3,748,149 en EN)
-- Icono `StarHalf` de lucide-react para la media estrella (opcional mantener 5 completas)
-- Responsive: en movil apilar verticalmente
+- **Numero mas creible**: 48.149 vs 3.7 millones
+- **Representacion inclusiva**: No solo chefs, incluye bartenders, gerentes, duenos
+- **Layout consistente**: Centrado en todas las resoluciones
+- **Mejor uso del espacio**: Aprovecha el espacio entre header y contenido en desktop
 
