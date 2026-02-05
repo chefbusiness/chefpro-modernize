@@ -1,71 +1,92 @@
 
 
-# Plan: Corregir Etiqueta "USOS" Hardcodeada
+# Plan: Actualizar Precio del Plan Anual
 
-## Problema Identificado
+## Problema Actual
 
-La palabra **"USOS:"** está hardcodeada en español en el componente `ModernPricing.tsx` (línea 193):
+El plan Premium Plus Anual a 500€ no tiene coherencia con el Premium Max de 95€/mes:
+- 95€ x 12 meses = 1.140€
+- El plan anual a 500€ representa un ahorro de 640€ (casi 7 meses gratis)
 
-```tsx
-<span className="font-semibold uppercase tracking-wide">USOS: </span>
-```
+## Nueva Estructura de Precios
 
-Esto hace que aparezca "USOS:" en todos los idiomas en lugar de traducirse correctamente.
+| Concepto | Valor Actual | Nuevo Valor |
+|----------|--------------|-------------|
+| Precio anual | 500€ | **950€** |
+| Precio original (tachado) | 600€ | **1.140€** |
+| Badge de ahorro | "Ahorra 100€" | **"Ahorra 2 meses"** |
+| Descripcion del ahorro | - | **"Equivalente a 190€"** (opcional en descripcion) |
 
----
+## Cambios por Idioma
 
-## Solución
+### Espanol (es.json)
+- `price`: "500€" → "950€"
+- `original_price`: "600€" → "1.140€"
+- `discount`: "Ahorra 100€" → "Ahorra 2 meses"
 
-### 1. Agregar clave de traducción en los 7 idiomas
+### English (en.json)
+- `price`: "€500" → "€950"
+- `original_price`: "€600" → "€1,140"
+- `discount`: "Save €100" → "Save 2 months"
 
-Añadir `pricing.uses_label` en cada archivo de idioma:
+### Francais (fr.json)
+- `price`: "500€" → "950€"
+- `original_price`: "600€" → "1.140€"
+- `discount`: "Économisez 100€" → "Économisez 2 mois"
 
-| Idioma | Archivo | Traducción |
-|--------|---------|------------|
-| Español | `es.json` | "USOS" |
-| English | `en.json` | "USES" |
-| Français | `fr.json` | "UTILISATIONS" |
-| Deutsch | `de.json` | "NUTZUNGEN" |
-| Italiano | `it.json` | "UTILIZZI" |
-| Português | `pt.json` | "USOS" |
-| Nederlands | `nl.json` | "GEBRUIK" |
+### Deutsch (de.json)
+- `price`: "500€" → "950€"
+- `original_price`: "600€" → "1.140€"
+- `discount`: "Sparen Sie 100€" → "Sparen Sie 2 Monate"
 
-### 2. Actualizar el componente
+### Italiano (it.json)
+- `price`: "500€" → "950€"
+- `original_price`: "600€" → "1.140€"
+- `discount`: "Risparmia 100€" → "Risparmia 2 mesi"
 
-**Archivo:** `src/components/ModernPricing.tsx`
+### Portugues (pt.json)
+- `price`: "500€" → "950€"
+- `original_price`: "600€" → "1.140€"
+- `discount`: "Poupe 100€" → "Poupe 2 meses"
 
-Cambiar de:
-```tsx
-<span className="font-semibold uppercase tracking-wide">USOS: </span>
-```
-
-A:
-```tsx
-<span className="font-semibold uppercase tracking-wide">{t('pricing.uses_label')}: </span>
-```
+### Nederlands (nl.json)
+- `price`: "€500" → "€950"
+- `original_price`: "€600" → "€1.140"
+- `discount`: "Bespaar €100" → "Bespaar 2 maanden"
 
 ---
 
 ## Archivos a Modificar
 
-1. `src/components/ModernPricing.tsx` - Usar traducción en lugar de texto hardcodeado
-2. `src/i18n/locales/es.json` - Añadir `"uses_label": "USOS"`
-3. `src/i18n/locales/en.json` - Añadir `"uses_label": "USES"`
-4. `src/i18n/locales/fr.json` - Añadir `"uses_label": "UTILISATIONS"`
-5. `src/i18n/locales/de.json` - Añadir `"uses_label": "NUTZUNGEN"`
-6. `src/i18n/locales/it.json` - Añadir `"uses_label": "UTILIZZI"`
-7. `src/i18n/locales/pt.json` - Añadir `"uses_label": "USOS"`
-8. `src/i18n/locales/nl.json` - Añadir `"uses_label": "GEBRUIK"`
+1. `src/i18n/locales/es.json`
+2. `src/i18n/locales/en.json`
+3. `src/i18n/locales/fr.json`
+4. `src/i18n/locales/de.json`
+5. `src/i18n/locales/it.json`
+6. `src/i18n/locales/pt.json`
+7. `src/i18n/locales/nl.json`
 
 ---
 
-## Resultado Esperado
+## Resultado Visual Esperado
 
-- En español: "USOS: 150/mes"
-- En inglés: "USES: 150/month"
-- En francés: "UTILISATIONS: 150/mois"
-- En alemán: "NUTZUNGEN: 150/Monat"
-- En italiano: "UTILIZZI: 150/mese"
-- En portugués: "USOS: 150/mês"
-- En neerlandés: "GEBRUIK: 150/maand"
+```text
++---------------------------+
+|      Ahorra 2 meses       |  <- Badge verde
++---------------------------+
+| AI Chef Premium Plus Anual|
+|          1.140€           |  <- Precio tachado
+|         950€/año          |  <- Precio real
+|         USOS: ∞           |
++---------------------------+
+| ✓ 55+ herramientas        |
+| ✓ Uso ilimitado todo año  |
+| ✓ Cocinas del mundo       |
+| ✓ Herramientas negocio    |
+| ✓ Soporte 24/7            |
+| ✓ Consultoría mensual     |
++---------------------------+
+```
+
+El mensaje ahora es claro: **"Paga 10 meses, llévate 12"** (ahorro de 2 meses = 190€)
 
