@@ -1,92 +1,141 @@
 
 
-# Plan: Actualizar Precio del Plan Anual
+# Plan: Social Proof con Avatares y Contador en Hero
 
-## Problema Actual
+## Resumen
 
-El plan Premium Plus Anual a 500€ no tiene coherencia con el Premium Max de 95€/mes:
-- 95€ x 12 meses = 1.140€
-- El plan anual a 500€ representa un ahorro de 640€ (casi 7 meses gratis)
+Reemplazar el Badge actual ("Nuevo: Inteligencia Artificial para Chefs") por un componente visual de social proof que muestre:
+- 5 avatares de usuarios (generados con IA)
+- 4.5 estrellas de calificacion
+- Contador de "Soluciones y recetas generadas"
 
-## Nueva Estructura de Precios
+---
 
-| Concepto | Valor Actual | Nuevo Valor |
-|----------|--------------|-------------|
-| Precio anual | 500€ | **950€** |
-| Precio original (tachado) | 600€ | **1.140€** |
-| Badge de ahorro | "Ahorra 100€" | **"Ahorra 2 meses"** |
-| Descripcion del ahorro | - | **"Equivalente a 190€"** (opcional en descripcion) |
+## Diseno Visual
 
-## Cambios por Idioma
+```text
+[Avatar1][Avatar2][Avatar3][Avatar4][Avatar5]    ★★★★☆    3.748.149 Soluciones y recetas generadas
+    (superpuestos -8px)                          (4.5)
+```
 
-### Espanol (es.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Ahorra 100€" → "Ahorra 2 meses"
+---
 
-### English (en.json)
-- `price`: "€500" → "€950"
-- `original_price`: "€600" → "€1,140"
-- `discount`: "Save €100" → "Save 2 months"
+## Archivos a Crear
 
-### Francais (fr.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Économisez 100€" → "Économisez 2 mois"
+### 1. Generar 5 avatares con IA
 
-### Deutsch (de.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Sparen Sie 100€" → "Sparen Sie 2 Monate"
+Crear 5 imagenes de perfiles diversos de chefs/profesionales de hosteleria:
+- `src/assets/avatars/chef-avatar-1.jpg` - Chef hombre joven
+- `src/assets/avatars/chef-avatar-2.jpg` - Chef mujer
+- `src/assets/avatars/chef-avatar-3.jpg` - Chef hombre con gorra
+- `src/assets/avatars/chef-avatar-4.jpg` - Pastelera
+- `src/assets/avatars/chef-avatar-5.jpg` - Chef senior
 
-### Italiano (it.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Risparmia 100€" → "Risparmia 2 mesi"
+### 2. Nuevo componente: `src/components/HeroSocialProof.tsx`
 
-### Portugues (pt.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Poupe 100€" → "Poupe 2 meses"
+```tsx
+// Estructura del componente
+<div className="flex items-center gap-4 mb-6">
+  {/* Avatares superpuestos */}
+  <div className="flex -space-x-3">
+    {avatars.map((avatar, i) => (
+      <Avatar key={i} className="border-2 border-background w-10 h-10">
+        <AvatarImage src={avatar} />
+      </Avatar>
+    ))}
+  </div>
+  
+  {/* Estrellas y contador */}
+  <div className="flex flex-col items-start">
+    <div className="flex items-center gap-1">
+      {/* 4 estrellas llenas + 1 media */}
+      <Star className="fill-accent text-accent" />
+      <Star className="fill-accent text-accent" />
+      <Star className="fill-accent text-accent" />
+      <Star className="fill-accent text-accent" />
+      <StarHalf className="fill-accent text-accent" />
+    </div>
+    <span className="text-sm font-semibold">
+      <span className="text-lg font-bold">3.748.149</span> {t('hero.social_proof_label')}
+    </span>
+  </div>
+</div>
+```
 
-### Nederlands (nl.json)
-- `price`: "€500" → "€950"
-- `original_price`: "€600" → "€1.140"
-- `discount`: "Bespaar €100" → "Bespaar 2 maanden"
+---
+
+## Traducciones a Agregar (7 idiomas)
+
+Nueva clave: `hero.social_proof_label`
+
+| Idioma | Texto |
+|--------|-------|
+| ES | "Soluciones y recetas generadas" |
+| EN | "Solutions and recipes generated" |
+| FR | "Solutions et recettes generees" |
+| DE | "Losungen und Rezepte generiert" |
+| IT | "Soluzioni e ricette generate" |
+| PT | "Solucoes e receitas geradas" |
+| NL | "Oplossingen en recepten gegenereerd" |
+
+---
+
+## Cambios en ModernHero.tsx
+
+### Antes:
+```tsx
+<Badge variant="outline" className="px-4 py-1.5">
+  {t('hero.badge')}
+</Badge>
+```
+
+### Despues:
+```tsx
+<HeroSocialProof />
+```
+
+Se elimina el Badge y se reemplaza por el nuevo componente de social proof.
 
 ---
 
 ## Archivos a Modificar
 
-1. `src/i18n/locales/es.json`
-2. `src/i18n/locales/en.json`
-3. `src/i18n/locales/fr.json`
-4. `src/i18n/locales/de.json`
-5. `src/i18n/locales/it.json`
-6. `src/i18n/locales/pt.json`
-7. `src/i18n/locales/nl.json`
+1. **Generar con IA**: 5 avatares de chefs profesionales
+2. **Crear**: `src/components/HeroSocialProof.tsx` - Nuevo componente
+3. **Modificar**: `src/components/ModernHero.tsx` - Reemplazar Badge
+4. **Modificar**: `src/i18n/locales/es.json` - Agregar traduccion
+5. **Modificar**: `src/i18n/locales/en.json` - Agregar traduccion
+6. **Modificar**: `src/i18n/locales/fr.json` - Agregar traduccion
+7. **Modificar**: `src/i18n/locales/de.json` - Agregar traduccion
+8. **Modificar**: `src/i18n/locales/it.json` - Agregar traduccion
+9. **Modificar**: `src/i18n/locales/pt.json` - Agregar traduccion
+10. **Modificar**: `src/i18n/locales/nl.json` - Agregar traduccion
 
 ---
 
 ## Resultado Visual Esperado
 
 ```text
-+---------------------------+
-|      Ahorra 2 meses       |  <- Badge verde
-+---------------------------+
-| AI Chef Premium Plus Anual|
-|          1.140€           |  <- Precio tachado
-|         950€/año          |  <- Precio real
-|         USOS: ∞           |
-+---------------------------+
-| ✓ 55+ herramientas        |
-| ✓ Uso ilimitado todo año  |
-| ✓ Cocinas del mundo       |
-| ✓ Herramientas negocio    |
-| ✓ Soporte 24/7            |
-| ✓ Consultoría mensual     |
-+---------------------------+
+                    [👨‍🍳][👩‍🍳][👨][👩‍🍳][👨‍🍳]  ★★★★☆  3.748.149 Soluciones y recetas generadas
+                    
+                         Transforma tu [Restaurante] con AI Chef Pro
+                         
+                    55+ Herramientas de IA Especializadas para Chefs...
 ```
 
-El mensaje ahora es claro: **"Paga 10 meses, llévate 12"** (ahorro de 2 meses = 190€)
+El nuevo componente de social proof:
+- Genera confianza visual inmediata
+- Muestra una comunidad activa de profesionales
+- Destaca el volumen de uso (3.7M+ recetas generadas)
+- Mantiene el rating de 5 estrellas pero con visual mas atractivo
+
+---
+
+## Detalles Tecnicos
+
+- Usar componente `Avatar` de shadcn/ui para los avatares
+- Avatares con borde blanco y superposicion con `-space-x-3`
+- Contador con formato numerico local (3.748.149 en ES, 3,748,149 en EN)
+- Icono `StarHalf` de lucide-react para la media estrella (opcional mantener 5 completas)
+- Responsive: en movil apilar verticalmente
 
