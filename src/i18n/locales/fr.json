@@ -505,11 +505,11 @@
       },
       "premium_plus_annual": {
         "name": "AI Chef Premium Plus Annuel",
-        "price": "500€",
+        "price": "950€",
         "period": "/an",
         "uses": "∞",
-        "original_price": "600€",
-        "discount": "Économisez 100€",
+        "original_price": "1.140€",
+        "discount": "Économisez 2 mois",
         "description": "Idéal pour les Entrepreneurs Gastronomiques, Propriétaires de Restaurants et Dirigeants",
         "features": {
           "0": "Tous les 55+ outils inclus",

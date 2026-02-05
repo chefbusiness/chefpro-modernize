@@ -976,11 +976,11 @@
       },
       "premium_plus_annual": {
         "name": "AI Chef Premium Plus Jaarlijks",
-        "price": "€500",
+        "price": "€950",
         "period": "/jaar",
         "uses": "∞",
-        "original_price": "€600",
-        "discount": "Bespaar €100",
+        "original_price": "€1.140",
+        "discount": "Bespaar 2 maanden",
         "description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en leidinggevenden",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
