@@ -33,7 +33,8 @@
     "description": "Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.",
     "rating": "Rating: 5 stars",
     "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger Bar", "Bakery", "Pastry Shop", "Chocolate Shop", "Ice Cream Shop", "Dark Kitchen", "Coffee Shop", "Brunch"],
-    "see_resources": "SEE RESOURCES"
+    "see_resources": "SEE RESOURCES",
+    "social_proof_label": "Solutions and recipes generated"
   },
   "notifications": {
     "someone_from": "Someone from",

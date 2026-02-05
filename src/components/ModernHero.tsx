@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Star, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import HeroSocialProof from './HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import CounterStat from './CounterStat';
 import { useState, useEffect } from 'react';
@@ -32,9 +32,7 @@ export default function ModernHero() {
 
   return (
     <section id="inicio" className="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-      <Badge variant="outline" className="px-4 py-1.5">
-        {t('hero.badge')}
-      </Badge>
+      <HeroSocialProof />
       
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
         {t('hero.title_prefix')}{" "}
@@ -65,16 +63,6 @@ export default function ModernHero() {
         <CounterStat end={6} suffix="" label={t('stats.categories_label')} />
       </div>
 
-      <div className="flex items-center gap-2 mb-4">
-        <div className="flex">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-          ))}
-        </div>
-        <span className="text-sm text-muted-foreground font-medium">
-          {t('hero.rating')}
-        </span>
-      </div>
 
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up w-full sm:w-auto">
         <Button 

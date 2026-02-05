@@ -30,7 +30,8 @@
     "description": "Suite d'outils IA et applications, modèles entraînés pour l'usage quotidien des Chefs, Cuisiniers et professionnels de l'hôtellerie.",
     "rating": "Note: 5 étoiles",
     "business_types": ["Gestion", "Restaurant", "Traiteur", "Pizzeria", "Burger", "Boulangerie", "Pâtisserie", "Chocolaterie", "Glacerie", "Dark Kitchen", "Café", "Brunch"],
-    "see_resources": "VOIR RESSOURCES"
+    "see_resources": "VOIR RESSOURCES",
+    "social_proof_label": "Solutions et recettes générées"
   },
   "notifications": {
     "someone_from": "Quelqu'un de",

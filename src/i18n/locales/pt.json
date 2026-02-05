@@ -30,7 +30,8 @@
     "description": "Suite de Ferramentas IA e Aplicações, modelos treinados para uso diário de Chefs, Cozinheiros e profissionais da hospitalidade.",
     "rating": "Avaliação: 5 estrelas",
     "business_types": ["Gestão", "Restaurante", "Catering", "Pizzaria", "Hamburgueria", "Padaria", "Confeitaria", "Chocolataria", "Sorveteria", "Dark Kitchen", "Cafeteria", "Brunch"],
-    "see_resources": "VER RECURSOS"
+    "see_resources": "VER RECURSOS",
+    "social_proof_label": "Soluções e receitas geradas"
   },
   "notifications": {
     "someone_from": "Alguém de",
