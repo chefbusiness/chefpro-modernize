@@ -2,14 +2,17 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Star } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
-// Import chef avatars
-import chefAvatar1 from '@/assets/avatars/chef-avatar-1.jpg';
-import chefAvatar2 from '@/assets/avatars/chef-avatar-2.jpg';
-import chefAvatar3 from '@/assets/avatars/chef-avatar-3.jpg';
-import chefAvatar4 from '@/assets/avatars/chef-avatar-4.jpg';
-import chefAvatar5 from '@/assets/avatars/chef-avatar-5.jpg';
+// Import diverse professional avatars
+import avatar1 from '@/assets/avatars/avatar-1.jpg';
+import avatar2 from '@/assets/avatars/avatar-2.jpg';
+import avatar3 from '@/assets/avatars/avatar-3.jpg';
+import avatar4 from '@/assets/avatars/avatar-4.jpg';
+import avatar5 from '@/assets/avatars/avatar-5.jpg';
+import avatar6 from '@/assets/avatars/avatar-6.jpg';
+import avatar7 from '@/assets/avatars/avatar-7.jpg';
+import avatar8 from '@/assets/avatars/avatar-8.jpg';
 
-const avatars = [chefAvatar1, chefAvatar2, chefAvatar3, chefAvatar4, chefAvatar5];
+const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8];
 
 export default function HeroSocialProof() {
   const { t, currentLanguage } = useLanguage();
@@ -23,22 +26,22 @@ export default function HeroSocialProof() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 mb-4">
-      {/* Overlapping Avatars */}
-      <div className="flex -space-x-3">
+    <div className="flex flex-col items-center gap-2 mb-4">
+      {/* Overlapping Avatars - Centered */}
+      <div className="flex -space-x-3 justify-center">
         {avatars.map((avatar, i) => (
           <Avatar 
             key={i} 
             className="border-2 border-background w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-background"
           >
-            <AvatarImage src={avatar} alt={`Chef ${i + 1}`} />
-            <AvatarFallback className="bg-muted text-xs">C{i + 1}</AvatarFallback>
+            <AvatarImage src={avatar} alt={`Professional ${i + 1}`} />
+            <AvatarFallback className="bg-muted text-xs">P{i + 1}</AvatarFallback>
           </Avatar>
         ))}
       </div>
 
-      {/* Stars and Counter */}
-      <div className="flex flex-col items-center sm:items-start gap-0.5">
+      {/* Stars and Counter - Centered */}
+      <div className="flex flex-col items-center gap-0.5">
         <div className="flex items-center gap-0.5">
           {Array.from({ length: 5 }).map((_, i) => (
             <Star 
@@ -48,7 +51,7 @@ export default function HeroSocialProof() {
           ))}
         </div>
         <span className="text-sm text-muted-foreground">
-          <span className="font-bold text-foreground">{formatNumber(3748149)}</span>{' '}
+          <span className="font-bold text-foreground">{formatNumber(48149)}</span>{' '}
           {t('hero.social_proof_label')}
         </span>
       </div>
