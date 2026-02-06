@@ -78,13 +78,17 @@ export default function TrustedByLogos() {
         <div className="logo-track flex items-center gap-12 md:gap-16 lg:gap-20">
           {/* Duplicate logos for infinite loop effect */}
           {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
-            <img 
+            <div 
               key={i}
-              src={logo.src} 
-              alt={logo.alt}
-              loading="lazy"
-              className="h-14 md:h-18 lg:h-20 w-auto flex-shrink-0 logo-glow transition-all duration-300"
-            />
+              className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 logo-glow transition-all duration-300"
+            >
+              <img 
+                src={logo.src} 
+                alt={logo.alt}
+                loading="lazy"
+                className="h-10 md:h-12 lg:h-14 w-auto object-contain"
+              />
+            </div>
           ))}
         </div>
       </div>
