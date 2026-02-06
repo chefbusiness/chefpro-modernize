@@ -30,7 +30,8 @@
     "description": "Suite di Strumenti IA e Applicazioni, modelli addestrati per l'uso quotidiano di Chef, Cuochi e professionisti dell'ospitalità.",
     "rating": "Valutazione: 5 stelle",
     "business_types": ["Gestione", "Ristorante", "Catering", "Pizzeria", "Hamburgheria", "Panetteria", "Pasticceria", "Cioccolateria", "Gelateria", "Dark Kitchen", "Caffetteria", "Brunch"],
-    "see_resources": "VEDI RISORSE"
+    "see_resources": "VEDI RISORSE",
+    "social_proof_label": "Soluzioni e ricette generate"
   },
   "notifications": {
     "someone_from": "Qualcuno da",

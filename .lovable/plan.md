@@ -1,92 +1,129 @@
 
 
-# Plan: Actualizar Precio del Plan Anual
+# Plan: Mejorar Social Proof con Perfiles Diversos y Layout Centrado
 
-## Problema Actual
+## Resumen de Cambios
 
-El plan Premium Plus Anual a 500€ no tiene coherencia con el Premium Max de 95€/mes:
-- 95€ x 12 meses = 1.140€
-- El plan anual a 500€ representa un ahorro de 640€ (casi 7 meses gratis)
+1. **Reducir el contador** de 3.748.149 a **48.149** (numero mas razonable)
+2. **Aumentar avatares de 5 a 8** con perfiles diversos de la industria
+3. **Centrar visualmente** el social proof en desktop
+4. **Generar nuevos avatares** representando diferentes profesionales
 
-## Nueva Estructura de Precios
+---
 
-| Concepto | Valor Actual | Nuevo Valor |
-|----------|--------------|-------------|
-| Precio anual | 500€ | **950€** |
-| Precio original (tachado) | 600€ | **1.140€** |
-| Badge de ahorro | "Ahorra 100€" | **"Ahorra 2 meses"** |
-| Descripcion del ahorro | - | **"Equivalente a 190€"** (opcional en descripcion) |
+## Nuevos Perfiles a Generar (8 avatares diversos)
 
-## Cambios por Idioma
+| # | Archivo | Perfil | Descripcion |
+|---|---------|--------|-------------|
+| 1 | `avatar-1.jpg` | Bartender hombre | Profesional de bar con chaleco/camisa |
+| 2 | `avatar-2.jpg` | Chef mujer | Cocinera profesional |
+| 3 | `avatar-3.jpg` | Gerente restaurante | Hombre con camisa formal |
+| 4 | `avatar-4.jpg` | Pastelera | Mujer con delantal de reposteria |
+| 5 | `avatar-5.jpg` | Dueno restaurante | Persona con aspecto ejecutivo/casual |
+| 6 | `avatar-6.jpg` | Bartender mujer | Profesional de cocteleria |
+| 7 | `avatar-7.jpg` | Panadero | Hombre con delantal/uniforme panaderia |
+| 8 | `avatar-8.jpg` | Chef senior | Chef experimentado |
 
-### Espanol (es.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Ahorra 100€" → "Ahorra 2 meses"
+---
 
-### English (en.json)
-- `price`: "€500" → "€950"
-- `original_price`: "€600" → "€1,140"
-- `discount`: "Save €100" → "Save 2 months"
+## Cambios en HeroSocialProof.tsx
 
-### Francais (fr.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Économisez 100€" → "Économisez 2 mois"
+### Estructura Visual Mejorada
 
-### Deutsch (de.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Sparen Sie 100€" → "Sparen Sie 2 Monate"
+```text
+              [Avatar Stack - 8 perfiles superpuestos]
+              ★★★★☆  48.149 Soluciones y recetas generadas
+```
 
-### Italiano (it.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Risparmia 100€" → "Risparmia 2 mesi"
+### Cambios Especificos
 
-### Portugues (pt.json)
-- `price`: "500€" → "950€"
-- `original_price`: "600€" → "1.140€"
-- `discount`: "Poupe 100€" → "Poupe 2 meses"
+1. **Contador**: `3748149` → `48149`
+2. **Layout centrado**: Cambiar de `flex-row` a layout apilado verticalmente centrado en todas las resoluciones
+3. **Avatares**: Importar 8 avatares en lugar de 5
+4. **Alt text**: Cambiar de "Chef X" a "Professional X" para reflejar diversidad
 
-### Nederlands (nl.json)
-- `price`: "€500" → "€950"
-- `original_price`: "€600" → "€1.140"
-- `discount`: "Bespaar €100" → "Bespaar 2 maanden"
+### Codigo Actualizado
+
+```tsx
+// 8 avatares diversos
+const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8];
+
+return (
+  <div className="flex flex-col items-center gap-2 mb-4">
+    {/* Avatares centrados */}
+    <div className="flex -space-x-3 justify-center">
+      {avatars.map((avatar, i) => (
+        <Avatar key={i} className="...">
+          <AvatarImage src={avatar} alt={`Professional ${i + 1}`} />
+        </Avatar>
+      ))}
+    </div>
+    
+    {/* Estrellas y contador centrados */}
+    <div className="flex flex-col items-center gap-0.5">
+      <div className="flex items-center gap-0.5">
+        {/* 5 estrellas */}
+      </div>
+      <span className="text-sm text-muted-foreground">
+        <span className="font-bold">{formatNumber(48149)}</span>
+        {t('hero.social_proof_label')}
+      </span>
+    </div>
+  </div>
+);
+```
 
 ---
 
 ## Archivos a Modificar
 
-1. `src/i18n/locales/es.json`
-2. `src/i18n/locales/en.json`
-3. `src/i18n/locales/fr.json`
-4. `src/i18n/locales/de.json`
-5. `src/i18n/locales/it.json`
-6. `src/i18n/locales/pt.json`
-7. `src/i18n/locales/nl.json`
+1. **Generar con IA**: 8 avatares profesionales diversos
+   - `src/assets/avatars/avatar-1.jpg` (Bartender hombre)
+   - `src/assets/avatars/avatar-2.jpg` (Chef mujer)
+   - `src/assets/avatars/avatar-3.jpg` (Gerente restaurante)
+   - `src/assets/avatars/avatar-4.jpg` (Pastelera)
+   - `src/assets/avatars/avatar-5.jpg` (Dueno restaurante)
+   - `src/assets/avatars/avatar-6.jpg` (Bartender mujer)
+   - `src/assets/avatars/avatar-7.jpg` (Panadero)
+   - `src/assets/avatars/avatar-8.jpg` (Chef senior)
+
+2. **Modificar**: `src/components/HeroSocialProof.tsx`
+   - Importar 8 avatares
+   - Cambiar contador a 48.149
+   - Centrar layout verticalmente
+   - Actualizar alt text generico
+
+3. **Eliminar**: Avatares antiguos de chef (opcional, o mantener para otros usos)
 
 ---
 
 ## Resultado Visual Esperado
 
+### Desktop
 ```text
-+---------------------------+
-|      Ahorra 2 meses       |  <- Badge verde
-+---------------------------+
-| AI Chef Premium Plus Anual|
-|          1.140€           |  <- Precio tachado
-|         950€/año          |  <- Precio real
-|         USOS: ∞           |
-+---------------------------+
-| ✓ 55+ herramientas        |
-| ✓ Uso ilimitado todo año  |
-| ✓ Cocinas del mundo       |
-| ✓ Herramientas negocio    |
-| ✓ Soporte 24/7            |
-| ✓ Consultoría mensual     |
-+---------------------------+
+                    [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
+                           ★★★★★
+                    48.149 Soluciones y recetas generadas
+                    
+                    Transforma tu [Restaurante] con AI Chef Pro
 ```
 
-El mensaje ahora es claro: **"Paga 10 meses, llévate 12"** (ahorro de 2 meses = 190€)
+### Mobile/Tablet (igual, centrado)
+```text
+        [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
+               ★★★★★
+        48.149 Soluciones y recetas generadas
+        
+        Transforma tu [Restaurante]
+            con AI Chef Pro
+```
+
+---
+
+## Beneficios
+
+- **Numero mas creible**: 48.149 vs 3.7 millones
+- **Representacion inclusiva**: No solo chefs, incluye bartenders, gerentes, duenos
+- **Layout consistente**: Centrado en todas las resoluciones
+- **Mejor uso del espacio**: Aprovecha el espacio entre header y contenido en desktop
 
