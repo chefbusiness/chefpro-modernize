@@ -1,11 +1,18 @@
 import { useTranslation } from 'react-i18next';
 
 const logos = [
+  // Hoteles
   { src: '/logos/melia-hotels.png', alt: 'Meliá Hotels International' },
-  { src: '/logos/nh-hotels.png', alt: 'NH Hotels' },
   { src: '/logos/marriot-hotels.png', alt: 'Marriott International' },
   { src: '/logos/intercontinental-hotels.png', alt: 'InterContinental Hotels & Resorts' },
-  // More logos will be added here
+  { src: '/logos/wyndham-hotels.png', alt: 'Wyndham Hotels & Resorts' },
+  { src: '/logos/accor-hotels.png', alt: 'Accor Hotels' },
+  // Aerolíneas
+  { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
+  { src: '/logos/singapore-airlines.png', alt: 'Singapore Airlines' },
+  // Restaurantes/Bares
+  { src: '/logos/fierro.png', alt: 'Fierro by Carito y Germán' },
+  { src: '/logos/stillroom.png', alt: 'Stillroom - El Arte de lo Invisible' },
 ];
 
 export default function TrustedByLogos() {
