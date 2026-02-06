@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Badge } from '@/components/ui/badge';
+import { Sparkles } from 'lucide-react';
 
 const logos = [
   // Hoteles & Wellness
@@ -37,17 +39,41 @@ export default function TrustedByLogos() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-10 md:py-12 bg-muted/30 overflow-hidden">
-      <div className="container mb-8">
-        <h2 className="text-center text-sm md:text-base lg:text-lg font-semibold text-muted-foreground uppercase tracking-wide leading-relaxed max-w-4xl mx-auto">
-          {t('trusted_by.title')}
-        </h2>
+    <section className="relative py-12 md:py-16 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      {/* Borde superior dorado */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-500/60 to-transparent" />
+      
+      {/* Header con badge y título */}
+      <div className="container mb-10">
+        <div className="flex flex-col items-center gap-4">
+          {/* Badge dorado */}
+          <Badge 
+            variant="outline" 
+            className="border-amber-500/50 bg-amber-500/10 text-amber-400 px-4 py-1.5 text-sm font-medium backdrop-blur-sm"
+          >
+            <Sparkles className="w-3.5 h-3.5 mr-1.5" />
+            {t('trusted_by.badge')}
+          </Badge>
+          
+          {/* Título principal */}
+          <h2 className="text-center text-lg md:text-xl lg:text-2xl font-bold text-white/95 uppercase tracking-wide leading-relaxed max-w-4xl mx-auto">
+            {t('trusted_by.title')}
+          </h2>
+          
+          {/* Separador dorado decorativo */}
+          <div className="flex items-center gap-3 mt-2">
+            <div className="w-12 md:w-20 h-px bg-gradient-to-r from-transparent to-amber-500/60" />
+            <div className="w-2 h-2 rounded-full bg-amber-500/80" />
+            <div className="w-12 md:w-20 h-px bg-gradient-to-l from-transparent to-amber-500/60" />
+          </div>
+        </div>
       </div>
       
+      {/* Carrusel de logos */}
       <div className="relative">
-        {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-muted/30 to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-muted/30 to-transparent z-10 pointer-events-none" />
+        {/* Fade edges para fondo oscuro */}
+        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
         
         <div className="logo-track flex items-center gap-12 md:gap-16 lg:gap-20">
           {/* Duplicate logos for infinite loop effect */}
@@ -57,11 +83,14 @@ export default function TrustedByLogos() {
               src={logo.src} 
               alt={logo.alt}
               loading="lazy"
-              className="h-12 md:h-16 lg:h-20 w-auto flex-shrink-0 opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0"
+              className="h-14 md:h-18 lg:h-20 w-auto flex-shrink-0 logo-glow transition-all duration-300"
             />
           ))}
         </div>
       </div>
+      
+      {/* Borde inferior dorado */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-500/60 to-transparent" />
     </section>
   );
 }

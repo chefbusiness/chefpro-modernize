@@ -362,4 +362,14 @@
       transform: translateX(-50%);
     }
   }
+
+  /* Logo glow effect for dark backgrounds */
+  .logo-glow {
+    filter: brightness(1.1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+  }
+
+  .logo-glow:hover {
+    filter: brightness(1.25) drop-shadow(0 0 15px rgba(251, 191, 36, 0.5));
+    transform: scale(1.1);
+  }
 }
