@@ -1,23 +1,17 @@
 
 
-# Plan: Arreglar NH Hotels + Agregar 6 Nuevos Logos
+# Plan: Agregar 6 Nuevos Logos al Carrusel
 
-## Problema Identificado
+## Logos Recibidos
 
-El archivo `nh-hotels.png` parece estar corrupto o no se copió correctamente. La solución es usar el archivo alternativo `nh-hotels-2.png` que proporcionaste.
-
----
-
-## Logos a Agregar
-
-| # | Archivo | Nombre de marca |
-|---|---------|-----------------|
-| 1 | `fierro.png` | Fierro by Carito y Germán |
-| 2 | `stillroom.png` | Stillroom - El Arte de lo Invisible |
-| 3 | `qatar-arways.png` | Qatar Airways |
-| 4 | `singapore-airlines.png` | Singapore Airlines |
-| 5 | `wyndham-hotels.png` | Wyndham Hotels & Resorts |
-| 6 | `accor-hotels.png` | Accor Hotels |
+| # | Archivo | Nombre de marca | Categoría |
+|---|---------|-----------------|-----------|
+| 1 | `taste-1973.png` | 1973 Taste Restaurant | Restaurante |
+| 2 | `villa-cortes-hotel.png` | Villa Cortés Deluxe Hotel | Hotel |
+| 3 | `hecanca-canarias.png` | Hecansa Hoteles Escuela de Canarias | Escuela/Hotel |
+| 4 | `basque-culinary-center.png` | Basque Culinary Center | Escuela Culinaria |
+| 5 | `venture-group-tenerife.png` | Venture Group Tenerife | Grupo Empresarial |
+| 6 | `labe.png` | Lab-e | Laboratorio/Innovación |
 
 ---
 
@@ -25,13 +19,12 @@ El archivo `nh-hotels.png` parece estar corrupto o no se copió correctamente. L
 
 Copiar a `public/logos/`:
 
-1. `nh-hotels-2.png` → Reemplazar `nh-hotels.png` (o usar nombre nuevo)
-2. `fierro.png`
-3. `stillroom.png`
-4. `qatar-airways.png` (corregir nombre del typo)
-5. `singapore-airlines.png`
-6. `wyndham-hotels.png`
-7. `accor-hotels.png`
+1. `taste-1973.png`
+2. `villa-cortes-hotel.png`
+3. `hecansa-canarias.png`
+4. `basque-culinary-center.png`
+5. `venture-group-tenerife.png`
+6. `labe.png`
 
 ---
 
@@ -39,17 +32,17 @@ Copiar a `public/logos/`:
 
 **Archivo:** `src/components/TrustedByLogos.tsx`
 
-Actualizar el array de logos:
+Array actualizado con categorías organizadas:
 
 ```tsx
 const logos = [
   // Hoteles
   { src: '/logos/melia-hotels.png', alt: 'Meliá Hotels International' },
-  { src: '/logos/nh-hotels.png', alt: 'NH Hotels' },  // Arreglado
   { src: '/logos/marriot-hotels.png', alt: 'Marriott International' },
   { src: '/logos/intercontinental-hotels.png', alt: 'InterContinental Hotels & Resorts' },
   { src: '/logos/wyndham-hotels.png', alt: 'Wyndham Hotels & Resorts' },
   { src: '/logos/accor-hotels.png', alt: 'Accor Hotels' },
+  { src: '/logos/villa-cortes-hotel.png', alt: 'Villa Cortés Deluxe Hotel' },
   
   // Aerolíneas
   { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
@@ -58,6 +51,15 @@ const logos = [
   // Restaurantes/Bares
   { src: '/logos/fierro.png', alt: 'Fierro by Carito y Germán' },
   { src: '/logos/stillroom.png', alt: 'Stillroom - El Arte de lo Invisible' },
+  { src: '/logos/taste-1973.png', alt: '1973 Taste Restaurant' },
+  
+  // Escuelas & Formación
+  { src: '/logos/hecansa-canarias.png', alt: 'Hecansa Hoteles Escuela de Canarias' },
+  { src: '/logos/basque-culinary-center.png', alt: 'Basque Culinary Center' },
+  
+  // Grupos Empresariales & Innovación
+  { src: '/logos/venture-group-tenerife.png', alt: 'Venture Group Tenerife' },
+  { src: '/logos/labe.png', alt: 'Lab-e' },
 ];
 ```
 
@@ -65,8 +67,8 @@ const logos = [
 
 ## Total de Logos Después del Cambio
 
-- **Antes:** 4 logos (con 1 roto)
-- **Después:** 10 logos funcionando
+- **Antes:** 9 logos
+- **Después:** 15 logos
 
 ---
 
@@ -74,6 +76,6 @@ const logos = [
 
 | Tipo | Archivo |
 |------|---------|
-| Copiar | 7 archivos a `public/logos/` |
+| Copiar | 6 archivos nuevos a `public/logos/` |
 | Modificar | `src/components/TrustedByLogos.tsx` |
 
