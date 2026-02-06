@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
 const logos = [
-  // Hoteles
+  // Hoteles & Wellness
   { src: '/logos/melia-hotels.png', alt: 'Meliá Hotels International' },
   { src: '/logos/marriot-hotels.png', alt: 'Marriott International' },
   { src: '/logos/intercontinental-hotels.png', alt: 'InterContinental Hotels & Resorts' },
   { src: '/logos/wyndham-hotels.png', alt: 'Wyndham Hotels & Resorts' },
   { src: '/logos/accor-hotels.png', alt: 'Accor Hotels' },
   { src: '/logos/villa-cortes-hotel.png', alt: 'Villa Cortés Deluxe Hotel' },
+  { src: '/logos/shawellness.png', alt: 'SHA Masters of Longevity' },
   // Aerolíneas
   { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
   { src: '/logos/singapore-airlines.png', alt: 'Singapore Airlines' },
@@ -19,9 +20,12 @@ const logos = [
   // Grupos Hostelería & Restauración
   { src: '/logos/amrest-group.png', alt: 'AmRest Group' },
   { src: '/logos/restaurant-brands-europe.png', alt: 'Restaurant Brands Europe' },
+  { src: '/logos/tragaluz.png', alt: 'Grupo Tragaluz' },
+  { src: '/logos/la-maquina.png', alt: 'La Máquina Grupo de Restauración' },
   // Escuelas & Formación
   { src: '/logos/hecansa-canarias.png', alt: 'Hecansa Hoteles Escuela de Canarias' },
   { src: '/logos/basque-culinary-center.png', alt: 'Basque Culinary Center' },
+  { src: '/logos/hosteleria-leioa.png', alt: 'Ostalaritza Leioa Hostelería' },
   // Alimentación & Proveedores
   { src: '/logos/albi-alimentacion.png', alt: 'Albi Alimentación & Bienestar' },
   // Grupos Empresariales & Innovación
