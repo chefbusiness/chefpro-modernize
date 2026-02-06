@@ -34,7 +34,7 @@ export default function ModernHero() {
     <section id="inicio" className="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
       <HeroSocialProof />
       
-      <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
+      <h1 className="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
         {t('hero.title_prefix')}{" "}
         <span 
           className={`inline-block transition-all duration-300 dynamic-hero-text ${
