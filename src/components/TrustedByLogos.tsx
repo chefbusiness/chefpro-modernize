@@ -80,13 +80,13 @@ export default function TrustedByLogos() {
           {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
             <div 
               key={i}
-              className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-3 md:p-4 logo-glow transition-all duration-300"
+              className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5 logo-glow transition-all duration-300"
             >
               <img 
                 src={logo.src} 
                 alt={logo.alt}
                 loading="lazy"
-                className="h-10 md:h-12 lg:h-14 w-auto object-contain"
+                className="h-14 md:h-16 lg:h-20 w-auto object-contain"
               />
             </div>
           ))}
