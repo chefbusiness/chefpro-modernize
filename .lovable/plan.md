@@ -1,129 +1,70 @@
 
 
-# Plan: Mejorar Social Proof con Perfiles Diversos y Layout Centrado
+# Plan: Aumentar Tamaño del H1 en Móvil y Tablet
 
-## Resumen de Cambios
+## Problema Actual
 
-1. **Reducir el contador** de 3.748.149 a **48.149** (numero mas razonable)
-2. **Aumentar avatares de 5 a 8** con perfiles diversos de la industria
-3. **Centrar visualmente** el social proof en desktop
-4. **Generar nuevos avatares** representando diferentes profesionales
+El H1 del Hero tiene tamaños que se ven pequeños en móvil y tablet:
 
----
+| Breakpoint | Clase Actual | Tamaño |
+|------------|--------------|--------|
+| Móvil (<640px) | `text-3xl` | 30px |
+| Tablet (≥768px) | `md:text-5xl` | 48px |
+| Desktop (≥1024px) | `lg:text-6xl` | 60px |
 
-## Nuevos Perfiles a Generar (8 avatares diversos)
+## Propuesta de Nuevos Tamaños
 
-| # | Archivo | Perfil | Descripcion |
-|---|---------|--------|-------------|
-| 1 | `avatar-1.jpg` | Bartender hombre | Profesional de bar con chaleco/camisa |
-| 2 | `avatar-2.jpg` | Chef mujer | Cocinera profesional |
-| 3 | `avatar-3.jpg` | Gerente restaurante | Hombre con camisa formal |
-| 4 | `avatar-4.jpg` | Pastelera | Mujer con delantal de reposteria |
-| 5 | `avatar-5.jpg` | Dueno restaurante | Persona con aspecto ejecutivo/casual |
-| 6 | `avatar-6.jpg` | Bartender mujer | Profesional de cocteleria |
-| 7 | `avatar-7.jpg` | Panadero | Hombre con delantal/uniforme panaderia |
-| 8 | `avatar-8.jpg` | Chef senior | Chef experimentado |
+| Breakpoint | Nueva Clase | Nuevo Tamaño |
+|------------|-------------|--------------|
+| Móvil (<640px) | `text-4xl` | 36px (+6px) |
+| Tablet (≥768px) | `md:text-5xl` | 48px (sin cambio) |
+| Tablet/Desktop intermedio (≥768px) | `md:text-6xl` | 60px (+12px) |
+| Desktop (≥1024px) | `lg:text-7xl` | 72px (+12px) |
 
 ---
 
-## Cambios en HeroSocialProof.tsx
+## Cambio en ModernHero.tsx
 
-### Estructura Visual Mejorada
-
-```text
-              [Avatar Stack - 8 perfiles superpuestos]
-              ★★★★☆  48.149 Soluciones y recetas generadas
-```
-
-### Cambios Especificos
-
-1. **Contador**: `3748149` → `48149`
-2. **Layout centrado**: Cambiar de `flex-row` a layout apilado verticalmente centrado en todas las resoluciones
-3. **Avatares**: Importar 8 avatares en lugar de 5
-4. **Alt text**: Cambiar de "Chef X" a "Professional X" para reflejar diversidad
-
-### Codigo Actualizado
-
+### Antes (línea 37):
 ```tsx
-// 8 avatares diversos
-const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8];
-
-return (
-  <div className="flex flex-col items-center gap-2 mb-4">
-    {/* Avatares centrados */}
-    <div className="flex -space-x-3 justify-center">
-      {avatars.map((avatar, i) => (
-        <Avatar key={i} className="...">
-          <AvatarImage src={avatar} alt={`Professional ${i + 1}`} />
-        </Avatar>
-      ))}
-    </div>
-    
-    {/* Estrellas y contador centrados */}
-    <div className="flex flex-col items-center gap-0.5">
-      <div className="flex items-center gap-0.5">
-        {/* 5 estrellas */}
-      </div>
-      <span className="text-sm text-muted-foreground">
-        <span className="font-bold">{formatNumber(48149)}</span>
-        {t('hero.social_proof_label')}
-      </span>
-    </div>
-  </div>
-);
+<h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
 ```
 
----
-
-## Archivos a Modificar
-
-1. **Generar con IA**: 8 avatares profesionales diversos
-   - `src/assets/avatars/avatar-1.jpg` (Bartender hombre)
-   - `src/assets/avatars/avatar-2.jpg` (Chef mujer)
-   - `src/assets/avatars/avatar-3.jpg` (Gerente restaurante)
-   - `src/assets/avatars/avatar-4.jpg` (Pastelera)
-   - `src/assets/avatars/avatar-5.jpg` (Dueno restaurante)
-   - `src/assets/avatars/avatar-6.jpg` (Bartender mujer)
-   - `src/assets/avatars/avatar-7.jpg` (Panadero)
-   - `src/assets/avatars/avatar-8.jpg` (Chef senior)
-
-2. **Modificar**: `src/components/HeroSocialProof.tsx`
-   - Importar 8 avatares
-   - Cambiar contador a 48.149
-   - Centrar layout verticalmente
-   - Actualizar alt text generico
-
-3. **Eliminar**: Avatares antiguos de chef (opcional, o mantener para otros usos)
+### Después:
+```tsx
+<h1 className="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
+```
 
 ---
 
 ## Resultado Visual Esperado
 
-### Desktop
-```text
-                    [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
-                           ★★★★★
-                    48.149 Soluciones y recetas generadas
-                    
-                    Transforma tu [Restaurante] con AI Chef Pro
+### Móvil (antes → después)
+```
+30px → 36px (+20% más grande)
 ```
 
-### Mobile/Tablet (igual, centrado)
-```text
-        [👔][👩‍🍳][👨‍💼][👩‍🍰][🧑‍💼][🍸][👨‍🍳][👨‍🍳]
-               ★★★★★
-        48.149 Soluciones y recetas generadas
-        
-        Transforma tu [Restaurante]
-            con AI Chef Pro
+### Tablet (antes → después)
+```
+48px → 60px (+25% más grande)
+```
+
+### Desktop (se mantiene bien, pero crece proporcionalmente)
+```
+60px → 72px (+20% más grande)
 ```
 
 ---
 
-## Beneficios
+## Archivo a Modificar
 
-- **Numero mas creible**: 48.149 vs 3.7 millones
-- **Representacion inclusiva**: No solo chefs, incluye bartenders, gerentes, duenos
-- **Layout consistente**: Centrado en todas las resoluciones
-- **Mejor uso del espacio**: Aprovecha el espacio entre header y contenido en desktop
+1. `src/components/ModernHero.tsx` - Línea 37: Actualizar clases del H1
+
+---
+
+## Notas Técnicas
+
+- Se usa la escala de Tailwind: `text-4xl` (2.25rem), `text-6xl` (3.75rem), `text-7xl` (4.5rem)
+- El `leading-tight` y `tracking-tighter` se mantienen para legibilidad
+- El `text-balance` ayuda a distribuir el texto uniformemente
 
