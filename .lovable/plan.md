@@ -1,70 +1,43 @@
 
 
-# Plan: Aumentar Tamaño del H1 en Móvil y Tablet
+# Plan: Aumentar Tamaño de Logos un 30%
 
-## Problema Actual
+## Cambios a Realizar
 
-El H1 del Hero tiene tamaños que se ven pequeños en móvil y tablet:
+### Archivo: `src/components/TrustedByLogos.tsx`
 
-| Breakpoint | Clase Actual | Tamaño |
-|------------|--------------|--------|
-| Móvil (<640px) | `text-3xl` | 30px |
-| Tablet (≥768px) | `md:text-5xl` | 48px |
-| Desktop (≥1024px) | `lg:text-6xl` | 60px |
+**Tamaños actuales vs nuevos:**
 
-## Propuesta de Nuevos Tamaños
+| Breakpoint | Actual | Nuevo (+30%) |
+|------------|--------|--------------|
+| Mobile | `h-10` (40px) | `h-14` (56px) |
+| Tablet (md) | `h-12` (48px) | `h-16` (64px) |
+| Desktop (lg) | `h-14` (56px) | `h-20` (80px) |
 
-| Breakpoint | Nueva Clase | Nuevo Tamaño |
-|------------|-------------|--------------|
-| Móvil (<640px) | `text-4xl` | 36px (+6px) |
-| Tablet (≥768px) | `md:text-5xl` | 48px (sin cambio) |
-| Tablet/Desktop intermedio (≥768px) | `md:text-6xl` | 60px (+12px) |
-| Desktop (≥1024px) | `lg:text-7xl` | 72px (+12px) |
+**Padding del contenedor (proporcional):**
 
----
+| Breakpoint | Actual | Nuevo |
+|------------|--------|-------|
+| Mobile | `p-3` | `p-4` |
+| Tablet/Desktop (md) | `p-4` | `p-5` |
 
-## Cambio en ModernHero.tsx
+## Código a Modificar
 
-### Antes (línea 37):
-```tsx
-<h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1] text-balance">
+**Línea ~80-87:**
+
+```jsx
+// Antes
+<div className="... p-3 md:p-4 ...">
+  <img className="h-10 md:h-12 lg:h-14 ..." />
+</div>
+
+// Después
+<div className="... p-4 md:p-5 ...">
+  <img className="h-14 md:h-16 lg:h-20 ..." />
+</div>
 ```
 
-### Después:
-```tsx
-<h1 className="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
-```
+## Resultado Visual
 
----
-
-## Resultado Visual Esperado
-
-### Móvil (antes → después)
-```
-30px → 36px (+20% más grande)
-```
-
-### Tablet (antes → después)
-```
-48px → 60px (+25% más grande)
-```
-
-### Desktop (se mantiene bien, pero crece proporcionalmente)
-```
-60px → 72px (+20% más grande)
-```
-
----
-
-## Archivo a Modificar
-
-1. `src/components/ModernHero.tsx` - Línea 37: Actualizar clases del H1
-
----
-
-## Notas Técnicas
-
-- Se usa la escala de Tailwind: `text-4xl` (2.25rem), `text-6xl` (3.75rem), `text-7xl` (4.5rem)
-- El `leading-tight` y `tracking-tighter` se mantienen para legibilidad
-- El `text-balance` ayuda a distribuir el texto uniformemente
+Los logos serán aproximadamente 30-40% más grandes, manteniendo proporciones elegantes con el padding aumentado del contenedor.
 

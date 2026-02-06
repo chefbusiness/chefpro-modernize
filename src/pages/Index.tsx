@@ -1,5 +1,6 @@
 import ModernHeader from '@/components/ModernHeader';
 import ModernHero from '@/components/ModernHero';
+import TrustedByLogos from '@/components/TrustedByLogos';
 import ScreenshotSection from '@/components/ScreenshotSection';
 import SocialProofStrip from '@/components/SocialProofStrip';
 import AppsCategories from '@/components/AppsCategories';
@@ -34,6 +35,7 @@ const Index = () => {
       <ModernHeader />
       <main>
         <ModernHero />
+        <TrustedByLogos />
         <ScreenshotSection />
         <SocialProofStrip />
         <AppsCategories />
