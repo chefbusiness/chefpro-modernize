@@ -11,13 +11,19 @@ const logos = [
   // Aerolíneas
   { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
   { src: '/logos/singapore-airlines.png', alt: 'Singapore Airlines' },
-  // Restaurantes/Bares
+  // Restaurantes/Bares/Chefs
   { src: '/logos/fierro.png', alt: 'Fierro by Carito y Germán' },
   { src: '/logos/stillroom.png', alt: 'Stillroom - El Arte de lo Invisible' },
   { src: '/logos/taste-1973.png', alt: '1973 Taste Restaurant' },
+  { src: '/logos/grupo-dani-garcia.png', alt: 'Grupo Dani García' },
+  // Grupos Hostelería & Restauración
+  { src: '/logos/amrest-group.png', alt: 'AmRest Group' },
+  { src: '/logos/restaurant-brands-europe.png', alt: 'Restaurant Brands Europe' },
   // Escuelas & Formación
   { src: '/logos/hecansa-canarias.png', alt: 'Hecansa Hoteles Escuela de Canarias' },
   { src: '/logos/basque-culinary-center.png', alt: 'Basque Culinary Center' },
+  // Alimentación & Proveedores
+  { src: '/logos/albi-alimentacion.png', alt: 'Albi Alimentación & Bienestar' },
   // Grupos Empresariales & Innovación
   { src: '/logos/venture-group-tenerife.png', alt: 'Venture Group Tenerife' },
   { src: '/logos/labe.png', alt: 'Lab-e' },
