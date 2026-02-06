@@ -7,12 +7,20 @@ const logos = [
   { src: '/logos/intercontinental-hotels.png', alt: 'InterContinental Hotels & Resorts' },
   { src: '/logos/wyndham-hotels.png', alt: 'Wyndham Hotels & Resorts' },
   { src: '/logos/accor-hotels.png', alt: 'Accor Hotels' },
+  { src: '/logos/villa-cortes-hotel.png', alt: 'Villa Cortés Deluxe Hotel' },
   // Aerolíneas
   { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
   { src: '/logos/singapore-airlines.png', alt: 'Singapore Airlines' },
   // Restaurantes/Bares
   { src: '/logos/fierro.png', alt: 'Fierro by Carito y Germán' },
   { src: '/logos/stillroom.png', alt: 'Stillroom - El Arte de lo Invisible' },
+  { src: '/logos/taste-1973.png', alt: '1973 Taste Restaurant' },
+  // Escuelas & Formación
+  { src: '/logos/hecansa-canarias.png', alt: 'Hecansa Hoteles Escuela de Canarias' },
+  { src: '/logos/basque-culinary-center.png', alt: 'Basque Culinary Center' },
+  // Grupos Empresariales & Innovación
+  { src: '/logos/venture-group-tenerife.png', alt: 'Venture Group Tenerife' },
+  { src: '/logos/labe.png', alt: 'Lab-e' },
 ];
 
 export default function TrustedByLogos() {
