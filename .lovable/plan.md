@@ -1,81 +1,56 @@
 
+# Plan: Contador Dinamico de Soluciones Generadas
 
-# Plan: Corregir Paginas Legales en Todos los Idiomas
+## Concepto
 
-## Problema
+Convertir el numero estatico "48.149" en un contador que crece automaticamente cada dia, sumando entre 60 y 80 unidades diarias de forma determinista (mismo numero para todos los visitantes en el mismo dia).
 
-Las 4 paginas legales (Legal, Privacy, Terms, Cookies) muestran las claves de traduccion en crudo (ej: "pages.terms.heading") en lugar del contenido real. Esto ocurre porque los archivos de traduccion solo tienen las claves SEO (`seo_title`, `seo_description`, `seo_keywords`) pero faltan las claves `heading` y `content_paragraphs` que los componentes intentan renderizar.
+## Logica
 
-Ademas, en `es.json` hay una clave `"pages"` duplicada (lineas 680 y 1151), lo que causa que la segunda sobreescriba la primera en JSON.
+Se usara una fecha base (12 de febrero de 2026) con el valor inicial de 48.149. Cada dia transcurrido desde esa fecha sumara una cantidad pseudo-aleatoria determinista entre 60 y 80, calculada a partir del dia del ano (para que todos los usuarios vean el mismo numero en el mismo dia).
 
-## Cambios a Realizar
+```
+Fecha base: 2026-02-12
+Valor base: 48.149
+Por cada dia transcurrido: +60 a +80 (seeded por fecha)
+```
 
-### 1. Corregir clave duplicada en `es.json`
+Ejemplo: el 13 de febrero mostraria ~48.219, el 14 ~48.289, etc.
 
-Fusionar las dos claves `"pages"` en una sola para evitar perdida de datos (la seccion de mentoria en linea 680 se pierde actualmente).
+## Cambios
 
-### 2. Agregar contenido legal a los 7 archivos de idioma
+### Archivo: `src/components/HeroSocialProof.tsx`
 
-Para cada idioma (es, en, fr, de, it, pt, nl), agregar dentro de `pages.legal`, `pages.privacy`, `pages.terms` y `pages.cookies`:
+Agregar una funcion `getDynamicCount()` que:
 
-```json
-{
-  "heading": "Titulo de la pagina",
-  "content_paragraphs": [
-    "Parrafo 1 con contenido legal...",
-    "Parrafo 2...",
-    "Parrafo 3..."
-  ]
+1. Calcula los dias transcurridos desde la fecha base (2026-02-12)
+2. Para cada dia, genera un incremento determinista entre 60 y 80 usando un hash simple del dia
+3. Suma todos los incrementos al valor base (48149)
+4. Reemplaza el `formatNumber(48149)` estatico por `formatNumber(getDynamicCount())`
+
+### Seccion tecnica
+
+```typescript
+function getDynamicCount(): number {
+  const BASE_DATE = new Date('2026-02-12');
+  const BASE_COUNT = 48149;
+  const today = new Date();
+  
+  // Dias transcurridos
+  const diffTime = today.getTime() - BASE_DATE.getTime();
+  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+  
+  // Sumar incremento determinista por cada dia
+  let total = BASE_COUNT;
+  for (let i = 1; i <= diffDays; i++) {
+    // Seed basado en el dia para que sea consistente
+    const seed = (i * 7 + 13) % 21; // genera 0-20
+    const dailyIncrement = 60 + seed; // rango 60-80
+    total += dailyIncrement;
+  }
+  
+  return total;
 }
 ```
 
-### 3. Contenido por pagina
-
-#### Legal (Aviso Legal)
-- Identificacion del titular (AI Chef Pro / Chefbusiness Consulting SL)
-- Domicilio social, CIF, datos de contacto
-- Propiedad intelectual
-- Legislacion aplicable
-
-#### Privacidad (Politica de Privacidad)
-- Responsable del tratamiento
-- Datos recogidos y finalidad
-- Base legal (RGPD)
-- Derechos del usuario (acceso, rectificacion, supresion)
-- Periodo de conservacion
-- Contacto DPO
-
-#### Terminos (Terminos de Servicio)
-- Aceptacion de condiciones
-- Descripcion del servicio
-- Planes y suscripciones
-- Cancelacion y reembolsos
-- Limitacion de responsabilidad
-- Modificaciones
-
-#### Cookies (Politica de Cookies)
-- Que son las cookies
-- Tipos utilizadas (necesarias, analiticas, marketing)
-- Como gestionar cookies
-- Cookies de terceros
-
-### 4. Archivos a modificar
-
-| Archivo | Cambio |
-|---------|--------|
-| `src/i18n/locales/es.json` | Fusionar `pages` duplicado + agregar heading/content_paragraphs a legal, privacy, terms, cookies |
-| `src/i18n/locales/en.json` | Agregar heading/content_paragraphs (en ingles) |
-| `src/i18n/locales/fr.json` | Agregar heading/content_paragraphs (en frances) |
-| `src/i18n/locales/de.json` | Agregar heading/content_paragraphs (en aleman) |
-| `src/i18n/locales/it.json` | Agregar heading/content_paragraphs (en italiano) |
-| `src/i18n/locales/pt.json` | Agregar heading/content_paragraphs (en portugues) |
-| `src/i18n/locales/nl.json` | Agregar heading/content_paragraphs (en holandes) |
-
-### 5. Sin cambios en componentes
-
-Los componentes `Legal.tsx`, `Privacy.tsx`, `Terms.tsx` y `Cookies.tsx` ya estan correctamente implementados -- solo falta el contenido en los JSON de traduccion.
-
-## Resultado
-
-Las 4 paginas legales mostraran contenido real traducido profesionalmente en los 7 idiomas, con informacion legal apropiada para una plataforma SaaS con sede en Espana (cumplimiento RGPD/LSSI).
-
+No se requiere base de datos ni backend: el calculo es puramente frontend y determinista (todos los visitantes ven el mismo numero el mismo dia).
