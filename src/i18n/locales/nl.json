@@ -1231,22 +1231,65 @@
     "legal": {
       "seo_title": "Juridische Kennisgeving - AI Chef Pro | Juridische Informatie",
       "seo_description": "Juridische informatie over AI Chef Pro. Gebruiksvoorwaarden, intellectueel eigendom en toepasselijke wetgeving.",
-      "seo_keywords": "ai chef pro juridische kennisgeving, juridische voorwaarden, juridische informatie"
+      "seo_keywords": "ai chef pro juridische kennisgeving, juridische voorwaarden, juridische informatie",
+      "heading": "Juridische Kennisgeving",
+      "content_paragraphs": [
+        "<h2>1. Algemene Informatie</h2><p><strong>Website-eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact E-mail:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
+        "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat tools en applicaties biedt voor culinaire professionals. Onze diensten omvatten meer dan 55 gespecialiseerde applicaties van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
+        "<h2>3. Intellectueel Eigendom</h2><p>Alle inhoud, merken, logo's, ontwerpen, broncodes, databases en andere elementen van AI Chef Pro zijn beschermd door wetten op intellectueel eigendom. Reproductie, distributie of openbare communicatie zonder uitdrukkelijke toestemming is verboden.</p>",
+        "<h2>4. Aansprakelijkheid voor Inhoud</h2><p>AI Chef Pro behoudt zich het recht voor om inhoud zonder voorafgaande kennisgeving te wijzigen, bij te werken of te verwijderen. Wij garanderen niet de beschikbaarheid, continuïteit of onfeilbaarheid van de dienst.</p>",
+        "<h2>5. Externe Links</h2><p>Onze website kan links naar websites van derden bevatten. AI Chef Pro is niet verantwoordelijk voor de inhoud, het privacybeleid of de praktijken van deze externe sites.</p>",
+        "<h2>6. Toepasselijk Recht</h2><p>Deze juridische kennisgeving wordt beheerst door Spaans recht. Bij geschillen onderwerpen de partijen zich aan de bevoegde rechtbanken overeenkomstig de geldende wetgeving.</p>",
+        "<h2>7. Contact</h2><p>Voor juridische vragen of klachten kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "privacy": {
       "seo_title": "Privacybeleid - AI Chef Pro | Gegevensbescherming",
       "seo_description": "Privacybeleid van AI Chef Pro. Hoe wij uw persoonlijke gegevens beschermen volgens AVG.",
-      "seo_keywords": "privacybeleid, gegevensbescherming, avg ai chef pro"
+      "seo_keywords": "privacybeleid, gegevensbescherming, avg ai chef pro",
+      "heading": "Privacybeleid",
+      "content_paragraphs": [
+        "<h2>1. Verzamelde Informatie</h2><p>Bij AI Chef Pro verzamelen we informatie wanneer u interageert met onze culinaire AI-diensten. Dit omvat registratiegegevens, gastronomische voorkeuren en technische gebruiksinformatie.</p>",
+        "<h2>2. Gebruik van Informatie</h2><p>Wij gebruiken uw informatie om uw culinaire ervaring te personaliseren, onze AI-tools te verbeteren, technische ondersteuning te bieden en nieuwe gastronomische functies te ontwikkelen.</p>",
+        "<h2>3. Gegevensbescherming</h2><p>Wij implementeren technische en organisatorische beveiligingsmaatregelen om uw persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging.</p>",
+        "<h2>4. Delen van Informatie</h2><p>Wij verkopen, verhandelen of dragen uw persoonlijke gegevens niet over aan derden, tenzij nodig voor het leveren van onze diensten of wanneer de wet dit vereist.</p>",
+        "<h2>5. Uw Rechten</h2><p>U heeft het recht op toegang, rectificatie, verwijdering en overdraagbaarheid van uw persoonlijke gegevens. U kunt ook bezwaar maken tegen verwerking door contact met ons op te nemen.</p>",
+        "<h2>6. Cookies</h2><p>Wij gebruiken cookies om de functionaliteit van onze culinaire AI-applicaties te verbeteren. U kunt uw cookievoorkeuren op elk moment beheren.</p>",
+        "<h2>7. Contact</h2><p>Voor vragen over dit privacybeleid kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "cookies": {
       "seo_title": "Cookiebeleid - AI Chef Pro | Cookiebeheer",
       "seo_description": "Informatie over cookies gebruikt in AI Chef Pro. Configureer uw privacyvoorkeuren.",
-      "seo_keywords": "cookiebeleid, cookiebeheer, privacyvoorkeuren"
+      "seo_keywords": "cookiebeleid, cookiebeheer, privacyvoorkeuren",
+      "heading": "Cookiebeleid",
+      "content_paragraphs": [
+        "<h2>1. Wat Zijn Cookies?</h2><p>Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u AI Chef Pro bezoekt. Ze helpen ons uw voorkeuren te onthouden en uw ervaring met onze culinaire AI-tools te verbeteren.</p>",
+        "<h2>2. Soorten Cookies</h2><p><strong>Essentiële cookies:</strong> Nodig voor de basisfunctie van onze AI-applicaties.</p><p><strong>Voorkeurscookies:</strong> Onthouden uw gepersonaliseerde culinaire instellingen.</p><p><strong>Analytische cookies:</strong> Helpen ons te begrijpen hoe u onze tools gebruikt.</p>",
+        "<h2>3. Doel van Cookies</h2><p>Wij gebruiken cookies om uw gastronomische ervaring te personaliseren, uw favoriete recepten te onthouden en het gebruik van onze applicaties te analyseren om onze diensten te verbeteren.</p>",
+        "<h2>4. Cookiebeheer</h2><p>U kunt uw browser configureren om cookies te weigeren, hoewel dit de functionaliteit van sommige van onze AI-tools kan beïnvloeden.</p>",
+        "<h2>5. Cookies van Derden</h2><p>Sommige cookies kunnen worden ingesteld door diensten van derden die wij gebruiken voor analytics en aanvullende functies.</p>",
+        "<h2>6. Updates</h2><p>Dit cookiebeleid kan periodiek worden bijgewerkt. Wij informeren u over significante wijzigingen.</p>",
+        "<h2>7. Contact</h2><p>Voor vragen over ons gebruik van cookies kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "terms": {
       "seo_title": "Servicevoorwaarden - AI Chef Pro | Gebruiksvoorwaarden",
       "seo_description": "Algemene voorwaarden van AI Chef Pro. Rechten, verplichtingen en abonnementsbeleid.",
-      "seo_keywords": "servicevoorwaarden, gebruiksvoorwaarden, abonnementsbeleid"
+      "seo_keywords": "servicevoorwaarden, gebruiksvoorwaarden, abonnementsbeleid",
+      "heading": "Servicevoorwaarden",
+      "content_paragraphs": [
+        "<h2>1. Aanvaarding van Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, aanvaardt u deze voorwaarden. Als u het niet eens bent met enig deel van deze voorwaarden, moet u onze culinaire AI-diensten niet gebruiken.</p>",
+        "<h2>2. Dienstbeschrijving</h2><p>AI Chef Pro is een AI-platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor culinaire professionals, waaronder culinaire creativiteit, wereldwijde kookboeken en bedrijfsbeheer.</p>",
+        "<h2>3. Registratie en Gebruikersaccount</h2><p>Om toegang te krijgen tot bepaalde functies, moet u een account aanmaken met nauwkeurige en actuele informatie. U bent verantwoordelijk voor het vertrouwelijk houden van uw account en wachtwoord.</p>",
+        "<h2>4. Toegestaan Gebruik</h2><p>U mag AI Chef Pro gebruiken voor legitieme professionele gastronomische doeleinden. Gebruik voor illegale of schadelijke activiteiten is verboden.</p>",
+        "<h2>5. Intellectueel Eigendom</h2><p>Alle inhoud, merken en technologieën van AI Chef Pro zijn eigendom van hun respectieve houders. Door AI gegenereerde recepten kunnen worden gebruikt volgens uw abonnement.</p>",
+        "<h2>6. Abonnementen en Betalingen</h2><p>Wij bieden verschillende abonnementsplannen. Betalingen worden veilig verwerkt en verlengingen zijn automatisch.</p>",
+        "<h2>7. Beperkingen en Aansprakelijkheid</h2><p>AI Chef Pro wordt 'zoals het is' geleverd. Wij garanderen niet dat de dienst foutloos of ononderbroken is.</p>",
+        "<h2>8. Beëindiging</h2><p>Wij kunnen uw account opschorten of beëindigen bij schending van deze voorwaarden. U kunt uw abonnement op elk moment opzeggen.</p>",
+        "<h2>9. Wijzigingen</h2><p>Wij behouden ons het recht voor om deze voorwaarden op elk moment te wijzigen. Wij informeren u over belangrijke wijzigingen.</p>",
+        "<h2>10. Contact</h2><p>Voor vragen over deze voorwaarden kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+      ]
     },
     "services": {
       "seo_title": "Services - AI Chef Pro | AI-oplossingen voor Gastronomie",
