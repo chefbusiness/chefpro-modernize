@@ -14,6 +14,20 @@ import avatar8 from '@/assets/avatars/avatar-8.jpg';
 
 const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, avatar8];
 
+function getDynamicCount(): number {
+  const BASE_DATE = new Date('2026-02-12');
+  const BASE_COUNT = 48149;
+  const today = new Date();
+  const diffTime = today.getTime() - BASE_DATE.getTime();
+  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+  let total = BASE_COUNT;
+  for (let i = 1; i <= diffDays; i++) {
+    const seed = (i * 7 + 13) % 21;
+    total += 60 + seed;
+  }
+  return total;
+}
+
 export default function HeroSocialProof() {
   const { t, currentLanguage } = useLanguage();
 
@@ -51,7 +65,7 @@ export default function HeroSocialProof() {
           ))}
         </div>
         <span className="text-sm text-muted-foreground">
-          <span className="font-bold text-foreground">{formatNumber(48149)}</span>{' '}
+          <span className="font-bold text-foreground">{formatNumber(getDynamicCount())}</span>{' '}
           {t('hero.social_proof_label')}
         </span>
       </div>
