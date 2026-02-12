@@ -1,43 +1,58 @@
 
 
-# Plan: Aumentar Tamaño de Logos un 30%
+# Plan: Actualizar Notificaciones de Conversion
 
-## Cambios a Realizar
+## Problema
 
-### Archivo: `src/components/TrustedByLogos.tsx`
+Los planes mostrados en las notificaciones flotantes estan desactualizados. Aparecen "Premium 15EUR" y "Pro 10EUR" que ya no existen. Ademas, faltan ciudades de paises europeos clave.
 
-**Tamaños actuales vs nuevos:**
+## 1. Actualizar Planes (todos los idiomas)
 
-| Breakpoint | Actual | Nuevo (+30%) |
-|------------|--------|--------------|
-| Mobile | `h-10` (40px) | `h-14` (56px) |
-| Tablet (md) | `h-12` (48px) | `h-16` (64px) |
-| Desktop (lg) | `h-14` (56px) | `h-20` (80px) |
+Segun el modelo de precios actual (v7), los planes reales son:
 
-**Padding del contenedor (proporcional):**
+| Plan Actual | Precio EUR | Precio USD |
+|-------------|-----------|-----------|
+| Premium Pro | 25 | 30 |
+| Premium Plus | 50 | 60 |
+| Premium Max | 95 | 115 |
+| Premium Plus Anual | 950/ano | 1150/ano |
 
-| Breakpoint | Actual | Nuevo |
-|------------|--------|-------|
-| Mobile | `p-3` | `p-4` |
-| Tablet/Desktop (md) | `p-4` | `p-5` |
+Se eliminan "Premium 15EUR" y "Pro 10EUR" que ya no existen.
 
-## Código a Modificar
+## 2. Ampliar Ciudades por Idioma
 
-**Línea ~80-87:**
+### Espanol (es) - Agregar:
+- Ciudades europeas: Paris, Roma, Lisboa, Berlin (chefs hispanohablantes en Europa)
 
-```jsx
-// Antes
-<div className="... p-3 md:p-4 ...">
-  <img className="h-10 md:h-12 lg:h-14 ..." />
-</div>
+### Ingles (en) - Agregar:
+- Mas ciudades USA: Houston, Seattle, Boston, Las Vegas, Nashville, Austin, Denver, Philadelphia
+- Ciudades de Polonia: Warsaw, Krakow
 
-// Después
-<div className="... p-4 md:p-5 ...">
-  <img className="h-14 md:h-16 lg:h-20 ..." />
-</div>
-```
+### Frances (fr) - Agregar:
+- Lille, Nantes, Rennes
 
-## Resultado Visual
+### Aleman (de) - Agregar:
+- Leipzig, Dresden, Hannover
+- Ciudades de Polonia: Warschau, Krakau
 
-Los logos serán aproximadamente 30-40% más grandes, manteniendo proporciones elegantes con el padding aumentado del contenedor.
+### Italiano (it) - Agregar:
+- Genova, Verona, Catania, Bari
+
+### Portugues (pt) - Agregar:
+- Faro, Braga, Funchal
+
+### Holandes (nl) - Agregar:
+- Breda, Maastricht, Leiden
+
+### NUEVO: Polaco no tiene idioma propio, pero se agregan ciudades polacas al ingles y aleman ya que son los idiomas que mas usarian.
+
+## 3. Archivo a Modificar
+
+`src/data/conversion-notifications.ts`:
+- Actualizar `notificationPlans` en los 7 idiomas con los 4 planes correctos
+- Ampliar `notificationCities` con las nuevas ciudades en cada idioma
+
+## Resultado
+
+Las notificaciones flotantes mostraran solo planes que existen realmente (Premium Pro 25EUR, Premium Plus 50EUR, Premium Max 95EUR, Premium Plus Anual 950EUR/ano) y tendran mayor diversidad geografica europea y norteamericana.
 
