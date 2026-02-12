@@ -1,58 +1,81 @@
 
 
-# Plan: Actualizar Notificaciones de Conversion
+# Plan: Corregir Paginas Legales en Todos los Idiomas
 
 ## Problema
 
-Los planes mostrados en las notificaciones flotantes estan desactualizados. Aparecen "Premium 15EUR" y "Pro 10EUR" que ya no existen. Ademas, faltan ciudades de paises europeos clave.
+Las 4 paginas legales (Legal, Privacy, Terms, Cookies) muestran las claves de traduccion en crudo (ej: "pages.terms.heading") en lugar del contenido real. Esto ocurre porque los archivos de traduccion solo tienen las claves SEO (`seo_title`, `seo_description`, `seo_keywords`) pero faltan las claves `heading` y `content_paragraphs` que los componentes intentan renderizar.
 
-## 1. Actualizar Planes (todos los idiomas)
+Ademas, en `es.json` hay una clave `"pages"` duplicada (lineas 680 y 1151), lo que causa que la segunda sobreescriba la primera en JSON.
 
-Segun el modelo de precios actual (v7), los planes reales son:
+## Cambios a Realizar
 
-| Plan Actual | Precio EUR | Precio USD |
-|-------------|-----------|-----------|
-| Premium Pro | 25 | 30 |
-| Premium Plus | 50 | 60 |
-| Premium Max | 95 | 115 |
-| Premium Plus Anual | 950/ano | 1150/ano |
+### 1. Corregir clave duplicada en `es.json`
 
-Se eliminan "Premium 15EUR" y "Pro 10EUR" que ya no existen.
+Fusionar las dos claves `"pages"` en una sola para evitar perdida de datos (la seccion de mentoria en linea 680 se pierde actualmente).
 
-## 2. Ampliar Ciudades por Idioma
+### 2. Agregar contenido legal a los 7 archivos de idioma
 
-### Espanol (es) - Agregar:
-- Ciudades europeas: Paris, Roma, Lisboa, Berlin (chefs hispanohablantes en Europa)
+Para cada idioma (es, en, fr, de, it, pt, nl), agregar dentro de `pages.legal`, `pages.privacy`, `pages.terms` y `pages.cookies`:
 
-### Ingles (en) - Agregar:
-- Mas ciudades USA: Houston, Seattle, Boston, Las Vegas, Nashville, Austin, Denver, Philadelphia
-- Ciudades de Polonia: Warsaw, Krakow
+```json
+{
+  "heading": "Titulo de la pagina",
+  "content_paragraphs": [
+    "Parrafo 1 con contenido legal...",
+    "Parrafo 2...",
+    "Parrafo 3..."
+  ]
+}
+```
 
-### Frances (fr) - Agregar:
-- Lille, Nantes, Rennes
+### 3. Contenido por pagina
 
-### Aleman (de) - Agregar:
-- Leipzig, Dresden, Hannover
-- Ciudades de Polonia: Warschau, Krakau
+#### Legal (Aviso Legal)
+- Identificacion del titular (AI Chef Pro / Chefbusiness Consulting SL)
+- Domicilio social, CIF, datos de contacto
+- Propiedad intelectual
+- Legislacion aplicable
 
-### Italiano (it) - Agregar:
-- Genova, Verona, Catania, Bari
+#### Privacidad (Politica de Privacidad)
+- Responsable del tratamiento
+- Datos recogidos y finalidad
+- Base legal (RGPD)
+- Derechos del usuario (acceso, rectificacion, supresion)
+- Periodo de conservacion
+- Contacto DPO
 
-### Portugues (pt) - Agregar:
-- Faro, Braga, Funchal
+#### Terminos (Terminos de Servicio)
+- Aceptacion de condiciones
+- Descripcion del servicio
+- Planes y suscripciones
+- Cancelacion y reembolsos
+- Limitacion de responsabilidad
+- Modificaciones
 
-### Holandes (nl) - Agregar:
-- Breda, Maastricht, Leiden
+#### Cookies (Politica de Cookies)
+- Que son las cookies
+- Tipos utilizadas (necesarias, analiticas, marketing)
+- Como gestionar cookies
+- Cookies de terceros
 
-### NUEVO: Polaco no tiene idioma propio, pero se agregan ciudades polacas al ingles y aleman ya que son los idiomas que mas usarian.
+### 4. Archivos a modificar
 
-## 3. Archivo a Modificar
+| Archivo | Cambio |
+|---------|--------|
+| `src/i18n/locales/es.json` | Fusionar `pages` duplicado + agregar heading/content_paragraphs a legal, privacy, terms, cookies |
+| `src/i18n/locales/en.json` | Agregar heading/content_paragraphs (en ingles) |
+| `src/i18n/locales/fr.json` | Agregar heading/content_paragraphs (en frances) |
+| `src/i18n/locales/de.json` | Agregar heading/content_paragraphs (en aleman) |
+| `src/i18n/locales/it.json` | Agregar heading/content_paragraphs (en italiano) |
+| `src/i18n/locales/pt.json` | Agregar heading/content_paragraphs (en portugues) |
+| `src/i18n/locales/nl.json` | Agregar heading/content_paragraphs (en holandes) |
 
-`src/data/conversion-notifications.ts`:
-- Actualizar `notificationPlans` en los 7 idiomas con los 4 planes correctos
-- Ampliar `notificationCities` con las nuevas ciudades en cada idioma
+### 5. Sin cambios en componentes
+
+Los componentes `Legal.tsx`, `Privacy.tsx`, `Terms.tsx` y `Cookies.tsx` ya estan correctamente implementados -- solo falta el contenido en los JSON de traduccion.
 
 ## Resultado
 
-Las notificaciones flotantes mostraran solo planes que existen realmente (Premium Pro 25EUR, Premium Plus 50EUR, Premium Max 95EUR, Premium Plus Anual 950EUR/ano) y tendran mayor diversidad geografica europea y norteamericana.
+Las 4 paginas legales mostraran contenido real traducido profesionalmente en los 7 idiomas, con informacion legal apropiada para una plataforma SaaS con sede en Espana (cumplimiento RGPD/LSSI).
 
