@@ -33,7 +33,11 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Buenos Aires", country: "Argentina", flag: "🇦🇷" },
     { city: "Santiago", country: "Chile", flag: "🇨🇱" },
     { city: "Quito", country: "Ecuador", flag: "🇪🇨" },
-    { city: "Caracas", country: "Venezuela", flag: "🇻🇪" }
+    { city: "Caracas", country: "Venezuela", flag: "🇻🇪" },
+    { city: "París", country: "Francia", flag: "🇫🇷" },
+    { city: "Roma", country: "Italia", flag: "🇮🇹" },
+    { city: "Lisboa", country: "Portugal", flag: "🇵🇹" },
+    { city: "Berlín", country: "Alemania", flag: "🇩🇪" }
   ],
   en: [
     { city: "New York", country: "USA", flag: "🇺🇸" },
@@ -41,6 +45,14 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Chicago", country: "USA", flag: "🇺🇸" },
     { city: "Miami", country: "USA", flag: "🇺🇸" },
     { city: "San Francisco", country: "USA", flag: "🇺🇸" },
+    { city: "Houston", country: "USA", flag: "🇺🇸" },
+    { city: "Seattle", country: "USA", flag: "🇺🇸" },
+    { city: "Boston", country: "USA", flag: "🇺🇸" },
+    { city: "Las Vegas", country: "USA", flag: "🇺🇸" },
+    { city: "Nashville", country: "USA", flag: "🇺🇸" },
+    { city: "Austin", country: "USA", flag: "🇺🇸" },
+    { city: "Denver", country: "USA", flag: "🇺🇸" },
+    { city: "Philadelphia", country: "USA", flag: "🇺🇸" },
     { city: "London", country: "UK", flag: "🇬🇧" },
     { city: "Manchester", country: "UK", flag: "🇬🇧" },
     { city: "Birmingham", country: "UK", flag: "🇬🇧" },
@@ -48,7 +60,9 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Vancouver", country: "Canada", flag: "🇨🇦" },
     { city: "Sydney", country: "Australia", flag: "🇦🇺" },
     { city: "Melbourne", country: "Australia", flag: "🇦🇺" },
-    { city: "Dublin", country: "Ireland", flag: "🇮🇪" }
+    { city: "Dublin", country: "Ireland", flag: "🇮🇪" },
+    { city: "Warsaw", country: "Poland", flag: "🇵🇱" },
+    { city: "Krakow", country: "Poland", flag: "🇵🇱" }
   ],
   fr: [
     { city: "Paris", country: "France", flag: "🇫🇷" },
@@ -58,6 +72,9 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Nice", country: "France", flag: "🇫🇷" },
     { city: "Strasbourg", country: "France", flag: "🇫🇷" },
     { city: "Bordeaux", country: "France", flag: "🇫🇷" },
+    { city: "Lille", country: "France", flag: "🇫🇷" },
+    { city: "Nantes", country: "France", flag: "🇫🇷" },
+    { city: "Rennes", country: "France", flag: "🇫🇷" },
     { city: "Montréal", country: "Canada", flag: "🇨🇦" },
     { city: "Québec", country: "Canada", flag: "🇨🇦" },
     { city: "Bruxelles", country: "Belgique", flag: "🇧🇪" },
@@ -71,9 +88,14 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Frankfurt", country: "Deutschland", flag: "🇩🇪" },
     { city: "Stuttgart", country: "Deutschland", flag: "🇩🇪" },
     { city: "Düsseldorf", country: "Deutschland", flag: "🇩🇪" },
+    { city: "Leipzig", country: "Deutschland", flag: "🇩🇪" },
+    { city: "Dresden", country: "Deutschland", flag: "🇩🇪" },
+    { city: "Hannover", country: "Deutschland", flag: "🇩🇪" },
     { city: "Wien", country: "Österreich", flag: "🇦🇹" },
     { city: "Salzburg", country: "Österreich", flag: "🇦🇹" },
-    { city: "Zürich", country: "Schweiz", flag: "🇨🇭" }
+    { city: "Zürich", country: "Schweiz", flag: "🇨🇭" },
+    { city: "Warschau", country: "Polen", flag: "🇵🇱" },
+    { city: "Krakau", country: "Polen", flag: "🇵🇱" }
   ],
   it: [
     { city: "Roma", country: "Italia", flag: "🇮🇹" },
@@ -83,12 +105,19 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Firenze", country: "Italia", flag: "🇮🇹" },
     { city: "Bologna", country: "Italia", flag: "🇮🇹" },
     { city: "Venezia", country: "Italia", flag: "🇮🇹" },
-    { city: "Palermo", country: "Italia", flag: "🇮🇹" }
+    { city: "Palermo", country: "Italia", flag: "🇮🇹" },
+    { city: "Genova", country: "Italia", flag: "🇮🇹" },
+    { city: "Verona", country: "Italia", flag: "🇮🇹" },
+    { city: "Catania", country: "Italia", flag: "🇮🇹" },
+    { city: "Bari", country: "Italia", flag: "🇮🇹" }
   ],
   pt: [
     { city: "Lisboa", country: "Portugal", flag: "🇵🇹" },
     { city: "Porto", country: "Portugal", flag: "🇵🇹" },
     { city: "Coimbra", country: "Portugal", flag: "🇵🇹" },
+    { city: "Faro", country: "Portugal", flag: "🇵🇹" },
+    { city: "Braga", country: "Portugal", flag: "🇵🇹" },
+    { city: "Funchal", country: "Portugal", flag: "🇵🇹" },
     { city: "São Paulo", country: "Brasil", flag: "🇧🇷" },
     { city: "Rio de Janeiro", country: "Brasil", flag: "🇧🇷" },
     { city: "Brasília", country: "Brasil", flag: "🇧🇷" },
@@ -102,6 +131,9 @@ export const notificationCities: Record<string, NotificationCity[]> = {
     { city: "Utrecht", country: "Nederland", flag: "🇳🇱" },
     { city: "Eindhoven", country: "Nederland", flag: "🇳🇱" },
     { city: "Groningen", country: "Nederland", flag: "🇳🇱" },
+    { city: "Breda", country: "Nederland", flag: "🇳🇱" },
+    { city: "Maastricht", country: "Nederland", flag: "🇳🇱" },
+    { city: "Leiden", country: "Nederland", flag: "🇳🇱" },
     { city: "Antwerpen", country: "België", flag: "🇧🇪" },
     { city: "Gent", country: "België", flag: "🇧🇪" }
   ]
@@ -109,46 +141,46 @@ export const notificationCities: Record<string, NotificationCity[]> = {
 
 export const notificationPlans: Record<string, NotificationPlan[]> = {
   es: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Anual", price: "950", currency: "€" }
   ],
   en: [
-    { name: "Premium", price: "18", currency: "$" },
-    { name: "Premium Plus", price: "60", currency: "$" },
     { name: "Premium Pro", price: "30", currency: "$" },
-    { name: "Pro", price: "12", currency: "$" }
+    { name: "Premium Plus", price: "60", currency: "$" },
+    { name: "Premium Max", price: "115", currency: "$" },
+    { name: "Premium Plus Annual", price: "1150", currency: "$" }
   ],
   fr: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Annuel", price: "950", currency: "€" }
   ],
   de: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Jährlich", price: "950", currency: "€" }
   ],
   it: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Annuale", price: "950", currency: "€" }
   ],
   pt: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Anual", price: "950", currency: "€" }
   ],
   nl: [
-    { name: "Premium", price: "15", currency: "€" },
-    { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Pro", price: "25", currency: "€" },
-    { name: "Pro", price: "10", currency: "€" }
+    { name: "Premium Plus", price: "50", currency: "€" },
+    { name: "Premium Max", price: "95", currency: "€" },
+    { name: "Premium Plus Jaarlijks", price: "950", currency: "€" }
   ]
 };
 
