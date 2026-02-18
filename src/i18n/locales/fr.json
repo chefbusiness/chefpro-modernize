@@ -455,11 +455,11 @@
       "member": {
         "name": "AI Chef Membre",
         "price": "Gratuit",
-        "uses": "2/mois",
+        "uses": "5/mois",
         "description": "Idéal pour les assistants de cuisine, cuisiniers et chefs de partie",
         "features": {
           "0": "Accès à tous les 55+ outils",
-          "1": "2 crédits mensuels",
+          "1": "5 crédits mensuels",
           "2": "Livres de recettes du monde",
           "3": "Support par email"
         }
