@@ -516,11 +516,11 @@
       "member": {
         "name": "AI Chef Miembro",
         "price": "Gratis",
-        "uses": "2/mes",
+        "uses": "5/mes",
         "description": "Ideal para ayudantes de cocina, cocineros y jefes de partida",
         "features": {
           "0": "Acceso a todas las 55+ herramientas",
-          "1": "2 créditos mensuales",
+          "1": "5 créditos mensuales",
           "2": "Recetarios mundiales",
           "3": "Soporte por email"
         }

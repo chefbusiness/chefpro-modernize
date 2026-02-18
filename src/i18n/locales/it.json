@@ -944,11 +944,11 @@
       "member": {
         "name": "AI Chef Membro",
         "price": "Gratis",
-        "uses": "2/mese",
+        "uses": "5/mese",
         "description": "Ideale per aiuto cuochi, cuochi e capostazione",
         "features": {
           "0": "Accesso a tutti i 55+ strumenti",
-          "1": "2 crediti mensili",
+          "1": "5 crediti mensili",
           "2": "Ricettari mondiali",
           "3": "Supporto via email"
         }

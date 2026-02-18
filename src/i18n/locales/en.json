@@ -669,11 +669,11 @@
       "member": {
         "name": "AI Chef Member",
         "price": "Free",
-        "uses": "2/month",
+        "uses": "5/month",
         "description": "Ideal for kitchen assistants, cooks and station chefs",
         "features": {
           "0": "Access to all 55+ tools",
-          "1": "2 monthly credits",
+          "1": "5 monthly credits",
           "2": "World cookbooks",
           "3": "Email support"
         }
