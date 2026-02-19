@@ -1,32 +1,17 @@
 
 
-# Fix: Header Sticky No Funciona
+# Plan: Agregar WhatsApp Flotante en la Pagina de Inicio
 
-## Problema
+## Cambio
 
-El contenedor padre en `Index.tsx` tiene la clase `overflow-x-hidden`:
+Importar y renderizar el componente `WhatsAppFloatingButton` en `src/pages/Index.tsx`, igual que ya se hace en las paginas de Mentoria Online y Formacion Presencial.
 
-```
-<div className="min-h-screen bg-background overflow-x-hidden">
-```
+## Archivo a modificar
 
-En los navegadores, `position: sticky` deja de funcionar cuando cualquier elemento ancestro tiene `overflow` distinto de `visible`. Esto anula por completo el comportamiento sticky del header.
+**`src/pages/Index.tsx`**
 
-## Solucion
+1. Agregar import: `import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';`
+2. Renderizar `<WhatsAppFloatingButton />` dentro del componente, justo antes del cierre del `</div>` principal (despues de `<ModernFooter />`).
 
-Cambiar la estrategia para evitar el desbordamiento horizontal sin romper el sticky:
-
-**Archivo: `src/pages/Index.tsx` (linea 29)**
-
-Reemplazar `overflow-x-hidden` en el div principal por `overflow-x-clip`. La propiedad `overflow-x: clip` recorta el contenido desbordante igual que `hidden`, pero **no crea un contexto de scroll**, por lo que no interfiere con `position: sticky`.
-
-```
-// Antes
-<div className="min-h-screen bg-background overflow-x-hidden">
-
-// Despues  
-<div className="min-h-screen bg-background overflow-x-clip">
-```
-
-Es un cambio de una sola clase en una sola linea. No se requieren cambios en ningun otro archivo.
+No se requieren cambios en ningun otro archivo. El componente ya soporta todos los idiomas y es completamente funcional.
 
