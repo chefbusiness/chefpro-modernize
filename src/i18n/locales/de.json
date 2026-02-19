@@ -944,11 +944,11 @@
       "member": {
         "name": "AI Chef Mitglied",
         "price": "Kostenlos",
-        "uses": "2/Monat",
+        "uses": "5/Monat",
         "description": "Ideal für Küchenhelfer, Köche und Postenchefs",
         "features": {
           "0": "Zugang zu allen 55+ Tools",
-          "1": "2 monatliche Credits",
+          "1": "5 monatliche Credits",
           "2": "Weltweite Kochbücher",
           "3": "E-Mail-Support"
         }

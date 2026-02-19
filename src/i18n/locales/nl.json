@@ -926,11 +926,11 @@
       "member": {
         "name": "AI Chef Lid",
         "price": "Gratis",
-        "uses": "2/maand",
+        "uses": "5/maand",
         "description": "Ideaal voor keukenhulpen, koks en postchefs",
         "features": {
           "0": "Toegang tot alle 55+ tools",
-          "1": "2 maandelijkse credits",
+          "1": "5 maandelijkse credits",
           "2": "Wereldwijde kookboeken",
           "3": "E-mailondersteuning"
         }

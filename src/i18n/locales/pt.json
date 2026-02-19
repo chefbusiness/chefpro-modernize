@@ -931,11 +931,11 @@
       "member": {
         "name": "AI Chef Membro",
         "price": "Grátis",
-        "uses": "2/mês",
+        "uses": "5/mês",
         "description": "Ideal para auxiliares de cozinha, cozinheiros e chefs de partida",
         "features": {
           "0": "Acesso a todas as 55+ ferramentas",
-          "1": "2 créditos mensais",
+          "1": "5 créditos mensais",
           "2": "Receituários mundiais",
           "3": "Suporte por email"
         }
