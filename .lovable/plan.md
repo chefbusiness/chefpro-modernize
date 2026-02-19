@@ -1,29 +1,44 @@
 
+# Plan: Habilitar Subdominio Italiano (itapp.aichef.pro)
 
-# Plan: Traducir el Tooltip del Widget de WhatsApp
+## Contexto
 
-## Problema
+Toda la lógica de redirección de URLs de la aplicación pasa por la función `getAppUrl` en `src/hooks/useLanguage.ts`. Actualmente solo hay dos subdominios:
 
-El texto "Contacta con nosotros en WhatsApp" y el `aria-label` del boton flotante de WhatsApp estan escritos directamente en espanol (hardcoded). No cambian cuando el usuario selecciona otro idioma.
+- **Español** → `https://app.aichef.pro`
+- **Resto de idiomas** → `https://enapp.aichef.pro`
 
-## Cambios
+## Cambio
 
-### 1. Agregar clave de traduccion en los 7 archivos de idiomas
+Se añade `it` como caso específico en la función `getAppUrl`, igual que ya existe para `en` y `es`.
 
-Agregar la clave `whatsapp.tooltip` en cada archivo de locale:
+**Archivo: `src/hooks/useLanguage.ts` (línea 57-60)**
 
-- **es.json**: "Contacta con nosotros en WhatsApp"
-- **en.json**: "Contact us on WhatsApp"
-- **fr.json**: "Contactez-nous sur WhatsApp"
-- **de.json**: "Kontaktieren Sie uns auf WhatsApp"
-- **it.json**: "Contattaci su WhatsApp"
-- **pt.json**: "Contacte-nos no WhatsApp"
-- **nl.json**: "Neem contact met ons op via WhatsApp"
+```ts
+// Antes
+const getAppUrl = (language?: Language) => {
+  const targetLang = language || i18n.language as Language;
+  return targetLang === 'en' ? 'https://enapp.aichef.pro' : 'https://app.aichef.pro';
+};
 
-### 2. Actualizar `WhatsAppFloatingButton.tsx`
+// Después
+const getAppUrl = (language?: Language) => {
+  const targetLang = language || i18n.language as Language;
+  if (targetLang === 'en') return 'https://enapp.aichef.pro';
+  if (targetLang === 'it') return 'https://itapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+```
 
-- Importar `useTranslation` de `react-i18next`
-- Llamar a `const { t } = useTranslation()` dentro del componente
-- Reemplazar el texto hardcoded del tooltip y el `aria-label` por `t('whatsapp.tooltip')`
+## Alcance del cambio
 
-Resultado: el tooltip mostrara el texto en el idioma activo del usuario.
+Al ser `getAppUrl` el único punto de verdad para las URLs de la app en todo el proyecto, este cambio afecta automáticamente a **todos los botones CTA** en todas las páginas y componentes:
+
+- Hero principal → botón "Probar gratis"
+- Sección de precios → todos los planes
+- ModernChefSection → botón CTA
+- AIImageGallery → botón CTA
+- CategoryCTAs → todos los CTAs por categoría
+- Y cualquier otro componente que use `getAppUrl`
+
+Solo se modifica un único archivo. No se requieren cambios en ningún otro componente ni en los archivos de traducción.
