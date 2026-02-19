@@ -1,32 +1,29 @@
 
 
-# Fix: Header Sticky No Funciona
+# Plan: Traducir el Tooltip del Widget de WhatsApp
 
 ## Problema
 
-El contenedor padre en `Index.tsx` tiene la clase `overflow-x-hidden`:
+El texto "Contacta con nosotros en WhatsApp" y el `aria-label` del boton flotante de WhatsApp estan escritos directamente en espanol (hardcoded). No cambian cuando el usuario selecciona otro idioma.
 
-```
-<div className="min-h-screen bg-background overflow-x-hidden">
-```
+## Cambios
 
-En los navegadores, `position: sticky` deja de funcionar cuando cualquier elemento ancestro tiene `overflow` distinto de `visible`. Esto anula por completo el comportamiento sticky del header.
+### 1. Agregar clave de traduccion en los 7 archivos de idiomas
 
-## Solucion
+Agregar la clave `whatsapp.tooltip` en cada archivo de locale:
 
-Cambiar la estrategia para evitar el desbordamiento horizontal sin romper el sticky:
+- **es.json**: "Contacta con nosotros en WhatsApp"
+- **en.json**: "Contact us on WhatsApp"
+- **fr.json**: "Contactez-nous sur WhatsApp"
+- **de.json**: "Kontaktieren Sie uns auf WhatsApp"
+- **it.json**: "Contattaci su WhatsApp"
+- **pt.json**: "Contacte-nos no WhatsApp"
+- **nl.json**: "Neem contact met ons op via WhatsApp"
 
-**Archivo: `src/pages/Index.tsx` (linea 29)**
+### 2. Actualizar `WhatsAppFloatingButton.tsx`
 
-Reemplazar `overflow-x-hidden` en el div principal por `overflow-x-clip`. La propiedad `overflow-x: clip` recorta el contenido desbordante igual que `hidden`, pero **no crea un contexto de scroll**, por lo que no interfiere con `position: sticky`.
+- Importar `useTranslation` de `react-i18next`
+- Llamar a `const { t } = useTranslation()` dentro del componente
+- Reemplazar el texto hardcoded del tooltip y el `aria-label` por `t('whatsapp.tooltip')`
 
-```
-// Antes
-<div className="min-h-screen bg-background overflow-x-hidden">
-
-// Despues  
-<div className="min-h-screen bg-background overflow-x-clip">
-```
-
-Es un cambio de una sola clase en una sola linea. No se requieren cambios en ningun otro archivo.
-
+Resultado: el tooltip mostrara el texto en el idioma activo del usuario.
