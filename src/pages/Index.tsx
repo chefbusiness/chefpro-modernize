@@ -26,7 +26,7 @@ const Index = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <div className="min-h-screen bg-background overflow-x-clip">
       <SEOHead 
         title={t('pages.index.seo_title')}
         description={t('pages.index.seo_description')}
