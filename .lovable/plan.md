@@ -1,32 +1,32 @@
 
-# Plan: Header y Announcement Bar Flotantes al Hacer Scroll
+
+# Fix: Header Sticky No Funciona
 
 ## Problema
 
-Actualmente el `AnnouncementBar` y el `<header>` son elementos hermanos dentro de un fragmento (`<>`). Solo el `<header>` tiene `sticky top-0`, por lo que el banner de anuncio desaparece al hacer scroll y el header se queda pegado solo.
+El contenedor padre en `Index.tsx` tiene la clase `overflow-x-hidden`:
+
+```
+<div className="min-h-screen bg-background overflow-x-hidden">
+```
+
+En los navegadores, `position: sticky` deja de funcionar cuando cualquier elemento ancestro tiene `overflow` distinto de `visible`. Esto anula por completo el comportamiento sticky del header.
 
 ## Solucion
 
-Envolver ambos elementos (AnnouncementBar + header) en un unico contenedor `<div>` con `sticky top-0 z-50`, y quitar el sticky del `<header>` interno.
+Cambiar la estrategia para evitar el desbordamiento horizontal sin romper el sticky:
 
-## Cambios
+**Archivo: `src/pages/Index.tsx` (linea 29)**
 
-### Archivo: `src/components/ModernHeader.tsx`
-
-1. Reemplazar el fragmento `<>...</>` por un `<div className="sticky top-0 z-50">`
-2. Quitar las clases `sticky top-0 z-50` del `<header>` interno (dejar solo las de fondo, borde y backdrop-blur)
-
-Resultado:
+Reemplazar `overflow-x-hidden` en el div principal por `overflow-x-clip`. La propiedad `overflow-x: clip` recorta el contenido desbordante igual que `hidden`, pero **no crea un contexto de scroll**, por lo que no interfiere con `position: sticky`.
 
 ```
-<div className="sticky top-0 z-50">        <!-- contenedor sticky -->
-  <AnnouncementBar />                       <!-- se queda visible -->
-  <header className="w-full border-b bg-background/95 backdrop-blur ...">
-    ...                                     <!-- contenido del header -->
-  </header>
-</div>
+// Antes
+<div className="min-h-screen bg-background overflow-x-hidden">
+
+// Despues  
+<div className="min-h-screen bg-background overflow-x-clip">
 ```
 
-Con este cambio, tanto el banner de anuncio como el header completo permanecen visibles ("flotando") al hacer scroll, en desktop y mobile. Cuando el usuario cierre el banner con la X, solo se mostrara el header.
+Es un cambio de una sola clase en una sola linea. No se requieren cambios en ningun otro archivo.
 
-No se requieren cambios en ningun otro archivo.
