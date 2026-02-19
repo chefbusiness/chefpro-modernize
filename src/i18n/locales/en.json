@@ -1025,5 +1025,10 @@
     "llm_anthropic": "Anthropic Claude Logo - Conversational AI for Chefs",
     "llm_meta_llama": "Meta Llama 3 Logo - Language Model for Professional Cooking",
     "mentoria_hero": "Personalized online mentoring session with AI Chef Pro for gastronomic professionals"
+  },
+  "announcement_bar": {
+    "text": "30 AI hacks to boost efficiency in your kitchen",
+    "text_short": "30 AI hacks for your kitchen",
+    "cta": "Read more"
   }
 }

@@ -1304,5 +1304,10 @@
     "llm_anthropic": "Anthropic Claude Logo - Conversationele AI voor chefs",
     "llm_meta_llama": "Meta Llama 3 Logo - Taalmodel voor professioneel koken",
     "mentoria_hero": "Gepersonaliseerde online mentorschap sessie met AI Chef Pro voor gastronomische professionals"
+  },
+  "announcement_bar": {
+    "text": "30 AI-hacks om de efficiëntie in je keuken te verbeteren",
+    "text_short": "30 AI-hacks voor je keuken",
+    "cta": "Lees meer"
   }
 }
