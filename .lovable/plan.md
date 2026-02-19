@@ -1,17 +1,29 @@
 
 
-# Plan: Agregar WhatsApp Flotante en la Pagina de Inicio
+# Plan: Traducir el Tooltip del Widget de WhatsApp
 
-## Cambio
+## Problema
 
-Importar y renderizar el componente `WhatsAppFloatingButton` en `src/pages/Index.tsx`, igual que ya se hace en las paginas de Mentoria Online y Formacion Presencial.
+El texto "Contacta con nosotros en WhatsApp" y el `aria-label` del boton flotante de WhatsApp estan escritos directamente en espanol (hardcoded). No cambian cuando el usuario selecciona otro idioma.
 
-## Archivo a modificar
+## Cambios
 
-**`src/pages/Index.tsx`**
+### 1. Agregar clave de traduccion en los 7 archivos de idiomas
 
-1. Agregar import: `import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';`
-2. Renderizar `<WhatsAppFloatingButton />` dentro del componente, justo antes del cierre del `</div>` principal (despues de `<ModernFooter />`).
+Agregar la clave `whatsapp.tooltip` en cada archivo de locale:
 
-No se requieren cambios en ningun otro archivo. El componente ya soporta todos los idiomas y es completamente funcional.
+- **es.json**: "Contacta con nosotros en WhatsApp"
+- **en.json**: "Contact us on WhatsApp"
+- **fr.json**: "Contactez-nous sur WhatsApp"
+- **de.json**: "Kontaktieren Sie uns auf WhatsApp"
+- **it.json**: "Contattaci su WhatsApp"
+- **pt.json**: "Contacte-nos no WhatsApp"
+- **nl.json**: "Neem contact met ons op via WhatsApp"
 
+### 2. Actualizar `WhatsAppFloatingButton.tsx`
+
+- Importar `useTranslation` de `react-i18next`
+- Llamar a `const { t } = useTranslation()` dentro del componente
+- Reemplazar el texto hardcoded del tooltip y el `aria-label` por `t('whatsapp.tooltip')`
+
+Resultado: el tooltip mostrara el texto en el idioma activo del usuario.
