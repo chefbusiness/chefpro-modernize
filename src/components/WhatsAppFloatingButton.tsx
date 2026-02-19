@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import chefProfile from '@/assets/chef-john-guerrero.png';
 
 const WhatsAppFloatingButton = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const { t } = useTranslation();
   const phoneNumber = '34744717942';
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
@@ -11,7 +13,7 @@ const WhatsAppFloatingButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Contacta con nosotros en WhatsApp"
+      aria-label={t('whatsapp.tooltip')}
       className="fixed bottom-6 right-6 z-50 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -23,7 +25,7 @@ const WhatsAppFloatingButton = () => {
         }`}
       >
         <span className="text-sm font-medium text-gray-800">
-          Contacta con nosotros en WhatsApp
+          {t('whatsapp.tooltip')}
         </span>
         {/* Arrow */}
         <div className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95" />
