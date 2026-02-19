@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import AnnouncementBar from '@/components/AnnouncementBar';
 import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School } from 'lucide-react';
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
@@ -53,6 +54,8 @@ export default function ModernHeader() {
   };
 
   return (
+    <>
+    <AnnouncementBar />
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
@@ -433,5 +436,6 @@ export default function ModernHeader() {
         </div>
       </div>
     </header>
+    </>
   );
 }
