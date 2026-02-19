@@ -20,6 +20,7 @@ import ModernFooter from '@/components/ModernFooter';
 import ConversionNotifications from '@/components/ConversionNotifications';
 import FormacionPromoPopup from '@/components/FormacionPromoPopup';
 import SEOHead from '@/components/SEOHead';
+import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import { useTranslation } from 'react-i18next';
 
 const Index = () => {
@@ -54,6 +55,7 @@ const Index = () => {
         <FormacionPromoPopup />
       </main>
       <ModernFooter />
+      <WhatsAppFloatingButton />
     </div>
   );
 };
