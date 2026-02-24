@@ -149,8 +149,8 @@ const SEOHead = ({
             "offers": [
               {
                 "@type": "Offer",
-                "name": "Member",
-                "description": "Acceso básico gratuito",
+                "name": "AI Chef Miembro",
+                "description": "Acceso básico gratuito. 5 usos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "0",
@@ -158,20 +158,38 @@ const SEOHead = ({
               },
               {
                 "@type": "Offer",
-                "name": "Pro",
-                "description": "Para chefs individuales",
+                "name": "AI Chef Premium Pro",
+                "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 150 usos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
-                "price": "10",
+                "price": "25",
                 "priceValidUntil": "2026-12-31"
               },
               {
                 "@type": "Offer",
-                "name": "Premium Plus",
-                "description": "Uso ilimitado para profesionales",
+                "name": "AI Chef Premium Plus",
+                "description": "Para empresarios gastronómicos y cadenas de restaurantes. 350 usos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "50",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Max",
+                "description": "Uso ilimitado mensual para profesionales exigentes.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "95",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Plus Anual",
+                "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "950",
                 "priceValidUntil": "2026-12-31"
               }
             ],
