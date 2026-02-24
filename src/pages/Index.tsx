@@ -21,6 +21,7 @@ import ConversionNotifications from '@/components/ConversionNotifications';
 import FormacionPromoPopup from '@/components/FormacionPromoPopup';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
+import AIToolsBanner from '@/components/AIToolsBanner';
 import { useTranslation } from 'react-i18next';
 
 const Index = () => {
@@ -45,6 +46,7 @@ const Index = () => {
         <CreatividadShowcase />
         <WorldCookbooks />
         <BusinessToolsShowcase />
+        <AIToolsBanner />
         <ModernFeatures />
         <FeaturedApps />
         <ModernChefSection />

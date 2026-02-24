@@ -17,6 +17,7 @@
     "marketing": "Marketing & Content",
     "conceptos": "Business Concepten",
     "precios": "Prijzen",
+    "herramientas_ia": "AI-Tools Restaurant",
     "blog": "Blog",
     "login": "Inloggen"
   },
@@ -1091,6 +1092,7 @@
     "nav_tools": "Tools",
     "nav_pricing": "Prijzen",
     "nav_blog": "Blog",
+    "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
     "plans_button": "Bekijk Plannen",

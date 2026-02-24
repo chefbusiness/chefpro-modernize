@@ -17,6 +17,7 @@
     "marketing": "Marketing & Contenu",
     "conceptos": "Concepts Business",
     "precios": "Tarifs",
+    "herramientas_ia": "Outils IA Restaurant",
     "blog": "Blog",
     "login": "Se connecter"
   },
@@ -661,6 +662,7 @@
     "nav_tools": "Outils",
     "nav_pricing": "Tarifs",
     "nav_blog": "Blog",
+    "nav_ai_tools": "Outils IA",
     "nav_free_tools": "Outils Gratuits 🪄",
     "contact_title": "Contact",
     "follow_us": "Suivez-nous",
