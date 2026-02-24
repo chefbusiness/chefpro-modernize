@@ -8,6 +8,7 @@ import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
+import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const APP_URL = 'https://app.aichef.pro';
@@ -111,6 +112,7 @@ export default function HerramientasIARestaurantes() {
         <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/5 py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl text-center">
+              <HeroSocialProof />
               <Badge className="mb-6 text-sm px-4 py-2">{s('hero.badge')}</Badge>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
                 {s('hero.h1')}
