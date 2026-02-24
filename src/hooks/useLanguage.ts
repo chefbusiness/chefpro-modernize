@@ -4,11 +4,36 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 export type Language = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'nl';
 
+// Pages with language-native slugs (not just a lang prefix + same slug)
+// Each entry maps a language code to its URL slug for that page
+const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
+  {
+    es: 'herramientas-ia-para-restaurantes',
+    en: 'ai-tools-for-restaurants',
+    fr: 'outils-ia-restaurant',
+    de: 'ki-tools-restaurant',
+    it: 'strumenti-ia-ristorante',
+    pt: 'ferramentas-ia-restaurante',
+    nl: 'ai-tools-restaurant',
+  },
+];
+
+// Returns the slug map for the current path if it matches a native-slug page, else null
+function detectNativePage(currentPath: string): Record<Language, string> | null {
+  for (const slugMap of LANGUAGE_NATIVE_PAGES) {
+    for (const [lang, slug] of Object.entries(slugMap)) {
+      const expected = lang === 'es' ? `/${slug}` : `/${lang}/${slug}`;
+      if (currentPath === expected) return slugMap as Record<Language, string>;
+    }
+  }
+  return null;
+}
+
 export const useLanguage = () => {
   const { i18n, t } = useTranslation();
   const { lang } = useParams<{ lang?: string }>();
   const navigate = useNavigate();
-  
+
   useEffect(() => {
     // If URL has language parameter, change i18n language
     if (lang && ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'].includes(lang)) {
@@ -23,11 +48,19 @@ export const useLanguage = () => {
 
   const changeLanguage = (newLang: Language) => {
     i18n.changeLanguage(newLang);
-    
-    // Update URL to reflect language change
+
     const currentPath = window.location.pathname;
     const isHomePage = currentPath === '/' || currentPath.match(/^\/[a-z]{2}$/);
-    
+
+    // Check if this page uses language-native slugs (e.g. landing pages)
+    const nativePage = detectNativePage(currentPath);
+    if (nativePage) {
+      const targetSlug = nativePage[newLang];
+      const newPath = newLang === 'es' ? `/${targetSlug}` : `/${newLang}/${targetSlug}`;
+      navigate(newPath, { replace: true });
+      return;
+    }
+
     if (isHomePage) {
       if (newLang === 'es') {
         navigate('/', { replace: true });
@@ -35,21 +68,11 @@ export const useLanguage = () => {
         navigate(`/${newLang}`, { replace: true });
       }
     } else {
-      // Handle language switching for specific pages
-      let newPath = '';
-      
-      // Remove current language prefix if exists
-      const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
+      // Handle language switching for pages with shared slug (e.g. /mentoria-online)
+      const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}\//, '/');
       const cleanPath = pathWithoutLang || '/';
-      
-      if (newLang === 'es') {
-        // For Spanish, no language prefix needed
-        newPath = cleanPath === '/' ? '/' : cleanPath;
-      } else {
-        // For other languages, add language prefix
-        newPath = `/${newLang}${cleanPath}`;
-      }
-      
+
+      const newPath = newLang === 'es' ? cleanPath : `/${newLang}${cleanPath}`;
       navigate(newPath, { replace: true });
     }
   };
