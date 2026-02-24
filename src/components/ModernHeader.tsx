@@ -1,7 +1,17 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import AnnouncementBar from '@/components/AnnouncementBar';
-import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School } from 'lucide-react';
+import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench } from 'lucide-react';
+
+const AI_TOOLS_SLUGS: Record<string, string> = {
+  es: 'herramientas-ia-para-restaurantes',
+  en: 'en/ai-tools-for-restaurants',
+  fr: 'fr/outils-ia-restaurant',
+  de: 'de/ki-tools-restaurant',
+  it: 'it/strumenti-ia-ristorante',
+  pt: 'pt/ferramentas-ia-restaurante',
+  nl: 'nl/ai-tools-restaurant',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -86,20 +96,26 @@ export default function ModernHeader() {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none text-accent">{t('nav.servicios')}</h4>
                       <div className="grid gap-1">
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                           href={currentLanguage === 'es' ? '/mentoria-online' : `/${currentLanguage}/mentoria-online`}
                         >
                           {t('nav.mentoria_online')}
                         </NavigationMenuLink>
                         {currentLanguage === 'es' && (
-                          <NavigationMenuLink 
+                          <NavigationMenuLink
                             className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                             href="/formacion-presencial"
                           >
                             {t('nav.formacion_presencial')}
                           </NavigationMenuLink>
                         )}
+                        <NavigationMenuLink
+                          className="block text-sm font-medium text-primary hover:text-primary/80 transition-colors py-1"
+                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                        >
+                          {t('nav.herramientas_ia')}
+                        </NavigationMenuLink>
                       </div>
                     </div>
                   </div>
@@ -313,6 +329,14 @@ export default function ModernHeader() {
                               {t('nav.formacion_presencial')}
                             </a>
                           )}
+                          <a
+                            href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-primary"
+                          >
+                            <Wrench className="h-4 w-4 text-primary" />
+                            {t('nav.herramientas_ia')}
+                          </a>
                         </CollapsibleContent>
                       </Collapsible>
                       <a

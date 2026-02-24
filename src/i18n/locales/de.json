@@ -17,6 +17,7 @@
     "marketing": "Marketing & Inhalt",
     "conceptos": "Business Konzepte",
     "precios": "Preise",
+    "herramientas_ia": "KI-Tools für Restaurants",
     "blog": "Blog",
     "login": "Anmelden"
   },
@@ -1109,6 +1110,7 @@
     "nav_tools": "Tools",
     "nav_pricing": "Preise",
     "nav_blog": "Blog",
+    "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
     "plans_button": "Pläne Ansehen",

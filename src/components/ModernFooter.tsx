@@ -5,6 +5,16 @@ import { Facebook, Instagram, Twitter, Youtube, Music } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 
+const AI_TOOLS_SLUGS: Record<string, string> = {
+  es: 'herramientas-ia-para-restaurantes',
+  en: 'en/ai-tools-for-restaurants',
+  fr: 'fr/outils-ia-restaurant',
+  de: 'de/ki-tools-restaurant',
+  it: 'it/strumenti-ia-ristorante',
+  pt: 'pt/ferramentas-ia-restaurante',
+  nl: 'nl/ai-tools-restaurant',
+};
+
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
 
@@ -73,6 +83,14 @@ export default function ModernFooter() {
               <li>
                 <a href="#herramientas" className="text-muted-foreground hover:text-foreground transition-colors">
                   {t('footer.nav_tools')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                  className="text-primary hover:text-primary/80 transition-colors font-medium"
+                >
+                  {t('footer.nav_ai_tools')}
                 </a>
               </li>
               <li>

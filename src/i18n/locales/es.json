@@ -18,6 +18,7 @@
     "marketing": "Marketing & Contenido",
     "conceptos": "Conceptos de Negocio",
     "precios": "Precios",
+    "herramientas_ia": "Herramientas IA para Restaurantes",
     "blog": "Blog",
     "login": "Iniciar Sesión"
   },
@@ -637,6 +638,7 @@
     "nav_tools": "Herramientas",
     "nav_pricing": "Precios",
     "nav_blog": "Blog",
+    "nav_ai_tools": "Herramientas IA",
     "nav_free_tools": "Herramientas Gratuitas",
     "contact_title": "Contacto",
     "plans_button": "Ver Planes",

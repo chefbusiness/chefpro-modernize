@@ -17,6 +17,7 @@
     "marketing": "Marketing & Contenuti",
     "conceptos": "Concetti Business",
     "precios": "Prezzi",
+    "herramientas_ia": "Strumenti IA Ristorante",
     "blog": "Blog",
     "login": "Accedi"
   },
@@ -1109,6 +1110,7 @@
     "nav_tools": "Strumenti",
     "nav_pricing": "Prezzi",
     "nav_blog": "Blog",
+    "nav_ai_tools": "Strumenti IA",
     "nav_free_tools": "Strumenti Gratuiti",
     "contact_title": "Contatto",
     "plans_button": "Vedi Piani",

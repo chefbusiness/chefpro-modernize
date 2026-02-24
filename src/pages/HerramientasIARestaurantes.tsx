@@ -12,13 +12,20 @@ import { useLanguage } from '@/hooks/useLanguage';
 
 const APP_URL = 'https://app.aichef.pro';
 
-const TOOL_ICONS = [
-  <BookOpen className="h-7 w-7 text-primary" />,
-  <BarChart3 className="h-7 w-7 text-primary" />,
-  <TrendingDown className="h-7 w-7 text-primary" />,
-  <Utensils className="h-7 w-7 text-primary" />,
-  <Megaphone className="h-7 w-7 text-primary" />,
-  <ChefHat className="h-7 w-7 text-primary" />,
+const TOOL_CARDS = [
+  { icon: <BookOpen className="h-7 w-7 text-amber-600" />, bg: 'bg-amber-50', border: 'border-amber-200' },
+  { icon: <BarChart3 className="h-7 w-7 text-blue-600" />, bg: 'bg-blue-50', border: 'border-blue-200' },
+  { icon: <TrendingDown className="h-7 w-7 text-emerald-600" />, bg: 'bg-emerald-50', border: 'border-emerald-200' },
+  { icon: <Utensils className="h-7 w-7 text-orange-600" />, bg: 'bg-orange-50', border: 'border-orange-200' },
+  { icon: <Megaphone className="h-7 w-7 text-purple-600" />, bg: 'bg-purple-50', border: 'border-purple-200' },
+  { icon: <ChefHat className="h-7 w-7 text-rose-600" />, bg: 'bg-rose-50', border: 'border-rose-200' },
+];
+
+const PROFILE_COLORS = [
+  { bg: 'bg-amber-100', icon: 'text-amber-700' },
+  { bg: 'bg-blue-100', icon: 'text-blue-700' },
+  { bg: 'bg-emerald-100', icon: 'text-emerald-700' },
+  { bg: 'bg-purple-100', icon: 'text-purple-700' },
 ];
 
 // URL slug per language
@@ -129,13 +136,13 @@ export default function HerramientasIARestaurantes() {
         </section>
 
         {/* Resultados */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-16 bg-gradient-to-r from-primary/90 to-primary">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
               {results.map((r, i) => (
                 <div key={i}>
-                  <div className="text-4xl font-bold text-primary mb-2">{r.metric}</div>
-                  <div className="text-sm text-muted-foreground">{r.label}</div>
+                  <div className="text-4xl font-bold text-white mb-2">{r.metric}</div>
+                  <div className="text-sm text-primary-foreground/80">{r.label}</div>
                 </div>
               ))}
             </div>
@@ -151,10 +158,10 @@ export default function HerramientasIARestaurantes() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {tools.map((tool, i) => (
-                <Card key={i} className="border shadow-md hover:shadow-lg transition-shadow">
+                <Card key={i} className={`border-2 ${TOOL_CARDS[i]?.border ?? 'border-border'} shadow-md hover:shadow-lg transition-shadow`}>
                   <CardHeader>
-                    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                      {TOOL_ICONS[i]}
+                    <div className={`w-14 h-14 ${TOOL_CARDS[i]?.bg ?? 'bg-primary/10'} rounded-xl flex items-center justify-center mb-4`}>
+                      {TOOL_CARDS[i]?.icon}
                     </div>
                     <CardTitle className="text-xl">{tool.title}</CardTitle>
                   </CardHeader>
@@ -183,8 +190,8 @@ export default function HerramientasIARestaurantes() {
               {profiles.map((p, i) => (
                 <Card key={i} className="text-center border-none shadow-lg hover:shadow-xl transition-shadow">
                   <CardHeader>
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <ChefHat className="h-7 w-7 text-primary" />
+                    <div className={`w-14 h-14 ${PROFILE_COLORS[i]?.bg ?? 'bg-primary/10'} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                      <ChefHat className={`h-7 w-7 ${PROFILE_COLORS[i]?.icon ?? 'text-primary'}`} />
                     </div>
                     <CardTitle className="text-lg">{p.title}</CardTitle>
                   </CardHeader>
@@ -230,17 +237,17 @@ export default function HerramientasIARestaurantes() {
         </section>
 
         {/* Precios */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-gradient-to-b from-muted/20 to-muted/50">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-foreground mb-4">{s('pricing_section.title')}</h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">{s('pricing_section.subtitle')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-10">
               {plans.map((plan, i) => (
-                <Card key={i} className={`text-center relative ${plan.highlight ? 'ring-2 ring-primary shadow-xl scale-105' : 'shadow-md'}`}>
-                  {plan.highlight && <Badge className="absolute -top-3 left-1/2 -translate-x-1/2">⭐ Más Popular</Badge>}
+                <Card key={i} className={`text-center relative ${plan.highlight ? 'ring-2 ring-amber-400 shadow-2xl scale-105 bg-gradient-to-b from-amber-50 to-white' : 'shadow-md bg-card'}`}>
+                  {plan.highlight && <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-amber-950 border-0">⭐ Más Popular</Badge>}
                   <CardHeader className="pt-6">
-                    <CardTitle className="text-lg">{plan.name}</CardTitle>
-                    <div className="text-3xl font-bold text-primary">{plan.price}</div>
+                    <CardTitle className={`text-lg ${plan.highlight ? 'text-amber-900' : ''}`}>{plan.name}</CardTitle>
+                    <div className={`text-3xl font-bold ${plan.highlight ? 'text-amber-600' : 'text-primary'}`}>{plan.price}</div>
                     <div className="text-sm text-muted-foreground">{plan.uses}</div>
                   </CardHeader>
                   <CardContent>
@@ -277,16 +284,16 @@ export default function HerramientasIARestaurantes() {
         </section>
 
         {/* CTA final */}
-        <section className="py-20 bg-gradient-to-r from-primary to-primary/80">
-          <div className="container mx-auto px-4 text-center text-primary-foreground">
+        <section className="py-20 bg-gradient-to-br from-amber-500 via-amber-400 to-yellow-300">
+          <div className="container mx-auto px-4 text-center text-amber-950">
             <h2 className="text-3xl font-bold mb-4">{s('cta_section.title')}</h2>
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">{s('cta_section.subtitle')}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" onClick={() => window.open(APP_URL, '_blank')}>
+              <Button size="lg" className="bg-amber-950 text-amber-50 hover:bg-amber-900" onClick={() => window.open(APP_URL, '_blank')}>
                 {s('cta_section.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
+              <Button size="lg" variant="outline" className="border-amber-900 text-amber-900 bg-white/30 hover:bg-white/50" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
                 {s('cta_section.secondary')}
               </Button>
             </div>
