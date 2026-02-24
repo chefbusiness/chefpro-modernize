@@ -14,6 +14,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
+import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -53,6 +54,15 @@ const App = () => (
             <Route path="/it/strumenti-ia-ristorante" element={<HerramientasIARestaurantes />} />
             <Route path="/pt/ferramentas-ia-restaurante" element={<HerramientasIARestaurantes />} />
             <Route path="/nl/ai-tools-restaurant" element={<HerramientasIARestaurantes />} />
+
+            {/* Landing costes restaurante — todos los idiomas */}
+            <Route path="/reducir-costes-restaurante-ia" element={<ReducirCostesRestaurante />} />
+            <Route path="/en/reduce-restaurant-costs-ai" element={<ReducirCostesRestaurante />} />
+            <Route path="/fr/reduire-couts-restaurant-ia" element={<ReducirCostesRestaurante />} />
+            <Route path="/de/restaurantkosten-senken-ki" element={<ReducirCostesRestaurante />} />
+            <Route path="/it/ridurre-costi-ristorante-ia" element={<ReducirCostesRestaurante />} />
+            <Route path="/pt/reduzir-custos-restaurante-ia" element={<ReducirCostesRestaurante />} />
+            <Route path="/nl/restaurantkosten-verlagen-ai" element={<ReducirCostesRestaurante />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

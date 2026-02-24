@@ -17,6 +17,7 @@
     "marketing": "Marketing & Content",
     "conceptos": "Business Concepten",
     "precios": "Prijzen",
+    "reducir_costes": "Kosten verlagen",
     "herramientas_ia": "AI-Tools Restaurant",
     "blog": "Blog",
     "login": "Inloggen"
@@ -1092,6 +1093,7 @@
     "nav_tools": "Tools",
     "nav_pricing": "Prijzen",
     "nav_blog": "Blog",
+    "nav_costs": "Kosten verlagen",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -1317,6 +1319,131 @@
     "text": "30 AI-hacks om de efficiëntie in je keuken te verbeteren",
     "text_short": "30 AI-hacks voor je keuken",
     "cta": "Lees meer"
+  },
+  "landingCostes": {
+    "breadcrumb": "Restaurantkosten verlagen met AI",
+    "seo": {
+      "title": "Restaurantkosten verlagen met AI | AI Chef Pro",
+      "description": "Verlaag verspilling en voedselkosten in uw restaurant met 35% dankzij kunstmatige intelligentie. Automatische receptkalkulation en menuoptimalisatie in real-time.",
+      "keywords": "restaurantkosten verlagen, food cost controle restaurant, keukenverspilling verminderen, digitale receptkalkulation, keukenkosten optimaliseren, restaurant winstgevendheid AI"
+    },
+    "hero": {
+      "badge": "💰 Bespaar vanaf de eerste maand",
+      "h1": "Verlaag de kosten van uw restaurant met 35% via AI",
+      "subtitle": "Beheers verspilling, optimaliseer de food cost en verbeter de marge van elk gerecht — zonder spreadsheets of handmatige berekeningen.",
+      "tagline": "Het tool dat meer dan 5.000 gastronomie-professionals gebruiken.",
+      "cta_primary": "Gratis beginnen met besparen",
+      "cta_secondary": "Bekijk plannen en prijzen",
+      "no_card": "Geen creditcard vereist. Directe toegang."
+    },
+    "results": [
+      { "metric": "-35%", "label": "Gemiddelde verliesvermindering" },
+      { "metric": "-22%", "label": "Vermindering van de food cost" },
+      { "metric": "+18%", "label": "Verbetering van de bruto marge" },
+      { "metric": "2 wk.", "label": "Gemiddelde ROI vanaf de start" }
+    ],
+    "tools_section": {
+      "title": "6 AI-tools om kosten te verlagen in uw keuken",
+      "subtitle": "Van verspilling tot receptberekening, beheer elke euro met kunstmatige intelligentie."
+    },
+    "tools": [
+      {
+        "title": "AI-verliescontrole",
+        "description": "Detecteer verspillingspatronen, identificeer de duurste ingrediënten en ontvang waarschuwingen wanneer verliezen de optimale drempel overschrijden.",
+        "keywords": ["verspilling", "voedselverliezen", "keukenkosten"]
+      },
+      {
+        "title": "Automatische Receptberekening",
+        "description": "Bereken de werkelijke kosten van elk recept in seconden. Werk ingrediëntprijzen bij en alle berekeningen worden automatisch herberekend.",
+        "keywords": ["receptberekening", "food cost", "kosten per gerecht"]
+      },
+      {
+        "title": "Menu-margeoptimalisator",
+        "description": "Analyseer welke gerechten de beste marge opleveren en welke u geld kosten. Herontwerp uw menu om de winstgevendheid te maximaliseren.",
+        "keywords": ["menu-engineering", "gerechtwinstgevendheid", "menuoptimalisatie"]
+      },
+      {
+        "title": "Intelligente Inkoopplanner",
+        "description": "Genereer boodschappenlijsten op basis van uw verkoophistorie om overstock te vermijden en verliezen van bederfelijke producten te verminderen.",
+        "keywords": ["restaurant inkoop", "keukeninventaris", "leveranciersbestellingen"]
+      },
+      {
+        "title": "Winstgevendheidsanalyse",
+        "description": "Real-time dashboard met uw belangrijkste KPI's: food cost %, prime cost, marge per tafel en winstgevendheid per dienst.",
+        "keywords": ["restaurant KPI's", "winstgevendheid", "bedrijfsanalyse"]
+      },
+      {
+        "title": "Personeelskostenoptimalisatie",
+        "description": "Bereken de personeelskosten per dienst en ontvang suggesties om diensten aan te passen op basis van verwachte vraag en prime cost doelstellingen.",
+        "keywords": ["personeelskosten", "prime cost", "keukendiensten"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wie profiteert het meest van AI-kostenbeheersing?",
+      "subtitle": "Van de eigenaar-kok tot de grote keten, AI past kostenbeheer aan uw realiteit aan."
+    },
+    "profiles": [
+      {
+        "title": "Eigenaar-Kok",
+        "description": "Beheer de food cost zonder afhankelijk te zijn van een controller. Neem beslissingen op basis van echte gegevens van uw bedrijf."
+      },
+      {
+        "title": "Operationeel Directeur",
+        "description": "Bewaak de winstgevendheid van meerdere locaties vanuit één dashboard. Detecteer afwijkingen voordat ze de balans beïnvloeden."
+      },
+      {
+        "title": "Keukenchef",
+        "description": "Ontwerp van het begin af winstgevende recepten. De automatische berekening vertelt u de kosten voordat u een gerecht aan het menu toevoegt."
+      },
+      {
+        "title": "Restaurantgroep",
+        "description": "Standaardiseer kostenbeheersing in al uw restaurants met dezelfde statistieken en automatische waarschuwingen."
+      }
+    ],
+    "why_section": {
+      "title": "Waarom lopen kosten zonder AI-controle uit de hand?",
+      "body": "De meeste restaurants verliezen tussen 8% en 15% van hun omzet aan verspilling, berekeningsfouten en slecht gepland inkopen. De AI van AI Chef Pro sluit deze lekken automatisch.",
+      "benefits": [
+        "Receptkosten worden in real-time herberekend wanneer leveranciersprijzen veranderen",
+        "Automatische waarschuwingen wanneer de food cost uw persoonlijke drempel overschrijdt",
+        "Analyse van topgerechten vs. onrendabele gerechten",
+        "Inkoopplanning op basis van verkoophistorie om overstock te vermijden",
+        "Winstgevendheidsdashboard toegankelijk via smartphone, tablet of desktop",
+        "Wekelijks KPI-rapport met concrete verbeteringsaanbevelingen"
+      ]
+    },
+    "pricing_section": {
+      "title": "Begin vandaag nog met kostenverlaging",
+      "subtitle": "Probeer gratis met het Member-plan. Het abonnement betaalt zichzelf terug met wat u de eerste maand bespaart.",
+      "annual_note": "Jaarplannen met 2 maanden gratis. Geen bindingsperiode."
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over AI-kostenbeheersing voor restaurants"
+    },
+    "faq": [
+      {
+        "question": "Hoe snel zie ik resultaten bij het verlagen van kosten?",
+        "answer": "De meeste van onze klanten ontdekken de eerste besparingsmogelijkheden binnen 3-7 dagen na gebruik. De werkelijke kostenvermindering consolideert zich tussen week 2 en 4."
+      },
+      {
+        "question": "Heb ik boekhoudkundige of financiële kennis nodig?",
+        "answer": "Nee. AI Chef Pro is ontworpen voor koks en restaurateurs, niet voor accountants. De taal is gastronomisch en statistieken worden uitgelegd met praktische branchevoorbeelden."
+      },
+      {
+        "question": "Werkt de AI ingrediëntkosten automatisch bij?",
+        "answer": "U kunt uw leveranciersprijzen handmatig invoeren of importeren vanuit een spreadsheet. Het systeem herberekent alle calculaties onmiddellijk. Binnenkort: directe leveranciersintegratie."
+      },
+      {
+        "question": "Werkt het voor kleine restaurants of alleen voor grote groepen?",
+        "answer": "Het werkt voor elke omvang. Van het familierestaurant met 40 couverts tot groepen met 20 locaties. Het gratis Member-plan is ideaal om zonder risico te beginnen."
+      }
+    ],
+    "cta_section": {
+      "title": "Stop met geld verliezen. Beheer uw kosten vanaf vandaag.",
+      "subtitle": "Sluit u aan bij 5.000+ professionals die AI al gebruiken om hun marges te beschermen en hun bedrijf te laten groeien.",
+      "primary": "Nu gratis beginnen",
+      "secondary": "Alle plannen bekijken"
+    }
   },
   "landingRestaurantes": {
     "seo": {

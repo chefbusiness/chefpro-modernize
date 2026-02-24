@@ -17,6 +17,7 @@
     "marketing": "Marketing & Inhalt",
     "conceptos": "Business Konzepte",
     "precios": "Preise",
+    "reducir_costes": "Kosten senken",
     "herramientas_ia": "KI-Tools für Restaurants",
     "blog": "Blog",
     "login": "Anmelden"
@@ -1110,6 +1111,7 @@
     "nav_tools": "Tools",
     "nav_pricing": "Preise",
     "nav_blog": "Blog",
+    "nav_costs": "Kosten senken",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -1335,6 +1337,131 @@
     "text": "30 KI-Hacks für mehr Effizienz in deiner Küche",
     "text_short": "30 KI-Hacks für deine Küche",
     "cta": "Mehr erfahren"
+  },
+  "landingCostes": {
+    "breadcrumb": "Restaurantkosten senken mit KI",
+    "seo": {
+      "title": "Restaurantkosten senken mit KI | AI Chef Pro",
+      "description": "Reduzieren Sie Lebensmittelverluste und Kosten in Ihrem Restaurant um bis zu 35% mit künstlicher Intelligenz. Automatische Rezeptkalkulation und Menüoptimierung in Echtzeit.",
+      "keywords": "Restaurantkosten senken, Food-Cost-Kontrolle Restaurant, Küchenabfall reduzieren, digitale Rezeptkalkulation, Küchenkosten optimieren, Restaurant-Rentabilität KI"
+    },
+    "hero": {
+      "badge": "💰 Sparen Sie ab dem ersten Monat",
+      "h1": "Senken Sie die Kosten Ihres Restaurants um bis zu 35% mit KI",
+      "subtitle": "Kontrollieren Sie Verluste, optimieren Sie den Food Cost und verbessern Sie die Marge jedes Gerichts — ohne Tabellen oder manuelle Berechnungen.",
+      "tagline": "Das Tool, das über 5.000 Gastronomie-Profis nutzen.",
+      "cta_primary": "Kostenlos anfangen zu sparen",
+      "cta_secondary": "Preise und Pläne ansehen",
+      "no_card": "Keine Kreditkarte erforderlich. Sofortiger Zugang."
+    },
+    "results": [
+      { "metric": "-35%", "label": "Durchschnittliche Verlustreduzierung" },
+      { "metric": "-22%", "label": "Food-Cost-Reduzierung" },
+      { "metric": "+18%", "label": "Verbesserung der Bruttomarge" },
+      { "metric": "2 Wo.", "label": "Durchschnittlicher ROI ab Start" }
+    ],
+    "tools_section": {
+      "title": "6 KI-Tools zur Kostensenkung in Ihrer Küche",
+      "subtitle": "Von Verlusten bis zur Rezeptkalkulation — kontrollieren Sie jeden Euro mit künstlicher Intelligenz."
+    },
+    "tools": [
+      {
+        "title": "KI-Verlustkontrolle",
+        "description": "Erkennen Sie Verschwendungsmuster, identifizieren Sie die teuersten Zutaten und erhalten Sie Warnmeldungen, wenn die Verluste den optimalen Schwellenwert überschreiten.",
+        "keywords": ["Verluste", "Lebensmittelverschwendung", "Küchenkosten"]
+      },
+      {
+        "title": "Automatische Rezeptkalkulation",
+        "description": "Berechnen Sie die tatsächlichen Kosten jedes Rezepts in Sekunden. Aktualisieren Sie Zutatenpreise und alle Kalkulationen werden automatisch neu berechnet.",
+        "keywords": ["Rezeptkalkulation", "Food Cost", "Kosten pro Gericht"]
+      },
+      {
+        "title": "Menü-Margen-Optimierer",
+        "description": "Analysieren Sie, welche Gerichte Ihnen die beste Marge bringen und welche Sie Geld kosten. Gestalten Sie Ihre Karte neu, um die Rentabilität zu maximieren.",
+        "keywords": ["Menü-Engineering", "Gerichtsrentabilität", "Kartenoptimierung"]
+      },
+      {
+        "title": "Intelligenter Einkaufsplaner",
+        "description": "Erstellen Sie Einkaufslisten basierend auf Ihrer Verkaufshistorie, um Überbestände zu vermeiden und Verluste bei verderblichen Waren zu reduzieren.",
+        "keywords": ["Restauranteinkauf", "Kücheninventar", "Lieferantenbestellungen"]
+      },
+      {
+        "title": "Rentabilitätsanalyse",
+        "description": "Echtzeit-Dashboard mit Ihren wichtigsten KPIs: Food Cost %, Prime Cost, Marge pro Tisch und Rentabilität pro Service.",
+        "keywords": ["Restaurant-KPIs", "Rentabilität", "Geschäftsanalyse"]
+      },
+      {
+        "title": "Personalkosten-Optimierung",
+        "description": "Berechnen Sie die Personalkosten pro Service und erhalten Sie Vorschläge zur Anpassung der Schichten basierend auf der Prognose und den Prime-Cost-Zielen.",
+        "keywords": ["Personalkosten", "Prime Cost", "Küchenschichten"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wer profitiert am meisten von der KI-Kostenkontrolle?",
+      "subtitle": "Vom Küchenchef-Besitzer bis zur großen Kette — die KI passt die Kostenkontrolle an Ihre Realität an."
+    },
+    "profiles": [
+      {
+        "title": "Inhaber-Koch",
+        "description": "Kontrollieren Sie den Food Cost ohne einen Controller zu benötigen. Treffen Sie Entscheidungen auf Basis echter Daten Ihres Betriebs."
+      },
+      {
+        "title": "Betriebsleiter",
+        "description": "Überwachen Sie die Rentabilität mehrerer Standorte von einem einzigen Dashboard aus. Erkennen Sie Abweichungen, bevor sie die Bilanz beeinflussen."
+      },
+      {
+        "title": "Küchenchef",
+        "description": "Entwickeln Sie von Anfang an rentable Rezepte. Die automatische Kalkulation zeigt Ihnen die Kosten, bevor Sie ein Gericht auf die Karte nehmen."
+      },
+      {
+        "title": "Gastronomiegruppe",
+        "description": "Standardisieren Sie die Kostenkontrolle in allen Ihren Restaurants mit denselben Kennzahlen und automatischen Warnmeldungen."
+      }
+    ],
+    "why_section": {
+      "title": "Warum geraten Kosten ohne KI-Kontrolle außer Kontrolle?",
+      "body": "Die meisten Restaurants verlieren zwischen 8% und 15% ihres Umsatzes durch Verluste, Kalkulationsfehler und schlecht geplante Einkäufe. Die KI von AI Chef Pro schließt diese Lücken automatisch.",
+      "benefits": [
+        "Rezeptkosten werden in Echtzeit neu berechnet, wenn sich Lieferantenpreise ändern",
+        "Automatische Warnungen, wenn der Food Cost Ihren individuellen Schwellenwert überschreitet",
+        "Analyse von Erfolgsgerichten vs. unrentablen Gerichten",
+        "Einkaufsplanung basierend auf Verkaufshistorie zur Vermeidung von Überbeständen",
+        "Rentabilitäts-Dashboard zugänglich von Smartphone, Tablet oder Desktop",
+        "Wöchentlicher KPI-Bericht mit konkreten Verbesserungsempfehlungen"
+      ]
+    },
+    "pricing_section": {
+      "title": "Beginnen Sie noch heute mit der Kostensenkung",
+      "subtitle": "Testen Sie kostenlos mit dem Member-Plan. Das Abonnement amortisiert sich mit dem, was Sie im ersten Monat einsparen.",
+      "annual_note": "Jahrespläne mit 2 Monaten gratis. Ohne Bindung."
+    },
+    "faq_section": {
+      "title": "Häufige Fragen zur KI-Kostenkontrolle für Restaurants"
+    },
+    "faq": [
+      {
+        "question": "Wie schnell sehe ich Ergebnisse bei der Kostensenkung?",
+        "answer": "Die meisten unserer Kunden entdecken die ersten Einsparmöglichkeiten innerhalb von 3-7 Tagen nach der Nutzung. Die tatsächliche Kostenreduzierung festigt sich zwischen Woche 2 und 4."
+      },
+      {
+        "question": "Brauche ich Buchhaltungs- oder Finanzkenntnisse?",
+        "answer": "Nein. AI Chef Pro wurde für Köche und Gastronomen entwickelt, nicht für Buchhalter. Die Sprache ist gastronomisch und die Kennzahlen werden mit praktischen Branchenbeispielen erklärt."
+      },
+      {
+        "question": "Aktualisiert die KI die Zutatenkosten automatisch?",
+        "answer": "Sie können Ihre Lieferantenpreise manuell eingeben oder aus einer Tabelle importieren. Das System berechnet sofort alle Kalkulationen neu. Demnächst: direkte Lieferantenintegration."
+      },
+      {
+        "question": "Funktioniert es für kleine Restaurants oder nur für große Gruppen?",
+        "answer": "Es funktioniert für jede Größe. Vom Familienrestaurant mit 40 Plätzen bis zu Gruppen mit 20 Standorten. Der kostenlose Member-Plan ist ideal, um ohne Risiko zu beginnen."
+      }
+    ],
+    "cta_section": {
+      "title": "Hören Sie auf, Geld zu verlieren. Kontrollieren Sie Ihre Kosten ab heute.",
+      "subtitle": "Schließen Sie sich 5.000+ Profis an, die bereits KI nutzen, um ihre Margen zu schützen und ihr Geschäft auszubauen.",
+      "primary": "Jetzt kostenlos starten",
+      "secondary": "Alle Pläne ansehen"
+    }
   },
   "landingRestaurantes": {
     "seo": {
