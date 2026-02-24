@@ -1,8 +1,8 @@
 {
-"whatsapp": {
+  "whatsapp": {
     "tooltip": "Kontaktieren Sie uns auf WhatsApp"
   },
-"trusted_by": {
+  "trusted_by": {
     "title": "Die Wahl erstklassiger Hospitality-Profis",
     "badge": "23+ Elite-Marken"
   },
@@ -10,7 +10,7 @@
     "inicio": "Startseite",
     "servicios": "Dienstleistungen",
     "mentoria_online": "Online-Mentoring",
-    "aplicaciones": "Anwendungen", 
+    "aplicaciones": "Anwendungen",
     "creatividad": "Kulinarische Kreativität",
     "recetarios": "Weltweite Kochbücher",
     "herramientas": "Business Tools",
@@ -36,7 +36,20 @@
     "subtitle": "55+ Spezialisierte KI-Tools für Köche. Von Kulinarischer Kreativität bis Digital Marketing.",
     "description": "Suite von KI-Tools und Anwendungen, Modelle für den täglichen Gebrauch von Köchen und Gastronomiefachleuten.",
     "rating": "Bewertung: 5 Sterne",
-    "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger-Bar", "Bäckerei", "Konditorei", "Chocolaterie", "Eisdiele", "Dark Kitchen", "Café", "Brunch"],
+    "business_types": [
+      "Management",
+      "Restaurant",
+      "Catering",
+      "Pizzeria",
+      "Burger-Bar",
+      "Bäckerei",
+      "Konditorei",
+      "Chocolaterie",
+      "Eisdiele",
+      "Dark Kitchen",
+      "Café",
+      "Brunch"
+    ],
     "see_resources": "RESSOURCEN ANSEHEN",
     "social_proof_label": "Lösungen und Rezepte generiert"
   },
@@ -364,7 +377,7 @@
     "chilena": "Chilenisch",
     "colombiana": "Kolumbianisch",
     "dominicana": "Dominikanisch",
-    "ecuatoriana": "Ecuadorianisch", 
+    "ecuatoriana": "Ecuadorianisch",
     "jamaicana": "Jamaikanisch",
     "mexicana": "Mexikanisch",
     "paraguaya": "Paraguayisch",
@@ -517,186 +530,176 @@
         "name": "Calcula Pax",
         "description": "Passt Mengen je nach Gästen an",
         "preview": "Skaliert Rezepte mit mathematischer Präzision für jede Veranstaltung"
-  },
-  "cookies": {
-    "banner": {
-      "title": "Wir verwenden Cookies",
-      "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Durch Klicken auf 'Akzeptieren' stimmen Sie der Verwendung aller Cookies zu.",
-      "accept": "Akzeptieren",
-      "reject": "Ablehnen",
-      "learn_more": "Mehr erfahren",
-      "close": "Schließen"
-    }
-    },
-    "pages": {
-      "mentoria": {
-        "seo": {
-          "title": "Online-Mentoring - AI Chef Pro | Beschleunigen Sie Ihre Kochkarriere",
-          "description": "Personalisiertes Mentoring für Köche mit künstlicher Intelligenz. Beschleunigen Sie Ihre berufliche Entwicklung mit spezialisiertem Gastronomie-Coaching.",
-          "keywords": "ki tools restaurant, künstliche intelligenz gastronomie, restaurant management software ki, ki für restaurantbesitzer, ki tools für köche, kostenverwaltung restaurant ki, ki für bars und cafés, gastronomie ki apps, intelligente digitale speisekarte, speisekarte mit künstlicher intelligenz, profi koch ki, ki rezepte, gastronomie marketing ki"
-        },
-        "hero": {
-          "badge": "KI-gestütztes Personalisiertes Mentoring",
-          "title": "Beschleunigen Sie Ihre Kochkarriere",
-          "subtitle": "Personalisiertes Mentoring, das die Erfahrung von Experten-Köchen mit der Kraft der künstlichen Intelligenz kombiniert, um Ihre berufliche Entwicklung zu beschleunigen.",
-          "cta": "Mentoring Anfragen",
-          "rating": "Bewertet mit 5/5 von über 200 Köchen"
-        },
-        "benefits": {
-          "title": "Warum unser Mentoring wählen?",
-          "subtitle": "Transformieren Sie Ihre Karriere mit einem personalisierten Ansatz, der sich an Ihre einzigartigen Ziele anpasst",
-          "items": {
-            "personalized": {
-              "title": "Personalisiertes Mentoring",
-              "description": "Entwicklungsplan angepasst an Ihr Niveau, Ihre Ziele und Ihren spezifischen Kochstil"
-            },
-            "goals": {
-              "title": "Klare Ziele",
-              "description": "Wir definieren spezifische und messbare Ziele, um Ihren beruflichen Fortschritt zu beschleunigen"
-            },
-            "accelerated": {
-              "title": "Beschleunigtes Lernen",
-              "description": "Bewährte Methodologien, die jahrelange Erfahrung in Monate des Trainings komprimieren"
-            },
-            "network": {
-              "title": "Professionelles Netzwerk",
-              "description": "Zugang zu einer exklusiven Gemeinschaft von Köchen und Branchenprofis"
-            }
-          }
-        },
-        "features": {
-          "title": "Was beinhaltet das Mentoring?",
-          "subtitle": "Umfassendes Programm, das alle Aspekte der kulinarischen Berufsentwicklung abdeckt",
-          "items": {
-            "ai_integration": {
-              "title": "KI-Integration",
-              "description": "Lernen Sie, alle AI Chef Pro Tools zu nutzen, um Ihre Effizienz und Kreativität zu maximieren"
-            },
-            "practical_sessions": {
-              "title": "Praktische Sitzungen",
-              "description": "Virtuelle und persönliche Workshops, wo Sie fortgeschrittene Techniken mit direktem Feedback anwenden"
-            },
-            "business_strategy": {
-              "title": "Geschäftsstrategie",
-              "description": "Entwickeln Sie Geschäftsfähigkeiten, um Ihr eigenes Restaurant zu eröffnen oder als Küchenchef aufzusteigen"
-            },
-            "marketing_digital": {
-              "title": "Digitales Marketing",
-              "description": "Bauen Sie Ihre persönliche Marke auf und lernen Sie, sich als Referenz-Koch in sozialen Medien zu positionieren"
-            },
-            "menu_optimization": {
-              "title": "Menü-Optimierung",
-              "description": "Fortgeschrittene Techniken zur Erstellung profitabler, kreativer Menüs, die Gäste begeistern"
-            },
-            "cost_management": {
-              "title": "Kostenmanagement",
-              "description": "Meistern Sie Kostenkontrolle, Bestandsmanagement und Optimierung operationeller Prozesse"
-            }
-          }
-        },
-        "testimonials": {
-          "title": "Was unsere Mentees sagen",
-          "items": {
-            "testimonial_1": {
-              "quote": "Das Mentoring hat meine Perspektive komplett verändert. In 6 Monaten erreichte ich die Beförderung, die ich seit Jahren suchte.",
-              "name": "Carlos Mendoza",
-              "role": "Sous Chef → Küchenchef"
-            },
-            "testimonial_2": {
-              "quote": "Ich verbesserte nicht nur meine kulinarischen Techniken, sondern lernte auch, ein Team zu führen und das Geschäft zu verstehen.",
-              "name": "Ana Sofía Ruiz",
-              "role": "Linienkoch → Restaurantbesitzerin"
-            },
-            "testimonial_3": {
-              "quote": "Die Kombination aus menschlichem Mentoring mit KI-Tools ist revolutionär. Meine Produktivität verdreifachte sich.",
-              "name": "Diego Fernández",
-              "role": "Konditor"
-            }
-          }
-        },
-        "cta": {
-          "title": "Bereit, Ihre Karriere zu beschleunigen?",
-          "subtitle": "Schließen Sie sich über 200 Köchen an, die bereits ihre berufliche Zukunft transformieren",
-          "button": "Mentoring Anfragen",
-          "availability": "Begrenzte Plätze - Nur 10 Mentees pro Monat"
+      },
+      "cookies": {
+        "banner": {
+          "title": "Wir verwenden Cookies",
+          "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Durch Klicken auf 'Akzeptieren' stimmen Sie der Verwendung aller Cookies zu.",
+          "accept": "Akzeptieren",
+          "reject": "Ablehnen",
+          "learn_more": "Mehr erfahren",
+          "close": "Schließen"
         }
       },
-      "services": {
-      "title": "Services - AI Chef Pro",
-      "description": "Entdecken Sie alle KI-Services von AI Chef Pro für Gastronomie-Profis.",
-      "heading": "Unsere Services",
-      "content": "Bei AI Chef Pro bieten wir eine breite Palette von KI-Services für Köche und Gastronomieprofis."
-    },
-    "legal": {
-      "title": "Impressum - AI Chef Pro",
-      "description": "Rechtliche Informationen über AI Chef Pro, Nutzungsbedingungen und allgemeine Geschäftsbedingungen.",
-      "heading": "Impressum",
-      "content": "Diese Seite enthält rechtliche Informationen zur Nutzung von AI Chef Pro und seinen Services.",
-      "content_paragraphs": [
-        "<h2>1. Allgemeine Informationen</h2><p><strong>Website-Eigentümer:</strong> John Guerrero</p><p><strong>Handelsname:</strong> AI Chef Pro</p><p><strong>Kontakt-E-Mail:</strong> info@aichef.pro</p><p><strong>Telefon:</strong> +34 744 717 942</p>",
-        "<h2>2. Zweck und Aktivität</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die Tools und Anwendungen für Kochprofis anbietet. Unsere Services umfassen mehr als 55 spezialisierte Anwendungen von kulinarischer Kreativität bis hin zur gastronomischen Unternehmensführung.</p>",
-        "<h2>8. Kontakt</h2><p>Für rechtliche Beratung oder Beschwerden können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "cookies": {
-      "title": "Cookie-Richtlinie - AI Chef Pro",
-      "description": "Informationen über die Verwendung von Cookies bei AI Chef Pro und wie Sie Ihre Einstellungen verwalten.",
-      "heading": "Cookie-Richtlinie",
-      "content": "Bei AI Chef Pro verwenden wir Cookies, um Ihre Benutzererfahrung zu verbessern und Ihnen personalisierte Inhalte anzubieten.",
-      "content_paragraphs": [
-        "<h2>1. Was sind Cookies?</h2><p>Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie AI Chef Pro besuchen. Sie helfen uns, Ihre Präferenzen zu speichern und Ihre Erfahrung mit unseren kulinarischen KI-Tools zu verbessern.</p>",
-        "<h2>2. Arten von Cookies, die wir verwenden</h2><p><strong>Essentielle Cookies:</strong> Notwendig für die grundlegende Funktionsweise unserer KI-Anwendungen.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools verwenden, um sie zu verbessern.</p>",
-        "<h2>3. Zweck der Cookies</h2><p>Wir verwenden Cookies, um Ihre gastronomische Erfahrung zu personalisieren, Ihre Lieblingsrezepte zu speichern, Ihre Sitzungen aktiv zu halten und die Nutzung unserer kulinarischen KI-Anwendungen zu analysieren, um unsere Dienste zu verbessern.</p>",
-        "<h2>4. Cookie-Verwaltung</h2><p>Sie können Ihren Browser so konfigurieren, dass er Cookies ablehnt, obwohl dies die Funktionalität einiger unserer KI-Tools beeinträchtigen könnte. Sie können gespeicherte Cookies auch jederzeit aus Ihren Browser-Einstellungen löschen.</p>",
-        "<h2>5. Drittanbieter-Cookies</h2><p>Einige Cookies können von Drittanbieterdiensten gesetzt werden, die wir für Analytics und zusätzliche Funktionalitäten verwenden. Diese Drittanbieter haben ihre eigenen Datenschutzrichtlinien.</p>",
-        "<h2>6. Updates</h2><p>Diese Cookie-Richtlinie kann regelmäßig aktualisiert werden. Wir werden Sie über wichtige Änderungen und das Datum der letzten Aktualisierung informieren.</p>",
-        "<h2>7. Kontakt</h2><p>Wenn Sie Fragen zur Verwendung von Cookies haben, kontaktieren Sie uns unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "privacy": {
-      "title": "Datenschutzrichtlinie - AI Chef Pro",
-      "description": "Informationen darüber, wie wir Ihre persönlichen Daten bei AI Chef Pro schützen und behandeln.",
-      "heading": "Datenschutzrichtlinie",
-      "content": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen.",
-      "content_paragraphs": [
-        "<h2>1. Informationen, die wir sammeln</h2><p>Bei AI Chef Pro sammeln wir Informationen, wenn Sie mit unseren kulinarischen KI-Diensten interagieren. Dazu gehören Registrierungsdaten, gastronomische Präferenzen und technische Informationen über die Nutzung unserer Anwendungen.</p>",
-        "<h2>2. Verwendung der Informationen</h2><p>Wir verwenden Ihre Informationen, um Ihr kulinarisches Erlebnis zu personalisieren, unsere KI-Tools zu verbessern, technischen Support zu bieten und neue gastronomische Funktionen zu entwickeln, die sich an Ihre beruflichen Bedürfnisse anpassen.</p>",
-        "<h2>3. Datenschutz</h2><p>Wir implementieren technische und organisatorische Sicherheitsmaßnahmen, um Ihre persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Ihre Daten werden verschlüsselt und sicher gespeichert.</p>",
-        "<h2>4. Informationen teilen</h2><p>Wir verkaufen, vermarkten oder übertragen Ihre persönlichen Informationen nicht an Dritte, außer wenn es zur Bereitstellung unserer Dienste erforderlich ist oder wenn das Gesetz es verlangt.</p>",
-        "<h2>5. Ihre Rechte</h2><p>Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen, sie zu berichtigen, zu löschen und zu portieren. Sie können auch der Verarbeitung widersprechen und deren Einschränkung beantragen, indem Sie uns kontaktieren.</p>",
-        "<h2>6. Cookies und ähnliche Technologien</h2><p>Wir verwenden Cookies, um die Funktionalität unserer kulinarischen KI-Anwendungen zu verbessern und Ihr Erlebnis zu personalisieren. Sie können Ihre Cookie-Einstellungen jederzeit verwalten.</p>",
-        "<h2>7. Kontakt</h2><p>Für Fragen zu dieser Datenschutzrichtlinie können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "terms": {
-      "title": "Allgemeine Geschäftsbedingungen - AI Chef Pro",
-      "description": "Allgemeine Geschäftsbedingungen für die Nutzung von AI Chef Pro und seinen Services.",
-      "heading": "Allgemeine Geschäftsbedingungen",
-      "content": "Diese allgemeinen Geschäftsbedingungen regeln die Nutzung von AI Chef Pro und seinen Services.",
-      "content_paragraphs": [
-        "<h2>1. Annahme der Bedingungen</h2><p>Durch den Zugriff auf und die Nutzung von AI Chef Pro akzeptieren Sie diese Geschäftsbedingungen. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, sollten Sie unsere kulinarischen KI-Dienste nicht nutzen.</p>",
-        "<h2>2. Servicebeschreibung</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die mehr als 55 Tools für Küchenprofi anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Unternehmensführung.</p>",
-        "<h2>3. Benutzerregistrierung und Konto</h2><p>Um auf bestimmte Funktionen zugreifen zu können, müssen Sie ein Konto erstellen und genaue, aktuelle Informationen angeben. Sie sind verantwortlich für die Vertraulichkeit Ihres Kontos und Passworts.</p>",
-        "<h2>4. Erlaubte Nutzung</h2><p>Sie dürfen AI Chef Pro für legitime gastronomische berufliche Zwecke verwenden. Die Nutzung für illegale Aktivitäten, Spam oder jede Aktivität, die unseren Diensten oder anderen Benutzern schaden könnte, ist nicht erlaubt.</p>",
-        "<h2>5. Geistiges Eigentum</h2><p>Alle Inhalte, Marken, Logos und Technologien von AI Chef Pro gehören John Guerrero oder seinen Lizenzgebern. Von der KI generierte Rezepte und Inhalte können vom Benutzer entsprechend seinem Abonnement verwendet werden.</p>",
-        "<h2>6. Abonnements und Zahlungen</h2><p>Wir bieten verschiedene Abonnementpläne mit unterschiedlichen Funktionen an. Zahlungen werden sicher verarbeitet und Verlängerungen erfolgen automatisch entsprechend dem gewählten Plan.</p>",
-        "<h2>7. Beschränkungen und Verantwortlichkeiten</h2><p>AI Chef Pro wird 'wie besehen' bereitgestellt. Wir garantieren nicht, dass der Service fehlerfrei oder unterbrechungsfrei ist. Unsere Haftung ist auf den für den Service gezahlten Betrag beschränkt.</p>",
-        "<h2>8. Kündigung</h2><p>Wir können Ihr Konto sperren oder kündigen, wenn Sie gegen diese Bedingungen verstoßen. Sie können Ihr Abonnement jederzeit über Ihr Benutzerpanel kündigen.</p>",
-        "<h2>9. Änderungen</h2><p>Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden Sie über wichtige Änderungen per E-Mail oder durch Hinweise auf der Plattform informieren.</p>",
-        "<h2>10. Kontakt</h2><p>Für Fragen zu diesen Bedingungen können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
-      ]
-    }
-  },
-  "cookies": {
-    "banner": {
-      "title": "Wir verwenden Cookies",
-      "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Durch Klicken auf 'Akzeptieren' stimmen Sie der Verwendung aller Cookies zu.",
-      "accept": "Akzeptieren",
-      "reject": "Ablehnen",
-      "learn_more": "Mehr erfahren",
-      "close": "Schließen"
-    }
-  }
+      "pages": {
+        "mentoria": {
+          "seo": {
+            "title": "Online-Mentoring - AI Chef Pro | Beschleunigen Sie Ihre Kochkarriere",
+            "description": "Personalisiertes Mentoring für Köche mit künstlicher Intelligenz. Beschleunigen Sie Ihre berufliche Entwicklung mit spezialisiertem Gastronomie-Coaching.",
+            "keywords": "ki tools restaurant, künstliche intelligenz gastronomie, restaurant management software ki, ki für restaurantbesitzer, ki tools für köche, kostenverwaltung restaurant ki, ki für bars und cafés, gastronomie ki apps, intelligente digitale speisekarte, speisekarte mit künstlicher intelligenz, profi koch ki, ki rezepte, gastronomie marketing ki"
+          },
+          "hero": {
+            "badge": "KI-gestütztes Personalisiertes Mentoring",
+            "title": "Beschleunigen Sie Ihre Kochkarriere",
+            "subtitle": "Personalisiertes Mentoring, das die Erfahrung von Experten-Köchen mit der Kraft der künstlichen Intelligenz kombiniert, um Ihre berufliche Entwicklung zu beschleunigen.",
+            "cta": "Mentoring Anfragen",
+            "rating": "Bewertet mit 5/5 von über 200 Köchen"
+          },
+          "benefits": {
+            "title": "Warum unser Mentoring wählen?",
+            "subtitle": "Transformieren Sie Ihre Karriere mit einem personalisierten Ansatz, der sich an Ihre einzigartigen Ziele anpasst",
+            "items": {
+              "personalized": {
+                "title": "Personalisiertes Mentoring",
+                "description": "Entwicklungsplan angepasst an Ihr Niveau, Ihre Ziele und Ihren spezifischen Kochstil"
+              },
+              "goals": {
+                "title": "Klare Ziele",
+                "description": "Wir definieren spezifische und messbare Ziele, um Ihren beruflichen Fortschritt zu beschleunigen"
+              },
+              "accelerated": {
+                "title": "Beschleunigtes Lernen",
+                "description": "Bewährte Methodologien, die jahrelange Erfahrung in Monate des Trainings komprimieren"
+              },
+              "network": {
+                "title": "Professionelles Netzwerk",
+                "description": "Zugang zu einer exklusiven Gemeinschaft von Köchen und Branchenprofis"
+              }
+            }
+          },
+          "features": {
+            "title": "Was beinhaltet das Mentoring?",
+            "subtitle": "Umfassendes Programm, das alle Aspekte der kulinarischen Berufsentwicklung abdeckt",
+            "items": {
+              "ai_integration": {
+                "title": "KI-Integration",
+                "description": "Lernen Sie, alle AI Chef Pro Tools zu nutzen, um Ihre Effizienz und Kreativität zu maximieren"
+              },
+              "practical_sessions": {
+                "title": "Praktische Sitzungen",
+                "description": "Virtuelle und persönliche Workshops, wo Sie fortgeschrittene Techniken mit direktem Feedback anwenden"
+              },
+              "business_strategy": {
+                "title": "Geschäftsstrategie",
+                "description": "Entwickeln Sie Geschäftsfähigkeiten, um Ihr eigenes Restaurant zu eröffnen oder als Küchenchef aufzusteigen"
+              },
+              "marketing_digital": {
+                "title": "Digitales Marketing",
+                "description": "Bauen Sie Ihre persönliche Marke auf und lernen Sie, sich als Referenz-Koch in sozialen Medien zu positionieren"
+              },
+              "menu_optimization": {
+                "title": "Menü-Optimierung",
+                "description": "Fortgeschrittene Techniken zur Erstellung profitabler, kreativer Menüs, die Gäste begeistern"
+              },
+              "cost_management": {
+                "title": "Kostenmanagement",
+                "description": "Meistern Sie Kostenkontrolle, Bestandsmanagement und Optimierung operationeller Prozesse"
+              }
+            }
+          },
+          "testimonials": {
+            "title": "Was unsere Mentees sagen",
+            "items": {
+              "testimonial_1": {
+                "quote": "Das Mentoring hat meine Perspektive komplett verändert. In 6 Monaten erreichte ich die Beförderung, die ich seit Jahren suchte.",
+                "name": "Carlos Mendoza",
+                "role": "Sous Chef → Küchenchef"
+              },
+              "testimonial_2": {
+                "quote": "Ich verbesserte nicht nur meine kulinarischen Techniken, sondern lernte auch, ein Team zu führen und das Geschäft zu verstehen.",
+                "name": "Ana Sofía Ruiz",
+                "role": "Linienkoch → Restaurantbesitzerin"
+              },
+              "testimonial_3": {
+                "quote": "Die Kombination aus menschlichem Mentoring mit KI-Tools ist revolutionär. Meine Produktivität verdreifachte sich.",
+                "name": "Diego Fernández",
+                "role": "Konditor"
+              }
+            }
+          },
+          "cta": {
+            "title": "Bereit, Ihre Karriere zu beschleunigen?",
+            "subtitle": "Schließen Sie sich über 200 Köchen an, die bereits ihre berufliche Zukunft transformieren",
+            "button": "Mentoring Anfragen",
+            "availability": "Begrenzte Plätze - Nur 10 Mentees pro Monat"
+          }
+        },
+        "services": {
+          "title": "Services - AI Chef Pro",
+          "description": "Entdecken Sie alle KI-Services von AI Chef Pro für Gastronomie-Profis.",
+          "heading": "Unsere Services",
+          "content": "Bei AI Chef Pro bieten wir eine breite Palette von KI-Services für Köche und Gastronomieprofis."
+        },
+        "legal": {
+          "title": "Impressum - AI Chef Pro",
+          "description": "Rechtliche Informationen über AI Chef Pro, Nutzungsbedingungen und allgemeine Geschäftsbedingungen.",
+          "heading": "Impressum",
+          "content": "Diese Seite enthält rechtliche Informationen zur Nutzung von AI Chef Pro und seinen Services.",
+          "content_paragraphs": [
+            "<h2>1. Allgemeine Informationen</h2><p><strong>Website-Eigentümer:</strong> John Guerrero</p><p><strong>Handelsname:</strong> AI Chef Pro</p><p><strong>Kontakt-E-Mail:</strong> info@aichef.pro</p><p><strong>Telefon:</strong> +34 744 717 942</p>",
+            "<h2>2. Zweck und Aktivität</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die Tools und Anwendungen für Kochprofis anbietet. Unsere Services umfassen mehr als 55 spezialisierte Anwendungen von kulinarischer Kreativität bis hin zur gastronomischen Unternehmensführung.</p>",
+            "<h2>8. Kontakt</h2><p>Für rechtliche Beratung oder Beschwerden können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "cookies": {
+          "title": "Cookie-Richtlinie - AI Chef Pro",
+          "description": "Informationen über die Verwendung von Cookies bei AI Chef Pro und wie Sie Ihre Einstellungen verwalten.",
+          "heading": "Cookie-Richtlinie",
+          "content": "Bei AI Chef Pro verwenden wir Cookies, um Ihre Benutzererfahrung zu verbessern und Ihnen personalisierte Inhalte anzubieten.",
+          "content_paragraphs": [
+            "<h2>1. Was sind Cookies?</h2><p>Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie AI Chef Pro besuchen. Sie helfen uns, Ihre Präferenzen zu speichern und Ihre Erfahrung mit unseren kulinarischen KI-Tools zu verbessern.</p>",
+            "<h2>2. Arten von Cookies, die wir verwenden</h2><p><strong>Essentielle Cookies:</strong> Notwendig für die grundlegende Funktionsweise unserer KI-Anwendungen.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools verwenden, um sie zu verbessern.</p>",
+            "<h2>3. Zweck der Cookies</h2><p>Wir verwenden Cookies, um Ihre gastronomische Erfahrung zu personalisieren, Ihre Lieblingsrezepte zu speichern, Ihre Sitzungen aktiv zu halten und die Nutzung unserer kulinarischen KI-Anwendungen zu analysieren, um unsere Dienste zu verbessern.</p>",
+            "<h2>4. Cookie-Verwaltung</h2><p>Sie können Ihren Browser so konfigurieren, dass er Cookies ablehnt, obwohl dies die Funktionalität einiger unserer KI-Tools beeinträchtigen könnte. Sie können gespeicherte Cookies auch jederzeit aus Ihren Browser-Einstellungen löschen.</p>",
+            "<h2>5. Drittanbieter-Cookies</h2><p>Einige Cookies können von Drittanbieterdiensten gesetzt werden, die wir für Analytics und zusätzliche Funktionalitäten verwenden. Diese Drittanbieter haben ihre eigenen Datenschutzrichtlinien.</p>",
+            "<h2>6. Updates</h2><p>Diese Cookie-Richtlinie kann regelmäßig aktualisiert werden. Wir werden Sie über wichtige Änderungen und das Datum der letzten Aktualisierung informieren.</p>",
+            "<h2>7. Kontakt</h2><p>Wenn Sie Fragen zur Verwendung von Cookies haben, kontaktieren Sie uns unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "privacy": {
+          "title": "Datenschutzrichtlinie - AI Chef Pro",
+          "description": "Informationen darüber, wie wir Ihre persönlichen Daten bei AI Chef Pro schützen und behandeln.",
+          "heading": "Datenschutzrichtlinie",
+          "content": "Ihre Privatsphäre ist uns wichtig. Diese Richtlinie erklärt, wie wir Ihre persönlichen Informationen sammeln, verwenden und schützen.",
+          "content_paragraphs": [
+            "<h2>1. Informationen, die wir sammeln</h2><p>Bei AI Chef Pro sammeln wir Informationen, wenn Sie mit unseren kulinarischen KI-Diensten interagieren. Dazu gehören Registrierungsdaten, gastronomische Präferenzen und technische Informationen über die Nutzung unserer Anwendungen.</p>",
+            "<h2>2. Verwendung der Informationen</h2><p>Wir verwenden Ihre Informationen, um Ihr kulinarisches Erlebnis zu personalisieren, unsere KI-Tools zu verbessern, technischen Support zu bieten und neue gastronomische Funktionen zu entwickeln, die sich an Ihre beruflichen Bedürfnisse anpassen.</p>",
+            "<h2>3. Datenschutz</h2><p>Wir implementieren technische und organisatorische Sicherheitsmaßnahmen, um Ihre persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Ihre Daten werden verschlüsselt und sicher gespeichert.</p>",
+            "<h2>4. Informationen teilen</h2><p>Wir verkaufen, vermarkten oder übertragen Ihre persönlichen Informationen nicht an Dritte, außer wenn es zur Bereitstellung unserer Dienste erforderlich ist oder wenn das Gesetz es verlangt.</p>",
+            "<h2>5. Ihre Rechte</h2><p>Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen, sie zu berichtigen, zu löschen und zu portieren. Sie können auch der Verarbeitung widersprechen und deren Einschränkung beantragen, indem Sie uns kontaktieren.</p>",
+            "<h2>6. Cookies und ähnliche Technologien</h2><p>Wir verwenden Cookies, um die Funktionalität unserer kulinarischen KI-Anwendungen zu verbessern und Ihr Erlebnis zu personalisieren. Sie können Ihre Cookie-Einstellungen jederzeit verwalten.</p>",
+            "<h2>7. Kontakt</h2><p>Für Fragen zu dieser Datenschutzrichtlinie können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "terms": {
+          "title": "Allgemeine Geschäftsbedingungen - AI Chef Pro",
+          "description": "Allgemeine Geschäftsbedingungen für die Nutzung von AI Chef Pro und seinen Services.",
+          "heading": "Allgemeine Geschäftsbedingungen",
+          "content": "Diese allgemeinen Geschäftsbedingungen regeln die Nutzung von AI Chef Pro und seinen Services.",
+          "content_paragraphs": [
+            "<h2>1. Annahme der Bedingungen</h2><p>Durch den Zugriff auf und die Nutzung von AI Chef Pro akzeptieren Sie diese Geschäftsbedingungen. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, sollten Sie unsere kulinarischen KI-Dienste nicht nutzen.</p>",
+            "<h2>2. Servicebeschreibung</h2><p>AI Chef Pro ist eine auf Gastronomie spezialisierte KI-Plattform, die mehr als 55 Tools für Küchenprofi anbietet, einschließlich kulinarischer Kreativität, Weltkochbücher und Unternehmensführung.</p>",
+            "<h2>3. Benutzerregistrierung und Konto</h2><p>Um auf bestimmte Funktionen zugreifen zu können, müssen Sie ein Konto erstellen und genaue, aktuelle Informationen angeben. Sie sind verantwortlich für die Vertraulichkeit Ihres Kontos und Passworts.</p>",
+            "<h2>4. Erlaubte Nutzung</h2><p>Sie dürfen AI Chef Pro für legitime gastronomische berufliche Zwecke verwenden. Die Nutzung für illegale Aktivitäten, Spam oder jede Aktivität, die unseren Diensten oder anderen Benutzern schaden könnte, ist nicht erlaubt.</p>",
+            "<h2>5. Geistiges Eigentum</h2><p>Alle Inhalte, Marken, Logos und Technologien von AI Chef Pro gehören John Guerrero oder seinen Lizenzgebern. Von der KI generierte Rezepte und Inhalte können vom Benutzer entsprechend seinem Abonnement verwendet werden.</p>",
+            "<h2>6. Abonnements und Zahlungen</h2><p>Wir bieten verschiedene Abonnementpläne mit unterschiedlichen Funktionen an. Zahlungen werden sicher verarbeitet und Verlängerungen erfolgen automatisch entsprechend dem gewählten Plan.</p>",
+            "<h2>7. Beschränkungen und Verantwortlichkeiten</h2><p>AI Chef Pro wird 'wie besehen' bereitgestellt. Wir garantieren nicht, dass der Service fehlerfrei oder unterbrechungsfrei ist. Unsere Haftung ist auf den für den Service gezahlten Betrag beschränkt.</p>",
+            "<h2>8. Kündigung</h2><p>Wir können Ihr Konto sperren oder kündigen, wenn Sie gegen diese Bedingungen verstoßen. Sie können Ihr Abonnement jederzeit über Ihr Benutzerpanel kündigen.</p>",
+            "<h2>9. Änderungen</h2><p>Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Wir werden Sie über wichtige Änderungen per E-Mail oder durch Hinweise auf der Plattform informieren.</p>",
+            "<h2>10. Kontakt</h2><p>Für Fragen zu diesen Bedingungen können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
+          ]
+        }
+      }
     },
     "concepts": {
       "catering_ai": {
@@ -1330,5 +1333,167 @@
     "text": "30 KI-Hacks für mehr Effizienz in deiner Küche",
     "text_short": "30 KI-Hacks für deine Küche",
     "cta": "Mehr erfahren"
+  },
+  "landingRestaurantes": {
+    "seo": {
+      "title": "KI-Tools für Restaurants | AI Chef Pro",
+      "description": "55+ KI-Tools für Restaurantbesitzer. Kosten kontrollieren, Speisekarte gestalten, Allergene verwalten und Marketing automatisieren. Kostenlos starten.",
+      "keywords": "ki tools restaurant, künstliche intelligenz restaurant, restaurant management ki, ki für restaurantbesitzer, food cost ki, digitale speisekarte ki, restaurant marketing ki",
+      "url_slug": "ki-tools-restaurant"
+    },
+    "hero": {
+      "badge": "55+ auf Gastronomie spezialisierte Tools",
+      "h1": "KI-Tools für Restaurants",
+      "subtitle": "Die KI-Suite für Restaurantbesitzer, Bar- und Café-Betreiber. Ohne technische Kenntnisse. Ohne Lernkurve.",
+      "tagline": "Kosten kontrollieren · Speisekarte gestalten · Marketing automatisieren · Abfall reduzieren",
+      "cta_primary": "Jetzt kostenlos starten",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Kostenloser Plan verfügbar"
+    },
+    "results": [
+      {
+        "metric": "22%",
+        "label": "durchschnittliche Reduzierung der Zutatenkosten"
+      },
+      {
+        "metric": "35%",
+        "label": "weniger Zeit für neue Gerichtentwicklung"
+      },
+      {
+        "metric": "30%",
+        "label": "Reduzierung von Lebensmittelverschwendung"
+      },
+      {
+        "metric": "55+",
+        "label": "auf Gastronomie spezialisierte Tools"
+      }
+    ],
+    "tools_section": {
+      "title": "Was kann KI für Ihr Restaurant tun?",
+      "subtitle": "Jedes Tool löst ein echtes Problem des Gastronomiealltags. Ohne Fachjargon, ohne komplexe Konfiguration."
+    },
+    "tools": [
+      {
+        "title": "Speisekarten-Design",
+        "description": "Erstellen Sie vollständige Speisekarten, die auf Ihr Konzept, die Saison und Ihren Ziel-Food-Cost abgestimmt sind.",
+        "keywords": [
+          "digitale Speisekarte",
+          "KI-Menü",
+          "Menü-Engineering"
+        ]
+      },
+      {
+        "title": "Kostenkontrolle & Food Cost",
+        "description": "Berechnen Sie die genauen Kosten jedes Gerichts, setzen Sie Verkaufspreise mit der gewünschten Marge und ermitteln Sie, wo Sie Geld verlieren.",
+        "keywords": [
+          "Food Cost",
+          "Gerichtkosten",
+          "Verkaufspreis"
+        ]
+      },
+      {
+        "title": "Abfallreduzierung",
+        "description": "Planen Sie Einkäufe nach dem tatsächlichen Bedarf, nutzen Sie Zutaten optimal mit Zero-Waste-Rezepten und eliminieren Sie Verschwendung.",
+        "keywords": [
+          "Küchenabfall",
+          "Lebensmittelverschwendung",
+          "Einkaufsplanung"
+        ]
+      },
+      {
+        "title": "Allergenverwaltung",
+        "description": "Identifizieren und kennzeichnen Sie automatisch die 14 meldepflichtigen Allergene in allen Ihren Gerichten. Vereinfachte rechtliche Compliance.",
+        "keywords": [
+          "Restaurant-Allergene",
+          "Allergenvorschriften",
+          "Kennzeichnung"
+        ]
+      },
+      {
+        "title": "Gastronomie-Marketing",
+        "description": "Erstellen Sie Social-Media-Inhalte, Google-My-Business-Profile, Antworten auf Bewertungen und Werbekampagnen in Minuten.",
+        "keywords": [
+          "Restaurant-Marketing",
+          "Gastronomie Social Media",
+          "Google My Business"
+        ]
+      },
+      {
+        "title": "Kulinarische Kreativität",
+        "description": "Entwickeln Sie neue Gerichte, experimentieren Sie mit Pairings und adaptieren Sie Rezepte aus 25 Weltküchen für Ihr Konzept.",
+        "keywords": [
+          "kulinarische Kreativität",
+          "neue Gerichte",
+          "KI-Rezepte"
+        ]
+      }
+    ],
+    "profiles_section": {
+      "title": "Für Gastronomieprofis entwickelt",
+      "subtitle": "Ob Stammkneipe oder Restaurantkette – AI Chef Pro hat Tools für jede Realität."
+    },
+    "profiles": [
+      {
+        "title": "Unabhängiges Restaurant",
+        "description": "Verwalten Sie Speisekarte, Kosten und Marketing, ohne auf teure Agenturen oder Berater angewiesen zu sein."
+      },
+      {
+        "title": "Bar und Café",
+        "description": "Bauen Sie Ihr gastronomisches Angebot auf, kontrollieren Sie den Warenbestand und gewinnen Sie mehr Gäste."
+      },
+      {
+        "title": "Restaurantkette",
+        "description": "Standardisieren Sie Prozesse, kontrollieren Sie Kosten in mehreren Betrieben und skalieren Sie Ihr Geschäft."
+      },
+      {
+        "title": "Executive Chef",
+        "description": "Optimieren Sie Menü-Engineering, Nährwertanalyse und die Entwicklung von Signature-Rezepten."
+      }
+    ],
+    "why_section": {
+      "title": "Warum KI die Gastronomie verändert",
+      "body": "Restaurants, die KI-Tools einsetzen, konkurrieren nicht mehr mit denen, die es nicht tun. Der Unterschied liegt in der Entscheidungsgeschwindigkeit, der Kostenkontrolle und der Fähigkeit, ein differenziertes Angebot zu schaffen.",
+      "benefits": [
+        "Gestalten Sie Ihre Speisekarte in Stunden, nicht Wochen",
+        "Berechnen Sie den Food Cost jedes Gerichts auf den Cent genau",
+        "Generieren Sie Social-Media-Inhalte in Minuten",
+        "Identifizieren Sie Allergene automatisch in allen Ihren Gerichten",
+        "Reduzieren Sie Abfall mit intelligenter Einkaufsplanung",
+        "Greifen Sie auf Rezepte aus 25 Weltküchen für Ihr Unternehmen zu"
+      ]
+    },
+    "pricing_section": {
+      "title": "Pläne für jeden Gastronomietyp",
+      "subtitle": "Vom kostenlosen Plan bis zum unbegrenzten Einsatz für große Betriebe.",
+      "annual_note": "Auch als Jahresplan erhältlich: AI Chef Premium Plus Jährlich für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufige Fragen zu KI für Restaurants"
+    },
+    "faq": [
+      {
+        "question": "Welche KI-Tools sind für ein Restaurant nützlich?",
+        "answer": "Die nützlichsten KI-Tools für Restaurants umfassen: Speisekarten-Generatoren, Gerichtkostenrechner, Allergen-Manager, Social-Media-Marketing-Tools, Einkaufsplaner und Abfallkontrolle. AI Chef Pro bündelt 55+ dieser spezialisierten Tools in einer einzigen Suite."
+      },
+      {
+        "question": "Kann KI helfen, die Kosten in einem Restaurant zu senken?",
+        "answer": "Ja. KI ermöglicht die Optimierung des Food Costs durch genaue Kalkulation jedes Gerichts, die Erkennung unnötiger Verluste, die bedarfsgerechte Einkaufsplanung und die Preisanpassung zur Margenmaximierung. AI Chef Pro-Nutzer berichten von einer durchschnittlichen Kostenreduzierung von 22%."
+      },
+      {
+        "question": "Benötige ich technische Kenntnisse, um KI-Tools in meinem Restaurant zu nutzen?",
+        "answer": "Nein. AI Chef Pro ist für Restaurantbesitzer und -manager ohne technische Ausbildung konzipiert. Die Tools arbeiten mit natürlicher Sprache: Sie beschreiben, was Sie benötigen, und die KI liefert das Ergebnis. Keine Programmierung, keine komplexe Konfiguration."
+      },
+      {
+        "question": "Was kostet der Einsatz von KI für die Restaurantverwaltung?",
+        "answer": "AI Chef Pro bietet einen kostenlosen Plan (AI Chef Mitglied) mit 5 Nutzungen pro Monat. Kostenpflichtige Pläne beginnen bei 25€/Monat (AI Chef Premium Pro, 150 Nutzungen) und gehen bis zu 95€/Monat für unbegrenzte Nutzung. Es gibt auch einen Jahresplan für 950€ entsprechend 79€/Monat."
+      }
+    ],
+    "cta_section": {
+      "title": "Starten Sie heute mit KI-Tools für Ihr Restaurant",
+      "subtitle": "Kostenloser Plan verfügbar. Keine Kreditkarte. Sofortiger Zugang zu 55+ auf Gastronomie spezialisierten Tools.",
+      "primary": "Kostenlos ausprobieren",
+      "secondary": "Alle Pläne ansehen"
+    },
+    "breadcrumb": "KI-Tools für Restaurants"
   }
 }

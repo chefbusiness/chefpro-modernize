@@ -1,12 +1,12 @@
 {
-"whatsapp": {
-  "tooltip": "Contacta con nosotros en WhatsApp"
-},
-"trusted_by": {
-  "title": "La elección de los profesionales de hostelería de clase mundial",
-  "badge": "23+ marcas de élite"
-},
-"nav": {
+  "whatsapp": {
+    "tooltip": "Contacta con nosotros en WhatsApp"
+  },
+  "trusted_by": {
+    "title": "La elección de los profesionales de hostelería de clase mundial",
+    "badge": "23+ marcas de élite"
+  },
+  "nav": {
     "inicio": "Inicio",
     "servicios": "Servicios",
     "mentoria_online": "Mentoría Online",
@@ -36,11 +36,24 @@
     "badge": "Nuevo: Inteligencia Artificial para Chefs",
     "title_prefix": "Transforma tu",
     "title_suffix": "con",
-    "title_brand": "AI Chef Pro", 
+    "title_brand": "AI Chef Pro",
     "subtitle": "55+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.",
     "description": "Suite de Herramientas y Aplicaciones de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
     "rating": "Calificación: 5 estrellas",
-    "business_types": ["Gestión", "Restaurante", "Catering", "Pizzería", "Hamburguesería", "Panadería", "Pastelería", "Chocolatería", "Heladería", "Dark Kitchen", "Cafetería", "Brunch"],
+    "business_types": [
+      "Gestión",
+      "Restaurante",
+      "Catering",
+      "Pizzería",
+      "Hamburguesería",
+      "Panadería",
+      "Pastelería",
+      "Chocolatería",
+      "Heladería",
+      "Dark Kitchen",
+      "Cafetería",
+      "Brunch"
+    ],
     "see_resources": "VER RECURSOS",
     "social_proof_label": "Soluciones y recetas generadas"
   },
@@ -54,7 +67,7 @@
     "apps_label": "Apps Especializadas",
     "cookbooks": "25+",
     "cookbooks_label": "Recetarios Regionales",
-    "tools": "10+", 
+    "tools": "10+",
     "tools_label": "Herramientas de Negocio",
     "categories": "6",
     "categories_label": "Categorías Profesionales",
@@ -72,7 +85,7 @@
       "count": "8 apps"
     },
     "cookbooks": {
-      "title": "Recetarios Mundiales", 
+      "title": "Recetarios Mundiales",
       "description": "Domina la cocina global",
       "count": "21 apps"
     },
@@ -157,11 +170,11 @@
   },
   "gallery": {
     "badge": "55+ Apps Especializadas en Acción",
-    "title": "Descubre el Poder de AI Chef Pro", 
+    "title": "Descubre el Poder de AI Chef Pro",
     "description": "Explora capturas reales de nuestras aplicaciones especializadas para profesionales gastronómicos",
     "previous": "Anterior",
     "next": "Siguiente",
-    "counter": "{{current}} de {{total}} aplicaciones mostradas", 
+    "counter": "{{current}} de {{total}} aplicaciones mostradas",
     "explore_all": "Explorar Todas las Apps"
   },
   "screenshots": {
@@ -174,7 +187,7 @@
       "description": "Crea platos contemporáneos únicos con ingredientes de temporada y técnicas innovadoras"
     },
     "catering_ai": {
-      "title": "Catering AI+", 
+      "title": "Catering AI+",
       "description": "Modelo de conocimiento impulsado por inteligencia artificial para chefs, cocineros y emprendedores en el negocio de catering"
     },
     "food_pairing": {
@@ -215,14 +228,24 @@
     }
   },
   "showcase": {
+    "creativity_title": "Creatividad Culinaria",
+    "creativity_subtitle": "Showcase",
+    "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
     "world_title": "Recetarios Mundiales",
     "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
     "business_title": "Herramientas Business",
     "business_description": "6 aplicaciones esenciales para optimizar tu operación diaria",
+    "preview_label": "Preview",
+    "explore_app": "Explorar App",
     "use_case_label": "Caso de uso",
     "use_tool": "Usar Herramienta"
   },
   "cookbooks": {
+    "title": "Recetarios del Mundo",
+    "description": "Explora cocinas auténticas de diferentes culturas con más de 25 recetarios regionales",
+    "europa": "Europa",
+    "latinoamerica": "Latinoamérica",
+    "asia": "Asia",
     "alemana": "Alemana",
     "belga": "Belga",
     "britanica": "Británica",
@@ -252,7 +275,7 @@
   "categories_labels": {
     "creatividad": "Creatividad Culinaria",
     "conceptos": "Conceptos de Negocio",
-    "proveedores": "Proveedores Gastro", 
+    "proveedores": "Proveedores Gastro",
     "marketing": "Marketing & Contenido",
     "recetarios": "Recetarios Mundiales"
   },
@@ -388,38 +411,6 @@
       }
     }
   },
-  "cookbooks": {
-    "title": "Recetarios del Mundo",
-    "description": "Explora cocinas auténticas de diferentes culturas con más de 25 recetarios regionales",
-    "europa": "Europa",
-    "latinoamerica": "Latinoamérica", 
-    "asia": "Asia",
-    "alemana": "Alemana",
-    "belga": "Belga",
-    "britanica": "Británica",
-    "espanola": "Española",
-    "francesa": "Francesa",
-    "griega": "Griega",
-    "portuguesa": "Portuguesa",
-    "paises_bajos": "Países Bajos",
-    "suiza": "Suiza",
-    "turca": "Turca",
-    "argentina": "Argentina",
-    "brasilena": "Brasileña",
-    "chilena": "Chilena",
-    "colombiana": "Colombiana",
-    "dominicana": "Dominicana",
-    "ecuatoriana": "Ecuatoriana",
-    "jamaicana": "Jamaicana",
-    "mexicana": "Mexicana",
-    "paraguaya": "Paraguaya",
-    "peruana": "Peruana",
-    "venezolana": "Venezolana",
-    "china": "China",
-    "india": "India",
-    "japonesa": "Japonesa",
-    "tailandesa": "Tailandesa"
-  },
   "featured": {
     "title_main": "Apps Destacadas",
     "title_sub": "de la Semana",
@@ -473,7 +464,7 @@
     "title_part2": "Mayor Productividad.",
     "title_part3": "Inspiración sin fin.",
     "description_start": "Chef",
-    "description_end": "y su equipo usando AI Chef Pro", 
+    "description_end": "y su equipo usando AI Chef Pro",
     "cta": "Prueba AI Chef Pro",
     "image1_alt": "Chef Diego Schattenhofer usando AI Chef Pro - Taste 1973",
     "image2_alt": "Equipo Taste 1973 con AI Chef Pro",
@@ -591,19 +582,6 @@
       }
     }
   },
-  "showcase": {
-    "creativity_title": "Creatividad Culinaria",
-    "creativity_subtitle": "Showcase",
-    "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
-    "world_title": "Recetarios Mundiales",
-    "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
-    "business_title": "Herramientas Business", 
-    "business_description": "6 aplicaciones esenciales para optimizar tu operación diaria",
-    "preview_label": "Preview",
-    "explore_app": "Explorar App",
-    "use_case_label": "Caso de uso",
-    "use_tool": "Usar Herramienta"
-  },
   "features": {
     "title": "Características Principales",
     "description": "Suite completa de herramientas y aplicaciones de IA para chefs y cocineros que desean acelerar y optimizar su trabajo diario en cocinas profesionales y liberar su creatividad.",
@@ -614,23 +592,23 @@
     "coaching": "Chef Coaching",
     "coaching_desc": "Soporte psicológico y motivacional para mejorar el rendimiento y bienestar en la cocina.",
     "llm_title": "Tecnología LLM Avanzada",
-     "llm_description": "Modelos de lenguaje especializados para el sector gastronómico",
-     "llm_models": {
-       "ai_chef_pro": "Modelos LLM de AI Chef Pro",
-       "mistral": "Mistral AI",
-       "openai": "OpenAI",
-       "anthropic": "Anthropic Claude",
-       "meta_llama": "Meta Llama 3"
-     },
-     "ai_powered": "Inteligencia Artificial Avanzada",
-     "ai_powered_desc": "Modelos GPT especializados en gastronomía",
-     "specialized": "Herramientas Especializadas",
-     "specialized_desc": "55+ aplicaciones para cada necesidad gastronómica",
-     "global": "Cocina Global",
-     "global_desc": "21 recetarios de cocinas del mundo",
-     "business_tools": "Gestión de Negocio",
-     "business_tools_desc": "Optimiza costos, mermas y operaciones"
-   },
+    "llm_description": "Modelos de lenguaje especializados para el sector gastronómico",
+    "llm_models": {
+      "ai_chef_pro": "Modelos LLM de AI Chef Pro",
+      "mistral": "Mistral AI",
+      "openai": "OpenAI",
+      "anthropic": "Anthropic Claude",
+      "meta_llama": "Meta Llama 3"
+    },
+    "ai_powered": "Inteligencia Artificial Avanzada",
+    "ai_powered_desc": "Modelos GPT especializados en gastronomía",
+    "specialized": "Herramientas Especializadas",
+    "specialized_desc": "55+ aplicaciones para cada necesidad gastronómica",
+    "global": "Cocina Global",
+    "global_desc": "21 recetarios de cocinas del mundo",
+    "business_tools": "Gestión de Negocio",
+    "business_tools_desc": "Optimiza costos, mermas y operaciones"
+  },
   "faq": {
     "title": "Preguntas Frecuentes",
     "description": "Encuentra respuestas a las preguntas más comunes sobre AI Chef Pro",
@@ -1079,5 +1057,167 @@
     "text": "30 hacks con IA para mejorar la eficiencia en tu cocina",
     "text_short": "30 hacks de IA para tu cocina",
     "cta": "Leer más"
+  },
+  "landingRestaurantes": {
+    "seo": {
+      "title": "Herramientas de IA para Restaurantes | AI Chef Pro",
+      "description": "55+ herramientas de inteligencia artificial para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Empieza gratis.",
+      "keywords": "herramientas ia restaurante, inteligencia artificial restaurante, software ia hostelería, ia para dueños de restaurante, gestión restaurante con ia, food cost ia, carta digital ia, marketing restaurante ia",
+      "url_slug": "herramientas-ia-para-restaurantes"
+    },
+    "hero": {
+      "badge": "55+ herramientas especializadas en hostelería",
+      "h1": "Herramientas de IA para Restaurantes",
+      "subtitle": "La suite de inteligencia artificial diseñada para dueños de restaurantes, bares y cafeterías. Sin conocimientos técnicos. Sin curva de aprendizaje.",
+      "tagline": "Controla costes · Diseña tu carta · Automatiza el marketing · Reduce mermas",
+      "cta_primary": "Empezar gratis ahora",
+      "cta_secondary": "Ver planes y precios",
+      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+    },
+    "results": [
+      {
+        "metric": "22%",
+        "label": "reducción media en costes de ingredientes"
+      },
+      {
+        "metric": "35%",
+        "label": "menos tiempo en desarrollo de nuevos platos"
+      },
+      {
+        "metric": "30%",
+        "label": "reducción en desperdicio de comida"
+      },
+      {
+        "metric": "55+",
+        "label": "herramientas especializadas en gastronomía"
+      }
+    ],
+    "tools_section": {
+      "title": "¿Qué puede hacer la IA por tu restaurante?",
+      "subtitle": "Cada herramienta resuelve un problema real del día a día en hostelería. Sin tecnicismos, sin configuraciones complejas."
+    },
+    "tools": [
+      {
+        "title": "Diseño de carta y menú",
+        "description": "Genera cartas completas adaptadas a tu concepto, temporada y food cost objetivo. Incluye descripciones atractivas y maridajes.",
+        "keywords": [
+          "carta digital",
+          "menú IA",
+          "ingeniería de menú"
+        ]
+      },
+      {
+        "title": "Control de costes y food cost",
+        "description": "Calcula el coste exacto de cada plato, establece precios de venta con el margen que necesitas y detecta dónde pierdes dinero.",
+        "keywords": [
+          "food cost",
+          "coste plato",
+          "precio venta"
+        ]
+      },
+      {
+        "title": "Reducción de mermas",
+        "description": "Planifica compras según la demanda real, aprovecha géneros al máximo con recetas de aprovechamiento y elimina el desperdicio.",
+        "keywords": [
+          "mermas cocina",
+          "desperdicio alimentario",
+          "planificación compras"
+        ]
+      },
+      {
+        "title": "Gestión de alérgenos",
+        "description": "Identifica y etiqueta automáticamente los 14 alérgenos de obligatoria declaración en todos tus platos. Cumplimiento legal simplificado.",
+        "keywords": [
+          "alérgenos restaurante",
+          "normativa alérgenos",
+          "etiquetado"
+        ]
+      },
+      {
+        "title": "Marketing gastronómico",
+        "description": "Crea contenido para redes sociales, fichas de Google My Business, respuestas a reseñas y campañas promocionales en minutos.",
+        "keywords": [
+          "marketing restaurante",
+          "redes sociales hostelería",
+          "Google My Business"
+        ]
+      },
+      {
+        "title": "Creatividad culinaria",
+        "description": "Desarrolla nuevos platos, experimenta con maridajes y adapta recetas de 25 cocinas del mundo a tu concepto.",
+        "keywords": [
+          "creatividad culinaria",
+          "nuevos platos",
+          "recetas IA"
+        ]
+      }
+    ],
+    "profiles_section": {
+      "title": "Diseñado para profesionales de la restauración",
+      "subtitle": "Tanto si tienes un bar de barrio como una cadena de restaurantes, AI Chef Pro tiene herramientas adaptadas a tu realidad."
+    },
+    "profiles": [
+      {
+        "title": "Restaurante independiente",
+        "description": "Gestiona tu carta, costes y marketing sin depender de agencias ni consultores caros."
+      },
+      {
+        "title": "Bar y cafetería",
+        "description": "Crea tu oferta gastronómica, controla el género y atrae más clientes con contenido profesional."
+      },
+      {
+        "title": "Cadena de restaurantes",
+        "description": "Estandariza procesos, controla costes en múltiples locales y escala tu operación."
+      },
+      {
+        "title": "Chef ejecutivo",
+        "description": "Agiliza la ingeniería de menú, el análisis nutricional y el desarrollo de recetas de autor."
+      }
+    ],
+    "why_section": {
+      "title": "Por qué la inteligencia artificial está cambiando la hostelería",
+      "body": "Los restaurantes que adoptan herramientas de IA no compiten con los que no las usan. La diferencia está en la velocidad de decisión, el control de costes y la capacidad de crear una oferta gastronómica diferenciada.",
+      "benefits": [
+        "Diseña la carta de tu restaurante en horas, no en semanas",
+        "Calcula el food cost de cada plato al céntimo",
+        "Genera contenido para redes en minutos, no en días",
+        "Identifica alérgenos automáticamente en todos tus platos",
+        "Reduce mermas con planificación inteligente de compras",
+        "Accede a recetas de 25 cocinas del mundo adaptadas a tu negocio"
+      ]
+    },
+    "pricing_section": {
+      "title": "Planes para cada tipo de negocio gastronómico",
+      "subtitle": "Desde el plan gratuito para empezar hasta el uso ilimitado para grandes operaciones.",
+      "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre IA para restaurantes"
+    },
+    "faq": [
+      {
+        "question": "¿Qué herramientas de IA son útiles para un restaurante?",
+        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro agrupa 55+ de estas herramientas especializadas en una sola suite."
+      },
+      {
+        "question": "¿Puede la inteligencia artificial ayudar a reducir costes en un restaurante?",
+        "answer": "Sí. La IA permite optimizar el food cost calculando el coste exacto de cada plato, detectar mermas innecesarias, planificar compras según la demanda y ajustar precios de carta para maximizar el margen. Los usuarios de AI Chef Pro reportan una reducción media del 22% en costes de ingredientes."
+      },
+      {
+        "question": "¿Necesito conocimientos técnicos para usar herramientas de IA en mi restaurante?",
+        "answer": "No. AI Chef Pro está diseñado para dueños y gestores de restaurantes sin formación técnica. Las herramientas funcionan con lenguaje natural: describes lo que necesitas y la IA genera el resultado. Sin programación ni configuraciones complejas."
+      },
+      {
+        "question": "¿Cuánto cuesta usar IA para la gestión de restaurantes?",
+        "answer": "AI Chef Pro tiene un plan gratuito (AI Chef Miembro) con 5 usos al mes. Los planes de pago empiezan en 25€/mes (AI Chef Premium Pro, 150 usos) y llegan hasta 95€/mes para uso ilimitado. También hay un plan anual a 950€ que equivale a 79€/mes."
+      }
+    ],
+    "cta_section": {
+      "title": "Empieza hoy con las herramientas de IA para tu restaurante",
+      "subtitle": "Plan gratuito disponible. Sin tarjeta de crédito. Acceso inmediato a 55+ herramientas especializadas en gastronomía y hostelería.",
+      "primary": "Probar gratis ahora",
+      "secondary": "Ver todos los planes"
+    },
+    "breadcrumb": "Herramientas IA para Restaurantes"
   }
 }

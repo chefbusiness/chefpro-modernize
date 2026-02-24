@@ -1,8 +1,8 @@
 {
-"whatsapp": {
+  "whatsapp": {
     "tooltip": "Contact us on WhatsApp"
   },
-"trusted_by": {
+  "trusted_by": {
     "title": "The choice of world-class hospitality professionals",
     "badge": "23+ elite brands"
   },
@@ -39,7 +39,20 @@
     "subtitle": "55+ Specialized AI Tools for Chefs. From Culinary Creativity to Digital Marketing.",
     "description": "Suite of AI Tools and Applications, models trained for daily use by Chefs, Cooks and hospitality professionals.",
     "rating": "Rating: 5 stars",
-    "business_types": ["Management", "Restaurant", "Catering", "Pizzeria", "Burger Bar", "Bakery", "Pastry Shop", "Chocolate Shop", "Ice Cream Shop", "Dark Kitchen", "Coffee Shop", "Brunch"],
+    "business_types": [
+      "Management",
+      "Restaurant",
+      "Catering",
+      "Pizzeria",
+      "Burger Bar",
+      "Bakery",
+      "Pastry Shop",
+      "Chocolate Shop",
+      "Ice Cream Shop",
+      "Dark Kitchen",
+      "Coffee Shop",
+      "Brunch"
+    ],
     "see_resources": "SEE RESOURCES",
     "social_proof_label": "Solutions and recipes generated"
   },
@@ -52,19 +65,19 @@
     "apps": "55+",
     "apps_label": "Specialized Apps",
     "cookbooks": "25+",
-    "cookbooks_label": "Regional Cookbooks", 
+    "cookbooks_label": "Regional Cookbooks",
     "tools": "10+",
     "tools_label": "Business Tools",
     "categories": "6",
     "categories_label": "Professional Categories",
     "new_app": "1",
     "new_app_label": "New App Every Week",
-  "chefs": "764+",
-  "chefs_label": "Chefs & Hospitality Professionals trust us"
-},
+    "chefs": "764+",
+    "chefs_label": "Chefs & Hospitality Professionals trust us"
+  },
   "categories_labels": {
     "creatividad": "Culinary Creativity",
-    "conceptos": "Business Concepts", 
+    "conceptos": "Business Concepts",
     "proveedores": "Gastro Suppliers",
     "marketing": "Marketing & Content",
     "recetarios": "World Cookbooks"
@@ -258,7 +271,7 @@
       "count": "8 apps"
     },
     "cookbooks": {
-      "title": "World Cookbooks", 
+      "title": "World Cookbooks",
       "description": "Master global cuisine",
       "count": "21 apps"
     },
@@ -343,11 +356,11 @@
   },
   "gallery": {
     "badge": "55+ Specialized Apps in Action",
-    "title": "Discover the Power of AI Chef Pro", 
+    "title": "Discover the Power of AI Chef Pro",
     "description": "Explore real screenshots of our specialized applications for gastronomic professionals",
     "previous": "Previous",
     "next": "Next",
-    "counter": "{{current}} of {{total}} applications shown", 
+    "counter": "{{current}} of {{total}} applications shown",
     "explore_all": "Explore All Apps"
   },
   "screenshots": {
@@ -360,7 +373,7 @@
       "description": "Create unique contemporary dishes with seasonal ingredients and innovative techniques"
     },
     "catering_ai": {
-      "title": "Catering AI+", 
+      "title": "Catering AI+",
       "description": "AI-powered knowledge model for chefs, cooks and entrepreneurs in the catering business"
     },
     "food_pairing": {
@@ -1033,5 +1046,167 @@
     "text": "30 AI hacks to boost efficiency in your kitchen",
     "text_short": "30 AI hacks for your kitchen",
     "cta": "Read more"
+  },
+  "landingRestaurantes": {
+    "seo": {
+      "title": "AI Tools for Restaurants | AI Chef Pro",
+      "description": "55+ artificial intelligence tools for restaurant owners. Control costs, design your menu, manage allergens and automate marketing. Start for free.",
+      "keywords": "ai tools for restaurants, artificial intelligence restaurant, restaurant management ai, ai for restaurant owners, food cost ai, digital menu ai, restaurant marketing ai",
+      "url_slug": "ai-tools-for-restaurants"
+    },
+    "hero": {
+      "badge": "55+ tools specialized in hospitality",
+      "h1": "AI Tools for Restaurants",
+      "subtitle": "The artificial intelligence suite designed for restaurant, bar and café owners. No technical knowledge required. No learning curve.",
+      "tagline": "Control costs · Design your menu · Automate marketing · Reduce waste",
+      "cta_primary": "Start for free now",
+      "cta_secondary": "View plans and pricing",
+      "no_card": "No credit card required · Free plan available"
+    },
+    "results": [
+      {
+        "metric": "22%",
+        "label": "average reduction in ingredient costs"
+      },
+      {
+        "metric": "35%",
+        "label": "less time developing new dishes"
+      },
+      {
+        "metric": "30%",
+        "label": "reduction in food waste"
+      },
+      {
+        "metric": "55+",
+        "label": "tools specialized in gastronomy"
+      }
+    ],
+    "tools_section": {
+      "title": "What can AI do for your restaurant?",
+      "subtitle": "Each tool solves a real day-to-day problem in hospitality. No jargon, no complex setup."
+    },
+    "tools": [
+      {
+        "title": "Menu design",
+        "description": "Generate complete menus adapted to your concept, season and target food cost. Includes attractive descriptions and pairings.",
+        "keywords": [
+          "digital menu",
+          "AI menu",
+          "menu engineering"
+        ]
+      },
+      {
+        "title": "Cost control & food cost",
+        "description": "Calculate the exact cost of each dish, set selling prices with the margin you need and identify where you're losing money.",
+        "keywords": [
+          "food cost",
+          "dish cost",
+          "selling price"
+        ]
+      },
+      {
+        "title": "Waste reduction",
+        "description": "Plan purchases based on real demand, make the most of produce with zero-waste recipes and eliminate waste.",
+        "keywords": [
+          "kitchen waste",
+          "food waste",
+          "purchase planning"
+        ]
+      },
+      {
+        "title": "Allergen management",
+        "description": "Automatically identify and label the 14 mandatory allergens in all your dishes. Simplified legal compliance.",
+        "keywords": [
+          "restaurant allergens",
+          "allergen regulations",
+          "labelling"
+        ]
+      },
+      {
+        "title": "Gastronomic marketing",
+        "description": "Create social media content, Google My Business listings, review responses and promotional campaigns in minutes.",
+        "keywords": [
+          "restaurant marketing",
+          "hospitality social media",
+          "Google My Business"
+        ]
+      },
+      {
+        "title": "Culinary creativity",
+        "description": "Develop new dishes, experiment with pairings and adapt recipes from 25 world cuisines to your concept.",
+        "keywords": [
+          "culinary creativity",
+          "new dishes",
+          "AI recipes"
+        ]
+      }
+    ],
+    "profiles_section": {
+      "title": "Designed for hospitality professionals",
+      "subtitle": "Whether you run a neighborhood bar or a restaurant chain, AI Chef Pro has tools tailored to your reality."
+    },
+    "profiles": [
+      {
+        "title": "Independent restaurant",
+        "description": "Manage your menu, costs and marketing without relying on expensive agencies or consultants."
+      },
+      {
+        "title": "Bar and café",
+        "description": "Build your food offer, control stock and attract more customers with professional content."
+      },
+      {
+        "title": "Restaurant chain",
+        "description": "Standardize processes, control costs across multiple locations and scale your operation."
+      },
+      {
+        "title": "Executive chef",
+        "description": "Streamline menu engineering, nutritional analysis and signature recipe development."
+      }
+    ],
+    "why_section": {
+      "title": "Why artificial intelligence is transforming hospitality",
+      "body": "Restaurants that adopt AI tools don't compete with those that don't. The difference lies in decision speed, cost control and the ability to create a differentiated food offer.",
+      "benefits": [
+        "Design your restaurant menu in hours, not weeks",
+        "Calculate the food cost of each dish to the cent",
+        "Generate social media content in minutes, not days",
+        "Automatically identify allergens in all your dishes",
+        "Reduce waste with intelligent purchase planning",
+        "Access recipes from 25 world cuisines adapted to your business"
+      ]
+    },
+    "pricing_section": {
+      "title": "Plans for every type of food business",
+      "subtitle": "From the free plan to unlimited use for large operations.",
+      "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about AI for restaurants"
+    },
+    "faq": [
+      {
+        "question": "What AI tools are useful for a restaurant?",
+        "answer": "The most useful AI tools for restaurants include: menu generators, dish cost calculators, allergen managers, social media marketing tools, purchase planners and waste control. AI Chef Pro groups 55+ of these specialized tools in a single suite."
+      },
+      {
+        "question": "Can artificial intelligence help reduce costs in a restaurant?",
+        "answer": "Yes. AI allows you to optimize food cost by calculating the exact cost of each dish, detect unnecessary waste, plan purchases based on demand and adjust menu prices to maximize margin. AI Chef Pro users report an average 22% reduction in ingredient costs."
+      },
+      {
+        "question": "Do I need technical knowledge to use AI tools in my restaurant?",
+        "answer": "No. AI Chef Pro is designed for restaurant owners and managers without technical training. The tools work with natural language: you describe what you need and the AI generates the result. No coding or complex configuration required."
+      },
+      {
+        "question": "How much does it cost to use AI for restaurant management?",
+        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 5 uses per month. Paid plans start at €25/month (AI Chef Premium Pro, 150 uses) and go up to €95/month for unlimited use. There is also an annual plan at €950 equivalent to €79/month."
+      }
+    ],
+    "cta_section": {
+      "title": "Start today with AI tools for your restaurant",
+      "subtitle": "Free plan available. No credit card. Immediate access to 55+ tools specialized in gastronomy and hospitality.",
+      "primary": "Try for free now",
+      "secondary": "View all plans"
+    },
+    "breadcrumb": "AI Tools for Restaurants"
   }
 }
