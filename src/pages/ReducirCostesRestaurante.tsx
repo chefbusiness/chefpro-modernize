@@ -112,7 +112,7 @@ export default function ReducirCostesRestaurante() {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl text-center">
               <HeroSocialProof />
-              <Badge className="mb-6 text-sm px-4 py-2 bg-red-100 text-red-800 border-red-200">{s('hero.badge')}</Badge>
+              <Badge className="mb-6 text-sm px-4 py-2">{s('hero.badge')}</Badge>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
                 {s('hero.h1')}
               </h1>
