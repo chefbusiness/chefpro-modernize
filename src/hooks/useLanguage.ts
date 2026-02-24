@@ -16,6 +16,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'ferramentas-ia-restaurante',
     nl: 'ai-tools-restaurant',
   },
+  {
+    es: 'reducir-costes-restaurante-ia',
+    en: 'reduce-restaurant-costs-ai',
+    fr: 'reduire-couts-restaurant-ia',
+    de: 'restaurantkosten-senken-ki',
+    it: 'ridurre-costi-ristorante-ia',
+    pt: 'reduzir-custos-restaurante-ia',
+    nl: 'restaurantkosten-verlagen-ai',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

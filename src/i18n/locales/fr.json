@@ -17,6 +17,7 @@
     "marketing": "Marketing & Contenu",
     "conceptos": "Concepts Business",
     "precios": "Tarifs",
+    "reducir_costes": "Réduire les Coûts",
     "herramientas_ia": "Outils IA Restaurant",
     "blog": "Blog",
     "login": "Se connecter"
@@ -662,6 +663,7 @@
     "nav_tools": "Outils",
     "nav_pricing": "Tarifs",
     "nav_blog": "Blog",
+    "nav_costs": "Réduire Coûts",
     "nav_ai_tools": "Outils IA",
     "nav_free_tools": "Outils Gratuits 🪄",
     "contact_title": "Contact",
@@ -1053,6 +1055,131 @@
     "text": "30 astuces IA pour améliorer l'efficacité en cuisine",
     "text_short": "30 astuces IA pour votre cuisine",
     "cta": "En savoir plus"
+  },
+  "landingCostes": {
+    "breadcrumb": "Réduire les coûts restaurant avec IA",
+    "seo": {
+      "title": "Réduire Coûts Restaurant avec IA | AI Chef Pro",
+      "description": "Réduisez jusqu'à 35% les pertes et coûts alimentaires de votre restaurant grâce à l'intelligence artificielle. Fiche technique automatique et optimisation de carte en temps réel.",
+      "keywords": "réduire coûts restaurant, contrôle food cost restaurant, réduire pertes cuisine, fiche technique digitale, optimiser coûts cuisine, rentabilité restaurant IA"
+    },
+    "hero": {
+      "badge": "💰 Économisez dès le premier mois",
+      "h1": "Réduisez les coûts de votre restaurant jusqu'à 35% avec l'IA",
+      "subtitle": "Contrôlez les pertes, optimisez le food cost et améliorez la marge de chaque plat — sans tableurs ni calculs manuels.",
+      "tagline": "L'outil utilisé par plus de 5 000 professionnels de la gastronomie.",
+      "cta_primary": "Commencer à économiser gratuitement",
+      "cta_secondary": "Voir les formules et tarifs",
+      "no_card": "Sans carte bancaire. Accès immédiat."
+    },
+    "results": [
+      { "metric": "-35%", "label": "Réduction moyenne des pertes" },
+      { "metric": "-22%", "label": "Coût alimentaire (food cost)" },
+      { "metric": "+18%", "label": "Amélioration de la marge brute" },
+      { "metric": "2 sem.", "label": "ROI moyen dès le début" }
+    ],
+    "tools_section": {
+      "title": "6 outils IA pour réduire les coûts en cuisine",
+      "subtitle": "Des pertes à la fiche technique, contrôlez chaque euro avec l'intelligence artificielle."
+    },
+    "tools": [
+      {
+        "title": "Contrôle des Pertes IA",
+        "description": "Détectez les modèles de gaspillage, identifiez les ingrédients les plus coûteux et recevez des alertes quand les pertes dépassent le seuil optimal.",
+        "keywords": ["pertes", "gaspillage", "coûts cuisine"]
+      },
+      {
+        "title": "Fiche Technique Automatique",
+        "description": "Calculez le coût réel de chaque recette en quelques secondes. Mettez à jour les prix des ingrédients et les fiches techniques se recalculent automatiquement.",
+        "keywords": ["fiche technique", "food cost", "coût par plat"]
+      },
+      {
+        "title": "Optimiseur de Carte par Marge",
+        "description": "Analysez quels plats vous donnent la meilleure marge et lesquels vous coûtent de l'argent. Redesignez votre carte pour maximiser la rentabilité.",
+        "keywords": ["ingénierie de menu", "rentabilité plats", "marge carte"]
+      },
+      {
+        "title": "Planificateur d'Achats Intelligent",
+        "description": "Générez des listes de courses basées sur votre historique de ventes pour éviter le surstock et réduire les pertes de produits périssables.",
+        "keywords": ["achats restaurant", "stock cuisine", "commandes fournisseur"]
+      },
+      {
+        "title": "Analyse de Rentabilité",
+        "description": "Tableau de bord en temps réel avec vos KPIs clés: food cost %, prime cost, marge par table et rentabilité par service.",
+        "keywords": ["KPIs restaurant", "rentabilité", "analyse business"]
+      },
+      {
+        "title": "Optimisation du Personnel",
+        "description": "Calculez le coût du personnel par service et recevez des suggestions pour ajuster les plannings selon la demande prévisionnelle.",
+        "keywords": ["coût personnel", "prime cost", "plannings cuisine"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Qui bénéficie le plus du contrôle des coûts avec l'IA?",
+      "subtitle": "Du chef propriétaire à la grande chaîne, l'IA adapte le contrôle des coûts à votre réalité."
+    },
+    "profiles": [
+      {
+        "title": "Chef Propriétaire",
+        "description": "Contrôlez le food cost sans dépendre d'un contrôleur de gestion. Prenez des décisions basées sur des données réelles de votre établissement."
+      },
+      {
+        "title": "Directeur des Opérations",
+        "description": "Supervisez la rentabilité de plusieurs établissements depuis un seul tableau de bord. Détectez les dérives avant qu'elles impactent le bilan."
+      },
+      {
+        "title": "Chef de Cuisine",
+        "description": "Concevez des recettes rentables dès le départ. La fiche technique automatique vous indique le coût avant d'ajouter un plat à la carte."
+      },
+      {
+        "title": "Groupe de Restauration",
+        "description": "Standardisez le contrôle des coûts dans tous vos restaurants avec les mêmes métriques et alertes automatiques."
+      }
+    ],
+    "why_section": {
+      "title": "Pourquoi les coûts s'emballent-ils sans contrôle IA?",
+      "body": "La plupart des restaurants perdent entre 8% et 15% de leur chiffre d'affaires en pertes, erreurs de fiche technique et achats mal planifiés. L'IA d'AI Chef Pro colmate automatiquement ces fuites.",
+      "benefits": [
+        "Fiches techniques recalculées en temps réel quand les prix fournisseurs changent",
+        "Alertes automatiques quand le food cost dépasse votre seuil personnalisé",
+        "Analyse plats vedettes vs. plats qui décapitalisent votre établissement",
+        "Planification des achats basée sur l'historique de ventes pour éviter le surstock",
+        "Tableau de bord de rentabilité accessible depuis mobile, tablette ou bureau",
+        "Rapport hebdomadaire de KPIs avec des recommandations concrètes d'amélioration"
+      ]
+    },
+    "pricing_section": {
+      "title": "Commencez à réduire vos coûts dès aujourd'hui",
+      "subtitle": "Essayez gratuitement avec le plan Membre. L'abonnement s'autofinance avec ce que vous économisez le premier mois.",
+      "annual_note": "Formules annuelles avec 2 mois offerts. Sans engagement."
+    },
+    "faq_section": {
+      "title": "Questions fréquentes sur le contrôle des coûts IA"
+    },
+    "faq": [
+      {
+        "question": "En combien de temps vais-je voir des résultats sur la réduction des coûts?",
+        "answer": "La plupart de nos clients détectent les premières opportunités d'économies dans les 3 à 7 premiers jours d'utilisation. La réduction réelle des coûts se consolide entre les semaines 2 et 4."
+      },
+      {
+        "question": "Ai-je besoin de connaissances en comptabilité pour utiliser l'outil?",
+        "answer": "Non. AI Chef Pro est conçu pour les cuisiniers et restaurateurs, pas pour les comptables. Le langage est gastronomique et les métriques sont expliquées avec des exemples pratiques du secteur."
+      },
+      {
+        "question": "L'IA met-elle à jour les coûts des ingrédients automatiquement?",
+        "answer": "Vous pouvez saisir les prix de vos fournisseurs manuellement ou les importer depuis un tableur. Le système recalcule instantanément toutes les fiches techniques. Bientôt: intégration directe fournisseurs."
+      },
+      {
+        "question": "Fonctionne-t-il pour les petits restaurants ou seulement les grands groupes?",
+        "answer": "Il fonctionne pour toute taille d'établissement. Du restaurant familial de 40 couverts aux groupes de 20 établissements. Le plan Membre gratuit est idéal pour commencer sans risque."
+      }
+    ],
+    "cta_section": {
+      "title": "Arrêtez de perdre de l'argent. Maîtrisez vos coûts dès aujourd'hui.",
+      "subtitle": "Rejoignez plus de 5 000 professionnels qui utilisent déjà l'IA pour protéger leurs marges et développer leur activité.",
+      "primary": "Commencer gratuitement maintenant",
+      "secondary": "Voir toutes les formules"
+    }
   },
   "landingRestaurantes": {
     "seo": {

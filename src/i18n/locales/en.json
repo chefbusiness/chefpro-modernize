@@ -17,6 +17,7 @@
     "marketing": "Marketing & Content",
     "conceptos": "Business Concepts",
     "precios": "Pricing",
+    "reducir_costes": "Reduce Restaurant Costs",
     "herramientas_ia": "AI Tools for Restaurants",
     "blog": "Blog",
     "login": "Sign In"
@@ -818,6 +819,7 @@
     "nav_tools": "Tools",
     "nav_pricing": "Pricing",
     "nav_blog": "Blog",
+    "nav_costs": "Reduce Costs",
     "nav_ai_tools": "AI Tools",
     "nav_free_tools": "Free Tools",
     "contact_title": "Contact",
@@ -1048,6 +1050,131 @@
     "text": "30 AI hacks to boost efficiency in your kitchen",
     "text_short": "30 AI hacks for your kitchen",
     "cta": "Read more"
+  },
+  "landingCostes": {
+    "breadcrumb": "Reduce Restaurant Costs with AI",
+    "seo": {
+      "title": "Reduce Restaurant Costs with AI | AI Chef Pro",
+      "description": "Cut up to 35% of waste and food costs in your restaurant with artificial intelligence. Automatic food cost tracking, recipe costing and menu optimization in real time.",
+      "keywords": "reduce restaurant costs, restaurant food cost control, reduce kitchen waste, digital recipe costing, optimize kitchen costs, restaurant profitability AI, AI to cut costs"
+    },
+    "hero": {
+      "badge": "💰 Save from the first month",
+      "h1": "Cut your restaurant costs by up to 35% with AI",
+      "subtitle": "Control waste, optimize food cost and improve each dish margin — no spreadsheets, no manual calculations.",
+      "tagline": "The tool used by 5,000+ gastronomy professionals.",
+      "cta_primary": "Start saving for free",
+      "cta_secondary": "View plans and pricing",
+      "no_card": "No credit card required. Instant access."
+    },
+    "results": [
+      { "metric": "-35%", "label": "Average waste reduction" },
+      { "metric": "-22%", "label": "Food cost reduction" },
+      { "metric": "+18%", "label": "Gross margin improvement" },
+      { "metric": "2 wks", "label": "Average ROI from day one" }
+    ],
+    "tools_section": {
+      "title": "6 AI tools to cut costs in your kitchen",
+      "subtitle": "From waste to recipe costing, control every dollar with artificial intelligence."
+    },
+    "tools": [
+      {
+        "title": "AI Waste Control",
+        "description": "Detect waste patterns, identify the most costly ingredients and get alerts when waste levels exceed optimal thresholds.",
+        "keywords": ["waste", "food loss", "kitchen costs"]
+      },
+      {
+        "title": "Automatic Recipe Costing",
+        "description": "Calculate the real cost of each recipe in seconds. Update ingredient prices and all costings recalculate automatically.",
+        "keywords": ["recipe costing", "food cost", "cost per dish"]
+      },
+      {
+        "title": "Menu Margin Optimizer",
+        "description": "Analyze which dishes give you the best margin and which cost you money. Redesign your menu to maximize profitability.",
+        "keywords": ["menu engineering", "dish profitability", "menu margin"]
+      },
+      {
+        "title": "Smart Purchase Planner",
+        "description": "Generate shopping lists based on your sales history to avoid overstock and reduce perishable food waste.",
+        "keywords": ["restaurant purchasing", "kitchen inventory", "supplier orders"]
+      },
+      {
+        "title": "Profitability Analytics",
+        "description": "Real-time dashboard with key KPIs: food cost %, prime cost, margin per table and profitability per service.",
+        "keywords": ["restaurant KPIs", "profitability", "business analytics"]
+      },
+      {
+        "title": "Staff Cost Optimizer",
+        "description": "Calculate staff cost per service and get suggestions to adjust shifts based on forecast demand and prime cost targets.",
+        "keywords": ["staff cost", "prime cost", "kitchen shifts"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Who benefits most from AI cost control?",
+      "subtitle": "From the owner-chef to the large chain, AI adapts cost control to your reality."
+    },
+    "profiles": [
+      {
+        "title": "Owner-Chef",
+        "description": "Control food cost without relying on a controller. Make decisions based on real data from your business."
+      },
+      {
+        "title": "Operations Director",
+        "description": "Monitor profitability across multiple venues from a single panel. Detect deviations before they affect your bottom line."
+      },
+      {
+        "title": "Head Chef",
+        "description": "Design profitable recipes from the start. Automatic costing tells you the cost before adding a dish to the menu."
+      },
+      {
+        "title": "Restaurant Group",
+        "description": "Standardize cost control across all your restaurants with the same metrics and automatic alerts."
+      }
+    ],
+    "why_section": {
+      "title": "Why do costs spiral without AI control?",
+      "body": "Most restaurants lose between 8% and 15% of their revenue to waste, costing errors and poorly planned purchasing. AI Chef Pro AI automatically closes those leaks.",
+      "benefits": [
+        "Recipe costs recalculated in real time when supplier prices change",
+        "Automatic alerts when food cost exceeds your custom threshold",
+        "Star dish vs. money-losing dish analysis",
+        "Purchase planning based on sales history to avoid overstock",
+        "Profitability dashboard accessible from mobile, tablet or desktop",
+        "Weekly KPI report with concrete improvement recommendations"
+      ]
+    },
+    "pricing_section": {
+      "title": "Start reducing costs today",
+      "subtitle": "Try free with the Member plan. The subscription pays for itself with what you save in the first month.",
+      "annual_note": "Annual plans with 2 months free. No lock-in."
+    },
+    "faq_section": {
+      "title": "FAQs about AI cost control for restaurants"
+    },
+    "faq": [
+      {
+        "question": "How quickly will I see results in cost reduction?",
+        "answer": "Most of our clients spot the first saving opportunities within 3-7 days of use. Real cost reduction consolidates between weeks 2 and 4, depending on restaurant volume."
+      },
+      {
+        "question": "Do I need accounting or finance knowledge to use the tool?",
+        "answer": "No. AI Chef Pro is designed for chefs and restaurateurs, not accountants. The language is culinary and metrics are explained with practical industry examples."
+      },
+      {
+        "question": "Does the AI update ingredient costs automatically?",
+        "answer": "You can enter your supplier prices manually or import them from a spreadsheet. The system recalculates all costings instantly. Coming soon: direct supplier integration."
+      },
+      {
+        "question": "Does it work for small restaurants or only large groups?",
+        "answer": "It works for any size. From the family restaurant with 40 covers to groups with 20 venues. The free Member plan is ideal to start risk-free."
+      }
+    ],
+    "cta_section": {
+      "title": "Stop losing money. Start controlling your costs today.",
+      "subtitle": "Join 5,000+ professionals who already use AI to protect their margins and grow their business.",
+      "primary": "Start for free now",
+      "secondary": "View all plans"
+    }
   },
   "landingRestaurantes": {
     "seo": {

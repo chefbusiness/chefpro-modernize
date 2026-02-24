@@ -15,6 +15,16 @@ const AI_TOOLS_SLUGS: Record<string, string> = {
   nl: 'nl/ai-tools-restaurant',
 };
 
+const COSTES_SLUGS: Record<string, string> = {
+  es: 'reducir-costes-restaurante-ia',
+  en: 'en/reduce-restaurant-costs-ai',
+  fr: 'fr/reduire-couts-restaurant-ia',
+  de: 'de/restaurantkosten-senken-ki',
+  it: 'it/ridurre-costi-ristorante-ia',
+  pt: 'pt/reduzir-custos-restaurante-ia',
+  nl: 'nl/restaurantkosten-verlagen-ai',
+};
+
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
 
@@ -91,6 +101,14 @@ export default function ModernFooter() {
                   className="text-primary hover:text-primary/80 transition-colors font-medium"
                 >
                   {t('footer.nav_ai_tools')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${COSTES_SLUGS[currentLanguage] || COSTES_SLUGS.es}`}
+                  className="text-red-600 hover:text-red-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_costs')}
                 </a>
               </li>
               <li>

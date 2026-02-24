@@ -12,6 +12,16 @@ const AI_TOOLS_SLUGS: Record<string, string> = {
   pt: 'pt/ferramentas-ia-restaurante',
   nl: 'nl/ai-tools-restaurant',
 };
+
+const COSTES_SLUGS: Record<string, string> = {
+  es: 'reducir-costes-restaurante-ia',
+  en: 'en/reduce-restaurant-costs-ai',
+  fr: 'fr/reduire-couts-restaurant-ia',
+  de: 'de/restaurantkosten-senken-ki',
+  it: 'it/ridurre-costi-ristorante-ia',
+  pt: 'pt/reduzir-custos-restaurante-ia',
+  nl: 'nl/restaurantkosten-verlagen-ai',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -115,6 +125,12 @@ export default function ModernHeader() {
                           href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
                         >
                           {t('nav.herramientas_ia')}
+                        </NavigationMenuLink>
+                        <NavigationMenuLink
+                          className="block text-sm font-medium text-red-600 hover:text-red-500 transition-colors py-1"
+                          href={`/${COSTES_SLUGS[currentLanguage] || COSTES_SLUGS.es}`}
+                        >
+                          {t('nav.reducir_costes')}
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -336,6 +352,14 @@ export default function ModernHeader() {
                           >
                             <Wrench className="h-4 w-4 text-primary" />
                             {t('nav.herramientas_ia')}
+                          </a>
+                          <a
+                            href={`/${COSTES_SLUGS[currentLanguage] || COSTES_SLUGS.es}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-red-600"
+                          >
+                            <Wrench className="h-4 w-4 text-red-500" />
+                            {t('nav.reducir_costes')}
                           </a>
                         </CollapsibleContent>
                       </Collapsible>
