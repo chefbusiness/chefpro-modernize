@@ -140,23 +140,65 @@ const SEOHead = ({
           },
           {
             "@context": "https://schema.org",
-            "@type": "WebApplication",
+            "@type": "SoftwareApplication",
             "name": "AI Chef Pro",
             "description": pageDescription,
             "url": siteUrl,
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
-            "offers": {
-              "@type": "Offer",
-              "category": "SaaS",
-              "priceCurrency": "EUR",
-              "price": "0",
-              "priceValidUntil": "2025-12-31"
-            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "AI Chef Miembro",
+                "description": "Acceso básico gratuito. 5 usos/mes.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "0",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Pro",
+                "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 150 usos/mes.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "25",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Plus",
+                "description": "Para empresarios gastronómicos y cadenas de restaurantes. 350 usos/mes.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "50",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Max",
+                "description": "Uso ilimitado mensual para profesionales exigentes.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "95",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "AI Chef Premium Plus Anual",
+                "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses.",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "950",
+                "priceValidUntil": "2026-12-31"
+              }
+            ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "ratingCount": "847"
+              "ratingValue": "4.8",
+              "ratingCount": "1243",
+              "bestRating": "5",
+              "worstRating": "1"
             },
             "inLanguage": languages
           }
