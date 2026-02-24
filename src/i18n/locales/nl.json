@@ -1,8 +1,8 @@
 {
-"whatsapp": {
+  "whatsapp": {
     "tooltip": "Neem contact met ons op via WhatsApp"
   },
-"trusted_by": {
+  "trusted_by": {
     "title": "De keuze van horecaprofessionals van wereldklasse",
     "badge": "23+ elite merken"
   },
@@ -36,7 +36,20 @@
     "subtitle": "55+ Gespecialiseerde AI-tools voor Chefs. Van Culinaire Creativiteit tot Digitale Marketing.",
     "description": "Suite van AI-tools en Toepassingen, modellen getraind voor dagelijks gebruik door Chefs, Koks en horeca-professionals.",
     "rating": "Beoordeling: 5 sterren",
-    "business_types": ["Beheer", "Restaurant", "Catering", "Pizzeria", "Hamburger Bar", "Bakkerij", "Banketbakkerij", "Chocolaterie", "IJssalon", "Dark Kitchen", "Café", "Brunch"],
+    "business_types": [
+      "Beheer",
+      "Restaurant",
+      "Catering",
+      "Pizzeria",
+      "Hamburger Bar",
+      "Bakkerij",
+      "Banketbakkerij",
+      "Chocolaterie",
+      "IJssalon",
+      "Dark Kitchen",
+      "Café",
+      "Brunch"
+    ],
     "see_resources": "ZIE BRONNEN",
     "social_proof_label": "Oplossingen en recepten gegenereerd"
   },
@@ -512,173 +525,163 @@
         "name": "Calcula Pax",
         "description": "Past hoeveelheden aan volgens gasten",
         "preview": "Schaalt recepten met wiskundige precisie voor elk evenement"
-  },
-  "cookies": {
-    "banner": {
-      "title": "We gebruiken cookies",
-      "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
-      "accept": "Accepteren",
-      "reject": "Weigeren",
-      "learn_more": "Meer informatie",
-      "close": "Sluiten"
-    }
-    },
-    "pages": {
-      "mentoria": {
-        "seo": {
-          "title": "Online Mentoring - AI Chef Pro | Versnel Uw Culinaire Carrière",
-          "description": "Gepersonaliseerde mentoring voor koks met kunstmatige intelligentie. Versnel uw professionele ontwikkeling met gespecialiseerde gastronomie coaching.",
-          "keywords": "ai tools restaurant, kunstmatige intelligentie horeca, restaurant management software ai, ai voor restauranteigenaren, ai tools voor koks, kostenbeheer restaurant ai, ai voor bars en cafés, gastronomie ai apps, slim digitaal menu, menu met kunstmatige intelligentie, professionele kok ai, ai recepten, gastronomie marketing ai"
-        },
-        "hero": {
-          "badge": "AI-Gedreven Gepersonaliseerde Mentoring",
-          "title": "Versnel Uw Culinaire Carrière",
-          "subtitle": "Gepersonaliseerde mentoring die de ervaring van expert koks combineert met de kracht van kunstmatige intelligentie om uw professionele ontwikkeling te versnellen.",
-          "cta": "Mentoring Aanvragen",
-          "rating": "Beoordeeld 5/5 door meer dan 200 koks"
-        },
-        "benefits": {
-          "title": "Waarom onze mentoring kiezen?",
-          "subtitle": "Transformeer uw carrière met een gepersonaliseerde aanpak die zich aanpast aan uw unieke doelen",
-          "items": {
-            "personalized": {
-              "title": "Gepersonaliseerde Mentoring",
-              "description": "Ontwikkelingsplan aangepast aan uw niveau, doelen en specifieke kookstijl"
-            },
-            "goals": {
-              "title": "Duidelijke Doelstellingen",
-              "description": "We definiëren specifieke en meetbare doelen om uw professionele vooruitgang te versnellen"
-            },
-            "accelerated": {
-              "title": "Versneld Leren",
-              "description": "Bewezen methodologieën die jaren ervaring comprimeren in maanden training"
-            },
-            "network": {
-              "title": "Professioneel Netwerk",
-              "description": "Toegang tot een exclusieve gemeenschap van koks en industrie professionals"
-            }
-          }
-        },
-        "features": {
-          "title": "Wat omvat de mentoring?",
-          "subtitle": "Uitgebreid programma dat alle aspecten van culinaire professionele ontwikkeling dekt",
-          "items": {
-            "ai_integration": {
-              "title": "AI Integratie",
-              "description": "Leer alle AI Chef Pro tools te gebruiken om uw efficiëntie en creativiteit te maximaliseren"
-            },
-            "practical_sessions": {
-              "title": "Praktische Sessies",
-              "description": "Virtuele en persoonlijke workshops waar u geavanceerde technieken toepast met directe feedback"
-            },
-            "business_strategy": {
-              "title": "Bedrijfsstrategie",
-              "description": "Ontwikkel zakelijke vaardigheden om uw eigen restaurant te openen of door te groeien als executive chef"
-            },
-            "marketing_digital": {
-              "title": "Digitale Marketing",
-              "description": "Bouw uw persoonlijke merk en leer uzelf te positioneren als referentie kok op sociale media"
-            },
-            "menu_optimization": {
-              "title": "Menu Optimalisatie",
-              "description": "Geavanceerde technieken om winstgevende, creatieve menu's te creëren die gasten bekoren"
-            },
-            "cost_management": {
-              "title": "Kostenbeheer",
-              "description": "Beheers kostencontrole, voorraadmanagement en optimalisatie van operationele processen"
-            }
-          }
-        },
-        "testimonials": {
-          "title": "Wat onze mentees zeggen",
-          "items": {
-            "testimonial_1": {
-              "quote": "De mentoring veranderde mijn perspectief compleet. In 6 maanden behaalde ik de promotie waar ik jaren naar zocht.",
-              "name": "Carlos Mendoza",
-              "role": "Sous Chef → Executive Chef"
-            },
-            "testimonial_2": {
-              "quote": "Ik verbeterde niet alleen mijn culinaire technieken, ik leerde ook een team te leiden en de business te begrijpen.",
-              "name": "Ana Sofía Ruiz",
-              "role": "Lijn Chef → Restaurant Eigenaar"
-            },
-            "testimonial_3": {
-              "quote": "De combinatie van menselijke mentoring met AI tools is revolutionair. Mijn productiviteit verdrievoudigde.",
-              "name": "Diego Fernández",
-              "role": "Banketbakker Chef"
-            }
-          }
-        },
-        "cta": {
-          "title": "Klaar om uw carrière te versnellen?",
-          "subtitle": "Sluit u aan bij meer dan 200 koks die al hun professionele toekomst transformeren",
-          "button": "Mentoring Aanvragen",
-          "availability": "Beperkte plekken - Slechts 10 mentees per maand"
+      },
+      "cookies": {
+        "banner": {
+          "title": "We gebruiken cookies",
+          "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
+          "accept": "Accepteren",
+          "reject": "Weigeren",
+          "learn_more": "Meer informatie",
+          "close": "Sluiten"
         }
       },
-      "services": {
-      "title": "Services - AI Chef Pro",
-      "description": "Ontdek alle AI-services die AI Chef Pro aanbiedt voor gastronomie professionals.",
-      "heading": "Onze Services",
-      "content": "Bij AI Chef Pro bieden we een breed scala aan kunstmatige intelligentie services gespecialiseerd voor koks en horeca professionals."
-    },
-    "legal": {
-      "title": "Juridische Kennisgeving - AI Chef Pro",
-      "description": "Juridische informatie over AI Chef Pro, gebruiksvoorwaarden en algemene voorwaarden.",
-      "heading": "Juridische Kennisgeving",
-      "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services.",
-      "content_paragraphs": [
-        "<h2>1. Algemene Informatie</h2><p><strong>Website Eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact Email:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
-        "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat tools en applicaties biedt voor kookprofessionals. Onze services omvatten meer dan 55 gespecialiseerde applicaties van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
-        "<h2>8. Contact</h2><p>Voor juridisch advies of klachten kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "cookies": {
-      "title": "Cookie Beleid - AI Chef Pro",
-      "description": "Informatie over het gebruik van cookies op AI Chef Pro en hoe u uw voorkeuren kunt beheren.",
-      "heading": "Cookie Beleid",
-      "content": "Bij AI Chef Pro gebruiken we cookies om uw gebruikerservaring te verbeteren en u gepersonaliseerde content aan te bieden.",
-      "content_paragraphs": [
-        "<h2>1. Wat zijn cookies?</h2><p>Cookies zijn kleine tekstbestanden die worden opgeslagen op je apparaat wanneer je AI Chef Pro bezoekt. Ze helpen ons je voorkeuren te onthouden en je ervaring met onze culinaire kunstmatige intelligentie tools te verbeteren.</p>",
-        "<h2>2. Soorten Cookies die we Gebruiken</h2><p><strong>Essentiële cookies:</strong> Noodzakelijk voor de basisfunctionaliteit van onze AI-applicaties.</p><p><strong>Voorkeur cookies:</strong> Onthouden je gepersonaliseerde culinaire instellingen.</p><p><strong>Analytische cookies:</strong> Helpen ons begrijpen hoe je onze tools gebruikt om ze te verbeteren.</p>",
-        "<h2>7. Contact</h2><p>Als je vragen hebt over ons gebruik van cookies, neem dan contact met ons op via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "privacy": {
-      "title": "Privacybeleid - AI Chef Pro",
-      "description": "Informatie over hoe we je persoonlijke gegevens beschermen en behandelen bij AI Chef Pro.",
-      "heading": "Privacybeleid",
-      "content": "Je privacy is belangrijk voor ons. Dit beleid legt uit hoe we je persoonlijke informatie verzamelen, gebruiken en beschermen.",
-      "content_paragraphs": [
-        "<h2>1. Informatie die we Verzamelen</h2><p>Bij AI Chef Pro verzamelen we informatie wanneer je interacteert met onze culinaire kunstmatige intelligentie services. Dit omvat registratiegegevens, gastronomische voorkeuren en technische informatie over het gebruik van onze applicaties.</p>",
-        "<h2>2. Gebruik van Informatie</h2><p>We gebruiken je informatie om je culinaire ervaring te personaliseren, onze AI-tools te verbeteren, technische ondersteuning te bieden en nieuwe gastronomische functionaliteiten te ontwikkelen die aansluiten bij je professionele behoeften.</p>",
-        "<h2>3. Gegevensbescherming</h2><p>We implementeren technische en organisatorische beveiligingsmaatregelen om je persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Je gegevens zijn versleuteld en veilig opgeslagen.</p>",
-        "<h2>7. Contact</h2><p>Voor vragen over dit privacybeleid kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
-      ]
-    },
-    "terms": {
-      "title": "Algemene Voorwaarden - AI Chef Pro",
-      "description": "Algemene voorwaarden voor het gebruik van AI Chef Pro en zijn services.",
-      "heading": "Algemene Voorwaarden",
-      "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services.",
-      "content_paragraphs": [
-        "<h2>1. Acceptatie van de Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, accepteer je deze algemene voorwaarden. Als je niet akkoord gaat met een deel van deze voorwaarden, mag je onze culinaire kunstmatige intelligentie services niet gebruiken.</p>",
-        "<h2>2. Service Beschrijving</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor kookprofessionals, inclusief culinaire creativiteit, wereldkookboeken en bedrijfsbeheer.</p>",
-        "<h2>3. Gebruikersregistratie en Account</h2><p>Om toegang te krijgen tot bepaalde functionaliteiten, moet je een account aanmaken door nauwkeurige en bijgewerkte informatie te verstrekken. Je bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van je account en wachtwoord.</p>",
-        "<h2>10. Contact</h2><p>Voor vragen over deze voorwaarden kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
-      ]
-    }
-  },
-  "cookies": {
-    "banner": {
-      "title": "We gebruiken cookies",
-      "description": "We gebruiken cookies om uw browse-ervaring te verbeteren, siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
-      "accept": "Accepteren",
-      "reject": "Weigeren",
-      "learn_more": "Meer informatie",
-      "close": "Sluiten"
-    }
-  }
+      "pages": {
+        "mentoria": {
+          "seo": {
+            "title": "Online Mentoring - AI Chef Pro | Versnel Uw Culinaire Carrière",
+            "description": "Gepersonaliseerde mentoring voor koks met kunstmatige intelligentie. Versnel uw professionele ontwikkeling met gespecialiseerde gastronomie coaching.",
+            "keywords": "ai tools restaurant, kunstmatige intelligentie horeca, restaurant management software ai, ai voor restauranteigenaren, ai tools voor koks, kostenbeheer restaurant ai, ai voor bars en cafés, gastronomie ai apps, slim digitaal menu, menu met kunstmatige intelligentie, professionele kok ai, ai recepten, gastronomie marketing ai"
+          },
+          "hero": {
+            "badge": "AI-Gedreven Gepersonaliseerde Mentoring",
+            "title": "Versnel Uw Culinaire Carrière",
+            "subtitle": "Gepersonaliseerde mentoring die de ervaring van expert koks combineert met de kracht van kunstmatige intelligentie om uw professionele ontwikkeling te versnellen.",
+            "cta": "Mentoring Aanvragen",
+            "rating": "Beoordeeld 5/5 door meer dan 200 koks"
+          },
+          "benefits": {
+            "title": "Waarom onze mentoring kiezen?",
+            "subtitle": "Transformeer uw carrière met een gepersonaliseerde aanpak die zich aanpast aan uw unieke doelen",
+            "items": {
+              "personalized": {
+                "title": "Gepersonaliseerde Mentoring",
+                "description": "Ontwikkelingsplan aangepast aan uw niveau, doelen en specifieke kookstijl"
+              },
+              "goals": {
+                "title": "Duidelijke Doelstellingen",
+                "description": "We definiëren specifieke en meetbare doelen om uw professionele vooruitgang te versnellen"
+              },
+              "accelerated": {
+                "title": "Versneld Leren",
+                "description": "Bewezen methodologieën die jaren ervaring comprimeren in maanden training"
+              },
+              "network": {
+                "title": "Professioneel Netwerk",
+                "description": "Toegang tot een exclusieve gemeenschap van koks en industrie professionals"
+              }
+            }
+          },
+          "features": {
+            "title": "Wat omvat de mentoring?",
+            "subtitle": "Uitgebreid programma dat alle aspecten van culinaire professionele ontwikkeling dekt",
+            "items": {
+              "ai_integration": {
+                "title": "AI Integratie",
+                "description": "Leer alle AI Chef Pro tools te gebruiken om uw efficiëntie en creativiteit te maximaliseren"
+              },
+              "practical_sessions": {
+                "title": "Praktische Sessies",
+                "description": "Virtuele en persoonlijke workshops waar u geavanceerde technieken toepast met directe feedback"
+              },
+              "business_strategy": {
+                "title": "Bedrijfsstrategie",
+                "description": "Ontwikkel zakelijke vaardigheden om uw eigen restaurant te openen of door te groeien als executive chef"
+              },
+              "marketing_digital": {
+                "title": "Digitale Marketing",
+                "description": "Bouw uw persoonlijke merk en leer uzelf te positioneren als referentie kok op sociale media"
+              },
+              "menu_optimization": {
+                "title": "Menu Optimalisatie",
+                "description": "Geavanceerde technieken om winstgevende, creatieve menu's te creëren die gasten bekoren"
+              },
+              "cost_management": {
+                "title": "Kostenbeheer",
+                "description": "Beheers kostencontrole, voorraadmanagement en optimalisatie van operationele processen"
+              }
+            }
+          },
+          "testimonials": {
+            "title": "Wat onze mentees zeggen",
+            "items": {
+              "testimonial_1": {
+                "quote": "De mentoring veranderde mijn perspectief compleet. In 6 maanden behaalde ik de promotie waar ik jaren naar zocht.",
+                "name": "Carlos Mendoza",
+                "role": "Sous Chef → Executive Chef"
+              },
+              "testimonial_2": {
+                "quote": "Ik verbeterde niet alleen mijn culinaire technieken, ik leerde ook een team te leiden en de business te begrijpen.",
+                "name": "Ana Sofía Ruiz",
+                "role": "Lijn Chef → Restaurant Eigenaar"
+              },
+              "testimonial_3": {
+                "quote": "De combinatie van menselijke mentoring met AI tools is revolutionair. Mijn productiviteit verdrievoudigde.",
+                "name": "Diego Fernández",
+                "role": "Banketbakker Chef"
+              }
+            }
+          },
+          "cta": {
+            "title": "Klaar om uw carrière te versnellen?",
+            "subtitle": "Sluit u aan bij meer dan 200 koks die al hun professionele toekomst transformeren",
+            "button": "Mentoring Aanvragen",
+            "availability": "Beperkte plekken - Slechts 10 mentees per maand"
+          }
+        },
+        "services": {
+          "title": "Services - AI Chef Pro",
+          "description": "Ontdek alle AI-services die AI Chef Pro aanbiedt voor gastronomie professionals.",
+          "heading": "Onze Services",
+          "content": "Bij AI Chef Pro bieden we een breed scala aan kunstmatige intelligentie services gespecialiseerd voor koks en horeca professionals."
+        },
+        "legal": {
+          "title": "Juridische Kennisgeving - AI Chef Pro",
+          "description": "Juridische informatie over AI Chef Pro, gebruiksvoorwaarden en algemene voorwaarden.",
+          "heading": "Juridische Kennisgeving",
+          "content": "Deze pagina bevat juridische informatie gerelateerd aan het gebruik van AI Chef Pro en zijn services.",
+          "content_paragraphs": [
+            "<h2>1. Algemene Informatie</h2><p><strong>Website Eigenaar:</strong> John Guerrero</p><p><strong>Handelsnaam:</strong> AI Chef Pro</p><p><strong>Contact Email:</strong> info@aichef.pro</p><p><strong>Telefoon:</strong> +34 744 717 942</p>",
+            "<h2>2. Doel en Activiteit</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat tools en applicaties biedt voor kookprofessionals. Onze services omvatten meer dan 55 gespecialiseerde applicaties van culinaire creativiteit tot gastronomisch bedrijfsbeheer.</p>",
+            "<h2>8. Contact</h2><p>Voor juridisch advies of klachten kunt u contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "cookies": {
+          "title": "Cookie Beleid - AI Chef Pro",
+          "description": "Informatie over het gebruik van cookies op AI Chef Pro en hoe u uw voorkeuren kunt beheren.",
+          "heading": "Cookie Beleid",
+          "content": "Bij AI Chef Pro gebruiken we cookies om uw gebruikerservaring te verbeteren en u gepersonaliseerde content aan te bieden.",
+          "content_paragraphs": [
+            "<h2>1. Wat zijn cookies?</h2><p>Cookies zijn kleine tekstbestanden die worden opgeslagen op je apparaat wanneer je AI Chef Pro bezoekt. Ze helpen ons je voorkeuren te onthouden en je ervaring met onze culinaire kunstmatige intelligentie tools te verbeteren.</p>",
+            "<h2>2. Soorten Cookies die we Gebruiken</h2><p><strong>Essentiële cookies:</strong> Noodzakelijk voor de basisfunctionaliteit van onze AI-applicaties.</p><p><strong>Voorkeur cookies:</strong> Onthouden je gepersonaliseerde culinaire instellingen.</p><p><strong>Analytische cookies:</strong> Helpen ons begrijpen hoe je onze tools gebruikt om ze te verbeteren.</p>",
+            "<h2>7. Contact</h2><p>Als je vragen hebt over ons gebruik van cookies, neem dan contact met ons op via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "privacy": {
+          "title": "Privacybeleid - AI Chef Pro",
+          "description": "Informatie over hoe we je persoonlijke gegevens beschermen en behandelen bij AI Chef Pro.",
+          "heading": "Privacybeleid",
+          "content": "Je privacy is belangrijk voor ons. Dit beleid legt uit hoe we je persoonlijke informatie verzamelen, gebruiken en beschermen.",
+          "content_paragraphs": [
+            "<h2>1. Informatie die we Verzamelen</h2><p>Bij AI Chef Pro verzamelen we informatie wanneer je interacteert met onze culinaire kunstmatige intelligentie services. Dit omvat registratiegegevens, gastronomische voorkeuren en technische informatie over het gebruik van onze applicaties.</p>",
+            "<h2>2. Gebruik van Informatie</h2><p>We gebruiken je informatie om je culinaire ervaring te personaliseren, onze AI-tools te verbeteren, technische ondersteuning te bieden en nieuwe gastronomische functionaliteiten te ontwikkelen die aansluiten bij je professionele behoeften.</p>",
+            "<h2>3. Gegevensbescherming</h2><p>We implementeren technische en organisatorische beveiligingsmaatregelen om je persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging. Je gegevens zijn versleuteld en veilig opgeslagen.</p>",
+            "<h2>7. Contact</h2><p>Voor vragen over dit privacybeleid kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+          ]
+        },
+        "terms": {
+          "title": "Algemene Voorwaarden - AI Chef Pro",
+          "description": "Algemene voorwaarden voor het gebruik van AI Chef Pro en zijn services.",
+          "heading": "Algemene Voorwaarden",
+          "content": "Deze algemene voorwaarden regelen het gebruik van AI Chef Pro en zijn services.",
+          "content_paragraphs": [
+            "<h2>1. Acceptatie van de Voorwaarden</h2><p>Door toegang te krijgen tot en gebruik te maken van AI Chef Pro, accepteer je deze algemene voorwaarden. Als je niet akkoord gaat met een deel van deze voorwaarden, mag je onze culinaire kunstmatige intelligentie services niet gebruiken.</p>",
+            "<h2>2. Service Beschrijving</h2><p>AI Chef Pro is een kunstmatige intelligentie platform gespecialiseerd in gastronomie dat meer dan 55 tools biedt voor kookprofessionals, inclusief culinaire creativiteit, wereldkookboeken en bedrijfsbeheer.</p>",
+            "<h2>3. Gebruikersregistratie en Account</h2><p>Om toegang te krijgen tot bepaalde functionaliteiten, moet je een account aanmaken door nauwkeurige en bijgewerkte informatie te verstrekken. Je bent verantwoordelijk voor het handhaven van de vertrouwelijkheid van je account en wachtwoord.</p>",
+            "<h2>10. Contact</h2><p>Voor vragen over deze voorwaarden kun je contact met ons opnemen via: <strong>info@aichef.pro</strong> of <strong>+34 744 717 942</strong></p>"
+          ]
+        }
+      }
     },
     "concepts": {
       "catering_ai": {
@@ -1312,5 +1315,167 @@
     "text": "30 AI-hacks om de efficiëntie in je keuken te verbeteren",
     "text_short": "30 AI-hacks voor je keuken",
     "cta": "Lees meer"
+  },
+  "landingRestaurantes": {
+    "seo": {
+      "title": "AI-Tools voor Restaurants | AI Chef Pro",
+      "description": "55+ AI-tools voor restauranteigenaren. Beheers kosten, ontwerp uw menu, beheer allergenen en automatiseer marketing. Begin gratis.",
+      "keywords": "ai tools restaurant, kunstmatige intelligentie restaurant, restaurant management ai, ai voor restauranteigenaren, food cost ai, digitaal menu ai, restaurant marketing ai",
+      "url_slug": "ai-tools-restaurant"
+    },
+    "hero": {
+      "badge": "55+ gespecialiseerde tools voor horeca",
+      "h1": "AI-Tools voor Restaurants",
+      "subtitle": "De AI-suite voor eigenaren van restaurants, bars en cafés. Geen technische kennis vereist. Geen leercurve.",
+      "tagline": "Kosten beheersen · Menu ontwerpen · Marketing automatiseren · Verspilling verminderen",
+      "cta_primary": "Nu gratis beginnen",
+      "cta_secondary": "Plannen en prijzen bekijken",
+      "no_card": "Geen creditcard vereist · Gratis plan beschikbaar"
+    },
+    "results": [
+      {
+        "metric": "22%",
+        "label": "gemiddelde verlaging van ingrediëntenkosten"
+      },
+      {
+        "metric": "35%",
+        "label": "minder tijd voor nieuwe gerechtontwikkeling"
+      },
+      {
+        "metric": "30%",
+        "label": "vermindering van voedselverspilling"
+      },
+      {
+        "metric": "55+",
+        "label": "gespecialiseerde tools voor gastronomie"
+      }
+    ],
+    "tools_section": {
+      "title": "Wat kan AI voor uw restaurant doen?",
+      "subtitle": "Elk tool lost een echt dagelijks probleem in de horeca op. Geen vakjargon, geen complexe configuratie."
+    },
+    "tools": [
+      {
+        "title": "Menu-ontwerp",
+        "description": "Genereer volledige menu's afgestemd op uw concept, seizoen en beoogde food cost. Inclusief aantrekkelijke beschrijvingen en pairings.",
+        "keywords": [
+          "digitaal menu",
+          "AI-menu",
+          "menu-engineering"
+        ]
+      },
+      {
+        "title": "Kostenbeheer & food cost",
+        "description": "Bereken de exacte kosten van elk gerecht, stel verkoopprijzen in met de gewenste marge en ontdek waar u geld verliest.",
+        "keywords": [
+          "food cost",
+          "gerechtkost",
+          "verkoopprijs"
+        ]
+      },
+      {
+        "title": "Verspillingsvermindering",
+        "description": "Plan inkopen op basis van de werkelijke vraag, maak optimaal gebruik van producten met zero-waste recepten en elimineer verliezen.",
+        "keywords": [
+          "keukenverspilling",
+          "voedselverspilling",
+          "inkoopplanning"
+        ]
+      },
+      {
+        "title": "Allergenbeheer",
+        "description": "Identificeer en etiketteer automatisch de 14 verplicht te vermelden allergenen in al uw gerechten. Vereenvoudigde wettelijke naleving.",
+        "keywords": [
+          "restaurant allergenen",
+          "allergeenregelgeving",
+          "etikettering"
+        ]
+      },
+      {
+        "title": "Gastronomische marketing",
+        "description": "Maak social media-content, Google Mijn Bedrijf-profielen, antwoorden op recensies en promotiecampagnes in minuten.",
+        "keywords": [
+          "restaurant marketing",
+          "horeca social media",
+          "Google Mijn Bedrijf"
+        ]
+      },
+      {
+        "title": "Culinaire creativiteit",
+        "description": "Ontwikkel nieuwe gerechten, experimenteer met pairings en pas recepten uit 25 wereldkeukens aan voor uw concept.",
+        "keywords": [
+          "culinaire creativiteit",
+          "nieuwe gerechten",
+          "AI-recepten"
+        ]
+      }
+    ],
+    "profiles_section": {
+      "title": "Ontwikkeld voor horecaprofessionals",
+      "subtitle": "Of u nu een buurtbar of een restaurantketen heeft, AI Chef Pro heeft tools die zijn afgestemd op uw realiteit."
+    },
+    "profiles": [
+      {
+        "title": "Onafhankelijk restaurant",
+        "description": "Beheer menu, kosten en marketing zonder afhankelijk te zijn van dure bureaus of consultants."
+      },
+      {
+        "title": "Bar en café",
+        "description": "Bouw uw gastronomisch aanbod op, beheers de voorraad en trek meer klanten aan met professionele content."
+      },
+      {
+        "title": "Restaurantketen",
+        "description": "Standaardiseer processen, beheers kosten op meerdere locaties en schaal uw activiteiten."
+      },
+      {
+        "title": "Executive chef",
+        "description": "Optimaliseer menu-engineering, voedingsanalyse en de ontwikkeling van signature-recepten."
+      }
+    ],
+    "why_section": {
+      "title": "Waarom AI de horeca verandert",
+      "body": "Restaurants die AI-tools omarmen, concurreren niet meer met die dat niet doen. Het verschil zit in beslissnelheid, kostenbeheer en het vermogen een gedifferentieerd aanbod te creëren.",
+      "benefits": [
+        "Ontwerp het menu van uw restaurant in uren, niet weken",
+        "Bereken de food cost van elk gerecht tot op de cent",
+        "Genereer social media-content in minuten, niet dagen",
+        "Identificeer allergenen automatisch in al uw gerechten",
+        "Verminder verspilling met intelligente inkoopplanning",
+        "Toegang tot recepten uit 25 wereldkeukens voor uw bedrijf"
+      ]
+    },
+    "pricing_section": {
+      "title": "Plannen voor elk type horecabedrijf",
+      "subtitle": "Van het gratis plan om te beginnen tot onbeperkt gebruik voor grote operaties.",
+      "annual_note": "Jaarplan ook beschikbaar: AI Chef Premium Plus Jaarlijks voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over AI voor restaurants"
+    },
+    "faq": [
+      {
+        "question": "Welke AI-tools zijn nuttig voor een restaurant?",
+        "answer": "De meest nuttige AI-tools voor restaurants zijn: menugeneratoren, gerechtkostencalculatoren, allergenenmanagers, social media marketingtools, inkoopplanners en verspillingscontrole. AI Chef Pro bundelt 55+ van deze gespecialiseerde tools in één suite."
+      },
+      {
+        "question": "Kan kunstmatige intelligentie helpen om kosten te verlagen in een restaurant?",
+        "answer": "Ja. AI maakt het mogelijk de food cost te optimaliseren door de exacte kosten van elk gerecht te berekenen, onnodige verliezen te detecteren, inkopen te plannen op basis van de vraag en menuprijzen aan te passen om de marge te maximaliseren. AI Chef Pro-gebruikers melden een gemiddelde kostenverlaging van 22%."
+      },
+      {
+        "question": "Heb ik technische kennis nodig om AI-tools te gebruiken in mijn restaurant?",
+        "answer": "Nee. AI Chef Pro is ontworpen voor restauranteigenaren en -managers zonder technische opleiding. De tools werken met natuurlijke taal: u beschrijft wat u nodig heeft en de AI genereert het resultaat. Geen programmering of complexe configuratie vereist."
+      },
+      {
+        "question": "Hoeveel kost het gebruik van AI voor restaurantbeheer?",
+        "answer": "AI Chef Pro heeft een gratis plan (AI Chef Lid) met 5 gebruiken per maand. Betaalde plannen beginnen bij €25/maand (AI Chef Premium Pro, 150 gebruiken) en gaan tot €95/maand voor onbeperkt gebruik. Er is ook een jaarplan voor €950 wat neerkomt op €79/maand."
+      }
+    ],
+    "cta_section": {
+      "title": "Begin vandaag met AI-tools voor uw restaurant",
+      "subtitle": "Gratis plan beschikbaar. Geen creditcard. Directe toegang tot 55+ gespecialiseerde tools voor gastronomie en horeca.",
+      "primary": "Nu gratis uitproberen",
+      "secondary": "Alle plannen bekijken"
+    },
+    "breadcrumb": "AI-Tools voor Restaurants"
   }
 }

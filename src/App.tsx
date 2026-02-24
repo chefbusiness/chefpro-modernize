@@ -13,6 +13,7 @@ import Cookies from "./pages/Cookies";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -44,6 +45,15 @@ const App = () => (
             <Route path="/:lang/privacidad" element={<Privacy />} />
             <Route path="/:lang/terminos" element={<Terms />} />
             
+            {/* Landing pages SEO — todos los idiomas */}
+            <Route path="/herramientas-ia-para-restaurantes" element={<HerramientasIARestaurantes />} />
+            <Route path="/en/ai-tools-for-restaurants" element={<HerramientasIARestaurantes />} />
+            <Route path="/fr/outils-ia-restaurant" element={<HerramientasIARestaurantes />} />
+            <Route path="/de/ki-tools-restaurant" element={<HerramientasIARestaurantes />} />
+            <Route path="/it/strumenti-ia-ristorante" element={<HerramientasIARestaurantes />} />
+            <Route path="/pt/ferramentas-ia-restaurante" element={<HerramientasIARestaurantes />} />
+            <Route path="/nl/ai-tools-restaurant" element={<HerramientasIARestaurantes />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
