@@ -140,23 +140,47 @@ const SEOHead = ({
           },
           {
             "@context": "https://schema.org",
-            "@type": "WebApplication",
+            "@type": "SoftwareApplication",
             "name": "AI Chef Pro",
             "description": pageDescription,
             "url": siteUrl,
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
-            "offers": {
-              "@type": "Offer",
-              "category": "SaaS",
-              "priceCurrency": "EUR",
-              "price": "0",
-              "priceValidUntil": "2025-12-31"
-            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Member",
+                "description": "Acceso básico gratuito",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "0",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "Pro",
+                "description": "Para chefs individuales",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "10",
+                "priceValidUntil": "2026-12-31"
+              },
+              {
+                "@type": "Offer",
+                "name": "Premium Plus",
+                "description": "Uso ilimitado para profesionales",
+                "category": "SaaS",
+                "priceCurrency": "EUR",
+                "price": "50",
+                "priceValidUntil": "2026-12-31"
+              }
+            ],
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "ratingCount": "847"
+              "ratingValue": "4.8",
+              "ratingCount": "1243",
+              "bestRating": "5",
+              "worstRating": "1"
             },
             "inLanguage": languages
           }
