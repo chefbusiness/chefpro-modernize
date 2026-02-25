@@ -1128,7 +1128,26 @@
     "legal": "Legale",
     "privacy": "Informativa sulla Privacy",
     "terms": "Termini di Servizio",
-    "cookies": "Politica sui Cookie"
+    "cookies": "Politica sui Cookie",
+    "section_ia": "IA per Ristoranti",
+    "section_formacion": "Formazione",
+    "section_recursos": "Risorse",
+    "section_herramientas": "Strumenti",
+    "section_empresa": "Azienda",
+    "blog_main": "Blog di IA Gastronomica",
+    "tutoriales": "Tutorial",
+    "prompts_library": "Libreria di Prompt",
+    "recetario": "Ricettario Pro AI",
+    "glosario_ia": "Glossario IA",
+    "glosario_culinario": "Glossario Scientifico Culinario",
+    "roadmap": "Roadmap AI Chef Pro",
+    "app_tools": "55+ Strumenti nell'App",
+    "app_login": "Accedi",
+    "free_tools_hub": "Strumenti Gratuiti",
+    "mentoria_online": "Mentoring Online",
+    "formacion_presencial": "Formazione in presenza",
+    "planes_precios": "Piani e Prezzi",
+    "payment_methods": "Metodi di pagamento"
   },
   "ai_gallery": {
     "badge": "Generazione di Immagini con IA",
@@ -1361,10 +1380,22 @@
       "no_card": "Senza carta di credito. Accesso immediato."
     },
     "results": [
-      { "metric": "-35%", "label": "Riduzione media degli sprechi" },
-      { "metric": "-22%", "label": "Riduzione del food cost" },
-      { "metric": "+18%", "label": "Miglioramento del margine lordo" },
-      { "metric": "2 sett.", "label": "ROI medio dall'inizio" }
+      {
+        "metric": "-35%",
+        "label": "Riduzione media degli sprechi"
+      },
+      {
+        "metric": "-22%",
+        "label": "Riduzione del food cost"
+      },
+      {
+        "metric": "+18%",
+        "label": "Miglioramento del margine lordo"
+      },
+      {
+        "metric": "2 sett.",
+        "label": "ROI medio dall'inizio"
+      }
     ],
     "tools_section": {
       "title": "6 strumenti IA per ridurre i costi in cucina",
@@ -1374,32 +1405,56 @@
       {
         "title": "Controllo Sprechi IA",
         "description": "Rileva i modelli di spreco, identifica gli ingredienti più costosi e ricevi avvisi quando gli sprechi superano la soglia ottimale.",
-        "keywords": ["sprechi", "perdite cucina", "costi alimentari"]
+        "keywords": [
+          "sprechi",
+          "perdite cucina",
+          "costi alimentari"
+        ]
       },
       {
         "title": "Scheda Tecnica Automatica",
         "description": "Calcola il costo reale di ogni ricetta in pochi secondi. Aggiorna i prezzi degli ingredienti e le schede tecniche si ricalcolano automaticamente.",
-        "keywords": ["scheda tecnica", "food cost", "costo per piatto"]
+        "keywords": [
+          "scheda tecnica",
+          "food cost",
+          "costo per piatto"
+        ]
       },
       {
         "title": "Ottimizzatore di Menu per Margine",
         "description": "Analizza quali piatti ti danno il miglior margine e quali ti costano denaro. Ridisegna il tuo menu per massimizzare la redditività.",
-        "keywords": ["ingegneria del menu", "redditività piatti", "margine menu"]
+        "keywords": [
+          "ingegneria del menu",
+          "redditività piatti",
+          "margine menu"
+        ]
       },
       {
         "title": "Pianificatore Acquisti Intelligente",
         "description": "Genera liste della spesa basate sullo storico delle vendite per evitare scorte eccessive e ridurre le perdite di prodotti deperibili.",
-        "keywords": ["acquisti ristorante", "magazzino cucina", "ordini fornitore"]
+        "keywords": [
+          "acquisti ristorante",
+          "magazzino cucina",
+          "ordini fornitore"
+        ]
       },
       {
         "title": "Analisi di Redditività",
         "description": "Dashboard in tempo reale con i tuoi KPI chiave: food cost %, prime cost, margine per tavolo e redditività per servizio.",
-        "keywords": ["KPI ristorante", "redditività", "analisi business"]
+        "keywords": [
+          "KPI ristorante",
+          "redditività",
+          "analisi business"
+        ]
       },
       {
         "title": "Ottimizzazione del Personale",
         "description": "Calcola il costo del personale per servizio e ricevi suggerimenti per adeguare i turni in base alla domanda prevista e agli obiettivi di prime cost.",
-        "keywords": ["costo personale", "prime cost", "turni cucina"]
+        "keywords": [
+          "costo personale",
+          "prime cost",
+          "turni cucina"
+        ]
       }
     ],
     "profiles_section": {
@@ -1647,10 +1702,22 @@
       "no_card": "Senza carta di credito · Piano gratuito disponibile"
     },
     "results": [
-      { "metric": "3h", "label": "per creare un menu completo da zero" },
-      { "metric": "40%", "label": "più margine con menu engineering IA" },
-      { "metric": "14", "label": "allergeni gestiti automaticamente" },
-      { "metric": "25+", "label": "cucine del mondo per ispirare la tua carta" }
+      {
+        "metric": "3h",
+        "label": "per creare un menu completo da zero"
+      },
+      {
+        "metric": "40%",
+        "label": "più margine con menu engineering IA"
+      },
+      {
+        "metric": "14",
+        "label": "allergeni gestiti automaticamente"
+      },
+      {
+        "metric": "25+",
+        "label": "cucine del mondo per ispirare la tua carta"
+      }
     ],
     "tools_section": {
       "title": "Tutto ciò di cui hai bisogno per un menu redditizio",
@@ -1660,32 +1727,56 @@
       {
         "title": "Generatore di Menu Completo",
         "description": "Descrivi il tuo concetto e l'IA genera un menu completo con antipasti, primi, secondi, dolci e bevande adattati al tuo stile, alla stagione e al food cost obiettivo.",
-        "keywords": ["menu ristorante", "menu completo ia", "design carta"]
+        "keywords": [
+          "menu ristorante",
+          "menu completo ia",
+          "design carta"
+        ]
       },
       {
         "title": "Menu Engineering",
         "description": "Analizza quali piatti sono stelle, enigmi, cavalli di battaglia o cani. Riorganizza la tua carta per massimizzare il margine e il volume di vendite.",
-        "keywords": ["menu engineering", "redditività piatti", "matrice BCG carta"]
+        "keywords": [
+          "menu engineering",
+          "redditività piatti",
+          "matrice BCG carta"
+        ]
       },
       {
         "title": "Descrizioni Gastronomiche",
         "description": "Genera descrizioni evocative e appetitose per ogni piatto. Testi che vendono, adattati al tono del tuo ristorante e alla lingua dei tuoi clienti.",
-        "keywords": ["descrizioni piatti", "copywriting gastronomico", "testi menu"]
+        "keywords": [
+          "descrizioni piatti",
+          "copywriting gastronomico",
+          "testi menu"
+        ]
       },
       {
         "title": "Gestione Allergeni",
         "description": "Identifica ed etichetta automaticamente i 14 allergeni a dichiarazione obbligatoria. Conformità legale senza sforzo per tutti i piatti della tua carta.",
-        "keywords": ["allergeni menu", "normativa allergeni", "etichettatura legale"]
+        "keywords": [
+          "allergeni menu",
+          "normativa allergeni",
+          "etichettatura legale"
+        ]
       },
       {
         "title": "Menu Stagionali",
         "description": "Rinnova la tua carta in base alla stagionalità, ai prodotti di mercato e alle tendenze gastronomiche attuali. Sempre fresco, sempre redditizio.",
-        "keywords": ["menu stagionale", "carta stagionale", "prodotti di mercato"]
+        "keywords": [
+          "menu stagionale",
+          "carta stagionale",
+          "prodotti di mercato"
+        ]
       },
       {
         "title": "Menu Speciali e Abbinamenti",
         "description": "Crea carte dei vini, menu cocktail, menu degustazione e proposte di abbinamento con spiegazioni eleganti per ogni piatto.",
-        "keywords": ["carta dei vini", "abbinamento cibo-vino", "menu degustazione"]
+        "keywords": [
+          "carta dei vini",
+          "abbinamento cibo-vino",
+          "menu degustazione"
+        ]
       }
     ],
     "profiles_section": {
@@ -1777,10 +1868,22 @@
       "no_card": "Senza carta di credito · Piano gratuito disponibile"
     },
     "results": [
-      { "metric": "10x", "label": "più veloce per creare contenuto social" },
-      { "metric": "3h", "label": "risparmiate a settimana nel marketing digitale" },
-      { "metric": "4.8★", "label": "valutazione media clienti su Google" },
-      { "metric": "55+", "label": "strumenti di marketing gastronomico" }
+      {
+        "metric": "10x",
+        "label": "più veloce per creare contenuto social"
+      },
+      {
+        "metric": "3h",
+        "label": "risparmiate a settimana nel marketing digitale"
+      },
+      {
+        "metric": "4.8★",
+        "label": "valutazione media clienti su Google"
+      },
+      {
+        "metric": "55+",
+        "label": "strumenti di marketing gastronomico"
+      }
     ],
     "tools_section": {
       "title": "Tutto il marketing del tuo ristorante, automatizzato con IA",
@@ -1790,32 +1893,56 @@
       {
         "title": "Contenuto Social Media",
         "description": "Genera post per Instagram, Facebook e TikTok con testi, hashtag e idee di immagine adattati al tuo ristorante, al piatto del giorno e al tuo stile di comunicazione.",
-        "keywords": ["instagram ristorante", "post ristorazione", "contenuto social media"]
+        "keywords": [
+          "instagram ristorante",
+          "post ristorazione",
+          "contenuto social media"
+        ]
       },
       {
         "title": "Gestione Recensioni Google",
         "description": "Rispondi a recensioni positive e negative in pochi secondi con risposte professionali, empatiche e personalizzate che migliorano la tua reputazione online.",
-        "keywords": ["recensioni google ristorante", "rispondere recensioni", "reputazione online"]
+        "keywords": [
+          "recensioni google ristorante",
+          "rispondere recensioni",
+          "reputazione online"
+        ]
       },
       {
         "title": "Fotografia & Descrizioni",
         "description": "Crea didascalie irresistibili, descrizioni per il tuo menu digitale e testi per le stories che generano prenotazioni e aumentano l'engagement.",
-        "keywords": ["fotografia gastronomica", "descrizione piatti", "instagram stories"]
+        "keywords": [
+          "fotografia gastronomica",
+          "descrizione piatti",
+          "instagram stories"
+        ]
       },
       {
         "title": "Google My Business",
         "description": "Ottimizza la tua scheda Google con descrizioni persuasive, post di novità, offerte speciali e risposte alle domande frequenti per attrarre più clienti locali.",
-        "keywords": ["Google My Business ristorante", "scheda google", "SEO locale ristorante"]
+        "keywords": [
+          "Google My Business ristorante",
+          "scheda google",
+          "SEO locale ristorante"
+        ]
       },
       {
         "title": "Campagne & Promozioni",
         "description": "Progetta campagne per eventi speciali, festività, menu stagionali e promozioni flash con testi e sequenze di messaggi pronti da pubblicare.",
-        "keywords": ["campagne ristorante", "promozioni ristorazione", "email marketing"]
+        "keywords": [
+          "campagne ristorante",
+          "promozioni ristorazione",
+          "email marketing"
+        ]
       },
       {
         "title": "Newsletter & Email Marketing",
         "description": "Redigi newsletter mensili, email di fidelizzazione e sequenze di benvenuto per i tuoi clienti nel tono e stile del tuo brand gastronomico.",
-        "keywords": ["newsletter ristorante", "email marketing ristorazione", "fidelizzazione clienti"]
+        "keywords": [
+          "newsletter ristorante",
+          "email marketing ristorazione",
+          "fidelizzazione clienti"
+        ]
       }
     ],
     "profiles_section": {
@@ -1907,22 +2034,58 @@
       "no_card": "Nessuna carta di credito · Piano gratuito disponibile"
     },
     "results": [
-      { "metric": "55+", "label": "strumenti formati in gastronomia" },
-      { "metric": "10x", "label": "più preciso nel calcolo food cost" },
-      { "metric": "5.000+", "label": "ristoranti e chef che già lo usano" },
-      { "metric": "25", "label": "cucine del mondo nel database" }
+      {
+        "metric": "55+",
+        "label": "strumenti formati in gastronomia"
+      },
+      {
+        "metric": "10x",
+        "label": "più preciso nel calcolo food cost"
+      },
+      {
+        "metric": "5.000+",
+        "label": "ristoranti e chef che già lo usano"
+      },
+      {
+        "metric": "25",
+        "label": "cucine del mondo nel database"
+      }
     ],
     "comparison": {
       "title": "ChatGPT vs AI Chef Pro per i ristoranti",
       "subtitle": "Entrambi usano l'intelligenza artificiale, ma uno è formato per il tuo business e l'altro no.",
       "col_feature": "Funzionalità",
       "items": [
-        { "feature": "Calcolo food cost", "chatgpt": "Risposte generiche", "aichef": "Calcolo preciso con margini" },
-        { "feature": "Progettazione menù", "chatgpt": "Senza contesto gastronomico", "aichef": "Adattato al tuo concetto e food cost" },
-        { "feature": "Gestione allergeni", "chatgpt": "Può fare errori", "aichef": "14 allergeni secondo normativa UE" },
-        { "feature": "Ricette professionali", "chatgpt": "Generiche, senza tecnica", "aichef": "25 cucine del mondo con tecnica" },
-        { "feature": "Marketing gastronomico", "chatgpt": "Senza vocabolario settoriale", "aichef": "Testi con terminologia ristorazione" },
-        { "feature": "Risposte alle recensioni", "chatgpt": "Testi senza contesto", "aichef": "Risposte con tono da ristorante" }
+        {
+          "feature": "Calcolo food cost",
+          "chatgpt": "Risposte generiche",
+          "aichef": "Calcolo preciso con margini"
+        },
+        {
+          "feature": "Progettazione menù",
+          "chatgpt": "Senza contesto gastronomico",
+          "aichef": "Adattato al tuo concetto e food cost"
+        },
+        {
+          "feature": "Gestione allergeni",
+          "chatgpt": "Può fare errori",
+          "aichef": "14 allergeni secondo normativa UE"
+        },
+        {
+          "feature": "Ricette professionali",
+          "chatgpt": "Generiche, senza tecnica",
+          "aichef": "25 cucine del mondo con tecnica"
+        },
+        {
+          "feature": "Marketing gastronomico",
+          "chatgpt": "Senza vocabolario settoriale",
+          "aichef": "Testi con terminologia ristorazione"
+        },
+        {
+          "feature": "Risposte alle recensioni",
+          "chatgpt": "Testi senza contesto",
+          "aichef": "Risposte con tono da ristorante"
+        }
       ]
     },
     "tools_section": {
@@ -1930,22 +2093,82 @@
       "subtitle": "Strumenti progettati per risolvere i problemi reali del quotidiano in un ristorante."
     },
     "tools": [
-      { "title": "Food Cost e Ricettario", "description": "Calcola il costo esatto di ogni piatto con ricetta, grammi e prezzi fornitore.", "keywords": ["food cost ristorante", "food cost ia", "costo piatto"] },
-      { "title": "Ingegneria del Menù", "description": "Progetta menù con criterio di redditività.", "keywords": ["ingegneria del menù", "progettazione menù redditizio", "menu engineering"] },
-      { "title": "Allergeni con Normativa", "description": "Identifica i 14 allergeni secondo il Regolamento UE 1169/2011.", "keywords": ["allergeni ristorante", "normativa allergeni UE", "etichettatura legale"] },
-      { "title": "Ricette di 25 Cucine", "description": "Database di tecniche e ricette di 25 cucine del mondo.", "keywords": ["ricette professionali", "tecniche cucina", "cucine del mondo"] },
-      { "title": "Marketing con Vocabolario Settoriale", "description": "Contenuto social con il linguaggio proprio della ristorazione.", "keywords": ["marketing ristorazione", "contenuto ristorante", "vocabolario gastronomico"] },
-      { "title": "Risposte Recensioni Google", "description": "Risponde con il tono adeguato per un ristorante.", "keywords": ["rispondere recensioni google", "reputazione online ristorante", "recensioni negative"] }
+      {
+        "title": "Food Cost e Ricettario",
+        "description": "Calcola il costo esatto di ogni piatto con ricetta, grammi e prezzi fornitore.",
+        "keywords": [
+          "food cost ristorante",
+          "food cost ia",
+          "costo piatto"
+        ]
+      },
+      {
+        "title": "Ingegneria del Menù",
+        "description": "Progetta menù con criterio di redditività.",
+        "keywords": [
+          "ingegneria del menù",
+          "progettazione menù redditizio",
+          "menu engineering"
+        ]
+      },
+      {
+        "title": "Allergeni con Normativa",
+        "description": "Identifica i 14 allergeni secondo il Regolamento UE 1169/2011.",
+        "keywords": [
+          "allergeni ristorante",
+          "normativa allergeni UE",
+          "etichettatura legale"
+        ]
+      },
+      {
+        "title": "Ricette di 25 Cucine",
+        "description": "Database di tecniche e ricette di 25 cucine del mondo.",
+        "keywords": [
+          "ricette professionali",
+          "tecniche cucina",
+          "cucine del mondo"
+        ]
+      },
+      {
+        "title": "Marketing con Vocabolario Settoriale",
+        "description": "Contenuto social con il linguaggio proprio della ristorazione.",
+        "keywords": [
+          "marketing ristorazione",
+          "contenuto ristorante",
+          "vocabolario gastronomico"
+        ]
+      },
+      {
+        "title": "Risposte Recensioni Google",
+        "description": "Risponde con il tono adeguato per un ristorante.",
+        "keywords": [
+          "rispondere recensioni google",
+          "reputazione online ristorante",
+          "recensioni negative"
+        ]
+      }
     ],
     "profiles_section": {
       "title": "Chi usa AI Chef Pro invece di ChatGPT?",
       "subtitle": "Professionisti che avevano già provato ChatGPT e avevano bisogno di qualcosa di specifico per la ristorazione."
     },
     "profiles": [
-      { "title": "Chef Proprietario", "description": "Usava ChatGPT per le ricette ma perdeva tempo a correggere errori tecnici." },
-      { "title": "Direttore delle Operazioni", "description": "ChatGPT non riusciva a calcolare il food cost correttamente." },
-      { "title": "Chef de Cuisine", "description": "Aveva bisogno di menù stagionali con veri criteri culinari." },
-      { "title": "Proprietario di Bar o Caffè", "description": "Nessun tempo per prompt elaborati. AI Chef Pro ha gli strumenti pronti." }
+      {
+        "title": "Chef Proprietario",
+        "description": "Usava ChatGPT per le ricette ma perdeva tempo a correggere errori tecnici."
+      },
+      {
+        "title": "Direttore delle Operazioni",
+        "description": "ChatGPT non riusciva a calcolare il food cost correttamente."
+      },
+      {
+        "title": "Chef de Cuisine",
+        "description": "Aveva bisogno di menù stagionali con veri criteri culinari."
+      },
+      {
+        "title": "Proprietario di Bar o Caffè",
+        "description": "Nessun tempo per prompt elaborati. AI Chef Pro ha gli strumenti pronti."
+      }
     ],
     "why_section": {
       "title": "ChatGPT è buono. AI Chef Pro è meglio per il tuo ristorante.",
@@ -1973,10 +2196,22 @@
       "title": "Domande frequenti: ChatGPT vs AI Chef Pro per i ristoranti"
     },
     "faq": [
-      { "question": "ChatGPT può fare il food cost per i ristoranti?", "answer": "ChatGPT può provarci ma essendo generalista non tiene conto dei prezzi di mercato attuali, dei cali tipici o dei margini della ristorazione. AI Chef Pro è progettato specificamente per calcolare il food cost con la logica di un vero ristorante." },
-      { "question": "Perché non usare ChatGPT gratis invece di AI Chef Pro?", "answer": "Per la ristorazione hai bisogno di precisione su allergeni e food cost. Gli errori sugli allergeni hanno conseguenze legali. AI Chef Pro è formato per dare risultati corretti in queste aree critiche." },
-      { "question": "AI Chef Pro usa la stessa tecnologia di ChatGPT?", "answer": "Usa i più recenti modelli di IA perfezionati in gastronomia e ristorazione. Parla il linguaggio degli chef, comprende la normativa sugli allergeni e conosce la logica del business della ristorazione." },
-      { "question": "AI Chef Pro può aiutarmi a creare ricette come ChatGPT?", "answer": "Sì, e con più precisione tecnica: 25 cucine del mondo con vocabolario culinario corretto, fondi, riduzioni, texture, tecniche di pasticceria, adattate al tuo food cost e alla stagione." }
+      {
+        "question": "ChatGPT può fare il food cost per i ristoranti?",
+        "answer": "ChatGPT può provarci ma essendo generalista non tiene conto dei prezzi di mercato attuali, dei cali tipici o dei margini della ristorazione. AI Chef Pro è progettato specificamente per calcolare il food cost con la logica di un vero ristorante."
+      },
+      {
+        "question": "Perché non usare ChatGPT gratis invece di AI Chef Pro?",
+        "answer": "Per la ristorazione hai bisogno di precisione su allergeni e food cost. Gli errori sugli allergeni hanno conseguenze legali. AI Chef Pro è formato per dare risultati corretti in queste aree critiche."
+      },
+      {
+        "question": "AI Chef Pro usa la stessa tecnologia di ChatGPT?",
+        "answer": "Usa i più recenti modelli di IA perfezionati in gastronomia e ristorazione. Parla il linguaggio degli chef, comprende la normativa sugli allergeni e conosce la logica del business della ristorazione."
+      },
+      {
+        "question": "AI Chef Pro può aiutarmi a creare ricette come ChatGPT?",
+        "answer": "Sì, e con più precisione tecnica: 25 cucine del mondo con vocabolario culinario corretto, fondi, riduzioni, texture, tecniche di pasticceria, adattate al tuo food cost e alla stagione."
+      }
     ],
     "cta_section": {
       "title": "L'IA di ristorazione che ChatGPT non può essere",
