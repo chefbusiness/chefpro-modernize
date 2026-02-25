@@ -75,6 +75,16 @@ const SOFTWARE_GESTION_SLUGS: Record<string, string> = {
   nl: 'nl/keuken-software-ai',
 };
 
+const ESCANDALLOS_SLUGS: Record<string, string> = {
+  es: 'escandallos-restaurante-ia',
+  en: 'en/food-cost-calculator-restaurant-ai',
+  fr: 'fr/calcul-food-cost-restaurant-ia',
+  de: 'de/food-cost-rechner-restaurant-ki',
+  it: 'it/food-cost-ristorante-ia',
+  pt: 'pt/escandallo-restaurante-ia',
+  nl: 'nl/food-cost-berekening-restaurant-ai',
+};
+
 const MENTORIA_SLUGS: Record<string, string> = {
   es: 'mentoria-online',
   en: 'en/mentoria-online',
@@ -204,6 +214,14 @@ export default function ModernFooter() {
                   className="text-amber-600 hover:text-amber-500 transition-colors font-medium"
                 >
                   {t('footer.nav_recetas')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${ESCANDALLOS_SLUGS[lang] || ESCANDALLOS_SLUGS.es}`}
+                  className="text-rose-600 hover:text-rose-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_escandallos')}
                 </a>
               </li>
             </ul>

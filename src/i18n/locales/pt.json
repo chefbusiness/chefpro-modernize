@@ -1107,6 +1107,7 @@
     "nav_chatgpt": "ChatGPT para Restaurantes",
     "nav_software_gestion": "Software Gestão Cozinha",
     "nav_recetas": "Receitas com IA",
+    "nav_escandallos": "Food Cost IA",
     "nav_ai_tools": "Ferramentas IA",
     "nav_free_tools": "Ferramentas Gratuitas",
     "contact_title": "Contato",
@@ -2469,6 +2470,137 @@
       "title": "Comece a criar receitas com IA para o seu restaurante",
       "subtitle": "Mais de 5.000 chefs e restauradores já usam o AI Chef Pro para criar receitas profissionais em minutos.",
       "primary": "Experimentar grátis agora",
+      "secondary": "Ver todos os planos"
+    }
+  },
+  "landingEscandallos": {
+    "seo": {
+      "title": "Cálculo Food Cost Restaurante IA | AI Chef Pro",
+      "description": "Calcule o food cost do seu restaurante com IA em 2 minutos. Controlo de desperdício, preço de venda ótimo e análise de rentabilidade por prato. Comece grátis.",
+      "keywords": "food cost restaurante, food cost IA, calcular food cost, controlo custos restaurante, preço venda prato, desperdício cozinha, rentabilidade pratos"
+    },
+    "breadcrumb": "Food Cost Restaurante com IA",
+    "hero": {
+      "badge": "Calculadora de Food Cost IA para Restaurantes",
+      "h1": "Food Cost Restaurante com IA: Cálculo Completo em 2 Minutos",
+      "subtitle": "Calcule o custo exato de cada prato instantaneamente. Controlo de desperdício, preço de venda ótimo e análise de rentabilidade para maximizar o lucro do seu restaurante.",
+      "tagline": "Pare de perder dinheiro por não controlar o seu food cost.",
+      "cta_primary": "Calcular o meu food cost grátis",
+      "cta_secondary": "Ver planos e preços",
+      "no_card": "Sem cartão de crédito · Acesso imediato"
+    },
+    "results": [
+      { "metric": "2min", "label": "Para um cálculo completo" },
+      { "metric": "30%", "label": "Redução média de custos" },
+      { "metric": "5.000+", "label": "Restaurantes ativos" },
+      { "metric": "55+", "label": "Ferramentas especializadas" }
+    ],
+    "comparison": {
+      "title": "Food Cost IA vs. Excel e método manual",
+      "subtitle": "Descubra quanto tempo e dinheiro perde ao calcular o food cost manualmente.",
+      "col_feature": "Aspeto",
+      "col_other": "Excel / Manual",
+      "items": [
+        { "feature": "Tempo por cálculo", "other": "30-60 minutos por prato", "aichef": "2 minutos com IA" },
+        { "feature": "Atualização de preços", "other": "Manual em cada subida", "aichef": "Recálculo automático instantâneo" },
+        { "feature": "Controlo de desperdício", "other": "Ignorado ou mal estimado", "aichef": "Desperdício calculado por tipo de ingrediente" },
+        { "feature": "Preço de venda", "other": "Intuição sem base objetiva", "aichef": "Preço ótimo com margem objetivo" },
+        { "feature": "Rentabilidade por prato", "other": "Sem análise sistemática", "aichef": "Dashboard de rentabilidade em tempo real" }
+      ]
+    },
+    "tools_section": {
+      "title": "As ferramentas de food cost que o seu restaurante precisa",
+      "subtitle": "Controlo total do food cost: do ingrediente à margem líquida por prato."
+    },
+    "tools": [
+      {
+        "title": "Food Cost Automático com IA",
+        "description": "Introduza ingredientes, gramagens e preços de fornecedor. A IA calcula o food cost exato de cada prato em segundos.",
+        "keywords": ["food cost automático", "food cost por prato", "calculadora food cost"]
+      },
+      {
+        "title": "Controlo de Desperdício",
+        "description": "Calcule o desperdício real por tipo de ingrediente (limpeza, confeção, evaporação) para um food cost preciso.",
+        "keywords": ["desperdício cozinha", "rendimento ingredientes", "perdas na confeção"]
+      },
+      {
+        "title": "Preço de Venda Ótimo",
+        "description": "A IA calcula o preço de venda ideal com base na sua margem objetivo, no mercado e no posicionamento do seu restaurante.",
+        "keywords": ["preço venda prato", "margem restaurante", "política de preços"]
+      },
+      {
+        "title": "Análise de Rentabilidade",
+        "description": "Identifique quais os pratos com maior margem e quais lhe estão a custar dinheiro. Otimize a sua carta com dados reais.",
+        "keywords": ["rentabilidade por prato", "engenharia de menu", "análise food cost"]
+      },
+      {
+        "title": "Atualização de Preços",
+        "description": "Quando o custo de um ingrediente sobe, a IA recalcula automaticamente todos os food costs afetados.",
+        "keywords": ["atualização food cost", "inflação alimentar", "controlo preços fornecedor"]
+      },
+      {
+        "title": "Dashboard Food Cost",
+        "description": "Visualize o food cost global do seu restaurante, por categoria e por prato. Detete desvios instantaneamente.",
+        "keywords": ["dashboard food cost", "controlo custos cozinha", "KPIs restaurante"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Quem usa o food cost IA do AI Chef Pro?",
+      "subtitle": "Profissionais que pararam de perder dinheiro por um food cost mal calculado."
+    },
+    "profiles": [
+      { "title": "Chef Proprietário", "description": "Controla o food cost da sua carta sem depender de contabilistas ou folhas Excel intermináveis." },
+      { "title": "Diretor de Operações", "description": "Supervisiona o food cost de vários espaços a partir de um único painel com dados em tempo real." },
+      { "title": "Chefe de Cozinha", "description": "Atualiza os food costs quando os preços dos fornecedores mudam sem refazer todo o processo." },
+      { "title": "Controller ou Financeiro", "description": "Tem pela primeira vez um controlo exato do custo de cada prato e do seu impacto na conta de resultados." }
+    ],
+    "why_section": {
+      "title": "O food cost que não controla é a margem que está a oferecer",
+      "body": "A maioria dos restaurantes perde entre 5% e 15% do lucro potencial por um food cost mal calculado. O AI Chef Pro dá-lhe o controlo exato de que precisa para proteger a sua margem.",
+      "benefits": [
+        "Cálculo completo de qualquer prato em menos de 2 minutos",
+        "Controlo de desperdício por tipo de ingrediente e técnica de confeção",
+        "Preço de venda ótimo calculado com a sua margem objetivo",
+        "Recálculo automático quando os preços dos fornecedores mudam",
+        "Identificação dos pratos mais e menos rentáveis",
+        "Dashboard food cost global com alertas de desvio"
+      ]
+    },
+    "testimonial": {
+      "quote": "Fazíamos os food costs em Excel há anos. Com o AI Chef Pro estão todos atualizados em tempo real e identificámos 4 pratos que nos custavam dinheiro sem saber. Recuperámos o investimento em três meses.",
+      "name": "Roberto Fernández",
+      "role": "Diretor de Operações, Grupo La Dehesa, Madrid"
+    },
+    "pricing_section": {
+      "title": "Comece a controlar o seu food cost a partir de 0€",
+      "subtitle": "Calcule os seus primeiros food costs grátis. Sem cartão, sem compromisso.",
+      "annual_note": "Plano anual AI Chef Premium Plus disponível a 950€/ano · Poupe 2 meses"
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes sobre food cost restaurante com IA"
+    },
+    "faq": [
+      {
+        "question": "O que é um cálculo de food cost de restaurante?",
+        "answer": "Um food cost é o cálculo detalhado do custo de produção de um prato: ingredientes, gramagens, desperdício e preço de fornecedor. É a base do food cost e do preço de venda. O AI Chef Pro gera-o automaticamente com IA em menos de 2 minutos."
+      },
+      {
+        "question": "Como calcula o AI Chef Pro o food cost de um prato?",
+        "answer": "Introduz os ingredientes, gramagens por dose e preços de fornecedor. A IA calcula automaticamente o custo bruto, aplica as percentagens de desperdício de cada ingrediente e dá-lhe o custo líquido real do prato."
+      },
+      {
+        "question": "Posso calcular o preço de venda com o AI Chef Pro?",
+        "answer": "Sim. Após o cálculo do food cost, a IA sugere o preço de venda ótimo com base na margem desejada (tipicamente entre 25% e 35% de food cost ratio para restaurantes), considerando também o posicionamento do seu restaurante."
+      },
+      {
+        "question": "O que acontece quando o preço de um ingrediente sobe?",
+        "answer": "O AI Chef Pro recalcula automaticamente todos os food costs que incluem esse ingrediente. Em segundos sabe quais os pratos que ficaram mais caros, quanto variou a margem e se precisa de ajustar os preços de venda."
+      }
+    ],
+    "cta_section": {
+      "title": "Comece a controlar o seu food cost com IA hoje mesmo",
+      "subtitle": "Mais de 5.000 restaurantes já usam o AI Chef Pro para calcular o food cost e proteger a sua margem.",
+      "primary": "Calcular o meu food cost grátis",
       "secondary": "Ver todos os planos"
     }
   }

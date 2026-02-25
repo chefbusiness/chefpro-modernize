@@ -20,6 +20,7 @@ import MarketingRestaurante from "./pages/MarketingRestaurante";
 import ChatGPTRestaurantes from "./pages/ChatGPTRestaurantes";
 import SoftwareGestionCocina from "./pages/SoftwareGestionCocina";
 import RecetasIARestaurantes from "./pages/RecetasIARestaurantes";
+import EscandallosRestaurante from "./pages/EscandallosRestaurante";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -112,6 +113,15 @@ const App = () => (
             <Route path="/it/ricette-ia-ristoranti" element={<RecetasIARestaurantes />} />
             <Route path="/pt/receitas-ia-restaurantes" element={<RecetasIARestaurantes />} />
             <Route path="/nl/ai-recepten-restaurants" element={<RecetasIARestaurantes />} />
+
+            {/* Landing escandallos restaurante IA — todos los idiomas */}
+            <Route path="/escandallos-restaurante-ia" element={<EscandallosRestaurante />} />
+            <Route path="/en/food-cost-calculator-restaurant-ai" element={<EscandallosRestaurante />} />
+            <Route path="/fr/calcul-food-cost-restaurant-ia" element={<EscandallosRestaurante />} />
+            <Route path="/de/food-cost-rechner-restaurant-ki" element={<EscandallosRestaurante />} />
+            <Route path="/it/food-cost-ristorante-ia" element={<EscandallosRestaurante />} />
+            <Route path="/pt/escandallo-restaurante-ia" element={<EscandallosRestaurante />} />
+            <Route path="/nl/food-cost-berekening-restaurant-ai" element={<EscandallosRestaurante />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

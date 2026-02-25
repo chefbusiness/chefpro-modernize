@@ -1102,6 +1102,7 @@
     "nav_chatgpt": "ChatGPT voor Restaurants",
     "nav_software_gestion": "Keukenbeheersoftware",
     "nav_recetas": "AI-Recepten",
+    "nav_escandallos": "Food Cost Berekening AI",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -2464,6 +2465,137 @@
       "title": "Begin vandaag nog met AI-recepten voor uw restaurant",
       "subtitle": "Meer dan 5.000 chefs en restauranthouders gebruiken AI Chef Pro al om in minuten professionele recepten te maken.",
       "primary": "Nu gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    }
+  },
+  "landingEscandallos": {
+    "seo": {
+      "title": "Restaurant Food Cost Berekening AI | AI Chef Pro",
+      "description": "Bereken uw restaurant food cost met AI in 2 minuten. Verspillingscontrole, optimale verkoopprijs en rentabiliteitsanalyse per gerecht. Start gratis.",
+      "keywords": "restaurant food cost, food cost AI, food cost berekening, restaurantkostenbeheersing, gerecht verkoopprijs, keuken verspilling, gerecht rentabiliteit"
+    },
+    "breadcrumb": "Restaurant Food Cost met AI",
+    "hero": {
+      "badge": "AI Food Cost Calculator voor Restaurants",
+      "h1": "Restaurant Food Cost met AI: Volledige Berekening in 2 Minuten",
+      "subtitle": "Bereken de exacte kosten van elk gerecht direct. Verspillingscontrole, optimale verkoopprijs en rentabiliteitsanalyse om uw restaurantwinst te maximaliseren.",
+      "tagline": "Stop met geld verliezen door ongecontroleerde food cost.",
+      "cta_primary": "Mijn food cost gratis berekenen",
+      "cta_secondary": "Bekijk plannen en prijzen",
+      "no_card": "Geen creditcard vereist · Directe toegang"
+    },
+    "results": [
+      { "metric": "2min", "label": "Voor een volledige berekening" },
+      { "metric": "30%", "label": "Gemiddelde kostenreductie" },
+      { "metric": "5.000+", "label": "Actieve restaurants" },
+      { "metric": "55+", "label": "Gespecialiseerde tools" }
+    ],
+    "comparison": {
+      "title": "AI Food Cost vs. Excel en handmatige methoden",
+      "subtitle": "Ontdek hoeveel tijd en geld u verliest door food cost handmatig te berekenen.",
+      "col_feature": "Aspect",
+      "col_other": "Excel / Handmatig",
+      "items": [
+        { "feature": "Tijd per berekening", "other": "30-60 minuten per gerecht", "aichef": "2 minuten met AI" },
+        { "feature": "Prijsupdates", "other": "Handmatig bij elke kostenstijging", "aichef": "Automatische herberekening direct" },
+        { "feature": "Verspillingscontrole", "other": "Genegeerd of onnauwkeurig geschat", "aichef": "Verspilling berekend per ingrediënttype" },
+        { "feature": "Verkoopprijs", "other": "Buikgevoel zonder objectieve basis", "aichef": "Optimale prijs met doelmarge" },
+        { "feature": "Rentabiliteit per gerecht", "other": "Geen systematische analyse", "aichef": "Realtime rentabiliteitsdashboard" }
+      ]
+    },
+    "tools_section": {
+      "title": "De food cost tools die uw restaurant nodig heeft",
+      "subtitle": "Volledige food cost controle: van ingrediënt tot nettomarge per gerecht."
+    },
+    "tools": [
+      {
+        "title": "Automatische AI Food Cost",
+        "description": "Voer ingrediënten, gewichten en leveranciersprijs in. AI berekent de exacte food cost van elk gerecht in seconden.",
+        "keywords": ["automatische food cost", "food cost per gerecht", "food cost calculator"]
+      },
+      {
+        "title": "Verspillingscontrole",
+        "description": "Bereken het werkelijke verlies per ingrediënttype (schoonmaken, koken, verdamping) voor nauwkeurige food cost.",
+        "keywords": ["keuken verspilling", "ingrediëntrendement", "kookverliezen"]
+      },
+      {
+        "title": "Optimale Verkoopprijs",
+        "description": "AI berekent de ideale verkoopprijs op basis van uw doelmarge, de markt en de positionering van uw restaurant.",
+        "keywords": ["gerecht verkoopprijs", "restaurantmarge", "prijsbeleid"]
+      },
+      {
+        "title": "Rentabiliteitsanalyse",
+        "description": "Identificeer welke gerechten de hoogste marge geven en welke u geld kosten. Optimaliseer uw menu met echte data.",
+        "keywords": ["rentabiliteit per gerecht", "menu-engineering", "food cost analyse"]
+      },
+      {
+        "title": "Prijsupdates",
+        "description": "Wanneer de kosten van een ingrediënt stijgen, herberekent AI automatisch alle getroffen food costings.",
+        "keywords": ["food cost update", "voedselinflatie", "leveranciersprijscontrole"]
+      },
+      {
+        "title": "Food Cost Dashboard",
+        "description": "Visualiseer de totale food cost van uw restaurant, per categorie en per gerecht. Detecteer afwijkingen direct.",
+        "keywords": ["food cost dashboard", "keuken kostenbeheersing", "restaurant KPIs"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wie gebruikt AI food cost bij AI Chef Pro?",
+      "subtitle": "Professionals die zijn gestopt met geld verliezen door slecht berekende food cost."
+    },
+    "profiles": [
+      { "title": "Chef-eigenaar", "description": "Beheert de food cost van zijn menukaart zonder afhankelijk te zijn van accountants of eindeloze spreadsheets." },
+      { "title": "Operationeel Directeur", "description": "Bewaakt de food cost van meerdere locaties vanuit één dashboard met realtime data." },
+      { "title": "Keukenchef", "description": "Werkt food costings bij wanneer leveranciersprijs veranderen zonder het hele proces te herhalen." },
+      { "title": "Controller of Finance", "description": "Heeft voor het eerst exacte controle over de kosten van elk gerecht en de impact op het resultaat." }
+    ],
+    "why_section": {
+      "title": "Ongecontroleerde food cost is de marge die u weggeeft",
+      "body": "De meeste restaurants verliezen 5% tot 15% potentiële winst door slecht berekende food cost. AI Chef Pro geeft u de precieze controle die u nodig heeft om uw marge te beschermen.",
+      "benefits": [
+        "Volledige food cost van elk gerecht in minder dan 2 minuten",
+        "Verspillingscontrole per ingrediënttype en kooktechniek",
+        "Optimale verkoopprijs berekend met uw doelmarge",
+        "Automatische herberekening bij leveranciersprijswijzigingen",
+        "Identificatie van uw meest en minst winstgevende gerechten",
+        "Globaal food cost dashboard met afwijkingsalarmen"
+      ]
+    },
+    "testimonial": {
+      "quote": "We deden food costings in Excel al jaren. Met AI Chef Pro zijn ze allemaal realtime bijgewerkt en hebben we 4 gerechten geïdentificeerd die ons onbewust geld kostten. We hebben de investering in drie maanden terugverdiend.",
+      "name": "Roberto Fernández",
+      "role": "Operationeel Directeur, Grupo La Dehesa, Madrid"
+    },
+    "pricing_section": {
+      "title": "Begin met food cost controle vanaf €0",
+      "subtitle": "Bereken uw eerste food costings gratis. Geen kaart, geen verplichtingen.",
+      "annual_note": "Jaarplan AI Chef Premium Plus ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over restaurant food cost met AI"
+    },
+    "faq": [
+      {
+        "question": "Wat is een restaurant food cost berekening?",
+        "answer": "Een food cost berekening is de gedetailleerde berekening van de productiekosten van een gerecht: ingrediënten, gewichten, verspilling en leveranciersprijs. Het is de basis van food cost en verkoopprijs. AI Chef Pro genereert het automatisch met AI in minder dan 2 minuten."
+      },
+      {
+        "question": "Hoe berekent AI Chef Pro de food cost van een gerecht?",
+        "answer": "U voert de ingrediënten, gewichten per portie en leveranciersprijs in. AI berekent automatisch de brutokost, past de verspillingspercentages voor elk ingrediënt toe en geeft u de werkelijke nettokost van het gerecht."
+      },
+      {
+        "question": "Kan ik de verkoopprijs berekenen met AI Chef Pro?",
+        "answer": "Ja. Na de food cost berekening suggereert AI de optimale verkoopprijs op basis van uw gewenste marge (typisch 25%-35% food cost ratio voor restaurants), ook rekening houdend met de positionering van uw restaurant."
+      },
+      {
+        "question": "Wat gebeurt er wanneer een ingrediëntprijs stijgt?",
+        "answer": "AI Chef Pro herberekent automatisch alle food costings die dat ingrediënt bevatten. In seconden weet u welke gerechten duurder zijn geworden, hoeveel de marge is veranderd en of u de verkoopprijzen moet aanpassen."
+      }
+    ],
+    "cta_section": {
+      "title": "Begin vandaag nog met AI food cost controle",
+      "subtitle": "Meer dan 5.000 restaurants gebruiken AI Chef Pro al om food cost te berekenen en hun marge te beschermen.",
+      "primary": "Mijn food cost gratis berekenen",
       "secondary": "Alle plannen bekijken"
     }
   }

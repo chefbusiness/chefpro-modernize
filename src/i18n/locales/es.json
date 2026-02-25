@@ -648,6 +648,7 @@
     "nav_chatgpt": "ChatGPT para Restaurantes",
     "nav_software_gestion": "Software Gestión Cocina",
     "nav_recetas": "Recetas con IA",
+    "nav_escandallos": "Escandallos con IA",
     "nav_ai_tools": "Herramientas IA",
     "nav_free_tools": "Herramientas Gratuitas",
     "contact_title": "Contacto",
@@ -2206,6 +2207,137 @@
       "title": "Empieza a crear recetas con IA para tu restaurante",
       "subtitle": "Más de 5.000 chefs y restauradores ya usan AI Chef Pro para crear recetas profesionales en minutos.",
       "primary": "Probar gratis ahora",
+      "secondary": "Ver todos los planes"
+    }
+  },
+  "landingEscandallos": {
+    "seo": {
+      "title": "Escandallos Restaurante con IA: Food Cost Automático | AI Chef Pro",
+      "description": "Calcula escandallos y food cost de tu restaurante con IA en 2 minutos. Control de mermas, precio de venta óptimo y análisis de rentabilidad por plato. Empieza gratis.",
+      "keywords": "escandallos restaurante, food cost IA, calcular escandallo, control costes restaurante, precio venta plato, mermas cocina, rentabilidad platos"
+    },
+    "breadcrumb": "Escandallos Restaurante con IA",
+    "hero": {
+      "badge": "Calculadora de Escandallos con IA para Restaurantes",
+      "h1": "Escandallos de Restaurante con IA: Food Cost en 2 Minutos",
+      "subtitle": "Calcula el coste exacto de cada plato al instante. Control de mermas, precio de venta óptimo y análisis de rentabilidad para maximizar el beneficio de tu restaurante.",
+      "tagline": "Deja de perder dinero por no controlar tu food cost.",
+      "cta_primary": "Calcular mi food cost gratis",
+      "cta_secondary": "Ver planes y precios",
+      "no_card": "Sin tarjeta de crédito · Acceso inmediato"
+    },
+    "results": [
+      { "metric": "2min", "label": "Para un escandallo completo" },
+      { "metric": "30%", "label": "Reducción de costes media" },
+      { "metric": "5.000+", "label": "Restaurantes activos" },
+      { "metric": "55+", "label": "Herramientas especializadas" }
+    ],
+    "comparison": {
+      "title": "Escandallos con IA vs. Excel y método manual",
+      "subtitle": "Descubre cuánto tiempo y dinero pierdes haciendo escandallos a mano.",
+      "col_feature": "Aspecto",
+      "col_other": "Excel / Manual",
+      "items": [
+        { "feature": "Tiempo por escandallo", "other": "30-60 minutos por plato", "aichef": "2 minutos con IA" },
+        { "feature": "Actualización de precios", "other": "Manual cada vez que sube el coste", "aichef": "Recálculo automático al instante" },
+        { "feature": "Control de mermas", "other": "Ignorado o estimado sin precisión", "aichef": "Mermas calculadas por tipo de ingrediente" },
+        { "feature": "Precio de venta", "other": "Intuición sin base objetiva", "aichef": "Precio óptimo calculado con margen objetivo" },
+        { "feature": "Rentabilidad por plato", "other": "Sin análisis sistemático", "aichef": "Dashboard de rentabilidad en tiempo real" }
+      ]
+    },
+    "tools_section": {
+      "title": "Las herramientas de escandallo que tu restaurante necesita",
+      "subtitle": "Control total del food cost: desde el ingrediente hasta el margen neto de cada plato."
+    },
+    "tools": [
+      {
+        "title": "Escandallo Automático con IA",
+        "description": "Introduce ingredientes, gramajes y precios de proveedor. La IA calcula el food cost exacto de cada plato en segundos.",
+        "keywords": ["escandallo automático", "food cost por plato", "calculadora escandallo"]
+      },
+      {
+        "title": "Control de Mermas",
+        "description": "Calcula las mermas reales por tipo de ingrediente (limpieza, cocción, evaporación) para un food cost preciso.",
+        "keywords": ["mermas cocina", "rendimiento ingredientes", "pérdidas en cocción"]
+      },
+      {
+        "title": "Precio de Venta Óptimo",
+        "description": "La IA calcula el precio de venta ideal según tu margen objetivo, el mercado y el posicionamiento de tu restaurante.",
+        "keywords": ["precio venta plato", "margen restaurante", "política de precios"]
+      },
+      {
+        "title": "Análisis de Rentabilidad",
+        "description": "Identifica qué platos te dan más margen y cuáles te están costando dinero. Optimiza tu carta con datos reales.",
+        "keywords": ["rentabilidad por plato", "ingeniería menú", "análisis food cost"]
+      },
+      {
+        "title": "Actualización de Precios",
+        "description": "Cuando sube el coste de un ingrediente, la IA recalcula automáticamente todos los escandallos afectados.",
+        "keywords": ["actualización food cost", "inflación alimentos", "control precios proveedor"]
+      },
+      {
+        "title": "Dashboard de Food Cost",
+        "description": "Visualiza el food cost global de tu restaurante, por categoría y por plato. Detecta desvíos al instante.",
+        "keywords": ["dashboard food cost", "control costes cocina", "KPIs restaurante"]
+      }
+    ],
+    "profiles_section": {
+      "title": "¿Quién usa los escandallos con IA de AI Chef Pro?",
+      "subtitle": "Profesionales que han dejado de perder dinero por un food cost mal calculado."
+    },
+    "profiles": [
+      { "title": "Chef Propietario", "description": "Controla el food cost de su carta sin depender de contables ni de hojas de Excel interminables." },
+      { "title": "Director de Operaciones", "description": "Supervisa el food cost de varios locales desde un único panel con datos en tiempo real." },
+      { "title": "Jefe de Cocina", "description": "Actualiza escandallos cuando cambian los precios de proveedor sin rehacer todo el proceso." },
+      { "title": "Controller o Financiero", "description": "Tiene por primera vez un control exacto del coste de cada plato y su impacto en la cuenta de resultados." }
+    ],
+    "why_section": {
+      "title": "El food cost que no controlas es el margen que estás regalando",
+      "body": "La mayoría de restaurantes pierden entre un 5% y un 15% de beneficio potencial por un food cost mal calculado. AI Chef Pro te da el control exacto que necesitas para proteger tu margen.",
+      "benefits": [
+        "Escandallo completo de cualquier plato en menos de 2 minutos",
+        "Control de mermas por tipo de ingrediente y técnica de cocinado",
+        "Precio de venta óptimo calculado con tu margen objetivo",
+        "Recálculo automático cuando cambian los precios de proveedor",
+        "Identificación de los platos que más y menos rentabilidad aportan",
+        "Dashboard de food cost global con alertas de desviación"
+      ]
+    },
+    "testimonial": {
+      "quote": "Llevábamos años haciendo escandallos en Excel. Con AI Chef Pro los tenemos todos actualizados en tiempo real y hemos identificado 4 platos que nos costaban dinero sin saberlo. En tres meses recuperamos la inversión.",
+      "name": "Roberto Fernández",
+      "role": "Director de Operaciones, Grupo La Dehesa, Madrid"
+    },
+    "pricing_section": {
+      "title": "Empieza a controlar tu food cost desde 0€",
+      "subtitle": "Calcula tus primeros escandallos gratis. Sin tarjeta, sin permanencia.",
+      "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre escandallos de restaurante con IA"
+    },
+    "faq": [
+      {
+        "question": "¿Qué es un escandallo de restaurante?",
+        "answer": "Un escandallo es el cálculo detallado del coste de producción de un plato: ingredientes, gramajes, mermas y precio de proveedor. Es la base del food cost y del precio de venta. AI Chef Pro lo genera automáticamente con IA en menos de 2 minutos."
+      },
+      {
+        "question": "¿Cómo calcula AI Chef Pro el food cost de un plato?",
+        "answer": "Introduces los ingredientes, gramajes por ración y precios de proveedor. La IA calcula automáticamente el coste bruto, aplica los porcentajes de merma correspondientes a cada ingrediente y te da el coste neto real del plato."
+      },
+      {
+        "question": "¿Puedo calcular el precio de venta con AI Chef Pro?",
+        "answer": "Sí. Una vez calculado el food cost, la IA sugiere el precio de venta óptimo según el margen que quieras obtener (habitualmente entre el 25% y el 35% de food cost ratio para restaurantes). También considera el posicionamiento de tu restaurante."
+      },
+      {
+        "question": "¿Qué pasa cuando sube el precio de un ingrediente?",
+        "answer": "AI Chef Pro recalcula automáticamente todos los escandallos que incluyen ese ingrediente. En segundos sabes qué platos se han encarecido, cuánto ha variado el margen y si necesitas ajustar el precio de venta."
+      }
+    ],
+    "cta_section": {
+      "title": "Empieza a controlar tu food cost con IA hoy mismo",
+      "subtitle": "Más de 5.000 restaurantes ya usan AI Chef Pro para calcular escandallos y proteger su margen.",
+      "primary": "Calcular mi food cost gratis",
       "secondary": "Ver todos los planes"
     }
   }
