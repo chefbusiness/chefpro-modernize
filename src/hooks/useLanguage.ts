@@ -79,6 +79,33 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'pt/simulador-rentabilidade-restaurante',
     nl: 'nl/winstgevendheid-simulator-restaurant',
   },
+  {
+    es: 'test-digitalizacion-restaurante',
+    en: 'en/restaurant-digitalization-test',
+    fr: 'fr/test-digitalisation-restaurant',
+    de: 'de/digitalisierungstest-restaurant',
+    it: 'it/test-digitalizzazione-ristorante',
+    pt: 'pt/teste-digitalizacao-restaurante',
+    nl: 'nl/digitaliseringstest-restaurant',
+  },
+  {
+    es: 'detector-alergenos-restaurante',
+    en: 'en/restaurant-allergen-detector',
+    fr: 'fr/detecteur-allergenes-restaurant',
+    de: 'de/allergen-detektor-restaurant',
+    it: 'it/rilevatore-allergeni-ristorante',
+    pt: 'pt/detector-alergenos-restaurante',
+    nl: 'nl/allergenen-detector-restaurant',
+  },
+  {
+    es: 'calculadora-brigada-restaurante',
+    en: 'en/restaurant-brigade-calculator',
+    fr: 'fr/calculateur-brigade-restaurant',
+    de: 'de/brigaden-rechner-restaurant',
+    it: 'it/calcolatore-brigata-ristorante',
+    pt: 'pt/calculadora-brigada-restaurante',
+    nl: 'nl/brigade-calculator-restaurant',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null
