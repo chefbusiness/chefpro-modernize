@@ -640,6 +640,7 @@
     "nav_pricing": "Precios",
     "nav_blog": "Blog",
     "nav_costs": "Reducir Costes",
+    "nav_menu": "Carta y Menú con IA",
     "nav_ai_tools": "Herramientas IA",
     "nav_free_tools": "Herramientas Gratuitas",
     "contact_title": "Contacto",
@@ -1348,5 +1349,135 @@
       "secondary": "Ver todos los planes"
     },
     "breadcrumb": "Herramientas IA para Restaurantes"
+  },
+  "landingMenu": {
+    "seo": {
+      "title": "Carta y Menú de Restaurante con IA | AI Chef Pro",
+      "description": "Crea la carta de tu restaurante con inteligencia artificial. Diseño de menú, ingeniería de carta, descripciones atractivas y gestión de alérgenos. Prueba gratis.",
+      "keywords": "carta restaurante ia, menú restaurante inteligencia artificial, diseño carta restaurante, ingeniería de menú, menu engineering, descripción platos ia, carta digital restaurante, alérgenos carta"
+    },
+    "hero": {
+      "badge": "Diseña tu carta con IA en minutos",
+      "h1": "Carta y Menú de Restaurante con Inteligencia Artificial",
+      "subtitle": "Diseña, optimiza y renueva la carta de tu restaurante con IA. Descripciones irresistibles, precios rentables, alérgenos gestionados y menús de temporada en minutos.",
+      "tagline": "Diseña tu carta · Optimiza precios · Gestiona alérgenos · Renueva por temporada",
+      "cta_primary": "Crear mi carta gratis",
+      "cta_secondary": "Ver planes y precios",
+      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+    },
+    "results": [
+      { "metric": "3h", "label": "para crear una carta completa desde cero" },
+      { "metric": "40%", "label": "más margen con ingeniería de menú IA" },
+      { "metric": "14", "label": "alérgenos gestionados automáticamente" },
+      { "metric": "25+", "label": "cocinas del mundo para inspirar tu carta" }
+    ],
+    "tools_section": {
+      "title": "Todo lo que necesitas para diseñar una carta rentable",
+      "subtitle": "Desde la primera idea hasta la carta impresa o digital. La IA hace el trabajo pesado para que tú te concentres en cocinar."
+    },
+    "tools": [
+      {
+        "title": "Generador de Carta Completa",
+        "description": "Describe tu concepto y la IA genera una carta completa con entrantes, principales, postres y bebidas adaptados a tu estilo, temporada y food cost objetivo.",
+        "keywords": ["carta restaurante", "menú completo ia", "diseño carta"]
+      },
+      {
+        "title": "Ingeniería de Menú",
+        "description": "Analiza qué platos son estrellas, puzzles, caballos de batalla o perros. Reorganiza tu carta para maximizar el margen y el volumen de ventas.",
+        "keywords": ["menu engineering", "rentabilidad platos", "matriz BCG carta"]
+      },
+      {
+        "title": "Descripciones Gastronómicas",
+        "description": "Genera descripciones evocadoras y apetecibles para cada plato. Textos que venden, adaptados al tono de tu restaurante y al idioma de tu cliente.",
+        "keywords": ["descripción platos", "copywriting gastronómico", "textos carta"]
+      },
+      {
+        "title": "Gestión de Alérgenos",
+        "description": "Identifica y etiqueta automáticamente los 14 alérgenos de declaración obligatoria. Cumplimiento legal sin esfuerzo en todos los platos de tu carta.",
+        "keywords": ["alérgenos carta", "normativa alérgenos", "etiquetado legal"]
+      },
+      {
+        "title": "Menús de Temporada",
+        "description": "Renueva tu carta según la estacionalidad, los géneros de mercado y las tendencias gastronómicas actuales. Siempre fresco, siempre rentable.",
+        "keywords": ["menú temporada", "carta estacional", "producto mercado"]
+      },
+      {
+        "title": "Cartas Especiales y Maridajes",
+        "description": "Crea cartas de vinos, cócteles, menús de degustación y propuestas de maridaje con explicaciones elegantes para cada plato.",
+        "keywords": ["carta vinos", "maridaje", "menú degustación"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Para todos los tipos de establecimiento",
+      "subtitle": "Tanto si diseñas una carta por primera vez como si llevas años renovándola, la IA de AI Chef Pro adapta el resultado a tu concepto."
+    },
+    "profiles": [
+      {
+        "title": "Restaurante à la carte",
+        "description": "Crea y renueva tu carta con rapidez, mantén el food cost bajo control y diferénciate con descripciones que enamoran."
+      },
+      {
+        "title": "Bar y Gastrobar",
+        "description": "Diseña tapas, raciones y menú del día con creatividad. Descripciones cortas y directas que aumentan el ticket medio."
+      },
+      {
+        "title": "Hotel y Catering",
+        "description": "Gestiona múltiples cartas (desayunos, buffet, banquetes) con coherencia de marca y cumplimiento de alérgenos en todos los servicios."
+      },
+      {
+        "title": "Chef Ejecutivo",
+        "description": "Agiliza el desarrollo de nuevas propuestas, actualiza la carta por temporadas y presenta menús de degustación impecables en minutos."
+      }
+    ],
+    "why_section": {
+      "title": "¿Por qué usar IA para diseñar la carta de tu restaurante?",
+      "body": "Una carta bien diseñada es la herramienta de venta más potente de un restaurante. La ingeniería de menú con IA permite crear cartas que guían al cliente hacia los platos más rentables sin que lo perciba, aumentando el ticket medio y el margen bruto.",
+      "benefits": [
+        "Genera una carta completa en horas, no en semanas",
+        "Identifica los platos estrella que maximizan margen y rotación",
+        "Escribe descripciones que generan deseo y aumentan el ticket",
+        "Gestiona los 14 alérgenos legales sin errores ni omisiones",
+        "Renueva la carta por temporadas sin partir desde cero",
+        "Adapta el menú a distintos idiomas para turistas internacionales"
+      ]
+    },
+    "testimonial": {
+      "quote": "Renovamos la carta completa en una tarde. La IA nos sugirió cambios de precio y reordenación que aumentaron nuestro ticket medio un 18% en el primer mes.",
+      "name": "Carlos Mendoza",
+      "role": "Chef-Propietario, Restaurante El Origen, Madrid"
+    },
+    "pricing_section": {
+      "title": "Planes para diseñar cartas sin límites",
+      "subtitle": "Desde el plan gratuito para empezar hasta el uso ilimitado para grandes operaciones con múltiples cartas.",
+      "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre diseño de carta con IA"
+    },
+    "faq": [
+      {
+        "question": "¿Puede la IA crear la carta completa de mi restaurante?",
+        "answer": "Sí. Describes tu concepto gastronómico, el tipo de cocina, el ticket medio objetivo y el food cost máximo por plato, y la IA genera una carta completa con entrantes, principales, postres y bebidas. Incluye nombres, descripciones y sugerencias de precio de venta."
+      },
+      {
+        "question": "¿Qué es la ingeniería de menú y cómo me ayuda la IA?",
+        "answer": "La ingeniería de menú (menu engineering) analiza cada plato según su margen de contribución y su popularidad, clasificándolos en estrellas, puzzles, caballos de batalla y perros. La IA de AI Chef Pro hace este análisis automáticamente y te recomienda qué platos potenciar, rediseñar o eliminar para maximizar la rentabilidad."
+      },
+      {
+        "question": "¿La IA gestiona los alérgenos de mis platos?",
+        "answer": "Sí. Introduce los ingredientes de cada plato y la IA identifica automáticamente los 14 alérgenos de declaración obligatoria según el Reglamento UE 1169/2011. Puedes exportar la información para incluirla en tu carta digital o impresa."
+      },
+      {
+        "question": "¿Puedo actualizar mi carta por temporadas con la IA?",
+        "answer": "Por supuesto. Puedes pedirle a la IA que renueve tu carta para primavera, verano, otoño o invierno, incorporando productos de temporada y tendencias actuales. También puede adaptar platos existentes a nuevos ingredientes o restricciones sin rediseñar toda la carta."
+      }
+    ],
+    "cta_section": {
+      "title": "Diseña la carta que tu restaurante merece",
+      "subtitle": "Más de 5.000 profesionales ya usan AI Chef Pro para crear cartas rentables, atractivas y legalmente correctas.",
+      "primary": "Crear mi carta gratis",
+      "secondary": "Ver todos los planes"
+    },
+    "breadcrumb": "Carta y Menú de Restaurante con IA"
   }
 }

@@ -664,6 +664,7 @@
     "nav_pricing": "Tarifs",
     "nav_blog": "Blog",
     "nav_costs": "Réduire Coûts",
+    "nav_menu": "Carte & Menu avec IA",
     "nav_ai_tools": "Outils IA",
     "nav_free_tools": "Outils Gratuits 🪄",
     "contact_title": "Contact",
@@ -1342,5 +1343,135 @@
       "secondary": "Voir tous les plans"
     },
     "breadcrumb": "Outils IA pour Restaurants"
+  },
+  "landingMenu": {
+    "seo": {
+      "title": "Carte et Menu Restaurant avec IA | AI Chef Pro",
+      "description": "Créez la carte de votre restaurant avec l'intelligence artificielle. Conception de menu, menu engineering, descriptions attrayantes et gestion des allergènes. Essai gratuit.",
+      "keywords": "carte restaurant ia, menu restaurant intelligence artificielle, conception carte restaurant, menu engineering ia, descriptions plats ia, carte numérique restaurant, allergènes carte"
+    },
+    "hero": {
+      "badge": "Concevez votre carte avec l'IA en quelques minutes",
+      "h1": "Carte et Menu de Restaurant avec l'Intelligence Artificielle",
+      "subtitle": "Concevez, optimisez et renouvelez la carte de votre restaurant avec l'IA. Descriptions irrésistibles, prix rentables, allergènes gérés et menus saisonniers en quelques minutes.",
+      "tagline": "Concevez votre carte · Optimisez les prix · Gérez les allergènes · Renouvelez chaque saison",
+      "cta_primary": "Créer ma carte gratuitement",
+      "cta_secondary": "Voir les plans et tarifs",
+      "no_card": "Sans carte de crédit · Plan gratuit disponible"
+    },
+    "results": [
+      { "metric": "3h", "label": "pour créer une carte complète de zéro" },
+      { "metric": "40%", "label": "de marge en plus avec le menu engineering IA" },
+      { "metric": "14", "label": "allergènes gérés automatiquement" },
+      { "metric": "25+", "label": "cuisines du monde pour inspirer votre carte" }
+    ],
+    "tools_section": {
+      "title": "Tout ce dont vous avez besoin pour concevoir une carte rentable",
+      "subtitle": "De la première idée à la carte imprimée ou numérique. L'IA fait le travail lourd pour que vous puissiez vous concentrer sur la cuisine."
+    },
+    "tools": [
+      {
+        "title": "Générateur de Carte Complète",
+        "description": "Décrivez votre concept et l'IA génère une carte complète avec entrées, plats, desserts et boissons adaptés à votre style, saison et food cost cible.",
+        "keywords": ["carte restaurant", "menu complet ia", "conception carte"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analysez quels plats sont des étoiles, des énigmes, des chevaux de bataille ou des chiens. Réorganisez votre carte pour maximiser la marge et le volume de ventes.",
+        "keywords": ["menu engineering", "rentabilité plats", "matrice BCG carte"]
+      },
+      {
+        "title": "Descriptions Gastronomiques",
+        "description": "Générez des descriptions évocatrices et appétissantes pour chaque plat. Des textes qui vendent, adaptés au ton de votre restaurant et à la langue de vos clients.",
+        "keywords": ["descriptions plats", "copywriting gastronomique", "textes carte"]
+      },
+      {
+        "title": "Gestion des Allergènes",
+        "description": "Identifiez et étiquetez automatiquement les 14 allergènes à déclaration obligatoire. Conformité légale sans effort sur tous les plats de votre carte.",
+        "keywords": ["allergènes carte", "réglementation allergènes", "étiquetage légal"]
+      },
+      {
+        "title": "Menus de Saison",
+        "description": "Renouvelez votre carte selon la saisonnalité, les produits du marché et les tendances gastronomiques actuelles. Toujours frais, toujours rentable.",
+        "keywords": ["menu saison", "carte saisonnière", "produits marché"]
+      },
+      {
+        "title": "Cartes Spéciales et Accords",
+        "description": "Créez des cartes des vins, menus de cocktails, menus dégustation et suggestions d'accords mets-vins avec des explications élégantes.",
+        "keywords": ["carte des vins", "accord mets-vins", "menu dégustation"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Pour tous les types d'établissements",
+      "subtitle": "Que vous conceviez une carte pour la première fois ou que vous la renouveliez depuis des années, l'IA d'AI Chef Pro adapte le résultat à votre concept."
+    },
+    "profiles": [
+      {
+        "title": "Restaurant à la carte",
+        "description": "Créez et renouvelez votre carte rapidement, maîtrisez le food cost et démarquez-vous avec des descriptions qui séduisent."
+      },
+      {
+        "title": "Bar & Gastrobar",
+        "description": "Concevez tapas, petites assiettes et menu du jour avec créativité. Des descriptions courtes et directes qui augmentent le ticket moyen."
+      },
+      {
+        "title": "Hôtel & Traiteur",
+        "description": "Gérez plusieurs cartes (petits-déjeuners, buffet, banquets) avec cohérence de marque et conformité allergènes dans tous les services."
+      },
+      {
+        "title": "Chef Exécutif",
+        "description": "Accélérez le développement de nouvelles propositions, mettez à jour la carte chaque saison et présentez des menus dégustation impeccables en quelques minutes."
+      }
+    ],
+    "why_section": {
+      "title": "Pourquoi utiliser l'IA pour concevoir la carte de votre restaurant ?",
+      "body": "Une carte bien conçue est l'outil de vente le plus puissant d'un restaurant. Le menu engineering avec l'IA permet de créer des cartes qui guident les clients vers les plats les plus rentables, augmentant ainsi le ticket moyen et la marge brute.",
+      "benefits": [
+        "Générez une carte complète en quelques heures, pas en semaines",
+        "Identifiez les plats étoiles qui maximisent la marge et la rotation",
+        "Rédigez des descriptions qui génèrent du désir et augmentent le ticket",
+        "Gérez les 14 allergènes légaux sans erreurs ni omissions",
+        "Renouvelez la carte chaque saison sans repartir de zéro",
+        "Adaptez le menu en différentes langues pour les touristes internationaux"
+      ]
+    },
+    "testimonial": {
+      "quote": "Nous avons refondu notre carte complète en une après-midi. L'IA nous a suggéré des changements de prix et de disposition qui ont augmenté notre ticket moyen de 18% le premier mois.",
+      "name": "Carlos Mendoza",
+      "role": "Chef-Propriétaire, Restaurante El Origen, Madrid"
+    },
+    "pricing_section": {
+      "title": "Des plans pour concevoir des cartes sans limites",
+      "subtitle": "Du plan gratuit pour commencer à l'utilisation illimitée pour les grandes opérations avec plusieurs cartes.",
+      "annual_note": "Plan annuel aussi disponible : AI Chef Premium Plus Annuel à 950€/an · Économisez 2 mois"
+    },
+    "faq_section": {
+      "title": "Questions fréquentes sur la conception de carte avec l'IA"
+    },
+    "faq": [
+      {
+        "question": "L'IA peut-elle créer la carte complète de mon restaurant ?",
+        "answer": "Oui. Vous décrivez votre concept gastronomique, le type de cuisine, le ticket moyen cible et le food cost maximum par plat, et l'IA génère une carte complète avec entrées, plats, desserts et boissons. Elle inclut noms, descriptions et suggestions de prix de vente."
+      },
+      {
+        "question": "Qu'est-ce que le menu engineering et comment l'IA m'aide-t-elle ?",
+        "answer": "Le menu engineering analyse chaque plat selon sa marge de contribution et sa popularité, les classifiant en étoiles, énigmes, chevaux de bataille et chiens. L'IA d'AI Chef Pro réalise cette analyse automatiquement et vous recommande quels plats mettre en valeur, repenser ou supprimer pour maximiser la rentabilité."
+      },
+      {
+        "question": "L'IA gère-t-elle les allergènes de mes plats ?",
+        "answer": "Oui. Saisissez les ingrédients de chaque plat et l'IA identifie automatiquement les 14 allergènes à déclaration obligatoire selon le Règlement UE 1169/2011. Vous pouvez exporter les informations pour les inclure dans votre carte numérique ou imprimée."
+      },
+      {
+        "question": "Puis-je mettre à jour ma carte chaque saison avec l'IA ?",
+        "answer": "Bien sûr. Vous pouvez demander à l'IA de renouveler votre carte pour le printemps, l'été, l'automne ou l'hiver, en intégrant des produits de saison et les tendances actuelles. Elle peut aussi adapter des plats existants à de nouveaux ingrédients sans refaire toute la carte."
+      }
+    ],
+    "cta_section": {
+      "title": "Concevez la carte que votre restaurant mérite",
+      "subtitle": "Plus de 5 000 professionnels utilisent déjà AI Chef Pro pour créer des cartes rentables, attractives et légalement conformes.",
+      "primary": "Créer ma carte gratuitement",
+      "secondary": "Voir tous les plans"
+    },
+    "breadcrumb": "Carte et Menu Restaurant avec IA"
   }
 }

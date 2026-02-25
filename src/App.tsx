@@ -15,6 +15,7 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
 import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
+import MenuRestaurante from "./pages/MenuRestaurante";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -63,6 +64,15 @@ const App = () => (
             <Route path="/it/ridurre-costi-ristorante-ia" element={<ReducirCostesRestaurante />} />
             <Route path="/pt/reduzir-custos-restaurante-ia" element={<ReducirCostesRestaurante />} />
             <Route path="/nl/restaurantkosten-verlagen-ai" element={<ReducirCostesRestaurante />} />
+
+            {/* Landing menu restaurante — todos los idiomas */}
+            <Route path="/carta-menu-restaurante-ia" element={<MenuRestaurante />} />
+            <Route path="/en/restaurant-menu-ai" element={<MenuRestaurante />} />
+            <Route path="/fr/carte-menu-restaurant-ia" element={<MenuRestaurante />} />
+            <Route path="/de/speisekarte-restaurant-ki" element={<MenuRestaurante />} />
+            <Route path="/it/menu-ristorante-ia" element={<MenuRestaurante />} />
+            <Route path="/pt/cardapio-restaurante-ia" element={<MenuRestaurante />} />
+            <Route path="/nl/restaurantmenu-ai" element={<MenuRestaurante />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

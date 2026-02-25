@@ -1094,6 +1094,7 @@
     "nav_pricing": "Prijzen",
     "nav_blog": "Blog",
     "nav_costs": "Kosten verlagen",
+    "nav_menu": "Menu met AI",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -1606,5 +1607,135 @@
       "secondary": "Alle plannen bekijken"
     },
     "breadcrumb": "AI-Tools voor Restaurants"
+  },
+  "landingMenu": {
+    "seo": {
+      "title": "Restaurantmenu maken met AI | AI Chef Pro",
+      "description": "Maak het menu van uw restaurant met kunstmatige intelligentie. Menuontwerp, menu engineering, aantrekkelijke beschrijvingen en allergenenbeleid. Gratis proberen.",
+      "keywords": "restaurantmenu ai, menukaart restaurant ai, menu engineering ai, gerechtsomschrijvingen ai, digitale menukaart, allergenen menu, seizoensmenu ai"
+    },
+    "hero": {
+      "badge": "Ontwerp uw menukaart met AI in minuten",
+      "h1": "Restaurantmenu en Menukaart met Kunstmatige Intelligentie",
+      "subtitle": "Ontwerp, optimaliseer en vernieuw de menukaart van uw restaurant met AI. Onweerstaanbare omschrijvingen, winstgevende prijzen, allergenen beheerd en seizoensmenus in minuten.",
+      "tagline": "Ontwerp uw menu · Optimaliseer prijzen · Beheer allergenen · Vernieuw elk seizoen",
+      "cta_primary": "Mijn menu gratis aanmaken",
+      "cta_secondary": "Plannen en prijzen bekijken",
+      "no_card": "Geen creditcard vereist · Gratis plan beschikbaar"
+    },
+    "results": [
+      { "metric": "3u", "label": "voor een complete menukaart vanaf nul" },
+      { "metric": "40%", "label": "meer marge met AI menu engineering" },
+      { "metric": "14", "label": "allergenen automatisch beheerd" },
+      { "metric": "25+", "label": "wereldkeukens om uw menu te inspireren" }
+    ],
+    "tools_section": {
+      "title": "Alles wat u nodig heeft voor een winstgevende menukaart",
+      "subtitle": "Van het eerste idee tot de gedrukte of digitale menukaart. AI doet het zware werk zodat u zich kunt concentreren op koken."
+    },
+    "tools": [
+      {
+        "title": "Volledige Menugenerator",
+        "description": "Beschrijf uw concept en de AI genereert een complete menukaart met voorgerechten, hoofdgerechten, desserts en dranken afgestemd op uw stijl, seizoen en food cost doel.",
+        "keywords": ["restaurantmenu", "volledig AI-menu", "menuontwerp"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analyseer welke gerechten sterren, puzzels, trekpaarden of honden zijn. Herorden uw menukaart om marge en verkoopvolume te maximaliseren.",
+        "keywords": ["menu engineering", "gerechtsrentabiliteit", "menukaart matrix"]
+      },
+      {
+        "title": "Gastronomische Beschrijvingen",
+        "description": "Genereer evocatieve en eetlustopwekkende beschrijvingen voor elk gerecht. Teksten die verkopen, afgestemd op de toon van uw restaurant.",
+        "keywords": ["gerechtsomschrijvingen", "gastronomisch copywriting", "menuteksten"]
+      },
+      {
+        "title": "Allergenenbeleid",
+        "description": "Identificeer en label automatisch de 14 verplicht te vermelden allergenen. Wettelijke naleving moeiteloos voor alle gerechten op uw menukaart.",
+        "keywords": ["allergenen menukaart", "allergeenregelgeving", "wettelijke etikettering"]
+      },
+      {
+        "title": "Seizoensmenus",
+        "description": "Vernieuw uw menukaart op basis van seizoensinvloeden, marktproducten en actuele gastronomische trends. Altijd vers, altijd winstgevend.",
+        "keywords": ["seizoensmenu", "seizoenskaart", "marktproducten"]
+      },
+      {
+        "title": "Speciale Menu's & Wijnarrangementen",
+        "description": "Maak wijnkaarten, cocktailmenu's, degustatiemenu's en spijs-wijnarrangementen met elegante toelichtingen bij elk gerecht.",
+        "keywords": ["wijnkaart", "spijs-wijnkoppeling", "degustatiemenu"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Voor elk type horecagelegenheid",
+      "subtitle": "Of u nu voor het eerst een menukaart ontwerpt of al jaren vernieuwt, AI Chef Pro's AI past het resultaat aan uw concept aan."
+    },
+    "profiles": [
+      {
+        "title": "À-la-carterestaurant",
+        "description": "Maak en vernieuw uw menukaart snel, houd de food cost onder controle en onderscheid u met omschrijvingen die boeien."
+      },
+      {
+        "title": "Bar & Gastrobar",
+        "description": "Ontwerp tapas, gedeelde gerechten en dagmenu's creatief. Korte, directe omschrijvingen die de gemiddelde bon verhogen."
+      },
+      {
+        "title": "Hotel & Catering",
+        "description": "Beheer meerdere menukaarten (ontbijt, buffet, banketten) met merkenconsistentie en allergeennaleving in alle services."
+      },
+      {
+        "title": "Executive Chef",
+        "description": "Versnel de ontwikkeling van nieuwe voorstellen, update de menukaart elk seizoen en presenteer vlekkeloze degustatiemenu's in minuten."
+      }
+    ],
+    "why_section": {
+      "title": "Waarom AI gebruiken voor het ontwerpen van uw restaurantmenu?",
+      "body": "Een goed ontworpen menukaart is het krachtigste verkoopinstrument van een restaurant. AI-gestuurde menu engineering creëert menukaarten die gasten onbewust naar de meest winstgevende gerechten leiden, waardoor de gemiddelde bon en de brutomarktmarge stijgen.",
+      "benefits": [
+        "Genereer een complete menukaart in uren, niet in weken",
+        "Identificeer stergerechten die marge en omzet maximaliseren",
+        "Schrijf omschrijvingen die verlangen wekken en de bon verhogen",
+        "Beheer de 14 wettelijke allergenen foutloos",
+        "Vernieuw de menukaart elk seizoen zonder helemaal opnieuw te beginnen",
+        "Pas het menu aan in verschillende talen voor internationale gasten"
+      ]
+    },
+    "testimonial": {
+      "quote": "We hebben onze volledige menukaart in één middag vernieuwd. De AI suggereerde prijswijzigingen en herordening die onze gemiddelde bon in de eerste maand met 18% verhoogden.",
+      "name": "Carlos Mendoza",
+      "role": "Chef-eigenaar, Restaurante El Origen, Madrid"
+    },
+    "pricing_section": {
+      "title": "Plannen voor grenzeloos menuontwerp",
+      "subtitle": "Van het gratis plan om te starten tot onbeperkt gebruik voor grote operaties met meerdere menukaarten.",
+      "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over menuontwerp met AI"
+    },
+    "faq": [
+      {
+        "question": "Kan AI de volledige menukaart van mijn restaurant maken?",
+        "answer": "Ja. U beschrijft uw gastronomisch concept, het keukentype, de gewenste gemiddelde bon en de maximale food cost per gerecht, en de AI genereert een complete menukaart met voor- en hoofdgerechten, desserts en dranken, inclusief namen, omschrijvingen en aanbevolen verkoopprijzen."
+      },
+      {
+        "question": "Wat is menu engineering en hoe helpt AI mij daarmee?",
+        "answer": "Menu engineering analyseert elk gerecht op dekkingsbijdrage en populariteit: sterren, puzzels, trekpaarden of honden. AI Chef Pro's AI voert deze analyse automatisch uit en adviseert welke gerechten u moet promoten, herontwerpen of verwijderen om de winstgevendheid te maximaliseren."
+      },
+      {
+        "question": "Beheert AI de allergenen van mijn gerechten?",
+        "answer": "Ja. Voer de ingrediënten van elk gerecht in en de AI identificeert automatisch de 14 verplicht te vermelden allergenen conform EU-Verordening 1169/2011. U kunt de informatie exporteren voor uw digitale of gedrukte menukaart."
+      },
+      {
+        "question": "Kan ik mijn menukaart elk seizoen bijwerken met AI?",
+        "answer": "Absoluut. U kunt de AI vragen uw menukaart te vernieuwen voor lente, zomer, herfst of winter, met seizoensproducten en actuele trends. Het kan ook bestaande gerechten aanpassen aan nieuwe ingrediënten zonder de hele kaart opnieuw te ontwerpen."
+      }
+    ],
+    "cta_section": {
+      "title": "Ontwerp de menukaart die uw restaurant verdient",
+      "subtitle": "Meer dan 5.000 professionals gebruiken AI Chef Pro al voor winstgevende, aantrekkelijke en wettelijk conforme menukaarten.",
+      "primary": "Mijn menu gratis aanmaken",
+      "secondary": "Alle plannen bekijken"
+    },
+    "breadcrumb": "Restaurantmenu met AI"
   }
 }
