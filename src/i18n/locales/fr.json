@@ -1959,10 +1959,22 @@
       "no_card": "Sans carte bancaire · Accès immédiat"
     },
     "results": [
-      { "metric": "3h", "label": "Gain quotidien en gestion" },
-      { "metric": "5 000+", "label": "Restaurants actifs" },
-      { "metric": "55+", "label": "Outils IA de cuisine" },
-      { "metric": "30%", "label": "Réduction moyenne des coûts" }
+      {
+        "metric": "3h",
+        "label": "Gain quotidien en gestion"
+      },
+      {
+        "metric": "5 000+",
+        "label": "Restaurants actifs"
+      },
+      {
+        "metric": "55+",
+        "label": "Outils IA de cuisine"
+      },
+      {
+        "metric": "30%",
+        "label": "Réduction moyenne des coûts"
+      }
     ],
     "comparison": {
       "title": "AI Chef Pro vs. Logiciel de gestion traditionnel",
@@ -1970,11 +1982,31 @@
       "col_feature": "Fonctionnalité",
       "col_other": "Logiciel Traditionnel",
       "items": [
-        { "feature": "Fiche de coût automatique", "other": "Manuel, sur Excel", "aichef": "L'IA calcule le food cost instantanément" },
-        { "feature": "Gestion des recettes", "other": "Fichiers Word ou papier", "aichef": "55+ outils IA spécialisés" },
-        { "feature": "Contrôle des allergènes", "other": "Mises à jour manuelles", "aichef": "Règlement UE 1169/2011 intégré" },
-        { "feature": "Ingénierie du menu", "other": "Pas d'analyse de rentabilité", "aichef": "L'IA optimise les marges par plat" },
-        { "feature": "Mise à jour des prix", "other": "Processus lent et fastidieux", "aichef": "Recalcul automatique en quelques secondes" }
+        {
+          "feature": "Fiche de coût automatique",
+          "other": "Manuel, sur Excel",
+          "aichef": "L'IA calcule le food cost instantanément"
+        },
+        {
+          "feature": "Gestion des recettes",
+          "other": "Fichiers Word ou papier",
+          "aichef": "55+ outils IA spécialisés"
+        },
+        {
+          "feature": "Contrôle des allergènes",
+          "other": "Mises à jour manuelles",
+          "aichef": "Règlement UE 1169/2011 intégré"
+        },
+        {
+          "feature": "Ingénierie du menu",
+          "other": "Pas d'analyse de rentabilité",
+          "aichef": "L'IA optimise les marges par plat"
+        },
+        {
+          "feature": "Mise à jour des prix",
+          "other": "Processus lent et fastidieux",
+          "aichef": "Recalcul automatique en quelques secondes"
+        }
       ]
     },
     "tools_section": {
@@ -1985,32 +2017,56 @@
       {
         "title": "Food Cost IA",
         "description": "Calculez le coût exact de chaque plat en secondes. Saisissez ingrédients, grammages et prix fournisseur : l'IA fait le reste.",
-        "keywords": ["fiche de coût restaurant", "food cost IA", "coût par plat"]
+        "keywords": [
+          "fiche de coût restaurant",
+          "food cost IA",
+          "coût par plat"
+        ]
       },
       {
         "title": "Contrôle des Stocks",
         "description": "Gérez vos stocks en temps réel. Alertes automatiques quand les ingrédients atteignent le minimum. Réduisez le gaspillage.",
-        "keywords": ["inventaire restaurant", "gestion stocks cuisine", "contrôle gaspillage"]
+        "keywords": [
+          "inventaire restaurant",
+          "gestion stocks cuisine",
+          "contrôle gaspillage"
+        ]
       },
       {
         "title": "Gestion des Recettes",
         "description": "Numérisez et standardisez toutes vos recettes avec des fiches techniques professionnelles et un ajustement automatique des portions.",
-        "keywords": ["fiche technique recette", "standardisation recettes", "livre de recettes numérique"]
+        "keywords": [
+          "fiche technique recette",
+          "standardisation recettes",
+          "livre de recettes numérique"
+        ]
       },
       {
         "title": "Allergènes & Réglementation",
         "description": "Contrôle des 14 allergènes selon le Règlement UE 1169/2011. Évitez les sanctions et protégez vos clients.",
-        "keywords": ["allergènes restaurant", "réglementation allergènes UE", "sécurité alimentaire"]
+        "keywords": [
+          "allergènes restaurant",
+          "réglementation allergènes UE",
+          "sécurité alimentaire"
+        ]
       },
       {
         "title": "Ingénierie du Menu",
         "description": "Analysez la rentabilité de chaque plat et optimisez votre carte pour maximiser le bénéfice par couvert.",
-        "keywords": ["ingénierie menu", "rentabilité plats", "optimisation carte"]
+        "keywords": [
+          "ingénierie menu",
+          "rentabilité plats",
+          "optimisation carte"
+        ]
       },
       {
         "title": "Rapports de Gestion",
         "description": "Visualisez les performances de votre cuisine avec des rapports automatiques sur le food cost, les marges et les tendances de consommation.",
-        "keywords": ["rapport food cost", "contrôle des coûts", "marge restaurant"]
+        "keywords": [
+          "rapport food cost",
+          "contrôle des coûts",
+          "marge restaurant"
+        ]
       }
     ],
     "profiles_section": {
@@ -2018,10 +2074,22 @@
       "subtitle": "Des professionnels de la restauration qui ont digitalisé leur cuisine avec l'IA."
     },
     "profiles": [
-      { "title": "Chef Propriétaire", "description": "Contrôle les coûts de sa cuisine sans dépendre de comptables externes ni de tableurs." },
-      { "title": "Chef de Cuisine", "description": "Standardise les recettes, gère les stocks et supervise son équipe depuis une seule plateforme." },
-      { "title": "Directeur des Opérations", "description": "Supervise plusieurs établissements avec des données en temps réel de chaque cuisine." },
-      { "title": "Propriétaire de Bar ou Café", "description": "Sans complications : gérez food cost et carte en minutes, pas en heures." }
+      {
+        "title": "Chef Propriétaire",
+        "description": "Contrôle les coûts de sa cuisine sans dépendre de comptables externes ni de tableurs."
+      },
+      {
+        "title": "Chef de Cuisine",
+        "description": "Standardise les recettes, gère les stocks et supervise son équipe depuis une seule plateforme."
+      },
+      {
+        "title": "Directeur des Opérations",
+        "description": "Supervise plusieurs établissements avec des données en temps réel de chaque cuisine."
+      },
+      {
+        "title": "Propriétaire de Bar ou Café",
+        "description": "Sans complications : gérez food cost et carte en minutes, pas en heures."
+      }
     ],
     "why_section": {
       "title": "La gestion de cuisine dont les chefs ont besoin, propulsée par l'IA",
@@ -2090,10 +2158,22 @@
       "no_card": "Sans carte bancaire · Accès immédiat"
     },
     "results": [
-      { "metric": "25", "label": "Cuisines du monde" },
-      { "metric": "5 000+", "label": "Restaurants actifs" },
-      { "metric": "80%", "label": "Moins de temps en développement" },
-      { "metric": "55+", "label": "Outils spécialisés" }
+      {
+        "metric": "25",
+        "label": "Cuisines du monde"
+      },
+      {
+        "metric": "5 000+",
+        "label": "Restaurants actifs"
+      },
+      {
+        "metric": "80%",
+        "label": "Moins de temps en développement"
+      },
+      {
+        "metric": "55+",
+        "label": "Outils spécialisés"
+      }
     ],
     "comparison": {
       "title": "Recettes IA vs. Méthode traditionnelle",
@@ -2101,11 +2181,31 @@
       "col_feature": "Aspect",
       "col_other": "Méthode Traditionnelle",
       "items": [
-        { "feature": "Création de recettes", "other": "Des heures de recherche et tests", "aichef": "Recette technique en quelques secondes" },
-        { "feature": "Variété de cuisines", "other": "Limitée aux connaissances du chef", "aichef": "25 cuisines du monde avec technique réelle" },
-        { "feature": "Menus de saison", "other": "Processus manuel de plusieurs semaines", "aichef": "Menu complet avec ingrédients de saison" },
-        { "feature": "Mise à l'échelle", "other": "Calculs manuels avec erreurs", "aichef": "Mise à l'échelle automatique et instantanée" },
-        { "feature": "Fiches techniques", "other": "Rédaction manuelle Word/Excel", "aichef": "Fiche technique professionnelle générée immédiatement" }
+        {
+          "feature": "Création de recettes",
+          "other": "Des heures de recherche et tests",
+          "aichef": "Recette technique en quelques secondes"
+        },
+        {
+          "feature": "Variété de cuisines",
+          "other": "Limitée aux connaissances du chef",
+          "aichef": "25 cuisines du monde avec technique réelle"
+        },
+        {
+          "feature": "Menus de saison",
+          "other": "Processus manuel de plusieurs semaines",
+          "aichef": "Menu complet avec ingrédients de saison"
+        },
+        {
+          "feature": "Mise à l'échelle",
+          "other": "Calculs manuels avec erreurs",
+          "aichef": "Mise à l'échelle automatique et instantanée"
+        },
+        {
+          "feature": "Fiches techniques",
+          "other": "Rédaction manuelle Word/Excel",
+          "aichef": "Fiche technique professionnelle générée immédiatement"
+        }
       ]
     },
     "tools_section": {
@@ -2116,32 +2216,56 @@
       {
         "title": "Générateur de Recettes Professionnelles",
         "description": "Créez des recettes techniquement correctes avec vocabulaire culinaire professionnel, techniques précises et présentation détaillée.",
-        "keywords": ["générateur recettes IA", "recettes chef professionnelles", "recettes techniques"]
+        "keywords": [
+          "générateur recettes IA",
+          "recettes chef professionnelles",
+          "recettes techniques"
+        ]
       },
       {
         "title": "25 Cuisines du Monde",
         "description": "Accédez à des recettes authentiques de 25 traditions culinaires : française, japonaise, péruvienne, italienne, mexicaine et bien plus.",
-        "keywords": ["cuisines du monde", "recettes internationales", "gastronomie mondiale"]
+        "keywords": [
+          "cuisines du monde",
+          "recettes internationales",
+          "gastronomie mondiale"
+        ]
       },
       {
         "title": "Menus de Saison avec IA",
         "description": "Générez des menus complets basés sur les ingrédients de saison, votre concept gastronomique et le profil de vos clients.",
-        "keywords": ["menu de saison", "menu dégustation", "carte restaurant IA"]
+        "keywords": [
+          "menu de saison",
+          "menu dégustation",
+          "carte restaurant IA"
+        ]
       },
       {
         "title": "Mise à l'Échelle Automatique",
         "description": "Adaptez n'importe quelle recette au nombre de convives souhaité. L'IA ajuste les grammages, temps de cuisson et techniques.",
-        "keywords": ["mise à l'échelle recettes", "grammages par portion", "production en masse"]
+        "keywords": [
+          "mise à l'échelle recettes",
+          "grammages par portion",
+          "production en masse"
+        ]
       },
       {
         "title": "Fiches Techniques Professionnelles",
         "description": "Générez des fiches techniques complètes avec allergènes, valeurs nutritionnelles, techniques et dressage pour votre équipe.",
-        "keywords": ["fiche technique recette", "livre de recettes professionnel", "standardisation cuisine"]
+        "keywords": [
+          "fiche technique recette",
+          "livre de recettes professionnel",
+          "standardisation cuisine"
+        ]
       },
       {
         "title": "Adaptation aux Restrictions",
         "description": "Adaptez les recettes pour végans, cœliaques, diabétiques ou toute restriction alimentaire sans perdre l'essence du plat.",
-        "keywords": ["recettes véganes chef", "recettes sans gluten", "adaptation diététique"]
+        "keywords": [
+          "recettes véganes chef",
+          "recettes sans gluten",
+          "adaptation diététique"
+        ]
       }
     ],
     "profiles_section": {
@@ -2149,10 +2273,22 @@
       "subtitle": "Des chefs et restaurateurs qui ont intégré l'IA dans leur processus créatif."
     },
     "profiles": [
-      { "title": "Chef Créatif", "description": "Utilise l'IA comme source d'inspiration pour de nouveaux plats et des fusions de cuisines du monde." },
-      { "title": "Chef de Partie", "description": "Génère des fiches techniques standardisées pour que l'équipe reproduise les plats avec précision." },
-      { "title": "Chef d'Hôtel ou Traiteur", "description": "Crée des menus complets pour de grands événements avec mise à l'échelle automatique." },
-      { "title": "Propriétaire de Restaurant", "description": "Renouvelle la carte de saison sans longs processus de création manuelle." }
+      {
+        "title": "Chef Créatif",
+        "description": "Utilise l'IA comme source d'inspiration pour de nouveaux plats et des fusions de cuisines du monde."
+      },
+      {
+        "title": "Chef de Partie",
+        "description": "Génère des fiches techniques standardisées pour que l'équipe reproduise les plats avec précision."
+      },
+      {
+        "title": "Chef d'Hôtel ou Traiteur",
+        "description": "Crée des menus complets pour de grands événements avec mise à l'échelle automatique."
+      },
+      {
+        "title": "Propriétaire de Restaurant",
+        "description": "Renouvelle la carte de saison sans longs processus de création manuelle."
+      }
     ],
     "why_section": {
       "title": "L'IA qui comprend la cuisine, pas seulement les mots",
@@ -2221,10 +2357,22 @@
       "no_card": "Sans carte bancaire · Accès immédiat"
     },
     "results": [
-      { "metric": "2min", "label": "Pour un calcul complet" },
-      { "metric": "30%", "label": "Réduction moyenne des coûts" },
-      { "metric": "5 000+", "label": "Restaurants actifs" },
-      { "metric": "55+", "label": "Outils spécialisés" }
+      {
+        "metric": "2min",
+        "label": "Pour un calcul complet"
+      },
+      {
+        "metric": "30%",
+        "label": "Réduction moyenne des coûts"
+      },
+      {
+        "metric": "5 000+",
+        "label": "Restaurants actifs"
+      },
+      {
+        "metric": "55+",
+        "label": "Outils spécialisés"
+      }
     ],
     "comparison": {
       "title": "Food Cost IA vs. Excel et méthode manuelle",
@@ -2232,11 +2380,31 @@
       "col_feature": "Aspect",
       "col_other": "Excel / Manuel",
       "items": [
-        { "feature": "Temps par calcul", "other": "30-60 minutes par plat", "aichef": "2 minutes avec l'IA" },
-        { "feature": "Mise à jour des prix", "other": "Manuelle à chaque hausse", "aichef": "Recalcul automatique instantané" },
-        { "feature": "Contrôle des pertes", "other": "Ignoré ou mal estimé", "aichef": "Pertes calculées par type d'ingrédient" },
-        { "feature": "Prix de vente", "other": "Intuition sans base objective", "aichef": "Prix optimal avec marge cible" },
-        { "feature": "Rentabilité par plat", "other": "Pas d'analyse systématique", "aichef": "Dashboard rentabilité en temps réel" }
+        {
+          "feature": "Temps par calcul",
+          "other": "30-60 minutes par plat",
+          "aichef": "2 minutes avec l'IA"
+        },
+        {
+          "feature": "Mise à jour des prix",
+          "other": "Manuelle à chaque hausse",
+          "aichef": "Recalcul automatique instantané"
+        },
+        {
+          "feature": "Contrôle des pertes",
+          "other": "Ignoré ou mal estimé",
+          "aichef": "Pertes calculées par type d'ingrédient"
+        },
+        {
+          "feature": "Prix de vente",
+          "other": "Intuition sans base objective",
+          "aichef": "Prix optimal avec marge cible"
+        },
+        {
+          "feature": "Rentabilité par plat",
+          "other": "Pas d'analyse systématique",
+          "aichef": "Dashboard rentabilité en temps réel"
+        }
       ]
     },
     "tools_section": {
@@ -2247,32 +2415,56 @@
       {
         "title": "Food Cost Automatique IA",
         "description": "Entrez ingrédients, grammages et prix fournisseur. L'IA calcule le food cost exact de chaque plat en secondes.",
-        "keywords": ["food cost automatique", "food cost par plat", "calculateur food cost"]
+        "keywords": [
+          "food cost automatique",
+          "food cost par plat",
+          "calculateur food cost"
+        ]
       },
       {
         "title": "Contrôle des Pertes",
         "description": "Calculez les pertes réelles par type d'ingrédient (épluchage, cuisson, évaporation) pour un food cost précis.",
-        "keywords": ["pertes cuisine", "rendement ingrédients", "pertes à la cuisson"]
+        "keywords": [
+          "pertes cuisine",
+          "rendement ingrédients",
+          "pertes à la cuisson"
+        ]
       },
       {
         "title": "Prix de Vente Optimal",
         "description": "L'IA calcule le prix de vente idéal selon votre marge cible, le marché et le positionnement de votre restaurant.",
-        "keywords": ["prix vente plat", "marge restaurant", "politique tarifaire"]
+        "keywords": [
+          "prix vente plat",
+          "marge restaurant",
+          "politique tarifaire"
+        ]
       },
       {
         "title": "Analyse de Rentabilité",
         "description": "Identifiez quels plats vous rapportent le plus et lesquels vous coûtent de l'argent. Optimisez votre carte avec de vraies données.",
-        "keywords": ["rentabilité par plat", "ingénierie menu", "analyse food cost"]
+        "keywords": [
+          "rentabilité par plat",
+          "ingénierie menu",
+          "analyse food cost"
+        ]
       },
       {
         "title": "Mise à Jour des Prix",
         "description": "Quand le coût d'un ingrédient augmente, l'IA recalcule automatiquement tous les fiches de coût concernées.",
-        "keywords": ["mise à jour food cost", "inflation alimentaire", "contrôle prix fournisseur"]
+        "keywords": [
+          "mise à jour food cost",
+          "inflation alimentaire",
+          "contrôle prix fournisseur"
+        ]
       },
       {
         "title": "Dashboard Food Cost",
         "description": "Visualisez le food cost global de votre restaurant, par catégorie et par plat. Détectez les écarts instantanément.",
-        "keywords": ["dashboard food cost", "contrôle coûts cuisine", "KPIs restaurant"]
+        "keywords": [
+          "dashboard food cost",
+          "contrôle coûts cuisine",
+          "KPIs restaurant"
+        ]
       }
     ],
     "profiles_section": {
@@ -2280,10 +2472,22 @@
       "subtitle": "Des professionnels qui ont arrêté de perdre de l'argent à cause d'un food cost mal calculé."
     },
     "profiles": [
-      { "title": "Chef Propriétaire", "description": "Contrôle le food cost de sa carte sans dépendre de comptables ni de tableurs interminables." },
-      { "title": "Directeur des Opérations", "description": "Surveille le food cost de plusieurs établissements depuis un seul tableau de bord en temps réel." },
-      { "title": "Chef de Cuisine", "description": "Met à jour les fiches de coût quand les prix fournisseur changent sans tout refaire." },
-      { "title": "Contrôleur de Gestion", "description": "Dispose pour la première fois d'un contrôle exact du coût de chaque plat et de son impact sur le compte de résultat." }
+      {
+        "title": "Chef Propriétaire",
+        "description": "Contrôle le food cost de sa carte sans dépendre de comptables ni de tableurs interminables."
+      },
+      {
+        "title": "Directeur des Opérations",
+        "description": "Surveille le food cost de plusieurs établissements depuis un seul tableau de bord en temps réel."
+      },
+      {
+        "title": "Chef de Cuisine",
+        "description": "Met à jour les fiches de coût quand les prix fournisseur changent sans tout refaire."
+      },
+      {
+        "title": "Contrôleur de Gestion",
+        "description": "Dispose pour la première fois d'un contrôle exact du coût de chaque plat et de son impact sur le compte de résultat."
+      }
     ],
     "why_section": {
       "title": "Le food cost non maîtrisé, c'est la marge que vous offrez",
@@ -2332,6 +2536,345 @@
       "title": "Commencez à contrôler votre food cost avec l'IA dès aujourd'hui",
       "subtitle": "Plus de 5 000 restaurants utilisent déjà AI Chef Pro pour calculer le food cost et protéger leur marge.",
       "primary": "Calculer mon food cost gratuitement",
+      "secondary": "Voir tous les plans"
+    }
+  },
+  "toolHub": {
+    "seo": {
+      "title": "Outils Gratuits pour Restaurants | AI Chef Pro",
+      "description": "8 outils gratuits pour restaurants : calculateur food cost, simulateur rentabilité, vérificateur allergènes et plus. Sans inscription.",
+      "keywords": "outils gratuits restaurant, calculateur food cost gratuit, simulateur rentabilité restaurant"
+    },
+    "breadcrumb": "Outils Gratuits",
+    "hero": {
+      "badge": "100% Gratuits — Sans inscription",
+      "h1": "8 Outils Gratuits pour votre Restaurant",
+      "subtitle": "Calculez votre food cost, vérifiez les allergènes, simulez votre rentabilité et plus. Sans vous inscrire, sans payer, sans limites.",
+      "tagline": "Par les créateurs d'AI Chef Pro — la suite IA pour la gastronomie"
+    },
+    "tools": [
+      {
+        "title": "Calculateur Food Cost",
+        "description": "Calculez le coût exact de chaque plat et votre pourcentage de food cost en secondes.",
+        "badge": "Calculateur",
+        "color": "green"
+      },
+      {
+        "title": "Vérificateur d'Allergènes",
+        "description": "Identifiez les 14 allergènes à déclaration obligatoire dans n'importe quel plat.",
+        "badge": "Légal",
+        "color": "red"
+      },
+      {
+        "title": "Calendrier de Contenu IA",
+        "description": "Générez 30 jours d'idées de contenu personnalisées pour votre restaurant avec l'IA.",
+        "badge": "IA",
+        "color": "purple"
+      },
+      {
+        "title": "Simulateur de Rentabilité",
+        "description": "Calculez si votre restaurant est rentable et votre point d'équilibre mensuel.",
+        "badge": "Calculateur",
+        "color": "yellow"
+      },
+      {
+        "title": "Générateur de Textes Carte",
+        "description": "Créez des descriptions irrésistibles pour les plats de votre carte avec l'IA.",
+        "badge": "IA",
+        "color": "blue"
+      },
+      {
+        "title": "Test de Digitalisation",
+        "description": "Découvrez le niveau de digitalisation de votre restaurant et quoi améliorer en premier.",
+        "badge": "Quiz",
+        "color": "teal"
+      },
+      {
+        "title": "Calculateur de Brigade",
+        "description": "Calculez combien d'employés vous avez besoin en cuisine et en salle.",
+        "badge": "Calculateur",
+        "color": "orange"
+      },
+      {
+        "title": "Générateur Menu Dégustation",
+        "description": "Créez un menu dégustation complet avec accords et mise en scène avec l'IA.",
+        "badge": "IA",
+        "color": "indigo"
+      }
+    ],
+    "why": {
+      "title": "Pourquoi sont-ils gratuits ?",
+      "body": "Nous croyons que tout restaurant, quelle que soit sa taille, mérite un accès aux outils professionnels. Ces calculateurs sont notre façon d'apporter de la valeur au secteur.",
+      "items": [
+        "Sans inscription ni carte bancaire",
+        "Résultats instantanés dans votre navigateur",
+        "Basés sur des standards réels du secteur",
+        "Utilisés par plus de 5 000 professionnels"
+      ]
+    },
+    "cta": {
+      "title": "Vous avez besoin de plus de puissance ?",
+      "subtitle": "Ces outils ne sont qu'un aperçu des 55+ fonctionnalités IA disponibles dans AI Chef Pro Premium.",
+      "primary": "Voir le Plan Premium",
+      "secondary": "Commencer gratuitement"
+    }
+  },
+  "toolFoodCost": {
+    "seo": {
+      "title": "Calculateur Food Cost Restaurant Gratuit | AI Chef Pro",
+      "description": "Calculez le food cost de vos plats gratuitement : ingrédients, grammages et prix de vente. Résultat instantané avec feu tricolore de rentabilité.",
+      "keywords": "calculateur food cost restaurant, calculer food cost gratuit, food cost pourcentage, coût plat restaurant"
+    },
+    "breadcrumb": "Calculateur Food Cost",
+    "hero": {
+      "badge": "Gratuit — Sans inscription",
+      "h1": "Calculateur de Food Cost pour Restaurants",
+      "subtitle": "Calculez le pourcentage de food cost de n'importe quel plat en secondes. Ajoutez les ingrédients, grammages et prix de vente.",
+      "cta_tool": "Aller au calculateur ↓",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Calculateur de Food Cost",
+      "dish_name_label": "Nom du plat",
+      "dish_name_placeholder": "Ex : Risotto aux champignons",
+      "portions_label": "Nombre de portions",
+      "sale_price_label": "Prix de vente par portion (€)",
+      "ingredients_title": "Ingrédients",
+      "ingredient_name": "Ingrédient",
+      "ingredient_qty": "Quantité (g)",
+      "ingredient_cost": "Prix/kg (€)",
+      "add_ingredient": "+ Ajouter un ingrédient",
+      "calculate": "Calculer le Food Cost",
+      "result_title": "Résultat",
+      "total_cost_label": "Coût total ingrédients",
+      "cost_per_portion_label": "Coût par portion",
+      "food_cost_pct_label": "Food cost %",
+      "gross_margin_label": "Marge brute (€/portion)",
+      "status_ok": "✅ Excellent food cost — Votre plat est très rentable",
+      "status_warn": "⚠️ Food cost serré — Vérifiez les prix ou les ingrédients",
+      "status_bad": "🔴 Food cost élevé — Envisagez d'augmenter le prix ou de réduire les coûts",
+      "tip": "💡 Référence du secteur : un food cost entre 25% et 32% est sain pour les restaurants",
+      "cta_after": "Vous voulez calculer tous vos plats automatiquement ?",
+      "reset": "Nouveau calcul"
+    },
+    "how_it_works": {
+      "title": "Comment ça marche",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Ajoutez les ingrédients",
+          "description": "Saisissez chaque ingrédient avec son grammage par portion et son prix d'achat au kilo."
+        },
+        {
+          "step": "2",
+          "title": "Indiquez les portions et le prix",
+          "description": "Combien de portions donne la recette et à quel prix vous la vendez."
+        },
+        {
+          "step": "3",
+          "title": "Obtenez votre food cost",
+          "description": "Vous verrez le coût exact par portion, le pourcentage de food cost et le statut de rentabilité."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Pourquoi calculer votre food cost",
+      "items": [
+        "Identifiez les plats qui perdent de l'argent",
+        "Ajustez les prix de vente avec des données réelles",
+        "Augmentez votre marge sans hausses de prix agressives",
+        "Contrôle total en secondes, sans Excel"
+      ]
+    },
+    "testimonial": {
+      "quote": "Avec ce calculateur, j'ai vu que mon plat phare me coûtait plus que prévu. J'ai augmenté le prix de 1,50€ et personne n'a remarqué. J'ai gagné 400€ de plus ce mois-là.",
+      "name": "Carlos Romero",
+      "role": "Propriétaire, Bar Restaurant La Plaza, Saragosse"
+    },
+    "pricing": {
+      "title": "Plus de puissance avec AI Chef Pro",
+      "subtitle": "Le calculateur gratuit n'est qu'un aperçu. Avec AI Chef Pro, calculez toute votre carte avec contrôle des pertes.",
+      "plans": [
+        {
+          "name": "Gratuit",
+          "price": "0€/mois",
+          "uses": "5 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mois",
+          "uses": "150 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mois",
+          "uses": "350 utilisations/mois",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mois",
+          "uses": "Illimité",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Questions fréquentes sur le food cost"
+    },
+    "faq": [
+      {
+        "question": "Qu'est-ce que le food cost ?",
+        "answer": "Le food cost est le pourcentage du prix de vente qui représente le coût des ingrédients. Formule : Food cost % = (Coût ingrédients / Prix de vente) × 100. Un food cost sain se situe entre 25% et 32%."
+      },
+      {
+        "question": "Pourquoi est-il important de le contrôler ?",
+        "answer": "Un food cost non contrôlé peut signifier que vous perdez de l'argent sur des plats que vous croyez rentables. Le contrôler vous permet de prendre des décisions de prix et maximiser la marge."
+      },
+      {
+        "question": "Ce calculateur inclut-il les pertes ?",
+        "answer": "Cette version gratuite fonctionne avec les grammages nets que vous saisissez. Pour inclure automatiquement les pertes, utilisez l'outil de costing d'AI Chef Pro Premium."
+      },
+      {
+        "question": "Comment améliorer un food cost élevé ?",
+        "answer": "Vous pouvez augmenter le prix de vente, changer de fournisseurs, réduire les grammages des ingrédients coûteux ou substituer des composants à coût élevé."
+      }
+    ],
+    "cta_section": {
+      "title": "Automatisez tout votre costing avec l'IA",
+      "subtitle": "Avec AI Chef Pro, calculez le food cost de toute votre carte en minutes, avec contrôle des pertes et mises à jour automatiques.",
+      "primary": "Essayer AI Chef Pro gratuitement",
+      "secondary": "Voir tous les plans"
+    }
+  },
+  "toolRentabilidad": {
+    "seo": {
+      "title": "Simulateur Rentabilité Restaurant Gratuit | AI Chef Pro",
+      "description": "Calculez si votre restaurant est rentable : saisissez couverts, ticket moyen et coûts. Bénéfice net et point mort instantanément. Gratuit, sans inscription.",
+      "keywords": "simulateur rentabilité restaurant, calculer bénéfice restaurant, point mort restaurant, rentabilité hôtellerie gratuit"
+    },
+    "breadcrumb": "Simulateur de Rentabilité",
+    "hero": {
+      "badge": "Gratuit — Sans inscription",
+      "h1": "Simulateur de Rentabilité pour Restaurants",
+      "subtitle": "Calculez si votre restaurant génère de vrais bénéfices. Saisissez vos données et obtenez votre bénéfice mensuel et point mort.",
+      "cta_tool": "Aller au simulateur ↓",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Simulateur de Rentabilité",
+      "covers_label": "Couverts par mois",
+      "ticket_label": "Ticket moyen par couvert (€)",
+      "fixed_costs_label": "Coûts fixes mensuels (€)",
+      "fixed_costs_hint": "Loyer, personnel fixe, charges, assurances, licences...",
+      "variable_pct_label": "Coûts variables (% du chiffre d'affaires)",
+      "variable_pct_hint": "Matières premières, personnel variable, emballages, commissions...",
+      "calculate": "Calculer la Rentabilité",
+      "result_title": "Résultat mensuel",
+      "monthly_revenue_label": "Chiffre d'affaires mensuel",
+      "variable_costs_label": "Coûts variables",
+      "total_costs_label": "Coûts totaux",
+      "net_profit_label": "Bénéfice net",
+      "profit_margin_label": "Marge bénéficiaire",
+      "breakeven_label": "Point mort",
+      "breakeven_suffix": "couverts/mois pour couvrir toutes les charges",
+      "status_profitable": "✅ Activité rentable — Vous générez des bénéfices",
+      "status_breakeven": "⚠️ À la limite — Optimisez les coûts ou augmentez le CA",
+      "status_loss": "🔴 Pertes — Vous devez réduire les coûts ou augmenter les ventes",
+      "cta_after": "Vous voulez une analyse financière complète de votre restaurant ?",
+      "reset": "Nouvelle simulation"
+    },
+    "how_it_works": {
+      "title": "Comment ça marche",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Saisissez vos données réelles",
+          "description": "Nombre de clients mensuels, ticket moyen et structure de coûts fixes et variables."
+        },
+        {
+          "step": "2",
+          "title": "Calcul instantané",
+          "description": "CA, coûts totaux, bénéfice net et marge calculés automatiquement."
+        },
+        {
+          "step": "3",
+          "title": "Prenez des décisions basées sur les données",
+          "description": "Connaissez votre point mort et simulez des scénarios : plus de couverts, ticket plus élevé, réduction des coûts."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Pourquoi simuler la rentabilité",
+      "items": [
+        "Connaissez votre point mort réel en secondes",
+        "Simulez des scénarios : et si le loyer augmente ?",
+        "Identifiez si vos coûts fixes sont viables",
+        "Prenez des décisions de prix et de capacité avec des données"
+      ]
+    },
+    "testimonial": {
+      "quote": "J'ai découvert que j'avais besoin de 285 couverts par mois pour atteindre le point mort. J'en étais à 240. On a optimisé les horaires et on a atteint l'équilibre en 6 semaines.",
+      "name": "Ana Martínez",
+      "role": "Propriétaire, Restaurante Sabores, Valence"
+    },
+    "pricing": {
+      "title": "Analyse financière complète avec AI Chef Pro",
+      "subtitle": "Le simulateur de base est gratuit. Avec AI Chef Pro, obtenez des analyses par plat, des projections annuelles et des alertes de dérive des coûts.",
+      "plans": [
+        {
+          "name": "Gratuit",
+          "price": "0€/mois",
+          "uses": "5 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mois",
+          "uses": "150 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mois",
+          "uses": "350 utilisations/mois",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mois",
+          "uses": "Illimité",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Questions fréquentes sur la rentabilité en restauration"
+    },
+    "faq": [
+      {
+        "question": "Qu'est-ce que le point mort d'un restaurant ?",
+        "answer": "Le point mort est le nombre minimum de clients ou le chiffre d'affaires minimum nécessaire pour couvrir tous les coûts sans pertes ni bénéfices. Au-delà de ce point, chaque couvert supplémentaire génère du bénéfice pur."
+      },
+      {
+        "question": "Quelle est la marge bénéficiaire normale en restauration ?",
+        "answer": "La marge nette en restauration est généralement entre 3% et 9% pour les petits restaurants, et peut atteindre 15-20% dans les établissements très bien gérés."
+      },
+      {
+        "question": "Quels sont les coûts variables d'un restaurant ?",
+        "answer": "Les principaux coûts variables en hôtellerie-restauration sont : les matières premières (food cost), le personnel variable, les emballages livraison et les commissions des plateformes."
+      },
+      {
+        "question": "Que faire si le simulateur affiche des pertes ?",
+        "answer": "Vous avez trois leviers : augmenter le ticket moyen, réduire les coûts fixes (renégocier le loyer, optimiser les effectifs) ou augmenter le nombre de clients."
+      }
+    ],
+    "cta_section": {
+      "title": "Optimisez la rentabilité de votre restaurant avec l'IA",
+      "subtitle": "AI Chef Pro analyse votre food cost, marge par plat et rentabilité globale pour que vous preniez les meilleures décisions financières.",
+      "primary": "Essayer AI Chef Pro gratuitement",
       "secondary": "Voir tous les plans"
     }
   }

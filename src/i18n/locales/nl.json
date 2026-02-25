@@ -2223,10 +2223,22 @@
       "no_card": "Geen creditcard vereist · Directe toegang"
     },
     "results": [
-      { "metric": "3u", "label": "Dagelijkse tijdsbesparing" },
-      { "metric": "5.000+", "label": "Actieve restaurants" },
-      { "metric": "55+", "label": "AI-keukentools" },
-      { "metric": "30%", "label": "Gemiddelde kostenreductie" }
+      {
+        "metric": "3u",
+        "label": "Dagelijkse tijdsbesparing"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Actieve restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "AI-keukentools"
+      },
+      {
+        "metric": "30%",
+        "label": "Gemiddelde kostenreductie"
+      }
     ],
     "comparison": {
       "title": "AI Chef Pro vs. Traditionele beheersoftware",
@@ -2234,11 +2246,31 @@
       "col_feature": "Functie",
       "col_other": "Traditionele Software",
       "items": [
-        { "feature": "Automatische food cost", "other": "Handmatig in Excel", "aichef": "AI berekent food cost direct" },
-        { "feature": "Receptenbeheer", "other": "Word-bestanden of papier", "aichef": "55+ gespecialiseerde AI-tools" },
-        { "feature": "Allergenencontrole", "other": "Handmatige updates vereist", "aichef": "EU-verordening 1169/2011 ingebouwd" },
-        { "feature": "Menu-engineering", "other": "Geen winstgevendheidsanalyse", "aichef": "AI optimaliseert marges per gerecht" },
-        { "feature": "Prijsupdates", "other": "Traag en omslachtig proces", "aichef": "Automatische herberekening in seconden" }
+        {
+          "feature": "Automatische food cost",
+          "other": "Handmatig in Excel",
+          "aichef": "AI berekent food cost direct"
+        },
+        {
+          "feature": "Receptenbeheer",
+          "other": "Word-bestanden of papier",
+          "aichef": "55+ gespecialiseerde AI-tools"
+        },
+        {
+          "feature": "Allergenencontrole",
+          "other": "Handmatige updates vereist",
+          "aichef": "EU-verordening 1169/2011 ingebouwd"
+        },
+        {
+          "feature": "Menu-engineering",
+          "other": "Geen winstgevendheidsanalyse",
+          "aichef": "AI optimaliseert marges per gerecht"
+        },
+        {
+          "feature": "Prijsupdates",
+          "other": "Traag en omslachtig proces",
+          "aichef": "Automatische herberekening in seconden"
+        }
       ]
     },
     "tools_section": {
@@ -2249,32 +2281,56 @@
       {
         "title": "AI Food Cost",
         "description": "Bereken de exacte kosten van elk gerecht in seconden. Voer ingrediënten, gewichten en leveranciersprijs in: de AI doet de rest.",
-        "keywords": ["food cost restaurant", "food cost AI", "kosten per gerecht"]
+        "keywords": [
+          "food cost restaurant",
+          "food cost AI",
+          "kosten per gerecht"
+        ]
       },
       {
         "title": "Inventariscontrole",
         "description": "Beheer uw voorraad in realtime. Automatische meldingen wanneer ingrediënten het minimum bereiken. Verminder verspilling.",
-        "keywords": ["restaurantinventaris", "keukenvoorraadbeheer", "verspillingscontrole"]
+        "keywords": [
+          "restaurantinventaris",
+          "keukenvoorraadbeheer",
+          "verspillingscontrole"
+        ]
       },
       {
         "title": "Receptenbeheer",
         "description": "Digitaliseer en standaardiseer al uw recepten met professionele technische fiches en automatische portiescaling.",
-        "keywords": ["recept technische fiche", "receptstandaardisatie", "digitaal receptenboek"]
+        "keywords": [
+          "recept technische fiche",
+          "receptstandaardisatie",
+          "digitaal receptenboek"
+        ]
       },
       {
         "title": "Allergenen & Regelgeving",
         "description": "Controle van de 14 allergenen conform EU-verordening 1169/2011. Vermijd boetes en bescherm uw gasten.",
-        "keywords": ["restaurantallergenen", "EU-allergerenverordening", "voedselveiligheid"]
+        "keywords": [
+          "restaurantallergenen",
+          "EU-allergerenverordening",
+          "voedselveiligheid"
+        ]
       },
       {
         "title": "Menu-engineering",
         "description": "Analyseer de winstgevendheid van elk gerecht en optimaliseer uw menu voor maximale winst per couvret.",
-        "keywords": ["menu-engineering", "gerecht winstgevendheid", "menuoptimalisatie"]
+        "keywords": [
+          "menu-engineering",
+          "gerecht winstgevendheid",
+          "menuoptimalisatie"
+        ]
       },
       {
         "title": "Beheerrapporten",
         "description": "Visualiseer uw keukenperformance met automatische rapporten over food cost, marges en consumptietrends.",
-        "keywords": ["food cost rapport", "kostenbeheersing", "restaurantmarge"]
+        "keywords": [
+          "food cost rapport",
+          "kostenbeheersing",
+          "restaurantmarge"
+        ]
       }
     ],
     "profiles_section": {
@@ -2282,10 +2338,22 @@
       "subtitle": "Horecaprofessionals die hun keuken hebben gedigitaliseerd met AI."
     },
     "profiles": [
-      { "title": "Chef-eigenaar", "description": "Controleert keukenkosten zonder afhankelijk te zijn van externe accountants of spreadsheets." },
-      { "title": "Keukenchef", "description": "Standaardiseert recepten, beheert voorraad en superviseert het team vanuit één platform." },
-      { "title": "Operationeel Directeur", "description": "Beheert meerdere locaties met realtime data vanuit elke keuken." },
-      { "title": "Bar- of Café-eigenaar", "description": "Geen complicaties: beheer food cost en menukaart in minuten, niet in uren." }
+      {
+        "title": "Chef-eigenaar",
+        "description": "Controleert keukenkosten zonder afhankelijk te zijn van externe accountants of spreadsheets."
+      },
+      {
+        "title": "Keukenchef",
+        "description": "Standaardiseert recepten, beheert voorraad en superviseert het team vanuit één platform."
+      },
+      {
+        "title": "Operationeel Directeur",
+        "description": "Beheert meerdere locaties met realtime data vanuit elke keuken."
+      },
+      {
+        "title": "Bar- of Café-eigenaar",
+        "description": "Geen complicaties: beheer food cost en menukaart in minuten, niet in uren."
+      }
     ],
     "why_section": {
       "title": "Het keukenbeheer dat chefs nodig hebben, mogelijk gemaakt door AI",
@@ -2354,10 +2422,22 @@
       "no_card": "Geen creditcard vereist · Directe toegang"
     },
     "results": [
-      { "metric": "25", "label": "Wereldkeukens" },
-      { "metric": "5.000+", "label": "Actieve restaurants" },
-      { "metric": "80%", "label": "Minder tijd aan menuontwikkeling" },
-      { "metric": "55+", "label": "Gespecialiseerde tools" }
+      {
+        "metric": "25",
+        "label": "Wereldkeukens"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Actieve restaurants"
+      },
+      {
+        "metric": "80%",
+        "label": "Minder tijd aan menuontwikkeling"
+      },
+      {
+        "metric": "55+",
+        "label": "Gespecialiseerde tools"
+      }
     ],
     "comparison": {
       "title": "AI-recepten vs. Traditionele methoden",
@@ -2365,11 +2445,31 @@
       "col_feature": "Aspect",
       "col_other": "Traditionele Methode",
       "items": [
-        { "feature": "Receptcreatie", "other": "Uren onderzoek en testen", "aichef": "Technisch recept in seconden gegenereerd" },
-        { "feature": "Keukenvarieteit", "other": "Beperkt tot kennis van de chef", "aichef": "25 wereldkeukens met echte techniek" },
-        { "feature": "Seizoensmenus", "other": "Weken durend handmatig proces", "aichef": "Volledig menu met seizoensingrediënten" },
-        { "feature": "Portiescaling", "other": "Handmatige berekeningen met fouten", "aichef": "Automatisch en direct schalen" },
-        { "feature": "Technische fiches", "other": "Handmatig schrijven in Word/Excel", "aichef": "Professionele technische fiche direct gegenereerd" }
+        {
+          "feature": "Receptcreatie",
+          "other": "Uren onderzoek en testen",
+          "aichef": "Technisch recept in seconden gegenereerd"
+        },
+        {
+          "feature": "Keukenvarieteit",
+          "other": "Beperkt tot kennis van de chef",
+          "aichef": "25 wereldkeukens met echte techniek"
+        },
+        {
+          "feature": "Seizoensmenus",
+          "other": "Weken durend handmatig proces",
+          "aichef": "Volledig menu met seizoensingrediënten"
+        },
+        {
+          "feature": "Portiescaling",
+          "other": "Handmatige berekeningen met fouten",
+          "aichef": "Automatisch en direct schalen"
+        },
+        {
+          "feature": "Technische fiches",
+          "other": "Handmatig schrijven in Word/Excel",
+          "aichef": "Professionele technische fiche direct gegenereerd"
+        }
       ]
     },
     "tools_section": {
@@ -2380,32 +2480,56 @@
       {
         "title": "Professionele Receptengenerator",
         "description": "Maak technisch correcte recepten met professioneel culinair vocabulaire, nauwkeurige technieken en gedetailleerde presentatie.",
-        "keywords": ["AI receptengenerator", "professionele chef-recepten", "technische recepten"]
+        "keywords": [
+          "AI receptengenerator",
+          "professionele chef-recepten",
+          "technische recepten"
+        ]
       },
       {
         "title": "25 Wereldkeukens",
         "description": "Toegang tot authentieke recepten uit 25 culinaire tradities: Frans, Japans, Peruaans, Italiaans, Mexicaans en nog veel meer.",
-        "keywords": ["wereldkeukens", "internationale recepten", "mondiale gastronomie"]
+        "keywords": [
+          "wereldkeukens",
+          "internationale recepten",
+          "mondiale gastronomie"
+        ]
       },
       {
         "title": "AI Seizoensmenus",
         "description": "Genereer complete menu's op basis van seizoensingrediënten, uw gastronomisch concept en klantprofiel.",
-        "keywords": ["seizoensmenu", "degustatiemenu", "AI restaurantmenu"]
+        "keywords": [
+          "seizoensmenu",
+          "degustatiemenu",
+          "AI restaurantmenu"
+        ]
       },
       {
         "title": "Automatisch Portieschalen",
         "description": "Pas elk recept aan het gewenste aantal gasten aan. AI past gewichten, kooktijden en technieken aan.",
-        "keywords": ["recepten schalen", "gewichten per portie", "massaproductie"]
+        "keywords": [
+          "recepten schalen",
+          "gewichten per portie",
+          "massaproductie"
+        ]
       },
       {
         "title": "Professionele Technische Fiches",
         "description": "Genereer complete technische fiches met allergenen, voedingswaarden, technieken en presentatie voor uw team.",
-        "keywords": ["technische receptfiche", "professioneel receptenboek", "keukenstandaardisatie"]
+        "keywords": [
+          "technische receptfiche",
+          "professioneel receptenboek",
+          "keukenstandaardisatie"
+        ]
       },
       {
         "title": "Aanpassing aan Beperkingen",
         "description": "Pas recepten aan voor veganisten, coeliakie, diabetici of elke voedingsbeperking zonder de essentie van het gerecht te verliezen.",
-        "keywords": ["veganistische chef-recepten", "glutenvrije recepten", "dieetaanpassing"]
+        "keywords": [
+          "veganistische chef-recepten",
+          "glutenvrije recepten",
+          "dieetaanpassing"
+        ]
       }
     ],
     "profiles_section": {
@@ -2413,10 +2537,22 @@
       "subtitle": "Chefs en restauranthouders die AI hebben geïntegreerd in hun creatieve keukenproces."
     },
     "profiles": [
-      { "title": "Creatieve Chef", "description": "Gebruikt AI als inspiratiebron voor nieuwe gerechten en fusies van wereldkeukens." },
-      { "title": "Partijchef", "description": "Genereert gestandaardiseerde technische fiches zodat het team gerechten precies kan reproduceren." },
-      { "title": "Hotel- of Cateringchef", "description": "Maakt complete menu's voor grote evenementen met automatisch portieschalen." },
-      { "title": "Restauranteigenaar", "description": "Vernieuwt de seizoenskaart zonder langdurige handmatige creatieprocessen." }
+      {
+        "title": "Creatieve Chef",
+        "description": "Gebruikt AI als inspiratiebron voor nieuwe gerechten en fusies van wereldkeukens."
+      },
+      {
+        "title": "Partijchef",
+        "description": "Genereert gestandaardiseerde technische fiches zodat het team gerechten precies kan reproduceren."
+      },
+      {
+        "title": "Hotel- of Cateringchef",
+        "description": "Maakt complete menu's voor grote evenementen met automatisch portieschalen."
+      },
+      {
+        "title": "Restauranteigenaar",
+        "description": "Vernieuwt de seizoenskaart zonder langdurige handmatige creatieprocessen."
+      }
     ],
     "why_section": {
       "title": "AI die koken begrijpt, niet alleen woorden",
@@ -2485,10 +2621,22 @@
       "no_card": "Geen creditcard vereist · Directe toegang"
     },
     "results": [
-      { "metric": "2min", "label": "Voor een volledige berekening" },
-      { "metric": "30%", "label": "Gemiddelde kostenreductie" },
-      { "metric": "5.000+", "label": "Actieve restaurants" },
-      { "metric": "55+", "label": "Gespecialiseerde tools" }
+      {
+        "metric": "2min",
+        "label": "Voor een volledige berekening"
+      },
+      {
+        "metric": "30%",
+        "label": "Gemiddelde kostenreductie"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Actieve restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "Gespecialiseerde tools"
+      }
     ],
     "comparison": {
       "title": "AI Food Cost vs. Excel en handmatige methoden",
@@ -2496,11 +2644,31 @@
       "col_feature": "Aspect",
       "col_other": "Excel / Handmatig",
       "items": [
-        { "feature": "Tijd per berekening", "other": "30-60 minuten per gerecht", "aichef": "2 minuten met AI" },
-        { "feature": "Prijsupdates", "other": "Handmatig bij elke kostenstijging", "aichef": "Automatische herberekening direct" },
-        { "feature": "Verspillingscontrole", "other": "Genegeerd of onnauwkeurig geschat", "aichef": "Verspilling berekend per ingrediënttype" },
-        { "feature": "Verkoopprijs", "other": "Buikgevoel zonder objectieve basis", "aichef": "Optimale prijs met doelmarge" },
-        { "feature": "Rentabiliteit per gerecht", "other": "Geen systematische analyse", "aichef": "Realtime rentabiliteitsdashboard" }
+        {
+          "feature": "Tijd per berekening",
+          "other": "30-60 minuten per gerecht",
+          "aichef": "2 minuten met AI"
+        },
+        {
+          "feature": "Prijsupdates",
+          "other": "Handmatig bij elke kostenstijging",
+          "aichef": "Automatische herberekening direct"
+        },
+        {
+          "feature": "Verspillingscontrole",
+          "other": "Genegeerd of onnauwkeurig geschat",
+          "aichef": "Verspilling berekend per ingrediënttype"
+        },
+        {
+          "feature": "Verkoopprijs",
+          "other": "Buikgevoel zonder objectieve basis",
+          "aichef": "Optimale prijs met doelmarge"
+        },
+        {
+          "feature": "Rentabiliteit per gerecht",
+          "other": "Geen systematische analyse",
+          "aichef": "Realtime rentabiliteitsdashboard"
+        }
       ]
     },
     "tools_section": {
@@ -2511,32 +2679,56 @@
       {
         "title": "Automatische AI Food Cost",
         "description": "Voer ingrediënten, gewichten en leveranciersprijs in. AI berekent de exacte food cost van elk gerecht in seconden.",
-        "keywords": ["automatische food cost", "food cost per gerecht", "food cost calculator"]
+        "keywords": [
+          "automatische food cost",
+          "food cost per gerecht",
+          "food cost calculator"
+        ]
       },
       {
         "title": "Verspillingscontrole",
         "description": "Bereken het werkelijke verlies per ingrediënttype (schoonmaken, koken, verdamping) voor nauwkeurige food cost.",
-        "keywords": ["keuken verspilling", "ingrediëntrendement", "kookverliezen"]
+        "keywords": [
+          "keuken verspilling",
+          "ingrediëntrendement",
+          "kookverliezen"
+        ]
       },
       {
         "title": "Optimale Verkoopprijs",
         "description": "AI berekent de ideale verkoopprijs op basis van uw doelmarge, de markt en de positionering van uw restaurant.",
-        "keywords": ["gerecht verkoopprijs", "restaurantmarge", "prijsbeleid"]
+        "keywords": [
+          "gerecht verkoopprijs",
+          "restaurantmarge",
+          "prijsbeleid"
+        ]
       },
       {
         "title": "Rentabiliteitsanalyse",
         "description": "Identificeer welke gerechten de hoogste marge geven en welke u geld kosten. Optimaliseer uw menu met echte data.",
-        "keywords": ["rentabiliteit per gerecht", "menu-engineering", "food cost analyse"]
+        "keywords": [
+          "rentabiliteit per gerecht",
+          "menu-engineering",
+          "food cost analyse"
+        ]
       },
       {
         "title": "Prijsupdates",
         "description": "Wanneer de kosten van een ingrediënt stijgen, herberekent AI automatisch alle getroffen food costings.",
-        "keywords": ["food cost update", "voedselinflatie", "leveranciersprijscontrole"]
+        "keywords": [
+          "food cost update",
+          "voedselinflatie",
+          "leveranciersprijscontrole"
+        ]
       },
       {
         "title": "Food Cost Dashboard",
         "description": "Visualiseer de totale food cost van uw restaurant, per categorie en per gerecht. Detecteer afwijkingen direct.",
-        "keywords": ["food cost dashboard", "keuken kostenbeheersing", "restaurant KPIs"]
+        "keywords": [
+          "food cost dashboard",
+          "keuken kostenbeheersing",
+          "restaurant KPIs"
+        ]
       }
     ],
     "profiles_section": {
@@ -2544,10 +2736,22 @@
       "subtitle": "Professionals die zijn gestopt met geld verliezen door slecht berekende food cost."
     },
     "profiles": [
-      { "title": "Chef-eigenaar", "description": "Beheert de food cost van zijn menukaart zonder afhankelijk te zijn van accountants of eindeloze spreadsheets." },
-      { "title": "Operationeel Directeur", "description": "Bewaakt de food cost van meerdere locaties vanuit één dashboard met realtime data." },
-      { "title": "Keukenchef", "description": "Werkt food costings bij wanneer leveranciersprijs veranderen zonder het hele proces te herhalen." },
-      { "title": "Controller of Finance", "description": "Heeft voor het eerst exacte controle over de kosten van elk gerecht en de impact op het resultaat." }
+      {
+        "title": "Chef-eigenaar",
+        "description": "Beheert de food cost van zijn menukaart zonder afhankelijk te zijn van accountants of eindeloze spreadsheets."
+      },
+      {
+        "title": "Operationeel Directeur",
+        "description": "Bewaakt de food cost van meerdere locaties vanuit één dashboard met realtime data."
+      },
+      {
+        "title": "Keukenchef",
+        "description": "Werkt food costings bij wanneer leveranciersprijs veranderen zonder het hele proces te herhalen."
+      },
+      {
+        "title": "Controller of Finance",
+        "description": "Heeft voor het eerst exacte controle over de kosten van elk gerecht en de impact op het resultaat."
+      }
     ],
     "why_section": {
       "title": "Ongecontroleerde food cost is de marge die u weggeeft",
@@ -2596,6 +2800,345 @@
       "title": "Begin vandaag nog met AI food cost controle",
       "subtitle": "Meer dan 5.000 restaurants gebruiken AI Chef Pro al om food cost te berekenen en hun marge te beschermen.",
       "primary": "Mijn food cost gratis berekenen",
+      "secondary": "Alle plannen bekijken"
+    }
+  },
+  "toolHub": {
+    "seo": {
+      "title": "Gratis Tools voor Restaurants | AI Chef Pro",
+      "description": "8 gratis tools voor restaurants: food cost calculator, winstgevendheids-simulator, allergenen checker en meer. Zonder registratie.",
+      "keywords": "gratis restaurant tools, food cost calculator gratis, winstgevendheids-simulator restaurant"
+    },
+    "breadcrumb": "Gratis Tools",
+    "hero": {
+      "badge": "100% Gratis — Geen registratie",
+      "h1": "8 Gratis Tools voor uw Restaurant",
+      "subtitle": "Bereken uw food cost, controleer allergenen, simuleer uw winstgevendheid en meer. Geen registratie, geen betaling, geen limieten.",
+      "tagline": "Van de makers van AI Chef Pro — de AI-suite voor gastronomie"
+    },
+    "tools": [
+      {
+        "title": "Food Cost Calculator",
+        "description": "Bereken de exacte kosten van elk gerecht en uw food cost percentage in seconden.",
+        "badge": "Calculator",
+        "color": "green"
+      },
+      {
+        "title": "Allergenen Checker",
+        "description": "Identificeer alle 14 verplicht te vermelden allergenen in elk gerecht direct.",
+        "badge": "Juridisch",
+        "color": "red"
+      },
+      {
+        "title": "Content Kalender AI",
+        "description": "Genereer 30 dagen gepersonaliseerde social media ideeën voor uw restaurant met AI.",
+        "badge": "AI",
+        "color": "purple"
+      },
+      {
+        "title": "Winstgevendheids-simulator",
+        "description": "Bereken of uw restaurant winstgevend is en wat uw maandelijks break-evenpunt is.",
+        "badge": "Calculator",
+        "color": "yellow"
+      },
+      {
+        "title": "Menukaart Tekstgenerator",
+        "description": "Maak onweerstaanbare gerechtsomschrijvingen voor uw menukaart met AI.",
+        "badge": "AI",
+        "color": "blue"
+      },
+      {
+        "title": "Digitaliserings-test",
+        "description": "Ontdek het digitaliseringsniveau van uw restaurant en wat u eerst moet verbeteren.",
+        "badge": "Quiz",
+        "color": "teal"
+      },
+      {
+        "title": "Keuken Brigade Calculator",
+        "description": "Bereken hoeveel medewerkers u nodig heeft op basis van uw servicevolume.",
+        "badge": "Calculator",
+        "color": "orange"
+      },
+      {
+        "title": "Proefmenu Generator",
+        "description": "Maak een compleet degustatiemenu met wijnbegeleidingen en mise en scène met AI.",
+        "badge": "AI",
+        "color": "indigo"
+      }
+    ],
+    "why": {
+      "title": "Waarom zijn ze gratis?",
+      "body": "Wij geloven dat elk restaurant, ongeacht de grootte, toegang verdient tot professionele tools.",
+      "items": [
+        "Geen registratie of creditcard nodig",
+        "Directe resultaten in uw browser",
+        "Gebaseerd op echte branchestandaarden",
+        "Gebruikt door meer dan 5.000 professionals"
+      ]
+    },
+    "cta": {
+      "title": "Heeft u meer kracht nodig?",
+      "subtitle": "Deze tools zijn slechts een voorbeeld van de 55+ AI-functies beschikbaar in AI Chef Pro Premium.",
+      "primary": "Premium Plan bekijken",
+      "secondary": "Gratis starten"
+    }
+  },
+  "toolFoodCost": {
+    "seo": {
+      "title": "Gratis Restaurant Food Cost Calculator | AI Chef Pro",
+      "description": "Bereken gratis de food cost van uw gerechten: ingrediënten, gewichten en verkoopprijs. Direct resultaat met winstgevendheids-stoplicht. Zonder registratie.",
+      "keywords": "food cost calculator restaurant, food cost gratis berekenen, food cost percentage, gerecht kosten restaurant"
+    },
+    "breadcrumb": "Food Cost Calculator",
+    "hero": {
+      "badge": "Gratis — Geen registratie",
+      "h1": "Food Cost Calculator voor Restaurants",
+      "subtitle": "Bereken het food cost percentage van elk gerecht in seconden. Voeg ingrediënten, hoeveelheden en verkoopprijs toe.",
+      "cta_tool": "Naar de calculator ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Food Cost Calculator",
+      "dish_name_label": "Naam van het gerecht",
+      "dish_name_placeholder": "Bijv.: Champignonrisotto",
+      "portions_label": "Aantal porties",
+      "sale_price_label": "Verkoopprijs per portie (€)",
+      "ingredients_title": "Ingrediënten",
+      "ingredient_name": "Ingrediënt",
+      "ingredient_qty": "Hoeveelheid (g)",
+      "ingredient_cost": "Prijs/kg (€)",
+      "add_ingredient": "+ Ingrediënt toevoegen",
+      "calculate": "Food Cost berekenen",
+      "result_title": "Resultaat",
+      "total_cost_label": "Totale ingrediëntenkosten",
+      "cost_per_portion_label": "Kosten per portie",
+      "food_cost_pct_label": "Food cost %",
+      "gross_margin_label": "Bruto marge (€/portie)",
+      "status_ok": "✅ Uitstekende food cost — Uw gerecht is zeer winstgevend",
+      "status_warn": "⚠️ Krappe food cost — Controleer prijzen of ingrediënten",
+      "status_bad": "🔴 Hoge food cost — Overweeg prijsverhoging of kostenreductie",
+      "tip": "💡 Branche benchmark: food cost tussen 25% en 32% is gezond voor restaurants",
+      "cta_after": "Wilt u al uw gerechten automatisch berekenen?",
+      "reset": "Nieuwe berekening"
+    },
+    "how_it_works": {
+      "title": "Hoe het werkt",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Ingrediënten toevoegen",
+          "description": "Voer elk ingrediënt in met zijn gewicht per portie en inkoopprijs per kilo."
+        },
+        {
+          "step": "2",
+          "title": "Porties en verkoopprijs instellen",
+          "description": "Hoeveel porties het recept oplevert en voor welke prijs u het verkoopt."
+        },
+        {
+          "step": "3",
+          "title": "Uw food cost ontvangen",
+          "description": "U ziet de exacte kosten per portie, het food cost percentage en de winstgevendheidsstatus."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Waarom uw food cost berekenen",
+      "items": [
+        "Gerechten identificeren die geld verliezen",
+        "Verkoopprijzen aanpassen met echte gegevens",
+        "Marge verhogen zonder agressieve prijsverhogingen",
+        "Totale controle in seconden, zonder Excel"
+      ]
+    },
+    "testimonial": {
+      "quote": "Met deze calculator zag ik dat mijn signature gerecht meer kostte dan ik dacht. Ik verhoogde de prijs met €1,50 en niemand merkte het. Ik verdiende €400 extra die maand.",
+      "name": "Carlos Romero",
+      "role": "Eigenaar, Bar Restaurant La Plaza, Zaragoza"
+    },
+    "pricing": {
+      "title": "Meer kracht met AI Chef Pro",
+      "subtitle": "De gratis calculator is slechts een voorbeeld. Met AI Chef Pro berekent u uw hele menukaart met verspillingscontrole.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "€0/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over food cost"
+    },
+    "faq": [
+      {
+        "question": "Wat is food cost?",
+        "answer": "Food cost is het percentage van de verkoopprijs dat de ingrediëntenkosten vertegenwoordigt. Formule: Food cost % = (Ingrediëntenkosten / Verkoopprijs) × 100. Een gezonde food cost ligt tussen 25% en 32%."
+      },
+      {
+        "question": "Waarom is het belangrijk dit te controleren?",
+        "answer": "Ongecontroleerde food cost kan betekenen dat u geld verliest op gerechten die u winstgevend acht. Het controleren stelt u in staat prijsbeslissingen te nemen en de marge te maximaliseren."
+      },
+      {
+        "question": "Bevat deze calculator verspilling?",
+        "answer": "Deze gratis versie werkt met de netto gewichten die u invoert. Voor automatische verspillingsberekening, gebruik het receptenberekenings-tool van AI Chef Pro Premium."
+      },
+      {
+        "question": "Hoe verbetert u een hoge food cost?",
+        "answer": "U kunt de verkoopprijs verhogen, overstappen naar goedkopere leveranciers, de hoeveelheid dure ingrediënten verminderen of hoogkostige componenten vervangen."
+      }
+    ],
+    "cta_section": {
+      "title": "Automatiseer al uw receptenberekening met AI",
+      "subtitle": "Met AI Chef Pro berekent u de food cost van uw hele menukaart in minuten, met verspillingscontrole en automatische updates.",
+      "primary": "AI Chef Pro gratis uitproberen",
+      "secondary": "Alle plannen bekijken"
+    }
+  },
+  "toolRentabilidad": {
+    "seo": {
+      "title": "Gratis Restaurant Winstgevendheids-simulator | AI Chef Pro",
+      "description": "Bereken of uw restaurant winstgevend is: voer couverts, gemiddeld besteding en kosten in. Nettowinst en break-even direct. Gratis, geen registratie.",
+      "keywords": "winstgevendheids-simulator restaurant, restaurant winst berekenen, break-even restaurant, horeca winstgevendheid gratis"
+    },
+    "breadcrumb": "Winstgevendheids-simulator",
+    "hero": {
+      "badge": "Gratis — Geen registratie",
+      "h1": "Winstgevendheids-simulator voor Restaurants",
+      "subtitle": "Bereken of uw restaurant echte winst genereert. Voer uw gegevens in en ontvang uw maandelijkse winst en break-evenpunt.",
+      "cta_tool": "Naar de simulator ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Winstgevendheids-simulator",
+      "covers_label": "Couverts per maand",
+      "ticket_label": "Gemiddelde besteding per couvert (€)",
+      "fixed_costs_label": "Maandelijkse vaste kosten (€)",
+      "fixed_costs_hint": "Huur, vast personeel, nutsvoorzieningen, verzekeringen, licenties...",
+      "variable_pct_label": "Variabele kosten (% van omzet)",
+      "variable_pct_hint": "Grondstoffen, variabel personeel, verpakkingen, platformcommissies...",
+      "calculate": "Winstgevendheid berekenen",
+      "result_title": "Maandelijks resultaat",
+      "monthly_revenue_label": "Maandelijkse omzet",
+      "variable_costs_label": "Variabele kosten",
+      "total_costs_label": "Totale kosten",
+      "net_profit_label": "Nettowinst",
+      "profit_margin_label": "Winstmarge",
+      "breakeven_label": "Break-evenpunt",
+      "breakeven_suffix": "couverts/maand om alle kosten te dekken",
+      "status_profitable": "✅ Winstgevend bedrijf — U genereert winst",
+      "status_breakeven": "⚠️ Op de grens — Optimaliseer kosten of verhoog omzet",
+      "status_loss": "🔴 Verlies — U moet kosten verlagen of verkopen verhogen",
+      "cta_after": "Wilt u een volledige financiële analyse van uw restaurant?",
+      "reset": "Nieuwe simulatie"
+    },
+    "how_it_works": {
+      "title": "Hoe het werkt",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Voer uw echte gegevens in",
+          "description": "Aantal maandelijkse gasten, gemiddelde besteding en uw vaste en variabele kostenstructuur."
+        },
+        {
+          "step": "2",
+          "title": "Directe berekening",
+          "description": "Omzet, totale kosten, nettowinst en marge automatisch berekend."
+        },
+        {
+          "step": "3",
+          "title": "Data-gedreven beslissingen nemen",
+          "description": "Ken uw break-evenpunt en simuleer scenario's: meer couverts, hogere besteding, kostenreductie."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Waarom winstgevendheid simuleren",
+      "items": [
+        "Ken uw echte break-evenpunt in seconden",
+        "Simuleer scenario's: wat als de huur stijgt?",
+        "Identificeer of uw vaste kosten duurzaam zijn",
+        "Neem prijs- en capaciteitsbeslissingen met data"
+      ]
+    },
+    "testimonial": {
+      "quote": "Ik ontdekte dat ik 285 couverts per maand nodig had om break-even te draaien. Ik zat op 240. We optimaliseerden de openingstijden en bereikten break-even in 6 weken.",
+      "name": "Ana Martínez",
+      "role": "Eigenaar, Restaurante Sabores, Valencia"
+    },
+    "pricing": {
+      "title": "Volledige financiële analyse met AI Chef Pro",
+      "subtitle": "De basissimulator is gratis. Met AI Chef Pro krijgt u per-gerecht analyses, jaarprognoses en kostenafwijkingswaarschuwingen.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "€0/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over winstgevendheid in horeca"
+    },
+    "faq": [
+      {
+        "question": "Wat is het break-evenpunt van een restaurant?",
+        "answer": "Het break-evenpunt is het minimum aantal gasten of minimale omzet om alle kosten te dekken zonder verlies of winst. Daarboven genereert elke extra couvert pure winst."
+      },
+      {
+        "question": "Wat is een normale winstmarge in de horeca?",
+        "answer": "De nettomarge in de horeca ligt typisch tussen 3% en 9% voor kleine restaurants, en kan 15-20% bereiken in zeer goed geleide etablissementen."
+      },
+      {
+        "question": "Wat zijn variabele kosten van een restaurant?",
+        "answer": "De belangrijkste variabele kosten zijn: grondstoffen (food cost), variabel personeel, bezorgverpakkingen en platformcommissies."
+      },
+      {
+        "question": "Wat te doen als de simulator verlies toont?",
+        "answer": "U heeft drie hefbomen: gemiddelde besteding verhogen, vaste kosten verlagen (huur heronderhandelen, personeel optimaliseren) of het aantal gasten verhogen."
+      }
+    ],
+    "cta_section": {
+      "title": "Optimaliseer de winstgevendheid van uw restaurant met AI",
+      "subtitle": "AI Chef Pro analyseert uw food cost, marge per gerecht en algemene winstgevendheid voor de beste financiële beslissingen.",
+      "primary": "AI Chef Pro gratis uitproberen",
       "secondary": "Alle plannen bekijken"
     }
   }

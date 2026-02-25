@@ -1954,10 +1954,22 @@
       "no_card": "No credit card required · Instant access"
     },
     "results": [
-      { "metric": "3h", "label": "Daily management savings" },
-      { "metric": "5,000+", "label": "Active restaurants" },
-      { "metric": "55+", "label": "AI kitchen management tools" },
-      { "metric": "30%", "label": "Average cost reduction" }
+      {
+        "metric": "3h",
+        "label": "Daily management savings"
+      },
+      {
+        "metric": "5,000+",
+        "label": "Active restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "AI kitchen management tools"
+      },
+      {
+        "metric": "30%",
+        "label": "Average cost reduction"
+      }
     ],
     "comparison": {
       "title": "AI Chef Pro vs. Traditional Management Software",
@@ -1965,11 +1977,31 @@
       "col_feature": "Feature",
       "col_other": "Traditional Software",
       "items": [
-        { "feature": "Automatic food costing", "other": "Manual, in Excel sheets", "aichef": "AI calculates food cost instantly" },
-        { "feature": "Recipe management", "other": "Word files or paper", "aichef": "55+ specialized AI tools" },
-        { "feature": "Allergen control", "other": "Manual updates required", "aichef": "EU Regulation 1169/2011 built-in" },
-        { "feature": "Menu engineering", "other": "No profitability analysis", "aichef": "AI optimizes margins per dish" },
-        { "feature": "Price updates", "other": "Slow and tedious process", "aichef": "Automatic recalculation in seconds" }
+        {
+          "feature": "Automatic food costing",
+          "other": "Manual, in Excel sheets",
+          "aichef": "AI calculates food cost instantly"
+        },
+        {
+          "feature": "Recipe management",
+          "other": "Word files or paper",
+          "aichef": "55+ specialized AI tools"
+        },
+        {
+          "feature": "Allergen control",
+          "other": "Manual updates required",
+          "aichef": "EU Regulation 1169/2011 built-in"
+        },
+        {
+          "feature": "Menu engineering",
+          "other": "No profitability analysis",
+          "aichef": "AI optimizes margins per dish"
+        },
+        {
+          "feature": "Price updates",
+          "other": "Slow and tedious process",
+          "aichef": "Automatic recalculation in seconds"
+        }
       ]
     },
     "tools_section": {
@@ -1980,32 +2012,56 @@
       {
         "title": "AI Food Costing",
         "description": "Calculate the exact cost of each dish in seconds. Enter ingredients, weights and supplier prices — AI does the rest.",
-        "keywords": ["restaurant food costing", "food cost AI", "cost per dish"]
+        "keywords": [
+          "restaurant food costing",
+          "food cost AI",
+          "cost per dish"
+        ]
       },
       {
         "title": "Inventory Control",
         "description": "Manage your stock in real time. Automatic alerts when ingredients fall below minimum levels. Reduce waste.",
-        "keywords": ["restaurant inventory", "kitchen stock management", "waste control"]
+        "keywords": [
+          "restaurant inventory",
+          "kitchen stock management",
+          "waste control"
+        ]
       },
       {
         "title": "Recipe Management",
         "description": "Digitize and standardize all your recipes with professional tech sheets and automatic portion scaling.",
-        "keywords": ["recipe tech sheet", "recipe standardization", "digital recipe book"]
+        "keywords": [
+          "recipe tech sheet",
+          "recipe standardization",
+          "digital recipe book"
+        ]
       },
       {
         "title": "Allergens & Compliance",
         "description": "Control of the 14 allergens under EU Regulation 1169/2011. Avoid fines and protect your customers.",
-        "keywords": ["restaurant allergens", "EU allergen regulation", "food safety"]
+        "keywords": [
+          "restaurant allergens",
+          "EU allergen regulation",
+          "food safety"
+        ]
       },
       {
         "title": "Menu Engineering",
         "description": "Analyze the profitability of each dish and optimize your menu to maximize profit per cover.",
-        "keywords": ["menu engineering", "dish profitability", "menu optimization"]
+        "keywords": [
+          "menu engineering",
+          "dish profitability",
+          "menu optimization"
+        ]
       },
       {
         "title": "Management Reports",
         "description": "Visualize your kitchen performance with automatic reports on food cost, margins and consumption trends.",
-        "keywords": ["food cost report", "cost control", "restaurant margin"]
+        "keywords": [
+          "food cost report",
+          "cost control",
+          "restaurant margin"
+        ]
       }
     ],
     "profiles_section": {
@@ -2013,10 +2069,22 @@
       "subtitle": "Hospitality professionals who have digitized their kitchen with AI."
     },
     "profiles": [
-      { "title": "Chef-Owner", "description": "Controls kitchen costs without relying on external accountants or spreadsheets." },
-      { "title": "Head Chef", "description": "Standardizes recipes, manages stock and supervises the team from one platform." },
-      { "title": "Operations Director", "description": "Oversees multiple venues with real-time data from each kitchen and section." },
-      { "title": "Bar or Café Owner", "description": "No complications: manage food costs and menus in minutes, not hours." }
+      {
+        "title": "Chef-Owner",
+        "description": "Controls kitchen costs without relying on external accountants or spreadsheets."
+      },
+      {
+        "title": "Head Chef",
+        "description": "Standardizes recipes, manages stock and supervises the team from one platform."
+      },
+      {
+        "title": "Operations Director",
+        "description": "Oversees multiple venues with real-time data from each kitchen and section."
+      },
+      {
+        "title": "Bar or Café Owner",
+        "description": "No complications: manage food costs and menus in minutes, not hours."
+      }
     ],
     "why_section": {
       "title": "The kitchen management chefs need, powered by AI",
@@ -2085,10 +2153,22 @@
       "no_card": "No credit card required · Instant access"
     },
     "results": [
-      { "metric": "25", "label": "World cuisines" },
-      { "metric": "5,000+", "label": "Active restaurants" },
-      { "metric": "80%", "label": "Less time on menu development" },
-      { "metric": "55+", "label": "Specialized tools" }
+      {
+        "metric": "25",
+        "label": "World cuisines"
+      },
+      {
+        "metric": "5,000+",
+        "label": "Active restaurants"
+      },
+      {
+        "metric": "80%",
+        "label": "Less time on menu development"
+      },
+      {
+        "metric": "55+",
+        "label": "Specialized tools"
+      }
     ],
     "comparison": {
       "title": "AI Recipes vs. Traditional Methods",
@@ -2096,11 +2176,31 @@
       "col_feature": "Aspect",
       "col_other": "Traditional Method",
       "items": [
-        { "feature": "Recipe creation", "other": "Hours of research and testing", "aichef": "Technical recipe generated in seconds" },
-        { "feature": "Cuisine variety", "other": "Limited to chef's knowledge", "aichef": "25 world cuisines with real technique" },
-        { "feature": "Seasonal menus", "other": "Manual process taking weeks", "aichef": "Full menu with seasonal ingredients" },
-        { "feature": "Portion scaling", "other": "Manual calculations with errors", "aichef": "Automatic and instant scaling" },
-        { "feature": "Tech sheets", "other": "Manual writing in Word/Excel", "aichef": "Professional tech sheet generated instantly" }
+        {
+          "feature": "Recipe creation",
+          "other": "Hours of research and testing",
+          "aichef": "Technical recipe generated in seconds"
+        },
+        {
+          "feature": "Cuisine variety",
+          "other": "Limited to chef's knowledge",
+          "aichef": "25 world cuisines with real technique"
+        },
+        {
+          "feature": "Seasonal menus",
+          "other": "Manual process taking weeks",
+          "aichef": "Full menu with seasonal ingredients"
+        },
+        {
+          "feature": "Portion scaling",
+          "other": "Manual calculations with errors",
+          "aichef": "Automatic and instant scaling"
+        },
+        {
+          "feature": "Tech sheets",
+          "other": "Manual writing in Word/Excel",
+          "aichef": "Professional tech sheet generated instantly"
+        }
       ]
     },
     "tools_section": {
@@ -2111,32 +2211,56 @@
       {
         "title": "Professional Recipe Generator",
         "description": "Create technically accurate recipes with professional culinary vocabulary, precise techniques and detailed presentation.",
-        "keywords": ["AI recipe generator", "professional chef recipes", "technical recipes"]
+        "keywords": [
+          "AI recipe generator",
+          "professional chef recipes",
+          "technical recipes"
+        ]
       },
       {
         "title": "25 World Cuisines",
         "description": "Access authentic recipes from 25 culinary traditions: French, Japanese, Peruvian, Italian, Mexican and much more.",
-        "keywords": ["world cuisines", "international recipes", "global gastronomy"]
+        "keywords": [
+          "world cuisines",
+          "international recipes",
+          "global gastronomy"
+        ]
       },
       {
         "title": "AI Seasonal Menus",
         "description": "Generate complete menus based on seasonal ingredients, your gastronomic concept and customer profile.",
-        "keywords": ["seasonal menu", "tasting menu", "AI restaurant menu"]
+        "keywords": [
+          "seasonal menu",
+          "tasting menu",
+          "AI restaurant menu"
+        ]
       },
       {
         "title": "Automatic Portion Scaling",
         "description": "Adapt any recipe to the number of diners you need. AI adjusts weights, cooking times and techniques.",
-        "keywords": ["recipe scaling", "weights per portion", "bulk production"]
+        "keywords": [
+          "recipe scaling",
+          "weights per portion",
+          "bulk production"
+        ]
       },
       {
         "title": "Professional Tech Sheets",
         "description": "Generate complete tech sheets with allergens, nutritional values, techniques and plating for your team.",
-        "keywords": ["recipe tech sheet", "professional recipe book", "kitchen standardization"]
+        "keywords": [
+          "recipe tech sheet",
+          "professional recipe book",
+          "kitchen standardization"
+        ]
       },
       {
         "title": "Dietary Restriction Adaptation",
         "description": "Adapt recipes for vegans, coeliacs, diabetics or any dietary restriction without losing the essence of the dish.",
-        "keywords": ["vegan chef recipes", "gluten-free recipes", "dietary adaptation"]
+        "keywords": [
+          "vegan chef recipes",
+          "gluten-free recipes",
+          "dietary adaptation"
+        ]
       }
     ],
     "profiles_section": {
@@ -2144,10 +2268,22 @@
       "subtitle": "Chefs and restaurateurs who have integrated AI into their creative kitchen process."
     },
     "profiles": [
-      { "title": "Creative Chef", "description": "Uses AI as a source of inspiration for new dishes and world cuisine fusions." },
-      { "title": "Section Chef", "description": "Generates standardized tech sheets so the team can reproduce dishes with precision." },
-      { "title": "Hotel or Catering Chef", "description": "Creates full menus for large events with automatic portion scaling." },
-      { "title": "Restaurant Owner", "description": "Refreshes the seasonal menu without long manual creation processes." }
+      {
+        "title": "Creative Chef",
+        "description": "Uses AI as a source of inspiration for new dishes and world cuisine fusions."
+      },
+      {
+        "title": "Section Chef",
+        "description": "Generates standardized tech sheets so the team can reproduce dishes with precision."
+      },
+      {
+        "title": "Hotel or Catering Chef",
+        "description": "Creates full menus for large events with automatic portion scaling."
+      },
+      {
+        "title": "Restaurant Owner",
+        "description": "Refreshes the seasonal menu without long manual creation processes."
+      }
     ],
     "why_section": {
       "title": "AI that understands cooking, not just words",
@@ -2216,10 +2352,22 @@
       "no_card": "No credit card required · Instant access"
     },
     "results": [
-      { "metric": "2min", "label": "For a complete food cost" },
-      { "metric": "30%", "label": "Average cost reduction" },
-      { "metric": "5,000+", "label": "Active restaurants" },
-      { "metric": "55+", "label": "Specialized tools" }
+      {
+        "metric": "2min",
+        "label": "For a complete food cost"
+      },
+      {
+        "metric": "30%",
+        "label": "Average cost reduction"
+      },
+      {
+        "metric": "5,000+",
+        "label": "Active restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "Specialized tools"
+      }
     ],
     "comparison": {
       "title": "AI Food Cost vs. Excel and Manual Methods",
@@ -2227,11 +2375,31 @@
       "col_feature": "Aspect",
       "col_other": "Excel / Manual",
       "items": [
-        { "feature": "Time per costing", "other": "30-60 minutes per dish", "aichef": "2 minutes with AI" },
-        { "feature": "Price updates", "other": "Manual every time costs rise", "aichef": "Automatic recalculation instantly" },
-        { "feature": "Waste control", "other": "Ignored or imprecisely estimated", "aichef": "Waste calculated per ingredient type" },
-        { "feature": "Selling price", "other": "Gut feeling without objective basis", "aichef": "Optimal price with target margin" },
-        { "feature": "Profitability per dish", "other": "No systematic analysis", "aichef": "Real-time profitability dashboard" }
+        {
+          "feature": "Time per costing",
+          "other": "30-60 minutes per dish",
+          "aichef": "2 minutes with AI"
+        },
+        {
+          "feature": "Price updates",
+          "other": "Manual every time costs rise",
+          "aichef": "Automatic recalculation instantly"
+        },
+        {
+          "feature": "Waste control",
+          "other": "Ignored or imprecisely estimated",
+          "aichef": "Waste calculated per ingredient type"
+        },
+        {
+          "feature": "Selling price",
+          "other": "Gut feeling without objective basis",
+          "aichef": "Optimal price with target margin"
+        },
+        {
+          "feature": "Profitability per dish",
+          "other": "No systematic analysis",
+          "aichef": "Real-time profitability dashboard"
+        }
       ]
     },
     "tools_section": {
@@ -2242,32 +2410,56 @@
       {
         "title": "Automatic AI Food Costing",
         "description": "Enter ingredients, weights and supplier prices. AI calculates the exact food cost of each dish in seconds.",
-        "keywords": ["automatic food costing", "food cost per dish", "food cost calculator"]
+        "keywords": [
+          "automatic food costing",
+          "food cost per dish",
+          "food cost calculator"
+        ]
       },
       {
         "title": "Waste Control",
         "description": "Calculate real waste by ingredient type (cleaning, cooking, evaporation) for precise food cost.",
-        "keywords": ["kitchen waste", "ingredient yield", "cooking losses"]
+        "keywords": [
+          "kitchen waste",
+          "ingredient yield",
+          "cooking losses"
+        ]
       },
       {
         "title": "Optimal Selling Price",
         "description": "AI calculates the ideal selling price based on your target margin, market and restaurant positioning.",
-        "keywords": ["dish selling price", "restaurant margin", "pricing policy"]
+        "keywords": [
+          "dish selling price",
+          "restaurant margin",
+          "pricing policy"
+        ]
       },
       {
         "title": "Profitability Analysis",
         "description": "Identify which dishes give you the most margin and which are costing you money. Optimise your menu with real data.",
-        "keywords": ["profitability per dish", "menu engineering", "food cost analysis"]
+        "keywords": [
+          "profitability per dish",
+          "menu engineering",
+          "food cost analysis"
+        ]
       },
       {
         "title": "Price Updates",
         "description": "When an ingredient cost rises, AI automatically recalculates all affected food costings.",
-        "keywords": ["food cost update", "food inflation", "supplier price control"]
+        "keywords": [
+          "food cost update",
+          "food inflation",
+          "supplier price control"
+        ]
       },
       {
         "title": "Food Cost Dashboard",
         "description": "Visualise your restaurant's overall food cost, by category and by dish. Detect deviations instantly.",
-        "keywords": ["food cost dashboard", "kitchen cost control", "restaurant KPIs"]
+        "keywords": [
+          "food cost dashboard",
+          "kitchen cost control",
+          "restaurant KPIs"
+        ]
       }
     ],
     "profiles_section": {
@@ -2275,10 +2467,22 @@
       "subtitle": "Professionals who have stopped losing money from poorly calculated food cost."
     },
     "profiles": [
-      { "title": "Chef-Owner", "description": "Controls the food cost of their menu without depending on accountants or endless spreadsheets." },
-      { "title": "Operations Director", "description": "Monitors food cost across multiple venues from a single dashboard with real-time data." },
-      { "title": "Head Chef", "description": "Updates food costings when supplier prices change without redoing the whole process." },
-      { "title": "Controller or Finance", "description": "Has for the first time exact control of each dish cost and its impact on the P&L." }
+      {
+        "title": "Chef-Owner",
+        "description": "Controls the food cost of their menu without depending on accountants or endless spreadsheets."
+      },
+      {
+        "title": "Operations Director",
+        "description": "Monitors food cost across multiple venues from a single dashboard with real-time data."
+      },
+      {
+        "title": "Head Chef",
+        "description": "Updates food costings when supplier prices change without redoing the whole process."
+      },
+      {
+        "title": "Controller or Finance",
+        "description": "Has for the first time exact control of each dish cost and its impact on the P&L."
+      }
     ],
     "why_section": {
       "title": "Uncontrolled food cost is the margin you're giving away",
@@ -2327,6 +2531,345 @@
       "title": "Start controlling your food cost with AI today",
       "subtitle": "Over 5,000 restaurants already use AI Chef Pro to calculate food cost and protect their margin.",
       "primary": "Calculate my food cost free",
+      "secondary": "See all plans"
+    }
+  },
+  "toolHub": {
+    "seo": {
+      "title": "Free Tools for Restaurants | AI Chef Pro",
+      "description": "8 free tools for restaurants: food cost calculator, profit simulator, allergen checker and more. No registration required.",
+      "keywords": "free restaurant tools, food cost calculator free, restaurant profit simulator"
+    },
+    "breadcrumb": "Free Tools",
+    "hero": {
+      "badge": "100% Free — No sign-up",
+      "h1": "8 Free Tools for Your Restaurant",
+      "subtitle": "Calculate your food cost, check allergens, simulate your profitability and more. No sign-up, no payment, no limits.",
+      "tagline": "From the creators of AI Chef Pro — the AI suite for gastronomy"
+    },
+    "tools": [
+      {
+        "title": "Food Cost Calculator",
+        "description": "Calculate the exact cost of any dish and your food cost percentage in seconds.",
+        "badge": "Calculator",
+        "color": "green"
+      },
+      {
+        "title": "Allergen Checker",
+        "description": "Identify all 14 mandatory declaration allergens in any dish instantly.",
+        "badge": "Legal",
+        "color": "red"
+      },
+      {
+        "title": "Content Calendar AI",
+        "description": "Generate 30 days of social media ideas personalized for your restaurant with AI.",
+        "badge": "AI",
+        "color": "purple"
+      },
+      {
+        "title": "Profit Simulator",
+        "description": "Calculate if your restaurant is profitable and find your monthly break-even point.",
+        "badge": "Calculator",
+        "color": "yellow"
+      },
+      {
+        "title": "Menu Copy Generator",
+        "description": "Create irresistible dish descriptions for your menu with AI in seconds.",
+        "badge": "AI",
+        "color": "blue"
+      },
+      {
+        "title": "Digitalization Test",
+        "description": "Find out your restaurant's digitalization level and what to improve first.",
+        "badge": "Quiz",
+        "color": "teal"
+      },
+      {
+        "title": "Kitchen Brigade Calculator",
+        "description": "Calculate how many staff you need based on your service volume.",
+        "badge": "Calculator",
+        "color": "orange"
+      },
+      {
+        "title": "Tasting Menu Generator",
+        "description": "Create a complete tasting menu with pairings and mise en scène using AI.",
+        "badge": "AI",
+        "color": "indigo"
+      }
+    ],
+    "why": {
+      "title": "Why are they free?",
+      "body": "We believe any restaurant, regardless of size, deserves access to professional tools. These calculators are our way of adding value to the industry.",
+      "items": [
+        "No registration or credit card needed",
+        "Instant results in your browser",
+        "Based on real industry standards",
+        "Used by more than 5,000 professionals"
+      ]
+    },
+    "cta": {
+      "title": "Need more power?",
+      "subtitle": "These tools are just a sample of the 55+ AI features available in AI Chef Pro Premium.",
+      "primary": "See Premium Plan",
+      "secondary": "Start for free"
+    }
+  },
+  "toolFoodCost": {
+    "seo": {
+      "title": "Free Restaurant Food Cost Calculator | AI Chef Pro",
+      "description": "Calculate your dish food cost free: ingredients, weights and selling price. Instant result with profitability traffic light. No registration.",
+      "keywords": "food cost calculator restaurant, calculate food cost free, food cost percentage, dish cost restaurant"
+    },
+    "breadcrumb": "Food Cost Calculator",
+    "hero": {
+      "badge": "Free — No registration",
+      "h1": "Food Cost Calculator for Restaurants",
+      "subtitle": "Calculate the food cost percentage of any dish in seconds. Add ingredients, quantities and selling price.",
+      "cta_tool": "Go to calculator ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Food Cost Calculator",
+      "dish_name_label": "Dish name",
+      "dish_name_placeholder": "E.g.: Mushroom risotto",
+      "portions_label": "Number of portions",
+      "sale_price_label": "Selling price per portion (€)",
+      "ingredients_title": "Ingredients",
+      "ingredient_name": "Ingredient",
+      "ingredient_qty": "Quantity (g)",
+      "ingredient_cost": "Price/kg (€)",
+      "add_ingredient": "+ Add ingredient",
+      "calculate": "Calculate Food Cost",
+      "result_title": "Result",
+      "total_cost_label": "Total ingredient cost",
+      "cost_per_portion_label": "Cost per portion",
+      "food_cost_pct_label": "Food cost %",
+      "gross_margin_label": "Gross margin (€/portion)",
+      "status_ok": "✅ Excellent food cost — Your dish is very profitable",
+      "status_warn": "⚠️ Tight food cost — Review prices or ingredients",
+      "status_bad": "🔴 High food cost — Consider raising price or reducing costs",
+      "tip": "💡 Industry benchmark: food cost between 25% and 32% is healthy for restaurants",
+      "cta_after": "Want to calculate all your dishes automatically?",
+      "reset": "New calculation"
+    },
+    "how_it_works": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Add ingredients",
+          "description": "Enter each ingredient with its weight per portion and purchase price per kilo."
+        },
+        {
+          "step": "2",
+          "title": "Set portions and selling price",
+          "description": "How many portions the recipe yields and at what price you sell to customers."
+        },
+        {
+          "step": "3",
+          "title": "Get your food cost",
+          "description": "You'll see the exact cost per portion, food cost percentage and profitability status."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why calculate your food cost",
+      "items": [
+        "Identify dishes losing money without knowing it",
+        "Adjust selling prices with real data",
+        "Increase your margin without aggressive price hikes",
+        "Total control in seconds, no Excel or formulas"
+      ]
+    },
+    "testimonial": {
+      "quote": "With this calculator I saw my signature dish cost more than I thought. I raised the price by €1.50 and no one noticed. I made €400 extra that month.",
+      "name": "Carlos Romero",
+      "role": "Owner, Bar Restaurant La Plaza, Zaragoza"
+    },
+    "pricing": {
+      "title": "More power with AI Chef Pro",
+      "subtitle": "The free calculator is just a sample. With AI Chef Pro you calculate your entire menu with waste control and automatic price updates.",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "€0/month",
+          "uses": "5 uses/month",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/month",
+          "uses": "150 uses/month",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/month",
+          "uses": "350 uses/month",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/month",
+          "uses": "Unlimited",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about food cost"
+    },
+    "faq": [
+      {
+        "question": "What is food cost?",
+        "answer": "Food cost is the percentage of the selling price that represents ingredient costs. Formula: Food cost % = (Ingredient cost / Selling price) × 100. A healthy food cost in restaurants is between 25% and 32%."
+      },
+      {
+        "question": "Why is it important to control it?",
+        "answer": "Uncontrolled food cost can mean you're losing money on dishes you think are profitable. Controlling it allows you to make pricing decisions and maximize each dish's margin."
+      },
+      {
+        "question": "Does this calculator include waste?",
+        "answer": "This free version works with the net weights you enter. To automatically include cleaning, cooking and evaporation waste, use the recipe costing tool in AI Chef Pro Premium."
+      },
+      {
+        "question": "How to improve a high food cost?",
+        "answer": "You can raise the selling price, switch to cheaper suppliers, reduce the weight of expensive ingredients, or substitute high-cost components with similar alternatives."
+      }
+    ],
+    "cta_section": {
+      "title": "Automate all your recipe costing with AI",
+      "subtitle": "With AI Chef Pro you calculate food cost for your entire menu in minutes, with waste control and automatic updates when prices change.",
+      "primary": "Try AI Chef Pro for free",
+      "secondary": "See all plans"
+    }
+  },
+  "toolRentabilidad": {
+    "seo": {
+      "title": "Free Restaurant Profit Simulator | AI Chef Pro",
+      "description": "Calculate if your restaurant is profitable: enter covers, average ticket and costs. Net profit and break-even point instantly. Free, no registration.",
+      "keywords": "restaurant profit simulator, calculate restaurant profit, restaurant break-even, hospitality profitability free"
+    },
+    "breadcrumb": "Profit Simulator",
+    "hero": {
+      "badge": "Free — No registration",
+      "h1": "Restaurant Profit Simulator",
+      "subtitle": "Calculate if your restaurant generates real profits. Enter your data and get your monthly profit and break-even point.",
+      "cta_tool": "Go to simulator ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Profit Simulator",
+      "covers_label": "Monthly covers",
+      "ticket_label": "Average spend per cover (€)",
+      "fixed_costs_label": "Monthly fixed costs (€)",
+      "fixed_costs_hint": "Rent, fixed staff, utilities, insurance, licenses...",
+      "variable_pct_label": "Variable costs (% of revenue)",
+      "variable_pct_hint": "Food costs, variable staff, packaging, platform commissions...",
+      "calculate": "Calculate Profitability",
+      "result_title": "Monthly result",
+      "monthly_revenue_label": "Monthly revenue",
+      "variable_costs_label": "Variable costs",
+      "total_costs_label": "Total costs",
+      "net_profit_label": "Net profit",
+      "profit_margin_label": "Profit margin",
+      "breakeven_label": "Break-even point",
+      "breakeven_suffix": "covers/month to cover all expenses",
+      "status_profitable": "✅ Profitable business — You are generating profits",
+      "status_breakeven": "⚠️ On the edge — Optimize costs or increase revenue",
+      "status_loss": "🔴 Losses — You need to reduce costs or increase sales",
+      "cta_after": "Want a complete financial analysis of your restaurant?",
+      "reset": "New simulation"
+    },
+    "how_it_works": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Enter your real data",
+          "description": "Number of monthly customers, average spend and your fixed and variable cost structure."
+        },
+        {
+          "step": "2",
+          "title": "Instant calculation",
+          "description": "Revenue, total costs, net profit and margin calculated automatically."
+        },
+        {
+          "step": "3",
+          "title": "Make data-driven decisions",
+          "description": "Know your break-even point and simulate scenarios: more covers, higher ticket, cost reduction."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why simulate profitability",
+      "items": [
+        "Know your real break-even point in seconds",
+        "Simulate scenarios: what if rent goes up?",
+        "Identify if your fixed costs are sustainable",
+        "Make pricing and capacity decisions with data"
+      ]
+    },
+    "testimonial": {
+      "quote": "I found out I needed 285 covers per month to break even. I was at 240. We optimized opening hours and reached break-even in 6 weeks.",
+      "name": "Ana Martínez",
+      "role": "Owner, Restaurante Sabores, Valencia"
+    },
+    "pricing": {
+      "title": "Complete financial analysis with AI Chef Pro",
+      "subtitle": "The basic simulator is free. With AI Chef Pro you get per-dish analysis, annual projections and cost deviation alerts.",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "€0/month",
+          "uses": "5 uses/month",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/month",
+          "uses": "150 uses/month",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/month",
+          "uses": "350 uses/month",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/month",
+          "uses": "Unlimited",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about restaurant profitability"
+    },
+    "faq": [
+      {
+        "question": "What is the break-even point of a restaurant?",
+        "answer": "The break-even point is the minimum number of customers or minimum revenue needed to cover all costs without losses or profits. Beyond that point, every additional cover generates pure profit."
+      },
+      {
+        "question": "What is a normal profit margin in hospitality?",
+        "answer": "Net margin in restaurants is usually between 3% and 9% for small restaurants, and can reach 15-20% in very well-managed venues."
+      },
+      {
+        "question": "What are variable costs in a restaurant?",
+        "answer": "The main variable costs in hospitality are: raw materials (food cost), variable staff, delivery packaging, and platform commissions."
+      },
+      {
+        "question": "What should I do if the simulator shows losses?",
+        "answer": "You have three levers: increase the average ticket, reduce fixed costs (renegotiate rent, optimize staffing) or increase customer numbers."
+      }
+    ],
+    "cta_section": {
+      "title": "Optimize your restaurant's profitability with AI",
+      "subtitle": "AI Chef Pro analyzes your food cost, per-dish margin and overall profitability so you can make the best financial decisions.",
+      "primary": "Try AI Chef Pro for free",
       "secondary": "See all plans"
     }
   }

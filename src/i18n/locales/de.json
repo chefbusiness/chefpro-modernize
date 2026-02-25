@@ -2241,10 +2241,22 @@
       "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
     },
     "results": [
-      { "metric": "3h", "label": "Tägliche Zeiteinsparung" },
-      { "metric": "5.000+", "label": "Aktive Restaurants" },
-      { "metric": "55+", "label": "KI-Küchentools" },
-      { "metric": "30%", "label": "Durchschnittliche Kostensenkung" }
+      {
+        "metric": "3h",
+        "label": "Tägliche Zeiteinsparung"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Aktive Restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "KI-Küchentools"
+      },
+      {
+        "metric": "30%",
+        "label": "Durchschnittliche Kostensenkung"
+      }
     ],
     "comparison": {
       "title": "AI Chef Pro vs. Traditionelle Verwaltungssoftware",
@@ -2252,11 +2264,31 @@
       "col_feature": "Funktion",
       "col_other": "Traditionelle Software",
       "items": [
-        { "feature": "Automatische Food-Cost-Kalkulation", "other": "Manuell in Excel-Tabellen", "aichef": "KI berechnet Food Cost sofort" },
-        { "feature": "Rezeptverwaltung", "other": "Word-Dateien oder Papier", "aichef": "55+ spezialisierte KI-Tools" },
-        { "feature": "Allergenkontrolle", "other": "Manuelle Aktualisierungen", "aichef": "EU-Verordnung 1169/2011 integriert" },
-        { "feature": "Menü-Engineering", "other": "Keine Rentabilitätsanalyse", "aichef": "KI optimiert Margen pro Gericht" },
-        { "feature": "Preisaktualisierung", "other": "Langsamer und mühsamer Prozess", "aichef": "Automatische Neuberechnung in Sekunden" }
+        {
+          "feature": "Automatische Food-Cost-Kalkulation",
+          "other": "Manuell in Excel-Tabellen",
+          "aichef": "KI berechnet Food Cost sofort"
+        },
+        {
+          "feature": "Rezeptverwaltung",
+          "other": "Word-Dateien oder Papier",
+          "aichef": "55+ spezialisierte KI-Tools"
+        },
+        {
+          "feature": "Allergenkontrolle",
+          "other": "Manuelle Aktualisierungen",
+          "aichef": "EU-Verordnung 1169/2011 integriert"
+        },
+        {
+          "feature": "Menü-Engineering",
+          "other": "Keine Rentabilitätsanalyse",
+          "aichef": "KI optimiert Margen pro Gericht"
+        },
+        {
+          "feature": "Preisaktualisierung",
+          "other": "Langsamer und mühsamer Prozess",
+          "aichef": "Automatische Neuberechnung in Sekunden"
+        }
       ]
     },
     "tools_section": {
@@ -2267,32 +2299,56 @@
       {
         "title": "KI Food Cost",
         "description": "Berechnen Sie die genauen Kosten jedes Gerichts in Sekunden. Geben Sie Zutaten, Gewichte und Lieferantenpreise ein – die KI erledigt den Rest.",
-        "keywords": ["Restaurant Food Cost", "Food Cost KI", "Kosten pro Gericht"]
+        "keywords": [
+          "Restaurant Food Cost",
+          "Food Cost KI",
+          "Kosten pro Gericht"
+        ]
       },
       {
         "title": "Inventarkontrolle",
         "description": "Verwalten Sie Ihren Bestand in Echtzeit. Automatische Warnungen, wenn Zutaten das Minimum erreichen. Reduzieren Sie Lebensmittelverschwendung.",
-        "keywords": ["Restaurantinventar", "Küchenlagerung", "Abfallkontrolle"]
+        "keywords": [
+          "Restaurantinventar",
+          "Küchenlagerung",
+          "Abfallkontrolle"
+        ]
       },
       {
         "title": "Rezeptverwaltung",
         "description": "Digitalisieren und standardisieren Sie alle Ihre Rezepte mit professionellen Technischen Datenblättern und automatischer Portionsskalierung.",
-        "keywords": ["Rezept-Datenblatt", "Rezeptstandardisierung", "digitales Rezeptbuch"]
+        "keywords": [
+          "Rezept-Datenblatt",
+          "Rezeptstandardisierung",
+          "digitales Rezeptbuch"
+        ]
       },
       {
         "title": "Allergene & Compliance",
         "description": "Kontrolle der 14 Allergene gemäß EU-Verordnung 1169/2011. Vermeiden Sie Bußgelder und schützen Sie Ihre Gäste.",
-        "keywords": ["Restaurant-Allergene", "EU-Allergenverordnung", "Lebensmittelsicherheit"]
+        "keywords": [
+          "Restaurant-Allergene",
+          "EU-Allergenverordnung",
+          "Lebensmittelsicherheit"
+        ]
       },
       {
         "title": "Menü-Engineering",
         "description": "Analysieren Sie die Rentabilität jedes Gerichts und optimieren Sie Ihre Speisekarte für maximalen Gewinn pro Gast.",
-        "keywords": ["Menü-Engineering", "Gerichtrentabilität", "Speisekartenoptimierung"]
+        "keywords": [
+          "Menü-Engineering",
+          "Gerichtrentabilität",
+          "Speisekartenoptimierung"
+        ]
       },
       {
         "title": "Managementberichte",
         "description": "Visualisieren Sie die Küchenleistung mit automatischen Berichten zu Food Cost, Margen und Verbrauchstrends.",
-        "keywords": ["Food-Cost-Bericht", "Kostenkontrolle", "Restaurantmarge"]
+        "keywords": [
+          "Food-Cost-Bericht",
+          "Kostenkontrolle",
+          "Restaurantmarge"
+        ]
       }
     ],
     "profiles_section": {
@@ -2300,10 +2356,22 @@
       "subtitle": "Gastronomieprofis, die ihre Küche mit KI digitalisiert haben."
     },
     "profiles": [
-      { "title": "Koch und Inhaber", "description": "Kontrolliert Küchenkosten ohne externe Buchhalter oder Tabellenkalkulationen." },
-      { "title": "Küchenchef", "description": "Standardisiert Rezepte, verwaltet Lagerbestände und leitet sein Team von einer Plattform." },
-      { "title": "Betriebsleiter", "description": "Überwacht mehrere Standorte mit Echtzeitdaten aus jeder Küche." },
-      { "title": "Bar- oder Café-Inhaber", "description": "Unkompliziert: Küchenkosten und Karte in Minuten verwalten, nicht in Stunden." }
+      {
+        "title": "Koch und Inhaber",
+        "description": "Kontrolliert Küchenkosten ohne externe Buchhalter oder Tabellenkalkulationen."
+      },
+      {
+        "title": "Küchenchef",
+        "description": "Standardisiert Rezepte, verwaltet Lagerbestände und leitet sein Team von einer Plattform."
+      },
+      {
+        "title": "Betriebsleiter",
+        "description": "Überwacht mehrere Standorte mit Echtzeitdaten aus jeder Küche."
+      },
+      {
+        "title": "Bar- oder Café-Inhaber",
+        "description": "Unkompliziert: Küchenkosten und Karte in Minuten verwalten, nicht in Stunden."
+      }
     ],
     "why_section": {
       "title": "Das Küchenmanagement, das Köche brauchen – ermöglicht durch KI",
@@ -2372,10 +2440,22 @@
       "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
     },
     "results": [
-      { "metric": "25", "label": "Weltküchen" },
-      { "metric": "5.000+", "label": "Aktive Restaurants" },
-      { "metric": "80%", "label": "Weniger Zeit für Menüentwicklung" },
-      { "metric": "55+", "label": "Spezialisierte Tools" }
+      {
+        "metric": "25",
+        "label": "Weltküchen"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Aktive Restaurants"
+      },
+      {
+        "metric": "80%",
+        "label": "Weniger Zeit für Menüentwicklung"
+      },
+      {
+        "metric": "55+",
+        "label": "Spezialisierte Tools"
+      }
     ],
     "comparison": {
       "title": "KI-Rezepte vs. Traditionelle Methoden",
@@ -2383,11 +2463,31 @@
       "col_feature": "Aspekt",
       "col_other": "Traditionelle Methode",
       "items": [
-        { "feature": "Rezepterstellung", "other": "Stunden Recherche und Tests", "aichef": "Technisches Rezept in Sekunden generiert" },
-        { "feature": "Küchenvielfalt", "other": "Begrenzt auf Köche-Kenntnisse", "aichef": "25 Weltküchen mit echter Technik" },
-        { "feature": "Saisonmenüs", "other": "Wochenlanger manueller Prozess", "aichef": "Vollständiges Menü mit Saisonzutaten" },
-        { "feature": "Portionsskalierung", "other": "Manuelle Berechnungen mit Fehlern", "aichef": "Automatische und sofortige Skalierung" },
-        { "feature": "Technische Datenblätter", "other": "Manuelle Erstellung in Word/Excel", "aichef": "Professionelles Datenblatt sofort erstellt" }
+        {
+          "feature": "Rezepterstellung",
+          "other": "Stunden Recherche und Tests",
+          "aichef": "Technisches Rezept in Sekunden generiert"
+        },
+        {
+          "feature": "Küchenvielfalt",
+          "other": "Begrenzt auf Köche-Kenntnisse",
+          "aichef": "25 Weltküchen mit echter Technik"
+        },
+        {
+          "feature": "Saisonmenüs",
+          "other": "Wochenlanger manueller Prozess",
+          "aichef": "Vollständiges Menü mit Saisonzutaten"
+        },
+        {
+          "feature": "Portionsskalierung",
+          "other": "Manuelle Berechnungen mit Fehlern",
+          "aichef": "Automatische und sofortige Skalierung"
+        },
+        {
+          "feature": "Technische Datenblätter",
+          "other": "Manuelle Erstellung in Word/Excel",
+          "aichef": "Professionelles Datenblatt sofort erstellt"
+        }
       ]
     },
     "tools_section": {
@@ -2398,32 +2498,56 @@
       {
         "title": "Professioneller Rezeptgenerator",
         "description": "Erstellen Sie technisch korrekte Rezepte mit professionellem kulinarischem Vokabular, präzisen Techniken und detaillierter Präsentation.",
-        "keywords": ["KI-Rezeptgenerator", "professionelle Koch-Rezepte", "technische Rezepte"]
+        "keywords": [
+          "KI-Rezeptgenerator",
+          "professionelle Koch-Rezepte",
+          "technische Rezepte"
+        ]
       },
       {
         "title": "25 Weltküchen",
         "description": "Zugang zu authentischen Rezepten aus 25 kulinarischen Traditionen: Französisch, Japanisch, Peruanisch, Italienisch, Mexikanisch und viel mehr.",
-        "keywords": ["Weltküchen", "internationale Rezepte", "globale Gastronomie"]
+        "keywords": [
+          "Weltküchen",
+          "internationale Rezepte",
+          "globale Gastronomie"
+        ]
       },
       {
         "title": "KI-Saisonmenüs",
         "description": "Generieren Sie vollständige Menüs basierend auf Saisonzutaten, Ihrem gastronomischen Konzept und Kundenprofil.",
-        "keywords": ["Saisonmenü", "Degustationsmenü", "KI-Restaurantmenü"]
+        "keywords": [
+          "Saisonmenü",
+          "Degustationsmenü",
+          "KI-Restaurantmenü"
+        ]
       },
       {
         "title": "Automatische Portionsskalierung",
         "description": "Passen Sie jedes Rezept an die gewünschte Personenzahl an. KI passt Gewichte, Garzeiten und Techniken an.",
-        "keywords": ["Rezeptskalierung", "Gewichte pro Portion", "Massenproduktion"]
+        "keywords": [
+          "Rezeptskalierung",
+          "Gewichte pro Portion",
+          "Massenproduktion"
+        ]
       },
       {
         "title": "Professionelle Technische Datenblätter",
         "description": "Generieren Sie vollständige technische Datenblätter mit Allergenen, Nährwerten, Techniken und Anrichten für Ihr Team.",
-        "keywords": ["Technisches Rezeptblatt", "professionelles Rezeptbuch", "Küchenstandardisierung"]
+        "keywords": [
+          "Technisches Rezeptblatt",
+          "professionelles Rezeptbuch",
+          "Küchenstandardisierung"
+        ]
       },
       {
         "title": "Anpassung an Ernährungseinschränkungen",
         "description": "Passen Sie Rezepte für Veganer, Zöliakiepatienten, Diabetiker oder jede Ernährungseinschränkung an, ohne die Essenz des Gerichts zu verlieren.",
-        "keywords": ["vegane Koch-Rezepte", "glutenfreie Rezepte", "Ernährungsanpassung"]
+        "keywords": [
+          "vegane Koch-Rezepte",
+          "glutenfreie Rezepte",
+          "Ernährungsanpassung"
+        ]
       }
     ],
     "profiles_section": {
@@ -2431,10 +2555,22 @@
       "subtitle": "Köche und Gastronomen, die KI in ihren kreativen Küchenprozess integriert haben."
     },
     "profiles": [
-      { "title": "Kreativer Koch", "description": "Nutzt KI als Inspirationsquelle für neue Gerichte und Weltküchen-Fusionen." },
-      { "title": "Partieköch", "description": "Generiert standardisierte technische Datenblätter, damit das Team Gerichte präzise reproduzieren kann." },
-      { "title": "Hotel- oder Cateringkoch", "description": "Erstellt vollständige Menüs für Großveranstaltungen mit automatischer Portionsskalierung." },
-      { "title": "Restaurantinhaber", "description": "Erneuert die Saisonkarte ohne lange manuelle Erstellungsprozesse." }
+      {
+        "title": "Kreativer Koch",
+        "description": "Nutzt KI als Inspirationsquelle für neue Gerichte und Weltküchen-Fusionen."
+      },
+      {
+        "title": "Partieköch",
+        "description": "Generiert standardisierte technische Datenblätter, damit das Team Gerichte präzise reproduzieren kann."
+      },
+      {
+        "title": "Hotel- oder Cateringkoch",
+        "description": "Erstellt vollständige Menüs für Großveranstaltungen mit automatischer Portionsskalierung."
+      },
+      {
+        "title": "Restaurantinhaber",
+        "description": "Erneuert die Saisonkarte ohne lange manuelle Erstellungsprozesse."
+      }
     ],
     "why_section": {
       "title": "KI, die das Kochen versteht, nicht nur Wörter",
@@ -2503,10 +2639,22 @@
       "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
     },
     "results": [
-      { "metric": "2min", "label": "Für eine vollständige Kalkulation" },
-      { "metric": "30%", "label": "Durchschnittliche Kostenreduktion" },
-      { "metric": "5.000+", "label": "Aktive Restaurants" },
-      { "metric": "55+", "label": "Spezialisierte Tools" }
+      {
+        "metric": "2min",
+        "label": "Für eine vollständige Kalkulation"
+      },
+      {
+        "metric": "30%",
+        "label": "Durchschnittliche Kostenreduktion"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Aktive Restaurants"
+      },
+      {
+        "metric": "55+",
+        "label": "Spezialisierte Tools"
+      }
     ],
     "comparison": {
       "title": "KI Food Cost vs. Excel und manuelle Methoden",
@@ -2514,11 +2662,31 @@
       "col_feature": "Aspekt",
       "col_other": "Excel / Manuell",
       "items": [
-        { "feature": "Zeit pro Kalkulation", "other": "30-60 Minuten pro Gericht", "aichef": "2 Minuten mit KI" },
-        { "feature": "Preisaktualisierungen", "other": "Manuell bei jeder Kostensteigerung", "aichef": "Automatische Neuberechnung sofort" },
-        { "feature": "Schwundkontrolle", "other": "Ignoriert oder ungenau geschätzt", "aichef": "Schwund nach Zutatenart berechnet" },
-        { "feature": "Verkaufspreis", "other": "Bauchgefühl ohne Grundlage", "aichef": "Optimaler Preis mit Zielmarge" },
-        { "feature": "Rentabilität pro Gericht", "other": "Keine systematische Analyse", "aichef": "Echtzeit-Rentabilitäts-Dashboard" }
+        {
+          "feature": "Zeit pro Kalkulation",
+          "other": "30-60 Minuten pro Gericht",
+          "aichef": "2 Minuten mit KI"
+        },
+        {
+          "feature": "Preisaktualisierungen",
+          "other": "Manuell bei jeder Kostensteigerung",
+          "aichef": "Automatische Neuberechnung sofort"
+        },
+        {
+          "feature": "Schwundkontrolle",
+          "other": "Ignoriert oder ungenau geschätzt",
+          "aichef": "Schwund nach Zutatenart berechnet"
+        },
+        {
+          "feature": "Verkaufspreis",
+          "other": "Bauchgefühl ohne Grundlage",
+          "aichef": "Optimaler Preis mit Zielmarge"
+        },
+        {
+          "feature": "Rentabilität pro Gericht",
+          "other": "Keine systematische Analyse",
+          "aichef": "Echtzeit-Rentabilitäts-Dashboard"
+        }
       ]
     },
     "tools_section": {
@@ -2529,32 +2697,56 @@
       {
         "title": "Automatische KI Food Cost Kalkulation",
         "description": "Geben Sie Zutaten, Gewichte und Lieferantenpreise ein. KI berechnet die genauen Kosten jedes Gerichts in Sekunden.",
-        "keywords": ["automatische Kostenkalkulation", "Food Cost pro Gericht", "Food Cost Rechner"]
+        "keywords": [
+          "automatische Kostenkalkulation",
+          "Food Cost pro Gericht",
+          "Food Cost Rechner"
+        ]
       },
       {
         "title": "Schwundkontrolle",
         "description": "Berechnen Sie den tatsächlichen Schwund nach Zutatenart (Reinigung, Garen, Verdunstung) für präzise Kosten.",
-        "keywords": ["Küchenschwund", "Zutatenrendite", "Garverluste"]
+        "keywords": [
+          "Küchenschwund",
+          "Zutatenrendite",
+          "Garverluste"
+        ]
       },
       {
         "title": "Optimaler Verkaufspreis",
         "description": "KI berechnet den idealen Verkaufspreis basierend auf Ihrer Zielmarge, dem Markt und der Positionierung Ihres Restaurants.",
-        "keywords": ["Gerichtverkaufspreis", "Restaurantmarge", "Preispolitik"]
+        "keywords": [
+          "Gerichtverkaufspreis",
+          "Restaurantmarge",
+          "Preispolitik"
+        ]
       },
       {
         "title": "Rentabilitätsanalyse",
         "description": "Identifizieren Sie, welche Gerichte die höchste Marge bringen und welche Sie Geld kosten. Optimieren Sie Ihre Speisekarte mit echten Daten.",
-        "keywords": ["Rentabilität pro Gericht", "Menü-Engineering", "Food Cost Analyse"]
+        "keywords": [
+          "Rentabilität pro Gericht",
+          "Menü-Engineering",
+          "Food Cost Analyse"
+        ]
       },
       {
         "title": "Preisaktualisierungen",
         "description": "Wenn die Kosten einer Zutat steigen, berechnet KI automatisch alle betroffenen Kalkulationen neu.",
-        "keywords": ["Food Cost Update", "Lebensmittelinflation", "Lieferantenpreiskontrolle"]
+        "keywords": [
+          "Food Cost Update",
+          "Lebensmittelinflation",
+          "Lieferantenpreiskontrolle"
+        ]
       },
       {
         "title": "Food Cost Dashboard",
         "description": "Visualisieren Sie den globalen Food Cost Ihres Restaurants, nach Kategorie und Gericht. Erkennen Sie Abweichungen sofort.",
-        "keywords": ["Food Cost Dashboard", "Küchenkostenkontrolle", "Restaurant KPIs"]
+        "keywords": [
+          "Food Cost Dashboard",
+          "Küchenkostenkontrolle",
+          "Restaurant KPIs"
+        ]
       }
     ],
     "profiles_section": {
@@ -2562,10 +2754,22 @@
       "subtitle": "Profis, die aufgehört haben, durch falsch berechneten Food Cost Geld zu verlieren."
     },
     "profiles": [
-      { "title": "Koch und Inhaber", "description": "Kontrolliert den Food Cost seiner Karte ohne Abhängigkeit von Buchhaltern oder endlosen Tabellen." },
-      { "title": "Betriebsleiter", "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard mit Echtzeitdaten." },
-      { "title": "Küchenchef", "description": "Aktualisiert Kalkulationen wenn Lieferantenpreise steigen, ohne den gesamten Prozess zu wiederholen." },
-      { "title": "Controller oder Finanz", "description": "Hat erstmals genaue Kontrolle über die Kosten jedes Gerichts und deren Auswirkung auf das Ergebnis." }
+      {
+        "title": "Koch und Inhaber",
+        "description": "Kontrolliert den Food Cost seiner Karte ohne Abhängigkeit von Buchhaltern oder endlosen Tabellen."
+      },
+      {
+        "title": "Betriebsleiter",
+        "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard mit Echtzeitdaten."
+      },
+      {
+        "title": "Küchenchef",
+        "description": "Aktualisiert Kalkulationen wenn Lieferantenpreise steigen, ohne den gesamten Prozess zu wiederholen."
+      },
+      {
+        "title": "Controller oder Finanz",
+        "description": "Hat erstmals genaue Kontrolle über die Kosten jedes Gerichts und deren Auswirkung auf das Ergebnis."
+      }
     ],
     "why_section": {
       "title": "Unkontrollierter Food Cost ist die Marge, die Sie verschenken",
@@ -2614,6 +2818,345 @@
       "title": "Beginnen Sie noch heute mit KI Food Cost Kontrolle",
       "subtitle": "Über 5.000 Restaurants nutzen AI Chef Pro bereits, um Food Cost zu berechnen und ihre Marge zu schützen.",
       "primary": "Meinen Food Cost kostenlos berechnen",
+      "secondary": "Alle Pläne ansehen"
+    }
+  },
+  "toolHub": {
+    "seo": {
+      "title": "Kostenlose Tools für Restaurants | AI Chef Pro",
+      "description": "8 kostenlose Tools für Restaurants: Food Cost Rechner, Rentabilitätssimulator, Allergen-Checker und mehr. Ohne Anmeldung.",
+      "keywords": "kostenlose Restaurant Tools, Food Cost Rechner kostenlos, Rentabilitätssimulator Restaurant"
+    },
+    "breadcrumb": "Kostenlose Tools",
+    "hero": {
+      "badge": "100% Kostenlos — Keine Anmeldung",
+      "h1": "8 Kostenlose Tools für Ihr Restaurant",
+      "subtitle": "Berechnen Sie Ihren Food Cost, prüfen Sie Allergene, simulieren Sie Ihre Rentabilität und mehr. Ohne Anmeldung, kostenlos, ohne Limits.",
+      "tagline": "Von den Machern von AI Chef Pro — die KI-Suite für die Gastronomie"
+    },
+    "tools": [
+      {
+        "title": "Food Cost Rechner",
+        "description": "Berechnen Sie die genauen Kosten jedes Gerichts und Ihren Food Cost-Prozentsatz in Sekunden.",
+        "badge": "Rechner",
+        "color": "green"
+      },
+      {
+        "title": "Allergen-Checker",
+        "description": "Identifizieren Sie alle 14 kennzeichnungspflichtigen Allergene in jedem Gericht sofort.",
+        "badge": "Legal",
+        "color": "red"
+      },
+      {
+        "title": "Content-Kalender KI",
+        "description": "Generieren Sie 30 Tage personalisierte Social-Media-Ideen für Ihr Restaurant mit KI.",
+        "badge": "KI",
+        "color": "purple"
+      },
+      {
+        "title": "Rentabilitätssimulator",
+        "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist und wo Ihr monatlicher Break-Even liegt.",
+        "badge": "Rechner",
+        "color": "yellow"
+      },
+      {
+        "title": "Speisekarten-Textgenerator",
+        "description": "Erstellen Sie mit KI unwiderstehliche Beschreibungen für Ihre Speisekarte.",
+        "badge": "KI",
+        "color": "blue"
+      },
+      {
+        "title": "Digitalisierungs-Test",
+        "description": "Entdecken Sie den Digitalisierungsgrad Ihres Restaurants und was zuerst verbessert werden sollte.",
+        "badge": "Quiz",
+        "color": "teal"
+      },
+      {
+        "title": "Kochbrigaden-Rechner",
+        "description": "Berechnen Sie, wie viele Mitarbeiter Sie basierend auf Ihrem Servicevolumen benötigen.",
+        "badge": "Rechner",
+        "color": "orange"
+      },
+      {
+        "title": "Degustationsmenü-Generator",
+        "description": "Erstellen Sie mit KI ein vollständiges Degustationsmenü mit Weinbegleitungen.",
+        "badge": "KI",
+        "color": "indigo"
+      }
+    ],
+    "why": {
+      "title": "Warum sind sie kostenlos?",
+      "body": "Wir glauben, dass jedes Restaurant, unabhängig von seiner Größe, Zugang zu professionellen Tools verdient.",
+      "items": [
+        "Keine Anmeldung oder Kreditkarte erforderlich",
+        "Sofortige Ergebnisse in Ihrem Browser",
+        "Basierend auf echten Branchenstandards",
+        "Von mehr als 5.000 Fachleuten genutzt"
+      ]
+    },
+    "cta": {
+      "title": "Benötigen Sie mehr Leistung?",
+      "subtitle": "Diese Tools sind nur eine Probe der 55+ KI-Funktionen in AI Chef Pro Premium.",
+      "primary": "Premium-Plan ansehen",
+      "secondary": "Kostenlos starten"
+    }
+  },
+  "toolFoodCost": {
+    "seo": {
+      "title": "Kostenloser Restaurant Food Cost Rechner | AI Chef Pro",
+      "description": "Berechnen Sie den Food Cost Ihrer Gerichte kostenlos: Zutaten, Mengen und Verkaufspreis. Sofortiges Ergebnis mit Rentabilitätsampel. Ohne Anmeldung.",
+      "keywords": "Food Cost Rechner Restaurant, Food Cost kostenlos berechnen, Food Cost Prozentsatz, Gerichtkosten Restaurant"
+    },
+    "breadcrumb": "Food Cost Rechner",
+    "hero": {
+      "badge": "Kostenlos — Keine Anmeldung",
+      "h1": "Food Cost Rechner für Restaurants",
+      "subtitle": "Berechnen Sie den Food Cost-Prozentsatz jedes Gerichts in Sekunden. Fügen Sie Zutaten, Mengen und Verkaufspreis hinzu.",
+      "cta_tool": "Zum Rechner ↓",
+      "cta_premium": "Premium-Plan →"
+    },
+    "tool": {
+      "title": "Food Cost Rechner",
+      "dish_name_label": "Gerichtname",
+      "dish_name_placeholder": "Z.B.: Pilzrisotto",
+      "portions_label": "Anzahl der Portionen",
+      "sale_price_label": "Verkaufspreis pro Portion (€)",
+      "ingredients_title": "Zutaten",
+      "ingredient_name": "Zutat",
+      "ingredient_qty": "Menge (g)",
+      "ingredient_cost": "Preis/kg (€)",
+      "add_ingredient": "+ Zutat hinzufügen",
+      "calculate": "Food Cost berechnen",
+      "result_title": "Ergebnis",
+      "total_cost_label": "Gesamtzutatenkosten",
+      "cost_per_portion_label": "Kosten pro Portion",
+      "food_cost_pct_label": "Food Cost %",
+      "gross_margin_label": "Rohertrag (€/Portion)",
+      "status_ok": "✅ Ausgezeichneter Food Cost — Ihr Gericht ist sehr profitabel",
+      "status_warn": "⚠️ Knapper Food Cost — Überprüfen Sie Preise oder Zutaten",
+      "status_bad": "🔴 Hoher Food Cost — Erwägen Sie Preiserhöhung oder Kostensenkung",
+      "tip": "💡 Branchenreferenz: Food Cost zwischen 25% und 32% ist gesund für Restaurants",
+      "cta_after": "Möchten Sie alle Ihre Gerichte automatisch berechnen?",
+      "reset": "Neue Berechnung"
+    },
+    "how_it_works": {
+      "title": "Wie es funktioniert",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Zutaten hinzufügen",
+          "description": "Geben Sie jede Zutat mit ihrer Menge pro Portion und dem Einkaufspreis pro Kilo ein."
+        },
+        {
+          "step": "2",
+          "title": "Portionen und Verkaufspreis angeben",
+          "description": "Wie viele Portionen das Rezept ergibt und zu welchem Preis Sie es verkaufen."
+        },
+        {
+          "step": "3",
+          "title": "Food Cost erhalten",
+          "description": "Sie sehen die genauen Kosten pro Portion, den Food Cost-Prozentsatz und den Rentabilitätsstatus."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Warum Ihren Food Cost berechnen",
+      "items": [
+        "Gerichte identifizieren, die Geld verlieren",
+        "Verkaufspreise mit echten Daten anpassen",
+        "Marge erhöhen ohne aggressive Preiserhöhungen",
+        "Totale Kontrolle in Sekunden, ohne Excel"
+      ]
+    },
+    "testimonial": {
+      "quote": "Mit diesem Rechner sah ich, dass mein Signatur-Gericht mehr kostete als gedacht. Ich erhöhte den Preis um 1,50€ und niemand bemerkte es. Ich verdiente 400€ extra in diesem Monat.",
+      "name": "Carlos Romero",
+      "role": "Inhaber, Bar Restaurant La Plaza, Saragossa"
+    },
+    "pricing": {
+      "title": "Mehr Leistung mit AI Chef Pro",
+      "subtitle": "Der kostenlose Rechner ist nur eine Probe. Mit AI Chef Pro berechnen Sie Ihre gesamte Speisekarte mit Abfallkontrolle.",
+      "plans": [
+        {
+          "name": "Kostenlos",
+          "price": "0€/Monat",
+          "uses": "5 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/Monat",
+          "uses": "150 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/Monat",
+          "uses": "350 Nutzungen/Monat",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/Monat",
+          "uses": "Unbegrenzt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Häufig gestellte Fragen zum Food Cost"
+    },
+    "faq": [
+      {
+        "question": "Was ist Food Cost?",
+        "answer": "Food Cost ist der Prozentsatz des Verkaufspreises, der die Zutatenkosten darstellt. Formel: Food Cost % = (Zutatenkosten / Verkaufspreis) × 100. Ein gesunder Food Cost liegt zwischen 25% und 32%."
+      },
+      {
+        "question": "Warum ist es wichtig, ihn zu kontrollieren?",
+        "answer": "Unkontrollierter Food Cost kann bedeuten, dass Sie bei Gerichten Geld verlieren, die Sie für profitabel halten. Die Kontrolle ermöglicht Preisentscheidungen und maximiert die Marge."
+      },
+      {
+        "question": "Beinhaltet dieser Rechner Abfälle?",
+        "answer": "Diese kostenlose Version arbeitet mit den Nettogewichten, die Sie eingeben. Für automatische Abfallberechnung nutzen Sie das Kalkulations-Tool von AI Chef Pro Premium."
+      },
+      {
+        "question": "Wie verbessert man einen hohen Food Cost?",
+        "answer": "Sie können den Verkaufspreis erhöhen, zu günstigeren Lieferanten wechseln, die Menge teurer Zutaten reduzieren oder Hochkostenkomponenten ersetzen."
+      }
+    ],
+    "cta_section": {
+      "title": "Automatisieren Sie Ihre gesamte Kalkulation mit KI",
+      "subtitle": "Mit AI Chef Pro berechnen Sie den Food Cost Ihrer gesamten Speisekarte in Minuten, mit Abfallkontrolle und automatischen Updates.",
+      "primary": "AI Chef Pro kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    }
+  },
+  "toolRentabilidad": {
+    "seo": {
+      "title": "Kostenloser Restaurant Rentabilitätssimulator | AI Chef Pro",
+      "description": "Berechnen Sie, ob Ihr Restaurant rentabel ist: Gäste, Durchschnittsbon und Kosten eingeben. Nettogewinn und Break-Even sofort. Kostenlos, ohne Anmeldung.",
+      "keywords": "Rentabilitätssimulator Restaurant, Restaurant Gewinn berechnen, Break-Even Restaurant, Gastronomie Rentabilität kostenlos"
+    },
+    "breadcrumb": "Rentabilitätssimulator",
+    "hero": {
+      "badge": "Kostenlos — Keine Anmeldung",
+      "h1": "Rentabilitätssimulator für Restaurants",
+      "subtitle": "Berechnen Sie, ob Ihr Restaurant echte Gewinne erzielt. Geben Sie Ihre Daten ein und erhalten Sie Ihren monatlichen Gewinn und Break-Even.",
+      "cta_tool": "Zum Simulator ↓",
+      "cta_premium": "Premium-Plan →"
+    },
+    "tool": {
+      "title": "Rentabilitätssimulator",
+      "covers_label": "Gäste pro Monat",
+      "ticket_label": "Durchschnittsbon pro Gast (€)",
+      "fixed_costs_label": "Monatliche Fixkosten (€)",
+      "fixed_costs_hint": "Miete, Festpersonal, Betriebskosten, Versicherungen, Lizenzen...",
+      "variable_pct_label": "Variable Kosten (% des Umsatzes)",
+      "variable_pct_hint": "Rohstoffe, variables Personal, Verpackung, Plattformprovisionen...",
+      "calculate": "Rentabilität berechnen",
+      "result_title": "Monatliches Ergebnis",
+      "monthly_revenue_label": "Monatlicher Umsatz",
+      "variable_costs_label": "Variable Kosten",
+      "total_costs_label": "Gesamtkosten",
+      "net_profit_label": "Nettogewinn",
+      "profit_margin_label": "Gewinnmarge",
+      "breakeven_label": "Break-Even-Punkt",
+      "breakeven_suffix": "Gäste/Monat, um alle Kosten zu decken",
+      "status_profitable": "✅ Rentables Geschäft — Sie erzielen Gewinne",
+      "status_breakeven": "⚠️ Am Limit — Kosten optimieren oder Umsatz steigern",
+      "status_loss": "🔴 Verluste — Sie müssen Kosten reduzieren oder Verkäufe steigern",
+      "cta_after": "Möchten Sie eine vollständige Finanzanalyse Ihres Restaurants?",
+      "reset": "Neue Simulation"
+    },
+    "how_it_works": {
+      "title": "Wie es funktioniert",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Echte Daten eingeben",
+          "description": "Anzahl monatlicher Gäste, Durchschnittsbon und Ihre Fixkosten- und Variablen-Kostenstruktur."
+        },
+        {
+          "step": "2",
+          "title": "Sofortige Berechnung",
+          "description": "Umsatz, Gesamtkosten, Nettogewinn und Marge automatisch berechnet."
+        },
+        {
+          "step": "3",
+          "title": "Datengestützte Entscheidungen treffen",
+          "description": "Kennen Sie Ihren Break-Even und simulieren Sie Szenarien: mehr Gäste, höherer Bon, Kostensenkung."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Warum Rentabilität simulieren",
+      "items": [
+        "Ihren echten Break-Even-Punkt in Sekunden kennen",
+        "Szenarien simulieren: Was wenn die Miete steigt?",
+        "Prüfen ob Ihre Fixkosten nachhaltig sind",
+        "Preis- und Kapazitätsentscheidungen mit Daten treffen"
+      ]
+    },
+    "testimonial": {
+      "quote": "Ich entdeckte, dass ich 285 Gäste pro Monat brauchte, um den Break-Even zu erreichen. Ich war bei 240. Wir optimierten die Öffnungszeiten und erreichten den Break-Even in 6 Wochen.",
+      "name": "Ana Martínez",
+      "role": "Inhaberin, Restaurante Sabores, Valencia"
+    },
+    "pricing": {
+      "title": "Vollständige Finanzanalyse mit AI Chef Pro",
+      "subtitle": "Der einfache Simulator ist kostenlos. Mit AI Chef Pro erhalten Sie Gerichte-Analysen, Jahresprognosen und Kostenabweichungsalarme.",
+      "plans": [
+        {
+          "name": "Kostenlos",
+          "price": "0€/Monat",
+          "uses": "5 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/Monat",
+          "uses": "150 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/Monat",
+          "uses": "350 Nutzungen/Monat",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/Monat",
+          "uses": "Unbegrenzt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Häufig gestellte Fragen zur Gastronomie-Rentabilität"
+    },
+    "faq": [
+      {
+        "question": "Was ist der Break-Even eines Restaurants?",
+        "answer": "Der Break-Even ist die minimale Anzahl von Gästen oder der Mindestumsatz, um alle Kosten ohne Verluste oder Gewinne zu decken. Darüber hinaus generiert jeder zusätzliche Gast reinen Gewinn."
+      },
+      {
+        "question": "Was ist eine normale Gewinnmarge in der Gastronomie?",
+        "answer": "Die Nettomarge in der Gastronomie liegt typischerweise zwischen 3% und 9% für kleine Restaurants und kann in sehr gut geführten Betrieben 15-20% erreichen."
+      },
+      {
+        "question": "Was sind variable Kosten eines Restaurants?",
+        "answer": "Die wichtigsten variablen Kosten sind: Rohstoffe (Food Cost), variables Personal, Lieferverpackungen und Plattformprovisionen."
+      },
+      {
+        "question": "Was tun, wenn der Simulator Verluste anzeigt?",
+        "answer": "Sie haben drei Hebel: Durchschnittsbon erhöhen, Fixkosten reduzieren (Miete neu verhandeln, Personal optimieren) oder Gästezahl erhöhen."
+      }
+    ],
+    "cta_section": {
+      "title": "Rentabilität Ihres Restaurants mit KI optimieren",
+      "subtitle": "AI Chef Pro analysiert Ihren Food Cost, Marge pro Gericht und Gesamtrentabilität für die besten finanziellen Entscheidungen.",
+      "primary": "AI Chef Pro kostenlos testen",
       "secondary": "Alle Pläne ansehen"
     }
   }
