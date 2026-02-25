@@ -24,6 +24,9 @@ import EscandallosRestaurante from "./pages/EscandallosRestaurante";
 import HerramientasGratuitas from "./pages/HerramientasGratuitas";
 import CalculadoraFoodCost from "./pages/CalculadoraFoodCost";
 import SimuladorRentabilidad from "./pages/SimuladorRentabilidad";
+import TestDigitalizacion from "./pages/TestDigitalizacion";
+import DetectorAlergenos from "./pages/DetectorAlergenos";
+import CalculadoraBrigada from "./pages/CalculadoraBrigada";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -152,6 +155,33 @@ const App = () => (
             <Route path="/it/simulatore-redditivita-ristorante" element={<SimuladorRentabilidad />} />
             <Route path="/pt/simulador-rentabilidade-restaurante" element={<SimuladorRentabilidad />} />
             <Route path="/nl/winstgevendheid-simulator-restaurant" element={<SimuladorRentabilidad />} />
+
+            {/* Test Digitalización — todos los idiomas */}
+            <Route path="/test-digitalizacion-restaurante" element={<TestDigitalizacion />} />
+            <Route path="/en/restaurant-digitalization-test" element={<TestDigitalizacion />} />
+            <Route path="/fr/test-digitalisation-restaurant" element={<TestDigitalizacion />} />
+            <Route path="/de/digitalisierungstest-restaurant" element={<TestDigitalizacion />} />
+            <Route path="/it/test-digitalizzazione-ristorante" element={<TestDigitalizacion />} />
+            <Route path="/pt/teste-digitalizacao-restaurante" element={<TestDigitalizacion />} />
+            <Route path="/nl/digitaliseringstest-restaurant" element={<TestDigitalizacion />} />
+
+            {/* Detector Alérgenos — todos los idiomas */}
+            <Route path="/detector-alergenos-restaurante" element={<DetectorAlergenos />} />
+            <Route path="/en/restaurant-allergen-detector" element={<DetectorAlergenos />} />
+            <Route path="/fr/detecteur-allergenes-restaurant" element={<DetectorAlergenos />} />
+            <Route path="/de/allergen-detektor-restaurant" element={<DetectorAlergenos />} />
+            <Route path="/it/rilevatore-allergeni-ristorante" element={<DetectorAlergenos />} />
+            <Route path="/pt/detector-alergenos-restaurante" element={<DetectorAlergenos />} />
+            <Route path="/nl/allergenen-detector-restaurant" element={<DetectorAlergenos />} />
+
+            {/* Calculadora Brigada — todos los idiomas */}
+            <Route path="/calculadora-brigada-restaurante" element={<CalculadoraBrigada />} />
+            <Route path="/en/restaurant-brigade-calculator" element={<CalculadoraBrigada />} />
+            <Route path="/fr/calculateur-brigade-restaurant" element={<CalculadoraBrigada />} />
+            <Route path="/de/brigaden-rechner-restaurant" element={<CalculadoraBrigada />} />
+            <Route path="/it/calcolatore-brigata-ristorante" element={<CalculadoraBrigada />} />
+            <Route path="/pt/calculadora-brigada-restaurante" element={<CalculadoraBrigada />} />
+            <Route path="/nl/brigade-calculator-restaurant" element={<CalculadoraBrigada />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -2883,5 +2883,738 @@
       "primary": "Probar gratis AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
+  },
+  "toolScore": {
+    "seo": {
+      "title": "Test Digitalización Restaurante Gratis | AI Chef Pro",
+      "description": "Descubre en qué nivel de digitalización está tu restaurante en 2 minutos. 6 preguntas, resultado inmediato con plan de acción personalizado. Gratis, sin registro.",
+      "keywords": "test digitalización restaurante, nivel digital restaurante, digitalización hostelería, herramientas digitales restaurante"
+    },
+    "breadcrumb": "Test de Digitalización",
+    "hero": {
+      "badge": "Gratis — Sin registro — 2 minutos",
+      "h1": "Test de Digitalización para Restaurantes",
+      "subtitle": "¿Qué tan digitalizado está tu restaurante? Responde 6 preguntas y obtén tu nivel digital con un plan de acción personalizado.",
+      "cta_tool": "Hacer el test ↓",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Test de Digitalización",
+      "question_label": "Pregunta {n} de {total}",
+      "submit": "Ver mi resultado",
+      "result_title": "Tu nivel de digitalización",
+      "score_label": "Puntuación",
+      "restart": "Repetir test",
+      "cta_after": "¿Listo para dar el salto digital con IA?"
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": "¿Tienes un sistema de reservas online?",
+        "options": [
+          "No, solo por teléfono",
+          "Sí, a través de terceros (TheFork, etc.)",
+          "Sí, en nuestra propia web",
+          "Sí, en web + app propia"
+        ]
+      },
+      {
+        "id": 2,
+        "text": "¿Gestionas los pedidos de delivery?",
+        "options": [
+          "No hacemos delivery",
+          "Solo por plataformas (Glovo, Uber Eats...)",
+          "Plataformas + web propia",
+          "Sistema propio integrado con cocina"
+        ]
+      },
+      {
+        "id": 3,
+        "text": "¿Usas algún software de gestión (TPV/POS)?",
+        "options": [
+          "No, usamos papel/caja manual",
+          "TPV básico sin informes",
+          "TPV con informes de ventas",
+          "TPV integrado con stock, contabilidad y delivery"
+        ]
+      },
+      {
+        "id": 4,
+        "text": "¿Cómo gestionas tu carta/menú?",
+        "options": [
+          "Carta impresa que actualizamos poco",
+          "PDF o imagen en web/WhatsApp",
+          "Carta digital con QR actualizable",
+          "Carta digital + IA para sugerencias"
+        ]
+      },
+      {
+        "id": 5,
+        "text": "¿Tienes presencia en redes sociales?",
+        "options": [
+          "No tenemos redes sociales",
+          "Perfil creado pero sin actividad regular",
+          "Publicamos 1-2 veces por semana",
+          "Estrategia activa + publicidad digital"
+        ]
+      },
+      {
+        "id": 6,
+        "text": "¿Usas herramientas de IA en tu restaurante?",
+        "options": [
+          "No, no las conozco",
+          "He probado alguna pero no las uso regularmente",
+          "Uso IA puntualmente (ChatGPT, etc.)",
+          "Tengo una suite de IA integrada en mi operación"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "range": [
+          0,
+          25
+        ],
+        "level": "Analógico",
+        "emoji": "📋",
+        "description": "Tu restaurante funciona de forma tradicional. Hay una gran oportunidad de diferenciación con pasos sencillos de digitalización.",
+        "tips": [
+          "Empieza con un perfil de Google Business",
+          "Añade carta QR gratuita",
+          "Crea perfil en TheFork o similar"
+        ]
+      },
+      {
+        "range": [
+          26,
+          50
+        ],
+        "level": "Digital Básico",
+        "emoji": "📱",
+        "description": "Has dado los primeros pasos. Tienes presencia digital pero hay herramientas clave que aún no aprovechas.",
+        "tips": [
+          "Activa reservas online en tu web",
+          "Integra tu TPV con el delivery",
+          "Empieza a usar IA para contenido"
+        ]
+      },
+      {
+        "range": [
+          51,
+          75
+        ],
+        "level": "Digital Avanzado",
+        "emoji": "🚀",
+        "description": "Tu restaurante está bien digitalizado. Estás por encima de la media del sector. Ahora es momento de integrar IA.",
+        "tips": [
+          "Automatiza respuestas a reseñas con IA",
+          "Usa IA para optimizar precios y menú",
+          "Centraliza todos tus canales en un dashboard"
+        ]
+      },
+      {
+        "range": [
+          76,
+          100
+        ],
+        "level": "Digital Pro",
+        "emoji": "⭐",
+        "description": "Eres un referente de digitalización en el sector. Estás usando la tecnología para maximizar eficiencia y rentabilidad.",
+        "tips": [
+          "Explora IA predictiva para stock",
+          "Implementa análisis de datos avanzado",
+          "Considera mentoría para otros restaurantes"
+        ]
+      }
+    ],
+    "how_it_works": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Responde 6 preguntas",
+          "description": "Preguntas sobre reservas, delivery, TPV, carta, redes sociales e IA. Sin trampa, sin registro."
+        },
+        {
+          "step": "2",
+          "title": "Obtén tu puntuación",
+          "description": "El test calcula tu nivel de digitalización: Analógico, Básico, Avanzado o Pro."
+        },
+        {
+          "step": "3",
+          "title": "Plan de acción",
+          "description": "Recibes 3 recomendaciones concretas para subir al siguiente nivel."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Por qué hacer este test",
+      "items": [
+        "Identifica exactamente en qué punto estás",
+        "Compárate con la media del sector",
+        "Descubre las herramientas que más impacto tienen",
+        "Plan de mejora en 3 pasos concretos"
+      ]
+    },
+    "testimonial": {
+      "quote": "Pensaba que estaba bastante digitalizado. El test me mostró que tenía brechas importantes en gestión de delivery y IA. En 3 meses implementé las recomendaciones y mejoré mi margen un 8%.",
+      "name": "Miguel Torres",
+      "role": "Propietario, Grupo Gastronómico El Puerto, Cádiz"
+    },
+    "pricing": {
+      "title": "Lleva tu digitalización al siguiente nivel con AI Chef Pro",
+      "subtitle": "El test te dice dónde estás. AI Chef Pro te da las herramientas para llegar más lejos.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/mes",
+          "uses": "5 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mes",
+          "uses": "150 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mes",
+          "uses": "350 usos/mes",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mes",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre digitalización en restauración"
+    },
+    "faq": [
+      {
+        "question": "¿Qué significa digitalización en un restaurante?",
+        "answer": "La digitalización en restauración es el proceso de incorporar herramientas tecnológicas para gestionar mejor las reservas, el delivery, el TPV, la comunicación con clientes y las operaciones internas. Va desde una simple carta QR hasta la gestión con inteligencia artificial."
+      },
+      {
+        "question": "¿Cuál es el nivel de digitalización medio de los restaurantes en España?",
+        "answer": "Según estudios del sector, menos del 30% de los restaurantes en España tienen un nivel de digitalización avanzado. La mayoría están en nivel básico, usando solo herramientas sueltas sin integración."
+      },
+      {
+        "question": "¿Por qué es importante digitalizar mi restaurante?",
+        "answer": "Los restaurantes digitalizados tienen un 20-35% más de eficiencia operativa, menor rotación de personal y mejor experiencia de cliente. Además, la IA permite reducir costes de food cost y marketing significativamente."
+      },
+      {
+        "question": "¿Cómo puedo empezar a digitalizar mi restaurante?",
+        "answer": "El primer paso es saber dónde estás: por eso existe este test. A partir del resultado, puedes priorizar las herramientas de mayor impacto. AI Chef Pro ofrece un punto de entrada muy accesible para la IA en gastronomía."
+      }
+    ],
+    "cta_section": {
+      "title": "Digitaliza tu restaurante con IA hoy mismo",
+      "subtitle": "AI Chef Pro es la suite de IA más completa para gastronomía: 55+ herramientas para gestionar tu restaurante con inteligencia artificial.",
+      "primary": "Probar gratis AI Chef Pro",
+      "secondary": "Ver todos los planes"
+    }
+  },
+  "toolAlergenos": {
+    "seo": {
+      "title": "Detector Alérgenos Restaurante Gratis | AI Chef Pro",
+      "description": "Detecta los 14 alérgenos de declaración obligatoria en cualquier plato al instante. Introduce los ingredientes y obtén la ficha de alérgenos. Gratis, sin registro.",
+      "keywords": "detector alergenos restaurante, alergenos obligatorios restaurante, ficha alergenos plato, reglamento 1169 2011"
+    },
+    "breadcrumb": "Detector de Alérgenos",
+    "hero": {
+      "badge": "Gratis — Sin registro — Obligatorio por ley",
+      "h1": "Detector de Alérgenos para Restaurantes",
+      "subtitle": "Identifica los 14 alérgenos de declaración obligatoria (Reglamento EU 1169/2011) en cualquier plato al instante. Copia la ficha para tu carta.",
+      "cta_tool": "Ir al detector ↓",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Detector de Alérgenos",
+      "input_label": "Ingredientes del plato",
+      "input_placeholder": "Escribe los ingredientes separados por comas. Ej: harina de trigo, huevo, leche, mantequilla, levadura, sal...",
+      "dish_name_label": "Nombre del plato (opcional)",
+      "dish_name_placeholder": "Ej: Tortilla española",
+      "detect": "Detectar Alérgenos",
+      "result_title": "Alérgenos detectados",
+      "allergens_found": "Alérgenos presentes",
+      "no_allergens": "✅ No se han detectado alérgenos de declaración obligatoria",
+      "warning": "⚠️ Revisa siempre manualmente — esta herramienta es orientativa",
+      "legal_note": "Declaración obligatoria según Reglamento EU 1169/2011",
+      "copy": "Copiar ficha",
+      "copied": "¡Copiado!",
+      "reset": "Nuevo análisis",
+      "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?"
+    },
+    "allergens": [
+      {
+        "id": "gluten",
+        "name": "Gluten",
+        "emoji": "🌾",
+        "description": "Cereales que contienen gluten: trigo, centeno, cebada, avena...",
+        "keywords": [
+          "trigo",
+          "harina",
+          "pan",
+          "pasta",
+          "cerveza",
+          "soja",
+          "centeno",
+          "cebada",
+          "avena",
+          "espelta",
+          "kamut",
+          "bulgur",
+          "sémola",
+          "cuscús"
+        ]
+      },
+      {
+        "id": "crustaceos",
+        "name": "Crustáceos",
+        "emoji": "🦐",
+        "description": "Gambas, langostinos, cangrejos, cigalas, bogavante...",
+        "keywords": [
+          "gamba",
+          "langostino",
+          "cangrejo",
+          "cigala",
+          "bogavante",
+          "nécora",
+          "percebe",
+          "buey de mar",
+          "langosta",
+          "carabinero"
+        ]
+      },
+      {
+        "id": "huevos",
+        "name": "Huevos",
+        "emoji": "🥚",
+        "description": "Huevo y productos derivados",
+        "keywords": [
+          "huevo",
+          "yema",
+          "clara",
+          "tortilla",
+          "mayonesa",
+          "mahonesa",
+          "merengue",
+          "natillas",
+          "flan",
+          "bizcocho",
+          "rebozado"
+        ]
+      },
+      {
+        "id": "pescado",
+        "name": "Pescado",
+        "emoji": "🐟",
+        "description": "Todo tipo de pescados y derivados",
+        "keywords": [
+          "salmón",
+          "atún",
+          "merluza",
+          "bacalao",
+          "sardina",
+          "boquerón",
+          "anchoa",
+          "dorada",
+          "lubina",
+          "rodaballo",
+          "lenguado",
+          "pescado"
+        ]
+      },
+      {
+        "id": "cacahuetes",
+        "name": "Cacahuetes",
+        "emoji": "🥜",
+        "description": "Cacahuetes y productos derivados",
+        "keywords": [
+          "cacahuete",
+          "maní",
+          "mantequilla de cacahuete",
+          "aceite de cacahuete"
+        ]
+      },
+      {
+        "id": "soja",
+        "name": "Soja",
+        "emoji": "🫘",
+        "description": "Soja y productos derivados",
+        "keywords": [
+          "soja",
+          "tofu",
+          "tempeh",
+          "miso",
+          "edamame",
+          "leche de soja",
+          "salsa de soja",
+          "tamari"
+        ]
+      },
+      {
+        "id": "lacteos",
+        "name": "Lácteos",
+        "emoji": "🥛",
+        "description": "Leche y productos lácteos",
+        "keywords": [
+          "leche",
+          "nata",
+          "mantequilla",
+          "queso",
+          "yogur",
+          "crema",
+          "requesón",
+          "cuajada",
+          "suero",
+          "lactosa"
+        ]
+      },
+      {
+        "id": "frutos_secos",
+        "name": "Frutos de cáscara",
+        "emoji": "🌰",
+        "description": "Almendras, avellanas, nueces, anacardos, pistachos...",
+        "keywords": [
+          "almendra",
+          "avellana",
+          "nuez",
+          "anacardo",
+          "pistacho",
+          "nuez de macadamia",
+          "nuez de brasil",
+          "piñón",
+          "pecana"
+        ]
+      },
+      {
+        "id": "apio",
+        "name": "Apio",
+        "emoji": "🥬",
+        "description": "Apio y productos derivados",
+        "keywords": [
+          "apio",
+          "céleri",
+          "sal de apio",
+          "extracto de apio"
+        ]
+      },
+      {
+        "id": "mostaza",
+        "name": "Mostaza",
+        "emoji": "🌿",
+        "description": "Mostaza y productos derivados",
+        "keywords": [
+          "mostaza",
+          "semilla de mostaza",
+          "polvo de mostaza",
+          "aceite de mostaza"
+        ]
+      },
+      {
+        "id": "sesamo",
+        "name": "Sésamo",
+        "emoji": "🌱",
+        "description": "Semillas de sésamo y productos derivados",
+        "keywords": [
+          "sésamo",
+          "tahini",
+          "aceite de sésamo",
+          "semilla de sésamo",
+          "ajonjolí"
+        ]
+      },
+      {
+        "id": "sulfitos",
+        "name": "Dióxido de azufre y sulfitos",
+        "emoji": "🍷",
+        "description": "Concentración superior a 10 mg/kg o 10 mg/litro",
+        "keywords": [
+          "vino",
+          "cerveza",
+          "frutos secos",
+          "vinagre",
+          "zumo",
+          "conservas",
+          "embutido",
+          "SO2",
+          "sulfito",
+          "bisulfito"
+        ]
+      },
+      {
+        "id": "altramuces",
+        "name": "Altramuces",
+        "emoji": "🌼",
+        "description": "Altramuces y productos derivados",
+        "keywords": [
+          "altramuz",
+          "lupino",
+          "harina de altramuz",
+          "proteína de altramuz"
+        ]
+      },
+      {
+        "id": "moluscos",
+        "name": "Moluscos",
+        "emoji": "🐚",
+        "description": "Mejillones, almejas, ostras, pulpo, calamar...",
+        "keywords": [
+          "mejillón",
+          "almeja",
+          "ostra",
+          "pulpo",
+          "calamar",
+          "sepia",
+          "chipirón",
+          "berberecho",
+          "vieira",
+          "navajas"
+        ]
+      }
+    ],
+    "how_it_works": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Escribe los ingredientes",
+          "description": "Introduce todos los ingredientes de tu plato separados por comas, tal como los compras."
+        },
+        {
+          "step": "2",
+          "title": "Detección automática",
+          "description": "El detector identifica qué alérgenos del Reglamento EU 1169/2011 están presentes en los ingredientes."
+        },
+        {
+          "step": "3",
+          "title": "Copia la ficha",
+          "description": "Obtén la ficha de alérgenos lista para añadir a tu carta, web o sistema de gestión."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Por qué usar el detector de alérgenos",
+      "items": [
+        "Cumple con el Reglamento EU 1169/2011 (obligatorio)",
+        "Protege a tus clientes con alergias",
+        "Evita sanciones de hasta 600.000€",
+        "Ficha lista para incluir en tu carta digital"
+      ]
+    },
+    "testimonial": {
+      "quote": "Después de una inspección, el inspector me dijo que nuestra declaración de alérgenos era ejemplar. Usamos esta herramienta para revisar cada plato antes de añadirlo a la carta.",
+      "name": "Marta Sánchez",
+      "role": "Chef Propietaria, Restaurante La Huerta, Murcia"
+    },
+    "pricing": {
+      "title": "Gestión completa de alérgenos con AI Chef Pro",
+      "subtitle": "El detector básico es gratuito. Con AI Chef Pro gestionas los alérgenos de toda tu carta con alertas automáticas.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/mes",
+          "uses": "5 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mes",
+          "uses": "150 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mes",
+          "uses": "350 usos/mes",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mes",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre alérgenos en restauración"
+    },
+    "faq": [
+      {
+        "question": "¿Qué dice la ley sobre alérgenos en restaurantes?",
+        "answer": "El Reglamento EU 1169/2011 obliga a todos los restaurantes, bares y establecimientos de restauración a informar sobre los 14 alérgenos de declaración obligatoria en todos sus platos. El incumplimiento puede acarrear sanciones de entre 3.000€ y 600.000€ según la gravedad."
+      },
+      {
+        "question": "¿Cuáles son los 14 alérgenos de declaración obligatoria?",
+        "answer": "Gluten, crustáceos, huevos, pescado, cacahuetes, soja, lácteos, frutos de cáscara (almendras, nueces, avellanas...), apio, mostaza, sésamo, dióxido de azufre y sulfitos, altramuces y moluscos."
+      },
+      {
+        "question": "¿Es suficiente con un aviso genérico de 'puede contener trazas'?",
+        "answer": "No. La ley exige información específica por plato. Un aviso genérico no es suficiente y puede ser sancionado. Debes poder informar al cliente de qué alérgenos contiene cada plato concreto."
+      },
+      {
+        "question": "¿Esta herramienta es 100% fiable legalmente?",
+        "answer": "Esta herramienta es orientativa y de ayuda. La responsabilidad legal recae siempre en el establecimiento. Debes verificar manualmente los ingredientes y sus posibles contaminaciones cruzadas. Para una gestión completa y auditada, usa AI Chef Pro Premium."
+      }
+    ],
+    "cta_section": {
+      "title": "Gestiona los alérgenos de toda tu carta con IA",
+      "subtitle": "Con AI Chef Pro gestionas los alérgenos de cada plato automáticamente, con alertas cuando cambias ingredientes y ficha exportable para tu carta.",
+      "primary": "Probar gratis AI Chef Pro",
+      "secondary": "Ver todos los planes"
+    }
+  },
+  "toolBrigada": {
+    "seo": {
+      "title": "Calculadora Brigada Cocina Gratis | AI Chef Pro",
+      "description": "Calcula cuántos empleados necesitas en cocina y sala según tu volumen de servicio. Gratis, sin registro. Basado en estándares reales de hostelería.",
+      "keywords": "calculadora brigada cocina, cuantos cocineros necesito, personal restaurante, brigada hostelería"
+    },
+    "breadcrumb": "Calculadora de Brigada",
+    "hero": {
+      "badge": "Gratis — Sin registro",
+      "h1": "Calculadora de Brigada de Cocina",
+      "subtitle": "Descubre cuántos cocineros y camareros necesitas según tus comensales, turnos y tipo de servicio. Basado en ratios reales del sector.",
+      "cta_tool": "Ir a la calculadora ↓",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Calculadora de Brigada",
+      "covers_label": "Comensales por servicio",
+      "covers_hint": "Número máximo de comensales en un servicio (comida o cena)",
+      "service_type_label": "Tipo de servicio",
+      "service_types": [
+        "Carta (alta complejidad)",
+        "Menú del día / Bistró",
+        "Buffet / Self-service",
+        "Catering / Banquetes"
+      ],
+      "services_per_day_label": "Servicios por día",
+      "services_options": [
+        "1 servicio (solo comida o cena)",
+        "2 servicios (comida + cena)",
+        "3 servicios (desayuno + comida + cena)"
+      ],
+      "has_delivery_label": "¿Haces delivery?",
+      "delivery_volume_label": "Pedidos delivery/día",
+      "calculate": "Calcular Brigada",
+      "result_title": "Tu brigada recomendada",
+      "kitchen_title": "👨‍🍳 Cocina",
+      "sala_title": "🍽️ Sala",
+      "head_chef": "Jefe de Cocina",
+      "sous_chef": "Sous Chef",
+      "chef_partida": "Chef de Partida",
+      "cocinero": "Cocinero",
+      "ayudante": "Ayudante Cocina",
+      "kitchen_porter": "Fregaplatos / Office",
+      "maitre": "Maître / Jefe de Sala",
+      "jefe_rango": "Jefe de Rango",
+      "camarero": "Camarero",
+      "ayudante_sala": "Ayudante de Sala",
+      "total_kitchen": "Total cocina",
+      "total_sala": "Total sala",
+      "total_staff": "Total plantilla",
+      "ratio_label": "Ratio comensales/camarero",
+      "reset": "Nueva calculación",
+      "cta_after": "¿Quieres optimizar el coste de personal de tu restaurante?"
+    },
+    "how_it_works": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Indica tu volumen",
+          "description": "Número de comensales por servicio, tipo de servicio y cuántos servicios haces al día."
+        },
+        {
+          "step": "2",
+          "title": "Cálculo según estándares",
+          "description": "La calculadora aplica los ratios reales del sector hostelero para cada tipo de servicio."
+        },
+        {
+          "step": "3",
+          "title": "Brigada recomendada",
+          "description": "Obtienes el desglose de puestos en cocina y sala con el número mínimo recomendado de cada rol."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Por qué calcular tu brigada",
+      "items": [
+        "Evita sobredimensionar la plantilla (coste innecesario)",
+        "Evita infradimensionarla (servicio deficiente)",
+        "Conoce el ratio estándar para tu tipo de restaurante",
+        "Base objetiva para negociaciones con tu equipo"
+      ]
+    },
+    "testimonial": {
+      "quote": "Tenía 4 cocineros para 60 comensales con menú del día. La calculadora me mostró que con 3 bien organizados era suficiente. Ahorré 1.800€/mes en nóminas.",
+      "name": "José Luis Martín",
+      "role": "Propietario, Restaurante El Mirador, Toledo"
+    },
+    "pricing": {
+      "title": "Optimiza tu equipo con AI Chef Pro",
+      "subtitle": "La calculadora básica es gratuita. Con AI Chef Pro optimizas turnos, costes de personal y productividad de tu brigada.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/mes",
+          "uses": "5 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mes",
+          "uses": "150 usos/mes",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mes",
+          "uses": "350 usos/mes",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mes",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes sobre brigada de cocina"
+    },
+    "faq": [
+      {
+        "question": "¿Cuántos cocineros necesito para 50 comensales?",
+        "answer": "Depende del tipo de servicio. Para carta (alta complejidad) necesitas unos 4-5 cocineros para 50 comensales. Para menú del día, con 2-3 cocineros bien organizados puede ser suficiente. La calculadora aplica estos ratios según tu tipo de servicio."
+      },
+      {
+        "question": "¿Cuál es el ratio estándar de camareros por comensal?",
+        "answer": "El estándar del sector es 1 camarero por cada 10-15 comensales en restaurante de carta, y 1 por cada 15-20 en menú del día o bistró. Para fine dining puede bajar a 1 por cada 6-8 comensales."
+      },
+      {
+        "question": "¿Qué es una brigada de cocina?",
+        "answer": "La brigada de cocina es el equipo organizado jerárquicamente que trabaja en una cocina profesional. Fue sistematizada por Auguste Escoffier. Incluye roles como Jefe de Cocina, Sous Chef, Chefs de Partida, Cocineros y Ayudantes."
+      },
+      {
+        "question": "¿Cómo reduzco el coste de personal sin bajar la calidad?",
+        "answer": "La clave está en la organización: brigadas polivalentes, mise en place eficiente, buena gestión de turnos y uso de herramientas de IA para optimizar la operación. AI Chef Pro te ayuda a identificar los cuellos de botella en tu equipo."
+      }
+    ],
+    "cta_section": {
+      "title": "Optimiza la gestión de tu equipo con IA",
+      "subtitle": "AI Chef Pro te ayuda a gestionar turnos, calcular costes de personal y optimizar la productividad de tu brigada.",
+      "primary": "Probar gratis AI Chef Pro",
+      "secondary": "Ver todos los planes"
+    }
   }
 }

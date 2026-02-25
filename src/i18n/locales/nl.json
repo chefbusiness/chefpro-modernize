@@ -3141,5 +3141,715 @@
       "primary": "AI Chef Pro gratis uitproberen",
       "secondary": "Alle plannen bekijken"
     }
+  },
+  "toolScore": {
+    "seo": {
+      "title": "Free Restaurant Digitalization Test | AI Chef Pro",
+      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Free, no registration.",
+      "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
+    },
+    "breadcrumb": "Digitaliserings-test",
+    "hero": {
+      "badge": "Free — No registration — 2 minutes",
+      "h1": "Restaurant Digitalization Test",
+      "subtitle": "How digitalized is your restaurant? Answer 6 questions and get your digital level with a personalized action plan.",
+      "cta_tool": "Take the test ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Digitalization Test",
+      "question_label": "Question {n} of {total}",
+      "submit": "See my result",
+      "result_title": "Your digitalization level",
+      "score_label": "Score",
+      "restart": "Retake test",
+      "cta_after": "Ready to make the digital leap with AI?"
+    },
+    "questions": [
+      {
+        "id": 1,
+        "text": "Do you have an online booking system?",
+        "options": [
+          "No, phone only",
+          "Yes, through third parties (OpenTable, etc.)",
+          "Yes, on our own website",
+          "Yes, website + own app"
+        ]
+      },
+      {
+        "id": 2,
+        "text": "How do you manage delivery orders?",
+        "options": [
+          "We don't do delivery",
+          "Platforms only (Deliveroo, Uber Eats...)",
+          "Platforms + own website",
+          "Own system integrated with kitchen"
+        ]
+      },
+      {
+        "id": 3,
+        "text": "Do you use management software (POS)?",
+        "options": [
+          "No, paper/cash register",
+          "Basic POS without reports",
+          "POS with sales reports",
+          "POS integrated with stock, accounting and delivery"
+        ]
+      },
+      {
+        "id": 4,
+        "text": "How do you manage your menu?",
+        "options": [
+          "Printed menu rarely updated",
+          "PDF or image on web/WhatsApp",
+          "Digital menu with updatable QR",
+          "Digital menu + AI suggestions"
+        ]
+      },
+      {
+        "id": 5,
+        "text": "Do you have social media presence?",
+        "options": [
+          "No social media",
+          "Profile created but no regular activity",
+          "Post 1-2 times per week",
+          "Active strategy + digital advertising"
+        ]
+      },
+      {
+        "id": 6,
+        "text": "Do you use AI tools in your restaurant?",
+        "options": [
+          "No, I don't know them",
+          "Tried some but don't use regularly",
+          "Use AI occasionally (ChatGPT, etc.)",
+          "Have an AI suite integrated in my operations"
+        ]
+      }
+    ],
+    "results": [
+      {
+        "range": [
+          0,
+          25
+        ],
+        "level": "Analog",
+        "emoji": "📋",
+        "description": "Your restaurant operates traditionally. There's a great differentiation opportunity with simple digitalization steps.",
+        "tips": [
+          "Start with a Google Business profile",
+          "Add free QR menu",
+          "Create TheFork or similar profile"
+        ]
+      },
+      {
+        "range": [
+          26,
+          50
+        ],
+        "level": "Basic Digital",
+        "emoji": "📱",
+        "description": "You've taken first steps. You have digital presence but key tools you haven't leveraged yet.",
+        "tips": [
+          "Activate online bookings on your website",
+          "Integrate POS with delivery",
+          "Start using AI for content"
+        ]
+      },
+      {
+        "range": [
+          51,
+          75
+        ],
+        "level": "Advanced Digital",
+        "emoji": "🚀",
+        "description": "Your restaurant is well digitalized. You're above the industry average. Now is the time to integrate AI.",
+        "tips": [
+          "Automate review responses with AI",
+          "Use AI to optimize pricing and menu",
+          "Centralize all channels in one dashboard"
+        ]
+      },
+      {
+        "range": [
+          76,
+          100
+        ],
+        "level": "Digital Pro",
+        "emoji": "⭐",
+        "description": "You're a digitalization reference in the sector. You're using technology to maximize efficiency and profitability.",
+        "tips": [
+          "Explore predictive AI for stock",
+          "Implement advanced data analytics",
+          "Consider mentoring other restaurants"
+        ]
+      }
+    ],
+    "how_it_works": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Answer 6 questions",
+          "description": "Questions about bookings, delivery, POS, menu, social media and AI. No tricks, no registration."
+        },
+        {
+          "step": "2",
+          "title": "Get your score",
+          "description": "The test calculates your digitalization level: Analog, Basic, Advanced or Pro."
+        },
+        {
+          "step": "3",
+          "title": "Action plan",
+          "description": "You receive 3 concrete recommendations to reach the next level."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why take this test",
+      "items": [
+        "Identify exactly where you stand",
+        "Compare yourself with the industry average",
+        "Discover the highest-impact tools",
+        "3-step improvement plan"
+      ]
+    },
+    "testimonial": {
+      "quote": "I thought I was quite digitalized. The test showed me important gaps in delivery management and AI. In 3 months I implemented the recommendations and improved my margin by 8%.",
+      "name": "Miguel Torres",
+      "role": "Owner, Grupo Gastronómico El Puerto, Cádiz"
+    },
+    "pricing": {
+      "title": "Take your digitalization to the next level with AI Chef Pro",
+      "subtitle": "The test tells you where you are. AI Chef Pro gives you the tools to go further.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about restaurant digitalization"
+    },
+    "faq": [
+      {
+        "question": "What does digitalization mean for a restaurant?",
+        "answer": "Digitalization in restaurants is the process of incorporating technology tools to better manage bookings, delivery, POS, customer communication and internal operations. It ranges from a simple QR menu to AI-powered management."
+      },
+      {
+        "question": "What is the average digitalization level in restaurants?",
+        "answer": "According to industry studies, less than 30% of restaurants have an advanced digitalization level. Most are at basic level, using only isolated tools without integration."
+      },
+      {
+        "question": "Why is it important to digitalize my restaurant?",
+        "answer": "Digitalized restaurants have 20-35% more operational efficiency, lower staff turnover and better customer experience. AI also allows significant reduction in food cost and marketing costs."
+      },
+      {
+        "question": "How do I start digitalizing my restaurant?",
+        "answer": "The first step is knowing where you are — that's why this test exists. From the result, you can prioritize the highest-impact tools. AI Chef Pro offers a very accessible entry point for AI in gastronomy."
+      }
+    ],
+    "cta_section": {
+      "title": "Digitalize your restaurant with AI today",
+      "subtitle": "AI Chef Pro is the most complete AI suite for gastronomy: 55+ tools to manage your restaurant with artificial intelligence.",
+      "primary": "Try AI Chef Pro for free",
+      "secondary": "See all plans"
+    }
+  },
+  "toolAlergenos": {
+    "seo": {
+      "title": "Free Restaurant Allergen Checker | AI Chef Pro",
+      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Free, no registration.",
+      "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
+    },
+    "breadcrumb": "Allergenen Checker",
+    "hero": {
+      "badge": "Free — No registration — Legally required",
+      "h1": "Allergen Checker for Restaurants",
+      "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
+      "cta_tool": "Go to checker ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Allergen Checker",
+      "input_label": "Dish ingredients",
+      "input_placeholder": "Type ingredients separated by commas. E.g.: wheat flour, egg, milk, butter, yeast, salt...",
+      "dish_name_label": "Dish name (optional)",
+      "dish_name_placeholder": "E.g.: Spanish omelette",
+      "detect": "Check Allergens",
+      "result_title": "Allergens detected",
+      "allergens_found": "Allergens present",
+      "no_allergens": "✅ No mandatory declaration allergens detected",
+      "warning": "⚠️ Always verify manually — this tool is advisory",
+      "legal_note": "Mandatory declaration under EU Regulation 1169/2011",
+      "copy": "Copy declaration",
+      "copied": "Copied!",
+      "reset": "New analysis",
+      "cta_after": "Want to manage allergens for your entire menu automatically?"
+    },
+    "allergens": [
+      {
+        "id": "gluten",
+        "name": "Gluten",
+        "emoji": "🌾",
+        "description": "Cereals containing gluten: wheat, rye, barley, oats...",
+        "keywords": [
+          "wheat",
+          "flour",
+          "bread",
+          "pasta",
+          "beer",
+          "rye",
+          "barley",
+          "oat",
+          "spelt",
+          "semolina",
+          "couscous"
+        ]
+      },
+      {
+        "id": "crustaceans",
+        "name": "Crustaceans",
+        "emoji": "🦐",
+        "description": "Prawns, shrimp, crab, lobster...",
+        "keywords": [
+          "prawn",
+          "shrimp",
+          "crab",
+          "lobster",
+          "crayfish",
+          "langoustine"
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Eggs",
+        "emoji": "🥚",
+        "description": "Eggs and egg products",
+        "keywords": [
+          "egg",
+          "yolk",
+          "white",
+          "omelette",
+          "mayonnaise",
+          "meringue",
+          "custard"
+        ]
+      },
+      {
+        "id": "fish",
+        "name": "Fish",
+        "emoji": "🐟",
+        "description": "All types of fish and fish products",
+        "keywords": [
+          "salmon",
+          "tuna",
+          "cod",
+          "sardine",
+          "anchovy",
+          "bass",
+          "bream",
+          "fish"
+        ]
+      },
+      {
+        "id": "peanuts",
+        "name": "Peanuts",
+        "emoji": "🥜",
+        "description": "Peanuts and peanut products",
+        "keywords": [
+          "peanut",
+          "groundnut",
+          "peanut butter",
+          "peanut oil"
+        ]
+      },
+      {
+        "id": "soy",
+        "name": "Soy",
+        "emoji": "🫘",
+        "description": "Soy and soy products",
+        "keywords": [
+          "soy",
+          "soya",
+          "tofu",
+          "tempeh",
+          "miso",
+          "edamame",
+          "soy milk",
+          "soy sauce",
+          "tamari"
+        ]
+      },
+      {
+        "id": "milk",
+        "name": "Milk",
+        "emoji": "🥛",
+        "description": "Milk and dairy products",
+        "keywords": [
+          "milk",
+          "cream",
+          "butter",
+          "cheese",
+          "yogurt",
+          "lactose",
+          "whey",
+          "casein"
+        ]
+      },
+      {
+        "id": "nuts",
+        "name": "Tree nuts",
+        "emoji": "🌰",
+        "description": "Almonds, hazelnuts, walnuts, cashews, pistachios...",
+        "keywords": [
+          "almond",
+          "hazelnut",
+          "walnut",
+          "cashew",
+          "pistachio",
+          "macadamia",
+          "pecan",
+          "brazil nut"
+        ]
+      },
+      {
+        "id": "celery",
+        "name": "Celery",
+        "emoji": "🥬",
+        "description": "Celery and celery products",
+        "keywords": [
+          "celery",
+          "celeriac",
+          "celery salt",
+          "celery extract"
+        ]
+      },
+      {
+        "id": "mustard",
+        "name": "Mustard",
+        "emoji": "🌿",
+        "description": "Mustard and mustard products",
+        "keywords": [
+          "mustard",
+          "mustard seed",
+          "mustard powder",
+          "mustard oil"
+        ]
+      },
+      {
+        "id": "sesame",
+        "name": "Sesame",
+        "emoji": "🌱",
+        "description": "Sesame seeds and sesame products",
+        "keywords": [
+          "sesame",
+          "tahini",
+          "sesame oil",
+          "sesame seed"
+        ]
+      },
+      {
+        "id": "sulphites",
+        "name": "Sulphur dioxide and sulphites",
+        "emoji": "🍷",
+        "description": "Concentration above 10 mg/kg or 10 mg/litre",
+        "keywords": [
+          "wine",
+          "beer",
+          "dried fruit",
+          "vinegar",
+          "juice",
+          "SO2",
+          "sulphite",
+          "bisulphite"
+        ]
+      },
+      {
+        "id": "lupin",
+        "name": "Lupin",
+        "emoji": "🌼",
+        "description": "Lupin and lupin products",
+        "keywords": [
+          "lupin",
+          "lupine",
+          "lupin flour",
+          "lupin protein"
+        ]
+      },
+      {
+        "id": "molluscs",
+        "name": "Molluscs",
+        "emoji": "🐚",
+        "description": "Mussels, clams, oysters, octopus, squid...",
+        "keywords": [
+          "mussel",
+          "clam",
+          "oyster",
+          "octopus",
+          "squid",
+          "cuttlefish",
+          "scallop"
+        ]
+      }
+    ],
+    "how_it_works": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Enter ingredients",
+          "description": "Enter all dish ingredients separated by commas, exactly as you purchase them."
+        },
+        {
+          "step": "2",
+          "title": "Automatic detection",
+          "description": "The checker identifies which allergens from EU Regulation 1169/2011 are present."
+        },
+        {
+          "step": "3",
+          "title": "Copy the declaration",
+          "description": "Get the allergen declaration ready to add to your menu, website or management system."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why use the allergen checker",
+      "items": [
+        "Comply with EU Regulation 1169/2011 (mandatory)",
+        "Protect customers with allergies",
+        "Avoid fines up to €600,000",
+        "Declaration ready for your digital menu"
+      ]
+    },
+    "testimonial": {
+      "quote": "After an inspection, the inspector told me our allergen declaration was exemplary. We use this tool to check every dish before adding it to the menu.",
+      "name": "Marta Sánchez",
+      "role": "Chef-Owner, Restaurante La Huerta, Murcia"
+    },
+    "pricing": {
+      "title": "Complete allergen management with AI Chef Pro",
+      "subtitle": "The basic checker is free. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about restaurant allergens"
+    },
+    "faq": [
+      {
+        "question": "What does the law say about allergens in restaurants?",
+        "answer": "EU Regulation 1169/2011 requires all restaurants, bars and catering establishments to inform about the 14 mandatory allergens in all their dishes. Non-compliance can result in fines between €3,000 and €600,000 depending on severity."
+      },
+      {
+        "question": "What are the 14 mandatory declaration allergens?",
+        "answer": "Gluten, crustaceans, eggs, fish, peanuts, soy, milk, tree nuts (almonds, walnuts, hazelnuts...), celery, mustard, sesame, sulphur dioxide and sulphites, lupin and molluscs."
+      },
+      {
+        "question": "Is a generic 'may contain traces' warning sufficient?",
+        "answer": "No. The law requires specific information per dish. A generic warning is not sufficient and can be penalized. You must be able to inform customers which allergens each specific dish contains."
+      },
+      {
+        "question": "Is this tool 100% legally reliable?",
+        "answer": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
+      }
+    ],
+    "cta_section": {
+      "title": "Manage allergens for your entire menu with AI",
+      "subtitle": "With AI Chef Pro you manage allergens for each dish automatically, with alerts when you change ingredients and exportable declaration for your menu.",
+      "primary": "Try AI Chef Pro for free",
+      "secondary": "See all plans"
+    }
+  },
+  "toolBrigada": {
+    "seo": {
+      "title": "Free Kitchen Brigade Calculator | AI Chef Pro",
+      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Free, no registration. Based on real hospitality standards.",
+      "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
+    },
+    "breadcrumb": "Brigade Calculator",
+    "hero": {
+      "badge": "Free — No registration",
+      "h1": "Kitchen Brigade Calculator",
+      "subtitle": "Find out how many chefs and waiters you need based on your covers, shifts and service type. Based on real industry ratios.",
+      "cta_tool": "Go to calculator ↓",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Brigade Calculator",
+      "covers_label": "Covers per service",
+      "covers_hint": "Maximum number of covers in one service (lunch or dinner)",
+      "service_type_label": "Service type",
+      "service_types": [
+        "À la carte (high complexity)",
+        "Set menu / Bistro",
+        "Buffet / Self-service",
+        "Catering / Banquets"
+      ],
+      "services_per_day_label": "Services per day",
+      "services_options": [
+        "1 service (lunch or dinner only)",
+        "2 services (lunch + dinner)",
+        "3 services (breakfast + lunch + dinner)"
+      ],
+      "has_delivery_label": "Do you do delivery?",
+      "delivery_volume_label": "Delivery orders/day",
+      "calculate": "Calculate Brigade",
+      "result_title": "Your recommended brigade",
+      "kitchen_title": "👨‍🍳 Kitchen",
+      "sala_title": "🍽️ Front of House",
+      "head_chef": "Head Chef",
+      "sous_chef": "Sous Chef",
+      "chef_partida": "Section Chef",
+      "cocinero": "Cook",
+      "ayudante": "Kitchen Assistant",
+      "kitchen_porter": "Kitchen Porter / Dishwasher",
+      "maitre": "Maître d' / Head Waiter",
+      "jefe_rango": "Station Head Waiter",
+      "camarero": "Waiter",
+      "ayudante_sala": "Busser / FOH Assistant",
+      "total_kitchen": "Total kitchen",
+      "total_sala": "Total FOH",
+      "total_staff": "Total staff",
+      "ratio_label": "Covers per waiter ratio",
+      "reset": "New calculation",
+      "cta_after": "Want to optimize your restaurant's staff costs?"
+    },
+    "how_it_works": {
+      "title": "How it works",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Enter your volume",
+          "description": "Number of covers per service, type of service and how many services you do per day."
+        },
+        {
+          "step": "2",
+          "title": "Industry standard calculation",
+          "description": "The calculator applies real hospitality sector ratios for each service type."
+        },
+        {
+          "step": "3",
+          "title": "Recommended brigade",
+          "description": "You get the breakdown of kitchen and FOH positions with the minimum recommended number for each role."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why calculate your brigade",
+      "items": [
+        "Avoid overstaffing (unnecessary cost)",
+        "Avoid understaffing (poor service)",
+        "Know the standard ratio for your restaurant type",
+        "Objective basis for team negotiations"
+      ]
+    },
+    "testimonial": {
+      "quote": "I had 4 chefs for 60 covers with a set menu. The calculator showed me 3 well-organized was enough. I saved €1,800/month in wages.",
+      "name": "José Luis Martín",
+      "role": "Owner, Restaurante El Mirador, Toledo"
+    },
+    "pricing": {
+      "title": "Optimize your team with AI Chef Pro",
+      "subtitle": "The basic calculator is free. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "0€/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about kitchen brigade"
+    },
+    "faq": [
+      {
+        "question": "How many chefs do I need for 50 covers?",
+        "answer": "It depends on service type. For à la carte (high complexity) you need about 4-5 chefs for 50 covers. For a set menu, 2-3 well-organized chefs may be enough. The calculator applies these ratios based on your service type."
+      },
+      {
+        "question": "What is the standard waiter-to-cover ratio?",
+        "answer": "The industry standard is 1 waiter per 10-15 covers for à la carte restaurants, and 1 per 15-20 for set menu or bistro. For fine dining it can drop to 1 per 6-8 covers."
+      },
+      {
+        "question": "What is a kitchen brigade?",
+        "answer": "The kitchen brigade is the hierarchically organized team working in a professional kitchen. It was systematized by Auguste Escoffier. It includes roles such as Head Chef, Sous Chef, Section Chefs, Cooks and Assistants."
+      },
+      {
+        "question": "How do I reduce staff costs without lowering quality?",
+        "answer": "The key is organization: versatile brigades, efficient mise en place, good shift management and AI tools to optimize operations. AI Chef Pro helps you identify bottlenecks in your team."
+      }
+    ],
+    "cta_section": {
+      "title": "Optimize your team management with AI",
+      "subtitle": "AI Chef Pro helps you manage shifts, calculate staff costs and optimize your brigade's productivity.",
+      "primary": "Try AI Chef Pro for free",
+      "secondary": "See all plans"
+    }
   }
 }

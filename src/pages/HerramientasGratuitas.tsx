@@ -50,32 +50,32 @@ const RENTABILIDAD_SLUGS: Record<string, string> = {
 
 const ALERGENOS_SLUGS: Record<string, string> = {
   es: 'detector-alergenos-restaurante',
-  en: 'en/allergen-checker-restaurant',
-  fr: 'fr/verificateur-allergenes-restaurant',
-  de: 'de/allergen-checker-restaurant',
-  it: 'it/controllo-allergeni-ristorante',
-  pt: 'pt/verificador-alergenos-restaurante',
-  nl: 'nl/allergenen-checker-restaurant',
+  en: 'en/restaurant-allergen-detector',
+  fr: 'fr/detecteur-allergenes-restaurant',
+  de: 'de/allergen-detektor-restaurant',
+  it: 'it/rilevatore-allergeni-ristorante',
+  pt: 'pt/detector-alergenos-restaurante',
+  nl: 'nl/allergenen-detector-restaurant',
 };
 
 const SCORE_SLUGS: Record<string, string> = {
   es: 'test-digitalizacion-restaurante',
   en: 'en/restaurant-digitalization-test',
   fr: 'fr/test-digitalisation-restaurant',
-  de: 'de/digitalisierung-test-restaurant',
+  de: 'de/digitalisierungstest-restaurant',
   it: 'it/test-digitalizzazione-ristorante',
   pt: 'pt/teste-digitalizacao-restaurante',
-  nl: 'nl/digitalisering-test-restaurant',
+  nl: 'nl/digitaliseringstest-restaurant',
 };
 
 const BRIGADA_SLUGS: Record<string, string> = {
-  es: 'calculadora-brigada-cocina',
-  en: 'en/kitchen-brigade-calculator',
-  fr: 'fr/calculateur-brigade-cuisine',
-  de: 'de/kochbrigaden-rechner',
-  it: 'it/calcolatore-brigata-cucina',
-  pt: 'pt/calculadora-brigada-cozinha',
-  nl: 'nl/keuken-brigade-calculator',
+  es: 'calculadora-brigada-restaurante',
+  en: 'en/restaurant-brigade-calculator',
+  fr: 'fr/calculateur-brigade-restaurant',
+  de: 'de/brigaden-rechner-restaurant',
+  it: 'it/calcolatore-brigata-ristorante',
+  pt: 'pt/calculadora-brigada-restaurante',
+  nl: 'nl/brigade-calculator-restaurant',
 };
 
 const CALENDARIO_SLUGS: Record<string, string> = {
