@@ -370,6 +370,16 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
+                  href="https://hosply.pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Hosply.pro
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:info@aichef.pro"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
