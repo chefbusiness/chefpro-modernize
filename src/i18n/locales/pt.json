@@ -20,6 +20,7 @@
     "reducir_costes": "Reduzir Custos",
     "herramientas_ia": "Ferramentas IA Restaurante",
     "carta_menu": "Cardápio com IA",
+    "marketing_ia": "Marketing com IA",
     "blog": "Blog",
     "login": "Entrar"
   },
@@ -1101,6 +1102,7 @@
     "nav_blog": "Blog",
     "nav_costs": "Reduzir Custos",
     "nav_menu": "Cardápio com IA",
+    "nav_marketing": "Marketing com IA",
     "nav_ai_tools": "Ferramentas IA",
     "nav_free_tools": "Ferramentas Gratuitas",
     "contact_title": "Contato",
@@ -1743,5 +1745,135 @@
       "secondary": "Ver todos os planos"
     },
     "breadcrumb": "Cardápio de Restaurante com IA"
+  },
+  "landingMarketing": {
+    "seo": {
+      "title": "Marketing de Restaurante com IA | AI Chef Pro",
+      "description": "Automatize o marketing do seu restaurante com inteligência artificial. Redes sociais, Google My Business, avaliações e campanhas em minutos. Experimente grátis.",
+      "keywords": "marketing restaurante ia, redes sociais restaurante ia, google my business restaurante, avaliações restaurante ia, conteúdo restaurante ia, marketing hotelaria ia"
+    },
+    "hero": {
+      "badge": "Marketing gastronômico automatizado com IA",
+      "h1": "Marketing para Restaurantes com Inteligência Artificial",
+      "subtitle": "Crie conteúdo para redes sociais, gerencie avaliações, otimize sua ficha do Google e lance promoções em minutos. Sem agência, sem orçamento excessivo.",
+      "tagline": "Redes sociais · Google My Business · Avaliações · Campanhas · Email marketing",
+      "cta_primary": "Começar grátis agora",
+      "cta_secondary": "Ver planos e preços",
+      "no_card": "Sem cartão de crédito · Plano gratuito disponível"
+    },
+    "results": [
+      { "metric": "10x", "label": "mais rápido criar conteúdo para redes sociais" },
+      { "metric": "3h", "label": "economizadas por semana em marketing digital" },
+      { "metric": "4.8★", "label": "avaliação média de clientes no Google" },
+      { "metric": "55+", "label": "ferramentas de marketing gastronômico" }
+    ],
+    "tools_section": {
+      "title": "Todo o marketing do seu restaurante, automatizado com IA",
+      "subtitle": "Do post do Instagram à resposta a uma avaliação negativa. A IA gera o conteúdo, você decide o que publicar."
+    },
+    "tools": [
+      {
+        "title": "Conteúdo para Redes Sociais",
+        "description": "Gere posts para Instagram, Facebook e TikTok com textos, hashtags e ideias de imagem adaptados ao seu restaurante, prato do dia e estilo de comunicação.",
+        "keywords": ["instagram restaurante", "posts hotelaria", "conteúdo redes sociais"]
+      },
+      {
+        "title": "Gestão de Avaliações Google",
+        "description": "Responda avaliações positivas e negativas em segundos com respostas profissionais, empáticas e personalizadas que melhoram sua reputação online.",
+        "keywords": ["avaliações google restaurante", "responder avaliações", "reputação online"]
+      },
+      {
+        "title": "Fotografia & Descrições",
+        "description": "Crie legendas irresistíveis, descrições para seu menu digital e textos para stories que geram reservas e aumentam o engajamento.",
+        "keywords": ["fotografia gastronômica", "descrição pratos", "instagram stories"]
+      },
+      {
+        "title": "Google My Business",
+        "description": "Otimize sua ficha do Google com descrições persuasivas, posts de novidades, ofertas especiais e respostas a perguntas frequentes.",
+        "keywords": ["Google My Business restaurante", "ficha google", "SEO local restaurante"]
+      },
+      {
+        "title": "Campanhas & Promoções",
+        "description": "Crie campanhas para eventos especiais, feriados, menus sazonais e promoções relâmpago com textos e sequências de mensagens prontos para publicar.",
+        "keywords": ["campanhas restaurante", "promoções hotelaria", "email marketing"]
+      },
+      {
+        "title": "Newsletter & Email Marketing",
+        "description": "Redija newsletters mensais, emails de fidelização e sequências de boas-vindas para seus clientes no tom e estilo da sua marca gastronômica.",
+        "keywords": ["newsletter restaurante", "email marketing hotelaria", "fidelização clientes"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Para qualquer restaurante que queira crescer online",
+      "subtitle": "Seja você nunca ter feito marketing digital ou já ter presença online, a IA multiplica seus resultados com menos esforço."
+    },
+    "profiles": [
+      {
+        "title": "Restaurante independente",
+        "description": "Compete com redes e grandes grupos com conteúdo profissional e constante sem contratar uma agência."
+      },
+      {
+        "title": "Bar & Café",
+        "description": "Atraia mais clientes com posts do prato do dia, ofertas especiais e uma reputação impecável no Google Maps."
+      },
+      {
+        "title": "Rede de restaurantes",
+        "description": "Centralize a comunicação de todos os seus locais com conteúdo coerente adaptado a cada estabelecimento."
+      },
+      {
+        "title": "Chef com Marca Pessoal",
+        "description": "Construa sua marca gastronômica nas redes sociais com conteúdo autoral que reflete sua filosofia culinária."
+      }
+    ],
+    "why_section": {
+      "title": "Por que o marketing com IA é o futuro da hotelaria?",
+      "body": "Restaurantes que publicam conteúdo de qualidade regularmente nas redes sociais têm 40% mais reservas online. A IA permite fazê-lo em minutos por dia, sem depender de designers ou community managers externos.",
+      "benefits": [
+        "Crie 30 posts para um mês inteiro em menos de uma hora",
+        "Responda todas as avaliações do Google em minutos, não em dias",
+        "Mantenha sua ficha do Google sempre atualizada e otimizada",
+        "Lance campanhas sazonais sem pagar uma agência",
+        "Gere descrições de pratos para seu site e menu digital",
+        "Adapte todo o conteúdo ao tom e estilo da sua marca"
+      ]
+    },
+    "testimonial": {
+      "quote": "Antes passava horas preparando o conteúdo semanal do Instagram. Agora com a IA faço em 20 minutos na segunda-feira e a semana toda está coberta. As reservas online subiram 35%.",
+      "name": "Ana Martínez",
+      "role": "Proprietária, La Taberna de Ana, Sevilha"
+    },
+    "pricing_section": {
+      "title": "Planos para automatizar seu marketing gastronômico",
+      "subtitle": "Do plano gratuito para começar ao uso ilimitado para grupos com múltiplos locais.",
+      "annual_note": "Plano anual também disponível: AI Chef Premium Plus Anual a 950€/ano · Economize 2 meses"
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes sobre marketing de restaurante com IA"
+    },
+    "faq": [
+      {
+        "question": "A IA pode gerenciar as redes sociais do meu restaurante?",
+        "answer": "A IA do AI Chef Pro gera o conteúdo para suas publicações no Instagram, Facebook e TikTok. Você revisa, personaliza e publica. É assistência inteligente que permite criar conteúdo profissional em minutos em vez de horas."
+      },
+      {
+        "question": "Como a IA ajuda a melhorar minhas avaliações no Google?",
+        "answer": "A IA gera respostas personalizadas para cada avaliação, positivas e negativas. Para as negativas propõe respostas profissionais e empáticas. Responder todas as avaliações melhora sua pontuação no Google Maps e seu posicionamento local."
+      },
+      {
+        "question": "Preciso de conhecimentos em marketing digital?",
+        "answer": "Não. O AI Chef Pro é projetado para hoteleiros, não para profissionais de marketing. Você descreve em linguagem gastronômica o que precisa e a IA gera conteúdo pronto para copiar e colar nas suas redes."
+      },
+      {
+        "question": "Posso criar conteúdo de marketing em vários idiomas?",
+        "answer": "Sim. O AI Chef Pro está disponível em 7 idiomas e pode gerar conteúdo de marketing no idioma necessário. Ideal para restaurantes com clientela internacional ou turística."
+      }
+    ],
+    "cta_section": {
+      "title": "Pare de improvisar. Automatize o marketing do seu restaurante.",
+      "subtitle": "Mais de 5.000 restaurantes já usam o AI Chef Pro para criar conteúdo profissional, gerenciar sua reputação online e atrair mais clientes.",
+      "primary": "Começar grátis agora",
+      "secondary": "Ver todos os planos"
+    },
+    "breadcrumb": "Marketing de Restaurante com IA"
   }
 }

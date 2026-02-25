@@ -34,6 +34,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'cardapio-restaurante-ia',
     nl: 'restaurantmenu-ai',
   },
+  {
+    es: 'marketing-restaurante-ia',
+    en: 'restaurant-marketing-ai',
+    fr: 'marketing-restaurant-ia',
+    de: 'restaurant-marketing-ki',
+    it: 'marketing-ristorante-ia',
+    pt: 'marketing-restaurante-ia-pt',
+    nl: 'restaurant-marketing-ai-nl',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

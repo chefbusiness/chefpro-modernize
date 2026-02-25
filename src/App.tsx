@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
 import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
 import MenuRestaurante from "./pages/MenuRestaurante";
+import MarketingRestaurante from "./pages/MarketingRestaurante";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -73,6 +74,15 @@ const App = () => (
             <Route path="/it/menu-ristorante-ia" element={<MenuRestaurante />} />
             <Route path="/pt/cardapio-restaurante-ia" element={<MenuRestaurante />} />
             <Route path="/nl/restaurantmenu-ai" element={<MenuRestaurante />} />
+
+            {/* Landing marketing restaurante — todos los idiomas */}
+            <Route path="/marketing-restaurante-ia" element={<MarketingRestaurante />} />
+            <Route path="/en/restaurant-marketing-ai" element={<MarketingRestaurante />} />
+            <Route path="/fr/marketing-restaurant-ia" element={<MarketingRestaurante />} />
+            <Route path="/de/restaurant-marketing-ki" element={<MarketingRestaurante />} />
+            <Route path="/it/marketing-ristorante-ia" element={<MarketingRestaurante />} />
+            <Route path="/pt/marketing-restaurante-ia-pt" element={<MarketingRestaurante />} />
+            <Route path="/nl/restaurant-marketing-ai-nl" element={<MarketingRestaurante />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -35,6 +35,16 @@ const MENU_SLUGS: Record<string, string> = {
   nl: 'nl/restaurantmenu-ai',
 };
 
+const MARKETING_SLUGS: Record<string, string> = {
+  es: 'marketing-restaurante-ia',
+  en: 'en/restaurant-marketing-ai',
+  fr: 'fr/marketing-restaurant-ia',
+  de: 'de/restaurant-marketing-ki',
+  it: 'it/marketing-ristorante-ia',
+  pt: 'pt/marketing-restaurante-ia-pt',
+  nl: 'nl/restaurant-marketing-ai-nl',
+};
+
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
 
@@ -127,6 +137,14 @@ export default function ModernFooter() {
                   className="text-emerald-600 hover:text-emerald-500 transition-colors font-medium"
                 >
                   {t('footer.nav_menu')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${MARKETING_SLUGS[currentLanguage] || MARKETING_SLUGS.es}`}
+                  className="text-violet-600 hover:text-violet-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_marketing')}
                 </a>
               </li>
               <li>
