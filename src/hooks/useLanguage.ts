@@ -43,6 +43,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'marketing-restaurante-ia-pt',
     nl: 'restaurant-marketing-ai-nl',
   },
+  {
+    es: 'chatgpt-para-restaurantes',
+    en: 'chatgpt-for-restaurants',
+    fr: 'chatgpt-pour-restaurants',
+    de: 'chatgpt-fuer-restaurants',
+    it: 'chatgpt-per-ristoranti',
+    pt: 'chatgpt-para-restaurantes',
+    nl: 'chatgpt-voor-restaurants',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

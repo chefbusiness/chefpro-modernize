@@ -45,6 +45,16 @@ const MARKETING_SLUGS: Record<string, string> = {
   nl: 'nl/restaurant-marketing-ai-nl',
 };
 
+const CHATGPT_SLUGS: Record<string, string> = {
+  es: 'chatgpt-para-restaurantes',
+  en: 'en/chatgpt-for-restaurants',
+  fr: 'fr/chatgpt-pour-restaurants',
+  de: 'de/chatgpt-fuer-restaurants',
+  it: 'it/chatgpt-per-ristoranti',
+  pt: 'pt/chatgpt-para-restaurantes',
+  nl: 'nl/chatgpt-voor-restaurants',
+};
+
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
 
@@ -145,6 +155,14 @@ export default function ModernFooter() {
                   className="text-violet-600 hover:text-violet-500 transition-colors font-medium"
                 >
                   {t('footer.nav_marketing')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${CHATGPT_SLUGS[currentLanguage] || CHATGPT_SLUGS.es}`}
+                  className="text-indigo-600 hover:text-indigo-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_chatgpt')}
                 </a>
               </li>
               <li>

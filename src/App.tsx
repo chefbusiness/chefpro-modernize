@@ -17,6 +17,7 @@ import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
 import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
 import MenuRestaurante from "./pages/MenuRestaurante";
 import MarketingRestaurante from "./pages/MarketingRestaurante";
+import ChatGPTRestaurantes from "./pages/ChatGPTRestaurantes";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -83,6 +84,14 @@ const App = () => (
             <Route path="/it/marketing-ristorante-ia" element={<MarketingRestaurante />} />
             <Route path="/pt/marketing-restaurante-ia-pt" element={<MarketingRestaurante />} />
             <Route path="/nl/restaurant-marketing-ai-nl" element={<MarketingRestaurante />} />
+
+            <Route path="/chatgpt-para-restaurantes" element={<ChatGPTRestaurantes />} />
+            <Route path="/en/chatgpt-for-restaurants" element={<ChatGPTRestaurantes />} />
+            <Route path="/fr/chatgpt-pour-restaurants" element={<ChatGPTRestaurantes />} />
+            <Route path="/de/chatgpt-fuer-restaurants" element={<ChatGPTRestaurantes />} />
+            <Route path="/it/chatgpt-per-ristoranti" element={<ChatGPTRestaurantes />} />
+            <Route path="/pt/chatgpt-para-restaurantes" element={<ChatGPTRestaurantes />} />
+            <Route path="/nl/chatgpt-voor-restaurants" element={<ChatGPTRestaurantes />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
