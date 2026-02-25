@@ -828,6 +828,7 @@
     "nav_chatgpt": "ChatGPT for Restaurants",
     "nav_software_gestion": "Kitchen Management Software",
     "nav_recetas": "AI Recipes",
+    "nav_escandallos": "Food Cost Calculator",
     "nav_ai_tools": "AI Tools",
     "nav_free_tools": "Free Tools",
     "contact_title": "Contact",
@@ -2195,6 +2196,137 @@
       "title": "Start creating AI recipes for your restaurant",
       "subtitle": "Over 5,000 chefs and restaurateurs already use AI Chef Pro to create professional recipes in minutes.",
       "primary": "Try for free now",
+      "secondary": "See all plans"
+    }
+  },
+  "landingEscandallos": {
+    "seo": {
+      "title": "Restaurant Food Cost Calculator AI | AI Chef Pro",
+      "description": "Calculate restaurant food cost with AI in 2 minutes. Waste control, optimal selling price and profitability analysis per dish. Start free.",
+      "keywords": "restaurant food cost, food cost AI, food cost calculator, restaurant cost control, dish selling price, kitchen waste, dish profitability"
+    },
+    "breadcrumb": "Restaurant Food Cost with AI",
+    "hero": {
+      "badge": "AI Food Cost Calculator for Restaurants",
+      "h1": "Restaurant Food Cost with AI: Complete Costing in 2 Minutes",
+      "subtitle": "Calculate the exact cost of each dish instantly. Waste control, optimal selling price and profitability analysis to maximise your restaurant's profit.",
+      "tagline": "Stop losing money from uncontrolled food cost.",
+      "cta_primary": "Calculate my food cost free",
+      "cta_secondary": "View plans and pricing",
+      "no_card": "No credit card required · Instant access"
+    },
+    "results": [
+      { "metric": "2min", "label": "For a complete food cost" },
+      { "metric": "30%", "label": "Average cost reduction" },
+      { "metric": "5,000+", "label": "Active restaurants" },
+      { "metric": "55+", "label": "Specialized tools" }
+    ],
+    "comparison": {
+      "title": "AI Food Cost vs. Excel and Manual Methods",
+      "subtitle": "Discover how much time and money you lose doing food cost manually.",
+      "col_feature": "Aspect",
+      "col_other": "Excel / Manual",
+      "items": [
+        { "feature": "Time per costing", "other": "30-60 minutes per dish", "aichef": "2 minutes with AI" },
+        { "feature": "Price updates", "other": "Manual every time costs rise", "aichef": "Automatic recalculation instantly" },
+        { "feature": "Waste control", "other": "Ignored or imprecisely estimated", "aichef": "Waste calculated per ingredient type" },
+        { "feature": "Selling price", "other": "Gut feeling without objective basis", "aichef": "Optimal price with target margin" },
+        { "feature": "Profitability per dish", "other": "No systematic analysis", "aichef": "Real-time profitability dashboard" }
+      ]
+    },
+    "tools_section": {
+      "title": "The food cost tools your restaurant needs",
+      "subtitle": "Total food cost control: from ingredient to net margin per dish."
+    },
+    "tools": [
+      {
+        "title": "Automatic AI Food Costing",
+        "description": "Enter ingredients, weights and supplier prices. AI calculates the exact food cost of each dish in seconds.",
+        "keywords": ["automatic food costing", "food cost per dish", "food cost calculator"]
+      },
+      {
+        "title": "Waste Control",
+        "description": "Calculate real waste by ingredient type (cleaning, cooking, evaporation) for precise food cost.",
+        "keywords": ["kitchen waste", "ingredient yield", "cooking losses"]
+      },
+      {
+        "title": "Optimal Selling Price",
+        "description": "AI calculates the ideal selling price based on your target margin, market and restaurant positioning.",
+        "keywords": ["dish selling price", "restaurant margin", "pricing policy"]
+      },
+      {
+        "title": "Profitability Analysis",
+        "description": "Identify which dishes give you the most margin and which are costing you money. Optimise your menu with real data.",
+        "keywords": ["profitability per dish", "menu engineering", "food cost analysis"]
+      },
+      {
+        "title": "Price Updates",
+        "description": "When an ingredient cost rises, AI automatically recalculates all affected food costings.",
+        "keywords": ["food cost update", "food inflation", "supplier price control"]
+      },
+      {
+        "title": "Food Cost Dashboard",
+        "description": "Visualise your restaurant's overall food cost, by category and by dish. Detect deviations instantly.",
+        "keywords": ["food cost dashboard", "kitchen cost control", "restaurant KPIs"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Who uses AI Chef Pro food costing?",
+      "subtitle": "Professionals who have stopped losing money from poorly calculated food cost."
+    },
+    "profiles": [
+      { "title": "Chef-Owner", "description": "Controls the food cost of their menu without depending on accountants or endless spreadsheets." },
+      { "title": "Operations Director", "description": "Monitors food cost across multiple venues from a single dashboard with real-time data." },
+      { "title": "Head Chef", "description": "Updates food costings when supplier prices change without redoing the whole process." },
+      { "title": "Controller or Finance", "description": "Has for the first time exact control of each dish cost and its impact on the P&L." }
+    ],
+    "why_section": {
+      "title": "Uncontrolled food cost is the margin you're giving away",
+      "body": "Most restaurants lose between 5% and 15% of potential profit due to poorly calculated food cost. AI Chef Pro gives you the exact control you need to protect your margin.",
+      "benefits": [
+        "Complete food costing of any dish in under 2 minutes",
+        "Waste control by ingredient type and cooking technique",
+        "Optimal selling price calculated with your target margin",
+        "Automatic recalculation when supplier prices change",
+        "Identification of your most and least profitable dishes",
+        "Global food cost dashboard with deviation alerts"
+      ]
+    },
+    "testimonial": {
+      "quote": "We had been doing food costings in Excel for years. With AI Chef Pro they're all updated in real time and we identified 4 dishes that were losing us money without us knowing. We recovered the investment in three months.",
+      "name": "Roberto Fernández",
+      "role": "Operations Director, Grupo La Dehesa, Madrid"
+    },
+    "pricing_section": {
+      "title": "Start controlling your food cost from €0",
+      "subtitle": "Calculate your first food costings free. No card, no commitment.",
+      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about restaurant food cost with AI"
+    },
+    "faq": [
+      {
+        "question": "What is a restaurant food costing?",
+        "answer": "A food costing is the detailed calculation of the production cost of a dish: ingredients, weights, waste and supplier price. It is the basis of food cost and selling price. AI Chef Pro generates it automatically with AI in under 2 minutes."
+      },
+      {
+        "question": "How does AI Chef Pro calculate the food cost of a dish?",
+        "answer": "You enter the ingredients, weights per portion and supplier prices. AI automatically calculates the gross cost, applies the waste percentages for each ingredient and gives you the real net cost of the dish."
+      },
+      {
+        "question": "Can I calculate the selling price with AI Chef Pro?",
+        "answer": "Yes. Once the food cost is calculated, AI suggests the optimal selling price based on your target margin (typically 25%-35% food cost ratio for restaurants), also considering your restaurant's positioning."
+      },
+      {
+        "question": "What happens when an ingredient price rises?",
+        "answer": "AI Chef Pro automatically recalculates all food costings that include that ingredient. In seconds you know which dishes have become more expensive, how much the margin has changed and whether you need to adjust selling prices."
+      }
+    ],
+    "cta_section": {
+      "title": "Start controlling your food cost with AI today",
+      "subtitle": "Over 5,000 restaurants already use AI Chef Pro to calculate food cost and protect their margin.",
+      "primary": "Calculate my food cost free",
       "secondary": "See all plans"
     }
   }

@@ -1120,6 +1120,7 @@
     "nav_chatgpt": "ChatGPT für Restaurants",
     "nav_software_gestion": "Küchenverwaltungssoftware",
     "nav_recetas": "KI-Rezepte",
+    "nav_escandallos": "Food-Cost-Rechner KI",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -2482,6 +2483,137 @@
       "title": "Beginnen Sie noch heute mit KI-Rezepten für Ihr Restaurant",
       "subtitle": "Über 5.000 Köche und Gastronomen nutzen AI Chef Pro bereits, um in Minuten professionelle Rezepte zu erstellen.",
       "primary": "Jetzt kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    }
+  },
+  "landingEscandallos": {
+    "seo": {
+      "title": "Restaurant Food Cost Rechner KI | AI Chef Pro",
+      "description": "Berechnen Sie Ihren Restaurant Food Cost mit KI in 2 Minuten. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse pro Gericht. Kostenlos starten.",
+      "keywords": "Restaurant Food Cost, Food Cost KI, Food Cost Rechner, Restaurantkostenkontrolle, Gerichtverkaufspreis, Küchenverluste, Gerichtrentabilität"
+    },
+    "breadcrumb": "Restaurant Food Cost mit KI",
+    "hero": {
+      "badge": "KI Food Cost Rechner für Restaurants",
+      "h1": "Restaurant Food Cost mit KI: Vollständige Kalkulation in 2 Minuten",
+      "subtitle": "Berechnen Sie die genauen Kosten jedes Gerichts sofort. Schwundkontrolle, optimaler Verkaufspreis und Rentabilitätsanalyse zur Gewinnmaximierung.",
+      "tagline": "Hören Sie auf, Geld durch unkontrollierten Food Cost zu verlieren.",
+      "cta_primary": "Meinen Food Cost kostenlos berechnen",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
+    },
+    "results": [
+      { "metric": "2min", "label": "Für eine vollständige Kalkulation" },
+      { "metric": "30%", "label": "Durchschnittliche Kostenreduktion" },
+      { "metric": "5.000+", "label": "Aktive Restaurants" },
+      { "metric": "55+", "label": "Spezialisierte Tools" }
+    ],
+    "comparison": {
+      "title": "KI Food Cost vs. Excel und manuelle Methoden",
+      "subtitle": "Entdecken Sie, wie viel Zeit und Geld Sie durch manuelle Kalkulationen verlieren.",
+      "col_feature": "Aspekt",
+      "col_other": "Excel / Manuell",
+      "items": [
+        { "feature": "Zeit pro Kalkulation", "other": "30-60 Minuten pro Gericht", "aichef": "2 Minuten mit KI" },
+        { "feature": "Preisaktualisierungen", "other": "Manuell bei jeder Kostensteigerung", "aichef": "Automatische Neuberechnung sofort" },
+        { "feature": "Schwundkontrolle", "other": "Ignoriert oder ungenau geschätzt", "aichef": "Schwund nach Zutatenart berechnet" },
+        { "feature": "Verkaufspreis", "other": "Bauchgefühl ohne Grundlage", "aichef": "Optimaler Preis mit Zielmarge" },
+        { "feature": "Rentabilität pro Gericht", "other": "Keine systematische Analyse", "aichef": "Echtzeit-Rentabilitäts-Dashboard" }
+      ]
+    },
+    "tools_section": {
+      "title": "Die Food Cost Tools, die Ihr Restaurant braucht",
+      "subtitle": "Vollständige Food Cost Kontrolle: vom Zutat bis zur Nettomarge pro Gericht."
+    },
+    "tools": [
+      {
+        "title": "Automatische KI Food Cost Kalkulation",
+        "description": "Geben Sie Zutaten, Gewichte und Lieferantenpreise ein. KI berechnet die genauen Kosten jedes Gerichts in Sekunden.",
+        "keywords": ["automatische Kostenkalkulation", "Food Cost pro Gericht", "Food Cost Rechner"]
+      },
+      {
+        "title": "Schwundkontrolle",
+        "description": "Berechnen Sie den tatsächlichen Schwund nach Zutatenart (Reinigung, Garen, Verdunstung) für präzise Kosten.",
+        "keywords": ["Küchenschwund", "Zutatenrendite", "Garverluste"]
+      },
+      {
+        "title": "Optimaler Verkaufspreis",
+        "description": "KI berechnet den idealen Verkaufspreis basierend auf Ihrer Zielmarge, dem Markt und der Positionierung Ihres Restaurants.",
+        "keywords": ["Gerichtverkaufspreis", "Restaurantmarge", "Preispolitik"]
+      },
+      {
+        "title": "Rentabilitätsanalyse",
+        "description": "Identifizieren Sie, welche Gerichte die höchste Marge bringen und welche Sie Geld kosten. Optimieren Sie Ihre Speisekarte mit echten Daten.",
+        "keywords": ["Rentabilität pro Gericht", "Menü-Engineering", "Food Cost Analyse"]
+      },
+      {
+        "title": "Preisaktualisierungen",
+        "description": "Wenn die Kosten einer Zutat steigen, berechnet KI automatisch alle betroffenen Kalkulationen neu.",
+        "keywords": ["Food Cost Update", "Lebensmittelinflation", "Lieferantenpreiskontrolle"]
+      },
+      {
+        "title": "Food Cost Dashboard",
+        "description": "Visualisieren Sie den globalen Food Cost Ihres Restaurants, nach Kategorie und Gericht. Erkennen Sie Abweichungen sofort.",
+        "keywords": ["Food Cost Dashboard", "Küchenkostenkontrolle", "Restaurant KPIs"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wer nutzt KI Food Cost bei AI Chef Pro?",
+      "subtitle": "Profis, die aufgehört haben, durch falsch berechneten Food Cost Geld zu verlieren."
+    },
+    "profiles": [
+      { "title": "Koch und Inhaber", "description": "Kontrolliert den Food Cost seiner Karte ohne Abhängigkeit von Buchhaltern oder endlosen Tabellen." },
+      { "title": "Betriebsleiter", "description": "Überwacht den Food Cost mehrerer Standorte von einem einzigen Dashboard mit Echtzeitdaten." },
+      { "title": "Küchenchef", "description": "Aktualisiert Kalkulationen wenn Lieferantenpreise steigen, ohne den gesamten Prozess zu wiederholen." },
+      { "title": "Controller oder Finanz", "description": "Hat erstmals genaue Kontrolle über die Kosten jedes Gerichts und deren Auswirkung auf das Ergebnis." }
+    ],
+    "why_section": {
+      "title": "Unkontrollierter Food Cost ist die Marge, die Sie verschenken",
+      "body": "Die meisten Restaurants verlieren 5% bis 15% potenziellen Gewinn durch falsch berechneten Food Cost. AI Chef Pro gibt Ihnen die präzise Kontrolle, die Sie benötigen, um Ihre Marge zu schützen.",
+      "benefits": [
+        "Vollständige Kalkulation jedes Gerichts in unter 2 Minuten",
+        "Schwundkontrolle nach Zutatenart und Gartechnik",
+        "Optimaler Verkaufspreis mit Ihrer Zielmarge berechnet",
+        "Automatische Neuberechnung bei Lieferantenpreisänderungen",
+        "Identifikation Ihrer profitabelsten und unrentabelsten Gerichte",
+        "Globales Food Cost Dashboard mit Abweichungsalarmen"
+      ]
+    },
+    "testimonial": {
+      "quote": "Wir haben jahrelang Food Cost in Excel berechnet. Mit AI Chef Pro sind alle Kalkulationen in Echtzeit aktualisiert und wir haben 4 Gerichte identifiziert, die uns unwissentlich Geld gekostet haben. Wir haben die Investition in drei Monaten zurückgewonnen.",
+      "name": "Roberto Fernández",
+      "role": "Betriebsleiter, Grupo La Dehesa, Madrid"
+    },
+    "pricing_section": {
+      "title": "Beginnen Sie mit der Food Cost Kontrolle ab 0€",
+      "subtitle": "Berechnen Sie Ihre ersten Kalkulationen kostenlos. Ohne Karte, ohne Bindung.",
+      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufig gestellte Fragen zum Restaurant Food Cost mit KI"
+    },
+    "faq": [
+      {
+        "question": "Was ist eine Restaurant Food Cost Kalkulation?",
+        "answer": "Eine Food Cost Kalkulation ist die detaillierte Berechnung der Produktionskosten eines Gerichts: Zutaten, Gewichte, Schwund und Lieferantenpreis. Es ist die Grundlage des Food Cost und des Verkaufspreises. AI Chef Pro generiert sie automatisch mit KI in unter 2 Minuten."
+      },
+      {
+        "question": "Wie berechnet AI Chef Pro den Food Cost eines Gerichts?",
+        "answer": "Sie geben Zutaten, Gewichte pro Portion und Lieferantenpreise ein. KI berechnet automatisch die Bruttokosten, wendet die Schwundprozentsätze für jede Zutat an und gibt Ihnen die tatsächlichen Nettokosten des Gerichts."
+      },
+      {
+        "question": "Kann ich den Verkaufspreis mit AI Chef Pro berechnen?",
+        "answer": "Ja. Nach der Food Cost Berechnung schlägt die KI den optimalen Verkaufspreis basierend auf Ihrer Zielmarge vor (typischerweise 25%-35% Food Cost Ratio für Restaurants), unter Berücksichtigung der Positionierung Ihres Restaurants."
+      },
+      {
+        "question": "Was passiert, wenn ein Zutatenpreis steigt?",
+        "answer": "AI Chef Pro berechnet automatisch alle Kalkulationen neu, die diese Zutat enthalten. In Sekunden wissen Sie, welche Gerichte teurer geworden sind, wie stark sich die Marge verändert hat und ob Sie die Verkaufspreise anpassen müssen."
+      }
+    ],
+    "cta_section": {
+      "title": "Beginnen Sie noch heute mit KI Food Cost Kontrolle",
+      "subtitle": "Über 5.000 Restaurants nutzen AI Chef Pro bereits, um Food Cost zu berechnen und ihre Marge zu schützen.",
+      "primary": "Meinen Food Cost kostenlos berechnen",
       "secondary": "Alle Pläne ansehen"
     }
   }
