@@ -55,6 +55,16 @@ const CHATGPT_SLUGS: Record<string, string> = {
   nl: 'nl/chatgpt-voor-restaurants',
 };
 
+const SOFTWARE_GESTION_SLUGS: Record<string, string> = {
+  es: 'software-gestion-cocina-ia',
+  en: 'en/kitchen-management-software-ai',
+  fr: 'fr/logiciel-gestion-cuisine-ia',
+  de: 'de/kuechenverwaltung-ki',
+  it: 'it/software-gestione-cucina-ia',
+  pt: 'pt/software-gestao-cozinha-ia',
+  nl: 'nl/keuken-software-ai',
+};
+
 const MENTORIA_SLUGS: Record<string, string> = {
   es: 'mentoria-online',
   en: 'en/mentoria-online',
@@ -168,6 +178,14 @@ export default function ModernFooter() {
                   className="text-indigo-600 hover:text-indigo-500 transition-colors font-medium"
                 >
                   {t('footer.nav_chatgpt')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${SOFTWARE_GESTION_SLUGS[lang] || SOFTWARE_GESTION_SLUGS.es}`}
+                  className="text-emerald-600 hover:text-emerald-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_software_gestion')}
                 </a>
               </li>
             </ul>
