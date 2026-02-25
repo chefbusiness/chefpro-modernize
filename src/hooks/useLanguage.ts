@@ -25,6 +25,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'reduzir-custos-restaurante-ia',
     nl: 'restaurantkosten-verlagen-ai',
   },
+  {
+    es: 'carta-menu-restaurante-ia',
+    en: 'restaurant-menu-ai',
+    fr: 'carte-menu-restaurant-ia',
+    de: 'speisekarte-restaurant-ki',
+    it: 'menu-ristorante-ia',
+    pt: 'cardapio-restaurante-ia',
+    nl: 'restaurantmenu-ai',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

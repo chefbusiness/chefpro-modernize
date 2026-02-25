@@ -1112,6 +1112,7 @@
     "nav_pricing": "Preise",
     "nav_blog": "Blog",
     "nav_costs": "Kosten senken",
+    "nav_menu": "Speisekarte mit KI",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -1624,5 +1625,135 @@
       "secondary": "Alle Pläne ansehen"
     },
     "breadcrumb": "KI-Tools für Restaurants"
+  },
+  "landingMenu": {
+    "seo": {
+      "title": "Speisekarte Restaurant mit KI erstellen | AI Chef Pro",
+      "description": "Erstellen Sie die Speisekarte Ihres Restaurants mit künstlicher Intelligenz. Kartendesign, Menu Engineering, attraktive Beschreibungen und Allergenverwaltung. Kostenlos testen.",
+      "keywords": "speisekarte restaurant ki, menü restaurant ki, ki speisekarte erstellen, menu engineering ki, gerichtsbeschreibungen ki, digitale speisekarte, allergene speisekarte"
+    },
+    "hero": {
+      "badge": "Speisekarte in Minuten mit KI gestalten",
+      "h1": "Speisekarte und Menü für Restaurants mit Künstlicher Intelligenz",
+      "subtitle": "Gestalten, optimieren und erneuern Sie die Speisekarte Ihres Restaurants mit KI. Unwiderstehliche Beschreibungen, profitable Preise, Allergene verwaltet und Saisonmenüs in Minuten.",
+      "tagline": "Karte gestalten · Preise optimieren · Allergene verwalten · Saisonal erneuern",
+      "cta_primary": "Meine Karte kostenlos erstellen",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Kostenloser Plan verfügbar"
+    },
+    "results": [
+      { "metric": "3h", "label": "für eine vollständige Speisekarte von Grund auf" },
+      { "metric": "40%", "label": "mehr Marge mit KI Menu Engineering" },
+      { "metric": "14", "label": "Allergene automatisch verwaltet" },
+      { "metric": "25+", "label": "Weltküchen zur Inspiration Ihrer Karte" }
+    ],
+    "tools_section": {
+      "title": "Alles, was Sie für eine rentable Speisekarte brauchen",
+      "subtitle": "Von der ersten Idee bis zur gedruckten oder digitalen Karte. KI übernimmt die schwere Arbeit, damit Sie sich aufs Kochen konzentrieren können."
+    },
+    "tools": [
+      {
+        "title": "Vollständiger Speisekarten-Generator",
+        "description": "Beschreiben Sie Ihr Konzept und die KI erstellt eine vollständige Speisekarte mit Vorspeisen, Hauptgerichten, Desserts und Getränken passend zu Stil, Saison und Ziel-Food-Cost.",
+        "keywords": ["Speisekarte Restaurant", "vollständiges KI-Menü", "Kartengestaltung"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analysieren Sie, welche Gerichte Stars, Rätsel, Zugpferde oder Hunde sind. Ordnen Sie Ihre Karte neu, um Marge und Umsatzvolumen zu maximieren.",
+        "keywords": ["Menu Engineering", "Gerichtsrentabilität", "Speisekarten-Matrix"]
+      },
+      {
+        "title": "Gastronomische Beschreibungen",
+        "description": "Erstellen Sie evokative und appetitanregende Beschreibungen für jedes Gericht. Verkaufsfördernde Texte, angepasst an den Ton Ihres Restaurants.",
+        "keywords": ["Gerichtsbeschreibungen", "gastronomisches Copywriting", "Speisekartentexte"]
+      },
+      {
+        "title": "Allergenverwaltung",
+        "description": "Identifizieren und kennzeichnen Sie automatisch die 14 deklarationspflichtigen Allergene. Rechtliche Konformität mühelos für alle Gerichte.",
+        "keywords": ["Allergene Speisekarte", "Allergenvorschriften", "rechtliche Kennzeichnung"]
+      },
+      {
+        "title": "Saisonale Menüs",
+        "description": "Erneuern Sie Ihre Karte gemäß Saisonalität, Marktprodukten und aktuellen Gastronomietrends. Immer frisch, immer rentabel.",
+        "keywords": ["Saisonmenü", "saisonale Karte", "Marktprodukte"]
+      },
+      {
+        "title": "Spezialmenüs & Weinbegleitung",
+        "description": "Erstellen Sie Weinkarten, Cocktailmenüs, Degustationsmenüs und Paarungsvorschläge mit eleganten Erklärungen zu jedem Gericht.",
+        "keywords": ["Weinkarte", "Speisenbegleitung", "Degustationsmenü"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Für jeden Gastronomietyp geeignet",
+      "subtitle": "Ob Sie zum ersten Mal eine Speisekarte gestalten oder sie seit Jahren erneuern – AI Chef Pro passt das Ergebnis an Ihr Konzept an."
+    },
+    "profiles": [
+      {
+        "title": "À-la-carte-Restaurant",
+        "description": "Erstellen und erneuern Sie Ihre Karte schnell, behalten Sie den Food Cost im Griff und heben Sie sich mit fesselnden Beschreibungen ab."
+      },
+      {
+        "title": "Bar & Gastrobar",
+        "description": "Gestalten Sie Tapas, Sharing-Gerichte und Tagesmenüs kreativ. Kurze, direkte Beschreibungen, die den Durchschnittsbon erhöhen."
+      },
+      {
+        "title": "Hotel & Catering",
+        "description": "Verwalten Sie mehrere Karten (Frühstück, Buffet, Bankette) mit Markenkonsistenz und Allergen-Compliance in allen Servicebereichen."
+      },
+      {
+        "title": "Küchenchef",
+        "description": "Beschleunigen Sie die Entwicklung neuer Konzepte, aktualisieren Sie die Karte saisonal und präsentieren Sie makellose Degustationsmenüs in Minuten."
+      }
+    ],
+    "why_section": {
+      "title": "Warum KI für die Gestaltung Ihrer Speisekarte nutzen?",
+      "body": "Eine gut gestaltete Speisekarte ist das wirkungsvollste Verkaufsinstrument eines Restaurants. KI-gestütztes Menu Engineering ermöglicht Karten, die Gäste unbewusst zu den rentabelsten Gerichten lenken und so den Durchschnittsbon und die Bruttomarge steigern.",
+      "benefits": [
+        "Erstellen Sie eine vollständige Karte in Stunden, nicht Wochen",
+        "Identifizieren Sie Star-Gerichte, die Marge und Umsatz maximieren",
+        "Schreiben Sie Beschreibungen, die Appetit machen und den Bon erhöhen",
+        "Verwalten Sie die 14 gesetzlichen Allergene fehlerlos",
+        "Erneuern Sie die Karte jede Saison ohne von vorne anzufangen",
+        "Passen Sie das Menü für internationale Gäste in verschiedene Sprachen an"
+      ]
+    },
+    "testimonial": {
+      "quote": "Wir haben unsere komplette Speisekarte an einem Nachmittag überarbeitet. Die KI schlug Preisänderungen vor, die unseren Durchschnittsbon im ersten Monat um 18% steigerten.",
+      "name": "Carlos Mendoza",
+      "role": "Koch und Inhaber, Restaurante El Origen, Madrid"
+    },
+    "pricing_section": {
+      "title": "Pläne für grenzenlose Kartengestaltung",
+      "subtitle": "Vom kostenlosen Einstiegsplan bis zur unbegrenzten Nutzung für große Betriebe mit mehreren Karten.",
+      "annual_note": "Auch als Jahresplan: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufige Fragen zur KI-Speisekarten-Gestaltung"
+    },
+    "faq": [
+      {
+        "question": "Kann die KI die vollständige Speisekarte meines Restaurants erstellen?",
+        "answer": "Ja. Sie beschreiben Ihr Konzept, die Küchenlinie, den Ziel-Durchschnittsbon und den maximalen Food Cost pro Gericht, und die KI erstellt eine vollständige Karte mit Namen, Beschreibungen und Verkaufspreisvorschlägen."
+      },
+      {
+        "question": "Was ist Menu Engineering und wie hilft mir die KI dabei?",
+        "answer": "Menu Engineering analysiert jedes Gericht nach Deckungsbeitrag und Beliebtheit: Stars, Rätsel, Zugpferde oder Hunde. Die KI von AI Chef Pro führt diese Analyse automatisch durch und empfiehlt, welche Gerichte gefördert, überarbeitet oder entfernt werden sollten."
+      },
+      {
+        "question": "Verwaltet die KI die Allergene meiner Gerichte?",
+        "answer": "Ja. Geben Sie die Zutaten ein und die KI identifiziert automatisch die 14 deklarationspflichtigen Allergene gemäß EU-Verordnung 1169/2011. Die Daten können für Ihre digitale oder gedruckte Speisekarte exportiert werden."
+      },
+      {
+        "question": "Kann ich meine Speisekarte saisonal mit KI aktualisieren?",
+        "answer": "Selbstverständlich. Bitten Sie die KI, Ihre Karte für Frühling, Sommer, Herbst oder Winter zu erneuern und dabei saisonale Produkte und aktuelle Trends einzubeziehen, ohne die gesamte Karte neu zu gestalten."
+      }
+    ],
+    "cta_section": {
+      "title": "Gestalten Sie die Speisekarte, die Ihr Restaurant verdient",
+      "subtitle": "Über 5.000 Fachleute nutzen AI Chef Pro bereits für rentable, attraktive und rechtskonforme Speisekarten.",
+      "primary": "Meine Karte kostenlos erstellen",
+      "secondary": "Alle Pläne ansehen"
+    },
+    "breadcrumb": "Speisekarte Restaurant mit KI"
   }
 }

@@ -25,6 +25,16 @@ const COSTES_SLUGS: Record<string, string> = {
   nl: 'nl/restaurantkosten-verlagen-ai',
 };
 
+const MENU_SLUGS: Record<string, string> = {
+  es: 'carta-menu-restaurante-ia',
+  en: 'en/restaurant-menu-ai',
+  fr: 'fr/carte-menu-restaurant-ia',
+  de: 'de/speisekarte-restaurant-ki',
+  it: 'it/menu-ristorante-ia',
+  pt: 'pt/cardapio-restaurante-ia',
+  nl: 'nl/restaurantmenu-ai',
+};
+
 export default function ModernFooter() {
   const { getAppUrl, currentLanguage, t } = useLanguage();
 
@@ -109,6 +119,14 @@ export default function ModernFooter() {
                   className="text-red-600 hover:text-red-500 transition-colors font-medium"
                 >
                   {t('footer.nav_costs')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${MENU_SLUGS[currentLanguage] || MENU_SLUGS.es}`}
+                  className="text-emerald-600 hover:text-emerald-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_menu')}
                 </a>
               </li>
               <li>

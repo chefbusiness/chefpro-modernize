@@ -1099,6 +1099,7 @@
     "nav_pricing": "Preços",
     "nav_blog": "Blog",
     "nav_costs": "Reduzir Custos",
+    "nav_menu": "Cardápio com IA",
     "nav_ai_tools": "Ferramentas IA",
     "nav_free_tools": "Ferramentas Gratuitas",
     "contact_title": "Contato",
@@ -1611,5 +1612,135 @@
       "secondary": "Ver todos os planos"
     },
     "breadcrumb": "Ferramentas IA para Restaurantes"
+  },
+  "landingMenu": {
+    "seo": {
+      "title": "Cardápio de Restaurante com IA | AI Chef Pro",
+      "description": "Crie o cardápio do seu restaurante com inteligência artificial. Design de cardápio, menu engineering, descrições atraentes e gestão de alergênios. Experimente grátis.",
+      "keywords": "cardápio restaurante ia, menu restaurante inteligência artificial, menu engineering ia, descrições pratos ia, cardápio digital restaurante, alergênios cardápio"
+    },
+    "hero": {
+      "badge": "Crie seu cardápio com IA em minutos",
+      "h1": "Cardápio e Menu de Restaurante com Inteligência Artificial",
+      "subtitle": "Projete, otimize e renove o cardápio do seu restaurante com IA. Descrições irresistíveis, preços rentáveis, alergênios gerenciados e menus sazonais em minutos.",
+      "tagline": "Projete seu cardápio · Otimize preços · Gerencie alergênios · Renove por temporada",
+      "cta_primary": "Criar meu cardápio grátis",
+      "cta_secondary": "Ver planos e preços",
+      "no_card": "Sem cartão de crédito · Plano gratuito disponível"
+    },
+    "results": [
+      { "metric": "3h", "label": "para criar um cardápio completo do zero" },
+      { "metric": "40%", "label": "mais margem com menu engineering IA" },
+      { "metric": "14", "label": "alergênios gerenciados automaticamente" },
+      { "metric": "25+", "label": "cozinhas do mundo para inspirar seu cardápio" }
+    ],
+    "tools_section": {
+      "title": "Tudo que você precisa para um cardápio rentável",
+      "subtitle": "Da primeira ideia ao cardápio impresso ou digital. A IA faz o trabalho pesado para que você se concentre em cozinhar."
+    },
+    "tools": [
+      {
+        "title": "Gerador de Cardápio Completo",
+        "description": "Descreva seu conceito e a IA gera um cardápio completo com entradas, pratos principais, sobremesas e bebidas adaptados ao seu estilo, temporada e food cost alvo.",
+        "keywords": ["cardápio restaurante", "menu completo ia", "design cardápio"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analise quais pratos são estrelas, enigmas, cavalos de batalha ou cães. Reorganize seu cardápio para maximizar margem e volume de vendas.",
+        "keywords": ["menu engineering", "rentabilidade pratos", "matriz BCG cardápio"]
+      },
+      {
+        "title": "Descrições Gastronômicas",
+        "description": "Gere descrições evocativas e apetitosas para cada prato. Textos que vendem, adaptados ao tom do seu restaurante e ao idioma dos seus clientes.",
+        "keywords": ["descrições pratos", "copywriting gastronômico", "textos cardápio"]
+      },
+      {
+        "title": "Gestão de Alergênios",
+        "description": "Identifique e rotule automaticamente os 14 alergênios de declaração obrigatória. Conformidade legal sem esforço em todos os pratos do seu cardápio.",
+        "keywords": ["alergênios cardápio", "regulamentação alergênios", "rotulagem legal"]
+      },
+      {
+        "title": "Menus Sazonais",
+        "description": "Renove seu cardápio conforme a sazonalidade, produtos do mercado e tendências gastronômicas atuais. Sempre fresco, sempre rentável.",
+        "keywords": ["menu sazonal", "cardápio sazonal", "produtos do mercado"]
+      },
+      {
+        "title": "Cardápios Especiais e Harmonizações",
+        "description": "Crie cartas de vinhos, menus de coquetéis, menus de degustação e sugestões de harmonização com explicações elegantes para cada prato.",
+        "keywords": ["carta de vinhos", "harmonização", "menu degustação"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Para todos os tipos de estabelecimento",
+      "subtitle": "Seja projetando um cardápio pela primeira vez ou renovando-o há anos, a IA do AI Chef Pro adapta o resultado ao seu conceito."
+    },
+    "profiles": [
+      {
+        "title": "Restaurante à la carte",
+        "description": "Crie e renove seu cardápio rapidamente, mantenha o food cost sob controle e destaque-se com descrições que encantam."
+      },
+      {
+        "title": "Bar & Gastrobar",
+        "description": "Projete petiscos, pratos para compartilhar e prato do dia com criatividade. Descrições curtas e diretas que aumentam o ticket médio."
+      },
+      {
+        "title": "Hotel & Catering",
+        "description": "Gerencie vários cardápios (café da manhã, buffet, banquetes) com consistência de marca e conformidade de alergênios em todos os serviços."
+      },
+      {
+        "title": "Chef Executivo",
+        "description": "Acelere o desenvolvimento de novas propostas, atualize o cardápio por temporada e apresente menus de degustação impecáveis em minutos."
+      }
+    ],
+    "why_section": {
+      "title": "Por que usar IA para criar o cardápio do seu restaurante?",
+      "body": "Um cardápio bem projetado é a ferramenta de venda mais poderosa de um restaurante. O menu engineering com IA cria cardápios que guiam os clientes para os pratos mais rentáveis sem que percebam, aumentando o ticket médio e a margem bruta.",
+      "benefits": [
+        "Gere um cardápio completo em horas, não em semanas",
+        "Identifique pratos estrela que maximizam margem e rotatividade",
+        "Escreva descrições que geram desejo e aumentam o ticket",
+        "Gerencie os 14 alergênios legais sem erros ou omissões",
+        "Renove o cardápio por temporada sem começar do zero",
+        "Adapte o menu em diferentes idiomas para clientes internacionais"
+      ]
+    },
+    "testimonial": {
+      "quote": "Reformulamos nosso cardápio completo em uma tarde. A IA sugeriu mudanças de preço e reorganização que aumentaram nosso ticket médio em 18% no primeiro mês.",
+      "name": "Carlos Mendoza",
+      "role": "Chef-Proprietário, Restaurante El Origen, Madrid"
+    },
+    "pricing_section": {
+      "title": "Planos para criar cardápios sem limites",
+      "subtitle": "Do plano gratuito para começar ao uso ilimitado para grandes operações com múltiplos cardápios.",
+      "annual_note": "Plano anual também disponível: AI Chef Premium Plus Anual a 950€/ano · Economize 2 meses"
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes sobre criação de cardápio com IA"
+    },
+    "faq": [
+      {
+        "question": "A IA pode criar o cardápio completo do meu restaurante?",
+        "answer": "Sim. Você descreve seu conceito gastronômico, o tipo de cozinha, o ticket médio alvo e o food cost máximo por prato, e a IA gera um cardápio completo com entradas, pratos principais, sobremesas e bebidas, incluindo nomes, descrições e preços de venda sugeridos."
+      },
+      {
+        "question": "O que é menu engineering e como a IA me ajuda?",
+        "answer": "O menu engineering analisa cada prato por sua margem de contribuição e popularidade, classificando-os em estrelas, enigmas, cavalos de batalha e cães. A IA do AI Chef Pro faz essa análise automaticamente e recomenda quais pratos promover, reformular ou remover para maximizar a rentabilidade."
+      },
+      {
+        "question": "A IA gerencia os alergênios dos meus pratos?",
+        "answer": "Sim. Insira os ingredientes de cada prato e a IA identifica automaticamente os 14 alergênios de declaração obrigatória conforme o Regulamento UE 1169/2011. Você pode exportar as informações para incluir em seu cardápio digital ou impresso."
+      },
+      {
+        "question": "Posso atualizar meu cardápio sazonalmente com IA?",
+        "answer": "Com certeza. Você pode pedir à IA para renovar seu cardápio para primavera, verão, outono ou inverno, incorporando produtos sazonais e tendências atuais. Ela também pode adaptar pratos existentes a novos ingredientes sem redesenhar todo o cardápio."
+      }
+    ],
+    "cta_section": {
+      "title": "Crie o cardápio que seu restaurante merece",
+      "subtitle": "Mais de 5.000 profissionais já usam o AI Chef Pro para criar cardápios rentáveis, atraentes e legalmente corretos.",
+      "primary": "Criar meu cardápio grátis",
+      "secondary": "Ver todos os planos"
+    },
+    "breadcrumb": "Cardápio de Restaurante com IA"
   }
 }
