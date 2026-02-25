@@ -18,6 +18,7 @@ import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
 import MenuRestaurante from "./pages/MenuRestaurante";
 import MarketingRestaurante from "./pages/MarketingRestaurante";
 import ChatGPTRestaurantes from "./pages/ChatGPTRestaurantes";
+import SoftwareGestionCocina from "./pages/SoftwareGestionCocina";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -92,6 +93,15 @@ const App = () => (
             <Route path="/it/chatgpt-per-ristoranti" element={<ChatGPTRestaurantes />} />
             <Route path="/pt/chatgpt-para-restaurantes" element={<ChatGPTRestaurantes />} />
             <Route path="/nl/chatgpt-voor-restaurants" element={<ChatGPTRestaurantes />} />
+
+            {/* Landing software gestión cocina — todos los idiomas */}
+            <Route path="/software-gestion-cocina-ia" element={<SoftwareGestionCocina />} />
+            <Route path="/en/kitchen-management-software-ai" element={<SoftwareGestionCocina />} />
+            <Route path="/fr/logiciel-gestion-cuisine-ia" element={<SoftwareGestionCocina />} />
+            <Route path="/de/kuechenverwaltung-ki" element={<SoftwareGestionCocina />} />
+            <Route path="/it/software-gestione-cucina-ia" element={<SoftwareGestionCocina />} />
+            <Route path="/pt/software-gestao-cozinha-ia" element={<SoftwareGestionCocina />} />
+            <Route path="/nl/keuken-software-ai" element={<SoftwareGestionCocina />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

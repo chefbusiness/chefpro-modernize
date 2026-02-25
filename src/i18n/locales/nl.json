@@ -2202,5 +2202,136 @@
       "secondary": "Alle plannen bekijken"
     },
     "breadcrumb": "ChatGPT voor Restaurants"
+  },
+  "landingSoftwareGestion": {
+    "seo": {
+      "title": "AI Keukenbeheersoftware | AI Chef Pro",
+      "description": "AI-gestuurde keukenbeheersoftware: food cost, inventaris, recepten en allergenen op één platform. Meer dan 5.000 restaurants gebruiken het al. Start gratis.",
+      "keywords": "keukenbeheersoftware, restaurant management AI, horecasoftware, professionele keukensoftware, restaurantinventaris, food cost AI"
+    },
+    "breadcrumb": "AI Keukenbeheersoftware",
+    "hero": {
+      "badge": "AI-software voor Professioneel Keukenbeheer",
+      "h1": "AI Keukenbeheersoftware voor Restaurants",
+      "subtitle": "Beheer food cost, inventaris, recepten en allergenen vanuit één platform. De gespecialiseerde AI die professionele keukens echt begrijpt.",
+      "tagline": "Bespaar dagelijks tot 3 uur op keukenbeheer.",
+      "cta_primary": "Nu gratis proberen",
+      "cta_secondary": "Bekijk plannen en prijzen",
+      "no_card": "Geen creditcard vereist · Directe toegang"
+    },
+    "results": [
+      { "metric": "3u", "label": "Dagelijkse tijdsbesparing" },
+      { "metric": "5.000+", "label": "Actieve restaurants" },
+      { "metric": "55+", "label": "AI-keukentools" },
+      { "metric": "30%", "label": "Gemiddelde kostenreductie" }
+    ],
+    "comparison": {
+      "title": "AI Chef Pro vs. Traditionele beheersoftware",
+      "subtitle": "Ontdek waarom chefs overstappen op AI-gestuurd keukenbeheer.",
+      "col_feature": "Functie",
+      "col_other": "Traditionele Software",
+      "items": [
+        { "feature": "Automatische food cost", "other": "Handmatig in Excel", "aichef": "AI berekent food cost direct" },
+        { "feature": "Receptenbeheer", "other": "Word-bestanden of papier", "aichef": "55+ gespecialiseerde AI-tools" },
+        { "feature": "Allergenencontrole", "other": "Handmatige updates vereist", "aichef": "EU-verordening 1169/2011 ingebouwd" },
+        { "feature": "Menu-engineering", "other": "Geen winstgevendheidsanalyse", "aichef": "AI optimaliseert marges per gerecht" },
+        { "feature": "Prijsupdates", "other": "Traag en omslachtig proces", "aichef": "Automatische herberekening in seconden" }
+      ]
+    },
+    "tools_section": {
+      "title": "Alles wat u nodig heeft om uw keuken met AI te beheren",
+      "subtitle": "Gespecialiseerde tools voor de echte uitdagingen van professioneel keukenbeheer."
+    },
+    "tools": [
+      {
+        "title": "AI Food Cost",
+        "description": "Bereken de exacte kosten van elk gerecht in seconden. Voer ingrediënten, gewichten en leveranciersprijs in: de AI doet de rest.",
+        "keywords": ["food cost restaurant", "food cost AI", "kosten per gerecht"]
+      },
+      {
+        "title": "Inventariscontrole",
+        "description": "Beheer uw voorraad in realtime. Automatische meldingen wanneer ingrediënten het minimum bereiken. Verminder verspilling.",
+        "keywords": ["restaurantinventaris", "keukenvoorraadbeheer", "verspillingscontrole"]
+      },
+      {
+        "title": "Receptenbeheer",
+        "description": "Digitaliseer en standaardiseer al uw recepten met professionele technische fiches en automatische portiescaling.",
+        "keywords": ["recept technische fiche", "receptstandaardisatie", "digitaal receptenboek"]
+      },
+      {
+        "title": "Allergenen & Regelgeving",
+        "description": "Controle van de 14 allergenen conform EU-verordening 1169/2011. Vermijd boetes en bescherm uw gasten.",
+        "keywords": ["restaurantallergenen", "EU-allergerenverordening", "voedselveiligheid"]
+      },
+      {
+        "title": "Menu-engineering",
+        "description": "Analyseer de winstgevendheid van elk gerecht en optimaliseer uw menu voor maximale winst per couvret.",
+        "keywords": ["menu-engineering", "gerecht winstgevendheid", "menuoptimalisatie"]
+      },
+      {
+        "title": "Beheerrapporten",
+        "description": "Visualiseer uw keukenperformance met automatische rapporten over food cost, marges en consumptietrends.",
+        "keywords": ["food cost rapport", "kostenbeheersing", "restaurantmarge"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wie gebruikt AI Chef Pro keukenbeheersoftware?",
+      "subtitle": "Horecaprofessionals die hun keuken hebben gedigitaliseerd met AI."
+    },
+    "profiles": [
+      { "title": "Chef-eigenaar", "description": "Controleert keukenkosten zonder afhankelijk te zijn van externe accountants of spreadsheets." },
+      { "title": "Keukenchef", "description": "Standaardiseert recepten, beheert voorraad en superviseert het team vanuit één platform." },
+      { "title": "Operationeel Directeur", "description": "Beheert meerdere locaties met realtime data vanuit elke keuken." },
+      { "title": "Bar- of Café-eigenaar", "description": "Geen complicaties: beheer food cost en menukaart in minuten, niet in uren." }
+    ],
+    "why_section": {
+      "title": "Het keukenbeheer dat chefs nodig hebben, mogelijk gemaakt door AI",
+      "body": "Traditionele beheersoftware is traag, rigide en begrijpt de keuken niet. AI Chef Pro is software ontworpen door en voor horecaprofessionals.",
+      "benefits": [
+        "Automatische food cost met actuele marktprijzen",
+        "Geïntegreerde allergenencontrole conform huidige EU-regelgeving",
+        "Gestandaardiseerde recepten met professionele technische fiches",
+        "Gerecht-voor-gerecht winstgevendheidsanalyse met menu-engineering",
+        "Realtime voorraadmeldingen en verspillingscontrole",
+        "Toegang vanaf elk apparaat, zonder installatie of onderhoud"
+      ]
+    },
+    "testimonial": {
+      "quote": "Vroeger besteedde ik dagelijks twee uur aan het bijwerken van food costs en het controleren van de voorraad. Met AI Chef Pro doe ik dat in 10 minuten met veel meer detail. Het is de keukenbeheersoftware die ik altijd nodig had.",
+      "name": "Carlos Méndez",
+      "role": "Chef-eigenaar, Restaurante Méndez, Madrid"
+    },
+    "pricing_section": {
+      "title": "AI keukenbeheersoftware vanaf €0",
+      "subtitle": "Start gratis en schaal op wanneer uw bedrijf het nodig heeft. Geen verplichtingen.",
+      "annual_note": "Jaarplan AI Chef Premium Plus ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over keukenbeheersoftware"
+    },
+    "faq": [
+      {
+        "question": "Wat is AI keukenbeheersoftware?",
+        "answer": "Het is een platform dat kunstmatige intelligentie gebruikt om keukenbeheertaken te automatiseren: food cost, inventaris, recepten, allergenen en winstgevendheidsanalyse. AI Chef Pro integreert 55+ tools gespecialiseerd in de horeca."
+      },
+      {
+        "question": "Kan ik mijn food costs beheren met AI Chef Pro?",
+        "answer": "Ja. AI Chef Pro berekent automatisch de food cost van elk gerecht met uw ingrediënten, gewichten en leveranciersprijs. Het werkt kosten bij in seconden wanneer marktprijzen veranderen."
+      },
+      {
+        "question": "Voldoet AI Chef Pro aan de allergenenregelgeving?",
+        "answer": "Ja. Het systeem identificeert de 14 allergenen conform EU-verordening 1169/2011 en genereert technische fiches die voldoen aan de huidige Europese regelgeving."
+      },
+      {
+        "question": "Moet ik software installeren op mijn computer?",
+        "answer": "Nee. AI Chef Pro werkt volledig in de cloud. Toegang vanaf elk apparaat — computer, tablet of mobiel — zonder installaties of handmatige updates."
+      }
+    ],
+    "cta_section": {
+      "title": "Begin vandaag nog met AI-gestuurd keukenbeheer",
+      "subtitle": "Meer dan 5.000 horecaprofessionals gebruiken AI Chef Pro al om hun keuken te beheren met meer controle en minder tijd.",
+      "primary": "Nu gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    }
   }
 }

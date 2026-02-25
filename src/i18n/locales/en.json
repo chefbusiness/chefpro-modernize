@@ -1933,5 +1933,136 @@
       "secondary": "See all plans"
     },
     "breadcrumb": "ChatGPT for Restaurants"
+  },
+  "landingSoftwareGestion": {
+    "seo": {
+      "title": "AI Kitchen Management Software | AI Chef Pro",
+      "description": "AI-powered kitchen management software: food cost, inventory, recipes and allergens in one platform. Used by 5,000+ restaurants. Start free.",
+      "keywords": "kitchen management software, restaurant management AI, hospitality software, professional kitchen software, restaurant inventory management, food cost AI"
+    },
+    "breadcrumb": "AI Kitchen Management Software",
+    "hero": {
+      "badge": "AI Software for Professional Kitchen Management",
+      "h1": "AI Kitchen Management Software for Restaurants",
+      "subtitle": "Control food cost, inventory, recipes and allergens from a single platform. The specialized AI that truly understands professional kitchens.",
+      "tagline": "Save up to 3 hours daily on kitchen management.",
+      "cta_primary": "Try for free now",
+      "cta_secondary": "View plans and pricing",
+      "no_card": "No credit card required · Instant access"
+    },
+    "results": [
+      { "metric": "3h", "label": "Daily management savings" },
+      { "metric": "5,000+", "label": "Active restaurants" },
+      { "metric": "55+", "label": "AI kitchen management tools" },
+      { "metric": "30%", "label": "Average cost reduction" }
+    ],
+    "comparison": {
+      "title": "AI Chef Pro vs. Traditional Management Software",
+      "subtitle": "See why chefs are switching to AI-powered kitchen management.",
+      "col_feature": "Feature",
+      "col_other": "Traditional Software",
+      "items": [
+        { "feature": "Automatic food costing", "other": "Manual, in Excel sheets", "aichef": "AI calculates food cost instantly" },
+        { "feature": "Recipe management", "other": "Word files or paper", "aichef": "55+ specialized AI tools" },
+        { "feature": "Allergen control", "other": "Manual updates required", "aichef": "EU Regulation 1169/2011 built-in" },
+        { "feature": "Menu engineering", "other": "No profitability analysis", "aichef": "AI optimizes margins per dish" },
+        { "feature": "Price updates", "other": "Slow and tedious process", "aichef": "Automatic recalculation in seconds" }
+      ]
+    },
+    "tools_section": {
+      "title": "Everything you need to manage your kitchen with AI",
+      "subtitle": "Specialized tools built to solve the real challenges of professional kitchen management."
+    },
+    "tools": [
+      {
+        "title": "AI Food Costing",
+        "description": "Calculate the exact cost of each dish in seconds. Enter ingredients, weights and supplier prices — AI does the rest.",
+        "keywords": ["restaurant food costing", "food cost AI", "cost per dish"]
+      },
+      {
+        "title": "Inventory Control",
+        "description": "Manage your stock in real time. Automatic alerts when ingredients fall below minimum levels. Reduce waste.",
+        "keywords": ["restaurant inventory", "kitchen stock management", "waste control"]
+      },
+      {
+        "title": "Recipe Management",
+        "description": "Digitize and standardize all your recipes with professional tech sheets and automatic portion scaling.",
+        "keywords": ["recipe tech sheet", "recipe standardization", "digital recipe book"]
+      },
+      {
+        "title": "Allergens & Compliance",
+        "description": "Control of the 14 allergens under EU Regulation 1169/2011. Avoid fines and protect your customers.",
+        "keywords": ["restaurant allergens", "EU allergen regulation", "food safety"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analyze the profitability of each dish and optimize your menu to maximize profit per cover.",
+        "keywords": ["menu engineering", "dish profitability", "menu optimization"]
+      },
+      {
+        "title": "Management Reports",
+        "description": "Visualize your kitchen performance with automatic reports on food cost, margins and consumption trends.",
+        "keywords": ["food cost report", "cost control", "restaurant margin"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Who uses AI Chef Pro kitchen management software?",
+      "subtitle": "Hospitality professionals who have digitized their kitchen with AI."
+    },
+    "profiles": [
+      { "title": "Chef-Owner", "description": "Controls kitchen costs without relying on external accountants or spreadsheets." },
+      { "title": "Head Chef", "description": "Standardizes recipes, manages stock and supervises the team from one platform." },
+      { "title": "Operations Director", "description": "Oversees multiple venues with real-time data from each kitchen and section." },
+      { "title": "Bar or Café Owner", "description": "No complications: manage food costs and menus in minutes, not hours." }
+    ],
+    "why_section": {
+      "title": "The kitchen management chefs need, powered by AI",
+      "body": "Traditional management software is slow, rigid and doesn't understand the kitchen. AI Chef Pro is software designed by and for hospitality professionals.",
+      "benefits": [
+        "Automatic food costing with up-to-date market prices",
+        "Integrated allergen control compliant with current EU regulations",
+        "Standardized recipes with professional tech sheets",
+        "Dish-by-dish profitability analysis with menu engineering",
+        "Real-time stock alerts and waste control",
+        "Access from any device, no installation or maintenance required"
+      ]
+    },
+    "testimonial": {
+      "quote": "I used to spend two hours a day updating food costs and controlling stock. With AI Chef Pro I do it in 10 minutes with much more detail. It's the kitchen management software I always needed.",
+      "name": "Carlos Méndez",
+      "role": "Chef-Owner, Restaurante Méndez, Madrid"
+    },
+    "pricing_section": {
+      "title": "AI kitchen management software from €0",
+      "subtitle": "Start free and scale when your business needs it. No commitment.",
+      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about kitchen management software"
+    },
+    "faq": [
+      {
+        "question": "What is AI kitchen management software?",
+        "answer": "It's a platform that uses artificial intelligence to automate kitchen management tasks: food costing, inventory, recipes, allergens and profitability analysis. AI Chef Pro integrates 55+ tools specialized in hospitality."
+      },
+      {
+        "question": "Can I manage my food costs with AI Chef Pro?",
+        "answer": "Yes. AI Chef Pro automatically calculates the food cost of each dish using your ingredients, weights and supplier prices. It updates costs in seconds when market prices change."
+      },
+      {
+        "question": "Does AI Chef Pro comply with allergen regulations?",
+        "answer": "Yes. The system identifies the 14 allergens under EU Regulation 1169/2011 and generates tech sheets compliant with current European regulations. Essential for avoiding fines and protecting your customers' health."
+      },
+      {
+        "question": "Do I need to install any software on my computer?",
+        "answer": "No. AI Chef Pro runs entirely in the cloud. Access from any device — computer, tablet or mobile — with no installations or manual updates."
+      }
+    ],
+    "cta_section": {
+      "title": "Start managing your kitchen with AI today",
+      "subtitle": "Over 5,000 hospitality professionals already use AI Chef Pro to manage their kitchen with more control and less time.",
+      "primary": "Try for free now",
+      "secondary": "See all plans"
+    }
   }
 }

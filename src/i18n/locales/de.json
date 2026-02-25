@@ -2220,5 +2220,136 @@
       "secondary": "Alle Pläne ansehen"
     },
     "breadcrumb": "ChatGPT für Restaurants"
+  },
+  "landingSoftwareGestion": {
+    "seo": {
+      "title": "KI-Küchenverwaltungssoftware | AI Chef Pro",
+      "description": "KI-Küchenverwaltungssoftware: Food Cost, Inventar, Rezepte und Allergene auf einer Plattform. Über 5.000 Restaurants vertrauen darauf. Kostenlos starten.",
+      "keywords": "Küchenverwaltungssoftware, Restaurant-Management KI, Gastronomiesoftware, professionelle Küchensoftware, Restaurantinventar, Food Cost KI"
+    },
+    "breadcrumb": "KI-Küchenverwaltungssoftware",
+    "hero": {
+      "badge": "KI-Software für professionelles Küchenmanagement",
+      "h1": "KI-Küchenverwaltungssoftware für Restaurants",
+      "subtitle": "Kontrollieren Sie Food Cost, Inventar, Rezepte und Allergene von einer einzigen Plattform. Die spezialisierte KI, die professionelle Küchen wirklich versteht.",
+      "tagline": "Sparen Sie täglich bis zu 3 Stunden bei der Küchenverwaltung.",
+      "cta_primary": "Jetzt kostenlos testen",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
+    },
+    "results": [
+      { "metric": "3h", "label": "Tägliche Zeiteinsparung" },
+      { "metric": "5.000+", "label": "Aktive Restaurants" },
+      { "metric": "55+", "label": "KI-Küchentools" },
+      { "metric": "30%", "label": "Durchschnittliche Kostensenkung" }
+    ],
+    "comparison": {
+      "title": "AI Chef Pro vs. Traditionelle Verwaltungssoftware",
+      "subtitle": "Entdecken Sie, warum Köche auf KI-gestütztes Küchenmanagement umsteigen.",
+      "col_feature": "Funktion",
+      "col_other": "Traditionelle Software",
+      "items": [
+        { "feature": "Automatische Food-Cost-Kalkulation", "other": "Manuell in Excel-Tabellen", "aichef": "KI berechnet Food Cost sofort" },
+        { "feature": "Rezeptverwaltung", "other": "Word-Dateien oder Papier", "aichef": "55+ spezialisierte KI-Tools" },
+        { "feature": "Allergenkontrolle", "other": "Manuelle Aktualisierungen", "aichef": "EU-Verordnung 1169/2011 integriert" },
+        { "feature": "Menü-Engineering", "other": "Keine Rentabilitätsanalyse", "aichef": "KI optimiert Margen pro Gericht" },
+        { "feature": "Preisaktualisierung", "other": "Langsamer und mühsamer Prozess", "aichef": "Automatische Neuberechnung in Sekunden" }
+      ]
+    },
+    "tools_section": {
+      "title": "Alles, was Sie für das KI-gestützte Küchenmanagement brauchen",
+      "subtitle": "Spezialisierte Tools für die echten Herausforderungen des professionellen Küchenmanagements."
+    },
+    "tools": [
+      {
+        "title": "KI Food Cost",
+        "description": "Berechnen Sie die genauen Kosten jedes Gerichts in Sekunden. Geben Sie Zutaten, Gewichte und Lieferantenpreise ein – die KI erledigt den Rest.",
+        "keywords": ["Restaurant Food Cost", "Food Cost KI", "Kosten pro Gericht"]
+      },
+      {
+        "title": "Inventarkontrolle",
+        "description": "Verwalten Sie Ihren Bestand in Echtzeit. Automatische Warnungen, wenn Zutaten das Minimum erreichen. Reduzieren Sie Lebensmittelverschwendung.",
+        "keywords": ["Restaurantinventar", "Küchenlagerung", "Abfallkontrolle"]
+      },
+      {
+        "title": "Rezeptverwaltung",
+        "description": "Digitalisieren und standardisieren Sie alle Ihre Rezepte mit professionellen Technischen Datenblättern und automatischer Portionsskalierung.",
+        "keywords": ["Rezept-Datenblatt", "Rezeptstandardisierung", "digitales Rezeptbuch"]
+      },
+      {
+        "title": "Allergene & Compliance",
+        "description": "Kontrolle der 14 Allergene gemäß EU-Verordnung 1169/2011. Vermeiden Sie Bußgelder und schützen Sie Ihre Gäste.",
+        "keywords": ["Restaurant-Allergene", "EU-Allergenverordnung", "Lebensmittelsicherheit"]
+      },
+      {
+        "title": "Menü-Engineering",
+        "description": "Analysieren Sie die Rentabilität jedes Gerichts und optimieren Sie Ihre Speisekarte für maximalen Gewinn pro Gast.",
+        "keywords": ["Menü-Engineering", "Gerichtrentabilität", "Speisekartenoptimierung"]
+      },
+      {
+        "title": "Managementberichte",
+        "description": "Visualisieren Sie die Küchenleistung mit automatischen Berichten zu Food Cost, Margen und Verbrauchstrends.",
+        "keywords": ["Food-Cost-Bericht", "Kostenkontrolle", "Restaurantmarge"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wer nutzt die Küchenverwaltungssoftware von AI Chef Pro?",
+      "subtitle": "Gastronomieprofis, die ihre Küche mit KI digitalisiert haben."
+    },
+    "profiles": [
+      { "title": "Koch und Inhaber", "description": "Kontrolliert Küchenkosten ohne externe Buchhalter oder Tabellenkalkulationen." },
+      { "title": "Küchenchef", "description": "Standardisiert Rezepte, verwaltet Lagerbestände und leitet sein Team von einer Plattform." },
+      { "title": "Betriebsleiter", "description": "Überwacht mehrere Standorte mit Echtzeitdaten aus jeder Küche." },
+      { "title": "Bar- oder Café-Inhaber", "description": "Unkompliziert: Küchenkosten und Karte in Minuten verwalten, nicht in Stunden." }
+    ],
+    "why_section": {
+      "title": "Das Küchenmanagement, das Köche brauchen – ermöglicht durch KI",
+      "body": "Traditionelle Verwaltungssoftware ist langsam, starr und versteht die Küche nicht. AI Chef Pro ist Software, die von und für Gastronomieprofis entwickelt wurde.",
+      "benefits": [
+        "Automatische Food-Cost-Kalkulation mit aktuellen Marktpreisen",
+        "Integrierte Allergenkontrolle gemäß aktueller EU-Verordnung",
+        "Standardisierte Rezepte mit professionellen Technischen Datenblättern",
+        "Gerichtsweise Rentabilitätsanalyse mit Menü-Engineering",
+        "Echtzeit-Bestandswarnungen und Abfallkontrolle",
+        "Zugriff von jedem Gerät, ohne Installation oder Wartung"
+      ]
+    },
+    "testimonial": {
+      "quote": "Früher verbrachte ich täglich zwei Stunden mit der Aktualisierung von Food-Cost-Kalkulationen und der Bestandskontrolle. Mit AI Chef Pro erledige ich das in 10 Minuten mit viel mehr Details.",
+      "name": "Carlos Méndez",
+      "role": "Koch und Inhaber, Restaurante Méndez, Madrid"
+    },
+    "pricing_section": {
+      "title": "KI-Küchenverwaltungssoftware ab 0€",
+      "subtitle": "Kostenlos starten und skalieren, wenn Ihr Unternehmen es braucht. Ohne Bindung.",
+      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufig gestellte Fragen zur Küchenverwaltungssoftware"
+    },
+    "faq": [
+      {
+        "question": "Was ist eine KI-Küchenverwaltungssoftware?",
+        "answer": "Es ist eine Plattform, die künstliche Intelligenz einsetzt, um Küchenmanagementaufgaben zu automatisieren: Food-Cost-Kalkulation, Inventar, Rezepte, Allergene und Rentabilitätsanalyse. AI Chef Pro integriert 55+ auf die Gastronomie spezialisierte Tools."
+      },
+      {
+        "question": "Kann ich meine Food-Cost-Kalkulationen mit AI Chef Pro verwalten?",
+        "answer": "Ja. AI Chef Pro berechnet automatisch den Food Cost jedes Gerichts mit Ihren Zutaten, Gewichten und Lieferantenpreisen. Es aktualisiert die Kosten in Sekunden, wenn sich die Marktpreise ändern."
+      },
+      {
+        "question": "Entspricht AI Chef Pro den Allergenvorschriften?",
+        "answer": "Ja. Das System identifiziert die 14 Allergene gemäß EU-Verordnung 1169/2011 und erstellt Technische Datenblätter, die der aktuellen europäischen Gesetzgebung entsprechen."
+      },
+      {
+        "question": "Muss ich Software auf meinem Computer installieren?",
+        "answer": "Nein. AI Chef Pro läuft vollständig in der Cloud. Zugriff von jedem Gerät – Computer, Tablet oder Handy – ohne Installation oder manuelle Updates."
+      }
+    ],
+    "cta_section": {
+      "title": "Beginnen Sie noch heute mit dem KI-gestützten Küchenmanagement",
+      "subtitle": "Über 5.000 Gastronomieprofis nutzen bereits AI Chef Pro, um ihre Küche mit mehr Kontrolle und weniger Zeitaufwand zu managen.",
+      "primary": "Jetzt kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    }
   }
 }
