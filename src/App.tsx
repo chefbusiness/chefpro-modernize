@@ -21,6 +21,9 @@ import ChatGPTRestaurantes from "./pages/ChatGPTRestaurantes";
 import SoftwareGestionCocina from "./pages/SoftwareGestionCocina";
 import RecetasIARestaurantes from "./pages/RecetasIARestaurantes";
 import EscandallosRestaurante from "./pages/EscandallosRestaurante";
+import HerramientasGratuitas from "./pages/HerramientasGratuitas";
+import CalculadoraFoodCost from "./pages/CalculadoraFoodCost";
+import SimuladorRentabilidad from "./pages/SimuladorRentabilidad";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -122,6 +125,33 @@ const App = () => (
             <Route path="/it/food-cost-ristorante-ia" element={<EscandallosRestaurante />} />
             <Route path="/pt/escandallo-restaurante-ia" element={<EscandallosRestaurante />} />
             <Route path="/nl/food-cost-berekening-restaurant-ai" element={<EscandallosRestaurante />} />
+
+            {/* Hub Herramientas Gratuitas — todos los idiomas */}
+            <Route path="/herramientas-gratuitas" element={<HerramientasGratuitas />} />
+            <Route path="/en/free-tools-restaurants" element={<HerramientasGratuitas />} />
+            <Route path="/fr/outils-gratuits-restaurant" element={<HerramientasGratuitas />} />
+            <Route path="/de/kostenlose-tools-restaurant" element={<HerramientasGratuitas />} />
+            <Route path="/it/strumenti-gratuiti-ristorante" element={<HerramientasGratuitas />} />
+            <Route path="/pt/ferramentas-gratuitas-restaurante" element={<HerramientasGratuitas />} />
+            <Route path="/nl/gratis-tools-restaurant" element={<HerramientasGratuitas />} />
+
+            {/* Calculadora Food Cost — todos los idiomas */}
+            <Route path="/calculadora-food-cost-restaurante" element={<CalculadoraFoodCost />} />
+            <Route path="/en/food-cost-calculator-restaurant" element={<CalculadoraFoodCost />} />
+            <Route path="/fr/calculateur-food-cost-restaurant" element={<CalculadoraFoodCost />} />
+            <Route path="/de/food-cost-rechner-restaurant" element={<CalculadoraFoodCost />} />
+            <Route path="/it/calcolatore-food-cost-ristorante" element={<CalculadoraFoodCost />} />
+            <Route path="/pt/calculadora-food-cost-restaurante" element={<CalculadoraFoodCost />} />
+            <Route path="/nl/food-cost-calculator-restaurant" element={<CalculadoraFoodCost />} />
+
+            {/* Simulador Rentabilidad — todos los idiomas */}
+            <Route path="/simulador-rentabilidad-restaurante" element={<SimuladorRentabilidad />} />
+            <Route path="/en/restaurant-profit-simulator" element={<SimuladorRentabilidad />} />
+            <Route path="/fr/simulateur-rentabilite-restaurant" element={<SimuladorRentabilidad />} />
+            <Route path="/de/rentabilitaet-simulator-restaurant" element={<SimuladorRentabilidad />} />
+            <Route path="/it/simulatore-redditivita-ristorante" element={<SimuladorRentabilidad />} />
+            <Route path="/pt/simulador-rentabilidade-restaurante" element={<SimuladorRentabilidad />} />
+            <Route path="/nl/winstgevendheid-simulator-restaurant" element={<SimuladorRentabilidad />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

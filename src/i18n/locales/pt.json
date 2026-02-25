@@ -2228,10 +2228,22 @@
       "no_card": "Sem cartão de crédito · Acesso imediato"
     },
     "results": [
-      { "metric": "3h", "label": "Poupança diária em gestão" },
-      { "metric": "5.000+", "label": "Restaurantes ativos" },
-      { "metric": "55+", "label": "Ferramentas IA de cozinha" },
-      { "metric": "30%", "label": "Redução média de custos" }
+      {
+        "metric": "3h",
+        "label": "Poupança diária em gestão"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Restaurantes ativos"
+      },
+      {
+        "metric": "55+",
+        "label": "Ferramentas IA de cozinha"
+      },
+      {
+        "metric": "30%",
+        "label": "Redução média de custos"
+      }
     ],
     "comparison": {
       "title": "AI Chef Pro vs. Software de gestão tradicional",
@@ -2239,11 +2251,31 @@
       "col_feature": "Função",
       "col_other": "Software Tradicional",
       "items": [
-        { "feature": "Food cost automático", "other": "Manual, em Excel", "aichef": "IA calcula food cost instantaneamente" },
-        { "feature": "Gestão de receitas", "other": "Ficheiros Word ou papel", "aichef": "55+ ferramentas IA especializadas" },
-        { "feature": "Controlo de alergénios", "other": "Atualizações manuais", "aichef": "Regulamento UE 1169/2011 integrado" },
-        { "feature": "Engenharia de menu", "other": "Sem análise de rentabilidade", "aichef": "IA otimiza margens por prato" },
-        { "feature": "Atualização de preços", "other": "Processo lento e tedioso", "aichef": "Recálculo automático em segundos" }
+        {
+          "feature": "Food cost automático",
+          "other": "Manual, em Excel",
+          "aichef": "IA calcula food cost instantaneamente"
+        },
+        {
+          "feature": "Gestão de receitas",
+          "other": "Ficheiros Word ou papel",
+          "aichef": "55+ ferramentas IA especializadas"
+        },
+        {
+          "feature": "Controlo de alergénios",
+          "other": "Atualizações manuais",
+          "aichef": "Regulamento UE 1169/2011 integrado"
+        },
+        {
+          "feature": "Engenharia de menu",
+          "other": "Sem análise de rentabilidade",
+          "aichef": "IA otimiza margens por prato"
+        },
+        {
+          "feature": "Atualização de preços",
+          "other": "Processo lento e tedioso",
+          "aichef": "Recálculo automático em segundos"
+        }
       ]
     },
     "tools_section": {
@@ -2254,32 +2286,56 @@
       {
         "title": "Food Cost com IA",
         "description": "Calcule o custo exato de cada prato em segundos. Introduza ingredientes, gramagens e preços de fornecedor: a IA faz o resto.",
-        "keywords": ["food cost restaurante", "food cost IA", "custo por prato"]
+        "keywords": [
+          "food cost restaurante",
+          "food cost IA",
+          "custo por prato"
+        ]
       },
       {
         "title": "Controlo de Inventário",
         "description": "Gira o seu stock em tempo real. Alertas automáticos quando os ingredientes se aproximam do mínimo. Reduza o desperdício.",
-        "keywords": ["inventário restaurante", "gestão stock cozinha", "controlo desperdício"]
+        "keywords": [
+          "inventário restaurante",
+          "gestão stock cozinha",
+          "controlo desperdício"
+        ]
       },
       {
         "title": "Gestão de Receitas",
         "description": "Digitalize e standardize todas as suas receitas com fichas técnicas profissionais e escalonamento automático de doses.",
-        "keywords": ["ficha técnica receita", "standardização receitas", "livro de receitas digital"]
+        "keywords": [
+          "ficha técnica receita",
+          "standardização receitas",
+          "livro de receitas digital"
+        ]
       },
       {
         "title": "Alergénios & Regulamentação",
         "description": "Controlo dos 14 alergénios segundo o Regulamento UE 1169/2011. Evite sanções e proteja os seus clientes.",
-        "keywords": ["alergénios restaurante", "regulamento alergénios UE", "segurança alimentar"]
+        "keywords": [
+          "alergénios restaurante",
+          "regulamento alergénios UE",
+          "segurança alimentar"
+        ]
       },
       {
         "title": "Engenharia de Menu",
         "description": "Analise a rentabilidade de cada prato e otimize o seu menu para maximizar o lucro por cliente.",
-        "keywords": ["engenharia menu", "rentabilidade pratos", "otimização menu"]
+        "keywords": [
+          "engenharia menu",
+          "rentabilidade pratos",
+          "otimização menu"
+        ]
       },
       {
         "title": "Relatórios de Gestão",
         "description": "Visualize o desempenho da sua cozinha com relatórios automáticos de food cost, margens e tendências de consumo.",
-        "keywords": ["relatório food cost", "controlo custos", "margem restaurante"]
+        "keywords": [
+          "relatório food cost",
+          "controlo custos",
+          "margem restaurante"
+        ]
       }
     ],
     "profiles_section": {
@@ -2287,10 +2343,22 @@
       "subtitle": "Profissionais da restauração que digitalizaram a sua cozinha com IA."
     },
     "profiles": [
-      { "title": "Chef Proprietário", "description": "Controla os custos da cozinha sem depender de contabilistas externos ou folhas de cálculo." },
-      { "title": "Chefe de Cozinha", "description": "Standardiza receitas, gere o stock e supervisiona a equipa numa única plataforma." },
-      { "title": "Diretor de Operações", "description": "Supervisiona vários espaços com dados em tempo real de cada cozinha." },
-      { "title": "Dono de Bar ou Café", "description": "Sem complicações: gira food cost e carta em minutos, não em horas." }
+      {
+        "title": "Chef Proprietário",
+        "description": "Controla os custos da cozinha sem depender de contabilistas externos ou folhas de cálculo."
+      },
+      {
+        "title": "Chefe de Cozinha",
+        "description": "Standardiza receitas, gere o stock e supervisiona a equipa numa única plataforma."
+      },
+      {
+        "title": "Diretor de Operações",
+        "description": "Supervisiona vários espaços com dados em tempo real de cada cozinha."
+      },
+      {
+        "title": "Dono de Bar ou Café",
+        "description": "Sem complicações: gira food cost e carta em minutos, não em horas."
+      }
     ],
     "why_section": {
       "title": "A gestão de cozinha que os chefs precisam, possibilitada pela IA",
@@ -2359,10 +2427,22 @@
       "no_card": "Sem cartão de crédito · Acesso imediato"
     },
     "results": [
-      { "metric": "25", "label": "Cozinhas do mundo" },
-      { "metric": "5.000+", "label": "Restaurantes ativos" },
-      { "metric": "80%", "label": "Menos tempo no desenvolvimento de menu" },
-      { "metric": "55+", "label": "Ferramentas especializadas" }
+      {
+        "metric": "25",
+        "label": "Cozinhas do mundo"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Restaurantes ativos"
+      },
+      {
+        "metric": "80%",
+        "label": "Menos tempo no desenvolvimento de menu"
+      },
+      {
+        "metric": "55+",
+        "label": "Ferramentas especializadas"
+      }
     ],
     "comparison": {
       "title": "Receitas com IA vs. Método tradicional",
@@ -2370,11 +2450,31 @@
       "col_feature": "Aspeto",
       "col_other": "Método Tradicional",
       "items": [
-        { "feature": "Criação de receitas", "other": "Horas de pesquisa e testes", "aichef": "Receita técnica gerada em segundos" },
-        { "feature": "Variedade de cozinhas", "other": "Limitada ao conhecimento do chef", "aichef": "25 cozinhas do mundo com técnica real" },
-        { "feature": "Menus de época", "other": "Processo manual de semanas", "aichef": "Menu completo com ingredientes de época" },
-        { "feature": "Escalonamento de doses", "other": "Cálculos manuais com erros", "aichef": "Escalonamento automático e instantâneo" },
-        { "feature": "Fichas técnicas", "other": "Redação manual Word/Excel", "aichef": "Ficha técnica profissional gerada de imediato" }
+        {
+          "feature": "Criação de receitas",
+          "other": "Horas de pesquisa e testes",
+          "aichef": "Receita técnica gerada em segundos"
+        },
+        {
+          "feature": "Variedade de cozinhas",
+          "other": "Limitada ao conhecimento do chef",
+          "aichef": "25 cozinhas do mundo com técnica real"
+        },
+        {
+          "feature": "Menus de época",
+          "other": "Processo manual de semanas",
+          "aichef": "Menu completo com ingredientes de época"
+        },
+        {
+          "feature": "Escalonamento de doses",
+          "other": "Cálculos manuais com erros",
+          "aichef": "Escalonamento automático e instantâneo"
+        },
+        {
+          "feature": "Fichas técnicas",
+          "other": "Redação manual Word/Excel",
+          "aichef": "Ficha técnica profissional gerada de imediato"
+        }
       ]
     },
     "tools_section": {
@@ -2385,32 +2485,56 @@
       {
         "title": "Gerador de Receitas Profissionais",
         "description": "Crie receitas tecnicamente corretas com vocabulário culinário profissional, técnicas precisas e apresentação detalhada.",
-        "keywords": ["gerador receitas IA", "receitas profissionais chef", "receitas técnicas"]
+        "keywords": [
+          "gerador receitas IA",
+          "receitas profissionais chef",
+          "receitas técnicas"
+        ]
       },
       {
         "title": "25 Cozinhas do Mundo",
         "description": "Aceda a receitas autênticas de 25 tradições culinárias: francesa, japonesa, peruana, italiana, mexicana e muito mais.",
-        "keywords": ["cozinhas do mundo", "receitas internacionais", "gastronomia global"]
+        "keywords": [
+          "cozinhas do mundo",
+          "receitas internacionais",
+          "gastronomia global"
+        ]
       },
       {
         "title": "Menus de Época com IA",
         "description": "Gere menus completos com base em ingredientes de época, o seu conceito gastronómico e o perfil do seu cliente.",
-        "keywords": ["menu época", "menu degustação", "menu restaurante IA"]
+        "keywords": [
+          "menu época",
+          "menu degustação",
+          "menu restaurante IA"
+        ]
       },
       {
         "title": "Escalonamento Automático de Doses",
         "description": "Adapte qualquer receita ao número de comensais desejado. A IA ajusta gramagens, tempos de confeção e técnicas.",
-        "keywords": ["escalonamento receitas", "gramagens por dose", "produção em massa"]
+        "keywords": [
+          "escalonamento receitas",
+          "gramagens por dose",
+          "produção em massa"
+        ]
       },
       {
         "title": "Fichas Técnicas Profissionais",
         "description": "Gere fichas técnicas completas com alergénios, valores nutricionais, técnicas e emplatamento para a sua equipa.",
-        "keywords": ["ficha técnica receita", "livro de receitas profissional", "standardização cozinha"]
+        "keywords": [
+          "ficha técnica receita",
+          "livro de receitas profissional",
+          "standardização cozinha"
+        ]
       },
       {
         "title": "Adaptação por Restrições",
         "description": "Adapte receitas para veganos, celíacos, diabéticos ou qualquer restrição alimentar sem perder a essência do prato.",
-        "keywords": ["receitas veganas chef", "receitas sem glúten", "adaptação dietética"]
+        "keywords": [
+          "receitas veganas chef",
+          "receitas sem glúten",
+          "adaptação dietética"
+        ]
       }
     ],
     "profiles_section": {
@@ -2418,10 +2542,22 @@
       "subtitle": "Chefs e restauradores que integraram a IA no seu processo criativo de cozinha."
     },
     "profiles": [
-      { "title": "Chef Criativo", "description": "Usa a IA como fonte de inspiração para novos pratos e fusões de cozinhas do mundo." },
-      { "title": "Chefe de Partida", "description": "Gera fichas técnicas standardizadas para que a equipa reproduza os pratos com precisão." },
-      { "title": "Chef de Hotel ou Catering", "description": "Cria menus completos para grandes eventos com escalonamento automático de doses." },
-      { "title": "Proprietário de Restaurante", "description": "Renova a carta de época sem longos processos de criação manual." }
+      {
+        "title": "Chef Criativo",
+        "description": "Usa a IA como fonte de inspiração para novos pratos e fusões de cozinhas do mundo."
+      },
+      {
+        "title": "Chefe de Partida",
+        "description": "Gera fichas técnicas standardizadas para que a equipa reproduza os pratos com precisão."
+      },
+      {
+        "title": "Chef de Hotel ou Catering",
+        "description": "Cria menus completos para grandes eventos com escalonamento automático de doses."
+      },
+      {
+        "title": "Proprietário de Restaurante",
+        "description": "Renova a carta de época sem longos processos de criação manual."
+      }
     ],
     "why_section": {
       "title": "A IA que entende a cozinha, não apenas as palavras",
@@ -2490,10 +2626,22 @@
       "no_card": "Sem cartão de crédito · Acesso imediato"
     },
     "results": [
-      { "metric": "2min", "label": "Para um cálculo completo" },
-      { "metric": "30%", "label": "Redução média de custos" },
-      { "metric": "5.000+", "label": "Restaurantes ativos" },
-      { "metric": "55+", "label": "Ferramentas especializadas" }
+      {
+        "metric": "2min",
+        "label": "Para um cálculo completo"
+      },
+      {
+        "metric": "30%",
+        "label": "Redução média de custos"
+      },
+      {
+        "metric": "5.000+",
+        "label": "Restaurantes ativos"
+      },
+      {
+        "metric": "55+",
+        "label": "Ferramentas especializadas"
+      }
     ],
     "comparison": {
       "title": "Food Cost IA vs. Excel e método manual",
@@ -2501,11 +2649,31 @@
       "col_feature": "Aspeto",
       "col_other": "Excel / Manual",
       "items": [
-        { "feature": "Tempo por cálculo", "other": "30-60 minutos por prato", "aichef": "2 minutos com IA" },
-        { "feature": "Atualização de preços", "other": "Manual em cada subida", "aichef": "Recálculo automático instantâneo" },
-        { "feature": "Controlo de desperdício", "other": "Ignorado ou mal estimado", "aichef": "Desperdício calculado por tipo de ingrediente" },
-        { "feature": "Preço de venda", "other": "Intuição sem base objetiva", "aichef": "Preço ótimo com margem objetivo" },
-        { "feature": "Rentabilidade por prato", "other": "Sem análise sistemática", "aichef": "Dashboard de rentabilidade em tempo real" }
+        {
+          "feature": "Tempo por cálculo",
+          "other": "30-60 minutos por prato",
+          "aichef": "2 minutos com IA"
+        },
+        {
+          "feature": "Atualização de preços",
+          "other": "Manual em cada subida",
+          "aichef": "Recálculo automático instantâneo"
+        },
+        {
+          "feature": "Controlo de desperdício",
+          "other": "Ignorado ou mal estimado",
+          "aichef": "Desperdício calculado por tipo de ingrediente"
+        },
+        {
+          "feature": "Preço de venda",
+          "other": "Intuição sem base objetiva",
+          "aichef": "Preço ótimo com margem objetivo"
+        },
+        {
+          "feature": "Rentabilidade por prato",
+          "other": "Sem análise sistemática",
+          "aichef": "Dashboard de rentabilidade em tempo real"
+        }
       ]
     },
     "tools_section": {
@@ -2516,32 +2684,56 @@
       {
         "title": "Food Cost Automático com IA",
         "description": "Introduza ingredientes, gramagens e preços de fornecedor. A IA calcula o food cost exato de cada prato em segundos.",
-        "keywords": ["food cost automático", "food cost por prato", "calculadora food cost"]
+        "keywords": [
+          "food cost automático",
+          "food cost por prato",
+          "calculadora food cost"
+        ]
       },
       {
         "title": "Controlo de Desperdício",
         "description": "Calcule o desperdício real por tipo de ingrediente (limpeza, confeção, evaporação) para um food cost preciso.",
-        "keywords": ["desperdício cozinha", "rendimento ingredientes", "perdas na confeção"]
+        "keywords": [
+          "desperdício cozinha",
+          "rendimento ingredientes",
+          "perdas na confeção"
+        ]
       },
       {
         "title": "Preço de Venda Ótimo",
         "description": "A IA calcula o preço de venda ideal com base na sua margem objetivo, no mercado e no posicionamento do seu restaurante.",
-        "keywords": ["preço venda prato", "margem restaurante", "política de preços"]
+        "keywords": [
+          "preço venda prato",
+          "margem restaurante",
+          "política de preços"
+        ]
       },
       {
         "title": "Análise de Rentabilidade",
         "description": "Identifique quais os pratos com maior margem e quais lhe estão a custar dinheiro. Otimize a sua carta com dados reais.",
-        "keywords": ["rentabilidade por prato", "engenharia de menu", "análise food cost"]
+        "keywords": [
+          "rentabilidade por prato",
+          "engenharia de menu",
+          "análise food cost"
+        ]
       },
       {
         "title": "Atualização de Preços",
         "description": "Quando o custo de um ingrediente sobe, a IA recalcula automaticamente todos os food costs afetados.",
-        "keywords": ["atualização food cost", "inflação alimentar", "controlo preços fornecedor"]
+        "keywords": [
+          "atualização food cost",
+          "inflação alimentar",
+          "controlo preços fornecedor"
+        ]
       },
       {
         "title": "Dashboard Food Cost",
         "description": "Visualize o food cost global do seu restaurante, por categoria e por prato. Detete desvios instantaneamente.",
-        "keywords": ["dashboard food cost", "controlo custos cozinha", "KPIs restaurante"]
+        "keywords": [
+          "dashboard food cost",
+          "controlo custos cozinha",
+          "KPIs restaurante"
+        ]
       }
     ],
     "profiles_section": {
@@ -2549,10 +2741,22 @@
       "subtitle": "Profissionais que pararam de perder dinheiro por um food cost mal calculado."
     },
     "profiles": [
-      { "title": "Chef Proprietário", "description": "Controla o food cost da sua carta sem depender de contabilistas ou folhas Excel intermináveis." },
-      { "title": "Diretor de Operações", "description": "Supervisiona o food cost de vários espaços a partir de um único painel com dados em tempo real." },
-      { "title": "Chefe de Cozinha", "description": "Atualiza os food costs quando os preços dos fornecedores mudam sem refazer todo o processo." },
-      { "title": "Controller ou Financeiro", "description": "Tem pela primeira vez um controlo exato do custo de cada prato e do seu impacto na conta de resultados." }
+      {
+        "title": "Chef Proprietário",
+        "description": "Controla o food cost da sua carta sem depender de contabilistas ou folhas Excel intermináveis."
+      },
+      {
+        "title": "Diretor de Operações",
+        "description": "Supervisiona o food cost de vários espaços a partir de um único painel com dados em tempo real."
+      },
+      {
+        "title": "Chefe de Cozinha",
+        "description": "Atualiza os food costs quando os preços dos fornecedores mudam sem refazer todo o processo."
+      },
+      {
+        "title": "Controller ou Financeiro",
+        "description": "Tem pela primeira vez um controlo exato do custo de cada prato e do seu impacto na conta de resultados."
+      }
     ],
     "why_section": {
       "title": "O food cost que não controla é a margem que está a oferecer",
@@ -2601,6 +2805,345 @@
       "title": "Comece a controlar o seu food cost com IA hoje mesmo",
       "subtitle": "Mais de 5.000 restaurantes já usam o AI Chef Pro para calcular o food cost e proteger a sua margem.",
       "primary": "Calcular o meu food cost grátis",
+      "secondary": "Ver todos os planos"
+    }
+  },
+  "toolHub": {
+    "seo": {
+      "title": "Ferramentas Gratuitas para Restaurantes | AI Chef Pro",
+      "description": "8 ferramentas gratuitas para restaurantes: calculadora food cost, simulador rentabilidade, verificador alérgenos e mais. Sem registo.",
+      "keywords": "ferramentas gratuitas restaurante, calculadora food cost grátis, simulador rentabilidade restaurante"
+    },
+    "breadcrumb": "Ferramentas Gratuitas",
+    "hero": {
+      "badge": "100% Gratuitas — Sem registo",
+      "h1": "8 Ferramentas Gratuitas para o seu Restaurante",
+      "subtitle": "Calcule o seu food cost, verifique alérgenos, simule a sua rentabilidade e mais. Sem registar, sem pagar, sem limites.",
+      "tagline": "Dos criadores do AI Chef Pro — a suite de IA para gastronomia"
+    },
+    "tools": [
+      {
+        "title": "Calculadora Food Cost",
+        "description": "Calcule o custo exato de cada prato e a sua percentagem de food cost em segundos.",
+        "badge": "Calculadora",
+        "color": "green"
+      },
+      {
+        "title": "Verificador de Alérgenos",
+        "description": "Identifique os 14 alergénios de declaração obrigatória em qualquer prato instantaneamente.",
+        "badge": "Legal",
+        "color": "red"
+      },
+      {
+        "title": "Calendário de Conteúdo IA",
+        "description": "Gere 30 dias de ideias de redes sociais personalizadas para o seu restaurante com IA.",
+        "badge": "IA",
+        "color": "purple"
+      },
+      {
+        "title": "Simulador de Rentabilidade",
+        "description": "Calcule se o seu restaurante é rentável e qual é o seu ponto de equilíbrio mensal.",
+        "badge": "Calculadora",
+        "color": "yellow"
+      },
+      {
+        "title": "Gerador de Textos para Ementa",
+        "description": "Crie descrições irresistíveis para os pratos da sua ementa com IA em segundos.",
+        "badge": "IA",
+        "color": "blue"
+      },
+      {
+        "title": "Teste de Digitalização",
+        "description": "Descubra o nível de digitalização do seu restaurante e o que melhorar primeiro.",
+        "badge": "Quiz",
+        "color": "teal"
+      },
+      {
+        "title": "Calculadora de Brigada",
+        "description": "Calcule quantos funcionários precisa na cozinha e sala baseado no seu volume de serviço.",
+        "badge": "Calculadora",
+        "color": "orange"
+      },
+      {
+        "title": "Gerador Menu Degustação",
+        "description": "Crie um menu degustação completo com harmonizações e mise en scène com IA.",
+        "badge": "IA",
+        "color": "indigo"
+      }
+    ],
+    "why": {
+      "title": "Porquê são gratuitas?",
+      "body": "Acreditamos que qualquer restaurante, independentemente do tamanho, merece acesso a ferramentas profissionais.",
+      "items": [
+        "Sem registo ou cartão de crédito",
+        "Resultados instantâneos no seu browser",
+        "Baseadas em padrões reais do setor",
+        "Usadas por mais de 5.000 profissionais"
+      ]
+    },
+    "cta": {
+      "title": "Precisa de mais potência?",
+      "subtitle": "Estas ferramentas são apenas uma amostra das 55+ funcionalidades IA disponíveis no AI Chef Pro Premium.",
+      "primary": "Ver Plano Premium",
+      "secondary": "Começar grátis"
+    }
+  },
+  "toolFoodCost": {
+    "seo": {
+      "title": "Calculadora Food Cost Restaurante Grátis | AI Chef Pro",
+      "description": "Calcule o food cost dos seus pratos grátis: ingredientes, gramagens e preço de venda. Resultado instantâneo com semáforo de rentabilidade. Sem registo.",
+      "keywords": "calculadora food cost restaurante, calcular food cost grátis, food cost percentagem, custo prato restaurante"
+    },
+    "breadcrumb": "Calculadora Food Cost",
+    "hero": {
+      "badge": "Grátis — Sem registo",
+      "h1": "Calculadora de Food Cost para Restaurantes",
+      "subtitle": "Calcule a percentagem de food cost de qualquer prato em segundos. Adicione ingredientes, gramagens e preço de venda.",
+      "cta_tool": "Ir para a calculadora ↓",
+      "cta_premium": "Plano Premium →"
+    },
+    "tool": {
+      "title": "Calculadora de Food Cost",
+      "dish_name_label": "Nome do prato",
+      "dish_name_placeholder": "Ex: Risoto de cogumelos",
+      "portions_label": "Número de doses",
+      "sale_price_label": "Preço de venda por dose (€)",
+      "ingredients_title": "Ingredientes",
+      "ingredient_name": "Ingrediente",
+      "ingredient_qty": "Quantidade (g)",
+      "ingredient_cost": "Preço/kg (€)",
+      "add_ingredient": "+ Adicionar ingrediente",
+      "calculate": "Calcular Food Cost",
+      "result_title": "Resultado",
+      "total_cost_label": "Custo total ingredientes",
+      "cost_per_portion_label": "Custo por dose",
+      "food_cost_pct_label": "Food cost %",
+      "gross_margin_label": "Margem bruta (€/dose)",
+      "status_ok": "✅ Excelente food cost — O seu prato é muito rentável",
+      "status_warn": "⚠️ Food cost ajustado — Reveja preços ou ingredientes",
+      "status_bad": "🔴 Food cost alto — Considere aumentar o preço ou reduzir custos",
+      "tip": "💡 Referência do setor: food cost entre 25% e 32% é saudável para restaurantes",
+      "cta_after": "Quer calcular todos os seus pratos automaticamente?",
+      "reset": "Novo cálculo"
+    },
+    "how_it_works": {
+      "title": "Como funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Adicione os ingredientes",
+          "description": "Introduza cada ingrediente com a sua gramagem por dose e preço de compra por quilo."
+        },
+        {
+          "step": "2",
+          "title": "Indique doses e preço de venda",
+          "description": "Quantas doses dá a receita e a que preço a vende ao cliente."
+        },
+        {
+          "step": "3",
+          "title": "Obtenha o seu food cost",
+          "description": "Verá o custo exato por dose, a percentagem de food cost e o estado de rentabilidade."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Porquê calcular o seu food cost",
+      "items": [
+        "Identifica pratos que perdem dinheiro sem saber",
+        "Ajusta os preços de venda com dados reais",
+        "Aumenta a sua margem sem aumentos de preço agressivos",
+        "Controlo total em segundos, sem Excel"
+      ]
+    },
+    "testimonial": {
+      "quote": "Com esta calculadora vi que o meu prato principal custava mais do que pensava. Aumentei o preço 1,50€ e ninguém reparou. Ganhei 400€ extra nesse mês.",
+      "name": "Carlos Romero",
+      "role": "Proprietário, Bar Restaurante La Plaza, Saragoça"
+    },
+    "pricing": {
+      "title": "Mais potência com AI Chef Pro",
+      "subtitle": "A calculadora gratuita é apenas uma amostra. Com AI Chef Pro calcula toda a sua ementa com controlo de desperdícios.",
+      "plans": [
+        {
+          "name": "Grátis",
+          "price": "0€/mês",
+          "uses": "5 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mês",
+          "uses": "150 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mês",
+          "uses": "350 utilizações/mês",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mês",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes sobre food cost"
+    },
+    "faq": [
+      {
+        "question": "O que é o food cost?",
+        "answer": "O food cost é a percentagem do preço de venda que representa o custo dos ingredientes. Fórmula: Food cost % = (Custo ingredientes / Preço de venda) × 100. Um food cost saudável situa-se entre 25% e 32%."
+      },
+      {
+        "question": "Porquê é importante controlá-lo?",
+        "answer": "Um food cost descontrolado pode significar que está a perder dinheiro em pratos que julga rentáveis. Controlá-lo permite tomar decisões de preços e maximizar a margem."
+      },
+      {
+        "question": "Esta calculadora inclui desperdícios?",
+        "answer": "Esta versão gratuita trabalha com as gramagens líquidas que introduz. Para incluir automaticamente desperdícios, use a ferramenta de escandallo do AI Chef Pro Premium."
+      },
+      {
+        "question": "Como melhorar um food cost alto?",
+        "answer": "Pode aumentar o preço de venda, mudar para fornecedores mais económicos, reduzir as gramagens dos ingredientes caros ou substituir componentes de alto custo."
+      }
+    ],
+    "cta_section": {
+      "title": "Automatize todo o seu escandallo com IA",
+      "subtitle": "Com AI Chef Pro calcula o food cost de toda a sua ementa em minutos, com controlo de desperdícios e atualizações automáticas.",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
+    }
+  },
+  "toolRentabilidad": {
+    "seo": {
+      "title": "Simulador Rentabilidade Restaurante Grátis | AI Chef Pro",
+      "description": "Calcule se o seu restaurante é rentável: introduza clientes, ticket médio e custos. Lucro líquido e ponto de equilíbrio instantaneamente. Grátis, sem registo.",
+      "keywords": "simulador rentabilidade restaurante, calcular lucro restaurante, ponto de equilíbrio restaurante, rentabilidade hotelaria grátis"
+    },
+    "breadcrumb": "Simulador de Rentabilidade",
+    "hero": {
+      "badge": "Grátis — Sem registo",
+      "h1": "Simulador de Rentabilidade para Restaurantes",
+      "subtitle": "Calcule se o seu restaurante gera lucros reais. Introduza os seus dados e obtenha o seu lucro mensal e ponto de equilíbrio.",
+      "cta_tool": "Ir para o simulador ↓",
+      "cta_premium": "Plano Premium →"
+    },
+    "tool": {
+      "title": "Simulador de Rentabilidade",
+      "covers_label": "Clientes por mês",
+      "ticket_label": "Ticket médio por cliente (€)",
+      "fixed_costs_label": "Custos fixos mensais (€)",
+      "fixed_costs_hint": "Renda, pessoal fixo, serviços, seguros, licenças...",
+      "variable_pct_label": "Custos variáveis (% sobre faturação)",
+      "variable_pct_hint": "Matérias-primas, pessoal variável, embalagens, comissões...",
+      "calculate": "Calcular Rentabilidade",
+      "result_title": "Resultado mensal",
+      "monthly_revenue_label": "Faturação mensal",
+      "variable_costs_label": "Custos variáveis",
+      "total_costs_label": "Custos totais",
+      "net_profit_label": "Lucro líquido",
+      "profit_margin_label": "Margem de lucro",
+      "breakeven_label": "Ponto de equilíbrio",
+      "breakeven_suffix": "clientes/mês para cobrir todas as despesas",
+      "status_profitable": "✅ Negócio rentável — Está a gerar lucros",
+      "status_breakeven": "⚠️ No limite — Otimize custos ou aumente a faturação",
+      "status_loss": "🔴 Prejuízo — Precisa de reduzir custos ou aumentar vendas",
+      "cta_after": "Quer uma análise financeira completa do seu restaurante?",
+      "reset": "Nova simulação"
+    },
+    "how_it_works": {
+      "title": "Como funciona",
+      "steps": [
+        {
+          "step": "1",
+          "title": "Introduza os seus dados reais",
+          "description": "Número de clientes mensais, ticket médio e a sua estrutura de custos fixos e variáveis."
+        },
+        {
+          "step": "2",
+          "title": "O simulador calcula instantaneamente",
+          "description": "Faturação, custos totais, lucro líquido e margem de forma automática."
+        },
+        {
+          "step": "3",
+          "title": "Tome decisões com dados",
+          "description": "Conheça o seu ponto de equilíbrio e simule cenários: mais clientes, ticket mais alto, redução de custos."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Porquê simular a rentabilidade",
+      "items": [
+        "Conheça o seu ponto de equilíbrio real em segundos",
+        "Simule cenários: e se a renda aumentar?",
+        "Identifique se os seus custos fixos são sustentáveis",
+        "Tome decisões de preços e capacidade com dados"
+      ]
+    },
+    "testimonial": {
+      "quote": "Descobri que precisava de 285 clientes por mês para cobrir as despesas. Estava em 240. Otimizámos os horários de abertura e atingimos o equilíbrio em 6 semanas.",
+      "name": "Ana Martínez",
+      "role": "Proprietária, Restaurante Sabores, Valência"
+    },
+    "pricing": {
+      "title": "Análise financeira completa com AI Chef Pro",
+      "subtitle": "O simulador básico é gratuito. Com AI Chef Pro obtém análises por prato, projeções anuais e alertas de desvio de custos.",
+      "plans": [
+        {
+          "name": "Grátis",
+          "price": "0€/mês",
+          "uses": "5 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mês",
+          "uses": "150 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mês",
+          "uses": "350 utilizações/mês",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mês",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes sobre rentabilidade em restauração"
+    },
+    "faq": [
+      {
+        "question": "O que é o ponto de equilíbrio de um restaurante?",
+        "answer": "O ponto de equilíbrio é o número mínimo de clientes ou a faturação mínima para cobrir todos os custos sem prejuízo nem lucro. A partir desse ponto, cada cliente adicional gera lucro puro."
+      },
+      {
+        "question": "Qual é a margem de lucro normal em hotelaria?",
+        "answer": "A margem líquida em restauração situa-se tipicamente entre 3% e 9% para restaurantes pequenos, podendo atingir 15-20% em estabelecimentos muito bem geridos."
+      },
+      {
+        "question": "Quais são os custos variáveis de um restaurante?",
+        "answer": "Os principais custos variáveis são: matérias-primas (food cost), pessoal variável, embalagens para entregas e comissões de plataformas."
+      },
+      {
+        "question": "O que fazer se o simulador mostrar prejuízo?",
+        "answer": "Tem três alavancas: aumentar o ticket médio, reduzir custos fixos (renegociar renda, otimizar pessoal) ou aumentar o número de clientes."
+      }
+    ],
+    "cta_section": {
+      "title": "Otimize a rentabilidade do seu restaurante com IA",
+      "subtitle": "AI Chef Pro analisa o seu food cost, margem por prato e rentabilidade global para as melhores decisões financeiras.",
+      "primary": "Experimentar AI Chef Pro grátis",
       "secondary": "Ver todos os planos"
     }
   }
