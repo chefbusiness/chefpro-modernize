@@ -52,6 +52,33 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'chatgpt-para-restaurantes',
     nl: 'chatgpt-voor-restaurants',
   },
+  {
+    es: 'herramientas-gratuitas',
+    en: 'en/free-tools-restaurants',
+    fr: 'fr/outils-gratuits-restaurant',
+    de: 'de/kostenlose-tools-restaurant',
+    it: 'it/strumenti-gratuiti-ristorante',
+    pt: 'pt/ferramentas-gratuitas-restaurante',
+    nl: 'nl/gratis-tools-restaurant',
+  },
+  {
+    es: 'calculadora-food-cost-restaurante',
+    en: 'en/food-cost-calculator-restaurant',
+    fr: 'fr/calculateur-food-cost-restaurant',
+    de: 'de/food-cost-rechner-restaurant',
+    it: 'it/calcolatore-food-cost-ristorante',
+    pt: 'pt/calculadora-food-cost-restaurante',
+    nl: 'nl/food-cost-calculator-restaurant',
+  },
+  {
+    es: 'simulador-rentabilidad-restaurante',
+    en: 'en/restaurant-profit-simulator',
+    fr: 'fr/simulateur-rentabilite-restaurant',
+    de: 'de/rentabilitaet-simulator-restaurant',
+    it: 'it/simulatore-redditivita-ristorante',
+    pt: 'pt/simulador-rentabilidade-restaurante',
+    nl: 'nl/winstgevendheid-simulator-restaurant',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null
