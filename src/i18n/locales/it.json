@@ -1119,6 +1119,7 @@
     "nav_marketing": "Marketing con IA",
     "nav_chatgpt": "ChatGPT per Ristoranti",
     "nav_software_gestion": "Software Gestione Cucina",
+    "nav_recetas": "Ricette con IA",
     "nav_ai_tools": "Strumenti IA",
     "nav_free_tools": "Strumenti Gratuiti",
     "contact_title": "Contatto",
@@ -2349,6 +2350,137 @@
     "cta_section": {
       "title": "Inizia a gestire la tua cucina con l'IA oggi stesso",
       "subtitle": "Oltre 5.000 professionisti della ristorazione usano già AI Chef Pro per gestire la propria cucina con più controllo e meno tempo.",
+      "primary": "Prova gratis adesso",
+      "secondary": "Vedi tutti i piani"
+    }
+  },
+  "landingRecetas": {
+    "seo": {
+      "title": "Ricette con IA per Ristoranti | AI Chef Pro",
+      "description": "Genera ricette professionali con IA: 25 cucine del mondo, menu di stagione, schede tecniche e scaling automatico. Oltre 5.000 ristoranti lo usano già.",
+      "keywords": "ricette IA ristoranti, generatore ricette professionali, ricette IA chef, menu stagione IA, schede tecniche ricette, 25 cucine del mondo"
+    },
+    "breadcrumb": "Ricette con IA per Ristoranti",
+    "hero": {
+      "badge": "Generatore Professionale di Ricette con IA",
+      "h1": "Ricette con IA per Ristoranti: 25 Cucine del Mondo",
+      "subtitle": "Genera ricette tecnicamente corrette all'istante. Menu di stagione, schede tecniche professionali e scaling automatico delle porzioni per il tuo ristorante.",
+      "tagline": "Dal concetto al piatto in minuti, non in ore.",
+      "cta_primary": "Prova gratis adesso",
+      "cta_secondary": "Vedi piani e prezzi",
+      "no_card": "Nessuna carta di credito · Accesso immediato"
+    },
+    "results": [
+      { "metric": "25", "label": "Cucine del mondo" },
+      { "metric": "5.000+", "label": "Ristoranti attivi" },
+      { "metric": "80%", "label": "Meno tempo nello sviluppo menu" },
+      { "metric": "55+", "label": "Strumenti specializzati" }
+    ],
+    "comparison": {
+      "title": "Ricette IA vs. Metodo tradizionale",
+      "subtitle": "Scopri perché gli chef stanno integrando l'IA nel loro processo creativo.",
+      "col_feature": "Aspetto",
+      "col_other": "Metodo Tradizionale",
+      "items": [
+        { "feature": "Creazione ricette", "other": "Ore di ricerca e test", "aichef": "Ricetta tecnica generata in secondi" },
+        { "feature": "Varietà di cucine", "other": "Limitata alle conoscenze dello chef", "aichef": "25 cucine del mondo con tecnica reale" },
+        { "feature": "Menu di stagione", "other": "Processo manuale di settimane", "aichef": "Menu completo con ingredienti stagionali" },
+        { "feature": "Scaling porzioni", "other": "Calcoli manuali con errori", "aichef": "Scaling automatico e istantaneo" },
+        { "feature": "Schede tecniche", "other": "Redazione manuale Word/Excel", "aichef": "Scheda tecnica professionale generata al momento" }
+      ]
+    },
+    "tools_section": {
+      "title": "Gli strumenti di ricette di cui la tua cucina ha bisogno",
+      "subtitle": "Dall'ispirazione alla scheda tecnica, l'IA copre l'intero processo creativo della tua cucina."
+    },
+    "tools": [
+      {
+        "title": "Generatore di Ricette Professionali",
+        "description": "Crea ricette tecnicamente corrette con vocabolario culinario professionale, tecniche precise e presentazione dettagliata.",
+        "keywords": ["generatore ricette IA", "ricette chef professionali", "ricette tecniche"]
+      },
+      {
+        "title": "25 Cucine del Mondo",
+        "description": "Accedi a ricette autentiche di 25 tradizioni culinarie: francese, giapponese, peruviana, italiana, messicana e molto altro.",
+        "keywords": ["cucine del mondo", "ricette internazionali", "gastronomia globale"]
+      },
+      {
+        "title": "Menu di Stagione con IA",
+        "description": "Genera menu completi basati su ingredienti stagionali, il tuo concetto gastronomico e il profilo del tuo cliente.",
+        "keywords": ["menu stagione", "menu degustazione", "menu ristorante IA"]
+      },
+      {
+        "title": "Scaling Automatico delle Porzioni",
+        "description": "Adatta qualsiasi ricetta al numero di commensali desiderato. L'IA regola grammature, tempi di cottura e tecniche.",
+        "keywords": ["scaling ricette", "grammature per porzione", "produzione in massa"]
+      },
+      {
+        "title": "Schede Tecniche Professionali",
+        "description": "Genera schede tecniche complete con allergeni, valori nutrizionali, tecniche e impiattamento per il tuo team.",
+        "keywords": ["scheda tecnica ricetta", "ricettario professionale", "standardizzazione cucina"]
+      },
+      {
+        "title": "Adattamento per Restrizioni",
+        "description": "Adatta le ricette per vegani, celiaci, diabetici o qualsiasi restrizione alimentare senza perdere l'essenza del piatto.",
+        "keywords": ["ricette vegane chef", "ricette senza glutine", "adattamento dietetico"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Chi genera ricette con IA su AI Chef Pro?",
+      "subtitle": "Chef e ristoratori che hanno integrato l'IA nel loro processo creativo in cucina."
+    },
+    "profiles": [
+      { "title": "Chef Creativo", "description": "Usa l'IA come fonte di ispirazione per nuovi piatti e fusion di cucine del mondo." },
+      { "title": "Capo Partita", "description": "Genera schede tecniche standardizzate affinché il team possa riprodurre i piatti con precisione." },
+      { "title": "Chef d'Hotel o Catering", "description": "Crea menu completi per grandi eventi con scaling automatico delle porzioni." },
+      { "title": "Proprietario di Ristorante", "description": "Rinnova la carta di stagione senza lunghi processi di creazione manuale." }
+    ],
+    "why_section": {
+      "title": "L'IA che capisce la cucina, non solo le parole",
+      "body": "Un generatore generico ti darà ricette base. AI Chef Pro capisce la vera tecnica culinaria: fondi, riduzioni, punti di cottura, abbinamenti e la logica di ogni cucina del mondo.",
+      "benefits": [
+        "Ricette con vocabolario tecnico culinario corretto dal primo tentativo",
+        "25 cucine del mondo con tecniche e tradizioni autentiche",
+        "Menu di stagione allineati al tuo concetto gastronomico",
+        "Schede tecniche pronte da stampare e usare con il tuo team",
+        "Scaling delle porzioni istantaneo senza errori di calcolo",
+        "Adattamento alle restrizioni alimentari senza perdere la qualità culinaria"
+      ]
+    },
+    "testimonial": {
+      "quote": "Prima passavo ore a sviluppare nuovi piatti. Con AI Chef Pro ho una ricetta tecnicamente corretta in minuti, con la scheda tecnica inclusa. Il mio team può riprodurla perfettamente dal primo giorno.",
+      "name": "Laura Sánchez",
+      "role": "Chef Esecutiva, Restaurante Origen, Bilbao"
+    },
+    "pricing_section": {
+      "title": "Accedi al generatore di ricette con IA da 0€",
+      "subtitle": "Inizia gratis e scala quando la tua attività ne ha bisogno. Senza vincoli.",
+      "annual_note": "Piano annuale AI Chef Premium Plus disponibile a 950€/anno · Risparmia 2 mesi"
+    },
+    "faq_section": {
+      "title": "Domande frequenti sulle ricette con IA per ristoranti"
+    },
+    "faq": [
+      {
+        "question": "L'IA può creare ricette professionali per ristoranti?",
+        "answer": "Sì. AI Chef Pro genera ricette con vocabolario tecnico culinario corretto, incluse tecniche precise, punti di cottura, presentazione e abbinamenti. A differenza di un'IA generalista, capisce la logica di ogni cucina del mondo."
+      },
+      {
+        "question": "Quali cucine del mondo include AI Chef Pro?",
+        "answer": "AI Chef Pro include ricette e tecniche di 25 cucine: francese, italiana, giapponese, spagnola, peruviana, messicana, greca, marocchina, tailandese, indiana, cinese e altro. Ognuna con tecniche e vocabolario autentici."
+      },
+      {
+        "question": "Posso generare schede tecniche con AI Chef Pro?",
+        "answer": "Sì. AI Chef Pro genera schede tecniche professionali complete: ingredienti con grammature, tecniche passo dopo passo, allergeni secondo il Regolamento UE 1169/2011, valori nutrizionali e suggerimenti di impiattamento."
+      },
+      {
+        "question": "Come funziona lo scaling automatico delle ricette?",
+        "answer": "Inserisci il numero di porzioni desiderate e l'IA regola automaticamente tutte le grammature, i tempi di cottura e le tecniche. Ideale per catering, eventi o per adattare ricette di menu degustazione al servizio à la carte."
+      }
+    ],
+    "cta_section": {
+      "title": "Inizia a creare ricette con IA per il tuo ristorante",
+      "subtitle": "Oltre 5.000 chef e ristoratori usano già AI Chef Pro per creare ricette professionali in minuti.",
       "primary": "Prova gratis adesso",
       "secondary": "Vedi tutti i piani"
     }

@@ -1119,6 +1119,7 @@
     "nav_marketing": "Marketing mit KI",
     "nav_chatgpt": "ChatGPT für Restaurants",
     "nav_software_gestion": "Küchenverwaltungssoftware",
+    "nav_recetas": "KI-Rezepte",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -2349,6 +2350,137 @@
     "cta_section": {
       "title": "Beginnen Sie noch heute mit dem KI-gestützten Küchenmanagement",
       "subtitle": "Über 5.000 Gastronomieprofis nutzen bereits AI Chef Pro, um ihre Küche mit mehr Kontrolle und weniger Zeitaufwand zu managen.",
+      "primary": "Jetzt kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    }
+  },
+  "landingRecetas": {
+    "seo": {
+      "title": "KI-Rezepte für Restaurants | AI Chef Pro",
+      "description": "Generieren Sie professionelle Rezepte mit KI: 25 Weltküchen, Saisonmenüs, technische Datenblätter und automatische Skalierung. Über 5.000 Restaurants nutzen es bereits.",
+      "keywords": "KI-Rezepte Restaurants, professioneller Rezeptgenerator, KI-Chef-Rezepte, Saisonmenü KI, technische Rezeptblätter, 25 Weltküchen Rezepte"
+    },
+    "breadcrumb": "KI-Rezepte für Restaurants",
+    "hero": {
+      "badge": "Professioneller KI-Rezeptgenerator",
+      "h1": "KI-Rezepte für Restaurants: 25 Weltküchen",
+      "subtitle": "Generieren Sie technisch korrekte Rezepte sofort. Saisonmenüs, professionelle technische Datenblätter und automatische Portionierung für Ihr Restaurant.",
+      "tagline": "Vom Konzept zum Gericht in Minuten, nicht in Stunden.",
+      "cta_primary": "Jetzt kostenlos testen",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Sofortiger Zugang"
+    },
+    "results": [
+      { "metric": "25", "label": "Weltküchen" },
+      { "metric": "5.000+", "label": "Aktive Restaurants" },
+      { "metric": "80%", "label": "Weniger Zeit für Menüentwicklung" },
+      { "metric": "55+", "label": "Spezialisierte Tools" }
+    ],
+    "comparison": {
+      "title": "KI-Rezepte vs. Traditionelle Methoden",
+      "subtitle": "Entdecken Sie, warum Köche KI in ihren kreativen Prozess integrieren.",
+      "col_feature": "Aspekt",
+      "col_other": "Traditionelle Methode",
+      "items": [
+        { "feature": "Rezepterstellung", "other": "Stunden Recherche und Tests", "aichef": "Technisches Rezept in Sekunden generiert" },
+        { "feature": "Küchenvielfalt", "other": "Begrenzt auf Köche-Kenntnisse", "aichef": "25 Weltküchen mit echter Technik" },
+        { "feature": "Saisonmenüs", "other": "Wochenlanger manueller Prozess", "aichef": "Vollständiges Menü mit Saisonzutaten" },
+        { "feature": "Portionsskalierung", "other": "Manuelle Berechnungen mit Fehlern", "aichef": "Automatische und sofortige Skalierung" },
+        { "feature": "Technische Datenblätter", "other": "Manuelle Erstellung in Word/Excel", "aichef": "Professionelles Datenblatt sofort erstellt" }
+      ]
+    },
+    "tools_section": {
+      "title": "Die Rezept-Tools, die Ihre Küche braucht",
+      "subtitle": "Von der Inspiration bis zum technischen Datenblatt — KI deckt Ihren gesamten kreativen Küchenprozess ab."
+    },
+    "tools": [
+      {
+        "title": "Professioneller Rezeptgenerator",
+        "description": "Erstellen Sie technisch korrekte Rezepte mit professionellem kulinarischem Vokabular, präzisen Techniken und detaillierter Präsentation.",
+        "keywords": ["KI-Rezeptgenerator", "professionelle Koch-Rezepte", "technische Rezepte"]
+      },
+      {
+        "title": "25 Weltküchen",
+        "description": "Zugang zu authentischen Rezepten aus 25 kulinarischen Traditionen: Französisch, Japanisch, Peruanisch, Italienisch, Mexikanisch und viel mehr.",
+        "keywords": ["Weltküchen", "internationale Rezepte", "globale Gastronomie"]
+      },
+      {
+        "title": "KI-Saisonmenüs",
+        "description": "Generieren Sie vollständige Menüs basierend auf Saisonzutaten, Ihrem gastronomischen Konzept und Kundenprofil.",
+        "keywords": ["Saisonmenü", "Degustationsmenü", "KI-Restaurantmenü"]
+      },
+      {
+        "title": "Automatische Portionsskalierung",
+        "description": "Passen Sie jedes Rezept an die gewünschte Personenzahl an. KI passt Gewichte, Garzeiten und Techniken an.",
+        "keywords": ["Rezeptskalierung", "Gewichte pro Portion", "Massenproduktion"]
+      },
+      {
+        "title": "Professionelle Technische Datenblätter",
+        "description": "Generieren Sie vollständige technische Datenblätter mit Allergenen, Nährwerten, Techniken und Anrichten für Ihr Team.",
+        "keywords": ["Technisches Rezeptblatt", "professionelles Rezeptbuch", "Küchenstandardisierung"]
+      },
+      {
+        "title": "Anpassung an Ernährungseinschränkungen",
+        "description": "Passen Sie Rezepte für Veganer, Zöliakiepatienten, Diabetiker oder jede Ernährungseinschränkung an, ohne die Essenz des Gerichts zu verlieren.",
+        "keywords": ["vegane Koch-Rezepte", "glutenfreie Rezepte", "Ernährungsanpassung"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wer generiert Rezepte mit KI bei AI Chef Pro?",
+      "subtitle": "Köche und Gastronomen, die KI in ihren kreativen Küchenprozess integriert haben."
+    },
+    "profiles": [
+      { "title": "Kreativer Koch", "description": "Nutzt KI als Inspirationsquelle für neue Gerichte und Weltküchen-Fusionen." },
+      { "title": "Partieköch", "description": "Generiert standardisierte technische Datenblätter, damit das Team Gerichte präzise reproduzieren kann." },
+      { "title": "Hotel- oder Cateringkoch", "description": "Erstellt vollständige Menüs für Großveranstaltungen mit automatischer Portionsskalierung." },
+      { "title": "Restaurantinhaber", "description": "Erneuert die Saisonkarte ohne lange manuelle Erstellungsprozesse." }
+    ],
+    "why_section": {
+      "title": "KI, die das Kochen versteht, nicht nur Wörter",
+      "body": "Ein generischer Generator gibt Ihnen grundlegende Rezepte. AI Chef Pro versteht echte Kochkunst: Fonds, Reduktionen, Garpunkte, Pairings und die Logik jeder Weltküche.",
+      "benefits": [
+        "Rezepte mit korrektem kulinarischem Fachvokabular beim ersten Versuch",
+        "25 Weltküchen mit authentischen Techniken und Traditionen",
+        "Saisonmenüs abgestimmt auf Ihr gastronomisches Konzept",
+        "Technische Datenblätter druckfertig für Ihr Team",
+        "Sofortige Portionsskalierung ohne Berechnungsfehler",
+        "Anpassung an Ernährungseinschränkungen ohne Qualitätsverlust"
+      ]
+    },
+    "testimonial": {
+      "quote": "Früher verbrachte ich Stunden mit der Entwicklung neuer Gerichte. Mit AI Chef Pro habe ich in Minuten ein technisch korrektes Rezept, inklusive technischem Datenblatt. Mein Team kann es vom ersten Tag an perfekt reproduzieren.",
+      "name": "Laura Sánchez",
+      "role": "Küchenchefin, Restaurante Origen, Bilbao"
+    },
+    "pricing_section": {
+      "title": "Zugang zum KI-Rezeptgenerator ab 0€",
+      "subtitle": "Kostenlos starten und skalieren, wenn Ihr Unternehmen es braucht. Ohne Bindung.",
+      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufig gestellte Fragen zu KI-Rezepten für Restaurants"
+    },
+    "faq": [
+      {
+        "question": "Kann KI professionelle Rezepte für Restaurants erstellen?",
+        "answer": "Ja. AI Chef Pro generiert Rezepte mit korrektem kulinarischem Fachvokabular, einschließlich präziser Techniken, Garpunkten, Präsentation und Pairings. Im Gegensatz zu einer generischen KI versteht es die Logik jeder Weltküche."
+      },
+      {
+        "question": "Welche Weltküchen umfasst AI Chef Pro?",
+        "answer": "AI Chef Pro umfasst Rezepte und Techniken aus 25 Küchen: Französisch, Italienisch, Japanisch, Spanisch, Peruanisch, Mexikanisch, Griechisch, Marokkanisch, Thailändisch, Indisch, Chinesisch und mehr."
+      },
+      {
+        "question": "Kann ich technische Datenblätter mit AI Chef Pro generieren?",
+        "answer": "Ja. AI Chef Pro generiert vollständige professionelle technische Datenblätter: Zutaten mit Gewichten, schrittweise Techniken, Allergene gemäß EU-Verordnung 1169/2011, Nährwerte und Anrichtevorschläge."
+      },
+      {
+        "question": "Wie funktioniert die automatische Rezeptskalierung?",
+        "answer": "Geben Sie die gewünschte Portionsanzahl ein und die KI passt automatisch alle Gewichte, Garzeiten und Techniken an. Ideal für Catering, Events oder die Anpassung von Degustationsmenüs an den À-la-carte-Service."
+      }
+    ],
+    "cta_section": {
+      "title": "Beginnen Sie noch heute mit KI-Rezepten für Ihr Restaurant",
+      "subtitle": "Über 5.000 Köche und Gastronomen nutzen AI Chef Pro bereits, um in Minuten professionelle Rezepte zu erstellen.",
       "primary": "Jetzt kostenlos testen",
       "secondary": "Alle Pläne ansehen"
     }
