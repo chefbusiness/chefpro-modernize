@@ -29,12 +29,6 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Robots-Tag = "index, follow"
 
-# Prevent indexing of deploy previews
-[[headers]]
-  for = "/*"
-  [headers.values.context]
-    deploy-preview = "X-Robots-Tag: noindex, nofollow"
-    branch-deploy = "X-Robots-Tag: noindex, nofollow"
 
 # Cache optimization for assets
 [[headers]]
