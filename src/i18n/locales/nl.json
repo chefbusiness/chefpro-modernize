@@ -20,6 +20,7 @@
     "reducir_costes": "Kosten verlagen",
     "herramientas_ia": "AI-Tools Restaurant",
     "carta_menu": "Menu met AI",
+    "marketing_ia": "Marketing met AI",
     "blog": "Blog",
     "login": "Inloggen"
   },
@@ -1096,6 +1097,7 @@
     "nav_blog": "Blog",
     "nav_costs": "Kosten verlagen",
     "nav_menu": "Menu met AI",
+    "nav_marketing": "Marketing met AI",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -1738,5 +1740,135 @@
       "secondary": "Alle plannen bekijken"
     },
     "breadcrumb": "Restaurantmenu met AI"
+  },
+  "landingMarketing": {
+    "seo": {
+      "title": "Restaurant Marketing met AI | AI Chef Pro",
+      "description": "Automatiseer de marketing van uw restaurant met kunstmatige intelligentie. Social media, Google My Business, beoordelingen en campagnes in minuten. Gratis proberen.",
+      "keywords": "restaurant marketing ai, social media restaurant ai, google my business restaurant, restaurant beoordelingen ai, restaurant content ai, horeca marketing ai"
+    },
+    "hero": {
+      "badge": "Gastronomische marketing geautomatiseerd met AI",
+      "h1": "Restaurant Marketing met Kunstmatige Intelligentie",
+      "subtitle": "Maak social media content, beheer beoordelingen, optimaliseer uw Google-profiel en lanceer promoties in minuten. Zonder bureau, zonder buitensporig budget.",
+      "tagline": "Social media · Google My Business · Beoordelingen · Campagnes · E-mailmarketing",
+      "cta_primary": "Nu gratis starten",
+      "cta_secondary": "Plannen en prijzen bekijken",
+      "no_card": "Geen creditcard vereist · Gratis plan beschikbaar"
+    },
+    "results": [
+      { "metric": "10x", "label": "sneller social media content maken" },
+      { "metric": "3u", "label": "per week bespaard op digitale marketing" },
+      { "metric": "4.8★", "label": "gemiddelde klantbeoordeling op Google" },
+      { "metric": "55+", "label": "gastronomische marketingtools" }
+    ],
+    "tools_section": {
+      "title": "Al uw restaurantmarketing, geautomatiseerd met AI",
+      "subtitle": "Van de Instagram-post tot het antwoord op een negatieve beoordeling. AI genereert de content, u beslist wat u publiceert."
+    },
+    "tools": [
+      {
+        "title": "Social Media Content",
+        "description": "Genereer posts voor Instagram, Facebook en TikTok met teksten, hashtags en beeldideeën afgestemd op uw restaurant, dagschotel en communicatiestijl.",
+        "keywords": ["instagram restaurant", "horeca posts", "social media content"]
+      },
+      {
+        "title": "Google Beoordelingsbeheer",
+        "description": "Beantwoord positieve en negatieve beoordelingen in seconden met professionele, empathische antwoorden die uw online reputatie en lokale ranking verbeteren.",
+        "keywords": ["google beoordelingen restaurant", "beoordelingen beantwoorden", "online reputatie"]
+      },
+      {
+        "title": "Food Fotografie & Beschrijvingen",
+        "description": "Maak onweerstaanbare bijschriften, beschrijvingen voor uw digitale menu en story-teksten die boekingen genereren en engagement verhogen.",
+        "keywords": ["food fotografie", "gerechtsomschrijvingen", "instagram stories"]
+      },
+      {
+        "title": "Google My Business",
+        "description": "Optimaliseer uw Google-profiel met overtuigende beschrijvingen, nieuwsberichten, speciale aanbiedingen en FAQ-antwoorden voor meer lokale klanten.",
+        "keywords": ["Google My Business restaurant", "google profiel", "lokale SEO restaurant"]
+      },
+      {
+        "title": "Campagnes & Promoties",
+        "description": "Ontwerp campagnes voor speciale evenementen, feestdagen, seizoensmenus en flitsacties met teksten en berichtenreeksen klaar om te publiceren.",
+        "keywords": ["restaurant campagnes", "horeca promoties", "e-mailmarketing"]
+      },
+      {
+        "title": "Newsletter & E-mailmarketing",
+        "description": "Schrijf maandelijkse nieuwsbrieven, loyaliteits-e-mails en welkomstreeksen voor uw klanten in de toon en stijl van uw gastronomisch merk.",
+        "keywords": ["restaurant nieuwsbrief", "horeca e-mailmarketing", "klantloyaliteit"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Voor elk restaurant dat online wil groeien",
+      "subtitle": "Of u nog nooit digitale marketing heeft gedaan of al een online aanwezigheid heeft, AI multipliceert uw resultaten met minder moeite."
+    },
+    "profiles": [
+      {
+        "title": "Onafhankelijk restaurant",
+        "description": "Concurreer met ketens en grote groepen met professionele, consistente content zonder een bureau in te huren."
+      },
+      {
+        "title": "Bar & Café",
+        "description": "Trek meer klanten aan met dagschotelaanbiedingen, speciale acties en een onberispelijke reputatie op Google Maps."
+      },
+      {
+        "title": "Restaurantketen",
+        "description": "Centraliseer de communicatie van al uw vestigingen met consistente content aangepast aan elke locatie."
+      },
+      {
+        "title": "Chef met Persoonlijk Merk",
+        "description": "Bouw uw gastronomisch merk op sociale media op met signature-content die uw culinaire filosofie weerspiegelt."
+      }
+    ],
+    "why_section": {
+      "title": "Waarom AI-marketing de toekomst van de horeca is?",
+      "body": "Restaurants die regelmatig kwalitatieve content publiceren op sociale media hebben 40% meer online boekingen. AI maakt dit mogelijk in minuten per dag, zonder afhankelijk te zijn van externe designers of community managers.",
+      "benefits": [
+        "Maak 30 posts voor een hele maand in minder dan een uur",
+        "Beantwoord alle Google-beoordelingen in minuten, niet in dagen",
+        "Houd uw Google-profiel altijd actueel en geoptimaliseerd",
+        "Lanceer seizoenscampagnes zonder bureaukosten",
+        "Genereer gerechtsomschrijvingen voor uw website en digitaal menu",
+        "Pas alle content aan de toon en stijl van uw merk aan"
+      ]
+    },
+    "testimonial": {
+      "quote": "Vroeger besteedde ik uren aan het voorbereiden van de wekelijkse Instagram-content. Nu doe ik het maandag in 20 minuten en de hele week is gedekt. Online boekingen stegen met 35%.",
+      "name": "Ana Martínez",
+      "role": "Eigenaar, La Taberna de Ana, Sevilla"
+    },
+    "pricing_section": {
+      "title": "Plannen voor geautomatiseerde gastronomische marketing",
+      "subtitle": "Van het gratis plan om te starten tot onbeperkt gebruik voor groepen met meerdere vestigingen.",
+      "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over restaurantmarketing met AI"
+    },
+    "faq": [
+      {
+        "question": "Kan AI de sociale media van mijn restaurant beheren?",
+        "answer": "AI Chef Pro's AI genereert content voor uw posts op Instagram, Facebook en TikTok. U controleert, personaliseert en publiceert. Het is intelligente assistentie waarmee u in minuten professionele content kunt maken in plaats van uren."
+      },
+      {
+        "question": "Hoe helpt AI mijn Google-beoordelingen te verbeteren?",
+        "answer": "De AI genereert gepersonaliseerde antwoorden voor elke beoordeling, positief en negatief. Voor negatieve stelt het professionele, empathische antwoorden voor. Alle beoordelingen beantwoorden verbetert uw Google Maps-score en lokale ranking."
+      },
+      {
+        "question": "Heb ik kennis van digitale marketing nodig?",
+        "answer": "Nee. AI Chef Pro is ontworpen voor horecaondernemers. U beschrijft in gastronomische taal wat u nodig heeft en de AI genereert kant-en-klare content om te kopiëren en plakken in uw sociale netwerken."
+      },
+      {
+        "question": "Kan ik marketingcontent in meerdere talen maken?",
+        "answer": "Ja. AI Chef Pro is beschikbaar in 7 talen en kan marketingcontent genereren in de gewenste taal. Ideaal voor restaurants met internationale of toeristische gasten."
+      }
+    ],
+    "cta_section": {
+      "title": "Stop met improviseren. Automatiseer uw restaurantmarketing.",
+      "subtitle": "Meer dan 5.000 restaurants gebruiken AI Chef Pro al voor professionele content, online reputatiebeheer en meer klanten.",
+      "primary": "Nu gratis starten",
+      "secondary": "Alle plannen bekijken"
+    },
+    "breadcrumb": "Restaurant Marketing met AI"
   }
 }

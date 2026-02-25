@@ -20,6 +20,7 @@
     "reducir_costes": "Kosten senken",
     "herramientas_ia": "KI-Tools für Restaurants",
     "carta_menu": "Speisekarte mit KI",
+    "marketing_ia": "Marketing mit KI",
     "blog": "Blog",
     "login": "Anmelden"
   },
@@ -1114,6 +1115,7 @@
     "nav_blog": "Blog",
     "nav_costs": "Kosten senken",
     "nav_menu": "Speisekarte mit KI",
+    "nav_marketing": "Marketing mit KI",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -1756,5 +1758,135 @@
       "secondary": "Alle Pläne ansehen"
     },
     "breadcrumb": "Speisekarte Restaurant mit KI"
+  },
+  "landingMarketing": {
+    "seo": {
+      "title": "Restaurant Marketing mit KI | AI Chef Pro",
+      "description": "Automatisieren Sie das Marketing Ihres Restaurants mit KI. Social Media, Google My Business, Bewertungen und Kampagnen in Minuten. Kostenlos testen.",
+      "keywords": "restaurant marketing ki, social media restaurant ki, google my business restaurant, restaurant bewertungen ki, restaurant content ki, gastronomie marketing ki"
+    },
+    "hero": {
+      "badge": "Gastronomie-Marketing automatisiert mit KI",
+      "h1": "Restaurant Marketing mit Künstlicher Intelligenz",
+      "subtitle": "Erstellen Sie Social-Media-Inhalte, verwalten Sie Bewertungen, optimieren Sie Ihr Google-Profil und starten Sie Promotionen in Minuten. Ohne Agentur, ohne überzogenes Budget.",
+      "tagline": "Social Media · Google My Business · Bewertungen · Kampagnen · E-Mail-Marketing",
+      "cta_primary": "Jetzt kostenlos starten",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte erforderlich · Kostenloser Plan verfügbar"
+    },
+    "results": [
+      { "metric": "10x", "label": "schneller Social-Media-Inhalte erstellen" },
+      { "metric": "3h", "label": "pro Woche im digitalen Marketing gespart" },
+      { "metric": "4.8★", "label": "durchschnittliche Kundenbewertung bei Google" },
+      { "metric": "55+", "label": "Gastronomie-Marketing-Tools" }
+    ],
+    "tools_section": {
+      "title": "Ihr gesamtes Restaurant-Marketing, automatisiert mit KI",
+      "subtitle": "Vom Instagram-Post bis zur Antwort auf eine negative Bewertung. KI erstellt den Inhalt, Sie entscheiden was Sie veröffentlichen."
+    },
+    "tools": [
+      {
+        "title": "Social-Media-Inhalte",
+        "description": "Erstellen Sie Posts für Instagram, Facebook und TikTok mit Texten, Hashtags und Bildideen passend zu Ihrem Restaurant, Tagesgericht und Kommunikationsstil.",
+        "keywords": ["Instagram Restaurant", "Gastronomie-Posts", "Social-Media-Inhalte"]
+      },
+      {
+        "title": "Google-Bewertungsmanagement",
+        "description": "Antworten Sie auf positive und negative Bewertungen in Sekunden mit professionellen, einfühlsamen Antworten, die Ihren Online-Ruf und lokales Ranking verbessern.",
+        "keywords": ["Google Bewertungen Restaurant", "Bewertungen beantworten", "Online-Reputation"]
+      },
+      {
+        "title": "Food-Fotografie & Beschreibungen",
+        "description": "Erstellen Sie unwiderstehliche Bildunterschriften, Beschreibungen für Ihre digitale Speisekarte und Story-Texte, die Buchungen generieren.",
+        "keywords": ["Food-Fotografie", "Gerichtsbeschreibungen", "Instagram Stories"]
+      },
+      {
+        "title": "Google My Business",
+        "description": "Optimieren Sie Ihr Google-Profil mit überzeugenden Beschreibungen, Neuigkeiten-Posts, Sonderangeboten und FAQ-Antworten für mehr lokale Kunden.",
+        "keywords": ["Google My Business Restaurant", "Google Profil", "lokales SEO Restaurant"]
+      },
+      {
+        "title": "Kampagnen & Aktionen",
+        "description": "Gestalten Sie Kampagnen für besondere Anlässe, Feiertage, Saisonmenüs und Flash-Aktionen mit Texten und Nachrichtensequenzen zur Veröffentlichung.",
+        "keywords": ["Restaurant-Kampagnen", "Gastronomie-Aktionen", "E-Mail-Marketing"]
+      },
+      {
+        "title": "Newsletter & E-Mail-Marketing",
+        "description": "Verfassen Sie monatliche Newsletter, Kundenbindungs-E-Mails und Willkommenssequenzen im Ton und Stil Ihrer Gastronomie-Marke.",
+        "keywords": ["Restaurant Newsletter", "Gastronomie E-Mail-Marketing", "Kundenbindung"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Für jedes Restaurant, das online wachsen möchte",
+      "subtitle": "Ob Sie noch nie digitales Marketing betrieben haben oder bereits eine Online-Präsenz haben, KI multipliziert Ihre Ergebnisse mit weniger Aufwand."
+    },
+    "profiles": [
+      {
+        "title": "Unabhängiges Restaurant",
+        "description": "Konkurrieren Sie mit Ketten und großen Gruppen mit professionellem, konsistentem Content ohne Agentur."
+      },
+      {
+        "title": "Bar & Café",
+        "description": "Gewinnen Sie mehr Kunden mit Tagesangebots-Posts, Sonderangeboten und einem tadellosen Ruf bei Google Maps."
+      },
+      {
+        "title": "Restaurantkette",
+        "description": "Zentralisieren Sie die Kommunikation aller Standorte mit konsistenten, standortangepassten Inhalten."
+      },
+      {
+        "title": "Koch mit Personal Brand",
+        "description": "Bauen Sie Ihre Gastronomie-Marke in sozialen Medien mit Signature-Content auf, der Ihre kulinarische Philosophie widerspiegelt."
+      }
+    ],
+    "why_section": {
+      "title": "Warum KI-Marketing die Zukunft der Gastronomie ist?",
+      "body": "Restaurants, die regelmäßig qualitativ hochwertige Inhalte in sozialen Medien veröffentlichen, haben 40% mehr Online-Buchungen. KI ermöglicht dies in Minuten pro Tag, ohne auf externe Designer oder Community Manager angewiesen zu sein.",
+      "benefits": [
+        "Erstellen Sie 30 Posts für einen ganzen Monat in weniger als einer Stunde",
+        "Antworten Sie auf alle Google-Bewertungen in Minuten, nicht in Tagen",
+        "Halten Sie Ihr Google-Profil immer aktuell und optimiert",
+        "Starten Sie Saisonkampagnen ohne Agenturkosten",
+        "Erstellen Sie Gerichtsbeschreibungen für Ihre Website und digitale Speisekarte",
+        "Passen Sie alle Inhalte an Ton und Stil Ihrer Marke an"
+      ]
+    },
+    "testimonial": {
+      "quote": "Früher verbrachte ich Stunden damit, den wöchentlichen Instagram-Content vorzubereiten. Jetzt mache ich es montags in 20 Minuten und die ganze Woche ist gedeckt. Online-Buchungen stiegen um 35%.",
+      "name": "Ana Martínez",
+      "role": "Inhaberin, La Taberna de Ana, Sevilla"
+    },
+    "pricing_section": {
+      "title": "Pläne für automatisiertes Gastronomie-Marketing",
+      "subtitle": "Vom kostenlosen Plan bis zur unbegrenzten Nutzung für Gruppen mit mehreren Standorten.",
+      "annual_note": "Auch als Jahresplan: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufige Fragen zu Restaurant-Marketing mit KI"
+    },
+    "faq": [
+      {
+        "question": "Kann KI die Social Media meines Restaurants verwalten?",
+        "answer": "AI Chef Pro's KI erstellt Inhalte für Ihre Beiträge auf Instagram, Facebook und TikTok. Sie überprüfen, personalisieren und veröffentlichen. Es ist intelligente Unterstützung, die es Ihnen ermöglicht, professionelle Inhalte in Minuten statt Stunden zu erstellen."
+      },
+      {
+        "question": "Wie hilft KI dabei, meine Google-Bewertungen zu verbessern?",
+        "answer": "Die KI generiert personalisierte Antworten für jede Bewertung. Für negative schlägt sie professionelle, einfühlsame Antworten vor. Das Beantworten aller Bewertungen verbessert Ihre Google Maps-Bewertung und Ihr lokales Ranking."
+      },
+      {
+        "question": "Benötige ich Kenntnisse im digitalen Marketing?",
+        "answer": "Nein. AI Chef Pro ist für Gastronomen konzipiert. Sie beschreiben in Gastronomiesprache, was Sie benötigen, und die KI erstellt fertige Inhalte zum Kopieren und Einfügen."
+      },
+      {
+        "question": "Kann ich Marketing-Inhalte in mehreren Sprachen erstellen?",
+        "answer": "Ja. AI Chef Pro ist in 7 Sprachen verfügbar und kann Marketing-Inhalte in der benötigten Sprache generieren. Ideal für Restaurants mit internationaler oder touristischer Kundschaft."
+      }
+    ],
+    "cta_section": {
+      "title": "Hören Sie auf zu improvisieren. Automatisieren Sie Ihr Restaurant-Marketing.",
+      "subtitle": "Über 5.000 Restaurants nutzen AI Chef Pro bereits für professionelle Inhalte, Online-Reputation und mehr Kunden.",
+      "primary": "Jetzt kostenlos starten",
+      "secondary": "Alle Pläne ansehen"
+    },
+    "breadcrumb": "Restaurant Marketing mit KI"
   }
 }

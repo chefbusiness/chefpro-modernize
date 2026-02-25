@@ -32,6 +32,16 @@ const MENU_SLUGS: Record<string, string> = {
   pt: 'pt/cardapio-restaurante-ia',
   nl: 'nl/restaurantmenu-ai',
 };
+
+const MARKETING_SLUGS: Record<string, string> = {
+  es: 'marketing-restaurante-ia',
+  en: 'en/restaurant-marketing-ai',
+  fr: 'fr/marketing-restaurant-ia',
+  de: 'de/restaurant-marketing-ki',
+  it: 'it/marketing-ristorante-ia',
+  pt: 'pt/marketing-restaurante-ia-pt',
+  nl: 'nl/restaurant-marketing-ai-nl',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -147,6 +157,12 @@ export default function ModernHeader() {
                           href={`/${MENU_SLUGS[currentLanguage] || MENU_SLUGS.es}`}
                         >
                           {t('nav.carta_menu')}
+                        </NavigationMenuLink>
+                        <NavigationMenuLink
+                          className="block text-sm font-medium text-violet-600 hover:text-violet-500 transition-colors py-1"
+                          href={`/${MARKETING_SLUGS[currentLanguage] || MARKETING_SLUGS.es}`}
+                        >
+                          {t('nav.marketing_ia')}
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -384,6 +400,14 @@ export default function ModernHeader() {
                           >
                             <Wrench className="h-4 w-4 text-emerald-500" />
                             {t('nav.carta_menu')}
+                          </a>
+                          <a
+                            href={`/${MARKETING_SLUGS[currentLanguage] || MARKETING_SLUGS.es}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-violet-600"
+                          >
+                            <Wrench className="h-4 w-4 text-violet-500" />
+                            {t('nav.marketing_ia')}
                           </a>
                         </CollapsibleContent>
                       </Collapsible>
