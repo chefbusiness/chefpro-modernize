@@ -1110,7 +1110,26 @@
     "legal": "Juridisch",
     "privacy": "Privacybeleid",
     "terms": "Servicevoorwaarden",
-    "cookies": "Cookiebeleid"
+    "cookies": "Cookiebeleid",
+    "section_ia": "AI voor Restaurants",
+    "section_formacion": "Opleiding",
+    "section_recursos": "Bronnen",
+    "section_herramientas": "Tools",
+    "section_empresa": "Bedrijf",
+    "blog_main": "AI Gastronomie Blog",
+    "tutoriales": "Tutorials",
+    "prompts_library": "Prompt Bibliotheek",
+    "recetario": "Pro AI Receptenboek",
+    "glosario_ia": "AI Woordenlijst",
+    "glosario_culinario": "Culinair Wetenschappelijk Woordenboek",
+    "roadmap": "AI Chef Pro Roadmap",
+    "app_tools": "55+ Tools in de App",
+    "app_login": "Inloggen",
+    "free_tools_hub": "Gratis Tools",
+    "mentoria_online": "Online Mentoring",
+    "formacion_presencial": "Aanwezigheidsopleding",
+    "planes_precios": "Plannen en Prijzen",
+    "payment_methods": "Betaalmethoden"
   },
   "ai_gallery": {
     "badge": "AI-beeldgeneratie",
@@ -1343,10 +1362,22 @@
       "no_card": "Geen creditcard vereist. Directe toegang."
     },
     "results": [
-      { "metric": "-35%", "label": "Gemiddelde verliesvermindering" },
-      { "metric": "-22%", "label": "Vermindering van de food cost" },
-      { "metric": "+18%", "label": "Verbetering van de bruto marge" },
-      { "metric": "2 wk.", "label": "Gemiddelde ROI vanaf de start" }
+      {
+        "metric": "-35%",
+        "label": "Gemiddelde verliesvermindering"
+      },
+      {
+        "metric": "-22%",
+        "label": "Vermindering van de food cost"
+      },
+      {
+        "metric": "+18%",
+        "label": "Verbetering van de bruto marge"
+      },
+      {
+        "metric": "2 wk.",
+        "label": "Gemiddelde ROI vanaf de start"
+      }
     ],
     "tools_section": {
       "title": "6 AI-tools om kosten te verlagen in uw keuken",
@@ -1356,32 +1387,56 @@
       {
         "title": "AI-verliescontrole",
         "description": "Detecteer verspillingspatronen, identificeer de duurste ingrediënten en ontvang waarschuwingen wanneer verliezen de optimale drempel overschrijden.",
-        "keywords": ["verspilling", "voedselverliezen", "keukenkosten"]
+        "keywords": [
+          "verspilling",
+          "voedselverliezen",
+          "keukenkosten"
+        ]
       },
       {
         "title": "Automatische Receptberekening",
         "description": "Bereken de werkelijke kosten van elk recept in seconden. Werk ingrediëntprijzen bij en alle berekeningen worden automatisch herberekend.",
-        "keywords": ["receptberekening", "food cost", "kosten per gerecht"]
+        "keywords": [
+          "receptberekening",
+          "food cost",
+          "kosten per gerecht"
+        ]
       },
       {
         "title": "Menu-margeoptimalisator",
         "description": "Analyseer welke gerechten de beste marge opleveren en welke u geld kosten. Herontwerp uw menu om de winstgevendheid te maximaliseren.",
-        "keywords": ["menu-engineering", "gerechtwinstgevendheid", "menuoptimalisatie"]
+        "keywords": [
+          "menu-engineering",
+          "gerechtwinstgevendheid",
+          "menuoptimalisatie"
+        ]
       },
       {
         "title": "Intelligente Inkoopplanner",
         "description": "Genereer boodschappenlijsten op basis van uw verkoophistorie om overstock te vermijden en verliezen van bederfelijke producten te verminderen.",
-        "keywords": ["restaurant inkoop", "keukeninventaris", "leveranciersbestellingen"]
+        "keywords": [
+          "restaurant inkoop",
+          "keukeninventaris",
+          "leveranciersbestellingen"
+        ]
       },
       {
         "title": "Winstgevendheidsanalyse",
         "description": "Real-time dashboard met uw belangrijkste KPI's: food cost %, prime cost, marge per tafel en winstgevendheid per dienst.",
-        "keywords": ["restaurant KPI's", "winstgevendheid", "bedrijfsanalyse"]
+        "keywords": [
+          "restaurant KPI's",
+          "winstgevendheid",
+          "bedrijfsanalyse"
+        ]
       },
       {
         "title": "Personeelskostenoptimalisatie",
         "description": "Bereken de personeelskosten per dienst en ontvang suggesties om diensten aan te passen op basis van verwachte vraag en prime cost doelstellingen.",
-        "keywords": ["personeelskosten", "prime cost", "keukendiensten"]
+        "keywords": [
+          "personeelskosten",
+          "prime cost",
+          "keukendiensten"
+        ]
       }
     ],
     "profiles_section": {
@@ -1629,10 +1684,22 @@
       "no_card": "Geen creditcard vereist · Gratis plan beschikbaar"
     },
     "results": [
-      { "metric": "3u", "label": "voor een complete menukaart vanaf nul" },
-      { "metric": "40%", "label": "meer marge met AI menu engineering" },
-      { "metric": "14", "label": "allergenen automatisch beheerd" },
-      { "metric": "25+", "label": "wereldkeukens om uw menu te inspireren" }
+      {
+        "metric": "3u",
+        "label": "voor een complete menukaart vanaf nul"
+      },
+      {
+        "metric": "40%",
+        "label": "meer marge met AI menu engineering"
+      },
+      {
+        "metric": "14",
+        "label": "allergenen automatisch beheerd"
+      },
+      {
+        "metric": "25+",
+        "label": "wereldkeukens om uw menu te inspireren"
+      }
     ],
     "tools_section": {
       "title": "Alles wat u nodig heeft voor een winstgevende menukaart",
@@ -1642,32 +1709,56 @@
       {
         "title": "Volledige Menugenerator",
         "description": "Beschrijf uw concept en de AI genereert een complete menukaart met voorgerechten, hoofdgerechten, desserts en dranken afgestemd op uw stijl, seizoen en food cost doel.",
-        "keywords": ["restaurantmenu", "volledig AI-menu", "menuontwerp"]
+        "keywords": [
+          "restaurantmenu",
+          "volledig AI-menu",
+          "menuontwerp"
+        ]
       },
       {
         "title": "Menu Engineering",
         "description": "Analyseer welke gerechten sterren, puzzels, trekpaarden of honden zijn. Herorden uw menukaart om marge en verkoopvolume te maximaliseren.",
-        "keywords": ["menu engineering", "gerechtsrentabiliteit", "menukaart matrix"]
+        "keywords": [
+          "menu engineering",
+          "gerechtsrentabiliteit",
+          "menukaart matrix"
+        ]
       },
       {
         "title": "Gastronomische Beschrijvingen",
         "description": "Genereer evocatieve en eetlustopwekkende beschrijvingen voor elk gerecht. Teksten die verkopen, afgestemd op de toon van uw restaurant.",
-        "keywords": ["gerechtsomschrijvingen", "gastronomisch copywriting", "menuteksten"]
+        "keywords": [
+          "gerechtsomschrijvingen",
+          "gastronomisch copywriting",
+          "menuteksten"
+        ]
       },
       {
         "title": "Allergenenbeleid",
         "description": "Identificeer en label automatisch de 14 verplicht te vermelden allergenen. Wettelijke naleving moeiteloos voor alle gerechten op uw menukaart.",
-        "keywords": ["allergenen menukaart", "allergeenregelgeving", "wettelijke etikettering"]
+        "keywords": [
+          "allergenen menukaart",
+          "allergeenregelgeving",
+          "wettelijke etikettering"
+        ]
       },
       {
         "title": "Seizoensmenus",
         "description": "Vernieuw uw menukaart op basis van seizoensinvloeden, marktproducten en actuele gastronomische trends. Altijd vers, altijd winstgevend.",
-        "keywords": ["seizoensmenu", "seizoenskaart", "marktproducten"]
+        "keywords": [
+          "seizoensmenu",
+          "seizoenskaart",
+          "marktproducten"
+        ]
       },
       {
         "title": "Speciale Menu's & Wijnarrangementen",
         "description": "Maak wijnkaarten, cocktailmenu's, degustatiemenu's en spijs-wijnarrangementen met elegante toelichtingen bij elk gerecht.",
-        "keywords": ["wijnkaart", "spijs-wijnkoppeling", "degustatiemenu"]
+        "keywords": [
+          "wijnkaart",
+          "spijs-wijnkoppeling",
+          "degustatiemenu"
+        ]
       }
     ],
     "profiles_section": {
@@ -1759,10 +1850,22 @@
       "no_card": "Geen creditcard vereist · Gratis plan beschikbaar"
     },
     "results": [
-      { "metric": "10x", "label": "sneller social media content maken" },
-      { "metric": "3u", "label": "per week bespaard op digitale marketing" },
-      { "metric": "4.8★", "label": "gemiddelde klantbeoordeling op Google" },
-      { "metric": "55+", "label": "gastronomische marketingtools" }
+      {
+        "metric": "10x",
+        "label": "sneller social media content maken"
+      },
+      {
+        "metric": "3u",
+        "label": "per week bespaard op digitale marketing"
+      },
+      {
+        "metric": "4.8★",
+        "label": "gemiddelde klantbeoordeling op Google"
+      },
+      {
+        "metric": "55+",
+        "label": "gastronomische marketingtools"
+      }
     ],
     "tools_section": {
       "title": "Al uw restaurantmarketing, geautomatiseerd met AI",
@@ -1772,32 +1875,56 @@
       {
         "title": "Social Media Content",
         "description": "Genereer posts voor Instagram, Facebook en TikTok met teksten, hashtags en beeldideeën afgestemd op uw restaurant, dagschotel en communicatiestijl.",
-        "keywords": ["instagram restaurant", "horeca posts", "social media content"]
+        "keywords": [
+          "instagram restaurant",
+          "horeca posts",
+          "social media content"
+        ]
       },
       {
         "title": "Google Beoordelingsbeheer",
         "description": "Beantwoord positieve en negatieve beoordelingen in seconden met professionele, empathische antwoorden die uw online reputatie en lokale ranking verbeteren.",
-        "keywords": ["google beoordelingen restaurant", "beoordelingen beantwoorden", "online reputatie"]
+        "keywords": [
+          "google beoordelingen restaurant",
+          "beoordelingen beantwoorden",
+          "online reputatie"
+        ]
       },
       {
         "title": "Food Fotografie & Beschrijvingen",
         "description": "Maak onweerstaanbare bijschriften, beschrijvingen voor uw digitale menu en story-teksten die boekingen genereren en engagement verhogen.",
-        "keywords": ["food fotografie", "gerechtsomschrijvingen", "instagram stories"]
+        "keywords": [
+          "food fotografie",
+          "gerechtsomschrijvingen",
+          "instagram stories"
+        ]
       },
       {
         "title": "Google My Business",
         "description": "Optimaliseer uw Google-profiel met overtuigende beschrijvingen, nieuwsberichten, speciale aanbiedingen en FAQ-antwoorden voor meer lokale klanten.",
-        "keywords": ["Google My Business restaurant", "google profiel", "lokale SEO restaurant"]
+        "keywords": [
+          "Google My Business restaurant",
+          "google profiel",
+          "lokale SEO restaurant"
+        ]
       },
       {
         "title": "Campagnes & Promoties",
         "description": "Ontwerp campagnes voor speciale evenementen, feestdagen, seizoensmenus en flitsacties met teksten en berichtenreeksen klaar om te publiceren.",
-        "keywords": ["restaurant campagnes", "horeca promoties", "e-mailmarketing"]
+        "keywords": [
+          "restaurant campagnes",
+          "horeca promoties",
+          "e-mailmarketing"
+        ]
       },
       {
         "title": "Newsletter & E-mailmarketing",
         "description": "Schrijf maandelijkse nieuwsbrieven, loyaliteits-e-mails en welkomstreeksen voor uw klanten in de toon en stijl van uw gastronomisch merk.",
-        "keywords": ["restaurant nieuwsbrief", "horeca e-mailmarketing", "klantloyaliteit"]
+        "keywords": [
+          "restaurant nieuwsbrief",
+          "horeca e-mailmarketing",
+          "klantloyaliteit"
+        ]
       }
     ],
     "profiles_section": {
@@ -1889,22 +2016,58 @@
       "no_card": "Geen creditcard · Gratis plan beschikbaar"
     },
     "results": [
-      { "metric": "55+", "label": "tools getraind in gastronomie" },
-      { "metric": "10x", "label": "nauwkeuriger in food cost berekeningen" },
-      { "metric": "5.000+", "label": "restaurants en chefs die het al gebruiken" },
-      { "metric": "25", "label": "wereldkeukens in de database" }
+      {
+        "metric": "55+",
+        "label": "tools getraind in gastronomie"
+      },
+      {
+        "metric": "10x",
+        "label": "nauwkeuriger in food cost berekeningen"
+      },
+      {
+        "metric": "5.000+",
+        "label": "restaurants en chefs die het al gebruiken"
+      },
+      {
+        "metric": "25",
+        "label": "wereldkeukens in de database"
+      }
     ],
     "comparison": {
       "title": "ChatGPT vs AI Chef Pro voor restaurants",
       "subtitle": "Beide gebruiken kunstmatige intelligentie, maar slechts één is getraind voor uw bedrijf.",
       "col_feature": "Functionaliteit",
       "items": [
-        { "feature": "Food cost berekening", "chatgpt": "Generieke antwoorden", "aichef": "Nauwkeurige berekening met marges" },
-        { "feature": "Menu ontwerp", "chatgpt": "Geen gastronomische context", "aichef": "Afgestemd op uw concept en food cost" },
-        { "feature": "Allergenen beheer", "chatgpt": "Kan fouten maken", "aichef": "14 allergenen per EU-verordening" },
-        { "feature": "Professionele recepten", "chatgpt": "Generiek, zonder techniek", "aichef": "25 wereldkeukens met techniek" },
-        { "feature": "Gastronomie marketing", "chatgpt": "Geen branchevocabulaire", "aichef": "Teksten met horeca terminologie" },
-        { "feature": "Antwoorden op reviews", "chatgpt": "Teksten zonder context", "aichef": "Antwoorden met restauranttoon" }
+        {
+          "feature": "Food cost berekening",
+          "chatgpt": "Generieke antwoorden",
+          "aichef": "Nauwkeurige berekening met marges"
+        },
+        {
+          "feature": "Menu ontwerp",
+          "chatgpt": "Geen gastronomische context",
+          "aichef": "Afgestemd op uw concept en food cost"
+        },
+        {
+          "feature": "Allergenen beheer",
+          "chatgpt": "Kan fouten maken",
+          "aichef": "14 allergenen per EU-verordening"
+        },
+        {
+          "feature": "Professionele recepten",
+          "chatgpt": "Generiek, zonder techniek",
+          "aichef": "25 wereldkeukens met techniek"
+        },
+        {
+          "feature": "Gastronomie marketing",
+          "chatgpt": "Geen branchevocabulaire",
+          "aichef": "Teksten met horeca terminologie"
+        },
+        {
+          "feature": "Antwoorden op reviews",
+          "chatgpt": "Teksten zonder context",
+          "aichef": "Antwoorden met restauranttoon"
+        }
       ]
     },
     "tools_section": {
@@ -1912,22 +2075,82 @@
       "subtitle": "Tools ontworpen om echte dagelijkse problemen in een restaurant op te lossen."
     },
     "tools": [
-      { "title": "Food Cost Calculator", "description": "Berekent de exacte kosten van elk gerecht met recept, grammen en leveranciersp prijzen.", "keywords": ["restaurant food cost", "food cost ai", "gerecht kosten"] },
-      { "title": "Menu Engineering", "description": "Ontwerp menu's met winstgevendheidscriteria.", "keywords": ["menu engineering", "winstgevend menu ontwerp", "menu engineering ai"] },
-      { "title": "Allergenen met Regelgeving", "description": "Identificeert de 14 allergenen per EU-verordening 1169/2011.", "keywords": ["restaurant allergenen", "EU allergeenverordening", "wettelijke etikettering"] },
-      { "title": "Recepten uit 25 Keukens", "description": "Database van technieken en recepten uit 25 wereldkeukens.", "keywords": ["professionele recepten", "kooktechnieken", "wereldkeukens"] },
-      { "title": "Marketing met Branchevocabulaire", "description": "Social media content in de taal van de horeca.", "keywords": ["horeca marketing", "restaurant content", "gastronomisch vocabulaire"] },
-      { "title": "Google Review Antwoorden", "description": "Antwoordt met de juiste toon voor een restaurant.", "keywords": ["google reviews beantwoorden", "online reputatie restaurant", "negatieve reviews"] }
+      {
+        "title": "Food Cost Calculator",
+        "description": "Berekent de exacte kosten van elk gerecht met recept, grammen en leveranciersp prijzen.",
+        "keywords": [
+          "restaurant food cost",
+          "food cost ai",
+          "gerecht kosten"
+        ]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Ontwerp menu's met winstgevendheidscriteria.",
+        "keywords": [
+          "menu engineering",
+          "winstgevend menu ontwerp",
+          "menu engineering ai"
+        ]
+      },
+      {
+        "title": "Allergenen met Regelgeving",
+        "description": "Identificeert de 14 allergenen per EU-verordening 1169/2011.",
+        "keywords": [
+          "restaurant allergenen",
+          "EU allergeenverordening",
+          "wettelijke etikettering"
+        ]
+      },
+      {
+        "title": "Recepten uit 25 Keukens",
+        "description": "Database van technieken en recepten uit 25 wereldkeukens.",
+        "keywords": [
+          "professionele recepten",
+          "kooktechnieken",
+          "wereldkeukens"
+        ]
+      },
+      {
+        "title": "Marketing met Branchevocabulaire",
+        "description": "Social media content in de taal van de horeca.",
+        "keywords": [
+          "horeca marketing",
+          "restaurant content",
+          "gastronomisch vocabulaire"
+        ]
+      },
+      {
+        "title": "Google Review Antwoorden",
+        "description": "Antwoordt met de juiste toon voor een restaurant.",
+        "keywords": [
+          "google reviews beantwoorden",
+          "online reputatie restaurant",
+          "negatieve reviews"
+        ]
+      }
     ],
     "profiles_section": {
       "title": "Wie gebruikt AI Chef Pro in plaats van ChatGPT?",
       "subtitle": "Professionals die ChatGPT al hadden geprobeerd en iets specifieks voor de horeca nodig hadden."
     },
     "profiles": [
-      { "title": "Chef-eigenaar", "description": "Gebruikte ChatGPT voor recepten maar verloor tijd met het corrigeren van technische fouten." },
-      { "title": "Operations Manager", "description": "ChatGPT kon de food cost niet correct berekenen." },
-      { "title": "Keukenchef", "description": "Had seizoensmenu's nodig met echte culinaire criteria." },
-      { "title": "Bar- of Café-eigenaar", "description": "Geen tijd voor uitgebreide prompts. AI Chef Pro heeft de tools klaar." }
+      {
+        "title": "Chef-eigenaar",
+        "description": "Gebruikte ChatGPT voor recepten maar verloor tijd met het corrigeren van technische fouten."
+      },
+      {
+        "title": "Operations Manager",
+        "description": "ChatGPT kon de food cost niet correct berekenen."
+      },
+      {
+        "title": "Keukenchef",
+        "description": "Had seizoensmenu's nodig met echte culinaire criteria."
+      },
+      {
+        "title": "Bar- of Café-eigenaar",
+        "description": "Geen tijd voor uitgebreide prompts. AI Chef Pro heeft de tools klaar."
+      }
     ],
     "why_section": {
       "title": "ChatGPT is goed. AI Chef Pro is beter voor uw restaurant.",
@@ -1955,10 +2178,22 @@
       "title": "Veelgestelde vragen: ChatGPT vs AI Chef Pro voor restaurants"
     },
     "faq": [
-      { "question": "Kan ChatGPT food cost berekeningen doen voor restaurants?", "answer": "ChatGPT kan het proberen maar als generalist houdt het geen rekening met actuele marktprijzen, typische verliezen of horecamarges. AI Chef Pro is speciaal ontworpen om food cost te berekenen met echte restaurantlogica." },
-      { "question": "Waarom niet gratis ChatGPT gebruiken in plaats van AI Chef Pro?", "answer": "Voor de horeca heeft u precisie nodig bij allergenen en food cost. Fouten bij allergenen hebben juridische gevolgen. AI Chef Pro is getraind om correcte resultaten te geven in deze kritieke gebieden." },
-      { "question": "Gebruikt AI Chef Pro dezelfde technologie als ChatGPT?", "answer": "Het gebruikt de nieuwste AI-modellen afgestemd op gastronomie en horeca. Het spreekt de taal van chefs, begrijpt allergeenregelgeving en kent de logica van het restaurantbedrijf." },
-      { "question": "Kan AI Chef Pro me helpen recepten te maken zoals ChatGPT?", "answer": "Ja, en met meer technische precisie: 25 wereldkeukens met correct culinair vocabulaire, bouillons, reducties, texturen, banketbakkerstechnieken, aangepast aan uw food cost en seizoen." }
+      {
+        "question": "Kan ChatGPT food cost berekeningen doen voor restaurants?",
+        "answer": "ChatGPT kan het proberen maar als generalist houdt het geen rekening met actuele marktprijzen, typische verliezen of horecamarges. AI Chef Pro is speciaal ontworpen om food cost te berekenen met echte restaurantlogica."
+      },
+      {
+        "question": "Waarom niet gratis ChatGPT gebruiken in plaats van AI Chef Pro?",
+        "answer": "Voor de horeca heeft u precisie nodig bij allergenen en food cost. Fouten bij allergenen hebben juridische gevolgen. AI Chef Pro is getraind om correcte resultaten te geven in deze kritieke gebieden."
+      },
+      {
+        "question": "Gebruikt AI Chef Pro dezelfde technologie als ChatGPT?",
+        "answer": "Het gebruikt de nieuwste AI-modellen afgestemd op gastronomie en horeca. Het spreekt de taal van chefs, begrijpt allergeenregelgeving en kent de logica van het restaurantbedrijf."
+      },
+      {
+        "question": "Kan AI Chef Pro me helpen recepten te maken zoals ChatGPT?",
+        "answer": "Ja, en met meer technische precisie: 25 wereldkeukens met correct culinair vocabulaire, bouillons, reducties, texturen, banketbakkerstechnieken, aangepast aan uw food cost en seizoen."
+      }
     ],
     "cta_section": {
       "title": "De horeca AI die ChatGPT niet kan zijn",

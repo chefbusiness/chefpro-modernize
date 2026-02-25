@@ -1115,7 +1115,26 @@
     "legal": "Legal",
     "privacy": "Política de Privacidade",
     "terms": "Termos de Serviço",
-    "cookies": "Política de Cookies"
+    "cookies": "Política de Cookies",
+    "section_ia": "IA para Restaurantes",
+    "section_formacion": "Formação",
+    "section_recursos": "Recursos",
+    "section_herramientas": "Ferramentas",
+    "section_empresa": "Empresa",
+    "blog_main": "Blog de IA Gastronómica",
+    "tutoriales": "Tutoriais",
+    "prompts_library": "Biblioteca de Prompts",
+    "recetario": "Livro de Receitas Pro AI",
+    "glosario_ia": "Glossário IA",
+    "glosario_culinario": "Glossário Científico Culinário",
+    "roadmap": "Roadmap AI Chef Pro",
+    "app_tools": "55+ Ferramentas no App",
+    "app_login": "Entrar",
+    "free_tools_hub": "Ferramentas Gratuitas",
+    "mentoria_online": "Mentoria Online",
+    "formacion_presencial": "Formação Presencial",
+    "planes_precios": "Planos e Preços",
+    "payment_methods": "Métodos de pagamento"
   },
   "ai_gallery": {
     "badge": "Geração de Imagens com IA",
@@ -1348,10 +1367,22 @@
       "no_card": "Sem cartão de crédito. Acesso imediato."
     },
     "results": [
-      { "metric": "-35%", "label": "Redução média de desperdícios" },
-      { "metric": "-22%", "label": "Custo alimentar (food cost)" },
-      { "metric": "+18%", "label": "Melhoria da margem bruta" },
-      { "metric": "2 sem.", "label": "ROI médio desde o início" }
+      {
+        "metric": "-35%",
+        "label": "Redução média de desperdícios"
+      },
+      {
+        "metric": "-22%",
+        "label": "Custo alimentar (food cost)"
+      },
+      {
+        "metric": "+18%",
+        "label": "Melhoria da margem bruta"
+      },
+      {
+        "metric": "2 sem.",
+        "label": "ROI médio desde o início"
+      }
     ],
     "tools_section": {
       "title": "6 ferramentas IA para reduzir custos na sua cozinha",
@@ -1361,32 +1392,56 @@
       {
         "title": "Controlo de Desperdícios IA",
         "description": "Detecte padrões de desperdício, identifique os ingredientes mais caros e receba alertas quando os desperdícios ultrapassam o limiar ótimo.",
-        "keywords": ["desperdícios", "perdas cozinha", "custos alimentares"]
+        "keywords": [
+          "desperdícios",
+          "perdas cozinha",
+          "custos alimentares"
+        ]
       },
       {
         "title": "Ficha Técnica Automática",
         "description": "Calcule o custo real de cada receita em segundos. Atualize os preços dos ingredientes e as fichas técnicas recalculam-se automaticamente.",
-        "keywords": ["ficha técnica", "food cost", "custo por prato"]
+        "keywords": [
+          "ficha técnica",
+          "food cost",
+          "custo por prato"
+        ]
       },
       {
         "title": "Otimizador de Cardápio por Margem",
         "description": "Analise quais pratos lhe dão melhor margem e quais custam dinheiro. Redesenhe o seu cardápio para maximizar a rentabilidade.",
-        "keywords": ["engenharia de cardápio", "rentabilidade pratos", "margem cardápio"]
+        "keywords": [
+          "engenharia de cardápio",
+          "rentabilidade pratos",
+          "margem cardápio"
+        ]
       },
       {
         "title": "Planeador de Compras Inteligente",
         "description": "Gere listas de compras com base no histórico de vendas para evitar excesso de stock e reduzir desperdícios de produtos perecíveis.",
-        "keywords": ["compras restaurante", "stock cozinha", "pedidos fornecedor"]
+        "keywords": [
+          "compras restaurante",
+          "stock cozinha",
+          "pedidos fornecedor"
+        ]
       },
       {
         "title": "Análise de Rentabilidade",
         "description": "Dashboard em tempo real com os seus KPIs principais: food cost %, prime cost, margem por mesa e rentabilidade por turno.",
-        "keywords": ["KPIs restaurante", "rentabilidade", "análise negócio"]
+        "keywords": [
+          "KPIs restaurante",
+          "rentabilidade",
+          "análise negócio"
+        ]
       },
       {
         "title": "Otimização de Pessoal",
         "description": "Calcule o custo de pessoal por serviço e receba sugestões para ajustar os turnos conforme a procura prevista e os objetivos de prime cost.",
-        "keywords": ["custo pessoal", "prime cost", "turnos cozinha"]
+        "keywords": [
+          "custo pessoal",
+          "prime cost",
+          "turnos cozinha"
+        ]
       }
     ],
     "profiles_section": {
@@ -1634,10 +1689,22 @@
       "no_card": "Sem cartão de crédito · Plano gratuito disponível"
     },
     "results": [
-      { "metric": "3h", "label": "para criar um cardápio completo do zero" },
-      { "metric": "40%", "label": "mais margem com menu engineering IA" },
-      { "metric": "14", "label": "alergênios gerenciados automaticamente" },
-      { "metric": "25+", "label": "cozinhas do mundo para inspirar seu cardápio" }
+      {
+        "metric": "3h",
+        "label": "para criar um cardápio completo do zero"
+      },
+      {
+        "metric": "40%",
+        "label": "mais margem com menu engineering IA"
+      },
+      {
+        "metric": "14",
+        "label": "alergênios gerenciados automaticamente"
+      },
+      {
+        "metric": "25+",
+        "label": "cozinhas do mundo para inspirar seu cardápio"
+      }
     ],
     "tools_section": {
       "title": "Tudo que você precisa para um cardápio rentável",
@@ -1647,32 +1714,56 @@
       {
         "title": "Gerador de Cardápio Completo",
         "description": "Descreva seu conceito e a IA gera um cardápio completo com entradas, pratos principais, sobremesas e bebidas adaptados ao seu estilo, temporada e food cost alvo.",
-        "keywords": ["cardápio restaurante", "menu completo ia", "design cardápio"]
+        "keywords": [
+          "cardápio restaurante",
+          "menu completo ia",
+          "design cardápio"
+        ]
       },
       {
         "title": "Menu Engineering",
         "description": "Analise quais pratos são estrelas, enigmas, cavalos de batalha ou cães. Reorganize seu cardápio para maximizar margem e volume de vendas.",
-        "keywords": ["menu engineering", "rentabilidade pratos", "matriz BCG cardápio"]
+        "keywords": [
+          "menu engineering",
+          "rentabilidade pratos",
+          "matriz BCG cardápio"
+        ]
       },
       {
         "title": "Descrições Gastronômicas",
         "description": "Gere descrições evocativas e apetitosas para cada prato. Textos que vendem, adaptados ao tom do seu restaurante e ao idioma dos seus clientes.",
-        "keywords": ["descrições pratos", "copywriting gastronômico", "textos cardápio"]
+        "keywords": [
+          "descrições pratos",
+          "copywriting gastronômico",
+          "textos cardápio"
+        ]
       },
       {
         "title": "Gestão de Alergênios",
         "description": "Identifique e rotule automaticamente os 14 alergênios de declaração obrigatória. Conformidade legal sem esforço em todos os pratos do seu cardápio.",
-        "keywords": ["alergênios cardápio", "regulamentação alergênios", "rotulagem legal"]
+        "keywords": [
+          "alergênios cardápio",
+          "regulamentação alergênios",
+          "rotulagem legal"
+        ]
       },
       {
         "title": "Menus Sazonais",
         "description": "Renove seu cardápio conforme a sazonalidade, produtos do mercado e tendências gastronômicas atuais. Sempre fresco, sempre rentável.",
-        "keywords": ["menu sazonal", "cardápio sazonal", "produtos do mercado"]
+        "keywords": [
+          "menu sazonal",
+          "cardápio sazonal",
+          "produtos do mercado"
+        ]
       },
       {
         "title": "Cardápios Especiais e Harmonizações",
         "description": "Crie cartas de vinhos, menus de coquetéis, menus de degustação e sugestões de harmonização com explicações elegantes para cada prato.",
-        "keywords": ["carta de vinhos", "harmonização", "menu degustação"]
+        "keywords": [
+          "carta de vinhos",
+          "harmonização",
+          "menu degustação"
+        ]
       }
     ],
     "profiles_section": {
@@ -1764,10 +1855,22 @@
       "no_card": "Sem cartão de crédito · Plano gratuito disponível"
     },
     "results": [
-      { "metric": "10x", "label": "mais rápido criar conteúdo para redes sociais" },
-      { "metric": "3h", "label": "economizadas por semana em marketing digital" },
-      { "metric": "4.8★", "label": "avaliação média de clientes no Google" },
-      { "metric": "55+", "label": "ferramentas de marketing gastronômico" }
+      {
+        "metric": "10x",
+        "label": "mais rápido criar conteúdo para redes sociais"
+      },
+      {
+        "metric": "3h",
+        "label": "economizadas por semana em marketing digital"
+      },
+      {
+        "metric": "4.8★",
+        "label": "avaliação média de clientes no Google"
+      },
+      {
+        "metric": "55+",
+        "label": "ferramentas de marketing gastronômico"
+      }
     ],
     "tools_section": {
       "title": "Todo o marketing do seu restaurante, automatizado com IA",
@@ -1777,32 +1880,56 @@
       {
         "title": "Conteúdo para Redes Sociais",
         "description": "Gere posts para Instagram, Facebook e TikTok com textos, hashtags e ideias de imagem adaptados ao seu restaurante, prato do dia e estilo de comunicação.",
-        "keywords": ["instagram restaurante", "posts hotelaria", "conteúdo redes sociais"]
+        "keywords": [
+          "instagram restaurante",
+          "posts hotelaria",
+          "conteúdo redes sociais"
+        ]
       },
       {
         "title": "Gestão de Avaliações Google",
         "description": "Responda avaliações positivas e negativas em segundos com respostas profissionais, empáticas e personalizadas que melhoram sua reputação online.",
-        "keywords": ["avaliações google restaurante", "responder avaliações", "reputação online"]
+        "keywords": [
+          "avaliações google restaurante",
+          "responder avaliações",
+          "reputação online"
+        ]
       },
       {
         "title": "Fotografia & Descrições",
         "description": "Crie legendas irresistíveis, descrições para seu menu digital e textos para stories que geram reservas e aumentam o engajamento.",
-        "keywords": ["fotografia gastronômica", "descrição pratos", "instagram stories"]
+        "keywords": [
+          "fotografia gastronômica",
+          "descrição pratos",
+          "instagram stories"
+        ]
       },
       {
         "title": "Google My Business",
         "description": "Otimize sua ficha do Google com descrições persuasivas, posts de novidades, ofertas especiais e respostas a perguntas frequentes.",
-        "keywords": ["Google My Business restaurante", "ficha google", "SEO local restaurante"]
+        "keywords": [
+          "Google My Business restaurante",
+          "ficha google",
+          "SEO local restaurante"
+        ]
       },
       {
         "title": "Campanhas & Promoções",
         "description": "Crie campanhas para eventos especiais, feriados, menus sazonais e promoções relâmpago com textos e sequências de mensagens prontos para publicar.",
-        "keywords": ["campanhas restaurante", "promoções hotelaria", "email marketing"]
+        "keywords": [
+          "campanhas restaurante",
+          "promoções hotelaria",
+          "email marketing"
+        ]
       },
       {
         "title": "Newsletter & Email Marketing",
         "description": "Redija newsletters mensais, emails de fidelização e sequências de boas-vindas para seus clientes no tom e estilo da sua marca gastronômica.",
-        "keywords": ["newsletter restaurante", "email marketing hotelaria", "fidelização clientes"]
+        "keywords": [
+          "newsletter restaurante",
+          "email marketing hotelaria",
+          "fidelização clientes"
+        ]
       }
     ],
     "profiles_section": {
@@ -1894,22 +2021,58 @@
       "no_card": "Sem cartão de crédito · Plano gratuito disponível"
     },
     "results": [
-      { "metric": "55+", "label": "ferramentas treinadas em gastronomia" },
-      { "metric": "10x", "label": "mais preciso em cálculos de food cost" },
-      { "metric": "5.000+", "label": "restaurantes e chefs que já usam" },
-      { "metric": "25", "label": "cozinhas do mundo na base de dados" }
+      {
+        "metric": "55+",
+        "label": "ferramentas treinadas em gastronomia"
+      },
+      {
+        "metric": "10x",
+        "label": "mais preciso em cálculos de food cost"
+      },
+      {
+        "metric": "5.000+",
+        "label": "restaurantes e chefs que já usam"
+      },
+      {
+        "metric": "25",
+        "label": "cozinhas do mundo na base de dados"
+      }
     ],
     "comparison": {
       "title": "ChatGPT vs AI Chef Pro para restaurantes",
       "subtitle": "Ambos usam inteligência artificial, mas um é treinado para o seu negócio e o outro não.",
       "col_feature": "Funcionalidade",
       "items": [
-        { "feature": "Cálculo de food cost", "chatgpt": "Respostas genéricas", "aichef": "Cálculo preciso com margens" },
-        { "feature": "Design de cardápio", "chatgpt": "Sem contexto gastronômico", "aichef": "Adaptado ao seu conceito e food cost" },
-        { "feature": "Gestão de alergênicos", "chatgpt": "Pode cometer erros", "aichef": "14 alergênicos conforme norma UE" },
-        { "feature": "Receitas profissionais", "chatgpt": "Genéricas, sem técnica", "aichef": "25 cozinhas do mundo com técnica" },
-        { "feature": "Marketing gastronômico", "chatgpt": "Sem vocabulário setorial", "aichef": "Textos com terminologia hotelaria" },
-        { "feature": "Respostas a avaliações", "chatgpt": "Textos sem contexto", "aichef": "Respostas com tom de restaurante" }
+        {
+          "feature": "Cálculo de food cost",
+          "chatgpt": "Respostas genéricas",
+          "aichef": "Cálculo preciso com margens"
+        },
+        {
+          "feature": "Design de cardápio",
+          "chatgpt": "Sem contexto gastronômico",
+          "aichef": "Adaptado ao seu conceito e food cost"
+        },
+        {
+          "feature": "Gestão de alergênicos",
+          "chatgpt": "Pode cometer erros",
+          "aichef": "14 alergênicos conforme norma UE"
+        },
+        {
+          "feature": "Receitas profissionais",
+          "chatgpt": "Genéricas, sem técnica",
+          "aichef": "25 cozinhas do mundo com técnica"
+        },
+        {
+          "feature": "Marketing gastronômico",
+          "chatgpt": "Sem vocabulário setorial",
+          "aichef": "Textos com terminologia hotelaria"
+        },
+        {
+          "feature": "Respostas a avaliações",
+          "chatgpt": "Textos sem contexto",
+          "aichef": "Respostas com tom de restaurante"
+        }
       ]
     },
     "tools_section": {
@@ -1917,22 +2080,82 @@
       "subtitle": "Ferramentas projetadas para resolver os problemas reais do dia a dia em um restaurante."
     },
     "tools": [
-      { "title": "Food Cost e Fichas Técnicas", "description": "Calcula o custo exato de cada prato com receita, gramagens e preços de fornecedor.", "keywords": ["food cost restaurante", "food cost ia", "custo prato"] },
-      { "title": "Engenharia de Cardápio", "description": "Projete cardápios com critério de rentabilidade.", "keywords": ["engenharia de cardápio", "design cardápio rentável", "menu engineering"] },
-      { "title": "Alergênicos com Norma", "description": "Identifica os 14 alergênicos conforme Regulamento UE 1169/2011.", "keywords": ["alergênicos restaurante", "norma alergênicos UE", "rotulagem legal"] },
-      { "title": "Receitas de 25 Cozinhas", "description": "Base de dados de técnicas e receitas de 25 cozinhas do mundo.", "keywords": ["receitas profissionais", "técnicas culinárias", "cozinhas do mundo"] },
-      { "title": "Marketing com Vocabulário Setorial", "description": "Conteúdo para redes com linguagem própria da hotelaria.", "keywords": ["marketing hotelaria", "conteúdo restaurante", "vocabulário gastronômico"] },
-      { "title": "Respostas a Avaliações Google", "description": "Responde com tom adequado para um restaurante.", "keywords": ["responder avaliações google", "reputação online restaurante", "avaliações negativas"] }
+      {
+        "title": "Food Cost e Fichas Técnicas",
+        "description": "Calcula o custo exato de cada prato com receita, gramagens e preços de fornecedor.",
+        "keywords": [
+          "food cost restaurante",
+          "food cost ia",
+          "custo prato"
+        ]
+      },
+      {
+        "title": "Engenharia de Cardápio",
+        "description": "Projete cardápios com critério de rentabilidade.",
+        "keywords": [
+          "engenharia de cardápio",
+          "design cardápio rentável",
+          "menu engineering"
+        ]
+      },
+      {
+        "title": "Alergênicos com Norma",
+        "description": "Identifica os 14 alergênicos conforme Regulamento UE 1169/2011.",
+        "keywords": [
+          "alergênicos restaurante",
+          "norma alergênicos UE",
+          "rotulagem legal"
+        ]
+      },
+      {
+        "title": "Receitas de 25 Cozinhas",
+        "description": "Base de dados de técnicas e receitas de 25 cozinhas do mundo.",
+        "keywords": [
+          "receitas profissionais",
+          "técnicas culinárias",
+          "cozinhas do mundo"
+        ]
+      },
+      {
+        "title": "Marketing com Vocabulário Setorial",
+        "description": "Conteúdo para redes com linguagem própria da hotelaria.",
+        "keywords": [
+          "marketing hotelaria",
+          "conteúdo restaurante",
+          "vocabulário gastronômico"
+        ]
+      },
+      {
+        "title": "Respostas a Avaliações Google",
+        "description": "Responde com tom adequado para um restaurante.",
+        "keywords": [
+          "responder avaliações google",
+          "reputação online restaurante",
+          "avaliações negativas"
+        ]
+      }
     ],
     "profiles_section": {
       "title": "Quem usa AI Chef Pro em vez do ChatGPT?",
       "subtitle": "Profissionais que já experimentaram o ChatGPT e precisavam de algo específico para hotelaria."
     },
     "profiles": [
-      { "title": "Chef Proprietário", "description": "Usava o ChatGPT para receitas mas perdia tempo corrigindo erros técnicos." },
-      { "title": "Diretor de Operações", "description": "O ChatGPT não conseguia calcular o food cost corretamente." },
-      { "title": "Chef de Cozinha", "description": "Precisava de cardápios sazonais com critérios culinários reais." },
-      { "title": "Dono de Bar ou Café", "description": "Sem tempo para prompts elaborados. AI Chef Pro tem as ferramentas prontas." }
+      {
+        "title": "Chef Proprietário",
+        "description": "Usava o ChatGPT para receitas mas perdia tempo corrigindo erros técnicos."
+      },
+      {
+        "title": "Diretor de Operações",
+        "description": "O ChatGPT não conseguia calcular o food cost corretamente."
+      },
+      {
+        "title": "Chef de Cozinha",
+        "description": "Precisava de cardápios sazonais com critérios culinários reais."
+      },
+      {
+        "title": "Dono de Bar ou Café",
+        "description": "Sem tempo para prompts elaborados. AI Chef Pro tem as ferramentas prontas."
+      }
     ],
     "why_section": {
       "title": "ChatGPT é bom. AI Chef Pro é melhor para o seu restaurante.",
@@ -1960,10 +2183,22 @@
       "title": "Perguntas frequentes: ChatGPT vs AI Chef Pro para restaurantes"
     },
     "faq": [
-      { "question": "O ChatGPT pode fazer food cost para restaurantes?", "answer": "O ChatGPT pode tentar mas por ser generalista não leva em conta preços de mercado atuais, perdas típicas ou margens de hotelaria. O AI Chef Pro é projetado especificamente para calcular food cost com a lógica de um restaurante real." },
-      { "question": "Por que não usar o ChatGPT grátis em vez do AI Chef Pro?", "answer": "Para hotelaria você precisa de precisão em alergênicos e food cost. Erros em alergênicos têm consequências legais. O AI Chef Pro é treinado para dar resultados corretos nessas áreas críticas." },
-      { "question": "O AI Chef Pro usa a mesma tecnologia do ChatGPT?", "answer": "Usa os modelos de IA mais recentes afinados em gastronomia e hotelaria. Fala a linguagem dos chefs, entende a regulamentação de alergênicos e conhece a lógica do negócio de restauração." },
-      { "question": "O AI Chef Pro pode me ajudar a criar receitas como o ChatGPT?", "answer": "Sim, e com mais precisão técnica: 25 cozinhas do mundo com vocabulário culinário correto, fundos, reduções, texturas, técnicas de confeitaria, adaptadas ao seu food cost e temporada." }
+      {
+        "question": "O ChatGPT pode fazer food cost para restaurantes?",
+        "answer": "O ChatGPT pode tentar mas por ser generalista não leva em conta preços de mercado atuais, perdas típicas ou margens de hotelaria. O AI Chef Pro é projetado especificamente para calcular food cost com a lógica de um restaurante real."
+      },
+      {
+        "question": "Por que não usar o ChatGPT grátis em vez do AI Chef Pro?",
+        "answer": "Para hotelaria você precisa de precisão em alergênicos e food cost. Erros em alergênicos têm consequências legais. O AI Chef Pro é treinado para dar resultados corretos nessas áreas críticas."
+      },
+      {
+        "question": "O AI Chef Pro usa a mesma tecnologia do ChatGPT?",
+        "answer": "Usa os modelos de IA mais recentes afinados em gastronomia e hotelaria. Fala a linguagem dos chefs, entende a regulamentação de alergênicos e conhece a lógica do negócio de restauração."
+      },
+      {
+        "question": "O AI Chef Pro pode me ajudar a criar receitas como o ChatGPT?",
+        "answer": "Sim, e com mais precisão técnica: 25 cozinhas do mundo com vocabulário culinário correto, fundos, reduções, texturas, técnicas de confeitaria, adaptadas ao seu food cost e temporada."
+      }
     ],
     "cta_section": {
       "title": "A IA de hotelaria que o ChatGPT não pode ser",
