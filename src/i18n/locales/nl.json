@@ -1101,6 +1101,7 @@
     "nav_marketing": "Marketing met AI",
     "nav_chatgpt": "ChatGPT voor Restaurants",
     "nav_software_gestion": "Keukenbeheersoftware",
+    "nav_recetas": "AI-Recepten",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -2331,6 +2332,137 @@
     "cta_section": {
       "title": "Begin vandaag nog met AI-gestuurd keukenbeheer",
       "subtitle": "Meer dan 5.000 horecaprofessionals gebruiken AI Chef Pro al om hun keuken te beheren met meer controle en minder tijd.",
+      "primary": "Nu gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    }
+  },
+  "landingRecetas": {
+    "seo": {
+      "title": "AI Recepten voor Restaurants | AI Chef Pro",
+      "description": "Genereer professionele recepten met AI: 25 wereldkeukens, seizoensmenus, technische fiches en automatisch schalen. Al gebruikt door 5.000+ restaurants.",
+      "keywords": "AI recepten restaurants, professionele receptengenerator, AI chef recepten, seizoensmenu AI, technische receptfiches, 25 wereldkeukens"
+    },
+    "breadcrumb": "AI Recepten voor Restaurants",
+    "hero": {
+      "badge": "Professionele AI Receptengenerator",
+      "h1": "AI Recepten voor Restaurants: 25 Wereldkeukens",
+      "subtitle": "Genereer technisch correcte recepten direct. Seizoensmenus, professionele technische fiches en automatisch schalen voor uw restaurant.",
+      "tagline": "Van concept tot gerecht in minuten, niet in uren.",
+      "cta_primary": "Nu gratis proberen",
+      "cta_secondary": "Bekijk plannen en prijzen",
+      "no_card": "Geen creditcard vereist · Directe toegang"
+    },
+    "results": [
+      { "metric": "25", "label": "Wereldkeukens" },
+      { "metric": "5.000+", "label": "Actieve restaurants" },
+      { "metric": "80%", "label": "Minder tijd aan menuontwikkeling" },
+      { "metric": "55+", "label": "Gespecialiseerde tools" }
+    ],
+    "comparison": {
+      "title": "AI-recepten vs. Traditionele methoden",
+      "subtitle": "Ontdek waarom chefs AI integreren in hun creatieve proces.",
+      "col_feature": "Aspect",
+      "col_other": "Traditionele Methode",
+      "items": [
+        { "feature": "Receptcreatie", "other": "Uren onderzoek en testen", "aichef": "Technisch recept in seconden gegenereerd" },
+        { "feature": "Keukenvarieteit", "other": "Beperkt tot kennis van de chef", "aichef": "25 wereldkeukens met echte techniek" },
+        { "feature": "Seizoensmenus", "other": "Weken durend handmatig proces", "aichef": "Volledig menu met seizoensingrediënten" },
+        { "feature": "Portiescaling", "other": "Handmatige berekeningen met fouten", "aichef": "Automatisch en direct schalen" },
+        { "feature": "Technische fiches", "other": "Handmatig schrijven in Word/Excel", "aichef": "Professionele technische fiche direct gegenereerd" }
+      ]
+    },
+    "tools_section": {
+      "title": "De receptentools die uw keuken nodig heeft",
+      "subtitle": "Van inspiratie tot technische fiche — AI dekt uw gehele creatieve keukenproces."
+    },
+    "tools": [
+      {
+        "title": "Professionele Receptengenerator",
+        "description": "Maak technisch correcte recepten met professioneel culinair vocabulaire, nauwkeurige technieken en gedetailleerde presentatie.",
+        "keywords": ["AI receptengenerator", "professionele chef-recepten", "technische recepten"]
+      },
+      {
+        "title": "25 Wereldkeukens",
+        "description": "Toegang tot authentieke recepten uit 25 culinaire tradities: Frans, Japans, Peruaans, Italiaans, Mexicaans en nog veel meer.",
+        "keywords": ["wereldkeukens", "internationale recepten", "mondiale gastronomie"]
+      },
+      {
+        "title": "AI Seizoensmenus",
+        "description": "Genereer complete menu's op basis van seizoensingrediënten, uw gastronomisch concept en klantprofiel.",
+        "keywords": ["seizoensmenu", "degustatiemenu", "AI restaurantmenu"]
+      },
+      {
+        "title": "Automatisch Portieschalen",
+        "description": "Pas elk recept aan het gewenste aantal gasten aan. AI past gewichten, kooktijden en technieken aan.",
+        "keywords": ["recepten schalen", "gewichten per portie", "massaproductie"]
+      },
+      {
+        "title": "Professionele Technische Fiches",
+        "description": "Genereer complete technische fiches met allergenen, voedingswaarden, technieken en presentatie voor uw team.",
+        "keywords": ["technische receptfiche", "professioneel receptenboek", "keukenstandaardisatie"]
+      },
+      {
+        "title": "Aanpassing aan Beperkingen",
+        "description": "Pas recepten aan voor veganisten, coeliakie, diabetici of elke voedingsbeperking zonder de essentie van het gerecht te verliezen.",
+        "keywords": ["veganistische chef-recepten", "glutenvrije recepten", "dieetaanpassing"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Wie genereert recepten met AI bij AI Chef Pro?",
+      "subtitle": "Chefs en restauranthouders die AI hebben geïntegreerd in hun creatieve keukenproces."
+    },
+    "profiles": [
+      { "title": "Creatieve Chef", "description": "Gebruikt AI als inspiratiebron voor nieuwe gerechten en fusies van wereldkeukens." },
+      { "title": "Partijchef", "description": "Genereert gestandaardiseerde technische fiches zodat het team gerechten precies kan reproduceren." },
+      { "title": "Hotel- of Cateringchef", "description": "Maakt complete menu's voor grote evenementen met automatisch portieschalen." },
+      { "title": "Restauranteigenaar", "description": "Vernieuwt de seizoenskaart zonder langdurige handmatige creatieprocessen." }
+    ],
+    "why_section": {
+      "title": "AI die koken begrijpt, niet alleen woorden",
+      "body": "Een generieke generator geeft u basisrecepten. AI Chef Pro begrijpt echte culinaire techniek: bouillons, reducties, gaarpunten, combinaties en de logica van elke wereldkeuken.",
+      "benefits": [
+        "Recepten met correct culinair technisch vocabulaire bij de eerste poging",
+        "25 wereldkeukens met authentieke technieken en tradities",
+        "Seizoensmenus afgestemd op uw gastronomisch concept",
+        "Technische fiches klaar om af te drukken en te gebruiken met uw team",
+        "Instant portieschaling zonder rekenfouten",
+        "Aanpassing aan voedingsbeperkingen zonder culinaire kwaliteitsverlies"
+      ]
+    },
+    "testimonial": {
+      "quote": "Vroeger besteedde ik uren aan het ontwikkelen van nieuwe gerechten. Met AI Chef Pro heb ik in minuten een technisch correct recept, inclusief technische fiche. Mijn team kan het vanaf dag één perfect reproduceren.",
+      "name": "Laura Sánchez",
+      "role": "Executive Chef, Restaurante Origen, Bilbao"
+    },
+    "pricing_section": {
+      "title": "Toegang tot de AI-receptengenerator vanaf €0",
+      "subtitle": "Start gratis en schaal op wanneer uw bedrijf het nodig heeft. Geen verplichtingen.",
+      "annual_note": "Jaarplan AI Chef Premium Plus ook beschikbaar voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen over AI-recepten voor restaurants"
+    },
+    "faq": [
+      {
+        "question": "Kan AI professionele recepten maken voor restaurants?",
+        "answer": "Ja. AI Chef Pro genereert recepten met correct culinair technisch vocabulaire, inclusief nauwkeurige technieken, gaarpunten, presentatie en combinaties. In tegenstelling tot een generieke AI begrijpt het de logica van elke wereldkeuken."
+      },
+      {
+        "question": "Welke wereldkeukens omvat AI Chef Pro?",
+        "answer": "AI Chef Pro omvat recepten en technieken uit 25 keukens: Frans, Italiaans, Japans, Spaans, Peruaans, Mexicaans, Grieks, Marokkaans, Thais, Indisch, Chinees en meer. Elk met authentieke technieken en vocabulaire."
+      },
+      {
+        "question": "Kan ik technische fiches genereren met AI Chef Pro?",
+        "answer": "Ja. AI Chef Pro genereert complete professionele technische fiches: ingrediënten met gewichten, stap-voor-stap technieken, allergenen conform EU-verordening 1169/2011, voedingswaarden en presentatiesuggesties."
+      },
+      {
+        "question": "Hoe werkt automatisch recepten schalen?",
+        "answer": "Voer het gewenste aantal porties in en de AI past automatisch alle gewichten, kooktijden en technieken aan. Ideaal voor catering, evenementen of het aanpassen van degustatiemenu-recepten aan à la carte service."
+      }
+    ],
+    "cta_section": {
+      "title": "Begin vandaag nog met AI-recepten voor uw restaurant",
+      "subtitle": "Meer dan 5.000 chefs en restauranthouders gebruiken AI Chef Pro al om in minuten professionele recepten te maken.",
       "primary": "Nu gratis proberen",
       "secondary": "Alle plannen bekijken"
     }

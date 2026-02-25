@@ -827,6 +827,7 @@
     "nav_marketing": "Marketing with AI",
     "nav_chatgpt": "ChatGPT for Restaurants",
     "nav_software_gestion": "Kitchen Management Software",
+    "nav_recetas": "AI Recipes",
     "nav_ai_tools": "AI Tools",
     "nav_free_tools": "Free Tools",
     "contact_title": "Contact",
@@ -2062,6 +2063,137 @@
     "cta_section": {
       "title": "Start managing your kitchen with AI today",
       "subtitle": "Over 5,000 hospitality professionals already use AI Chef Pro to manage their kitchen with more control and less time.",
+      "primary": "Try for free now",
+      "secondary": "See all plans"
+    }
+  },
+  "landingRecetas": {
+    "seo": {
+      "title": "AI Recipes for Restaurants | AI Chef Pro",
+      "description": "Generate professional recipes with AI: 25 world cuisines, seasonal menus, tech sheets and automatic scaling. Used by 5,000+ restaurants.",
+      "keywords": "AI recipes restaurants, professional recipe generator, AI chef recipes, seasonal menu AI, recipe tech sheets, 25 world cuisines recipes"
+    },
+    "breadcrumb": "AI Recipes for Restaurants",
+    "hero": {
+      "badge": "Professional AI Recipe Generator",
+      "h1": "AI Recipes for Restaurants: 25 World Cuisines",
+      "subtitle": "Generate technically accurate recipes instantly. Seasonal menus, professional tech sheets and automatic portion scaling for your restaurant.",
+      "tagline": "From concept to dish in minutes, not hours.",
+      "cta_primary": "Try for free now",
+      "cta_secondary": "View plans and pricing",
+      "no_card": "No credit card required · Instant access"
+    },
+    "results": [
+      { "metric": "25", "label": "World cuisines" },
+      { "metric": "5,000+", "label": "Active restaurants" },
+      { "metric": "80%", "label": "Less time on menu development" },
+      { "metric": "55+", "label": "Specialized tools" }
+    ],
+    "comparison": {
+      "title": "AI Recipes vs. Traditional Methods",
+      "subtitle": "See why chefs are integrating AI into their creative process.",
+      "col_feature": "Aspect",
+      "col_other": "Traditional Method",
+      "items": [
+        { "feature": "Recipe creation", "other": "Hours of research and testing", "aichef": "Technical recipe generated in seconds" },
+        { "feature": "Cuisine variety", "other": "Limited to chef's knowledge", "aichef": "25 world cuisines with real technique" },
+        { "feature": "Seasonal menus", "other": "Manual process taking weeks", "aichef": "Full menu with seasonal ingredients" },
+        { "feature": "Portion scaling", "other": "Manual calculations with errors", "aichef": "Automatic and instant scaling" },
+        { "feature": "Tech sheets", "other": "Manual writing in Word/Excel", "aichef": "Professional tech sheet generated instantly" }
+      ]
+    },
+    "tools_section": {
+      "title": "The recipe tools your kitchen needs",
+      "subtitle": "From inspiration to tech sheet, AI covers your entire creative kitchen process."
+    },
+    "tools": [
+      {
+        "title": "Professional Recipe Generator",
+        "description": "Create technically accurate recipes with professional culinary vocabulary, precise techniques and detailed presentation.",
+        "keywords": ["AI recipe generator", "professional chef recipes", "technical recipes"]
+      },
+      {
+        "title": "25 World Cuisines",
+        "description": "Access authentic recipes from 25 culinary traditions: French, Japanese, Peruvian, Italian, Mexican and much more.",
+        "keywords": ["world cuisines", "international recipes", "global gastronomy"]
+      },
+      {
+        "title": "AI Seasonal Menus",
+        "description": "Generate complete menus based on seasonal ingredients, your gastronomic concept and customer profile.",
+        "keywords": ["seasonal menu", "tasting menu", "AI restaurant menu"]
+      },
+      {
+        "title": "Automatic Portion Scaling",
+        "description": "Adapt any recipe to the number of diners you need. AI adjusts weights, cooking times and techniques.",
+        "keywords": ["recipe scaling", "weights per portion", "bulk production"]
+      },
+      {
+        "title": "Professional Tech Sheets",
+        "description": "Generate complete tech sheets with allergens, nutritional values, techniques and plating for your team.",
+        "keywords": ["recipe tech sheet", "professional recipe book", "kitchen standardization"]
+      },
+      {
+        "title": "Dietary Restriction Adaptation",
+        "description": "Adapt recipes for vegans, coeliacs, diabetics or any dietary restriction without losing the essence of the dish.",
+        "keywords": ["vegan chef recipes", "gluten-free recipes", "dietary adaptation"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Who generates recipes with AI at AI Chef Pro?",
+      "subtitle": "Chefs and restaurateurs who have integrated AI into their creative kitchen process."
+    },
+    "profiles": [
+      { "title": "Creative Chef", "description": "Uses AI as a source of inspiration for new dishes and world cuisine fusions." },
+      { "title": "Section Chef", "description": "Generates standardized tech sheets so the team can reproduce dishes with precision." },
+      { "title": "Hotel or Catering Chef", "description": "Creates full menus for large events with automatic portion scaling." },
+      { "title": "Restaurant Owner", "description": "Refreshes the seasonal menu without long manual creation processes." }
+    ],
+    "why_section": {
+      "title": "AI that understands cooking, not just words",
+      "body": "A generic generator gives you basic recipes. AI Chef Pro understands real culinary technique: stocks, reductions, cooking points, pairings and the logic of each world cuisine.",
+      "benefits": [
+        "Recipes with correct culinary technical vocabulary from the first attempt",
+        "25 world cuisines with authentic techniques and traditions",
+        "Seasonal menus aligned with your gastronomic concept",
+        "Tech sheets ready to print and use with your team",
+        "Instant portion scaling without calculation errors",
+        "Dietary restriction adaptation without losing culinary quality"
+      ]
+    },
+    "testimonial": {
+      "quote": "I used to spend hours developing new dishes. With AI Chef Pro I have a technically accurate recipe in minutes, with the tech sheet included. My team can reproduce it perfectly from day one.",
+      "name": "Laura Sánchez",
+      "role": "Executive Chef, Restaurante Origen, Bilbao"
+    },
+    "pricing_section": {
+      "title": "Access the AI recipe generator from €0",
+      "subtitle": "Start free and scale when your business needs it. No commitment.",
+      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+    },
+    "faq_section": {
+      "title": "Frequently asked questions about AI recipes for restaurants"
+    },
+    "faq": [
+      {
+        "question": "Can AI create professional recipes for restaurants?",
+        "answer": "Yes. AI Chef Pro generates recipes with correct culinary technical vocabulary, including precise techniques, cooking points, presentation and pairings. Unlike a generic AI, it understands the logic of each world cuisine."
+      },
+      {
+        "question": "What world cuisines does AI Chef Pro include?",
+        "answer": "AI Chef Pro includes recipes and techniques from 25 cuisines: French, Italian, Japanese, Spanish, Peruvian, Mexican, Greek, Moroccan, Thai, Indian, Chinese and more. Each with authentic techniques and vocabulary."
+      },
+      {
+        "question": "Can I generate tech sheets with AI Chef Pro?",
+        "answer": "Yes. AI Chef Pro generates complete professional tech sheets: ingredients with weights, step-by-step techniques, allergens per EU Regulation 1169/2011, nutritional values and plating suggestions."
+      },
+      {
+        "question": "How does automatic recipe scaling work?",
+        "answer": "Enter the number of servings you need and the AI automatically adjusts all weights, cooking times and techniques. Ideal for catering, events or adapting tasting menu recipes to à la carte service."
+      }
+    ],
+    "cta_section": {
+      "title": "Start creating AI recipes for your restaurant",
+      "subtitle": "Over 5,000 chefs and restaurateurs already use AI Chef Pro to create professional recipes in minutes.",
       "primary": "Try for free now",
       "secondary": "See all plans"
     }

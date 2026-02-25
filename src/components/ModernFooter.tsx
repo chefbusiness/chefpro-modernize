@@ -55,6 +55,16 @@ const CHATGPT_SLUGS: Record<string, string> = {
   nl: 'nl/chatgpt-voor-restaurants',
 };
 
+const RECETAS_SLUGS: Record<string, string> = {
+  es: 'recetas-ia-restaurantes',
+  en: 'ai-recipes-for-restaurants',
+  fr: 'fr/recettes-ia-restaurants',
+  de: 'de/ki-rezepte-restaurants',
+  it: 'it/ricette-ia-ristoranti',
+  pt: 'pt/receitas-ia-restaurantes',
+  nl: 'nl/ai-recepten-restaurants',
+};
+
 const SOFTWARE_GESTION_SLUGS: Record<string, string> = {
   es: 'software-gestion-cocina-ia',
   en: 'en/kitchen-management-software-ai',
@@ -186,6 +196,14 @@ export default function ModernFooter() {
                   className="text-emerald-600 hover:text-emerald-500 transition-colors font-medium"
                 >
                   {t('footer.nav_software_gestion')}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`/${RECETAS_SLUGS[lang] || RECETAS_SLUGS.es}`}
+                  className="text-amber-600 hover:text-amber-500 transition-colors font-medium"
+                >
+                  {t('footer.nav_recetas')}
                 </a>
               </li>
             </ul>

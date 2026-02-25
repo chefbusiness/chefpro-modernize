@@ -19,6 +19,7 @@ import MenuRestaurante from "./pages/MenuRestaurante";
 import MarketingRestaurante from "./pages/MarketingRestaurante";
 import ChatGPTRestaurantes from "./pages/ChatGPTRestaurantes";
 import SoftwareGestionCocina from "./pages/SoftwareGestionCocina";
+import RecetasIARestaurantes from "./pages/RecetasIARestaurantes";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -102,6 +103,15 @@ const App = () => (
             <Route path="/it/software-gestione-cucina-ia" element={<SoftwareGestionCocina />} />
             <Route path="/pt/software-gestao-cozinha-ia" element={<SoftwareGestionCocina />} />
             <Route path="/nl/keuken-software-ai" element={<SoftwareGestionCocina />} />
+
+            {/* Landing recetas IA restaurantes — todos los idiomas */}
+            <Route path="/recetas-ia-restaurantes" element={<RecetasIARestaurantes />} />
+            <Route path="/en/ai-recipes-for-restaurants" element={<RecetasIARestaurantes />} />
+            <Route path="/fr/recettes-ia-restaurants" element={<RecetasIARestaurantes />} />
+            <Route path="/de/ki-rezepte-restaurants" element={<RecetasIARestaurantes />} />
+            <Route path="/it/ricette-ia-ristoranti" element={<RecetasIARestaurantes />} />
+            <Route path="/pt/receitas-ia-restaurantes" element={<RecetasIARestaurantes />} />
+            <Route path="/nl/ai-recepten-restaurants" element={<RecetasIARestaurantes />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
