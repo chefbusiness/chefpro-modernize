@@ -22,6 +22,16 @@ const COSTES_SLUGS: Record<string, string> = {
   pt: 'pt/reduzir-custos-restaurante-ia',
   nl: 'nl/restaurantkosten-verlagen-ai',
 };
+
+const MENU_SLUGS: Record<string, string> = {
+  es: 'carta-menu-restaurante-ia',
+  en: 'en/restaurant-menu-ai',
+  fr: 'fr/carte-menu-restaurant-ia',
+  de: 'de/speisekarte-restaurant-ki',
+  it: 'it/menu-ristorante-ia',
+  pt: 'pt/cardapio-restaurante-ia',
+  nl: 'nl/restaurantmenu-ai',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -131,6 +141,12 @@ export default function ModernHeader() {
                           href={`/${COSTES_SLUGS[currentLanguage] || COSTES_SLUGS.es}`}
                         >
                           {t('nav.reducir_costes')}
+                        </NavigationMenuLink>
+                        <NavigationMenuLink
+                          className="block text-sm font-medium text-emerald-600 hover:text-emerald-500 transition-colors py-1"
+                          href={`/${MENU_SLUGS[currentLanguage] || MENU_SLUGS.es}`}
+                        >
+                          {t('nav.carta_menu')}
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -360,6 +376,14 @@ export default function ModernHeader() {
                           >
                             <Wrench className="h-4 w-4 text-red-500" />
                             {t('nav.reducir_costes')}
+                          </a>
+                          <a
+                            href={`/${MENU_SLUGS[currentLanguage] || MENU_SLUGS.es}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-emerald-600"
+                          >
+                            <Wrench className="h-4 w-4 text-emerald-500" />
+                            {t('nav.carta_menu')}
                           </a>
                         </CollapsibleContent>
                       </Collapsible>
