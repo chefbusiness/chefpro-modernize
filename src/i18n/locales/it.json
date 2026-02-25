@@ -2220,5 +2220,136 @@
       "secondary": "Vedi tutti i piani"
     },
     "breadcrumb": "ChatGPT per Ristoranti"
+  },
+  "landingSoftwareGestion": {
+    "seo": {
+      "title": "Software Gestione Cucina con IA | AI Chef Pro",
+      "description": "Software di gestione cucina con IA: food cost, inventario, ricette e allergeni in un'unica piattaforma. Oltre 5.000 ristoranti lo usano. Inizia gratis.",
+      "keywords": "software gestione cucina, gestione ristorante IA, software ristorazione professionale, food cost IA, inventario ristorante, schede tecniche ricette"
+    },
+    "breadcrumb": "Software Gestione Cucina con IA",
+    "hero": {
+      "badge": "Software IA per la Gestione Professionale della Cucina",
+      "h1": "Software di Gestione Cucina con IA per Ristoranti",
+      "subtitle": "Controlla food cost, inventario, ricette e allergeni da un'unica piattaforma. L'IA specializzata che comprende davvero la cucina professionale.",
+      "tagline": "Risparmia fino a 3 ore al giorno nella gestione della cucina.",
+      "cta_primary": "Prova gratis adesso",
+      "cta_secondary": "Vedi piani e prezzi",
+      "no_card": "Nessuna carta di credito · Accesso immediato"
+    },
+    "results": [
+      { "metric": "3h", "label": "Risparmio giornaliero in gestione" },
+      { "metric": "5.000+", "label": "Ristoranti attivi" },
+      { "metric": "55+", "label": "Strumenti IA per la cucina" },
+      { "metric": "30%", "label": "Riduzione media dei costi" }
+    ],
+    "comparison": {
+      "title": "AI Chef Pro vs. Software di gestione tradizionale",
+      "subtitle": "Scopri perché gli chef stanno passando alla gestione della cucina con IA.",
+      "col_feature": "Funzione",
+      "col_other": "Software Tradizionale",
+      "items": [
+        { "feature": "Food cost automatico", "other": "Manuale, su Excel", "aichef": "L'IA calcola il food cost istantaneamente" },
+        { "feature": "Gestione ricette", "other": "File Word o carta", "aichef": "55+ strumenti IA specializzati" },
+        { "feature": "Controllo allergeni", "other": "Aggiornamenti manuali", "aichef": "Regolamento UE 1169/2011 integrato" },
+        { "feature": "Menu engineering", "other": "Nessuna analisi di redditività", "aichef": "L'IA ottimizza i margini per piatto" },
+        { "feature": "Aggiornamento prezzi", "other": "Processo lento e tedioso", "aichef": "Ricalcolo automatico in pochi secondi" }
+      ]
+    },
+    "tools_section": {
+      "title": "Tutto ciò di cui hai bisogno per gestire la tua cucina con l'IA",
+      "subtitle": "Strumenti specializzati per risolvere le sfide reali della gestione professionale della cucina."
+    },
+    "tools": [
+      {
+        "title": "Food Cost con IA",
+        "description": "Calcola il costo esatto di ogni piatto in pochi secondi. Inserisci ingredienti, grammature e prezzi fornitore: l'IA fa il resto.",
+        "keywords": ["food cost ristorante", "food cost IA", "costo per piatto"]
+      },
+      {
+        "title": "Controllo Inventario",
+        "description": "Gestisci le scorte in tempo reale. Avvisi automatici quando gli ingredienti si avvicinano al minimo. Riduci gli sprechi.",
+        "keywords": ["inventario ristorante", "gestione scorte cucina", "controllo sprechi"]
+      },
+      {
+        "title": "Gestione Ricette",
+        "description": "Digitalizza e standardizza tutte le tue ricette con schede tecniche professionali e scaling automatico delle porzioni.",
+        "keywords": ["scheda tecnica ricetta", "standardizzazione ricette", "ricettario digitale"]
+      },
+      {
+        "title": "Allergeni & Normativa",
+        "description": "Controllo dei 14 allergeni secondo il Regolamento UE 1169/2011. Evita sanzioni e proteggi i tuoi clienti.",
+        "keywords": ["allergeni ristorante", "normativa allergeni UE", "sicurezza alimentare"]
+      },
+      {
+        "title": "Menu Engineering",
+        "description": "Analizza la redditività di ogni piatto e ottimizza il tuo menu per massimizzare il profitto per coperto.",
+        "keywords": ["menu engineering", "redditività piatti", "ottimizzazione menu"]
+      },
+      {
+        "title": "Report di Gestione",
+        "description": "Visualizza le performance della tua cucina con report automatici su food cost, margini e tendenze di consumo.",
+        "keywords": ["report food cost", "controllo costi", "margine ristorante"]
+      }
+    ],
+    "profiles_section": {
+      "title": "Chi usa il software di gestione cucina di AI Chef Pro?",
+      "subtitle": "Professionisti della ristorazione che hanno digitalizzato la loro cucina con l'IA."
+    },
+    "profiles": [
+      { "title": "Chef Proprietario", "description": "Controlla i costi della cucina senza dipendere da commercialisti esterni o fogli di calcolo." },
+      { "title": "Chef di Cucina", "description": "Standardizza le ricette, gestisce le scorte e supervisiona il team da un'unica piattaforma." },
+      { "title": "Direttore Operativo", "description": "Supervisiona più locali con dati in tempo reale da ogni cucina e partita." },
+      { "title": "Proprietario di Bar o Caffè", "description": "Senza complicazioni: gestisci food cost e menu in minuti, non in ore." }
+    ],
+    "why_section": {
+      "title": "La gestione della cucina di cui gli chef hanno bisogno, resa possibile dall'IA",
+      "body": "I software di gestione tradizionali sono lenti, rigidi e non capiscono la cucina. AI Chef Pro è un software pensato da e per i professionisti della ristorazione.",
+      "benefits": [
+        "Food cost automatico con prezzi di mercato aggiornati",
+        "Controllo allergeni integrato secondo la normativa europea vigente",
+        "Ricette standardizzate con schede tecniche professionali",
+        "Analisi di redditività piatto per piatto con menu engineering",
+        "Avvisi scorte e controllo sprechi in tempo reale",
+        "Accesso da qualsiasi dispositivo, senza installazione né manutenzione"
+      ]
+    },
+    "testimonial": {
+      "quote": "Prima passavo due ore al giorno ad aggiornare i food cost e controllare le scorte. Con AI Chef Pro lo faccio in 10 minuti con molto più dettaglio. È il software di gestione cucina di cui avevo sempre bisogno.",
+      "name": "Carlos Méndez",
+      "role": "Chef Proprietario, Restaurante Méndez, Madrid"
+    },
+    "pricing_section": {
+      "title": "Software di gestione cucina con IA da 0€",
+      "subtitle": "Inizia gratis e scala quando la tua attività ne ha bisogno. Senza vincoli.",
+      "annual_note": "Piano annuale AI Chef Premium Plus disponibile a 950€/anno · Risparmia 2 mesi"
+    },
+    "faq_section": {
+      "title": "Domande frequenti sul software di gestione cucina"
+    },
+    "faq": [
+      {
+        "question": "Cos'è un software di gestione cucina con IA?",
+        "answer": "È una piattaforma che usa l'intelligenza artificiale per automatizzare le attività di gestione della cucina: food cost, inventario, ricette, allergeni e analisi di redditività. AI Chef Pro integra 55+ strumenti specializzati nella ristorazione."
+      },
+      {
+        "question": "Posso gestire i miei food cost con AI Chef Pro?",
+        "answer": "Sì. AI Chef Pro calcola automaticamente il food cost di ogni piatto con i tuoi ingredienti, grammature e prezzi fornitore. Aggiorna i costi in pochi secondi quando i prezzi di mercato cambiano."
+      },
+      {
+        "question": "AI Chef Pro è conforme alla normativa sugli allergeni?",
+        "answer": "Sì. Il sistema identifica i 14 allergeni secondo il Regolamento UE 1169/2011 e genera schede tecniche conformi alla normativa europea vigente. Fondamentale per evitare sanzioni e proteggere la salute dei tuoi clienti."
+      },
+      {
+        "question": "Devo installare un programma sul mio computer?",
+        "answer": "No. AI Chef Pro funziona completamente in cloud. Accedi da qualsiasi dispositivo — computer, tablet o smartphone — senza installazioni né aggiornamenti manuali."
+      }
+    ],
+    "cta_section": {
+      "title": "Inizia a gestire la tua cucina con l'IA oggi stesso",
+      "subtitle": "Oltre 5.000 professionisti della ristorazione usano già AI Chef Pro per gestire la propria cucina con più controllo e meno tempo.",
+      "primary": "Prova gratis adesso",
+      "secondary": "Vedi tutti i piani"
+    }
   }
 }
