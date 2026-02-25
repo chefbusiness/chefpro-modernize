@@ -21,6 +21,7 @@
     "herramientas_ia": "KI-Tools für Restaurants",
     "carta_menu": "Speisekarte mit KI",
     "marketing_ia": "Marketing mit KI",
+    "chatgpt_ia": "ChatGPT für Restaurants",
     "blog": "Blog",
     "login": "Anmelden"
   },
@@ -1116,6 +1117,7 @@
     "nav_costs": "Kosten senken",
     "nav_menu": "Speisekarte mit KI",
     "nav_marketing": "Marketing mit KI",
+    "nav_chatgpt": "ChatGPT für Restaurants",
     "nav_ai_tools": "KI-Tools",
     "nav_free_tools": "Kostenlose Tools",
     "contact_title": "Kontakt",
@@ -1888,5 +1890,100 @@
       "secondary": "Alle Pläne ansehen"
     },
     "breadcrumb": "Restaurant Marketing mit KI"
+  },
+  "landingChatGPT": {
+    "seo": {
+      "title": "ChatGPT für Restaurants: die spezialisierte KI | AI Chef Pro",
+      "description": "ChatGPT für Restaurants vs AI Chef Pro: Entdecken Sie, warum auf Gastronomie trainierte KI bessere Ergebnisse liefert als ein generisches Modell. Kostenlos testen.",
+      "keywords": "chatgpt für restaurants, chatgpt gastronomie, chatgpt küche, ki für restaurants, chatgpt restaurant alternative, spezialisierte ki gastronomie"
+    },
+    "hero": {
+      "badge": "Die auf Gastronomie spezialisierte KI",
+      "h1": "ChatGPT für Restaurants: warum spezialisierte KI gewinnt",
+      "subtitle": "ChatGPT ist ein generisches Tool. AI Chef Pro ist die KI, die speziell für Köche und Gastronomen trainiert wurde.",
+      "tagline": "Food Cost · Speisekarten · Allergene · Gastronomie-Marketing · Kostenkontrolle",
+      "cta_primary": "AI Chef Pro kostenlos testen",
+      "cta_secondary": "Pläne und Preise ansehen",
+      "no_card": "Keine Kreditkarte · Kostenloser Plan verfügbar"
+    },
+    "results": [
+      { "metric": "55+", "label": "in Gastronomie trainierte Tools" },
+      { "metric": "10x", "label": "präziser bei Food-Cost-Berechnungen" },
+      { "metric": "5.000+", "label": "Restaurants und Köche, die es nutzen" },
+      { "metric": "25", "label": "Weltküchen in der Datenbank" }
+    ],
+    "comparison": {
+      "title": "ChatGPT vs AI Chef Pro für Restaurants",
+      "subtitle": "Beide nutzen künstliche Intelligenz, aber nur einer ist für Ihr Unternehmen trainiert.",
+      "col_feature": "Funktion",
+      "items": [
+        { "feature": "Food-Cost-Berechnung", "chatgpt": "Generische Antworten", "aichef": "Präzise Berechnung mit Margen" },
+        { "feature": "Speisekartengestaltung", "chatgpt": "Kein gastronomischer Kontext", "aichef": "Angepasst an Ihr Konzept und Food Cost" },
+        { "feature": "Allergenverwaltung", "chatgpt": "Kann Fehler machen", "aichef": "14 Allergene nach EU-Verordnung" },
+        { "feature": "Professionelle Rezepte", "chatgpt": "Generisch, ohne Technik", "aichef": "25 Weltküchen mit Technik" },
+        { "feature": "Gastronomie-Marketing", "chatgpt": "Kein Branchenvokabular", "aichef": "Texte mit Gastronomieterminologie" },
+        { "feature": "Bewertungsantworten", "chatgpt": "Texte ohne Kontext", "aichef": "Antworten im Restaurant-Ton" }
+      ]
+    },
+    "tools_section": {
+      "title": "Was AI Chef Pro tut, was ChatGPT nicht erreichen kann",
+      "subtitle": "Tools zur Lösung realer Alltagsprobleme in einem Restaurant."
+    },
+    "tools": [
+      { "title": "Food-Cost-Kalkulation", "description": "Berechnet die genauen Kosten jedes Gerichts mit Rezept, Gramm und Lieferantenpreisen.", "keywords": ["restaurant food cost", "food cost ki", "gerichtkosten"] },
+      { "title": "Menü-Engineering", "description": "Speisekarten nach Rentabilitätskriterien gestalten.", "keywords": ["menü engineering", "rentable speisekarte", "menu engineering ki"] },
+      { "title": "Allergene mit Vorschrift", "description": "Identifiziert die 14 Allergene gemäß EU-Verordnung 1169/2011.", "keywords": ["restaurant allergene", "eu allergenverordnung", "rechtliche kennzeichnung"] },
+      { "title": "Rezepte aus 25 Küchen", "description": "Datenbank mit Techniken und Rezepten aus 25 Weltküchen.", "keywords": ["professionelle rezepte", "kochtechniken", "weltküchen"] },
+      { "title": "Marketing mit Branchenvokabular", "description": "Social-Media-Inhalte in der Sprache der Gastronomie.", "keywords": ["gastronomie marketing", "restaurant content", "gastronomisches vokabular"] },
+      { "title": "Google-Bewertungsantworten", "description": "Antwortet im passenden Ton für ein Restaurant.", "keywords": ["google bewertungen beantworten", "online reputation restaurant", "negative bewertungen"] }
+    ],
+    "profiles_section": {
+      "title": "Wer nutzt AI Chef Pro statt ChatGPT?",
+      "subtitle": "Fachleute, die ChatGPT bereits ausprobiert hatten und etwas Spezifisches für die Gastronomie brauchten."
+    },
+    "profiles": [
+      { "title": "Koch und Inhaber", "description": "Nutzte ChatGPT für Rezepte, verlor aber Zeit beim Korrigieren technischer Fehler." },
+      { "title": "Betriebsleiter", "description": "ChatGPT konnte die Food Cost nicht korrekt berechnen." },
+      { "title": "Küchenchef", "description": "Benötigte Saisonmenüs mit echten kulinarischen Kriterien." },
+      { "title": "Bar- oder Café-Inhaber", "description": "Keine Zeit für aufwendige Prompts. AI Chef Pro hat die Tools bereit." }
+    ],
+    "why_section": {
+      "title": "ChatGPT ist gut. AI Chef Pro ist besser für Ihr Restaurant.",
+      "body": "ChatGPT ist ein Allgemeinmodell. AI Chef Pro nutzt dieselbe Technologie, aber speziell für die Gastronomie feinabgestimmt.",
+      "benefits": [
+        "Antworten mit korrektem gastronomischem Fachvokabular beim ersten Versuch",
+        "Food Cost mit echter Restaurantlogik berechnet",
+        "Allergenverwaltung nach aktuellen europäischen Vorschriften",
+        "Technisch korrekte Rezepte aus 25 Weltküchen",
+        "Marketing im Ton und der Sprache der Gastronomie",
+        "Keine Lernkurve: Tools bereit, keine komplexen Prompts"
+      ]
+    },
+    "testimonial": {
+      "quote": "Ich habe ChatGPT für Food-Cost-Berechnungen versucht und brauchte mehr Zeit zum Korrigieren als für die manuelle Berechnung. Mit AI Chef Pro ist das Ergebnis sofort korrekt.",
+      "name": "Miguel Ángel Torres",
+      "role": "Executive Chef, Restaurantgruppe Valencia"
+    },
+    "pricing_section": {
+      "title": "Fairer Preis für die KI, die Ihr Restaurant verdient",
+      "subtitle": "Von kostenlos zum Einstieg bis zur unbegrenzten Nutzung für große Betriebe.",
+      "annual_note": "Auch verfügbar: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+    },
+    "faq_section": {
+      "title": "Häufige Fragen: ChatGPT vs AI Chef Pro für Restaurants"
+    },
+    "faq": [
+      { "question": "Kann ChatGPT die Food Cost für Restaurants berechnen?", "answer": "ChatGPT kann es versuchen, aber als Generalist berücksichtigt es keine aktuellen Marktpreise, typischen Verluste oder Gastronomiemargen. AI Chef Pro ist speziell für die Food-Cost-Berechnung mit echter Restaurantlogik konzipiert." },
+      { "question": "Warum nicht kostenlos ChatGPT statt AI Chef Pro nutzen?", "answer": "Für die Gastronomie brauchen Sie Präzision bei Allergenen und Food Cost. Allergenfehler haben rechtliche Konsequenzen. AI Chef Pro ist darauf trainiert, in diesen kritischen Bereichen korrekte Ergebnisse zu liefern." },
+      { "question": "Nutzt AI Chef Pro dieselbe Technologie wie ChatGPT?", "answer": "Es nutzt modernste KI-Modelle, die für Gastronomie und Hotellerie feinabgestimmt sind. Es spricht die Sprache der Köche, versteht Allergenvorschriften und kennt die Logik des Restaurantgeschäfts." },
+      { "question": "Kann AI Chef Pro mir wie ChatGPT beim Rezepte erstellen helfen?", "answer": "Ja, und mit mehr technischer Präzision: 25 Weltküchen mit korrektem kulinarischen Vokabular, Fonds, Reduktionen, Texturen, Konditortechniken, angepasst an Ihre Food Cost und Saison." }
+    ],
+    "cta_section": {
+      "title": "Die Gastronomie-KI, die ChatGPT nicht sein kann",
+      "subtitle": "Über 5.000 Köche und Gastronomen haben sich bereits für die auf Gastronomie spezialisierte KI entschieden.",
+      "primary": "AI Chef Pro kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    },
+    "breadcrumb": "ChatGPT für Restaurants"
   }
 }

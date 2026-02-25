@@ -21,6 +21,7 @@
     "herramientas_ia": "AI Tools for Restaurants",
     "carta_menu": "Menu Design with AI",
     "marketing_ia": "Marketing with AI",
+    "chatgpt_ia": "ChatGPT for Restaurants",
     "blog": "Blog",
     "login": "Sign In"
   },
@@ -824,6 +825,7 @@
     "nav_costs": "Reduce Costs",
     "nav_menu": "Menu Design with AI",
     "nav_marketing": "Marketing with AI",
+    "nav_chatgpt": "ChatGPT for Restaurants",
     "nav_ai_tools": "AI Tools",
     "nav_free_tools": "Free Tools",
     "contact_title": "Contact",
@@ -1601,5 +1603,100 @@
       "secondary": "View all plans"
     },
     "breadcrumb": "Restaurant Marketing with AI"
+  },
+  "landingChatGPT": {
+    "seo": {
+      "title": "ChatGPT for Restaurants: the specialized AI | AI Chef Pro",
+      "description": "ChatGPT for restaurants vs AI Chef Pro: discover why AI trained in gastronomy delivers better results than a generic model. Try for free.",
+      "keywords": "chatgpt for restaurants, chatgpt hospitality, chatgpt cooking, ai for restaurants, chatgpt gastronomy, chatgpt restaurant alternative, specialized ai hospitality"
+    },
+    "hero": {
+      "badge": "The AI specialized in gastronomy",
+      "h1": "ChatGPT for Restaurants: why specialized AI wins",
+      "subtitle": "ChatGPT is a generic tool. AI Chef Pro is the AI trained specifically for chefs, cooks and restaurant owners.",
+      "tagline": "Food Cost · Menus · Allergens · Gastronomy Marketing · Cost Control",
+      "cta_primary": "Try AI Chef Pro for free",
+      "cta_secondary": "See plans and pricing",
+      "no_card": "No credit card · Free plan available"
+    },
+    "results": [
+      { "metric": "55+", "label": "tools trained in gastronomy" },
+      { "metric": "10x", "label": "more accurate in food cost calculations" },
+      { "metric": "5,000+", "label": "restaurants and chefs already using it" },
+      { "metric": "25", "label": "world cuisines in the database" }
+    ],
+    "comparison": {
+      "title": "ChatGPT vs AI Chef Pro for restaurants",
+      "subtitle": "Both use artificial intelligence, but one is trained for your business and the other is not.",
+      "col_feature": "Feature",
+      "items": [
+        { "feature": "Food cost calculation", "chatgpt": "Generic responses", "aichef": "Precise calculation with margins" },
+        { "feature": "Menu design", "chatgpt": "No gastronomic context", "aichef": "Tailored to your concept and food cost" },
+        { "feature": "Allergen management", "chatgpt": "May make mistakes", "aichef": "14 allergens per EU regulation" },
+        { "feature": "Professional recipes", "chatgpt": "Generic, no technique", "aichef": "25 world cuisines with technique" },
+        { "feature": "Gastronomy marketing", "chatgpt": "No industry vocabulary", "aichef": "Texts with hospitality terminology" },
+        { "feature": "Review responses", "chatgpt": "Texts without context", "aichef": "Responses with restaurant tone" }
+      ]
+    },
+    "tools_section": {
+      "title": "What AI Chef Pro does that ChatGPT cannot match",
+      "subtitle": "Tools designed to solve real day-to-day problems in a restaurant."
+    },
+    "tools": [
+      { "title": "Food Cost Calculator", "description": "Calculate the exact cost of each dish with recipe, portions and supplier prices.", "keywords": ["restaurant food cost", "food cost ai", "dish cost"] },
+      { "title": "Menu Engineering", "description": "Design menus with profitability criteria.", "keywords": ["menu engineering", "profitable menu design", "menu engineering ai"] },
+      { "title": "Allergens with Regulation", "description": "Identifies the 14 allergens per EU Regulation 1169/2011.", "keywords": ["restaurant allergens", "EU allergen regulation", "legal labeling"] },
+      { "title": "Recipes from 25 Cuisines", "description": "Database of techniques and recipes from 25 world cuisines.", "keywords": ["professional recipes", "cooking techniques", "world cuisines"] },
+      { "title": "Marketing with Industry Vocabulary", "description": "Social media content with hospitality-specific language.", "keywords": ["hospitality marketing", "restaurant content", "gastronomic vocabulary"] },
+      { "title": "Google Review Responses", "description": "Responds with the appropriate tone for a restaurant.", "keywords": ["respond to google reviews", "restaurant online reputation", "negative reviews"] }
+    ],
+    "profiles_section": {
+      "title": "Who uses AI Chef Pro instead of ChatGPT?",
+      "subtitle": "Professionals who already tried ChatGPT and needed something specific for hospitality."
+    },
+    "profiles": [
+      { "title": "Owner-Chef", "description": "Used ChatGPT for recipes but wasted time correcting technical errors." },
+      { "title": "Operations Director", "description": "ChatGPT couldn't calculate food cost correctly." },
+      { "title": "Head Chef", "description": "Needed seasonal menus with real culinary criteria." },
+      { "title": "Bar or Café Owner", "description": "No time for elaborate prompts. AI Chef Pro has the tools ready." }
+    ],
+    "why_section": {
+      "title": "ChatGPT is good. AI Chef Pro is better for your restaurant.",
+      "body": "ChatGPT is a generalist model. AI Chef Pro uses the same technology but fine-tuned specifically for gastronomy.",
+      "benefits": [
+        "Responses with correct gastronomic technical vocabulary from the first attempt",
+        "Food cost calculated with real restaurant logic",
+        "Allergen management according to current European regulations",
+        "Technically correct recipes from 25 world cuisines",
+        "Marketing with the tone and language specific to hospitality",
+        "No learning curve: tools ready, no complex prompts"
+      ]
+    },
+    "testimonial": {
+      "quote": "I tried ChatGPT for food cost calculations and it took longer to correct the errors than to do it by hand. With AI Chef Pro the result is correct from the first moment.",
+      "name": "Miguel Ángel Torres",
+      "role": "Executive Chef, Valencia Restaurant Group"
+    },
+    "pricing_section": {
+      "title": "Fair price for the AI your restaurant deserves",
+      "subtitle": "From free to get started to unlimited use for large operations.",
+      "annual_note": "Also available: AI Chef Premium Plus Annual plan at €950/year · Save 2 months"
+    },
+    "faq_section": {
+      "title": "Frequently asked questions: ChatGPT vs AI Chef Pro for restaurants"
+    },
+    "faq": [
+      { "question": "Can ChatGPT do food cost calculations for restaurants?", "answer": "ChatGPT can try but as a generalist it doesn't account for current market prices, typical waste or hospitality margins. AI Chef Pro is designed specifically to calculate food cost with real restaurant logic." },
+      { "question": "Why not use ChatGPT for free instead of AI Chef Pro?", "answer": "For hospitality you need precision in allergens and food cost. Allergen errors have legal consequences. AI Chef Pro is trained to give correct results in these critical areas." },
+      { "question": "Does AI Chef Pro use the same technology as ChatGPT?", "answer": "It uses the latest AI models fine-tuned in gastronomy and hospitality. It speaks the language of chefs, understands allergen regulations and knows the logic of the restaurant business." },
+      { "question": "Can AI Chef Pro help me create recipes like ChatGPT?", "answer": "Yes, and with more technical precision: 25 world cuisines with correct culinary vocabulary, stocks, reductions, textures, pastry techniques, adapted to your food cost and season." }
+    ],
+    "cta_section": {
+      "title": "The hospitality AI that ChatGPT cannot be",
+      "subtitle": "Over 5,000 chefs and restaurateurs have already chosen the AI specialized in gastronomy.",
+      "primary": "Try AI Chef Pro for free",
+      "secondary": "See all plans"
+    },
+    "breadcrumb": "ChatGPT for Restaurants"
   }
 }

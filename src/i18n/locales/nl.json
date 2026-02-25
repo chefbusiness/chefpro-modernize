@@ -21,6 +21,7 @@
     "herramientas_ia": "AI-Tools Restaurant",
     "carta_menu": "Menu met AI",
     "marketing_ia": "Marketing met AI",
+    "chatgpt_ia": "ChatGPT voor Restaurants",
     "blog": "Blog",
     "login": "Inloggen"
   },
@@ -1098,6 +1099,7 @@
     "nav_costs": "Kosten verlagen",
     "nav_menu": "Menu met AI",
     "nav_marketing": "Marketing met AI",
+    "nav_chatgpt": "ChatGPT voor Restaurants",
     "nav_ai_tools": "AI-Tools",
     "nav_free_tools": "Gratis Tools",
     "contact_title": "Contact",
@@ -1870,5 +1872,100 @@
       "secondary": "Alle plannen bekijken"
     },
     "breadcrumb": "Restaurant Marketing met AI"
+  },
+  "landingChatGPT": {
+    "seo": {
+      "title": "ChatGPT voor Restaurants: de gespecialiseerde AI | AI Chef Pro",
+      "description": "ChatGPT voor restaurants vs AI Chef Pro: ontdek waarom AI getraind in gastronomie betere resultaten geeft dan een generiek model. Probeer gratis.",
+      "keywords": "chatgpt voor restaurants, chatgpt horeca, chatgpt koken, ai voor restaurants, chatgpt gastronomie, chatgpt restaurant alternatief, gespecialiseerde ai horeca"
+    },
+    "hero": {
+      "badge": "De AI gespecialiseerd in gastronomie",
+      "h1": "ChatGPT voor Restaurants: waarom gespecialiseerde AI wint",
+      "subtitle": "ChatGPT is een generiek hulpmiddel. AI Chef Pro is de AI speciaal getraind voor chefs, koks en restauranthouders.",
+      "tagline": "Food Cost · Menu's · Allergenen · Gastronomie Marketing · Kostenbeheersing",
+      "cta_primary": "AI Chef Pro gratis proberen",
+      "cta_secondary": "Plannen en prijzen bekijken",
+      "no_card": "Geen creditcard · Gratis plan beschikbaar"
+    },
+    "results": [
+      { "metric": "55+", "label": "tools getraind in gastronomie" },
+      { "metric": "10x", "label": "nauwkeuriger in food cost berekeningen" },
+      { "metric": "5.000+", "label": "restaurants en chefs die het al gebruiken" },
+      { "metric": "25", "label": "wereldkeukens in de database" }
+    ],
+    "comparison": {
+      "title": "ChatGPT vs AI Chef Pro voor restaurants",
+      "subtitle": "Beide gebruiken kunstmatige intelligentie, maar slechts één is getraind voor uw bedrijf.",
+      "col_feature": "Functionaliteit",
+      "items": [
+        { "feature": "Food cost berekening", "chatgpt": "Generieke antwoorden", "aichef": "Nauwkeurige berekening met marges" },
+        { "feature": "Menu ontwerp", "chatgpt": "Geen gastronomische context", "aichef": "Afgestemd op uw concept en food cost" },
+        { "feature": "Allergenen beheer", "chatgpt": "Kan fouten maken", "aichef": "14 allergenen per EU-verordening" },
+        { "feature": "Professionele recepten", "chatgpt": "Generiek, zonder techniek", "aichef": "25 wereldkeukens met techniek" },
+        { "feature": "Gastronomie marketing", "chatgpt": "Geen branchevocabulaire", "aichef": "Teksten met horeca terminologie" },
+        { "feature": "Antwoorden op reviews", "chatgpt": "Teksten zonder context", "aichef": "Antwoorden met restauranttoon" }
+      ]
+    },
+    "tools_section": {
+      "title": "Wat AI Chef Pro doet dat ChatGPT niet kan evenaren",
+      "subtitle": "Tools ontworpen om echte dagelijkse problemen in een restaurant op te lossen."
+    },
+    "tools": [
+      { "title": "Food Cost Calculator", "description": "Berekent de exacte kosten van elk gerecht met recept, grammen en leveranciersp prijzen.", "keywords": ["restaurant food cost", "food cost ai", "gerecht kosten"] },
+      { "title": "Menu Engineering", "description": "Ontwerp menu's met winstgevendheidscriteria.", "keywords": ["menu engineering", "winstgevend menu ontwerp", "menu engineering ai"] },
+      { "title": "Allergenen met Regelgeving", "description": "Identificeert de 14 allergenen per EU-verordening 1169/2011.", "keywords": ["restaurant allergenen", "EU allergeenverordening", "wettelijke etikettering"] },
+      { "title": "Recepten uit 25 Keukens", "description": "Database van technieken en recepten uit 25 wereldkeukens.", "keywords": ["professionele recepten", "kooktechnieken", "wereldkeukens"] },
+      { "title": "Marketing met Branchevocabulaire", "description": "Social media content in de taal van de horeca.", "keywords": ["horeca marketing", "restaurant content", "gastronomisch vocabulaire"] },
+      { "title": "Google Review Antwoorden", "description": "Antwoordt met de juiste toon voor een restaurant.", "keywords": ["google reviews beantwoorden", "online reputatie restaurant", "negatieve reviews"] }
+    ],
+    "profiles_section": {
+      "title": "Wie gebruikt AI Chef Pro in plaats van ChatGPT?",
+      "subtitle": "Professionals die ChatGPT al hadden geprobeerd en iets specifieks voor de horeca nodig hadden."
+    },
+    "profiles": [
+      { "title": "Chef-eigenaar", "description": "Gebruikte ChatGPT voor recepten maar verloor tijd met het corrigeren van technische fouten." },
+      { "title": "Operations Manager", "description": "ChatGPT kon de food cost niet correct berekenen." },
+      { "title": "Keukenchef", "description": "Had seizoensmenu's nodig met echte culinaire criteria." },
+      { "title": "Bar- of Café-eigenaar", "description": "Geen tijd voor uitgebreide prompts. AI Chef Pro heeft de tools klaar." }
+    ],
+    "why_section": {
+      "title": "ChatGPT is goed. AI Chef Pro is beter voor uw restaurant.",
+      "body": "ChatGPT is een generalistisch model. AI Chef Pro gebruikt dezelfde technologie maar specifiek afgestemd op gastronomie.",
+      "benefits": [
+        "Antwoorden met correct gastronomisch technisch vocabulaire bij de eerste poging",
+        "Food cost berekend met echte restaurantlogica",
+        "Allergenenb eheer volgens actuele Europese regelgeving",
+        "Technisch correcte recepten uit 25 wereldkeukens",
+        "Marketing met de toon en taal van de horeca",
+        "Geen leercurve: tools klaar, geen complexe prompts"
+      ]
+    },
+    "testimonial": {
+      "quote": "Ik probeerde ChatGPT voor food cost berekeningen en het kostte meer tijd om fouten te corrigeren dan om het met de hand te doen. Met AI Chef Pro is het resultaat meteen correct.",
+      "name": "Miguel Ángel Torres",
+      "role": "Executive Chef, Valencia Restaurantgroep"
+    },
+    "pricing_section": {
+      "title": "Eerlijke prijs voor de AI die uw restaurant verdient",
+      "subtitle": "Van gratis om te beginnen tot onbeperkt gebruik voor grote operaties.",
+      "annual_note": "Ook beschikbaar: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen: ChatGPT vs AI Chef Pro voor restaurants"
+    },
+    "faq": [
+      { "question": "Kan ChatGPT food cost berekeningen doen voor restaurants?", "answer": "ChatGPT kan het proberen maar als generalist houdt het geen rekening met actuele marktprijzen, typische verliezen of horecamarges. AI Chef Pro is speciaal ontworpen om food cost te berekenen met echte restaurantlogica." },
+      { "question": "Waarom niet gratis ChatGPT gebruiken in plaats van AI Chef Pro?", "answer": "Voor de horeca heeft u precisie nodig bij allergenen en food cost. Fouten bij allergenen hebben juridische gevolgen. AI Chef Pro is getraind om correcte resultaten te geven in deze kritieke gebieden." },
+      { "question": "Gebruikt AI Chef Pro dezelfde technologie als ChatGPT?", "answer": "Het gebruikt de nieuwste AI-modellen afgestemd op gastronomie en horeca. Het spreekt de taal van chefs, begrijpt allergeenregelgeving en kent de logica van het restaurantbedrijf." },
+      { "question": "Kan AI Chef Pro me helpen recepten te maken zoals ChatGPT?", "answer": "Ja, en met meer technische precisie: 25 wereldkeukens met correct culinair vocabulaire, bouillons, reducties, texturen, banketbakkerstechnieken, aangepast aan uw food cost en seizoen." }
+    ],
+    "cta_section": {
+      "title": "De horeca AI die ChatGPT niet kan zijn",
+      "subtitle": "Meer dan 5.000 chefs en restauranthouders hebben al gekozen voor de in gastronomie gespecialiseerde AI.",
+      "primary": "AI Chef Pro gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    },
+    "breadcrumb": "ChatGPT voor Restaurants"
   }
 }

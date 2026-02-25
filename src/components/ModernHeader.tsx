@@ -42,6 +42,16 @@ const MARKETING_SLUGS: Record<string, string> = {
   pt: 'pt/marketing-restaurante-ia-pt',
   nl: 'nl/restaurant-marketing-ai-nl',
 };
+
+const CHATGPT_SLUGS: Record<string, string> = {
+  es: 'chatgpt-para-restaurantes',
+  en: 'en/chatgpt-for-restaurants',
+  fr: 'fr/chatgpt-pour-restaurants',
+  de: 'de/chatgpt-fuer-restaurants',
+  it: 'it/chatgpt-per-ristoranti',
+  pt: 'pt/chatgpt-para-restaurantes',
+  nl: 'nl/chatgpt-voor-restaurants',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -163,6 +173,12 @@ export default function ModernHeader() {
                           href={`/${MARKETING_SLUGS[currentLanguage] || MARKETING_SLUGS.es}`}
                         >
                           {t('nav.marketing_ia')}
+                        </NavigationMenuLink>
+                        <NavigationMenuLink
+                          className="block text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors py-1"
+                          href={`/${CHATGPT_SLUGS[currentLanguage] || CHATGPT_SLUGS.es}`}
+                        >
+                          {t('nav.chatgpt_ia')}
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -408,6 +424,14 @@ export default function ModernHeader() {
                           >
                             <Wrench className="h-4 w-4 text-violet-500" />
                             {t('nav.marketing_ia')}
+                          </a>
+                          <a
+                            href={`/${CHATGPT_SLUGS[currentLanguage] || CHATGPT_SLUGS.es}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-indigo-600"
+                          >
+                            <Wrench className="h-4 w-4 text-indigo-500" />
+                            {t('nav.chatgpt_ia')}
                           </a>
                         </CollapsibleContent>
                       </Collapsible>
