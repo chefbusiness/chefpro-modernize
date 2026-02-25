@@ -19,6 +19,16 @@ const LANG_SLUGS: Record<string, string> = {
   nl: '/nl/digitaliseringstest-restaurant',
 };
 
+const HUB_SLUGS: Record<string, string> = {
+  es: '/herramientas-gratuitas',
+  en: '/en/free-tools-restaurants',
+  fr: '/fr/outils-gratuits-restaurant',
+  de: '/de/kostenlose-tools-restaurant',
+  it: '/it/strumenti-gratuiti-ristorante',
+  pt: '/pt/ferramentas-gratuitas-restaurante',
+  nl: '/nl/gratis-tools-restaurant',
+};
+
 const RESULT_COLORS = [
   { bg: 'bg-slate-50', border: 'border-slate-300', text: 'text-slate-700', bar: 'bg-slate-400' },
   { bg: 'bg-blue-50', border: 'border-blue-300', text: 'text-blue-700', bar: 'bg-blue-400' },
@@ -113,7 +123,7 @@ export default function TestDigitalizacion() {
             <nav className="text-sm text-slate-500 mb-4">
               <Link to="/" className="hover:text-teal-600">AI Chef Pro</Link>
               <span className="mx-2">/</span>
-              <Link to={LANG_SLUGS[currentLanguage] || '/herramientas-gratuitas'} className="hover:text-teal-600">
+              <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'} className="hover:text-teal-600">
                 {t('toolScore.breadcrumb.tools')}
               </Link>
               <span className="mx-2">/</span>
@@ -330,7 +340,7 @@ export default function TestDigitalizacion() {
                   </a>
                 </Button>
                 <Button variant="outline" asChild size="lg" className="border-teal-300 text-teal-700 hover:bg-teal-50 px-8">
-                  <Link to={LANG_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
+                  <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
                     {ctaSection.cta_secondary}
                   </Link>
                 </Button>

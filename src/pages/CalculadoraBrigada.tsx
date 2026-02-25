@@ -19,6 +19,16 @@ const LANG_SLUGS: Record<string, string> = {
   nl: '/nl/brigade-calculator-restaurant',
 };
 
+const HUB_SLUGS: Record<string, string> = {
+  es: '/herramientas-gratuitas',
+  en: '/en/free-tools-restaurants',
+  fr: '/fr/outils-gratuits-restaurant',
+  de: '/de/kostenlose-tools-restaurant',
+  it: '/it/strumenti-gratuiti-ristorante',
+  pt: '/pt/ferramentas-gratuitas-restaurante',
+  nl: '/nl/gratis-tools-restaurant',
+};
+
 // Brigade ratios by service type index (carta, menu, buffet, catering)
 // Returns { kitchen staff roles, sala staff roles }
 function calculateBrigade(
@@ -140,7 +150,7 @@ export default function CalculadoraBrigada() {
             <nav className="text-sm text-slate-500 mb-4">
               <Link to="/" className="hover:text-orange-600">AI Chef Pro</Link>
               <span className="mx-2">/</span>
-              <Link to={LANG_SLUGS[currentLanguage] || '/herramientas-gratuitas'} className="hover:text-orange-600">
+              <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'} className="hover:text-orange-600">
                 {t('toolBrigada.breadcrumb.tools')}
               </Link>
               <span className="mx-2">/</span>
@@ -435,7 +445,7 @@ export default function CalculadoraBrigada() {
                   </a>
                 </Button>
                 <Button variant="outline" asChild size="lg" className="border-orange-300 text-orange-700 hover:bg-orange-50 px-8">
-                  <Link to={LANG_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
+                  <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
                     {ctaSection.cta_secondary}
                   </Link>
                 </Button>
