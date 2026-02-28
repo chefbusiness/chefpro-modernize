@@ -3825,5 +3825,79 @@
       "cta_primary": "Generar mi calendario gratis",
       "cta_secondary": "Ver todas las herramientas"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Generador Textos Carta Restaurante Gratis | AI Chef Pro",
+      "description": "Genera 3 versiones de descripción para cada plato de tu carta: clásica, emocional y km0. Gratis, sin registro. Mejora tu carta y atrae más clientes.",
+      "keywords": "generador textos carta restaurante, descripcion platos restaurante, textos carta menu, copywriting gastronomico gratis"
+    },
+    "hero": {
+      "badge": "Gratis — Sin registro",
+      "h1": "Generador de Textos para tu Carta",
+      "subtitle": "Introduce el nombre del plato e ingredientes y obtén 3 descripciones listas para tu carta: clásica, emocional y km0. Sin API, sin registro, sin coste.",
+      "cta_tool": "Generar textos para mi carta",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Generador de Textos para Carta",
+      "breadcrumb": "Generador Textos Carta",
+      "breadcrumb_hub": "Herramientas Gratuitas",
+      "faq_title": "Preguntas frecuentes",
+      "nombre_label": "Nombre actual del plato",
+      "nombre_placeholder": "Ej: Croquetas de jamón",
+      "ingredientes_label": "Ingredientes principales",
+      "ingredientes_placeholder": "Ej: jamón ibérico, bechamel, pan rallado",
+      "ingredientes_hint": "Separa los ingredientes por comas",
+      "estilo_label": "Estilo del restaurante",
+      "estilos": ["Tradicional", "Vanguardista", "Informal", "Gourmet", "Familiar"],
+      "idioma_label": "Idioma de la carta",
+      "idiomas": ["Español", "Inglés", "Catalán", "Euskera"],
+      "precio_label": "Precio del plato (opcional)",
+      "generating": "Creando descripciones…",
+      "generate_btn": "Generar textos para mi carta",
+      "catalan_note": "El texto se genera en español. Puedes adaptarlo al catalán o euskera manualmente.",
+      "result_labels": {
+        "title": "Descripciones para tu carta",
+        "reset": "Nuevo plato",
+        "clasica": "Clásica",
+        "emocional": "Emocional",
+        "km0": "KM0 / Producto local",
+        "nombre_alt": "Nombre alternativo sugerido",
+        "copy": "Copiar",
+        "copied": "¡Copiado!",
+        "cta_title": "¿Quieres generar toda tu carta optimizada para SEO local?",
+        "cta_subtitle": "Descubre Menu Plate Local SEO en AI Chef Pro",
+        "cta_btn": "Ver todas las funcionalidades →"
+      }
+    },
+    "faq": [
+      {
+        "q": "¿Cómo funciona el generador de textos para carta?",
+        "a": "Introduce el nombre del plato y sus ingredientes principales, elige el estilo de tu restaurante y el idioma de la carta. El generador crea automáticamente 3 versiones de descripción: clásica (formal y elegante), emocional (sensorial y evocadora) y km0/local (destacando el origen y la proximidad). También sugiere un nombre alternativo más atractivo."
+      },
+      {
+        "q": "¿Puedo usar estos textos directamente en mi carta?",
+        "a": "Sí. Los textos generados son un punto de partida sólido que puedes usar tal cual o personalizar según tu voz de marca. Están diseñados para ser directamente utilizables en menús impresos, cartas digitales o webs de restaurante."
+      },
+      {
+        "q": "¿Por qué son importantes las descripciones de los platos?",
+        "a": "Una buena descripción en la carta puede aumentar el ticket medio entre un 5 y un 15%. Los comensales que leen descripciones evocadoras tienen más probabilidades de pedir ese plato y perciben mayor valor en la experiencia. También mejora el SEO si usas la carta en tu web."
+      },
+      {
+        "q": "¿Qué diferencia hay entre la versión clásica, emocional y km0?",
+        "a": "La versión clásica es formal y se centra en ingredientes y técnica. La emocional apela a los sentidos y crea un vínculo afectivo con el comensal. La versión km0 destaca el origen local y la temporalidad del producto, cada vez más valorada por los clientes conscientes."
+      },
+      {
+        "q": "¿Funciona en otros idiomas?",
+        "a": "Sí, puedes generar textos en español e inglés. Para catalán y euskera, el texto base se genera en español para que puedas adaptarlo manualmente a tu dialecto local."
+      }
+    ],
+    "cta_section": {
+      "title": "¿Listo para mejorar la carta de tu restaurante?",
+      "subtitle": "Genera textos profesionales para cada plato y eleva la percepción de tu restaurante.",
+      "cta_primary": "Generar textos gratis",
+      "cta_secondary": "Ver todas las herramientas"
+    }
   }
 }

@@ -115,6 +115,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'calendario-conteudo-restaurante',
     nl: 'content-kalender-restaurant',
   },
+  {
+    es: 'generador-textos-carta-restaurante',
+    en: 'restaurant-menu-copy-generator',
+    fr: 'generateur-textes-carte-restaurant',
+    de: 'speisekarten-text-generator',
+    it: 'generatore-testi-menu-ristorante',
+    pt: 'gerador-textos-cardapio-restaurante',
+    nl: 'menukaart-tekst-generator',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

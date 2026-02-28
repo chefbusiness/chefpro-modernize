@@ -4060,5 +4060,71 @@
       "cta_primary": "Mijn gratis kalender genereren",
       "cta_secondary": "Alle tools bekijken"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Gratis Menukaart Tekst Generator | AI Chef Pro",
+      "description": "Genereer 3 beschrijvingen voor elk gerecht: klassiek, emotioneel en km0/lokaal. Gratis, zonder aanmelding. Verbeter uw menukaart en trek meer klanten aan.",
+      "keywords": "menukaart tekst generator, gerecht beschrijving restaurant, menu copywriting gratis"
+    },
+    "hero": {
+      "badge": "Gratis — Zonder aanmelding",
+      "h1": "Menukaart Tekst Generator",
+      "subtitle": "Voer de naam van het gerecht en ingrediënten in en ontvang 3 kant-en-klare beschrijvingen: klassiek, emotioneel en km0/lokaal. Zonder API, zonder registratie.",
+      "cta_tool": "Menukaart teksten genereren",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Menukaart Tekst Generator",
+      "breadcrumb": "Menukaart Tekst Generator",
+      "breadcrumb_hub": "Gratis Tools",
+      "faq_title": "Veelgestelde vragen",
+      "nombre_label": "Huidige naam van het gerecht",
+      "nombre_placeholder": "Bijv.: Jamón kroketten",
+      "ingredientes_label": "Hoofdingrediënten",
+      "ingredientes_placeholder": "Bijv.: Iberisch varkensvlees, béchamel, paneermeel",
+      "ingredientes_hint": "Scheid ingrediënten met komma's",
+      "estilo_label": "Restaurantstijl",
+      "estilos": ["Traditioneel", "Avant-garde", "Informeel", "Gastronomisch", "Familiair"],
+      "idioma_label": "Taal van de menukaart",
+      "idiomas": ["Spaans", "Engels", "Catalaans", "Baskisch"],
+      "precio_label": "Prijs van het gerecht (optioneel)",
+      "generating": "Beschrijvingen worden aangemaakt…",
+      "generate_btn": "Menukaart teksten genereren",
+      "catalan_note": "De tekst wordt in het Spaans gegenereerd. U kunt deze handmatig aanpassen naar het Catalaans of Baskisch.",
+      "result_labels": {
+        "title": "Beschrijvingen voor uw menukaart",
+        "reset": "Nieuw gerecht",
+        "clasica": "Klassiek",
+        "emocional": "Emotioneel",
+        "km0": "Lokaal / Km0",
+        "nombre_alt": "Voorgestelde alternatieve naam",
+        "copy": "Kopiëren",
+        "copied": "Gekopieerd!",
+        "cta_title": "Wilt u uw volledige menukaart optimaliseren voor lokale SEO?",
+        "cta_subtitle": "Ontdek Menu Plate Local SEO in AI Chef Pro",
+        "cta_btn": "Alle functies bekijken →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Hoe werkt de menukaart tekst generator?",
+        "a": "Voer de naam van het gerecht en de hoofdingrediënten in, kies uw restaurantstijl en de taal van de menukaart. De generator maakt automatisch 3 versies: klassiek (formeel en elegant), emotioneel (sensorisch en evocatief) en km0/lokaal (lokale herkomst benadrukkend). Het suggereert ook een aantrekkelijkere alternatieve naam."
+      },
+      {
+        "q": "Kan ik deze teksten direct op mijn menukaart gebruiken?",
+        "a": "Ja. De gegenereerde teksten zijn een solide startpunt dat u direct kunt gebruiken of aanpassen aan uw merkidentiteit. Ze zijn ontworpen voor gedrukte menu's, digitale menukaarten of restaurantwebsites."
+      },
+      {
+        "q": "Waarom zijn gerecht beschrijvingen zo belangrijk?",
+        "a": "Een goede menukaartbeschrijving kan de gemiddelde bonwaarde met 5–15% verhogen. Gasten die aansprekende beschrijvingen lezen, zijn eerder geneigd dat gerecht te bestellen en ervaren meer waarde in hun bezoek."
+      }
+    ],
+    "cta_section": {
+      "title": "Klaar om de menukaart van uw restaurant te verbeteren?",
+      "subtitle": "Genereer professionele teksten voor elk gerecht en verhoog de perceptie van uw restaurant.",
+      "cta_primary": "Gratis teksten genereren",
+      "cta_secondary": "Alle tools bekijken"
+    }
   }
 }
