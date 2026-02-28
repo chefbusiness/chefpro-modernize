@@ -3408,7 +3408,8 @@
       "reset": "Nieuwe analyse",
       "cta_after": "Wilt u de allergenen van uw hele menukaart automatisch beheren?",
       "allergens_title": "De 14 verplicht te vermelden allergenen",
-      "allergens_subtitle": "Verordening (EU) 1169/2011"
+      "allergens_subtitle": "Verordening (EU) 1169/2011",
+      "try_free": "AI Chef Pro gratis uitproberen"
     },
     "allergens": [
       {
@@ -3685,20 +3686,20 @@
     },
     "faq": [
       {
-        "question": "Wat zegt de wet over allergenen in restaurants?",
-        "answer": "EU-Verordening 1169/2011 verplicht alle restaurants, cafés en horecabedrijven om informatie te verstrekken over de 14 verplicht te vermelden allergenen in al hun gerechten. Niet-naleving kan boetes van 3.000 € tot 600.000 € met zich meebrengen afhankelijk van de ernst."
+        "q": "Wat zegt de wet over allergenen in restaurants?",
+        "a": "EU-Verordening 1169/2011 verplicht alle restaurants, cafés en horecabedrijven om informatie te verstrekken over de 14 verplicht te vermelden allergenen in al hun gerechten. Niet-naleving kan boetes van 3.000 € tot 600.000 € met zich meebrengen afhankelijk van de ernst."
       },
       {
-        "question": "Wat zijn de 14 verplicht te vermelden allergenen?",
-        "answer": "Gluten, schaaldieren, eieren, vis, pinda's, soja, melk, noten (amandelen, walnoten, hazelnoten...), selderij, mosterd, sesam, zwaveldioxide en sulfieten, lupine en weekdieren."
+        "q": "Wat zijn de 14 verplicht te vermelden allergenen?",
+        "a": "Gluten, schaaldieren, eieren, vis, pinda's, soja, melk, noten (amandelen, walnoten, hazelnoten...), selderij, mosterd, sesam, zwaveldioxide en sulfieten, lupine en weekdieren."
       },
       {
-        "question": "Is een algemene waarschuwing 'kan sporen bevatten' voldoende?",
-        "answer": "Nee. De wet vereist specifieke informatie per gerecht. Een algemene waarschuwing is niet voldoende en kan worden gesanctioneerd. U moet de klant kunnen informeren welke allergenen elk specifiek gerecht bevat."
+        "q": "Is een algemene waarschuwing 'kan sporen bevatten' voldoende?",
+        "a": "Nee. De wet vereist specifieke informatie per gerecht. Een algemene waarschuwing is niet voldoende en kan worden gesanctioneerd. U moet de klant kunnen informeren welke allergenen elk specifiek gerecht bevat."
       },
       {
-        "question": "Is dit tool 100% juridisch betrouwbaar?",
-        "answer": "Dit tool is oriënterend en ondersteunend bedoeld. De juridische verantwoordelijkheid ligt altijd bij het etablissement. U moet de ingrediënten en mogelijke kruisbesmettingen handmatig controleren. Voor volledig en gecertificeerd beheer, gebruik AI Chef Pro Premium."
+        "q": "Is dit tool 100% juridisch betrouwbaar?",
+        "a": "Dit tool is oriënterend en ondersteunend bedoeld. De juridische verantwoordelijkheid ligt altijd bij het etablissement. U moet de ingrediënten en mogelijke kruisbesmettingen handmatig controleren. Voor volledig en gecertificeerd beheer, gebruik AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3706,6 +3707,10 @@
       "subtitle": "Met AI Chef Pro beheert u de allergenen van elk gerecht automatisch, met waarschuwingen bij ingrediëntenwijzigingen en exporteerbare declaratie voor uw menukaart.",
       "primary": "AI Chef Pro gratis proberen",
       "secondary": "Alle plannen bekijken"
+    },
+    "allergens_section": {
+      "title": "De 14 verplicht te vermelden allergenen",
+      "subtitle": "Verordening (EU) 1169/2011"
     }
   },
   "toolBrigada": {

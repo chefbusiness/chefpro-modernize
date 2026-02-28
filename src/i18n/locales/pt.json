@@ -3413,7 +3413,8 @@
       "reset": "Nova análise",
       "cta_after": "Quer gerir os alergénios de toda a sua ementa de forma automática?",
       "allergens_title": "Os 14 alergénios de declaração obrigatória",
-      "allergens_subtitle": "Regulamento (UE) 1169/2011"
+      "allergens_subtitle": "Regulamento (UE) 1169/2011",
+      "try_free": "Experimentar AI Chef Pro grátis"
     },
     "allergens": [
       {
@@ -3690,20 +3691,20 @@
     },
     "faq": [
       {
-        "question": "O que diz a lei sobre alergénios nos restaurantes?",
-        "answer": "O Regulamento UE 1169/2011 obriga todos os restaurantes, bares e estabelecimentos de restauração a informar sobre os 14 alergénios de declaração obrigatória em todos os seus pratos. O incumprimento pode acarretar coimas entre 3.000 € e 600.000 € conforme a gravidade."
+        "q": "O que diz a lei sobre alergénios nos restaurantes?",
+        "a": "O Regulamento UE 1169/2011 obriga todos os restaurantes, bares e estabelecimentos de restauração a informar sobre os 14 alergénios de declaração obrigatória em todos os seus pratos. O incumprimento pode acarretar coimas entre 3.000 € e 600.000 € conforme a gravidade."
       },
       {
-        "question": "Quais são os 14 alergénios de declaração obrigatória?",
-        "answer": "Glúten, crustáceos, ovos, peixe, amendoins, soja, leite, frutos de casca rija (amêndoas, nozes, avelãs...), aipo, mostarda, sésamo, dióxido de enxofre e sulfitos, tremoços e moluscos."
+        "q": "Quais são os 14 alergénios de declaração obrigatória?",
+        "a": "Glúten, crustáceos, ovos, peixe, amendoins, soja, leite, frutos de casca rija (amêndoas, nozes, avelãs...), aipo, mostarda, sésamo, dióxido de enxofre e sulfitos, tremoços e moluscos."
       },
       {
-        "question": "É suficiente um aviso genérico 'pode conter vestígios'?",
-        "answer": "Não. A lei exige informação específica por prato. Um aviso genérico não é suficiente e pode ser sancionado. Deve poder informar o cliente sobre quais os alergénios que cada prato concreto contém."
+        "q": "É suficiente um aviso genérico 'pode conter vestígios'?",
+        "a": "Não. A lei exige informação específica por prato. Um aviso genérico não é suficiente e pode ser sancionado. Deve poder informar o cliente sobre quais os alergénios que cada prato concreto contém."
       },
       {
-        "question": "Esta ferramenta é 100% fiável do ponto de vista legal?",
-        "answer": "Esta ferramenta é orientativa e de apoio. A responsabilidade legal recai sempre sobre o estabelecimento. Deve verificar manualmente os ingredientes e possíveis contaminações cruzadas. Para uma gestão completa e auditada, use AI Chef Pro Premium."
+        "q": "Esta ferramenta é 100% fiável do ponto de vista legal?",
+        "a": "Esta ferramenta é orientativa e de apoio. A responsabilidade legal recai sempre sobre o estabelecimento. Deve verificar manualmente os ingredientes e possíveis contaminações cruzadas. Para uma gestão completa e auditada, use AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3711,6 +3712,10 @@
       "subtitle": "Com AI Chef Pro gere os alergénios de cada prato automaticamente, com alertas quando muda ingredientes e ficha exportável para a sua ementa.",
       "primary": "Experimentar AI Chef Pro grátis",
       "secondary": "Ver todos os planos"
+    },
+    "allergens_section": {
+      "title": "Os 14 alergénios de declaração obrigatória",
+      "subtitle": "Regulamento (UE) 1169/2011"
     }
   },
   "toolBrigada": {
