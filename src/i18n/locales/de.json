@@ -3181,6 +3181,9 @@
       "result_title": "Ihr Digitalisierungsgrad",
       "score_label": "Punktzahl",
       "restart": "Test wiederholen",
+      "start_btn": "Test starten →",
+      "next_steps_title": "Empfohlene nächste Schritte:",
+      "try_free": "AI Chef Pro kostenlos testen",
       "cta_after": "Bereit für den digitalen Sprung mit KI?"
     },
     "questions": [

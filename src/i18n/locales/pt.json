@@ -3168,6 +3168,9 @@
       "result_title": "O seu nível de digitalização",
       "score_label": "Pontuação",
       "restart": "Repetir teste",
+      "start_btn": "Iniciar teste →",
+      "next_steps_title": "Próximos passos recomendados:",
+      "try_free": "Experimentar AI Chef Pro grátis",
       "cta_after": "Pronto para o salto digital com IA?"
     },
     "questions": [

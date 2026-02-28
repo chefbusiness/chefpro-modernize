@@ -2899,6 +2899,9 @@
       "result_title": "Votre niveau de digitalisation",
       "score_label": "Score",
       "restart": "Refaire le test",
+      "start_btn": "Commencer le test →",
+      "next_steps_title": "Prochaines étapes recommandées :",
+      "try_free": "Essayer AI Chef Pro gratuitement",
       "cta_after": "Prêt à franchir le cap digital avec l'IA ?"
     },
     "questions": [

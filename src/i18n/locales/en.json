@@ -2894,6 +2894,9 @@
       "result_title": "Your digitalization level",
       "score_label": "Score",
       "restart": "Retake test",
+      "start_btn": "Start test →",
+      "next_steps_title": "Recommended next steps:",
+      "try_free": "Try AI Chef Pro free",
       "cta_after": "Ready to make the digital leap with AI?"
     },
     "questions": [

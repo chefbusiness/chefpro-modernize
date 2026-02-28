@@ -161,7 +161,7 @@ export default function TestDigitalizacion() {
                 <h2 className="text-xl font-semibold text-slate-800 mb-2">{tool.title}</h2>
                 <p className="text-slate-600 mb-6">{totalQ} preguntas · ~2 min</p>
                 <Button onClick={() => setStarted(true)} className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3">
-                  Empezar test →
+                  {tool.start_btn}
                 </Button>
               </div>
             )}
@@ -224,7 +224,7 @@ export default function TestDigitalizacion() {
 
                 {Array.isArray(result.tips) && result.tips.length > 0 && (
                   <div className="bg-white rounded-xl p-5 mb-6">
-                    <h3 className="font-semibold text-slate-800 mb-3">Próximos pasos recomendados:</h3>
+                    <h3 className="font-semibold text-slate-800 mb-3">{tool.next_steps_title}</h3>
                     <ul className="space-y-2">
                       {result.tips.map((tip: string, i: number) => (
                         <li key={i} className="flex items-start gap-2 text-slate-600 text-sm">
@@ -241,7 +241,7 @@ export default function TestDigitalizacion() {
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white">
                       <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                        Probar AI Chef Pro gratis <ArrowRight className="w-4 h-4 ml-1" />
+                        {tool.try_free} <ArrowRight className="w-4 h-4 ml-1" />
                       </a>
                     </Button>
                     <Button variant="outline" onClick={reset} className="border-slate-300 text-slate-600">
@@ -261,10 +261,10 @@ export default function TestDigitalizacion() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl font-bold text-center text-slate-800 mb-8">{howItWorks.title}</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {Array.isArray(howItWorks.steps) && howItWorks.steps.map((step: { number: string; title: string; description: string }, i: number) => (
+                {Array.isArray(howItWorks.steps) && howItWorks.steps.map((step: { step: string; title: string; description: string }, i: number) => (
                   <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm">
                     <div className="w-10 h-10 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-3">
-                      {step.number}
+                      {step.step}
                     </div>
                     <h3 className="font-semibold text-slate-800 mb-2">{step.title}</h3>
                     <p className="text-sm text-slate-600">{step.description}</p>
