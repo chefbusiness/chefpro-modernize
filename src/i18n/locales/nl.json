@@ -3144,86 +3144,86 @@
   },
   "toolScore": {
     "seo": {
-      "title": "Free Restaurant Digitalization Test | AI Chef Pro",
-      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Free, no registration.",
-      "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
+      "title": "Digitaliseringstest Restaurant Gratis | AI Chef Pro",
+      "description": "Ontdek in 2 minuten het digitaliseringsniveau van uw restaurant. 6 vragen, direct resultaat met gepersonaliseerd actieplan. Gratis, zonder registratie.",
+      "keywords": "digitaliseringstest restaurant, digitaal niveau restaurant, digitalisering horeca, digitale tools restaurant"
     },
-    "breadcrumb": "Digitaliserings-test",
+    "breadcrumb": "Digitaliseringstest",
     "hero": {
-      "badge": "Free — No registration — 2 minutes",
-      "h1": "Restaurant Digitalization Test",
-      "subtitle": "How digitalized is your restaurant? Answer 6 questions and get your digital level with a personalized action plan.",
-      "cta_tool": "Take the test ↓",
+      "badge": "Gratis — Geen registratie — 2 minuten",
+      "h1": "Digitaliseringstest voor Restaurants",
+      "subtitle": "Hoe gedigitaliseerd is uw restaurant? Beantwoord 6 vragen en krijg uw digitaal niveau met een gepersonaliseerd actieplan.",
+      "cta_tool": "Test doen ↓",
       "cta_premium": "Premium Plan →"
     },
     "tool": {
-      "title": "Digitalization Test",
-      "question_label": "Question {n} of {total}",
-      "submit": "See my result",
-      "result_title": "Your digitalization level",
+      "title": "Digitaliseringstest",
+      "question_label": "Vraag {n} van {total}",
+      "submit": "Mijn resultaat zien",
+      "result_title": "Uw digitaliseringsniveau",
       "score_label": "Score",
-      "restart": "Retake test",
-      "cta_after": "Ready to make the digital leap with AI?"
+      "restart": "Test herhalen",
+      "cta_after": "Klaar voor de digitale sprong met AI?"
     },
     "questions": [
       {
         "id": 1,
-        "text": "Do you have an online booking system?",
+        "text": "Heeft u een online reserveringssysteem?",
         "options": [
-          "No, phone only",
-          "Yes, through third parties (OpenTable, etc.)",
-          "Yes, on our own website",
-          "Yes, website + own app"
+          "Nee, alleen telefonisch",
+          "Ja, via derden (TheFork, etc.)",
+          "Ja, op onze eigen website",
+          "Ja, op website + eigen app"
         ]
       },
       {
         "id": 2,
-        "text": "How do you manage delivery orders?",
+        "text": "Hoe beheert u bezorgbestellingen?",
         "options": [
-          "We don't do delivery",
-          "Platforms only (Deliveroo, Uber Eats...)",
-          "Platforms + own website",
-          "Own system integrated with kitchen"
+          "Wij doen geen bezorging",
+          "Alleen via platforms (Thuisbezorgd, Uber Eats...)",
+          "Platforms + eigen website",
+          "Eigen systeem geïntegreerd met keuken"
         ]
       },
       {
         "id": 3,
-        "text": "Do you use management software (POS)?",
+        "text": "Gebruikt u beheersoftware (POS)?",
         "options": [
-          "No, paper/cash register",
-          "Basic POS without reports",
-          "POS with sales reports",
-          "POS integrated with stock, accounting and delivery"
+          "Nee, wij gebruiken papier/handmatige kassa",
+          "Eenvoudig POS zonder rapporten",
+          "POS met verkooprapportages",
+          "POS geïntegreerd met voorraad, boekhouding en bezorging"
         ]
       },
       {
         "id": 4,
-        "text": "How do you manage your menu?",
+        "text": "Hoe beheert u uw menukaart?",
         "options": [
-          "Printed menu rarely updated",
-          "PDF or image on web/WhatsApp",
-          "Digital menu with updatable QR",
-          "Digital menu + AI suggestions"
+          "Gedrukte kaart die we zelden bijwerken",
+          "PDF of afbeelding op website/WhatsApp",
+          "Digitale kaart met bijwerkbare QR",
+          "Digitale kaart + AI voor suggesties"
         ]
       },
       {
         "id": 5,
-        "text": "Do you have social media presence?",
+        "text": "Heeft u aanwezigheid op sociale media?",
         "options": [
-          "No social media",
-          "Profile created but no regular activity",
-          "Post 1-2 times per week",
-          "Active strategy + digital advertising"
+          "Wij hebben geen sociale media",
+          "Profiel aangemaakt maar zonder regelmatige activiteit",
+          "Wij posten 1-2 keer per week",
+          "Actieve strategie + digitale reclame"
         ]
       },
       {
         "id": 6,
-        "text": "Do you use AI tools in your restaurant?",
+        "text": "Gebruikt u AI-tools in uw restaurant?",
         "options": [
-          "No, I don't know them",
-          "Tried some but don't use regularly",
-          "Use AI occasionally (ChatGPT, etc.)",
-          "Have an AI suite integrated in my operations"
+          "Nee, ik ken ze niet",
+          "Ik heb er een paar geprobeerd maar gebruik ze niet regelmatig",
+          "Ik gebruik AI af en toe (ChatGPT, etc.)",
+          "Ik heb een AI-suite geïntegreerd in mijn bedrijfsvoering"
         ]
       }
     ],
@@ -3233,13 +3233,13 @@
           0,
           25
         ],
-        "level": "Analog",
+        "level": "Analoog",
         "emoji": "📋",
-        "description": "Your restaurant operates traditionally. There's a great differentiation opportunity with simple digitalization steps.",
+        "description": "Uw restaurant werkt op traditionele wijze. Er is een grote kans op differentiatie met eenvoudige digitaliseringsstappen.",
         "tips": [
-          "Start with a Google Business profile",
-          "Add free QR menu",
-          "Create TheFork or similar profile"
+          "Begin met een Google Business-profiel",
+          "Voeg een gratis QR-menukaart toe",
+          "Maak een profiel aan op TheFork of vergelijkbaar"
         ]
       },
       {
@@ -3247,13 +3247,13 @@
           26,
           50
         ],
-        "level": "Basic Digital",
+        "level": "Digitaal Basis",
         "emoji": "📱",
-        "description": "You've taken first steps. You have digital presence but key tools you haven't leveraged yet.",
+        "description": "U heeft de eerste stappen gezet. U heeft een digitale aanwezigheid maar er zijn belangrijke tools die u nog niet benut.",
         "tips": [
-          "Activate online bookings on your website",
-          "Integrate POS with delivery",
-          "Start using AI for content"
+          "Activeer online reserveringen op uw website",
+          "Integreer uw POS met de bezorgdienst",
+          "Begin AI te gebruiken voor content"
         ]
       },
       {
@@ -3261,13 +3261,13 @@
           51,
           75
         ],
-        "level": "Advanced Digital",
+        "level": "Digitaal Gevorderd",
         "emoji": "🚀",
-        "description": "Your restaurant is well digitalized. You're above the industry average. Now is the time to integrate AI.",
+        "description": "Uw restaurant is goed gedigitaliseerd. U ligt boven het sectorgemiddelde. Nu is het moment om AI te integreren.",
         "tips": [
-          "Automate review responses with AI",
-          "Use AI to optimize pricing and menu",
-          "Centralize all channels in one dashboard"
+          "Automatiseer reacties op recensies met AI",
+          "Gebruik AI om prijzen en menu te optimaliseren",
+          "Centraliseer alle kanalen in een dashboard"
         ]
       },
       {
@@ -3275,70 +3275,70 @@
           76,
           100
         ],
-        "level": "Digital Pro",
+        "level": "Digitaal Pro",
         "emoji": "⭐",
-        "description": "You're a digitalization reference in the sector. You're using technology to maximize efficiency and profitability.",
+        "description": "U bent een referentie op het gebied van digitalisering in de sector. U gebruikt technologie om efficiëntie en winstgevendheid te maximaliseren.",
         "tips": [
-          "Explore predictive AI for stock",
-          "Implement advanced data analytics",
-          "Consider mentoring other restaurants"
+          "Verken voorspellende AI voor voorraad",
+          "Implementeer geavanceerde data-analyse",
+          "Overweeg mentoring voor andere restaurants"
         ]
       }
     ],
     "how_it_works": {
-      "title": "How it works",
+      "title": "Hoe het werkt",
       "steps": [
         {
           "step": "1",
-          "title": "Answer 6 questions",
-          "description": "Questions about bookings, delivery, POS, menu, social media and AI. No tricks, no registration."
+          "title": "6 vragen beantwoorden",
+          "description": "Vragen over reserveringen, bezorging, POS, menukaart, sociale media en AI. Zonder trucjes, zonder registratie."
         },
         {
           "step": "2",
-          "title": "Get your score",
-          "description": "The test calculates your digitalization level: Analog, Basic, Advanced or Pro."
+          "title": "Uw score ontvangen",
+          "description": "De test berekent uw digitaliseringsniveau: Analoog, Basis, Gevorderd of Pro."
         },
         {
           "step": "3",
-          "title": "Action plan",
-          "description": "You receive 3 concrete recommendations to reach the next level."
+          "title": "Actieplan",
+          "description": "U ontvangt 3 concrete aanbevelingen om naar het volgende niveau te gaan."
         }
       ]
     },
     "benefits": {
-      "title": "Why take this test",
+      "title": "Waarom deze test doen",
       "items": [
-        "Identify exactly where you stand",
-        "Compare yourself with the industry average",
-        "Discover the highest-impact tools",
-        "3-step improvement plan"
+        "Identificeer precies waar u staat",
+        "Vergelijk uzelf met het sectorgemiddelde",
+        "Ontdek de tools met de meeste impact",
+        "Verbeterplan in 3 concrete stappen"
       ]
     },
     "testimonial": {
-      "quote": "I thought I was quite digitalized. The test showed me important gaps in delivery management and AI. In 3 months I implemented the recommendations and improved my margin by 8%.",
-      "name": "Miguel Torres",
-      "role": "Owner, Grupo Gastronómico El Puerto, Cádiz"
+      "quote": "Ik dacht dat ik vrij gedigitaliseerd was. De test toonde me belangrijke hiaten in bezorgbeheer en AI. In 3 maanden implementeerde ik de aanbevelingen en verbeterde mijn marge met 8%.",
+      "name": "Jan de Vries",
+      "role": "Eigenaar, Gastronomiegroep De Gouden Lepel, Amsterdam"
     },
     "pricing": {
-      "title": "Take your digitalization to the next level with AI Chef Pro",
-      "subtitle": "The test tells you where you are. AI Chef Pro gives you the tools to go further.",
+      "title": "Breng uw digitalisering naar het volgende niveau met AI Chef Pro",
+      "subtitle": "De test vertelt u waar u staat. AI Chef Pro geeft u de tools om verder te gaan.",
       "plans": [
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "5 gebruiken/maand",
+          "uses": "5 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "150 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "350 gebruik/maand",
           "highlight": true
         },
         {
@@ -3350,324 +3350,326 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about restaurant digitalization"
+      "title": "Veelgestelde vragen over digitalisering in de horeca"
     },
     "faq": [
       {
-        "question": "What does digitalization mean for a restaurant?",
-        "answer": "Digitalization in restaurants is the process of incorporating technology tools to better manage bookings, delivery, POS, customer communication and internal operations. It ranges from a simple QR menu to AI-powered management."
+        "question": "Wat betekent digitalisering in een restaurant?",
+        "answer": "Digitalisering in de horeca is het proces van het invoeren van technologische tools voor een beter beheer van reserveringen, bezorging, POS, klantcommunicatie en interne processen. Het varieert van een eenvoudige QR-menukaart tot beheer met kunstmatige intelligentie."
       },
       {
-        "question": "What is the average digitalization level in restaurants?",
-        "answer": "According to industry studies, less than 30% of restaurants have an advanced digitalization level. Most are at basic level, using only isolated tools without integration."
+        "question": "Wat is het gemiddelde digitaliseringsniveau van restaurants in Nederland?",
+        "answer": "Volgens branchestudies heeft minder dan 30% van de restaurants in Nederland een gevorderd digitaliseringsniveau. De meeste bevinden zich op een basisniveau, waarbij alleen losse tools zonder integratie worden gebruikt."
       },
       {
-        "question": "Why is it important to digitalize my restaurant?",
-        "answer": "Digitalized restaurants have 20-35% more operational efficiency, lower staff turnover and better customer experience. AI also allows significant reduction in food cost and marketing costs."
+        "question": "Waarom is het belangrijk mijn restaurant te digitaliseren?",
+        "answer": "Gedigitaliseerde restaurants hebben een 20-35% hogere operationele efficiëntie, minder personeelsverloop en een betere klantbeleving. Bovendien maakt AI een aanzienlijke verlaging van food cost en marketingkosten mogelijk."
       },
       {
-        "question": "How do I start digitalizing my restaurant?",
-        "answer": "The first step is knowing where you are — that's why this test exists. From the result, you can prioritize the highest-impact tools. AI Chef Pro offers a very accessible entry point for AI in gastronomy."
+        "question": "Hoe kan ik beginnen met het digitaliseren van mijn restaurant?",
+        "answer": "De eerste stap is weten waar u staat: daarvoor bestaat deze test. Op basis van het resultaat kunt u de tools met de meeste impact prioriteren. AI Chef Pro biedt een zeer toegankelijk startpunt voor AI in de gastronomie."
       }
     ],
     "cta_section": {
-      "title": "Digitalize your restaurant with AI today",
-      "subtitle": "AI Chef Pro is the most complete AI suite for gastronomy: 55+ tools to manage your restaurant with artificial intelligence.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Digitaliseer uw restaurant vandaag nog met AI",
+      "subtitle": "AI Chef Pro is de meest complete AI-suite voor gastronomie: 55+ tools om uw restaurant te beheren met kunstmatige intelligentie.",
+      "primary": "AI Chef Pro gratis proberen",
+      "secondary": "Alle plannen bekijken"
     }
   },
   "toolAlergenos": {
     "seo": {
-      "title": "Free Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Free, no registration.",
-      "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
+      "title": "Allergenendetector Restaurant Gratis | AI Chef Pro",
+      "description": "Detecteer de 14 verplicht te vermelden allergenen in elk gerecht direct. Voer de ingrediënten in en krijg de allergenendeclaratie. Gratis, zonder registratie.",
+      "keywords": "allergenendetector restaurant, verplichte allergenen restaurant, allergenendeclaratie gerecht, verordening 1169 2011"
     },
-    "breadcrumb": "Allergenen Checker",
+    "breadcrumb": "Allergenendetector",
     "hero": {
-      "badge": "Free — No registration — Legally required",
-      "h1": "Allergen Checker for Restaurants",
-      "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
-      "cta_tool": "Go to checker ↓",
+      "badge": "Gratis — Geen registratie — Wettelijk verplicht",
+      "h1": "Allergenendetector voor Restaurants",
+      "subtitle": "Identificeer de 14 verplicht te vermelden allergenen (EU-Verordening 1169/2011) in elk gerecht direct. Kopieer de declaratie voor uw menukaart.",
+      "cta_tool": "Naar de detector ↓",
       "cta_premium": "Premium Plan →"
     },
     "tool": {
-      "title": "Allergen Checker",
-      "input_label": "Dish ingredients",
-      "input_placeholder": "Type ingredients separated by commas. E.g.: wheat flour, egg, milk, butter, yeast, salt...",
-      "dish_name_label": "Dish name (optional)",
-      "dish_name_placeholder": "E.g.: Spanish omelette",
-      "detect": "Check Allergens",
-      "result_title": "Allergens detected",
-      "allergens_found": "Allergens present",
-      "no_allergens": "✅ No mandatory declaration allergens detected",
-      "warning": "⚠️ Always verify manually — this tool is advisory",
-      "legal_note": "Mandatory declaration under EU Regulation 1169/2011",
-      "copy": "Copy declaration",
-      "copied": "Copied!",
-      "reset": "New analysis",
-      "cta_after": "Want to manage allergens for your entire menu automatically?"
+      "title": "Allergenendetector",
+      "input_label": "Ingrediënten van het gerecht",
+      "input_placeholder": "Schrijf de ingrediënten gescheiden door komma's. Bijv: tarwebloem, ei, melk, boter, gist, zout...",
+      "dish_name_label": "Naam van het gerecht (optioneel)",
+      "dish_name_placeholder": "Bijv: Hollandse erwtensoep",
+      "detect": "Allergenen detecteren",
+      "result_title": "Gedetecteerde allergenen",
+      "allergens_found": "Aanwezige allergenen",
+      "no_allergens": "✅ Er zijn geen verplicht te vermelden allergenen gedetecteerd",
+      "warning": "⚠️ Altijd handmatig controleren — dit tool is oriënterend",
+      "legal_note": "Verplichte declaratie conform EU-Verordening 1169/2011",
+      "copy": "Declaratie kopiëren",
+      "copied": "Gekopieerd!",
+      "reset": "Nieuwe analyse",
+      "cta_after": "Wilt u de allergenen van uw hele menukaart automatisch beheren?",
+      "allergens_title": "De 14 verplicht te vermelden allergenen",
+      "allergens_subtitle": "Verordening (EU) 1169/2011"
     },
     "allergens": [
       {
         "id": "gluten",
         "name": "Gluten",
         "emoji": "🌾",
-        "description": "Cereals containing gluten: wheat, rye, barley, oats...",
+        "description": "Granen die gluten bevatten: tarwe, rogge, gerst, haver...",
         "keywords": [
-          "wheat",
-          "flour",
-          "bread",
+          "tarwe",
+          "meel",
+          "tarwebloem",
+          "brood",
           "pasta",
-          "beer",
-          "rye",
-          "barley",
-          "oat",
+          "rogge",
+          "gerst",
+          "haver",
           "spelt",
-          "semolina",
-          "couscous"
+          "griesmeel",
+          "couscous",
+          "bulgur",
+          "kamut",
+          "bier"
         ]
       },
       {
-        "id": "crustaceans",
-        "name": "Crustaceans",
+        "id": "crustaceos",
+        "name": "Schaaldieren",
         "emoji": "🦐",
-        "description": "Prawns, shrimp, crab, lobster...",
+        "description": "Garnalen, krabben, kreeften, langoustines...",
         "keywords": [
-          "prawn",
-          "shrimp",
-          "crab",
-          "lobster",
-          "crayfish",
-          "langoustine"
+          "garnaal",
+          "kreeft",
+          "krab",
+          "langoustine",
+          "scampi",
+          "schaaldier"
         ]
       },
       {
-        "id": "eggs",
-        "name": "Eggs",
+        "id": "huevos",
+        "name": "Eieren",
         "emoji": "🥚",
-        "description": "Eggs and egg products",
+        "description": "Eieren en producten op basis van eieren",
         "keywords": [
-          "egg",
-          "yolk",
-          "white",
-          "omelette",
-          "mayonnaise",
-          "meringue",
-          "custard"
+          "ei",
+          "eieren",
+          "eigeel",
+          "eiwit",
+          "mayonaise",
+          "omelet"
         ]
       },
       {
-        "id": "fish",
-        "name": "Fish",
+        "id": "pescado",
+        "name": "Vis",
         "emoji": "🐟",
-        "description": "All types of fish and fish products",
+        "description": "Alle vissoorten en afgeleide producten",
         "keywords": [
-          "salmon",
-          "tuna",
-          "cod",
+          "zalm",
+          "kabeljauw",
+          "tonijn",
+          "forel",
           "sardine",
-          "anchovy",
-          "bass",
-          "bream",
-          "fish"
+          "ansjovis",
+          "vis",
+          "schol",
+          "heilbot"
         ]
       },
       {
-        "id": "peanuts",
-        "name": "Peanuts",
+        "id": "cacahuetes",
+        "name": "Pinda's",
         "emoji": "🥜",
-        "description": "Peanuts and peanut products",
+        "description": "Pinda's en producten op basis van pinda's",
         "keywords": [
-          "peanut",
-          "groundnut",
-          "peanut butter",
-          "peanut oil"
+          "pinda",
+          "pindakaas",
+          "pindanoten"
         ]
       },
       {
-        "id": "soy",
-        "name": "Soy",
+        "id": "soja",
+        "name": "Soja",
         "emoji": "🫘",
-        "description": "Soy and soy products",
+        "description": "Soja en producten op basis van soja",
         "keywords": [
-          "soy",
-          "soya",
+          "soja",
+          "sojasaus",
           "tofu",
-          "tempeh",
           "miso",
           "edamame",
-          "soy milk",
-          "soy sauce",
-          "tamari"
+          "sojamelk"
         ]
       },
       {
-        "id": "milk",
-        "name": "Milk",
+        "id": "lacteos",
+        "name": "Melk",
         "emoji": "🥛",
-        "description": "Milk and dairy products",
+        "description": "Melk en melkproducten",
         "keywords": [
-          "milk",
-          "cream",
-          "butter",
-          "cheese",
-          "yogurt",
+          "melk",
+          "kaas",
+          "boter",
+          "room",
+          "yoghurt",
           "lactose",
-          "whey",
-          "casein"
+          "mozzarella",
+          "parmezaan",
+          "kwark",
+          "béchamel"
         ]
       },
       {
-        "id": "nuts",
-        "name": "Tree nuts",
+        "id": "frutos_secos",
+        "name": "Noten",
         "emoji": "🌰",
-        "description": "Almonds, hazelnuts, walnuts, cashews, pistachios...",
+        "description": "Amandelen, hazelnoten, walnoten, cashews, pistaches...",
         "keywords": [
-          "almond",
-          "hazelnut",
-          "walnut",
+          "amandel",
+          "hazelnoot",
+          "walnoot",
           "cashew",
-          "pistachio",
+          "pistache",
           "macadamia",
-          "pecan",
-          "brazil nut"
+          "noten",
+          "noot"
         ]
       },
       {
-        "id": "celery",
-        "name": "Celery",
-        "emoji": "🥬",
-        "description": "Celery and celery products",
-        "keywords": [
-          "celery",
-          "celeriac",
-          "celery salt",
-          "celery extract"
-        ]
-      },
-      {
-        "id": "mustard",
-        "name": "Mustard",
+        "id": "apio",
+        "name": "Selderij",
         "emoji": "🌿",
-        "description": "Mustard and mustard products",
+        "description": "Selderij en producten op basis van selderij",
         "keywords": [
-          "mustard",
-          "mustard seed",
-          "mustard powder",
-          "mustard oil"
+          "selderij",
+          "knolselderij",
+          "selderijzout"
         ]
       },
       {
-        "id": "sesame",
-        "name": "Sesame",
+        "id": "mostaza",
+        "name": "Mosterd",
+        "emoji": "🌻",
+        "description": "Mosterd en producten op basis van mosterd",
+        "keywords": [
+          "mosterd",
+          "mosterdcorrels",
+          "mosterdzaad"
+        ]
+      },
+      {
+        "id": "sesamo",
+        "name": "Sesam",
         "emoji": "🌱",
-        "description": "Sesame seeds and sesame products",
+        "description": "Sesamzaad en producten op basis van sesam",
         "keywords": [
-          "sesame",
+          "sesam",
+          "sesamzaad",
+          "sesamolie",
           "tahini",
-          "sesame oil",
-          "sesame seed"
+          "tahin",
+          "hummus"
         ]
       },
       {
-        "id": "sulphites",
-        "name": "Sulphur dioxide and sulphites",
+        "id": "sulfitos",
+        "name": "Zwaveldioxide en sulfieten",
         "emoji": "🍷",
-        "description": "Concentration above 10 mg/kg or 10 mg/litre",
+        "description": "Concentratie van meer dan 10 mg/kg of 10 mg/liter",
         "keywords": [
-          "wine",
-          "beer",
-          "dried fruit",
-          "vinegar",
-          "juice",
-          "SO2",
-          "sulphite",
-          "bisulphite"
+          "wijn",
+          "azijn",
+          "gedroogde vruchten",
+          "rozijnen",
+          "abrikozen",
+          "sulfieten",
+          "zwaveldioxide"
         ]
       },
       {
-        "id": "lupin",
-        "name": "Lupin",
-        "emoji": "🌼",
-        "description": "Lupin and lupin products",
+        "id": "altramuces",
+        "name": "Lupine",
+        "emoji": "🌾",
+        "description": "Lupine en producten op basis van lupine",
         "keywords": [
-          "lupin",
           "lupine",
-          "lupin flour",
-          "lupin protein"
+          "lupinebloem",
+          "lupinezaad"
         ]
       },
       {
-        "id": "molluscs",
-        "name": "Molluscs",
-        "emoji": "🐚",
-        "description": "Mussels, clams, oysters, octopus, squid...",
+        "id": "moluscos",
+        "name": "Weekdieren",
+        "emoji": "🦑",
+        "description": "Mosselen, oesters, slakken, octopus, inktvis...",
         "keywords": [
-          "mussel",
-          "clam",
-          "oyster",
+          "mossel",
+          "oester",
+          "slak",
           "octopus",
-          "squid",
-          "cuttlefish",
-          "scallop"
+          "inktvis",
+          "zeekat",
+          "venusschelp",
+          "weekdier"
         ]
       }
     ],
     "how_it_works": {
-      "title": "How it works",
+      "title": "Hoe het werkt",
       "steps": [
         {
           "step": "1",
-          "title": "Enter ingredients",
-          "description": "Enter all dish ingredients separated by commas, exactly as you purchase them."
+          "title": "Ingrediënten invoeren",
+          "description": "Voer alle ingrediënten van uw gerecht in, gescheiden door komma's, zoals u ze inkoopt."
         },
         {
           "step": "2",
-          "title": "Automatic detection",
-          "description": "The checker identifies which allergens from EU Regulation 1169/2011 are present."
+          "title": "Automatische detectie",
+          "description": "De detector identificeert welke allergenen van EU-Verordening 1169/2011 aanwezig zijn in de ingrediënten."
         },
         {
           "step": "3",
-          "title": "Copy the declaration",
-          "description": "Get the allergen declaration ready to add to your menu, website or management system."
+          "title": "Declaratie kopiëren",
+          "description": "Ontvang de allergenendeclaratie klaar om toe te voegen aan uw menukaart, website of beheersysteem."
         }
       ]
     },
     "benefits": {
-      "title": "Why use the allergen checker",
+      "title": "Waarom de allergenendetector gebruiken",
       "items": [
-        "Comply with EU Regulation 1169/2011 (mandatory)",
-        "Protect customers with allergies",
-        "Avoid fines up to €600,000",
-        "Declaration ready for your digital menu"
+        "Voldoe aan EU-Verordening 1169/2011 (verplicht)",
+        "Bescherm uw klanten met allergieën",
+        "Vermijd boetes tot 600.000 €",
+        "Declaratie klaar voor uw digitale menukaart"
       ]
     },
     "testimonial": {
-      "quote": "After an inspection, the inspector told me our allergen declaration was exemplary. We use this tool to check every dish before adding it to the menu.",
-      "name": "Marta Sánchez",
-      "role": "Chef-Owner, Restaurante La Huerta, Murcia"
+      "quote": "Na een inspectie zei de inspecteur dat onze allergenendeclaratie voorbeeldig was. Wij gebruiken dit tool om elk gerecht te controleren voordat we het aan de menukaart toevoegen.",
+      "name": "Marieke van den Berg",
+      "role": "Chef-eigenaar, Restaurant De Tuinkamer, Utrecht"
     },
     "pricing": {
-      "title": "Complete allergen management with AI Chef Pro",
-      "subtitle": "The basic checker is free. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
+      "title": "Volledig allergenenmanagement met AI Chef Pro",
+      "subtitle": "De basisdetector is gratis. Met AI Chef Pro beheert u de allergenen van uw hele menukaart met automatische waarschuwingen.",
       "plans": [
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "5 gebruiken/maand",
+          "uses": "5 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "150 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "350 gebruik/maand",
           "highlight": true
         },
         {
@@ -3679,141 +3681,141 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about restaurant allergens"
+      "title": "Veelgestelde vragen over allergenen in de horeca"
     },
     "faq": [
       {
-        "question": "What does the law say about allergens in restaurants?",
-        "answer": "EU Regulation 1169/2011 requires all restaurants, bars and catering establishments to inform about the 14 mandatory allergens in all their dishes. Non-compliance can result in fines between €3,000 and €600,000 depending on severity."
+        "question": "Wat zegt de wet over allergenen in restaurants?",
+        "answer": "EU-Verordening 1169/2011 verplicht alle restaurants, cafés en horecabedrijven om informatie te verstrekken over de 14 verplicht te vermelden allergenen in al hun gerechten. Niet-naleving kan boetes van 3.000 € tot 600.000 € met zich meebrengen afhankelijk van de ernst."
       },
       {
-        "question": "What are the 14 mandatory declaration allergens?",
-        "answer": "Gluten, crustaceans, eggs, fish, peanuts, soy, milk, tree nuts (almonds, walnuts, hazelnuts...), celery, mustard, sesame, sulphur dioxide and sulphites, lupin and molluscs."
+        "question": "Wat zijn de 14 verplicht te vermelden allergenen?",
+        "answer": "Gluten, schaaldieren, eieren, vis, pinda's, soja, melk, noten (amandelen, walnoten, hazelnoten...), selderij, mosterd, sesam, zwaveldioxide en sulfieten, lupine en weekdieren."
       },
       {
-        "question": "Is a generic 'may contain traces' warning sufficient?",
-        "answer": "No. The law requires specific information per dish. A generic warning is not sufficient and can be penalized. You must be able to inform customers which allergens each specific dish contains."
+        "question": "Is een algemene waarschuwing 'kan sporen bevatten' voldoende?",
+        "answer": "Nee. De wet vereist specifieke informatie per gerecht. Een algemene waarschuwing is niet voldoende en kan worden gesanctioneerd. U moet de klant kunnen informeren welke allergenen elk specifiek gerecht bevat."
       },
       {
-        "question": "Is this tool 100% legally reliable?",
-        "answer": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
+        "question": "Is dit tool 100% juridisch betrouwbaar?",
+        "answer": "Dit tool is oriënterend en ondersteunend bedoeld. De juridische verantwoordelijkheid ligt altijd bij het etablissement. U moet de ingrediënten en mogelijke kruisbesmettingen handmatig controleren. Voor volledig en gecertificeerd beheer, gebruik AI Chef Pro Premium."
       }
     ],
     "cta_section": {
-      "title": "Manage allergens for your entire menu with AI",
-      "subtitle": "With AI Chef Pro you manage allergens for each dish automatically, with alerts when you change ingredients and exportable declaration for your menu.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Beheer de allergenen van uw hele menukaart met AI",
+      "subtitle": "Met AI Chef Pro beheert u de allergenen van elk gerecht automatisch, met waarschuwingen bij ingrediëntenwijzigingen en exporteerbare declaratie voor uw menukaart.",
+      "primary": "AI Chef Pro gratis proberen",
+      "secondary": "Alle plannen bekijken"
     }
   },
   "toolBrigada": {
     "seo": {
-      "title": "Free Kitchen Brigade Calculator | AI Chef Pro",
-      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Free, no registration. Based on real hospitality standards.",
-      "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
+      "title": "Keukenteamcalculator Gratis | AI Chef Pro",
+      "description": "Bereken hoeveel medewerkers u nodig heeft in de keuken en de zaal op basis van uw servicevolume. Gratis, zonder registratie. Gebaseerd op echte horecastandaarden.",
+      "keywords": "keukenteamcalculator, hoeveel koks heb ik nodig, personeel restaurant, keukenteam horeca"
     },
-    "breadcrumb": "Brigade Calculator",
+    "breadcrumb": "Keukenteamcalculator",
     "hero": {
-      "badge": "Free — No registration",
-      "h1": "Kitchen Brigade Calculator",
-      "subtitle": "Find out how many chefs and waiters you need based on your covers, shifts and service type. Based on real industry ratios.",
-      "cta_tool": "Go to calculator ↓",
+      "badge": "Gratis — Geen registratie",
+      "h1": "Keukenteamcalculator",
+      "subtitle": "Ontdek hoeveel koks en obers u nodig heeft op basis van uw couverts, diensten en servicetype. Gebaseerd op echte brancheverhoudingen.",
+      "cta_tool": "Naar de calculator ↓",
       "cta_premium": "Premium Plan →"
     },
     "tool": {
-      "title": "Brigade Calculator",
-      "covers_label": "Covers per service",
-      "covers_hint": "Maximum number of covers in one service (lunch or dinner)",
-      "service_type_label": "Service type",
+      "title": "Keukenteamcalculator",
+      "covers_label": "Couverts per service",
+      "covers_hint": "Maximum aantal couverts in één service (lunch of diner)",
+      "service_type_label": "Servicetype",
       "service_types": [
-        "À la carte (high complexity)",
-        "Set menu / Bistro",
+        "À la carte (hoge complexiteit)",
+        "Dagmenu / Bistro",
         "Buffet / Self-service",
-        "Catering / Banquets"
+        "Catering / Banketten"
       ],
-      "services_per_day_label": "Services per day",
+      "services_per_day_label": "Services per dag",
       "services_options": [
-        "1 service (lunch or dinner only)",
-        "2 services (lunch + dinner)",
-        "3 services (breakfast + lunch + dinner)"
+        "1 service (alleen lunch of diner)",
+        "2 services (lunch + diner)",
+        "3 services (ontbijt + lunch + diner)"
       ],
-      "has_delivery_label": "Do you do delivery?",
-      "delivery_volume_label": "Delivery orders/day",
-      "calculate": "Calculate Brigade",
-      "result_title": "Your recommended brigade",
-      "kitchen_title": "👨‍🍳 Kitchen",
-      "sala_title": "🍽️ Front of House",
-      "head_chef": "Head Chef",
-      "sous_chef": "Sous Chef",
-      "chef_partida": "Section Chef",
-      "cocinero": "Cook",
-      "ayudante": "Kitchen Assistant",
-      "kitchen_porter": "Kitchen Porter / Dishwasher",
-      "maitre": "Maître d' / Head Waiter",
-      "jefe_rango": "Station Head Waiter",
-      "camarero": "Waiter",
-      "ayudante_sala": "Busser / FOH Assistant",
-      "total_kitchen": "Total kitchen",
-      "total_sala": "Total FOH",
-      "total_staff": "Total staff",
-      "ratio_label": "Covers per waiter ratio",
-      "reset": "New calculation",
-      "cta_after": "Want to optimize your restaurant's staff costs?"
+      "has_delivery_label": "Doet u bezorging?",
+      "delivery_volume_label": "Bezorgbestellingen/dag",
+      "calculate": "Team berekenen",
+      "result_title": "Uw aanbevolen team",
+      "kitchen_title": "👨‍🍳 Keuken",
+      "sala_title": "🍽️ Zaal",
+      "head_chef": "Chef-kok",
+      "sous_chef": "Sous-chef",
+      "chef_partida": "Partijchef",
+      "cocinero": "Kok",
+      "ayudante": "Keukenmedewerker",
+      "kitchen_porter": "Afwasser / Office",
+      "maitre": "Maître / Zaalchef",
+      "jefe_rango": "Rangchef",
+      "camarero": "Ober",
+      "ayudante_sala": "Zaalmedewerker",
+      "total_kitchen": "Totaal keuken",
+      "total_sala": "Totaal zaal",
+      "total_staff": "Totaal personeel",
+      "ratio_label": "Verhouding couverts/ober",
+      "reset": "Nieuwe berekening",
+      "cta_after": "Wilt u de personeelskosten van uw restaurant optimaliseren?"
     },
     "how_it_works": {
-      "title": "How it works",
+      "title": "Hoe het werkt",
       "steps": [
         {
           "step": "1",
-          "title": "Enter your volume",
-          "description": "Number of covers per service, type of service and how many services you do per day."
+          "title": "Uw volume opgeven",
+          "description": "Aantal couverts per service, servicetype en hoeveel services u per dag doet."
         },
         {
           "step": "2",
-          "title": "Industry standard calculation",
-          "description": "The calculator applies real hospitality sector ratios for each service type."
+          "title": "Berekening volgens standaarden",
+          "description": "De calculator past de echte brancheverhoudingen toe voor elk servicetype."
         },
         {
           "step": "3",
-          "title": "Recommended brigade",
-          "description": "You get the breakdown of kitchen and FOH positions with the minimum recommended number for each role."
+          "title": "Aanbevolen team",
+          "description": "U ontvangt de uitsplitsing van functies in keuken en zaal met het aanbevolen minimumaantal voor elke rol."
         }
       ]
     },
     "benefits": {
-      "title": "Why calculate your brigade",
+      "title": "Waarom uw team berekenen",
       "items": [
-        "Avoid overstaffing (unnecessary cost)",
-        "Avoid understaffing (poor service)",
-        "Know the standard ratio for your restaurant type",
-        "Objective basis for team negotiations"
+        "Vermijd overdimensionering van het personeel (onnodige kosten)",
+        "Vermijd onderdimensionering (slechte service)",
+        "Ken de standaardverhoudingen voor uw restauranttype",
+        "Objectieve basis voor onderhandelingen met uw team"
       ]
     },
     "testimonial": {
-      "quote": "I had 4 chefs for 60 covers with a set menu. The calculator showed me 3 well-organized was enough. I saved €1,800/month in wages.",
-      "name": "José Luis Martín",
-      "role": "Owner, Restaurante El Mirador, Toledo"
+      "quote": "Ik had 4 koks voor 60 couverts met dagmenu. De calculator toonde me dat 3 goed georganiseerde koks voldoende was. Ik bespaarde 1.800 €/maand aan salarissen.",
+      "name": "Pieter Bakker",
+      "role": "Eigenaar, Restaurant Het Uitzicht, Rotterdam"
     },
     "pricing": {
-      "title": "Optimize your team with AI Chef Pro",
-      "subtitle": "The basic calculator is free. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
+      "title": "Optimaliseer uw team met AI Chef Pro",
+      "subtitle": "De basiscalculator is gratis. Met AI Chef Pro optimaliseert u diensten, personeelskosten en productiviteit van uw team.",
       "plans": [
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "5 gebruiken/maand",
+          "uses": "5 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "150 gebruik/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "350 gebruik/maand",
           "highlight": true
         },
         {
@@ -3825,31 +3827,233 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about kitchen brigade"
+      "title": "Veelgestelde vragen over keukenteams"
     },
     "faq": [
       {
-        "question": "How many chefs do I need for 50 covers?",
-        "answer": "It depends on service type. For à la carte (high complexity) you need about 4-5 chefs for 50 covers. For a set menu, 2-3 well-organized chefs may be enough. The calculator applies these ratios based on your service type."
+        "question": "Hoeveel koks heb ik nodig voor 50 couverts?",
+        "answer": "Dat hangt af van het servicetype. Voor à la carte (hoge complexiteit) heeft u ongeveer 4-5 koks nodig voor 50 couverts. Voor dagmenu kunnen 2-3 goed georganiseerde koks voldoende zijn."
       },
       {
-        "question": "What is the standard waiter-to-cover ratio?",
-        "answer": "The industry standard is 1 waiter per 10-15 covers for à la carte restaurants, and 1 per 15-20 for set menu or bistro. For fine dining it can drop to 1 per 6-8 covers."
+        "question": "Wat is de standaardverhouding van obers per couvert?",
+        "answer": "De branchestandaard is 1 ober per 10-15 couverts in een à la carte restaurant, en 1 per 15-20 bij dagmenu of bistro. Voor fine dining kan dit dalen naar 1 per 6-8 couverts."
       },
       {
-        "question": "What is a kitchen brigade?",
-        "answer": "The kitchen brigade is the hierarchically organized team working in a professional kitchen. It was systematized by Auguste Escoffier. It includes roles such as Head Chef, Sous Chef, Section Chefs, Cooks and Assistants."
+        "question": "Wat is een keukenteam (brigade)?",
+        "answer": "Het keukenteam is het hiërarchisch georganiseerde team dat werkt in een professionele keuken. Het werd gesystematiseerd door Auguste Escoffier. Het omvat functies als chef-kok, sous-chef, partijchefs, koks en medewerkers."
       },
       {
-        "question": "How do I reduce staff costs without lowering quality?",
-        "answer": "The key is organization: versatile brigades, efficient mise en place, good shift management and AI tools to optimize operations. AI Chef Pro helps you identify bottlenecks in your team."
+        "question": "Hoe verlaag ik personeelskosten zonder kwaliteitsverlies?",
+        "answer": "De sleutel ligt in organisatie: veelzijdige teams, efficiënte mise en place, goed dienstbeheer en gebruik van AI-tools om de bedrijfsvoering te optimaliseren. AI Chef Pro helpt u de knelpunten in uw team te identificeren."
       }
     ],
     "cta_section": {
-      "title": "Optimize your team management with AI",
-      "subtitle": "AI Chef Pro helps you manage shifts, calculate staff costs and optimize your brigade's productivity.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Optimaliseer het beheer van uw team met AI",
+      "subtitle": "AI Chef Pro helpt u diensten te beheren, personeelskosten te berekenen en de productiviteit van uw team te optimaliseren.",
+      "primary": "AI Chef Pro gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    }
+  },
+  "toolCalendario": {
+    "seo": {
+      "title": "Gratis Content Kalender Restaurant | AI Chef Pro",
+      "description": "Genereer een 30-daagse redactionele kalender voor uw restaurant gratis. Post-ideeën voor Instagram, TikTok en Facebook afgestemd op uw type horecabedrijf. Geen registratie.",
+      "keywords": "content kalender restaurant, post ideen restaurant, social media marketing horeca, redactionele kalender gratis"
+    },
+    "breadcrumb": "Content Kalender",
+    "breadcrumb_hub": "Gratis Tools",
+    "hero": {
+      "badge": "Gratis — Geen registratie",
+      "h1": "Content Kalender voor Uw Restaurant",
+      "subtitle": "Genereer 30 dagen post-ideeën voor Instagram, TikTok en Facebook, afgestemd op uw type horecabedrijf. Geen API, geen registratie, geen kosten.",
+      "cta_tool": "Mijn kalender genereren",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Redactionele Kalender Generator",
+      "venue_type_label": "Type horecabedrijf",
+      "venue_types": [
+        "Traditioneel restaurant",
+        "Gastropub",
+        "Bakkerij / Café",
+        "Pizzeria",
+        "Food Truck",
+        "Catering / Banketten",
+        "Tapasbar"
+      ],
+      "month_label": "Te plannen maand",
+      "months": [
+        "Januari",
+        "Februari",
+        "Maart",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Augustus",
+        "September",
+        "Oktober",
+        "November",
+        "December"
+      ],
+      "frequency_label": "Publicatiefrequentie",
+      "frequencies": [
+        "Dagelijks (30 posts/maand)",
+        "3 keer/week (~13 posts)",
+        "Wekelijks (~4 posts)"
+      ],
+      "networks_label": "Actieve sociale netwerken (kies uw netwerken)",
+      "networks": [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "Pinterest"
+      ],
+      "generate": "Kalender Genereren",
+      "result_title": "Uw redactionele kalender",
+      "posts_label": "publicaties",
+      "copy_all": "Alles kopiëren",
+      "copy_entry": "Dit item kopiëren",
+      "copied": "Gekopieerd",
+      "reset": "Nieuwe kalender",
+      "cta_after": "Wilt u complete postteksten genereren met AI?",
+      "content_types": [
+        {
+          "emoji": "📸",
+          "name": "Hoofdgerecht"
+        },
+        {
+          "emoji": "👨‍🍳",
+          "name": "Achter de schermen"
+        },
+        {
+          "emoji": "💡",
+          "name": "Culinaire tip"
+        },
+        {
+          "emoji": "👥",
+          "name": "Team"
+        },
+        {
+          "emoji": "🌿",
+          "name": "Seizoensproduct"
+        },
+        {
+          "emoji": "💬",
+          "name": "Engagement vraag"
+        },
+        {
+          "emoji": "🎯",
+          "name": "Speciale aanbieding"
+        },
+        {
+          "emoji": "⭐",
+          "name": "Klantrecensie"
+        },
+        {
+          "emoji": "📖",
+          "name": "Storytelling"
+        },
+        {
+          "emoji": "🔥",
+          "name": "Branchetrend"
+        }
+      ],
+      "ideas": [
+        "Deel een foto van uw meest bestelde gerecht deze week en leg uit wat het bijzonder maakt",
+        "Toon het bereidingsproces van een gerecht: van ingrediënt tot het uiteindelijke bord",
+        "Keuken tip: een kooktechniek die u dagelijks gebruikt en uw volgers zal verrassen",
+        "Stel een teamlid voor en zijn of haar verhaal in de horeca",
+        "Zet het seizoensproduct van de week in de spotlight — waar het vandaan komt en hoe u het gebruikt",
+        "Vraag uw volgers: wat is hun favoriete gerecht op de kaart?",
+        "Deel een speciale aanbieding of speciaal menu dat deze week beschikbaar is",
+        "Deel een recente positieve klantrecensie (van Google of TripAdvisor)",
+        "Vertel het verhaal achter een van uw handtekeninggerechten: inspiratie en evolutie",
+        "Deel een gastronomische trend uit de branche die u toepast of wilt proberen",
+        "Korte reel of video: bereiding van een gerecht van begin tot eind in 30 seconden",
+        "Toon de sfeer van uw restaurant: de zaal klaar voor service of een drukke avond",
+        "Seizoenspost: een speciaal gerecht dat alleen nu beschikbaar is. Creëer urgentie",
+        "Carrousel van 5 belangrijkste ingrediënten die u elke week gebruikt en waarom",
+        "Reflectie van de chef over een techniek, ingrediënt of culinaire filosofie",
+        "Toon de mise en place voor de service: organisatie maakt deel uit van de kunst",
+        "Deel een leuk weetje over een ingrediënt dat u regelmatig gebruikt",
+        "Nodig uw volgers uit om een tafel te reserveren voor het weekend. Voeg link toe in bio",
+        "Teamfoto na een bijzonder succesvol service. Geef uw merk een menselijk gezicht",
+        "Benadruk uw duurzaamheidscommitment: lokale leverancier, km0-product of zero waste"
+      ]
+    },
+    "how_it_works": {
+      "title": "Hoe het werkt",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Uw restaurant configureren",
+          "description": "Selecteer het type horecabedrijf, de netwerken waarop u publiceert, de te plannen maand en uw publicatiefrequentie."
+        },
+        {
+          "number": "2",
+          "title": "Kalender genereren",
+          "description": "Het tool maakt gevarieerde ideeën voor elke publicatiedag, inclusief de belangrijkste gastronomische data van de geselecteerde maand."
+        },
+        {
+          "number": "3",
+          "title": "Kopiëren en plannen",
+          "description": "Exporteer de ideeën of kopieer ze één voor één naar uw favoriete planningshulpmiddel (Notion, Google Sheets, Trello...)."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Waarom social media-inhoud plannen?",
+      "items": [
+        "Bespaar 2-3 uur per week nadenken over wat u moet posten",
+        "Behoud een consistente aanwezigheid op sociale netwerken zonder stress",
+        "Profiteer van gastronomische sleuteldatums voor organische zichtbaarheid",
+        "Wissel inhoudstypen af voor beter engagement en bereik",
+        "Plan van tevoren en delegeer gemakkelijk aan uw team",
+        "Verbeter het algoritme door regelmatig en consistent te posten"
+      ]
+    },
+    "testimonial": {
+      "quote": "Vroeger besteedde ik een hele middag aan bedenken wat ik die maand zou posten. Nu heb ik in 2 minuten mijn kalender klaar en hoef ik alleen nog maar foto's te maken.",
+      "name": "Laura Sanz",
+      "role": "Community Manager, Gastropub El Portal"
+    },
+    "pricing": {
+      "title": "Maak complete content met AI Chef Pro",
+      "subtitle": "De ideenkalender is gratis. Met AI Chef Pro Premium genereert u complete teksten publicatieklaar, met voor elk netwerk geoptimaliseerde hashtags.",
+      "cta": "Premium Plan bekijken",
+      "note": "Geen verplichting · Annuleer wanneer u wilt"
+    },
+    "faq_section": {
+      "title": "Veelgestelde vragen"
+    },
+    "faq": [
+      {
+        "q": "Hoeveel ideeën worden er gegenereerd?",
+        "a": "Er worden 4 tot 30 ideeën gegenereerd afhankelijk van de gekozen frequentie: dagelijks (30 posts/maand), 3 keer per week (~13 posts) of wekelijks (~4 posts). Elk idee bevat inhoudstype, concreet voorstel en hashtags."
+      },
+      {
+        "q": "Zijn de ideeën afgestemd op mijn type bedrijf?",
+        "a": "Het type horecabedrijf beïnvloedt de gegenereerde suggesties. U kunt elk idee gemakkelijk aanpassen aan de specifieke stijl van uw restaurant."
+      },
+      {
+        "q": "Bevat het speciale data van de maand?",
+        "a": "Ja. De kalender detecteert automatisch relevante gastronomische data van de maand en markeert ze met specifieke inhoudsideeën."
+      },
+      {
+        "q": "Kan ik de kalender exporteren?",
+        "a": "Ja, u kunt de volledige kalender met één klik als tekst kopiëren, of ideeën één voor één kopiëren naar Notion, Google Sheets of Trello."
+      },
+      {
+        "q": "Werkt het voor alle sociale netwerken?",
+        "a": "De generator maakt ideeën voor Instagram, TikTok, Facebook en Pinterest, waarbij elk idee aan een van de door u geselecteerde netwerken wordt toegewezen."
+      }
+    ],
+    "cta_section": {
+      "title": "Klaar om de sociale media van uw restaurant te domineren?",
+      "subtitle": "Genereer nu uw redactionele kalender en til de digitale aanwezigheid van uw restaurant naar het volgende niveau.",
+      "cta_primary": "Mijn gratis kalender genereren",
+      "cta_secondary": "Alle tools bekijken"
     }
   }
 }
