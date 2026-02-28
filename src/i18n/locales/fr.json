@@ -3095,20 +3095,20 @@
     },
     "faq": [
       {
-        "question": "Qu'est-ce que la digitalisation pour un restaurant ?",
-        "answer": "La digitalisation en restauration est le processus d'intégration d'outils technologiques pour mieux gérer les réservations, le delivery, le POS, la communication client et les opérations internes."
+        "q": "Qu'est-ce que la digitalisation pour un restaurant ?",
+        "a": "La digitalisation en restauration est le processus d'intégration d'outils technologiques pour mieux gérer les réservations, le delivery, le POS, la communication client et les opérations internes."
       },
       {
-        "question": "Quel est le niveau moyen de digitalisation des restaurants ?",
-        "answer": "Moins de 30% des restaurants ont un niveau de digitalisation avancé. La plupart sont au niveau basique, utilisant des outils isolés sans intégration."
+        "q": "Quel est le niveau moyen de digitalisation des restaurants ?",
+        "a": "Moins de 30% des restaurants ont un niveau de digitalisation avancé. La plupart sont au niveau basique, utilisant des outils isolés sans intégration."
       },
       {
-        "question": "Pourquoi est-il important de digitaliser mon restaurant ?",
-        "answer": "Les restaurants digitalisés ont 20-35% plus d'efficacité opérationnelle et une meilleure expérience client. L'IA permet aussi de réduire significativement les coûts."
+        "q": "Pourquoi est-il important de digitaliser mon restaurant ?",
+        "a": "Les restaurants digitalisés ont 20-35% plus d'efficacité opérationnelle et une meilleure expérience client. L'IA permet aussi de réduire significativement les coûts."
       },
       {
-        "question": "Comment commencer à digitaliser mon restaurant ?",
-        "answer": "La première étape est de savoir où vous en êtes — c'est pourquoi ce test existe. À partir du résultat, vous pouvez prioriser les outils à plus fort impact."
+        "q": "Comment commencer à digitaliser mon restaurant ?",
+        "a": "La première étape est de savoir où vous en êtes — c'est pourquoi ce test existe. À partir du résultat, vous pouvez prioriser les outils à plus fort impact."
       }
     ],
     "cta_section": {
@@ -3576,20 +3576,20 @@
     },
     "faq": [
       {
-        "question": "Combien de cuisiniers pour 50 couverts ?",
-        "answer": "Selon le type de service. Pour la carte, environ 4-5 cuisiniers. Pour le menu du jour, 2-3 cuisiniers bien organisés peuvent suffire."
+        "q": "Combien de cuisiniers pour 50 couverts ?",
+        "a": "Selon le type de service. Pour la carte, environ 4-5 cuisiniers. Pour le menu du jour, 2-3 cuisiniers bien organisés peuvent suffire."
       },
       {
-        "question": "Quel est le ratio standard serveur/couverts ?",
-        "answer": "Le standard est 1 serveur pour 10-15 couverts en restauration à la carte, et 1 pour 15-20 en menu du jour ou bistrot."
+        "q": "Quel est le ratio standard serveur/couverts ?",
+        "a": "Le standard est 1 serveur pour 10-15 couverts en restauration à la carte, et 1 pour 15-20 en menu du jour ou bistrot."
       },
       {
-        "question": "Qu'est-ce qu'une brigade de cuisine ?",
-        "answer": "La brigade de cuisine est l'équipe hiérarchisée travaillant dans une cuisine professionnelle, systématisée par Auguste Escoffier."
+        "q": "Qu'est-ce qu'une brigade de cuisine ?",
+        "a": "La brigade de cuisine est l'équipe hiérarchisée travaillant dans une cuisine professionnelle, systématisée par Auguste Escoffier."
       },
       {
-        "question": "Comment réduire les coûts de personnel sans baisser la qualité ?",
-        "answer": "La clé est l'organisation : brigades polyvalentes, mise en place efficace, bonne gestion des plannings et outils IA pour optimiser les opérations."
+        "q": "Comment réduire les coûts de personnel sans baisser la qualité ?",
+        "a": "La clé est l'organisation : brigades polyvalentes, mise en place efficace, bonne gestion des plannings et outils IA pour optimiser les opérations."
       }
     ],
     "cta_section": {

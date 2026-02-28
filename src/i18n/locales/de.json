@@ -3377,20 +3377,20 @@
     },
     "faq": [
       {
-        "question": "Was bedeutet Digitalisierung in einem Restaurant?",
-        "answer": "Digitalisierung in der Gastronomie ist der Prozess der Einführung technologischer Tools für eine bessere Verwaltung von Reservierungen, Lieferung, POS, Kundenkommunikation und internen Abläufen. Es reicht von einer einfachen QR-Speisekarte bis hin zur Verwaltung mit künstlicher Intelligenz."
+        "q": "Was bedeutet Digitalisierung in einem Restaurant?",
+        "a": "Digitalisierung in der Gastronomie ist der Prozess der Einführung technologischer Tools für eine bessere Verwaltung von Reservierungen, Lieferung, POS, Kundenkommunikation und internen Abläufen. Es reicht von einer einfachen QR-Speisekarte bis hin zur Verwaltung mit künstlicher Intelligenz."
       },
       {
-        "question": "Wie hoch ist der durchschnittliche Digitalisierungsgrad von Restaurants in Deutschland?",
-        "answer": "Laut Branchenstudien haben weniger als 30 % der Restaurants in Deutschland ein fortgeschrittenes Digitalisierungsniveau. Die meisten befinden sich auf einem Basisniveau und verwenden nur einzelne Tools ohne Integration."
+        "q": "Wie hoch ist der durchschnittliche Digitalisierungsgrad von Restaurants in Deutschland?",
+        "a": "Laut Branchenstudien haben weniger als 30 % der Restaurants in Deutschland ein fortgeschrittenes Digitalisierungsniveau. Die meisten befinden sich auf einem Basisniveau und verwenden nur einzelne Tools ohne Integration."
       },
       {
-        "question": "Warum ist es wichtig, mein Restaurant zu digitalisieren?",
-        "answer": "Digitalisierte Restaurants haben eine 20-35 % höhere Betriebseffizienz, geringere Personalfluktuation und ein besseres Kundenerlebnis. Außerdem ermöglicht KI eine deutliche Reduzierung der Food-Cost- und Marketingkosten."
+        "q": "Warum ist es wichtig, mein Restaurant zu digitalisieren?",
+        "a": "Digitalisierte Restaurants haben eine 20-35 % höhere Betriebseffizienz, geringere Personalfluktuation und ein besseres Kundenerlebnis. Außerdem ermöglicht KI eine deutliche Reduzierung der Food-Cost- und Marketingkosten."
       },
       {
-        "question": "Wie kann ich mit der Digitalisierung meines Restaurants beginnen?",
-        "answer": "Der erste Schritt ist zu wissen, wo Sie stehen: Dafür gibt es diesen Test. Auf Basis des Ergebnisses können Sie die wirkungsvollsten Tools priorisieren. AI Chef Pro bietet einen sehr zugänglichen Einstieg in die KI für die Gastronomie."
+        "q": "Wie kann ich mit der Digitalisierung meines Restaurants beginnen?",
+        "a": "Der erste Schritt ist zu wissen, wo Sie stehen: Dafür gibt es diesen Test. Auf Basis des Ergebnisses können Sie die wirkungsvollsten Tools priorisieren. AI Chef Pro bietet einen sehr zugänglichen Einstieg in die KI für die Gastronomie."
       }
     ],
     "cta_section": {
@@ -3871,20 +3871,20 @@
     },
     "faq": [
       {
-        "question": "Wie viele Köche brauche ich für 50 Gäste?",
-        "answer": "Das hängt von der Serviceart ab. Für À-la-carte (hohe Komplexität) benötigen Sie etwa 4-5 Köche für 50 Gäste. Für Tagesmenü können 2-3 gut organisierte Köche ausreichend sein."
+        "q": "Wie viele Köche brauche ich für 50 Gäste?",
+        "a": "Das hängt von der Serviceart ab. Für À-la-carte (hohe Komplexität) benötigen Sie etwa 4-5 Köche für 50 Gäste. Für Tagesmenü können 2-3 gut organisierte Köche ausreichend sein."
       },
       {
-        "question": "Was ist die Standardquote von Kellnern pro Gast?",
-        "answer": "Der Branchenstandard ist 1 Kellner pro 10-15 Gäste im À-la-carte-Restaurant und 1 pro 15-20 im Tagesmenü oder Bistró. Für Fine Dining kann es auf 1 pro 6-8 Gäste sinken."
+        "q": "Was ist die Standardquote von Kellnern pro Gast?",
+        "a": "Der Branchenstandard ist 1 Kellner pro 10-15 Gäste im À-la-carte-Restaurant und 1 pro 15-20 im Tagesmenü oder Bistró. Für Fine Dining kann es auf 1 pro 6-8 Gäste sinken."
       },
       {
-        "question": "Was ist eine Küchenbrigade?",
-        "answer": "Die Küchenbrigade ist das hierarchisch organisierte Team, das in einer professionellen Küche arbeitet. Sie wurde von Auguste Escoffier systematisiert. Sie umfasst Rollen wie Küchenchef, Sous-Chef, Posten-Chefs, Köche und Helfer."
+        "q": "Was ist eine Küchenbrigade?",
+        "a": "Die Küchenbrigade ist das hierarchisch organisierte Team, das in einer professionellen Küche arbeitet. Sie wurde von Auguste Escoffier systematisiert. Sie umfasst Rollen wie Küchenchef, Sous-Chef, Posten-Chefs, Köche und Helfer."
       },
       {
-        "question": "Wie reduziere ich Personalkosten ohne Qualitätsverlust?",
-        "answer": "Der Schlüssel liegt in der Organisation: vielseitige Brigaden, effiziente Mise en Place, gutes Schichtenmanagement und KI-Tools zur Betriebsoptimierung. AI Chef Pro hilft Ihnen, die Engpässe in Ihrem Team zu identifizieren."
+        "q": "Wie reduziere ich Personalkosten ohne Qualitätsverlust?",
+        "a": "Der Schlüssel liegt in der Organisation: vielseitige Brigaden, effiziente Mise en Place, gutes Schichtenmanagement und KI-Tools zur Betriebsoptimierung. AI Chef Pro hilft Ihnen, die Engpässe in Ihrem Team zu identifizieren."
       }
     ],
     "cta_section": {

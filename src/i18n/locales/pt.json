@@ -3364,20 +3364,20 @@
     },
     "faq": [
       {
-        "question": "O que significa digitalização num restaurante?",
-        "answer": "A digitalização na restauração é o processo de incorporação de ferramentas tecnológicas para gerir melhor reservas, entregas, POS, comunicação com clientes e operações internas. Vai desde uma simples ementa QR até à gestão com inteligência artificial."
+        "q": "O que significa digitalização num restaurante?",
+        "a": "A digitalização na restauração é o processo de incorporação de ferramentas tecnológicas para gerir melhor reservas, entregas, POS, comunicação com clientes e operações internas. Vai desde uma simples ementa QR até à gestão com inteligência artificial."
       },
       {
-        "question": "Qual é o nível médio de digitalização dos restaurantes em Portugal?",
-        "answer": "Segundo estudos do sector, menos de 30% dos restaurantes em Portugal têm um nível avançado de digitalização. A maioria está num nível básico, usando apenas ferramentas separadas sem integração."
+        "q": "Qual é o nível médio de digitalização dos restaurantes em Portugal?",
+        "a": "Segundo estudos do sector, menos de 30% dos restaurantes em Portugal têm um nível avançado de digitalização. A maioria está num nível básico, usando apenas ferramentas separadas sem integração."
       },
       {
-        "question": "Porque é importante digitalizar o meu restaurante?",
-        "answer": "Os restaurantes digitalizados têm uma eficiência operacional 20-35% superior, menor rotação de pessoal e melhor experiência do cliente. Além disso, a IA permite reduzir significativamente os custos de food cost e marketing."
+        "q": "Porque é importante digitalizar o meu restaurante?",
+        "a": "Os restaurantes digitalizados têm uma eficiência operacional 20-35% superior, menor rotação de pessoal e melhor experiência do cliente. Além disso, a IA permite reduzir significativamente os custos de food cost e marketing."
       },
       {
-        "question": "Como posso começar a digitalizar o meu restaurante?",
-        "answer": "O primeiro passo é saber onde está: para isso existe este teste. A partir do resultado, pode priorizar as ferramentas de maior impacto. AI Chef Pro oferece um ponto de entrada muito acessível para a IA na gastronomia."
+        "q": "Como posso começar a digitalizar o meu restaurante?",
+        "a": "O primeiro passo é saber onde está: para isso existe este teste. A partir do resultado, pode priorizar as ferramentas de maior impacto. AI Chef Pro oferece um ponto de entrada muito acessível para a IA na gastronomia."
       }
     ],
     "cta_section": {
@@ -3846,20 +3846,20 @@
     },
     "faq": [
       {
-        "question": "Quantos cozinheiros preciso para 50 talheres?",
-        "answer": "Depende do tipo de serviço. Para à la carte (alta complexidade) precisa de cerca de 4-5 cozinheiros para 50 talheres. Para menu do dia, com 2-3 cozinheiros bem organizados pode ser suficiente."
+        "q": "Quantos cozinheiros preciso para 50 talheres?",
+        "a": "Depende do tipo de serviço. Para à la carte (alta complexidade) precisa de cerca de 4-5 cozinheiros para 50 talheres. Para menu do dia, com 2-3 cozinheiros bem organizados pode ser suficiente."
       },
       {
-        "question": "Qual é o rácio padrão de empregados de mesa por talher?",
-        "answer": "O padrão do sector é 1 empregado por cada 10-15 talheres num restaurante à la carte, e 1 por cada 15-20 no menu do dia ou bistrô. Para fine dining pode baixar para 1 por cada 6-8 talheres."
+        "q": "Qual é o rácio padrão de empregados de mesa por talher?",
+        "a": "O padrão do sector é 1 empregado por cada 10-15 talheres num restaurante à la carte, e 1 por cada 15-20 no menu do dia ou bistrô. Para fine dining pode baixar para 1 por cada 6-8 talheres."
       },
       {
-        "question": "O que é uma brigada de cozinha?",
-        "answer": "A brigada de cozinha é a equipa organizada hierarquicamente que trabalha numa cozinha profissional. Foi sistematizada por Auguste Escoffier. Inclui funções como Chefe de Cozinha, Sous Chef, Chefes de Partida, Cozinheiros e Ajudantes."
+        "q": "O que é uma brigada de cozinha?",
+        "a": "A brigada de cozinha é a equipa organizada hierarquicamente que trabalha numa cozinha profissional. Foi sistematizada por Auguste Escoffier. Inclui funções como Chefe de Cozinha, Sous Chef, Chefes de Partida, Cozinheiros e Ajudantes."
       },
       {
-        "question": "Como reduzo os custos de pessoal sem baixar a qualidade?",
-        "answer": "A chave está na organização: brigadas polivalentes, mise en place eficiente, boa gestão de turnos e uso de ferramentas de IA para optimizar a operação. AI Chef Pro ajuda-o a identificar os estrangulamentos na sua equipa."
+        "q": "Como reduzo os custos de pessoal sem baixar a qualidade?",
+        "a": "A chave está na organização: brigadas polivalentes, mise en place eficiente, boa gestão de turnos e uso de ferramentas de IA para optimizar a operação. AI Chef Pro ajuda-o a identificar os estrangulamentos na sua equipa."
       }
     ],
     "cta_section": {

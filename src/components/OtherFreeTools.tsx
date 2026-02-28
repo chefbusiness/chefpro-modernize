@@ -54,6 +54,9 @@ const TOOL_STYLES = [
   { bg: 'bg-indigo-50', border: 'border-indigo-200', badge: 'bg-indigo-100 text-indigo-800' },
 ];
 
+// ─── Tools with live routes (add 7 when GeneradorMenuDegustacion is built) ────
+const LIVE_TOOLS = new Set([0, 1, 2, 3, 4, 5, 6]);
+
 // ─── Component ────────────────────────────────────────────────────────────────
 
 interface OtherFreeToolsProps {
@@ -79,7 +82,7 @@ export default function OtherFreeTools({ excludeIndex }: OtherFreeToolsProps) {
   const visibleTools = Array.isArray(tools)
     ? tools
         .map((tool, i) => ({ tool, i }))
-        .filter(({ i }) => i !== excludeIndex)
+        .filter(({ i }) => LIVE_TOOLS.has(i) && i !== excludeIndex)
     : [];
 
   return (

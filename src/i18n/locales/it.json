@@ -3377,20 +3377,20 @@
     },
     "faq": [
       {
-        "question": "Cosa significa digitalizzazione in un ristorante?",
-        "answer": "La digitalizzazione nella ristorazione è il processo di incorporazione di strumenti tecnologici per gestire meglio prenotazioni, delivery, POS, comunicazione con i clienti e operazioni interne. Va da un semplice menu QR alla gestione con intelligenza artificiale."
+        "q": "Cosa significa digitalizzazione in un ristorante?",
+        "a": "La digitalizzazione nella ristorazione è il processo di incorporazione di strumenti tecnologici per gestire meglio prenotazioni, delivery, POS, comunicazione con i clienti e operazioni interne. Va da un semplice menu QR alla gestione con intelligenza artificiale."
       },
       {
-        "question": "Qual è il livello medio di digitalizzazione dei ristoranti in Italia?",
-        "answer": "Secondo studi del settore, meno del 30% dei ristoranti in Italia ha un livello avanzato di digitalizzazione. La maggior parte si trova a un livello base, usando solo strumenti separati senza integrazione."
+        "q": "Qual è il livello medio di digitalizzazione dei ristoranti in Italia?",
+        "a": "Secondo studi del settore, meno del 30% dei ristoranti in Italia ha un livello avanzato di digitalizzazione. La maggior parte si trova a un livello base, usando solo strumenti separati senza integrazione."
       },
       {
-        "question": "Perché è importante digitalizzare il mio ristorante?",
-        "answer": "I ristoranti digitalizzati hanno una efficienza operativa del 20-35% superiore, minore rotazione del personale e migliore esperienza del cliente. Inoltre, l'IA permette di ridurre significativamente i costi di food cost e marketing."
+        "q": "Perché è importante digitalizzare il mio ristorante?",
+        "a": "I ristoranti digitalizzati hanno una efficienza operativa del 20-35% superiore, minore rotazione del personale e migliore esperienza del cliente. Inoltre, l'IA permette di ridurre significativamente i costi di food cost e marketing."
       },
       {
-        "question": "Come posso iniziare a digitalizzare il mio ristorante?",
-        "answer": "Il primo passo è sapere dove ti trovi: per questo esiste questo test. Dal risultato, puoi dare priorità agli strumenti con maggior impatto. AI Chef Pro offre un punto di ingresso molto accessibile per l'IA nella gastronomia."
+        "q": "Come posso iniziare a digitalizzare il mio ristorante?",
+        "a": "Il primo passo è sapere dove ti trovi: per questo esiste questo test. Dal risultato, puoi dare priorità agli strumenti con maggior impatto. AI Chef Pro offre un punto di ingresso molto accessibile per l'IA nella gastronomia."
       }
     ],
     "cta_section": {
@@ -3861,20 +3861,20 @@
     },
     "faq": [
       {
-        "question": "Quanti cuochi mi servono per 50 coperti?",
-        "answer": "Dipende dal tipo di servizio. Per la carta (alta complessità) servono circa 4-5 cuochi per 50 coperti. Per il menu del giorno, 2-3 cuochi ben organizzati possono essere sufficienti."
+        "q": "Quanti cuochi mi servono per 50 coperti?",
+        "a": "Dipende dal tipo di servizio. Per la carta (alta complessità) servono circa 4-5 cuochi per 50 coperti. Per il menu del giorno, 2-3 cuochi ben organizzati possono essere sufficienti."
       },
       {
-        "question": "Qual è il ratio standard di camerieri per coperti?",
-        "answer": "Lo standard del settore è 1 cameriere ogni 10-15 coperti nel ristorante alla carta, e 1 ogni 15-20 nel menu del giorno o bistrot. Per il fine dining può scendere a 1 ogni 6-8 coperti."
+        "q": "Qual è il ratio standard di camerieri per coperti?",
+        "a": "Lo standard del settore è 1 cameriere ogni 10-15 coperti nel ristorante alla carta, e 1 ogni 15-20 nel menu del giorno o bistrot. Per il fine dining può scendere a 1 ogni 6-8 coperti."
       },
       {
-        "question": "Cos'è una brigata di cucina?",
-        "answer": "La brigata di cucina è il team organizzato gerarchicamente che lavora in una cucina professionale. Fu sistematizzata da Auguste Escoffier. Include ruoli come Chef di Cucina, Sous Chef, Chef di Partita, Cuochi e Aiutanti."
+        "q": "Cos'è una brigata di cucina?",
+        "a": "La brigata di cucina è il team organizzato gerarchicamente che lavora in una cucina professionale. Fu sistematizzata da Auguste Escoffier. Include ruoli come Chef di Cucina, Sous Chef, Chef di Partita, Cuochi e Aiutanti."
       },
       {
-        "question": "Come riduco i costi del personale senza abbassare la qualità?",
-        "answer": "La chiave è nell'organizzazione: brigate polivalenti, mise en place efficiente, buona gestione dei turni e uso di strumenti IA per ottimizzare l'operazione. AI Chef Pro ti aiuta a identificare i colli di bottiglia nel tuo team."
+        "q": "Come riduco i costi del personale senza abbassare la qualità?",
+        "a": "La chiave è nell'organizzazione: brigate polivalenti, mise en place efficiente, buona gestione dei turni e uso di strumenti IA per ottimizzare l'operazione. AI Chef Pro ti aiuta a identificare i colli di bottiglia nel tuo team."
       }
     ],
     "cta_section": {
