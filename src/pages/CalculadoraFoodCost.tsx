@@ -11,6 +11,7 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const APP_URL = 'https://app.aichef.pro';
@@ -495,6 +496,8 @@ export default function CalculadoraFoodCost() {
             </div>
           </div>
         </section>
+
+        <OtherFreeTools excludeIndex={0} />
 
         {/* CTA Final */}
         <section className="py-20 bg-gradient-to-br from-green-600 via-green-500 to-emerald-400">

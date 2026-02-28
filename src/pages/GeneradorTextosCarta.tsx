@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { FileText, Copy, CheckCircle, RotateCcw, ArrowRight, Sparkles } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/generador-textos-carta-restaurante',
@@ -578,6 +579,8 @@ export default function GeneradorTextosCarta() {
             </div>
           </section>
         )}
+
+        <OtherFreeTools excludeIndex={4} />
 
         {/* ── Footer CTA ── */}
         <section className="py-16 px-4 bg-white border-t border-gray-100">

@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Calendar, Copy, CheckCircle, RotateCcw, ArrowRight, Download } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/calendario-contenidos-restaurante',
@@ -486,6 +487,8 @@ export default function CalendarioContenidos() {
             </div>
           </section>
         )}
+
+        <OtherFreeTools excludeIndex={2} />
 
         {/* Final CTA */}
         {ctaSection && (
