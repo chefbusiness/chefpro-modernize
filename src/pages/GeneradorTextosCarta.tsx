@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { FileText, Copy, CheckCircle, RotateCcw, ArrowRight, Sparkles } from 'lucide-react';
+import HeroSocialProof from '@/components/HeroSocialProof';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/generador-textos-carta-restaurante',
@@ -315,16 +316,7 @@ export default function GeneradorTextosCarta() {
         {/* ── Hero ── */}
         <section className="bg-gradient-to-b from-blue-50 to-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <nav className="text-sm text-gray-500 mb-6 flex items-center justify-center gap-2">
-              <Link to={hubSlug} className="hover:text-blue-600 transition-colors">
-                {tool?.breadcrumb_hub || 'Herramientas Gratuitas'}
-              </Link>
-              <span>/</span>
-              <span className="text-gray-800 font-medium">
-                {tool?.breadcrumb || 'Generador Textos Carta'}
-              </span>
-            </nav>
-
+            <HeroSocialProof />
             <Badge className="bg-blue-100 text-blue-700 border-0 mb-4 px-3 py-1">
               {hero?.badge || 'Gratis — Sin registro'}
             </Badge>
