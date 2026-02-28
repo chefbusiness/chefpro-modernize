@@ -27,6 +27,7 @@ import SimuladorRentabilidad from "./pages/SimuladorRentabilidad";
 import TestDigitalizacion from "./pages/TestDigitalizacion";
 import DetectorAlergenos from "./pages/DetectorAlergenos";
 import CalculadoraBrigada from "./pages/CalculadoraBrigada";
+import CalendarioContenidos from "./pages/CalendarioContenidos";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -182,6 +183,15 @@ const App = () => (
             <Route path="/it/calcolatore-brigata-ristorante" element={<CalculadoraBrigada />} />
             <Route path="/pt/calculadora-brigada-restaurante" element={<CalculadoraBrigada />} />
             <Route path="/nl/brigade-calculator-restaurant" element={<CalculadoraBrigada />} />
+
+            {/* Calendario de Contenidos — todos los idiomas */}
+            <Route path="/calendario-contenidos-restaurante" element={<CalendarioContenidos />} />
+            <Route path="/en/restaurant-content-calendar" element={<CalendarioContenidos />} />
+            <Route path="/fr/calendrier-contenu-restaurant" element={<CalendarioContenidos />} />
+            <Route path="/de/content-kalender-restaurant" element={<CalendarioContenidos />} />
+            <Route path="/it/calendario-contenuti-ristorante" element={<CalendarioContenidos />} />
+            <Route path="/pt/calendario-conteudo-restaurante" element={<CalendarioContenidos />} />
+            <Route path="/nl/content-kalender-restaurant" element={<CalendarioContenidos />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

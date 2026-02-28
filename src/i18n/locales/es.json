@@ -3148,7 +3148,9 @@
       "copy": "Copiar ficha",
       "copied": "¡Copiado!",
       "reset": "Nuevo análisis",
-      "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?"
+      "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?",
+      "allergens_title": "Los 14 alérgenos de declaración obligatoria",
+      "allergens_subtitle": "Reglamento (UE) 1169/2011"
     },
     "allergens": [
       {
@@ -3615,6 +3617,208 @@
       "subtitle": "AI Chef Pro te ayuda a gestionar turnos, calcular costes de personal y optimizar la productividad de tu brigada.",
       "primary": "Probar gratis AI Chef Pro",
       "secondary": "Ver todos los planes"
+    }
+  },
+  "toolCalendario": {
+    "seo": {
+      "title": "Calendario de Contenidos Restaurante Gratis | AI Chef Pro",
+      "description": "Genera un calendario editorial de 30 días para tu restaurante gratis. Ideas de posts para Instagram, TikTok y Facebook personalizadas para tu local. Sin registro.",
+      "keywords": "calendario contenidos restaurante, ideas posts restaurante, marketing redes sociales hosteleria, content calendar restaurante gratis"
+    },
+    "breadcrumb": "Calendario de Contenidos",
+    "breadcrumb_hub": "Herramientas Gratuitas",
+    "hero": {
+      "badge": "Gratis — Sin registro",
+      "h1": "Calendario de Contenidos para tu Restaurante",
+      "subtitle": "Genera 30 días de ideas de publicaciones para Instagram, TikTok y Facebook, adaptadas a tu tipo de establecimiento. Sin API, sin registro, sin coste.",
+      "cta_tool": "Generar mi calendario",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Generador de Calendario Editorial",
+      "venue_type_label": "Tipo de establecimiento",
+      "venue_types": [
+        "Restaurante tradicional",
+        "Gastrobar",
+        "Pastelería / Cafetería",
+        "Pizzería",
+        "Food Truck",
+        "Catering / Banquetes",
+        "Bar de tapas"
+      ],
+      "month_label": "Mes a planificar",
+      "months": [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+      ],
+      "frequency_label": "Frecuencia de publicación",
+      "frequencies": [
+        "Diaria (30 posts/mes)",
+        "3 veces/semana (~13 posts)",
+        "Semanal (~4 posts)"
+      ],
+      "networks_label": "Redes sociales activas (elige las tuyas)",
+      "networks": [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "Pinterest"
+      ],
+      "generate": "Generar Calendario",
+      "result_title": "Tu calendario editorial",
+      "posts_label": "publicaciones",
+      "copy_all": "Copiar todo",
+      "copy_entry": "Copiar esta entrada",
+      "copied": "Copiado",
+      "reset": "Nuevo calendario",
+      "cta_after": "¿Quieres generar los textos completos de cada post con IA?",
+      "content_types": [
+        {
+          "emoji": "📸",
+          "name": "Plato estrella"
+        },
+        {
+          "emoji": "👨‍🍳",
+          "name": "Behind the scenes"
+        },
+        {
+          "emoji": "💡",
+          "name": "Consejo culinario"
+        },
+        {
+          "emoji": "👥",
+          "name": "Equipo"
+        },
+        {
+          "emoji": "🌿",
+          "name": "Producto de temporada"
+        },
+        {
+          "emoji": "💬",
+          "name": "Pregunta / Engagement"
+        },
+        {
+          "emoji": "🎯",
+          "name": "Oferta especial"
+        },
+        {
+          "emoji": "⭐",
+          "name": "Reseña de cliente"
+        },
+        {
+          "emoji": "📖",
+          "name": "Storytelling"
+        },
+        {
+          "emoji": "🔥",
+          "name": "Tendencia del sector"
+        }
+      ],
+      "ideas": [
+        "Comparte una foto de tu plato más pedido esta semana y explica qué lo hace especial",
+        "Muestra el proceso de elaboración de un plato: del ingrediente al emplatado final",
+        "Tip del chef: un truco de cocina que uses habitualmente y que sorprenda a tus seguidores",
+        "Presenta a un miembro de tu equipo y su historia en la hostelería",
+        "Destaca el producto de temporada que tienes esta semana — de dónde viene y cómo lo usas",
+        "Pregunta a tus seguidores: ¿cuál es su plato favorito de la carta?",
+        "Comparte una oferta o menú especial disponible esta semana",
+        "Republica una reseña positiva de un cliente reciente (con permiso o desde Google)",
+        "Cuenta la historia detrás de uno de tus platos signature: inspiración y evolución",
+        "Comparte una tendencia gastronómica del sector que apliques o quieras probar en tu local",
+        "Reel o video corto: la preparación de un plato de principio a fin en 30 segundos",
+        "Muestra el ambiente de tu local: la sala lista para el servicio o el ambiente de una noche llena",
+        "Post de temporada: un plato especial que solo tienes ahora. Crea urgencia",
+        "Carrusel de 5 ingredientes clave que usáis cada semana y por qué los elegís",
+        "Reflexión del chef sobre una técnica, ingrediente o filosofía culinaria",
+        "Muestra el mise en place antes del servicio: la organización es parte del arte",
+        "Comparte un dato curioso sobre un ingrediente que uses habitualmente",
+        "Invita a tus seguidores a reservar mesa para el fin de semana. Incluye enlace en bio",
+        "Foto del equipo después de un servicio especialmente bueno. Humaniza tu marca",
+        "Destaca tu compromiso con la sostenibilidad: proveedor local, producto km0 o zero waste"
+      ]
+    },
+    "how_it_works": {
+      "title": "Cómo funciona",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Configura tu restaurante",
+          "description": "Selecciona el tipo de establecimiento, las redes donde publicas, el mes a planificar y la frecuencia de publicación."
+        },
+        {
+          "number": "2",
+          "title": "Genera el calendario",
+          "description": "La herramienta crea ideas variadas para cada día, incluyendo fechas gastronómicas clave del mes seleccionado."
+        },
+        {
+          "number": "3",
+          "title": "Copia y planifica",
+          "description": "Exporta las ideas o cópialas una a una para tu herramienta de planificación favorita (Notion, Google Sheets, Trello...)."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Por qué planificar tu contenido en redes",
+      "items": [
+        "Ahorra 2-3 horas semanales de pensar qué publicar cada día",
+        "Mantén una presencia consistente en redes sin estrés ni improvisación",
+        "Aprovecha fechas gastronómicas clave para ganar visibilidad orgánica",
+        "Alterna tipos de contenido para mejorar el engagement y alcance",
+        "Planifica con antelación y delega fácilmente a tu equipo",
+        "Mejora el algoritmo publicando de forma regular y constante"
+      ]
+    },
+    "testimonial": {
+      "quote": "Antes tardaba una tarde entera en pensar qué publicar cada mes. Ahora en 2 minutos tengo el calendario hecho y solo me queda hacer las fotos.",
+      "name": "Laura Sanz",
+      "role": "Community Manager, Gastrobar El Portal, Valencia"
+    },
+    "pricing": {
+      "title": "Crea el contenido completo con AI Chef Pro",
+      "subtitle": "El calendario de ideas es gratuito. Con AI Chef Pro Premium generas los textos completos listos para publicar, con hashtags optimizados para cada red social.",
+      "cta": "Ver Plan Premium",
+      "note": "Sin compromiso · Cancela cuando quieras"
+    },
+    "faq_section": {
+      "title": "Preguntas frecuentes"
+    },
+    "faq": [
+      {
+        "q": "¿Cuántas ideas de contenido genera?",
+        "a": "Genera entre 4 y 30 ideas según la frecuencia que elijas: diaria (30 posts al mes), 3 veces por semana (~13 posts) o semanal (~4 posts). Cada idea incluye tipo de contenido, sugerencia concreta y hashtags."
+      },
+      {
+        "q": "¿Las ideas se adaptan a mi tipo de restaurante?",
+        "a": "El tipo de establecimiento afecta a las sugerencias generadas. Puedes ajustar cualquier idea fácilmente al vocabulario y estilo de tu local específico."
+      },
+      {
+        "q": "¿Incluye fechas especiales del mes?",
+        "a": "Sí. El calendario detecta automáticamente las fechas gastronómicas relevantes del mes (Día Mundial de la Pizza, San Valentín, Halloween, Navidad, etc.) y las marca con ideas de contenido específicas para ese día."
+      },
+      {
+        "q": "¿Puedo exportar el calendario?",
+        "a": "Sí, puedes copiar todo el calendario como texto con un clic, o copiar idea por idea. Así puedes pegarlo en Notion, Google Sheets, Trello o tu herramienta favorita de planificación."
+      },
+      {
+        "q": "¿Funciona para todas las redes sociales?",
+        "a": "El generador crea ideas para Instagram, TikTok, Facebook y Pinterest. Asigna cada idea a la red que hayas seleccionado, rotando entre ellas de forma equilibrada."
+      }
+    ],
+    "cta_section": {
+      "title": "¿Listo para dominar las redes sociales de tu restaurante?",
+      "subtitle": "Genera tu calendario editorial ahora y lleva la presencia digital de tu restaurante al siguiente nivel.",
+      "cta_primary": "Generar mi calendario gratis",
+      "cta_secondary": "Ver todas las herramientas"
     }
   }
 }

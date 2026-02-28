@@ -3149,86 +3149,86 @@
   },
   "toolScore": {
     "seo": {
-      "title": "Free Restaurant Digitalization Test | AI Chef Pro",
-      "description": "Discover your restaurant's digitalization level in 2 minutes. 6 questions, immediate result with personalized action plan. Free, no registration.",
-      "keywords": "restaurant digitalization test, digital level restaurant, hospitality digitalization, digital tools restaurant"
+      "title": "Teste Digitalização Restaurante Grátis | AI Chef Pro",
+      "description": "Descubra em 2 minutos o nível de digitalização do seu restaurante. 6 perguntas, resultado imediato com plano de ação personalizado. Grátis, sem registo.",
+      "keywords": "teste digitalização restaurante, nível digital restaurante, digitalização restauração, ferramentas digitais restaurante"
     },
     "breadcrumb": "Teste de Digitalização",
     "hero": {
-      "badge": "Free — No registration — 2 minutes",
-      "h1": "Restaurant Digitalization Test",
-      "subtitle": "How digitalized is your restaurant? Answer 6 questions and get your digital level with a personalized action plan.",
-      "cta_tool": "Take the test ↓",
-      "cta_premium": "Premium Plan →"
+      "badge": "Grátis — Sem registo — 2 minutos",
+      "h1": "Teste de Digitalização para Restaurantes",
+      "subtitle": "Quão digitalizado está o seu restaurante? Responda a 6 perguntas e obtenha o seu nível digital com um plano de ação personalizado.",
+      "cta_tool": "Fazer o teste ↓",
+      "cta_premium": "Plano Premium →"
     },
     "tool": {
-      "title": "Digitalization Test",
-      "question_label": "Question {n} of {total}",
-      "submit": "See my result",
-      "result_title": "Your digitalization level",
-      "score_label": "Score",
-      "restart": "Retake test",
-      "cta_after": "Ready to make the digital leap with AI?"
+      "title": "Teste de Digitalização",
+      "question_label": "Pergunta {n} de {total}",
+      "submit": "Ver o meu resultado",
+      "result_title": "O seu nível de digitalização",
+      "score_label": "Pontuação",
+      "restart": "Repetir teste",
+      "cta_after": "Pronto para o salto digital com IA?"
     },
     "questions": [
       {
         "id": 1,
-        "text": "Do you have an online booking system?",
+        "text": "Tem um sistema de reservas online?",
         "options": [
-          "No, phone only",
-          "Yes, through third parties (OpenTable, etc.)",
-          "Yes, on our own website",
-          "Yes, website + own app"
+          "Não, apenas por telefone",
+          "Sim, através de terceiros (TheFork, etc.)",
+          "Sim, no nosso próprio website",
+          "Sim, no website + app própria"
         ]
       },
       {
         "id": 2,
-        "text": "How do you manage delivery orders?",
+        "text": "Como gere os pedidos de entrega ao domicílio?",
         "options": [
-          "We don't do delivery",
-          "Platforms only (Deliveroo, Uber Eats...)",
-          "Platforms + own website",
-          "Own system integrated with kitchen"
+          "Não fazemos entregas",
+          "Apenas por plataformas (Glovo, Uber Eats...)",
+          "Plataformas + website próprio",
+          "Sistema próprio integrado com a cozinha"
         ]
       },
       {
         "id": 3,
-        "text": "Do you use management software (POS)?",
+        "text": "Usa algum software de gestão (POS)?",
         "options": [
-          "No, paper/cash register",
-          "Basic POS without reports",
-          "POS with sales reports",
-          "POS integrated with stock, accounting and delivery"
+          "Não, usamos papel/caixa manual",
+          "POS básico sem relatórios",
+          "POS com relatórios de vendas",
+          "POS integrado com stock, contabilidade e entrega"
         ]
       },
       {
         "id": 4,
-        "text": "How do you manage your menu?",
+        "text": "Como gere a sua ementa?",
         "options": [
-          "Printed menu rarely updated",
-          "PDF or image on web/WhatsApp",
-          "Digital menu with updatable QR",
-          "Digital menu + AI suggestions"
+          "Ementa impressa que actualizamos raramente",
+          "PDF ou imagem no website/WhatsApp",
+          "Ementa digital com QR actualizável",
+          "Ementa digital + IA para sugestões"
         ]
       },
       {
         "id": 5,
-        "text": "Do you have social media presence?",
+        "text": "Tem presença nas redes sociais?",
         "options": [
-          "No social media",
-          "Profile created but no regular activity",
-          "Post 1-2 times per week",
-          "Active strategy + digital advertising"
+          "Não temos redes sociais",
+          "Perfil criado mas sem actividade regular",
+          "Publicamos 1-2 vezes por semana",
+          "Estratégia activa + publicidade digital"
         ]
       },
       {
         "id": 6,
-        "text": "Do you use AI tools in your restaurant?",
+        "text": "Usa ferramentas de IA no seu restaurante?",
         "options": [
-          "No, I don't know them",
-          "Tried some but don't use regularly",
-          "Use AI occasionally (ChatGPT, etc.)",
-          "Have an AI suite integrated in my operations"
+          "Não, não as conheço",
+          "Experimentei algumas mas não as uso regularmente",
+          "Uso IA pontualmente (ChatGPT, etc.)",
+          "Tenho uma suite de IA integrada na minha operação"
         ]
       }
     ],
@@ -3238,13 +3238,13 @@
           0,
           25
         ],
-        "level": "Analog",
+        "level": "Analógico",
         "emoji": "📋",
-        "description": "Your restaurant operates traditionally. There's a great differentiation opportunity with simple digitalization steps.",
+        "description": "O seu restaurante funciona de forma tradicional. Há uma grande oportunidade de diferenciação com passos simples de digitalização.",
         "tips": [
-          "Start with a Google Business profile",
-          "Add free QR menu",
-          "Create TheFork or similar profile"
+          "Comece com um perfil Google Business",
+          "Adicione uma ementa QR gratuita",
+          "Crie um perfil no TheFork ou similar"
         ]
       },
       {
@@ -3252,13 +3252,13 @@
           26,
           50
         ],
-        "level": "Basic Digital",
+        "level": "Digital Básico",
         "emoji": "📱",
-        "description": "You've taken first steps. You have digital presence but key tools you haven't leveraged yet.",
+        "description": "Deu os primeiros passos. Tem presença digital mas há ferramentas-chave que ainda não está a aproveitar.",
         "tips": [
-          "Activate online bookings on your website",
-          "Integrate POS with delivery",
-          "Start using AI for content"
+          "Active as reservas online no seu website",
+          "Integre o seu POS com a entrega ao domicílio",
+          "Comece a usar IA para conteúdos"
         ]
       },
       {
@@ -3266,13 +3266,13 @@
           51,
           75
         ],
-        "level": "Advanced Digital",
+        "level": "Digital Avançado",
         "emoji": "🚀",
-        "description": "Your restaurant is well digitalized. You're above the industry average. Now is the time to integrate AI.",
+        "description": "O seu restaurante está bem digitalizado. Está acima da média do sector. Agora é o momento de integrar IA.",
         "tips": [
-          "Automate review responses with AI",
-          "Use AI to optimize pricing and menu",
-          "Centralize all channels in one dashboard"
+          "Automatize as respostas a avaliações com IA",
+          "Use IA para optimizar preços e ementa",
+          "Centralize todos os canais num dashboard"
         ]
       },
       {
@@ -3282,51 +3282,51 @@
         ],
         "level": "Digital Pro",
         "emoji": "⭐",
-        "description": "You're a digitalization reference in the sector. You're using technology to maximize efficiency and profitability.",
+        "description": "É uma referência de digitalização no sector. Está a usar a tecnologia para maximizar eficiência e rentabilidade.",
         "tips": [
-          "Explore predictive AI for stock",
-          "Implement advanced data analytics",
-          "Consider mentoring other restaurants"
+          "Explore IA preditiva para stock",
+          "Implemente análise de dados avançada",
+          "Considere mentoria para outros restaurantes"
         ]
       }
     ],
     "how_it_works": {
-      "title": "How it works",
+      "title": "Como funciona",
       "steps": [
         {
           "step": "1",
-          "title": "Answer 6 questions",
-          "description": "Questions about bookings, delivery, POS, menu, social media and AI. No tricks, no registration."
+          "title": "Responda a 6 perguntas",
+          "description": "Perguntas sobre reservas, entregas, POS, ementa, redes sociais e IA. Sem armadilhas, sem registo."
         },
         {
           "step": "2",
-          "title": "Get your score",
-          "description": "The test calculates your digitalization level: Analog, Basic, Advanced or Pro."
+          "title": "Obtenha a sua pontuação",
+          "description": "O teste calcula o seu nível de digitalização: Analógico, Básico, Avançado ou Pro."
         },
         {
           "step": "3",
-          "title": "Action plan",
-          "description": "You receive 3 concrete recommendations to reach the next level."
+          "title": "Plano de ação",
+          "description": "Recebe 3 recomendações concretas para subir ao nível seguinte."
         }
       ]
     },
     "benefits": {
-      "title": "Why take this test",
+      "title": "Porquê fazer este teste",
       "items": [
-        "Identify exactly where you stand",
-        "Compare yourself with the industry average",
-        "Discover the highest-impact tools",
-        "3-step improvement plan"
+        "Identifique exactamente onde está",
+        "Compare-se com a média do sector",
+        "Descubra as ferramentas de maior impacto",
+        "Plano de melhoria em 3 passos concretos"
       ]
     },
     "testimonial": {
-      "quote": "I thought I was quite digitalized. The test showed me important gaps in delivery management and AI. In 3 months I implemented the recommendations and improved my margin by 8%.",
-      "name": "Miguel Torres",
-      "role": "Owner, Grupo Gastronómico El Puerto, Cádiz"
+      "quote": "Pensava que estava bastante digitalizado. O teste mostrou-me lacunas importantes na gestão de entregas e IA. Em 3 meses implementei as recomendações e melhorei a minha margem em 8%.",
+      "name": "João Ferreira",
+      "role": "Proprietário, Grupo Gastronómico O Solar, Porto"
     },
     "pricing": {
-      "title": "Take your digitalization to the next level with AI Chef Pro",
-      "subtitle": "The test tells you where you are. AI Chef Pro gives you the tools to go further.",
+      "title": "Leve a sua digitalização ao próximo nível com AI Chef Pro",
+      "subtitle": "O teste diz-lhe onde está. AI Chef Pro dá-lhe as ferramentas para ir mais longe.",
       "plans": [
         {
           "name": "Grátis",
@@ -3355,307 +3355,309 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about restaurant digitalization"
+      "title": "Perguntas frequentes sobre digitalização na restauração"
     },
     "faq": [
       {
-        "question": "What does digitalization mean for a restaurant?",
-        "answer": "Digitalization in restaurants is the process of incorporating technology tools to better manage bookings, delivery, POS, customer communication and internal operations. It ranges from a simple QR menu to AI-powered management."
+        "question": "O que significa digitalização num restaurante?",
+        "answer": "A digitalização na restauração é o processo de incorporação de ferramentas tecnológicas para gerir melhor reservas, entregas, POS, comunicação com clientes e operações internas. Vai desde uma simples ementa QR até à gestão com inteligência artificial."
       },
       {
-        "question": "What is the average digitalization level in restaurants?",
-        "answer": "According to industry studies, less than 30% of restaurants have an advanced digitalization level. Most are at basic level, using only isolated tools without integration."
+        "question": "Qual é o nível médio de digitalização dos restaurantes em Portugal?",
+        "answer": "Segundo estudos do sector, menos de 30% dos restaurantes em Portugal têm um nível avançado de digitalização. A maioria está num nível básico, usando apenas ferramentas separadas sem integração."
       },
       {
-        "question": "Why is it important to digitalize my restaurant?",
-        "answer": "Digitalized restaurants have 20-35% more operational efficiency, lower staff turnover and better customer experience. AI also allows significant reduction in food cost and marketing costs."
+        "question": "Porque é importante digitalizar o meu restaurante?",
+        "answer": "Os restaurantes digitalizados têm uma eficiência operacional 20-35% superior, menor rotação de pessoal e melhor experiência do cliente. Além disso, a IA permite reduzir significativamente os custos de food cost e marketing."
       },
       {
-        "question": "How do I start digitalizing my restaurant?",
-        "answer": "The first step is knowing where you are — that's why this test exists. From the result, you can prioritize the highest-impact tools. AI Chef Pro offers a very accessible entry point for AI in gastronomy."
+        "question": "Como posso começar a digitalizar o meu restaurante?",
+        "answer": "O primeiro passo é saber onde está: para isso existe este teste. A partir do resultado, pode priorizar as ferramentas de maior impacto. AI Chef Pro oferece um ponto de entrada muito acessível para a IA na gastronomia."
       }
     ],
     "cta_section": {
-      "title": "Digitalize your restaurant with AI today",
-      "subtitle": "AI Chef Pro is the most complete AI suite for gastronomy: 55+ tools to manage your restaurant with artificial intelligence.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Digitalize o seu restaurante com IA hoje mesmo",
+      "subtitle": "AI Chef Pro é a suite de IA mais completa para gastronomia: 55+ ferramentas para gerir o seu restaurante com inteligência artificial.",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
     }
   },
   "toolAlergenos": {
     "seo": {
-      "title": "Free Restaurant Allergen Checker | AI Chef Pro",
-      "description": "Detect all 14 mandatory allergens in any dish instantly. Enter ingredients and get the allergen declaration. Free, no registration.",
-      "keywords": "allergen checker restaurant, mandatory allergens restaurant, allergen declaration dish, EU regulation 1169 2011"
+      "title": "Detector Alergénios Restaurante Grátis | AI Chef Pro",
+      "description": "Detecte os 14 alergénios de declaração obrigatória em qualquer prato instantaneamente. Introduza os ingredientes e obtenha a ficha de alergénios. Grátis, sem registo.",
+      "keywords": "detector alergénios restaurante, alergénios obrigatórios restaurante, ficha alergénios prato, regulamento 1169 2011"
     },
-    "breadcrumb": "Verificador de Alérgenos",
+    "breadcrumb": "Detector de Alergénios",
     "hero": {
-      "badge": "Free — No registration — Legally required",
-      "h1": "Allergen Checker for Restaurants",
-      "subtitle": "Identify the 14 mandatory declaration allergens (EU Regulation 1169/2011) in any dish instantly. Copy the declaration for your menu.",
-      "cta_tool": "Go to checker ↓",
-      "cta_premium": "Premium Plan →"
+      "badge": "Grátis — Sem registo — Obrigatório por lei",
+      "h1": "Detector de Alergénios para Restaurantes",
+      "subtitle": "Identifique os 14 alergénios de declaração obrigatória (Regulamento UE 1169/2011) em qualquer prato instantaneamente. Copie a ficha para a sua ementa.",
+      "cta_tool": "Ir ao detector ↓",
+      "cta_premium": "Plano Premium →"
     },
     "tool": {
-      "title": "Allergen Checker",
-      "input_label": "Dish ingredients",
-      "input_placeholder": "Type ingredients separated by commas. E.g.: wheat flour, egg, milk, butter, yeast, salt...",
-      "dish_name_label": "Dish name (optional)",
-      "dish_name_placeholder": "E.g.: Spanish omelette",
-      "detect": "Check Allergens",
-      "result_title": "Allergens detected",
-      "allergens_found": "Allergens present",
-      "no_allergens": "✅ No mandatory declaration allergens detected",
-      "warning": "⚠️ Always verify manually — this tool is advisory",
-      "legal_note": "Mandatory declaration under EU Regulation 1169/2011",
-      "copy": "Copy declaration",
-      "copied": "Copied!",
-      "reset": "New analysis",
-      "cta_after": "Want to manage allergens for your entire menu automatically?"
+      "title": "Detector de Alergénios",
+      "input_label": "Ingredientes do prato",
+      "input_placeholder": "Escreva os ingredientes separados por vírgulas. Ex: farinha de trigo, ovo, leite, manteiga, fermento, sal...",
+      "dish_name_label": "Nome do prato (opcional)",
+      "dish_name_placeholder": "Ex: Bacalhau à Brás",
+      "detect": "Detectar Alergénios",
+      "result_title": "Alergénios detectados",
+      "allergens_found": "Alergénios presentes",
+      "no_allergens": "✅ Não foram detectados alergénios de declaração obrigatória",
+      "warning": "⚠️ Verifique sempre manualmente — esta ferramenta é orientativa",
+      "legal_note": "Declaração obrigatória nos termos do Regulamento UE 1169/2011",
+      "copy": "Copiar ficha",
+      "copied": "Copiado!",
+      "reset": "Nova análise",
+      "cta_after": "Quer gerir os alergénios de toda a sua ementa de forma automática?",
+      "allergens_title": "Os 14 alergénios de declaração obrigatória",
+      "allergens_subtitle": "Regulamento (UE) 1169/2011"
     },
     "allergens": [
       {
         "id": "gluten",
-        "name": "Gluten",
+        "name": "Glúten",
         "emoji": "🌾",
-        "description": "Cereals containing gluten: wheat, rye, barley, oats...",
+        "description": "Cereais que contêm glúten: trigo, centeio, cevada, aveia...",
         "keywords": [
-          "wheat",
-          "flour",
-          "bread",
-          "pasta",
-          "beer",
-          "rye",
-          "barley",
-          "oat",
-          "spelt",
-          "semolina",
-          "couscous"
+          "trigo",
+          "farinha",
+          "pão",
+          "massa",
+          "centeio",
+          "cevada",
+          "aveia",
+          "espelta",
+          "sêmola",
+          "cuscuz",
+          "bulgur",
+          "cerveja",
+          "kamut"
         ]
       },
       {
-        "id": "crustaceans",
-        "name": "Crustaceans",
+        "id": "crustaceos",
+        "name": "Crustáceos",
         "emoji": "🦐",
-        "description": "Prawns, shrimp, crab, lobster...",
+        "description": "Camarão, caranguejo, lagosta, lagostim...",
         "keywords": [
-          "prawn",
-          "shrimp",
-          "crab",
-          "lobster",
-          "crayfish",
-          "langoustine"
+          "camarão",
+          "caranguejo",
+          "lagosta",
+          "lagostim",
+          "gambas",
+          "crustáceo"
         ]
       },
       {
-        "id": "eggs",
-        "name": "Eggs",
+        "id": "huevos",
+        "name": "Ovos",
         "emoji": "🥚",
-        "description": "Eggs and egg products",
+        "description": "Ovos e produtos derivados",
         "keywords": [
-          "egg",
-          "yolk",
-          "white",
-          "omelette",
-          "mayonnaise",
-          "meringue",
-          "custard"
+          "ovo",
+          "ovos",
+          "gema",
+          "clara",
+          "maionese",
+          "omeleta",
+          "ovo cozido"
         ]
       },
       {
-        "id": "fish",
-        "name": "Fish",
+        "id": "pescado",
+        "name": "Peixe",
         "emoji": "🐟",
-        "description": "All types of fish and fish products",
+        "description": "Todos os tipos de peixe e derivados",
         "keywords": [
-          "salmon",
-          "tuna",
-          "cod",
-          "sardine",
-          "anchovy",
-          "bass",
-          "bream",
-          "fish"
+          "salmão",
+          "bacalhau",
+          "atum",
+          "truta",
+          "sardinha",
+          "anchova",
+          "peixe",
+          "linguado",
+          "robalo"
         ]
       },
       {
-        "id": "peanuts",
-        "name": "Peanuts",
+        "id": "cacahuetes",
+        "name": "Amendoins",
         "emoji": "🥜",
-        "description": "Peanuts and peanut products",
+        "description": "Amendoins e produtos derivados",
         "keywords": [
-          "peanut",
-          "groundnut",
-          "peanut butter",
-          "peanut oil"
+          "amendoim",
+          "manteiga de amendoim"
         ]
       },
       {
-        "id": "soy",
-        "name": "Soy",
+        "id": "soja",
+        "name": "Soja",
         "emoji": "🫘",
-        "description": "Soy and soy products",
+        "description": "Soja e produtos derivados",
         "keywords": [
-          "soy",
-          "soya",
+          "soja",
+          "molho de soja",
           "tofu",
-          "tempeh",
           "miso",
           "edamame",
-          "soy milk",
-          "soy sauce",
-          "tamari"
+          "leite de soja"
         ]
       },
       {
-        "id": "milk",
-        "name": "Milk",
+        "id": "lacteos",
+        "name": "Leite",
         "emoji": "🥛",
-        "description": "Milk and dairy products",
+        "description": "Leite e produtos lácteos",
         "keywords": [
-          "milk",
-          "cream",
-          "butter",
-          "cheese",
-          "yogurt",
+          "leite",
+          "queijo",
+          "manteiga",
+          "natas",
+          "iogurte",
           "lactose",
-          "whey",
-          "casein"
+          "mozzarella",
+          "parmesão",
+          "requeijão",
+          "nata",
+          "béchamel"
         ]
       },
       {
-        "id": "nuts",
-        "name": "Tree nuts",
+        "id": "frutos_secos",
+        "name": "Frutos de casca rija",
         "emoji": "🌰",
-        "description": "Almonds, hazelnuts, walnuts, cashews, pistachios...",
+        "description": "Amêndoas, avelãs, nozes, cajus, pistácios...",
         "keywords": [
-          "almond",
-          "hazelnut",
-          "walnut",
-          "cashew",
-          "pistachio",
-          "macadamia",
-          "pecan",
-          "brazil nut"
+          "amêndoa",
+          "avelã",
+          "noz",
+          "caju",
+          "pistácio",
+          "macadâmia",
+          "nozes",
+          "frutos secos"
         ]
       },
       {
-        "id": "celery",
-        "name": "Celery",
-        "emoji": "🥬",
-        "description": "Celery and celery products",
-        "keywords": [
-          "celery",
-          "celeriac",
-          "celery salt",
-          "celery extract"
-        ]
-      },
-      {
-        "id": "mustard",
-        "name": "Mustard",
+        "id": "apio",
+        "name": "Aipo",
         "emoji": "🌿",
-        "description": "Mustard and mustard products",
+        "description": "Aipo e produtos derivados",
         "keywords": [
-          "mustard",
-          "mustard seed",
-          "mustard powder",
-          "mustard oil"
+          "aipo",
+          "aipo-rábano",
+          "sal de aipo"
         ]
       },
       {
-        "id": "sesame",
-        "name": "Sesame",
+        "id": "mostaza",
+        "name": "Mostarda",
+        "emoji": "🌻",
+        "description": "Mostarda e produtos derivados",
+        "keywords": [
+          "mostarda",
+          "sementes de mostarda",
+          "molho de mostarda"
+        ]
+      },
+      {
+        "id": "sesamo",
+        "name": "Sésamo",
         "emoji": "🌱",
-        "description": "Sesame seeds and sesame products",
+        "description": "Sementes de sésamo e produtos derivados",
         "keywords": [
-          "sesame",
+          "sésamo",
+          "sementes de sésamo",
+          "óleo de sésamo",
           "tahini",
-          "sesame oil",
-          "sesame seed"
+          "tahin",
+          "húmus"
         ]
       },
       {
-        "id": "sulphites",
-        "name": "Sulphur dioxide and sulphites",
+        "id": "sulfitos",
+        "name": "Dióxido de enxofre e sulfitos",
         "emoji": "🍷",
-        "description": "Concentration above 10 mg/kg or 10 mg/litre",
+        "description": "Concentração superior a 10 mg/kg ou 10 mg/litro",
         "keywords": [
-          "wine",
-          "beer",
-          "dried fruit",
-          "vinegar",
-          "juice",
-          "SO2",
-          "sulphite",
-          "bisulphite"
+          "vinho",
+          "vinagre",
+          "frutos secos",
+          "uvas passas",
+          "damascos secos",
+          "sulfitos",
+          "dióxido de enxofre"
         ]
       },
       {
-        "id": "lupin",
-        "name": "Lupin",
-        "emoji": "🌼",
-        "description": "Lupin and lupin products",
+        "id": "altramuces",
+        "name": "Tremoços",
+        "emoji": "🌾",
+        "description": "Tremoços e produtos derivados",
         "keywords": [
-          "lupin",
-          "lupine",
-          "lupin flour",
-          "lupin protein"
+          "tremoço",
+          "farinha de tremoço",
+          "sementes de tremoço"
         ]
       },
       {
-        "id": "molluscs",
-        "name": "Molluscs",
-        "emoji": "🐚",
-        "description": "Mussels, clams, oysters, octopus, squid...",
+        "id": "moluscos",
+        "name": "Moluscos",
+        "emoji": "🦑",
+        "description": "Mexilhão, ostra, caracol, polvo, lula...",
         "keywords": [
-          "mussel",
-          "clam",
-          "oyster",
-          "octopus",
-          "squid",
-          "cuttlefish",
-          "scallop"
+          "mexilhão",
+          "ostra",
+          "caracol",
+          "polvo",
+          "lula",
+          "choco",
+          "amêijoa",
+          "molusco"
         ]
       }
     ],
     "how_it_works": {
-      "title": "How it works",
+      "title": "Como funciona",
       "steps": [
         {
           "step": "1",
-          "title": "Enter ingredients",
-          "description": "Enter all dish ingredients separated by commas, exactly as you purchase them."
+          "title": "Escreva os ingredientes",
+          "description": "Introduza todos os ingredientes do seu prato separados por vírgulas, tal como os compra."
         },
         {
           "step": "2",
-          "title": "Automatic detection",
-          "description": "The checker identifies which allergens from EU Regulation 1169/2011 are present."
+          "title": "Detecção automática",
+          "description": "O detector identifica quais os alergénios do Regulamento UE 1169/2011 presentes nos ingredientes."
         },
         {
           "step": "3",
-          "title": "Copy the declaration",
-          "description": "Get the allergen declaration ready to add to your menu, website or management system."
+          "title": "Copie a ficha",
+          "description": "Obtenha a ficha de alergénios pronta para adicionar à sua ementa, website ou sistema de gestão."
         }
       ]
     },
     "benefits": {
-      "title": "Why use the allergen checker",
+      "title": "Porquê usar o detector de alergénios",
       "items": [
-        "Comply with EU Regulation 1169/2011 (mandatory)",
-        "Protect customers with allergies",
-        "Avoid fines up to €600,000",
-        "Declaration ready for your digital menu"
+        "Cumpra o Regulamento UE 1169/2011 (obrigatório)",
+        "Proteja os seus clientes com alergias",
+        "Evite coimas de até 600.000 €",
+        "Ficha pronta para incluir na sua ementa digital"
       ]
     },
     "testimonial": {
-      "quote": "After an inspection, the inspector told me our allergen declaration was exemplary. We use this tool to check every dish before adding it to the menu.",
-      "name": "Marta Sánchez",
-      "role": "Chef-Owner, Restaurante La Huerta, Murcia"
+      "quote": "Após uma inspecção, o inspector disse-me que a nossa declaração de alergénios era exemplar. Usamos esta ferramenta para verificar cada prato antes de o adicionar à ementa.",
+      "name": "Ana Sousa",
+      "role": "Chef Proprietária, Restaurante Quinta das Flores, Lisboa"
     },
     "pricing": {
-      "title": "Complete allergen management with AI Chef Pro",
-      "subtitle": "The basic checker is free. With AI Chef Pro you manage allergens for your entire menu with automatic alerts.",
+      "title": "Gestão completa de alergénios com AI Chef Pro",
+      "subtitle": "O detector básico é gratuito. Com AI Chef Pro gere os alergénios de toda a sua ementa com alertas automáticos.",
       "plans": [
         {
           "name": "Grátis",
@@ -3684,124 +3686,124 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about restaurant allergens"
+      "title": "Perguntas frequentes sobre alergénios na restauração"
     },
     "faq": [
       {
-        "question": "What does the law say about allergens in restaurants?",
-        "answer": "EU Regulation 1169/2011 requires all restaurants, bars and catering establishments to inform about the 14 mandatory allergens in all their dishes. Non-compliance can result in fines between €3,000 and €600,000 depending on severity."
+        "question": "O que diz a lei sobre alergénios nos restaurantes?",
+        "answer": "O Regulamento UE 1169/2011 obriga todos os restaurantes, bares e estabelecimentos de restauração a informar sobre os 14 alergénios de declaração obrigatória em todos os seus pratos. O incumprimento pode acarretar coimas entre 3.000 € e 600.000 € conforme a gravidade."
       },
       {
-        "question": "What are the 14 mandatory declaration allergens?",
-        "answer": "Gluten, crustaceans, eggs, fish, peanuts, soy, milk, tree nuts (almonds, walnuts, hazelnuts...), celery, mustard, sesame, sulphur dioxide and sulphites, lupin and molluscs."
+        "question": "Quais são os 14 alergénios de declaração obrigatória?",
+        "answer": "Glúten, crustáceos, ovos, peixe, amendoins, soja, leite, frutos de casca rija (amêndoas, nozes, avelãs...), aipo, mostarda, sésamo, dióxido de enxofre e sulfitos, tremoços e moluscos."
       },
       {
-        "question": "Is a generic 'may contain traces' warning sufficient?",
-        "answer": "No. The law requires specific information per dish. A generic warning is not sufficient and can be penalized. You must be able to inform customers which allergens each specific dish contains."
+        "question": "É suficiente um aviso genérico 'pode conter vestígios'?",
+        "answer": "Não. A lei exige informação específica por prato. Um aviso genérico não é suficiente e pode ser sancionado. Deve poder informar o cliente sobre quais os alergénios que cada prato concreto contém."
       },
       {
-        "question": "Is this tool 100% legally reliable?",
-        "answer": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
+        "question": "Esta ferramenta é 100% fiável do ponto de vista legal?",
+        "answer": "Esta ferramenta é orientativa e de apoio. A responsabilidade legal recai sempre sobre o estabelecimento. Deve verificar manualmente os ingredientes e possíveis contaminações cruzadas. Para uma gestão completa e auditada, use AI Chef Pro Premium."
       }
     ],
     "cta_section": {
-      "title": "Manage allergens for your entire menu with AI",
-      "subtitle": "With AI Chef Pro you manage allergens for each dish automatically, with alerts when you change ingredients and exportable declaration for your menu.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Gira os alergénios de toda a sua ementa com IA",
+      "subtitle": "Com AI Chef Pro gere os alergénios de cada prato automaticamente, com alertas quando muda ingredientes e ficha exportável para a sua ementa.",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
     }
   },
   "toolBrigada": {
     "seo": {
-      "title": "Free Kitchen Brigade Calculator | AI Chef Pro",
-      "description": "Calculate how many kitchen and front-of-house staff you need based on your service volume. Free, no registration. Based on real hospitality standards.",
-      "keywords": "kitchen brigade calculator, how many chefs do I need, restaurant staff, kitchen brigade"
+      "title": "Calculadora Brigada Cozinha Grátis | AI Chef Pro",
+      "description": "Calcule quantos funcionários precisa na cozinha e na sala segundo o seu volume de serviço. Grátis, sem registo. Baseado em padrões reais da restauração.",
+      "keywords": "calculadora brigada cozinha, quantos cozinheiros preciso, pessoal restaurante, brigada restauração"
     },
     "breadcrumb": "Calculadora de Brigada",
     "hero": {
-      "badge": "Free — No registration",
-      "h1": "Kitchen Brigade Calculator",
-      "subtitle": "Find out how many chefs and waiters you need based on your covers, shifts and service type. Based on real industry ratios.",
-      "cta_tool": "Go to calculator ↓",
-      "cta_premium": "Premium Plan →"
+      "badge": "Grátis — Sem registo",
+      "h1": "Calculadora de Brigada de Cozinha",
+      "subtitle": "Descubra quantos cozinheiros e empregados de mesa precisa segundo os seus talheres, turnos e tipo de serviço. Baseado em rácios reais do sector.",
+      "cta_tool": "Ir à calculadora ↓",
+      "cta_premium": "Plano Premium →"
     },
     "tool": {
-      "title": "Brigade Calculator",
-      "covers_label": "Covers per service",
-      "covers_hint": "Maximum number of covers in one service (lunch or dinner)",
-      "service_type_label": "Service type",
+      "title": "Calculadora de Brigada",
+      "covers_label": "Talheres por serviço",
+      "covers_hint": "Número máximo de talheres num serviço (almoço ou jantar)",
+      "service_type_label": "Tipo de serviço",
       "service_types": [
-        "À la carte (high complexity)",
-        "Set menu / Bistro",
+        "À la carte (alta complexidade)",
+        "Menu do dia / Bistrô",
         "Buffet / Self-service",
-        "Catering / Banquets"
+        "Catering / Banquetes"
       ],
-      "services_per_day_label": "Services per day",
+      "services_per_day_label": "Serviços por dia",
       "services_options": [
-        "1 service (lunch or dinner only)",
-        "2 services (lunch + dinner)",
-        "3 services (breakfast + lunch + dinner)"
+        "1 serviço (só almoço ou jantar)",
+        "2 serviços (almoço + jantar)",
+        "3 serviços (pequeno-almoço + almoço + jantar)"
       ],
-      "has_delivery_label": "Do you do delivery?",
-      "delivery_volume_label": "Delivery orders/day",
-      "calculate": "Calculate Brigade",
-      "result_title": "Your recommended brigade",
-      "kitchen_title": "👨‍🍳 Kitchen",
-      "sala_title": "🍽️ Front of House",
-      "head_chef": "Head Chef",
+      "has_delivery_label": "Faz entregas ao domicílio?",
+      "delivery_volume_label": "Pedidos de entrega/dia",
+      "calculate": "Calcular Brigada",
+      "result_title": "A sua brigada recomendada",
+      "kitchen_title": "👨‍🍳 Cozinha",
+      "sala_title": "🍽️ Sala",
+      "head_chef": "Chefe de Cozinha",
       "sous_chef": "Sous Chef",
-      "chef_partida": "Section Chef",
-      "cocinero": "Cook",
-      "ayudante": "Kitchen Assistant",
-      "kitchen_porter": "Kitchen Porter / Dishwasher",
-      "maitre": "Maître d' / Head Waiter",
-      "jefe_rango": "Station Head Waiter",
-      "camarero": "Waiter",
-      "ayudante_sala": "Busser / FOH Assistant",
-      "total_kitchen": "Total kitchen",
-      "total_sala": "Total FOH",
-      "total_staff": "Total staff",
-      "ratio_label": "Covers per waiter ratio",
-      "reset": "New calculation",
-      "cta_after": "Want to optimize your restaurant's staff costs?"
+      "chef_partida": "Chefe de Partida",
+      "cocinero": "Cozinheiro",
+      "ayudante": "Ajudante de Cozinha",
+      "kitchen_porter": "Lavador / Office",
+      "maitre": "Maître / Chefe de Sala",
+      "jefe_rango": "Chefe de Rango",
+      "camarero": "Empregado de Mesa",
+      "ayudante_sala": "Ajudante de Sala",
+      "total_kitchen": "Total cozinha",
+      "total_sala": "Total sala",
+      "total_staff": "Total de pessoal",
+      "ratio_label": "Rácio talheres/empregado de mesa",
+      "reset": "Novo cálculo",
+      "cta_after": "Quer optimizar o custo de pessoal do seu restaurante?"
     },
     "how_it_works": {
-      "title": "How it works",
+      "title": "Como funciona",
       "steps": [
         {
           "step": "1",
-          "title": "Enter your volume",
-          "description": "Number of covers per service, type of service and how many services you do per day."
+          "title": "Indique o seu volume",
+          "description": "Número de talheres por serviço, tipo de serviço e quantos serviços faz por dia."
         },
         {
           "step": "2",
-          "title": "Industry standard calculation",
-          "description": "The calculator applies real hospitality sector ratios for each service type."
+          "title": "Cálculo segundo padrões",
+          "description": "A calculadora aplica os rácios reais do sector da restauração para cada tipo de serviço."
         },
         {
           "step": "3",
-          "title": "Recommended brigade",
-          "description": "You get the breakdown of kitchen and FOH positions with the minimum recommended number for each role."
+          "title": "Brigada recomendada",
+          "description": "Obtém a descrição dos postos na cozinha e sala com o número mínimo recomendado para cada função."
         }
       ]
     },
     "benefits": {
-      "title": "Why calculate your brigade",
+      "title": "Porquê calcular a sua brigada",
       "items": [
-        "Avoid overstaffing (unnecessary cost)",
-        "Avoid understaffing (poor service)",
-        "Know the standard ratio for your restaurant type",
-        "Objective basis for team negotiations"
+        "Evite sobredimensionar o pessoal (custo desnecessário)",
+        "Evite subdimensioná-lo (serviço deficiente)",
+        "Conheça os rácios padrão para o seu tipo de restaurante",
+        "Base objectiva para negociações com a sua equipa"
       ]
     },
     "testimonial": {
-      "quote": "I had 4 chefs for 60 covers with a set menu. The calculator showed me 3 well-organized was enough. I saved €1,800/month in wages.",
-      "name": "José Luis Martín",
-      "role": "Owner, Restaurante El Mirador, Toledo"
+      "quote": "Tinha 4 cozinheiros para 60 talheres com menu do dia. A calculadora mostrou-me que com 3 bem organizados era suficiente. Pousei 1.800 €/mês em salários.",
+      "name": "Carlos Silva",
+      "role": "Proprietário, Restaurante O Miradouro, Coimbra"
     },
     "pricing": {
-      "title": "Optimize your team with AI Chef Pro",
-      "subtitle": "The basic calculator is free. With AI Chef Pro you optimize shifts, staff costs and your brigade's productivity.",
+      "title": "Optimize a sua equipa com AI Chef Pro",
+      "subtitle": "A calculadora básica é gratuita. Com AI Chef Pro optimiza turnos, custos de pessoal e produtividade da sua brigada.",
       "plans": [
         {
           "name": "Grátis",
@@ -3830,31 +3832,233 @@
       ]
     },
     "faq_section": {
-      "title": "Frequently asked questions about kitchen brigade"
+      "title": "Perguntas frequentes sobre brigada de cozinha"
     },
     "faq": [
       {
-        "question": "How many chefs do I need for 50 covers?",
-        "answer": "It depends on service type. For à la carte (high complexity) you need about 4-5 chefs for 50 covers. For a set menu, 2-3 well-organized chefs may be enough. The calculator applies these ratios based on your service type."
+        "question": "Quantos cozinheiros preciso para 50 talheres?",
+        "answer": "Depende do tipo de serviço. Para à la carte (alta complexidade) precisa de cerca de 4-5 cozinheiros para 50 talheres. Para menu do dia, com 2-3 cozinheiros bem organizados pode ser suficiente."
       },
       {
-        "question": "What is the standard waiter-to-cover ratio?",
-        "answer": "The industry standard is 1 waiter per 10-15 covers for à la carte restaurants, and 1 per 15-20 for set menu or bistro. For fine dining it can drop to 1 per 6-8 covers."
+        "question": "Qual é o rácio padrão de empregados de mesa por talher?",
+        "answer": "O padrão do sector é 1 empregado por cada 10-15 talheres num restaurante à la carte, e 1 por cada 15-20 no menu do dia ou bistrô. Para fine dining pode baixar para 1 por cada 6-8 talheres."
       },
       {
-        "question": "What is a kitchen brigade?",
-        "answer": "The kitchen brigade is the hierarchically organized team working in a professional kitchen. It was systematized by Auguste Escoffier. It includes roles such as Head Chef, Sous Chef, Section Chefs, Cooks and Assistants."
+        "question": "O que é uma brigada de cozinha?",
+        "answer": "A brigada de cozinha é a equipa organizada hierarquicamente que trabalha numa cozinha profissional. Foi sistematizada por Auguste Escoffier. Inclui funções como Chefe de Cozinha, Sous Chef, Chefes de Partida, Cozinheiros e Ajudantes."
       },
       {
-        "question": "How do I reduce staff costs without lowering quality?",
-        "answer": "The key is organization: versatile brigades, efficient mise en place, good shift management and AI tools to optimize operations. AI Chef Pro helps you identify bottlenecks in your team."
+        "question": "Como reduzo os custos de pessoal sem baixar a qualidade?",
+        "answer": "A chave está na organização: brigadas polivalentes, mise en place eficiente, boa gestão de turnos e uso de ferramentas de IA para optimizar a operação. AI Chef Pro ajuda-o a identificar os estrangulamentos na sua equipa."
       }
     ],
     "cta_section": {
-      "title": "Optimize your team management with AI",
-      "subtitle": "AI Chef Pro helps you manage shifts, calculate staff costs and optimize your brigade's productivity.",
-      "primary": "Try AI Chef Pro for free",
-      "secondary": "See all plans"
+      "title": "Optimize a gestão da sua equipa com IA",
+      "subtitle": "AI Chef Pro ajuda-o a gerir turnos, calcular custos de pessoal e optimizar a produtividade da sua brigada.",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
+    }
+  },
+  "toolCalendario": {
+    "seo": {
+      "title": "Calendário de Conteúdo Restaurante Grátis | AI Chef Pro",
+      "description": "Gere um calendário editorial de 30 dias para o seu restaurante gratuitamente. Ideias de posts para Instagram, TikTok e Facebook adaptadas ao seu negócio. Sem registo.",
+      "keywords": "calendário conteúdo restaurante, ideias posts restaurante, marketing redes sociais restauração, calendário editorial grátis"
+    },
+    "breadcrumb": "Calendário de Conteúdo",
+    "breadcrumb_hub": "Ferramentas Gratuitas",
+    "hero": {
+      "badge": "Grátis — Sem registo",
+      "h1": "Calendário de Conteúdo para o Seu Restaurante",
+      "subtitle": "Gere 30 dias de ideias de publicações para Instagram, TikTok e Facebook, adaptadas ao seu tipo de estabelecimento. Sem API, sem registo, sem custo.",
+      "cta_tool": "Gerar o meu calendário",
+      "cta_premium": "Plano Premium →"
+    },
+    "tool": {
+      "title": "Gerador de Calendário Editorial",
+      "venue_type_label": "Tipo de estabelecimento",
+      "venue_types": [
+        "Restaurante tradicional",
+        "Gastropub",
+        "Pastelaria / Café",
+        "Pizzaria",
+        "Food Truck",
+        "Catering / Banquetes",
+        "Bar de tapas"
+      ],
+      "month_label": "Mês a planear",
+      "months": [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro"
+      ],
+      "frequency_label": "Frequência de publicação",
+      "frequencies": [
+        "Diária (30 posts/mês)",
+        "3 vezes/semana (~13 posts)",
+        "Semanal (~4 posts)"
+      ],
+      "networks_label": "Redes sociais ativas (escolha as suas)",
+      "networks": [
+        "Instagram",
+        "TikTok",
+        "Facebook",
+        "Pinterest"
+      ],
+      "generate": "Gerar Calendário",
+      "result_title": "O seu calendário editorial",
+      "posts_label": "publicações",
+      "copy_all": "Copiar tudo",
+      "copy_entry": "Copiar esta entrada",
+      "copied": "Copiado",
+      "reset": "Novo calendário",
+      "cta_after": "Quer gerar os textos completos de cada post com IA?",
+      "content_types": [
+        {
+          "emoji": "📸",
+          "name": "Prato destaque"
+        },
+        {
+          "emoji": "👨‍🍳",
+          "name": "Bastidores"
+        },
+        {
+          "emoji": "💡",
+          "name": "Dica culinária"
+        },
+        {
+          "emoji": "👥",
+          "name": "Equipa"
+        },
+        {
+          "emoji": "🌿",
+          "name": "Produto da época"
+        },
+        {
+          "emoji": "💬",
+          "name": "Pergunta de engagement"
+        },
+        {
+          "emoji": "🎯",
+          "name": "Oferta especial"
+        },
+        {
+          "emoji": "⭐",
+          "name": "Avaliação de cliente"
+        },
+        {
+          "emoji": "📖",
+          "name": "Storytelling"
+        },
+        {
+          "emoji": "🔥",
+          "name": "Tendência do setor"
+        }
+      ],
+      "ideas": [
+        "Partilhe uma foto do seu prato mais pedido esta semana e explique o que o torna especial",
+        "Mostre o processo de preparação de um prato: do ingrediente ao empatamento final",
+        "Dica do chef: um truque de cozinha que usa diariamente e que vai surpreender os seus seguidores",
+        "Apresente um membro da equipa e a sua história na hotelaria",
+        "Destaque o produto da época desta semana — de onde vem e como o usa",
+        "Faça uma pergunta aos seus seguidores: qual é o seu prato favorito da carta?",
+        "Partilhe uma oferta especial ou menu disponível esta semana",
+        "Repartilhe uma avaliação positiva recente de um cliente (do Google ou TripAdvisor)",
+        "Conte a história por trás de um dos seus pratos signature: inspiração e evolução",
+        "Partilhe uma tendência gastronómica do setor que aplica ou quer experimentar",
+        "Reel ou vídeo curto: preparação de um prato do início ao fim em 30 segundos",
+        "Mostre o ambiente do seu local: a sala pronta para o serviço ou uma noite animada",
+        "Post sazonal: um prato especial disponível apenas agora. Crie urgência",
+        "Carrossel de 5 ingredientes-chave que usa cada semana e porquê",
+        "Reflexão do chef sobre uma técnica, ingrediente ou filosofia culinária",
+        "Mostre o mise en place antes do serviço: a organização é parte da arte",
+        "Partilhe uma curiosidade sobre um ingrediente que usa regularmente",
+        "Convide os seus seguidores a reservar mesa para o fim de semana. Inclua link na bio",
+        "Foto da equipa após um serviço particularmente bem-sucedido. Humanize a sua marca",
+        "Destaque o seu compromisso com a sustentabilidade: fornecedor local, produto km0 ou zero desperdício"
+      ]
+    },
+    "how_it_works": {
+      "title": "Como funciona",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Configure o seu restaurante",
+          "description": "Selecione o tipo de estabelecimento, as redes onde publica, o mês a planear e a sua frequência de publicação."
+        },
+        {
+          "number": "2",
+          "title": "Gere o calendário",
+          "description": "A ferramenta cria ideias variadas para cada dia de publicação, incluindo datas gastronómicas importantes do mês selecionado."
+        },
+        {
+          "number": "3",
+          "title": "Copie e planeie",
+          "description": "Exporte as ideias ou copie-as uma a uma para a sua ferramenta de planeamento favorita (Notion, Google Sheets, Trello...)."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Porquê planear o seu conteúdo nas redes sociais",
+      "items": [
+        "Poupe 2-3 horas por semana a pensar o que publicar",
+        "Mantenha uma presença constante nas redes sem stress",
+        "Aproveite datas gastronómicas chave para ganhar visibilidade orgânica",
+        "Alterne tipos de conteúdo para melhorar o engagement",
+        "Planeie com antecedência e delegue facilmente à sua equipa",
+        "Melhore o algoritmo publicando de forma regular e constante"
+      ]
+    },
+    "testimonial": {
+      "quote": "Antes demorava uma tarde inteira a pensar o que publicar cada mês. Agora em 2 minutos tenho o calendário pronto e só preciso de tirar as fotos.",
+      "name": "Laura Sanz",
+      "role": "Community Manager, Gastropub El Portal"
+    },
+    "pricing": {
+      "title": "Crie conteúdo completo com AI Chef Pro",
+      "subtitle": "O calendário de ideias é gratuito. Com AI Chef Pro Premium gera textos completos prontos para publicar, com hashtags otimizados para cada rede.",
+      "cta": "Ver Plano Premium",
+      "note": "Sem compromisso · Cancele quando quiser"
+    },
+    "faq_section": {
+      "title": "Perguntas frequentes"
+    },
+    "faq": [
+      {
+        "q": "Quantas ideias gera?",
+        "a": "Gera entre 4 e 30 ideias conforme a frequência escolhida: diária (30 posts/mês), 3 vezes por semana (~13 posts) ou semanal (~4 posts). Cada ideia inclui tipo de conteúdo, sugestão concreta e hashtags."
+      },
+      {
+        "q": "As ideias adaptam-se ao meu tipo de estabelecimento?",
+        "a": "O tipo de estabelecimento influencia as sugestões geradas. Pode facilmente adaptar cada ideia ao vocabulário e estilo do seu restaurante."
+      },
+      {
+        "q": "Inclui datas especiais do mês?",
+        "a": "Sim. O calendário deteta automaticamente datas gastronómicas relevantes do mês e destaca-as com ideias de conteúdo específicas."
+      },
+      {
+        "q": "Posso exportar o calendário?",
+        "a": "Sim, pode copiar todo o calendário como texto com um clique, ou copiar as ideias uma a uma para o Notion, Google Sheets ou Trello."
+      },
+      {
+        "q": "Funciona para todas as redes sociais?",
+        "a": "O gerador cria ideias para Instagram, TikTok, Facebook e Pinterest, atribuindo cada ideia a uma das redes que selecionou."
+      }
+    ],
+    "cta_section": {
+      "title": "Pronto para dominar as redes sociais do seu restaurante?",
+      "subtitle": "Gere o seu calendário editorial agora e leve a presença digital do seu restaurante ao próximo nível.",
+      "cta_primary": "Gerar o meu calendário grátis",
+      "cta_secondary": "Ver todas as ferramentas"
     }
   }
 }
