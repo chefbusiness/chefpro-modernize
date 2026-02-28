@@ -3795,5 +3795,71 @@
       "cta_primary": "Générer mon calendrier gratuit",
       "cta_secondary": "Voir tous les outils"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Générateur Textes Carte Restaurant Gratuit | AI Chef Pro",
+      "description": "Générez 3 descriptions de plats pour votre carte : classique, émotionnelle et km0. Gratuit, sans inscription. Améliorez votre carte et attirez plus de clients.",
+      "keywords": "générateur textes carte restaurant, description plats restaurant, rédaction menu gastronomique gratuit"
+    },
+    "hero": {
+      "badge": "Gratuit — Sans inscription",
+      "h1": "Générateur de Textes pour votre Carte",
+      "subtitle": "Entrez le nom du plat et les ingrédients pour obtenir 3 descriptions prêtes pour votre carte : classique, émotionnelle et km0/local. Sans API, sans inscription.",
+      "cta_tool": "Générer les textes de ma carte",
+      "cta_premium": "Plan Premium →"
+    },
+    "tool": {
+      "title": "Générateur de Textes pour Carte",
+      "breadcrumb": "Générateur Textes Carte",
+      "breadcrumb_hub": "Outils Gratuits",
+      "faq_title": "Questions fréquentes",
+      "nombre_label": "Nom actuel du plat",
+      "nombre_placeholder": "Ex : Croquettes au jambon",
+      "ingredientes_label": "Ingrédients principaux",
+      "ingredientes_placeholder": "Ex : jambon ibérique, béchamel, chapelure",
+      "ingredientes_hint": "Séparez les ingrédients par des virgules",
+      "estilo_label": "Style du restaurant",
+      "estilos": ["Traditionnel", "Avant-garde", "Informel", "Gastronomique", "Familial"],
+      "idioma_label": "Langue de la carte",
+      "idiomas": ["Espagnol", "Anglais", "Catalan", "Basque"],
+      "precio_label": "Prix du plat (optionnel)",
+      "generating": "Création des descriptions…",
+      "generate_btn": "Générer les textes de ma carte",
+      "catalan_note": "Le texte est généré en espagnol. Vous pouvez l'adapter au catalan ou au basque manuellement.",
+      "result_labels": {
+        "title": "Descriptions pour votre carte",
+        "reset": "Nouveau plat",
+        "clasica": "Classique",
+        "emocional": "Émotionnelle",
+        "km0": "Local / Km0",
+        "nombre_alt": "Nom alternatif suggéré",
+        "copy": "Copier",
+        "copied": "Copié !",
+        "cta_title": "Vous souhaitez générer toute votre carte optimisée pour le SEO local ?",
+        "cta_subtitle": "Découvrez Menu Plate Local SEO dans AI Chef Pro",
+        "cta_btn": "Voir toutes les fonctionnalités →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Comment fonctionne le générateur de textes pour carte ?",
+        "a": "Entrez le nom du plat et ses ingrédients principaux, choisissez le style de votre restaurant et la langue de la carte. Le générateur crée automatiquement 3 versions : classique (formelle et élégante), émotionnelle (sensorielle et évocatrice) et km0/local (mettant en avant l'origine). Il suggère aussi un nom alternatif plus attrayant."
+      },
+      {
+        "q": "Puis-je utiliser ces textes directement dans ma carte ?",
+        "a": "Oui. Les textes générés sont un point de départ solide que vous pouvez utiliser tels quels ou personnaliser selon votre identité de marque. Ils sont conçus pour être directement utilisables sur des menus imprimés, des cartes digitales ou des sites web de restaurant."
+      },
+      {
+        "q": "Pourquoi les descriptions de plats sont-elles si importantes ?",
+        "a": "Une bonne description de carte peut augmenter le ticket moyen de 5 à 15 %. Les convives qui lisent des descriptions évocatrices sont plus enclins à commander ce plat et perçoivent une plus grande valeur dans leur expérience."
+      }
+    ],
+    "cta_section": {
+      "title": "Prêt à améliorer la carte de votre restaurant ?",
+      "subtitle": "Générez des textes professionnels pour chaque plat et élevez la perception de votre restaurant.",
+      "cta_primary": "Générer des textes gratuitement",
+      "cta_secondary": "Voir tous les outils"
+    }
   }
 }

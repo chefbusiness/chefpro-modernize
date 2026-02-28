@@ -4090,5 +4090,71 @@
       "cta_primary": "Kostenlosen Kalender erstellen",
       "cta_secondary": "Alle Tools ansehen"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Kostenloser Speisekarten-Text-Generator | AI Chef Pro",
+      "description": "Generieren Sie 3 Beschreibungen für jedes Gericht: klassisch, emotional und km0/lokal. Kostenlos, ohne Anmeldung. Verbessern Sie Ihre Speisekarte.",
+      "keywords": "Speisekarten Text Generator, Gerichtsbeschreibung Restaurant, Menütext erstellen kostenlos"
+    },
+    "hero": {
+      "badge": "Kostenlos — Ohne Anmeldung",
+      "h1": "Speisekarten-Text-Generator",
+      "subtitle": "Geben Sie Gerichtsname und Zutaten ein und erhalten Sie 3 fertige Beschreibungen: klassisch, emotional und km0/lokal. Ohne API, ohne Registrierung.",
+      "cta_tool": "Speisekartentexte generieren",
+      "cta_premium": "Premium-Plan →"
+    },
+    "tool": {
+      "title": "Speisekarten-Text-Generator",
+      "breadcrumb": "Speisekarten-Text-Generator",
+      "breadcrumb_hub": "Kostenlose Tools",
+      "faq_title": "Häufig gestellte Fragen",
+      "nombre_label": "Aktueller Gerichtsname",
+      "nombre_placeholder": "z.B.: Jamón-Kroketten",
+      "ingredientes_label": "Hauptzutaten",
+      "ingredientes_placeholder": "z.B.: Ibérico-Schinken, Béchamel, Semmelbrösel",
+      "ingredientes_hint": "Zutaten durch Kommas trennen",
+      "estilo_label": "Restaurant-Stil",
+      "estilos": ["Traditionell", "Avantgarde", "Lässig", "Gourmet", "Familiär"],
+      "idioma_label": "Sprache der Speisekarte",
+      "idiomas": ["Spanisch", "Englisch", "Katalanisch", "Baskisch"],
+      "precio_label": "Gerichtspreis (optional)",
+      "generating": "Beschreibungen werden erstellt…",
+      "generate_btn": "Speisekartentexte generieren",
+      "catalan_note": "Der Text wird auf Spanisch generiert. Sie können ihn manuell ins Katalanische oder Baskische übersetzen.",
+      "result_labels": {
+        "title": "Beschreibungen für Ihre Speisekarte",
+        "reset": "Neues Gericht",
+        "clasica": "Klassisch",
+        "emocional": "Emotional",
+        "km0": "Lokal / Km0",
+        "nombre_alt": "Vorgeschlagener alternativer Name",
+        "copy": "Kopieren",
+        "copied": "Kopiert!",
+        "cta_title": "Möchten Sie Ihre gesamte Speisekarte für lokales SEO optimieren?",
+        "cta_subtitle": "Entdecken Sie Menu Plate Local SEO in AI Chef Pro",
+        "cta_btn": "Alle Funktionen ansehen →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Wie funktioniert der Speisekarten-Text-Generator?",
+        "a": "Geben Sie den Gerichtsnamen und die Hauptzutaten ein, wählen Sie den Restaurantstil und die Sprache der Speisekarte. Der Generator erstellt automatisch 3 Beschreibungsversionen: klassisch (formal und elegant), emotional (sinnlich und evokativ) und km0/lokal (Herkunft hervorhebend). Er schlägt auch einen attraktiveren alternativen Namen vor."
+      },
+      {
+        "q": "Kann ich diese Texte direkt auf meiner Speisekarte verwenden?",
+        "a": "Ja. Die generierten Texte sind ein solider Ausgangspunkt, den Sie direkt verwenden oder an Ihre Marke anpassen können. Sie sind für Druckmenüs, digitale Speisekarten oder Restaurant-Websites geeignet."
+      },
+      {
+        "q": "Warum sind Gerichtsbeschreibungen so wichtig?",
+        "a": "Eine gute Speisekartenbeschreibung kann den durchschnittlichen Bon um 5–15 % steigern. Gäste, die ansprechende Beschreibungen lesen, bestellen eher das beschriebene Gericht und nehmen einen höheren Wert wahr."
+      }
+    ],
+    "cta_section": {
+      "title": "Bereit, Ihre Speisekarte zu verbessern?",
+      "subtitle": "Erstellen Sie professionelle Texte für jedes Gericht und steigern Sie die Wahrnehmung Ihres Restaurants.",
+      "cta_primary": "Kostenlose Texte generieren",
+      "cta_secondary": "Alle Tools ansehen"
+    }
   }
 }

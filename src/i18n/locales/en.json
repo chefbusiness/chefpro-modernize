@@ -3791,5 +3791,75 @@
       "cta_primary": "Generate my free calendar",
       "cta_secondary": "See all tools"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Free Restaurant Menu Copy Generator | AI Chef Pro",
+      "description": "Generate 3 menu descriptions for every dish: classic, emotional and local/km0. Free, no signup. Improve your menu and attract more customers.",
+      "keywords": "restaurant menu copy generator, menu description generator, dish description writer, free menu copywriting tool"
+    },
+    "hero": {
+      "badge": "Free — No signup",
+      "h1": "Restaurant Menu Copy Generator",
+      "subtitle": "Enter the dish name and main ingredients to get 3 ready-to-use menu descriptions: classic, emotional and km0/local. No API, no registration, no cost.",
+      "cta_tool": "Generate menu copy",
+      "cta_premium": "See Premium Plan →"
+    },
+    "tool": {
+      "title": "Menu Copy Generator",
+      "breadcrumb": "Menu Copy Generator",
+      "breadcrumb_hub": "Free Tools",
+      "faq_title": "Frequently asked questions",
+      "nombre_label": "Current dish name",
+      "nombre_placeholder": "E.g.: Jamón croquettes",
+      "ingredientes_label": "Main ingredients",
+      "ingredientes_placeholder": "E.g.: Iberian ham, béchamel, breadcrumbs",
+      "ingredientes_hint": "Separate ingredients with commas",
+      "estilo_label": "Restaurant style",
+      "estilos": ["Traditional", "Avant-garde", "Casual", "Gourmet", "Family"],
+      "idioma_label": "Menu language",
+      "idiomas": ["Spanish", "English", "Catalan", "Basque"],
+      "precio_label": "Dish price (optional)",
+      "generating": "Crafting descriptions…",
+      "generate_btn": "Generate menu copy",
+      "catalan_note": "Text is generated in Spanish. You can adapt it to Catalan or Basque manually.",
+      "result_labels": {
+        "title": "Menu descriptions",
+        "reset": "New dish",
+        "clasica": "Classic",
+        "emocional": "Emotional",
+        "km0": "Local / Km0",
+        "nombre_alt": "Suggested alternative name",
+        "copy": "Copy",
+        "copied": "Copied!",
+        "cta_title": "Want to generate your full menu optimised for local SEO?",
+        "cta_subtitle": "Discover Menu Plate Local SEO in AI Chef Pro",
+        "cta_btn": "See all features →"
+      }
+    },
+    "faq": [
+      {
+        "q": "How does the menu copy generator work?",
+        "a": "Enter the dish name and main ingredients, choose your restaurant style and menu language. The generator automatically creates 3 description versions: classic (formal and elegant), emotional (sensory and evocative) and km0/local (highlighting origin and proximity). It also suggests a more attractive alternative name."
+      },
+      {
+        "q": "Can I use these texts directly in my menu?",
+        "a": "Yes. The generated texts are a solid starting point you can use as-is or customise to match your brand voice. They're designed to be directly usable on printed menus, digital menus or restaurant websites."
+      },
+      {
+        "q": "Why are dish descriptions so important?",
+        "a": "A well-written menu description can increase average ticket size by 5–15%. Diners who read evocative descriptions are more likely to order that dish and perceive greater value in their experience. It also improves SEO when used on your website."
+      },
+      {
+        "q": "What's the difference between classic, emotional and km0 versions?",
+        "a": "The classic version is formal and focuses on ingredients and technique. The emotional version appeals to the senses and builds an emotional connection with the diner. The km0 version highlights local origin and seasonality — increasingly valued by conscious consumers."
+      }
+    ],
+    "cta_section": {
+      "title": "Ready to improve your restaurant menu?",
+      "subtitle": "Generate professional copy for each dish and elevate how your restaurant is perceived.",
+      "cta_primary": "Generate free menu copy",
+      "cta_secondary": "See all tools"
+    }
   }
 }

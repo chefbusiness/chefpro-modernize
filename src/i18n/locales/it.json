@@ -4080,5 +4080,71 @@
       "cta_primary": "Genera il mio calendario gratuito",
       "cta_secondary": "Vedi tutti gli strumenti"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Generatore Testi Menu Ristorante Gratuito | AI Chef Pro",
+      "description": "Genera 3 descrizioni per ogni piatto del tuo menu: classica, emotiva e km0/locale. Gratis, senza registrazione. Migliora il tuo menu e attrai più clienti.",
+      "keywords": "generatore testi menu ristorante, descrizione piatti ristorante, copywriting gastronomico gratuito"
+    },
+    "hero": {
+      "badge": "Gratuito — Senza registrazione",
+      "h1": "Generatore di Testi per il tuo Menu",
+      "subtitle": "Inserisci il nome del piatto e gli ingredienti e ottieni 3 descrizioni pronte per il tuo menu: classica, emotiva e km0/locale. Senza API, senza registrazione.",
+      "cta_tool": "Genera testi per il mio menu",
+      "cta_premium": "Piano Premium →"
+    },
+    "tool": {
+      "title": "Generatore di Testi per Menu",
+      "breadcrumb": "Generatore Testi Menu",
+      "breadcrumb_hub": "Strumenti Gratuiti",
+      "faq_title": "Domande frequenti",
+      "nombre_label": "Nome attuale del piatto",
+      "nombre_placeholder": "Es.: Crocchette di prosciutto",
+      "ingredientes_label": "Ingredienti principali",
+      "ingredientes_placeholder": "Es.: prosciutto iberico, besciamella, pangrattato",
+      "ingredientes_hint": "Separa gli ingredienti con virgole",
+      "estilo_label": "Stile del ristorante",
+      "estilos": ["Tradizionale", "Avanguardia", "Informale", "Gourmet", "Familiare"],
+      "idioma_label": "Lingua del menu",
+      "idiomas": ["Spagnolo", "Inglese", "Catalano", "Basco"],
+      "precio_label": "Prezzo del piatto (opzionale)",
+      "generating": "Creazione delle descrizioni…",
+      "generate_btn": "Genera testi per il mio menu",
+      "catalan_note": "Il testo viene generato in spagnolo. Puoi adattarlo manualmente al catalano o al basco.",
+      "result_labels": {
+        "title": "Descrizioni per il tuo menu",
+        "reset": "Nuovo piatto",
+        "clasica": "Classica",
+        "emocional": "Emotiva",
+        "km0": "Locale / Km0",
+        "nombre_alt": "Nome alternativo suggerito",
+        "copy": "Copia",
+        "copied": "Copiato!",
+        "cta_title": "Vuoi generare tutto il tuo menu ottimizzato per la SEO locale?",
+        "cta_subtitle": "Scopri Menu Plate Local SEO in AI Chef Pro",
+        "cta_btn": "Vedi tutte le funzionalità →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Come funziona il generatore di testi per menu?",
+        "a": "Inserisci il nome del piatto e gli ingredienti principali, scegli lo stile del ristorante e la lingua del menu. Il generatore crea automaticamente 3 versioni: classica (formale ed elegante), emotiva (sensoriale ed evocativa) e km0/locale (evidenziando origine e prossimità). Suggerisce anche un nome alternativo più accattivante."
+      },
+      {
+        "q": "Posso usare questi testi direttamente nel mio menu?",
+        "a": "Sì. I testi generati sono un ottimo punto di partenza che puoi usare così come sono o personalizzare secondo la tua identità di marca. Sono pensati per menu stampati, carte digitali o siti web di ristoranti."
+      },
+      {
+        "q": "Perché le descrizioni dei piatti sono così importanti?",
+        "a": "Una buona descrizione nel menu può aumentare il ticket medio del 5-15%. I clienti che leggono descrizioni evocative sono più propensi a ordinare quel piatto e percepiscono un maggior valore nell'esperienza."
+      }
+    ],
+    "cta_section": {
+      "title": "Pronto a migliorare il menu del tuo ristorante?",
+      "subtitle": "Genera testi professionali per ogni piatto ed eleva la percezione del tuo ristorante.",
+      "cta_primary": "Genera testi gratis",
+      "cta_secondary": "Vedi tutti gli strumenti"
+    }
   }
 }

@@ -28,6 +28,7 @@ import TestDigitalizacion from "./pages/TestDigitalizacion";
 import DetectorAlergenos from "./pages/DetectorAlergenos";
 import CalculadoraBrigada from "./pages/CalculadoraBrigada";
 import CalendarioContenidos from "./pages/CalendarioContenidos";
+import GeneradorTextosCarta from "./pages/GeneradorTextosCarta";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -192,6 +193,15 @@ const App = () => (
             <Route path="/it/calendario-contenuti-ristorante" element={<CalendarioContenidos />} />
             <Route path="/pt/calendario-conteudo-restaurante" element={<CalendarioContenidos />} />
             <Route path="/nl/content-kalender-restaurant" element={<CalendarioContenidos />} />
+
+            {/* Generador Textos Carta — todos los idiomas */}
+            <Route path="/generador-textos-carta-restaurante" element={<GeneradorTextosCarta />} />
+            <Route path="/en/restaurant-menu-copy-generator" element={<GeneradorTextosCarta />} />
+            <Route path="/fr/generateur-textes-carte-restaurant" element={<GeneradorTextosCarta />} />
+            <Route path="/de/speisekarten-text-generator" element={<GeneradorTextosCarta />} />
+            <Route path="/it/generatore-testi-menu-ristorante" element={<GeneradorTextosCarta />} />
+            <Route path="/pt/gerador-textos-cardapio-restaurante" element={<GeneradorTextosCarta />} />
+            <Route path="/nl/menukaart-tekst-generator" element={<GeneradorTextosCarta />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

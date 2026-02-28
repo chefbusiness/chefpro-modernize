@@ -4065,5 +4065,71 @@
       "cta_primary": "Gerar o meu calendário grátis",
       "cta_secondary": "Ver todas as ferramentas"
     }
+  },
+  "toolMenuCopy": {
+    "seo": {
+      "title": "Gerador de Textos para Cardápio Grátis | AI Chef Pro",
+      "description": "Gere 3 descrições para cada prato do seu cardápio: clássica, emocional e km0/local. Grátis, sem registo. Melhore o seu menu e atraia mais clientes.",
+      "keywords": "gerador textos cardápio restaurante, descrição pratos restaurante, copywriting gastronômico grátis"
+    },
+    "hero": {
+      "badge": "Grátis — Sem registo",
+      "h1": "Gerador de Textos para o seu Cardápio",
+      "subtitle": "Introduza o nome do prato e os ingredientes e obtenha 3 descrições prontas para o seu cardápio: clássica, emocional e km0/local. Sem API, sem registo.",
+      "cta_tool": "Gerar textos para o meu cardápio",
+      "cta_premium": "Plano Premium →"
+    },
+    "tool": {
+      "title": "Gerador de Textos para Cardápio",
+      "breadcrumb": "Gerador Textos Cardápio",
+      "breadcrumb_hub": "Ferramentas Gratuitas",
+      "faq_title": "Perguntas frequentes",
+      "nombre_label": "Nome atual do prato",
+      "nombre_placeholder": "Ex.: Croquetes de presunto",
+      "ingredientes_label": "Ingredientes principais",
+      "ingredientes_placeholder": "Ex.: presunto ibérico, bechamel, pão ralado",
+      "ingredientes_hint": "Separe os ingredientes com vírgulas",
+      "estilo_label": "Estilo do restaurante",
+      "estilos": ["Tradicional", "Vanguarda", "Informal", "Gourmet", "Familiar"],
+      "idioma_label": "Idioma do cardápio",
+      "idiomas": ["Espanhol", "Inglês", "Catalão", "Basco"],
+      "precio_label": "Preço do prato (opcional)",
+      "generating": "A criar descrições…",
+      "generate_btn": "Gerar textos para o meu cardápio",
+      "catalan_note": "O texto é gerado em espanhol. Pode adaptá-lo manualmente ao catalão ou ao basco.",
+      "result_labels": {
+        "title": "Descrições para o seu cardápio",
+        "reset": "Novo prato",
+        "clasica": "Clássica",
+        "emocional": "Emocional",
+        "km0": "Local / Km0",
+        "nombre_alt": "Nome alternativo sugerido",
+        "copy": "Copiar",
+        "copied": "Copiado!",
+        "cta_title": "Quer gerar todo o seu cardápio otimizado para SEO local?",
+        "cta_subtitle": "Descubra o Menu Plate Local SEO no AI Chef Pro",
+        "cta_btn": "Ver todas as funcionalidades →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Como funciona o gerador de textos para cardápio?",
+        "a": "Introduza o nome do prato e os ingredientes principais, escolha o estilo do restaurante e o idioma do cardápio. O gerador cria automaticamente 3 versões: clássica (formal e elegante), emocional (sensorial e evocadora) e km0/local (destacando a origem e a proximidade). Também sugere um nome alternativo mais atraente."
+      },
+      {
+        "q": "Posso usar estes textos diretamente no meu cardápio?",
+        "a": "Sim. Os textos gerados são um ponto de partida sólido que pode usar tal como estão ou personalizar de acordo com a sua identidade de marca. São adequados para menus impressos, cardápios digitais ou sites de restaurantes."
+      },
+      {
+        "q": "Por que as descrições dos pratos são tão importantes?",
+        "a": "Uma boa descrição no cardápio pode aumentar o ticket médio entre 5 e 15%. Os clientes que leem descrições evocadoras têm mais probabilidade de pedir esse prato e percebem maior valor na experiência."
+      }
+    ],
+    "cta_section": {
+      "title": "Pronto para melhorar o cardápio do seu restaurante?",
+      "subtitle": "Gere textos profissionais para cada prato e eleve a perceção do seu restaurante.",
+      "cta_primary": "Gerar textos grátis",
+      "cta_secondary": "Ver todas as ferramentas"
+    }
   }
 }
