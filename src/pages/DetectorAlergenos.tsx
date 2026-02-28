@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ShieldAlert, Copy, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/detector-alergenos-restaurante',
@@ -338,6 +339,8 @@ export default function DetectorAlergenos() {
             </div>
           </section>
         )}
+
+        <OtherFreeTools excludeIndex={1} />
 
         {/* Final CTA */}
         {ctaSection && (

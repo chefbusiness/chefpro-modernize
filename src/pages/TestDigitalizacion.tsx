@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Smartphone, CheckCircle, ChevronRight, RotateCcw, ArrowRight } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/test-digitalizacion-restaurante',
@@ -319,6 +320,8 @@ export default function TestDigitalizacion() {
             </div>
           </section>
         )}
+
+        <OtherFreeTools excludeIndex={5} />
 
         {/* Final CTA */}
         {ctaSection && (

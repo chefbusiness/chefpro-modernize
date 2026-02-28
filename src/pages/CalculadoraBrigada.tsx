@@ -9,6 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Users, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/calculadora-brigada-restaurante',
@@ -424,6 +425,8 @@ export default function CalculadoraBrigada() {
             </div>
           </section>
         )}
+
+        <OtherFreeTools excludeIndex={6} />
 
         {/* Final CTA */}
         {ctaSection && (

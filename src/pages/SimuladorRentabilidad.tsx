@@ -11,6 +11,7 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const SITE_URL = 'https://aichef.pro';
@@ -444,6 +445,8 @@ export default function SimuladorRentabilidad() {
             </div>
           </div>
         </section>
+
+        <OtherFreeTools excludeIndex={3} />
 
         {/* CTA Final */}
         <section className="py-20 bg-gradient-to-br from-amber-500 via-amber-400 to-yellow-300">
