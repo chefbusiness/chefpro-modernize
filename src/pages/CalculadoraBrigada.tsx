@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Users, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
+import HeroSocialProof from '@/components/HeroSocialProof';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/calculadora-brigada-restaurante',
@@ -147,15 +148,7 @@ export default function CalculadoraBrigada() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-white py-16 px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <nav className="text-sm text-slate-500 mb-4">
-              <Link to="/" className="hover:text-orange-600">AI Chef Pro</Link>
-              <span className="mx-2">/</span>
-              <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'} className="hover:text-orange-600">
-                {t('toolBrigada.breadcrumb.tools')}
-              </Link>
-              <span className="mx-2">/</span>
-              <span className="text-slate-700">{t('toolBrigada.breadcrumb.current')}</span>
-            </nav>
+            <HeroSocialProof />
             <Badge className="bg-orange-100 text-orange-700 border-orange-200 mb-4">{hero.badge}</Badge>
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{hero.h1}</h1>
             <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">{hero.subtitle}</p>
