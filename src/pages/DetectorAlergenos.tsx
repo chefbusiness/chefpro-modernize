@@ -52,6 +52,7 @@ export default function DetectorAlergenos() {
   const ctaSection = t('toolAlergenos.cta_section', { returnObjects: true }) as any;
   const howItWorks = t('toolAlergenos.how_it_works', { returnObjects: true }) as any;
   const benefits = t('toolAlergenos.benefits', { returnObjects: true }) as any;
+  const allergensSection = t('toolAlergenos.allergens_section', { returnObjects: true }) as any;
 
   const [ingredients, setIngredients] = useState('');
   const [dishName, setDishName] = useState('');
@@ -246,7 +247,7 @@ export default function DetectorAlergenos() {
                   <p className="text-slate-700 font-medium mb-3">{tool.cta_after}</p>
                   <Button asChild className="bg-red-600 hover:bg-red-700 text-white">
                     <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                      Probar AI Chef Pro gratis <ArrowRight className="w-4 h-4 ml-1" />
+                      {tool.try_free} <ArrowRight className="w-4 h-4 ml-1" />
                     </a>
                   </Button>
                 </div>
@@ -259,9 +260,9 @@ export default function DetectorAlergenos() {
         <section className="py-12 px-4 bg-slate-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-slate-800 mb-2 text-center">
-              Los 14 alérgenos de declaración obligatoria
+              {allergensSection?.title}
             </h2>
-            <p className="text-center text-slate-500 text-sm mb-8">Reglamento (UE) 1169/2011</p>
+            <p className="text-center text-slate-500 text-sm mb-8">{allergensSection?.subtitle}</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
               {Array.isArray(allergens) && allergens.map((a: Allergen) => (
                 <div key={a.id} className="bg-white rounded-xl p-3 text-center shadow-sm border border-slate-100">

@@ -3426,7 +3426,8 @@
       "reset": "Neue Analyse",
       "cta_after": "Möchten Sie die Allergene Ihrer gesamten Speisekarte automatisch verwalten?",
       "allergens_title": "Die 14 deklarationspflichtigen Allergene",
-      "allergens_subtitle": "Verordnung (EU) 1169/2011"
+      "allergens_subtitle": "Verordnung (EU) 1169/2011",
+      "try_free": "AI Chef Pro kostenlos testen"
     },
     "allergens": [
       {
@@ -3715,20 +3716,20 @@
     },
     "faq": [
       {
-        "question": "Was sagt das Gesetz über Allergene in Restaurants?",
-        "answer": "Die EU-Verordnung 1169/2011 verpflichtet alle Restaurants, Bars und Gaststätten, über die 14 deklarationspflichtigen Allergene in allen Gerichten zu informieren. Verstöße können Bußgelder zwischen 3.000 € und 600.000 € nach sich ziehen."
+        "q": "Was sagt das Gesetz über Allergene in Restaurants?",
+        "a": "Die EU-Verordnung 1169/2011 verpflichtet alle Restaurants, Bars und Gaststätten, über die 14 deklarationspflichtigen Allergene in allen Gerichten zu informieren. Verstöße können Bußgelder zwischen 3.000 € und 600.000 € nach sich ziehen."
       },
       {
-        "question": "Was sind die 14 deklarationspflichtigen Allergene?",
-        "answer": "Gluten, Krebstiere, Eier, Fisch, Erdnüsse, Soja, Milch, Schalenfrüchte (Mandeln, Walnüsse, Haselnüsse...), Sellerie, Senf, Sesam, Schwefeldioxid und Sulfite, Lupinen und Weichtiere."
+        "q": "Was sind die 14 deklarationspflichtigen Allergene?",
+        "a": "Gluten, Krebstiere, Eier, Fisch, Erdnüsse, Soja, Milch, Schalenfrüchte (Mandeln, Walnüsse, Haselnüsse...), Sellerie, Senf, Sesam, Schwefeldioxid und Sulfite, Lupinen und Weichtiere."
       },
       {
-        "question": "Reicht ein allgemeiner Hinweis 'kann Spuren enthalten' aus?",
-        "answer": "Nein. Das Gesetz verlangt spezifische Informationen pro Gericht. Ein allgemeiner Hinweis reicht nicht aus und kann mit einem Bußgeld belegt werden. Sie müssen den Kunden über die in jedem konkreten Gericht enthaltenen Allergene informieren können."
+        "q": "Reicht ein allgemeiner Hinweis 'kann Spuren enthalten' aus?",
+        "a": "Nein. Das Gesetz verlangt spezifische Informationen pro Gericht. Ein allgemeiner Hinweis reicht nicht aus und kann mit einem Bußgeld belegt werden. Sie müssen den Kunden über die in jedem konkreten Gericht enthaltenen Allergene informieren können."
       },
       {
-        "question": "Ist dieses Tool 100 % rechtlich zuverlässig?",
-        "answer": "Dieses Tool ist orientierend und zur Unterstützung gedacht. Die rechtliche Verantwortung liegt immer beim Betrieb. Sie müssen die Zutaten und mögliche Kreuzkontaminationen manuell überprüfen. Für eine vollständige und geprüfte Verwaltung verwenden Sie AI Chef Pro Premium."
+        "q": "Ist dieses Tool 100 % rechtlich zuverlässig?",
+        "a": "Dieses Tool ist orientierend und zur Unterstützung gedacht. Die rechtliche Verantwortung liegt immer beim Betrieb. Sie müssen die Zutaten und mögliche Kreuzkontaminationen manuell überprüfen. Für eine vollständige und geprüfte Verwaltung verwenden Sie AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3736,6 +3737,10 @@
       "subtitle": "Mit AI Chef Pro verwalten Sie die Allergene jedes Gerichts automatisch, mit Warnungen bei Zutatenänderungen und exportierbarer Deklaration für Ihre Speisekarte.",
       "primary": "AI Chef Pro kostenlos testen",
       "secondary": "Alle Pläne ansehen"
+    },
+    "allergens_section": {
+      "title": "Die 14 kennzeichnungspflichtigen Allergene",
+      "subtitle": "Verordnung (EU) 1169/2011"
     }
   },
   "toolBrigada": {

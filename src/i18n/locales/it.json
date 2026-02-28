@@ -3426,7 +3426,8 @@
       "reset": "Nuova analisi",
       "cta_after": "Vuoi gestire gli allergeni di tutto il tuo menu in modo automatico?",
       "allergens_title": "I 14 allergeni a dichiarazione obbligatoria",
-      "allergens_subtitle": "Regolamento (UE) 1169/2011"
+      "allergens_subtitle": "Regolamento (UE) 1169/2011",
+      "try_free": "Prova AI Chef Pro gratis"
     },
     "allergens": [
       {
@@ -3705,20 +3706,20 @@
     },
     "faq": [
       {
-        "question": "Cosa dice la legge sugli allergeni nei ristoranti?",
-        "answer": "Il Regolamento UE 1169/2011 obbliga tutti i ristoranti, bar e locali di ristorazione a informare sui 14 allergeni a dichiarazione obbligatoria in tutti i piatti. Il mancato rispetto può comportare sanzioni tra 3.000 € e 600.000 € a seconda della gravità."
+        "q": "Cosa dice la legge sugli allergeni nei ristoranti?",
+        "a": "Il Regolamento UE 1169/2011 obbliga tutti i ristoranti, bar e locali di ristorazione a informare sui 14 allergeni a dichiarazione obbligatoria in tutti i piatti. Il mancato rispetto può comportare sanzioni tra 3.000 € e 600.000 € a seconda della gravità."
       },
       {
-        "question": "Quali sono i 14 allergeni a dichiarazione obbligatoria?",
-        "answer": "Glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio (mandorle, noci, nocciole...), sedano, senape, sesamo, anidride solforosa e solfiti, lupini e molluschi."
+        "q": "Quali sono i 14 allergeni a dichiarazione obbligatoria?",
+        "a": "Glutine, crostacei, uova, pesce, arachidi, soia, latte, frutta a guscio (mandorle, noci, nocciole...), sedano, senape, sesamo, anidride solforosa e solfiti, lupini e molluschi."
       },
       {
-        "question": "È sufficiente un avviso generico 'può contenere tracce'?",
-        "answer": "No. La legge richiede informazioni specifiche per piatto. Un avviso generico non è sufficiente e può essere sanzionato. Devi poter informare il cliente di quali allergeni contiene ogni piatto specifico."
+        "q": "È sufficiente un avviso generico 'può contenere tracce'?",
+        "a": "No. La legge richiede informazioni specifiche per piatto. Un avviso generico non è sufficiente e può essere sanzionato. Devi poter informare il cliente di quali allergeni contiene ogni piatto specifico."
       },
       {
-        "question": "Questo strumento è affidabile al 100% dal punto di vista legale?",
-        "answer": "Questo strumento è orientativo e di supporto. La responsabilità legale ricade sempre sull'esercizio. Devi verificare manualmente gli ingredienti e le possibili contaminazioni crociate. Per una gestione completa e certificata, usa AI Chef Pro Premium."
+        "q": "Questo strumento è affidabile al 100% dal punto di vista legale?",
+        "a": "Questo strumento è orientativo e di supporto. La responsabilità legale ricade sempre sull'esercizio. Devi verificare manualmente gli ingredienti e le possibili contaminazioni crociate. Per una gestione completa e certificata, usa AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3726,6 +3727,10 @@
       "subtitle": "Con AI Chef Pro gestisci gli allergeni di ogni piatto automaticamente, con avvisi quando cambi ingredienti e scheda esportabile per il tuo menu.",
       "primary": "Prova AI Chef Pro gratis",
       "secondary": "Vedi tutti i piani"
+    },
+    "allergens_section": {
+      "title": "I 14 allergeni a dichiarazione obbligatoria",
+      "subtitle": "Regolamento (UE) 1169/2011"
     }
   },
   "toolBrigada": {

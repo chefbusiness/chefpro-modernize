@@ -3139,7 +3139,8 @@
       "reset": "New analysis",
       "cta_after": "Want to manage allergens for your entire menu automatically?",
       "allergens_title": "The 14 mandatory allergens",
-      "allergens_subtitle": "EU Regulation 1169/2011"
+      "allergens_subtitle": "EU Regulation 1169/2011",
+      "try_free": "Try AI Chef Pro free"
     },
     "allergens": [
       {
@@ -3416,20 +3417,20 @@
     },
     "faq": [
       {
-        "question": "What does the law say about allergens in restaurants?",
-        "answer": "EU Regulation 1169/2011 requires all restaurants, bars and catering establishments to inform about the 14 mandatory allergens in all their dishes. Non-compliance can result in fines between €3,000 and €600,000 depending on severity."
+        "q": "What does the law say about allergens in restaurants?",
+        "a": "EU Regulation 1169/2011 requires all restaurants, bars and catering establishments to inform about the 14 mandatory allergens in all their dishes. Non-compliance can result in fines between €3,000 and €600,000 depending on severity."
       },
       {
-        "question": "What are the 14 mandatory declaration allergens?",
-        "answer": "Gluten, crustaceans, eggs, fish, peanuts, soy, milk, tree nuts (almonds, walnuts, hazelnuts...), celery, mustard, sesame, sulphur dioxide and sulphites, lupin and molluscs."
+        "q": "What are the 14 mandatory declaration allergens?",
+        "a": "Gluten, crustaceans, eggs, fish, peanuts, soy, milk, tree nuts (almonds, walnuts, hazelnuts...), celery, mustard, sesame, sulphur dioxide and sulphites, lupin and molluscs."
       },
       {
-        "question": "Is a generic 'may contain traces' warning sufficient?",
-        "answer": "No. The law requires specific information per dish. A generic warning is not sufficient and can be penalized. You must be able to inform customers which allergens each specific dish contains."
+        "q": "Is a generic 'may contain traces' warning sufficient?",
+        "a": "No. The law requires specific information per dish. A generic warning is not sufficient and can be penalized. You must be able to inform customers which allergens each specific dish contains."
       },
       {
-        "question": "Is this tool 100% legally reliable?",
-        "answer": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
+        "q": "Is this tool 100% legally reliable?",
+        "a": "This tool is advisory and helpful. Legal responsibility always falls on the establishment. You must manually verify ingredients and possible cross-contaminations. For complete audited management, use AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3437,6 +3438,10 @@
       "subtitle": "With AI Chef Pro you manage allergens for each dish automatically, with alerts when you change ingredients and exportable declaration for your menu.",
       "primary": "Try AI Chef Pro for free",
       "secondary": "See all plans"
+    },
+    "allergens_section": {
+      "title": "The 14 mandatory declaration allergens",
+      "subtitle": "Regulation (EU) 1169/2011"
     }
   },
   "toolBrigada": {

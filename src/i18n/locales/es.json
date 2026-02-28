@@ -3150,7 +3150,8 @@
       "reset": "Nuevo análisis",
       "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?",
       "allergens_title": "Los 14 alérgenos de declaración obligatoria",
-      "allergens_subtitle": "Reglamento (UE) 1169/2011"
+      "allergens_subtitle": "Reglamento (UE) 1169/2011",
+      "try_free": "Probar AI Chef Pro gratis"
     },
     "allergens": [
       {
@@ -3450,20 +3451,20 @@
     },
     "faq": [
       {
-        "question": "¿Qué dice la ley sobre alérgenos en restaurantes?",
-        "answer": "El Reglamento EU 1169/2011 obliga a todos los restaurantes, bares y establecimientos de restauración a informar sobre los 14 alérgenos de declaración obligatoria en todos sus platos. El incumplimiento puede acarrear sanciones de entre 3.000€ y 600.000€ según la gravedad."
+        "q": "¿Qué dice la ley sobre alérgenos en restaurantes?",
+        "a": "El Reglamento EU 1169/2011 obliga a todos los restaurantes, bares y establecimientos de restauración a informar sobre los 14 alérgenos de declaración obligatoria en todos sus platos. El incumplimiento puede acarrear sanciones de entre 3.000€ y 600.000€ según la gravedad."
       },
       {
-        "question": "¿Cuáles son los 14 alérgenos de declaración obligatoria?",
-        "answer": "Gluten, crustáceos, huevos, pescado, cacahuetes, soja, lácteos, frutos de cáscara (almendras, nueces, avellanas...), apio, mostaza, sésamo, dióxido de azufre y sulfitos, altramuces y moluscos."
+        "q": "¿Cuáles son los 14 alérgenos de declaración obligatoria?",
+        "a": "Gluten, crustáceos, huevos, pescado, cacahuetes, soja, lácteos, frutos de cáscara (almendras, nueces, avellanas...), apio, mostaza, sésamo, dióxido de azufre y sulfitos, altramuces y moluscos."
       },
       {
-        "question": "¿Es suficiente con un aviso genérico de 'puede contener trazas'?",
-        "answer": "No. La ley exige información específica por plato. Un aviso genérico no es suficiente y puede ser sancionado. Debes poder informar al cliente de qué alérgenos contiene cada plato concreto."
+        "q": "¿Es suficiente con un aviso genérico de 'puede contener trazas'?",
+        "a": "No. La ley exige información específica por plato. Un aviso genérico no es suficiente y puede ser sancionado. Debes poder informar al cliente de qué alérgenos contiene cada plato concreto."
       },
       {
-        "question": "¿Esta herramienta es 100% fiable legalmente?",
-        "answer": "Esta herramienta es orientativa y de ayuda. La responsabilidad legal recae siempre en el establecimiento. Debes verificar manualmente los ingredientes y sus posibles contaminaciones cruzadas. Para una gestión completa y auditada, usa AI Chef Pro Premium."
+        "q": "¿Esta herramienta es 100% fiable legalmente?",
+        "a": "Esta herramienta es orientativa y de ayuda. La responsabilidad legal recae siempre en el establecimiento. Debes verificar manualmente los ingredientes y sus posibles contaminaciones cruzadas. Para una gestión completa y auditada, usa AI Chef Pro Premium."
       }
     ],
     "cta_section": {
@@ -3471,6 +3472,10 @@
       "subtitle": "Con AI Chef Pro gestionas los alérgenos de cada plato automáticamente, con alertas cuando cambias ingredientes y ficha exportable para tu carta.",
       "primary": "Probar gratis AI Chef Pro",
       "secondary": "Ver todos los planes"
+    },
+    "allergens_section": {
+      "title": "Los 14 alérgenos de declaración obligatoria",
+      "subtitle": "Reglamento (UE) 1169/2011"
     }
   },
   "toolBrigada": {

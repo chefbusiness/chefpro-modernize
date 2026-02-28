@@ -106,6 +106,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'calculadora-brigada-restaurante',
     nl: 'brigade-calculator-restaurant',
   },
+  {
+    es: 'calendario-contenidos-restaurante',
+    en: 'restaurant-content-calendar',
+    fr: 'calendrier-contenu-restaurant',
+    de: 'content-kalender-restaurant',
+    it: 'calendario-contenuti-ristorante',
+    pt: 'calendario-conteudo-restaurante',
+    nl: 'content-kalender-restaurant',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

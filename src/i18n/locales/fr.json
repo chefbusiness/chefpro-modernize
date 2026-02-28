@@ -3144,7 +3144,8 @@
       "reset": "Nouvelle analyse",
       "cta_after": "Vous voulez gérer les allergènes de toute votre carte automatiquement ?",
       "allergens_title": "Les 14 allergènes à déclaration obligatoire",
-      "allergens_subtitle": "Règlement (UE) 1169/2011"
+      "allergens_subtitle": "Règlement (UE) 1169/2011",
+      "try_free": "Essayer AI Chef Pro gratuitement"
     },
     "allergens": [
       {
@@ -3420,20 +3421,20 @@
     },
     "faq": [
       {
-        "question": "Que dit la loi sur les allergènes dans les restaurants ?",
-        "answer": "Le Règlement UE 1169/2011 oblige tous les restaurants à informer sur les 14 allergènes à déclaration obligatoire. Le non-respect peut entraîner des amendes entre 3 000€ et 600 000€."
+        "q": "Que dit la loi sur les allergènes dans les restaurants ?",
+        "a": "Le Règlement UE 1169/2011 oblige tous les restaurants à informer sur les 14 allergènes à déclaration obligatoire. Le non-respect peut entraîner des amendes entre 3 000€ et 600 000€."
       },
       {
-        "question": "Quels sont les 14 allergènes à déclaration obligatoire ?",
-        "answer": "Gluten, crustacés, œufs, poisson, arachides, soja, lait, fruits à coque, céleri, moutarde, sésame, dioxyde de soufre et sulfites, lupin et mollusques."
+        "q": "Quels sont les 14 allergènes à déclaration obligatoire ?",
+        "a": "Gluten, crustacés, œufs, poisson, arachides, soja, lait, fruits à coque, céleri, moutarde, sésame, dioxyde de soufre et sulfites, lupin et mollusques."
       },
       {
-        "question": "Un avertissement générique 'peut contenir des traces' est-il suffisant ?",
-        "answer": "Non. La loi exige des informations spécifiques par plat. Un avertissement générique n'est pas suffisant et peut être sanctionné."
+        "q": "Un avertissement générique 'peut contenir des traces' est-il suffisant ?",
+        "a": "Non. La loi exige des informations spécifiques par plat. Un avertissement générique n'est pas suffisant et peut être sanctionné."
       },
       {
-        "question": "Cet outil est-il 100% fiable légalement ?",
-        "answer": "Cet outil est indicatif. La responsabilité légale incombe toujours à l'établissement. Vérifiez manuellement les ingrédients et les contaminations croisées possibles."
+        "q": "Cet outil est-il 100% fiable légalement ?",
+        "a": "Cet outil est indicatif. La responsabilité légale incombe toujours à l'établissement. Vérifiez manuellement les ingrédients et les contaminations croisées possibles."
       }
     ],
     "cta_section": {
@@ -3441,6 +3442,10 @@
       "subtitle": "Avec AI Chef Pro, gérez automatiquement les allergènes de chaque plat avec alertes et déclaration exportable.",
       "primary": "Essayer AI Chef Pro gratuitement",
       "secondary": "Voir tous les plans"
+    },
+    "allergens_section": {
+      "title": "Les 14 allergènes à déclaration obligatoire",
+      "subtitle": "Règlement (UE) 1169/2011"
     }
   },
   "toolBrigada": {
