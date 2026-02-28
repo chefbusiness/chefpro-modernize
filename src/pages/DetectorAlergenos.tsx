@@ -10,6 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { ShieldAlert, Copy, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
+import PricingPlans from '@/components/PricingPlans';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/detector-alergenos-restaurante',
@@ -49,7 +50,6 @@ export default function DetectorAlergenos() {
   const allergens: Allergen[] = t('toolAlergenos.allergens', { returnObjects: true }) as any;
   const tool = t('toolAlergenos.tool', { returnObjects: true }) as any;
   const hero = t('toolAlergenos.hero', { returnObjects: true }) as any;
-  const pricing = t('toolAlergenos.pricing', { returnObjects: true }) as any;
   const faqItems: Array<{ q: string; a: string }> = t('toolAlergenos.faq', { returnObjects: true }) as any;
   const ctaSection = t('toolAlergenos.cta_section', { returnObjects: true }) as any;
   const howItWorks = t('toolAlergenos.how_it_works', { returnObjects: true }) as any;
@@ -305,21 +305,7 @@ export default function DetectorAlergenos() {
           </section>
         )}
 
-        {/* Pricing CTA */}
-        {pricing && (
-          <section className="py-12 px-4 bg-gradient-to-br from-red-600 to-rose-700 text-white">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">{pricing.title}</h2>
-              <p className="text-red-100 mb-6 text-lg">{pricing.subtitle}</p>
-              <Button asChild size="lg" className="bg-white text-red-700 hover:bg-red-50 font-semibold px-8">
-                <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                  {pricing.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-              {pricing.note && <p className="text-red-200 text-sm mt-3">{pricing.note}</p>}
-            </div>
-          </section>
-        )}
+        <PricingPlans toolKey="toolAlergenos" />
 
         {/* FAQ */}
         {Array.isArray(faqItems) && faqItems.length > 0 && (

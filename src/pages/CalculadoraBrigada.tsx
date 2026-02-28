@@ -10,6 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { Users, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
+import PricingPlans from '@/components/PricingPlans';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/calculadora-brigada-restaurante',
@@ -87,7 +88,6 @@ export default function CalculadoraBrigada() {
 
   const tool = t('toolBrigada.tool', { returnObjects: true }) as any;
   const hero = t('toolBrigada.hero', { returnObjects: true }) as any;
-  const pricing = t('toolBrigada.pricing', { returnObjects: true }) as any;
   const faqItems: Array<{ q: string; a: string }> = t('toolBrigada.faq', { returnObjects: true }) as any;
   const ctaSection = t('toolBrigada.cta_section', { returnObjects: true }) as any;
   const howItWorks = t('toolBrigada.how_it_works', { returnObjects: true }) as any;
@@ -391,21 +391,7 @@ export default function CalculadoraBrigada() {
           </section>
         )}
 
-        {/* Pricing CTA */}
-        {pricing && (
-          <section className="py-12 px-4 bg-gradient-to-br from-orange-600 to-amber-700 text-white">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">{pricing.title}</h2>
-              <p className="text-orange-100 mb-6 text-lg">{pricing.subtitle}</p>
-              <Button asChild size="lg" className="bg-white text-orange-700 hover:bg-orange-50 font-semibold px-8">
-                <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                  {pricing.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-              {pricing.note && <p className="text-orange-200 text-sm mt-3">{pricing.note}</p>}
-            </div>
-          </section>
-        )}
+        <PricingPlans toolKey="toolBrigada" />
 
         {/* FAQ */}
         {Array.isArray(faqItems) && faqItems.length > 0 && (

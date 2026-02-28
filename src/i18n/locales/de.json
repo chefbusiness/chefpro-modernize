@@ -4062,7 +4062,33 @@
       "title": "Vollständige Inhalte mit AI Chef Pro erstellen",
       "subtitle": "Der Ideenkalender ist kostenlos. Mit AI Chef Pro Premium generieren Sie fertige Texte zum Veröffentlichen, mit für jedes Netzwerk optimierten Hashtags.",
       "cta": "Premium-Plan ansehen",
-      "note": "Keine Bindung · Jederzeit kündbar"
+      "note": "Keine Bindung · Jederzeit kündbar",
+      "plans": [
+        {
+          "name": "Kostenlos",
+          "price": "0€/Monat",
+          "uses": "5 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/Monat",
+          "uses": "150 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/Monat",
+          "uses": "350 Nutzungen/Monat",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/Monat",
+          "uses": "Unbegrenzt",
+          "highlight": false
+        }
+      ]
     },
     "faq_section": {
       "title": "Häufig gestellte Fragen"
@@ -4093,7 +4119,9 @@
       "title": "Bereit, die sozialen Medien Ihres Restaurants zu dominieren?",
       "subtitle": "Erstellen Sie jetzt Ihren Redaktionskalender und bringen Sie die digitale Präsenz Ihres Restaurants auf das nächste Level.",
       "cta_primary": "Kostenlosen Kalender erstellen",
-      "cta_secondary": "Alle Tools ansehen"
+      "cta_secondary": "Alle Tools ansehen",
+      "primary": "AI Chef Pro kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
     }
   },
   "toolMenuCopy": {
@@ -4120,9 +4148,20 @@
       "ingredientes_placeholder": "z.B.: Ibérico-Schinken, Béchamel, Semmelbrösel",
       "ingredientes_hint": "Zutaten durch Kommas trennen",
       "estilo_label": "Restaurant-Stil",
-      "estilos": ["Traditionell", "Avantgarde", "Lässig", "Gourmet", "Familiär"],
+      "estilos": [
+        "Traditionell",
+        "Avantgarde",
+        "Lässig",
+        "Gourmet",
+        "Familiär"
+      ],
       "idioma_label": "Sprache der Speisekarte",
-      "idiomas": ["Spanisch", "Englisch", "Katalanisch", "Baskisch"],
+      "idiomas": [
+        "Spanisch",
+        "Englisch",
+        "Katalanisch",
+        "Baskisch"
+      ],
       "precio_label": "Gerichtspreis (optional)",
       "generating": "Beschreibungen werden erstellt…",
       "generate_btn": "Speisekartentexte generieren",
@@ -4159,7 +4198,39 @@
       "title": "Bereit, Ihre Speisekarte zu verbessern?",
       "subtitle": "Erstellen Sie professionelle Texte für jedes Gericht und steigern Sie die Wahrnehmung Ihres Restaurants.",
       "cta_primary": "Kostenlose Texte generieren",
-      "cta_secondary": "Alle Tools ansehen"
+      "cta_secondary": "Alle Tools ansehen",
+      "primary": "AI Chef Pro kostenlos testen",
+      "secondary": "Alle Pläne ansehen"
+    },
+    "pricing": {
+      "title": "Optimiere deine gesamte Speisekarte mit AI Chef Pro",
+      "subtitle": "Der kostenlose Generator ist ein Ausgangspunkt. Mit AI Chef Pro Premium erstellen Sie Texte für Ihre gesamte Speisekarte, optimiert für lokales SEO und Conversions.",
+      "plans": [
+        {
+          "name": "Kostenlos",
+          "price": "0€/Monat",
+          "uses": "5 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/Monat",
+          "uses": "150 Nutzungen/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/Monat",
+          "uses": "350 Nutzungen/Monat",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/Monat",
+          "uses": "Unbegrenzt",
+          "highlight": false
+        }
+      ]
     }
   }
 }

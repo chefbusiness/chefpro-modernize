@@ -4032,7 +4032,33 @@
       "title": "Maak complete content met AI Chef Pro",
       "subtitle": "De ideenkalender is gratis. Met AI Chef Pro Premium genereert u complete teksten publicatieklaar, met voor elk netwerk geoptimaliseerde hashtags.",
       "cta": "Premium Plan bekijken",
-      "note": "Geen verplichting · Annuleer wanneer u wilt"
+      "note": "Geen verplichting · Annuleer wanneer u wilt",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "€0/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
     },
     "faq_section": {
       "title": "Veelgestelde vragen"
@@ -4063,7 +4089,9 @@
       "title": "Klaar om de sociale media van uw restaurant te domineren?",
       "subtitle": "Genereer nu uw redactionele kalender en til de digitale aanwezigheid van uw restaurant naar het volgende niveau.",
       "cta_primary": "Mijn gratis kalender genereren",
-      "cta_secondary": "Alle tools bekijken"
+      "cta_secondary": "Alle tools bekijken",
+      "primary": "AI Chef Pro gratis uitproberen",
+      "secondary": "Alle plannen bekijken"
     }
   },
   "toolMenuCopy": {
@@ -4090,9 +4118,20 @@
       "ingredientes_placeholder": "Bijv.: Iberisch varkensvlees, béchamel, paneermeel",
       "ingredientes_hint": "Scheid ingrediënten met komma's",
       "estilo_label": "Restaurantstijl",
-      "estilos": ["Traditioneel", "Avant-garde", "Informeel", "Gastronomisch", "Familiair"],
+      "estilos": [
+        "Traditioneel",
+        "Avant-garde",
+        "Informeel",
+        "Gastronomisch",
+        "Familiair"
+      ],
       "idioma_label": "Taal van de menukaart",
-      "idiomas": ["Spaans", "Engels", "Catalaans", "Baskisch"],
+      "idiomas": [
+        "Spaans",
+        "Engels",
+        "Catalaans",
+        "Baskisch"
+      ],
       "precio_label": "Prijs van het gerecht (optioneel)",
       "generating": "Beschrijvingen worden aangemaakt…",
       "generate_btn": "Menukaart teksten genereren",
@@ -4129,7 +4168,39 @@
       "title": "Klaar om de menukaart van uw restaurant te verbeteren?",
       "subtitle": "Genereer professionele teksten voor elk gerecht en verhoog de perceptie van uw restaurant.",
       "cta_primary": "Gratis teksten genereren",
-      "cta_secondary": "Alle tools bekijken"
+      "cta_secondary": "Alle tools bekijken",
+      "primary": "AI Chef Pro gratis uitproberen",
+      "secondary": "Alle plannen bekijken"
+    },
+    "pricing": {
+      "title": "Optimaliseer je volledige menukaart met AI Chef Pro",
+      "subtitle": "De gratis generator is een startpunt. Met AI Chef Pro Premium maakt u teksten voor uw volledige menukaart, geoptimaliseerd voor lokale SEO en conversie.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "€0/maand",
+          "uses": "5 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/maand",
+          "uses": "150 gebruiken/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/maand",
+          "uses": "350 gebruiken/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
     }
   }
 }

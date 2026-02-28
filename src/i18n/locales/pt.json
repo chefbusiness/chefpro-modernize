@@ -4037,7 +4037,33 @@
       "title": "Crie conteúdo completo com AI Chef Pro",
       "subtitle": "O calendário de ideias é gratuito. Com AI Chef Pro Premium gera textos completos prontos para publicar, com hashtags otimizados para cada rede.",
       "cta": "Ver Plano Premium",
-      "note": "Sem compromisso · Cancele quando quiser"
+      "note": "Sem compromisso · Cancele quando quiser",
+      "plans": [
+        {
+          "name": "Grátis",
+          "price": "0€/mês",
+          "uses": "5 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mês",
+          "uses": "150 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mês",
+          "uses": "350 utilizações/mês",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mês",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
     },
     "faq_section": {
       "title": "Perguntas frequentes"
@@ -4068,7 +4094,9 @@
       "title": "Pronto para dominar as redes sociais do seu restaurante?",
       "subtitle": "Gere o seu calendário editorial agora e leve a presença digital do seu restaurante ao próximo nível.",
       "cta_primary": "Gerar o meu calendário grátis",
-      "cta_secondary": "Ver todas as ferramentas"
+      "cta_secondary": "Ver todas as ferramentas",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
     }
   },
   "toolMenuCopy": {
@@ -4095,9 +4123,20 @@
       "ingredientes_placeholder": "Ex.: presunto ibérico, bechamel, pão ralado",
       "ingredientes_hint": "Separe os ingredientes com vírgulas",
       "estilo_label": "Estilo do restaurante",
-      "estilos": ["Tradicional", "Vanguarda", "Informal", "Gourmet", "Familiar"],
+      "estilos": [
+        "Tradicional",
+        "Vanguarda",
+        "Informal",
+        "Gourmet",
+        "Familiar"
+      ],
       "idioma_label": "Idioma do cardápio",
-      "idiomas": ["Espanhol", "Inglês", "Catalão", "Basco"],
+      "idiomas": [
+        "Espanhol",
+        "Inglês",
+        "Catalão",
+        "Basco"
+      ],
       "precio_label": "Preço do prato (opcional)",
       "generating": "A criar descrições…",
       "generate_btn": "Gerar textos para o meu cardápio",
@@ -4134,7 +4173,39 @@
       "title": "Pronto para melhorar o cardápio do seu restaurante?",
       "subtitle": "Gere textos profissionais para cada prato e eleve a perceção do seu restaurante.",
       "cta_primary": "Gerar textos grátis",
-      "cta_secondary": "Ver todas as ferramentas"
+      "cta_secondary": "Ver todas as ferramentas",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
+    },
+    "pricing": {
+      "title": "Otimize todo o seu cardápio com AI Chef Pro",
+      "subtitle": "O gerador gratuito é um ponto de partida. Com AI Chef Pro Premium cria os textos de todo o seu cardápio otimizados para SEO local e conversão.",
+      "plans": [
+        {
+          "name": "Grátis",
+          "price": "0€/mês",
+          "uses": "5 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mês",
+          "uses": "150 utilizações/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mês",
+          "uses": "350 utilizações/mês",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mês",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
     }
   }
 }

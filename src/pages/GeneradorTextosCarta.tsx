@@ -10,6 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { FileText, Copy, CheckCircle, RotateCcw, ArrowRight, Sparkles } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
+import PricingPlans from '@/components/PricingPlans';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/generador-textos-carta-restaurante',
@@ -560,6 +561,8 @@ export default function GeneradorTextosCarta() {
             )}
           </div>
         </section>
+
+        <PricingPlans toolKey="toolMenuCopy" />
 
         {/* ── FAQ ── */}
         {Array.isArray(faqItems) && faqItems.length > 0 && (

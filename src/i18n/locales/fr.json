@@ -3767,7 +3767,33 @@
       "title": "Créez du contenu complet avec AI Chef Pro",
       "subtitle": "Le calendrier d'idées est gratuit. Avec AI Chef Pro Premium vous générez des textes complets prêts à publier, avec des hashtags optimisés pour chaque réseau.",
       "cta": "Voir le Plan Premium",
-      "note": "Sans engagement · Annulez à tout moment"
+      "note": "Sans engagement · Annulez à tout moment",
+      "plans": [
+        {
+          "name": "Gratuit",
+          "price": "0€/mois",
+          "uses": "5 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mois",
+          "uses": "150 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mois",
+          "uses": "350 utilisations/mois",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mois",
+          "uses": "Illimité",
+          "highlight": false
+        }
+      ]
     },
     "faq_section": {
       "title": "Questions fréquentes"
@@ -3798,7 +3824,9 @@
       "title": "Prêt à maîtriser les réseaux sociaux de votre restaurant ?",
       "subtitle": "Générez votre calendrier éditorial maintenant et portez la présence digitale de votre restaurant au niveau supérieur.",
       "cta_primary": "Générer mon calendrier gratuit",
-      "cta_secondary": "Voir tous les outils"
+      "cta_secondary": "Voir tous les outils",
+      "primary": "Essayer AI Chef Pro gratuitement",
+      "secondary": "Voir tous les plans"
     }
   },
   "toolMenuCopy": {
@@ -3825,9 +3853,20 @@
       "ingredientes_placeholder": "Ex : jambon ibérique, béchamel, chapelure",
       "ingredientes_hint": "Séparez les ingrédients par des virgules",
       "estilo_label": "Style du restaurant",
-      "estilos": ["Traditionnel", "Avant-garde", "Informel", "Gastronomique", "Familial"],
+      "estilos": [
+        "Traditionnel",
+        "Avant-garde",
+        "Informel",
+        "Gastronomique",
+        "Familial"
+      ],
       "idioma_label": "Langue de la carte",
-      "idiomas": ["Espagnol", "Anglais", "Catalan", "Basque"],
+      "idiomas": [
+        "Espagnol",
+        "Anglais",
+        "Catalan",
+        "Basque"
+      ],
       "precio_label": "Prix du plat (optionnel)",
       "generating": "Création des descriptions…",
       "generate_btn": "Générer les textes de ma carte",
@@ -3864,7 +3903,39 @@
       "title": "Prêt à améliorer la carte de votre restaurant ?",
       "subtitle": "Générez des textes professionnels pour chaque plat et élevez la perception de votre restaurant.",
       "cta_primary": "Générer des textes gratuitement",
-      "cta_secondary": "Voir tous les outils"
+      "cta_secondary": "Voir tous les outils",
+      "primary": "Essayer AI Chef Pro gratuitement",
+      "secondary": "Voir tous les plans"
+    },
+    "pricing": {
+      "title": "Optimisez toute votre carte avec AI Chef Pro",
+      "subtitle": "Le générateur gratuit est un point de départ. Avec AI Chef Pro Premium vous créez les textes de toute votre carte optimisés pour le SEO local et la conversion.",
+      "plans": [
+        {
+          "name": "Gratuit",
+          "price": "0€/mois",
+          "uses": "5 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mois",
+          "uses": "150 utilisations/mois",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mois",
+          "uses": "350 utilisations/mois",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mois",
+          "uses": "Illimité",
+          "highlight": false
+        }
+      ]
     }
   }
 }
