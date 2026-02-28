@@ -366,10 +366,10 @@ export default function CalculadoraBrigada() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl font-bold text-center text-slate-800 mb-8">{howItWorks.title}</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                {Array.isArray(howItWorks.steps) && howItWorks.steps.map((step: { number: string; title: string; description: string }, i: number) => (
+                {Array.isArray(howItWorks.steps) && howItWorks.steps.map((step: { step: string; title: string; description: string }, i: number) => (
                   <div key={i} className="bg-white rounded-xl p-6 text-center shadow-sm">
                     <div className="w-10 h-10 bg-orange-100 text-orange-700 rounded-full flex items-center justify-center text-lg font-bold mx-auto mb-3">
-                      {step.number}
+                      {step.step}
                     </div>
                     <h3 className="font-semibold text-slate-800 mb-2">{step.title}</h3>
                     <p className="text-sm text-slate-600">{step.description}</p>

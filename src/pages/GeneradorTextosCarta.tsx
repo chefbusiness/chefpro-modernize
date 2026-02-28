@@ -345,7 +345,7 @@ export default function GeneradorTextosCarta() {
                 {hero?.cta_tool || 'Generar textos para mi carta'}
               </Button>
               <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3" asChild>
-                <a href={getAppUrl('/pricing')} target="_blank" rel="noopener noreferrer">
+                <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
                   {hero?.cta_premium || 'Ver Plan Premium →'}
                 </a>
               </Button>
@@ -558,7 +558,7 @@ export default function GeneradorTextosCarta() {
                     {resultLabels?.cta_subtitle || 'Descubre Menu Plate Local SEO en AI Chef Pro'}
                   </p>
                   <Button className="bg-white text-blue-600 hover:bg-blue-50 font-semibold" asChild>
-                    <a href={getAppUrl('/pricing')} target="_blank" rel="noopener noreferrer">
+                    <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
                       {resultLabels?.cta_btn || 'Ver todas las funcionalidades →'}
                     </a>
                   </Button>

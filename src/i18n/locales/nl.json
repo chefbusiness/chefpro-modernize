@@ -3163,6 +3163,9 @@
       "result_title": "Uw digitaliseringsniveau",
       "score_label": "Score",
       "restart": "Test herhalen",
+      "start_btn": "Test starten →",
+      "next_steps_title": "Aanbevolen volgende stappen:",
+      "try_free": "AI Chef Pro gratis proberen",
       "cta_after": "Klaar voor de digitale sprong met AI?"
     },
     "questions": [
