@@ -3359,20 +3359,20 @@
     },
     "faq": [
       {
-        "question": "Wat betekent digitalisering in een restaurant?",
-        "answer": "Digitalisering in de horeca is het proces van het invoeren van technologische tools voor een beter beheer van reserveringen, bezorging, POS, klantcommunicatie en interne processen. Het varieert van een eenvoudige QR-menukaart tot beheer met kunstmatige intelligentie."
+        "q": "Wat betekent digitalisering in een restaurant?",
+        "a": "Digitalisering in de horeca is het proces van het invoeren van technologische tools voor een beter beheer van reserveringen, bezorging, POS, klantcommunicatie en interne processen. Het varieert van een eenvoudige QR-menukaart tot beheer met kunstmatige intelligentie."
       },
       {
-        "question": "Wat is het gemiddelde digitaliseringsniveau van restaurants in Nederland?",
-        "answer": "Volgens branchestudies heeft minder dan 30% van de restaurants in Nederland een gevorderd digitaliseringsniveau. De meeste bevinden zich op een basisniveau, waarbij alleen losse tools zonder integratie worden gebruikt."
+        "q": "Wat is het gemiddelde digitaliseringsniveau van restaurants in Nederland?",
+        "a": "Volgens branchestudies heeft minder dan 30% van de restaurants in Nederland een gevorderd digitaliseringsniveau. De meeste bevinden zich op een basisniveau, waarbij alleen losse tools zonder integratie worden gebruikt."
       },
       {
-        "question": "Waarom is het belangrijk mijn restaurant te digitaliseren?",
-        "answer": "Gedigitaliseerde restaurants hebben een 20-35% hogere operationele efficiëntie, minder personeelsverloop en een betere klantbeleving. Bovendien maakt AI een aanzienlijke verlaging van food cost en marketingkosten mogelijk."
+        "q": "Waarom is het belangrijk mijn restaurant te digitaliseren?",
+        "a": "Gedigitaliseerde restaurants hebben een 20-35% hogere operationele efficiëntie, minder personeelsverloop en een betere klantbeleving. Bovendien maakt AI een aanzienlijke verlaging van food cost en marketingkosten mogelijk."
       },
       {
-        "question": "Hoe kan ik beginnen met het digitaliseren van mijn restaurant?",
-        "answer": "De eerste stap is weten waar u staat: daarvoor bestaat deze test. Op basis van het resultaat kunt u de tools met de meeste impact prioriteren. AI Chef Pro biedt een zeer toegankelijk startpunt voor AI in de gastronomie."
+        "q": "Hoe kan ik beginnen met het digitaliseren van mijn restaurant?",
+        "a": "De eerste stap is weten waar u staat: daarvoor bestaat deze test. Op basis van het resultaat kunt u de tools met de meeste impact prioriteren. AI Chef Pro biedt een zeer toegankelijk startpunt voor AI in de gastronomie."
       }
     ],
     "cta_section": {
@@ -3841,20 +3841,20 @@
     },
     "faq": [
       {
-        "question": "Hoeveel koks heb ik nodig voor 50 couverts?",
-        "answer": "Dat hangt af van het servicetype. Voor à la carte (hoge complexiteit) heeft u ongeveer 4-5 koks nodig voor 50 couverts. Voor dagmenu kunnen 2-3 goed georganiseerde koks voldoende zijn."
+        "q": "Hoeveel koks heb ik nodig voor 50 couverts?",
+        "a": "Dat hangt af van het servicetype. Voor à la carte (hoge complexiteit) heeft u ongeveer 4-5 koks nodig voor 50 couverts. Voor dagmenu kunnen 2-3 goed georganiseerde koks voldoende zijn."
       },
       {
-        "question": "Wat is de standaardverhouding van obers per couvert?",
-        "answer": "De branchestandaard is 1 ober per 10-15 couverts in een à la carte restaurant, en 1 per 15-20 bij dagmenu of bistro. Voor fine dining kan dit dalen naar 1 per 6-8 couverts."
+        "q": "Wat is de standaardverhouding van obers per couvert?",
+        "a": "De branchestandaard is 1 ober per 10-15 couverts in een à la carte restaurant, en 1 per 15-20 bij dagmenu of bistro. Voor fine dining kan dit dalen naar 1 per 6-8 couverts."
       },
       {
-        "question": "Wat is een keukenteam (brigade)?",
-        "answer": "Het keukenteam is het hiërarchisch georganiseerde team dat werkt in een professionele keuken. Het werd gesystematiseerd door Auguste Escoffier. Het omvat functies als chef-kok, sous-chef, partijchefs, koks en medewerkers."
+        "q": "Wat is een keukenteam (brigade)?",
+        "a": "Het keukenteam is het hiërarchisch georganiseerde team dat werkt in een professionele keuken. Het werd gesystematiseerd door Auguste Escoffier. Het omvat functies als chef-kok, sous-chef, partijchefs, koks en medewerkers."
       },
       {
-        "question": "Hoe verlaag ik personeelskosten zonder kwaliteitsverlies?",
-        "answer": "De sleutel ligt in organisatie: veelzijdige teams, efficiënte mise en place, goed dienstbeheer en gebruik van AI-tools om de bedrijfsvoering te optimaliseren. AI Chef Pro helpt u de knelpunten in uw team te identificeren."
+        "q": "Hoe verlaag ik personeelskosten zonder kwaliteitsverlies?",
+        "a": "De sleutel ligt in organisatie: veelzijdige teams, efficiënte mise en place, goed dienstbeheer en gebruik van AI-tools om de bedrijfsvoering te optimaliseren. AI Chef Pro helpt u de knelpunten in uw team te identificeren."
       }
     ],
     "cta_section": {

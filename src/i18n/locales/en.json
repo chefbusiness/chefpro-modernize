@@ -3090,20 +3090,20 @@
     },
     "faq": [
       {
-        "question": "What does digitalization mean for a restaurant?",
-        "answer": "Digitalization in restaurants is the process of incorporating technology tools to better manage bookings, delivery, POS, customer communication and internal operations. It ranges from a simple QR menu to AI-powered management."
+        "q": "What does digitalization mean for a restaurant?",
+        "a": "Digitalization in restaurants is the process of incorporating technology tools to better manage bookings, delivery, POS, customer communication and internal operations. It ranges from a simple QR menu to AI-powered management."
       },
       {
-        "question": "What is the average digitalization level in restaurants?",
-        "answer": "According to industry studies, less than 30% of restaurants have an advanced digitalization level. Most are at basic level, using only isolated tools without integration."
+        "q": "What is the average digitalization level in restaurants?",
+        "a": "According to industry studies, less than 30% of restaurants have an advanced digitalization level. Most are at basic level, using only isolated tools without integration."
       },
       {
-        "question": "Why is it important to digitalize my restaurant?",
-        "answer": "Digitalized restaurants have 20-35% more operational efficiency, lower staff turnover and better customer experience. AI also allows significant reduction in food cost and marketing costs."
+        "q": "Why is it important to digitalize my restaurant?",
+        "a": "Digitalized restaurants have 20-35% more operational efficiency, lower staff turnover and better customer experience. AI also allows significant reduction in food cost and marketing costs."
       },
       {
-        "question": "How do I start digitalizing my restaurant?",
-        "answer": "The first step is knowing where you are — that's why this test exists. From the result, you can prioritize the highest-impact tools. AI Chef Pro offers a very accessible entry point for AI in gastronomy."
+        "q": "How do I start digitalizing my restaurant?",
+        "a": "The first step is knowing where you are — that's why this test exists. From the result, you can prioritize the highest-impact tools. AI Chef Pro offers a very accessible entry point for AI in gastronomy."
       }
     ],
     "cta_section": {
@@ -3572,20 +3572,20 @@
     },
     "faq": [
       {
-        "question": "How many chefs do I need for 50 covers?",
-        "answer": "It depends on service type. For à la carte (high complexity) you need about 4-5 chefs for 50 covers. For a set menu, 2-3 well-organized chefs may be enough. The calculator applies these ratios based on your service type."
+        "q": "How many chefs do I need for 50 covers?",
+        "a": "It depends on service type. For à la carte (high complexity) you need about 4-5 chefs for 50 covers. For a set menu, 2-3 well-organized chefs may be enough. The calculator applies these ratios based on your service type."
       },
       {
-        "question": "What is the standard waiter-to-cover ratio?",
-        "answer": "The industry standard is 1 waiter per 10-15 covers for à la carte restaurants, and 1 per 15-20 for set menu or bistro. For fine dining it can drop to 1 per 6-8 covers."
+        "q": "What is the standard waiter-to-cover ratio?",
+        "a": "The industry standard is 1 waiter per 10-15 covers for à la carte restaurants, and 1 per 15-20 for set menu or bistro. For fine dining it can drop to 1 per 6-8 covers."
       },
       {
-        "question": "What is a kitchen brigade?",
-        "answer": "The kitchen brigade is the hierarchically organized team working in a professional kitchen. It was systematized by Auguste Escoffier. It includes roles such as Head Chef, Sous Chef, Section Chefs, Cooks and Assistants."
+        "q": "What is a kitchen brigade?",
+        "a": "The kitchen brigade is the hierarchically organized team working in a professional kitchen. It was systematized by Auguste Escoffier. It includes roles such as Head Chef, Sous Chef, Section Chefs, Cooks and Assistants."
       },
       {
-        "question": "How do I reduce staff costs without lowering quality?",
-        "answer": "The key is organization: versatile brigades, efficient mise en place, good shift management and AI tools to optimize operations. AI Chef Pro helps you identify bottlenecks in your team."
+        "q": "How do I reduce staff costs without lowering quality?",
+        "a": "The key is organization: versatile brigades, efficient mise en place, good shift management and AI tools to optimize operations. AI Chef Pro helps you identify bottlenecks in your team."
       }
     ],
     "cta_section": {

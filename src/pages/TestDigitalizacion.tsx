@@ -318,12 +318,12 @@ export default function TestDigitalizacion() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-8">
                   <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                    {ctaSection.cta_primary} <ArrowRight className="w-4 h-4 ml-2" />
+                    {ctaSection.primary} <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                 </Button>
                 <Button variant="outline" asChild size="lg" className="border-teal-300 text-teal-700 hover:bg-teal-50 px-8">
                   <Link to={HUB_SLUGS[currentLanguage] || '/herramientas-gratuitas'}>
-                    {ctaSection.cta_secondary}
+                    {ctaSection.secondary}
                   </Link>
                 </Button>
               </div>

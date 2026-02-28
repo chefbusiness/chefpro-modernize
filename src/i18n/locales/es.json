@@ -3101,20 +3101,20 @@
     },
     "faq": [
       {
-        "question": "¿Qué significa digitalización en un restaurante?",
-        "answer": "La digitalización en restauración es el proceso de incorporar herramientas tecnológicas para gestionar mejor las reservas, el delivery, el TPV, la comunicación con clientes y las operaciones internas. Va desde una simple carta QR hasta la gestión con inteligencia artificial."
+        "q": "¿Qué significa digitalización en un restaurante?",
+        "a": "La digitalización en restauración es el proceso de incorporar herramientas tecnológicas para gestionar mejor las reservas, el delivery, el TPV, la comunicación con clientes y las operaciones internas. Va desde una simple carta QR hasta la gestión con inteligencia artificial."
       },
       {
-        "question": "¿Cuál es el nivel de digitalización medio de los restaurantes en España?",
-        "answer": "Según estudios del sector, menos del 30% de los restaurantes en España tienen un nivel de digitalización avanzado. La mayoría están en nivel básico, usando solo herramientas sueltas sin integración."
+        "q": "¿Cuál es el nivel de digitalización medio de los restaurantes en España?",
+        "a": "Según estudios del sector, menos del 30% de los restaurantes en España tienen un nivel de digitalización avanzado. La mayoría están en nivel básico, usando solo herramientas sueltas sin integración."
       },
       {
-        "question": "¿Por qué es importante digitalizar mi restaurante?",
-        "answer": "Los restaurantes digitalizados tienen un 20-35% más de eficiencia operativa, menor rotación de personal y mejor experiencia de cliente. Además, la IA permite reducir costes de food cost y marketing significativamente."
+        "q": "¿Por qué es importante digitalizar mi restaurante?",
+        "a": "Los restaurantes digitalizados tienen un 20-35% más de eficiencia operativa, menor rotación de personal y mejor experiencia de cliente. Además, la IA permite reducir costes de food cost y marketing significativamente."
       },
       {
-        "question": "¿Cómo puedo empezar a digitalizar mi restaurante?",
-        "answer": "El primer paso es saber dónde estás: por eso existe este test. A partir del resultado, puedes priorizar las herramientas de mayor impacto. AI Chef Pro ofrece un punto de entrada muy accesible para la IA en gastronomía."
+        "q": "¿Cómo puedo empezar a digitalizar mi restaurante?",
+        "a": "El primer paso es saber dónde estás: por eso existe este test. A partir del resultado, puedes priorizar las herramientas de mayor impacto. AI Chef Pro ofrece un punto de entrada muy accesible para la IA en gastronomía."
       }
     ],
     "cta_section": {
@@ -3606,20 +3606,20 @@
     },
     "faq": [
       {
-        "question": "¿Cuántos cocineros necesito para 50 comensales?",
-        "answer": "Depende del tipo de servicio. Para carta (alta complejidad) necesitas unos 4-5 cocineros para 50 comensales. Para menú del día, con 2-3 cocineros bien organizados puede ser suficiente. La calculadora aplica estos ratios según tu tipo de servicio."
+        "q": "¿Cuántos cocineros necesito para 50 comensales?",
+        "a": "Depende del tipo de servicio. Para carta (alta complejidad) necesitas unos 4-5 cocineros para 50 comensales. Para menú del día, con 2-3 cocineros bien organizados puede ser suficiente. La calculadora aplica estos ratios según tu tipo de servicio."
       },
       {
-        "question": "¿Cuál es el ratio estándar de camareros por comensal?",
-        "answer": "El estándar del sector es 1 camarero por cada 10-15 comensales en restaurante de carta, y 1 por cada 15-20 en menú del día o bistró. Para fine dining puede bajar a 1 por cada 6-8 comensales."
+        "q": "¿Cuál es el ratio estándar de camareros por comensal?",
+        "a": "El estándar del sector es 1 camarero por cada 10-15 comensales en restaurante de carta, y 1 por cada 15-20 en menú del día o bistró. Para fine dining puede bajar a 1 por cada 6-8 comensales."
       },
       {
-        "question": "¿Qué es una brigada de cocina?",
-        "answer": "La brigada de cocina es el equipo organizado jerárquicamente que trabaja en una cocina profesional. Fue sistematizada por Auguste Escoffier. Incluye roles como Jefe de Cocina, Sous Chef, Chefs de Partida, Cocineros y Ayudantes."
+        "q": "¿Qué es una brigada de cocina?",
+        "a": "La brigada de cocina es el equipo organizado jerárquicamente que trabaja en una cocina profesional. Fue sistematizada por Auguste Escoffier. Incluye roles como Jefe de Cocina, Sous Chef, Chefs de Partida, Cocineros y Ayudantes."
       },
       {
-        "question": "¿Cómo reduzco el coste de personal sin bajar la calidad?",
-        "answer": "La clave está en la organización: brigadas polivalentes, mise en place eficiente, buena gestión de turnos y uso de herramientas de IA para optimizar la operación. AI Chef Pro te ayuda a identificar los cuellos de botella en tu equipo."
+        "q": "¿Cómo reduzco el coste de personal sin bajar la calidad?",
+        "a": "La clave está en la organización: brigadas polivalentes, mise en place eficiente, buena gestión de turnos y uso de herramientas de IA para optimizar la operación. AI Chef Pro te ayuda a identificar los cuellos de botella en tu equipo."
       }
     ],
     "cta_section": {
