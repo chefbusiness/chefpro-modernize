@@ -270,7 +270,7 @@ export default function ModernFooter() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="https://blog.aichef.pro"
+                  href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

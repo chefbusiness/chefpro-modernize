@@ -275,9 +275,9 @@ export default function ModernHeader() {
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <NavigationMenuLink 
+                <NavigationMenuLink
                   className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
-                  href="https://blog.aichef.pro"
+                  href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -444,7 +444,7 @@ export default function ModernHeader() {
                         {t('nav.precios')}
                       </a>
                       <a
-                        href="https://blog.aichef.pro"
+                        href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => setMobileMenuOpen(false)}
