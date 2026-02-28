@@ -10,6 +10,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 import { Calendar, Copy, CheckCircle, RotateCcw, ArrowRight, Download } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
+import PricingPlans from '@/components/PricingPlans';
 
 const LANG_SLUGS: Record<string, string> = {
   es: '/calendario-contenidos-restaurante',
@@ -124,7 +125,6 @@ export default function CalendarioContenidos() {
 
   const hero = t('toolCalendario.hero', { returnObjects: true }) as any;
   const tool = t('toolCalendario.tool', { returnObjects: true }) as any;
-  const pricing = t('toolCalendario.pricing', { returnObjects: true }) as any;
   const faqItems: Array<{ q: string; a: string }> = t('toolCalendario.faq', { returnObjects: true }) as any;
   const ctaSection = t('toolCalendario.cta_section', { returnObjects: true }) as any;
   const howItWorks = t('toolCalendario.how_it_works', { returnObjects: true }) as any;
@@ -453,21 +453,7 @@ export default function CalendarioContenidos() {
           </section>
         )}
 
-        {/* Pricing CTA */}
-        {pricing && (
-          <section className="py-12 px-4 bg-gradient-to-br from-purple-600 to-violet-700 text-white">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">{pricing.title}</h2>
-              <p className="text-purple-100 mb-6 text-lg">{pricing.subtitle}</p>
-              <Button asChild size="lg" className="bg-white text-purple-700 hover:bg-purple-50 font-semibold px-8">
-                <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                  {pricing.cta} <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
-              {pricing.note && <p className="text-purple-200 text-sm mt-3">{pricing.note}</p>}
-            </div>
-          </section>
-        )}
+        <PricingPlans toolKey="toolCalendario" />
 
         {/* FAQ */}
         {Array.isArray(faqItems) && faqItems.length > 0 && (
