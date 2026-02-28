@@ -130,6 +130,9 @@ const TOOL_STYLES = [
   { bg: 'bg-indigo-50', border: 'border-indigo-200', badge: 'bg-indigo-100 text-indigo-800' },
 ];
 
+// Tools with live routes (add 7 when GeneradorMenuDegustacion is built)
+const LIVE_TOOLS = new Set([0, 1, 2, 3, 4, 5, 6]);
+
 // Map tool index to its slug map
 function getToolSlug(index: number, lang: string): string {
   const maps = [
@@ -234,33 +237,39 @@ export default function HerramientasGratuitas() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-              {tools.map((tool, i) => (
-                <a
-                  key={i}
-                  href={getToolSlug(i, lang)}
-                  className="block group"
-                >
-                  <Card className={`h-full border-2 ${TOOL_STYLES[i]?.border ?? 'border-border'} shadow-md hover:shadow-xl transition-all duration-200 group-hover:-translate-y-1`}>
+              {tools.map((tool, i) => {
+                const isLive = LIVE_TOOLS.has(i);
+                const cardContent = (
+                  <Card className={`h-full border-2 ${TOOL_STYLES[i]?.border ?? 'border-border'} shadow-md transition-all duration-200 ${isLive ? 'hover:shadow-xl group-hover:-translate-y-1' : 'opacity-60'}`}>
                     <CardHeader className="pb-3">
                       <div className={`w-12 h-12 ${TOOL_STYLES[i]?.bg ?? 'bg-primary/10'} rounded-xl flex items-center justify-center mb-3`}>
                         {TOOL_ICONS[i]}
                       </div>
                       <div className="flex items-start justify-between gap-2">
                         <CardTitle className="text-base leading-tight">{tool.title}</CardTitle>
-                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium flex-shrink-0 ${TOOL_STYLES[i]?.badge ?? 'bg-muted text-muted-foreground'}`}>
-                          {tool.badge}
+                        <span className={`text-xs px-2 py-0.5 rounded-full font-medium flex-shrink-0 ${isLive ? (TOOL_STYLES[i]?.badge ?? 'bg-muted text-muted-foreground') : 'bg-gray-100 text-gray-500'}`}>
+                          {isLive ? tool.badge : 'Próximamente'}
                         </span>
                       </div>
                     </CardHeader>
                     <CardContent className="pb-4">
                       <p className="text-sm text-muted-foreground mb-3">{tool.description}</p>
-                      <span className="text-sm font-medium text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
-                        →
-                      </span>
+                      {isLive && (
+                        <span className="text-sm font-medium text-primary flex items-center gap-1 group-hover:gap-2 transition-all">→</span>
+                      )}
                     </CardContent>
                   </Card>
-                </a>
-              ))}
+                );
+                return isLive ? (
+                  <a key={i} href={getToolSlug(i, lang)} className="block group">
+                    {cardContent}
+                  </a>
+                ) : (
+                  <div key={i} className="block cursor-default">
+                    {cardContent}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
