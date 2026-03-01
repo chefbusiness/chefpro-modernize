@@ -1359,7 +1359,7 @@
       "badge": "💰 Bespaar vanaf de eerste maand",
       "h1": "Verlaag de kosten van uw restaurant met 35% via AI",
       "subtitle": "Beheers verspilling, optimaliseer de food cost en verbeter de marge van elk gerecht — zonder spreadsheets of handmatige berekeningen.",
-      "tagline": "Het tool dat meer dan 5.000 gastronomie-professionals gebruiken.",
+      "tagline": "Het tool dat meer dan {{userCount}} gastronomie-professionals gebruiken.",
       "cta_primary": "Gratis beginnen met besparen",
       "cta_secondary": "Bekijk plannen en prijzen",
       "no_card": "Geen creditcard vereist. Directe toegang."
@@ -1504,7 +1504,7 @@
     ],
     "cta_section": {
       "title": "Stop met geld verliezen. Beheer uw kosten vanaf vandaag.",
-      "subtitle": "Sluit u aan bij 5.000+ professionals die AI al gebruiken om hun marges te beschermen en hun bedrijf te laten groeien.",
+      "subtitle": "Sluit u aan bij {{userCount}}+ professionals die AI al gebruiken om hun marges te beschermen en hun bedrijf te laten groeien.",
       "primary": "Nu gratis beginnen",
       "secondary": "Alle plannen bekijken"
     }
@@ -1831,7 +1831,7 @@
     ],
     "cta_section": {
       "title": "Ontwerp de menukaart die uw restaurant verdient",
-      "subtitle": "Meer dan 5.000 professionals gebruiken AI Chef Pro al voor winstgevende, aantrekkelijke en wettelijk conforme menukaarten.",
+      "subtitle": "Meer dan {{userCount}} professionals gebruiken AI Chef Pro al voor winstgevende, aantrekkelijke en wettelijk conforme menukaarten.",
       "primary": "Mijn menu gratis aanmaken",
       "secondary": "Alle plannen bekijken"
     },
@@ -1997,7 +1997,7 @@
     ],
     "cta_section": {
       "title": "Stop met improviseren. Automatiseer uw restaurantmarketing.",
-      "subtitle": "Meer dan 5.000 restaurants gebruiken AI Chef Pro al voor professionele content, online reputatiebeheer en meer klanten.",
+      "subtitle": "Meer dan {{userCount}} restaurants gebruiken AI Chef Pro al voor professionele content, online reputatiebeheer en meer klanten.",
       "primary": "Nu gratis starten",
       "secondary": "Alle plannen bekijken"
     },
@@ -2028,7 +2028,7 @@
         "label": "nauwkeuriger in food cost berekeningen"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "restaurants en chefs die het al gebruiken"
       },
       {
@@ -2200,7 +2200,7 @@
     ],
     "cta_section": {
       "title": "De horeca AI die ChatGPT niet kan zijn",
-      "subtitle": "Meer dan 5.000 chefs en restauranthouders hebben al gekozen voor de in gastronomie gespecialiseerde AI.",
+      "subtitle": "Meer dan {{userCount}} chefs en restauranthouders hebben al gekozen voor de in gastronomie gespecialiseerde AI.",
       "primary": "AI Chef Pro gratis proberen",
       "secondary": "Alle plannen bekijken"
     },
@@ -2228,7 +2228,7 @@
         "label": "Dagelijkse tijdsbesparing"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Actieve restaurants"
       },
       {
@@ -2400,7 +2400,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI-gestuurd keukenbeheer",
-      "subtitle": "Meer dan 5.000 horecaprofessionals gebruiken AI Chef Pro al om hun keuken te beheren met meer controle en minder tijd.",
+      "subtitle": "Meer dan {{userCount}} horecaprofessionals gebruiken AI Chef Pro al om hun keuken te beheren met meer controle en minder tijd.",
       "primary": "Nu gratis proberen",
       "secondary": "Alle plannen bekijken"
     }
@@ -2427,7 +2427,7 @@
         "label": "Wereldkeukens"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Actieve restaurants"
       },
       {
@@ -2599,7 +2599,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI-recepten voor uw restaurant",
-      "subtitle": "Meer dan 5.000 chefs en restauranthouders gebruiken AI Chef Pro al om in minuten professionele recepten te maken.",
+      "subtitle": "Meer dan {{userCount}} chefs en restauranthouders gebruiken AI Chef Pro al om in minuten professionele recepten te maken.",
       "primary": "Nu gratis proberen",
       "secondary": "Alle plannen bekijken"
     }
@@ -2630,7 +2630,7 @@
         "label": "Gemiddelde kostenreductie"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Actieve restaurants"
       },
       {
@@ -2798,7 +2798,7 @@
     ],
     "cta_section": {
       "title": "Begin vandaag nog met AI food cost controle",
-      "subtitle": "Meer dan 5.000 restaurants gebruiken AI Chef Pro al om food cost te berekenen en hun marge te beschermen.",
+      "subtitle": "Meer dan {{userCount}} restaurants gebruiken AI Chef Pro al om food cost te berekenen en hun marge te beschermen.",
       "primary": "Mijn food cost gratis berekenen",
       "secondary": "Alle plannen bekijken"
     }

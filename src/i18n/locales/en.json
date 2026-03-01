@@ -1090,7 +1090,7 @@
       "badge": "💰 Save from the first month",
       "h1": "Cut your restaurant costs by up to 35% with AI",
       "subtitle": "Control waste, optimize food cost and improve each dish margin — no spreadsheets, no manual calculations.",
-      "tagline": "The tool used by 5,000+ gastronomy professionals.",
+      "tagline": "The tool used by {{userCount}}+ gastronomy professionals.",
       "cta_primary": "Start saving for free",
       "cta_secondary": "View plans and pricing",
       "no_card": "No credit card required. Instant access."
@@ -1235,7 +1235,7 @@
     ],
     "cta_section": {
       "title": "Stop losing money. Start controlling your costs today.",
-      "subtitle": "Join 5,000+ professionals who already use AI to protect their margins and grow their business.",
+      "subtitle": "Join {{userCount}}+ professionals who already use AI to protect their margins and grow their business.",
       "primary": "Start for free now",
       "secondary": "View all plans"
     }
@@ -1562,7 +1562,7 @@
     ],
     "cta_section": {
       "title": "Design the menu your restaurant deserves",
-      "subtitle": "Over 5,000 professionals already use AI Chef Pro to create profitable, attractive and legally compliant menus.",
+      "subtitle": "Over {{userCount}} professionals already use AI Chef Pro to create profitable, attractive and legally compliant menus.",
       "primary": "Create my menu for free",
       "secondary": "View all plans"
     },
@@ -1728,7 +1728,7 @@
     ],
     "cta_section": {
       "title": "Stop improvising. Automate your restaurant marketing.",
-      "subtitle": "Over 5,000 restaurants already use AI Chef Pro to create professional content, manage their online reputation and attract more customers.",
+      "subtitle": "Over {{userCount}} restaurants already use AI Chef Pro to create professional content, manage their online reputation and attract more customers.",
       "primary": "Start for free now",
       "secondary": "View all plans"
     },
@@ -1759,7 +1759,7 @@
         "label": "more accurate in food cost calculations"
       },
       {
-        "metric": "5,000+",
+        "metric": "{{userCount}}+",
         "label": "restaurants and chefs already using it"
       },
       {
@@ -1931,7 +1931,7 @@
     ],
     "cta_section": {
       "title": "The hospitality AI that ChatGPT cannot be",
-      "subtitle": "Over 5,000 chefs and restaurateurs have already chosen the AI specialized in gastronomy.",
+      "subtitle": "Over {{userCount}} chefs and restaurateurs have already chosen the AI specialized in gastronomy.",
       "primary": "Try AI Chef Pro for free",
       "secondary": "See all plans"
     },
@@ -1959,7 +1959,7 @@
         "label": "Daily management savings"
       },
       {
-        "metric": "5,000+",
+        "metric": "{{userCount}}+",
         "label": "Active restaurants"
       },
       {
@@ -2131,7 +2131,7 @@
     ],
     "cta_section": {
       "title": "Start managing your kitchen with AI today",
-      "subtitle": "Over 5,000 hospitality professionals already use AI Chef Pro to manage their kitchen with more control and less time.",
+      "subtitle": "Over {{userCount}} hospitality professionals already use AI Chef Pro to manage their kitchen with more control and less time.",
       "primary": "Try for free now",
       "secondary": "See all plans"
     }
@@ -2158,7 +2158,7 @@
         "label": "World cuisines"
       },
       {
-        "metric": "5,000+",
+        "metric": "{{userCount}}+",
         "label": "Active restaurants"
       },
       {
@@ -2330,7 +2330,7 @@
     ],
     "cta_section": {
       "title": "Start creating AI recipes for your restaurant",
-      "subtitle": "Over 5,000 chefs and restaurateurs already use AI Chef Pro to create professional recipes in minutes.",
+      "subtitle": "Over {{userCount}} chefs and restaurateurs already use AI Chef Pro to create professional recipes in minutes.",
       "primary": "Try for free now",
       "secondary": "See all plans"
     }
@@ -2361,7 +2361,7 @@
         "label": "Average cost reduction"
       },
       {
-        "metric": "5,000+",
+        "metric": "{{userCount}}+",
         "label": "Active restaurants"
       },
       {
@@ -2529,7 +2529,7 @@
     ],
     "cta_section": {
       "title": "Start controlling your food cost with AI today",
-      "subtitle": "Over 5,000 restaurants already use AI Chef Pro to calculate food cost and protect their margin.",
+      "subtitle": "Over {{userCount}} restaurants already use AI Chef Pro to calculate food cost and protect their margin.",
       "primary": "Calculate my food cost free",
       "secondary": "See all plans"
     }
