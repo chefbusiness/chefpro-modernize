@@ -130,7 +130,7 @@ export default function ModernHeader() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href={currentLanguage === 'es' ? '/' : `/${currentLanguage}`}
                 >
                   {t('nav.inicio')}
@@ -283,7 +283,7 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                 >
                   {t('nav.precios')}
@@ -292,7 +292,7 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
+                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                   href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
                   target="_blank"
                   rel="noopener noreferrer"
