@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
 interface SEOHeadProps {
   title?: string;
@@ -26,6 +27,7 @@ const SEOHead = ({
   
   const currentLanguage = i18n.language;
   const siteUrl = import.meta.env.VITE_SITE_URL || "https://aichef.pro";
+  const { count: userCount } = useLiveUserCount(currentLanguage);
   
   // Use provided title or fallback to SEO default
   const pageTitle = title || t('seo.title');
@@ -196,7 +198,7 @@ const SEOHead = ({
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "4.8",
-              "ratingCount": "5000",
+              "ratingCount": String(userCount),
               "bestRating": "5",
               "worstRating": "1"
             },
