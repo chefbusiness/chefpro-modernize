@@ -690,11 +690,11 @@
       "member": {
         "name": "AI Chef Member",
         "price": "Free",
-        "uses": "5/month",
+        "uses": "10/month",
         "description": "Ideal for kitchen assistants, cooks and station chefs",
         "features": {
           "0": "Access to all 55+ tools",
-          "1": "5 monthly credits",
+          "1": "10 monthly credits",
           "2": "World cookbooks",
           "3": "Email support"
         }
@@ -803,7 +803,7 @@
     "q2": "Can I use AI Chef Pro if I'm a beginner?",
     "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
     "q3": "How does the free plan work?",
-    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 5 uses per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
+    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 10 uses per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
     "q4": "Do recipes adapt to different portion sizes?",
     "a4": "Yes, all our applications include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
     "q5": "Does it include support for dietary restrictions?",
@@ -1391,7 +1391,7 @@
       },
       {
         "question": "How much does it cost to use AI for restaurant management?",
-        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 5 uses per month. Paid plans start at €25/month (AI Chef Premium Pro, 150 uses) and go up to €95/month for unlimited use. There is also an annual plan at €950 equivalent to €79/month."
+        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 10 uses per month. Paid plans start at €25/month (AI Chef Premium Pro, 150 uses) and go up to €95/month for unlimited use. There is also an annual plan at €950 equivalent to €79/month."
       }
     ],
     "cta_section": {
@@ -2696,7 +2696,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -2825,7 +2825,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -3063,7 +3063,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -3395,7 +3395,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -3545,7 +3545,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -3769,7 +3769,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -3915,7 +3915,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "5 uses/month",
+          "uses": "10 uses/month",
           "highlight": false
         },
         {
@@ -4031,7 +4031,7 @@
         {
           "name": "Free",
           "price": "€0/mo",
-          "uses": "5 menus/mo",
+          "uses": "10 menus/mo",
           "highlight": false
         },
         {

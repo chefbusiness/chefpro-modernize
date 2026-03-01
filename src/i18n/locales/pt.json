@@ -942,11 +942,11 @@
       "member": {
         "name": "AI Chef Membro",
         "price": "Grátis",
-        "uses": "5/mês",
+        "uses": "10/mês",
         "description": "Ideal para auxiliares de cozinha, cozinheiros e chefs de partida",
         "features": {
           "0": "Acesso a todas as 55+ ferramentas",
-          "1": "5 créditos mensais",
+          "1": "10 créditos mensais",
           "2": "Receituários mundiais",
           "3": "Suporte por email"
         }
@@ -1081,7 +1081,7 @@
     "q2": "Posso usar AI Chef Pro se sou iniciante?",
     "a2": "Absolutamente! AI Chef Pro é projetado para profissionais de todos os níveis. Nossas ferramentas incluem explicações detalhadas, técnicas passo a passo e coaching que o ajudarão a desenvolver suas habilidades gastronômicas.",
     "q3": "Como funciona o plano gratuito?",
-    "a3": "O plano AI Chef Membro é completamente gratuito e não requer cartão de crédito. Inclui 5 usos por mês com acesso a todas as 55+ ferramentas. Quando precisar de mais, pode fazer upgrade para o plano AI Chef Premium Pro (25€/mês), Premium Plus (50€/mês), Premium Max (95€/mês) ou o plano Anual (950€/ano) a qualquer momento.",
+    "a3": "O plano AI Chef Membro é completamente gratuito e não requer cartão de crédito. Inclui 10 usos por mês com acesso a todas as 55+ ferramentas. Quando precisar de mais, pode fazer upgrade para o plano AI Chef Premium Pro (25€/mês), Premium Plus (50€/mês), Premium Max (95€/mês) ou o plano Anual (950€/ano) a qualquer momento.",
     "q4": "As receitas se adaptam a diferentes tamanhos de porção?",
     "a4": "Sim, todas as nossas ferramentas incluem cálculo automático de porções. Você pode ajustar qualquer receita para 1 pessoa ou para 1000 convidados, e nosso sistema calculará automaticamente as quantidades exatas de cada ingrediente.",
     "q5": "Inclui suporte para restrições alimentares?",
@@ -1665,7 +1665,7 @@
       },
       {
         "question": "Quanto custa usar IA para a gestão de restaurantes?",
-        "answer": "O AI Chef Pro tem um plano gratuito (AI Chef Membro) com 5 usos por mês. Os planos pagos começam em 25€/mês (AI Chef Premium Pro, 150 usos) e chegam a 95€/mês para uso ilimitado. Há também um plano anual a 950€ equivalente a 79€/mês."
+        "answer": "O AI Chef Pro tem um plano gratuito (AI Chef Membro) com 10 usos por mês. Os planos pagos começam em 25€/mês (AI Chef Premium Pro, 150 usos) e chegam a 95€/mês para uso ilimitado. Há também um plano anual a 950€ equivalente a 79€/mês."
       }
     ],
     "cta_section": {
@@ -2970,7 +2970,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -3099,7 +3099,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -3337,7 +3337,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -3669,7 +3669,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -3819,7 +3819,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -4043,7 +4043,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -4185,7 +4185,7 @@
         {
           "name": "Grátis",
           "price": "0€/mês",
-          "uses": "5 utilizações/mês",
+          "uses": "10 utilizações/mês",
           "highlight": false
         },
         {
@@ -4301,7 +4301,7 @@
         {
           "name": "Gratuito",
           "price": "0€/mês",
-          "uses": "5 menus/mês",
+          "uses": "10 menus/mês",
           "highlight": false
         },
         {

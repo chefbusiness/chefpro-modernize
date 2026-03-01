@@ -955,11 +955,11 @@
       "member": {
         "name": "AI Chef Mitglied",
         "price": "Kostenlos",
-        "uses": "5/Monat",
+        "uses": "10/Monat",
         "description": "Ideal für Küchenhelfer, Köche und Postenchefs",
         "features": {
           "0": "Zugang zu allen 55+ Tools",
-          "1": "5 monatliche Credits",
+          "1": "10 monatliche Credits",
           "2": "Weltweite Kochbücher",
           "3": "E-Mail-Support"
         }
@@ -1094,7 +1094,7 @@
     "q2": "Kann ich AI Chef Pro als Anfänger verwenden?",
     "a2": "Absolut! AI Chef Pro ist für Profis aller Erfahrungsstufen konzipiert. Unsere Tools enthalten detaillierte Erklärungen, Schritt-für-Schritt-Techniken und Coaching, die Ihnen helfen, Ihre gastronomischen Fähigkeiten zu entwickeln.",
     "q3": "Wie funktioniert der kostenlose Plan?",
-    "a3": "Der AI Chef Mitglieder-Plan ist völlig kostenlos und erfordert keine Kreditkarte. Er umfasst 5 Nutzungen pro Monat mit Zugang zu allen 55+ Tools. Wenn Sie mehr benötigen, können Sie jederzeit auf AI Chef Premium Pro (25€/Monat), Premium Plus (50€/Monat), Premium Max (95€/Monat) oder den Jahresplan (950€/Jahr) upgraden.",
+    "a3": "Der AI Chef Mitglieder-Plan ist völlig kostenlos und erfordert keine Kreditkarte. Er umfasst 10 Nutzungen pro Monat mit Zugang zu allen 55+ Tools. Wenn Sie mehr benötigen, können Sie jederzeit auf AI Chef Premium Pro (25€/Monat), Premium Plus (50€/Monat), Premium Max (95€/Monat) oder den Jahresplan (950€/Jahr) upgraden.",
     "q4": "Passen sich die Rezepte an verschiedene Portionsgrößen an?",
     "a4": "Ja, alle unsere Tools enthalten automatische Portionsberechnung. Sie können jedes Rezept für 1 Person oder für 1000 Gäste anpassen, und unser System berechnet automatisch die genauen Mengen jeder Zutat.",
     "q5": "Unterstützt es Nahrungsmittelbeschränkungen?",
@@ -1678,7 +1678,7 @@
       },
       {
         "question": "Was kostet der Einsatz von KI für die Restaurantverwaltung?",
-        "answer": "AI Chef Pro bietet einen kostenlosen Plan (AI Chef Mitglied) mit 5 Nutzungen pro Monat. Kostenpflichtige Pläne beginnen bei 25€/Monat (AI Chef Premium Pro, 150 Nutzungen) und gehen bis zu 95€/Monat für unbegrenzte Nutzung. Es gibt auch einen Jahresplan für 950€ entsprechend 79€/Monat."
+        "answer": "AI Chef Pro bietet einen kostenlosen Plan (AI Chef Mitglied) mit 10 Nutzungen pro Monat. Kostenpflichtige Pläne beginnen bei 25€/Monat (AI Chef Premium Pro, 150 Nutzungen) und gehen bis zu 95€/Monat für unbegrenzte Nutzung. Es gibt auch einen Jahresplan für 950€ entsprechend 79€/Monat."
       }
     ],
     "cta_section": {
@@ -2983,7 +2983,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -3112,7 +3112,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -3350,7 +3350,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -3694,7 +3694,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -3844,7 +3844,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -4068,7 +4068,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -4210,7 +4210,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Nutzungen/Monat",
+          "uses": "10 Nutzungen/Monat",
           "highlight": false
         },
         {
@@ -4326,7 +4326,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "5 Menüs/Monat",
+          "uses": "10 Menüs/Monat",
           "highlight": false
         },
         {
