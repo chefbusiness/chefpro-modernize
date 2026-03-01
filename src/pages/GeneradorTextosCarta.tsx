@@ -247,6 +247,18 @@ export default function GeneradorTextosCarta() {
   const faqItems: Array<{ q: string; a: string }> = t('toolMenuCopy.faq', { returnObjects: true }) as any;
   const ctaSection = t('toolMenuCopy.cta_section', { returnObjects: true }) as any;
 
+  const faqSchema = Array.isArray(faqItems) && faqItems.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   const estilos: string[] = Array.isArray(tool?.estilos) ? tool.estilos : [];
   const idiomas: string[] = Array.isArray(tool?.idiomas) ? tool.idiomas : [];
   const resultLabels = tool?.result_labels || {};
@@ -310,6 +322,9 @@ export default function GeneradorTextosCarta() {
             href={`${siteUrl}${s}`}
           />
         ))}
+        {faqSchema && (
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        )}
       </Helmet>
 
       <ModernHeader />

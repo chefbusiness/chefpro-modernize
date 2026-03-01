@@ -537,6 +537,18 @@ export default function GeneradorMenuDegustacion() {
   const faqItems = t('toolDegustacion.faq', { returnObjects: true }) as Array<{ q: string; a: string }>;
   const ctaSection = t('toolDegustacion.cta_section', { returnObjects: true }) as Record<string, string>;
 
+  const faqSchema = Array.isArray(faqItems) && faqItems.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   const estilos: string[] = Array.isArray(tool?.estilos) ? (tool.estilos as string[]) : [];
   const temporadas: string[] = Array.isArray(tool?.temporadas) ? (tool.temporadas as string[]) : [];
   const paseOptions: number[] = [5, 7, 10, 12];
@@ -638,6 +650,9 @@ export default function GeneradorMenuDegustacion() {
         {Object.entries(LANG_SLUGS).map(([l, s]) => (
           <link key={l} rel="alternate" hrefLang={l} href={`${siteUrl}${s}`} />
         ))}
+        {faqSchema && (
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        )}
       </Helmet>
 
       <ModernHeader />
