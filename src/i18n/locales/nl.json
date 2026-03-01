@@ -4202,5 +4202,121 @@
         }
       ]
     }
+  },
+  "toolDegustacion": {
+    "seo": {
+      "title": "Gratis Proefmenu Generator | AI Chef Pro",
+      "description": "Maak een compleet proefmenu met AI: poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elk gerecht. Gratis, zonder aanmelding.",
+      "keywords": "proefmenu generator, proefmenu ai, proefmenu maken restaurant, proefmenu gratis"
+    },
+    "hero": {
+      "badge": "Gratis — Geen aanmelding",
+      "h1": "AI Proefmenu Generator",
+      "subtitle": "Selecteer uw sterringrediënten, aantal gangen en culinaire stijl. Krijg direct een compleet proefmenu met poëtische naam, sensorische beschrijving, techniek en wijnadvies voor elke gang.",
+      "cta_tool": "Mijn proefmenu maken",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Ontwerp Uw Proefmenu",
+      "breadcrumb": "Proefmenu Generator",
+      "breadcrumb_hub": "Gratis Tools",
+      "faq_title": "Veelgestelde vragen",
+      "ingredientes_label": "Sterringrediënten (tot 5)",
+      "ingredientes_placeholder": "Bv: zwarte truffel",
+      "ingredientes_hint": "Druk op Enter of komma om toe te voegen. Maximaal 5.",
+      "pases_label": "Aantal gangen",
+      "estilo_label": "Culinaire stijl",
+      "estilos": [
+        "Avant-garde",
+        "Traditioneel",
+        "Fusion",
+        "Plant-based",
+        "Mediterraans"
+      ],
+      "temporada_label": "Seizoen",
+      "temporadas": [
+        "Lente",
+        "Zomer",
+        "Herfst",
+        "Winter"
+      ],
+      "restaurante_label": "Restaurantnaam (optioneel)",
+      "restaurante_placeholder": "Bv: De Tuin van Neptunus",
+      "generating": "Uw proefmenu neemt vorm aan...",
+      "generate_btn": "Mijn proefmenu maken",
+      "result_labels": {
+        "menu_title": "Proefmenu",
+        "concept": "Concept",
+        "tecnica": "Techniek",
+        "maridaje": "Wijnadvies",
+        "reset": "Nieuw menu",
+        "regenerate": "Ander concept",
+        "copy_menu": "Menu kopiëren",
+        "copied": "Gekopieerd!",
+        "cta_title": "Wilt u volledige recepten voor elke gang genereren?",
+        "cta_subtitle": "Met AI Chef Pro maakt u technische kaarten, foodkosten en stap-voor-stap recepten voor uw proefmenu.",
+        "cta_btn": "Ontdek Creatief Keuken AI →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Hoe werkt de proefmenu generator?",
+        "a": "Voer uw sterringrediënten in (tot 5), kies het aantal gangen (5, 7, 10 of 12), de culinaire stijl en het seizoen. In seconden krijgt u een volledig voorstel met poëtische naam, sensorische beschrijving, culinaire techniek en wijnadvies voor elke gang."
+      },
+      {
+        "q": "Kan ik dit menu direct in mijn restaurant gebruiken?",
+        "a": "Ja, het gegenereerde menu is een solide startpunt. Gebruik het zoals het is of pas het aan uw creativiteit aan. Het volgt de klassieke progressie: amuse-bouche → koud → warm → vis → vlees → pre-dessert → dessert."
+      },
+      {
+        "q": "Wat is het verschil tussen de culinaire stijlen?",
+        "a": "Avant-garde gebruikt creatieve kooktechnieken. Traditioneel respecteert klassieke seizoensbereiding. Fusion combineert culturele invloeden. Plant-based richt zich op plantaardige eiwitten. Mediterraans benadrukt olijfolie en aromatische kruiden."
+      },
+      {
+        "q": "Hoeveel gangen zijn het meest gebruikelijk?",
+        "a": "Menu's van 7 gangen zijn het meest gebruikelijk in high-end restaurants. Menu's van 5 gangen zijn ideaal voor toegankelijkere ervaringen. Menu's van 10-12 gangen horen bij de haute cuisine."
+      },
+      {
+        "q": "Hoe benut ik sterringrediënten het best?",
+        "a": "Voer 3 tot 5 seizoensgebonden ingrediënten in die de identiteit van uw restaurant vertegenwoordigen. De generator verdeelt ze intelligent over de gangen."
+      }
+    ],
+    "cta_section": {
+      "title": "Klaar om uw volgende proefmenu te maken?",
+      "subtitle": "Genereer voorstellen in seconden en pas het resultaat aan uw restaurantidentiteit aan.",
+      "cta_primary": "Proefmenu gratis maken",
+      "cta_secondary": "Alle tools bekijken",
+      "primary": "AI Chef Pro gratis proberen",
+      "secondary": "Alle plannen bekijken"
+    },
+    "pricing": {
+      "title": "Til uw proefmenu naar het volgende niveau",
+      "subtitle": "De gratis generator maakt de menustructuur. Met AI Chef Pro Premium genereert u volledige recepten en technische kaarten voor elke gang.",
+      "plans": [
+        {
+          "name": "Gratis",
+          "price": "€0/maand",
+          "uses": "5 menu's/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/maand",
+          "uses": "150 menu's/maand",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/maand",
+          "uses": "350 menu's/maand",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/maand",
+          "uses": "Onbeperkt",
+          "highlight": false
+        }
+      ]
+    }
   }
 }

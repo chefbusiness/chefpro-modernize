@@ -130,8 +130,7 @@ const TOOL_STYLES = [
   { bg: 'bg-indigo-50', border: 'border-indigo-200', badge: 'bg-indigo-100 text-indigo-800' },
 ];
 
-// Tools with live routes (add 7 when GeneradorMenuDegustacion is built)
-const LIVE_TOOLS = new Set([0, 1, 2, 3, 4, 5, 6]);
+const LIVE_TOOLS = new Set([0, 1, 2, 3, 4, 5, 6, 7]);
 
 // Map tool index to its slug map
 function getToolSlug(index: number, lang: string): string {

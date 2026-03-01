@@ -4232,5 +4232,121 @@
         }
       ]
     }
+  },
+  "toolDegustacion": {
+    "seo": {
+      "title": "Kostenloses Degustationsmenü-Generator | AI Chef Pro",
+      "description": "Erstellen Sie ein vollständiges Degustationsmenü mit KI: poetischer Name, sensorische Beschreibung, Technik und Weinbegleitung für jeden Gang. Kostenlos.",
+      "keywords": "degustationsmenü generator, degustationsmenü ki, degustationsmenü erstellen restaurant, degustationsmenü kostenlos"
+    },
+    "hero": {
+      "badge": "Kostenlos — Ohne Registrierung",
+      "h1": "KI-Degustationsmenü-Generator",
+      "subtitle": "Wählen Sie Ihre Star-Zutaten, Anzahl der Gänge und Kochstil. Erhalten Sie sofort ein vollständiges Degustationsmenü mit poetischem Namen, sensorischer Beschreibung, Technik und Weinbegleitung.",
+      "cta_tool": "Mein Degustationsmenü erstellen",
+      "cta_premium": "Premium-Plan →"
+    },
+    "tool": {
+      "title": "Gestalten Sie Ihr Degustationsmenü",
+      "breadcrumb": "Degustationsmenü-Generator",
+      "breadcrumb_hub": "Kostenlose Tools",
+      "faq_title": "Häufig gestellte Fragen",
+      "ingredientes_label": "Star-Zutaten (bis zu 5)",
+      "ingredientes_placeholder": "z.B. schwarzer Trüffel",
+      "ingredientes_hint": "Enter oder Komma drücken zum Hinzufügen. Maximal 5.",
+      "pases_label": "Anzahl der Gänge",
+      "estilo_label": "Kochstil",
+      "estilos": [
+        "Avantgarde",
+        "Traditionell",
+        "Fusion",
+        "Plant-based",
+        "Mediterran"
+      ],
+      "temporada_label": "Jahreszeit",
+      "temporadas": [
+        "Frühling",
+        "Sommer",
+        "Herbst",
+        "Winter"
+      ],
+      "restaurante_label": "Restaurantname (optional)",
+      "restaurante_placeholder": "z.B. Der Garten des Neptun",
+      "generating": "Ihr Degustationsmenü nimmt Form an...",
+      "generate_btn": "Mein Degustationsmenü erstellen",
+      "result_labels": {
+        "menu_title": "Degustationsmenü",
+        "concept": "Konzept",
+        "tecnica": "Technik",
+        "maridaje": "Weinbegleitung",
+        "reset": "Neues Menü",
+        "regenerate": "Anderes Konzept",
+        "copy_menu": "Menü kopieren",
+        "copied": "Kopiert!",
+        "cta_title": "Möchten Sie vollständige Rezepte für jeden Gang erstellen?",
+        "cta_subtitle": "Mit AI Chef Pro erstellen Sie Rezeptkarten, Kalkulationen und Schritt-für-Schritt-Anleitungen.",
+        "cta_btn": "Creative Kitchen AI entdecken →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Wie funktioniert der Degustationsmenü-Generator?",
+        "a": "Geben Sie Ihre Star-Zutaten ein (bis zu 5), wählen Sie die Anzahl der Gänge (5, 7, 10 oder 12), den Kochstil und die Jahreszeit. In Sekunden erhalten Sie einen vollständigen Vorschlag mit poetischem Namen, sensorischer Beschreibung, Kochtechnik und Weinbegleitung."
+      },
+      {
+        "q": "Kann ich dieses Menü direkt in meinem Restaurant verwenden?",
+        "a": "Ja, das generierte Menü ist ein solider Ausgangspunkt. Verwenden Sie es so wie es ist oder passen Sie es an Ihre Kreativität an. Es folgt der klassischen Progression: Amuse-bouche → Kalt → Warm → Fisch → Fleisch → Vordessert → Dessert."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen den Kochstilen?",
+        "a": "Avantgarde nutzt kreative Kochtechniken. Traditionell respektiert klassische Zubereitungen. Fusion kombiniert Einflüsse verschiedener Kulturen. Plant-based konzentriert sich auf pflanzliches Protein. Mediterran betont Olivenöl und aromatische Kräuter."
+      },
+      {
+        "q": "Wie viele Gänge sind üblich?",
+        "a": "7-Gänge-Menüs sind in gehobenen Restaurants am häufigsten. 5-Gänge-Menüs eignen sich für zugänglichere Erlebnisse. 10-12 Gänge sind typisch für die Haute Cuisine mit Weinbegleitung und 2-3 Stunden Erlebnis."
+      },
+      {
+        "q": "Wie nutze ich Star-Zutaten am besten?",
+        "a": "Geben Sie 3 bis 5 saisonale Zutaten ein. Der Generator verteilt sie intelligent über die Gänge und betont die Hauptzutat in den wichtigsten Gängen."
+      }
+    ],
+    "cta_section": {
+      "title": "Bereit, Ihr nächstes Degustationsmenü zu erstellen?",
+      "subtitle": "Generieren Sie Vorschläge in Sekunden und passen Sie das Ergebnis an die Identität Ihres Restaurants an.",
+      "cta_primary": "Degustationsmenü kostenlos erstellen",
+      "cta_secondary": "Alle Tools anzeigen",
+      "primary": "AI Chef Pro kostenlos testen",
+      "secondary": "Alle Pläne anzeigen"
+    },
+    "pricing": {
+      "title": "Heben Sie Ihr Degustationsmenü auf das nächste Level",
+      "subtitle": "Der kostenlose Generator erstellt die Menüstruktur. Mit AI Chef Pro Premium generieren Sie vollständige Rezepte und Rezeptkarten für jeden Gang.",
+      "plans": [
+        {
+          "name": "Kostenlos",
+          "price": "0€/Monat",
+          "uses": "5 Menüs/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/Monat",
+          "uses": "150 Menüs/Monat",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/Monat",
+          "uses": "350 Menüs/Monat",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/Monat",
+          "uses": "Unbegrenzt",
+          "highlight": false
+        }
+      ]
+    }
   }
 }

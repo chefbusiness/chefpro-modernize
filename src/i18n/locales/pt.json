@@ -4207,5 +4207,121 @@
         }
       ]
     }
+  },
+  "toolDegustacion": {
+    "seo": {
+      "title": "Gerador de Menu Degustação Gratuito | AI Chef Pro",
+      "description": "Crie um menu degustação completo com IA: nome poético, descrição sensorial, técnica e harmonização para cada prato. Gratuito, sem registo.",
+      "keywords": "gerador menu degustacao, menu degustacao ia, criar menu degustacao restaurante, menu degustacao gratis"
+    },
+    "hero": {
+      "badge": "Gratuito — Sem registo",
+      "h1": "Gerador de Menu Degustação com IA",
+      "subtitle": "Selecione os seus ingredientes estrela, número de pratos e estilo culinário. Obtenha instantaneamente um menu degustação completo com nome poético, descrição sensorial, técnica e harmonização de vinhos.",
+      "cta_tool": "Criar o meu menu degustação",
+      "cta_premium": "Plano Premium →"
+    },
+    "tool": {
+      "title": "Desenhe o Seu Menu Degustação",
+      "breadcrumb": "Gerador Menu Degustação",
+      "breadcrumb_hub": "Ferramentas Gratuitas",
+      "faq_title": "Perguntas frequentes",
+      "ingredientes_label": "Ingredientes estrela (até 5)",
+      "ingredientes_placeholder": "Ex: trufa negra",
+      "ingredientes_hint": "Prima Enter ou vírgula para adicionar. Máximo 5 ingredientes.",
+      "pases_label": "Número de pratos",
+      "estilo_label": "Estilo culinário",
+      "estilos": [
+        "Vanguardista",
+        "Tradicional",
+        "Fusão",
+        "Plant-based",
+        "Mediterrâneo"
+      ],
+      "temporada_label": "Estação",
+      "temporadas": [
+        "Primavera",
+        "Verão",
+        "Outono",
+        "Inverno"
+      ],
+      "restaurante_label": "Nome do restaurante (opcional)",
+      "restaurante_placeholder": "Ex: O Jardim de Neptuno",
+      "generating": "O seu menu degustação está a tomar forma...",
+      "generate_btn": "Criar o meu menu degustação",
+      "result_labels": {
+        "menu_title": "Menu Degustação",
+        "concept": "Conceito",
+        "tecnica": "Técnica",
+        "maridaje": "Harmonização",
+        "reset": "Novo menu",
+        "regenerate": "Outro conceito",
+        "copy_menu": "Copiar menu",
+        "copied": "Copiado!",
+        "cta_title": "Quer gerar as receitas completas de cada prato?",
+        "cta_subtitle": "Com AI Chef Pro crie fichas técnicas, custos e receitas passo a passo para o seu menu degustação.",
+        "cta_btn": "Descobrir Cozinha Criativa IA →"
+      }
+    },
+    "faq": [
+      {
+        "q": "Como funciona o gerador de menu degustação?",
+        "a": "Introduza os seus ingredientes estrela (até 5), escolha o número de pratos (5, 7, 10 ou 12), o estilo culinário e a estação. Em segundos obtém uma proposta completa com nome poético, descrição sensorial, técnica culinária e harmonização para cada prato."
+      },
+      {
+        "q": "Posso usar este menu diretamente no meu restaurante?",
+        "a": "Sim, o menu gerado é um sólido ponto de partida. Use-o tal como está ou adapte-o à sua criatividade. Segue a progressão clássica: amuse-bouche → frio → quente → peixe → carne → pré-sobremesa → sobremesa."
+      },
+      {
+        "q": "Qual é a diferença entre os estilos culinários?",
+        "a": "Vanguardista usa técnicas de cozinha criativa. Tradicional respeita preparações clássicas de temporada. Fusão combina influências culturais. Plant-based foca em proteínas vegetais. Mediterrâneo destaca o azeite e as ervas aromáticas."
+      },
+      {
+        "q": "Qual é o número de pratos mais comum?",
+        "a": "Os menus de 7 pratos são os mais comuns em restaurantes de alto nível. Os de 5 pratos são ideais para experiências mais acessíveis. Os de 10-12 pratos são típicos da alta gastronomia."
+      },
+      {
+        "q": "Como aproveito melhor os ingredientes estrela?",
+        "a": "Introduza entre 3 e 5 ingredientes de estação que representem a identidade do seu restaurante. O gerador distribuí-los-á pelos pratos de forma inteligente."
+      }
+    ],
+    "cta_section": {
+      "title": "Pronto para criar o seu próximo menu degustação?",
+      "subtitle": "Gere propostas em segundos e adapte o resultado à identidade do seu restaurante.",
+      "cta_primary": "Criar menu degustação grátis",
+      "cta_secondary": "Ver todas as ferramentas",
+      "primary": "Experimentar AI Chef Pro grátis",
+      "secondary": "Ver todos os planos"
+    },
+    "pricing": {
+      "title": "Leve o seu menu degustação ao próximo nível",
+      "subtitle": "O gerador gratuito cria a estrutura do menu. Com AI Chef Pro Premium gere receitas completas e fichas técnicas para cada prato.",
+      "plans": [
+        {
+          "name": "Gratuito",
+          "price": "0€/mês",
+          "uses": "5 menus/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "25€/mês",
+          "uses": "150 menus/mês",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "50€/mês",
+          "uses": "350 menus/mês",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "95€/mês",
+          "uses": "Ilimitado",
+          "highlight": false
+        }
+      ]
+    }
   }
 }
