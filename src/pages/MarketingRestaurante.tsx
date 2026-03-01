@@ -10,6 +10,7 @@ import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
+import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
 const APP_URL = 'https://app.aichef.pro';
 
@@ -45,8 +46,10 @@ export default function MarketingRestaurante() {
   const { t } = useTranslation();
   const { currentLanguage } = useLanguage();
 
-  const k = (key: string) => t(`landingMarketing.${key}`, { returnObjects: true });
-  const s = (key: string) => t(`landingMarketing.${key}`) as string;
+  const { formatted: userCount } = useLiveUserCount(currentLanguage);
+
+  const k = (key: string) => t(`landingMarketing.${key}`, { returnObjects: true, userCount });
+  const s = (key: string) => t(`landingMarketing.${key}`, { userCount }) as string;
 
   const results = k('results') as Array<{ metric: string; label: string }>;
   const tools = k('tools') as Array<{ title: string; description: string; keywords: string[] }>;

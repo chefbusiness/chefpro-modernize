@@ -1377,7 +1377,7 @@
       "badge": "💰 Risparmia dal primo mese",
       "h1": "Riduci i costi del tuo ristorante fino al 35% con l'IA",
       "subtitle": "Controlla gli sprechi, ottimizza il food cost e migliora il margine di ogni piatto — senza fogli Excel né calcoli manuali.",
-      "tagline": "Lo strumento usato da oltre 5.000 professionisti della gastronomia.",
+      "tagline": "Lo strumento usato da oltre {{userCount}} professionisti della gastronomia.",
       "cta_primary": "Inizia a risparmiare gratis",
       "cta_secondary": "Vedi piani e prezzi",
       "no_card": "Senza carta di credito. Accesso immediato."
@@ -1522,7 +1522,7 @@
     ],
     "cta_section": {
       "title": "Smetti di perdere denaro. Controlla i tuoi costi da oggi.",
-      "subtitle": "Unisciti a oltre 5.000 professionisti che usano già l'IA per proteggere i loro margini e far crescere il loro business.",
+      "subtitle": "Unisciti a oltre {{userCount}} professionisti che usano già l'IA per proteggere i loro margini e far crescere il loro business.",
       "primary": "Inizia gratis ora",
       "secondary": "Vedi tutti i piani"
     }
@@ -1849,7 +1849,7 @@
     ],
     "cta_section": {
       "title": "Progetta il menu che il tuo ristorante merita",
-      "subtitle": "Oltre 5.000 professionisti usano già AI Chef Pro per creare menu redditizi, attrattivi e legalmente conformi.",
+      "subtitle": "Oltre {{userCount}} professionisti usano già AI Chef Pro per creare menu redditizi, attrattivi e legalmente conformi.",
       "primary": "Crea il mio menu gratis",
       "secondary": "Vedi tutti i piani"
     },
@@ -2015,7 +2015,7 @@
     ],
     "cta_section": {
       "title": "Smetti di improvvisare. Automatizza il marketing del tuo ristorante.",
-      "subtitle": "Oltre 5.000 ristoranti usano già AI Chef Pro per creare contenuto professionale, gestire la reputazione online e attrarre più clienti.",
+      "subtitle": "Oltre {{userCount}} ristoranti usano già AI Chef Pro per creare contenuto professionale, gestire la reputazione online e attrarre più clienti.",
       "primary": "Inizia gratis ora",
       "secondary": "Vedi tutti i piani"
     },
@@ -2046,7 +2046,7 @@
         "label": "più preciso nel calcolo food cost"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "ristoranti e chef che già lo usano"
       },
       {
@@ -2218,7 +2218,7 @@
     ],
     "cta_section": {
       "title": "L'IA di ristorazione che ChatGPT non può essere",
-      "subtitle": "Oltre 5.000 chef e ristoratori hanno già scelto l'IA specializzata in gastronomia.",
+      "subtitle": "Oltre {{userCount}} chef e ristoratori hanno già scelto l'IA specializzata in gastronomia.",
       "primary": "Prova AI Chef Pro gratis",
       "secondary": "Vedi tutti i piani"
     },
@@ -2246,7 +2246,7 @@
         "label": "Risparmio giornaliero in gestione"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Ristoranti attivi"
       },
       {
@@ -2418,7 +2418,7 @@
     ],
     "cta_section": {
       "title": "Inizia a gestire la tua cucina con l'IA oggi stesso",
-      "subtitle": "Oltre 5.000 professionisti della ristorazione usano già AI Chef Pro per gestire la propria cucina con più controllo e meno tempo.",
+      "subtitle": "Oltre {{userCount}} professionisti della ristorazione usano già AI Chef Pro per gestire la propria cucina con più controllo e meno tempo.",
       "primary": "Prova gratis adesso",
       "secondary": "Vedi tutti i piani"
     }
@@ -2445,7 +2445,7 @@
         "label": "Cucine del mondo"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Ristoranti attivi"
       },
       {
@@ -2617,7 +2617,7 @@
     ],
     "cta_section": {
       "title": "Inizia a creare ricette con IA per il tuo ristorante",
-      "subtitle": "Oltre 5.000 chef e ristoratori usano già AI Chef Pro per creare ricette professionali in minuti.",
+      "subtitle": "Oltre {{userCount}} chef e ristoratori usano già AI Chef Pro per creare ricette professionali in minuti.",
       "primary": "Prova gratis adesso",
       "secondary": "Vedi tutti i piani"
     }
@@ -2648,7 +2648,7 @@
         "label": "Riduzione media dei costi"
       },
       {
-        "metric": "5.000+",
+        "metric": "{{userCount}}+",
         "label": "Ristoranti attivi"
       },
       {
@@ -2816,7 +2816,7 @@
     ],
     "cta_section": {
       "title": "Inizia a controllare il tuo food cost con l'IA oggi stesso",
-      "subtitle": "Oltre 5.000 ristoranti usano già AI Chef Pro per calcolare il food cost e proteggere il loro margine.",
+      "subtitle": "Oltre {{userCount}} ristoranti usano già AI Chef Pro per calcolare il food cost e proteggere il loro margine.",
       "primary": "Calcola il mio food cost gratis",
       "secondary": "Vedi tutti i piani"
     }
