@@ -2611,8 +2611,9 @@
         "Sans inscription ni carte bancaire",
         "Résultats instantanés dans votre navigateur",
         "Basés sur des standards réels du secteur",
-        "Utilisés par plus de 5 000 professionnels"
-      ]
+        "Utilisées par plus de {{userCount}} professionnels"
+      ],
+      "users_label": "professionnels de l'hôtellerie les utilisent déjà"
     },
     "cta": {
       "title": "Vous avez besoin de plus de puissance ?",

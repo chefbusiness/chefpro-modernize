@@ -2617,8 +2617,9 @@
         "Sin registro ni tarjeta de crédito",
         "Resultados instantáneos en tu navegador",
         "Basadas en estándares reales del sector",
-        "Usadas por más de 5.000 profesionales"
-      ]
+        "Usadas por más de {{userCount}} profesionales"
+      ],
+      "users_label": "profesionales de la hostelería ya las usan"
     },
     "cta": {
       "title": "¿Necesitas más potencia?",

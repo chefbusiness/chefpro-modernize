@@ -2875,8 +2875,9 @@
         "Geen registratie of creditcard nodig",
         "Directe resultaten in uw browser",
         "Gebaseerd op echte branchestandaarden",
-        "Gebruikt door meer dan 5.000 professionals"
-      ]
+        "Gebruikt door meer dan {{userCount}} professionals"
+      ],
+      "users_label": "horecaprofessionals gebruiken ze al"
     },
     "cta": {
       "title": "Heeft u meer kracht nodig?",

@@ -2893,8 +2893,9 @@
         "Keine Anmeldung oder Kreditkarte erforderlich",
         "Sofortige Ergebnisse in Ihrem Browser",
         "Basierend auf echten Branchenstandards",
-        "Von mehr als 5.000 Fachleuten genutzt"
-      ]
+        "Von mehr als {{userCount}} Fachleuten genutzt"
+      ],
+      "users_label": "Gastronomieprofis nutzen sie bereits"
     },
     "cta": {
       "title": "Benötigen Sie mehr Leistung?",
