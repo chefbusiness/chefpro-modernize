@@ -101,6 +101,18 @@ export default function DetectorAlergenos() {
   const seoDescription = t('toolAlergenos.seo.description');
   const languages = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
 
+  const faqSchema = Array.isArray(faqItems) && faqItems.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(f => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       <Helmet>
@@ -118,6 +130,9 @@ export default function DetectorAlergenos() {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index,follow" />
+        {faqSchema && (
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        )}
       </Helmet>
 
       <ModernHeader />
