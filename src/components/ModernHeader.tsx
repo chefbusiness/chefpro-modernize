@@ -52,6 +52,16 @@ const CHATGPT_SLUGS: Record<string, string> = {
   pt: 'pt/chatgpt-para-restaurantes',
   nl: 'nl/chatgpt-voor-restaurants',
 };
+
+const HERRAMIENTAS_GRATUITAS_SLUGS: Record<string, string> = {
+  es: 'herramientas-gratuitas',
+  en: 'en/free-tools-restaurants',
+  fr: 'fr/outils-gratuits-restaurant',
+  de: 'de/kostenlose-tools-restaurant',
+  it: 'it/strumenti-gratuiti-ristorante',
+  pt: 'pt/ferramentas-gratuitas-restaurante',
+  nl: 'nl/gratis-tools-restaurant',
+};
 import { useLanguage, type Language } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 import {
@@ -119,9 +129,9 @@ export default function ModernHeader() {
           <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink 
+                <NavigationMenuLink
                   className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
-                  href="#inicio"
+                  href={currentLanguage === 'es' ? '/' : `/${currentLanguage}`}
                 >
                   {t('nav.inicio')}
                 </NavigationMenuLink>
@@ -195,21 +205,21 @@ export default function ModernHeader() {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none text-accent">{t('categories_labels.creatividad')}</h4>
                       <div className="grid gap-1">
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#showcase-creatividad"
+                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
                         >
                           {t('nav.creatividad')}
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#showcase-creatividad"
+                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
                         >
                           {t('apps.creativity.pasteleria_creativa.name')}
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#showcase-creatividad"
+                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
                         >
                           {t('apps.creativity.food_pairing.name')}
                         </NavigationMenuLink>
@@ -218,21 +228,27 @@ export default function ModernHeader() {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none text-accent">{t('categories_labels.recetarios')}</h4>
                       <div className="grid gap-1">
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#recetarios"
+                          href={getAppUrl(currentLanguage)}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           {t('categories.world_cookbooks.europa.name')} ({t('categories.world_cookbooks.europa.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#recetarios"
+                          href={getAppUrl(currentLanguage)}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           {t('categories.world_cookbooks.latinoamerica.name')} ({t('categories.world_cookbooks.latinoamerica.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#recetarios"
+                          href={getAppUrl(currentLanguage)}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           {t('categories.world_cookbooks.asia.name')} ({t('categories.world_cookbooks.asia.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
@@ -241,21 +257,21 @@ export default function ModernHeader() {
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none text-accent">{t('showcase.business_title')}</h4>
                       <div className="grid gap-1">
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#herramientas-business"
+                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
                         >
                           {t('apps.business.mermas_gencal.name')}
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#herramientas-business"
+                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
                         >
                           {t('apps.business.id_alergenos.name')}
                         </NavigationMenuLink>
-                        <NavigationMenuLink 
+                        <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href="#herramientas-business"
+                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
                         >
                           {t('apps.business.mental_coach.name')}
                         </NavigationMenuLink>
@@ -266,9 +282,9 @@ export default function ModernHeader() {
               </NavigationMenuItem>
               
               <NavigationMenuItem>
-                <NavigationMenuLink 
+                <NavigationMenuLink
                   className="transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
-                  href="#pricing"
+                  href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                 >
                   {t('nav.precios')}
                 </NavigationMenuLink>
@@ -359,7 +375,7 @@ export default function ModernHeader() {
                     {/* Main Navigation */}
                     <div className="space-y-1">
                       <a
-                        href="#inicio"
+                        href={currentLanguage === 'es' ? '/' : `/${currentLanguage}`}
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                       >
@@ -436,7 +452,7 @@ export default function ModernHeader() {
                         </CollapsibleContent>
                       </Collapsible>
                       <a
-                        href="#pricing"
+                        href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                         onClick={() => setMobileMenuOpen(false)}
                         className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                       >
@@ -464,7 +480,7 @@ export default function ModernHeader() {
                       </h3>
                       <div className="space-y-1">
                         <a
-                          href="#showcase-creatividad"
+                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -472,7 +488,9 @@ export default function ModernHeader() {
                           {t('nav.creatividad')}
                         </a>
                         <a
-                          href="#recetarios"
+                          href={getAppUrl(currentLanguage)}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -480,7 +498,7 @@ export default function ModernHeader() {
                           {t('nav.recetarios')}
                         </a>
                         <a
-                          href="#herramientas-business"
+                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -488,7 +506,7 @@ export default function ModernHeader() {
                           {t('nav.herramientas')}
                         </a>
                         <a
-                          href="#filtro-apps"
+                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
