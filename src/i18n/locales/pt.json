@@ -2880,8 +2880,9 @@
         "Sem registo ou cartão de crédito",
         "Resultados instantâneos no seu browser",
         "Baseadas em padrões reais do setor",
-        "Usadas por mais de 5.000 profissionais"
-      ]
+        "Usadas por mais de {{userCount}} profissionais"
+      ],
+      "users_label": "profissionais da hotelaria já as usam"
     },
     "cta": {
       "title": "Precisa de mais potência?",

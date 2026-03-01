@@ -2606,8 +2606,9 @@
         "No registration or credit card needed",
         "Instant results in your browser",
         "Based on real industry standards",
-        "Used by more than 5,000 professionals"
-      ]
+        "Used by more than {{userCount}} professionals"
+      ],
+      "users_label": "hospitality professionals already use them"
     },
     "cta": {
       "title": "Need more power?",

@@ -2893,8 +2893,9 @@
         "Senza registrazione o carta di credito",
         "Risultati istantanei nel tuo browser",
         "Basati su standard reali del settore",
-        "Usati da più di 5.000 professionisti"
-      ]
+        "Usate da più di {{userCount}} professionisti"
+      ],
+      "users_label": "professionisti della ristorazione le usano già"
     },
     "cta": {
       "title": "Hai bisogno di più potenza?",
