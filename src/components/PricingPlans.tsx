@@ -4,23 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
 
-const APP_URL_MAP: Record<string, string> = {
-  es: 'https://app.aichef.pro',
-  en: 'https://app.aichef.pro',
-  fr: 'https://app.aichef.pro',
-  de: 'https://app.aichef.pro',
-  it: 'https://app.aichef.pro',
-  pt: 'https://app.aichef.pro',
-  nl: 'https://app.aichef.pro',
-};
-
 interface PricingPlansProps {
   toolKey: string;
 }
 
 export default function PricingPlans({ toolKey }: PricingPlansProps) {
   const { t } = useTranslation();
-  const { currentLanguage } = useLanguage();
+  const { getAppUrl } = useLanguage();
 
   const pricing = t(`${toolKey}.pricing`, { returnObjects: true }) as any;
   const plans = pricing?.plans as Array<{ name: string; price: string; uses: string; highlight: boolean }> | undefined;
@@ -29,7 +19,7 @@ export default function PricingPlans({ toolKey }: PricingPlansProps) {
 
   if (!pricing || !plans || !plans.length) return null;
 
-  const appUrl = APP_URL_MAP[currentLanguage] ?? APP_URL_MAP.es;
+  const appUrl = getAppUrl();
 
   return (
     <section className="py-20 bg-gradient-to-b from-muted/20 to-muted/50">
