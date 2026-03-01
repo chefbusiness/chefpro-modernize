@@ -124,6 +124,15 @@ const LANGUAGE_NATIVE_PAGES: Array<Record<Language, string>> = [
     pt: 'gerador-textos-cardapio-restaurante',
     nl: 'menukaart-tekst-generator',
   },
+  {
+    es: 'generador-menu-degustacion',
+    en: 'tasting-menu-generator',
+    fr: 'generateur-menu-degustation',
+    de: 'degustationsmenu-generator',
+    it: 'generatore-menu-degustazione',
+    pt: 'gerador-menu-degustacao',
+    nl: 'proefmenu-generator',
+  },
 ];
 
 // Returns the slug map for the current path if it matches a native-slug page, else null

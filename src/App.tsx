@@ -36,6 +36,7 @@ import DetectorAlergenos from "./pages/DetectorAlergenos";
 import CalculadoraBrigada from "./pages/CalculadoraBrigada";
 import CalendarioContenidos from "./pages/CalendarioContenidos";
 import GeneradorTextosCarta from "./pages/GeneradorTextosCarta";
+import GeneradorMenuDegustacion from "./pages/GeneradorMenuDegustacion";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -210,6 +211,15 @@ const App = () => (
             <Route path="/it/generatore-testi-menu-ristorante" element={<GeneradorTextosCarta />} />
             <Route path="/pt/gerador-textos-cardapio-restaurante" element={<GeneradorTextosCarta />} />
             <Route path="/nl/menukaart-tekst-generator" element={<GeneradorTextosCarta />} />
+
+            {/* Generador Menú Degustación — todos los idiomas */}
+            <Route path="/generador-menu-degustacion" element={<GeneradorMenuDegustacion />} />
+            <Route path="/en/tasting-menu-generator" element={<GeneradorMenuDegustacion />} />
+            <Route path="/fr/generateur-menu-degustation" element={<GeneradorMenuDegustacion />} />
+            <Route path="/de/degustationsmenu-generator" element={<GeneradorMenuDegustacion />} />
+            <Route path="/it/generatore-menu-degustazione" element={<GeneradorMenuDegustacion />} />
+            <Route path="/pt/gerador-menu-degustacao" element={<GeneradorMenuDegustacion />} />
+            <Route path="/nl/proefmenu-generator" element={<GeneradorMenuDegustacion />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -3937,5 +3937,121 @@
         }
       ]
     }
+  },
+  "toolDegustacion": {
+    "seo": {
+      "title": "Free Tasting Menu Generator | AI Chef Pro",
+      "description": "Create a complete tasting menu with AI: poetic name, sensory description, technique and wine pairing for each course. Free, no sign-up.",
+      "keywords": "tasting menu generator, ai tasting menu, create tasting menu restaurant, tasting menu free"
+    },
+    "hero": {
+      "badge": "Free — No sign-up",
+      "h1": "AI Tasting Menu Generator",
+      "subtitle": "Select your star ingredients, number of courses and culinary style. Get an instant complete tasting menu with poetic names, sensory descriptions, techniques and wine pairings for each course.",
+      "cta_tool": "Create my tasting menu",
+      "cta_premium": "Premium Plan →"
+    },
+    "tool": {
+      "title": "Design Your Tasting Menu",
+      "breadcrumb": "Tasting Menu Generator",
+      "breadcrumb_hub": "Free Tools",
+      "faq_title": "Frequently asked questions",
+      "ingredientes_label": "Star ingredients (up to 5)",
+      "ingredientes_placeholder": "e.g. black truffle",
+      "ingredientes_hint": "Press Enter or comma to add. Maximum 5 ingredients.",
+      "pases_label": "Number of courses",
+      "estilo_label": "Culinary style",
+      "estilos": [
+        "Avant-garde",
+        "Traditional",
+        "Fusion",
+        "Plant-based",
+        "Mediterranean"
+      ],
+      "temporada_label": "Season",
+      "temporadas": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ],
+      "restaurante_label": "Restaurant name (optional)",
+      "restaurante_placeholder": "e.g. The Neptune Garden",
+      "generating": "Your tasting menu is taking shape...",
+      "generate_btn": "Create my tasting menu",
+      "result_labels": {
+        "menu_title": "Tasting Menu",
+        "concept": "Concept",
+        "tecnica": "Technique",
+        "maridaje": "Wine pairing",
+        "reset": "New menu",
+        "regenerate": "Another concept",
+        "copy_menu": "Copy menu",
+        "copied": "Copied!",
+        "cta_title": "Want to generate full recipes for each course?",
+        "cta_subtitle": "With AI Chef Pro create technical sheets, food costs and step-by-step recipes for your tasting menu.",
+        "cta_btn": "Explore Creative Kitchen AI →"
+      }
+    },
+    "faq": [
+      {
+        "q": "How does the tasting menu generator work?",
+        "a": "Enter your star ingredients (up to 5), choose the number of courses (5, 7, 10 or 12), culinary style and season. In seconds you get a complete tasting menu proposal with poetic name, sensory description, culinary technique and wine pairing for each course."
+      },
+      {
+        "q": "Can I use this menu directly in my restaurant?",
+        "a": "Yes, the generated menu is a solid starting point. You can use it as-is or adapt it to your creativity and available products. It follows the classic tasting menu progression: amuse-bouche → cold → hot → fish → meat → pre-dessert → dessert."
+      },
+      {
+        "q": "What is the difference between culinary styles?",
+        "a": "Avant-garde uses creative cooking techniques. Traditional respects classic preparations with seasonal product. Fusion combines techniques from different cultures. Plant-based focuses on plant protein. Mediterranean highlights olive oil, aromatic herbs and coastal cuisine."
+      },
+      {
+        "q": "What number of courses is most common?",
+        "a": "7-course menus are most common at high-end restaurants. 5-course menus are ideal for more accessible tasting experiences. 10-12 course menus are typical of fine dining, with included pairing and 2-3 hour experiences."
+      },
+      {
+        "q": "How do I make the most of star ingredients?",
+        "a": "Enter 3 to 5 seasonal ingredients or those representing your restaurant's identity. The generator will distribute them throughout the courses, giving prominence to the key ingredient in the most prominent courses."
+      }
+    ],
+    "cta_section": {
+      "title": "Ready to create your next tasting menu?",
+      "subtitle": "Generate proposals in seconds and adapt the result to your restaurant's identity.",
+      "cta_primary": "Create tasting menu free",
+      "cta_secondary": "See all free tools",
+      "primary": "Try AI Chef Pro free",
+      "secondary": "See all plans"
+    },
+    "pricing": {
+      "title": "Take your tasting menu to the next level",
+      "subtitle": "The free generator creates the menu structure. With AI Chef Pro Premium generate full recipes, food costs and technical sheets for each course.",
+      "plans": [
+        {
+          "name": "Free",
+          "price": "€0/mo",
+          "uses": "5 menus/mo",
+          "highlight": false
+        },
+        {
+          "name": "Premium Pro",
+          "price": "€25/mo",
+          "uses": "150 menus/mo",
+          "highlight": false
+        },
+        {
+          "name": "Premium Plus",
+          "price": "€50/mo",
+          "uses": "350 menus/mo",
+          "highlight": true
+        },
+        {
+          "name": "Premium Max",
+          "price": "€95/mo",
+          "uses": "Unlimited",
+          "highlight": false
+        }
+      ]
+    }
   }
 }
