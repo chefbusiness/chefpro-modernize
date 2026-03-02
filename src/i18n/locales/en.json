@@ -2912,7 +2912,19 @@
       "start_btn": "Start test →",
       "next_steps_title": "Recommended next steps:",
       "try_free": "Try AI Chef Pro free",
-      "cta_after": "Ready to make the digital leap with AI?"
+      "cta_after": "Ready to make the digital leap with AI?",
+      "pdf_download": "Download PDF Report",
+      "pdf_filename": "digitalization-report",
+      "pdf_title": "DIGITAL DIAGNOSIS REPORT",
+      "pdf_subtitle": "Restaurant Digitalization Test — AI Chef Pro",
+      "pdf_date_label": "Analysis date",
+      "pdf_score_label": "SCORE OBTAINED",
+      "pdf_level_label": "Level",
+      "pdf_diagnosis_label": "DIAGNOSIS",
+      "pdf_steps_label": "RECOMMENDED NEXT STEPS",
+      "pdf_answers_label": "TEST ANSWERS",
+      "pdf_question_prefix": "Q",
+      "pdf_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants"
     },
     "questions": [
       {

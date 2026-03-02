@@ -3199,7 +3199,19 @@
       "start_btn": "Test starten →",
       "next_steps_title": "Empfohlene nächste Schritte:",
       "try_free": "AI Chef Pro kostenlos testen",
-      "cta_after": "Bereit für den digitalen Sprung mit KI?"
+      "cta_after": "Bereit für den digitalen Sprung mit KI?",
+      "pdf_download": "PDF-Bericht herunterladen",
+      "pdf_filename": "digitalisierungs-bericht",
+      "pdf_title": "DIGITALER DIAGNOSEBERICHT",
+      "pdf_subtitle": "Digitalisierungstest für Restaurants — AI Chef Pro",
+      "pdf_date_label": "Analysedatum",
+      "pdf_score_label": "ERREICHTER SCORE",
+      "pdf_level_label": "Stufe",
+      "pdf_diagnosis_label": "DIAGNOSE",
+      "pdf_steps_label": "EMPFOHLENE NÄCHSTE SCHRITTE",
+      "pdf_answers_label": "TEST-ANTWORTEN",
+      "pdf_question_prefix": "F",
+      "pdf_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche und Restaurants"
     },
     "questions": [
       {

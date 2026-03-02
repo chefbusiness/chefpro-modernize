@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import jsPDF from 'jspdf';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
-import { Smartphone, CheckCircle, ChevronRight, RotateCcw, ArrowRight } from 'lucide-react';
+import { Smartphone, CheckCircle, ChevronRight, RotateCcw, ArrowRight, FileDown } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import PricingPlans from '@/components/PricingPlans';
@@ -86,6 +87,154 @@ export default function TestDigitalizacion() {
     setAnswers([]);
     setScore(null);
     setStarted(false);
+  };
+
+  const downloadPDF = () => {
+    if (score === null || !result) return;
+
+    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    const W = 210;
+    const margin = 14;
+    const col = W - margin * 2;
+    let y = 0;
+
+    const today = new Date().toLocaleDateString(currentLanguage, {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+    });
+
+    // ── HEADER ────────────────────────────────────────────────────────────
+    doc.setFillColor(15, 118, 110); // teal-700
+    doc.rect(0, 0, W, 28, 'F');
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(14);
+    doc.setFont('helvetica', 'bold');
+    doc.text(tool.pdf_title, margin, 11);
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'normal');
+    doc.text(tool.pdf_subtitle, margin, 18);
+    doc.setFontSize(9);
+    doc.text('AI Chef Pro — aichef.pro', W - margin, 11, { align: 'right' });
+    y = 36;
+
+    // ── DATE ─────────────────────────────────────────────────────────────
+    doc.setFontSize(8);
+    doc.setTextColor(80, 80, 80);
+    doc.setFont('helvetica', 'normal');
+    doc.text(`${tool.pdf_date_label}: ${today}`, margin, y);
+    y += 10;
+
+    // ── SCORE BOX ────────────────────────────────────────────────────────
+    doc.setFillColor(240, 253, 250); // teal-50
+    doc.roundedRect(margin, y, col, 38, 3, 3, 'F');
+
+    // Score number (big)
+    doc.setFontSize(36);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(15, 118, 110);
+    doc.text(`${score}`, margin + 12, y + 24);
+    doc.setFontSize(14);
+    doc.setTextColor(100, 100, 100);
+    doc.text('/100', margin + 30, y + 24);
+
+    // Level label
+    doc.setFontSize(10);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(15, 118, 110);
+    doc.text(`${tool.pdf_level_label}: ${result.level}`, margin + 60, y + 12);
+
+    // Score bar
+    const barX = margin + 60;
+    const barY = y + 18;
+    const barW = col - 64;
+    doc.setFillColor(209, 250, 229);
+    doc.roundedRect(barX, barY, barW, 5, 2, 2, 'F');
+    doc.setFillColor(15, 118, 110);
+    doc.roundedRect(barX, barY, barW * (score / 100), 5, 2, 2, 'F');
+
+    // Score label
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(80, 80, 80);
+    doc.text(tool.pdf_score_label, margin + 60, y + 31);
+    y += 46;
+
+    // ── DIAGNOSIS ────────────────────────────────────────────────────────
+    doc.setFontSize(9);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(15, 118, 110);
+    doc.text(tool.pdf_diagnosis_label, margin, y);
+    y += 5;
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(50, 50, 50);
+    const descLines = doc.splitTextToSize(result.description, col);
+    doc.text(descLines, margin, y);
+    y += descLines.length * 5 + 8;
+
+    // ── NEXT STEPS ───────────────────────────────────────────────────────
+    if (Array.isArray(result.tips) && result.tips.length > 0) {
+      doc.setFontSize(9);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(15, 118, 110);
+      doc.text(tool.pdf_steps_label, margin, y);
+      y += 5;
+      result.tips.forEach((tip: string) => {
+        doc.setFillColor(240, 253, 250);
+        doc.roundedRect(margin, y, col, 9, 2, 2, 'F');
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(50, 50, 50);
+        doc.setFontSize(8);
+        doc.text('›', margin + 3, y + 6);
+        const tipLines = doc.splitTextToSize(tip, col - 10);
+        doc.text(tipLines, margin + 8, y + 6);
+        y += tipLines.length * 5 + 3;
+      });
+      y += 4;
+    }
+
+    // ── Q&A SUMMARY ──────────────────────────────────────────────────────
+    if (Array.isArray(questions) && answers.length > 0) {
+      if (y > 200) { doc.addPage(); y = 14; }
+      doc.setFontSize(9);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(15, 118, 110);
+      doc.text(tool.pdf_answers_label, margin, y);
+      y += 5;
+
+      questions.forEach((q: { id: number; text: string; options: string[] }, i: number) => {
+        if (y > 265) { doc.addPage(); y = 14; }
+        const answerIdx = answers[i];
+        const answerText = q.options?.[answerIdx] || '—';
+        const label = `${tool.pdf_question_prefix}${i + 1}`;
+
+        doc.setFillColor(i % 2 === 0 ? 248 : 243, 252, 251);
+        doc.roundedRect(margin, y, col, 13, 1, 1, 'F');
+        doc.setFontSize(7);
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(15, 118, 110);
+        doc.text(label, margin + 2, y + 5);
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(50, 50, 50);
+        const qLines = doc.splitTextToSize(q.text, col - 30);
+        doc.text(qLines, margin + 10, y + 5);
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(15, 118, 110);
+        const ansLines = doc.splitTextToSize(answerText, col - 14);
+        doc.text(ansLines, margin + 2, y + 10);
+        y += 15;
+      });
+      y += 4;
+    }
+
+    // ── FOOTER ────────────────────────────────────────────────────────────
+    doc.setFillColor(15, 118, 110);
+    doc.rect(0, 282, W, 15, 'F');
+    doc.setFontSize(7);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(255, 255, 255);
+    doc.text(tool.pdf_generated_by, W / 2, 291, { align: 'center' });
+
+    const filename = `${tool.pdf_filename}-${score}-${today.replace(/\//g, '-')}.pdf`;
+    doc.save(filename);
   };
 
   const result = score !== null ? getResult(score) : null;
@@ -244,6 +393,14 @@ export default function TestDigitalizacion() {
                     </ul>
                   </div>
                 )}
+
+                <Button
+                  onClick={downloadPDF}
+                  className="w-full bg-teal-700 hover:bg-teal-800 text-white font-semibold mb-4"
+                >
+                  <FileDown className="w-4 h-4 mr-2" />
+                  {tool.pdf_download}
+                </Button>
 
                 <div className="text-center space-y-3">
                   <p className="text-slate-700 font-medium">{tool.cta_after}</p>

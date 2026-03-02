@@ -3181,7 +3181,19 @@
       "start_btn": "Test starten →",
       "next_steps_title": "Aanbevolen volgende stappen:",
       "try_free": "AI Chef Pro gratis proberen",
-      "cta_after": "Klaar voor de digitale sprong met AI?"
+      "cta_after": "Klaar voor de digitale sprong met AI?",
+      "pdf_download": "PDF-rapport downloaden",
+      "pdf_filename": "digitaliserings-rapport",
+      "pdf_title": "DIGITAAL DIAGNOSERAPPORT",
+      "pdf_subtitle": "Digitaliseringstest voor Restaurants — AI Chef Pro",
+      "pdf_date_label": "Analysedatum",
+      "pdf_score_label": "BEHAALDE SCORE",
+      "pdf_level_label": "Niveau",
+      "pdf_diagnosis_label": "DIAGNOSE",
+      "pdf_steps_label": "AANBEVOLEN VOLGENDE STAPPEN",
+      "pdf_answers_label": "TESTANTWOORDEN",
+      "pdf_question_prefix": "V",
+      "pdf_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI-suite voor Chefs en Restaurants"
     },
     "questions": [
       {
