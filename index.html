@@ -61,10 +61,73 @@
     
     <!-- Critical Assets Preload -->
     <link rel="preload" href="/src/assets/logo-ai-chef-pro.svg" as="image" type="image/svg+xml" />
+
+    <!-- Static shell spinner — removed as soon as React mounts -->
+    <style>
+      @keyframes acp-spin { to { transform: rotate(360deg); } }
+      #app-shell { min-height: 100vh; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+      #app-shell h1 { font-size: clamp(1.25rem, 5vw, 2rem); font-weight: 700; color: #111827; margin: 0 0 0.75rem; max-width: 38rem; line-height: 1.3; }
+      #app-shell p { color: #6b7280; margin: 0 0 2rem; max-width: 34rem; font-size: 0.95rem; line-height: 1.6; }
+      #app-shell .acp-spinner { width: 36px; height: 36px; border: 3px solid #fde68a; border-top-color: #f59e0b; border-radius: 50%; animation: acp-spin 0.7s linear infinite; }
+    </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!--
+        Static SEO shell — visible to crawlers on first pass (before JS renders).
+        React replaces this content on mount. Users on slow connections see a
+        branded loading state instead of a blank white screen.
+      -->
+      <div id="app-shell">
+        <h1>AI Chef Pro: Suite de IA para Chefs y Restaurantes</h1>
+        <p>55+ herramientas de IA para chefs y restaurantes. Creatividad culinaria, gestión de costes y marketing gastronómico. Empieza gratis.</p>
+        <div class="acp-spinner" aria-label="Cargando AI Chef Pro…"></div>
+      </div>
+    </div>
+
+    <!--
+      NoScript fallback: rich semantic structure for non-JS crawlers and users.
+      Google's rendering queue may take days — this ensures Phase-1 crawl coverage
+      of all key pages and headings.
+    -->
+    <noscript>
+      <div style="max-width:860px;margin:2rem auto;padding:1.5rem 1rem;font-family:system-ui,sans-serif;color:#111827">
+        <h1 style="font-size:1.75rem;font-weight:700;margin-bottom:0.5rem">AI Chef Pro: Suite de IA para Chefs y Restaurantes</h1>
+        <p style="color:#6b7280;margin-bottom:2rem">55+ herramientas de IA para chefs y restaurantes. Menús creativos, gestión de costes, marketing gastronómico y más. Empieza gratis en aichef.pro</p>
+
+        <h2 style="font-size:1.25rem;font-weight:600;margin:1.5rem 0 0.75rem">Herramientas Gratuitas para Restaurantes</h2>
+        <ul style="margin:0 0 1.5rem;padding-left:1.25rem;line-height:2">
+          <li><a href="/calculadora-food-cost-restaurante">Calculadora de Food Cost para Restaurantes — Gratis</a></li>
+          <li><a href="/detector-alergenos-restaurante">Detector de Alérgenos EU (Reglamento 1169/2011) — Gratis</a></li>
+          <li><a href="/test-digitalizacion-restaurante">Test de Digitalización para Restaurantes — Gratis</a></li>
+          <li><a href="/simulador-rentabilidad-restaurante">Simulador de Rentabilidad de Restaurante — Gratis</a></li>
+          <li><a href="/generador-textos-carta-restaurante">Generador de Textos para Carta de Restaurante — Gratis</a></li>
+          <li><a href="/generador-menu-degustacion">Generador de Menú Degustación con IA — Gratis</a></li>
+          <li><a href="/calculadora-brigada-restaurante">Calculadora de Brigada de Cocina — Gratis</a></li>
+          <li><a href="/calendario-contenidos-restaurante">Calendario de Contenidos para Redes Sociales — Gratis</a></li>
+        </ul>
+
+        <h2 style="font-size:1.25rem;font-weight:600;margin:1.5rem 0 0.75rem">IA para Restaurantes y Hostelería</h2>
+        <ul style="margin:0 0 1.5rem;padding-left:1.25rem;line-height:2">
+          <li><a href="/herramientas-ia-para-restaurantes">Herramientas de IA para Restaurantes</a></li>
+          <li><a href="/reducir-costes-restaurante-ia">Cómo Reducir Costes en tu Restaurante con IA</a></li>
+          <li><a href="/carta-menu-restaurante-ia">Carta y Menú de Restaurante con Inteligencia Artificial</a></li>
+          <li><a href="/marketing-restaurante-ia">Marketing para Restaurantes con IA</a></li>
+          <li><a href="/chatgpt-para-restaurantes">ChatGPT para Restaurantes — IA especializada en hostelería</a></li>
+          <li><a href="/software-gestion-cocina">Software de Gestión de Cocina con IA</a></li>
+          <li><a href="/escandallos-restaurante">Escandallos para Restaurante con IA</a></li>
+        </ul>
+
+        <h2 style="font-size:1.25rem;font-weight:600;margin:1.5rem 0 0.75rem">Planes y Precios</h2>
+        <p style="margin-bottom:1.5rem">AI Chef Pro ofrece un plan gratuito con 10 usos mensuales. Los planes de pago incluyen 150 y 350 usos al mes. Visita <a href="/#pricing">aichef.pro/#pricing</a> para más información.</p>
+
+        <p style="background:#fef3c7;border:1px solid #fde68a;padding:1rem;border-radius:0.5rem;color:#92400e">
+          <strong>Necesitas JavaScript activado</strong> para usar AI Chef Pro. Por favor, activa JavaScript en tu navegador para acceder a todas las herramientas de IA.
+        </p>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
