@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import jsPDF from 'jspdf';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
-import { FileText, Copy, CheckCircle, RotateCcw, ArrowRight, Sparkles } from 'lucide-react';
+import { FileText, Copy, CheckCircle, RotateCcw, ArrowRight, Sparkles, FileDown } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import PricingPlans from '@/components/PricingPlans';
@@ -291,6 +292,117 @@ export default function GeneradorTextosCarta() {
     });
   };
 
+  const downloadPDF = () => {
+    if (!result) return;
+
+    const rl = resultLabels as Record<string, string>;
+    const T = (key: string) => rl?.[key] || key;
+    const today = new Date().toLocaleDateString(currentLanguage, { year: 'numeric', month: '2-digit', day: '2-digit' });
+    const estiloName = estilos[estiloIdx] || '';
+
+    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    const W = 210;
+    const MARGIN = 18;
+    const CW = W - MARGIN * 2;
+    let y = 0;
+
+    const checkPage = (needed: number) => {
+      if (y + needed > 270) { doc.addPage(); y = 18; }
+    };
+
+    // Header
+    doc.setFillColor(37, 99, 235); // blue-600
+    doc.rect(0, 0, W, 22, 'F');
+    doc.setFontSize(9);
+    doc.setTextColor(219, 234, 254); // blue-100
+    doc.text('AI Chef Pro — ' + T('pdf_title'), MARGIN, 9);
+    doc.setFontSize(8);
+    doc.setTextColor(147, 197, 253); // blue-300
+    doc.text(T('pdf_date_label') + ': ' + today, MARGIN, 16);
+
+    y = 32;
+
+    // Dish name
+    doc.setFontSize(22);
+    doc.setTextColor(17, 24, 39); // gray-900
+    const nameLines = doc.splitTextToSize(nombre.toUpperCase(), CW);
+    doc.text(nameLines, MARGIN, y);
+    y += nameLines.length * 10 + 2;
+
+    // Ingredients + style
+    doc.setFontSize(9);
+    doc.setTextColor(107, 114, 128); // gray-500
+    doc.text(T('pdf_ingredients_label') + ': ' + ingredientes, MARGIN, y);
+    y += 5.5;
+    if (estiloName) {
+      doc.text(T('pdf_style_label') + ': ' + estiloName, MARGIN, y);
+      y += 5.5;
+    }
+
+    // Divider
+    doc.setDrawColor(191, 219, 254); // blue-200
+    doc.setLineWidth(0.4);
+    doc.line(MARGIN, y + 2, W - MARGIN, y + 2);
+    y += 10;
+
+    // Helper to render a description section
+    const renderSection = (emoji: string, label: string, text: string, borderR: number, borderG: number, borderB: number) => {
+      checkPage(35);
+      // Left color bar
+      doc.setFillColor(borderR, borderG, borderB);
+      doc.rect(MARGIN, y - 1, 3, 18, 'F');
+      // Label
+      doc.setFontSize(8);
+      doc.setTextColor(borderR, borderG, borderB);
+      doc.text(`${emoji}  ${label.toUpperCase()}`, MARGIN + 6, y + 4);
+      y += 8;
+      // Text
+      doc.setFontSize(10);
+      doc.setTextColor(55, 65, 81); // gray-700
+      const lines = doc.splitTextToSize(text, CW - 8);
+      checkPage(lines.length * 5.5 + 8);
+      doc.text(lines, MARGIN + 6, y);
+      y += lines.length * 5.5 + 8;
+    };
+
+    renderSection('📋', T('clasica'),   result.clasica,   37, 99, 235);   // blue
+    renderSection('❤️', T('emocional'), result.emocional, 244, 63, 94);   // rose
+    renderSection('🌱', T('km0'),       result.km0,       22, 163, 74);   // green
+
+    // Divider
+    doc.setDrawColor(191, 219, 254);
+    doc.line(MARGIN, y, W - MARGIN, y);
+    y += 8;
+
+    // Alternative name section
+    checkPage(30);
+    doc.setFontSize(8);
+    doc.setTextColor(99, 102, 241); // indigo
+    doc.text('✨  ' + T('pdf_alt_name_label').toUpperCase(), MARGIN, y);
+    y += 6;
+    doc.setFontSize(14);
+    doc.setTextColor(17, 24, 39);
+    doc.text(`"${result.nombreAlternativo}"`, MARGIN, y);
+    y += 7;
+    doc.setFontSize(9);
+    doc.setTextColor(107, 114, 128);
+    const razonLines = doc.splitTextToSize(T('pdf_alt_reason_label') + ': ' + result.razonNombre, CW);
+    doc.text(razonLines, MARGIN, y);
+    y += razonLines.length * 5 + 10;
+
+    // Footer
+    doc.setDrawColor(191, 219, 254);
+    doc.setLineWidth(0.4);
+    doc.line(MARGIN, y, W - MARGIN, y);
+    y += 5;
+    doc.setFontSize(7.5);
+    doc.setTextColor(156, 163, 175);
+    doc.text(T('pdf_generated_by'), MARGIN, y);
+
+    const date = new Date().toISOString().slice(0, 10);
+    doc.save(`${T('pdf_filename')}-${date}.pdf`);
+  };
+
   const handleReset = () => {
     setNombre('');
     setIngredientes('');
@@ -490,13 +602,22 @@ export default function GeneradorTextosCarta() {
                     {resultLabels?.title || 'Descripciones para tu carta'} —{' '}
                     <span className="text-blue-600 font-semibold">{nombre}</span>
                   </h3>
-                  <button
-                    onClick={handleReset}
-                    className="flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 transition-colors"
-                  >
-                    <RotateCcw className="w-4 h-4" />
-                    {resultLabels?.reset || 'Nuevo plato'}
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={downloadPDF}
+                      className="flex items-center gap-1.5 text-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors px-3 py-1.5 rounded-lg font-medium"
+                    >
+                      <FileDown className="w-4 h-4" />
+                      {(resultLabels as Record<string, string>)?.pdf_download || 'Descargar PDF'}
+                    </button>
+                    <button
+                      onClick={handleReset}
+                      className="flex items-center gap-1 text-sm text-gray-500 hover:text-blue-600 transition-colors"
+                    >
+                      <RotateCcw className="w-4 h-4" />
+                      {resultLabels?.reset || 'Nuevo plato'}
+                    </button>
+                  </div>
                 </div>
 
                 {/* Clásica */}

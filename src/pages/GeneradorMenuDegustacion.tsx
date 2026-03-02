@@ -2,12 +2,13 @@ import { useState, KeyboardEvent, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import jsPDF from 'jspdf';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
-import { Sparkles, RotateCcw, Copy, CheckCircle, ArrowRight, Printer, X } from 'lucide-react';
+import { Sparkles, RotateCcw, Copy, CheckCircle, ArrowRight, Printer, X, FileDown } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import PricingPlans from '@/components/PricingPlans';
@@ -639,6 +640,148 @@ export default function GeneradorMenuDegustacion() {
 
   const handlePrint = () => window.print();
 
+  const downloadPDF = () => {
+    if (!result) return;
+
+    const t_pdf = (key: string) => (tool?.[key] as string) || '';
+    const today = new Date().toLocaleDateString(lang, { year: 'numeric', month: '2-digit', day: '2-digit' });
+
+    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    const W = 210;
+    const MARGIN = 18;
+    const CONTENT_W = W - MARGIN * 2;
+    let y = 0;
+
+    const checkPage = (needed: number) => {
+      if (y + needed > 270) {
+        doc.addPage();
+        y = 18;
+      }
+    };
+
+    // ── Header bar (dark indigo) ──────────────────────────────────────────────
+    doc.setFillColor(49, 46, 129); // indigo-900
+    doc.rect(0, 0, W, 22, 'F');
+    doc.setFontSize(9);
+    doc.setTextColor(199, 210, 254); // indigo-200
+    doc.text('AI Chef Pro — aichef.pro', MARGIN, 9);
+    doc.setFontSize(8);
+    doc.setTextColor(165, 180, 252); // indigo-300
+    doc.text(t_pdf('pdf_date_label') + ': ' + today, MARGIN, 16);
+    // Restaurant name on right if provided
+    if (restaurante.trim()) {
+      doc.setFontSize(9);
+      doc.setTextColor(224, 231, 255);
+      doc.text(restaurante.trim(), W - MARGIN, 13, { align: 'right' });
+    }
+
+    y = 32;
+
+    // ── Menu name ────────────────────────────────────────────────────────────
+    doc.setFontSize(20);
+    doc.setTextColor(31, 41, 55); // gray-800
+    const nameLines = doc.splitTextToSize(result.nombreMenu, CONTENT_W);
+    doc.text(nameLines, W / 2, y, { align: 'center' });
+    y += nameLines.length * 9 + 4;
+
+    // Sub-info line: N pases · Estilo · Temporada
+    const estilosArr = (tool?.estilos as string[]) || [];
+    const temporadasArr = (tool?.temporadas as string[]) || [];
+    const estiloName = estilosArr[estiloIdx] || '';
+    const temporadaName = temporadasArr[temporadaIdx] || '';
+    const subInfo = `${numPases} ${t_pdf('pdf_label_courses')}  ·  ${estiloName}  ·  ${temporadaName}`;
+    doc.setFontSize(9);
+    doc.setTextColor(99, 102, 241); // indigo-500
+    doc.text(subInfo, W / 2, y, { align: 'center' });
+    y += 8;
+
+    // Divider
+    doc.setDrawColor(199, 210, 254);
+    doc.setLineWidth(0.4);
+    doc.line(MARGIN, y, W - MARGIN, y);
+    y += 8;
+
+    // ── Concept description ──────────────────────────────────────────────────
+    doc.setFontSize(9.5);
+    doc.setTextColor(75, 85, 99); // gray-600
+    const conceptLines = doc.splitTextToSize(result.descripcionConcepto, CONTENT_W);
+    doc.text(conceptLines, MARGIN, y);
+    y += conceptLines.length * 5.5 + 6;
+
+    // ── Star ingredients ────────────────────────────────────────────────────
+    if (tags.length > 0) {
+      doc.setFontSize(8);
+      doc.setTextColor(99, 102, 241);
+      doc.text(t_pdf('pdf_label_ingredientes') + ':', MARGIN, y);
+      y += 5;
+      doc.setFontSize(8.5);
+      doc.setTextColor(55, 65, 81);
+      doc.text(tags.join('  ·  '), MARGIN + 2, y);
+      y += 6;
+    }
+
+    // Divider
+    doc.setDrawColor(199, 210, 254);
+    doc.line(MARGIN, y, W - MARGIN, y);
+    y += 8;
+
+    // ── Courses ─────────────────────────────────────────────────────────────
+    for (const pase of result.pases) {
+      checkPage(40);
+
+      // Course number circle (simulated as bold prefix)
+      doc.setFontSize(9);
+      doc.setTextColor(99, 102, 241);
+      doc.text(`${pase.numero}.`, MARGIN, y);
+
+      // Course name
+      doc.setFontSize(12);
+      doc.setTextColor(17, 24, 39); // gray-900
+      const nameW = CONTENT_W - 8;
+      const courseNameLines = doc.splitTextToSize(pase.nombre, nameW);
+      doc.text(courseNameLines, MARGIN + 8, y);
+      y += courseNameLines.length * 6 + 2;
+
+      // Description
+      doc.setFontSize(8.5);
+      doc.setTextColor(75, 85, 99);
+      const descLines = doc.splitTextToSize(pase.descripcion, CONTENT_W - 4);
+      checkPage(descLines.length * 4.8 + 10);
+      doc.text(descLines, MARGIN + 4, y);
+      y += descLines.length * 4.8 + 3;
+
+      // Técnica + Maridaje on same line
+      doc.setFontSize(7.5);
+      doc.setTextColor(107, 114, 128); // gray-500
+      const tecLabel = (rl.tecnica || 'Técnica') + ': ';
+      const marLabel = '  ·  ' + (rl.maridaje || 'Maridaje') + ': ';
+      const tecLine = tecLabel + pase.tecnica + marLabel + pase.maridaje;
+      const tecLines = doc.splitTextToSize(tecLine, CONTENT_W - 4);
+      doc.text(tecLines, MARGIN + 4, y);
+      y += tecLines.length * 4.5 + 6;
+
+      // Light separator between courses
+      doc.setDrawColor(229, 231, 235); // gray-200
+      doc.setLineWidth(0.2);
+      doc.line(MARGIN + 8, y, W - MARGIN - 8, y);
+      y += 5;
+    }
+
+    // ── Footer ───────────────────────────────────────────────────────────────
+    checkPage(16);
+    y += 4;
+    doc.setDrawColor(199, 210, 254);
+    doc.setLineWidth(0.4);
+    doc.line(MARGIN, y, W - MARGIN, y);
+    y += 6;
+    doc.setFontSize(7.5);
+    doc.setTextColor(156, 163, 175); // gray-400
+    doc.text(t_pdf('pdf_generated_by'), MARGIN, y);
+
+    const date = new Date().toISOString().slice(0, 10);
+    doc.save(`${t_pdf('pdf_filename')}-${date}.pdf`);
+  };
+
   return (
     <div className="min-h-screen bg-white flex flex-col">
       <Helmet>
@@ -860,6 +1003,13 @@ export default function GeneradorMenuDegustacion() {
                     >
                       <Printer className="w-4 h-4" />
                       <span>{isEN ? 'Print' : 'Imprimir'}</span>
+                    </button>
+                    <button
+                      onClick={downloadPDF}
+                      className="flex items-center gap-1.5 text-sm text-white bg-indigo-600 hover:bg-indigo-700 transition-colors px-3 py-1.5 rounded-lg font-medium print:hidden"
+                    >
+                      <FileDown className="w-4 h-4" />
+                      <span>{(tool?.pdf_download as string) || 'Descargar PDF Carta'}</span>
                     </button>
                     <button
                       onClick={handleRegenerate}

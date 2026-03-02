@@ -3846,7 +3846,21 @@
       "total_staff": "Totale personale",
       "ratio_label": "Rapporto coperti/cameriere",
       "reset": "Nuovo calcolo",
-      "cta_after": "Vuoi ottimizzare il costo del personale del tuo ristorante?"
+      "cta_after": "Vuoi ottimizzare il costo del personale del tuo ristorante?",
+      "export_excel": "Scarica Excel Brigata",
+      "export_filename": "brigata-ristorante",
+      "export_sheet_name": "Brigata",
+      "export_inputs_label": "DATI DI INGRESSO",
+      "export_kitchen_label": "CUCINA",
+      "export_sala_label": "SALA",
+      "export_summary_label": "RIEPILOGO GENERALE",
+      "export_covers_row": "Coperti per servizio",
+      "export_service_type_row": "Tipo di servizio",
+      "export_services_day_row": "Servizi al giorno",
+      "export_delivery_row": "Con consegna",
+      "export_delivery_orders_row": "Ordini consegna/giorno",
+      "export_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti",
+      "export_date_label": "Data"
     },
     "how_it_works": {
       "title": "Come funziona",
@@ -4003,6 +4017,17 @@
       "copied": "Copiato",
       "reset": "Nuovo calendario",
       "cta_after": "Vuoi generare i testi completi di ogni post con l'IA?",
+      "export_excel": "Scarica Excel",
+      "export_filename": "calendario-contenuti",
+      "export_sheet": "Calendario",
+      "export_col_day": "Giorno",
+      "export_col_network": "Social network",
+      "export_col_type": "Tipo di contenuto",
+      "export_col_idea": "Idea di pubblicazione",
+      "export_col_hashtags": "Hashtag",
+      "export_col_special": "Evento speciale",
+      "export_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti",
+      "export_date_label": "Data",
       "content_types": [
         {
           "emoji": "📸",
@@ -4223,7 +4248,16 @@
         "copied": "Copiato!",
         "cta_title": "Vuoi generare tutto il tuo menu ottimizzato per la SEO locale?",
         "cta_subtitle": "Scopri Menu Plate Local SEO in AI Chef Pro",
-        "cta_btn": "Vedi tutte le funzionalità →"
+        "cta_btn": "Vedi tutte le funzionalità →",
+        "pdf_download": "Scarica PDF",
+        "pdf_filename": "scheda-menu",
+        "pdf_title": "Scheda Descrizione per Carta",
+        "pdf_ingredients_label": "Ingredienti",
+        "pdf_style_label": "Stile",
+        "pdf_alt_name_label": "Nome alternativo suggerito",
+        "pdf_alt_reason_label": "Motivo",
+        "pdf_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti",
+        "pdf_date_label": "Data"
       }
     },
     "faq": [
@@ -4320,6 +4354,12 @@
       "restaurante_placeholder": "Es: Il Giardino di Nettuno",
       "generating": "Il tuo menu degustazione sta prendendo forma...",
       "generate_btn": "Crea il mio menu degustazione",
+      "pdf_download": "Scarica PDF Carta",
+      "pdf_filename": "menu-degustazione",
+      "pdf_label_ingredientes": "Ingredienti principali",
+      "pdf_label_courses": "portate",
+      "pdf_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti",
+      "pdf_date_label": "Data",
       "result_labels": {
         "menu_title": "Menu Degustazione",
         "concept": "Concetto",

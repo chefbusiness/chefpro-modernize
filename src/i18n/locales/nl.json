@@ -3826,7 +3826,21 @@
       "total_staff": "Totaal personeel",
       "ratio_label": "Verhouding couverts/ober",
       "reset": "Nieuwe berekening",
-      "cta_after": "Wilt u de personeelskosten van uw restaurant optimaliseren?"
+      "cta_after": "Wilt u de personeelskosten van uw restaurant optimaliseren?",
+      "export_excel": "Brigade Excel downloaden",
+      "export_filename": "brigade-restaurant",
+      "export_sheet_name": "Brigade",
+      "export_inputs_label": "INVOERGEGEVENS",
+      "export_kitchen_label": "KEUKEN",
+      "export_sala_label": "BEDIENING",
+      "export_summary_label": "ALGEMEEN OVERZICHT",
+      "export_covers_row": "Couverts per service",
+      "export_service_type_row": "Servicetype",
+      "export_services_day_row": "Services per dag",
+      "export_delivery_row": "Met bezorging",
+      "export_delivery_orders_row": "Bezorgbestellingen/dag",
+      "export_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI Suite voor Chefs & Restaurants",
+      "export_date_label": "Datum"
     },
     "how_it_works": {
       "title": "Hoe het werkt",
@@ -3983,6 +3997,17 @@
       "copied": "Gekopieerd",
       "reset": "Nieuwe kalender",
       "cta_after": "Wilt u complete postteksten genereren met AI?",
+      "export_excel": "Excel downloaden",
+      "export_filename": "content-kalender",
+      "export_sheet": "Kalender",
+      "export_col_day": "Dag",
+      "export_col_network": "Sociaal netwerk",
+      "export_col_type": "Inhoudstype",
+      "export_col_idea": "Post idee",
+      "export_col_hashtags": "Hashtags",
+      "export_col_special": "Speciaal evenement",
+      "export_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI Suite voor Chefs & Restaurants",
+      "export_date_label": "Datum",
       "content_types": [
         {
           "emoji": "📸",
@@ -4203,7 +4228,16 @@
         "copied": "Gekopieerd!",
         "cta_title": "Wilt u uw volledige menukaart optimaliseren voor lokale SEO?",
         "cta_subtitle": "Ontdek Menu Plate Local SEO in AI Chef Pro",
-        "cta_btn": "Alle functies bekijken →"
+        "cta_btn": "Alle functies bekijken →",
+        "pdf_download": "PDF downloaden",
+        "pdf_filename": "menukaart-beschrijving",
+        "pdf_title": "Menukaart Beschrijvingsblad",
+        "pdf_ingredients_label": "Ingrediënten",
+        "pdf_style_label": "Stijl",
+        "pdf_alt_name_label": "Voorgestelde alternatieve naam",
+        "pdf_alt_reason_label": "Reden",
+        "pdf_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI Suite voor Chefs & Restaurants",
+        "pdf_date_label": "Datum"
       }
     },
     "faq": [
@@ -4300,6 +4334,12 @@
       "restaurante_placeholder": "Bv: De Tuin van Neptunus",
       "generating": "Uw proefmenu neemt vorm aan...",
       "generate_btn": "Mijn proefmenu maken",
+      "pdf_download": "PDF Kaart downloaden",
+      "pdf_filename": "proefmenu",
+      "pdf_label_ingredientes": "Steringrediënten",
+      "pdf_label_courses": "gangen",
+      "pdf_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI Suite voor Chefs & Restaurants",
+      "pdf_date_label": "Datum",
       "result_labels": {
         "menu_title": "Proefmenu",
         "concept": "Concept",

@@ -3831,7 +3831,21 @@
       "total_staff": "Total de pessoal",
       "ratio_label": "Rácio talheres/empregado de mesa",
       "reset": "Novo cálculo",
-      "cta_after": "Quer optimizar o custo de pessoal do seu restaurante?"
+      "cta_after": "Quer optimizar o custo de pessoal do seu restaurante?",
+      "export_excel": "Descarregar Excel Brigada",
+      "export_filename": "brigada-restaurante",
+      "export_sheet_name": "Brigada",
+      "export_inputs_label": "DADOS DE ENTRADA",
+      "export_kitchen_label": "COZINHA",
+      "export_sala_label": "SALA",
+      "export_summary_label": "RESUMO GERAL",
+      "export_covers_row": "Clientes por serviço",
+      "export_service_type_row": "Tipo de serviço",
+      "export_services_day_row": "Serviços por dia",
+      "export_delivery_row": "Com entrega",
+      "export_delivery_orders_row": "Pedidos entrega/dia",
+      "export_generated_by": "Gerado com AI Chef Pro — aichef.pro | Suite IA para Chefs e Restaurantes",
+      "export_date_label": "Data"
     },
     "how_it_works": {
       "title": "Como funciona",
@@ -3988,6 +4002,17 @@
       "copied": "Copiado",
       "reset": "Novo calendário",
       "cta_after": "Quer gerar os textos completos de cada post com IA?",
+      "export_excel": "Descarregar Excel",
+      "export_filename": "calendario-conteudo",
+      "export_sheet": "Calendário",
+      "export_col_day": "Dia",
+      "export_col_network": "Rede social",
+      "export_col_type": "Tipo de conteúdo",
+      "export_col_idea": "Ideia de publicação",
+      "export_col_hashtags": "Hashtags",
+      "export_col_special": "Evento especial",
+      "export_generated_by": "Gerado com AI Chef Pro — aichef.pro | Suite IA para Chefs e Restaurantes",
+      "export_date_label": "Data",
       "content_types": [
         {
           "emoji": "📸",
@@ -4208,7 +4233,16 @@
         "copied": "Copiado!",
         "cta_title": "Quer gerar todo o seu cardápio otimizado para SEO local?",
         "cta_subtitle": "Descubra o Menu Plate Local SEO no AI Chef Pro",
-        "cta_btn": "Ver todas as funcionalidades →"
+        "cta_btn": "Ver todas as funcionalidades →",
+        "pdf_download": "Descarregar PDF",
+        "pdf_filename": "ficha-cardapio",
+        "pdf_title": "Ficha de Descrição para Cardápio",
+        "pdf_ingredients_label": "Ingredientes",
+        "pdf_style_label": "Estilo",
+        "pdf_alt_name_label": "Nome alternativo sugerido",
+        "pdf_alt_reason_label": "Motivo",
+        "pdf_generated_by": "Gerado com AI Chef Pro — aichef.pro | Suite IA para Chefs e Restaurantes",
+        "pdf_date_label": "Data"
       }
     },
     "faq": [
@@ -4305,6 +4339,12 @@
       "restaurante_placeholder": "Ex: O Jardim de Neptuno",
       "generating": "O seu menu degustação está a tomar forma...",
       "generate_btn": "Criar o meu menu degustação",
+      "pdf_download": "Descarregar PDF Carta",
+      "pdf_filename": "menu-degustacao",
+      "pdf_label_ingredientes": "Ingredientes estrela",
+      "pdf_label_courses": "pratos",
+      "pdf_generated_by": "Gerado com AI Chef Pro — aichef.pro | Suite IA para Chefs e Restaurantes",
+      "pdf_date_label": "Data",
       "result_labels": {
         "menu_title": "Menu Degustação",
         "concept": "Conceito",

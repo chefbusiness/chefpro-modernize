@@ -3557,7 +3557,21 @@
       "total_staff": "Total staff",
       "ratio_label": "Covers per waiter ratio",
       "reset": "New calculation",
-      "cta_after": "Want to optimize your restaurant's staff costs?"
+      "cta_after": "Want to optimize your restaurant's staff costs?",
+      "export_excel": "Download Brigade Excel",
+      "export_filename": "restaurant-brigade",
+      "export_sheet_name": "Brigade",
+      "export_inputs_label": "INPUT DATA",
+      "export_kitchen_label": "KITCHEN",
+      "export_sala_label": "FRONT OF HOUSE",
+      "export_summary_label": "GENERAL SUMMARY",
+      "export_covers_row": "Covers per service",
+      "export_service_type_row": "Service type",
+      "export_services_day_row": "Services per day",
+      "export_delivery_row": "With delivery",
+      "export_delivery_orders_row": "Delivery orders/day",
+      "export_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants",
+      "export_date_label": "Date"
     },
     "how_it_works": {
       "title": "How it works",
@@ -3714,6 +3728,17 @@
       "copied": "Copied",
       "reset": "New calendar",
       "cta_after": "Want to generate complete post texts with AI?",
+      "export_excel": "Download Excel",
+      "export_filename": "content-calendar",
+      "export_sheet": "Calendar",
+      "export_col_day": "Day",
+      "export_col_network": "Social network",
+      "export_col_type": "Content type",
+      "export_col_idea": "Post idea",
+      "export_col_hashtags": "Hashtags",
+      "export_col_special": "Special event",
+      "export_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants",
+      "export_date_label": "Date",
       "content_types": [
         {
           "emoji": "📸",
@@ -3934,7 +3959,16 @@
         "copied": "Copied!",
         "cta_title": "Want to generate your full menu optimised for local SEO?",
         "cta_subtitle": "Discover Menu Plate Local SEO in AI Chef Pro",
-        "cta_btn": "See all features →"
+        "cta_btn": "See all features →",
+        "pdf_download": "Download PDF",
+        "pdf_filename": "menu-copy",
+        "pdf_title": "Menu Item Description Sheet",
+        "pdf_ingredients_label": "Ingredients",
+        "pdf_style_label": "Style",
+        "pdf_alt_name_label": "Suggested alternative name",
+        "pdf_alt_reason_label": "Reason",
+        "pdf_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants",
+        "pdf_date_label": "Date"
       }
     },
     "faq": [
@@ -4035,6 +4069,12 @@
       "restaurante_placeholder": "e.g. The Neptune Garden",
       "generating": "Your tasting menu is taking shape...",
       "generate_btn": "Create my tasting menu",
+      "pdf_download": "Download PDF Menu",
+      "pdf_filename": "tasting-menu",
+      "pdf_label_ingredientes": "Star ingredients",
+      "pdf_label_courses": "courses",
+      "pdf_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants",
+      "pdf_date_label": "Date",
       "result_labels": {
         "menu_title": "Tasting Menu",
         "concept": "Concept",

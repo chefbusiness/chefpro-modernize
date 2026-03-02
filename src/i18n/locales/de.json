@@ -3856,7 +3856,21 @@
       "total_staff": "Gesamtpersonal",
       "ratio_label": "Gäste-Kellner-Verhältnis",
       "reset": "Neue Berechnung",
-      "cta_after": "Möchten Sie die Personalkosten Ihres Restaurants optimieren?"
+      "cta_after": "Möchten Sie die Personalkosten Ihres Restaurants optimieren?",
+      "export_excel": "Brigade-Excel herunterladen",
+      "export_filename": "brigaden-planung",
+      "export_sheet_name": "Brigade",
+      "export_inputs_label": "EINGABEDATEN",
+      "export_kitchen_label": "KÜCHE",
+      "export_sala_label": "SERVICE",
+      "export_summary_label": "GESAMTÜBERSICHT",
+      "export_covers_row": "Gäste pro Service",
+      "export_service_type_row": "Servicetyp",
+      "export_services_day_row": "Services pro Tag",
+      "export_delivery_row": "Mit Lieferung",
+      "export_delivery_orders_row": "Lieferbestellungen/Tag",
+      "export_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche & Restaurants",
+      "export_date_label": "Datum"
     },
     "how_it_works": {
       "title": "So funktioniert es",
@@ -4013,6 +4027,17 @@
       "copied": "Kopiert",
       "reset": "Neuer Kalender",
       "cta_after": "Möchten Sie vollständige Post-Texte mit KI generieren?",
+      "export_excel": "Excel herunterladen",
+      "export_filename": "content-kalender",
+      "export_sheet": "Kalender",
+      "export_col_day": "Tag",
+      "export_col_network": "Social Media",
+      "export_col_type": "Inhaltstyp",
+      "export_col_idea": "Beitragsidee",
+      "export_col_hashtags": "Hashtags",
+      "export_col_special": "Besonderes Ereignis",
+      "export_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche & Restaurants",
+      "export_date_label": "Datum",
       "content_types": [
         {
           "emoji": "📸",
@@ -4233,7 +4258,16 @@
         "copied": "Kopiert!",
         "cta_title": "Möchten Sie Ihre gesamte Speisekarte für lokales SEO optimieren?",
         "cta_subtitle": "Entdecken Sie Menu Plate Local SEO in AI Chef Pro",
-        "cta_btn": "Alle Funktionen ansehen →"
+        "cta_btn": "Alle Funktionen ansehen →",
+        "pdf_download": "PDF herunterladen",
+        "pdf_filename": "speisekarten-beschreibung",
+        "pdf_title": "Speisenkarten-Beschreibungsblatt",
+        "pdf_ingredients_label": "Zutaten",
+        "pdf_style_label": "Stil",
+        "pdf_alt_name_label": "Vorgeschlagener alternativer Name",
+        "pdf_alt_reason_label": "Begründung",
+        "pdf_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche & Restaurants",
+        "pdf_date_label": "Datum"
       }
     },
     "faq": [
@@ -4330,6 +4364,12 @@
       "restaurante_placeholder": "z.B. Der Garten des Neptun",
       "generating": "Ihr Degustationsmenü nimmt Form an...",
       "generate_btn": "Mein Degustationsmenü erstellen",
+      "pdf_download": "PDF Karte herunterladen",
+      "pdf_filename": "degustationsmenu",
+      "pdf_label_ingredientes": "Hauptzutaten",
+      "pdf_label_courses": "Gänge",
+      "pdf_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche & Restaurants",
+      "pdf_date_label": "Datum",
       "result_labels": {
         "menu_title": "Degustationsmenü",
         "concept": "Konzept",

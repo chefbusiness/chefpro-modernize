@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import * as XLSX from 'xlsx';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
@@ -195,6 +196,54 @@ export default function CalendarioContenidos() {
     setCopiedAll(false);
   };
 
+  const downloadExcel = () => {
+    if (!calendar || calendar.length === 0) return;
+
+    const T = (key: string) => (tool?.[key] as string) || key;
+    const today = new Date().toLocaleDateString(currentLanguage, { year: 'numeric', month: '2-digit', day: '2-digit' });
+    const monthName = months[monthIdx] || String(monthIdx + 1);
+
+    // Header row
+    const header = [
+      T('export_col_day'),
+      T('export_col_network'),
+      T('export_col_type'),
+      T('export_col_idea'),
+      T('export_col_hashtags'),
+      T('export_col_special'),
+    ];
+
+    // Data rows
+    const dataRows = calendar.map(entry => [
+      entry.day,
+      entry.network,
+      `${entry.typeEmoji} ${entry.typeName}`,
+      entry.idea,
+      entry.hashtags.join(' '),
+      entry.isSpecial ? (entry.specialName || '') : '',
+    ]);
+
+    const rows = [
+      [`AI Chef Pro — ${T('title')} — ${monthName}`],
+      ['aichef.pro'],
+      [],
+      header,
+      ...dataRows,
+      [],
+      [T('export_date_label') + ': ' + today + ' | ' + T('export_generated_by')],
+    ];
+
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+    ws['!cols'] = [{ wch: 6 }, { wch: 14 }, { wch: 22 }, { wch: 50 }, { wch: 50 }, { wch: 28 }];
+
+    const wb = XLSX.utils.book_new();
+    const sheetName = (T('export_sheet') + ' ' + monthName).slice(0, 31); // Excel limit
+    XLSX.utils.book_append_sheet(wb, ws, sheetName);
+
+    const date = new Date().toISOString().slice(0, 10);
+    XLSX.writeFile(wb, `${T('export_filename')}-${date}.xlsx`);
+  };
+
   const languages = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
   const seoTitle = t('toolCalendario.seo.title');
   const seoDescription = t('toolCalendario.seo.description');
@@ -359,7 +408,7 @@ export default function CalendarioContenidos() {
                     <h2 className="text-lg font-bold text-slate-800">{tool?.result_title}</h2>
                     <p className="text-sm text-slate-500">{calendar.length} {tool?.posts_label || 'publicaciones'} · {months[monthIdx]}</p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
                     <Button
                       onClick={copyAll}
                       variant="outline"
@@ -370,6 +419,14 @@ export default function CalendarioContenidos() {
                         ? <><CheckCircle className="w-4 h-4 mr-1 text-green-500" /> {tool?.copied}</>
                         : <><Copy className="w-4 h-4 mr-1" /> {tool?.copy_all}</>
                       }
+                    </Button>
+                    <Button
+                      onClick={downloadExcel}
+                      size="sm"
+                      className="bg-purple-700 hover:bg-purple-800 text-white font-semibold"
+                    >
+                      <Download className="w-4 h-4 mr-1" />
+                      {tool?.export_excel}
                     </Button>
                     <Button onClick={reset} variant="outline" size="sm" className="border-slate-300 text-slate-600">
                       <RotateCcw className="w-4 h-4 mr-1" />

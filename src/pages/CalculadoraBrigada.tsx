@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import * as XLSX from 'xlsx';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
-import { Users, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
+import { Users, CheckCircle, RotateCcw, ArrowRight, Download } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import PricingPlans from '@/components/PricingPlans';
@@ -118,6 +119,73 @@ export default function CalculadoraBrigada() {
     setHasDelivery(false);
     setDeliveryOrders('20');
     setResult(null);
+  };
+
+  const downloadExcel = () => {
+    if (!result) return;
+
+    const T = (key: string) => (tool?.[key] as string) || key;
+    const today = new Date().toLocaleDateString(currentLanguage, { year: 'numeric', month: '2-digit', day: '2-digit' });
+    const serviceTypeName = serviceTypes[serviceTypeIdx] || '';
+    const servicesPerDayLabel = servicesOptions[servicesPerDayIdx] || String(servicesPerDayIdx + 1);
+    const yesNo = (v: boolean) => currentLanguage === 'en' ? (v ? 'Yes' : 'No') : currentLanguage === 'de' ? (v ? 'Ja' : 'Nein') : currentLanguage === 'fr' ? (v ? 'Oui' : 'Non') : currentLanguage === 'nl' ? (v ? 'Ja' : 'Nee') : currentLanguage === 'it' ? (v ? 'Sì' : 'No') : currentLanguage === 'pt' ? (v ? 'Sim' : 'Não') : (v ? 'Sí' : 'No');
+
+    const rows: (string | number)[][] = [
+      // Row 1
+      ['AI Chef Pro — ' + T('title')],
+      // Row 2
+      ['aichef.pro'],
+      // Row 3: empty
+      [],
+      // Row 4: INPUTS header
+      [T('export_inputs_label')],
+      // Rows 5-9: inputs
+      [T('export_covers_row'), parseInt(covers) || 0],
+      [T('export_service_type_row'), serviceTypeName],
+      [T('export_services_day_row'), servicesPerDayLabel],
+      [T('export_delivery_row'), yesNo(hasDelivery)],
+      ...(hasDelivery ? [[T('export_delivery_orders_row'), parseInt(deliveryOrders) || 0]] : []),
+      // Empty row
+      [],
+      // Kitchen header
+      [T('export_kitchen_label')],
+      ...(result.headChef   > 0 ? [[T('head_chef'),      result.headChef]]   : []),
+      ...(result.sousChef   > 0 ? [[T('sous_chef'),      result.sousChef]]   : []),
+      ...(result.chefPartida> 0 ? [[T('chef_partida'),   result.chefPartida]]: []),
+      ...(result.cocinero   > 0 ? [[T('cocinero'),       result.cocinero]]   : []),
+      ...(result.ayudante   > 0 ? [[T('ayudante'),       result.ayudante]]   : []),
+      ...(result.kitchenPorter>0? [[T('kitchen_porter'), result.kitchenPorter]]: []),
+      ...(result.deliveryBonus>0? [['+ Delivery',        result.deliveryBonus]]: []),
+      [T('total_kitchen'), result.totalKitchen],
+      // Empty row
+      [],
+      // Sala header
+      [T('export_sala_label')],
+      ...(result.maitre     > 0 ? [[T('maitre'),         result.maitre]]     : []),
+      ...(result.jefeRango  > 0 ? [[T('jefe_rango'),     result.jefeRango]]  : []),
+      ...(result.camarero   > 0 ? [[T('camarero'),       result.camarero]]   : []),
+      ...(result.ayudanteSala>0 ? [[T('ayudante_sala'),  result.ayudanteSala]]: []),
+      [T('total_sala'), result.totalSala],
+      // Empty row
+      [],
+      // Summary
+      [T('export_summary_label')],
+      [T('total_staff'), result.totalStaff],
+      [T('ratio_label'), `1:${result.ratio}`],
+      // Empty
+      [],
+      // Footer
+      [T('export_date_label') + ': ' + today + ' | ' + T('export_generated_by')],
+    ];
+
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+    ws['!cols'] = [{ wch: 34 }, { wch: 16 }];
+
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, T('export_sheet_name'));
+
+    const date = new Date().toISOString().slice(0, 10);
+    XLSX.writeFile(wb, `${T('export_filename')}-${date}.xlsx`);
   };
 
   const seoTitle = t('toolBrigada.seo.title');
@@ -358,12 +426,16 @@ export default function CalculadoraBrigada() {
                     <RotateCcw className="w-4 h-4 mr-2" />
                     {tool.reset}
                   </Button>
-                  <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white flex-1">
-                    <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
-                      {tool.cta_after} <ArrowRight className="w-4 h-4 ml-1" />
-                    </a>
+                  <Button onClick={downloadExcel} className="bg-orange-700 hover:bg-orange-800 text-white font-semibold flex-1">
+                    <Download className="w-4 h-4 mr-2" />
+                    {tool.export_excel}
                   </Button>
                 </div>
+                <Button asChild className="w-full bg-orange-600 hover:bg-orange-700 text-white mt-2">
+                  <a href={getAppUrl()} target="_blank" rel="noopener noreferrer">
+                    {tool.cta_after} <ArrowRight className="w-4 h-4 ml-1" />
+                  </a>
+                </Button>
               </div>
             )}
           </div>
