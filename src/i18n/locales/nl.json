@@ -3427,7 +3427,21 @@
       "cta_after": "Wilt u de allergenen van uw hele menukaart automatisch beheren?",
       "allergens_title": "De 14 verplicht te vermelden allergenen",
       "allergens_subtitle": "Verordening (EU) 1169/2011",
-      "try_free": "AI Chef Pro gratis uitproberen"
+      "try_free": "AI Chef Pro gratis uitproberen",
+      "pdf_download": "PDF-blad downloaden",
+      "pdf_filename": "allergenen-blad",
+      "pdf_title": "TECHNISCH ALLERGENENBLAD",
+      "pdf_subtitle": "Verplichte vermelding — EU-verordening 1169/2011",
+      "pdf_dish_label": "Gerecht",
+      "pdf_date_label": "Analysedatum",
+      "pdf_ingredients_label": "GEANALYSEERDE INGREDIËNTEN",
+      "pdf_detected_label": "GEDETECTEERDE ALLERGENEN",
+      "pdf_table_label": "VOLLEDIGE VERKLARING VAN 14 ALLERGENEN",
+      "pdf_present": "AANWEZIG",
+      "pdf_not_detected": "Niet gedetecteerd",
+      "pdf_no_allergens": "Geen verplicht te vermelden allergenen gedetecteerd",
+      "pdf_warning": "⚠ Indicatief hulpmiddel. Altijd handmatig controleren voor gebruik.",
+      "pdf_generated_by": "Gegenereerd met AI Chef Pro — aichef.pro | AI-suite voor Chefs en Restaurants"
     },
     "allergens": [
       {

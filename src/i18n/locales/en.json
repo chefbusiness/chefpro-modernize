@@ -3158,7 +3158,21 @@
       "cta_after": "Want to manage allergens for your entire menu automatically?",
       "allergens_title": "The 14 mandatory allergens",
       "allergens_subtitle": "EU Regulation 1169/2011",
-      "try_free": "Try AI Chef Pro free"
+      "try_free": "Try AI Chef Pro free",
+      "pdf_download": "Download PDF Sheet",
+      "pdf_filename": "allergen-sheet",
+      "pdf_title": "ALLERGEN TECHNICAL SHEET",
+      "pdf_subtitle": "Mandatory declaration — EU Regulation 1169/2011",
+      "pdf_dish_label": "Dish",
+      "pdf_date_label": "Analysis date",
+      "pdf_ingredients_label": "ANALYZED INGREDIENTS",
+      "pdf_detected_label": "DETECTED ALLERGENS",
+      "pdf_table_label": "FULL DECLARATION OF 14 ALLERGENS",
+      "pdf_present": "PRESENT",
+      "pdf_not_detected": "Not detected",
+      "pdf_no_allergens": "No mandatory declaration allergens detected",
+      "pdf_warning": "⚠ Indicative tool. Always verify manually before use.",
+      "pdf_generated_by": "Generated with AI Chef Pro — aichef.pro | AI Suite for Chefs & Restaurants"
     },
     "allergens": [
       {

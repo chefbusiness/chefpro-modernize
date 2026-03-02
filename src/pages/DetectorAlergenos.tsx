@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import jsPDF from 'jspdf';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/hooks/useLanguage';
-import { ShieldAlert, Copy, CheckCircle, RotateCcw, ArrowRight } from 'lucide-react';
+import { ShieldAlert, Copy, CheckCircle, RotateCcw, ArrowRight, FileDown } from 'lucide-react';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import PricingPlans from '@/components/PricingPlans';
@@ -95,6 +96,156 @@ export default function DetectorAlergenos() {
       setCopied(true);
       setTimeout(() => setCopied(false), 2500);
     });
+  };
+
+  const downloadPDF = () => {
+    if (!detected) return;
+
+    const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+    const W = 210; // page width
+    const margin = 14;
+    const col = W - margin * 2;
+    let y = 0;
+
+    const today = new Date().toLocaleDateString(currentLanguage, {
+      year: 'numeric', month: '2-digit', day: '2-digit',
+    });
+
+    // ── HEADER ──────────────────────────────────────────────────────────
+    doc.setFillColor(185, 28, 28); // red-700
+    doc.rect(0, 0, W, 28, 'F');
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(14);
+    doc.setFont('helvetica', 'bold');
+    doc.text(tool.pdf_title, margin, 11);
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'normal');
+    doc.text(tool.pdf_subtitle, margin, 18);
+    doc.setFontSize(9);
+    doc.text('AI Chef Pro — aichef.pro', W - margin, 11, { align: 'right' });
+    y = 36;
+
+    // ── DISH + DATE ──────────────────────────────────────────────────────
+    doc.setTextColor(30, 30, 30);
+    doc.setFillColor(254, 242, 242); // red-50
+    doc.roundedRect(margin, y, col, 18, 3, 3, 'F');
+    doc.setFontSize(9);
+    doc.setFont('helvetica', 'bold');
+    doc.text(tool.pdf_dish_label + ':', margin + 4, y + 7);
+    doc.setFont('helvetica', 'normal');
+    doc.text(dishName || '—', margin + 30, y + 7);
+    doc.setFont('helvetica', 'bold');
+    doc.text(tool.pdf_date_label + ':', margin + 4, y + 14);
+    doc.setFont('helvetica', 'normal');
+    doc.text(today, margin + 30, y + 14);
+    y += 25;
+
+    // ── INGREDIENTS ──────────────────────────────────────────────────────
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(185, 28, 28);
+    doc.text(tool.pdf_ingredients_label, margin, y);
+    y += 5;
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(60, 60, 60);
+    const ingLines = doc.splitTextToSize(ingredients, col);
+    doc.text(ingLines, margin, y);
+    y += ingLines.length * 4.5 + 6;
+
+    // ── DETECTED ALLERGENS ───────────────────────────────────────────────
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(185, 28, 28);
+    doc.text(tool.pdf_detected_label, margin, y);
+    y += 5;
+
+    if (detected.length === 0) {
+      doc.setFillColor(240, 253, 244);
+      doc.roundedRect(margin, y, col, 10, 2, 2, 'F');
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(22, 101, 52);
+      doc.text(tool.pdf_no_allergens, margin + 3, y + 6.5);
+      y += 16;
+    } else {
+      const perRow = 3;
+      const boxW = col / perRow - 2;
+      const boxH = 12;
+      detected.forEach((a, i) => {
+        const col_x = margin + (i % perRow) * (boxW + 3);
+        const row_y = y + Math.floor(i / perRow) * (boxH + 3);
+        doc.setFillColor(254, 226, 226); // red-100
+        doc.roundedRect(col_x, row_y, boxW, boxH, 2, 2, 'F');
+        doc.setTextColor(153, 27, 27);
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(7);
+        doc.text(a.name, col_x + boxW / 2, row_y + 7.5, { align: 'center' });
+      });
+      const rows = Math.ceil(detected.length / perRow);
+      y += rows * (boxH + 3) + 6;
+    }
+
+    // ── 14 ALLERGENS TABLE ───────────────────────────────────────────────
+    if (y > 220) { doc.addPage(); y = 14; }
+
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(185, 28, 28);
+    doc.text(tool.pdf_table_label, margin, y);
+    y += 5;
+
+    const detectedIds = new Set(detected.map(a => a.id));
+    const tableColW = col / 2 - 1;
+    const rowH = 8;
+
+    allergens.forEach((a: Allergen, i: number) => {
+      const isPresent = detectedIds.has(a.id);
+      const col_x = margin + (i % 2) * (tableColW + 2);
+      const row_y = y + Math.floor(i / 2) * rowH;
+
+      if (isPresent) {
+        doc.setFillColor(254, 226, 226);
+      } else {
+        doc.setFillColor(i % 2 === 0 ? 250 : 245, 250, 250);
+      }
+      doc.roundedRect(col_x, row_y, tableColW, rowH - 1, 1, 1, 'F');
+
+      doc.setFontSize(7);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(40, 40, 40);
+      doc.text(a.name, col_x + 3, row_y + 5);
+
+      if (isPresent) {
+        doc.setFont('helvetica', 'bold');
+        doc.setTextColor(185, 28, 28);
+        doc.text(tool.pdf_present, col_x + tableColW - 3, row_y + 5, { align: 'right' });
+      } else {
+        doc.setTextColor(150, 150, 150);
+        doc.text(tool.pdf_not_detected, col_x + tableColW - 3, row_y + 5, { align: 'right' });
+      }
+    });
+
+    y += Math.ceil(allergens.length / 2) * rowH + 8;
+
+    // ── WARNING ───────────────────────────────────────────────────────────
+    if (y > 255) { doc.addPage(); y = 14; }
+    doc.setFillColor(255, 251, 235); // amber-50
+    doc.roundedRect(margin, y, col, 12, 2, 2, 'F');
+    doc.setFontSize(7);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(146, 64, 14);
+    doc.text(tool.pdf_warning, margin + 3, y + 8);
+    y += 18;
+
+    // ── FOOTER ────────────────────────────────────────────────────────────
+    doc.setFillColor(185, 28, 28);
+    doc.rect(0, 282, W, 15, 'F');
+    doc.setFontSize(7);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(255, 255, 255);
+    doc.text(tool.pdf_generated_by, W / 2, 291, { align: 'center' });
+
+    const filename = `${tool.pdf_filename}-${(dishName || 'plato').toLowerCase().replace(/\s+/g, '-').slice(0, 25)}-${today.replace(/\//g, '-')}.pdf`;
+    doc.save(filename);
   };
 
   const seoTitle = t('toolAlergenos.seo.title');
@@ -251,6 +402,14 @@ export default function DetectorAlergenos() {
                     {tool.reset}
                   </Button>
                 </div>
+
+                <Button
+                  onClick={downloadPDF}
+                  className="w-full bg-red-700 hover:bg-red-800 text-white font-semibold mt-1"
+                >
+                  <FileDown className="w-4 h-4 mr-2" />
+                  {tool.pdf_download}
+                </Button>
 
                 <div className="mt-6 pt-6 border-t border-slate-100 text-center">
                   <p className="text-slate-700 font-medium mb-3">{tool.cta_after}</p>

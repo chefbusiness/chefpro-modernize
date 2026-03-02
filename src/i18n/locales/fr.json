@@ -3163,7 +3163,21 @@
       "cta_after": "Vous voulez gérer les allergènes de toute votre carte automatiquement ?",
       "allergens_title": "Les 14 allergènes à déclaration obligatoire",
       "allergens_subtitle": "Règlement (UE) 1169/2011",
-      "try_free": "Essayer AI Chef Pro gratuitement"
+      "try_free": "Essayer AI Chef Pro gratuitement",
+      "pdf_download": "Télécharger Fiche PDF",
+      "pdf_filename": "fiche-allergenes",
+      "pdf_title": "FICHE TECHNIQUE ALLERGÈNES",
+      "pdf_subtitle": "Déclaration obligatoire — Règlement (UE) 1169/2011",
+      "pdf_dish_label": "Plat",
+      "pdf_date_label": "Date d'analyse",
+      "pdf_ingredients_label": "INGRÉDIENTS ANALYSÉS",
+      "pdf_detected_label": "ALLERGÈNES DÉTECTÉS",
+      "pdf_table_label": "DÉCLARATION COMPLÈTE DES 14 ALLERGÈNES",
+      "pdf_present": "PRÉSENT",
+      "pdf_not_detected": "Non détecté",
+      "pdf_no_allergens": "Aucun allergène à déclaration obligatoire détecté",
+      "pdf_warning": "⚠ Outil indicatif. Toujours vérifier manuellement avant utilisation.",
+      "pdf_generated_by": "Généré avec AI Chef Pro — aichef.pro | Suite IA pour Chefs et Restaurants"
     },
     "allergens": [
       {

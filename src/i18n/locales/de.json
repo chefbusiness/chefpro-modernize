@@ -3445,7 +3445,21 @@
       "cta_after": "Möchten Sie die Allergene Ihrer gesamten Speisekarte automatisch verwalten?",
       "allergens_title": "Die 14 deklarationspflichtigen Allergene",
       "allergens_subtitle": "Verordnung (EU) 1169/2011",
-      "try_free": "AI Chef Pro kostenlos testen"
+      "try_free": "AI Chef Pro kostenlos testen",
+      "pdf_download": "PDF-Blatt herunterladen",
+      "pdf_filename": "allergen-blatt",
+      "pdf_title": "TECHNISCHES ALLERGEN-DATENBLATT",
+      "pdf_subtitle": "Pflichtdeklaration — EU-Verordnung 1169/2011",
+      "pdf_dish_label": "Gericht",
+      "pdf_date_label": "Analysedatum",
+      "pdf_ingredients_label": "ANALYSIERTE ZUTATEN",
+      "pdf_detected_label": "ERKANNTE ALLERGENE",
+      "pdf_table_label": "VOLLDEKLARATION DER 14 ALLERGENE",
+      "pdf_present": "VORHANDEN",
+      "pdf_not_detected": "Nicht erkannt",
+      "pdf_no_allergens": "Keine deklarationspflichtigen Allergene erkannt",
+      "pdf_warning": "⚠ Orientierungstool. Immer manuell prüfen vor Verwendung.",
+      "pdf_generated_by": "Erstellt mit AI Chef Pro — aichef.pro | KI-Suite für Köche und Restaurants"
     },
     "allergens": [
       {

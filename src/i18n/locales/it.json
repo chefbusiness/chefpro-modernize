@@ -3445,7 +3445,21 @@
       "cta_after": "Vuoi gestire gli allergeni di tutto il tuo menu in modo automatico?",
       "allergens_title": "I 14 allergeni a dichiarazione obbligatoria",
       "allergens_subtitle": "Regolamento (UE) 1169/2011",
-      "try_free": "Prova AI Chef Pro gratis"
+      "try_free": "Prova AI Chef Pro gratis",
+      "pdf_download": "Scarica Scheda PDF",
+      "pdf_filename": "scheda-allergeni",
+      "pdf_title": "SCHEDA TECNICA ALLERGENI",
+      "pdf_subtitle": "Dichiarazione obbligatoria — Regolamento (UE) 1169/2011",
+      "pdf_dish_label": "Piatto",
+      "pdf_date_label": "Data analisi",
+      "pdf_ingredients_label": "INGREDIENTI ANALIZZATI",
+      "pdf_detected_label": "ALLERGENI RILEVATI",
+      "pdf_table_label": "DICHIARAZIONE COMPLETA DEI 14 ALLERGENI",
+      "pdf_present": "PRESENTE",
+      "pdf_not_detected": "Non rilevato",
+      "pdf_no_allergens": "Nessun allergene a dichiarazione obbligatoria rilevato",
+      "pdf_warning": "⚠ Strumento indicativo. Verificare sempre manualmente prima dell'uso.",
+      "pdf_generated_by": "Generato con AI Chef Pro — aichef.pro | Suite IA per Chef e Ristoranti"
     },
     "allergens": [
       {
