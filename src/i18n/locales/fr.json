@@ -2658,7 +2658,19 @@
       "status_bad": "🔴 Food cost élevé — Envisagez d'augmenter le prix ou de réduire les coûts",
       "tip": "💡 Référence du secteur : un food cost entre 25% et 32% est sain pour les restaurants",
       "cta_after": "Vous voulez calculer tous vos plats automatiquement ?",
-      "reset": "Nouveau calcul"
+      "reset": "Nouveau calcul",
+      "export_excel": "Télécharger Excel",
+      "export_filename": "food-cost",
+      "export_sheet_name": "Food Cost",
+      "export_generated_by": "Généré sur aichef.pro | AI Chef Pro — Suite IA pour Chefs et Restaurants",
+      "export_date_label": "Date",
+      "export_dish_section": "INFORMATIONS DU PLAT",
+      "export_ingredients_section": "INGRÉDIENTS",
+      "export_results_section": "RÉSULTATS",
+      "export_col_ingredient": "Ingrédient",
+      "export_col_qty": "Quantité (g)",
+      "export_col_price_kg": "Prix/kg (€)",
+      "export_col_cost": "Coût (€)"
     },
     "how_it_works": {
       "title": "Comment ça marche",

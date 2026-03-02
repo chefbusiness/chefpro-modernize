@@ -2653,7 +2653,19 @@
       "status_bad": "🔴 High food cost — Consider raising price or reducing costs",
       "tip": "💡 Industry benchmark: food cost between 25% and 32% is healthy for restaurants",
       "cta_after": "Want to calculate all your dishes automatically?",
-      "reset": "New calculation"
+      "reset": "New calculation",
+      "export_excel": "Download Excel",
+      "export_filename": "food-cost",
+      "export_sheet_name": "Food Cost",
+      "export_generated_by": "Generated at aichef.pro | AI Chef Pro — AI Suite for Chefs & Restaurants",
+      "export_date_label": "Date",
+      "export_dish_section": "DISH INFORMATION",
+      "export_ingredients_section": "INGREDIENTS",
+      "export_results_section": "RESULTS",
+      "export_col_ingredient": "Ingredient",
+      "export_col_qty": "Quantity (g)",
+      "export_col_price_kg": "Price/kg (€)",
+      "export_col_cost": "Cost (€)"
     },
     "how_it_works": {
       "title": "How it works",

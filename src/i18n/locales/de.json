@@ -2940,7 +2940,19 @@
       "status_bad": "🔴 Hoher Food Cost — Erwägen Sie Preiserhöhung oder Kostensenkung",
       "tip": "💡 Branchenreferenz: Food Cost zwischen 25% und 32% ist gesund für Restaurants",
       "cta_after": "Möchten Sie alle Ihre Gerichte automatisch berechnen?",
-      "reset": "Neue Berechnung"
+      "reset": "Neue Berechnung",
+      "export_excel": "Excel herunterladen",
+      "export_filename": "food-cost",
+      "export_sheet_name": "Food Cost",
+      "export_generated_by": "Erstellt auf aichef.pro | AI Chef Pro — KI-Suite für Köche und Restaurants",
+      "export_date_label": "Datum",
+      "export_dish_section": "GERICHTINFORMATIONEN",
+      "export_ingredients_section": "ZUTATEN",
+      "export_results_section": "ERGEBNISSE",
+      "export_col_ingredient": "Zutat",
+      "export_col_qty": "Menge (g)",
+      "export_col_price_kg": "Preis/kg (€)",
+      "export_col_cost": "Kosten (€)"
     },
     "how_it_works": {
       "title": "Wie es funktioniert",

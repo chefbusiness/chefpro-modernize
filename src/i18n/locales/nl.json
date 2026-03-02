@@ -2922,7 +2922,19 @@
       "status_bad": "🔴 Hoge food cost — Overweeg prijsverhoging of kostenreductie",
       "tip": "💡 Branche benchmark: food cost tussen 25% en 32% is gezond voor restaurants",
       "cta_after": "Wilt u al uw gerechten automatisch berekenen?",
-      "reset": "Nieuwe berekening"
+      "reset": "Nieuwe berekening",
+      "export_excel": "Excel downloaden",
+      "export_filename": "food-cost",
+      "export_sheet_name": "Food Cost",
+      "export_generated_by": "Gegenereerd op aichef.pro | AI Chef Pro — AI-suite voor Chefs en Restaurants",
+      "export_date_label": "Datum",
+      "export_dish_section": "GERECHTENINFORMATIE",
+      "export_ingredients_section": "INGREDIËNTEN",
+      "export_results_section": "RESULTATEN",
+      "export_col_ingredient": "Ingrediënt",
+      "export_col_qty": "Hoeveelheid (g)",
+      "export_col_price_kg": "Prijs/kg (€)",
+      "export_col_cost": "Kosten (€)"
     },
     "how_it_works": {
       "title": "Hoe het werkt",

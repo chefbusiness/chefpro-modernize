@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import * as XLSX from 'xlsx';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calculator, Plus, Trash2, ArrowRight, CheckCircle, ChefHat } from 'lucide-react';
+import { Calculator, Plus, Trash2, ArrowRight, CheckCircle, ChefHat, Download } from 'lucide-react';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
@@ -113,6 +114,67 @@ export default function CalculadoraFoodCost() {
       { id: 3, name: '', qty: '', cost: '' },
     ]);
     setResult(null);
+  };
+
+  const downloadExcel = () => {
+    if (!result) return;
+
+    const today = new Date().toLocaleDateString(lang, { year: 'numeric', month: '2-digit', day: '2-digit' });
+    const name = dishName || '—';
+    const rows: (string | number)[][] = [];
+
+    // Header branding
+    rows.push(['AI Chef Pro — ' + s('tool.title')]);
+    rows.push(['aichef.pro']);
+    rows.push([]);
+
+    // Dish info
+    rows.push([s('tool.export_dish_section')]);
+    rows.push([s('tool.dish_name_label'), name]);
+    rows.push([s('tool.portions_label'), parseFloat(portions) || 1]);
+    rows.push([s('tool.sale_price_label'), parseFloat(salePrice) || 0]);
+    rows.push([]);
+
+    // Ingredients table
+    rows.push([s('tool.export_ingredients_section')]);
+    rows.push([
+      s('tool.export_col_ingredient'),
+      s('tool.export_col_qty'),
+      s('tool.export_col_price_kg'),
+      s('tool.export_col_cost'),
+    ]);
+    for (const ing of ingredients) {
+      const qty = parseFloat(ing.qty) || 0;
+      const cost = parseFloat(ing.cost) || 0;
+      const ingCost = (qty / 1000) * cost;
+      if (ing.name || qty || cost) {
+        rows.push([ing.name || '—', qty, cost, parseFloat(ingCost.toFixed(4))]);
+      }
+    }
+    rows.push([]);
+
+    // Results
+    rows.push([s('tool.export_results_section')]);
+    rows.push([s('tool.total_cost_label'), parseFloat(result.totalCost.toFixed(2))]);
+    rows.push([s('tool.cost_per_portion_label'), parseFloat(result.costPerPortion.toFixed(2))]);
+    rows.push([s('tool.food_cost_pct_label'), parseFloat(result.foodCostPct.toFixed(1))]);
+    rows.push([s('tool.gross_margin_label'), parseFloat(result.grossMargin.toFixed(2))]);
+    rows.push([]);
+
+    // Footer branding
+    rows.push([s('tool.export_generated_by')]);
+    rows.push([s('tool.export_date_label'), today]);
+
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+
+    // Column widths
+    ws['!cols'] = [{ wch: 40 }, { wch: 20 }, { wch: 18 }, { wch: 14 }];
+
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, s('tool.export_sheet_name'));
+
+    const filename = `${s('tool.export_filename')}-${name.toLowerCase().replace(/\s+/g, '-').slice(0, 30)}-${today.replace(/\//g, '-')}.xlsx`;
+    XLSX.writeFile(wb, filename);
   };
 
   const steps = k('how_it_works.steps') as Array<{ step: string; title: string; description: string }>;
@@ -337,6 +399,18 @@ export default function CalculadoraFoodCost() {
                       </Button>
                     )}
                   </div>
+
+                  {/* Download button — shown only after calculation */}
+                  {result && (
+                    <Button
+                      variant="outline"
+                      className="w-full border-green-300 text-green-700 hover:bg-green-50"
+                      onClick={downloadExcel}
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      {s('tool.export_excel')}
+                    </Button>
+                  )}
 
                   {/* Result */}
                   {result && (
