@@ -121,54 +121,109 @@ export default function CalculadoraFoodCost() {
 
     const today = new Date().toLocaleDateString(lang, { year: 'numeric', month: '2-digit', day: '2-digit' });
     const name = dishName || '—';
-    const rows: (string | number)[][] = [];
+    const portionsVal = parseFloat(portions) || 1;
+    const salePriceVal = parseFloat(salePrice) || 0;
 
-    // Header branding
-    rows.push(['AI Chef Pro — ' + s('tool.title')]);
-    rows.push(['aichef.pro']);
-    rows.push([]);
+    // Fixed row positions (1-indexed Excel rows)
+    const ROW_PORTIONS   = 6;  // B6 — editable: changing this scales cost/portion, food cost %, margin
+    const ROW_SALEPRICE  = 7;  // B7 — editable: changing this scales food cost % and margin
+    const ING_HEADER_ROW = 10; // row with column headers
+    const ING_START_ROW  = 11; // first ingredient data row
 
-    // Dish info
-    rows.push([s('tool.export_dish_section')]);
-    rows.push([s('tool.dish_name_label'), name]);
-    rows.push([s('tool.portions_label'), parseFloat(portions) || 1]);
-    rows.push([s('tool.sale_price_label'), parseFloat(salePrice) || 0]);
-    rows.push([]);
+    const activeIngredients = ingredients.filter(i => i.name || parseFloat(i.qty) || parseFloat(i.cost));
+    const ingCount = Math.max(activeIngredients.length, 1);
+    const ING_END_ROW = ING_START_ROW + ingCount - 1;
 
-    // Ingredients table
-    rows.push([s('tool.export_ingredients_section')]);
-    rows.push([
-      s('tool.export_col_ingredient'),
-      s('tool.export_col_qty'),
-      s('tool.export_col_price_kg'),
-      s('tool.export_col_cost'),
-    ]);
-    for (const ing of ingredients) {
-      const qty = parseFloat(ing.qty) || 0;
+    const RESULTS_START = ING_END_ROW + 2; // skip one empty row
+    const ROW_TOTAL_COST    = RESULTS_START + 1;
+    const ROW_COST_PORTION  = RESULTS_START + 2;
+    const ROW_FOODCOST_PCT  = RESULTS_START + 3;
+    const ROW_MARGIN        = RESULTS_START + 4;
+    const FOOTER_ROW        = ROW_MARGIN + 2;
+
+    // Build rows array (plain values for structure)
+    const rows: (string | number)[][] = [
+      // Row 1: title
+      ['AI Chef Pro — ' + s('tool.title')],
+      // Row 2: URL
+      ['aichef.pro'],
+      // Row 3: empty
+      [],
+      // Row 4: dish section header
+      [s('tool.export_dish_section')],
+      // Row 5: dish name
+      [s('tool.dish_name_label'), name],
+      // Row 6: portions (EDITABLE — drives scaling)
+      [s('tool.portions_label'), portionsVal],
+      // Row 7: sale price (EDITABLE)
+      [s('tool.sale_price_label'), salePriceVal],
+      // Row 8: empty
+      [],
+      // Row 9: ingredients section header
+      [s('tool.export_ingredients_section')],
+      // Row 10: column headers
+      [s('tool.export_col_ingredient'), s('tool.export_col_qty'), s('tool.export_col_price_kg'), s('tool.export_col_cost')],
+    ];
+
+    // Rows 11+: ingredient data
+    activeIngredients.forEach(ing => {
+      const qty  = parseFloat(ing.qty)  || 0;
       const cost = parseFloat(ing.cost) || 0;
-      const ingCost = (qty / 1000) * cost;
-      if (ing.name || qty || cost) {
-        rows.push([ing.name || '—', qty, cost, parseFloat(ingCost.toFixed(4))]);
-      }
+      rows.push([ing.name || '—', qty, cost, 0]); // col D placeholder, replaced by formula below
+    });
+    if (activeIngredients.length === 0) {
+      rows.push(['—', 0, 0, 0]);
     }
+
+    // Empty row after ingredients
     rows.push([]);
 
-    // Results
+    // Results section header
     rows.push([s('tool.export_results_section')]);
-    rows.push([s('tool.total_cost_label'), parseFloat(result.totalCost.toFixed(2))]);
-    rows.push([s('tool.cost_per_portion_label'), parseFloat(result.costPerPortion.toFixed(2))]);
-    rows.push([s('tool.food_cost_pct_label'), parseFloat(result.foodCostPct.toFixed(1))]);
-    rows.push([s('tool.gross_margin_label'), parseFloat(result.grossMargin.toFixed(2))]);
-    rows.push([]);
+    rows.push([s('tool.total_cost_label'),       0]); // ROW_TOTAL_COST
+    rows.push([s('tool.cost_per_portion_label'),  0]); // ROW_COST_PORTION
+    rows.push([s('tool.food_cost_pct_label'),     0]); // ROW_FOODCOST_PCT
+    rows.push([s('tool.gross_margin_label'),      0]); // ROW_MARGIN
 
-    // Footer branding
+    // Empty row + footer
+    rows.push([]);
     rows.push([s('tool.export_generated_by')]);
     rows.push([s('tool.export_date_label'), today]);
 
     const ws = XLSX.utils.aoa_to_sheet(rows);
 
+    // ── Inject Excel formulas ──────────────────────────────────────────────
+    // Ingredient cost column D: =(B_row/1000)*C_row
+    activeIngredients.forEach((ing, i) => {
+      const r = ING_START_ROW + i;
+      const qty  = parseFloat(ing.qty)  || 0;
+      const cost = parseFloat(ing.cost) || 0;
+      ws[`D${r}`] = { t: 'n', v: (qty / 1000) * cost, f: `=(B${r}/1000)*C${r}` };
+    });
+
+    // Total cost: =SUM(D11:D_end)
+    ws[`B${ROW_TOTAL_COST}`] = {
+      t: 'n', v: result.totalCost,
+      f: `=SUM(D${ING_START_ROW}:D${ING_END_ROW})`,
+    };
+    // Cost per portion: =B_total/B6
+    ws[`B${ROW_COST_PORTION}`] = {
+      t: 'n', v: result.costPerPortion,
+      f: `=IF(B${ROW_PORTIONS}>0,B${ROW_TOTAL_COST}/B${ROW_PORTIONS},0)`,
+    };
+    // Food cost %: =IF(B7>0,(cost_portion/B7)*100,0)
+    ws[`B${ROW_FOODCOST_PCT}`] = {
+      t: 'n', v: result.foodCostPct,
+      f: `=IF(B${ROW_SALEPRICE}>0,(B${ROW_COST_PORTION}/B${ROW_SALEPRICE})*100,0)`,
+    };
+    // Gross margin: =B7 - cost_portion
+    ws[`B${ROW_MARGIN}`] = {
+      t: 'n', v: result.grossMargin,
+      f: `=B${ROW_SALEPRICE}-B${ROW_COST_PORTION}`,
+    };
+
     // Column widths
-    ws['!cols'] = [{ wch: 40 }, { wch: 20 }, { wch: 18 }, { wch: 14 }];
+    ws['!cols'] = [{ wch: 42 }, { wch: 22 }, { wch: 18 }, { wch: 16 }];
 
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, s('tool.export_sheet_name'));
@@ -403,8 +458,7 @@ export default function CalculadoraFoodCost() {
                   {/* Download button — shown only after calculation */}
                   {result && (
                     <Button
-                      variant="outline"
-                      className="w-full border-green-300 text-green-700 hover:bg-green-50"
+                      className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold"
                       onClick={downloadExcel}
                     >
                       <Download className="mr-2 h-4 w-4" />
