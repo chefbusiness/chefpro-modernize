@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import * as XLSX from 'xlsx';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { TrendingUp, ArrowRight, CheckCircle, ChefHat } from 'lucide-react';
+import { TrendingUp, ArrowRight, CheckCircle, ChefHat, Download } from 'lucide-react';
 import ModernHeader from '@/components/ModernHeader';
 import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
@@ -85,6 +86,149 @@ export default function SimuladorRentabilidad() {
     setFixedCosts('');
     setVariablePct('');
     setResult(null);
+  };
+
+  const downloadExcel = () => {
+    if (!result) return;
+
+    const today = new Date().toLocaleDateString(lang, { year: 'numeric', month: '2-digit', day: '2-digit' });
+    const coversVal   = parseFloat(covers)      || 0;
+    const ticketVal   = parseFloat(ticket)      || 0;
+    const fixedVal    = parseFloat(fixedCosts)  || 0;
+    const varPctVal   = parseFloat(variablePct) || 0;
+
+    // Fixed row positions (1-indexed)
+    const ROW_COVERS   = 5;   // B5 — editable
+    const ROW_TICKET   = 6;   // B6 — editable
+    const ROW_FIXED    = 7;   // B7 — editable
+    const ROW_VARPCT   = 8;   // B8 — editable
+
+    const RES_HEADER   = 10;
+    const ROW_REVENUE  = 11;  // =B5*B6
+    const ROW_VARCOSTS = 12;  // =B11*(B8/100)
+    const ROW_TOTAL    = 13;  // =B7+B12
+    const ROW_PROFIT   = 14;  // =B11-B13
+    const ROW_MARGIN   = 15;  // =IF(B11>0,(B14/B11)*100,0)
+    const ROW_BREAKEVEN= 16;  // =IF(B6*(1-B8/100)>0,CEILING(B7/(B6*(1-B8/100)),1),0)
+
+    const SCEN_HEADER  = 18;
+    const SCEN_COLS    = 19;
+    const SCEN_LOW     = 20;  // −20%
+    const SCEN_BASE    = 21;  // actual
+    const SCEN_MID     = 22;  // +20%
+    const SCEN_HIGH    = 23;  // +40%
+    const FOOTER_ROW   = 25;
+
+    // Build worksheet as array-of-arrays for initial population
+    const rows: (string | number)[][] = [
+      // Row 1: title
+      ['AI Chef Pro — ' + s('tool.title')],
+      // Row 2: URL
+      ['aichef.pro'],
+      // Row 3: empty
+      [],
+      // Row 4: inputs section header
+      [s('tool.export_inputs_label')],
+      // Row 5: covers
+      [s('tool.covers_label'), coversVal],
+      // Row 6: ticket
+      [s('tool.ticket_label'), ticketVal],
+      // Row 7: fixed costs
+      [s('tool.fixed_costs_label'), fixedVal],
+      // Row 8: variable %
+      [s('tool.variable_pct_label'), varPctVal],
+      // Row 9: empty
+      [],
+      // Row 10: results section header
+      [s('tool.export_results_label')],
+      // Row 11: monthly revenue
+      [s('tool.monthly_revenue_label'), result.monthlyRevenue],
+      // Row 12: variable costs
+      [s('tool.variable_costs_label'), result.variableCosts],
+      // Row 13: total costs
+      [s('tool.total_costs_label'), result.totalCosts],
+      // Row 14: net profit
+      [s('tool.net_profit_label'), result.netProfit],
+      // Row 15: profit margin
+      [s('tool.profit_margin_label'), result.profitMargin],
+      // Row 16: break-even
+      [s('tool.breakeven_label'), result.breakEvenCovers],
+      // Row 17: empty
+      [],
+      // Row 18: scenarios section header
+      [s('tool.export_scenarios_label')],
+      // Row 19: column headers
+      [s('tool.export_scenario_header'), s('tool.export_scenario_covers'), s('tool.export_scenario_revenue'), s('tool.export_scenario_profit'), s('tool.export_scenario_margin')],
+      // Rows 20-23: scenario data (placeholder, replaced by formulas)
+      [s('tool.export_scenario_low'),  0, 0, 0, 0],
+      [s('tool.export_scenario_base'), 0, 0, 0, 0],
+      [s('tool.export_scenario_mid'),  0, 0, 0, 0],
+      [s('tool.export_scenario_high'), 0, 0, 0, 0],
+      // Row 24: empty
+      [],
+      // Row 25: footer
+      [s('tool.export_date_label') + ': ' + today + ' | ' + s('tool.export_generated_by')],
+    ];
+
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+
+    // --- Inject formulas into results section ---
+    // Revenue: B11 = B5 * B6
+    ws[`B${ROW_REVENUE}`]  = { t: 'n', v: result.monthlyRevenue,   f: `=B${ROW_COVERS}*B${ROW_TICKET}` };
+    // Variable costs: B12 = B11 * (B8/100)
+    ws[`B${ROW_VARCOSTS}`] = { t: 'n', v: result.variableCosts,    f: `=B${ROW_REVENUE}*(B${ROW_VARPCT}/100)` };
+    // Total costs: B13 = B7 + B12
+    ws[`B${ROW_TOTAL}`]    = { t: 'n', v: result.totalCosts,       f: `=B${ROW_FIXED}+B${ROW_VARCOSTS}` };
+    // Net profit: B14 = B11 - B13
+    ws[`B${ROW_PROFIT}`]   = { t: 'n', v: result.netProfit,        f: `=B${ROW_REVENUE}-B${ROW_TOTAL}` };
+    // Profit margin %: B15 = IF(B11>0,(B14/B11)*100,0)
+    ws[`B${ROW_MARGIN}`]   = { t: 'n', v: result.profitMargin,     f: `=IF(B${ROW_REVENUE}>0,(B${ROW_PROFIT}/B${ROW_REVENUE})*100,0)` };
+    // Break-even covers: B16
+    ws[`B${ROW_BREAKEVEN}`]= { t: 'n', v: result.breakEvenCovers,  f: `=IF(B${ROW_TICKET}*(1-B${ROW_VARPCT}/100)>0,CEILING(B${ROW_FIXED}/(B${ROW_TICKET}*(1-B${ROW_VARPCT}/100)),1),0)` };
+
+    // --- Inject scenario formulas ---
+    // Each scenario: covers (C), revenue (D=C*B6), variable costs (E=D*(B8/100)), total (F=B7+E), profit (G=D-F), margin (H=IF(D>0,(G/D)*100,0))
+    // But we only have 5 columns (A-E) → A=label, B=covers, C=revenue, D=profit, E=margin
+    const scenRows: { row: number; factor: string }[] = [
+      { row: SCEN_LOW,  factor: '0.8'  },
+      { row: SCEN_BASE, factor: '1'    },
+      { row: SCEN_MID,  factor: '1.2'  },
+      { row: SCEN_HIGH, factor: '1.4'  },
+    ];
+
+    for (const { row, factor } of scenRows) {
+      // B = covers scenario
+      const bRef = `ROUND(B${ROW_COVERS}*${factor},0)`;
+      // C = revenue = covers * ticket
+      const cRef = `${bRef}*B${ROW_TICKET}`;
+      // var costs = revenue * (B8/100)
+      // total = B7 + varCosts
+      // profit = revenue - total = revenue - B7 - revenue*(B8/100) = revenue*(1-B8/100) - B7
+      const profitF = `(${cRef})*(1-B${ROW_VARPCT}/100)-B${ROW_FIXED}`;
+      const marginF = `IF((${cRef})>0,(${profitF})/(${cRef})*100,0)`;
+
+      const scenCovers  = Math.round(coversVal * parseFloat(factor));
+      const scenRevenue = scenCovers * ticketVal;
+      const scenProfit  = scenRevenue * (1 - varPctVal / 100) - fixedVal;
+      const scenMargin  = scenRevenue > 0 ? (scenProfit / scenRevenue) * 100 : 0;
+
+      ws[XLSX.utils.encode_cell({ r: row - 1, c: 1 })] = { t: 'n', v: scenCovers,  f: bRef };
+      ws[XLSX.utils.encode_cell({ r: row - 1, c: 2 })] = { t: 'n', v: scenRevenue, f: cRef };
+      ws[XLSX.utils.encode_cell({ r: row - 1, c: 3 })] = { t: 'n', v: scenProfit,  f: profitF };
+      ws[XLSX.utils.encode_cell({ r: row - 1, c: 4 })] = { t: 'n', v: scenMargin,  f: marginF };
+    }
+
+    // Column widths
+    ws['!cols'] = [{ wch: 32 }, { wch: 18 }, { wch: 18 }, { wch: 20 }, { wch: 14 }];
+
+    // Update range to include all rows
+    ws['!ref'] = XLSX.utils.encode_range({ s: { r: 0, c: 0 }, e: { r: FOOTER_ROW - 1, c: 4 } });
+
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, s('tool.export_sheet_name'));
+
+    const date = new Date().toISOString().slice(0, 10);
+    XLSX.writeFile(wb, `${s('tool.export_filename')}-${date}.xlsx`);
   };
 
   const steps = k('how_it_works.steps') as Array<{ step: string; title: string; description: string }>;
@@ -277,6 +421,17 @@ export default function SimuladorRentabilidad() {
                       </Button>
                     )}
                   </div>
+
+                  {/* Download Excel — shown only after calculation */}
+                  {result && (
+                    <Button
+                      className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold"
+                      onClick={downloadExcel}
+                    >
+                      <Download className="mr-2 h-4 w-4" />
+                      {s('tool.export_excel')}
+                    </Button>
+                  )}
 
                   {/* Result */}
                   {result && (
