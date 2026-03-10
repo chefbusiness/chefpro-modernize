@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { Badge } from '@/components/ui/badge';
 import { Sparkles } from 'lucide-react';
 
-const logos = [
-  // Hoteles & Wellness
+// Fila 1: izquierda → derecha
+const logosRow1 = [
   { src: '/logos/melia-hotels.png', alt: 'Meliá Hotels International' },
   { src: '/logos/marriot-hotels.png', alt: 'Marriott International' },
   { src: '/logos/intercontinental-hotels.png', alt: 'InterContinental Hotels & Resorts' },
@@ -11,26 +11,24 @@ const logos = [
   { src: '/logos/accor-hotels.png', alt: 'Accor Hotels' },
   { src: '/logos/villa-cortes-hotel.png', alt: 'Villa Cortés Deluxe Hotel' },
   { src: '/logos/shawellness.png', alt: 'SHA Masters of Longevity' },
-  // Aerolíneas
   { src: '/logos/qatar-airways.png', alt: 'Qatar Airways' },
   { src: '/logos/singapore-airlines.png', alt: 'Singapore Airlines' },
-  // Restaurantes/Bares/Chefs
   { src: '/logos/fierro.png', alt: 'Fierro by Carito y Germán' },
   { src: '/logos/stillroom.png', alt: 'Stillroom - El Arte de lo Invisible' },
   { src: '/logos/taste-1973.png', alt: '1973 Taste Restaurant' },
+];
+
+// Fila 2: derecha → izquierda
+const logosRow2 = [
   { src: '/logos/grupo-dani-garcia.png', alt: 'Grupo Dani García' },
-  // Grupos Hostelería & Restauración
   { src: '/logos/amrest-group.png', alt: 'AmRest Group' },
   { src: '/logos/restaurant-brands-europe.png', alt: 'Restaurant Brands Europe' },
   { src: '/logos/tragaluz.png', alt: 'Grupo Tragaluz' },
   { src: '/logos/la-maquina.png', alt: 'La Máquina Grupo de Restauración' },
-  // Escuelas & Formación
   { src: '/logos/hecansa-canarias.png', alt: 'Hecansa Hoteles Escuela de Canarias' },
   { src: '/logos/basque-culinary-center.png', alt: 'Basque Culinary Center' },
   { src: '/logos/hosteleria-leioa.png', alt: 'Ostalaritza Leioa Hostelería' },
-  // Alimentación & Proveedores
   { src: '/logos/albi-alimentacion.png', alt: 'Albi Alimentación & Bienestar' },
-  // Grupos Empresariales & Innovación
   { src: '/logos/venture-group-tenerife.png', alt: 'Venture Group Tenerife' },
   { src: '/logos/labe.png', alt: 'Lab-e' },
 ];
@@ -69,24 +67,41 @@ export default function TrustedByLogos() {
         </div>
       </div>
       
-      {/* Carrusel de logos */}
-      <div className="relative">
+      {/* Carrusel de logos — dos filas en direcciones opuestas */}
+      <div className="relative flex flex-col gap-6">
         {/* Fade edges para fondo oscuro */}
         <div className="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
-        
-        <div className="logo-track flex items-center gap-12 md:gap-16 lg:gap-20">
-          {/* Duplicate logos for infinite loop effect */}
-          {[...logos, ...logos, ...logos, ...logos].map((logo, i) => (
-            <div 
+
+        {/* Fila 1: izquierda → derecha */}
+        <div className="logo-track logo-track-left flex items-center gap-6 md:gap-8 lg:gap-10">
+          {[...logosRow1, ...logosRow1, ...logosRow1, ...logosRow1].map((logo, i) => (
+            <div
               key={i}
-              className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-5 logo-glow transition-all duration-300"
+              className="flex-shrink-0 logo-item bg-white rounded-2xl overflow-hidden p-3 md:p-4 cursor-default"
             >
-              <img 
-                src={logo.src} 
+              <img
+                src={logo.src}
                 alt={logo.alt}
                 loading="lazy"
-                className="h-14 md:h-16 lg:h-20 w-auto object-contain"
+                className="h-10 md:h-12 lg:h-14 w-auto object-contain"
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Fila 2: derecha → izquierda */}
+        <div className="logo-track logo-track-right flex items-center gap-6 md:gap-8 lg:gap-10">
+          {[...logosRow2, ...logosRow2, ...logosRow2, ...logosRow2].map((logo, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 logo-item bg-white rounded-2xl overflow-hidden p-3 md:p-4 cursor-default"
+            >
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                loading="lazy"
+                className="h-10 md:h-12 lg:h-14 w-auto object-contain"
               />
             </div>
           ))}

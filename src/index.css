@@ -345,31 +345,36 @@
     @apply bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400;
   }
 
-  /* Infinite scroll logo track animation */
-  .logo-track {
-    animation: scroll-logos 40s linear infinite;
-  }
-
+  /* Infinite scroll logo track animations — two rows, opposite directions */
   .logo-track:hover {
     animation-play-state: paused;
   }
 
-  @keyframes scroll-logos {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  .logo-track-left {
+    animation: scroll-left 30s linear infinite;
   }
 
-  /* Logo glow effect for dark backgrounds */
-  .logo-glow {
-    filter: brightness(1.1) drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+  .logo-track-right {
+    animation: scroll-right 35s linear infinite;
   }
 
-  .logo-glow:hover {
-    filter: brightness(1.25) drop-shadow(0 0 15px rgba(251, 191, 36, 0.5));
-    transform: scale(1.1);
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  /* Logo card hover effect */
+  .logo-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .logo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.15);
   }
 }
