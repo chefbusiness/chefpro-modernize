@@ -1,0 +1,31 @@
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
+
+export default function BuyBox() {
+  return (
+    <section id="comprar" className="py-16 md:py-24 px-4">
+      <div className="max-w-lg mx-auto">
+        <div className="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center">
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <span className="text-2xl text-gray-500 line-through">€97</span>
+            <span className="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
+            <span className="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">
+              -90%
+            </span>
+          </div>
+          <p className="text-gray-400 text-sm mb-6">
+            Precio especial de lanzamiento — 90% de descuento
+          </p>
+          <a
+            href={stripeLink}
+            className="inline-block w-full px-8 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            SÍ, QUIERO EL EBOOK — €9
+          </a>
+          <p className="text-xs text-gray-500 mt-4">
+            Pago 100% seguro. Acceso inmediato por email
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

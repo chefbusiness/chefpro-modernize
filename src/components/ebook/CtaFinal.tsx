@@ -1,0 +1,48 @@
+import { Check } from 'lucide-react';
+
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
+
+const items = [
+  'eBook completo con 300+ prompts para toda la hostelería',
+  'BONUS 1: Mega Pack Cocinas del Mundo (€47)',
+  'BONUS 2: Guía Prompt Engineering Gastronómico (€27)',
+  'BONUS 3: Cheat Sheet Descargable (€23)',
+  'Actualizaciones gratuitas de por vida',
+  'Garantía de devolución 30 días',
+];
+
+export default function CtaFinal() {
+  return (
+    <section className="py-16 md:py-24 px-4">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+          Es Hora de Dominar la IA en tu Negocio
+        </h2>
+        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          No dejes pasar esta oportunidad. Únete a miles de profesionales de la hostelería y restauración que ya están obteniendo resultados con IA.
+        </p>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
+          <div className="flex flex-col items-start gap-3 mb-8 max-w-md mx-auto">
+            {items.map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
+                <span className="text-gray-200 text-left">{item}</span>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href={stripeLink}
+            className="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
+          >
+            SÍ, QUIERO EL EBOOK — €9
+          </a>
+          <p className="text-xs text-gray-500 mt-4">
+            Pago 100% seguro. Acceso inmediato por email
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

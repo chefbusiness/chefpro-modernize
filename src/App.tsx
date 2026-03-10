@@ -37,6 +37,10 @@ import CalculadoraBrigada from "./pages/CalculadoraBrigada";
 import CalendarioContenidos from "./pages/CalendarioContenidos";
 import GeneradorTextosCarta from "./pages/GeneradorTextosCarta";
 import GeneradorMenuDegustacion from "./pages/GeneradorMenuDegustacion";
+import ProPromptsEbook from "./pages/ProPromptsEbook";
+import ProPromptsLibrary from "./pages/ProPromptsLibrary";
+import AccessGate from "./pages/AccessGate";
+import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
 const queryClient = new QueryClient();
@@ -220,6 +224,18 @@ const App = () => (
             <Route path="/it/generatore-menu-degustazione" element={<GeneradorMenuDegustacion />} />
             <Route path="/pt/gerador-menu-degustacao" element={<GeneradorMenuDegustacion />} />
             <Route path="/nl/proefmenu-generator" element={<GeneradorMenuDegustacion />} />
+
+            {/* Pro Prompts eBook & Library */}
+            <Route path="/pro-prompts-ebook" element={<ProPromptsEbook />} />
+            <Route path="/pro-prompts-library-access" element={<AccessGate />} />
+            <Route
+              path="/pro-prompts-library"
+              element={
+                <ProtectedRoute>
+                  <ProPromptsLibrary />
+                </ProtectedRoute>
+              }
+            />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
