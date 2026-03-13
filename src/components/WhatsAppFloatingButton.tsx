@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import chefProfile from '@/assets/chef-john-guerrero.png';
+import chefProfile from '@/assets/chef-john-guerrero-optimized.jpg';
 
 const WhatsAppFloatingButton = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -41,6 +41,9 @@ const WhatsAppFloatingButton = () => {
           <img
             src={chefProfile}
             alt="Chef John Guerrero"
+            loading="lazy"
+            width={64}
+            height={64}
             className="w-full h-full object-cover"
           />
         </div>
