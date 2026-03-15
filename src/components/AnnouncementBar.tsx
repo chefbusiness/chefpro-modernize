@@ -24,7 +24,8 @@ const AnnouncementBar = () => {
     <div className="bg-chef-dark text-background text-center text-xs sm:text-sm py-2 px-10 relative">
       <a
         href={href}
-        {...(!isSpanish && { target: '_blank', rel: 'noopener noreferrer' })}
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center gap-2 hover:text-accent transition-colors"
       >
         <Sparkles className="h-3.5 w-3.5 text-accent flex-shrink-0" />
