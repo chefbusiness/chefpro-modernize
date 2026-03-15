@@ -82,7 +82,7 @@ async function sendAccessEmail(email: string, token: string) {
       Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: 'AI Chef Pro <noreply@aichef.pro>',
+      from: 'AI Chef Pro <noreply@contact.aichef.pro>',
       to: email,
       subject: 'Tu acceso a Pro Prompts Library',
       html: `

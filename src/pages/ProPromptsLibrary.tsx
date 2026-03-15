@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import TopBar from '@/components/library/TopBar';
+import FloatingGallery from '@/components/library/FloatingGallery';
 import DownloadsSection from '@/components/library/DownloadsSection';
 import CompatibilityBanner from '@/components/library/CompatibilityBanner';
 import PromptFilters from '@/components/library/PromptFilters';
 import PromptCategory from '@/components/library/PromptCategory';
+import PromptModal from '@/components/library/PromptModal';
+import FreeToolsGrid from '@/components/library/FreeToolsGrid';
 import CtaToApp from '@/components/library/CtaToApp';
+import ChefBusinessGroup from '@/components/library/ChefBusinessGroup';
 import { categories } from '@/data/prompts';
 
 export default function ProPromptsLibrary() {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [openPromptId, setOpenPromptId] = useState<number | null>(null);
+  const [selectedPromptId, setSelectedPromptId] = useState<number | null>(null);
 
   const filteredCategories =
     activeFilter === 'all'
@@ -19,9 +23,15 @@ export default function ProPromptsLibrary() {
 
   const totalPrompts = categories.reduce((sum, c) => sum + c.promptCount, 0);
 
-  const handleTogglePrompt = (id: number) => {
-    setOpenPromptId((prev) => (prev === id ? null : id));
-  };
+  // Find selected prompt across all categories
+  const selectedPrompt = useMemo(() => {
+    if (!selectedPromptId) return null;
+    for (const cat of categories) {
+      const found = cat.prompts.find((p) => p.id === selectedPromptId);
+      if (found) return found;
+    }
+    return null;
+  }, [selectedPromptId]);
 
   return (
     <>
@@ -33,15 +43,18 @@ export default function ProPromptsLibrary() {
       <div className="min-h-screen bg-[#0a0a0a]">
         <TopBar />
 
-        {/* Hero */}
-        <section className="py-10 md:py-16 px-4">
-          <div className="max-w-5xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-              Tu Pro Prompts Library
-            </h1>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-3xl">
-              Bienvenido. Aquí tienes todos tus prompts certificados para hostelería y restauración — para chefs, gerentes, pasteleros, bartenders y dueños de negocio. Copia, usa y domina la IA.
-            </p>
+        {/* Hero with floating gallery */}
+        <section className="relative overflow-hidden">
+          <FloatingGallery />
+          <div className="absolute inset-0 flex items-center justify-center z-20">
+            <div className="text-center px-4">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">
+                Pro Prompts Library <span className="text-[#FFD700]">by AI Chef Pro</span>
+              </h1>
+              <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+                Tu dashboard exclusivo con todos los prompts curados por el <span className="whitespace-nowrap">Chef John Guerrero</span>, CEO de AI Chef Pro, bonos descargables y herramientas profesionales. Copia, usa y domina la IA en gastronomía.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -50,7 +63,7 @@ export default function ProPromptsLibrary() {
 
         {/* Prompts section */}
         <section className="py-10 px-4">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
               <h2 className="text-2xl font-bold text-white">Prompts Certificados</h2>
               <span className="px-3 py-1 bg-white/10 text-gray-400 text-sm rounded-full w-fit">
@@ -65,15 +78,17 @@ export default function ProPromptsLibrary() {
                 <PromptCategory
                   key={cat.id}
                   category={cat}
-                  openPromptId={openPromptId}
-                  onTogglePrompt={handleTogglePrompt}
+                  onSelectPrompt={setSelectedPromptId}
                 />
               ))}
             </div>
           </div>
         </section>
 
+        <FreeToolsGrid />
         <CtaToApp />
+
+        <ChefBusinessGroup />
 
         {/* Footer mínimo */}
         <footer className="py-8 px-4 border-t border-white/10">
@@ -89,6 +104,17 @@ export default function ProPromptsLibrary() {
           </div>
         </footer>
       </div>
+
+      {/* Prompt Modal */}
+      {selectedPrompt && (
+        <PromptModal
+          number={selectedPrompt.id}
+          title={selectedPrompt.title}
+          text={selectedPrompt.text}
+          compatible={selectedPrompt.compatible}
+          onClose={() => setSelectedPromptId(null)}
+        />
+      )}
     </>
   );
 }

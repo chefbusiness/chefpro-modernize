@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import FadeIn from './FadeIn';
 
 const faqs = [
   {
@@ -34,41 +35,42 @@ export default function FaqAccordion() {
   return (
     <section className="py-16 md:py-24 px-4">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12">
-          Preguntas Frecuentes
-        </h2>
+        <FadeIn>
+          <h2 className="text-2xl md:text-4xl font-bold text-white text-center mb-12">
+            Preguntas <span className="text-[#FFD700]">Frecuentes</span>
+          </h2>
+        </FadeIn>
 
         <div className="space-y-3">
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
-              <div
-                key={i}
-                className="bg-white/5 border border-white/10 rounded-xl overflow-hidden"
-              >
-                <button
-                  onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between p-5 text-left"
-                >
-                  <span className="text-white font-medium pr-4">{faq.q}</span>
-                  <ChevronDown
-                    className={`w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180' : ''
+              <FadeIn key={i} delay={i * 50}>
+                <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+                  <button
+                    onClick={() => setOpenIndex(isOpen ? null : i)}
+                    className="w-full flex items-center justify-between p-5 text-left"
+                  >
+                    <span className="text-white font-medium pr-4">{faq.q}</span>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
+                  <div
+                    className={`grid transition-all duration-300 ${
+                      isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
                     }`}
-                  />
-                </button>
-                <div
-                  className={`grid transition-all duration-300 ${
-                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-gray-400 leading-relaxed">
-                      {faq.a}
-                    </p>
+                  >
+                    <div className="overflow-hidden">
+                      <p className="px-5 pb-5 text-gray-400 leading-relaxed">
+                        {faq.a}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </FadeIn>
             );
           })}
         </div>

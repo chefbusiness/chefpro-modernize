@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import PaymentBadges from './PaymentBadges';
 
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
 
@@ -13,8 +14,22 @@ const items = [
 
 export default function CtaFinal() {
   return (
-    <section className="py-16 md:py-24 px-4">
-      <div className="max-w-3xl mx-auto text-center">
+    <section className="py-16 md:py-24 px-4 relative overflow-hidden">
+      {/* Subtle gastro background */}
+      <div className="absolute inset-0 opacity-[0.06]">
+        <img
+          src="/lovable-uploads/ai-gallery/falso-risotto-semillas-plancton.jpeg"
+          alt=""
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+      <div className="absolute inset-0 bg-[#0a0a0a]/90" />
+      <div className="absolute inset-0" style={{
+        background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%)',
+      }} />
+
+      <div className="relative max-w-3xl mx-auto text-center z-10">
         <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
           Es Hora de Dominar la IA en tu Negocio
         </h2>
@@ -22,7 +37,7 @@ export default function CtaFinal() {
           No dejes pasar esta oportunidad. Únete a miles de profesionales de la hostelería y restauración que ya están obteniendo resultados con IA.
         </p>
 
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
+        <div className="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
           <div className="flex flex-col items-start gap-3 mb-8 max-w-md mx-auto">
             {items.map((item) => (
               <div key={item} className="flex items-start gap-3">
@@ -32,15 +47,18 @@ export default function CtaFinal() {
             ))}
           </div>
 
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <span className="text-xl text-gray-500 line-through">€97</span>
+            <span className="text-4xl md:text-5xl font-extrabold text-[#FFD700]">€9</span>
+          </div>
+
           <a
             href={stripeLink}
             className="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             SÍ, QUIERO EL EBOOK — €9
           </a>
-          <p className="text-xs text-gray-500 mt-4">
-            Pago 100% seguro. Acceso inmediato por email
-          </p>
+          <PaymentBadges className="mt-5" />
         </div>
       </div>
     </section>

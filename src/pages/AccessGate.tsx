@@ -11,7 +11,7 @@ export default function AccessGate() {
   const [status, setStatus] = useState<Status>('loading');
 
   useEffect(() => {
-    const checkoutToken = params.get('token');
+    const checkoutToken = params.get('session_id') || params.get('token');
     const jwtToken = params.get('jwt');
 
     if (!checkoutToken && !jwtToken) {

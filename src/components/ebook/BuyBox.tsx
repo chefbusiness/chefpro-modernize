@@ -1,10 +1,23 @@
+import PaymentBadges from './PaymentBadges';
+
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
 
 export default function BuyBox() {
   return (
-    <section id="comprar" className="py-16 md:py-24 px-4">
-      <div className="max-w-lg mx-auto">
-        <div className="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center">
+    <section id="comprar" className="py-16 md:py-24 px-4 relative overflow-hidden">
+      {/* Subtle food bg */}
+      <div className="absolute inset-0 opacity-[0.06]">
+        <img
+          src="/lovable-uploads/ai-gallery/gambas-al-ajillo.jpeg"
+          alt=""
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+      <div className="absolute inset-0 bg-[#0a0a0a]/90" />
+
+      <div className="relative max-w-lg mx-auto z-10">
+        <div className="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center backdrop-blur-sm">
           <div className="flex items-center justify-center gap-4 mb-3">
             <span className="text-2xl text-gray-500 line-through">€97</span>
             <span className="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
@@ -21,9 +34,7 @@ export default function BuyBox() {
           >
             SÍ, QUIERO EL EBOOK — €9
           </a>
-          <p className="text-xs text-gray-500 mt-4">
-            Pago 100% seguro. Acceso inmediato por email
-          </p>
+          <PaymentBadges className="mt-5" />
         </div>
       </div>
     </section>

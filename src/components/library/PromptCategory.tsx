@@ -3,11 +3,10 @@ import type { Category } from '@/data/prompts';
 
 interface Props {
   category: Category;
-  openPromptId: number | null;
-  onTogglePrompt: (id: number) => void;
+  onSelectPrompt: (promptId: number) => void;
 }
 
-export default function PromptCategory({ category, openPromptId, onTogglePrompt }: Props) {
+export default function PromptCategory({ category, onSelectPrompt }: Props) {
   return (
     <div className="mb-10">
       <div className="flex items-center gap-3 mb-4">
@@ -16,16 +15,13 @@ export default function PromptCategory({ category, openPromptId, onTogglePrompt 
           {category.promptCount} prompts
         </span>
       </div>
-      <div className="space-y-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         {category.prompts.map((prompt) => (
           <PromptCard
             key={prompt.id}
             number={prompt.id}
             title={prompt.title}
-            text={prompt.text}
-            compatible={prompt.compatible}
-            isOpen={openPromptId === prompt.id}
-            onToggle={() => onTogglePrompt(prompt.id)}
+            onClick={() => onSelectPrompt(prompt.id)}
           />
         ))}
       </div>

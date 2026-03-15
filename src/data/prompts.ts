@@ -483,5 +483,60 @@ export const categories: Category[] = [
         text: "Tengo un conflicto entre dos miembros de mi equipo: [DESCRIPCIÓN OBJETIVA DE LA SITUACIÓN, sin nombres]. El conflicto está afectando a: [CÓMO AFECTA AL SERVICIO/AMBIENTE]. Como jefe de cocina o gerente, ayúdame a:\n- Entender las posibles causas raíz del conflicto\n- Cómo abordar la conversación por separado con cada parte\n- Cómo facilitar una conversación conjunta si es necesario\n- Qué límites y reglas de equipo establecer para evitar recurrencia\n- Cuándo es el momento de escalar el problema a RRHH"
       }
     ]
+  },
+  {
+    id: "deep-research",
+    title: "Deep Research — Análisis Profundo",
+    promptCount: 8,
+    prompts: [
+      {
+        id: 69,
+        title: "Análisis profundo de tendencias gastronómicas",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Realiza un análisis profundo de las tendencias gastronómicas emergentes para [AÑO/TEMPORADA] en [REGIÓN/PAÍS]. Investiga:\n- Las 10 tendencias con mayor tracción en redes, medios especializados y ferias internacionales\n- Qué chefs o restaurantes están liderando cada tendencia\n- Ingredientes emergentes y técnicas en auge\n- Impacto en el comportamiento del consumidor\n- Oportunidades concretas para un [TIPO DE ESTABLECIMIENTO]\n- Predicciones a 12-18 meses\nFormato: informe ejecutivo con fuentes y datos verificables."
+      },
+      {
+        id: 70,
+        title: "Estudio de mercado para nuevo concepto gastronómico",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Quiero abrir un [TIPO DE NEGOCIO: restaurante/dark kitchen/food truck/catering] en [CIUDAD/ZONA]. Realiza un estudio de mercado profundo que incluya:\n- Análisis demográfico de la zona (perfil del cliente potencial)\n- Mapeo de competencia directa e indirecta (mínimo 10 competidores)\n- Análisis de precios promedio en la zona para conceptos similares\n- Gaps de mercado y oportunidades no cubiertas\n- Ticket medio estimado y volumen de mercado\n- Barreras de entrada y factores críticos de éxito\n- Recomendación de posicionamiento y diferenciación\nFormato: informe profesional con tablas comparativas."
+      },
+      {
+        id: 71,
+        title: "Investigación de ingredientes y proveedores",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Necesito investigar en profundidad el ingrediente [NOMBRE DEL INGREDIENTE] para incorporarlo a mi carta. Analiza:\n- Origen, estacionalidad y variedades principales\n- Propiedades nutricionales y alérgenos asociados\n- Técnicas culinarias óptimas (temperatura, tiempo, combinaciones)\n- Maridajes clásicos y vanguardistas\n- Proveedores de referencia en [PAÍS/REGIÓN]\n- Precio de mercado y fluctuaciones estacionales\n- Aplicaciones en alta cocina, cocina casual y pastelería\n- Tendencia de búsqueda y popularidad entre consumidores"
+      },
+      {
+        id: 72,
+        title: "Benchmarking competitivo de restaurantes",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Realiza un benchmarking profundo de mi restaurante [NOMBRE/TIPO] contra los [3-5] principales competidores en [ZONA/CIUDAD]. Analiza para cada uno:\n- Propuesta de valor y posicionamiento\n- Carta: estructura, pricing, platos estrella\n- Presencia digital: web, redes sociales, reseñas (Google, TripAdvisor)\n- Puntuación media y análisis de sentiment de reseñas\n- Estrategia de marketing visible (promos, eventos, colaboraciones)\n- Fortalezas y debilidades detectadas\n- Oportunidades de diferenciación para mi negocio\nFormato: tabla comparativa + informe con recomendaciones accionables."
+      },
+      {
+        id: 73,
+        title: "Análisis de rentabilidad por plato",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT"],
+        text: "Analiza la rentabilidad de mi carta completa usando la metodología de ingeniería de menú (Menu Engineering). Los datos son:\n[LISTA DE PLATOS con: nombre, food cost, precio venta, unidades vendidas/mes]\n\nClasifica cada plato en la matriz BCG gastronómica:\n- Estrellas (alta popularidad + alta rentabilidad)\n- Caballos de batalla (alta popularidad + baja rentabilidad)\n- Puzzles (baja popularidad + alta rentabilidad)\n- Perros (baja popularidad + baja rentabilidad)\n\nPara cada categoría, recomienda acciones específicas: mantener, reposicionar, reformular o eliminar. Incluye cálculos de impacto en margen total."
+      },
+      {
+        id: 74,
+        title: "Investigación de técnicas de vanguardia",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Investiga en profundidad la técnica culinaria de vanguardia [TÉCNICA: fermentación/sous vide/esferificación/nixtamalización/ahumado en frío/etc.]. Quiero un informe completo que cubra:\n- Historia y origen de la técnica\n- Principios científicos (química y física involucrada)\n- Equipamiento necesario (básico y profesional)\n- Paso a paso detallado para dominarla\n- 5 aplicaciones creativas para un [TIPO DE RESTAURANTE]\n- Errores comunes y cómo evitarlos\n- Chefs de referencia que la dominan\n- Coste de implementación estimado"
+      },
+      {
+        id: 75,
+        title: "Análisis de viabilidad de nuevo servicio",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT"],
+        text: "Quiero añadir un nuevo servicio a mi negocio: [DESCRIPCIÓN: brunch/delivery/catering corporativo/clases de cocina/meal prep/pop-up]. Mi establecimiento actual es [TIPO Y CAPACIDAD]. Realiza un análisis de viabilidad que incluya:\n- Inversión inicial estimada (equipamiento, personal, marketing)\n- Costes operativos mensuales adicionales\n- Proyección de ingresos (escenario pesimista, realista, optimista)\n- Punto de equilibrio (break-even)\n- Recursos humanos necesarios\n- Impacto en la operación actual\n- Cronograma de implementación (90 días)\n- Riesgos principales y cómo mitigarlos"
+      },
+      {
+        id: 76,
+        title: "Auditoría de experiencia del cliente",
+        compatible: ["AI Chef Pro", "Claude", "ChatGPT", "Perplexity"],
+        text: "Diseña una auditoría completa de la experiencia del cliente para mi [TIPO DE ESTABLECIMIENTO]. Necesito evaluar cada touchpoint del customer journey:\n- Descubrimiento (cómo nos encuentran: SEO, redes, boca a boca)\n- Reserva (proceso, fricciones, confirmación)\n- Llegada (primera impresión, recepción, espera)\n- Servicio (tiempos, atención, conocimiento del equipo)\n- Comida (presentación, temperatura, sabor, consistencia)\n- Pago (proceso, opciones, propina)\n- Post-visita (seguimiento, fidelización, reseñas)\n\nPara cada touchpoint: qué medir, cómo medirlo, benchmark del sector y acciones de mejora priorizadas por impacto."
+      }
+    ]
   }
 ];
