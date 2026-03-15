@@ -5,9 +5,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
 
 const items = [
   'eBook completo con 300+ prompts para toda la hostelería',
-  'BONUS 1: Mega Pack Cocinas del Mundo (€47)',
-  'BONUS 2: Guía Prompt Engineering Gastronómico (€27)',
-  'BONUS 3: Cheat Sheet Descargable (€23)',
+  'BONUS 1: Guía de Prompt Engineering Gastronómico (€27)',
+  'BONUS 2: Plantillas + Cheat Sheet descargable (€23)',
   'Actualizaciones gratuitas de por vida',
   'Garantía de devolución 30 días',
 ];
@@ -48,7 +47,7 @@ export default function CtaFinal() {
           </div>
 
           <div className="flex items-center justify-center gap-4 mb-4">
-            <span className="text-xl text-gray-500 line-through">€97</span>
+            <span className="text-xl text-gray-500 line-through">€50</span>
             <span className="text-4xl md:text-5xl font-extrabold text-[#FFD700]">€9</span>
           </div>
 

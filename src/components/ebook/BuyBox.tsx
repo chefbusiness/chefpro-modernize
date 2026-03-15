@@ -19,7 +19,7 @@ export default function BuyBox() {
       <div className="relative max-w-lg mx-auto z-10">
         <div className="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center backdrop-blur-sm">
           <div className="flex items-center justify-center gap-4 mb-3">
-            <span className="text-2xl text-gray-500 line-through">€97</span>
+            <span className="text-2xl text-gray-500 line-through">€50</span>
             <span className="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
             <span className="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">
               -90%

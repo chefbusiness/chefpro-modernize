@@ -109,7 +109,7 @@ export default function HeroSection() {
         {/* Price Box */}
         <div className="inline-block bg-white/5 border border-[#FFD700]/20 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
           <div className="flex items-center justify-center gap-4 mb-3">
-            <span className="text-2xl text-gray-500 line-through">€97</span>
+            <span className="text-2xl text-gray-500 line-through">€50</span>
             <span className="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
             <span className="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">
               -90%

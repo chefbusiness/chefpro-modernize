@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BookOpen, Globe, Zap, Download, Loader2 } from 'lucide-react';
+import { BookOpen, FileText, Download, Loader2 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 
 interface DownloadUrls {
@@ -30,19 +30,22 @@ export default function DownloadsSection() {
       title: 'Pro Prompts eBook',
       desc: 'El eBook completo en PDF con todos los prompts organizados por categorías.',
       url: urls.ebook,
+      format: 'PDF',
       primary: true,
     },
     {
-      icon: Globe,
-      title: 'Bonus 1: Cocinas del Mundo',
-      desc: '50 prompts para las 25 cocinas internacionales de AI Chef Pro.',
+      icon: BookOpen,
+      title: 'Bonus 1: Guía Prompt Engineering',
+      desc: 'Aprende a crear tus propios prompts gastronómicos con el método AI Chef Pro.',
       url: urls.bonus1,
+      format: 'Word',
     },
     {
-      icon: Zap,
-      title: 'Bonus 2 + 3',
-      desc: 'Guía de Prompt Engineering Gastronómico + Cheat Sheet imprimible.',
+      icon: FileText,
+      title: 'Bonus 2: Plantillas + Cheat Sheet',
+      desc: 'Plantillas listas para usar y resumen rápido de los mejores prompts.',
       url: urls.bonus23,
+      format: 'Excel',
     },
   ];
 
@@ -81,7 +84,7 @@ export default function DownloadsSection() {
                     }`}
                   >
                     <Download className="w-4 h-4" />
-                    Descargar PDF
+                    Descargar {card.format}
                   </a>
                 ) : (
                   <span className="text-gray-500 text-sm">No disponible</span>
