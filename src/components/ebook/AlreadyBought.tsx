@@ -30,8 +30,11 @@ export default function AlreadyBought() {
   return (
     <div className="border-t border-white/10 pt-8 mt-4">
       <div className="text-center">
-        <p className="text-gray-500 text-sm mb-3">
-          ¿Ya compraste el eBook?
+        <p className="text-white font-semibold text-sm mb-1">
+          ¿Ya compraste el eBook? Vuelve a entrar al dashboard
+        </p>
+        <p className="text-gray-500 text-xs mb-3">
+          Introduce tu email de compra y te enviaremos el enlace de acceso
         </p>
         {status === 'success' ? (
           <div className="flex items-center justify-center gap-2 text-emerald-400 text-sm">
