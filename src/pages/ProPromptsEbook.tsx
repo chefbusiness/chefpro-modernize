@@ -11,6 +11,7 @@ import GuaranteeSection from '@/components/ebook/GuaranteeSection';
 import FaqAccordion from '@/components/ebook/FaqAccordion';
 import CtaFinal from '@/components/ebook/CtaFinal';
 import StickyBar from '@/components/ebook/StickyBar';
+import AlreadyBought from '@/components/ebook/AlreadyBought';
 
 export default function ProPromptsEbook() {
   return (
@@ -52,6 +53,7 @@ export default function ProPromptsEbook() {
               <span className="text-gray-700">·</span>
               <a href="mailto:hello@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
+            <AlreadyBought />
           </div>
         </footer>
 

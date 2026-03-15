@@ -7,7 +7,8 @@ const items = [
   'eBook completo con 300+ prompts para toda la hostelería',
   'BONUS 1: Guía de Prompt Engineering Gastronómico (€27)',
   'BONUS 2: Plantillas + Cheat Sheet descargable (€23)',
-  'Actualizaciones gratuitas de por vida',
+  'Lifetime Deal — acceso de por vida al dashboard online',
+  'Nuevas categorías y prompts sin coste adicional',
   'Garantía de devolución 30 días',
 ];
 

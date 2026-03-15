@@ -34,7 +34,7 @@ export default function AccessGate() {
         const data = await res.json();
 
         if (data.valid && data.jwt) {
-          sessionStorage.setItem('pro-prompts-jwt', data.jwt);
+          localStorage.setItem('pro-prompts-jwt', data.jwt);
           navigate('/pro-prompts-library', { replace: true });
         } else {
           setStatus('error');

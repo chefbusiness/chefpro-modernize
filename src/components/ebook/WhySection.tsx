@@ -19,8 +19,8 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Actualizaciones Gratuitas',
-    desc: 'A medida que AI Chef Pro crece con nuevas apps para toda la hostelería, el eBook se actualiza. Tú las recibes sin coste adicional.',
+    title: 'Lifetime Deal — Acceso de por Vida',
+    desc: 'Paga una vez, accede para siempre. Tu dashboard online se actualiza con nuevas categorías y prompts. Recibes todas las mejoras sin coste adicional.',
   },
 ];
 
