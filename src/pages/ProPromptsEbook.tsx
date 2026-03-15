@@ -3,6 +3,7 @@ import HeroSection from '@/components/ebook/HeroSection';
 import BookCover from '@/components/ebook/BookCover';
 import CategoriesGrid from '@/components/ebook/CategoriesGrid';
 import WhySection from '@/components/ebook/WhySection';
+import AuthorSection from '@/components/ebook/AuthorSection';
 import BonusSection from '@/components/ebook/BonusSection';
 import FreeToolsSection from '@/components/ebook/FreeToolsSection';
 import BuyBox from '@/components/ebook/BuyBox';
@@ -30,6 +31,7 @@ export default function ProPromptsEbook() {
         <BookCover />
         <CategoriesGrid />
         <WhySection />
+        <AuthorSection />
         <BonusSection />
         <FreeToolsSection />
         <BuyBox />
