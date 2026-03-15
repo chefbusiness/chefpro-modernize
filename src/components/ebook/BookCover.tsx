@@ -10,11 +10,15 @@ export default function BookCover() {
 
       <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
         {/* 3D Mockup Bundle Image */}
-        <img
-          src="/ebook-mockup-bundle.png"
-          alt="Gastro Pro Prompts — eBook, tablet y móvil con 300+ prompts de IA para hostelería y restauración"
-          className="w-full mx-auto"
-        />
+        <picture>
+          <source srcSet="/ebook-mockup-bundle.webp" type="image/webp" />
+          <img
+            src="/ebook-mockup-bundle-sm.png"
+            alt="Gastro Pro Prompts — eBook, tablet y móvil con 300+ prompts de IA para hostelería y restauración"
+            className="w-full mx-auto"
+            loading="lazy"
+          />
+        </picture>
 
         {/* CTA below mockup */}
         <div className="mt-10 text-center">

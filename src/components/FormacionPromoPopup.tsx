@@ -63,11 +63,14 @@ const EbookPromoPopup = () => {
       <DialogContent className="sm:max-w-md border-0 bg-[#0a0a0a] p-0 overflow-hidden shadow-2xl shadow-[#FFD700]/10">
         {/* Mockup Image */}
         <div className="px-4 pt-6">
-          <img
-            src="/ebook-mockup-bundle.png"
-            alt="Gastro Pro Prompts — eBook de IA para hostelería"
-            className="w-full"
-          />
+          <picture>
+            <source srcSet="/ebook-mockup-bundle.webp" type="image/webp" />
+            <img
+              src="/ebook-mockup-bundle-sm.png"
+              alt="Gastro Pro Prompts — eBook de IA para hostelería"
+              className="w-full"
+            />
+          </picture>
         </div>
 
         <div className="px-6 pb-6 pt-2 text-center">
