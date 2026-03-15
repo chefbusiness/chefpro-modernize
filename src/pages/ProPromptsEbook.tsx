@@ -51,7 +51,7 @@ export default function ProPromptsEbook() {
               <span className="text-gray-700">·</span>
               <a href="https://aichef.pro/#pricing" className="text-gray-500 hover:text-[#FFD700] transition-colors">Precios</a>
               <span className="text-gray-700">·</span>
-              <a href="mailto:hello@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
+              <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
             <AlreadyBought />
           </div>

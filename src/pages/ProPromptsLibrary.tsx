@@ -99,7 +99,7 @@ export default function ProPromptsLibrary() {
             <div className="flex items-center justify-center gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
               <span className="text-gray-700">·</span>
-              <a href="mailto:hello@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
+              <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
           </div>
         </footer>

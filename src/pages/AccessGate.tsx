@@ -72,8 +72,8 @@ export default function AccessGate() {
             <p className="text-gray-400 mb-6 leading-relaxed">
               Si acabas de comprar, revisa tu email para el enlace de acceso.
               ¿Problemas? Contáctanos en{' '}
-              <a href="mailto:hello@aichef.pro" className="text-[#FFD700] underline">
-                hello@aichef.pro
+              <a href="mailto:info@aichef.pro" className="text-[#FFD700] underline">
+                info@aichef.pro
               </a>
             </p>
             <a
