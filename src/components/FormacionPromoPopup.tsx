@@ -1,57 +1,45 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { GraduationCap, ChefHat, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Sparkles } from 'lucide-react';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Badge } from '@/components/ui/badge';
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
 } from '@/components/ui/dialog';
 import { useLanguage } from '@/hooks/useLanguage';
-import formacionInhouse from '@/assets/formacion-inhouse.jpg';
 
-const STORAGE_KEY_DISMISSED = 'formacion-promo-dismissed';
-const STORAGE_KEY_NEVER_SHOW = 'formacion-promo-never-show';
-const STORAGE_KEY_VISITED = 'has-visited-formacion';
-const DISMISS_DURATION_HOURS = 1; // 1 hora
-const POPUP_DELAY_MS = 10000; // 10 seconds
+const STORAGE_KEY_DISMISSED = 'ebook-promo-dismissed';
+const STORAGE_KEY_NEVER_SHOW = 'ebook-promo-never-show';
+const DISMISS_DURATION_HOURS = 24;
+const POPUP_DELAY_MS = 12000;
 
-const FormacionPromoPopup = () => {
+const EbookPromoPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [neverShowAgain, setNeverShowAgain] = useState(false);
   const { currentLanguage } = useLanguage();
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     // Only show for Spanish users
     if (currentLanguage !== 'es') return;
 
+    // Don't show on ebook-related pages
+    if (location.pathname.includes('pro-prompts')) return;
+
     // Check if user opted out permanently
-    const neverShow = localStorage.getItem(STORAGE_KEY_NEVER_SHOW);
-    if (neverShow === 'true') return;
+    if (localStorage.getItem(STORAGE_KEY_NEVER_SHOW) === 'true') return;
 
-    // Check if user already visited the formacion page
-    const hasVisited = localStorage.getItem(STORAGE_KEY_VISITED);
-    if (hasVisited === 'true') return;
-
-    // Check if dismissed recently (within 1 hour)
+    // Check if dismissed recently
     const dismissedTimestamp = localStorage.getItem(STORAGE_KEY_DISMISSED);
     if (dismissedTimestamp) {
-      const dismissedDate = parseInt(dismissedTimestamp, 10);
-      const hoursSinceDismissed = (Date.now() - dismissedDate) / (1000 * 60 * 60);
-      if (hoursSinceDismissed < DISMISS_DURATION_HOURS) return;
+      const hoursSince = (Date.now() - parseInt(dismissedTimestamp, 10)) / (1000 * 60 * 60);
+      if (hoursSince < DISMISS_DURATION_HOURS) return;
     }
 
-    // Show popup after delay
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, POPUP_DELAY_MS);
-
+    const timer = setTimeout(() => setIsVisible(true), POPUP_DELAY_MS);
     return () => clearTimeout(timer);
-  }, [currentLanguage]);
+  }, [currentLanguage, location.pathname]);
 
   const handleDismiss = () => {
     if (neverShowAgain) {
@@ -63,121 +51,75 @@ const FormacionPromoPopup = () => {
   };
 
   const handleCTAClick = () => {
-    // Mark as visited so we don't show again
-    localStorage.setItem(STORAGE_KEY_VISITED, 'true');
+    localStorage.setItem(STORAGE_KEY_NEVER_SHOW, 'true');
     setIsVisible(false);
-    navigate('/formacion-presencial');
+    navigate('/pro-prompts-ebook');
   };
 
-  // Don't render for non-Spanish users
   if (currentLanguage !== 'es') return null;
 
   return (
     <Dialog open={isVisible} onOpenChange={(open) => !open && handleDismiss()}>
-      <DialogContent className="sm:max-w-lg border border-border/50 bg-gradient-to-br from-background via-background to-muted/30 p-0 overflow-hidden shadow-2xl">
-        {/* Hero Image */}
-        <div className="relative h-36 sm:h-44 overflow-hidden">
-          <img 
-            src={formacionInhouse} 
-            alt="Formación In-House AI Chef Pro" 
-            loading="lazy"
-            className="w-full h-full object-cover"
+      <DialogContent className="sm:max-w-md border-0 bg-[#0a0a0a] p-0 overflow-hidden shadow-2xl shadow-[#FFD700]/10">
+        {/* Mockup Image */}
+        <div className="px-4 pt-6">
+          <img
+            src="/ebook-mockup-bundle.png"
+            alt="Gastro Pro Prompts — eBook de IA para hostelería"
+            className="w-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-          
-          {/* New Badge */}
-          <Badge className="absolute top-3 left-3 bg-emerald-500 hover:bg-emerald-500 text-white border-0 shadow-lg">
-            <Sparkles className="h-3 w-3 mr-1" />
-            Nuevo
-          </Badge>
-          
-          {/* Title overlay on image */}
-          <div className="absolute bottom-3 left-4 right-4">
-            <h3 className="text-white text-lg sm:text-xl font-bold drop-shadow-lg">
-              Formaciones Presenciales
-            </h3>
-            <p className="text-white/90 text-sm">
-              IA Gastronómica para tu organización
-            </p>
-          </div>
         </div>
-        
-        <div className="p-5 pt-4">
-          <DialogHeader className="text-center space-y-3">
-            {/* Attention message */}
-            <div className="bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 rounded-lg p-3">
-              <p className="text-sm text-emerald-800 dark:text-emerald-200 font-medium leading-relaxed">
-                <Sparkles className="inline h-4 w-4 mr-1.5 text-emerald-600" />
-                Por fin, lo que durante más de un año nos habéis pedido...
-                <span className="font-bold block mt-1">¡Ya está aquí!</span>
-              </p>
-            </div>
 
-            <DialogTitle className="text-lg sm:text-xl font-bold text-foreground sr-only">
-              Formaciones Presenciales en España
-            </DialogTitle>
-          </DialogHeader>
+        <div className="px-6 pb-6 pt-2 text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 mb-3">
+            <Sparkles className="h-3.5 w-3.5 text-[#FFD700]" />
+            <span className="text-[#FFD700] text-xs font-bold tracking-wider uppercase">Nuevo</span>
+          </div>
 
-          <div className="mt-4 space-y-4">
-            {/* Segmentation question */}
-            <div className="bg-muted/50 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-              <p className="text-sm sm:text-base text-foreground text-center leading-relaxed">
-                <span className="font-semibold">¿Diriges una escuela de cocina, grupo de restauración, hotel o centro gastronómico?</span>
-              </p>
-            </div>
+          <h3 className="text-white text-xl font-bold mb-2">
+            Gastro Pro Prompts
+          </h3>
+          <p className="text-gray-400 text-sm mb-1">
+            300+ prompts de IA profesionales para hostelería y restauración
+          </p>
+          <p className="text-gray-500 text-xs mb-5">
+            Compatible con ChatGPT, Claude, Perplexity, Gemini y más
+          </p>
 
-            {/* Value proposition */}
-            <p className="text-center text-sm text-muted-foreground">
-              Llevo la revolución de la IA directamente a tu equipo con{' '}
-              <span className="font-semibold text-foreground">programas personalizados desde 990€</span>
-            </p>
+          {/* Price */}
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="text-gray-500 line-through text-lg">€50</span>
+            <span className="text-[#FFD700] text-3xl font-extrabold">€9</span>
+            <span className="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-xs font-bold">-82%</span>
+          </div>
 
-            {/* Audience badges */}
-            <div className="flex flex-wrap justify-center gap-2">
-              {['Escuelas', 'Restaurantes', 'Hoteles', 'Catering'].map((badge) => (
-                <span 
-                  key={badge}
-                  className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-muted text-muted-foreground border border-border"
-                >
-                  <ChefHat className="h-3 w-3 mr-1" />
-                  {badge}
-                </span>
-              ))}
-            </div>
+          {/* CTA */}
+          <button
+            onClick={handleCTAClick}
+            className="w-full py-3.5 bg-[#FFD700] text-black font-bold text-base rounded-xl hover:bg-[#FFD700]/90 transition-all active:scale-[0.98]"
+          >
+            VER EL EBOOK — €9
+          </button>
 
-            {/* CTA Buttons */}
-            <div className="space-y-3 pt-2">
-              <Button 
-                onClick={handleCTAClick}
-                className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 dark:text-slate-900 text-white font-semibold py-5 text-base shadow-lg hover:shadow-xl transition-all"
-              >
-                <GraduationCap className="mr-2 h-5 w-5" />
-                Descubrir Formaciones
-              </Button>
-              
-              <button
-                onClick={handleDismiss}
-                className="w-full text-sm text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Ahora no, gracias
-              </button>
-            </div>
+          <button
+            onClick={handleDismiss}
+            className="w-full text-sm text-gray-500 hover:text-gray-300 transition-colors py-3 mt-1"
+          >
+            Ahora no, gracias
+          </button>
 
-            {/* Never show again checkbox */}
-            <div className="flex items-center justify-center gap-2 pt-1">
-              <Checkbox 
-                id="never-show" 
-                checked={neverShowAgain}
-                onCheckedChange={(checked) => setNeverShowAgain(checked === true)}
-                className="border-muted-foreground/30 data-[state=checked]:bg-emerald-600 data-[state=checked]:border-emerald-600"
-              />
-              <label 
-                htmlFor="never-show" 
-                className="text-xs text-muted-foreground cursor-pointer"
-              >
-                No volver a mostrar
-              </label>
-            </div>
+          {/* Never show again */}
+          <div className="flex items-center justify-center gap-2 pt-1">
+            <Checkbox
+              id="never-show-ebook"
+              checked={neverShowAgain}
+              onCheckedChange={(checked) => setNeverShowAgain(checked === true)}
+              className="border-gray-600 data-[state=checked]:bg-[#FFD700] data-[state=checked]:border-[#FFD700] data-[state=checked]:text-black"
+            />
+            <label htmlFor="never-show-ebook" className="text-xs text-gray-600 cursor-pointer">
+              No volver a mostrar
+            </label>
           </div>
         </div>
       </DialogContent>
@@ -185,4 +127,4 @@ const FormacionPromoPopup = () => {
   );
 };
 
-export default FormacionPromoPopup;
+export default EbookPromoPopup;

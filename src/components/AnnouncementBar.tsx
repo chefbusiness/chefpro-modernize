@@ -3,7 +3,7 @@ import { Sparkles, X } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 const AnnouncementBar = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
   const [visible, setVisible] = useState(() => {
     return localStorage.getItem('announcement-dismissed') !== 'true';
   });
@@ -15,12 +15,16 @@ const AnnouncementBar = () => {
 
   if (!visible) return null;
 
+  const isSpanish = currentLanguage === 'es';
+  const href = isSpanish
+    ? '/pro-prompts-ebook'
+    : 'https://blog.aichef.pro/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina/';
+
   return (
     <div className="bg-chef-dark text-background text-center text-xs sm:text-sm py-2 px-10 relative">
       <a
-        href="https://blog.aichef.pro/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina/"
-        target="_blank"
-        rel="noopener noreferrer"
+        href={href}
+        {...(!isSpanish && { target: '_blank', rel: 'noopener noreferrer' })}
         className="inline-flex items-center gap-2 hover:text-accent transition-colors"
       >
         <Sparkles className="h-3.5 w-3.5 text-accent flex-shrink-0" />
