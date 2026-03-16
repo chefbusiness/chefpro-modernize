@@ -347,6 +347,16 @@ export default function ModernFooter() {
               {t('footer.section_herramientas')}
             </h4>
             <ul className="space-y-3 text-sm">
+              {lang === 'es' && (
+                <li>
+                  <a
+                    href="/productos-digitales"
+                    className="text-[#FFD700] hover:text-[#FFD700]/80 transition-colors font-medium"
+                  >
+                    Productos Digitales
+                  </a>
+                </li>
+              )}
               <li>
                 <a
                   href={getAppUrl(lang)}

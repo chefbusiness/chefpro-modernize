@@ -40,6 +40,7 @@ import GeneradorMenuDegustacion from "./pages/GeneradorMenuDegustacion";
 import ProPromptsEbook from "./pages/ProPromptsEbook";
 import ProPromptsLibrary from "./pages/ProPromptsLibrary";
 import KitEscandallos from "./pages/KitEscandallos";
+import ProductosDigitales from "./pages/ProductosDigitales";
 import AccessGate from "./pages/AccessGate";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
@@ -225,6 +226,9 @@ const App = () => (
             <Route path="/it/generatore-menu-degustazione" element={<GeneradorMenuDegustacion />} />
             <Route path="/pt/gerador-menu-degustacao" element={<GeneradorMenuDegustacion />} />
             <Route path="/nl/proefmenu-generator" element={<GeneradorMenuDegustacion />} />
+
+            {/* Productos Digitales Hub */}
+            <Route path="/productos-digitales" element={<ProductosDigitales />} />
 
             {/* Kit de Escandallos Pro */}
             <Route path="/kit-escandallos" element={<KitEscandallos />} />

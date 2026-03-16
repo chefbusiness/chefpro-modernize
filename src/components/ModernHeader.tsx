@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import AnnouncementBar from '@/components/AnnouncementBar';
-import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench } from 'lucide-react';
+import { ChevronDown, Menu, Home, Briefcase, GraduationCap, Palette, Globe2, Settings, Globe, Check, School, Wrench, BookOpen } from 'lucide-react';
 
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
@@ -289,7 +289,18 @@ export default function ModernHeader() {
                   {t('nav.precios')}
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              
+
+              {currentLanguage === 'es' && (
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    className="text-sm font-medium transition-colors hover:text-[#FFD700] text-foreground/60 px-3 py-2"
+                    href="/productos-digitales"
+                  >
+                    Productos Digitales
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              )}
+
               <NavigationMenuItem>
                 <NavigationMenuLink
                   className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
@@ -459,6 +470,16 @@ export default function ModernHeader() {
                         <Settings className="h-5 w-5 text-muted-foreground" />
                         {t('nav.precios')}
                       </a>
+                      {currentLanguage === 'es' && (
+                        <a
+                          href="/productos-digitales"
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-[#FFD700]"
+                        >
+                          <BookOpen className="h-5 w-5 text-[#FFD700]" />
+                          Productos Digitales
+                        </a>
+                      )}
                       <a
                         href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
                         target="_blank"
