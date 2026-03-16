@@ -34,16 +34,16 @@ export default function ProPromptsEbook() {
         <HeroSection />
         <BookCover />
         <CategoriesGrid />
-        <WhySection />
-        <AuthorSection />
-        <BonusSection />
-        <FreeToolsSection />
-        <BuyBox />
         <TestimonialsMarquee
           title={<>Lo Que Dicen los <span className="text-[#FFD700]">Profesionales</span></>}
           subtitle="Profesionales de la hostelería que ya usan los prompts del eBook en su día a día"
           testimonials={ebookTestimonials}
         />
+        <WhySection />
+        <AuthorSection />
+        <BonusSection />
+        <FreeToolsSection />
+        <BuyBox />
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />

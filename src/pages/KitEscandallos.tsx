@@ -31,15 +31,15 @@ export default function KitEscandallos() {
       <div className="min-h-screen bg-[#0a0a0a]">
         <HeroSection />
         <ContentGrid />
-        <WhySection />
-        <AuthorSection />
-        <BonusSection />
-        <BuyBox />
         <TestimonialsMarquee
           title={<>Lo Que Dicen los <span className="text-[#FFD700]">Profesionales</span></>}
           subtitle="Profesionales de la hostelería que ya controlan su food cost con el Kit de Escandallos Pro"
           testimonials={escandallosTestimonials}
         />
+        <WhySection />
+        <AuthorSection />
+        <BonusSection />
+        <BuyBox />
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />
