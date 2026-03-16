@@ -76,7 +76,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          11 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante.
+          11 plantillas de escandallos en Excel con fórmulas automáticas, mermas precargadas y calculadora de PVP. Calcula el food cost real de cada plato y controla los costes de tu restaurante, pastelería, catering o food truck desde el primer día.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

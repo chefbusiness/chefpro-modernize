@@ -93,7 +93,7 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          Para chefs, gerentes, pasteleros, bartenders, chocolateros, dueños de restaurante y todos los profesionales del sector. Desbloquea el potencial real de la IA en tu negocio.
+          Más de 300 prompts de inteligencia artificial para chefs, gerentes, pasteleros, bartenders, chocolateros, catering y dueños de restaurante. Prompts listos para usar en ChatGPT, Claude, Gemini, Perplexity y AI Chef Pro. La guía definitiva de IA para hostelería y restauración.
         </p>
 
         {/* Checklist */}

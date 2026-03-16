@@ -53,7 +53,7 @@ export const escandallosTestimonials = [
     avatar: chef5,
   },
   {
-    name: 'Isabel Romero',
+    name: 'Gonzalo Romero',
     role: 'Gerente, Cafetería Central',
     text: 'La plantilla de cafetería me ayudó a descubrir que mi tostada de aguacate tenía un food cost del 42%. Ajusté la receta y ahora está en el 27%. El kit se paga solo.',
     avatar: avatar8,
@@ -65,8 +65,8 @@ export const escandallosTestimonials = [
     avatar: avatar7,
   },
   {
-    name: 'Cristina Vega',
-    role: 'Jefa de Compras, Hotel Panorama',
+    name: 'Sergio Vega',
+    role: 'Jefe de Compras, Hotel Panorama',
     text: 'El control de mermas me permitió negociar mejor con proveedores. Cuando les muestro datos reales de merma por categoría, consigo mejores precios. Herramienta imprescindible.',
     avatar: avatar1,
   },

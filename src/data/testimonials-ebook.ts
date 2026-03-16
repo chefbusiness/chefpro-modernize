@@ -53,8 +53,8 @@ export const ebookTestimonials = [
     avatar: chef3,
   },
   {
-    name: 'Patricia López',
-    role: 'Jefa de Cocina, Hotel Grand Palace',
+    name: 'Andrés López',
+    role: 'Jefe de Cocina, Hotel Grand Palace',
     text: 'Los prompts de alérgenos y seguridad alimentaria me han ahorrado horas de documentación. Ahora genero fichas técnicas completas en segundos.',
     avatar: avatar8,
   },
@@ -65,8 +65,8 @@ export const ebookTestimonials = [
     avatar: avatar7,
   },
   {
-    name: 'Carmen Navarro',
-    role: 'Directora de RRHH, Grupo Restauración CN',
+    name: 'Marcos Navarro',
+    role: 'Director de RRHH, Grupo Restauración CN',
     text: 'Los prompts de liderazgo y equipos me ayudan a preparar evaluaciones, planes de formación y protocolos de onboarding. Una herramienta imprescindible.',
     avatar: avatar1,
   },

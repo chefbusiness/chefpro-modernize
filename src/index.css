@@ -368,6 +368,10 @@
     100% { transform: translateX(0); }
   }
 
+  .animate-marquee-scroll {
+    animation: scroll-left 40s linear infinite;
+  }
+
   /* Logo card hover effect */
   .logo-item {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
