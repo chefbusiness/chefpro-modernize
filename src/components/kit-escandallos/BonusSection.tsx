@@ -1,0 +1,71 @@
+import { BookOpen, FileSpreadsheet } from 'lucide-react';
+import FadeIn from '../ebook/FadeIn';
+
+const bonuses = [
+  {
+    icon: BookOpen,
+    label: 'BONUS 1',
+    title: 'Guía: Controla tu Food Cost en 30 Días',
+    value: '€27',
+    desc: 'Plan de acción semana a semana para reducir tu food cost. Incluye tácticas de negociación con proveedores, checklist semanal y caso práctico real.',
+    image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg',
+  },
+  {
+    icon: FileSpreadsheet,
+    label: 'BONUS 2',
+    title: 'Checklist de Mermas + Inventario',
+    value: '€19',
+    desc: 'Plantilla Excel con registro diario de mermas (con motivos y acciones correctivas) y control de inventario con consumo real vs teórico.',
+    image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
+  },
+];
+
+export default function BonusSection() {
+  return (
+    <section className="py-16 md:py-24 px-4">
+      <div className="max-w-5xl mx-auto">
+        <FadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">
+              Bonos <span className="text-[#FFD700]">Exclusivos</span>
+            </h2>
+            <p className="text-gray-400 text-lg">
+              Además de las 11 plantillas, recibirás estos recursos adicionales — valorados en €46
+            </p>
+          </div>
+        </FadeIn>
+
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+          {bonuses.map(({ icon: Icon, label, title, value, desc, image }, i) => (
+            <FadeIn key={title} delay={i * 100}>
+              <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#FFD700]/40 transition-all group h-full">
+                <div className="h-32 overflow-hidden relative">
+                  <img src={image} alt="" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]" />
+                  <span className="absolute bottom-3 left-4 text-[#FFD700] text-xs font-bold tracking-wider uppercase">{label}</span>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Icon className="w-5 h-5 text-[#FFD700]" />
+                    <h3 className="text-white font-bold text-base">{title}</h3>
+                  </div>
+                  <p className="text-gray-500 text-xs mb-2">Valor: {value}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+
+        <FadeIn>
+          <div className="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
+            <p className="text-gray-400 mb-2">Valor total del kit completo</p>
+            <p className="text-3xl text-gray-500 line-through mb-1">€49</p>
+            <p className="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">€12</p>
+            <p className="text-[#FFD700] font-bold text-lg">¡Ahorra €37 HOY!</p>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
