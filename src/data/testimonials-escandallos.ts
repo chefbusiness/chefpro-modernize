@@ -7,7 +7,7 @@ import avatar6 from '@/assets/avatars/avatar-6.jpg';
 import avatar7 from '@/assets/avatars/avatar-7.jpg';
 import avatar8 from '@/assets/avatars/avatar-8.jpg';
 import chef1 from '@/assets/avatars/chef-avatar-1.jpg';
-import chef2 from '@/assets/avatars/chef-avatar-2.jpg';
+import chef5 from '@/assets/avatars/chef-avatar-5.jpg';
 
 export const escandallosTestimonials = [
   {
@@ -50,7 +50,7 @@ export const escandallosTestimonials = [
     name: 'Antonio Delgado',
     role: 'Consultor Gastronómico',
     text: 'Uso el kit con todos mis clientes de consultoría. Es la herramienta más práctica que he encontrado para enseñar control de costes. Se lo recomiendo a todo el sector.',
-    avatar: chef2,
+    avatar: chef5,
   },
   {
     name: 'Isabel Romero',

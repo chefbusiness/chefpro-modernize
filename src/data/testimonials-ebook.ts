@@ -7,7 +7,7 @@ import avatar6 from '@/assets/avatars/avatar-6.jpg';
 import avatar7 from '@/assets/avatars/avatar-7.jpg';
 import avatar8 from '@/assets/avatars/avatar-8.jpg';
 import chef1 from '@/assets/avatars/chef-avatar-1.jpg';
-import chef2 from '@/assets/avatars/chef-avatar-2.jpg';
+import chef3 from '@/assets/avatars/chef-avatar-3.jpg';
 
 export const ebookTestimonials = [
   {
@@ -50,7 +50,7 @@ export const ebookTestimonials = [
     name: 'Roberto García',
     role: 'Consultor Gastronómico',
     text: 'Recomiendo el eBook a todos mis clientes. Es la forma más rápida de que un restaurante empiece a usar IA sin necesitar formación técnica.',
-    avatar: chef2,
+    avatar: chef3,
   },
   {
     name: 'Patricia López',
