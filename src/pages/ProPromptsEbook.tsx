@@ -11,6 +11,7 @@ import GuaranteeSection from '@/components/ebook/GuaranteeSection';
 import FaqAccordion from '@/components/ebook/FaqAccordion';
 import CtaFinal from '@/components/ebook/CtaFinal';
 import StickyBar from '@/components/ebook/StickyBar';
+import TryPlatformBanner from '@/components/ebook/TryPlatformBanner';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 
 export default function ProPromptsEbook() {
@@ -39,6 +40,7 @@ export default function ProPromptsEbook() {
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />
+        <TryPlatformBanner />
 
         {/* Footer mínimo */}
         <footer className="py-8 px-4 border-t border-white/10">
