@@ -293,24 +293,13 @@ export default function ModernHeader() {
               {currentLanguage === 'es' && (
                 <NavigationMenuItem>
                   <NavigationMenuLink
-                    className="text-sm font-medium transition-colors hover:text-[#FFD700] text-foreground/60 px-3 py-2"
+                    className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
                     href="/productos-digitales"
                   >
                     Productos Digitales
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               )}
-
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
-                  href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t('nav.blog')}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -474,9 +463,9 @@ export default function ModernHeader() {
                         <a
                           href="/productos-digitales"
                           onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-[#FFD700]"
+                          className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
-                          <BookOpen className="h-5 w-5 text-[#FFD700]" />
+                          <BookOpen className="h-5 w-5 text-muted-foreground" />
                           Productos Digitales
                         </a>
                       )}

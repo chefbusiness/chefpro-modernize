@@ -351,7 +351,7 @@ export default function ModernFooter() {
                 <li>
                   <a
                     href="/productos-digitales"
-                    className="text-[#FFD700] hover:text-[#FFD700]/80 transition-colors font-medium"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Productos Digitales
                   </a>

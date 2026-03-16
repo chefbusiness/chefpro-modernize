@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, BookOpen, FileSpreadsheet, Star, Check } from 'lucide-react';
+import { ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock, MessageSquare, ShieldCheck, BarChart3, Utensils, GraduationCap, Palette, Wine } from 'lucide-react';
 
 const products = [
   {
@@ -36,7 +36,7 @@ const products = [
       'Acceso de por vida + actualizaciones',
     ],
     icon: FileSpreadsheet,
-    image: '/og-image.jpg',
+    image: '/kit-escandallos-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
   },
@@ -205,6 +205,62 @@ export default function ProductosDigitales() {
                 </a>
               );
             })}
+          </div>
+        </section>
+
+        {/* Coming Soon */}
+        <section className="px-4 pb-16 md:pb-24">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
+                <Clock className="w-4 h-4 inline mr-2" />
+                En Desarrollo
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                Próximos <span className="text-[#FFD700]">Productos</span>
+              </h2>
+              <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+                Estamos preparando nuevos recursos digitales para profesionales de hostelería. Cada uno sigue el mismo estándar de calidad: acceso inmediato, actualizaciones de por vida y garantía de 30 días.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { icon: MessageSquare, name: 'Banco de Respuestas a Reseñas', desc: '200+ respuestas profesionales para Google, TripAdvisor y Yelp', tag: 'Próximamente' },
+                { icon: ShieldCheck, name: 'Pack de Plantillas APPCC', desc: 'Registros de temperatura, limpieza, recepción y trazabilidad', tag: 'Próximamente' },
+                { icon: BarChart3, name: 'Guía Completa de Food Cost', desc: 'Cálculo, control y optimización del food cost con ejemplos reales', tag: 'Próximamente' },
+                { icon: Palette, name: 'Kit de Social Media para Restaurantes', desc: '100+ plantillas de posts, stories y reels + calendario editorial', tag: 'Próximamente' },
+                { icon: Utensils, name: 'Manual de Escandallos Profesional', desc: '50+ ejemplos de escandallos por tipo de cocina y establecimiento', tag: 'Próximamente' },
+                { icon: GraduationCap, name: 'Curso: Domina la IA en tu Restaurante', desc: '10 módulos progresivos de principiante a avanzado con ejercicios', tag: '2026' },
+                { icon: Wine, name: 'Manual de Coctelería y Mixología Moderna', desc: 'Recetas clásicas + creaciones con IA, maridajes y costes', tag: '2026' },
+                { icon: BookOpen, name: 'eBook de Marketing Gastronómico con IA', desc: 'Estrategias de marketing digital para restaurantes usando IA', tag: '2026' },
+              ].map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.name}
+                    className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-5 opacity-70 hover:opacity-90 transition-opacity"
+                  >
+                    <div className="flex items-start gap-3 mb-2">
+                      <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-4 h-4 text-gray-400" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h3 className="text-sm font-semibold text-white truncate">{item.name}</h3>
+                        </div>
+                        <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                      </div>
+                    </div>
+                    <div className="flex justify-end">
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
+                        {item.tag}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
 
