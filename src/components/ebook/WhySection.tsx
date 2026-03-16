@@ -19,8 +19,8 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Lifetime Deal — Acceso de por Vida',
-    desc: 'Paga una vez, accede para siempre. Tu dashboard online se actualiza con nuevas categorías y prompts. Recibes todas las mejoras sin coste adicional.',
+    title: 'Paga Una Vez, Tuyo Para Siempre',
+    desc: 'Sin suscripciones ni pagos recurrentes. Tu dashboard privado se actualiza constantemente con nuevos prompts y categorías. Cada mejora futura es tuya, sin coste adicional.',
   },
 ];
 

@@ -12,7 +12,7 @@ export default function AuthorSection() {
                 <img
                   src="https://chefbusiness.co/images/chef-john-guerrero.jpg"
                   alt="Chef John Guerrero"
-                  className="w-full h-full object-cover scale-[1.3] object-[center_15%]"
+                  className="w-full h-full object-cover scale-[1.6] object-[center_22%]"
                 />
               </div>
             </div>
