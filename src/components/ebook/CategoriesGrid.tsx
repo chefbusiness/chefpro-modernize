@@ -5,18 +5,18 @@ import {
 import FadeIn from './FadeIn';
 
 const categories = [
-  { icon: ChefHat, title: 'Cocina y Recetas', desc: 'Para chefs y cocineros: recetas creativas, técnicas, fusión y cocinas del mundo' },
-  { icon: Calculator, title: 'Gestión y Costes', desc: 'Para gerentes y dueños: food cost, escandallos, rentabilidad y control de negocio' },
-  { icon: Cake, title: 'Pastelería y Panadería', desc: 'Para pasteleros, panaderos y chocolateros: formulaciones, técnicas y creatividad' },
-  { icon: Wine, title: 'Sala, Bar y Bebidas', desc: 'Para bartenders y sommeliers: coctelería, maridajes, carta de vinos y sala' },
-  { icon: CalendarDays, title: 'Catering y Eventos', desc: 'Propuestas, presupuestos, logística y menús para bodas, corporativos y banquetes' },
-  { icon: Beaker, title: 'Food Pairing', desc: 'Maridajes científicos, sustituciones de ingredientes y combinaciones inesperadas' },
-  { icon: Megaphone, title: 'Marketing del Negocio', desc: 'RRSS, SEO local, reseñas, email marketing y posicionamiento de marca' },
-  { icon: ShieldCheck, title: 'Alérgenos y Seguridad', desc: 'Gestión de alérgenos, etiquetado, protocolos APPCC y formación de equipo' },
-  { icon: Briefcase, title: 'Gestión de Negocio', desc: 'Planes de negocio, franquicias, estrategia de precios y consultoría' },
-  { icon: Users, title: 'Liderazgo y Equipos', desc: 'Liderazgo, feedback, bienestar y gestión de brigada' },
-  { icon: Cpu, title: 'Prompt Engineering', desc: 'El framework para obtener respuestas perfectas de cualquier IA en hostelería' },
-  { icon: ClipboardList, title: 'Plantillas Copy-Paste', desc: 'Listas para usar en segundos para cualquier perfil del sector' },
+  { icon: ChefHat, title: 'Cocina y Recetas', desc: 'Más de 40 prompts para chefs y cocineros: genera recetas creativas con ingredientes disponibles, adapta platos a temporada, explora técnicas de alta cocina y fusión de cocinas del mundo. Incluye prompts para emplatado y presentación profesional.' },
+  { icon: Calculator, title: 'Gestión y Costes', desc: 'Prompts esenciales para gerentes y dueños: calcula food cost en segundos, genera escandallos automáticos, analiza rentabilidad por plato y optimiza compras con proveedores. Convierte la IA en tu controller financiero de cocina.' },
+  { icon: Cake, title: 'Pastelería y Panadería', desc: 'Sección dedicada a pasteleros, panaderos y chocolateros: formulaciones con porcentajes de panadero, técnicas de fermentación, combinaciones de sabores y adaptación de recetas para intolerancias. Crea cartas de temporada en minutos.' },
+  { icon: Wine, title: 'Sala, Bar y Bebidas', desc: 'Para bartenders y sommeliers: crea cocktails de autor, diseña maridajes por plato, genera descripciones de vinos para la carta y optimiza el servicio de sala. Incluye prompts de mixología molecular y tendencias de bebidas.' },
+  { icon: CalendarDays, title: 'Catering y Eventos', desc: 'Genera propuestas personalizadas, presupuestos detallados por comensal, planifica logística y diseña menús para bodas, corporativos y banquetes. Cada prompt pensado para impresionar al cliente y cerrar el evento.' },
+  { icon: Beaker, title: 'Food Pairing', desc: 'Descubre combinaciones de ingredientes basadas en ciencia: maridajes por compuestos aromáticos, sustituciones inteligentes cuando falta un ingrediente y combinaciones inesperadas que sorprenden al comensal. La creatividad con base científica.' },
+  { icon: Megaphone, title: 'Marketing del Negocio', desc: 'Prompts para generar contenido para RRSS, optimizar tu SEO local en Google, responder reseñas de forma profesional, crear campañas de email marketing y posicionar tu marca. Tu community manager con IA integrado.' },
+  { icon: ShieldCheck, title: 'Alérgenos y Seguridad', desc: 'Genera fichas técnicas de alérgenos completas, etiquetado conforme a normativa, protocolos APPCC actualizados y planes de formación para tu equipo. Cumple la legislación sin pasar horas con la documentación.' },
+  { icon: Briefcase, title: 'Gestión de Negocio', desc: 'Desde planes de negocio para nuevos conceptos hasta estrategias de precios y análisis de viabilidad de franquicias. Incluye prompts de consultoría que te ayudan a tomar decisiones estratégicas con datos, no con intuición.' },
+  { icon: Users, title: 'Liderazgo y Equipos', desc: 'Prompts para mejorar tu liderazgo en cocina: evaluaciones de rendimiento, planes de formación, protocolos de onboarding para nuevas incorporaciones y técnicas de comunicación con brigada. Gestiona personas, no solo platos.' },
+  { icon: Cpu, title: 'Prompt Engineering', desc: 'El capítulo que multiplica el valor de todos los demás: aprende el framework CRAFT para escribir prompts perfectos en hostelería. Entiende cómo piensa la IA y obtén respuestas 10x mejores en cualquier herramienta.' },
+  { icon: ClipboardList, title: 'Plantillas Copy-Paste', desc: 'Prompts listos para copiar, pegar y usar en segundos — sin necesidad de adaptación. Organizados por perfil: chef, gerente, pastelero, bartender, catering y dueño de restaurante. La forma más rápida de empezar.' },
 ];
 
 const foodStrip = [
@@ -65,7 +65,7 @@ export default function CategoriesGrid() {
               <div className="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#FFD700]/50 transition-all duration-300 h-full">
                 <Icon className="w-8 h-8 text-[#FFD700] mb-3" />
                 <h3 className="text-white font-semibold text-sm md:text-base mb-1.5">{title}</h3>
-                <p className="text-gray-400 text-xs md:text-sm leading-relaxed">{desc}</p>
+                <p className="text-gray-400 text-sm md:text-base leading-relaxed">{desc}</p>
               </div>
             </FadeIn>
           ))}

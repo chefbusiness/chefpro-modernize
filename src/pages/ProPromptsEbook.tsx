@@ -11,6 +11,8 @@ import GuaranteeSection from '@/components/ebook/GuaranteeSection';
 import FaqAccordion from '@/components/ebook/FaqAccordion';
 import CtaFinal from '@/components/ebook/CtaFinal';
 import StickyBar from '@/components/ebook/StickyBar';
+import TestimonialsMarquee from '@/components/shared/TestimonialsMarquee';
+import { ebookTestimonials } from '@/data/testimonials-ebook';
 import TryPlatformBanner from '@/components/ebook/TryPlatformBanner';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 
@@ -37,6 +39,11 @@ export default function ProPromptsEbook() {
         <BonusSection />
         <FreeToolsSection />
         <BuyBox />
+        <TestimonialsMarquee
+          title={<>Lo Que Dicen los <span className="text-[#FFD700]">Profesionales</span></>}
+          subtitle="Profesionales de la hostelería que ya usan los prompts del eBook en su día a día"
+          testimonials={ebookTestimonials}
+        />
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />

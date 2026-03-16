@@ -8,6 +8,8 @@ import BuyBox from '@/components/kit-escandallos/BuyBox';
 import GuaranteeSection from '@/components/kit-escandallos/GuaranteeSection';
 import FaqAccordion from '@/components/kit-escandallos/FaqAccordion';
 import CtaFinal from '@/components/kit-escandallos/CtaFinal';
+import TestimonialsMarquee from '@/components/shared/TestimonialsMarquee';
+import { escandallosTestimonials } from '@/data/testimonials-escandallos';
 import TryPlatformBanner from '@/components/ebook/TryPlatformBanner';
 import StickyBar from '@/components/kit-escandallos/StickyBar';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
@@ -33,6 +35,11 @@ export default function KitEscandallos() {
         <AuthorSection />
         <BonusSection />
         <BuyBox />
+        <TestimonialsMarquee
+          title={<>Lo Que Dicen los <span className="text-[#FFD700]">Profesionales</span></>}
+          subtitle="Profesionales de la hostelería que ya controlan su food cost con el Kit de Escandallos Pro"
+          testimonials={escandallosTestimonials}
+        />
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />
