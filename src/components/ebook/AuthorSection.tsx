@@ -10,9 +10,9 @@ export default function AuthorSection() {
             <div className="flex-shrink-0">
               <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-[3px] border-[#FFD700]/40 shadow-lg shadow-[#FFD700]/10">
                 <img
-                  src="https://chefbusiness.co/images/chef-john-guerrero.jpg"
+                  src="/chef-john-guerrero-ebook.jpg"
                   alt="Chef John Guerrero"
-                  className="w-full h-full object-cover scale-[1.6] object-[center_22%]"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
