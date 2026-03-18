@@ -148,7 +148,10 @@ export default function KitEscandallos() {
               <span className="text-gray-700">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
-            <AlreadyBought />
+            <AlreadyBought
+              product="kit-escandallos"
+              label="¿Ya compraste el Kit? Vuelve a entrar al dashboard"
+            />
           </div>
         </footer>
 

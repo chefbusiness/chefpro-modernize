@@ -24,16 +24,49 @@ export const handler: Handler = async (event) => {
   try {
     const jwt = (await import('jsonwebtoken')).default;
     const token = authHeader.split(' ')[1];
-    jwt.verify(token, process.env.JWT_SECRET!);
+    const payload = jwt.verify(token, process.env.JWT_SECRET!) as { product?: string };
 
+    const product = payload.product || 'pro-prompts-ebook';
+
+    // ── Pro Prompts eBook downloads ───────────────────────────
+    if (product === 'pro-prompts-ebook') {
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'pro-prompts-ebook',
+          ebook: process.env.PDF_EBOOK_URL || null,
+          bonus1: process.env.PDF_BONUS1_URL || null,
+          bonus23: process.env.PDF_BONUS23_URL || null,
+        }),
+      };
+    }
+
+    // ── Kit de Escandallos Pro downloads ──────────────────────
+    if (product === 'kit-escandallos') {
+      // Parse JSON env var: {"estandar":"url","degustacion":"url",...}
+      let kitFiles: Record<string, string> = {};
+      try {
+        kitFiles = JSON.parse(process.env.KIT_ESCANDALLOS_URLS || '{}');
+      } catch {
+        kitFiles = {};
+      }
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'kit-escandallos',
+          files: kitFiles,
+        }),
+      };
+    }
+
+    // Unknown product — return empty
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({
-        ebook: process.env.PDF_EBOOK_URL || null,
-        bonus1: process.env.PDF_BONUS1_URL || null,
-        bonus23: process.env.PDF_BONUS23_URL || null,
-      }),
+      body: JSON.stringify({ product, error: 'Unknown product' }),
     };
   } catch {
     return { statusCode: 403, headers, body: JSON.stringify({ error: 'Invalid token' }) };

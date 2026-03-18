@@ -1,5 +1,32 @@
 import type { Handler } from '@netlify/functions';
 
+// ── Product config ──────────────────────────────────────────────
+interface ProductConfig {
+  accessPath: string;
+  emailSubject: string;
+  emailTitle: string;
+  emailBody: string;
+  emailCta: string;
+}
+
+const PRODUCTS: Record<string, ProductConfig> = {
+  'pro-prompts-ebook': {
+    accessPath: '/pro-prompts-library-access',
+    emailSubject: 'Tu acceso a Pro Prompts Library',
+    emailTitle: 'Accede a tu Pro Prompts Library',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:',
+    emailCta: 'Acceder a mi Library',
+  },
+  'kit-escandallos': {
+    accessPath: '/kit-escandallos-access',
+    emailSubject: 'Tu acceso al Kit de Escandallos Pro',
+    emailTitle: 'Accede a tu Kit de Escandallos Pro',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 11 plantillas Excel:',
+    emailCta: 'Acceder a mis Plantillas',
+  },
+};
+
+// ── Handler ─────────────────────────────────────────────────────
 export const handler: Handler = async (event) => {
   const headers = {
     'Content-Type': 'application/json',
@@ -16,10 +43,13 @@ export const handler: Handler = async (event) => {
   }
 
   try {
-    const { email } = JSON.parse(event.body || '{}');
+    const { email, product } = JSON.parse(event.body || '{}');
     if (!email) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Email required' }) };
     }
+
+    const productId = product && PRODUCTS[product] ? product : 'pro-prompts-ebook';
+    const config = PRODUCTS[productId];
 
     // Search Stripe for completed checkout sessions with this email
     const Stripe = (await import('stripe')).default;
@@ -27,7 +57,7 @@ export const handler: Handler = async (event) => {
 
     const sessions = await stripe.checkout.sessions.list({
       customer_details: { email },
-      limit: 5,
+      limit: 10,
     });
 
     const paidSession = sessions.data.find((s) => s.payment_status === 'paid');
@@ -39,12 +69,12 @@ export const handler: Handler = async (event) => {
     // Generate new JWT and send email
     const jwt = (await import('jsonwebtoken')).default;
     const token = jwt.sign(
-      { email, product: 'pro-prompts-ebook' },
+      { email, product: productId },
       process.env.JWT_SECRET!,
       { expiresIn: '365d' }
     );
 
-    const magicLink = `https://aichef.pro/pro-prompts-library-access?jwt=${token}`;
+    const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
 
     await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -55,16 +85,16 @@ export const handler: Handler = async (event) => {
       body: JSON.stringify({
         from: 'AI Chef Pro <noreply@contact.aichef.pro>',
         to: email,
-        subject: 'Tu acceso a Pro Prompts Library',
+        subject: config.emailSubject,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-            <h1 style="color: #FFD700; font-size: 24px;">Accede a tu Pro Prompts Library</h1>
+            <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitle}</h1>
             <p style="color: #333; line-height: 1.6;">
-              Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:
+              ${config.emailBody}
             </p>
             <div style="text-align: center; margin: 30px 0;">
               <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-                Acceder a mi Library
+                ${config.emailCta}
               </a>
             </div>
             <p style="color: #666; font-size: 14px; line-height: 1.6;">

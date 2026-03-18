@@ -42,6 +42,8 @@ import ProPromptsLibrary from "./pages/ProPromptsLibrary";
 import KitEscandallos from "./pages/KitEscandallos";
 import ProductosDigitales from "./pages/ProductosDigitales";
 import AccessGate from "./pages/AccessGate";
+import KitEscandallosAccessGate from "./pages/KitEscandallosAccessGate";
+import KitEscandallosDashboard from "./pages/KitEscandallosDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -232,6 +234,15 @@ const App = () => (
 
             {/* Kit de Escandallos Pro */}
             <Route path="/kit-escandallos" element={<KitEscandallos />} />
+            <Route path="/kit-escandallos-access" element={<KitEscandallosAccessGate />} />
+            <Route
+              path="/kit-escandallos-library"
+              element={
+                <ProtectedRoute storageKey="kit-escandallos-jwt" redirectTo="/kit-escandallos">
+                  <KitEscandallosDashboard />
+                </ProtectedRoute>
+              }
+            />
 
             {/* Pro Prompts eBook & Library */}
             <Route path="/pro-prompts-ebook" element={<ProPromptsEbook />} />

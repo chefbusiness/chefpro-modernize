@@ -1,5 +1,32 @@
 import type { Handler } from '@netlify/functions';
 
+// ── Product config ──────────────────────────────────────────────
+interface ProductConfig {
+  accessPath: string;
+  emailSubject: string;
+  emailTitle: string;
+  emailBody: string;
+  emailCta: string;
+}
+
+const PRODUCTS: Record<string, ProductConfig> = {
+  'pro-prompts-ebook': {
+    accessPath: '/pro-prompts-library-access',
+    emailSubject: 'Tu acceso a Pro Prompts Library',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Pro Prompts Library</strong> está listo. Haz clic en el botón para acceder a tus prompts y descargas:',
+    emailCta: 'Acceder a mi Library',
+  },
+  'kit-escandallos': {
+    accessPath: '/kit-escandallos-access',
+    emailSubject: 'Tu acceso al Kit de Escandallos Pro',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Escandallos Pro</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 11 plantillas Excel:',
+    emailCta: 'Acceder a mis Plantillas',
+  },
+};
+
+// ── Handler ─────────────────────────────────────────────────────
 export const handler: Handler = async (event) => {
   const headers = {
     'Content-Type': 'application/json',
@@ -16,11 +43,11 @@ export const handler: Handler = async (event) => {
   }
 
   try {
-    const { checkoutSessionId, existingJwt } = JSON.parse(event.body || '{}');
+    const { checkoutSessionId, existingJwt, product } = JSON.parse(event.body || '{}');
+    const productId = product && PRODUCTS[product] ? product : 'pro-prompts-ebook';
 
     // Case 1: Verify new Stripe checkout session
     if (checkoutSessionId) {
-      // Dynamic imports to keep cold start fast
       const Stripe = (await import('stripe')).default;
       const jwt = (await import('jsonwebtoken')).default;
 
@@ -30,13 +57,13 @@ export const handler: Handler = async (event) => {
       if (session.payment_status === 'paid') {
         const email = session.customer_details?.email || session.customer_email || '';
         const token = jwt.sign(
-          { email, product: 'pro-prompts-ebook' },
+          { email, product: productId },
           process.env.JWT_SECRET!,
           { expiresIn: '365d' }
         );
 
         // Fire-and-forget email (don't block the response)
-        sendAccessEmail(email, token).catch(() => {});
+        sendAccessEmail(email, token, productId).catch(() => {});
 
         return {
           statusCode: 200,
@@ -70,10 +97,12 @@ export const handler: Handler = async (event) => {
   }
 };
 
-async function sendAccessEmail(email: string, token: string) {
+// ── Email sender ────────────────────────────────────────────────
+async function sendAccessEmail(email: string, token: string, productId: string) {
   if (!email || !process.env.RESEND_API_KEY) return;
 
-  const magicLink = `https://aichef.pro/pro-prompts-library-access?jwt=${token}`;
+  const config = PRODUCTS[productId] || PRODUCTS['pro-prompts-ebook'];
+  const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
 
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -84,20 +113,20 @@ async function sendAccessEmail(email: string, token: string) {
     body: JSON.stringify({
       from: 'AI Chef Pro <noreply@contact.aichef.pro>',
       to: email,
-      subject: 'Tu acceso a Pro Prompts Library',
+      subject: config.emailSubject,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-          <h1 style="color: #FFD700; font-size: 24px;">¡Gracias por tu compra!</h1>
+          <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitle}</h1>
           <p style="color: #333; line-height: 1.6;">
-            Tu acceso a la <strong>Pro Prompts Library</strong> está listo. Haz clic en el botón para acceder a tus prompts y descargas:
+            ${config.emailBody}
           </p>
           <div style="text-align: center; margin: 30px 0;">
             <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
-              Acceder a mi Library
+              ${config.emailCta}
             </a>
           </div>
           <p style="color: #666; font-size: 14px; line-height: 1.6;">
-            Guarda este email. Puedes usar este enlace para acceder a tu library en cualquier momento.
+            Guarda este email. Puedes usar este enlace para acceder en cualquier momento.
           </p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
           <p style="color: #999; font-size: 12px;">

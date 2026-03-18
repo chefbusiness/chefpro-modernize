@@ -1,7 +1,15 @@
 import { useState } from 'react';
 import { Mail, Loader2, CheckCircle } from 'lucide-react';
 
-export default function AlreadyBought() {
+interface Props {
+  product?: 'pro-prompts-ebook' | 'kit-escandallos';
+  label?: string;
+}
+
+export default function AlreadyBought({
+  product = 'pro-prompts-ebook',
+  label = '¿Ya compraste el eBook? Vuelve a entrar al dashboard',
+}: Props) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -14,7 +22,7 @@ export default function AlreadyBought() {
       const res = await fetch('/.netlify/functions/resend-access', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim() }),
+        body: JSON.stringify({ email: email.trim(), product }),
       });
 
       if (res.ok) {
@@ -31,7 +39,7 @@ export default function AlreadyBought() {
     <div className="border-t border-white/10 pt-8 mt-4">
       <div className="text-center">
         <p className="text-white font-semibold text-sm mb-1">
-          ¿Ya compraste el eBook? Vuelve a entrar al dashboard
+          {label}
         </p>
         <p className="text-gray-500 text-xs mb-3">
           Introduce tu email de compra y te enviaremos el enlace de acceso
