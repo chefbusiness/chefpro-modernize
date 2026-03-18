@@ -44,6 +44,9 @@ import ProductosDigitales from "./pages/ProductosDigitales";
 import AccessGate from "./pages/AccessGate";
 import KitEscandallosAccessGate from "./pages/KitEscandallosAccessGate";
 import KitEscandallosDashboard from "./pages/KitEscandallosDashboard";
+import PackAppcc from "./pages/PackAppcc";
+import PackAppccAccessGate from "./pages/PackAppccAccessGate";
+import PackAppccDashboard from "./pages/PackAppccDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -240,6 +243,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-escandallos-jwt" redirectTo="/kit-escandallos">
                   <KitEscandallosDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Pack de Plantillas APPCC */}
+            <Route path="/pack-appcc" element={<PackAppcc />} />
+            <Route path="/pack-appcc-access" element={<PackAppccAccessGate />} />
+            <Route
+              path="/pack-appcc-library"
+              element={
+                <ProtectedRoute storageKey="pack-appcc-jwt" redirectTo="/pack-appcc">
+                  <PackAppccDashboard />
                 </ProtectedRoute>
               }
             />

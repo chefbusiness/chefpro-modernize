@@ -62,6 +62,25 @@ export const handler: Handler = async (event) => {
       };
     }
 
+    // ── Pack de Plantillas APPCC downloads ────────────────────
+    if (product === 'pack-appcc') {
+      let appccFiles: Record<string, string> = {};
+      try {
+        appccFiles = JSON.parse(process.env.PACK_APPCC_URLS || '{}');
+      } catch {
+        appccFiles = {};
+      }
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'pack-appcc',
+          files: appccFiles,
+        }),
+      };
+    }
+
     // Unknown product — return empty
     return {
       statusCode: 200,

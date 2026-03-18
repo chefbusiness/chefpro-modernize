@@ -24,6 +24,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 11 plantillas Excel:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'pack-appcc': {
+    accessPath: '/pack-appcc-access',
+    emailSubject: 'Tu acceso al Pack de Plantillas APPCC',
+    emailTitle: 'Accede a tu Pack de Plantillas APPCC',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
+    emailCta: 'Acceder a mis Plantillas APPCC',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
