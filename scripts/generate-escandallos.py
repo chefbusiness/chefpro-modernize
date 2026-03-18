@@ -921,7 +921,7 @@ def create_catering():
     rows_data = [
         (4, "Concepto", "Importe (€)", True),
         (5, "Número de comensales", 50, False),
-        (6, "Coste alimentación por persona", "='Cocktail 50 pax'!I17", False),
+        (6, "Coste alimentación por persona", "='Cocktail 50 pax'!I23", False),
         (7, "Coste total alimentación", "=C5*C6", False),
         (8, "Personal de servicio (camareros)", "=C5*3.50", False),
         (9, "Transporte y logística", 150.00, False),
