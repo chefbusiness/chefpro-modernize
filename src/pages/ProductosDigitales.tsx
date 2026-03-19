@@ -196,7 +196,7 @@ export default function ProductosDigitales() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Plantillas Excel, guías de seguridad alimentaria y prompts de IA diseñados por y para profesionales de la hostelería. Descarga inmediata, acceso de por vida.
+              eBooks, plantillas Excel, guías de seguridad alimentaria y prompts de IA diseñados por y para profesionales de la hostelería. Descarga inmediata, acceso de por vida.
             </p>
           </div>
         </section>
