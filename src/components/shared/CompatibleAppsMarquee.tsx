@@ -45,17 +45,21 @@ function LogoCard({ app }: { app: AppLogo }) {
 }
 
 interface CompatibleAppsMarqueeProps {
-  variant?: 'ebook' | 'kit' | 'appcc';
+  variant?: 'ebook' | 'kit' | 'appcc' | 'tareas';
 }
 
 export default function CompatibleAppsMarquee({ variant = 'ebook' }: CompatibleAppsMarqueeProps) {
-  const title = variant === 'appcc'
+  const title = variant === 'tareas'
+    ? <>Imprime, Delega y <span className="text-[#FFD700]">Controla</span></>
+    : variant === 'appcc'
     ? <>Compatible con <span className="text-[#FFD700]">Excel</span>, Google Sheets y PDF Imprimible</>
     : variant === 'kit'
     ? <>Compatible con las <span className="text-[#FFD700]">Herramientas</span> que Ya Usas</>
     : <>Funciona con las <span className="text-[#FFD700]">Apps</span> que Usas a Diario</>;
 
-  const subtitle = variant === 'appcc'
+  const subtitle = variant === 'tareas'
+    ? <>Plantillas Excel optimizadas para imprimir en A4. Compatible con Excel, Google Sheets, LibreOffice y Numbers</>
+    : variant === 'appcc'
     ? <>Descarga, personaliza e imprime. Compatible con Excel, Google Sheets, LibreOffice y Apple Numbers</>
     : variant === 'kit'
     ? <>Funciona mejor con <a href="https://aichef.pro" className="text-[#FFD700] hover:underline">AI Chef Pro</a>. Compatible con Excel, Google Sheets, PDF y más</>

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -59,6 +59,25 @@ const products = [
     badge: 'Popular',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
     tags: ['excel', 'plantillas', 'costes'],
+  },
+  {
+    name: 'Kit Tareas Recurrentes Pro',
+    slug: '/kit-tareas',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 checklists operativos pre-rellenados: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma.',
+    features: [
+      'Apertura y cierre por área',
+      'Tareas por perfil profesional',
+      'Checklist diario/semanal del manager',
+      'Eventos y festivos incluidos',
+    ],
+    icon: ClipboardList,
+    image: '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -147,7 +166,8 @@ export default function ProductosDigitales() {
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "url": "https://aichef.pro/pro-prompts-ebook", "name": "Gastro Pro Prompts eBook" },
               { "@type": "ListItem", "position": 2, "url": "https://aichef.pro/kit-escandallos", "name": "Kit de Escandallos Pro" },
-              { "@type": "ListItem", "position": 3, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
+              { "@type": "ListItem", "position": 3, "url": "https://aichef.pro/kit-tareas", "name": "Kit de Tareas Recurrentes Pro" },
+              { "@type": "ListItem", "position": 4, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
             ]
           }
         })}</script>
@@ -188,7 +208,7 @@ export default function ProductosDigitales() {
 
           <div className="relative max-w-4xl mx-auto text-center z-10">
             <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
-              {products.length} productos disponibles · {comingSoon.length} en desarrollo
+              {products.length} productos disponibles · {comingSoon.length} próximamente
             </span>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">

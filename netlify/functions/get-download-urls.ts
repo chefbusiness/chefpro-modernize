@@ -81,6 +81,25 @@ export const handler: Handler = async (event) => {
       };
     }
 
+    // ── Kit de Tareas Recurrentes downloads ────────────────────
+    if (product === 'kit-tareas') {
+      let tareasFiles: Record<string, string> = {};
+      try {
+        tareasFiles = JSON.parse(process.env.KIT_TAREAS_URLS || '{}');
+      } catch {
+        tareasFiles = {};
+      }
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'kit-tareas',
+          files: tareasFiles,
+        }),
+      };
+    }
+
     // Unknown product — return empty
     return {
       statusCode: 200,

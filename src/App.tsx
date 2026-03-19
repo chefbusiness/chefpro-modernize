@@ -47,6 +47,9 @@ import KitEscandallosDashboard from "./pages/KitEscandallosDashboard";
 import PackAppcc from "./pages/PackAppcc";
 import PackAppccAccessGate from "./pages/PackAppccAccessGate";
 import PackAppccDashboard from "./pages/PackAppccDashboard";
+import KitTareas from "./pages/KitTareas";
+import KitTareasAccessGate from "./pages/KitTareasAccessGate";
+import KitTareasDashboard from "./pages/KitTareasDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -255,6 +258,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="pack-appcc-jwt" redirectTo="/pack-appcc">
                   <PackAppccDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit de Tareas Recurrentes */}
+            <Route path="/kit-tareas" element={<KitTareas />} />
+            <Route path="/kit-tareas-access" element={<KitTareasAccessGate />} />
+            <Route
+              path="/kit-tareas-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-jwt" redirectTo="/kit-tareas">
+                  <KitTareasDashboard />
                 </ProtectedRoute>
               }
             />

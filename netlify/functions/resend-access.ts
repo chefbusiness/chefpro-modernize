@@ -31,6 +31,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
   },
+  'kit-tareas': {
+    accessPath: '/kit-tareas-access',
+    emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',
+    emailTitle: 'Accede a tu Kit de Tareas Recurrentes',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
