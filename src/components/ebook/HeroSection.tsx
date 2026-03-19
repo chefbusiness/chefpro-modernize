@@ -1,6 +1,7 @@
 import { Check, Star } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import PaymentBadges from './PaymentBadges';
+import LogoBadge from '@/components/shared/LogoBadge';
 
 import avatar1 from '@/assets/avatars/avatar-1.jpg';
 import avatar2 from '@/assets/avatars/avatar-2.jpg';
@@ -56,6 +57,7 @@ export default function HeroSection() {
       }} />
 
       <div className="relative max-w-4xl mx-auto text-center z-10">
+        <LogoBadge />
         {/* Avatars + Stars */}
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="flex -space-x-3 justify-center">

@@ -17,7 +17,6 @@ import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
 import WorldwideBanner from '@/components/shared/WorldwideBanner';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
-import LogoBadge from '@/components/shared/LogoBadge';
 
 export default function KitEscandallos() {
   return (
@@ -122,7 +121,6 @@ export default function KitEscandallos() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
-        <LogoBadge />
         <HeroSection />
         <CompatibleAppsMarquee variant="kit" />
         <ContentGrid />
