@@ -23,12 +23,12 @@ const checkItems = [
 ];
 
 const heroImages = [
-  '/lovable-uploads/ai-gallery/appcc-control-temperaturas.jpeg',
-  '/lovable-uploads/ai-gallery/appcc-limpieza-cocina.jpeg',
-  '/lovable-uploads/ai-gallery/appcc-recepcion-mercancias.jpeg',
-  '/lovable-uploads/ai-gallery/appcc-alergenos-carta.jpeg',
-  '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
-  '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
+  '/lovable-uploads/ai-gallery/tareas-restaurante-apertura.jpg',
+  '/lovable-uploads/ai-gallery/tareas-restaurante-sala.jpg',
+  '/lovable-uploads/ai-gallery/tareas-restaurante-manager.jpg',
+  '/lovable-uploads/ai-gallery/tareas-restaurante-limpieza.jpg',
+  '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
 ];
 
 export default function HeroSection() {

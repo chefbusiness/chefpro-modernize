@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Plantilla de Briefing Pre-Servicio',
     value: '€7',
     desc: 'La reunión de 5 minutos que separa a los restaurantes buenos de los excelentes. Reservas, platos del día, alérgenos, 86s, equipo.',
-    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-manager.jpg',
   },
   {
     icon: Calendar,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Calendario Anual de Tareas Especiales',
     value: '€9',
     desc: '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, terraza) con tareas y antelación recomendada.',
-    image: '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
   },
 ];
 
