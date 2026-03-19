@@ -44,7 +44,6 @@ export default function ProPromptsLibrary() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
-        <LogoBadge />
         <TopBar />
 
         {/* Hero with floating gallery */}
@@ -52,7 +51,8 @@ export default function ProPromptsLibrary() {
           <FloatingGallery />
           <div className="absolute inset-0 flex items-center justify-center z-20">
             <div className="text-center px-4">
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">
+              <LogoBadge />
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 mt-4 drop-shadow-lg">
                 Pro Prompts Library <span className="text-[#FFD700]">by AI Chef Pro</span>
               </h1>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow-md">

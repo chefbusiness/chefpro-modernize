@@ -57,7 +57,6 @@ export default function PackAppccDashboard() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
-        <LogoBadge />
         {/* ── Top bar ────────────────────────────────────────── */}
         <header className="sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-white/10">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -77,7 +76,8 @@ export default function PackAppccDashboard() {
 
         {/* ── Hero ───────────────────────────────────────────── */}
         <section className="py-12 md:py-16 px-4 text-center">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3">
+          <LogoBadge />
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">
             Pack de Plantillas <span className="text-[#FFD700]">APPCC</span>
           </h1>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
