@@ -196,7 +196,7 @@ export default function ProductosDigitales() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Plantillas Excel, guías profesionales y prompts de IA. Creados por profesionales con +29 años en hostelería para chefs, gerentes y dueños de restaurante.
+              Plantillas Excel, guías de seguridad alimentaria y prompts de IA diseñados por y para profesionales de la hostelería. Descarga inmediata, acceso de por vida.
             </p>
           </div>
         </section>
