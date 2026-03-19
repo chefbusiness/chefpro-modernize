@@ -246,7 +246,7 @@ export default function ProductosDigitales() {
                         <div className="w-9 h-9 rounded-xl bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
                           <Icon className="w-4.5 h-4.5 text-[#FFD700]" />
                         </div>
-                        <h2 className="text-base font-bold text-white group-hover:text-[#FFD700] transition-colors leading-tight">
+                        <h2 className="text-lg md:text-base lg:text-lg font-bold text-white group-hover:text-[#FFD700] transition-colors leading-tight">
                           {product.name}
                         </h2>
                       </div>
