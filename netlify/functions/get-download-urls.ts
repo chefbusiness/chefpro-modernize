@@ -119,6 +119,25 @@ export const handler: Handler = async (event) => {
       };
     }
 
+    // ── Kit de Tareas Recurrentes: Pizzería downloads ──────────
+    if (product === 'kit-tareas-pizzeria') {
+      let pizzeriaFiles: Record<string, string> = {};
+      try {
+        pizzeriaFiles = JSON.parse(process.env.KIT_TAREAS_PIZZERIA_URLS || '{}');
+      } catch {
+        pizzeriaFiles = {};
+      }
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'kit-tareas-pizzeria',
+          files: pizzeriaFiles,
+        }),
+      };
+    }
+
     // Unknown product — return empty
     return {
       statusCode: 200,

@@ -5,7 +5,7 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -101,6 +101,25 @@ const products = [
     tags: ['excel', 'plantillas', 'gestion'],
   },
   {
+    name: 'Tareas Recurrentes: Pizzería',
+    slug: '/kit-tareas-pizzeria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '330 tareas + inventario: horno de leña/piedra, masa napolitana, línea de montaje, delivery. Imprime, delega y firma.',
+    features: [
+      'Control de horno y temperatura',
+      'Línea de montaje pizza',
+      'Gestión de delivery y packaging',
+      'Masa: fermentación y estirado',
+    ],
+    icon: Pizza,
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -189,7 +208,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 2, "url": "https://aichef.pro/kit-escandallos", "name": "Kit de Escandallos Pro" },
               { "@type": "ListItem", "position": 3, "url": "https://aichef.pro/kit-tareas", "name": "Kit de Tareas Recurrentes Pro" },
               { "@type": "ListItem", "position": 4, "url": "https://aichef.pro/kit-tareas-cafeteria", "name": "Kit de Tareas Recurrentes: Cafetería / Brunch" },
-              { "@type": "ListItem", "position": 5, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
+              { "@type": "ListItem", "position": 5, "url": "https://aichef.pro/kit-tareas-pizzeria", "name": "Kit de Tareas Recurrentes: Pizzería" },
+              { "@type": "ListItem", "position": 6, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
             ]
           }
         })}</script>

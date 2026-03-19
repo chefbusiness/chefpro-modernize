@@ -45,6 +45,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Cafetería / Brunch</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-pizzeria': {
+    accessPath: '/kit-tareas-pizzeria-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Pizzería',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Pizzería</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────

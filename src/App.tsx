@@ -53,6 +53,9 @@ import KitTareasDashboard from "./pages/KitTareasDashboard";
 import KitTareasCafeteria from "./pages/KitTareasCafeteria";
 import KitTareasCafeteriaAccessGate from "./pages/KitTareasCafeteriaAccessGate";
 import KitTareasCafeteriaDashboard from "./pages/KitTareasCafeteriaDashboard";
+import KitTareasPizzeria from "./pages/KitTareasPizzeria";
+import KitTareasPizzeriaAccessGate from "./pages/KitTareasPizzeriaAccessGate";
+import KitTareasPizzeriaDashboard from "./pages/KitTareasPizzeriaDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -285,6 +288,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-cafeteria-jwt" redirectTo="/kit-tareas-cafeteria">
                   <KitTareasCafeteriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit de Tareas Recurrentes: Pizzería */}
+            <Route path="/kit-tareas-pizzeria" element={<KitTareasPizzeria />} />
+            <Route path="/kit-tareas-pizzeria-access" element={<KitTareasPizzeriaAccessGate />} />
+            <Route
+              path="/kit-tareas-pizzeria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-pizzeria-jwt" redirectTo="/kit-tareas-pizzeria">
+                  <KitTareasPizzeriaDashboard />
                 </ProtectedRoute>
               }
             />
