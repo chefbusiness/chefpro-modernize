@@ -6,6 +6,7 @@ import {
   BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 
 // ── Template metadata (matches ContentGrid order) ───────────────
 const TEMPLATES = [
@@ -49,6 +50,7 @@ export default function KitEscandallosDashboard() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         {/* ── Top bar ────────────────────────────────────────── */}
         <header className="sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-white/10">
           <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">

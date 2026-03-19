@@ -11,6 +11,7 @@ import FreeToolsGrid from '@/components/library/FreeToolsGrid';
 import CtaToApp from '@/components/library/CtaToApp';
 import ChefBusinessGroup from '@/components/library/ChefBusinessGroup';
 import { categories } from '@/data/prompts';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 
 export default function ProPromptsLibrary() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -41,6 +42,7 @@ export default function ProPromptsLibrary() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         <TopBar />
 
         {/* Hero with floating gallery */}
