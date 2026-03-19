@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
@@ -200,6 +201,7 @@ export default function ProductosDigitales() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         {/* Hero */}
         <section className="relative px-4 pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
           <div className="absolute inset-0" style={{

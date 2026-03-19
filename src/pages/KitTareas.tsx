@@ -16,6 +16,7 @@ import StickyBar from '@/components/kit-tareas/StickyBar';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
 import WorldwideBanner from '@/components/shared/WorldwideBanner';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 
 export default function KitTareas() {
   return (
@@ -111,6 +112,7 @@ export default function KitTareas() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         <HeroSection />
         <CompatibleAppsMarquee variant="tareas" />
         <ContentGrid />

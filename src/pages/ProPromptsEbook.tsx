@@ -16,6 +16,7 @@ import { ebookTestimonials } from '@/data/testimonials-ebook';
 import TryPlatformBanner from '@/components/ebook/TryPlatformBanner';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 
 export default function ProPromptsEbook() {
   return (
@@ -119,6 +120,7 @@ export default function ProPromptsEbook() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         <HeroSection />
         <BookCover />
         <CompatibleAppsMarquee variant="ebook" />

@@ -11,7 +11,7 @@ import { useLanguage } from '@/hooks/useLanguage';
 const STORAGE_KEY_DISMISSED = 'ebook-promo-dismissed';
 const STORAGE_KEY_NEVER_SHOW = 'ebook-promo-never-show';
 const DISMISS_DURATION_HOURS = 24;
-const POPUP_DELAY_MS = 12000;
+const POPUP_DELAY_MS = 90000; // 90s — give users time to explore the SaaS first
 
 const EbookPromoPopup = () => {
   const [isVisible, setIsVisible] = useState(false);

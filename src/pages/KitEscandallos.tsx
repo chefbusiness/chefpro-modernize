@@ -16,6 +16,7 @@ import StickyBar from '@/components/kit-escandallos/StickyBar';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
 import WorldwideBanner from '@/components/shared/WorldwideBanner';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 
 export default function KitEscandallos() {
   return (
@@ -119,6 +120,7 @@ export default function KitEscandallos() {
       </Helmet>
 
       <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
         <HeroSection />
         <CompatibleAppsMarquee variant="kit" />
         <ContentGrid />
