@@ -17,12 +17,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-partidas.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-manager.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-perfiles.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-inventario.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-horno.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-linea.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-delivery.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-masa.jpg',
+  '/lovable-uploads/ai-gallery/tareas-pizzeria-equipo.jpg',
 ];
 
 export default function ContentGrid() {

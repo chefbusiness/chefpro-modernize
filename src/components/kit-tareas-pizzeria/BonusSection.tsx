@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Plantilla de Briefing Pre-Servicio',
     value: '€7',
     desc: 'La reunión de 5 minutos que separa a las pizzerías buenas de las excelentes. Reservas, pizza del día, alérgenos, equipo del turno.',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-perfiles.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-equipo.jpg',
   },
   {
     icon: Calendar,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Calendario Anual de Tareas Especiales',
     value: '€9',
     desc: '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, fútbol) con tareas y antelación recomendada.',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-mesa.jpg',
   },
 ];
 

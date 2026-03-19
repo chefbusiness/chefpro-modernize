@@ -114,7 +114,7 @@ const products = [
       'Masa: fermentación y estirado',
     ],
     icon: Pizza,
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
