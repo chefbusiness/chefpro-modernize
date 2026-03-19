@@ -17,12 +17,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-apertura.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-sala.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-manager.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-perfiles.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-barista.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-vitrina.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-brunch.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-terraza.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-inventario.jpg',
+  '/lovable-uploads/ai-gallery/tareas-cafeteria-equipo.jpg',
 ];
 
 export default function ContentGrid() {
