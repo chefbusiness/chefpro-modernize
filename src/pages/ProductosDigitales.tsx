@@ -203,15 +203,15 @@ export default function ProductosDigitales() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
-        <LogoBadge />
         {/* Hero */}
-        <section className="relative px-4 pt-10 pb-12 md:pt-14 md:pb-16 overflow-hidden">
+        <section className="relative px-4 pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
           <div className="absolute inset-0" style={{
             background: 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.08) 0%, transparent 70%)',
           }} />
 
           <div className="relative max-w-4xl mx-auto text-center z-10">
-            <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
+            <LogoBadge />
+            <span className="inline-block mt-8 mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
               {products.length} productos disponibles · {comingSoon.length} próximamente
             </span>
 
