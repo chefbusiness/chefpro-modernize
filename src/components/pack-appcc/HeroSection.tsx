@@ -70,9 +70,10 @@ export default function HeroSection() {
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-          Pasa la Inspección de{' '}
-          <span className="text-[#FFD700]">Sanidad</span>{' '}
-          con Nota
+          Pack de Plantillas <span className="text-[#FFD700]">APPCC</span>
+          <span className="block text-2xl md:text-4xl lg:text-5xl mt-2 text-gray-200">
+            Pasa la Inspección de Sanidad con Nota
+          </span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">

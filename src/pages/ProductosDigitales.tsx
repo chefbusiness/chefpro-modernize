@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -152,6 +152,22 @@ export default function ProductosDigitales() {
           }
         })}</script>
 
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "?Qu? formato tienen los productos digitales?", "acceptedAnswer": { "@type": "Answer", "text": "La mayor?a son plantillas en formato Excel (.xlsx) compatibles con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Tambi?n incluimos gu?as y fichas en formato PDF." }},
+            { "@type": "Question", "name": "?C?mo recibo los productos despu?s de comprar?", "acceptedAnswer": { "@type": "Answer", "text": "El acceso es inmediato. Tras el pago con Stripe, te redirigimos a tu dashboard privado donde puedes descargar todos los archivos." }},
+            { "@type": "Question", "name": "?Puedo comprar desde fuera de Espa?a?", "acceptedAnswer": { "@type": "Answer", "text": "S?. Puedes comprar desde cualquier parte del mundo con tarjeta, Apple Pay o Google Pay. Los productos est?n en espa?ol." }},
+            { "@type": "Question", "name": "?Hay garant?a de devoluci?n?", "acceptedAnswer": { "@type": "Answer", "text": "30 d?as de garant?a completa en todos los productos. Si no est?s satisfecho, te devolvemos el 100% sin preguntas." }},
+            { "@type": "Question", "name": "?Las plantillas incluyen f?rmulas autom?ticas?", "acceptedAnswer": { "@type": "Answer", "text": "S?. Todas las plantillas Excel vienen con f?rmulas precargadas que calculan autom?ticamente food cost, PVP sugerido, alertas de temperatura y control de mermas." }},
+            { "@type": "Question", "name": "?Incluyen actualizaciones futuras?", "acceptedAnswer": { "@type": "Answer", "text": "S?. Todos los productos incluyen acceso de por vida al dashboard online con actualizaciones sin coste adicional." }},
+            { "@type": "Question", "name": "?Puedo usar las plantillas en varios restaurantes?", "acceptedAnswer": { "@type": "Answer", "text": "S?. La licencia es personal ? puedes usar las plantillas en todos los establecimientos que gestiones." }},
+            { "@type": "Question", "name": "?Qu? m?todos de pago aceptan?", "acceptedAnswer": { "@type": "Answer", "text": "Procesamos pagos con Stripe. Aceptamos tarjeta de cr?dito/d?bito (Visa, Mastercard, Amex), Apple Pay, Google Pay y Link." }}
+          ]
+        })}</script>
+
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -176,7 +192,7 @@ export default function ProductosDigitales() {
             </span>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-              Productos <span className="text-[#FFD700]">Digitales</span> para Hostelería
+              Tienda de Productos <span className="text-[#FFD700]">Digitales</span> para la Hostelería de Hoy
             </h1>
 
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -399,6 +415,63 @@ export default function ProductosDigitales() {
                 <Check className="w-4 h-4 text-[#FFD700]" />
                 Pago seguro con Stripe
               </span>
+            </div>
+          </div>
+        </section>
+
+        {/* Worldwide availability */}
+        <section className="px-4 pb-16 md:pb-24">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-8 md:p-10 text-center">
+              <div className="w-16 h-16 rounded-full bg-[#FFD700]/10 flex items-center justify-center mx-auto mb-5">
+                <Globe className="w-8 h-8 text-[#FFD700]" />
+              </div>
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
+                Compra desde <span className="text-[#FFD700]">Cualquier Parte del Mundo</span>
+              </h2>
+              <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+                Nuestros productos digitales están diseñados para el mercado de hostelería en español.
+                Acceso inmediato tras la compra — sin importar dónde estés.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+                {['Espa\u00f1a', 'M\u00e9xico', 'Colombia', 'Argentina', 'Chile', 'Per\u00fa', 'Ecuador', 'EE.UU.', 'Alemania', 'Francia'].map((country) => (
+                  <span key={country} className="px-3 py-1.5 rounded-full bg-white/5 border border-white/[0.06]">
+                    {country}
+                  </span>
+                ))}
+                <span className="px-3 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] font-medium">
+                  + todo el mundo
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="px-4 pb-16 md:pb-24">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">
+              Preguntas <span className="text-[#FFD700]">Frecuentes</span>
+            </h2>
+            <div className="space-y-3">
+              {[
+                { q: '\u00bfQu\u00e9 formato tienen los productos digitales?', a: 'La mayor\u00eda son plantillas en formato Excel (.xlsx) compatibles con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Tambi\u00e9n incluimos gu\u00edas y fichas en formato PDF listas para imprimir. Todos los archivos se descargan desde tu dashboard privado.' },
+                { q: '\u00bfC\u00f3mo recibo los productos despu\u00e9s de comprar?', a: 'El acceso es inmediato. Tras el pago con Stripe, te redirigimos a tu dashboard privado donde puedes descargar todos los archivos. Adem\u00e1s, recibir\u00e1s un email con un enlace m\u00e1gico para acceder siempre que quieras.' },
+                { q: '\u00bfPuedo comprar desde fuera de Espa\u00f1a?', a: 'S\u00ed. Los productos est\u00e1n en espa\u00f1ol y dise\u00f1ados pensando en normativa espa\u00f1ola y europea, pero el contenido es aplicable a cualquier pa\u00eds hispanohablante. Puedes comprar desde cualquier parte del mundo con tarjeta, Apple Pay o Google Pay.' },
+                { q: '\u00bfLas plantillas incluyen f\u00f3rmulas autom\u00e1ticas?', a: 'S\u00ed. Todas las plantillas Excel vienen con f\u00f3rmulas precargadas que calculan autom\u00e1ticamente: food cost, PVP sugerido, alertas de temperatura, control de mermas. Solo introduces tus datos y el Excel hace el resto.' },
+                { q: '\u00bfHay garant\u00eda de devoluci\u00f3n?', a: '30 d\u00edas de garant\u00eda completa en todos los productos. Si no est\u00e1s satisfecho, te devolvemos el 100% sin preguntas. Contacta a info@aichef.pro.' },
+                { q: '\u00bfIncluyen actualizaciones futuras?', a: 'S\u00ed. Todos los productos incluyen acceso de por vida al dashboard online. Cuando a\u00f1adamos nuevas plantillas, mejoras o actualicemos por cambios normativos, las recibir\u00e1s sin coste adicional.' },
+                { q: '\u00bfPuedo usar las plantillas en varios restaurantes?', a: 'S\u00ed. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para consultores, grupos de restauraci\u00f3n y gerentes multi-unidad.' },
+                { q: '\u00bfQu\u00e9 m\u00e9todos de pago aceptan?', a: 'Procesamos pagos con Stripe, la plataforma de pagos m\u00e1s segura del mundo. Aceptamos tarjeta de cr\u00e9dito/d\u00e9bito (Visa, Mastercard, Amex), Apple Pay, Google Pay y Link (pago r\u00e1pido de Stripe).' },
+              ].map((faq, i) => (
+                <details key={i} className="group bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
+                    <span className="text-white font-medium pr-4 text-sm md:text-base">{faq.q}</span>
+                    <ChevronDown className="w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="px-5 pb-5 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

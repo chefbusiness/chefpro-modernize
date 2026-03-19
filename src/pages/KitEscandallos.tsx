@@ -15,6 +15,7 @@ import TryPlatformBanner from '@/components/ebook/TryPlatformBanner';
 import StickyBar from '@/components/kit-escandallos/StickyBar';
 import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
+import WorldwideBanner from '@/components/shared/WorldwideBanner';
 
 export default function KitEscandallos() {
   return (
@@ -134,6 +135,7 @@ export default function KitEscandallos() {
         <GuaranteeSection />
         <FaqAccordion />
         <CtaFinal />
+        <WorldwideBanner />
         <TryPlatformBanner />
 
         <footer className="py-8 pb-24 md:pb-8 px-4 border-t border-white/10">
