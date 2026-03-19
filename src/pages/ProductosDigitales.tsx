@@ -5,7 +5,7 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -120,6 +120,25 @@ const products = [
     tags: ['excel', 'plantillas', 'gestion'],
   },
   {
+    name: 'Tareas Recurrentes: Hamburguesería',
+    slug: '/kit-tareas-hamburgueseria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '302 tareas pre-rellenadas: plancha/grill, smash burgers, freidora, línea de montaje, delivery y packaging. Imprime, delega y firma.',
+    features: [
+      'Control de plancha y punto de carne',
+      'Smash burger y técnica de grill',
+      'Freidora: test polares, filtrado, temperatura',
+      'Delivery y packaging burger',
+    ],
+    icon: Beef,
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -209,7 +228,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 3, "url": "https://aichef.pro/kit-tareas", "name": "Kit de Tareas Recurrentes Pro" },
               { "@type": "ListItem", "position": 4, "url": "https://aichef.pro/kit-tareas-cafeteria", "name": "Kit de Tareas Recurrentes: Cafetería / Brunch" },
               { "@type": "ListItem", "position": 5, "url": "https://aichef.pro/kit-tareas-pizzeria", "name": "Kit de Tareas Recurrentes: Pizzería" },
-              { "@type": "ListItem", "position": 6, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
+              { "@type": "ListItem", "position": 6, "url": "https://aichef.pro/kit-tareas-hamburgueseria", "name": "Kit de Tareas Recurrentes: Hamburguesería" },
+              { "@type": "ListItem", "position": 7, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
             ]
           }
         })}</script>
