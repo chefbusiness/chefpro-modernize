@@ -23,12 +23,12 @@ const checkItems = [
 ];
 
 const heroImages = [
-  '/lovable-uploads/ai-gallery/tataki-presa-iberica-chimichurri.jpeg',
-  '/lovable-uploads/ai-gallery/tartaleta-de-yuzu-y-merengue.jpeg',
-  '/lovable-uploads/ai-gallery/cocktail-green-margarita.jpeg',
-  '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
-  '/lovable-uploads/ai-gallery/croissant-bicolor-de-mantequilla-aichefpro.jpeg',
-  '/lovable-uploads/ai-gallery/huevo-baja-temperatura-trufa.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-control-temperaturas.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-limpieza-cocina.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-recepcion-mercancias.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-alergenos-carta.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
 ];
 
 export default function HeroSection() {

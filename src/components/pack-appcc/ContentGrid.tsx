@@ -17,12 +17,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
-  '/lovable-uploads/ai-gallery/cocktail-garibaldi-fermentado.jpeg',
-  '/lovable-uploads/ai-gallery/milhojas-vertical-de-vainilla-con-frambuesas-aichefpro-2.jpeg',
-  '/lovable-uploads/ai-gallery/carpaccio-gambas.jpeg',
-  '/lovable-uploads/ai-gallery/torrija-caramelizada-con-helado.jpeg',
-  '/lovable-uploads/ai-gallery/cocktail-tepache-pina-asada.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-control-temperaturas.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-limpieza-cocina.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-recepcion-mercancias.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-alergenos-carta.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+  '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
 ];
 
 export default function ContentGrid() {
