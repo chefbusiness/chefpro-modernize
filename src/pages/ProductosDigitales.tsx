@@ -133,7 +133,7 @@ const products = [
       'Delivery y packaging burger',
     ],
     icon: Beef,
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],

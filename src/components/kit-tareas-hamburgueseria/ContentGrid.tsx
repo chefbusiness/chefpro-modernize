@@ -17,12 +17,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-apertura.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-partidas.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-manager.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-perfiles.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-plancha.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-montaje.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-freidora.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-delivery.jpg',
+  '/lovable-uploads/ai-gallery/tareas-burger-equipo.jpg',
 ];
 
 export default function ContentGrid() {

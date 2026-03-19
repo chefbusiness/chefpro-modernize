@@ -6,7 +6,7 @@ export default function BuyBox() {
   return (
     <section id="comprar" className="py-16 md:py-24 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.06]">
-        <img src="/lovable-uploads/ai-gallery/tareas-restaurante-apertura.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/lovable-uploads/ai-gallery/tareas-burger-plancha.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
       </div>
       <div className="absolute inset-0 bg-[#0a0a0a]/90" />
 
