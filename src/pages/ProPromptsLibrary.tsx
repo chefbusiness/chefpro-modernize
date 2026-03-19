@@ -12,6 +12,7 @@ import CtaToApp from '@/components/library/CtaToApp';
 import ChefBusinessGroup from '@/components/library/ChefBusinessGroup';
 import { categories } from '@/data/prompts';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import LogoBadge from '@/components/shared/LogoBadge';
 
 export default function ProPromptsLibrary() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -43,6 +44,7 @@ export default function ProPromptsLibrary() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
+        <LogoBadge />
         <TopBar />
 
         {/* Hero with floating gallery */}

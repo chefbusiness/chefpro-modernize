@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import LogoBadge from '@/components/shared/LogoBadge';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
@@ -202,8 +203,9 @@ export default function ProductosDigitales() {
 
       <div className="min-h-screen bg-[#0a0a0a]">
         <SaasDiscoveryBanner />
+        <LogoBadge />
         {/* Hero */}
-        <section className="relative px-4 pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
+        <section className="relative px-4 pt-10 pb-12 md:pt-14 md:pb-16 overflow-hidden">
           <div className="absolute inset-0" style={{
             background: 'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.08) 0%, transparent 70%)',
           }} />
