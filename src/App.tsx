@@ -50,6 +50,9 @@ import PackAppccDashboard from "./pages/PackAppccDashboard";
 import KitTareas from "./pages/KitTareas";
 import KitTareasAccessGate from "./pages/KitTareasAccessGate";
 import KitTareasDashboard from "./pages/KitTareasDashboard";
+import KitTareasCafeteria from "./pages/KitTareasCafeteria";
+import KitTareasCafeteriaAccessGate from "./pages/KitTareasCafeteriaAccessGate";
+import KitTareasCafeteriaDashboard from "./pages/KitTareasCafeteriaDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -270,6 +273,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-jwt" redirectTo="/kit-tareas">
                   <KitTareasDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit de Tareas Recurrentes: Cafetería / Brunch */}
+            <Route path="/kit-tareas-cafeteria" element={<KitTareasCafeteria />} />
+            <Route path="/kit-tareas-cafeteria-access" element={<KitTareasCafeteriaAccessGate />} />
+            <Route
+              path="/kit-tareas-cafeteria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-cafeteria-jwt" redirectTo="/kit-tareas-cafeteria">
+                  <KitTareasCafeteriaDashboard />
                 </ProtectedRoute>
               }
             />

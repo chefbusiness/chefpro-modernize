@@ -82,6 +82,25 @@ const products = [
     tags: ['excel', 'plantillas', 'gestion'],
   },
   {
+    name: 'Tareas Recurrentes: Cafetería / Brunch',
+    slug: '/kit-tareas-cafeteria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '463 tareas + inventarios con fórmulas: apertura/cierre, barista, vitrina pastelería, brunch, terraza. Imprime, delega y firma.',
+    features: [
+      'Inventario diario de barra con alertas',
+      'Tareas específicas de barista',
+      'Control de vitrina y pastelería',
+      'Brunch dominical y eventos',
+    ],
+    icon: Coffee,
+    image: '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -169,7 +188,8 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 1, "url": "https://aichef.pro/pro-prompts-ebook", "name": "Gastro Pro Prompts eBook" },
               { "@type": "ListItem", "position": 2, "url": "https://aichef.pro/kit-escandallos", "name": "Kit de Escandallos Pro" },
               { "@type": "ListItem", "position": 3, "url": "https://aichef.pro/kit-tareas", "name": "Kit de Tareas Recurrentes Pro" },
-              { "@type": "ListItem", "position": 4, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
+              { "@type": "ListItem", "position": 4, "url": "https://aichef.pro/kit-tareas-cafeteria", "name": "Kit de Tareas Recurrentes: Cafetería / Brunch" },
+              { "@type": "ListItem", "position": 5, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
             ]
           }
         })}</script>
