@@ -100,6 +100,25 @@ export const handler: Handler = async (event) => {
       };
     }
 
+    // ── Kit de Tareas Recurrentes: Cafetería / Brunch downloads ──
+    if (product === 'kit-tareas-cafeteria') {
+      let cafeFiles: Record<string, string> = {};
+      try {
+        cafeFiles = JSON.parse(process.env.KIT_TAREAS_CAFETERIA_URLS || '{}');
+      } catch {
+        cafeFiles = {};
+      }
+
+      return {
+        statusCode: 200,
+        headers,
+        body: JSON.stringify({
+          product: 'kit-tareas-cafeteria',
+          files: cafeFiles,
+        }),
+      };
+    }
+
     // Unknown product — return empty
     return {
       statusCode: 200,
