@@ -33,7 +33,7 @@ const heroImages = [
 
 export default function HeroSection() {
   return (
-    <section className="relative px-4 pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden">
+    <section className="relative px-4 pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden">
       <div className="absolute inset-0 opacity-[0.12]">
         <div className="grid grid-cols-3 md:grid-cols-6 h-full gap-1">
           {heroImages.map((src, i) => (

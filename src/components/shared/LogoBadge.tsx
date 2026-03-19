@@ -7,7 +7,7 @@ import logo from '@/assets/logo-ai-chef-pro.svg';
  */
 export default function LogoBadge() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center py-6 md:py-8">
       <a
         href="/"
         className="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow"
