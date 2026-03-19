@@ -61,7 +61,7 @@ const products = [
     tags: ['excel', 'plantillas', 'costes'],
   },
   {
-    name: 'Kit Tareas Recurrentes Pro',
+    name: 'Tareas Recurrentes: Restaurante Casual',
     slug: '/kit-tareas',
     price: '€14',
     originalPrice: '€49',
