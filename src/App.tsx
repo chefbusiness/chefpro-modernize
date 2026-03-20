@@ -59,6 +59,9 @@ import KitTareasPizzeriaDashboard from "./pages/KitTareasPizzeriaDashboard";
 import KitTareasHamburgueseria from "./pages/KitTareasHamburgueseria";
 import KitTareasHamburguseriaAccessGate from "./pages/KitTareasHamburguseriaAccessGate";
 import KitTareasHamburgueseriaDashboard from "./pages/KitTareasHamburgueseriaDashboard";
+import KitTareasDarkKitchen from "./pages/KitTareasDarkKitchen";
+import KitTareasDarkKitchenAccessGate from "./pages/KitTareasDarkKitchenAccessGate";
+import KitTareasDarkKitchenDashboard from "./pages/KitTareasDarkKitchenDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -315,6 +318,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-hamburgueseria-jwt" redirectTo="/kit-tareas-hamburgueseria">
                   <KitTareasHamburgueseriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit de Tareas Recurrentes: Dark Kitchen */}
+            <Route path="/kit-tareas-dark-kitchen" element={<KitTareasDarkKitchen />} />
+            <Route path="/kit-tareas-dark-kitchen-access" element={<KitTareasDarkKitchenAccessGate />} />
+            <Route
+              path="/kit-tareas-dark-kitchen-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-dark-kitchen-jwt" redirectTo="/kit-tareas-dark-kitchen">
+                  <KitTareasDarkKitchenDashboard />
                 </ProtectedRoute>
               }
             />

@@ -59,6 +59,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Hamburguesería</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-dark-kitchen': {
+    accessPath: '/kit-tareas-dark-kitchen-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Dark Kitchen',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Dark Kitchen</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────

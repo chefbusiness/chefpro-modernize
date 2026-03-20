@@ -79,6 +79,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-hamburgueseria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-hamburgueseria/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-dark-kitchen': {
+    'apertura-cierre': '/dl/kit-tareas-dark-kitchen/01-apertura-cierre.xlsx',
+    'partidas': '/dl/kit-tareas-dark-kitchen/02-partidas-cocina.xlsx',
+    'manager': '/dl/kit-tareas-dark-kitchen/03-tareas-manager.xlsx',
+    'perfiles': '/dl/kit-tareas-dark-kitchen/04-tareas-perfiles.xlsx',
+    'periodicas': '/dl/kit-tareas-dark-kitchen/05-tareas-semanales-mensuales.xlsx',
+    'eventos': '/dl/kit-tareas-dark-kitchen/06-eventos-festivos.xlsx',
+    'personalizable': '/dl/kit-tareas-dark-kitchen/07-plantilla-personalizable.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-dark-kitchen/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-dark-kitchen/BONUS-02-calendario-anual-tareas.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {
