@@ -17,12 +17,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-cocina.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-partidas.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-camarero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-checklist.jpg',
-  '/lovable-uploads/ai-gallery/tareas-restaurante-equipo.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-produccion.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-empaquetado.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-expedicion.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-tablets.jpg',
+  '/lovable-uploads/ai-gallery/tareas-dk-equipo.jpg',
 ];
 
 export default function ContentGrid() {

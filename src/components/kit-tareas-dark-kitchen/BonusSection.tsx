@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Plantilla de Briefing Pre-Turno',
     value: '€7',
     desc: 'La reunion de 5 minutos que separa a las dark kitchens buenas de las excelentes. Marcas activas, promociones por plataforma, platos agotados, equipo del turno.',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-equipo.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-equipo.jpg',
   },
   {
     icon: Calendar,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Calendario Anual de Tareas Especiales',
     value: '€9',
     desc: '17 fechas clave de hosteleria (San Valentin, Navidad, Semana Santa, Black Friday, dias de pico delivery) con tareas y antelacion recomendada.',
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-checklist.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-tablets.jpg',
   },
 ];
 
