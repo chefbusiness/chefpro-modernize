@@ -152,7 +152,7 @@ const products = [
       'Coordinacion de riders y expedicion',
     ],
     icon: Warehouse,
-    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
