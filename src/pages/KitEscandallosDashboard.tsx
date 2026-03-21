@@ -8,6 +8,7 @@ import {
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 // ── Template metadata (matches ContentGrid order) ───────────────
 const TEMPLATES = [
@@ -171,13 +172,14 @@ export default function KitEscandallosDashboard() {
             <p className="text-gray-500 text-sm mb-2">
               © 2026 AI Chef Pro · Kit de Escandallos Pro · Todos los derechos reservados
             </p>
-            <div className="flex items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
           </div>
         </footer>
+        <WhatsAppProductSupport />
       </div>
     </>
   );

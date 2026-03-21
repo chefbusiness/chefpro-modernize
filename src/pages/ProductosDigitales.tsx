@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
@@ -646,19 +647,20 @@ export default function ProductosDigitales() {
             <p className="text-gray-500 text-sm mb-2">
               © 2026 AI Chef Pro · Todos los derechos reservados
             </p>
-            <div className="flex items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pro-prompts-ebook" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-escandallos" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Escandallos</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pack-appcc" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pack APPCC</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
           </div>
         </footer>
+        <WhatsAppProductSupport />
       </div>
     </>
   );

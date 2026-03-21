@@ -8,6 +8,7 @@ import {
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 const TEMPLATES = [
   { key: 'apertura-cierre', icon: DoorOpen, title: 'Apertura y Cierre', desc: 'Checklists completos: barra, coctelería, terraza, cierre.' },
@@ -98,13 +99,14 @@ export default function KitTareasBarDashboard() {
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Kit de Tareas Bar · Todos los derechos reservados</p>
-            <div className="flex items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
           </div>
         </footer>
+        <WhatsAppProductSupport />
       </div>
     </>
   );

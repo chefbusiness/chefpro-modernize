@@ -17,6 +17,7 @@ import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
 import WorldwideBanner from '@/components/shared/WorldwideBanner';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 export default function KitTareasBar() {
   return (
@@ -107,22 +108,23 @@ export default function KitTareasBar() {
         <footer className="py-8 pb-24 md:pb-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Todos los derechos reservados</p>
-            <div className="flex items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-tareas" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Tareas Restaurante</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-tareas-pasteleria" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Tareas Pastelería</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-escandallos" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Escandallos</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pro-prompts-ebook" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
             <AlreadyBought product="kit-tareas-bar" label="¿Ya compraste el Kit de Tareas Bar? Vuelve a entrar al dashboard" />
           </div>
         </footer>
+        <WhatsAppProductSupport />
         <StickyBar />
       </div>
     </>

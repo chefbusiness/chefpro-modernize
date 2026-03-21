@@ -17,6 +17,7 @@ import AlreadyBought from '@/components/ebook/AlreadyBought';
 import CompatibleAppsMarquee from '@/components/shared/CompatibleAppsMarquee';
 import WorldwideBanner from '@/components/shared/WorldwideBanner';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 export default function KitTareas() {
   return (
@@ -137,15 +138,15 @@ export default function KitTareas() {
             <p className="text-gray-500 text-sm mb-2">
               © 2026 AI Chef Pro · Todos los derechos reservados
             </p>
-            <div className="flex items-center justify-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
               <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pack-appcc" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pack APPCC</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/kit-escandallos" className="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Escandallos</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="/pro-prompts-ebook" className="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
-              <span className="text-gray-700">·</span>
+              <span className="text-gray-700 hidden md:inline">·</span>
               <a href="mailto:info@aichef.pro" className="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
             </div>
             <AlreadyBought
@@ -155,6 +156,7 @@ export default function KitTareas() {
           </div>
         </footer>
 
+        <WhatsAppProductSupport />
         <StickyBar />
       </div>
     </>
