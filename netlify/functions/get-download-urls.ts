@@ -112,6 +112,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-bar/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-bar/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-catering': {
+    'apertura-cierre': '/dl/kit-tareas-catering/01-apertura-cierre.xlsx',
+    'partidas': '/dl/kit-tareas-catering/02-partidas-cocina.xlsx',
+    'manager': '/dl/kit-tareas-catering/03-tareas-manager.xlsx',
+    'perfiles': '/dl/kit-tareas-catering/04-tareas-perfiles.xlsx',
+    'periodicas': '/dl/kit-tareas-catering/05-tareas-semanales-mensuales.xlsx',
+    'eventos': '/dl/kit-tareas-catering/06-eventos-festivos.xlsx',
+    'personalizable': '/dl/kit-tareas-catering/07-plantilla-personalizable.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-catering/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-catering/BONUS-02-calendario-anual-tareas.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

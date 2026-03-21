@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -192,6 +192,25 @@ const products = [
     ],
     icon: Wine,
     image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Tareas Recurrentes: Catering / Eventos',
+    slug: '/kit-tareas-catering',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para empresas de catering: producción off-site, transporte, montaje, servicio, desmontaje y post-evento. Bodas, corporativos, cocktails.',
+    features: [
+      'Producción off-site y empaquetado',
+      'Transporte y cadena de frío',
+      'Bodas, corporativos, cocktails, outdoor',
+      'Perfiles: chef evento, maître, camarero',
+    ],
+    icon: Tent,
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
