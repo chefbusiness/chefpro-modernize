@@ -5,7 +5,7 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -158,6 +158,44 @@ const products = [
     tags: ['excel', 'plantillas', 'gestion'],
   },
   {
+    name: 'Tareas Recurrentes: Pastelería / Obrador',
+    slug: '/kit-tareas-pasteleria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para pastelería y obrador: producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos. Imprime, delega y firma.',
+    features: [
+      'Producción artesanal completa',
+      'Masas, fermentación, cremas, decoración',
+      'Eventos: Navidad, Reyes, San Valentín',
+      'Perfiles: jefe pastelero, oficial, ayudante',
+    ],
+    icon: Croissant,
+    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Tareas Recurrentes: Bar / Cocktails',
+    slug: '/kit-tareas-bar',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para bar y cocktail bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma.',
+    features: [
+      'Coctelería clásica y contemporánea',
+      'Cerveza de grifo, vinos, café',
+      'Eventos: Nochevieja, Halloween, catas',
+      'Perfiles: head bartender, barback',
+    ],
+    icon: Wine,
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
     name: 'Pack Plantillas APPCC',
     slug: '/pack-appcc',
     price: '€14',
@@ -249,7 +287,9 @@ export default function ProductosDigitales() {
               { "@type": "ListItem", "position": 5, "url": "https://aichef.pro/kit-tareas-pizzeria", "name": "Kit de Tareas Recurrentes: Pizzería" },
               { "@type": "ListItem", "position": 6, "url": "https://aichef.pro/kit-tareas-hamburgueseria", "name": "Kit de Tareas Recurrentes: Hamburguesería" },
               { "@type": "ListItem", "position": 7, "url": "https://aichef.pro/kit-tareas-dark-kitchen", "name": "Kit de Tareas Recurrentes: Dark Kitchen" },
-              { "@type": "ListItem", "position": 8, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
+              { "@type": "ListItem", "position": 8, "url": "https://aichef.pro/kit-tareas-pasteleria", "name": "Kit de Tareas Recurrentes: Pastelería / Obrador" },
+              { "@type": "ListItem", "position": 9, "url": "https://aichef.pro/kit-tareas-bar", "name": "Kit de Tareas Recurrentes: Bar / Cocktails" },
+              { "@type": "ListItem", "position": 10, "url": "https://aichef.pro/pack-appcc", "name": "Pack de Plantillas APPCC" }
             ]
           }
         })}</script>

@@ -62,6 +62,12 @@ import KitTareasHamburgueseriaDashboard from "./pages/KitTareasHamburgueseriaDas
 import KitTareasDarkKitchen from "./pages/KitTareasDarkKitchen";
 import KitTareasDarkKitchenAccessGate from "./pages/KitTareasDarkKitchenAccessGate";
 import KitTareasDarkKitchenDashboard from "./pages/KitTareasDarkKitchenDashboard";
+import KitTareasPasteleria from "./pages/KitTareasPasteleria";
+import KitTareasPasteleriaAccessGate from "./pages/KitTareasPasteleriaAccessGate";
+import KitTareasPasteleriaDashboard from "./pages/KitTareasPasteleriaDashboard";
+import KitTareasBar from "./pages/KitTareasBar";
+import KitTareasBarAccessGate from "./pages/KitTareasBarAccessGate";
+import KitTareasBarDashboard from "./pages/KitTareasBarDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -330,6 +336,30 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-dark-kitchen-jwt" redirectTo="/kit-tareas-dark-kitchen">
                   <KitTareasDarkKitchenDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Pastelería */}
+            <Route path="/kit-tareas-pasteleria" element={<KitTareasPasteleria />} />
+            <Route path="/kit-tareas-pasteleria-access" element={<KitTareasPasteleriaAccessGate />} />
+            <Route
+              path="/kit-tareas-pasteleria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-pasteleria-jwt" redirectTo="/kit-tareas-pasteleria">
+                  <KitTareasPasteleriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Bar */}
+            <Route path="/kit-tareas-bar" element={<KitTareasBar />} />
+            <Route path="/kit-tareas-bar-access" element={<KitTareasBarAccessGate />} />
+            <Route
+              path="/kit-tareas-bar-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-bar-jwt" redirectTo="/kit-tareas-bar">
+                  <KitTareasBarDashboard />
                 </ProtectedRoute>
               }
             />

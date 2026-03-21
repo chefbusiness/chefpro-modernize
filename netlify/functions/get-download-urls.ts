@@ -90,6 +90,28 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-dark-kitchen/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-dark-kitchen/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-pasteleria': {
+    'apertura-cierre': '/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx',
+    'partidas': '/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx',
+    'manager': '/dl/kit-tareas-pasteleria/03-tareas-manager.xlsx',
+    'perfiles': '/dl/kit-tareas-pasteleria/04-tareas-perfiles.xlsx',
+    'periodicas': '/dl/kit-tareas-pasteleria/05-tareas-semanales-mensuales.xlsx',
+    'eventos': '/dl/kit-tareas-pasteleria/06-eventos-festivos.xlsx',
+    'personalizable': '/dl/kit-tareas-pasteleria/07-plantilla-personalizable.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
+  },
+  'kit-tareas-bar': {
+    'apertura-cierre': '/dl/kit-tareas-bar/01-apertura-cierre.xlsx',
+    'partidas': '/dl/kit-tareas-bar/02-partidas-cocina.xlsx',
+    'manager': '/dl/kit-tareas-bar/03-tareas-manager.xlsx',
+    'perfiles': '/dl/kit-tareas-bar/04-tareas-perfiles.xlsx',
+    'periodicas': '/dl/kit-tareas-bar/05-tareas-semanales-mensuales.xlsx',
+    'eventos': '/dl/kit-tareas-bar/06-eventos-festivos.xlsx',
+    'personalizable': '/dl/kit-tareas-bar/07-plantilla-personalizable.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-bar/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-bar/BONUS-02-calendario-anual-tareas.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {
