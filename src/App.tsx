@@ -74,6 +74,9 @@ import KitTareasCateringDashboard from "./pages/KitTareasCateringDashboard";
 import KitTareasHotel from "./pages/KitTareasHotel";
 import KitTareasHotelAccessGate from "./pages/KitTareasHotelAccessGate";
 import KitTareasHotelDashboard from "./pages/KitTareasHotelDashboard";
+import KitTareasHeladeria from "./pages/KitTareasHeladeria";
+import KitTareasHeladeriaAccessGate from "./pages/KitTareasHeladeriaAccessGate";
+import KitTareasHeladeriaDashboard from "./pages/KitTareasHeladeriaDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -390,6 +393,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-hotel-jwt" redirectTo="/kit-tareas-hotel">
                   <KitTareasHotelDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Heladería */}
+            <Route path="/kit-tareas-heladeria" element={<KitTareasHeladeria />} />
+            <Route path="/kit-tareas-heladeria-access" element={<KitTareasHeladeriaAccessGate />} />
+            <Route
+              path="/kit-tareas-heladeria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-heladeria-jwt" redirectTo="/kit-tareas-heladeria">
+                  <KitTareasHeladeriaDashboard />
                 </ProtectedRoute>
               }
             />

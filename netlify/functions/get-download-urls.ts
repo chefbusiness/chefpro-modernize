@@ -142,6 +142,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-hotel/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-hotel/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-heladeria': {
+    'apertura-cierre': '/dl/kit-tareas-heladeria/01-apertura-cierre.xlsx',
+    'partidas': '/dl/kit-tareas-heladeria/02-partidas-produccion.xlsx',
+    'manager': '/dl/kit-tareas-heladeria/03-tareas-manager.xlsx',
+    'perfiles': '/dl/kit-tareas-heladeria/04-tareas-perfiles.xlsx',
+    'periodicas': '/dl/kit-tareas-heladeria/05-tareas-semanales-mensuales.xlsx',
+    'eventos': '/dl/kit-tareas-heladeria/06-eventos-temporada.xlsx',
+    'personalizable': '/dl/kit-tareas-heladeria/07-plantilla-personalizable.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-heladeria/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-heladeria/BONUS-02-calendario-anual-tareas.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

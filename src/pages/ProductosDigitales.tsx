@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -230,6 +230,25 @@ const products = [
     ],
     icon: Building,
     image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Tareas Recurrentes: Heladería Artesanal',
+    slug: '/kit-tareas-heladeria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para heladería artesanal: producción (pasteurización, mantecación), servicio, gestión y temporada.',
+    features: [
+      'Producción: pasteurización y mantecación',
+      'Vitrina, toppings y servicio mostrador',
+      'Perfiles: heladero, dependiente, encargado',
+      'Temporada alta/baja + catering eventos',
+    ],
+    icon: IceCream,
+    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
