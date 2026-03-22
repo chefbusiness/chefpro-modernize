@@ -123,6 +123,25 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-catering/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-catering/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-hotel': {
+    'fb-buffet-desayuno': '/dl/kit-tareas-hotel/01-fb-buffet-desayuno.xlsx',
+    'fb-buffet-comida-cena': '/dl/kit-tareas-hotel/02-fb-buffet-comida-cena.xlsx',
+    'fb-restaurante-carte': '/dl/kit-tareas-hotel/03-fb-restaurante-carte.xlsx',
+    'fb-outlets': '/dl/kit-tareas-hotel/04-fb-outlets.xlsx',
+    'fb-room-service-minibar': '/dl/kit-tareas-hotel/05-fb-room-service-minibar.xlsx',
+    'fb-banquetes-eventos': '/dl/kit-tareas-hotel/06-fb-banquetes-eventos.xlsx',
+    'recepcion-turnos': '/dl/kit-tareas-hotel/07-recepcion-turnos.xlsx',
+    'guest-services': '/dl/kit-tareas-hotel/08-guest-services.xlsx',
+    'housekeeping': '/dl/kit-tareas-hotel/09-housekeeping.xlsx',
+    'areas-publicas': '/dl/kit-tareas-hotel/10-areas-publicas.xlsx',
+    'piscina': '/dl/kit-tareas-hotel/11-piscina.xlsx',
+    'terraza': '/dl/kit-tareas-hotel/12-terraza.xlsx',
+    'mantenimiento': '/dl/kit-tareas-hotel/13-mantenimiento.xlsx',
+    'administracion': '/dl/kit-tareas-hotel/14-administracion.xlsx',
+    'spa-wellness': '/dl/kit-tareas-hotel/15-spa-wellness.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-hotel/BONUS-01-briefing-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-hotel/BONUS-02-calendario-anual-tareas.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

@@ -87,6 +87,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Catering / Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-hotel': {
+    accessPath: '/kit-tareas-hotel-completo-access',
+    emailSubject: 'Tu acceso al Kit Tareas Recurrentes: Hotel Completo — 46 Checklists',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit Tareas Recurrentes: Hotel Completo — 46 Checklists</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 15 plantillas con 46 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────

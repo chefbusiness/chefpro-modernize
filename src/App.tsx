@@ -71,6 +71,9 @@ import KitTareasBarDashboard from "./pages/KitTareasBarDashboard";
 import KitTareasCatering from "./pages/KitTareasCatering";
 import KitTareasCateringAccessGate from "./pages/KitTareasCateringAccessGate";
 import KitTareasCateringDashboard from "./pages/KitTareasCateringDashboard";
+import KitTareasHotel from "./pages/KitTareasHotel";
+import KitTareasHotelAccessGate from "./pages/KitTareasHotelAccessGate";
+import KitTareasHotelDashboard from "./pages/KitTareasHotelDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -375,6 +378,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-catering-jwt" redirectTo="/kit-tareas-catering">
                   <KitTareasCateringDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Hotel */}
+            <Route path="/kit-tareas-hotel" element={<KitTareasHotel />} />
+            <Route path="/kit-tareas-hotel-completo-access" element={<KitTareasHotelAccessGate />} />
+            <Route
+              path="/kit-tareas-hotel-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-hotel-jwt" redirectTo="/kit-tareas-hotel">
+                  <KitTareasHotelDashboard />
                 </ProtectedRoute>
               }
             />
