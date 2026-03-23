@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -268,6 +268,25 @@ const products = [
     ],
     icon: CakeSlice,
     image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Tareas Recurrentes: Chef Privado / Personal Chef',
+    slug: '/kit-tareas-chef-privado',
+    price: '€18',
+    originalPrice: '€85',
+    discount: '-79%',
+    description: '9 checklists profesionales para chef privado: ficha de cliente con alergias, equipo y transporte, APPCC móvil, servicio completo, fidelización y administración del autónomo.',
+    features: [
+      'Ficha de cliente: alergias, preferencias, cocina',
+      'Equipo portátil, transporte frío, vehículo',
+      'APPCC móvil: temperaturas y alérgenos',
+      'Servicio: pre, durante y post + limpieza',
+    ],
+    icon: UtensilsCrossed,
+    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],

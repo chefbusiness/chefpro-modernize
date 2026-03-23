@@ -80,6 +80,9 @@ import KitTareasHeladeriaDashboard from "./pages/KitTareasHeladeriaDashboard";
 import KitTareasChocolateria from "./pages/KitTareasChocolateria";
 import KitTareasChocolateriaAccessGate from "./pages/KitTareasChocolateriaAccessGate";
 import KitTareasChocolateriaDashboard from "./pages/KitTareasChocolateriaDashboard";
+import KitTareasChefPrivado from "./pages/KitTareasChefPrivado";
+import KitTareasChefPrivadoAccessGate from "./pages/KitTareasChefPrivadoAccessGate";
+import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -420,6 +423,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-chocolateria-jwt" redirectTo="/kit-tareas-chocolateria">
                   <KitTareasChocolateriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Chef Privado */}
+            <Route path="/kit-tareas-chef-privado" element={<KitTareasChefPrivado />} />
+            <Route path="/kit-tareas-chef-privado-access" element={<KitTareasChefPrivadoAccessGate />} />
+            <Route
+              path="/kit-tareas-chef-privado-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-chef-privado-jwt" redirectTo="/kit-tareas-chef-privado">
+                  <KitTareasChefPrivadoDashboard />
                 </ProtectedRoute>
               }
             />

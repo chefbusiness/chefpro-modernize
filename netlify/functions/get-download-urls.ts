@@ -164,6 +164,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-chocolateria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-chocolateria/BONUS-02-calendario-anual-tareas.xlsx',
   },
+  'kit-tareas-chef-privado': {
+    'ficha-cliente': '/dl/kit-tareas-chef-privado/01-ficha-cliente-consulta.xlsx',
+    'menu-compras': '/dl/kit-tareas-chef-privado/02-planificacion-menu-compras.xlsx',
+    'equipo-transporte': '/dl/kit-tareas-chef-privado/03-equipo-transporte.xlsx',
+    'appcc': '/dl/kit-tareas-chef-privado/04-seguridad-alimentaria-appcc.xlsx',
+    'servicio': '/dl/kit-tareas-chef-privado/05-checklist-servicio.xlsx',
+    'fidelizacion': '/dl/kit-tareas-chef-privado/06-seguimiento-fidelizacion.xlsx',
+    'admin': '/dl/kit-tareas-chef-privado/07-administracion-autonomo.xlsx',
+    'bonus-briefing': '/dl/kit-tareas-chef-privado/BONUS-01-briefing-pre-servicio.xlsx',
+    'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {
