@@ -51,7 +51,7 @@ export const chocolateriaTestimonials = [
     avatar: avatar7,
   },
   {
-    name: 'Marta Herrera',
+    name: 'Sergio Herrera',
     role: 'Gerente, Chocolatería Origen',
     text: 'El control de food cost y mermas de producción que incluye el checklist del manager es justo lo que necesitábamos. Antes las mermas de cobertura nos sorprendían a final de mes. Ahora las controlamos a diario.',
     avatar: avatar8,

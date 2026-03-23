@@ -11,7 +11,7 @@ import chef3 from '@/assets/avatars/chef-avatar-3.jpg';
 
 export const hotelTestimonials = [
   {
-    name: 'Patricia Moreno',
+    name: 'Pablo Moreno',
     role: 'F&B Manager, Hotel Palace 5* Madrid',
     text: 'El checklist de desayuno buffet eliminó los olvidos en el montaje. Antes cada turno montaba diferente. Ahora el estándar es el mismo a las 6:30 de la mañana que a las 10.',
     avatar: avatar1,
@@ -41,14 +41,14 @@ export const hotelTestimonials = [
     avatar: avatar5,
   },
   {
-    name: 'David Hernández',
+    name: 'Daniela Hernández',
     role: 'Revenue Manager, Cadena Hotelera NH',
     text: 'Como F&B manager de grupo, estos checklists me permiten estandarizar la operativa en 6 hoteles. El briefing diario es obligatorio en todas nuestras propiedades.',
     avatar: avatar6,
   },
   {
-    name: 'Sofía Delgado',
-    role: 'Gobernanta / Housekeeping, Boutique Hotel',
+    name: 'Santiago Delgado',
+    role: 'Gobernante / Housekeeping, Boutique Hotel',
     text: 'El checklist de minibar me ha organizado las rondas de reposición. Antes perdíamos stock y los cargos no se facturaban. Ahora todo queda registrado.',
     avatar: avatar7,
   },

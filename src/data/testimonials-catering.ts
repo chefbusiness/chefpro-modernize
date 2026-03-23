@@ -11,8 +11,8 @@ import chef3 from '@/assets/avatars/chef-avatar-3.jpg';
 
 export const cateringTestimonials = [
   {
-    name: 'Marta Domínguez',
-    role: 'Directora, Catering Elegance Madrid',
+    name: 'Manuel Domínguez',
+    role: 'Director, Catering Elegance Madrid',
     text: 'Antes cada evento era un caos organizado. Los checklists de producción y transporte eliminaron el 90% de los olvidos. Ahora el equipo eventual sabe exactamente qué hacer sin preguntar.',
     avatar: avatar1,
   },
@@ -41,7 +41,7 @@ export const cateringTestimonials = [
     avatar: avatar5,
   },
   {
-    name: 'Diego Fernández',
+    name: 'Diana Fernández',
     role: 'Maître, Hotel Palace Catering',
     text: 'Las tareas por perfil para camareros de evento son geniales para personal eventual. Les damos la hoja impresa y saben qué hacer antes, durante y después del servicio.',
     avatar: avatar6,

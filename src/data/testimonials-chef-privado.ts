@@ -51,8 +51,8 @@ export const chefPrivadoTestimonials = [
     avatar: avatar7,
   },
   {
-    name: 'Isabel Torres',
-    role: 'Chef privada, aviación y yates premium',
+    name: 'Marcos Torres',
+    role: 'Chef privado, aviación y yates premium',
     text: 'Trabajo para clientes muy exigentes: aviones privados, yates, CEOs. Los checklists me dan un nivel de profesionalidad y organización que mis clientes valoran enormemente.',
     avatar: avatar8,
   },

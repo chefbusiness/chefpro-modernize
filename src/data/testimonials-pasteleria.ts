@@ -11,8 +11,8 @@ import chef3 from '@/assets/avatars/chef-avatar-3.jpg';
 
 export const pasteleriaTestimonials = [
   {
-    name: 'Marta Vidal',
-    role: 'Jefa de Pastelería, Obrador Sant Jordi',
+    name: 'Marc Vidal',
+    role: 'Jefe de Pastelería, Obrador Sant Jordi',
     text: 'El checklist de fermentación y laminado nos salvó. Antes cada pastelero laminaba a su manera y la bollería era inconsistente. Ahora seguimos el mismo protocolo y los croissants salen perfectos cada día.',
     avatar: avatar1,
   },

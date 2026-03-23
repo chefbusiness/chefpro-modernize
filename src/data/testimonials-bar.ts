@@ -53,8 +53,8 @@ export const barTestimonials = [
     avatar: avatar7,
   },
   {
-    name: 'Elena Campos',
-    role: 'Directora de Operaciones, Grupo Nightlife',
+    name: 'Enrique Campos',
+    role: 'Director de Operaciones, Grupo Nightlife',
     text: 'El calendario anual con las fechas clave (Nochevieja, Halloween, St. Patrick) nos ayuda a planificar stock y personal con semanas de antelación. Antes improvisábamos y se notaba.',
     avatar: avatar8,
   },
