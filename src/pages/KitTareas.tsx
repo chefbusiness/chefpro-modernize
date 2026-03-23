@@ -35,21 +35,21 @@ export default function KitTareas() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — Checklists para Restaurante" />
         <meta name="twitter:description" content="Checklists operativos pre-rellenados. Imprime, delega y firma. €14." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-kit-tareas.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes Pro — Checklists Operativos para Restaurante",
           "description": "9 checklists operativos pre-rellenados para restaurante casual: apertura, cierre, partidas de cocina, manager, perfiles profesionales, eventos y festivos.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

@@ -36,8 +36,8 @@ export default function PackAppcc() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
-        <meta property="og:image:secure_url" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-pack-appcc.jpg" />
+        <meta property="og:image:secure_url" content="https://aichef.pro/og-pack-appcc.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Pack de Plantillas APPCC — Seguridad alimentaria para hostelería" />
@@ -46,7 +46,7 @@ export default function PackAppcc() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pack Plantillas APPCC — 17 Registros Profesionales" />
         <meta name="twitter:description" content="Plantillas APPCC profesionales: temperaturas, limpieza, alérgenos, HACCP. Obligatorio por ley. Solo €14." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-pack-appcc.jpg" />
         <meta name="twitter:image:alt" content="Pack de Plantillas APPCC — AI Chef Pro" />
 
         {/* Product Schema */}
@@ -55,7 +55,7 @@ export default function PackAppcc() {
           "@type": "Product",
           "name": "Pack de Plantillas APPCC — 17 Registros de Seguridad Alimentaria",
           "description": "17 plantillas profesionales de seguridad alimentaria para hostelería: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP, control de plagas. Obligatorio por ley en España.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-pack-appcc.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

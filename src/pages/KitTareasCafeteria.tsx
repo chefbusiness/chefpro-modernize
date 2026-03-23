@@ -35,21 +35,21 @@ export default function KitTareasCafeteria() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas-cafeteria.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — Checklists para Cafetería / Brunch" />
         <meta name="twitter:description" content="Checklists operativos pre-rellenados para cafetería. Imprime, delega y firma. €12." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-kit-tareas-cafeteria.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes — Checklists Operativos para Cafetería / Brunch",
           "description": "9 checklists operativos pre-rellenados para cafetería y brunch: apertura, cierre, barista, vitrina, brunch dominical, terraza, manager, eventos y festivos.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas-cafeteria.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

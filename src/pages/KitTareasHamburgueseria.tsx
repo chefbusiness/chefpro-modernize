@@ -35,21 +35,21 @@ export default function KitTareasHamburgueseria() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas-hamburgueseria.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — Checklists para Hamburguesería" />
         <meta name="twitter:description" content="Checklists operativos pre-rellenados para hamburguesería. Imprime, delega y firma. €12." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-kit-tareas-hamburgueseria.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
           "description": "9 checklists operativos pre-rellenados para hamburguesería: plancha/grill, smash burgers, freidora, línea de montaje, delivery, perfiles y eventos.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas-hamburgueseria.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

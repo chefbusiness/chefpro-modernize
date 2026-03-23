@@ -370,7 +370,7 @@ export default function ProductosDigitales() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-productos-digitales.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -378,7 +378,7 @@ export default function ProductosDigitales() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Productos Digitales para Hostelería — AI Chef Pro" />
         <meta name="twitter:description" content="Plantillas Excel, guías y prompts de IA para profesionales de hostelería." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-productos-digitales.jpg" />
 
         {/* CollectionPage Schema */}
         <script type="application/ld+json">{JSON.stringify({

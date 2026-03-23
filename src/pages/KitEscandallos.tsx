@@ -36,8 +36,8 @@ export default function KitEscandallos() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
-        <meta property="og:image:secure_url" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-escandallos.jpg" />
+        <meta property="og:image:secure_url" content="https://aichef.pro/og-kit-escandallos.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Kit de Escandallos Pro — 11 Plantillas Excel para hostelería" />
@@ -46,7 +46,7 @@ export default function KitEscandallos() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Escandallos Pro — 11 Plantillas Excel" />
         <meta name="twitter:description" content="Plantillas Excel profesionales con fórmulas automáticas, mermas precargadas y calculadora de PVP. Solo €12." />
-        <meta name="twitter:image" content="https://aichef.pro/og-image.jpg" />
+        <meta name="twitter:image" content="https://aichef.pro/og-kit-escandallos.jpg" />
         <meta name="twitter:image:alt" content="Kit de Escandallos Pro — AI Chef Pro" />
 
         {/* Product Schema */}
@@ -55,7 +55,7 @@ export default function KitEscandallos() {
           "@type": "Product",
           "name": "Kit de Escandallos Pro — 11 Plantillas Excel Profesionales",
           "description": "11 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-escandallos.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

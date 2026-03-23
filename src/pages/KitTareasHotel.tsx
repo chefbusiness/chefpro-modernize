@@ -34,7 +34,7 @@ export default function KitTareasHotel() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas-hotel.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — 46 Checklists para Hotel Completo" />
         <meta name="twitter:description" content="46 checklists para 11 departamentos de hotel. €18,50." />
@@ -44,7 +44,7 @@ export default function KitTareasHotel() {
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
           "description": "46 checklists operativos en 15 plantillas Excel para 11 departamentos de hotel: F&B (6 outlets), recepción, housekeeping, piscina, terraza, mantenimiento, administración y spa.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas-hotel.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

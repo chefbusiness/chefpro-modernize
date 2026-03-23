@@ -34,7 +34,7 @@ export default function KitTareasRestauranteCreativo() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas-restaurante-creativo.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — Checklists para Restaurante Creativo / De Autor" />
         <meta name="twitter:description" content="Checklists operativos pre-rellenados para restaurante creativo y de autor. €12." />
@@ -44,7 +44,7 @@ export default function KitTareasRestauranteCreativo() {
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
           "description": "11 checklists operativos pre-rellenados para restaurante creativo: I+D, menu degustacion, brigada creativa, sumiller y eventos.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas-restaurante-creativo.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",

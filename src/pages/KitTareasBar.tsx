@@ -34,7 +34,7 @@ export default function KitTareasBar() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/og-kit-tareas-bar.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Kit de Tareas Recurrentes — Checklists para Bar / Cocktails" />
         <meta name="twitter:description" content="Checklists operativos pre-rellenados para bar y cocktail bar. €12." />
@@ -44,7 +44,7 @@ export default function KitTareasBar() {
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
           "description": "9 checklists operativos pre-rellenados para bar y cocktail bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/og-kit-tareas-bar.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",
