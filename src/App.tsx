@@ -80,6 +80,9 @@ import KitTareasHeladeriaDashboard from "./pages/KitTareasHeladeriaDashboard";
 import KitTareasChocolateria from "./pages/KitTareasChocolateria";
 import KitTareasChocolateriaAccessGate from "./pages/KitTareasChocolateriaAccessGate";
 import KitTareasChocolateriaDashboard from "./pages/KitTareasChocolateriaDashboard";
+import KitTareasRestauranteCreativo from "./pages/KitTareasRestauranteCreativo";
+import KitTareasRestauranteCreativoAccessGate from "./pages/KitTareasRestauranteCreativoAccessGate";
+import KitTareasRestauranteCreativoDashboard from "./pages/KitTareasRestauranteCreativoDashboard";
 import KitTareasChefPrivado from "./pages/KitTareasChefPrivado";
 import KitTareasChefPrivadoAccessGate from "./pages/KitTareasChefPrivadoAccessGate";
 import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard";
@@ -423,6 +426,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-chocolateria-jwt" redirectTo="/kit-tareas-chocolateria">
                   <KitTareasChocolateriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Restaurante Creativo */}
+            <Route path="/kit-tareas-restaurante-creativo" element={<KitTareasRestauranteCreativo />} />
+            <Route path="/kit-tareas-restaurante-creativo-access" element={<KitTareasRestauranteCreativoAccessGate />} />
+            <Route
+              path="/kit-tareas-restaurante-creativo-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-restaurante-creativo-jwt" redirectTo="/kit-tareas-restaurante-creativo">
+                  <KitTareasRestauranteCreativoDashboard />
                 </ProtectedRoute>
               }
             />

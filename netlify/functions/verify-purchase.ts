@@ -108,6 +108,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Chocolatería / Obrador de Chocolate</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-restaurante-creativo': {
+    accessPath: '/kit-tareas-restaurante-creativo-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Restaurante Creativo / De Autor',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Restaurante Creativo / De Autor</strong> esta listo. Haz clic en el boton para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
   'kit-tareas-chef-privado': {
     accessPath: '/kit-tareas-chef-privado-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Chef Privado / Personal Chef',
