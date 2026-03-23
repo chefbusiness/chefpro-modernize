@@ -77,6 +77,9 @@ import KitTareasHotelDashboard from "./pages/KitTareasHotelDashboard";
 import KitTareasHeladeria from "./pages/KitTareasHeladeria";
 import KitTareasHeladeriaAccessGate from "./pages/KitTareasHeladeriaAccessGate";
 import KitTareasHeladeriaDashboard from "./pages/KitTareasHeladeriaDashboard";
+import KitTareasChocolateria from "./pages/KitTareasChocolateria";
+import KitTareasChocolateriaAccessGate from "./pages/KitTareasChocolateriaAccessGate";
+import KitTareasChocolateriaDashboard from "./pages/KitTareasChocolateriaDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -405,6 +408,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-heladeria-jwt" redirectTo="/kit-tareas-heladeria">
                   <KitTareasHeladeriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Chocolatería */}
+            <Route path="/kit-tareas-chocolateria" element={<KitTareasChocolateria />} />
+            <Route path="/kit-tareas-chocolateria-access" element={<KitTareasChocolateriaAccessGate />} />
+            <Route
+              path="/kit-tareas-chocolateria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-chocolateria-jwt" redirectTo="/kit-tareas-chocolateria">
+                  <KitTareasChocolateriaDashboard />
                 </ProtectedRoute>
               }
             />

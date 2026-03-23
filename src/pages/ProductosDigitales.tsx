@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -249,6 +249,25 @@ const products = [
     ],
     icon: IceCream,
     image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Tareas Recurrentes: Chocolatería / Obrador',
+    slug: '/kit-tareas-chocolateria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para chocolatería artesanal: producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
+    features: [
+      'Producción: templado, moldeado y bombones',
+      'Vitrina, packaging y servicio mostrador',
+      'Perfiles: chocolatero, dependiente, encargado',
+      'Temporada: Navidad, San Valentín, Pascua',
+    ],
+    icon: CakeSlice,
+    image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],

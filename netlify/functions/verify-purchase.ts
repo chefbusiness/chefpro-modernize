@@ -101,6 +101,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Heladería Artesanal</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-tareas-chocolateria': {
+    accessPath: '/kit-tareas-chocolateria-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Chocolatería / Obrador de Chocolate',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Chocolatería / Obrador de Chocolate</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
