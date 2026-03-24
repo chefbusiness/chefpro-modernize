@@ -90,7 +90,7 @@ export const handler: Handler = async (event) => {
 
     const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
 
-    await fetch('https://api.resend.com/emails', {
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -123,6 +123,13 @@ export const handler: Handler = async (event) => {
       }),
     });
 
+    if (!res.ok) {
+      const errorBody = await res.text();
+      console.error(`Resend API error (${res.status}):`, errorBody);
+      return { statusCode: 500, headers, body: JSON.stringify({ error: `Email send failed: ${res.status}` }) };
+    }
+
+    console.log('Resend-access email sent to:', email);
     return { statusCode: 200, headers, body: JSON.stringify({ sent: true }) };
   } catch (err) {
     console.error('resend-access error:', err);

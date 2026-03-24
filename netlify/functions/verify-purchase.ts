@@ -122,6 +122,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Chef Privado / Personal Chef</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists profesionales:',
     emailCta: 'Acceder a mis Checklists',
   },
+  'kit-gestion-personal': {
+    accessPath: '/kit-gestion-personal-access',
+    emailSubject: 'Tu acceso al Kit de Gestión de Personal y Turnos',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Gestión de Personal y Turnos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de gestión de personal:',
+    emailCta: 'Acceder a mis Plantillas',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
@@ -160,8 +167,10 @@ export const handler: Handler = async (event) => {
           { expiresIn: '365d' }
         );
 
-        // Fire-and-forget email (don't block the response)
-        sendAccessEmail(email, token, productId).catch(() => {});
+        // Send access email (log errors but don't block response)
+        sendAccessEmail(email, token, productId).catch((err) => {
+          console.error('sendAccessEmail failed:', err);
+        });
 
         return {
           statusCode: 200,
@@ -202,7 +211,7 @@ async function sendAccessEmail(email: string, token: string, productId: string) 
   const config = PRODUCTS[productId] || PRODUCTS['pro-prompts-ebook'];
   const magicLink = `https://aichef.pro${config.accessPath}?jwt=${token}`;
 
-  await fetch('https://api.resend.com/emails', {
+  const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -234,4 +243,12 @@ async function sendAccessEmail(email: string, token: string, productId: string) 
       `,
     }),
   });
+
+  if (!res.ok) {
+    const errorBody = await res.text();
+    console.error(`Resend API error (${res.status}):`, errorBody);
+    throw new Error(`Resend failed: ${res.status} ${errorBody}`);
+  }
+
+  console.log('Email sent successfully to:', email);
 }
