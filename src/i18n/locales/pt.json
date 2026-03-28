@@ -1255,16 +1255,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: Suite de IA para Chefs e Restaurantes",
-    "description": "Transforme sua cozinha com 55+ ferramentas IA especializadas. Criatividade culinária, livros de receitas mundiais, gestão de negócios e marketing gastronômico.",
-    "keywords": "ferramentas ia restaurante, inteligência artificial hotelaria, software gestão restaurante ia, ia para donos de restaurante, ferramentas ia chef, gestão custos restaurante ia, ia para bares e cafés, apps ia gastronomia, menu digital inteligente, menu com inteligência artificial, chef ia profissional, receitas ia, marketing gastronômico ia",
+    "title": "AI Chef Pro: 55+ Ferramentas IA para Chefs e Restaurantes",
+    "description": "Suite de inteligencia artificial para chefs e restaurantes. 55+ ferramentas: receitas IA, food cost, fichas tecnicas, marketing gastronomico. Teste gratis.",
+    "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial restauracao, ferramentas ia chef",
     "og_image_alt": "AI Chef Pro - Suite de 55+ Ferramentas IA para Chefs Profissionais"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: Suite IA para Chefs e Restaurantes",
-      "seo_description": "Suite completa de inteligência artificial para gastronomia. Criatividade culinária, 25 livros de receitas mundiais, gestão de negócios e marketing. Teste grátis.",
-      "seo_keywords": "chef ia, ferramentas chef, receitas inteligência artificial, cozinha profissional, software restaurante, aplicações gastronomia"
+      "seo_title": "AI Chef Pro: 55+ Ferramentas IA para Chefs e Restaurantes",
+      "seo_description": "Suite de inteligencia artificial para chefs e restaurantes. 55+ ferramentas: receitas IA, food cost, fichas tecnicas, marketing. Teste gratis.",
+      "seo_keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, ferramentas ia chef, ia cozinha"
     },
     "mentoria_online": {
       "seo_title": "Mentoria Online para Chefs - Consultoria IA Gastronômica | AI Chef Pro",
@@ -2810,9 +2810,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "Ferramentas Gratuitas para Restaurantes | AI Chef Pro",
-      "description": "8 ferramentas gratuitas para restaurantes: calculadora food cost, simulador rentabilidade, verificador alérgenos e mais. Sem registo.",
-      "keywords": "ferramentas gratuitas restaurante, calculadora food cost grátis, simulador rentabilidade restaurante"
+      "title": "8 Ferramentas Gratuitas IA para Restaurantes | AI Chef Pro",
+      "description": "Ferramentas IA gratuitas para restaurantes: calculadora food cost, simulador rentabilidade, detector alergenos e gerador de menu. Sem registro.",
+      "keywords": "ferramentas gratuitas restaurante, calculadora food cost gratis, ferramentas ia restaurante gratis"
     },
     "breadcrumb": "Ferramentas Gratuitas",
     "other_tools_title": "Outras ferramentas gratuitas",

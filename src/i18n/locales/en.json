@@ -981,16 +981,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: AI Suite for Chefs and Restaurants",
-    "description": "Transform your kitchen with 55+ specialized AI tools. Culinary creativity, world cookbooks, business management and gastronomic marketing.",
-    "keywords": "ai tools for restaurants, artificial intelligence hospitality, restaurant management software ai, ai for restaurant owners, chef ai tools, restaurant cost management ai, ai for bars and cafes, gastronomy ai apps, smart digital menu, menu with artificial intelligence, professional chef ai, ai recipes, restaurant marketing ai",
+    "title": "AI Chef Pro: 55+ AI Tools for Chefs and Restaurants",
+    "description": "AI-powered suite for chefs and restaurants. 55+ tools: AI recipes, food cost calculator, menu engineering, kitchen management and marketing automation. Free to start.",
+    "keywords": "ai chef pro, ai chef, chef ai, ai for restaurants, artificial intelligence for chefs, ai tools for restaurants, ai food cost calculator, restaurant ai software, culinary ai, ai recipes, restaurant management ai",
     "og_image_alt": "AI Chef Pro - Suite of 55+ AI Tools for Professional Chefs"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: AI Suite for Chefs & Restaurants",
-      "seo_description": "Complete artificial intelligence suite for gastronomy. Culinary creativity, 25 world cookbooks, business management and marketing. Try free.",
-      "seo_keywords": "chef ai, chef tools, ai recipes, professional cooking, restaurant software, gastronomy applications"
+      "seo_title": "AI Chef Pro: 55+ AI Tools for Chefs & Restaurants",
+      "seo_description": "AI-powered suite for professional chefs and restaurants. 55+ tools: AI recipes, food cost calculator, menu engineering, marketing automation. Start free.",
+      "seo_keywords": "ai chef pro, ai chef, chef ai, ai for restaurants, ai for chefs, culinary ai tools, ai food cost, restaurant ai, ai recipes"
     },
     "mentoria_online": {
       "seo_title": "Online Mentoring for Chefs - AI Culinary Consulting | AI Chef Pro",
@@ -2536,9 +2536,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "Free Tools for Restaurants | AI Chef Pro",
-      "description": "8 free tools for restaurants: food cost calculator, profit simulator, allergen checker and more. No registration required.",
-      "keywords": "free restaurant tools, food cost calculator free, restaurant profit simulator"
+      "title": "8 Free AI Tools for Restaurants | AI Chef Pro",
+      "description": "Free AI tools for restaurants: food cost calculator, profit simulator, allergen detector, menu generator and more. No registration required.",
+      "keywords": "free restaurant tools, ai food cost calculator, food cost calculator free, restaurant profit simulator, free ai tools restaurants, restaurant management tools free"
     },
     "breadcrumb": "Free Tools",
     "other_tools_title": "Other free tools",

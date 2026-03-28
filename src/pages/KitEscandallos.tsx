@@ -23,15 +23,15 @@ export default function KitEscandallos() {
   return (
     <>
       <Helmet>
-        <title>Kit de Escandallos Pro — 11 Plantillas Excel Profesionales | AI Chef Pro</title>
-        <meta name="description" content="11 plantillas de escandallos con fórmulas automáticas, mermas precargadas y calculadora de PVP. Para chefs, gerentes y dueños de restaurante. Solo €12." />
+        <title>Kit Escandallos Pro: 11 Plantillas Excel con Food Cost Automatico | AI Chef Pro</title>
+        <meta name="description" content="11 plantillas de escandallos Excel profesionales: food cost automatico, mermas precargadas, calculadora PVP y simulador de rentabilidad. Para hosteleria. Solo 12 euros." />
         <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="plantilla escandallo excel, calcular food cost restaurante, plantilla food cost excel, control costes restaurante, escandallo hostelería, calculadora PVP restaurante, mermas restaurante excel, escandallo pastelería, escandallo catering, AI Chef Pro" />
+        <meta name="keywords" content="plantilla escandallo excel, plantilla escandallo, simulador escandallos, calcular food cost restaurante, plantilla food cost excel, escandallo hosteleria, calculadora PVP restaurante, mermas restaurante excel, plantillas escandallos gratis, escandallo excel, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/kit-escandallos" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Kit de Escandallos Pro — 11 Plantillas Excel Profesionales" />
-        <meta property="og:description" content="Controla tu food cost con 11 plantillas Excel profesionales. Fórmulas automáticas, mermas precargadas y calculadora de PVP. Solo €12." />
+        <meta property="og:title" content="Kit Escandallos Pro: 11 Plantillas Excel con Food Cost Automatico" />
+        <meta property="og:description" content="11 plantillas de escandallos Excel profesionales: food cost automatico, mermas precargadas, calculadora PVP. Para hosteleria. Solo 12 euros." />
         <meta property="og:url" content="https://aichef.pro/kit-escandallos" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />

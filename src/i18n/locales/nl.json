@@ -1250,16 +1250,16 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: AI-Suite voor Chefs en Restaurants",
-    "description": "Transformeer uw keuken met 55+ gespecialiseerde AI-tools. Culinaire creativiteit, wereldwijde kookboeken, bedrijfsbeheer en gastronomische marketing.",
-    "keywords": "ai tools restaurant, kunstmatige intelligentie horeca, restaurant management software ai, ai voor restauranteigenaren, ai tools voor koks, kostenbeheer restaurant ai, ai voor bars en cafés, gastronomie ai apps, slim digitaal menu, menu met kunstmatige intelligentie, professionele kok ai, ai recepten, gastronomie marketing ai",
+    "title": "AI Chef Pro: 55+ AI-Tools voor Koks en Restaurants",
+    "description": "AI-suite voor koks en restaurants. 55+ tools: AI-recepten, food cost calculator, menukaart engineering, marketing automatisering. Gratis proberen.",
+    "keywords": "ai chef pro, ai chef, ai voor restaurants, kunstmatige intelligentie horeca, ai tools kok, ai restaurant software",
     "og_image_alt": "AI Chef Pro - Suite van 55+ AI-tools voor Professionele Chefs"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: AI-Suite voor Chefs & Restaurants",
-      "seo_description": "Complete kunstmatige intelligentie suite voor gastronomie. Culinaire creativiteit, 25 wereldwijde kookboeken, bedrijfsbeheer en marketing. Gratis proberen.",
-      "seo_keywords": "chef ai, chef tools, ai recepten, professioneel koken, restaurant software, gastronomie applicaties"
+      "seo_title": "AI Chef Pro: 55+ AI-Tools voor Koks en Restaurants",
+      "seo_description": "AI-suite voor professionele koks en restaurants. 55+ tools: AI-recepten, food cost, menukaart, marketing. Gratis starten.",
+      "seo_keywords": "ai chef pro, ai chef, ai voor restaurants, ai tools kok, ai horeca"
     },
     "mentoria_online": {
       "seo_title": "Online Mentorschap voor Chefs - AI Gastronomisch Advies | AI Chef Pro",
@@ -2805,9 +2805,9 @@
   },
   "toolHub": {
     "seo": {
-      "title": "Gratis Tools voor Restaurants | AI Chef Pro",
-      "description": "8 gratis tools voor restaurants: food cost calculator, winstgevendheids-simulator, allergenen checker en meer. Zonder registratie.",
-      "keywords": "gratis restaurant tools, food cost calculator gratis, winstgevendheids-simulator restaurant"
+      "title": "8 Gratis AI-Tools voor Restaurants | AI Chef Pro",
+      "description": "Gratis AI-tools voor restaurants: food cost calculator, winstgevendheid simulator, allergenendetektor en menu generator. Zonder registratie.",
+      "keywords": "gratis restaurant tools, food cost calculator gratis, ai tools restaurant gratis"
     },
     "breadcrumb": "Gratis Tools",
     "other_tools_title": "Andere gratis tools",
