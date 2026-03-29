@@ -1,2 +1,5 @@
+# Force www to non-www (canonical URL)
+https://www.aichef.pro/*  https://aichef.pro/:splat  301!
+
 # SPA fallback for client-side routing
 /*    /index.html   200
