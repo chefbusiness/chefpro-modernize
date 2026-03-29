@@ -86,6 +86,9 @@ import KitTareasRestauranteCreativoDashboard from "./pages/KitTareasRestauranteC
 import KitTareasChefPrivado from "./pages/KitTareasChefPrivado";
 import KitTareasChefPrivadoAccessGate from "./pages/KitTareasChefPrivadoAccessGate";
 import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard";
+import KitGestionPersonal from "./pages/KitGestionPersonal";
+import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
+import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -202,6 +205,7 @@ const App = () => (
             {/* Calculadora Food Cost — todos los idiomas */}
             <Route path="/calculadora-food-cost-restaurante" element={<CalculadoraFoodCost />} />
             <Route path="/en/food-cost-calculator-restaurant" element={<CalculadoraFoodCost />} />
+            <Route path="/en/ai-food-cost-calculator" element={<CalculadoraFoodCost />} />
             <Route path="/fr/calculateur-food-cost-restaurant" element={<CalculadoraFoodCost />} />
             <Route path="/de/food-cost-rechner-restaurant" element={<CalculadoraFoodCost />} />
             <Route path="/it/calcolatore-food-cost-ristorante" element={<CalculadoraFoodCost />} />
@@ -450,6 +454,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-chef-privado-jwt" redirectTo="/kit-tareas-chef-privado">
                   <KitTareasChefPrivadoDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Gestion de Personal y Turnos */}
+            <Route path="/kit-gestion-personal" element={<KitGestionPersonal />} />
+            <Route path="/kit-gestion-personal-access" element={<KitGestionPersonalAccessGate />} />
+            <Route
+              path="/kit-gestion-personal-library"
+              element={
+                <ProtectedRoute storageKey="kit-gestion-personal-jwt" redirectTo="/kit-gestion-personal">
+                  <KitGestionPersonalDashboard />
                 </ProtectedRoute>
               }
             />
