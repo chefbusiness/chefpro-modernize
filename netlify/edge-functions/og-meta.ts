@@ -128,6 +128,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-chef-privado.jpg',
     price: '18.00',
   },
+  '/guia-restaurante-gastronomico': {
+    title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
+    description: 'Guía premium 80+ págs: 22 capítulos, plan financiero, diseño cocina, brigada, bodega, Michelin, Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',
+    image: 'https://aichef.pro/og-image.jpg',
+    price: '85.00',
+  },
   '/productos-digitales': {
     title: 'Productos Digitales para Hostelería — Plantillas Excel, Guías y Checklists | AI Chef Pro',
     description: '21+ productos digitales para hostelería: plantillas Excel, guías, checklists, calculadoras. Desde 9 EUR.',

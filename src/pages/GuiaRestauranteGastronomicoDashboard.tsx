@@ -1,0 +1,141 @@
+import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
+import {
+  Download, Loader2, FileSpreadsheet, ArrowLeft,
+  BookOpen, FileText, Calculator, ClipboardList,
+  Scale, Users, Wine, BarChart3, Calendar,
+  Star, ChefHat, ShieldCheck, Wrench, Layout,
+  Megaphone, Briefcase,
+} from 'lucide-react';
+import { useAuth } from '@/hooks/useAuth';
+import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import LogoBadge from '@/components/shared/LogoBadge';
+import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
+
+const SECTIONS = [
+  {
+    title: 'Guía Principal',
+    templates: [
+      { key: 'guia-pdf', icon: BookOpen, title: 'Guía Completa (PDF)', desc: '22 capítulos, 80+ páginas. Diseño editorial profesional.', ext: '.pdf' },
+      { key: 'guia-docx', icon: FileText, title: 'Guía Completa (DOCX Editable)', desc: 'Mismo contenido en formato editable. Personaliza y presenta.', ext: '.docx' },
+    ],
+  },
+  {
+    title: 'Plantillas Excel (10)',
+    templates: [
+      { key: 'plan-financiero', icon: Calculator, title: 'Plan Financiero 3 Años', desc: 'Inversión, P&L mensual y proyección a 3 años con fórmulas.', ext: '.xlsx' },
+      { key: 'calculadora-capex', icon: Calculator, title: 'Calculadora CAPEX', desc: 'Desglose por categoría: obra, cocina, sala, bodega, tecnología.', ext: '.xlsx' },
+      { key: 'pl-mensual', icon: BarChart3, title: 'P&L Mensual con 3 Escenarios', desc: 'Pesimista, realista y optimista con fórmulas encadenadas.', ext: '.xlsx' },
+      { key: 'cash-flow', icon: Calculator, title: 'Cash Flow y Break-Even', desc: '12 meses de cash flow + punto de equilibrio automático.', ext: '.xlsx' },
+      { key: 'escandallo-maestro', icon: FileSpreadsheet, title: 'Escandallo Maestro', desc: 'Fichas técnicas: ingredientes, mermas, coste, PVP sugerido.', ext: '.xlsx' },
+      { key: 'menu-engineering', icon: BarChart3, title: 'Menu Engineering Matrix', desc: 'Clasificación Stars/Plowhorses/Puzzles/Dogs automática.', ext: '.xlsx' },
+      { key: 'budget-bodega', icon: Wine, title: 'Budget de Bodega', desc: 'Inventario vinos: coste, PVP, margen, rotación, stock.', ext: '.xlsx' },
+      { key: 'calculadora-ticket', icon: Calculator, title: 'Calculadora Ticket Medio', desc: 'Simulador de escenarios según mix de menús y vinos.', ext: '.xlsx' },
+      { key: 'cronograma-gantt', icon: Calendar, title: 'Cronograma Apertura Gantt', desc: '18 meses con fases, dependencias e hitos clave.', ext: '.xlsx' },
+      { key: 'plantilla-turnos', icon: Users, title: 'Plantilla Turnos Brigada', desc: 'Cuadrante semanal para 25 personas con coste.', ext: '.xlsx' },
+    ],
+  },
+  {
+    title: 'Checklists (8)',
+    templates: [
+      { key: 'checklist-legal', icon: Scale, title: 'Checklist Legal Completo', desc: '40 trámites: licencias, registro sanitario, seguros, CCAA.', ext: '.xlsx' },
+      { key: 'checklist-equipamiento', icon: Wrench, title: 'Checklist Equipamiento Cocina', desc: '90 ítems por zona: frío, carnes, pescados, pastelería, pase.', ext: '.xlsx' },
+      { key: 'checklist-vajilla', icon: Wine, title: 'Checklist Vajilla y Cristalería', desc: '50 ítems: platos, copas, cubertería, mantelería premium.', ext: '.xlsx' },
+      { key: 'checklist-appcc', icon: ShieldCheck, title: 'Checklist APPCC', desc: '55 prerrequisitos y controles de seguridad alimentaria.', ext: '.xlsx' },
+      { key: 'checklist-michelin', icon: Star, title: 'Checklist Inspección Michelin/Repsol', desc: '45 ítems que buscan los inspectores de las guías.', ext: '.xlsx' },
+      { key: 'checklist-sala', icon: Layout, title: 'Checklist Diseño de Sala', desc: '35 ítems FOH: mobiliario, iluminación, flujos, acústica.', ext: '.xlsx' },
+      { key: 'checklist-contratacion', icon: Users, title: 'Checklist Contratación', desc: '30 ítems: perfiles, entrevista, documentación, onboarding.', ext: '.xlsx' },
+      { key: 'checklist-marketing', icon: Megaphone, title: 'Checklist Marketing Pre-Apertura', desc: '35 acciones: web, prensa, redes, guías, eventos.', ext: '.xlsx' },
+    ],
+  },
+  {
+    title: 'Documentos Modelo (2)',
+    templates: [
+      { key: 'business-plan', icon: Briefcase, title: 'Business Plan Modelo', desc: 'Plantilla rellenable para presentar a bancos e inversores.', ext: '.docx' },
+      { key: 'manual-sala', icon: ChefHat, title: 'Manual de Servicio de Sala', desc: 'Protocolo: recepción, comanda, vinos, quejas, VIP.', ext: '.docx' },
+    ],
+  },
+];
+
+export default function GuiaRestauranteGastronomicoDashboard() {
+  const { token } = useAuth('guia-restaurante-gastronomico-jwt');
+  const [files, setFiles] = useState<Record<string, string>>({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!token) return;
+    fetch('/.netlify/functions/get-download-urls', { headers: { Authorization: `Bearer ${token}` } })
+      .then((r) => r.json())
+      .then((data) => { if (data.files) setFiles(data.files); })
+      .catch(() => {})
+      .finally(() => setLoading(false));
+  }, [token]);
+
+  return (
+    <>
+      <Helmet>
+        <title>Guía Restaurante Gastronómico — Dashboard | AI Chef Pro</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <div className="min-h-screen bg-[#0a0a0a]">
+        <SaasDiscoveryBanner />
+        <header className="sticky top-0 z-50 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-white/10">
+          <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+            <a href="/guia-restaurante-gastronomico" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"><ArrowLeft className="w-4 h-4" />Guía Restaurante Gastronómico</a>
+            <div className="flex items-center gap-2"><Star className="w-5 h-5 text-[#FFD700]" /><span className="text-white font-bold text-sm">Tu Dashboard</span></div>
+            <a href="https://aichef.pro" className="text-gray-500 hover:text-[#FFD700] text-sm transition-colors">aichef.pro</a>
+          </div>
+        </header>
+        <section className="py-12 md:py-16 px-4 text-center">
+          <LogoBadge />
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Restaurante <span className="text-[#FFD700]">Gastronómico</span></h1>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu guía completa + 20 herramientas listas para descargar.</p>
+        </section>
+
+        {SECTIONS.map((section) => (
+          <section key={section.title} className="pb-12 px-4">
+            <div className="max-w-5xl mx-auto">
+              <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-4">{section.title}</p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {section.templates.map((tpl) => {
+                  const Icon = tpl.icon;
+                  const url = files[tpl.key];
+                  return (
+                    <div key={tpl.key} className="rounded-xl p-5 bg-white/5 border border-white/10 hover:border-[#FFD700]/30 transition-all">
+                      <div className="flex items-start gap-3 mb-3">
+                        <div className="w-10 h-10 rounded-lg bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0"><Icon className="w-5 h-5 text-[#FFD700]" /></div>
+                        <div><h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3><p className="text-gray-500 text-xs mt-0.5">{tpl.ext}</p></div>
+                      </div>
+                      <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>
+                      {loading ? <Loader2 className="w-5 h-5 text-gray-500 animate-spin" /> : url ? (
+                        <a href={url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold border border-[#FFD700]/50 text-[#FFD700] hover:bg-[#FFD700]/10 transition-all">
+                          <Download className="w-4 h-4" />Descargar
+                        </a>
+                      ) : <span className="text-gray-500 text-sm">Disponible pronto</span>}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        ))}
+
+        <section className="py-10 px-4 border-t border-white/10">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <p className="text-gray-400 text-sm mb-3">¿Ya tienes la guía? Completa tu toolkit</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="/kit-tareas-restaurante-creativo" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Kit Tareas Restaurante Creativo — 12 EUR</a>
+              <a href="/kit-plan-financiero" className="inline-block px-6 py-3 border border-[#FFD700]/50 text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700]/10 transition-all text-sm">Kit Plan Financiero — 39 EUR</a>
+            </div>
+          </div>
+        </section>
+        <footer className="py-8 px-4 border-t border-white/10">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Guía Restaurante Gastronómico · Todos los derechos reservados</p>
+          </div>
+        </footer>
+        <WhatsAppProductSupport />
+      </div>
+    </>
+  );
+}

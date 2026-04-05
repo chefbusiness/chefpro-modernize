@@ -61,6 +61,25 @@ const products = [
     featured: true,
   },
   {
+    name: 'Cómo Montar un Restaurante Gastronómico',
+    slug: '/guia-restaurante-gastronomico',
+    price: '€85',
+    originalPrice: '€220',
+    discount: '-61%',
+    description: 'Guía premium 80+ páginas: 22 capítulos, plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan + manual de sala.',
+    features: [
+      'PDF + DOCX: 22 capítulos, 80+ páginas',
+      '10 plantillas Excel con fórmulas',
+      '8 checklists de apertura completos',
+      'Business plan modelo para bancos',
+    ],
+    icon: Star,
+    image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg',
+    badge: 'Premium',
+    badgeColor: 'bg-amber-500/20 text-amber-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
     name: 'Cómo Montar una Dark Kitchen',
     slug: '/guia-dark-kitchen',
     price: '€24',
@@ -444,7 +463,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Star, name: 'Cómo Montar un Restaurante Gastronómico', desc: 'Guía premium 80+ págs: Michelin, Sol Repsol, plan financiero, bodega, brigada, 20 plantillas Excel.', tags: ['pdf', 'guias', 'restaurante'], phase: 'Abril 2026' },
   { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
