@@ -16,7 +16,7 @@ const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, 
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_FINANCIERO || '#comprar';
 
 const checkItems = [
-  'Plan financiero previsional a 3 anos con graficos automaticos',
+  'Plan financiero previsional a 3 y 5 años con gráficos automáticos',
   'Calculadora de punto de equilibrio con 3 escenarios',
   'Cash flow forecast 12 meses con alertas de liquidez',
   'P&L mensual real vs presupuesto con semaforo de desviaciones',
@@ -79,7 +79,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          9 plantillas Excel con formulas automaticas para crear tu plan financiero, calcular el punto de equilibrio, controlar P&L, gestionar cash flow y presentar un informe de viabilidad profesional al banco.
+          10 plantillas Excel con fórmulas automáticas para crear tu plan financiero, calcular el punto de equilibrio, controlar P&L, gestionar cash flow y presentar un informe de viabilidad profesional al banco.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

@@ -4,7 +4,7 @@ import PaymentBadges from '../ebook/PaymentBadges';
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_FINANCIERO || '#comprar';
 
 const items = [
-  'Plan financiero previsional a 3 anos con graficos',
+  'Plan financiero previsional a 3 y 5 años con gráficos',
   'Calculadora de punto de equilibrio con 3 escenarios',
   'Cash flow forecast 12 meses con alertas de liquidez',
   'Presupuesto de inversion CAPEX con desviaciones',
@@ -25,7 +25,7 @@ export default function CtaFinal() {
       <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%)' }} />
       <div className="relative max-w-3xl mx-auto text-center z-10">
         <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Deja de Abrir o Gestionar Tu Restaurante a Ciegas</h2>
-        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">9 plantillas profesionales por menos de lo que cuesta una hora de consultoria financiera.</p>
+        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">10 plantillas profesionales por menos de lo que cuesta una hora de consultoria financiera.</p>
         <div className="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
           <div className="flex flex-col items-start gap-3 mb-8 max-w-md mx-auto">
             {items.map((item) => (

@@ -27,7 +27,7 @@ export default function BonusSection() {
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">Bonos <span className="text-[#FFD700]">Exclusivos</span></h2>
-            <p className="text-gray-400 text-lg">Ademas de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 28 EUR</p>
+            <p className="text-gray-400 text-lg">Además de las 8 plantillas principales, recibes estos recursos adicionales — valorados en 28 EUR</p>
           </div>
         </FadeIn>
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">

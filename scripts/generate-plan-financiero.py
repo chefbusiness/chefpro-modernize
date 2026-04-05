@@ -269,6 +269,132 @@ def gen_01():
 
 
 # ═══════════════════════════════════════════════════════════
+# 01b — PLAN FINANCIERO PREVISIONAL (P&L 5 AÑOS)
+# ═══════════════════════════════════════════════════════════
+def gen_01b():
+    wb = Workbook()
+    add_instructions_sheet(wb, "01b · Plan Financiero Previsional — P&L 5 Años", [
+        "Cómo usar esta plantilla:",
+        "▸ Idéntica estructura que el plan a 3 años, pero con proyección a 5 años.",
+        "▸ Ideal para presentaciones a bancos, inversores o franquicias que requieren 5 años.",
+        "▸ Año 1 con desglose mensual. Años 2-5 con desglose mensual.",
+        "▸ Las celdas en verde son campos editables (inputs).",
+        "▸ EBITDA y márgenes se calculan automáticamente.",
+        "▸ La pestaña Resumen consolida los 5 años.",
+    ])
+
+    revenue_lines = ["Comedor", "Barra", "Delivery", "Eventos / Catering"]
+    cost_lines = ["Food Cost", "Personal (Labor)", "Alquiler", "Suministros", "Marketing", "Administración / Otros"]
+
+    for year_num in range(1, 6):
+        ws = wb.create_sheet(f"Año {year_num}")
+        ws.sheet_properties.tabColor = "1565C0"
+        set_col_widths(ws, [("A", 28)] + [(get_column_letter(i), 14) for i in range(2, 15)])
+
+        ws.merge_cells("A1:N1")
+        ws["A1"].value = f"P&L Previsional — Año {year_num}"
+        ws["A1"].font = title_font
+        ws.merge_cells("A2:N2")
+        ws["A2"].value = BRAND_LINE
+        ws["A2"].font = subtitle_font
+
+        headers = ["Concepto"] + MONTHS + ["TOTAL AÑO"]
+        style_header_row(ws, 4, headers)
+
+        r = 5
+        ws.cell(row=r, column=1, value="INGRESOS").font = section_font
+        r += 1
+        rev_start = r
+        for line in revenue_lines:
+            ws.cell(row=r, column=1, value=line).font = data_font
+            ws.cell(row=r, column=1).border = thin_border
+            for c in range(2, 14):
+                style_data_cell(ws, r, c, 0, EUR_FMT, fill=input_fill)
+            style_data_cell(ws, r, 14, fmt=EUR_FMT, font=bold_font)
+            ws.cell(row=r, column=14).value = f"=SUM(B{r}:M{r})"
+            r += 1
+        rev_end = r - 1
+
+        ws.cell(row=r, column=1, value="TOTAL INGRESOS").font = bold_font
+        ws.cell(row=r, column=1).border = thin_border
+        for c in range(2, 15):
+            col_l = get_column_letter(c)
+            style_data_cell(ws, r, c, fmt=EUR_FMT, font=bold_font)
+            ws.cell(row=r, column=c).value = f"=SUM({col_l}{rev_start}:{col_l}{rev_end})"
+        total_rev_row = r
+        r += 2
+
+        ws.cell(row=r, column=1, value="GASTOS").font = section_font
+        r += 1
+        cost_start = r
+        for line in cost_lines:
+            ws.cell(row=r, column=1, value=line).font = data_font
+            ws.cell(row=r, column=1).border = thin_border
+            for c in range(2, 14):
+                style_data_cell(ws, r, c, 0, EUR_FMT, fill=input_fill)
+            style_data_cell(ws, r, 14, fmt=EUR_FMT, font=bold_font)
+            ws.cell(row=r, column=14).value = f"=SUM(B{r}:M{r})"
+            r += 1
+        cost_end = r - 1
+
+        ws.cell(row=r, column=1, value="TOTAL GASTOS").font = bold_font
+        ws.cell(row=r, column=1).border = thin_border
+        for c in range(2, 15):
+            col_l = get_column_letter(c)
+            style_data_cell(ws, r, c, fmt=EUR_FMT, font=bold_font)
+            ws.cell(row=r, column=c).value = f"=SUM({col_l}{cost_start}:{col_l}{cost_end})"
+        total_cost_row = r
+        r += 2
+
+        ws.cell(row=r, column=1, value="EBITDA").font = Font(name="Calibri", size=13, bold=True, color=GOLD)
+        ws.cell(row=r, column=1).border = thin_border
+        for c in range(2, 15):
+            col_l = get_column_letter(c)
+            style_data_cell(ws, r, c, fmt=EUR_FMT, font=Font(name="Calibri", size=12, bold=True, color=GOLD))
+            ws.cell(row=r, column=c).value = f"={col_l}{total_rev_row}-{col_l}{total_cost_row}"
+        ebitda_row = r
+        r += 1
+
+        ws.cell(row=r, column=1, value="Margen EBITDA %").font = bold_font
+        ws.cell(row=r, column=1).border = thin_border
+        for c in range(2, 15):
+            col_l = get_column_letter(c)
+            style_data_cell(ws, r, c, fmt=PCT_FMT, font=pct_font)
+            ws.cell(row=r, column=c).value = f'=IF({col_l}{total_rev_row}=0,0,{col_l}{ebitda_row}/{col_l}{total_rev_row})'
+        r += 2
+        add_brand_footer(ws, r, "N")
+
+    # Resumen 5 años
+    ws = wb.create_sheet("Resumen")
+    ws.sheet_properties.tabColor = GOLD
+    set_col_widths(ws, [("A", 28), ("B", 16), ("C", 16), ("D", 16), ("E", 16), ("F", 16), ("G", 18)])
+
+    ws.merge_cells("A1:G1")
+    ws["A1"].value = "Resumen Ejecutivo — P&L 5 Años"
+    ws["A1"].font = title_font
+    ws.merge_cells("A2:G2")
+    ws["A2"].value = BRAND_LINE
+    ws["A2"].font = subtitle_font
+
+    headers = ["Concepto", "Año 1", "Año 2", "Año 3", "Año 4", "Año 5", "Crecimiento Y1→Y5"]
+    style_header_row(ws, 4, headers)
+
+    summary_items = ["Total Ingresos", "Total Gastos", "EBITDA", "Margen EBITDA %"]
+    for i, item in enumerate(summary_items, 5):
+        ws.cell(row=i, column=1, value=item).font = bold_font
+        ws.cell(row=i, column=1).border = thin_border
+        for c in range(2, 8):
+            style_data_cell(ws, i, c, 0, EUR_FMT if "%" not in item else PCT_FMT)
+    ws.cell(row=5, column=7).value = "=IF(B5=0,0,(F5-B5)/B5)"
+    ws.cell(row=5, column=7).number_format = PCT_FMT
+
+    add_brand_footer(ws, 12, "G")
+
+    wb.save(os.path.join(OUTPUT_DIR, "01b-plan-financiero-previsional-5-anos.xlsx"))
+    print("  ✓ 01b-plan-financiero-previsional-5-anos.xlsx")
+
+
+# ═══════════════════════════════════════════════════════════
 # 02 — CALCULADORA PUNTO DE EQUILIBRIO
 # ═══════════════════════════════════════════════════════════
 def gen_02():
@@ -1564,6 +1690,7 @@ def gen_09():
 if __name__ == "__main__":
     print(f"\n📁 Generando Kit Plan Financiero en: {OUTPUT_DIR}\n")
     gen_01()
+    gen_01b()
     gen_02()
     gen_03()
     gen_04()
@@ -1572,4 +1699,4 @@ if __name__ == "__main__":
     gen_07()
     gen_08()
     gen_09()
-    print(f"\n✅ 9 archivos generados correctamente en {OUTPUT_DIR}\n")
+    print(f"\n✅ 10 archivos generados correctamente en {OUTPUT_DIR}\n")

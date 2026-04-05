@@ -88,9 +88,9 @@ const products = [
     price: '€19',
     originalPrice: '€69',
     discount: '-72%',
-    description: '9 plantillas Excel con formulas encadenadas: plan financiero a 3 anos, punto de equilibrio, cash flow, CAPEX, P&L mensual, ratios financieros e informe de viabilidad para bancos.',
+    description: '10 plantillas Excel con fórmulas encadenadas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, CAPEX, P&L mensual, ratios financieros e informe de viabilidad para bancos.',
     features: [
-      'Plan previsional a 3 anos con graficos',
+      'Plan previsional a 3 y 5 años',
       'Break-even con 3 escenarios',
       'Cash flow con alertas de liquidez',
       'Informe viabilidad listo para bancos',

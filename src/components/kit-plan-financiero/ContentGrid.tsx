@@ -5,7 +5,8 @@ import {
 import FadeIn from '../ebook/FadeIn';
 
 const templates = [
-  { icon: TrendingUp, title: 'Plan Financiero Previsional (3 Anos)', desc: 'Proyeccion de ingresos y gastos a 3 anos con desglose mensual el primer ano. Lineas de ingreso (comedor, barra, delivery, eventos), costes variables/fijos, EBITDA y graficos automaticos.' },
+  { icon: TrendingUp, title: 'Plan Financiero Previsional (3 Años)', desc: 'Proyección de ingresos y gastos a 3 años con desglose mensual. Líneas de ingreso (comedor, barra, delivery, eventos), costes variables/fijos, EBITDA y gráficos automáticos.' },
+  { icon: TrendingUp, title: 'Plan Financiero Previsional (5 Años)', desc: 'Misma estructura que el plan a 3 años pero con proyección a 5 años. Ideal para presentaciones a bancos, inversores o franquicias que requieren horizontes más largos.' },
   { icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Calcula ticket medio necesario, comensales/dia minimos y umbral de facturacion. Incluye 3 escenarios (pesimista/realista/optimista) con grafico visual de break-even.' },
   { icon: Wallet, title: 'Cash Flow Forecast (12 Meses)', desc: 'Flujo de caja mensual con desfase cobros/pagos, IVA trimestral y estacionalidad. Alerta automatica en rojo cuando el saldo cae por debajo del umbral de seguridad.' },
   { icon: Building2, title: 'Presupuesto de Inversion / CAPEX', desc: 'Desglose por partida: obra, equipamiento cocina, mobiliario sala, tecnologia, licencias. Presupuesto vs real con % desviacion. Totales con y sin IVA.' },
@@ -32,7 +33,7 @@ export default function ContentGrid() {
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-white mb-3">
-              <span className="text-[#FFD700]">9</span> Plantillas de Plan Financiero
+              <span className="text-[#FFD700]">10</span> Plantillas de Plan Financiero
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
               Cada plantilla incluye formulas encadenadas, graficos profesionales y benchmarks reales del sector hostelero espanol.

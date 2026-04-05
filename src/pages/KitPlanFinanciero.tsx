@@ -24,12 +24,12 @@ export default function KitPlanFinanciero() {
     <>
       <Helmet>
         <title>Kit Plan Financiero para Restaurantes — Plantillas Excel | AI Chef Pro</title>
-        <meta name="description" content="9 plantillas Excel con formulas automaticas: plan financiero a 3 anos, punto de equilibrio, cash flow, P&L, CAPEX, ratios e informe de viabilidad para bancos. 19 EUR." />
+        <meta name="description" content="10 plantillas Excel con fórmulas automáticas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, P&L, CAPEX, ratios e informe de viabilidad para bancos. 19 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plan financiero restaurante, plan de negocio restaurante, punto equilibrio restaurante, cash flow restaurante, P&L hosteleria, viabilidad restaurante, CAPEX restaurante, food cost, abrir restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/kit-plan-financiero" />
         <meta property="og:title" content="Kit Plan Financiero para Restaurantes — Plantillas Excel" />
-        <meta property="og:description" content="9 plantillas Excel: plan financiero, break-even, cash flow, P&L, ratios, informe bancario. 19 EUR." />
+        <meta property="og:description" content="10 plantillas Excel: plan financiero 3 y 5 años, break-even, cash flow, P&L, ratios, informe bancario. 19 EUR." />
         <meta property="og:url" content="https://aichef.pro/kit-plan-financiero" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -43,7 +43,7 @@ export default function KitPlanFinanciero() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Kit Plan Financiero para Restaurantes — Plantillas Excel",
-          "description": "9 plantillas Excel con formulas automaticas: plan financiero a 3 anos, punto de equilibrio, cash flow, P&L, CAPEX, ratios e informe de viabilidad para bancos.",
+          "description": "10 plantillas Excel con fórmulas automáticas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, P&L, CAPEX, ratios e informe de viabilidad para bancos.",
           "image": "https://aichef.pro/og-kit-plan-financiero.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {

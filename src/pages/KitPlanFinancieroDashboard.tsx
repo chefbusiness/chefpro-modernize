@@ -11,8 +11,9 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 const TEMPLATES = [
-  { key: 'plan-previsional', icon: TrendingUp, title: 'Plan Financiero Previsional (3 Anos)', desc: 'Proyeccion ingresos y gastos con graficos automaticos.' },
-  { key: 'break-even', icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Ticket medio, comensales/dia y 3 escenarios.' },
+  { key: 'plan-previsional', icon: TrendingUp, title: 'Plan Financiero Previsional (3 Años)', desc: 'Proyección ingresos y gastos a 3 años con gráficos automáticos.' },
+  { key: 'plan-previsional-5', icon: TrendingUp, title: 'Plan Financiero Previsional (5 Años)', desc: 'Proyección a 5 años — ideal para bancos, inversores y franquicias.' },
+  { key: 'break-even', icon: Target, title: 'Calculadora Punto de Equilibrio', desc: 'Ticket medio, comensales/día y 3 escenarios.' },
   { key: 'cash-flow', icon: Wallet, title: 'Cash Flow Forecast (12 Meses)', desc: 'Flujo de caja con alertas de liquidez.' },
   { key: 'capex', icon: Building2, title: 'Presupuesto de Inversion / CAPEX', desc: 'Desglose por partida con desviacion real vs presupuesto.' },
   { key: 'pyl', icon: BarChart3, title: 'P&L Mensual Real vs Presupuesto', desc: 'Desviaciones con semaforo y ratios automaticos.' },
@@ -54,11 +55,11 @@ export default function KitPlanFinancieroDashboard() {
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Plan <span className="text-[#FFD700]">Financiero</span> para Restaurantes</h1>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 9 plantillas financieras listas para descargar. Planifica, controla y presenta.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 10 plantillas financieras listas para descargar. Planifica, controla y presenta.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">7 Plantillas + 2 Bonus · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">8 Plantillas + 2 Bonus · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

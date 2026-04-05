@@ -212,6 +212,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
   },
   'kit-plan-financiero': {
     'plan-previsional': '/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx',
+    'plan-previsional-5': '/dl/kit-plan-financiero/01b-plan-financiero-previsional-5-anos.xlsx',
     'break-even': '/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx',
     'cash-flow': '/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx',
     'capex': '/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx',
