@@ -12,15 +12,30 @@ import {
 // ── Tag definitions ──────────────────────────────────────────
 const ALL_TAGS = [
   { id: 'all', label: 'Todos', icon: Filter },
+  // Formato
   { id: 'excel', label: 'Excel' },
   { id: 'pdf', label: 'PDF / eBook' },
   { id: 'plantillas', label: 'Plantillas' },
+  { id: 'guias', label: 'Guías How-To' },
+  { id: 'manuales', label: 'Manuales' },
+  // Temática
   { id: 'costes', label: 'Control de Costes' },
   { id: 'seguridad', label: 'Seguridad Alimentaria' },
   { id: 'ia', label: 'Inteligencia Artificial' },
   { id: 'gestion', label: 'Gestión' },
-  { id: 'guias', label: 'Guías How-To' },
-  { id: 'manuales', label: 'Manuales' },
+  // Concepto de negocio
+  { id: 'restaurante', label: 'Restaurante' },
+  { id: 'cafeteria', label: 'Cafetería' },
+  { id: 'pizzeria', label: 'Pizzería' },
+  { id: 'hamburgueseria', label: 'Hamburguesería' },
+  { id: 'dark-kitchen', label: 'Dark Kitchen' },
+  { id: 'pasteleria', label: 'Pastelería' },
+  { id: 'bar', label: 'Bar / Cocktails' },
+  { id: 'catering', label: 'Catering' },
+  { id: 'hotel', label: 'Hotel' },
+  { id: 'heladeria', label: 'Heladería' },
+  { id: 'chocolateria', label: 'Chocolatería' },
+  { id: 'chef-privado', label: 'Chef Privado' },
 ];
 
 // ── Live products ────────────────────────────────────────────
@@ -42,7 +57,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
     badge: '🎁 Mega Pack',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['excel', 'plantillas', 'bundle'],
+    tags: ['excel', 'plantillas', 'bundle', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria', 'chef-privado'],
     featured: true,
   },
   {
@@ -62,7 +77,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/guia-dk-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['pdf', 'guias'],
+    tags: ['pdf', 'guias', 'dark-kitchen'],
   },
   {
     name: 'Gastro Pro Prompts eBook',
@@ -100,7 +115,7 @@ const products = [
     image: '/kit-escandallos-hero.jpg',
     badge: 'Popular',
     badgeColor: 'bg-emerald-500/20 text-emerald-400',
-    tags: ['excel', 'plantillas', 'costes'],
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
     name: 'Kit Gestion de Personal y Turnos',
@@ -119,7 +134,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
     name: 'Kit Plan Financiero para Restaurantes',
@@ -138,7 +153,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'finanzas'],
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
     name: 'Kit Control de Inventario y Compras',
@@ -157,7 +172,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'inventario'],
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
     name: 'Tareas Recurrentes: Restaurante Casual',
@@ -176,7 +191,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante'],
   },
   {
     name: 'Tareas Recurrentes: Cafetería / Brunch',
@@ -195,7 +210,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'cafeteria'],
   },
   {
     name: 'Tareas Recurrentes: Pizzería',
@@ -214,7 +229,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'pizzeria'],
   },
   {
     name: 'Tareas Recurrentes: Hamburguesería',
@@ -233,7 +248,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'hamburgueseria'],
   },
   {
     name: 'Tareas Recurrentes: Dark Kitchen',
@@ -252,7 +267,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'dark-kitchen'],
   },
   {
     name: 'Tareas Recurrentes: Pastelería / Obrador',
@@ -271,7 +286,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'pasteleria'],
   },
   {
     name: 'Tareas Recurrentes: Bar / Cocktails',
@@ -290,7 +305,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'bar'],
   },
   {
     name: 'Tareas Recurrentes: Catering / Eventos',
@@ -309,7 +324,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'catering'],
   },
   {
     name: 'Tareas Recurrentes: Hotel Completo',
@@ -328,7 +343,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'hotel'],
   },
   {
     name: 'Tareas Recurrentes: Heladería Artesanal',
@@ -347,7 +362,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'heladeria'],
   },
   {
     name: 'Tareas Recurrentes: Chocolatería / Obrador',
@@ -366,7 +381,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'chocolateria'],
   },
   {
     name: 'Tareas Recurrentes: Restaurante Creativo / De Autor',
@@ -385,7 +400,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante'],
   },
   {
     name: 'Tareas Recurrentes: Chef Privado / Personal Chef',
@@ -404,7 +419,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion'],
+    tags: ['excel', 'plantillas', 'gestion', 'chef-privado'],
   },
   {
     name: 'Pack Plantillas APPCC',
@@ -423,18 +438,19 @@ const products = [
     image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
     badge: 'Nuevo',
     badgeColor: 'bg-blue-500/20 text-blue-400',
-    tags: ['excel', 'plantillas', 'seguridad'],
+    tags: ['excel', 'plantillas', 'seguridad', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
 ];
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
-  { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
-  { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias'], phase: 'Junio 2026' },
-  { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion'], phase: 'Junio 2026' },
-  { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion'], phase: 'Julio 2026' },
-  { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes'], phase: 'Julio 2026' },
+  { icon: Star, name: 'Cómo Montar un Restaurante Gastronómico', desc: 'Guía premium 80+ págs: Michelin, Sol Repsol, plan financiero, bodega, brigada, 20 plantillas Excel.', tags: ['pdf', 'guias', 'restaurante'], phase: 'Abril 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
+  { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
+  { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Julio 2026' },
+  { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes', 'restaurante'], phase: 'Julio 2026' },
 ];
 
 export default function ProductosDigitales() {
