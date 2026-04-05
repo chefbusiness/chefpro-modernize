@@ -210,6 +210,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-inventario-rapido': '/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx',
     'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
   },
+  'kit-plan-financiero': {
+    'plan-previsional': '/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx',
+    'break-even': '/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx',
+    'cash-flow': '/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx',
+    'capex': '/dl/kit-plan-financiero/04-presupuesto-inversion-capex.xlsx',
+    'pyl': '/dl/kit-plan-financiero/05-pyl-mensual-real-vs-presupuesto.xlsx',
+    'ratios': '/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx',
+    'viabilidad': '/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx',
+    'bonus-simulador': '/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx',
+    'bonus-checklist': '/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

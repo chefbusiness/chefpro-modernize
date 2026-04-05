@@ -5,7 +5,7 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
-  ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package,
+  ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
   ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed,
 } from 'lucide-react';
 
@@ -81,6 +81,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Kit Plan Financiero para Restaurantes',
+    slug: '/kit-plan-financiero',
+    price: '€19',
+    originalPrice: '€69',
+    discount: '-72%',
+    description: '9 plantillas Excel con formulas encadenadas: plan financiero a 3 anos, punto de equilibrio, cash flow, CAPEX, P&L mensual, ratios financieros e informe de viabilidad para bancos.',
+    features: [
+      'Plan previsional a 3 anos con graficos',
+      'Break-even con 3 escenarios',
+      'Cash flow con alertas de liquidez',
+      'Informe viabilidad listo para bancos',
+    ],
+    icon: TrendingUp,
+    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'finanzas'],
   },
   {
     name: 'Kit Control de Inventario y Compras',

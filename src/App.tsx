@@ -92,6 +92,9 @@ import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
 import KitInventario from "./pages/KitInventario";
 import KitInventarioAccessGate from "./pages/KitInventarioAccessGate";
 import KitInventarioDashboard from "./pages/KitInventarioDashboard";
+import KitPlanFinanciero from "./pages/KitPlanFinanciero";
+import KitPlanFinancieroAccessGate from "./pages/KitPlanFinancieroAccessGate";
+import KitPlanFinancieroDashboard from "./pages/KitPlanFinancieroDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -481,6 +484,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-inventario-jwt" redirectTo="/kit-inventario">
                   <KitInventarioDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Plan Financiero para Restaurantes */}
+            <Route path="/kit-plan-financiero" element={<KitPlanFinanciero />} />
+            <Route path="/kit-plan-financiero-access" element={<KitPlanFinancieroAccessGate />} />
+            <Route
+              path="/kit-plan-financiero-library"
+              element={
+                <ProtectedRoute storageKey="kit-plan-financiero-jwt" redirectTo="/kit-plan-financiero">
+                  <KitPlanFinancieroDashboard />
                 </ProtectedRoute>
               }
             />

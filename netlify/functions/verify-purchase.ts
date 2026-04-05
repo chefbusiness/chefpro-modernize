@@ -136,6 +136,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Control de Inventario y Compras</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'kit-plan-financiero': {
+    accessPath: '/kit-plan-financiero-access',
+    emailSubject: 'Tu acceso al Kit Plan Financiero para Restaurantes',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit Plan Financiero para Restaurantes</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas financieras:',
+    emailCta: 'Acceder a mis Plantillas',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
