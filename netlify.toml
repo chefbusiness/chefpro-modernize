@@ -5,6 +5,11 @@
 [functions]
   directory = "netlify/functions"
 
+# Edge Function for social media OG meta tags
+[[edge_functions]]
+  function = "og-meta"
+  path = "/*"
+
 [build.environment]
   NODE_VERSION = "18"
   VITE_SITE_URL = "https://aichef.pro"
