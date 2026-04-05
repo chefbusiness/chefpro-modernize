@@ -410,13 +410,13 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: BarChart3, name: 'Kit Plan Financiero para Restaurantes', desc: 'P&L previsional 3 años, punto de equilibrio, cash flow, escenarios', tags: ['excel', 'plantillas', 'costes', 'gestion'], phase: 'Abril 2026' },
-  { icon: Truck, name: 'Kit Control de Inventario y Compras', desc: 'Stock in/out, alertas reposición, comparador proveedores, tracker mermas', tags: ['excel', 'plantillas', 'costes'], phase: 'Mayo 2026' },
-  { icon: Building, name: 'Cómo Montar una Dark Kitchen', desc: 'Guía paso a paso: concepto, local, licencias, equipamiento, lanzamiento', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
-  { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA', tags: ['pdf', 'guias'], phase: 'Junio 2026' },
-  { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo', tags: ['pdf', 'manuales', 'gestion'], phase: 'Julio 2026' },
-  { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio', tags: ['pdf', 'manuales', 'gestion'], phase: 'Julio 2026' },
-  { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology', tags: ['pdf', 'costes'], phase: 'Sept 2026' },
+  { icon: Building, name: 'Cómo Montar una Dark Kitchen', desc: 'Guía PDF + DOCX editable + checklists Excel + infografías. Concepto, local, licencias, equipamiento, lanzamiento.', tags: ['pdf', 'guias'], phase: 'Abril 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
+  { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias'], phase: 'Junio 2026' },
+  { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion'], phase: 'Junio 2026' },
+  { icon: Coffee, name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion'], phase: 'Julio 2026' },
+  { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes'], phase: 'Julio 2026' },
 ];
 
 export default function ProductosDigitales() {
