@@ -9,7 +9,7 @@ import FadeIn from '../ebook/FadeIn';
 const chapters = [
   { icon: Building2, num: '01', title: 'Qué es un Restaurante Gastronómico', desc: 'Definición, categorías (fine dining, casual fine, tasting menu) y diferencias con la restauración convencional.' },
   { icon: TrendingUp, num: '02', title: 'El Mercado de la Alta Cocina en España 2026', desc: 'Datos del sector, ticket medio, tendencias de gasto y ciudades con mayor demanda gastronómica.' },
-  { icon: Briefcase, num: '03', title: 'Modelos de Negocio', desc: 'Menú degustación, carta premium, omakase, chef's table. Pros, contras y márgenes de cada formato.' },
+  { icon: Briefcase, num: '03', title: 'Modelos de Negocio', desc: "Menú degustación, carta premium, omakase, chef's table. Pros, contras y márgenes de cada formato." },
   { icon: Calculator, num: '04', title: 'Estudio de Viabilidad y Plan Financiero', desc: 'Inversión 500K-900K€, P&L mensual, food cost 25-28%, break-even y proyecciones a 3 años.' },
   { icon: Scale, num: '05', title: 'Requisitos Legales en España', desc: 'Licencias, registro sanitario, Hacienda, seguros, LOPD, normativa de terraza y alcohol.' },
   { icon: ShieldCheck, num: '06', title: 'APPCC y Seguridad Alimentaria', desc: 'Plan APPCC obligatorio, trazabilidad premium, alérgenos, control de temperaturas y auditorías.' },
