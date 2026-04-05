@@ -234,6 +234,12 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-inventario-rapido': '/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx',
     'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
   },
+  'guia-dark-kitchen': {
+    'guia-docx': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.docx',
+    'checklist-legal': '/dl/guia-dark-kitchen/checklist-apertura-legal.xlsx',
+    'checklist-equipamiento': '/dl/guia-dark-kitchen/checklist-equipamiento-obra.xlsx',
+    'calculadora': '/dl/guia-dark-kitchen/calculadora-viabilidad-dark-kitchen.xlsx',
+  },
   'mega-pack-tareas': {
     // Restaurante Casual
     'kit-tareas__apertura-cierre': '/dl/kit-tareas/01-apertura-cierre.xlsx',

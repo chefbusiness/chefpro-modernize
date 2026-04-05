@@ -136,6 +136,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Control de Inventario y Compras</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'guia-dark-kitchen': {
+    accessPath: '/guia-dark-kitchen-access',
+    emailSubject: 'Tu acceso a la Guía: Cómo Montar una Dark Kitchen',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Guía Cómo Montar una Dark Kitchen</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 3 checklists Excel:',
+    emailCta: 'Acceder a mi Guía',
+  },
   'mega-pack-tareas': {
     accessPath: '/mega-pack-tareas-access',
     emailSubject: 'Tu acceso al Mega Pack Tareas Recurrentes — 13 Kits',

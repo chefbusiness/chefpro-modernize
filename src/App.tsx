@@ -95,6 +95,9 @@ import KitInventarioDashboard from "./pages/KitInventarioDashboard";
 import KitPlanFinanciero from "./pages/KitPlanFinanciero";
 import KitPlanFinancieroAccessGate from "./pages/KitPlanFinancieroAccessGate";
 import KitPlanFinancieroDashboard from "./pages/KitPlanFinancieroDashboard";
+import GuiaDarkKitchen from "./pages/GuiaDarkKitchen";
+import GuiaDarkKitchenAccessGate from "./pages/GuiaDarkKitchenAccessGate";
+import GuiaDarkKitchenDashboard from "./pages/GuiaDarkKitchenDashboard";
 import MegaPackTareas from "./pages/MegaPackTareas";
 import MegaPackTareasAccessGate from "./pages/MegaPackTareasAccessGate";
 import MegaPackTareasDashboard from "./pages/MegaPackTareasDashboard";
@@ -487,6 +490,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-inventario-jwt" redirectTo="/kit-inventario">
                   <KitInventarioDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Cómo Montar una Dark Kitchen */}
+            <Route path="/guia-dark-kitchen" element={<GuiaDarkKitchen />} />
+            <Route path="/guia-dark-kitchen-access" element={<GuiaDarkKitchenAccessGate />} />
+            <Route
+              path="/guia-dark-kitchen-library"
+              element={
+                <ProtectedRoute storageKey="guia-dark-kitchen-jwt" redirectTo="/guia-dark-kitchen">
+                  <GuiaDarkKitchenDashboard />
                 </ProtectedRoute>
               }
             />

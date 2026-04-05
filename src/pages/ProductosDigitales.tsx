@@ -46,6 +46,25 @@ const products = [
     featured: true,
   },
   {
+    name: 'Cómo Montar una Dark Kitchen',
+    slug: '/guia-dark-kitchen',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: 'Guía completa PDF + DOCX editable: 12 capítulos, requisitos legales, plan financiero, diseño de cocina, tecnología, marketing. 3 checklists Excel + calculadora de viabilidad.',
+    features: [
+      'PDF editorial + DOCX editable',
+      '12 capítulos de la idea al lanzamiento',
+      '3 checklists Excel + calculadora',
+      'Requisitos legales España 2026',
+    ],
+    icon: Building,
+    image: '/lovable-uploads/ai-gallery/guia-dk-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['pdf', 'guias'],
+  },
+  {
     name: 'Gastro Pro Prompts eBook',
     slug: '/pro-prompts-ebook',
     price: '€9',
@@ -410,7 +429,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Building, name: 'Cómo Montar una Dark Kitchen', desc: 'Guía PDF + DOCX editable + checklists Excel + infografías. Concepto, local, licencias, equipamiento, lanzamiento.', tags: ['pdf', 'guias'], phase: 'Abril 2026' },
   { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias'], phase: 'Junio 2026' },
