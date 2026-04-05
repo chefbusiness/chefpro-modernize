@@ -188,6 +188,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-tareas-chef-privado/BONUS-01-briefing-pre-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
   },
+  'kit-gestion-personal': {
+    'cuadrante': '/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx',
+    'horas-extra': '/dl/kit-gestion-personal/02-control-horas-extras.xlsx',
+    'coste-laboral': '/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx',
+    'onboarding': '/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx',
+    'vacaciones': '/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx',
+    'evaluacion': '/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx',
+    'directorio': '/dl/kit-gestion-personal/07-directorio-plantilla.xlsx',
+    'bonus-briefing': '/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx',
+    'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

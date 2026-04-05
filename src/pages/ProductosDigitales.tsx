@@ -64,6 +64,25 @@ const products = [
     tags: ['excel', 'plantillas', 'costes'],
   },
   {
+    name: 'Kit Gestion de Personal y Turnos',
+    slug: '/kit-gestion-personal',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 plantillas Excel con formulas automaticas: cuadrante turnos, horas extra, coste laboral, onboarding, vacaciones, evaluacion de desempeno y directorio de plantilla.',
+    features: [
+      'Cuadrante turnos con alertas legales',
+      'Control horas extra automatico',
+      'Ratio coste laboral con semaforo',
+      'Onboarding, vacaciones y evaluacion',
+    ],
+    icon: Users,
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
     name: 'Tareas Recurrentes: Restaurante Casual',
     slug: '/kit-tareas',
     price: '€14',
@@ -333,7 +352,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Users, name: 'Kit Gestión de Personal y Turnos', desc: 'Cuadrantes, control horario (obligatorio 2026), coste laboral, onboarding', tags: ['excel', 'plantillas', 'gestion'], phase: 'Abril 2026' },
   { icon: BarChart3, name: 'Kit Plan Financiero para Restaurantes', desc: 'P&L previsional 3 años, punto de equilibrio, cash flow, escenarios', tags: ['excel', 'plantillas', 'costes', 'gestion'], phase: 'Abril 2026' },
   { icon: Truck, name: 'Kit Control de Inventario y Compras', desc: 'Stock in/out, alertas reposición, comparador proveedores, tracker mermas', tags: ['excel', 'plantillas', 'costes'], phase: 'Mayo 2026' },
   { icon: Building, name: 'Cómo Montar una Dark Kitchen', desc: 'Guía paso a paso: concepto, local, licencias, equipamiento, lanzamiento', tags: ['pdf', 'guias'], phase: 'Mayo 2026' },
