@@ -85,9 +85,9 @@ const products = [
   {
     name: 'Kit Plan Financiero para Restaurantes',
     slug: '/kit-plan-financiero',
-    price: '€19',
-    originalPrice: '€69',
-    discount: '-72%',
+    price: '€39',
+    originalPrice: '€190',
+    discount: '-79%',
     description: '10 plantillas Excel con fórmulas encadenadas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, CAPEX, P&L mensual, ratios financieros e informe de viabilidad para bancos.',
     features: [
       'Plan previsional a 3 y 5 años',

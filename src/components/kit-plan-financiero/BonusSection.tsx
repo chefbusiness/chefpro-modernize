@@ -54,9 +54,9 @@ export default function BonusSection() {
         <FadeIn>
           <div className="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
             <p className="text-gray-400 mb-2">Valor total del pack completo</p>
-            <p className="text-3xl text-gray-500 line-through mb-1">69 EUR</p>
-            <p className="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">19 EUR</p>
-            <p className="text-[#FFD700] font-bold text-lg">Ahorra 50 EUR HOY</p>
+            <p className="text-3xl text-gray-500 line-through mb-1">190 EUR</p>
+            <p className="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">39 EUR</p>
+            <p className="text-[#FFD700] font-bold text-lg">Ahorra 151 EUR HOY</p>
           </div>
         </FadeIn>
       </div>

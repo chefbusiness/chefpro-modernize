@@ -19,8 +19,8 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Un Consultor Cobra 2.000 EUR. Esto es 19 EUR',
-    desc: 'Las mismas herramientas que usan los consultores financieros para preparar planes de negocio, pero en Excel por un pago unico.',
+    title: 'Un Consultor Cobra 2.000 EUR. Esto es 39 EUR',
+    desc: 'Las mismas herramientas que usan los consultores financieros para preparar planes de negocio, pero en Excel por un pago único. Sin suscripción.',
   },
 ];
 

@@ -36,11 +36,11 @@ export default function CtaFinal() {
             ))}
           </div>
           <div className="flex items-center justify-center gap-4 mb-4">
-            <span className="text-xl text-gray-500 line-through">69 EUR</span>
-            <span className="text-4xl md:text-5xl font-extrabold text-[#FFD700]">19 EUR</span>
+            <span className="text-xl text-gray-500 line-through">190 EUR</span>
+            <span className="text-4xl md:text-5xl font-extrabold text-[#FFD700]">39 EUR</span>
           </div>
           <a href={stripeLink} className="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">
-            SI, QUIERO EL KIT FINANCIERO — 19 EUR
+            SI, QUIERO EL KIT FINANCIERO — 39 EUR
           </a>
           <PaymentBadges className="mt-5" />
         </div>
