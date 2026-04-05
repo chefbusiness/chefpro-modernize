@@ -10,7 +10,8 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
 const TEMPLATES = [
-  { key: 'guia-docx', icon: BookOpen, title: 'Guía Completa (DOCX Editable)', desc: '12 capítulos, +40 páginas. Editable y exportable a PDF.' },
+  { key: 'guia-pdf', icon: BookOpen, title: 'Guía Completa (PDF)', desc: '12 capítulos, +40 páginas. Diseño editorial profesional.' },
+  { key: 'guia-docx', icon: FileText, title: 'Guía Completa (DOCX Editable)', desc: 'Mismo contenido en formato editable. Personaliza y presenta.' },
   { key: 'checklist-legal', icon: ClipboardList, title: 'Checklist de Apertura Legal', desc: '35 trámites con estado, responsable y fecha límite.' },
   { key: 'checklist-equipamiento', icon: Wrench, title: 'Checklist de Equipamiento y Obra', desc: '40 ítems con presupuesto real vs estimado.' },
   { key: 'calculadora', icon: Calculator, title: 'Calculadora de Viabilidad Financiera', desc: 'Inversión, P&L mensual y punto de equilibrio.' },
@@ -52,7 +53,7 @@ export default function GuiaDarkKitchenDashboard() {
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">Guía DOCX + 3 Excel · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">Guía PDF + DOCX + 3 Excel · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

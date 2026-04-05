@@ -235,6 +235,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
   },
   'guia-dark-kitchen': {
+    'guia-pdf': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.pdf',
     'guia-docx': '/dl/guia-dark-kitchen/guia-como-montar-dark-kitchen.docx',
     'checklist-legal': '/dl/guia-dark-kitchen/checklist-apertura-legal.xlsx',
     'checklist-equipamiento': '/dl/guia-dark-kitchen/checklist-equipamiento-obra.xlsx',
