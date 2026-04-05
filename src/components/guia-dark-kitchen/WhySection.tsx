@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Un Consultor Cobra 3.000€. Esto es 14€',
+    title: 'Un Consultor Cobra 3.000€. Esto es 24€',
     desc: 'La misma información que reciben los clientes de consultoría, pero en formato guía por un pago único. Sin suscripción.',
   },
 ];

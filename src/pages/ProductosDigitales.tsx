@@ -48,9 +48,9 @@ const products = [
   {
     name: 'Cómo Montar una Dark Kitchen',
     slug: '/guia-dark-kitchen',
-    price: '€14',
-    originalPrice: '€49',
-    discount: '-71%',
+    price: '€24',
+    originalPrice: '€90',
+    discount: '-73%',
     description: 'Guía completa PDF + DOCX editable: 12 capítulos, requisitos legales, plan financiero, diseño de cocina, tecnología, marketing. 3 checklists Excel + calculadora de viabilidad.',
     features: [
       'PDF editorial + DOCX editable',

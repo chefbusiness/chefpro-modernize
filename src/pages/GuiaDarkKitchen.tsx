@@ -24,12 +24,12 @@ export default function GuiaDarkKitchen() {
     <>
       <Helmet>
         <title>Cómo Montar una Dark Kitchen en España — Guía Completa | AI Chef Pro</title>
-        <meta name="description" content="Guía completa para montar una dark kitchen en España: 12 capítulos, requisitos legales, plan financiero, diseño de cocina, tecnología, marketing y 3 checklists Excel. 14 EUR." />
+        <meta name="description" content="Guía completa para montar una dark kitchen en España: 12 capítulos, requisitos legales, plan financiero, diseño de cocina, tecnología, marketing y 3 checklists Excel. 24 EUR." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="como montar dark kitchen, abrir dark kitchen españa, ghost kitchen, cloud kitchen, cocina fantasma, dark kitchen madrid, dark kitchen barcelona, montar negocio delivery, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/guia-dark-kitchen" />
         <meta property="og:title" content="Cómo Montar una Dark Kitchen en España — Guía Completa" />
-        <meta property="og:description" content="Guía PDF + DOCX editable + 3 checklists Excel + calculadora de viabilidad. 14 EUR." />
+        <meta property="og:description" content="Guía PDF + DOCX editable + 3 checklists Excel + calculadora de viabilidad. 24 EUR." />
         <meta property="og:url" content="https://aichef.pro/guia-dark-kitchen" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -47,7 +47,7 @@ export default function GuiaDarkKitchen() {
             "@type": "Offer",
             "url": "https://aichef.pro/guia-dark-kitchen",
             "priceCurrency": "EUR",
-            "price": "14.00",
+            "price": "24.00",
             "priceValidUntil": "2026-12-31",
             "availability": "https://schema.org/InStock",
           },

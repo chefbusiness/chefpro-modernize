@@ -6,7 +6,7 @@ const bonuses = [
     icon: ClipboardList,
     label: 'BONUS 1',
     title: 'Checklist de Apertura Legal',
-    value: '14 EUR',
+    value: '24 EUR',
     desc: '35 trámites organizados por categoría: constitución, licencias municipales, sanidad, seguros, Hacienda, protección de datos y APPCC. Con estado, responsable y fecha límite.',
     image: '/lovable-uploads/ai-gallery/guia-dk-tablets.jpg',
   },
@@ -14,7 +14,7 @@ const bonuses = [
     icon: Wrench,
     label: 'BONUS 2',
     title: 'Checklist de Equipamiento y Obra',
-    value: '14 EUR',
+    value: '24 EUR',
     desc: '40 ítems con presupuesto real: obra civil, instalaciones, cocina caliente, cocina fría, almacenamiento, expedición y tecnología. Presupuesto vs real con % de desviación.',
     image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg',
   },
@@ -62,9 +62,9 @@ export default function BonusSection() {
         <FadeIn>
           <div className="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
             <p className="text-gray-400 mb-2">Valor total: guía + 3 bonus</p>
-            <p className="text-3xl text-gray-500 line-through mb-1">49 EUR</p>
-            <p className="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">14 EUR</p>
-            <p className="text-[#FFD700] font-bold text-lg">Ahorra 35 EUR HOY</p>
+            <p className="text-3xl text-gray-500 line-through mb-1">90 EUR</p>
+            <p className="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">24 EUR</p>
+            <p className="text-[#FFD700] font-bold text-lg">Ahorra 66 EUR HOY</p>
           </div>
         </FadeIn>
       </div>
