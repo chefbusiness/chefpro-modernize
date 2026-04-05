@@ -136,6 +136,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Control de Inventario y Compras</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'mega-pack-tareas': {
+    accessPath: '/mega-pack-tareas-access',
+    emailSubject: 'Tu acceso al Mega Pack Tareas Recurrentes — 13 Kits',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Mega Pack Tareas Recurrentes (13 Kits)</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 151 plantillas:',
+    emailCta: 'Acceder a mis 13 Kits',
+  },
   'kit-plan-financiero': {
     accessPath: '/kit-plan-financiero-access',
     emailSubject: 'Tu acceso al Kit Plan Financiero para Restaurantes',

@@ -95,6 +95,9 @@ import KitInventarioDashboard from "./pages/KitInventarioDashboard";
 import KitPlanFinanciero from "./pages/KitPlanFinanciero";
 import KitPlanFinancieroAccessGate from "./pages/KitPlanFinancieroAccessGate";
 import KitPlanFinancieroDashboard from "./pages/KitPlanFinancieroDashboard";
+import MegaPackTareas from "./pages/MegaPackTareas";
+import MegaPackTareasAccessGate from "./pages/MegaPackTareasAccessGate";
+import MegaPackTareasDashboard from "./pages/MegaPackTareasDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -484,6 +487,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-inventario-jwt" redirectTo="/kit-inventario">
                   <KitInventarioDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Mega Pack Tareas Recurrentes */}
+            <Route path="/mega-pack-tareas" element={<MegaPackTareas />} />
+            <Route path="/mega-pack-tareas-access" element={<MegaPackTareasAccessGate />} />
+            <Route
+              path="/mega-pack-tareas-library"
+              element={
+                <ProtectedRoute storageKey="mega-pack-tareas-jwt" redirectTo="/mega-pack-tareas">
+                  <MegaPackTareasDashboard />
                 </ProtectedRoute>
               }
             />

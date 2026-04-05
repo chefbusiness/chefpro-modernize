@@ -26,6 +26,26 @@ const ALL_TAGS = [
 // ── Live products ────────────────────────────────────────────
 const products = [
   {
+    name: 'Mega Pack Tareas Recurrentes — 13 Kits',
+    slug: '/mega-pack-tareas',
+    price: '€89',
+    originalPrice: '€180',
+    discount: '-50%',
+    description: 'Los 13 kits de tareas recurrentes en un solo pack: restaurante, cafetería, pizzería, bar, hotel, catering, heladería, chocolatería y más. 151 plantillas Excel.',
+    features: [
+      '13 kits completos de tareas recurrentes',
+      '151 plantillas Excel editables',
+      'Apertura/cierre negocio + caja incluidos',
+      'Ahorra más del 45% vs compra individual',
+    ],
+    icon: Package,
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: '🎁 Mega Pack',
+    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    tags: ['excel', 'plantillas', 'bundle'],
+    featured: true,
+  },
+  {
     name: 'Gastro Pro Prompts eBook',
     slug: '/pro-prompts-ebook',
     price: '€9',
@@ -551,7 +571,7 @@ export default function ProductosDigitales() {
                   <a
                     key={product.slug}
                     href={product.slug}
-                    className="group relative bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden hover:border-[#FFD700]/30 hover:bg-white/[0.05] transition-all duration-300 flex flex-col"
+                    className={`group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${(product as any).featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}`}
                   >
                     {/* Badge */}
                     <div className="absolute top-3 right-3 z-10">
