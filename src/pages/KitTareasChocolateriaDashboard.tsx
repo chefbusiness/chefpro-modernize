@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   CakeSlice, Beaker, ClipboardList, Users,
-  CalendarDays, Gift, FileEdit, Megaphone, Calendar,
+  CalendarDays, Gift, FileEdit, Megaphone, Calendar, Building2, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -18,6 +18,8 @@ const TEMPLATES = [
   { key: 'periodicas', icon: CalendarDays, title: 'Semanales y Mensuales', desc: 'Deep clean obrador, mantenimiento, inventario.' },
   { key: 'eventos', icon: Gift, title: 'Eventos y Temporada', desc: 'Navidad, San Valentín, Pascua, fechas clave.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco para crear las tuyas.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist completo para abrir y cerrar la chocolatería.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Diario', desc: 'Plantilla de briefing diario de chocolatería.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '15 fechas clave para chocolaterías.' },
 ];

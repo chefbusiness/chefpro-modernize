@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   ChefHat, Truck, ClipboardList, Users,
-  Tent, PartyPopper, FileEdit, Megaphone, Calendar,
+  Tent, PartyPopper, FileEdit, Megaphone, Calendar, Building2, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -18,6 +18,8 @@ const TEMPLATES = [
   { key: 'periodicas', icon: Tent, title: 'Montaje y Desmontaje', desc: 'Cocina temporal, sala, buffet, check pre-apertura, desmontaje.' },
   { key: 'eventos', icon: PartyPopper, title: 'Tipos de Evento', desc: 'Bodas, corporativos, cocktail/standing, outdoor.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco: por fase, zona y perfil.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist para abrir y cerrar la cocina central.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Pre-Evento', desc: 'Info evento, menú, alérgenos, equipo, VIPs, protocolo.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '20 fechas clave para catering con antelación recomendada.' },
 ];

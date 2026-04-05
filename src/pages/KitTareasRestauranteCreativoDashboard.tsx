@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   ChefHat, Beaker, FlaskConical, Users,
-  CalendarDays, Wine, Sparkles, Camera, FileEdit, Megaphone, Calendar,
+  CalendarDays, Wine, Sparkles, Camera, FileEdit, Megaphone, Calendar, Building2, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -20,6 +20,8 @@ const TEMPLATES = [
   { key: 'eventos', icon: Sparkles, title: 'Chef\'s Table y Eventos', desc: 'Cenas maridaje, showcookings, prensa, pop-ups.' },
   { key: 'fotografia', icon: Camera, title: 'Fotografia y Storytelling', desc: 'Sesion de fotos, contenido RRSS, documentacion de procesos.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco para crear tus propias listas.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist completo para abrir y cerrar el restaurante.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Diario', desc: 'Plantilla de briefing diario de servicio.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '15+ fechas clave para restaurantes creativos.' },
 ];

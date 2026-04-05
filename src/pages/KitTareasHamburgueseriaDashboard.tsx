@@ -4,7 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   DoorOpen, Flame, ClipboardList, Users,
   CalendarDays, PartyPopper, FileEdit, Megaphone, Calendar,
-  UtensilsCrossed,
+  UtensilsCrossed, Building2, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -20,6 +20,8 @@ const TEMPLATES = [
   { key: 'periodicas', icon: CalendarDays, title: 'Semanales y Mensuales', desc: 'Limpieza profunda, FIFO, mantenimiento plancha y freidora.' },
   { key: 'eventos', icon: PartyPopper, title: 'Eventos y Festivos', desc: 'Noche especial, festivos, picos de delivery.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco para crear las tuyas.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist completo para abrir y cerrar el local.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Servicio', desc: 'Plantilla de briefing pre-servicio.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '17 fechas clave de hostelería.' },
 ];

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   DoorOpen, Wine, ClipboardList, Users,
-  CalendarDays, PartyPopper, FileEdit, Megaphone, Calendar,
+  CalendarDays, PartyPopper, FileEdit, Megaphone, Calendar, Building2, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -18,6 +18,8 @@ const TEMPLATES = [
   { key: 'periodicas', icon: CalendarDays, title: 'Semanales y Mensuales', desc: 'Limpieza grifos, mantenimiento espresso, inventario.' },
   { key: 'eventos', icon: PartyPopper, title: 'Eventos y Festivos', desc: 'Nochevieja, Halloween, after-work, catas.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco para crear las tuyas.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist completo para abrir y cerrar el bar.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Servicio', desc: 'Plantilla de briefing diario del bar.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '17 fechas clave para bares.' },
 ];

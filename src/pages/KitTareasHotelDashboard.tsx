@@ -4,7 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   Sunrise, ConciergeBell, ClipboardList, UtensilsCrossed,
   PartyPopper, Megaphone, Calendar, Bed, Building2, Waves,
-  Sun, Wrench, BarChart3, Sparkles, Users,
+  Sun, Wrench, BarChart3, Sparkles, Users, Wallet,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -27,6 +27,8 @@ const TEMPLATES = [
   { key: 'mantenimiento', icon: Wrench, title: 'Mantenimiento', desc: 'Diario, semanal, mensual, HVAC, fontanería, electricidad.' },
   { key: 'administracion', icon: BarChart3, title: 'Administración', desc: 'Revenue, reservas, contabilidad, RRHH.' },
   { key: 'spa-wellness', icon: Sparkles, title: 'Spa / Wellness', desc: 'Apertura/cierre, cabinas, vestuarios.' },
+  { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Hotel', desc: 'Checklist completo para abrir y cerrar el establecimiento.' },
+  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Diario F&B', desc: 'Ocupación, VIPs, menú del día, equipo, incidencias.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '20 fechas clave F&B hotelero con antelación.' },
 ];
