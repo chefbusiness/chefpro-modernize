@@ -5,7 +5,7 @@ import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
-  ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck,
+  ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package,
   ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed,
 } from 'lucide-react';
 
@@ -81,6 +81,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion'],
+  },
+  {
+    name: 'Kit Control de Inventario y Compras',
+    slug: '/kit-inventario',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 plantillas Excel con formulas automaticas: inventario diario, fichas proveedores, pedidos de compra, recepcion mercancias, control mermas, FIFO, analisis costes y 2 bonus.',
+    features: [
+      'Par levels con alertas de reposicion',
+      'Comparativa precios entre proveedores',
+      'Control mermas con dashboard',
+      'FIFO y caducidades con semaforo',
+    ],
+    icon: Package,
+    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'inventario'],
   },
   {
     name: 'Tareas Recurrentes: Restaurante Casual',

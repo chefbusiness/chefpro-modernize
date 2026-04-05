@@ -129,6 +129,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit de Gestión de Personal y Turnos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de gestión de personal:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'kit-inventario': {
+    accessPath: '/kit-inventario-access',
+    emailSubject: 'Tu acceso al Kit Control de Inventario y Compras',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit Control de Inventario y Compras</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas de control de inventario:',
+    emailCta: 'Acceder a mis Plantillas',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────

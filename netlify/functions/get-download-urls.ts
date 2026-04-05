@@ -199,6 +199,17 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'bonus-briefing': '/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx',
     'bonus-calculadora': '/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx',
   },
+  'kit-inventario': {
+    'stock': '/dl/kit-inventario/01-inventario-stock-diario.xlsx',
+    'proveedores': '/dl/kit-inventario/02-fichas-proveedores.xlsx',
+    'pedidos': '/dl/kit-inventario/03-pedidos-compra.xlsx',
+    'recepcion': '/dl/kit-inventario/04-recepcion-mercancias.xlsx',
+    'mermas': '/dl/kit-inventario/05-control-mermas.xlsx',
+    'fifo': '/dl/kit-inventario/06-fifo-caducidades.xlsx',
+    'costes': '/dl/kit-inventario/07-analisis-costes-compras.xlsx',
+    'bonus-inventario-rapido': '/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx',
+    'bonus-calculadora': '/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx',
+  },
 };
 
 export const handler: Handler = async (event) => {

@@ -89,6 +89,9 @@ import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
+import KitInventario from "./pages/KitInventario";
+import KitInventarioAccessGate from "./pages/KitInventarioAccessGate";
+import KitInventarioDashboard from "./pages/KitInventarioDashboard";
 import ProtectedRoute from "./components/shared/ProtectedRoute";
 import './i18n/config';
 
@@ -466,6 +469,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-gestion-personal-jwt" redirectTo="/kit-gestion-personal">
                   <KitGestionPersonalDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Control de Inventario y Compras */}
+            <Route path="/kit-inventario" element={<KitInventario />} />
+            <Route path="/kit-inventario-access" element={<KitInventarioAccessGate />} />
+            <Route
+              path="/kit-inventario-library"
+              element={
+                <ProtectedRoute storageKey="kit-inventario-jwt" redirectTo="/kit-inventario">
+                  <KitInventarioDashboard />
                 </ProtectedRoute>
               }
             />
