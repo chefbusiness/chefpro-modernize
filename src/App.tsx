@@ -101,6 +101,9 @@ import GuiaDarkKitchenDashboard from "./pages/GuiaDarkKitchenDashboard";
 import GuiaRestauranteGastronomico from "./pages/GuiaRestauranteGastronomico";
 import GuiaRestauranteGastronomicoAccessGate from "./pages/GuiaRestauranteGastronomicoAccessGate";
 import GuiaRestauranteGastronomicoDashboard from "./pages/GuiaRestauranteGastronomicoDashboard";
+import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
+import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
+import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
 import MegaPackTareas from "./pages/MegaPackTareas";
 import MegaPackTareasAccessGate from "./pages/MegaPackTareasAccessGate";
 import MegaPackTareasDashboard from "./pages/MegaPackTareasDashboard";
@@ -517,6 +520,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-restaurante-gastronomico-jwt" redirectTo="/guia-restaurante-gastronomico">
                   <GuiaRestauranteGastronomicoDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Restaurante Casual */}
+            <Route path="/guia-restaurante-casual" element={<GuiaRestauranteCasual />} />
+            <Route path="/guia-restaurante-casual-access" element={<GuiaRestauranteCasualAccessGate />} />
+            <Route
+              path="/guia-restaurante-casual-library"
+              element={
+                <ProtectedRoute storageKey="guia-restaurante-casual-jwt" redirectTo="/guia-restaurante-casual">
+                  <GuiaRestauranteCasualDashboard />
                 </ProtectedRoute>
               }
             />

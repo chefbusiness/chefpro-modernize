@@ -150,6 +150,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso a la <strong>Guía Cómo Montar un Restaurante Gastronómico</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 20 plantillas y checklists Excel:',
     emailCta: 'Acceder a mi Guía',
   },
+  'guia-restaurante-casual': {
+    accessPath: '/guia-restaurante-casual-access',
+    emailSubject: 'Tu acceso a la Guía: Restaurante Casual 80 Plazas',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Guía Cómo Montar un Restaurante Casual</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 16 plantillas y checklists Excel:',
+    emailCta: 'Acceder a mi Guía',
+  },
   'mega-pack-tareas': {
     accessPath: '/mega-pack-tareas-access',
     emailSubject: 'Tu acceso al Mega Pack Tareas Recurrentes — 13 Kits',
