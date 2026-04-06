@@ -33,14 +33,22 @@ export default function GuiaRestauranteGastronomico() {
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
         <meta property="og:locale" content="es_ES" />
-        <meta property="og:image" content="https://aichef.pro/og-image.jpg" />
+        <meta property="og:image" content="https://aichef.pro/lovable-uploads/ai-gallery/guia-gastro-hero.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España" />
+        <meta name="twitter:description" content="Guía premium 80+ págs + 10 plantillas Excel + 8 checklists + business plan + manual de sala. 85 EUR." />
+        <meta name="twitter:image" content="https://aichef.pro/lovable-uploads/ai-gallery/guia-gastro-hero.jpg" />
 
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol)",
           "description": "Guía premium de 22 capítulos para montar un restaurante gastronómico: plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. Incluye 10 plantillas Excel, 8 checklists, business plan y manual de sala.",
-          "image": "https://aichef.pro/og-image.jpg",
+          "image": "https://aichef.pro/lovable-uploads/ai-gallery/guia-gastro-hero.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
             "@type": "Offer",
