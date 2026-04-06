@@ -104,6 +104,9 @@ import GuiaRestauranteGastronomicoDashboard from "./pages/GuiaRestauranteGastron
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
+import GuiaRestauranteMexicano from "./pages/GuiaRestauranteMexicano";
+import GuiaRestauranteMexicanoAccessGate from "./pages/GuiaRestauranteMexicanoAccessGate";
+import GuiaRestauranteMexicanoDashboard from "./pages/GuiaRestauranteMexicanoDashboard";
 import MegaPackTareas from "./pages/MegaPackTareas";
 import MegaPackTareasAccessGate from "./pages/MegaPackTareasAccessGate";
 import MegaPackTareasDashboard from "./pages/MegaPackTareasDashboard";
@@ -532,6 +535,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-restaurante-casual-jwt" redirectTo="/guia-restaurante-casual">
                   <GuiaRestauranteCasualDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Restaurante Mexicano */}
+            <Route path="/guia-restaurante-mexicano" element={<GuiaRestauranteMexicano />} />
+            <Route path="/guia-restaurante-mexicano-access" element={<GuiaRestauranteMexicanoAccessGate />} />
+            <Route
+              path="/guia-restaurante-mexicano-library"
+              element={
+                <ProtectedRoute storageKey="guia-restaurante-mexicano-jwt" redirectTo="/guia-restaurante-mexicano">
+                  <GuiaRestauranteMexicanoDashboard />
                 </ProtectedRoute>
               }
             />
