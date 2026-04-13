@@ -110,6 +110,9 @@ import GuiaRestauranteMexicanoDashboard from "./pages/GuiaRestauranteMexicanoDas
 import GuiaRestaurantePeruano from "./pages/GuiaRestaurantePeruano";
 import GuiaRestaurantePeruanoAccessGate from "./pages/GuiaRestaurantePeruanoAccessGate";
 import GuiaRestaurantePeruanoDashboard from "./pages/GuiaRestaurantePeruanoDashboard";
+import GuiaRestauranteJapones from "./pages/GuiaRestauranteJapones";
+import GuiaRestauranteJaponesAccessGate from "./pages/GuiaRestauranteJaponesAccessGate";
+import GuiaRestauranteJaponesDashboard from "./pages/GuiaRestauranteJaponesDashboard";
 import MegaPackTareas from "./pages/MegaPackTareas";
 import MegaPackTareasAccessGate from "./pages/MegaPackTareasAccessGate";
 import MegaPackTareasDashboard from "./pages/MegaPackTareasDashboard";
@@ -562,6 +565,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-restaurante-peruano-jwt" redirectTo="/guia-restaurante-peruano">
                   <GuiaRestaurantePeruanoDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Restaurante Japonés */}
+            <Route path="/guia-restaurante-japones" element={<GuiaRestauranteJapones />} />
+            <Route path="/guia-restaurante-japones-access" element={<GuiaRestauranteJaponesAccessGate />} />
+            <Route
+              path="/guia-restaurante-japones-library"
+              element={
+                <ProtectedRoute storageKey="guia-restaurante-japones-jwt" redirectTo="/guia-restaurante-japones">
+                  <GuiaRestauranteJaponesDashboard />
                 </ProtectedRoute>
               }
             />

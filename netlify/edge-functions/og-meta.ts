@@ -152,6 +152,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
     price: '65.00',
   },
+  '/guia-restaurante-japones': {
+    title: 'Cómo Montar un Restaurante Japonés 60 Plazas — Guía Completa España | AI Chef Pro',
+    description: 'Guía premium 60+ págs: 20 capítulos, sushi-ya, ramen-ya, izakaya, omakase, robatayaki, pescado sashimi-grade, sake y whisky japonés. 9 plantillas Excel + 6 checklists + business plan. 65 EUR.',
+    image: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
+    price: '65.00',
+  },
   '/productos-digitales': {
     title: 'Productos Digitales para Hostelería — Plantillas Excel, Guías y Checklists | AI Chef Pro',
     description: '21+ productos digitales para hostelería: plantillas Excel, guías, checklists, calculadoras. Desde 9 EUR.',

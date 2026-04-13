@@ -171,6 +171,13 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso a la <strong>Guía Cómo Montar un Restaurante Peruano</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 17 plantillas y checklists Excel:',
     emailCta: 'Acceder a mi Guía',
   },
+  'guia-restaurante-japones': {
+    accessPath: '/guia-restaurante-japones-access',
+    emailSubject: 'Tu acceso a la Guía: Restaurante Japonés 60 Plazas',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Guía Cómo Montar un Restaurante Japonés</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 17 plantillas y checklists Excel:',
+    emailCta: 'Acceder a mi Guía',
+  },
   'mega-pack-tareas': {
     accessPath: '/mega-pack-tareas-access',
     emailSubject: 'Tu acceso al Mega Pack Tareas Recurrentes — 13 Kits',
