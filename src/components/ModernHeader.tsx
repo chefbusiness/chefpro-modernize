@@ -520,6 +520,61 @@ export default function ModernHeader() {
                           </a>
                         </CollapsibleContent>
                       </Collapsible>
+                      <Collapsible>
+                        <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation group">
+                          <div className="flex items-center gap-3">
+                            <BookOpen className="h-5 w-5 text-muted-foreground" />
+                            {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[currentLanguage] || 'Casos de uso'}
+                          </div>
+                          <ChevronDown className="h-4 w-4 text-muted-foreground transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                        </CollapsibleTrigger>
+                        <CollapsibleContent className="pl-8 space-y-1 mt-1">
+                          <a
+                            href={({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' } as Record<string, string>)[currentLanguage] || '/usos'}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="flex items-center gap-3 px-3 py-2 text-sm font-semibold rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-primary"
+                          >
+                            {({ es: 'Ver hub completo →', en: 'View hub →', fr: 'Voir le hub →', de: 'Hub ansehen →', it: 'Vedi hub →', pt: 'Ver hub →', nl: 'Bekijk hub →' } as Record<string, string>)[currentLanguage] || 'Ver hub completo →'}
+                          </a>
+                          <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                            {({ es: 'Por rol', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' } as Record<string, string>)[currentLanguage] || 'Por rol'}
+                          </p>
+                          {[
+                            { es: { slug: 'propietario-restaurante', label: 'Propietario de restaurante' }, en: { slug: 'restaurant-owner', label: 'Restaurant owner' }, fr: { slug: 'proprietaire-restaurant', label: 'Propriétaire' }, de: { slug: 'restaurantbesitzer', label: 'Inhaber' }, it: { slug: 'proprietario-ristorante', label: 'Proprietario' }, pt: { slug: 'proprietario-restaurante', label: 'Proprietário' }, nl: { slug: 'restauranteigenaar', label: 'Eigenaar' } },
+                            { es: { slug: 'gerente-restaurante', label: 'Gerente / Manager' }, en: { slug: 'restaurant-manager', label: 'Manager' }, fr: { slug: 'gerant-restaurant', label: 'Gérant' }, de: { slug: 'restaurantleiter', label: 'Leiter' }, it: { slug: 'gestore-ristorante', label: 'Gestore' }, pt: { slug: 'gerente-restaurante', label: 'Gerente' }, nl: { slug: 'restaurantmanager', label: 'Manager' } },
+                            { es: { slug: 'chef-ejecutivo-corporativo', label: 'Chef ejecutivo' }, en: { slug: 'executive-corporate-chef', label: 'Executive chef' }, fr: { slug: 'chef-executif-corporatif', label: 'Chef exécutif' }, de: { slug: 'kuechenchef-corporate', label: 'Küchenchef' }, it: { slug: 'chef-esecutivo-corporativo', label: 'Chef esecutivo' }, pt: { slug: 'chef-executivo-corporativo', label: 'Chef executivo' }, nl: { slug: 'executive-chef-corporate', label: 'Executive chef' } },
+                            { es: { slug: 'chef-jefe-cocina', label: 'Chef de cocina' }, en: { slug: 'head-chef', label: 'Head chef' }, fr: { slug: 'chef-cuisinier', label: 'Chef cuisinier' }, de: { slug: 'kuechenchef', label: 'Küchenchef' }, it: { slug: 'capo-cuoco', label: 'Capo cuoco' }, pt: { slug: 'chefe-cozinha', label: 'Chefe de cozinha' }, nl: { slug: 'chef-kok', label: 'Chef-kok' } },
+                            { es: { slug: 'chef-catering', label: 'Chef de catering' }, en: { slug: 'catering-chef', label: 'Catering chef' }, fr: { slug: 'chef-traiteur', label: 'Chef traiteur' }, de: { slug: 'catering-chef', label: 'Catering Chef' }, it: { slug: 'chef-catering', label: 'Chef catering' }, pt: { slug: 'chef-catering', label: 'Chef catering' }, nl: { slug: 'cateringchef', label: 'Catering chef' } },
+                          ].map((item, i) => {
+                            const data = item[currentLanguage as keyof typeof item] || item.es;
+                            const prefixMap: Record<string, string> = { es: '/usos/rol', en: '/en/use-cases/role', fr: '/fr/cas-d-usage/role', de: '/de/anwendungsfaelle/rolle', it: '/it/casi-uso/ruolo', pt: '/pt/casos-uso/funcao', nl: '/nl/use-cases/rol' };
+                            return (
+                              <a key={`r${i}`} href={`${prefixMap[currentLanguage] || '/usos/rol'}/${data.slug}`} onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">
+                                {data.label}
+                              </a>
+                            );
+                          })}
+                          <p className="px-3 pt-3 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                            {({ es: 'Por concepto', en: 'By concept', fr: 'Par concept', de: 'Nach Konzept', it: 'Per concetto', pt: 'Por conceito', nl: 'Per concept' } as Record<string, string>)[currentLanguage] || 'Por concepto'}
+                          </p>
+                          {[
+                            { es: { slug: 'restaurante-casual', label: 'Restaurante casual' }, en: { slug: 'casual-restaurant', label: 'Casual restaurant' }, fr: { slug: 'restaurant-decontracte', label: 'Restaurant décontracté' }, de: { slug: 'casual-restaurant', label: 'Casual' }, it: { slug: 'ristorante-casual', label: 'Casual' }, pt: { slug: 'restaurante-casual', label: 'Casual' }, nl: { slug: 'casual-restaurant', label: 'Casual' } },
+                            { es: { slug: 'pizzeria', label: 'Pizzería' }, en: { slug: 'pizzeria', label: 'Pizzeria' }, fr: { slug: 'pizzeria', label: 'Pizzeria' }, de: { slug: 'pizzeria', label: 'Pizzeria' }, it: { slug: 'pizzeria', label: 'Pizzeria' }, pt: { slug: 'pizzaria', label: 'Pizzaria' }, nl: { slug: 'pizzeria', label: 'Pizzeria' } },
+                            { es: { slug: 'dark-kitchen', label: 'Dark kitchen' }, en: { slug: 'dark-kitchen', label: 'Dark kitchen' }, fr: { slug: 'dark-kitchen', label: 'Dark kitchen' }, de: { slug: 'dark-kitchen', label: 'Dark kitchen' }, it: { slug: 'dark-kitchen', label: 'Dark kitchen' }, pt: { slug: 'dark-kitchen', label: 'Dark kitchen' }, nl: { slug: 'dark-kitchen', label: 'Dark kitchen' } },
+                            { es: { slug: 'catering-eventos', label: 'Catering / Eventos' }, en: { slug: 'catering-events', label: 'Catering / Events' }, fr: { slug: 'traiteur-evenements', label: 'Traiteur' }, de: { slug: 'catering-events', label: 'Catering' }, it: { slug: 'catering-eventi', label: 'Catering' }, pt: { slug: 'catering-eventos', label: 'Catering' }, nl: { slug: 'catering-evenementen', label: 'Catering' } },
+                            { es: { slug: 'hotel-completo-fb', label: 'Hotel (F&B)' }, en: { slug: 'hotel-fb-complete', label: 'Hotel F&B' }, fr: { slug: 'hotel-restauration-complete', label: 'Hôtel F&B' }, de: { slug: 'hotel-fb-komplett', label: 'Hotel F&B' }, it: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, pt: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, nl: { slug: 'hotel-fb-compleet', label: 'Hotel F&B' } },
+                            { es: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico (Michelin)' }, en: { slug: 'fine-dining-michelin', label: 'Fine dining' }, fr: { slug: 'restaurant-gastronomique-etoile', label: 'Gastronomique' }, de: { slug: 'gourmet-restaurant-michelin', label: 'Gourmet' }, it: { slug: 'ristorante-gastronomico-stellato', label: 'Stellato' }, pt: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico' }, nl: { slug: 'gastronomisch-restaurant-michelin', label: 'Gastronomisch' } },
+                          ].map((item, i) => {
+                            const data = item[currentLanguage as keyof typeof item] || item.es;
+                            const prefixMap: Record<string, string> = { es: '/usos/concepto', en: '/en/use-cases/concept', fr: '/fr/cas-d-usage/concept', de: '/de/anwendungsfaelle/konzept', it: '/it/casi-uso/concetto', pt: '/pt/casos-uso/conceito', nl: '/nl/use-cases/concept' };
+                            return (
+                              <a key={`c${i}`} href={`${prefixMap[currentLanguage] || '/usos/concepto'}/${data.slug}`} onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">
+                                {data.label}
+                              </a>
+                            );
+                          })}
+                        </CollapsibleContent>
+                      </Collapsible>
                       <a
                         href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                         onClick={() => setMobileMenuOpen(false)}

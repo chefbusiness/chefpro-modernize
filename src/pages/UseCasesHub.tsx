@@ -80,7 +80,7 @@ export default function UseCasesHub() {
               <HeroSocialProof />
               <Badge className="mb-6 text-sm px-4 py-2">Casos de uso</Badge>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
-                IA para cada rol y cada concepto de hostelería
+                IA para Cada Rol y Cada Concepto de Hostelería
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-balance">
                 Descubre cómo AI Chef Pro se adapta a tu perfil profesional y a tu concepto de negocio. Plantillas, agentes y guías diseñadas para tu día a día.
@@ -101,30 +101,32 @@ export default function UseCasesHub() {
         {/* Tabs */}
         <section className="py-12 border-b">
           <div className="container mx-auto px-4">
-            <div className="flex justify-center gap-3 mb-2">
+            <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 mb-3 max-w-2xl mx-auto">
               <Button
                 variant={activeTab === 'role' ? 'default' : 'outline'}
                 size="lg"
                 onClick={() => setActiveTab('role')}
-                className={activeTab === 'role' ? 'btn-gold' : ''}
+                className={`w-full sm:w-auto ${activeTab === 'role' ? 'btn-gold' : ''}`}
               >
-                <Briefcase className="mr-2 h-4 w-4" /> Por rol profesional
+                <Briefcase className="mr-2 h-4 w-4 flex-shrink-0" />
+                <span className="truncate">Por Rol Profesional</span>
                 <Badge variant="secondary" className="ml-2">{roles.length}</Badge>
               </Button>
               <Button
                 variant={activeTab === 'concept' ? 'default' : 'outline'}
                 size="lg"
                 onClick={() => setActiveTab('concept')}
-                className={activeTab === 'concept' ? 'btn-gold' : ''}
+                className={`w-full sm:w-auto ${activeTab === 'concept' ? 'btn-gold' : ''}`}
               >
-                <Building2 className="mr-2 h-4 w-4" /> Por concepto de negocio
+                <Building2 className="mr-2 h-4 w-4 flex-shrink-0" />
+                <span className="truncate">Por Concepto de Negocio</span>
                 <Badge variant="secondary" className="ml-2">{concepts.length}</Badge>
               </Button>
             </div>
-            <p className="text-center text-sm text-muted-foreground">
+            <p className="text-center text-sm text-muted-foreground px-4">
               {activeTab === 'role'
-                ? 'Si quieres saber cómo usar AI Chef Pro según tu rol en el equipo o en el negocio'
-                : 'Si quieres ver cómo encaja AI Chef Pro en tu tipo concreto de negocio gastronómico'}
+                ? 'Descubre cómo usar AI Chef Pro según tu rol profesional en el equipo o en el negocio.'
+                : 'Descubre cómo encaja AI Chef Pro en tu tipo concreto de negocio gastronómico.'}
             </p>
           </div>
         </section>
@@ -166,7 +168,7 @@ export default function UseCasesHub() {
           <div className="container mx-auto px-4 text-center">
             <Sparkles className="h-10 w-10 text-primary mx-auto mb-4" />
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
-              ¿No ves tu caso? AI Chef Pro se adapta
+              ¿No Ves Tu Caso? AI Chef Pro Se Adapta
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Empieza gratis y descubre cómo encaja en tu día a día. Sin tarjeta, 5 usos al mes para probar todas las herramientas.

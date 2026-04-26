@@ -117,8 +117,11 @@ function appendToSitemap() {
   const sitemapPath = path.join(process.cwd(), 'public', 'sitemap.xml');
   let content = fs.readFileSync(sitemapPath, 'utf8');
 
-  // Quitar URLs ya existentes de use cases (re-ejecución idempotente)
-  content = content.replace(/\n\s*<url>[\s\S]*?<loc>[^<]*\/(usos|use-cases|cas-d-usage|anwendungsfaelle|casi-uso|casos-uso)[^<]*<\/loc>[\s\S]*?<\/url>/g, '');
+  // Quitar URLs ya existentes de use cases (re-ejecución idempotente).
+  // Buscamos solo bloques cuyo <loc> contiene los path exactos del hub o de los
+  // segmentos rol/concepto en cualquier idioma — sin tocar otras URLs base.
+  const useCasePathRegex = /\n  <url>\s*<loc>https:\/\/aichef\.pro(?:\/(?:en|fr|de|it|pt|nl))?\/(?:usos|use-cases|cas-d-usage|anwendungsfaelle|casi-uso|casos-uso)(?:\/(?:rol|role|rolle|ruolo|funcao|concepto|concept|konzept|concetto|conceito)\/[^<]+)?<\/loc>[\s\S]*?<\/url>/g;
+  content = content.replace(useCasePathRegex, '');
 
   const newUrls = generateUseCasesUrls();
   content = content.replace('</urlset>', `\n${newUrls}\n</urlset>`);

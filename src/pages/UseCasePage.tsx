@@ -385,7 +385,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12 max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-4">El antes y el después</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">El Antes y el Después</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="border-2 border-red-200 shadow-md">
@@ -507,7 +507,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-2xl font-bold text-foreground mb-2">
-                  {type === 'role' ? 'También útil para' : 'Otros conceptos similares'}
+                  {type === 'role' ? 'También Útil Para' : 'Otros Conceptos Similares'}
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
