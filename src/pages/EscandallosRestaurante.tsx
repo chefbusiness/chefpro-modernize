@@ -12,8 +12,6 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
-const APP_URL = 'https://app.aichef.pro';
-
 const TOOL_CARDS = [
   { icon: <Calculator className="h-7 w-7 text-rose-600" />, bg: 'bg-rose-50', border: 'border-rose-200' },
   { icon: <TrendingDown className="h-7 w-7 text-red-600" />, bg: 'bg-red-50', border: 'border-red-200' },
@@ -44,7 +42,8 @@ const SITE_URL = 'https://aichef.pro';
 
 export default function EscandallosRestaurante() {
   const { t } = useTranslation();
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, getAppUrl } = useLanguage();
+  const APP_URL = getAppUrl(currentLanguage);
 
   const { formatted: userCount } = useLiveUserCount(currentLanguage);
 

@@ -14,7 +14,7 @@ interface GalleryImage {
 }
 
 const AIImageGallery = () => {
-  const { t, currentLanguage } = useLanguage();
+  const { t, currentLanguage, getAppUrl } = useLanguage();
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 });
 
@@ -86,10 +86,7 @@ const AIImageGallery = () => {
 
   const currentImage = images[selectedIndex];
 
-  // URL dinámica según idioma: español → app.aichef.pro, resto → enapp.aichef.pro
-  const imageGenUrl = currentLanguage === 'es' 
-    ? 'https://app.aichef.pro' 
-    : 'https://enapp.aichef.pro';
+  const imageGenUrl = getAppUrl(currentLanguage);
 
   return (
     <section className="relative py-24 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">

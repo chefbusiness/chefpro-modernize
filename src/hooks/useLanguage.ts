@@ -198,6 +198,7 @@ export const useLanguage = () => {
     const targetLang = language || i18n.language as Language;
     if (targetLang === 'en') return 'https://enapp.aichef.pro';
     if (targetLang === 'it') return 'https://itapp.aichef.pro';
+    if (targetLang === 'fr') return 'https://frapp.aichef.pro';
     return 'https://app.aichef.pro';
   };
 

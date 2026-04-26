@@ -15,7 +15,6 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import OtherFreeTools from '@/components/OtherFreeTools';
 import { useLanguage } from '@/hooks/useLanguage';
 
-const APP_URL = 'https://app.aichef.pro';
 const SITE_URL = 'https://aichef.pro';
 
 const LANG_SLUGS: Record<string, string> = {

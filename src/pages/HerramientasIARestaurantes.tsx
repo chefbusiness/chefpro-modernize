@@ -11,8 +11,6 @@ import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 
-const APP_URL = 'https://app.aichef.pro';
-
 const TOOL_CARDS = [
   { icon: <BookOpen className="h-7 w-7 text-amber-600" />, bg: 'bg-amber-50', border: 'border-amber-200' },
   { icon: <BarChart3 className="h-7 w-7 text-blue-600" />, bg: 'bg-blue-50', border: 'border-blue-200' },
@@ -44,7 +42,8 @@ const SITE_URL = 'https://aichef.pro';
 
 export default function HerramientasIARestaurantes() {
   const { t } = useTranslation();
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, getAppUrl } = useLanguage();
+  const APP_URL = getAppUrl(currentLanguage);
 
   const k = (key: string) => t(`landingRestaurantes.${key}`, { returnObjects: true });
   const s = (key: string) => t(`landingRestaurantes.${key}`) as string;

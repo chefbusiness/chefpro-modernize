@@ -12,8 +12,6 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
-const APP_URL = 'https://app.aichef.pro';
-
 const TOOL_CARDS = [
   { icon: <Share2 className="h-7 w-7 text-violet-600" />, bg: 'bg-violet-50', border: 'border-violet-200' },
   { icon: <Star className="h-7 w-7 text-amber-600" />, bg: 'bg-amber-50', border: 'border-amber-200' },
@@ -44,7 +42,8 @@ const SITE_URL = 'https://aichef.pro';
 
 export default function MarketingRestaurante() {
   const { t } = useTranslation();
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, getAppUrl } = useLanguage();
+  const APP_URL = getAppUrl(currentLanguage);
 
   const { formatted: userCount } = useLiveUserCount(currentLanguage);
 

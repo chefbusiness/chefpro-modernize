@@ -12,8 +12,6 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
-const APP_URL = 'https://app.aichef.pro';
-
 const TOOL_CARDS = [
   { icon: <Sparkles className="h-7 w-7 text-amber-600" />, bg: 'bg-amber-50', border: 'border-amber-200' },
   { icon: <Globe className="h-7 w-7 text-orange-600" />, bg: 'bg-orange-50', border: 'border-orange-200' },
@@ -44,7 +42,8 @@ const SITE_URL = 'https://aichef.pro';
 
 export default function RecetasIARestaurantes() {
   const { t } = useTranslation();
-  const { currentLanguage } = useLanguage();
+  const { currentLanguage, getAppUrl } = useLanguage();
+  const APP_URL = getAppUrl(currentLanguage);
 
   const { formatted: userCount } = useLiveUserCount(currentLanguage);
 
