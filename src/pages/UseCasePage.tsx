@@ -147,6 +147,30 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           </div>
         </section>
 
+        {/* Gallery — opcional, mini galería de 6 imágenes de referencia */}
+        {content.galleryImages && content.galleryImages.length > 0 && (
+          <section className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-10 max-w-3xl mx-auto">
+                {content.galleryTitle && <h2 className="text-3xl font-bold text-foreground mb-3">{content.galleryTitle}</h2>}
+                {content.gallerySubtitle && <p className="text-muted-foreground">{content.gallerySubtitle}</p>}
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                {content.galleryImages.map((src, i) => (
+                  <div key={i} className="relative aspect-[16/10] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow group">
+                    <img
+                      src={src}
+                      alt={`${content.h1} — imagen ${i + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading={i < 3 ? 'eager' : 'lazy'}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Personalization (¿Quién Soy?) — opcional */}
         {content.personalizationTitle && content.personalizationBody && (
           <section className={`py-16 bg-gradient-to-br ${theme.gradient} border-b`}>

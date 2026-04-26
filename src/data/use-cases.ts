@@ -77,6 +77,9 @@ export interface UseCaseContent {
   metrics?: UseCaseMetric[];
   beforeAfter?: UseCaseBeforeAfter;
   appUrlPath?: string; // ej. "/chef-ejecutivo-pro" para CTA específico
+  galleryImages?: string[]; // 6 imágenes /lovable-uploads/ai-gallery/use-case-*.jpg
+  galleryTitle?: string;
+  gallerySubtitle?: string;
 }
 
 export interface UseCase {
@@ -407,6 +410,16 @@ export const USE_CASES: UseCase[] = [
         ],
       },
       appUrlPath: '/agents/chef-ejecutivo-pro',
+      galleryTitle: 'El día a día de un chef ejecutivo, en imágenes',
+      gallerySubtitle: 'Lo que vas a poder gestionar con AI Chef Pro: brigada, fichas técnicas, creatividad, escandallos y comunicación interna.',
+      galleryImages: [
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-hero.jpg',
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-recipes.jpg',
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-brigade.jpg',
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-creativity.jpg',
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-tasting.jpg',
+        '/lovable-uploads/ai-gallery/use-case-chef-ejecutivo-meeting.jpg',
+      ],
     }),
   },
   {
@@ -1042,6 +1055,16 @@ export const USE_CASES_CONCEPTS: UseCase[] = [
           'Listas de tareas Dark Kitchen específicas para coordinar producción multi-marca',
         ],
       },
+      galleryTitle: 'Cómo funciona una dark kitchen moderna',
+      gallerySubtitle: 'Producción multi-marca, packaging branded por marca virtual, pantallas con pedidos de Glovo, Uber Eats y JustEat, riders en pickup y todo lo que rodea a una operativa 100% delivery.',
+      galleryImages: [
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-hero.jpg',
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-cooking.jpg',
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-packaging.jpg',
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-orders.jpg',
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-pickup.jpg',
+        '/lovable-uploads/ai-gallery/use-case-dark-kitchen-app.jpg',
+      ],
     }),
   },
   {
