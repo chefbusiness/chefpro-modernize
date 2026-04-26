@@ -12,6 +12,7 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ALL_USE_CASES, getUseCasesByType, type UseCase, type UseCaseType, type LangCode } from '@/data/use-cases';
 import { getProductsByIds } from '@/data/products-catalog';
+import { LinkifyText } from '@/lib/linkify-use-case';
 import { ArrowRight, CheckCircle, Sparkles, MessageSquare, X, Check } from 'lucide-react';
 
 const SITE_URL = 'https://aichef.pro';
@@ -179,7 +180,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 {content.h1}
               </h1>
               <p className="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance">
-                {content.heroSubtitle}
+                <LinkifyText text={content.heroSubtitle} appUrl={APP_URL} />
               </p>
               <p className={`text-lg font-semibold ${theme.text} mb-10`}>
                 {content.heroTagline}
@@ -235,7 +236,9 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       <div>
                         <Badge className="mb-3 text-xs">Onboarding · ¿Quién Soy?</Badge>
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
-                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{content.personalizationBody}</p>
+                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                          <LinkifyText text={content.personalizationBody!} appUrl={APP_URL} />
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -297,10 +300,14 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       <div className={`w-14 h-14 ${theme.bg} rounded-xl flex items-center justify-center mb-4`}>
                         <Icon className={`h-7 w-7 ${theme.text}`} />
                       </div>
-                      <CardTitle className="text-xl">{feature.title}</CardTitle>
+                      <CardTitle className="text-xl">
+                        <LinkifyText text={feature.title} appUrl={APP_URL} />
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">{feature.description}</p>
+                      <p className="text-muted-foreground">
+                        <LinkifyText text={feature.description} appUrl={APP_URL} />
+                      </p>
                     </CardContent>
                   </Card>
                 );
@@ -319,15 +326,26 @@ export default function UseCasePage({ type }: UseCasePageProps) {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
                 {content.apps.map((app, i) => (
-                  <Card key={i} className={`border-l-4 ${theme.border} shadow-sm hover:shadow-md transition-shadow`} style={{ borderLeftColor: 'currentColor' }}>
-                    <CardContent className="pt-5 pb-5">
-                      <div className="flex items-start justify-between gap-3 mb-2">
-                        <h3 className="font-bold text-foreground text-base leading-tight">{app.name}</h3>
-                      </div>
-                      <Badge variant="secondary" className="text-xs mb-2">{app.category}</Badge>
-                      <p className="text-sm text-muted-foreground leading-snug">{app.description}</p>
-                    </CardContent>
-                  </Card>
+                  <a
+                    key={i}
+                    href={APP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block group"
+                  >
+                    <Card className={`h-full border-l-4 ${theme.border} shadow-sm hover:shadow-lg hover:border-primary transition-all`} style={{ borderLeftColor: 'currentColor' }}>
+                      <CardContent className="pt-5 pb-5">
+                        <div className="flex items-start justify-between gap-3 mb-2">
+                          <h3 className={`font-bold text-base leading-tight ${theme.text} group-hover:underline`}>{app.name}</h3>
+                          <ArrowRight className={`h-4 w-4 ${theme.text} flex-shrink-0 mt-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-transform`} />
+                        </div>
+                        <Badge variant="secondary" className="text-xs mb-2">{app.category}</Badge>
+                        <p className="text-sm text-muted-foreground leading-snug">
+                          <LinkifyText text={app.description} appUrl={APP_URL} />
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </a>
                 ))}
               </div>
               <div className="text-center mt-10">
@@ -352,7 +370,9 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                     <div className={`w-10 h-10 rounded-full ${theme.bg} flex items-center justify-center font-bold ${theme.text} flex-shrink-0`}>
                       {i + 1}
                     </div>
-                    <p className="text-foreground pt-1">{step}</p>
+                    <p className="text-foreground pt-1">
+                      <LinkifyText text={step} appUrl={APP_URL} />
+                    </p>
                   </CardContent>
                 </Card>
               ))}
@@ -379,7 +399,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       {content.beforeAfter.beforeItems.map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                           <X className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
+                          <span><LinkifyText text={item} appUrl={APP_URL} /></span>
                         </li>
                       ))}
                     </ul>
@@ -396,7 +416,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                       {content.beforeAfter.afterItems.map((item, i) => (
                         <li key={i} className="flex items-start gap-2 text-sm text-foreground">
                           <Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
+                          <span><LinkifyText text={item} appUrl={APP_URL} /></span>
                         </li>
                       ))}
                     </ul>
@@ -471,7 +491,9 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 <Card key={i} className="shadow-sm">
                   <CardContent className="pt-6">
                     <h3 className="font-bold text-lg text-foreground mb-2">{faq.q}</h3>
-                    <p className="text-muted-foreground">{faq.a}</p>
+                    <p className="text-muted-foreground">
+                      <LinkifyText text={faq.a} appUrl={APP_URL} />
+                    </p>
                   </CardContent>
                 </Card>
               ))}
