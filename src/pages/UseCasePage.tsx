@@ -12,7 +12,7 @@ import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ALL_USE_CASES, getUseCasesByType, type UseCase, type UseCaseType, type LangCode } from '@/data/use-cases';
 import { getProductsByIds } from '@/data/products-catalog';
-import { ArrowRight, CheckCircle, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles, MessageSquare, X, Check } from 'lucide-react';
 
 const SITE_URL = 'https://aichef.pro';
 
@@ -147,6 +147,46 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           </div>
         </section>
 
+        {/* Personalization (¿Quién Soy?) — opcional */}
+        {content.personalizationTitle && content.personalizationBody && (
+          <section className={`py-16 bg-gradient-to-br ${theme.gradient} border-b`}>
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <Card className={`border-2 ${theme.border} shadow-xl`}>
+                  <CardContent className="pt-10 pb-10 px-8 md:px-12">
+                    <div className="flex items-start gap-6">
+                      <div className={`hidden md:flex w-16 h-16 ${theme.bg} rounded-2xl items-center justify-center flex-shrink-0`}>
+                        <MessageSquare className={`h-8 w-8 ${theme.text}`} />
+                      </div>
+                      <div>
+                        <Badge className="mb-3 text-xs">Onboarding · ¿Quién Soy?</Badge>
+                        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
+                        <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{content.personalizationBody}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Métricas — opcional */}
+        {content.metrics && content.metrics.length > 0 && (
+          <section className="py-16 bg-gradient-to-r from-primary/90 to-primary">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+                {content.metrics.map((m, i) => (
+                  <div key={i}>
+                    <div className="text-4xl md:text-5xl font-bold text-white mb-2">{m.value}</div>
+                    <div className="text-sm text-primary-foreground/80">{m.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Pains */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -195,6 +235,36 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           </div>
         </section>
 
+        {/* Apps destacadas — opcional */}
+        {content.apps && content.apps.length > 0 && (
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-12 max-w-3xl mx-auto">
+                <h2 className="text-3xl font-bold text-foreground mb-4">{content.appsTitle || 'Apps especializadas que vas a usar'}</h2>
+                <p className="text-muted-foreground">Agentes IA reales del catálogo de AI Chef Pro, organizados por categoría oficial de la plataforma.</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                {content.apps.map((app, i) => (
+                  <Card key={i} className={`border-l-4 ${theme.border} shadow-sm hover:shadow-md transition-shadow`} style={{ borderLeftColor: 'currentColor' }}>
+                    <CardContent className="pt-5 pb-5">
+                      <div className="flex items-start justify-between gap-3 mb-2">
+                        <h3 className="font-bold text-foreground text-base leading-tight">{app.name}</h3>
+                      </div>
+                      <Badge variant="secondary" className="text-xs mb-2">{app.category}</Badge>
+                      <p className="text-sm text-muted-foreground leading-snug">{app.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="text-center mt-10">
+                <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
+                  Ver todas las apps en la plataforma <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Workflow */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -215,6 +285,53 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             </div>
           </div>
         </section>
+
+        {/* Antes vs Después — opcional */}
+        {content.beforeAfter && (
+          <section className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-12 max-w-3xl mx-auto">
+                <h2 className="text-3xl font-bold text-foreground mb-4">El antes y el después</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <Card className="border-2 border-red-200 shadow-md">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2 text-red-700">
+                      <X className="h-5 w-5" /> {content.beforeAfter.beforeTitle}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {content.beforeAfter.beforeItems.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <X className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 border-emerald-200 shadow-md">
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2 text-emerald-700">
+                      <Check className="h-5 w-5" /> {content.beforeAfter.afterTitle}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {content.beforeAfter.afterItems.map((item, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-foreground">
+                          <Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Productos recomendados */}
         <section className="py-20 bg-muted/30">

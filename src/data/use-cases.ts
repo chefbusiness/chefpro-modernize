@@ -25,6 +25,24 @@ export interface UseCaseFAQ {
   a: string;
 }
 
+export interface UseCaseAppHighlight {
+  name: string;
+  category: string;
+  description: string;
+}
+
+export interface UseCaseMetric {
+  value: string;
+  label: string;
+}
+
+export interface UseCaseBeforeAfter {
+  beforeTitle: string;
+  beforeItems: string[];
+  afterTitle: string;
+  afterItems: string[];
+}
+
 export interface UseCaseContent {
   h1: string;
   heroSubtitle: string;
@@ -51,6 +69,14 @@ export interface UseCaseContent {
     keywords: string;
     ogImage: string;
   };
+  // Secciones opcionales (solo en landings premium enriquecidas)
+  personalizationTitle?: string;
+  personalizationBody?: string;
+  appsTitle?: string;
+  apps?: UseCaseAppHighlight[];
+  metrics?: UseCaseMetric[];
+  beforeAfter?: UseCaseBeforeAfter;
+  appUrlPath?: string; // ej. "/chef-ejecutivo-pro" para CTA específico
 }
 
 export interface UseCase {
@@ -280,53 +306,107 @@ export const USE_CASES: UseCase[] = [
       nl: 'executive-chef-corporate',
     },
     content: makeStubContent({
-      h1: 'IA para chef ejecutivo y corporativo',
-      heroSubtitle: 'Crea recetas estandarizadas, escandallos precisos y manuales de cocina replicables en múltiples unidades con IA gastronómica.',
-      heroTagline: 'Tu equipo creativo y operativo, escalado',
-      badge: 'Para chefs ejecutivos',
-      painsTitle: 'Retos del chef ejecutivo / corporativo',
+      h1: 'IA para chef ejecutivo y chef corporativo',
+      heroSubtitle: 'Crea recetas estandarizadas, escandallos precisos y manuales replicables para 1, 5 o 25 cocinas. Una suite de agentes IA gastronómicos diseñada para el rol más exigente de la cocina.',
+      heroTagline: 'Tu equipo creativo y operativo, escalado a la velocidad de un chat',
+      badge: 'Para chefs ejecutivos y corporativos',
+      painsTitle: 'Lo que un chef ejecutivo no puede dejar de resolver',
       pains: [
-        'Estandarizar recetas en cocinas dispersas geográficamente',
-        'Calcular escandallos precisos para cada ficha técnica',
-        'Crear manuales de cocina y onboarding consistentes',
-        'Innovar en menú estacional sin perder rentabilidad',
+        'Estandarizar recetas en cocinas dispersas geográficamente sin que cada local "interprete" a su manera',
+        'Cerrar escandallos precisos para cada ficha técnica con producto de temporada que cambia de precio cada semana',
+        'Cambiar la carta cada 6-12 semanas sin que el equipo creativo se ahogue en papeleo',
+        'Mantener manuales de cocina y onboarding actualizados cuando hay rotación de equipo',
+        'Innovar en menú estacional manteniendo food cost objetivo y margen real',
+        'Reportar a dirección con KPIs claros: rentabilidad por plato, productividad, mermas',
       ],
       featuresTitle: 'Cómo AI Chef Pro ayuda a un chef ejecutivo',
       features: [
-        { icon: 'BookOpen', title: 'Fichas técnicas y recetas estándar', description: 'Genera y mantiene recetario corporativo con escandallo y procedimiento.' },
-        { icon: 'Calculator', title: 'Escandallos automatizados', description: 'Coste por ración, food cost %, margen y precio sugerido al instante.' },
-        { icon: 'Sparkles', title: 'Creatividad de menús con IA', description: 'Brainstorming de platos por estación, ingrediente o concepto.' },
-        { icon: 'ShieldCheck', title: 'APPCC y alérgenos', description: 'Detección de alérgenos, fichas de alérgenos por plato y carta.' },
-        { icon: 'GraduationCap', title: 'Onboarding y formación de equipos', description: 'Manuales replicables, vídeos guion, exámenes de validación.' },
-        { icon: 'Layers', title: 'Estandarización multi-local', description: 'Mismo plato, misma calidad, mismo coste en todas las cocinas.' },
+        { icon: 'ChefHat', title: 'Chef Ejecutivo Pro', description: 'Agente IA especializado en el rol: estandarización multi-local, fichas técnicas, manuales de cocina, decisiones de carta basadas en data.' },
+        { icon: 'Sparkles', title: 'Cocina Creativa + Food Pairing AI', description: 'Brainstorming de platos por estación, ingrediente o técnica. Combinaciones sorprendentes con base científica.' },
+        { icon: 'Calculator', title: 'Escandallos automatizados', description: 'Kit de Escandallos Pro: coste por ración, food cost %, margen y precio sugerido en minutos. Recalcula automáticamente al cambiar gramaje o coste.' },
+        { icon: 'BookOpen', title: 'Fichas técnicas profesionales', description: 'Receta, procedimiento, alérgenos, emplatado y storytelling en un solo documento. Listo para enviar a todas las cocinas.' },
+        { icon: 'Layers', title: 'Estandarización multi-local', description: 'Mismo plato, misma calidad, mismo coste en 1, 5 o 25 unidades. Manuales replicables y trazables.' },
+        { icon: 'Beaker', title: 'Fermentus Con AI+ y técnicas avanzadas', description: 'Koji, kombuchas, shoyus, garums, lactofermentos. I+D gastronómico con respaldo profesional.' },
+        { icon: 'ShieldCheck', title: 'ID Alérgenos y Mermas GenCal', description: 'Detección automática de alérgenos por plato. Datos precisos de mermas y rendimientos por ingrediente.' },
+        { icon: 'Search', title: 'Sonar Deep Research', description: 'Investigación gastronómica profunda: tendencias, técnicas emergentes, productores, productos de temporada.' },
+        { icon: 'Image', title: 'GastroIMG Gen+', description: 'Food photography generada con IA para fichas técnicas, comunicación interna y prensa.' },
       ],
-      workflowTitle: 'Un día como chef ejecutivo',
+      workflowTitle: 'Un día real de un chef ejecutivo con AI Chef Pro',
       workflow: [
-        'Mañana: brainstorming de 12 platos para el menú de otoño con el chat IA',
-        'Mediodía: escandallas los 12 y descartas los que no cuadran a food cost',
-        'Tarde: generas las fichas técnicas listas para imprimir y enviar a las cocinas',
-        'Tarde: actualizas el manual de procedimiento y se replica a 5 locales',
+        'Mañana, 09:00 — Cocina Creativa: brainstorming de 12 platos para el menú de otoño basado en producto de temporada local.',
+        'Mañana, 10:30 — Kit de Escandallos Pro: escandallas los 12 platos y descartas 4 que no cuadran a food cost objetivo (28%).',
+        'Mediodía, 12:00 — Food Pairing AI: trabajas el maridaje de los 8 finalistas y validas armonías inesperadas.',
+        'Tarde, 15:00 — ID Alérgenos: generas la ficha de alérgenos por plato. Lista para regulación y para sala.',
+        'Tarde, 16:30 — Chef Ejecutivo Pro: redactas la ficha técnica completa con procedimiento, gramajes, emplatado y storytelling.',
+        'Tarde, 18:00 — GastroIMG Gen+: generas las fotos de cada plato para el manual interno y prensa.',
+        'Tarde, 18:30 — Replicas el manual a las 5 cocinas del grupo. Lo que antes te llevaba 3 días, lo cierras en uno.',
       ],
-      productsTitle: 'Plantillas y kits recomendados para chefs ejecutivos',
-      productIds: ['kit-escandallos', 'pro-prompts-ebook', 'pack-appcc', 'kit-tareas', 'kit-plan-financiero', 'kit-inventario'],
-      testimonialQuote: 'Antes tardaba 3 días en cerrar una carta nueva entre brainstorming, escandallos y fichas técnicas. Ahora lo hago en una mañana con AI Chef Pro.',
+      productsTitle: 'Plantillas y kits descargables para chefs ejecutivos',
+      productIds: ['kit-escandallos', 'pack-appcc', 'pro-prompts-ebook', 'kit-plan-financiero', 'kit-inventario', 'kit-gestion-personal'],
+      testimonialQuote: 'Antes tardaba 3 días en cerrar una carta nueva entre brainstorming, escandallos, fichas técnicas y comunicación. Ahora lo hago en una mañana con AI Chef Pro. La diferencia no es solo de tiempo: es que el equipo recibe documentación profesional y replicable, no apuntes manuscritos.',
       testimonialAuthor: 'Diego Saavedra',
-      testimonialRole: 'Chef Ejecutivo, grupo de 5 restaurantes',
-      faqTitle: 'Preguntas frecuentes',
+      testimonialRole: 'Chef Ejecutivo, grupo de 5 restaurantes mediterráneos',
+      faqTitle: 'Preguntas frecuentes de chefs ejecutivos',
       faqs: [
-        { q: '¿La IA propone recetas realistas para cocina profesional?', a: 'Sí. El sistema está entrenado con conocimiento gastronómico profesional y entiende escandallo, técnica y rentabilidad, no es un chatbot generalista.' },
-        { q: '¿Puedo subir mis propias recetas?', a: 'Sí. Las plantillas Excel permiten cargar tu recetario existente y aplicar escandallo automatizado.' },
-        { q: '¿Sirve para cocinas con técnicas avanzadas o solo casual?', a: 'Sirve para todo el espectro: gastronómico, casual, catering, dark kitchen, hotel, etc.' },
-        { q: '¿Hay biblioteca de prompts específicos para chefs?', a: 'Sí. El Pro Prompts eBook incluye 200+ prompts probados para creatividad, escandallo, formación y operativa de cocina.' },
+        { q: '¿Los agentes IA de AI Chef Pro entienden cocina profesional o son chatbots generalistas?', a: 'Son agentes especializados. Cocina Creativa, Food Pairing AI, Fermentus Con AI+ y Chef Ejecutivo Pro están entrenados con conocimiento gastronómico profesional: técnicas, escandallo real, rentabilidad, gramajes, cortes. No son ChatGPT genérico — son herramientas diseñadas para alguien que ya sabe cocinar.' },
+        { q: '¿Puedo subir mi recetario existente?', a: 'Sí. El Kit de Escandallos Pro permite cargar tu recetario y aplicar escandallo automatizado en minutos. También puedes pedirle al agente Chef Ejecutivo Pro que genere fichas técnicas a partir de descripciones libres.' },
+        { q: '¿Sirve para cocina gastronómica avanzada o solo casual?', a: 'Para todo el espectro. Hay agentes específicos: Cocina Creativa para autor, Pastelería Creativa, Fermentus para vanguardia, VegChef para plant-based, además de los 25+ recetarios por país. Casos reales en Michelin/Repsol y en grupos casuales de 25 unidades.' },
+        { q: '¿Cómo se adapta el sistema a mi forma de trabajar?', a: 'Empieza con el agente "¿Quién Soy?" — un onboarding conversacional de 2 minutos donde le cuentas quién eres, dónde trabajas, tu tipo de cocina y escala. A partir de ese momento todos los demás agentes se adaptan a tu contexto: precios locales, normativa de tu país, cocina del territorio, escala de tu operación.' },
+        { q: '¿Hay algo específico para grupos multi-local?', a: 'Sí. El agente Chef Ejecutivo Pro está pensado para estandarización: misma ficha técnica, mismo escandallo, mismos manuales replicados a todas las unidades. Combinado con el Kit Plan Financiero puedes consolidar reporting de KPIs por unidad.' },
+        { q: '¿Hay biblioteca de prompts específicos para chefs?', a: 'Sí. El Pro Prompts eBook incluye 300+ prompts probados para creatividad, escandallo, fichas técnicas, formación, comunicación interna y operativa de cocina, organizados por situación.' },
+        { q: '¿Cuánto tiempo tarda en pagarse la suscripción?', a: 'La mayoría de chefs ejecutivos reporta retorno en la primera carta nueva: un cambio de menú típico les ocupaba 3-5 días, pasa a 1 día. Si haces 4-6 cambios de carta al año, son 12-24 días de tu tiempo recuperados.' },
       ],
-      ctaTitle: 'Crea, escandalla y replica recetas en minutos.',
-      ctaSubtitle: 'Empieza gratis con 5 usos al mes. Sin tarjeta.',
+      ctaTitle: 'Crea, escandalla y replica recetas a la velocidad de un chat.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para chef ejecutivo y corporativo | AI Chef Pro',
-        description: 'Estandariza recetas, calcula escandallos y crea manuales de cocina replicables en múltiples unidades con IA gastronómica profesional.',
-        keywords: 'IA chef ejecutivo, software chef corporativo, escandallos automáticos, fichas técnicas restaurante IA, recetas estandarizadas',
-        ogImage: '/og/use-cases/chef-ejecutivo.jpg',
+        description: 'Suite de agentes IA gastronómicos para chef ejecutivo: Chef Ejecutivo Pro, Cocina Creativa, Food Pairing AI, Fermentus, escandallos automáticos y manuales replicables multi-local.',
+        keywords: 'IA chef ejecutivo, software chef corporativo, escandallos automáticos, fichas técnicas restaurante IA, recetas estandarizadas, agente IA gastronómico, manuales de cocina IA, food pairing IA',
+        ogImage: 'https://aichef.pro/og/use-cases/chef-ejecutivo.jpg',
       },
+      personalizationTitle: 'Personalizado a ti desde el minuto uno',
+      personalizationBody: 'AI Chef Pro arranca con un onboarding conversacional de 2 minutos —el agente ¿Quién Soy?— donde le cuentas quién eres, dónde trabajas, qué tipo de cocina lideras y a qué escala. A partir de ese momento, cada agente —desde escandallos hasta creatividad— responde adaptado a tu contexto: tu cocina local, tu normativa, tus precios de mercado, el tamaño de tu brigada. No es un formulario. Es una conversación corta que le da sentido a todo lo que viene después.',
+      appsTitle: 'Las apps que vas a usar como chef ejecutivo',
+      apps: [
+        { name: 'Chef Ejecutivo Pro', category: 'Gastro Profile Pro', description: 'Agente principal: estandarización multi-local, fichas técnicas, decisiones de carta.' },
+        { name: 'Cocina Creativa', category: 'Creatividad Culinaria', description: 'Brainstorming y desarrollo de platos profesionales con técnica y escandallo en mente.' },
+        { name: 'Food Pairing AI', category: 'Creatividad Culinaria', description: 'Combinaciones de ingredientes y maridajes con base científica.' },
+        { name: 'Fermentus Con AI+', category: 'Creatividad Culinaria', description: 'Fermentación creativa: koji, kombucha, shoyu, miso, garum, lactofermentos.' },
+        { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Datos precisos de mermas y rendimientos por ingrediente. Esencial para escandallo realista.' },
+        { name: 'Calcula Pax', category: 'Herramientas y Utilities', description: 'Calculadora de porciones que escala recetas a cualquier número de comensales.' },
+        { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos potenciales por receta y plato.' },
+        { name: 'Pastelería Creativa', category: 'Creatividad Culinaria', description: 'Postres de restaurante creativos con técnica de pastelería profesional.' },
+        { name: 'Sosa Ingredients Agent', category: 'Proveedores Gastro', description: 'Asistente de selección y técnica con el catálogo profesional de Sosa.' },
+        { name: 'tSpoonLab Agent', category: 'Proveedores Gastro', description: 'Asistente del catálogo tSpoonLab para técnicas y aplicaciones avanzadas.' },
+        { name: 'Sonar Deep Research', category: 'Modelos IA + LLM', description: 'Investigación profunda: tendencias, productores, técnicas emergentes.' },
+        { name: 'GastroIMG Gen+', category: 'Gastro Conocimiento', description: 'Food photography generada con IA para fichas técnicas y prensa.' },
+        { name: 'Gastro Lexicum', category: 'Gastro Conocimiento', description: 'Tutor con definiciones de técnicas, procesos, aditivos y ciencia gastronómica.' },
+      ],
+      metrics: [
+        { value: '−70%', label: 'tiempo en cerrar carta nueva' },
+        { value: '×3', label: 'velocidad de fichas técnicas' },
+        { value: '+4 pp', label: 'margen por mejor escandallo' },
+        { value: '13+', label: 'agentes IA para tu rol' },
+      ],
+      beforeAfter: {
+        beforeTitle: 'Sin AI Chef Pro',
+        beforeItems: [
+          'Cierre de carta nueva: 3-5 días entre brainstorming, escandallos, fichas y comunicación',
+          'Recetario en hojas sueltas, Word desordenados y notas manuscritas',
+          'Cada local interpreta la receta a su manera; el resultado varía',
+          'Escandallo manual con calculadora; cambias un gramaje y reescribes todo',
+          'Manuales y onboarding desactualizados constantemente',
+        ],
+        afterTitle: 'Con AI Chef Pro',
+        afterItems: [
+          'Cierre de carta nueva: 1 día completo, todo documentado y replicable',
+          'Recetario centralizado con escandallo, alérgenos, técnica y storytelling',
+          'Mismo plato, misma calidad, mismo coste en 1, 5 o 25 cocinas',
+          'Escandallo automático que recalcula al instante con cualquier cambio',
+          'Manuales actualizados a un click; onboarding listo para nuevos chefs',
+        ],
+      },
+      appUrlPath: '/agents/chef-ejecutivo-pro',
     }),
   },
   {
@@ -859,52 +939,108 @@ export const USE_CASES_CONCEPTS: UseCase[] = [
       nl: 'dark-kitchen',
     },
     content: makeStubContent({
-      h1: 'IA para dark kitchen',
-      heroSubtitle: 'Escala marcas virtuales, controla food cost por canal y optimiza operativa 100% delivery con IA pensada para dark kitchen.',
-      heroTagline: 'Cocina sin sala, margen sin sorpresas',
-      badge: 'Dark kitchen',
-      painsTitle: 'Retos de una dark kitchen',
+      h1: 'IA para dark kitchen y cocinas virtuales',
+      heroSubtitle: 'Escala 1, 4 o 10 marcas virtuales en la misma cocina. Controla food cost por marca y por plataforma, optimiza ranking en apps de delivery y multiplica tickets sin contratar más sala.',
+      heroTagline: 'Cocina sin sala, margen con sistema',
+      badge: 'Dark kitchen / Ghost kitchen',
+      painsTitle: 'Lo que un operador de dark kitchen no puede dejar de resolver',
       pains: [
-        'Múltiples marcas en una misma cocina, escandallo por marca',
-        'Margen muy presionado por comisiones de plataformas',
-        'Producción 100% delivery, picos brutales en horas pico',
-        'Sin contacto con cliente final, marketing y branding clave',
+        'Múltiples marcas en una misma cocina, cada una con escandallo propio que cambia con el coste de los insumos',
+        'Margen presionado por comisiones de Glovo, Uber Eats, JustEat (entre 25% y 35% del ticket)',
+        'Picos brutales en delivery: 12:30-14:30 y 20:30-22:30, sin margen para errores operativos',
+        'Sin contacto físico con el cliente: la marca, las fotos y el copy de la app son todo lo que tienes',
+        'Ranking en plataformas que cambia constantemente: si bajas posiciones, los pedidos se desploman',
+        'Difícil saber qué marca y qué plato realmente está rindiendo cuando todo se mezcla',
       ],
-      featuresTitle: 'Cómo AI Chef Pro ayuda en dark kitchen',
+      featuresTitle: 'Cómo AI Chef Pro ayuda a una dark kitchen',
       features: [
-        { icon: 'Calculator', title: 'Escandallos multi-marca', description: 'Coste real por marca, plato y canal.' },
-        { icon: 'Layers', title: 'Plantillas multi-marca', description: 'Operativa para varias marcas en la misma cocina.' },
-        { icon: 'Truck', title: 'Gestión delivery por plataforma', description: 'Comisiones, tiempos, mermas, ranking en apps.' },
-        { icon: 'ShieldCheck', title: 'APPCC dark kitchen', description: 'Trazabilidad, temperatura, packaging.' },
-        { icon: 'Sparkles', title: 'Branding y captación', description: 'Fichas de plataforma, fotos, redes con IA.' },
-        { icon: 'BarChart3', title: 'KPIs por marca y canal', description: 'Margen, comisión, ticket medio por plataforma.' },
+        { icon: 'Layers', title: 'Escandallos multi-marca con Kit de Escandallos Pro', description: 'Coste real y margen por marca, por plato y por plataforma. Recalcula al instante cuando cambia un insumo.' },
+        { icon: 'Smartphone', title: 'Burger Pro AI+, Food Truck AI+ y Casual Restaurants AI+', description: 'Tres agentes especializados que cubren los conceptos virtuales más rentables en delivery.' },
+        { icon: 'Truck', title: 'Cálculo de margen real post-comisión', description: 'El plan financiero de AI Chef Pro descuenta comisiones de plataforma y te dice el margen verdadero por marca y por canal.' },
+        { icon: 'TrendingUp', title: 'MenuDish Local SEO + BlogPost SEO Gen+', description: 'Suite SEO para que tus marcas suban en Google local y atraigan tráfico orgánico además del de las apps.' },
+        { icon: 'Search', title: 'Keyword Discovery AI+', description: 'Investigación de palabras clave gastronómicas locales para nombrar marcas, platos y cartas que se posicionen.' },
+        { icon: 'Image', title: 'GastroIMG Gen+', description: 'Food photography generada con IA para fichas de plataforma. Las fotos buenas suben tu ranking y conversión en apps.' },
+        { icon: 'Sparkles', title: 'Cocina Creativa + Cocina Italiana, Mexicana, Japonesa…', description: 'Recetarios IA por país para crear marcas virtuales temáticas con base profesional, no recetas de Google.' },
+        { icon: 'ShieldCheck', title: 'APPCC + ID Alérgenos para delivery', description: 'Trazabilidad, temperatura y alérgenos pensados para producto que viaja en mochila o moto.' },
+        { icon: 'BarChart3', title: 'Dashboard multi-marca y multi-plataforma', description: 'KPIs por marca, ticket medio, comisión, ranking, productividad. Todo consolidado.' },
       ],
-      workflowTitle: 'Un día en una dark kitchen',
+      workflowTitle: 'Un día real en una dark kitchen con AI Chef Pro',
       workflow: [
-        'Apertura: revisión de pedidos pendientes y prep multi-marca',
-        'Servicio: producción coordinada para 3-4 marcas',
-        'Tarde: análisis de comisiones y ranking en apps',
-        'Cierre: APPCC, reporte por marca, optimización de fichas',
+        '08:30 — Revisas dashboard del día anterior: marca A en cabeza, marca C cayó 12% en ranking, hay que actuar.',
+        '09:00 — Keyword Discovery AI+: investigas qué buscan los usuarios de tu zona postal y detectas que falta una keyword en marca C.',
+        '09:30 — MenuDish Local SEO: actualizas las descripciones de los 6 platos top de marca C con la keyword nueva.',
+        '10:00 — Cocina Creativa: brainstorming de un nuevo plato estrella para marca A aprovechando un proveedor con buen precio.',
+        '10:30 — Kit de Escandallos Pro: escandallas el plato nuevo y validas margen post-comisión Glovo (29%) y Uber (25%).',
+        '11:00 — GastroIMG Gen+: generas la foto del plato nuevo y la subes a las plataformas.',
+        '12:30 — Servicio delivery, 4 marcas en marcha en la misma cocina con plantillas de tareas Dark Kitchen.',
+        '16:00 — APPCC firmado, mermas registradas por marca, prep de la cena.',
+        '23:30 — Cierre: reporte automático por marca al WhatsApp del propietario.',
       ],
-      productsTitle: 'Plantillas y kits recomendados',
-      productIds: ['kit-tareas-dark-kitchen', 'guia-dark-kitchen', 'kit-escandallos', 'pack-appcc', 'kit-inventario', 'kit-plan-financiero'],
-      testimonialQuote: 'Operamos 4 marcas virtuales en una cocina. Sin escandallos por marca y plataforma estábamos perdiendo margen sin saber dónde. AI Chef Pro nos lo resolvió.',
+      productsTitle: 'Plantillas, kits y guías descargables para dark kitchen',
+      productIds: ['guia-dark-kitchen', 'kit-tareas-dark-kitchen', 'kit-escandallos', 'pack-appcc', 'kit-plan-financiero', 'kit-inventario'],
+      testimonialQuote: 'Operamos 4 marcas virtuales en una cocina. Sin escandallos por marca y por plataforma estábamos perdiendo margen sin saber dónde. AI Chef Pro nos lo resolvió en una semana: detectamos que una marca tenía food cost al 41% en Glovo. La rediseñamos y subimos margen 7 puntos sin tocar precio.',
       testimonialAuthor: 'Iván Domínguez',
-      testimonialRole: 'Operador, dark kitchen multi-marca',
-      faqTitle: 'Preguntas frecuentes',
+      testimonialRole: 'Operador, dark kitchen 4 marcas virtuales',
+      faqTitle: 'Preguntas frecuentes de operadores de dark kitchen',
       faqs: [
-        { q: '¿Funciona para 1 marca o varias en la misma cocina?', a: 'Ambas. Pensado para multi-marca con escandallo independiente.' },
-        { q: '¿Cubre comisiones de plataformas (Glovo, Uber, JustEat)?', a: 'Sí. Cálculo de margen real después de comisión.' },
-        { q: '¿Hay guía para abrir una dark kitchen?', a: 'Sí. La Guía Cómo Montar una Dark Kitchen incluye todo el roadmap.' },
-        { q: '¿Sirve para escalar a varias ubicaciones?', a: 'Sí. Estandarización multi-local con dashboards consolidados.' },
+        { q: '¿Funciona para 1 marca o para varias en la misma cocina?', a: 'Ambas. Está pensado de raíz para multi-marca: escandallo independiente por marca, KPIs separados, listas de tareas que coordinan producción multi-marca en la misma partida.' },
+        { q: '¿Cubre las comisiones de las plataformas (Glovo, Uber Eats, JustEat, Just Eat)?', a: 'Sí. El cálculo de margen real descuenta automáticamente la comisión de cada plataforma, así sabes lo que realmente ganas por pedido en cada canal y puedes decidir mejor el pricing.' },
+        { q: '¿Hay una guía paso a paso para abrir una dark kitchen?', a: 'Sí, la Guía Cómo Montar una Dark Kitchen (€24): 12 capítulos con requisitos legales, plan financiero, diseño de cocina, tecnología, marketing, plataformas. 3 checklists Excel y calculadora incluidas.' },
+        { q: '¿Sirve para escalar a varias ubicaciones de dark kitchen?', a: 'Sí. La estandarización multi-local del Chef Ejecutivo Pro y los dashboards consolidados están pensados para grupos con varias unidades virtuales.' },
+        { q: '¿Cómo me ayuda con el ranking en las apps de delivery?', a: 'Tres palancas: GastroIMG Gen+ para fotos de mejor calidad (sube CTR), MenuDish Local SEO para descripciones que convierten, y Keyword Discovery AI+ para detectar qué buscan los usuarios de tu zona postal.' },
+        { q: '¿El sistema se adapta a mi país y mis plataformas?', a: 'Sí. Empiezas con el agente "¿Quién Soy?" en un onboarding de 2 minutos donde le cuentas dónde operas, qué plataformas usas, qué comisiones tienes negociadas. Todo el resto se adapta a ese contexto.' },
+        { q: '¿Y el SEO local? ¿Compensa para una dark kitchen?', a: 'Sí, mucho. Una dark kitchen vive 100% del descubrimiento online: si además del tráfico de apps captas búsquedas locales en Google ("hamburguesa delivery [tu barrio]"), bajas tu dependencia de comisiones y sumas margen directo. La suite SEO de AI Chef Pro está pensada exactamente para esto.' },
       ],
-      ctaTitle: 'Tu dark kitchen con margen controlado.',
-      ctaSubtitle: 'Empieza gratis. 5 usos al mes.',
+      ctaTitle: 'Tu dark kitchen, con margen real y datos por marca.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
-        title: 'IA para dark kitchen | AI Chef Pro',
-        description: 'Escandallos multi-marca, gestión de plataformas, APPCC y branding para dark kitchens con IA especializada.',
-        keywords: 'IA dark kitchen, software dark kitchen, escandallos multi-marca, gestión delivery IA',
-        ogImage: '/og/use-cases/dark-kitchen.jpg',
+        title: 'IA para dark kitchen y cocinas virtuales | AI Chef Pro',
+        description: 'Suite IA para dark kitchen: escandallos multi-marca, cálculo de margen post-comisión, ranking en apps de delivery, SEO local y APPCC para delivery.',
+        keywords: 'IA dark kitchen, software dark kitchen, cocina virtual IA, escandallos multi-marca, gestión delivery IA, ranking glovo uber eats, ghost kitchen software',
+        ogImage: 'https://aichef.pro/og/use-cases/dark-kitchen.jpg',
+      },
+      personalizationTitle: 'Personalizado a tus marcas, tu zona y tus plataformas',
+      personalizationBody: 'AI Chef Pro arranca con el agente ¿Quién Soy? — un onboarding conversacional de 2 minutos. Le cuentas qué marcas operas, en qué ciudad y zona postal, qué plataformas usas (Glovo, Uber Eats, JustEat) y qué comisiones tienes. A partir de ese momento, los escandallos se calculan con tu comisión real, las recomendaciones de SEO local apuntan a tu barrio y los KPIs se consolidan por marca y por canal exactamente como tú los necesitas. No es un formulario: es una conversación corta que vuelve cada agente verdaderamente tuyo.',
+      appsTitle: 'Las apps que vas a usar en tu dark kitchen',
+      apps: [
+        { name: 'Burger Pro AI+', category: 'Conceptos de Negocio', description: 'Especialista en hamburgueserías virtuales: gourmet, fast food, smash burger, plant-based.' },
+        { name: 'Food Truck AI+', category: 'Conceptos de Negocio', description: 'Conceptos móviles y virtuales de comida rápida con margen ajustado.' },
+        { name: 'Casual Restaurants AI+', category: 'Conceptos de Negocio', description: 'Bistrós, gastrobares, tapas, mediterráneo virtual: el espectro casual completo.' },
+        { name: 'Cocina Italiana, Mexicana, Japonesa, Tailandesa…', category: 'Recetarios por país', description: '25+ recetarios IA para crear marcas virtuales temáticas con base profesional.' },
+        { name: 'Mermas GenCal', category: 'Herramientas y Utilities', description: 'Datos precisos de mermas y rendimientos. Crítico para escandallo realista en delivery.' },
+        { name: 'ID Alérgenos', category: 'Herramientas y Utilities', description: 'Identificación automática de alérgenos por receta. Obligatorio para delivery legal.' },
+        { name: 'MenuDish Local SEO', category: 'Contenidos y RRSS', description: 'Descripciones SEO-optimizadas por plato para el blog y para las plataformas.' },
+        { name: 'BlogPost SEO Gen+', category: 'Contenidos y RRSS', description: 'Posts de blog que captan tráfico orgánico local hacia tus marcas virtuales.' },
+        { name: 'Keyword Discovery AI+', category: 'Contenidos y RRSS', description: 'Investigación de palabras clave gastronómicas por zona postal.' },
+        { name: 'GastroIMG Gen+', category: 'Gastro Conocimiento', description: 'Food photography IA para fichas de plataforma. Mejor foto = mejor ranking.' },
+        { name: 'Gerente de Restaurante Pro', category: 'Gastro Profile Pro', description: 'Asistente operativo para coordinar las marcas, equipos y proveedores.' },
+        { name: 'InstaFlow AI Pro + Pinterest Pins Gen', category: 'Contenidos y RRSS', description: 'Contenido viral para captar audiencia más allá de las plataformas de delivery.' },
+      ],
+      metrics: [
+        { value: '+7 pp', label: 'margen tras escandallar por marca' },
+        { value: '×4', label: 'marcas virtuales en una cocina' },
+        { value: '−35%', label: 'tiempo en gestión multi-marca' },
+        { value: '12+', label: 'agentes IA para dark kitchen' },
+      ],
+      beforeAfter: {
+        beforeTitle: 'Sin AI Chef Pro',
+        beforeItems: [
+          'Escandallo en Excel manual con margen "promedio" entre marcas',
+          'Comisiones de plataformas restadas a ojo, sin saber qué canal te conviene',
+          'Fotos de plataforma de calidad media, ranking errático',
+          'Descripciones genéricas que no captan SEO local',
+          'KPIs mezclados: imposible saber qué marca rinde realmente',
+          'Operativa en hojas sueltas, errores en horas pico',
+        ],
+        afterTitle: 'Con AI Chef Pro',
+        afterItems: [
+          'Escandallo independiente por marca y por plataforma, margen real al instante',
+          'Cálculo automático post-comisión por canal, decisiones de pricing con datos',
+          'Fotos profesionales con GastroIMG Gen+; ranking más estable',
+          'Descripciones y blog optimizados para SEO local de tu zona postal',
+          'Dashboard multi-marca con KPIs separados por marca y canal',
+          'Listas de tareas Dark Kitchen específicas para coordinar producción multi-marca',
+        ],
       },
     }),
   },
