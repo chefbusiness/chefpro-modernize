@@ -93,6 +93,54 @@ export default function UseCasePage({ type }: UseCasePageProps) {
     })),
   };
 
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: content.h1,
+    description: content.seo.description,
+    provider: {
+      '@type': 'Organization',
+      name: 'AI Chef Pro',
+      url: SITE_URL,
+      logo: `${SITE_URL}/og-image.jpg`,
+    },
+    areaServed: ['ES', 'EU', 'LATAM'],
+    serviceType: type === 'role' ? 'Software de IA para hostelería por rol profesional' : 'Software de IA para hostelería por concepto de negocio',
+    audience: {
+      '@type': 'Audience',
+      audienceType: content.badge,
+    },
+    url: canonicalUrl,
+    image: content.seo.ogImage,
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'EUR',
+      lowPrice: '0',
+      highPrice: '95',
+      offerCount: '4',
+      availability: 'https://schema.org/InStock',
+    },
+  };
+
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: content.seo.title,
+    description: content.seo.description,
+    url: canonicalUrl,
+    inLanguage: lang === 'es' ? 'es-ES' : lang,
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'AI Chef Pro',
+      url: SITE_URL,
+    },
+    primaryImageOfPage: {
+      '@type': 'ImageObject',
+      url: content.galleryImages?.[0] ? `${SITE_URL}${content.galleryImages[0]}` : content.seo.ogImage,
+    },
+    breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` },
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
@@ -111,6 +159,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
         <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/usos/${typeSegment}/${useCase.slug.es}`} />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(webPageSchema)}</script>
       </Helmet>
 
       <ModernHeader />
