@@ -41,6 +41,8 @@ import ProPromptsEbook from "./pages/ProPromptsEbook";
 import ProPromptsLibrary from "./pages/ProPromptsLibrary";
 import KitEscandallos from "./pages/KitEscandallos";
 import ProductosDigitales from "./pages/ProductosDigitales";
+import UseCasesHub from "./pages/UseCasesHub";
+import UseCasePage from "./pages/UseCasePage";
 import AccessGate from "./pages/AccessGate";
 import KitEscandallosAccessGate from "./pages/KitEscandallosAccessGate";
 import KitEscandallosDashboard from "./pages/KitEscandallosDashboard";
@@ -307,6 +309,29 @@ const App = () => (
 
             {/* Productos Digitales Hub */}
             <Route path="/productos-digitales" element={<ProductosDigitales />} />
+
+            {/* Use Cases Hub + spokes (multilingual) */}
+            <Route path="/usos" element={<UseCasesHub />} />
+            <Route path="/usos/rol/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/usos/concepto/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/en/use-cases" element={<UseCasesHub />} />
+            <Route path="/en/use-cases/role/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/en/use-cases/concept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/fr/cas-d-usage" element={<UseCasesHub />} />
+            <Route path="/fr/cas-d-usage/role/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/fr/cas-d-usage/concept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/de/anwendungsfaelle" element={<UseCasesHub />} />
+            <Route path="/de/anwendungsfaelle/rolle/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/de/anwendungsfaelle/konzept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/it/casi-uso" element={<UseCasesHub />} />
+            <Route path="/it/casi-uso/ruolo/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/it/casi-uso/concetto/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/pt/casos-uso" element={<UseCasesHub />} />
+            <Route path="/pt/casos-uso/funcao/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/pt/casos-uso/conceito/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/nl/use-cases" element={<UseCasesHub />} />
+            <Route path="/nl/use-cases/rol/:slug" element={<UseCasePage type="role" />} />
+            <Route path="/nl/use-cases/concept/:slug" element={<UseCasePage type="concept" />} />
 
             {/* Kit de Escandallos Pro */}
             <Route path="/kit-escandallos" element={<KitEscandallos />} />

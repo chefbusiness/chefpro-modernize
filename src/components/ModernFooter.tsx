@@ -359,6 +359,14 @@ export default function ModernFooter() {
               )}
               <li>
                 <a
+                  href={({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' } as Record<string, string>)[lang] || '/usos'}
+                  className="text-primary hover:text-primary/80 transition-colors font-medium"
+                >
+                  {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[lang] || 'Casos de uso'}
+                </a>
+              </li>
+              <li>
+                <a
                   href={getAppUrl(lang)}
                   target="_blank"
                   rel="noopener noreferrer"

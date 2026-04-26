@@ -271,6 +271,122 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-image.jpg',
   },
 
+  // ── Use Cases Hub ──
+  '/usos': {
+    title: 'Casos de uso de AI Chef Pro: por rol y por concepto | AI Chef Pro',
+    description: 'Descubre cómo usar AI Chef Pro según tu perfil profesional o tipo de negocio: chef ejecutivo, propietario, gerente, pizzería, dark kitchen, hotel, catering y más.',
+    image: 'https://aichef.pro/og/use-cases/hub.jpg',
+  },
+
+  // ── Use Cases — Roles ──
+  '/usos/rol/propietario-restaurante': {
+    title: 'IA para propietarios de restaurante | AI Chef Pro',
+    description: 'Toma mejores decisiones: escandallos, plan financiero, APPCC y marketing con IA especializada en hostelería.',
+    image: 'https://aichef.pro/og/use-cases/propietario-restaurante.jpg',
+  },
+  '/usos/rol/gerente-restaurante': {
+    title: 'IA para gerentes y managers de restaurante | AI Chef Pro',
+    description: 'Optimiza turnos, inventario, APPCC y reporting con IA. Caja de herramientas digital para managers.',
+    image: 'https://aichef.pro/og/use-cases/gerente-restaurante.jpg',
+  },
+  '/usos/rol/director-operaciones-grupo-restauracion': {
+    title: 'IA para directores de operaciones de grupos de restauración | AI Chef Pro',
+    description: 'Estandariza procesos, consolida KPIs y replica manuales operativos en grupos multi-local con IA.',
+    image: 'https://aichef.pro/og/use-cases/director-operaciones-grupo.jpg',
+  },
+  '/usos/rol/chef-ejecutivo-corporativo': {
+    title: 'IA para chef ejecutivo y corporativo | AI Chef Pro',
+    description: 'Estandariza recetas, calcula escandallos y crea manuales replicables en múltiples unidades con IA gastronómica.',
+    image: 'https://aichef.pro/og/use-cases/chef-ejecutivo.jpg',
+  },
+  '/usos/rol/chef-jefe-cocina': {
+    title: 'IA para chef de cocina y jefe de cocina | AI Chef Pro',
+    description: 'Escandallos, fichas técnicas, APPCC y formación de equipo con IA gastronómica profesional.',
+    image: 'https://aichef.pro/og/use-cases/chef-cocina.jpg',
+  },
+  '/usos/rol/sous-chef': {
+    title: 'IA para sous chef | AI Chef Pro',
+    description: 'Mise en place, fichas técnicas, APPCC y formación con IA pensada para sous chef en cocina profesional.',
+    image: 'https://aichef.pro/og/use-cases/sous-chef.jpg',
+  },
+  '/usos/rol/chef-catering': {
+    title: 'IA para chef de catering | AI Chef Pro',
+    description: 'Escandallos por evento, producción a escala, APPCC fuera de local y diseño de menús con IA gastronómica.',
+    image: 'https://aichef.pro/og/use-cases/chef-catering.jpg',
+  },
+  '/usos/rol/propietario-empresa-catering': {
+    title: 'IA para propietarios de empresa de catering | AI Chef Pro',
+    description: 'Rentabilidad por evento, producción a escala, gestión de equipos eventuales y plan financiero para catering.',
+    image: 'https://aichef.pro/og/use-cases/propietario-catering.jpg',
+  },
+
+  // ── Use Cases — Conceptos ──
+  '/usos/concepto/restaurante-casual': {
+    title: 'IA para restaurante casual | AI Chef Pro',
+    description: 'Escandallos, APPCC, cuadrantes y marketing con IA para restaurantes casuales. Más control, menos papeleo.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-casual.jpg',
+  },
+  '/usos/concepto/cafeteria-brunch': {
+    title: 'IA para cafetería y brunch | AI Chef Pro',
+    description: 'Escandallos, APPCC, listas de turno y marketing con IA para cafeterías de especialidad y locales de brunch.',
+    image: 'https://aichef.pro/og/use-cases/cafeteria-brunch.jpg',
+  },
+  '/usos/concepto/pizzeria': {
+    title: 'IA para pizzería | AI Chef Pro',
+    description: 'Escandallos por pizza, control de delivery, APPCC y marketing con IA especializada en pizzería profesional.',
+    image: 'https://aichef.pro/og/use-cases/pizzeria.jpg',
+  },
+  '/usos/concepto/hamburgueseria': {
+    title: 'IA para hamburguesería | AI Chef Pro',
+    description: 'Escandallos por burger, control de carne y delivery, APPCC y marketing con IA especializada.',
+    image: 'https://aichef.pro/og/use-cases/hamburgueseria.jpg',
+  },
+  '/usos/concepto/dark-kitchen': {
+    title: 'IA para dark kitchen | AI Chef Pro',
+    description: 'Escandallos multi-marca, gestión de plataformas, APPCC y branding para dark kitchens con IA especializada.',
+    image: 'https://aichef.pro/og/use-cases/dark-kitchen.jpg',
+  },
+  '/usos/concepto/pasteleria-obrador': {
+    title: 'IA para pastelería y obrador | AI Chef Pro',
+    description: 'Escandallos por pieza, APPCC, trazabilidad y branding para pastelerías y obradores con IA especializada.',
+    image: 'https://aichef.pro/og/use-cases/pasteleria-obrador.jpg',
+  },
+  '/usos/concepto/bar-cocktails': {
+    title: 'IA para bar y coctelería | AI Chef Pro',
+    description: 'Escandallos de cócteles, cartas, APPCC y branding con IA especializada en bar y coctelería profesional.',
+    image: 'https://aichef.pro/og/use-cases/bar-cocktails.jpg',
+  },
+  '/usos/concepto/catering-eventos': {
+    title: 'IA para catering y eventos | AI Chef Pro',
+    description: 'Escandallos por evento, producción a escala, APPCC fuera de local y propuestas comerciales con IA.',
+    image: 'https://aichef.pro/og/use-cases/catering-eventos.jpg',
+  },
+  '/usos/concepto/hotel-completo-fb': {
+    title: 'IA para hotel completo (F&B y housekeeping) | AI Chef Pro',
+    description: 'Gestiona F&B completo: desayunos, restaurante, bar, room service y banquetes con IA pensada para F&B Manager.',
+    image: 'https://aichef.pro/og/use-cases/hotel-completo.jpg',
+  },
+  '/usos/concepto/heladeria-artesanal': {
+    title: 'IA para heladería artesanal | AI Chef Pro',
+    description: 'Escandallos por sabor, control de obrador, vitrina y APPCC con IA especializada en heladería artesanal.',
+    image: 'https://aichef.pro/og/use-cases/heladeria.jpg',
+  },
+  '/usos/concepto/chocolateria-bomboneria': {
+    title: 'IA para chocolatería y bombonería | AI Chef Pro',
+    description: 'Escandallos por pieza, producción estacional, APPCC y branding con IA especializada en chocolatería.',
+    image: 'https://aichef.pro/og/use-cases/chocolateria.jpg',
+  },
+  '/usos/concepto/restaurante-creativo-autor': {
+    title: 'IA para restaurante creativo y de autor | AI Chef Pro',
+    description: 'Brainstorming, escandallos, fichas técnicas y storytelling para restaurantes de autor con IA gastronómica.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-creativo.jpg',
+  },
+  '/usos/concepto/restaurante-gastronomico-michelin': {
+    title: 'IA para restaurante gastronómico (Michelin/Repsol) | AI Chef Pro',
+    description: 'Escandallos premium, menús degustación, brigada y comunicación con IA especializada en alta gastronomía.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-gastronomico.jpg',
+  },
+
   // ── Legal Pages ──
   '/legales': {
     title: 'Aviso Legal | AI Chef Pro',

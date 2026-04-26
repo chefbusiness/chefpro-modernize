@@ -198,6 +198,75 @@ export default function ModernHeader() {
               
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
+                  {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[currentLanguage] || 'Casos de uso'}
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid w-[640px] gap-4 p-4 md:grid-cols-2">
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">
+                        {({ es: 'Por rol profesional', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' } as Record<string, string>)[currentLanguage] || 'Por rol profesional'}
+                      </h4>
+                      <div className="grid gap-1">
+                        {[
+                          { es: { slug: 'propietario-restaurante', label: 'Propietario de restaurante' }, en: { slug: 'restaurant-owner', label: 'Restaurant owner' }, fr: { slug: 'proprietaire-restaurant', label: 'Propriétaire de restaurant' }, de: { slug: 'restaurantbesitzer', label: 'Restaurantbesitzer' }, it: { slug: 'proprietario-ristorante', label: 'Proprietario di ristorante' }, pt: { slug: 'proprietario-restaurante', label: 'Proprietário de restaurante' }, nl: { slug: 'restauranteigenaar', label: 'Restauranteigenaar' } },
+                          { es: { slug: 'gerente-restaurante', label: 'Gerente / Manager' }, en: { slug: 'restaurant-manager', label: 'Manager' }, fr: { slug: 'gerant-restaurant', label: 'Gérant' }, de: { slug: 'restaurantleiter', label: 'Restaurantleiter' }, it: { slug: 'gestore-ristorante', label: 'Gestore' }, pt: { slug: 'gerente-restaurante', label: 'Gerente' }, nl: { slug: 'restaurantmanager', label: 'Manager' } },
+                          { es: { slug: 'chef-ejecutivo-corporativo', label: 'Chef ejecutivo / corporativo' }, en: { slug: 'executive-corporate-chef', label: 'Executive chef' }, fr: { slug: 'chef-executif-corporatif', label: 'Chef exécutif' }, de: { slug: 'kuechenchef-corporate', label: 'Küchenchef Corporate' }, it: { slug: 'chef-esecutivo-corporativo', label: 'Chef esecutivo' }, pt: { slug: 'chef-executivo-corporativo', label: 'Chef executivo' }, nl: { slug: 'executive-chef-corporate', label: 'Executive chef' } },
+                          { es: { slug: 'chef-jefe-cocina', label: 'Chef de cocina' }, en: { slug: 'head-chef', label: 'Head chef' }, fr: { slug: 'chef-cuisinier', label: 'Chef cuisinier' }, de: { slug: 'kuechenchef', label: 'Küchenchef' }, it: { slug: 'capo-cuoco', label: 'Capo cuoco' }, pt: { slug: 'chefe-cozinha', label: 'Chefe de cozinha' }, nl: { slug: 'chef-kok', label: 'Chef-kok' } },
+                          { es: { slug: 'chef-catering', label: 'Chef de catering' }, en: { slug: 'catering-chef', label: 'Catering chef' }, fr: { slug: 'chef-traiteur', label: 'Chef traiteur' }, de: { slug: 'catering-chef', label: 'Catering Chef' }, it: { slug: 'chef-catering', label: 'Chef catering' }, pt: { slug: 'chef-catering', label: 'Chef catering' }, nl: { slug: 'cateringchef', label: 'Catering chef' } },
+                        ].map((item, i) => {
+                          const data = item[currentLanguage as keyof typeof item] || item.es;
+                          const prefixMap: Record<string, string> = { es: '/usos/rol', en: '/en/use-cases/role', fr: '/fr/cas-d-usage/role', de: '/de/anwendungsfaelle/rolle', it: '/it/casi-uso/ruolo', pt: '/pt/casos-uso/funcao', nl: '/nl/use-cases/rol' };
+                          const prefix = prefixMap[currentLanguage] || '/usos/rol';
+                          return (
+                            <NavigationMenuLink key={i} className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${prefix}/${data.slug}`}>
+                              {data.label}
+                            </NavigationMenuLink>
+                          );
+                        })}
+                        <NavigationMenuLink
+                          className="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1"
+                          href={({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' } as Record<string, string>)[currentLanguage] || '/usos'}
+                        >
+                          {({ es: 'Ver todos los roles →', en: 'View all roles →', fr: 'Voir tous les rôles →', de: 'Alle Rollen ansehen →', it: 'Vedi tutti i ruoli →', pt: 'Ver todas as funções →', nl: 'Alle rollen bekijken →' } as Record<string, string>)[currentLanguage] || 'Ver todos los roles →'}
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="font-medium leading-none text-accent">
+                        {({ es: 'Por concepto de negocio', en: 'By business concept', fr: 'Par concept', de: 'Nach Konzept', it: 'Per concetto', pt: 'Por conceito', nl: 'Per concept' } as Record<string, string>)[currentLanguage] || 'Por concepto de negocio'}
+                      </h4>
+                      <div className="grid gap-1">
+                        {[
+                          { es: { slug: 'restaurante-casual', label: 'Restaurante casual' }, en: { slug: 'casual-restaurant', label: 'Casual restaurant' }, fr: { slug: 'restaurant-decontracte', label: 'Restaurant décontracté' }, de: { slug: 'casual-restaurant', label: 'Casual Restaurant' }, it: { slug: 'ristorante-casual', label: 'Ristorante casual' }, pt: { slug: 'restaurante-casual', label: 'Restaurante casual' }, nl: { slug: 'casual-restaurant', label: 'Casual restaurant' } },
+                          { es: { slug: 'pizzeria', label: 'Pizzería' }, en: { slug: 'pizzeria', label: 'Pizzeria' }, fr: { slug: 'pizzeria', label: 'Pizzeria' }, de: { slug: 'pizzeria', label: 'Pizzeria' }, it: { slug: 'pizzeria', label: 'Pizzeria' }, pt: { slug: 'pizzaria', label: 'Pizzaria' }, nl: { slug: 'pizzeria', label: 'Pizzeria' } },
+                          { es: { slug: 'dark-kitchen', label: 'Dark kitchen' }, en: { slug: 'dark-kitchen', label: 'Dark kitchen' }, fr: { slug: 'dark-kitchen', label: 'Dark kitchen' }, de: { slug: 'dark-kitchen', label: 'Dark kitchen' }, it: { slug: 'dark-kitchen', label: 'Dark kitchen' }, pt: { slug: 'dark-kitchen', label: 'Dark kitchen' }, nl: { slug: 'dark-kitchen', label: 'Dark kitchen' } },
+                          { es: { slug: 'catering-eventos', label: 'Catering / Eventos' }, en: { slug: 'catering-events', label: 'Catering / Events' }, fr: { slug: 'traiteur-evenements', label: 'Traiteur / Événements' }, de: { slug: 'catering-events', label: 'Catering / Events' }, it: { slug: 'catering-eventi', label: 'Catering / Eventi' }, pt: { slug: 'catering-eventos', label: 'Catering / Eventos' }, nl: { slug: 'catering-evenementen', label: 'Catering / Evenementen' } },
+                          { es: { slug: 'hotel-completo-fb', label: 'Hotel completo (F&B)' }, en: { slug: 'hotel-fb-complete', label: 'Hotel F&B' }, fr: { slug: 'hotel-restauration-complete', label: 'Hôtel F&B' }, de: { slug: 'hotel-fb-komplett', label: 'Hotel F&B' }, it: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, pt: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, nl: { slug: 'hotel-fb-compleet', label: 'Hotel F&B' } },
+                          { es: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico (Michelin)' }, en: { slug: 'fine-dining-michelin', label: 'Fine dining' }, fr: { slug: 'restaurant-gastronomique-etoile', label: 'Gastronomique étoilé' }, de: { slug: 'gourmet-restaurant-michelin', label: 'Gourmet Michelin' }, it: { slug: 'ristorante-gastronomico-stellato', label: 'Gastronomico stellato' }, pt: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico Michelin' }, nl: { slug: 'gastronomisch-restaurant-michelin', label: 'Gastronomisch Michelin' } },
+                        ].map((item, i) => {
+                          const data = item[currentLanguage as keyof typeof item] || item.es;
+                          const prefixMap: Record<string, string> = { es: '/usos/concepto', en: '/en/use-cases/concept', fr: '/fr/cas-d-usage/concept', de: '/de/anwendungsfaelle/konzept', it: '/it/casi-uso/concetto', pt: '/pt/casos-uso/conceito', nl: '/nl/use-cases/concept' };
+                          const prefix = prefixMap[currentLanguage] || '/usos/concepto';
+                          return (
+                            <NavigationMenuLink key={i} className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${prefix}/${data.slug}`}>
+                              {data.label}
+                            </NavigationMenuLink>
+                          );
+                        })}
+                        <NavigationMenuLink
+                          className="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1"
+                          href={({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' } as Record<string, string>)[currentLanguage] || '/usos'}
+                        >
+                          {({ es: 'Ver todos los conceptos →', en: 'View all concepts →', fr: 'Voir tous les concepts →', de: 'Alle Konzepte ansehen →', it: 'Vedi tutti i concetti →', pt: 'Ver todos os conceitos →', nl: 'Alle concepten bekijken →' } as Record<string, string>)[currentLanguage] || 'Ver todos los conceptos →'}
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="transition-colors hover:text-foreground/80 text-foreground/60">
                   {t('nav.aplicaciones')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
