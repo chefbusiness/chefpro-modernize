@@ -1689,6 +1689,7 @@
 
 
 
+
   <url>
     <loc>https://aichef.pro/usos</loc>
     <lastmod>2026-04-27</lastmod>
@@ -3354,6 +3355,300 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/sommelier" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/sommelier" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/sommelier" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/rol/maestro-asador-parrillero</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/role/master-grillmaster</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/role/maitre-grilladeur</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/rolle/grillmeister</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/ruolo/maestro-grigliatore</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/funcao/mestre-grelhador</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/rol/meester-grillmeester</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-grillmaster" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-grilladeur" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/grillmeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-grigliatore" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-grelhador" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-grillmeester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-asador-parrillero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/rol/maestro-heladero</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/role/master-gelato-maker</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/role/maitre-glacier</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/rolle/eismeister</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/ruolo/maestro-gelatiere</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/funcao/mestre-gelataria</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/rol/meester-ijsbereider</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/maestro-heladero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/master-gelato-maker" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/maitre-glacier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/eismeister" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/maestro-gelatiere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/mestre-gelataria" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/meester-ijsbereider" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/maestro-heladero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/rol/repostero-pastelero</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/role/pastry-chef</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/role/patissier</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/rolle/konditor</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/ruolo/pasticciere</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/funcao/pasteleiro</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/rol/banketbakker</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/rol/repostero-pastelero" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/role/pastry-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/role/patissier" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/rolle/konditor" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/ruolo/pasticciere" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/funcao/pasteleiro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/rol/banketbakker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/rol/repostero-pastelero" />
   </url>
   <url>
     <loc>https://aichef.pro/usos/concepto/restaurante-casual</loc>
@@ -5216,5 +5511,495 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/churrascaria-steakhouse" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/steakhouse-grill" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/asador-parrilla-steakhouse" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/concepto/coffee-shop-specialty</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/concept/specialty-coffee-shop</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/concept/coffee-shop-specialty</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/konzept/specialty-coffee-shop</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/concetto/coffee-shop-specialty</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/conceito/coffee-shop-specialty</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/concept/specialty-coffee-shop</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/coffee-shop-specialty" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/specialty-coffee-shop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/coffee-shop-specialty" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/concepto/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/concept/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/concept/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/konzept/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/concetto/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/conceito/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/concept/sushi-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/sushi-bar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/sushi-bar" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/concepto/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/concept/gastrobar-tapas-bar</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/concept/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/konzept/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/concetto/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/conceito/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/concept/gastrobar-tapas</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/gastrobar-tapas-bar" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/gastrobar-tapas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/gastrobar-tapas" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/concepto/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/concept/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/concept/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/konzept/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/concetto/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/conceito/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/concept/food-truck</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/food-truck" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/food-truck" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/food-truck" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/food-truck" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/concepto/restaurante-italiano</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/en/use-cases/concept/italian-restaurant</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/fr/cas-d-usage/concept/restaurant-italien</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/de/anwendungsfaelle/konzept/italienisches-restaurant</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/it/casi-uso/concetto/ristorante-italiano</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/pt/casos-uso/conceito/restaurante-italiano</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/nl/use-cases/concept/italiaans-restaurant</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/en/use-cases/concept/italian-restaurant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/fr/cas-d-usage/concept/restaurant-italien" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/de/anwendungsfaelle/konzept/italienisches-restaurant" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/it/casi-uso/concetto/ristorante-italiano" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/pt/casos-uso/conceito/restaurante-italiano" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/nl/use-cases/concept/italiaans-restaurant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/concepto/restaurante-italiano" />
   </url>
 </urlset>

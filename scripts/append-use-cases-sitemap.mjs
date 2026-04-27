@@ -44,6 +44,9 @@ const ROLE_SLUGS = [
   { es: 'fb-manager-hotel', en: 'hotel-fb-manager', fr: 'fb-manager-hotel', de: 'fb-manager-hotel', it: 'fb-manager-hotel', pt: 'fb-manager-hotel', nl: 'fb-manager-hotel' },
   { es: 'maitre-jefe-sala', en: 'maitre-d-head-waiter', fr: 'maitre-d-hotel-chef-de-rang', de: 'maitre-oberkellner', it: 'maitre-capo-sala', pt: 'maitre-chefe-sala', nl: 'maitre-d-hoofdkelner' },
   { es: 'sommelier', en: 'sommelier', fr: 'sommelier', de: 'sommelier', it: 'sommelier', pt: 'sommelier', nl: 'sommelier' },
+  { es: 'maestro-asador-parrillero', en: 'master-grillmaster', fr: 'maitre-grilladeur', de: 'grillmeister', it: 'maestro-grigliatore', pt: 'mestre-grelhador', nl: 'meester-grillmeester' },
+  { es: 'maestro-heladero', en: 'master-gelato-maker', fr: 'maitre-glacier', de: 'eismeister', it: 'maestro-gelatiere', pt: 'mestre-gelataria', nl: 'meester-ijsbereider' },
+  { es: 'repostero-pastelero', en: 'pastry-chef', fr: 'patissier', de: 'konditor', it: 'pasticciere', pt: 'pasteleiro', nl: 'banketbakker' },
 ];
 
 const CONCEPT_SLUGS = [
@@ -66,6 +69,11 @@ const CONCEPT_SLUGS = [
   { es: 'restaurante-nikkei', en: 'nikkei-restaurant', fr: 'restaurant-nikkei', de: 'nikkei-restaurant', it: 'ristorante-nikkei', pt: 'restaurante-nikkei', nl: 'nikkei-restaurant' },
   { es: 'restaurante-plant-based-vegano', en: 'plant-based-vegan-restaurant', fr: 'restaurant-vegan-plant-based', de: 'plant-based-veganes-restaurant', it: 'ristorante-plant-based-vegano', pt: 'restaurante-plant-based-vegano', nl: 'plant-based-veganistisch-restaurant' },
   { es: 'asador-parrilla-steakhouse', en: 'steakhouse-grill', fr: 'grill-steakhouse', de: 'steakhouse-grill', it: 'griglieria-steakhouse', pt: 'churrascaria-steakhouse', nl: 'steakhouse-grill' },
+  { es: 'coffee-shop-specialty', en: 'specialty-coffee-shop', fr: 'coffee-shop-specialty', de: 'specialty-coffee-shop', it: 'coffee-shop-specialty', pt: 'coffee-shop-specialty', nl: 'specialty-coffee-shop' },
+  { es: 'sushi-bar', en: 'sushi-bar', fr: 'sushi-bar', de: 'sushi-bar', it: 'sushi-bar', pt: 'sushi-bar', nl: 'sushi-bar' },
+  { es: 'gastrobar-tapas', en: 'gastrobar-tapas-bar', fr: 'gastrobar-tapas', de: 'gastrobar-tapas', it: 'gastrobar-tapas', pt: 'gastrobar-tapas', nl: 'gastrobar-tapas' },
+  { es: 'food-truck', en: 'food-truck', fr: 'food-truck', de: 'food-truck', it: 'food-truck', pt: 'food-truck', nl: 'food-truck' },
+  { es: 'restaurante-italiano', en: 'italian-restaurant', fr: 'restaurant-italien', de: 'italienisches-restaurant', it: 'ristorante-italiano', pt: 'restaurante-italiano', nl: 'italiaans-restaurant' },
 ];
 
 const LANGS = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
