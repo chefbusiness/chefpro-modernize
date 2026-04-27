@@ -77,10 +77,11 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${canonicalUrl}#breadcrumb`,
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
       { '@type': 'ListItem', position: 2, name: 'Casos de uso', item: `${SITE_URL}${langPrefix}/usos` },
-      { '@type': 'ListItem', position: 3, name: content.h1, item: canonicalUrl },
+      { '@type': 'ListItem', position: 3, name: content.h1 },
     ],
   };
 

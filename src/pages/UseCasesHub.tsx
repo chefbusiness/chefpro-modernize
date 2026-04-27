@@ -49,9 +49,10 @@ export default function UseCasesHub() {
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${canonicalUrl}#breadcrumb`,
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Casos de uso', item: canonicalUrl },
+      { '@type': 'ListItem', position: 2, name: 'Casos de uso' },
     ],
   };
 
