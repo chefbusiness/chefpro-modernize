@@ -1,8 +1,73 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { ALL_USE_CASES, type UseCaseType } from '@/data/use-cases';
 
 export type Language = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'nl';
+
+// Use-case URL segments per language. Must match the routes registered in App.tsx.
+const USE_CASE_SEGMENTS: Record<Language, { hub: string; role: string; concept: string; task: string }> = {
+  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea' },
+  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task' },
+  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache' },
+  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe' },
+  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito' },
+  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa' },
+  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak' },
+};
+
+interface UseCasePathInfo {
+  spokeId: string;
+  type: UseCaseType;
+  isHub: boolean;
+}
+
+// Detect if currentPath is a use-case hub or spoke in any language. Returns enough info to
+// rebuild the equivalent URL in another language.
+function detectUseCasePath(currentPath: string): UseCasePathInfo | null {
+  const segments = currentPath.replace(/^\//, '').split('/').filter(Boolean);
+  if (segments.length === 0) return null;
+
+  let lang: Language = 'es';
+  let rest = segments;
+  if (segments[0].length === 2 && ['en', 'fr', 'de', 'it', 'pt', 'nl'].includes(segments[0])) {
+    lang = segments[0] as Language;
+    rest = segments.slice(1);
+  }
+  if (rest.length === 0) return null;
+
+  const segs = USE_CASE_SEGMENTS[lang];
+  if (rest[0] !== segs.hub) return null;
+
+  if (rest.length === 1) {
+    return { spokeId: '', type: 'role', isHub: true };
+  }
+  if (rest.length !== 3) return null;
+
+  const typeSeg = rest[1];
+  const slug = rest[2];
+  let type: UseCaseType;
+  if (typeSeg === segs.role) type = 'role';
+  else if (typeSeg === segs.concept) type = 'concept';
+  else if (typeSeg === segs.task) type = 'task';
+  else return null;
+
+  const spoke = ALL_USE_CASES.find(uc => uc.type === type && uc.slug[lang] === slug);
+  if (!spoke) return null;
+  return { spokeId: spoke.id, type, isHub: false };
+}
+
+function buildUseCaseUrl(target: Language, info: UseCasePathInfo): string {
+  const segs = USE_CASE_SEGMENTS[target];
+  const prefix = target === 'es' ? '' : `/${target}`;
+  if (info.isHub) {
+    return `${prefix}/${segs.hub}`;
+  }
+  const spoke = ALL_USE_CASES.find(uc => uc.id === info.spokeId);
+  if (!spoke) return prefix || '/';
+  const typeSeg = info.type === 'role' ? segs.role : info.type === 'concept' ? segs.concept : segs.task;
+  return `${prefix}/${segs.hub}/${typeSeg}/${spoke.slug[target]}`;
+}
 
 // Pages with language-native slugs (not just a lang prefix + same slug)
 // Each entry maps a language code to its URL slug for that page
@@ -178,6 +243,15 @@ export const useLanguage = () => {
 
     const currentPath = window.location.pathname;
     const isHomePage = currentPath === '/' || currentPath.match(/^\/[a-z]{2}$/);
+
+    // Use-case pages have language-native slugs AND language-native URL segments.
+    // Detect & rebuild the equivalent URL in the target language so the user stays on
+    // the same content instead of getting a 404.
+    const useCaseInfo = detectUseCasePath(currentPath);
+    if (useCaseInfo) {
+      navigate(buildUseCaseUrl(newLang, useCaseInfo), { replace: true });
+      return;
+    }
 
     // Check if this page uses language-native slugs (e.g. landing pages)
     const nativePage = detectNativePage(currentPath);
