@@ -199,6 +199,7 @@ export const useLanguage = () => {
     if (targetLang === 'en') return 'https://enapp.aichef.pro';
     if (targetLang === 'it') return 'https://itapp.aichef.pro';
     if (targetLang === 'fr') return 'https://frapp.aichef.pro';
+    if (targetLang === 'de') return 'https://deapp.aichef.pro';
     return 'https://app.aichef.pro';
   };
 
