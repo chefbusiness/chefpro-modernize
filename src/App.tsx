@@ -314,24 +314,31 @@ const App = () => (
             <Route path="/usos" element={<UseCasesHub />} />
             <Route path="/usos/rol/:slug" element={<UseCasePage type="role" />} />
             <Route path="/usos/concepto/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/usos/tarea/:slug" element={<UseCasePage type="task" />} />
             <Route path="/en/use-cases" element={<UseCasesHub />} />
             <Route path="/en/use-cases/role/:slug" element={<UseCasePage type="role" />} />
             <Route path="/en/use-cases/concept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/en/use-cases/task/:slug" element={<UseCasePage type="task" />} />
             <Route path="/fr/cas-d-usage" element={<UseCasesHub />} />
             <Route path="/fr/cas-d-usage/role/:slug" element={<UseCasePage type="role" />} />
             <Route path="/fr/cas-d-usage/concept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/fr/cas-d-usage/tache/:slug" element={<UseCasePage type="task" />} />
             <Route path="/de/anwendungsfaelle" element={<UseCasesHub />} />
             <Route path="/de/anwendungsfaelle/rolle/:slug" element={<UseCasePage type="role" />} />
             <Route path="/de/anwendungsfaelle/konzept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/de/anwendungsfaelle/aufgabe/:slug" element={<UseCasePage type="task" />} />
             <Route path="/it/casi-uso" element={<UseCasesHub />} />
             <Route path="/it/casi-uso/ruolo/:slug" element={<UseCasePage type="role" />} />
             <Route path="/it/casi-uso/concetto/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/it/casi-uso/compito/:slug" element={<UseCasePage type="task" />} />
             <Route path="/pt/casos-uso" element={<UseCasesHub />} />
             <Route path="/pt/casos-uso/funcao/:slug" element={<UseCasePage type="role" />} />
             <Route path="/pt/casos-uso/conceito/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/pt/casos-uso/tarefa/:slug" element={<UseCasePage type="task" />} />
             <Route path="/nl/use-cases" element={<UseCasesHub />} />
             <Route path="/nl/use-cases/rol/:slug" element={<UseCasePage type="role" />} />
             <Route path="/nl/use-cases/concept/:slug" element={<UseCasePage type="concept" />} />
+            <Route path="/nl/use-cases/taak/:slug" element={<UseCasePage type="task" />} />
 
             {/* Kit de Escandallos Pro */}
             <Route path="/kit-escandallos" element={<KitEscandallos />} />

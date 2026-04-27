@@ -67,7 +67,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const products = getProductsByIds(content.productIds);
 
   const langPrefix = lang === 'es' ? '' : `/${lang}`;
-  const typeSegment = type === 'role' ? 'rol' : 'concepto';
+  const typeSegment = type === 'role' ? 'rol' : type === 'concept' ? 'concepto' : 'tarea';
   const canonicalSlug = useCase.slug[lang] || useCase.slug.es;
   const canonicalUrl = `${SITE_URL}${langPrefix}/usos/${typeSegment}/${canonicalSlug}`;
 
@@ -108,7 +108,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
       logo: `${SITE_URL}/og-image.jpg`,
     },
     areaServed: ['ES', 'EU', 'LATAM'],
-    serviceType: type === 'role' ? 'Software de IA para hostelería por rol profesional' : 'Software de IA para hostelería por concepto de negocio',
+    serviceType: type === 'role' ? 'Software de IA para hostelería por rol profesional' : type === 'concept' ? 'Software de IA para hostelería por concepto de negocio' : 'Software de IA para hostelería por tarea operativa',
     audience: {
       '@type': 'Audience',
       audienceType: content.badge,
@@ -511,7 +511,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-2xl font-bold text-foreground mb-2">
-                  {type === 'role' ? 'También Útil Para' : 'Otros Conceptos Similares'}
+                  {type === 'role' ? 'También Útil Para' : type === 'concept' ? 'Otros Conceptos Similares' : 'Otras Tareas Relacionadas'}
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

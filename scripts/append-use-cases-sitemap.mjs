@@ -24,6 +24,7 @@ const HUB_PATHS = {
 const TYPE_SEGMENT = {
   role: { es: 'rol', en: 'role', fr: 'role', de: 'rolle', it: 'ruolo', pt: 'funcao', nl: 'rol' },
   concept: { es: 'concepto', en: 'concept', fr: 'concept', de: 'konzept', it: 'concetto', pt: 'conceito', nl: 'concept' },
+  task: { es: 'tarea', en: 'task', fr: 'tache', de: 'aufgabe', it: 'compito', pt: 'tarefa', nl: 'taak' },
 };
 
 // Slugs por idioma — deben coincidir con src/data/use-cases.ts
@@ -74,6 +75,17 @@ const CONCEPT_SLUGS = [
   { es: 'gastrobar-tapas', en: 'gastrobar-tapas-bar', fr: 'gastrobar-tapas', de: 'gastrobar-tapas', it: 'gastrobar-tapas', pt: 'gastrobar-tapas', nl: 'gastrobar-tapas' },
   { es: 'food-truck', en: 'food-truck', fr: 'food-truck', de: 'food-truck', it: 'food-truck', pt: 'food-truck', nl: 'food-truck' },
   { es: 'restaurante-italiano', en: 'italian-restaurant', fr: 'restaurant-italien', de: 'italienisches-restaurant', it: 'ristorante-italiano', pt: 'restaurante-italiano', nl: 'italiaans-restaurant' },
+];
+
+const TASK_SLUGS = [
+  { es: 'escandallos-con-ia', en: 'recipe-costing-with-ai', fr: 'fiches-cout-avec-ia', de: 'rezeptkalkulation-mit-ki', it: 'schede-costo-con-ia', pt: 'fichas-custo-com-ia', nl: 'receptkostprijs-met-ai' },
+  { es: 'menu-degustacion-con-ia', en: 'tasting-menu-with-ai', fr: 'menu-degustation-avec-ia', de: 'degustationsmenue-mit-ki', it: 'menu-degustazione-con-ia', pt: 'menu-degustacao-com-ia', nl: 'proefmenu-met-ai' },
+  { es: 'fichas-tecnicas-con-ia', en: 'technical-recipe-sheets-with-ai', fr: 'fiches-techniques-avec-ia', de: 'technische-rezeptkarten-mit-ki', it: 'schede-tecniche-con-ia', pt: 'fichas-tecnicas-com-ia', nl: 'technische-receptkaarten-met-ai' },
+  { es: 'maridajes-con-ia', en: 'wine-pairings-with-ai', fr: 'accords-mets-vins-avec-ia', de: 'food-pairing-mit-ki', it: 'abbinamenti-con-ia', pt: 'harmonizacoes-com-ia', nl: 'wijn-spijs-combinaties-met-ai' },
+  { es: 'reducir-mermas-con-ia', en: 'reduce-food-waste-with-ai', fr: 'reduire-pertes-avec-ia', de: 'verluste-reduzieren-mit-ki', it: 'ridurre-sprechi-con-ia', pt: 'reduzir-perdas-com-ia', nl: 'verspilling-verminderen-met-ai' },
+  { es: 'appcc-digital-con-ia', en: 'digital-haccp-with-ai', fr: 'haccp-numerique-avec-ia', de: 'digitales-haccp-mit-ki', it: 'haccp-digitale-con-ia', pt: 'haccp-digital-com-ia', nl: 'digitale-haccp-met-ai' },
+  { es: 'carta-estacional-con-ia', en: 'seasonal-menu-with-ai', fr: 'carte-saisonniere-avec-ia', de: 'saisonkarte-mit-ki', it: 'menu-stagionale-con-ia', pt: 'cardapio-sazonal-com-ia', nl: 'seizoensmenu-met-ai' },
+  { es: 'foto-gastronomica-con-ia', en: 'food-photography-with-ai', fr: 'photo-gastronomique-avec-ia', de: 'food-fotografie-mit-ki', it: 'foto-gastronomica-con-ia', pt: 'foto-gastronomica-com-ia', nl: 'food-fotografie-met-ai' },
 ];
 
 const LANGS = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
@@ -129,6 +141,16 @@ function generateUseCasesUrls() {
       const segment = TYPE_SEGMENT.concept[l];
       const slug = slugObj[l];
       urls.push(buildUrl(`${SITE_URL}${prefix}/${segment}/${slug}`, buildHreflangs('concept', slugObj), l === 'es' ? '0.8' : '0.7', 'weekly'));
+    });
+  });
+
+  // Spokes - tasks (Job-to-be-Done)
+  TASK_SLUGS.forEach(slugObj => {
+    LANGS.forEach(l => {
+      const prefix = HUB_PATHS[l];
+      const segment = TYPE_SEGMENT.task[l];
+      const slug = slugObj[l];
+      urls.push(buildUrl(`${SITE_URL}${prefix}/${segment}/${slug}`, buildHreflangs('task', slugObj), l === 'es' ? '0.8' : '0.7', 'weekly'));
     });
   });
 
