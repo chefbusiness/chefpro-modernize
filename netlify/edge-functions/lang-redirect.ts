@@ -72,17 +72,24 @@ export default async (request: Request, context: NetlifyContext) => {
   const ua = request.headers.get('user-agent') || '';
   if (BOT_REGEX.test(ua)) return;
 
-  // Honor user's persisted choice — if cookie is set, do not redirect
-  const cookie = request.headers.get('cookie') || '';
-  if (/(?:^|;\s*)preferred-lang=([a-z]{2})/.test(cookie)) return;
-
-  // Escape hatch for QA / debugging
+  // Escape hatch for QA / debugging — beats every other rule
   if (url.searchParams.has('nolang')) return;
 
-  // 1. Browser language (highest priority for users with localized devices)
-  let target = parseAcceptLanguage(request.headers.get('accept-language'));
+  let target: Lang | null = null;
 
-  // 2. Fall back to geo-IP country
+  // 1. Cookie — user's manual choice always wins over heuristics
+  const cookie = request.headers.get('cookie') || '';
+  const cookieMatch = cookie.match(/(?:^|;\s*)preferred-lang=([a-z]{2})/);
+  if (cookieMatch && (SUPPORTED as readonly string[]).includes(cookieMatch[1])) {
+    target = cookieMatch[1] as Lang;
+  }
+
+  // 2. Browser Accept-Language (high user-intent signal)
+  if (!target) {
+    target = parseAcceptLanguage(request.headers.get('accept-language'));
+  }
+
+  // 3. Geo-IP country code, with English as final fallback
   if (!target) {
     const country = (context.geo?.country?.code || '').toUpperCase();
     target = COUNTRY_TO_LANG[country] || 'en';
