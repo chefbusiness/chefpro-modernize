@@ -153,7 +153,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const content = useCase.content[lang] || useCase.content.es;
   const theme = COLOR_THEMES[useCase.colorTheme] || COLOR_THEMES.amber;
   const HeroIcon = getIconComponent(useCase.iconKey);
-  const products = getProductsByIds(content.productIds);
+  const products = getProductsByIds(content.productIds, lang);
 
   const langPrefix = lang === 'es' ? '' : `/${lang}`;
   const canonicalSlug = useCase.slug[lang] || useCase.slug.es;
