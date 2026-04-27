@@ -9,6 +9,7 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import ImageDisclaimerNote from '@/components/ImageDisclaimerNote';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ALL_USE_CASES, getUseCasesByType, type UseCase, type UseCaseType, type LangCode } from '@/data/use-cases';
 import { getProductsByIds } from '@/data/products-catalog';
@@ -212,7 +213,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                   <div key={i} className="relative aspect-[16/10] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow group">
                     <img
                       src={src}
-                      alt={`${content.h1} — imagen ${i + 1}`}
+                      alt={`${content.h1} — imagen ${i + 1} de referencia generada con IA`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading={i < 3 ? 'eager' : 'lazy'}
                     />
@@ -220,6 +221,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 ))}
               </div>
             </div>
+            <ImageDisclaimerNote variant="gallery" />
           </section>
         )}
 
@@ -355,6 +357,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 </Button>
               </div>
             </div>
+            <ImageDisclaimerNote variant="apps" />
           </section>
         )}
 
