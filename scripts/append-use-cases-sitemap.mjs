@@ -36,6 +36,14 @@ const ROLE_SLUGS = [
   { es: 'sous-chef', en: 'sous-chef', fr: 'sous-chef', de: 'sous-chef', it: 'sous-chef', pt: 'sous-chef', nl: 'sous-chef' },
   { es: 'chef-catering', en: 'catering-chef', fr: 'chef-traiteur', de: 'catering-chef', it: 'chef-catering', pt: 'chef-catering', nl: 'cateringchef' },
   { es: 'propietario-empresa-catering', en: 'catering-business-owner', fr: 'proprietaire-entreprise-traiteur', de: 'cateringbetriebsbesitzer', it: 'proprietario-azienda-catering', pt: 'proprietario-empresa-catering', nl: 'cateringbedrijfseigenaar' },
+  { es: 'bartender-coctelero', en: 'bartender-mixologist', fr: 'bartender-mixologue', de: 'barkeeper-mixologe', it: 'bartender-mixologo', pt: 'bartender-mixologista', nl: 'bartender-mixoloog' },
+  { es: 'pizzero-pizzaiolo', en: 'pizzaiolo', fr: 'pizzaiolo', de: 'pizzaiolo', it: 'pizzaiolo', pt: 'pizzaiolo', nl: 'pizzaiolo' },
+  { es: 'panadero-artesanal', en: 'artisan-baker', fr: 'boulanger-artisan', de: 'handwerksbaecker', it: 'fornaio-artigianale', pt: 'padeiro-artesanal', nl: 'ambachtelijke-bakker' },
+  { es: 'chocolatero-bombonero', en: 'chocolatier', fr: 'chocolatier', de: 'chocolatier', it: 'cioccolatiere', pt: 'chocolateiro', nl: 'chocolatier' },
+  { es: 'chef-privado-personal-chef', en: 'private-personal-chef', fr: 'chef-prive-personnel', de: 'privatkoch-personal-chef', it: 'chef-privato-personale', pt: 'chef-privado-pessoal', nl: 'prive-chef-personal-chef' },
+  { es: 'fb-manager-hotel', en: 'hotel-fb-manager', fr: 'fb-manager-hotel', de: 'fb-manager-hotel', it: 'fb-manager-hotel', pt: 'fb-manager-hotel', nl: 'fb-manager-hotel' },
+  { es: 'maitre-jefe-sala', en: 'maitre-d-head-waiter', fr: 'maitre-d-hotel-chef-de-rang', de: 'maitre-oberkellner', it: 'maitre-capo-sala', pt: 'maitre-chefe-sala', nl: 'maitre-d-hoofdkelner' },
+  { es: 'sommelier', en: 'sommelier', fr: 'sommelier', de: 'sommelier', it: 'sommelier', pt: 'sommelier', nl: 'sommelier' },
 ];
 
 const CONCEPT_SLUGS = [
@@ -52,6 +60,12 @@ const CONCEPT_SLUGS = [
   { es: 'chocolateria-bomboneria', en: 'chocolate-shop', fr: 'chocolaterie', de: 'schokoladenmanufaktur', it: 'cioccolateria', pt: 'chocolataria', nl: 'chocolaterie' },
   { es: 'restaurante-creativo-autor', en: 'creative-signature-restaurant', fr: 'restaurant-creatif-auteur', de: 'kreatives-autorenrestaurant', it: 'ristorante-creativo-autore', pt: 'restaurante-criativo-autor', nl: 'creatief-auteursrestaurant' },
   { es: 'restaurante-gastronomico-michelin', en: 'fine-dining-michelin', fr: 'restaurant-gastronomique-etoile', de: 'gourmet-restaurant-michelin', it: 'ristorante-gastronomico-stellato', pt: 'restaurante-gastronomico-michelin', nl: 'gastronomisch-restaurant-michelin' },
+  { es: 'restaurante-mexicano', en: 'mexican-restaurant', fr: 'restaurant-mexicain', de: 'mexikanisches-restaurant', it: 'ristorante-messicano', pt: 'restaurante-mexicano', nl: 'mexicaans-restaurant' },
+  { es: 'restaurante-peruano', en: 'peruvian-restaurant', fr: 'restaurant-peruvien', de: 'peruanisches-restaurant', it: 'ristorante-peruviano', pt: 'restaurante-peruano', nl: 'peruaans-restaurant' },
+  { es: 'restaurante-japones', en: 'japanese-restaurant', fr: 'restaurant-japonais', de: 'japanisches-restaurant', it: 'ristorante-giapponese', pt: 'restaurante-japones', nl: 'japans-restaurant' },
+  { es: 'restaurante-nikkei', en: 'nikkei-restaurant', fr: 'restaurant-nikkei', de: 'nikkei-restaurant', it: 'ristorante-nikkei', pt: 'restaurante-nikkei', nl: 'nikkei-restaurant' },
+  { es: 'restaurante-plant-based-vegano', en: 'plant-based-vegan-restaurant', fr: 'restaurant-vegan-plant-based', de: 'plant-based-veganes-restaurant', it: 'ristorante-plant-based-vegano', pt: 'restaurante-plant-based-vegano', nl: 'plant-based-veganistisch-restaurant' },
+  { es: 'asador-parrilla-steakhouse', en: 'steakhouse-grill', fr: 'grill-steakhouse', de: 'steakhouse-grill', it: 'griglieria-steakhouse', pt: 'churrascaria-steakhouse', nl: 'steakhouse-grill' },
 ];
 
 const LANGS = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
