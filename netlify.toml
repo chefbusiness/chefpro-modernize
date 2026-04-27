@@ -5,6 +5,12 @@
 [functions]
   directory = "netlify/functions"
 
+# Edge Function for auto-detecting user language on root "/"
+# Runs first — only redirects on "/" so language-prefixed paths pass through
+[[edge_functions]]
+  function = "lang-redirect"
+  path = "/"
+
 # Edge Function for social media OG meta tags
 [[edge_functions]]
   function = "og-meta"

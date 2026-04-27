@@ -146,6 +146,13 @@ function detectNativePage(currentPath: string): Record<Language, string> | null 
   return null;
 }
 
+// Persist user's language choice in a cookie so the edge function
+// (netlify/edge-functions/lang-redirect.ts) honors it on subsequent visits.
+const persistLangCookie = (lang: Language) => {
+  if (typeof document === 'undefined') return;
+  document.cookie = `preferred-lang=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+};
+
 export const useLanguage = () => {
   const { i18n, t } = useTranslation();
   const { lang } = useParams<{ lang?: string }>();
@@ -157,6 +164,8 @@ export const useLanguage = () => {
       if (i18n.language !== lang) {
         i18n.changeLanguage(lang);
       }
+      // Save preference so the edge function won't override on next visit to "/"
+      persistLangCookie(lang as Language);
     } else if (lang) {
       // If invalid language in URL, redirect to Spanish (default)
       navigate('/', { replace: true });
@@ -165,6 +174,7 @@ export const useLanguage = () => {
 
   const changeLanguage = (newLang: Language) => {
     i18n.changeLanguage(newLang);
+    persistLangCookie(newLang);
 
     const currentPath = window.location.pathname;
     const isHomePage = currentPath === '/' || currentPath.match(/^\/[a-z]{2}$/);
