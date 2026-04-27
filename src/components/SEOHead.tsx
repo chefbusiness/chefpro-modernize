@@ -11,16 +11,20 @@ interface SEOHeadProps {
   ogImage?: string;
   ogType?: string;
   noindex?: boolean;
+  /** Set true on pages that emit their own page-specific hreflang block (e.g. use-cases),
+   * to avoid double-emit of incorrect prefix-substituted URLs. */
+  disableAutoHreflang?: boolean;
 }
 
-const SEOHead = ({ 
-  title, 
-  description, 
-  keywords, 
-  canonical, 
+const SEOHead = ({
+  title,
+  description,
+  keywords,
+  canonical,
   ogImage = "/og-image.jpg",
   ogType = "website",
-  noindex = false 
+  noindex = false,
+  disableAutoHreflang = false,
 }: SEOHeadProps) => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
@@ -71,19 +75,19 @@ const SEOHead = ({
       <link rel="canonical" href={canonicalUrl} />
       
       {/* Hreflang for International SEO */}
-      {languages.map(lang => {
+      {!disableAutoHreflang && languages.map(lang => {
         const langPath = lang === 'es' ? basePath : `/${lang}${basePath}`;
         const hrefLangUrl = `${siteUrl}${langPath}`.replace(/\/+/g, '/').replace(/\/$/, '') || siteUrl;
         return (
-          <link 
+          <link
             key={lang}
-            rel="alternate" 
-            hrefLang={lang} 
-            href={hrefLangUrl} 
+            rel="alternate"
+            hrefLang={lang}
+            href={hrefLangUrl}
           />
         );
       })}
-      <link rel="alternate" hrefLang="x-default" href={siteUrl} />
+      {!disableAutoHreflang && <link rel="alternate" hrefLang="x-default" href={siteUrl} />}
       
       {/* Open Graph */}
       <meta property="og:title" content={pageTitle} />

@@ -18,6 +18,90 @@ import { ArrowRight, CheckCircle, Sparkles, MessageSquare, X, Check } from 'luci
 
 const SITE_URL = 'https://aichef.pro';
 
+// URL segments per language. Mirrors App.tsx route definitions and useLanguage.ts.
+const SEGMENTS: Record<string, { hub: string; role: string; concept: string; task: string; locale: string; hubLabel: string }> = {
+  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea',   locale: 'es-ES', hubLabel: 'Casos de uso' },
+  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task',    locale: 'en-US', hubLabel: 'Use Cases' },
+  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache',   locale: 'fr-FR', hubLabel: 'Cas d’usage' },
+  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe', locale: 'de-DE', hubLabel: 'Anwendungsfälle' },
+  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito', locale: 'it-IT', hubLabel: 'Casi d’uso' },
+  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa',  locale: 'pt-PT', hubLabel: 'Casos de uso' },
+  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak',    locale: 'nl-NL', hubLabel: 'Use cases' },
+};
+
+// UI strings (fields rendered in JSX, not the per-spoke content). ES + EN are first-class;
+// other languages fall back to ES until full translation lands.
+const UI: Record<string, {
+  notFoundTitle: string;
+  notFoundLink: string;
+  ctaPrimary: string;
+  ctaSeePlans: string;
+  ctaFreeUses: string;
+  onboardingBadge: string;
+  defaultAppsTitle: string;
+  appsSubtitle: string;
+  seeAllAppsBtn: string;
+  beforeAfterTitle: string;
+  productsSubtitle: string;
+  productCardCta: string;
+  seeAllProductsBtn: string;
+  siblingHeadingRole: string;
+  siblingHeadingConcept: string;
+  siblingHeadingTask: string;
+  finalCtaSeeAllUseCases: string;
+  galleryAltSuffix: string;
+  serviceTypeRole: string;
+  serviceTypeConcept: string;
+  serviceTypeTask: string;
+}> = {
+  es: {
+    notFoundTitle: 'Caso de uso no encontrado',
+    notFoundLink: 'Ver todos los casos de uso',
+    ctaPrimary: 'Empezar gratis',
+    ctaSeePlans: 'Ver planes',
+    ctaFreeUses: '5 usos gratis al mes · Sin tarjeta',
+    onboardingBadge: 'Onboarding · ¿Quién Soy?',
+    defaultAppsTitle: 'Apps especializadas que vas a usar',
+    appsSubtitle: 'Agentes IA reales del catálogo de AI Chef Pro, organizados por categoría oficial de la plataforma.',
+    seeAllAppsBtn: 'Ver todas las apps en la plataforma',
+    beforeAfterTitle: 'El Antes y el Después',
+    productsSubtitle: 'Plantillas, kits y guías diseñadas para este caso de uso. Listas para descargar y usar.',
+    productCardCta: 'Ver detalle',
+    seeAllProductsBtn: 'Ver todos los productos',
+    siblingHeadingRole: 'También Útil Para',
+    siblingHeadingConcept: 'Otros Conceptos Similares',
+    siblingHeadingTask: 'Otras Tareas Relacionadas',
+    finalCtaSeeAllUseCases: 'Ver todos los casos de uso',
+    galleryAltSuffix: 'imagen %N de referencia generada con IA',
+    serviceTypeRole: 'Software de IA para hostelería por rol profesional',
+    serviceTypeConcept: 'Software de IA para hostelería por concepto de negocio',
+    serviceTypeTask: 'Software de IA para hostelería por tarea operativa',
+  },
+  en: {
+    notFoundTitle: 'Use case not found',
+    notFoundLink: 'See all use cases',
+    ctaPrimary: 'Start free',
+    ctaSeePlans: 'See plans',
+    ctaFreeUses: '5 free uses per month · No credit card',
+    onboardingBadge: 'Onboarding · Who Am I?',
+    defaultAppsTitle: 'Specialist apps you’ll be using',
+    appsSubtitle: 'Real AI agents from the AI Chef Pro catalog, grouped by their official platform category.',
+    seeAllAppsBtn: 'See all apps on the platform',
+    beforeAfterTitle: 'Before & After',
+    productsSubtitle: 'Templates, kits and guides built for this use case. Ready to download and use.',
+    productCardCta: 'See details',
+    seeAllProductsBtn: 'See all products',
+    siblingHeadingRole: 'Also Useful For',
+    siblingHeadingConcept: 'Similar Concepts',
+    siblingHeadingTask: 'Related Tasks',
+    finalCtaSeeAllUseCases: 'See all use cases',
+    galleryAltSuffix: 'reference image %N generated with AI',
+    serviceTypeRole: 'AI software for hospitality by professional role',
+    serviceTypeConcept: 'AI software for hospitality by business concept',
+    serviceTypeTask: 'AI software for hospitality by operational task',
+  },
+};
+
 const COLOR_THEMES: Record<string, { bg: string; text: string; border: string; gradient: string }> = {
   amber: { bg: 'bg-amber-500/10', text: 'text-amber-600', border: 'border-amber-200', gradient: 'from-amber-500/10 via-background to-amber-500/5' },
   blue: { bg: 'bg-blue-500/10', text: 'text-blue-600', border: 'border-blue-200', gradient: 'from-blue-500/10 via-background to-blue-500/5' },
@@ -45,17 +129,22 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const { currentLanguage, getAppUrl } = useLanguage();
   const lang = currentLanguage as LangCode;
   const APP_URL = getAppUrl(currentLanguage);
+  const ui = UI[lang] || UI.es;
+  const segs = SEGMENTS[lang] || SEGMENTS.es;
+  const typeSegment = type === 'role' ? segs.role : type === 'concept' ? segs.concept : segs.task;
+  const hubPath = `/${segs.hub}`;
 
   const useCase: UseCase | undefined = ALL_USE_CASES.find(
     uc => uc.type === type && Object.values(uc.slug).includes(slug || '')
   );
 
   if (!useCase) {
+    const notFoundHubHref = lang === 'es' ? hubPath : `/${lang}${hubPath}`;
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold mb-4">Caso de uso no encontrado</h1>
-          <Link to="/usos" className="text-primary underline">Ver todos los casos de uso</Link>
+          <h1 className="text-3xl font-bold mb-4">{ui.notFoundTitle}</h1>
+          <Link to={notFoundHubHref} className="text-primary underline">{ui.notFoundLink}</Link>
         </div>
       </div>
     );
@@ -67,9 +156,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const products = getProductsByIds(content.productIds);
 
   const langPrefix = lang === 'es' ? '' : `/${lang}`;
-  const typeSegment = type === 'role' ? 'rol' : type === 'concept' ? 'concepto' : 'tarea';
   const canonicalSlug = useCase.slug[lang] || useCase.slug.es;
-  const canonicalUrl = `${SITE_URL}${langPrefix}/usos/${typeSegment}/${canonicalSlug}`;
+  const canonicalUrl = `${SITE_URL}${langPrefix}/${segs.hub}/${typeSegment}/${canonicalSlug}`;
 
   const siblingUseCases = getUseCasesByType(type)
     .filter(uc => uc.id !== useCase.id)
@@ -81,7 +169,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
     '@id': `${canonicalUrl}#breadcrumb`,
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Casos de uso', item: `${SITE_URL}${langPrefix}/usos` },
+      { '@type': 'ListItem', position: 2, name: segs.hubLabel, item: `${SITE_URL}${langPrefix}/${segs.hub}` },
       { '@type': 'ListItem', position: 3, name: content.h1 },
     ],
   };
@@ -107,8 +195,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
       url: SITE_URL,
       logo: `${SITE_URL}/og-image.jpg`,
     },
-    areaServed: ['ES', 'EU', 'LATAM'],
-    serviceType: type === 'role' ? 'Software de IA para hostelería por rol profesional' : type === 'concept' ? 'Software de IA para hostelería por concepto de negocio' : 'Software de IA para hostelería por tarea operativa',
+    areaServed: lang === 'en' ? ['US', 'UK', 'CA', 'AU', 'EU'] : ['ES', 'EU', 'LATAM'],
+    serviceType: type === 'role' ? ui.serviceTypeRole : type === 'concept' ? ui.serviceTypeConcept : ui.serviceTypeTask,
     audience: {
       '@type': 'Audience',
       audienceType: content.badge,
@@ -131,7 +219,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
     name: content.seo.title,
     description: content.seo.description,
     url: canonicalUrl,
-    inLanguage: lang === 'es' ? 'es-ES' : lang,
+    inLanguage: segs.locale,
     isPartOf: {
       '@type': 'WebSite',
       name: 'AI Chef Pro',
@@ -151,15 +239,18 @@ export default function UseCasePage({ type }: UseCasePageProps) {
         description={content.seo.description}
         keywords={content.seo.keywords}
         canonical={canonicalUrl}
+        disableAutoHreflang
       />
       <Helmet>
         {(['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'] as LangCode[]).map(l => {
+          const altSegs = SEGMENTS[l];
           const altSlug = useCase.slug[l];
+          const altType = type === 'role' ? altSegs.role : type === 'concept' ? altSegs.concept : altSegs.task;
           const altPrefix = l === 'es' ? '' : `/${l}`;
-          const href = `${SITE_URL}${altPrefix}/usos/${typeSegment}/${altSlug}`;
+          const href = `${SITE_URL}${altPrefix}/${altSegs.hub}/${altType}/${altSlug}`;
           return <link key={l} rel="alternate" hrefLang={l} href={href} />;
         })}
-        <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/usos/${typeSegment}/${useCase.slug.es}`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/${SEGMENTS.es.hub}/${SEGMENTS.es[type]}/${useCase.slug.es}`} />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
@@ -189,13 +280,13 @@ export default function UseCasePage({ type }: UseCasePageProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
-                  Empezar gratis <ArrowRight className="ml-2 h-5 w-5" />
+                  {ui.ctaPrimary} <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
-                  Ver planes
+                  {ui.ctaSeePlans}
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground mt-4">5 usos gratis al mes · Sin tarjeta</p>
+              <p className="text-sm text-muted-foreground mt-4">{ui.ctaFreeUses}</p>
             </div>
           </div>
         </section>
@@ -213,7 +304,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                   <div key={i} className="relative aspect-[16/10] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow group">
                     <img
                       src={src}
-                      alt={`${content.h1} — imagen ${i + 1} de referencia generada con IA`}
+                      alt={`${content.h1} — ${ui.galleryAltSuffix.replace('%N', String(i + 1))}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading={i < 3 ? 'eager' : 'lazy'}
                     />
@@ -221,7 +312,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 ))}
               </div>
             </div>
-            <ImageDisclaimerNote variant="gallery" />
+            <ImageDisclaimerNote variant="gallery" lang={lang} />
           </section>
         )}
 
@@ -237,7 +328,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                         <MessageSquare className={`h-8 w-8 ${theme.text}`} />
                       </div>
                       <div>
-                        <Badge className="mb-3 text-xs">Onboarding · ¿Quién Soy?</Badge>
+                        <Badge className="mb-3 text-xs">{ui.onboardingBadge}</Badge>
                         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
                         <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                           <LinkifyText text={content.personalizationBody!} appUrl={APP_URL} />
@@ -324,8 +415,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           <section className="py-20">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12 max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-4">{content.appsTitle || 'Apps especializadas que vas a usar'}</h2>
-                <p className="text-muted-foreground">Agentes IA reales del catálogo de AI Chef Pro, organizados por categoría oficial de la plataforma.</p>
+                <h2 className="text-3xl font-bold text-foreground mb-4">{content.appsTitle || ui.defaultAppsTitle}</h2>
+                <p className="text-muted-foreground">{ui.appsSubtitle}</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
                 {content.apps.map((app, i) => (
@@ -353,11 +444,11 @@ export default function UseCasePage({ type }: UseCasePageProps) {
               </div>
               <div className="text-center mt-10">
                 <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
-                  Ver todas las apps en la plataforma <ArrowRight className="ml-2 h-4 w-4" />
+                  {ui.seeAllAppsBtn} <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
-            <ImageDisclaimerNote variant="apps" />
+            <ImageDisclaimerNote variant="apps" lang={lang} />
           </section>
         )}
 
@@ -389,7 +480,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           <section className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">
               <div className="text-center mb-12 max-w-3xl mx-auto">
-                <h2 className="text-3xl font-bold text-foreground mb-4">El Antes y el Después</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-4">{ui.beforeAfterTitle}</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <Card className="border-2 border-red-200 shadow-md">
@@ -436,7 +527,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-foreground mb-4">{content.productsTitle}</h2>
-              <p className="text-muted-foreground">Plantillas, kits y guías diseñadas para este caso de uso. Listas para descargar y usar.</p>
+              <p className="text-muted-foreground">{ui.productsSubtitle}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {products.map(p => (
@@ -451,7 +542,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                     <CardContent>
                       <p className="text-muted-foreground text-sm mb-4">{p.description}</p>
                       <div className="flex items-center text-primary text-sm font-semibold">
-                        Ver detalle <ArrowRight className="ml-1 h-4 w-4" />
+                        {ui.productCardCta} <ArrowRight className="ml-1 h-4 w-4" />
                       </div>
                     </CardContent>
                   </Card>
@@ -460,8 +551,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             </div>
             <div className="text-center mt-12">
               <Button asChild variant="outline" size="lg">
-                <Link to="/productos-digitales">
-                  Ver todos los productos <ArrowRight className="ml-2 h-4 w-4" />
+                <Link to={lang === 'es' ? '/productos-digitales' : `/${lang}/productos-digitales`}>
+                  {ui.seeAllProductsBtn} <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
@@ -511,7 +602,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-2xl font-bold text-foreground mb-2">
-                  {type === 'role' ? 'También Útil Para' : type === 'concept' ? 'Otros Conceptos Similares' : 'Otras Tareas Relacionadas'}
+                  {type === 'role' ? ui.siblingHeadingRole : type === 'concept' ? ui.siblingHeadingConcept : ui.siblingHeadingTask}
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -521,7 +612,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                   const sibSlug = sib.slug[lang] || sib.slug.es;
                   const SibIcon = getIconComponent(sib.iconKey);
                   return (
-                    <Link key={sib.id} to={`${langPrefix}/usos/${typeSegment}/${sibSlug}`}>
+                    <Link key={sib.id} to={`${langPrefix}/${segs.hub}/${typeSegment}/${sibSlug}`}>
                       <Card className="h-full hover:shadow-lg transition-shadow">
                         <CardHeader>
                           <div className={`w-12 h-12 ${sibTheme.bg} rounded-xl flex items-center justify-center mb-3`}>
@@ -548,10 +639,10 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">{content.ctaSubtitle}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
-                Empezar gratis <ArrowRight className="ml-2 h-5 w-5" />
+                {ui.ctaPrimary} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/usos"><CheckCircle className="mr-2 h-4 w-4" /> Ver todos los casos de uso</Link>
+                <Link to={`${langPrefix}/${segs.hub}`}><CheckCircle className="mr-2 h-4 w-4" /> {ui.finalCtaSeeAllUseCases}</Link>
               </Button>
             </div>
           </div>
