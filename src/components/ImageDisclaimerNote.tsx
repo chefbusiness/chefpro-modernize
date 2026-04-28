@@ -62,8 +62,8 @@ const COPY: Record<Lang, {
 export default function ImageDisclaimerNote({ variant = 'apps', lang = 'es' }: ImageDisclaimerNoteProps) {
   const t = COPY[lang] && Object.keys(COPY[lang]).length > 0 ? COPY[lang] : COPY.es;
   return (
-    <div className="container mx-auto px-4 -mt-6 mb-12">
-      <Card className="max-w-4xl mx-auto border-dashed bg-muted/30">
+    <div className="container mx-auto px-4 mt-10">
+      <Card className="max-w-4xl mx-auto border-dashed bg-card">
         <CardContent className="py-6 px-6 md:px-8">
           <div className="flex items-start gap-3 mb-4">
             <Sparkles className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
