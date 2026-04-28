@@ -387,6 +387,274 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og/use-cases/restaurante-gastronomico.jpg',
   },
 
+  // ── Use Cases EN — Hub ──
+  '/en/use-cases': {
+    title: 'AI Chef Pro Use Cases: by professional role and business concept | AI Chef Pro',
+    description: 'See how to use AI Chef Pro by professional profile or hospitality concept: executive chef, owner, manager, pizzeria, dark kitchen, hotel, catering, and more.',
+    image: 'https://aichef.pro/og/use-cases/hub.jpg',
+  },
+
+  // ── Use Cases EN — Roles ──
+  '/en/use-cases/role/restaurant-owner': {
+    title: 'AI for Restaurant Owners | AI Chef Pro',
+    description: 'Make better decisions: recipe costing, financial plan, HACCP, and marketing with AI built for hospitality.',
+    image: 'https://aichef.pro/og/use-cases/propietario-restaurante.jpg',
+  },
+  '/en/use-cases/role/restaurant-manager': {
+    title: 'AI for Restaurant Managers | AI Chef Pro',
+    description: 'Optimize shifts, inventory, HACCP, and reporting with AI. Digital toolbox for managers.',
+    image: 'https://aichef.pro/og/use-cases/gerente-restaurante.jpg',
+  },
+  '/en/use-cases/role/operations-director-restaurant-group': {
+    title: 'AI for Multi-Unit Operations Directors | AI Chef Pro',
+    description: 'Standardize processes, consolidate KPIs, and replicate operational manuals across multi-unit groups with AI.',
+    image: 'https://aichef.pro/og/use-cases/director-operaciones-grupo.jpg',
+  },
+  '/en/use-cases/role/executive-corporate-chef': {
+    title: 'AI for Executive & Corporate Chefs | AI Chef Pro',
+    description: 'Standardize recipes, calculate plate costs, and build replicable manuals across multiple units with culinary AI.',
+    image: 'https://aichef.pro/og/use-cases/chef-ejecutivo.jpg',
+  },
+  '/en/use-cases/role/head-chef': {
+    title: 'AI for Head Chefs | AI Chef Pro',
+    description: 'Recipe costing, spec sheets, HACCP, and team training with professional culinary AI.',
+    image: 'https://aichef.pro/og/use-cases/chef-cocina.jpg',
+  },
+  '/en/use-cases/role/sous-chef': {
+    title: 'AI for Sous Chefs | AI Chef Pro',
+    description: 'Mise en place, spec sheets, HACCP, and training with AI built for sous chefs in professional kitchens.',
+    image: 'https://aichef.pro/og/use-cases/sous-chef.jpg',
+  },
+  '/en/use-cases/role/catering-chef': {
+    title: 'AI for Catering Chefs | AI Chef Pro',
+    description: 'Per-event recipe costing, production at scale, off-site HACCP, and menu design with culinary AI.',
+    image: 'https://aichef.pro/og/use-cases/chef-catering.jpg',
+  },
+  '/en/use-cases/role/catering-business-owner': {
+    title: 'AI for Catering Company Owners | AI Chef Pro',
+    description: 'Per-event profitability, production at scale, temporary-team management, and financial plan for catering.',
+    image: 'https://aichef.pro/og/use-cases/propietario-catering.jpg',
+  },
+  '/en/use-cases/role/bartender-mixologist': {
+    title: 'AI for Bartenders & Mixologists | AI Chef Pro',
+    description: 'Cocktail menu costing, signature drinks with storytelling, pairings, and bar HACCP with culinary AI.',
+    image: 'https://aichef.pro/og/use-cases/bartender-coctelero.jpg',
+  },
+  '/en/use-cases/role/pizzaiolo': {
+    title: 'AI for Pizzaiolos & Pizza Chefs | AI Chef Pro',
+    description: 'Doughs and fermentations, per-pizza costing, oven technique, and HACCP with professional Italian-cooking AI.',
+    image: 'https://aichef.pro/og/use-cases/pizzero.jpg',
+  },
+  '/en/use-cases/role/artisan-baker': {
+    title: 'AI for Artisan Bakers | AI Chef Pro',
+    description: 'Sourdough and pre-ferments, per-piece costing with production-kitchen labor cost, and HACCP for artisan baking.',
+    image: 'https://aichef.pro/og/use-cases/panadero.jpg',
+  },
+  '/en/use-cases/role/chocolatier': {
+    title: 'AI for Chocolatiers | AI Chef Pro',
+    description: 'Bonbons, tempering, per-piece costing, seasonal planning, and HACCP for signature artisan chocolate making.',
+    image: 'https://aichef.pro/og/use-cases/chocolatero.jpg',
+  },
+  '/en/use-cases/role/private-personal-chef': {
+    title: 'AI for Private & Personal Chefs | AI Chef Pro',
+    description: 'Personalized menus, per-dinner costing, in-home mise, and signature branding for professional private chefs.',
+    image: 'https://aichef.pro/og/use-cases/chef-privado.jpg',
+  },
+  '/en/use-cases/role/hotel-fb-manager': {
+    title: 'AI for Hotel F&B Managers | AI Chef Pro',
+    description: 'Coordinate restaurants, banquets, room service, breakfast, and bars with cross-outlet recipe costing and integrated branding.',
+    image: 'https://aichef.pro/og/use-cases/fb-manager-hotel.jpg',
+  },
+  '/en/use-cases/role/maitre-d-head-waiter': {
+    title: 'AI for Maîtres & Floor Managers | AI Chef Pro',
+    description: 'Floor service, premium reservations, pairings, and team training with culinary AI for fine-dining service.',
+    image: 'https://aichef.pro/og/use-cases/maitre-jefe-sala.jpg',
+  },
+  '/en/use-cases/role/sommelier': {
+    title: 'AI for Sommeliers | AI Chef Pro',
+    description: 'Wine list, food-science pairings, cellar traceability, and wine-driven branding for professional sommellerie.',
+    image: 'https://aichef.pro/og/use-cases/sommelier.jpg',
+  },
+  '/en/use-cases/role/master-grillmaster': {
+    title: 'AI for Master Grill Chefs & Asadores | AI Chef Pro',
+    description: 'Fire technique, butchering, dry-aged, per-cut recipe costing, and fire-driven branding for professional grill cooking.',
+    image: 'https://aichef.pro/og/use-cases/maestro-asador-parrillero.jpg',
+  },
+  '/en/use-cases/role/master-gelato-maker': {
+    title: 'AI for Master Ice Cream Makers & Gelatieri | AI Chef Pro',
+    description: 'Technical balance of bases, per-flavor costing, seasonal planning, and artisan branding for professional ice cream making.',
+    image: 'https://aichef.pro/og/use-cases/maestro-heladero.jpg',
+  },
+  '/en/use-cases/role/pastry-chef': {
+    title: 'AI for Pastry Chefs & Pâtissiers | AI Chef Pro',
+    description: 'Advanced pastry technique, per-piece costing with production-kitchen labor cost, and seasonal planning for signature pastry.',
+    image: 'https://aichef.pro/og/use-cases/repostero-pastelero.jpg',
+  },
+
+  // ── Use Cases EN — Concepts ──
+  '/en/use-cases/concept/casual-restaurant': {
+    title: 'AI for Casual Restaurants | AI Chef Pro',
+    description: 'Recipe costing, HACCP, scheduling, and marketing with AI for casual restaurants. More control, less paperwork.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-casual.jpg',
+  },
+  '/en/use-cases/concept/cafe-brunch': {
+    title: 'AI for Coffee Shops & Brunch | AI Chef Pro',
+    description: 'Recipe costing, HACCP, shift checklists, and marketing with AI for specialty coffee shops and brunch spots.',
+    image: 'https://aichef.pro/og/use-cases/cafeteria-brunch.jpg',
+  },
+  '/en/use-cases/concept/pizzeria': {
+    title: 'AI for Pizzerias | AI Chef Pro',
+    description: 'Per-pizza recipe costing, delivery control, HACCP, and marketing with AI specialized in professional pizzeria.',
+    image: 'https://aichef.pro/og/use-cases/pizzeria.jpg',
+  },
+  '/en/use-cases/concept/burger-restaurant': {
+    title: 'AI for Burger Joints | AI Chef Pro',
+    description: 'Per-burger recipe costing, meat and delivery control, HACCP, and marketing with specialized AI.',
+    image: 'https://aichef.pro/og/use-cases/hamburgueseria.jpg',
+  },
+  '/en/use-cases/concept/dark-kitchen': {
+    title: 'AI for Dark Kitchens | AI Chef Pro',
+    description: 'Multi-brand recipe costing, platform management, HACCP, and branding for dark kitchens with specialized AI.',
+    image: 'https://aichef.pro/og/use-cases/dark-kitchen.jpg',
+  },
+  '/en/use-cases/concept/bakery-pastry-shop': {
+    title: 'AI for Pastry Shops & Production Kitchens | AI Chef Pro',
+    description: 'Per-piece costing, HACCP, traceability, and branding for pastry shops and production kitchens with specialized AI.',
+    image: 'https://aichef.pro/og/use-cases/pasteleria-obrador.jpg',
+  },
+  '/en/use-cases/concept/bar-cocktails': {
+    title: 'AI for Bars & Cocktails | AI Chef Pro',
+    description: 'Cocktail recipe costing, menus, HACCP, and branding with AI specialized in professional bar and mixology.',
+    image: 'https://aichef.pro/og/use-cases/bar-cocktails.jpg',
+  },
+  '/en/use-cases/concept/catering-events': {
+    title: 'AI for Catering & Events | AI Chef Pro',
+    description: 'Per-event recipe costing, production at scale, off-site HACCP, and commercial proposals with AI.',
+    image: 'https://aichef.pro/og/use-cases/catering-eventos.jpg',
+  },
+  '/en/use-cases/concept/hotel-fb-complete': {
+    title: 'AI for Full-Service Hotels (F&B + Housekeeping) | AI Chef Pro',
+    description: 'Manage full F&B: breakfast, restaurant, bar, room service, and banquets with AI built for F&B Managers.',
+    image: 'https://aichef.pro/og/use-cases/hotel-completo.jpg',
+  },
+  '/en/use-cases/concept/artisan-ice-cream-shop': {
+    title: 'AI for Artisan Ice Cream Shops | AI Chef Pro',
+    description: 'Per-flavor recipe costing, production kitchen control, display, and HACCP with specialized AI for artisan ice cream.',
+    image: 'https://aichef.pro/og/use-cases/heladeria.jpg',
+  },
+  '/en/use-cases/concept/chocolate-shop': {
+    title: 'AI for Chocolate Shops & Bonbon Shops | AI Chef Pro',
+    description: 'Per-piece costing, seasonal production, HACCP, and branding with AI specialized in chocolate making.',
+    image: 'https://aichef.pro/og/use-cases/chocolateria.jpg',
+  },
+  '/en/use-cases/concept/creative-signature-restaurant': {
+    title: 'AI for Creative & Signature Restaurants | AI Chef Pro',
+    description: 'Brainstorming, recipe costing, spec sheets, and storytelling for signature restaurants with culinary AI.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-creativo.jpg',
+  },
+  '/en/use-cases/concept/fine-dining-michelin': {
+    title: 'AI for Fine Dining (Michelin / Repsol) | AI Chef Pro',
+    description: 'Premium recipe costing, tasting menus, brigade, and communication with AI specialized in fine dining.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-gastronomico.jpg',
+  },
+  '/en/use-cases/concept/mexican-restaurant': {
+    title: 'AI for Mexican Restaurants | AI Chef Pro',
+    description: 'Salsas, per-taco recipe costing, holiday planning, branding, and HACCP with AI specialized in authentic Mexican cuisine.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-mexicano.jpg',
+  },
+  '/en/use-cases/concept/peruvian-restaurant': {
+    title: 'AI for Peruvian Restaurants | AI Chef Pro',
+    description: 'Ceviches, per-dish costing, holiday planning, branding, and HACCP with AI specialized in authentic Peruvian cuisine.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-peruano.jpg',
+  },
+  '/en/use-cases/concept/japanese-restaurant': {
+    title: 'AI for Japanese Restaurants | AI Chef Pro',
+    description: 'Sushi, per-piece recipe costing, ferments, holiday planning, and minimalist branding for professional Japanese cooking.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-japones.jpg',
+  },
+  '/en/use-cases/concept/nikkei-restaurant': {
+    title: 'AI for Nikkei Restaurants | AI Chef Pro',
+    description: 'Tiraditos, fusion sushi, per-dish costing, and branding with AI specialized in authentic Peruvian-Japanese fusion.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-nikkei.jpg',
+  },
+  '/en/use-cases/concept/plant-based-vegan-restaurant': {
+    title: 'AI for Plant-Based & Vegan Restaurants | AI Chef Pro',
+    description: 'Plant-based menus, per-bowl costing, vegetable ferments, and fresh branding for professional plant-based cooking.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-plant-based.jpg',
+  },
+  '/en/use-cases/concept/steakhouse-grill': {
+    title: 'AI for Steakhouses, Grills & Asadores | AI Chef Pro',
+    description: 'Per-cut recipe costing, dry-aged management, fire technique, and branding for professional fire cooking.',
+    image: 'https://aichef.pro/og/use-cases/asador-parrilla-steakhouse.jpg',
+  },
+  '/en/use-cases/concept/specialty-coffee-shop': {
+    title: 'AI for Specialty Coffee Shops | AI Chef Pro',
+    description: 'Per-drink recipe costing, in-house pastry, third-wave technique, and minimalist branding for specialty coffee.',
+    image: 'https://aichef.pro/og/use-cases/coffee-shop-specialty.jpg',
+  },
+  '/en/use-cases/concept/sushi-bar': {
+    title: 'AI for Sushi Bars | AI Chef Pro',
+    description: 'Itamae technique, per-nigiri recipe costing, signature omakase, and minimalist branding for professional sushi bars.',
+    image: 'https://aichef.pro/og/use-cases/sushi-bar.jpg',
+  },
+  '/en/use-cases/concept/gastrobar-tapas-bar': {
+    title: 'AI for Gastrobars & Tapas Bars | AI Chef Pro',
+    description: 'Per-tapa recipe costing, vermouth and wines by the glass, pairings, and HACCP with AI specialized in Spanish cuisine.',
+    image: 'https://aichef.pro/og/use-cases/gastrobar-tapas.jpg',
+  },
+  '/en/use-cases/concept/food-truck': {
+    title: 'AI for Food Trucks | AI Chef Pro',
+    description: 'Compact menu, per-dish recipe costing, event planning, viral branding, and HACCP for professional food-truck operations.',
+    image: 'https://aichef.pro/og/use-cases/food-truck.jpg',
+  },
+  '/en/use-cases/concept/italian-restaurant': {
+    title: 'AI for Italian Restaurants | AI Chef Pro',
+    description: 'Fresh pasta, per-dish recipe costing, traditional sauces, Italian wines, and trattoria branding for professional Italian cooking.',
+    image: 'https://aichef.pro/og/use-cases/restaurante-italiano.jpg',
+  },
+
+  // ── Use Cases EN — Tasks ──
+  '/en/use-cases/task/recipe-costing-with-ai': {
+    title: 'How to Do Recipe Costing with AI | AI Chef Pro',
+    description: 'Calculate real per-dish cost, food cost %, and suggested price in minutes with culinary AI. Recipe + costing CSV with production-kitchen labor cost.',
+    image: 'https://aichef.pro/og/use-cases/task-escandallos-con-ia.jpg',
+  },
+  '/en/use-cases/task/tasting-menu-with-ai': {
+    title: 'How to Design a Tasting Menu with AI | AI Chef Pro',
+    description: 'Tasting menus with coherent sequence, validated total recipe costing, food-science pairings, and floor storytelling.',
+    image: 'https://aichef.pro/og/use-cases/task-menu-degustacion-con-ia.jpg',
+  },
+  '/en/use-cases/task/technical-recipe-sheets-with-ai': {
+    title: 'How to Create Spec Sheets with AI | AI Chef Pro',
+    description: 'Document every dish with a professional spec sheet: ingredients, gram weights, technique, automatic allergens, food cost, and storytelling.',
+    image: 'https://aichef.pro/og/use-cases/task-fichas-tecnicas-con-ia.jpg',
+  },
+  '/en/use-cases/task/wine-pairings-with-ai': {
+    title: 'How to Validate Pairings with AI | AI Chef Pro',
+    description: 'Pairings with food-science backing: acidity, tannin, structure, intensity, and harmony. AI suite with professional sommelier technique.',
+    image: 'https://aichef.pro/og/use-cases/task-maridajes-con-ia.jpg',
+  },
+  '/en/use-cases/task/reduce-food-waste-with-ai': {
+    title: 'How to Reduce Kitchen Shrinkage with AI | AI Chef Pro',
+    description: 'Identify, measure, and reduce per-process shrinkage with real data integrated into recipe costing. AI suite specialized in zero-waste operations.',
+    image: 'https://aichef.pro/og/use-cases/task-reducir-mermas-con-ia.jpg',
+  },
+  '/en/use-cases/task/digital-haccp-with-ai': {
+    title: 'How to Manage Digital HACCP with AI | AI Chef Pro',
+    description: 'Replace scattered printed paper with mobile HACCP using professional templates: temperatures, cleaning, traceability, allergens, pests, oil, and water.',
+    image: 'https://aichef.pro/og/use-cases/task-appcc-digital-con-ia.jpg',
+  },
+  '/en/use-cases/task/seasonal-menu-with-ai': {
+    title: 'How to Design a Seasonal Menu with AI | AI Chef Pro',
+    description: 'Seasonal menu with local in-season product, professional recipe costing, advance planning, and producer storytelling.',
+    image: 'https://aichef.pro/og/use-cases/task-carta-estacional-con-ia.jpg',
+  },
+  '/en/use-cases/task/food-photography-with-ai': {
+    title: 'How to Do Food Photography with AI | AI Chef Pro',
+    description: 'Generate a professional reference image of the dish before cooking to validate plating, palette, and composition. Then take the final photo of the real dish.',
+    image: 'https://aichef.pro/og/use-cases/task-foto-gastronomica-con-ia.jpg',
+  },
+
   // ── Legal Pages ──
   '/legales': {
     title: 'Aviso Legal | AI Chef Pro',
@@ -441,8 +709,32 @@ export default async (request: Request) => {
 
   const og = OG_DATA[path];
 
+  // Detect language from path prefix. ES is the default; other supported locales use a /xx/ prefix.
+  const langCode = (() => {
+    const m = path.match(/^\/(en|fr|de|it|pt|nl)(\/|$)/);
+    return m ? m[1] : 'es';
+  })();
+  const ogLocale = ({
+    es: 'es_ES',
+    en: 'en_US',
+    fr: 'fr_FR',
+    de: 'de_DE',
+    it: 'it_IT',
+    pt: 'pt_PT',
+    nl: 'nl_NL',
+  } as const)[langCode] ?? 'es_ES';
+  const viewLink = ({
+    es: 'Ver',
+    en: 'View',
+    fr: 'Voir',
+    de: 'Anzeigen',
+    it: 'Vedi',
+    pt: 'Ver',
+    nl: 'Bekijken',
+  } as const)[langCode] ?? 'Ver';
+
   const html = `<!DOCTYPE html>
-<html lang="es">
+<html lang="${langCode}">
 <head>
   <meta charset="UTF-8" />
   <title>${og.title}</title>
@@ -455,7 +747,7 @@ export default async (request: Request) => {
   <meta property="og:url" content="https://aichef.pro${path}" />
   <meta property="og:type" content="${og.price ? 'product' : 'website'}" />
   <meta property="og:site_name" content="AI Chef Pro" />
-  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale" content="${ogLocale}" />
   ${og.price ? `<meta property="product:price:amount" content="${og.price}" />
   <meta property="product:price:currency" content="EUR" />` : ''}
   <meta name="twitter:card" content="summary_large_image" />
@@ -467,7 +759,7 @@ export default async (request: Request) => {
 <body>
   <h1>${og.title}</h1>
   <p>${og.description}</p>
-  <a href="https://aichef.pro${path}">Ver producto</a>
+  <a href="https://aichef.pro${path}">${viewLink}</a>
 </body>
 </html>`;
 
