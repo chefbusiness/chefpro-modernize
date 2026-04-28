@@ -448,7 +448,6 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 </Button>
               </div>
             </div>
-            <ImageDisclaimerNote variant="apps" lang={lang} />
           </section>
         )}
 
