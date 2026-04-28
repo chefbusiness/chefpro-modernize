@@ -239,6 +239,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
         description={content.seo.description}
         keywords={content.seo.keywords}
         canonical={canonicalUrl}
+        ogImage={content.seo.ogImage}
         disableAutoHreflang
       />
       <Helmet>
