@@ -114,6 +114,15 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
   return out;
 }
 
+// Whether the spoke has a real translation in `lang` (vs. ES fallback baked in by makeContent).
+// Use this for hub-card filtering and any "real translation only" logic. The runtime spoke
+// page is fine with falling back to ES — the hub should not advertise mixed-language cards.
+export function hasNativeContent(id: string, lang: LangCode): boolean {
+  if (lang === 'es') return id in USE_CASES_CONTENT_ES;
+  if (lang === 'en') return id in USE_CASES_CONTENT_EN;
+  return false;
+}
+
 export const USE_CASES: UseCase[] = [
   {
     id: 'propietario-restaurante',

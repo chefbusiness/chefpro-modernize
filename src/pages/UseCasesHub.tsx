@@ -11,7 +11,7 @@ import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
 import { useLanguage } from '@/hooks/useLanguage';
-import { getUseCasesByType, type LangCode } from '@/data/use-cases';
+import { getUseCasesByType, hasNativeContent, type LangCode } from '@/data/use-cases';
 import { ArrowRight, Briefcase, Building2, Sparkles } from 'lucide-react';
 
 const SITE_URL = 'https://aichef.pro';
@@ -119,13 +119,13 @@ export default function UseCasesHub() {
 
   const productsHref = `${langPrefix}/productos-digitales`;
 
-  // Only show cards whose content exists in the current language.
-  // For ES every spoke has content; for other langs we show only translated spokes
-  // so we never advertise a card with mixed-language copy.
+  // Only show cards with a real translation in the current language. `uc.content[lang]`
+  // is always truthy because makeContent backfills with ES — use hasNativeContent to detect
+  // the actual presence of a translation in the EN/etc. content map.
   const allRoles = getUseCasesByType('role');
   const allConcepts = getUseCasesByType('concept');
-  const roles = lang === 'es' ? allRoles : allRoles.filter(uc => uc.content[lang]);
-  const concepts = lang === 'es' ? allConcepts : allConcepts.filter(uc => uc.content[lang]);
+  const roles = lang === 'es' ? allRoles : allRoles.filter(uc => hasNativeContent(uc.id, lang));
+  const concepts = lang === 'es' ? allConcepts : allConcepts.filter(uc => hasNativeContent(uc.id, lang));
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
