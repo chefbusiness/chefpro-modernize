@@ -41,6 +41,7 @@ import ProPromptsEbook from "./pages/ProPromptsEbook";
 import ProPromptsLibrary from "./pages/ProPromptsLibrary";
 import KitEscandallos from "./pages/KitEscandallos";
 import ProductosDigitales from "./pages/ProductosDigitales";
+import AdminGenerateAccess from "./pages/AdminGenerateAccess";
 import UseCasesHub from "./pages/UseCasesHub";
 import UseCasePage from "./pages/UseCasePage";
 import AccessGate from "./pages/AccessGate";
@@ -309,6 +310,9 @@ const App = () => (
 
             {/* Productos Digitales Hub */}
             <Route path="/productos-digitales" element={<ProductosDigitales />} />
+
+            {/* Admin: Generate manual access link (password-protected via backend) */}
+            <Route path="/admin/generar-acceso" element={<AdminGenerateAccess />} />
 
             {/* Use Cases Hub + spokes (multilingual) */}
             <Route path="/usos" element={<UseCasesHub />} />
