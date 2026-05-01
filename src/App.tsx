@@ -44,6 +44,8 @@ import ProductosDigitales from "./pages/ProductosDigitales";
 import AdminGenerateAccess from "./pages/AdminGenerateAccess";
 import UseCasesHub from "./pages/UseCasesHub";
 import UseCasePage from "./pages/UseCasePage";
+import PSeoCitiesHub from "./pages/PSeoCitiesHub";
+import PSeoCityPage from "./pages/PSeoCityPage";
 import AccessGate from "./pages/AccessGate";
 import KitEscandallosAccessGate from "./pages/KitEscandallosAccessGate";
 import KitEscandallosDashboard from "./pages/KitEscandallosDashboard";
@@ -343,6 +345,14 @@ const App = () => (
             <Route path="/nl/use-cases/rol/:slug" element={<UseCasePage type="role" />} />
             <Route path="/nl/use-cases/concept/:slug" element={<UseCasePage type="concept" />} />
             <Route path="/nl/use-cases/taak/:slug" element={<UseCasePage type="task" />} />
+
+            {/* Programmatic SEO — Restaurantes por Ciudad (ES) */}
+            <Route path="/seo-restaurantes-por-ciudad" element={<PSeoCitiesHub />} />
+            <Route path="/abrir-restaurante/:ciudad" element={<PSeoCityPage modifier="abrir-restaurante" />} />
+            <Route path="/licencia-restaurante/:ciudad" element={<PSeoCityPage modifier="licencia-restaurante" />} />
+            <Route path="/software-gestion-restaurante/:ciudad" element={<PSeoCityPage modifier="software-gestion-restaurante" />} />
+            <Route path="/escandallo-restaurante/:ciudad" element={<PSeoCityPage modifier="escandallo-restaurante" />} />
+            <Route path="/plan-negocio-restaurante/:ciudad" element={<PSeoCityPage modifier="plan-negocio-restaurante" />} />
 
             {/* Kit de Escandallos Pro */}
             <Route path="/kit-escandallos" element={<KitEscandallos />} />
