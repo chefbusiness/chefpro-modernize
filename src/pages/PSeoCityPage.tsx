@@ -110,7 +110,7 @@ const PSeoCityPage = ({ modifier }: PSeoCityPageProps) => {
         description={fill(content.metaDescription)}
         keywords={fill(content.keywords)}
         canonical={canonicalUrl}
-        ogImage={`${SITE_URL}/og-image.jpg`}
+        ogImage={`${SITE_URL}/og-pseo-${modifier}.jpg`}
         disableAutoHreflang
       />
 
