@@ -958,6 +958,52 @@ export default function ProductosDigitales() {
           </div>
         </section>
 
+        {/* pSEO Cities cross-link */}
+        <section className="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-xs font-medium mb-3">
+                Recursos por ciudad
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                Lleva tu Plan a la <span className="text-[#FFD700]">Ciudad Donde Vas a Abrir</span>
+              </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto">
+                Combina nuestros kits y guías con datos verificados por ciudad: costes reales, licencias específicas, salarios sectoriales y los mejores barrios.
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-2 mb-6">
+              {[
+                { slug: 'madrid', label: 'Madrid' },
+                { slug: 'barcelona', label: 'Barcelona' },
+                { slug: 'valencia', label: 'Valencia' },
+                { slug: 'ciudad-de-mexico', label: 'CDMX' },
+                { slug: 'monterrey', label: 'Monterrey' },
+                { slug: 'bogota', label: 'Bogotá' },
+                { slug: 'medellin', label: 'Medellín' },
+                { slug: 'buenos-aires', label: 'Buenos Aires' },
+                { slug: 'santiago', label: 'Santiago' },
+              ].map((c) => (
+                <a
+                  key={c.slug}
+                  href={`/abrir-restaurante/${c.slug}`}
+                  className="px-4 py-2 rounded-full bg-white/5 hover:bg-[#FFD700]/15 hover:text-[#FFD700] text-gray-300 text-sm font-medium transition-colors border border-white/10"
+                >
+                  Abrir restaurante en {c.label}
+                </a>
+              ))}
+            </div>
+            <div className="text-center">
+              <a
+                href="/seo-restaurantes-por-ciudad"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFD700] text-black font-semibold hover:bg-[#FFD700]/90 transition-colors"
+              >
+                Ver las 15 ciudades + 5 recursos →
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* SEO content block */}
         <section className="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
           <div className="max-w-3xl mx-auto">

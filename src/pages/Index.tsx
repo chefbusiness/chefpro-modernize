@@ -8,6 +8,7 @@ import AppsFinder from '@/components/AppsFinder';
 import CreatividadShowcase from '@/components/CreatividadShowcase';
 import WorldCookbooks from '@/components/WorldCookbooks';
 import BusinessToolsShowcase from '@/components/BusinessToolsShowcase';
+import CityResourcesStrip from '@/components/CityResourcesStrip';
 import ModernAbout from '@/components/ModernAbout';
 import ModernFeatures from '@/components/ModernFeatures';
 import AIImageGallery from '@/components/AIImageGallery';
@@ -46,6 +47,7 @@ const Index = () => {
         <CreatividadShowcase />
         <WorldCookbooks />
         <BusinessToolsShowcase />
+        <CityResourcesStrip />
         <AIToolsBanner />
         <ModernFeatures />
         <FeaturedApps />

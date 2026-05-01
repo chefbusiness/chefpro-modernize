@@ -365,6 +365,16 @@ export default function ModernFooter() {
                   {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[lang] || 'Casos de uso'}
                 </a>
               </li>
+              {lang === 'es' && (
+                <li>
+                  <a
+                    href="/seo-restaurantes-por-ciudad"
+                    className="text-primary hover:text-primary/80 transition-colors font-medium"
+                  >
+                    Recursos por ciudad
+                  </a>
+                </li>
+              )}
               <li>
                 <a
                   href={getAppUrl(lang)}

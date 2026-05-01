@@ -201,7 +201,7 @@ export default function ModernHeader() {
                   {({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[currentLanguage] || 'Casos de uso'}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid w-[640px] gap-4 p-4 md:grid-cols-2">
+                  <div className={`grid gap-4 p-4 ${currentLanguage === 'es' ? 'w-[960px] md:grid-cols-3' : 'w-[640px] md:grid-cols-2'}`}>
                     <div className="space-y-2">
                       <h4 className="font-medium leading-none text-accent">
                         {({ es: 'Por rol profesional', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' } as Record<string, string>)[currentLanguage] || 'Por rol profesional'}
@@ -261,6 +261,30 @@ export default function ModernHeader() {
                         </NavigationMenuLink>
                       </div>
                     </div>
+                    {currentLanguage === 'es' && (
+                      <div className="space-y-2">
+                        <h4 className="font-medium leading-none text-accent">Por ciudad</h4>
+                        <div className="grid gap-1">
+                          {[
+                            { slug: 'madrid', label: 'Madrid' },
+                            { slug: 'barcelona', label: 'Barcelona' },
+                            { slug: 'ciudad-de-mexico', label: 'Ciudad de México' },
+                            { slug: 'bogota', label: 'Bogotá' },
+                            { slug: 'buenos-aires', label: 'Buenos Aires' },
+                          ].map((c, i) => (
+                            <NavigationMenuLink key={i} className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`/abrir-restaurante/${c.slug}`}>
+                              Abrir restaurante en {c.label}
+                            </NavigationMenuLink>
+                          ))}
+                          <NavigationMenuLink
+                            className="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1"
+                            href="/seo-restaurantes-por-ciudad"
+                          >
+                            Ver 15 ciudades + 5 recursos →
+                          </NavigationMenuLink>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>

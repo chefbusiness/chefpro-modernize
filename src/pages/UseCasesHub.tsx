@@ -243,6 +243,40 @@ export default function UseCasesHub() {
           </div>
         </section>
 
+        {/* pSEO Cities cross-link (ES only) */}
+        {lang === 'es' && (
+          <section className="py-16 bg-muted/30">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl lg:text-3xl font-bold mb-3">
+                  ¿Buscas Recursos por Ciudad?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Costes reales, licencias específicas, salarios sectoriales y mejores barrios para 15 ciudades de España y LATAM.
+                </p>
+              </div>
+              <div className="flex flex-wrap justify-center gap-2 mb-6">
+                {['madrid', 'barcelona', 'ciudad-de-mexico', 'bogota', 'medellin', 'buenos-aires', 'santiago'].map((slug) => (
+                  <Link
+                    key={slug}
+                    to={`/abrir-restaurante/${slug}`}
+                    className="px-4 py-2 bg-background hover:bg-accent/15 hover:text-accent rounded-full text-sm font-medium transition-colors border border-border"
+                  >
+                    Abrir restaurante en {slug === 'ciudad-de-mexico' ? 'CDMX' : slug === 'buenos-aires' ? 'Buenos Aires' : slug.charAt(0).toUpperCase() + slug.slice(1)}
+                  </Link>
+                ))}
+              </div>
+              <div className="text-center">
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/seo-restaurantes-por-ciudad">
+                    Ver todas las ciudades + 5 recursos <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/5">
           <div className="container mx-auto px-4 text-center">
