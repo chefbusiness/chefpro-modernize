@@ -91,6 +91,9 @@ import KitTareasRestauranteCreativoDashboard from "./pages/KitTareasRestauranteC
 import KitTareasChefPrivado from "./pages/KitTareasChefPrivado";
 import KitTareasChefPrivadoAccessGate from "./pages/KitTareasChefPrivadoAccessGate";
 import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard";
+import KitTareasSushiBar from "./pages/KitTareasSushiBar";
+import KitTareasSushiBarAccessGate from "./pages/KitTareasSushiBarAccessGate";
+import KitTareasSushiBarDashboard from "./pages/KitTareasSushiBarDashboard";
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
@@ -530,6 +533,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-chef-privado-jwt" redirectTo="/kit-tareas-chef-privado">
                   <KitTareasChefPrivadoDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Sushi Bar */}
+            <Route path="/kit-tareas-sushi-bar" element={<KitTareasSushiBar />} />
+            <Route path="/kit-tareas-sushi-bar-access" element={<KitTareasSushiBarAccessGate />} />
+            <Route
+              path="/kit-tareas-sushi-bar-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-sushi-bar-jwt" redirectTo="/kit-tareas-sushi-bar">
+                  <KitTareasSushiBarDashboard />
                 </ProtectedRoute>
               }
             />
