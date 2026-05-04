@@ -56,7 +56,7 @@ const products = [
     icon: Package,
     image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
     badge: '🎁 Mega Pack',
-    badgeColor: 'bg-emerald-500/20 text-emerald-400',
+    badgeColor: 'bg-emerald-500 text-white ring-1 ring-emerald-300/50',
     tags: ['excel', 'plantillas', 'bundle', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria', 'chef-privado'],
     featured: true,
   },
@@ -76,7 +76,7 @@ const products = [
     icon: FileSpreadsheet,
     image: '/kit-escandallos-hero.jpg',
     badge: '🔥 Más Vendido',
-    badgeColor: 'bg-orange-500/20 text-orange-400',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
@@ -95,7 +95,7 @@ const products = [
     icon: ShieldCheck,
     image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
     badge: '🔥 Más Vendido',
-    badgeColor: 'bg-orange-500/20 text-orange-400',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'plantillas', 'seguridad', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
@@ -114,7 +114,7 @@ const products = [
     icon: Package,
     image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
     badge: '🔥 Más Vendido',
-    badgeColor: 'bg-orange-500/20 text-orange-400',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
     tags: ['excel', 'plantillas', 'gestion', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
   },
   {
@@ -722,7 +722,7 @@ export default function ProductosDigitales() {
                   >
                     {/* Badge */}
                     <div className="absolute top-3 right-3 z-10">
-                      <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${product.badgeColor}`}>
+                      <span className={`px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm ${product.badgeColor}`}>
                         {product.badge}
                       </span>
                     </div>
