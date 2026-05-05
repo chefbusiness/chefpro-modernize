@@ -97,6 +97,9 @@ import KitTareasSushiBarDashboard from "./pages/KitTareasSushiBarDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
+import KitTareasMarisqueria from "./pages/KitTareasMarisqueria";
+import KitTareasMarisqueriaAccessGate from "./pages/KitTareasMarisqueriaAccessGate";
+import KitTareasMarisqueriaDashboard from "./pages/KitTareasMarisqueriaDashboard";
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
@@ -560,6 +563,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-asador-jwt" redirectTo="/kit-tareas-asador">
                   <KitTareasAsadorDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Marisquería */}
+            <Route path="/kit-tareas-marisqueria" element={<KitTareasMarisqueria />} />
+            <Route path="/kit-tareas-marisqueria-access" element={<KitTareasMarisqueriaAccessGate />} />
+            <Route
+              path="/kit-tareas-marisqueria-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-marisqueria-jwt" redirectTo="/kit-tareas-marisqueria">
+                  <KitTareasMarisqueriaDashboard />
                 </ProtectedRoute>
               }
             />

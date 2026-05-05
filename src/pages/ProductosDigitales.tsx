@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -591,6 +591,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion', 'asador', 'parrilla', 'josper'],
+  },
+  {
+    name: 'Tareas Recurrentes: Marisquería con Vivero y APPCC',
+    slug: '/kit-tareas-marisqueria',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para marisquería: control del vivero (oxígeno, salinidad, temperatura), expositor de hielo, trazabilidad APPCC y alérgenos de crustáceos y moluscos, lonjas y temporadas de pesca de España.',
+    features: [
+      'Vivero: oxígeno, salinidad, temperatura, mortalidad',
+      'Trazabilidad APPCC y alérgenos UE 1379/2013',
+      'Expositor de hielo y rotación FIFO',
+      'Temporadas de pesca y vedas oficiales España',
+    ],
+    icon: Shell,
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'marisqueria', 'pescado', 'marisco'],
   },
 ];
 

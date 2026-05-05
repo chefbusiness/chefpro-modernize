@@ -140,6 +140,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-asador.jpg',
     price: '14.00',
   },
+  '/kit-tareas-marisqueria': {
+    title: 'Kit Tareas Recurrentes: Marisquería con Vivero y APPCC | AI Chef Pro',
+    description: '11 checklists Excel: control vivero (oxígeno, salinidad), expositor de hielo, trazabilidad APPCC marisco (UE 1379/2013), alérgenos, lonjas y temporadas de pesca. 14 EUR.',
+    image: 'https://aichef.pro/og-kit-tareas-marisqueria.jpg',
+    price: '14.00',
+  },
   '/guia-restaurante-gastronomico': {
     title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
     description: 'Guía premium 80+ págs: 22 capítulos, plan financiero, diseño cocina, brigada, bodega, Michelin, Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',
