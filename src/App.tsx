@@ -94,6 +94,9 @@ import KitTareasChefPrivadoDashboard from "./pages/KitTareasChefPrivadoDashboard
 import KitTareasSushiBar from "./pages/KitTareasSushiBar";
 import KitTareasSushiBarAccessGate from "./pages/KitTareasSushiBarAccessGate";
 import KitTareasSushiBarDashboard from "./pages/KitTareasSushiBarDashboard";
+import KitTareasAsador from "./pages/KitTareasAsador";
+import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
+import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
@@ -545,6 +548,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-sushi-bar-jwt" redirectTo="/kit-tareas-sushi-bar">
                   <KitTareasSushiBarDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Asador / Parrilla y Josper */}
+            <Route path="/kit-tareas-asador" element={<KitTareasAsador />} />
+            <Route path="/kit-tareas-asador-access" element={<KitTareasAsadorAccessGate />} />
+            <Route
+              path="/kit-tareas-asador-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-asador-jwt" redirectTo="/kit-tareas-asador">
+                  <KitTareasAsadorDashboard />
                 </ProtectedRoute>
               }
             />

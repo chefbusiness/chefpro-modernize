@@ -134,6 +134,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-sushi-bar.jpg',
     price: '14.00',
   },
+  '/kit-tareas-asador': {
+    title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
+    description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
+    image: 'https://aichef.pro/og-kit-tareas-asador.jpg',
+    price: '14.00',
+  },
   '/guia-restaurante-gastronomico': {
     title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
     description: 'Guía premium 80+ págs: 22 capítulos, plan financiero, diseño cocina, brigada, bodega, Michelin, Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',
