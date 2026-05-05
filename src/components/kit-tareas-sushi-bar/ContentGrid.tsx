@@ -20,12 +20,12 @@ const templates = [
 ];
 
 const galleryImages = [
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-servicio.jpg',
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-transporte.jpg',
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-emplatado.jpg',
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-cliente.jpg',
-  '/lovable-uploads/ai-gallery/tareas-chef-privado-cocina.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-barra.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-arroz.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-corte.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-equipo.jpg',
+  '/lovable-uploads/ai-gallery/tareas-sushi-bar-emplatado.jpg',
 ];
 
 export default function ContentGrid() {

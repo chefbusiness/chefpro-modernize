@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Briefing de Servicio',
     value: '€15',
     desc: 'Briefing pre-servicio de 5 minutos: pescado del día por proveedor, alérgenos críticos, VIPs y reservas omakase, stock disponible y avisos para itamae y sala. La hoja que alinea al equipo cada turno.',
-    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-emplatado.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-sushi-bar-equipo.jpg',
   },
   {
     icon: Calendar,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Calendario Anual de Tareas',
     value: '€19',
     desc: '12 meses con temporadas de pescado en España (atún rojo, bonito del norte, salmón salvaje), festivos asiáticos, mantenimientos de equipos (vitrina, máquinas de arroz), formación del equipo y cierres por vacaciones.',
-    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-cliente.jpg',
+    image: '/lovable-uploads/ai-gallery/tareas-sushi-bar-arroz.jpg',
   },
 ];
 

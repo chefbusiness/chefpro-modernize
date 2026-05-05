@@ -18,7 +18,7 @@ export default function CtaFinal() {
   return (
     <section className="py-16 md:py-24 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.06]">
-        <img src="/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
       </div>
       <div className="absolute inset-0 bg-[#0a0a0a]/90" />
       <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%)' }} />
