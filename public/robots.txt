@@ -14,3 +14,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aichef.pro/sitemap.xml
+
+# AI / LLM index — see https://llmstxt.org
+# https://aichef.pro/llms.txt
+# https://aichef.pro/llms-full.txt

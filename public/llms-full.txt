@@ -1,0 +1,169 @@
+# AI Chef Pro — Full Knowledge Index
+
+> AI Chef Pro (aichef.pro) is the AI operating system for hospitality and food service. It combines a SaaS platform of 70+ specialized AI agents with a catalog of 30 downloadable digital products (Excel templates, operational checklists, business plan guides). Built and maintained by Chef John Guerrero — 29 years working in fine-dining hospitality (chef and operator) and 15 years as a gastronomic consultant. Spanish is the primary language, English mirror at en.aichef.pro. All purchases are one-time payments with lifetime access and a 30-day refund guarantee.
+
+---
+
+## Brand & Positioning
+
+**Tagline.** "Lo que apps de gestión cobran €40/mes, tú lo tienes por una vez — para siempre" ("What restaurant management apps charge €40/month, you get for a one-time payment — forever").
+
+**Differentiator.** Built by an operator, not a generic SaaS team. Every template, prompt and AI agent is informed by real fine-dining and consulting work. The author audits and signs off every digital product before launch.
+
+**Audience.** Independent and small-group hospitality operators across Spain and Latin America (Mexico, Colombia, Argentina, Chile primarily) who want enterprise-grade tooling without subscription lock-in. Targets restaurant owners, chefs of all levels, F&B managers, catering operators, bakeries, ice cream shops, chocolatiers and food-truck operators.
+
+**Languages.** Primary content in Spanish (es-ES, ES-LATAM neutral). English mirror under en.aichef.pro covering 51 use cases. Roadmap: French, German, Italian, Portuguese, Dutch — pending production translations of the digital products themselves (currently the .xlsx files ship in Spanish only regardless of landing page language).
+
+**Author bio.** Chef John Guerrero — CEO of AI Chef Pro and founder of ChefBusiness Group. Email: info@aichef.pro.
+
+---
+
+## SaaS Platform
+
+The aichef.pro platform offers 70+ vertical AI agents grouped by use case. Pricing tiers and trial information are at https://aichef.pro/precios. Notable agents referenced across product pages:
+
+- **Cocina Creativa AI+** — generative recipe and dish design with cost-aware constraints, returns finished recipe + initial CSV recipe-cost (escandallo).
+- **Kit Plan Financiero** — financial planning agents that produce cash-flow forecasts, P&L by month, break-even calculators and ratio dashboards.
+- **Pack APPCC** — HACCP / food safety agents that pre-fill all 17 standard Spanish food safety templates required for inspection.
+- **MenuDish Local SEO** — generates dish descriptions optimized for Google Business and local discovery.
+- **BlogPost SEO Gen+** — long-form gastronomic blog posts and category content.
+- **Keyword Discovery AI+** — local keyword research focused on hospitality intent.
+- **Mental Coach** — coaching-style agent for stress, team management and work-life balance in high-pressure kitchens.
+- **Mermas GenCal** — waste calculator for menu engineering.
+- **Burger Pro AI+ / Casual Restaurants AI+ / Food Truck AI+** — concept-specific generative AI suites.
+- **Avant-garde Cuisine AI+** — fine-dining oriented dish ideation (English name in EN platform).
+
+---
+
+## Digital Products Catalog (30 LIVE)
+
+All products are one-time purchase, immediate digital delivery, lifetime access, 30-day money-back guarantee.
+
+### Excel Template Kits
+
+**Pro Prompts eBook — €9** — https://aichef.pro/pro-prompts-ebook
+A library of 200+ professional prompts for hospitality AI workflows: menu design, marketing, costs, training, SOPs. Includes the prompt engineering primer specific to restaurant work.
+
+**Kit de Escandallos Pro — €12** — https://aichef.pro/kit-escandallos
+Recipe costing (escandallo) Excel templates with real cost gestion: ingredient costs, yield ratios, food cost percentage, mark-up calculators, target margin analysis. Compatible with Excel, Google Sheets, LibreOffice and Apple Numbers.
+
+**Pack APPCC — €14** — https://aichef.pro/pack-appcc
+17 templates required for Spanish HACCP food-safety inspections. Covers cold chain, allergens, traceability, supplier control, deep cleaning calendars, water control and inspection-day checklists. Field-tested in real Sanidad inspections.
+
+**Kit Gestión de Personal y Turnos — €14** — https://aichef.pro/kit-gestion-personal
+Staff scheduling, hour control, productivity ratios per shift, overtime calculation, onboarding checklists for new employees, and contract-type tracking adapted to Spanish labor framework.
+
+**Kit Control de Inventario y Compras — €14** — https://aichef.pro/kit-inventario
+Supplier management, stock control, FIFO rotation tracking, purchase orders, par stock calculators and supplier benchmarking.
+
+**Kit Plan Financiero — €39** — https://aichef.pro/kit-plan-financiero
+The financial planning powerhouse: cash flow forecast (12 months), break-even calculator, CAPEX investment plan, monthly P&L (real vs budget), ratios dashboard, viability report ready for banks. Includes scenario simulator and pre-opening checklist as bonus.
+
+### "Cómo Montar..." Business Plan Guides
+
+**Guía Cómo Montar una Dark Kitchen — €24** — https://aichef.pro/guia-dark-kitchen
+Step-by-step plan to launch a virtual / cloud kitchen: site selection, equipment lists, multi-brand strategy, marketplace negotiation, P&L modeling.
+
+**Guía Restaurante Gastronómico 65 Plazas — €85** — https://aichef.pro/guia-restaurante-gastronomico
+Premium 80+ page guide for fine-dining restaurants targeting Michelin star or Sol Repsol recognition. 22 chapters: kitchen layout, brigade structure, wine cellar planning, service protocol, financial plan with 10 included Excel templates and 8 checklists. Chef John Guerrero's most ambitious deliverable.
+
+**Guía Restaurante Casual 80 Plazas — €65** — https://aichef.pro/guia-restaurante-casual
+Casual-dining opening guide template; canonical base for the thematic restaurant series.
+
+**Guía Restaurante Mexicano 80 Plazas — €65** — https://aichef.pro/guia-restaurante-mexicano
+Full opening plan for a Mexican restaurant in Spain, including supplier sources for Mexican products, regulatory considerations, menu engineering for Mexican concepts.
+
+**Guía Restaurante Peruano 80 Plazas — €65** — https://aichef.pro/guia-restaurante-peruano
+Full opening plan for a Peruvian restaurant in Spain, including ceviche-bar setup, traceability for raw fish, criollo / nikkei menu balance.
+
+**Guía Restaurante Japonés 60 Plazas — €65** — https://aichef.pro/guia-restaurante-japones
+Full opening plan for a Japanese restaurant in Spain: sushi bar layout, anisakis HACCP (RD 1420/2006), itamae brigade, omakase service.
+
+### Recurring-Tasks Kits by Concept
+
+These are concept-specific operational checklist packs. Each includes 11 .xlsx checklists covering opening / closing, key technical processes for the concept, manager tasks, profile-specific tasks, weekly / monthly maintenance, seasonal events, a customizable template, and 2 BONUS files (service briefing + annual calendar).
+
+**Kit Tareas Restaurante Casual — €14** — https://aichef.pro/kit-tareas
+**Kit Tareas Cafetería / Brunch — €12** — https://aichef.pro/kit-tareas-cafeteria
+**Kit Tareas Pizzería — €12** — https://aichef.pro/kit-tareas-pizzeria
+**Kit Tareas Hamburguesería — €12** — https://aichef.pro/kit-tareas-hamburgueseria
+**Kit Tareas Dark Kitchen — €12** — https://aichef.pro/kit-tareas-dark-kitchen
+**Kit Tareas Pastelería / Obrador — €12** — https://aichef.pro/kit-tareas-pasteleria
+**Kit Tareas Bar / Cocktails — €12** — https://aichef.pro/kit-tareas-bar
+**Kit Tareas Catering / Eventos — €12** — https://aichef.pro/kit-tareas-catering
+**Kit Tareas Hotel Completo F&B — €18.50** — https://aichef.pro/kit-tareas-hotel
+**Kit Tareas Heladería Artesanal — €12** — https://aichef.pro/kit-tareas-heladeria
+**Kit Tareas Chocolatería / Bombonería — €12** — https://aichef.pro/kit-tareas-chocolateria
+**Kit Tareas Chef Privado / Personal Chef — €18** — https://aichef.pro/kit-tareas-chef-privado
+**Kit Tareas Restaurante Creativo / De Autor — €12** — https://aichef.pro/kit-tareas-restaurante-creativo
+**Kit Tareas Sushi Bar — €14** — https://aichef.pro/kit-tareas-sushi-bar — includes rice pH control, anisakis HACCP (RD 1420/2006), neta case, itamae and omakase service protocol.
+**Kit Tareas Asador / Parrilla y Josper — €14** — https://aichef.pro/kit-tareas-asador — includes Josper protocol, dry-age aging, butchery, internal cooking temperatures by cut.
+**Kit Tareas Marisquería — €14** — https://aichef.pro/kit-tareas-marisqueria — includes live-tank (vivero) control (oxygen, salinity, temperature), iced display rotation, HACCP traceability under EU Regulation 1379/2013, allergens for crustaceans and molluscs, Spanish fishing seasons and bans.
+
+### Bundles
+
+**Mega Pack Tareas — €89** — https://aichef.pro/mega-pack-tareas
+Bundle of 13 task kits with 151 templates covering all major hospitality concepts. Best price per kit; recommended for multi-concept operators or consultants.
+
+---
+
+## Use Cases — Programmatic Hospitality Pages
+
+51 use case landing pages organized in three categories. All hosted under `/usos/...` in Spanish and `/use-cases/...` in English. Each page covers: pains the role / concept / task solves, AI Chef Pro features that help, a "real day in the life" workflow, downloadable products that complement the agents, and a representative testimonial.
+
+**Hub.** https://aichef.pro/usos (ES) · https://en.aichef.pro/use-cases (EN).
+
+### Roles (19)
+
+Restaurant Owner, Restaurant Manager, Operations Director (multi-unit), Corporate Executive Chef, Head Chef, Sous Chef, Catering Chef, Catering Business Owner, Bartender / Mixologist, Pizzaiolo, Artisan Baker, Chocolatier, Private / Personal Chef, Hotel F&B Manager, Maître / Head Waiter, Sommelier, Master Grillmaster, Master Gelato Maker, Pastry Chef. Spanish slugs use Spanish forms (e.g. `/usos/rol/maestro-asador-parrillero`); English at `/use-cases/role/master-grillmaster`.
+
+### Concepts (24)
+
+Casual Restaurant, Cafe / Brunch, Pizzeria, Burger Restaurant, Dark Kitchen, Bakery / Pastry Shop, Bar / Cocktails, Catering / Events, Hotel F&B Complete, Artisan Ice Cream Shop, Chocolate Shop, Creative / Signature Restaurant, Fine Dining (Michelin / Sol Repsol), Mexican Restaurant, Peruvian Restaurant, Japanese Restaurant, Nikkei Restaurant, Plant-Based / Vegan Restaurant, Steakhouse / Grill, Specialty Coffee Shop, Sushi Bar, Gastrobar / Tapas Bar, Food Truck, Italian Restaurant.
+
+### Tasks (8 — JTBD)
+
+Recipe Costing with AI, Tasting Menu Design with AI, Technical Recipe Sheets with AI, Wine and Beverage Pairings with AI, Reducing Food Waste with AI, Digital HACCP with AI, Seasonal Menu Design with AI, Food Photography with AI.
+
+---
+
+## Programmatic SEO — City Resources
+
+15 cities × 5 modifiers = 75 spoke pages plus a hub. Spanish-only at this stage.
+
+**Hub.** https://aichef.pro/recursos/ciudades
+
+**Cities covered.** Spain: Madrid, Barcelona, Valencia, Sevilla, Málaga, Bilbao, Zaragoza. Mexico: Ciudad de México, Guadalajara, Monterrey, Querétaro. Colombia: Bogotá, Medellín. Argentina: Buenos Aires. Chile: Santiago.
+
+**Modifiers.**
+- `abrir-restaurante` — open a restaurant in {city} (regulations, costs, neighborhoods).
+- `licencia-restaurante` — restaurant licensing in {city} (permits, timelines).
+- `software-gestion-restaurante` — restaurant management software in {city} (POS, accounting, payroll local context).
+- `escandallo-restaurante` — recipe costing in {city} (local ingredient prices and supplier benchmarks).
+- `plan-negocio-restaurante` — business plan for a restaurant in {city} (financial models, market notes).
+
+**URL pattern.** `https://aichef.pro/{modifier}-en-{city-slug}` — examples: `/abrir-restaurante-en-madrid`, `/licencia-restaurante-en-ciudad-de-mexico`, `/software-gestion-restaurante-en-bogota`.
+
+Each city page includes a city-specific cost block, regulatory notes, neighborhood guidance, salary ranges, comparison with two other cities, and cross-sells the relevant Excel kits.
+
+---
+
+## Editorial Standards
+
+- **Authorship.** Every product page identifies the author (Chef John Guerrero) with bio, role badges and photo. Reviews and testimonials use real first-and-last names plus role.
+- **Photography.** All product hero and gallery images are AI-generated with Gemini 3.1 Flash Image Preview ("Nano Banana 2") following a brand maestro spec — natural light, candid working scenes, contemporary Madrid 2026 aesthetic, 35mm film look. Disclaimer note ("imagen ilustrativa") is shown on every product page where AI imagery is used.
+- **Pricing transparency.** All prices are shown in EUR, one-time payment, with the original (struck-through) price and discount badge displayed. No subscription up-sells on product pages.
+- **Refund policy.** 30-day, no-questions-asked, 100% refund. Visible on every product page in the GuaranteeSection component.
+- **Security.** Post-purchase access is gated by a JWT issued by a Netlify Function after Stripe webhook confirmation; downloads are signed URLs with 24-hour expiry generated on-demand. No file paths are exposed without a valid token.
+
+---
+
+## Contact & Sources
+
+- **Email.** info@aichef.pro
+- **Website.** https://aichef.pro
+- **Sitemap.** https://aichef.pro/sitemap.xml (~580 URLs)
+- **Robots.** https://aichef.pro/robots.txt
+- **Short index.** https://aichef.pro/llms.txt
+
+This file is intended for AI assistants and search engines that respect the llmstxt.org convention. It is updated whenever new digital products, use cases, or city pages are launched.

@@ -1,0 +1,134 @@
+# AI Chef Pro
+
+> AI Chef Pro (aichef.pro) is a Spanish-language SaaS platform of specialized AI agents for hospitality and food service professionals — restaurant owners, chefs, F&B managers, caterers, bakeries, ice cream shops and chocolatiers. It bundles 70+ vertical AI apps (recipe costing, menu engineering, HACCP, content generation, local SEO, financial planning) with a catalog of 30 downloadable digital products (Excel templates, operational checklists, business-plan guides) created by Chef John Guerrero (29 years in fine-dining hospitality, 15 years in gastronomic consulting). Built for independent operators who want enterprise-grade tooling without enterprise pricing.
+
+## About
+
+- [Homepage](https://aichef.pro/): main landing page introducing the AI Chef Pro platform and its mission.
+- [Pricing](https://aichef.pro/precios): current subscription tiers and what each plan includes.
+- [About Chef John Guerrero](https://aichef.pro/sobre-nosotros): founder bio, career history and editorial standards.
+- [Contact](https://aichef.pro/contacto): direct contact form and support email (info@aichef.pro).
+- [Frequently Asked Questions](https://aichef.pro/faq): platform-wide FAQ covering subscriptions, refunds, languages and tooling.
+
+## Digital Products Hub
+
+- [Productos Digitales — full catalog](https://aichef.pro/productos-digitales): hub listing all 30 downloadable digital products with filters by format, role and concept.
+
+### Excel Template Kits
+
+- [Pro Prompts eBook (€9)](https://aichef.pro/pro-prompts-ebook): library of 200+ professional prompts for hospitality AI workflows.
+- [Kit de Escandallos Pro (€12)](https://aichef.pro/kit-escandallos): recipe-costing Excel templates with real-cost gestion.
+- [Pack APPCC (€14)](https://aichef.pro/pack-appcc): 17 templates for Spanish HACCP food-safety inspections.
+- [Kit Gestión de Personal y Turnos (€14)](https://aichef.pro/kit-gestion-personal): staff scheduling, hours control and productivity ratios.
+- [Kit Control de Inventario y Compras (€14)](https://aichef.pro/kit-inventario): supplier management, stock control and purchasing workflows.
+- [Kit Plan Financiero (€39)](https://aichef.pro/kit-plan-financiero): full financial planning package — cash flow, break-even, P&L, ratios dashboard.
+
+### "Cómo Montar..." Business Plan Guides
+
+- [Guía Cómo Montar una Dark Kitchen (€24)](https://aichef.pro/guia-dark-kitchen): step-by-step plan to launch a virtual / cloud kitchen.
+- [Guía Restaurante Gastronómico 65 Plazas (€85)](https://aichef.pro/guia-restaurante-gastronomico): premium Michelin / Sol Repsol-oriented opening guide.
+- [Guía Restaurante Casual 80 Plazas (€65)](https://aichef.pro/guia-restaurante-casual): casual-dining opening guide template for thematic concepts.
+- [Guía Restaurante Mexicano 80 Plazas (€65)](https://aichef.pro/guia-restaurante-mexicano): full plan for a Mexican restaurant in Spain.
+- [Guía Restaurante Peruano 80 Plazas (€65)](https://aichef.pro/guia-restaurante-peruano): full plan for a Peruvian restaurant in Spain.
+- [Guía Restaurante Japonés 60 Plazas (€65)](https://aichef.pro/guia-restaurante-japones): full plan for a Japanese restaurant in Spain.
+
+### Recurring-Tasks Kits by Concept
+
+- [Kit Tareas Restaurante Casual (€14)](https://aichef.pro/kit-tareas): operational checklists for casual restaurant.
+- [Kit Tareas Cafetería / Brunch (€12)](https://aichef.pro/kit-tareas-cafeteria): operational checklists for cafe / brunch concept.
+- [Kit Tareas Pizzería (€12)](https://aichef.pro/kit-tareas-pizzeria): operational checklists for pizzeria.
+- [Kit Tareas Hamburguesería (€12)](https://aichef.pro/kit-tareas-hamburgueseria): operational checklists for burger restaurant.
+- [Kit Tareas Dark Kitchen (€12)](https://aichef.pro/kit-tareas-dark-kitchen): operational checklists for dark / cloud kitchen.
+- [Kit Tareas Pastelería (€12)](https://aichef.pro/kit-tareas-pasteleria): operational checklists for bakery / pastry obrador.
+- [Kit Tareas Bar / Cocktails (€12)](https://aichef.pro/kit-tareas-bar): operational checklists for cocktail bar.
+- [Kit Tareas Catering / Eventos (€12)](https://aichef.pro/kit-tareas-catering): operational checklists for catering and events.
+- [Kit Tareas Hotel Completo (€18.50)](https://aichef.pro/kit-tareas-hotel): full F&B operational checklists for hotel.
+- [Kit Tareas Heladería Artesanal (€12)](https://aichef.pro/kit-tareas-heladeria): operational checklists for artisan ice cream shop.
+- [Kit Tareas Chocolatería (€12)](https://aichef.pro/kit-tareas-chocolateria): operational checklists for chocolate / bonbon shop.
+- [Kit Tareas Chef Privado (€18)](https://aichef.pro/kit-tareas-chef-privado): operational checklists for private / personal chef.
+- [Kit Tareas Restaurante Creativo (€12)](https://aichef.pro/kit-tareas-restaurante-creativo): operational checklists for creative / signature restaurant.
+- [Kit Tareas Sushi Bar (€14)](https://aichef.pro/kit-tareas-sushi-bar): operational checklists for sushi bar with rice pH and anisakis HACCP.
+- [Kit Tareas Asador / Josper (€14)](https://aichef.pro/kit-tareas-asador): operational checklists for steakhouse / Josper grill with dry-age and cuts.
+- [Kit Tareas Marisquería (€14)](https://aichef.pro/kit-tareas-marisqueria): operational checklists for seafood restaurant with live tank, ice display and HACCP.
+
+### Bundles
+
+- [Mega Pack Tareas (€89)](https://aichef.pro/mega-pack-tareas): bundle of 13 task kits with 151 templates covering all hospitality concepts.
+
+## Use Cases — by Role
+
+- [Use Cases Hub](https://aichef.pro/usos): index of all 51 hospitality use cases organized by role, concept and task.
+- [Propietario de Restaurante](https://aichef.pro/usos/rol/propietario-restaurante): AI workflows for restaurant owners.
+- [Gerente de Restaurante](https://aichef.pro/usos/rol/gerente-restaurante): AI workflows for restaurant managers.
+- [Director de Operaciones (Grupo)](https://aichef.pro/usos/rol/director-operaciones-grupo-restauracion): AI workflows for multi-unit operations directors.
+- [Chef Ejecutivo Corporativo](https://aichef.pro/usos/rol/chef-ejecutivo-corporativo): AI workflows for corporate executive chefs.
+- [Chef de Cocina](https://aichef.pro/usos/rol/chef-jefe-cocina): AI workflows for head chefs.
+- [Sous Chef](https://aichef.pro/usos/rol/sous-chef): AI workflows for sous chefs.
+- [Chef de Catering](https://aichef.pro/usos/rol/chef-catering): AI workflows for catering chefs.
+- [Propietario de Catering](https://aichef.pro/usos/rol/propietario-empresa-catering): AI workflows for catering business owners.
+- [Bartender / Coctelero](https://aichef.pro/usos/rol/bartender-coctelero): AI workflows for bartenders and mixologists.
+- [Pizzero / Pizzaiolo](https://aichef.pro/usos/rol/pizzero-pizzaiolo): AI workflows for pizzaiolos.
+- [Panadero Artesanal](https://aichef.pro/usos/rol/panadero-artesanal): AI workflows for artisan bakers.
+- [Chocolatero / Bombonero](https://aichef.pro/usos/rol/chocolatero-bombonero): AI workflows for chocolatiers.
+- [Chef Privado / Personal Chef](https://aichef.pro/usos/rol/chef-privado-personal-chef): AI workflows for private and personal chefs.
+- [F&B Manager (Hotel)](https://aichef.pro/usos/rol/fb-manager-hotel): AI workflows for hotel F&B managers.
+- [Maître / Jefe de Sala](https://aichef.pro/usos/rol/maitre-jefe-sala): AI workflows for maîtres and head waiters.
+- [Sommelier](https://aichef.pro/usos/rol/sommelier): AI workflows for sommeliers.
+- [Maestro Asador / Parrillero](https://aichef.pro/usos/rol/maestro-asador-parrillero): AI workflows for grill masters.
+- [Maestro Heladero](https://aichef.pro/usos/rol/maestro-heladero): AI workflows for master gelato makers.
+- [Repostero / Pastelero](https://aichef.pro/usos/rol/repostero-pastelero): AI workflows for pastry chefs.
+
+## Use Cases — by Concept
+
+- [Restaurante Casual](https://aichef.pro/usos/concepto/restaurante-casual): AI workflows for casual restaurants.
+- [Cafetería / Brunch](https://aichef.pro/usos/concepto/cafeteria-brunch): AI workflows for cafe and brunch concepts.
+- [Pizzería](https://aichef.pro/usos/concepto/pizzeria): AI workflows for pizzerias.
+- [Hamburguesería](https://aichef.pro/usos/concepto/hamburgueseria): AI workflows for burger restaurants.
+- [Dark Kitchen](https://aichef.pro/usos/concepto/dark-kitchen): AI workflows for cloud / dark kitchens.
+- [Pastelería / Obrador](https://aichef.pro/usos/concepto/pasteleria-obrador): AI workflows for bakery and pastry shops.
+- [Bar / Cocktails](https://aichef.pro/usos/concepto/bar-cocktails): AI workflows for cocktail bars.
+- [Catering / Eventos](https://aichef.pro/usos/concepto/catering-eventos): AI workflows for catering and events.
+- [Hotel Completo F&B](https://aichef.pro/usos/concepto/hotel-completo-fb): AI workflows for full-service hotel F&B.
+- [Heladería Artesanal](https://aichef.pro/usos/concepto/heladeria-artesanal): AI workflows for artisan ice cream shops.
+- [Chocolatería / Bombonería](https://aichef.pro/usos/concepto/chocolateria-bomboneria): AI workflows for chocolate shops.
+- [Restaurante Creativo / De Autor](https://aichef.pro/usos/concepto/restaurante-creativo-autor): AI workflows for creative / signature restaurants.
+- [Restaurante Gastronómico (Michelin)](https://aichef.pro/usos/concepto/restaurante-gastronomico-michelin): AI workflows for fine-dining Michelin-oriented restaurants.
+- [Restaurante Mexicano](https://aichef.pro/usos/concepto/restaurante-mexicano): AI workflows for Mexican restaurants.
+- [Restaurante Peruano](https://aichef.pro/usos/concepto/restaurante-peruano): AI workflows for Peruvian restaurants.
+- [Restaurante Japonés](https://aichef.pro/usos/concepto/restaurante-japones): AI workflows for Japanese restaurants.
+- [Restaurante Nikkei](https://aichef.pro/usos/concepto/restaurante-nikkei): AI workflows for Nikkei (Japanese-Peruvian) restaurants.
+- [Restaurante Plant-Based / Vegano](https://aichef.pro/usos/concepto/restaurante-plant-based-vegano): AI workflows for plant-based and vegan restaurants.
+- [Asador / Parrilla / Steakhouse](https://aichef.pro/usos/concepto/asador-parrilla-steakhouse): AI workflows for steakhouses and grill houses.
+- [Coffee Shop Specialty](https://aichef.pro/usos/concepto/coffee-shop-specialty): AI workflows for specialty coffee shops.
+- [Sushi Bar](https://aichef.pro/usos/concepto/sushi-bar): AI workflows for sushi bars.
+- [Gastrobar / Tapas](https://aichef.pro/usos/concepto/gastrobar-tapas): AI workflows for tapas bars and gastrobars.
+- [Food Truck](https://aichef.pro/usos/concepto/food-truck): AI workflows for food trucks.
+- [Restaurante Italiano](https://aichef.pro/usos/concepto/restaurante-italiano): AI workflows for Italian restaurants.
+
+## Use Cases — by Task
+
+- [Escandallos con IA](https://aichef.pro/usos/tarea/escandallos-con-ia): AI-driven recipe costing.
+- [Menú Degustación con IA](https://aichef.pro/usos/tarea/menu-degustacion-con-ia): AI-driven tasting menu design.
+- [Fichas Técnicas con IA](https://aichef.pro/usos/tarea/fichas-tecnicas-con-ia): AI-driven technical recipe sheets.
+- [Maridajes con IA](https://aichef.pro/usos/tarea/maridajes-con-ia): AI-driven wine and beverage pairings.
+- [Reducir Mermas con IA](https://aichef.pro/usos/tarea/reducir-mermas-con-ia): AI-driven food waste reduction.
+- [APPCC Digital con IA](https://aichef.pro/usos/tarea/appcc-digital-con-ia): AI-driven digital HACCP workflows.
+- [Carta Estacional con IA](https://aichef.pro/usos/tarea/carta-estacional-con-ia): AI-driven seasonal menu design.
+- [Foto Gastronómica con IA](https://aichef.pro/usos/tarea/foto-gastronomica-con-ia): AI-driven food photography generation.
+
+## Programmatic SEO — City Pages (Spanish)
+
+- [Cities Hub](https://aichef.pro/recursos/ciudades): index of city-specific resources for opening and operating restaurants.
+- Coverage: 15 Spanish-speaking cities (Madrid, Barcelona, Valencia, Sevilla, Málaga, Bilbao, Zaragoza, Ciudad de México, Guadalajara, Monterrey, Querétaro, Bogotá, Medellín, Buenos Aires, Santiago) × 5 modifiers (abrir-restaurante, licencia-restaurante, software-gestion-restaurante, escandallo-restaurante, plan-negocio-restaurante) = 75 city-modifier landing pages.
+- Pattern: `https://aichef.pro/{modifier}-en-{city-slug}` (e.g. `/abrir-restaurante-en-madrid`, `/licencia-restaurante-en-bogota`).
+
+## English Versions (en.aichef.pro)
+
+- [English platform homepage](https://en.aichef.pro/): English-language entry point, served via auto-language routing for non-Spanish speakers.
+- All 51 use cases are mirrored under `/use-cases/role/`, `/use-cases/concept/` and `/use-cases/task/` paths in English.
+
+## Optional
+
+- [llms-full.txt](https://aichef.pro/llms-full.txt): expanded version of this index with full descriptions for each product, role, concept, task and city page.
+- [Sitemap](https://aichef.pro/sitemap.xml): full XML sitemap covering all indexable pages (~580 URLs).
+- [Robots](https://aichef.pro/robots.txt): crawler directives.
