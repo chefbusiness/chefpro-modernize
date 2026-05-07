@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -644,10 +644,29 @@ const products = [
       'Mantenimiento de vehículo y generador',
     ],
     icon: Truck,
-    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion', 'food-truck', 'street-food', 'eventos'],
+  },
+  {
+    name: 'Tareas Recurrentes: Panadería / Obrador',
+    slug: '/kit-tareas-panaderia',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '11 checklists operativos para panadería y obrador: turno madrugada desde las 03:00, masas madre y pre-fermentos (poolish, biga), hornos de piso y rotativo, expositor y venta, perfiles del equipo y campañas estacionales.',
+    features: [
+      'Turno madrugada: apertura del obrador desde las 03:00',
+      'Masas madre, poolish, biga y control de fermentación',
+      'Hornos de piso, rotativo y convección con vapor',
+      'Campañas Navidad, Reyes y Semana Santa',
+    ],
+    icon: Wheat,
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'panaderia', 'obrador', 'masas-madre'],
   },
 ];
 

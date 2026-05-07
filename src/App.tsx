@@ -106,6 +106,9 @@ import KitTareasTapasBarDashboard from "./pages/KitTareasTapasBarDashboard";
 import KitTareasFoodTruck from "./pages/KitTareasFoodTruck";
 import KitTareasFoodTruckAccessGate from "./pages/KitTareasFoodTruckAccessGate";
 import KitTareasFoodTruckDashboard from "./pages/KitTareasFoodTruckDashboard";
+import KitTareasPanaderia from "./pages/KitTareasPanaderia";
+import KitTareasPanaderiaAccessGate from "./pages/KitTareasPanaderiaAccessGate";
+import KitTareasPanaderiaDashboard from "./pages/KitTareasPanaderiaDashboard";
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
@@ -605,6 +608,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-food-truck-jwt" redirectTo="/kit-tareas-food-truck">
                   <KitTareasFoodTruckDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Panadería / Obrador */}
+            <Route path="/kit-tareas-panaderia" element={<KitTareasPanaderia />} />
+            <Route path="/kit-tareas-panaderia-access" element={<KitTareasPanaderiaAccessGate />} />
+            <Route
+              path="/kit-tareas-panaderia-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-panaderia-jwt" redirectTo="/kit-tareas-panaderia">
+                  <KitTareasPanaderiaDashboard />
                 </ProtectedRoute>
               }
             />
