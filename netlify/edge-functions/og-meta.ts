@@ -146,6 +146,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-marisqueria.jpg',
     price: '14.00',
   },
+  '/kit-tareas-tapas-bar': {
+    title: 'Kit Tareas Recurrentes: Tapas Bar / Gastrobar — Checklists Operativos | AI Chef Pro',
+    description: '11 checklists Excel: barra de pinchos, cocina raciones, cerveza grifo, vinos, vermut, terraza y rotación carta estacional. 14 EUR.',
+    image: 'https://aichef.pro/og-kit-tareas-tapas-bar.jpg',
+    price: '14.00',
+  },
   '/guia-restaurante-gastronomico': {
     title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
     description: 'Guía premium 80+ págs: 22 capítulos, plan financiero, diseño cocina, brigada, bodega, Michelin, Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',

@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -610,6 +610,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion', 'marisqueria', 'pescado', 'marisco'],
+  },
+  {
+    name: 'Tareas Recurrentes: Tapas Bar / Gastrobar',
+    slug: '/kit-tareas-tapas-bar',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para tapas bar y gastrobar: barra de pinchos y tapas frías, cocina de raciones (plancha, freidora, guisos), cerveza grifo, vinos por copa, vermut, terraza y rotación de carta estacional.',
+    features: [
+      'Barra de pinchos y tapas frías con rotación',
+      'Cocina de raciones: plancha, freidora, guisos',
+      'Cerveza grifo, vinos por copa y vermut',
+      'Terraza, eventos y carta estacional',
+    ],
+    icon: Beer,
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'tapas', 'gastrobar', 'bar'],
   },
 ];
 
