@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
 import LogoBadge from '@/components/shared/LogoBadge';
@@ -642,8 +642,11 @@ const comingSoon = [
   { icon: GraduationCap, name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes', 'restaurante'], phase: 'Julio 2026' },
 ];
 
+const PRODUCTS_PER_PAGE = 12;
+
 export default function ProductosDigitales() {
   const [activeTag, setActiveTag] = useState('all');
+  const [visibleCount, setVisibleCount] = useState(PRODUCTS_PER_PAGE);
 
   const filteredProducts = activeTag === 'all'
     ? products
@@ -652,6 +655,13 @@ export default function ProductosDigitales() {
   const filteredComingSoon = activeTag === 'all'
     ? comingSoon
     : comingSoon.filter((p) => p.tags.includes(activeTag));
+
+  useEffect(() => {
+    setVisibleCount(PRODUCTS_PER_PAGE);
+  }, [activeTag]);
+
+  const visibleProducts = filteredProducts.slice(0, visibleCount);
+  const hasMoreProducts = visibleCount < filteredProducts.length;
 
   return (
     <>
@@ -788,7 +798,7 @@ export default function ProductosDigitales() {
         {filteredProducts.length > 0 && (
           <section className="px-4 pb-16 md:pb-24">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredProducts.map((product) => {
+              {visibleProducts.map((product) => {
                 const Icon = product.icon;
                 return (
                   <a
@@ -870,6 +880,21 @@ export default function ProductosDigitales() {
                 );
               })}
             </div>
+
+            {/* Cargar más */}
+            {hasMoreProducts && (
+              <div className="max-w-6xl mx-auto mt-10 flex flex-col items-center gap-3">
+                <button
+                  onClick={() => setVisibleCount((c) => c + PRODUCTS_PER_PAGE)}
+                  className="px-8 py-3 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-semibold hover:bg-[#FFD700]/20 hover:border-[#FFD700]/60 transition-all duration-200"
+                >
+                  Cargar más productos ({filteredProducts.length - visibleCount} restantes)
+                </button>
+                <p className="text-xs text-gray-500">
+                  Mostrando {visibleProducts.length} de {filteredProducts.length}
+                </p>
+              </div>
+            )}
           </section>
         )}
 
