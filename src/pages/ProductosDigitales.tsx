@@ -630,6 +630,25 @@ const products = [
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'gestion', 'tapas', 'gastrobar', 'bar'],
   },
+  {
+    name: 'Tareas Recurrentes: Food Truck',
+    slug: '/kit-tareas-food-truck',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '11 checklists operativos para food truck: setup y teardown, operaciones móviles del vehículo y generador, APPCC seguridad alimentaria móvil, permisos y eventos, perfiles del equipo y calendario anual.',
+    features: [
+      'Setup / teardown: generador, gas, cocina, servicio',
+      'APPCC móvil: cadena de frío y temperaturas variables',
+      'Permisos, licencias y seguros por evento',
+      'Mantenimiento de vehículo y generador',
+    ],
+    icon: Truck,
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'food-truck', 'street-food', 'eventos'],
+  },
 ];
 
 // ── Coming soon products ────────────────────────────────────

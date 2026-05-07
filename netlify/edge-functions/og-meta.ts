@@ -152,6 +152,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-tapas-bar.jpg',
     price: '14.00',
   },
+  '/kit-tareas-food-truck': {
+    title: 'Kit Tareas Recurrentes: Food Truck — Setup, APPCC Móvil y Permisos | AI Chef Pro',
+    description: '11 checklists Excel: setup y teardown, operaciones móviles, APPCC móvil, permisos por evento, vehículo, generador y calendario anual. 12 EUR.',
+    image: 'https://aichef.pro/og-kit-tareas-food-truck.jpg',
+    price: '12.00',
+  },
   '/guia-restaurante-gastronomico': {
     title: 'Cómo Montar un Restaurante Gastronómico 65 Plazas — Guía España (Michelin · Sol Repsol) | AI Chef Pro',
     description: 'Guía premium 80+ págs: 22 capítulos, plan financiero, diseño cocina, brigada, bodega, Michelin, Repsol. 10 plantillas Excel + 8 checklists + business plan. 85 EUR.',

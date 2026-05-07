@@ -103,6 +103,9 @@ import KitTareasMarisqueriaDashboard from "./pages/KitTareasMarisqueriaDashboard
 import KitTareasTapasBar from "./pages/KitTareasTapasBar";
 import KitTareasTapasBarAccessGate from "./pages/KitTareasTapasBarAccessGate";
 import KitTareasTapasBarDashboard from "./pages/KitTareasTapasBarDashboard";
+import KitTareasFoodTruck from "./pages/KitTareasFoodTruck";
+import KitTareasFoodTruckAccessGate from "./pages/KitTareasFoodTruckAccessGate";
+import KitTareasFoodTruckDashboard from "./pages/KitTareasFoodTruckDashboard";
 import KitGestionPersonal from "./pages/KitGestionPersonal";
 import KitGestionPersonalAccessGate from "./pages/KitGestionPersonalAccessGate";
 import KitGestionPersonalDashboard from "./pages/KitGestionPersonalDashboard";
@@ -590,6 +593,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="kit-tareas-tapas-bar-jwt" redirectTo="/kit-tareas-tapas-bar">
                   <KitTareasTapasBarDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Kit Tareas Food Truck */}
+            <Route path="/kit-tareas-food-truck" element={<KitTareasFoodTruck />} />
+            <Route path="/kit-tareas-food-truck-access" element={<KitTareasFoodTruckAccessGate />} />
+            <Route
+              path="/kit-tareas-food-truck-library"
+              element={
+                <ProtectedRoute storageKey="kit-tareas-food-truck-jwt" redirectTo="/kit-tareas-food-truck">
+                  <KitTareasFoodTruckDashboard />
                 </ProtectedRoute>
               }
             />
