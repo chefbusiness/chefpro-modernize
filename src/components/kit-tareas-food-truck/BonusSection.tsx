@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Briefing Pre-Evento',
     value: '€19',
     desc: 'Briefing pre-evento con tipo de evento, logística de localización (acceso, electricidad, agua), menú y stock necesario, asignación de equipo y avisos clave para que el día del evento todo salga sin sorpresas.',
-    image: '/lovable-uploads/ai-gallery/tareas-bar-equipo.jpg',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-team.jpg',
   },
   {
     icon: CalendarDays,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Calendario Anual de Tareas',
     value: '€19',
     desc: 'Planificación anual con eventos por mes, menú sugerido por temporada, mantenimiento programado del vehículo y generador, y acciones de marketing por estación. Año completo bajo control.',
-    image: '/lovable-uploads/ai-gallery/tareas-bar-cocteleria.jpg',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-grill.jpg',
   },
 ];
 

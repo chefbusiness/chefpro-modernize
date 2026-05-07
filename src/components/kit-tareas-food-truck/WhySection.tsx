@@ -28,7 +28,7 @@ export default function WhySection() {
   return (
     <section className="py-16 md:py-24 px-4 relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.04]">
-        <img src="/lovable-uploads/ai-gallery/tareas-bar-barra.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/lovable-uploads/ai-gallery/use-case-food-truck-team.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
       </div>
       <div className="absolute inset-0 bg-[#0a0a0a]/95" />
       <div className="relative max-w-6xl mx-auto z-10">

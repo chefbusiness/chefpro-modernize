@@ -24,12 +24,12 @@ const checkItems = [
 ];
 
 const heroImages = [
-  '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
-  '/lovable-uploads/ai-gallery/tareas-bar-barra.jpg',
-  '/lovable-uploads/ai-gallery/tareas-bar-cocteleria.jpg',
-  '/lovable-uploads/ai-gallery/tareas-bar-equipo.jpg',
-  '/lovable-uploads/ai-gallery/tareas-bar-stock.jpg',
-  '/lovable-uploads/ai-gallery/tareas-bar-terraza.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-line.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-prep.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-grill.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-counter.jpg',
+  '/lovable-uploads/ai-gallery/use-case-food-truck-team.jpg',
 ];
 
 export default function HeroSection() {
