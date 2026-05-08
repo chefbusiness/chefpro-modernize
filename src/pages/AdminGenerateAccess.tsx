@@ -1,41 +1,12 @@
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Loader2, Copy, Check, Mail, Link as LinkIcon, ShieldAlert } from 'lucide-react';
-
-const PRODUCTS: { id: string; label: string }[] = [
-  { id: 'pro-prompts-ebook', label: 'Pro Prompts eBook (€9)' },
-  { id: 'kit-escandallos', label: 'Kit de Escandallos Pro (€12)' },
-  { id: 'pack-appcc', label: 'Pack Plantillas APPCC (€14)' },
-  { id: 'kit-tareas', label: 'Kit Tareas Restaurante Casual (€14)' },
-  { id: 'kit-tareas-cafeteria', label: 'Kit Tareas Cafetería (€12)' },
-  { id: 'kit-tareas-pizzeria', label: 'Kit Tareas Pizzería (€12)' },
-  { id: 'kit-tareas-hamburgueseria', label: 'Kit Tareas Hamburguesería (€12)' },
-  { id: 'kit-tareas-dark-kitchen', label: 'Kit Tareas Dark Kitchen (€12)' },
-  { id: 'kit-tareas-pasteleria', label: 'Kit Tareas Pastelería (€12)' },
-  { id: 'kit-tareas-bar', label: 'Kit Tareas Bar (€12)' },
-  { id: 'kit-tareas-catering', label: 'Kit Tareas Catering (€12)' },
-  { id: 'kit-tareas-hotel', label: 'Kit Tareas Hotel Completo (€18,50)' },
-  { id: 'kit-tareas-heladeria', label: 'Kit Tareas Heladería (€12)' },
-  { id: 'kit-tareas-chocolateria', label: 'Kit Tareas Chocolatería (€12)' },
-  { id: 'kit-tareas-restaurante-creativo', label: 'Kit Tareas Restaurante Creativo (€12)' },
-  { id: 'kit-tareas-chef-privado', label: 'Kit Tareas Chef Privado (€18)' },
-  { id: 'kit-gestion-personal', label: 'Kit Gestión de Personal (€14)' },
-  { id: 'kit-inventario', label: 'Kit Control de Inventario (€14)' },
-  { id: 'kit-plan-financiero', label: 'Kit Plan Financiero (€39)' },
-  { id: 'guia-dark-kitchen', label: 'Guía Dark Kitchen (€24)' },
-  { id: 'guia-restaurante-gastronomico', label: 'Guía Restaurante Gastronómico (€85)' },
-  { id: 'guia-restaurante-casual', label: 'Guía Restaurante Casual (€65)' },
-  { id: 'guia-restaurante-mexicano', label: 'Guía Restaurante Mexicano (€65)' },
-  { id: 'guia-restaurante-peruano', label: 'Guía Restaurante Peruano (€65)' },
-  { id: 'guia-restaurante-japones', label: 'Guía Restaurante Japonés (€65)' },
-  { id: 'guia-restaurante-nikkei', label: 'Guía Restaurante Nikkei (€65)' },
-  { id: 'mega-pack-tareas', label: 'Mega Pack Tareas (€89)' },
-];
+import { PRODUCTS_CONFIG, PRODUCT_IDS } from '../data/productos-digitales-config';
 
 export default function AdminGenerateAccess() {
   const [adminPassword, setAdminPassword] = useState('');
   const [email, setEmail] = useState('');
-  const [product, setProduct] = useState<string>(PRODUCTS[0].id);
+  const [product, setProduct] = useState<string>(PRODUCT_IDS[0]);
   const [sendEmail, setSendEmail] = useState(true);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<{ magicLink: string; emailSent: boolean } | null>(null);
@@ -131,11 +102,14 @@ export default function AdminGenerateAccess() {
                 onChange={(e) => setProduct(e.target.value)}
                 className="w-full px-4 py-2.5 rounded-lg bg-black/40 border border-white/10 text-white focus:border-[#FFD700] focus:outline-none"
               >
-                {PRODUCTS.map((p) => (
-                  <option key={p.id} value={p.id}>
-                    {p.label}
-                  </option>
-                ))}
+                {PRODUCT_IDS.map((id) => {
+                  const cfg = PRODUCTS_CONFIG[id];
+                  return (
+                    <option key={id} value={id}>
+                      {cfg.name} ({cfg.priceLabel})
+                    </option>
+                  );
+                })}
               </select>
             </div>
 

@@ -1,36 +1,5 @@
 import type { Handler } from '@netlify/functions';
-
-// Map productId → { accessPath, label } (must match resend-access.ts entries).
-// Keep in sync with PRODUCTS in netlify/functions/resend-access.ts.
-const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
-  'pro-prompts-ebook': { accessPath: '/pro-prompts-library-access', label: 'Pro Prompts eBook' },
-  'kit-escandallos': { accessPath: '/kit-escandallos-access', label: 'Kit de Escandallos Pro' },
-  'pack-appcc': { accessPath: '/pack-appcc-access', label: 'Pack Plantillas APPCC' },
-  'kit-tareas': { accessPath: '/kit-tareas-access', label: 'Kit de Tareas Recurrentes' },
-  'kit-tareas-cafeteria': { accessPath: '/kit-tareas-cafeteria-access', label: 'Kit Tareas Cafetería' },
-  'kit-tareas-pizzeria': { accessPath: '/kit-tareas-pizzeria-access', label: 'Kit Tareas Pizzería' },
-  'kit-tareas-hamburgueseria': { accessPath: '/kit-tareas-hamburgueseria-access', label: 'Kit Tareas Hamburguesería' },
-  'kit-tareas-dark-kitchen': { accessPath: '/kit-tareas-dark-kitchen-access', label: 'Kit Tareas Dark Kitchen' },
-  'kit-tareas-pasteleria': { accessPath: '/kit-tareas-pasteleria-access', label: 'Kit Tareas Pastelería' },
-  'kit-tareas-bar': { accessPath: '/kit-tareas-bar-access', label: 'Kit Tareas Bar' },
-  'kit-tareas-catering': { accessPath: '/kit-tareas-catering-access', label: 'Kit Tareas Catering' },
-  'kit-tareas-hotel': { accessPath: '/kit-tareas-hotel-completo-access', label: 'Kit Tareas Hotel Completo' },
-  'kit-tareas-heladeria': { accessPath: '/kit-tareas-heladeria-access', label: 'Kit Tareas Heladería' },
-  'kit-tareas-chocolateria': { accessPath: '/kit-tareas-chocolateria-access', label: 'Kit Tareas Chocolatería' },
-  'kit-tareas-restaurante-creativo': { accessPath: '/kit-tareas-restaurante-creativo-access', label: 'Kit Tareas Restaurante Creativo' },
-  'kit-tareas-chef-privado': { accessPath: '/kit-tareas-chef-privado-access', label: 'Kit Tareas Chef Privado' },
-  'kit-gestion-personal': { accessPath: '/kit-gestion-personal-access', label: 'Kit Gestión de Personal' },
-  'kit-inventario': { accessPath: '/kit-inventario-access', label: 'Kit Control de Inventario' },
-  'kit-plan-financiero': { accessPath: '/kit-plan-financiero-access', label: 'Kit Plan Financiero' },
-  'guia-dark-kitchen': { accessPath: '/guia-dark-kitchen-access', label: 'Guía Dark Kitchen' },
-  'guia-restaurante-gastronomico': { accessPath: '/guia-restaurante-gastronomico-access', label: 'Guía Restaurante Gastronómico' },
-  'guia-restaurante-casual': { accessPath: '/guia-restaurante-casual-access', label: 'Guía Restaurante Casual' },
-  'guia-restaurante-mexicano': { accessPath: '/guia-restaurante-mexicano-access', label: 'Guía Restaurante Mexicano' },
-  'guia-restaurante-peruano': { accessPath: '/guia-restaurante-peruano-access', label: 'Guía Restaurante Peruano' },
-  'guia-restaurante-japones': { accessPath: '/guia-restaurante-japones-access', label: 'Guía Restaurante Japonés' },
-  'guia-restaurante-nikkei': { accessPath: '/guia-restaurante-nikkei-access', label: 'Guía Restaurante Nikkei' },
-  'mega-pack-tareas': { accessPath: '/mega-pack-tareas-access', label: 'Mega Pack Tareas' },
-};
+import { PRODUCTS_CONFIG } from '../../src/data/productos-digitales-config';
 
 export const handler: Handler = async (event) => {
   const headers = {
@@ -58,7 +27,7 @@ export const handler: Handler = async (event) => {
     if (!email || !product) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'email and product required' }) };
     }
-    const config = PRODUCTS[product];
+    const config = PRODUCTS_CONFIG[product];
     if (!config) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: `Unknown product: ${product}` }) };
     }
@@ -78,10 +47,10 @@ export const handler: Handler = async (event) => {
         body: JSON.stringify({
           from: 'AI Chef Pro <noreply@contact.aichef.pro>',
           to: email,
-          subject: `Tu acceso a ${config.label}`,
+          subject: `Tu acceso a ${config.name}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-              <h1 style="color: #FFD700; font-size: 24px;">Tu enlace de acceso a ${config.label}</h1>
+              <h1 style="color: #FFD700; font-size: 24px;">Tu enlace de acceso a ${config.name}</h1>
               <p style="color: #333; line-height: 1.6;">
                 Hemos generado manualmente tu acceso al producto. Haz clic en el botón para entrar a tu dashboard:
               </p>

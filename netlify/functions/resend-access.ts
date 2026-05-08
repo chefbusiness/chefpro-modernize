@@ -1,44 +1,5 @@
 import type { Handler } from '@netlify/functions';
-
-// ── Product config ──────────────────────────────────────────────
-interface ProductConfig {
-  accessPath: string;
-  emailSubject: string;
-  emailTitle: string;
-  emailBody: string;
-  emailCta: string;
-}
-
-const PRODUCTS: Record<string, ProductConfig> = {
-  'pro-prompts-ebook': {
-    accessPath: '/pro-prompts-library-access',
-    emailSubject: 'Tu acceso a Pro Prompts Library',
-    emailTitle: 'Accede a tu Pro Prompts Library',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard con todos los prompts y descargas:',
-    emailCta: 'Acceder a mi Library',
-  },
-  'kit-escandallos': {
-    accessPath: '/kit-escandallos-access',
-    emailSubject: 'Tu acceso al Kit de Escandallos Pro',
-    emailTitle: 'Accede a tu Kit de Escandallos Pro',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 11 plantillas Excel:',
-    emailCta: 'Acceder a mis Plantillas',
-  },
-  'pack-appcc': {
-    accessPath: '/pack-appcc-access',
-    emailSubject: 'Tu acceso al Pack de Plantillas APPCC',
-    emailTitle: 'Accede a tu Pack de Plantillas APPCC',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
-    emailCta: 'Acceder a mis Plantillas APPCC',
-  },
-  'kit-tareas': {
-    accessPath: '/kit-tareas-access',
-    emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',
-    emailTitle: 'Accede a tu Kit de Tareas Recurrentes',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
-    emailCta: 'Acceder a mis Checklists',
-  },
-};
+import { PRODUCTS_CONFIG, DEFAULT_PRODUCT_ID } from '../../src/data/productos-digitales-config';
 
 // ── Handler ─────────────────────────────────────────────────────
 export const handler: Handler = async (event) => {
@@ -62,8 +23,8 @@ export const handler: Handler = async (event) => {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Email required' }) };
     }
 
-    const productId = product && PRODUCTS[product] ? product : 'pro-prompts-ebook';
-    const config = PRODUCTS[productId];
+    const productId = product && PRODUCTS_CONFIG[product] ? product : DEFAULT_PRODUCT_ID;
+    const config = PRODUCTS_CONFIG[productId];
 
     // Search Stripe for completed checkout sessions with this email
     const Stripe = (await import('stripe')).default;
@@ -102,9 +63,9 @@ export const handler: Handler = async (event) => {
         subject: config.emailSubject,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">
-            <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitle}</h1>
+            <h1 style="color: #FFD700; font-size: 24px;">${config.emailTitleResend}</h1>
             <p style="color: #333; line-height: 1.6;">
-              ${config.emailBody}
+              ${config.emailBodyResend}
             </p>
             <div style="text-align: center; margin: 30px 0;">
               <a href="${magicLink}" style="background: #FFD700; color: #000; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
