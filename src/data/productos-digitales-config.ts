@@ -449,6 +449,23 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
     },
   },
+  'plan-negocio-food-truck': {
+    id: 'plan-negocio-food-truck',
+    name: 'Plan de Negocio Food Truck',
+    priceLabel: '€29',
+    accessPath: '/plan-negocio-food-truck-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Food Truck</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX completo (10 secciones), el plan financiero Excel y el checklist de apertura con 59 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Food Truck',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX, el plan financiero Excel y el checklist de apertura:',
+    files: {
+      'plan-negocio': '/dl/plan-negocio-food-truck/plan-de-negocio-food-truck.docx',
+      'plan-financiero': '/dl/plan-negocio-food-truck/plan-financiero-food-truck.xlsx',
+      'checklist-apertura': '/dl/plan-negocio-food-truck/checklist-apertura-food-truck.xlsx',
+    },
+  },
   'plan-negocio-panaderia': {
     id: 'plan-negocio-panaderia',
     name: 'Plan de Negocio Panadería / Obrador',

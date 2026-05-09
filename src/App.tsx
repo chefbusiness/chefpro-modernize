@@ -106,6 +106,9 @@ import PlanNegocioCafeteriaDashboard from "./pages/PlanNegocioCafeteriaDashboard
 import PlanNegocioPanaderia from "./pages/PlanNegocioPanaderia";
 import PlanNegocioPanaderiaAccessGate from "./pages/PlanNegocioPanaderiaAccessGate";
 import PlanNegocioPanaderiaDashboard from "./pages/PlanNegocioPanaderiaDashboard";
+import PlanNegocioFoodTruck from "./pages/PlanNegocioFoodTruck";
+import PlanNegocioFoodTruckAccessGate from "./pages/PlanNegocioFoodTruckAccessGate";
+import PlanNegocioFoodTruckDashboard from "./pages/PlanNegocioFoodTruckDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -620,6 +623,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-panaderia-jwt" redirectTo="/plan-negocio-panaderia">
                   <PlanNegocioPanaderiaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Food Truck */}
+            <Route path="/plan-negocio-food-truck" element={<PlanNegocioFoodTruck />} />
+            <Route path="/plan-negocio-food-truck-access" element={<PlanNegocioFoodTruckAccessGate />} />
+            <Route
+              path="/plan-negocio-food-truck-library"
+              element={
+                <ProtectedRoute storageKey="plan-negocio-food-truck-jwt" redirectTo="/plan-negocio-food-truck">
+                  <PlanNegocioFoodTruckDashboard />
                 </ProtectedRoute>
               }
             />

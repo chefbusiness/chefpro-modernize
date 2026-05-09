@@ -158,6 +158,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-panaderia.jpg',
     price: '35.00',
   },
+  '/plan-negocio-food-truck': {
+    title: 'Plan de Negocio: Food Truck — DOCX + Excel + Checklist 59 trámites | AI Chef Pro',
+    description: 'DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura 59 trámites con licencia venta ambulante e ITV vehículo adaptado. España 2026. 29 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-food-truck.jpg',
+    price: '29.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
