@@ -18,6 +18,7 @@ const ALL_TAGS = [
   { id: 'plantillas', label: 'Plantillas' },
   { id: 'guias', label: 'Guías How-To' },
   { id: 'manuales', label: 'Manuales' },
+  { id: 'plan-negocio', label: 'Planes de Negocio' },
   // Temática
   { id: 'costes', label: 'Control de Costes' },
   { id: 'seguridad', label: 'Seguridad Alimentaria' },
@@ -30,12 +31,15 @@ const ALL_TAGS = [
   { id: 'hamburgueseria', label: 'Hamburguesería' },
   { id: 'dark-kitchen', label: 'Dark Kitchen' },
   { id: 'pasteleria', label: 'Pastelería' },
+  { id: 'panaderia', label: 'Panadería / Obrador' },
   { id: 'bar', label: 'Bar / Cocktails' },
   { id: 'catering', label: 'Catering' },
   { id: 'hotel', label: 'Hotel' },
   { id: 'heladeria', label: 'Heladería' },
   { id: 'chocolateria', label: 'Chocolatería' },
   { id: 'chef-privado', label: 'Chef Privado' },
+  { id: 'food-truck', label: 'Food Truck' },
+  { id: 'gastro-movil', label: 'Gastro Móvil / Eventos' },
 ];
 
 // ── Live products ────────────────────────────────────────────
@@ -476,7 +480,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion', 'catering'],
+    tags: ['excel', 'plantillas', 'gestion', 'catering', 'gastro-movil'],
   },
   {
     name: 'Tareas Recurrentes: Hotel Completo',
@@ -666,7 +670,7 @@ const products = [
     image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
-    tags: ['excel', 'plantillas', 'gestion', 'food-truck', 'street-food', 'eventos'],
+    tags: ['excel', 'plantillas', 'gestion', 'food-truck', 'street-food', 'eventos', 'gastro-movil'],
   },
   {
     name: 'Tareas Recurrentes: Panadería / Obrador',
