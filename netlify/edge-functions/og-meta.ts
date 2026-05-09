@@ -146,6 +146,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-tapas-bar.jpg',
     price: '35.00',
   },
+  '/plan-negocio-cafeteria': {
+    title: 'Plan de Negocio: Cafetería / Brunch — Plan Financiero + Checklist 65 trámites | AI Chef Pro',
+    description: 'Plan financiero Excel con P&L 3 años + plan negocio Word + checklist apertura 65 trámites bajo licencia inocua y RGSEAA. Cafetería o brunch España 2026. 29 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-cafeteria.jpg',
+    price: '29.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',

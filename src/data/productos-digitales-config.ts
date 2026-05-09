@@ -449,6 +449,23 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
     },
   },
+  'plan-negocio-cafeteria': {
+    id: 'plan-negocio-cafeteria',
+    name: 'Plan de Negocio Cafetería / Brunch',
+    priceLabel: '€29',
+    accessPath: '/plan-negocio-cafeteria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Cafetería / Brunch',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Cafetería / Brunch</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura con 65+ trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Cafetería / Brunch',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura:',
+    files: {
+      'plan-financiero': '/dl/plan-negocio-cafeteria/plan-financiero-cafeteria-brunch.xlsx',
+      'plan-negocio': '/dl/plan-negocio-cafeteria/plan-de-negocio-cafeteria-brunch.docx',
+      'checklist-apertura': '/dl/plan-negocio-cafeteria/checklist-apertura-cafeteria-brunch.xlsx',
+    },
+  },
   'plan-negocio-tapas-bar': {
     id: 'plan-negocio-tapas-bar',
     name: 'Plan de Negocio Tapas Bar / Gastrobar',
