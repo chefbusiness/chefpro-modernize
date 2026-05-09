@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -306,6 +306,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Plan de Negocio: Bar-Restaurante',
+    slug: '/plan-negocio-bar-restaurante',
+    price: '€35',
+    originalPrice: '€120',
+    discount: '-71%',
+    description: 'Plan de negocio completo para abrir un bar-restaurante en España: plan financiero Excel con P&L 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 50+ trámites.',
+    features: [
+      'Plan financiero Excel con P&L 3 años',
+      'Inversión inicial detallada (~133K EUR ref.)',
+      'Punto de equilibrio + 3 escenarios',
+      'Checklist apertura: 50+ trámites España 2026',
+    ],
+    icon: Banknote,
+    image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'bar', 'plan-negocio'],
   },
   {
     name: 'Tareas Recurrentes: Restaurante Casual',

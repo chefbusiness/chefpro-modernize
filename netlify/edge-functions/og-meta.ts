@@ -134,6 +134,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-kit-tareas-sushi-bar.jpg',
     price: '14.00',
   },
+  '/plan-negocio-bar-restaurante': {
+    title: 'Plan de Negocio: Bar-Restaurante — Plan Financiero Excel + Checklist Apertura | AI Chef Pro',
+    description: 'Plan financiero Excel con P&L 3 años, inversión inicial, punto de equilibrio, escenarios y checklist apertura con 50+ trámites España 2026. 35 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-bar-restaurante.jpg',
+    price: '35.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',

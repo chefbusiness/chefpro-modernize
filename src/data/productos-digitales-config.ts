@@ -449,6 +449,23 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
     },
   },
+  'plan-negocio-bar-restaurante': {
+    id: 'plan-negocio-bar-restaurante',
+    name: 'Plan de Negocio Bar-Restaurante',
+    priceLabel: '€35',
+    accessPath: '/plan-negocio-bar-restaurante-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Bar-Restaurante',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Bar-Restaurante</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura con 50+ trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Bar-Restaurante',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura:',
+    files: {
+      'plan-financiero': '/dl/plan-negocio-bar-restaurante/plan-financiero-bar-restaurante.xlsx',
+      'plan-negocio': '/dl/plan-negocio-bar-restaurante/plan-de-negocio-bar-restaurante.docx',
+      'checklist-apertura': '/dl/plan-negocio-bar-restaurante/checklist-apertura-bar-restaurante.xlsx',
+    },
+  },
   'kit-tareas-sushi-bar': {
     id: 'kit-tareas-sushi-bar',
     name: 'Kit Tareas Sushi Bar',
