@@ -97,6 +97,9 @@ import KitTareasSushiBarDashboard from "./pages/KitTareasSushiBarDashboard";
 import PlanNegocioBarRestaurante from "./pages/PlanNegocioBarRestaurante";
 import PlanNegocioBarRestauranteAccessGate from "./pages/PlanNegocioBarRestauranteAccessGate";
 import PlanNegocioBarRestauranteDashboard from "./pages/PlanNegocioBarRestauranteDashboard";
+import PlanNegocioTapasBar from "./pages/PlanNegocioTapasBar";
+import PlanNegocioTapasBarAccessGate from "./pages/PlanNegocioTapasBarAccessGate";
+import PlanNegocioTapasBarDashboard from "./pages/PlanNegocioTapasBarDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -575,6 +578,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-bar-restaurante-jwt" redirectTo="/plan-negocio-bar-restaurante">
                   <PlanNegocioBarRestauranteDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Tapas Bar / Gastrobar */}
+            <Route path="/plan-negocio-tapas-bar" element={<PlanNegocioTapasBar />} />
+            <Route path="/plan-negocio-tapas-bar-access" element={<PlanNegocioTapasBarAccessGate />} />
+            <Route
+              path="/plan-negocio-tapas-bar-library"
+              element={
+                <ProtectedRoute storageKey="plan-negocio-tapas-bar-jwt" redirectTo="/plan-negocio-tapas-bar">
+                  <PlanNegocioTapasBarDashboard />
                 </ProtectedRoute>
               }
             />

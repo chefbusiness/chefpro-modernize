@@ -140,6 +140,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-bar-restaurante.jpg',
     price: '35.00',
   },
+  '/plan-negocio-tapas-bar': {
+    title: 'Plan de Negocio: Tapas Bar / Gastrobar — DOCX + Excel + Checklist 63 trámites | AI Chef Pro',
+    description: 'Documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura 63 trámites con licencia clasificada y salida de humos. España 2026. 35 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-tapas-bar.jpg',
+    price: '35.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',

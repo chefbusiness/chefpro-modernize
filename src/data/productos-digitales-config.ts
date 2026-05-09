@@ -449,6 +449,23 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'bonus-calendario': '/dl/kit-tareas-chef-privado/BONUS-02-calendario-anual-demanda.xlsx',
     },
   },
+  'plan-negocio-tapas-bar': {
+    id: 'plan-negocio-tapas-bar',
+    name: 'Plan de Negocio Tapas Bar / Gastrobar',
+    priceLabel: '€35',
+    accessPath: '/plan-negocio-tapas-bar-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Tapas Bar / Gastrobar',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Plan de Negocio: Tapas Bar / Gastrobar</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX completo (10 secciones), el plan financiero Excel y el checklist de apertura con 63 trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+    emailTitleResend: 'Accede a tu Plan de Negocio: Tapas Bar / Gastrobar',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX, el plan financiero Excel y el checklist de apertura:',
+    files: {
+      'plan-negocio': '/dl/plan-negocio-tapas-bar/plan-de-negocio-tapas-bar.docx',
+      'plan-financiero': '/dl/plan-negocio-tapas-bar/plan-financiero-tapas-bar.xlsx',
+      'checklist-apertura': '/dl/plan-negocio-tapas-bar/checklist-apertura-tapas-bar.xlsx',
+    },
+  },
   'plan-negocio-bar-restaurante': {
     id: 'plan-negocio-bar-restaurante',
     name: 'Plan de Negocio Bar-Restaurante',
