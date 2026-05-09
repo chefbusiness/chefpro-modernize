@@ -103,6 +103,9 @@ import PlanNegocioTapasBarDashboard from "./pages/PlanNegocioTapasBarDashboard";
 import PlanNegocioCafeteria from "./pages/PlanNegocioCafeteria";
 import PlanNegocioCafeteriaAccessGate from "./pages/PlanNegocioCafeteriaAccessGate";
 import PlanNegocioCafeteriaDashboard from "./pages/PlanNegocioCafeteriaDashboard";
+import PlanNegocioPanaderia from "./pages/PlanNegocioPanaderia";
+import PlanNegocioPanaderiaAccessGate from "./pages/PlanNegocioPanaderiaAccessGate";
+import PlanNegocioPanaderiaDashboard from "./pages/PlanNegocioPanaderiaDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -605,6 +608,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-cafeteria-jwt" redirectTo="/plan-negocio-cafeteria">
                   <PlanNegocioCafeteriaDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Panadería / Obrador */}
+            <Route path="/plan-negocio-panaderia" element={<PlanNegocioPanaderia />} />
+            <Route path="/plan-negocio-panaderia-access" element={<PlanNegocioPanaderiaAccessGate />} />
+            <Route
+              path="/plan-negocio-panaderia-library"
+              element={
+                <ProtectedRoute storageKey="plan-negocio-panaderia-jwt" redirectTo="/plan-negocio-panaderia">
+                  <PlanNegocioPanaderiaDashboard />
                 </ProtectedRoute>
               }
             />

@@ -152,6 +152,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-cafeteria.jpg',
     price: '29.00',
   },
+  '/plan-negocio-panaderia': {
+    title: 'Plan de Negocio: Panadería / Obrador — Plan Financiero + Checklist RGSEAA Obrador | AI Chef Pro',
+    description: 'Plan financiero Excel con P&L 3 años + estacionalidad navideña + checklist apertura 60 trámites incluyendo RGSEAA obrador y salida de humos. España 2026. 35 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-panaderia.jpg',
+    price: '35.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
