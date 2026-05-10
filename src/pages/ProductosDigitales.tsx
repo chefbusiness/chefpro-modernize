@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -424,6 +424,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['plan-negocio', 'cocteleria', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Parrillero / Asador para Eventos',
+    slug: '/plan-negocio-parrillero-asador-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C+B2B: DOCX 60+ pp + Plan Financiero Excel + Calculadora Pricing dual + 96 proveedores + Catálogo equipamiento + Manual técnico + 12 cortes + Modelos contrato B2C/B2B + Guía 8 sistemas + roadmap food truck + Checklist 6 fases con anexo CCAA fuego.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Modelo híbrido B2C 40 % + B2B 60 % validado',
+      'Anexo legal CCAA fuego al aire libre (8 comunidades)',
+      'Manual técnico + 8 sistemas + roadmap food truck',
+    ],
+    icon: Flame,
+    image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'parrillero', 'asador', 'eventos', 'gastro-movil'],
   },
   {
     name: 'Tareas Recurrentes: Restaurante Casual',

@@ -112,6 +112,9 @@ import PlanNegocioFoodTruckDashboard from "./pages/PlanNegocioFoodTruckDashboard
 import PlanNegocioCocteleriaEventos from "./pages/PlanNegocioCocteleriaEventos";
 import PlanNegocioCocteleriaEventosAccessGate from "./pages/PlanNegocioCocteleriaEventosAccessGate";
 import PlanNegocioCocteleriaEventosDashboard from "./pages/PlanNegocioCocteleriaEventosDashboard";
+import PlanNegocioParrilleroAsadorEventos from "./pages/PlanNegocioParrilleroAsadorEventos";
+import PlanNegocioParrilleroAsadorEventosAccessGate from "./pages/PlanNegocioParrilleroAsadorEventosAccessGate";
+import PlanNegocioParrilleroAsadorEventosDashboard from "./pages/PlanNegocioParrilleroAsadorEventosDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -650,6 +653,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-cocteleria-eventos-jwt" redirectTo="/plan-negocio-cocteleria-eventos">
                   <PlanNegocioCocteleriaEventosDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Parrillero / Asador para Eventos */}
+            <Route path="/plan-negocio-parrillero-asador-eventos" element={<PlanNegocioParrilleroAsadorEventos />} />
+            <Route path="/plan-negocio-parrillero-asador-eventos-access" element={<PlanNegocioParrilleroAsadorEventosAccessGate />} />
+            <Route
+              path="/plan-negocio-parrillero-asador-eventos-library"
+              element={
+                <ProtectedRoute storageKey="plan-negocio-parrillero-asador-eventos-jwt" redirectTo="/plan-negocio-parrillero-asador-eventos">
+                  <PlanNegocioParrilleroAsadorEventosDashboard />
                 </ProtectedRoute>
               }
             />

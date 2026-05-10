@@ -170,6 +170,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-cocteleria-eventos.jpg',
     price: '55.00',
   },
+  '/plan-negocio-parrillero-asador-eventos': {
+    title: 'Plan de Negocio Parrillero / Asador para Eventos — 11 Entregables | AI Chef Pro',
+    description: 'Kit profesional para montar tu servicio premium itinerante de parrilla en España 2026. Modelo B2C+B2B. DOCX 60+ pp + Plan Financiero Excel + 96 proveedores + Manual técnico + 12 cortes + Modelos contrato B2C/B2B + Guía 8 sistemas + Roadmap food truck. Inversión desde 3.500 EUR. 45 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-parrillero-asador-eventos.jpg',
+    price: '45.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
