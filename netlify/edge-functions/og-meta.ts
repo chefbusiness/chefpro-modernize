@@ -164,6 +164,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-food-truck.jpg',
     price: '29.00',
   },
+  '/plan-negocio-cocteleria-eventos': {
+    title: 'Plan de Negocio Coctelería de Eventos / Barra Móvil — 9 Entregables | AI Chef Pro',
+    description: 'Kit profesional para montar tu empresa de coctelería itinerante en España 2026. DOCX 10 secciones + Plan Financiero Excel + 96 proveedores + 15 cocktails + 10 experiencias + Modelo contrato + Checklist 71 trámites. Inversión 18-35K EUR. 55 EUR.',
+    image: 'https://aichef.pro/og-plan-negocio-cocteleria-eventos.jpg',
+    price: '55.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
