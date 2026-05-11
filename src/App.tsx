@@ -118,6 +118,9 @@ import PlanNegocioParrilleroAsadorEventosDashboard from "./pages/PlanNegocioParr
 import PlanNegocioPaelleroEventos from "./pages/PlanNegocioPaelleroEventos";
 import PlanNegocioPaelleroEventosAccessGate from "./pages/PlanNegocioPaelleroEventosAccessGate";
 import PlanNegocioPaelleroEventosDashboard from "./pages/PlanNegocioPaelleroEventosDashboard";
+import PlanChefPrivadoShowcookingEventos from "./pages/PlanChefPrivadoShowcookingEventos";
+import PlanChefPrivadoShowcookingEventosAccessGate from "./pages/PlanChefPrivadoShowcookingEventosAccessGate";
+import PlanChefPrivadoShowcookingEventosDashboard from "./pages/PlanChefPrivadoShowcookingEventosDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -680,6 +683,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-paellero-eventos-jwt" redirectTo="/plan-negocio-paellero-eventos">
                   <PlanNegocioPaelleroEventosDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Chef Privado / Showcooking a Domicilio */}
+            <Route path="/plan-chef-privado-showcooking-eventos" element={<PlanChefPrivadoShowcookingEventos />} />
+            <Route path="/plan-chef-privado-showcooking-eventos-access" element={<PlanChefPrivadoShowcookingEventosAccessGate />} />
+            <Route
+              path="/plan-chef-privado-showcooking-eventos-library"
+              element={
+                <ProtectedRoute storageKey="plan-chef-privado-showcooking-eventos-jwt" redirectTo="/plan-chef-privado-showcooking-eventos">
+                  <PlanChefPrivadoShowcookingEventosDashboard />
                 </ProtectedRoute>
               }
             />

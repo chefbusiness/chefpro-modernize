@@ -182,6 +182,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-negocio-paellero-eventos.jpg',
     price: '45.00',
   },
+  '/plan-chef-privado-showcooking-eventos': {
+    title: 'Plan de Negocio Chef Privado / Showcooking a Domicilio — 11 Entregables | AI Chef Pro',
+    description: 'Kit profesional para montar tu servicio premium de chef privado y showcooking a domicilio en España 2026. Modelo B2C íntimo + B2B corporate. DOCX 60+ pp + Plan Financiero Excel + 96 proveedores premium (cuchillería japonesa, AOVE DO, caviar Riofrío) + Manual técnico APPCC móvil + 12 menús temáticos + Modelos contrato + Guía sistemas. Inversión desde 4.500 EUR. 45 EUR.',
+    image: 'https://aichef.pro/og-plan-chef-privado-showcooking-eventos.jpg',
+    price: '45.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',
