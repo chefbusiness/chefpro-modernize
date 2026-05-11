@@ -6,7 +6,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 import {
   ArrowRight, BookOpen, FileSpreadsheet, Star, Check, Clock,
   ShieldCheck, BarChart3, Utensils, GraduationCap, Users, Truck, Package, TrendingUp,
-  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame,
+  ChefHat, Coffee, Building, Filter, Globe, ChevronDown, ClipboardList, Pizza, Beef, Warehouse, Croissant, Wine, Tent, IceCream, CakeSlice, UtensilsCrossed, Fish, Shell, Beer, Wheat, Banknote, Flame, LayoutGrid,
 } from 'lucide-react';
 
 // ── Tag definitions ──────────────────────────────────────────
@@ -462,6 +462,25 @@ const products = [
     badge: 'Nuevo',
     badgeColor: 'bg-purple-500/20 text-purple-400',
     tags: ['plan-negocio', 'paellero', 'paella', 'arroceria', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Catering & Kit Temático para Eventos',
+    slug: '/plan-catering-tematico-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España. El único kit que enseña a montar 5 conceptos en paralelo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…), no monoconcepto. 11 entregables: DOCX 60+ pp + Plan Financiero Excel mix B2C 35 % + B2B 65 % + Calculadora Pricing multi-concepto + 96 proveedores 12 cocinas del mundo + Catálogo equipamiento multi-cocina + 12 conceptos pre-empaquetados + Manual técnico APPCC multi-concepto + Modelos contrato B2C/B2B con MSA + Guía especialización progresiva + Checklist 6 fases con anexo 17 CCAA.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Único multi-concepto España (3-5 cocinas en paralelo)',
+      '96 proveedores · 12 cocinas del mundo validados',
+      '12 conceptos pre-empaquetados + ticket 70-130 €/pax',
+    ],
+    icon: LayoutGrid,
+    image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'catering', 'eventos', 'gastro-movil', 'multi-concepto'],
   },
   {
     name: 'Plan de Negocio: Chef Privado / Showcooking a Domicilio',

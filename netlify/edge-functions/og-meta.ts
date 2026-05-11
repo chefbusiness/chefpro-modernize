@@ -188,6 +188,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og-plan-chef-privado-showcooking-eventos.jpg',
     price: '45.00',
   },
+  '/plan-catering-tematico-eventos': {
+    title: 'Plan de Negocio para Catering & Kit Temático para Eventos — 11 Entregables | AI Chef Pro',
+    description: 'Plan + kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España 2026. El único kit que enseña a montar 5 conceptos en paralelo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…). Modelo dual B2C bodas multiculturales + B2B corporate brand events. 11 entregables. Inversión desde 5.500 EUR. 45 EUR.',
+    image: 'https://aichef.pro/og-plan-catering-tematico-eventos.jpg',
+    price: '45.00',
+  },
   '/kit-tareas-asador': {
     title: 'Kit Tareas Recurrentes: Asador / Parrilla y Horno Josper | AI Chef Pro',
     description: '11 checklists Excel: encendido y mantenimiento Josper, maduración dry-age, despiece, temperaturas por corte, pescados y verduras a la brasa. 14 EUR.',

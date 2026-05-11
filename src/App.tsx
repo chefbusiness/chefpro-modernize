@@ -121,6 +121,9 @@ import PlanNegocioPaelleroEventosDashboard from "./pages/PlanNegocioPaelleroEven
 import PlanChefPrivadoShowcookingEventos from "./pages/PlanChefPrivadoShowcookingEventos";
 import PlanChefPrivadoShowcookingEventosAccessGate from "./pages/PlanChefPrivadoShowcookingEventosAccessGate";
 import PlanChefPrivadoShowcookingEventosDashboard from "./pages/PlanChefPrivadoShowcookingEventosDashboard";
+import PlanCateringTematicoEventos from "./pages/PlanCateringTematicoEventos";
+import PlanCateringTematicoEventosAccessGate from "./pages/PlanCateringTematicoEventosAccessGate";
+import PlanCateringTematicoEventosDashboard from "./pages/PlanCateringTematicoEventosDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -695,6 +698,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-chef-privado-showcooking-eventos-jwt" redirectTo="/plan-chef-privado-showcooking-eventos">
                   <PlanChefPrivadoShowcookingEventosDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio para Catering & Kit Temático para Eventos */}
+            <Route path="/plan-catering-tematico-eventos" element={<PlanCateringTematicoEventos />} />
+            <Route path="/plan-catering-tematico-eventos-access" element={<PlanCateringTematicoEventosAccessGate />} />
+            <Route
+              path="/plan-catering-tematico-eventos-library"
+              element={
+                <ProtectedRoute storageKey="plan-catering-tematico-eventos-jwt" redirectTo="/plan-catering-tematico-eventos">
+                  <PlanCateringTematicoEventosDashboard />
                 </ProtectedRoute>
               }
             />
