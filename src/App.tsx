@@ -115,6 +115,9 @@ import PlanNegocioCocteleriaEventosDashboard from "./pages/PlanNegocioCocteleria
 import PlanNegocioParrilleroAsadorEventos from "./pages/PlanNegocioParrilleroAsadorEventos";
 import PlanNegocioParrilleroAsadorEventosAccessGate from "./pages/PlanNegocioParrilleroAsadorEventosAccessGate";
 import PlanNegocioParrilleroAsadorEventosDashboard from "./pages/PlanNegocioParrilleroAsadorEventosDashboard";
+import PlanNegocioPaelleroEventos from "./pages/PlanNegocioPaelleroEventos";
+import PlanNegocioPaelleroEventosAccessGate from "./pages/PlanNegocioPaelleroEventosAccessGate";
+import PlanNegocioPaelleroEventosDashboard from "./pages/PlanNegocioPaelleroEventosDashboard";
 import KitTareasAsador from "./pages/KitTareasAsador";
 import KitTareasAsadorAccessGate from "./pages/KitTareasAsadorAccessGate";
 import KitTareasAsadorDashboard from "./pages/KitTareasAsadorDashboard";
@@ -665,6 +668,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="plan-negocio-parrillero-asador-eventos-jwt" redirectTo="/plan-negocio-parrillero-asador-eventos">
                   <PlanNegocioParrilleroAsadorEventosDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Plan de Negocio Paellero / Paella para Eventos */}
+            <Route path="/plan-negocio-paellero-eventos" element={<PlanNegocioPaelleroEventos />} />
+            <Route path="/plan-negocio-paellero-eventos-access" element={<PlanNegocioPaelleroEventosAccessGate />} />
+            <Route
+              path="/plan-negocio-paellero-eventos-library"
+              element={
+                <ProtectedRoute storageKey="plan-negocio-paellero-eventos-jwt" redirectTo="/plan-negocio-paellero-eventos">
+                  <PlanNegocioPaelleroEventosDashboard />
                 </ProtectedRoute>
               }
             />
