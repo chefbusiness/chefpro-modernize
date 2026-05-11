@@ -1017,6 +1017,8 @@ export default function ProductosDigitales() {
                   <a
                     key={product.slug}
                     href={product.slug}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${(product as any).featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}`}
                   >
                     {/* Badge */}

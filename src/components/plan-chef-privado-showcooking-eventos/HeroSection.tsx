@@ -53,6 +53,21 @@ export default function HeroSection() {
       }} />
 
       <div className="relative max-w-4xl mx-auto text-center z-10">
+        <nav className="flex justify-end items-center gap-3 md:gap-4 text-xs md:text-sm pt-2">
+          <a
+            href="/productos-digitales"
+            className="text-gray-400 hover:text-[#FFD700] transition-colors"
+          >
+            ← Productos Digitales
+          </a>
+          <span className="text-gray-700">·</span>
+          <a
+            href="/"
+            className="text-gray-400 hover:text-[#FFD700] transition-colors"
+          >
+            Inicio
+          </a>
+        </nav>
         <LogoBadge />
         <div className="flex flex-col items-center gap-2 mb-6">
           <div className="flex -space-x-3 justify-center">
