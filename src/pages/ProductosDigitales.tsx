@@ -160,6 +160,25 @@ const products = [
     tags: ['pdf', 'guias', 'restaurante'],
   },
   {
+    name: 'Cómo Montar una Panadería con Obrador',
+    slug: '/guia-panaderia-obrador',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 70+ páginas: 20 capítulos, recetario masa madre, salida de humos, APPCC obrador con alérgenos cruzados, plan fermentación 18-72h. 9 plantillas Excel + 6 checklists + business plan + manual del obrador.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 70+ páginas',
+      'Recetario maestro masa madre (baguette tradition, hogaza T80, croissant, panettone)',
+      'Checklist salida de humos + licencia clasificada (28 ítems)',
+      'Calculadora CAPEX + escandallos por tipo de harina',
+    ],
+    icon: Wheat,
+    image: '/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'pasteleria', 'panaderia', 'obrador'],
+  },
+  {
     name: 'Cómo Montar un Restaurante Mexicano',
     slug: '/guia-restaurante-mexicano',
     price: '€65',
@@ -866,7 +885,6 @@ const products = [
 
 // ── Coming soon products ────────────────────────────────────
 const comingSoon = [
-  { icon: Utensils, name: 'Cómo Montar una Panadería/Obrador', desc: 'Guía completa con presupuesto, planos tipo, trámites por CCAA, equipamiento y proveedores.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
   { icon: Utensils, name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
   { icon: ChefHat, name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },

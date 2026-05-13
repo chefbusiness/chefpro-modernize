@@ -157,6 +157,9 @@ import GuiaRestauranteGastronomicoDashboard from "./pages/GuiaRestauranteGastron
 import GuiaRestauranteCasual from "./pages/GuiaRestauranteCasual";
 import GuiaRestauranteCasualAccessGate from "./pages/GuiaRestauranteCasualAccessGate";
 import GuiaRestauranteCasualDashboard from "./pages/GuiaRestauranteCasualDashboard";
+import GuiaPanaderiaObrador from "./pages/GuiaPanaderiaObrador";
+import GuiaPanaderiaObradorAccessGate from "./pages/GuiaPanaderiaObradorAccessGate";
+import GuiaPanaderiaObradorDashboard from "./pages/GuiaPanaderiaObradorDashboard";
 import GuiaRestauranteMexicano from "./pages/GuiaRestauranteMexicano";
 import GuiaRestauranteMexicanoAccessGate from "./pages/GuiaRestauranteMexicanoAccessGate";
 import GuiaRestauranteMexicanoDashboard from "./pages/GuiaRestauranteMexicanoDashboard";
@@ -830,6 +833,18 @@ const App = () => (
               element={
                 <ProtectedRoute storageKey="guia-restaurante-casual-jwt" redirectTo="/guia-restaurante-casual">
                   <GuiaRestauranteCasualDashboard />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Guía Panadería con Obrador */}
+            <Route path="/guia-panaderia-obrador" element={<GuiaPanaderiaObrador />} />
+            <Route path="/guia-panaderia-obrador-access" element={<GuiaPanaderiaObradorAccessGate />} />
+            <Route
+              path="/guia-panaderia-obrador-library"
+              element={
+                <ProtectedRoute storageKey="guia-panaderia-obrador-jwt" redirectTo="/guia-panaderia-obrador">
+                  <GuiaPanaderiaObradorDashboard />
                 </ProtectedRoute>
               }
             />

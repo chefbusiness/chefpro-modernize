@@ -242,6 +242,12 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
     price: '65.00',
   },
+  '/guia-panaderia-obrador': {
+    title: 'Cómo Montar una Panadería con Obrador — Guía Completa España 2026 | AI Chef Pro',
+    description: 'Guía premium 70+ págs: 20 capítulos, recetario masa madre, salida de humos, APPCC obrador con alérgenos, plan fermentación 18-72h. 9 plantillas Excel + 6 checklists + business plan + manual del obrador. 65 EUR.',
+    image: 'https://aichef.pro/og-guia-panaderia-obrador.jpg',
+    price: '65.00',
+  },
   '/guia-restaurante-peruano': {
     title: 'Cómo Montar un Restaurante Peruano 80 Plazas — Guía Completa España | AI Chef Pro',
     description: 'Guía premium 60+ págs: 20 capítulos, cevichería, Nikkei, barra piscos, proveedores peruanos. 9 plantillas Excel + 6 checklists + business plan. 65 EUR.',
