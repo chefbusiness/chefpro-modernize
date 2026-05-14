@@ -937,11 +937,11 @@
       "member": {
         "name": "AI Chef Lid",
         "price": "Gratis",
-        "uses": "10/maand",
+        "uses": "20/maand",
         "description": "Ideaal voor keukenhulpen, koks en postchefs",
         "features": {
           "0": "Toegang tot alle 55+ tools",
-          "1": "10 maandelijkse gebruiken",
+          "1": "20 maandelijkse gebruiken",
           "2": "Wereldwijde kookboeken",
           "3": "E-mailondersteuning"
         }
@@ -1076,7 +1076,7 @@
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
     "q3": "Hoe werkt het gratis plan?",
-    "a3": "Het AI Chef Member-plan is volledig gratis en vereist geen creditcard. Het omvat 10 gebruiken per maand met toegang tot alle 55+ tools. Wanneer u meer nodig heeft, kunt u op elk moment upgraden naar AI Chef Premium Pro (€25/maand), Premium Plus (€50/maand), Premium Max (€95/maand) of het Jaarplan (€950/jaar).",
+    "a3": "Het AI Chef Member-plan is volledig gratis en vereist geen creditcard. Het omvat 20 gebruiken per maand met toegang tot alle 55+ tools. Wanneer u meer nodig heeft, kunt u op elk moment upgraden naar AI Chef Premium Pro (€25/maand), Premium Plus (€50/maand), Premium Max (€95/maand) of het Jaarplan (€950/jaar).",
     "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
     "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
     "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
@@ -1660,7 +1660,7 @@
       },
       {
         "question": "Hoeveel kost het gebruik van AI voor restaurantbeheer?",
-        "answer": "AI Chef Pro heeft een gratis plan (AI Chef Lid) met 10 gebruiken per maand. Betaalde plannen beginnen bij €25/maand (AI Chef Premium Pro, 150 gebruiken) en gaan tot €95/maand voor onbeperkt gebruik. Er is ook een jaarplan voor €950 wat neerkomt op €79/maand."
+        "answer": "AI Chef Pro heeft een gratis plan (AI Chef Lid) met 20 gebruiken per maand. Betaalde plannen beginnen bij €25/maand (AI Chef Premium Pro, 150 gebruiken) en gaan tot €95/maand voor onbeperkt gebruik. Er is ook een jaarplan voor €950 wat neerkomt op €79/maand."
       }
     ],
     "cta_section": {
@@ -2977,7 +2977,7 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "10 gebruiken/maand",
+          "uses": "20 gebruiken/maand",
           "highlight": false
         },
         {
@@ -3123,7 +3123,7 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "10 gebruiken/maand",
+          "uses": "20 gebruiken/maand",
           "highlight": false
         },
         {
@@ -3373,7 +3373,7 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "10 gebruik/maand",
+          "uses": "20 gebruik/maand",
           "highlight": false
         },
         {
@@ -3719,7 +3719,7 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "10 gebruik/maand",
+          "uses": "20 gebruik/maand",
           "highlight": false
         },
         {
@@ -3883,7 +3883,7 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "10 gebruik/maand",
+          "uses": "20 gebruik/maand",
           "highlight": false
         },
         {
@@ -4118,7 +4118,7 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "10 gebruiken/maand",
+          "uses": "20 gebruiken/maand",
           "highlight": false
         },
         {
@@ -4269,7 +4269,7 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "10 gebruiken/maand",
+          "uses": "20 gebruiken/maand",
           "highlight": false
         },
         {
@@ -4391,7 +4391,7 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "10 menu's/maand",
+          "uses": "20 menu's/maand",
           "highlight": false
         },
         {
