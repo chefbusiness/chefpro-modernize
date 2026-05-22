@@ -778,6 +778,43 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     description: 'Términos y condiciones de uso de AI Chef Pro y sus productos digitales.',
     image: 'https://aichef.pro/og-image.jpg',
   },
+
+  // ── Sistema de Créditos (FAQ) — 7 idiomas ──
+  '/sistema-creditos': {
+    title: 'Preguntas Frecuentes — Sistema de Créditos | AI Chef Pro',
+    description: 'Resolvemos tus dudas sobre el nuevo sistema de créditos de AI Chef Pro: qué es, cómo se consumen los créditos y qué incluye tu plan.',
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/en/sistema-creditos': {
+    title: 'FAQ — Credit System | AI Chef Pro',
+    description: "We answer your questions about AI Chef Pro's new credit system: what it is, how credits are consumed, and what your plan includes.",
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/fr/sistema-creditos': {
+    title: 'FAQ — Système de Crédits | AI Chef Pro',
+    description: "Nous répondons à vos questions sur le nouveau système de crédits d'AI Chef Pro : ce que c'est, comment les crédits sont consommés et ce qu'inclut votre forfait.",
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/de/sistema-creditos': {
+    title: 'FAQ — Kreditsystem | AI Chef Pro',
+    description: 'Wir beantworten Ihre Fragen zum neuen Kreditsystem von AI Chef Pro: was es ist, wie Credits verbraucht werden und was Ihr Tarif enthält.',
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/it/sistema-creditos': {
+    title: 'FAQ — Sistema di Crediti | AI Chef Pro',
+    description: "Rispondiamo alle tue domande sul nuovo sistema di crediti di AI Chef Pro: cos'è, come si consumano i crediti e cosa include il tuo piano.",
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/pt/sistema-creditos': {
+    title: 'FAQ — Sistema de Créditos | AI Chef Pro',
+    description: 'Respondemos às suas perguntas sobre o novo sistema de créditos da AI Chef Pro: o que é, como se consomem os créditos e o que inclui o seu plano.',
+    image: 'https://aichef.pro/og-image.jpg',
+  },
+  '/nl/sistema-creditos': {
+    title: 'FAQ — Creditsysteem | AI Chef Pro',
+    description: 'We beantwoorden je vragen over het nieuwe creditsysteem van AI Chef Pro: wat het is, hoe credits worden verbruikt en wat je abonnement bevat.',
+    image: 'https://aichef.pro/og-image.jpg',
+  },
 };
 
 // Social media bot user agents

@@ -546,6 +546,9 @@ export default function ModernFooter() {
             <a href={legalHref('privacidad')} className="hover:text-foreground transition-colors">{t('footer.privacy')}</a>
             <a href={legalHref('terminos')} className="hover:text-foreground transition-colors">{t('footer.terms')}</a>
             <a href={legalHref('cookies')} className="hover:text-foreground transition-colors">{t('footer.cookies')}</a>
+            <a href={legalHref('sistema-creditos')} className="hover:text-foreground transition-colors">
+              {({ es: 'Sistema de créditos', en: 'Credit system', fr: 'Système de crédits', de: 'Kreditsystem', it: 'Sistema di crediti', pt: 'Sistema de créditos', nl: 'Creditsysteem' } as Record<string, string>)[lang] || 'Sistema de créditos'}
+            </a>
           </div>
 
           <div className="flex items-center space-x-3">

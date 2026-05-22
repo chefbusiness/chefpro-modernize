@@ -19,6 +19,7 @@ import Legal from "./pages/Legal";
 import Cookies from "./pages/Cookies";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import SistemaCreditos from "./pages/SistemaCreditos";
 import NotFound from "./pages/NotFound";
 import HerramientasIARestaurantes from "./pages/HerramientasIARestaurantes";
 import ReducirCostesRestaurante from "./pages/ReducirCostesRestaurante";
@@ -199,7 +200,8 @@ const App = () => (
             <Route path="/cookies" element={<Cookies />} />
             <Route path="/privacidad" element={<Privacy />} />
             <Route path="/terminos" element={<Terms />} />
-            
+            <Route path="/sistema-creditos" element={<SistemaCreditos />} />
+
             {/* Multi-language routes */}
             <Route path="/:lang/mentoria-online" element={<MentoriaOnline />} />
             <Route path="/es/formacion-presencial" element={<FormacionPresencial />} />
@@ -207,6 +209,7 @@ const App = () => (
             <Route path="/:lang/cookies" element={<Cookies />} />
             <Route path="/:lang/privacidad" element={<Privacy />} />
             <Route path="/:lang/terminos" element={<Terms />} />
+            <Route path="/:lang/sistema-creditos" element={<SistemaCreditos />} />
             
             {/* Landing pages SEO — todos los idiomas */}
             <Route path="/herramientas-ia-para-restaurantes" element={<HerramientasIARestaurantes />} />
