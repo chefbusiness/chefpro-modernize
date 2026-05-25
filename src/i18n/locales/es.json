@@ -179,7 +179,7 @@
     "description": "Explora capturas reales de nuestros agentes IA especializados para profesionales gastronómicos",
     "previous": "Anterior",
     "next": "Siguiente",
-    "counter": "{{current}} de {{total}} agentes IA mostradas",
+    "counter": "{{current}} de {{total}} agentes IA mostrados",
     "explore_all": "Explorar Todos los Agentes IA"
   },
   "screenshots": {
@@ -417,9 +417,9 @@
     }
   },
   "featured": {
-    "title_main": "Agentes IA Destacadas",
+    "title_main": "Agentes IA Destacados",
     "title_sub": "de la Semana",
-    "description": "Descubre las agentes IA que están revolucionando la industria gastronómica",
+    "description": "Descubre los agentes IA que están revolucionando la industria gastronómica",
     "badge": "Destacada",
     "apps": {
       "sosa_ingredients": {

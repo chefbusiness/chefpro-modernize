@@ -663,8 +663,8 @@
           "content": "Bei AI Chef Pro verwenden wir Cookies, um Ihre Benutzererfahrung zu verbessern und Ihnen personalisierte Inhalte anzubieten.",
           "content_paragraphs": [
             "<h2>1. Was sind Cookies?</h2><p>Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie AI Chef Pro besuchen. Sie helfen uns, Ihre Präferenzen zu speichern und Ihre Erfahrung mit unseren kulinarischen KI-Tools zu verbessern.</p>",
-            "<h2>2. Arten von Cookies, die wir verwenden</h2><p><strong>Essentielle Cookies:</strong> Notwendig für die grundlegende Funktionsweise unserer KI-KI-Agenten.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools verwenden, um sie zu verbessern.</p>",
-            "<h2>3. Zweck der Cookies</h2><p>Wir verwenden Cookies, um Ihre gastronomische Erfahrung zu personalisieren, Ihre Lieblingsrezepte zu speichern, Ihre Sitzungen aktiv zu halten und die Nutzung unserer kulinarischen KI-KI-Agenten zu analysieren, um unsere Dienste zu verbessern.</p>",
+            "<h2>2. Arten von Cookies, die wir verwenden</h2><p><strong>Essentielle Cookies:</strong> Notwendig für die grundlegende Funktionsweise unserer KI-Agenten.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools verwenden, um sie zu verbessern.</p>",
+            "<h2>3. Zweck der Cookies</h2><p>Wir verwenden Cookies, um Ihre gastronomische Erfahrung zu personalisieren, Ihre Lieblingsrezepte zu speichern, Ihre Sitzungen aktiv zu halten und die Nutzung unserer kulinarischen KI-Agenten zu analysieren, um unsere Dienste zu verbessern.</p>",
             "<h2>4. Cookie-Verwaltung</h2><p>Sie können Ihren Browser so konfigurieren, dass er Cookies ablehnt, obwohl dies die Funktionalität einiger unserer KI-Tools beeinträchtigen könnte. Sie können gespeicherte Cookies auch jederzeit aus Ihren Browser-Einstellungen löschen.</p>",
             "<h2>5. Drittanbieter-Cookies</h2><p>Einige Cookies können von Drittanbieterdiensten gesetzt werden, die wir für Analytics und zusätzliche Funktionalitäten verwenden. Diese Drittanbieter haben ihre eigenen Datenschutzrichtlinien.</p>",
             "<h2>6. Updates</h2><p>Diese Cookie-Richtlinie kann regelmäßig aktualisiert werden. Wir werden Sie über wichtige Änderungen und das Datum der letzten Aktualisierung informieren.</p>",
@@ -682,7 +682,7 @@
             "<h2>3. Datenschutz</h2><p>Wir implementieren technische und organisatorische Sicherheitsmaßnahmen, um Ihre persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Ihre Daten werden verschlüsselt und sicher gespeichert.</p>",
             "<h2>4. Informationen teilen</h2><p>Wir verkaufen, vermarkten oder übertragen Ihre persönlichen Informationen nicht an Dritte, außer wenn es zur Bereitstellung unserer Dienste erforderlich ist oder wenn das Gesetz es verlangt.</p>",
             "<h2>5. Ihre Rechte</h2><p>Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen, sie zu berichtigen, zu löschen und zu portieren. Sie können auch der Verarbeitung widersprechen und deren Einschränkung beantragen, indem Sie uns kontaktieren.</p>",
-            "<h2>6. Cookies und ähnliche Technologien</h2><p>Wir verwenden Cookies, um die Funktionalität unserer kulinarischen KI-KI-Agenten zu verbessern und Ihr Erlebnis zu personalisieren. Sie können Ihre Cookie-Einstellungen jederzeit verwalten.</p>",
+            "<h2>6. Cookies und ähnliche Technologien</h2><p>Wir verwenden Cookies, um die Funktionalität unserer kulinarischen KI-Agenten zu verbessern und Ihr Erlebnis zu personalisieren. Sie können Ihre Cookie-Einstellungen jederzeit verwalten.</p>",
             "<h2>7. Kontakt</h2><p>Für Fragen zu dieser Datenschutzrichtlinie können Sie uns kontaktieren unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
           ]
         },
@@ -1144,7 +1144,7 @@
     "glosario_ia": "KI-Glossar",
     "glosario_culinario": "Kulinarisch-wissenschaftliches Glossar",
     "roadmap": "AI Chef Pro Roadmap",
-    "app_tools": "55+ Tools in der KI-Agent",
+    "app_tools": "55+ Tools in den KI-Agenten",
     "app_login": "Anmelden",
     "free_tools_hub": "Kostenlose Tools",
     "mentoria_online": "Online-Mentoring",
@@ -1310,7 +1310,7 @@
         "<h2>3. Datenschutz</h2><p>Wir implementieren technische und organisatorische Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Daten gegen unbefugten Zugriff, Änderung, Offenlegung oder Zerstörung.</p>",
         "<h2>4. Weitergabe von Informationen</h2><p>Wir verkaufen, handeln oder übertragen Ihre persönlichen Daten nicht an Dritte, außer wenn dies für die Erbringung unserer Dienste oder gesetzlich erforderlich ist.</p>",
         "<h2>5. Ihre Rechte</h2><p>Sie haben das Recht auf Zugang, Berichtigung, Löschung und Übertragbarkeit Ihrer persönlichen Daten. Sie können der Verarbeitung auch widersprechen.</p>",
-        "<h2>6. Cookies</h2><p>Wir verwenden Cookies zur Verbesserung der Funktionalität unserer kulinarischen KI-KI-Agenten. Sie können Ihre Cookie-Präferenzen jederzeit verwalten.</p>",
+        "<h2>6. Cookies</h2><p>Wir verwenden Cookies zur Verbesserung der Funktionalität unserer kulinarischen KI-Agenten. Sie können Ihre Cookie-Präferenzen jederzeit verwalten.</p>",
         "<h2>7. Kontakt</h2><p>Für Fragen zu dieser Datenschutzrichtlinie kontaktieren Sie uns unter: <strong>info@aichef.pro</strong> oder <strong>+34 744 717 942</strong></p>"
       ]
     },
@@ -1321,7 +1321,7 @@
       "heading": "Cookie-Richtlinie",
       "content_paragraphs": [
         "<h2>1. Was sind Cookies?</h2><p>Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie AI Chef Pro besuchen. Sie helfen uns, Ihre Präferenzen zu speichern und Ihr Erlebnis mit unseren kulinarischen KI-Tools zu verbessern.</p>",
-        "<h2>2. Arten von Cookies</h2><p><strong>Essenzielle Cookies:</strong> Notwendig für den grundlegenden Betrieb unserer KI-KI-Agenten.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools nutzen.</p>",
+        "<h2>2. Arten von Cookies</h2><p><strong>Essenzielle Cookies:</strong> Notwendig für den grundlegenden Betrieb unserer KI-Agenten.</p><p><strong>Präferenz-Cookies:</strong> Speichern Ihre personalisierten kulinarischen Einstellungen.</p><p><strong>Analytische Cookies:</strong> Helfen uns zu verstehen, wie Sie unsere Tools nutzen.</p>",
         "<h2>3. Zweck der Cookies</h2><p>Wir verwenden Cookies zur Personalisierung Ihres gastronomischen Erlebnisses, zum Speichern Ihrer Lieblingsrezepte und zur Analyse der Nutzung unserer KI-Agenten.</p>",
         "<h2>4. Cookie-Verwaltung</h2><p>Sie können Ihren Browser so konfigurieren, dass Cookies abgelehnt werden, obwohl dies die Funktionalität einiger unserer KI-Tools beeinträchtigen kann.</p>",
         "<h2>5. Cookies von Drittanbietern</h2><p>Einige Cookies können von Drittanbieter-Diensten gesetzt werden, die wir für Analytics und zusätzliche Funktionalitäten nutzen.</p>",

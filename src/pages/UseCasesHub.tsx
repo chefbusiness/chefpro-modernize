@@ -49,7 +49,7 @@ const UI: Record<string, {
   es: {
     badge: 'Casos de uso',
     h1: 'IA para Cada Rol y Cada Concepto de Hostelería',
-    heroSubtitle: 'Descubre cómo AI Chef Pro se adapta a tu perfil profesional y a tu concepto de negocio. Plantillas, agentes y guías diseñadas para tu día a día.',
+    heroSubtitle: 'Descubre cómo AI Chef Pro se adapta a tu perfil profesional y a tu concepto de negocio. Plantillas, agentes y guías diseñados para tu día a día.',
     ctaPrimary: 'Empezar gratis',
     ctaSecondary: 'Ver productos',
     ctaNote: '5 usos gratis al mes · Sin tarjeta',

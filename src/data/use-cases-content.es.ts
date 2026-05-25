@@ -8,7 +8,7 @@ import type { UseCaseContent } from './use-cases';
 export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   'propietario-restaurante': {
       h1: 'IA para Propietarios de Restaurante',
-      heroSubtitle: 'Toma mejores decisiones, recupera horas administrativas y aumenta la rentabilidad de tu restaurante con una suite de agentes de IA especializada en hostelería.',
+      heroSubtitle: 'Toma mejores decisiones, recupera horas administrativas y aumenta la rentabilidad de tu restaurante con una suite de agentes de IA especializados en hostelería.',
       heroTagline: 'Tu socio digital para gestionar el negocio con datos',
       badge: 'Para propietarios y dueños de restaurante',
       painsTitle: 'Lo Que un Propietario de Restaurante No Puede Dejar de Resolver',
@@ -119,7 +119,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'gerente-restaurante': {
       h1: 'IA para Gerentes y Managers de Restaurante',
-      heroSubtitle: 'Optimiza operaciones diarias, controla costes y recupera horas de trabajo administrativo con una suite de agentes de IA pensada para el día a día del manager de restaurante.',
+      heroSubtitle: 'Optimiza operaciones diarias, controla costes y recupera horas de trabajo administrativo con una suite de agentes de IA pensados para el día a día del manager de restaurante.',
       heroTagline: 'Más control operativo, menos hojas sueltas',
       badge: 'Para gerentes y managers',
       painsTitle: 'Lo Que un Gerente de Restaurante No Puede Dejar de Resolver',
@@ -229,7 +229,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'director-operaciones-grupo': {
       h1: 'IA para Directores de Operaciones de Grupos de Restauración',
-      heroSubtitle: 'Estandariza procesos, consolida reporting y multiplica la productividad operativa en grupos multi-local con una suite de agentes de IA especializada en hostelería.',
+      heroSubtitle: 'Estandariza procesos, consolida reporting y multiplica la productividad operativa en grupos multi-local con una suite de agentes de IA especializados en hostelería.',
       heroTagline: 'Mismo estándar en todos los locales, datos consolidados en un clic',
       badge: 'Para directores de operaciones de grupos',
       painsTitle: 'Lo Que un Director de Operaciones Multi-Local No Puede Dejar de Resolver',
@@ -339,7 +339,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chef-ejecutivo': {
       h1: 'IA para Chef Ejecutivo y Chef Corporativo',
-      heroSubtitle: 'Crea recetas estandarizadas, escandallos precisos y manuales replicables para 1, 5 o 25 cocinas. Una suite de agentes de IA gastronómica diseñada para uno de los roles más exigentes de la cocina profesional.',
+      heroSubtitle: 'Crea recetas estandarizadas, escandallos precisos y manuales replicables para 1, 5 o 25 cocinas. Una suite de agentes de IA gastronómica diseñados para uno de los roles más exigentes de la cocina profesional.',
       heroTagline: 'Tu equipo creativo y operativo, escalado a la velocidad de una conversación',
       badge: 'Para chefs ejecutivos y corporativos',
       painsTitle: 'Lo Que un Chef Ejecutivo No Puede Dejar de Resolver',
@@ -452,7 +452,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chef-cocina': {
       h1: 'IA para Chef de Cocina y Jefe de Cocina',
-      heroSubtitle: 'Gestiona partidas, escandallos, mise en place y formación del equipo con una suite de agentes de IA pensada para el día a día del jefe de cocina profesional.',
+      heroSubtitle: 'Gestiona partidas, escandallos, mise en place y formación del equipo con una suite de agentes de IA pensados para el día a día del jefe de cocina profesional.',
       heroTagline: 'Más cocina, menos papeleo',
       badge: 'Para chefs de cocina y jefes de cocina',
       painsTitle: 'Lo Que un Jefe de Cocina No Puede Dejar de Resolver',
@@ -564,7 +564,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'sous-chef': {
       h1: 'IA para Sous Chef',
-      heroSubtitle: 'Organiza partidas, gestiona mise en place, supervisa al equipo y libera horas administrativas con una suite de agentes de IA pensada para el sous chef en cocina profesional.',
+      heroSubtitle: 'Organiza partidas, gestiona mise en place, supervisa al equipo y libera horas administrativas con una suite de agentes de IA pensados para el sous chef en cocina profesional.',
       heroTagline: 'El brazo derecho del jefe de cocina, con sistema',
       badge: 'Para sous chefs',
       painsTitle: 'Lo Que un Sous Chef No Puede Dejar de Resolver',
@@ -673,7 +673,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chef-catering': {
       h1: 'IA para Chef de Catering',
-      heroSubtitle: 'Diseña menús de evento, escandalla por servicio y planifica producción a escala con una suite de agentes de IA pensada para catering profesional y chefs de eventos.',
+      heroSubtitle: 'Diseña menús de evento, escandalla por servicio y planifica producción a escala con una suite de agentes de IA pensados para catering profesional y chefs de eventos.',
       heroTagline: 'Producción a escala sin perder margen ni calidad',
       badge: 'Para chefs de catering y eventos',
       painsTitle: 'Lo Que un Chef de Catering No Puede Dejar de Resolver',
@@ -783,7 +783,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'propietario-catering': {
       h1: 'IA para Propietarios de Empresa de Catering',
-      heroSubtitle: 'Controla rentabilidad por evento, escala producción, gestiona equipos eventuales y haz crecer tu empresa de catering con una suite de agentes de IA especializada en hostelería.',
+      heroSubtitle: 'Controla rentabilidad por evento, escala producción, gestiona equipos eventuales y haz crecer tu empresa de catering con una suite de agentes de IA especializados en hostelería.',
       heroTagline: 'Crecimiento controlado, margen real, eventos sin caos',
       badge: 'Para propietarios de empresa de catering',
       painsTitle: 'Lo Que un Propietario de Catering No Puede Dejar de Resolver',
@@ -894,7 +894,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'bartender-coctelero': {
       h1: 'IA para Bartender y Coctelero',
-      heroSubtitle: 'Diseña cartas de cócteles con escandallo profesional, escandalla por trago con coste real y técnica, y crea tragos de autor con storytelling y maridaje con una suite de agentes de IA gastronómica especializada en coctelería.',
+      heroSubtitle: 'Diseña cartas de cócteles con escandallo profesional, escandalla por trago con coste real y técnica, y crea tragos de autor con storytelling y maridaje con una suite de agentes de IA gastronómica especializados en coctelería.',
       heroTagline: 'Coctelería con margen real y técnica de autor',
       badge: 'Para bartenders, cocteleros y mixólogos',
       painsTitle: 'Lo Que un Bartender No Puede Dejar de Resolver',
@@ -1004,7 +1004,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'pizzero': {
       h1: 'IA para Pizzero y Pizzaiolo',
-      heroSubtitle: 'Optimiza masas y fermentaciones, escandalla por pizza con coste real, controla técnica de horno y operativa con una suite de agentes de IA gastronómica especializada en cocina italiana profesional.',
+      heroSubtitle: 'Optimiza masas y fermentaciones, escandalla por pizza con coste real, controla técnica de horno y operativa con una suite de agentes de IA gastronómica especializados en cocina italiana profesional.',
       heroTagline: 'Pizza con técnica auténtica y margen real',
       badge: 'Para pizzeros, pizzaioli y propietarios de pizzería',
       painsTitle: 'Lo Que un Pizzero No Puede Dejar de Resolver',
@@ -1114,7 +1114,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'panadero': {
       h1: 'IA para Panadero Artesanal',
-      heroSubtitle: 'Optimiza masa madre y prefermentos, escandalla por pieza con coste hora de obrador, controla fermentaciones largas y operativa con una suite de agentes de IA gastronómica especializada en panadería artesanal.',
+      heroSubtitle: 'Optimiza masa madre y prefermentos, escandalla por pieza con coste hora de obrador, controla fermentaciones largas y operativa con una suite de agentes de IA gastronómica especializados en panadería artesanal.',
       heroTagline: 'Panadería artesanal con técnica y margen real',
       badge: 'Para panaderos artesanales y obradores',
       painsTitle: 'Lo Que un Panadero Artesanal No Puede Dejar de Resolver',
@@ -1224,7 +1224,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chocolatero': {
       h1: 'IA para Chocolatero y Bombonero',
-      heroSubtitle: 'Diseña bombones, tabletas y coberturas con escandallo profesional, técnica de temperado y planificación estacional con una suite de agentes de IA especializada en chocolatería artesanal de autor.',
+      heroSubtitle: 'Diseña bombones, tabletas y coberturas con escandallo profesional, técnica de temperado y planificación estacional con una suite de agentes de IA especializados en chocolatería artesanal de autor.',
       heroTagline: 'Chocolatería con técnica auténtica y margen real',
       badge: 'Para chocolateros, bomboneros y maestros chocolateros',
       painsTitle: 'Lo Que un Chocolatero No Puede Dejar de Resolver',
@@ -1335,7 +1335,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chef-privado-personal': {
       h1: 'IA para Chef Privado y Personal Chef',
-      heroSubtitle: 'Diseña menús personalizados para clientes únicos, escandalla cada cena privada con coste real, planifica mise en casas particulares y captura branding profesional con una suite de agentes de IA gastronómica especializada en chef privado y servicio en casas particulares.',
+      heroSubtitle: 'Diseña menús personalizados para clientes únicos, escandalla cada cena privada con coste real, planifica mise en casas particulares y captura branding profesional con una suite de agentes de IA gastronómica especializados en chef privado y servicio en casas particulares.',
       heroTagline: 'Servicio privado con margen real y técnica de autor',
       badge: 'Para chefs privados, personal chefs y catering íntimo',
       painsTitle: 'Lo Que un Chef Privado No Puede Dejar de Resolver',
@@ -1445,7 +1445,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'fb-manager-hotel': {
       h1: 'IA para F&B Manager de Hotel',
-      heroSubtitle: 'Coordina restaurantes, banquetes, room service, breakfast buffet y bares de hotel con escandallo cruzado, plantillas operativas profesionales y branding integrado con una suite de agentes de IA gastronómica especializada en gestión integral F&B hotelera.',
+      heroSubtitle: 'Coordina restaurantes, banquetes, room service, breakfast buffet y bares de hotel con escandallo cruzado, plantillas operativas profesionales y branding integrado con una suite de agentes de IA gastronómica especializados en gestión integral F&B hotelera.',
       heroTagline: 'F&B hotelero con margen real y operativa profesional',
       badge: 'Para F&B Managers, Directores de Alimentos y Bebidas',
       painsTitle: 'Lo Que un F&B Manager No Puede Dejar de Resolver',
@@ -1555,7 +1555,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'maitre-jefe-sala': {
       h1: 'IA para Maître y Jefe de Sala',
-      heroSubtitle: 'Coordina servicio en sala con técnica profesional, gestiona reservas premium y maridajes, lidera al equipo y captura branding fine dining con una suite de agentes de IA gastronómica especializada en sala y servicio de alto nivel.',
+      heroSubtitle: 'Coordina servicio en sala con técnica profesional, gestiona reservas premium y maridajes, lidera al equipo y captura branding fine dining con una suite de agentes de IA gastronómica especializados en sala y servicio de alto nivel.',
       heroTagline: 'Sala con técnica profesional y experiencia memorable',
       badge: 'Para maîtres, jefes de sala y directores de servicio',
       painsTitle: 'Lo Que un Maître No Puede Dejar de Resolver',
@@ -1665,7 +1665,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'sommelier': {
       h1: 'IA para Sommelier',
-      heroSubtitle: 'Diseña cartas de vinos con criterio profesional, valida maridajes con base científica, gestiona bodega con trazabilidad y captura branding wine-driven con una suite de agentes de IA gastronómica especializada en sommelería profesional.',
+      heroSubtitle: 'Diseña cartas de vinos con criterio profesional, valida maridajes con base científica, gestiona bodega con trazabilidad y captura branding wine-driven con una suite de agentes de IA gastronómica especializados en sommelería profesional.',
       heroTagline: 'Bodega con criterio profesional y maridajes científicos',
       badge: 'Para sommeliers, head sommeliers y directores de bodega',
       painsTitle: 'Lo Que un Sommelier No Puede Dejar de Resolver',
@@ -1775,7 +1775,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'maestro-asador': {
       h1: 'IA para Maestro Asador y Parrillero',
-      heroSubtitle: 'Domina técnica de brasas, despiece y dry-aged con escandallo profesional por corte, planifica producción de proteínas y captura branding fire-driven con una suite de agentes de IA gastronómica especializada en cocina al fuego profesional.',
+      heroSubtitle: 'Domina técnica de brasas, despiece y dry-aged con escandallo profesional por corte, planifica producción de proteínas y captura branding fire-driven con una suite de agentes de IA gastronómica especializados en cocina al fuego profesional.',
       heroTagline: 'Brasas con técnica auténtica y margen real',
       badge: 'Para maestros asadores, parrilleros y grillmasters',
       painsTitle: 'Lo Que un Maestro Asador No Puede Dejar de Resolver',
@@ -1885,7 +1885,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'maestro-heladero': {
       h1: 'IA para Maestro Heladero y Gelatiere',
-      heroSubtitle: 'Domina balance técnico de bases, escandalla por sabor con coste real, planifica producción estacional y captura branding artesanal con una suite de agentes de IA gastronómica especializada en heladería profesional.',
+      heroSubtitle: 'Domina balance técnico de bases, escandalla por sabor con coste real, planifica producción estacional y captura branding artesanal con una suite de agentes de IA gastronómica especializados en heladería profesional.',
       heroTagline: 'Helado con técnica auténtica y margen real',
       badge: 'Para maestros heladeros, gelatieri y artesanos del helado',
       painsTitle: 'Lo Que un Maestro Heladero No Puede Dejar de Resolver',
@@ -1995,7 +1995,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'repostero-pastelero': {
       h1: 'IA para Repostero y Pastelero',
-      heroSubtitle: 'Domina técnica de pastelería profesional, escandalla por pieza con coste hora obrador, planifica producción estacional y captura branding artesanal con una suite de agentes de IA gastronómica especializada en repostería y pastelería de autor.',
+      heroSubtitle: 'Domina técnica de pastelería profesional, escandalla por pieza con coste hora obrador, planifica producción estacional y captura branding artesanal con una suite de agentes de IA gastronómica especializados en repostería y pastelería de autor.',
       heroTagline: 'Pastelería con técnica auténtica y margen real',
       badge: 'Para reposteros, pasteleros y chefs pâtissiers',
       painsTitle: 'Lo Que un Repostero No Puede Dejar de Resolver',
@@ -2105,7 +2105,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-casual': {
       h1: 'IA para Restaurante Casual',
-      heroSubtitle: 'Optimiza la operativa diaria, controla el food cost y recupera horas de papeleo en tu restaurante casual con una suite de agentes de IA especializada en hostelería.',
+      heroSubtitle: 'Optimiza la operativa diaria, controla el food cost y recupera horas de papeleo en tu restaurante casual con una suite de agentes de IA especializados en hostelería.',
       heroTagline: 'El restaurante casual moderno necesita IA',
       badge: 'Para restaurantes casuales y bistrós',
       painsTitle: 'Lo Que un Restaurante Casual No Puede Dejar de Resolver',
@@ -2216,7 +2216,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'cafeteria-brunch': {
       h1: 'IA para Cafetería y Brunch',
-      heroSubtitle: 'Optimiza desayunos, brunch, café de especialidad y repostería con una suite de agentes de IA pensada para coffee shops, locales de brunch y cafeterías modernas.',
+      heroSubtitle: 'Optimiza desayunos, brunch, café de especialidad y repostería con una suite de agentes de IA pensados para coffee shops, locales de brunch y cafeterías modernas.',
       heroTagline: 'Coffee shop moderno con operativa moderna',
       badge: 'Para cafeterías de especialidad y brunch',
       painsTitle: 'Lo Que un Coffee Shop o Local de Brunch No Puede Dejar de Resolver',
@@ -2326,7 +2326,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'pizzeria': {
       h1: 'IA para Pizzería',
-      heroSubtitle: 'Estandariza masa madre, calcula escandallos por pizza, controla delivery y multi-marca con una suite de agentes de IA especializada en pizzería profesional, pizza napoletana, romana y americana.',
+      heroSubtitle: 'Estandariza masa madre, calcula escandallos por pizza, controla delivery y multi-marca con una suite de agentes de IA especializados en pizzería profesional, pizza napoletana, romana y americana.',
       heroTagline: 'Pizza con margen real, técnica con sistema',
       badge: 'Para pizzerías y pizzaioli',
       painsTitle: 'Lo Que una Pizzería No Puede Dejar de Resolver',
@@ -2435,7 +2435,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'hamburgueseria': {
       h1: 'IA para Hamburguesería',
-      heroSubtitle: 'Escandalla por burger, controla coste de carne y pan, gestiona delivery y multi-marca con una suite de agentes de IA especializada en smash burger gourmet, fast casual y dark kitchen de hamburguesa.',
+      heroSubtitle: 'Escandalla por burger, controla coste de carne y pan, gestiona delivery y multi-marca con una suite de agentes de IA especializados en smash burger gourmet, fast casual y dark kitchen de hamburguesa.',
       heroTagline: 'Burger con margen real, no intuición',
       badge: 'Para hamburgueserías y burger shops',
       painsTitle: 'Lo Que una Hamburguesería No Puede Dejar de Resolver',
@@ -2659,7 +2659,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'pasteleria-obrador': {
       h1: 'IA para Pastelería y Obrador',
-      heroSubtitle: 'Escandalla por pieza con coste hora de obrador, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializada en pastelería artesanal.',
+      heroSubtitle: 'Escandalla por pieza con coste hora de obrador, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializados en pastelería artesanal.',
       heroTagline: 'Pastelería con margen real y sin papeles',
       badge: 'Para pastelerías y obradores artesanales',
       painsTitle: 'Lo Que una Pastelería No Puede Dejar de Resolver',
@@ -2769,7 +2769,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'bar-cocktails': {
       h1: 'IA para Bar y Coctelería',
-      heroSubtitle: 'Diseña cartas de cócteles de autor, escandalla cada trago con tus precios reales y captura branding profesional con una suite de agentes de IA pensada para bartenders, cocteleros y propietarios de bar.',
+      heroSubtitle: 'Diseña cartas de cócteles de autor, escandalla cada trago con tus precios reales y captura branding profesional con una suite de agentes de IA pensados para bartenders, cocteleros y propietarios de bar.',
       heroTagline: 'Tu barra con margen real, coctelería con técnica',
       badge: 'Para bares de cocktails y coctelerías',
       painsTitle: 'Lo Que un Bar de Cocktails No Puede Dejar de Resolver',
@@ -2879,7 +2879,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'catering-eventos': {
       h1: 'IA para Catering y Eventos',
-      heroSubtitle: 'Escandalla por evento, planifica producción a escala, gestiona logística y APPCC fuera de local con una suite de agentes de IA especializada en catering profesional, bodas, corporativos y cocktails.',
+      heroSubtitle: 'Escandalla por evento, planifica producción a escala, gestiona logística y APPCC fuera de local con una suite de agentes de IA especializados en catering profesional, bodas, corporativos y cocktails.',
       heroTagline: 'Eventos con margen, sin caos',
       badge: 'Para empresas de catering y eventos',
       painsTitle: 'Lo Que un Catering No Puede Dejar de Resolver',
@@ -2989,7 +2989,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'hotel-completo': {
       h1: 'IA para Hotel Completo (F&B + Housekeeping)',
-      heroSubtitle: 'Gestiona desayunos, restaurante, room service, banquetes, bar y housekeeping con una suite de agentes de IA pensada para F&B Managers y direcciones de hotel.',
+      heroSubtitle: 'Gestiona desayunos, restaurante, room service, banquetes, bar y housekeeping con una suite de agentes de IA pensados para F&B Managers y direcciones de hotel.',
       heroTagline: 'Toda la operativa de hotel coordinada en un único sistema',
       badge: 'Para F&B Managers de hotel',
       painsTitle: 'Lo Que un F&B Manager de Hotel No Puede Dejar de Resolver',
@@ -3099,7 +3099,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'heladeria': {
       h1: 'IA para Heladería Artesanal',
-      heroSubtitle: 'Escandalla por sabor con coste real de leche, fruta y frutos secos, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializada en heladería artesanal.',
+      heroSubtitle: 'Escandalla por sabor con coste real de leche, fruta y frutos secos, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializados en heladería artesanal.',
       heroTagline: 'Helado con margen real y sin papeles',
       badge: 'Para heladerías y gelaterías artesanales',
       painsTitle: 'Lo Que una Heladería Artesanal No Puede Dejar de Resolver',
@@ -3209,7 +3209,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'chocolateria': {
       h1: 'IA para Chocolatería y Bombonería',
-      heroSubtitle: 'Escandalla por bombón con coste real de cacao y coste hora de obrador, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializada en chocolatería artesanal.',
+      heroSubtitle: 'Escandalla por bombón con coste real de cacao y coste hora de obrador, planifica producción estacional y captura branding profesional con una suite de agentes de IA especializados en chocolatería artesanal.',
       heroTagline: 'Bombón con margen real y sin papeles',
       badge: 'Para chocolaterías y bombonerías artesanales',
       painsTitle: 'Lo Que una Chocolatería No Puede Dejar de Resolver',
@@ -3430,7 +3430,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-gastronomico': {
       h1: 'IA para Restaurante Gastronómico (Michelin/Repsol)',
-      heroSubtitle: 'Escandallos premium, menús degustación largos, brigada extendida, APPCC riguroso y comunicación con guías y prensa con una suite de agentes de IA pensada para alta gastronomía profesional.',
+      heroSubtitle: 'Escandallos premium, menús degustación largos, brigada extendida, APPCC riguroso y comunicación con guías y prensa con una suite de agentes de IA pensados para alta gastronomía profesional.',
       heroTagline: 'Alta cocina con sistema, vanguardia con dirección',
       badge: 'Para restaurantes gastronómicos Michelin y Repsol',
       painsTitle: 'Lo Que un Restaurante Gastronómico No Puede Dejar de Resolver',
@@ -3541,7 +3541,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-mexicano': {
       h1: 'IA para Restaurante Mexicano',
-      heroSubtitle: 'Desarrolla salsas con balance preciso, escandalla por taco y por menú con coste real, planifica producción de masa y nixtamalización, y captura branding profesional con una suite de agentes de IA gastronómica especializada en cocina mexicana auténtica.',
+      heroSubtitle: 'Desarrolla salsas con balance preciso, escandalla por taco y por menú con coste real, planifica producción de masa y nixtamalización, y captura branding profesional con una suite de agentes de IA gastronómica especializados en cocina mexicana auténtica.',
       heroTagline: 'Sabor mexicano con margen real y técnica auténtica',
       badge: 'Para restaurantes mexicanos y taquerías',
       painsTitle: 'Lo Que un Restaurante Mexicano No Puede Dejar de Resolver',
@@ -3651,7 +3651,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-peruano': {
       h1: 'IA para Restaurante Peruano',
-      heroSubtitle: 'Desarrolla cebiches, tiraditos y causas con balance técnico, escandalla por platillo con coste real de pescado y ají, planifica producción y captura branding profesional con una suite de agentes de IA gastronómica especializada en cocina peruana auténtica.',
+      heroSubtitle: 'Desarrolla cebiches, tiraditos y causas con balance técnico, escandalla por platillo con coste real de pescado y ají, planifica producción y captura branding profesional con una suite de agentes de IA gastronómica especializados en cocina peruana auténtica.',
       heroTagline: 'Cocina peruana con margen real y técnica auténtica',
       badge: 'Para restaurantes peruanos y cevicherías',
       painsTitle: 'Lo Que un Restaurante Peruano No Puede Dejar de Resolver',
@@ -3761,7 +3761,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-japones': {
       h1: 'IA para Restaurante Japonés',
-      heroSubtitle: 'Desarrolla sushi, ramen, robata y kaiseki con técnica auténtica, escandalla por pieza con coste real de pescado, planifica producción de fermentos y captura branding minimalista con una suite de agentes de IA gastronómica especializada en cocina japonesa profesional.',
+      heroSubtitle: 'Desarrolla sushi, ramen, robata y kaiseki con técnica auténtica, escandalla por pieza con coste real de pescado, planifica producción de fermentos y captura branding minimalista con una suite de agentes de IA gastronómica especializados en cocina japonesa profesional.',
       heroTagline: 'Cocina japonesa con margen real y técnica auténtica',
       badge: 'Para restaurantes japoneses, sushi bars y ramen-yas',
       painsTitle: 'Lo Que un Restaurante Japonés No Puede Dejar de Resolver',
@@ -3871,7 +3871,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-nikkei': {
       h1: 'IA para Restaurante Nikkei',
-      heroSubtitle: 'Desarrolla tiraditos nikkei, sushi de fusión y robata con técnica auténtica peruano-japonesa, escandalla por platillo con coste real y captura branding profesional con una suite de agentes de IA gastronómica especializada en cocina nikkei.',
+      heroSubtitle: 'Desarrolla tiraditos nikkei, sushi de fusión y robata con técnica auténtica peruano-japonesa, escandalla por platillo con coste real y captura branding profesional con una suite de agentes de IA gastronómica especializados en cocina nikkei.',
       heroTagline: 'Cocina Nikkei con margen real y técnica auténtica',
       badge: 'Para restaurantes Nikkei y fusión peruano-japonesa',
       painsTitle: 'Lo Que un Restaurante Nikkei No Puede Dejar de Resolver',
@@ -3981,7 +3981,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-plant-based': {
       h1: 'IA para Restaurante Plant-Based y Vegano',
-      heroSubtitle: 'Desarrolla menús plant-based con balance nutricional, escandalla por bowl y burger vegana con coste real, planifica fermentos vegetales y captura branding fresco con una suite de agentes de IA gastronómica especializada en cocina plant-based profesional.',
+      heroSubtitle: 'Desarrolla menús plant-based con balance nutricional, escandalla por bowl y burger vegana con coste real, planifica fermentos vegetales y captura branding fresco con una suite de agentes de IA gastronómica especializados en cocina plant-based profesional.',
       heroTagline: 'Cocina vegetal con margen real y técnica avanzada',
       badge: 'Para restaurantes plant-based, veganos y healthy',
       painsTitle: 'Lo Que un Restaurante Plant-Based No Puede Dejar de Resolver',
@@ -4091,7 +4091,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'asador-parrilla': {
       h1: 'IA para Asador, Parrilla y Steakhouse',
-      heroSubtitle: 'Desarrolla cartas de asador con técnica de brasas, escandalla por corte con coste real, gestiona dry-aged y planifica producción con una suite de agentes de IA gastronómica especializada en cocina al fuego, asador y steakhouse profesional.',
+      heroSubtitle: 'Desarrolla cartas de asador con técnica de brasas, escandalla por corte con coste real, gestiona dry-aged y planifica producción con una suite de agentes de IA gastronómica especializados en cocina al fuego, asador y steakhouse profesional.',
       heroTagline: 'Asador con margen real y técnica de fuego',
       badge: 'Para asadores, parrillas, steakhouses y churrasquerías',
       painsTitle: 'Lo Que un Asador No Puede Dejar de Resolver',
@@ -4201,7 +4201,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'coffee-shop-specialty': {
       h1: 'IA para Coffee Shop y Specialty Coffee',
-      heroSubtitle: 'Diseña carta de cafés de especialidad con criterio third-wave, escandalla por bebida con coste real, planifica producción de pastelería propia y captura branding minimalista con una suite de agentes de IA gastronómica especializada en specialty coffee profesional.',
+      heroSubtitle: 'Diseña carta de cafés de especialidad con criterio third-wave, escandalla por bebida con coste real, planifica producción de pastelería propia y captura branding minimalista con una suite de agentes de IA gastronómica especializados en specialty coffee profesional.',
       heroTagline: 'Café de especialidad con margen real y técnica third-wave',
       badge: 'Para coffee shops, specialty cafés y third-wave coffee',
       painsTitle: 'Lo Que un Coffee Shop No Puede Dejar de Resolver',
@@ -4311,7 +4311,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'sushi-bar': {
       h1: 'IA para Sushi Bar',
-      heroSubtitle: 'Domina técnica itamae con escandallo riguroso por nigiri, gestiona pescado fresco diario, diseña omakase signature y captura branding minimalista con una suite de agentes de IA gastronómica especializada en sushi bar profesional.',
+      heroSubtitle: 'Domina técnica itamae con escandallo riguroso por nigiri, gestiona pescado fresco diario, diseña omakase signature y captura branding minimalista con una suite de agentes de IA gastronómica especializados en sushi bar profesional.',
       heroTagline: 'Sushi bar con técnica auténtica y margen real',
       badge: 'Para sushi bars, omakase y sushi shops',
       painsTitle: 'Lo Que un Sushi Bar No Puede Dejar de Resolver',
@@ -4421,7 +4421,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'gastrobar-tapas': {
       h1: 'IA para Gastrobar y Tapas Bar',
-      heroSubtitle: 'Diseña carta de tapas y pintxos con escandallo profesional, gestiona vermut y vinos por copa, planifica eventos y captura branding español auténtico con una suite de agentes de IA gastronómica especializada en gastrobar y cocina española.',
+      heroSubtitle: 'Diseña carta de tapas y pintxos con escandallo profesional, gestiona vermut y vinos por copa, planifica eventos y captura branding español auténtico con una suite de agentes de IA gastronómica especializados en gastrobar y cocina española.',
       heroTagline: 'Tapas con técnica auténtica y margen real',
       badge: 'Para gastrobares, tapas bars, pintxos y vinotecas',
       painsTitle: 'Lo Que un Gastrobar No Puede Dejar de Resolver',
@@ -4531,7 +4531,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'food-truck': {
       h1: 'IA para Food Truck',
-      heroSubtitle: 'Diseña carta compacta con escandallo riguroso, gestiona prep ajustada al espacio limitado, planifica eventos y rutas y captura branding viral con una suite de agentes de IA gastronómica especializada en food truck profesional.',
+      heroSubtitle: 'Diseña carta compacta con escandallo riguroso, gestiona prep ajustada al espacio limitado, planifica eventos y rutas y captura branding viral con una suite de agentes de IA gastronómica especializados en food truck profesional.',
       heroTagline: 'Food truck con margen real y operativa ajustada',
       badge: 'Para food trucks, cocinas móviles y street food',
       painsTitle: 'Lo Que un Food Truck No Puede Dejar de Resolver',
@@ -4641,7 +4641,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'restaurante-italiano': {
       h1: 'IA para Restaurante Italiano',
-      heroSubtitle: 'Domina técnica italiana auténtica con escandallo riguroso por plato, gestiona pasta fresca y salsas tradicionales, diseña cartas estacionales y captura branding trattoría con una suite de agentes de IA gastronómica especializada en cocina italiana profesional.',
+      heroSubtitle: 'Domina técnica italiana auténtica con escandallo riguroso por plato, gestiona pasta fresca y salsas tradicionales, diseña cartas estacionales y captura branding trattoría con una suite de agentes de IA gastronómica especializados en cocina italiana profesional.',
       heroTagline: 'Cocina italiana con técnica auténtica y margen real',
       badge: 'Para trattorías, ristoranti y restaurantes italianos',
       painsTitle: 'Lo Que un Restaurante Italiano No Puede Dejar de Resolver',
@@ -4857,7 +4857,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'task-menu-degustacion-con-ia': {
       h1: 'Cómo Diseñar un Menú Degustación con IA',
-      heroSubtitle: 'Diseña menús degustación con secuencia coherente, escandallo total validado, maridajes científicos y storytelling para sala con una suite de agentes de IA gastronómica especializada en alta cocina.',
+      heroSubtitle: 'Diseña menús degustación con secuencia coherente, escandallo total validado, maridajes científicos y storytelling para sala con una suite de agentes de IA gastronómica especializados en alta cocina.',
       heroTagline: 'Menú degustación profesional en horas, no en semanas',
       badge: 'Tarea: Menú degustación',
       painsTitle: 'Lo Que Cuesta Diseñar Menú Degustación a Mano',
@@ -5176,7 +5176,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
   },
   'task-reducir-mermas-con-ia': {
       h1: 'Cómo Reducir Mermas en Cocina con IA',
-      heroSubtitle: 'Identifica, mide y reduce mermas por proceso (despiece, formado, horneado, vitrina, delivery) con datos reales integrados al escandallo. Suite de agentes de IA gastronómica especializada en operativa zero-waste.',
+      heroSubtitle: 'Identifica, mide y reduce mermas por proceso (despiece, formado, horneado, vitrina, delivery) con datos reales integrados al escandallo. Suite de agentes de IA gastronómica especializados en operativa zero-waste.',
       heroTagline: 'Mermas reducidas con datos reales por proceso',
       badge: 'Tarea: Reducción de mermas',
       painsTitle: 'Lo Que Cuestan las Mermas Sin Control',

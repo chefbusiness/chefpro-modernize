@@ -23,7 +23,7 @@ export const restauranteCreativoTestimonials = [
   {
     name: 'Fernando Casas',
     role: 'Sumiller, restaurante gastronomico',
-    text: 'Por fin un checklist que entiende el trabajo del sumiller: gestion de bodega, maridajes por pase, temperaturas de servicio, catas de equipo. Las agentes IA genericas no cubren ni el 20% de esto.',
+    text: 'Por fin un checklist que entiende el trabajo del sumiller: gestion de bodega, maridajes por pase, temperaturas de servicio, catas de equipo. Los agentes IA genericos no cubren ni el 20% de esto.',
     avatar: avatar3,
   },
   {

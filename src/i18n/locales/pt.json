@@ -406,10 +406,10 @@
   "gallery": {
     "badge": "55+ Agentes IA Especializados em Ação",
     "title": "Descubra o Poder do AI Chef Pro",
-    "description": "Explore screenshots reais das nossos agentes IA especializados para profissionais gastronômicos",
+    "description": "Explore screenshots reais dos nossos agentes IA especializados para profissionais gastronômicos",
     "previous": "Anterior",
     "next": "Próximo",
-    "counter": "{{current}} de {{total}} agentes IA mostradas",
+    "counter": "{{current}} de {{total}} agentes IA mostrados",
     "explore_all": "Explorar Todos os Agentes IA"
   },
   "screenshots": {
@@ -1017,7 +1017,7 @@
   "featured": {
     "title_main": "Agentes IA em Destaque",
     "title_sub": "da Semana",
-    "description": "Descubra as agentes IA que estão revolucionando a indústria gastronômica",
+    "description": "Descubra os agentes IA que estão revolucionando a indústria gastronômica",
     "badge": "Destaque",
     "apps": {
       "sosa_ingredients": {
@@ -1297,7 +1297,7 @@
         "<h2>3. Proteção de Dados</h2><p>Implementamos medidas de segurança técnicas e organizativas para proteger as suas informações pessoais contra acessos não autorizados, alteração, divulgação ou destruição.</p>",
         "<h2>4. Partilha de Informações</h2><p>Não vendemos, comercializamos nem transferimos as suas informações pessoais a terceiros, exceto quando necessário para fornecer os nossos serviços ou quando a lei o exigir.</p>",
         "<h2>5. Os Seus Direitos</h2><p>Tem o direito de aceder, retificar, eliminar e transferir os seus dados pessoais. Também pode opor-se ao tratamento contactando-nos.</p>",
-        "<h2>6. Cookies</h2><p>Utilizamos cookies para melhorar a funcionalidade das nossos agentes IA culinária. Pode gerir as suas preferências de cookies a qualquer momento.</p>",
+        "<h2>6. Cookies</h2><p>Utilizamos cookies para melhorar a funcionalidade dos nossos agentes IA culinários. Pode gerir as suas preferências de cookies a qualquer momento.</p>",
         "<h2>7. Contato</h2><p>Para qualquer questão relativa a esta política de privacidade, contacte-nos em: <strong>info@aichef.pro</strong> ou <strong>+34 744 717 942</strong></p>"
       ]
     },
@@ -1308,8 +1308,8 @@
       "heading": "Política de Cookies",
       "content_paragraphs": [
         "<h2>1. O Que São Cookies?</h2><p>Cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita o AI Chef Pro. Ajudam-nos a lembrar as suas preferências e a melhorar a sua experiência com as nossas ferramentas de IA culinária.</p>",
-        "<h2>2. Tipos de Cookies Utilizados</h2><p><strong>Cookies essenciais:</strong> Necessários para o funcionamento básico das nossos agentes IA.</p><p><strong>Cookies de preferências:</strong> Lembram as suas configurações culinárias personalizadas.</p><p><strong>Cookies analíticos:</strong> Ajudam-nos a compreender como utiliza as nossas ferramentas.</p>",
-        "<h2>3. Finalidade dos Cookies</h2><p>Utilizamos cookies para personalizar a sua experiência gastronómica, lembrar as suas receitas favoritas e analisar a utilização das nossos agentes IA para melhorar os nossos serviços.</p>",
+        "<h2>2. Tipos de Cookies Utilizados</h2><p><strong>Cookies essenciais:</strong> Necessários para o funcionamento básico dos nossos agentes IA.</p><p><strong>Cookies de preferências:</strong> Lembram as suas configurações culinárias personalizadas.</p><p><strong>Cookies analíticos:</strong> Ajudam-nos a compreender como utiliza as nossas ferramentas.</p>",
+        "<h2>3. Finalidade dos Cookies</h2><p>Utilizamos cookies para personalizar a sua experiência gastronómica, lembrar as suas receitas favoritas e analisar a utilização dos nossos agentes IA para melhorar os nossos serviços.</p>",
         "<h2>4. Gestão de Cookies</h2><p>Pode configurar o seu navegador para rejeitar cookies, embora isso possa afetar a funcionalidade de algumas das nossas ferramentas de IA.</p>",
         "<h2>5. Cookies de Terceiros</h2><p>Alguns cookies podem ser definidos por serviços de terceiros que utilizamos para analytics e funcionalidades adicionais.</p>",
         "<h2>6. Atualizações</h2><p>Esta política de cookies pode ser atualizada periodicamente. Informá-lo-emos sobre alterações significativas.</p>",

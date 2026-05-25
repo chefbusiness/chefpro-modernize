@@ -434,7 +434,7 @@
   },
   "features": {
     "title": "Caractéristiques Principales",
-    "description": "Suite complète d'outils et agents IA IA pour chefs et cuisiniers qui souhaitent accélérer et optimiser leur travail quotidien en cuisine professionnelle et libérer leur créativité.",
+    "description": "Suite complète d'outils et agents IA pour chefs et cuisiniers qui souhaitent accélérer et optimiser leur travail quotidien en cuisine professionnelle et libérer leur créativité.",
     "ai_assistant": "Modèle d'Assistant Culinaire IA",
     "ai_assistant_desc": "Recommandations personnalisées de recettes et techniques adaptées à vos préférences culinaires. Plus de 20 livres de recettes.",
     "food_pairing": "Accords Culinaires & Substitutions d'Ingrédients",
@@ -595,7 +595,7 @@
         "<h2>3. Protection des Données</h2><p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos informations personnelles contre les accès non autorisés, l'altération, la divulgation ou la destruction.</p>",
         "<h2>4. Partage d'Informations</h2><p>Nous ne vendons, ne commercialisons ni ne transférons vos informations personnelles à des tiers, sauf lorsque cela est nécessaire pour fournir nos services ou lorsque la loi l'exige.</p>",
         "<h2>5. Vos Droits</h2><p>Vous avez le droit d'accéder, de rectifier, de supprimer et de transférer vos données personnelles. Vous pouvez également vous opposer au traitement en nous contactant.</p>",
-        "<h2>6. Cookies</h2><p>Nous utilisons des cookies pour améliorer la fonctionnalité de nos agents IA d'IA culinaire. Vous pouvez gérer vos préférences de cookies à tout moment.</p>",
+        "<h2>6. Cookies</h2><p>Nous utilisons des cookies pour améliorer la fonctionnalité de nos agents IA culinaire. Vous pouvez gérer vos préférences de cookies à tout moment.</p>",
         "<h2>7. Contact</h2><p>Pour toute question relative à cette politique de confidentialité, contactez-nous à: <strong>info@aichef.pro</strong> ou <strong>+34 744 717 942</strong></p>"
       ]
     },
@@ -606,7 +606,7 @@
       "heading": "Politique de Cookies",
       "content_paragraphs": [
         "<h2>1. Qu'est-ce que les Cookies?</h2><p>Les cookies sont de petits fichiers texte stockés sur votre appareil lorsque vous visitez AI Chef Pro. Ils nous aident à mémoriser vos préférences et à améliorer votre expérience avec nos outils d'IA culinaire.</p>",
-        "<h2>2. Types de Cookies Utilisés</h2><p><strong>Cookies essentiels:</strong> Nécessaires au fonctionnement de base de nos agents IA d'IA.</p><p><strong>Cookies de préférences:</strong> Mémorisent vos paramètres culinaires personnalisés.</p><p><strong>Cookies analytiques:</strong> Nous aident à comprendre comment vous utilisez nos outils.</p>",
+        "<h2>2. Types de Cookies Utilisés</h2><p><strong>Cookies essentiels:</strong> Nécessaires au fonctionnement de base de nos agents IA.</p><p><strong>Cookies de préférences:</strong> Mémorisent vos paramètres culinaires personnalisés.</p><p><strong>Cookies analytiques:</strong> Nous aident à comprendre comment vous utilisez nos outils.</p>",
         "<h2>3. Finalité des Cookies</h2><p>Nous utilisons des cookies pour personnaliser votre expérience gastronomique, mémoriser vos recettes favorites et analyser l'utilisation de nos agents IA pour améliorer nos services.</p>",
         "<h2>4. Gestion des Cookies</h2><p>Vous pouvez configurer votre navigateur pour refuser les cookies, bien que cela puisse affecter la fonctionnalité de certains de nos outils d'IA.</p>",
         "<h2>5. Cookies Tiers</h2><p>Certains cookies peuvent être définis par des services tiers que nous utilisons pour les analytics et fonctionnalités supplémentaires.</p>",
@@ -642,7 +642,7 @@
     "title": "Questions Fréquemment Posées",
     "description": "Nous répondons aux questions les plus courantes sur AI Chef Pro",
     "q1": "Qu'est-ce qu'AI Chef Pro et comment peut-il m'aider en tant que chef ou professionnel de la gastronomie ?",
-    "a1": "AI Chef Pro est une Suite d'Outils et Agents IA IA, des modèles entraînés pour l'usage quotidien des Chefs, Cuisiniers et professionnels de l'hôtellerie. Elle offre des outils qui boostent votre créativité, améliorent votre gestion et élargissent vos connaissances culinaires. En tant que leader dans n'importe quel domaine de la cuisine ou gastronomie, vous pourrez explorer de nouvelles combinaisons de saveurs, optimiser vos processus et rester à jour avec les dernières tendances gastronomiques. AI Chef Pro vous permet de vous concentrer sur votre passion culinaire pendant que l'IA vous assiste dans les tâches répétitives, vous aide à résoudre des scénarios et vous inspire avec de nouvelles idées.",
+    "a1": "AI Chef Pro est une Suite d'Outils et Agents IA, des modèles entraînés pour l'usage quotidien des Chefs, Cuisiniers et professionnels de l'hôtellerie. Elle offre des outils qui boostent votre créativité, améliorent votre gestion et élargissent vos connaissances culinaires. En tant que leader dans n'importe quel domaine de la cuisine ou gastronomie, vous pourrez explorer de nouvelles combinaisons de saveurs, optimiser vos processus et rester à jour avec les dernières tendances gastronomiques. AI Chef Pro vous permet de vous concentrer sur votre passion culinaire pendant que l'IA vous assiste dans les tâches répétitives, vous aide à résoudre des scénarios et vous inspire avec de nouvelles idées.",
     "q2": "Quels outils spécifiques AI Chef Pro offre-t-il pour ma gestion professionnelle ?",
     "a2": "AI Chef Pro offre une variété d'outils axés sur votre croissance en tant que chef : Catering AI+ pour la planification d'événements, Food Pairing AI pour découvrir des combinaisons innovantes, Mermas GenCal pour optimiser l'utilisation des ingrédients, ID Allergènes pour assurer la sécurité alimentaire, Mental Coach pour votre bien-être professionnel, et d'autres. Il inclut aussi des générateurs de recettes thématiques, chaque semaine le système lance une nouvelle agent IA dans la suite qui répond à une solution.",
     "q3": "Comment fonctionne le plan gratuit ?",
@@ -657,7 +657,7 @@
   "footer": {
     "description": "Suite d'outils IA pour professionnels culinaires",
     "brand_desc": "<strong>Intelligence Artificielle pour le Chef d'Aujourd'hui.</strong> Développez votre potentiel professionnel avec l'utilisation et le soutien de l'intelligence artificielle dans votre quotidien.",
-    "suite_desc": "Suite d'Outils et Agents IA IA modélisés pour les Chefs, Cuisiniers et professionnels de l'hôtellerie.",
+    "suite_desc": "Suite d'Outils et Agents IA modélisés pour les Chefs, Cuisiniers et professionnels de l'hôtellerie.",
     "newsletter_title": "NEWSLETTER IA POUR CHEFS PRO",
     "newsletter_placeholder": "Saisissez votre adresse email",
     "newsletter_button": "S'abonner",
