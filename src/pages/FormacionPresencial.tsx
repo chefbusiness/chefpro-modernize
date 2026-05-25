@@ -501,7 +501,7 @@ const FormacionPresencial = () => {
                       <Brain className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-slate-900">55+ Apps IA</div>
+                      <div className="font-bold text-slate-900">55+ Agentes IA</div>
                       <div className="text-sm text-slate-500">Especializadas</div>
                     </div>
                   </div>
@@ -784,7 +784,7 @@ const FormacionPresencial = () => {
                   <tbody>
                     <tr className="border-t">
                       <td className="p-4">Herramientas Incluidas</td>
-                      <td className="p-4 text-center font-medium text-amber-700">55+ apps propias</td>
+                      <td className="p-4 text-center font-medium text-amber-700">55+ agentes IA propios</td>
                       <td className="p-4 text-center text-muted-foreground">Herramientas genéricas</td>
                     </tr>
                     <tr className="border-t bg-amber-50/30">

@@ -67,9 +67,9 @@ export default function KitGestionPersonal() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Incluye registro horario digital?", "acceptedAnswer": { "@type": "Answer", "text": "No. El registro/fichaje horario digital requiere una app homologada. Este kit es para planificacion de turnos, control de costes laborales, onboarding y gestion de equipo." }},
+            { "@type": "Question", "name": "¿Incluye registro horario digital?", "acceptedAnswer": { "@type": "Answer", "text": "No. El registro/fichaje horario digital requiere un software homologado. Este kit es para planificacion de turnos, control de costes laborales, onboarding y gestion de equipo." }},
             { "@type": "Question", "name": "¿Las formulas calculan horas extra automaticamente?", "acceptedAnswer": { "@type": "Answer", "text": "Si. La plantilla calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo." }},
-            { "@type": "Question", "name": "¿En que se diferencia de apps de RRHH?", "acceptedAnswer": { "@type": "Answer", "text": "Las apps cobran entre 30 y 60 EUR/mes. Este kit cuesta 14 EUR, pago unico, sin suscripcion." }},
+            { "@type": "Question", "name": "¿En que se diferencia del software de RRHH?", "acceptedAnswer": { "@type": "Answer", "text": "El software de RRHH cobra entre 30 y 60 EUR/mes. Este kit cuesta 14 EUR, pago unico, sin suscripcion." }},
             { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

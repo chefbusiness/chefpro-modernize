@@ -69,7 +69,7 @@ export default function KitTareasRestauranteCreativo() {
           "mainEntity": [
             { "@type": "Question", "name": "¿Las tareas vienen ya rellenadas para restaurante creativo?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Cada checklist viene pre-rellenado con las tareas reales de un restaurante creativo o de autor: I+D, degustacion, brigada, sumiller y eventos. Solo personaliza: ajustar, borrar lo que no aplique y anadir lo especifico." }},
             { "@type": "Question", "name": "¿Cubre I+D y desarrollo de menu?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Fichas tecnicas de nuevos platos, pruebas de concepto, evaluacion sensorial, costes I+D y registro fotografico." }},
-            { "@type": "Question", "name": "¿En que se diferencia de apps de gestion?", "acceptedAnswer": { "@type": "Answer", "text": "Apps cobran €40/mes por local. Este kit da las mismas listas en Excel por €12, pago unico." }},
+            { "@type": "Question", "name": "¿En que se diferencia del software de gestion?", "acceptedAnswer": { "@type": "Answer", "text": "El software de gestion cobra €40/mes por local. Este kit da las mismas listas en Excel por €12, pago unico." }},
             { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

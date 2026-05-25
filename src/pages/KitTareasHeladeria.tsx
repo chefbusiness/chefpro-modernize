@@ -69,7 +69,7 @@ export default function KitTareasHeladeria() {
           "mainEntity": [
             { "@type": "Question", "name": "¿Las tareas vienen ya rellenadas para heladería?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada checklist viene pre-rellenado con las tareas reales de una heladería artesanal. Solo personaliza: ajustar, borrar lo que no aplique y añadir lo específico." }},
             { "@type": "Question", "name": "¿Cubre producción y servicio?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Pasteurización, maduración, mantecación, envasado, vitrina, mostrador y gestión." }},
-            { "@type": "Question", "name": "¿En qué se diferencia de apps de gestión?", "acceptedAnswer": { "@type": "Answer", "text": "Apps cobran €40/mes por local. Este kit da las mismas listas en Excel por €12, pago único." }},
+            { "@type": "Question", "name": "¿En qué se diferencia del software de gestión?", "acceptedAnswer": { "@type": "Answer", "text": "El software de gestión cobra €40/mes por local. Este kit da las mismas listas en Excel por €12, pago único." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

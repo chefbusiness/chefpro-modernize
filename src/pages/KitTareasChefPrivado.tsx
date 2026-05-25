@@ -69,7 +69,7 @@ export default function KitTareasChefPrivado() {
           "mainEntity": [
             { "@type": "Question", "name": "¿Las tareas vienen ya rellenadas para chef privado?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada checklist viene pre-rellenado con las tareas reales de un chef privado profesional. Solo personaliza: ajustar, borrar lo que no aplique y añadir lo específico." }},
             { "@type": "Question", "name": "¿Sirve para diferentes tipos de chef privado?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cenas a domicilio, meal prep, eventos, yates, villas, clases de cocina y corporativo." }},
-            { "@type": "Question", "name": "¿En qué se diferencia de apps de gestión?", "acceptedAnswer": { "@type": "Answer", "text": "Apps cobran €40/mes. Este kit da las mismas listas en Excel por €18, pago único." }},
+            { "@type": "Question", "name": "¿En qué se diferencia del software de gestión?", "acceptedAnswer": { "@type": "Answer", "text": "El software de gestión cobra €40/mes. Este kit da las mismas listas en Excel por €18, pago único." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>
