@@ -66,7 +66,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Business from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you explain what kind of restaurant you run, what city you\'re in, how many locations you operate, your average check, and how your team works. From that point on, every agent — from the Financial Plan to local SEO — responds tailored to your context: market prices in your area, regulations in your country, and the real scale of your operation. It isn\'t a form: it\'s a short conversation that makes every tool genuinely useful for your business.',
-      appsTitle: 'The Apps You\'ll Use as an Owner',
+      appsTitle: 'The AI Agents You\'ll Use as an Owner',
       apps: [
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Operational and financial assistant that supports you on team decisions, reporting, and daily operations.' },
         { name: 'Casual Restaurants AI+', category: 'Business Concepts', description: 'Specialist in bistros, gastro bars, tapas, and Mediterranean: the full casual spectrum on a professional foundation.' },
@@ -177,7 +177,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Tailored to Your Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you describe what kind of casual concept you run (Mediterranean, bistro, gastropub, neighborhood tavern, tapas), seat count, city, and how you operate. From that moment on, every agent — from Casual Restaurants AI+ to Menu Dish Local SEO — answers in your context: average ticket in your area, local regulations, and real day-to-day operations.',
-      appsTitle: 'The Apps You Will Use in Your Casual Restaurant',
+      appsTitle: 'The AI Agents You Will Use in Your Casual Restaurant',
       apps: [
         { name: 'Casual Restaurants AI+', category: 'Business Concepts', description: 'Primary agent: bistros, gastropubs, tapas, and Mediterranean concepts on a professional foundation.' },
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Operations assistant and owner-ready reporting.' },
@@ -255,10 +255,10 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Cost Recipes with AI in 4 Steps',
       workflow: [
-        '1. Avant-garde Cuisine (or the creative agent that matches your concept: Creative Pastry, Creative Ice Cream Making, Creative Chocolate Making, Italian Cuisine, Mexican Cuisine, Peruvian Cuisine, Japanese Cuisine) — develop or load the recipe. The app delivers recipe + CSV cost card with technical balance, estimated yield losses and storytelling.',
+        '1. Avant-garde Cuisine (or the creative agent that matches your concept: Creative Pastry, Creative Ice Cream Making, Creative Chocolate Making, Italian Cuisine, Mexican Cuisine, Peruvian Cuisine, Japanese Cuisine) — develop or load the recipe. The AI agent delivers recipe + CSV cost card with technical balance, estimated yield losses and storytelling.',
         '2. Sosa Ingredients Agent + Waste GenCal — the AI enriches the CSV with reference prices and real per-process yield losses for your style of cuisine.',
         '3. Recipe Costing Kit Pro (downloadable Excel template, €12) — load the CSV with your real vendor prices. The workbook computes true margin, food cost %, suggested price by channel (dine-in, delivery, events) and a polished commercial proposal.',
-        '4. Calcula Pax + Ingredient Converter — when you need to scale a recipe for banquets (50, 100, 300 covers) or convert units between metric and US, the apps do it instantly while keeping the cost card intact.',
+        '4. Calcula Pax + Ingredient Converter — when you need to scale a recipe for banquets (50, 100, 300 covers) or convert units between metric and US, the AI agents do it instantly while keeping the cost card intact.',
       ],
       productsTitle: 'Recommended Templates and Kits for Recipe Costing',
       productIds: ['kit-escandallos', 'pro-prompts-ebook', 'pack-appcc', 'kit-inventario', 'kit-tareas', 'kit-plan-financiero'],
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Tailored to Your Kitchen From Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you describe the kind of cuisine you run, and the costing workflow adapts to your concept: Avant-garde Cuisine for restaurants, Creative Pastry for pastry shops, Creative Ice Cream Making for gelato, and so on.',
-      appsTitle: 'The Apps You Use to Cost Recipes',
+      appsTitle: 'The AI Agents You Use to Cost Recipes',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Recipes + CSV recipe cost card with technical balance and estimated yield loss.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Pastry recipes with built-in kitchen labor cost.' },
@@ -397,7 +397,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to You from Minute One',
       personalizationBody: 'AI Chef Pro starts with a 2-minute conversational onboarding — the Who Am I? agent — where you tell it who you are, where you work, what kind of cuisine you lead, and at what scale you operate. From that moment on, every agent — from plate costing to creativity — responds tuned to your context: your local cuisine, your regulations, your market prices, and the size of your brigade. It isn\'t a form: it\'s a short conversation that gives meaning to everything that follows.',
-      appsTitle: 'The Apps You\'ll Use as an Executive Chef',
+      appsTitle: 'The AI Agents You\'ll Use as an Executive Chef',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Lead agent: multi-unit standardization, spec sheets, and menu decisions.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional dish development with detailed recipe and initial recipe cost card exportable to CSV (market reference prices), ready to load into the Recipe Costing Kit Pro.' },
@@ -509,7 +509,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the Who Am I? agent — a 2-minute conversational onboarding where you describe the kitchen you lead, your city, the menu style you run and the scale you operate at. From that moment on, every agent — from plate costing to creativity — responds tailored to your context: local product, your country\'s regulations, brigade size and real budget. It is not a form: it is a short conversation that makes the suite genuinely useful for your daily reality on the line.',
-      appsTitle: 'The Apps You Will Use as a Head Chef',
+      appsTitle: 'The AI Agents You Will Use as a Head Chef',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Recipe standardization, spec sheets and kitchen manuals.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional dish development with recipe + costing CSV ready for the Recipe Costing Kit Pro.' },
@@ -620,7 +620,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Tailored to Your Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you describe what kind of kitchen you run, what city you\'re in, what menu you handle and at what scale. From that moment on, every agent — from mise en place to plate costing — responds adapted to your context: service style, brigade size and real operations. It\'s not a form: it\'s a short conversation that makes the suite genuinely useful at the speed of the line.',
-      appsTitle: 'The Apps You\'ll Use as a Sous Chef',
+      appsTitle: 'The AI Agents You\'ll Use as a Sous Chef',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Recipe standardization, recipe specs and centralized kitchen manuals.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional dish development with recipe + costing CSV ready for the Recipe Costing Kit Pro.' },
@@ -730,7 +730,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the “Who Am I?” agent — a 2-minute conversational onboarding where you describe what type of restaurant you manage, the city, your seat count, and how you operate. From that moment on, every agent — from scheduling to reporting — responds adapted to your context: local labor rules, team size, real service peaks. It’s not a form: it’s a short conversation that makes the entire suite genuinely useful for your day-to-day as a manager.',
-      appsTitle: 'The Apps You Will Use as a Restaurant Manager',
+      appsTitle: 'The AI Agents You Will Use as a Restaurant Manager',
       apps: [
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Primary agent: operational decisions, team management, and owner reporting.' },
         { name: 'Casual Restaurants AI+', category: 'Business Concepts', description: 'Specialist for bistros, gastropubs, tapas, and Mediterranean — the full casual spectrum.' },
@@ -840,7 +840,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Tailored to Your Group from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you tell it how many units you run, which concepts you operate (casual, fine-dining, dark kitchen, hotel), in which countries, and how your org is structured. From that moment on, every agent — from the Financial Plan Kit to the operational playbooks — responds tailored to the real scale and structure of your group. It\'s not a form: it\'s a short conversation that makes the suite genuinely useful for multi-unit Directors of Operations.',
-      appsTitle: 'The Apps You\'ll Use as a Director of Operations',
+      appsTitle: 'The AI Agents You\'ll Use as a Director of Operations',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Recipe standardization, spec sheets, and replicable manuals across every unit in the group.' },
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Copilot for each unit GM with consolidated reporting up the chain.' },
@@ -949,7 +949,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Pizzeria from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you describe what kind of pizzeria you run (Neapolitan, Roman, American, Detroit, alla pala), seat count, city, and ops model. From that point on, every agent — from Italian Cuisine to Menu Dish Local SEO — responds tailored to your dough style, delivery platforms, and local market.',
-      appsTitle: 'The Apps You Will Use in Your Pizzeria',
+      appsTitle: 'The AI Agents You Will Use in Your Pizzeria',
       apps: [
         { name: 'Italian Cuisine', category: 'Culinary Creativity', description: 'Specialized agent for professional Italian cuisine with a strong base in Neapolitan and Roman pizzeria technique.' },
         { name: 'Fermentus Pro AI+', category: 'Culinary Creativity', description: 'Sourdough, high hydrations, and long fermentations with professional-grade backing.' },
@@ -1058,7 +1058,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Burger Joint from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you tell it what kind of burger joint you run (gourmet, smash, fast-casual, plant-based), seat count, city, delivery platforms and commissions. Every agent — from Burgers Pro AI+ to Recipe Costing Kit Pro — responds tuned to your style and real market.',
-      appsTitle: 'The Apps You Will Use in Your Burger Joint',
+      appsTitle: 'The AI Agents You Will Use in Your Burger Joint',
       apps: [
         { name: 'Burgers Pro AI+', category: 'Business Concepts', description: 'Specialized agent for burger joints: gourmet, smash, fast food, plant-based.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional burger development with recipe + CSV plate cost.' },
@@ -1109,7 +1109,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
   },
   'dark-kitchen': {
       h1: 'AI for Dark Kitchens and Virtual Kitchens',
-      heroSubtitle: 'Run 1, 4, or 10 virtual brands out of a single kitchen. Control food cost by brand and by delivery platform, climb the rankings on the apps, and multiply tickets without adding a single seat in the dining room.',
+      heroSubtitle: 'Run 1, 4, or 10 virtual brands out of a single kitchen. Control food cost by brand and by delivery platform, climb the rankings on the AI agents, and multiply tickets without adding a single seat in the dining room.',
       heroTagline: 'No dining room. Margin built by system.',
       badge: 'Dark Kitchen and Ghost Kitchen',
       painsTitle: 'What a Dark Kitchen Operator Cannot Afford to Get Wrong',
@@ -1126,7 +1126,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { icon: 'Layers', title: 'Multi-brand recipe costing: Avant-garde Cuisine → Recipe Costing Kit Pro', description: 'Avant-garde Cuisine generates the dish and an initial plate cost in CSV with reference market prices. You load it into the Recipe Costing Kit Pro, swap the reference prices for your real supplier prices, and get true cost and margin per brand, per dish, and per delivery platform.' },
         { icon: 'Smartphone', title: 'Burgers Pro AI+, Food Truck AI+, and Casual Restaurants AI+', description: 'Three specialized agents covering the most profitable virtual concepts in delivery: burgers, fast food, casual, and bistro.' },
         { icon: 'Truck', title: 'Real margin after platform commission', description: 'The AI Chef Pro financial plan automatically deducts each platform commission and shows you actual margin by brand and by channel.' },
-        { icon: 'TrendingUp', title: 'Menu Dish Local SEO + BlogPost SEO Gen+', description: 'A full SEO suite so your virtual brands climb in local Google search and pull in organic traffic on top of what the apps deliver.' },
+        { icon: 'TrendingUp', title: 'Menu Dish Local SEO + BlogPost SEO Gen+', description: 'A full SEO suite so your virtual brands climb in local Google search and pull in organic traffic on top of what the AI agents deliver.' },
         { icon: 'Search', title: 'Keyword Discovery AI+', description: 'Local food keyword research to name brands, dishes, and menus that rank better.' },
         { icon: 'Image', title: 'GastroIMG Gen+', description: 'AI-generated food photography for your platform listings. Better photo = more clicks and better ranking.' },
         { icon: 'Sparkles', title: 'Avant-garde Cuisine + Italian, Mexican, Japanese cuisines and more', description: 'More than 25 country-specific AI recipe libraries for building thematic virtual brands on a professional foundation, not recipes copy-pasted from Google.' },
@@ -1156,7 +1156,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it cover platform commissions (DoorDash, Uber Eats, Grubhub)?', a: 'Yes. The real-margin calculation automatically deducts each platform\'s commission, so you know exactly what you earn on every order by channel and can make sharper pricing decisions.' },
         { q: 'Is there a step-by-step guide to opening a dark kitchen?', a: 'Yes — the Guide: How to Open a Dark Kitchen (€24): 12 chapters covering legal requirements, financial plan, kitchen design, technology, marketing, and platform strategy, plus 3 Excel checklists and a calculator.' },
         { q: 'Does it scale to multiple dark kitchen locations?', a: 'Yes. The multi-location standardization built into the Executive Chef Pro agent and the consolidated dashboards are designed for groups operating several virtual units.' },
-        { q: 'How does it help me improve my ranking on the delivery apps?', a: 'Three levers: GastroIMG Gen+ for higher-quality photos (which lift CTR), Menu Dish Local SEO for descriptions that convert, and Keyword Discovery AI+ to surface what users in your zip code are actually searching for.' },
+        { q: 'How does it help me improve my ranking on the delivery AI agents?', a: 'Three levers: GastroIMG Gen+ for higher-quality photos (which lift CTR), Menu Dish Local SEO for descriptions that convert, and Keyword Discovery AI+ to surface what users in your zip code are actually searching for.' },
         { q: 'Does the system adapt to my country and my delivery platforms?', a: 'Yes. You start with the Who Am I? agent in a 2-minute onboarding where you tell it where you operate, which platforms you use, and what commissions you have negotiated. Everything else adapts to your context.' },
         { q: 'And local SEO — is it worth it for a dark kitchen?', a: 'Very much so. A dark kitchen lives on online discovery: if you can capture local Google searches (for example, "burger delivery [your neighborhood]") on top of platform traffic, you cut your dependency on commissions and add direct margin. The AI Chef Pro SEO suite is built for exactly this.' },
       ],
@@ -1170,7 +1170,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Tailored to Your Brands, Your Area, and Your Platforms',
       personalizationBody: 'AI Chef Pro starts with the Who Am I? agent, a 2-minute conversational onboarding. You tell it which brands you run, what city and zip code you operate in, which platforms you use (DoorDash, Uber Eats, Grubhub), and what commissions you have negotiated. From that moment on, plate costs are calculated using your actual commission, local SEO recommendations target your neighborhood, and KPIs are consolidated by brand and by channel exactly the way you need them. It is not a form — it is a short conversation that turns every agent into a tool built around your operation.',
-      appsTitle: 'The Apps You Will Use in Your Dark Kitchen',
+      appsTitle: 'The AI Agents You Will Use in Your Dark Kitchen',
       apps: [
         { name: 'Burgers Pro AI+', category: 'Business Concepts', description: 'Specialist for virtual burger concepts: gourmet, fast food, smash burger, and plant-based.' },
         { name: 'Food Truck AI+', category: 'Business Concepts', description: 'Mobile and virtual fast-food concepts with tight margins.' },
@@ -1282,7 +1282,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Production Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent, a 2-minute conversational onboarding where you tell it what kind of pastry shop you run (artisan, industrial, restaurant pastry program, mixed production kitchen), team size, city, and specialty. Every agent — from Creative Pastry to Gastro Calendar — responds adapted to your product mix, market, and real operations.',
-      appsTitle: 'The Apps You Will Use in Your Pastry Shop',
+      appsTitle: 'The AI Agents You Will Use in Your Pastry Shop',
       apps: [
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Specialized agent for professional pastry, desserts, and custom cakes with advanced technique.' },
         { name: 'Creative Chocolate Making', category: 'Culinary Creativity', description: 'For bonbons, ganaches, and chocolate pairings.' },
@@ -1392,7 +1392,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Bar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the Who Am I? agent, a 2-minute conversational onboarding where you describe the bar you run (cocktail bar, wine bar, taproom, pub, lounge), city, and menu. Every agent — from Bar & Lounge AI+ to the Recipe Costing Kit Pro — responds tailored to your bar style and market.',
-      appsTitle: 'The Apps You Will Use Behind Your Bar',
+      appsTitle: 'The AI Agents You Will Use Behind Your Bar',
       apps: [
         { name: 'Bar & Lounge AI+', category: 'Business Concepts', description: 'Primary agent: pubs, cocktail bars, wine bars, sports bars, and lounges.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Cocktail development with recipe + CSV cost sheet output.' },
@@ -1502,7 +1502,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Coffee Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of café you run (specialty, brunch, casual), city, and how you work. From that moment on, every agent — from Creative Pastry to Pinterest Pins Gen — responds adapted to your context: average check in your area, customer profile, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Coffee Shop',
+      appsTitle: 'The AI Agents You\'ll Use in Your Coffee Shop',
       apps: [
         { name: 'Casual Restaurants AI+', category: 'Business Concepts', description: 'Lead agent: coffee shops, brunch, and cafés with professional foundation.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Professional café pastry recipes: brioche, croissants, cakes, tarts.' },
@@ -1612,7 +1612,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Catering from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of catering you run (weddings, corporate, cocktails, galas), average size, city, and yearly volume. Every agent — from Catering AI+ to the Financial Plan Kit — responds adapted to your event type, scale, and real market.',
-      appsTitle: 'The Apps You\'ll Use in Your Catering Company',
+      appsTitle: 'The AI Agents You\'ll Use in Your Catering Company',
       apps: [
         { name: 'Catering AI+', category: 'Business Concepts', description: 'Lead agent: weddings, corporate, cocktails, and galas with professional foundation.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Event menu development with recipe + costing CSV.' },
@@ -1723,7 +1723,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Hotel from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of hotel you run (boutique, 4-star, large chain, all-inclusive), number of rooms, which F&B outlets you operate, and at what scale. From that moment on, every agent — from Executive Chef Pro to Financial Plan Kit — responds adapted to your hotel\'s reality: guest profile, occupancy ratio, and real operations. It isn\'t a form: it\'s a short conversation that makes the suite genuinely useful for a hotel F&B Manager.',
-      appsTitle: 'The Apps You\'ll Use as F&B Manager',
+      appsTitle: 'The AI Agents You\'ll Use as F&B Manager',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Recipe and spec-sheet standardization across every hotel outlet.' },
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Assistant for each outlet manager with consolidated reporting up to the F&B Manager.' },
@@ -1832,7 +1832,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Ice Cream Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of ice cream shop you run (Italian gelateria, Spanish-style artisan, with or without in-house production, mixed with pastry), team size, city, and style. Every agent — from Creative Ice Cream Making to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Ice Cream Shop',
+      appsTitle: 'The AI Agents You\'ll Use in Your Ice Cream Shop',
       apps: [
         { name: 'Creative Ice Cream Making', category: 'Culinary Creativity', description: 'Specialized agent for artisan ice cream with technical balance of bases, sugars, solids, and fats.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Ice cream cakes, semifreddos, dessert plates, and ice cream + sponge combinations.' },
@@ -1942,7 +1942,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Chocolate Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of chocolate shop you run (artisan, signature bonbon shop, chocolate shop with café, production kitchen for hospitality), team size, city, and specialty. Every agent — from Creative Chocolate Making to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Chocolate Shop',
+      appsTitle: 'The AI Agents You\'ll Use in Your Chocolate Shop',
       apps: [
         { name: 'Creative Chocolate Making', category: 'Culinary Creativity', description: 'Specialized agent for professional chocolate work: bonbons, ganaches, pralines, bars, and tempering technique.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Chocolate desserts, petits fours, brownies, and advanced combinations.' },
@@ -2053,7 +2053,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Creative Cuisine from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of creative cuisine you lead (signature, gastrobotany, ferments, avant-garde, fusion), city, and references. From that moment on, every agent — from Avant-garde Cuisine to Sonar Deep Research — responds adapted to your creative language, habitual technique, and real positioning in the sector.',
-      appsTitle: 'The Apps You\'ll Use in Your Creative Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Creative Restaurant',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional dish development with recipe + costing CSV ready for Recipe Costing Kit Pro.' },
         { name: 'Food Pairing AI', category: 'Culinary Creativity', description: 'Ingredient combinations and pairings with food-science backing.' },
@@ -2164,7 +2164,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Fine-Dining Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of cuisine you lead (Michelin, Repsol Soles, aspirant, contemporary fine dining, avant-garde fusion), number of covers, city, and references. From that moment on, every agent — from Avant-garde Cuisine to Sonar Deep Research — responds adapted to your language, habitual technique, and real positioning in the sector.',
-      appsTitle: 'The Apps You\'ll Use in Your Fine-Dining Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Fine-Dining Restaurant',
       apps: [
         { name: 'Executive Chef Pro', category: 'Gastro Profile Pro', description: 'Standardization of spec sheets and manuals for an extended brigade.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Tasting-menu course development with recipe + costing CSV.' },
@@ -2274,7 +2274,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Mexican Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of Mexican concept you run (casual taquería, contemporary Mexican, regional cuisine, cantina, gourmet taquería, Mexican food truck), team size, city, and specialty. Every agent — from Mexican Cuisine to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Mexican Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Mexican Restaurant',
       apps: [
         { name: 'Mexican Cuisine', category: 'Latin American Cuisines', description: 'Specialized agent for authentic Mexican cooking: salsas, moles, marinades, antojitos, regional technique.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature taco and contemporary dish development with recipe + costing CSV.' },
@@ -2384,7 +2384,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Peruvian Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of Peruvian concept you run (casual ceviche bar, contemporary Peruvian, regional cuisine, Andean picantería, polleria, signature restaurant), team size, city, and specialty. Every agent — from Peruvian Cuisine to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Peruvian Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Peruvian Restaurant',
       apps: [
         { name: 'Peruvian Cuisine', category: 'Latin American Cuisines', description: 'Specialized agent for authentic Peruvian cooking: ceviches, tiraditos, causas, anticuchos, pachamanca.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature tiradito and contemporary dish development with recipe + costing CSV.' },
@@ -2494,7 +2494,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Japanese Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of Japanese concept you run (sushi bar, ramen-ya, izakaya, kaiseki, omakase, contemporary signature Japanese), team size, city, and specialty. Every agent — from Japanese Cuisine to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Japanese Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Japanese Restaurant',
       apps: [
         { name: 'Japanese Cuisine', category: 'Asian Cuisines', description: 'Specialized agent for authentic Japanese cooking: sushi, sashimi, ramen, robata, kaiseki.' },
         { name: 'Fermentus Pro AI+', category: 'Culinary Creativity', description: 'Koji, miso, house shoyu, amazake, and advanced ferments.' },
@@ -2604,7 +2604,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Nikkei Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of nikkei concept you run (contemporary signature nikkei, nikkei sushi bar, ceviche bar with Japanese technique, nikkei omakase), team size, city, and specialty. Every agent responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Nikkei Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Nikkei Restaurant',
       apps: [
         { name: 'Japanese Cuisine', category: 'Asian Cuisines', description: 'Itamae technique, filleting, sushi, sashimi, and robata applied to nikkei fusion.' },
         { name: 'Peruvian Cuisine', category: 'Latin American Cuisines', description: 'Ceviches, tiraditos, anticuchos, and Peruvian technique applied to nikkei fusion.' },
@@ -2714,7 +2714,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Plant-Based Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of plant-based concept you run (casual healthy bowls, vegan fine dining, plant-based burger joint, signature vegan restaurant, vegan café, vegan dark kitchen), team size, city, and specialty. Every agent responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Plant-Based Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Plant-Based Restaurant',
       apps: [
         { name: 'VegChef Plant-Based', category: 'Culinary Creativity', description: 'Specialized agent for professional plant-based, vegan, and vegetarian cooking with advanced technique.' },
         { name: 'Fermentus Pro AI+', category: 'Culinary Creativity', description: 'Vegetable koji, house miso, shoyu, kimchi, kombucha, and lacto-ferments for deep umami.' },
@@ -2824,7 +2824,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Steakhouse from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of steakhouse you run (Argentine grill, Brazilian churrascaria, premium dry-aged steakhouse, casual neighborhood asador, signature steakhouse), team size, city, and specialty. Every agent responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Steakhouse',
+      appsTitle: 'The AI Agents You\'ll Use in Your Steakhouse',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Steakhouse menu development with grill technique, marinades, and professional sides.' },
         { name: 'Argentine Cuisine', category: 'Latin American Cuisines', description: 'Argentine asado, chimichurri, provolone, sweetbreads, and authentic grill technique.' },
@@ -2934,7 +2934,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Coffee Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of coffee shop you run (third-wave specialty, casual coffee shop, roastery with retail, café with in-house pastry), team size, city, and specialty.',
-      appsTitle: 'The Apps You\'ll Use in Your Coffee Shop',
+      appsTitle: 'The AI Agents You\'ll Use in Your Coffee Shop',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature development: cold brews, spiced lattes, seasonal specialties.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'In-house pastry: croissants, brownies, banana bread, cookies.' },
@@ -3044,7 +3044,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Sushi Bar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of sushi bar you run (casual sushi bar, premium omakase, kaiten, sushi bar with hot kitchen), team size, city, and specialty.',
-      appsTitle: 'The Apps You\'ll Use in Your Sushi Bar',
+      appsTitle: 'The AI Agents You\'ll Use in Your Sushi Bar',
       apps: [
         { name: 'Japanese Cuisine', category: 'Asian Cuisines', description: 'Professional sushi: itamae technique, sashimi, omakase.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature nigiri and omakase with recipe + costing CSV.' },
@@ -3154,7 +3154,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Gastrobar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of gastrobar you run (contemporary gastrobar, traditional tapas bar, Basque pintxos, wine bar with tapas), team size, city, and specialty.',
-      appsTitle: 'The Apps You\'ll Use in Your Gastrobar',
+      appsTitle: 'The AI Agents You\'ll Use in Your Gastrobar',
       apps: [
         { name: 'Spanish Cuisine', category: 'European Cuisines', description: 'Traditional tapas, pintxos, market-driven plates.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Contemporary signature tapas with recipe + costing CSV.' },
@@ -3264,7 +3264,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Food Truck from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of food truck you run (casual, gourmet, private events, market, festivals), team size, specialty, and operating zones.',
-      appsTitle: 'The Apps You\'ll Use in Your Food Truck',
+      appsTitle: 'The AI Agents You\'ll Use in Your Food Truck',
       apps: [
         { name: 'Food Truck AI+', category: 'Business Concepts', description: 'Specialized agent for food trucks and mobile kitchens.' },
         { name: 'Burgers Pro AI+', category: 'Business Concepts', description: 'For smash-burger food trucks and gourmet burger joints.' },
@@ -3374,7 +3374,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Italian Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of Italian concept you run (trattoria, contemporary ristorante, regional cuisine, signature Italian), team size, city, and regional specialty.',
-      appsTitle: 'The Apps You\'ll Use in Your Italian Restaurant',
+      appsTitle: 'The AI Agents You\'ll Use in Your Italian Restaurant',
       apps: [
         { name: 'Italian Cuisine', category: 'European Cuisines', description: 'Pasta, sauces, risotto, ossobuco with authentic regional technique.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Contemporary Italian signature dishes.' },
@@ -3485,7 +3485,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Catering Type from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of events you design (weddings, corporate, cocktails, galas), average size, city, and how you work. From that moment on, every agent — from Catering AI+ to recipe costing — responds adapted to your context: service types, central-kitchen scale, and real operations. It isn\'t a form: it\'s a short conversation that makes the suite genuinely useful for your day-to-day as a catering chef.',
-      appsTitle: 'The Apps You\'ll Use as a Catering Chef',
+      appsTitle: 'The AI Agents You\'ll Use as a Catering Chef',
       apps: [
         { name: 'Catering AI+', category: 'Business Concepts', description: 'Lead agent: weddings, corporate, cocktails, and galas with professional knowledge.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional dish development with recipe + costing CSV ready for Recipe Costing Kit Pro.' },
@@ -3595,7 +3595,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Company from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of catering you run (weddings, corporate, cocktails, galas), average event size, city, and yearly volume. From that moment on, every agent — from Catering AI+ to the Financial Plan Kit — responds adapted to your context: service types, real scale, and target market. It isn\'t a form: it\'s a short conversation that makes the suite genuinely useful for your business.',
-      appsTitle: 'The Apps You\'ll Use as a Catering Owner',
+      appsTitle: 'The AI Agents You\'ll Use as a Catering Owner',
       apps: [
         { name: 'Catering AI+', category: 'Business Concepts', description: 'Lead agent: weddings, corporate, cocktails, and galas with professional knowledge.' },
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Operational and financial assistant to support decisions and reporting to partners.' },
@@ -3705,7 +3705,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Bar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of bar you run (signature cocktail bar, wine bar, hotel bar, lounge, restaurant with mixology), team size, city, and menu style. Every agent — from Bar & Lounge AI+ to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use at Your Bar',
+      appsTitle: 'The AI Agents You\'ll Use at Your Bar',
       apps: [
         { name: 'Bar & Lounge AI+', category: 'Culinary Creativity', description: 'Specialized agent for professional mixology, wines, beers, and spirits with advanced technique.' },
         { name: 'Food Pairing AI', category: 'Culinary Creativity', description: 'Unexpected combinations with food-science backing and cocktail-plus-dish pairings.' },
@@ -3815,7 +3815,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Pizzeria from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of pizzeria you run (authentic Neapolitan, Roman al taglio, American, mixed with Italian cooking, dark kitchen for delivery), team size, city, and oven type. Every agent — from Italian Cuisine to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Pizzeria',
+      appsTitle: 'The AI Agents You\'ll Use in Your Pizzeria',
       apps: [
         { name: 'Italian Cuisine', category: 'Culinary Creativity', description: 'Specialized agent for professional Italian cooking: doughs, sauces, toppings, oven technique.' },
         { name: 'Fermentus Pro AI+', category: 'Culinary Creativity', description: 'Sourdoughs, biga, poolish, high hydrations, and long controlled fermentations.' },
@@ -3925,7 +3925,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Production Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of bakery you run (artisan with sourdough, traditional bakery, production kitchen with viennoiserie, bakery with café, organic bakery), team size, city, and specialty. Every agent — from Creative Bakery to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Bakery',
+      appsTitle: 'The AI Agents You\'ll Use in Your Bakery',
       apps: [
         { name: 'Creative Bakery', category: 'Culinary Creativity', description: 'Specialized agent for professional artisan baking, sourdoughs, hydrations, and technique.' },
         { name: 'Fermentus Pro AI+', category: 'Culinary Creativity', description: 'Sourdoughs, biga, poolish, high hydrations, and long controlled fermentations.' },
@@ -4036,7 +4036,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Atelier from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of chocolate concept you run (signature atelier, bonbon shop with scaled production, chocolate shop with café, production kitchen for hospitality, chocolate experiences and tastings), team size, city, and specialty. Every agent — from Creative Chocolate Making to Gastro Calendar — responds adapted to your product, market, and real operations.',
-      appsTitle: 'The Apps You\'ll Use in Your Atelier',
+      appsTitle: 'The AI Agents You\'ll Use in Your Atelier',
       apps: [
         { name: 'Creative Chocolate Making', category: 'Culinary Creativity', description: 'Specialized agent for professional chocolate making: bonbons, ganaches, pralines, bars, and tempering technique.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Chocolate desserts, petits fours, brownies, mousses, and advanced combinations.' },
@@ -4146,7 +4146,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Private Chef Service from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of service you run (freelance private chef, agency with multiple chefs, intimate wedding and private-event catering, yacht chef), client type (VIP families, executives, celebrities), city, and specialty. Every agent — from Private Chef Pro to Gastro Calendar — responds adapted to your offering and real operations.',
-      appsTitle: 'The Apps You\'ll Use as a Private Chef',
+      appsTitle: 'The AI Agents You\'ll Use as a Private Chef',
       apps: [
         { name: 'Private Chef Pro', category: 'Gastro Profile Pro', description: 'Specialized agent in the Gastro Profile Pro catalog: reasons like a professional personal chef.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Personalized menu development with advanced technique and recipe + costing CSV.' },
@@ -4256,7 +4256,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Hotel from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of hotel you run (boutique, chain, 5-star, all-inclusive, vacation resort), number of F&B outlets, team size, and specialty. Every agent — from Restaurant Manager Pro to Catering AI+ — responds adapted to your real hotel.',
-      appsTitle: 'The Apps You\'ll Use as F&B Manager',
+      appsTitle: 'The AI Agents You\'ll Use as F&B Manager',
       apps: [
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Specialized agent adapted to multi-outlet hotel F&B management.' },
         { name: 'Catering AI+', category: 'Business Concepts', description: 'Hotel banquets, weddings, and corporate events with professional proposals.' },
@@ -4366,7 +4366,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Floor from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of floor you lead (fine dining, signature restaurant, Michelin/Repsol gastronomic, premium restaurant with cellar), team size, city, and specialty. Every agent responds adapted to your floor and real operations.',
-      appsTitle: 'The Apps You\'ll Use as Maître',
+      appsTitle: 'The AI Agents You\'ll Use as Maître',
       apps: [
         { name: 'Restaurant Manager Pro', category: 'Gastro Profile Pro', description: 'Specialized agent adapted to fine-dining floor management.' },
         { name: 'Bar & Lounge AI+', category: 'Business Concepts', description: 'Cellar management, decanting, wine recommendations, and professional mixology.' },
@@ -4476,7 +4476,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Cellar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute conversational onboarding where you tell it what kind of sommelier you are (fine-dining head sommelier, freelance sommelier, wine-bar director, hotel sommelier, trainer), cellar size, city, and specialty. Every agent responds adapted to your cellar and real operations.',
-      appsTitle: 'The Apps You\'ll Use as a Sommelier',
+      appsTitle: 'The AI Agents You\'ll Use as a Sommelier',
       apps: [
         { name: 'Bar & Lounge AI+', category: 'Business Concepts', description: 'Specialized agent in professional sommellerie: cellar, varietals, regions, technique.' },
         { name: 'Food Pairing AI', category: 'Culinary Creativity', description: 'Pairings with food-science backing: acidity, tannin, structure, intensity, and harmony.' },
@@ -4586,7 +4586,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Grill from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of grill you lead (Argentine grill, Brazilian churrascaria, premium dry-aged steakhouse, casual neighborhood asador), team size, city, and specialty. Every agent responds adapted to your grill and real operations.',
-      appsTitle: 'The Apps You\'ll Use as a Master Grill Chef',
+      appsTitle: 'The AI Agents You\'ll Use as a Master Grill Chef',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature cut development with grill technique and sides.' },
         { name: 'Argentine Cuisine', category: 'Latin American Cuisines', description: 'Asado, chimichurri, sweetbreads, and authentic grill technique.' },
@@ -4696,7 +4696,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Ice Cream Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of ice cream shop you run (Italian gelateria, Spanish-style artisan, ice cream shop with in-house production), team size, city, and specialty.',
-      appsTitle: 'The Apps You\'ll Use as a Master Ice Cream Maker',
+      appsTitle: 'The AI Agents You\'ll Use as a Master Ice Cream Maker',
       apps: [
         { name: 'Creative Ice Cream Making', category: 'Culinary Creativity', description: 'Specialized agent for artisan ice cream with technical balance.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Ice cream cakes, semifreddos, and dessert plates for the winter valley.' },
@@ -4806,7 +4806,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Pastry Shop from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — a 2-minute onboarding where you tell it what kind of pastry you do (restaurant chef pâtissier, artisan pastry chef, hotel pastry chef, event pastry), team size, city, and specialty.',
-      appsTitle: 'The Apps You\'ll Use as a Pastry Chef',
+      appsTitle: 'The AI Agents You\'ll Use as a Pastry Chef',
       apps: [
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Specialized agent for professional pastry with advanced technique.' },
         { name: 'Creative Chocolate Making', category: 'Culinary Creativity', description: 'For bonbons, ganaches, and advanced combinations.' },
@@ -4884,7 +4884,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Design a Tasting Menu in 5 Steps',
       workflow: [
-        '1. Avant-garde Cuisine — define theme (season, local product, occasion) and the app delivers a 7–10-course sequence with technical balance (texture, intensity, temperature).',
+        '1. Avant-garde Cuisine — define theme (season, local product, occasion) and the AI agent delivers a 7–10-course sequence with technical balance (texture, intensity, temperature).',
         '2. Each course with recipe + individual costing CSV + floor storytelling with technique, product, and vendor.',
         '3. Food Pairing AI — for every course, validate the wine or sake pairing with food-science backing. Bar & Lounge AI+ proposes a concrete cellar selection.',
         '4. Recipe Costing Kit Pro — load the individual CSVs; the Excel calculates total cost per pax, suggested price, and validated margin.',
@@ -4913,7 +4913,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it restaurant type (Michelin gastronomic, fine dining, casual with tasting menu, signature restaurant), preferred course count, market, and cooking style. Every agent responds adapted to your level.',
-      appsTitle: 'The Apps You\'ll Use for the Tasting Menu',
+      appsTitle: 'The AI Agents You\'ll Use for the Tasting Menu',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Reasons the technical tasting-menu sequence with balance.' },
         { name: 'Food Pairing AI', category: 'Culinary Creativity', description: 'Pairings with food-science backing for every course.' },
@@ -4991,7 +4991,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Create Spec Sheets in 4 Steps',
       workflow: [
-        '1. Avant-garde Cuisine (or your creative agent) — develop or load the recipe. The app delivers the recipe + complete spec sheet with all professional fields.',
+        '1. Avant-garde Cuisine (or your creative agent) — develop or load the recipe. The AI agent delivers the recipe + complete spec sheet with all professional fields.',
         '2. Allergen ID — automatically identifies allergens per recipe and integrates them into the spec sheet; when you change an ingredient, it recalculates instantly.',
         '3. GastroIMG Gen+ — generates the plated reference image to include in the spec sheet as a visual guide for the cook.',
         '4. Food Pairing AI + floor storytelling — the spec sheet includes the recommended pairing and a professional description for the team briefing.',
@@ -5019,7 +5019,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it cuisine type, specialty, and volume. The spec-sheet structure adapts to your concept: casual restaurant, fine dining, pastry, ice cream shop, etc.',
-      appsTitle: 'The Apps You\'ll Use for Spec Sheets',
+      appsTitle: 'The AI Agents You\'ll Use for Spec Sheets',
       apps: [
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Recipes + complete spec sheet with all fields.' },
         { name: 'Creative Pastry', category: 'Culinary Creativity', description: 'Sweet spec sheets with production-kitchen labor cost.' },
@@ -5125,7 +5125,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Cellar from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it restaurant type, cellar size, specialty, and level. Every pairing adapts to your real inventory, not a generic cellar.',
-      appsTitle: 'The Apps You\'ll Use for Pairings',
+      appsTitle: 'The AI Agents You\'ll Use for Pairings',
       apps: [
         { name: 'Food Pairing AI', category: 'Culinary Creativity', description: 'Pairings with food-science backing for every dish.' },
         { name: 'Bar & Lounge AI+', category: 'Business Concepts', description: 'Concrete cellar selection with sommelier judgment.' },
@@ -5203,7 +5203,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Reduce Shrinkage in 4 Steps',
       workflow: [
-        '1. Waste GenCal — the app delivers real per-process data by cuisine type (meat butchering, pasta shaping, bread baking, ice cream display, pizza delivery). You load the real data from your operation.',
+        '1. Waste GenCal — the AI agent delivers real per-process data by cuisine type (meat butchering, pasta shaping, bread baking, ice cream display, pizza delivery). You load the real data from your operation.',
         '2. Avant-garde Cuisine + Fermentus Pro AI+ — develop repurposing techniques: trim to stocks, peelings to vinegars, scraps to dehydrates, surplus to ferments.',
         '3. Recipe Costing Kit Pro — recipe costing reflects real shrinkage, not estimated. Per-dish cost rises slightly but reflects the true cost, avoiding margin surprises.',
         '4. Calcula Pax + Gastro Calendar — purchasing tuned to real service or event volume to reduce surplus at source, not just process shrinkage afterward.',
@@ -5231,7 +5231,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Kitchen from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it cuisine type and volume. Waste GenCal delivers per-process data adapted to your concept: grill, sushi, pasta, bread, ice cream, chocolate.',
-      appsTitle: 'The Apps You\'ll Use to Reduce Shrinkage',
+      appsTitle: 'The AI Agents You\'ll Use to Reduce Shrinkage',
       apps: [
         { name: 'Waste GenCal', category: 'Tools & Utilities', description: 'Real per-process shrinkage data by cuisine type.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional repurposing techniques for trim and surplus.' },
@@ -5337,7 +5337,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Establishment from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it establishment type and country. HACCP Kit adapts templates to your concept and local regulation.',
-      appsTitle: 'The Apps You\'ll Use for HACCP',
+      appsTitle: 'The AI Agents You\'ll Use for HACCP',
       apps: [
         { name: 'Allergen ID', category: 'Tools & Utilities', description: 'Automatic allergen identification per recipe.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Recipes with HACCP procedures integrated.' },
@@ -5415,7 +5415,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Design a Seasonal Menu in 5 Steps',
       workflow: [
-        '1. Gastro Calendar — define hemisphere, region, and season (e.g., fall Northern Hemisphere, Madrid). The app delivers local in-season product and key holidays (Mother\'s Day, Christmas, Valentine\'s).',
+        '1. Gastro Calendar — define hemisphere, region, and season (e.g., fall Northern Hemisphere, Madrid). The AI agent delivers local in-season product and key holidays (Mother\'s Day, Christmas, Valentine\'s).',
         '2. Avant-garde Cuisine — develop signature dishes with local product. Every recipe delivers recipe + costing CSV + producer storytelling.',
         '3. Recipe Costing Kit Pro — load the CSVs with your real local-vendor prices, validate margin and food cost % per dish and full menu.',
         '4. Bar & Lounge AI+ + Food Pairing AI — update seasonal wines and pairings tuned to seasonal product.',
@@ -5444,7 +5444,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Restaurant from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it restaurant type, hemisphere, region, and focus (km 0, local product, signature). Every agent responds adapted to your real market.',
-      appsTitle: 'The Apps You\'ll Use for the Seasonal Menu',
+      appsTitle: 'The AI Agents You\'ll Use for the Seasonal Menu',
       apps: [
         { name: 'Gastro Calendar', category: 'Content & Social', description: 'Seasonal planning by hemisphere and region.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Signature dishes with local in-season product.' },
@@ -5522,7 +5522,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       ],
       workflowTitle: 'How to Do Food Photography in 4 Steps',
       workflow: [
-        '1. Avant-garde Cuisine — develop the dish. The app delivers recipe + costing + professional plating instructions (composition, palette, tableware, view).',
+        '1. Avant-garde Cuisine — develop the dish. The AI agent delivers recipe + costing + professional plating instructions (composition, palette, tableware, view).',
         '2. GastroIMG Gen+ — generate a professional reference image with optimized prompt: warm palette, rustic tableware, overhead view, microgreens. Iterate until the target image is clear.',
         '3. Cook the real dish with the reference image in front of you: same plating, palette, garnish. The final recipe-cost and menu photo is the one you take with your real plated dish.',
         '4. InstaFlow AI Pro + Menu Dish + Pinterest Pins Gen — adapt the final image to each channel (Instagram, DoorDash, web, menu) with professional judgment.',
@@ -5550,7 +5550,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
       },
       personalizationTitle: 'Personalized to Your Style from Minute One',
       personalizationBody: 'AI Chef Pro starts with the "Who Am I?" agent — you tell it cooking style, brand palette, tableware, and priority channels (Instagram, DoorDash, web, menu). GastroIMG Gen+ adapts the visual style to your brand.',
-      appsTitle: 'The Apps You\'ll Use for Food Photography',
+      appsTitle: 'The AI Agents You\'ll Use for Food Photography',
       apps: [
         { name: 'GastroIMG Gen+', category: 'Gastro Knowledge', description: 'Specialized agent for AI food photography.' },
         { name: 'Avant-garde Cuisine', category: 'Culinary Creativity', description: 'Professional plating instructions for every recipe.' },

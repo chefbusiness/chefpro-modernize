@@ -25,6 +25,18 @@ RULES = {
         (r'\baplicaciones de Inteligencia Artificial\b', 'agentes de Inteligencia Artificial'),
         (r'\bAplicaciones de IA\b', 'Agentes IA'),
         (r'\baplicaciones de IA\b', 'agentes IA'),
+        # Gender fixes: female article + Apps -> male article + Agentes IA
+        (r'\bLas Apps\b', 'Los Agentes IA'),
+        (r'\blas Apps\b', 'los Agentes IA'),
+        (r'\blas apps\b', 'los agentes IA'),
+        (r'\bUna App\b', 'Un Agente IA'),
+        (r'\buna app\b', 'un agente IA'),
+        (r'\bEsta App\b', 'Este Agente IA'),
+        (r'\besta app\b', 'este agente IA'),
+        (r'\bAlguna App\b', 'Algún Agente IA'),
+        (r'\balguna app\b', 'algún agente IA'),
+        (r'\bOtra App\b', 'Otro Agente IA'),
+        (r'\botra app\b', 'otro agente IA'),
         (r'\bApps Especializadas\b', 'Agentes IA Especializados'),
         (r'\bapps especializadas\b', 'agentes IA especializados'),
         (r'\baplicaciones especializadas\b', 'agentes IA especializados'),
@@ -211,17 +223,112 @@ def process_locale(lang: str, apply: bool):
     return len(changes)
 
 
+GENERIC_NOUN_WORDS = {
+    # Words that overlap with the natural-language meaning of "use/instance":
+    # in TS data files these often refer to that, not to software apps.
+    # We skip these in TS files to avoid false positives like
+    # "técnicas y aplicaciones avanzadas" -> "técnicas y agentes IA avanzadas".
+    'aplicaciones', 'Aplicaciones', 'aplicación', 'Aplicación',
+    'applications', 'Applications', 'application', 'Application',
+    'applicazioni', 'Applicazioni', 'applicazione', 'Applicazione',
+    'aplicações', 'Aplicações', 'aplicação', 'Aplicação',
+    'Anwendungen', 'Anwendung',
+    'applicaties', 'Applicaties', 'applicatie', 'Applicatie',
+}
+
+
+def rules_for_ts(rules):
+    """Return rules subset safe for TS data files (excludes generic-noun rules)."""
+    out = []
+    for pattern, repl in rules:
+        # Drop the rule if it targets a generic-noun word standalone.
+        # We detect by checking if the pattern is the bare \bWord\b form
+        # for any generic noun (these are at the end of each locale's list).
+        is_generic = False
+        for word in GENERIC_NOUN_WORDS:
+            if pattern == fr'\b{word}\b':
+                is_generic = True
+                break
+        if not is_generic:
+            out.append((pattern, repl))
+    return out
+
+
+def process_ts_text(text: str, rules, samples_out=None):
+    """
+    Apply rules inside string literals only, and only when the literal
+    looks like natural text (has whitespace). Skips i18n key paths
+    ('apps.foo.bar'), CSS class names ('app-card-...'), URLs ('https://app.aichef.pro'),
+    and TS identifiers — these never contain a space.
+    """
+    string_re = re.compile(r"(?P<q>['\"`])(?P<body>(?:\\.|(?!(?P=q))[^\\])*)(?P=q)")
+    changes = [0]
+
+    def repl(m):
+        q = m.group('q')
+        body = m.group('body')
+        if ' ' not in body and '\t' not in body and '\n' not in body:
+            return m.group(0)
+        if body.startswith(('http://', 'https://', '/lovable-uploads/', '/dl/', '/app/', '/api/')):
+            return m.group(0)
+        new_body = body
+        for pattern, replacement in rules:
+            new_body = re.sub(pattern, replacement, new_body)
+        if new_body != body:
+            changes[0] += 1
+            if samples_out is not None and len(samples_out) < 8:
+                samples_out.append((body[:140], new_body[:140]))
+        return f'{q}{new_body}{q}'
+
+    new_text = string_re.sub(repl, text)
+    return new_text, changes[0]
+
+
+def process_ts_file(path: str, lang: str, apply: bool):
+    with open(path, 'r', encoding='utf-8') as f:
+        text = f.read()
+    rules = rules_for_ts(RULES[lang])
+    samples = []
+    new_text, changes = process_ts_text(text, rules, samples_out=samples)
+    print(f'\n=== {path} ({lang}) ===  changes: {changes}')
+    for old, new in samples:
+        print(f'  -  {old}')
+        print(f'  +  {new}')
+    if changes and apply:
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(new_text)
+        print(f'  ✓ wrote {path}')
+    return changes
+
+
 def main():
     apply = '--apply' in sys.argv
     only = None
+    targets = ['locales', 'ts']
     for arg in sys.argv[1:]:
         if arg.startswith('--lang='):
             only = arg.split('=', 1)[1]
+        elif arg.startswith('--only='):
+            targets = [arg.split('=', 1)[1]]
     total = 0
-    for lang in sorted(RULES.keys()):
-        if only and lang != only:
-            continue
-        total += process_locale(lang, apply)
+    if 'locales' in targets:
+        for lang in sorted(RULES.keys()):
+            if only and lang != only:
+                continue
+            total += process_locale(lang, apply)
+    if 'ts' in targets:
+        ts_files = [
+            ('src/data/use-cases-content.es.ts', 'es'),
+            ('src/data/use-cases-content.en.ts', 'en'),
+            ('src/data/testimonials-restaurante-creativo.ts', 'es'),
+        ]
+        for relpath, lang in ts_files:
+            abspath = os.path.join(ROOT, relpath)
+            if not os.path.exists(abspath):
+                continue
+            if only and lang != only:
+                continue
+            total += process_ts_file(abspath, lang, apply)
     print(f'\nTOTAL changes: {total}')
     if not apply:
         print('(dry-run; pass --apply to write)')
