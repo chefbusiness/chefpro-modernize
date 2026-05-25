@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">
-          Lo que apps de gestion cobran €40/mes, tu lo tienes por €12 — para siempre
+          Lo que el software de gestion cobra €40/mes, tu lo tienes por €12 — para siempre
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">

@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Flame,
     title: 'Protocolo Josper Profesional',
-    desc: 'Encendido, precalentamiento, zonas de calor, tipos de carbón (encina/quebracho), regulación de compuertas y mantenimiento por turno. Lo que apps premium cobran por suscripción.',
+    desc: 'Encendido, precalentamiento, zonas de calor, tipos de carbón (encina/quebracho), regulación de compuertas y mantenimiento por turno. Lo que el software premium cobra por suscripción.',
   },
   {
     icon: Thermometer,
@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran €40/mes. Esto es €14',
+    title: 'Software de Gestión Cobra €40/mes. Esto es €14',
     desc: 'Las mismas listas de tareas que usan asadores con software premium, pero en Excel por un pago único. Sin suscripción, sin tablets, ilimitado en clientes.',
   },
 ];

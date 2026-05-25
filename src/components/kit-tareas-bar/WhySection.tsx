@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Wine,
     title: 'Coctelería y Barra Completa',
-    desc: 'Spirits, batches, jarabes, cerveza de grifo, vinos por copa, café espresso. Las tareas que apps genéricas no cubren.',
+    desc: 'Spirits, batches, jarabes, cerveza de grifo, vinos por copa, café espresso. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

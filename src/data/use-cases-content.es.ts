@@ -4777,7 +4777,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Escandallar con IA en 4 Pasos',
       workflow: [
-        '1. Cocina Creativa (o el agente creativo de tu concepto: Pastelería, Heladería, Chocolatería, Cocina Italiana, Mexicana, Peruana, Japonesa) — desarrollas o cargas la receta. La agente IA entrega receta + escandallo CSV con balance técnico, mermas estimadas y storytelling.',
+        '1. Cocina Creativa (o el agente creativo de tu concepto: Pastelería, Heladería, Chocolatería, Cocina Italiana, Mexicana, Peruana, Japonesa) — desarrollas o cargas la receta. El agente IA entrega receta + escandallo CSV con balance técnico, mermas estimadas y storytelling.',
         '2. Sosa Ingredients Agent + Mermas GenCal — la IA enriquece el CSV con precios de referencia y mermas reales por proceso de tu tipo de cocina.',
         '3. Kit de Escandallos Pro (plantilla Excel descargable, €12) — cargas el CSV con tus precios reales de proveedores. El Excel calcula margen real, food cost %, precio sugerido por canal (sala, delivery, eventos) y propuesta económica.',
         '4. Calcula Pax + Conversor Ing — si necesitas escalar la receta para banquetes (50, 100, 300 pax) o convertir unidades, los agentes IA lo hacen al instante manteniendo el escandallo.',
@@ -4883,7 +4883,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Diseñar Menú Degustación en 5 Pasos',
       workflow: [
-        '1. Cocina Creativa — defines tema (estación, producto local, ocasión) y la agente IA entrega secuencia de 7-10 pases con balance técnico (textura, intensidad, temperatura).',
+        '1. Cocina Creativa — defines tema (estación, producto local, ocasión) y el agente IA entrega secuencia de 7-10 pases con balance técnico (textura, intensidad, temperatura).',
         '2. Cada pase con receta + escandallo CSV individual + storytelling para sala con técnica, producto y proveedor.',
         '3. Food Pairing AI — para cada pase valida maridaje con vino o sake con base científica. Bar & Lounge AI+ propone selección concreta de bodega.',
         '4. Kit de Escandallos Pro — cargas los CSVs individuales, el Excel calcula coste total por pax, propuesta de precio y margen validado.',
@@ -4990,7 +4990,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Crear Fichas Técnicas en 4 Pasos',
       workflow: [
-        '1. Cocina Creativa (o tu agente creativo) — desarrollas o cargas la receta. La agente IA entrega receta + ficha técnica completa con todos los campos profesionales.',
+        '1. Cocina Creativa (o tu agente creativo) — desarrollas o cargas la receta. El agente IA entrega receta + ficha técnica completa con todos los campos profesionales.',
         '2. ID Alérgenos — identifica automáticamente los alérgenos por receta y los integra a la ficha; cuando cambias un ingrediente, recalcula al instante.',
         '3. GastroIMG Gen+ — genera imagen de referencia del plato emplatado para incluir en la ficha como guía visual del cocinero.',
         '4. Food Pairing AI + storytelling para sala — la ficha incluye maridaje recomendado y descripción profesional para briefing del equipo.',
@@ -5202,7 +5202,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Reducir Mermas en 4 Pasos',
       workflow: [
-        '1. Mermas GenCal — la agente IA entrega datos reales por proceso por tipo de cocina (despiece carne, formado pasta, horneado pan, vitrina helado, delivery pizza). Cargas el dato real de tu operación.',
+        '1. Mermas GenCal — el agente IA entrega datos reales por proceso por tipo de cocina (despiece carne, formado pasta, horneado pan, vitrina helado, delivery pizza). Cargas el dato real de tu operación.',
         '2. Cocina Creativa + Fermentus Con AI+ — desarrollas técnicas de repurposo: trimming a caldos, peelings a vinagres, restos a deshidratados, sobrantes a fermentos.',
         '3. Kit de Escandallos Pro — el escandallo refleja la merma real, no estimada. El coste por plato sube ligeramente pero refleja el coste verdadero, evitando sorpresas en margen.',
         '4. Calcula Pax + Gastro Calendar — compras ajustadas al volumen real del servicio o evento para reducir sobrantes desde origen, no solo procesar mermas posteriormente.',
@@ -5414,7 +5414,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Diseñar Carta Estacional en 5 Pasos',
       workflow: [
-        '1. Gastro Calendar — defines hemisferio, región y temporada (ej. otoño Hemisferio Norte, Madrid). La agente IA entrega producto local en temporada y festividades clave (Día de la Madre, Navidad, San Valentín).',
+        '1. Gastro Calendar — defines hemisferio, región y temporada (ej. otoño Hemisferio Norte, Madrid). El agente IA entrega producto local en temporada y festividades clave (Día de la Madre, Navidad, San Valentín).',
         '2. Cocina Creativa — desarrollas platos signature con producto local. Cada receta entrega receta + escandallo CSV + storytelling del productor.',
         '3. Kit de Escandallos Pro — cargas los CSVs con tus precios reales de proveedores locales, validas margen y food cost % por plato y carta total.',
         '4. Bar & Lounge AI+ + Food Pairing AI — actualizas vinos de temporada y maridajes ajustados al producto estacional.',
@@ -5521,7 +5521,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
       ],
       workflowTitle: 'Cómo Hacer Fotografía Gastronómica en 4 Pasos',
       workflow: [
-        '1. Cocina Creativa — desarrollas el plato. La agente IA entrega receta + escandallo + instrucciones de plating profesional (composición, paleta, vajilla, vista).',
+        '1. Cocina Creativa — desarrollas el plato. El agente IA entrega receta + escandallo + instrucciones de plating profesional (composición, paleta, vajilla, vista).',
         '2. GastroIMG Gen+ — generas imagen de referencia profesional con prompt optimizado: paleta cálida, vajilla rústica, vista cenital, microgreens. Iteras hasta tener la imagen objetivo clara.',
         '3. Cocinas el plato real con la imagen de referencia delante: mismo plating, paleta, garnish. La foto definitiva del escandallo y carta la haces tú con tu plato emplatado real.',
         '4. InstaFlow AI Pro + MenuDish + Pinterest Pins Gen — adaptas la imagen final a cada canal (Instagram, Glovo, web, carta) con criterio profesional.',

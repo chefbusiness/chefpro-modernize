@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: FlaskConical,
     title: 'I+D + Servicio Cubiertos',
-    desc: 'Desarrollo de nuevos platos, fichas tecnicas, pruebas de concepto, mise en place de degustacion, timing de pases y servicio de sala. Las tareas que apps genericas no cubren.',
+    desc: 'Desarrollo de nuevos platos, fichas tecnicas, pruebas de concepto, mise en place de degustacion, timing de pases y servicio de sala. Las tareas que los sistemas genericos no cubren.',
   },
   {
     icon: Users,
@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran €40/mes. Esto es €12',
+    title: 'Software de Gestión Cobra €40/mes. Esto es €12',
     desc: 'Las mismas listas de tareas que usan restaurantes con estrella con SaaS premium, pero en Excel por un pago unico. Sin suscripcion.',
   },
 ];

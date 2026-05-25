@@ -16,7 +16,7 @@ const faqs = [
     a: 'Sí. Las plantillas son escalables. Un hotel de 3* puede usar desayuno + room service. Un 5* o resort puede usar todas las plantillas con show cooking, sommelier y protocolo premium.',
   },
   {
-    q: '¿En qué se diferencia de Trail u otras apps?',
+    q: '¿En qué se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da 46 checklists para todo el hotel en Excel por €18,50, pago único. Sin suscripción, sin internet, ilimitado en outlets.',
   },
   {

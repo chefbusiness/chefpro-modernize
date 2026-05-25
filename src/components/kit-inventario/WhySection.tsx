@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran 60 EUR/mes. Esto es 14 EUR',
+    title: 'Software de Gestión Cobra 60 EUR/mes. Esto es 14 EUR',
     desc: 'Las mismas funciones que los SaaS de gestion de inventario, pero en Excel por un pago unico. Sin suscripcion, sin limite de productos.',
   },
 ];

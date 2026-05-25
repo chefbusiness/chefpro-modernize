@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran €40/mes. Esto es €18',
+    title: 'Software de Gestión Cobra €40/mes. Esto es €18',
     desc: 'Las mismas listas de tareas que usan chefs privados con software premium, pero en Excel por un pago único. Sin suscripción.',
   },
 ];

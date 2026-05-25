@@ -16,7 +16,7 @@ const faqs = [
     a: 'Sí. Incluye checklists genéricos (producción, transporte, montaje) que sirven para cualquier evento, más checklists específicos por tipo: bodas, corporativos, cocktail/standing y eventos outdoor.',
   },
   {
-    q: '¿En qué se diferencia de Trail u otras apps?',
+    q: '¿En qué se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en eventos.',
   },
   {

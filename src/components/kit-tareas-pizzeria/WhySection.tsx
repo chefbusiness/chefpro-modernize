@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Flame,
     title: 'Control de Horno y Masa',
-    desc: 'Encendido, temperatura 400-450 °C, limpieza de solera, fermentación lenta de masa, estirado a mano, cocción 60-90s. Las tareas que apps genéricas no cubren.',
+    desc: 'Encendido, temperatura 400-450 °C, limpieza de solera, fermentación lenta de masa, estirado a mano, cocción 60-90s. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

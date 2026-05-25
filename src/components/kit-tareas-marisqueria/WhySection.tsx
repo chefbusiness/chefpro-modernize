@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Droplets,
     title: 'Protocolo Vivero Profesional',
-    desc: 'Temperatura del agua, oxígeno disuelto, salinidad, pH, densidad de carga, limpieza de filtros y control de mortalidad. Lo que apps premium cobran por suscripción.',
+    desc: 'Temperatura del agua, oxígeno disuelto, salinidad, pH, densidad de carga, limpieza de filtros y control de mortalidad. Lo que el software premium cobra por suscripción.',
   },
   {
     icon: ShieldCheck,
@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran €40/mes. Esto es €14',
+    title: 'Software de Gestión Cobra €40/mes. Esto es €14',
     desc: 'Las mismas listas de tareas que usan marisquerías con software premium, pero en Excel por un pago único. Sin suscripción, sin tablets, ilimitado en clientes.',
   },
 ];

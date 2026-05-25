@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: CakeSlice,
     title: 'Producción + Servicio Cubiertos',
-    desc: 'Obrador, templado, moldeado, bombones, tabletas, vitrina, mostrador y gestión. Las tareas que apps genéricas no cubren para chocolatería artesanal.',
+    desc: 'Obrador, templado, moldeado, bombones, tabletas, vitrina, mostrador y gestión. Las tareas que los sistemas genéricos no cubren para chocolatería artesanal.',
   },
   {
     icon: Users,
@@ -19,7 +19,7 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran €40/mes. Esto es €12',
+    title: 'Software de Gestión Cobra €40/mes. Esto es €12',
     desc: 'Las mismas listas de tareas que usan chocolaterías con SaaS premium, pero en Excel por un pago único. Sin suscripción.',
   },
 ];

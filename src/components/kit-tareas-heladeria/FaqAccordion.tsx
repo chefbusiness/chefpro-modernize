@@ -16,8 +16,8 @@ const faqs = [
     a: 'Sí. Las plantillas son escalables. Una heladería pequeña puede usar producción + vitrina + cierre. Una cadena puede usar todos los perfiles, zonas y el calendario completo. Adapta lo que necesites.',
   },
   {
-    q: '¿En qué se diferencia de apps de gestión?',
-    a: 'Las apps de gestión cobran €40/mes por local y requieren tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en locales.',
+    q: '¿En qué se diferencia del software de gestión?',
+    a: 'El software de gestión cobra €40/mes por local y requieren tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en locales.',
   },
   {
     q: '¿Puedo usarlo en varias heladerías?',

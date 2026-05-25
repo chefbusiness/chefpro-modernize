@@ -16,7 +16,7 @@ const faqs = [
     a: 'Sí. Las plantillas son escalables. Un bar pequeño puede usar barra + terraza. Un cocktail bar premium puede usar coctelería + bodega + eventos. Un hotel puede usar todas las zonas.',
   },
   {
-    q: '¿En qué se diferencia de Trail u otras apps?',
+    q: '¿En qué se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en locales.',
   },
   {

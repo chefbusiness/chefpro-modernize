@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Truck,
     title: 'Del Obrador al Venue',
-    desc: 'Cubre toda la cadena: producción, transporte, montaje, servicio y desmontaje. Las tareas que apps genéricas no cubren.',
+    desc: 'Cubre toda la cadena: producción, transporte, montaje, servicio y desmontaje. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

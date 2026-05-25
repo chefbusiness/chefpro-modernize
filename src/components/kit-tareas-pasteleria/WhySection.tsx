@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Croissant,
     title: 'Producción Artesanal Completa',
-    desc: 'Masas, fermentación, laminado, cremas, mousses, decoración, montaje de vitrina. Las tareas que apps genéricas no cubren.',
+    desc: 'Masas, fermentación, laminado, cremas, mousses, decoración, montaje de vitrina. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

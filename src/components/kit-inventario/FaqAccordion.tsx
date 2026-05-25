@@ -16,8 +16,8 @@ const faqs = [
     a: 'Si. La plantilla de recepcion incluye control de temperaturas y la de FIFO gestiona caducidades con alertas por colores. Ambas son trazables y auditables para inspecciones.',
   },
   {
-    q: '¿En que se diferencia de apps de inventario?',
-    a: 'Las apps de inventario cobran entre 50 y 100 EUR/mes por restaurante. Este kit cuesta 14 EUR, pago unico, sin suscripcion ni limite de productos. Y puedes personalizar todo al 100%.',
+    q: '¿En que se diferencia del software de inventario?',
+    a: 'El software de inventario cobra entre 50 y 100 EUR/mes por restaurante. Este kit cuesta 14 EUR, pago unico, sin suscripcion ni limite de productos. Y puedes personalizar todo al 100%.',
   },
   {
     q: '¿Puedo usarlo en varios restaurantes?',

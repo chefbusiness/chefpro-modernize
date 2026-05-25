@@ -102,7 +102,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryCtaTitle: 'Ahorra 6 Meses de Planificación con la Guía Profesional',
     primaryCtaBody: 'La guía completa Cómo Montar un Restaurante incluye 20+ entregables: plan de negocio editable, escandallos por categoría, plan de inversión CAPEX, P&L mensual, plantillas APPCC, marco regulatorio España + LATAM. Todo lo que necesitas para abrir tu restaurante en {city} con cifras reales y procesos validados por consultores con 15+ años de experiencia.',
     saasCtaTitle: 'O Empieza Gratis con AI Chef Pro',
-    saasCtaBody: 'Suscripción mensual con todas las herramientas IA para escandallar, generar cartas, controlar APPCC, calcular brigadas y +30 apps específicas para restauración. Prueba gratis sin tarjeta.',
+    saasCtaBody: 'Suscripción mensual con todas las herramientas IA para escandallar, generar cartas, controlar APPCC, calcular brigadas y +30 agentes IA específicos para restauración. Prueba gratis sin tarjeta.',
     faqs: [
       {
         q: '¿Cuánto cuesta realmente abrir un restaurante en {city}?',
@@ -190,7 +190,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     modifier: 'software-gestion-restaurante',
     metaTitle: 'Software de Gestión para Restaurantes en {city}: Comparativa, Precio y Mejor Opción 2026',
     metaDescription: 'Análisis del mejor software de gestión de restaurantes para {city}: TPV, escandallos, APPCC, inventario, IA. Precios, integraciones y por qué AI Chef Pro lidera en {country}.',
-    keywords: 'software restaurante {city}, software gestión restaurante {city}, programa restaurante {city}, software TPV {city}, app gestión restaurante {city}',
+    keywords: 'software restaurante {city}, software gestión restaurante {city}, programa restaurante {city}, software TPV {city}, agente IA gestión restaurante {city}',
     h1Template: 'Software de Gestión para Restaurantes en {city}: Mejor Opción 2026',
     heroSubtitle: 'Comparativa real de plataformas adaptadas a la regulación de {country}: APPCC digital, escandallos, IA generativa para cartas, control de inventario y gestión de personal. Prueba gratis sin tarjeta.',
     heroBadge: 'Comparativa Verificada 2026',
@@ -218,7 +218,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryProductSlug: 'saas-trial',
     primaryProductLabel: 'Prueba Gratis AI Chef Pro',
     primaryCtaTitle: 'Empieza Gratis con AI Chef Pro Hoy',
-    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma escandallos automáticos, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y +25 apps específicas para restauración. Sin tarjeta de crédito. Sin permanencia. Adaptado a la regulación de {country}.',
+    primaryCtaBody: 'AI Chef Pro es el SaaS que reúne en una sola plataforma escandallos automáticos, APPCC digital, generación de cartas con IA, control de inventario, gestión de personal, calendario de contenidos y +25 agentes IA específicos para restauración. Sin tarjeta de crédito. Sin permanencia. Adaptado a la regulación de {country}.',
     saasCtaTitle: 'Suscripción Profesional AI Chef Pro',
     saasCtaBody: 'Suscripción mensual con acceso ilimitado a todas las herramientas IA, generación de cartas, escandallos masivos, APPCC digital, integración con tu TPV. Soporte en español + atención WhatsApp.',
     faqs: [
@@ -268,7 +268,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryCtaTitle: 'Escandalla Profesionalmente con el Kit Pro',
     primaryCtaBody: 'El Kit de Escandallos Pro contiene: plantilla Excel maestra con fórmulas profesionales, calculadora de food cost por plato, base de datos editable de ingredientes con conversiones, plantilla de menú engineering (estrellas/perros/caballos/plows) y vídeo-tutorial de uso. Aumenta el margen de tu restaurante en {city} sin subir un céntimo en carta.',
     saasCtaTitle: 'O Escandalla con IA en AI Chef Pro',
-    saasCtaBody: 'La app Escandallos IA de AI Chef Pro escandalla cualquier plato a partir del nombre y los ingredientes. Genera CSV importable a tu Kit de Escandallos. Suscripción mensual con uso ilimitado.',
+    saasCtaBody: 'El agente IA Escandallos IA de AI Chef Pro escandalla cualquier plato a partir del nombre y los ingredientes. Genera CSV importable a tu Kit de Escandallos. Suscripción mensual con uso ilimitado.',
     faqs: [
       {
         q: '¿Con qué frecuencia debo escandallar en {city}?',
@@ -324,7 +324,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryCtaTitle: 'Plan de Negocio Listo en 4 Horas con el Kit Profesional',
     primaryCtaBody: 'El Kit Plan Financiero contiene: plan financiero previsional 5 años, calculadora punto equilibrio, cash flow forecast, presupuesto inversión CAPEX, P&L mensual real vs presupuesto, dashboard ratios financieros, informe viabilidad bancos, simulador escenarios y checklist pre-apertura. Las plantillas profesionales para tu restaurante en {city} listas para personalizar.',
     saasCtaTitle: 'O Apóyate en AI Chef Pro para Cifras de Mercado',
-    saasCtaBody: 'Con la suscripción AI Chef Pro accedes a apps que generan automáticamente referencias de costes, ratios sectoriales y proyecciones para tu plan de negocio. Útil tanto para arrancar como para revisión anual de viabilidad.',
+    saasCtaBody: 'Con la suscripción AI Chef Pro accedes a agentes IA que generan automáticamente referencias de costes, ratios sectoriales y proyecciones para tu plan de negocio. Útil tanto para arrancar como para revisión anual de viabilidad.',
     faqs: [
       {
         q: '¿Qué cifras incluye un plan de negocio bancable para restaurante en {city}?',

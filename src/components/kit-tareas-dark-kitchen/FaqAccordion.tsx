@@ -16,7 +16,7 @@ const faqs = [
     a: 'Si. Hay tareas especificas para packaging diferenciado por marca virtual, precintos de seguridad, etiquetado correcto, control de temperatura del packaging, y verificacion de pedido completo antes de expedicion.',
   },
   {
-    q: '¿En que se diferencia de Trail u otras apps?',
+    q: '¿En que se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/moviles. Este kit te da las mismas listas de tareas en Excel por €12, pago unico. Sin suscripcion, sin internet, ilimitado en locales.',
   },
   {

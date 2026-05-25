@@ -16,8 +16,8 @@ const faqs = [
     a: 'Sí, es una de las partes más críticas. La ficha de cliente incluye registro completo de los 14 alérgenos UE, intolerancias, dietas especiales y restricciones. El APPCC móvil tiene checklist de verificación de alérgenos antes de cada servicio.',
   },
   {
-    q: '¿En qué se diferencia de apps de gestión?',
-    a: 'Las apps de gestión cobran €40/mes y requieren tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €18, pago único. Sin suscripción, sin internet, ilimitado en clientes.',
+    q: '¿En qué se diferencia del software de gestión?',
+    a: 'El software de gestión cobra €40/mes y requieren tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €18, pago único. Sin suscripción, sin internet, ilimitado en clientes.',
   },
   {
     q: '¿Puedo usarlo si trabajo con ayudante?',

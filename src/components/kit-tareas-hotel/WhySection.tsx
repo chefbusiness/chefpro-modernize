@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Building,
     title: '11 Departamentos Cubiertos',
-    desc: 'F&B, recepción, housekeeping, piscina, terraza, mantenimiento, administración, spa. La operativa completa que apps genéricas no cubren.',
+    desc: 'F&B, recepción, housekeeping, piscina, terraza, mantenimiento, administración, spa. La operativa completa que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

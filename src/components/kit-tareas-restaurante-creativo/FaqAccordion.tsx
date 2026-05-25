@@ -20,8 +20,8 @@ const faqs = [
     a: 'Sirve para ambos. Las plantillas son escalables: un restaurante con menu degustacion de 12 pases puede usar todas. Un bistro creativo con carta corta puede simplificar y quedarse con apertura/cierre, brigada y periodicas. Adapta lo que necesites.',
   },
   {
-    q: '¿En que se diferencia de apps de gestion?',
-    a: 'Las apps de gestion cobran €40/mes por local y requieren tablets/moviles. Este kit te da las mismas listas de tareas en Excel por €12, pago unico. Sin suscripcion, sin internet, ilimitado en locales.',
+    q: '¿En que se diferencia del software de gestion?',
+    a: 'El software de gestion cobra €40/mes por local y requieren tablets/moviles. Este kit te da las mismas listas de tareas en Excel por €12, pago unico. Sin suscripcion, sin internet, ilimitado en locales.',
   },
   {
     q: '¿Hay garantia de devolucion?',

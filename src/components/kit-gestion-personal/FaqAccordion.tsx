@@ -5,7 +5,7 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Incluye registro horario digital?',
-    a: 'No. El registro/fichaje horario digital requiere una app homologada (obligatoria en Espana desde 2026). Este kit es para PLANIFICACION de turnos, control de costes laborales, onboarding y gestion de equipo. Es el complemento perfecto a cualquier app de fichaje.',
+    a: 'No. El registro/fichaje horario digital requiere un software homologado (obligatoria en Espana desde 2026). Este kit es para PLANIFICACION de turnos, control de costes laborales, onboarding y gestion de equipo. Es el complemento perfecto a cualquier software de fichaje.',
   },
   {
     q: '¿Las formulas calculan horas extra automaticamente?',
@@ -16,8 +16,8 @@ const faqs = [
     a: 'Si. Las plantillas estan disenadas para hosteleria en general: restaurante casual, fine dining, fast casual, hotel, catering, cadenas. Los ratios y formulas se adaptan a cualquier formato.',
   },
   {
-    q: '¿En que se diferencia de apps de RRHH?',
-    a: 'Las apps de gestion de personal cobran entre 30 y 60 EUR/mes por establecimiento. Este kit cuesta 14 EUR, pago unico, sin suscripcion. Tienes las mismas herramientas de planificacion en Excel, que puedes personalizar al 100%.',
+    q: '¿En que se diferencia del software de RRHH?',
+    a: 'El software de gestion de personal cobra entre 30 y 60 EUR/mes por establecimiento. Este kit cuesta 14 EUR, pago unico, sin suscripcion. Tienes las mismas herramientas de planificacion en Excel, que puedes personalizar al 100%.',
   },
   {
     q: '¿Puedo usarlo en varios restaurantes?',

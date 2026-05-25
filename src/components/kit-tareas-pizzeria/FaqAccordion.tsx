@@ -16,7 +16,7 @@ const faqs = [
     a: 'Sí. Hay tareas específicas para gestión de riders, control de tiempos de entrega, packaging correcto, etiquetado, preparación de pedidos y cierre de plataformas de delivery.',
   },
   {
-    q: '¿En qué se diferencia de Trail u otras apps?',
+    q: '¿En qué se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en locales.',
   },
   {

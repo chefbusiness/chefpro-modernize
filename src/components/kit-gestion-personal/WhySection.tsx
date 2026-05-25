@@ -19,8 +19,8 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Apps Cobran 40 EUR/mes. Esto es 14 EUR',
-    desc: 'Las mismas herramientas de planificacion que usan las apps de RRHH premium, pero en Excel por un pago unico. Sin suscripcion.',
+    title: 'Software de Gestión Cobra 40 EUR/mes. Esto es 14 EUR',
+    desc: 'Las mismas herramientas de planificacion que usan el software de RRHH premium, pero en Excel por un pago unico. Sin suscripcion.',
   },
 ];
 

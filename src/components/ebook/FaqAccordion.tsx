@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿Recibiré actualizaciones?',
-    a: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevas apps, el eBook se actualiza y tú las recibes automáticamente.',
+    a: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevos agentes IA, el eBook se actualiza y tú las recibes automáticamente.',
   },
   {
     q: '¿Cómo funciona la garantía?',

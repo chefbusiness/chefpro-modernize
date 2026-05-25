@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Flame,
     title: 'Control de Plancha y Punto de Carne',
-    desc: 'Encendido de plancha, temperatura óptima, técnica smash burger, punto de carne (rare a well done), test polares de aceite de freidora. Las tareas que apps genéricas no cubren.',
+    desc: 'Encendido de plancha, temperatura óptima, técnica smash burger, punto de carne (rare a well done), test polares de aceite de freidora. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,

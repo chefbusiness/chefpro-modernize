@@ -16,7 +16,7 @@ const faqs = [
     a: 'Sí. Puedes importar los archivos .xlsx directamente a Google Sheets. Pero la idea es imprimirlos en A4 — son checklists operativos diseñados para tener en la cocina, no en una pantalla.',
   },
   {
-    q: '¿En qué se diferencia de Trail u otras apps?',
+    q: '¿En qué se diferencia de Trail u otros sistemas?',
     a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €14, pago único. Sin suscripción, sin internet, ilimitado en locales.',
   },
   {

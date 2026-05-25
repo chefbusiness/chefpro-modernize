@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: Coffee,
     title: 'Tareas Específicas de Barista',
-    desc: 'Calibración de molinillo, purga de grupo, control de vitrina, stock de leches vegetales. Las tareas que apps genéricas no cubren.',
+    desc: 'Calibración de molinillo, purga de grupo, control de vitrina, stock de leches vegetales. Las tareas que los sistemas genéricos no cubren.',
   },
   {
     icon: Users,
