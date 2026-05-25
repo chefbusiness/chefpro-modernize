@@ -11,7 +11,7 @@
     "servicios": "Servicios",
     "mentoria_online": "Mentoría Online",
     "formacion_presencial": "Formación Presencial",
-    "aplicaciones": "Aplicaciones",
+    "aplicaciones": "Agentes IA",
     "creatividad": "Creatividad Culinaria",
     "recetarios": "Recetarios Mundiales",
     "herramientas": "Herramientas Business",
@@ -33,7 +33,7 @@
     "primary": "PROBAR GRATIS AHORA",
     "secondary": "Prueba AI Chef Pro",
     "started": "Comenzar Ahora",
-    "explore": "Explorar App",
+    "explore": "Explorar Agente",
     "use_tool": "Usar Herramienta",
     "learn_more": "Saber Más"
   },
@@ -43,7 +43,7 @@
     "title_suffix": "con",
     "title_brand": "AI Chef Pro",
     "subtitle": "55+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.",
-    "description": "Suite de Herramientas y Aplicaciones de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
+    "description": "Suite de Herramientas y Agentes de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
     "rating": "Calificación: 5 estrellas",
     "business_types": [
       "Gestión",
@@ -69,7 +69,7 @@
   },
   "stats": {
     "apps": "55+",
-    "apps_label": "Apps Especializadas",
+    "apps_label": "Agentes IA Especializados",
     "cookbooks": "25+",
     "cookbooks_label": "Recetarios Regionales",
     "tools": "10+",
@@ -77,42 +77,42 @@
     "categories": "6",
     "categories_label": "Categorías Profesionales",
     "new_app": "1",
-    "new_app_label": "Nueva App Cada Semana",
+    "new_app_label": "Nuevo Agente IA Cada Semana",
     "chefs": "764+",
     "chefs_label": "Chefs y Profesionales de Hostelería confían en nosotros"
   },
   "categories": {
-    "title": "Explora Nuestras 6 Categorías de Apps",
+    "title": "Explora Nuestras 6 Categorías de Agentes IA",
     "description": "Cada categoría está diseñada para potenciar aspectos específicos de tu negocio gastronómico",
     "creativity": {
       "title": "Creatividad Culinaria",
       "description": "Innova sin límites con IA",
-      "count": "8 apps"
+      "count": "8 agentes IA"
     },
     "cookbooks": {
       "title": "Recetarios Mundiales",
       "description": "Domina la cocina global",
-      "count": "21 apps"
+      "count": "21 agentes IA"
     },
     "knowledge": {
       "title": "Gastro Conocimiento",
       "description": "Accede al saber culinario",
-      "count": "1 app"
+      "count": "1 agente IA"
     },
     "tools": {
       "title": "Herramientas & Utilities",
       "description": "Optimiza tu operación diaria",
-      "count": "6 apps"
+      "count": "6 agentes IA"
     },
     "business": {
       "title": "Conceptos de Negocio",
       "description": "Especialízate en tu nicho",
-      "count": "5 apps"
+      "count": "5 agentes IA"
     },
     "marketing": {
       "title": "Marketing & Contenido",
       "description": "Potencia tu presencia digital",
-      "count": "4 apps"
+      "count": "4 agentes IA"
     },
     "world_cookbooks": {
       "europa": {
@@ -131,7 +131,7 @@
   },
   "finder": {
     "title_prefix": "Encuentra tu",
-    "title_highlight": "App Perfecta",
+    "title_highlight": "Agente IA Perfecto",
     "description": "Selecciona tu perfil y descubre las herramientas que mejor se adaptan a tus necesidades",
     "preview_label": "Preview",
     "personas": {
@@ -174,13 +174,13 @@
     }
   },
   "gallery": {
-    "badge": "55+ Apps Especializadas en Acción",
+    "badge": "55+ Agentes IA Especializados en Acción",
     "title": "Descubre el Poder de AI Chef Pro",
-    "description": "Explora capturas reales de nuestras aplicaciones especializadas para profesionales gastronómicos",
+    "description": "Explora capturas reales de nuestras agentes IA especializados para profesionales gastronómicos",
     "previous": "Anterior",
     "next": "Siguiente",
-    "counter": "{{current}} de {{total}} aplicaciones mostradas",
-    "explore_all": "Explorar Todas las Apps"
+    "counter": "{{current}} de {{total}} agentes IA mostradas",
+    "explore_all": "Explorar Todos los Agentes IA"
   },
   "screenshots": {
     "cocina_creativa": {
@@ -235,13 +235,13 @@
   "showcase": {
     "creativity_title": "Creatividad Culinaria",
     "creativity_subtitle": "Showcase",
-    "creativity_description": "8 aplicaciones especializadas para llevarte más allá de lo convencional",
+    "creativity_description": "8 agentes IA especializados para llevarte más allá de lo convencional",
     "world_title": "Recetarios Mundiales",
     "world_description": "25 cocinas del mundo con recetas auténticas y técnicas tradicionales",
     "business_title": "Herramientas Business",
-    "business_description": "6 aplicaciones esenciales para optimizar tu operación diaria",
+    "business_description": "6 agentes IA esenciales para optimizar tu operación diaria",
     "preview_label": "Preview",
-    "explore_app": "Explorar App",
+    "explore_app": "Explorar Agente",
     "use_case_label": "Caso de uso",
     "use_tool": "Usar Herramienta"
   },
@@ -417,9 +417,9 @@
     }
   },
   "featured": {
-    "title_main": "Apps Destacadas",
+    "title_main": "Agentes IA Destacadas",
     "title_sub": "de la Semana",
-    "description": "Descubre las aplicaciones que están revolucionando la industria gastronómica",
+    "description": "Descubre las agentes IA que están revolucionando la industria gastronómica",
     "badge": "Destacada",
     "apps": {
       "sosa_ingredients": {
@@ -589,7 +589,7 @@
   },
   "features": {
     "title": "Características Principales",
-    "description": "Suite completa de herramientas y aplicaciones de IA para chefs y cocineros que desean acelerar y optimizar su trabajo diario en cocinas profesionales y liberar su creatividad.",
+    "description": "Suite completa de herramientas y agentes IA para chefs y cocineros que desean acelerar y optimizar su trabajo diario en cocinas profesionales y liberar su creatividad.",
     "ai_assistant": "Modelo de Asistente Culinario IA",
     "ai_assistant_desc": "Recomendaciones personalizadas de recetas y técnicas adaptadas a tus preferencias culinarias. Más de 20 recetarios.",
     "food_pairing": "Food Pairing y Sustituciones de Ingredientes",
@@ -608,7 +608,7 @@
     "ai_powered": "Inteligencia Artificial Avanzada",
     "ai_powered_desc": "Modelos GPT especializados en gastronomía",
     "specialized": "Herramientas Especializadas",
-    "specialized_desc": "55+ aplicaciones para cada necesidad gastronómica",
+    "specialized_desc": "55+ agentes IA para cada necesidad gastronómica",
     "global": "Cocina Global",
     "global_desc": "21 recetarios de cocinas del mundo",
     "business_tools": "Gestión de Negocio",
@@ -618,7 +618,7 @@
     "title": "Preguntas Frecuentes",
     "description": "Encuentra respuestas a las preguntas más comunes sobre AI Chef Pro",
     "q1": "¿Qué incluye AI Chef Pro?",
-    "a1": "AI Chef Pro incluye 55+ aplicaciones especializadas en gastronomía, desde creatividad culinaria hasta herramientas de negocio. Tendrás acceso a recetarios de 25 cocinas del mundo, generadores de recetas con IA, food pairing científico, herramientas de gestión y mucho más.",
+    "a1": "AI Chef Pro incluye 55+ agentes IA especializados en gastronomía, desde creatividad culinaria hasta herramientas de negocio. Tendrás acceso a recetarios de 25 cocinas del mundo, generadores de recetas con IA, food pairing científico, herramientas de gestión y mucho más.",
     "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
     "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
     "q3": "¿Cómo funciona el plan gratuito?",
@@ -633,7 +633,7 @@
   "footer": {
     "description": "Suite de herramientas de IA para profesionales gastronómicos",
     "brand_desc": "<strong>Inteligencia Artificial para el Chef de Hoy.</strong> Desarrolla tu potencial profesional con el uso y apoyo de la inteligencia artificial en tu día a día.",
-    "suite_desc": "Suite de Herramientas y Aplicaciones de IA modeladas para Chefs, Cocineros y profesionales de la hostelería.",
+    "suite_desc": "Suite de Herramientas y Agentes IA modeladas para Chefs, Cocineros y profesionales de la hostelería.",
     "newsletter_title": "Suscríbete a Nuestro Newsletter",
     "newsletter_placeholder": "Ingresa tu email",
     "newsletter_button": "Suscribirse",
@@ -672,7 +672,7 @@
     "glosario_ia": "Glosario IA",
     "glosario_culinario": "Glosario Científico Culinario",
     "roadmap": "Roadmap AI Chef Pro",
-    "app_tools": "55+ Herramientas en App",
+    "app_tools": "55+ Herramientas en Agente IA",
     "app_login": "Iniciar Sesión",
     "free_tools_hub": "Herramientas Gratuitas",
     "mentoria_online": "Mentoría Online",
@@ -694,7 +694,7 @@
     "seo": {
       "title": "Mentoría Online AI Chef Pro | Consultoría Personalizada",
       "description": "Sesiones estratégicas 1:1 con expertos en gastronomía e IA. Acelera resultados en tu negocio gastronómico con asesoría especializada.",
-      "keywords": "herramientas ia restaurante, inteligencia artificial hostelería, software gestión restaurante, ia para dueños de restaurante, herramientas ia chef, gestión costes restaurante, ia para bares y cafeterías, aplicaciones ia gastronomía, menú con inteligencia artificial, chef ia profesional, recetas con ia, marketing gastronómico ia"
+      "keywords": "herramientas ia restaurante, inteligencia artificial hostelería, software gestión restaurante, ia para dueños de restaurante, herramientas ia chef, gestión costes restaurante, ia para bares y cafeterías, agentes IA ia gastronomía, menú con inteligencia artificial, chef ia profesional, recetas con ia, marketing gastronómico ia"
     },
     "hero": {
       "title": "Mentoría Online Personalizada AI Chef Pro",
@@ -994,7 +994,7 @@
   "seo": {
     "title": "AI Chef Pro: 55+ Herramientas de IA para Chefs y Restaurantes",
     "description": "Suite de inteligencia artificial para chefs y restaurantes. 55+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Prueba gratis.",
-    "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, software restaurante ia, ia cocina profesional, aplicaciones ia gastronomia, chef pro, aichef",
+    "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, software restaurante ia, ia cocina profesional, agentes IA ia gastronomia, chef pro, aichef",
     "og_image_alt": "AI Chef Pro - Suite de 55+ Herramientas de IA para Chefs Profesionales"
   },
   "pages": {
@@ -1015,7 +1015,7 @@
       "heading": "Aviso Legal",
       "content_paragraphs": [
         "<h2>1. Información General</h2><p><strong>Titular del Sitio Web:</strong> John Guerrero</p><p><strong>Denominación Comercial:</strong> AI Chef Pro</p><p><strong>Email de Contacto:</strong> info@aichef.pro</p><p><strong>Teléfono:</strong> +34 744 717 942</p>",
-        "<h2>2. Objeto y Actividad</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece herramientas y aplicaciones para profesionales de la cocina. Nuestros servicios incluyen más de 55 aplicaciones especializadas que cubren desde creatividad culinaria hasta gestión empresarial gastronómica.</p>",
+        "<h2>2. Objeto y Actividad</h2><p>AI Chef Pro es una plataforma de inteligencia artificial especializada en gastronomía que ofrece herramientas y agentes IA para profesionales de la cocina. Nuestros servicios incluyen más de 55 agentes IA especializados que cubren desde creatividad culinaria hasta gestión empresarial gastronómica.</p>",
         "<h2>3. Propiedad Intelectual</h2><p>Todos los contenidos, marcas, logos, diseños, códigos fuente, bases de datos y cualquier otro elemento que forme parte de AI Chef Pro están protegidos por las leyes de propiedad intelectual e industrial. Queda prohibida la reproducción, distribución o comunicación pública sin autorización expresa.</p>",
         "<h2>4. Responsabilidad de Contenidos</h2><p>AI Chef Pro se reserva el derecho de modificar, actualizar o eliminar los contenidos sin previo aviso. No garantizamos la disponibilidad, continuidad o infalibilidad del servicio, aunque ponemos todos los medios técnicos a nuestro alcance para evitar interrupciones.</p>",
         "<h2>5. Enlaces Externos</h2><p>Nuestro sitio web puede contener enlaces a sitios web de terceros. AI Chef Pro no se hace responsable del contenido, políticas de privacidad o prácticas de estos sitios externos.</p>",
@@ -1029,12 +1029,12 @@
       "seo_keywords": "política privacidad, protección datos, rgpd ai chef pro",
       "heading": "Política de Privacidad",
       "content_paragraphs": [
-        "<h2>1. Información que Recopilamos</h2><p>En AI Chef Pro, recopilamos información cuando interactúas con nuestros servicios de inteligencia artificial culinaria. Esto incluye datos de registro, preferencias gastronómicas, y información técnica de uso de nuestras aplicaciones.</p>",
+        "<h2>1. Información que Recopilamos</h2><p>En AI Chef Pro, recopilamos información cuando interactúas con nuestros servicios de inteligencia artificial culinaria. Esto incluye datos de registro, preferencias gastronómicas, y información técnica de uso de nuestros agentes IA.</p>",
         "<h2>2. Uso de la Información</h2><p>Utilizamos tu información para personalizar tu experiencia culinaria, mejorar nuestras herramientas de IA, proporcionar soporte técnico y desarrollar nuevas funcionalidades gastronómicas que se adapten a tus necesidades profesionales.</p>",
         "<h2>3. Protección de Datos</h2><p>Implementamos medidas de seguridad técnicas y organizativas para proteger tu información personal contra accesos no autorizados, alteración, divulgación o destrucción. Tus datos están cifrados y almacenados de forma segura.</p>",
         "<h2>4. Compartir Información</h2><p>No vendemos, comercializamos ni transferimos tu información personal a terceros, excepto cuando sea necesario para proporcionar nuestros servicios o cuando la ley lo requiera.</p>",
         "<h2>5. Tus Derechos</h2><p>Tienes derecho a acceder, rectificar, suprimir y portar tus datos personales. También puedes oponerte al tratamiento y solicitar la limitación del mismo contactando con nosotros.</p>",
-        "<h2>6. Cookies</h2><p>Utilizamos cookies para mejorar la funcionalidad de nuestras aplicaciones de IA culinaria y personalizar tu experiencia. Puedes gestionar tus preferencias de cookies en cualquier momento.</p>",
+        "<h2>6. Cookies</h2><p>Utilizamos cookies para mejorar la funcionalidad de nuestras agentes IA culinaria y personalizar tu experiencia. Puedes gestionar tus preferencias de cookies en cualquier momento.</p>",
         "<h2>7. Contacto</h2><p>Para cualquier consulta relacionada con esta política de privacidad, puedes contactarnos en: <strong>info@aichef.pro</strong> o <strong>+34 744 717 942</strong></p>"
       ]
     },
@@ -1045,8 +1045,8 @@
       "heading": "Política de Cookies",
       "content_paragraphs": [
         "<h2>1. ¿Qué son las cookies?</h2><p>Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas AI Chef Pro. Nos ayudan a recordar tus preferencias y mejorar tu experiencia con nuestras herramientas de inteligencia artificial culinaria.</p>",
-        "<h2>2. Tipos de Cookies que Utilizamos</h2><p><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico de nuestras aplicaciones de IA.</p><p><strong>Cookies de preferencias:</strong> Recuerdan tus configuraciones culinarias personalizadas.</p><p><strong>Cookies analíticas:</strong> Nos ayudan a entender cómo usas nuestras herramientas para mejorarlas.</p>",
-        "<h2>3. Finalidad de las Cookies</h2><p>Utilizamos cookies para personalizar tu experiencia gastronómica, recordar tus recetas favoritas, mantener tus sesiones activas y analizar el uso de nuestras aplicaciones de IA culinaria para mejorar nuestros servicios.</p>",
+        "<h2>2. Tipos de Cookies que Utilizamos</h2><p><strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico de nuestras agentes IA.</p><p><strong>Cookies de preferencias:</strong> Recuerdan tus configuraciones culinarias personalizadas.</p><p><strong>Cookies analíticas:</strong> Nos ayudan a entender cómo usas nuestras herramientas para mejorarlas.</p>",
+        "<h2>3. Finalidad de las Cookies</h2><p>Utilizamos cookies para personalizar tu experiencia gastronómica, recordar tus recetas favoritas, mantener tus sesiones activas y analizar el uso de nuestras agentes IA culinaria para mejorar nuestros servicios.</p>",
         "<h2>4. Gestión de Cookies</h2><p>Puedes configurar tu navegador para rechazar cookies, aunque esto podría afectar la funcionalidad de algunas de nuestras herramientas de IA. También puedes eliminar las cookies almacenadas en cualquier momento desde la configuración de tu navegador.</p>",
         "<h2>5. Cookies de Terceros</h2><p>Algunas cookies pueden ser establecidas por servicios de terceros que utilizamos para analytics y funcionalidades adicionales. Estos terceros tienen sus propias políticas de privacidad.</p>",
         "<h2>6. Actualizaciones</h2><p>Esta política de cookies puede actualizarse periódicamente. Te notificaremos sobre cambios significativos.</p>",
@@ -2962,7 +2962,7 @@
           "No, solo por teléfono",
           "Sí, a través de terceros (TheFork, etc.)",
           "Sí, en nuestra propia web",
-          "Sí, en web + app propia"
+          "Sí, en web + agente IA propia"
         ]
       },
       {
