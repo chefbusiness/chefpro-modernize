@@ -502,7 +502,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Meest geavanceerde algemene AI-assistent",
         "preview": "Helpt met technische vragen en seizoensgebonden menuplannen"
       },
@@ -783,7 +783,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Meest geavanceerde algemene AI-assistent",
         "preview": "Helpt met technische vragen en seizoensgebonden menuplannen"
       },

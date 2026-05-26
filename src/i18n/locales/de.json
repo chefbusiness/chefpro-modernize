@@ -507,7 +507,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Fortschrittlichster allgemeiner KI-Assistent",
         "preview": "Hilft bei technischen Fragen und saisonaler Menüplanung"
       },
@@ -801,7 +801,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Fortschrittlichster allgemeiner KI-Assistent",
         "preview": "Hilft bei technischen Fragen und saisonaler Menüplanung"
       },

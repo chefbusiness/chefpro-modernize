@@ -507,7 +507,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Assistente IA generale più avanzato",
         "preview": "Aiuta con dubbi tecnici e pianificazione menu stagionali"
       },
@@ -801,7 +801,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Assistente IA generale più avanzato",
         "preview": "Aiuta con dubbi tecnici e pianificazione menu stagionali"
       },

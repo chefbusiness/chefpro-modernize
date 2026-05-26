@@ -145,7 +145,7 @@ export const worldCookbooks = {
 export const businessTools: App[] = [
   {
     id: 'chatgpt-4o',
-    name: 'ChatGPT 4.1',
+    name: 'ChatGPT 5.5',
     description: 'Asistente general IA más avanzado',
     preview: 'Ayuda con dudas técnicas y planning de menús estacionales',
     icon: MessageSquare,

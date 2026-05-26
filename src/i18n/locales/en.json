@@ -503,7 +503,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Most advanced general AI assistant",
         "preview": "Help with technical questions and seasonal menu planning"
       },

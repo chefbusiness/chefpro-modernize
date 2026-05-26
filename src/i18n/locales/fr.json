@@ -749,7 +749,7 @@
     },
     "business": {
       "chatgpt_4o": {
-        "name": "ChatGPT 4.1",
+        "name": "ChatGPT 5.5",
         "description": "Assistant IA général le plus avancé",
         "preview": "Aide aux questions techniques et planification de menus saisonniers"
       },
