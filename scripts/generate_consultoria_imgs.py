@@ -18,7 +18,12 @@ import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-API_KEY = "AIzaSyARZuyrpA57DjYKLq2QFZA06nTUUnSwhvQ"
+API_KEY = os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+if not API_KEY:
+    raise SystemExit(
+        "Set GEMINI_API_KEY env var before running. "
+        "Get one at https://aistudio.google.com/apikey — do NOT hardcode it here."
+    )
 ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image-preview:generateContent?key={API_KEY}"
 
 PROJECT_ROOT = "/Users/johnguerrero/chefpro-modernize"
