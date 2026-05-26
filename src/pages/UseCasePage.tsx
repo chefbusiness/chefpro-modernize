@@ -19,14 +19,14 @@ import { ArrowRight, CheckCircle, Sparkles, MessageSquare, X, Check } from 'luci
 const SITE_URL = 'https://aichef.pro';
 
 // URL segments per language. Mirrors App.tsx route definitions and useLanguage.ts.
-const SEGMENTS: Record<string, { hub: string; role: string; concept: string; task: string; locale: string; hubLabel: string }> = {
-  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea',   locale: 'es-ES', hubLabel: 'Casos de uso' },
-  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task',    locale: 'en-US', hubLabel: 'Use Cases' },
-  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache',   locale: 'fr-FR', hubLabel: 'Cas d’usage' },
-  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe', locale: 'de-DE', hubLabel: 'Anwendungsfälle' },
-  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito', locale: 'it-IT', hubLabel: 'Casi d’uso' },
-  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa',  locale: 'pt-PT', hubLabel: 'Casos de uso' },
-  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak',    locale: 'nl-NL', hubLabel: 'Use cases' },
+const SEGMENTS: Record<string, { hub: string; role: string; concept: string; task: string; consultor: string; locale: string; hubLabel: string }> = {
+  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea',   consultor: 'consultoria', locale: 'es-ES', hubLabel: 'Casos de uso' },
+  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task',    consultor: 'consultancy', locale: 'en-US', hubLabel: 'Use Cases' },
+  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache',   consultor: 'conseil',     locale: 'fr-FR', hubLabel: 'Cas d’usage' },
+  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe', consultor: 'beratung',    locale: 'de-DE', hubLabel: 'Anwendungsfälle' },
+  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito', consultor: 'consulenza',  locale: 'it-IT', hubLabel: 'Casi d’uso' },
+  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa',  consultor: 'consultoria', locale: 'pt-PT', hubLabel: 'Casos de uso' },
+  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak',    consultor: 'advies',      locale: 'nl-NL', hubLabel: 'Use cases' },
 };
 
 // UI strings (fields rendered in JSX, not the per-spoke content). ES + EN are first-class;
@@ -48,11 +48,13 @@ const UI: Record<string, {
   siblingHeadingRole: string;
   siblingHeadingConcept: string;
   siblingHeadingTask: string;
+  siblingHeadingConsultor: string;
   finalCtaSeeAllUseCases: string;
   galleryAltSuffix: string;
   serviceTypeRole: string;
   serviceTypeConcept: string;
   serviceTypeTask: string;
+  serviceTypeConsultor: string;
 }> = {
   es: {
     notFoundTitle: 'Caso de uso no encontrado',
@@ -71,11 +73,13 @@ const UI: Record<string, {
     siblingHeadingRole: 'También Útil Para',
     siblingHeadingConcept: 'Otros Conceptos Similares',
     siblingHeadingTask: 'Otras Tareas Relacionadas',
+    siblingHeadingConsultor: 'Otros Agentes de Consultoría Gastro Pro',
     finalCtaSeeAllUseCases: 'Ver todos los casos de uso',
     galleryAltSuffix: 'imagen %N de referencia generada con IA',
     serviceTypeRole: 'Software de IA para hostelería por rol profesional',
     serviceTypeConcept: 'Software de IA para hostelería por concepto de negocio',
     serviceTypeTask: 'Software de IA para hostelería por tarea operativa',
+    serviceTypeConsultor: 'Software de IA para consultores y asesores gastronómicos independientes',
   },
   en: {
     notFoundTitle: 'Use case not found',
@@ -94,11 +98,13 @@ const UI: Record<string, {
     siblingHeadingRole: 'Also Useful For',
     siblingHeadingConcept: 'Similar Concepts',
     siblingHeadingTask: 'Related Tasks',
+    siblingHeadingConsultor: 'More Gastro Consultancy Pro Agents',
     finalCtaSeeAllUseCases: 'See all use cases',
     galleryAltSuffix: 'reference image %N generated with AI',
     serviceTypeRole: 'AI software for hospitality by professional role',
     serviceTypeConcept: 'AI software for hospitality by business concept',
     serviceTypeTask: 'AI software for hospitality by operational task',
+    serviceTypeConsultor: 'AI software for independent gastronomic consultants and advisors',
   },
 };
 
@@ -131,7 +137,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
   const APP_URL = getAppUrl(currentLanguage);
   const ui = UI[lang] || UI.es;
   const segs = SEGMENTS[lang] || SEGMENTS.es;
-  const typeSegment = type === 'role' ? segs.role : type === 'concept' ? segs.concept : segs.task;
+  const typeSegment = type === 'role' ? segs.role : type === 'concept' ? segs.concept : type === 'consultor' ? segs.consultor : segs.task;
   const hubPath = `/${segs.hub}`;
 
   const useCase: UseCase | undefined = ALL_USE_CASES.find(
@@ -196,7 +202,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
       logo: `${SITE_URL}/og-image.jpg`,
     },
     areaServed: lang === 'en' ? ['US', 'UK', 'CA', 'AU', 'EU'] : ['ES', 'EU', 'LATAM'],
-    serviceType: type === 'role' ? ui.serviceTypeRole : type === 'concept' ? ui.serviceTypeConcept : ui.serviceTypeTask,
+    serviceType: type === 'role' ? ui.serviceTypeRole : type === 'concept' ? ui.serviceTypeConcept : type === 'consultor' ? ui.serviceTypeConsultor : ui.serviceTypeTask,
     audience: {
       '@type': 'Audience',
       audienceType: content.badge,
@@ -246,7 +252,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
         {(['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'] as LangCode[]).map(l => {
           const altSegs = SEGMENTS[l];
           const altSlug = useCase.slug[l];
-          const altType = type === 'role' ? altSegs.role : type === 'concept' ? altSegs.concept : altSegs.task;
+          const altType = type === 'role' ? altSegs.role : type === 'concept' ? altSegs.concept : type === 'consultor' ? altSegs.consultor : altSegs.task;
           const altPrefix = l === 'es' ? '' : `/${l}`;
           const href = `${SITE_URL}${altPrefix}/${altSegs.hub}/${altType}/${altSlug}`;
           return <link key={l} rel="alternate" hrefLang={l} href={href} />;
@@ -602,7 +608,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             <div className="container mx-auto px-4">
               <div className="text-center mb-12">
                 <h2 className="text-2xl font-bold text-foreground mb-2">
-                  {type === 'role' ? ui.siblingHeadingRole : type === 'concept' ? ui.siblingHeadingConcept : ui.siblingHeadingTask}
+                  {type === 'role' ? ui.siblingHeadingRole : type === 'concept' ? ui.siblingHeadingConcept : type === 'consultor' ? ui.siblingHeadingConsultor : ui.siblingHeadingTask}
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">

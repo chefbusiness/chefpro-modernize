@@ -229,6 +229,20 @@ export default function ModernHeader() {
                         >
                           {({ es: 'Ver todos los roles →', en: 'View all roles →', fr: 'Voir tous les rôles →', de: 'Alle Rollen ansehen →', it: 'Vedi tutti i ruoli →', pt: 'Ver todas as funções →', nl: 'Alle rollen bekijken →' } as Record<string, string>)[currentLanguage] || 'Ver todos los roles →'}
                         </NavigationMenuLink>
+                        {/* Consultoría Gastro Pro — módulo destacado */}
+                        <div className="mt-3 pt-3 border-t">
+                          <NavigationMenuLink
+                            className="block px-3 py-2 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors"
+                            href={({ es: '/usos/consultoria-gastro-pro', en: '/en/use-cases/gastro-consultancy-pro', fr: '/fr/cas-d-usage/conseil-gastro-pro', de: '/de/anwendungsfaelle/gastro-beratung-pro', it: '/it/casi-uso/consulenza-gastro-pro', pt: '/pt/casos-uso/consultoria-gastro-pro', nl: '/nl/use-cases/gastro-advies-pro' } as Record<string, string>)[currentLanguage] || '/usos/consultoria-gastro-pro'}
+                          >
+                            <div className="font-semibold text-sm text-indigo-700">
+                              {({ es: '✨ Consultoría Gastro Pro', en: '✨ Gastro Consultancy Pro', fr: '✨ Conseil Gastro Pro', de: '✨ Gastro Beratung Pro', it: '✨ Consulenza Gastro Pro', pt: '✨ Consultoria Gastro Pro', nl: '✨ Gastro Advies Pro' } as Record<string, string>)[currentLanguage] || '✨ Consultoría Gastro Pro'}
+                            </div>
+                            <div className="text-xs text-muted-foreground mt-0.5">
+                              {({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater und Experten', it: '10 agenti IA per consulenti e advisor', pt: '10 agentes de IA para consultores e assessores', nl: '10 AI-agenten voor adviseurs en consultants' } as Record<string, string>)[currentLanguage] || '10 agentes IA para consultores y asesores'}
+                            </div>
+                          </NavigationMenuLink>
+                        </div>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -599,6 +613,19 @@ export default function ModernHeader() {
                           })}
                         </CollapsibleContent>
                       </Collapsible>
+                      {/* Consultoría Gastro Pro — mobile featured link */}
+                      <a
+                        href={({ es: '/usos/consultoria-gastro-pro', en: '/en/use-cases/gastro-consultancy-pro', fr: '/fr/cas-d-usage/conseil-gastro-pro', de: '/de/anwendungsfaelle/gastro-beratung-pro', it: '/it/casi-uso/consulenza-gastro-pro', pt: '/pt/casos-uso/consultoria-gastro-pro', nl: '/nl/use-cases/gastro-advies-pro' } as Record<string, string>)[currentLanguage] || '/usos/consultoria-gastro-pro'}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex flex-col gap-0.5 px-3 py-3 mb-1 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors touch-manipulation"
+                      >
+                        <span className="text-sm font-semibold text-indigo-700">
+                          {({ es: '✨ Consultoría Gastro Pro', en: '✨ Gastro Consultancy Pro', fr: '✨ Conseil Gastro Pro', de: '✨ Gastro Beratung Pro', it: '✨ Consulenza Gastro Pro', pt: '✨ Consultoria Gastro Pro', nl: '✨ Gastro Advies Pro' } as Record<string, string>)[currentLanguage] || '✨ Consultoría Gastro Pro'}
+                        </span>
+                        <span className="text-xs text-muted-foreground">
+                          {({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater', it: '10 agenti IA per consulenti', pt: '10 agentes de IA para consultores', nl: '10 AI-agenten voor adviseurs' } as Record<string, string>)[currentLanguage] || '10 agentes IA para consultores y asesores'}
+                        </span>
+                      </a>
                       <a
                         href={currentLanguage === 'es' ? '/#pricing' : `/${currentLanguage}#pricing`}
                         onClick={() => setMobileMenuOpen(false)}

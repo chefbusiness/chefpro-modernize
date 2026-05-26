@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-export type UseCaseType = 'role' | 'concept' | 'task';
+export type UseCaseType = 'role' | 'concept' | 'task' | 'consultor';
 export type LangCode = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'nl';
 
 export interface UseCaseSlug {
@@ -95,9 +95,10 @@ const STUB_LANGS: LangCode[] = ['en', 'fr', 'de', 'it', 'pt', 'nl'];
 
 import { USE_CASES_CONTENT_ES } from './use-cases-content.es';
 import { USE_CASES_CONTENT_EN } from './use-cases-content.en';
+import { USE_CASES_CONTENT_ES_CONSULTOR } from './use-cases-content.es.consultor';
 
 function makeContent(id: string): Record<LangCode, UseCaseContent> {
-  const es = USE_CASES_CONTENT_ES[id];
+  const es = USE_CASES_CONTENT_ES[id] ?? USE_CASES_CONTENT_ES_CONSULTOR[id];
   if (!es) {
     throw new Error(`Missing ES content for use-case id: ${id}`);
   }
@@ -118,7 +119,7 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
 // Use this for hub-card filtering and any "real translation only" logic. The runtime spoke
 // page is fine with falling back to ES — the hub should not advertise mixed-language cards.
 export function hasNativeContent(id: string, lang: LangCode): boolean {
-  if (lang === 'es') return id in USE_CASES_CONTENT_ES;
+  if (lang === 'es') return (id in USE_CASES_CONTENT_ES) || (id in USE_CASES_CONTENT_ES_CONSULTOR);
   if (lang === 'en') return id in USE_CASES_CONTENT_EN;
   return false;
 }
@@ -948,7 +949,173 @@ export const USE_CASES_TASKS: UseCase[] = [
   },
 ];
 
-export const ALL_USE_CASES: UseCase[] = [...USE_CASES, ...USE_CASES_CONCEPTS, ...USE_CASES_TASKS];
+// ─────────────────────────────────────────────────────────────────────────────
+// Consultoría Gastro Pro — 10 consultor spokes
+// ─────────────────────────────────────────────────────────────────────────────
+export const USE_CASES_CONSULTORES: UseCase[] = [
+  {
+    id: 'consultor-gastronomico',
+    type: 'consultor',
+    iconKey: 'BriefcaseBusiness',
+    colorTheme: 'indigo',
+    slug: {
+      es: 'consultor-gastronomico',
+      en: 'gastronomy-consultant',
+      fr: 'consultant-gastronomique',
+      de: 'gastronomie-berater',
+      it: 'consulente-gastronomico',
+      pt: 'consultor-gastronomico',
+      nl: 'gastronomisch-adviseur',
+    },
+    content: makeContent('consultor-gastronomico'),
+  },
+  {
+    id: 'chef-consultor',
+    type: 'consultor',
+    iconKey: 'ChefHat',
+    colorTheme: 'rose',
+    slug: {
+      es: 'chef-consultor',
+      en: 'consultant-chef',
+      fr: 'chef-consultant',
+      de: 'chef-berater',
+      it: 'chef-consulente',
+      pt: 'chef-consultor',
+      nl: 'chef-consultant',
+    },
+    content: makeContent('chef-consultor'),
+  },
+  {
+    id: 'heladero-consultor',
+    type: 'consultor',
+    iconKey: 'IceCream',
+    colorTheme: 'teal',
+    slug: {
+      es: 'heladero-consultor',
+      en: 'gelato-consultant',
+      fr: 'glacier-consultant',
+      de: 'eisdiele-berater',
+      it: 'gelatiere-consulente',
+      pt: 'sorveteiro-consultor',
+      nl: 'ijssalon-adviseur',
+    },
+    content: makeContent('heladero-consultor'),
+  },
+  {
+    id: 'chocolatero-consultor',
+    type: 'consultor',
+    iconKey: 'Cookie',
+    colorTheme: 'amber',
+    slug: {
+      es: 'chocolatero-consultor',
+      en: 'chocolatier-consultant',
+      fr: 'chocolatier-consultant',
+      de: 'chocolatier-berater',
+      it: 'cioccolatiere-consulente',
+      pt: 'chocolateiro-consultor',
+      nl: 'chocolatier-adviseur',
+    },
+    content: makeContent('chocolatero-consultor'),
+  },
+  {
+    id: 'pastelero-consultor',
+    type: 'consultor',
+    iconKey: 'CakeSlice',
+    colorTheme: 'pink',
+    slug: {
+      es: 'pastelero-consultor',
+      en: 'pastry-consultant',
+      fr: 'patissier-consultant',
+      de: 'konditor-berater',
+      it: 'pasticciere-consulente',
+      pt: 'confeiteiro-consultor',
+      nl: 'banketbakker-adviseur',
+    },
+    content: makeContent('pastelero-consultor'),
+  },
+  {
+    id: 'pizzero-consultor',
+    type: 'consultor',
+    iconKey: 'Pizza',
+    colorTheme: 'red',
+    slug: {
+      es: 'pizzero-consultor',
+      en: 'pizza-chef-consultant',
+      fr: 'pizzaiolo-consultant',
+      de: 'pizza-berater',
+      it: 'pizzaiolo-consulente',
+      pt: 'pizzaiolo-consultor',
+      nl: 'pizza-chef-adviseur',
+    },
+    content: makeContent('pizzero-consultor'),
+  },
+  {
+    id: 'barista-consultor',
+    type: 'consultor',
+    iconKey: 'Coffee',
+    colorTheme: 'orange',
+    slug: {
+      es: 'barista-consultor',
+      en: 'barista-consultant',
+      fr: 'barista-consultant',
+      de: 'barista-berater',
+      it: 'barista-consulente',
+      pt: 'barista-consultor',
+      nl: 'barista-adviseur',
+    },
+    content: makeContent('barista-consultor'),
+  },
+  {
+    id: 'sommelier-consultor',
+    type: 'consultor',
+    iconKey: 'Wine',
+    colorTheme: 'purple',
+    slug: {
+      es: 'sommelier-consultor',
+      en: 'sommelier-consultant',
+      fr: 'sommelier-consultant',
+      de: 'sommelier-berater',
+      it: 'sommelier-consulente',
+      pt: 'sommelier-consultor',
+      nl: 'sommelier-adviseur',
+    },
+    content: makeContent('sommelier-consultor'),
+  },
+  {
+    id: 'bartender-consultor',
+    type: 'consultor',
+    iconKey: 'Martini',
+    colorTheme: 'emerald',
+    slug: {
+      es: 'bartender-consultor',
+      en: 'bartender-consultant',
+      fr: 'bartender-consultant',
+      de: 'bartender-berater',
+      it: 'bartender-consulente',
+      pt: 'bartender-consultor',
+      nl: 'bartender-adviseur',
+    },
+    content: makeContent('bartender-consultor'),
+  },
+  {
+    id: 'panadero-consultor',
+    type: 'consultor',
+    iconKey: 'Wheat',
+    colorTheme: 'blue',
+    slug: {
+      es: 'panadero-consultor',
+      en: 'baker-consultant',
+      fr: 'boulanger-consultant',
+      de: 'baecker-berater',
+      it: 'panettiere-consulente',
+      pt: 'padeiro-consultor',
+      nl: 'bakker-adviseur',
+    },
+    content: makeContent('panadero-consultor'),
+  },
+];
+
+export const ALL_USE_CASES: UseCase[] = [...USE_CASES, ...USE_CASES_CONCEPTS, ...USE_CASES_TASKS, ...USE_CASES_CONSULTORES];
 
 export function getUseCaseBySlug(slug: string, lang: LangCode = 'es'): UseCase | undefined {
   return ALL_USE_CASES.find(uc => uc.slug[lang] === slug);

@@ -489,6 +489,63 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og/use-cases/restaurante-gastronomico.jpg',
   },
 
+  // ── Consultoría Gastro Pro — Hub + 10 spokes (ES) ──
+  '/usos/consultoria-gastro-pro': {
+    title: 'Consultoría Gastro Pro: 10 Agentes de IA para Consultores Gastronómicos | AI Chef Pro',
+    description: 'Módulo de IA especializado para consultores gastronómicos, chefs consultores, sommeliers, bartenders, baristas, pasteleros, panaderos, pizzeros, heladeros y chocolateros que trabajan por proyectos.',
+    image: 'https://aichef.pro/og/use-cases/consultoria-gastro-pro-hub.jpg',
+  },
+  '/usos/consultoria/consultor-gastronomico': {
+    title: 'IA para Consultor Gastronómico: Due Diligence, Diagnóstico, Plan Financiero | AI Chef Pro',
+    description: 'Agente IA para consultores gastronómicos independientes: due diligence, diagnóstico de rentabilidad, plan de apertura, análisis competencia y propuestas para inversores.',
+    image: 'https://aichef.pro/og/use-cases/consultor-gastronomico.jpg',
+  },
+  '/usos/consultoria/chef-consultor': {
+    title: 'IA para Chef Consultor: Menús, Escandallos, Manuales para Grupos y Hoteles | AI Chef Pro',
+    description: 'Agente IA para chefs consultores independientes que asesoran grupos, hoteles, franquicias e industria alimentaria. Desarrollo de menús, escandallos profesionales, manuales operativos y formación.',
+    image: 'https://aichef.pro/og/use-cases/chef-consultor.jpg',
+  },
+  '/usos/consultoria/heladero-consultor': {
+    title: 'IA para Heladero Consultor: Bases, Cartas, Escandallo y Aperturas | AI Chef Pro',
+    description: 'Agente IA para heladeros consultores artesanales: formulación de bases, cartas por temporada, escandallo HORECA, APPCC y proyectos de apertura para grupos e inversores.',
+    image: 'https://aichef.pro/og/use-cases/heladero-consultor.jpg',
+  },
+  '/usos/consultoria/chocolatero-consultor': {
+    title: 'IA para Chocolatero Consultor: Colecciones, Escandallo y Chocolate Shop | AI Chef Pro',
+    description: 'Agente IA para chocolateros consultores que asesoran marcas, chocolate shops, hoteles de lujo y pastelerías especializadas. Colecciones, escandallo y proyectos de apertura.',
+    image: 'https://aichef.pro/og/use-cases/chocolatero-consultor.jpg',
+  },
+  '/usos/consultoria/pastelero-consultor': {
+    title: 'IA para Pastelero Consultor: Cartas de Postres, Escandallo y Manuales | AI Chef Pro',
+    description: 'Agente IA para pasteleros consultores que asesoran restaurantes, hoteles y grupos de restauración. Cartas, escandallo, fichas técnicas y manuales de obrador.',
+    image: 'https://aichef.pro/og/use-cases/pastelero-consultor.jpg',
+  },
+  '/usos/consultoria/pizzero-consultor': {
+    title: 'IA para Pizzero Consultor: Masas, Cartas, Escandallo y Aperturas | AI Chef Pro',
+    description: 'Agente IA para pizzeros consultores artesanales: formulación de masas, cartas, escandallo HORECA, manuales de fermentación y proyectos de apertura para pizzerías y grupos.',
+    image: 'https://aichef.pro/og/use-cases/pizzero-consultor.jpg',
+  },
+  '/usos/consultoria/barista-consultor': {
+    title: 'IA para Barista Consultor: Cartas, Calibración, Escandallo y Specialty Coffee Shops | AI Chef Pro',
+    description: 'Agente IA para baristas consultores: cartas de café, calibración de extracción, escandallo HORECA y proyectos de specialty coffee shop para hoteles y grupos.',
+    image: 'https://aichef.pro/og/use-cases/barista-consultor.jpg',
+  },
+  '/usos/consultoria/sommelier-consultor': {
+    title: 'IA para Sommelier Consultor: Cartas, Beverage Cost, Bodega y Wine Bars | AI Chef Pro',
+    description: 'Agente IA para sommeliers consultores: cartas de vinos, beverage cost, optimización de bodega, formación de sala y proyectos de vinoteca para alta cocina y hoteles de lujo.',
+    image: 'https://aichef.pro/og/use-cases/sommelier-consultor.jpg',
+  },
+  '/usos/consultoria/bartender-consultor': {
+    title: 'IA para Bartender Consultor: Cartas, Beverage Cost y Cocktail Bars | AI Chef Pro',
+    description: 'Agente IA para bartenders consultores: cartas de cócteles, beverage cost, formación de equipos y proyectos de cocktail bar para bares de autor, hoteles de lujo y grupos.',
+    image: 'https://aichef.pro/og/use-cases/bartender-consultor.jpg',
+  },
+  '/usos/consultoria/panadero-consultor': {
+    title: 'IA para Panadero Consultor: Masas, Catálogo, Escandallo y Bakery Cafés | AI Chef Pro',
+    description: 'Agente IA para panaderos consultores artesanales: formulación, escandallo HORECA, manuales de obrador y proyectos de bakery café para hoteles, grupos y bakery chains.',
+    image: 'https://aichef.pro/og/use-cases/panadero-consultor.jpg',
+  },
+
   // ── Use Cases EN — Hub ──
   '/en/use-cases': {
     title: 'AI Chef Pro Use Cases: by professional role and business concept | AI Chef Pro',
