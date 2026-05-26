@@ -96,21 +96,32 @@ const STUB_LANGS: LangCode[] = ['en', 'fr', 'de', 'it', 'pt', 'nl'];
 import { USE_CASES_CONTENT_ES } from './use-cases-content.es';
 import { USE_CASES_CONTENT_EN } from './use-cases-content.en';
 import { USE_CASES_CONTENT_ES_CONSULTOR } from './use-cases-content.es.consultor';
+import { USE_CASES_CONTENT_EN_CONSULTOR } from './use-cases-content.en.consultor';
+import { USE_CASES_CONTENT_FR_CONSULTOR } from './use-cases-content.fr.consultor';
+import { USE_CASES_CONTENT_DE_CONSULTOR } from './use-cases-content.de.consultor';
+import { USE_CASES_CONTENT_IT_CONSULTOR } from './use-cases-content.it.consultor';
+import { USE_CASES_CONTENT_PT_CONSULTOR } from './use-cases-content.pt.consultor';
+import { USE_CASES_CONTENT_NL_CONSULTOR } from './use-cases-content.nl.consultor';
 
 function makeContent(id: string): Record<LangCode, UseCaseContent> {
   const es = USE_CASES_CONTENT_ES[id] ?? USE_CASES_CONTENT_ES_CONSULTOR[id];
   if (!es) {
     throw new Error(`Missing ES content for use-case id: ${id}`);
   }
-  const en = USE_CASES_CONTENT_EN[id] ?? es;
+  const en = USE_CASES_CONTENT_EN[id] ?? USE_CASES_CONTENT_EN_CONSULTOR[id] ?? es;
+  const fr = USE_CASES_CONTENT_FR_CONSULTOR[id] ?? es;
+  const de = USE_CASES_CONTENT_DE_CONSULTOR[id] ?? es;
+  const it = USE_CASES_CONTENT_IT_CONSULTOR[id] ?? es;
+  const pt = USE_CASES_CONTENT_PT_CONSULTOR[id] ?? es;
+  const nl = USE_CASES_CONTENT_NL_CONSULTOR[id] ?? es;
   const out: Record<LangCode, UseCaseContent> = {
     es,
     en,
-    fr: es,
-    de: es,
-    it: es,
-    pt: es,
-    nl: es,
+    fr,
+    de,
+    it,
+    pt,
+    nl,
   };
   return out;
 }
@@ -120,7 +131,12 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
 // page is fine with falling back to ES — the hub should not advertise mixed-language cards.
 export function hasNativeContent(id: string, lang: LangCode): boolean {
   if (lang === 'es') return (id in USE_CASES_CONTENT_ES) || (id in USE_CASES_CONTENT_ES_CONSULTOR);
-  if (lang === 'en') return id in USE_CASES_CONTENT_EN;
+  if (lang === 'en') return (id in USE_CASES_CONTENT_EN) || (id in USE_CASES_CONTENT_EN_CONSULTOR);
+  if (lang === 'fr') return id in USE_CASES_CONTENT_FR_CONSULTOR;
+  if (lang === 'de') return id in USE_CASES_CONTENT_DE_CONSULTOR;
+  if (lang === 'it') return id in USE_CASES_CONTENT_IT_CONSULTOR;
+  if (lang === 'pt') return id in USE_CASES_CONTENT_PT_CONSULTOR;
+  if (lang === 'nl') return id in USE_CASES_CONTENT_NL_CONSULTOR;
   return false;
 }
 

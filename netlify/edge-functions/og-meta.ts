@@ -553,6 +553,63 @@ const OG_DATA: Record<string, { title: string; description: string; image: strin
     image: 'https://aichef.pro/og/use-cases/hub.jpg',
   },
 
+  // ── Gastro Consultancy Pro EN — Hub + 10 spokes ──
+  '/en/use-cases/gastro-consultancy-pro': {
+    title: 'Gastro Consultancy Pro: 10 AI Agents for Gastronomic Consultants | AI Chef Pro',
+    description: 'Specialized AI module for gastronomic consultants, consultant chefs, sommeliers, bartenders, baristas, pastry chefs, bakers, pizza chefs, gelato makers, and chocolatiers running project work.',
+    image: 'https://aichef.pro/og/use-cases/consultoria-gastro-pro-hub.jpg',
+  },
+  '/en/use-cases/consultancy/gastronomy-consultant': {
+    title: 'AI for Gastronomy Consultants: Due Diligence, Diagnostics, Financial Plan | AI Chef Pro',
+    description: 'Specialized AI agent for independent gastronomy consultants: due diligence, profitability diagnostics, opening plans, competitive analysis, and investor proposals.',
+    image: 'https://aichef.pro/og/use-cases/consultor-gastronomico.jpg',
+  },
+  '/en/use-cases/consultancy/consultant-chef': {
+    title: 'AI for Consultant Chef: Menus, Costing, Manuals for Groups and Hotels | AI Chef Pro',
+    description: 'Specialized AI agent for independent consultant chefs advising restaurant groups, hotels, franchises, and the food industry. Menu development, professional costing, operational manuals, and training.',
+    image: 'https://aichef.pro/og/use-cases/chef-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/gelato-consultant': {
+    title: 'AI for Gelato Consultant: Bases, Menus, Costing, and Openings | AI Chef Pro',
+    description: 'Specialized AI agent for artisan gelato consultants: base formulation, seasonal menus, HORECA costing, HACCP, and opening projects for groups and investors.',
+    image: 'https://aichef.pro/og/use-cases/heladero-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/chocolatier-consultant': {
+    title: 'AI for Chocolatier Consultant: Collections, Costing, and Chocolate Shop | AI Chef Pro',
+    description: 'Specialized AI agent for chocolatier consultants advising brands, chocolate shops, luxury hotels, and specialist patisseries. Collection development, costing, and opening projects.',
+    image: 'https://aichef.pro/og/use-cases/chocolatero-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/pastry-consultant': {
+    title: 'AI for Pastry Consultant: Dessert Menus, Costing, and Manuals | AI Chef Pro',
+    description: 'Specialized AI agent for pastry consultants advising restaurants, hotels, and restaurant groups. Menu development, costing, technical sheets, and lab manuals.',
+    image: 'https://aichef.pro/og/use-cases/pastelero-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/pizza-chef-consultant': {
+    title: 'AI for Pizza Chef Consultant: Doughs, Menus, Costing, and Openings | AI Chef Pro',
+    description: 'Specialized AI agent for artisan pizza consultants: dough formulation, menus, HORECA costing, fermentation manuals, and opening projects for pizzerias and groups.',
+    image: 'https://aichef.pro/og/use-cases/pizzero-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/barista-consultant': {
+    title: 'AI for Barista Consultant: Menus, Calibration, Costing and Specialty Coffee Shops | AI Chef Pro',
+    description: 'Specialized AI agent for barista consultants: coffee menus, extraction calibration, HORECA costing, and specialty coffee shop projects for hotels and groups.',
+    image: 'https://aichef.pro/og/use-cases/barista-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/sommelier-consultant': {
+    title: 'AI for Sommelier Consultant: Lists, Beverage Cost, Cellar and Wine Bars | AI Chef Pro',
+    description: 'Specialized AI agent for sommelier consultants: wine lists, beverage cost, cellar optimization, floor training, and vinoteca projects for fine dining, luxury hotels, and groups.',
+    image: 'https://aichef.pro/og/use-cases/sommelier-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/bartender-consultant': {
+    title: 'AI for Bartender Consultant: Menus, Beverage Cost, and Cocktail Bars | AI Chef Pro',
+    description: 'Specialized AI agent for bartender consultants: cocktail menus, beverage cost, team training, and cocktail bar projects for signature bars, luxury hotels, and groups.',
+    image: 'https://aichef.pro/og/use-cases/bartender-consultor.jpg',
+  },
+  '/en/use-cases/consultancy/baker-consultant': {
+    title: 'AI for Baker Consultant: Doughs, Catalog, Costing, and Bakery Cafés | AI Chef Pro',
+    description: 'Specialized AI agent for artisan baker consultants: formulation, HORECA costing, lab manuals, and bakery café projects for hotels, groups, and bakery chains.',
+    image: 'https://aichef.pro/og/use-cases/panadero-consultor.jpg',
+  },
+
   // ── Use Cases EN — Roles ──
   '/en/use-cases/role/restaurant-owner': {
     title: 'AI for Restaurant Owners | AI Chef Pro',
