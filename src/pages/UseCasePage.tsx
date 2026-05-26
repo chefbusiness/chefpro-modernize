@@ -9,6 +9,7 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import AuthorityBackedBy from '@/components/AuthorityBackedBy';
 import ImageDisclaimerNote from '@/components/ImageDisclaimerNote';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ALL_USE_CASES, getUseCasesByType, type UseCase, type UseCaseType, type LangCode } from '@/data/use-cases';
@@ -422,6 +423,9 @@ export default function UseCasePage({ type }: UseCasePageProps) {
             </div>
           </div>
         </section>
+
+        {/* Authority — backed by Chefbusiness (solo Consultoría Gastro Pro) */}
+        {type === 'consultor' && <AuthorityBackedBy lang={lang} />}
 
         {/* Gallery — opcional, mini galería de 6 imágenes de referencia */}
         {content.galleryImages && content.galleryImages.length > 0 && (

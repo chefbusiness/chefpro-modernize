@@ -9,6 +9,7 @@ import ModernFooter from '@/components/ModernFooter';
 import SEOHead from '@/components/SEOHead';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
 import HeroSocialProof from '@/components/HeroSocialProof';
+import AuthorityBackedBy from '@/components/AuthorityBackedBy';
 import { useLanguage } from '@/hooks/useLanguage';
 import { getUseCasesByType, type LangCode } from '@/data/use-cases';
 import { ArrowRight, Briefcase, Building2, Sparkles, Users, TrendingUp } from 'lucide-react';
@@ -376,6 +377,9 @@ export default function ConsultoriaGastroProHub() {
             </div>
           </div>
         </section>
+
+        {/* Authority — backed by Chefbusiness Consultoría Gastronómica */}
+        <AuthorityBackedBy lang={lang} />
 
         {/* Métricas */}
         <section className="py-16 bg-gradient-to-r from-primary/90 to-primary">
