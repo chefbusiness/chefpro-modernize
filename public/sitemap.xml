@@ -7244,4 +7244,160 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ── Consultoría Gastro Pro — Hub + 10 spokes (added 2026-05-26) ── -->
+  <url>
+    <loc>https://aichef.pro/usos/consultoria-gastro-pro</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/gastro-consultancy-pro" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil-gastro-pro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/gastro-beratung-pro" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza-gastro-pro" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria-gastro-pro" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/consultor-gastronomico</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/consultor-gastronomico" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/gastronomy-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/consultant-gastronomique" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/gastronomie-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/consulente-gastronomico" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/consultor-gastronomico" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/gastronomisch-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/consultor-gastronomico" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/chef-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/chef-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/consultant-chef" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/chef-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/chef-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/chef-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/chef-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/chef-consultant" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/chef-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/heladero-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/heladero-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/gelato-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/glacier-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/eisdiele-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/gelatiere-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/sorveteiro-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/ijssalon-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/heladero-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/chocolatero-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/chocolatero-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/chocolatier-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/chocolatier-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/chocolatier-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/cioccolatiere-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/chocolateiro-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/chocolatier-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/chocolatero-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/pastelero-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/pastelero-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/pastry-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/patissier-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/konditor-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/pasticciere-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/confeiteiro-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/banketbakker-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/pastelero-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/pizzero-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/pizzero-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/pizza-chef-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/pizzaiolo-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/pizza-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/pizzaiolo-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/pizzaiolo-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/pizza-chef-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/pizzero-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/barista-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/barista-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/barista-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/barista-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/barista-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/barista-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/barista-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/barista-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/barista-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/sommelier-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/sommelier-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/sommelier-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/sommelier-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/sommelier-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/sommelier-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/sommelier-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/sommelier-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/sommelier-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/bartender-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/bartender-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/bartender-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/bartender-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/bartender-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/bartender-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/bartender-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/bartender-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/bartender-consultor" />
+  </url>
+  <url>
+    <loc>https://aichef.pro/usos/consultoria/panadero-consultor</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/panadero-consultor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aichef.pro/en/use-cases/consultancy/baker-consultant" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aichef.pro/fr/cas-d-usage/conseil/boulanger-consultant" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aichef.pro/de/anwendungsfaelle/beratung/baecker-berater" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aichef.pro/it/casi-uso/consulenza/panettiere-consulente" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aichef.pro/pt/casos-uso/consultoria/padeiro-consultor" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/advies/bakker-adviseur" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria/panadero-consultor" />
+  </url>
+
 </urlset>
