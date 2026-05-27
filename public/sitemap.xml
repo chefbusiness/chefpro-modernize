@@ -7247,7 +7247,7 @@
   <!-- ── Consultoría Gastro Pro — Hub + 10 spokes (added 2026-05-26) ── -->
   <url>
     <loc>https://aichef.pro/usos/consultoria-gastro-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7261,7 +7261,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/consultor-gastronomico</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/consultor-gastronomico" />
@@ -7275,7 +7275,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/chef-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/chef-consultor" />
@@ -7289,7 +7289,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/heladero-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/heladero-consultor" />
@@ -7303,7 +7303,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/chocolatero-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/chocolatero-consultor" />
@@ -7317,7 +7317,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/pastelero-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/pastelero-consultor" />
@@ -7331,7 +7331,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/pizzero-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/pizzero-consultor" />
@@ -7345,7 +7345,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/barista-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/barista-consultor" />
@@ -7359,7 +7359,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/sommelier-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/sommelier-consultor" />
@@ -7373,7 +7373,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/bartender-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/bartender-consultor" />
@@ -7387,7 +7387,7 @@
   </url>
   <url>
     <loc>https://aichef.pro/usos/consultoria/panadero-consultor</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria/panadero-consultor" />
@@ -7404,7 +7404,7 @@
   <!-- EN -->
   <url>
     <loc>https://aichef.pro/en/use-cases/gastro-consultancy-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7416,20 +7416,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/gastronomy-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/consultant-chef</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/gelato-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/chocolatier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/pastry-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/pizza-chef-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/barista-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/sommelier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/bartender-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/en/use-cases/consultancy/baker-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/gastronomy-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/consultant-chef</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/gelato-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/chocolatier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/pastry-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/pizza-chef-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/barista-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/sommelier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/bartender-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/en/use-cases/consultancy/baker-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <!-- FR -->
   <url>
     <loc>https://aichef.pro/fr/cas-d-usage/conseil-gastro-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7441,20 +7441,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/consultant-gastronomique</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/chef-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/glacier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/chocolatier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/patissier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/pizzaiolo-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/barista-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/sommelier-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/bartender-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/boulanger-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/consultant-gastronomique</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/chef-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/glacier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/chocolatier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/patissier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/pizzaiolo-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/barista-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/sommelier-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/bartender-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/fr/cas-d-usage/conseil/boulanger-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <!-- DE -->
   <url>
     <loc>https://aichef.pro/de/anwendungsfaelle/gastro-beratung-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7466,20 +7466,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/gastronomie-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/chef-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/eisdiele-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/chocolatier-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/konditor-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/pizza-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/barista-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/sommelier-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/bartender-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/baecker-berater</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/gastronomie-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/chef-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/eisdiele-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/chocolatier-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/konditor-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/pizza-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/barista-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/sommelier-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/bartender-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/de/anwendungsfaelle/beratung/baecker-berater</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <!-- IT -->
   <url>
     <loc>https://aichef.pro/it/casi-uso/consulenza-gastro-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7491,20 +7491,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/consulente-gastronomico</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/chef-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/gelatiere-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/cioccolatiere-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/pasticciere-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/pizzaiolo-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/barista-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/sommelier-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/bartender-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/it/casi-uso/consulenza/panettiere-consulente</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/consulente-gastronomico</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/chef-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/gelatiere-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/cioccolatiere-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/pasticciere-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/pizzaiolo-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/barista-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/sommelier-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/bartender-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/it/casi-uso/consulenza/panettiere-consulente</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <!-- PT -->
   <url>
     <loc>https://aichef.pro/pt/casos-uso/consultoria-gastro-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7516,20 +7516,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/consultor-gastronomico</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/chef-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/sorveteiro-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/chocolateiro-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/confeiteiro-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/pizzaiolo-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/barista-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/sommelier-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/bartender-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/padeiro-consultor</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/consultor-gastronomico</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/chef-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/sorveteiro-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/chocolateiro-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/confeiteiro-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/pizzaiolo-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/barista-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/sommelier-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/bartender-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/pt/casos-uso/consultoria/padeiro-consultor</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <!-- NL -->
   <url>
     <loc>https://aichef.pro/nl/use-cases/gastro-advies-pro</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://aichef.pro/usos/consultoria-gastro-pro" />
@@ -7541,15 +7541,15 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://aichef.pro/nl/use-cases/gastro-advies-pro" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aichef.pro/usos/consultoria-gastro-pro" />
   </url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/gastronomisch-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/chef-consultant</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/ijssalon-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/chocolatier-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/banketbakker-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/pizza-chef-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/barista-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/sommelier-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/bartender-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://aichef.pro/nl/use-cases/advies/bakker-adviseur</loc><lastmod>2026-05-26</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/gastronomisch-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/chef-consultant</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/ijssalon-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/chocolatier-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/banketbakker-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/pizza-chef-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/barista-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/sommelier-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/bartender-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aichef.pro/nl/use-cases/advies/bakker-adviseur</loc><lastmod>2026-05-27</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
 </urlset>
