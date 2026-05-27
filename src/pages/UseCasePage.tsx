@@ -327,7 +327,15 @@ export default function UseCasePage({ type }: UseCasePageProps) {
       url: SITE_URL,
       logo: `${SITE_URL}/og-image.jpg`,
     },
-    areaServed: lang === 'en' ? ['US', 'UK', 'CA', 'AU', 'EU'] : ['ES', 'EU', 'LATAM'],
+    areaServed: ({
+      es: ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'UY', 'EU', 'LATAM'],
+      en: ['US', 'UK', 'CA', 'AU', 'IE', 'NZ', 'EU'],
+      fr: ['FR', 'BE', 'CH', 'LU', 'CA-QC', 'EU'],
+      de: ['DE', 'AT', 'CH', 'LI', 'EU'],
+      it: ['IT', 'CH', 'SM', 'VA', 'EU'],
+      pt: ['PT', 'BR', 'AO', 'MZ', 'EU'],
+      nl: ['NL', 'BE', 'SR', 'EU'],
+    } as Record<string, string[]>)[lang] || ['EU'],
     serviceType: type === 'role' ? ui.serviceTypeRole : type === 'concept' ? ui.serviceTypeConcept : type === 'consultor' ? ui.serviceTypeConsultor : ui.serviceTypeTask,
     audience: {
       '@type': 'Audience',
@@ -339,8 +347,8 @@ export default function UseCasePage({ type }: UseCasePageProps) {
       '@type': 'AggregateOffer',
       priceCurrency: 'EUR',
       lowPrice: '0',
-      highPrice: '95',
-      offerCount: '4',
+      highPrice: '950',
+      offerCount: '5',
       availability: 'https://schema.org/InStock',
     },
   };
