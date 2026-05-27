@@ -54,7 +54,7 @@ export default function PricingPlans({ toolKey }: PricingPlansProps) {
                 <Button
                   className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
                   variant={plan.highlight ? 'default' : 'outline'}
-                  onClick={() => window.open(`${appUrl}/pricing`, '_blank')}
+                  onClick={() => window.open(appUrl, '_blank')}
                 >
                   {plan.highlight ? primaryBtn : secondaryBtn}
                 </Button>

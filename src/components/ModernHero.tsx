@@ -27,7 +27,7 @@ export default function ModernHero() {
   }, [businessTypes.length]);
 
   const handleCTAClick = () => {
-    window.open(getAppUrl(currentLanguage) + '/pricing', '_blank');
+    window.open(getAppUrl(currentLanguage), '_blank');
   };
 
   return (

@@ -426,7 +426,7 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 <Button size="lg" className="btn-gold" onClick={() => window.open(APP_URL, '_blank')}>
                   {ui.ctaPrimary} <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
+                <Button size="lg" variant="outline" onClick={() => window.open(APP_URL, '_blank')}>
                   {ui.ctaSeePlans}
                 </Button>
               </div>

@@ -319,7 +319,7 @@ export default function SimuladorRentabilidad() {
                 <Button
                   size="lg"
                   variant="outline"
-                  onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                  onClick={() => window.open(getAppUrl(lang), '_blank')}
                 >
                   {s('hero.cta_premium')}
                 </Button>
@@ -573,7 +573,7 @@ export default function SimuladorRentabilidad() {
                     <Button
                       className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
                       variant={plan.highlight ? 'default' : 'outline'}
-                      onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                      onClick={() => window.open(getAppUrl(lang), '_blank')}
                     >
                       {plan.highlight ? s('cta_section.primary') : s('cta_section.secondary')}
                     </Button>
@@ -622,7 +622,7 @@ export default function SimuladorRentabilidad() {
                 size="lg"
                 variant="outline"
                 className="border-amber-900 text-amber-900 bg-white/30 hover:bg-white/50"
-                onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                onClick={() => window.open(getAppUrl(lang), '_blank')}
               >
                 {s('cta_section.secondary')}
               </Button>

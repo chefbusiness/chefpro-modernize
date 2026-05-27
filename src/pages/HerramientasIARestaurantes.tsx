@@ -127,7 +127,7 @@ export default function HerramientasIARestaurantes() {
                   {s('hero.cta_primary')}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button size="lg" variant="outline" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
+                <Button size="lg" variant="outline" onClick={() => window.open(APP_URL, '_blank')}>
                   {s('hero.cta_secondary')}
                 </Button>
               </div>
@@ -255,7 +255,7 @@ export default function HerramientasIARestaurantes() {
                     <Button
                       className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
                       variant={plan.highlight ? 'default' : 'outline'}
-                      onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}
+                      onClick={() => window.open(APP_URL, '_blank')}
                     >
                       {plan.highlight ? s('hero.cta_primary') : s('hero.cta_secondary')}
                     </Button>
@@ -294,7 +294,7 @@ export default function HerramientasIARestaurantes() {
                 {s('cta_section.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-amber-900 text-amber-900 bg-white/30 hover:bg-white/50" onClick={() => window.open(`${APP_URL}/pricing`, '_blank')}>
+              <Button size="lg" variant="outline" className="border-amber-900 text-amber-900 bg-white/30 hover:bg-white/50" onClick={() => window.open(APP_URL, '_blank')}>
                 {s('cta_section.secondary')}
               </Button>
             </div>

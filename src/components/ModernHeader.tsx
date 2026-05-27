@@ -106,7 +106,7 @@ export default function ModernHeader() {
   const currentLang = languages.find(lang => lang.code === currentLanguage);
 
   const handleCTAClick = () => {
-    window.open(getAppUrl(currentLanguage) + '/pricing', '_blank');
+    window.open(getAppUrl(currentLanguage), '_blank');
   };
 
   const handleLoginClick = () => {

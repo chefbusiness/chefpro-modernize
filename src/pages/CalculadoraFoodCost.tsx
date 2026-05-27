@@ -319,7 +319,7 @@ export default function CalculadoraFoodCost() {
                 <Button
                   size="lg"
                   variant="outline"
-                  onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                  onClick={() => window.open(getAppUrl(lang), '_blank')}
                 >
                   {s('hero.cta_premium')}
                 </Button>
@@ -596,7 +596,7 @@ export default function CalculadoraFoodCost() {
                     <Button
                       className={`w-full ${plan.highlight ? 'btn-gold' : ''}`}
                       variant={plan.highlight ? 'default' : 'outline'}
-                      onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                      onClick={() => window.open(getAppUrl(lang), '_blank')}
                     >
                       {plan.highlight ? s('cta_section.primary') : s('cta_section.secondary')}
                     </Button>
@@ -645,7 +645,7 @@ export default function CalculadoraFoodCost() {
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white/20"
-                onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                onClick={() => window.open(getAppUrl(lang), '_blank')}
               >
                 {s('cta_section.secondary')}
               </Button>

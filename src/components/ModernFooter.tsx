@@ -251,7 +251,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href={getAppUrl(lang) + '/pricing'}
+                  href={getAppUrl(lang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

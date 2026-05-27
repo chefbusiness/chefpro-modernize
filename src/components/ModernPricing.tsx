@@ -97,7 +97,7 @@ export default function ModernPricing() {
   ];
 
   const handlePlanClick = () => {
-    window.open(getAppUrl(currentLanguage) + '/pricing', '_blank');
+    window.open(getAppUrl(currentLanguage), '_blank');
   };
 
   const pricingSchema = {

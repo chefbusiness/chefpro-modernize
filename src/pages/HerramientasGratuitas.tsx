@@ -215,7 +215,7 @@ export default function HerramientasGratuitas() {
                 <Button
                   size="lg"
                   className="btn-gold"
-                  onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                  onClick={() => window.open(getAppUrl(lang), '_blank')}
                 >
                   {s('cta.primary')}
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -298,7 +298,7 @@ export default function HerramientasGratuitas() {
                 <Button
                   size="lg"
                   className="btn-gold w-full"
-                  onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                  onClick={() => window.open(getAppUrl(lang), '_blank')}
                 >
                   {s('cta.primary')}
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -318,7 +318,7 @@ export default function HerramientasGratuitas() {
               <Button
                 size="lg"
                 className="bg-amber-950 text-amber-50 hover:bg-amber-900"
-                onClick={() => window.open(`${getAppUrl(lang)}/pricing`, '_blank')}
+                onClick={() => window.open(getAppUrl(lang), '_blank')}
               >
                 {s('cta.primary')}
                 <ArrowRight className="ml-2 h-5 w-5" />
