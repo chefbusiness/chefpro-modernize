@@ -6,20 +6,21 @@ import { ALL_USE_CASES, type UseCaseType } from '@/data/use-cases';
 export type Language = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'nl';
 
 // Use-case URL segments per language. Must match the routes registered in App.tsx.
-const USE_CASE_SEGMENTS: Record<Language, { hub: string; role: string; concept: string; task: string }> = {
-  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea' },
-  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task' },
-  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache' },
-  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe' },
-  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito' },
-  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa' },
-  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak' },
+const USE_CASE_SEGMENTS: Record<Language, { hub: string; role: string; concept: string; task: string; consultor: string; consultorHubSlug: string }> = {
+  es: { hub: 'usos',             role: 'rol',    concept: 'concepto', task: 'tarea',   consultor: 'consultoria', consultorHubSlug: 'consultoria-gastro-pro' },
+  en: { hub: 'use-cases',        role: 'role',   concept: 'concept',  task: 'task',    consultor: 'consultancy', consultorHubSlug: 'gastro-consultancy-pro' },
+  fr: { hub: 'cas-d-usage',      role: 'role',   concept: 'concept',  task: 'tache',   consultor: 'conseil',     consultorHubSlug: 'conseil-gastro-pro' },
+  de: { hub: 'anwendungsfaelle', role: 'rolle',  concept: 'konzept',  task: 'aufgabe', consultor: 'beratung',    consultorHubSlug: 'gastro-beratung-pro' },
+  it: { hub: 'casi-uso',         role: 'ruolo',  concept: 'concetto', task: 'compito', consultor: 'consulenza',  consultorHubSlug: 'consulenza-gastro-pro' },
+  pt: { hub: 'casos-uso',        role: 'funcao', concept: 'conceito', task: 'tarefa',  consultor: 'consultoria', consultorHubSlug: 'consultoria-gastro-pro' },
+  nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak',    consultor: 'advies',      consultorHubSlug: 'gastro-advies-pro' },
 };
 
 interface UseCasePathInfo {
   spokeId: string;
   type: UseCaseType;
   isHub: boolean;
+  isConsultorHub?: boolean;
 }
 
 // Detect if currentPath is a use-case hub or spoke in any language. Returns enough info to
@@ -42,6 +43,12 @@ function detectUseCasePath(currentPath: string): UseCasePathInfo | null {
   if (rest.length === 1) {
     return { spokeId: '', type: 'role', isHub: true };
   }
+
+  // Consultoría Gastro Pro hub: /<hub>/<consultorHubSlug>
+  if (rest.length === 2 && rest[1] === segs.consultorHubSlug) {
+    return { spokeId: '', type: 'consultor', isHub: false, isConsultorHub: true };
+  }
+
   if (rest.length !== 3) return null;
 
   const typeSeg = rest[1];
@@ -50,6 +57,7 @@ function detectUseCasePath(currentPath: string): UseCasePathInfo | null {
   if (typeSeg === segs.role) type = 'role';
   else if (typeSeg === segs.concept) type = 'concept';
   else if (typeSeg === segs.task) type = 'task';
+  else if (typeSeg === segs.consultor) type = 'consultor';
   else return null;
 
   const spoke = ALL_USE_CASES.find(uc => uc.type === type && uc.slug[lang] === slug);
@@ -63,9 +71,15 @@ function buildUseCaseUrl(target: Language, info: UseCasePathInfo): string {
   if (info.isHub) {
     return `${prefix}/${segs.hub}`;
   }
+  if (info.isConsultorHub) {
+    return `${prefix}/${segs.hub}/${segs.consultorHubSlug}`;
+  }
   const spoke = ALL_USE_CASES.find(uc => uc.id === info.spokeId);
   if (!spoke) return prefix || '/';
-  const typeSeg = info.type === 'role' ? segs.role : info.type === 'concept' ? segs.concept : segs.task;
+  const typeSeg = info.type === 'role' ? segs.role
+    : info.type === 'concept' ? segs.concept
+    : info.type === 'consultor' ? segs.consultor
+    : segs.task;
   return `${prefix}/${segs.hub}/${typeSeg}/${spoke.slug[target]}`;
 }
 
