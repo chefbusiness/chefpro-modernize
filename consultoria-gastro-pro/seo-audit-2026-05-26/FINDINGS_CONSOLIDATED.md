@@ -1,235 +1,262 @@
-# SEO Audit Consultoría Gastro Pro — FINDINGS CONSOLIDATED 2026-05-26
+# SEO Audit Consultoría Gastro Pro — FINDINGS CONSOLIDATED 2026-05-26 (v2)
 
-> 6 de 7 agentes vueltos. Pendiente: auditoría técnica transversal.
-
----
-
-## 🚨 REGLA NEGOCIO IMPOSED BY USER (priority HIGH)
-
-**Términos profesionales internacionales — NO TRADUCIR en ningún idioma**:
-
-- **Barista** = especialista en latte art / café de especialidad (global)
-- **Bartender** = mixology / cocktelería de autor (global)
-- **Sommelier** = profesional del vino (global)
-- **Chocolatier** = chocolatería artesanal (global)
-- **Pizzaiolo** = pizzero italiano AVPN (global)
-- **Pâtissier** = pastelero alta cocina francés (global)
-
-→ **Descartar** recomendación FR de cambiar "Barista" → "Café de Spécialité". Mantener "Barista Consultant" en FR. Aplica equivalentemente en los otros idiomas.
+> 7/7 agentes completados. Reescrito tras feedback crítico del user.
 
 ---
 
-## EN (Gastro Consultancy Pro) — Mercado US/UK/CA/AU/global
+## 🔒 NOMBRES OFICIALES DE LOS 10 AGENTES (INMUTABLES)
 
-### Bugs de H1 (volume mismatch crítico)
+Cada landing del módulo es la página de un **agente IA con nombre propio**. El H1 = nombre del agente = **MARCA REGISTRADA del producto**. NO se cambia bajo ningún concepto. Las recomendaciones de los 7 agentes de keyword research que sugerían renombrar el H1 quedan **DESCARTADAS**.
 
-| Slug | H1 actual | H1 propuesto | Ratio mejora |
-|---|---|---|---|
-| chef-consultor | "Consultant Chef Pro" | **Chef Consultant** | ×3 |
-| barista-consultor | "Barista Consultant Pro" | **Coffee Shop & Barista Consultant** | ×10 (mantener barista como término global) |
-| bartender-consultor | "Bartender Consultant Pro" | **Bar, Cocktail & Bartender Consultant** | ×8 (mantener bartender) |
-| baker-consultor | "Baker Consultant Pro" | **Bakery & Bread Consultant** | ×5 |
-| pizzero-consultor | "Pizza Chef Consultant Pro" | **Pizza, Pizzeria & Pizzaiolo Consultant** | ×6 |
-| consultor-gastronomico | "Gastronomy Consultant" | **Restaurant & F&B Consultant** | head term |
+| # | ES | EN | IT | FR | DE | PT | NL |
+|---|---|---|---|---|---|---|---|
+| 1 | Consultor Gastronómico | Gastronomy Consultant | Consulente Gastronomico | Consultant Gastronomique | Gastronomie-Berater | Consultor Gastronômico | Gastronomisch Adviseur |
+| 2 | Chef Consultor Pro | Chef Consultant Pro | Chef Consulente Pro | Chef Consultant Pro | Chef-Berater Pro | Chef Consultor Pro | Chef Consultant Pro |
+| 3 | Heladero Consultor Pro | Gelato & Ice Cream Consultant Pro | Gelatiere Consulente Pro | Glacier Consultant Pro | Eisdiele-Berater Pro | Sorveteiro Consultor Pro | IJssalon Adviseur Pro |
+| 4 | Chocolatero Consultor Pro | Chocolatier Consultant Pro | Cioccolatiere Consulente Pro | Chocolatier Consultant Pro | Chocolatier-Berater Pro | Chocolateiro Consultor Pro | Chocolatier Adviseur Pro |
+| 5 | Pastelero Consultor Pro | Pastry Chef Consultant Pro | Pasticciere Consulente Pro | Pâtissier Consultant Pro | Konditor-Berater Pro | Confeiteiro Consultor Pro | Banketbakker Adviseur Pro |
+| 6 | Pizzero Consultor Pro | Pizza Chef Consultant Pro | Pizzaiolo Consulente Pro | Pizzaïolo Consultant Pro | Pizza-Berater Pro | Pizzaiolo Consultor Pro | Pizza Chef Adviseur Pro |
+| 7 | Barista Consultor Pro | Barista Consultant Pro | Barista Consulente Pro | Barista Consultant Pro | Barista-Berater Pro | Barista Consultor Pro | Barista Adviseur Pro |
+| 8 | Sommelier Consultor Pro | Sommelier Consultant Pro | Sommelier Consulente Pro | Sommelier Consultant Pro | Sommelier-Berater Pro | Sommelier Consultor Pro | Sommelier Adviseur Pro |
+| 9 | Bartender Consultor Pro | Bartender Consultant Pro | Bartender Consulente Pro | Bartender Consultant Pro | Bartender-Berater Pro | Bartender Consultor Pro | Bartender Adviseur Pro |
+| 10 | Panadero Consultor Pro | Baker Consultant Pro | Panettiere Consulente Pro | Boulanger Consultant Pro | Bäcker-Berater Pro | Padeiro Consultor Pro | Bakker Adviseur Pro |
 
-### Gaps de contenido universales
-
-1. **Pricing/Fees section** faltante. PAA #1: "how much does X consultant charge?". Ranges:
-   - Restaurant consultant: $100-300/hr
-   - Chef consultant: $100-300/hr
-   - Sommelier: $300-1000/día, $1500/wine list
-   - Coffee shop consultant: $75-750/hr
-   - Bar consultant: $25-96/hr
-2. **Startup Costs** en consumer-facing (gelato/pizza/coffee/bakery/chocolate). Volumen ×5-20 mayor.
-3. **Posicionamiento competitivo vs SaaS players** (Tastewise/Nory/Toast). Blue ocean — nadie ranquea por "AI for [consultant role]".
-4. **FAQs no son PAA verbatim** — sustituir por preguntas exactas del PAA.
-5. **schema.org Service sin priceRange real** — hoy dice 0-95 EUR, debería tener rangos reales del nicho.
+→ **Estos H1 son inmutables.** La SEO se gana en:
+1. `heroSubtitle` (debajo del H1)
+2. H2 de cada sección
+3. `seo.title` / `seo.description` (meta tags)
+4. `seo.keywords`
+5. Body copy + FAQs (PAA verbatim)
 
 ---
 
-## FR (Conseil Gastro Pro) — Mercado FR/BE/CH/QC
+## 🚨 BUGS TÉCNICOS REALES (del audit transversal del último agente)
 
-### Bug sistémico: TODAS las H1 con orden invertido
+### BUGS CRÍTICOS
 
-El francés natural usa `Consultant [Métier]`, no `[Métier] Consultant`. Renames:
+#### BUG-1 · Hub UI fallback a ES para 5 idiomas (FR/DE/IT/PT/NL)
+- **Archivo**: `src/pages/ConsultoriaGastroProHub.tsx:140` — `const ui = UI[lang] || UI.es;`
+- **Síntoma**: `UI` solo define `es` y `en`. FR/DE/IT/PT/NL ven badge, métricas, "¿Para quién?", CTAs, **seoTitle/seoDescription/seoKeywords todos en español**.
+- **Impacto**: ALTO. Los 5 hubs no-ES tienen `<title>` y meta en español → duplicate title con hub ES + bounce alto + JSON-LD `inLanguage` mismatch.
+- **Fix**: Añadir bloques fr/de/it/pt/nl al objeto `UI` (líneas 49-115) con copy localizado.
 
-| Slug | H1 propuesto |
+#### BUG-2 · Spoke UI shell fallback a ES para 50 spokes (5 idiomas × 10)
+- **Archivo**: `src/pages/UseCasePage.tsx:138` — mismo patrón.
+- **Síntoma**: 50 spokes muestran `ctaPrimary` ("Empezar gratis"), `siblingHeadingConsultor` ("Otros Agentes de Consultoría Gastro Pro"), `beforeAfterTitle`, `galleryAltSuffix` (alt text) y `serviceTypeConsultor` (Service schema) en español.
+- **Impacto**: ALTO. Botones/headings ES en páginas FR/DE/IT/PT/NL + alt text parcialmente ES.
+- **Fix**: Añadir bloques fr/de/it/pt/nl al objeto `UI` en `UseCasePage.tsx:34-109`.
+
+#### BUG-3 · `app.category` en español en los 60 spokes no-ES
+- **Archivos**: `use-cases-content.{en,fr,de,it,pt,nl}.consultor.ts`
+- **Síntoma**: Valores `category: 'Conceptos de Negocio' | 'Creatividad Culinaria' | 'Herramientas y Utilities' | 'Contenidos y RRSS' | 'Gastro Profile Pro'` sin traducir.
+- **Decisión necesaria del user**: ¿son marcas internas (como "Cocina Creativa") que se mantienen ES en todos los idiomas, o se traducen?
+- **Recomendación**: mantener ES porque son **clasificaciones internas del catálogo de agentes IA del módulo Apps** (mismo patrón que `apps[].name`).
+
+#### BUG-4 · Hub no emite hreflang custom; SEOHead genera URLs erróneas
+- **Archivos**: `ConsultoriaGastroProHub.tsx:184` + `SEOHead.tsx:81-92`
+- **Síntoma**: Hub pasa canonical correcto pero NO pasa `disableAutoHreflang`. SEOHead genera `<link hreflang="en" href="/en/usos/consultoria-gastro-pro">` (URL 404 — la real es `/en/use-cases/gastro-consultancy-pro`).
+- **Impacto**: ALTO. Hreflang inválidos en hub contradicen el sitemap (que sí está bien). GSC reportará errores "alternate page is not canonical".
+- **Fix**:
+  1. Añadir `disableAutoHreflang` a `<SEOHead>` en línea 184.
+  2. Añadir bloque `<Helmet>` con loop sobre los 7 idiomas usando los `segments` correctos (igual que `UseCasePage.tsx:252-260`).
+
+#### BUG-5 · Meta titles >60 chars en TODOS los spokes (7 idiomas)
+- **Archivos**: `use-cases-content.*.consultor.ts` campo `seo.title`
+- **Longitudes actuales**:
+  - ES: 78–98 chars
+  - EN: 75–95
+  - FR: 83–103
+  - DE: 78–99
+  - IT: 77–96
+  - PT: 80–98
+  - NL: 81–106
+- **Síntoma**: Google trunca a ~580px (≈55-60 chars). Se pierde sufijo " | AI Chef Pro" y a veces keyword secundario.
+- **Fix**: Reescribir cada `seo.title` a ≤60 chars manteniendo el nombre del agente al inicio.
+
+#### BUG-6 · Meta descriptions >160 chars en TODOS los spokes
+- **Archivos**: `use-cases-content.*.consultor.ts` campo `seo.description`
+- **Longitudes actuales**: 168–249 chars (Google muestra ~155-160).
+- **Síntoma**: CTAs invisibles ("Empieza gratis" se trunca) → CTR menor.
+- **Fix**: Reescribir cada `seo.description` a ≤155 chars. Patrón: `<benefit principal> + <2-3 keywords secundarias del SERP> + <CTA corto>`.
+
+#### BUG-7 · Comentarios de archivo con "Consultoría" en EN/FR/IT/NL
+- **Archivos**: `use-cases-content.{en,fr,it,nl}.consultor.ts:1`
+- **Impacto**: NULO en SEO (comentario no se renderiza). Cosmético.
+- **Fix opcional**: cambiar a "Gastro Consultancy Pro" / "Conseil Gastro Pro" / etc.
+
+### BUGS MEDIOS
+
+#### MED-1 · `apps[].name` en EN traducidos a marcas inexistentes en la plataforma
+- **Archivo**: `use-cases-content.en.consultor.ts`
+- **Síntoma**: ES usa nombres reales (Cocina Creativa, Mermas GenCal, ID Alérgenos, Gerente de Restaurante Pro). EN los traduce a "Creative Kitchen", "Yield Calculator", "Allergen ID", "Restaurant Manager Pro" — **estos no existen en la plataforma `apps.ts`**.
+- **Impacto**: Brand fragmentation + `LinkifyText` no crea enlaces internos a app real.
+- **Decisión user requerida**: ¿mantenemos nombres ES en todos los idiomas (recomendado, igual que "Pack APPCC", "Kit Escandallos Pro")? Si sí, revertir las 11 traducciones en EN.
+
+#### MED-2 · `Service.areaServed` incorrecta para FR/DE/IT/PT/NL
+- **Archivo**: `UseCasePage.tsx:204` — solo bifurca `en` vs default (ES/EU/LATAM).
+- **Fix**: Mapear por idioma:
+```ts
+const AREA_SERVED = {
+  es: ['ES','EU','LATAM'],
+  en: ['US','UK','CA','AU','EU'],
+  fr: ['FR','BE','CH','LU','CA-QC','EU'],
+  de: ['DE','AT','CH','EU'],
+  it: ['IT','CH','SM','EU'],
+  pt: ['PT','BR','AO','MZ','EU'],
+  nl: ['NL','BE','SR','EU'],
+};
+```
+
+#### MED-3 · `Service.offers.offerCount=4` y `highPrice=95` desactualizados
+- **Archivo**: `UseCasePage.tsx:212-219`
+- **Fix**: cambiar a `offerCount: '5', lowPrice: '0', highPrice: '950'` (Premium Plus Anual €950).
+
+#### MED-4 · Sitemap: hubs no-ES con `<url>` compacto sin hreflang reciprocal
+- **Archivo**: `public/sitemap.xml`
+- **Fix**: Expandir los 6 bloques compactos hub i18n con `<xhtml:link>` para los 7 alternates + x-default.
+
+#### MED-5 · `Service.audience.audienceType` usa el badge en lugar de un sustantivo canónico
+- Impacto bajo, improvement opportunity.
+
+#### MED-6 · OG hub image única para 7 idiomas (texto ES "Consultoría Gastro Pro")
+- Impacto bajo en ranking (afecta CTR en redes).
+- Fix opcional: generar 6 variantes localizadas (~$0.40 Nano Banana 2).
+
+### LOW
+
+- **LOW-1**: `seoKeywords` del hub ES tiene 26 keywords (recortar a 8-10).
+- **LOW-2**: Precargar `galleryImages[0]` con `rel=preload` (LCP candidate).
+- **LOW-3**: `CollectionPage.hasPart` sin `provider`.
+- **LOW-4**: Sufijo gallery alt en ES para 5 idiomas (consecuencia del BUG-2).
+- **LOW-5**: `LinkifyText` no procesa `apps[].name`.
+
+---
+
+## 🌍 KEYWORDS SERP por idioma (para integrar en SUBTITLE / H2 / META / FAQ / BODY — NO en H1)
+
+### EN — Mercado US/UK/global
+
+Cada spoke necesita en subtítulo / H2 / meta description / FAQs los **head terms del SERP real** (que no son los nombres del agente):
+
+| Spoke (H1 inmutable) | Keywords SERP para SUBTITLE/H2/META/FAQ |
 |---|---|
-| consultant-gastronomique | **IA pour Consultants en Restauration** |
-| chef-consultant | **IA pour Chef Consultant** (quitar Pro) |
-| glacier-consultant | **IA pour Consultants en Glacerie Artisanale** |
-| chocolatier-consultant | **IA pour Consultants Chocolatiers Artisans** |
-| patissier-consultant | **IA pour Consultants Pâtissiers** |
-| pizzaiolo-consultant | **IA pour Consultants Pizzaiolos** |
-| barista-consultant | **IA pour Barista Consultants** ⚠️ (mantener "barista" — descartar "Café de Spécialité") |
-| sommelier-consultant | **IA pour Sommeliers Consultants** |
-| bartender-consultant | **IA pour Bartender Consultants** ⚠️ (mantener "bartender" como término global) |
-| boulanger-consultant | **IA pour Consultants en Boulangerie Artisanale** |
+| Gastronomy Consultant | restaurant consultant, F&B consultant, restaurant consulting services, food and beverage consultant |
+| Chef Consultant Pro | chef consultant, consulting chef, chef consultant fees, chef consulting services |
+| Gelato & Ice Cream Consultant Pro | ice cream consultant, gelato consultant, how to open a gelato shop, ice cream business consulting |
+| Chocolatier Consultant Pro | chocolate consultant, bean to bar consulting, chocolate business consultant |
+| Pastry Chef Consultant Pro | pastry consultant, dessert menu development, pastry consulting services |
+| Pizza Chef Consultant Pro | pizza consultant, pizzeria consultant, how to open a pizza shop, pizza business consultant |
+| Barista Consultant Pro | coffee shop consultant, barista consulting, specialty coffee consulting |
+| Sommelier Consultant Pro | wine consultant, hire a sommelier, wine list consultant, restaurant wine program |
+| Bartender Consultant Pro | bar consultant, cocktail consultant, bar program development, cocktail menu development |
+| Baker Consultant Pro | bakery consultant, bread consultant, artisan bread consultant, bakery startup consulting |
 
-### Reglas FR
-- Eliminar "Pro" sistemático
-- HORECA → **CHR** para FR puro
-- Integrar prestigio cultural: MOF, métiers de bouche, artisan, café de spécialité (como cluster keyword secundario, no en H1), AVPN
-- Hub H1 SEO: **Outils IA pour Consultants CHR et Métiers de Bouche**
+### FR — Mercado FR/BE/CH/QC
 
----
+Términos canónicos en SUBTITLE/H2/META/FAQ (mantener H1 oficial intacto):
 
-## DE (Gastro Beratung Pro) — Mercado DE/AT/CH-DE
+- "Consultant en restauration" (head term, >>> "consultant gastronomique")
+- "CHR" (no HORECA en FR puro)
+- "Métiers de bouche" (paraguas semántico)
+- "MOF" (Meilleur Ouvrier de France) — autoridad cultural
+- "Artisan" (sello de calidad)
+- "Café de spécialité" (cluster barista — secundario)
+- Para bartender: añadir también "mixologue/barman" en body (mantener "Bartender" en H1)
+- Para bakery: "boulangerie artisanale", "boulanger-pâtissier"
+- Para pizza: "pizzeria artisanale", "AVPN"
 
-### Bug sistémico: 7/10 H1 con composiciones artificiales
+### DE — Mercado DE/AT/CH-DE
 
-Alemán natural junta palabras SIN guión: `Gastronomieberatung`, `Konditoreiberatung`, `Bäckereiberatung`.
+- "Gastronomieberatung" (head term sin guión en body — H1 mantiene guión por brand)
+- "BAFA-Förderung" (subvención 50-70% para KMU — hook único)
+- Tarifas referencia: "150-200€/h, 1.200-1.600€/Tag" (DEHOGA)
+- "IHK-geprüft" (autoridad)
+- "Konzeptentwicklung", "Businessplan", "Standortanalyse"
+- Para chef: "Küchencoaching", "Küchenchef" en body (H1 mantiene "Chef-Berater Pro")
+- Para barista: "Specialty Coffee", "Kaffeebar" en body
+- Para bakery: "Bäckerei eröffnen", "Backstube Konzept"
 
-| Slug | H1 propuesto |
-|---|---|
-| gastronomie-berater | **KI-gestützte Gastronomieberatung** |
-| chef-berater | **KI für Küchenchef-Coaching** (CRÍTICO: "Chef-Berater" no existe DE) |
-| eisdiele-berater | **KI für Eisdielen- und Gelateria-Beratung** |
-| chocolatier-berater | **KI für Chocolatier und Schokoladen-Beratung** |
-| konditor-berater | **KI für Konditorei- und Patisserie-Beratung** |
-| pizza-berater | **KI für Pizzeria-Beratung und Pizzaiolo-Coaching** |
-| barista-berater | **KI für Barista-Coaching und Café-Beratung** ⚠️ (mantener barista) |
-| sommelier-berater | **KI für Sommeliers und Weinberatung** |
-| bartender-berater | **KI für Bartender-Coaching und Bar-Beratung** ⚠️ (mantener bartender; "Barkeeper" como variante secundaria) |
-| baecker-berater | **KI für Bäckereiberatung und Backstube-Coaching** |
+### IT — Mercado IT
 
-### Reglas DE
-- Eliminar "Pro" (anglicismo barato)
-- Compuestos SIN guión
-- Doble H2: H1 consultor B2B + H2 informacional ("Was macht ein X?", "Wie eröffne ich Y?")
-- **Subvención BAFA** como hook único (50-70% subvention)
-- Tarifas referencia: 150-200€/h, 1.200-1.600€/día (DEHOGA)
+- "Consulenza ristorazione" (>>> "consulenza gastronomica") en body
+- **Doble sigla "AI/IA"** en meta + body (Italia es híbrida — caso único)
+- "Aprire [attività]" cluster secundario (×5-10 volumen)
+- "Maestro Gelatiere / Maestro Cioccolatiere / Maestro Pasticcere / Maestro Pizzaiolo" — figuras premium
+- "AVPN" (pizza napoletana), "AIS" (sommelier), "Pastry Chef Consultant" (premium)
+- Normativa: "ATECO", "SAB", "HACCP", "SCIA al SUAP"
+- **Pasticc*e*re** (grafía DOP) en body — pero H1 mantiene "Pasticciere Consulente Pro" oficial
 
----
+### PT — Mercados PT + BR (estratégico crítico)
 
-## IT (Consulenza Gastro Pro) — Mercado IT
+- Estrategia **pt-BR-primary + pt-PT-secondary** en body (BR es 20× más grande online)
+- Doble grafía en body: "gastronômica/gastronómica", "cafeteria/cafetaria"
+- Bloques duales por spoke: "Para Brasil" (SEBRAE, Abrasel, ANVISA, R$) + "Para Portugal" (ASAE, Turismo de Portugal, €)
+- Mencionar variantes léxicas: "sorveteiro (BR) / mestre gelateiro (PT)", "confeiteiro (BR) / pasteleiro (PT)", "padaria & pastelaria (PT)"
+- Para sommelier: H2 "(também escanção em Portugal)"
 
-### Bug sistémico: composiciones artificiales en 5/10
+### NL — Mercados NL + BE-Flandes
 
-Italiano natural: `Consulente [Settore]` o `Consulenza [Settore]`, no `[Mestiere] Consulente`.
+- **"horeca"** = palabra-matriz obligatoria 4× por página (H1/H2/meta/CTA)
+- Autoridades a citar: NBOV (panaderos), SVH (Pizzaiolo certificado), KHN, KVK, NVWA, HACCP
+- Cluster "starten / openen / overnemen" — 60-70% del volumen B2B
+- Diferenciación: NL (KVK, KHN, NVWA) vs BE (Syntra, Horeca Vlaanderen, FAVV)
+- Brand wordmark "Gastro Advies Pro" en H1 oficial — meta title pattern: `[Agente Pro] — AI Horeca Adviseur | aichef.pro`
 
-| Slug | H1 propuesto |
-|---|---|
-| consulente-gastronomico | **AI per Consulente Ristorazione** |
-| chef-consulente | **AI per Chef Consulente** (quitar Pro) |
-| gelatiere-consulente | **AI per Consulenza Gelateria Artigianale** o **Maestro Gelatiere** |
-| cioccolatiere-consulente | **AI per Consulenza Cioccolateria** o **Maestro Cioccolatiere** |
-| pasticciere-consulente | **AI per Pastry Chef Consultant** (premium) o **AI per Consulente Pasticcere** (DOP: "pasticc*e*re") |
-| pizzaiolo-consulente | **AI per Pizzaiolo Consulente** + variante Pizza Napoletana en H2 |
-| barista-consulente | **AI per Barista Consulente — Bar, Caffetteria & Specialty Coffee** ⚠️ (mantener barista; disambiguar de bartender) |
-| sommelier-consulente | **AI per Sommelier Consulente** + H2 Carta Vini + Cantina |
-| bartender-consulente | **AI per Bartender Consulente** + meta Bar Consultant + Mixology ⚠️ (mantener bartender) |
-| panettiere-consulente | **AI per Consulenza Panificio** |
+### ES — Mercados ES + LATAM
 
-### Reglas IT
-- **Doble sigla "AI/IA"** en H1 (Italia es híbrida, caso único)
-- Pivote estructural: "Consulenza [Settore]" >> "[Mestiere] Consulente"
-- Anchor secundario "aprire [attività]" en H2/meta (×5-10 volumen)
-- Figuras premium: Maestro Pasticcere, Maestro Gelatiere, Maestro Cioccolatiere, Executive Chef, AVPN, AIS
-- Normativa IT específica: ATECO, SAB, HACCP, SCIA al SUAP
-- **Pasticc*e*re** (no "pasticciere") — grafía DOP
-
----
-
-## PT (Consultoria Gastro Pro) — Mercados PT + BR
-
-### Bug estratégico crítico: pt-PT pierde 90% del mercado lusófono
-
-BR 95% / PT 5% del tráfico online. Publicamos en pt-PT puro → invisibles para BR.
-
-| Slug | H1 propuesto |
-|---|---|
-| consultor-gastronomico | **IA para Consultor Gastronômico / Gastronómico Pro** (doble grafía) |
-| chef-consultor | **IA para Chef Consultor Pro** (OK, universal) |
-| sorveteiro-consultor | **IA para Sorveteiro / Mestre Gelateiro Consultor Pro** |
-| chocolateiro-consultor | **IA para Chocolatier / Chocolateiro Consultor Pro** ⚠️ (mantener chocolatier) |
-| confeiteiro-consultor | **IA para Confeiteiro / Pasteleiro Consultor Pro** (CRÍTICO BR/PT split) |
-| pizzaiolo-consultor | OK universal |
-| barista-consultor | **IA para Barista Consultor Pro** ⚠️ (mantener barista; mencionar café de especialidade) |
-| sommelier-consultor | + H2 "(também escanção em Portugal)" |
-| bartender-consultor | **IA para Bartender / Barman Consultor Pro** ⚠️ (mantener bartender, PT usa barman) |
-| padeiro-consultor | **IA para Padeiro / Mestre Padeiro Consultor Pro** + padaria & pastelaria |
-
-### Reglas PT
-- **Estrategia pt-BR-primary + pt-PT-secondary** (BR es 20× más grande online)
-- Doble grafía en body (no en URL): "gastronômica/gastronómica", "cafeteria/cafetaria"
-- **Hreflang genérico `pt`** (no `pt-PT` ni `pt-BR`)
-- Bloques duales "Para Brasil" (SEBRAE, Abrasel, ANVISA, R$) y "Para Portugal" (ASAE, Turismo de Portugal, €)
-- Renames críticos: Sorveteiro/Gelateiro, Confeiteiro/Pasteleiro
+- H1 = nombre del agente oficial. H2 SEO con keyword canónico hispano.
+- Spoke sommelier: **H2 obligatorio "Sommelier o sumiller: el mismo consultor con IA"** (España normativa usa sumiller)
+- Para todos: **bloque "Cuánto cobra"** universal (PAA #1 en español)
+- Para chef: variante MX "chef ejecutivo" en body
+- Para pastelero: "obrador" (ES) / "taller de pastelería" (LATAM) en body
+- Para panadero: cross-sell con Guía Panadería con Obrador €65 LIVE
+- Para bartender: cross-sell con Kit Escandallos €12 LIVE
+- Variante MX "consultor restaurantero" en hub
+- Fase 2 (medio plazo): valorar spoke dedicado MX
 
 ---
 
-## NL (Gastro Advies Pro) — Mercados NL + BE-Flanders
+## 📋 PLAN DE IMPLEMENTACIÓN (propuesta — esperar OK del user)
 
-### Bug clave: "Horeca" es palabra-matriz obligatoria
+### Fase A — Bugs CRÍTICOS i18n (1 commit grande)
+1. BUG-1: traducir UI strings hub a fr/de/it/pt/nl
+2. BUG-2: traducir UI strings UseCasePage a fr/de/it/pt/nl
+3. BUG-4: hub emite hreflang custom + `disableAutoHreflang`
+4. Build verify
 
-Sin "horeca" no rankeas B2B sector NL/BE. Volumen masivo.
+### Fase B — Bugs CRÍTICOS meta (1 commit por idioma o uno grande)
+5. BUG-5: reescribir 70 `seo.title` a ≤60 chars (10 spokes × 7 idiomas)
+6. BUG-6: reescribir 70 `seo.description` a ≤155 chars con CTA
+7. BUG-7 (opcional): limpiar comentarios "Consultoría" en archivos EN/FR/IT/NL
 
-| Slug | H1 propuesto |
-|---|---|
-| gastronomisch-adviseur | **AI Horeca Adviseur — slimmer adviseren voor restaurants** |
-| chef-consultant | **AI Chef Consultant** (mantener inglés, dominante NL) — Culinair Adviseur en H2 |
-| ijssalon-adviseur | **AI voor IJssalon Starten** (60-70% tráfico es "starten") |
-| chocolatier-adviseur | **AI Chocolatier Adviseur — van chocolatier naar eigen chocolaterie** ⚠️ (mantener chocolatier) |
-| banketbakker-adviseur | **AI Banketbakker Adviseur — banketbakkerij starten met AI** |
-| pizza-chef-adviseur | **AI Pizza Consultant — Pizzaiolo Coach** ⚠️ (pizzaiolo certificado SVH) |
-| barista-adviseur | **AI Barista Coach — Koffiebar Starten met AI** ⚠️ (mantener barista) |
-| sommelier-adviseur | **AI Sommelier — Wijnkaart Samenstellen in minuten** ⚠️ (mantener sommelier) |
-| bartender-adviseur | **AI Bartender Adviseur — Cocktailbar starten met AI** ⚠️ (mantener bartender) |
-| bakker-adviseur | **AI Bakker Adviseur — Bakkerij starten of overnemen** |
+### Fase C — Enrichment (1 commit)
+8. Integrar keywords SERP por idioma en `heroSubtitle` + `featuresTitle` + FAQs (PAA verbatim) — NO tocar H1
+9. MED-2: AREA_SERVED por idioma
+10. MED-3: actualizar Service.offers a 5 SKUs / €950
+11. MED-4: expandir sitemap hubs no-ES con hreflang reciprocal
 
-### Reglas NL
-- **"horeca"** obligatorio 4× por página (H1/H2/meta/CTA)
-- Citar autoridades: NBOV (panaderos), SVH (Pizzaiolo cert), KHN, KVK, NVWA, HACCP
-- Atacar cluster "starten / openen / overnemen" — 60-70% del volumen B2B
-- Diferenciar NL vs BE: NL (KVK, KHN, NVWA), BE (Syntra, Horeca Vlaanderen, FAVV)
-- **Gastro Advies Pro** mantener como brand wordmark, pero meta-title: `AI [Beroep] Consultant — Gastro Advies Pro`
-- Préstamos profesionales: barista, bartender, sommelier, chocolatier, pizzaiolo, patissier — NUNCA traducir
+### Fase D — Decisiones pendientes
+- BUG-3 (categories ES en todos los idiomas): ¿mantener brand o traducir?
+- MED-1 (apps[].name EN traducidos a marcas inexistentes): ¿revertir a nombres ES?
+- MED-6 (OG hub image localizada): ¿generar 6 variantes ~$0.40?
+- ES sommelier "sumiller" H2: confirmar
 
----
-
-## ES (Consultoría Gastro Pro) — Mercados ES + LATAM
-
-### Hallazgo: mercado fragmentado entre España y LATAM (especialmente MX)
-
-**Posicionamiento actual**: 70-80% alineado para España, 50-60% para LATAM, agujero crítico en MX.
-
-| Slug | H1 propuesto + H2 SEO |
-|---|---|
-| consultor-gastronomico | H1: actual (diferenciación) + **H2 "Software para consultor / asesor gastronómico"** + variante MX "consultor restaurantero" |
-| chef-consultor | H1 OK + **H2 "Diferencia chef consultor vs asesor gastronómico"** + variante MX "chef ejecutivo" |
-| heladero-consultor | H1 OK + **H2 "Software para consultores de heladerías artesanales"** + cluster "abrir heladería rentable" |
-| chocolatero-consultor | H1 OK + **H2 con "maestro chocolatero", "bean to bar", "abrir chocolatería"** |
-| pastelero-consultor | H1 OK + **H2 con "obrador" (ES) / "taller de pastelería" (LATAM)** |
-| pizzero-consultor | H1 OK + **H2 "Asesora apertura de pizzerías napolitanas con IA"** (mayor potencial SEO del módulo) |
-| barista-consultor | H1 OK + **H2 con "café de especialidad", "latte art profesional", "tostado"** ⚠️ (mantener barista) |
-| sommelier-consultor | **CRÍTICO**: H1 OK + **H2 obligatorio "Sommelier o sumiller: el mismo consultor con IA"** (España usa sumiller normativo) |
-| bartender-consultor | H1 OK + **H2 "Consultor de coctelería"** + cross-sell Kit Escandallos €12 ⚠️ (mantener bartender) |
-| panadero-consultor | H1 OK + **H2 "De masa madre a P&L"** + cross-sell Guía Panadería con Obrador €65 LIVE |
-
-### Reglas ES
-- **H1 = diferenciación, H2 = SEO** (capturar ambas intenciones sin canibalizar)
-- **Sumiller/sommelier** dual obligatorio en spoke sommelier (España normativa vs LATAM coloquial)
-- **Bloque "Cuánto cobra" universal** — PAA #1 en español
-- **Variante MX** en hub: párrafo "Sinónimos por país" con "consultor restaurantero" + "consultor de A&B"
-- Fase 2 LATAM (medio plazo): valorar spoke dedicado `/usos/consultoria/consultor-restaurantero` para MX
-- Aprovechar hueco "software/IA + nicho artesanal" — sin competencia en heladero/chocolatero/panadero/barista/bartender
-
----
-
-## PENDIENTE
-
-- 🟡 Auditoría técnica transversal (agente `aff400f32094746a5` aún corriendo)
-- Síntesis final + plan de implementación por commits
+### Fase E — LOW (opcional, futuro)
+- Recortar keywords del hub ES
+- LinkifyText procesa app.name
+- Preload galleryImages[0]
+- CollectionPage.hasPart provider
+- AI Overviews / Perplexity optimization (TL;DR snippets, bullets en personalizationBody, internal linking 9 siblings)
 
 ---
 
 ## Estado de commits LIVE
 
 ```
-HEAD: f3ecb8d
-f3ecb8d  feat(seo): sitemap +66 URLs i18n
-93553ca  feat(og-meta): social previews FR/DE/IT/PT/NL
+HEAD: ca6471e (backup docs)
+ca6471e  docs(seo-audit): backup findings consolidated (6/7 agents back)
+f3ecb8d  feat(seo): sitemap +66 URLs i18n (592→658)
+93553ca  feat(og-meta): social previews FR/DE/IT/PT/NL (55 entries)
 b3128c6  feat(i18n): 6 idiomas adicionales con contenido nativo
 553d1e4  feat(seo): sitemap +11 URLs ES
 4d4a0f9  fix(security): no API key hardcoded
@@ -238,6 +265,8 @@ e035e08  feat: 71 imgs Nano Banana 2
 755edc0  feat(consultoria): hub + 10 landings ES
 ```
 
+**Los nombres oficiales de los 10 agentes están INTACTOS en código LIVE.** Ningún H1 fue modificado.
+
 ## Restricción térmica
 
-CPU pico hoy: 61.44°C. Estrategia: Writes ligeros + esperar agentes (cloud, no CPU local).
+CPU pico hoy: 65.31°C (LÍMITE). Estrategia: Edits ligeros, sin Bash pesado, sin Playwright. Esperar OK del user antes de implementar Fase A-C.
