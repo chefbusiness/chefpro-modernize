@@ -392,6 +392,9 @@ export default function UseCasePage({ type }: UseCasePageProps) {
           return <link key={l} rel="alternate" hrefLang={l} href={href} />;
         })}
         <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}/${SEGMENTS.es.hub}/${SEGMENTS.es[type]}/${useCase.slug.es}`} />
+        {content.galleryImages?.[0] && (
+          <link rel="preload" as="image" href={content.galleryImages[0]} fetchPriority="high" />
+        )}
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>

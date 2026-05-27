@@ -1,4 +1,4 @@
-// Manual content for Consultoría Gastro Pro spokes (10 consultor agents) — DUTCH.
+// Manual content for Gastro Advies Pro spokes (10 adviseur agents) — DUTCH.
 // Imported and merged into USE_CASES_CONTENT_NL by use-cases.ts.
 
 import type { UseCaseContent } from './use-cases';

@@ -82,7 +82,7 @@ const UI: Record<string, {
     finalCta: 'Probar gratis ahora',
     seoTitle: 'Consultoría Gastro Pro: 10 Agentes de IA para Consultores Gastronómicos | AI Chef Pro',
     seoDescription: 'Módulo de IA especializado para consultores gastronómicos, chefs consultores, sommeliers, bartenders, baristas, pasteleros, panaderos, pizzeros, heladeros y chocolateros que trabajan por proyectos. Empieza gratis.',
-    seoKeywords: 'consultor gastronómico IA, chef consultor IA, asesor gastronómico inteligencia artificial, consultoría restaurantes IA, sommelier consultor, bartender consultor, barista consultor, pastelero consultor, panadero consultor, pizzero consultor, heladero consultor, chocolatero consultor, agente IA consultoría hostelería',
+    seoKeywords: 'consultor gastronómico IA, asesor gastronómico, consultoría restaurantes IA, chef consultor, sommelier consultor, agente IA consultoría hostelería, software consultor restaurantes, consultor restaurantero',
   },
   en: {
     badge: 'Gastro Consultancy Pro',
@@ -111,7 +111,7 @@ const UI: Record<string, {
     finalCta: 'Try it free now',
     seoTitle: 'Gastro Consultancy Pro: AI for Restaurant & F&B Consultants | AI Chef Pro',
     seoDescription: 'AI module for restaurant & F&B consultants, chef consultants, sommeliers, bar consultants, coffee shop consultants, pastry, bakery, pizza, gelato & chocolate advisors. Start free.',
-    seoKeywords: 'restaurant consultant AI, F&B consultant software, chef consultant, sommelier consultant, bar consultant, coffee shop consultant, pastry consultant, bakery consultant, pizza consultant, gelato consultant, chocolate consultant, hospitality consulting AI, consulting chef tool',
+    seoKeywords: 'restaurant consultant AI, F&B consultant software, hospitality consulting AI, chef consultant, sommelier consultant, bar consultant, coffee shop consultant, bakery consultant',
   },
   fr: {
     badge: 'Conseil Gastro Pro',
@@ -140,7 +140,7 @@ const UI: Record<string, {
     finalCta: 'Tester gratuitement',
     seoTitle: 'Conseil Gastro Pro : 10 Agents IA pour Consultants en Restauration | AI Chef Pro',
     seoDescription: 'Module IA pour consultants en restauration, chef consultants, sommeliers, barmen, baristas, pâtissiers, boulangers, pizzaïolos, glaciers et chocolatiers en CHR. Démarrer gratuitement.',
-    seoKeywords: 'consultant en restauration IA, conseil CHR, métiers de bouche, consultant gastronomique, chef consultant, sommelier consultant, consultant cocktail, barista consultant, pâtissier consultant, boulanger consultant, pizzaïolo consultant, MOF, cabinet conseil restauration',
+    seoKeywords: 'consultant en restauration IA, conseil CHR, cabinet conseil restauration, consultant gastronomique, chef consultant, sommelier consultant, métiers de bouche, MOF',
   },
   de: {
     badge: 'Gastro Beratung Pro',
@@ -169,7 +169,7 @@ const UI: Record<string, {
     finalCta: 'Jetzt kostenlos testen',
     seoTitle: 'Gastro Beratung Pro: KI-Agenten für Gastronomieberater | AI Chef Pro',
     seoDescription: 'KI-Modul für Gastronomieberater, Restaurantberater, Sommeliers, Barberater, Barista-Coaches, Konditor-, Bäcker-, Pizza-, Eisdiele- und Chocolatier-Berater. BAFA-Förderung. Kostenlos starten.',
-    seoKeywords: 'Gastronomieberatung KI, Restaurantberatung Software, Gastronomieberater, BAFA-Förderung Beratung, Küchencoaching, Sommelier-Berater, Bar-Consulting, Barista-Coach, Konditorei-Beratung, Bäckereiberatung, Pizzeria-Beratung, KI Gastgewerbe',
+    seoKeywords: 'Gastronomieberatung KI, Restaurantberatung Software, Gastronomieberater, BAFA-Förderung Beratung, Küchencoaching, Sommelier-Berater, KI Gastgewerbe, IHK Beratung',
   },
   it: {
     badge: 'Consulenza Gastro Pro',
@@ -198,7 +198,7 @@ const UI: Record<string, {
     finalCta: 'Prova gratis ora',
     seoTitle: 'Consulenza Gastro Pro: AI per Consulenti Ristorazione | AI Chef Pro',
     seoDescription: 'Modulo AI per consulenti di ristorazione, chef consulenti, sommelier AIS, bartender, barista, pasticcieri, panettieri, pizzaioli AVPN, gelatieri e cioccolatieri artigianali. Inizia gratis.',
-    seoKeywords: 'consulente ristorazione AI, consulenza ristorazione, food consultant Italia, AI ristorazione, IA gastronomia, consulenza HORECA, chef consulente, sommelier AIS, consulenza pizzeria AVPN, consulenza gelateria artigianale, pasticceria consulenza, barista consulente, bartender mixology',
+    seoKeywords: 'consulente ristorazione AI, consulenza ristorazione, food consultant Italia, AI ristorazione, IA gastronomia, consulenza HORECA, chef consulente, sommelier AIS',
   },
   pt: {
     badge: 'Consultoria Gastro Pro',
@@ -227,7 +227,7 @@ const UI: Record<string, {
     finalCta: 'Testar grátis agora',
     seoTitle: 'Consultoria Gastro Pro: 10 Agentes de IA para Consultores Gastronômicos | AI Chef Pro',
     seoDescription: 'Módulo de IA para consultores gastronômicos/gastronómicos, chefs consultores, sommeliers, bartenders, baristas, confeiteiros, padeiros, pizzaiolos, sorveteiros e chocolateiros. Começar grátis.',
-    seoKeywords: 'consultor gastronômico IA, consultoria gastronômica, consultor A&B, consultor restaurantes, consultoria HORECA, chef consultor, sommelier consultor, consultor café especialidade, consultor coquetelaria, consultor confeitaria, consultor pastelaria, consultor padaria artesanal, consultor sorveteria, consultor chocolataria, consultor pizzaria',
+    seoKeywords: 'consultor gastronômico IA, consultoria gastronômica, consultoria gastronómica, consultor A&B, consultor restaurantes, consultoria HORECA, chef consultor, sommelier consultor',
   },
   nl: {
     badge: 'Gastro Advies Pro',
@@ -256,7 +256,7 @@ const UI: Record<string, {
     finalCta: 'Probeer nu gratis',
     seoTitle: 'Gastro Advies Pro: AI Horeca Adviseur en Restaurant Consultant | AI Chef Pro',
     seoDescription: 'AI-module voor horeca-adviseurs, restaurant consultants, sommeliers, bartenders, barista coaches, banketbakker- en bakker-adviseurs, pizza chef, ijssalon- en chocolatier-adviseurs.',
-    seoKeywords: 'horeca adviseur AI, restaurant consultant Nederland, horeca consultancy, gastronomisch adviseur, chef consultant culinair adviseur, sommelier wijnadviseur, bar consultant cocktail consultant, barista coach specialty coffee, banketbakker adviseur, bakker adviseur NBOV, pizza chef pizzaiolo SVH, ijssalon adviseur, chocolatier adviseur, horeca AI Nederland Vlaanderen',
+    seoKeywords: 'horeca adviseur AI, restaurant consultant Nederland, horeca consultancy, gastronomisch adviseur, culinair adviseur, sommelier wijnadviseur, bakker adviseur NBOV, horeca AI Vlaanderen',
   },
 };
 
@@ -321,6 +321,11 @@ export default function ConsultoriaGastroProHub() {
         name: content.h1,
         url: `${SITE_URL}${langPrefix}/${segs.hub}/${segs.consultor}/${slug}`,
         description: content.heroTagline,
+        provider: {
+          '@type': 'Organization',
+          name: 'AI Chef Pro',
+          url: SITE_URL,
+        },
       };
     }),
   };

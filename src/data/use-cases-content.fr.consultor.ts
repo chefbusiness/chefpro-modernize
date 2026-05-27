@@ -1,4 +1,4 @@
-// Manual content for Consultoría Gastro Pro spokes (10 consultor agents) — FRENCH.
+// Manual content for Conseil Gastro Pro spokes (10 consultant agents) — FRENCH.
 // Imported and merged into USE_CASES_CONTENT_FR by use-cases.ts (futuro merge).
 
 import type { UseCaseContent } from './use-cases';
