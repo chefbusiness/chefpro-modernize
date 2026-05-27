@@ -116,6 +116,50 @@
 - [Carta Estacional con IA](https://aichef.pro/usos/tarea/carta-estacional-con-ia): AI-driven seasonal menu design.
 - [Foto Gastronómica con IA](https://aichef.pro/usos/tarea/foto-gastronomica-con-ia): AI-driven food photography generation.
 
+## Consultoría Gastro Pro — Consulting Module (10 AI Agents · 7 Languages)
+
+A dedicated module of 10 specialized AI agents for **independent gastronomic consultants and advisors** running project-based engagements for restaurants, hotels, restaurant groups, food & beverage investors and franchises. Developed and trained alongside the team of consultants at [Chefbusiness Consultoría Gastronómica](https://chefbusiness.co), one of the leading hospitality consulting agencies in Spain and Latin America.
+
+### Module Hub (7 languages)
+
+- [Consultoría Gastro Pro Hub (ES)](https://aichef.pro/usos/consultoria-gastro-pro): canonical Spanish hub introducing the 10 AI consulting agents.
+- [Gastro Consultancy Pro Hub (EN)](https://aichef.pro/en/use-cases/gastro-consultancy-pro): English version (US/UK/global).
+- [Conseil Gastro Pro Hub (FR)](https://aichef.pro/fr/cas-d-usage/conseil-gastro-pro): French version (FR/BE/CH/QC).
+- [Gastro Beratung Pro Hub (DE)](https://aichef.pro/de/anwendungsfaelle/gastro-beratung-pro): German version (DE/AT/CH).
+- [Consulenza Gastro Pro Hub (IT)](https://aichef.pro/it/casi-uso/consulenza-gastro-pro): Italian version (AI/IA hybrid).
+- [Consultoria Gastro Pro Hub (PT)](https://aichef.pro/pt/casos-uso/consultoria-gastro-pro): Portuguese version (PT + BR).
+- [Gastro Advies Pro Hub (NL)](https://aichef.pro/nl/use-cases/gastro-advies-pro): Dutch version (NL + BE-Flanders).
+
+### The 10 Consulting Agents (Spanish canonical landings)
+
+- [Consultor Gastronómico](https://aichef.pro/usos/consultoria/consultor-gastronomico): AI agent for gastronomy/restaurant consultants and F&B advisors — due diligence, profitability diagnostics, opening plans, competitive analysis, investor proposals.
+- [Chef Consultor Pro](https://aichef.pro/usos/consultoria/chef-consultor): AI agent for consulting chefs — menu development, professional recipe costing, technical sheets, brigade training and operational manuals for restaurant groups, hotels, franchises and the food industry.
+- [Heladero Consultor Pro / Gelato & Ice Cream Consultant Pro](https://aichef.pro/usos/consultoria/heladero-consultor): AI agent for artisan gelato and ice cream consultants — POD/PAC mix balance, seasonal menus, HORECA costing, HACCP and opening projects.
+- [Chocolatero Consultor Pro / Chocolatier Consultant Pro](https://aichef.pro/usos/consultoria/chocolatero-consultor): AI agent for chocolatier consultants — bonbon collections, bean-to-bar tablets, premium couverture costing, HACCP and projects for chocolate shops, luxury hotels and specialist patisseries.
+- [Pastelero Consultor Pro / Pastry Chef Consultant Pro](https://aichef.pro/usos/consultoria/pastelero-consultor): AI agent for pastry chef consultants — dessert menu development, pastry costing, technical sheets, lab manuals and patisserie projects for restaurants, hotels and restaurant groups.
+- [Pizzero Consultor Pro / Pizza Chef Consultant Pro](https://aichef.pro/usos/consultoria/pizzero-consultor): AI agent for artisan pizzaiolo consultants — Neapolitan dough formulation (AVPN-aligned), menu engineering, HORECA costing, fermentation manuals and pizzeria opening projects.
+- [Barista Consultor Pro](https://aichef.pro/usos/consultoria/barista-consultor): AI agent for specialty coffee barista consultants — coffee menus, extraction calibration, HORECA costing and SCA-aligned projects for specialty coffee shops, hotels and roasteries.
+- [Sommelier Consultor Pro](https://aichef.pro/usos/consultoria/sommelier-consultor): AI agent for sommelier consultants (also known as "sumiller" in Spain) — wine list design, beverage cost, cellar optimization, floor staff training and wine bar / vinoteca projects for fine dining and luxury hotels.
+- [Bartender Consultor Pro](https://aichef.pro/usos/consultoria/bartender-consultor): AI agent for bartender consultants — cocktail menu design, beverage cost, mixology team training and cocktail bar projects for signature bars, luxury hotels and groups.
+- [Panadero Consultor Pro / Baker Consultant Pro](https://aichef.pro/usos/consultoria/panadero-consultor): AI agent for artisan baker consultants — sourdough and dough formulation, HORECA costing, lab manuals and bakery café projects for hotels, restaurant groups and bakery chains.
+
+### Localization Patterns by Language
+
+All 10 spokes are available in 7 languages with native, non-fallback content. URL patterns per language:
+
+- ES (canonical): `/usos/consultoria/<slug-es>`
+- EN: `/en/use-cases/consultancy/<slug-en>`
+- FR: `/fr/cas-d-usage/conseil/<slug-fr>`
+- DE: `/de/anwendungsfaelle/beratung/<slug-de>`
+- IT: `/it/casi-uso/consulenza/<slug-it>`
+- PT: `/pt/casos-uso/consultoria/<slug-pt>`
+- NL: `/nl/use-cases/advies/<slug-nl>`
+
+Examples — Sommelier Consultor Pro across languages:
+`https://aichef.pro/usos/consultoria/sommelier-consultor` (ES) · `/en/use-cases/consultancy/sommelier-consultant` (EN) · `/fr/cas-d-usage/conseil/sommelier-consultant` (FR) · `/de/anwendungsfaelle/beratung/sommelier-berater` (DE) · `/it/casi-uso/consulenza/sommelier-consulente` (IT) · `/pt/casos-uso/consultoria/sommelier-consultor` (PT) · `/nl/use-cases/advies/sommelier-adviseur` (NL).
+
+Total: 1 hub × 7 languages + 10 agent landings × 7 languages = 77 indexable URLs for the Consultoría Gastro Pro module.
+
 ## Programmatic SEO — City Pages (Spanish)
 
 - [Cities Hub](https://aichef.pro/recursos/ciudades): index of city-specific resources for opening and operating restaurants.
@@ -130,5 +174,5 @@
 ## Optional
 
 - [llms-full.txt](https://aichef.pro/llms-full.txt): expanded version of this index with full descriptions for each product, role, concept, task and city page.
-- [Sitemap](https://aichef.pro/sitemap.xml): full XML sitemap covering all indexable pages (~580 URLs).
+- [Sitemap](https://aichef.pro/sitemap.xml): full XML sitemap covering all indexable pages (~660 URLs).
 - [Robots](https://aichef.pro/robots.txt): crawler directives.

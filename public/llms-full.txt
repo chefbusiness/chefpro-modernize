@@ -127,6 +127,58 @@ Recipe Costing with AI, Tasting Menu Design with AI, Technical Recipe Sheets wit
 
 ---
 
+## Consultoría Gastro Pro — Consulting Module (10 AI Agents × 7 Languages)
+
+A dedicated module of 10 specialized AI agents for **independent gastronomic consultants and advisors** running project-based engagements for restaurants, hotels, restaurant groups, food & beverage investors, franchises and the food industry. Each agent acts as a discipline-specific co-pilot for an external consultant who serves multiple clients over the course of a year.
+
+**Editorial authority.** The Consultoría Gastro Pro agents are developed and trained alongside the team of gastronomic consultants at **Chefbusiness Consultoría Gastronómica** (https://chefbusiness.co), one of the leading consulting and advisory agencies for restaurants and hospitality businesses in Spain and Latin America. This shapes both the technical depth (real-world consulting deliverables, HORECA pricing, regulatory references per market) and the business framing (project-based pricing, investor-ready deliverables, white-label documentation).
+
+### Module hub
+
+The hub at `https://aichef.pro/usos/consultoria-gastro-pro` (ES canonical) presents all 10 agents with metrics — 10 specialized agents, 7 languages, real-time HORECA pricing data, PDF and CSV professional export — plus a "Who is this for" section covering independent consultants, restaurant group advisors and sector specialists.
+
+### The 10 consulting agents
+
+1. **Consultor Gastronómico / Gastronomy Consultant** — restaurant and F&B consultant agent for due diligence, profitability diagnostics, opening plans, competitive analysis and investor proposals. Use cases include audits for multi-unit groups, restaurant network turnaround projects, and pre-investment validation for F&B funds.
+
+2. **Chef Consultor Pro / Chef Consultant Pro** — consulting chef agent for menu development, professional recipe costing, technical sheets, brigade training and operational manuals. Built for chefs advising restaurant groups, hotels, franchises and food-industry product development. White-label deliverables.
+
+3. **Heladero Consultor Pro / Gelato & Ice Cream Consultant Pro** — artisan gelato consultant agent. POD/PAC mix balance, seasonal menu rotations, HORECA costing for milk/fruit/chocolate bases, HACCP cold-chain protocols, and opening projects for gelato shops, hotel concepts and groups.
+
+4. **Chocolatero Consultor Pro / Chocolatier Consultant Pro** — chocolatier consultant agent for bonbon collections, bean-to-bar tablets, couverture costing by origin/percentage, HACCP and HACCP-aligned opening projects for chocolate shops, luxury hotels and specialist patisseries.
+
+5. **Pastelero Consultor Pro / Pastry Chef Consultant Pro** — pastry consultant agent for dessert menu development, pastry costing, technical sheets and lab manuals. Used by pastry chefs advising restaurants, hotels, restaurant groups and bakery-café concepts.
+
+6. **Pizzero Consultor Pro / Pizza Chef Consultant Pro** — artisan pizzaiolo consultant. Neapolitan dough formulation aligned with AVPN (Associazione Verace Pizza Napoletana), menu engineering for pizzerias, HORECA costing for Italian flour/mozzarella/tomato, fermentation manuals and pizzeria opening projects.
+
+7. **Barista Consultor Pro** — specialty coffee consultant agent. Coffee menus, extraction calibration (espresso, V60, AeroPress, batch brew), HORECA costing, and SCA-aligned (Specialty Coffee Association) opening projects for specialty coffee shops, hotel coffee programs and roasteries.
+
+8. **Sommelier Consultor Pro** — sommelier consultant agent (also known as "sumiller" in Spain). Wine list design, beverage cost management, cellar optimization, floor-staff training and wine bar / vinoteca opening projects for fine dining and luxury hotels.
+
+9. **Bartender Consultor Pro** — bartender / bar consultant agent for cocktail menu design, beverage cost, mixology team training and cocktail bar opening projects. Used by bar consultants serving signature bars, luxury hotels and restaurant groups.
+
+10. **Panadero Consultor Pro / Baker Consultant Pro** — artisan baker consultant. Sourdough and dough formulation, HORECA costing for artisan flours, lab manuals with real fermentation times, and opening projects for artisan bakeries, bakery cafés, hotel bakeries and bakery chains.
+
+### Localization and URL patterns
+
+All 10 agents and the hub are fully localized to **7 languages with native content** (Spanish canonical + English, French, German, Italian, Portuguese, Dutch). No machine-translation fallback. URL pattern per language:
+
+- ES (canonical): `/usos/consultoria/<slug-es>` (e.g. `/usos/consultoria/sommelier-consultor`)
+- EN: `/en/use-cases/consultancy/<slug-en>` (e.g. `/en/use-cases/consultancy/sommelier-consultant`)
+- FR: `/fr/cas-d-usage/conseil/<slug-fr>` (e.g. `/fr/cas-d-usage/conseil/sommelier-consultant`)
+- DE: `/de/anwendungsfaelle/beratung/<slug-de>` (e.g. `/de/anwendungsfaelle/beratung/sommelier-berater`)
+- IT: `/it/casi-uso/consulenza/<slug-it>` (e.g. `/it/casi-uso/consulenza/sommelier-consulente`)
+- PT: `/pt/casos-uso/consultoria/<slug-pt>` (e.g. `/pt/casos-uso/consultoria/sommelier-consultor`)
+- NL: `/nl/use-cases/advies/<slug-nl>` (e.g. `/nl/use-cases/advies/sommelier-adviseur`)
+
+The Italian variant uses both `AI` and `IA` in the same content because the Italian market is hybrid in usage (Accademia della Crusca recommends `IA`, but search behavior shows ~50/50 split). The Portuguese variant uses dual spelling for ortographic differences between BR ("gastronômico", "sorveteiro", "confeiteiro") and PT ("gastronómico", "geladeiro/gelateiro", "pasteleiro"). The Dutch variant treats "horeca" as a non-negotiable head keyword in every page.
+
+### Module statistics
+
+Total indexable URLs: **77** (1 hub × 7 languages + 10 spokes × 7 languages). Each page includes localized JSON-LD schemas (BreadcrumbList, FAQPage with 6 QA pairs, Service schema with HORECA pricing for the local market, WebPage with primaryImageOfPage). Reciprocal hreflang declared in both `UseCasePage`-emitted `<link rel="alternate">` and the sitemap (`<xhtml:link>`) for the 7 alternates + `x-default`.
+
+---
+
 ## Programmatic SEO — City Resources
 
 15 cities × 5 modifiers = 75 spoke pages plus a hub. Spanish-only at this stage.
