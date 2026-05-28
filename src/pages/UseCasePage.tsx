@@ -30,6 +30,17 @@ const SEGMENTS: Record<string, { hub: string; role: string; concept: string; tas
   nl: { hub: 'use-cases',        role: 'rol',    concept: 'concept',  task: 'taak',    consultor: 'advies',      locale: 'nl-NL', hubLabel: 'Use cases' },
 };
 
+// Sub-hub Consultoría Gastro Pro: slug + nombre de marca por idioma (para breadcrumb + enlace interno desde los spokes consultor).
+const CONSULTOR_HUB: Record<string, { slug: string; name: string }> = {
+  es: { slug: 'consultoria-gastro-pro',  name: 'Consultoría Gastro Pro' },
+  en: { slug: 'gastro-consultancy-pro',  name: 'Gastro Consultancy Pro' },
+  fr: { slug: 'conseil-gastro-pro',      name: 'Conseil Gastro Pro' },
+  de: { slug: 'gastro-beratung-pro',     name: 'Gastro Beratung Pro' },
+  it: { slug: 'consulenza-gastro-pro',   name: 'Consulenza Gastro Pro' },
+  pt: { slug: 'consultoria-gastro-pro',  name: 'Consultoria Gastro Pro' },
+  nl: { slug: 'gastro-advies-pro',       name: 'Gastro Advies Pro' },
+};
+
 // UI strings (fields rendered in JSX, not the per-spoke content). ES + EN are first-class;
 // other languages fall back to ES until full translation lands.
 const UI: Record<string, {
@@ -51,6 +62,7 @@ const UI: Record<string, {
   siblingHeadingTask: string;
   siblingHeadingConsultor: string;
   finalCtaSeeAllUseCases: string;
+  consultorHubCta: string;
   galleryAltSuffix: string;
   serviceTypeRole: string;
   serviceTypeConcept: string;
@@ -76,6 +88,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Otras Tareas Relacionadas',
     siblingHeadingConsultor: 'Otros Agentes de Consultoría Gastro Pro',
     finalCtaSeeAllUseCases: 'Ver todos los casos de uso',
+    consultorHubCta: 'Ver todos los agentes para consultores gastronómicos',
     galleryAltSuffix: 'imagen %N de referencia generada con IA',
     serviceTypeRole: 'Software de IA para hostelería por rol profesional',
     serviceTypeConcept: 'Software de IA para hostelería por concepto de negocio',
@@ -101,6 +114,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Related Tasks',
     siblingHeadingConsultor: 'More Gastro Consultancy Pro Agents',
     finalCtaSeeAllUseCases: 'See all use cases',
+    consultorHubCta: 'See all agents for restaurant consultants',
     galleryAltSuffix: 'reference image %N generated with AI',
     serviceTypeRole: 'AI software for hospitality by professional role',
     serviceTypeConcept: 'AI software for hospitality by business concept',
@@ -126,6 +140,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Autres Tâches Associées',
     siblingHeadingConsultor: 'Autres Agents de Conseil Gastro Pro',
     finalCtaSeeAllUseCases: 'Voir tous les cas d\'usage',
+    consultorHubCta: 'Voir tous les agents pour consultants en restauration',
     galleryAltSuffix: 'image de référence %N générée par IA',
     serviceTypeRole: 'Logiciel IA CHR par rôle professionnel',
     serviceTypeConcept: 'Logiciel IA CHR par concept de business',
@@ -151,6 +166,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Verwandte Aufgaben',
     siblingHeadingConsultor: 'Weitere Agenten von Gastro Beratung Pro',
     finalCtaSeeAllUseCases: 'Alle Anwendungsfälle ansehen',
+    consultorHubCta: 'Alle Agenten für Gastronomieberater ansehen',
     galleryAltSuffix: 'KI-generiertes Referenzbild %N',
     serviceTypeRole: 'KI-Software für Gastgewerbe nach Berufsrolle',
     serviceTypeConcept: 'KI-Software für Gastgewerbe nach Geschäftskonzept',
@@ -176,6 +192,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Altri Compiti Correlati',
     siblingHeadingConsultor: 'Altri Agenti di Consulenza Gastro Pro',
     finalCtaSeeAllUseCases: 'Vedi tutti i casi d\'uso',
+    consultorHubCta: 'Vedi tutti gli agenti per consulenti ristorazione',
     galleryAltSuffix: 'immagine di riferimento %N generata con IA',
     serviceTypeRole: 'Software IA per la ristorazione per ruolo professionale',
     serviceTypeConcept: 'Software IA per la ristorazione per concetto di business',
@@ -201,6 +218,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Outras Tarefas Relacionadas',
     siblingHeadingConsultor: 'Outros Agentes de Consultoria Gastro Pro',
     finalCtaSeeAllUseCases: 'Ver todos os casos de uso',
+    consultorHubCta: 'Ver todos os agentes para consultores gastronômicos',
     galleryAltSuffix: 'imagem de referência %N gerada com IA',
     serviceTypeRole: 'Software de IA para restauração por função profissional',
     serviceTypeConcept: 'Software de IA para restauração por conceito de negócio',
@@ -226,6 +244,7 @@ const UI: Record<string, {
     siblingHeadingTask: 'Andere Gerelateerde Taken',
     siblingHeadingConsultor: 'Meer Agenten van Gastro Advies Pro',
     finalCtaSeeAllUseCases: 'Bekijk alle use cases',
+    consultorHubCta: 'Bekijk alle agenten voor horeca-adviseurs',
     galleryAltSuffix: 'referentieafbeelding %N gegenereerd met AI',
     serviceTypeRole: 'AI-software voor horeca per professionele rol',
     serviceTypeConcept: 'AI-software voor horeca per businessconcept',
@@ -295,15 +314,25 @@ export default function UseCasePage({ type }: UseCasePageProps) {
     .filter(uc => uc.id !== useCase.id)
     .slice(0, 3);
 
+  const consultorHub = CONSULTOR_HUB[lang] || CONSULTOR_HUB.es;
+  const consultorHubUrl = `${SITE_URL}${langPrefix}/${segs.hub}/${consultorHub.slug}`;
+
+  const breadcrumbItems: { '@type': string; position: number; name: string; item?: string }[] = [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: segs.hubLabel, item: `${SITE_URL}${langPrefix}/${segs.hub}` },
+  ];
+  if (type === 'consultor') {
+    breadcrumbItems.push({ '@type': 'ListItem', position: 3, name: consultorHub.name, item: consultorHubUrl });
+    breadcrumbItems.push({ '@type': 'ListItem', position: 4, name: content.h1 });
+  } else {
+    breadcrumbItems.push({ '@type': 'ListItem', position: 3, name: content.h1 });
+  }
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     '@id': `${canonicalUrl}#breadcrumb`,
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: segs.hubLabel, item: `${SITE_URL}${langPrefix}/${segs.hub}` },
-      { '@type': 'ListItem', position: 3, name: content.h1 },
-    ],
+    itemListElement: breadcrumbItems,
   };
 
   const faqSchema = {
@@ -788,7 +817,11 @@ export default function UseCasePage({ type }: UseCasePageProps) {
                 {ui.ctaPrimary} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to={`${langPrefix}/${segs.hub}`}><CheckCircle className="mr-2 h-4 w-4" /> {ui.finalCtaSeeAllUseCases}</Link>
+                {type === 'consultor' ? (
+                  <Link to={`${langPrefix}/${segs.hub}/${consultorHub.slug}`}><Sparkles className="mr-2 h-4 w-4" /> {ui.consultorHubCta}</Link>
+                ) : (
+                  <Link to={`${langPrefix}/${segs.hub}`}><CheckCircle className="mr-2 h-4 w-4" /> {ui.finalCtaSeeAllUseCases}</Link>
+                )}
               </Button>
             </div>
           </div>
