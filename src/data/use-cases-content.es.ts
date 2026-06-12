@@ -58,7 +58,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Hay descuentos para grupos con varios locales?', a: 'Sí. A partir de 5 unidades activas hay planes empresa con onboarding personalizado y dashboards consolidados por grupo.' },
       ],
       ctaTitle: 'Gestiona tu restaurante con datos, no con intuición.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Propietarios de Restaurante: Plan Financiero, Escandallos, SEO | AI Chef Pro',
         description: 'Suite de IA para propietarios de restaurante: agentes especializados, plan financiero, escandallos profesionales, APPCC, marketing y SEO local. Empieza gratis.',
@@ -169,7 +169,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Hay plantillas específicas por concepto de negocio?', a: 'Sí. Hay Kits de Tareas específicos para casual, cafetería, pizzería, hamburguesería, dark kitchen, pastelería, bar, catering, hotel, heladería, chocolatería, restaurante creativo y chef privado. Cada uno con plantillas adaptadas a la operativa real.' },
       ],
       ctaTitle: 'Lleva la operativa de tu restaurante al siguiente nivel.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Gerentes y Managers de Restaurante: Turnos, APPCC y Reporting | AI Chef Pro',
         description: 'Suite de IA para managers de restaurante: cuadrantes, inventario, APPCC, KPIs y reporting al propietario con agentes especializados en hostelería. Empieza gratis.',
@@ -279,7 +279,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Sirve para abrir nuevas ubicaciones más rápido?', a: 'Sí. Es uno de los casos de uso más recurrentes: las guías Cómo Montar… (dark kitchen, restaurante gastronómico, casual, mexicano, japonés, peruano, nikkei) son roadmaps profesionales que aceleran las aperturas con plan financiero, business plan y manuales replicables.' },
       ],
       ctaTitle: 'Estandariza tu grupo. Mismo estándar en todos los locales.',
-      ctaSubtitle: 'Habla con nosotros para un onboarding personalizado a tu grupo o empieza gratis con 5 usos al mes.',
+      ctaSubtitle: 'Habla con nosotros para un onboarding personalizado a tu grupo o empieza gratis con 10.000 créditos al mes.',
       seo: {
         title: 'IA para Directores de Operaciones de Grupos de Restauración | AI Chef Pro',
         description: 'Suite de IA para grupos de restauración multi-local: dashboards consolidados, estandarización de recetas, APPCC corporativo, manuales replicables y plan financiero por unidad.',
@@ -389,7 +389,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cuánto tarda en pagarse la suscripción?', a: 'La mayoría de chefs ejecutivos reporta retorno en la primera carta nueva. Un cambio de menú tradicional ocupa entre 15 y 30 días entre lluvia de ideas, pruebas, escandallos, fichas técnicas y comunicación interna. Con AI Chef Pro y un buen flujo en Excel o Google Workspace, ese mismo proceso pasa a entre 1 y 3 días según el tamaño de la carta y si es reingeniería total o parcial. Con 4-6 cambios de carta al año, recuperas entre 60 y 120 jornadas de trabajo.' },
       ],
       ctaTitle: 'Crea, escandalla y replica recetas a la velocidad de una conversación.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chef Ejecutivo: Recetas, Escandallos y Manuales | AI Chef Pro',
         description: 'Suite de IA para chef ejecutivo y corporativo: agente Chef Ejecutivo Pro, escandallos automáticos, fichas técnicas y manuales replicables multi-local. Empieza gratis.',
@@ -502,7 +502,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Sirve para cocinas con técnicas avanzadas (fermentos, esferificaciones, cocciones largas)?', a: 'Sí. Fermentus Con AI+ cubre fermentación de vanguardia (koji, kombucha, shoyu, miso, garum, lactofermentos) y Cocina Creativa entiende técnicas como sous vide, esferificaciones, gelificaciones y cocciones largas controladas.' },
       ],
       ctaTitle: 'Más cocina, menos papeleo. Recupera horas para lo que importa.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chef de Cocina y Jefe de Cocina: Escandallos, Fichas y APPCC | AI Chef Pro',
         description: 'Suite de IA para jefes de cocina profesional: agentes especializados, escandallos, fichas técnicas, mise en place y APPCC con respaldo gastronómico real. Empieza gratis.',
@@ -608,12 +608,12 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Las plantillas se adaptan al estilo de mi cocina?', a: 'Sí. Hay Kits de Tareas específicos por concepto (casual, gastronómico, dark kitchen, hotel, pizzería, hamburguesería, pastelería, bar, catering, heladería, chocolatería, restaurante creativo, chef privado) y todos se pueden personalizar al estilo de tu cocina.' },
         { q: '¿Funciona desde móvil para registros del equipo?', a: 'Sí. Los registros APPCC, mermas, temperaturas y check de tareas se hacen desde el móvil del staff sin instalar nada. Al final del día se exporta a PDF para el jefe de cocina o el propietario.' },
         { q: '¿Es complicado de usar para el equipo?', a: 'No. El equipo solo rellena casillas o marca check. La curva real es de 1 día. Hay vídeo de onboarding de 5 minutos.' },
-        { q: '¿Sirve si no soy yo quien decide herramientas en la cocina?', a: 'Puedes empezar gratis con 5 usos al mes para tus propias listas y propuestas. Cuando lleves 1-2 semanas usándolo, propón al jefe de cocina con datos concretos: tiempo ahorrado, escandallos validados, mise organizado.' },
+        { q: '¿Sirve si no soy yo quien decide herramientas en la cocina?', a: 'Puedes empezar gratis con 10.000 créditos al mes para tus propias listas y propuestas. Cuando lleves 1-2 semanas usándolo, propón al jefe de cocina con datos concretos: tiempo ahorrado, escandallos validados, mise organizado.' },
         { q: '¿Cómo me ayuda en los picos de servicio?', a: 'Las fichas técnicas centralizadas te dan acceso rápido desde el móvil durante el pase. Si surge una duda técnica, Cocina Creativa responde en segundos. Mental Coach también ayuda a gestionar el estrés en cocinas de alta presión.' },
         { q: '¿Hay algo específico para ascenso a jefe de cocina?', a: 'Sí. Pro Prompts eBook (300+ prompts profesionales), Chef Ejecutivo Pro (estandarización multi-local) y Gastro Lexicum (referencia de técnica) son herramientas clave para crecer hacia el siguiente nivel.' },
       ],
       ctaTitle: 'Organiza tu cocina sin papeles sueltos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Sous Chef: Mise en Place, Fichas Técnicas y APPCC | AI Chef Pro',
         description: 'Suite de IA para sous chef en cocina profesional: mise en place, fichas técnicas centralizadas, escandallos, APPCC desde móvil y formación del equipo. Empieza gratis.',
@@ -723,7 +723,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Sirve para diseñar menús innovadores?', a: 'Sí. Catering AI+ + Cocina Creativa + Food Pairing AI + Fermentus Con AI+ trabajan en conjunto para diseñar menús creativos con base profesional, no recetas copiadas de internet.' },
       ],
       ctaTitle: 'Diseña, escandalla y produce eventos sin papeles sueltos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chef de Catering: Menús, Escandallos y APPCC de Evento | AI Chef Pro',
         description: 'Suite de IA para chef de catering: Catering AI+, Cocina Creativa, Calcula Pax, escandallos por evento, APPCC fuera de local y planificación de producción a escala. Empieza gratis.',
@@ -833,7 +833,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Es seguro confiar el plan financiero a una IA?', a: 'Sí. El Kit Plan Financiero es una plantilla Excel profesional con fórmulas precargadas, no IA. Tú metes los datos reales y la herramienta calcula. Los agentes IA solo se usan para apoyar en decisiones, redacción de propuestas y análisis, no en cálculo financiero crítico.' },
       ],
       ctaTitle: 'Haz crecer tu catering con margen real, no intuición.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Propietarios de Empresa de Catering: Rentabilidad y Plan Financiero | AI Chef Pro',
         description: 'Suite de IA para empresas de catering: rentabilidad por evento, producción a escala, equipos eventuales, plan financiero y captación de clientes corporativos. Empieza gratis.',
@@ -943,7 +943,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad de carta?', a: 'Gastro Calendar planifica las cartas estacionales (verano, otoño, navidad, San Valentín) con antelación. El Kit Plan Financiero proyecta el cash flow estacional realista para que llegues con stock y caja a cada pico.' },
       ],
       ctaTitle: 'Tu coctelería con margen real y técnica de autor.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Bartender y Coctelero: Cartas, Escandallos y Storytelling | AI Chef Pro',
         description: 'Suite de IA para bartenders profesionales: Bar & Lounge AI+, Food Pairing AI, escandallos por trago, fichas técnicas con storytelling y branding visual. Empieza gratis.',
@@ -1053,7 +1053,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad y eventos?', a: 'Gastro Calendar planifica las cartas estacionales (verano, otoño con setas y trufa, especiales para San Valentín, Pascua, Navidad). El Kit Plan Financiero proyecta el cash flow estacional realista para que llegues con stock y caja a cada pico.' },
       ],
       ctaTitle: 'Tu pizzería con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Pizzero y Pizzaiolo: Masas, Escandallos y Técnica Italiana | AI Chef Pro',
         description: 'Suite de IA para pizzeros profesionales: Cocina Italiana, Fermentus para masas y biga, escandallos por pizza, plantillas y técnica auténtica. Empieza gratis.',
@@ -1163,7 +1163,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad y eventos?', a: 'Gastro Calendar planifica las temporadas clave (Pascua con monas y hornazos, Navidad con Roscón y panettone, San Juan, eventos locales) con antelación. El Kit Plan Financiero proyecta el cash flow estacional realista.' },
       ],
       ctaTitle: 'Tu panadería artesanal con margen claro y técnica profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Panadero Artesanal: Masa Madre, Escandallos y Técnica Profesional | AI Chef Pro',
         description: 'Suite de IA para panaderos artesanales: Panadería Creativa, Fermentus Con AI+ para masa madre, escandallos por pieza con coste hora obrador. Empieza gratis.',
@@ -1274,7 +1274,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad fuerte?', a: 'Gastro Calendar planifica las temporadas clave (Navidad, San Valentín, Pascua, Roscón, Día de la Madre) con antelación de 8-12 semanas. El Kit Plan Financiero proyecta el cash flow estacional realista para que llegues con producción y caja a cada pico.' },
       ],
       ctaTitle: 'Tu chocolatería con margen claro y técnica de autor.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chocolatero y Bombonero: Temperado, Escandallos y Estacionalidad | AI Chef Pro',
         description: 'Suite de IA para chocolateros profesionales: Chocolatería Creativa, escandallos por pieza con coste hora obrador, planificación estacional y APPCC. Empieza gratis.',
@@ -1384,7 +1384,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la captación de clientes recurrentes?', a: 'GastroIMG Gen+ + InstaFlow AI Pro construyen contenido visual constante; MenuDish Local SEO captura clientes locales que buscan "chef privado en [ciudad]"; Gastro Calendar ayuda a proponer menús estacionales (Navidad íntima, San Valentín, aniversarios) para fidelizar.' },
       ],
       ctaTitle: 'Tu servicio de chef privado con margen real y propuesta de autor.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chef Privado y Personal Chef: Menús, Escandallos y Servicio | AI Chef Pro',
         description: 'Suite de IA para chefs privados profesionales: Chef Privado Pro, escandallos por cena, menús personalizados, branding y captación. Empieza gratis.',
@@ -1494,7 +1494,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos corporativos y temporadas?', a: 'Gastro Calendar planifica eventos corporativos, bodas, conferencias, temporadas (verano/invierno), Navidad y San Valentín con menús específicos por outlet y calendario editorial coordinado.' },
       ],
       ctaTitle: 'Tu F&B hotelero con margen integrado y operativa profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para F&B Manager de Hotel: Multi-outlet, Banquetes y Escandallos | AI Chef Pro',
         description: 'Suite de IA para F&B Managers de hotel: Gerente Pro, Catering AI+, escandallos cruzados, branding multi-outlet y APPCC integrado. Empieza gratis.',
@@ -1604,7 +1604,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos privados y cenas corporativas?', a: 'Gastro Calendar planifica eventos privados, cenas corporativas, Navidad, San Valentín, aniversarios con menús degustación y propuestas de servicio dedicado.' },
       ],
       ctaTitle: 'Tu sala con técnica profesional y experiencia memorable.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Maître y Jefe de Sala: Servicio, Maridajes y Storytelling | AI Chef Pro',
         description: 'Suite de IA para maîtres profesionales: Gerente Pro, Bar & Lounge AI+, Food Pairing AI, formación de equipo y captación premium. Empieza gratis.',
@@ -1714,7 +1714,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con catas privadas y eventos de bodega?', a: 'Gastro Calendar planifica catas privadas, eventos de bodega, ferias de vinos, lanzamientos por temporada y maridajes con menús degustación.' },
       ],
       ctaTitle: 'Tu bodega con criterio profesional y maridajes científicos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Sommelier: Bodega, Maridajes y Catas Profesionales | AI Chef Pro',
         description: 'Suite de IA para sommeliers profesionales: Bar & Lounge AI+, Food Pairing AI, escandallos por copa, catas privadas y branding wine-driven. Empieza gratis.',
@@ -1824,7 +1824,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos corporativos?', a: 'Gastro Calendar planifica Día del Padre, Navidad, eventos corporativos y lanzamientos de cortes por temporada.' },
       ],
       ctaTitle: 'Tu parrilla con técnica de fuego y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Maestro Asador y Parrillero: Cortes, Brasas y Dry-Aged | AI Chef Pro',
         description: 'Suite de IA para maestros asadores: Cocina Argentina + Brasileña, escandallos por corte, dry-aged, branding y APPCC. Empieza gratis.',
@@ -1934,7 +1934,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo gestiono mermas en mantecadora y vitrina?', a: 'Mermas GenCal entrega datos por proceso (mantecadora, abatimiento, exposición). Se integran al escandallo del Kit de Escandallos Pro.' },
       ],
       ctaTitle: 'Tu helado con técnica auténtica y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Maestro Heladero y Gelatiere: Bases, Escandallos y Estacionalidad | AI Chef Pro',
         description: 'Suite de IA para maestros heladeros: Heladería Creativa, balance técnico, escandallos por sabor, branding y APPCC. Empieza gratis.',
@@ -2044,7 +2044,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos y temporadas?', a: 'Gastro Calendar planifica las temporadas clave (Roscón, San Valentín, Pascua, Navidad, comuniones) con antelación.' },
       ],
       ctaTitle: 'Tu repostería con técnica de autor y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Repostero y Pastelero: Técnica, Escandallos y Estacionalidad | AI Chef Pro',
         description: 'Suite de IA para reposteros profesionales: Pastelería Creativa, escandallos con coste hora obrador, planificación estacional y branding. Empieza gratis.',
@@ -2155,7 +2155,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Hay agente específico para mi tipo de restaurante casual?', a: 'Sí. Casual Restaurants AI+ cubre bistrós, gastrobares, tapas, mediterráneo, mesones, brasería casual. Para conceptos más específicos hay Burger Pro AI+, Food Truck AI+ y agentes por país (mexicana, peruana, japonesa, etc.).' },
       ],
       ctaTitle: 'Pon orden en tu restaurante casual.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Casual: Operativa, Escandallos y SEO Local | AI Chef Pro',
         description: 'Suite de IA para restaurantes casuales y bistrós: agentes especializados, escandallos, APPCC, cuadrantes, SEO local y marketing con base profesional. Empieza gratis.',
@@ -2265,7 +2265,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo optimiza el SEO local para mi coffee shop?', a: 'MenuDish Local SEO + BlogPost SEO Gen+ + Keyword Discovery AI+ trabajan juntos para captar búsquedas locales como «brunch en [tu zona]» o «mejor café de especialidad cerca».' },
       ],
       ctaTitle: 'Tu cafetería con operativa pulida y captación orgánica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Cafetería y Brunch: Operativa, Pinterest y SEO Local | AI Chef Pro',
         description: 'Suite de IA para coffee shops y locales de brunch: agentes especializados, escandallos, APPCC, contenido para Instagram y Pinterest, SEO local. Empieza gratis.',
@@ -2375,7 +2375,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con masa madre profesional?', a: 'Fermentus Con AI+ es referencia en fermentación: hidrataciones, prefermentos (poolish, biga, tang zhong), refrescos de masa madre y técnicas de fermentación controlada.' },
       ],
       ctaTitle: 'Pizza con margen real, no intuición.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Pizzería: Masa Madre, Escandallos por Pizza y Delivery | AI Chef Pro',
         description: 'Suite de IA para pizzerías profesionales: Cocina Italiana, Fermentus para masas, escandallos por pizza, plantillas pizza-shop y SEO local. Empieza gratis.',
@@ -2484,7 +2484,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Sirve para abrir una marca virtual de burger en dark kitchen?', a: 'Sí. Burger Pro AI+ + Casual Restaurants AI+ + Food Truck AI+ son combinables para multi-marca virtual. Hay caso real en /usos/concepto/dark-kitchen.' },
       ],
       ctaTitle: 'Burger con margen real, no intuición.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Hamburguesería: Escandallos, Smash Burger y Delivery | AI Chef Pro',
         description: 'Suite de IA para hamburgueserías profesionales: Burger Pro AI+, escandallos por burger, plantillas burger-shop, APPCC y delivery multi-plataforma. Empieza gratis.',
@@ -2596,7 +2596,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Y el SEO local? ¿Compensa para una dark kitchen?', a: 'Sí, mucho. Una dark kitchen vive del descubrimiento online: si además del tráfico de los agentes IA captas búsquedas locales en Google (por ejemplo, «hamburguesa delivery [tu barrio]»), bajas tu dependencia de las comisiones y sumas margen directo. La suite SEO de AI Chef Pro está pensada exactamente para esto.' },
       ],
       ctaTitle: 'Tu dark kitchen, con margen real y datos por marca.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Dark Kitchen y Cocinas Virtuales: Escandallos y SEO | AI Chef Pro',
         description: 'Suite de IA para dark kitchen y ghost kitchen: escandallos multi-marca, margen tras comisión de Glovo y Uber Eats, SEO local, APPCC y guía para abrir tu cocina virtual.',
@@ -2708,7 +2708,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad?', a: 'Gastro Calendar planifica las temporadas clave (Roscón, San Valentín, Pascua, Navidad, comuniones) con antelación y plan financiero adaptado a picos de producción.' },
       ],
       ctaTitle: 'Tu obrador con margen claro y branding profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Pastelería y Obrador: Escandallos, Estacionalidad y Branding | AI Chef Pro',
         description: 'Suite de IA para pastelerías artesanales: Pastelería Creativa, escandallos por pieza con coste hora obrador, APPCC, planificación estacional y branding. Empieza gratis.',
@@ -2818,7 +2818,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con el branding visual de mis cocktails?', a: 'GastroIMG Gen+ genera fotografías profesionales de cada trago para Instagram, web y carta. InstaFlow AI Pro programa el contenido con calendario editorial.' },
       ],
       ctaTitle: 'Coctelería con margen real y branding profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Bar y Coctelería: Cocktails de Autor, Escandallos y Branding | AI Chef Pro',
         description: 'Suite de IA para bares y coctelería profesional: Bar & Lounge AI+, Food Pairing AI, escandallos por cóctel, cartas, APPCC y branding visual. Empieza gratis.',
@@ -2928,7 +2928,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda a captar clientes corporativos?', a: 'BlogPost SEO Gen+ + Keyword Discovery AI+ + MenuDish Local SEO trabajan en conjunto para captar empresas que buscan catering en tu zona vía búsquedas orgánicas en Google.' },
       ],
       ctaTitle: 'Catering con margen real y sin caos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Catering y Eventos: Bodas, Corporativos y Cocktails | AI Chef Pro',
         description: 'Suite de IA para empresas de catering profesional: Catering AI+, escandallos por evento, producción a escala, APPCC fuera de local y propuestas comerciales. Empieza gratis.',
@@ -3039,7 +3039,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Y el control de costes por outlet?', a: 'El Kit Plan Financiero permite analizar food cost, productividad y margen separadamente para desayuno, restaurante, bar lobby, room service y banquetes. Eso da una visión real de qué outlet rinde y cuál no.' },
       ],
       ctaTitle: 'Tu F&B de hotel coordinado y sin caos.',
-      ctaSubtitle: 'Habla con nosotros para un onboarding personalizado o empieza gratis con 5 usos al mes.',
+      ctaSubtitle: 'Habla con nosotros para un onboarding personalizado o empieza gratis con 10.000 créditos al mes.',
       seo: {
         title: 'IA para Hotel Completo (F&B + Housekeeping): Restaurante, Bar, Banquetes | AI Chef Pro',
         description: 'Suite de IA para F&B Managers de hotel: desayuno buffet, restaurante, bar lobby, room service, banquetes y housekeeping con agentes especializados. Empieza gratis.',
@@ -3148,7 +3148,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Genera contenido para vitrina, redes y Google Maps?', a: 'Sí. GastroIMG Gen+ genera imágenes de referencia profesionales de cada sabor para vitrina, web y redes; InstaFlow AI Pro programa Instagram con calendario editorial; MenuDish Local SEO captura clientes locales que buscan "heladería cerca de mí". Recuerda que la imagen IA es de referencia visual: la foto definitiva la haces tú con tu cubeta y emplatado real.' },
       ],
       ctaTitle: 'Tu heladería con margen claro y branding profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Heladería Artesanal: Escandallos por Sabor, Estacionalidad y Branding | AI Chef Pro',
         description: 'Suite de IA para heladerías artesanales: Heladería Creativa, escandallos por sabor con balance técnico, APPCC, planificación estacional y branding visual. Empieza gratis.',
@@ -3258,7 +3258,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con la estacionalidad fuerte?', a: 'Gastro Calendar planifica las temporadas clave (Navidad, San Valentín, Pascua, Roscón, Día de la Madre) con antelación de 8-12 semanas. El Kit Plan Financiero proyecta el cash flow estacional realista para que llegues con producción y caja a cada pico.' },
       ],
       ctaTitle: 'Tu chocolatería con margen claro y branding profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Chocolatería y Bombonería: Escandallos, Estacionalidad y Branding | AI Chef Pro',
         description: 'Suite de IA para chocolaterías artesanales: Chocolatería Creativa, escandallos por bombón con coste hora obrador, APPCC, planificación estacional y branding. Empieza gratis.',
@@ -3369,7 +3369,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo se integra con Sosa y otros proveedores técnicos?', a: 'Sosa Ingredients Agent y tSpoonLab Agent son asistentes específicos del catálogo de cada proveedor: ayudan a seleccionar texturas, aditivos y aplicaciones técnicas con criterio profesional.' },
       ],
       ctaTitle: 'Creatividad con sistema, vanguardia con margen.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Creativo y de Autor: I+D, Vanguardia y Storytelling | AI Chef Pro',
         description: 'Suite de IA para restaurantes creativos y de autor: Cocina Creativa, Fermentus, Sonar Deep Research, escandallos avanzados, fichas técnicas y storytelling profesional.',
@@ -3480,7 +3480,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo se integra con proveedores premium?', a: 'Sosa Ingredients Agent y tSpoonLab Agent son asistentes específicos de catálogos profesionales muy usados en alta gastronomía. Ayudan a seleccionar texturas, aditivos y aplicaciones técnicas con criterio de cocina creativa.' },
       ],
       ctaTitle: 'Alta cocina con sistema, vanguardia con dirección.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Gastronómico (Michelin/Repsol): Menú Degustación, I+D y Comunicación | AI Chef Pro',
         description: 'Suite de IA para alta gastronomía: Cocina Creativa, Fermentus, Sonar Deep Research, escandallos premium, fichas técnicas, comunicación con guías Michelin y Repsol. Empieza gratis.',
@@ -3590,7 +3590,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con las festividades mexicanas?', a: 'Gastro Calendar planifica las fechas clave (Día de Muertos, Día de la Candelaria con tamales, Fiestas Patrias, 5 de Mayo) con menús especiales y calendario editorial.' },
       ],
       ctaTitle: 'Tu restaurante mexicano con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Mexicano: Salsas, Escandallos y Técnica Auténtica | AI Chef Pro',
         description: 'Suite de IA para restaurantes mexicanos: Cocina Mexicana, escandallos por taco, planificación de festividades, branding y APPCC. Empieza gratis.',
@@ -3700,7 +3700,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con festividades peruanas y eventos?', a: 'Gastro Calendar planifica las fechas clave (28 de julio Día de la Independencia, Día del Cebiche, Día del Pisco Sour, Mistura) con menús especiales y calendario editorial.' },
       ],
       ctaTitle: 'Tu restaurante peruano con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Peruano: Cebiches, Escandallos y Técnica Auténtica | AI Chef Pro',
         description: 'Suite de IA para restaurantes peruanos: Cocina Peruana, escandallos por cebiche, planificación de festividades, branding y APPCC. Empieza gratis.',
@@ -3810,7 +3810,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con festividades japonesas?', a: 'Gastro Calendar planifica las fechas clave (Hanami con sakura, Año Nuevo japonés con osechi ryori, Hina Matsuri, Día del Sushi) con menús especiales y calendario editorial minimalista.' },
       ],
       ctaTitle: 'Tu restaurante japonés con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Japonés: Sushi, Escandallos y Técnica Itamae | AI Chef Pro',
         description: 'Suite de IA para restaurantes japoneses: Cocina Japonesa, Fermentus para koji y miso, escandallos por pieza, planificación de festividades. Empieza gratis.',
@@ -3920,7 +3920,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con festividades cruzadas peruano-japonesas?', a: 'Gastro Calendar planifica las fechas clave de ambas culturas (28 de julio peruano, Hanami japonés, Día del Cebiche, Año Nuevo japonés) con omakase nikkei estacional y storytelling de fusión.' },
       ],
       ctaTitle: 'Tu restaurante nikkei con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Nikkei: Tiraditos, Escandallos y Técnica de Fusión | AI Chef Pro',
         description: 'Suite de IA para restaurantes nikkei: Cocina Japonesa + Peruana, escandallos por tiradito, omakase nikkei, branding y APPCC. Empieza gratis.',
@@ -4030,7 +4030,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con Veganuary y eventos plant-based?', a: 'Gastro Calendar planifica Veganuary (enero), Día Mundial Vegano, Earth Day y temporadas de verduras locales con menús especiales y calendario editorial.' },
       ],
       ctaTitle: 'Tu restaurante plant-based con margen real y técnica de autor.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Plant-Based y Vegano: Bowls, Escandallos y Fermentos | AI Chef Pro',
         description: 'Suite de IA para restaurantes plant-based: VegChef, Fermentus para umami vegetal, escandallos por bowl, branding y APPCC. Empieza gratis.',
@@ -4140,7 +4140,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos y festividades?', a: 'Gastro Calendar planifica Día del Padre, Navidad, eventos corporativos y lanzamientos de cortes especiales con menús de asador y calendario editorial.' },
       ],
       ctaTitle: 'Tu asador con margen real y técnica de fuego.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes para probar todos los agentes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes para probar todos los agentes. Sin tarjeta.',
       seo: {
         title: 'IA para Asador, Parrilla y Steakhouse: Cortes, Escandallos y Dry-Aged | AI Chef Pro',
         description: 'Suite de IA para asadores y steakhouses: Cocina Argentina + Brasileña, escandallos por corte, dry-aged, branding y APPCC. Empieza gratis.',
@@ -4250,7 +4250,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con lanzamientos estacionales?', a: 'Gastro Calendar planifica pumpkin spice latte (otoño), cold brew (verano), café especiado de Navidad y signatures por temporada.' },
       ],
       ctaTitle: 'Tu coffee shop con margen real y técnica third-wave.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Coffee Shop y Specialty Coffee: Cartas, Escandallos y Branding | AI Chef Pro',
         description: 'Suite de IA para coffee shops: Cocina Creativa, Pastelería propia, escandallos por bebida, branding minimalista y captación local. Empieza gratis.',
@@ -4360,7 +4360,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con omakase y eventos premium?', a: 'Gastro Calendar planifica omakase estacional, Hanami, Año Nuevo japonés con menús degustación premium.' },
       ],
       ctaTitle: 'Tu sushi bar con técnica auténtica y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Sushi Bar: Itamae, Omakase y Escandallos | AI Chef Pro',
         description: 'Suite de IA para sushi bars: Cocina Japonesa, Fermentus, escandallos por nigiri, omakase y branding minimalista. Empieza gratis.',
@@ -4470,7 +4470,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos privados y catas?', a: 'Gastro Calendar planifica catas con bodegas, eventos privados, San Fermín y fiestas locales.' },
       ],
       ctaTitle: 'Tu gastrobar con margen real y técnica auténtica.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Gastrobar y Tapas Bar: Tapas, Escandallos y Maridajes | AI Chef Pro',
         description: 'Suite de IA para gastrobares: Cocina Española, Bar & Lounge AI+, escandallos por tapa, vermut y vinos por copa. Empieza gratis.',
@@ -4580,7 +4580,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos y rutas?', a: 'Gastro Calendar planifica festivales, ferias, mercados y eventos privados con planificación de rutas.' },
       ],
       ctaTitle: 'Tu food truck con margen real y operativa ajustada.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Food Truck: Carta, Escandallos y Eventos | AI Chef Pro',
         description: 'Suite de IA para food trucks: Food Truck AI+, escandallos por plato, planificación de eventos, branding viral y APPCC. Empieza gratis.',
@@ -4690,7 +4690,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con eventos y festividades italianas?', a: 'Gastro Calendar planifica Ferragosto, Carnevale, Pasqua, Natale y eventos privados con menús italianos.' },
       ],
       ctaTitle: 'Tu restaurante italiano con técnica auténtica y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'IA para Restaurante Italiano: Pasta, Escandallos y Vinos | AI Chef Pro',
         description: 'Suite de IA para restaurantes italianos: Cocina Italiana, escandallos, pasta fresca, vinos italianos y branding trattoría. Empieza gratis.',
@@ -4796,7 +4796,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Genera imagen de referencia del plato escandallado?', a: 'Sí. GastroIMG Gen+ genera imagen de referencia visual del platillo. Recuerda que la imagen IA es de referencia: la foto definitiva del escandallo la haces tú con tu plato real emplatado.' },
       ],
       ctaTitle: 'Tus escandallos en minutos con margen real validado.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Hacer Escandallos con IA: Coste Real, Margen y Food Cost | AI Chef Pro',
         description: 'Suite de IA para escandallos profesionales: receta + CSV con coste hora obrador, mermas integradas, margen validado. Empieza gratis.',
@@ -4903,7 +4903,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Escalable a banquetes y eventos privados?', a: 'Sí. Calcula Pax escala el menú a cualquier número de comensales; Kit de Escandallos Pro recalcula coste por pax y propuesta económica al cliente.' },
       ],
       ctaTitle: 'Tu menú degustación profesional en horas, no en semanas.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Diseñar un Menú Degustación con IA: Secuencia, Escandallo y Maridajes | AI Chef Pro',
         description: 'Suite de IA para menú degustación: secuencia técnica, escandallo total, maridajes científicos y storytelling. Empieza gratis.',
@@ -5009,7 +5009,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con auditorías y certificaciones?', a: 'Cada ficha técnica es trazable: ingredientes, gramaje, allergenos, coste y técnica. Listas para auditoría, ISO 22000, BRC y certificaciones de seguridad alimentaria.' },
       ],
       ctaTitle: 'Tus fichas técnicas profesionales en minutos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Crear Fichas Técnicas con IA: Allergenos, Coste y Storytelling | AI Chef Pro',
         description: 'Suite de IA para fichas técnicas: allergenos automáticos, coste integrado, plating photo y storytelling. Empieza gratis.',
@@ -5115,7 +5115,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Genera contenido visual del maridaje para Instagram?', a: 'Sí. GastroIMG Gen+ genera imagen de referencia. Recuerda que la imagen IA es de referencia visual: la foto definitiva la haces tú con tu copa y plato real.' },
       ],
       ctaTitle: 'Tus maridajes con base científica en minutos.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Validar Maridajes con IA: Vinos, Sake y Sin Alcohol | AI Chef Pro',
         description: 'Suite de IA para maridajes: Food Pairing AI con base científica, selección de bodega, storytelling para sala. Empieza gratis.',
@@ -5221,7 +5221,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con compras ajustadas?', a: 'Calcula Pax + Gastro Calendar planifican producción y compras ajustadas al volumen real del servicio para reducir sobrantes desde origen.' },
       ],
       ctaTitle: 'Tu cocina con mermas reducidas y datos reales.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Reducir Mermas en Cocina con IA: Datos Reales y Repurposo | AI Chef Pro',
         description: 'Suite de IA para reducir mermas: Mermas GenCal con datos reales, repurposo profesional, escandallo trazable. Empieza gratis.',
@@ -5327,7 +5327,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con cambios regulatorios?', a: 'Sonar Deep Research consulta regulación actualizada por país y comunidad autónoma. Cocina Creativa actualiza fichas técnicas y procedimientos cuando cambian las normas.' },
       ],
       ctaTitle: 'Tu APPCC profesional desde móvil sin papel.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Gestionar APPCC Digital con IA: Plantillas, Allergenos y Trazabilidad | AI Chef Pro',
         description: 'Suite de IA para APPCC digital: plantillas Excel, allergenos automáticos, trazabilidad ISO. Empieza gratis.',
@@ -5434,7 +5434,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con storytelling de productores?', a: 'Cocina Creativa razona en clave de producto local: ganadero de raza autóctona, agricultor ecológico, pescador artesanal, panadero local. Cada plato incluye storytelling profesional para sala y comunicación.' },
       ],
       ctaTitle: 'Tu carta estacional con producto local y margen real.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Diseñar Carta Estacional con IA: Producto Local, Escandallo y Storytelling | AI Chef Pro',
         description: 'Suite de IA para carta estacional: Gastro Calendar, producto local, escandallo y storytelling de productores. Empieza gratis.',
@@ -5540,7 +5540,7 @@ export const USE_CASES_CONTENT_ES: Record<string, UseCaseContent> = {
         { q: '¿Cómo me ayuda con captación local en delivery?', a: 'MenuDish Local SEO + GastroIMG Gen+ generan imágenes profesionales para Glovo, Uber Eats, Just Eat con criterio que aumenta CTR. Mejor foto = más clics y mejor ranking.' },
       ],
       ctaTitle: 'Tu fotografía gastronómica con criterio profesional.',
-      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 5 usos al mes. Sin tarjeta.',
+      ctaSubtitle: 'Empieza gratis con el onboarding de 2 minutos. 10.000 créditos al mes. Sin tarjeta.',
       seo: {
         title: 'Cómo Hacer Fotografía Gastronómica con IA: Imagen de Referencia y Foto Final | AI Chef Pro',
         description: 'Suite de IA para fotografía gastronómica: GastroIMG Gen+ genera imagen de referencia, después haces la foto definitiva con tu plato real. Empieza gratis.',

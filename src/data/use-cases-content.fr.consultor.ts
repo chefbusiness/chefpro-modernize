@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je l\'utiliser avec des clients hors d\'Espagne ?', a: 'Oui. Il existe des versions en 7 langues et la base de données CHR couvre Espagne, LATAM, Italie, France, Portugal, Allemagne, Pays-Bas et marché anglo-saxon.' },
     ],
     ctaTitle: 'Accélérez Vos Projets sans Perdre en Rigueur Technique.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Consultant Gastronomique · IA Conseil Restauration CHR | AICP',
       description: 'Agent IA pour consultants en restauration et conseillers CHR : due diligence, diagnostic de rentabilité, plan d\'ouverture et propositions investisseurs. Essai gratuit.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je l\'utiliser avec des clients hors d\'Espagne ?', a: 'Oui. 7 langues et base CHR en Espagne, LATAM, Italie, France, Portugal, Allemagne, Pays-Bas et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Projets, sans Renoncer au Jugement Technique.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Chef Consultant Pro · IA pour Consultant Culinaire | AI Chef Pro',
       description: 'Agent IA Chef Consultant pour groupes de restauration, hôtels et franchises : développement de menus, fiches de coût, fiches techniques et formation de brigades. Essai gratuit.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients en LATAM ou en Italie ?', a: 'Oui. 7 langues disponibles et base CHR en Espagne, Italie, LATAM, France, Portugal, Allemagne et Pays-Bas.' },
     ],
     ctaTitle: 'Plus de Projets de Glacerie, sans Perdre en Rigueur Technique.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Glacier Consultant Pro · IA Conseil Glacerie Artisanale | AICP',
       description: 'Agent IA Glacier Consultant artisan : formulation POD/PAC, cartes saisonnières, fiches de coût CHR et HACCP pour glaceries artisanales, groupes et investisseurs. Essai gratuit.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je l\'utiliser avec des clients internationaux ?', a: 'Oui. 7 langues et base de prix CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Accélérez Vos Projets de Chocolat, sans Perdre l\'Artisanat.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Chocolatier Consultant Pro · IA Bean-to-Bar MOF | AI Chef Pro',
       description: 'Agent IA Chocolatier Consultant (MOF) : collections de bonbons, tablettes bean-to-bar, fiches de coût couverture premium et HACCP pour chocolate shops. Essai gratuit.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients internationaux ?', a: 'Oui. 7 langues et base CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Cartes de Desserts, sans Perdre en Jugement Technique.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Pâtissier Consultant Pro · IA Cartes de Desserts MOF | AICP',
       description: 'Agent IA Pâtissier Consultant (MOF) : développement de cartes de desserts, fiches de coût pâtisserie, fiches techniques et manuels de fournil pour restaurants et hôtels. Essai gratuit.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients internationaux ?', a: 'Oui. 7 langues et base CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Pizzerias Conseillées, sans Perdre la Rigueur Italienne.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Pizzaïolo Consultant Pro · IA Pizzeria Artisanale AVPN | AICP',
       description: 'Agent IA Pizzaïolo Consultant : formulation de pâtes, cartes de pizzas, fiches de coût CHR et manuels de fermentation (AVPN) pour pizzerias artisanales. Essai gratuit.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients internationaux ?', a: 'Oui. 7 langues et base CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Specialty Coffee Shops Conseillées, avec Marge Réelle.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Barista Consultant Pro · IA Café de Spécialité | AI Chef Pro',
       description: 'Agent IA Barista Consultant : cartes de café, calibrage d\'extraction, fiches de coût CHR et projets de specialty coffee shop pour hôtels et torréfacteurs. Essai gratuit.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Cela couvre-t-il la traçabilité de cave et le HACCP ?', a: 'Oui. Pack APPCC inclut registres de température, humidité, traçabilité des millésimes et opérationnel de cave.' },
     ],
     ctaTitle: 'Plus de Programmes de Vins Conseillés, sans Perdre le Jugement Sommelier.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Sommelier Consultant Pro · IA Carte des Vins & Cave | AICP',
       description: 'Agent IA Sommelier Consultant : cartes des vins, beverage cost, optimisation de cave et formation de salle pour restaurants gastronomiques et hôtels de luxe. Essai gratuit.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients internationaux ?', a: 'Oui. 7 langues et base CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Cocktail Bars Conseillés, avec Beverage Cost sous Contrôle.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Bartender Consultant Pro · IA Mixologie & Cocktail Bar | AICP',
       description: 'Agent IA Bartender Consultant : cartes de cocktails, beverage cost, formation et conseil en mixologie pour bars d\'auteur et hôtels de luxe (mixologue/barman). Essai gratuit.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_FR_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Puis-je travailler avec des clients internationaux ?', a: 'Oui. 7 langues et base CHR en Europe, LATAM et marché anglo-saxon.' },
     ],
     ctaTitle: 'Plus de Boulangeries Conseillées, sans Perdre l\'Identité Artisanale.',
-    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 5 utilisations par mois pour tester tous les agents. Sans carte bancaire.',
+    ctaSubtitle: 'Commencez gratuitement avec l\'onboarding de 2 minutes. 10 000 crédits par mois pour tester tous les agents. Sans carte bancaire.',
     seo: {
       title: 'Boulanger Consultant Pro · IA Boulangerie Artisanale | AICP',
       description: 'Agent IA Boulanger Consultant artisanal : formulation, fiches de coût CHR, manuels de fournil et projets de bakery café pour hôtels et boulangeries artisanales. Essai gratuit.',

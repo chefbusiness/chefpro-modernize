@@ -374,7 +374,7 @@ const PSeoCityPage = ({ modifier }: PSeoCityPageProps) => {
                   Probar AI Chef Pro Gratis <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <p className="text-xs text-muted-foreground mt-4">5 usos gratis al mes · Sin tarjeta</p>
+              <p className="text-xs text-muted-foreground mt-4">10.000 créditos gratis al mes · Sin tarjeta</p>
             </CardContent>
           </Card>
         </div>

@@ -927,8 +927,8 @@
     "annual": "Jaarlijks",
     "free_trial": "7 dagen gratis proberen",
     "most_popular": "Meest Populair",
-    "unlimited_badge": "Onbeperkt Gebruik",
-    "uses_label": "GEBRUIK",
+    "unlimited_badge": "Onbeperkte Credits",
+    "uses_label": "CREDITS",
     "start_free": "Gratis Beginnen",
     "select_plan": "Plan Selecteren",
     "enterprise_question": "Heeft u een enterprise-plan nodig?",
@@ -937,11 +937,11 @@
       "member": {
         "name": "AI Chef Lid",
         "price": "Gratis",
-        "uses": "20/maand",
+        "uses": "10.000/maand",
         "description": "Ideaal voor keukenhulpen, koks en postchefs",
         "features": {
           "0": "Toegang tot alle 55+ tools",
-          "1": "20 maandelijkse gebruiken",
+          "1": "10.000 maandelijkse credits",
           "2": "Wereldwijde kookboeken",
           "3": "E-mailondersteuning"
         }
@@ -950,11 +950,11 @@
         "name": "AI Chef Premium Pro",
         "price": "€25",
         "period": "/maand",
-        "uses": "150/maand",
+        "uses": "85.000/maand",
         "description": "Voor Keukenchefs, Chefkoks en Restaurantmanagers",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
-          "1": "150 maandelijkse gebruiken",
+          "1": "85.000 maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Prioriteitsondersteuning"
@@ -964,11 +964,11 @@
         "name": "AI Chef Premium Plus",
         "price": "€50",
         "period": "/maand",
-        "uses": "350/maand",
+        "uses": "175.000/maand",
         "description": "Voor gastronomische ondernemers en restaurantketens",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
-          "1": "350 maandelijkse gebruiken",
+          "1": "175.000 maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Premium 24/7 ondersteuning"
@@ -979,10 +979,10 @@
         "price": "€95",
         "period": "/maand",
         "uses": "∞",
-        "description": "Onbeperkt maandelijks gebruik voor veeleisende professionals",
+        "description": "Onbeperkte maandelijkse credits voor veeleisende professionals",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
-          "1": "Onbeperkt maandelijks gebruik",
+          "1": "Onbeperkte maandelijkse credits",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Premium 24/7 ondersteuning",
@@ -1000,7 +1000,7 @@
         "description": "Ideaal voor gastronomische ondernemers, restauranteigenaren en leidinggevenden",
         "features": {
           "0": "Alle 55+ tools inbegrepen",
-          "1": "Onbeperkt gebruik het hele jaar",
+          "1": "Onbeperkte credits het hele jaar",
           "2": "Toegang tot alle wereldkeukens",
           "3": "Geavanceerde bedrijfstools",
           "4": "Premium 24/7 ondersteuning",
@@ -1076,7 +1076,7 @@
     "q2": "Kan ik AI Chef Pro gebruiken als ik een beginner ben?",
     "a2": "Absoluut! AI Chef Pro is ontworpen voor professionals van alle niveaus. Onze tools bevatten gedetailleerde uitleg, stap-voor-stap technieken en coaching die u zullen helpen uw gastronomische vaardigheden te ontwikkelen.",
     "q3": "Hoe werkt het gratis plan?",
-    "a3": "Het AI Chef Member-plan is volledig gratis en vereist geen creditcard. Het omvat 20 gebruiken per maand met toegang tot alle 55+ tools. Wanneer u meer nodig heeft, kunt u op elk moment upgraden naar AI Chef Premium Pro (€25/maand), Premium Plus (€50/maand), Premium Max (€95/maand) of het Jaarplan (€950/jaar).",
+    "a3": "Het AI Chef Member-plan is volledig gratis en vereist geen creditcard. Het omvat 10.000 credits per maand met toegang tot alle 55+ tools. Wanneer u meer nodig heeft, kunt u op elk moment upgraden naar AI Chef Premium Pro (€25/maand), Premium Plus (€50/maand), Premium Max (€95/maand) of het Jaarplan (€950/jaar).",
     "q4": "Passen recepten zich aan aan verschillende portiegroottes?",
     "a4": "Ja, al onze tools bevatten automatische portieberekening. U kunt elk recept aanpassen voor 1 persoon of voor 1000 gasten, en ons systeem berekent automatisch de exacte hoeveelheden van elk ingrediënt.",
     "q5": "Bevat het ondersteuning voor voedingsbeperkingen?",
@@ -1639,7 +1639,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor elk type horecabedrijf",
-      "subtitle": "Van het gratis plan om te beginnen tot onbeperkt gebruik voor grote operaties.",
+      "subtitle": "Van het gratis plan om te beginnen tot onbeperkte credits voor grote operaties.",
       "annual_note": "Jaarplan ook beschikbaar: AI Chef Premium Plus Jaarlijks voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -1660,7 +1660,7 @@
       },
       {
         "question": "Hoeveel kost het gebruik van AI voor restaurantbeheer?",
-        "answer": "AI Chef Pro heeft een gratis plan (AI Chef Lid) met 20 gebruiken per maand. Betaalde plannen beginnen bij €25/maand (AI Chef Premium Pro, 150 gebruiken) en gaan tot €95/maand voor onbeperkt gebruik. Er is ook een jaarplan voor €950 wat neerkomt op €79/maand."
+        "answer": "AI Chef Pro heeft een gratis plan (AI Chef Lid) met 10.000 credits per maand. Betaalde plannen beginnen bij €25/maand (AI Chef Premium Pro, 85.000 credits) en gaan tot €95/maand voor onbeperkte credits. Er is ook een jaarplan voor €950 wat neerkomt op €79/maand."
       }
     ],
     "cta_section": {
@@ -1805,7 +1805,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor grenzeloos menuontwerp",
-      "subtitle": "Van het gratis plan om te starten tot onbeperkt gebruik voor grote operaties met meerdere menukaarten.",
+      "subtitle": "Van het gratis plan om te starten tot onbeperkte credits voor grote operaties met meerdere menukaarten.",
       "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -1971,7 +1971,7 @@
     },
     "pricing_section": {
       "title": "Plannen voor geautomatiseerde gastronomische marketing",
-      "subtitle": "Van het gratis plan om te starten tot onbeperkt gebruik voor groepen met meerdere vestigingen.",
+      "subtitle": "Van het gratis plan om te starten tot onbeperkte credits voor groepen met meerdere vestigingen.",
       "annual_note": "Ook beschikbaar als jaarplan: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2174,7 +2174,7 @@
     },
     "pricing_section": {
       "title": "Eerlijke prijs voor de AI die uw restaurant verdient",
-      "subtitle": "Van gratis om te beginnen tot onbeperkt gebruik voor grote operaties.",
+      "subtitle": "Van gratis om te beginnen tot onbeperkte credits voor grote operaties.",
       "annual_note": "Ook beschikbaar: AI Chef Premium Plus Jaarplan voor €950/jaar · Bespaar 2 maanden"
     },
     "faq_section": {
@@ -2977,19 +2977,19 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "20 gebruiken/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -3123,19 +3123,19 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "20 gebruiken/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -3373,19 +3373,19 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "20 gebruik/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruik/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruik/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -3719,19 +3719,19 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "20 gebruik/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruik/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruik/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -3883,19 +3883,19 @@
         {
           "name": "Gratis",
           "price": "0€/maand",
-          "uses": "20 gebruik/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/maand",
-          "uses": "150 gebruik/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/maand",
-          "uses": "350 gebruik/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -4118,19 +4118,19 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "20 gebruiken/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -4269,19 +4269,19 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "20 gebruiken/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
-          "uses": "150 gebruiken/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/maand",
-          "uses": "350 gebruiken/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {
@@ -4391,19 +4391,19 @@
         {
           "name": "Gratis",
           "price": "€0/maand",
-          "uses": "20 menu's/maand",
+          "uses": "10.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/maand",
-          "uses": "150 menu's/maand",
+          "uses": "85.000 credits/maand",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/maand",
-          "uses": "350 menu's/maand",
+          "uses": "175.000 credits/maand",
           "highlight": true
         },
         {

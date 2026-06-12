@@ -680,8 +680,8 @@
     "annual": "Annual",
     "free_trial": "7-day free trial",
     "most_popular": "Most Popular",
-    "unlimited_badge": "Unlimited Usage",
-    "uses_label": "USES",
+    "unlimited_badge": "Unlimited Credits",
+    "uses_label": "CREDITS",
     "start_free": "Start Free",
     "select_plan": "Select Plan",
     "enterprise_question": "Need an enterprise plan?",
@@ -690,11 +690,11 @@
       "member": {
         "name": "AI Chef Member",
         "price": "Free",
-        "uses": "20/month",
+        "uses": "10,000/month",
         "description": "Ideal for kitchen assistants, cooks and station chefs",
         "features": {
           "0": "Access to all 55+ tools",
-          "1": "20 monthly uses",
+          "1": "10,000 monthly credits",
           "2": "World cookbooks",
           "3": "Email support"
         }
@@ -703,11 +703,11 @@
         "name": "AI Chef Premium Pro",
         "price": "€25",
         "period": "/month",
-        "uses": "150/month",
+        "uses": "85,000/month",
         "description": "For Kitchen Chefs, Executive Chefs and Restaurant Managers",
         "features": {
           "0": "All 55+ tools included",
-          "1": "150 monthly uses",
+          "1": "85,000 monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
           "4": "Priority support"
@@ -717,11 +717,11 @@
         "name": "AI Chef Premium Plus",
         "price": "€50",
         "period": "/month",
-        "uses": "350/month",
+        "uses": "175,000/month",
         "description": "For gastronomic entrepreneurs and restaurant chains",
         "features": {
           "0": "All 55+ tools included",
-          "1": "350 monthly uses",
+          "1": "175,000 monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
           "4": "Premium 24/7 support"
@@ -732,10 +732,10 @@
         "price": "€95",
         "period": "/month",
         "uses": "∞",
-        "description": "Unlimited monthly use for demanding professionals",
+        "description": "Unlimited monthly credits for demanding professionals",
         "features": {
           "0": "All 55+ tools included",
-          "1": "Unlimited monthly use",
+          "1": "Unlimited monthly credits",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
           "4": "Premium 24/7 support",
@@ -753,7 +753,7 @@
         "description": "Ideal for Gastronomic Entrepreneurs, Restaurant Owners and Executives",
         "features": {
           "0": "All 55+ tools included",
-          "1": "Unlimited use throughout the year",
+          "1": "Unlimited credits throughout the year",
           "2": "Access to all world cuisines",
           "3": "Advanced business tools",
           "4": "Premium 24/7 support",
@@ -803,7 +803,7 @@
     "q2": "Can I use AI Chef Pro if I'm a beginner?",
     "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
     "q3": "How does the free plan work?",
-    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 20 uses per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
+    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 10,000 credits per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
     "q4": "Do recipes adapt to different portion sizes?",
     "a4": "Yes, all our AI agents include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
     "q5": "Does it include support for dietary restrictions?",
@@ -1370,7 +1370,7 @@
     },
     "pricing_section": {
       "title": "Plans for every type of food business",
-      "subtitle": "From the free plan to unlimited use for large operations.",
+      "subtitle": "From the free plan to unlimited credits for large operations.",
       "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1391,7 +1391,7 @@
       },
       {
         "question": "How much does it cost to use AI for restaurant management?",
-        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 20 uses per month. Paid plans start at €25/month (AI Chef Premium Pro, 150 uses) and go up to €95/month for unlimited use. There is also an annual plan at €950 equivalent to €79/month."
+        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 10,000 credits per month. Paid plans start at €25/month (AI Chef Premium Pro, 85,000 credits) and go up to €95/month for unlimited credits. There is also an annual plan at €950 equivalent to €79/month."
       }
     ],
     "cta_section": {
@@ -1536,7 +1536,7 @@
     },
     "pricing_section": {
       "title": "Plans to design unlimited menus",
-      "subtitle": "From the free plan to get started to unlimited use for large operations with multiple menus.",
+      "subtitle": "From the free plan to get started to unlimited credits for large operations with multiple menus.",
       "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1702,7 +1702,7 @@
     },
     "pricing_section": {
       "title": "Plans to automate your gastronomy marketing",
-      "subtitle": "From the free plan to get started to unlimited use for groups with multiple locations.",
+      "subtitle": "From the free plan to get started to unlimited credits for groups with multiple locations.",
       "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -1905,7 +1905,7 @@
     },
     "pricing_section": {
       "title": "Fair price for the AI your restaurant deserves",
-      "subtitle": "From free to get started to unlimited use for large operations.",
+      "subtitle": "From free to get started to unlimited credits for large operations.",
       "annual_note": "Also available: AI Chef Premium Plus Annual plan at €950/year · Save 2 months"
     },
     "faq_section": {
@@ -2708,19 +2708,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -2854,19 +2854,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -3104,19 +3104,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -3450,19 +3450,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -3614,19 +3614,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -3849,19 +3849,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -4004,19 +4004,19 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "20 uses/month",
+          "uses": "10,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/month",
-          "uses": "150 uses/month",
+          "uses": "85,000 credits/month",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/month",
-          "uses": "350 uses/month",
+          "uses": "175,000 credits/month",
           "highlight": true
         },
         {
@@ -4126,19 +4126,19 @@
         {
           "name": "Free",
           "price": "€0/mo",
-          "uses": "20 menus/mo",
+          "uses": "10,000 credits/mo",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "€25/mo",
-          "uses": "150 menus/mo",
+          "uses": "85,000 credits/mo",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "€50/mo",
-          "uses": "350 menus/mo",
+          "uses": "175,000 credits/mo",
           "highlight": true
         },
         {

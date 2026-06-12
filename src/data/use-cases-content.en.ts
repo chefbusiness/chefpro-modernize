@@ -57,7 +57,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Are there discounts for groups with multiple locations?', a: 'Yes. Starting at 5 active units we offer enterprise plans with personalized onboarding and consolidated dashboards across the group.' },
       ],
       ctaTitle: 'Run your restaurant on data, not gut feel.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card required.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card required.',
       seo: {
         title: 'AI for Restaurant Owners: Financials, Costing, SEO | AI Chef Pro',
         description: 'AI suite for restaurant owners: specialized agents, financial plan, professional recipe costing, HACCP, marketing, and local SEO. Start free.',
@@ -168,7 +168,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Is there a dedicated agent for my type of casual restaurant?', a: 'Yes. Casual Restaurants AI+ covers bistros, gastropubs, tapas spots, Mediterranean concepts, neighborhood taverns, and casual grills. For more specific concepts there are Burger Pro AI+, Food Truck AI+, and country-specific agents (Mexican, Peruvian, Japanese, and more).' },
       ],
       ctaTitle: 'Bring order to your casual restaurant.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Casual Restaurants: Ops, Costing, Local SEO | AI Chef Pro',
         description: 'AI suite for casual restaurants, bistros, and gastropubs: specialist agents, recipe costing, HACCP, scheduling, local SEO, and marketing on a professional foundation. Start free.',
@@ -277,7 +277,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it generate a reference image of the costed dish?', a: 'Yes. GastroIMG Gen+ generates a visual reference of the dish. Remember the AI image is for reference only — the final hero photo of the costed dish is the one you plate and shoot in your kitchen.' },
       ],
       ctaTitle: 'Your recipe cost cards in minutes, with true margin validated.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card required.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card required.',
       seo: {
         title: 'AI Recipe Costing: True Plate Cost & Food Cost | AI Chef Pro',
         description: 'AI suite for professional recipe costing: recipe + CSV with kitchen labor cost, built-in yield loss, validated margin. Start free.',
@@ -388,7 +388,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How long until the subscription pays for itself?', a: 'Most executive chefs see ROI on the first new menu. A traditional menu change takes 15 to 30 days for brainstorming, testing, costing, spec sheets, and internal communication. With AI Chef Pro and a clean Excel or Google Workspace workflow, that same process drops to 1 to 3 days depending on menu size and whether it\'s a full or partial reengineering. With 4 to 6 menu changes per year, you recover 60 to 120 working days.' },
       ],
       ctaTitle: 'Build, cost, and replicate recipes at the speed of a conversation.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Executive Chefs: Recipes, Costing, Manuals | AI Chef Pro',
         description: 'AI suite for executive and corporate chefs: Executive Chef Pro agent, automated recipe costing, spec sheets, and replicable multi-unit kitchen manuals. Start free.',
@@ -500,7 +500,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it work for kitchens with advanced techniques (fermentation, spherification, long cooks)?', a: 'Yes. Fermentus Pro AI+ covers cutting-edge fermentation (koji, kombucha, shoyu, miso, garum, lacto-ferments) and Avant-garde Cuisine understands sous vide, spherification, gelification and controlled long cooks.' },
       ],
       ctaTitle: 'More cooking, less paperwork. Get hours back for what matters.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to test every agent. No card required.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to test every agent. No card required.',
       seo: {
         title: 'AI for Head Chefs: Plate Cost, Spec Sheets & HACCP | AI Chef Pro',
         description: 'AI suite for professional head chefs: specialized agents, plate costing, spec sheets, mise en place and HACCP backed by real culinary expertise. Start free.',
@@ -606,12 +606,12 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Do the templates adapt to my kitchen\'s style?', a: 'Yes. There are concept-specific Tasks Kits (casual, fine dining, dark kitchen, hotel, pizzeria, burger joint, pastry, bar, catering, gelateria, chocolate shop, creative restaurant, private chef) and all of them can be customized to your kitchen\'s style.' },
         { q: 'Does it work from mobile for line logs?', a: 'Yes. HACCP logs, yield-loss entries, temperatures and task check-offs are all done from staff phones with nothing to install. At the end of the day everything exports to PDF for the head chef or owner.' },
         { q: 'Is it complicated for the line to use?', a: 'No. The team just fills boxes or checks off tasks. Real ramp time is one day. There\'s a 5-minute onboarding video.' },
-        { q: 'What if I\'m not the one who decides the tools in the kitchen?', a: 'You can start free with 5 uses per month for your own lists and proposals. After 1-2 weeks of using it, pitch the head chef with concrete data: hours saved, plate costs validated, mise en place organized.' },
+        { q: 'What if I\'m not the one who decides the tools in the kitchen?', a: 'You can start free with 10,000 credits per month for your own lists and proposals. After 1-2 weeks of using it, pitch the head chef with concrete data: hours saved, plate costs validated, mise en place organized.' },
         { q: 'How does it help during service rushes?', a: 'Centralized recipe specs give you fast mobile access during the pass. If a technical question comes up, Avant-garde Cuisine answers in seconds. Mental Coach also helps you manage stress in high-pressure kitchens.' },
         { q: 'Is there anything specific to help me move up to head chef?', a: 'Yes. Pro Prompts eBook (300+ professional prompts), Executive Chef Pro (multi-unit standardization) and Gastro Lexicum (technique reference) are key tools to grow into the next role.' },
       ],
       ctaTitle: 'Run your kitchen without loose paper.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Sous Chef: Mise en Place, Recipes & HACCP | AI Chef Pro',
         description: 'AI suite for the professional sous chef: mise en place, centralized recipe specs, plate costing, HACCP from mobile, and line training. Start free.',
@@ -831,7 +831,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it help open new locations faster?', a: 'Yes — it\'s one of the most common use cases. Our "How to Open a…" guides (dark kitchen, fine-dining, casual, Mexican, Japanese, Peruvian, Nikkei) are professional roadmaps that accelerate openings with financial plan, business plan, and replicable playbooks.' },
       ],
       ctaTitle: 'Standardize your group. Same standard across every location.',
-      ctaSubtitle: 'Book a tailored onboarding for your group, or start free with 5 uses per month.',
+      ctaSubtitle: 'Book a tailored onboarding for your group, or start free with 10,000 credits per month.',
       seo: {
         title: 'AI for Multi-Unit Directors of Operations | AI Chef Pro',
         description: 'AI suite for multi-unit restaurant groups: consolidated dashboards, standardized recipes, group-wide HACCP, replicable manuals, and per-unit P&L.',
@@ -940,7 +940,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with professional sourdough?', a: 'Fermentus Pro AI+ is the reference for fermentation: hydrations, preferments (poolish, biga, tang zhong), sourdough refreshes, and controlled fermentation technique.' },
       ],
       ctaTitle: 'Real pizza margin, not gut feel.',
-      ctaSubtitle: 'Start free with a 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with a 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Pizzeria: Sourdough, Per-Pie Costing, Delivery | AI Chef Pro',
         description: 'AI suite for professional pizzerias: Italian Cuisine, Fermentus for dough, per-pie recipe costing, pizza-shop templates, and local SEO. Start free.',
@@ -1161,7 +1161,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'And local SEO — is it worth it for a dark kitchen?', a: 'Very much so. A dark kitchen lives on online discovery: if you can capture local Google searches (for example, "burger delivery [your neighborhood]") on top of platform traffic, you cut your dependency on commissions and add direct margin. The AI Chef Pro SEO suite is built for exactly this.' },
       ],
       ctaTitle: 'Your dark kitchen, with real margin and per-brand data.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to test every agent. No credit card required.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to test every agent. No credit card required.',
       seo: {
         title: 'AI for Dark Kitchens: Multi-Brand Costing and SEO | AI Chef Pro',
         description: 'AI suite for dark kitchens: multi-brand recipe costing, after-commission margin on DoorDash and Uber Eats, local SEO, HACCP, and an opening playbook.',
@@ -1273,7 +1273,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with seasonality?', a: 'Gastro Calendar maps key seasons (Mother\'s Day, Valentine\'s, Easter, Christmas, weddings) well in advance, with a financial plan adapted to production peaks.' },
       ],
       ctaTitle: 'Your production kitchen with clear margin and professional branding.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Pastry Shops: Costing, Seasonality & Branding | AI Chef Pro',
         description: 'AI suite for artisan pastry shops: Creative Pastry, per-piece recipe costing with production-kitchen labor cost, HACCP, seasonal planning, and branding. Start free.',
@@ -1493,7 +1493,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it optimize local SEO for my coffee shop?', a: 'Menu Dish Local SEO + BlogPost SEO Gen+ + Keyword Discovery AI+ work together to capture local searches like "brunch in [your area]" or "best specialty coffee near me".' },
       ],
       ctaTitle: 'Your café with polished operations and organic acquisition.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Coffee Shops & Brunch: Operations, Pinterest & Local SEO | AI Chef Pro',
         description: 'AI suite for coffee shops and brunch spots: specialized agents, recipe costing, HACCP, Instagram and Pinterest content, local SEO. Start free.',
@@ -1603,7 +1603,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help me capture corporate clients?', a: 'BlogPost SEO Gen+ + Keyword Discovery AI+ + Menu Dish Local SEO work together to capture companies searching for catering in your area through organic Google searches.' },
       ],
       ctaTitle: 'Catering with real margin and zero chaos.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Catering & Events: Weddings, Corporate, Cocktails | AI Chef Pro',
         description: 'AI suite for professional catering companies: Catering AI+, per-event recipe costing, production at scale, off-site HACCP, and commercial proposals. Start free.',
@@ -1714,7 +1714,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'And cost control per outlet?', a: 'The Financial Plan Kit lets you analyze food cost, productivity, and margin separately for breakfast, restaurant, lobby bar, room service, and banquets. That gives a real view of which outlet performs and which doesn\'t.' },
       ],
       ctaTitle: 'Your hotel F&B coordinated, with no chaos.',
-      ctaSubtitle: 'Talk to us for a personalized onboarding or start free with 5 uses per month.',
+      ctaSubtitle: 'Talk to us for a personalized onboarding or start free with 10,000 credits per month.',
       seo: {
         title: 'AI for Full-Service Hotels (F&B + Housekeeping): Restaurant, Bar, Banquets | AI Chef Pro',
         description: 'AI suite for hotel F&B Managers: breakfast buffet, restaurant, lobby bar, room service, banquets, and housekeeping with specialized agents. Start free.',
@@ -1823,7 +1823,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it generate content for the display case, social, and Google Maps?', a: 'Yes. GastroIMG Gen+ generates professional reference images of every flavor for the display case, web, and social; InstaFlow AI Pro schedules Instagram with an editorial calendar; Menu Dish Local SEO captures local customers searching "ice cream shop near me". Remember: the AI image is a visual reference — the final photo is the one you take with your real pan and presentation.' },
       ],
       ctaTitle: 'Your ice cream shop with clear margin and professional branding.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Artisan Ice Cream Shops: Per-Flavor Costing, Seasonality & Branding | AI Chef Pro',
         description: 'AI suite for artisan ice cream shops: Creative Ice Cream Making, per-flavor recipe costing with technical balance, HACCP, seasonal planning, and visual branding. Start free.',
@@ -1933,7 +1933,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with the strong seasonality?', a: 'Gastro Calendar plans key seasons (Christmas, Valentine\'s, Easter, King\'s Cake, Mother\'s Day) 8–12 weeks in advance. The Financial Plan Kit projects a realistic seasonal cash flow so you arrive at every peak with production and capital ready.' },
       ],
       ctaTitle: 'Your chocolate shop with clear margin and professional branding.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Chocolate Shops & Bonbon Shops: Costing, Seasonality & Branding | AI Chef Pro',
         description: 'AI suite for artisan chocolate shops: Creative Chocolate Making, per-bonbon costing with production-kitchen labor cost, HACCP, seasonal planning, and branding. Start free.',
@@ -2044,7 +2044,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it integrate with Sosa and other technical vendors?', a: 'Sosa Ingredients Agent and tSpoonLab Agent are vendor-specific assistants: they help select textures, additives, and technical applications with professional judgment.' },
       ],
       ctaTitle: 'Creativity with system, avant-garde with margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Creative & Signature Restaurants: R&D, Avant-Garde & Storytelling | AI Chef Pro',
         description: 'AI suite for creative and signature restaurants: Avant-garde Cuisine, Fermentus, Sonar Deep Research, advanced recipe costing, spec sheets, and professional storytelling.',
@@ -2155,7 +2155,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it integrate with premium vendors?', a: 'Sosa Ingredients Agent and tSpoonLab Agent are vendor-specific assistants for catalogs widely used in fine dining. They help select textures, additives, and technical applications with creative-cooking judgment.' },
       ],
       ctaTitle: 'Fine dining with system, avant-garde with direction.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Fine Dining (Michelin / Repsol): Tasting Menu, R&D & Communication | AI Chef Pro',
         description: 'AI suite for fine dining: Avant-garde Cuisine, Fermentus, Sonar Deep Research, premium recipe costing, spec sheets, communication with Michelin and Repsol guides. Start free.',
@@ -2265,7 +2265,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with Mexican holidays?', a: 'Gastro Calendar plans key dates (Day of the Dead, Candlemas with tamales, Mexican Independence Day, Cinco de Mayo) with special menus and editorial calendar.' },
       ],
       ctaTitle: 'Your Mexican restaurant with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Mexican Restaurants: Salsas, Recipe Costing & Authentic Technique | AI Chef Pro',
         description: 'AI suite for Mexican restaurants: Mexican Cuisine, per-taco costing, holiday planning, branding, and HACCP. Start free.',
@@ -2375,7 +2375,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with Peruvian holidays and events?', a: 'Gastro Calendar plans key dates (July 28 Peruvian Independence Day, National Ceviche Day, National Pisco Sour Day, Mistura) with special menus and editorial calendar.' },
       ],
       ctaTitle: 'Your Peruvian restaurant with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Peruvian Restaurants: Ceviches, Recipe Costing & Authentic Technique | AI Chef Pro',
         description: 'AI suite for Peruvian restaurants: Peruvian Cuisine, per-ceviche costing, holiday planning, branding, and HACCP. Start free.',
@@ -2485,7 +2485,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with Japanese holidays?', a: 'Gastro Calendar plans key dates (Hanami with sakura, Japanese New Year with osechi ryori, Hina Matsuri, International Sushi Day) with special menus and a minimalist editorial calendar.' },
       ],
       ctaTitle: 'Your Japanese restaurant with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Japanese Restaurants: Sushi, Recipe Costing & Itamae Technique | AI Chef Pro',
         description: 'AI suite for Japanese restaurants: Japanese Cuisine, Fermentus for koji and miso, per-piece recipe costing, holiday planning. Start free.',
@@ -2595,7 +2595,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with cross-cultural Peruvian-Japanese holidays?', a: 'Gastro Calendar plans key dates from both cultures (Peruvian July 28, Japanese Hanami, National Ceviche Day, Japanese New Year) with seasonal nikkei omakase and fusion storytelling.' },
       ],
       ctaTitle: 'Your nikkei restaurant with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Nikkei Restaurants: Tiraditos, Recipe Costing & Fusion Technique | AI Chef Pro',
         description: 'AI suite for nikkei restaurants: Japanese + Peruvian Cuisine, per-tiradito costing, nikkei omakase, branding, and HACCP. Start free.',
@@ -2705,7 +2705,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with Veganuary and plant-based events?', a: 'Gastro Calendar plans Veganuary (January), World Vegan Day, Earth Day, and local vegetable seasons with special menus and an editorial calendar.' },
       ],
       ctaTitle: 'Your plant-based restaurant with real margin and signature technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Plant-Based & Vegan Restaurants: Bowls, Recipe Costing & Ferments | AI Chef Pro',
         description: 'AI suite for plant-based restaurants: VegChef, Fermentus for vegetable umami, per-bowl recipe costing, branding, and HACCP. Start free.',
@@ -2815,7 +2815,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with events and holidays?', a: 'Gastro Calendar plans Father\'s Day, Christmas, corporate events, and seasonal special-cut launches with steakhouse menus and editorial calendar.' },
       ],
       ctaTitle: 'Your steakhouse with real margin and fire technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Steakhouses, Grills & Asadores: Cuts, Recipe Costing & Dry-Aged | AI Chef Pro',
         description: 'AI suite for steakhouses: Argentine + Brazilian Cuisine, per-cut recipe costing, dry-aged, branding, and HACCP. Start free.',
@@ -2925,7 +2925,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with seasonal launches?', a: 'Gastro Calendar plans pumpkin spice latte (fall), cold brew (summer), Christmas spiced coffee, and seasonal signatures.' },
       ],
       ctaTitle: 'Your coffee shop with real margin and third-wave technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Specialty Coffee Shops: Menus, Recipe Costing & Branding | AI Chef Pro',
         description: 'AI suite for coffee shops: Avant-garde Cuisine, in-house pastry, per-drink recipe costing, minimalist branding, and local acquisition. Start free.',
@@ -3035,7 +3035,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with omakase and premium events?', a: 'Gastro Calendar plans seasonal omakase, Hanami, Japanese New Year with premium tasting menus.' },
       ],
       ctaTitle: 'Your sushi bar with authentic technique and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Sushi Bars: Itamae, Omakase & Recipe Costing | AI Chef Pro',
         description: 'AI suite for sushi bars: Japanese Cuisine, Fermentus, per-nigiri recipe costing, omakase, and minimalist branding. Start free.',
@@ -3145,7 +3145,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with private events and tastings?', a: 'Gastro Calendar plans winery tastings, private events, San Fermín, and local festivals.' },
       ],
       ctaTitle: 'Your gastrobar with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Gastrobars & Tapas Bars: Tapas, Recipe Costing & Pairings | AI Chef Pro',
         description: 'AI suite for gastrobars: Spanish Cuisine, Bar & Lounge AI+, per-tapa costing, vermouth and wines by the glass. Start free.',
@@ -3255,7 +3255,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with events and routes?', a: 'Gastro Calendar plans festivals, fairs, markets, and private events with route planning.' },
       ],
       ctaTitle: 'Your food truck with real margin and tight operations.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Food Trucks: Menu, Recipe Costing & Events | AI Chef Pro',
         description: 'AI suite for food trucks: Food Truck AI+, per-dish recipe costing, event planning, viral branding, and HACCP. Start free.',
@@ -3365,7 +3365,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with Italian events and holidays?', a: 'Gastro Calendar plans Ferragosto, Carnevale, Pasqua, Natale, and private events with Italian menus.' },
       ],
       ctaTitle: 'Your Italian restaurant with authentic technique and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Italian Restaurants: Pasta, Recipe Costing & Wines | AI Chef Pro',
         description: 'AI suite for Italian restaurants: Italian Cuisine, recipe costing, fresh pasta, Italian wines, and trattoria branding. Start free.',
@@ -3476,7 +3476,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it help design innovative menus?', a: 'Yes. Catering AI+ + Avant-garde Cuisine + Food Pairing AI + Fermentus Pro AI+ work together to design creative menus with a professional foundation, not recipes copied from the internet.' },
       ],
       ctaTitle: 'Design, cost, and produce events without scattered paper.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Catering Chefs: Menus, Recipe Costing & Off-Site HACCP | AI Chef Pro',
         description: 'AI suite for catering chefs: Catering AI+, Avant-garde Cuisine, Calcula Pax, per-event recipe costing, off-site HACCP, and production planning at scale. Start free.',
@@ -3586,7 +3586,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Is it safe to trust the financial plan to AI?', a: 'Yes. The Financial Plan Kit is a professional Excel template with preloaded formulas — not AI. You enter the real data and the tool calculates. AI agents are only used for decision support, proposal drafting, and analysis, not for critical financial calculation.' },
       ],
       ctaTitle: 'Grow your catering with real margin, not intuition.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Catering Company Owners: Profitability and Financial Plan | AI Chef Pro',
         description: 'AI suite for catering companies: profitability per event, production at scale, temporary teams, financial plan, and corporate-client acquisition. Start free.',
@@ -3696,7 +3696,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with menu seasonality?', a: 'Gastro Calendar plans seasonal menus (summer, fall, Christmas, Valentine\'s) in advance. The Financial Plan Kit projects a realistic seasonal cash flow so you arrive at every peak with stock and capital.' },
       ],
       ctaTitle: 'Your mixology with real margin and signature technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Bartenders & Mixologists: Menus, Recipe Costing & Storytelling | AI Chef Pro',
         description: 'AI suite for professional bartenders: Bar & Lounge AI+, Food Pairing AI, per-drink recipe costing, spec sheets with storytelling, and visual branding. Start free.',
@@ -3806,7 +3806,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with seasonality and events?', a: 'Gastro Calendar plans seasonal menus (summer, fall with mushrooms and truffle, Valentine\'s, Easter, Christmas specials). The Financial Plan Kit projects a realistic seasonal cash flow so you arrive at every peak with stock and capital.' },
       ],
       ctaTitle: 'Your pizzeria with real margin and authentic technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Pizzaiolos & Pizza Chefs: Doughs, Recipe Costing & Italian Technique | AI Chef Pro',
         description: 'AI suite for professional pizzaiolos: Italian Cuisine, Fermentus for doughs and biga, per-pizza recipe costing, templates, and authentic technique. Start free.',
@@ -3916,7 +3916,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with seasonality and events?', a: 'Gastro Calendar plans key seasons (Easter with monas and hornazos, Christmas with King\'s Cake and panettone, local festivals) in advance. The Financial Plan Kit projects a realistic seasonal cash flow.' },
       ],
       ctaTitle: 'Your artisan bakery with clear margin and professional technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Artisan Bakers: Sourdough, Recipe Costing & Professional Technique | AI Chef Pro',
         description: 'AI suite for artisan bakers: Creative Bakery, Fermentus Pro AI+ for sourdough, per-piece costing with production-kitchen labor cost. Start free.',
@@ -4027,7 +4027,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with the strong seasonality?', a: 'Gastro Calendar plans key seasons (Christmas, Valentine\'s, Easter, King\'s Cake, Mother\'s Day) 8–12 weeks in advance. The Financial Plan Kit projects a realistic seasonal cash flow.' },
       ],
       ctaTitle: 'Your chocolate work with clear margin and signature technique.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Chocolatiers: Tempering, Recipe Costing & Seasonality | AI Chef Pro',
         description: 'AI suite for professional chocolatiers: Creative Chocolate Making, per-piece costing with production-kitchen labor cost, seasonal planning, and HACCP. Start free.',
@@ -4137,7 +4137,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with capturing recurring clients?', a: 'GastroIMG Gen+ + InstaFlow AI Pro build constant visual content; Menu Dish Local SEO captures local customers searching "private chef in [city]"; Gastro Calendar helps propose seasonal menus (intimate Christmas, Valentine\'s, anniversaries) to drive loyalty.' },
       ],
       ctaTitle: 'Your private chef service with real margin and a signature offering.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Private & Personal Chefs: Menus, Recipe Costing & Service | AI Chef Pro',
         description: 'AI suite for professional private chefs: Private Chef Pro, per-dinner recipe costing, personalized menus, branding, and acquisition. Start free.',
@@ -4247,7 +4247,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with corporate events and seasons?', a: 'Gastro Calendar plans corporate events, weddings, conferences, seasons (summer/winter), Christmas, and Valentine\'s with outlet-specific menus and a coordinated editorial calendar.' },
       ],
       ctaTitle: 'Your hotel F&B with integrated margin and professional operations.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Hotel F&B Managers: Multi-Outlet, Banquets & Recipe Costing | AI Chef Pro',
         description: 'AI suite for hotel F&B Managers: Restaurant Manager Pro, Catering AI+, cross-outlet recipe costing, multi-outlet branding, and integrated HACCP. Start free.',
@@ -4357,7 +4357,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with private events and corporate dinners?', a: 'Gastro Calendar plans private events, corporate dinners, Christmas, Valentine\'s, anniversaries with tasting menus and dedicated-service proposals.' },
       ],
       ctaTitle: 'Your floor with professional technique and a memorable experience.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Maîtres & Floor Managers: Service, Pairings & Storytelling | AI Chef Pro',
         description: 'AI suite for professional maîtres: Restaurant Manager Pro, Bar & Lounge AI+, Food Pairing AI, team training, and premium acquisition. Start free.',
@@ -4467,7 +4467,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with private tastings and cellar events?', a: 'Gastro Calendar plans private tastings, cellar events, wine fairs, seasonal releases, and pairings with tasting menus.' },
       ],
       ctaTitle: 'Your cellar with professional judgment and food-science pairings.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Sommeliers: Cellar, Pairings & Professional Tastings | AI Chef Pro',
         description: 'AI suite for professional sommeliers: Bar & Lounge AI+, Food Pairing AI, per-glass costing, private tastings, and wine-driven branding. Start free.',
@@ -4577,7 +4577,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with corporate events?', a: 'Gastro Calendar plans Father\'s Day, Christmas, corporate events, and seasonal cut launches.' },
       ],
       ctaTitle: 'Your grill with fire technique and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
       seo: {
         title: 'AI for Master Grill Chefs & Asadores: Cuts, Fire & Dry-Aged | AI Chef Pro',
         description: 'AI suite for master grill chefs: Argentine + Brazilian Cuisine, per-cut recipe costing, dry-aged, branding, and HACCP. Start free.',
@@ -4687,7 +4687,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How do I manage shrinkage in batch freezer and display?', a: 'Waste GenCal delivers per-process data (batch freezer, blast chilling, exposure). It feeds the costing inside Recipe Costing Kit Pro.' },
       ],
       ctaTitle: 'Your ice cream with authentic technique and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Master Ice Cream Makers & Gelatieri: Bases, Recipe Costing & Seasonality | AI Chef Pro',
         description: 'AI suite for master ice cream makers: Creative Ice Cream Making, technical balance, per-flavor recipe costing, branding, and HACCP. Start free.',
@@ -4797,7 +4797,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with events and seasons?', a: 'Gastro Calendar plans key seasons (King\'s Cake, Valentine\'s, Easter, Christmas, communions) in advance.' },
       ],
       ctaTitle: 'Your pastry with signature technique and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'AI for Pastry Chefs & Pâtissiers: Technique, Recipe Costing & Seasonality | AI Chef Pro',
         description: 'AI suite for professional pastry chefs: Creative Pastry, costing with production-kitchen labor cost, seasonal planning, and branding. Start free.',
@@ -4904,7 +4904,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Scalable to banquets and private events?', a: 'Yes. Calcula Pax scales the menu to any cover count; Recipe Costing Kit Pro recalculates per-pax cost and the client proposal.' },
       ],
       ctaTitle: 'Your professional tasting menu in hours, not weeks.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Design a Tasting Menu with AI: Sequence, Recipe Costing & Pairings | AI Chef Pro',
         description: 'AI suite for tasting menus: technical sequence, total recipe costing, food-science pairings, and storytelling. Start free.',
@@ -5010,7 +5010,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with audits and certifications?', a: 'Every spec sheet is traceable: ingredients, gram weight, allergens, cost, and technique. Ready for audit, ISO 22000, BRC, and food-safety certifications.' },
       ],
       ctaTitle: 'Your professional spec sheets in minutes.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Create Spec Sheets with AI: Allergens, Cost & Storytelling | AI Chef Pro',
         description: 'AI suite for spec sheets: automatic allergens, integrated cost, plating photo, and storytelling. Start free.',
@@ -5116,7 +5116,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'Does it generate visual content of the pairing for Instagram?', a: 'Yes. GastroIMG Gen+ generates a reference image. Remember: the AI image is a visual reference — the final photo is the one you take with your real glass and dish.' },
       ],
       ctaTitle: 'Your pairings with food-science backing in minutes.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Validate Pairings with AI: Wines, Sake & Non-Alcoholic | AI Chef Pro',
         description: 'AI suite for pairings: Food Pairing AI with food-science backing, cellar selection, and floor storytelling. Start free.',
@@ -5222,7 +5222,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with tuned purchasing?', a: 'Calcula Pax + Gastro Calendar plan production and purchasing tuned to real service volume to reduce surplus at source.' },
       ],
       ctaTitle: 'Your kitchen with reduced shrinkage and real data.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Reduce Kitchen Shrinkage with AI: Real Data & Repurposing | AI Chef Pro',
         description: 'AI suite to reduce shrinkage: Waste GenCal with real data, professional repurposing, traceable recipe costing. Start free.',
@@ -5328,7 +5328,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with regulatory changes?', a: 'Sonar Deep Research queries up-to-date regulation by country and region. Avant-garde Cuisine updates spec sheets and procedures when norms change.' },
       ],
       ctaTitle: 'Your professional mobile HACCP without paper.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Manage Digital HACCP with AI: Templates, Allergens & Traceability | AI Chef Pro',
         description: 'AI suite for digital HACCP: Excel templates, automatic allergens, ISO traceability. Start free.',
@@ -5435,7 +5435,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with producer storytelling?', a: 'Avant-garde Cuisine reasons in local-product mode: native-breed rancher, organic farmer, artisan fisher, local baker. Every dish includes professional storytelling for floor and communication.' },
       ],
       ctaTitle: 'Your seasonal menu with local product and real margin.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Design a Seasonal Menu with AI: Local Product, Recipe Costing & Storytelling | AI Chef Pro',
         description: 'AI suite for seasonal menu: Gastro Calendar, local product, recipe costing, and producer storytelling. Start free.',
@@ -5541,7 +5541,7 @@ export const USE_CASES_CONTENT_EN: Partial<Record<string, UseCaseContent>> = {
         { q: 'How does it help with local delivery acquisition?', a: 'Menu Dish Local SEO + GastroIMG Gen+ generate professional images for DoorDash, Uber Eats, Grubhub with judgment that lifts CTR. Better photo = more clicks and better ranking.' },
       ],
       ctaTitle: 'Your food photography with professional judgment.',
-      ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month. No credit card.',
+      ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month. No credit card.',
       seo: {
         title: 'How to Do Food Photography with AI: Reference Image and Final Photo | AI Chef Pro',
         description: 'AI suite for food photography: GastroIMG Gen+ generates the reference image, then you take the final photo with your real dish. Start free.',

@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usá-lo para clientes fora de Portugal?', a: 'Sim. Há versões em 7 idiomas e a base de dados HORECA cobre Portugal, Espanha, LATAM, Itália, França, Alemanha, Países Baixos e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Acelere os Seus Projetos sem Perder Rigor Técnico.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Consultor Gastronômico/Gastronómico · IA Restaurantes A&B | AICP',
       description: 'Agente IA Consultor Gastronômico/Gastronómico: consultoria A&B, due diligence, diagnóstico rentabilidade e plano financeiro para grupos no Brasil e Portugal. Comece grátis.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usá-lo com clientes fora de Portugal?', a: 'Sim. 7 idiomas e base HORECA em Portugal, Espanha, LATAM, Itália, França, Alemanha, Países Baixos e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Projetos, Sem Renunciar ao Critério Técnico.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Chef Consultor Pro · IA Desenvolvimento de Menus A&B | AI Chef Pro',
       description: 'Agente IA Chef Consultor Pro para grupos de restauração, hotéis e franquias: desenvolvimento de menus, escandalhos profissionais, fichas técnicas e formação. Comece grátis.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes em LATAM ou Itália?', a: 'Sim. 7 idiomas disponíveis e base HORECA em Portugal, Espanha, Itália, LATAM, França, Alemanha e Países Baixos.' },
     ],
     ctaTitle: 'Mais Projetos de Gelataria, Sem Perder Rigor Técnico.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Sorveteiro/Gelateiro Consultor Pro · IA Sorveteria Artesanal | AICP',
       description: 'Agente IA Sorveteiro (BR) / Mestre Gelateiro (PT) Consultor: formulação POD/PAC, cartas sazonais, escandalho e APPCC para sorveterias artesanais e gelaterias. Comece grátis.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso usar com clientes internacionais?', a: 'Sim. 7 idiomas e base de preços HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Acelere os Seus Projetos de Chocolate, Sem Perder Artesania.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Chocolateiro/Chocolatier Consultor Pro · IA Bean-to-Bar | AICP',
       description: 'Agente IA Chocolateiro/Chocolatier Consultor: coleções de bombons, tabletes bean-to-bar, escandalho de cacau premium e APPCC para chocolate shops e hotéis. Comece grátis.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes internacionais?', a: 'Sim. 7 idiomas e base HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Cartas de Sobremesas, Sem Perder Critério Técnico.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Confeiteiro/Pasteleiro Consultor Pro · IA Confeitaria | AI Chef Pro',
       description: 'Agente IA Confeiteiro (BR) / Pasteleiro (PT) Consultor: cartas de sobremesas, escandalho de confeitaria, fichas técnicas e manuais de obrador. Comece grátis.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes internacionais?', a: 'Sim. 7 idiomas e base HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Pizzarias Assessoradas, Sem Perder Rigor Italiano.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Pizzaiolo Consultor Pro · IA Pizzaria Napolitana AVPN | AICP',
       description: 'Agente IA Pizzaiolo Consultor artesanal: formulação de massas (AVPN), cartas, escandalho HORECA e manuais de fermentação para pizzarias napolitanas no BR e PT. Comece grátis.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes internacionais?', a: 'Sim. 7 idiomas e base HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Specialty Coffee Shops Assessoradas, Com Margem Real.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Barista Consultor Pro · IA Café de Especialidade SCA | AI Chef Pro',
       description: 'Agente IA Barista Consultor: cartas de café, calibração de extração SCA, escandalho e projetos de specialty coffee shop para hotéis, torrefatores e cafeterias. Comece grátis.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Cobre a rastreabilidade de adega e HACCP?', a: 'Sim. O Pack HACCP inclui registos de temperatura, humidade, rastreabilidade de colheitas e operação de adega.' },
     ],
     ctaTitle: 'Mais Programas de Vinhos Assessorados, Sem Perder Critério Sommelier.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Sommelier Consultor Pro · IA Carta de Vinhos & Escanção | AICP',
       description: 'Agente IA Sommelier Consultor (também escanção em Portugal): cartas de vinhos, beverage cost, otimização de adega e formação de sala para alta cozinha. Comece grátis.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes internacionais?', a: 'Sim. 7 idiomas e base HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Cocktail Bars Assessorados, Com Beverage Cost Sob Controlo.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Bartender/Barman Consultor Pro · IA Coquetelaria Mixologia | AICP',
       description: 'Agente IA Bartender (BR) / Barman (PT) Consultor: cartas de cocktails, beverage cost, mixologia e projetos de cocktail bar para bares de autor e hotéis. Comece grátis.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_PT_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Posso trabalhar com clientes internacionais?', a: 'Sim. 7 idiomas e base HORECA na Europa, LATAM e mercado anglo-saxónico.' },
     ],
     ctaTitle: 'Mais Padarias Assessoradas, Sem Perder Identidade Artesã.',
-    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 5 utilizações por mês para experimentar todos os agentes. Sem cartão.',
+    ctaSubtitle: 'Comece grátis com o onboarding de 2 minutos. 10.000 créditos por mês para experimentar todos os agentes. Sem cartão.',
     seo: {
       title: 'Padeiro Consultor Pro · IA Padaria Artesanal & Pastelaria | AICP',
       description: 'Agente IA Padeiro Consultor artesanal: padaria & pastelaria (PT), padaria artesanal (BR), escandalho HORECA, manuais de obrador e bakery café. Comece grátis.',

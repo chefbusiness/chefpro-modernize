@@ -159,7 +159,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Miembro",
-                "description": "Acceso básico gratuito. 5 usos/mes.",
+                "description": "Acceso básico gratuito. 10.000 créditos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "0",
@@ -168,7 +168,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Premium Pro",
-                "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 150 usos/mes.",
+                "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "25",
@@ -177,7 +177,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Premium Plus",
-                "description": "Para empresarios gastronómicos y cadenas de restaurantes. 350 usos/mes.",
+                "description": "Para empresarios gastronómicos y cadenas de restaurantes. 175.000 créditos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "50",
@@ -186,7 +186,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Premium Max",
-                "description": "Uso ilimitado mensual para profesionales exigentes.",
+                "description": "Créditos ilimitados mensuales para profesionales exigentes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "95",

@@ -63,9 +63,9 @@ export default function SoftwareGestionCocina() {
     : `${SITE_URL}/${currentLanguage}/${canonicalSlug}`;
 
   const plans = [
-    { name: 'AI Chef Miembro', price: 'Gratis', uses: '5 usos/mes', highlight: false },
-    { name: 'AI Chef Premium Pro', price: '25€/mes', uses: '150 usos/mes', highlight: false },
-    { name: 'AI Chef Premium Plus', price: '50€/mes', uses: '350 usos/mes', highlight: true },
+    { name: 'AI Chef Miembro', price: 'Gratis', uses: '10.000 créditos/mes', highlight: false },
+    { name: 'AI Chef Premium Pro', price: '25€/mes', uses: '85.000 créditos/mes', highlight: false },
+    { name: 'AI Chef Premium Plus', price: '50€/mes', uses: '175.000 créditos/mes', highlight: true },
     { name: 'AI Chef Premium Max', price: '95€/mes', uses: 'Ilimitado', highlight: false },
   ];
 

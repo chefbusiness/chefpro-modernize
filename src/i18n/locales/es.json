@@ -505,8 +505,8 @@
     "annual": "Anual",
     "free_trial": "Prueba gratuita de 7 días",
     "most_popular": "Más Popular",
-    "unlimited_badge": "Uso Ilimitado",
-    "uses_label": "USOS",
+    "unlimited_badge": "Créditos Ilimitados",
+    "uses_label": "CRÉDITOS",
     "start_free": "Empezar Gratis",
     "select_plan": "Seleccionar Plan",
     "enterprise_question": "¿Necesitas un plan enterprise?",
@@ -515,11 +515,11 @@
       "member": {
         "name": "AI Chef Miembro",
         "price": "Gratis",
-        "uses": "20/mes",
+        "uses": "10.000/mes",
         "description": "Ideal para ayudantes de cocina, cocineros y jefes de partida",
         "features": {
           "0": "Acceso a todas las 55+ herramientas",
-          "1": "20 usos mensuales",
+          "1": "10.000 créditos mensuales",
           "2": "Recetarios mundiales",
           "3": "Soporte por email"
         }
@@ -528,11 +528,11 @@
         "name": "AI Chef Premium Pro",
         "price": "25€",
         "period": "/mes",
-        "uses": "150/mes",
+        "uses": "85.000/mes",
         "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes",
         "features": {
           "0": "Todas las 55+ herramientas incluidas",
-          "1": "150 usos mensuales",
+          "1": "85.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
           "4": "Soporte prioritario"
@@ -542,11 +542,11 @@
         "name": "AI Chef Premium Plus",
         "price": "50€",
         "period": "/mes",
-        "uses": "350/mes",
+        "uses": "175.000/mes",
         "description": "Para empresarios gastronómicos y cadenas de restaurantes",
         "features": {
           "0": "Todas las 55+ herramientas incluidas",
-          "1": "350 usos mensuales",
+          "1": "175.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
           "4": "Soporte premium 24/7"
@@ -557,10 +557,10 @@
         "price": "95€",
         "period": "/mes",
         "uses": "∞",
-        "description": "Uso ilimitado mensual para profesionales exigentes",
+        "description": "Créditos ilimitados mensuales para profesionales exigentes",
         "features": {
           "0": "Todas las 55+ herramientas incluidas",
-          "1": "Uso ilimitado mensual",
+          "1": "Créditos ilimitados mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
           "4": "Soporte premium 24/7",
@@ -578,7 +578,7 @@
         "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos",
         "features": {
           "0": "Todas las 55+ herramientas incluidas",
-          "1": "Uso ilimitado durante todo el año",
+          "1": "Créditos ilimitados durante todo el año",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
           "4": "Soporte premium 24/7",
@@ -622,7 +622,7 @@
     "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
     "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
     "q3": "¿Cómo funciona el plan gratuito?",
-    "a3": "El plan AI Chef Miembro es completamente gratuito y no requiere tarjeta de crédito. Incluye 20 usos al mes con acceso a las 55+ herramientas. Cuando necesites más, puedes pasar al plan AI Chef Premium Pro (25€/mes), Premium Plus (50€/mes), Premium Max (95€/mes) o el plan Anual (950€/año) en cualquier momento.",
+    "a3": "El plan AI Chef Miembro es completamente gratuito y no requiere tarjeta de crédito. Incluye 10.000 créditos al mes con acceso a las 55+ herramientas. Cuando necesites más, puedes pasar al plan AI Chef Premium Pro (25€/mes), Premium Plus (50€/mes), Premium Max (95€/mes) o el plan Anual (950€/año) en cualquier momento.",
     "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
     "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
     "q5": "¿Incluye soporte para restricciones alimentarias?",
@@ -1381,7 +1381,7 @@
     },
     "pricing_section": {
       "title": "Planes para cada tipo de negocio gastronómico",
-      "subtitle": "Desde el plan gratuito para empezar hasta el uso ilimitado para grandes operaciones.",
+      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grandes operaciones.",
       "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1402,7 +1402,7 @@
       },
       {
         "question": "¿Cuánto cuesta usar IA para la gestión de restaurantes?",
-        "answer": "AI Chef Pro tiene un plan gratuito (AI Chef Miembro) con 20 usos al mes. Los planes de pago empiezan en 25€/mes (AI Chef Premium Pro, 150 usos) y llegan hasta 95€/mes para uso ilimitado. También hay un plan anual a 950€ que equivale a 79€/mes."
+        "answer": "AI Chef Pro tiene un plan gratuito (AI Chef Miembro) con 10.000 créditos al mes. Los planes de pago empiezan en 25€/mes (AI Chef Premium Pro, 85.000 créditos) y llegan hasta 95€/mes para créditos ilimitados. También hay un plan anual a 950€ que equivale a 79€/mes."
       }
     ],
     "cta_section": {
@@ -1547,7 +1547,7 @@
     },
     "pricing_section": {
       "title": "Planes para diseñar cartas sin límites",
-      "subtitle": "Desde el plan gratuito para empezar hasta el uso ilimitado para grandes operaciones con múltiples cartas.",
+      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grandes operaciones con múltiples cartas.",
       "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1713,7 +1713,7 @@
     },
     "pricing_section": {
       "title": "Planes para automatizar tu marketing gastronómico",
-      "subtitle": "Desde el plan gratuito para empezar hasta el uso ilimitado para grupos con múltiples locales.",
+      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grupos con múltiples locales.",
       "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1916,7 +1916,7 @@
     },
     "pricing_section": {
       "title": "Precio justo para la IA que tu restaurante merece",
-      "subtitle": "Desde gratis para empezar hasta uso ilimitado para grandes operaciones.",
+      "subtitle": "Desde gratis para empezar hasta créditos ilimitados para grandes operaciones.",
       "annual_note": "También disponible plan anual AI Chef Premium Plus Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -2719,19 +2719,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -2865,19 +2865,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -3115,19 +3115,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -3484,19 +3484,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -3648,19 +3648,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -3883,19 +3883,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -4042,19 +4042,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 usos/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 usos/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 usos/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {
@@ -4164,19 +4164,19 @@
         {
           "name": "Gratis",
           "price": "0€/mes",
-          "uses": "20 menús/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Pro",
           "price": "25€/mes",
-          "uses": "150 menús/mes",
+          "uses": "85.000 créditos/mes",
           "highlight": false
         },
         {
           "name": "Premium Plus",
           "price": "50€/mes",
-          "uses": "350 menús/mes",
+          "uses": "175.000 créditos/mes",
           "highlight": true
         },
         {

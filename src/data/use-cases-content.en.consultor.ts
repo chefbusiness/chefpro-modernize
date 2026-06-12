@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I use it for clients outside Spain?', a: 'Yes. 7 languages available and HORECA pricing data covers Spain, LATAM, Italy, France, Portugal, Germany, the Netherlands, and English-speaking markets.' },
     ],
     ctaTitle: 'Accelerate Your Projects Without Losing Technical Rigor.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Gastronomy Consultant · AI for Restaurant & F&B | AI Chef Pro',
       description: 'AI agent for restaurant consultants and F&B advisors: due diligence, profitability diagnostics, opening plans, investor proposals. Start free.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I use it with clients outside Spain?', a: 'Yes. 7 languages and HORECA pricing data covering Spain, LATAM, Italy, France, Portugal, Germany, the Netherlands, and English-speaking markets.' },
     ],
     ctaTitle: 'More Projects, Without Sacrificing Technical Rigor.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Chef Consultant Pro · AI for Consulting Chefs | AI Chef Pro',
       description: 'AI Chef Consultant for restaurant groups, hotels, franchises: menu development, recipe costing, technical sheets and brigade training. Start free.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with clients in LATAM or Italy?', a: 'Yes. 7 languages available and HORECA pricing data in Spain, Italy, LATAM, France, Portugal, Germany, and the Netherlands.' },
     ],
     ctaTitle: 'More Gelato Projects, Without Losing Technical Rigor.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Gelato & Ice Cream Consultant Pro · AI Advisor | AI Chef Pro',
       description: 'AI Gelato & Ice Cream Consultant: POD/PAC mix balance, seasonal menus, HORECA costing and HACCP for artisan gelato shops and ice cream startups. Start free.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I use it with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'Accelerate Your Chocolate Projects, Without Losing Craft.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Chocolatier Consultant Pro · AI Bean-to-Bar | AI Chef Pro',
       description: 'AI Chocolatier Consultant: bonbon collections, tablets, bean-to-bar costing and HACCP for chocolate shops, luxury hotels and chocolate brands. Start free.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'More Dessert Menus, Without Losing Technical Judgment.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Pastry Chef Consultant Pro · AI Pastry Advisor | AI Chef Pro',
       description: 'AI Pastry Chef Consultant: dessert menu development, pastry costing, technical sheets and lab manuals for restaurants, hotels and groups. Start free.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'More Pizzerias Advised, Without Losing Italian Rigor.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Pizza Chef Consultant Pro · AI Pizza & Pizzeria | AI Chef Pro',
       description: 'AI Pizza Chef Consultant: dough formulation, menus, HORECA costing, AVPN fermentation manuals for artisan pizzerias, pizza groups and openings. Start free.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'More Specialty Coffee Shops Advised, With Real Margin.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Barista Consultant Pro · AI Coffee Shop Consultant | AI Chef Pro',
       description: 'AI Barista Consultant: coffee menus, extraction calibration, HORECA costing and SCA-aligned projects for specialty coffee shops and hotels. Start free.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Does it cover cellar traceability and HACCP?', a: 'Yes. The HACCP Pack includes temperature, humidity, vintage traceability, and cellar operations records.' },
     ],
     ctaTitle: 'More Wine Programs Advised, Without Losing Sommelier Judgment.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Sommelier Consultant Pro · AI Wine Consultant | AI Chef Pro',
       description: 'AI Sommelier Consultant: wine lists, beverage cost, cellar optimization, floor training and wine bar projects for fine dining and luxury hotels. Start free.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'More Cocktail Bars Advised, With Beverage Cost Under Control.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Bartender Consultant Pro · AI Bar & Cocktail Consultant | AICP',
       description: 'AI Bartender Consultant: cocktail menus, beverage cost, bar program development and team training for signature bars and luxury hotels. Start free.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_EN_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Can I work with international clients?', a: 'Yes. 7 languages and HORECA pricing in Europe, LATAM, and English-speaking markets.' },
     ],
     ctaTitle: 'More Bakeries Advised, Without Losing Artisan Identity.',
-    ctaSubtitle: 'Start free with the 2-minute onboarding. 5 uses per month to try every agent. No credit card.',
+    ctaSubtitle: 'Start free with the 2-minute onboarding. 10,000 credits per month to try every agent. No credit card.',
     seo: {
       title: 'Baker Consultant Pro · AI Bakery Consultant | AI Chef Pro',
       description: 'AI Baker Consultant: artisan bread formulation, HORECA costing, lab manuals and bakery café projects for hotels, groups and bakery chains. Start free.',

@@ -268,7 +268,7 @@ export const PSEO_CONTENT_ES: Record<PSeoModifier, PSeoModifierContent> = {
     primaryCtaTitle: 'Escandalla Profesionalmente con el Kit Pro',
     primaryCtaBody: 'El Kit de Escandallos Pro contiene: plantilla Excel maestra con fórmulas profesionales, calculadora de food cost por plato, base de datos editable de ingredientes con conversiones, plantilla de menú engineering (estrellas/perros/caballos/plows) y vídeo-tutorial de uso. Aumenta el margen de tu restaurante en {city} sin subir un céntimo en carta.',
     saasCtaTitle: 'O Escandalla con IA en AI Chef Pro',
-    saasCtaBody: 'El agente IA Escandallos IA de AI Chef Pro escandalla cualquier plato a partir del nombre y los ingredientes. Genera CSV importable a tu Kit de Escandallos. Suscripción mensual con uso ilimitado.',
+    saasCtaBody: 'El agente IA Escandallos IA de AI Chef Pro escandalla cualquier plato a partir del nombre y los ingredientes. Genera CSV importable a tu Kit de Escandallos. Suscripción mensual con créditos ilimitados.',
     faqs: [
       {
         q: '¿Con qué frecuencia debo escandallar en {city}?',
