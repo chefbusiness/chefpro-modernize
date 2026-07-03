@@ -1,0 +1,190 @@
+---
+// Footer.astro — port de ModernFooter.tsx (paridad visual).
+// El newsletter es estático (no wired, igual que el onSubmit no-op de la SPA): un <script> evita el submit.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+
+const AI_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-ia-para-restaurantes', en: 'en/ai-tools-for-restaurants', fr: 'fr/outils-ia-restaurant', de: 'de/ki-tools-restaurant', it: 'it/strumenti-ia-ristorante', pt: 'pt/ferramentas-ia-restaurante', nl: 'nl/ai-tools-restaurant' };
+const COSTES_SLUGS: Record<string, string> = { es: 'reducir-costes-restaurante-ia', en: 'en/reduce-restaurant-costs-ai', fr: 'fr/reduire-couts-restaurant-ia', de: 'de/restaurantkosten-senken-ki', it: 'it/ridurre-costi-ristorante-ia', pt: 'pt/reduzir-custos-restaurante-ia', nl: 'nl/restaurantkosten-verlagen-ai' };
+const MENU_SLUGS: Record<string, string> = { es: 'carta-menu-restaurante-ia', en: 'en/restaurant-menu-ai', fr: 'fr/carte-menu-restaurant-ia', de: 'de/speisekarte-restaurant-ki', it: 'it/menu-ristorante-ia', pt: 'pt/cardapio-restaurante-ia', nl: 'nl/restaurantmenu-ai' };
+const MARKETING_SLUGS: Record<string, string> = { es: 'marketing-restaurante-ia', en: 'en/restaurant-marketing-ai', fr: 'fr/marketing-restaurant-ia', de: 'de/restaurant-marketing-ki', it: 'it/marketing-ristorante-ia', pt: 'pt/marketing-restaurante-ia-pt', nl: 'nl/restaurant-marketing-ai-nl' };
+const CHATGPT_SLUGS: Record<string, string> = { es: 'chatgpt-para-restaurantes', en: 'en/chatgpt-for-restaurants', fr: 'fr/chatgpt-pour-restaurants', de: 'de/chatgpt-fuer-restaurants', it: 'it/chatgpt-per-ristoranti', pt: 'pt/chatgpt-para-restaurantes', nl: 'nl/chatgpt-voor-restaurants' };
+const RECETAS_SLUGS: Record<string, string> = { es: 'recetas-ia-restaurantes', en: 'ai-recipes-for-restaurants', fr: 'fr/recettes-ia-restaurants', de: 'de/ki-rezepte-restaurants', it: 'it/ricette-ia-ristoranti', pt: 'pt/receitas-ia-restaurantes', nl: 'nl/ai-recepten-restaurants' };
+const SOFTWARE_GESTION_SLUGS: Record<string, string> = { es: 'software-gestion-cocina-ia', en: 'en/kitchen-management-software-ai', fr: 'fr/logiciel-gestion-cuisine-ia', de: 'de/kuechenverwaltung-ki', it: 'it/software-gestione-cucina-ia', pt: 'pt/software-gestao-cozinha-ia', nl: 'nl/keuken-software-ai' };
+const ESCANDALLOS_SLUGS: Record<string, string> = { es: 'escandallos-restaurante-ia', en: 'en/food-cost-calculator-restaurant-ai', fr: 'fr/calcul-food-cost-restaurant-ia', de: 'de/food-cost-rechner-restaurant-ki', it: 'it/food-cost-ristorante-ia', pt: 'pt/escandallo-restaurante-ia', nl: 'nl/food-cost-berekening-restaurant-ai' };
+const MENTORIA_SLUGS: Record<string, string> = { es: 'mentoria-online', en: 'en/mentoria-online', fr: 'fr/mentoria-online', de: 'de/mentoria-online', it: 'it/mentoria-online', pt: 'pt/mentoria-online', nl: 'nl/mentoria-online' };
+
+const s = (m: Record<string, string>) => `/${m[lang] || m.es}`;
+const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${slug}`);
+
+const START_YEAR = 2024;
+const currentYear = new Date().getFullYear();
+const yearText = START_YEAR === currentYear ? `${currentYear}` : `${START_YEAR} - ${currentYear}`;
+
+const usosHub = ({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' } as Record<string, string>)[lang] || '/usos';
+const casosLabel = ({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[lang] || 'Casos de uso';
+const creditLabel = ({ es: 'Sistema de créditos', en: 'Credit system', fr: 'Système de crédits', de: 'Kreditsystem', it: 'Sistema di crediti', pt: 'Sistema de créditos', nl: 'Creditsysteem' } as Record<string, string>)[lang] || 'Sistema de créditos';
+
+const blogHref = lang === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro';
+---
+
+<footer class="border-t bg-background">
+  <div class="container py-14">
+
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 mb-12">
+      <div>
+        <div class="flex items-center space-x-2">
+          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-8 w-auto" />
+        </div>
+        <p class="mt-4 text-sm text-muted-foreground max-w-md" set:html={t(lang, 'footer.brand_desc')} />
+        <p class="mt-2 text-xs text-muted-foreground">{t(lang, 'footer.suite_desc')}</p>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-sm font-semibold">{t(lang, 'footer.newsletter_title')}</h4>
+        <form id="newsletter-form" class="mt-3 flex max-w-md gap-2">
+          <input type="email" placeholder={t(lang, 'footer.newsletter_placeholder')} class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm flex-1" />
+          <button type="submit" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-3">{t(lang, 'footer.newsletter_button')}</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_ia')}</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href={s(AI_TOOLS_SLUGS)} class="text-primary hover:text-primary/80 transition-colors font-medium">{t(lang, 'footer.nav_ai_tools')}</a></li>
+          <li><a href={s(COSTES_SLUGS)} class="text-red-600 hover:text-red-500 transition-colors font-medium">{t(lang, 'footer.nav_costs')}</a></li>
+          <li><a href={s(MENU_SLUGS)} class="text-emerald-600 hover:text-emerald-500 transition-colors font-medium">{t(lang, 'footer.nav_menu')}</a></li>
+          <li><a href={s(MARKETING_SLUGS)} class="text-violet-600 hover:text-violet-500 transition-colors font-medium">{t(lang, 'footer.nav_marketing')}</a></li>
+          <li><a href={s(CHATGPT_SLUGS)} class="text-indigo-600 hover:text-indigo-500 transition-colors font-medium">{t(lang, 'footer.nav_chatgpt')}</a></li>
+          <li><a href={s(SOFTWARE_GESTION_SLUGS)} class="text-emerald-600 hover:text-emerald-500 transition-colors font-medium">{t(lang, 'footer.nav_software_gestion')}</a></li>
+          <li><a href={s(RECETAS_SLUGS)} class="text-amber-600 hover:text-amber-500 transition-colors font-medium">{t(lang, 'footer.nav_recetas')}</a></li>
+          <li><a href={s(ESCANDALLOS_SLUGS)} class="text-rose-600 hover:text-rose-500 transition-colors font-medium">{t(lang, 'footer.nav_escandallos')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_formacion')}</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
+          <li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>
+          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.planes_precios')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_recursos')}</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href={blogHref} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.blog_main')}</a></li>
+          <li><a href="https://blog.aichef.pro/tutoriales/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.tutoriales')}</a></li>
+          <li><a href="https://blog.aichef.pro/libreria-de-prompts/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.prompts_library')}</a></li>
+          <li><a href="https://blog.aichef.pro/recetario-pro-ai/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.recetario')}</a></li>
+          <li><a href="https://blog.aichef.pro/glosario-y-lexico-ai/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_ia')}</a></li>
+          <li><a href="https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_culinario')}</a></li>
+          <li><a href="https://blog.aichef.pro/roadmap/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.roadmap')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_herramientas')}</h4>
+        <ul class="space-y-3 text-sm">
+          {lang === 'es' && (<li><a href="/productos-digitales" class="text-muted-foreground hover:text-foreground transition-colors">Productos Digitales</a></li>)}
+          <li><a href={usosHub} class="text-primary hover:text-primary/80 transition-colors font-medium">{casosLabel}</a></li>
+          {lang === 'es' && (<li><a href="/seo-restaurantes-por-ciudad" class="text-primary hover:text-primary/80 transition-colors font-medium">Recursos por ciudad</a></li>)}
+          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_tools')}</a></li>
+          <li><a href="/herramientas-gratuitas" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.free_tools_hub')}</a></li>
+          <li><a href={s(AI_TOOLS_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.nav_ai_tools')}</a></li>
+          <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_login')}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_empresa')}</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="https://chefbusiness.co/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">ChefBusiness.co</a></li>
+          <li><a href="https://gastroseo.com/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">GastroSEO.com</a></li>
+          <li><a href="https://gastrolocal.pro/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">GastroLocal.pro</a></li>
+          <li><a href="https://hosply.pro/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">Hosply.pro</a></li>
+          <li><a href="mailto:info@aichef.pro" class="text-muted-foreground hover:text-foreground transition-colors">info@aichef.pro</a></li>
+          <li><a href="tel:+34744717942" class="text-muted-foreground hover:text-foreground transition-colors">+34 744 717 942</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shrink-0 bg-border h-[1px] w-full my-8"></div>
+
+    <!-- Métodos de pago -->
+    <div class="mb-6">
+      <p class="text-xs text-muted-foreground mb-3">{t(lang, 'footer.payment_methods')}</p>
+      <div class="flex flex-wrap items-center gap-2">
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 48 32" class="h-5 w-auto" aria-label="Visa"><rect width="48" height="32" rx="4" fill="white"/><text x="24" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="14" fill="#1A1F71" letter-spacing="1">VISA</text></svg>
+        </div>
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 48 32" class="h-5 w-auto" aria-label="Mastercard"><rect width="48" height="32" rx="4" fill="white"/><circle cx="19" cy="16" r="9" fill="#EB001B"/><circle cx="29" cy="16" r="9" fill="#F79E1B"/><path d="M24 9.27a9 9 0 0 1 0 13.46A9 9 0 0 1 24 9.27z" fill="#FF5F00"/></svg>
+        </div>
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 48 32" class="h-5 w-auto" aria-label="American Express"><rect width="48" height="32" rx="4" fill="#2E77BC"/><text x="24" y="20" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="7" fill="white" letter-spacing="0.5">AMERICAN</text><text x="24" y="27" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="7" fill="white" letter-spacing="0.5">EXPRESS</text></svg>
+        </div>
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 64 32" class="h-5 w-auto" aria-label="Google Pay"><rect width="64" height="32" rx="4" fill="white"/><text x="32" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#3C4043" font-weight="500"><tspan fill="#4285F4">G</tspan><tspan fill="#3C4043">Pay</tspan></text></svg>
+        </div>
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 64 32" class="h-5 w-auto" aria-label="Apple Pay"><rect width="64" height="32" rx="4" fill="white"/><text x="32" y="21" text-anchor="middle" font-family="-apple-system,Arial,sans-serif" font-size="11" fill="#000000" font-weight="500"> Pay</text><text x="18" y="21" text-anchor="middle" font-family="-apple-system,Arial,sans-serif" font-size="13" fill="#000000"></text></svg>
+        </div>
+        <div class="flex items-center justify-center h-8 px-2 rounded border border-border bg-white dark:bg-slate-800">
+          <svg viewBox="0 0 48 32" class="h-5 w-auto" aria-label="Stripe"><rect width="48" height="32" rx="4" fill="white"/><text x="24" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="12" fill="#635BFF">stripe</text></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-2 text-center text-sm text-muted-foreground md:text-left">
+        <span>© {yearText}. All rights reserved.</span>
+        <a href={legalHref('legales')} class="hover:text-foreground transition-colors">{t(lang, 'footer.legal')}</a>
+        <a href={legalHref('privacidad')} class="hover:text-foreground transition-colors">{t(lang, 'footer.privacy')}</a>
+        <a href={legalHref('terminos')} class="hover:text-foreground transition-colors">{t(lang, 'footer.terms')}</a>
+        <a href={legalHref('cookies')} class="hover:text-foreground transition-colors">{t(lang, 'footer.cookies')}</a>
+        <a href={legalHref('sistema-creditos')} class="hover:text-foreground transition-colors">{creditLabel}</a>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <a href="https://www.facebook.com/profile.php?id=61565177312061" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/aichefpro" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="https://x.com/aichefpro" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" aria-label="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="https://tiktok.com/aichefpro" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </a>
+        <a href="https://youtube.com/playlist?list=PLkevVb6pg5bs3b2hlwI8-2wW7juXV-eFj&si=eGAgpRRE0h6zfH1S" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Newsletter no wired todavía (paridad con el onSubmit no-op de ModernFooter.tsx)
+  document.getElementById('newsletter-form')?.addEventListener('submit', (e) => e.preventDefault());
+</script>

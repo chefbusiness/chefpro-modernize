@@ -1,0 +1,475 @@
+---
+// Header.astro — port de ModernHeader.tsx + AnnouncementBar.tsx (paridad visual).
+// Sin React: mega-menús desktop = hover CSS (group), dropdown idioma = enlaces planos,
+// menú móvil = panel deslizante con <script> vanilla mínimo, colapsables = <details>.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const LOCALES: Locale[] = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
+
+// getAppUrl — mismo mapeo que src/hooks/useLanguage.ts
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+
+// Selector de idioma = enlaces planos a la home de cada idioma
+const languages: { code: Locale; name: string; flag: string }[] = [
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+  { code: 'pt', name: 'Português', flag: '🇵🇹' },
+  { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
+];
+const langHref = (l: Locale) => (l === 'es' ? '/' : `/${l}`);
+const currentLangName = languages.find((x) => x.code === lang)?.name ?? 'Español';
+const currentLangFlag = languages.find((x) => x.code === lang)?.flag ?? '🇪🇸';
+
+// Slugs nativos por idioma (verbatim de ModernHeader.tsx)
+const AI_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-ia-para-restaurantes', en: 'en/ai-tools-for-restaurants', fr: 'fr/outils-ia-restaurant', de: 'de/ki-tools-restaurant', it: 'it/strumenti-ia-ristorante', pt: 'pt/ferramentas-ia-restaurante', nl: 'nl/ai-tools-restaurant' };
+const COSTES_SLUGS: Record<string, string> = { es: 'reducir-costes-restaurante-ia', en: 'en/reduce-restaurant-costs-ai', fr: 'fr/reduire-couts-restaurant-ia', de: 'de/restaurantkosten-senken-ki', it: 'it/ridurre-costi-ristorante-ia', pt: 'pt/reduzir-custos-restaurante-ia', nl: 'nl/restaurantkosten-verlagen-ai' };
+const MENU_SLUGS: Record<string, string> = { es: 'carta-menu-restaurante-ia', en: 'en/restaurant-menu-ai', fr: 'fr/carte-menu-restaurant-ia', de: 'de/speisekarte-restaurant-ki', it: 'it/menu-ristorante-ia', pt: 'pt/cardapio-restaurante-ia', nl: 'nl/restaurantmenu-ai' };
+const MARKETING_SLUGS: Record<string, string> = { es: 'marketing-restaurante-ia', en: 'en/restaurant-marketing-ai', fr: 'fr/marketing-restaurant-ia', de: 'de/restaurant-marketing-ki', it: 'it/marketing-ristorante-ia', pt: 'pt/marketing-restaurante-ia-pt', nl: 'nl/restaurant-marketing-ai-nl' };
+const CHATGPT_SLUGS: Record<string, string> = { es: 'chatgpt-para-restaurantes', en: 'en/chatgpt-for-restaurants', fr: 'fr/chatgpt-pour-restaurants', de: 'de/chatgpt-fuer-restaurants', it: 'it/chatgpt-per-ristoranti', pt: 'pt/chatgpt-para-restaurantes', nl: 'nl/chatgpt-voor-restaurants' };
+const HERRAMIENTAS_GRATUITAS_SLUGS: Record<string, string> = { es: 'herramientas-gratuitas', en: 'en/free-tools-restaurants', fr: 'fr/outils-gratuits-restaurant', de: 'de/kostenlose-tools-restaurant', it: 'it/strumenti-gratuiti-ristorante', pt: 'pt/ferramentas-gratuitas-restaurante', nl: 'nl/gratis-tools-restaurant' };
+
+const aiTools = `/${AI_TOOLS_SLUGS[lang] || AI_TOOLS_SLUGS.es}`;
+const costes = `/${COSTES_SLUGS[lang] || COSTES_SLUGS.es}`;
+const menuSlug = `/${MENU_SLUGS[lang] || MENU_SLUGS.es}`;
+const marketing = `/${MARKETING_SLUGS[lang] || MARKETING_SLUGS.es}`;
+const chatgpt = `/${CHATGPT_SLUGS[lang] || CHATGPT_SLUGS.es}`;
+const freeTools = `/${HERRAMIENTAS_GRATUITAS_SLUGS[lang] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`;
+
+const homeHref = lang === 'es' ? '/' : `/${lang}`;
+const mentoriaHref = lang === 'es' ? '/mentoria-online' : `/${lang}/mentoria-online`;
+const pricingHref = lang === 'es' ? '/#pricing' : `/${lang}#pricing`;
+
+// Etiquetas multi-idioma inline (verbatim)
+const pick = (m: Record<string, string>, fb: string) => m[lang] || fb;
+const casosLabel = pick({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' }, 'Casos de uso');
+const porRolLabel = pick({ es: 'Por rol profesional', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' }, 'Por rol profesional');
+const porConceptoLabel = pick({ es: 'Por concepto de negocio', en: 'By business concept', fr: 'Par concept', de: 'Nach Konzept', it: 'Per concetto', pt: 'Por conceito', nl: 'Per concept' }, 'Por concepto de negocio');
+const usosHub = pick({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: '/de/anwendungsfaelle', it: '/it/casi-uso', pt: '/pt/casos-uso', nl: '/nl/use-cases' }, '/usos');
+const verRolesLabel = pick({ es: 'Ver todos los roles →', en: 'View all roles →', fr: 'Voir tous les rôles →', de: 'Alle Rollen ansehen →', it: 'Vedi tutti i ruoli →', pt: 'Ver todas as funções →', nl: 'Alle rollen bekijken →' }, 'Ver todos los roles →');
+const verConceptosLabel = pick({ es: 'Ver todos los conceptos →', en: 'View all concepts →', fr: 'Voir tous les concepts →', de: 'Alle Konzepte ansehen →', it: 'Vedi tutti i concetti →', pt: 'Ver todos os conceitos →', nl: 'Alle concepten bekijken →' }, 'Ver todos los conceptos →');
+const consultorHref = pick({ es: '/usos/consultoria-gastro-pro', en: '/en/use-cases/gastro-consultancy-pro', fr: '/fr/cas-d-usage/conseil-gastro-pro', de: '/de/anwendungsfaelle/gastro-beratung-pro', it: '/it/casi-uso/consulenza-gastro-pro', pt: '/pt/casos-uso/consultoria-gastro-pro', nl: '/nl/use-cases/gastro-advies-pro' }, '/usos/consultoria-gastro-pro');
+const consultorTitle = pick({ es: '✨ Consultoría Gastro Pro', en: '✨ Gastro Consultancy Pro', fr: '✨ Conseil Gastro Pro', de: '✨ Gastro Beratung Pro', it: '✨ Consulenza Gastro Pro', pt: '✨ Consultoria Gastro Pro', nl: '✨ Gastro Advies Pro' }, '✨ Consultoría Gastro Pro');
+const consultorDesc = pick({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater und Experten', it: '10 agenti IA per consulenti e advisor', pt: '10 agentes de IA para consultores e assessores', nl: '10 AI-agenten voor adviseurs en consultants' }, '10 agentes IA para consultores y asesores');
+
+const rolePrefix = ({ es: '/usos/rol', en: '/en/use-cases/role', fr: '/fr/cas-d-usage/role', de: '/de/anwendungsfaelle/rolle', it: '/it/casi-uso/ruolo', pt: '/pt/casos-uso/funcao', nl: '/nl/use-cases/rol' } as Record<string, string>)[lang] || '/usos/rol';
+const conceptPrefix = ({ es: '/usos/concepto', en: '/en/use-cases/concept', fr: '/fr/cas-d-usage/concept', de: '/de/anwendungsfaelle/konzept', it: '/it/casi-uso/concetto', pt: '/pt/casos-uso/conceito', nl: '/nl/use-cases/concept' } as Record<string, string>)[lang] || '/usos/concepto';
+
+type LMap = Record<string, { slug: string; label: string }>;
+const roleItems: LMap[] = [
+  { es: { slug: 'propietario-restaurante', label: 'Propietario de restaurante' }, en: { slug: 'restaurant-owner', label: 'Restaurant owner' }, fr: { slug: 'proprietaire-restaurant', label: 'Propriétaire de restaurant' }, de: { slug: 'restaurantbesitzer', label: 'Restaurantbesitzer' }, it: { slug: 'proprietario-ristorante', label: 'Proprietario di ristorante' }, pt: { slug: 'proprietario-restaurante', label: 'Proprietário de restaurante' }, nl: { slug: 'restauranteigenaar', label: 'Restauranteigenaar' } },
+  { es: { slug: 'gerente-restaurante', label: 'Gerente / Manager' }, en: { slug: 'restaurant-manager', label: 'Manager' }, fr: { slug: 'gerant-restaurant', label: 'Gérant' }, de: { slug: 'restaurantleiter', label: 'Restaurantleiter' }, it: { slug: 'gestore-ristorante', label: 'Gestore' }, pt: { slug: 'gerente-restaurante', label: 'Gerente' }, nl: { slug: 'restaurantmanager', label: 'Manager' } },
+  { es: { slug: 'chef-ejecutivo-corporativo', label: 'Chef ejecutivo / corporativo' }, en: { slug: 'executive-corporate-chef', label: 'Executive chef' }, fr: { slug: 'chef-executif-corporatif', label: 'Chef exécutif' }, de: { slug: 'kuechenchef-corporate', label: 'Küchenchef Corporate' }, it: { slug: 'chef-esecutivo-corporativo', label: 'Chef esecutivo' }, pt: { slug: 'chef-executivo-corporativo', label: 'Chef executivo' }, nl: { slug: 'executive-chef-corporate', label: 'Executive chef' } },
+  { es: { slug: 'chef-jefe-cocina', label: 'Chef de cocina' }, en: { slug: 'head-chef', label: 'Head chef' }, fr: { slug: 'chef-cuisinier', label: 'Chef cuisinier' }, de: { slug: 'kuechenchef', label: 'Küchenchef' }, it: { slug: 'capo-cuoco', label: 'Capo cuoco' }, pt: { slug: 'chefe-cozinha', label: 'Chefe de cozinha' }, nl: { slug: 'chef-kok', label: 'Chef-kok' } },
+  { es: { slug: 'chef-catering', label: 'Chef de catering' }, en: { slug: 'catering-chef', label: 'Catering chef' }, fr: { slug: 'chef-traiteur', label: 'Chef traiteur' }, de: { slug: 'catering-chef', label: 'Catering Chef' }, it: { slug: 'chef-catering', label: 'Chef catering' }, pt: { slug: 'chef-catering', label: 'Chef catering' }, nl: { slug: 'cateringchef', label: 'Catering chef' } },
+];
+const conceptItems: LMap[] = [
+  { es: { slug: 'restaurante-casual', label: 'Restaurante casual' }, en: { slug: 'casual-restaurant', label: 'Casual restaurant' }, fr: { slug: 'restaurant-decontracte', label: 'Restaurant décontracté' }, de: { slug: 'casual-restaurant', label: 'Casual Restaurant' }, it: { slug: 'ristorante-casual', label: 'Ristorante casual' }, pt: { slug: 'restaurante-casual', label: 'Restaurante casual' }, nl: { slug: 'casual-restaurant', label: 'Casual restaurant' } },
+  { es: { slug: 'pizzeria', label: 'Pizzería' }, en: { slug: 'pizzeria', label: 'Pizzeria' }, fr: { slug: 'pizzeria', label: 'Pizzeria' }, de: { slug: 'pizzeria', label: 'Pizzeria' }, it: { slug: 'pizzeria', label: 'Pizzeria' }, pt: { slug: 'pizzaria', label: 'Pizzaria' }, nl: { slug: 'pizzeria', label: 'Pizzeria' } },
+  { es: { slug: 'dark-kitchen', label: 'Dark kitchen' }, en: { slug: 'dark-kitchen', label: 'Dark kitchen' }, fr: { slug: 'dark-kitchen', label: 'Dark kitchen' }, de: { slug: 'dark-kitchen', label: 'Dark kitchen' }, it: { slug: 'dark-kitchen', label: 'Dark kitchen' }, pt: { slug: 'dark-kitchen', label: 'Dark kitchen' }, nl: { slug: 'dark-kitchen', label: 'Dark kitchen' } },
+  { es: { slug: 'catering-eventos', label: 'Catering / Eventos' }, en: { slug: 'catering-events', label: 'Catering / Events' }, fr: { slug: 'traiteur-evenements', label: 'Traiteur / Événements' }, de: { slug: 'catering-events', label: 'Catering / Events' }, it: { slug: 'catering-eventi', label: 'Catering / Eventi' }, pt: { slug: 'catering-eventos', label: 'Catering / Eventos' }, nl: { slug: 'catering-evenementen', label: 'Catering / Evenementen' } },
+  { es: { slug: 'hotel-completo-fb', label: 'Hotel completo (F&B)' }, en: { slug: 'hotel-fb-complete', label: 'Hotel F&B' }, fr: { slug: 'hotel-restauration-complete', label: 'Hôtel F&B' }, de: { slug: 'hotel-fb-komplett', label: 'Hotel F&B' }, it: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, pt: { slug: 'hotel-fb-completo', label: 'Hotel F&B' }, nl: { slug: 'hotel-fb-compleet', label: 'Hotel F&B' } },
+  { es: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico (Michelin)' }, en: { slug: 'fine-dining-michelin', label: 'Fine dining' }, fr: { slug: 'restaurant-gastronomique-etoile', label: 'Gastronomique étoilé' }, de: { slug: 'gourmet-restaurant-michelin', label: 'Gourmet Michelin' }, it: { slug: 'ristorante-gastronomico-stellato', label: 'Gastronomico stellato' }, pt: { slug: 'restaurante-gastronomico-michelin', label: 'Gastronómico Michelin' }, nl: { slug: 'gastronomisch-restaurant-michelin', label: 'Gastronomisch Michelin' } },
+];
+const cityItems = [
+  { slug: 'madrid', label: 'Madrid' },
+  { slug: 'barcelona', label: 'Barcelona' },
+  { slug: 'ciudad-de-mexico', label: 'Ciudad de México' },
+  { slug: 'bogota', label: 'Bogotá' },
+  { slug: 'buenos-aires', label: 'Buenos Aires' },
+];
+const pickItem = (m: LMap) => m[lang] || m.es;
+
+// AnnouncementBar
+const annHref = lang === 'es'
+  ? '/pro-prompts-ebook'
+  : 'https://blog.aichef.pro/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina/';
+const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
+---
+
+<div class="sticky top-0 z-50">
+  <!-- AnnouncementBar -->
+  <div id="announcement-bar" class="bg-chef-dark text-background text-center text-xs sm:text-sm py-2 px-10 relative">
+    <a href={annHref} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-accent transition-colors">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 text-accent flex-shrink-0"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+      <span class="hidden sm:inline">{t(lang, 'announcement_bar.text')}</span>
+      <span class="sm:hidden">{t(lang, 'announcement_bar.text_short')}</span>
+      <span class="font-semibold text-accent whitespace-nowrap">{t(lang, 'announcement_bar.cta')} →</span>
+    </a>
+    <button id="announcement-close" class="absolute right-2 top-1/2 -translate-y-1/2 text-background/60 hover:text-background transition-colors p-1" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+  </div>
+
+  <header class="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div class="container flex h-14 max-w-screen-2xl items-center">
+      <div class="mr-4 flex">
+        <a class="mr-6 flex items-center space-x-2" href="/">
+          <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro Logo" class="h-8 w-auto" />
+        </a>
+
+        <!-- Desktop nav (mega-menús vía hover CSS) -->
+        <nav class="relative z-10 hidden max-w-max flex-1 items-center justify-center md:flex">
+          <ul class="group flex flex-1 list-none items-center justify-center space-x-1">
+            <li>
+              <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
+            </li>
+
+            <!-- Servicios -->
+            <li class="group relative">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+                {t(lang, 'nav.servicios')}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
+                <div class="grid w-[400px] gap-3 p-4 md:grid-cols-1">
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{t(lang, 'nav.servicios')}</h4>
+                    <div class="grid gap-1">
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={mentoriaHref}>{t(lang, 'nav.mentoria_online')}</a>
+                      {lang === 'es' && (
+                        <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href="/formacion-presencial">{t(lang, 'nav.formacion_presencial')}</a>
+                      )}
+                      <a class="block text-sm font-medium text-primary hover:text-primary/80 transition-colors py-1" href={aiTools}>{t(lang, 'nav.herramientas_ia')}</a>
+                      <a class="block text-sm font-medium text-red-600 hover:text-red-500 transition-colors py-1" href={costes}>{t(lang, 'nav.reducir_costes')}</a>
+                      <a class="block text-sm font-medium text-emerald-600 hover:text-emerald-500 transition-colors py-1" href={menuSlug}>{t(lang, 'nav.carta_menu')}</a>
+                      <a class="block text-sm font-medium text-violet-600 hover:text-violet-500 transition-colors py-1" href={marketing}>{t(lang, 'nav.marketing_ia')}</a>
+                      <a class="block text-sm font-medium text-indigo-600 hover:text-indigo-500 transition-colors py-1" href={chatgpt}>{t(lang, 'nav.chatgpt_ia')}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Casos de uso -->
+            <li class="group relative">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+                {casosLabel}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
+                <div class={`grid gap-4 p-4 ${lang === 'es' ? 'w-[960px] md:grid-cols-3' : 'w-[640px] md:grid-cols-2'}`}>
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{porRolLabel}</h4>
+                    <div class="grid gap-1">
+                      {roleItems.map((item) => {
+                        const d = pickItem(item);
+                        return <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${rolePrefix}/${d.slug}`}>{d.label}</a>;
+                      })}
+                      <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href={usosHub}>{verRolesLabel}</a>
+                      <div class="mt-3 pt-3 border-t">
+                        <a class="block px-3 py-2 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors" href={consultorHref}>
+                          <div class="font-semibold text-sm text-indigo-700">{consultorTitle}</div>
+                          <div class="text-xs text-muted-foreground mt-0.5">{consultorDesc}</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{porConceptoLabel}</h4>
+                    <div class="grid gap-1">
+                      {conceptItems.map((item) => {
+                        const d = pickItem(item);
+                        return <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`${conceptPrefix}/${d.slug}`}>{d.label}</a>;
+                      })}
+                      <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href={usosHub}>{verConceptosLabel}</a>
+                    </div>
+                  </div>
+                  {lang === 'es' && (
+                    <div class="space-y-2">
+                      <h4 class="font-medium leading-none text-accent">Por ciudad</h4>
+                      <div class="grid gap-1">
+                        {cityItems.map((c) => (
+                          <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={`/abrir-restaurante/${c.slug}`}>Abrir restaurante en {c.label}</a>
+                        ))}
+                        <a class="block text-sm font-semibold text-primary hover:text-primary/80 transition-colors py-1 mt-1" href="/seo-restaurantes-por-ciudad">Ver 15 ciudades + 5 recursos →</a>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </li>
+
+            <!-- Aplicaciones -->
+            <li class="group relative">
+              <button class="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none data-[state=open]:bg-accent/50 hover:text-foreground/80 text-foreground/60" type="button">
+                {t(lang, 'nav.aplicaciones')}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-hover:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="invisible absolute left-0 top-full z-50 mt-1.5 opacity-0 transition-opacity duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 rounded-md border bg-popover text-popover-foreground shadow-lg">
+                <div class="grid w-[600px] gap-3 p-4 md:grid-cols-3">
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{t(lang, 'categories_labels.creatividad')}</h4>
+                    <div class="grid gap-1">
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={aiTools}>{t(lang, 'nav.creatividad')}</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={aiTools}>{t(lang, 'apps.creativity.pasteleria_creativa.name')}</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={aiTools}>{t(lang, 'apps.creativity.food_pairing.name')}</a>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{t(lang, 'categories_labels.recetarios')}</h4>
+                    <div class="grid gap-1">
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={appUrl(lang)} target="_blank" rel="noopener noreferrer">{t(lang, 'categories.world_cookbooks.europa.name')} ({cookbookCount('categories.world_cookbooks.europa.count')})</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={appUrl(lang)} target="_blank" rel="noopener noreferrer">{t(lang, 'categories.world_cookbooks.latinoamerica.name')} ({cookbookCount('categories.world_cookbooks.latinoamerica.count')})</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={appUrl(lang)} target="_blank" rel="noopener noreferrer">{t(lang, 'categories.world_cookbooks.asia.name')} ({cookbookCount('categories.world_cookbooks.asia.count')})</a>
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <h4 class="font-medium leading-none text-accent">{t(lang, 'showcase.business_title')}</h4>
+                    <div class="grid gap-1">
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={freeTools}>{t(lang, 'apps.business.mermas_gencal.name')}</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={freeTools}>{t(lang, 'apps.business.id_alergenos.name')}</a>
+                      <a class="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1" href={freeTools}>{t(lang, 'apps.business.mental_coach.name')}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={pricingHref}>{t(lang, 'nav.precios')}</a>
+            </li>
+
+            {lang === 'es' && (
+              <li>
+                <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href="/productos-digitales">Productos Digitales</a>
+              </li>
+            )}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div class="w-full flex-1 md:w-auto md:flex-none"></div>
+        <nav class="flex items-center gap-2">
+          <!-- Selector de idioma (enlaces planos vía <details>) -->
+          <details class="relative">
+            <summary class="list-none inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-8 px-2 cursor-pointer">
+              {currentLangName}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="absolute right-0 mt-1 bg-popover border border-border shadow-lg z-[100] min-w-[100px] rounded-md p-1">
+              {languages.map((l) => (
+                <a href={langHref(l.code)} class="block rounded-sm px-2 py-1.5 text-sm hover:bg-accent hover:text-accent-foreground cursor-pointer focus:bg-accent focus:text-accent-foreground">{l.name}</a>
+              ))}
+            </div>
+          </details>
+
+          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 hidden md:inline-flex">{t(lang, 'nav.login')}</a>
+
+          <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-9 px-3 bg-primary text-primary-foreground hover:bg-primary/90 hidden md:inline-flex">{t(lang, 'cta.primary')}</a>
+
+          <!-- Botón menú móvil -->
+          <button id="mobile-menu-open" type="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-9 px-3 md:hidden" aria-label="Abrir menú">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- Sheet móvil (overlay + panel deslizante) -->
+<div id="mobile-menu" class="hidden md:hidden">
+  <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-black/80"></div>
+  <div class="fixed inset-y-0 right-0 z-50 flex h-full w-full flex-col p-0 sm:max-w-sm bg-card/95 backdrop-blur-lg border-l rounded-l-2xl shadow-lg">
+    <div class="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b px-6 py-4">
+      <div class="flex items-center justify-center relative">
+        <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-12 w-auto" />
+        <button id="mobile-menu-close" type="button" class="absolute right-0 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground" aria-label="Cerrar menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex-1 overflow-y-auto">
+      <nav class="p-6 space-y-6">
+        <div class="space-y-1">
+          <a href={homeHref} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            {t(lang, 'nav.inicio')}
+          </a>
+
+          <!-- Servicios (colapsable) -->
+          <details class="group">
+            <summary class="list-none flex items-center justify-between w-full px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation cursor-pointer">
+              <div class="flex items-center gap-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+                {t(lang, 'nav.servicios')}
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="pl-8 space-y-1 mt-1">
+              <a href={mentoriaHref} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                {t(lang, 'nav.mentoria_online')}
+              </a>
+              {lang === 'es' && (
+                <a href="/formacion-presencial" class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M14 22v-4a2 2 0 1 0-4 0v4"/><path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10"/><path d="M18 5v17"/><path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6"/><path d="M6 5v17"/><circle cx="12" cy="9" r="2"/></svg>
+                  {t(lang, 'nav.formacion_presencial')}
+                </a>
+              )}
+              <a href={aiTools} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-primary"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                {t(lang, 'nav.herramientas_ia')}
+              </a>
+              <a href={costes} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-red-600">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-red-500"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                {t(lang, 'nav.reducir_costes')}
+              </a>
+              <a href={menuSlug} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-emerald-600">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-emerald-500"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                {t(lang, 'nav.carta_menu')}
+              </a>
+              <a href={marketing} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-violet-600">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-violet-500"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                {t(lang, 'nav.marketing_ia')}
+              </a>
+              <a href={chatgpt} class="flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-indigo-600">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-indigo-500"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                {t(lang, 'nav.chatgpt_ia')}
+              </a>
+            </div>
+          </details>
+
+          <!-- Casos de uso (colapsable) -->
+          <details class="group">
+            <summary class="list-none flex items-center justify-between w-full px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation cursor-pointer">
+              <div class="flex items-center gap-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+                {casosLabel}
+              </div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground transition-transform duration-200 group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="pl-8 space-y-1 mt-1">
+              <a href={usosHub} class="flex items-center gap-3 px-3 py-2 text-sm font-semibold rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation text-primary">{pick({ es: 'Ver hub completo →', en: 'View hub →', fr: 'Voir le hub →', de: 'Hub ansehen →', it: 'Vedi hub →', pt: 'Ver hub →', nl: 'Bekijk hub →' }, 'Ver hub completo →')}</a>
+              <p class="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">{pick({ es: 'Por rol', en: 'By role', fr: 'Par rôle', de: 'Nach Rolle', it: 'Per ruolo', pt: 'Por função', nl: 'Per rol' }, 'Por rol')}</p>
+              {roleItems.map((item) => {
+                const d = pickItem(item);
+                return <a href={`${rolePrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">{d.label}</a>;
+              })}
+              <p class="px-3 pt-3 pb-1 text-xs font-semibold text-muted-foreground uppercase tracking-wider">{pick({ es: 'Por concepto', en: 'By concept', fr: 'Par concept', de: 'Nach Konzept', it: 'Per concetto', pt: 'Por conceito', nl: 'Per concept' }, 'Por concepto')}</p>
+              {conceptItems.map((item) => {
+                const d = pickItem(item);
+                return <a href={`${conceptPrefix}/${d.slug}`} class="flex items-center gap-3 px-3 py-2 text-sm rounded-lg hover:bg-accent/50 transition-colors touch-manipulation">{d.label}</a>;
+              })}
+            </div>
+          </details>
+
+          <!-- Consultoría Gastro Pro (destacado) -->
+          <a href={consultorHref} class="flex flex-col gap-0.5 px-3 py-3 mb-1 rounded-lg bg-gradient-to-br from-indigo-500/10 to-purple-500/5 hover:from-indigo-500/15 hover:to-purple-500/10 transition-colors touch-manipulation">
+            <span class="text-sm font-semibold text-indigo-700">{consultorTitle}</span>
+            <span class="text-xs text-muted-foreground">{pick({ es: '10 agentes IA para consultores y asesores', en: '10 AI agents for consultants and advisors', fr: '10 agents IA pour consultants et conseillers', de: '10 KI-Agenten für Berater', it: '10 agenti IA per consulenti', pt: '10 agentes de IA para consultores', nl: '10 AI-agenten voor adviseurs' }, '10 agentes IA para consultores y asesores')}</span>
+          </a>
+
+          <a href={pricingHref} class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            {t(lang, 'nav.precios')}
+          </a>
+
+          {lang === 'es' && (
+            <a href="/productos-digitales" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+              Productos Digitales
+            </a>
+          )}
+
+          <a href={lang === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
+            {t(lang, 'nav.blog')}
+          </a>
+        </div>
+
+        <div class="shrink-0 bg-border h-[1px] w-full"></div>
+
+        <!-- Aplicaciones -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">{t(lang, 'nav.aplicaciones')}</h3>
+          <div class="space-y-1">
+            <a href={aiTools} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+              {t(lang, 'nav.creatividad')}
+            </a>
+            <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
+              {t(lang, 'nav.recetarios')}
+            </a>
+            <a href={freeTools} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              {t(lang, 'nav.herramientas')}
+            </a>
+            <a href={freeTools} class="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 text-muted-foreground"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+              {t(lang, 'finder.title_prefix')} {t(lang, 'finder.title_highlight')}
+            </a>
+          </div>
+        </div>
+
+        <div class="shrink-0 bg-border h-[1px] w-full"></div>
+
+        <!-- Idioma -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3">Idioma / Language</h3>
+          <details class="relative">
+            <summary class="list-none inline-flex w-full items-center justify-start gap-3 px-3 py-3 h-auto rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              <span class="flex items-center gap-2"><span class="text-lg">{currentLangFlag}</span>{currentLangName}</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div class="mt-1 w-56 rounded-md border border-border bg-popover p-1 shadow-lg">
+              {languages.map((l) => (
+                <a href={langHref(l.code)} class="flex items-center gap-3 py-2 px-2 rounded-sm text-sm hover:bg-accent hover:text-accent-foreground">
+                  <span class="text-lg">{l.flag}</span>{l.name}
+                  {lang === l.code && (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-auto h-4 w-4"><path d="M20 6 9 17l-5-5"/></svg>
+                  )}
+                </a>
+              ))}
+            </div>
+          </details>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sticky bottom-0 bg-card/95 backdrop-blur-sm border-t p-4" style="padding-bottom: max(16px, env(safe-area-inset-bottom));">
+      <div class="flex gap-2">
+        <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground flex-1 h-10 transition-colors">{t(lang, 'nav.login')}</a>
+        <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-xs font-medium bg-primary text-primary-foreground hover:bg-primary/90 flex-1 h-10 transition-colors">{t(lang, 'cta.primary')}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // AnnouncementBar dismiss (localStorage, paridad con AnnouncementBar.tsx)
+  const annBar = document.getElementById('announcement-bar');
+  if (annBar) {
+    if (localStorage.getItem('announcement-dismissed') === 'true') annBar.style.display = 'none';
+    document.getElementById('announcement-close')?.addEventListener('click', () => {
+      annBar.style.display = 'none';
+      localStorage.setItem('announcement-dismissed', 'true');
+    });
+  }
+
+  // Menú móvil (Sheet) — abrir/cerrar sin framework
+  const menu = document.getElementById('mobile-menu');
+  const openMenu = () => { menu?.classList.remove('hidden'); document.body.style.overflow = 'hidden'; };
+  const closeMenu = () => { menu?.classList.add('hidden'); document.body.style.overflow = ''; };
+  document.getElementById('mobile-menu-open')?.addEventListener('click', openMenu);
+  document.getElementById('mobile-menu-close')?.addEventListener('click', closeMenu);
+  document.getElementById('mobile-menu-overlay')?.addEventListener('click', closeMenu);
+  menu?.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+</script>

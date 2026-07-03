@@ -1,0 +1,152 @@
+---
+// Hero.astro — port de ModernHero.tsx + HeroSocialProof.tsx + CounterStat.tsx.
+// La rotación de palabra y el count-up son mejoras progresivas (script vanilla);
+// el estado estático ya muestra el valor final correcto sin JS.
+import { t, tList } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+
+const businessTypes = tList(lang, 'hero.business_types');
+const firstWord = businessTypes[0] ?? '';
+
+// getDynamicCount() de HeroSocialProof.tsx — computado server-side (determinista por fecha de build)
+function getDynamicCount(): number {
+  const BASE_DATE = new Date('2026-02-12');
+  const BASE_COUNT = 48149;
+  const today = new Date();
+  const diffTime = today.getTime() - BASE_DATE.getTime();
+  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+  let total = BASE_COUNT;
+  for (let i = 1; i <= diffDays; i++) {
+    const seed = (i * 7 + 13) % 21;
+    total += 60 + seed;
+  }
+  return total;
+}
+const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+
+const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// CounterStat: valor final + sufijo (estado visual final estático)
+const stats = [
+  { end: 55, suffix: '+', label: t(lang, 'stats.apps_label') },
+  { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
+  { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
+  { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
+];
+---
+
+<section id="inicio" class="container flex max-w-[64rem] flex-col items-center gap-4 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+  <!-- HeroSocialProof -->
+  <div class="flex flex-col items-center gap-2 mb-4">
+    <div class="flex -space-x-3 justify-center">
+      {avatars.map((i) => (
+        <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-background w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-background">
+          <img class="aspect-square h-full w-full" src={`/avatars/avatar-${i}.jpg`} alt={`Professional ${i}`} loading="lazy" />
+        </span>
+      ))}
+    </div>
+    <div class="flex flex-col items-center gap-0.5">
+      <div class="flex items-center gap-0.5">
+        {[0, 1, 2, 3, 4].map((i) => (
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`}><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+        ))}
+      </div>
+      <span class="text-sm text-muted-foreground">
+        <span class="font-bold text-foreground">{socialCount}</span>{' '}
+        {t(lang, 'hero.social_proof_label')}
+      </span>
+    </div>
+  </div>
+
+  <h1 class="text-center text-4xl font-bold leading-tight tracking-tighter md:text-6xl lg:text-7xl lg:leading-[1.1] text-balance">
+    {t(lang, 'hero.title_prefix')}{' '}
+    <span id="hero-dynamic-word" class="inline-block transition-all duration-300 dynamic-hero-text opacity-100 scale-100">{firstWord}</span>
+    {' '}{t(lang, 'hero.title_suffix')}{' '}
+    <span class="gradient-text">{t(lang, 'hero.title_brand')}</span>
+  </h1>
+
+  <p class="max-w-[42rem] text-center text-lg text-accent-dark font-semibold sm:text-xl text-balance leading-7 mb-2">
+    {t(lang, 'hero.subtitle')}
+  </p>
+
+  <p class="max-w-[42rem] text-center text-base text-muted-foreground text-balance leading-6">
+    {t(lang, 'hero.description')}
+  </p>
+
+  <!-- Counter Stats -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 my-6 sm:my-8 p-4 sm:p-6 bg-muted/30 rounded-xl border">
+    {stats.map((s) => (
+      <div class="text-center p-2">
+        <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={s.end} data-suffix={s.suffix}>{s.end}{s.suffix}</div>
+        <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{s.label}</div>
+      </div>
+    ))}
+  </div>
+
+  <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up w-full sm:w-auto">
+    <a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors h-11 px-8 btn-gold hover:shadow-gold-glow w-full sm:w-auto min-h-[3rem]">
+      {t(lang, 'cta.primary')}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+    <a href="https://blog.aichef.pro" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground h-11 px-8 btn-gold-outline w-full sm:w-auto min-h-[3rem]">
+      {t(lang, 'hero.see_resources')}
+    </a>
+  </div>
+</section>
+
+<script define:vars={{ businessTypes }}>
+  // Rotación de palabra dinámica (equivalente al useEffect de ModernHero)
+  const el = document.getElementById('hero-dynamic-word');
+  if (el && Array.isArray(businessTypes) && businessTypes.length > 1) {
+    let idx = 0;
+    setInterval(() => {
+      el.classList.remove('opacity-100', 'scale-100');
+      el.classList.add('opacity-0', 'scale-95');
+      setTimeout(() => {
+        idx = (idx + 1) % businessTypes.length;
+        el.textContent = businessTypes[idx];
+        el.classList.remove('opacity-0', 'scale-95');
+        el.classList.add('opacity-100', 'scale-100');
+      }, 300);
+    }, 3000);
+  }
+
+  // Count-up de las stats al entrar en viewport (equivalente a CounterStat)
+  const counters = document.querySelectorAll('[data-counter]');
+  const animate = (node) => {
+    const target = parseInt(node.getAttribute('data-target') || '0', 10);
+    const suffix = node.getAttribute('data-suffix') || '';
+    const duration = 2000;
+    let start;
+    const step = (ts) => {
+      if (!start) start = ts;
+      const progress = Math.min((ts - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      node.textContent = Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    counters.forEach((c) => io.observe(c));
+  }
+</script>

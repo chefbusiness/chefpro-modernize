@@ -1,5 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Pricing from '../components/Pricing.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+
+const lang = 'es';
 ---
 
 <BaseLayout
@@ -8,12 +15,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   lang="es"
   basePath="/"
 >
-  <main class="flex min-h-screen flex-col items-center justify-center gap-4 px-6 text-center">
-    <h1 class="text-4xl font-bold">AI Chef Pro — staging Astro (Fase 0)</h1>
-    <p class="max-w-xl text-muted-foreground">
-      Migración en curso según PLAN_MAESTRO_MIGRACION_ASTRO_2026.md. Esta página existe para
-      verificar el gate de Fase 0: HTML completo server-side, canonical, hreflang de 7 idiomas
-      y tokens Tailwind portados de la SPA.
-    </p>
-  </main>
+  <!-- Orden según src/pages/Index.tsx: Header · main(Hero · … · Pricing · … · FAQ) · Footer.
+       Fase 1 slice 1: solo estas 5 secciones portadas (el resto llega en slices posteriores). -->
+  <div class="min-h-screen bg-background overflow-x-clip">
+    <Header lang={lang} />
+    <main>
+      <Hero lang={lang} />
+      <Pricing lang={lang} />
+      <FAQ lang={lang} />
+    </main>
+    <Footer lang={lang} />
+  </div>
 </BaseLayout>

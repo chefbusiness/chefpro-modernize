@@ -1,0 +1,129 @@
+---
+// Pricing.astro — port de ModernPricing.tsx (paridad visual).
+// Las clases de Button/Card/Badge reproducen el resultado ya "mergeado" (cn + tailwind-merge)
+// que la SPA emite en el DOM, para paridad visual exacta.
+// PRECIOS: plan gratis = "3.000/mes créditos"; anual = "AI Chef Premium Max Anual" (JSON commit 93d73fb).
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+const href = appUrl(lang);
+
+interface Plan {
+  id: string; name: string; price: string; period?: string; uses?: string;
+  description: string; features: string[]; popular: boolean;
+  unlimitedBadge?: string; originalPrice?: string; discount?: string; isAnnual?: boolean;
+}
+
+const feat = (id: string, n: number) => Array.from({ length: n }, (_, i) => t(lang, `pricing.plans.${id}.features.${i}`));
+
+const plans: Plan[] = [
+  { id: 'member', name: t(lang, 'pricing.plans.member.name'), price: t(lang, 'pricing.plans.member.price'), uses: t(lang, 'pricing.plans.member.uses'), description: t(lang, 'pricing.plans.member.description'), features: feat('member', 4), popular: false },
+  { id: 'premium_pro', name: t(lang, 'pricing.plans.premium_pro.name'), price: t(lang, 'pricing.plans.premium_pro.price'), period: t(lang, 'pricing.plans.premium_pro.period'), uses: t(lang, 'pricing.plans.premium_pro.uses'), description: t(lang, 'pricing.plans.premium_pro.description'), features: feat('premium_pro', 5), popular: false },
+  { id: 'premium_plus', name: t(lang, 'pricing.plans.premium_plus.name'), price: t(lang, 'pricing.plans.premium_plus.price'), period: t(lang, 'pricing.plans.premium_plus.period'), uses: t(lang, 'pricing.plans.premium_plus.uses'), description: t(lang, 'pricing.plans.premium_plus.description'), features: feat('premium_plus', 5), popular: true },
+  { id: 'premium_max', name: t(lang, 'pricing.plans.premium_max.name'), price: t(lang, 'pricing.plans.premium_max.price'), period: t(lang, 'pricing.plans.premium_max.period'), uses: t(lang, 'pricing.plans.premium_max.uses'), description: t(lang, 'pricing.plans.premium_max.description'), unlimitedBadge: t(lang, 'pricing.unlimited_badge'), features: feat('premium_max', 7), popular: false },
+  { id: 'premium_plus_annual', name: t(lang, 'pricing.plans.premium_plus_annual.name'), price: t(lang, 'pricing.plans.premium_plus_annual.price'), period: t(lang, 'pricing.plans.premium_plus_annual.period'), uses: t(lang, 'pricing.plans.premium_plus_annual.uses'), originalPrice: t(lang, 'pricing.plans.premium_plus_annual.original_price'), discount: t(lang, 'pricing.plans.premium_plus_annual.discount'), description: t(lang, 'pricing.plans.premium_plus_annual.description'), features: feat('premium_plus_annual', 6), popular: false, isAnnual: true },
+];
+
+const memberPrice = t(lang, 'pricing.plans.member.price');
+
+// JSON-LD Product schema (equivalente al de ModernPricing.tsx, vía Helmet)
+const pricingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'AI Chef Pro Subscription',
+  description: t(lang, 'seo.description'),
+  brand: { '@type': 'Brand', name: 'AI Chef Pro' },
+  offers: plans.map((plan) => ({
+    '@type': 'Offer',
+    name: plan.name,
+    price: plan.price.replace(/[^0-9.]/g, ''),
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/InStock',
+    url: 'https://aichef.pro',
+  })),
+};
+
+// Clases "mergeadas" reproduciendo cn()+tailwind-merge del shadcn Button variant=default size=default
+const btnBase = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 px-4 py-2 w-full transition-all duration-300';
+const btnPopular = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full transition-all duration-300 btn-gold hover:shadow-gold-glow scale-105';
+const btnNormal = `${btnBase} bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold`;
+---
+
+<section id="pricing" class="container py-8 md:py-12 lg:py-24">
+  <script type="application/ld+json" set:html={JSON.stringify(pricingSchema)} />
+
+  <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+    <h2 class="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">{t(lang, 'pricing.title')}</h2>
+    <p class="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">{t(lang, 'pricing.description')}</p>
+  </div>
+
+  <div class="grid w-full items-start gap-6 overflow-visible py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    {plans.map((plan) => (
+      <div class={`rounded-lg border bg-card text-card-foreground shadow-sm hover-card relative transition-all duration-300 ${plan.popular ? 'popular-plan scale-105 ring-2 ring-accent/20' : 'hover:scale-[1.02]'}`}>
+        {plan.popular && (
+          <div class="inline-flex items-center rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1">🔥 {t(lang, 'pricing.most_popular')}</div>
+        )}
+
+        {plan.unlimitedBadge && !plan.popular && (
+          <div class="inline-flex items-center rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1 shadow-lg" style="background-color: hsl(270, 70%, 50%); border-color: hsl(270, 70%, 50%);">∞ {plan.unlimitedBadge}</div>
+        )}
+
+        {plan.discount && (
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 absolute -top-3 right-4 shadow-lg font-bold" style="background-color: hsl(142, 70%, 40%); border-color: hsl(142, 70%, 40%);">{plan.discount}</div>
+        )}
+
+        <div class="flex flex-col space-y-1.5 p-6 text-center pb-2">
+          <h3 class="leading-none tracking-tight text-lg font-medium">{plan.name}</h3>
+          <div class="flex flex-col items-center gap-1">
+            {plan.originalPrice && (
+              <span class="text-sm text-muted-foreground line-through">{plan.originalPrice}</span>
+            )}
+            <div class="flex items-baseline justify-center gap-1">
+              <span class="text-3xl font-bold">{plan.price}</span>
+              {plan.period && (<span class="text-muted-foreground">{plan.period}</span>)}
+            </div>
+            {plan.uses && (
+              <div class="text-xs text-muted-foreground mt-1">
+                <span class="font-semibold uppercase tracking-wide">{t(lang, 'pricing.uses_label')}: </span>
+                <span class="font-bold text-primary">{plan.uses}</span>
+              </div>
+            )}
+          </div>
+          <p class="text-sm text-muted-foreground">{plan.description}</p>
+        </div>
+
+        <div class="p-6 pt-0 grid gap-4">
+          <a href={href} target="_blank" rel="noopener noreferrer" class={plan.popular ? btnPopular : btnNormal}>
+            {plan.price === memberPrice ? t(lang, 'pricing.start_free') : t(lang, 'pricing.select_plan')}
+          </a>
+
+          <ul class="grid gap-2 text-sm">
+            {plan.features.map((feature) => (
+              <li class="flex items-center gap-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class={`h-4 w-4 ${plan.popular ? 'text-accent' : 'text-primary'}`}><path d="M20 6 9 17l-5-5"/></svg>
+                <span class="text-xs leading-5">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="text-center">
+    <p class="text-muted-foreground text-sm">
+      {t(lang, 'pricing.enterprise_question')}{' '}
+      <a href="#contacto" class="font-medium text-primary hover:underline">{t(lang, 'pricing.contact_us')}</a>
+    </p>
+  </div>
+</section>

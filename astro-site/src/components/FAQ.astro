@@ -1,0 +1,49 @@
+---
+// FAQ.astro — port de ModernFAQ.tsx (paridad visual).
+// Acordeón shadcn (Radix) -> <details name="faq"> nativo (name = single-open, como type="single").
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const faqs = [1, 2, 3, 4, 5, 6].map((n) => ({
+  question: t(lang, `faq.q${n}`),
+  answer: t(lang, `faq.a${n}`),
+}));
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+---
+
+<section class="container py-8 md:py-12 lg:py-24">
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+    <h2 class="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">{t(lang, 'faq.title')}</h2>
+    <p class="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">{t(lang, 'faq.description')}</p>
+  </div>
+
+  <div class="mx-auto max-w-3xl mt-12">
+    <div class="w-full">
+      {faqs.map((faq) => (
+        <details name="faq" class="border-b group">
+          <summary class="flex flex-1 items-center justify-between py-4 font-medium transition-all text-left hover:no-underline cursor-pointer list-none">
+            {faq.question}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200 group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+          </summary>
+          <div class="overflow-hidden text-sm">
+            <div class="pb-4 pt-0 text-muted-foreground leading-7">{faq.answer}</div>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
