@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import { LOCALES, DEFAULT_LOCALE, SITE, type Locale } from '../i18n/config';
+
+interface Props {
+  title: string;
+  description: string;
+  lang?: Locale;
+  /** Ruta canónica SIN prefijo de idioma, con barra inicial. Ej: "/precios" */
+  basePath?: string;
+  /** Override para páginas con slugs nativos por idioma: { es: '/precios', en: '/en/pricing', ... } */
+  alternates?: Partial<Record<Locale, string>>;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  lang = DEFAULT_LOCALE,
+  basePath = '/',
+  alternates,
+  ogImage,
+} = Astro.props;
+
+// hreflang + canonical nativos para TODAS las páginas — gate de Fase 0 del plan maestro
+// (la SPA actual sirve 0 etiquetas hreflang; este layout lo corrige de raíz).
+const urlFor = (locale: Locale): string => {
+  const override = alternates?.[locale];
+  if (override) return `${SITE}${override}`;
+  const p = basePath === '/' ? '' : basePath;
+  return locale === DEFAULT_LOCALE ? `${SITE}${p || '/'}` : `${SITE}/${locale}${p}`;
+};
+const canonical = urlFor(lang);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={urlFor(l)} />)}
+    <link rel="alternate" hreflang="x-default" href={urlFor(DEFAULT_LOCALE)} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Chef Pro" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen bg-background text-foreground antialiased">
+    <slot />
+  </body>
+</html>

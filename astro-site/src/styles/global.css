@@ -1,0 +1,384 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI Chef Pro Design System - Shadcn.com Style */
+
+@layer base {
+  :root {
+    /* Shadcn-inspired neutral palette */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary: Subtle dark for modern look */
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary: Very subtle gray */
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    /* Accent: AI Chef Pro gold variations */
+    --accent: 42 100% 50%;
+    --accent-foreground: 240 5.9% 10%;
+    --accent-light: 42 100% 85%;
+    --accent-dark: 42 100% 40%;
+    
+    /* Chef Pro Golden System */
+    --chef-gold: 42 100% 50%;
+    --chef-gold-light: 42 100% 85%;
+    --chef-gold-dark: 42 100% 40%;
+    --chef-dark: 240 5.9% 10%;
+    --chef-blue: 217.2 91.2% 59.8%;
+    --chef-gray: 240 3.8% 46.1%;
+
+    /* Category colors for visual variety */
+    --category-creativity: 25 95% 53%;      /* Naranja cálido - pasión creativa */
+    --category-cookbooks: 199 89% 48%;      /* Azul océano - cocinas del mundo */
+    --category-knowledge: 152 69% 40%;      /* Verde esmeralda - sabiduría */
+    --category-tools: 262 83% 58%;          /* Púrpura - eficiencia */
+    --category-business: 330 81% 60%;       /* Rosa magenta - emprendimiento */
+    --category-marketing: 42 100% 50%;      /* Amarillo dorado - marca */
+
+    /* Golden gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
+    --gradient-gold-soft: linear-gradient(135deg, hsl(var(--accent-light)) 0%, hsl(var(--accent)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--accent-light)) 100%);
+    
+    /* Hero dynamic text gradient: black to yellow */
+    --gradient-dynamic-text: linear-gradient(135deg, hsl(240 5.9% 10%) 0%, hsl(42 100% 50%) 100%);
+    
+    /* Golden shadows */
+    --shadow-gold: 0 10px 30px -10px hsl(var(--accent) / 0.3);
+    --shadow-gold-glow: 0 0 40px hsl(var(--accent) / 0.4);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    /* Dark mode golden colors */
+    --accent: 42 100% 60%;
+    --accent-foreground: 240 5.9% 10%;
+    --accent-light: 42 100% 75%;
+    --accent-dark: 42 100% 45%;
+    
+    --chef-gold: 42 100% 60%;
+    --chef-gold-light: 42 100% 75%;
+    --chef-gold-dark: 42 100% 45%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typography improvements like shadcn */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  /* Shadcn-style animations */
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out forwards;
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Golden button variants */
+  .btn-gold {
+    @apply bg-accent text-accent-foreground hover:bg-accent-dark shadow-lg transition-all duration-200;
+  }
+  
+  .btn-gold-outline {
+    @apply border-2 border-accent-dark bg-accent text-black hover:bg-accent-dark hover:text-black hover:scale-105 hover:shadow-lg transition-all duration-200 font-semibold;
+  }
+  
+  /* Popular plan styling */
+  .popular-plan {
+    @apply border-accent shadow-lg;
+    background: linear-gradient(135deg, hsl(var(--accent-light) / 0.1) 0%, hsl(var(--accent) / 0.05) 100%);
+  }
+  
+  .popular-badge {
+    @apply text-white shadow-lg;
+    background: linear-gradient(135deg, hsl(var(--accent-dark)) 0%, hsl(var(--accent)) 100%);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* Golden highlights */
+  .gold-highlight {
+    @apply text-accent font-semibold;
+  }
+
+  .gold-border {
+    @apply border-accent;
+  }
+
+  /* Dynamic Hero Text with gradient and pencil underline */
+  .dynamic-hero-text {
+    background: var(--gradient-dynamic-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .dynamic-hero-text::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      hsl(42 100% 50%) 10%, 
+      hsl(42 100% 40%) 50%, 
+      hsl(42 100% 50%) 90%, 
+      transparent 100%
+    );
+    border-radius: 0.1rem;
+    opacity: 0.8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive adjustments for mobile */
+  @media (max-width: 640px) {
+    .dynamic-hero-text::after {
+      bottom: -0.15rem;
+      height: 0.15rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .dynamic-hero-text::after {
+      bottom: -0.1rem;
+      height: 0.12rem;
+    }
+  }
+
+  /* Category card styles with subtle gradients */
+  .category-card-creativity {
+    background: linear-gradient(135deg, hsl(var(--category-creativity) / 0.08) 0%, hsl(var(--category-creativity) / 0.02) 100%);
+  }
+  .category-card-creativity .category-icon {
+    @apply bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400;
+  }
+
+  /* Individual app colors for CreatividadShowcase */
+  .app-card-cocina-creativa {
+    background: linear-gradient(135deg, hsl(25 95% 53% / 0.08) 0%, hsl(25 95% 53% / 0.02) 100%);
+  }
+  .app-card-cocina-creativa .category-icon {
+    @apply bg-orange-100 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400;
+  }
+
+  .app-card-pasteleria-creativa {
+    background: linear-gradient(135deg, hsl(330 81% 60% / 0.08) 0%, hsl(330 81% 60% / 0.02) 100%);
+  }
+  .app-card-pasteleria-creativa .category-icon {
+    @apply bg-pink-100 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400;
+  }
+
+  .app-card-chocolateria-creativa {
+    background: linear-gradient(135deg, hsl(30 70% 40% / 0.08) 0%, hsl(30 70% 40% / 0.02) 100%);
+  }
+  .app-card-chocolateria-creativa .category-icon {
+    @apply bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400;
+  }
+
+  .app-card-heladeria-creativa {
+    background: linear-gradient(135deg, hsl(190 90% 50% / 0.08) 0%, hsl(190 90% 50% / 0.02) 100%);
+  }
+  .app-card-heladeria-creativa .category-icon {
+    @apply bg-cyan-100 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-400;
+  }
+
+  .app-card-panaderia-creativa {
+    background: linear-gradient(135deg, hsl(42 100% 50% / 0.08) 0%, hsl(42 100% 50% / 0.02) 100%);
+  }
+  .app-card-panaderia-creativa .category-icon {
+    @apply bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400;
+  }
+
+  .app-card-fermentus {
+    background: linear-gradient(135deg, hsl(15 70% 45% / 0.08) 0%, hsl(15 70% 45% / 0.02) 100%);
+  }
+  .app-card-fermentus .category-icon {
+    @apply bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400;
+  }
+
+  .app-card-vegchef {
+    background: linear-gradient(135deg, hsl(152 69% 40% / 0.08) 0%, hsl(152 69% 40% / 0.02) 100%);
+  }
+  .app-card-vegchef .category-icon {
+    @apply bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400;
+  }
+
+  .app-card-food-pairing {
+    background: linear-gradient(135deg, hsl(262 83% 58% / 0.08) 0%, hsl(262 83% 58% / 0.02) 100%);
+  }
+  .app-card-food-pairing .category-icon {
+    @apply bg-violet-100 text-violet-600 dark:bg-violet-900/30 dark:text-violet-400;
+  }
+
+  .category-card-cookbooks {
+    background: linear-gradient(135deg, hsl(var(--category-cookbooks) / 0.08) 0%, hsl(var(--category-cookbooks) / 0.02) 100%);
+  }
+  .category-card-cookbooks .category-icon {
+    @apply bg-sky-100 text-sky-600 dark:bg-sky-900/30 dark:text-sky-400;
+  }
+
+  .category-card-knowledge {
+    background: linear-gradient(135deg, hsl(var(--category-knowledge) / 0.08) 0%, hsl(var(--category-knowledge) / 0.02) 100%);
+  }
+  .category-card-knowledge .category-icon {
+    @apply bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400;
+  }
+
+  .category-card-tools {
+    background: linear-gradient(135deg, hsl(var(--category-tools) / 0.08) 0%, hsl(var(--category-tools) / 0.02) 100%);
+  }
+  .category-card-tools .category-icon {
+    @apply bg-violet-100 text-violet-600 dark:bg-violet-900/30 dark:text-violet-400;
+  }
+
+  .category-card-business {
+    background: linear-gradient(135deg, hsl(var(--category-business) / 0.08) 0%, hsl(var(--category-business) / 0.02) 100%);
+  }
+  .category-card-business .category-icon {
+    @apply bg-pink-100 text-pink-600 dark:bg-pink-900/30 dark:text-pink-400;
+  }
+
+  .category-card-marketing {
+    background: linear-gradient(135deg, hsl(var(--category-marketing) / 0.08) 0%, hsl(var(--category-marketing) / 0.02) 100%);
+  }
+  .category-card-marketing .category-icon {
+    @apply bg-yellow-100 text-yellow-600 dark:bg-yellow-900/30 dark:text-yellow-400;
+  }
+
+  /* Infinite scroll logo track animations — two rows, opposite directions */
+  .logo-track:hover {
+    animation-play-state: paused;
+  }
+
+  .logo-track-left {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .logo-track-right {
+    animation: scroll-right 35s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes scroll-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+
+  .animate-marquee-scroll {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  /* Logo card hover effect */
+  .logo-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .logo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.15);
+  }
+}

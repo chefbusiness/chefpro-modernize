@@ -1,0 +1,16 @@
+# Site de STAGING de la migración Astro (base directory: astro-site)
+# El site de producción actual (SPA) usa el netlify.toml de la raíz del repo — no se toca.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# D7 del PLAN MAESTRO: el staging NO se indexa hasta el cutover (Fase 7).
+# ⚠️ QUITAR este bloque en el cutover — y solo entonces.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
