@@ -122,7 +122,9 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 
         <!-- Desktop nav (mega-menús vía hover CSS) -->
         <nav class="relative z-10 hidden max-w-max flex-1 items-center justify-center md:flex">
-          <ul class="group flex flex-1 list-none items-center justify-center space-x-1">
+          <!-- OJO: el <ul> NO puede llevar clase "group" — es ancestro de todos los paneles
+               y un hover en cualquier item abriría todos los mega-menús a la vez (bug 2026-07-03). -->
+          <ul class="flex flex-1 list-none items-center justify-center space-x-1">
             <li>
               <a class="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2" href={homeHref}>{t(lang, 'nav.inicio')}</a>
             </li>

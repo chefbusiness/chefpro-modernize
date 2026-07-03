@@ -110,16 +110,24 @@ const stats = [
   const el = document.getElementById('hero-dynamic-word');
   if (el && Array.isArray(businessTypes) && businessTypes.length > 1) {
     let idx = 0;
+    const show = () => {
+      el.classList.remove('opacity-0', 'scale-95');
+      el.classList.add('opacity-100', 'scale-100');
+    };
+    // En pestañas en background el navegador throttlea los timers: el setTimeout de
+    // restauración se retrasa y la palabra se quedaba invisible (opacity-0) al volver
+    // a la pestaña. Guard con document.hidden + restauración en visibilitychange.
     setInterval(() => {
+      if (document.hidden) return;
       el.classList.remove('opacity-100', 'scale-100');
       el.classList.add('opacity-0', 'scale-95');
       setTimeout(() => {
         idx = (idx + 1) % businessTypes.length;
         el.textContent = businessTypes[idx];
-        el.classList.remove('opacity-0', 'scale-95');
-        el.classList.add('opacity-100', 'scale-100');
+        show();
       }, 300);
     }, 3000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) show(); });
   }
 
   // Count-up de las stats al entrar en viewport (equivalente a CounterStat)
