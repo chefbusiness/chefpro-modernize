@@ -81,4 +81,5 @@ curl -s -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.h
 
 ## 8. Log de ejecución (actualizar cada sesión)
 
-- **2026-07-03** — Plan aprobado. Fase 0 arrancada: scaffold `astro-site/` creado a mano (sin npm install local, D8), pendiente crear site de staging en Netlify (JOHN: New site from Git → este repo → base `astro-site`, build `npm run build`, publish `astro-site/dist`).
+- **2026-07-03** — Plan aprobado. Fase 0 arrancada: scaffold `astro-site/` creado a mano (sin npm install local, D8) en commit `8bd1d40`.
+- **2026-07-03 (cont.)** — Staging creado VÍA CLI/API de Netlify (sin pasos manuales): site **`aichef-astro-staging`** (id `dc777725-7e95-4336-876e-a5a9b568fe75`), URL **https://aichef-astro-staging.netlify.app**, repo conectado base `astro-site` / branch `main` / publish `astro-site/dist`. Primer build disparado por API. Gotcha CLI aprendido: `netlify api createSite/updateSite` requieren los campos dentro de `"body": {…}`. Pendiente al retomar: confirmar gate Fase 0 (deploy verde + curl con title/hreflang×8 + header X-Robots-Tag noindex) si no quedó verificado hoy.

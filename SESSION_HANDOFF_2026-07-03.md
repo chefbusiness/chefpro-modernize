@@ -23,8 +23,9 @@ Hallazgos críticos: og-meta solo cubre ~63/658 URLs (el resto sirve title de HO
 - **Decisión John**: ejecución al 100%. Los quick wins NO se aplican a la SPA (nos la vamos a cargar); nacen nativos en Astro (D2 del plan).
 - **Documento canónico**: `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (raíz del repo) — 8 fases, decisiones D1-D10, gates de aceptación, riesgos, log de ejecución vivo.
 - **Fase 0 arrancada hoy**: scaffold `astro-site/` creado A MANO (sin npm install local — regla térmica): package.json, astro.config.mjs (i18n 7 idiomas, es sin prefijo), tailwind.config portado del actual, tokens CSS portados, BaseLayout.astro con canonical+hreflang nativos, netlify.toml de staging con **X-Robots-Tag: noindex**, README.
-- **PENDIENTE JOHN (bloqueante Fase 0)**: crear el site de staging en Netlify → *Add new site → Import from Git* → este repo → **Base directory: `astro-site`** → build `npm run build` → publish `astro-site/dist`. Pasarme la URL del staging.
-- **Próxima sesión**: verificar deploy staging verde + curl del HTML (gate Fase 0) → empezar Fase 1 (home ×7, precios, header/footer).
+- **Staging creado VÍA CLI (sin pasos manuales de John)**: site `aichef-astro-staging` (id `dc777725-7e95-4336-876e-a5a9b568fe75`) → **https://aichef-astro-staging.netlify.app** — repo conectado (base `astro-site`, branch `main`, publish `astro-site/dist`). Gotcha CLI: `netlify api createSite/updateSite` exigen los campos dentro de `"body": {…}`.
+- **✅ GATE FASE 0 SUPERADO (2026-07-03)**: primer build verde + HTTP 200 + `x-robots-tag: noindex` + title/meta server-side + canonical + **hreflang ×8** (7 idiomas + x-default) verificados con curl. **FASE 0 CERRADA.**
+- **Próxima sesión**: directo a **Fase 1** (home ×7 idiomas, /precios, header/footer/nav con paridad visual).
 
 ## 3-bis. "Replicar y Sustituir Pickaxe" — visión registrada (Fase 9)
 
