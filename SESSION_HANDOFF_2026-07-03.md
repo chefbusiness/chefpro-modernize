@@ -25,7 +25,9 @@ Hallazgos críticos: og-meta solo cubre ~63/658 URLs (el resto sirve title de HO
 - **Fase 0 arrancada hoy**: scaffold `astro-site/` creado A MANO (sin npm install local — regla térmica): package.json, astro.config.mjs (i18n 7 idiomas, es sin prefijo), tailwind.config portado del actual, tokens CSS portados, BaseLayout.astro con canonical+hreflang nativos, netlify.toml de staging con **X-Robots-Tag: noindex**, README.
 - **Staging creado VÍA CLI (sin pasos manuales de John)**: site `aichef-astro-staging` (id `dc777725-7e95-4336-876e-a5a9b568fe75`) → **https://aichef-astro-staging.netlify.app** — repo conectado (base `astro-site`, branch `main`, publish `astro-site/dist`). Gotcha CLI: `netlify api createSite/updateSite` exigen los campos dentro de `"body": {…}`.
 - **✅ GATE FASE 0 SUPERADO (2026-07-03)**: primer build verde + HTTP 200 + `x-robots-tag: noindex` + title/meta server-side + canonical + **hreflang ×8** (7 idiomas + x-default) verificados con curl. **FASE 0 CERRADA.**
-- **Próxima sesión**: directo a **Fase 1** (home ×7 idiomas, /precios, header/footer/nav con paridad visual).
+- **Fase 1, slice 1 LIVE y APROBADO por John**: Header + Hero + Pricing + FAQ + Footer ES (`1564560`, port subagente Opus) + 3 fixes (`7c2be6f`): group en ul (mega-menús), throttling timers hero (bug latente también en la SPA), favicon Lovable → icono real en staging Y prod. 13.470 bytes server-side vs 2.726 de toda la SPA.
+- **DIRECTIVA NUEVA (cierre de sesión)**: ejecución AUTÓNOMA slice a slice — la SPA es la spec, verifico gates yo mismo, sin revisión de John por cambio. Parar solo en: decisiones de producto/copy nuevo, dinero (Fases 4-5), cutover (Fase 7). Ver memoria `feedback_ejecucion-autonoma-migracion-astro.md`.
+- **Próxima sesión — arranque directo**: **slice 2 de la home** (las ~18 secciones restantes de `src/pages/Index.tsx`: TrustedByLogos → AIToolsBanner), luego home ×7 idiomas y /precios. Staging: https://aichef-astro-staging.netlify.app (site `dc777725-7e95-4336-876e-a5a9b568fe75`).
 
 ## 3-bis. "Replicar y Sustituir Pickaxe" — visión registrada (Fase 9)
 
