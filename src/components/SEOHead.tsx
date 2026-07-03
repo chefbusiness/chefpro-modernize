@@ -159,7 +159,7 @@ const SEOHead = ({
               {
                 "@type": "Offer",
                 "name": "AI Chef Miembro",
-                "description": "Acceso básico gratuito. 10.000 créditos/mes.",
+                "description": "Acceso básico gratuito. 3.000 créditos/mes.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",
                 "price": "0",
@@ -194,7 +194,7 @@ const SEOHead = ({
               },
               {
                 "@type": "Offer",
-                "name": "AI Chef Premium Plus Anual",
+                "name": "AI Chef Premium Max Anual",
                 "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses.",
                 "category": "SaaS",
                 "priceCurrency": "EUR",

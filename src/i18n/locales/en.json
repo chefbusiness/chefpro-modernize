@@ -690,11 +690,11 @@
       "member": {
         "name": "AI Chef Member",
         "price": "Free",
-        "uses": "10,000/month",
+        "uses": "3,000/month",
         "description": "Ideal for kitchen assistants, cooks and station chefs",
         "features": {
           "0": "Access to all 55+ tools",
-          "1": "10,000 monthly credits",
+          "1": "3,000 monthly credits",
           "2": "World cookbooks",
           "3": "Email support"
         }
@@ -744,7 +744,7 @@
         }
       },
       "premium_plus_annual": {
-        "name": "AI Chef Premium Plus Annual",
+        "name": "AI Chef Premium Max Annual",
         "price": "€950",
         "period": "/year",
         "uses": "∞",
@@ -803,7 +803,7 @@
     "q2": "Can I use AI Chef Pro if I'm a beginner?",
     "a2": "Absolutely. Our tools are designed for all skill levels, from culinary students to Michelin-starred chefs. Each application includes detailed guides and examples.",
     "q3": "How does the free plan work?",
-    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 10,000 credits per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
+    "a3": "The AI Chef Member plan is completely free and requires no credit card. It includes 3,000 credits per month with access to all 55+ tools. When you need more, you can upgrade to AI Chef Premium Pro (€25/month), Premium Plus (€50/month), Premium Max (€95/month) or the Annual plan (€950/year) at any time.",
     "q4": "Do recipes adapt to different portion sizes?",
     "a4": "Yes, all our AI agents include intelligent scaling systems that automatically adjust ingredients and techniques according to the number of diners.",
     "q5": "Does it include support for dietary restrictions?",
@@ -1371,7 +1371,7 @@
     "pricing_section": {
       "title": "Plans for every type of food business",
       "subtitle": "From the free plan to unlimited credits for large operations.",
-      "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
+      "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about AI for restaurants"
@@ -1391,7 +1391,7 @@
       },
       {
         "question": "How much does it cost to use AI for restaurant management?",
-        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 10,000 credits per month. Paid plans start at €25/month (AI Chef Premium Pro, 85,000 credits) and go up to €95/month for unlimited credits. There is also an annual plan at €950 equivalent to €79/month."
+        "answer": "AI Chef Pro has a free plan (AI Chef Member) with 3,000 credits per month. Paid plans start at €25/month (AI Chef Premium Pro, 85,000 credits) and go up to €95/month for unlimited credits. There is also an annual plan at €950 equivalent to €79/month."
       }
     ],
     "cta_section": {
@@ -1537,7 +1537,7 @@
     "pricing_section": {
       "title": "Plans to design unlimited menus",
       "subtitle": "From the free plan to get started to unlimited credits for large operations with multiple menus.",
-      "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
+      "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about AI menu design"
@@ -1703,7 +1703,7 @@
     "pricing_section": {
       "title": "Plans to automate your gastronomy marketing",
       "subtitle": "From the free plan to get started to unlimited credits for groups with multiple locations.",
-      "annual_note": "Annual plan also available: AI Chef Premium Plus Annual at €950/year · Save 2 months"
+      "annual_note": "Annual plan also available: AI Chef Premium Max Annual at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about restaurant marketing with AI"
@@ -1906,7 +1906,7 @@
     "pricing_section": {
       "title": "Fair price for the AI your restaurant deserves",
       "subtitle": "From free to get started to unlimited credits for large operations.",
-      "annual_note": "Also available: AI Chef Premium Plus Annual plan at €950/year · Save 2 months"
+      "annual_note": "Also available: AI Chef Premium Max Annual plan at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions: ChatGPT vs AI Chef Pro for restaurants"
@@ -2106,7 +2106,7 @@
     "pricing_section": {
       "title": "AI kitchen management software from €0",
       "subtitle": "Start free and scale when your business needs it. No commitment.",
-      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+      "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about kitchen management software"
@@ -2305,7 +2305,7 @@
     "pricing_section": {
       "title": "Access the AI recipe generator from €0",
       "subtitle": "Start free and scale when your business needs it. No commitment.",
-      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+      "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about AI recipes for restaurants"
@@ -2504,7 +2504,7 @@
     "pricing_section": {
       "title": "Start controlling your food cost from €0",
       "subtitle": "Calculate your first food costings free. No card, no commitment.",
-      "annual_note": "Annual plan AI Chef Premium Plus also available at €950/year · Save 2 months"
+      "annual_note": "Annual plan AI Chef Premium Max also available at €950/year · Save 2 months"
     },
     "faq_section": {
       "title": "Frequently asked questions about restaurant food cost with AI"
@@ -2708,7 +2708,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -2854,7 +2854,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -3104,7 +3104,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -3450,7 +3450,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -3614,7 +3614,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -3849,7 +3849,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -4004,7 +4004,7 @@
         {
           "name": "Free",
           "price": "€0/month",
-          "uses": "10,000 credits/month",
+          "uses": "3,000 credits/month",
           "highlight": false
         },
         {
@@ -4126,7 +4126,7 @@
         {
           "name": "Free",
           "price": "€0/mo",
-          "uses": "10,000 credits/mo",
+          "uses": "3,000 credits/mo",
           "highlight": false
         },
         {

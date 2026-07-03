@@ -144,43 +144,43 @@ export const notificationPlans: Record<string, NotificationPlan[]> = {
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Anual", price: "950", currency: "€" }
+    { name: "Premium Max Anual", price: "950", currency: "€" }
   ],
   en: [
     { name: "Premium Pro", price: "30", currency: "$" },
     { name: "Premium Plus", price: "60", currency: "$" },
     { name: "Premium Max", price: "115", currency: "$" },
-    { name: "Premium Plus Annual", price: "1150", currency: "$" }
+    { name: "Premium Max Annual", price: "1150", currency: "$" }
   ],
   fr: [
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Annuel", price: "950", currency: "€" }
+    { name: "Premium Max Annuel", price: "950", currency: "€" }
   ],
   de: [
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Jährlich", price: "950", currency: "€" }
+    { name: "Premium Max Jährlich", price: "950", currency: "€" }
   ],
   it: [
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Annuale", price: "950", currency: "€" }
+    { name: "Premium Max Annuale", price: "950", currency: "€" }
   ],
   pt: [
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Anual", price: "950", currency: "€" }
+    { name: "Premium Max Anual", price: "950", currency: "€" }
   ],
   nl: [
     { name: "Premium Pro", price: "25", currency: "€" },
     { name: "Premium Plus", price: "50", currency: "€" },
     { name: "Premium Max", price: "95", currency: "€" },
-    { name: "Premium Plus Jaarlijks", price: "950", currency: "€" }
+    { name: "Premium Max Jaarlijks", price: "950", currency: "€" }
   ]
 };
 

@@ -955,11 +955,11 @@
       "member": {
         "name": "AI Chef Membro",
         "price": "Gratis",
-        "uses": "10.000/mese",
+        "uses": "3.000/mese",
         "description": "Ideale per aiuto cuochi, cuochi e capostazione",
         "features": {
           "0": "Accesso a tutti i 55+ strumenti",
-          "1": "10.000 crediti mensili",
+          "1": "3.000 crediti mensili",
           "2": "Ricettari mondiali",
           "3": "Supporto via email"
         }
@@ -1009,7 +1009,7 @@
         }
       },
       "premium_plus_annual": {
-        "name": "AI Chef Premium Plus Annuale",
+        "name": "AI Chef Premium Max Annuale",
         "price": "950€",
         "period": "/anno",
         "uses": "∞",
@@ -1094,7 +1094,7 @@
     "q2": "Posso usare AI Chef Pro se sono principiante?",
     "a2": "Assolutamente! AI Chef Pro è progettato per professionisti di tutti i livelli. I nostri strumenti includono spiegazioni dettagliate, tecniche passo dopo passo e coaching che ti aiuteranno a sviluppare le tue competenze gastronomiche.",
     "q3": "Come funziona il piano gratuito?",
-    "a3": "Il piano AI Chef Membro è completamente gratuito e non richiede carta di credito. Include 10.000 crediti al mese con accesso a tutti i 55+ strumenti. Quando hai bisogno di di più, puoi passare al piano AI Chef Premium Pro (25€/mese), Premium Plus (50€/mese), Premium Max (95€/mese) o al piano Annuale (950€/anno) in qualsiasi momento.",
+    "a3": "Il piano AI Chef Membro è completamente gratuito e non richiede carta di credito. Include 3.000 crediti al mese con accesso a tutti i 55+ strumenti. Quando hai bisogno di di più, puoi passare al piano AI Chef Premium Pro (25€/mese), Premium Plus (50€/mese), Premium Max (95€/mese) o al piano Annuale (950€/anno) in qualsiasi momento.",
     "q4": "Le ricette si adattano a diverse dimensioni di porzione?",
     "a4": "Sì, tutti i nostri strumenti includono calcolo automatico delle porzioni. Puoi adattare qualsiasi ricetta per 1 persona o per 1000 commensali, e il nostro sistema calcolerà automaticamente le quantità esatte di ogni ingrediente.",
     "q5": "Include supporto per restrizioni alimentari?",
@@ -1658,7 +1658,7 @@
     "pricing_section": {
       "title": "Piani per ogni tipo di attività gastronomica",
       "subtitle": "Dal piano gratuito per iniziare ai crediti illimitati per grandi operazioni.",
-      "annual_note": "Disponibile anche piano annuale AI Chef Premium Plus Annuale a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sull'IA per ristoranti"
@@ -1678,7 +1678,7 @@
       },
       {
         "question": "Quanto costa usare l'IA per la gestione di un ristorante?",
-        "answer": "AI Chef Pro ha un piano gratuito (AI Chef Membro) con 10.000 crediti al mese. I piani a pagamento partono da 25€/mese (AI Chef Premium Pro, 85.000 crediti) e arrivano a 95€/mese per crediti illimitati. È disponibile anche un piano annuale a 950€ equivalente a 79€/mese."
+        "answer": "AI Chef Pro ha un piano gratuito (AI Chef Membro) con 3.000 crediti al mese. I piani a pagamento partono da 25€/mese (AI Chef Premium Pro, 85.000 crediti) e arrivano a 95€/mese per crediti illimitati. È disponibile anche un piano annuale a 950€ equivalente a 79€/mese."
       }
     ],
     "cta_section": {
@@ -1824,7 +1824,7 @@
     "pricing_section": {
       "title": "Piani per progettare menu senza limiti",
       "subtitle": "Dal piano gratuito per iniziare ai crediti illimitati per grandi operazioni con più menu.",
-      "annual_note": "Disponibile anche piano annuale AI Chef Premium Plus Annuale a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sulla progettazione del menu con l'IA"
@@ -1990,7 +1990,7 @@
     "pricing_section": {
       "title": "Piani per automatizzare il marketing gastronomico",
       "subtitle": "Dal piano gratuito per iniziare ai crediti illimitati per gruppi con più sedi.",
-      "annual_note": "Disponibile anche piano annuale AI Chef Premium Plus Annuale a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Disponibile anche piano annuale AI Chef Premium Max Annuale a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sul marketing ristorante con IA"
@@ -2193,7 +2193,7 @@
     "pricing_section": {
       "title": "Prezzo giusto per l'IA che il tuo ristorante merita",
       "subtitle": "Dal gratuito per iniziare ai crediti illimitati per grandi operazioni.",
-      "annual_note": "Disponibile anche piano annuale AI Chef Premium Plus a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Disponibile anche piano annuale AI Chef Premium Max a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti: ChatGPT vs AI Chef Pro per i ristoranti"
@@ -2393,7 +2393,7 @@
     "pricing_section": {
       "title": "Software di gestione cucina con IA da 0€",
       "subtitle": "Inizia gratis e scala quando la tua attività ne ha bisogno. Senza vincoli.",
-      "annual_note": "Piano annuale AI Chef Premium Plus disponibile a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sul software di gestione cucina"
@@ -2592,7 +2592,7 @@
     "pricing_section": {
       "title": "Accedi al generatore di ricette con IA da 0€",
       "subtitle": "Inizia gratis e scala quando la tua attività ne ha bisogno. Senza vincoli.",
-      "annual_note": "Piano annuale AI Chef Premium Plus disponibile a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sulle ricette con IA per ristoranti"
@@ -2791,7 +2791,7 @@
     "pricing_section": {
       "title": "Inizia a controllare il tuo food cost da 0€",
       "subtitle": "Calcola i tuoi primi food cost gratis. Senza carta, senza vincoli.",
-      "annual_note": "Piano annuale AI Chef Premium Plus disponibile a 950€/anno · Risparmia 2 mesi"
+      "annual_note": "Piano annuale AI Chef Premium Max disponibile a 950€/anno · Risparmia 2 mesi"
     },
     "faq_section": {
       "title": "Domande frequenti sul food cost ristorante con IA"
@@ -2995,7 +2995,7 @@
         {
           "name": "Gratis",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -3141,7 +3141,7 @@
         {
           "name": "Gratis",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -3391,7 +3391,7 @@
         {
           "name": "Gratuito",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -3739,7 +3739,7 @@
         {
           "name": "Gratuito",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -3903,7 +3903,7 @@
         {
           "name": "Gratuito",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -4138,7 +4138,7 @@
         {
           "name": "Gratis",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -4289,7 +4289,7 @@
         {
           "name": "Gratis",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {
@@ -4411,7 +4411,7 @@
         {
           "name": "Gratuito",
           "price": "0€/mese",
-          "uses": "10.000 crediti/mese",
+          "uses": "3.000 crediti/mese",
           "highlight": false
         },
         {

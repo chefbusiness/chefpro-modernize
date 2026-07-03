@@ -59,7 +59,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik het gebruiken voor klanten buiten Spanje?', a: 'Ja. Er zijn versies in 7 talen en de HORECA-database dekt Spanje, LATAM, Italië, Frankrijk, Portugal, Duitsland, Nederland en de Engelstalige markt.' },
     ],
     ctaTitle: 'Versnel Uw Projecten Zonder Technische Rigueur te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Gastronomisch Adviseur · AI Horeca Adviseur Restaurant | AICP',
       description: 'AI Horeca Adviseur (gastronomisch adviseur): due diligence, rentabiliteitsdiagnose, ondernemingsplan voor restaurants, hotels en horecagroepen in NL en BE. Gratis starten.',
@@ -173,7 +173,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik het met klanten buiten Spanje gebruiken?', a: 'Ja. 7 talen en HORECA-basis in Spanje, LATAM, Italië, Frankrijk, Portugal, Duitsland, Nederland en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Projecten, Zonder Technisch Oordeel op te Geven.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Chef Consultant Pro · AI Culinair Adviseur Horeca | AI Chef Pro',
       description: 'AI Chef Consultant en culinair adviseur voor restaurantgroepen, hotels en franchises: menuontwikkeling, foodcost, technische fiches en brigade-training. Gratis starten.',
@@ -286,7 +286,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik werken met klanten in LATAM of Italië?', a: 'Ja. 7 talen beschikbaar en HORECA-basis in Spanje, Italië, LATAM, Frankrijk, Portugal, Duitsland en Nederland.' },
     ],
     ctaTitle: 'Meer IJssalonprojecten, Zonder Technische Rigueur te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'IJssalon Adviseur Pro · AI IJssalon Starten Ambachtelijk | AICP',
       description: 'AI IJssalon Adviseur voor ambachtelijke ijsbereiders: ijssalon starten, POD/PAC-basisformulering, foodcost en HACCP. Ondernemingsplan met AI. Gratis starten.',
@@ -399,7 +399,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-prijsbasis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Versnel Uw Chocoladeprojecten, Zonder Ambacht te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Chocolatier Adviseur Pro · AI Bean-to-Bar Chocolaterie | AICP',
       description: 'AI Chocolatier Adviseur: bonbon-collecties, bean-to-bar tabletten, foodcost en HACCP voor chocolate shops, luxehotels en gespecialiseerde patisserieën. Gratis starten.',
@@ -512,7 +512,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-basis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Dessertkaarten, Zonder Technisch Oordeel te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Banketbakker Adviseur Pro · AI Patisserie NBOV Horeca | AICP',
       description: 'AI Banketbakker Adviseur (NBOV-conform): dessertkaarten, foodcost patisserie, technische fiches en werkplaatshandboeken. Banketbakkerij starten in NL/BE. Gratis starten.',
@@ -625,7 +625,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-basis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Geadviseerde Pizzeria’s, Zonder Italiaanse Rigueur te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Pizza Chef Adviseur Pro · AI Pizzaiolo SVH Pizzeria | AICP',
       description: 'AI Pizza Chef Adviseur (Pizzaiolo SVH-gecertificeerd): deegformulering AVPN, foodcost, fermentatiehandboeken voor ambachtelijke pizzeria\'s. Pizzeria starten. Gratis starten.',
@@ -738,7 +738,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-basis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Geadviseerde Specialty Coffee Shops, Met Echte Marge.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Barista Adviseur Pro · AI Koffiebar Specialty Coffee SCA | AICP',
       description: 'AI Barista Adviseur (SCA-aligned): koffiekaarten, extractiekalibratie, foodcost en koffiebar starten voor specialty coffee shops, hotels en branderijen. Gratis starten.',
@@ -851,7 +851,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Dekt het keldertraceerbaarheid en HACCP?', a: 'Ja. HACCP Pack bevat registers van temperatuur, vochtigheid, traceerbaarheid van jaargangen en kelderoperatie.' },
     ],
     ctaTitle: 'Meer Geadviseerde Wijnprogramma’s, Zonder Sommelier-oordeel te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Sommelier Adviseur Pro · AI Wijnkaart Samenstellen Horeca | AICP',
       description: 'AI Sommelier Adviseur: wijnkaart samenstellen, beverage cost, wijnkelderoptimalisatie en zaaltraining voor gastronomische restaurants en luxehotels. Gratis starten.',
@@ -964,7 +964,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-basis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Geadviseerde Cocktail Bars, Met Beverage Cost Onder Controle.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Bartender Adviseur Pro · AI Cocktail Consultant Mixology | AICP',
       description: 'AI Bartender Adviseur en cocktail consultant: cocktailkaarten, beverage cost, mixology training en cocktailbar starten voor signature bars en luxehotels. Gratis starten.',
@@ -1077,7 +1077,7 @@ export const USE_CASES_CONTENT_NL_CONSULTOR: Record<string, UseCaseContent> = {
       { q: 'Kan ik internationale klanten bedienen?', a: 'Ja. 7 talen en HORECA-basis in Europa, LATAM en de Engelstalige markt.' },
     ],
     ctaTitle: 'Meer Geadviseerde Bakkerijen, Zonder Ambachtelijke Identiteit te Verliezen.',
-    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 10.000 credits per maand om alle agents te proberen. Zonder kaart.',
+    ctaSubtitle: 'Begin gratis met de onboarding van 2 minuten. 3.000 credits per maand om alle agents te proberen. Zonder kaart.',
     seo: {
       title: 'Bakker Adviseur Pro · AI Ambachtelijke Bakkerij NBOV | AICP',
       description: 'AI Bakker Adviseur (NBOV-conform): ambachtelijke bakkerij starten of overnemen, foodcost, werkplaatshandboeken en bakery café-projecten in NL en BE. Gratis starten.',

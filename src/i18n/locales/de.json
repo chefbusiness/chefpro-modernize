@@ -955,11 +955,11 @@
       "member": {
         "name": "AI Chef Mitglied",
         "price": "Kostenlos",
-        "uses": "10.000/Monat",
+        "uses": "3.000/Monat",
         "description": "Ideal für Küchenhelfer, Köche und Postenchefs",
         "features": {
           "0": "Zugang zu allen 55+ Tools",
-          "1": "10.000 monatliche Credits",
+          "1": "3.000 monatliche Credits",
           "2": "Weltweite Kochbücher",
           "3": "E-Mail-Support"
         }
@@ -1009,7 +1009,7 @@
         }
       },
       "premium_plus_annual": {
-        "name": "AI Chef Premium Plus Jährlich",
+        "name": "AI Chef Premium Max Jährlich",
         "price": "950€",
         "period": "/Jahr",
         "uses": "∞",
@@ -1094,7 +1094,7 @@
     "q2": "Kann ich AI Chef Pro als Anfänger verwenden?",
     "a2": "Absolut! AI Chef Pro ist für Profis aller Erfahrungsstufen konzipiert. Unsere Tools enthalten detaillierte Erklärungen, Schritt-für-Schritt-Techniken und Coaching, die Ihnen helfen, Ihre gastronomischen Fähigkeiten zu entwickeln.",
     "q3": "Wie funktioniert der kostenlose Plan?",
-    "a3": "Der AI Chef Mitglieder-Plan ist völlig kostenlos und erfordert keine Kreditkarte. Er umfasst 10.000 Credits pro Monat mit Zugang zu allen 55+ Tools. Wenn Sie mehr benötigen, können Sie jederzeit auf AI Chef Premium Pro (25€/Monat), Premium Plus (50€/Monat), Premium Max (95€/Monat) oder den Jahresplan (950€/Jahr) upgraden.",
+    "a3": "Der AI Chef Mitglieder-Plan ist völlig kostenlos und erfordert keine Kreditkarte. Er umfasst 3.000 Credits pro Monat mit Zugang zu allen 55+ Tools. Wenn Sie mehr benötigen, können Sie jederzeit auf AI Chef Premium Pro (25€/Monat), Premium Plus (50€/Monat), Premium Max (95€/Monat) oder den Jahresplan (950€/Jahr) upgraden.",
     "q4": "Passen sich die Rezepte an verschiedene Portionsgrößen an?",
     "a4": "Ja, alle unsere Tools enthalten automatische Portionsberechnung. Sie können jedes Rezept für 1 Person oder für 1000 Gäste anpassen, und unser System berechnet automatisch die genauen Mengen jeder Zutat.",
     "q5": "Unterstützt es Nahrungsmittelbeschränkungen?",
@@ -1658,7 +1658,7 @@
     "pricing_section": {
       "title": "Pläne für jeden Gastronomietyp",
       "subtitle": "Vom kostenlosen Plan bis zum unbegrenzten Einsatz für große Betriebe.",
-      "annual_note": "Auch als Jahresplan erhältlich: AI Chef Premium Plus Jährlich für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Auch als Jahresplan erhältlich: AI Chef Premium Max Jährlich für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufige Fragen zu KI für Restaurants"
@@ -1678,7 +1678,7 @@
       },
       {
         "question": "Was kostet der Einsatz von KI für die Restaurantverwaltung?",
-        "answer": "AI Chef Pro bietet einen kostenlosen Plan (AI Chef Mitglied) mit 10.000 Credits pro Monat. Kostenpflichtige Pläne beginnen bei 25€/Monat (AI Chef Premium Pro, 85.000 Credits) und gehen bis zu 95€/Monat für unbegrenzte Credits. Es gibt auch einen Jahresplan für 950€ entsprechend 79€/Monat."
+        "answer": "AI Chef Pro bietet einen kostenlosen Plan (AI Chef Mitglied) mit 3.000 Credits pro Monat. Kostenpflichtige Pläne beginnen bei 25€/Monat (AI Chef Premium Pro, 85.000 Credits) und gehen bis zu 95€/Monat für unbegrenzte Credits. Es gibt auch einen Jahresplan für 950€ entsprechend 79€/Monat."
       }
     ],
     "cta_section": {
@@ -1824,7 +1824,7 @@
     "pricing_section": {
       "title": "Pläne für grenzenlose Kartengestaltung",
       "subtitle": "Vom kostenlosen Einstiegsplan bis zur unbegrenzten Nutzung für große Betriebe mit mehreren Karten.",
-      "annual_note": "Auch als Jahresplan: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Auch als Jahresplan: AI Chef Premium Max Jahresplan für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufige Fragen zur KI-Speisekarten-Gestaltung"
@@ -1990,7 +1990,7 @@
     "pricing_section": {
       "title": "Pläne für automatisiertes Gastronomie-Marketing",
       "subtitle": "Vom kostenlosen Plan bis zur unbegrenzten Nutzung für Gruppen mit mehreren Standorten.",
-      "annual_note": "Auch als Jahresplan: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Auch als Jahresplan: AI Chef Premium Max Jahresplan für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufige Fragen zu Restaurant-Marketing mit KI"
@@ -2193,7 +2193,7 @@
     "pricing_section": {
       "title": "Fairer Preis für die KI, die Ihr Restaurant verdient",
       "subtitle": "Von kostenlos zum Einstieg bis zur unbegrenzten Nutzung für große Betriebe.",
-      "annual_note": "Auch verfügbar: AI Chef Premium Plus Jahresplan für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Auch verfügbar: AI Chef Premium Max Jahresplan für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufige Fragen: ChatGPT vs AI Chef Pro für Restaurants"
@@ -2393,7 +2393,7 @@
     "pricing_section": {
       "title": "KI-Küchenverwaltungssoftware ab 0€",
       "subtitle": "Kostenlos starten und skalieren, wenn Ihr Unternehmen es braucht. Ohne Bindung.",
-      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Jahresplan AI Chef Premium Max auch verfügbar für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufig gestellte Fragen zur Küchenverwaltungssoftware"
@@ -2592,7 +2592,7 @@
     "pricing_section": {
       "title": "Zugang zum KI-Rezeptgenerator ab 0€",
       "subtitle": "Kostenlos starten und skalieren, wenn Ihr Unternehmen es braucht. Ohne Bindung.",
-      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Jahresplan AI Chef Premium Max auch verfügbar für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufig gestellte Fragen zu KI-Rezepten für Restaurants"
@@ -2791,7 +2791,7 @@
     "pricing_section": {
       "title": "Beginnen Sie mit der Food Cost Kontrolle ab 0€",
       "subtitle": "Berechnen Sie Ihre ersten Kalkulationen kostenlos. Ohne Karte, ohne Bindung.",
-      "annual_note": "Jahresplan AI Chef Premium Plus auch verfügbar für 950€/Jahr · 2 Monate sparen"
+      "annual_note": "Jahresplan AI Chef Premium Max auch verfügbar für 950€/Jahr · 2 Monate sparen"
     },
     "faq_section": {
       "title": "Häufig gestellte Fragen zum Restaurant Food Cost mit KI"
@@ -2995,7 +2995,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -3141,7 +3141,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -3391,7 +3391,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -3749,7 +3749,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -3913,7 +3913,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -4148,7 +4148,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -4299,7 +4299,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
@@ -4421,7 +4421,7 @@
         {
           "name": "Kostenlos",
           "price": "0€/Monat",
-          "uses": "10.000 Credits/Monat",
+          "uses": "3.000 Credits/Monat",
           "highlight": false
         },
         {
