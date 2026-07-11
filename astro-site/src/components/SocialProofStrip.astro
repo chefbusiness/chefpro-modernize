@@ -1,0 +1,86 @@
+---
+// SocialProofStrip.astro — port de SocialProofStrip.tsx + CounterStat.tsx.
+// El count-up al entrar en viewport es mejora progresiva; el estado estático ya
+// muestra el valor final. Script scoped a este strip para no re-animar los counters del Hero.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+// CounterStat inline: cada { end, suffix, label } (mismo orden y wrappers que la SPA)
+const stats = [
+  { end: 55, suffix: '+', label: t(lang, 'stats.apps_label') },
+  { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
+  { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
+  { end: 1, suffix: '', label: t(lang, 'stats.new_app_label') },
+  { end: 764, suffix: '+', label: t(lang, 'stats.chefs_label') },
+];
+---
+
+<section class="border-y bg-muted/30 py-12" data-social-proof-strip>
+  <div class="container">
+    <div class="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 lg:grid-cols-5 lg:gap-8 text-center">
+      <div class="text-center p-2">
+        <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[0].end} data-suffix={stats[0].suffix}>{stats[0].end}{stats[0].suffix}</div>
+        <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[0].label}</div>
+      </div>
+      <div class="text-center p-2">
+        <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[1].end} data-suffix={stats[1].suffix}>{stats[1].end}{stats[1].suffix}</div>
+        <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[1].label}</div>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-center p-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[2].end} data-suffix={stats[2].suffix}>{stats[2].end}{stats[2].suffix}</div>
+          <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[2].label}</div>
+        </div>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-center p-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[3].end} data-suffix={stats[3].suffix}>{stats[3].end}{stats[3].suffix}</div>
+          <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[3].label}</div>
+        </div>
+      </div>
+      <div class="col-span-2 md:col-span-4 lg:col-span-1">
+        <div class="text-center p-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold gradient-text" data-counter data-target={stats[4].end} data-suffix={stats[4].suffix}>{stats[4].end}{stats[4].suffix}</div>
+          <div class="text-xs sm:text-sm text-muted-foreground font-medium leading-tight">{stats[4].label}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Count-up de los CounterStat al entrar en viewport (equivalente a CounterStat.tsx),
+  // acotado a este strip para no colisionar con el count-up del Hero.
+  const root = document.querySelector('[data-social-proof-strip]');
+  if (root) {
+    const counters = root.querySelectorAll<HTMLElement>('[data-counter]');
+    const animate = (node: HTMLElement) => {
+      const target = parseInt(node.getAttribute('data-target') || '0', 10);
+      const suffix = node.getAttribute('data-suffix') || '';
+      const duration = 2000;
+      let start: number | undefined;
+      const step = (ts: number) => {
+        if (start === undefined) start = ts;
+        const progress = Math.min((ts - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 4);
+        node.textContent = Math.floor(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate(entry.target as HTMLElement);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      counters.forEach((c) => io.observe(c));
+    }
+  }
+</script>

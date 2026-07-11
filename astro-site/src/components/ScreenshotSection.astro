@@ -1,0 +1,283 @@
+---
+// ScreenshotSection.astro — port de ScreenshotSection.tsx (wrapper) + ScreenshotGallery.tsx.
+// La galería real NO usa embla ni dialog de zoom: es un swap de una sola imagen con
+// auto-rotación + play/pause + dots. Estado inicial (índice 0) renderizado server-side
+// para SEO; la interactividad va en <script define:vars> vanilla (guard document.hidden).
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+
+const screenshots = [
+  { id: 1, titleKey: 'cocina_creativa', descKey: 'cocina_creativa', image: '/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png', categoryKey: 'creatividad' },
+  { id: 2, titleKey: 'platos_autor', descKey: 'platos_autor', image: '/lovable-uploads/5863854b-f30c-47d7-89f0-6124f57cfacf.png', categoryKey: 'creatividad' },
+  { id: 3, titleKey: 'catering_ai', descKey: 'catering_ai', image: '/lovable-uploads/975877a4-27f4-4215-9f8a-63882f278540.png', categoryKey: 'conceptos' },
+  { id: 4, titleKey: 'food_pairing', descKey: 'food_pairing', image: '/lovable-uploads/c01838d8-9dd4-430c-a4d8-98359573a299.png', categoryKey: 'creatividad' },
+  { id: 5, titleKey: 'pasteleria_creativa', descKey: 'pasteleria_creativa', image: '/lovable-uploads/f2d20b90-077c-4486-a944-1c6c7fdc570e.png', categoryKey: 'creatividad' },
+  { id: 6, titleKey: 'sosa_ingredients', descKey: 'sosa_ingredients', image: '/lovable-uploads/ed9e5325-4d1f-44fb-9643-e01fa3de208c.png', categoryKey: 'proveedores' },
+  { id: 7, titleKey: 'casual_restaurants', descKey: 'casual_restaurants', image: '/lovable-uploads/4a01fa26-97e9-40ce-9cf6-d17c71b10abd.png', categoryKey: 'conceptos' },
+  { id: 8, titleKey: 'menu_local_seo', descKey: 'menu_local_seo', image: '/lovable-uploads/6cfe3941-1762-441d-b87b-5bd37a8a3667.png', categoryKey: 'marketing' },
+  { id: 9, titleKey: 'cocina_peruana', descKey: 'cocina_peruana', image: '/lovable-uploads/a1eb6b5e-e0c6-47e2-88d5-7a8247807000.png', categoryKey: 'recetarios' },
+  { id: 10, titleKey: 'cocina_francesa', descKey: 'cocina_francesa', image: '/lovable-uploads/26949727-8432-41b4-8f59-8cc40151efa4.png', categoryKey: 'recetarios' },
+  { id: 11, titleKey: 'fermentus', descKey: 'fermentus', image: '/lovable-uploads/64a2d776-3e86-49cc-bdc7-9df927d3624a.png', categoryKey: 'creatividad' },
+  { id: 12, titleKey: 'cocina_india', descKey: 'cocina_india', image: '/lovable-uploads/c7595f12-a770-4c58-939f-69a9c3c8a1f8.png', categoryKey: 'recetarios' },
+];
+
+// Datos ya localizados para pasarlos al script (server → cliente)
+const slides = screenshots.map((s) => ({
+  image: s.image,
+  title: t(lang, `screenshots.${s.titleKey}.title`),
+  description: t(lang, `screenshots.${s.descKey}.description`),
+  category: t(lang, `categories_labels.${s.categoryKey}`),
+}));
+
+const total = slides.length;
+const counterTemplate = t(lang, 'gallery.counter');
+const initialCounter = counterTemplate.replace('{{current}}', '1').replace('{{total}}', String(total));
+const first = slides[0];
+const exploreUrl = appUrl(lang);
+---
+
+<section class="container mx-auto px-4 py-8 md:py-12">
+  <div class="text-center mb-8">
+    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4">
+      {t(lang, 'gallery.badge')}
+    </div>
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+      {t(lang, 'gallery.title')}
+    </h2>
+    <p class="text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'gallery.description')}
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto">
+    {/* Screenshot Display */}
+    <div class="relative rounded-xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300 bg-white">
+      <img
+        id="gallery-img"
+        src={first.image}
+        alt={first.title}
+        class="w-full h-auto object-contain transition-opacity duration-300 opacity-100"
+      />
+      {/* Auto-rotation indicator */}
+      <div id="gallery-auto" class="absolute top-4 right-4">
+        <div class="flex items-center gap-2 bg-black/20 backdrop-blur-sm rounded-full px-3 py-1">
+          <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span class="text-white text-xs font-medium">Auto</span>
+        </div>
+      </div>
+    </div>
+
+    {/* App Info Below Image */}
+    <div class="text-center mt-6 space-y-3">
+      <div id="gallery-category" class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
+        {first.category}
+      </div>
+      <h3 id="gallery-title" class="text-2xl font-bold">
+        {first.title}
+      </h3>
+      <p id="gallery-desc" class="text-muted-foreground max-w-2xl mx-auto">
+        {first.description}
+      </p>
+    </div>
+
+    {/* Navigation Controls */}
+    <div class="flex flex-col md:flex-row items-center justify-center md:justify-between mt-6 gap-4">
+      {/* Mobile: Top row with Previous/Next buttons */}
+      <div class="flex items-center justify-between w-full md:w-auto md:contents">
+        <button
+          id="gallery-prev"
+          type="button"
+          class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 flex items-center gap-2"
+        >
+          <ChevronLeft className="w-4 h-4" />
+          <span class="hidden sm:inline">{t(lang, 'gallery.previous')}</span>
+        </button>
+
+        <button
+          id="gallery-next"
+          type="button"
+          class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 px-3 flex items-center gap-2 md:order-3"
+        >
+          <span class="hidden sm:inline">{t(lang, 'gallery.next')}</span>
+          <ChevronRight className="w-4 h-4" />
+        </button>
+      </div>
+
+      {/* Center Controls: Dots + Play/Pause */}
+      <div class="flex items-center space-x-4 md:order-2">
+        {/* Auto-rotation toggle */}
+        <button
+          id="gallery-toggle"
+          type="button"
+          class="justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-9 px-3 flex items-center gap-2"
+        >
+          <Pause id="gallery-icon-pause" className="w-4 h-4" />
+          <Play id="gallery-icon-play" className="w-4 h-4 hidden" />
+        </button>
+
+        {/* Dots Indicator */}
+        <div id="gallery-dots" class="flex flex-wrap justify-center space-x-1 md:space-x-2 max-w-[70vw] md:max-w-none">
+          {slides.map((_, index) => (
+            <button
+              type="button"
+              data-index={index}
+              class={index === 0
+                ? 'w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 hover:scale-110 bg-primary scale-110'
+                : 'w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 hover:scale-110 bg-muted-foreground/30 hover:bg-muted-foreground/50'}
+            ></button>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* App Counter */}
+    <div class="text-center mt-8">
+      <p id="gallery-counter" class="text-muted-foreground">
+        {initialCounter}
+      </p>
+      <button
+        id="gallery-explore"
+        type="button"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 btn-gold mt-4"
+      >
+        {t(lang, 'gallery.explore_all')}
+      </button>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ slides, total, counterTemplate, exploreUrl }}>
+  const img = document.getElementById('gallery-img');
+  const autoEl = document.getElementById('gallery-auto');
+  const categoryEl = document.getElementById('gallery-category');
+  const titleEl = document.getElementById('gallery-title');
+  const descEl = document.getElementById('gallery-desc');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  const toggleBtn = document.getElementById('gallery-toggle');
+  const iconPause = document.getElementById('gallery-icon-pause');
+  const iconPlay = document.getElementById('gallery-icon-play');
+  const dotsWrap = document.getElementById('gallery-dots');
+  const counterEl = document.getElementById('gallery-counter');
+  const exploreBtn = document.getElementById('gallery-explore');
+
+  if (img && Array.isArray(slides) && slides.length > 0) {
+    const dots = Array.from(dotsWrap ? dotsWrap.querySelectorAll('[data-index]') : []);
+    let currentIndex = 0;
+    let isAutoRotating = true;
+    let isTransitioning = false;
+    let intervalId = null;
+
+    const render = () => {
+      const s = slides[currentIndex];
+      img.setAttribute('src', s.image);
+      img.setAttribute('alt', s.title);
+      if (categoryEl) categoryEl.textContent = s.category;
+      if (titleEl) titleEl.textContent = s.title;
+      if (descEl) descEl.textContent = s.description;
+      if (counterEl) {
+        counterEl.textContent = counterTemplate
+          .replace('{{current}}', String(currentIndex + 1))
+          .replace('{{total}}', String(total));
+      }
+      if (autoEl) autoEl.style.display = isAutoRotating ? '' : 'none';
+      if (iconPause) iconPause.classList.toggle('hidden', !isAutoRotating);
+      if (iconPlay) iconPlay.classList.toggle('hidden', isAutoRotating);
+      if (prevBtn) prevBtn.disabled = isTransitioning;
+      if (nextBtn) nextBtn.disabled = isTransitioning;
+      dots.forEach((dot, i) => {
+        dot.disabled = isTransitioning;
+        dot.className = i === currentIndex
+          ? 'w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 hover:scale-110 bg-primary scale-110'
+          : 'w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 hover:scale-110 bg-muted-foreground/30 hover:bg-muted-foreground/50';
+      });
+    };
+
+    const setFade = (on) => {
+      img.classList.toggle('opacity-50', on);
+      img.classList.toggle('opacity-100', !on);
+    };
+
+    const stopAuto = () => {
+      if (intervalId) { clearInterval(intervalId); intervalId = null; }
+    };
+    const startAuto = () => {
+      stopAuto();
+      if (!isAutoRotating) return;
+      // Guard document.hidden: en pestañas en background el navegador throttlea los
+      // timers; saltamos el tick para no acumular avances al volver a la pestaña.
+      intervalId = setInterval(() => {
+        if (document.hidden) return;
+        currentIndex = (currentIndex + 1) % total;
+        render();
+      }, 4000);
+    };
+
+    const nextSlide = () => {
+      if (isTransitioning) return;
+      isTransitioning = true; setFade(true);
+      currentIndex = (currentIndex + 1) % total; render();
+      setTimeout(() => { isTransitioning = false; setFade(false); render(); }, 300);
+    };
+    const prevSlide = () => {
+      if (isTransitioning) return;
+      isAutoRotating = false; stopAuto();
+      isTransitioning = true; setFade(true);
+      currentIndex = (currentIndex - 1 + total) % total; render();
+      setTimeout(() => { isTransitioning = false; setFade(false); render(); }, 300);
+    };
+    const goToSlide = (index) => {
+      if (isTransitioning || index === currentIndex) return;
+      isAutoRotating = false; stopAuto();
+      isTransitioning = true; setFade(true);
+      currentIndex = index; render();
+      setTimeout(() => { isTransitioning = false; setFade(false); render(); }, 300);
+    };
+    const toggleAutoRotation = () => {
+      isAutoRotating = !isAutoRotating;
+      if (isAutoRotating) startAuto(); else stopAuto();
+      render();
+    };
+
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    if (toggleBtn) toggleBtn.addEventListener('click', toggleAutoRotation);
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => goToSlide(parseInt(dot.getAttribute('data-index') || '0', 10)));
+    });
+    if (exploreBtn) exploreBtn.addEventListener('click', () => window.open(exploreUrl, '_blank'));
+
+    // Fallback si la imagen no carga (equivalente al onError de la SPA)
+    img.addEventListener('error', () => {
+      const title = slides[currentIndex].title;
+      img.src = `data:image/svg+xml;base64,${btoa(`
+                <svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="100%" height="100%" fill="#f3f4f6"/>
+                  <text x="50%" y="50%" text-anchor="middle" font-family="Arial" font-size="24" fill="#6b7280">
+                    ${title}
+                  </text>
+                </svg>
+              `)}`;
+    });
+
+    // Restaurar la auto-rotación al volver a la pestaña visible
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && isAutoRotating && !intervalId) startAuto();
+    });
+
+    render();
+    startAuto();
+  }
+</script>

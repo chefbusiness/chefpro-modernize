@@ -1,0 +1,88 @@
+---
+// CreatividadShowcase.astro — port de src/components/CreatividadShowcase.tsx.
+// Card/Button de shadcn → HTML inline con clases concatenadas verbatim; onClick del
+// Button → data-app-url + <script> vanilla (window.open scope a esta sección).
+import { creativityApps } from '../../../src/data/apps';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+const appBase = appUrl(lang);
+
+// Mapeo de colores individuales por app (idéntico al de la SPA)
+const appColorClasses: Record<string, string> = {
+  'cocina-creativa': 'app-card-cocina-creativa',
+  'pasteleria-creativa': 'app-card-pasteleria-creativa',
+  'chocolateria-creativa': 'app-card-chocolateria-creativa',
+  'heladeria-creativa': 'app-card-heladeria-creativa',
+  'panaderia-creativa': 'app-card-panaderia-creativa',
+  'fermentus': 'app-card-fermentus',
+  'vegchef': 'app-card-vegchef',
+  'food-pairing': 'app-card-food-pairing',
+};
+---
+
+<section id="showcase-creatividad" class="container py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+      <span class="gradient-text">{t(lang, 'showcase.creativity_title')}</span> {t(lang, 'showcase.creativity_subtitle')}
+    </h2>
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'showcase.creativity_description')}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+    {creativityApps.map((app) => {
+      const IconComponent = app.icon;
+      const appKey = `apps.${app.category}.${app.id.replace(/-/g, '_')}`;
+      return (
+        <div class={`rounded-lg border bg-card text-card-foreground shadow-sm ${appColorClasses[app.id] || 'category-card-creativity'} group cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300 border-border/50 hover:border-accent/50`}>
+          <div class="flex flex-col space-y-1.5 p-4 sm:p-6">
+            <div class="flex items-center justify-between mb-2">
+              <div class="category-icon h-10 w-10 rounded-full flex items-center justify-center">
+                <IconComponent className="h-5 w-5" />
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">{t(lang, `${appKey}.name`)}</h3>
+            <p class="text-sm text-muted-foreground text-sm leading-relaxed">{t(lang, `${appKey}.description`)}</p>
+          </div>
+          <div class="p-4 sm:p-6 pt-0">
+            <div class="bg-muted/50 p-3 rounded text-sm">
+              <p class="text-muted-foreground mb-1 text-xs">{t(lang, 'showcase.preview_label')}:</p>
+              <p class="font-medium text-xs sm:text-sm leading-relaxed">"{t(lang, `${appKey}.preview`)}"</p>
+            </div>
+          </div>
+          <div class="flex items-center p-4 sm:p-6 pt-0">
+            <button
+              type="button"
+              data-app-url={`${appBase}/${app.slug}`}
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
+            >
+              {t(lang, 'showcase.explore_app')}
+            </button>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  // handleAppClick — abre la app en pestaña nueva (scope a esta sección para no duplicar listeners)
+  document.querySelectorAll<HTMLButtonElement>('#showcase-creatividad [data-app-url]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const url = btn.getAttribute('data-app-url');
+      if (url) window.open(url, '_blank');
+    });
+  });
+</script>

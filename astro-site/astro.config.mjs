@@ -1,3 +1,4 @@
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
@@ -13,5 +14,17 @@ export default defineConfig({
     defaultLocale: 'es',
     locales: ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'],
     routing: { prefixDefaultLocale: false },
+  },
+  vite: {
+    resolve: {
+      alias: {
+        // Los ficheros cross-root de la SPA (src/data/apps.ts) importan lucide-react,
+        // pero en el build de Netlify (base = astro-site) el node_modules de la raíz
+        // NO existe: se resuelve al paquete instalado en astro-site.
+        'lucide-react': fileURLToPath(
+          new URL('./node_modules/lucide-react/dist/esm/lucide-react.js', import.meta.url)
+        ),
+      },
+    },
   },
 });

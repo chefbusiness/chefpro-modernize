@@ -1,0 +1,228 @@
+---
+// FeaturedApps.astro — port de src/components/FeaturedApps.tsx.
+// Carousel embla → réplica vanilla (track flex con translateX + botones prev/next y
+// estado disabled). Dialog de zoom → modal compartido vanilla (overlay + data-*).
+// Datos desde src/data/featured; textos traducidos vía t(). window.open en el CTA.
+import { Star, ZoomIn, ArrowLeft, ArrowRight, X } from 'lucide-react';
+import { featuredApps } from '../../../src/data/featured';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+const appBase = appUrl(lang);
+---
+
+<section id="destacadas" class="container py-16 bg-muted/20">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+      <span class="gradient-text">{t(lang, 'featured.title_main')}</span> {t(lang, 'featured.title_sub')}
+    </h2>
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'featured.description')}
+    </p>
+  </div>
+
+  <div class="relative w-full max-w-5xl mx-auto" role="region" aria-roledescription="carousel" data-carousel>
+    <div class="overflow-hidden" data-carousel-viewport>
+      <div class="flex -ml-4 -ml-2 md:-ml-4" data-carousel-track>
+        {featuredApps.map((app) => {
+          const appKey = `featured.apps.${app.id.replace(/-/g, '_')}`;
+          const name = t(lang, `${appKey}.name`);
+          const description = t(lang, `${appKey}.description`);
+          const altText = `${app.name} screenshot`;
+          return (
+            <div role="group" aria-roledescription="slide" class="min-w-0 shrink-0 grow-0 basis-full pl-4 pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3">
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm category-card-marketing group h-full hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
+                <div class="flex flex-col space-y-1.5 p-6 p-4 sm:p-6">
+                  <div class="relative mb-4 group/image">
+                    <div class="relative cursor-pointer" data-dialog-trigger data-img={app.image} data-alt={altText} data-name={name} data-desc={description}>
+                      <img
+                        src={app.image}
+                        alt={altText}
+                        class="w-full h-32 sm:h-40 object-cover rounded-lg transition-all duration-300 group-hover/image:scale-105"
+                        loading="lazy"
+                      />
+                      <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
+                        <ZoomIn className="h-8 w-8 text-white" />
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2">
+                      <div class="flex items-center gap-1 bg-background/90 backdrop-blur-sm px-2 py-1 rounded-full">
+                        <Star className="h-3 w-3 fill-accent text-accent" />
+                        <span class="text-xs font-medium">{t(lang, 'featured.badge')}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 class="text-2xl font-semibold leading-none tracking-tight text-base sm:text-lg group-hover:text-accent transition-colors leading-tight">
+                    {name}
+                  </h3>
+                  <p class="text-sm text-muted-foreground text-sm leading-relaxed">{description}</p>
+                </div>
+                <div class="p-6 pt-0 p-4 sm:p-6 pt-0">
+                  <blockquote class="border-l-4 border-accent/30 pl-3 sm:pl-4 italic text-sm">
+                    <p class="mb-2 text-xs sm:text-sm leading-relaxed">"{t(lang, `${appKey}.testimonial.text`)}"</p>
+                    <footer class="text-muted-foreground">
+                      <strong class="text-xs sm:text-sm">{t(lang, `${appKey}.testimonial.author`)}</strong>
+                      <br />
+                      <span class="text-xs">{t(lang, `${appKey}.testimonial.role`)}</span>
+                    </footer>
+                  </blockquote>
+                </div>
+                <div class="flex items-center p-6 pt-0 p-4 sm:p-6 pt-0">
+                  <button
+                    type="button"
+                    data-app-url={`${appBase}/${app.slug}`}
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
+                  >
+                    {t(lang, `${appKey}.cta`)}
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+    <button type="button" data-carousel-prev disabled class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 absolute h-8 w-8 rounded-full -left-12 top-1/2 -translate-y-1/2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+      <ArrowLeft className="h-4 w-4" />
+      <span class="sr-only">Previous slide</span>
+    </button>
+    <button type="button" data-carousel-next class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 absolute h-8 w-8 rounded-full -right-12 top-1/2 -translate-y-1/2 border-accent text-accent hover:bg-accent hover:text-accent-foreground">
+      <ArrowRight className="h-4 w-4" />
+      <span class="sr-only">Next slide</span>
+    </button>
+  </div>
+</section>
+
+<!-- Modal de zoom compartido (réplica del Dialog de Radix) -->
+<div data-dialog-overlay hidden class="fixed inset-0 z-50 bg-black/80">
+  <div data-dialog-content class="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 sm:rounded-lg max-w-4xl w-[95vw] h-[95vh] p-4">
+    <div class="relative w-full h-full flex flex-col">
+      <div class="mb-4">
+        <h3 class="text-xl font-bold" data-dialog-name></h3>
+        <p class="text-muted-foreground" data-dialog-desc></p>
+      </div>
+      <div class="flex-1 flex items-center justify-center">
+        <img data-dialog-image src="" alt="" class="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
+      </div>
+    </div>
+    <button type="button" data-dialog-close class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
+      <X className="h-4 w-4" />
+      <span class="sr-only">Close</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  // Carousel vanilla (equivalente a embla): translateX del track + estado disabled de prev/next.
+  const carousel = document.querySelector<HTMLElement>('[data-carousel]');
+  if (carousel) {
+    const viewport = carousel.querySelector<HTMLElement>('[data-carousel-viewport]');
+    const track = carousel.querySelector<HTMLElement>('[data-carousel-track]');
+    const prev = carousel.querySelector<HTMLButtonElement>('[data-carousel-prev]');
+    const next = carousel.querySelector<HTMLButtonElement>('[data-carousel-next]');
+    if (viewport && track && prev && next) {
+      const items = Array.from(track.children) as HTMLElement[];
+      let index = 0;
+      const perView = () => {
+        if (items.length === 0) return 1;
+        const iw = items[0].getBoundingClientRect().width;
+        if (!iw) return 1;
+        return Math.max(1, Math.round(viewport.getBoundingClientRect().width / iw));
+      };
+      const maxIndex = () => Math.max(0, items.length - perView());
+      const update = () => {
+        index = Math.min(index, maxIndex());
+        const delta = items[index].offsetLeft - items[0].offsetLeft;
+        track.style.transform = `translateX(${-delta}px)`;
+        prev.disabled = index <= 0;
+        next.disabled = index >= maxIndex();
+      };
+      prev.addEventListener('click', () => { index = Math.max(0, index - 1); update(); });
+      next.addEventListener('click', () => { index = Math.min(maxIndex(), index + 1); update(); });
+      window.addEventListener('resize', update);
+
+      // Arrastre táctil/puntero (paridad con el drag de embla): sin swipe, en móvil (basis-full)
+      // solo se vería 1 de N slides y los botones prev/next quedan fuera del viewport (-left-12/-right-12).
+      viewport.style.touchAction = 'pan-y';
+      let dragging = false;
+      let moved = false;
+      let startX = 0;
+      let baseDelta = 0;
+      const onDown = (clientX: number) => {
+        if (maxIndex() <= 0) return; // nada que desplazar
+        dragging = true;
+        moved = false;
+        startX = clientX;
+        baseDelta = items[index].offsetLeft - items[0].offsetLeft;
+        track.style.transition = 'none';
+      };
+      const onMove = (clientX: number) => {
+        if (!dragging) return;
+        const dx = clientX - startX;
+        if (Math.abs(dx) > 8) moved = true;
+        track.style.transform = `translateX(${-(baseDelta - dx)}px)`;
+      };
+      const onUp = (clientX: number) => {
+        if (!dragging) return;
+        dragging = false;
+        track.style.transition = '';
+        const dx = clientX - startX;
+        const threshold = viewport.getBoundingClientRect().width * 0.15;
+        if (dx <= -threshold) index = Math.min(maxIndex(), index + 1);
+        else if (dx >= threshold) index = Math.max(0, index - 1);
+        update();
+      };
+      viewport.addEventListener('pointerdown', (e) => onDown(e.clientX));
+      viewport.addEventListener('pointermove', (e) => onMove(e.clientX));
+      viewport.addEventListener('pointerup', (e) => onUp(e.clientX));
+      viewport.addEventListener('pointercancel', (e) => onUp(e.clientX));
+      viewport.addEventListener('pointerleave', (e) => onUp(e.clientX));
+      // Evitar que un arrastre dispare el click del zoom (dialog trigger) o del CTA.
+      viewport.addEventListener('click', (e) => {
+        if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+      }, true);
+
+      update();
+    }
+  }
+
+  // Dialog de zoom compartido
+  const overlay = document.querySelector<HTMLElement>('[data-dialog-overlay]');
+  if (overlay) {
+    const dImg = overlay.querySelector<HTMLImageElement>('[data-dialog-image]');
+    const dName = overlay.querySelector<HTMLElement>('[data-dialog-name]');
+    const dDesc = overlay.querySelector<HTMLElement>('[data-dialog-desc]');
+    const content = overlay.querySelector<HTMLElement>('[data-dialog-content]');
+    const open = () => overlay.removeAttribute('hidden');
+    const close = () => overlay.setAttribute('hidden', '');
+    document.querySelectorAll<HTMLElement>('#destacadas [data-dialog-trigger]').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        if (dImg) { dImg.src = trigger.getAttribute('data-img') || ''; dImg.alt = trigger.getAttribute('data-alt') || ''; }
+        if (dName) dName.textContent = trigger.getAttribute('data-name') || '';
+        if (dDesc) dDesc.textContent = trigger.getAttribute('data-desc') || '';
+        open();
+      });
+    });
+    overlay.querySelector('[data-dialog-close]')?.addEventListener('click', close);
+    overlay.addEventListener('click', (e) => { if (!content || !content.contains(e.target as Node)) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+
+  // handleAppClick — abre la app en pestaña nueva (scope a esta sección para no duplicar listeners)
+  document.querySelectorAll<HTMLButtonElement>('#destacadas [data-app-url]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const url = btn.getAttribute('data-app-url');
+      if (url) window.open(url, '_blank');
+    });
+  });
+</script>

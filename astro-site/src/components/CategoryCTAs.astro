@@ -1,0 +1,67 @@
+---
+// CategoryCTAs.astro — port de CategoryCTAs.tsx.
+// Botones con window.open(`${appUrl}${path}`) → <a target="_blank"> (idiom Hero.astro);
+// Button reproducido inline; iconos lucide dinámicos renderizados server-side (SVG estático). Sin JS.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+
+const ctaButtons = [
+  { id: 'creativity', icon: ChefHat, title: t(lang, 'category_ctas.creativity.title'), description: t(lang, 'category_ctas.creativity.description'), path: '/cocina-creativa', color: 'from-orange-500 to-red-600' },
+  { id: 'world', icon: Globe, title: t(lang, 'category_ctas.world.title'), description: t(lang, 'category_ctas.world.description'), path: '/recetarios', color: 'from-blue-500 to-cyan-600' },
+  { id: 'business', icon: Calculator, title: t(lang, 'category_ctas.business.title'), description: t(lang, 'category_ctas.business.description'), path: '/herramientas', color: 'from-green-500 to-emerald-600' },
+  { id: 'marketing', icon: Camera, title: t(lang, 'category_ctas.marketing.title'), description: t(lang, 'category_ctas.marketing.description'), path: '/contenidos', color: 'from-purple-500 to-pink-600' },
+];
+---
+
+<section id="category-ctas" class="container py-16">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+      {t(lang, 'category_ctas.title_start')} <span class="gradient-text">{t(lang, 'category_ctas.title_highlight')}</span> {t(lang, 'category_ctas.title_end')}
+    </h2>
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'category_ctas.description')}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+    {ctaButtons.map((cta) => {
+      const IconComponent = cta.icon;
+      return (
+        <div class="group relative">
+          <div class={`absolute inset-0 bg-gradient-to-r ${cta.color} rounded-lg blur opacity-25 group-hover:opacity-40 transition-opacity duration-300`} />
+          <div class="relative bg-background border border-border/50 rounded-lg p-4 sm:p-6 group-hover:border-accent/50 transition-all duration-300 active:scale-95">
+            <div class="text-center space-y-3 sm:space-y-4">
+              <div class="mx-auto w-10 h-10 sm:w-12 sm:h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+              </div>
+              <div>
+                <h3 class="font-semibold text-base sm:text-lg mb-2 leading-tight">{cta.title}</h3>
+                <p class="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">{cta.description}</p>
+              </div>
+              <a
+                href={`${appUrl(lang)}${cta.path}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold group-hover:shadow-lg text-sm py-2 h-auto min-h-[2.5rem]"
+              >
+                {t(lang, 'category_ctas.cta_button')}
+              </a>
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>

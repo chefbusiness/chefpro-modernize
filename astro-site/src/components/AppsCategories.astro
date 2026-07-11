@@ -1,0 +1,157 @@
+---
+// AppsCategories.astro — port de src/components/AppsCategories.tsx.
+// Card clicable (scrollToSection) → data-scroll-target + <script> vanilla que replica
+// scrollIntoView({behavior:'smooth'}). Card/Badge shadcn reproducidos inline con sus clases.
+import { ChefHat, Globe, Calculator, Building, Camera } from 'lucide-react';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appCategories = [
+  {
+    id: 'creativity',
+    name: t(lang, 'categories.creativity.title'),
+    description: t(lang, 'categories.creativity.description'),
+    icon: ChefHat,
+    count: t(lang, 'categories.creativity.count'),
+    colorClass: 'category-card-creativity',
+    apps: [
+      t(lang, 'apps.creativity.cocina_creativa.name'),
+      t(lang, 'apps.creativity.pasteleria_creativa.name'),
+      t(lang, 'apps.creativity.chocolateria_creativa.name'),
+      '+5 ' + t(lang, 'common.more'),
+    ],
+  },
+  {
+    id: 'worldCookbooks',
+    name: t(lang, 'categories.cookbooks.title'),
+    description: t(lang, 'categories.cookbooks.description'),
+    icon: Globe,
+    count: t(lang, 'categories.cookbooks.count'),
+    colorClass: 'category-card-cookbooks',
+    apps: [
+      t(lang, 'cookbooks.europa') + ' (10)',
+      t(lang, 'cookbooks.latinoamerica') + ' (11)',
+      t(lang, 'cookbooks.asia') + ' (4)',
+    ],
+  },
+  {
+    id: 'knowledge',
+    name: t(lang, 'categories.knowledge.title'),
+    description: t(lang, 'categories.knowledge.description'),
+    icon: Globe,
+    count: t(lang, 'categories.knowledge.count'),
+    colorClass: 'category-card-knowledge',
+    apps: [t(lang, 'apps.knowledge.gastro_lexicum.name')],
+  },
+  {
+    id: 'business',
+    name: t(lang, 'categories.tools.title'),
+    description: t(lang, 'categories.tools.description'),
+    icon: Calculator,
+    count: t(lang, 'categories.tools.count'),
+    colorClass: 'category-card-tools',
+    apps: [
+      t(lang, 'apps.business.chatgpt_4o.name'),
+      t(lang, 'apps.business.mermas_gencal.name'),
+      t(lang, 'apps.business.id_alergenos.name'),
+      '+3 ' + t(lang, 'common.more'),
+    ],
+  },
+  {
+    id: 'concepts',
+    name: t(lang, 'categories.business.title'),
+    description: t(lang, 'categories.business.description'),
+    icon: Building,
+    count: t(lang, 'categories.business.count'),
+    colorClass: 'category-card-business',
+    apps: [
+      t(lang, 'apps.concepts.catering_ai.name'),
+      t(lang, 'apps.concepts.burger_pro_ai.name'),
+      t(lang, 'apps.concepts.food_truck_ai.name'),
+      '+2 ' + t(lang, 'common.more'),
+    ],
+  },
+  {
+    id: 'marketing',
+    name: t(lang, 'categories.marketing.title'),
+    description: t(lang, 'categories.marketing.description'),
+    icon: Camera,
+    count: t(lang, 'categories.marketing.count'),
+    colorClass: 'category-card-marketing',
+    apps: [
+      t(lang, 'apps.marketing.menu_plate_seo.name'),
+      t(lang, 'apps.marketing.gastro_calendar.name'),
+      t(lang, 'apps.marketing.instaflow_ai.name'),
+      '+1 ' + t(lang, 'common.more'),
+    ],
+  },
+];
+---
+
+<section class="container py-8 md:py-12 lg:py-24">
+  <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+    <h2 class="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
+      {t(lang, 'categories.title')}
+    </h2>
+    <p class="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
+      {t(lang, 'categories.description')}
+    </p>
+  </div>
+
+  <div class="mx-auto grid justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-12">
+    {appCategories.map((category) => {
+      const Icon = category.icon;
+      return (
+        <div
+          class={`rounded-lg border bg-card text-card-foreground shadow-sm cursor-pointer hover-card group ${category.colorClass}`}
+          data-scroll-target={category.id}
+        >
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center justify-between">
+              <div class="category-icon h-12 w-12 rounded-full flex items-center justify-center">
+                <Icon className="h-6 w-6" />
+              </div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">{category.count}</div>
+            </div>
+            <h3 class="text-2xl font-semibold leading-none tracking-tight text-lg group-hover:text-primary transition-colors">
+              {category.name}
+            </h3>
+            <p class="text-sm text-muted-foreground">{category.description}</p>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="flex flex-wrap gap-1">
+              {category.apps.map((app) => (
+                <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground text-xs">
+                  {app}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  // scrollToSection() de AppsCategories.tsx — mapea id de categoría a id de sección real.
+  const sectionIds: Record<string, string> = {
+    creativity: 'creatividad-showcase',
+    worldCookbooks: 'recetarios-mundiales',
+    knowledge: 'gastro-conocimiento',
+    business: 'herramientas-business',
+    concepts: 'conceptos-negocio',
+    marketing: 'marketing-contenido',
+  };
+  document.querySelectorAll<HTMLElement>('[data-scroll-target]').forEach((card) => {
+    card.addEventListener('click', () => {
+      const categoryId = card.getAttribute('data-scroll-target') || '';
+      const targetId = sectionIds[categoryId] || categoryId;
+      const element = document.getElementById(targetId);
+      if (element) element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>

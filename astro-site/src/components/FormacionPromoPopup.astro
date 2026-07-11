@@ -1,0 +1,199 @@
+---
+// FormacionPromoPopup.astro — port de FormacionPromoPopup.tsx (componente EbookPromoPopup).
+// Client-only y solo español: el server-side deja el popup oculto (root `hidden`).
+// El radix Dialog/Checkbox se reemplaza por HTML nativo + JS vanilla (overlay, close X,
+// checkbox role="checkbox" con data-state). Lógica localStorage/frecuencia (24h / never-show
+// / delay 90s / excluir rutas pro-prompts) replicada en el <script>.
+import { Sparkles, X, Check } from 'lucide-react';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+---
+
+{lang === 'es' && (
+  <div id="formacion-promo-popup" hidden>
+    {/* DialogOverlay */}
+    <div data-promo-overlay data-state="closed" class="fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"></div>
+
+    {/* DialogContent */}
+    <div data-promo-content role="dialog" aria-modal="true" data-state="closed" class="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg sm:max-w-md border-0 bg-[#0a0a0a] p-0 overflow-hidden shadow-2xl shadow-[#FFD700]/10">
+      {/* Mockup Image */}
+      <div class="px-4 pt-6">
+        <picture>
+          <source srcset="/ebook-mockup-bundle.webp" type="image/webp" />
+          <img
+            src="/ebook-mockup-bundle-sm.png"
+            alt="Gastro Pro Prompts — eBook de IA para hostelería"
+            class="w-full"
+          />
+        </picture>
+      </div>
+
+      <div class="px-6 pb-6 pt-2 text-center">
+        {/* Badge */}
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 mb-3">
+          <Sparkles className="h-3.5 w-3.5 text-[#FFD700]" />
+          <span class="text-[#FFD700] text-xs font-bold tracking-wider uppercase">Nuevo</span>
+        </div>
+
+        <h3 class="text-white text-xl font-bold mb-2">
+          Gastro Pro Prompts
+        </h3>
+        <p class="text-gray-400 text-sm mb-1">
+          300+ prompts de IA profesionales para hostelería y restauración
+        </p>
+        <p class="text-gray-500 text-xs mb-5">
+          Compatible con ChatGPT, Claude, Perplexity, Gemini y más
+        </p>
+
+        {/* Price */}
+        <div class="flex items-center justify-center gap-3 mb-5">
+          <span class="text-gray-500 line-through text-lg">€50</span>
+          <span class="text-[#FFD700] text-3xl font-extrabold">€9</span>
+          <span class="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-xs font-bold">-82%</span>
+        </div>
+
+        {/* CTA */}
+        <button
+          type="button"
+          data-promo-cta
+          class="w-full py-3.5 bg-[#FFD700] text-black font-bold text-base rounded-xl hover:bg-[#FFD700]/90 transition-all active:scale-[0.98]"
+        >
+          VER EL EBOOK — €9
+        </button>
+
+        <button
+          type="button"
+          data-promo-dismiss
+          class="w-full text-sm text-gray-500 hover:text-gray-300 transition-colors py-3 mt-1"
+        >
+          Ahora no, gracias
+        </button>
+
+        {/* Never show again */}
+        <div class="flex items-center justify-center gap-2 pt-1">
+          <button
+            type="button"
+            role="checkbox"
+            id="never-show-ebook"
+            aria-checked="false"
+            data-state="unchecked"
+            data-promo-never
+            class="peer h-4 w-4 shrink-0 rounded-sm border ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 border-gray-600 data-[state=checked]:bg-[#FFD700] data-[state=checked]:border-[#FFD700] data-[state=checked]:text-black"
+          >
+            <span data-promo-never-indicator class="flex items-center justify-center text-current" hidden>
+              <Check className="h-4 w-4" />
+            </span>
+          </button>
+          <label for="never-show-ebook" class="text-xs text-gray-600 cursor-pointer">
+            No volver a mostrar
+          </label>
+        </div>
+      </div>
+
+      {/* DialogContent auto-close (shadcn) */}
+      <button type="button" data-promo-dismiss class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+        <X className="h-4 w-4" />
+        <span class="sr-only">Close</span>
+      </button>
+    </div>
+  </div>
+)}
+
+<script>
+  (() => {
+    const root = document.getElementById('formacion-promo-popup');
+    if (!root) return; // no montado (idioma != es)
+
+    const STORAGE_KEY_DISMISSED = 'ebook-promo-dismissed';
+    const STORAGE_KEY_NEVER_SHOW = 'ebook-promo-never-show';
+    const DISMISS_DURATION_HOURS = 24;
+    const POPUP_DELAY_MS = 90000; // 90s
+
+    const overlay = root.querySelector('[data-promo-overlay]');
+    const content = root.querySelector('[data-promo-content]');
+    const neverBtn = root.querySelector('[data-promo-never]');
+    const neverIndicator = root.querySelector('[data-promo-never-indicator]');
+    let neverShowAgain = false;
+
+    const setState = (state) => {
+      if (overlay) overlay.setAttribute('data-state', state);
+      if (content) content.setAttribute('data-state', state);
+    };
+
+    const showPopup = () => {
+      root.hidden = false;
+      setState('open');
+    };
+
+    const hidePopup = () => {
+      setState('closed');
+      root.hidden = true;
+    };
+
+    const handleDismiss = () => {
+      if (neverShowAgain) {
+        localStorage.setItem(STORAGE_KEY_NEVER_SHOW, 'true');
+      } else {
+        localStorage.setItem(STORAGE_KEY_DISMISSED, Date.now().toString());
+      }
+      hidePopup();
+    };
+
+    const handleCTAClick = () => {
+      localStorage.setItem(STORAGE_KEY_NEVER_SHOW, 'true');
+      hidePopup();
+      window.location.href = '/pro-prompts-ebook';
+    };
+
+    // Toggle "no volver a mostrar" (radix checkbox emulado)
+    if (neverBtn) {
+      neverBtn.addEventListener('click', () => {
+        neverShowAgain = !neverShowAgain;
+        neverBtn.setAttribute('data-state', neverShowAgain ? 'checked' : 'unchecked');
+        neverBtn.setAttribute('aria-checked', neverShowAgain ? 'true' : 'false');
+        if (neverIndicator) neverIndicator.hidden = !neverShowAgain;
+      });
+    }
+
+    root.querySelectorAll('[data-promo-dismiss]').forEach((el) =>
+      el.addEventListener('click', handleDismiss)
+    );
+    const cta = root.querySelector('[data-promo-cta]');
+    if (cta) cta.addEventListener('click', handleCTAClick);
+    if (overlay) overlay.addEventListener('click', handleDismiss);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !root.hidden) handleDismiss();
+    });
+
+    // --- Elegibilidad (equivalente al useEffect) ---
+    // No mostrar en páginas del ebook
+    if (window.location.pathname.includes('pro-prompts')) return;
+    // Opt-out permanente
+    if (localStorage.getItem(STORAGE_KEY_NEVER_SHOW) === 'true') return;
+    // Descartado recientemente (<24h)
+    const dismissedTimestamp = localStorage.getItem(STORAGE_KEY_DISMISSED);
+    if (dismissedTimestamp) {
+      const hoursSince = (Date.now() - parseInt(dismissedTimestamp, 10)) / (1000 * 60 * 60);
+      if (hoursSince < DISMISS_DURATION_HOURS) return;
+    }
+
+    const reveal = () => {
+      // Guard: si la pestaña está en background, espera a que vuelva a ser visible.
+      if (document.hidden) {
+        const onVisible = () => {
+          if (!document.hidden) {
+            document.removeEventListener('visibilitychange', onVisible);
+            showPopup();
+          }
+        };
+        document.addEventListener('visibilitychange', onVisible);
+        return;
+      }
+      showPopup();
+    };
+
+    setTimeout(reveal, POPUP_DELAY_MS);
+  })();
+</script>

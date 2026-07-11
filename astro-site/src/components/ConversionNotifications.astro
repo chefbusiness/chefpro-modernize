@@ -1,0 +1,116 @@
+---
+// ConversionNotifications.astro — port de ConversionNotifications.tsx.
+// Client-only: el server no renderiza nada visible (root vacío). Los toasts se
+// construyen en un <script define:vars> con los datos de conversion-notifications.ts
+// resueltos server-side (getRandomNotification reimplementado en vanilla).
+// Timers con guard document.hidden (regla anti-bug slice 1).
+import { notificationCities, notificationPlans } from '../../../src/data/conversion-notifications';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const cities = notificationCities[lang] ?? notificationCities.es;
+const plans = notificationPlans[lang] ?? notificationPlans.es;
+
+const nData = {
+  cities,
+  plans,
+  isEn: lang === 'en',
+  someoneFrom: t(lang, 'notifications.someone_from'),
+  registeredRaw: t(lang, 'notifications.registered'),
+  minutesRaw: t(lang, 'notifications.minutes_ago'),
+};
+---
+
+<div id="conversion-notifications-root"></div>
+
+<script define:vars={{ nData }}>
+  (() => {
+    const root = document.getElementById('conversion-notifications-root');
+    if (!root) return;
+
+    const SESSION_KEY = 'hideConversionNotifications';
+    const isHiddenForSession = () => sessionStorage.getItem(SESSION_KEY) === 'true';
+
+    let hideTimeout;
+
+    const clearToast = () => {
+      root.innerHTML = '';
+    };
+
+    const hideForSession = () => {
+      sessionStorage.setItem(SESSION_KEY, 'true');
+      clearToast();
+    };
+
+    // Equivalente a getRandomNotification(currentLanguage)
+    const getRandomNotification = () => {
+      const city = nData.cities[Math.floor(Math.random() * nData.cities.length)];
+      const plan = nData.plans[Math.floor(Math.random() * nData.plans.length)];
+      const minutesAgo = Math.floor(Math.random() * 45) + 5; // 5-49
+      return { city, plan, minutesAgo };
+    };
+
+    const xIcon = '<svg class="lucide lucide-x h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>';
+
+    const escapeHtml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    const renderToast = (n) => {
+      const registeredLine = nData.isEn
+        ? nData.registeredRaw.replace('{{plan}}', n.plan.name)
+        : `${nData.registeredRaw} ${n.plan.name} ${n.plan.price}${n.plan.currency} 😊`;
+      const minutesLine = nData.minutesRaw.replace('{{minutes}}', String(n.minutesAgo));
+
+      root.innerHTML = `
+        <div class="fixed inset-x-4 bottom-4 md:left-6 md:right-auto md:bottom-6 z-50 animate-fade-in-up" aria-live="polite">
+          <div class="rounded-lg border bg-card text-card-foreground border-accent shadow-lg w-full md:max-w-sm" style="background: linear-gradient(135deg, hsl(var(--accent-light) / 0.1) 0%, hsl(var(--accent) / 0.05) 100%); backdrop-filter: blur(8px);">
+            <div class="p-4">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                    <img src="https://blog.aichef.pro/wp-content/uploads/2024/09/Alguien-AI-Chef-Pro.png" alt="AI Chef Pro User" class="w-10 h-10 rounded-full object-cover" />
+                  </div>
+                  <div class="min-w-0">
+                    <div class="flex items-center gap-1 text-sm font-medium text-chef-dark">
+                      <span>${escapeHtml(nData.someoneFrom)} ${escapeHtml(n.city.city)}</span>
+                      <span>${escapeHtml(n.city.flag)}</span>
+                    </div>
+                    <p class="text-sm text-chef-gray">${escapeHtml(registeredLine)}</p>
+                    <p class="text-xs text-chef-gray/70 mt-1">${escapeHtml(minutesLine)}</p>
+                  </div>
+                </div>
+                <button type="button" data-hide-notifications class="text-chef-gray hover:text-chef-dark transition-colors p-1" aria-label="Hide notifications">
+                  ${xIcon}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+
+      const closeBtn = root.querySelector('[data-hide-notifications]');
+      if (closeBtn) closeBtn.addEventListener('click', hideForSession);
+    };
+
+    const showRandomNotification = () => {
+      if (isHiddenForSession() || document.hidden) return;
+      renderToast(getRandomNotification());
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(clearToast, 6000); // auto hide after 6s
+    };
+
+    if (isHiddenForSession()) return;
+
+    // First notification after 4s
+    setTimeout(showRandomNotification, 4000);
+
+    // Then every 32s with 40% chance
+    setInterval(() => {
+      if (document.hidden) return;
+      if (!isHiddenForSession() && Math.random() > 0.6) {
+        showRandomNotification();
+      }
+    }, 32000);
+  })();
+</script>

@@ -46,3 +46,9 @@ export function tList(lang: Locale, key: string): string[] {
   const v = lookup(lang, key);
   return Array.isArray(v) ? (v as string[]) : [];
 }
+
+/** Traducción de arrays de objetos (equivalente a returnObjects: true en la SPA). */
+export function tObjects<T = Record<string, unknown>>(lang: Locale, key: string): T[] {
+  const v = lookup(lang, key);
+  return Array.isArray(v) ? (v as T[]) : [];
+}

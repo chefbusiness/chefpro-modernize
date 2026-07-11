@@ -1,0 +1,63 @@
+---
+// WorldCookbooks.astro — port de src/components/WorldCookbooks.tsx.
+// Card/Badge de shadcn → HTML inline con clases concatenadas verbatim; sin
+// interactividad JS (las cards solo tienen estilos hover/active). normalizeCuisineName
+// replicada. Los 3 grupos (europa/latinoamerica/asia) se mapean con su grid propio.
+import { worldCookbooks } from '../../../src/data/apps';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+// Normaliza nombres de cocina para las claves de traducción (idéntico a la SPA)
+const normalizeCuisineName = (name: string): string => {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '') // Remove accents
+    .replace(/\s+/g, '_'); // Replace spaces with underscores
+};
+
+const groups = [
+  { key: 'europa', emoji: '🌍', items: worldCookbooks.europa, grid: 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4' },
+  { key: 'latinoamerica', emoji: '🌎', items: worldCookbooks.latinoamerica, grid: 'grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4' },
+  { key: 'asia', emoji: '🌏', items: worldCookbooks.asia, grid: 'grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4' },
+] as const;
+---
+
+<section id="recetarios" class="container py-16 bg-muted/20">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+      <span class="gradient-text">{t(lang, 'showcase.world_title')}</span>
+    </h2>
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'showcase.world_description')}
+    </p>
+  </div>
+
+  <div class="space-y-8">
+    {groups.map((group) => (
+      <div>
+        <h3 class="text-xl sm:text-2xl font-semibold mb-4 flex flex-col sm:flex-row items-center justify-center text-center gap-2">
+          <span class="flex items-center gap-2">
+            {group.emoji} <span class="gradient-text">{t(lang, `categories.world_cookbooks.${group.key}.name`)}</span>
+          </span>
+          <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 text-xs w-fit">{t(lang, `categories.world_cookbooks.${group.key}.count`)}</div>
+        </h3>
+        <div class={group.grid}>
+          {group.items.map((cuisine) => (
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm category-card-cookbooks group cursor-pointer hover:shadow-lg transition-all duration-300 hover:border-accent/50 active:scale-95">
+              <div class="flex flex-col space-y-1.5 p-3 sm:p-4 pb-2">
+                <h3 class="text-2xl font-semibold leading-none tracking-tight text-center text-sm sm:text-base flex flex-col items-center gap-1">
+                  <span class="text-xl sm:text-2xl">{cuisine.flag}</span>
+                  <span class="text-xs sm:text-sm leading-tight">{t(lang, `cookbooks.${normalizeCuisineName(cuisine.name)}`)}</span>
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

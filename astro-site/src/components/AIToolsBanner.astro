@@ -1,0 +1,46 @@
+---
+// AIToolsBanner.astro — port de AIToolsBanner.tsx (banner CTA a la landing de herramientas IA).
+// Button asChild → <a> con las clases de buttonVariants (default+lg) inline; iconos lucide SSR.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { ArrowRight, Wrench } from 'lucide-react';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const AI_TOOLS_SLUGS: Record<string, string> = {
+  es: 'herramientas-ia-para-restaurantes',
+  en: 'en/ai-tools-for-restaurants',
+  fr: 'fr/outils-ia-restaurant',
+  de: 'de/ki-tools-restaurant',
+  it: 'it/strumenti-ia-ristorante',
+  pt: 'pt/ferramentas-ia-restaurante',
+  nl: 'nl/ai-tools-restaurant',
+};
+
+const href = `/${AI_TOOLS_SLUGS[lang] || AI_TOOLS_SLUGS.es}`;
+---
+
+<section class="py-12 bg-gradient-to-r from-amber-50 to-primary/5 border-y border-primary/10">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6 max-w-5xl mx-auto">
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+          <Wrench className="h-6 w-6 text-primary" />
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-foreground">
+            {t(lang, 'nav.herramientas_ia')}
+          </h2>
+          <p class="text-muted-foreground text-sm mt-1 max-w-xl">
+            {t(lang, 'landingRestaurantes.hero.subtitle')}
+          </p>
+        </div>
+      </div>
+      <a href={href} class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 btn-gold flex-shrink-0">
+        {t(lang, 'landingRestaurantes.hero.cta_primary')}
+        <ArrowRight className="ml-2 h-5 w-5" />
+      </a>
+    </div>
+  </div>
+</section>

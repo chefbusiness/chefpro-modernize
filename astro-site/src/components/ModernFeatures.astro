@@ -1,0 +1,95 @@
+---
+// ModernFeatures.astro — port de ModernFeatures.tsx.
+// Card/CardHeader/CardTitle/CardContent/CardDescription reproducidos inline;
+// iconos lucide renderizados server-side (SVG estático); imágenes LLM movidas a /assets. Sin JS.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { Brain, Utensils, Heart } from 'lucide-react';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const llmModels = [
+  { image: '/assets/llm-ai-chef-pro.png', name: t(lang, 'features.llm_models.ai_chef_pro'), alt: t(lang, 'alt_texts.llm_ai_chef_pro') },
+  { image: '/assets/llm-mistral.png', name: t(lang, 'features.llm_models.mistral'), alt: t(lang, 'alt_texts.llm_mistral') },
+  { image: '/assets/llm-openai.png', name: t(lang, 'features.llm_models.openai'), alt: t(lang, 'alt_texts.llm_openai') },
+  { image: '/assets/llm-anthropic.png', name: t(lang, 'features.llm_models.anthropic'), alt: t(lang, 'alt_texts.llm_anthropic') },
+  { image: '/assets/llm-meta-llama.png', name: t(lang, 'features.llm_models.meta_llama'), alt: t(lang, 'alt_texts.llm_meta_llama') },
+];
+
+const features = [
+  { icon: Brain, title: t(lang, 'features.ai_assistant'), description: t(lang, 'features.ai_assistant_desc') },
+  { icon: Utensils, title: t(lang, 'features.food_pairing'), description: t(lang, 'features.food_pairing_desc') },
+  { icon: Heart, title: t(lang, 'features.coaching'), description: t(lang, 'features.coaching_desc') },
+];
+---
+
+<section id="herramientas" class="container py-8 md:py-12 lg:py-24">
+  <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+    <h2 class="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
+      {t(lang, 'features.title')}
+    </h2>
+    <p class="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7 text-balance">
+      {t(lang, 'features.description')}
+    </p>
+  </div>
+
+  <!-- Main Feature Video -->
+  <div class="mx-auto max-w-4xl mt-12 mb-12">
+    <div class="relative rounded-xl border bg-muted/30 p-4 overflow-hidden">
+      <div class="relative pb-[56.25%] h-0">
+        <iframe
+          src="https://www.loom.com/embed/ec50c20372974b76b7c3c000500bf48b"
+          frameborder="0"
+          allowfullscreen
+          class="absolute top-0 left-0 w-full h-full rounded-lg"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature Cards -->
+  <div class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+    {features.map((feature) => {
+      const Icon = feature.icon;
+      return (
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm category-card-knowledge hover-card">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="category-icon h-12 w-12 rounded-full flex items-center justify-center mb-2">
+              <Icon className="h-6 w-6" />
+            </div>
+            <h3 class="font-semibold leading-none tracking-tight text-lg">{feature.title}</h3>
+          </div>
+          <div class="p-6 pt-0">
+            <p class="text-sm text-muted-foreground text-sm leading-6">
+              {feature.description}
+            </p>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- LLM Models -->
+  <div class="mt-16">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold mb-2">{t(lang, 'features.llm_title')}</h3>
+      <p class="text-muted-foreground">
+        {t(lang, 'features.llm_description')}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+      {llmModels.map((model) => (
+        <div class="rounded-lg border bg-card overflow-hidden hover-card">
+          <img
+            src={model.image}
+            alt={model.alt}
+            class="w-full h-20 object-cover"
+            loading="lazy"
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

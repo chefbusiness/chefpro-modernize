@@ -1,0 +1,88 @@
+---
+// CityResourcesStrip.astro — port de src/components/CityResourcesStrip.tsx.
+// react-router <Link> → <a> (mismas rutas string sin prefijo es); Button asChild+Link →
+// <a> con las clases del botón inline; Card/Badge de shadcn → HTML inline verbatim.
+// Solo se renderiza en español (guard equivalente a `if (i18n.language !== 'es') return null`).
+import { ArrowRight, MapPin, FileText, Calculator, ScrollText, Layers } from 'lucide-react';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const CITY_CARDS = [
+  { slug: 'madrid', label: 'Madrid', cost: '€110.000 - €280.000', country: '🇪🇸 España' },
+  { slug: 'barcelona', label: 'Barcelona', cost: '€100.000 - €260.000', country: '🇪🇸 España' },
+  { slug: 'ciudad-de-mexico', label: 'Ciudad de México', cost: 'MXN $1.5M - $5M', country: '🇲🇽 México' },
+  { slug: 'bogota', label: 'Bogotá', cost: 'COP $300M - $1.200M', country: '🇨🇴 Colombia' },
+  { slug: 'buenos-aires', label: 'Buenos Aires', cost: 'USD $50k - $200k', country: '🇦🇷 Argentina' },
+];
+
+const RESOURCE_PILLS = [
+  { path: 'abrir-restaurante', label: 'Cómo abrir restaurante', icon: Layers },
+  { path: 'licencia-restaurante', label: 'Licencia y trámites', icon: ScrollText },
+  { path: 'software-gestion-restaurante', label: 'Software gestión', icon: FileText },
+  { path: 'escandallo-restaurante', label: 'Escandallo', icon: Calculator },
+  { path: 'plan-negocio-restaurante', label: 'Plan de negocio', icon: FileText },
+];
+---
+
+{lang === 'es' && (
+  <section class="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mb-4 bg-accent/15 text-accent border-accent/30">
+          Recursos por ciudad · 15 ciudades · Datos verificados 2026
+        </div>
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">
+          Cómo Abrir un Restaurante en tu Ciudad
+        </h2>
+        <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Costes reales, licencias específicas, salarios sectoriales y mejores barrios para España, México, Colombia, Argentina y Chile.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+        {CITY_CARDS.map((c) => (
+          <a href={`/abrir-restaurante/${c.slug}`} class="group">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm h-full hover:border-accent transition-all hover:shadow-md">
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-2 text-xs text-muted-foreground">
+                  <span>{c.country}</span>
+                </div>
+                <div class="flex items-center gap-2 mb-3">
+                  <MapPin className="h-5 w-5 text-accent" />
+                  <h3 class="font-semibold text-lg group-hover:text-accent transition-colors">
+                    {c.label}
+                  </h3>
+                </div>
+                <p class="text-xs text-muted-foreground mb-1">Inversión total estimada</p>
+                <p class="text-sm font-medium">{c.cost}</p>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        {RESOURCE_PILLS.map((r) => {
+          const PillIcon = r.icon;
+          return (
+            <a
+              href={`/${r.path}/madrid`}
+              class="inline-flex items-center gap-2 px-4 py-2 bg-muted hover:bg-accent/15 hover:text-accent rounded-full text-sm font-medium transition-colors border border-border"
+            >
+              <PillIcon className="h-4 w-4" />
+              {r.label}
+            </a>
+          );
+        })}
+      </div>
+
+      <div class="text-center">
+        <a href="/seo-restaurantes-por-ciudad" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md px-8 bg-accent hover:bg-accent/90 text-accent-foreground">
+          Ver las 15 ciudades + 5 recursos <ArrowRight className="ml-2 h-5 w-5" />
+        </a>
+      </div>
+    </div>
+  </section>
+)}

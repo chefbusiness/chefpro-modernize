@@ -1,0 +1,86 @@
+---
+// ModernChefSection.astro — port de ModernChefSection.tsx.
+// Botones con window.open → <a target="_blank"> (idiom Hero.astro); Card/CardContent y Button
+// reproducidos inline; imágenes chef-team movidas a /assets; icono ExternalLink SVG estático.
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+import { ExternalLink } from 'lucide-react';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+---
+
+<section class="border-t bg-muted/20">
+  <div class="container py-8 md:py-12 lg:py-24">
+    <div class="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+      <h2 class="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl text-balance">
+        {t(lang, 'chef_section.title_part1')} {t(lang, 'chef_section.title_part2')}{' '}
+        <span class="gradient-text">{t(lang, 'chef_section.title_part3')}</span>
+      </h2>
+
+      <p class="max-w-[42rem] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+        {t(lang, 'chef_section.description_start')}{' '}
+        <a
+          href="https://diegoschatten.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-semibold text-foreground hover:text-accent inline-flex items-center gap-1 underline underline-offset-4"
+        >
+          Diego Schattenhofer
+          <ExternalLink className="h-4 w-4" />
+        </a>
+        {' '}{t(lang, 'chef_section.description_end')}
+      </p>
+
+      <a
+        href={appUrl(lang)}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90 mt-4"
+      >
+        {t(lang, 'chef_section.cta')}
+      </a>
+    </div>
+
+    <!-- Images Grid -->
+    <div class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 mt-12">
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm hover-card overflow-hidden">
+        <div class="p-0">
+          <img
+            src="/assets/chef-team-1.jpg"
+            alt={t(lang, 'chef_section.image1_alt')}
+            class="w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm hover-card overflow-hidden">
+        <div class="p-0">
+          <img
+            src="/assets/chef-team-2.jpg"
+            alt={t(lang, 'chef_section.image2_alt')}
+            class="w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+
+      <div class="rounded-lg border bg-card text-card-foreground shadow-sm hover-card overflow-hidden">
+        <div class="p-0">
+          <img
+            src="/assets/chef-team-3.jpg"
+            alt={t(lang, 'chef_section.image3_alt')}
+            class="w-full h-64 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

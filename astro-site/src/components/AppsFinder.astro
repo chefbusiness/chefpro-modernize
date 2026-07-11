@@ -1,0 +1,148 @@
+---
+// AppsFinder.astro — port de src/components/AppsFinder.tsx.
+// Tabs de Radix → réplica vanilla (data-state + hidden): TODOS los paneles se renderizan
+// server-side (SEO), solo el activo visible. getRecommendedApps() de src/data/personas.
+// Botón "Explorar" → window.open (data-app-url + <script>), como el handleAppClick original.
+import { personas, getRecommendedApps } from '../../../src/data/personas';
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+// getAppUrl() de useLanguage — subdominio de la app por idioma
+const appUrl = (l: Locale): string => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+};
+const appBase = appUrl(lang);
+
+const defaultValue = 'chef-ejecutivo';
+---
+
+<section id="filtro-apps" class="container py-16 bg-muted/20">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold tracking-tight md:text-4xl">
+      {t(lang, 'finder.title_prefix')} <span class="gradient-text">{t(lang, 'finder.title_highlight')}</span>
+    </h2>
+    <p class="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+      {t(lang, 'finder.description')}
+    </p>
+  </div>
+
+  <div class="w-full" data-tabs>
+    <div class="inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 mb-6 sm:mb-8 h-auto" role="tablist">
+      {personas.map((persona) => (
+        <button
+          type="button"
+          role="tab"
+          id={`tab-${persona.id}`}
+          aria-controls={`panel-${persona.id}`}
+          aria-selected={persona.id === defaultValue ? 'true' : 'false'}
+          data-state={persona.id === defaultValue ? 'active' : 'inactive'}
+          data-tab-trigger
+          data-value={persona.id}
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm text-xs sm:text-sm p-2 sm:p-3 flex-col sm:flex-row gap-1 h-auto min-h-[3rem] sm:min-h-[2.5rem]"
+        >
+          <span class="text-sm sm:text-base">{persona.emoji}</span>
+          <span class="hidden md:inline text-center leading-tight">{t(lang, `finder.personas.${persona.id}.short_name`)}</span>
+          <span class="md:hidden text-center text-xs leading-tight">{t(lang, `finder.personas.${persona.id}.mobile_name`)}</span>
+        </button>
+      ))}
+    </div>
+
+    {personas.map((persona) => {
+      const recommendedApps = getRecommendedApps(persona.id);
+      const isActive = persona.id === defaultValue;
+      return (
+        <div
+          role="tabpanel"
+          id={`panel-${persona.id}`}
+          aria-labelledby={`tab-${persona.id}`}
+          data-state={isActive ? 'active' : 'inactive'}
+          data-tab-content
+          data-value={persona.id}
+          hidden={!isActive}
+          class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        >
+          <div class="text-center mb-8">
+            <h3 class="text-xl font-semibold mb-2">
+              {persona.emoji} {t(lang, `finder.personas.${persona.id}.name`)}
+            </h3>
+            <p class="text-muted-foreground">{t(lang, `finder.personas.${persona.id}.description`)}</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
+            {recommendedApps.map((app) => {
+              if (!app) return null;
+              const IconComponent = app.icon;
+              const appKey = `apps.${app.category}.${app.id.replace(/-/g, '_')}`;
+              return (
+                <div class="rounded-lg border bg-card text-card-foreground shadow-sm group hover:shadow-lg transition-all duration-300 border-border/50 hover:border-accent/50">
+                  <div class="flex flex-col space-y-1.5 p-6 p-4 sm:p-6">
+                    <div class="flex items-center justify-between mb-2">
+                      <IconComponent className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+                    </div>
+                    <h3 class="text-2xl font-semibold leading-none tracking-tight text-base sm:text-lg leading-tight">{t(lang, `${appKey}.name`)}</h3>
+                    <p class="text-sm text-muted-foreground text-sm leading-relaxed">{t(lang, `${appKey}.description`)}</p>
+                  </div>
+                  <div class="p-6 pt-0 p-4 sm:p-6 pt-0">
+                    <div class="bg-muted/50 p-3 rounded text-sm">
+                      <p class="text-muted-foreground mb-1 text-xs">{t(lang, 'finder.preview_label')}:</p>
+                      <p class="font-medium text-xs sm:text-sm leading-relaxed">"{t(lang, `${appKey}.preview`)}"</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center p-6 pt-0 p-4 sm:p-6 pt-0">
+                    <button
+                      type="button"
+                      data-app-url={`${appBase}/${app.slug}`}
+                      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors text-sm py-2 h-auto min-h-[2.5rem]"
+                    >
+                      {t(lang, 'cta.explore')}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</section>
+
+<script>
+  // Tabs vanilla: al pulsar un trigger, activa su panel y oculta el resto (data-state + hidden).
+  const root = document.querySelector<HTMLElement>('[data-tabs]');
+  if (root) {
+    const triggers = root.querySelectorAll<HTMLButtonElement>('[data-tab-trigger]');
+    const panels = root.querySelectorAll<HTMLElement>('[data-tab-content]');
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const value = trigger.getAttribute('data-value');
+        triggers.forEach((t) => {
+          const active = t === trigger;
+          t.setAttribute('data-state', active ? 'active' : 'inactive');
+          t.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        panels.forEach((p) => {
+          const active = p.getAttribute('data-value') === value;
+          p.setAttribute('data-state', active ? 'active' : 'inactive');
+          if (active) p.removeAttribute('hidden');
+          else p.setAttribute('hidden', '');
+        });
+      });
+    });
+  }
+
+  // handleAppClick — abre la app en pestaña nueva (scope a esta sección para no duplicar listeners)
+  document.querySelectorAll<HTMLButtonElement>('#filtro-apps [data-app-url]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const url = btn.getAttribute('data-app-url');
+      if (url) window.open(url, '_blank');
+    });
+  });
+</script>
