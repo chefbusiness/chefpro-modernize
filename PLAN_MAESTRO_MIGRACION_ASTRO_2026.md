@@ -42,11 +42,11 @@ La parte pública actual es una SPA React 18 + Vite con client-side rendering pu
 
 | Fase | Alcance | Criterio de aceptación (gate UltraCode) | Est. |
 |---|---|---|---|
-| **0** | Scaffolding `astro-site/`: config Astro+i18n, Tailwind portado, tokens/CSS vars, BaseLayout con canonical+hreflang, netlify.toml staging (noindex), README | Deploy staging VERDE en Netlify; curl del staging muestra HTML con title/meta/hreflang correctos | 1-2 ses. |
-| **1** | Núcleo marketing: home ×7 idiomas, /precios, servicios, sobre, header/footer/nav completos | Paridad visual y de copy con producción (verificación por WebFetch/screenshot en nube); HTML crudo completo por idioma | 2-3 ses. |
-| **2** | Use cases: script TS→content collections + 102 spokes + hubs (usos, consultor) | 100% spokes con title/meta/H1/FAQ schema propios en HTML crudo; diff de contenido byte-a-byte vs datos origen | 2-3 ses. |
-| **3** | pSEO 75 ciudades (1 template data-driven) | 75 URLs con paridad de slug y contenido completo server-side | 1 ses. |
-| **4** | Productos digitales: 33 landings consolidadas (460 componentes clónicos → 1-2 templates + 33 entradas) + páginas de compra | Los 33 checkouts Stripe apuntando a los MISMOS payment links (env vars); QA de enlaces 33/33 | 3-4 ses. |
+| **0** ✅ | Scaffolding `astro-site/`: config Astro+i18n, Tailwind portado, tokens/CSS vars, BaseLayout con canonical+hreflang, netlify.toml staging (noindex), README | Deploy staging VERDE en Netlify; curl del staging muestra HTML con title/meta/hreflang correctos | ✅ 2026-07-03 |
+| **1** ✅ | Núcleo marketing: home ×7 idiomas, header/footer/nav, /mentoria-online ×7, /formacion-presencial (~~/precios, servicios, sobre~~ NO existen en la SPA) | Paridad visual y de copy con producción; HTML crudo completo por idioma | ✅ 2026-07-18 |
+| **2** ✅ | Use cases: 441 URLs = 7 idiomas × (hub + 61 spokes + hub consultor) — páginas dinámicas getStaticPaths | 100% spokes con title/meta/H1/FAQ schema propios en HTML crudo; diff byte-a-byte vs datos origen | ✅ 2026-07-18 (441/441) |
+| **3** ✅ | pSEO ciudades: 76 URLs = hub + 15 ciudades × 5 modifiers (1 template data-driven) | 76 URLs con paridad de slug y contenido completo server-side | ✅ 2026-07-18 (76/76) |
+| **4** ✅ | Productos digitales: **44** landings consolidadas (465 componentes clónicos → **4 templates** + 44 entradas) + hub | Los **44** checkouts Stripe apuntando a los MISMOS payment links (env vars, byte-compare); QA de enlaces **44/44** + hub | ✅ 2026-07-19 (44/44) |
 | **5** | Zona app como islands: gates acceso, dashboards descarga, biblioteca Pro Prompts (JWT), /admin | **Compra de prueba real end-to-end** + acceso + descarga verificados; funciones netlify intactas (0 diff) | 2-3 ses. |
 | **6** | SEO nativo: sitemap en build (diff exacto vs sitemap.xml actual), OG images, redirects, revisión lang-redirect, llms.txt | Diff sitemap = 0 URLs perdidas; rich results válidos (FAQ/Product/Breadcrumb) en muestras | 1-2 ses. |
 | **7** | **Cutover**: quitar noindex, swap del site en Netlify (o cambio de publish dir), monitoreo GSC diario | 2-4 semanas de vigilancia: cobertura de indexación ≥ baseline, 0 errores 404/soft-404 nuevos | 1-2 ses. |

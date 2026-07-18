@@ -17,7 +17,7 @@
 
 - **4 templates** en `astro-site/src/components/pages/`: KitTareas/KitExcel/Guia/PlanNegocio`LandingPage.astro` + datos en `astro-site/src/data/productos/{tareas,kits,guias,planes}/` + 2 one-offs (eBook, Mega Pack) + `ProductosDigitalesHubPage.astro`.
 - **44 env vars `VITE_STRIPE_PAYMENT_LINK_*` replicadas al site de staging** (scope builds, vía API). Al crear producto 45: añadir la var TAMBIÉN en staging.
-- Gates de dinero reutilizables: `gates-fase4-final.sh` (scratchpad de la sesión 19ce60d0) — byte-compare de CTAs contra las env vars de producción.
+- **Gates reutilizables PERSISTIDOS EN EL REPO**: `scripts/astro-migration/` (README + `prepare-inputs.sh` que regenera listas de URLs y payment links + gates de Fases 2/3/4 + smoke del hotfix). Probados end-to-end el 2026-07-19. `/private/tmp` se borra en cada reinicio — todo lo valioso vive ya en el repo.
 - Divergencias DOM por línea cubiertas con props opcionales (ver §8). El orden de tarjetas del hub es decisión de negocio — NO reordenar.
 
 ## 3. Hotfix de producción del 2026-07-18 (contexto)

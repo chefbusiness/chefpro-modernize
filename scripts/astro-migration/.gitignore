@@ -1,0 +1,4 @@
+stripe-env-vars.json
+expected-*.txt
+*-results.txt
+*.tsv
