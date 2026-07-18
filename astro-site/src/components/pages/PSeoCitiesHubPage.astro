@@ -1,0 +1,255 @@
+---
+// PSeoCitiesHubPage.astro — port 1:1 de src/pages/PSeoCitiesHub.tsx (la SPA es la spec).
+// Hub del cluster pSEO Ciudades (ES-only, 76 URLs). Renderiza los 5 modifiers + las 15
+// ciudades agrupadas por país, con los href EXACTOS de la SPA (/{modifier}/{slug}).
+//
+// Paridad exacta con PSeoCitiesHub.tsx:
+//  · Textos, MODIFIER_META y COUNTRY_GROUPS COPIADOS VERBATIM (mismos literales ES).
+//  · Datos (PSEO_CITIES / PSEO_MODIFIERS) desde la fuente única cross-root vía
+//    '../../lib/pseo-cities' (re-export de ../../../src/data/pseo-cities) — 0 textos a mano.
+//  · href de ciudad = cityPath(m, slug) = `/${m}/${slug}`, idéntico a `/${meta.path}/${slug}`
+//    de la SPA (MODIFIER_META.path es identidad modifier→segmento).
+//  · shadcn Button/Card/Badge inlineados con las clases YA RESUELTAS por twMerge en la SPA
+//    (los overrides colapsan los conflictos del variant base: bg/text/border/padding).
+//  · Iconos lucide vía <Icon> inline (Layers/ScrollText/FileText/Calculator/MapPin/ArrowRight).
+//  · H1 "Recursos para Restaurantes por Ciudad" sin tocar.
+//  · Los 2 JSON-LD (BreadcrumbList + CollectionPage) VERBATIM en el slot head.
+//
+// DESVIACIÓN ACEPTADA (mejora deliberada, misma que formacion-presencial / UseCasesHubPage):
+//  hreflang. La SPA pasa disableAutoHreflang a SEOHead (0 etiquetas). Aquí locales={['es']}
+//  → BaseLayout emite hreflang es + x-default (ambos → URL ES). Objetivo de la migración (Fase 0).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
+import Icon from '../Icon.astro';
+import { SITE } from '../../i18n/config';
+import {
+  PSEO_CITIES,
+  PSEO_MODIFIERS,
+  cityPath,
+  hubPath,
+  type PSeoModifier,
+} from '../../lib/pseo-cities';
+
+const SITE_URL = SITE;
+
+// ── MODIFIER_META — COPIADO VERBATIM de PSeoCitiesHub.tsx (líneas 15-46). El React node
+//    del icono se sustituye por iconName (render <Icon> inline). path == clave modifier. ──
+const MODIFIER_META: Record<string, { label: string; path: string; iconName: string; description: string }> = {
+  'abrir-restaurante': {
+    label: 'Cómo Abrir un Restaurante',
+    path: 'abrir-restaurante',
+    iconName: 'Layers',
+    description: 'Costes reales, licencias y barrios.',
+  },
+  'licencia-restaurante': {
+    label: 'Licencia para Restaurante',
+    path: 'licencia-restaurante',
+    iconName: 'ScrollText',
+    description: 'Trámites completos y tiempos reales.',
+  },
+  'software-gestion-restaurante': {
+    label: 'Software de Gestión',
+    path: 'software-gestion-restaurante',
+    iconName: 'FileText',
+    description: 'Comparativa y mejor opción 2026.',
+  },
+  'escandallo-restaurante': {
+    label: 'Escandallo de Restaurante',
+    path: 'escandallo-restaurante',
+    iconName: 'Calculator',
+    description: 'Cómo calcular costes y margen.',
+  },
+  'plan-negocio-restaurante': {
+    label: 'Plan de Negocio',
+    path: 'plan-negocio-restaurante',
+    iconName: 'FileText',
+    description: 'Plantilla bancable con cifras reales.',
+  },
+};
+
+// ── COUNTRY_GROUPS — COPIADO VERBATIM de PSeoCitiesHub.tsx (líneas 48-54). ──
+const COUNTRY_GROUPS: { country: string; emoji: string; slugs: string[] }[] = [
+  { country: 'España', emoji: '🇪🇸', slugs: ['madrid', 'barcelona', 'valencia', 'sevilla', 'malaga', 'bilbao', 'zaragoza'] },
+  { country: 'México', emoji: '🇲🇽', slugs: ['ciudad-de-mexico', 'guadalajara', 'monterrey', 'queretaro'] },
+  { country: 'Colombia', emoji: '🇨🇴', slugs: ['bogota', 'medellin'] },
+  { country: 'Argentina', emoji: '🇦🇷', slugs: ['buenos-aires'] },
+  { country: 'Chile', emoji: '🇨🇱', slugs: ['santiago'] },
+];
+
+// Etiqueta del chip por modifier en la card de ciudad — VERBATIM:
+// MODIFIER_META[m].label.split(' ').slice(-2).join(' ') (últimas 2 palabras).
+const chipLabel = (m: PSeoModifier): string =>
+  MODIFIER_META[m].label.split(' ').slice(-2).join(' ');
+
+// ── shadcn base (cva) inlineado — mismas constantes que UseCasesHubPage.astro ──
+const BTN = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0';
+// CTA primario: variant default + size lg + override className="bg-accent hover:bg-accent/90
+// text-accent-foreground" → twMerge colapsa bg-primary/text-primary-foreground/hover:bg-primary/90.
+const btnAccentLg = `${BTN} h-11 rounded-md px-8 bg-accent hover:bg-accent/90 text-accent-foreground`;
+// CTA secundario: variant outline + size lg (idéntico a btnOutlineLg de UseCasesHubPage).
+const btnOutlineLg = `${BTN} border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8`;
+
+// Card: base shadcn + overrides sin conflicto. CardContent con className="p-6" → twMerge
+// colapsa el default "p-6 pt-0" a "p-6".
+const CARD = 'rounded-lg border bg-card text-card-foreground shadow-sm';
+const cardHover = `${CARD} hover:border-accent/50 transition-colors`;
+
+// Badge hero: variant default + override className="mb-4 bg-accent/15 text-accent
+// border-accent/30" → twMerge colapsa border-transparent/bg-primary/text-primary-foreground;
+// hover:bg-primary/80 (variante hover, no conflictiva) se conserva EXACTO como en la SPA.
+const badgeHero = 'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mb-4 bg-accent/15 text-accent border-accent/30';
+
+// ── Derivados + JSON-LD — VERBATIM de PSeoCitiesHub.tsx (líneas 57-74) ──
+const canonicalUrl = `${SITE_URL}${hubPath()}`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'SEO Restaurantes por Ciudad', item: canonicalUrl },
+  ],
+};
+
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Recursos para Restaurantes por Ciudad',
+  description: 'Guías profesionales para abrir restaurante, licencia, software de gestión, escandallo y plan de negocio en 15 ciudades de España y LATAM.',
+  url: canonicalUrl,
+};
+---
+<BaseLayout
+  title="Recursos para Restaurantes por Ciudad: Abrir, Licencia, Software, Escandallo y Plan de Negocio"
+  description="Guías profesionales 2026 para restauradores en España y LATAM: cómo abrir restaurante, licencias, software de gestión, escandallo y plan de negocio. 15 ciudades con datos reales."
+  keywords="abrir restaurante por ciudad, licencia restaurante por ciudad, plan de negocio restaurante por ciudad, software gestión restaurante por ciudad, recursos restaurante España México Colombia Argentina Chile"
+  lang="es"
+  basePath={hubPath()}
+  locales={['es']}
+  ogImage={`${SITE_URL}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background text-foreground">
+    <Header lang="es" />
+
+    {/* Hero */}
+    <section class="relative pt-28 pb-16 px-4 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-background pointer-events-none"></div>
+      <div class="container mx-auto max-w-5xl relative">
+        <div class={badgeHero}>
+          15 ciudades · 5 recursos · Datos verificados 2026
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Recursos para Restaurantes por Ciudad
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground max-w-3xl">
+          Cómo abrir un restaurante, licencias, software de gestión, escandallo y plan de negocio.
+          Cifras reales por ciudad en España, México, Colombia, Argentina y Chile.
+        </p>
+      </div>
+    </section>
+
+    {/* Modifiers grid */}
+    <section class="py-12 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">5 Tipos de Recursos por Ciudad</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {PSEO_MODIFIERS.map((m) => {
+            const meta = MODIFIER_META[m];
+            return (
+              <div class={cardHover}>
+                <div class="p-6">
+                  <div class="flex items-center gap-3 text-accent mb-3">
+                    <Icon name={meta.iconName} class="h-5 w-5" />
+                    <h3 class="font-semibold">{meta.label}</h3>
+                  </div>
+                  <p class="text-sm text-muted-foreground mb-4">{meta.description}</p>
+                  <a
+                    href={cityPath(m, 'madrid')}
+                    class="text-sm text-accent font-medium inline-flex items-center gap-1 hover:underline"
+                  >
+                    Ver ejemplo (Madrid) <Icon name="ArrowRight" class="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    {/* Cities by country */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">15 Ciudades Cubiertas</h2>
+        <p class="text-lg text-muted-foreground mb-10">
+          Cada ciudad incluye datos verificados: inversión real, marco regulatorio, salarios sectoriales y mejores barrios.
+        </p>
+
+        {COUNTRY_GROUPS.map((group) => (
+          <div class="mb-10">
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+              <span>{group.emoji}</span> {group.country}
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {group.slugs.map((slug) => {
+                const city = PSEO_CITIES[slug];
+                if (!city) return null;
+                return (
+                  <div class={cardHover}>
+                    <div class="p-6">
+                      <div class="flex items-center gap-2 mb-3">
+                        <Icon name="MapPin" class="h-5 w-5 text-accent" />
+                        <h4 class="font-semibold text-lg">{city.displayName}</h4>
+                      </div>
+                      <p class="text-xs text-muted-foreground mb-2">Inversión total estimada</p>
+                      <p class="text-base font-medium mb-4">{city.cost.totalRange}</p>
+                      <div class="flex flex-wrap gap-1">
+                        {PSEO_MODIFIERS.map((m) => (
+                          <a
+                            href={cityPath(m, slug)}
+                            class="text-xs px-2 py-1 bg-muted hover:bg-accent/15 hover:text-accent rounded transition-colors"
+                          >
+                            {chipLabel(m)}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* CTA */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-4xl text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          ¿Buscas Plantillas y Software para tu Restaurante?
+        </h2>
+        <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          AI Chef Pro tiene +30 herramientas de IA específicas para hostelería + 26 productos digitales descargables.
+          Pruébalo gratis sin tarjeta.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/herramientas-ia-para-restaurantes" class={btnAccentLg}>
+            Probar AI Chef Pro Gratis <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+          </a>
+          <a href="/productos-digitales" class={btnOutlineLg}>Ver Catálogo de Productos</a>
+        </div>
+      </div>
+    </section>
+
+    <Footer lang="es" />
+    <WhatsAppFloatingButton lang="es" />
+  </div>
+</BaseLayout>

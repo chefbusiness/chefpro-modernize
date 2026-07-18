@@ -1,0 +1,14 @@
+---
+// pSEO Ciudad — modifier "licencia-restaurante" (ES-only). 15 rutas (1 por ciudad de
+// PSEO_CITIES). Paridad con App.tsx: <PSeoCityPage modifier="licencia-restaurante" />.
+// El BaseLayout + SEO + JSON-LD los monta PSeoCityPageContent.
+import PSeoCityPageContent from '../../components/pages/PSeoCityPageContent.astro';
+import { cityStaticPaths, type CityRouteProps } from '../../lib/pseo-cities';
+
+export async function getStaticPaths() {
+  return cityStaticPaths('licencia-restaurante');
+}
+
+const { city } = Astro.props as CityRouteProps;
+---
+<PSeoCityPageContent modifier="licencia-restaurante" city={city} />

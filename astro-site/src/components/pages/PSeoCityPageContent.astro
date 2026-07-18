@@ -1,0 +1,489 @@
+---
+// PSeoCityPageContent.astro — port 1:1 de src/pages/PSeoCityPage.tsx (la SPA es la spec).
+// Renderiza UNA página de ciudad del cluster pSEO ({modifier, city}) con TODAS las secciones
+// en su orden, textos desde las MISMAS fuentes (PSEO_CONTENT_ES + CityData vía fillTemplate)
+// y los 3 JSON-LD de la SPA (BreadcrumbList, Service, FAQPage) server-side.
+//
+// ES-only (paridad con PSeoCityPage.tsx, que hardcodea literales ES y pasa
+// disableAutoHreflang): BaseLayout monta lang="es" + locales={['es']} → hreflang es + x-default
+// y NADA más (patrón formacion-presencial.astro).
+//
+// Paridad de estilos:
+//  · shadcn Button/Card/Badge inlineados → clases FINALES equivalentes a lo que cn()/twMerge
+//    renderiza en la SPA (mismo criterio que CityResourcesStrip.astro del mismo cluster:
+//    la variante default `bg-primary…` se resuelve a favor del override accent).
+//  · Radix/JSX → HTML nativo; iconos lucide vía <Icon> inline (sin client:).
+//  · Los títulos de las secciones cost/regulation/salaries/neighborhoods/market/cross-sell son
+//    literales HARDCODEADOS en la SPA (NO content.sections) → se replican verbatim.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
+import Icon from '../Icon.astro';
+import { SITE } from '../../i18n/config';
+import {
+  PSEO_CITIES,
+  PSEO_CITY_SLUGS,
+  PSEO_MODIFIERS,
+  PSEO_CONTENT_ES,
+  fillTemplate,
+  cityPath,
+  hubPath,
+  type CityData,
+  type PSeoModifier,
+} from '../../lib/pseo-cities';
+import { getProductsByIds } from '../../../../src/data/products-catalog';
+
+interface Props { modifier: PSeoModifier; city: CityData }
+const { modifier, city } = Astro.props;
+
+const SITE_URL = SITE;
+
+// MODIFIER_LABEL — VERBATIM de PSeoCityPage.tsx (líneas 38-44).
+const MODIFIER_LABEL: Record<PSeoModifier, string> = {
+  'abrir-restaurante': 'Abrir restaurante',
+  'licencia-restaurante': 'Licencia restaurante',
+  'software-gestion-restaurante': 'Software gestión',
+  'escandallo-restaurante': 'Escandallo',
+  'plan-negocio-restaurante': 'Plan de negocio',
+};
+
+// ── Derivados (mismos cálculos que PSeoCityPage.tsx líneas 54-65) ──
+const content = PSEO_CONTENT_ES[modifier];
+const fill = (s: string) => fillTemplate(s, city);
+const otherCities = PSEO_CITY_SLUGS.filter((s) => s !== city.slug).slice(0, 6);
+const products = getProductsByIds(
+  [content.primaryProductSlug, 'kit-plan-financiero', 'pack-appcc', 'kit-escandallos'].filter(
+    (id, i, arr) => arr.indexOf(id) === i && id !== 'saas-trial',
+  ),
+  'es',
+);
+
+const canonicalPath = cityPath(modifier, city.slug); // /{modifier}/{ciudad}
+const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+
+// ── Schema.org JSON-LD — VERBATIM de PSeoCityPage.tsx (líneas 68-104) ──
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'SEO Restaurantes por Ciudad', item: `${SITE_URL}/seo-restaurantes-por-ciudad` },
+    { '@type': 'ListItem', position: 3, name: `${MODIFIER_LABEL[modifier]} ${city.displayName}`, item: canonicalUrl },
+  ],
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: fill(content.schemaServiceCategory),
+  name: fill(content.schemaServiceName),
+  provider: {
+    '@type': 'Organization',
+    name: 'AI Chef Pro',
+    url: SITE_URL,
+  },
+  areaServed: {
+    '@type': 'City',
+    name: city.displayName,
+    containedInPlace: { '@type': 'Country', name: city.countryName },
+  },
+  description: fill(content.metaDescription),
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({
+    '@type': 'Question',
+    name: fill(f.q),
+    acceptedAnswer: { '@type': 'Answer', text: fill(f.a) },
+  })),
+};
+
+// ── shadcn inlineado — clases FINALES (equivalentes a cn()/twMerge de la SPA) ──
+const BTN = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0';
+const btnAccentLg = `${BTN} h-11 rounded-md px-8 bg-accent hover:bg-accent/90 text-accent-foreground`;
+const btnOutlineLg = `${BTN} border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8`;
+const btnOutlineSm = `${BTN} border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3`;
+
+const BADGE = 'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2';
+const badgeHeroAccent = `${BADGE} hover:bg-primary/80 mb-4 bg-accent/15 text-accent border-accent/30`;
+const badgeOutline = `${BADGE} text-foreground`;
+const badgeCtaAccent = `${BADGE} border-transparent hover:bg-primary/80 mb-4 bg-accent text-accent-foreground`;
+
+const CARD = 'rounded-lg border bg-card text-card-foreground shadow-sm';
+// bg-card resuelto a favor de bg-accent/5 (twMerge) para la tarjeta de nota regulatoria.
+const CARD_ACCENT_TINT = 'rounded-lg border text-card-foreground shadow-sm mt-6 border-accent/30 bg-accent/5';
+---
+<BaseLayout
+  title={fill(content.metaTitle)}
+  description={fill(content.metaDescription)}
+  keywords={fill(content.keywords)}
+  lang="es"
+  basePath={canonicalPath}
+  locales={['es']}
+  ogImage={`${SITE_URL}/og-pseo-${modifier}.jpg`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background text-foreground">
+    <Header lang="es" />
+
+    {/* Hero */}
+    <section class="relative pt-28 pb-16 px-4 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-background pointer-events-none"></div>
+      <div class="container mx-auto max-w-5xl relative">
+        <div class={badgeHeroAccent}>
+          {content.heroBadge} · {city.displayName}, {city.countryName}
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          {fill(content.h1Template)}
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground max-w-3xl mb-8">
+          {fill(content.heroSubtitle)}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href={`/${content.primaryProductSlug}`} class={btnAccentLg}>
+            {content.primaryProductLabel} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+          </a>
+          <a href="/herramientas-ia-para-restaurantes" class={btnOutlineLg}>
+            Probar AI Chef Pro Gratis
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {/* Intro */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">{fill(content.introTitle)}</h2>
+        <p class="text-lg text-muted-foreground leading-relaxed">{fill(content.introBody)}</p>
+      </div>
+    </section>
+
+    {/* Cost Breakdown */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-5xl">
+        <div class="flex items-center gap-3 mb-2">
+          <Icon name="Calculator" class="h-7 w-7 text-accent" />
+          <div class={badgeOutline}>Datos verificados {city.countryName}</div>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          Inversión Total Real para Abrir un Restaurante en {city.displayName}
+        </h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Cifras de mercado verificadas {city.countryName} 2026. Rango refleja diferencias por barrio, tamaño del local y nivel de acabados.
+        </p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class={`${CARD} border-accent/30`}>
+            <div class="p-6">
+              <div class="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-2">
+                Inversión Total
+              </div>
+              <div class="text-3xl font-bold text-accent mb-3">{city.cost.totalRange}</div>
+              {city.cost.notes && (
+                <p class="text-sm text-muted-foreground">{city.cost.notes}</p>
+              )}
+            </div>
+          </div>
+          <div class={CARD}>
+            <div class="p-6 space-y-3">
+              <div class="flex justify-between items-center pb-2 border-b border-border/50 last:border-0 last:pb-0">
+                <span class="text-sm text-muted-foreground">Obra y reforma</span>
+                <span class="font-medium text-right">{city.cost.obra}</span>
+              </div>
+              <div class="flex justify-between items-center pb-2 border-b border-border/50 last:border-0 last:pb-0">
+                <span class="text-sm text-muted-foreground">Equipamiento (cocina + sala)</span>
+                <span class="font-medium text-right">{city.cost.equipamiento}</span>
+              </div>
+              <div class="flex justify-between items-center pb-2 border-b border-border/50 last:border-0 last:pb-0">
+                <span class="text-sm text-muted-foreground">Licencias y trámites</span>
+                <span class="font-medium text-right">{city.cost.licencias}</span>
+              </div>
+              <div class="flex justify-between items-center pb-2 border-b border-border/50 last:border-0 last:pb-0">
+                <span class="text-sm text-muted-foreground">Fianza + alquiler inicial</span>
+                <span class="font-medium text-right">{city.cost.fianzaAlquiler}</span>
+              </div>
+              <div class="flex justify-between items-center pb-2 border-b border-border/50 last:border-0 last:pb-0">
+                <span class="text-sm text-muted-foreground">Capital circulante 3-6m</span>
+                <span class="font-medium text-right">{city.cost.capitalCirculante}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Regulation */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <div class="flex items-center gap-3 mb-2">
+          <Icon name="ShieldCheck" class="h-7 w-7 text-accent" />
+          <div class={badgeOutline}>Marco regulatorio 2026</div>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          Licencias y Marco Regulatorio Específico de {city.displayName}
+        </h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Trámites obligatorios sector hostelería {city.countryName} con tiempos reales en {city.displayName}.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-accent mb-3">
+                <Icon name="ScrollText" class="h-5 w-5" />
+                <span class="font-semibold text-sm uppercase tracking-wide">Marco Normativo</span>
+              </div>
+              <p class="text-sm leading-relaxed">{city.regulation.framework}</p>
+            </div>
+          </div>
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-accent mb-3">
+                <Icon name="FileText" class="h-5 w-5" />
+                <span class="font-semibold text-sm uppercase tracking-wide">Tipo de Licencia</span>
+              </div>
+              <p class="text-sm leading-relaxed">{city.regulation.licenseType}</p>
+            </div>
+          </div>
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="flex items-center gap-2 text-accent mb-3">
+                <Icon name="TrendingUp" class="h-5 w-5" />
+                <span class="font-semibold text-sm uppercase tracking-wide">Tiempo de Trámite</span>
+              </div>
+              <p class="text-sm leading-relaxed">{city.regulation.tramitTime}</p>
+            </div>
+          </div>
+        </div>
+        {city.regulation.notes && (
+          <div class={CARD_ACCENT_TINT}>
+            <div class="p-6">
+              <div class="flex gap-3">
+                <Icon name="Sparkles" class="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                <p class="text-base">{city.regulation.notes}</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+
+    {/* Salaries */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-5xl">
+        <div class="flex items-center gap-3 mb-2">
+          <Icon name="Users" class="h-7 w-7 text-accent" />
+          <div class={badgeOutline}>Datos sectoriales</div>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          Salarios del Sector Hostelero en {city.displayName}
+        </h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Convenios y mercado real {city.displayName} 2026. Cifras brutas mensuales — calcula seguridad social aparte (~30% adicional sobre coste empresa).
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-2">Jefe de Cocina</div>
+              <div class="text-xl font-bold">{city.salaries.jefeCocina}</div>
+            </div>
+          </div>
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-2">Ayudante de Cocina</div>
+              <div class="text-xl font-bold">{city.salaries.ayudante}</div>
+            </div>
+          </div>
+          <div class={CARD}>
+            <div class="p-6">
+              <div class="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-2">Camarero</div>
+              <div class="text-xl font-bold">{city.salaries.camarero}</div>
+            </div>
+          </div>
+        </div>
+        {city.salaries.source && (
+          <p class="text-sm text-muted-foreground mt-6">Fuente: {city.salaries.source}</p>
+        )}
+      </div>
+    </section>
+
+    {/* Neighborhoods */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <div class="flex items-center gap-3 mb-2">
+          <Icon name="MapPin" class="h-7 w-7 text-accent" />
+          <div class={badgeOutline}>Análisis de zonas</div>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">
+          Mejores Barrios para Abrir un Restaurante en {city.displayName}
+        </h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Zonas con ticket medio del mercado y consideraciones de alquiler. Tu barrio ideal depende del concepto, no del prestigio.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {city.neighborhoods.map((n) => (
+            <div class={`${CARD} hover:border-accent/50 transition-colors`}>
+              <div class="p-6">
+                <div class="flex items-start gap-3 mb-2">
+                  <Icon name="Building2" class="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 class="font-semibold text-lg">{n.name}</h3>
+                    <div class="text-sm text-accent font-medium">Ticket medio {n.ticketMedio}</div>
+                  </div>
+                </div>
+                {n.notes && <p class="text-sm text-muted-foreground mt-3">{n.notes}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Market Notes */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-4xl">
+        <div class="flex items-center gap-3 mb-3">
+          <Icon name="TrendingUp" class="h-7 w-7 text-accent" />
+          <div class={badgeOutline}>Análisis de mercado 2026</div>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Tendencias del Mercado Gastronómico en {city.displayName}
+        </h2>
+        <p class="text-lg text-muted-foreground leading-relaxed">{city.marketNotes}</p>
+        {city.restaurantsCount && (
+          <div class={`${CARD} mt-6 border-accent/30`}>
+            <div class="p-4">
+              <div class="text-sm font-medium text-muted-foreground">Tamaño del mercado</div>
+              <div class="text-lg font-semibold">{city.restaurantsCount}</div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+
+    {/* Primary Product CTA */}
+    <section class="py-20 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <div class={`${CARD} border-accent/40 bg-gradient-to-br from-accent/10 to-background`}>
+          <div class="p-8 md:p-12">
+            <div class={badgeCtaAccent}>Producto Recomendado</div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{fill(content.primaryCtaTitle)}</h2>
+            <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+              {fill(content.primaryCtaBody)}
+            </p>
+            <a href={`/${content.primaryProductSlug}`} class={btnAccentLg}>
+              {content.primaryProductLabel} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Cross-sell products */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-3">Plantillas Profesionales que Acortan el Proceso</h2>
+        <p class="text-lg text-muted-foreground mb-8">
+          Productos del catálogo AI Chef Pro listos para tu restaurante en {city.displayName}.
+        </p>
+        <div class="grid md:grid-cols-3 gap-6">
+          {products.slice(0, 3).map((p) => (
+            <div class={`${CARD} hover:border-accent/50 transition-colors`}>
+              <div class="p-6">
+                <div class={`${badgeOutline} mb-3`}>{p.price}</div>
+                <h3 class="text-lg font-semibold mb-2">{p.name}</h3>
+                <p class="text-sm text-muted-foreground mb-4">{p.description}</p>
+                <a href={p.url} class={btnOutlineSm}>Ver detalle <Icon name="ArrowRight" class="ml-2 h-4 w-4" /></a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* SaaS CTA */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <div class={`${CARD} bg-gradient-to-br from-accent/15 via-background to-background border-accent/30`}>
+          <div class="p-8 md:p-12 text-center">
+            <Icon name="Sparkles" class="h-12 w-12 text-accent mx-auto mb-4" />
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{content.saasCtaTitle}</h2>
+            <p class="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">{content.saasCtaBody}</p>
+            <a href="/herramientas-ia-para-restaurantes" class={btnAccentLg}>
+              Probar AI Chef Pro Gratis <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+            </a>
+            <p class="text-xs text-muted-foreground mt-4">3.000 créditos gratis al mes · Sin tarjeta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* FAQ */}
+    <section class="py-16 px-4 bg-muted/30">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8">Preguntas Frecuentes</h2>
+        <div class="space-y-4">
+          {content.faqs.map((f) => (
+            <div class={CARD}>
+              <div class="p-6">
+                <h3 class="font-semibold text-lg mb-2 flex gap-2">
+                  <Icon name="CheckCircle" class="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                  {fill(f.q)}
+                </h3>
+                <p class="text-muted-foreground ml-7">{fill(f.a)}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Other cities + modifiers cross-link */}
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-5xl">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">
+          {MODIFIER_LABEL[modifier]} en Otras Ciudades
+        </h2>
+        <div class="flex flex-wrap gap-2 mb-10">
+          {otherCities.map((slug) => (
+            <a
+              href={cityPath(modifier, slug)}
+              class="px-4 py-2 bg-muted hover:bg-accent/15 hover:text-accent rounded-full text-sm font-medium transition-colors border border-border"
+            >
+              {PSEO_CITIES[slug].displayName}
+            </a>
+          ))}
+          <a
+            href={hubPath()}
+            class="px-4 py-2 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-sm font-medium transition-colors"
+          >
+            Ver todas las ciudades →
+          </a>
+        </div>
+
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">
+          Otros Recursos para Restaurantes en {city.displayName}
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          {PSEO_MODIFIERS.filter((m) => m !== modifier).map((m) => (
+            <a
+              href={cityPath(m, city.slug)}
+              class="px-4 py-2 bg-muted hover:bg-accent/15 hover:text-accent rounded-full text-sm font-medium transition-colors border border-border"
+            >
+              {MODIFIER_LABEL[m]} en {city.displayName}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <Footer lang="es" />
+    <WhatsAppFloatingButton lang="es" />
+  </div>
+</BaseLayout>
