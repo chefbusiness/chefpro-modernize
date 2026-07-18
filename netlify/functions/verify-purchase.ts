@@ -199,6 +199,125 @@ const PRODUCTS: Record<string, ProductConfig> = {
     emailBody: 'Tu acceso al <strong>Kit Plan Financiero para Restaurantes</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas financieras:',
     emailCta: 'Acceder a mis Plantillas',
   },
+  'kit-tareas-sushi-bar': {
+    accessPath: '/kit-tareas-sushi-bar-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Sushi Bar',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Sushi Bar</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos con protocolo anisakis APPCC:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'kit-tareas-asador': {
+    accessPath: '/kit-tareas-asador-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Asador / Parrilla y Josper',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Asador / Parrilla y Horno Josper</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'kit-tareas-marisqueria': {
+    accessPath: '/kit-tareas-marisqueria-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Marisquería con Vivero y APPCC',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Marisquería con Vivero y APPCC</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'kit-tareas-tapas-bar': {
+    accessPath: '/kit-tareas-tapas-bar-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Tapas Bar / Gastrobar',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Tapas Bar / Gastrobar</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'kit-tareas-food-truck': {
+    accessPath: '/kit-tareas-food-truck-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Food Truck',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Food Truck</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'kit-tareas-panaderia': {
+    accessPath: '/kit-tareas-panaderia-access',
+    emailSubject: 'Tu acceso al Kit de Tareas: Panadería / Obrador',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Panadería / Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 checklists operativos:',
+    emailCta: 'Acceder a mis Checklists',
+  },
+  'guia-panaderia-obrador': {
+    accessPath: '/guia-panaderia-obrador-access',
+    emailSubject: 'Tu acceso a la Guía: Panadería con Obrador',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso a la <strong>Guía Cómo Montar una Panadería con Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar la guía PDF + DOCX + 17 plantillas y checklists Excel + manual del obrador con recetario masa madre:',
+    emailCta: 'Acceder a mi Guía',
+  },
+  'plan-negocio-bar-restaurante': {
+    accessPath: '/plan-negocio-bar-restaurante-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Bar-Restaurante',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Bar-Restaurante</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura con 50+ trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-tapas-bar': {
+    accessPath: '/plan-negocio-tapas-bar-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Tapas Bar / Gastrobar',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Tapas Bar / Gastrobar</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX completo (10 secciones), el plan financiero Excel y el checklist de apertura con 63 trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-cafeteria': {
+    accessPath: '/plan-negocio-cafeteria-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Cafetería / Brunch',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Cafetería / Brunch</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel, el plan de negocio Word y el checklist de apertura con 65+ trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-panaderia': {
+    accessPath: '/plan-negocio-panaderia-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Panadería / Obrador',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Panadería / Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el plan financiero Excel con estacionalidad navideña, el plan de negocio Word y el checklist de apertura con 60+ trámites RGSEAA obrador:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-food-truck': {
+    accessPath: '/plan-negocio-food-truck-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Food Truck',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio: Food Truck</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar el documento DOCX completo (10 secciones), el plan financiero Excel y el checklist de apertura con 59 trámites incluyendo licencia de venta ambulante e ITV del vehículo adaptado:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-cocteleria-eventos': {
+    accessPath: '/plan-negocio-cocteleria-eventos-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Coctelería de Eventos',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Coctelería de Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 entregables: DOCX 10 secciones, Plan Financiero Excel con estacionalidad de eventos, Calculadora Pricing, plantilla de 96 proveedores, catálogo de equipamiento, carta de 15 cocktails, modelo de contrato, 10 experiencias temáticas y checklist de 71 trámites:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-parrillero-asador-eventos': {
+    accessPath: '/plan-negocio-parrillero-asador-eventos-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Parrillero / Asador para Eventos',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Parrillero / Asador para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing, plantilla de 96 proveedores, catálogo equipamiento, manual técnico parrillero, carta de 12 cortes, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck y checklist de apertura con anexo CCAA fuego al aire libre:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-negocio-paellero-eventos': {
+    accessPath: '/plan-negocio-paellero-eventos-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Paellero / Paella para Eventos',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Paellero / Paella para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing, plantilla de 88 proveedores DO Valencia + Calasparra, catálogo equipamiento, manual técnico paellero (fuego + socarrat), carta de 12 paellas, modelos de contrato B2C+B2B, 10 experiencias temáticas, guía de 8 sistemas + roadmap food truck arrocería y checklist de apertura con anexo CCAA fuego al aire libre y excepción Falles:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-chef-privado-showcooking-eventos': {
+    accessPath: '/plan-chef-privado-showcooking-eventos-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Chef Privado / Showcooking a Domicilio',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio &amp; Kit de Chef Privado / Showcooking a Domicilio</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C+B2B, Calculadora Pricing dual, plantilla de 96 proveedores premium (cuchillería japonesa, vajilla Pordamsa, AOVE DO, caviar Riofrío), catálogo equipamiento + cuchillería, manual técnico servicio domicilio APPCC móvil con 7 PCC, carta de 12 menús temáticos, modelos de contrato B2C+B2B con confidencialidad y MSA, 10 experiencias temáticas, guía sistemas Chef Privado vs Personal Chef vs Caterer y checklist de apertura con anexo regulación CCAA catering itinerante:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
+  'plan-catering-tematico-eventos': {
+    accessPath: '/plan-catering-tematico-eventos-access',
+    emailSubject: 'Tu acceso al Plan de Negocio: Catering & Kit Temático para Eventos',
+    emailTitle: '¡Gracias por tu compra!',
+    emailBody: 'Tu acceso al <strong>Plan de Negocio para Catering &amp; Kit Temático para Eventos</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 11 entregables: DOCX 60+ pp, Plan Financiero Excel con mix B2C 35 % + B2B 65 %, Calculadora Pricing multi-concepto, plantilla de 96 proveedores especializados en 12 cocinas del mundo (importadores asiáticos, latinos, italianos, BBQ texano, indios), catálogo equipamiento multi-cocina (cuchillería japonesa, horno leña, tandoor, smoker, wok), 12 conceptos pre-empaquetados, carta 12 menús cocinas del mundo, manual técnico APPCC multi-concepto, modelos contrato B2C + B2B corporate con MSA, guía especialización progresiva y checklist apertura con anexo regulación 17 CCAA catering itinerante:',
+    emailCta: 'Acceder a mi Plan de Negocio',
+  },
 };
 
 // ── Handler ─────────────────────────────────────────────────────
@@ -219,6 +338,11 @@ export const handler: Handler = async (event) => {
 
   try {
     const { checkoutSessionId, existingJwt, product } = JSON.parse(event.body || '{}');
+    // Reject an explicitly-provided but unknown product (avoid silent fallback to pro-prompts-ebook).
+    // Legacy callers that omit `product` (undefined/null) keep the pro-prompts-ebook fallback.
+    if (product != null && !PRODUCTS[product]) {
+      return { statusCode: 400, headers, body: JSON.stringify({ valid: false, error: 'unknown_product' }) };
+    }
     const productId = product && PRODUCTS[product] ? product : 'pro-prompts-ebook';
 
     // Case 1: Verify new Stripe checkout session

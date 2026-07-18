@@ -30,6 +30,23 @@ const PRODUCTS: Record<string, { accessPath: string; label: string }> = {
   'guia-restaurante-japones': { accessPath: '/guia-restaurante-japones-access', label: 'Guía Restaurante Japonés' },
   'guia-restaurante-nikkei': { accessPath: '/guia-restaurante-nikkei-access', label: 'Guía Restaurante Nikkei' },
   'mega-pack-tareas': { accessPath: '/mega-pack-tareas-access', label: 'Mega Pack Tareas' },
+  'kit-tareas-sushi-bar': { accessPath: '/kit-tareas-sushi-bar-access', label: 'Kit Tareas Sushi Bar' },
+  'kit-tareas-asador': { accessPath: '/kit-tareas-asador-access', label: 'Kit Tareas Asador' },
+  'kit-tareas-marisqueria': { accessPath: '/kit-tareas-marisqueria-access', label: 'Kit Tareas Marisquería' },
+  'kit-tareas-tapas-bar': { accessPath: '/kit-tareas-tapas-bar-access', label: 'Kit Tareas Tapas Bar / Gastrobar' },
+  'kit-tareas-food-truck': { accessPath: '/kit-tareas-food-truck-access', label: 'Kit Tareas Food Truck' },
+  'kit-tareas-panaderia': { accessPath: '/kit-tareas-panaderia-access', label: 'Kit Tareas Panadería' },
+  'guia-panaderia-obrador': { accessPath: '/guia-panaderia-obrador-access', label: 'Guía Panadería con Obrador' },
+  'plan-negocio-bar-restaurante': { accessPath: '/plan-negocio-bar-restaurante-access', label: 'Plan de Negocio Bar-Restaurante' },
+  'plan-negocio-tapas-bar': { accessPath: '/plan-negocio-tapas-bar-access', label: 'Plan de Negocio Tapas Bar / Gastrobar' },
+  'plan-negocio-cafeteria': { accessPath: '/plan-negocio-cafeteria-access', label: 'Plan de Negocio Cafetería / Brunch' },
+  'plan-negocio-panaderia': { accessPath: '/plan-negocio-panaderia-access', label: 'Plan de Negocio Panadería / Obrador' },
+  'plan-negocio-food-truck': { accessPath: '/plan-negocio-food-truck-access', label: 'Plan de Negocio Food Truck' },
+  'plan-negocio-cocteleria-eventos': { accessPath: '/plan-negocio-cocteleria-eventos-access', label: 'Plan de Negocio Coctelería de Eventos' },
+  'plan-negocio-parrillero-asador-eventos': { accessPath: '/plan-negocio-parrillero-asador-eventos-access', label: 'Plan de Negocio Parrillero / Asador para Eventos' },
+  'plan-negocio-paellero-eventos': { accessPath: '/plan-negocio-paellero-eventos-access', label: 'Plan de Negocio Paellero / Paella para Eventos' },
+  'plan-chef-privado-showcooking-eventos': { accessPath: '/plan-chef-privado-showcooking-eventos-access', label: 'Plan de Negocio Chef Privado / Showcooking a Domicilio' },
+  'plan-catering-tematico-eventos': { accessPath: '/plan-catering-tematico-eventos-access', label: 'Plan de Negocio para Catering & Kit Temático para Eventos' },
 };
 
 export const handler: Handler = async (event) => {
