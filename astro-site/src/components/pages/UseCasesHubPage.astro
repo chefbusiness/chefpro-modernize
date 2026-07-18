@@ -1,0 +1,394 @@
+---
+// UseCasesHubPage.astro — port 1:1 de src/pages/UseCasesHub.tsx (la SPA es la spec).
+// Hub principal de casos de uso por idioma (prop lang). Renderiza las dos pestañas
+// (Por Rol / Por Concepto) con TODAS las cards de ambos grids en el DOM (crawlables);
+// el switch de pestaña es un <script> vanilla mínimo (sin React, mismo criterio que Header).
+//
+// Paridad exacta con la SPA:
+//  · UI SOLO tiene es + en → `ui = UI[lang] || UI.es` (fr/de/it/pt/nl heredan el copy ES,
+//    IGUAL que la SPA). SEGMENTS (hub/role/concept/hubLabel) sí es nativo por idioma.
+//  · roles/concepts se filtran por hasNativeContent salvo en es (idéntico a la SPA):
+//    en fr/de/it/pt/nl los grids role/concept quedan vacíos (solo consultor está traducido).
+//  · content = uc.content[lang] || uc.content.es (mismo fallback).
+//  · Card title = content.h1.replace(ui.h1StripPrefix, '') — regex ES/EN verbatim.
+//  · shadcn Button/Card/Badge inlineados; iconos lucide vía <Icon> inline (sin client:).
+//
+// DESVIACIÓN ACEPTADA (mejora deliberada, coherente con BaseLayout + port de spokes):
+//  hreflang. La SPA emite hreflang AUTO roto para este hub (prefijo sustituido: /en/usos,
+//  x-default → home). BaseLayout lo corrige con alternates NATIVOS por idioma
+//  (hubAlternates(): /usos, /en/use-cases, /fr/cas-d-usage…) + x-default → es. Es el
+//  objetivo declarado de la migración (Fase 0) y lo mismo que ya hace UseCasePageContent.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
+import Icon from '../Icon.astro';
+import { t } from '../../i18n/translations';
+import { SITE, type Locale } from '../../i18n/config';
+import {
+  SEGMENTS,
+  getUseCasesByType,
+  hasNativeContent,
+  useCasePath,
+  hubPath,
+  hubAlternates,
+  type LangCode,
+} from '../../lib/use-cases';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+const SITE_URL = SITE;
+
+// getAppUrl(lang) — VERBATIM de useLanguage.ts.
+const APP_URL = ((l: Locale) => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+})(lang);
+
+// ── UI strings — COPIADO VERBATIM de UseCasesHub.tsx (líneas 49-89). SOLO es + en. ──
+const UI: Record<string, {
+  badge: string; h1: string; heroSubtitle: string; ctaPrimary: string; ctaSecondary: string;
+  ctaNote: string; tabRole: string; tabConcept: string; tabRoleDesc: string; tabConceptDesc: string;
+  cardCta: string; finalH2: string; finalBody: string; finalSecondary: string;
+  h1StripPrefix: RegExp; seoTitle: string; seoDescription: string; seoKeywords: string;
+}> = {
+  es: {
+    badge: 'Casos de uso',
+    h1: 'IA para Cada Rol y Cada Concepto de Hostelería',
+    heroSubtitle: 'Descubre cómo AI Chef Pro se adapta a tu perfil profesional y a tu concepto de negocio. Plantillas, agentes y guías diseñados para tu día a día.',
+    ctaPrimary: 'Empezar gratis',
+    ctaSecondary: 'Ver productos',
+    ctaNote: '3.000 créditos gratis al mes · Sin tarjeta',
+    tabRole: 'Por Rol Profesional',
+    tabConcept: 'Por Concepto de Negocio',
+    tabRoleDesc: 'Descubre cómo usar AI Chef Pro según tu rol profesional en el equipo o en el negocio.',
+    tabConceptDesc: 'Descubre cómo encaja AI Chef Pro en tu tipo concreto de negocio gastronómico.',
+    cardCta: 'Ver caso de uso',
+    finalH2: '¿No Ves Tu Caso? AI Chef Pro Se Adapta',
+    finalBody: 'Empieza gratis y descubre cómo encaja en tu día a día. Sin tarjeta, 3.000 créditos al mes para probar todas las herramientas.',
+    finalSecondary: 'Ver productos digitales',
+    h1StripPrefix: /^IA para /,
+    seoTitle: 'Casos de uso de AI Chef Pro: por rol profesional y concepto de negocio',
+    seoDescription: 'Descubre cómo usar AI Chef Pro según tu perfil profesional o tu concepto de hostelería: chef ejecutivo, propietario, gerente, pizzería, dark kitchen, catering, hotel, heladería y más.',
+    seoKeywords: 'casos de uso AI Chef Pro, IA hostelería por perfil, IA restaurante por concepto, software hostelería profesional',
+  },
+  en: {
+    badge: 'Use Cases',
+    h1: 'AI for Every Role and Every Hospitality Concept',
+    heroSubtitle: 'Discover how AI Chef Pro adapts to your professional profile and to your business concept. Templates, agents, and guides built for your day-to-day.',
+    ctaPrimary: 'Start free',
+    ctaSecondary: 'See products',
+    ctaNote: '3,000 free credits per month · No credit card',
+    tabRole: 'By Professional Role',
+    tabConcept: 'By Business Concept',
+    tabRoleDesc: 'See how AI Chef Pro fits your professional role on the team or in the business.',
+    tabConceptDesc: 'See how AI Chef Pro fits your specific type of hospitality business.',
+    cardCta: 'View use case',
+    finalH2: 'Don\'t See Your Case? AI Chef Pro Adapts',
+    finalBody: 'Start free and discover how it fits your day-to-day. No credit card. 3,000 credits per month to try every tool.',
+    finalSecondary: 'See digital products',
+    h1StripPrefix: /^AI for /,
+    seoTitle: 'AI Chef Pro Use Cases: by professional role and business concept',
+    seoDescription: 'See how to use AI Chef Pro by professional profile or hospitality concept: executive chef, owner, manager, pizzeria, dark kitchen, catering, hotel, ice cream shop, and more.',
+    seoKeywords: 'AI Chef Pro use cases, hospitality AI by profile, restaurant AI by concept, professional hospitality software',
+  },
+};
+
+// ── COLOR_THEMES — COPIADO VERBATIM de UseCasesHub.tsx (líneas 91-102). Solo bg + text. ──
+const COLOR_THEMES: Record<string, { bg: string; text: string }> = {
+  amber: { bg: 'bg-amber-500/10', text: 'text-amber-600' },
+  blue: { bg: 'bg-blue-500/10', text: 'text-blue-600' },
+  emerald: { bg: 'bg-emerald-500/10', text: 'text-emerald-600' },
+  rose: { bg: 'bg-rose-500/10', text: 'text-rose-600' },
+  purple: { bg: 'bg-purple-500/10', text: 'text-purple-600' },
+  orange: { bg: 'bg-orange-500/10', text: 'text-orange-600' },
+  indigo: { bg: 'bg-indigo-500/10', text: 'text-indigo-600' },
+  pink: { bg: 'bg-pink-500/10', text: 'text-pink-600' },
+  teal: { bg: 'bg-teal-500/10', text: 'text-teal-600' },
+  red: { bg: 'bg-red-500/10', text: 'text-red-600' },
+};
+
+// ── shadcn base (cva) inlineado — mismas constantes que UseCasePageContent.astro ──
+const BTN = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0';
+const btnGoldLg = `${BTN} bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 btn-gold`;
+const btnOutlineLg = `${BTN} border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8`;
+const BADGE = 'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2';
+const BADGE_DEFAULT = `${BADGE} border-transparent bg-primary text-primary-foreground hover:bg-primary/80`;
+const BADGE_SECONDARY = `${BADGE} border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80`;
+const CARD = 'rounded-lg border bg-card text-card-foreground shadow-sm';
+const CARD_HEADER = 'flex flex-col space-y-1.5 p-6';
+const CARD_TITLE = 'text-2xl font-semibold leading-none tracking-tight';
+const CARD_CONTENT = 'p-6 pt-0';
+
+// Tab buttons — variant default(+btn-gold)/outline como la SPA (activeTab controla el swap).
+const TAB_BTN_BASE = `${BTN} h-11 rounded-md px-8 w-full sm:w-auto`;
+const TAB_ACTIVE = 'bg-primary text-primary-foreground hover:bg-primary/90 btn-gold';
+const TAB_INACTIVE = 'border border-input bg-background hover:bg-accent hover:text-accent-foreground';
+
+// ── HeroSocialProof (inline) — getDynamicCount() VERBATIM (idéntico a UseCasePageContent) ──
+function getDynamicCount(): number {
+  const BASE_DATE = new Date('2026-02-12');
+  const BASE_COUNT = 48149;
+  const today = new Date();
+  const diffTime = today.getTime() - BASE_DATE.getTime();
+  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+  let total = BASE_COUNT;
+  for (let i = 1; i <= diffDays; i++) {
+    const seed = (i * 7 + 13) % 21;
+    total += 60 + seed;
+  }
+  return total;
+}
+const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+const socialAvatars = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// ── Derivados (mismos cálculos que UseCasesHub.tsx) ──
+const ui = UI[lang] || UI.es;
+const segs = SEGMENTS[lang] || SEGMENTS.es;
+const canonicalUrl = `${SITE_URL}${hubPath(lang)}`;
+const productsHref = lang === 'es' ? '/productos-digitales' : `/${lang}/productos-digitales`;
+
+// Solo cards con traducción real en el idioma (hasNativeContent); en es se muestran todas.
+const allRoles = getUseCasesByType('role');
+const allConcepts = getUseCasesByType('concept');
+const roles = lang === 'es' ? allRoles : allRoles.filter((uc) => hasNativeContent(uc.id, lang as LangCode));
+const concepts = lang === 'es' ? allConcepts : allConcepts.filter((uc) => hasNativeContent(uc.id, lang as LangCode));
+
+// pSEO cities (ES only) — label VERBATIM de UseCasesHub.tsx (líneas 259-266).
+const cityCrossLinkSlugs = ['madrid', 'barcelona', 'ciudad-de-mexico', 'bogota', 'medellin', 'buenos-aires', 'santiago'];
+const cityLabel = (slug: string) =>
+  slug === 'ciudad-de-mexico' ? 'CDMX' : slug === 'buenos-aires' ? 'Buenos Aires' : slug.charAt(0).toUpperCase() + slug.slice(1);
+
+// ── JSON-LD — breadcrumbSchema VERBATIM (2 ítems; el 2º SIN item, igual que la SPA) ──
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': `${canonicalUrl}#breadcrumb`,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: segs.hubLabel },
+  ],
+};
+---
+<BaseLayout
+  title={ui.seoTitle}
+  description={ui.seoDescription}
+  keywords={ui.seoKeywords}
+  lang={lang}
+  basePath={hubPath('es')}
+  alternates={hubAlternates()}
+  ogImage={`${SITE_URL}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background">
+    <Header lang={lang} />
+
+    <main>
+      {/* Hero */}
+      <section class="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/5 py-20 lg:py-28">
+        <div class="container mx-auto px-4">
+          <div class="mx-auto max-w-4xl text-center">
+            {/* HeroSocialProof */}
+            <div class="flex flex-col items-center gap-2 mb-4">
+              <div class="flex -space-x-3 justify-center">
+                {socialAvatars.map((i) => (
+                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-background w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-background">
+                    <img class="aspect-square h-full w-full" src={`/avatars/avatar-${i}.jpg`} alt={`Professional ${i}`} loading="lazy" />
+                  </span>
+                ))}
+              </div>
+              <div class="flex flex-col items-center gap-0.5">
+                <div class="flex items-center gap-0.5">
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`} />
+                  ))}
+                </div>
+                <span class="text-sm text-muted-foreground">
+                  <span class="font-bold text-foreground">{socialCount}</span>{' '}
+                  {t(lang, 'hero.social_proof_label')}
+                </span>
+              </div>
+            </div>
+
+            <div class={`${BADGE_DEFAULT} mb-6 text-sm px-4 py-2`}>{ui.badge}</div>
+            <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
+              {ui.h1}
+            </h1>
+            <p class="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-balance">
+              {ui.heroSubtitle}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnGoldLg}>
+                {ui.ctaPrimary} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+              </a>
+              <a href={productsHref} class={btnOutlineLg}>
+                {ui.ctaSecondary} <Icon name="ArrowRight" class="ml-2 h-4 w-4" />
+              </a>
+            </div>
+            <p class="text-sm text-muted-foreground mt-4">{ui.ctaNote}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tabs */}
+      <section class="py-12 border-b">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 mb-3 max-w-2xl mx-auto">
+            <button id="uc-tab-role" type="button" class={`${TAB_BTN_BASE} ${TAB_ACTIVE}`}>
+              <Icon name="Briefcase" class="mr-2 h-4 w-4 flex-shrink-0" />
+              <span class="truncate">{ui.tabRole}</span>
+              <span class={`${BADGE_SECONDARY} ml-2`}>{roles.length}</span>
+            </button>
+            <button id="uc-tab-concept" type="button" class={`${TAB_BTN_BASE} ${TAB_INACTIVE}`}>
+              <Icon name="Building2" class="mr-2 h-4 w-4 flex-shrink-0" />
+              <span class="truncate">{ui.tabConcept}</span>
+              <span class={`${BADGE_SECONDARY} ml-2`}>{concepts.length}</span>
+            </button>
+          </div>
+          <p id="uc-tab-desc" class="text-center text-sm text-muted-foreground px-4">
+            {ui.tabRoleDesc}
+          </p>
+        </div>
+      </section>
+
+      {/* Cards grid — ambos grids en el DOM; el concept arranca oculto (SEO: links presentes) */}
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div id="uc-grid-role" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {roles.map((uc) => {
+              const content = uc.content[lang] || uc.content.es;
+              const theme = COLOR_THEMES[uc.colorTheme] || COLOR_THEMES.amber;
+              return (
+                <a href={useCasePath(uc, lang)}>
+                  <div class={`${CARD} h-full border-2 hover:border-primary transition-all hover:shadow-xl`}>
+                    <div class={CARD_HEADER}>
+                      <div class={`w-14 h-14 ${theme.bg} rounded-xl flex items-center justify-center mb-3`}>
+                        <Icon name={uc.iconKey} class={`h-7 w-7 ${theme.text}`} />
+                      </div>
+                      <h3 class={`${CARD_TITLE} text-xl`}>{content.h1.replace(ui.h1StripPrefix, '')}</h3>
+                    </div>
+                    <div class={CARD_CONTENT}>
+                      <p class="text-sm text-muted-foreground mb-4">{content.heroTagline}</p>
+                      <div class="flex items-center text-primary text-sm font-semibold">
+                        {ui.cardCta} <Icon name="ArrowRight" class="ml-1 h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+          <div id="uc-grid-concept" class="grid hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {concepts.map((uc) => {
+              const content = uc.content[lang] || uc.content.es;
+              const theme = COLOR_THEMES[uc.colorTheme] || COLOR_THEMES.amber;
+              return (
+                <a href={useCasePath(uc, lang)}>
+                  <div class={`${CARD} h-full border-2 hover:border-primary transition-all hover:shadow-xl`}>
+                    <div class={CARD_HEADER}>
+                      <div class={`w-14 h-14 ${theme.bg} rounded-xl flex items-center justify-center mb-3`}>
+                        <Icon name={uc.iconKey} class={`h-7 w-7 ${theme.text}`} />
+                      </div>
+                      <h3 class={`${CARD_TITLE} text-xl`}>{content.h1.replace(ui.h1StripPrefix, '')}</h3>
+                    </div>
+                    <div class={CARD_CONTENT}>
+                      <p class="text-sm text-muted-foreground mb-4">{content.heroTagline}</p>
+                      <div class="flex items-center text-primary text-sm font-semibold">
+                        {ui.cardCta} <Icon name="ArrowRight" class="ml-1 h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* pSEO Cities cross-link (ES only) */}
+      {lang === 'es' && (
+        <section class="py-16 bg-muted/30">
+          <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-8">
+              <h2 class="text-2xl lg:text-3xl font-bold mb-3">
+                ¿Buscas Recursos por Ciudad?
+              </h2>
+              <p class="text-muted-foreground max-w-2xl mx-auto">
+                Costes reales, licencias específicas, salarios sectoriales y mejores barrios para 15 ciudades de España y LATAM.
+              </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              {cityCrossLinkSlugs.map((slug) => (
+                <a
+                  href={`/abrir-restaurante/${slug}`}
+                  class="px-4 py-2 bg-background hover:bg-accent/15 hover:text-accent rounded-full text-sm font-medium transition-colors border border-border"
+                >
+                  Abrir restaurante en {cityLabel(slug)}
+                </a>
+              ))}
+            </div>
+            <div class="text-center">
+              <a href="/seo-restaurantes-por-ciudad" class={btnOutlineLg}>
+                Ver todas las ciudades + 5 recursos <Icon name="ArrowRight" class="ml-2 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA */}
+      <section class="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/5">
+        <div class="container mx-auto px-4 text-center">
+          <Icon name="Sparkles" class="h-10 w-10 text-primary mx-auto mb-4" />
+          <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">
+            {ui.finalH2}
+          </h2>
+          <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            {ui.finalBody}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnGoldLg}>
+              {ui.ctaPrimary} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+            </a>
+            <a href={productsHref} class={btnOutlineLg}>{ui.finalSecondary}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer lang={lang} />
+    <WhatsAppFloatingButton lang={lang} />
+  </div>
+</BaseLayout>
+
+<script define:vars={{ roleDesc: ui.tabRoleDesc, conceptDesc: ui.tabConceptDesc }}>
+  // Switch de pestaña Por Rol / Por Concepto (sustituye el useState de la SPA).
+  const btnRole = document.getElementById('uc-tab-role');
+  const btnConcept = document.getElementById('uc-tab-concept');
+  const gridRole = document.getElementById('uc-grid-role');
+  const gridConcept = document.getElementById('uc-grid-concept');
+  const descEl = document.getElementById('uc-tab-desc');
+  const ACTIVE = ['bg-primary', 'text-primary-foreground', 'hover:bg-primary/90', 'btn-gold'];
+  const INACTIVE = ['border', 'border-input', 'bg-background', 'hover:bg-accent', 'hover:text-accent-foreground'];
+
+  function activate(tab) {
+    const roleActive = tab === 'role';
+    btnRole.classList.remove(...(roleActive ? INACTIVE : ACTIVE));
+    btnRole.classList.add(...(roleActive ? ACTIVE : INACTIVE));
+    btnConcept.classList.remove(...(roleActive ? ACTIVE : INACTIVE));
+    btnConcept.classList.add(...(roleActive ? INACTIVE : ACTIVE));
+    gridRole.classList.toggle('hidden', !roleActive);
+    gridConcept.classList.toggle('hidden', roleActive);
+    descEl.textContent = roleActive ? roleDesc : conceptDesc;
+  }
+
+  btnRole?.addEventListener('click', () => activate('role'));
+  btnConcept?.addEventListener('click', () => activate('concept'));
+</script>

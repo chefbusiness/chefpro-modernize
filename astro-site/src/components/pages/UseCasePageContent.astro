@@ -1,0 +1,795 @@
+---
+// UseCasePageContent.astro — port 1:1 de src/pages/UseCasePage.tsx (la SPA es la spec).
+// Renderiza UN spoke (useCase + lang) con TODAS las secciones en orden. Monta BaseLayout
+// con el SEO derivado de content.seo y emite en <slot name="head"> los 4 JSON-LD de página
+// + el preload de galería, EXACTAMENTE como el Helmet de la SPA.
+//
+// Paridad:
+//  · content = uc.content[lang] || uc.content.es   (mismo fallback que la SPA)
+//  · UI (strings de JSX) y COLOR_THEMES → copiados VERBATIM de UseCasePage.tsx.
+//  · SEGMENTS / CONSULTOR_HUB / rutas internas → lib/use-cases (mismos valores).
+//  · <LinkifyText> → linkifyHtml() (HTML string) inyectado con set:html.
+//  · shadcn Button/Card/Badge inlineados (clases base + overrides concatenados);
+//    Radix/JSX → HTML nativo; iconos lucide vía <Icon> inline (sin client:).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
+import Icon from '../Icon.astro';
+import AuthorityBackedBy from '../AuthorityBackedBy.astro';
+import ImageDisclaimerNote from '../ImageDisclaimerNote.astro';
+import { t } from '../../i18n/translations';
+import { SITE, type Locale } from '../../i18n/config';
+import {
+  SEGMENTS,
+  CONSULTOR_HUB,
+  getUseCasesByType,
+  useCasePath,
+  hubPath,
+  consultorHubPath,
+  alternatesFor,
+  type UseCase,
+} from '../../lib/use-cases';
+import { getProductsByIds } from '../../../../src/data/products-catalog';
+import { linkifyHtml } from '../../lib/linkify-use-case';
+
+interface Props { lang?: Locale; uc: UseCase }
+const { lang = 'es', uc } = Astro.props;
+
+const SITE_URL = SITE;
+
+// getAppUrl(lang) — VERBATIM de useLanguage.ts.
+const APP_URL = ((l: Locale) => {
+  if (l === 'en') return 'https://enapp.aichef.pro';
+  if (l === 'it') return 'https://itapp.aichef.pro';
+  if (l === 'fr') return 'https://frapp.aichef.pro';
+  if (l === 'de') return 'https://deapp.aichef.pro';
+  return 'https://app.aichef.pro';
+})(lang);
+
+// ── UI strings (rendered in JSX) — COPIADO VERBATIM de UseCasePage.tsx (líneas 72-254) ──
+const UI: Record<string, {
+  notFoundTitle: string; notFoundLink: string; ctaPrimary: string; ctaSeePlans: string;
+  ctaFreeUses: string; onboardingBadge: string; defaultAppsTitle: string; appsSubtitle: string;
+  seeAllAppsBtn: string; beforeAfterTitle: string; productsSubtitle: string; productCardCta: string;
+  seeAllProductsBtn: string; siblingHeadingRole: string; siblingHeadingConcept: string;
+  siblingHeadingTask: string; siblingHeadingConsultor: string; finalCtaSeeAllUseCases: string;
+  consultorHubCta: string; galleryAltSuffix: string; serviceTypeRole: string;
+  serviceTypeConcept: string; serviceTypeTask: string; serviceTypeConsultor: string;
+}> = {
+  es: {
+    notFoundTitle: 'Caso de uso no encontrado',
+    notFoundLink: 'Ver todos los casos de uso',
+    ctaPrimary: 'Empezar gratis',
+    ctaSeePlans: 'Ver planes',
+    ctaFreeUses: '3.000 créditos gratis al mes · Sin tarjeta',
+    onboardingBadge: 'Onboarding · ¿Quién Soy?',
+    defaultAppsTitle: 'Agentes IA especializados que vas a usar',
+    appsSubtitle: 'Agentes IA reales del catálogo de AI Chef Pro, organizados por categoría oficial de la plataforma.',
+    seeAllAppsBtn: 'Ver todos los agentes IA en la plataforma',
+    beforeAfterTitle: 'El Antes y el Después',
+    productsSubtitle: 'Plantillas, kits y guías diseñadas para este caso de uso. Listas para descargar y usar.',
+    productCardCta: 'Ver detalle',
+    seeAllProductsBtn: 'Ver todos los productos',
+    siblingHeadingRole: 'También Útil Para',
+    siblingHeadingConcept: 'Otros Conceptos Similares',
+    siblingHeadingTask: 'Otras Tareas Relacionadas',
+    siblingHeadingConsultor: 'Otros Agentes de Consultoría Gastro Pro',
+    finalCtaSeeAllUseCases: 'Ver todos los casos de uso',
+    consultorHubCta: 'Ver todos los agentes para consultores gastronómicos',
+    galleryAltSuffix: 'imagen %N de referencia generada con IA',
+    serviceTypeRole: 'Software de IA para hostelería por rol profesional',
+    serviceTypeConcept: 'Software de IA para hostelería por concepto de negocio',
+    serviceTypeTask: 'Software de IA para hostelería por tarea operativa',
+    serviceTypeConsultor: 'Software de IA para consultores y asesores gastronómicos independientes',
+  },
+  en: {
+    notFoundTitle: 'Use case not found',
+    notFoundLink: 'See all use cases',
+    ctaPrimary: 'Start free',
+    ctaSeePlans: 'See plans',
+    ctaFreeUses: '3,000 free credits per month · No credit card',
+    onboardingBadge: 'Onboarding · Who Am I?',
+    defaultAppsTitle: 'Specialist AI agents you’ll be using',
+    appsSubtitle: 'Real AI agents from the AI Chef Pro catalog, grouped by their official platform category.',
+    seeAllAppsBtn: 'See all AI agents on the platform',
+    beforeAfterTitle: 'Before & After',
+    productsSubtitle: 'Templates, kits and guides built for this use case. Ready to download and use.',
+    productCardCta: 'See details',
+    seeAllProductsBtn: 'See all products',
+    siblingHeadingRole: 'Also Useful For',
+    siblingHeadingConcept: 'Similar Concepts',
+    siblingHeadingTask: 'Related Tasks',
+    siblingHeadingConsultor: 'More Gastro Consultancy Pro Agents',
+    finalCtaSeeAllUseCases: 'See all use cases',
+    consultorHubCta: 'See all agents for restaurant consultants',
+    galleryAltSuffix: 'reference image %N generated with AI',
+    serviceTypeRole: 'AI software for hospitality by professional role',
+    serviceTypeConcept: 'AI software for hospitality by business concept',
+    serviceTypeTask: 'AI software for hospitality by operational task',
+    serviceTypeConsultor: 'AI software for independent gastronomic consultants and advisors',
+  },
+  fr: {
+    notFoundTitle: 'Cas d\'usage introuvable',
+    notFoundLink: 'Voir tous les cas d\'usage',
+    ctaPrimary: 'Commencer gratuitement',
+    ctaSeePlans: 'Voir les plans',
+    ctaFreeUses: '3 000 crédits gratuits/mois · Sans carte bancaire',
+    onboardingBadge: 'Onboarding · Qui Suis-Je ?',
+    defaultAppsTitle: 'Agents IA spécialisés que vous utiliserez',
+    appsSubtitle: 'Agents IA réels du catalogue AI Chef Pro, regroupés par catégorie officielle de la plateforme.',
+    seeAllAppsBtn: 'Voir tous les agents IA sur la plateforme',
+    beforeAfterTitle: 'L\'Avant et l\'Après',
+    productsSubtitle: 'Templates, kits et guides conçus pour ce cas d\'usage. Prêts à télécharger.',
+    productCardCta: 'Voir le détail',
+    seeAllProductsBtn: 'Voir tous les produits',
+    siblingHeadingRole: 'Également Utile Pour',
+    siblingHeadingConcept: 'Autres Concepts Similaires',
+    siblingHeadingTask: 'Autres Tâches Associées',
+    siblingHeadingConsultor: 'Autres Agents de Conseil Gastro Pro',
+    finalCtaSeeAllUseCases: 'Voir tous les cas d\'usage',
+    consultorHubCta: 'Voir tous les agents pour consultants en restauration',
+    galleryAltSuffix: 'image de référence %N générée par IA',
+    serviceTypeRole: 'Logiciel IA CHR par rôle professionnel',
+    serviceTypeConcept: 'Logiciel IA CHR par concept de business',
+    serviceTypeTask: 'Logiciel IA CHR par tâche opérationnelle',
+    serviceTypeConsultor: 'Logiciel IA pour consultants en restauration et experts métiers de bouche indépendants',
+  },
+  de: {
+    notFoundTitle: 'Anwendungsfall nicht gefunden',
+    notFoundLink: 'Alle Anwendungsfälle ansehen',
+    ctaPrimary: 'Kostenlos starten',
+    ctaSeePlans: 'Tarife ansehen',
+    ctaFreeUses: '3.000 kostenlose Credits/Monat · Keine Kreditkarte',
+    onboardingBadge: 'Onboarding · Wer Bin Ich?',
+    defaultAppsTitle: 'Spezialisierte KI-Agenten, die Sie nutzen werden',
+    appsSubtitle: 'Echte KI-Agenten aus dem AI Chef Pro Katalog, gruppiert nach offizieller Plattformkategorie.',
+    seeAllAppsBtn: 'Alle KI-Agenten auf der Plattform ansehen',
+    beforeAfterTitle: 'Vorher und Nachher',
+    productsSubtitle: 'Vorlagen, Kits und Leitfäden für diesen Anwendungsfall. Sofort herunterladbar.',
+    productCardCta: 'Details ansehen',
+    seeAllProductsBtn: 'Alle Produkte ansehen',
+    siblingHeadingRole: 'Auch Nützlich Für',
+    siblingHeadingConcept: 'Ähnliche Konzepte',
+    siblingHeadingTask: 'Verwandte Aufgaben',
+    siblingHeadingConsultor: 'Weitere Agenten von Gastro Beratung Pro',
+    finalCtaSeeAllUseCases: 'Alle Anwendungsfälle ansehen',
+    consultorHubCta: 'Alle Agenten für Gastronomieberater ansehen',
+    galleryAltSuffix: 'KI-generiertes Referenzbild %N',
+    serviceTypeRole: 'KI-Software für Gastgewerbe nach Berufsrolle',
+    serviceTypeConcept: 'KI-Software für Gastgewerbe nach Geschäftskonzept',
+    serviceTypeTask: 'KI-Software für Gastgewerbe nach operativer Aufgabe',
+    serviceTypeConsultor: 'KI-Software für unabhängige Gastronomieberater und Restaurantberater (BAFA-förderfähig)',
+  },
+  it: {
+    notFoundTitle: 'Caso d\'uso non trovato',
+    notFoundLink: 'Vedi tutti i casi d\'uso',
+    ctaPrimary: 'Inizia gratis',
+    ctaSeePlans: 'Vedi i piani',
+    ctaFreeUses: '3.000 crediti gratis/mese · Senza carta',
+    onboardingBadge: 'Onboarding · Chi Sono?',
+    defaultAppsTitle: 'Agenti IA specializzati che userai',
+    appsSubtitle: 'Agenti IA reali del catalogo AI Chef Pro, raggruppati per categoria ufficiale della piattaforma.',
+    seeAllAppsBtn: 'Vedi tutti gli agenti IA sulla piattaforma',
+    beforeAfterTitle: 'Il Prima e il Dopo',
+    productsSubtitle: 'Template, kit e guide pensati per questo caso d\'uso. Pronti per il download.',
+    productCardCta: 'Vedi dettaglio',
+    seeAllProductsBtn: 'Vedi tutti i prodotti',
+    siblingHeadingRole: 'Utile Anche Per',
+    siblingHeadingConcept: 'Altri Concetti Simili',
+    siblingHeadingTask: 'Altri Compiti Correlati',
+    siblingHeadingConsultor: 'Altri Agenti di Consulenza Gastro Pro',
+    finalCtaSeeAllUseCases: 'Vedi tutti i casi d\'uso',
+    consultorHubCta: 'Vedi tutti gli agenti per consulenti ristorazione',
+    galleryAltSuffix: 'immagine di riferimento %N generata con IA',
+    serviceTypeRole: 'Software IA per la ristorazione per ruolo professionale',
+    serviceTypeConcept: 'Software IA per la ristorazione per concetto di business',
+    serviceTypeTask: 'Software IA per la ristorazione per attività operativa',
+    serviceTypeConsultor: 'Software AI/IA per consulenti di ristorazione e advisor HORECA indipendenti',
+  },
+  pt: {
+    notFoundTitle: 'Caso de uso não encontrado',
+    notFoundLink: 'Ver todos os casos de uso',
+    ctaPrimary: 'Começar grátis',
+    ctaSeePlans: 'Ver planos',
+    ctaFreeUses: '3.000 créditos grátis/mês · Sem cartão',
+    onboardingBadge: 'Onboarding · Quem Sou?',
+    defaultAppsTitle: 'Agentes de IA especializados que você vai usar',
+    appsSubtitle: 'Agentes de IA reais do catálogo AI Chef Pro, agrupados por categoria oficial da plataforma.',
+    seeAllAppsBtn: 'Ver todos os agentes de IA na plataforma',
+    beforeAfterTitle: 'O Antes e o Depois',
+    productsSubtitle: 'Templates, kits e guias desenhados para este caso de uso. Prontos para download.',
+    productCardCta: 'Ver detalhe',
+    seeAllProductsBtn: 'Ver todos os produtos',
+    siblingHeadingRole: 'Também Útil Para',
+    siblingHeadingConcept: 'Outros Conceitos Similares',
+    siblingHeadingTask: 'Outras Tarefas Relacionadas',
+    siblingHeadingConsultor: 'Outros Agentes de Consultoria Gastro Pro',
+    finalCtaSeeAllUseCases: 'Ver todos os casos de uso',
+    consultorHubCta: 'Ver todos os agentes para consultores gastronômicos',
+    galleryAltSuffix: 'imagem de referência %N gerada com IA',
+    serviceTypeRole: 'Software de IA para restauração por função profissional',
+    serviceTypeConcept: 'Software de IA para restauração por conceito de negócio',
+    serviceTypeTask: 'Software de IA para restauração por tarefa operacional',
+    serviceTypeConsultor: 'Software de IA para consultores gastronômicos/gastronómicos e consultores de A&B independentes',
+  },
+  nl: {
+    notFoundTitle: 'Use case niet gevonden',
+    notFoundLink: 'Bekijk alle use cases',
+    ctaPrimary: 'Gratis starten',
+    ctaSeePlans: 'Bekijk de plannen',
+    ctaFreeUses: '3.000 gratis credits/maand · Geen creditcard',
+    onboardingBadge: 'Onboarding · Wie Ben Ik?',
+    defaultAppsTitle: 'Gespecialiseerde AI-agenten die je gaat gebruiken',
+    appsSubtitle: 'Echte AI-agenten uit de AI Chef Pro catalogus, gegroepeerd per officiële platformcategorie.',
+    seeAllAppsBtn: 'Bekijk alle AI-agenten op het platform',
+    beforeAfterTitle: 'Het Voor en Na',
+    productsSubtitle: 'Templates, kits en gidsen ontworpen voor deze use case. Klaar om te downloaden.',
+    productCardCta: 'Bekijk details',
+    seeAllProductsBtn: 'Bekijk alle producten',
+    siblingHeadingRole: 'Ook Nuttig Voor',
+    siblingHeadingConcept: 'Andere Vergelijkbare Concepten',
+    siblingHeadingTask: 'Andere Gerelateerde Taken',
+    siblingHeadingConsultor: 'Meer Agenten van Gastro Advies Pro',
+    finalCtaSeeAllUseCases: 'Bekijk alle use cases',
+    consultorHubCta: 'Bekijk alle agenten voor horeca-adviseurs',
+    galleryAltSuffix: 'referentieafbeelding %N gegenereerd met AI',
+    serviceTypeRole: 'AI-software voor horeca per professionele rol',
+    serviceTypeConcept: 'AI-software voor horeca per businessconcept',
+    serviceTypeTask: 'AI-software voor horeca per operationele taak',
+    serviceTypeConsultor: 'AI-software voor onafhankelijke horeca-adviseurs en restaurant consultants (NL en BE)',
+  },
+};
+
+// ── COLOR_THEMES — COPIADO VERBATIM de UseCasePage.tsx (líneas 256-267) ──
+const COLOR_THEMES: Record<string, { bg: string; text: string; border: string; gradient: string }> = {
+  amber: { bg: 'bg-amber-500/10', text: 'text-amber-600', border: 'border-amber-200', gradient: 'from-amber-500/10 via-background to-amber-500/5' },
+  blue: { bg: 'bg-blue-500/10', text: 'text-blue-600', border: 'border-blue-200', gradient: 'from-blue-500/10 via-background to-blue-500/5' },
+  emerald: { bg: 'bg-emerald-500/10', text: 'text-emerald-600', border: 'border-emerald-200', gradient: 'from-emerald-500/10 via-background to-emerald-500/5' },
+  rose: { bg: 'bg-rose-500/10', text: 'text-rose-600', border: 'border-rose-200', gradient: 'from-rose-500/10 via-background to-rose-500/5' },
+  purple: { bg: 'bg-purple-500/10', text: 'text-purple-600', border: 'border-purple-200', gradient: 'from-purple-500/10 via-background to-purple-500/5' },
+  orange: { bg: 'bg-orange-500/10', text: 'text-orange-600', border: 'border-orange-200', gradient: 'from-orange-500/10 via-background to-orange-500/5' },
+  indigo: { bg: 'bg-indigo-500/10', text: 'text-indigo-600', border: 'border-indigo-200', gradient: 'from-indigo-500/10 via-background to-indigo-500/5' },
+  pink: { bg: 'bg-pink-500/10', text: 'text-pink-600', border: 'border-pink-200', gradient: 'from-pink-500/10 via-background to-pink-500/5' },
+  teal: { bg: 'bg-teal-500/10', text: 'text-teal-600', border: 'border-teal-200', gradient: 'from-teal-500/10 via-background to-teal-500/5' },
+  red: { bg: 'bg-red-500/10', text: 'text-red-600', border: 'border-red-200', gradient: 'from-red-500/10 via-background to-red-500/5' },
+};
+
+// ── shadcn base (cva) inlineado — clases base + overrides concatenados (sin colapsar) ──
+const BTN = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0';
+const btnGoldLg = `${BTN} bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 btn-gold`;
+const btnOutlineLg = `${BTN} border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8`;
+const BADGE = 'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2';
+const BADGE_DEFAULT = `${BADGE} border-transparent bg-primary text-primary-foreground hover:bg-primary/80`;
+const BADGE_SECONDARY = `${BADGE} border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80`;
+const CARD = 'rounded-lg border bg-card text-card-foreground shadow-sm';
+const CARD_HEADER = 'flex flex-col space-y-1.5 p-6';
+const CARD_TITLE = 'text-2xl font-semibold leading-none tracking-tight';
+const CARD_CONTENT = 'p-6 pt-0';
+
+// ── HeroSocialProof (inline) — getDynamicCount() VERBATIM ──
+function getDynamicCount(): number {
+  const BASE_DATE = new Date('2026-02-12');
+  const BASE_COUNT = 48149;
+  const today = new Date();
+  const diffTime = today.getTime() - BASE_DATE.getTime();
+  const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+  let total = BASE_COUNT;
+  for (let i = 1; i <= diffDays; i++) {
+    const seed = (i * 7 + 13) % 21;
+    total += 60 + seed;
+  }
+  return total;
+}
+const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+const socialAvatars = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// ── Derivados (mismos cálculos que UseCasePage.tsx) ──
+const ui = UI[lang] || UI.es;
+const segs = SEGMENTS[lang] || SEGMENTS.es;
+const type = uc.type;
+const content = uc.content[lang] || uc.content.es;
+const theme = COLOR_THEMES[uc.colorTheme] || COLOR_THEMES.amber;
+const products = getProductsByIds(content.productIds, lang);
+
+const canonicalUrl = `${SITE_URL}${useCasePath(uc, lang)}`;
+const siblingUseCases = getUseCasesByType(type).filter((u) => u.id !== uc.id).slice(0, 3);
+const consultorHub = CONSULTOR_HUB[lang] || CONSULTOR_HUB.es;
+const consultorHubUrl = `${SITE_URL}${consultorHubPath(lang)}`;
+const hubUrl = `${SITE_URL}${hubPath(lang)}`;
+const productsHubHref = lang === 'es' ? '/productos-digitales' : `/${lang}/productos-digitales`;
+
+// ── JSON-LD (equivalentes a los <script> del Helmet en UseCasePage.tsx) ──
+const breadcrumbItems: { '@type': string; position: number; name: string; item?: string }[] = [
+  { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: SITE_URL },
+  { '@type': 'ListItem', position: 2, name: segs.hubLabel, item: hubUrl },
+];
+if (type === 'consultor') {
+  breadcrumbItems.push({ '@type': 'ListItem', position: 3, name: consultorHub.name, item: consultorHubUrl });
+  breadcrumbItems.push({ '@type': 'ListItem', position: 4, name: content.h1 });
+} else {
+  breadcrumbItems.push({ '@type': 'ListItem', position: 3, name: content.h1 });
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': `${canonicalUrl}#breadcrumb`,
+  itemListElement: breadcrumbItems,
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: content.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: content.h1,
+  description: content.seo.description,
+  provider: {
+    '@type': 'Organization',
+    name: 'AI Chef Pro',
+    url: SITE_URL,
+    logo: `${SITE_URL}/og-image.jpg`,
+  },
+  areaServed: ({
+    es: ['ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'UY', 'EU', 'LATAM'],
+    en: ['US', 'UK', 'CA', 'AU', 'IE', 'NZ', 'EU'],
+    fr: ['FR', 'BE', 'CH', 'LU', 'CA-QC', 'EU'],
+    de: ['DE', 'AT', 'CH', 'LI', 'EU'],
+    it: ['IT', 'CH', 'SM', 'VA', 'EU'],
+    pt: ['PT', 'BR', 'AO', 'MZ', 'EU'],
+    nl: ['NL', 'BE', 'SR', 'EU'],
+  } as Record<string, string[]>)[lang] || ['EU'],
+  serviceType: type === 'role' ? ui.serviceTypeRole : type === 'concept' ? ui.serviceTypeConcept : type === 'consultor' ? ui.serviceTypeConsultor : ui.serviceTypeTask,
+  audience: { '@type': 'Audience', audienceType: content.badge },
+  url: canonicalUrl,
+  image: content.seo.ogImage,
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'EUR',
+    lowPrice: '0',
+    highPrice: '950',
+    offerCount: '5',
+    availability: 'https://schema.org/InStock',
+  },
+};
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: content.seo.title,
+  description: content.seo.description,
+  url: canonicalUrl,
+  inLanguage: segs.locale,
+  isPartOf: { '@type': 'WebSite', name: 'AI Chef Pro', url: SITE_URL },
+  primaryImageOfPage: {
+    '@type': 'ImageObject',
+    url: content.galleryImages?.[0] ? `${SITE_URL}${content.galleryImages[0]}` : content.seo.ogImage,
+  },
+  breadcrumb: { '@id': `${canonicalUrl}#breadcrumb` },
+};
+
+const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'concept' ? ui.siblingHeadingConcept : type === 'consultor' ? ui.siblingHeadingConsultor : ui.siblingHeadingTask;
+---
+<BaseLayout
+  title={content.seo.title}
+  description={content.seo.description}
+  keywords={content.seo.keywords}
+  lang={lang}
+  basePath={useCasePath(uc, 'es')}
+  alternates={alternatesFor(uc)}
+  ogImage={content.seo.ogImage}
+>
+  <Fragment slot="head">
+    {content.galleryImages?.[0] && (
+      <link rel="preload" as="image" href={content.galleryImages[0]} fetchpriority="high" />
+    )}
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  </Fragment>
+
+  <div class="min-h-screen bg-background">
+    <Header lang={lang} />
+
+    <main>
+      {/* Hero */}
+      <section class={`relative overflow-hidden bg-gradient-to-br ${theme.gradient} py-20 lg:py-32`}>
+        <div class="container mx-auto px-4">
+          <div class="mx-auto max-w-4xl text-center">
+            {/* HeroSocialProof */}
+            <div class="flex flex-col items-center gap-2 mb-4">
+              <div class="flex -space-x-3 justify-center">
+                {socialAvatars.map((i) => (
+                  <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-background w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-background">
+                    <img class="aspect-square h-full w-full" src={`/avatars/avatar-${i}.jpg`} alt={`Professional ${i}`} loading="lazy" />
+                  </span>
+                ))}
+              </div>
+              <div class="flex flex-col items-center gap-0.5">
+                <div class="flex items-center gap-0.5">
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-accent text-accent' : 'fill-accent/50 text-accent'}`} />
+                  ))}
+                </div>
+                <span class="text-sm text-muted-foreground">
+                  <span class="font-bold text-foreground">{socialCount}</span>{' '}
+                  {t(lang, 'hero.social_proof_label')}
+                </span>
+              </div>
+            </div>
+
+            <div class={`${BADGE_DEFAULT} mb-6 text-sm px-4 py-2`}>{content.badge}</div>
+            <div class={`w-20 h-20 ${theme.bg} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
+              <Icon name={uc.iconKey} class={`h-10 w-10 ${theme.text}`} />
+            </div>
+            <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6 text-balance">
+              {content.h1}
+            </h1>
+            <p class="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto text-balance" set:html={linkifyHtml(content.heroSubtitle, APP_URL)} />
+            <p class={`text-lg font-semibold ${theme.text} mb-10`}>{content.heroTagline}</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnGoldLg}>
+                {ui.ctaPrimary} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+              </a>
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnOutlineLg}>
+                {ui.ctaSeePlans}
+              </a>
+            </div>
+            <p class="text-sm text-muted-foreground mt-4">{ui.ctaFreeUses}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Authority — solo Consultoría Gastro Pro */}
+      {type === 'consultor' && <AuthorityBackedBy lang={lang} />}
+
+      {/* Gallery — opcional */}
+      {content.galleryImages && content.galleryImages.length > 0 && (
+        <section class="py-20 bg-muted/30">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-10 max-w-3xl mx-auto">
+              {content.galleryTitle && <h2 class="text-3xl font-bold text-foreground mb-3">{content.galleryTitle}</h2>}
+              {content.gallerySubtitle && <p class="text-muted-foreground">{content.gallerySubtitle}</p>}
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+              {content.galleryImages.map((src, i) => (
+                <div class="relative aspect-[16/10] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-shadow group">
+                  <img
+                    src={src}
+                    alt={`${content.h1} — ${ui.galleryAltSuffix.replace('%N', String(i + 1))}`}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading={i < 3 ? 'eager' : 'lazy'}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <ImageDisclaimerNote variant="gallery" lang={lang} />
+        </section>
+      )}
+
+      {/* Personalization (¿Quién Soy?) — opcional */}
+      {content.personalizationTitle && content.personalizationBody && (
+        <section class={`py-16 bg-gradient-to-br ${theme.gradient} border-b`}>
+          <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+              <div class={`${CARD} border-2 ${theme.border} shadow-xl`}>
+                <div class={`${CARD_CONTENT} pt-10 pb-10 px-8 md:px-12`}>
+                  <div class="flex items-start gap-6">
+                    <div class={`hidden md:flex w-16 h-16 ${theme.bg} rounded-2xl items-center justify-center flex-shrink-0`}>
+                      <Icon name="MessageSquare" class={`h-8 w-8 ${theme.text}`} />
+                    </div>
+                    <div>
+                      <div class={`${BADGE_DEFAULT} mb-3 text-xs`}>{ui.onboardingBadge}</div>
+                      <h2 class="text-2xl md:text-3xl font-bold text-foreground mb-4 text-balance">{content.personalizationTitle}</h2>
+                      <p class="text-base md:text-lg text-muted-foreground leading-relaxed" set:html={linkifyHtml(content.personalizationBody, APP_URL)} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Métricas — opcional */}
+      {content.metrics && content.metrics.length > 0 && (
+        <section class="py-16 bg-gradient-to-r from-primary/90 to-primary">
+          <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto text-center">
+              {content.metrics.map((m) => (
+                <div>
+                  <div class="text-4xl md:text-5xl font-bold text-white mb-2">{m.value}</div>
+                  <div class="text-sm text-primary-foreground/80">{m.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Pains */}
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-foreground mb-4">{content.painsTitle}</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {content.pains.map((pain, i) => (
+              <div class={`${CARD} border-2 ${theme.border} shadow-md`}>
+                <div class={`${CARD_CONTENT} pt-6 flex items-start gap-3`}>
+                  <div class={`w-8 h-8 ${theme.bg} rounded-lg flex items-center justify-center flex-shrink-0`}>
+                    <span class={`font-bold ${theme.text}`}>{i + 1}</span>
+                  </div>
+                  <p class="text-foreground">{pain}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-foreground mb-4">{content.featuresTitle}</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {content.features.map((feature) => (
+              <div class={`${CARD} border-none shadow-lg hover:shadow-xl transition-shadow`}>
+                <div class={CARD_HEADER}>
+                  <div class={`w-14 h-14 ${theme.bg} rounded-xl flex items-center justify-center mb-4`}>
+                    <Icon name={feature.icon} class={`h-7 w-7 ${theme.text}`} />
+                  </div>
+                  <h3 class={`${CARD_TITLE} text-xl`} set:html={linkifyHtml(feature.title, APP_URL)} />
+                </div>
+                <div class={CARD_CONTENT}>
+                  <p class="text-muted-foreground" set:html={linkifyHtml(feature.description, APP_URL)} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Apps destacadas — opcional */}
+      {content.apps && content.apps.length > 0 && (
+        <section class="py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-12 max-w-3xl mx-auto">
+              <h2 class="text-3xl font-bold text-foreground mb-4">{content.appsTitle || ui.defaultAppsTitle}</h2>
+              <p class="text-muted-foreground">{ui.appsSubtitle}</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+              {content.apps.map((app) => (
+                <a href={APP_URL} target="_blank" rel="noopener noreferrer" class="block group">
+                  <div class={`${CARD} h-full border-l-4 ${theme.border} shadow-sm hover:shadow-lg hover:border-primary transition-all`} style="border-left-color: currentColor;">
+                    <div class={`${CARD_CONTENT} pt-5 pb-5`}>
+                      <div class="flex items-start justify-between gap-3 mb-2">
+                        <h3 class={`font-bold text-base leading-tight ${theme.text} group-hover:underline`}>{app.name}</h3>
+                        <Icon name="ArrowRight" class={`h-4 w-4 ${theme.text} flex-shrink-0 mt-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-transform`} />
+                      </div>
+                      <div class={`${BADGE_SECONDARY} text-xs mb-2`}>{app.category}</div>
+                      <p class="text-sm text-muted-foreground leading-snug" set:html={linkifyHtml(app.description, APP_URL)} />
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div class="text-center mt-10">
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnGoldLg}>
+                {ui.seeAllAppsBtn} <Icon name="ArrowRight" class="ml-2 h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Workflow */}
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-foreground mb-4">{content.workflowTitle}</h2>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-4">
+            {content.workflow.map((step, i) => (
+              <div class={`${CARD} border-l-4 shadow-sm`} style="border-left-color: currentColor;">
+                <div class={`${CARD_CONTENT} pt-6 flex items-start gap-4`}>
+                  <div class={`w-10 h-10 rounded-full ${theme.bg} flex items-center justify-center font-bold ${theme.text} flex-shrink-0`}>
+                    {i + 1}
+                  </div>
+                  <p class="text-foreground pt-1" set:html={linkifyHtml(step, APP_URL)} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Antes vs Después — opcional */}
+      {content.beforeAfter && (
+        <section class="py-20 bg-muted/30">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-12 max-w-3xl mx-auto">
+              <h2 class="text-3xl font-bold text-foreground mb-4">{ui.beforeAfterTitle}</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <div class={`${CARD} border-2 border-red-200 shadow-md`}>
+                <div class={CARD_HEADER}>
+                  <h3 class={`${CARD_TITLE} text-xl flex items-center gap-2 text-red-700`}>
+                    <Icon name="X" class="h-5 w-5" /> {content.beforeAfter.beforeTitle}
+                  </h3>
+                </div>
+                <div class={CARD_CONTENT}>
+                  <ul class="space-y-3">
+                    {content.beforeAfter.beforeItems.map((item) => (
+                      <li class="flex items-start gap-2 text-sm text-muted-foreground">
+                        <Icon name="X" class="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
+                        <span set:html={linkifyHtml(item, APP_URL)} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div class={`${CARD} border-2 border-emerald-200 shadow-md`}>
+                <div class={CARD_HEADER}>
+                  <h3 class={`${CARD_TITLE} text-xl flex items-center gap-2 text-emerald-700`}>
+                    <Icon name="Check" class="h-5 w-5" /> {content.beforeAfter.afterTitle}
+                  </h3>
+                </div>
+                <div class={CARD_CONTENT}>
+                  <ul class="space-y-3">
+                    {content.beforeAfter.afterItems.map((item) => (
+                      <li class="flex items-start gap-2 text-sm text-foreground">
+                        <Icon name="Check" class="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                        <span set:html={linkifyHtml(item, APP_URL)} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Productos recomendados */}
+      <section class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-foreground mb-4">{content.productsTitle}</h2>
+            <p class="text-muted-foreground">{ui.productsSubtitle}</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {products.map((p) => (
+              <a href={p.url} class="block">
+                <div class={`${CARD} h-full border-2 hover:border-primary transition-colors shadow-md hover:shadow-lg`}>
+                  <div class={CARD_HEADER}>
+                    <div class="flex justify-between items-start mb-2">
+                      <h3 class={`${CARD_TITLE} text-lg`}>{p.name}</h3>
+                      <div class={`${BADGE_SECONDARY} ml-2`}>{p.price}</div>
+                    </div>
+                  </div>
+                  <div class={CARD_CONTENT}>
+                    <p class="text-muted-foreground text-sm mb-4">{p.description}</p>
+                    <div class="flex items-center text-primary text-sm font-semibold">
+                      {ui.productCardCta} <Icon name="ArrowRight" class="ml-1 h-4 w-4" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div class="text-center mt-12">
+            <a href={productsHubHref} class={btnOutlineLg}>
+              {ui.seeAllProductsBtn} <Icon name="ArrowRight" class="ml-2 h-4 w-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonio */}
+      <section class="py-20">
+        <div class="container mx-auto px-4">
+          <div class={`${CARD} max-w-3xl mx-auto border-2 ${theme.border} shadow-xl`}>
+            <div class={`${CARD_CONTENT} pt-10 pb-10 text-center`}>
+              <Icon name="Sparkles" class={`h-10 w-10 ${theme.text} mx-auto mb-4`} />
+              <p class="text-xl text-foreground italic mb-6 text-balance">"{content.testimonialQuote}"</p>
+              <div>
+                <p class="font-bold text-foreground">{content.testimonialAuthor}</p>
+                <p class="text-sm text-muted-foreground">{content.testimonialRole}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-foreground mb-4">{content.faqTitle}</h2>
+          </div>
+          <div class="max-w-3xl mx-auto space-y-4">
+            {content.faqs.map((faq) => (
+              <div class={`${CARD} shadow-sm`}>
+                <div class={`${CARD_CONTENT} pt-6`}>
+                  <h3 class="font-bold text-lg text-foreground mb-2">{faq.q}</h3>
+                  <p class="text-muted-foreground" set:html={linkifyHtml(faq.a, APP_URL)} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Spokes hermanos */}
+      {siblingUseCases.length > 0 && (
+        <section class="py-20">
+          <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+              <h2 class="text-2xl font-bold text-foreground mb-2">{siblingHeading}</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {siblingUseCases.map((sib) => {
+                const sibContent = sib.content[lang] || sib.content.es;
+                const sibTheme = COLOR_THEMES[sib.colorTheme] || COLOR_THEMES.amber;
+                return (
+                  <a href={useCasePath(sib, lang)}>
+                    <div class={`${CARD} h-full hover:shadow-lg transition-shadow`}>
+                      <div class={CARD_HEADER}>
+                        <div class={`w-12 h-12 ${sibTheme.bg} rounded-xl flex items-center justify-center mb-3`}>
+                          <Icon name={sib.iconKey} class={`h-6 w-6 ${sibTheme.text}`} />
+                        </div>
+                        <h3 class={`${CARD_TITLE} text-lg`}>{sibContent.h1}</h3>
+                      </div>
+                      <div class={CARD_CONTENT}>
+                        <p class="text-sm text-muted-foreground">{sibContent.heroTagline}</p>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA final */}
+      <section class={`py-20 bg-gradient-to-br ${theme.gradient}`}>
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4 text-balance">{content.ctaTitle}</h2>
+          <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">{content.ctaSubtitle}</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href={APP_URL} target="_blank" rel="noopener noreferrer" class={btnGoldLg}>
+              {ui.ctaPrimary} <Icon name="ArrowRight" class="ml-2 h-5 w-5" />
+            </a>
+            {type === 'consultor' ? (
+              <a href={consultorHubPath(lang)} class={btnOutlineLg}>
+                <Icon name="Sparkles" class="mr-2 h-4 w-4" /> {ui.consultorHubCta}
+              </a>
+            ) : (
+              <a href={hubPath(lang)} class={btnOutlineLg}>
+                <Icon name="CheckCircle" class="mr-2 h-4 w-4" /> {ui.finalCtaSeeAllUseCases}
+              </a>
+            )}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer lang={lang} />
+    <WhatsAppFloatingButton lang={lang} />
+  </div>
+</BaseLayout>

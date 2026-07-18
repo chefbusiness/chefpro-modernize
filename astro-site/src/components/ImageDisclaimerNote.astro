@@ -1,0 +1,86 @@
+---
+// Port 1:1 de src/components/ImageDisclaimerNote.tsx (la SPA es la spec).
+// COPY es/en VERBATIM; fr/de/it/pt/nl caen a ES (misma política que el original,
+// que los declara {} y hace fallback a COPY.es en el render).
+import Icon from './Icon.astro';
+import type { Locale } from '../i18n/config';
+
+interface CopyShape {
+  galleryTitle: string; appsTitle: string; bodyPrefix: string; bodyIllustrate: string;
+  bodyMiddle: string; bodyDefinitive: string; bodySuffix: string;
+  point1Bold: string; point1Rest: string; point2Prefix: string; point2Bold: string; point2Suffix: string;
+}
+
+const COPY: Record<string, CopyShape> = {
+  es: {
+    galleryTitle: 'Sobre estas imágenes: son ilustrativas, no fotos finales del escandallo',
+    appsTitle: 'Cómo funciona la imagen en cada agente IA: es una referencia visual, no la foto final',
+    bodyPrefix: 'Cuando un agente IA genera una imagen, sirve para ',
+    bodyIllustrate: 'ilustrar la idea',
+    bodyMiddle: ' del plato, bebida, postre o pre-elaboración: te ayuda a contrastar volumen, textura, emplatado, vajilla y la matemática visual del concepto. La ',
+    bodyDefinitive: 'foto definitiva del escandallo o ficha técnica',
+    bodySuffix: ' es la que tú haces de tu plato real, ya emplatado en tu cocina.',
+    point1Bold: 'Todos los agentes IA de recetas y contenido creativo',
+    point1Rest: ' ofrecen al final del flujo generar una imagen con Nano Banana 2 (el agente IA dedicado a imágenes parte de cero con sus propios pasos). Puedes generar la primera y luego tantas variantes como quieras, incluidas pre-elaboraciones, no solo el plato final.',
+    point2Prefix: 'Después de generar una receta, escandallo o cualquier contenido, puedes ',
+    point2Bold: 'descargar el resultado en CSV, PDF o Word',
+    point2Suffix: ' e incorporar tu foto real cuando ejecutes el plato en cocina.',
+  },
+  en: {
+    galleryTitle: 'About these images: they are visual references, not the final hero photos',
+    appsTitle: 'How images work in each AI agent: a visual reference, not the final photo',
+    bodyPrefix: 'When an AI agent generates an image, it serves to ',
+    bodyIllustrate: 'illustrate the idea',
+    bodyMiddle: ' of the dish, drink, dessert or sub-prep: it helps you sense check volume, texture, plating, tableware and the visual math of the concept. The ',
+    bodyDefinitive: 'definitive photo of the recipe cost card or tech sheet',
+    bodySuffix: ' is the one you take of your real dish, plated in your own kitchen.',
+    point1Bold: 'Every recipe and creative-content AI agent',
+    point1Rest: ' offers an option at the end of the workflow to generate an image with Nano Banana 2 (the dedicated AI agent for images starts from scratch with its own steps). You can generate the first one and then as many variants as you need, including sub-preps — not just the final plate.',
+    point2Prefix: 'After generating a recipe, cost card or any content, you can ',
+    point2Bold: 'download the output as CSV, PDF or Word',
+    point2Suffix: ' and add your real photo when you cook the dish in service.',
+  },
+};
+
+interface Props { variant?: 'apps' | 'gallery'; lang?: Locale }
+const { variant = 'apps', lang = 'es' } = Astro.props;
+const c = (COPY[lang] && Object.keys(COPY[lang]).length > 0) ? COPY[lang] : COPY.es;
+---
+<div class="container mx-auto px-4 mt-10">
+  <div class="rounded-lg border bg-card text-card-foreground shadow-sm max-w-4xl mx-auto border-dashed bg-card">
+    <div class="p-6 pt-0 py-6 px-6 md:px-8">
+      <div class="flex items-start gap-3 mb-4">
+        <Icon name="Sparkles" class="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+        <div>
+          <h3 class="font-semibold text-foreground text-base mb-1">
+            {variant === 'gallery' ? c.galleryTitle : c.appsTitle}
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed">
+            {c.bodyPrefix}
+            <strong class="text-foreground">{c.bodyIllustrate}</strong>
+            {c.bodyMiddle}
+            <strong class="text-foreground">{c.bodyDefinitive}</strong>
+            {c.bodySuffix}
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pl-8">
+        <div class="flex items-start gap-2">
+          <Icon name="Camera" class="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+          <p class="text-xs text-muted-foreground leading-snug">
+            <strong class="text-foreground">{c.point1Bold}</strong>
+            {c.point1Rest}
+          </p>
+        </div>
+        <div class="flex items-start gap-2">
+          <Icon name="FileDown" class="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+          <p class="text-xs text-muted-foreground leading-snug">
+            {c.point2Prefix}
+            <strong class="text-foreground">{c.point2Bold}</strong>
+            {c.point2Suffix}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

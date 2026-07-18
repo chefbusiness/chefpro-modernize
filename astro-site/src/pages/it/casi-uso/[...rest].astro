@@ -1,0 +1,15 @@
+---
+// Catch-all de spokes + hub consultor (it). 62 rutas: 61 spokes + 1 hub consultor.
+// props.consultorHub discrimina qué componente renderizar (spokeStaticPaths emite ambos).
+import UseCasePageContent from '../../../components/pages/UseCasePageContent.astro';
+import ConsultoriaGastroProHubPage from '../../../components/pages/ConsultoriaGastroProHubPage.astro';
+import { spokeStaticPaths } from '../../../lib/use-cases';
+
+export async function getStaticPaths() {
+  return spokeStaticPaths('it');
+}
+
+const lang = 'it';
+const { uc, consultorHub } = Astro.props as { uc?: any; consultorHub?: boolean };
+---
+{consultorHub ? <ConsultoriaGastroProHubPage lang={lang} /> : <UseCasePageContent lang={lang} uc={uc} />}
