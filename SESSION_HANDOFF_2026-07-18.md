@@ -1,6 +1,12 @@
 # SESSION HANDOFF — 2026-07-18 (fin de día)
 
-**Día de 3 sesiones y 2 apagones térmicos. Resultado: Fase 1 COMPLETA + Fase 2 use cases COMPLETA (441/441 gates verdes). HEAD = `515fe09` + commit de docs.**
+**Día de 3 sesiones y 2 apagones térmicos. Resultado: Fase 1 COMPLETA + Fase 2 use cases COMPLETA (441/441 gates verdes) + Fase 3 pSEO ciudades COMPLETA (76/76 gates verdes). HEAD = `ce53e18` + commit de docs.**
+
+## 0. Fase 3 pSEO ciudades ✅ (añadida al cierre del día)
+
+- **76 URLs (15 ciudades × 5 modifiers + hub, SOLO ES)** en staging con gates 76/76: title/description/canonical/H1 + FAQPage+Service (ciudad), CollectionPage (hub), BreadcrumbList todas, hreflang=2 es+x-default. Anti-regresión de home/Fase 2 OK.
+- Commit `ce53e18`. Detalle completo en plan maestro §8.
+- ⚠️ Bug de datos **preexistente en la SPA** para decidir: el CTA del modifier `software-gestion-restaurante` apunta a `/saas-trial` (ruta muerta; post-cutover = 404 duro). Candidato: apuntar a `/herramientas-ia-para-restaurantes` en `pseo-cities-content.es.ts:218` (SPA + re-mirror).
 
 ---
 
@@ -36,12 +42,12 @@ Workflows secuenciales con **modelos explícitos** (porters/revisores/fixers = O
 
 ## 6. Próxima sesión — arranque directo
 
-**Fase 3 — pSEO 75 ciudades** (est. 1 sesión): 1 template data-driven. Referencia del cluster actual: `project_pseo-cities-restaurants.md` (75 ciudades LIVE en la SPA, cluster conectado con 5 puntos de entrada — replicar interenlazado). Mismo método que Fase 2: lib/getStaticPaths + template + revisor adversarial + gates contra el sitemap (76 URLs routables según memoria — verificar conteo exacto en sitemap antes de empezar).
+**Fase 4 — productos digitales (33 landings consolidadas + páginas de compra)**: ⚠️ **PARAR Y AVISAR A JOHN ANTES DE EMPEZAR — toca dinero/Stripe.** Preparación previa sin riesgo: leer `feedback_digital-products-non-negotiables.md` (LECTURA OBLIGATORIA), `reference_productos-digitales-live-y-stripe.md` y el checklist de los 2 bugs históricos (access gates 2026-04-29 + paths `get-download-urls.ts`). Criterio de aceptación Fase 4: los 33 checkouts apuntando a los MISMOS payment links (env vars) + QA de enlaces 33/33.
 
-Después: Fase 4 (productos digitales, 33 landings) — **parar y avisar a John antes** (toca dinero).
+Pendientes menores acumulados (cualquier sesión): finalBody DE hub consultor (SPA) · `/saas-trial` (datos pSEO) · 51 ogImages ES use cases · schemas globales site-wide en BaseLayout (slice de plataforma) · meta robots en cutover.
 
 **Directiva vigente**: ejecución AUTÓNOMA slice a slice (la SPA es la spec); parar solo en producto/copy nuevo, dinero (Fases 4-5) y cutover (Fase 7).
 
 ## Mensaje para retomar
 
-> Claude, retomamos la migración Astro de aichef.pro. Lee `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8) y `SESSION_HANDOFF_2026-07-18.md`. Fases 1 y 2 cerradas con gates verdes; arranca directo con la Fase 3 (pSEO 75 ciudades) en staging (site `dc777725-7e95-4336-876e-a5a9b568fe75`).
+> Claude, retomamos la migración Astro de aichef.pro. Lee `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8) y `SESSION_HANDOFF_2026-07-18.md`. Fases 1, 2 y 3 cerradas con gates verdes; lo siguiente es la Fase 4 (productos digitales — dinero: preséntame el plan y espera mi OK antes de tocar nada) en staging (site `dc777725-7e95-4336-876e-a5a9b568fe75`).
