@@ -1,0 +1,29 @@
+---
+// /plan-catering-tematico-eventos — LÍNEA PLANES (sub-línea B "eventos"). Thin wrapper: pasa el objeto
+// data al MISMO template PlanNegocioLandingPage (mismo template que bar-restaurante y cocteleria-eventos).
+//
+// SOLO ES: la SPA (PlanCateringTematicoEventos.tsx) hardcodea el Helmet en español y esta ruta NO tiene
+// variantes de idioma → locales={['es']}. Canonical: https://aichef.pro/plan-catering-tematico-eventos.
+// Meta robots se OMITE (desviación cross-cutting; se añade en el cutover). Build format 'file'.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PlanNegocioLandingPage from '../components/pages/PlanNegocioLandingPage.astro';
+import data from '../data/productos/planes/plan-catering-tematico-eventos';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
+// Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_PLAN_CATERING_TEMATICO || '#comprar';
+---
+
+<BaseLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={['es']}
+  ogImage={data.seo.ogImage}
+>
+  <PlanNegocioLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>
