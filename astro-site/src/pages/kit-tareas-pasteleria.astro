@@ -1,0 +1,30 @@
+---
+// /kit-tareas-pasteleria — LÍNEA TAREAS. Thin wrapper: pasa el objeto data al template
+// KitTareasLandingPage y el SEO a BaseLayout.
+//
+// SOLO ES: la SPA (KitTareasPasteleria.tsx) hardcodea el Helmet en español y esta ruta
+// NO tiene variantes de idioma → locales={['es']} (BaseLayout emite hreflang es + x-default
+// y nada más). Canonical: https://aichef.pro/kit-tareas-pasteleria. Meta robots se OMITE
+// (desviación cross-cutting; se añade en el cutover). Patrón = kit-tareas-asador.astro.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import KitTareasLandingPage from '../components/pages/KitTareasLandingPage.astro';
+import data from '../data/productos/tareas/kit-tareas-pasteleria';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
+// Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_TAREAS_PASTELERIA || '#comprar';
+---
+
+<BaseLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={['es']}
+  ogImage={data.seo.ogImage}
+>
+  <KitTareasLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>
