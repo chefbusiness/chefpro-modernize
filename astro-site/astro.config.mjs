@@ -9,6 +9,9 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://aichef.pro',
   trailingSlash: 'never',
+  // format 'file': en/index.astro → /en.html → Netlify sirve /en con 200 SIN barra final,
+  // igual que la SPA y el sitemap (D6). Con el default 'directory', /en devolvía 301 → /en/.
+  build: { format: 'file' },
   integrations: [react(), tailwind({ applyBaseStyles: false }), sitemap()],
   i18n: {
     defaultLocale: 'es',
