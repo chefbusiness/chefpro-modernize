@@ -1,41 +1,47 @@
-# SESSION HANDOFF — 2026-07-18
+# SESSION HANDOFF — 2026-07-18 (fin de día)
 
-**Sesión: migración Astro, Fase 1 slice 3 — home ×7 idiomas CERRADO con gates verdes.**
+**Día de 3 sesiones y 2 apagones térmicos. Resultado: Fase 1 COMPLETA + Fase 2 use cases COMPLETA (441/441 gates verdes). HEAD = `515fe09` + commit de docs.**
 
 ---
 
 ## 1. Qué se cerró hoy ✅
 
-- **Home en los 7 idiomas** en staging (commits `272db46` + `3abfbca`): 6 páginas nuevas `astro-site/src/pages/{en,fr,de,it,pt,nl}/index.astro` reutilizando los 22 componentes con prop `lang`; title/meta desde `pages.index.seo_*` de cada JSON (mismas claves que la SPA vía `SEOHead`).
-- **Auditoría adversarial i18n de los 23 componentes vs la SPA** (los .astro solo se habían revisado renderizando ES): salió casi limpia — el port de slice 2 ya usaba estructuras por idioma (`LMap` + `pick()`). 1 fix aplicado: el menú móvil usaba las etiquetas largas del desktop; la SPA tiene etiquetas cortas propias en móvil → `roleItemsMobile`/`conceptItemsMobile` verbatim de ModernHeader.tsx 581-585/599-604 (77 labels byte-parity, slugs intactos).
-- **HEAD = `3abfbca`** (más el commit de docs de esta sesión).
+1. **Slice 3 — home ×7 idiomas** (`272db46` + `3abfbca`): 6 index por idioma, auditoría i18n de 23 componentes, gotcha `build format 'file'`.
+2. **Slice 4 — /mentoria-online ×7 + /formacion-presencial** (`f8ab209` + `63e4ed6`): con esto **FASE 1 COMPLETA** (recordar: /precios, /sobre y /servicios NO existen en la SPA — error del plan original).
+3. **FASE 2 COMPLETA — cluster use cases 441 URLs ×7 idiomas** (`515fe09`, 451 files):
+   - `astro-site/src/lib/use-cases.ts` — SEGMENTS/CONSULTOR_HUB verbatim, `spokeStaticPaths` (62 paths/idioma), helpers de rutas y alternates.
+   - `UseCasePageContent.astro` (port 1:1 de `UseCasePage.tsx`, 835 líneas) + `UseCasesHubPage.astro` + `ConsultoriaGastroProHubPage.astro` + `Icon.astro` (50 lucide SVG inline).
+   - 7 wrappers hub + 7 catch-alls `[...rest].astro` — **páginas dinámicas** vía getStaticPaths, no 441 ficheros.
+   - 430 assets copiados y verificados con `diff -rq`.
 
-## 2. Gates verificados (curl UA Googlebot, staging)
+## 2. Gates Fase 2 verificados (curl UA Googlebot, staging)
 
-200+noindex ×7 · `<html lang>` ×7 · **title/meta description == `seo_*` del JSON byte-exactos** (en/fr/de/it/pt/nl; ES mantiene el hardcode aprobado en slices 1-2) · canonical `/{lang}` · hreflang×8 · 2 JSON-LD **localizados** (faq.q1 nativo dentro del FAQPage, verificado en/de/nl) · 5 textos nativos de secciones distintas server-side ×7 · bytes visibles: es 23.032 / en 19.376 / fr 24.073 / de 21.188 / it 20.781 / pt 21.216 / nl 20.515.
+**441/441 en 200** · title + meta description + **canonical exacto a producción** + H1 + **hreflang×8** en las 441 · **FAQPage en 434/434** spokes+consultor (los 7 hubs principales sin FAQ = paridad exacta, `UseCasesHub.tsx` no tiene FAQ) · muestra profunda por idioma (spoke + consultor de cada lang) OK.
 
-## 3. Gotcha técnico NUEVO (importante para TODAS las páginas futuras)
+## 3. Los 2 apagones térmicos y cómo se recuperó TODO
 
-**`build: { format: 'file' }` en `astro-site/astro.config.mjs`.** Con el default (`directory`), `en/index.astro` genera `en/index.html` y Netlify responde **301 `/en` → `/en/`** — rompe la paridad D6 (la SPA y el sitemap usan URLs SIN barra). Con `file` se genera `en.html`, `/en` responde 200 y `/en/` normaliza 301 → `/en`. Cualquier página anidada futura (`/mentoria-online`, spokes, pSEO) depende de este ajuste, ya aplicado.
+- **~13:18** — murió al lanzar los gates del slice 4 → recuperado de transcript JSONL, gates relanzados verdes, Fase 2 relanzada.
+- **~14:21** — murió el workflow de Fase 2 tras escribir los hubs (CPU 65 °C por renderers de Chrome, no por nuestro trabajo).
+- **Método (persistido en memoria `reference_recuperacion-apagon-termico-workflows.md`)**: `/private/tmp` se BORRA al reiniciar, pero en `~/.claude/projects/<proj>/` sobreviven los transcripts, y en `<sesión>/workflows/wf_*.json` está el **script completo** del workflow + en `subagents/workflows/<wf>/journal.jsonl` el **resultado real de cada agente**. Con eso se escribe un script de continuación (el `resumeFromRunId` es solo intra-sesión).
 
-## 4. Hallazgo de alcance — /precios NO existe (corrige el plan)
+## 4. Hallazgos BAJA pendientes (no bloquean)
 
-`/precios`, `/sobre` y `/servicios` **no existen en la SPA**: 0 rutas en `App.tsx`, 0 entradas en el sitemap; "Precios" del header enlaza al ancla `/#pricing` de la home. La Fase 1 los listaba por error. **Fase 1 restante real**: `/mentoria-online` (×idiomas, ruta `/:lang/mentoria-online`) y `/formacion-presencial` (solo ES + alias `/es/formacion-presencial`). Crear `/precios` sería URL/copy nuevo → decisión de producto, Fase 8 como muy pronto.
+1. **`finalBody` DE del hub consultor** dice "5 Anwendungen pro Monat" **en la SPA** (`ConsultoriaGastroProHub.tsx:202`, resto pre-créditos). Fix en la SPA y re-mirror al `.astro` — NUNCA editar solo la copia de Astro (rompería paridad).
+2. **51 ogImages ES** de role/concept/task apuntan a `og/use-cases/{slug}.jpg` que tampoco existen en la SPA (solo hay 51 EN + 11 consultor/hub). Generar con `generate-images` en Fase 6/8.
+3. Titles/contenido de spokes role/concept/task en FR/DE/IT/PT/NL salen en ES (fallback `content.es` — igual que la SPA; traducirlos = Fase 8, no es regresión).
 
-Anomalía menor anotada: `es.json` → `pages.index.seo_description` dice "marketing gastronomico" **sin tilde** (erosión previa); el hardcode ES de `index.astro` la lleva. Resolver junto a la auditoría de acentos pendiente (`feedback_acentos_tildes.md`).
+## 5. Método vigente + térmica
 
-## 5. Método (replicable) + térmica
-
-Workflow de **8 agentes en secuencia estricta**: 1 sonnet (creación mecánica de las 6 páginas) + 6 lotes Opus (auditoría adversarial i18n con evidencia fichero:línea en ambos lados y obligación de auto-refutar) + 1 fixer Opus (verifica antes de aplicar). Guardián istats en background (umbral 63 °C): **CPU 42-50 °C toda la sesión, cero alertas**. Builds solo en nube (Netlify auto-deploy); verificación por curl.
+Workflows secuenciales con **modelos explícitos** (porters/revisores/fixers = Opus, mecánica = Sonnet; Fable solo orquesta) + revisor adversarial con schema antes de cerrar cada pieza + gates curl (nunca builds locales ni Playwright). Vigilante istats en background, umbral 63 °C. El causante real del calor de hoy: **pestañas de Chrome** (renderer al 78% CPU).
 
 ## 6. Próxima sesión — arranque directo
 
-1. **`/mentoria-online` ×7 idiomas**: portar `src/pages/MentoriaOnline.tsx` a Astro (mismo método que la home: port → auditoría adversarial → fixer → gates). Verificar qué variantes de idioma están en el sitemap antes de crear páginas.
-2. **`/formacion-presencial`** (ES + alias `/es/formacion-presencial` — ojo: NO tiene variantes en otros idiomas en la SPA).
-3. Después: resto Fase 1 (legales/cookies/privacidad/terminos/sistema-creditos ×idiomas si están en sitemap) → Fase 2 use cases (gate anti-huérfanas + interenlazado).
+**Fase 3 — pSEO 75 ciudades** (est. 1 sesión): 1 template data-driven. Referencia del cluster actual: `project_pseo-cities-restaurants.md` (75 ciudades LIVE en la SPA, cluster conectado con 5 puntos de entrada — replicar interenlazado). Mismo método que Fase 2: lib/getStaticPaths + template + revisor adversarial + gates contra el sitemap (76 URLs routables según memoria — verificar conteo exacto en sitemap antes de empezar).
 
-**Directiva vigente**: ejecución AUTÓNOMA slice a slice (la SPA es la spec, gates los verifico yo); parar solo en producto/copy nuevo, dinero (Fases 4-5) y cutover (Fase 7). Regla térmica: istats siempre, secuencial, builds SOLO nube, sin Playwright.
+Después: Fase 4 (productos digitales, 33 landings) — **parar y avisar a John antes** (toca dinero).
+
+**Directiva vigente**: ejecución AUTÓNOMA slice a slice (la SPA es la spec); parar solo en producto/copy nuevo, dinero (Fases 4-5) y cutover (Fase 7).
 
 ## Mensaje para retomar
 
-> Claude, retomamos la migración Astro de aichef.pro. Lee `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8) y `SESSION_HANDOFF_2026-07-18.md`. Slice 3 (home ×7) cerrado y verificado; arranca directo con `/mentoria-online` ×7 idiomas en staging (site `dc777725-7e95-4336-876e-a5a9b568fe75`).
+> Claude, retomamos la migración Astro de aichef.pro. Lee `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8) y `SESSION_HANDOFF_2026-07-18.md`. Fases 1 y 2 cerradas con gates verdes; arranca directo con la Fase 3 (pSEO 75 ciudades) en staging (site `dc777725-7e95-4336-876e-a5a9b568fe75`).
