@@ -1,0 +1,1490 @@
+---
+// ProductosDigitalesHubPage.astro — port 1:1 de src/pages/ProductosDigitales.tsx (la SPA es la spec).
+// Hub /productos-digitales: página autónoma dark (NO usa Header/Footer del sitio; igual que
+// las landings de producto). El wrapper productos-digitales.astro la envuelve en BaseLayout
+// (locales={['es']}, canonical /productos-digitales, build format 'file').
+//
+// Paridad exacta con la SPA:
+//  · Las 44 tarjetas + 5 "próximamente" + los tags salen VERBATIM del array hardcodeado
+//    (orden EXACTO = decisión de negocio). Extraídas byte a byte de la SPA (icon: X → iconName: 'X').
+//  · Filtro por tag + paginación "Cargar más" (12/pág) = <script> vanilla. TODAS las cards
+//    están en el DOM server-side (crawlables); el JS solo muestra/oculta (mismo criterio que
+//    las tabs de UseCasesHub — DESVIACIÓN DELIBERADA y coherente: la SPA solo renderiza 12 al
+//    DOM vía slice; aquí las 44 quedan en el DOM para SEO, el JS reproduce el slice inicial).
+//  · Iconos lucide vía <Icon> inline (añadidos Filter + Shell a Icon.astro).
+//  · 3 JSON-LD ÍNTEGROS (CollectionPage + FAQPage + BreadcrumbList) — mismos que el Helmet SPA.
+//  · SaasDiscoveryBanner / LogoBadge(isHub=true, sin pill) / WhatsAppProductSupport = markup
+//    inline verbatim (mismos componentes shared de la SPA).
+//
+// DUDA DE PARIDAD RESUELTA (mojibake): el FAQPage JSON-LD de la SPA está mojibakeado en el
+// fuente (¿/acentos → "?"). Se reproduce VERBATIM (regla dura "byte a byte / JAMÁS redactar");
+// NO se "corrige" (sería redacción no declarada). El FAQ VISIBLE (<details>) sí lleva el copy
+// correcto en UTF-8 (la SPA lo emite bien vía \u escapes) — solo el espejo JSON-LD va roto.
+import Icon from '../Icon.astro';
+
+const ALL_TAGS = [
+  { id: 'all', label: 'Todos', iconName: 'Filter' },
+  // Formato
+  { id: 'excel', label: 'Excel' },
+  { id: 'pdf', label: 'PDF / eBook' },
+  { id: 'plantillas', label: 'Plantillas' },
+  { id: 'guias', label: 'Guías How-To' },
+  { id: 'manuales', label: 'Manuales' },
+  { id: 'plan-negocio', label: 'Planes de Negocio' },
+  // Temática
+  { id: 'costes', label: 'Control de Costes' },
+  { id: 'seguridad', label: 'Seguridad Alimentaria' },
+  { id: 'ia', label: 'Inteligencia Artificial' },
+  { id: 'gestion', label: 'Gestión' },
+  // Concepto de negocio
+  { id: 'restaurante', label: 'Restaurante' },
+  { id: 'cafeteria', label: 'Cafetería' },
+  { id: 'pizzeria', label: 'Pizzería' },
+  { id: 'hamburgueseria', label: 'Hamburguesería' },
+  { id: 'dark-kitchen', label: 'Dark Kitchen' },
+  { id: 'pasteleria', label: 'Pastelería' },
+  { id: 'panaderia', label: 'Panadería / Obrador' },
+  { id: 'bar', label: 'Bar / Cocktails' },
+  { id: 'catering', label: 'Catering' },
+  { id: 'hotel', label: 'Hotel' },
+  { id: 'heladeria', label: 'Heladería' },
+  { id: 'chocolateria', label: 'Chocolatería' },
+  { id: 'chef-privado', label: 'Chef Privado' },
+  { id: 'food-truck', label: 'Food Truck' },
+  { id: 'gastro-movil', label: 'Gastro Móvil / Eventos' },
+];
+
+const products = [
+  {
+    name: 'Mega Pack Tareas Recurrentes — 13 Kits',
+    slug: '/mega-pack-tareas',
+    price: '€89',
+    originalPrice: '€180',
+    discount: '-50%',
+    description: 'Los 13 kits de tareas recurrentes en un solo pack: restaurante, cafetería, pizzería, bar, hotel, catering, heladería, chocolatería y más. 151 plantillas Excel.',
+    features: [
+      '13 kits completos de tareas recurrentes',
+      '151 plantillas Excel editables',
+      'Apertura/cierre negocio + caja incluidos',
+      'Ahorra más del 45% vs compra individual',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: '🎁 Mega Pack',
+    badgeColor: 'bg-emerald-500 text-white ring-1 ring-emerald-300/50',
+    tags: ['excel', 'plantillas', 'bundle', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria', 'chef-privado'],
+    featured: true,
+  },
+  {
+    name: 'Gastro Pro Prompts eBook',
+    slug: '/pro-prompts-ebook',
+    price: '€9',
+    originalPrice: '€50',
+    discount: '-90%',
+    description: '300+ prompts de IA específicos para hostelería: cocina creativa, pastelería, catering, gestión, marketing y más.',
+    features: [
+      'eBook PDF + Dashboard exclusivo',
+      '300+ prompts organizados por categoría',
+      'Compatible con ChatGPT, Claude, Gemini',
+      'Actualizaciones de por vida',
+    ],
+    iconName: 'BookOpen',
+    image: '/ebook-mockup-bundle.webp',
+    badge: 'Bestseller',
+    badgeColor: 'bg-[#FFD700]/20 text-[#FFD700]',
+    tags: ['pdf', 'ia'],
+  },
+  {
+    name: 'Kit de Escandallos Pro',
+    slug: '/kit-escandallos',
+    price: '€12',
+    originalPrice: '€49',
+    discount: '-75%',
+    description: '11 plantillas Excel con fórmulas automáticas, mermas precargadas y calculadora de PVP. Controla tu food cost.',
+    features: [
+      '11 plantillas Excel profesionales',
+      'Mermas estándar precargadas',
+      'Calculadora PVP para 9 establecimientos',
+      'Dashboard Food Cost mensual',
+    ],
+    iconName: 'FileSpreadsheet',
+    image: '/kit-escandallos-hero.jpg',
+    badge: '🔥 Más Vendido',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Pack Plantillas APPCC',
+    slug: '/pack-appcc',
+    price: '€14',
+    originalPrice: '€29',
+    discount: '-52%',
+    description: '17 plantillas de seguridad alimentaria: temperaturas, limpieza, alérgenos, HACCP, trazabilidad. Obligatorio por ley.',
+    features: [
+      '17 plantillas con alertas automáticas',
+      'Matriz de los 14 alérgenos obligatorios',
+      'Análisis de Peligros HACCP pre-rellenado',
+      'Guía de inspección de Sanidad',
+    ],
+    iconName: 'ShieldCheck',
+    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
+    badge: '🔥 Más Vendido',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'plantillas', 'seguridad', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Kit Control de Inventario y Compras',
+    slug: '/kit-inventario',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 plantillas Excel con formulas automaticas: inventario diario, fichas proveedores, pedidos de compra, recepcion mercancias, control mermas, FIFO, analisis costes y 2 bonus.',
+    features: [
+      'Par levels con alertas de reposicion',
+      'Comparativa precios entre proveedores',
+      'Control mermas con dashboard',
+      'FIFO y caducidades con semaforo',
+    ],
+    iconName: 'Package',
+    image: '/lovable-uploads/ai-gallery/inventario-hero.jpg',
+    badge: '🔥 Más Vendido',
+    badgeColor: 'bg-orange-500 text-white ring-1 ring-orange-300/50',
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Gastronómico',
+    slug: '/guia-restaurante-gastronomico',
+    price: '€85',
+    originalPrice: '€220',
+    discount: '-61%',
+    description: 'Guía premium 80+ páginas: 22 capítulos, plan financiero, diseño cocina y sala, brigada, bodega, Michelin, Sol Repsol. 10 plantillas Excel + 8 checklists + business plan + manual de sala.',
+    features: [
+      'PDF + DOCX: 22 capítulos, 80+ páginas',
+      '10 plantillas Excel con fórmulas',
+      '8 checklists de apertura completos',
+      'Business plan modelo para bancos',
+    ],
+    iconName: 'Star',
+    image: '/lovable-uploads/ai-gallery/guia-dk-cocina.jpg',
+    badge: 'Premium',
+    badgeColor: 'bg-amber-500/20 text-amber-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Casual',
+    slug: '/guia-restaurante-casual',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 60+ páginas: 20 capítulos, plan financiero, diseño cocina y sala, delivery, terraza, menú del día. 9 plantillas Excel + 6 checklists + business plan + manual de operaciones.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 60+ páginas',
+      '9 plantillas Excel con fórmulas',
+      '6 checklists de apertura completos',
+      'Business plan modelo para bancos',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/guia-casual-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar una Panadería con Obrador',
+    slug: '/guia-panaderia-obrador',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 70+ páginas: 20 capítulos, recetario masa madre, salida de humos, APPCC obrador con alérgenos cruzados, plan fermentación 18-72h. 9 plantillas Excel + 6 checklists + business plan + manual del obrador.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 70+ páginas',
+      'Recetario maestro masa madre (baguette tradition, hogaza T80, croissant, panettone)',
+      'Checklist salida de humos + licencia clasificada (28 ítems)',
+      'Calculadora CAPEX + escandallos por tipo de harina',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/guia-panaderia-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'pasteleria', 'panaderia', 'obrador'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Mexicano',
+    slug: '/guia-restaurante-mexicano',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 60+ páginas: 20 capítulos, proveedores mexicanos en España, barra de tequilas y mezcales, escandallos de 15 recetas. 9 plantillas Excel + 6 checklists + business plan + manual de operaciones.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 60+ páginas',
+      '9 plantillas Excel con fórmulas',
+      '6 checklists de apertura completos',
+      'Escandallos de 15 recetas mexicanas',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-mexicano-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Peruano',
+    slug: '/guia-restaurante-peruano',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 60+ páginas: 20 capítulos, cevichería, cocina Nikkei, barra de piscos, proveedores peruanos en España. 9 plantillas Excel + 6 checklists + business plan + manual de operaciones.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 60+ páginas',
+      '9 plantillas Excel con fórmulas',
+      '6 checklists de apertura completos',
+      'Escandallos de 15 recetas peruanas',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-peruano-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Japonés',
+    slug: '/guia-restaurante-japones',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 60+ páginas: 20 capítulos, sushi-ya, ramen-ya, izakaya, omakase, robatayaki. Pescado sashimi-grade, normativa anisakis, barra de sake y whisky japonés. 9 plantillas Excel + 6 checklists + business plan + manual de operaciones.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 60+ páginas',
+      '9 plantillas Excel con fórmulas',
+      '6 checklists (incluye APPCC anisakis)',
+      'Escandallos de 15 recetas japonesas',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-japones-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar un Restaurante Nikkei',
+    slug: '/guia-restaurante-nikkei',
+    price: '€65',
+    originalPrice: '€180',
+    discount: '-64%',
+    description: 'Guía premium 60+ páginas: fusión peruano-japonesa. Tiraditos, ceviches nikkei, causas, makis acevichados, anticuchos, chaufa, omakase nikkei. Barra de pisco + sake. Proveedores de ají peruano y pescado sashimi-grade. 9 plantillas Excel + 6 checklists + business plan + manual de operaciones.',
+    features: [
+      'PDF + DOCX: 20 capítulos, 60+ páginas',
+      '9 plantillas Excel con fórmulas',
+      '6 checklists (APPCC anisakis + leche de tigre)',
+      'Escandallos de 15 recetas nikkei',
+    ],
+    iconName: 'Utensils',
+    image: '/lovable-uploads/ai-gallery/guia-restaurante-nikkei-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-green-500/20 text-green-400',
+    tags: ['pdf', 'guias', 'restaurante'],
+  },
+  {
+    name: 'Cómo Montar una Dark Kitchen',
+    slug: '/guia-dark-kitchen',
+    price: '€24',
+    originalPrice: '€90',
+    discount: '-73%',
+    description: 'Guía completa PDF + DOCX editable: 12 capítulos, requisitos legales, plan financiero, diseño de cocina, tecnología, marketing. 3 checklists Excel + calculadora de viabilidad.',
+    features: [
+      'PDF editorial + DOCX editable',
+      '12 capítulos de la idea al lanzamiento',
+      '3 checklists Excel + calculadora',
+      'Requisitos legales España 2026',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/guia-dk-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['pdf', 'guias', 'dark-kitchen'],
+  },
+  {
+    name: 'Kit Gestion de Personal y Turnos',
+    slug: '/kit-gestion-personal',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 plantillas Excel con formulas automaticas: cuadrante turnos, horas extra, coste laboral, onboarding, vacaciones, evaluacion de desempeno y directorio de plantilla.',
+    features: [
+      'Cuadrante turnos con alertas legales',
+      'Control horas extra automatico',
+      'Ratio coste laboral con semaforo',
+      'Onboarding, vacaciones y evaluacion',
+    ],
+    iconName: 'Users',
+    image: '/lovable-uploads/ai-gallery/tareas-gestion-personal-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Kit Plan Financiero para Restaurantes',
+    slug: '/kit-plan-financiero',
+    price: '€39',
+    originalPrice: '€190',
+    discount: '-79%',
+    description: '10 plantillas Excel con fórmulas encadenadas: plan financiero a 3 y 5 años, punto de equilibrio, cash flow, CAPEX, P&L mensual, ratios financieros e informe de viabilidad para bancos.',
+    features: [
+      'Plan previsional a 3 y 5 años',
+      'Break-even con 3 escenarios',
+      'Cash flow con alertas de liquidez',
+      'Informe viabilidad listo para bancos',
+    ],
+    iconName: 'TrendingUp',
+    image: '/lovable-uploads/ai-gallery/plan-financiero-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'cafeteria', 'pizzeria', 'hamburgueseria', 'dark-kitchen', 'pasteleria', 'bar', 'catering', 'hotel', 'heladeria', 'chocolateria'],
+  },
+  {
+    name: 'Plan de Negocio: Bar-Restaurante',
+    slug: '/plan-negocio-bar-restaurante',
+    price: '€35',
+    originalPrice: '€120',
+    discount: '-71%',
+    description: 'Plan de negocio completo para abrir un bar-restaurante en España: plan financiero Excel con P&L 3 años, inversión inicial detallada, punto de equilibrio, escenarios y checklist de apertura con 50+ trámites.',
+    features: [
+      'Plan financiero Excel con P&L 3 años',
+      'Inversión inicial detallada (~133K EUR ref.)',
+      'Punto de equilibrio + 3 escenarios',
+      'Checklist apertura: 50+ trámites España 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-bar-restaurante-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'restaurante', 'bar', 'plan-negocio'],
+  },
+  {
+    name: 'Plan de Negocio: Tapas Bar / Gastrobar',
+    slug: '/plan-negocio-tapas-bar',
+    price: '€35',
+    originalPrice: '€120',
+    discount: '-71%',
+    description: 'Plan de negocio completo para abrir un tapas bar o gastrobar en España: documento DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 63 trámites incluyendo licencia clasificada y salida de humos.',
+    features: [
+      'Documento DOCX 10 secciones profesionales',
+      'Plan financiero Excel con P&L 3 años',
+      'Inversión inicial detallada (~115K EUR ref.)',
+      'Checklist apertura: 63 trámites España 2026',
+    ],
+    iconName: 'Banknote',
+    image: '/lovable-uploads/ai-gallery/plan-tapas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'bar', 'tapas', 'gastrobar', 'plan-negocio'],
+  },
+  {
+    name: 'Plan de Negocio: Cafetería / Brunch',
+    slug: '/plan-negocio-cafeteria',
+    price: '€29',
+    originalPrice: '€99',
+    discount: '-71%',
+    description: 'Plan de negocio completo para abrir una cafetería o brunch en España: plan financiero Excel con P&L 3 años + plan de negocio Word + checklist apertura con 65+ trámites bajo licencia inocua y RGSEAA.',
+    features: [
+      'Plan financiero Excel con P&L 3 años',
+      'Inversión inicial detallada (~94K EUR ref.)',
+      'Break-even: 53 clientes/día con ticket €9,50',
+      'Checklist apertura: 65+ trámites España 2026',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/plan-cafeteria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'cafeteria', 'brunch', 'plan-negocio'],
+  },
+  {
+    name: 'Plan de Negocio: Panadería / Obrador',
+    slug: '/plan-negocio-panaderia',
+    price: '€35',
+    originalPrice: '€120',
+    discount: '-71%',
+    description: 'Plan de negocio completo para abrir una panadería u obrador artesanal en España: plan financiero Excel con P&L 3 años + estacionalidad navideña + checklist apertura con 60+ trámites incluyendo RGSEAA obrador.',
+    features: [
+      'Plan financiero Excel con estacionalidad navideña',
+      'Inversión inicial detallada (~88K EUR ref.)',
+      'Break-even por kilos diarios con ticket €4,50',
+      'Checklist 60+ trámites incluyendo RGSEAA obrador',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/plan-panaderia-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'panaderia', 'obrador', 'plan-negocio'],
+  },
+  {
+    name: 'Plan de Negocio: Food Truck',
+    slug: '/plan-negocio-food-truck',
+    price: '€29',
+    originalPrice: '€99',
+    discount: '-71%',
+    description: 'Plan de negocio completo para montar un food truck en España: DOCX 10 secciones + plan financiero Excel con P&L 3 años + checklist apertura con 59 trámites incluyendo licencia venta ambulante e ITV vehículo adaptado.',
+    features: [
+      'Documento DOCX 10 secciones profesionales',
+      'Plan financiero Excel con P&L 3 años',
+      'Inversión inicial detallada (45K-85K EUR)',
+      'Checklist 59 trámites + permisos por CCAA',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/plan-food-truck-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'costes', 'food-truck', 'street-food', 'plan-negocio', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Coctelería de Eventos / Barra Móvil',
+    slug: '/plan-negocio-cocteleria-eventos',
+    price: '€55',
+    originalPrice: '€165',
+    discount: '-67%',
+    description: 'Kit profesional completo para montar tu empresa de coctelería itinerante en España: DOCX 10 secciones + Plan Financiero Excel + Calculadora Pricing + 96 proveedores + Catálogo equipamiento + 15 cocktails + 10 experiencias + Modelo contrato + Checklist 71 trámites.',
+    features: [
+      '9 entregables profesionales (~6.600 palabras)',
+      'Plan Financiero Excel con estacionalidad eventos',
+      'Calculadora Pricing por evento + 96 proveedores',
+      '15 cocktails temáticos + 10 experiencias premium',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/plan-cocteleria-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'cocteleria', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Parrillero / Asador para Eventos',
+    slug: '/plan-negocio-parrillero-asador-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium itinerante de parrilla y asado para eventos en España. Modelo híbrido B2C+B2B: DOCX 60+ pp + Plan Financiero Excel + Calculadora Pricing dual + 96 proveedores + Catálogo equipamiento + Manual técnico + 12 cortes + Modelos contrato B2C/B2B + Guía 8 sistemas + roadmap food truck + Checklist 6 fases con anexo CCAA fuego.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Modelo híbrido B2C 40 % + B2B 60 % validado',
+      'Anexo legal CCAA fuego al aire libre (8 comunidades)',
+      'Manual técnico + 8 sistemas + roadmap food truck',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-parrillero-asador-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'parrillero', 'asador', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Paellero / Paella para Eventos',
+    slug: '/plan-negocio-paellero-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium itinerante de paella y arroces para eventos en España. Modelo híbrido B2C+B2B: DOCX 60+ pp + Plan Financiero Excel + Calculadora Pricing dual + 88 proveedores DO Valencia + Calasparra + Catálogo equipamiento Garcima/Vaello + Manual técnico del fuego + socarrat + Carta 12 paellas + Modelos contrato + Guía 8 sistemas + roadmap food truck arrocería + Checklist 6 fases con anexo CCAA fuego y excepción Falles.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Modelo híbrido B2C 35 % + B2B 65 % validado',
+      'Anexo legal CCAA fuego + excepción Falles (8 CCAA)',
+      'Manual técnico del fuego + socarrat + 12 paellas',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-paellero-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'paellero', 'paella', 'arroceria', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Plan de Negocio: Catering & Kit Temático para Eventos',
+    slug: '/plan-catering-tematico-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium de catering temático multi-concepto para eventos en España. El único kit que enseña a montar 5 conceptos en paralelo (sushi-bar, tacos al pastor, pizza al horno de leña, asado argentino, ceviche peruano, vegano premium, BBQ texano, tandoor indio…), no monoconcepto. 11 entregables: DOCX 60+ pp + Plan Financiero Excel mix B2C 35 % + B2B 65 % + Calculadora Pricing multi-concepto + 96 proveedores 12 cocinas del mundo + Catálogo equipamiento multi-cocina + 12 conceptos pre-empaquetados + Manual técnico APPCC multi-concepto + Modelos contrato B2C/B2B con MSA + Guía especialización progresiva + Checklist 6 fases con anexo 17 CCAA.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Único multi-concepto España (3-5 cocinas en paralelo)',
+      '96 proveedores · 12 cocinas del mundo validados',
+      '12 conceptos pre-empaquetados + ticket 70-130 €/pax',
+    ],
+    iconName: 'LayoutGrid',
+    image: '/lovable-uploads/ai-gallery/plan-catering-tematico-eventos-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'catering', 'eventos', 'gastro-movil', 'multi-concepto'],
+  },
+  {
+    name: 'Plan de Negocio: Chef Privado / Showcooking a Domicilio',
+    slug: '/plan-chef-privado-showcooking-eventos',
+    price: '€45',
+    originalPrice: '€165',
+    discount: '-73%',
+    description: 'Kit profesional para montar tu servicio premium de chef privado y showcooking a domicilio en España. Modelo dual B2C íntimo + B2B corporate: DOCX 60+ pp + Plan Financiero Excel + Calculadora Pricing dual + 96 proveedores premium (cuchillería japonesa, vajilla Pordamsa, AOVE DO, caviar Riofrío) + Catálogo equipamiento + Manual técnico APPCC móvil + Carta 12 menús temáticos + Modelos contrato B2C/B2B + Guía Chef Privado vs Personal Chef vs Caterer + Checklist 6 fases con anexo CCAA catering itinerante.',
+    features: [
+      '11 entregables (DOCX 60+ pp + Excel)',
+      'Modelo dual B2C 40 % + B2B 60 % validado',
+      'Anexo regulación CCAA catering itinerante (17 CCAA)',
+      'Manual técnico APPCC móvil 7 PCC + 12 menús temáticos',
+    ],
+    iconName: 'Flame',
+    image: '/lovable-uploads/ai-gallery/plan-chef-privado-showcooking-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['plan-negocio', 'chef-privado', 'showcooking', 'personal-chef', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Tareas Recurrentes: Restaurante Casual',
+    slug: '/kit-tareas',
+    price: '€14',
+    originalPrice: '€49',
+    discount: '-71%',
+    description: '9 checklists operativos pre-rellenados: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma.',
+    features: [
+      'Apertura y cierre por área',
+      'Tareas por perfil profesional',
+      'Checklist diario/semanal del manager',
+      'Eventos y festivos incluidos',
+    ],
+    iconName: 'ClipboardList',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante'],
+  },
+  {
+    name: 'Tareas Recurrentes: Cafetería / Brunch',
+    slug: '/kit-tareas-cafeteria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '463 tareas + inventarios con fórmulas: apertura/cierre, barista, vitrina pastelería, brunch, terraza. Imprime, delega y firma.',
+    features: [
+      'Inventario diario de barra con alertas',
+      'Tareas específicas de barista',
+      'Control de vitrina y pastelería',
+      'Brunch dominical y eventos',
+    ],
+    iconName: 'Coffee',
+    image: '/lovable-uploads/ai-gallery/tareas-cafeteria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'cafeteria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Pizzería',
+    slug: '/kit-tareas-pizzeria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '330 tareas + inventario: horno de leña/piedra, masa napolitana, línea de montaje, delivery. Imprime, delega y firma.',
+    features: [
+      'Control de horno y temperatura',
+      'Línea de montaje pizza',
+      'Gestión de delivery y packaging',
+      'Masa: fermentación y estirado',
+    ],
+    iconName: 'Pizza',
+    image: '/lovable-uploads/ai-gallery/tareas-pizzeria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'pizzeria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Hamburguesería',
+    slug: '/kit-tareas-hamburgueseria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '302 tareas pre-rellenadas: plancha/grill, smash burgers, freidora, línea de montaje, delivery y packaging. Imprime, delega y firma.',
+    features: [
+      'Control de plancha y punto de carne',
+      'Smash burger y técnica de grill',
+      'Freidora: test polares, filtrado, temperatura',
+      'Delivery y packaging burger',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-burger-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'hamburgueseria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Dark Kitchen',
+    slug: '/kit-tareas-dark-kitchen',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '293 tareas pre-rellenadas: estaciones produccion multi-marca, empaquetado, plataformas (Glovo, Uber Eats, Just Eat), riders y expedicion. Imprime, delega y firma.',
+    features: [
+      'Multi-marca / ghost kitchen',
+      'Gestion de tablets y plataformas',
+      'Packaging diferenciado por marca',
+      'Coordinacion de riders y expedicion',
+    ],
+    iconName: 'Warehouse',
+    image: '/lovable-uploads/ai-gallery/tareas-dk-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'dark-kitchen'],
+  },
+  {
+    name: 'Tareas Recurrentes: Pastelería / Obrador',
+    slug: '/kit-tareas-pasteleria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para pastelería y obrador: producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos. Imprime, delega y firma.',
+    features: [
+      'Producción artesanal completa',
+      'Masas, fermentación, cremas, decoración',
+      'Eventos: Navidad, Reyes, San Valentín',
+      'Perfiles: jefe pastelero, oficial, ayudante',
+    ],
+    iconName: 'Croissant',
+    image: '/lovable-uploads/ai-gallery/tareas-pasteleria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'pasteleria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Bar / Cocktails',
+    slug: '/kit-tareas-bar',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para bar y cocktail bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma.',
+    features: [
+      'Coctelería clásica y contemporánea',
+      'Cerveza de grifo, vinos, café',
+      'Eventos: Nochevieja, Halloween, catas',
+      'Perfiles: head bartender, barback',
+    ],
+    iconName: 'Wine',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'bar'],
+  },
+  {
+    name: 'Tareas Recurrentes: Catering / Eventos',
+    slug: '/kit-tareas-catering',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para empresas de catering: producción off-site, transporte, montaje, servicio, desmontaje y post-evento. Bodas, corporativos, cocktails.',
+    features: [
+      'Producción off-site y empaquetado',
+      'Transporte y cadena de frío',
+      'Bodas, corporativos, cocktails, outdoor',
+      'Perfiles: chef evento, maître, camarero',
+    ],
+    iconName: 'Tent',
+    image: '/lovable-uploads/ai-gallery/tareas-catering-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'catering', 'gastro-movil'],
+  },
+  {
+    name: 'Tareas Recurrentes: Hotel Completo',
+    slug: '/kit-tareas-hotel',
+    price: '€18,50',
+    originalPrice: '€95',
+    discount: '-81%',
+    description: '46 checklists operativos en 15 plantillas para 11 departamentos: F&B, recepción, housekeeping, piscina, terraza, mantenimiento, administración y spa.',
+    features: [
+      'F&B: 6 outlets completos',
+      'Recepción, housekeeping, spa',
+      'Piscina, terraza, mantenimiento',
+      'Administración y revenue',
+    ],
+    iconName: 'Building',
+    image: '/lovable-uploads/ai-gallery/tareas-hotel-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'hotel'],
+  },
+  {
+    name: 'Tareas Recurrentes: Heladería Artesanal',
+    slug: '/kit-tareas-heladeria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para heladería artesanal: producción (pasteurización, mantecación), servicio, gestión y temporada.',
+    features: [
+      'Producción: pasteurización y mantecación',
+      'Vitrina, toppings y servicio mostrador',
+      'Perfiles: heladero, dependiente, encargado',
+      'Temporada alta/baja + catering eventos',
+    ],
+    iconName: 'IceCream',
+    image: '/lovable-uploads/ai-gallery/tareas-heladeria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'heladeria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Chocolatería / Obrador',
+    slug: '/kit-tareas-chocolateria',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '9 checklists operativos pre-rellenados para chocolatería artesanal: producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada.',
+    features: [
+      'Producción: templado, moldeado y bombones',
+      'Vitrina, packaging y servicio mostrador',
+      'Perfiles: chocolatero, dependiente, encargado',
+      'Temporada: Navidad, San Valentín, Pascua',
+    ],
+    iconName: 'CakeSlice',
+    image: '/lovable-uploads/ai-gallery/tareas-chocolateria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'chocolateria'],
+  },
+  {
+    name: 'Tareas Recurrentes: Restaurante Creativo / De Autor',
+    slug: '/kit-tareas-restaurante-creativo',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '11 checklists operativos pre-rellenados para restaurante creativo y de autor: I+D, menu degustacion, brigada creativa, sumiller, eventos, fotografia y storytelling.',
+    features: [
+      'I+D: fichas tecnicas, pruebas, costes',
+      'Mise en place degustacion y timing de pases',
+      'Sumiller: bodega, maridajes, catas',
+      'Chef\'s table, showcookings, prensa',
+    ],
+    iconName: 'ChefHat',
+    image: '/lovable-uploads/ai-gallery/tareas-restaurante-creativo-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'restaurante'],
+  },
+  {
+    name: 'Tareas Recurrentes: Chef Privado / Personal Chef',
+    slug: '/kit-tareas-chef-privado',
+    price: '€18',
+    originalPrice: '€85',
+    discount: '-79%',
+    description: '9 checklists profesionales para chef privado: ficha de cliente con alergias, equipo y transporte, APPCC móvil, servicio completo, fidelización y administración del autónomo.',
+    features: [
+      'Ficha de cliente: alergias, preferencias, cocina',
+      'Equipo portátil, transporte frío, vehículo',
+      'APPCC móvil: temperaturas y alérgenos',
+      'Servicio: pre, durante y post + limpieza',
+    ],
+    iconName: 'UtensilsCrossed',
+    image: '/lovable-uploads/ai-gallery/tareas-chef-privado-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'chef-privado'],
+  },
+  {
+    name: 'Tareas Recurrentes: Sushi Bar',
+    slug: '/kit-tareas-sushi-bar',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para sushi bar con protocolo anisakis APPCC obligatorio (RD 1420/2006), control de pH del arroz, vitrina neta case, perfiles itamae y omakase.',
+    features: [
+      'Anisakis APPCC: -20 ºC / 7 días por lote',
+      'Arroz sushi con control de pH (≤4.6)',
+      'Vitrina neta case (2-4 ºC) + rotación FIFO',
+      'Perfiles itamae, ayudante, sala, delivery',
+    ],
+    iconName: 'Fish',
+    image: '/lovable-uploads/ai-gallery/tareas-sushi-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'sushi-bar', 'japones'],
+  },
+  {
+    name: 'Tareas Recurrentes: Asador / Parrilla y Josper',
+    slug: '/kit-tareas-asador',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para asador con horno Josper: encendido y mantenimiento de brasas, maduración dry-age y despiece, temperaturas por corte, pescados y verduras a la brasa.',
+    features: [
+      'Protocolo Josper: encendido, zonas de calor, carbón',
+      'Maduración dry-age con fichas por pieza',
+      'Temperaturas internas por corte y punto de cocción',
+      'Perfiles parrillero, ayudante, cocina, sala',
+    ],
+    iconName: 'Beef',
+    image: '/lovable-uploads/ai-gallery/tareas-asador-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'asador', 'parrilla', 'josper'],
+  },
+  {
+    name: 'Tareas Recurrentes: Marisquería con Vivero y APPCC',
+    slug: '/kit-tareas-marisqueria',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para marisquería: control del vivero (oxígeno, salinidad, temperatura), expositor de hielo, trazabilidad APPCC y alérgenos de crustáceos y moluscos, lonjas y temporadas de pesca de España.',
+    features: [
+      'Vivero: oxígeno, salinidad, temperatura, mortalidad',
+      'Trazabilidad APPCC y alérgenos UE 1379/2013',
+      'Expositor de hielo y rotación FIFO',
+      'Temporadas de pesca y vedas oficiales España',
+    ],
+    iconName: 'Shell',
+    image: '/lovable-uploads/ai-gallery/tareas-marisqueria-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'marisqueria', 'pescado', 'marisco'],
+  },
+  {
+    name: 'Tareas Recurrentes: Tapas Bar / Gastrobar',
+    slug: '/kit-tareas-tapas-bar',
+    price: '€14',
+    originalPrice: '€69',
+    discount: '-80%',
+    description: '11 checklists operativos para tapas bar y gastrobar: barra de pinchos y tapas frías, cocina de raciones (plancha, freidora, guisos), cerveza grifo, vinos por copa, vermut, terraza y rotación de carta estacional.',
+    features: [
+      'Barra de pinchos y tapas frías con rotación',
+      'Cocina de raciones: plancha, freidora, guisos',
+      'Cerveza grifo, vinos por copa y vermut',
+      'Terraza, eventos y carta estacional',
+    ],
+    iconName: 'Beer',
+    image: '/lovable-uploads/ai-gallery/tareas-bar-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'tapas', 'gastrobar', 'bar'],
+  },
+  {
+    name: 'Tareas Recurrentes: Food Truck',
+    slug: '/kit-tareas-food-truck',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '11 checklists operativos para food truck: setup y teardown, operaciones móviles del vehículo y generador, APPCC seguridad alimentaria móvil, permisos y eventos, perfiles del equipo y calendario anual.',
+    features: [
+      'Setup / teardown: generador, gas, cocina, servicio',
+      'APPCC móvil: cadena de frío y temperaturas variables',
+      'Permisos, licencias y seguros por evento',
+      'Mantenimiento de vehículo y generador',
+    ],
+    iconName: 'Truck',
+    image: '/lovable-uploads/ai-gallery/use-case-food-truck-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'food-truck', 'street-food', 'eventos', 'gastro-movil'],
+  },
+  {
+    name: 'Tareas Recurrentes: Panadería / Obrador',
+    slug: '/kit-tareas-panaderia',
+    price: '€12',
+    originalPrice: '€39',
+    discount: '-69%',
+    description: '11 checklists operativos para panadería y obrador: turno madrugada desde las 03:00, masas madre y pre-fermentos (poolish, biga), hornos de piso y rotativo, expositor y venta, perfiles del equipo y campañas estacionales.',
+    features: [
+      'Turno madrugada: apertura del obrador desde las 03:00',
+      'Masas madre, poolish, biga y control de fermentación',
+      'Hornos de piso, rotativo y convección con vapor',
+      'Campañas Navidad, Reyes y Semana Santa',
+    ],
+    iconName: 'Wheat',
+    image: '/lovable-uploads/ai-gallery/use-case-panadero-hero.jpg',
+    badge: 'Nuevo',
+    badgeColor: 'bg-purple-500/20 text-purple-400',
+    tags: ['excel', 'plantillas', 'gestion', 'panaderia', 'obrador', 'masas-madre'],
+  },
+];
+
+const comingSoon = [
+  { iconName: 'Utensils', name: 'Cómo Montar una Pastelería', desc: 'Guía paso a paso: obrador, vitrina, maquinaria, proveedores, licencias y lanzamiento.', tags: ['pdf', 'guias', 'pasteleria'], phase: 'Mayo 2026' },
+  { iconName: 'Utensils', name: 'Cómo Montar una Chocolatería', desc: 'Temperado, obrador, vitrina, proveedores de cacao, licencias y modelo de negocio.', tags: ['pdf', 'guias', 'chocolateria'], phase: 'Junio 2026' },
+  { iconName: 'ChefHat', name: 'Manual del Chef Ejecutivo', desc: 'Responsabilidades, KPIs, protocolos, checklists y evaluación de equipo de cocina.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Junio 2026' },
+  { iconName: 'Coffee', name: 'Manual del Manager de Restaurante', desc: 'Guía completa del gerente: operaciones, personas, finanzas, servicio y liderazgo.', tags: ['pdf', 'manuales', 'gestion', 'restaurante'], phase: 'Julio 2026' },
+  { iconName: 'GraduationCap', name: 'Guía Food Cost + Ingeniería de Menú', desc: 'Metodología completa + matriz BCG + 30 ejemplos + pricing psychology + plantillas.', tags: ['pdf', 'costes', 'restaurante'], phase: 'Julio 2026' },
+];
+
+const PRODUCTS_PER_PAGE = 12;
+
+// Etiqueta de un tag (paridad ALL_TAGS.find(t => t.id === tagId)?.label; los tags sin
+// entrada en ALL_TAGS — 'bundle', 'obrador', 'tapas'… — no renderizan pill, igual que la SPA).
+const tagLabel = (id: string) => ALL_TAGS.find((t) => t.id === id)?.label;
+
+// Contadores del badge del hero (VERBATIM products.length / comingSoon.length).
+const productsCount = products.length;
+const comingSoonCount = comingSoon.length;
+
+// WhatsApp (paridad WhatsAppProductSupport.tsx).
+const waPhone = '34744717942';
+const waMessage = encodeURIComponent('Hola, necesito ayuda con mi compra en AI Chef Pro. ');
+const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+
+// Worldwide countries (paridad línea 1272 de la SPA; \u escapes → UTF-8).
+const countries = ['España', 'México', 'Colombia', 'Argentina', 'Chile', 'Perú', 'Ecuador', 'EE.UU.', 'Alemania', 'Francia'];
+
+// FAQ VISIBLE (paridad líneas 1292-1300 de la SPA; \u escapes → UTF-8, copy correcto).
+const faqs = [
+  { q: '¿Qué formato tienen los productos digitales?', a: 'La mayoría son plantillas en formato Excel (.xlsx) compatibles con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. También incluimos guías y fichas en formato PDF listas para imprimir. Todos los archivos se descargan desde tu dashboard privado.' },
+  { q: '¿Cómo recibo los productos después de comprar?', a: 'El acceso es inmediato. Tras el pago con Stripe, te redirigimos a tu dashboard privado donde puedes descargar todos los archivos. Además, recibirás un email con un enlace mágico para acceder siempre que quieras.' },
+  { q: '¿Puedo comprar desde fuera de España?', a: 'Sí. Los productos están en español y diseñados pensando en normativa española y europea, pero el contenido es aplicable a cualquier país hispanohablante. Puedes comprar desde cualquier parte del mundo con tarjeta, Apple Pay o Google Pay.' },
+  { q: '¿Las plantillas incluyen fórmulas automáticas?', a: 'Sí. Todas las plantillas Excel vienen con fórmulas precargadas que calculan automáticamente: food cost, PVP sugerido, alertas de temperatura, control de mermas. Solo introduces tus datos y el Excel hace el resto.' },
+  { q: '¿Hay garantía de devolución?', a: '30 días de garantía completa en todos los productos. Si no estás satisfecho, te devolvemos el 100% sin preguntas. Contacta a info@aichef.pro.' },
+  { q: '¿Incluyen actualizaciones futuras?', a: 'Sí. Todos los productos incluyen acceso de por vida al dashboard online. Cuando añadamos nuevas plantillas, mejoras o actualicemos por cambios normativos, las recibirás sin coste adicional.' },
+  { q: '¿Puedo usar las plantillas en varios restaurantes?', a: 'Sí. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para consultores, grupos de restauración y gerentes multi-unidad.' },
+  { q: '¿Qué métodos de pago aceptan?', a: 'Procesamos pagos con Stripe, la plataforma de pagos más segura del mundo. Aceptamos tarjeta de crédito/débito (Visa, Mastercard, Amex), Apple Pay, Google Pay y Link (pago rápido de Stripe).' },
+];
+
+// pSEO cities cross-link (paridad líneas 1329-1339 de la SPA).
+const cities = [
+  { slug: 'madrid', label: 'Madrid' },
+  { slug: 'barcelona', label: 'Barcelona' },
+  { slug: 'valencia', label: 'Valencia' },
+  { slug: 'ciudad-de-mexico', label: 'CDMX' },
+  { slug: 'monterrey', label: 'Monterrey' },
+  { slug: 'bogota', label: 'Bogotá' },
+  { slug: 'medellin', label: 'Medellín' },
+  { slug: 'buenos-aires', label: 'Buenos Aires' },
+  { slug: 'santiago', label: 'Santiago' },
+];
+
+// ── JSON-LD (equivalentes ÍNTEGROS a los 3 <script> del Helmet de ProductosDigitales.tsx) ──
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Productos Digitales para Hostelería — AI Chef Pro',
+  description: 'Plantillas Excel, guías APPCC, prompts de IA y herramientas digitales para chefs, gerentes y dueños de restaurante.',
+  url: 'https://aichef.pro/productos-digitales',
+  publisher: {
+    '@type': 'Organization',
+    name: 'AI Chef Pro',
+    url: 'https://aichef.pro',
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, url: 'https://aichef.pro/mega-pack-tareas', name: 'Mega Pack Tareas Recurrentes — 13 Kits' },
+      { '@type': 'ListItem', position: 2, url: 'https://aichef.pro/pro-prompts-ebook', name: 'Gastro Pro Prompts eBook' },
+      { '@type': 'ListItem', position: 3, url: 'https://aichef.pro/kit-escandallos', name: 'Kit de Escandallos Pro' },
+      { '@type': 'ListItem', position: 4, url: 'https://aichef.pro/pack-appcc', name: 'Pack Plantillas APPCC' },
+      { '@type': 'ListItem', position: 5, url: 'https://aichef.pro/kit-inventario', name: 'Kit Control de Inventario y Compras' },
+      { '@type': 'ListItem', position: 6, url: 'https://aichef.pro/guia-restaurante-gastronomico', name: 'Cómo Montar un Restaurante Gastronómico' },
+      { '@type': 'ListItem', position: 7, url: 'https://aichef.pro/kit-plan-financiero', name: 'Kit Plan Financiero para Restaurantes' },
+      { '@type': 'ListItem', position: 8, url: 'https://aichef.pro/kit-gestion-personal', name: 'Kit Gestión de Personal y Turnos' },
+      { '@type': 'ListItem', position: 9, url: 'https://aichef.pro/kit-tareas', name: 'Tareas Recurrentes: Restaurante Casual' },
+      { '@type': 'ListItem', position: 10, url: 'https://aichef.pro/kit-tareas-hotel', name: 'Tareas Recurrentes: Hotel Completo' },
+    ],
+  },
+};
+
+// FAQPage — mojibake VERBATIM de la SPA (¿/acentos → "?"). NO se redacta (regla dura). Ver cabecera.
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '?Qu? formato tienen los productos digitales?', acceptedAnswer: { '@type': 'Answer', text: 'La mayor?a son plantillas en formato Excel (.xlsx) compatibles con Microsoft Excel, Google Sheets, LibreOffice y Apple Numbers. Tambi?n incluimos gu?as y fichas en formato PDF.' } },
+    { '@type': 'Question', name: '?C?mo recibo los productos despu?s de comprar?', acceptedAnswer: { '@type': 'Answer', text: 'El acceso es inmediato. Tras el pago con Stripe, te redirigimos a tu dashboard privado donde puedes descargar todos los archivos.' } },
+    { '@type': 'Question', name: '?Puedo comprar desde fuera de Espa?a?', acceptedAnswer: { '@type': 'Answer', text: 'S?. Puedes comprar desde cualquier parte del mundo con tarjeta, Apple Pay o Google Pay. Los productos est?n en espa?ol.' } },
+    { '@type': 'Question', name: '?Hay garant?a de devoluci?n?', acceptedAnswer: { '@type': 'Answer', text: '30 d?as de garant?a completa en todos los productos. Si no est?s satisfecho, te devolvemos el 100% sin preguntas.' } },
+    { '@type': 'Question', name: '?Las plantillas incluyen f?rmulas autom?ticas?', acceptedAnswer: { '@type': 'Answer', text: 'S?. Todas las plantillas Excel vienen con f?rmulas precargadas que calculan autom?ticamente food cost, PVP sugerido, alertas de temperatura y control de mermas.' } },
+    { '@type': 'Question', name: '?Incluyen actualizaciones futuras?', acceptedAnswer: { '@type': 'Answer', text: 'S?. Todos los productos incluyen acceso de por vida al dashboard online con actualizaciones sin coste adicional.' } },
+    { '@type': 'Question', name: '?Puedo usar las plantillas en varios restaurantes?', acceptedAnswer: { '@type': 'Answer', text: 'S?. La licencia es personal ? puedes usar las plantillas en todos los establecimientos que gestiones.' } },
+    { '@type': 'Question', name: '?Qu? m?todos de pago aceptan?', acceptedAnswer: { '@type': 'Answer', text: 'Procesamos pagos con Stripe. Aceptamos tarjeta de cr?dito/d?bito (Visa, Mastercard, Amex), Apple Pay, Google Pay y Link.' } },
+  ],
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: 'https://aichef.pro' },
+    { '@type': 'ListItem', position: 2, name: 'Productos Digitales', item: 'https://aichef.pro/productos-digitales' },
+  ],
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<div class="min-h-screen bg-[#0a0a0a]">
+  {/* ===== SaasDiscoveryBanner ===== */}
+  <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+      <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+      <p class="text-xs sm:text-sm text-gray-300">
+        <span class="hidden sm:inline">Estos productos digitales complementan </span>
+        <a href="/" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+        <span class="hidden sm:inline"> — el SaaS de IA para hostelería con +55 aplicaciones</span>
+        <span class="sm:hidden"> — SaaS de IA para hostelería</span>
+      </p>
+      <a href="/" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        Descubrir
+        <Icon name="ArrowRight" class="h-3 w-3" />
+      </a>
+    </div>
+  </div>
+
+  {/* ===== Hero ===== */}
+  <section class="relative px-4 pt-6 pb-12 md:pt-8 md:pb-16 overflow-hidden">
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.08) 0%, transparent 70%);"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center z-10">
+      {/* LogoBadge (isHub → sin pill de retorno, solo la tarjeta blanca del logo) */}
+      <div>
+        <div class="flex justify-center py-6 md:py-8">
+          <a href="/" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+            <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
+          </a>
+        </div>
+      </div>
+      <span class="inline-block mt-4 mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium">
+        {productsCount} productos disponibles · {comingSoonCount} próximamente
+      </span>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        Tienda de Productos <span class="text-[#FFD700]">Digitales</span> para la Hostelería de Hoy
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        eBooks, plantillas Excel, guías de seguridad alimentaria y prompts de IA diseñados por y para profesionales de la hostelería. Descarga inmediata, acceso de por vida.
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Tag Filter ===== */}
+  <section class="px-4 pb-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-wrap justify-center gap-2">
+        {ALL_TAGS.map((tag) => (
+          <button
+            type="button"
+            data-tag-btn
+            data-tag={tag.id}
+            class={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${tag.id === 'all' ? 'bg-[#FFD700] text-black' : 'bg-white/5 text-gray-400 border border-white/10 hover:border-[#FFD700]/30 hover:text-white'}`}
+          >
+            {(tag as any).iconName && <Icon name={(tag as any).iconName} class="w-3.5 h-3.5 inline mr-1.5 -mt-0.5" />}
+            {tag.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Products Grid — 3 columns (todas las cards en el DOM; JS pagina/filtra) ===== */}
+  <section id="pd-products-section" class="px-4 pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {products.map((product, idx) => (
+        <a
+          href={product.slug}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-product
+          data-tags={product.tags.join(' ')}
+          class={`group relative bg-white/[0.03] rounded-2xl overflow-hidden hover:bg-white/[0.05] transition-all duration-300 flex flex-col ${(product as any).featured ? 'border-2 border-emerald-500/50 hover:border-emerald-400/70 ring-1 ring-emerald-500/20' : 'border border-white/10 hover:border-[#FFD700]/30'}${idx >= PRODUCTS_PER_PAGE ? ' hidden' : ''}`}
+        >
+          {/* Badge */}
+          <div class="absolute top-3 right-3 z-10">
+            <span class={`px-3 py-1 rounded-full text-xs font-bold shadow-lg shadow-black/40 backdrop-blur-sm ${product.badgeColor}`}>
+              {product.badge}
+            </span>
+          </div>
+
+          {/* Image */}
+          <div class="relative h-40 overflow-hidden bg-gradient-to-b from-white/[0.05] to-transparent">
+            <img
+              src={product.image}
+              alt={product.name}
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+          </div>
+
+          {/* Content */}
+          <div class="p-5 flex flex-col flex-1">
+            <div class="flex items-center gap-2.5 mb-2">
+              <div class="w-9 h-9 rounded-xl bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+                <Icon name={product.iconName} class="w-4.5 h-4.5 text-[#FFD700]" />
+              </div>
+              <h2 class="text-lg md:text-base lg:text-lg font-bold text-white group-hover:text-[#FFD700] transition-colors leading-tight">
+                {product.name}
+              </h2>
+            </div>
+
+            <p class="text-gray-400 text-sm leading-relaxed mb-4">
+              {product.description}
+            </p>
+
+            {/* Features */}
+            <ul class="space-y-1.5 mb-5 flex-1">
+              {product.features.map((feature) => (
+                <li class="flex items-start gap-2 text-xs text-gray-300">
+                  <Icon name="Check" class="w-3.5 h-3.5 text-[#FFD700] flex-shrink-0 mt-0.5" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tags */}
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              {product.tags.map((tagId) => {
+                const label = tagLabel(tagId);
+                return label ? (
+                  <span class="px-2 py-0.5 rounded-full bg-white/5 text-gray-500 text-[10px] font-medium">
+                    {label}
+                  </span>
+                ) : null;
+              })}
+            </div>
+
+            {/* Price + CTA */}
+            <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-extrabold text-[#FFD700]">{product.price}</span>
+                <span class="text-sm text-gray-500 line-through">{product.originalPrice}</span>
+                <span class="px-2 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-[10px] font-bold">
+                  {product.discount}
+                </span>
+              </div>
+              <div class="flex items-center gap-1 text-[#FFD700] text-xs font-medium group-hover:gap-2 transition-all">
+                Ver
+                <Icon name="ArrowRight" class="w-3.5 h-3.5" />
+              </div>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {/* Cargar más */}
+    <div id="pd-loadmore-block" class="max-w-6xl mx-auto mt-10 flex flex-col items-center gap-3">
+      <button
+        id="pd-loadmore-btn"
+        type="button"
+        class="px-8 py-3 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-semibold hover:bg-[#FFD700]/20 hover:border-[#FFD700]/60 transition-all duration-200"
+      >Cargar más productos ({productsCount - PRODUCTS_PER_PAGE} restantes)</button>
+      <p id="pd-showing-line" class="text-xs text-gray-500">
+        Mostrando {PRODUCTS_PER_PAGE} de {productsCount}
+      </p>
+    </div>
+  </section>
+
+  {/* ===== Coming Soon ===== */}
+  <section id="pd-coming-section" class="px-4 pb-16 md:pb-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="inline-block mb-4 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm font-medium">
+          <Icon name="Clock" class="w-4 h-4 inline mr-2" />
+          En Desarrollo
+        </span>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">
+          Próximos <span class="text-[#FFD700]">Productos</span>
+        </h2>
+        <p class="text-gray-500 text-sm max-w-2xl mx-auto">
+          Mismo estándar de calidad: acceso inmediato, actualizaciones de por vida y garantía de 30 días.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {comingSoon.map((item) => (
+          <div
+            data-coming
+            data-tags={item.tags.join(' ')}
+            class="bg-white/[0.02] border border-white/[0.06] rounded-xl p-4 opacity-70 hover:opacity-90 transition-opacity"
+          >
+            <div class="flex items-start gap-3 mb-3">
+              <div class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                <Icon name={item.iconName} class="w-4 h-4 text-gray-400" />
+              </div>
+              <div class="flex-1 min-w-0">
+                <h3 class="text-sm font-semibold text-white leading-tight mb-1">{item.name}</h3>
+                <p class="text-[11px] text-gray-500 leading-relaxed">{item.desc}</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex flex-wrap gap-1">
+                {item.tags.slice(0, 2).map((tagId) => {
+                  const label = tagLabel(tagId);
+                  return label ? (
+                    <span class="px-1.5 py-0.5 rounded-full bg-white/5 text-gray-600 text-[9px] font-medium">
+                      {label}
+                    </span>
+                  ) : null;
+                })}
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-gray-500 font-medium">
+                {item.phase}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== No results (oculto por defecto; JS lo muestra cuando 0 productos + 0 coming soon) ===== */}
+  <section id="pd-noresults" class="px-4 pb-16 md:pb-24 hidden">
+    <div class="max-w-3xl mx-auto text-center py-12">
+      <p class="text-gray-400 text-lg mb-4">No hay productos en esta categoría todavía.</p>
+      <button
+        id="pd-reset"
+        type="button"
+        class="px-6 py-2 rounded-full bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium hover:bg-[#FFD700]/20 transition-colors"
+      >
+        Ver todos los productos
+      </button>
+    </div>
+  </section>
+
+  {/* ===== Trust section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="flex items-center justify-center gap-1 mb-3">
+        {Array.from({ length: 5 }).map(() => (
+          <Icon name="Star" class="h-5 w-5 fill-[#FFD700] text-[#FFD700]" />
+        ))}
+      </div>
+      <p class="text-gray-400 text-sm mb-6">
+        Valoración media de 4.9/5 por profesionales de hostelería
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500">
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Garantía 30 días
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Acceso inmediato
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Actualizaciones gratis
+        </span>
+        <span class="flex items-center gap-2">
+          <Icon name="Check" class="w-4 h-4 text-[#FFD700]" />
+          Pago seguro con Stripe
+        </span>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Worldwide availability ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white/[0.03] border border-white/10 rounded-2xl p-8 md:p-10 text-center">
+        <div class="w-16 h-16 rounded-full bg-[#FFD700]/10 flex items-center justify-center mx-auto mb-5">
+          <Icon name="Globe" class="w-8 h-8 text-[#FFD700]" />
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-white mb-3">
+          Compra desde <span class="text-[#FFD700]">Cualquier Parte del Mundo</span>
+        </h2>
+        <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+          Nuestros productos digitales están diseñados para el mercado de hostelería en español.
+          Acceso inmediato tras la compra — sin importar dónde estés.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
+          {countries.map((country) => (
+            <span class="px-3 py-1.5 rounded-full bg-white/5 border border-white/[0.06]">
+              {country}
+            </span>
+          ))}
+          <span class="px-3 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] font-medium">
+            + todo el mundo
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== FAQ Section ===== */}
+  <section class="px-4 pb-16 md:pb-24">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-10">
+        Preguntas <span class="text-[#FFD700]">Frecuentes</span>
+      </h2>
+      <div class="space-y-3">
+        {faqs.map((faq) => (
+          <details class="group bg-white/[0.03] border border-white/10 rounded-xl overflow-hidden">
+            <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+              <span class="text-white font-medium pr-4 text-sm md:text-base">{faq.q}</span>
+              <Icon name="ChevronDown" class="w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300 group-open:rotate-180" />
+            </summary>
+            <p class="px-5 pb-5 text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== pSEO Cities cross-link ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-xs font-medium mb-3">
+          Recursos por ciudad
+        </span>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">
+          Lleva tu Plan a la <span class="text-[#FFD700]">Ciudad Donde Vas a Abrir</span>
+        </h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Combina nuestros kits y guías con datos verificados por ciudad: costes reales, licencias específicas, salarios sectoriales y los mejores barrios.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        {cities.map((c) => (
+          <a
+            href={`/abrir-restaurante/${c.slug}`}
+            class="px-4 py-2 rounded-full bg-white/5 hover:bg-[#FFD700]/15 hover:text-[#FFD700] text-gray-300 text-sm font-medium transition-colors border border-white/10"
+          >
+            Abrir restaurante en {c.label}
+          </a>
+        ))}
+      </div>
+      <div class="text-center">
+        <a
+          href="/seo-restaurantes-por-ciudad"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#FFD700] text-black font-semibold hover:bg-[#FFD700]/90 transition-colors"
+        >
+          Ver las 15 ciudades + 5 recursos →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== SEO content block ===== */}
+  <section class="px-4 pb-16 md:pb-24 border-t border-white/5 pt-12">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-xl md:text-2xl font-bold text-white mb-4 text-center">
+        Recursos Digitales Profesionales para <span class="text-[#FFD700]">Hostelería</span>
+      </h2>
+      <div class="text-gray-400 text-sm leading-relaxed space-y-4">
+        <p>
+          AI Chef Pro ofrece una colección de productos digitales diseñados específicamente para profesionales de hostelería y restauración. Desde prompts de inteligencia artificial optimizados para ChatGPT, Claude, Gemini y Perplexity, hasta plantillas de escandallos en Excel y registros de seguridad alimentaria APPCC obligatorios por ley.
+        </p>
+        <p>
+          Cada producto ha sido creado por profesionales con más de 29 años de experiencia en alta hostelería y 15 años en consultoría gastronómica. No son recursos genéricos: son herramientas específicas para chefs ejecutivos, jefes de cocina, gerentes de restaurante, pasteleros, bartenders, directores de catering y dueños de establecimientos de hostelería.
+        </p>
+        <p>
+          Todos nuestros productos incluyen acceso inmediato tras la compra, actualizaciones gratuitas de por vida, 8 herramientas profesionales gratuitas y garantía de devolución de 30 días. Pago seguro procesado por Stripe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== Footer ===== */}
+  <footer class="py-8 px-4 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-500 text-sm mb-2">
+        © 2026 AI Chef Pro · Todos los derechos reservados
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
+        <a href="https://aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/pro-prompts-ebook" class="text-gray-500 hover:text-[#FFD700] transition-colors">Pro Prompts eBook</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/kit-escandallos" class="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Escandallos</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/pack-appcc" class="text-gray-500 hover:text-[#FFD700] transition-colors">Pack APPCC</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="mailto:info@aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  {/* ===== WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Soporte por WhatsApp" class="group fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40">
+    <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+      <span class="text-xs font-medium text-gray-800">¿Problemas con tu compra? Escríbenos</span>
+      <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
+    </div>
+    <div class="relative transition-transform duration-300 hover:scale-110">
+      <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+      <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-white">
+        <img src="/assets/chef-john-guerrero-optimized.jpg" alt="Chef John Guerrero" loading="lazy" width="56" height="56" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+        <svg viewBox="0 0 24 24" fill="white" class="w-3 h-3 sm:w-3.5 sm:h-3.5">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  /* Pulso del botón WhatsApp (animate-ping de la SPA) */
+  .animate-ping { animation: pd-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  @keyframes pd-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+</style>
+
+<script>
+  // Filtro por tag + paginación "Cargar más" (sustituye useState de la SPA).
+  // TODAS las cards están en el DOM; este script solo muestra/oculta.
+  const PER_PAGE = 12;
+  let activeTag = 'all';
+  let visibleCount = PER_PAGE;
+
+  const tagBtns = Array.from(document.querySelectorAll('[data-tag-btn]'));
+  const prodCards = Array.from(document.querySelectorAll('[data-product]'));
+  const comingCards = Array.from(document.querySelectorAll('[data-coming]'));
+  const productsSection = document.getElementById('pd-products-section');
+  const comingSection = document.getElementById('pd-coming-section');
+  const noResults = document.getElementById('pd-noresults');
+  const loadMoreBlock = document.getElementById('pd-loadmore-block');
+  const loadMoreBtn = document.getElementById('pd-loadmore-btn');
+  const showingLine = document.getElementById('pd-showing-line');
+
+  const TAG_ACTIVE = ['bg-[#FFD700]', 'text-black'];
+  const TAG_INACTIVE = ['bg-white/5', 'text-gray-400', 'border', 'border-white/10', 'hover:border-[#FFD700]/30', 'hover:text-white'];
+
+  function matches(card) {
+    if (activeTag === 'all') return true;
+    return (card.dataset.tags || '').split(' ').includes(activeTag);
+  }
+
+  function updateTagButtons() {
+    tagBtns.forEach((btn) => {
+      const active = btn.dataset.tag === activeTag;
+      btn.classList.remove(...(active ? TAG_INACTIVE : TAG_ACTIVE));
+      btn.classList.add(...(active ? TAG_ACTIVE : TAG_INACTIVE));
+    });
+  }
+
+  function apply() {
+    const matching = prodCards.filter(matches);
+    prodCards.forEach((c) => c.classList.add('hidden'));
+    matching.slice(0, visibleCount).forEach((c) => c.classList.remove('hidden'));
+
+    const total = matching.length;
+    const showing = Math.min(visibleCount, total);
+    const hasMore = visibleCount < total;
+
+    if (productsSection) productsSection.classList.toggle('hidden', total === 0);
+    if (loadMoreBlock) {
+      loadMoreBlock.classList.toggle('hidden', !hasMore);
+      loadMoreBlock.classList.toggle('flex', hasMore);
+    }
+    if (hasMore && loadMoreBtn) loadMoreBtn.textContent = `Cargar más productos (${total - visibleCount} restantes)`;
+    if (hasMore && showingLine) showingLine.textContent = `Mostrando ${showing} de ${total}`;
+
+    const matchingComing = comingCards.filter(matches);
+    comingCards.forEach((c) => c.classList.toggle('hidden', !matches(c)));
+    if (comingSection) comingSection.classList.toggle('hidden', matchingComing.length === 0);
+    if (noResults) noResults.classList.toggle('hidden', !(total === 0 && matchingComing.length === 0));
+  }
+
+  tagBtns.forEach((btn) => btn.addEventListener('click', () => {
+    activeTag = btn.dataset.tag || 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+  }));
+
+  loadMoreBtn?.addEventListener('click', () => { visibleCount += PER_PAGE; apply(); });
+  document.getElementById('pd-reset')?.addEventListener('click', () => {
+    activeTag = 'all';
+    visibleCount = PER_PAGE;
+    updateTagButtons();
+    apply();
+  });
+
+  apply();
+</script>

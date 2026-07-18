@@ -1,0 +1,40 @@
+---
+// /pro-prompts-ebook — PORT one-off de la SPA src/pages/ProPromptsEbook.tsx. Thin wrapper:
+// pasa el SEO (valores EXACTOS del Helmet de la SPA) a BaseLayout y el stripeLink al template.
+//
+// SOLO ES: la SPA hardcodea el Helmet en español y esta ruta NO tiene variantes de idioma →
+// locales={['es']} (BaseLayout emite hreflang es + x-default y nada más).
+// Canonical: https://aichef.pro/pro-prompts-ebook. Meta robots se OMITE (desviación cross-cutting
+// del layout; se añade en el cutover). Patrón = kit-escandallos.astro / guia-*.astro.
+//
+// Los 3 JSON-LD ÍNTEGROS (Product + FAQPage + BreadcrumbList) los emite el propio template
+// server-side (paridad con los <script> del Helmet). BaseLayout genera el resto de OG/Twitter.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProPromptsEbookPage from '../components/pages/ProPromptsEbookPage.astro';
+
+const lang = 'es';
+
+// SEO — valores literales del Helmet de ProPromptsEbook.tsx.
+const seo = {
+  title: 'Pro Prompts eBook — El único eBook de prompts de IA para hostelería | AI Chef Pro',
+  description: '300+ prompts de IA para chefs, gerentes, pasteleros, bartenders y dueños de restaurante. Compatible con ChatGPT, Claude y AI Chef Pro. Solo €9.',
+  keywords: 'prompts IA hostelería, prompts ChatGPT restaurante, prompts para chefs, inteligencia artificial restaurantes, IA para hostelería, ebook prompts cocina, ChatGPT cocina profesional, prompts pastelería IA, prompts catering IA, AI Chef Pro',
+  ogImage: 'https://aichef.pro/ebook-mockup-bundle.jpg',
+};
+
+// DINERO: acceso ESTÁTICO a la env var base (nombre EXACTO y mismo fallback '#comprar' que
+// TODOS los componentes ebook/* de la SPA) para que Vite la inline en build.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK || '#comprar';
+---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  keywords={seo.keywords}
+  lang={lang}
+  basePath="/pro-prompts-ebook"
+  locales={['es']}
+  ogImage={seo.ogImage}
+>
+  <ProPromptsEbookPage stripeLink={stripeLink} />
+</BaseLayout>

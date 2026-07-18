@@ -1,0 +1,880 @@
+---
+// ProPromptsEbookPage.astro — port 1:1 de la SPA src/pages/ProPromptsEbook.tsx (LA SPA ES LA SPEC).
+// Landing /pro-prompts-ebook (SOLO ES). Reproduce, server-side, el ORDEN y DOM EXACTOS de la
+// página SPA y de cada componente de src/components/ebook/* + los banners compartidos
+// (SaasDiscoveryBanner / CompatibleAppsMarquee variant="ebook" / TestimonialsMarquee /
+// WhatsAppProductSupport). Los 3 JSON-LD (Product + FAQPage + BreadcrumbList) van ÍNTEGROS.
+//
+// Divergencias vs. la SPA React, idénticas al patrón con gates verdes de KitExcelLandingPage:
+//   · lucide-react  -> <Icon> (SVGs inline v0.462.0)              · Avatar Radix -> <span><img></span>
+//   · FadeIn (IO+state) -> .kt-fade + IntersectionObserver         · shadcn -> clases inlineadas
+//   · FaqAccordion (useState) -> <details>-less vanilla single-open (data-faq-*)
+//   · TestimonialsMarquee (rAF) -> mismo rAF en <script>           · AlreadyBought (useState/fetch) -> form vanilla
+//
+// DINERO: `stripeLink` llega YA resuelto del wrapper (import.meta.env.VITE_STRIPE_PAYMENT_LINK ||
+// '#comprar' — MISMA env var y MISMO fallback que TODOS los componentes ebook/* de la SPA).
+import Icon from '../Icon.astro';
+
+interface Props {
+  /** Payment link Stripe YA resuelto en el wrapper con acceso ESTÁTICO a import.meta.env
+   *  para que Vite lo inline en build. Env var: VITE_STRIPE_PAYMENT_LINK — fallback '#comprar'. */
+  stripeLink: string;
+}
+const { stripeLink } = Astro.props;
+
+const canonical = 'https://aichef.pro/pro-prompts-ebook';
+
+// ---- JSON-LD (equivalentes ÍNTEGROS a los 3 <script> del Helmet de ProPromptsEbook.tsx) ----
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Pro Prompts eBook — 300+ prompts de IA para hostelería',
+  description: 'eBook con 300+ prompts de IA específicos para hostelería y restauración. Cocina creativa, pastelería, catering, gestión, liderazgo, marketing y más.',
+  image: 'https://aichef.pro/ebook-mockup-bundle.jpg',
+  brand: { '@type': 'Brand', name: 'AI Chef Pro' },
+  offers: {
+    '@type': 'Offer',
+    url: 'https://aichef.pro/pro-prompts-ebook',
+    priceCurrency: 'EUR',
+    price: '9.00',
+    priceValidUntil: '2026-12-31',
+    availability: 'https://schema.org/InStock',
+    seller: { '@type': 'Organization', name: 'AI Chef Pro', url: 'https://aichef.pro' },
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '10',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Carlos Martínez' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Llevo 20 años en cocina y nunca pensé que la IA me ahorraría tanto tiempo. Los prompts de recetas creativas me han dado ideas que a mí solo me habrían costado semanas de I+D.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Laura Sánchez' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Los prompts de gestión y costes son oro puro. En una semana ya tenía controlado el food cost de 3 restaurantes con las plantillas que genera la IA.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Roberto García' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5' },
+      reviewBody: 'Recomiendo el eBook a todos mis clientes. Es la forma más rápida de que un restaurante empiece a usar IA sin necesitar formación técnica.',
+    },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: '¿Cómo recibo el acceso después del pago?', acceptedAnswer: { '@type': 'Answer', text: 'Inmediatamente después del pago recibirás un email con tu enlace de acceso personal y único a la Pro Prompts Library, donde encontrarás el eBook descargable y todos los bonos.' } },
+    { '@type': 'Question', name: '¿Funciona solo con AI Chef Pro o con otras IAs?', acceptedAnswer: { '@type': 'Answer', text: 'Los prompts están optimizados para AI Chef Pro pero funcionan perfectamente con ChatGPT, Claude, Perplexity, DeepSeek, Gemini, KIMI y cualquier IA conversacional.' } },
+    { '@type': 'Question', name: '¿Qué formato tiene el eBook?', acceptedAnswer: { '@type': 'Answer', text: 'PDF de alta calidad, compatible con todos los dispositivos: móvil, tablet y ordenador.' } },
+    { '@type': 'Question', name: '¿Recibiré actualizaciones?', acceptedAnswer: { '@type': 'Answer', text: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevos agentes IA, el eBook se actualiza y tú los recibes automáticamente.' } },
+    { '@type': 'Question', name: '¿Cómo funciona la garantía?', acceptedAnswer: { '@type': 'Answer', text: 'Tienes 30 días completos para probarlo. Si no estás satisfecho por cualquier motivo, te devolvemos el 100% sin hacer ninguna pregunta.' } },
+    { '@type': 'Question', name: '¿Necesito experiencia previa con IA?', acceptedAnswer: { '@type': 'Answer', text: 'Para nada. Los prompts están listos para copiar y pegar. Resultados profesionales desde el primer día, independientemente de tu nivel.' } },
+  ],
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'AI Chef Pro', item: 'https://aichef.pro' },
+    { '@type': 'ListItem', position: 2, name: 'Pro Prompts eBook', item: canonical },
+  ],
+};
+
+// ---- HeroSection ----
+const heroImages = [
+  '/lovable-uploads/ai-gallery/tataki-presa-iberica-chimichurri.jpeg',
+  '/lovable-uploads/ai-gallery/tartaleta-de-yuzu-y-merengue.jpeg',
+  '/lovable-uploads/ai-gallery/cocktail-green-margarita.jpeg',
+  '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
+  '/lovable-uploads/ai-gallery/croissant-bicolor-de-mantequilla-aichefpro.jpeg',
+  '/lovable-uploads/ai-gallery/huevo-baja-temperatura-trufa.jpeg',
+];
+const heroAvatars = Array.from({ length: 8 }, (_, i) => `/avatars/avatar-${i + 1}.jpg`);
+const checkItems = [
+  'eBook PDF + Dashboard exclusivo con todos los prompts',
+  'Más de 300 prompts para toda la hostelería y restauración',
+  '8 herramientas gratuitas profesionales incluidas',
+  'Compatible con ChatGPT, Claude, Perplexity, DeepSeek y más',
+  'Actualizaciones gratuitas de por vida',
+];
+
+// ---- CompatibleAppsMarquee (variant="ebook"; apps ×4 para loop) ----
+const apps = [
+  { name: 'AI Chef Pro', src: '/logos/aichefpro-icon.png' },
+  { name: 'ChatGPT', src: '/logos/openai.png' },
+  { name: 'Gemini', src: '/logos/gemini.png' },
+  { name: 'Google Sheets', src: '/logos/google-sheets.png' },
+  { name: 'Excel', src: '/logos/excel.png' },
+  { name: 'Word', src: '/logos/word.png' },
+  { name: 'PDF', src: '/logos/pdf.png' },
+  { name: 'Google', src: '/logos/google.png' },
+  { name: 'Perplexity', src: '/logos/perplexity.png' },
+];
+const appsRepeated = [...apps, ...apps, ...apps, ...apps];
+
+// ---- CategoriesGrid ----
+const foodStrip = [
+  '/lovable-uploads/ai-gallery/croqueta-jamon.jpeg',
+  '/lovable-uploads/ai-gallery/cocktail-garibaldi-fermentado.jpeg',
+  '/lovable-uploads/ai-gallery/milhojas-vertical-de-vainilla-con-frambuesas-aichefpro-2.jpeg',
+  '/lovable-uploads/ai-gallery/carpaccio-gambas.jpeg',
+  '/lovable-uploads/ai-gallery/torrija-caramelizada-con-helado.jpeg',
+  '/lovable-uploads/ai-gallery/cocktail-tepache-pina-asada.jpeg',
+];
+const categories = [
+  { icon: 'ChefHat', title: 'Cocina y Recetas', desc: 'Más de 40 prompts para chefs y cocineros: genera recetas creativas con ingredientes disponibles, adapta platos a temporada, explora técnicas de alta cocina y fusión de cocinas del mundo. Incluye prompts para emplatado y presentación profesional.' },
+  { icon: 'Calculator', title: 'Gestión y Costes', desc: 'Prompts esenciales para gerentes y dueños: calcula food cost en segundos, genera escandallos automáticos, analiza rentabilidad por plato y optimiza compras con proveedores. Convierte la IA en tu controller financiero de cocina.' },
+  { icon: 'Cake', title: 'Pastelería y Panadería', desc: 'Sección dedicada a pasteleros, panaderos y chocolateros: formulaciones con porcentajes de panadero, técnicas de fermentación, combinaciones de sabores y adaptación de recetas para intolerancias. Crea cartas de temporada en minutos.' },
+  { icon: 'Wine', title: 'Sala, Bar y Bebidas', desc: 'Para bartenders y sommeliers: crea cocktails de autor, diseña maridajes por plato, genera descripciones de vinos para la carta y optimiza el servicio de sala. Incluye prompts de mixología molecular y tendencias de bebidas.' },
+  { icon: 'CalendarDays', title: 'Catering y Eventos', desc: 'Genera propuestas personalizadas, presupuestos detallados por comensal, planifica logística y diseña menús para bodas, corporativos y banquetes. Cada prompt pensado para impresionar al cliente y cerrar el evento.' },
+  { icon: 'Beaker', title: 'Food Pairing', desc: 'Descubre combinaciones de ingredientes basadas en ciencia: maridajes por compuestos aromáticos, sustituciones inteligentes cuando falta un ingrediente y combinaciones inesperadas que sorprenden al comensal. La creatividad con base científica.' },
+  { icon: 'Megaphone', title: 'Marketing del Negocio', desc: 'Prompts para generar contenido para RRSS, optimizar tu SEO local en Google, responder reseñas de forma profesional, crear campañas de email marketing y posicionar tu marca. Tu community manager con IA integrado.' },
+  { icon: 'ShieldCheck', title: 'Alérgenos y Seguridad', desc: 'Genera fichas técnicas de alérgenos completas, etiquetado conforme a normativa, protocolos APPCC actualizados y planes de formación para tu equipo. Cumple la legislación sin pasar horas con la documentación.' },
+  { icon: 'Briefcase', title: 'Gestión de Negocio', desc: 'Desde planes de negocio para nuevos conceptos hasta estrategias de precios y análisis de viabilidad de franquicias. Incluye prompts de consultoría que te ayudan a tomar decisiones estratégicas con datos, no con intuición.' },
+  { icon: 'Users', title: 'Liderazgo y Equipos', desc: 'Prompts para mejorar tu liderazgo en cocina: evaluaciones de rendimiento, planes de formación, protocolos de onboarding para nuevas incorporaciones y técnicas de comunicación con brigada. Gestiona personas, no solo platos.' },
+  { icon: 'Cpu', title: 'Prompt Engineering', desc: 'El capítulo que multiplica el valor de todos los demás: aprende el framework CRAFT para escribir prompts perfectos en hostelería. Entiende cómo piensa la IA y obtén respuestas 10x mejores en cualquier herramienta.' },
+  { icon: 'ClipboardList', title: 'Plantillas Copy-Paste', desc: 'Prompts listos para copiar, pegar y usar en segundos — sin necesidad de adaptación. Organizados por perfil: chef, gerente, pastelero, bartender, catering y dueño de restaurante. La forma más rápida de empezar.' },
+];
+
+// ---- TestimonialsMarquee (ebookTestimonials; mid = ceil(len/2)) ----
+const testimonials = [
+  { name: 'Carlos Martínez', role: 'Chef Ejecutivo, Restaurante El Olivo', text: 'Llevo 20 años en cocina y nunca pensé que la IA me ahorraría tanto tiempo. Los prompts de recetas creativas me han dado ideas que a mí solo me habrían costado semanas de I+D.', avatar: '/avatars/chef-avatar-1.jpg' },
+  { name: 'Laura Sánchez', role: 'Gerente, Grupo Gastronómico LB', text: 'Los prompts de gestión y costes son oro puro. En una semana ya tenía controlado el food cost de 3 restaurantes con las plantillas que genera la IA.', avatar: '/avatars/avatar-2.jpg' },
+  { name: 'Miguel Ángel Torres', role: 'Dueño, Gastrobar La Esquina', text: 'Compré el eBook pensando que serían prompts genéricos. Me equivoqué completamente — son específicos para hostelería y funcionan desde el primer día.', avatar: '/avatars/avatar-3.jpg' },
+  { name: 'Ana Belén Ruiz', role: 'Pastelera, Obrador Dulce Ana', text: 'La sección de pastelería es increíble. He creado 15 recetas nuevas para la temporada usando los prompts de combinaciones y técnicas. Mis clientes están encantados.', avatar: '/avatars/avatar-4.jpg' },
+  { name: 'Javier Moreno', role: 'Director de Catering, EventosPro', text: 'Los prompts de catering me ayudan a crear propuestas personalizadas en minutos. Antes me llevaba medio día preparar cada presupuesto de evento.', avatar: '/avatars/avatar-5.jpg' },
+  { name: 'Sofía Herrera', role: 'Bartender, The Cocktail Lab', text: 'Uso los prompts de mixología para crear cocktails de temporada y maridajes. La IA me sugiere combinaciones que nunca se me habrían ocurrido.', avatar: '/avatars/avatar-6.jpg' },
+  { name: 'Roberto García', role: 'Consultor Gastronómico', text: 'Recomiendo el eBook a todos mis clientes. Es la forma más rápida de que un restaurante empiece a usar IA sin necesitar formación técnica.', avatar: '/avatars/chef-avatar-3.jpg' },
+  { name: 'Andrés López', role: 'Jefe de Cocina, Hotel Grand Palace', text: 'Los prompts de alérgenos y seguridad alimentaria me han ahorrado horas de documentación. Ahora genero fichas técnicas completas en segundos.', avatar: '/avatars/avatar-8.jpg' },
+  { name: 'Diego Fernández', role: 'Propietario, Food Truck El Mexicano', text: 'Con el prompt de marketing generé todo el plan de redes sociales del mes en 20 minutos. Antes ni sabía por dónde empezar con Instagram.', avatar: '/avatars/avatar-7.jpg' },
+  { name: 'Marcos Navarro', role: 'Director de RRHH, Grupo Restauración CN', text: 'Los prompts de liderazgo y equipos me ayudan a preparar evaluaciones, planes de formación y protocolos de onboarding. Una herramienta imprescindible.', avatar: '/avatars/avatar-1.jpg' },
+];
+const mid = Math.ceil(testimonials.length / 2);
+const topRow = testimonials.slice(0, mid);
+const bottomRow = testimonials.slice(mid);
+
+// ---- WhySection ----
+const reasons = [
+  { icon: 'Globe', title: 'Para todo el sector, no solo la cocina', desc: 'Da igual que seas chef, gerente, pastelero, bartender o dueño de restaurante. Cada prompt está diseñado para tu rol específico dentro del negocio.' },
+  { icon: 'FlaskConical', title: 'Prompts Probados en AI Chef Pro', desc: 'Cada prompt ha sido testeado en la plataforma para garantizar resultados consistentes y de calidad profesional en hostelería real.' },
+  { icon: 'Clock', title: 'Ahorra Horas de Trabajo', desc: 'Deja de experimentar con la IA. Obtén resultados de calidad en segundos, ya sea para una receta, un presupuesto de catering o un post de Instagram.' },
+  { icon: 'RefreshCw', title: 'Paga Una Vez, Tuyo Para Siempre', desc: 'Sin suscripciones ni pagos recurrentes. Tu dashboard privado se actualiza constantemente con nuevos prompts y categorías. Cada mejora futura es tuya, sin coste adicional.' },
+];
+const compatPills = [
+  { label: 'AI Chef Pro', highlight: true },
+  { label: 'ChatGPT' },
+  { label: 'Claude' },
+  { label: 'Perplexity' },
+  { label: 'DeepSeek' },
+  { label: 'Gemini' },
+  { label: 'KIMI' },
+  { label: 'Copilot' },
+  { label: '+ cualquier chatbot' },
+];
+
+// ---- BonusSection ----
+const bonuses = [
+  { icon: 'BookOpen', label: 'BONUS 1', title: 'Guía de Prompt Engineering Gastronómico', value: '€27', desc: 'Aprende a crear tus propios prompts gastronómicos perfectos desde cero con el método AI Chef Pro. Documento Word editable para personalizar.', image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg' },
+  { icon: 'FileText', label: 'BONUS 2', title: 'Plantillas + Cheat Sheet', value: '€23', desc: 'Hoja de cálculo con plantillas listas para usar y un resumen rápido de los mejores prompts para hostelería.', image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg' },
+];
+
+// ---- FreeToolsSection (constante; 8 herramientas) ----
+const freeTools = [
+  { icon: 'Calculator', title: 'Calculadora Food Cost', desc: 'Calcula el coste real de cada plato al céntimo', href: '/calculadora-food-cost-restaurante', color: 'text-green-400' },
+  { icon: 'ShieldAlert', title: 'Detector Alérgenos', desc: 'Identifica alérgenos automáticamente en tus recetas', href: '/detector-alergenos-restaurante', color: 'text-red-400' },
+  { icon: 'Calendar', title: 'Calendario Contenidos', desc: 'Plan de contenido mensual para redes sociales', href: '/calendario-contenidos-restaurante', color: 'text-purple-400' },
+  { icon: 'TrendingUp', title: 'Simulador Rentabilidad', desc: 'Proyecta ingresos, costes y beneficio neto', href: '/simulador-rentabilidad-restaurante', color: 'text-yellow-400' },
+  { icon: 'FileText', title: 'Generador Textos Carta', desc: 'Descripciones irresistibles para tu menú', href: '/generador-textos-carta-restaurante', color: 'text-blue-400' },
+  { icon: 'Smartphone', title: 'Test Digitalización', desc: 'Evalúa el nivel digital de tu restaurante', href: '/test-digitalizacion-restaurante', color: 'text-teal-400' },
+  { icon: 'Users', title: 'Calculadora Brigada', desc: 'Personal óptimo según tu volumen de servicio', href: '/calculadora-brigada-restaurante', color: 'text-orange-400' },
+  { icon: 'Sparkles', title: 'Generador Menú Degustación', desc: 'Crea menús degustación con IA en segundos', href: '/generador-menu-degustacion', color: 'text-indigo-400' },
+];
+
+// ---- GuaranteeSection ----
+const guaranteeStats = [
+  { number: '30', label: 'Días de garantía' },
+  { number: '100%', label: 'Reembolso garantizado' },
+  { number: '0', label: 'Preguntas incómodas' },
+];
+
+// ---- FaqAccordion ----
+const faqs = [
+  { q: '¿Cómo recibo el acceso después del pago?', a: 'Inmediatamente después del pago recibirás un email con tu enlace de acceso personal y único a la Pro Prompts Library, donde encontrarás el eBook descargable y todos los bonos. El enlace es personal e intransferible.' },
+  { q: '¿Funciona solo con AI Chef Pro o con otras IAs?', a: 'Los prompts están optimizados para AI Chef Pro pero funcionan perfectamente con ChatGPT, Claude, Perplexity, DeepSeek, Gemini, KIMI y cualquier IA conversacional.' },
+  { q: '¿Qué formato tiene el eBook?', a: 'PDF de alta calidad, compatible con todos los dispositivos: móvil, tablet y ordenador.' },
+  { q: '¿Recibiré actualizaciones?', a: 'Sí. Todas las actualizaciones futuras son gratuitas. A medida que AI Chef Pro lance nuevos agentes IA, el eBook se actualiza y tú los recibes automáticamente.' },
+  { q: '¿Cómo funciona la garantía?', a: 'Tienes 30 días completos para probarlo. Si no estás satisfecho por cualquier motivo, te devolvemos el 100% sin hacer ninguna pregunta.' },
+  { q: '¿Necesito experiencia previa con IA?', a: 'Para nada. Los prompts están listos para copiar y pegar. Resultados profesionales desde el primer día, independientemente de tu nivel.' },
+];
+
+// ---- CtaFinal ----
+const ctaItems = [
+  'eBook completo con 300+ prompts para toda la hostelería',
+  'BONUS 1: Guía de Prompt Engineering Gastronómico (€27)',
+  'BONUS 2: Plantillas + Cheat Sheet descargable (€23)',
+  'Paga una vez — acceso de por vida al dashboard online',
+  'Actualizaciones continuas con nuevos prompts sin coste extra',
+  'Garantía de devolución 30 días',
+];
+
+// ---- TryPlatformBanner ----
+const langPills = ['Español', 'English', 'Français', 'Deutsch', 'Italiano', 'Português', 'Nederlands'];
+
+// ---- WhatsAppProductSupport (constante) ----
+const waPhone = '34744717942';
+const waMessage = encodeURIComponent('Hola, necesito ayuda con mi compra en AI Chef Pro. ');
+const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+<noscript><style>.kt-fade{opacity:1!important;transform:none!important;}</style></noscript>
+
+<div class="min-h-screen bg-[#0a0a0a]">
+  {/* ===== 1. SaasDiscoveryBanner ===== */}
+  <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+    <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+      <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+      <p class="text-xs sm:text-sm text-gray-300">
+        <span class="hidden sm:inline">Estos productos digitales complementan </span>
+        <a href="/" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+        <span class="hidden sm:inline"> — el SaaS de IA para hostelería con +55 aplicaciones</span>
+        <span class="sm:hidden"> — SaaS de IA para hostelería</span>
+      </p>
+      <a href="/" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+        Descubrir
+        <Icon name="ArrowRight" class="h-3 w-3" />
+      </a>
+    </div>
+  </div>
+
+  {/* ===== 2. HeroSection ===== */}
+  <section class="relative px-4 pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.12]">
+      <div class="grid grid-cols-3 md:grid-cols-6 h-full gap-1">
+        {heroImages.map((src) => (
+          <div class="overflow-hidden">
+            <img src={src} alt="" class="w-full h-full object-cover scale-110" loading="eager" />
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
+    <div class="absolute inset-0 bg-radial-gradient" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,215,0,0.1) 0%, transparent 70%);"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center z-10">
+      {/* LogoBadge (isHub siempre false en landing de producto) */}
+      <div>
+        <nav class="flex justify-center pt-1 mb-2 md:mb-3">
+          <div class="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-sm text-xs text-gray-400">
+            <a href="/productos-digitales" class="hover:text-[#FFD700] transition-colors whitespace-nowrap">← Productos Digitales</a>
+            <span class="text-white/20" aria-hidden="true">·</span>
+            <a href="/" class="hover:text-[#FFD700] transition-colors">Inicio</a>
+          </div>
+        </nav>
+        <div class="flex justify-center py-6 md:py-8">
+          <a href="/" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+            <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-2 mb-6">
+        <div class="flex -space-x-3 justify-center">
+          {heroAvatars.map((avatar, i) => (
+            <span class="relative flex shrink-0 overflow-hidden rounded-full border-2 border-[#0a0a0a] w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-[#0a0a0a]">
+              <img src={avatar} alt={`Professional ${i + 1}`} class="aspect-square h-full w-full object-cover" />
+            </span>
+          ))}
+        </div>
+        <div class="flex items-center gap-0.5">
+          {Array.from({ length: 5 }).map((_, i) => (
+            <Icon name="Star" class={`h-4 w-4 ${i < 4 ? 'fill-[#FFD700] text-[#FFD700]' : 'fill-[#FFD700]/40 text-[#FFD700]/40'}`} />
+          ))}
+        </div>
+      </div>
+
+      <span class="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">
+        El recurso #1 de prompts para hostelería y restauración
+      </span>
+
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+        El Único <span class="text-[#FFD700]">eBook de Prompts</span> de IA para Hostelería que Realmente Necesitas
+      </h1>
+
+      <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+        Más de 300 prompts de inteligencia artificial para chefs, gerentes, pasteleros, bartenders, chocolateros, catering y dueños de restaurante. Prompts listos para usar en ChatGPT, Claude, Gemini, Perplexity y AI Chef Pro. La guía definitiva de IA para hostelería y restauración.
+      </p>
+
+      <div class="flex flex-col items-center gap-3 mb-10">
+        {checkItems.map((item) => (
+          <div class="flex items-center gap-3 text-gray-200">
+            <Icon name="Check" class="w-5 h-5 text-[#FFD700] flex-shrink-0" />
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="inline-block bg-white/5 border border-[#FFD700]/20 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+        <div class="flex items-center justify-center gap-4 mb-3">
+          <span class="text-2xl text-gray-500 line-through">€50</span>
+          <span class="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
+          <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">-90%</span>
+        </div>
+        <p class="text-sm text-gray-400 mb-5">Precio especial de lanzamiento. Sube pronto</p>
+        <a href={stripeLink} class="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">
+          COMPRAR AHORA — €9
+        </a>
+        <div class="flex flex-col items-center gap-2 mt-4">
+          <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 3. BookCover ===== */}
+  <section class="py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#FFD700]/[0.05] rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="max-w-5xl mx-auto flex flex-col items-center relative z-10">
+      <picture>
+        <source srcset="/ebook-mockup-bundle.webp" type="image/webp" />
+        <img src="/ebook-mockup-bundle-sm.png" alt="Gastro Pro Prompts — eBook, tablet y móvil con 300+ prompts de IA para hostelería y restauración" class="w-full mx-auto" loading="lazy" />
+      </picture>
+      <div class="mt-10 text-center">
+        <a href={stripeLink} class="inline-block px-8 py-3.5 border-2 border-[#FFD700] text-[#FFD700] font-bold rounded-xl hover:bg-[#FFD700] hover:text-black transition-all duration-300">COMPRAR AHORA — €9</a>
+        <div class="flex flex-col items-center gap-2 mt-3">
+          <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 4. CompatibleAppsMarquee (variant="ebook") ===== */}
+  <section class="py-10 md:py-14 overflow-hidden">
+    <div class="text-center mb-8 px-4">
+      <h2 class="text-xl md:text-2xl font-bold text-white mb-2">Funciona con las <span class="text-[#FFD700]">Apps</span> que Usas a Diario</h2>
+      <p class="text-gray-500 text-sm md:text-base">Funciona mejor con <a href="https://aichef.pro" class="text-[#FFD700] hover:underline">AI Chef Pro</a>. Compatible con ChatGPT, Claude, Gemini, Perplexity, Excel, Google Sheets y más</p>
+    </div>
+    <div class="relative overflow-hidden">
+      <div class="absolute left-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-16 md:w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+      <div class="flex items-center gap-6 md:gap-8 animate-marquee-scroll" style="width: max-content;">
+        {appsRepeated.map((app) => (
+          <div class="flex-shrink-0 flex flex-col items-center gap-2 group">
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gray-100 border border-gray-200/50 flex items-center justify-center p-3 md:p-4 group-hover:bg-white group-hover:shadow-md transition-all duration-300">
+              <img src={app.src} alt={app.name} class="w-full h-full object-contain" loading="lazy" />
+            </div>
+            <span class="text-[10px] md:text-xs text-gray-500 group-hover:text-gray-300 whitespace-nowrap transition-colors duration-300">{app.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 5. CategoriesGrid ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="kt-fade">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">¿Qué Encontrarás en el <span class="text-[#FFD700]">eBook</span>?</h2>
+          <p class="text-gray-400 text-lg">Más de 300 prompts organizados en 12 categorías para toda la hostelería</p>
+        </div>
+      </div>
+
+      <div class="kt-fade">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-2 mb-12 rounded-xl overflow-hidden">
+          {foodStrip.map((src) => (
+            <div class="aspect-square overflow-hidden rounded-lg">
+              <img src={src} alt="" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {categories.map((cat, i) => (
+          <div class="kt-fade" style={`transition-delay:${i * 50}ms`}>
+            <div class="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#FFD700]/50 transition-all duration-300 h-full">
+              <Icon name={cat.icon} class="w-8 h-8 text-[#FFD700] mb-3" />
+              <h3 class="text-white font-semibold text-sm md:text-base mb-1.5">{cat.title}</h3>
+              <p class="text-gray-400 text-sm md:text-base leading-relaxed">{cat.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 6. TestimonialsMarquee ===== */}
+  <section class="py-16 md:py-24 overflow-hidden">
+    <div class="text-center mb-10 px-4">
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Lo Que Dicen los <span class="text-[#FFD700]">Profesionales</span></h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Profesionales de la hostelería que ya usan los prompts del eBook en su día a día</p>
+    </div>
+    <div class="space-y-4">
+      {[{ items: topRow, direction: 'left', duration: 45 }, { items: bottomRow, direction: 'right', duration: 50 }].map((row) => (
+        <div class="overflow-hidden relative">
+          <div class="absolute left-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div class="absolute right-0 top-0 bottom-0 w-16 md:w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div class="flex gap-4 will-change-transform" data-marquee data-direction={row.direction} data-duration={row.duration}>
+            {[...row.items, ...row.items].map((t) => (
+              <div class="flex-shrink-0 w-[300px] md:w-[360px] relative group">
+                <div class="absolute inset-0 rounded-xl bg-[#FFD700]/20 translate-y-1 translate-x-1 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                <div class="relative bg-[#0a0a0a] border border-white/10 rounded-xl p-5 group-hover:border-[#FFD700]/40 group-hover:-translate-y-0.5 group-hover:-translate-x-0.5 transition-all duration-300">
+                  <div class="flex items-center gap-3 mb-3">
+                    <img src={t.avatar} alt={t.name} class="w-10 h-10 rounded-full object-cover border border-white/10" />
+                    <div>
+                      <p class="text-white font-semibold text-sm">{t.name}</p>
+                      <p class="text-gray-500 text-xs">{t.role}</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-300 text-sm leading-relaxed">"{t.text}"</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* ===== 7. WhySection ===== */}
+  <section class="py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.04]">
+      <img src="/lovable-uploads/ai-gallery/cochinillo-asado.jpeg" alt="" class="w-full h-full object-cover" loading="lazy" />
+    </div>
+    <div class="absolute inset-0 bg-[#0a0a0a]/95"></div>
+    <div class="relative max-w-6xl mx-auto z-10">
+      <div class="kt-fade">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">¿Por Qué Este <span class="text-[#FFD700]">eBook</span>?</h2>
+          <p class="text-gray-400 text-lg max-w-3xl mx-auto">No es solo una lista de prompts. Es un sistema completo para dominar la IA en tu negocio de hostelería.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {reasons.map((reason, i) => (
+          <div class="kt-fade" style={`transition-delay:${i * 100}ms`}>
+            <div class="text-center">
+              <div class="w-14 h-14 rounded-2xl bg-[#FFD700]/20 flex items-center justify-center mx-auto mb-4">
+                <Icon name={reason.icon} class="w-7 h-7 text-[#FFD700]" />
+              </div>
+              <h3 class="text-white font-bold mb-2">{reason.title}</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">{reason.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="kt-fade">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 text-center">
+          <p class="text-gray-300 mb-4 text-sm">Diseñado para AI Chef Pro. También funciona perfectamente con cualquier IA conversacional:</p>
+          <div class="flex flex-wrap justify-center gap-2">
+            {compatPills.map((pill) => (
+              <span class={`px-3 py-1.5 rounded-full text-sm font-medium ${pill.highlight ? 'bg-[#FFD700] text-black' : 'bg-white/10 text-gray-300'}`}>{pill.label}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 8. AuthorSection ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="kt-fade">
+        <div class="bg-white/[0.03] border border-white/10 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-shrink-0">
+            <div class="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-[3px] border-[#FFD700]/40 shadow-lg shadow-[#FFD700]/10">
+              <img src="/chef-john-guerrero-ebook.jpg" alt="Chef John Guerrero" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">Creado por</p>
+            <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chef John Guerrero</h3>
+            <p class="text-gray-400 leading-relaxed text-sm md:text-base mb-4">CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Combina su experiencia en el sector con inteligencia artificial aplicada para ayudar a cientos de profesionales a transformar sus negocios gastronómicos.</p>
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              <span class="px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] text-xs font-medium">CEO AI Chef Pro</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">Fundador ChefBusiness</span>
+              <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">+29 años en alta hostelería</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 9. BonusSection ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="kt-fade">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Bonos <span class="text-[#FFD700]">Exclusivos</span></h2>
+          <p class="text-gray-400 text-lg">Además del eBook en PDF, accederás a un <span class="text-white font-medium">dashboard exclusivo</span> con todos los prompts, bonos y herramientas — valorado en €50</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
+        {bonuses.map((b, i) => (
+          <div class="kt-fade" style={`transition-delay:${i * 100}ms`}>
+            <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#FFD700]/40 transition-all group h-full">
+              <div class="h-32 overflow-hidden relative">
+                <img src={b.image} alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]"></div>
+                <span class="absolute bottom-3 left-4 text-[#FFD700] text-xs font-bold tracking-wider uppercase">{b.label}</span>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-2">
+                  <Icon name={b.icon} class="w-5 h-5 text-[#FFD700]" />
+                  <h3 class="text-white font-bold text-base">{b.title}</h3>
+                </div>
+                <p class="text-gray-500 text-xs mb-2">Valor: {b.value}</p>
+                <p class="text-gray-400 text-sm leading-relaxed">{b.desc}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="kt-fade">
+        <div class="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
+          <p class="text-gray-400 mb-2">Valor total</p>
+          <p class="text-3xl text-gray-500 line-through mb-1">€50</p>
+          <p class="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">€9</p>
+          <p class="text-[#FFD700] font-bold text-lg">¡Ahorra €41 HOY!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 10. FreeToolsSection ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="kt-fade">
+        <div class="text-center mb-4">
+          <span class="inline-block mb-4 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-bold tracking-wider uppercase">Bonus extra incluido</span>
+          <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">8 Herramientas Profesionales <span class="text-[#FFD700]">Gratuitas</span></h2>
+          <p class="text-gray-400 text-lg max-w-3xl mx-auto">Con tu compra accedes también a nuestras herramientas profesionales para hostelería. Úsalas directamente desde tu dashboard o desde aquí.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        {freeTools.map((tool, i) => (
+          <div class="kt-fade" style={`transition-delay:${i * 60}ms`}>
+            <a href={tool.href} class="group bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#FFD700]/40 transition-all duration-300 block h-full">
+              <Icon name={tool.icon} class={`w-7 h-7 ${tool.color} mb-3`} />
+              <h3 class="text-white font-semibold text-sm mb-1.5 group-hover:text-[#FFD700] transition-colors">{tool.title}</h3>
+              <p class="text-gray-500 text-xs leading-relaxed mb-3">{tool.desc}</p>
+              <span class="text-[#FFD700] text-xs font-medium flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                Usar gratis <Icon name="ArrowRight" class="w-3 h-3" />
+              </span>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 11. BuyBox ===== */}
+  <section id="comprar" class="py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.06]">
+      <img src="/lovable-uploads/ai-gallery/gambas-al-ajillo.jpeg" alt="" class="w-full h-full object-cover" loading="lazy" />
+    </div>
+    <div class="absolute inset-0 bg-[#0a0a0a]/90"></div>
+    <div class="relative max-w-lg mx-auto z-10">
+      <div class="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center backdrop-blur-sm">
+        <div class="flex items-center justify-center gap-4 mb-3">
+          <span class="text-2xl text-gray-500 line-through">€50</span>
+          <span class="text-5xl md:text-6xl font-extrabold text-[#FFD700]">€9</span>
+          <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">-90%</span>
+        </div>
+        <p class="text-gray-400 text-sm mb-6">Precio especial de lanzamiento — 90% de descuento</p>
+        <a href={stripeLink} class="inline-block w-full px-8 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">SÍ, QUIERO EL EBOOK — €9</a>
+        <div class="flex flex-col items-center gap-2 mt-5">
+          <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 12. GuaranteeSection ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="kt-fade">
+        <img src="/money-back-badge.png" alt="100% Money Back Guaranteed" class="w-28 h-28 md:w-32 md:h-32 mx-auto mb-6 object-contain" />
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Garantía de Satisfacción <span class="text-[#FFD700]">100%</span></h2>
+        <p class="text-gray-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">Si el eBook no supera tus expectativas, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.</p>
+      </div>
+      <div class="kt-fade" style="transition-delay:150ms">
+        <div class="grid grid-cols-3 gap-6">
+          {guaranteeStats.map((s) => (
+            <div>
+              <p class="text-3xl md:text-4xl font-extrabold text-[#FFD700]">{s.number}</p>
+              <p class="text-gray-400 text-sm mt-1">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 13. FaqAccordion ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="max-w-3xl mx-auto">
+      <div class="kt-fade">
+        <h2 class="text-2xl md:text-4xl font-bold text-white text-center mb-12">Preguntas <span class="text-[#FFD700]">Frecuentes</span></h2>
+      </div>
+      <div class="space-y-3">
+        {faqs.map((faq, i) => (
+          <div class="kt-fade" style={`transition-delay:${i * 50}ms`}>
+            <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+              <button type="button" data-faq-btn aria-expanded="false" class="w-full flex items-center justify-between p-5 text-left">
+                <span class="text-white font-medium pr-4">{faq.q}</span>
+                <Icon name="ChevronDown" class="w-5 h-5 text-[#FFD700] flex-shrink-0 transition-transform duration-300" />
+              </button>
+              <div data-faq-panel class="grid transition-all duration-300 grid-rows-[0fr]">
+                <div class="overflow-hidden">
+                  <p class="px-5 pb-5 text-gray-400 leading-relaxed">{faq.a}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 14. CtaFinal ===== */}
+  <section class="py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.06]">
+      <img src="/lovable-uploads/ai-gallery/falso-risotto-semillas-plancton.jpeg" alt="" class="w-full h-full object-cover" loading="lazy" />
+    </div>
+    <div class="absolute inset-0 bg-[#0a0a0a]/90"></div>
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,215,0,0.06) 0%, transparent 70%);"></div>
+    <div class="relative max-w-3xl mx-auto text-center z-10">
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-4">Es Hora de Dominar la IA en tu Negocio</h2>
+      <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">No dejes pasar esta oportunidad. Únete a miles de profesionales de la hostelería y restauración que ya están obteniendo resultados con IA.</p>
+      <div class="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
+        <div class="flex flex-col items-start gap-3 mb-8 max-w-md mx-auto">
+          {ctaItems.map((item) => (
+            <div class="flex items-start gap-3">
+              <Icon name="Check" class="w-5 h-5 text-[#FFD700] flex-shrink-0 mt-0.5" />
+              <span class="text-gray-200 text-left">{item}</span>
+            </div>
+          ))}
+        </div>
+        <div class="flex items-center justify-center gap-4 mb-4">
+          <span class="text-xl text-gray-500 line-through">€50</span>
+          <span class="text-4xl md:text-5xl font-extrabold text-[#FFD700]">€9</span>
+        </div>
+        <a href={stripeLink} class="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">SÍ, QUIERO EL EBOOK — €9</a>
+        <div class="flex flex-col items-center gap-2 mt-5">
+          <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 15. TryPlatformBanner ===== */}
+  <section class="py-16 md:py-24 px-4">
+    <div class="kt-fade">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-gray-400 text-sm tracking-[0.2em] uppercase mb-4">¿Aún no conoces la plataforma?</p>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 leading-tight">Prueba AI Chef Pro <span class="text-[#FFD700]">Gratis</span></h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-4">La suite de IA más completa para hostelería y restauración. Disponible en 7 idiomas.</p>
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+          {langPills.map((lang) => (
+            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">{lang}</span>
+          ))}
+        </div>
+        <a href="https://aichef.pro" class="inline-flex items-center gap-2 px-8 py-4 rounded-xl border-2 border-[#FFD700] text-[#FFD700] font-bold text-lg hover:bg-[#FFD700] hover:text-black transition-all hover:scale-[1.02] active:scale-[0.98]">
+          Descubre AI Chef Pro
+          <Icon name="ArrowRight" class="w-5 h-5" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ===== 16. Footer + AlreadyBought ===== */}
+  <footer class="py-8 pb-24 md:pb-8 px-4 border-t border-white/10">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Todos los derechos reservados</p>
+      <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
+        <a href="https://aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">aichef.pro</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="/kit-escandallos" class="text-gray-500 hover:text-[#FFD700] transition-colors">Kit Escandallos</a>
+        <span class="text-gray-700 hidden md:inline">·</span>
+        <a href="mailto:info@aichef.pro" class="text-gray-500 hover:text-[#FFD700] transition-colors">Contacto</a>
+      </div>
+      {/* AlreadyBought — fetch a /.netlify/functions/resend-access con product 'pro-prompts-ebook'
+          (valor por defecto del componente en la SPA; resend-access lo usa como clave de PRODUCTS). */}
+      <div class="border-t border-white/10 pt-8 mt-4">
+        <div class="text-center">
+          <p class="text-white font-semibold text-sm mb-1">¿Ya compraste el eBook? Vuelve a entrar al dashboard</p>
+          <p class="text-gray-500 text-xs mb-3">Introduce tu email de compra y te enviaremos el enlace de acceso</p>
+          <form data-ab-form data-ab-product="pro-prompts-ebook" class="flex items-center justify-center gap-2 max-w-sm mx-auto">
+            <input type="email" name="email" placeholder="Tu email de compra" required class="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-[#FFD700]/40" />
+            <button type="submit" data-ab-submit class="px-4 py-2 bg-white/10 border border-white/10 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/15 hover:text-white transition-all disabled:opacity-50 flex items-center gap-2">
+              <Icon name="Mail" class="w-4 h-4" />
+              Reenviar acceso
+            </button>
+          </form>
+          <div data-ab-success class="hidden items-center justify-center gap-2 text-emerald-400 text-sm">
+            <Icon name="CheckCircle" class="w-4 h-4" />
+            <span>Enlace de acceso enviado a tu email</span>
+          </div>
+          <p data-ab-error class="hidden text-red-400 text-xs mt-2">No encontramos una compra con ese email. ¿Usaste otro?</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  {/* ===== 17. WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
+  <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Soporte por WhatsApp" class="group fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40">
+    <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+      <span class="text-xs font-medium text-gray-800">¿Problemas con tu compra? Escríbenos</span>
+      <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
+    </div>
+    <div class="relative transition-transform duration-300 hover:scale-110">
+      <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+      <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-white">
+        <img src="/assets/chef-john-guerrero-optimized.jpg" alt="Chef John Guerrero" loading="lazy" width="56" height="56" class="w-full h-full object-cover" />
+      </div>
+      <div class="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+        <svg viewBox="0 0 24 24" fill="white" class="w-3 h-3 sm:w-3.5 sm:h-3.5">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </div>
+    </div>
+  </a>
+
+  {/* ===== 18. StickyBar (móvil) — DOM exacto de StickyBar.tsx ===== */}
+  <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-900/95 backdrop-blur-md border-t border-white/10 px-4 py-3">
+    <div class="flex items-center justify-between gap-3">
+      <div>
+        <p class="text-white text-sm font-bold">OBTENER EL EBOOK — €9</p>
+      </div>
+      <a href={stripeLink} class="px-6 py-2.5 bg-[#FFD700] text-black font-bold text-sm rounded-lg whitespace-nowrap hover:bg-[#FFD700]/90 transition-all">COMPRAR AHORA</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* FadeIn (paridad con ../ebook/FadeIn de la SPA: opacity + translateY(24px), 700ms,
+     one-shot al entrar en viewport). El stagger llega por transition-delay inline. */
+  .kt-fade { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .kt-fade.kt-visible { opacity: 1; transform: none; }
+  /* Badge del hero (animate-fade-in de la SPA) */
+  .animate-fade-in { animation: kt-fade-in 0.6s ease-out both; }
+  @keyframes kt-fade-in { from { opacity: 0; } to { opacity: 1; } }
+  /* Pulso del botón WhatsApp (animate-ping de la SPA) */
+  .animate-ping { animation: kt-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+  @keyframes kt-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+</style>
+
+<script>
+  // ---- FadeIn reveal (IntersectionObserver mínimo) ----
+  const faders = document.querySelectorAll('.kt-fade');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add('kt-visible'); obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.15 });
+    faders.forEach((el) => io.observe(el));
+  } else {
+    faders.forEach((el) => el.classList.add('kt-visible'));
+  }
+
+  // ---- FAQ accordion (single-open, paridad FaqAccordion.tsx). Se togglea inline
+  //      gridTemplateRows (1fr/0fr) para no depender de que Tailwind genere la clase
+  //      arbitraria desde el texto del script; el CSS `transition-all` anima el cambio. ----
+  const faqBtns = Array.from(document.querySelectorAll('[data-faq-btn]'));
+  faqBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const panel = btn.nextElementSibling as HTMLElement;
+      const chevron = btn.querySelector('svg');
+      const isOpen = panel.style.gridTemplateRows === '1fr';
+      faqBtns.forEach((b) => {
+        (b.nextElementSibling as HTMLElement).style.gridTemplateRows = '0fr';
+        b.querySelector('svg')?.classList.remove('rotate-180');
+        b.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        panel.style.gridTemplateRows = '1fr';
+        chevron?.classList.add('rotate-180');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ---- Testimonials marquee (paridad MarqueeRow: rAF, hover pausa) ----
+  document.querySelectorAll('[data-marquee]').forEach((el) => {
+    const node = el as HTMLElement;
+    const direction = node.dataset.direction || 'left';
+    const duration = Number(node.dataset.duration) || 40;
+    let raf = 0;
+    let position = direction === 'left' ? 0 : -(node.scrollWidth / 2);
+    const speed = (node.scrollWidth / 2) / (duration * 60);
+    const animate = () => {
+      if (direction === 'left') {
+        position -= speed;
+        if (position <= -(node.scrollWidth / 2)) position = 0;
+      } else {
+        position += speed;
+        if (position >= 0) position = -(node.scrollWidth / 2);
+      }
+      node.style.transform = `translateX(${position}px)`;
+      raf = requestAnimationFrame(animate);
+    };
+    raf = requestAnimationFrame(animate);
+    node.addEventListener('mouseenter', () => cancelAnimationFrame(raf));
+    node.addEventListener('mouseleave', () => { raf = requestAnimationFrame(animate); });
+  });
+
+  // ---- AlreadyBought (fetch a /.netlify/functions/resend-access) ----
+  const abForm = document.querySelector('[data-ab-form]') as HTMLFormElement | null;
+  if (abForm) {
+    const successEl = document.querySelector('[data-ab-success]') as HTMLElement;
+    const errorEl = document.querySelector('[data-ab-error]') as HTMLElement;
+    const submitBtn = abForm.querySelector('[data-ab-submit]') as HTMLButtonElement;
+    abForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const emailInput = abForm.querySelector('input[name="email"]') as HTMLInputElement;
+      const email = emailInput.value.trim();
+      if (!email) return;
+      submitBtn.disabled = true;
+      errorEl.classList.add('hidden');
+      try {
+        const res = await fetch('/.netlify/functions/resend-access', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, product: abForm.dataset.abProduct }),
+        });
+        if (res.ok) {
+          abForm.classList.add('hidden');
+          successEl.classList.remove('hidden');
+          successEl.classList.add('flex');
+        } else {
+          errorEl.classList.remove('hidden');
+          submitBtn.disabled = false;
+        }
+      } catch {
+        errorEl.classList.remove('hidden');
+        submitBtn.disabled = false;
+      }
+    });
+  }
+</script>

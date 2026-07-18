@@ -1,0 +1,407 @@
+---
+// /mega-pack-tareas — PORT ONE-OFF de la SPA monolítica src/pages/MegaPackTareas.tsx.
+// Pack que agrupa los 13 kits de tareas recurrentes. Página SOLO ES (el Helmet de la SPA
+// está hardcodeado en español y no hay variantes de idioma) → BaseLayout locales={['es']}
+// (emite hreflang es + x-default y nada más). Canonical: https://aichef.pro/mega-pack-tareas.
+// build format 'file' (global, astro.config) → /mega-pack-tareas sin barra final.
+//
+// Paridad 1:1 con la SPA: mismo ORDEN de secciones, misma copy VERBATIM, acento EMERALD
+// (no gold), JSON-LD Product íntegro y CTA con la env var EXACTA. Los componentes compartidos
+// (SaasDiscoveryBanner, PaymentBadges, LogoBadge, WorldwideBanner, WhatsAppProductSupport,
+// AlreadyBought) van inlineados server-side; FadeIn → CSS (.mp-fade + IntersectionObserver);
+// shadcn Avatar (Radix) → span+img nativo; iconos lucide vía Icon.astro.
+//
+// DESVIACIONES de paridad aceptadas (cross-cutting, idénticas al resto de landings portadas):
+//   · meta robots se OMITE (staging noindex vía netlify.toml; se añade en el cutover).
+//   · og:type = "website" (BaseLayout) vs "product" de la SPA; og:title/og:description los
+//     unifica BaseLayout con title/description (la SPA tenía og:* propios distintos). Se acepta
+//     porque BaseLayout centraliza OG en TODAS las rutas Astro (gates verdes previos).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback '#comprar')
+// para que Vite la inline en build.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_MEGA_PACK_TAREAS || '#comprar';
+
+const kits = [
+  { name: 'Restaurante Casual', templates: 11, slug: '/kit-tareas' },
+  { name: 'Cafetería / Brunch', templates: 11, slug: '/kit-tareas-cafeteria' },
+  { name: 'Pizzería', templates: 11, slug: '/kit-tareas-pizzeria' },
+  { name: 'Hamburguesería', templates: 11, slug: '/kit-tareas-hamburgueseria' },
+  { name: 'Dark Kitchen', templates: 11, slug: '/kit-tareas-dark-kitchen' },
+  { name: 'Pastelería / Obrador', templates: 11, slug: '/kit-tareas-pasteleria' },
+  { name: 'Bar / Cocktails', templates: 11, slug: '/kit-tareas-bar' },
+  { name: 'Catering / Eventos', templates: 11, slug: '/kit-tareas-catering' },
+  { name: 'Hotel Completo', templates: 19, slug: '/kit-tareas-hotel' },
+  { name: 'Heladería Artesanal', templates: 11, slug: '/kit-tareas-heladeria' },
+  { name: 'Chocolatería / Bombonería', templates: 11, slug: '/kit-tareas-chocolateria' },
+  { name: 'Restaurante Creativo / De Autor', templates: 13, slug: '/kit-tareas-restaurante-creativo' },
+  { name: 'Chef Privado / Personal Chef', templates: 9, slug: '/kit-tareas-chef-privado' },
+];
+
+const totalTemplates = kits.reduce((sum, k) => sum + k.templates, 0);
+const totalIndividual = 12 * 12 + 18.5 + 18; // 12 kits at €12 + hotel €18.50 + chef privado €18
+
+const whatsInKit = [
+  'Apertura y cierre operativo (cocina, sala, barra)',
+  'Apertura y cierre del negocio/local',
+  'Apertura y cierre de caja (arqueo, cuadre)',
+  'Tareas por perfil profesional',
+  'Tareas del manager (diario, semanal, mensual)',
+  'Tareas semanales y mensuales',
+  'Eventos y festivos del concepto',
+  'Plantilla personalizable en blanco',
+  'BONUS: Briefing de servicio',
+  'BONUS: Calendario anual de fechas clave',
+];
+
+const heroAvatars = [1, 2, 3, 4, 5].map((n) => `/avatars/avatar-${n}.jpg`);
+
+// ---- SEO (paridad Helmet de MegaPackTareas.tsx) ----
+const seoTitle = 'Mega Pack Tareas Recurrentes — 13 Kits Hostelería | AI Chef Pro';
+const seoDescription = `${totalTemplates} plantillas Excel en 13 kits de tareas recurrentes para hostelería. Restaurante, cafetería, pizzería, bar, hotel, catering y más. Ahorra más del 45%. Solo 89 EUR.`;
+const ogImage = 'https://aichef.pro/og-kit-tareas-hotel.jpg';
+
+// ---- JSON-LD Product (íntegro, equivalente exacto al <script> del Helmet) ----
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: `Mega Pack Tareas Recurrentes — ${totalTemplates} Plantillas en 13 Kits`,
+  description: `Pack completo con los 13 kits de tareas recurrentes para hostelería. ${totalTemplates} plantillas Excel editables.`,
+  brand: { '@type': 'Brand', name: 'AI Chef Pro' },
+  offers: {
+    '@type': 'Offer',
+    url: 'https://aichef.pro/mega-pack-tareas',
+    priceCurrency: 'EUR',
+    price: '89.00',
+    priceValidUntil: '2026-12-31',
+    availability: 'https://schema.org/InStock',
+  },
+};
+
+// ---- WhatsApp (constante, paridad WhatsAppProductSupport) ----
+const waPhone = '34744717942';
+const waMessage = encodeURIComponent('Hola, necesito ayuda con mi compra en AI Chef Pro. ');
+const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
+---
+
+<BaseLayout
+  title={seoTitle}
+  description={seoDescription}
+  lang={lang}
+  basePath="/mega-pack-tareas"
+  locales={['es']}
+  ogImage={ogImage}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <noscript><style>.mp-fade{opacity:1!important;transform:none!important;}</style></noscript>
+
+  <div class="min-h-screen bg-[#0a0a0a]">
+    {/* ===== SaasDiscoveryBanner ===== */}
+    <div class="bg-gradient-to-r from-[#FFD700]/10 via-[#FFD700]/5 to-[#FFD700]/10 border-b border-[#FFD700]/20">
+      <div class="max-w-6xl mx-auto px-4 py-2.5 flex items-center justify-center gap-2 sm:gap-3 text-center">
+        <Icon name="Sparkles" class="h-3.5 w-3.5 text-[#FFD700] flex-shrink-0 hidden sm:block" />
+        <p class="text-xs sm:text-sm text-gray-300">
+          <span class="hidden sm:inline">Estos productos digitales complementan </span>
+          <a href="/" class="font-semibold text-[#FFD700] hover:text-[#FFD700]/80 transition-colors">AI Chef Pro</a>
+          <span class="hidden sm:inline"> — el SaaS de IA para hostelería con +55 aplicaciones</span>
+          <span class="sm:hidden"> — SaaS de IA para hostelería</span>
+        </p>
+        <a href="/" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#FFD700]/15 border border-[#FFD700]/30 text-[#FFD700] text-xs font-semibold hover:bg-[#FFD700]/25 transition-colors whitespace-nowrap flex-shrink-0">
+          Descubrir
+          <Icon name="ArrowRight" class="h-3 w-3" />
+        </a>
+      </div>
+    </div>
+
+    {/* ===== Hero ===== */}
+    <section class="relative px-4 pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden">
+      <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(34,197,94,0.12) 0%, transparent 70%);"></div>
+      <div class="relative max-w-4xl mx-auto text-center z-10">
+        {/* LogoBadge (isHub false en landing de producto) */}
+        <div>
+          <nav class="flex justify-center pt-1 mb-2 md:mb-3">
+            <div class="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 backdrop-blur-sm text-xs text-gray-400">
+              <a href="/productos-digitales" class="hover:text-[#FFD700] transition-colors whitespace-nowrap">← Productos Digitales</a>
+              <span class="text-white/20" aria-hidden="true">·</span>
+              <a href="/" class="hover:text-[#FFD700] transition-colors">Inicio</a>
+            </div>
+          </nav>
+          <div class="flex justify-center py-6 md:py-8">
+            <a href="/" class="inline-flex items-center px-6 py-3 bg-white rounded-2xl shadow-lg shadow-white/5 hover:shadow-white/10 transition-shadow">
+              <img src="/logo-ai-chef-pro.svg" alt="AI Chef Pro" class="h-8 md:h-9 w-auto" />
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-2 mb-6">
+          <div class="flex -space-x-3 justify-center">
+            {heroAvatars.map((av) => (
+              <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full border-2 border-[#0a0a0a] w-9 h-9 sm:w-10 sm:h-10 ring-2 ring-[#0a0a0a]">
+                <img src={av} alt="" class="aspect-square h-full w-full" />
+              </span>
+            ))}
+          </div>
+          <div class="flex items-center gap-0.5">
+            {Array.from({ length: 5 }).map(() => (
+              <Icon name="Star" class="h-4 w-4 fill-[#FFD700] text-[#FFD700]" />
+            ))}
+          </div>
+        </div>
+
+        <span class="inline-block mb-6 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-bold animate-fade-in">
+          🎁 MEGA PACK — 13 Kits · {totalTemplates} Plantillas · Ahorra más del 45%
+        </span>
+
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+          Mega Pack <span class="text-emerald-400">Tareas Recurrentes</span>
+          <span class="block text-2xl md:text-4xl lg:text-5xl mt-2 text-gray-200">
+            Los 13 Kits en Un Solo Pack
+          </span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+          {totalTemplates} plantillas Excel editables para 13 conceptos de hostelería. Desde restaurante casual hasta hotel completo. Apertura, cierre, tareas por perfil, gestión de negocio, caja y más.
+        </p>
+
+        <div class="inline-block bg-white/5 border-2 border-emerald-500/30 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
+          <div class="flex items-center justify-center gap-2 mb-2">
+            <span class="text-sm text-gray-400">Si compras los 13 por separado:</span>
+            <span class="text-lg text-gray-500 line-through">{Math.round(totalIndividual)} EUR</span>
+          </div>
+          <div class="flex items-center justify-center gap-4 mb-3">
+            <span class="text-5xl md:text-6xl font-extrabold text-emerald-400">89 EUR</span>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold">-{Math.round((1 - 89/totalIndividual) * 100)}%</span>
+          </div>
+          <p class="text-sm text-gray-400 mb-5">Pago único · Sin suscripción · Acceso inmediato a los 13 kits</p>
+          <a href={stripeLink} class="inline-block w-full md:w-auto px-10 py-4 bg-emerald-500 text-white font-bold text-lg rounded-xl hover:bg-emerald-600 transition-all hover:scale-[1.02] active:scale-[0.98]">
+            COMPRAR MEGA PACK — 89 EUR
+          </a>
+          <div class="flex flex-col items-center gap-2 mt-4">
+            <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== 13 Kits Grid ===== */}
+    <section class="py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="mp-fade">
+          <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">
+              <span class="text-emerald-400">13</span> Kits Incluidos
+            </h2>
+            <p class="text-gray-400 text-lg">{totalTemplates} plantillas Excel editables · Cada kit personalizado para su concepto de negocio</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {kits.map((kit, i) => (
+            <div class="mp-fade" style={`transition-delay:${i * 30}ms`}>
+              <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-emerald-500/40 transition-all h-full group">
+                <Icon name="Package" class="w-7 h-7 text-emerald-400 mb-3" />
+                <h3 class="text-white font-semibold text-sm mb-1">{kit.name}</h3>
+                <p class="text-gray-500 text-xs">{kit.templates} plantillas</p>
+                <a href={kit.slug} class="inline-flex items-center gap-1 text-emerald-400 text-xs mt-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Ver detalle <Icon name="ArrowRight" class="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ===== What's in each kit ===== */}
+    <section class="py-16 md:py-24 px-4 bg-white/[0.02]">
+      <div class="max-w-4xl mx-auto">
+        <div class="mp-fade">
+          <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">¿Qué Incluye <span class="text-emerald-400">Cada Kit</span>?</h2>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+          {whatsInKit.map((item) => (
+            <div class="mp-fade">
+              <div class="flex items-center gap-3 p-3">
+                <Icon name="Check" class="w-5 h-5 text-emerald-400 flex-shrink-0" />
+                <span class="text-gray-200">{item}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ===== Guarantee ===== */}
+    <section class="py-16 md:py-24 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="mp-fade">
+          <img src="/money-back-badge.png" alt="100% Money Back" class="w-28 h-28 mx-auto mb-6 object-contain" />
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Garantía de Satisfacción <span class="text-emerald-400">100%</span></h2>
+          <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+            Si el Mega Pack no te ayuda a organizar tu negocio, te devolvemos el 100% de tu dinero. 30 días, sin preguntas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== Final CTA ===== */}
+    <section class="py-16 md:py-24 px-4">
+      <div class="max-w-lg mx-auto">
+        <div class="bg-white/5 border-2 border-emerald-500/50 rounded-2xl p-8 md:p-10 text-center">
+          <p class="text-gray-400 mb-2">Los 13 kits por separado: <span class="line-through">{Math.round(totalIndividual)} EUR</span></p>
+          <p class="text-5xl md:text-6xl font-extrabold text-emerald-400 mb-2">89 EUR</p>
+          <p class="text-emerald-400 font-bold text-lg mb-6">Ahorra {Math.round(totalIndividual - 89)} EUR</p>
+          <a href={stripeLink} class="inline-block w-full px-8 py-4 bg-emerald-500 text-white font-bold text-lg rounded-xl hover:bg-emerald-600 transition-all hover:scale-[1.02] active:scale-[0.98]">
+            SÍ, QUIERO EL MEGA PACK — 89 EUR
+          </a>
+          <div class="flex flex-col items-center gap-2 mt-5">
+            <img src="/powered-by-stripe.png" alt="Powered by Stripe — Visa, Mastercard, Maestro, Google Pay, Apple Pay" class="w-full max-w-[260px] bg-white rounded-lg px-3 py-1.5" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== WorldwideBanner ===== */}
+    <section class="py-10 px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white/[0.03] border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-5">
+          <div class="w-14 h-14 rounded-full bg-[#FFD700]/10 flex items-center justify-center flex-shrink-0">
+            <Icon name="Globe" class="w-7 h-7 text-[#FFD700]" />
+          </div>
+          <div class="text-center md:text-left">
+            <p class="text-white font-semibold mb-1">Compra desde cualquier parte del mundo</p>
+            <p class="text-gray-400 text-sm leading-relaxed">Productos digitales en español con descarga inmediata. Paga con tarjeta, Apple Pay o Google Pay desde España, México, Colombia, Argentina, Chile, EE.UU. o cualquier otro país.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ===== Footer + AlreadyBought ===== */}
+    <footer class="py-8 pb-24 md:pb-8 px-4 border-t border-white/10">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Todos los derechos reservados</p>
+        <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-sm">
+          <a href="https://aichef.pro" class="text-gray-500 hover:text-emerald-400 transition-colors">aichef.pro</a>
+          <span class="text-gray-700 hidden md:inline">·</span>
+          <a href="/productos-digitales" class="text-gray-500 hover:text-emerald-400 transition-colors">Todos los Productos</a>
+          <span class="text-gray-700 hidden md:inline">·</span>
+          <a href="mailto:info@aichef.pro" class="text-gray-500 hover:text-emerald-400 transition-colors">Contacto</a>
+        </div>
+        {/* AlreadyBought — fetch a /.netlify/functions/resend-access con product "mega-pack-tareas" */}
+        <div class="border-t border-white/10 pt-8 mt-4">
+          <div class="text-center">
+            <p class="text-white font-semibold text-sm mb-1">¿Ya compraste el Mega Pack? Vuelve a entrar al dashboard</p>
+            <p class="text-gray-500 text-xs mb-3">Introduce tu email de compra y te enviaremos el enlace de acceso</p>
+            <form data-ab-form data-ab-product="mega-pack-tareas" class="flex items-center justify-center gap-2 max-w-sm mx-auto">
+              <input type="email" name="email" placeholder="Tu email de compra" required class="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-[#FFD700]/40" />
+              <button type="submit" data-ab-submit class="px-4 py-2 bg-white/10 border border-white/10 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/15 hover:text-white transition-all disabled:opacity-50 flex items-center gap-2">
+                <Icon name="Mail" class="w-4 h-4" />
+                Reenviar acceso
+              </button>
+            </form>
+            <div data-ab-success class="hidden items-center justify-center gap-2 text-emerald-400 text-sm">
+              <Icon name="CheckCircle" class="w-4 h-4" />
+              <span>Enlace de acceso enviado a tu email</span>
+            </div>
+            <p data-ab-error class="hidden text-red-400 text-xs mt-2">No encontramos una compra con ese email. ¿Usaste otro?</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {/* ===== WhatsAppProductSupport (tooltip vía CSS group-hover) ===== */}
+    <a href={waUrl} target="_blank" rel="noopener noreferrer" aria-label="Soporte por WhatsApp" class="group fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40">
+      <div class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm shadow-lg rounded-lg px-3 py-2 whitespace-nowrap transition-all duration-300 opacity-0 translate-x-2 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0">
+        <span class="text-xs font-medium text-gray-800">¿Problemas con tu compra? Escríbenos</span>
+        <div class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-white/95"></div>
+      </div>
+      <div class="relative transition-transform duration-300 hover:scale-110">
+        <div class="absolute inset-0 rounded-full bg-green-500/30 animate-ping"></div>
+        <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-white shadow-xl overflow-hidden bg-white">
+          <img src="/assets/chef-john-guerrero-optimized.jpg" alt="Chef John Guerrero" loading="lazy" width="56" height="56" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute -bottom-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+          <svg viewBox="0 0 24 24" fill="white" class="w-3 h-3 sm:w-3.5 sm:h-3.5">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+        </div>
+      </div>
+    </a>
+
+    {/* ===== Sticky Bar (móvil) ===== */}
+    <div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-gray-900/95 backdrop-blur-md border-t border-emerald-500/30 px-3 py-3">
+      <div class="flex items-center justify-between gap-2 max-w-screen-sm mx-auto">
+        <p class="text-white text-xs font-bold truncate">MEGA PACK 13 KITS — 89 EUR</p>
+        <a href={stripeLink} class="flex-shrink-0 px-5 py-2.5 bg-emerald-500 text-white font-bold text-sm rounded-lg hover:bg-emerald-600 transition-all">
+          COMPRAR
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* FadeIn (paridad con ../ebook/FadeIn de la SPA: opacity + translateY(24px), 700ms,
+       one-shot al entrar en viewport). El stagger llega por transition-delay inline. */
+    .mp-fade { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .mp-fade.mp-visible { opacity: 1; transform: none; }
+    /* Badge del hero (animate-fade-in de la SPA) */
+    .animate-fade-in { animation: mp-fade-in 0.6s ease-out both; }
+    @keyframes mp-fade-in { from { opacity: 0; } to { opacity: 1; } }
+    /* Pulso del botón WhatsApp (animate-ping de la SPA) */
+    .animate-ping { animation: mp-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    @keyframes mp-ping { 75%, 100% { transform: scale(2); opacity: 0; } }
+  </style>
+
+  <script>
+    // ---- FadeIn reveal (IntersectionObserver mínimo, threshold 0.1 == FadeIn.tsx) ----
+    const faders = document.querySelectorAll('.mp-fade');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) { en.target.classList.add('mp-visible'); obs.unobserve(en.target); }
+        });
+      }, { threshold: 0.1 });
+      faders.forEach((el) => io.observe(el));
+    } else {
+      faders.forEach((el) => el.classList.add('mp-visible'));
+    }
+
+    // ---- AlreadyBought (fetch a /.netlify/functions/resend-access, product "mega-pack-tareas") ----
+    const abForm = document.querySelector('[data-ab-form]') as HTMLFormElement | null;
+    if (abForm) {
+      const successEl = document.querySelector('[data-ab-success]') as HTMLElement;
+      const errorEl = document.querySelector('[data-ab-error]') as HTMLElement;
+      const submitBtn = abForm.querySelector('[data-ab-submit]') as HTMLButtonElement;
+      abForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const emailInput = abForm.querySelector('input[name="email"]') as HTMLInputElement;
+        const email = emailInput.value.trim();
+        if (!email) return;
+        submitBtn.disabled = true;
+        errorEl.classList.add('hidden');
+        try {
+          const res = await fetch('/.netlify/functions/resend-access', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, product: abForm.dataset.abProduct }),
+          });
+          if (res.ok) {
+            abForm.classList.add('hidden');
+            successEl.classList.remove('hidden');
+            successEl.classList.add('flex');
+          } else {
+            errorEl.classList.remove('hidden');
+            submitBtn.disabled = false;
+          }
+        } catch {
+          errorEl.classList.remove('hidden');
+          submitBtn.disabled = false;
+        }
+      });
+    }
+  </script>
+</BaseLayout>

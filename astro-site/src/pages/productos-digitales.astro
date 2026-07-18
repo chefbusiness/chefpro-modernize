@@ -1,0 +1,30 @@
+---
+// /productos-digitales — HUB de productos digitales. Thin wrapper: envuelve el componente
+// ProductosDigitalesHubPage en BaseLayout con el SEO EXACTO de la SPA (ProductosDigitales.tsx).
+//
+// SOLO ES: la SPA hardcodea el Helmet en español y esta ruta NO tiene variantes de idioma
+// → locales={['es']} (BaseLayout emite hreflang es + x-default y nada más). Canonical:
+// https://aichef.pro/productos-digitales. Meta robots se OMITE (desviación cross-cutting;
+// se añade en el cutover). NO hay CTA de dinero en el hub (las cards enlazan a las landings)
+// → SIN env vars de Stripe. build format 'file' (astro.config.mjs).
+//
+// PARIDAD OG: la SPA emite og:title/og:description PROPIOS y más cortos que el <title>/description.
+// BaseLayout deriva OG de title/description (comportamiento establecido, gate-verde en 40+ páginas;
+// la OG real en prod la sirve la edge function og-meta.ts). Se acepta como en el resto del port.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductosDigitalesHubPage from '../components/pages/ProductosDigitalesHubPage.astro';
+
+const lang = 'es';
+---
+
+<BaseLayout
+  title="Productos Digitales para Hostelería — Plantillas, Guías, Prompts IA | AI Chef Pro"
+  description="eBooks, plantillas Excel, prompts de IA, guías APPCC y herramientas digitales para chefs, gerentes y dueños de restaurante. Recursos profesionales desde €9."
+  keywords="productos digitales hostelería, prompts IA restaurante, plantilla escandallo excel, plantillas APPCC restaurante, ebook hostelería, herramientas digitales restaurante, food cost excel, seguridad alimentaria hostelería, AI Chef Pro"
+  lang={lang}
+  basePath="/productos-digitales"
+  locales={['es']}
+  ogImage="https://aichef.pro/og-productos-digitales.jpg"
+>
+  <ProductosDigitalesHubPage />
+</BaseLayout>
