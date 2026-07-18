@@ -5,22 +5,45 @@ import { LOCALES, DEFAULT_LOCALE, SITE, type Locale } from '../i18n/config';
 interface Props {
   title: string;
   description: string;
+  /** meta keywords — paridad con SEOHead.tsx de la SPA (pages.*.seo_keywords). */
+  keywords?: string;
   lang?: Locale;
   /** Ruta canónica SIN prefijo de idioma, con barra inicial. Ej: "/precios" */
   basePath?: string;
   /** Override para páginas con slugs nativos por idioma: { es: '/precios', en: '/en/pricing', ... } */
   alternates?: Partial<Record<Locale, string>>;
   ogImage?: string;
+  /** Subconjunto de idiomas para los que ESTA ruta existe. Por defecto: TODOS (LOCALES).
+   *  Páginas mono-idioma (p.ej. /formacion-presencial, solo ES) pasan locales={['es']}
+   *  para NO emitir hreflang de variantes inexistentes. x-default apunta a DEFAULT_LOCALE
+   *  si está en la lista, si no a la primera de la lista. Las páginas que NO pasan la prop
+   *  se comportan EXACTAMENTE igual que antes. */
+  locales?: Locale[];
 }
 
 const {
   title,
   description,
+  keywords,
   lang = DEFAULT_LOCALE,
   basePath = '/',
   alternates,
   ogImage,
+  locales,
 } = Astro.props;
+
+// Idiomas para los que se emiten hreflang/og:locale:alternate (default: todos).
+const emittedLocales: readonly Locale[] = locales ?? LOCALES;
+const xDefaultLocale: Locale = emittedLocales.includes(DEFAULT_LOCALE)
+  ? DEFAULT_LOCALE
+  : emittedLocales[0];
+
+// og:locale por idioma (paridad exacta con getOGLocale() de SEOHead.tsx en la SPA).
+const OG_LOCALE: Record<Locale, string> = {
+  es: 'es_ES', en: 'en_US', fr: 'fr_FR', de: 'de_DE', it: 'it_IT', pt: 'pt_PT', nl: 'nl_NL',
+};
+const ogLocale = OG_LOCALE[lang];
+const ogImageAlt = `${title} - AI Chef Pro`;
 
 // hreflang + canonical nativos para TODAS las páginas — gate de Fase 0 del plan maestro
 // (la SPA actual sirve 0 etiquetas hreflang; este layout lo corrige de raíz).
@@ -40,9 +63,15 @@ const canonical = urlFor(lang);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    <meta name="author" content="AI Chef Pro" />
+    {/* <meta name="robots"> se OMITE deliberadamente: en staging el noindex site-wide
+        lo aplica netlify.toml (X-Robots-Tag: noindex) hasta el cutover (Fase 7). La SPA
+        (SEOHead.tsx) emite index,follow en producción → añadir aquí SOLO en el cutover,
+        junto con la retirada de la cabecera X-Robots-Tag. */}
     <link rel="canonical" href={canonical} />
-    {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={urlFor(l)} />)}
-    <link rel="alternate" hreflang="x-default" href={urlFor(DEFAULT_LOCALE)} />
+    {emittedLocales.map((l) => <link rel="alternate" hreflang={l} href={urlFor(l)} />)}
+    <link rel="alternate" hreflang="x-default" href={urlFor(xDefaultLocale)} />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/favicon.png" />
@@ -51,8 +80,29 @@ const canonical = urlFor(lang);
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="AI Chef Pro" />
+    <meta property="og:locale" content={ogLocale} />
+    {emittedLocales.filter((l) => l !== lang).map((l) => (
+      <meta property="og:locale:alternate" content={OG_LOCALE[l]} />
+    ))}
     {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:secure_url" content={ogImage} />}
+    {ogImage && <meta property="og:image:alt" content={ogImageAlt} />}
+    {ogImage && <meta property="og:image:width" content="1200" />}
+    {ogImage && <meta property="og:image:height" content="630" />}
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aichefpro" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    {ogImage && <meta name="twitter:image:alt" content={ogImageAlt} />}
+    <meta name="theme-color" content="#f59e0b" />
+    <meta name="msapplication-TileColor" content="#f59e0b" />
+    {/* NOTA de paridad (desviación aceptada, explícita): los 3 JSON-LD GLOBALES de SEOHead.tsx
+        (Organization con contactPoint/sameAs/logo, WebSite, SoftwareApplication con offers y
+        aggregateRating.ratingCount = userCount EN VIVO) NO se replican aquí. Son schemas
+        site-wide (no específicos de esta ruta) y SoftwareApplication depende de un contador de
+        usuarios en vivo no reproducible en build estático → pendientes de un slice de plataforma
+        dedicado. La página /mentoria-online conserva sus JSON-LD propios (BreadcrumbList + Service). */}
     <slot name="head" />
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased">

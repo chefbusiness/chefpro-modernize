@@ -1,0 +1,521 @@
+---
+// MentoriaOnlinePage.astro — port 1:1 de src/pages/MentoriaOnline.tsx (la SPA es la spec).
+// Todo el contenido de la página /mentoria-online como componente server-side con prop lang.
+//
+// PARIDAD i18n: se usan las MISMAS claves que la SPA (mentoriaOnline.sections.*, mentoriaOnline.hero.*,
+// mentoriaOnline.seo.*). translations.ts replica el fallback a ES de react-i18next.
+//   NOTA IMPORTANTE (ver informe): en fr/de/it/pt/nl la SPA NO tiene el sub-árbol `mentoriaOnline.sections`
+//   (sus traducciones viven bajo otras claves huérfanas: mentoriaOnline.benefits, .pricing, .secondHero…),
+//   por lo que la SPA renderiza esas secciones en ESPAÑOL (fallback). Este port reproduce EXACTAMENTE
+//   ese comportamiento al usar las mismas claves. Solo hero.* y seo.* están traducidos en esos idiomas.
+//
+// Radix Accordion -> <details name> nativo (single-open) · shadcn Button/Card/Badge inlineados con las
+// clases ya "mergeadas" (cn + tailwind-merge) que la SPA emite en el DOM · iconos lucide inline.
+import { t, tList } from '../../i18n/translations';
+import type { Locale } from '../../i18n/config';
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
+
+interface Props { lang?: Locale }
+const { lang = 'es' } = Astro.props;
+
+// ---- JSON-LD (equivalentes a los <script> del Helmet en MentoriaOnline.tsx) ----
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://aichef.pro' },
+    { '@type': 'ListItem', position: 2, name: t(lang, 'mentoriaOnline.hero.title'), item: 'https://aichef.pro/mentoria-online' },
+  ],
+};
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: t(lang, 'mentoriaOnline.hero.title'),
+  description: t(lang, 'mentoriaOnline.seo.description'),
+  provider: { '@type': 'Organization', name: 'AI Chef Pro', url: 'https://aichef.pro' },
+  serviceType: 'Professional Mentoring',
+  areaServed: { '@type': 'Place', name: 'Worldwide' },
+  offers: [
+    { '@type': 'Offer', name: t(lang, 'mentoriaOnline.sections.pricing.express.title'), price: '150', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: t(lang, 'mentoriaOnline.sections.pricing.standard.title'), price: '275', priceCurrency: 'EUR' },
+    { '@type': 'Offer', name: t(lang, 'mentoriaOnline.sections.pricing.intensive.title'), price: '360', priceCurrency: 'EUR' },
+  ],
+};
+
+// ---- Clases shadcn "mergeadas" (cn + tailwind-merge) reproduciendo el DOM de la SPA ----
+// Button variant=default size=lg + className bg-primary... (2º hero / final CTA scroll)
+const btnHeroScroll = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md px-8 bg-primary text-primary-foreground hover:bg-primary/90';
+// Button variant=default size=lg variant=secondary + className bg-white... (final CTA)
+const btnFinalCta = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 rounded-md px-8 bg-white text-primary hover:bg-white/90';
+// Button variant=default size=default + className w-full bg-accent... (Express / Intensiva "Reservar ahora")
+const btnPlanAccent = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold transition-all duration-300';
+// Button variant=default size=default + className w-full btn-gold... (Estándar "Reservar ahora")
+const btnPlanGold = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full btn-gold hover:shadow-gold-glow scale-105 font-semibold transition-all duration-300';
+// Button variant=outline size=default (micro-sesión gratuita / contactar)
+const btnOutline = 'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2';
+
+// Card variantes mergeadas
+const cardBenefit = 'rounded-lg border bg-card text-card-foreground text-center border-none shadow-lg hover:shadow-xl transition-shadow';
+const cardPlan = 'rounded-lg border bg-card text-card-foreground shadow-sm hover-card relative transition-all duration-300 hover:scale-[1.02]';
+const cardPlanPopular = 'rounded-lg border bg-card text-card-foreground shadow-sm hover-card relative popular-plan scale-105 ring-2 ring-accent/20 transition-all duration-300';
+const cardTestimonial = 'rounded-lg border bg-card text-card-foreground border-none shadow-lg';
+
+// ---- Datos repetitivos ----
+const specialization = [
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Restaurnte.jpeg', key: 'restaurants' },
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Catering.jpeg', key: 'catering' },
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Pastelerias.jpeg', key: 'bakery' },
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/icon-industries-ai-chef-pro-Food-truck.jpeg', key: 'food_truck' },
+];
+
+const testimonials = [
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Martin.png', key: 'testimonial1' },
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Laura.png', key: 'testimonial2' },
+  { img: 'https://blog.aichef.pro/wp-content/uploads/2025/03/Testimonios-ai-chef-pro-Testimonios-ai-chef-pro-Carlos.png', key: 'testimonial3' },
+];
+
+const steps = [1, 2, 3, 4];
+const faqs = [1, 2, 3, 4, 5, 6];
+
+const expressFeatures = tList(lang, 'mentoriaOnline.sections.pricing.express.features');
+const standardFeatures = tList(lang, 'mentoriaOnline.sections.pricing.standard.features');
+const intensiveFeatures = tList(lang, 'mentoriaOnline.sections.pricing.intensive.features');
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+<div class="min-h-screen bg-background">
+  <Header lang={lang} />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/5 py-20 lg:py-32">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-4xl text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl mb-6">
+            {t(lang, 'mentoriaOnline.hero.title')}
+          </h1>
+          <p class="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            {t(lang, 'mentoriaOnline.hero.subtitle')}
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Hero Section -->
+    <section class="py-20 bg-muted/30">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div>
+            <h2 class="text-3xl font-bold text-foreground mb-6">
+              {t(lang, 'mentoriaOnline.hero.title')}
+            </h2>
+            <h3 class="text-2xl font-semibold text-primary mb-4">
+              {t(lang, 'mentoriaOnline.hero.subtitle')}
+            </h3>
+            <p class="text-lg text-muted-foreground mb-8">
+              {t(lang, 'mentoriaOnline.sections.description')}
+            </p>
+            <a href="#calendly-section" class={btnHeroScroll}>
+              {t(lang, 'mentoriaOnline.sections.cta_button')}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="https://blog.aichef.pro/wp-content/uploads/2025/03/Untitled-design.jpeg"
+              alt={t(lang, 'alt_texts.mentoria_hero')}
+              class="rounded-lg shadow-xl w-full"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.benefits.title')}
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <!-- Resultados acelerados -->
+          <div class={cardBenefit}>
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.benefits.accelerated_results.title')}
+              </h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.benefits.accelerated_results.description')}
+              </p>
+            </div>
+          </div>
+
+          <!-- Estrategia a medida -->
+          <div class={cardBenefit}>
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.benefits.custom_strategy.title')}
+              </h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.benefits.custom_strategy.description')}
+              </p>
+            </div>
+          </div>
+
+          <!-- Técnicas avanzadas -->
+          <div class={cardBenefit}>
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.benefits.advanced_techniques.title')}
+              </h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.benefits.advanced_techniques.description')}
+              </p>
+            </div>
+          </div>
+
+          <!-- Ahorro de tiempo -->
+          <div class={cardBenefit}>
+            <div class="flex flex-col space-y-1.5 p-6">
+              <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-primary"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+              </div>
+              <h3 class="text-xl font-semibold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.benefits.time_saving.title')}
+              </h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.benefits.time_saving.description')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section class="py-20 bg-muted/30" id="calendly-section">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.pricing.title')}
+          </h2>
+          <p class="text-lg text-muted-foreground max-w-4xl mx-auto">
+            {t(lang, 'mentoriaOnline.sections.pricing.subtitle')}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Plan Express -->
+          <div class={cardPlan}>
+            <div class="flex flex-col space-y-1.5 p-6 text-center">
+              <h3 class="text-2xl font-bold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.pricing.express.title')}
+              </h3>
+              <div class="text-4xl font-bold text-primary">
+                {t(lang, 'mentoriaOnline.sections.pricing.express.price')}
+              </div>
+              <div class="text-lg text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.pricing.express.duration')}
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <ul class="space-y-3">
+                {expressFeatures.map((feature) => (
+                  <li class="flex items-start gap-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="pt-4">
+                <p class="text-sm text-muted-foreground mb-4">
+                  <strong>{t(lang, 'mentoriaOnline.sections.pricing.ideal_for')}</strong> {t(lang, 'mentoriaOnline.sections.pricing.express.ideal')}
+                </p>
+                <a href="https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-express-ai-chef-pro" target="_blank" rel="noopener noreferrer" class={btnPlanAccent}>
+                  {t(lang, 'mentoriaOnline.sections.pricing.express.button')}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Estándar - Most Popular -->
+          <div class={cardPlanPopular}>
+            <div class="inline-flex items-center rounded-full border text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground hover:bg-primary/80 popular-badge absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap px-3 py-1">
+              {t(lang, 'mentoriaOnline.sections.pricing.standard.badge')}
+            </div>
+            <div class="flex flex-col space-y-1.5 p-6 text-center pt-8">
+              <h3 class="text-2xl font-bold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.pricing.standard.title')}
+              </h3>
+              <div class="text-4xl font-bold text-primary">
+                {t(lang, 'mentoriaOnline.sections.pricing.standard.price')}
+              </div>
+              <div class="text-lg text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.pricing.standard.duration')}
+              </div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mx-auto bg-green-600 text-white border-green-600 shadow-lg font-bold">
+                {t(lang, 'mentoriaOnline.sections.pricing.standard.save')}
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <ul class="space-y-3">
+                {standardFeatures.map((feature) => (
+                  <li class="flex items-start gap-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-accent mt-0.5 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="pt-4">
+                <p class="text-sm text-muted-foreground mb-4">
+                  <strong>{t(lang, 'mentoriaOnline.sections.pricing.ideal_for')}</strong> {t(lang, 'mentoriaOnline.sections.pricing.standard.ideal')}
+                </p>
+                <a href="https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-estandar-ai-chef-pro" target="_blank" rel="noopener noreferrer" class={btnPlanGold}>
+                  {t(lang, 'mentoriaOnline.sections.pricing.standard.button')}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Intensiva -->
+          <div class={cardPlan}>
+            <div class="flex flex-col space-y-1.5 p-6 text-center">
+              <h3 class="text-2xl font-bold leading-none tracking-tight">
+                {t(lang, 'mentoriaOnline.sections.pricing.intensive.title')}
+              </h3>
+              <div class="text-4xl font-bold text-primary">
+                {t(lang, 'mentoriaOnline.sections.pricing.intensive.price')}
+              </div>
+              <div class="text-lg text-muted-foreground">
+                {t(lang, 'mentoriaOnline.sections.pricing.intensive.duration')}
+              </div>
+              <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 hover:bg-primary/80 mx-auto bg-blue-600 text-white border-blue-600 shadow-lg font-bold">
+                {t(lang, 'mentoriaOnline.sections.pricing.intensive.save')}
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-4">
+              <ul class="space-y-3">
+                {intensiveFeatures.map((feature) => (
+                  <li class="flex items-start gap-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-primary mt-0.5 flex-shrink-0"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <div class="pt-4">
+                <p class="text-sm text-muted-foreground mb-4">
+                  <strong>{t(lang, 'mentoriaOnline.sections.pricing.ideal_for')}</strong> {t(lang, 'mentoriaOnline.sections.pricing.intensive.ideal')}
+                </p>
+                <a href="https://calendly.com/john-guerrero-chefbusiness/mentoria-sesion-intensiva-ai-chef-pro" target="_blank" rel="noopener noreferrer" class={btnPlanAccent}>
+                  {t(lang, 'mentoriaOnline.sections.pricing.intensive.button')}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialization Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.specialization.title')}
+          </h2>
+          <p class="text-lg text-muted-foreground max-w-4xl mx-auto">
+            {t(lang, 'mentoriaOnline.sections.specialization.subtitle')}
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {specialization.map((item) => (
+            <div class={cardBenefit}>
+              <div class="flex flex-col space-y-1.5 p-6">
+                <img
+                  src={item.img}
+                  alt={t(lang, `mentoriaOnline.sections.specialization.${item.key}.title`)}
+                  class="w-16 h-16 mx-auto mb-4 rounded-lg"
+                />
+                <h3 class="text-xl font-semibold leading-none tracking-tight">
+                  {t(lang, `mentoriaOnline.sections.specialization.${item.key}.title`)}
+                </h3>
+              </div>
+              <div class="p-6 pt-0">
+                <p class="text-muted-foreground">
+                  {t(lang, `mentoriaOnline.sections.specialization.${item.key}.description`)}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-muted/30">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.testimonials.title')}
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {testimonials.map((item) => (
+            <div class={cardTestimonial}>
+              <div class="p-6">
+                <div class="flex mb-4">
+                  {[0, 1, 2, 3, 4].map(() => (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 fill-yellow-400 text-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+                  ))}
+                </div>
+                <p class="text-muted-foreground mb-4 italic">
+                  {t(lang, `mentoriaOnline.sections.testimonials.${item.key}.quote`)}
+                </p>
+                <div class="flex items-center gap-3">
+                  <img
+                    src={item.img}
+                    alt={t(lang, `mentoriaOnline.sections.testimonials.${item.key}.name`)}
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div>
+                    <p class="font-semibold text-foreground">
+                      {t(lang, `mentoriaOnline.sections.testimonials.${item.key}.name`)}
+                    </p>
+                    <p class="text-sm text-muted-foreground">
+                      {t(lang, `mentoriaOnline.sections.testimonials.${item.key}.position`)}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.process.title')}
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {steps.map((n) => (
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl font-bold text-primary">{n}</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">
+                {t(lang, `mentoriaOnline.sections.process.step${n}.title`)}
+              </h3>
+              <p class="text-muted-foreground">
+                {t(lang, `mentoriaOnline.sections.process.step${n}.description`)}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-muted/30">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.faq.title')}
+          </h2>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="w-full space-y-4">
+            {faqs.map((n) => (
+              <details name="mentoria-faq" class="border border-border rounded-lg px-6 group">
+                <summary class="flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline text-left cursor-pointer list-none">
+                  {t(lang, `mentoriaOnline.sections.faq.questions.question${n}.question`)}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 shrink-0 transition-transform duration-200 group-open:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+                </summary>
+                <div class="overflow-hidden text-sm">
+                  <div class="pb-4 pt-0 text-muted-foreground">
+                    {t(lang, `mentoriaOnline.sections.faq.questions.question${n}.answer`)}
+                  </div>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-primary/80">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-primary-foreground">
+          <h2 class="text-3xl font-bold mb-4">
+            {t(lang, 'mentoriaOnline.sections.final_cta.title')}
+          </h2>
+          <p class="text-lg mb-8 opacity-90">
+            {t(lang, 'mentoriaOnline.sections.final_cta.description')}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#calendly-section" class={btnFinalCta}>
+              {t(lang, 'mentoriaOnline.sections.final_cta.button')}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Consultation CTA -->
+    <section class="py-16 bg-muted/30">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-foreground mb-4">
+            {t(lang, 'mentoriaOnline.sections.free_consultation.title')}
+          </h2>
+          <p class="text-muted-foreground mb-6">
+            {t(lang, 'mentoriaOnline.sections.free_consultation.description')}
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://calendly.com/john-guerrero-chefbusiness/micro-sesion-gratuita-15-min" target="_blank" rel="noopener noreferrer" class={btnOutline}>
+              {t(lang, 'mentoriaOnline.sections.free_consultation.button1')}
+            </a>
+            <a href="/contacto" target="_blank" rel="noopener noreferrer" class={btnOutline}>
+              {t(lang, 'mentoriaOnline.sections.free_consultation.button2')}
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer lang={lang} />
+  <WhatsAppFloatingButton lang={lang} />
+</div>

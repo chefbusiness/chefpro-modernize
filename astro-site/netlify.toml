@@ -8,6 +8,15 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Alias de idioma: en la SPA /es/formacion-presencial renderiza la MISMA página que
+# /formacion-presencial (ruta ES canónica sin prefijo). En Astro NO se duplica la página:
+# se redirige 301 al canónico. Sin `force` → solo aplica si no existe fichero /es/formacion-presencial
+# (no existe), por lo que no ensombrece nada del build.
+[[redirects]]
+  from = "/es/formacion-presencial"
+  to = "/formacion-presencial"
+  status = 301
+
 # D7 del PLAN MAESTRO: el staging NO se indexa hasta el cutover (Fase 7).
 # ⚠️ QUITAR este bloque en el cutover — y solo entonces.
 [[headers]]

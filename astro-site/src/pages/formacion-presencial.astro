@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FormacionPresencialPage from '../components/pages/FormacionPresencialPage.astro';
+import { SITE } from '../i18n/config';
+
+// SOLO ES: la SPA (FormacionPresencial.tsx) hardcodea el SEOHead en español y esta ruta
+// NO tiene variantes de idioma (el sitemap solo lista /formacion-presencial). Por eso
+// locales={['es']} → BaseLayout emite hreflang es + x-default y NADA más.
+const lang = 'es';
+---
+
+<BaseLayout
+  title="Formación Presencial IA para Restaurantes | AI Chef Pro Academy"
+  description="Workshops, conferencias y programas in-house de IA para hostelería. Chef John Guerrero lleva las 55+ herramientas de AI Chef Pro directamente a tu cocina."
+  keywords="formación IA restaurantes, curso inteligencia artificial hostelería, workshop IA cocina profesional, consultoría IA restaurantes, formación presencial IA gastronomía"
+  lang={lang}
+  basePath="/formacion-presencial"
+  locales={['es']}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <FormacionPresencialPage lang={lang} />
+</BaseLayout>

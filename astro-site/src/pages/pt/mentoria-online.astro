@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MentoriaOnlinePage from '../../components/pages/MentoriaOnlinePage.astro';
+import { t } from '../../i18n/translations';
+import { SITE } from '../../i18n/config';
+
+const lang = 'pt';
+---
+
+<BaseLayout
+  title={t(lang, 'pages.mentoria_online.seo_title')}
+  description={t(lang, 'pages.mentoria_online.seo_description')}
+  keywords={t(lang, 'pages.mentoria_online.seo_keywords')}
+  lang={lang}
+  basePath="/mentoria-online"
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <MentoriaOnlinePage lang={lang} />
+</BaseLayout>
