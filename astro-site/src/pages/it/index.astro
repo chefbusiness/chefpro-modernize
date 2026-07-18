@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import TrustedByLogos from '../../components/TrustedByLogos.astro';
+import ScreenshotSection from '../../components/ScreenshotSection.astro';
+import SocialProofStrip from '../../components/SocialProofStrip.astro';
+import AppsCategories from '../../components/AppsCategories.astro';
+import AIImageGallery from '../../components/AIImageGallery.astro';
+import AppsFinder from '../../components/AppsFinder.astro';
+import CreatividadShowcase from '../../components/CreatividadShowcase.astro';
+import WorldCookbooks from '../../components/WorldCookbooks.astro';
+import BusinessToolsShowcase from '../../components/BusinessToolsShowcase.astro';
+import CityResourcesStrip from '../../components/CityResourcesStrip.astro';
+import AIToolsBanner from '../../components/AIToolsBanner.astro';
+import ModernFeatures from '../../components/ModernFeatures.astro';
+import FeaturedApps from '../../components/FeaturedApps.astro';
+import ModernChefSection from '../../components/ModernChefSection.astro';
+import Pricing from '../../components/Pricing.astro';
+import CategoryCTAs from '../../components/CategoryCTAs.astro';
+import FAQ from '../../components/FAQ.astro';
+import ConversionNotifications from '../../components/ConversionNotifications.astro';
+import FormacionPromoPopup from '../../components/FormacionPromoPopup.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsAppFloatingButton from '../../components/WhatsAppFloatingButton.astro';
+import { t } from '../../i18n/translations';
+
+const lang = 'it';
+---
+
+<BaseLayout
+  title={t(lang, 'pages.index.seo_title')}
+  description={t(lang, 'pages.index.seo_description')}
+  lang={lang}
+  basePath="/"
+>
+  <!-- Fase 1 slice 3: home IT, mismos componentes que ES. Orden EXACTO de src/pages/Index.tsx
+       (ModernAbout es un import muerto en la SPA — no se renderiza ni se porta). -->
+  <div class="min-h-screen bg-background overflow-x-clip">
+    <Header lang={lang} />
+    <main>
+      <Hero lang={lang} />
+      <TrustedByLogos lang={lang} />
+      <ScreenshotSection lang={lang} />
+      <SocialProofStrip lang={lang} />
+      <AppsCategories lang={lang} />
+      <AIImageGallery lang={lang} />
+      <AppsFinder lang={lang} />
+      <CreatividadShowcase lang={lang} />
+      <WorldCookbooks lang={lang} />
+      <BusinessToolsShowcase lang={lang} />
+      <CityResourcesStrip lang={lang} />
+      <AIToolsBanner lang={lang} />
+      <ModernFeatures lang={lang} />
+      <FeaturedApps lang={lang} />
+      <ModernChefSection lang={lang} />
+      <Pricing lang={lang} />
+      <CategoryCTAs lang={lang} />
+      <FAQ lang={lang} />
+      <ConversionNotifications lang={lang} />
+      <FormacionPromoPopup lang={lang} />
+    </main>
+    <Footer lang={lang} />
+    <WhatsAppFloatingButton lang={lang} />
+  </div>
+</BaseLayout>
