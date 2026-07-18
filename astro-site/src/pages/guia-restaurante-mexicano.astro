@@ -1,0 +1,30 @@
+---
+// /guia-restaurante-mexicano — LÍNEA GUÍAS "Cómo Montar".
+// Thin wrapper: pasa el objeto data al template GuiaLandingPage y el SEO a BaseLayout.
+//
+// SOLO ES: la SPA (GuiaRestauranteMexicano.tsx) hardcodea el Helmet en español y esta ruta
+// NO tiene variantes de idioma → locales={['es']} (BaseLayout emite hreflang es + x-default y
+// nada más). Canonical: https://aichef.pro/guia-restaurante-mexicano. Meta robots se OMITE
+// (desviación cross-cutting; se añade en el cutover). Patrón = guia-restaurante-gastronomico.astro.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GuiaLandingPage from '../components/pages/GuiaLandingPage.astro';
+import data from '../data/productos/guias/guia-restaurante-mexicano';
+
+const lang = 'es';
+
+// DINERO: acceso ESTÁTICO a la env var (nombre EXACTO como la SPA, mismo fallback) para que
+// Vite la inline en build. data.stripeEnvKey documenta cuál es; aquí se resuelve literal.
+const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_GUIA_RESTAURANTE_MEXICANO || '#comprar';
+---
+
+<BaseLayout
+  title={data.seo.title}
+  description={data.seo.description}
+  keywords={data.seo.keywords}
+  lang={lang}
+  basePath={`/${data.slug}`}
+  locales={['es']}
+  ogImage={data.seo.ogImage}
+>
+  <GuiaLandingPage data={data} stripeLink={stripeLink} />
+</BaseLayout>
