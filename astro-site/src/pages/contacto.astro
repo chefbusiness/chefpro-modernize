@@ -1,0 +1,246 @@
+---
+// Contacto (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
+// Página honesta SIN backend de formularios: canales reales de contacto
+// (email info@aichef.pro, soporte in-app, WhatsApp) + mini-FAQ + CTA a la app.
+// Solo ES por ahora → locales={['es']}. Datos verificados 2026-07-19.
+// WhatsApp: número ya publicado en el repo (WhatsAppFloatingButton.tsx / ModernFooter.tsx).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+
+const lang = 'es';
+const basePath = '/contacto';
+
+const EMAIL = 'info@aichef.pro';
+const APP = 'https://app.aichef.pro';
+const WA_NUMBER = '34744717942';
+const WA_DISPLAY = '+34 744 717 942';
+const WA_URL = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola, tengo una consulta sobre AI Chef Pro. ')}`;
+const appUrl = (slug: string) => `${APP}/?utm_source=web&utm_medium=contacto&utm_content=${slug}`;
+
+const channels = [
+  {
+    slug: 'email',
+    tag: 'Vía principal',
+    title: 'Escríbenos por email',
+    body:
+      'info@aichef.pro es el correo para todo: dudas generales, prensa, comercial o lo que necesites. Es nuestra vía principal y la revisamos a diario. Normalmente respondemos en 24-48 horas laborables, aunque si estamos al fuego igual tarda un pelín más.',
+    meta: 'Respuesta orientativa: 24-48 h laborables',
+    ctaLabel: EMAIL,
+    ctaHref: `mailto:${EMAIL}`,
+    external: false,
+    icon: 'mail',
+  },
+  {
+    slug: 'app',
+    tag: 'Ya tienes cuenta',
+    title: 'Soporte dentro de la app',
+    body:
+      'Si ya tienes cuenta en AI Chef Pro, lo más rápido para dudas técnicas o de suscripción es escribirnos desde tu panel en app.aichef.pro. Así ya vemos tu contexto, tu plan y podemos ayudarte sin pedirte mil datos.',
+    meta: 'Con tu cuenta iniciada · el camino más rápido',
+    ctaLabel: 'Ir a app.aichef.pro',
+    ctaHref: appUrl('soporte-app'),
+    external: true,
+    icon: 'app',
+  },
+  {
+    slug: 'whatsapp',
+    tag: 'Consultas rápidas',
+    title: 'WhatsApp',
+    body:
+      'Para consultas rápidas o si necesitas ayuda con una compra y te da pereza el email, escríbenos por WhatsApp. Te atendemos en horario laboral español, sin bots, una persona real al otro lado.',
+    meta: `${WA_DISPLAY} · horario laboral (España)`,
+    ctaLabel: 'Abrir WhatsApp',
+    ctaHref: WA_URL,
+    external: true,
+    icon: 'whatsapp',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Cómo consigo ayuda si algo no me funciona en la plataforma?',
+    a: 'La vía más rápida es el soporte integrado dentro de app.aichef.pro. Solo tienes que iniciar sesión y escribirnos desde allí; así ya vemos tu cuenta y lo que está pasando sin marearte pidiendo datos. Si no puedes ni entrar, mándanos un correo a info@aichef.pro explicando qué te aparece y lo miramos cuanto antes.',
+  },
+  {
+    q: '¿Cómo gestiono mis facturas, cambio de plan o cancelo mi suscripción?',
+    a: 'Todo eso lo llevas tú mismo desde tu panel en app.aichef.pro, cuando quieras y sin pedir permiso: cambio de plan, datos fiscales y cancelación están ahí. Cada suscripción genera su factura con el IVA que corresponda según tu país. Si tienes una duda concreta sobre una factura, escríbenos a info@aichef.pro indicando el email de tu cuenta y te la aclaramos.',
+  },
+  {
+    q: '¿Cómo contacto para prensa, colaboraciones o partnerships?',
+    a: 'Estamos abiertos a escuchar propuestas. Para prensa, entrevistas, colaboraciones o lo que tengas en mente, escribe a info@aichef.pro con un asunto claro y te contestamos. Detrás de AI Chef Pro está John Guerrero, con 29 años en alta hostelería y 15 en consultoría gastronómica, junto al grupo ChefBusiness.',
+  },
+  {
+    q: '¿En qué idiomas atendéis?',
+    a: 'La plataforma está disponible en 7 idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés, y el producto es de origen español nativo. La atención la damos con total soltura en español e inglés. Si nos escribes en otro idioma, haremos todo lo posible por responderte lo mejor posible.',
+  },
+];
+
+const title = 'Contacto y Soporte — AI Chef Pro';
+const description =
+  'Contacta con AI Chef Pro: escríbenos a info@aichef.pro, usa el soporte dentro de app.aichef.pro o pregúntanos por WhatsApp. Respuesta orientativa en 24-48 h laborables.';
+const keywords =
+  'contacto ai chef pro, soporte ai chef pro, email ai chef pro, ayuda ai chef pro, atención al cliente ai chef pro';
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Contacto', item: `${SITE}/contacto` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: title,
+    url: `${SITE}/contacto`,
+    description,
+    inLanguage: 'es',
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'AI Chef Pro',
+      url: SITE,
+      email: EMAIL,
+      contactPoint: [
+        {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          email: EMAIL,
+          telephone: '+34744717942',
+          areaServed: 'Worldwide',
+          availableLanguage: ['Spanish', 'English'],
+        },
+      ],
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  basePath={basePath}
+  locales={['es']}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-5xl px-4 py-14">
+
+    <!-- Hero -->
+    <header class="mx-auto mb-14 max-w-3xl text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wide text-primary">Contacto</p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        Hablemos: Estamos para Ayudarte
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+        ¿Tienes una duda real, necesitas ayuda con una herramienta o simplemente quieres
+        saludar? Somos gente de cocina, no un call center anónimo. Elige el canal que te
+        vaya mejor y te contestaremos lo antes posible, sin rodeos.
+      </p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        <a href={`mailto:${EMAIL}`} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Escríbenos a {EMAIL}
+        </a>
+        <a href={appUrl('hero')} target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          Ir a la App
+        </a>
+      </div>
+    </header>
+
+    <!-- Canales de contacto -->
+    <section aria-label="Canales de contacto" class="grid grid-cols-1 gap-5 md:grid-cols-3">
+      {channels.map((c) => (
+        <article class="flex flex-col rounded-xl border border-border bg-card p-6 shadow-sm">
+          <div class="flex items-center justify-center h-11 w-11 rounded-lg bg-accent/10 text-accent" aria-hidden="true">
+            {c.icon === 'mail' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            )}
+            {c.icon === 'app' && (
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><rect width="18" height="14" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            )}
+            {c.icon === 'whatsapp' && (
+              <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            )}
+          </div>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wide text-primary">{c.tag}</p>
+          <h2 class="mt-1 text-lg font-bold text-foreground">{c.title}</h2>
+          <p class="mt-3 flex-1 text-sm text-muted-foreground">{c.body}</p>
+          <p class="mt-4 text-sm font-medium text-foreground">{c.meta}</p>
+          <a
+            href={c.ctaHref}
+            target={c.external ? '_blank' : undefined}
+            rel={c.external ? 'noopener' : undefined}
+            class="mt-4 inline-flex w-full items-center justify-center rounded-md border border-border bg-background h-11 px-5 text-sm font-semibold text-foreground transition-colors hover:bg-accent/10"
+          >
+            {c.ctaLabel}
+          </a>
+        </article>
+      ))}
+    </section>
+
+    <!-- Nota de honestidad -->
+    <section class="mx-auto mt-14 max-w-3xl rounded-xl border border-border bg-card p-6 text-center">
+      <p class="text-sm text-muted-foreground">
+        No usamos formularios de contacto que se pierden en un buzón sin dueño: preferimos
+        que nos escribas directamente por email, desde tu panel o por WhatsApp, y que hable
+        contigo una persona de verdad.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto mt-20 max-w-3xl">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Preguntas Frecuentes de Contacto</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {f.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Prueba AI Chef Pro Mientras lo Piensas</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Puedes empezar gratis, sin tarjeta y con 3.000 créditos al mes, y probar los más de
+        70 agentes de IA para chefs y restaurantes. Si te surge cualquier duda por el camino,
+        ya sabes dónde encontrarnos.
+      </p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        <a href={appUrl('cta-final')} target="_blank" rel="noopener" class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Empezar Gratis
+        </a>
+        <a href="/precios" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          Ver Planes y Precios
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>

@@ -1,0 +1,275 @@
+---
+// FAQ (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
+// Solo ES por ahora → locales={['es']} (hreflang únicamente es + x-default).
+// Fuentes de contenido: las 6 FAQ de precios.astro (reutilizadas/adaptadas),
+// home y legales del repo. Bloques narrativos nuevos redactados con bridge.py
+// (DeepSeek v4) y revisados como editor. Solo se afirman HECHOS verificados
+// (pricing/agentes/idiomas/fundador/contacto). Reembolsos: NO hay política
+// publicada en legales/terms → respuesta honesta (caso por caso vía email +
+// cancelación sin permanencia desde el panel).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+
+const lang = 'es';
+const basePath = '/faq';
+
+const APP = 'https://app.aichef.pro';
+const ctaUrl = (slug: string) =>
+  `${APP}/?utm_source=web&utm_medium=faq&utm_content=${slug}`;
+
+const linkClass =
+  'font-medium text-primary underline underline-offset-2 hover:text-primary/80';
+
+// Bloques temáticos. Cada FAQ: { q, a } (a = texto plano para el schema) y,
+// opcionalmente, aHtml (versión con enlaces internos para la vista).
+const blocks = [
+  {
+    id: 'que-es',
+    title: 'Qué Es AI Chef Pro y sus Agentes',
+    faqs: [
+      {
+        q: '¿Qué es AI Chef Pro?',
+        a: 'AI Chef Pro es una suite con más de 70 agentes de inteligencia artificial pensados por y para cocineros. No es un chatbot genérico: cada agente está entrenado para resolver tareas concretas de cocina y gestión de restaurante. Lo usas desde el navegador, sin instalar nada, y tienes un plan gratuito para siempre con el que empezar a trastear hoy mismo.',
+      },
+      {
+        q: '¿Qué puedo hacer con los más de 70 agentes de IA?',
+        a: 'Con los más de 70 agentes cubres prácticamente todo el día a día de una cocina profesional. Puedes crear y escandallar recetas al instante, redactar o rediseñar la carta completa, planificar menús y hasta generar el contenido para tus redes sociales. También te ayudan con el control de costes, las fichas de alérgenos, recetarios de cocinas del mundo y la gestión general del negocio.',
+      },
+      {
+        q: '¿Quién está detrás de AI Chef Pro?',
+        a: 'Detrás de AI Chef Pro está John Guerrero, un cocinero con 29 años de trayectoria en alta hostelería y 15 de ellos dedicados a la consultoría gastronómica. Forma parte del grupo ChefBusiness y ha volcado toda esa experiencia de campo en entrenar a los agentes para que entiendan de verdad cómo funciona una cocina. No es tecnología hecha por informáticos que nunca han pisado un pase.',
+      },
+    ],
+  },
+  {
+    id: 'planes-creditos',
+    title: 'Planes y Créditos',
+    faqs: [
+      {
+        q: '¿Hay un plan gratis?',
+        a: 'Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir.',
+        aHtml: `Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir, y tienes el desglose completo de cada plan en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
+      },
+      {
+        q: '¿Qué es un crédito y cuántos gasta cada acción?',
+        a: 'Un crédito es la unidad de trabajo dentro de la plataforma: cada vez que un agente realiza una acción, consume una cantidad de créditos proporcional a la complejidad de la tarea. Las acciones sencillas, como generar una idea rápida, gastan pocos créditos; los trabajos más elaborados, como un escandallo completo o una carta entera, consumen algo más. El plan gratuito te da 3.000 créditos al mes para que pruebes sin límites artificiales.',
+      },
+      {
+        q: '¿Qué pasa si me quedo sin créditos?',
+        a: 'Tus créditos se renuevan automáticamente cada mes. Si necesitas más antes de la renovación, puedes subir a un plan superior en cualquier momento, o al plan Premium Max, que ofrece créditos ilimitados.',
+      },
+    ],
+  },
+  {
+    id: 'cuenta-facturacion',
+    title: 'Cuenta y Facturación',
+    faqs: [
+      {
+        q: '¿Necesito tarjeta de crédito?',
+        a: 'No para el plan gratuito: te registras y empiezas sin introducir ningún dato de pago. Solo necesitas tarjeta cuando decides contratar un plan Premium.',
+      },
+      {
+        q: '¿Puedo cambiar de plan cuando quiera?',
+        a: 'Sí. Puedes subir o bajar de plan en cualquier momento desde tu panel de usuario. El cambio se aplica a tu ciclo de facturación sin trámites complicados.',
+        aHtml: `Sí. Puedes subir o bajar de plan en cualquier momento desde tu panel de usuario. El cambio se aplica a tu ciclo de facturación sin trámites complicados; puedes comparar todas las opciones en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
+      },
+      {
+        q: '¿Puedo cancelar la suscripción?',
+        a: 'Sí, en cualquier momento y desde tu propio panel, sin penalizaciones ni permanencia. Al cancelar mantienes el acceso hasta el final del periodo que ya has pagado.',
+      },
+      {
+        q: '¿Ofrecéis reembolsos?',
+        a: 'No tenemos una política de reembolsos publicada como tal, así que no te vamos a vender letra pequeña que no existe. Si tienes algún problema con tu suscripción, escríbenos a info@aichef.pro y lo estudiamos caso por caso con sentido común. Además, puedes cancelar cuando quieras desde tu panel, sin permanencia.',
+        aHtml: `No tenemos una política de reembolsos publicada como tal, así que no te vamos a vender letra pequeña que no existe. Si tienes algún problema con tu suscripción, escríbenos a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a> y lo estudiamos caso por caso con sentido común. Además, puedes cancelar cuando quieras desde tu panel, sin permanencia.`,
+      },
+      {
+        q: '¿Emitís factura con IVA?',
+        a: 'Sí. Cada suscripción genera su factura y el IVA se aplica según la normativa de tu país. Puedes añadir tus datos fiscales durante el proceso de pago para que la factura salga correcta.',
+      },
+    ],
+  },
+  {
+    id: 'idiomas',
+    title: 'Idiomas',
+    faqs: [
+      {
+        q: '¿En qué idiomas está disponible AI Chef Pro?',
+        a: 'AI Chef Pro está disponible en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. La plataforma nació en español, con español nativo de verdad, no es una traducción automática de otro idioma. Eso se nota en cómo entiende los matices de nuestra cocina y nuestra forma de trabajar.',
+      },
+    ],
+  },
+  {
+    id: 'contenido-soporte',
+    title: 'Contenido y Soporte',
+    faqs: [
+      {
+        q: '¿Qué son los Productos Digitales y dónde está el blog?',
+        a: 'Los Productos Digitales son recursos descargables que complementan a los agentes: plantillas, kits y guías prácticas para que las uses a tu ritmo fuera de la aplicación. El blog está en la propia web y lo actualizamos con recursos, trucos y contenido útil para sacarle más partido a la herramienta en el día a día del restaurante.',
+        aHtml: `Los Productos Digitales son recursos descargables que complementan a los agentes: plantillas, kits y guías prácticas para que las uses a tu ritmo fuera de la aplicación. Puedes verlos en la <a href="/productos-digitales" target="_blank" rel="noopener" class="${linkClass}">tienda de Productos Digitales</a>, y el <a href="/blog" target="_blank" rel="noopener" class="${linkClass}">blog</a> está en la propia web con recursos, trucos y contenido para sacarle más partido a la herramienta.`,
+      },
+      {
+        q: '¿Cómo contacto con el equipo de soporte?',
+        a: 'Para cualquier duda, problema o simplemente para contarnos qué tal te va, escríbenos a info@aichef.pro y te respondemos personalmente. También puedes entrar directamente en la aplicación en app.aichef.pro y empezar a usar los agentes ahora mismo. Nos gusta hablar con quien cocina, no con un bot de soporte.',
+        aHtml: `Para cualquier duda, problema o simplemente para contarnos qué tal te va, escríbenos a <a href="mailto:info@aichef.pro" class="${linkClass}">info@aichef.pro</a> y te respondemos personalmente. También puedes entrar directamente en la aplicación en <a href="https://app.aichef.pro" target="_blank" rel="noopener" class="${linkClass}">app.aichef.pro</a> y empezar a usar los agentes ahora mismo. Nos gusta hablar con quien cocina, no con un bot de soporte.`,
+      },
+    ],
+  },
+];
+
+// Lista aplanada (todas las preguntas) para el schema FAQPage.
+const allFaqs = blocks.flatMap((b) => b.faqs);
+
+const title = 'Preguntas Frecuentes de AI Chef Pro: Planes, Créditos e Idiomas';
+const description =
+  'Resolvemos las dudas más habituales sobre AI Chef Pro: qué es, los más de 70 agentes de IA, el plan gratis con 3.000 créditos, planes desde 25 €/mes, facturación, reembolsos, idiomas y soporte.';
+const keywords =
+  'preguntas frecuentes ai chef pro, faq ai chef pro, dudas ai chef pro, créditos ai chef pro, cancelar suscripción ai chef pro, reembolsos ai chef pro, ai chef pro idiomas, ai chef pro gratis';
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Preguntas Frecuentes', item: `${SITE}/faq` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: allFaqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  basePath={basePath}
+  locales={['es']}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-3xl px-4 py-14">
+
+    <!-- Hero -->
+    <header class="mx-auto mb-14 max-w-2xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-primary">Preguntas Frecuentes</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        Todo lo que Quieres Saber de AI Chef Pro
+      </h1>
+      <p class="mx-auto mt-5 text-lg text-muted-foreground">
+        Las dudas que más nos llegan sobre la suite de más de 70 agentes de IA para
+        chefs y restaurantes: planes, créditos, facturación, idiomas y soporte.
+        Respuestas directas, sin humo.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Empezar Gratis
+        </a>
+      </div>
+    </header>
+
+    <!-- Índice de bloques -->
+    <nav aria-label="Bloques de preguntas" class="mb-12 flex flex-wrap justify-center gap-2">
+      {blocks.map((b) => (
+        <a href={`#${b.id}`} class="rounded-full border border-border bg-card px-4 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:border-accent hover:text-foreground">
+          {b.title}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Bloques de FAQ -->
+    {blocks.map((b) => (
+      <section id={b.id} class="mt-14 scroll-mt-24 first:mt-0">
+        <h2 class="mb-6 text-2xl font-bold text-foreground md:text-3xl">{b.title}</h2>
+        <div class="space-y-3">
+          {b.faqs.map((f) => (
+            <details class="group rounded-xl border border-border bg-card p-5">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+                {f.q}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </summary>
+              {f.aHtml
+                ? <p class="mt-3 text-sm leading-relaxed text-muted-foreground" set:html={f.aHtml} />
+                : <p class="mt-3 text-sm leading-relaxed text-muted-foreground">{f.a}</p>}
+            </details>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <!-- Sigue explorando (enlaces internos) -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Sigue Explorando</h2>
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <a href="/precios" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
+          <h3 class="text-lg font-bold text-foreground">Precios y Planes</h3>
+          <p class="mt-2 flex-1 text-sm text-muted-foreground">
+            Compara el plan gratis con los Premium desde 25 €/mes y elige el que mejor
+            encaja con tu cocina.
+          </p>
+          <span class="mt-4 text-sm font-semibold text-primary">Ver precios →</span>
+        </a>
+        <a href="/productos-digitales" target="_blank" rel="noopener" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
+          <h3 class="text-lg font-bold text-foreground">Productos Digitales</h3>
+          <p class="mt-2 flex-1 text-sm text-muted-foreground">
+            Plantillas, kits y guías descargables para gestionar tu negocio, listos
+            para usar fuera de la aplicación.
+          </p>
+          <span class="mt-4 text-sm font-semibold text-primary">Ver la tienda →</span>
+        </a>
+        <a href="/blog" target="_blank" rel="noopener" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
+          <h3 class="text-lg font-bold text-foreground">Blog y Recursos</h3>
+          <p class="mt-2 flex-1 text-sm text-muted-foreground">
+            Trucos, ideas y guías prácticas para sacarle más partido a la IA en el día
+            a día del restaurante.
+          </p>
+          <span class="mt-4 text-sm font-semibold text-primary">Leer el blog →</span>
+        </a>
+        <a href={ctaUrl('explora-app')} target="_blank" rel="noopener" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
+          <h3 class="text-lg font-bold text-foreground">Entrar en la App</h3>
+          <p class="mt-2 flex-1 text-sm text-muted-foreground">
+            Crea tu cuenta gratis en app.aichef.pro y empieza a usar los más de 70
+            agentes ahora mismo.
+          </p>
+          <span class="mt-4 text-sm font-semibold text-primary">Abrir la aplicación →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">¿Te Queda Alguna Duda?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Escríbenos a <a href="mailto:info@aichef.pro" class={linkClass}>info@aichef.pro</a> y te
+        respondemos personalmente. Y si prefieres probarlo directamente, crea tu cuenta
+        gratis con 3.000 créditos al mes, sin tarjeta.
+      </p>
+      <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Crear mi Cuenta Gratis
+        </a>
+        <a href="/precios" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          Ver los Planes
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>

@@ -69,7 +69,8 @@ _nc = len(set(re.search(r'^category: (\S+)', p.read_text(), re.M).group(1)
               for p in _blog))
 # F8: URLs nativas nuevas fuera del blog (mantener lista al día al crear páginas)
 _F8_EXTRA = ['/precios', '/en/pricing', '/fr/tarifs', '/de/preise',
-             '/it/prezzi', '/pt/precos', '/nl/prijzen']
+             '/it/prezzi', '/pt/precos', '/nl/prijzen',
+             '/contacto', '/sobre-nosotros', '/faq']
 EXPECTED = 696 + len(_F8_EXTRA) + _np + 1 + (-(-_np // 24) - 1) + _nc
 check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 

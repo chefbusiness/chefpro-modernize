@@ -218,7 +218,8 @@ def main():
         new -= blog_new
         # F8: páginas nativas nuevas post-cutover (mantener al día)
         f8_extra = {'/precios', '/en/pricing', '/fr/tarifs', '/de/preise',
-                    '/it/prezzi', '/pt/precos', '/nl/prijzen'}
+                    '/it/prezzi', '/pt/precos', '/nl/prijzen',
+                    '/contacto', '/sobre-nosotros', '/faq'}
         f8_found = new & f8_extra
         new -= f8_found
         check(lost == exp_lost,

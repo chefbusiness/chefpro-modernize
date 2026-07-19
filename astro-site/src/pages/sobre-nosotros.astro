@@ -1,0 +1,402 @@
+---
+// Sobre nosotros (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
+// Objetivo E-E-A-T: bio del fundador, historia de carrera y estándares editoriales
+// (lo prometido en public/llms.txt → /sobre-nosotros). SOLO ES por ahora → locales={['es']}.
+// HECHOS VERIFICADOS: +70 agentes IA · 7 idiomas · pricing live (ver /precios) · John Guerrero
+// 29 años alta hostelería / 15 consultoría · grupo ChefBusiness · info@aichef.pro.
+// Bio y estándares redactados con bridge.py (DeepSeek v4) y editados a mano. Sin claims fuera de hechos.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+
+const lang = 'es';
+const basePath = '/sobre-nosotros';
+
+const APP = 'https://app.aichef.pro';
+const ctaUrl = (slug: string) =>
+  `${APP}/?utm_source=web&utm_medium=about&utm_content=${slug}`;
+
+// Bio (bridge.py → editada). 4 párrafos, tercera persona, solo hechos verificados.
+const bioParagraphs = [
+  'John Guerrero no llegó al mundo de la tecnología por el camino habitual. Llegó después de casi tres décadas de oficio real. Su trayectoria comenzó entre fogones y salas, en el día a día de la alta hostelería, donde aprendió lo que ningún manual enseña: que un restaurante se sostiene sobre detalles que rara vez se ven. Veintinueve años de carrera le dieron la perspectiva de quien ha vivido la presión de un servicio completo, el peso de una partida de escandallo mal calculada y la satisfacción de una cocina que funciona como un reloj. No aprendió hostelería desde un despacho, sino desde dentro.',
+  'Tras muchos años en primera línea, dio el salto a la consultoría gastronómica. Desde su grupo ChefBusiness dedicó quince años a acompañar negocios del sector. Y ahí, viendo decenas de realidades distintas, detectó un patrón incómodo: los mismos problemas se repetían una y otra vez, con independencia del tamaño o la ambición del proyecto. Costes que se escapaban sin control, cartas que no respondían a lo que el cliente buscaba, procesos internos que dependían de la memoria de una sola persona. Negocios con buena cocina y buena gente que tropezaban siempre con las mismas piedras operativas.',
+  'La respuesta no estaba en la tecnología genérica. John tenía claro que una inteligencia artificial para cocineros no podía venir de fuera del oficio: tenía que nacer del fogón, del escandallo, de la carta y de la gestión real de un restaurante. Tenía que hablar el idioma de la cocina, no el de los manuales técnicos. Con esa convicción creó AI Chef Pro, una herramienta pensada por y para profesionales de la hostelería, que no obliga al chef a traducir sus problemas a un lenguaje ajeno, sino que entiende directamente de qué le están hablando.',
+  'Hoy AI Chef Pro es una suite de más de setenta agentes de inteligencia artificial culinarios, disponible en siete idiomas y con español nativo, que recoge todo ese recorrido. Es la culminación de un camino que empezó en los fogones, se afinó en la consultoría y encontró su forma en una tecnología que por fin habla el idioma del oficio. Junto con ChefBusiness, su grupo de consultoría gastronómica, John Guerrero sigue haciendo lo que ha hecho siempre: acompañar a negocios del sector, ahora con una herramienta que multiplica lo que aprendió en veintinueve años.',
+];
+
+const bioChips = [
+  'Fundador y CEO de AI Chef Pro',
+  'Fundador del grupo ChefBusiness',
+  '+29 años en alta hostelería',
+  '+15 años en consultoría gastronómica',
+];
+
+// Qué hace la suite hoy — stats verificados.
+const stats = [
+  { big: '+70', label: 'Agentes de IA culinarios' },
+  { big: '7', label: 'Idiomas (español nativo)' },
+  { big: '3.000', label: 'Créditos gratis al mes' },
+  { big: '0 €', label: 'Para empezar, sin tarjeta' },
+];
+
+// Resumen de precios (fuente de verdad: /precios). NO inventar.
+const pricingSummary = [
+  { name: 'Miembro', price: 'Gratis', detail: '3.000 créditos / mes · sin tarjeta' },
+  { name: 'Premium Pro', price: '25 €/mes', detail: '85.000 créditos / mes' },
+  { name: 'Premium Plus', price: '50 €/mes', detail: '175.000 créditos / mes' },
+  { name: 'Premium Max', price: '95 €/mes', detail: 'Créditos ilimitados' },
+  { name: 'Max Anual', price: '950 €/año', detail: 'Ilimitados · ahorras 2 meses' },
+];
+
+// Estándares editoriales (bridge.py → editados). Lo prometido en llms.txt para E-E-A-T.
+const editorialStandards = [
+  {
+    title: 'Research y SERP antes de publicar',
+    body: 'Antes de escribir una sola línea investigamos el tema, analizamos qué se ha publicado ya y contrastamos la información con fuentes fiables del sector.',
+    icon: 'search',
+  },
+  {
+    title: 'Datos con fuente (o advertencia honesta)',
+    body: 'Cada cifra o afirmación relevante lleva su fuente; si no existe, lo advertimos con honestidad indicando que es una estimación o una opinión profesional fundada.',
+    icon: 'data',
+  },
+  {
+    title: 'Revisión humana + IA',
+    body: 'Todo contenido pasa una doble revisión, primero asistida por IA y después validada por un profesional del oficio que comprueba que lo dicho funciona en una cocina de verdad.',
+    icon: 'review',
+  },
+  {
+    title: 'Imágenes de IA señaladas como referencia',
+    body: 'Las imágenes generadas con inteligencia artificial se etiquetan siempre como imagen de referencia; jamás las hacemos pasar por una fotografía real de un plato o de un local.',
+    icon: 'image',
+  },
+  {
+    title: 'Corrección de errores en cuanto los vemos',
+    body: 'Si detectamos un error lo corregimos de inmediato y, en lugar de ocultarlo, dejamos constancia del cambio y de la fecha en que se hizo.',
+    icon: 'correct',
+  },
+  {
+    title: 'Contacto para correcciones',
+    body: 'Cualquier persona puede escribirnos a info@aichef.pro para señalar un error, pedir una rectificación o sugerir una mejora, y revisamos cada caso personalmente.',
+    icon: 'mail',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Qué es AI Chef Pro?',
+    a: 'Es una suite de más de 70 agentes de inteligencia artificial pensados para profesionales de la hostelería: escandallos, ingeniería de carta, APPCC, generación de contenidos, SEO local, planificación financiera y mucho más. Está disponible en 7 idiomas, con español nativo, y puedes empezar gratis con 3.000 créditos al mes y sin tarjeta.',
+  },
+  {
+    q: '¿Quién está detrás del proyecto?',
+    a: 'AI Chef Pro lo fundó John Guerrero, chef con 29 años de trayectoria en alta hostelería, de los cuales 15 en consultoría gastronómica desde su grupo ChefBusiness. La suite nace de ese oficio: está pensada desde la cocina real, no desde fuera de ella.',
+  },
+  {
+    q: '¿Cómo creáis los contenidos del blog y del sitio?',
+    a: 'Investigamos y analizamos la SERP antes de escribir, acompañamos los datos con su fuente (o con una advertencia honesta cuando no la hay), revisamos cada pieza con criterio humano además de IA, y señalamos siempre las imágenes generadas con IA como imagen de referencia. Si algo se nos escapa, lo corregimos en cuanto lo detectamos.',
+  },
+  {
+    q: '¿Cómo aviso de un error o pido una corrección?',
+    a: 'Escríbenos a info@aichef.pro con la página y el detalle. Revisamos cada aviso personalmente y, si procede, corregimos el contenido dejando constancia del cambio.',
+  },
+  {
+    q: '¿Cuánto cuesta usar AI Chef Pro?',
+    a: 'Puedes empezar gratis para siempre con el plan Miembro (3.000 créditos al mes, sin tarjeta). Los planes Premium van desde 25 €/mes (Pro, 85.000 créditos) a 50 €/mes (Plus, 175.000) y 95 €/mes (Max, créditos ilimitados), con opción anual de 950 €/año. Tienes el detalle completo en la página de precios.',
+  },
+];
+
+const title = 'Sobre AI Chef Pro y Chef John Guerrero | Historia y Estándares';
+const description =
+  'Conoce AI Chef Pro y a su fundador, el chef John Guerrero: 29 años en alta hostelería y 15 en consultoría gastronómica. Una IA para cocineros creada desde el oficio, y nuestros estándares editoriales.';
+const keywords =
+  'sobre ai chef pro, john guerrero chef, fundador ai chef pro, chefbusiness, quiénes somos ai chef pro, estándares editoriales, ia para cocineros';
+
+const founderImg = `${SITE}/chef-john-guerrero-ebook.jpg`;
+const personId = `${SITE}/sobre-nosotros#john-guerrero`;
+const orgId = `${SITE}/#organization`;
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Sobre nosotros', item: `${SITE}/sobre-nosotros` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${SITE}/sobre-nosotros`,
+    url: `${SITE}/sobre-nosotros`,
+    name: title,
+    description,
+    inLanguage: 'es',
+    isPartOf: { '@id': orgId },
+    mainEntity: { '@id': personId },
+    about: { '@id': orgId },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': personId,
+    name: 'John Guerrero',
+    jobTitle: 'Fundador y CEO de AI Chef Pro',
+    description:
+      'Chef con 29 años de trayectoria en alta hostelería, 15 de ellos en consultoría gastronómica. Fundador del grupo ChefBusiness y creador de AI Chef Pro, la suite de IA para profesionales de la cocina.',
+    image: founderImg,
+    url: `${SITE}/sobre-nosotros`,
+    knowsAbout: [
+      'Alta hostelería',
+      'Consultoría gastronómica',
+      'Escandallos y food cost',
+      'Ingeniería de carta',
+      'Gestión de restaurantes',
+      'Inteligencia artificial culinaria',
+    ],
+    worksFor: { '@id': orgId },
+    founderOf: { '@id': orgId },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': orgId,
+    name: 'AI Chef Pro',
+    url: SITE,
+    logo: `${SITE}/logo-ai-chef-pro.svg`,
+    description:
+      'Suite de más de 70 agentes de IA para profesionales de la hostelería, en 7 idiomas y con español nativo.',
+    founder: { '@id': personId },
+    email: 'info@aichef.pro',
+    sameAs: [
+      'https://chefbusiness.co/',
+      'https://twitter.com/aichefpro',
+      'https://www.linkedin.com/company/aichefpro',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+
+// Iconos inline (estilo lucide, mismo trazo que precios.astro).
+const iconPaths: Record<string, string> = {
+  search: '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>',
+  data: '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/>',
+  review: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/>',
+  image: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>',
+  correct: '<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/>',
+  mail: '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  basePath={basePath}
+  locales={['es']}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+
+    <!-- Hero -->
+    <header class="mx-auto mb-16 max-w-3xl text-center">
+      <span class="mb-4 inline-block rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+        Sobre nosotros
+      </span>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        AI Chef Pro: una IA para Cocineros, Creada Desde el Oficio
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+        AI Chef Pro es una suite de más de 70 agentes de inteligencia artificial para
+        profesionales de la hostelería: chefs, propietarios, gerentes, caterings,
+        panaderías, heladerías y obradores. Está disponible en 7 idiomas, con español
+        nativo, y la fundó un chef con casi tres décadas entre fogones y consultoría.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Empezar Gratis
+        </a>
+      </div>
+    </header>
+
+    <!-- Historia y bio de John Guerrero -->
+    <section class="mx-auto max-w-5xl">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <!-- Retrato + chips -->
+        <aside class="md:col-span-1">
+          <div class="rounded-xl border border-border bg-card p-6 text-center">
+            <div class="mx-auto mb-4 h-36 w-36 overflow-hidden rounded-full border-4 border-accent/30 shadow-md">
+              <img src={founderImg} alt="Chef John Guerrero, fundador de AI Chef Pro" width="144" height="144" class="h-full w-full object-cover" loading="lazy" />
+            </div>
+            <h2 class="text-xl font-bold text-foreground">John Guerrero</h2>
+            <p class="mt-1 text-sm font-semibold text-primary">Fundador y CEO de AI Chef Pro</p>
+            <ul class="mt-4 space-y-2 text-left">
+              {bioChips.map((c) => (
+                <li class="flex items-start gap-2 text-sm text-foreground">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>{c}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Narrativa -->
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold text-foreground md:text-3xl">La Historia Detrás de AI Chef Pro</h2>
+          <div class="mt-5 space-y-4">
+            {bioParagraphs.map((p) => (
+              <p class="text-muted-foreground leading-relaxed">{p}</p>
+            ))}
+          </div>
+          <p class="mt-6 text-sm text-muted-foreground">
+            Descubre el trabajo del grupo en{' '}
+            <a href="https://chefbusiness.co/" target="_blank" rel="noopener noreferrer" class="font-medium text-primary hover:text-primary/80">ChefBusiness.co</a>
+            {' '}o conoce la línea de agentes para asesores en{' '}
+            <a href="/usos/consultoria-gastro-pro" class="font-medium text-primary hover:text-primary/80">Consultoría Gastro Pro</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué hace la suite hoy -->
+    <section class="mt-20">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-2xl font-bold text-foreground md:text-3xl">Qué Hace la Suite Hoy</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+          Más de 70 agentes de IA cubren el día a día de un negocio de hostelería: recetas
+          y escandallos, ingeniería de carta, APPCC, generación de contenidos, SEO local y
+          planificación financiera. Todo en 7 idiomas y con español nativo.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+        {stats.map((s) => (
+          <div class="rounded-xl border border-border bg-card p-6 text-center">
+            <p class="text-3xl font-bold text-foreground md:text-4xl">{s.big}</p>
+            <p class="mt-2 text-sm text-muted-foreground">{s.label}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Resumen de precios -->
+      <div class="mt-10 overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[640px] border-collapse text-sm">
+          <thead>
+            <tr class="bg-muted/50 text-left">
+              <th class="p-4 font-semibold text-foreground">Plan</th>
+              <th class="p-4 font-semibold text-foreground">Precio</th>
+              <th class="p-4 font-semibold text-foreground">Qué incluye</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            {pricingSummary.map((p) => (
+              <tr>
+                <th scope="row" class="p-4 text-left font-medium text-foreground">{p.name}</th>
+                <td class="p-4 text-foreground">{p.price}</td>
+                <td class="p-4 text-muted-foreground">{p.detail}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-center text-sm text-muted-foreground">
+        Consulta el detalle completo, la comparativa y las preguntas frecuentes en la{' '}
+        <a href="/precios" class="font-medium text-primary hover:text-primary/80">página de precios</a>.
+        También puedes explorar los{' '}
+        <a href="/usos" class="font-medium text-primary hover:text-primary/80">casos de uso</a>
+        {' '}y los{' '}
+        <a href="/productos-digitales" target="_blank" class="font-medium text-primary hover:text-primary/80">productos digitales</a>.
+      </p>
+    </section>
+
+    <!-- Estándares editoriales -->
+    <section class="mt-20">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-2xl font-bold text-foreground md:text-3xl">Nuestros Estándares Editoriales</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+          En un sector donde circula mucha información imprecisa, la transparencia es la
+          única forma de construir confianza. Publicamos cómo trabajamos para que, tanto si
+          nos lees como si nos citas, sepas exactamente qué garantías tienes al hacerlo.
+        </p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {editorialStandards.map((e) => (
+          <article class="flex flex-col rounded-xl border border-border bg-card p-6">
+            <span class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true" set:html={iconPaths[e.icon]} />
+            </span>
+            <h3 class="text-base font-bold text-foreground">{e.title}</h3>
+            <p class="mt-2 text-sm text-muted-foreground">{e.body}</p>
+          </article>
+        ))}
+      </div>
+
+      <p class="mx-auto mt-8 max-w-2xl text-center text-sm text-muted-foreground">
+        ¿Has visto algo que deberíamos corregir? Escríbenos a{' '}
+        <a href="mailto:info@aichef.pro" class="font-medium text-primary hover:text-primary/80">info@aichef.pro</a>
+        {' '}o desde la{' '}
+        <a href="/contacto" class="font-medium text-primary hover:text-primary/80">página de contacto</a>
+        {' '}y lo revisamos.
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto mt-20 max-w-3xl">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Preguntas Frecuentes</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {f.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+      <p class="mt-6 text-center text-sm text-muted-foreground">
+        ¿Tienes más dudas sobre la plataforma? Visita las{' '}
+        <a href="/faq" class="font-medium text-primary hover:text-primary/80">preguntas frecuentes completas</a>.
+      </p>
+    </section>
+
+    <!-- CTA final -->
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Prueba la IA Creada Desde la Cocina</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Crea tu cuenta gratis en un minuto, recibe 3.000 créditos al mes y prueba los más de
+        70 agentes de IA para chefs y restaurantes. Sin tarjeta y sin compromiso.
+      </p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Empezar Gratis
+        </a>
+        <a href="/precios" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
+          Ver Precios
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>
