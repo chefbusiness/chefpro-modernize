@@ -70,6 +70,30 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   vite: {
+    plugins: [
+      {
+        // Fase 6: en el pipeline de Astro, importar .jpg/.svg devuelve un objeto
+        // ImageMetadata — pero los componentes de la SPA (cross-root, D5: no se
+        // tocan) esperan la semántica de Vite puro: un STRING con la URL
+        // (<img src={logo}>). Sin esto, el DOM emite src="[object Object]"
+        // (visto en staging: logo y avatares rotos, request a /[object%20Object]).
+        // Se fuerza ?url SOLO para imágenes que resuelven al src/ de la RAÍZ.
+        name: 'cross-root-assets-as-url',
+        enforce: 'pre',
+        async resolveId(source, importer, options) {
+          if (!importer || !/\.(jpe?g|png|svg|webp|gif)$/.test(source)) return null;
+          const resolved = await this.resolve(source, importer, {
+            skipSelf: true,
+            ...options,
+          });
+          const rootSrc = fileURLToPath(new URL('../src/', import.meta.url));
+          if (resolved && resolved.id.startsWith(rootSrc) && !resolved.id.includes('?')) {
+            return `${resolved.id}?url`;
+          }
+          return resolved;
+        },
+      },
+    ],
     resolve: {
       alias: {
         // Los ficheros cross-root de la SPA (src/data/apps.ts) importan lucide-react,

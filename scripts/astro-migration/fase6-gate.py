@@ -218,8 +218,12 @@ def main():
           'sitemap: fuga -access/-library')
     no_lm = [p for p, v in stg.items() if not v]
     check(not no_lm, f'sitemap: {len(no_lm)} URLs sin lastmod')
-    same = [p for p in list(prod)[:200] if p in stg and prod[p] and stg[p] != prod[p]]
-    check(not same, f'sitemap: lastmod difiere de prod en {same[:5]}')
+    # @astrojs/sitemap emite W3C datetime completo (2026-03-02T00:00:00.000Z);
+    # prod emite fecha pelada. Se compara la FECHA (semánticamente idéntico,
+    # Google acepta ambos formatos).
+    same = [p for p in list(prod)[:200]
+            if p in stg and prod[p] and (stg[p] or '')[:10] != prod[p][:10]]
+    check(not same, f'sitemap: lastmod (fecha) difiere de prod en {same[:5]}')
 
     print('-- C. llms.txt')
     for f in ['llms.txt', 'llms-full.txt']:
@@ -264,7 +268,8 @@ def main():
     for p in ['/usos', '/kit-tareas-asador', '/en', '/abrir-restaurante/madrid']:
         st, _, _ = curl(BASE + p)
         check(st == 200, f'{p}: HTTP {st} (regresión)')
-    st, h, _ = curl(BASE + '/pro-prompts-ebook-access')
+    # Quirk Fase 5: el gate del eBook es /pro-prompts-library-access (D6).
+    st, h, _ = curl(BASE + '/pro-prompts-library-access')
     check(st == 200 and 'noindex' in h and 'rel="canonical"' not in h,
           'zona app: gate access alterado (regresión Fase 5)')
 
