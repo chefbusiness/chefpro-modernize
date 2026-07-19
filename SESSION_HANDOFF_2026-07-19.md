@@ -1,5 +1,11 @@
 # SESSION HANDOFF — 2026-07-19
 
+## Sesión 3 (tarde) — 🚀 FASE 7 CUTOVER EJECUTADO: aichef.pro sirve ASTRO
+
+**Con luz verde de John. El site de prod conserva dominio/functions/env — solo cambió QUÉ construye** (netlify.toml raíz → astro-site). Validado con branch deploy en el mismo site ANTES del flip; post-flip: gate F5 767/767 + gate F6 2.282/2.282 + functions same-origin (verify-purchase 400 unknown_product) + spot-checks todos verdes. GSC: sitemap-index dado de alta, www+tienda retirados. **Rollback**: revert de `afc0758` o restaurar deploy SPA en Netlify (instantáneo). **VIGILANCIA GSC 2-4 semanas (hasta ~2026-08-16)**: cobertura ≥ baseline, 0 404/soft-404 nuevos; ojo altas Pro finales de julio (pricing) y compras post-pago. FunctionsOriginPatch + noindex de astro-site/netlify.toml SE QUEDAN (son de staging — desviación documentada en §8). Siguiente: vigilancia + Fase 8 (mejoras con REGLA CAPITAL) / 8B blog / 8C agentes.
+
+---
+
 ## Sesión 3 (mediodía) — ✅ FASE 6 COMPLETA: SEO nativo + 155 URLs rescatadas, gate 2.278 checks verde
 
 **Fases 0-6 ✅ — solo queda Fase 7 (cutover, decisión de John) y las post-cutover.** El censo destapó 126 URLs de free tools/landings/hub jamás asignadas a fase + 5 legales en 404 → portadas 155 URLs como islands (22 head-modules con doble verificación adversarial). Sitemap nativo 696 URLs (= prod − /services×7 + 45 productos), lastmod portado, llms.txt, lang-redirect ACTIVO en staging (se mantiene tras cutover), 3 JSON-LD globales en BaseLayout, 51 OG cards ES (QA visual, 3 regeneradas) LIVE también en prod. Detalle completo en plan maestro §8 (entrada 2026-07-19 Fase 6).
