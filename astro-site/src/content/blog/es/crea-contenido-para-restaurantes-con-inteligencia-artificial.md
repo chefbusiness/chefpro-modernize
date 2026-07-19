@@ -538,7 +538,7 @@ wpId: 1056
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Herramienta Recomendada</th><th>Uso Principal</th></tr></thead><tbody><tr><td>Menú Digital</td><td>MenuDish Local SEO</td><td>Descripciones de platos</td></tr><tr><td>Blog</td><td>BlogPost SEO Gen+</td><td>Artículos y posts</td></tr><tr><td>Redes Sociales</td><td>InstaFlow AI Pro</td><td>Contenido social</td></tr><tr><td>Marketing Visual</td><td>PinterAI Content Pro</td><td>Contenido visual</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Herramienta Recomendada</th><th>Uso Principal</th></tr></thead><tbody><tr><td>Menú Digital</td><td>MenuDish Local SEO</td><td>Descripciones de platos</td></tr><tr><td>Blog</td><td>BlogPost SEO Gen+</td><td>Artículos y posts</td></tr><tr><td>Redes Sociales</td><td>InstaFlow AI Pro</td><td>Contenido social</td></tr><tr><td>Marketing Visual</td><td>PinterAI Content Pro</td><td>Contenido visual</td></tr></tbody></table></div></figure>
 
 
 
@@ -626,7 +626,7 @@ wpId: 1056
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Canal</th><th>Frecuencia Ideal</th><th>Tipo de Contenido</th></tr></thead><tbody><tr><td>Blog</td><td>1-2 posts/semana</td><td>Artículos largos, recetas</td></tr><tr><td>Instagram</td><td>4-5 posts/semana</td><td>Fotos, historias, reels</td></tr><tr><td>Facebook</td><td>3-4 posts/semana</td><td>Eventos, promociones</td></tr><tr><td>Newsletter</td><td>1-2 veces/mes</td><td>Novedades, ofertas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Canal</th><th>Frecuencia Ideal</th><th>Tipo de Contenido</th></tr></thead><tbody><tr><td>Blog</td><td>1-2 posts/semana</td><td>Artículos largos, recetas</td></tr><tr><td>Instagram</td><td>4-5 posts/semana</td><td>Fotos, historias, reels</td></tr><tr><td>Facebook</td><td>3-4 posts/semana</td><td>Eventos, promociones</td></tr><tr><td>Newsletter</td><td>1-2 veces/mes</td><td>Novedades, ofertas</td></tr></tbody></table></div></figure>
 
 
 
@@ -707,7 +707,7 @@ wpId: 1056
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Mes</th><th>Tema Principal</th><th>Contenidos Clave</th></tr></thead><tbody><tr><td>Enero</td><td>Cocina Saludable</td><td>Menús detox, platos ligeros</td></tr><tr><td>Febrero</td><td>Gastronomía Romántica</td><td>Menús San Valentín, cenas especiales</td></tr><tr><td>Marzo</td><td>Sabores de Primavera</td><td>Nuevos platos, ingredientes frescos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Mes</th><th>Tema Principal</th><th>Contenidos Clave</th></tr></thead><tbody><tr><td>Enero</td><td>Cocina Saludable</td><td>Menús detox, platos ligeros</td></tr><tr><td>Febrero</td><td>Gastronomía Romántica</td><td>Menús San Valentín, cenas especiales</td></tr><tr><td>Marzo</td><td>Sabores de Primavera</td><td>Nuevos platos, ingredientes frescos</td></tr></tbody></table></div></figure>
 
 
 

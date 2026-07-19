@@ -24,7 +24,7 @@ wpId: 3261
 <li><strong>Vapor:</strong> Visible debido a condensación del aire (no es el nitrógeno).</li>
 </ul>
 <h3>Características Culinarias</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Propiedad</th>
@@ -49,7 +49,7 @@ wpId: 3261
 <td style="padding: 12px; border: 1px solid #ddd;">Alimentos se vuelven quebradizos, efectos texturales</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia del Nitrógeno en Gastronomía</h2>
 <h3>Orígenes Científicos</h3>
 <p>El nitrógeno líquido fue producido por primera vez en <strong>1883 por los científicos polacos Zygmunt Wróblewski y Karol Olszewski</strong>. Durante décadas fue exclusivo de laboratorios científicos y aplicaciones industriales.</p>
@@ -143,7 +143,7 @@ wpId: 3261
 <p><strong>Resultado:</strong> Hierbas quebradizas que liberan aroma intenso al contacto.</p>
 <h2>Seguridad con Nitrógeno Líquido</h2>
 <h3>Riesgos Principales</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Riesgo</th>
@@ -173,7 +173,7 @@ wpId: 3261
 <td style="padding: 12px; border: 1px solid #ddd;">Añadir lentamente, gafas protectoras</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Equipo de Protección Obligatorio</h3>
 <ul>
 <li><strong>Guantes criogénicos:</strong> Resistentes a -200°C.</li>

@@ -110,7 +110,7 @@ wpId: 1600
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Funcionalidades Prioritarias</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Restaurante Gastronómico</td><td>Creatividad avanzada, técnicas innovadoras</td><td>Diferenciación y experiencias únicas</td></tr><tr><td>Restaurante Casual</td><td>Optimización de costes, recetas escalables</td><td>Rentabilidad y consistencia</td></tr><tr><td>Empresa de Catering</td><td>Planificación masiva, adaptabilidad</td><td>Eficiencia operativa</td></tr><tr><td>Pastelería</td><td>Precisión técnica, innovación en texturas</td><td>Productos únicos y técnicamente perfectos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Funcionalidades Prioritarias</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Restaurante Gastronómico</td><td>Creatividad avanzada, técnicas innovadoras</td><td>Diferenciación y experiencias únicas</td></tr><tr><td>Restaurante Casual</td><td>Optimización de costes, recetas escalables</td><td>Rentabilidad y consistencia</td></tr><tr><td>Empresa de Catering</td><td>Planificación masiva, adaptabilidad</td><td>Eficiencia operativa</td></tr><tr><td>Pastelería</td><td>Precisión técnica, innovación en texturas</td><td>Productos únicos y técnicamente perfectos</td></tr></tbody></table></div></figure>
 
 
 
@@ -484,7 +484,7 @@ wpId: 1600
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Apps Domésticas</th></tr></thead><tbody><tr><td>Enfoque</td><td><strong>Profesional/Comercial</strong></td><td>Doméstico avanzado</td><td>Doméstico básico</td></tr><tr><td>Cálculo de costes</td><td>✅ Avanzado con márgenes</td><td>❌ No incluido</td><td>❌ No incluido</td></tr><tr><td>Análisis de mermas</td><td>✅ Herramienta específica</td><td>❌ No incluido</td><td>❌ No incluido</td></tr><tr><td>Food pairing científico</td><td>✅ Análisis molecular</td><td>🔶 Básico</td><td>❌ No incluido</td></tr><tr><td>Escalabilidad comercial</td><td>✅ Múltiples porciones</td><td>🔶 Limitado</td><td>❌ No disponible</td></tr><tr><td>Número de herramientas</td><td>✅ 50+ especializadas</td><td>🔶 5 modos</td><td>🔶 Funciones básicas</td></tr><tr><td>Soporte técnico</td><td>✅ Especializado en hostelería</td><td>🔶 Genérico</td><td>🔶 Básico</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Apps Domésticas</th></tr></thead><tbody><tr><td>Enfoque</td><td><strong>Profesional/Comercial</strong></td><td>Doméstico avanzado</td><td>Doméstico básico</td></tr><tr><td>Cálculo de costes</td><td>✅ Avanzado con márgenes</td><td>❌ No incluido</td><td>❌ No incluido</td></tr><tr><td>Análisis de mermas</td><td>✅ Herramienta específica</td><td>❌ No incluido</td><td>❌ No incluido</td></tr><tr><td>Food pairing científico</td><td>✅ Análisis molecular</td><td>🔶 Básico</td><td>❌ No incluido</td></tr><tr><td>Escalabilidad comercial</td><td>✅ Múltiples porciones</td><td>🔶 Limitado</td><td>❌ No disponible</td></tr><tr><td>Número de herramientas</td><td>✅ 50+ especializadas</td><td>🔶 5 modos</td><td>🔶 Funciones básicas</td></tr><tr><td>Soporte técnico</td><td>✅ Especializado en hostelería</td><td>🔶 Genérico</td><td>🔶 Básico</td></tr></tbody></table></div></figure>
 
 
 
@@ -705,7 +705,7 @@ wpId: 1600
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Estudiantes, emprendedores, primeras pruebas</td><td>Exploración sin inversión</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs individuales, restaurantes pequeños</td><td>300-500%</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes medianos, cafeterías, pastelerías</td><td>400-700%</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Restaurantes grandes, grupos de locales</td><td>700-1000%</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas, empresas de catering, consultorías</td><td>1000%+</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Estudiantes, emprendedores, primeras pruebas</td><td>Exploración sin inversión</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs individuales, restaurantes pequeños</td><td>300-500%</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes medianos, cafeterías, pastelerías</td><td>400-700%</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Restaurantes grandes, grupos de locales</td><td>700-1000%</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas, empresas de catering, consultorías</td><td>1000%+</td></tr></tbody></table></div></figure>
 
 
 

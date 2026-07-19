@@ -37,7 +37,7 @@ wpId: 2740
 <p>Con verduras asadas, una vinagreta templada con hierbas frescas y unas alcaparras se convierte en una salsa principal capaz de dar vida a un plato frío de berenjenas o pimientos escalivados. En todos estos casos, la clave está en batir justo antes de usar y, si lleva emulsionante, respetar la cadena de frío para alargar su vida útil un par de días.</p>
 <h2>Proporciones clásicas y guía rápida</h2>
 <p>Para que no te pierdas entre variantes, aquí tienes una tabla de referencia. No son fórmulas rígidas, sino puntos de partida que puedes ajustar según la intensidad de tus ingredientes y el plato al que van destinados.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Tipo de vinagreta</th>
@@ -72,7 +72,7 @@ wpId: 2740
 <td>Carnes frías, escabeches, bocadillos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Preguntas frecuentes</h2>
 <h3>¿Puedo preparar vinagreta sin mostaza?</h3>
 <p>Sí, puedes batir solo aceite y vinagre y obtendrás una mezcla tradicional que se separa en pocos minutos. Para servir al instante en una ensalada es perfecto; simplemente vuelve a agitar con un tenedor antes de aliñar. Si buscas estabilidad sin mostaza, puedes usar miel, yema de huevo o incluso un poco de mayonesa comercial, siempre sabiendo que la textura y el sabor cambian.</p>

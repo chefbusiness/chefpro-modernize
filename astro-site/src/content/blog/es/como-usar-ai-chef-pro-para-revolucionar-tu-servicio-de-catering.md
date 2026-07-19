@@ -184,7 +184,7 @@ wpId: 973
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Restaurante</th><th>Solución Implementada</th><th>Resultado</th></tr><tr><td>El Jardín de las Especias</td><td>Automatización de pedidos y análisis de reseñas</td><td>Reducción del 30% en tiempos de espera</td></tr><tr><td>Restaurante Carlos García</td><td>Personalización de menús y asistentes virtuales</td><td>Aumento del 20% en la fidelización de clientes</td></tr><tr><td>La Cocina del Mundo</td><td>Gestión inteligente de inventarios</td><td>Reducción del 25% en costes de ingredientes</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Restaurante</th><th>Solución Implementada</th><th>Resultado</th></tr><tr><td>El Jardín de las Especias</td><td>Automatización de pedidos y análisis de reseñas</td><td>Reducción del 30% en tiempos de espera</td></tr><tr><td>Restaurante Carlos García</td><td>Personalización de menús y asistentes virtuales</td><td>Aumento del 20% en la fidelización de clientes</td></tr><tr><td>La Cocina del Mundo</td><td>Gestión inteligente de inventarios</td><td>Reducción del 25% en costes de ingredientes</td></tr></tbody></table></div></figure>
 
 
 

@@ -58,7 +58,7 @@ wpId: 3200
 <li><strong>Hipertrofia hepática:</strong> El hígado puede alcanzar 8-10 veces su tamaño normal (hasta 600-700 gramos en patos).</li>
 </ul>
 <h3>Razas Utilizadas</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Especie</th>
@@ -78,7 +78,7 @@ wpId: 3200
 <td style="padding: 12px; border: 1px solid #ddd;">10% de producción, sabor más delicado, textura fina</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Foie Gras de Pato vs. Foie Gras de Ganso</h3>
 <p><strong>Pato (90% del mercado):</strong></p>
 <ul>

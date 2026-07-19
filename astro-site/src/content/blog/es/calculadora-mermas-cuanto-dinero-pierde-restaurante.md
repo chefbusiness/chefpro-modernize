@@ -75,7 +75,7 @@ wpId: 3051
 </ol>
 <h2>Tabla de Mermas Estándar por Tipo de Producto</h2>
 <p>Estos son los porcentajes de merma <strong>aceptables</strong> en restauración profesional. Si tus números superan estos rangos, tienes margen de mejora:</p>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Producto</th>
@@ -134,11 +134,11 @@ wpId: 3051
 <td style="padding: 12px; border: 1px solid #ddd;">+12% coste/kg</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p style="font-size: 12px; color: #666; margin-top: -20px; margin-bottom: 30px;">* Coste oculto: Incremento real del coste por kg utilizable respecto al precio de compra.</p>
 <h2>Calculadora de Impacto Financiero</h2>
 <p>Usa esta tabla para calcular cuánto te cuesta la merma en tu restaurante:</p>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Facturación Mensual</th>
@@ -178,7 +178,7 @@ wpId: 3051
 <td style="padding: 12px; border: 1px solid #ddd; background: #ffcccc;">9.000€/mes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p style="font-size: 12px; color: #666; margin-top: -20px; margin-bottom: 30px;">* Asumiendo un food cost del 40%, estándar en restauración española.</p>
 <h2>5 Acciones Inmediatas para Reducir Mermas</h2>
 <h3>1. Registro Diario (Obligatorio)</h3>
@@ -222,7 +222,7 @@ wpId: 3051
 </p></div>
 <h2>Hoja de Cálculo: Control de Mermas Semanal</h2>
 <p>Usa esta estructura para crear tu propio registro (o usa la app Mermas GenCal para automatizarlo):</p>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Fecha</th>
@@ -269,7 +269,7 @@ wpId: 3051
 <td style="padding: 12px; border: 1px solid #ddd;">—</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Conclusión: El Coste de No Actuar</h2>
 <p>Las mermas son como un <strong>agujero invisible en tu caja</strong>. No duele porque no lo ves, pero está ahí, mes tras mes, llevándose tu rentabilidad.</p>
 <p>La buena noticia: es uno de los pocos costes que puedes controlar <strong>100%</strong> con disciplina y las herramientas adecuadas.</p>

@@ -69,7 +69,7 @@ wpId: 3237
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo</th><th>Agente</th><th>Producto Principal</th><th>Ejemplos</th></tr></thead><tbody><tr><td><strong>Láctica</strong></td><td>Bacterias lácticas</td><td>Ácido láctico</td><td>Yogur, chucrut, kimchi, encurtidos</td></tr><tr><td><strong>Alcohólica</strong></td><td>Levaduras (Saccharomyces)</td><td>Etanol + CO₂</td><td>Pan, cerveza, vino, masa madre</td></tr><tr><td><strong>Acética</strong></td><td>Bacterias acéticas</td><td>Ácido acético</td><td>Vinagre, kombucha</td></tr><tr><td><strong>Aminoácida</strong></td><td>Mohos (Aspergillus)</td><td>Aminoácidos libres</td><td>Miso, salsa de soja, tempeh</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo</th><th>Agente</th><th>Producto Principal</th><th>Ejemplos</th></tr></thead><tbody><tr><td><strong>Láctica</strong></td><td>Bacterias lácticas</td><td>Ácido láctico</td><td>Yogur, chucrut, kimchi, encurtidos</td></tr><tr><td><strong>Alcohólica</strong></td><td>Levaduras (Saccharomyces)</td><td>Etanol + CO₂</td><td>Pan, cerveza, vino, masa madre</td></tr><tr><td><strong>Acética</strong></td><td>Bacterias acéticas</td><td>Ácido acético</td><td>Vinagre, kombucha</td></tr><tr><td><strong>Aminoácida</strong></td><td>Mohos (Aspergillus)</td><td>Aminoácidos libres</td><td>Miso, salsa de soja, tempeh</td></tr></tbody></table></div></figure>
 
 
 		<div class="enlazzo-box">
@@ -419,7 +419,7 @@ wpId: 3237
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr></thead><tbody><tr><td><strong>Moho no deseado</strong></td><td>Superficie expuesta al aire, contaminación</td><td>Mantener sumergido en salmuera, usar peso</td></tr><tr><td><strong>Olor putrefacto</strong></td><td>Fermentación anaeróbica insuficiente</td><td>Desechar y revisar técnica de sellado</td></tr><tr><td><strong>Demasiado salado</strong></td><td>Exceso de sal (&gt;3%)</td><td>Usar proporción correcta (1.5-2.5%)</td></tr><tr><td><strong>Fermentación lenta</strong></td><td>Temperatura muy baja</td><td>Mantener entre 18-22°C</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr></thead><tbody><tr><td><strong>Moho no deseado</strong></td><td>Superficie expuesta al aire, contaminación</td><td>Mantener sumergido en salmuera, usar peso</td></tr><tr><td><strong>Olor putrefacto</strong></td><td>Fermentación anaeróbica insuficiente</td><td>Desechar y revisar técnica de sellado</td></tr><tr><td><strong>Demasiado salado</strong></td><td>Exceso de sal (&gt;3%)</td><td>Usar proporción correcta (1.5-2.5%)</td></tr><tr><td><strong>Fermentación lenta</strong></td><td>Temperatura muy baja</td><td>Mantener entre 18-22°C</td></tr></tbody></table></div></figure>
 
 
 

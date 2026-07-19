@@ -50,7 +50,7 @@ wpId: 1652
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Nivel Profesional</th><th>Valor/Hora Promedio</th><th>Impacto 15h Semanales</th><th>Valor Mensual Ahorrado</th></tr></thead><tbody><tr><td>Sous Chef</td><td>€18-25/hora</td><td>€270-375/semana</td><td>€1.080-1.500</td></tr><tr><td>Chef de Partie</td><td>€25-35/hora</td><td>€375-525/semana</td><td>€1.500-2.100</td></tr><tr><td>Chef Ejecutivo</td><td>€45-65/hora</td><td>€675-975/semana</td><td>€2.700-3.900</td></tr><tr><td>Consultor Gastronómico</td><td>€80-120/hora</td><td>€1.200-1.800/semana</td><td>€4.800-7.200</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Nivel Profesional</th><th>Valor/Hora Promedio</th><th>Impacto 15h Semanales</th><th>Valor Mensual Ahorrado</th></tr></thead><tbody><tr><td>Sous Chef</td><td>€18-25/hora</td><td>€270-375/semana</td><td>€1.080-1.500</td></tr><tr><td>Chef de Partie</td><td>€25-35/hora</td><td>€375-525/semana</td><td>€1.500-2.100</td></tr><tr><td>Chef Ejecutivo</td><td>€45-65/hora</td><td>€675-975/semana</td><td>€2.700-3.900</td></tr><tr><td>Consultor Gastronómico</td><td>€80-120/hora</td><td>€1.200-1.800/semana</td><td>€4.800-7.200</td></tr></tbody></table></div></figure>
 
 
 
@@ -271,7 +271,7 @@ document.getElementById('horasDisplay').textContent = this.value + ' horas';<br 
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Proceso Tradicional</th><th>Tiempo Requerido</th><th>Con Mermas GenCal</th><th>Nuevo Tiempo</th></tr></thead><tbody><tr><td>Cálculo manual de rendimientos</td><td>45-60 min</td><td>Análisis instantáneo con base de datos</td><td>2-3 min</td></tr><tr><td>Optimización de técnicas de corte</td><td>30-45 min</td><td>Recomendaciones personalizadas IA</td><td>5 min</td></tr><tr><td>Análisis de costes por porción</td><td>20-30 min</td><td>Cálculo automático integrado</td><td>1 min</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Proceso Tradicional</th><th>Tiempo Requerido</th><th>Con Mermas GenCal</th><th>Nuevo Tiempo</th></tr></thead><tbody><tr><td>Cálculo manual de rendimientos</td><td>45-60 min</td><td>Análisis instantáneo con base de datos</td><td>2-3 min</td></tr><tr><td>Optimización de técnicas de corte</td><td>30-45 min</td><td>Recomendaciones personalizadas IA</td><td>5 min</td></tr><tr><td>Análisis de costes por porción</td><td>20-30 min</td><td>Cálculo automático integrado</td><td>1 min</td></tr></tbody></table></div></figure>
 
 
 
@@ -507,7 +507,7 @@ document.getElementById('horasDisplay').textContent = this.value + ' horas';<br 
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Promedio de Mejora</th><th>Rango Observado</th><th>Tiempo de Adaptación</th></tr></thead><tbody><tr><td>Ahorro Temporal Semanal</td><td>19.2 horas</td><td>12-28 horas</td><td>2-4 semanas</td></tr><tr><td>Incremento en Productividad</td><td>145%</td><td>120-180%</td><td>4-6 semanas</td></tr><tr><td>Reducción de Errores</td><td>78%</td><td>65-90%</td><td>1-2 semanas</td></tr><tr><td>Mejora en Satisfacción Laboral</td><td>32%</td><td>18-45%</td><td>6-8 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Promedio de Mejora</th><th>Rango Observado</th><th>Tiempo de Adaptación</th></tr></thead><tbody><tr><td>Ahorro Temporal Semanal</td><td>19.2 horas</td><td>12-28 horas</td><td>2-4 semanas</td></tr><tr><td>Incremento en Productividad</td><td>145%</td><td>120-180%</td><td>4-6 semanas</td></tr><tr><td>Reducción de Errores</td><td>78%</td><td>65-90%</td><td>1-2 semanas</td></tr><tr><td>Mejora en Satisfacción Laboral</td><td>32%</td><td>18-45%</td><td>6-8 semanas</td></tr></tbody></table></div></figure>
 
 
 
@@ -678,7 +678,7 @@ document.getElementById('horasDisplay').textContent = this.value + ' horas';<br 
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plan AI Chef Pro</th><th>Inversión Mensual</th><th>Ahorro Promedio/Mes</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Pro (€10/mes)</td><td>€10</td><td>€1.200-2.000</td><td>12.000-20.000%</td></tr><tr><td>Premium (€15/mes)</td><td>€15</td><td>€1.500-2.500</td><td>10.000-16.600%</td></tr><tr><td>Premium Pro (€25/mes)</td><td>€25</td><td>€2.000-3.500</td><td>8.000-14.000%</td></tr><tr><td>Premium Plus (€50/mes)</td><td>€50</td><td>€3.000-5.000</td><td>6.000-10.000%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan AI Chef Pro</th><th>Inversión Mensual</th><th>Ahorro Promedio/Mes</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Pro (€10/mes)</td><td>€10</td><td>€1.200-2.000</td><td>12.000-20.000%</td></tr><tr><td>Premium (€15/mes)</td><td>€15</td><td>€1.500-2.500</td><td>10.000-16.600%</td></tr><tr><td>Premium Pro (€25/mes)</td><td>€25</td><td>€2.000-3.500</td><td>8.000-14.000%</td></tr><tr><td>Premium Plus (€50/mes)</td><td>€50</td><td>€3.000-5.000</td><td>6.000-10.000%</td></tr></tbody></table></div></figure>
 
 
 

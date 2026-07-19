@@ -92,7 +92,7 @@ wpId: 3196
 <li>Asegurar que quede completamente sellado.</li>
 </ol>
 <h3>Fase 4: Cocción</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Método</th>
@@ -127,7 +127,7 @@ wpId: 3196
 <td style="padding: 12px; border: 1px solid #ddd;">Barbacoa, aluminio obligatorio</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Combinaciones de Sabores Profesionales</h2>
 <p>Las combinaciones aromáticas son infinitas, pero algunas clásicas garantizan el éxito:</p>
 <h3>Pescados Blancos (Merluza, Lenguado, Gallo)</h3>

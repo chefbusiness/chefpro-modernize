@@ -234,7 +234,7 @@ wpId: 3463
 <li><strong>Diversidad:</strong> Fotos de platos, ambiente, equipo, proceso</li>
 </ul>
 <h3>Resumen comparativo</h3>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Aspecto</th>
@@ -269,7 +269,7 @@ wpId: 3463
 <td>1 (principal)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Construye tu banco de imágenes propio</h2>
 <p>Un banco de imágenes propio es uno de los activos más valiosos que puede tener un restaurante. Te permite mantener consistencia visual, publicar regularmente sin prisas, y tener material para campañas futuras.</p>
 <h3>Cómo organizar tu banco de imágenes</h3>

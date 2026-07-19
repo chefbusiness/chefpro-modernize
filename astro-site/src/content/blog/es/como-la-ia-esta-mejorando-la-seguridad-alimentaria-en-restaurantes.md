@@ -43,7 +43,7 @@ wpId: 876
 <h3>Consideraciones Éticas y Adaptación Tecnológica</h3>
 <p>Entre los principales desafíos se encuentran la dependencia tecnológica y la posible pérdida de criterio humano. <strong>La automatización total</strong> podría generar riesgos si no se establecen protocolos claros. Por ejemplo, un sistema de IA podría tomar decisiones basadas en datos históricos, pero sin considerar factores como las preferencias del cliente o la calidad de los ingredientes.</p>
 <p>Además, la privacidad de los datos es un tema crítico. Los sistemas de IA requieren gran cantidad de información, lo que exige medidas robustas para proteger la seguridad de los datos y evitar su mal uso. <em>La capacitación del personal</em> es clave para asegurar que la tecnología se utilice de manera responsable y ética.</p>
-<table>
+<div class="table-scroll"><table>
 <tr>
 <th>Aspecto</th>
 <th>Desafío</th>
@@ -64,7 +64,7 @@ wpId: 876
 <td>Pérdida de habilidades tradicionales.</td>
 <td>Mejora de la experiencia del cliente y personalización de menús.</td>
 </tr>
-</table>
+</table></div>
 <p>Como menciona un experto en el sector, </p>
 <blockquote><p>«La tecnología debe ser una herramienta que complemente, no reemplace, la creatividad y el criterio humano en la cocina.»</p></blockquote>
 <p>Esto refleja la importancia de encontrar un equilibrio entre la innovación y la experiencia humana.</p>

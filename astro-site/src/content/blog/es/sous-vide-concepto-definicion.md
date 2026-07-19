@@ -86,7 +86,7 @@ wpId: 3204
 <h2>Tablas de Temperatura y Tiempos</h2>
 <p>El sous vide es ciencia aplicada a la cocina. Estas tablas son referencias estándar:</p>
 <h3>Carnes Rojas</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Punto</th>
@@ -121,7 +121,7 @@ wpId: 3204
 <td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Aves</h3>
 <ul>
 <li><strong>Pechna de pollo:</strong> 63-65°C durante 1-4 horas (jugosa y segura).</li>

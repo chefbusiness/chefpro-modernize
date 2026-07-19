@@ -44,7 +44,7 @@ wpId: 2331
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>2024</th><th>Proyección 2030</th><th>Proyección 2034</th></tr></thead><tbody><tr><td>Mercado Food Tech Global</td><td>$220.500 millones</td><td>$350.000 millones</td><td>$498.700 millones</td></tr><tr><td>Mercado Proteínas Alternativas</td><td>$16.520 millones</td><td>$26.520 millones</td><td>$40.000 millones (est.)</td></tr><tr><td>Automatización Industria Alimentaria</td><td>$14.500 millones</td><td>$30.000 millones</td><td>$45.000 millones (est.)</td></tr><tr><td>Ghost Kitchens (unidades globales)</td><td>~60.000</td><td>100.000</td><td>150.000 (est.)</td></tr><tr><td>Tasa de crecimiento anual (CAGR)</td><td colspan="3">8,4% &#8211; 9,9% según segmento</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>2024</th><th>Proyección 2030</th><th>Proyección 2034</th></tr></thead><tbody><tr><td>Mercado Food Tech Global</td><td>$220.500 millones</td><td>$350.000 millones</td><td>$498.700 millones</td></tr><tr><td>Mercado Proteínas Alternativas</td><td>$16.520 millones</td><td>$26.520 millones</td><td>$40.000 millones (est.)</td></tr><tr><td>Automatización Industria Alimentaria</td><td>$14.500 millones</td><td>$30.000 millones</td><td>$45.000 millones (est.)</td></tr><tr><td>Ghost Kitchens (unidades globales)</td><td>~60.000</td><td>100.000</td><td>150.000 (est.)</td></tr><tr><td>Tasa de crecimiento anual (CAGR)</td><td colspan="3">8,4% &#8211; 9,9% según segmento</td></tr></tbody></table></div></figure>
 
 
 
@@ -111,7 +111,7 @@ wpId: 2331
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Impacto Estimado</th><th>Aplicación Práctica</th></tr></thead><tbody><tr><td>Reducción de tiempos de preparación</td><td>30-50%</td><td>Robots de cocina, sistemas de mise en place automatizados</td></tr><tr><td>Consistencia en la calidad</td><td>95-99% precisión</td><td>Dosificación exacta, control de temperaturas</td></tr><tr><td>Ahorro en costes operativos</td><td>15-25%</td><td>Optimización de personal, reducción de mermas</td></tr><tr><td>Mejora en seguridad alimentaria</td><td>40% menos incidentes</td><td>Manipulación higiénica, trazabilidad</td></tr><tr><td>Escalabilidad operativa</td><td>Ilimitada</td><td>Replicación en múltiples ubicaciones</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Impacto Estimado</th><th>Aplicación Práctica</th></tr></thead><tbody><tr><td>Reducción de tiempos de preparación</td><td>30-50%</td><td>Robots de cocina, sistemas de mise en place automatizados</td></tr><tr><td>Consistencia en la calidad</td><td>95-99% precisión</td><td>Dosificación exacta, control de temperaturas</td></tr><tr><td>Ahorro en costes operativos</td><td>15-25%</td><td>Optimización de personal, reducción de mermas</td></tr><tr><td>Mejora en seguridad alimentaria</td><td>40% menos incidentes</td><td>Manipulación higiénica, trazabilidad</td></tr><tr><td>Escalabilidad operativa</td><td>Ilimitada</td><td>Replicación en múltiples ubicaciones</td></tr></tbody></table></div></figure>
 
 
 
@@ -274,7 +274,7 @@ wpId: 2331
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tecnología</th><th>Función</th><th>Beneficio para el Consumidor</th></tr></thead><tbody><tr><td>Sensores de frescura</td><td>Detectan cambios en estado del producto</td><td>Garantía de calidad en tiempo real</td></tr><tr><td>Etiquetas digitales (QR/NFC)</td><td>Acceso a información detallada</td><td>Trazabilidad, recetas, sostenibilidad</td></tr><tr><td>Indicadores tiempo-temperatura</td><td>Monitorean cadena de frío</td><td>Seguridad alimentaria verificable</td></tr><tr><td>Recubrimientos comestibles</td><td>Prolongan vida útil</td><td>Menos conservantes, más frescura</td></tr><tr><td>Materiales biodegradables</td><td>Reducen impacto ambiental</td><td>Consumo responsable</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tecnología</th><th>Función</th><th>Beneficio para el Consumidor</th></tr></thead><tbody><tr><td>Sensores de frescura</td><td>Detectan cambios en estado del producto</td><td>Garantía de calidad en tiempo real</td></tr><tr><td>Etiquetas digitales (QR/NFC)</td><td>Acceso a información detallada</td><td>Trazabilidad, recetas, sostenibilidad</td></tr><tr><td>Indicadores tiempo-temperatura</td><td>Monitorean cadena de frío</td><td>Seguridad alimentaria verificable</td></tr><tr><td>Recubrimientos comestibles</td><td>Prolongan vida útil</td><td>Menos conservantes, más frescura</td></tr><tr><td>Materiales biodegradables</td><td>Reducen impacto ambiental</td><td>Consumo responsable</td></tr></tbody></table></div></figure>
 
 
 
@@ -529,7 +529,7 @@ wpId: 2331
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Área de especialización</th><th>Porcentaje de startups</th><th>Fortalezas</th></tr></thead><tbody><tr><td>Biotecnología</td><td>47%</td><td>Investigación avanzada, talento científico</td></tr><tr><td>IA, <a href="https://aichef.pro/blog/aprendizaje-automatico-machine-learning">Machine Learning</a>, IoT, Robótica</td><td>41% combinado</td><td>Ecosistema tech maduro, inversión creciente</td></tr><tr><td>Optimización logística y gestión</td><td>26%</td><td>Experiencia en cadena de suministro</td></tr><tr><td>Madurez tecnológica (TRL9)</td><td>60%+</td><td>Productos listos para mercado</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Área de especialización</th><th>Porcentaje de startups</th><th>Fortalezas</th></tr></thead><tbody><tr><td>Biotecnología</td><td>47%</td><td>Investigación avanzada, talento científico</td></tr><tr><td>IA, <a href="https://aichef.pro/blog/aprendizaje-automatico-machine-learning">Machine Learning</a>, IoT, Robótica</td><td>41% combinado</td><td>Ecosistema tech maduro, inversión creciente</td></tr><tr><td>Optimización logística y gestión</td><td>26%</td><td>Experiencia en cadena de suministro</td></tr><tr><td>Madurez tecnológica (TRL9)</td><td>60%+</td><td>Productos listos para mercado</td></tr></tbody></table></div></figure>
 
 
 

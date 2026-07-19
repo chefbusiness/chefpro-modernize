@@ -24,7 +24,7 @@ wpId: 3240
 </ul>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/gelificacion-interna.jpg" alt="Ingredientes para gelificación molecular" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;">  </p>
 <h3>Tipos de Gelificación en Gastronomía</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -59,7 +59,7 @@ wpId: 3240
 <td style="padding: 12px; border: 1px solid #ddd;">Geles fluidos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Gelificación</h2>
 <h3>Orígenes Antiguos</h3>
 <p>La gelificación es tan antigua como la civilización. Los <strong>egipcios</strong> ya utilizaban colágeno animal para crear preparaciones gelificadas hace más de 3,000 años. En la <strong>Edad Media europea</strong>, los aspics de carne eran símbolo de opulencia en mesas nobles, donde el arte de crear gelatina clara a partir de huesos y cartílagos era una habilidad culinaria apreciada.</p>
@@ -77,7 +77,7 @@ wpId: 3240
 <li><strong>Interacciones hidrofóbicas:</strong> Como en algunas proteínas.</li>
 </ul>
 <h3>Agentes Gelificantes en Cocina</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Agente</th>
@@ -118,7 +118,7 @@ wpId: 3240
 <td style="padding: 12px; border: 1px solid #ddd;">Firme (mermeladas)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Técnicas de Gelificación</h2>
 <h3>Esferificación</h3>
 <p>Técnica icónica de la gastronomía molecular que crea esferas líquidas con membrana gelatinosa:</p>
@@ -184,7 +184,7 @@ wpId: 3240
 <li>Texturas contrastantes en un mismo plato.</li>
 </ul>
 <h2>Errores Comunes y Soluciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
@@ -219,7 +219,7 @@ wpId: 3240
 <td style="padding: 12px; border: 1px solid #ddd;">Reducir concentración o lavar mejor</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Preguntas Frecuentes</h2>
 <p><strong>¿Cuál es la diferencia entre gelatina y agar-agar?</strong><br /> La gelatina es de origen animal (colágeno), se derrite a 35-40°C y tiene textura elástica. El agar es vegetal (alga), permanece firme hasta 85°C y tiene textura quebradiza.</p>
 <p><strong>¿Puedo sustituir gelatina por agar en recetas?</strong><br /> No directamente. El agar requiere menos cantidad (1g agar ≈ 6-8g gelatina) y se debe hervir para activar. Las texturas finales son diferentes.</p>

@@ -94,7 +94,7 @@ wpId: 2770
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Tiempo preparación</strong></td><td>45 minutos</td></tr><tr><td><strong>Tiempo fermentación</strong></td><td>3-7 días</td></tr><tr><td><strong>Raciones</strong></td><td>1 litro (8-10 porciones)</td></tr><tr><td><strong>Dificultad</strong></td><td>Media</td></tr><tr><td><strong>Coste aproximado</strong></td><td>8-12€</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Tiempo preparación</strong></td><td>45 minutos</td></tr><tr><td><strong>Tiempo fermentación</strong></td><td>3-7 días</td></tr><tr><td><strong>Raciones</strong></td><td>1 litro (8-10 porciones)</td></tr><tr><td><strong>Dificultad</strong></td><td>Media</td></tr><tr><td><strong>Coste aproximado</strong></td><td>8-12€</td></tr></tbody></table></div></figure>
 
 
 
@@ -454,7 +454,7 @@ wpId: 2770
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Nevera</strong></td><td>3-6 meses</td></tr><tr><td><strong>Congelador</strong></td><td>No recomendado (cambia textura)</td></tr><tr><td><strong>Sellado al vacío</strong></td><td>Hasta 1 año</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Nevera</strong></td><td>3-6 meses</td></tr><tr><td><strong>Congelador</strong></td><td>No recomendado (cambia textura)</td></tr><tr><td><strong>Sellado al vacío</strong></td><td>Hasta 1 año</td></tr></tbody></table></div></figure>
 
 
 
@@ -549,7 +549,7 @@ Maori Murota te presenta sus recetas preferidas y cien por cien caseras: sushi y
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Aspecto</th><th>Detalle</th></tr><tr><td><strong>Origen</strong></td><td>Corea del Sur</td></tr><tr><td><strong>Tipo</strong></td><td>Fermentado, probiótico</td></tr><tr><td><strong>Sabor</strong></td><td>Picante, ácido, umami</td></tr><tr><td><strong>Fermentación</strong></td><td>3-7 días</td></tr><tr><td><strong>Conservación</strong></td><td>3-6 meses nevera</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Aspecto</th><th>Detalle</th></tr><tr><td><strong>Origen</strong></td><td>Corea del Sur</td></tr><tr><td><strong>Tipo</strong></td><td>Fermentado, probiótico</td></tr><tr><td><strong>Sabor</strong></td><td>Picante, ácido, umami</td></tr><tr><td><strong>Fermentación</strong></td><td>3-7 días</td></tr><tr><td><strong>Conservación</strong></td><td>3-6 meses nevera</td></tr></tbody></table></div></figure>
 
 
 

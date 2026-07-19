@@ -59,7 +59,7 @@ wpId: 3164
 <li>Almíbar espejo</li>
 </ul>
 <h2>Tabla de Tipos de Glazing y Aplicaciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo de Glazing</th>
@@ -100,7 +100,7 @@ wpId: 3164
 <td style="padding: 12px; border: 1px solid #ddd;">35-40°C</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Usos Profesionales del Glazing</h2>
 <h3>En Restaurantes de Alta Cocina</h3>
 <p>El glazing es una técnica imprescindible en cocinas profesionales por múltiples razones:</p>

@@ -42,7 +42,7 @@ wpId: 1956
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Datos 2024</th><th>Proyección 2025</th><th>Crecimiento</th></tr></thead><tbody><tr><td>Cuota de ventas delivery</td><td>9%</td><td>14%</td><td>+56%</td></tr><tr><td>Crecimiento general del sector</td><td>40%</td><td>40-45%</td><td>Sostenido</td></tr><tr><td>Pedidos de desayuno</td><td>+30%</td><td>+40%</td><td>Acelerado</td></tr><tr><td>Precisión en entregas tradicionales</td><td>85%</td><td>95%+ con IA</td><td>+10 puntos</td></tr><tr><td>Tiempo medio de entrega</td><td>35 min</td><td>25 min con IA</td><td>-30%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Datos 2024</th><th>Proyección 2025</th><th>Crecimiento</th></tr></thead><tbody><tr><td>Cuota de ventas delivery</td><td>9%</td><td>14%</td><td>+56%</td></tr><tr><td>Crecimiento general del sector</td><td>40%</td><td>40-45%</td><td>Sostenido</td></tr><tr><td>Pedidos de desayuno</td><td>+30%</td><td>+40%</td><td>Acelerado</td></tr><tr><td>Precisión en entregas tradicionales</td><td>85%</td><td>95%+ con IA</td><td>+10 puntos</td></tr><tr><td>Tiempo medio de entrega</td><td>35 min</td><td>25 min con IA</td><td>-30%</td></tr></tbody></table></div></figure>
 
 
 
@@ -188,7 +188,7 @@ wpId: 1956
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de restaurante</th><th>Volumen delivery</th><th>Herramientas recomendadas</th><th>Inversión estimada</th></tr></thead><tbody><tr><td>Pequeño (local único)</td><td>Hasta 30 pedidos/día</td><td>Chatbot WhatsApp + TPV integrado</td><td>50-150€/mes</td></tr><tr><td>Mediano (2-5 locales)</td><td>30-100 pedidos/día</td><td>Sistema gestión flotas + Predicción demanda</td><td>200-500€/mes</td></tr><tr><td>Grande (cadena)</td><td>+100 pedidos/día</td><td>Ecosistema completo IA + Personalización</td><td>500-2000€/mes</td></tr><tr><td>Dark kitchen</td><td>Variable alto</td><td>Optimización rutas + Análisis predictivo</td><td>300-800€/mes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de restaurante</th><th>Volumen delivery</th><th>Herramientas recomendadas</th><th>Inversión estimada</th></tr></thead><tbody><tr><td>Pequeño (local único)</td><td>Hasta 30 pedidos/día</td><td>Chatbot WhatsApp + TPV integrado</td><td>50-150€/mes</td></tr><tr><td>Mediano (2-5 locales)</td><td>30-100 pedidos/día</td><td>Sistema gestión flotas + Predicción demanda</td><td>200-500€/mes</td></tr><tr><td>Grande (cadena)</td><td>+100 pedidos/día</td><td>Ecosistema completo IA + Personalización</td><td>500-2000€/mes</td></tr><tr><td>Dark kitchen</td><td>Variable alto</td><td>Optimización rutas + Análisis predictivo</td><td>300-800€/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -266,7 +266,7 @@ wpId: 1956
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sin optimización IA</th><th>Con optimización IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo planificación rutas</td><td>2 horas/día</td><td>20 minutos/día</td><td>-83%</td></tr><tr><td>Consumo combustible</td><td>100% (base)</td><td>70-75%</td><td>-25/30%</td></tr><tr><td>Entregas por repartidor/hora</td><td>3-4</td><td>5-6</td><td>+40/50%</td></tr><tr><td>Entregas puntuales</td><td>85%</td><td>95%+</td><td>+10 puntos</td></tr><tr><td>Satisfacción cliente</td><td>3.5/5</td><td>4.5/5</td><td>+29%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sin optimización IA</th><th>Con optimización IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo planificación rutas</td><td>2 horas/día</td><td>20 minutos/día</td><td>-83%</td></tr><tr><td>Consumo combustible</td><td>100% (base)</td><td>70-75%</td><td>-25/30%</td></tr><tr><td>Entregas por repartidor/hora</td><td>3-4</td><td>5-6</td><td>+40/50%</td></tr><tr><td>Entregas puntuales</td><td>85%</td><td>95%+</td><td>+10 puntos</td></tr><tr><td>Satisfacción cliente</td><td>3.5/5</td><td>4.5/5</td><td>+29%</td></tr></tbody></table></div></figure>
 
 
 

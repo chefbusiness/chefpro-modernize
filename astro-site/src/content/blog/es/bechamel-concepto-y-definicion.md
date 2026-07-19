@@ -22,7 +22,7 @@ wpId: 2731
 <p>El nombre bechamel se asocia tradicionalmente con <strong>Louis de Béchameil</strong>, marqués de Nointel y mayordomo de Luis XIV, aunque la mezcla de harina y leche ya existía en la cocina renacentista italiana y en las salsas blancas medievales. Lo que hizo Francia fue refinarla y convertirla en un estándar técnico. Fue el gran <strong>Antonin Carême</strong>, a principios del siglo XIX, quien la incluyó en su clasificación de las <strong>cuatro salsas madre</strong> – ampliadas luego por Escoffier –, fijando su preparación con roux blanco y estableciéndola como pilar de la cocina clásica. Desde entonces, la bechamel se enseña en todas las escuelas de hostelería como la primera salsa que un cocinero debe dominar.</p>
 <h2>Ingredientes y proporciones exactas</h2>
 <p>Una bechamel clásica solo necesita tres ingredientes: mantequilla, harina de trigo común y leche entera. La sal, la pimienta y la nuez moscada son los aromáticos justos. El secreto está en la <strong>proporción de roux a leche</strong>, que determina la consistencia final. La tabla de abajo recoge las cantidades de referencia para un litro de leche, ajustando la cantidad de roux según el uso:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Tipo de bechamel</th>
@@ -55,7 +55,7 @@ wpId: 2731
 <td>Croquetas, buñuelos, pasta rellena</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Si necesitas un espesor aún mayor para masas como las croquetas, puedes subir hasta 80 g de harina y mantequilla por litro, pero siempre manteniendo la <strong>relación 1:1 en peso</strong> entre grasa y harina. La leche debe estar caliente – nuca fría – para evitar choques térmicos que generen grumos.</p>
 <h2>Cómo hacer bechamel paso a paso</h2>
 <p>Dominar esta salsa es cuestión de técnica, no de magia. Con estos pasos conseguirás una textura sedosa desde el primer intento.</p>

@@ -201,7 +201,7 @@ wpId: 3431
 
 <h3>Comparativa de Herramientas del Mercado</h3>
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -231,7 +231,7 @@ wpId: 3431
 <td>Parcial</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>Las soluciones genéricas de gestión empresarial pueden adaptarse al sector hostelero, pero carecen de la especialización y los modelos predictivos específicos que requieren los restaurantes. La diferencia en resultados entre usar herramientas genéricas y otras diseñadas específicamente para hostelería puede ser significativa.</p>
 

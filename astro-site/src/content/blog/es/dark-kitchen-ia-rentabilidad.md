@@ -35,7 +35,7 @@ wpId: 3373
 <section>
 <h2>Tipos de dark kitchen</h2>
 <p>El ecosistema de dark kitchens se estructura en cuatro modelos principales, cada uno con características operativas, inversiones y modelos de rentabilidad diferenciados. La elección del tipo adecuado depende del capital disponible, la experiencia del operador y los objetivos de crecimiento.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th style="text-align: left;">Tipo</th>
@@ -75,7 +75,7 @@ wpId: 3373
 <td>Alta (doble canal)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>El modelo <strong>híbrido</strong> está ganando tracción entre operadores con experiencia, ya que permite diversificar ingresos y reducir la dependencia de las plataformas de delivery. Sin embargo, requiere una gestión más compleja y una inversión inicial superior.</p>
 <p>Para entrepreneurs que inician en el sector, el modelo de <strong>dark kitchen hub</strong> ofrece el mejor equilibrio entre inversión contenida y aprendizaje operativo. La posibilidad de compartir costes de alquiler, utilities y personal de limpieza permite validar el modelo de negocio con riesgo reducido.</p>
 </section>
@@ -109,7 +109,7 @@ wpId: 3373
 <section>
 <h2>Caso práctico: Madrid 3 marcas 1 cocina</h2>
 <p>Para comprender el impacto real de la IA en la rentabilidad de una dark kitchen, analicemos un caso real de un operador en Madrid que gestiona tres marcas virtuales desde una única cocina de 80 metros cuadrados.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th style="text-align: left;">Indicador</th>
@@ -162,7 +162,7 @@ wpId: 3373
 <td>+15%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Este caso ilustra el potencial de transformación. La reducción del food cost del 38% al 29% se logró mediante la implementación de un sistema de <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional" target="_blank" rel="noopener noreferrer">escandallos con IA</a> que optimiza las recetas, estandariza porciones y detecta desviaciones en tiempo real.</p>
 <p>La disminución de mermas del 14% al 4% es resultado directo de la predicción de demanda y la planificación de producción basada en algoritmos predictivos. El operador pasó de comprar ingredientes reactivamente a anticipar necesidades con una semana de antelación.</p>
 <p>El incremento del valor medio del pedido de 18,50 a 21,20 euros (+15%) se atribuye a las estrategias de pricing dinámico y cross-selling recomendadas por los sistemas de IA, que sugieren complementos y upsells personalizados según el historial del cliente.</p>
@@ -181,7 +181,7 @@ wpId: 3373
 </div>
 <h2>Inversión en España</h2>
 <p>La inversión necesaria para poner en marcha una dark kitchen en España en 2026 varía significativamente según el modelo elegido, la ubicación y el nivel de equipamiento. A continuación se presenta un desglose detallado para los escenarios más comunes.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th style="text-align: left;">Concepto</th>
@@ -252,7 +252,7 @@ wpId: 3373
 <td><strong>82.100 €</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>El escenario <strong>intermedio</strong> (44.800 €) es el más habitual para operadores que inician con una marca y prevén escalar a múltiples marcas en el primer año. Incluye equipamiento profesional de cocina, software de gestión integrado y herramientas de IA.</p>
 <p>Es importante destacar que la inversión en herramientas de IA (600-3.600 €/año según el nivel de) se amortiza rápidamente. Los operadores que implementan estos sistemas desde el inicio logran reducir el tiempo de llegada al punto de equilibrio (breakeven) de 8-12 meses a 4-7 meses.</p>
 <p>El <strong>punto de equilibrio</strong> para una dark kitchen típica en España se sitúa entre 80 y 120 pedidos diarios, dependiendo del ticket medio y la estructura de costes. Con un ticket medio de 18-22 euros, esto representa una facturación diaria de 1.440-2.640 euros.</p>
@@ -260,7 +260,7 @@ wpId: 3373
 <section>
 <h2>Proyección a 3 años</h2>
 <p>La siguiente tabla presenta una proyección financiera realista para una dark kitchen que inicia operaciones con una marca y escala a tres marcas en el segundo año, implementando progresivamente herramientas de IA.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th style="text-align: left;">Indicador</th>
@@ -342,7 +342,7 @@ wpId: 3373
 <td>253.282 €</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Esta proyección asume un escenario conservador donde la dark kitchen alcanza el punto de equilibrio (breakeven) entre los meses 7 y 12 de operación. Los primeros seis meses corresponden a la fase de lanzamiento, donde los costes de adquisición de cliente y la curva de aprendizaje impactan negativamente la rentabilidad.</p>
 <p>A partir del mes 13, con dos o tres marcas en operación y sistemas de IA plenamente implementados, el margen neto se sitúa en el 18% y crece hasta el 28% al final del tercer año, cuando la operación alcanza madurez operativa y eficiencia máxima.</p>
 <p><strong>Supuestos clave de la proyección:</strong></p>

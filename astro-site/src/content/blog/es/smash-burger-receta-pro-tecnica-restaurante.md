@@ -65,7 +65,7 @@ wpId: 2771
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Tiempo preparación</strong></td><td>10 minutos</td></tr><tr><td><strong>Tiempo cocción</strong></td><td>4 minutos</td></tr><tr><td><strong>Raciones</strong></td><td>2 hamburguesas dobles</td></tr><tr><td><strong>Dificultad</strong></td><td>Media (técnica específica)</td></tr><tr><td><strong>Coste aproximado</strong></td><td>6-8€ (2 personas)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Tiempo preparación</strong></td><td>10 minutos</td></tr><tr><td><strong>Tiempo cocción</strong></td><td>4 minutos</td></tr><tr><td><strong>Raciones</strong></td><td>2 hamburguesas dobles</td></tr><tr><td><strong>Dificultad</strong></td><td>Media (técnica específica)</td></tr><tr><td><strong>Coste aproximado</strong></td><td>6-8€ (2 personas)</td></tr></tbody></table></div></figure>
 
 
 
@@ -513,7 +513,7 @@ wpId: 2771
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Carne cruda preparada</strong></td><td>1 día nevera (bolas listas para smash)</td></tr><tr><td><strong>Hamburguesas cocinadas</strong></td><td>3 días nevera (recomendable comer recién hechas)</td></tr><tr><td><strong>Congelación</strong></td><td>3 meses (cruda sin sazonar)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Carne cruda preparada</strong></td><td>1 día nevera (bolas listas para smash)</td></tr><tr><td><strong>Hamburguesas cocinadas</strong></td><td>3 días nevera (recomendable comer recién hechas)</td></tr><tr><td><strong>Congelación</strong></td><td>3 meses (cruda sin sazonar)</td></tr></tbody></table></div></figure>
 
 
 
@@ -574,7 +574,7 @@ wpId: 2771
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Aspecto</th><th>Detalle</th></tr><tr><td><strong>Técnica</strong></td><td>Aplastado sobre plancha caliente</td></tr><tr><td><strong>Grasa carne</strong></td><td>20% ideal</td></tr><tr><td><strong>Temperatura</strong></td><td>220-250°C</td></tr><tr><td><strong>Tiempo cocción</strong></td><td>90 seg primer lado, 60 seg segundo</td></tr><tr><td><strong>Textura</strong></td><td>Costra crujiente, interior jugoso</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Aspecto</th><th>Detalle</th></tr><tr><td><strong>Técnica</strong></td><td>Aplastado sobre plancha caliente</td></tr><tr><td><strong>Grasa carne</strong></td><td>20% ideal</td></tr><tr><td><strong>Temperatura</strong></td><td>220-250°C</td></tr><tr><td><strong>Tiempo cocción</strong></td><td>90 seg primer lado, 60 seg segundo</td></tr><tr><td><strong>Textura</strong></td><td>Costra crujiente, interior jugoso</td></tr></tbody></table></div></figure>
 
 
 

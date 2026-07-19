@@ -24,7 +24,7 @@ wpId: 3252
 <li><strong>Elemento teatral:</strong> La apertura de la cubierta en la mesa es un espectáculo.</li>
 </ul>
 <h3>Tipos de Incrustación</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -54,7 +54,7 @@ wpId: 3252
 <td style="padding: 12px; border: 1px solid #ddd;">Pescados, tamales, barbacoa</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Incrustación</h2>
 <h3>Orígenes Ancestrales</h3>
 <p>La incrustación es tan antigua como la cocción misma. En la <strong>prehistoria</strong>, los alimentos se envolvían en hojas grandes y se enterraban junto a brasas para cocinarlos lentamente. Esta técnica primitiva evolucionó en diversas culturas.</p>
@@ -95,7 +95,7 @@ wpId: 3252
 <p><strong>Paso 6: Reposar</strong><br /> Dejar reposar 5-10 minutos antes de romper la corteza.</p>
 <p><strong>Paso 7: Apertura Teatral</strong><br /> Romper la corteza con ayuda de un cuchillo y martillo de cocina. Retirar los trozos de sal. Pelar la piel fácilmente.</p>
 <h3>Tiempos de Cocción Orientativos</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Alimento</th>
@@ -130,7 +130,7 @@ wpId: 3252
 <td style="padding: 12px; border: 1px solid #ddd;">180°C</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Incrustación en Masa (Wellington)</h2>
 <p>La técnica de incrustar en masa, popularizada por el <strong>Beef Wellington</strong>, utiliza hojaldre o masa de pan como barrera protectora:</p>
 <p><strong>Proceso:</strong></p>
@@ -143,7 +143,7 @@ wpId: 3252
 </ol>
 <p><strong>Ventajas:</strong> La masa absorbe jugos, crea contraste de texturas y permite presentaciones elegantes.</p>
 <h2>Errores Comunes y Soluciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
@@ -173,7 +173,7 @@ wpId: 3252
 <td style="padding: 12px; border: 1px solid #ddd;">Añadir más clara para mejor adherencia</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Presentación y Servicio</h2>
 <h3>El Momento Teatral</h3>
 <p>La apertura de una incrustación debe hacerse en presencia del comensal:</p>

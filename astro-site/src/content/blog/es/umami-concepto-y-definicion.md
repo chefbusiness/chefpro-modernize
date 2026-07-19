@@ -33,7 +33,7 @@ wpId: 2687
 </ul>
 <h3>La tabla de la sinergia umami</h3>
 <p>El verdadero truco de la alta cocina no está solo en acumular ingredientes umami, sino en combinarlos inteligentemente. Al unir alimentos ricos en glutamato con aquellos cargados de nucleótidos (inosinato o guanilato), la percepción del umami se amplifica hasta ocho veces. Aquí tienes un ejemplo práctico para que lo visualices:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Fuente de glutamato</th>
@@ -68,7 +68,7 @@ wpId: 2687
 <td>Fondo oscuro para guisos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Cómo potenciar el umami en tus platos sin caer en el glutamato puro</h2>
 <p>Hay quien piensa que el umami se reduce a espolvorear glutamato monosódico y ya. Nada más lejos. Potenciar este quinto sabor con elegancia es un arte que los chefs trabajamos con mimo. Aquí van estrategias probadas:</p>
 <ul>

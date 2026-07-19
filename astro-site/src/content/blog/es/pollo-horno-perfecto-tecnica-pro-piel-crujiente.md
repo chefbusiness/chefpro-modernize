@@ -112,7 +112,7 @@ wpId: 3278
 <h3>Versión Rápida (Spatchcock)</h3>
 <p>Abre el pollo por la espalda, aplana. Reduce tiempo de cocción a 35-40 minutos. Más superficie = más piel crujiente.</p>
 <h2>Tabla de Tiempos y Temperaturas</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Peso Pollo</th>
@@ -142,7 +142,7 @@ wpId: 3278
 <td style="padding: 12px; border: 1px solid #ddd;">74°C (165°F)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>FAQ &#8211; Preguntas Frecuentes</h2>
 <p><strong>¿Por qué mi pollo siempre sale seco?</strong><br /> Tres causas principales: 1) Sobrecocción (usa termómetro), 2) No reposar (corta inmediatamente), 3) No salmuera (cruza fibra muscular). Corrige estas y verás diferencia.</p>
 <p><strong>¿Puedo hornear directamente del frigorífico?</strong><br /> Mejor dejar reposar 30-60 min a temperatura ambiente. Hornear frío = cocción desigual (exterior quemado, interior crudo).</p>

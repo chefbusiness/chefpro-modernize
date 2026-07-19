@@ -79,7 +79,7 @@ wpId: 3212
 <li>Algunos son excelentes, otros son imitaciones de baja calidad.</li>
 <li>Precio: 3-50€.</li>
 </ul>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -114,7 +114,7 @@ wpId: 3212
 <td style="padding: 12px; border: 1px solid #ddd;">3-50€</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Elaboración: El Arte de la Paciencia</h2>
 <h3>Fase 1: El Mosto Cocido (Mosto Cotto)</h3>
 <p>El proceso comienza con uvas locales (principalmente <strong>Trebbiano</strong> por su alta acidez y <strong>Lambrusco</strong> por su color y cuerpo):</p>

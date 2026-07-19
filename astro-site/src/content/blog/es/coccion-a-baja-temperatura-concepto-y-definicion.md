@@ -57,7 +57,7 @@ wpId: 2703
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Alimento</th><th>Temperatura</th><th>Tiempo</th></tr><tr><td>Filete (punto)</td><td>54°C</td><td>1-4 horas</td></tr><tr><td>Filete (hecho)</td><td>60°C</td><td>1-4 horas</td></tr><tr><td>Pechuga de pollo</td><td>63°C</td><td>1-4 horas</td></tr><tr><td>Salmón</td><td>50°C</td><td>30-45 min</td></tr><tr><td>Verduras raíz</td><td>85°C</td><td>1-3 horas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Alimento</th><th>Temperatura</th><th>Tiempo</th></tr><tr><td>Filete (punto)</td><td>54°C</td><td>1-4 horas</td></tr><tr><td>Filete (hecho)</td><td>60°C</td><td>1-4 horas</td></tr><tr><td>Pechuga de pollo</td><td>63°C</td><td>1-4 horas</td></tr><tr><td>Salmón</td><td>50°C</td><td>30-45 min</td></tr><tr><td>Verduras raíz</td><td>85°C</td><td>1-3 horas</td></tr></tbody></table></div></figure>
 
 
 
@@ -160,7 +160,7 @@ wpId: 2703
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Cocción controlada 50-85°C</td></tr><tr><td><strong>Ventaja principal</strong></td><td>Precisión extrema y reproducibilidad</td></tr><tr><td><strong>Equipamiento</strong></td><td>Roner, bolsas de vacío</td></tr><tr><td><strong>Uso ideal</strong></td><td>Carnes, pescados, huevos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Cocción controlada 50-85°C</td></tr><tr><td><strong>Ventaja principal</strong></td><td>Precisión extrema y reproducibilidad</td></tr><tr><td><strong>Equipamiento</strong></td><td>Roner, bolsas de vacío</td></tr><tr><td><strong>Uso ideal</strong></td><td>Carnes, pescados, huevos</td></tr></tbody></table></div></figure>
 
 
 

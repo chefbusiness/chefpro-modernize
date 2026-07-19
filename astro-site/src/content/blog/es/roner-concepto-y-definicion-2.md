@@ -21,7 +21,7 @@ wpId: 2693
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/roner-cuerpo.jpg" alt="Roner sujeto a olla con alimentos al vacío" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Roner portátil vs baño termostático: diferencias clave</h2>
 <p>A menudo se usan como sinónimos, pero conviene distinguir entre el roner de pinza (el termocirculador portátil que acabas de imaginar) y el baño termostático (la cuba todo-en-uno). Ambos cumplen la misma función, pero el contexto en el que los vas a usar determina cuál te conviene.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -61,7 +61,7 @@ wpId: 2693
 <td>Desde 400 € (compacto) hasta varios miles de euros</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>En resumen, el roner portátil es el rey de la versatilidad porque lo clavas en la olla que necesites y lo guardas en un cajón; el baño termostático, en cambio, es una solución integrada ideal si tienes un puesto fijo de cocción al vacío y quieres olvidarte de montar nada cada día.</p>
 <h2>Cómo elegir el roner adecuado para tu cocina</h2>
 <p>Si estás pensando en comprar uno, hay tres parámetros que separan un equipo que se queda corto de otro que te da alegrías durante años. Vamos por partes.</p>

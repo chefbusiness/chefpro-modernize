@@ -23,7 +23,7 @@ wpId: 3270
 <li><strong>No reversible:</strong> Una vez reducido, no se puede «diluir» recuperando el original.</li>
 </ul>
 <h3>Líquidos que se Pueden Reducir</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Líquido Base</th>
@@ -58,7 +58,7 @@ wpId: 3270
 <td style="padding: 12px; border: 1px solid #ddd;">Postres, salsas agridulces</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/reduccion-interna.jpg" alt="Reducción de caldo en sartén ancha" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
 <h2>Ciencia de la Reducción</h2>
 <h3>Mecanismo Físico-Químico</h3>
@@ -178,7 +178,7 @@ wpId: 3270
 <li>Caramelo y Maillard desarrollan color y sabor.</li>
 </ul>
 <h2>Errores Comunes y Soluciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
@@ -213,7 +213,7 @@ wpId: 3270
 <td style="padding: 12px; border: 1px solid #ddd;">Batir con túrmix, agregar agua</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Equipamiento Óptimo</h2>
 <h3>Cacerolas para Reducción</h3>
 <p><strong>Características ideales:</strong></p>

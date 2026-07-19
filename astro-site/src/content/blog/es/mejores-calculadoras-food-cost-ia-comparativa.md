@@ -56,7 +56,7 @@ wpId: 3401
 <p>Aplica la fórmula: (Coste total / Precio de venta) × 100</p>
 <h3>Ejemplo Práctico: Food Cost de una Paella para 4 Personas</h3>
 <p>Vamos a calcular el food cost de una paella tradicional valenciana servida en un restaurante:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Ingrediente</th>
@@ -127,7 +127,7 @@ wpId: 3401
 <td><strong>25,49 €</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Cálculo del food cost:</strong></p>
 <p>La paella se sirve para 4 personas, así que el precio por porción es:</p>
 <p>Coste por porción = 25,49 € ÷ 4 = <strong>6,37 €</strong></p>
@@ -200,7 +200,7 @@ wpId: 3401
 <p><strong>Pros:</strong> Accesible, puede explicar el proceso.</p>
 <p><strong>Contras:</strong> No guarda recetas, sin actualización de precios, sin escandallos, requiere introducir datos cada vez.</p>
 <h2>Tabla Comparativa: Calculadoras de Food Cost</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Herramienta</th>
@@ -304,7 +304,7 @@ wpId: 3401
 <td>No</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #f5c518; padding: 28px 32px; margin: 40px 0; border-radius: 2px;">
 <p style="color: #f5c518; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">Calcula tu Food Cost Real en Segundos</p>
 <p style="color: #e0e0e0; font-size: 15px; line-height: 1.7; margin: 0 0 18px 0;">Mermas GenCal de AI Chef Pro calcula food cost con precios reales, incluye mermas, rendimiento y alergenos. Exporta a PDF y Excel. 10 usos gratis al mes.</p>
@@ -338,7 +338,7 @@ wpId: 3401
 <h3>Fórmula del Prime Cost</h3>
 <p><strong>Prime Cost % = ((Coste Ingredientes + Coste Personal) / Ingresos Totales) × 100</strong></p>
 <h3>Prime Cost Ideal por Tipo de Restaurante</h3>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Tipo de Restaurante</th>
@@ -363,7 +363,7 @@ wpId: 3401
 <td>55-62%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Dato importante:</strong> El objetivo es mantener el Prime Cost entre el 55% y el 65% de las ventas. Por encima del 65%, la rentabilidad del restaurante se compromete seriamente.</p>
 <h3>Por Qué Mirar Solo el Food Cost Es Insuficiente</h3>
 <p>Puedes tener un food cost excelente del 25% pero un labor cost del 45%, resultando en un Prime Cost del 70% que deja muy poco margen para otros gastos.</p>

@@ -38,7 +38,7 @@ wpId: 580
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Descripción</th><th>Beneficio para el Chef</th></tr></thead><tbody><tr><td>Generador de Recetas Inteligente</td><td>Crea recetas personalizadas basadas en preferencias y disponibilidad de ingredientes</td><td>Inspiración culinaria ilimitada y adaptabilidad a recursos disponibles</td></tr><tr><td>Biblioteca de Especias Interactiva</td><td>Información detallada sobre especias indias y sus usos</td><td>Dominio de la paleta de sabores de la cocina india</td></tr><tr><td>Técnicas de Cocina Avanzadas</td><td>Tutoriales paso a paso de métodos tradicionales indios</td><td>Perfeccionamiento de habilidades culinarias específicas</td></tr><tr><td>Planificador de Menús y Maridajes</td><td>Sugerencias para crear menús equilibrados y maridajes</td><td>Creación de experiencias gastronómicas completas</td></tr><tr><td>Modo de Aprendizaje Cultural</td><td>Información sobre regiones culinarias y tradiciones de la India</td><td>Enriquecimiento del conocimiento cultural y gastronómico</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Descripción</th><th>Beneficio para el Chef</th></tr></thead><tbody><tr><td>Generador de Recetas Inteligente</td><td>Crea recetas personalizadas basadas en preferencias y disponibilidad de ingredientes</td><td>Inspiración culinaria ilimitada y adaptabilidad a recursos disponibles</td></tr><tr><td>Biblioteca de Especias Interactiva</td><td>Información detallada sobre especias indias y sus usos</td><td>Dominio de la paleta de sabores de la cocina india</td></tr><tr><td>Técnicas de Cocina Avanzadas</td><td>Tutoriales paso a paso de métodos tradicionales indios</td><td>Perfeccionamiento de habilidades culinarias específicas</td></tr><tr><td>Planificador de Menús y Maridajes</td><td>Sugerencias para crear menús equilibrados y maridajes</td><td>Creación de experiencias gastronómicas completas</td></tr><tr><td>Modo de Aprendizaje Cultural</td><td>Información sobre regiones culinarias y tradiciones de la India</td><td>Enriquecimiento del conocimiento cultural y gastronómico</td></tr></tbody></table></div></figure>
 
 
 
@@ -58,7 +58,7 @@ wpId: 580
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Cantidad (Métrico)</th><th>Cantidad (Imperial)</th></tr></thead><tbody><tr><td>Tofu firme</td><td>400 g</td><td>14 oz</td></tr><tr><td>Leche de coco</td><td>400 ml</td><td>13.5 fl oz</td></tr><tr><td>Tomates triturados</td><td>400 g</td><td>14 oz</td></tr><tr><td>Garam masala</td><td>15 g</td><td>0.5 oz</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Cantidad (Métrico)</th><th>Cantidad (Imperial)</th></tr></thead><tbody><tr><td>Tofu firme</td><td>400 g</td><td>14 oz</td></tr><tr><td>Leche de coco</td><td>400 ml</td><td>13.5 fl oz</td></tr><tr><td>Tomates triturados</td><td>400 g</td><td>14 oz</td></tr><tr><td>Garam masala</td><td>15 g</td><td>0.5 oz</td></tr></tbody></table></div></figure>
 
 
 

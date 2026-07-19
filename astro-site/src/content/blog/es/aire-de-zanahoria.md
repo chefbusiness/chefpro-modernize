@@ -38,7 +38,7 @@ wpId: 2252
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Cantidad</th><th class="has-text-align-left" data-align="left">Equivalente</th></tr></thead><tbody><tr><td>Zanahoria fresca</td><td>300 g</td><td>10.6 oz (0.66 lb)</td></tr><tr><td>Agua mineral</td><td>200 g</td><td>7 oz (0.44 pt)</td></tr><tr><td>Lecitina de soja en polvo (Sosa, Texturas, o similar)</td><td>6 g</td><td>0.21 oz</td></tr><tr><td>Sal fina</td><td>2 g</td><td>0.07 oz (aprox. 1/3 tsp)</td></tr><tr><td>Azúcar</td><td>2 g</td><td>0.07 oz (aprox. 1/2 tsp)</td></tr><tr><td>Limón (zumo recién exprimido)</td><td>5 g</td><td>0.18 oz (1 tsp)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Cantidad</th><th class="has-text-align-left" data-align="left">Equivalente</th></tr></thead><tbody><tr><td>Zanahoria fresca</td><td>300 g</td><td>10.6 oz (0.66 lb)</td></tr><tr><td>Agua mineral</td><td>200 g</td><td>7 oz (0.44 pt)</td></tr><tr><td>Lecitina de soja en polvo (Sosa, Texturas, o similar)</td><td>6 g</td><td>0.21 oz</td></tr><tr><td>Sal fina</td><td>2 g</td><td>0.07 oz (aprox. 1/3 tsp)</td></tr><tr><td>Azúcar</td><td>2 g</td><td>0.07 oz (aprox. 1/2 tsp)</td></tr><tr><td>Limón (zumo recién exprimido)</td><td>5 g</td><td>0.18 oz (1 tsp)</td></tr></tbody></table></div></figure>
 
 
 

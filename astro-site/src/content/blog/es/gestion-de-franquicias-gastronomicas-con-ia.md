@@ -110,7 +110,7 @@ wpId: 1930
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Digitalización Tradicional</th><th>Gestión con IA</th></tr></thead><tbody><tr><td>Enfoque</td><td>Automatización de tareas repetitivas</td><td>Optimización inteligente y predictiva</td></tr><tr><td>Toma de decisiones</td><td>Basada en reglas fijas predefinidas</td><td>Adaptativa según datos en tiempo real</td></tr><tr><td>Análisis de datos</td><td>Reportes históricos y descriptivos</td><td>Análisis predictivo y prescriptivo</td></tr><tr><td>Personalización</td><td>Segmentación básica de clientes</td><td>Hiperpersonalización individual</td></tr><tr><td>Escalabilidad</td><td>Requiere configuración manual por local</td><td>Aprende y se adapta automáticamente</td></tr><tr><td>ROI típico</td><td>5-15% mejora en eficiencia</td><td>20-40% mejora en eficiencia</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Digitalización Tradicional</th><th>Gestión con IA</th></tr></thead><tbody><tr><td>Enfoque</td><td>Automatización de tareas repetitivas</td><td>Optimización inteligente y predictiva</td></tr><tr><td>Toma de decisiones</td><td>Basada en reglas fijas predefinidas</td><td>Adaptativa según datos en tiempo real</td></tr><tr><td>Análisis de datos</td><td>Reportes históricos y descriptivos</td><td>Análisis predictivo y prescriptivo</td></tr><tr><td>Personalización</td><td>Segmentación básica de clientes</td><td>Hiperpersonalización individual</td></tr><tr><td>Escalabilidad</td><td>Requiere configuración manual por local</td><td>Aprende y se adapta automáticamente</td></tr><tr><td>ROI típico</td><td>5-15% mejora en eficiencia</td><td>20-40% mejora en eficiencia</td></tr></tbody></table></div></figure>
 
 
 
@@ -505,7 +505,7 @@ wpId: 1930
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Fortalezas principales</th><th>Ideal para</th></tr></thead><tbody><tr><td>Oracle NetSuite</td><td>Gestión financiera integral, análisis predictivo, escalabilidad cloud</td><td>Cadenas grandes en expansión</td></tr><tr><td>Restroworks</td><td>TPV integrado, gestión de cocina central, cadena de suministro</td><td>Cadenas medianas y grandes</td></tr><tr><td>MAPAL OS</td><td>Gestión de personal, compras, APPCC digital</td><td>Franquicias con múltiples locales</td></tr><tr><td>Andy App</td><td>Checklists digitales, trazabilidad, estandarización</td><td>Cadenas enfocadas en cumplimiento normativo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Fortalezas principales</th><th>Ideal para</th></tr></thead><tbody><tr><td>Oracle NetSuite</td><td>Gestión financiera integral, análisis predictivo, escalabilidad cloud</td><td>Cadenas grandes en expansión</td></tr><tr><td>Restroworks</td><td>TPV integrado, gestión de cocina central, cadena de suministro</td><td>Cadenas medianas y grandes</td></tr><tr><td>MAPAL OS</td><td>Gestión de personal, compras, APPCC digital</td><td>Franquicias con múltiples locales</td></tr><tr><td>Andy App</td><td>Checklists digitales, trazabilidad, estandarización</td><td>Cadenas enfocadas en cumplimiento normativo</td></tr></tbody></table></div></figure>
 
 
 
@@ -754,7 +754,7 @@ wpId: 1930
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Área de impacto</th><th>Mejora típica</th><th>Plazo de realización</th></tr></thead><tbody><tr><td>Reducción de mermas alimentarias</td><td>20-40%</td><td>3-6 meses</td></tr><tr><td>Eficiencia en programación de personal</td><td>15-30%</td><td>2-4 meses</td></tr><tr><td>Precisión en pedidos automatizados</td><td>95%+ accuracy</td><td>1-3 meses</td></tr><tr><td>Incremento ticket medio (recomendaciones)</td><td>10-20%</td><td>3-6 meses</td></tr><tr><td>Reducción tiempo desarrollo nuevos productos</td><td>40-60%</td><td>Inmediato</td></tr><tr><td>Mejora en retención de empleados</td><td>20-40%</td><td>6-12 meses</td></tr><tr><td>Ahorro en costes operativos generales</td><td>5-15%</td><td>6-12 meses</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Área de impacto</th><th>Mejora típica</th><th>Plazo de realización</th></tr></thead><tbody><tr><td>Reducción de mermas alimentarias</td><td>20-40%</td><td>3-6 meses</td></tr><tr><td>Eficiencia en programación de personal</td><td>15-30%</td><td>2-4 meses</td></tr><tr><td>Precisión en pedidos automatizados</td><td>95%+ accuracy</td><td>1-3 meses</td></tr><tr><td>Incremento ticket medio (recomendaciones)</td><td>10-20%</td><td>3-6 meses</td></tr><tr><td>Reducción tiempo desarrollo nuevos productos</td><td>40-60%</td><td>Inmediato</td></tr><tr><td>Mejora en retención de empleados</td><td>20-40%</td><td>6-12 meses</td></tr><tr><td>Ahorro en costes operativos generales</td><td>5-15%</td><td>6-12 meses</td></tr></tbody></table></div></figure>
 
 
 

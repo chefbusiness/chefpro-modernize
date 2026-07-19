@@ -194,7 +194,7 @@ wpId: 1516
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>AI Chef Pro</th><th>ChatGPT</th><th>IBM Watson</th><th>Winnow</th><th>Yuka</th></tr></thead><tbody><tr><td><strong>Especialización Gastronómica</strong></td><td>10/10</td><td>6/10</td><td>7/10</td><td>8/10</td><td>6/10</td></tr><tr><td><strong>Facilidad de Uso</strong></td><td>9/10</td><td>9/10</td><td>4/10</td><td>6/10</td><td>9/10</td></tr><tr><td><strong>Relación Calidad-Precio</strong></td><td>10/10</td><td>8/10</td><td>4/10</td><td>6/10</td><td>8/10</td></tr><tr><td><strong>Funcionalidades Completas</strong></td><td>10/10</td><td>5/10</td><td>8/10</td><td>4/10</td><td>3/10</td></tr><tr><td><strong>PUNTUACIÓN TOTAL</strong></td><td><strong>9.7/10</strong></td><td><strong>7.0/10</strong></td><td><strong>5.8/10</strong></td><td><strong>6.0/10</strong></td><td><strong>6.5/10</strong></td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>AI Chef Pro</th><th>ChatGPT</th><th>IBM Watson</th><th>Winnow</th><th>Yuka</th></tr></thead><tbody><tr><td><strong>Especialización Gastronómica</strong></td><td>10/10</td><td>6/10</td><td>7/10</td><td>8/10</td><td>6/10</td></tr><tr><td><strong>Facilidad de Uso</strong></td><td>9/10</td><td>9/10</td><td>4/10</td><td>6/10</td><td>9/10</td></tr><tr><td><strong>Relación Calidad-Precio</strong></td><td>10/10</td><td>8/10</td><td>4/10</td><td>6/10</td><td>8/10</td></tr><tr><td><strong>Funcionalidades Completas</strong></td><td>10/10</td><td>5/10</td><td>8/10</td><td>4/10</td><td>3/10</td></tr><tr><td><strong>PUNTUACIÓN TOTAL</strong></td><td><strong>9.7/10</strong></td><td><strong>7.0/10</strong></td><td><strong>5.8/10</strong></td><td><strong>6.0/10</strong></td><td><strong>6.5/10</strong></td></tr></tbody></table></div></figure>
 
 
 
@@ -236,7 +236,7 @@ wpId: 1516
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Coste materia prima</td><td>32% facturación</td><td>24.6% facturación</td><td>-23%</td></tr><tr><td>Tiempo desarrollo carta</td><td>12 horas/semana</td><td>4.5 horas/semana</td><td>-62%</td></tr><tr><td>Propuestas creativas/mes</td><td>8</td><td>23</td><td>+188%</td></tr><tr><td>Margen operativo</td><td>18%</td><td>26%</td><td>+44%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Coste materia prima</td><td>32% facturación</td><td>24.6% facturación</td><td>-23%</td></tr><tr><td>Tiempo desarrollo carta</td><td>12 horas/semana</td><td>4.5 horas/semana</td><td>-62%</td></tr><tr><td>Propuestas creativas/mes</td><td>8</td><td>23</td><td>+188%</td></tr><tr><td>Margen operativo</td><td>18%</td><td>26%</td><td>+44%</td></tr></tbody></table></div></figure>
 
 
 

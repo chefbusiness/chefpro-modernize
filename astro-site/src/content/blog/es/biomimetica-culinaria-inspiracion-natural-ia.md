@@ -62,7 +62,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Elemento Natural</th><th>Principio Biomimético</th><th>Aplicación Culinaria</th><th>Beneficio con IA</th></tr></thead><tbody><tr><td>Panal de abejas</td><td>Eficiencia estructural hexagonal</td><td>Moldes para mousses y terrinas</td><td>Cálculo de proporciones óptimas</td></tr><tr><td>Hoja de loto</td><td>Efecto superhidrofóbico</td><td>Técnicas de esferificación</td><td>Predicción de concentraciones</td></tr><tr><td>Raíces de árboles</td><td>Distribución de nutrientes</td><td>Infusiones y marinados</td><td>Optimización de tiempos</td></tr><tr><td>Camuflaje de cefalópodos</td><td>Cambio cromático</td><td>Salsas termocrómicas</td><td>Combinaciones de ingredientes</td></tr><tr><td>Bioluminiscencia marina</td><td>Producción de luz natural</td><td>Presentaciones nocturnas</td><td>Seguridad alimentaria</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Elemento Natural</th><th>Principio Biomimético</th><th>Aplicación Culinaria</th><th>Beneficio con IA</th></tr></thead><tbody><tr><td>Panal de abejas</td><td>Eficiencia estructural hexagonal</td><td>Moldes para mousses y terrinas</td><td>Cálculo de proporciones óptimas</td></tr><tr><td>Hoja de loto</td><td>Efecto superhidrofóbico</td><td>Técnicas de esferificación</td><td>Predicción de concentraciones</td></tr><tr><td>Raíces de árboles</td><td>Distribución de nutrientes</td><td>Infusiones y marinados</td><td>Optimización de tiempos</td></tr><tr><td>Camuflaje de cefalópodos</td><td>Cambio cromático</td><td>Salsas termocrómicas</td><td>Combinaciones de ingredientes</td></tr><tr><td>Bioluminiscencia marina</td><td>Producción de luz natural</td><td>Presentaciones nocturnas</td><td>Seguridad alimentaria</td></tr></tbody></table></div></figure>
 
 
 
@@ -275,7 +275,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Chef/Restaurante</th><th>Técnica Biomimética</th><th>Apoyo IA</th><th>Resultado</th></tr></thead><tbody><tr><td>Mugaritz</td><td>Texturas minerales</td><td>Análisis de composición</td><td>30+ platos inspirados en geología</td></tr><tr><td>Noma</td><td>Fermentación ecosistémica</td><td>Predicción microbiológica</td><td>Biblioteca de 800+ fermentos</td></tr><tr><td>Central (Lima)</td><td>Altitudes y ecosistemas</td><td>Mapping de ingredientes</td><td>Menú por pisos ecológicos</td></tr><tr><td>Azurmendi</td><td>Agricultura biodinámica</td><td>Optimización de cultivos</td><td>90% ingredientes propios</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Chef/Restaurante</th><th>Técnica Biomimética</th><th>Apoyo IA</th><th>Resultado</th></tr></thead><tbody><tr><td>Mugaritz</td><td>Texturas minerales</td><td>Análisis de composición</td><td>30+ platos inspirados en geología</td></tr><tr><td>Noma</td><td>Fermentación ecosistémica</td><td>Predicción microbiológica</td><td>Biblioteca de 800+ fermentos</td></tr><tr><td>Central (Lima)</td><td>Altitudes y ecosistemas</td><td>Mapping de ingredientes</td><td>Menú por pisos ecológicos</td></tr><tr><td>Azurmendi</td><td>Agricultura biodinámica</td><td>Optimización de cultivos</td><td>90% ingredientes propios</td></tr></tbody></table></div></figure>
 
 
 
@@ -486,7 +486,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Pase</th><th>Inspiración Natural</th><th>Plato</th><th>Técnica Biomimética</th></tr></thead><tbody><tr><td>1. Suelo</td><td>Humus y micorrizas</td><td>Tierra comestible de setas y raíces</td><td>Deshidratación y pulverización</td></tr><tr><td>2. Raíces</td><td>Sistema radicular</td><td>Tubérculos en texturas múltiples</td><td>Cocción diferenciada</td></tr><tr><td>3. Tronco</td><td>Corteza protectora</td><td>Corteza crujiente de cerdo con resinas</td><td>Lacado y caramelización</td></tr><tr><td>4. Ramas</td><td>Estructuras dendríticas</td><td>Espárragos en red de verduras</td><td>Entrelazado arquitectónico</td></tr><tr><td>5. Hojas</td><td>Fotosíntesis</td><td>Clorofila de espinaca con aceites</td><td>Extracción en frío</td></tr><tr><td>6. Flores</td><td>Atracción polinizadora</td><td>Flores comestibles con néctares</td><td>Infusión aromática</td></tr><tr><td>7. Frutos</td><td>Dispersión de semillas</td><td>Esferificaciones de frutas</td><td>Alginato-cloruro</td></tr><tr><td>8. Descomposición</td><td>Retorno al ciclo</td><td>Fermentados y vinagres</td><td>Fermentación controlada</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Pase</th><th>Inspiración Natural</th><th>Plato</th><th>Técnica Biomimética</th></tr></thead><tbody><tr><td>1. Suelo</td><td>Humus y micorrizas</td><td>Tierra comestible de setas y raíces</td><td>Deshidratación y pulverización</td></tr><tr><td>2. Raíces</td><td>Sistema radicular</td><td>Tubérculos en texturas múltiples</td><td>Cocción diferenciada</td></tr><tr><td>3. Tronco</td><td>Corteza protectora</td><td>Corteza crujiente de cerdo con resinas</td><td>Lacado y caramelización</td></tr><tr><td>4. Ramas</td><td>Estructuras dendríticas</td><td>Espárragos en red de verduras</td><td>Entrelazado arquitectónico</td></tr><tr><td>5. Hojas</td><td>Fotosíntesis</td><td>Clorofila de espinaca con aceites</td><td>Extracción en frío</td></tr><tr><td>6. Flores</td><td>Atracción polinizadora</td><td>Flores comestibles con néctares</td><td>Infusión aromática</td></tr><tr><td>7. Frutos</td><td>Dispersión de semillas</td><td>Esferificaciones de frutas</td><td>Alginato-cloruro</td></tr><tr><td>8. Descomposición</td><td>Retorno al ciclo</td><td>Fermentados y vinagres</td><td>Fermentación controlada</td></tr></tbody></table></div></figure>
 
 
 
@@ -740,7 +740,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Balanza de precisión (0.01g)</td><td>Dosificación exacta de hidrocoloides</td><td>30-50€</td></tr><tr><td>Batidora de inmersión potente</td><td>Emulsificación y dispersión</td><td>80-150€</td></tr><tr><td>Termómetro de sonda</td><td>Control preciso de temperaturas</td><td>20-40€</td></tr><tr><td>Kit de esferificación básico</td><td>Técnicas de membrana</td><td>40-60€</td></tr><tr><td>Deshidratador doméstico</td><td>Texturas cristalinas y concentración</td><td>60-100€</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Balanza de precisión (0.01g)</td><td>Dosificación exacta de hidrocoloides</td><td>30-50€</td></tr><tr><td>Batidora de inmersión potente</td><td>Emulsificación y dispersión</td><td>80-150€</td></tr><tr><td>Termómetro de sonda</td><td>Control preciso de temperaturas</td><td>20-40€</td></tr><tr><td>Kit de esferificación básico</td><td>Técnicas de membrana</td><td>40-60€</td></tr><tr><td>Deshidratador doméstico</td><td>Texturas cristalinas y concentración</td><td>60-100€</td></tr></tbody></table></div></figure>
 
 
 
@@ -748,7 +748,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Roner/Circulador de inmersión</td><td>Cocción de precisión biomimética</td><td>150-400€</td></tr><tr><td>Envasadora al vacío</td><td>Técnicas osmóticas y conservación</td><td>200-500€</td></tr><tr><td>Homogeneizador</td><td>Emulsiones ultrafinas</td><td>300-600€</td></tr><tr><td>Sifón ISI profesional</td><td>Espumas y texturas aéreas</td><td>80-120€</td></tr><tr><td>Refractómetro</td><td>Medición de concentraciones</td><td>50-150€</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Roner/Circulador de inmersión</td><td>Cocción de precisión biomimética</td><td>150-400€</td></tr><tr><td>Envasadora al vacío</td><td>Técnicas osmóticas y conservación</td><td>200-500€</td></tr><tr><td>Homogeneizador</td><td>Emulsiones ultrafinas</td><td>300-600€</td></tr><tr><td>Sifón ISI profesional</td><td>Espumas y texturas aéreas</td><td>80-120€</td></tr><tr><td>Refractómetro</td><td>Medición de concentraciones</td><td>50-150€</td></tr></tbody></table></div></figure>
 
 
 
@@ -756,7 +756,7 @@ wpId: 2071
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Liofilizador</td><td>Preservación estructural avanzada</td><td>3000-8000€</td></tr><tr><td>Rotavapor</td><td>Destilación y extracción</td><td>2000-5000€</td></tr><tr><td><a href="https://aichef.pro/blog/que-es-un-abatidor-de-temperatura" target="_blank">Abatidor de temperatura</a></td><td>Cristalización controlada</td><td>2500-6000€</td></tr><tr><td>Sonicador</td><td>Emulsificación ultrasónica</td><td>1500-3000€</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Equipo</th><th>Uso Biomimético</th><th>Precio Aprox.</th></tr></thead><tbody><tr><td>Liofilizador</td><td>Preservación estructural avanzada</td><td>3000-8000€</td></tr><tr><td>Rotavapor</td><td>Destilación y extracción</td><td>2000-5000€</td></tr><tr><td><a href="https://aichef.pro/blog/que-es-un-abatidor-de-temperatura" target="_blank">Abatidor de temperatura</a></td><td>Cristalización controlada</td><td>2500-6000€</td></tr><tr><td>Sonicador</td><td>Emulsificación ultrasónica</td><td>1500-3000€</td></tr></tbody></table></div></figure>
 
 
 

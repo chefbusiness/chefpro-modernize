@@ -43,7 +43,7 @@ wpId: 2733
 <p>Al terminar, cuela el fondo por un chino o estameña sin presionar los sólidos. Desgrasa en caliente con una cuchara y después enfría lo más rápido posible: introducir la olla en un baño maría inverso con hielo es la manera más segura de evitar riesgos sanitarios. Una vez frío, refrigera. Al día siguiente verás una capa de grasa solidificada en la superficie: retírala con facilidad y tendrás un fondo blanco impecable listo para usar o congelar.</p>
 <h2>Fondo blanco vs. fondo oscuro: la tabla que lo aclara todo</h2>
 <p>Si alguna vez has dudado entre cuál preparar, esta comparativa te saca del apuro. Ambos son pilares de la cocina profesional, pero sus aplicaciones divergen desde el minuto cero. Como habrás deducido, el <a href="https://aichef.pro/blog/fondo-oscuro-concepto-y-definicion">fondo oscuro</a> toma otro camino justo al empezar.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -88,7 +88,7 @@ wpId: 2733
 <td>Salsas oscuras, demi-glace, estofados</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La elección no es cuestión de mejor o peor, sino de qué necesita el plato. Un risotto de setas te pedirá un fondo blanco para no eclipsar; un estofado de carrilleras, en cambio, se beneficiará de la profundidad de un buen fondo oscuro.</p>
 <h2>Aplicaciones prácticas del fondo blanco en la cocina diaria</h2>
 <p>El fondo blanco no es una preparación de museo que solo se usa en restaurantes con estrellas. Al contrario: resuelve muchas situaciones cotidianas en cualquier cocina profesional. Aquí tienes los usos más habituales:</p>

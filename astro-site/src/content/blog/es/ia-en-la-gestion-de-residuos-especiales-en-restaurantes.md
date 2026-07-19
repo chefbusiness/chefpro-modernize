@@ -223,7 +223,7 @@ wpId: 2621
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Infracción</th><th>Sanción Económica</th><th>Consecuencias Adicionales</th></tr></thead><tbody><tr><td>Vertido de aceite por desagüe</td><td>600€ &#8211; 3.000€</td><td>Costes de limpieza de tuberías</td></tr><tr><td>Gestión inadecuada de residuos peligrosos</td><td>3.001€ &#8211; 600.000€</td><td>Suspensión temporal de licencia</td></tr><tr><td>Falta de plan de gestión de residuos</td><td>901€ &#8211; 45.000€</td><td>Requerimiento de auditoría externa</td></tr><tr><td>No inscripción en Registro de Productores</td><td>301€ &#8211; 2.000€</td><td>Obligación inmediata de registro</td></tr><tr><td>Contratación de gestor no autorizado</td><td>2.001€ &#8211; 30.000€</td><td>Responsabilidad solidaria por daños</td></tr><tr><td>Daño ambiental grave</td><td>Hasta 1.000.000€</td><td>Cierre definitivo, costes de restauración</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Infracción</th><th>Sanción Económica</th><th>Consecuencias Adicionales</th></tr></thead><tbody><tr><td>Vertido de aceite por desagüe</td><td>600€ &#8211; 3.000€</td><td>Costes de limpieza de tuberías</td></tr><tr><td>Gestión inadecuada de residuos peligrosos</td><td>3.001€ &#8211; 600.000€</td><td>Suspensión temporal de licencia</td></tr><tr><td>Falta de plan de gestión de residuos</td><td>901€ &#8211; 45.000€</td><td>Requerimiento de auditoría externa</td></tr><tr><td>No inscripción en Registro de Productores</td><td>301€ &#8211; 2.000€</td><td>Obligación inmediata de registro</td></tr><tr><td>Contratación de gestor no autorizado</td><td>2.001€ &#8211; 30.000€</td><td>Responsabilidad solidaria por daños</td></tr><tr><td>Daño ambiental grave</td><td>Hasta 1.000.000€</td><td>Cierre definitivo, costes de restauración</td></tr></tbody></table></div></figure>
 
 
 
@@ -674,7 +674,7 @@ wpId: 2621
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sistema Tradicional</th><th>Sistema IoT con IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Frecuencia de recogida</td><td>Fija (3x semana)</td><td>Variable (bajo demanda)</td><td>-35% viajes innecesarios</td></tr><tr><td>Tasa de desbordamiento</td><td>8-12%</td><td>0,5-1%</td><td>-90% incidencias</td></tr><tr><td>Coste de recogida mensual</td><td>450€</td><td>290€</td><td>-36% ahorro</td></tr><tr><td>Emisiones CO2 transporte</td><td>145 kg/mes</td><td>62 kg/mes</td><td>-57% huella carbono</td></tr><tr><td>Tiempo gestión administrativa</td><td>6 horas/mes</td><td>1,5 horas/mes</td><td>-75% tiempo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sistema Tradicional</th><th>Sistema IoT con IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Frecuencia de recogida</td><td>Fija (3x semana)</td><td>Variable (bajo demanda)</td><td>-35% viajes innecesarios</td></tr><tr><td>Tasa de desbordamiento</td><td>8-12%</td><td>0,5-1%</td><td>-90% incidencias</td></tr><tr><td>Coste de recogida mensual</td><td>450€</td><td>290€</td><td>-36% ahorro</td></tr><tr><td>Emisiones CO2 transporte</td><td>145 kg/mes</td><td>62 kg/mes</td><td>-57% huella carbono</td></tr><tr><td>Tiempo gestión administrativa</td><td>6 horas/mes</td><td>1,5 horas/mes</td><td>-75% tiempo</td></tr></tbody></table></div></figure>
 
 
 
@@ -973,7 +973,7 @@ wpId: 2621
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Categoría de Coste</th><th>Elementos a Cuantificar</th><th>Método de Cálculo</th></tr></thead><tbody><tr><td>Costes directos gestión</td><td>Tarifas de recogida, contenedores, gestores</td><td>Facturas últimos 12 meses</td></tr><tr><td>Costes de oportunidad</td><td>Tiempo personal dedicado a gestión</td><td>Horas × coste laboral/hora</td></tr><tr><td>Costes de incumplimiento</td><td>Multas, avisos, correcciones</td><td>Histórico de sanciones</td></tr><tr><td>Costes ambientales</td><td>Huella de carbono, daño reputacional</td><td>Calculadoras especializadas</td></tr><tr><td>Costes de desperdicio</td><td>Valor de alimentos convertidos en residuos</td><td>Precio compra × kg desechados</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Categoría de Coste</th><th>Elementos a Cuantificar</th><th>Método de Cálculo</th></tr></thead><tbody><tr><td>Costes directos gestión</td><td>Tarifas de recogida, contenedores, gestores</td><td>Facturas últimos 12 meses</td></tr><tr><td>Costes de oportunidad</td><td>Tiempo personal dedicado a gestión</td><td>Horas × coste laboral/hora</td></tr><tr><td>Costes de incumplimiento</td><td>Multas, avisos, correcciones</td><td>Histórico de sanciones</td></tr><tr><td>Costes ambientales</td><td>Huella de carbono, daño reputacional</td><td>Calculadoras especializadas</td></tr><tr><td>Costes de desperdicio</td><td>Valor de alimentos convertidos en residuos</td><td>Precio compra × kg desechados</td></tr></tbody></table></div></figure>
 
 
 
@@ -1425,7 +1425,7 @@ wpId: 2621
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Sistema Tradicional</th><th>Compostaje IA</th></tr></thead><tbody><tr><td>Inversión inicial</td><td>0€</td><td>3.500€ &#8211; 8.000€</td></tr><tr><td>Coste gestión orgánicos/año</td><td>2.400€</td><td>400€</td></tr><tr><td>Valor compost generado/año</td><td>0€</td><td>600€</td></tr><tr><td>Ahorro neto anual</td><td>&#8211;</td><td>2.600€</td></tr><tr><td>Periodo de amortización</td><td>&#8211;</td><td>1,3 &#8211; 3 años</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Sistema Tradicional</th><th>Compostaje IA</th></tr></thead><tbody><tr><td>Inversión inicial</td><td>0€</td><td>3.500€ &#8211; 8.000€</td></tr><tr><td>Coste gestión orgánicos/año</td><td>2.400€</td><td>400€</td></tr><tr><td>Valor compost generado/año</td><td>0€</td><td>600€</td></tr><tr><td>Ahorro neto anual</td><td>&#8211;</td><td>2.600€</td></tr><tr><td>Periodo de amortización</td><td>&#8211;</td><td>1,3 &#8211; 3 años</td></tr></tbody></table></div></figure>
 
 
 
@@ -1500,7 +1500,7 @@ wpId: 2621
 <div style="background-color:#FFF3E0;border-left:4px solid:#FF9800;padding:20px;margin:30px 0;">
 <h3 style="color:#E65100;margin-top:0;">📊 Calculadora de ROI: Inversión en IA para Gestión de Residuos</h3>
 <p><strong>Ejemplo: Restaurante 80 pax/día, 25 días/mes</strong></p>
-<table style="width:100%;margin:15px 0;">
+<div class="table-scroll"><table style="width:100%;margin:15px 0;">
 <tbody><tr style="background-color:#FFF;">
 <td style="padding:8px;"><strong>Costes actuales mensuales:</strong></td>
 <td style="padding:8px;text-align:right;">875€</td>
@@ -1525,9 +1525,9 @@ wpId: 2621
 <td style="padding:8px;">Desperdicio alimentario evitable</td>
 <td style="padding:8px;text-align:right;">75€</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p style="margin:15px 0;"><strong>Inversión en solución IA:</strong></p>
-<table style="width:100%;margin:15px 0;">
+<div class="table-scroll"><table style="width:100%;margin:15px 0;">
 <tbody><tr style="background-color:#FFF;">
 <td style="padding:8px;">AI Chef Pro Premium Pro</td>
 <td style="padding:8px;text-align:right;">50€/mes</td>
@@ -1540,9 +1540,9 @@ wpId: 2621
 <td style="padding:8px;">Formación inicial (mentoría)</td>
 <td style="padding:8px;text-align:right;">500€</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p style="margin:15px 0;"><strong>Ahorro mensual proyectado:</strong></p>
-<table style="width:100%;margin:15px 0;">
+<div class="table-scroll"><table style="width:100%;margin:15px 0;">
 <tbody><tr style="background-color:#FFF;">
 <td style="padding:8px;">Reducción 35% costes gestión</td>
 <td style="padding:8px;text-align:right;">+306€</td>
@@ -1563,7 +1563,7 @@ wpId: 2621
 <td style="padding:8px;">AHORRO NETO MENSUAL</td>
 <td style="padding:8px;text-align:right;">428€</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p style="font-weight:bold;color:#E65100;margin:15px 0;">⏱️ Periodo de amortización: 6,8 meses</p>
 <p style="margin:15px 0;">Ahorro acumulado primer año: <strong>2.236€</strong><br>
 Ahorro acumulado años 2-5: <strong>20.544€</strong></p>

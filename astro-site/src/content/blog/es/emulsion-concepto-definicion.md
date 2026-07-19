@@ -21,7 +21,7 @@ wpId: 3234
 <li><strong>Emulsionante:</strong> Sustancia que estabiliza la mezcla reduciendo la tensión superficial.</li>
 </ul>
 <h3>Tipos de Emulsiones Culinarias</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -41,7 +41,7 @@ wpId: 3234
 <td style="padding: 12px; border: 1px solid #ddd;">Mantequilla, margarina, vinagretas tradicionales</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de las Emulsiones</h2>
 <h3>Orígenes Antiguos</h3>
 <p>Las emulsiones culinarias datan de la antigüedad. Los <strong>romanos</strong> ya preparaban una salsa similar a la mayonesa llamada <em>aleatum</em>, hecha con ajo, aceite y vinagre. Sin embargo, la emulsión como técnica sistematizada floreció en la <strong>cocina francesa del siglo XVII</strong>.</p>
@@ -65,7 +65,7 @@ wpId: 3234
 </ul>
 <p>Esta dualidad permite que el emulsionante se posicione en la interfaz entre ambos líquidos, creando una barrera protectora alrededor de las gotas dispersas y evitando que se aglomeren y separen.</p>
 <h3>Emulsionantes Naturales en Cocina</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Emulsionante</th>
@@ -100,7 +100,7 @@ wpId: 3234
 <td style="padding: 12px; border: 1px solid #ddd;">Mayonesa vegana, merengue</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Cómo Crear una Emulsión Perfecta</h2>
 <h3>Ingredientes y Proporciones (Mayonesa Clásica)</h3>
 <ul>
@@ -121,7 +121,7 @@ wpId: 3234
 <h3>Temperatura Óptima</h3>
 <p>La temperatura ideal para formar emulsiones es entre <strong>20-25°C</strong>. Por debajo de 15°C, los aceites se vuelven viscosos y dificultan la dispersión; por encima de 30°C, las yemas pueden cocinarse prematuramente.</p>
 <h2>Problemas Comunes y Soluciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
@@ -156,7 +156,7 @@ wpId: 3234
 <td style="padding: 12px; border: 1px solid #ddd;">Seguir añadiendo aceite hasta espesarse</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Recuperar una Emulsión Cortada</h2>
 <p>Cuando la emulsión «se corta» (se separa en fases), no es necesario desecharla:</p>
 <ol>

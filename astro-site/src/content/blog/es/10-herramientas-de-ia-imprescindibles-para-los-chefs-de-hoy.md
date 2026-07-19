@@ -68,7 +68,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Experiencia del Cliente</td><td>Limitada</td><td>Personalizada</td></tr><tr><td>Gestión de Inventario</td><td>Manuel, posibles mermas</td><td>Optimizado, reducción de desperdicios</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Experiencia del Cliente</td><td>Limitada</td><td>Personalizada</td></tr><tr><td>Gestión de Inventario</td><td>Manuel, posibles mermas</td><td>Optimizado, reducción de desperdicios</td></tr></tbody></table></div></figure>
 
 
 
@@ -130,7 +130,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Inventario</td><td>Manual, posibles mermas</td><td>Automatizado, reducción de desperdicios</td></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Análisis de Preferencias</td><td>Limitado</td><td>Basado en datos en tiempo real</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Inventario</td><td>Manual, posibles mermas</td><td>Automatizado, reducción de desperdicios</td></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Análisis de Preferencias</td><td>Limitado</td><td>Basado en datos en tiempo real</td></tr></tbody></table></div></figure>
 
 
 
@@ -158,7 +158,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Reservas</td><td>Manual, riesgo de dobles reservas</td><td>Automatizado, actualizaciones en tiempo real</td></tr><tr><td>Atención Telefónica</td><td>Dependencia de personal</td><td>Asistente de voz 24/7</td></tr><tr><td>Personalización</td><td>Limitada</td><td>Adaptación a la marca</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Reservas</td><td>Manual, riesgo de dobles reservas</td><td>Automatizado, actualizaciones en tiempo real</td></tr><tr><td>Atención Telefónica</td><td>Dependencia de personal</td><td>Asistente de voz 24/7</td></tr><tr><td>Personalización</td><td>Limitada</td><td>Adaptación a la marca</td></tr></tbody></table></div></figure>
 
 
 
@@ -196,7 +196,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con Popmenu</th></tr><tr><td>Gestión de Redes Sociales</td><td>Manual, disperso</td><td>Centralizado y optimizado</td></tr><tr><td>Gestión de Pedidos</td><td>En diferentes plataformas</td><td>Unificado en una sola plataforma</td></tr><tr><td>Análisis de Métricas</td><td>Limitado</td><td>Detallado y en tiempo real</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con Popmenu</th></tr><tr><td>Gestión de Redes Sociales</td><td>Manual, disperso</td><td>Centralizado y optimizado</td></tr><tr><td>Gestión de Pedidos</td><td>En diferentes plataformas</td><td>Unificado en una sola plataforma</td></tr><tr><td>Análisis de Métricas</td><td>Limitado</td><td>Detallado y en tiempo real</td></tr></tbody></table></div></figure>
 
 
 
@@ -252,7 +252,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con Presto Voice</th></tr><tr><td>Toma de Pedido</td><td>Manual, riesgo de errores</td><td>Automatizado, precisa</td></tr><tr><td>Tiempo de Espera</td><td>Largo</td><td>Reducido</td></tr><tr><td>Gestión de Pedido</td><td>Dependencia de personal</td><td>Integración con POS</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con Presto Voice</th></tr><tr><td>Toma de Pedido</td><td>Manual, riesgo de errores</td><td>Automatizado, precisa</td></tr><tr><td>Tiempo de Espera</td><td>Largo</td><td>Reducido</td></tr><tr><td>Gestión de Pedido</td><td>Dependencia de personal</td><td>Integración con POS</td></tr></tbody></table></div></figure>
 
 
 
@@ -481,7 +481,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Herramienta</th><th>Función</th><th>Beneficio</th></tr><tr><td>Slang.ai</td><td>Gestión de llamadas y reservas</td><td>Atención 24/7 y reducción de errores</td></tr><tr><td>Popmenu</td><td>Marketing digital y pedidos en línea</td><td>Mejora en la presencia digital y ventas</td></tr><tr><td>Mai</td><td>Atención multicanal</td><td>Interacción fluida en diferentes canales</td></tr><tr><td>Presto Voice</td><td>Automatización de pedidos</td><td>Reducción de tiempos de espera</td></tr><tr><td>MARA AI</td><td>Gestión de reseñas</td><td>Mejora en la reputación online</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Herramienta</th><th>Función</th><th>Beneficio</th></tr><tr><td>Slang.ai</td><td>Gestión de llamadas y reservas</td><td>Atención 24/7 y reducción de errores</td></tr><tr><td>Popmenu</td><td>Marketing digital y pedidos en línea</td><td>Mejora en la presencia digital y ventas</td></tr><tr><td>Mai</td><td>Atención multicanal</td><td>Interacción fluida en diferentes canales</td></tr><tr><td>Presto Voice</td><td>Automatización de pedidos</td><td>Reducción de tiempos de espera</td></tr><tr><td>MARA AI</td><td>Gestión de reseñas</td><td>Mejora en la reputación online</td></tr></tbody></table></div></figure>
 
 
 
@@ -527,7 +527,7 @@ wpId: 822
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Inventarios</td><td>Manual, posibles mermas</td><td>Automatizado, reducción de desperdicios</td></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Análisis de Preferencias</td><td>Limitado</td><td>Basado en datos en tiempo real</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Proceso</th><th>Tradicional</th><th>Con IA</th></tr><tr><td>Gestión de Inventarios</td><td>Manual, posibles mermas</td><td>Automatizado, reducción de desperdicios</td></tr><tr><td>Gestión de Pedidos</td><td>Manual, riesgo de errores</td><td>Automatizado, 24/7</td></tr><tr><td>Análisis de Preferencias</td><td>Limitado</td><td>Basado en datos en tiempo real</td></tr></tbody></table></div></figure>
 
 
 

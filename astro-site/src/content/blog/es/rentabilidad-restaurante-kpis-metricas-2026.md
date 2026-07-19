@@ -370,7 +370,7 @@ wpId: 3467
 
 
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>KPI</th>
@@ -445,7 +445,7 @@ wpId: 3467
 <td>4,6+</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 
 
@@ -467,7 +467,7 @@ wpId: 3467
 
 
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>KPI</th>
@@ -552,7 +552,7 @@ wpId: 3467
 <td>Reputación digital</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 
 

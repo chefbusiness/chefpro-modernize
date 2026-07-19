@@ -117,6 +117,13 @@ def sanitize_body(html_body, migrated_slugs):
             return 'https://aichef.pro/blog'
         return 'https://aichef.pro/blog/' + slug
 
+    # Tablas responsive: cada <table> va dentro de un contenedor con scroll
+    # horizontal propio (.table-scroll, CSS en BlogPost.astro). Sin esto las
+    # tablas anchas de WP desbordan el viewport en móvil (feedback John
+    # 2026-07-19: "efecto flotante a los lados").
+    body = re.sub(r'<table\b', '<div class="table-scroll"><table', body)
+    body = body.replace('</table>', '</table></div>')
+
     body = INTERNAL_LINK_RE.sub(_link, body)
     # Catch-all: cualquier href residual al subdominio (paths multi-segmento,
     # adjuntos, mayúsculas…) → hub /blog. Tras el cutover el subdominio muere.

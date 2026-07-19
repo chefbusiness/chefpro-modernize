@@ -75,7 +75,7 @@ wpId: 3045
 </ul>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/02/foodcost-ia-1.jpg" alt="Chef optimizando menú con inteligencia artificial" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Tabla Comparativa: Gestión Tradicional vs. IA</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Aspecto</th>
@@ -110,7 +110,7 @@ wpId: 3045
 <td style="padding: 12px; border: 1px solid #ddd; background: #fffacd;">Tiempo real</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Resultados Reales: Caso de Éxito</h2>
 <p>Un restaurante de Barcelona implementó este sistema de gestión de food cost con IA durante el primer trimestre de 2026. Los resultados tras 3 meses:</p>
 <ul>

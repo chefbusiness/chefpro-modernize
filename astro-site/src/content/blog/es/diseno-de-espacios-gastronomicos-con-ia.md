@@ -88,7 +88,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Beneficio</th><th class="has-text-align-left" data-align="left">Impacto Medible</th><th class="has-text-align-left" data-align="left">Herramienta IA</th></tr></thead><tbody><tr><td>Reducción tiempo de diseño</td><td>60-70% menos tiempo</td><td>Nano Banana Pro</td></tr><tr><td>Optimización del aforo</td><td>+15-20% capacidad efectiva</td><td>Algoritmos de distribución</td></tr><tr><td>Ahorro en costes de diseño</td><td>40-60% reducción</td><td>Generadores de renders IA</td></tr><tr><td>Mejora experiencia cliente</td><td>+23% satisfacción</td><td>Análisis neuroarquitectónico</td></tr><tr><td>Incremento ticket medio</td><td>+12-18% por comensal</td><td>Marketing sensorial IA</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Beneficio</th><th class="has-text-align-left" data-align="left">Impacto Medible</th><th class="has-text-align-left" data-align="left">Herramienta IA</th></tr></thead><tbody><tr><td>Reducción tiempo de diseño</td><td>60-70% menos tiempo</td><td>Nano Banana Pro</td></tr><tr><td>Optimización del aforo</td><td>+15-20% capacidad efectiva</td><td>Algoritmos de distribución</td></tr><tr><td>Ahorro en costes de diseño</td><td>40-60% reducción</td><td>Generadores de renders IA</td></tr><tr><td>Mejora experiencia cliente</td><td>+23% satisfacción</td><td>Análisis neuroarquitectónico</td></tr><tr><td>Incremento ticket medio</td><td>+12-18% por comensal</td><td>Marketing sensorial IA</td></tr></tbody></table></div></figure>
 
 
 
@@ -328,7 +328,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Sentido</th><th>Elementos de Diseño</th><th>Impacto en la Experiencia</th></tr></thead><tbody><tr><td>Vista</td><td>Iluminación, colores, decoración, presentación de platos</td><td>Primera impresión, percepción de calidad</td></tr><tr><td>Oído</td><td>Música ambiental, acústica, nivel de ruido</td><td>Confort, permanencia, conversación</td></tr><tr><td>Olfato</td><td>Aromas de cocina, ambientadores sutiles</td><td>Apetito, memoria emocional</td></tr><tr><td>Tacto</td><td>Texturas de mobiliario, temperatura ambiente</td><td>Confort físico, percepción de calidad</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Sentido</th><th>Elementos de Diseño</th><th>Impacto en la Experiencia</th></tr></thead><tbody><tr><td>Vista</td><td>Iluminación, colores, decoración, presentación de platos</td><td>Primera impresión, percepción de calidad</td></tr><tr><td>Oído</td><td>Música ambiental, acústica, nivel de ruido</td><td>Confort, permanencia, conversación</td></tr><tr><td>Olfato</td><td>Aromas de cocina, ambientadores sutiles</td><td>Apetito, memoria emocional</td></tr><tr><td>Tacto</td><td>Texturas de mobiliario, temperatura ambiente</td><td>Confort físico, percepción de calidad</td></tr></tbody></table></div></figure>
 
 
 
@@ -408,7 +408,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Color</th><th>Efecto Psicológico</th><th>Uso Recomendado</th></tr></thead><tbody><tr><td>Rojo</td><td>Estimula apetito, acelera ritmo cardíaco</td><td>Fast food, restaurantes de alta rotación</td></tr><tr><td>Naranja</td><td>Energía, sociabilidad, apetito</td><td>Restaurantes familiares, brunch</td></tr><tr><td>Amarillo</td><td>Felicidad, optimismo, atención</td><td>Cafeterías, espacios luminosos</td></tr><tr><td>Verde</td><td>Naturaleza, salud, relajación</td><td>Restaurantes orgánicos, veganos</td></tr><tr><td>Azul</td><td>Calma, confianza, reduce apetito</td><td>Marisquerías, acentos sutiles</td></tr><tr><td>Negro</td><td>Elegancia, sofisticación, misterio</td><td>Fine dining, cocktail bars</td></tr><tr><td>Blanco</td><td>Pureza, limpieza, minimalismo</td><td>Cocina contemporánea, espacios limpios</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Color</th><th>Efecto Psicológico</th><th>Uso Recomendado</th></tr></thead><tbody><tr><td>Rojo</td><td>Estimula apetito, acelera ritmo cardíaco</td><td>Fast food, restaurantes de alta rotación</td></tr><tr><td>Naranja</td><td>Energía, sociabilidad, apetito</td><td>Restaurantes familiares, brunch</td></tr><tr><td>Amarillo</td><td>Felicidad, optimismo, atención</td><td>Cafeterías, espacios luminosos</td></tr><tr><td>Verde</td><td>Naturaleza, salud, relajación</td><td>Restaurantes orgánicos, veganos</td></tr><tr><td>Azul</td><td>Calma, confianza, reduce apetito</td><td>Marisquerías, acentos sutiles</td></tr><tr><td>Negro</td><td>Elegancia, sofisticación, misterio</td><td>Fine dining, cocktail bars</td></tr><tr><td>Blanco</td><td>Pureza, limpieza, minimalismo</td><td>Cocina contemporánea, espacios limpios</td></tr></tbody></table></div></figure>
 
 
 
@@ -450,7 +450,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Mesa</th><th>Capacidad</th><th>Ocupación Media</th><th>Recomendación</th></tr></thead><tbody><tr><td>Mesa de 2</td><td>2 pax</td><td>1,8 pax</td><td>30-40% del aforo total</td></tr><tr><td>Mesa de 4</td><td>4 pax</td><td>3,2 pax</td><td>40-50% del aforo total</td></tr><tr><td>Mesa de 6+</td><td>6-8 pax</td><td>5,5 pax</td><td>10-20% del aforo total</td></tr><tr><td>Barra</td><td>Variable</td><td>Alta rotación</td><td>Ideal para clientes solos o parejas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Mesa</th><th>Capacidad</th><th>Ocupación Media</th><th>Recomendación</th></tr></thead><tbody><tr><td>Mesa de 2</td><td>2 pax</td><td>1,8 pax</td><td>30-40% del aforo total</td></tr><tr><td>Mesa de 4</td><td>4 pax</td><td>3,2 pax</td><td>40-50% del aforo total</td></tr><tr><td>Mesa de 6+</td><td>6-8 pax</td><td>5,5 pax</td><td>10-20% del aforo total</td></tr><tr><td>Barra</td><td>Variable</td><td>Alta rotación</td><td>Ideal para clientes solos o parejas</td></tr></tbody></table></div></figure>
 
 
 
@@ -636,7 +636,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Ilimitadas</td><td>Variable</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Concepto</th><th>Diseño Tradicional</th><th>Diseño con IA</th><th>Ahorro</th></tr></thead><tbody><tr><td>Conceptualización inicial</td><td>2.000-5.000€</td><td>50-200€</td><td>90-95%</td></tr><tr><td>Renders 3D profesionales</td><td>500-1.500€/imagen</td><td>Incluido en suscripción</td><td>100%</td></tr><tr><td>Tiempo de desarrollo</td><td>4-8 semanas</td><td>1-2 semanas</td><td>70-80%</td></tr><tr><td>Iteraciones/cambios</td><td>Coste adicional por cambio</td><td>Ilimitadas</td><td>Variable</td></tr></tbody></table></div></figure>
 
 
 
@@ -648,7 +648,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Acceso limitado</td><td>Prueba inicial</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Moderado</td><td>Proyectos pequeños</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Amplio</td><td>Restaurantes medianos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Extensivo</td><td>Grupos y cadenas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Ilimitado</td><td>Consultoras, arquitectos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Acceso limitado</td><td>Prueba inicial</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Moderado</td><td>Proyectos pequeños</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Amplio</td><td>Restaurantes medianos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Extensivo</td><td>Grupos y cadenas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Ilimitado</td><td>Consultoras, arquitectos</td></tr></tbody></table></div></figure>
 
 
 

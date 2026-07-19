@@ -229,7 +229,7 @@ wpId: 2230
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aplicación de IA</th><th class="has-text-align-left" data-align="left">Beneficio Principal</th><th class="has-text-align-left" data-align="left">ROI Estimado</th></tr></thead><tbody><tr><td>Chatbots de atención</td><td>Atención 24/7 sin coste adicional</td><td>Ahorro 15-20h/semana</td></tr><tr><td>Gestión de inventario</td><td>Reducción de desperdicios</td><td>Ahorro 10-25% en compras</td></tr><tr><td>Predicción de demanda</td><td>Optimización de personal</td><td>Reducción 15-30% costes laborales</td></tr><tr><td>Personalización cliente</td><td>Aumento de fidelización</td><td>Incremento 20-35% recurrencia</td></tr><tr><td>Análisis de menú</td><td>Mejora de rentabilidad</td><td>Incremento 10-20% margen</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aplicación de IA</th><th class="has-text-align-left" data-align="left">Beneficio Principal</th><th class="has-text-align-left" data-align="left">ROI Estimado</th></tr></thead><tbody><tr><td>Chatbots de atención</td><td>Atención 24/7 sin coste adicional</td><td>Ahorro 15-20h/semana</td></tr><tr><td>Gestión de inventario</td><td>Reducción de desperdicios</td><td>Ahorro 10-25% en compras</td></tr><tr><td>Predicción de demanda</td><td>Optimización de personal</td><td>Reducción 15-30% costes laborales</td></tr><tr><td>Personalización cliente</td><td>Aumento de fidelización</td><td>Incremento 20-35% recurrencia</td></tr><tr><td>Análisis de menú</td><td>Mejora de rentabilidad</td><td>Incremento 10-20% margen</td></tr></tbody></table></div></figure>
 
 
 
@@ -496,7 +496,7 @@ wpId: 2230
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Fase</th><th class="has-text-align-left" data-align="left">Inversión Aproximada</th><th class="has-text-align-left" data-align="left">Tiempo de Implementación</th><th class="has-text-align-left" data-align="left">ROI Esperado</th></tr></thead><tbody><tr><td>Herramientas básicas</td><td>€50-200/mes</td><td>2-4 semanas</td><td>200-400%</td></tr><tr><td>Optimización operativa</td><td>€200-500/mes</td><td>1-2 meses</td><td>300-600%</td></tr><tr><td>Automatización avanzada</td><td>€1.000-5.000 (único) + mensual</td><td>2-4 meses</td><td>500-1000%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Fase</th><th class="has-text-align-left" data-align="left">Inversión Aproximada</th><th class="has-text-align-left" data-align="left">Tiempo de Implementación</th><th class="has-text-align-left" data-align="left">ROI Esperado</th></tr></thead><tbody><tr><td>Herramientas básicas</td><td>€50-200/mes</td><td>2-4 semanas</td><td>200-400%</td></tr><tr><td>Optimización operativa</td><td>€200-500/mes</td><td>1-2 meses</td><td>300-600%</td></tr><tr><td>Automatización avanzada</td><td>€1.000-5.000 (único) + mensual</td><td>2-4 meses</td><td>500-1000%</td></tr></tbody></table></div></figure>
 
 
 
@@ -544,7 +544,7 @@ wpId: 2230
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Características</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Probar la plataforma</td><td>Acceso básico con límites de uso</td></tr><tr><td>Pro</td><td>€10/mes</td><td>Cafeterías pequeñas</td><td>Acceso completo con límites ampliados</td></tr><tr><td>Premium</td><td>€15/mes</td><td>Cafeterías medianas</td><td>Límites expandidos + funciones avanzadas</td></tr><tr><td>Premium Pro</td><td>€25/mes</td><td>Cadenas pequeñas</td><td>Usos extensivos + análisis avanzado</td></tr><tr><td>Premium Plus</td><td>€50/mes</td><td>Grupos y franquicias</td><td>Uso ilimitado + soporte prioritario</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Características</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Probar la plataforma</td><td>Acceso básico con límites de uso</td></tr><tr><td>Pro</td><td>€10/mes</td><td>Cafeterías pequeñas</td><td>Acceso completo con límites ampliados</td></tr><tr><td>Premium</td><td>€15/mes</td><td>Cafeterías medianas</td><td>Límites expandidos + funciones avanzadas</td></tr><tr><td>Premium Pro</td><td>€25/mes</td><td>Cadenas pequeñas</td><td>Usos extensivos + análisis avanzado</td></tr><tr><td>Premium Plus</td><td>€50/mes</td><td>Grupos y franquicias</td><td>Uso ilimitado + soporte prioritario</td></tr></tbody></table></div></figure>
 
 
 

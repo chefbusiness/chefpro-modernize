@@ -88,7 +88,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes de IA</th><th>Después de IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>8 horas/semana</td><td>3 horas/semana</td><td>62% reducción</td></tr><tr><td>Food cost promedio</td><td>28%</td><td>23%</td><td>5 puntos mejora</td></tr><tr><td>Variedad menú</td><td>12 platos/temporada</td><td>28 platos/temporada</td><td>133% incremento</td></tr><tr><td>Satisfacción cliente</td><td>4.2/5</td><td>4.7/5</td><td>12% mejora</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes de IA</th><th>Después de IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>8 horas/semana</td><td>3 horas/semana</td><td>62% reducción</td></tr><tr><td>Food cost promedio</td><td>28%</td><td>23%</td><td>5 puntos mejora</td></tr><tr><td>Variedad menú</td><td>12 platos/temporada</td><td>28 platos/temporada</td><td>133% incremento</td></tr><tr><td>Satisfacción cliente</td><td>4.2/5</td><td>4.7/5</td><td>12% mejora</td></tr></tbody></table></div></figure>
 
 
 
@@ -249,7 +249,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma tradicional</th><th>Merma optimizada IA</th><th>Ahorro anual (500kg)</th></tr></thead><tbody><tr><td>Salmón fresco</td><td>35%</td><td>22%</td><td>650€</td></tr><tr><td>Verduras de hoja</td><td>28%</td><td>15%</td><td>325€</td></tr><tr><td>Aves enteras</td><td>42%</td><td>28%</td><td>875€</td></tr><tr><td>Tubérculos</td><td>20%</td><td>8%</td><td>240€</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma tradicional</th><th>Merma optimizada IA</th><th>Ahorro anual (500kg)</th></tr></thead><tbody><tr><td>Salmón fresco</td><td>35%</td><td>22%</td><td>650€</td></tr><tr><td>Verduras de hoja</td><td>28%</td><td>15%</td><td>325€</td></tr><tr><td>Aves enteras</td><td>42%</td><td>28%</td><td>875€</td></tr><tr><td>Tubérculos</td><td>20%</td><td>8%</td><td>240€</td></tr></tbody></table></div></figure>
 
 
 
@@ -427,7 +427,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Aplicación</th><th>Especialidad</th><th>Casos de Uso</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Cocina Creativa</td><td>Recetas innovadoras</td><td>Desarrollo de carta</td><td>+40% ideas originales</td></tr><tr><td>Pastelería Creativa</td><td>Postres autorales</td><td>Repostería profesional</td><td>Precisión técnica</td></tr><tr><td>Food Pairing AI</td><td>Maridajes científicos</td><td>Combinaciones únicas</td><td>Innovación fundamentada</td></tr><tr><td>Fermentus Con AI+</td><td>Fermentación avanzada</td><td>Técnicas vanguardistas</td><td>Diferenciación técnica</td></tr><tr><td>VegChef Plant-Based</td><td>Cocina vegetal</td><td>Menús plant-based</td><td>Mercado en crecimiento</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aplicación</th><th>Especialidad</th><th>Casos de Uso</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Cocina Creativa</td><td>Recetas innovadoras</td><td>Desarrollo de carta</td><td>+40% ideas originales</td></tr><tr><td>Pastelería Creativa</td><td>Postres autorales</td><td>Repostería profesional</td><td>Precisión técnica</td></tr><tr><td>Food Pairing AI</td><td>Maridajes científicos</td><td>Combinaciones únicas</td><td>Innovación fundamentada</td></tr><tr><td>Fermentus Con AI+</td><td>Fermentación avanzada</td><td>Técnicas vanguardistas</td><td>Diferenciación técnica</td></tr><tr><td>VegChef Plant-Based</td><td>Cocina vegetal</td><td>Menús plant-based</td><td>Mercado en crecimiento</td></tr></tbody></table></div></figure>
 
 
 
@@ -603,7 +603,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Frecuencia</th><th>Objetivo Mes 1</th><th>Objetivo Mes 3</th><th>Objetivo Mes 6</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>Semanal</td><td>-20%</td><td>-40%</td><td>-60%</td></tr><tr><td>Food cost promedio</td><td>Mensual</td><td>-2%</td><td>-4%</td><td>-6%</td></tr><tr><td>Variedad de propuestas</td><td>Mensual</td><td>+50%</td><td>+100%</td><td>+150%</td></tr><tr><td>Satisfacción del equipo</td><td>Trimestral</td><td>Baseline</td><td>+15%</td><td>+25%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Frecuencia</th><th>Objetivo Mes 1</th><th>Objetivo Mes 3</th><th>Objetivo Mes 6</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>Semanal</td><td>-20%</td><td>-40%</td><td>-60%</td></tr><tr><td>Food cost promedio</td><td>Mensual</td><td>-2%</td><td>-4%</td><td>-6%</td></tr><tr><td>Variedad de propuestas</td><td>Mensual</td><td>+50%</td><td>+100%</td><td>+150%</td></tr><tr><td>Satisfacción del equipo</td><td>Trimestral</td><td>Baseline</td><td>+15%</td><td>+25%</td></tr></tbody></table></div></figure>
 
 
 
@@ -851,7 +851,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Mr. Cook</th><th>Smart CookAI</th><th>Plant Jammer</th></tr></thead><tbody><tr><td>Especialización gastronómica</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★★☆☆</td></tr><tr><td>Número de aplicaciones</td><td>50+</td><td>1</td><td>3</td><td>2</td><td>1</td></tr><tr><td>Enfoque profesional</td><td>★★★★★</td><td>★★☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★★☆☆☆</td></tr><tr><td>Precisión técnica</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★★☆☆</td></tr><tr><td>Soporte en español</td><td>★★★★★</td><td>★★☆☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Gestión de costes</td><td>★★★★★</td><td>★☆☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Integración empresarial</td><td>★★★★★</td><td>★☆☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Relación calidad-precio</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★☆☆☆</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Mr. Cook</th><th>Smart CookAI</th><th>Plant Jammer</th></tr></thead><tbody><tr><td>Especialización gastronómica</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★★☆☆</td></tr><tr><td>Número de aplicaciones</td><td>50+</td><td>1</td><td>3</td><td>2</td><td>1</td></tr><tr><td>Enfoque profesional</td><td>★★★★★</td><td>★★☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★★☆☆☆</td></tr><tr><td>Precisión técnica</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★★☆☆</td></tr><tr><td>Soporte en español</td><td>★★★★★</td><td>★★☆☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Gestión de costes</td><td>★★★★★</td><td>★☆☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Integración empresarial</td><td>★★★★★</td><td>★☆☆☆☆</td><td>★★☆☆☆</td><td>★☆☆☆☆</td><td>★☆☆☆☆</td></tr><tr><td>Relación calidad-precio</td><td>★★★★★</td><td>★★★☆☆</td><td>★★★☆☆</td><td>★★☆☆☆</td><td>★★☆☆☆</td></tr></tbody></table></div></figure>
 
 
 
@@ -891,7 +891,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Apps incluidas</th><th>ROI estimado</th><th>Ahorro mensual*</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Exploración y pruebas</td><td>Acceso limitado</td><td>Evaluación</td><td>€0-200</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chef individual</td><td>Acceso completo</td><td>500-800%</td><td>€300-800</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurante pequeño</td><td>+ Analytics avanzados</td><td>600-1000%</td><td>€500-1,500</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurante mediano</td><td>+ Soporte prioritario</td><td>800-1200%</td><td>€1,000-3,000</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadena/Corporate</td><td>Uso ilimitado</td><td>1000%+</td><td>€2,500-8,000</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Apps incluidas</th><th>ROI estimado</th><th>Ahorro mensual*</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Exploración y pruebas</td><td>Acceso limitado</td><td>Evaluación</td><td>€0-200</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chef individual</td><td>Acceso completo</td><td>500-800%</td><td>€300-800</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurante pequeño</td><td>+ Analytics avanzados</td><td>600-1000%</td><td>€500-1,500</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurante mediano</td><td>+ Soporte prioritario</td><td>800-1200%</td><td>€1,000-3,000</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadena/Corporate</td><td>Uso ilimitado</td><td>1000%+</td><td>€2,500-8,000</td></tr></tbody></table></div></figure>
 
 
 
@@ -1169,7 +1169,7 @@ wpId: 1571
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Período</th><th>Nivel de Adopción</th><th>Resultados Esperados</th><th>Acciones Clave</th></tr></thead><tbody><tr><td>Semana 1-2</td><td>Exploración (20%)</td><td>Familiarización básica</td><td>Formación inicial intensiva</td></tr><tr><td>Mes 1</td><td>Adopción inicial (40%)</td><td>Primeros resultados medibles</td><td>Soporte constante y ajustes</td></tr><tr><td>Mes 2-3</td><td>Competencia (70%)</td><td>Beneficios claros y medibles</td><td>Optimización de workflows</td></tr><tr><td>Mes 4-6</td><td>Maestría (90%)</td><td>ROI pleno y resultados avanzados</td><td>Expansión a funcionalidades avanzadas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Período</th><th>Nivel de Adopción</th><th>Resultados Esperados</th><th>Acciones Clave</th></tr></thead><tbody><tr><td>Semana 1-2</td><td>Exploración (20%)</td><td>Familiarización básica</td><td>Formación inicial intensiva</td></tr><tr><td>Mes 1</td><td>Adopción inicial (40%)</td><td>Primeros resultados medibles</td><td>Soporte constante y ajustes</td></tr><tr><td>Mes 2-3</td><td>Competencia (70%)</td><td>Beneficios claros y medibles</td><td>Optimización de workflows</td></tr><tr><td>Mes 4-6</td><td>Maestría (90%)</td><td>ROI pleno y resultados avanzados</td><td>Expansión a funcionalidades avanzadas</td></tr></tbody></table></div></figure>
 
 
 

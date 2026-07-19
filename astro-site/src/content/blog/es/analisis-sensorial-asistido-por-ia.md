@@ -84,7 +84,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Metodología</th><th>Descripción</th><th>Aplicación en IA</th><th>Precisión Tradicional</th></tr></thead><tbody><tr><td>Prueba Triangular</td><td>3 muestras (2 iguales, 1 diferente), identificar la diferente</td><td>Modelo de clasificación binaria</td><td>65-75%</td></tr><tr><td>Prueba Dúo-Trío</td><td>Muestra de referencia + 2 muestras (identificar igual)</td><td>Análisis comparativo supervisado</td><td>60-70%</td></tr><tr><td>Comparación Pareada</td><td>2 muestras, determinar cuál presenta mayor intensidad</td><td>Ranking relativo por algoritmos</td><td>70-80%</td></tr><tr><td>Prueba de Ordenamiento</td><td>Múltiples muestras ordenadas por intensidad</td><td>Sistema de scoring multivariable</td><td>55-65%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Metodología</th><th>Descripción</th><th>Aplicación en IA</th><th>Precisión Tradicional</th></tr></thead><tbody><tr><td>Prueba Triangular</td><td>3 muestras (2 iguales, 1 diferente), identificar la diferente</td><td>Modelo de clasificación binaria</td><td>65-75%</td></tr><tr><td>Prueba Dúo-Trío</td><td>Muestra de referencia + 2 muestras (identificar igual)</td><td>Análisis comparativo supervisado</td><td>60-70%</td></tr><tr><td>Comparación Pareada</td><td>2 muestras, determinar cuál presenta mayor intensidad</td><td>Ranking relativo por algoritmos</td><td>70-80%</td></tr><tr><td>Prueba de Ordenamiento</td><td>Múltiples muestras ordenadas por intensidad</td><td>Sistema de scoring multivariable</td><td>55-65%</td></tr></tbody></table></div></figure>
 
 
 
@@ -240,7 +240,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Panel Humano</th><th>E-Nose/E-Tongue</th><th>Ventaja IA</th></tr></thead><tbody><tr><td>Tiempo de análisis</td><td>15-30 min/muestra</td><td>2-5 min/muestra</td><td>6x más rápido</td></tr><tr><td>Repetibilidad</td><td>70-85%</td><td>96-99%</td><td>+15% precisión</td></tr><tr><td>Muestras/día</td><td>8-12</td><td>50-100</td><td>8x capacidad</td></tr><tr><td>Coste/análisis</td><td>€25-€45</td><td>€3-€8</td><td>85% reducción</td></tr><tr><td>Fatiga sensorial</td><td>Alta (3-4 muestras)</td><td>Nula</td><td>Ilimitada</td></tr><tr><td>Detección umbral</td><td>ppm-ppb</td><td>ppb-ppt</td><td>1000x sensibilidad</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Panel Humano</th><th>E-Nose/E-Tongue</th><th>Ventaja IA</th></tr></thead><tbody><tr><td>Tiempo de análisis</td><td>15-30 min/muestra</td><td>2-5 min/muestra</td><td>6x más rápido</td></tr><tr><td>Repetibilidad</td><td>70-85%</td><td>96-99%</td><td>+15% precisión</td></tr><tr><td>Muestras/día</td><td>8-12</td><td>50-100</td><td>8x capacidad</td></tr><tr><td>Coste/análisis</td><td>€25-€45</td><td>€3-€8</td><td>85% reducción</td></tr><tr><td>Fatiga sensorial</td><td>Alta (3-4 muestras)</td><td>Nula</td><td>Ilimitada</td></tr><tr><td>Detección umbral</td><td>ppm-ppb</td><td>ppb-ppt</td><td>1000x sensibilidad</td></tr></tbody></table></div></figure>
 
 
 
@@ -408,7 +408,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Variable</th><th>Número Recomendado</th><th>Ejemplos</th><th>Importancia</th></tr></thead><tbody><tr><td>Variables Predictoras (X)</td><td>15-40</td><td>Señales e-nose, datos texturales, composición</td><td>Base del modelo</td></tr><tr><td>Variables Respuesta (Y)</td><td>3-8</td><td>Scores sensoriales, aceptabilidad</td><td>Objetivo de predicción</td></tr><tr><td>Muestras Totales</td><td>100-500</td><td>Variaciones de formulación</td><td>Robustez estadística</td></tr><tr><td>Validación Cruzada</td><td>20-30%</td><td>Muestras no vistas</td><td>Generalización</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Variable</th><th>Número Recomendado</th><th>Ejemplos</th><th>Importancia</th></tr></thead><tbody><tr><td>Variables Predictoras (X)</td><td>15-40</td><td>Señales e-nose, datos texturales, composición</td><td>Base del modelo</td></tr><tr><td>Variables Respuesta (Y)</td><td>3-8</td><td>Scores sensoriales, aceptabilidad</td><td>Objetivo de predicción</td></tr><tr><td>Muestras Totales</td><td>100-500</td><td>Variaciones de formulación</td><td>Robustez estadística</td></tr><tr><td>Validación Cruzada</td><td>20-30%</td><td>Muestras no vistas</td><td>Generalización</td></tr></tbody></table></div></figure>
 
 
 
@@ -488,7 +488,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Algoritmo Recomendado</th><th>Razón</th><th>Precisión Esperada</th></tr></thead><tbody><tr><td>Clasificación de calidad (A/B/C)</td><td>Random Forest, SVM</td><td>Robustez con datos no lineales</td><td>85-92%</td></tr><tr><td>Predicción score hedónico (1-9)</td><td>XGBoost, Redes Neuronales</td><td>Captura relaciones complejas</td><td>R² 0.75-0.85</td></tr><tr><td>Detección de adulteración</td><td>One-Class SVM, Autoencoders</td><td>Aprendizaje de normalidad</td><td>95-99%</td></tr><tr><td>Predicción vida útil</td><td>LSTM, Prophet</td><td>Series temporales</td><td>R² 0.70-0.80</td></tr><tr><td>Optimización multiobjetivo</td><td>Algoritmos Genéticos + ML</td><td>Exploración espacios complejos</td><td>Pareto óptimo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Algoritmo Recomendado</th><th>Razón</th><th>Precisión Esperada</th></tr></thead><tbody><tr><td>Clasificación de calidad (A/B/C)</td><td>Random Forest, SVM</td><td>Robustez con datos no lineales</td><td>85-92%</td></tr><tr><td>Predicción score hedónico (1-9)</td><td>XGBoost, Redes Neuronales</td><td>Captura relaciones complejas</td><td>R² 0.75-0.85</td></tr><tr><td>Detección de adulteración</td><td>One-Class SVM, Autoencoders</td><td>Aprendizaje de normalidad</td><td>95-99%</td></tr><tr><td>Predicción vida útil</td><td>LSTM, Prophet</td><td>Series temporales</td><td>R² 0.70-0.80</td></tr><tr><td>Optimización multiobjetivo</td><td>Algoritmos Genéticos + ML</td><td>Exploración espacios complejos</td><td>Pareto óptimo</td></tr></tbody></table></div></figure>
 
 
 
@@ -702,7 +702,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Restricción</th><th>Peso en Función</th><th>Resultado Típico</th></tr></thead><tbody><tr><td>Maximizar aceptabilidad hedónica</td><td>&gt;7.0/9</td><td>40%</td><td>7.3/9 alcanzado</td></tr><tr><td>Minimizar contenido azúcar</td><td>&lt;8g/100g</td><td>30%</td><td>6.2g/100g logrado</td></tr><tr><td>Mantener textura</td><td>Firmeza 80-120N</td><td>20%</td><td>95N óptimo</td></tr><tr><td>Controlar coste</td><td>&lt;€1.20/kg</td><td>10%</td><td>€1.15/kg</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Objetivo</th><th>Restricción</th><th>Peso en Función</th><th>Resultado Típico</th></tr></thead><tbody><tr><td>Maximizar aceptabilidad hedónica</td><td>&gt;7.0/9</td><td>40%</td><td>7.3/9 alcanzado</td></tr><tr><td>Minimizar contenido azúcar</td><td>&lt;8g/100g</td><td>30%</td><td>6.2g/100g logrado</td></tr><tr><td>Mantener textura</td><td>Firmeza 80-120N</td><td>20%</td><td>95N óptimo</td></tr><tr><td>Controlar coste</td><td>&lt;€1.20/kg</td><td>10%</td><td>€1.15/kg</td></tr></tbody></table></div></figure>
 
 
 
@@ -1104,7 +1104,7 @@ wpId: 1871
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Baseline</th><th>Post-Implementación (12 meses)</th><th>Mejora</th></tr></thead><tbody><tr><td>Variabilidad lote-a-lote</td><td>25-35%</td><td>10-15%</td><td>-60% variabilidad</td></tr><tr><td>Tiempo desarrollo plato nuevo</td><td>6-12 semanas</td><td>2-4 semanas</td><td>-67% tiempo</td></tr><tr><td>Tasa éxito nuevos platos</td><td>30-40%</td><td>65-75%</td><td>+87% éxito</td></tr><tr><td>Mermas ingredientes críticos</td><td>15-25%</td><td>8-12%</td><td>-46% mermas</td></tr><tr><td>Satisfacción cliente (NPS)</td><td>+40 a +50</td><td>+55 a +65</td><td>+25% NPS</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Baseline</th><th>Post-Implementación (12 meses)</th><th>Mejora</th></tr></thead><tbody><tr><td>Variabilidad lote-a-lote</td><td>25-35%</td><td>10-15%</td><td>-60% variabilidad</td></tr><tr><td>Tiempo desarrollo plato nuevo</td><td>6-12 semanas</td><td>2-4 semanas</td><td>-67% tiempo</td></tr><tr><td>Tasa éxito nuevos platos</td><td>30-40%</td><td>65-75%</td><td>+87% éxito</td></tr><tr><td>Mermas ingredientes críticos</td><td>15-25%</td><td>8-12%</td><td>-46% mermas</td></tr><tr><td>Satisfacción cliente (NPS)</td><td>+40 a +50</td><td>+55 a +65</td><td>+25% NPS</td></tr></tbody></table></div></figure>
 
 
 

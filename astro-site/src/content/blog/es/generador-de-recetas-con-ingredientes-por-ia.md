@@ -134,7 +134,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Nivel de Análisis</th><th>Descripción</th><th>Ejemplo Práctico</th></tr></thead><tbody><tr><td>Molecular</td><td>Compuestos aromáticos compartidos</td><td>Chocolate + Café (2-furylmetanethiol)</td></tr><tr><td>Textural</td><td>Contrastes y complementos de textura</td><td>Crujiente + Cremoso (nueces + yogur)</td></tr><tr><td>Térmico</td><td>Temperaturas de servicio compatibles</td><td>Caliente + Frío controlado (sopa + helado)</td></tr><tr><td>Nutricional</td><td>Balance de macronutrientes</td><td>Proteína + Carbohidrato + Grasa saludable</td></tr><tr><td>Cultural</td><td>Tradiciones gastronómicas compatibles</td><td>Mediterráneo + Asiático (fusión controlada)</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Nivel de Análisis</th><th>Descripción</th><th>Ejemplo Práctico</th></tr></thead><tbody><tr><td>Molecular</td><td>Compuestos aromáticos compartidos</td><td>Chocolate + Café (2-furylmetanethiol)</td></tr><tr><td>Textural</td><td>Contrastes y complementos de textura</td><td>Crujiente + Cremoso (nueces + yogur)</td></tr><tr><td>Térmico</td><td>Temperaturas de servicio compatibles</td><td>Caliente + Frío controlado (sopa + helado)</td></tr><tr><td>Nutricional</td><td>Balance de macronutrientes</td><td>Proteína + Carbohidrato + Grasa saludable</td></tr><tr><td>Cultural</td><td>Tradiciones gastronómicas compatibles</td><td>Mediterráneo + Asiático (fusión controlada)</td></tr></tbody></table></div></figure>
 
 
 
@@ -315,7 +315,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro (Premium)</th><th>Otras Premium</th></tr></thead><tbody><tr><td>Recetas mensuales</td><td>5-10 límite</td><td>Ilimitadas</td><td>50-100 límite</td></tr><tr><td>Personalización dietética</td><td>Básica</td><td>Avanzada (50+ opciones)</td><td>Intermedia</td></tr><tr><td>Análisis nutricional</td><td>No disponible</td><td>Completo + recomendaciones</td><td>Básico</td></tr><tr><td>Recetarios especializados</td><td>No</td><td>25+ cocinas del mundo</td><td>5-8 opciones</td></tr><tr><td>Optimización de mermas</td><td>No</td><td>Sí, con cálculos precisos</td><td>No</td></tr><tr><td>Soporte técnico</td><td>Comunidad</td><td>Profesional dedicado</td><td>Email básico</td></tr><tr><td>Actualizaciones</td><td>Irregulares</td><td>Semanales</td><td>Mensuales</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro (Premium)</th><th>Otras Premium</th></tr></thead><tbody><tr><td>Recetas mensuales</td><td>5-10 límite</td><td>Ilimitadas</td><td>50-100 límite</td></tr><tr><td>Personalización dietética</td><td>Básica</td><td>Avanzada (50+ opciones)</td><td>Intermedia</td></tr><tr><td>Análisis nutricional</td><td>No disponible</td><td>Completo + recomendaciones</td><td>Básico</td></tr><tr><td>Recetarios especializados</td><td>No</td><td>25+ cocinas del mundo</td><td>5-8 opciones</td></tr><tr><td>Optimización de mermas</td><td>No</td><td>Sí, con cálculos precisos</td><td>No</td></tr><tr><td>Soporte técnico</td><td>Comunidad</td><td>Profesional dedicado</td><td>Email básico</td></tr><tr><td>Actualizaciones</td><td>Irregulares</td><td>Semanales</td><td>Mensuales</td></tr></tbody></table></div></figure>
 
 
 
@@ -535,7 +535,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Restricción</th><th>Configuración Requerida</th><th>Impacto en Sugerencias</th></tr></thead><tbody><tr><td>Alergias alimentarias</td><td>Especificación exacta de alérgenos</td><td>Exclusión total de ingredientes problemáticos</td></tr><tr><td>Intolerancias</td><td>Grado de tolerancia (nula, baja, moderada)</td><td>Adaptación de cantidades y alternativas</td></tr><tr><td>Preferencias religiosas</td><td>Halal, kosher, hindu</td><td>Respeto por regulaciones específicas</td></tr><tr><td>Objetivos nutricionales</td><td>Pérdida peso, ganancia muscular, mantenimiento</td><td>Balance de macronutrientes optimizado</td></tr><tr><td>Condiciones médicas</td><td>Diabetes, hipertensión, colesterol</td><td>Control de sodio, azúcares, grasas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Restricción</th><th>Configuración Requerida</th><th>Impacto en Sugerencias</th></tr></thead><tbody><tr><td>Alergias alimentarias</td><td>Especificación exacta de alérgenos</td><td>Exclusión total de ingredientes problemáticos</td></tr><tr><td>Intolerancias</td><td>Grado de tolerancia (nula, baja, moderada)</td><td>Adaptación de cantidades y alternativas</td></tr><tr><td>Preferencias religiosas</td><td>Halal, kosher, hindu</td><td>Respeto por regulaciones específicas</td></tr><tr><td>Objetivos nutricionales</td><td>Pérdida peso, ganancia muscular, mantenimiento</td><td>Balance de macronutrientes optimizado</td></tr><tr><td>Condiciones médicas</td><td>Diabetes, hipertensión, colesterol</td><td>Control de sodio, azúcares, grasas</td></tr></tbody></table></div></figure>
 
 
 
@@ -801,7 +801,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Requerimiento</th><th>Objetivo por porción</th><th>Fuente principal</th></tr></thead><tbody><tr><td>Proteína completa</td><td>15-20g</td><td>Quinoa + legumbres</td></tr><tr><td>Fibra</td><td>8-12g</td><td>Verduras + quinoa</td></tr><tr><td>Grasas saludables</td><td>10-15g</td><td>Aceite de coco + semillas</td></tr><tr><td>Vitaminas variadas</td><td>Espectro completo</td><td>Verduras multicolor</td></tr><tr><td>Satisfacción sensorial</td><td>Alta</td><td>Texturas + especias</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Requerimiento</th><th>Objetivo por porción</th><th>Fuente principal</th></tr></thead><tbody><tr><td>Proteína completa</td><td>15-20g</td><td>Quinoa + legumbres</td></tr><tr><td>Fibra</td><td>8-12g</td><td>Verduras + quinoa</td></tr><tr><td>Grasas saludables</td><td>10-15g</td><td>Aceite de coco + semillas</td></tr><tr><td>Vitaminas variadas</td><td>Espectro completo</td><td>Verduras multicolor</td></tr><tr><td>Satisfacción sensorial</td><td>Alta</td><td>Texturas + especias</td></tr></tbody></table></div></figure>
 
 
 
@@ -893,7 +893,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Proceso</th><th>Método Tradicional</th><th>IA Generativa</th><th>Ahorro de Tiempo</th></tr></thead><tbody><tr><td>Buscar receta específica</td><td>15-25 minutos</td><td>2-3 minutos</td><td>85% menos tiempo</td></tr><tr><td>Adaptaciones dietéticas</td><td>20-30 minutos</td><td>1-2 minutos</td><td>92% menos tiempo</td></tr><tr><td>Cálculo nutricional</td><td>30-45 minutos</td><td>Instantáneo</td><td>100% automático</td></tr><tr><td>Planificación semanal</td><td>60-90 minutos</td><td>15-20 minutos</td><td>75% menos tiempo</td></tr><tr><td>Lista de compras</td><td>10-15 minutos</td><td>Auto-generada</td><td>100% automático</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Proceso</th><th>Método Tradicional</th><th>IA Generativa</th><th>Ahorro de Tiempo</th></tr></thead><tbody><tr><td>Buscar receta específica</td><td>15-25 minutos</td><td>2-3 minutos</td><td>85% menos tiempo</td></tr><tr><td>Adaptaciones dietéticas</td><td>20-30 minutos</td><td>1-2 minutos</td><td>92% menos tiempo</td></tr><tr><td>Cálculo nutricional</td><td>30-45 minutos</td><td>Instantáneo</td><td>100% automático</td></tr><tr><td>Planificación semanal</td><td>60-90 minutos</td><td>15-20 minutos</td><td>75% menos tiempo</td></tr><tr><td>Lista de compras</td><td>10-15 minutos</td><td>Auto-generada</td><td>100% automático</td></tr></tbody></table></div></figure>
 
 
 
@@ -1019,7 +1019,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Aspecto Económico</th><th>Método Tradicional</th><th>IA Optimizada</th><th>Mejora</th></tr></thead><tbody><tr><td>Aprovechamiento de ingredientes</td><td>65-70%</td><td>85-92%</td><td>+25% eficiencia</td></tr><tr><td>Reducción de desperdicios</td><td>15-20% pérdida</td><td>3-7% pérdida</td><td>-70% desperdicio</td></tr><tr><td>Planificación de compras</td><td>20% sobrecompra</td><td>5% sobrecompra</td><td>-75% exceso</td></tr><tr><td>Coste por porción</td><td>Variable alto</td><td>Optimizado</td><td>-15% promedio</td></tr><tr><td>Valor nutricional/euro</td><td>No calculado</td><td>Maximizado</td><td>+30% eficiencia</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto Económico</th><th>Método Tradicional</th><th>IA Optimizada</th><th>Mejora</th></tr></thead><tbody><tr><td>Aprovechamiento de ingredientes</td><td>65-70%</td><td>85-92%</td><td>+25% eficiencia</td></tr><tr><td>Reducción de desperdicios</td><td>15-20% pérdida</td><td>3-7% pérdida</td><td>-70% desperdicio</td></tr><tr><td>Planificación de compras</td><td>20% sobrecompra</td><td>5% sobrecompra</td><td>-75% exceso</td></tr><tr><td>Coste por porción</td><td>Variable alto</td><td>Optimizado</td><td>-15% promedio</td></tr><tr><td>Valor nutricional/euro</td><td>No calculado</td><td>Maximizado</td><td>+30% eficiencia</td></tr></tbody></table></div></figure>
 
 
 
@@ -1095,7 +1095,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Ingredientes Básicos</th><th>Receta Tradicional</th><th>Innovación IA</th><th>Nivel de Sofisticación</th></tr></thead><tbody><tr><td>Arroz + Huevo + Cebolla</td><td>Arroz frito simple</td><td>Arancini deconstruido con cebolla caramelizada</td><td>Restaurante</td></tr><tr><td>Pan + Tomate + Ajo</td><td>Pan con tomate</td><td>Gazpacho sólido con pan crujiente aromatizado</td><td>Gourmet</td></tr><tr><td>Pasta + Aceite + Perejil</td><td>Aglio e olio</td><td>Emulsión de aceite verde con pasta al dente perfecta</td><td>Técnica avanzada</td></tr><tr><td>Patata + Cebolla + Huevo</td><td>Tortilla española</td><td>Tortilla líquida con patata confitada</td><td>Vanguardista</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingredientes Básicos</th><th>Receta Tradicional</th><th>Innovación IA</th><th>Nivel de Sofisticación</th></tr></thead><tbody><tr><td>Arroz + Huevo + Cebolla</td><td>Arroz frito simple</td><td>Arancini deconstruido con cebolla caramelizada</td><td>Restaurante</td></tr><tr><td>Pan + Tomate + Ajo</td><td>Pan con tomate</td><td>Gazpacho sólido con pan crujiente aromatizado</td><td>Gourmet</td></tr><tr><td>Pasta + Aceite + Perejil</td><td>Aglio e olio</td><td>Emulsión de aceite verde con pasta al dente perfecta</td><td>Técnica avanzada</td></tr><tr><td>Patata + Cebolla + Huevo</td><td>Tortilla española</td><td>Tortilla líquida con patata confitada</td><td>Vanguardista</td></tr></tbody></table></div></figure>
 
 
 
@@ -1274,7 +1274,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Señal Positiva</th><th>Señal de Alerta</th><th>Acción Recomendada</th></tr></thead><tbody><tr><td>Tiempos de cocción</td><td>Coherentes entre ingredientes</td><td>Discrepancias significativas</td><td>Ajustar secuencia de preparación</td></tr><tr><td>Balance de sabores</td><td>Armonía evidente</td><td>Dominancia de un solo sabor</td><td>Añadir elementos de contraste</td></tr><tr><td>Coherencia cultural</td><td>Respeto por tradiciones</td><td>Mezclas forzadas</td><td>Solicitar refinamiento cultural</td></tr><tr><td>Viabilidad técnica</td><td>Pasos lógicos y claros</td><td>Técnicas muy complejas</td><td>Simplificar manteniendo esencia</td></tr><tr><td>Presentación</td><td>Visual atractiva descrita</td><td>Presentación confusa</td><td>Solicitar sugerencias de plating</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Señal Positiva</th><th>Señal de Alerta</th><th>Acción Recomendada</th></tr></thead><tbody><tr><td>Tiempos de cocción</td><td>Coherentes entre ingredientes</td><td>Discrepancias significativas</td><td>Ajustar secuencia de preparación</td></tr><tr><td>Balance de sabores</td><td>Armonía evidente</td><td>Dominancia de un solo sabor</td><td>Añadir elementos de contraste</td></tr><tr><td>Coherencia cultural</td><td>Respeto por tradiciones</td><td>Mezclas forzadas</td><td>Solicitar refinamiento cultural</td></tr><tr><td>Viabilidad técnica</td><td>Pasos lógicos y claros</td><td>Técnicas muy complejas</td><td>Simplificar manteniendo esencia</td></tr><tr><td>Presentación</td><td>Visual atractiva descrita</td><td>Presentación confusa</td><td>Solicitar sugerencias de plating</td></tr></tbody></table></div></figure>
 
 
 
@@ -1592,7 +1592,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Función</th><th>Food Pairing AI</th><th>Cocina Creativa AI</th><th>Resultado Combinado</th></tr></thead><tbody><tr><td>Análisis de ingredientes</td><td>Compatibilidad molecular</td><td>Aplicación culinaria</td><td>Recetas científicamente fundamentadas</td></tr><tr><td>Sugerencias creativas</td><td>Combinaciones inesperadas</td><td>Técnicas de ejecución</td><td>Innovación viable y deliciosa</td></tr><tr><td>Personalización</td><td>Preferencias de sabor</td><td>Estilo culinario</td><td>Propuestas totalmente personalizadas</td></tr><tr><td>Educación</td><td>Principios científicos</td><td>Técnicas tradicionales</td><td>Aprendizaje integral completo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Función</th><th>Food Pairing AI</th><th>Cocina Creativa AI</th><th>Resultado Combinado</th></tr></thead><tbody><tr><td>Análisis de ingredientes</td><td>Compatibilidad molecular</td><td>Aplicación culinaria</td><td>Recetas científicamente fundamentadas</td></tr><tr><td>Sugerencias creativas</td><td>Combinaciones inesperadas</td><td>Técnicas de ejecución</td><td>Innovación viable y deliciosa</td></tr><tr><td>Personalización</td><td>Preferencias de sabor</td><td>Estilo culinario</td><td>Propuestas totalmente personalizadas</td></tr><tr><td>Educación</td><td>Principios científicos</td><td>Técnicas tradicionales</td><td>Aprendizaje integral completo</td></tr></tbody></table></div></figure>
 
 
 
@@ -1608,7 +1608,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Recetas Incluidas</th><th>Valor por Receta</th><th>ROI Mensual Estimado</th></tr></thead><tbody><tr><td>Gratuito</td><td>0€</td><td>10 recetas</td><td>0€</td><td>Ahorro básico en desperdicio</td></tr><tr><td>Pro</td><td>10€</td><td>Ilimitadas básicas</td><td>~0,30€</td><td>50-100€ (optimización compras)</td></tr><tr><td>Premium</td><td>15€</td><td>Ilimitadas + especialización</td><td>~0,20€</td><td>75-150€ (tiempo + dinero)</td></tr><tr><td>Premium Pro</td><td>25€</td><td>Suite completa</td><td>~0,15€</td><td>150-300€ (optimización total)</td></tr><tr><td>Premium Plus</td><td>50€</td><td>Acceso completo + prioridad</td><td>~0,10€</td><td>300-600€ (profesional)</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Recetas Incluidas</th><th>Valor por Receta</th><th>ROI Mensual Estimado</th></tr></thead><tbody><tr><td>Gratuito</td><td>0€</td><td>10 recetas</td><td>0€</td><td>Ahorro básico en desperdicio</td></tr><tr><td>Pro</td><td>10€</td><td>Ilimitadas básicas</td><td>~0,30€</td><td>50-100€ (optimización compras)</td></tr><tr><td>Premium</td><td>15€</td><td>Ilimitadas + especialización</td><td>~0,20€</td><td>75-150€ (tiempo + dinero)</td></tr><tr><td>Premium Pro</td><td>25€</td><td>Suite completa</td><td>~0,15€</td><td>150-300€ (optimización total)</td></tr><tr><td>Premium Plus</td><td>50€</td><td>Acceso completo + prioridad</td><td>~0,10€</td><td>300-600€ (profesional)</td></tr></tbody></table></div></figure>
 
 
 
@@ -1710,7 +1710,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Precisión AI Chef Pro</th><th>Precisión Promedio Mercado</th><th>Margen de Error</th></tr></thead><tbody><tr><td>Cálculo de porciones</td><td>96-98%</td><td>85-90%</td><td>±5% cantidad</td></tr><tr><td>Tiempos de cocción</td><td>92-95%</td><td>80-85%</td><td>±8-12% tiempo</td></tr><tr><td>Valores nutricionales</td><td>97-99%</td><td>90-95%</td><td>±3-5% valores</td></tr><tr><td>Escalado de recetas</td><td>94-97%</td><td>75-85%</td><td>±10% en escalados grandes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Precisión AI Chef Pro</th><th>Precisión Promedio Mercado</th><th>Margen de Error</th></tr></thead><tbody><tr><td>Cálculo de porciones</td><td>96-98%</td><td>85-90%</td><td>±5% cantidad</td></tr><tr><td>Tiempos de cocción</td><td>92-95%</td><td>80-85%</td><td>±8-12% tiempo</td></tr><tr><td>Valores nutricionales</td><td>97-99%</td><td>90-95%</td><td>±3-5% valores</td></tr><tr><td>Escalado de recetas</td><td>94-97%</td><td>75-85%</td><td>±10% en escalados grandes</td></tr></tbody></table></div></figure>
 
 
 
@@ -1926,7 +1926,7 @@ wpId: 1410
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Dieta</th><th>Precisión de Cumplimiento</th><th>Funcionalidades Específicas</th></tr></thead><tbody><tr><td>Ketogénica</td><td>98-99%</td><td>Cálculo automático de macros, alternativas bajas en carbos</td></tr><tr><td>Vegana</td><td>99%</td><td>Identificación de ingredientes ocultos, alternativas proteicas</td></tr><tr><td>Sin gluten</td><td>97-98%</td><td>Detección de contaminación cruzada, harinas alternativas</td></tr><tr><td>Paleo</td><td>95-97%</td><td>Alimentos ancestrales, evita procesados modernos</td></tr><tr><td>Mediterránea</td><td>96-98%</td><td>Proporciones aceite oliva, énfasis en pescado y vegetales</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Dieta</th><th>Precisión de Cumplimiento</th><th>Funcionalidades Específicas</th></tr></thead><tbody><tr><td>Ketogénica</td><td>98-99%</td><td>Cálculo automático de macros, alternativas bajas en carbos</td></tr><tr><td>Vegana</td><td>99%</td><td>Identificación de ingredientes ocultos, alternativas proteicas</td></tr><tr><td>Sin gluten</td><td>97-98%</td><td>Detección de contaminación cruzada, harinas alternativas</td></tr><tr><td>Paleo</td><td>95-97%</td><td>Alimentos ancestrales, evita procesados modernos</td></tr><tr><td>Mediterránea</td><td>96-98%</td><td>Proporciones aceite oliva, énfasis en pescado y vegetales</td></tr></tbody></table></div></figure>
 
 
 

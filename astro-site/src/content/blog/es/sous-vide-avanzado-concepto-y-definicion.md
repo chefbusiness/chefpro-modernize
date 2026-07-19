@@ -31,7 +31,7 @@ wpId: 2706
 <p>La bolsa sellada impide que vitaminas hidrosolubles y compuestos aromáticos emigren al agua de cocción. Todo se queda dentro. Además, al no sobrepasar temperaturas que degradan ciertos nutrientes, el plato resultante es más respetuoso con la materia prima. Ese caldo concentrado que queda en la bolsa tras cocinar un pescado puede aprovecharse para una salsa rápida, sumando capas de sabor con cero desperdicio.</p>
 <h2>Tabla de temperaturas y tiempos: tu guía rápida en cocina</h2>
 <p>No hay una única combinación mágica; cada alimento y efecto deseado exige sus propios parámetros. Aquí tienes una referencia práctica para empezar con buen pie:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Alimento</th>
@@ -78,7 +78,7 @@ wpId: 2706
 <td>Dulzor concentrado y firmeza agradable</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Recuerda que el grosor de la pieza influye más en el tiempo que en la temperatura; una vez que el centro alcanza el equilibrio térmico, solo buscamos modificar texturas (como ablandar colágeno) con tiempos largos. Para cortes finos de pescado, no hacen falta horas.</p>
 <h2>El toque final: por qué no debes saltarte el sellado</h2>
 <p>Un error común es pensar que el alimento sale listo para emplatar al abrir la bolsa. La realidad es que la superficie queda húmeda y pálida, sin el color ni los aromas tostados que esperamos. Aquí entra en juego la <a href="https://aichef.pro/blog/maillard-concepto-y-definicion-2">reacción de Maillard</a>, ese baile químico entre proteínas y azúcares que ocurre por encima de los 140 °C y que genera corteza, profundidad y el inconfundible sabor a “asado”.</p>

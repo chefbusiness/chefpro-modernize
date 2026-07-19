@@ -82,7 +82,7 @@ wpId: 2728
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Tipo</th><th>Sustrato</th><th>Uso principal</th></tr><tr><td>Kome-koji</td><td>Arroz</td><td>Miso, sake, amasake</td></tr><tr><td>Mugi-koji</td><td>Cebada</td><td>Shochu, miso</td></tr><tr><td>Soy-koji</td><td>Soja</td><td>Salsa de soja</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Tipo</th><th>Sustrato</th><th>Uso principal</th></tr><tr><td>Kome-koji</td><td>Arroz</td><td>Miso, sake, amasake</td></tr><tr><td>Mugi-koji</td><td>Cebada</td><td>Shochu, miso</td></tr><tr><td>Soy-koji</td><td>Soja</td><td>Salsa de soja</td></tr></tbody></table></div></figure>
 
 
 
@@ -360,7 +360,7 @@ wpId: 2728
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Organismo</strong></td><td>Aspergillus oryzae</td></tr><tr><td><strong>Origen</strong></td><td>Japón (2000+ años)</td></tr><tr><td><strong>Función</strong></td><td>Fermentación, creación de umami</td></tr><tr><td><strong>Productos</strong></td><td>Miso, sake, salsa de soja, amasake</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Organismo</strong></td><td>Aspergillus oryzae</td></tr><tr><td><strong>Origen</strong></td><td>Japón (2000+ años)</td></tr><tr><td><strong>Función</strong></td><td>Fermentación, creación de umami</td></tr><tr><td><strong>Productos</strong></td><td>Miso, sake, salsa de soja, amasake</td></tr></tbody></table></div></figure>
 
 
 		<div class="enlazzo-box">

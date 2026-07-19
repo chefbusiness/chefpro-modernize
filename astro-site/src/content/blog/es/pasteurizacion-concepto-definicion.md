@@ -23,7 +23,7 @@ wpId: 3267
 <li><strong>Extensión de vida útil:</strong> Aumenta significativamente la conservación.</li>
 </ul>
 <h3>Diferencia entre Pasteurización y Esterilización</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -58,7 +58,7 @@ wpId: 3267
 <td style="padding: 12px; border: 1px solid #ddd;">Ligeramente cocido</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Pasteurización</h2>
 <h3>Louis Pasteur y el Descubrimiento</h3>
 <p>En <strong>1864, Louis Pasteur</strong> demostró que el calor podía prevenir el deterioro del vino y la cerveza. Observó que calentar estos líquidos a 50-60°C destruía los microorganismos responsables de la fermentación indeseada sin alterar significativamente el producto.</p>
@@ -129,7 +129,7 @@ wpId: 3267
 </ul>
 <h2>Microorganismos Objetivo</h2>
 <h3>Patógenos Principales</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Microorganismo</th>
@@ -164,7 +164,7 @@ wpId: 3267
 <td style="padding: 12px; border: 1px solid #ddd;">Sensible</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La pasteurización está diseñada para destruir <em>Coxiella burnetii</em>, el patógeno lácteo más resistente al calor.</p>
 <h2>Efectos en la Leche</h2>
 <h3>Cambios Físicos y Químicos</h3>
@@ -185,7 +185,7 @@ wpId: 3267
 <li>Mejor estabilidad oxidativa.</li>
 </ul>
 <h3>Efectos en Vitaminas</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Vitamina</th>
@@ -220,7 +220,7 @@ wpId: 3267
 <td style="padding: 12px; border: 1px solid #ddd;">15-25%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Las vitaminas liposolubles (A, D, E, K) son termoestables y se conservan bien.</p>
 <h2>Aplicaciones en la Cocina Profesional</h2>
 <h3>Sous Vide y Conservación</h3>

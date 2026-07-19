@@ -80,7 +80,7 @@ wpId: 2691
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Acción</th></tr><tr><td>Verduras</td><td>Lavar, pelar, cortar</td></tr><tr><td>Proteínas</td><td>Descongelar, marinar</td></tr><tr><td>Especias</td><td>Pesar, mezclar</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Acción</th></tr><tr><td>Verduras</td><td>Lavar, pelar, cortar</td></tr><tr><td>Proteínas</td><td>Descongelar, marinar</td></tr><tr><td>Especias</td><td>Pesar, mezclar</td></tr></tbody></table></div></figure>
 
 
 
@@ -144,7 +144,7 @@ wpId: 2691
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Origen</strong></td><td>Francia (siglo XIX)</td></tr><tr><td><strong>Traducción</strong></td><td>«Poner en su lugar»</td></tr><tr><td><strong>Objetivo</strong></td><td>Organización previa para eficiencia</td></tr><tr><td><strong>Fases</strong></td><td>Planificación, recepción, preparación, montaje</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Origen</strong></td><td>Francia (siglo XIX)</td></tr><tr><td><strong>Traducción</strong></td><td>«Poner en su lugar»</td></tr><tr><td><strong>Objetivo</strong></td><td>Organización previa para eficiencia</td></tr><tr><td><strong>Fases</strong></td><td>Planificación, recepción, preparación, montaje</td></tr></tbody></table></div></figure>
 
 
 

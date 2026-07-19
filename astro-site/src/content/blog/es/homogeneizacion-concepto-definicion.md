@@ -24,7 +24,7 @@ wpId: 3244
 <li><strong>Aumento de vida útil:</strong> Mayor estabilidad durante almacenamiento.</li>
 </ul>
 <h3>Diferencia entre Homogeneización y Mezcla</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Proceso</th>
@@ -44,7 +44,7 @@ wpId: 3244
 <td style="padding: 12px; border: 1px solid #ddd;">Mezcla estable a largo plazo</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Homogeneización</h2>
 <h3>Orígenes Industriales</h3>
 <p>La homogeneización moderna nació a principios del siglo XX. En <strong>1899, Auguste Gaulin</strong> patentó en Francia la primera máquina homogeneizadora para leche, diseñada para prevenir la separación de la nata. Este invento revolucionó la industria láctea.</p>
@@ -65,7 +65,7 @@ wpId: 3244
 <p><strong>2. Impacto:</strong> Colisión de partículas contra superficies.</p>
 <p><strong>3. Cavitación:</strong> Formación y colapso de burbujas que generan ondas de choque.</p>
 <h3>Factores que Afectan la Homogeneización</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Factor</th>
@@ -90,7 +90,7 @@ wpId: 3244
 <td style="padding: 12px; border: 1px solid #ddd;">Estabilizan las partículas reducidas</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Tipos de Homogeneización</h3>
 <p><strong>Homogeneización por alta presión:</strong> El líquido se fuerza a través de una válvula estrecha a presiones de 50-200 MPa, creando cizallamiento intenso.</p>
 <p><strong>Homogeneización ultrasónica:</strong> Ondas de alta frecuencia (20-40 kHz) generan cavitación que rompe las partículas.</p>
@@ -155,7 +155,7 @@ wpId: 3244
 <p><strong>Bebidas homogéneas:</strong> Zumos con pulpa finamente distribuida, cócteles texturizados.</p>
 <p><strong>Espumas estables:</strong> Bases para espumas de sifón con distribución uniforme de aire.</p>
 <h2>Ventajas y Desventajas</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Ventajas</th>
@@ -180,7 +180,7 @@ wpId: 3244
 <td style="padding: 12px; border: 1px solid #ddd;">✗ En leche, reduce vitaminas liposolubles</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Homogeneización vs. Pasteurización</h2>
 <p>A menudo confundidos, son procesos diferentes:</p>
 <ul>

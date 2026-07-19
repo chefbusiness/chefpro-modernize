@@ -38,7 +38,7 @@ wpId: 2001
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Valor 2024</th><th>Tendencia</th></tr></thead><tbody><tr><td>Producción total cerveza España</td><td>41 millones hectolitros</td><td>Estable (-0,4%)</td></tr><tr><td>Cuota mercado cerveza artesanal</td><td>1-1.1%</td><td>Crecimiento moderado</td></tr><tr><td>Crecimiento anual estimado artesanal</td><td>3-5%</td><td>Positivo</td></tr><tr><td>Búsquedas online «cerveza artesanal»</td><td>12.969 mensuales</td><td>+50% vs 2023</td></tr><tr><td>Empleo directo sector artesanal</td><td>~1.400 puestos</td><td>Recuperación</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Valor 2024</th><th>Tendencia</th></tr></thead><tbody><tr><td>Producción total cerveza España</td><td>41 millones hectolitros</td><td>Estable (-0,4%)</td></tr><tr><td>Cuota mercado cerveza artesanal</td><td>1-1.1%</td><td>Crecimiento moderado</td></tr><tr><td>Crecimiento anual estimado artesanal</td><td>3-5%</td><td>Positivo</td></tr><tr><td>Búsquedas online «cerveza artesanal»</td><td>12.969 mensuales</td><td>+50% vs 2023</td></tr><tr><td>Empleo directo sector artesanal</td><td>~1.400 puestos</td><td>Recuperación</td></tr></tbody></table></div></figure>
 
 
 
@@ -160,7 +160,7 @@ wpId: 2001
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Rango típico</th><th>Optimización IA</th></tr></thead><tbody><tr><td>Malta base</td><td>60-80% del grano</td><td>Ajuste según perfil de color EBC objetivo</td></tr><tr><td>Temperatura de maceración</td><td>62-68°C</td><td>Optimización para cuerpo y fermentabilidad</td></tr><tr><td>IBU (amargor)</td><td>15-70 según estilo</td><td>Equilibrio con dulzor residual predicho</td></tr><tr><td>Densidad inicial</td><td>1.040-1.090</td><td>Correlación con ABV y estabilidad</td></tr><tr><td>Compuestos aromáticos</td><td>Variable</td><td>Predicción de percepción sensorial</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Rango típico</th><th>Optimización IA</th></tr></thead><tbody><tr><td>Malta base</td><td>60-80% del grano</td><td>Ajuste según perfil de color EBC objetivo</td></tr><tr><td>Temperatura de maceración</td><td>62-68°C</td><td>Optimización para cuerpo y fermentabilidad</td></tr><tr><td>IBU (amargor)</td><td>15-70 según estilo</td><td>Equilibrio con dulzor residual predicho</td></tr><tr><td>Densidad inicial</td><td>1.040-1.090</td><td>Correlación con ABV y estabilidad</td></tr><tr><td>Compuestos aromáticos</td><td>Variable</td><td>Predicción de percepción sensorial</td></tr></tbody></table></div></figure>
 
 
 
@@ -419,7 +419,7 @@ wpId: 2001
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Cervecería</th><th>País</th><th>Aplicación IA principal</th><th>Resultado destacado</th></tr></thead><tbody><tr><td>Bukana</td><td>Chile</td><td>Generación de recetas + IoT</td><td>Línea completa de cervezas IA</td></tr><tr><td>IntelligentX</td><td>Reino Unido</td><td>Feedback loop automatizado</td><td>100.000+ puntos de datos</td></tr><tr><td>Carlsberg</td><td>Dinamarca</td><td>Sensores de sabor</td><td>-30% tiempo desarrollo</td></tr><tr><td>AB InBev</td><td>Global</td><td>Optimización filtración</td><td>Beck&#8217;s Autonomous</td></tr><tr><td>Modus Brewing</td><td>Australia</td><td>Diseño recetas + etiquetas</td><td>Neural Network IPA</td></tr><tr><td>MN Brew</td><td>Suiza</td><td>Combinaciones inusuales</td><td>Línea completa con IA</td></tr><tr><td>Nethergate</td><td>Reino Unido</td><td>Colaboración humano-IA</td><td>AiPA</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Cervecería</th><th>País</th><th>Aplicación IA principal</th><th>Resultado destacado</th></tr></thead><tbody><tr><td>Bukana</td><td>Chile</td><td>Generación de recetas + IoT</td><td>Línea completa de cervezas IA</td></tr><tr><td>IntelligentX</td><td>Reino Unido</td><td>Feedback loop automatizado</td><td>100.000+ puntos de datos</td></tr><tr><td>Carlsberg</td><td>Dinamarca</td><td>Sensores de sabor</td><td>-30% tiempo desarrollo</td></tr><tr><td>AB InBev</td><td>Global</td><td>Optimización filtración</td><td>Beck&#8217;s Autonomous</td></tr><tr><td>Modus Brewing</td><td>Australia</td><td>Diseño recetas + etiquetas</td><td>Neural Network IPA</td></tr><tr><td>MN Brew</td><td>Suiza</td><td>Combinaciones inusuales</td><td>Línea completa con IA</td></tr><tr><td>Nethergate</td><td>Reino Unido</td><td>Colaboración humano-IA</td><td>AiPA</td></tr></tbody></table></div></figure>
 
 
 

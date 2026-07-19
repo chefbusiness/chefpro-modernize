@@ -26,7 +26,7 @@ wpId: 97
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-border-color has-accent-3-border-color has-fixed-layout"><tbody><tr><th>Era</th><th>Innovación</th><th>Impacto en la Gastronomía</th></tr><tr><td>Prehistoria</td><td>Descubrimiento del fuego</td><td>Permitió cocinar alimentos, mejorando la digestibilidad y sabor</td></tr><tr><td>Edad Media</td><td>Hornos de piedra</td><td>Posibilitó la elaboración de panes y pasteles complejos</td></tr><tr><td>Revolución Industrial</td><td>Cocinas de gas y refrigeración</td><td>Mejoró la conservación de alimentos y la eficiencia en la cocina</td></tr><tr><td>Siglo XX</td><td>Electrodomésticos (microondas, batidoras)</td><td>Aceleró los procesos de cocina y amplió las posibilidades culinarias</td></tr><tr><td>Siglo XXI</td><td>Inteligencia Artificial</td><td>Optimiza procesos, inspira creatividad y personaliza experiencias gastronómicas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-border-color has-accent-3-border-color has-fixed-layout"><tbody><tr><th>Era</th><th>Innovación</th><th>Impacto en la Gastronomía</th></tr><tr><td>Prehistoria</td><td>Descubrimiento del fuego</td><td>Permitió cocinar alimentos, mejorando la digestibilidad y sabor</td></tr><tr><td>Edad Media</td><td>Hornos de piedra</td><td>Posibilitó la elaboración de panes y pasteles complejos</td></tr><tr><td>Revolución Industrial</td><td>Cocinas de gas y refrigeración</td><td>Mejoró la conservación de alimentos y la eficiencia en la cocina</td></tr><tr><td>Siglo XX</td><td>Electrodomésticos (microondas, batidoras)</td><td>Aceleró los procesos de cocina y amplió las posibilidades culinarias</td></tr><tr><td>Siglo XXI</td><td>Inteligencia Artificial</td><td>Optimiza procesos, inspira creatividad y personaliza experiencias gastronómicas</td></tr></tbody></table></div></figure>
 
 
 
@@ -76,7 +76,7 @@ wpId: 97
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-border-color has-accent-3-border-color has-fixed-layout"><tbody><tr><th>Beneficio</th><th>Impacto en el Restaurante</th><th>Impacto Ambiental</th></tr><tr><td>Reducción de desperdicios</td><td>Ahorro del 2-6% en costos de alimentos</td><td>Disminución de la huella de carbono</td></tr><tr><td>Optimización de inventario</td><td>Mejora del flujo de caja</td><td>Menor presión sobre la cadena de suministro</td></tr><tr><td>Predicción precisa de la demanda</td><td>Aumento de la satisfacción del cliente</td><td>Reducción del transporte innecesario</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-border-color has-accent-3-border-color has-fixed-layout"><tbody><tr><th>Beneficio</th><th>Impacto en el Restaurante</th><th>Impacto Ambiental</th></tr><tr><td>Reducción de desperdicios</td><td>Ahorro del 2-6% en costos de alimentos</td><td>Disminución de la huella de carbono</td></tr><tr><td>Optimización de inventario</td><td>Mejora del flujo de caja</td><td>Menor presión sobre la cadena de suministro</td></tr><tr><td>Predicción precisa de la demanda</td><td>Aumento de la satisfacción del cliente</td><td>Reducción del transporte innecesario</td></tr></tbody></table></div></figure>
 
 
 

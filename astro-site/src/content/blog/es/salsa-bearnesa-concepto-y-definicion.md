@@ -37,7 +37,7 @@ wpId: 2739
 <p>La bearnesa se corta. Punto. Le pasa al aprendiz y al chef con treinta años de fogones. La emulsión se rompe cuando la proporción grasa/agua se desequilibra o la temperatura sube demasiado rápido. Si ves que empieza a separarse como aceite y vinagre, retira inmediatamente del fuego, añade una cucharada de agua fría o un cubito de hielo y bate con furia. En la mayoría de los casos, la salsa vuelve a ligar. Si no, emulsiona desde cero con una sola yema nueva usando la mezcla cortada como si fuera mantequilla.</p>
 <h2>Diferencia con la holandesa: no es solo el sabor</h2>
 <p>Visualmente se parecen, pero conviene no confundirlas. Estas son las diferencias clave entre la <a href="https://aichef.pro/blog/salsa-holandesa-concepto-y-definicion">salsa holandesa</a> y la bearnesa:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -72,7 +72,7 @@ wpId: 2739
 <td>Alta (por la reducción previa)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La bearnesa es, en esencia, una holandesa que ha pasado por la adolescencia y ha vuelto con carácter y opiniones propias. Se mantiene con los mismos cuidados, pero su presencia en boca es mucho más compleja y memorable.</p>
 <h2>Usos clásicos: dónde brilla de verdad</h2>
 <p>Si hay un plato que ha sellado la fama mundial de esta salsa es el <strong>entrecôte a la bearnesa</strong>. Una pieza de carne de vacuno a la parrilla, con su exterior crujiente y su interior jugoso, recibe la salsa en un costado y el resultado es uno de los matrimonios gastronómicos más felices que existen. La grasa animal y la mantequilla de la bearnesa se funden mientras que la acidez corta la untuosidad, limpiando el paladar en cada bocado.</p>

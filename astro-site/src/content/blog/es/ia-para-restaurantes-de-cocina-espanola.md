@@ -104,7 +104,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Español</th><th>Merma Tradicional</th><th>Merma Optimizada con IA</th><th>Ahorro Estimado (%)</th></tr></thead><tbody><tr><td>Jamón Ibérico (pieza entera)</td><td>48-52%</td><td>38-42%</td><td>10-12%</td></tr><tr><td>Pulpo gallego</td><td>40%</td><td>30%</td><td>10%</td></tr><tr><td>Gambas rojas de Dénia</td><td>55%</td><td>45%</td><td>10%</td></tr><tr><td>Alcachofas de Tudela</td><td>65%</td><td>52%</td><td>13%</td></tr><tr><td>Espárragos de Navarra</td><td>45%</td><td>35%</td><td>10%</td></tr><tr><td>Pimientos de Padrón</td><td>15%</td><td>8%</td><td>7%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Español</th><th>Merma Tradicional</th><th>Merma Optimizada con IA</th><th>Ahorro Estimado (%)</th></tr></thead><tbody><tr><td>Jamón Ibérico (pieza entera)</td><td>48-52%</td><td>38-42%</td><td>10-12%</td></tr><tr><td>Pulpo gallego</td><td>40%</td><td>30%</td><td>10%</td></tr><tr><td>Gambas rojas de Dénia</td><td>55%</td><td>45%</td><td>10%</td></tr><tr><td>Alcachofas de Tudela</td><td>65%</td><td>52%</td><td>13%</td></tr><tr><td>Espárragos de Navarra</td><td>45%</td><td>35%</td><td>10%</td></tr><tr><td>Pimientos de Padrón</td><td>15%</td><td>8%</td><td>7%</td></tr></tbody></table></div></figure>
 
 
 
@@ -196,7 +196,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Cantidad</th><th>Precio/Unidad</th><th>Coste Total</th><th>Merma IA</th><th>Coste Real</th></tr></thead><tbody><tr><td>Patatas Kennebec</td><td>1 kg</td><td>1,20€/kg</td><td>1,20€</td><td>12%</td><td>1,34€</td></tr><tr><td>Huevos camperos L</td><td>8 unidades</td><td>0,35€/u</td><td>2,80€</td><td>0%</td><td>2,80€</td></tr><tr><td>Cebolla dulce</td><td>200g</td><td>1,50€/kg</td><td>0,30€</td><td>8%</td><td>0,33€</td></tr><tr><td>Aceite oliva virgen extra</td><td>200ml</td><td>8,00€/L</td><td>1,60€</td><td>15%</td><td>1,84€</td></tr><tr><td>Sal marina</td><td>10g</td><td>2,00€/kg</td><td>0,02€</td><td>0%</td><td>0,02€</td></tr><tr><td colspan="5"><strong>COSTE TOTAL</strong></td><td><strong>6,33€</strong></td></tr><tr><td colspan="5"><strong>COSTE POR RACIÓN</strong></td><td><strong>0,79€</strong></td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Cantidad</th><th>Precio/Unidad</th><th>Coste Total</th><th>Merma IA</th><th>Coste Real</th></tr></thead><tbody><tr><td>Patatas Kennebec</td><td>1 kg</td><td>1,20€/kg</td><td>1,20€</td><td>12%</td><td>1,34€</td></tr><tr><td>Huevos camperos L</td><td>8 unidades</td><td>0,35€/u</td><td>2,80€</td><td>0%</td><td>2,80€</td></tr><tr><td>Cebolla dulce</td><td>200g</td><td>1,50€/kg</td><td>0,30€</td><td>8%</td><td>0,33€</td></tr><tr><td>Aceite oliva virgen extra</td><td>200ml</td><td>8,00€/L</td><td>1,60€</td><td>15%</td><td>1,84€</td></tr><tr><td>Sal marina</td><td>10g</td><td>2,00€/kg</td><td>0,02€</td><td>0%</td><td>0,02€</td></tr><tr><td colspan="5"><strong>COSTE TOTAL</strong></td><td><strong>6,33€</strong></td></tr><tr><td colspan="5"><strong>COSTE POR RACIÓN</strong></td><td><strong>0,79€</strong></td></tr></tbody></table></div></figure>
 
 
 
@@ -338,7 +338,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después (3 meses)</th><th>Mejora</th></tr></thead><tbody><tr><td>Food cost</td><td>38%</td><td>29%</td><td>-9 puntos</td></tr><tr><td>Ticket medio</td><td>18€</td><td>24€</td><td>+33%</td></tr><tr><td>Reservas online</td><td>15/semana</td><td>45/semana</td><td>+200%</td></tr><tr><td>Tiempo en tareas admin.</td><td>12h/semana</td><td>4h/semana</td><td>-67%</td></tr><tr><td>Incidencias por alérgenos</td><td>3/mes</td><td>0/mes</td><td>-100%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después (3 meses)</th><th>Mejora</th></tr></thead><tbody><tr><td>Food cost</td><td>38%</td><td>29%</td><td>-9 puntos</td></tr><tr><td>Ticket medio</td><td>18€</td><td>24€</td><td>+33%</td></tr><tr><td>Reservas online</td><td>15/semana</td><td>45/semana</td><td>+200%</td></tr><tr><td>Tiempo en tareas admin.</td><td>12h/semana</td><td>4h/semana</td><td>-67%</td></tr><tr><td>Incidencias por alérgenos</td><td>3/mes</td><td>0/mes</td><td>-100%</td></tr></tbody></table></div></figure>
 
 
 
@@ -483,7 +483,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>Importancia</th><th>Qué buscar</th></tr></thead><tbody><tr><td>Idioma español nativo</td><td>Crítica</td><td>Terminología gastronómica española correcta</td></tr><tr><td>Base de datos de ingredientes españoles</td><td>Alta</td><td>Productos con D.O., ingredientes regionales</td></tr><tr><td>Cumplimiento normativo</td><td>Crítica</td><td>RGPD, normativa de alérgenos UE</td></tr><tr><td>Integración con TPV</td><td>Media-Alta</td><td>Compatibilidad con sistemas españoles</td></tr><tr><td>Soporte técnico en español</td><td>Alta</td><td>Asistencia en horario español</td></tr><tr><td>Precio adaptado al mercado español</td><td>Media</td><td>Planes desde opciones gratuitas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Criterio</th><th>Importancia</th><th>Qué buscar</th></tr></thead><tbody><tr><td>Idioma español nativo</td><td>Crítica</td><td>Terminología gastronómica española correcta</td></tr><tr><td>Base de datos de ingredientes españoles</td><td>Alta</td><td>Productos con D.O., ingredientes regionales</td></tr><tr><td>Cumplimiento normativo</td><td>Crítica</td><td>RGPD, normativa de alérgenos UE</td></tr><tr><td>Integración con TPV</td><td>Media-Alta</td><td>Compatibilidad con sistemas españoles</td></tr><tr><td>Soporte técnico en español</td><td>Alta</td><td>Asistencia en horario español</td></tr><tr><td>Precio adaptado al mercado español</td><td>Media</td><td>Planes desde opciones gratuitas</td></tr></tbody></table></div></figure>
 
 
 
@@ -491,7 +491,7 @@ wpId: 2346
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Probar funcionalidades</td><td>Acceso básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Bares de tapas pequeños</td><td>Todas las herramientas con límites</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos</td><td>Límites expandidos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes con alta rotación</td><td>Uso extensivo + análisis</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Grupos de restauración</td><td>Uso ilimitado + prioridad</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Herramientas incluidas</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Probar funcionalidades</td><td>Acceso básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Bares de tapas pequeños</td><td>Todas las herramientas con límites</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos</td><td>Límites expandidos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes con alta rotación</td><td>Uso extensivo + análisis</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Grupos de restauración</td><td>Uso ilimitado + prioridad</td></tr></tbody></table></div></figure>
 
 
 

@@ -108,7 +108,7 @@ wpId: 2707
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Proporción</th><th>Efecto</th></tr><tr><td>Lecitina de soja</td><td>0.3-0.5%</td><td>Espuma ligera, efímera</td></tr><tr><td>Gelatina</td><td>1-2%</td><td>Espuma estable, más firme</td></tr><tr><td>Albumina</td><td>Variable</td><td>Espuma muy estable</td></tr><tr><td>Proteína de suero</td><td>1-3%</td><td>Espuma para postres</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Proporción</th><th>Efecto</th></tr><tr><td>Lecitina de soja</td><td>0.3-0.5%</td><td>Espuma ligera, efímera</td></tr><tr><td>Gelatina</td><td>1-2%</td><td>Espuma estable, más firme</td></tr><tr><td>Albumina</td><td>Variable</td><td>Espuma muy estable</td></tr><tr><td>Proteína de suero</td><td>1-3%</td><td>Espuma para postres</td></tr></tbody></table></div></figure>
 
 
 
@@ -267,7 +267,7 @@ wpId: 2707
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr><tr><td>No espuma</td><td>Líquido muy graso</td><td>Reducir grasa, usar emulsionante</td></tr><tr><td>Se desinfla rápido</td><td>Insuficiente emulsionante</td><td>Aumentar lecitina o gelatina</td></tr><tr><td>Sabor diluido</td><td>Líquido poco concentrado</td><td>Reducir más o intensificar sabor</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr><tr><td>No espuma</td><td>Líquido muy graso</td><td>Reducir grasa, usar emulsionante</td></tr><tr><td>Se desinfla rápido</td><td>Insuficiente emulsionante</td><td>Aumentar lecitina o gelatina</td></tr><tr><td>Sabor diluido</td><td>Líquido poco concentrado</td><td>Reducir más o intensificar sabor</td></tr></tbody></table></div></figure>
 
 
 
@@ -275,7 +275,7 @@ wpId: 2707
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Creador</strong></td><td>Ferran Adrià (Bulli)</td></tr><tr><td><strong>Técnica</strong></td><td>Incorporación de gas en líquido</td></tr><tr><td><strong>Equipamiento</strong></td><td>Sifón + cargas N2O</td></tr><tr><td><strong>Emulsionante</strong></td><td>Lecitina de soja (típico)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Creador</strong></td><td>Ferran Adrià (Bulli)</td></tr><tr><td><strong>Técnica</strong></td><td>Incorporación de gas en líquido</td></tr><tr><td><strong>Equipamiento</strong></td><td>Sifón + cargas N2O</td></tr><tr><td><strong>Emulsionante</strong></td><td>Lecitina de soja (típico)</td></tr></tbody></table></div></figure>
 
 
 

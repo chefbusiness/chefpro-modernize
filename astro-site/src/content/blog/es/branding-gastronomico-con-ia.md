@@ -72,7 +72,7 @@ wpId: 1971
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sin branding estratégico</th><th>Con branding IA optimizado</th><th>Mejora</th></tr></thead><tbody><tr><td>Reconocimiento de marca</td><td>15-20%</td><td>45-60%</td><td>+200%</td></tr><tr><td>Fidelización de clientes</td><td>22%</td><td>48%</td><td>+118%</td></tr><tr><td>Tiempo de creación de materiales</td><td>2-4 semanas</td><td>1-3 días</td><td>-85%</td></tr><tr><td>Inversión inicial en branding</td><td>5.000-15.000€</td><td>50-500€</td><td>-95%</td></tr><tr><td>Coherencia entre canales</td><td>Variable</td><td>Alta</td><td>Significativa</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Sin branding estratégico</th><th>Con branding IA optimizado</th><th>Mejora</th></tr></thead><tbody><tr><td>Reconocimiento de marca</td><td>15-20%</td><td>45-60%</td><td>+200%</td></tr><tr><td>Fidelización de clientes</td><td>22%</td><td>48%</td><td>+118%</td></tr><tr><td>Tiempo de creación de materiales</td><td>2-4 semanas</td><td>1-3 días</td><td>-85%</td></tr><tr><td>Inversión inicial en branding</td><td>5.000-15.000€</td><td>50-500€</td><td>-95%</td></tr><tr><td>Coherencia entre canales</td><td>Variable</td><td>Alta</td><td>Significativa</td></tr></tbody></table></div></figure>
 
 
 
@@ -140,7 +140,7 @@ wpId: 1971
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Nano Banana Pro (AI Chef Pro)</th><th>Generadores genéricos</th></tr></thead><tbody><tr><td>Optimizado para gastronomía</td><td>✅ Sí, entrenamiento específico</td><td>❌ Generalista</td></tr><tr><td>Integración con suite culinaria</td><td>✅ Conectado con +55 apps de cocina</td><td>❌ Herramienta aislada</td></tr><tr><td>Contexto de hostelería</td><td>✅ Comprende términos y necesidades</td><td>❌ Requiere prompts complejos</td></tr><tr><td>Coherencia de marca</td><td>✅ Mantiene estilos predefinidos</td><td>⚠️ Variable</td></tr><tr><td>Soporte en español</td><td>✅ Nativo y optimizado</td><td>⚠️ Traducido/limitado</td></tr><tr><td>Coste mensual</td><td>Incluido desde 10€/mes</td><td>20-50€/mes adicionales</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Nano Banana Pro (AI Chef Pro)</th><th>Generadores genéricos</th></tr></thead><tbody><tr><td>Optimizado para gastronomía</td><td>✅ Sí, entrenamiento específico</td><td>❌ Generalista</td></tr><tr><td>Integración con suite culinaria</td><td>✅ Conectado con +55 apps de cocina</td><td>❌ Herramienta aislada</td></tr><tr><td>Contexto de hostelería</td><td>✅ Comprende términos y necesidades</td><td>❌ Requiere prompts complejos</td></tr><tr><td>Coherencia de marca</td><td>✅ Mantiene estilos predefinidos</td><td>⚠️ Variable</td></tr><tr><td>Soporte en español</td><td>✅ Nativo y optimizado</td><td>⚠️ Traducido/limitado</td></tr><tr><td>Coste mensual</td><td>Incluido desde 10€/mes</td><td>20-50€/mes adicionales</td></tr></tbody></table></div></figure>
 
 
 
@@ -288,7 +288,7 @@ wpId: 1971
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Sentido</th><th>Elemento de marca</th><th>Cómo la IA puede ayudar</th></tr></thead><tbody><tr><td>Vista</td><td>Decoración, iluminación, emplatado</td><td>Generación de conceptos visuales y mockups</td></tr><tr><td>Olfato</td><td>Aromas característicos de la cocina</td><td>Análisis de perfiles aromáticos con <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</td></tr><tr><td>Oído</td><td>Ambiente musical, nivel de ruido</td><td>Generación de playlists temáticas</td></tr><tr><td>Gusto</td><td>Perfil de sabores distintivo</td><td>Desarrollo de recetas con identidad propia</td></tr><tr><td>Tacto</td><td>Texturas de vajilla, mobiliario, carta</td><td>Selección de materiales coherentes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Sentido</th><th>Elemento de marca</th><th>Cómo la IA puede ayudar</th></tr></thead><tbody><tr><td>Vista</td><td>Decoración, iluminación, emplatado</td><td>Generación de conceptos visuales y mockups</td></tr><tr><td>Olfato</td><td>Aromas característicos de la cocina</td><td>Análisis de perfiles aromáticos con <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</td></tr><tr><td>Oído</td><td>Ambiente musical, nivel de ruido</td><td>Generación de playlists temáticas</td></tr><tr><td>Gusto</td><td>Perfil de sabores distintivo</td><td>Desarrollo de recetas con identidad propia</td></tr><tr><td>Tacto</td><td>Texturas de vajilla, mobiliario, carta</td><td>Selección de materiales coherentes</td></tr></tbody></table></div></figure>
 
 
 
@@ -413,7 +413,7 @@ wpId: 1971
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Color dominante</th><th>Percepción emocional</th><th>Ideal para</th></tr></thead><tbody><tr><td>Rojo / Naranja</td><td>Apetito, energía, pasión</td><td>Fast food, cocina asiática, tapas</td></tr><tr><td>Verde</td><td>Frescura, salud, naturaleza</td><td>Vegetariano, orgánico, healthy</td></tr><tr><td>Azul</td><td>Confianza, serenidad, mar</td><td>Marisquerías, mediterráneo</td></tr><tr><td>Negro / Dorado</td><td>Elegancia, exclusividad, lujo</td><td>Fine dining, alta cocina</td></tr><tr><td>Marrón / Tierra</td><td>Tradición, autenticidad, calidez</td><td>Cocina tradicional, rústico</td></tr><tr><td>Blanco / Minimalista</td><td>Pureza, limpieza, modernidad</td><td>Cocina contemporánea, fusión</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Color dominante</th><th>Percepción emocional</th><th>Ideal para</th></tr></thead><tbody><tr><td>Rojo / Naranja</td><td>Apetito, energía, pasión</td><td>Fast food, cocina asiática, tapas</td></tr><tr><td>Verde</td><td>Frescura, salud, naturaleza</td><td>Vegetariano, orgánico, healthy</td></tr><tr><td>Azul</td><td>Confianza, serenidad, mar</td><td>Marisquerías, mediterráneo</td></tr><tr><td>Negro / Dorado</td><td>Elegancia, exclusividad, lujo</td><td>Fine dining, alta cocina</td></tr><tr><td>Marrón / Tierra</td><td>Tradición, autenticidad, calidez</td><td>Cocina tradicional, rústico</td></tr><tr><td>Blanco / Minimalista</td><td>Pureza, limpieza, modernidad</td><td>Cocina contemporánea, fusión</td></tr></tbody></table></div></figure>
 
 
 
@@ -767,7 +767,7 @@ wpId: 1971
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Acceso a Nano Banana Pro</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso limitado de prueba</td><td>Explorar la plataforma</td></tr><tr><td>Pro</td><td>10€/mes</td><td>✅ Incluido con límites</td><td>Restaurantes pequeños, emprendedores</td></tr><tr><td>Premium</td><td>15€/mes</td><td>✅ Límites expandidos</td><td>Restaurantes medianos, cafeterías</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>✅ Uso extensivo</td><td>Grupos, varios locales</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>✅ Uso ilimitado</td><td>Cadenas, consultorías, agencias</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Acceso a Nano Banana Pro</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso limitado de prueba</td><td>Explorar la plataforma</td></tr><tr><td>Pro</td><td>10€/mes</td><td>✅ Incluido con límites</td><td>Restaurantes pequeños, emprendedores</td></tr><tr><td>Premium</td><td>15€/mes</td><td>✅ Límites expandidos</td><td>Restaurantes medianos, cafeterías</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>✅ Uso extensivo</td><td>Grupos, varios locales</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>✅ Uso ilimitado</td><td>Cadenas, consultorías, agencias</td></tr></tbody></table></div></figure>
 
 
 

@@ -74,7 +74,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Dato</th><th>Fuente</th></tr></thead><tbody><tr><td>Chefs que experimentan estrés laboral diario</td><td>67%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Profesionales con problemas de depresión</td><td>50%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Accidentes ocasionados por fatiga mental</td><td>78%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Restauradores que consideran cerrar por estrés</td><td>33%</td><td>Square España (2025)</td></tr><tr><td>Propietarios con altos niveles de estrés</td><td>50%</td><td>Square España (2025)</td></tr><tr><td>Jornadas laborales perdidas por estrés en Europa</td><td>50-60%</td><td>ESENER-2</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Dato</th><th>Fuente</th></tr></thead><tbody><tr><td>Chefs que experimentan estrés laboral diario</td><td>67%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Profesionales con problemas de depresión</td><td>50%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Accidentes ocasionados por fatiga mental</td><td>78%</td><td>Sindicato Unite (Reino Unido)</td></tr><tr><td>Restauradores que consideran cerrar por estrés</td><td>33%</td><td>Square España (2025)</td></tr><tr><td>Propietarios con altos niveles de estrés</td><td>50%</td><td>Square España (2025)</td></tr><tr><td>Jornadas laborales perdidas por estrés en Europa</td><td>50-60%</td><td>ESENER-2</td></tr></tbody></table></div></figure>
 
 
 
@@ -238,7 +238,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Zona</th><th>Función Física</th><th>Función Cognitiva</th><th>Optimización con IA</th></tr></thead><tbody><tr><td>Recepción/Almacenamiento</td><td>Entrada de materias primas</td><td>Evaluación de calidad, registro de inventario</td><td>Sistemas de inventario automatizado con alertas predictivas</td></tr><tr><td>Preelaboración</td><td>Corte, limpieza, preparación</td><td>Planificación de mise en place, gestión de tiempos</td><td>IA para cálculo de porciones y escalado de recetas</td></tr><tr><td>Elaboración/Cocción</td><td>Aplicación de calor y técnicas</td><td>Multitarea, coordinación de tiempos, calidad sensorial</td><td>Hornos inteligentes con curvas de cocción automatizadas</td></tr><tr><td>Emplatado/Pase</td><td>Presentación final</td><td>Coordinación con sala, control de calidad final</td><td>KDS con IA predictiva para tiempos de salida</td></tr><tr><td>Lavado/Plonge</td><td>Limpieza de equipos</td><td>Gestión de flujo inverso, seguridad alimentaria</td><td>Sistemas de seguimiento de higiene digital</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Zona</th><th>Función Física</th><th>Función Cognitiva</th><th>Optimización con IA</th></tr></thead><tbody><tr><td>Recepción/Almacenamiento</td><td>Entrada de materias primas</td><td>Evaluación de calidad, registro de inventario</td><td>Sistemas de inventario automatizado con alertas predictivas</td></tr><tr><td>Preelaboración</td><td>Corte, limpieza, preparación</td><td>Planificación de mise en place, gestión de tiempos</td><td>IA para cálculo de porciones y escalado de recetas</td></tr><tr><td>Elaboración/Cocción</td><td>Aplicación de calor y técnicas</td><td>Multitarea, coordinación de tiempos, calidad sensorial</td><td>Hornos inteligentes con curvas de cocción automatizadas</td></tr><tr><td>Emplatado/Pase</td><td>Presentación final</td><td>Coordinación con sala, control de calidad final</td><td>KDS con IA predictiva para tiempos de salida</td></tr><tr><td>Lavado/Plonge</td><td>Limpieza de equipos</td><td>Gestión de flujo inverso, seguridad alimentaria</td><td>Sistemas de seguimiento de higiene digital</td></tr></tbody></table></div></figure>
 
 
 
@@ -426,7 +426,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo medio de salida de platos</td><td>18 minutos</td><td>13 minutos</td><td>-28%</td></tr><tr><td>Errores en comandas por servicio</td><td>4.2</td><td>0.8</td><td>-81%</td></tr><tr><td>Nivel de estrés percibido (escala 1-10)</td><td>8.1</td><td>5.4</td><td>-33%</td></tr><tr><td>Rotación de personal (trimestral)</td><td>22%</td><td>8%</td><td>-64%</td></tr><tr><td>Satisfacción del cliente (NPS)</td><td>42</td><td>67</td><td>+60%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo medio de salida de platos</td><td>18 minutos</td><td>13 minutos</td><td>-28%</td></tr><tr><td>Errores en comandas por servicio</td><td>4.2</td><td>0.8</td><td>-81%</td></tr><tr><td>Nivel de estrés percibido (escala 1-10)</td><td>8.1</td><td>5.4</td><td>-33%</td></tr><tr><td>Rotación de personal (trimestral)</td><td>22%</td><td>8%</td><td>-64%</td></tr><tr><td>Satisfacción del cliente (NPS)</td><td>42</td><td>67</td><td>+60%</td></tr></tbody></table></div></figure>
 
 
 
@@ -752,7 +752,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Método de Medición</th><th>Objetivo</th></tr></thead><tbody><tr><td>Estrés percibido</td><td>Encuesta semanal (escala 1-10)</td><td>Reducir 2 puntos en 3 meses</td></tr><tr><td>Errores por servicio</td><td>Registro diario</td><td>Reducir 50% en 3 meses</td></tr><tr><td>Tiempo de formación nuevos empleados</td><td>Días hasta autonomía</td><td>Reducir 30%</td></tr><tr><td>Interrupciones al chef jefe</td><td>Conteo durante servicio</td><td>Reducir 70%</td></tr><tr><td>Rotación de personal</td><td>% trimestral</td><td>Reducir a menos del 10%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Método de Medición</th><th>Objetivo</th></tr></thead><tbody><tr><td>Estrés percibido</td><td>Encuesta semanal (escala 1-10)</td><td>Reducir 2 puntos en 3 meses</td></tr><tr><td>Errores por servicio</td><td>Registro diario</td><td>Reducir 50% en 3 meses</td></tr><tr><td>Tiempo de formación nuevos empleados</td><td>Días hasta autonomía</td><td>Reducir 30%</td></tr><tr><td>Interrupciones al chef jefe</td><td>Conteo durante servicio</td><td>Reducir 70%</td></tr><tr><td>Rotación de personal</td><td>% trimestral</td><td>Reducir a menos del 10%</td></tr></tbody></table></div></figure>
 
 
 
@@ -893,7 +893,7 @@ wpId: 2135
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso básico a herramientas principales</td><td>Prueba inicial, estudiantes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>ID Alérgenos, Mermas GenCal, Recetarios básicos</td><td>Chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium</td><td>15€/mes</td><td>+ Food Pairing AI, Mental Coach, más recetarios</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>+ Herramientas de análisis, uso extensivo</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad soporte, exclusivas</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Herramientas Ergonomía Cognitiva</th><th>Ideal Para</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Acceso básico a herramientas principales</td><td>Prueba inicial, estudiantes</td></tr><tr><td>Pro</td><td>10€/mes</td><td>ID Alérgenos, Mermas GenCal, Recetarios básicos</td><td>Chefs individuales, pequeños establecimientos</td></tr><tr><td>Premium</td><td>15€/mes</td><td>+ Food Pairing AI, Mental Coach, más recetarios</td><td>Restaurantes hasta 60 pax</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>+ Herramientas de análisis, uso extensivo</td><td>Restaurantes grandes, grupos</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Uso ilimitado, prioridad soporte, exclusivas</td><td>Cadenas, catering, consultorías</td></tr></tbody></table></div></figure>
 
 
 

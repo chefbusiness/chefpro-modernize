@@ -1078,7 +1078,7 @@ wpId: 3386
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th><strong>Métrica</strong></th><th><strong>Sin IA (típico)</strong></th><th><strong>Con IA (promedio)</strong></th></tr><tr><td>Publicaciones mensuales</td><td>4-8</td><td>20-30</td></tr><tr><td>Tiempo gestión redes</td><td>10+ horas/mes</td><td>2-3 horas/mes</td></tr><tr><td>Engagement rate</td><td>1-2%</td><td>3-5%</td></tr><tr><td>Seguidores nuevos/mes</td><td>20-50</td><td>150-400</td></tr><tr><td>Tiempo respuesta reseñas</td><td>24-72 horas</td><td>&lt; 6 horas</td></tr><tr><td>Reservas por web</td><td>5-10/mes</td><td>30-60/mes</td></tr><tr><td>CAC</td><td>15-25€</td><td>8-15€</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th><strong>Métrica</strong></th><th><strong>Sin IA (típico)</strong></th><th><strong>Con IA (promedio)</strong></th></tr><tr><td>Publicaciones mensuales</td><td>4-8</td><td>20-30</td></tr><tr><td>Tiempo gestión redes</td><td>10+ horas/mes</td><td>2-3 horas/mes</td></tr><tr><td>Engagement rate</td><td>1-2%</td><td>3-5%</td></tr><tr><td>Seguidores nuevos/mes</td><td>20-50</td><td>150-400</td></tr><tr><td>Tiempo respuesta reseñas</td><td>24-72 horas</td><td>&lt; 6 horas</td></tr><tr><td>Reservas por web</td><td>5-10/mes</td><td>30-60/mes</td></tr><tr><td>CAC</td><td>15-25€</td><td>8-15€</td></tr></tbody></table></div></figure>
 
 
 

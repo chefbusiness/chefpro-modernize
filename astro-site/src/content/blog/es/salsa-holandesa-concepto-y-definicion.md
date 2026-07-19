@@ -29,7 +29,7 @@ wpId: 2737
 <h2>Del tronco común a las ramas: derivadas de la holandesa</h2>
 <p>Si hay una salsa que merece ser mencionada de inmediato al hablar de la holandesa, es la <a href="https://aichef.pro/blog/salsa-bearnesa-concepto-y-definicion" title="Salsa bearnesa: concepto y definición en blog AI Chef Pro">salsa bearnesa</a>. Ambas comparten la misma base técnica —emulsión caliente de yema y mantequilla clarificada—, pero cambia el componente ácido y aromático. Mientras la holandesa apuesta por el limón, la bearnesa trabaja con una reducción de vino blanco, vinagre, chalota, estragón y pimienta en grano, a la que luego se añade estragón y perifollo frescos picados.</p>
 <p>Esa diferencia de ingredientes cambia por completo el perfil de la salsa y su aplicación en cocina:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -59,7 +59,7 @@ wpId: 2737
 <td>Carnes a la parrilla, ternera, huevos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>A partir de aquí, el árbol genealógico se ramifica: salsa Choron (bearnesa con concentrado de tomate), salsa Foyot (bearnesa con caldo de carne y glace), salsa Maltaise (holandesa con zumo de naranja sanguina), entre otras. Todas heredan la misma técnica de emulsión caliente, así que dominar la holandesa abre la puerta a un repertorio de salsas considerable.</p>
 <h2>Usos clásicos de la salsa holandesa en el plato</h2>
 <p>Hablar de holandesa en cocina es casi sinónimo de huevos benedict. En este desayuno icónico —mitad inglesa, mitad americana en su popularización— la salsa corona un muffin tostado con jamón cocido o bacon, un huevo escalfado perfecto y ese toque final de cremosidad ácida que lo une todo. Es la preparación que más ha hecho por sacar la holandesa de los fogones de alta cocina y llevarla a las cartas de brunch de medio mundo.</p>

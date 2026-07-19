@@ -34,7 +34,7 @@ wpId: 3187
 <h3>Orígenes (1961-1971)</h3>
 <p>Aunque la marca Thermomix® se estableció oficialmente en 1971, los orígenes se remontan a <strong>1961</strong> cuando Vorwerk lanzó en Francia el <strong>VKM5</strong>, un aparato que combinaba varias funciones de procesamiento de alimentos. El verdadero lanzamiento comercial como «Thermomix» llegó en <strong>1971 con el modelo VM 2000</strong>, primer dispositivo que unía procesado y cocción.</p>
 <h3>Modelos Históricos</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Modelo</th>
@@ -84,7 +84,7 @@ wpId: 3187
 <td style="padding: 12px; border: 1px solid #ddd;">Nuevos modos: Dorar, Al vacío, Fermentar</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/thermomix-vintage.jpg" alt="Thermomix TM3300 clásica de los años 80" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h3>Vorwerk: La Empresa Tras el Éxito</h3>
 <p><strong>Vorwerk</strong>, fundada en Alemania en <strong>1883</strong>, es una empresa familiar con más de 140 años de historia. Aunque inicialmente se dedicaba a alfombras y tapices, en los años 30 diversificó hacia electrodomésticos con el aspirador Kobold. La Thermomix se convirtió en su producto estrella culinario, vendiéndose en más de 70 países.</p>

@@ -59,7 +59,7 @@ wpId: 3381
 <p><strong>Food Cost Real = (Inventario inicial + Compras &#8211; Inventario final) / Ventas</strong></p>
 <h3>Ejemplo práctico</h3>
 <p>Imaginemos un restaurante que trabaja con filetes de ternera:</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Concepto</th>
@@ -104,7 +104,7 @@ td><strong>Diferencia (merma)</strong></td>
 <td><strong>5,5%</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>En este ejemplo, la diferencia entre el <a href="https://aichef.pro/blog" target="_blank" rel="noopener noreferrer">food cost con IA</a> teórico y el real representa <strong>451 euros mensuales</strong> en mermas no identificadas, únicamente en filetes de ternera. Multiplicado por todas las materias primas, el impacto puede ser brutal.</p>
 <p>Para un cálculo preciso, te recomendamos utilizar herramientas especializadas como <strong>Mermas GenCal</strong> de AI Chef, que automatiza este proceso y te proporciona alertas en tiempo real. <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=reducir-mermas-restaurante-ia" target="_blank" rel="noopener">Calcula tus mermas ahora</a>.</p>
 <h2>8 estrategias tradicionales para reducir mermas</h2>
@@ -180,7 +180,7 @@ td><strong>Diferencia (merma)</strong></td>
 <li><strong>Gestión de proveedores:</strong> Comparativa automática de precios y tiempos de entrega</li>
 </ul>
 <p>La ventaja de AI Chef Pro radica en su enfoque integral: no solo mide las mermas, sino que proporciona acciones concretas para <strong>reducir mermas restaurante</strong> de forma sistemática. <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=reducir-mermas-restaurante-ia" target="_blank" rel="noopener">Prueba AI Chef Pro gratis</a>.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Herramienta</th>
@@ -215,7 +215,7 @@ td><strong>Diferencia (merma)</strong></td>
 <td>Desde 25€/mes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La elección de la herramienta dependerá del tamaño del establecimiento, el presupuesto y las necesidades específicas. Para restaurantes que buscan una solución en español, con soporte local y precio accesible, <strong>AI Chef Pro</strong> representa la opción más completa.</p>
 <h2>Caso práctico: restaurante Madrid reduce mermas del 14% al 4%</h2>
 <p>Para demostrar el impacto real de la IA en la reducción de mermas, analicemos un caso documentado de un restaurante en Madrid:</p>
@@ -244,7 +244,7 @@ td><strong>Diferencia (merma)</strong></td>
 <li><strong>Alertas de caducidad:</strong> Notificaciones tempranas de productos próximos a vencer</li>
 </ul>
 <h3>Resultados tras 6 meses</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Métrica</th>
@@ -285,7 +285,7 @@ td><strong>Diferencia (merma)</strong></td>
 <td>-82%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>ROI del caso</h3>
 <ul>
 <li><strong>Inversión en AI Chef Pro (6 meses):</strong> 570€ (Plan Premium Pro)</li>
@@ -340,7 +340,7 @@ td><strong>Diferencia (merma)</strong></td>
 <h2>ROI: cuánto ahorras con IA vs. método tradicional</h2>
 <p>Una de las preguntas más frecuentes al considerar la inversión en inteligencia artificial para <strong>reducir mermas restaurante</strong> es: ¿realmente vale la pena? Analicemos los números:</p>
 <h3>Comparativa de costes y ahorros</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Concepto</th>
@@ -375,9 +375,9 @@ td><strong>Diferencia (merma)</strong></td>
 <td>Predictiva (antes de que ocurra)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Ejemplo de ahorro para diferentes tamaños de restaurante</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Tamaño restaurante</th>
@@ -410,7 +410,7 @@ td><strong>Diferencia (merma)</strong></td>
 <td>2.400€</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Calculadora de ROI rápido</h3>
 <p>Para un restaurante medio con compras mensuales de 25.000€:</p>
 <ul>
@@ -428,7 +428,7 @@ td><strong>Diferencia (merma)</strong></td>
 <h2>Tabla de mermas por alimento</h2>
 <p>Conocer el porcentaje de merma esperado por tipo de producto es fundamental para establecer benchmarks y detectar anomalías. Los siguientes datos son medias del sector:</p>
 <h3>Carnes</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Producto</th>
@@ -468,9 +468,9 @@ td><strong>Diferencia (merma)</strong></td>
 <td>7-10%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Pescados</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Producto</th>
@@ -510,9 +510,9 @@ td><strong>Diferencia (merma)</strong></td>
 <td>10-14%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Verduras</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Producto</th>
@@ -557,9 +557,9 @@ td><strong>Diferencia (merma)</strong></td>
 <td>18-22%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Frutas</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Producto</th>
@@ -594,7 +594,7 @@ td><strong>Diferencia (merma)</strong></td>
 <td>5-8%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Nota:</strong> Las mermas típicas incluyen el proceso completo desde recepción hasta servicio. Las mermas objetivo con IA asumen la implementación de predicción de demanda, gestión de inventario optimizada y control de porciones.</p>
 <h2>Errores comunes al intentar reducir mermas</h2>
 <p>Many restaurants try to <strong>reducir mermas restaurante</strong> but make the same mistakes over and over. Here are the most common ones and how to avoid them:</p>

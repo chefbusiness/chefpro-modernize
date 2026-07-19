@@ -120,7 +120,7 @@ wpId: 3273
 <li>No se sirve con queso extra en la mesa (ya lleva parmesano)</li>
 </ul>
 <h2>Conservación</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Método</th>
@@ -145,7 +145,7 @@ wpId: 3273
 <td style="padding: 12px; border: 1px solid #ddd;">El sabor mejora al día siguiente</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><em>Pro Tip:</em> El ragù siempre mejora después de reposar 24 horas en la nevera. Los sabores se integran y la salsa espesa más. Recalienta suavemente con un poco de caldo.</p>
 <h2>FAQ &#8211; Preguntas Frecuentes</h2>
 <p><strong>¿Puedo usar solo carne de ternera?</strong><br /> Sí, pero perderás complejidad. La mezcla ternera-cerdo (tradicional 2:1 o 1:1) aporta diferentes grasas y sabores. El cerdo aporta dulzor y suavidad.</p>
@@ -155,7 +155,7 @@ wpId: 3273
 <p><strong>¿Por qué no usar spaghetti?</strong><br /> Los spaghetti son del sur de Italia (Nápoles). El ragù es de Bolonia (norte). Culturalmente no se mezclan. Las pastas anchas (tagliatelle) tienen más superficie para «agarrar» la salsa pesada.</p>
 <p><strong>¿Puedo añadir ajo?</strong><br /> La receta oficial no incluye ajo. Algunos hogares boloñeses sí lo usan. Si lo añades, usa solo 1 diente finamente picado con el battuto.</p>
 <h2>Tabla Resumen</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Aspecto</th>
@@ -188,7 +188,7 @@ wpId: 3273
 <td style="padding: 12px; border: 1px solid #ddd;">1982, Cámara de Comercio Bologna</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Glosario Relacionado</h2>
 <ul>
 <li>Sofrito &#8211; Técnica de cocción lenta de verduras picadas</li>

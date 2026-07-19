@@ -77,7 +77,7 @@ wpId: 3295
 <p><strong>¿Puedo usar marisco?</strong><br /> Eso sería paella de marisco, no valenciana. La auténtica lleva carne de monte.</p>
 <p><strong>¿Por qué no usar chorizo?</strong><br /> El chorizo es de otras regiones. En Valencia no se usa en la paella tradicional.</p>
 <h2>Tabla Resumen</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px;">Aspecto</th>
@@ -102,7 +102,7 @@ wpId: 3295
 <td>Valencia, España</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <div style="background: #f5f5f5; padding: 20px; border-left: 4px solid #ffde59; margin: 30px 0;">
 <p><strong>Contenido desarrollado y creado usando AI Chef Pro</strong></p>
 </p></div>

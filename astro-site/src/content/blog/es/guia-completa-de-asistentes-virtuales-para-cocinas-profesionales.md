@@ -160,7 +160,7 @@ wpId: 961
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><tbody><tr><th>Perfil</th><th>Beneficios</th></tr><tr><td><strong>Chefs</strong></td><td>Mejora en la organización y control de la operación, lo que permite una mayor creatividad en la preparación de platos.</td></tr><tr><td><strong>Cocineros</strong></td><td>Reducción del estrés por una mejor gestión del tiempo y recursos, además de una mayor eficiencia en las tareas diarias.</td></tr><tr><td><strong>Gerentes</strong></td><td>Optimización de costos y recursos, junto con una mejora en la trazabilidad y control de calidad.</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><tbody><tr><th>Perfil</th><th>Beneficios</th></tr><tr><td><strong>Chefs</strong></td><td>Mejora en la organización y control de la operación, lo que permite una mayor creatividad en la preparación de platos.</td></tr><tr><td><strong>Cocineros</strong></td><td>Reducción del estrés por una mejor gestión del tiempo y recursos, además de una mayor eficiencia en las tareas diarias.</td></tr><tr><td><strong>Gerentes</strong></td><td>Optimización de costos y recursos, junto con una mejora en la trazabilidad y control de calidad.</td></tr></tbody></table></div></figure>
 
 
 
@@ -266,7 +266,7 @@ wpId: 961
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><tbody><tr><th>Tipo de Herramienta</th><th>Beneficios</th><th>Ejemplo de Uso</th></tr><tr><td>Digitalización de checklists</td><td>Facilita el seguimiento diario y reduce errores</td><td>Aplicaciones móviles para marcar tareas</td></tr><tr><td>Sistemas de monitoreo</td><td>Detecta desviaciones y envía alertas</td><td>Sensores de temperatura conectados a IA</td></tr><tr><td>Integración remota</td><td>Permite la gestión de incidencias desde cualquier lugar</td><td>Plataformas de monitoreo en la nube</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><tbody><tr><th>Tipo de Herramienta</th><th>Beneficios</th><th>Ejemplo de Uso</th></tr><tr><td>Digitalización de checklists</td><td>Facilita el seguimiento diario y reduce errores</td><td>Aplicaciones móviles para marcar tareas</td></tr><tr><td>Sistemas de monitoreo</td><td>Detecta desviaciones y envía alertas</td><td>Sensores de temperatura conectados a IA</td></tr><tr><td>Integración remota</td><td>Permite la gestión de incidencias desde cualquier lugar</td><td>Plataformas de monitoreo en la nube</td></tr></tbody></table></div></figure>
 
 
 
@@ -362,7 +362,7 @@ wpId: 961
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Tipo de Herramienta</th><th>Beneficios</th><th>Ejemplo de Uso</th></tr><tr><td>Digitalización de checklists</td><td>Facilita el seguimiento diario y reduce errores</td><td>Aplicaciones móviles para marcar tareas</td></tr><tr><td>Sistemas de monitoreo</td><td>Detecta desviaciones y envía alertas</td><td>Sensores de temperatura conectados a IA</td></tr><tr><td>Integración remota</td><td>Permite la gestión de incidencias desde cualquier lugar</td><td>Plataformas de monitoreo en la nube</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Tipo de Herramienta</th><th>Beneficios</th><th>Ejemplo de Uso</th></tr><tr><td>Digitalización de checklists</td><td>Facilita el seguimiento diario y reduce errores</td><td>Aplicaciones móviles para marcar tareas</td></tr><tr><td>Sistemas de monitoreo</td><td>Detecta desviaciones y envía alertas</td><td>Sensores de temperatura conectados a IA</td></tr><tr><td>Integración remota</td><td>Permite la gestión de incidencias desde cualquier lugar</td><td>Plataformas de monitoreo en la nube</td></tr></tbody></table></div></figure>
 
 
 

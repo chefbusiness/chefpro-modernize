@@ -170,7 +170,7 @@ wpId: 3389
 <p>Estas funcionalidades están diseñadas para las operaciones reales de un restaurante, no son «features» genéricas.</p>
 <h2>ChatGPT vs AI Chef Pro: Comparativa Detallada Función por Función</h2>
 <p>Esta es la comparativa honesta que buscabas. Analizamos función por función para que veas dónde gana cada herramienta.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th><strong>Función</strong></th>
@@ -283,7 +283,7 @@ wpId: 3389
 <td><strong>ChatGPT</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Veredicto de la Tabla</h3>
 <p>De las 17 funciones analizadas, <strong>AI Chef Pro</strong> gana en 13, mientras que <strong>ChatGPT</strong> destaca en 2 (traducciones y creatividad general). Hay 2 empates.</p>
 <p>La diferencia clave: ChatGPT es excelente para tareas creativas y de lenguaje general, pero cuando hablamos de operaciones reales de restaurante (food cost, alérgenos, inventario, integración con sistemas), las herramientas especializadas son claramente superiores.</p>
@@ -376,7 +376,7 @@ wpId: 3389
 <h2>Comparativa de Precios y ROI</h2>
 <p>Analicemos los números reales para que puedas calcular el retorno de inversión:</p>
 <h3>Costes de Herramientas IA</h3>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th><strong>Herramienta</strong></th>
@@ -421,9 +421,9 @@ wpId: 3389
 <td>950€/año (79€/mes)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Costes de Alternativas Humanas</h3>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th><strong>Servicio</strong></th>
@@ -448,7 +448,7 @@ wpId: 3389
 <td>800-1.200€/mes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>ROI Calculado</h3>
 <p><strong>Escenario típico:</strong> Restaurante mediano con 2 personas gestionando operaciones y redes.</p>
 <p><strong>Inversión mensual:</strong></p>

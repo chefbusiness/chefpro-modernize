@@ -24,7 +24,7 @@ wpId: 3007
 </ul>
 <p>  <img decoding="async" src="/blog-assets/2026/02/post1-img3.jpg" alt="Tipos IA culinaria" style="width:100%;max-width:800px;display:block;margin:30px auto;border-radius:8px;">  </p>
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Tipos de IA que Usan los Chefs Profesionales</h2>
-<table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
+<div class="table-scroll"><table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
 <tr style="background:#000;color:#ffde59;">
 <th style="padding:12px;border:1px solid #ddd;text-align:left;">Tipo de IA</th>
 <th style="padding:12px;border:1px solid #ddd;text-align:left;">Función Principal</th>
@@ -50,13 +50,13 @@ wpId: 3007
 <td style="padding:12px;border:1px solid #ddd;">Sugerencias personalizadas</td>
 <td style="padding:12px;border:1px solid #ddd;">Recomendar maridajes a clientes</td>
 </tr>
-</table>
+</table></div>
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Caso Real: De Tradición a Innovación</h2>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">Un restaurante tradicional madrileño con 30 años de historia implementó IA para modernizar su operativa sin perder esencia:</p>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">• <strong>Antes:</strong> El chef pasaba 4 horas semanales creando descripciones para redes y carta<br /> • <strong>Después:</strong> Con IA especializada, genera 20 descripciones en 20 minutos, luego las personaliza<br /> • <strong>Resultado:</strong> Ahorro de 3.5 horas semanales = 14 horas mensuales para enfocarse en creatividad</p>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">El secreto no es reemplazar el toque humano, sino <strong>eliminar tareas mecánicas</strong> para liberar tiempo creativo.</p>
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Mitos vs Realidad sobre IA en Cocina</h2>
-<table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
+<div class="table-scroll"><table style="width:100%;border-collapse:collapse;margin:20px 0;background:#fff;">
 <tr style="background:#000;color:#ffde59;">
 <th style="padding:12px;border:1px solid #ddd;text-align:left;">Mito</th>
 <th style="padding:12px;border:1px solid #ddd;text-align:left;">Realidad</th>
@@ -77,7 +77,7 @@ wpId: 3007
 <td style="padding:12px;border:1px solid #ddd;">«Los clientes notan lo artificial»</td>
 <td style="padding:12px;border:1px solid #ddd;">Bien usada, la IA potencia tu estilo. Mal usada, sí es evidente. Depende del chef.</td>
 </tr>
-</table>
+</table></div>
 <h2 style="color: #ffde59; background: #000; padding: 15px 20px; border-left: 5px solid #ffde59;">Por Dónde Empezar con IA en tu Cocina</h2>
 <p style="color: #333; font-size: 18px; line-height: 1.8;">Si estás dando tus primeros pasos, te recomendamos este orden de implementación:</p>
 <ol>

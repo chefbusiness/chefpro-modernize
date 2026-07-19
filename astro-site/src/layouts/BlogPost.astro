@@ -155,7 +155,7 @@ const schemas: object[] = [
         />
       )}
 
-      <div class="prose prose-lg max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
+      <div class="blog-prose prose prose-lg max-w-none dark:prose-invert prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
         <slot />
       </div>
 
@@ -190,3 +190,45 @@ const schemas: object[] = [
 
   <Footer lang={post.data.lang} />
 </BaseLayout>
+
+<style is:global>
+  /* Fase 8B — contenido portado de WP: nada puede desbordar el viewport.
+     Las tablas (948 en el catálogo) van envueltas en .table-scroll por el
+     conversor: scroll horizontal PROPIO, la página nunca se ensancha. */
+  .blog-prose {
+    overflow-wrap: break-word;
+  }
+  .blog-prose .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.5em 0;
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+  .blog-prose .table-scroll > table {
+    margin: 0;
+    width: max-content;
+    min-width: 100%;
+  }
+  .blog-prose .table-scroll th,
+  .blog-prose .table-scroll td {
+    min-width: 8rem;
+  }
+  /* Cinturón por si algún HTML trae tablas sin envolver o <pre> anchos */
+  .blog-prose > table,
+  .blog-prose figure > table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .blog-prose pre {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  .blog-prose img,
+  .blog-prose video,
+  .blog-prose iframe {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

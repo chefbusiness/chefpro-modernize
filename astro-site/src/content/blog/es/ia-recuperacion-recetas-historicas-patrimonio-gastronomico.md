@@ -178,7 +178,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tecnología IA</th><th class="has-text-align-left" data-align="left">Aplicación en Recetas Históricas</th><th class="has-text-align-left" data-align="left">Beneficio Principal</th></tr></thead><tbody><tr><td>OCR Paleográfico</td><td>Transcripción de manuscritos antiguos</td><td>Precisión del 95% en caligrafías históricas</td></tr><tr><td>NLP Histórico</td><td>Interpretación de terminología arcaica</td><td>Contextualización temporal y regional</td></tr><tr><td>Análisis Predictivo</td><td>Reconstrucción de proporciones</td><td>Validación científica de combinaciones</td></tr><tr><td>Visión Artificial</td><td>Identificación de ingredientes en imágenes</td><td>Reconstrucción visual de platos perdidos</td></tr><tr><td>Redes Neuronales</td><td>Generación de variaciones adaptadas</td><td>Modernización respetando esencia original</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tecnología IA</th><th class="has-text-align-left" data-align="left">Aplicación en Recetas Históricas</th><th class="has-text-align-left" data-align="left">Beneficio Principal</th></tr></thead><tbody><tr><td>OCR Paleográfico</td><td>Transcripción de manuscritos antiguos</td><td>Precisión del 95% en caligrafías históricas</td></tr><tr><td>NLP Histórico</td><td>Interpretación de terminología arcaica</td><td>Contextualización temporal y regional</td></tr><tr><td>Análisis Predictivo</td><td>Reconstrucción de proporciones</td><td>Validación científica de combinaciones</td></tr><tr><td>Visión Artificial</td><td>Identificación de ingredientes en imágenes</td><td>Reconstrucción visual de platos perdidos</td></tr><tr><td>Redes Neuronales</td><td>Generación de variaciones adaptadas</td><td>Modernización respetando esencia original</td></tr></tbody></table></div></figure>
 
 
 
@@ -382,7 +382,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Medida Histórica</th><th class="has-text-align-left" data-align="left">Época/Región</th><th class="has-text-align-left" data-align="left">Equivalencia Moderna</th></tr></thead><tbody><tr><td>Libra castellana</td><td>España s. XVI-XIX</td><td>460 gramos</td></tr><tr><td>Onza</td><td>General hispano</td><td>28.75 gramos</td></tr><tr><td>Cuartillo</td><td>Nueva España</td><td>504 ml (líquidos)</td></tr><tr><td>Azumbre</td><td>España medieval</td><td>2.016 litros</td></tr><tr><td>Escudilla</td><td>Cocina conventual</td><td>250-300 ml aprox.</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Medida Histórica</th><th class="has-text-align-left" data-align="left">Época/Región</th><th class="has-text-align-left" data-align="left">Equivalencia Moderna</th></tr></thead><tbody><tr><td>Libra castellana</td><td>España s. XVI-XIX</td><td>460 gramos</td></tr><tr><td>Onza</td><td>General hispano</td><td>28.75 gramos</td></tr><tr><td>Cuartillo</td><td>Nueva España</td><td>504 ml (líquidos)</td></tr><tr><td>Azumbre</td><td>España medieval</td><td>2.016 litros</td></tr><tr><td>Escudilla</td><td>Cocina conventual</td><td>250-300 ml aprox.</td></tr></tbody></table></div></figure>
 
 
 
@@ -548,7 +548,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Beneficio</th><th class="has-text-align-left" data-align="left">Impacto Medible</th><th class="has-text-align-left" data-align="left">Ejemplo Práctico</th></tr></thead><tbody><tr><td>Diferenciación de carta</td><td>+25% en precio percibido</td><td>Platos «de época» como experiencia premium</td></tr><tr><td>Cobertura mediática</td><td>+40% menciones en prensa</td><td>Recuperación de receta local genera interés</td></tr><tr><td>Fidelización</td><td>+35% retorno de clientes</td><td>Menús temáticos históricos rotativos</td></tr><tr><td>Turismo gastronómico</td><td>+50% visitantes foráneos</td><td>Posicionamiento como destino cultural</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Beneficio</th><th class="has-text-align-left" data-align="left">Impacto Medible</th><th class="has-text-align-left" data-align="left">Ejemplo Práctico</th></tr></thead><tbody><tr><td>Diferenciación de carta</td><td>+25% en precio percibido</td><td>Platos «de época» como experiencia premium</td></tr><tr><td>Cobertura mediática</td><td>+40% menciones en prensa</td><td>Recuperación de receta local genera interés</td></tr><tr><td>Fidelización</td><td>+35% retorno de clientes</td><td>Menús temáticos históricos rotativos</td></tr><tr><td>Turismo gastronómico</td><td>+50% visitantes foráneos</td><td>Posicionamiento como destino cultural</td></tr></tbody></table></div></figure>
 
 
 
@@ -626,7 +626,7 @@ wpId: 1901
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Explorar funcionalidades</td><td>Básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chefs individuales</td><td>Completo</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Cocinas activas</td><td>Completo + Exportación</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Desarrollo e I+D</td><td>Completo + Prioridad</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Chef ejecutivo/corporativo</td><td>Ilimitado + Soporte VIP</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal Para</th><th class="has-text-align-left" data-align="left">Acceso a Herramientas Históricas</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Explorar funcionalidades</td><td>Básico limitado</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chefs individuales</td><td>Completo</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Cocinas activas</td><td>Completo + Exportación</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Desarrollo e I+D</td><td>Completo + Prioridad</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Chef ejecutivo/corporativo</td><td>Ilimitado + Soporte VIP</td></tr></tbody></table></div></figure>
 
 
 

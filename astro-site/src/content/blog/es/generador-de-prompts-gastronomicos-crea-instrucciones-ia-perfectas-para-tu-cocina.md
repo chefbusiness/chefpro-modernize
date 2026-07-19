@@ -76,7 +76,7 @@ wpId: 1425
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Problema</th><th>Prompts Básicos</th><th>Prompts Optimizados</th><th>Diferencia</th></tr></thead><tbody><tr><td>Tiempo de iteración</td><td>45-60 min</td><td>8-12 min</td><td>75% menos tiempo</td></tr><tr><td>Precisión de costes</td><td>60-70%</td><td>92-96%</td><td>35% más precisión</td></tr><tr><td>Relevancia culinaria</td><td>40-55%</td><td>85-92%</td><td>60% más relevante</td></tr><tr><td>Viabilidad técnica</td><td>45-60%</td><td>88-94%</td><td>50% más viable</td></tr><tr><td>Satisfacción del usuario</td><td>3.2/5</td><td>4.7/5</td><td>47% más satisfacción</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Problema</th><th>Prompts Básicos</th><th>Prompts Optimizados</th><th>Diferencia</th></tr></thead><tbody><tr><td>Tiempo de iteración</td><td>45-60 min</td><td>8-12 min</td><td>75% menos tiempo</td></tr><tr><td>Precisión de costes</td><td>60-70%</td><td>92-96%</td><td>35% más precisión</td></tr><tr><td>Relevancia culinaria</td><td>40-55%</td><td>85-92%</td><td>60% más relevante</td></tr><tr><td>Viabilidad técnica</td><td>45-60%</td><td>88-94%</td><td>50% más viable</td></tr><tr><td>Satisfacción del usuario</td><td>3.2/5</td><td>4.7/5</td><td>47% más satisfacción</td></tr></tbody></table></div></figure>
 
 
 
@@ -576,7 +576,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Versión Básica</th><th>Versión Optimizada</th><th>Mejora</th></tr></thead><tbody><tr><td>Relevancia del contenido</td><td>40%</td><td>92%</td><td>+130%</td></tr><tr><td>Precisión de costes</td><td>55%</td><td>94%</td><td>+71%</td></tr><tr><td>Viabilidad técnica</td><td>45%</td><td>96%</td><td>+113%</td></tr><tr><td>Tiempo de implementación</td><td>45 min</td><td>8 min</td><td>-82%</td></tr><tr><td>Satisfacción del chef</td><td>2.8/5</td><td>4.8/5</td><td>+71%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Versión Básica</th><th>Versión Optimizada</th><th>Mejora</th></tr></thead><tbody><tr><td>Relevancia del contenido</td><td>40%</td><td>92%</td><td>+130%</td></tr><tr><td>Precisión de costes</td><td>55%</td><td>94%</td><td>+71%</td></tr><tr><td>Viabilidad técnica</td><td>45%</td><td>96%</td><td>+113%</td></tr><tr><td>Tiempo de implementación</td><td>45 min</td><td>8 min</td><td>-82%</td></tr><tr><td>Satisfacción del chef</td><td>2.8/5</td><td>4.8/5</td><td>+71%</td></tr></tbody></table></div></figure>
 
 
 
@@ -714,7 +714,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>KPI</th><th>Target</th><th>Resultado</th><th>Performance</th></tr></thead><tbody><tr><td>Satisfacción del cliente</td><td>85%</td><td>97%</td><td>+14% vs. target</td></tr><tr><td>Incidencias alérgenos</td><td>0</td><td>0</td><td>100% éxito</td></tr><tr><td>Margen operativo</td><td>18%</td><td>24%</td><td>+33% vs. target</td></tr><tr><td>Tiempo de servicio</td><td>90 min</td><td>82 min</td><td>-9% tiempo</td></tr><tr><td>Desperdicio alimentario</td><td>&lt;5%</td><td>2.1%</td><td>Excelente</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>KPI</th><th>Target</th><th>Resultado</th><th>Performance</th></tr></thead><tbody><tr><td>Satisfacción del cliente</td><td>85%</td><td>97%</td><td>+14% vs. target</td></tr><tr><td>Incidencias alérgenos</td><td>0</td><td>0</td><td>100% éxito</td></tr><tr><td>Margen operativo</td><td>18%</td><td>24%</td><td>+33% vs. target</td></tr><tr><td>Tiempo de servicio</td><td>90 min</td><td>82 min</td><td>-9% tiempo</td></tr><tr><td>Desperdicio alimentario</td><td>&lt;5%</td><td>2.1%</td><td>Excelente</td></tr></tbody></table></div></figure>
 
 
 
@@ -756,7 +756,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Definición</th><th>Rango Óptimo</th><th>Método de Medición</th></tr></thead><tbody><tr><td>Precisión técnica</td><td>Exactitud de cantidades, temperaturas, tiempos</td><td>90-95%</td><td>Validación por chef experto</td></tr><tr><td>Relevancia gastronómica</td><td>Coherencia con estilo culinario solicitado</td><td>85-92%</td><td>Panel de evaluación profesional</td></tr><tr><td>Viabilidad económica</td><td>Realismo de costes y márgenes</td><td>88-94%</td><td>Análisis financiero automatizado</td></tr><tr><td>Usabilidad práctica</td><td>Facilidad de implementación en cocina</td><td>80-90%</td><td>Feedback del equipo operativo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Definición</th><th>Rango Óptimo</th><th>Método de Medición</th></tr></thead><tbody><tr><td>Precisión técnica</td><td>Exactitud de cantidades, temperaturas, tiempos</td><td>90-95%</td><td>Validación por chef experto</td></tr><tr><td>Relevancia gastronómica</td><td>Coherencia con estilo culinario solicitado</td><td>85-92%</td><td>Panel de evaluación profesional</td></tr><tr><td>Viabilidad económica</td><td>Realismo de costes y márgenes</td><td>88-94%</td><td>Análisis financiero automatizado</td></tr><tr><td>Usabilidad práctica</td><td>Facilidad de implementación en cocina</td><td>80-90%</td><td>Feedback del equipo operativo</td></tr></tbody></table></div></figure>
 
 
 
@@ -794,7 +794,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Prompt</th><th>Precisión</th><th>Creatividad</th><th>Viabilidad</th><th>Tiempo Respuesta</th><th>ROI Promedio</th></tr></thead><tbody><tr><td>Básico (genérico)</td><td>45%</td><td>30%</td><td>70%</td><td>2 min</td><td>120%</td></tr><tr><td>Estructurado (CHEF)</td><td>85%</td><td>75%</td><td>90%</td><td>3 min</td><td>450%</td></tr><tr><td>Avanzado + Templates</td><td>95%</td><td>85%</td><td>95%</td><td>4 min</td><td>780%</td></tr><tr><td>AI Chef Pro Optimizado</td><td>97%</td><td>92%</td><td>98%</td><td>3 min</td><td>1,200%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Prompt</th><th>Precisión</th><th>Creatividad</th><th>Viabilidad</th><th>Tiempo Respuesta</th><th>ROI Promedio</th></tr></thead><tbody><tr><td>Básico (genérico)</td><td>45%</td><td>30%</td><td>70%</td><td>2 min</td><td>120%</td></tr><tr><td>Estructurado (CHEF)</td><td>85%</td><td>75%</td><td>90%</td><td>3 min</td><td>450%</td></tr><tr><td>Avanzado + Templates</td><td>95%</td><td>85%</td><td>95%</td><td>4 min</td><td>780%</td></tr><tr><td>AI Chef Pro Optimizado</td><td>97%</td><td>92%</td><td>98%</td><td>3 min</td><td>1,200%</td></tr></tbody></table></div></figure>
 
 
 
@@ -949,7 +949,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo de planificación diaria</td><td>3.5 horas</td><td>45 min</td><td>-78%</td></tr><tr><td>Desperdicios por mal cálculo</td><td>12%</td><td>2.8%</td><td>-77%</td></tr><tr><td>Margen bruto promedio</td><td>28%</td><td>34%</td><td>+21%</td></tr><tr><td>Satisfacción del cliente</td><td>4.2/5</td><td>4.7/5</td><td>+12%</td></tr><tr><td>Rotación de carta</td><td>2 veces/semana</td><td>Diaria</td><td>+250%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo de planificación diaria</td><td>3.5 horas</td><td>45 min</td><td>-78%</td></tr><tr><td>Desperdicios por mal cálculo</td><td>12%</td><td>2.8%</td><td>-77%</td></tr><tr><td>Margen bruto promedio</td><td>28%</td><td>34%</td><td>+21%</td></tr><tr><td>Satisfacción del cliente</td><td>4.2/5</td><td>4.7/5</td><td>+12%</td></tr><tr><td>Rotación de carta</td><td>2 veces/semana</td><td>Diaria</td><td>+250%</td></tr></tbody></table></div></figure>
 
 
 
@@ -1084,7 +1084,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>KPI</th><th>Situación Anterior</th><th>Con AI Chef Pro</th><th>Impacto</th></tr></thead><tbody><tr><td>Tiempo de cotización</td><td>6-8 horas</td><td>1.5 horas</td><td>-78%</td></tr><tr><td>Capacidad de respuesta</td><td>24-48 horas</td><td>2-4 horas</td><td>-87%</td></tr><tr><td>Tasa de conversión comercial</td><td>23%</td><td>41%</td><td>+78%</td></tr><tr><td>Margen operativo promedio</td><td>18%</td><td>26%</td><td>+44%</td></tr><tr><td>Volumen de eventos mes</td><td>150</td><td>280</td><td>+87%</td></tr><tr><td>Satisfacción del cliente</td><td>4.1/5</td><td>4.8/5</td><td>+17%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>KPI</th><th>Situación Anterior</th><th>Con AI Chef Pro</th><th>Impacto</th></tr></thead><tbody><tr><td>Tiempo de cotización</td><td>6-8 horas</td><td>1.5 horas</td><td>-78%</td></tr><tr><td>Capacidad de respuesta</td><td>24-48 horas</td><td>2-4 horas</td><td>-87%</td></tr><tr><td>Tasa de conversión comercial</td><td>23%</td><td>41%</td><td>+78%</td></tr><tr><td>Margen operativo promedio</td><td>18%</td><td>26%</td><td>+44%</td></tr><tr><td>Volumen de eventos mes</td><td>150</td><td>280</td><td>+87%</td></tr><tr><td>Satisfacción del cliente</td><td>4.1/5</td><td>4.8/5</td><td>+17%</td></tr></tbody></table></div></figure>
 
 
 
@@ -1230,7 +1230,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Elemento</th><th>Verificación</th><th>Status</th></tr></thead><tbody><tr><td>Contexto profesional</td><td>Rol específico + experiencia + especialización</td><td>☑️</td></tr><tr><td>Parámetros económicos</td><td>Food cost + margen + precio venta</td><td>☑️</td></tr><tr><td>Restricciones operativas</td><td>Equipo + tiempo + personal</td><td>☑️</td></tr><tr><td>Especificaciones técnicas</td><td>Cantidades + técnicas + temperaturas</td><td>☑️</td></tr><tr><td>Formato de output</td><td>Estructura + nivel de detalle</td><td>☑️</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Elemento</th><th>Verificación</th><th>Status</th></tr></thead><tbody><tr><td>Contexto profesional</td><td>Rol específico + experiencia + especialización</td><td>☑️</td></tr><tr><td>Parámetros económicos</td><td>Food cost + margen + precio venta</td><td>☑️</td></tr><tr><td>Restricciones operativas</td><td>Equipo + tiempo + personal</td><td>☑️</td></tr><tr><td>Especificaciones técnicas</td><td>Cantidades + técnicas + temperaturas</td><td>☑️</td></tr><tr><td>Formato de output</td><td>Estructura + nivel de detalle</td><td>☑️</td></tr></tbody></table></div></figure>
 
 
 
@@ -1698,7 +1698,7 @@ Parámetros económicos:
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Prompts/mes</th><th>Templates</th><th>Herramientas</th><th>Soporte</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>0€</td><td>50</td><td>5 básicos</td><td>3 básicas</td><td>Comunidad</td><td>Exploración inicial</td></tr><tr><td><strong>Pro</strong></td><td>10€</td><td>500</td><td>15 intermedios</td><td>Suite completa</td><td>Email + Docs</td><td>Chef individual</td></tr><tr><td><strong>Premium</strong></td><td>15€</td><td>1,000</td><td>25 avanzados</td><td>Suite + Analytics</td><td>Chat prioritario</td><td>Restaurante pequeño</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€</td><td>3,000</td><td>Todos + Custom</td><td>Suite + Integraciones</td><td>Soporte prioridad</td><td>Múltiples conceptos</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€</td><td>Ilimitado</td><td>Todos + AI Custom</td><td>Ecosistema completo</td><td>Sesiones 1-on-1</td><td>Grupos gastronómicos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio Mensual</th><th>Prompts/mes</th><th>Templates</th><th>Herramientas</th><th>Soporte</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>0€</td><td>50</td><td>5 básicos</td><td>3 básicas</td><td>Comunidad</td><td>Exploración inicial</td></tr><tr><td><strong>Pro</strong></td><td>10€</td><td>500</td><td>15 intermedios</td><td>Suite completa</td><td>Email + Docs</td><td>Chef individual</td></tr><tr><td><strong>Premium</strong></td><td>15€</td><td>1,000</td><td>25 avanzados</td><td>Suite + Analytics</td><td>Chat prioritario</td><td>Restaurante pequeño</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€</td><td>3,000</td><td>Todos + Custom</td><td>Suite + Integraciones</td><td>Soporte prioridad</td><td>Múltiples conceptos</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€</td><td>Ilimitado</td><td>Todos + AI Custom</td><td>Ecosistema completo</td><td>Sesiones 1-on-1</td><td>Grupos gastronómicos</td></tr></tbody></table></div></figure>
 
 
 

@@ -19,7 +19,7 @@ wpId: 3050
 <p><strong>Beurre noisette</strong> traduce literalmente «mantequilla avellana» en francés, y el nombre no es casualidad. Durante el proceso de tostado, la mantequilla desarrolla compuestos aromáticos idénticos a los de la avellana tostada, gracias a la reacción de Maillard y la caramelización de los sólidos lácteos.</p>
 <p>La técnica consiste en <strong>fundir mantequilla sin sal a fuego medio-alto</strong> hasta que los sólidos (proteínas y azúcares) se separen de la grasa y se doren, adquiriendo un color ámbar dorado y un aroma intenso a nuez.</p>
 <h3>Beurre Noisette vs. Mantequilla Clarificada vs. Ghee</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -66,7 +66,7 @@ wpId: 3050
 <td style="padding: 12px; border: 1px solid #ddd;">Cocina india, conservación</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Fundamentos Científicos: Por Qué Funciona</h2>
 <p>El sabor único del beurre noisette proviene de tres reacciones químicas simultáneas:</p>
 <h3>1. Reacción de Maillard</h3>
@@ -111,7 +111,7 @@ wpId: 3050
 <p>Para aplicaciones donde se busca pureza (salsas finas, emulsiones), filtra a través de colador fino o gasa. Para repostería y platos rústicos, mantén los sólidos tostados (aportan sabor y textura).</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/02/beurre-noisette-2.jpg" alt="Chef usando beurre noisette en restaurante" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;" data-wp-id="3049">  </p>
 <h2>Tabla de Tiempos y Temperaturas por Resultado</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Punto de cocción</th>
@@ -144,7 +144,7 @@ wpId: 3050
 <td style="padding: 12px; border: 1px solid #ddd;">Carnes, platos de invierno, resistentes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>5 Errores que Arruinan el Beurre Noisette</h2>
 <h3>1. Fuego Demasiado Alto</h3>
 <p><strong>El error:</strong> Quemar los sólidos en segundos, generando amargor.</p>

@@ -174,7 +174,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Etapa del Proceso</th><th>Función</th><th>Resultado Obtenido</th></tr></thead><tbody><tr><td><strong>Cromatografía de Gases</strong></td><td>Separación de compuestos volátiles</td><td>Identificación individual de moléculas aromáticas</td></tr><tr><td><strong>Espectrometría de Masas</strong></td><td>Identificación molecular precisa</td><td>Estructura química exacta de cada compuesto</td></tr><tr><td><strong>Cuantificación</strong></td><td>Medición de concentraciones</td><td>Importancia relativa de cada aroma</td></tr><tr><td><strong>Análisis de Umbrales</strong></td><td>Determinación de detectabilidad</td><td>Impacto sensorial real de cada molécula</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Etapa del Proceso</th><th>Función</th><th>Resultado Obtenido</th></tr></thead><tbody><tr><td><strong>Cromatografía de Gases</strong></td><td>Separación de compuestos volátiles</td><td>Identificación individual de moléculas aromáticas</td></tr><tr><td><strong>Espectrometría de Masas</strong></td><td>Identificación molecular precisa</td><td>Estructura química exacta de cada compuesto</td></tr><tr><td><strong>Cuantificación</strong></td><td>Medición de concentraciones</td><td>Importancia relativa de cada aroma</td></tr><tr><td><strong>Análisis de Umbrales</strong></td><td>Determinación de detectabilidad</td><td>Impacto sensorial real de cada molécula</td></tr></tbody></table></div></figure>
 
 
 
@@ -236,7 +236,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Principal</th><th>Maridaje Sorprendente</th><th>Compatibilidad</th><th>Moléculas Compartidas</th><th>Aplicación Culinaria</th></tr></thead><tbody><tr><td><strong>Chocolate Negro</strong></td><td>Caviar</td><td>95%</td><td>Aldeídos, ésteres</td><td>Postres salados, canapés</td></tr><tr><td><strong>Fresas</strong></td><td>Parmesano</td><td>92%</td><td>Ácidos carboxílicos</td><td>Ensaladas, carpaccios</td></tr><tr><td><strong>Aceite de Oliva</strong></td><td>Chocolate Blanco</td><td>94%</td><td>Compuestos fenólicos</td><td>Mousses, bombones</td></tr><tr><td><strong>Jamón Ibérico</strong></td><td>Chocolate con Leche</td><td>91%</td><td>Pirazinas, lactónas</td><td>Tapas gourmet</td></tr><tr><td><strong>Tomate</strong></td><td>Canela</td><td>89%</td><td>Eugenol, aldehídos</td><td>Salsas especiadas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Principal</th><th>Maridaje Sorprendente</th><th>Compatibilidad</th><th>Moléculas Compartidas</th><th>Aplicación Culinaria</th></tr></thead><tbody><tr><td><strong>Chocolate Negro</strong></td><td>Caviar</td><td>95%</td><td>Aldeídos, ésteres</td><td>Postres salados, canapés</td></tr><tr><td><strong>Fresas</strong></td><td>Parmesano</td><td>92%</td><td>Ácidos carboxílicos</td><td>Ensaladas, carpaccios</td></tr><tr><td><strong>Aceite de Oliva</strong></td><td>Chocolate Blanco</td><td>94%</td><td>Compuestos fenólicos</td><td>Mousses, bombones</td></tr><tr><td><strong>Jamón Ibérico</strong></td><td>Chocolate con Leche</td><td>91%</td><td>Pirazinas, lactónas</td><td>Tapas gourmet</td></tr><tr><td><strong>Tomate</strong></td><td>Canela</td><td>89%</td><td>Eugenol, aldehídos</td><td>Salsas especiadas</td></tr></tbody></table></div></figure>
 
 
 
@@ -244,7 +244,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Principal</th><th>Maridaje Creativo</th><th>Compatibilidad</th><th>Perfil Aromático</th><th>Técnica Recomendada</th></tr></thead><tbody><tr><td><strong>Queso Azul</strong></td><td>Miel y Lavanda</td><td>87%</td><td>Floral, lácteo</td><td>Infusiones, cremas</td></tr><tr><td><strong>Salmón</strong></td><td>Vainilla</td><td>84%</td><td>Graso, dulce</td><td>Marinados, reducciones</td></tr><tr><td><strong>Café</strong></td><td>Ajo Negro</td><td>82%</td><td>Tostado, umami</td><td>Salsas, emulsiones</td></tr><tr><td><strong>Aguacate</strong></td><td>Chocolate</td><td>79%</td><td>Cremoso, terroso</td><td>Mousses, batidos</td></tr><tr><td><strong>Hinojo</strong></td><td>Regaliz</td><td>86%</td><td>Anisado, herbáceo</td><td>Destilaciones, jarabes</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente Principal</th><th>Maridaje Creativo</th><th>Compatibilidad</th><th>Perfil Aromático</th><th>Técnica Recomendada</th></tr></thead><tbody><tr><td><strong>Queso Azul</strong></td><td>Miel y Lavanda</td><td>87%</td><td>Floral, lácteo</td><td>Infusiones, cremas</td></tr><tr><td><strong>Salmón</strong></td><td>Vainilla</td><td>84%</td><td>Graso, dulce</td><td>Marinados, reducciones</td></tr><tr><td><strong>Café</strong></td><td>Ajo Negro</td><td>82%</td><td>Tostado, umami</td><td>Salsas, emulsiones</td></tr><tr><td><strong>Aguacate</strong></td><td>Chocolate</td><td>79%</td><td>Cremoso, terroso</td><td>Mousses, batidos</td></tr><tr><td><strong>Hinojo</strong></td><td>Regaliz</td><td>86%</td><td>Anisado, herbáceo</td><td>Destilaciones, jarabes</td></tr></tbody></table></div></figure>
 
 
 
@@ -400,7 +400,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Restricción</th><th>Ingrediente Original</th><th>Sustituto Food Pairing</th><th>Compatibilidad Aromática</th></tr></thead><tbody><tr><td>Sin Gluten</td><td>Harina de trigo</td><td>Harina de almendra + almidón de <a href="https://aichef.pro/blog/que-es-el-maiz">maíz</a></td><td>88%</td></tr><tr><td>Sin Lácteos</td><td>Mantequilla</td><td>Aceite de coco + lecitina</td><td>84%</td></tr><tr><td>Vegano</td><td>Queso parmesano</td><td>Levadura nutricional + nueces</td><td>79%</td></tr><tr><td>Sin Frutos Secos</td><td>Almendras</td><td>Semillas de girasol tostadas</td><td>82%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Restricción</th><th>Ingrediente Original</th><th>Sustituto Food Pairing</th><th>Compatibilidad Aromática</th></tr></thead><tbody><tr><td>Sin Gluten</td><td>Harina de trigo</td><td>Harina de almendra + almidón de <a href="https://aichef.pro/blog/que-es-el-maiz">maíz</a></td><td>88%</td></tr><tr><td>Sin Lácteos</td><td>Mantequilla</td><td>Aceite de coco + lecitina</td><td>84%</td></tr><tr><td>Vegano</td><td>Queso parmesano</td><td>Levadura nutricional + nueces</td><td>79%</td></tr><tr><td>Sin Frutos Secos</td><td>Almendras</td><td>Semillas de girasol tostadas</td><td>82%</td></tr></tbody></table></div></figure>
 
 
 
@@ -454,7 +454,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Características Principales</th><th>Base de Datos</th><th>Público Objetivo</th></tr></thead><tbody><tr><td><strong>Foodpairing.com</strong></td><td>Árboles aromáticos, análisis profesional</td><td>1,300+ ingredientes</td><td>Chefs profesionales</td></tr><tr><td><strong>FlavorDB</strong></td><td>Base académica, investigación</td><td>25,000+ compuestos</td><td>Investigadores</td></tr><tr><td><strong>AI Chef Pro Food Pairing</strong></td><td>IA generativa, aplicación práctica</td><td>20,000+ combinaciones</td><td>Cocina profesional</td></tr><tr><td><strong>McCormick Flavor Forecast</strong></td><td>Tendencias, aplicación comercial</td><td>500+ perfiles</td><td>Industria alimentaria</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Características Principales</th><th>Base de Datos</th><th>Público Objetivo</th></tr></thead><tbody><tr><td><strong>Foodpairing.com</strong></td><td>Árboles aromáticos, análisis profesional</td><td>1,300+ ingredientes</td><td>Chefs profesionales</td></tr><tr><td><strong>FlavorDB</strong></td><td>Base académica, investigación</td><td>25,000+ compuestos</td><td>Investigadores</td></tr><tr><td><strong>AI Chef Pro Food Pairing</strong></td><td>IA generativa, aplicación práctica</td><td>20,000+ combinaciones</td><td>Cocina profesional</td></tr><tr><td><strong>McCormick Flavor Forecast</strong></td><td>Tendencias, aplicación comercial</td><td>500+ perfiles</td><td>Industria alimentaria</td></tr></tbody></table></div></figure>
 
 
 
@@ -542,7 +542,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Desafío</th><th>Solución Food Pairing</th><th>Resultado</th></tr></thead><tbody><tr><td>Menu único para todos</td><td>Base común + módulos compatibles</td><td>95% satisfacción</td></tr><tr><td>Costes elevados</td><td>Sustitutos científicamente validados</td><td>Reducción 18% costes</td></tr><tr><td>Complejidad operativa</td><td>Preparaciones modulares</td><td>Simplificación 40%</td></tr><tr><td>Riesgo de alergias</td><td>Análisis preventivo exhaustivo</td><td>Cero incidentes</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Desafío</th><th>Solución Food Pairing</th><th>Resultado</th></tr></thead><tbody><tr><td>Menu único para todos</td><td>Base común + módulos compatibles</td><td>95% satisfacción</td></tr><tr><td>Costes elevados</td><td>Sustitutos científicamente validados</td><td>Reducción 18% costes</td></tr><tr><td>Complejidad operativa</td><td>Preparaciones modulares</td><td>Simplificación 40%</td></tr><tr><td>Riesgo de alergias</td><td>Análisis preventivo exhaustivo</td><td>Cero incidentes</td></tr></tbody></table></div></figure>
 
 
 
@@ -648,7 +648,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tecnología</th><th>Aplicación en Food Pairing</th><th>Beneficios</th><th>Disponibilidad</th></tr></thead><tbody><tr><td><strong>Nanosensores</strong></td><td>Análisis molecular en tiempo real</td><td>Precisión extrema</td><td>2025-2027</td></tr><tr><td><strong>Realidad Aumentada</strong></td><td>Visualización de compatibilidades</td><td>Experiencia inmersiva</td><td>Disponible</td></tr><tr><td><strong>Blockchain</strong></td><td>Trazabilidad de análisis</td><td>Transparencia total</td><td>En desarrollo</td></tr><tr><td><strong>Computación Cuántica</strong></td><td>Modelado molecular avanzado</td><td>Simulaciones complejas</td><td>2028-2030</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tecnología</th><th>Aplicación en Food Pairing</th><th>Beneficios</th><th>Disponibilidad</th></tr></thead><tbody><tr><td><strong>Nanosensores</strong></td><td>Análisis molecular en tiempo real</td><td>Precisión extrema</td><td>2025-2027</td></tr><tr><td><strong>Realidad Aumentada</strong></td><td>Visualización de compatibilidades</td><td>Experiencia inmersiva</td><td>Disponible</td></tr><tr><td><strong>Blockchain</strong></td><td>Trazabilidad de análisis</td><td>Transparencia total</td><td>En desarrollo</td></tr><tr><td><strong>Computación Cuántica</strong></td><td>Modelado molecular avanzado</td><td>Simulaciones complejas</td><td>2028-2030</td></tr></tbody></table></div></figure>
 
 
 
@@ -752,7 +752,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Recomendada</th><th>Presupuesto Mensual</th><th>Características Clave</th></tr></thead><tbody><tr><td>Restaurante Independiente</td><td>AI Chef Pro &#8211; Plan Pro</td><td>10€</td><td>Food Pairing AI + Recetarios</td></tr><tr><td>Grupo Gastronómico</td><td>AI Chef Pro &#8211; Plan Premium Pro</td><td>25€</td><td>Análisis avanzado + Gestión</td></tr><tr><td>Empresa de Catering</td><td>AI Chef Pro &#8211; Plan Premium Plus</td><td>50€</td><td>Usos ilimitados + Soporte</td></tr><tr><td>Escuela de Hostelería</td><td>Licencia Educativa</td><td>Consultar</td><td>Acceso completo + Formación</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Recomendada</th><th>Presupuesto Mensual</th><th>Características Clave</th></tr></thead><tbody><tr><td>Restaurante Independiente</td><td>AI Chef Pro &#8211; Plan Pro</td><td>10€</td><td>Food Pairing AI + Recetarios</td></tr><tr><td>Grupo Gastronómico</td><td>AI Chef Pro &#8211; Plan Premium Pro</td><td>25€</td><td>Análisis avanzado + Gestión</td></tr><tr><td>Empresa de Catering</td><td>AI Chef Pro &#8211; Plan Premium Plus</td><td>50€</td><td>Usos ilimitados + Soporte</td></tr><tr><td>Escuela de Hostelería</td><td>Licencia Educativa</td><td>Consultar</td><td>Acceso completo + Formación</td></tr></tbody></table></div></figure>
 
 
 
@@ -892,7 +892,7 @@ wpId: 1689
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Error</th><th>Impacto</th><th>Solución</th></tr></thead><tbody><tr><td><strong>Implementación abrupta</strong></td><td>Resistencia del equipo</td><td>Introducción gradual con formación</td></tr><tr><td><strong>Ignorar el contexto cultural</strong></td><td>Platos que no conectan</td><td>Adaptar a preferencias locales</td></tr><tr><td><strong>Depender solo de la tecnología</strong></td><td>Falta de intuición culinaria</td><td>Combinar ciencia con experiencia</td></tr><tr><td><strong>No validar sensorialmente</strong></td><td>Teoría sin práctica</td><td>Catas y testeos sistemáticos</td></tr><tr><td><strong>Subestimar costes operativos</strong></td><td>Inviabilidad económica</td><td>Análisis de viabilidad previo</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Error</th><th>Impacto</th><th>Solución</th></tr></thead><tbody><tr><td><strong>Implementación abrupta</strong></td><td>Resistencia del equipo</td><td>Introducción gradual con formación</td></tr><tr><td><strong>Ignorar el contexto cultural</strong></td><td>Platos que no conectan</td><td>Adaptar a preferencias locales</td></tr><tr><td><strong>Depender solo de la tecnología</strong></td><td>Falta de intuición culinaria</td><td>Combinar ciencia con experiencia</td></tr><tr><td><strong>No validar sensorialmente</strong></td><td>Teoría sin práctica</td><td>Catas y testeos sistemáticos</td></tr><tr><td><strong>Subestimar costes operativos</strong></td><td>Inviabilidad económica</td><td>Análisis de viabilidad previo</td></tr></tbody></table></div></figure>
 
 
 

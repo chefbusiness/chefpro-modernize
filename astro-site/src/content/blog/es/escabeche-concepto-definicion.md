@@ -23,7 +23,7 @@ wpId: 3224
 <li><strong>Intensificación:</strong> Los sabores mejoran tras 24-48 horas de maceración.</li>
 </ul>
 <h3>Escabeche vs Ceviche: Diferencias Clave</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -53,7 +53,7 @@ wpId: 3224
 <td style="padding: 12px; border: 1px solid #ddd;">Perú (con influencia española)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/escabeche-ingredientes.jpg" alt="Ingredientes para escabeche: vinagre, laurel, especias, verduras" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Historia y Origen</h2>
 <h3>Raíces Persas y Árabes</h3>
@@ -115,7 +115,7 @@ wpId: 3224
 <p><strong>Paso 5: Montaje</strong><br /> &#8211; Colocar el alimento cocido en recipiente de vidrio o cerámica.<br /> &#8211; Verter el sofrito caliente con todo su aceite y vinagre.<br /> &#8211; Asegurar que el alimento quede cubierto por el líquido.</p>
 <p><strong>Paso 6: Maceración</strong><br /> &#8211; Dejar enfriar a temperatura ambiente.<br /> &#8211; Refrigerar mínimo 24 horas antes de consumir.<br /> &#8211; Mejor sabor entre 48 horas y 1 semana.</p>
 <h2>Variedades Internacionales</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">País</th>
@@ -150,7 +150,7 @@ wpId: 3224
 <td style="padding: 12px; border: 1px solid #ddd;">Dulce-ácido, pasas, pimiento rojo</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Preguntas Frecuentes</h2>
 <p><strong>¿Cuánto dura el escabeche?</strong><br /> Refrigerado y bien cubierto de líquido: 1-2 semanas. Los sabores mejoran tras 48 horas y se mantienen óptimos durante 5-7 días.</p>
 <p><strong>¿Se puede congelar el escabeche?</strong><br /> No recomendado. El vinagre y las verduras cambian de textura al descongelar. Mejor consumir fresco.</p>

@@ -56,7 +56,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>ChefGPT (chefgpt.xyz)</th><th>ChatGPT para cocina</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Especialización culinaria</td><td>Media-Alta</td><td>Baja</td><td>Muy Alta</td></tr><tr><td>Idioma nativo español</td><td>Traducción automática</td><td>Buena</td><td>Nativo profesional</td></tr><tr><td>Herramientas profesionales</td><td>Limitadas</td><td>Ninguna</td><td>55+ especializadas</td></tr><tr><td>Cálculo de mermas</td><td>No disponible</td><td>Básico</td><td>Profesional (Mermas GenCal)</td></tr><tr><td>Gestión de alérgenos</td><td>Básica</td><td>Básica</td><td>Profesional (ID Alérgenos)</td></tr><tr><td><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> científico</td><td>No disponible</td><td>Limitado</td><td>Avanzado (Food Pairing AI)</td></tr><tr><td>Soporte en español</td><td>Limitado</td><td>General</td><td>Especializado hostelería</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>ChefGPT (chefgpt.xyz)</th><th>ChatGPT para cocina</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Especialización culinaria</td><td>Media-Alta</td><td>Baja</td><td>Muy Alta</td></tr><tr><td>Idioma nativo español</td><td>Traducción automática</td><td>Buena</td><td>Nativo profesional</td></tr><tr><td>Herramientas profesionales</td><td>Limitadas</td><td>Ninguna</td><td>55+ especializadas</td></tr><tr><td>Cálculo de mermas</td><td>No disponible</td><td>Básico</td><td>Profesional (Mermas GenCal)</td></tr><tr><td>Gestión de alérgenos</td><td>Básica</td><td>Básica</td><td>Profesional (ID Alérgenos)</td></tr><tr><td><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> científico</td><td>No disponible</td><td>Limitado</td><td>Avanzado (Food Pairing AI)</td></tr><tr><td>Soporte en español</td><td>Limitado</td><td>General</td><td>Especializado hostelería</td></tr></tbody></table></div></figure>
 
 
 
@@ -182,7 +182,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Ingrediente/Técnica</th><th>Reconocimiento ChefGPT</th><th>Reconocimiento AI Chef Pro</th></tr></thead><tbody><tr><td>Ají amarillo peruano</td><td>Parcial (confunde con otros ajíes)</td><td>Completo + sustitutos regionales</td></tr><tr><td>Sofreír vs Rehogar</td><td>No diferencia técnicamente</td><td>Diferenciación técnica precisa</td></tr><tr><td>Jamón ibérico (bellota/cebo)</td><td>Genérico</td><td>Diferenciación por categorías</td></tr><tr><td>Punto de socarrat</td><td>Desconoce el término</td><td>Reconoce y describe técnica</td></tr><tr><td>Mole poblano tradicional</td><td>Versión simplificada</td><td>Receta auténtica completa</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente/Técnica</th><th>Reconocimiento ChefGPT</th><th>Reconocimiento AI Chef Pro</th></tr></thead><tbody><tr><td>Ají amarillo peruano</td><td>Parcial (confunde con otros ajíes)</td><td>Completo + sustitutos regionales</td></tr><tr><td>Sofreír vs Rehogar</td><td>No diferencia técnicamente</td><td>Diferenciación técnica precisa</td></tr><tr><td>Jamón ibérico (bellota/cebo)</td><td>Genérico</td><td>Diferenciación por categorías</td></tr><tr><td>Punto de socarrat</td><td>Desconoce el término</td><td>Reconoce y describe técnica</td></tr><tr><td>Mole poblano tradicional</td><td>Versión simplificada</td><td>Receta auténtica completa</td></tr></tbody></table></div></figure>
 
 
 
@@ -315,7 +315,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Región</th><th>Cocinas Disponibles</th></tr></thead><tbody><tr><td>Europa</td><td>Española, Francesa, Italiana, Alemana, Belga, Británica, Griega, Portuguesa, Países Bajos, Suiza, Turca</td></tr><tr><td>Latinoamérica</td><td>Mexicana, Argentina, Chilena, Colombiana, Brasileña, Peruana, Ecuatoriana, Dominicana, Jamaicana, Paraguaya, Venezolana</td></tr><tr><td>Asia</td><td>Japonesa, China, India, Tailandesa</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Región</th><th>Cocinas Disponibles</th></tr></thead><tbody><tr><td>Europa</td><td>Española, Francesa, Italiana, Alemana, Belga, Británica, Griega, Portuguesa, Países Bajos, Suiza, Turca</td></tr><tr><td>Latinoamérica</td><td>Mexicana, Argentina, Chilena, Colombiana, Brasileña, Peruana, Ecuatoriana, Dominicana, Jamaicana, Paraguaya, Venezolana</td></tr><tr><td>Asia</td><td>Japonesa, China, India, Tailandesa</td></tr></tbody></table></div></figure>
 
 
 
@@ -347,7 +347,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Funcionalidad</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Generación de recetas</td><td>✅ Básica</td><td>✅ Profesional con técnicas detalladas</td></tr><tr><td>Planificación de menús</td><td>✅ Semanal básico</td><td>✅ Estratégico para restaurantes</td></tr><tr><td>Control de alérgenos</td><td>⚠️ Básico</td><td>✅ Profesional según AESAN</td></tr><tr><td>Cálculo de mermas</td><td>❌ No disponible</td><td>✅ Mermas GenCal especializado</td></tr><tr><td>Food Pairing científico</td><td>❌ No disponible</td><td>✅ Basado en compuestos aromáticos</td></tr><tr><td>Gestión de catering</td><td>❌ No disponible</td><td>✅ Catering AI+ completo</td></tr><tr><td>Coaching para brigadas</td><td>❌ No disponible</td><td>✅ Mental Coach especializado</td></tr><tr><td>Recetarios regionales</td><td>⚠️ Genéricos</td><td>✅ 20+ cocinas especializadas</td></tr><tr><td>Generación de imágenes</td><td>✅ Disponible</td><td>✅ Usamos los mejores modelos: Nano Banana Pro, Flux 2, Qwen, Seedream entrenados para gastronomía</td></tr><tr><td>Contenido para RRSS</td><td>❌ No disponible</td><td>✅ InstaFlow AI Pro, Gastro Calendar</td></tr><tr><td>SEO Local para restaurantes</td><td>❌ No disponible</td><td>✅ Menu Plate Local SEO</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Funcionalidad</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Generación de recetas</td><td>✅ Básica</td><td>✅ Profesional con técnicas detalladas</td></tr><tr><td>Planificación de menús</td><td>✅ Semanal básico</td><td>✅ Estratégico para restaurantes</td></tr><tr><td>Control de alérgenos</td><td>⚠️ Básico</td><td>✅ Profesional según AESAN</td></tr><tr><td>Cálculo de mermas</td><td>❌ No disponible</td><td>✅ Mermas GenCal especializado</td></tr><tr><td>Food Pairing científico</td><td>❌ No disponible</td><td>✅ Basado en compuestos aromáticos</td></tr><tr><td>Gestión de catering</td><td>❌ No disponible</td><td>✅ Catering AI+ completo</td></tr><tr><td>Coaching para brigadas</td><td>❌ No disponible</td><td>✅ Mental Coach especializado</td></tr><tr><td>Recetarios regionales</td><td>⚠️ Genéricos</td><td>✅ 20+ cocinas especializadas</td></tr><tr><td>Generación de imágenes</td><td>✅ Disponible</td><td>✅ Usamos los mejores modelos: Nano Banana Pro, Flux 2, Qwen, Seedream entrenados para gastronomía</td></tr><tr><td>Contenido para RRSS</td><td>❌ No disponible</td><td>✅ InstaFlow AI Pro, Gastro Calendar</td></tr><tr><td>SEO Local para restaurantes</td><td>❌ No disponible</td><td>✅ Menu Plate Local SEO</td></tr></tbody></table></div></figure>
 
 
 
@@ -360,7 +360,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Gratuito</td><td>10 recetas/mes, muy limitado</td><td>Acceso a herramientas básicas reales</td></tr><tr><td>Básico/Pro</td><td>~$2.99/mes (límites)</td><td>25€/mes (Premium Pro)</td></tr><tr><td>Premium</td><td>~$29.99/año</td><td>50€/mes (Premium Plus ilimitado)</td></tr><tr><td>Anual</td><td>$29.99/año</td><td>500€/año (mejor valor)</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Gratuito</td><td>10 recetas/mes, muy limitado</td><td>Acceso a herramientas básicas reales</td></tr><tr><td>Básico/Pro</td><td>~$2.99/mes (límites)</td><td>25€/mes (Premium Pro)</td></tr><tr><td>Premium</td><td>~$29.99/año</td><td>50€/mes (Premium Plus ilimitado)</td></tr><tr><td>Anual</td><td>$29.99/año</td><td>500€/año (mejor valor)</td></tr></tbody></table></div></figure>
 
 
 
@@ -376,7 +376,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Ahorro en tiempo de planificación</td><td>20-30%</td><td>60-70%</td></tr><tr><td>Reducción de desperdicios</td><td>No medible</td><td>25-35%</td></tr><tr><td>Incremento en propuestas creativas</td><td>Moderado</td><td>40%+</td></tr><tr><td>ROI estimado (6 meses)</td><td>No demostrable</td><td>300-1000%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>ChefGPT</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td>Ahorro en tiempo de planificación</td><td>20-30%</td><td>60-70%</td></tr><tr><td>Reducción de desperdicios</td><td>No medible</td><td>25-35%</td></tr><tr><td>Incremento en propuestas creativas</td><td>Moderado</td><td>40%+</td></tr><tr><td>ROI estimado (6 meses)</td><td>No demostrable</td><td>300-1000%</td></tr></tbody></table></div></figure>
 
 
 
@@ -610,7 +610,7 @@ wpId: 2552
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Si eres&#8230;</th><th>Empieza con&#8230;</th></tr></thead><tbody><tr><td>Chef de restaurante gastronómico</td><td>Cocina Creativa + Food Pairing AI</td></tr><tr><td>Jefe de cocina de colectividades</td><td>Mermas GenCal + ID Alérgenos</td></tr><tr><td>Propietario de catering</td><td>Catering AI+ + Calcula Pax</td></tr><tr><td>Chef pastelero</td><td>Pastelería Creativa + Chocolatería Creativa</td></tr><tr><td>Chef ejecutivo</td><td>Mental Coach + Gastro Lexicum</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Si eres&#8230;</th><th>Empieza con&#8230;</th></tr></thead><tbody><tr><td>Chef de restaurante gastronómico</td><td>Cocina Creativa + Food Pairing AI</td></tr><tr><td>Jefe de cocina de colectividades</td><td>Mermas GenCal + ID Alérgenos</td></tr><tr><td>Propietario de catering</td><td>Catering AI+ + Calcula Pax</td></tr><tr><td>Chef pastelero</td><td>Pastelería Creativa + Chocolatería Creativa</td></tr><tr><td>Chef ejecutivo</td><td>Mental Coach + Gastro Lexicum</td></tr></tbody></table></div></figure>
 
 
 

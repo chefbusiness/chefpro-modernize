@@ -31,7 +31,7 @@ wpId: 3171
 <p>No todos los alcoholes son igual de adecuados para flambear. La clave está en el <strong>porcentaje de alcohol (graduación)</strong> y en los compuestos aromáticos que aportarán al plato final.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/flambeado-bebidas.jpg" alt="Botellas de coñac y brandy con ingredientes para preparación de flambeado" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h3>Bebidas Recomendadas por Tipo de Plato</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Bebida</th>
@@ -72,7 +72,7 @@ wpId: 3171
 <td style="padding: 12px; border: 1px solid #ddd;">Crêpe Suzette, postres</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Técnica Paso a Paso: Cómo Flambear Correctamente</h2>
 <h3>Paso 1: Preparar el Alimento</h3>
 <p>El alimento debe estar <strong>previamente cocinado y caliente</strong>. El flambeado nunca se hace con ingredientes fríos, ya que el shock térmico puede impedir que el alcohol se encienda correctamente.</p>

@@ -72,7 +72,7 @@ wpId: 2644
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Merma Tradicional</th><th class="has-text-align-left" data-align="left">Merma Optimizada con IA</th><th class="has-text-align-left" data-align="left">Ahorro Potencial</th></tr></thead><tbody><tr><td>Pescado blanco (lubina)</td><td>45%</td><td>32%</td><td>13%</td></tr><tr><td>Verduras de hoja (espinacas)</td><td>30%</td><td>18%</td><td>12%</td></tr><tr><td>Cítricos (naranja)</td><td>40%</td><td>25%</td><td>15%</td></tr><tr><td>Carnes rojas (lomo)</td><td>25%</td><td>15%</td><td>10%</td></tr><tr><td>Raíces (zanahoria)</td><td>20%</td><td>8%</td><td>12%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Merma Tradicional</th><th class="has-text-align-left" data-align="left">Merma Optimizada con IA</th><th class="has-text-align-left" data-align="left">Ahorro Potencial</th></tr></thead><tbody><tr><td>Pescado blanco (lubina)</td><td>45%</td><td>32%</td><td>13%</td></tr><tr><td>Verduras de hoja (espinacas)</td><td>30%</td><td>18%</td><td>12%</td></tr><tr><td>Cítricos (naranja)</td><td>40%</td><td>25%</td><td>15%</td></tr><tr><td>Carnes rojas (lomo)</td><td>25%</td><td>15%</td><td>10%</td></tr><tr><td>Raíces (zanahoria)</td><td>20%</td><td>8%</td><td>12%</td></tr></tbody></table></div></figure>
 
 
 
@@ -125,7 +125,7 @@ wpId: 2644
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tipo de Establecimiento</th><th class="has-text-align-left" data-align="left">Ratio Cocina</th><th class="has-text-align-left" data-align="left">Ratio Sala</th><th class="has-text-align-left" data-align="left">Ratio Bar</th><th class="has-text-align-left" data-align="left">Labor Cost Objetivo</th></tr></thead><tbody><tr><td>Gastrobar (55 pax)</td><td>1:15</td><td>1:12</td><td>1:20</td><td>28-30%</td></tr><tr><td>Restaurante casual</td><td>1:20</td><td>1:15</td><td>N/A</td><td>25-28%</td></tr><tr><td>Fine dining</td><td>1:8</td><td>1:6</td><td>1:15</td><td>32-35%</td></tr><tr><td>Fast casual</td><td>1:25</td><td>1:30</td><td>N/A</td><td>22-25%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tipo de Establecimiento</th><th class="has-text-align-left" data-align="left">Ratio Cocina</th><th class="has-text-align-left" data-align="left">Ratio Sala</th><th class="has-text-align-left" data-align="left">Ratio Bar</th><th class="has-text-align-left" data-align="left">Labor Cost Objetivo</th></tr></thead><tbody><tr><td>Gastrobar (55 pax)</td><td>1:15</td><td>1:12</td><td>1:20</td><td>28-30%</td></tr><tr><td>Restaurante casual</td><td>1:20</td><td>1:15</td><td>N/A</td><td>25-28%</td></tr><tr><td>Fine dining</td><td>1:8</td><td>1:6</td><td>1:15</td><td>32-35%</td></tr><tr><td>Fast casual</td><td>1:25</td><td>1:30</td><td>N/A</td><td>22-25%</td></tr></tbody></table></div></figure>
 
 
 
@@ -360,7 +360,7 @@ wpId: 2644
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">KPI</th><th class="has-text-align-left" data-align="left">Fórmula</th><th class="has-text-align-left" data-align="left">Objetivo Saludable</th><th class="has-text-align-left" data-align="left">Señal de Alerta</th></tr></thead><tbody><tr><td>Food Cost</td><td>(Coste alimentos / Ventas comida) × 100</td><td>28-32%</td><td>&gt;35%</td></tr><tr><td>Labor Cost</td><td>(Coste personal / Ventas totales) × 100</td><td>25-30%</td><td>&gt;35%</td></tr><tr><td>Prime Cost</td><td>Food Cost + Labor Cost</td><td>55-62%</td><td>&gt;65%</td></tr><tr><td>GOP</td><td>Ingresos &#8211; Costes operativos</td><td>15-20% de ventas</td><td>&lt;10%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">KPI</th><th class="has-text-align-left" data-align="left">Fórmula</th><th class="has-text-align-left" data-align="left">Objetivo Saludable</th><th class="has-text-align-left" data-align="left">Señal de Alerta</th></tr></thead><tbody><tr><td>Food Cost</td><td>(Coste alimentos / Ventas comida) × 100</td><td>28-32%</td><td>&gt;35%</td></tr><tr><td>Labor Cost</td><td>(Coste personal / Ventas totales) × 100</td><td>25-30%</td><td>&gt;35%</td></tr><tr><td>Prime Cost</td><td>Food Cost + Labor Cost</td><td>55-62%</td><td>&gt;65%</td></tr><tr><td>GOP</td><td>Ingresos &#8211; Costes operativos</td><td>15-20% de ventas</td><td>&lt;10%</td></tr></tbody></table></div></figure>
 
 
 
@@ -565,7 +565,7 @@ wpId: 2644
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Categoría</th><th class="has-text-align-left" data-align="left">KPI</th><th class="has-text-align-left" data-align="left">Frecuencia de Revisión</th><th class="has-text-align-left" data-align="left">Herramienta</th></tr></thead><tbody><tr><td>Ventas</td><td>Covers, Ticket medio, Mix de ventas</td><td>Diaria</td><td>TPV + Excel</td></tr><tr><td>Costes</td><td>Food cost, Labor cost, Prime cost</td><td>Semanal</td><td>Mermas GenCal + TPV</td></tr><tr><td>Eficiencia</td><td>RevPASH, Rotación de mesas</td><td>Semanal</td><td>Sistema de reservas</td></tr><tr><td>Satisfacción</td><td>NPS, Valoración media, Tasa de retorno</td><td>Mensual</td><td>Google Business + CRM</td></tr><tr><td>Equipo</td><td>Rotación, Absentismo, Productividad</td><td>Mensual</td><td>Software RRHH</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Categoría</th><th class="has-text-align-left" data-align="left">KPI</th><th class="has-text-align-left" data-align="left">Frecuencia de Revisión</th><th class="has-text-align-left" data-align="left">Herramienta</th></tr></thead><tbody><tr><td>Ventas</td><td>Covers, Ticket medio, Mix de ventas</td><td>Diaria</td><td>TPV + Excel</td></tr><tr><td>Costes</td><td>Food cost, Labor cost, Prime cost</td><td>Semanal</td><td>Mermas GenCal + TPV</td></tr><tr><td>Eficiencia</td><td>RevPASH, Rotación de mesas</td><td>Semanal</td><td>Sistema de reservas</td></tr><tr><td>Satisfacción</td><td>NPS, Valoración media, Tasa de retorno</td><td>Mensual</td><td>Google Business + CRM</td></tr><tr><td>Equipo</td><td>Rotación, Absentismo, Productividad</td><td>Mensual</td><td>Software RRHH</td></tr></tbody></table></div></figure>
 
 
 

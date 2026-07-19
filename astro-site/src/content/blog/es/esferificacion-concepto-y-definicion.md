@@ -108,7 +108,7 @@ wpId: 2705
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Función</th><th>Forma</th></tr><tr><td>Alginato sódico</td><td>Gelificación</td><td>Polvo</td></tr><tr><td>Cloruro cálcico</td><td>Baño de calcio</td><td>Polvo o líquido</td></tr><tr><td>Gluconato cálcico</td><td>Calcio para inversa</td><td>Polvo</td></tr><tr><td>Agua destilada</td><td>Sin calcio residual</td><td>Líquido</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Función</th><th>Forma</th></tr><tr><td>Alginato sódico</td><td>Gelificación</td><td>Polvo</td></tr><tr><td>Cloruro cálcico</td><td>Baño de calcio</td><td>Polvo o líquido</td></tr><tr><td>Gluconato cálcico</td><td>Calcio para inversa</td><td>Polvo</td></tr><tr><td>Agua destilada</td><td>Sin calcio residual</td><td>Líquido</td></tr></tbody></table></div></figure>
 
 
 
@@ -199,7 +199,7 @@ wpId: 2705
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr><tr><td>No forma esfera</td><td>Alginato insuficiente</td><td>Aumentar concentración</td></tr><tr><td>Membrana muy gruesa</td><td>Tiempo excesivo</td><td>Reducir tiempo de baño</td></tr><tr><td>Sabor metálico</td><td>Cloruro cálcico</td><td>Usar gluconato cálcico</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Problema</th><th>Causa</th><th>Solución</th></tr><tr><td>No forma esfera</td><td>Alginato insuficiente</td><td>Aumentar concentración</td></tr><tr><td>Membrana muy gruesa</td><td>Tiempo excesivo</td><td>Reducir tiempo de baño</td></tr><tr><td>Sabor metálico</td><td>Cloruro cálcico</td><td>Usar gluconato cálcico</td></tr></tbody></table></div></figure>
 
 
 
@@ -207,7 +207,7 @@ wpId: 2705
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Técnica de gelificación esférica</td></tr><tr><td><strong>Reacción</strong></td><td>Alginato + calcio = gel</td></tr><tr><td><strong>Tipos</strong></td><td>Básica, inversa, fría</td></tr><tr><td><strong>Uso</strong></td><td>Caviar, raviolis líquidos, cócteles</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Técnica de gelificación esférica</td></tr><tr><td><strong>Reacción</strong></td><td>Alginato + calcio = gel</td></tr><tr><td><strong>Tipos</strong></td><td>Básica, inversa, fría</td></tr><tr><td><strong>Uso</strong></td><td>Caviar, raviolis líquidos, cócteles</td></tr></tbody></table></div></figure>
 
 
 

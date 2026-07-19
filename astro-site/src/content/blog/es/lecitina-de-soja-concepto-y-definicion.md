@@ -229,7 +229,7 @@ wpId: 2685
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aplicación</th><th class="has-text-align-left" data-align="left">Concentración</th></tr></thead><tbody><tr><td>Espumas ligeras</td><td>0,3% &#8211; 0,5% (3-5 g por litro)</td></tr><tr><td>Emulsiones estables</td><td>0,5% &#8211; 1% (5-10 g por litro)</td></tr><tr><td>Mejora de texturas</td><td>0,2% &#8211; 0,5% (2-5 g por kg)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aplicación</th><th class="has-text-align-left" data-align="left">Concentración</th></tr></thead><tbody><tr><td>Espumas ligeras</td><td>0,3% &#8211; 0,5% (3-5 g por litro)</td></tr><tr><td>Emulsiones estables</td><td>0,5% &#8211; 1% (5-10 g por litro)</td></tr><tr><td>Mejora de texturas</td><td>0,2% &#8211; 0,5% (2-5 g por kg)</td></tr></tbody></table></div></figure>
 
 
 

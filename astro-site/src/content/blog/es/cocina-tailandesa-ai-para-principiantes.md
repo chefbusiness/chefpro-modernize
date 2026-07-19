@@ -183,7 +183,7 @@ wpId: 2666
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Curry</th><th>Ingrediente Principal</th><th>Nivel de Picante (Scoville)</th><th>Tiempo de Cocción con Leche de Coco</th></tr></thead><tbody><tr><td>Verde (Gaeng Keow Wan)</td><td>Chiles verdes + albahaca thai</td><td>30,000-50,000</td><td>15-18 minutos</td></tr><tr><td>Rojo (Gaeng Phed)</td><td>Chiles rojos secos + galanga</td><td>15,000-30,000</td><td>20-25 minutos</td></tr><tr><td>Amarillo (Gaeng Garee)</td><td>Cúrcuma + curry en polvo</td><td>5,000-15,000</td><td>25-30 minutos</td></tr><tr><td>Massaman</td><td>Cacahuetes + canela</td><td>1,000-5,000</td><td>35-40 minutos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Curry</th><th>Ingrediente Principal</th><th>Nivel de Picante (Scoville)</th><th>Tiempo de Cocción con Leche de Coco</th></tr></thead><tbody><tr><td>Verde (Gaeng Keow Wan)</td><td>Chiles verdes + albahaca thai</td><td>30,000-50,000</td><td>15-18 minutos</td></tr><tr><td>Rojo (Gaeng Phed)</td><td>Chiles rojos secos + galanga</td><td>15,000-30,000</td><td>20-25 minutos</td></tr><tr><td>Amarillo (Gaeng Garee)</td><td>Cúrcuma + curry en polvo</td><td>5,000-15,000</td><td>25-30 minutos</td></tr><tr><td>Massaman</td><td>Cacahuetes + canela</td><td>1,000-5,000</td><td>35-40 minutos</td></tr></tbody></table></div></figure>
 
 
 
@@ -454,7 +454,7 @@ wpId: 2666
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Fideo</th><th>Grosor</th><th>Tiempo de Remojo</th><th>Temperatura Agua</th><th>Tiempo en Wok</th></tr></thead><tbody><tr><td>Sen Yai (ancho)</td><td>10mm</td><td>25-30 min</td><td>45-50°C</td><td>2-3 min</td></tr><tr><td>Sen Lek (mediano)</td><td>5mm</td><td>20-25 min</td><td>40-45°C</td><td>1.5-2 min</td></tr><tr><td>Sen Mee (fino)</td><td>1-2mm</td><td>10-15 min</td><td>35-40°C</td><td>45-60 seg</td></tr><tr><td>Khanom Jeen (fermentado)</td><td>2mm</td><td>No requiere</td><td>Hervir 2 min</td><td>No aplicable</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Fideo</th><th>Grosor</th><th>Tiempo de Remojo</th><th>Temperatura Agua</th><th>Tiempo en Wok</th></tr></thead><tbody><tr><td>Sen Yai (ancho)</td><td>10mm</td><td>25-30 min</td><td>45-50°C</td><td>2-3 min</td></tr><tr><td>Sen Lek (mediano)</td><td>5mm</td><td>20-25 min</td><td>40-45°C</td><td>1.5-2 min</td></tr><tr><td>Sen Mee (fino)</td><td>1-2mm</td><td>10-15 min</td><td>35-40°C</td><td>45-60 seg</td></tr><tr><td>Khanom Jeen (fermentado)</td><td>2mm</td><td>No requiere</td><td>Hervir 2 min</td><td>No aplicable</td></tr></tbody></table></div></figure>
 
 
 
@@ -634,7 +634,7 @@ wpId: 2666
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Hierba</th><th>Temperatura Máxima</th><th>Tiempo de Exposición</th><th>Método de Corte</th></tr></thead><tbody><tr><td>Albahaca Thai</td><td>70°C</td><td>30-45 segundos</td><td>Rasgado manual</td></tr><tr><td>Cilantro</td><td>65°C</td><td>20-30 segundos</td><td>Picado grueso</td></tr><tr><td>Menta</td><td>60°C</td><td>15-20 segundos</td><td>Hojas enteras</td></tr><tr><td>Cebollino ajo</td><td>75°C</td><td>45-60 segundos</td><td>Corte diagonal</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Hierba</th><th>Temperatura Máxima</th><th>Tiempo de Exposición</th><th>Método de Corte</th></tr></thead><tbody><tr><td>Albahaca Thai</td><td>70°C</td><td>30-45 segundos</td><td>Rasgado manual</td></tr><tr><td>Cilantro</td><td>65°C</td><td>20-30 segundos</td><td>Picado grueso</td></tr><tr><td>Menta</td><td>60°C</td><td>15-20 segundos</td><td>Hojas enteras</td></tr><tr><td>Cebollino ajo</td><td>75°C</td><td>45-60 segundos</td><td>Corte diagonal</td></tr></tbody></table></div></figure>
 
 
 
@@ -810,7 +810,7 @@ wpId: 2666
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Plan 25€/mes</th><th>Plan 50€/mes</th><th>Plan 95€/mes</th></tr></thead><tbody><tr><td>Acceso a Cocina Tailandesa AI</td><td>✓ Completo</td><td>✓ Completo</td><td>✓ Completo</td></tr><tr><td>Recetas tailandesas disponibles</td><td>200 recetas</td><td>500 recetas</td><td>Ilimitadas</td></tr><tr><td>Generación de recetas personalizadas/mes</td><td>20 recetas</td><td>100 recetas</td><td>Ilimitadas</td></tr><tr><td>Food Pairing AI</td><td>50 consultas/mes</td><td>Ilimitado</td><td>Ilimitado + análisis avanzado</td></tr><tr><td>Mermas GenCal</td><td>✓ Básico</td><td>✓ Avanzado</td><td>✓ Profesional con informes</td></tr><tr><td>Sustitución de ingredientes tailandeses</td><td>✓ Básica</td><td>✓ Avanzada</td><td>✓ Con análisis molecular</td></tr><tr><td>Mental Coach AI</td><td>10 sesiones/mes</td><td>Ilimitado</td><td>Ilimitado + seguimiento personalizado</td></tr><tr><td>Ideal para</td><td>Principiantes explorando</td><td>Aprendices comprometidos</td><td>Profesionales y emprendedores</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Plan 25€/mes</th><th>Plan 50€/mes</th><th>Plan 95€/mes</th></tr></thead><tbody><tr><td>Acceso a Cocina Tailandesa AI</td><td>✓ Completo</td><td>✓ Completo</td><td>✓ Completo</td></tr><tr><td>Recetas tailandesas disponibles</td><td>200 recetas</td><td>500 recetas</td><td>Ilimitadas</td></tr><tr><td>Generación de recetas personalizadas/mes</td><td>20 recetas</td><td>100 recetas</td><td>Ilimitadas</td></tr><tr><td>Food Pairing AI</td><td>50 consultas/mes</td><td>Ilimitado</td><td>Ilimitado + análisis avanzado</td></tr><tr><td>Mermas GenCal</td><td>✓ Básico</td><td>✓ Avanzado</td><td>✓ Profesional con informes</td></tr><tr><td>Sustitución de ingredientes tailandeses</td><td>✓ Básica</td><td>✓ Avanzada</td><td>✓ Con análisis molecular</td></tr><tr><td>Mental Coach AI</td><td>10 sesiones/mes</td><td>Ilimitado</td><td>Ilimitado + seguimiento personalizado</td></tr><tr><td>Ideal para</td><td>Principiantes explorando</td><td>Aprendices comprometidos</td><td>Profesionales y emprendedores</td></tr></tbody></table></div></figure>
 
 
 

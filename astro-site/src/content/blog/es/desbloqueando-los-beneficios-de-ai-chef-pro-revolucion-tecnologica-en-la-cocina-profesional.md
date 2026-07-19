@@ -140,7 +140,7 @@ wpId: 1278
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Región</th><th>Recetarios disponibles</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Europa</td><td>Española, Francesa, Británica, Belga, Portuguesa, Griega, Suiza, Turca, Alemana, Países Bajos</td><td>Técnicas clásicas, ingredientes autóctonos, contexto histórico</td></tr><tr><td>Latinoamérica</td><td>Mexicana, Peruana, Argentina, Colombiana, Brasileña, Chilena, Ecuatoriana, Dominicana, Jamaicana, Paraguaya, Venezolana</td><td>Sabores intensos, ingredientes nativos, influencias culturales mestizas</td></tr><tr><td>Asia</td><td>Japonesa, China, Tailandesa, India</td><td>Técnicas milenarias, equilibrio de sabores, presentaciones tradicionales</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Región</th><th>Recetarios disponibles</th><th>Características destacadas</th></tr></thead><tbody><tr><td>Europa</td><td>Española, Francesa, Británica, Belga, Portuguesa, Griega, Suiza, Turca, Alemana, Países Bajos</td><td>Técnicas clásicas, ingredientes autóctonos, contexto histórico</td></tr><tr><td>Latinoamérica</td><td>Mexicana, Peruana, Argentina, Colombiana, Brasileña, Chilena, Ecuatoriana, Dominicana, Jamaicana, Paraguaya, Venezolana</td><td>Sabores intensos, ingredientes nativos, influencias culturales mestizas</td></tr><tr><td>Asia</td><td>Japonesa, China, Tailandesa, India</td><td>Técnicas milenarias, equilibrio de sabores, presentaciones tradicionales</td></tr></tbody></table></div></figure>
 
 
 
@@ -242,7 +242,7 @@ wpId: 1278
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Área de optimización</th><th>Mejora promedio</th><th>Impacto económico anual*</th></tr></thead><tbody><tr><td>Reducción de mermas</td><td>25-30%</td><td>3.600€ &#8211; 10.800€</td></tr><tr><td>Eficiencia en compras</td><td>15-20%</td><td>2.700€ &#8211; 8.100€</td></tr><tr><td>Optimización de carta</td><td>10-15%</td><td>4.800€ &#8211; 14.400€</td></tr><tr><td>Tiempo de desarrollo</td><td>60-70%</td><td>7.200€ &#8211; 21.600€</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Área de optimización</th><th>Mejora promedio</th><th>Impacto económico anual*</th></tr></thead><tbody><tr><td>Reducción de mermas</td><td>25-30%</td><td>3.600€ &#8211; 10.800€</td></tr><tr><td>Eficiencia en compras</td><td>15-20%</td><td>2.700€ &#8211; 8.100€</td></tr><tr><td>Optimización de carta</td><td>10-15%</td><td>4.800€ &#8211; 14.400€</td></tr><tr><td>Tiempo de desarrollo</td><td>60-70%</td><td>7.200€ &#8211; 21.600€</td></tr></tbody></table></div></figure>
 
 
 
@@ -987,7 +987,7 @@ wpId: 1278
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Herramientas GPT genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico especializado</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones en especificidades técnicas</td></tr><tr><td>Análisis de costes y rendimientos</td><td>Cálculos precisos específicos para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Optimización para kitchen management</td><td>Herramientas específicas para operativa profesional</td><td>Sin funciones específicas para la gestión de cocina</td></tr><tr><td>Interfaz adaptada a profesionales</td><td>Diseñada para uso práctico en entornos de cocina</td><td>Interfaz genérica no optimizada para el contexto</td></tr><tr><td>Ecosistema integrado</td><td>Aplicaciones interconectadas para flujo de trabajo completo</td><td>Soluciones aisladas sin integración</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>Herramientas GPT genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico especializado</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones en especificidades técnicas</td></tr><tr><td>Análisis de costes y rendimientos</td><td>Cálculos precisos específicos para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Optimización para kitchen management</td><td>Herramientas específicas para operativa profesional</td><td>Sin funciones específicas para la gestión de cocina</td></tr><tr><td>Interfaz adaptada a profesionales</td><td>Diseñada para uso práctico en entornos de cocina</td><td>Interfaz genérica no optimizada para el contexto</td></tr><tr><td>Ecosistema integrado</td><td>Aplicaciones interconectadas para flujo de trabajo completo</td><td>Soluciones aisladas sin integración</td></tr></tbody></table></div></figure>
 
 
 

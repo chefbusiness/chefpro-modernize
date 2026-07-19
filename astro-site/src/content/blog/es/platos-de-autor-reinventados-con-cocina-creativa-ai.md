@@ -372,7 +372,7 @@ wpId: 2313
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plato</th><th class="has-text-align-left" data-align="left">Técnica Principal</th><th class="has-text-align-left" data-align="left">Tiempo</th><th class="has-text-align-left" data-align="left">Dificultad</th></tr></thead><tbody><tr><td>Tortilla Deconstruida 3.0</td><td>Fermentación + Criogenización</td><td>52h</td><td>Avanzado</td></tr><tr><td>Risotto Molecular</td><td>Esferificación + Aires</td><td>3h</td><td>Intermedio</td></tr><tr><td>Gazpacho de Fresas</td><td>Esferificación + Criogenización</td><td>4h</td><td>Intermedio</td></tr><tr><td>Cochinillo Confitado</td><td>Confitado lento + Texturas</td><td>76h</td><td>Avanzado</td></tr><tr><td>Huevo 63°C</td><td>Sous vide + Espumas</td><td>1.5h</td><td>Básico</td></tr><tr><td>Tatin Salada</td><td>Caramelización + Mi-cuit</td><td>5h</td><td>Avanzado</td></tr><tr><td>Ceviche Nikkei Ahumado</td><td>Ahumado frío + Marinado</td><td>2h</td><td>Intermedio</td></tr><tr><td>Remolacha con Cacao</td><td>Asado + Gelificación</td><td>4h</td><td>Básico</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plato</th><th class="has-text-align-left" data-align="left">Técnica Principal</th><th class="has-text-align-left" data-align="left">Tiempo</th><th class="has-text-align-left" data-align="left">Dificultad</th></tr></thead><tbody><tr><td>Tortilla Deconstruida 3.0</td><td>Fermentación + Criogenización</td><td>52h</td><td>Avanzado</td></tr><tr><td>Risotto Molecular</td><td>Esferificación + Aires</td><td>3h</td><td>Intermedio</td></tr><tr><td>Gazpacho de Fresas</td><td>Esferificación + Criogenización</td><td>4h</td><td>Intermedio</td></tr><tr><td>Cochinillo Confitado</td><td>Confitado lento + Texturas</td><td>76h</td><td>Avanzado</td></tr><tr><td>Huevo 63°C</td><td>Sous vide + Espumas</td><td>1.5h</td><td>Básico</td></tr><tr><td>Tatin Salada</td><td>Caramelización + Mi-cuit</td><td>5h</td><td>Avanzado</td></tr><tr><td>Ceviche Nikkei Ahumado</td><td>Ahumado frío + Marinado</td><td>2h</td><td>Intermedio</td></tr><tr><td>Remolacha con Cacao</td><td>Asado + Gelificación</td><td>4h</td><td>Básico</td></tr></tbody></table></div></figure>
 
 
 
@@ -966,7 +966,7 @@ wpId: 2313
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Postre</th><th class="has-text-align-left" data-align="left">Técnica Destacada</th><th class="has-text-align-left" data-align="left">Elemento Innovador</th><th class="has-text-align-left" data-align="left">Dificultad</th></tr></thead><tbody><tr><td>Tarta Vasca Deconstruida</td><td>Gelificación + Helado</td><td>Helado de Txakolí</td><td>Intermedio</td></tr><tr><td>Coulant de AOVE</td><td>Ganache de aceite</td><td>Corazón de AOVE</td><td>Avanzado</td></tr><tr><td>Helado de Queso Azul</td><td>Equilibrio PAC</td><td>Cabrales en helado</td><td>Avanzado</td></tr><tr><td>Torrija Molecular</td><td>Infusión larga + Espuma</td><td>Espuma caliente</td><td>Intermedio</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Postre</th><th class="has-text-align-left" data-align="left">Técnica Destacada</th><th class="has-text-align-left" data-align="left">Elemento Innovador</th><th class="has-text-align-left" data-align="left">Dificultad</th></tr></thead><tbody><tr><td>Tarta Vasca Deconstruida</td><td>Gelificación + Helado</td><td>Helado de Txakolí</td><td>Intermedio</td></tr><tr><td>Coulant de AOVE</td><td>Ganache de aceite</td><td>Corazón de AOVE</td><td>Avanzado</td></tr><tr><td>Helado de Queso Azul</td><td>Equilibrio PAC</td><td>Cabrales en helado</td><td>Avanzado</td></tr><tr><td>Torrija Molecular</td><td>Infusión larga + Espuma</td><td>Espuma caliente</td><td>Intermedio</td></tr></tbody></table></div></figure>
 
 
 
@@ -1021,7 +1021,7 @@ wpId: 2313
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th><th>Resultado</th></tr></thead><tbody><tr><td>Huevo</td><td>63°C</td><td>45 min</td><td>Yema cremosa</td></tr><tr><td>Solomillo</td><td>54°C</td><td>2h</td><td>Medium rare</td></tr><tr><td>Pulpo</td><td>77°C</td><td>5h</td><td>Tierno</td></tr><tr><td>Verduras</td><td>85°C</td><td>30-45 min</td><td>Al dente</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo</th><th>Resultado</th></tr></thead><tbody><tr><td>Huevo</td><td>63°C</td><td>45 min</td><td>Yema cremosa</td></tr><tr><td>Solomillo</td><td>54°C</td><td>2h</td><td>Medium rare</td></tr><tr><td>Pulpo</td><td>77°C</td><td>5h</td><td>Tierno</td></tr><tr><td>Verduras</td><td>85°C</td><td>30-45 min</td><td>Al dente</td></tr></tbody></table></div></figure>
 
 
 

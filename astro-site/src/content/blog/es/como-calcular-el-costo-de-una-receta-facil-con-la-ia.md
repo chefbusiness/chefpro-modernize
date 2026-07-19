@@ -200,7 +200,7 @@ curry de madras y tartar de gambas con huevo poché de codorniz"</code></pre>
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma promedio</th><th>Peso neto utilizable</th></tr></thead><tbody><tr><td>Calabaza</td><td>10%</td><td>540g de 600g</td></tr><tr><td>Cebolla tierna</td><td>15%</td><td>85g de 100g</td></tr><tr><td>Gambas rojas</td><td>45%</td><td>110g de 200g</td></tr><tr><td>Huevos codorniz</td><td>5%</td><td>95% utilizable</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma promedio</th><th>Peso neto utilizable</th></tr></thead><tbody><tr><td>Calabaza</td><td>10%</td><td>540g de 600g</td></tr><tr><td>Cebolla tierna</td><td>15%</td><td>85g de 100g</td></tr><tr><td>Gambas rojas</td><td>45%</td><td>110g de 200g</td></tr><tr><td>Huevos codorniz</td><td>5%</td><td>95% utilizable</td></tr></tbody></table></div></figure>
 
 
 
@@ -238,7 +238,7 @@ MARGEN BRUTO: 70%</code></pre>
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Método tradicional</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td><strong>Tiempo de cálculo</strong></td><td>4-6 horas</td><td>10 minutos</td></tr><tr><td><strong>Precisión precios</strong></td><td>Manual, desactualizada</td><td>Tiempo real</td></tr><tr><td><strong>Cálculo mermas</strong></td><td>Estimación empírica</td><td>Base de datos científica</td></tr><tr><td><strong>Actualización</strong></td><td>Manual mensual</td><td>Automática diaria</td></tr><tr><td><strong>Errores humanos</strong></td><td>Frecuentes</td><td>Eliminados</td></tr><tr><td><strong>Escalabilidad</strong></td><td>10-20 recetas max</td><td>Ilimitadas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Método tradicional</th><th>AI Chef Pro</th></tr></thead><tbody><tr><td><strong>Tiempo de cálculo</strong></td><td>4-6 horas</td><td>10 minutos</td></tr><tr><td><strong>Precisión precios</strong></td><td>Manual, desactualizada</td><td>Tiempo real</td></tr><tr><td><strong>Cálculo mermas</strong></td><td>Estimación empírica</td><td>Base de datos científica</td></tr><tr><td><strong>Actualización</strong></td><td>Manual mensual</td><td>Automática diaria</td></tr><tr><td><strong>Errores humanos</strong></td><td>Frecuentes</td><td>Eliminados</td></tr><tr><td><strong>Escalabilidad</strong></td><td>10-20 recetas max</td><td>Ilimitadas</td></tr></tbody></table></div></figure>
 
 
 
@@ -581,7 +581,7 @@ MARGEN BRUTO: 70%</code></pre>
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio mensual</th><th>Calculadoras de costo</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>Gratis</td><td>10/mes</td><td>Emprendedores, pruebas</td></tr><tr><td><strong>Pro</strong></td><td>€10</td><td>100/mes</td><td>Restaurantes pequeños (hasta 30 pax)</td></tr><tr><td><strong>Premium</strong></td><td>€15</td><td>300/mes</td><td>Restaurantes medianos (30-60 pax)</td></tr><tr><td><strong>Premium Pro</strong></td><td>€25</td><td>1000/mes</td><td>Restaurantes grandes, múltiples ubicaciones</td></tr><tr><td><strong>Premium Plus</strong></td><td>€50</td><td>Ilimitadas</td><td>Cadenas, corporativos, consultores</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio mensual</th><th>Calculadoras de costo</th><th>Ideal para</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>Gratis</td><td>10/mes</td><td>Emprendedores, pruebas</td></tr><tr><td><strong>Pro</strong></td><td>€10</td><td>100/mes</td><td>Restaurantes pequeños (hasta 30 pax)</td></tr><tr><td><strong>Premium</strong></td><td>€15</td><td>300/mes</td><td>Restaurantes medianos (30-60 pax)</td></tr><tr><td><strong>Premium Pro</strong></td><td>€25</td><td>1000/mes</td><td>Restaurantes grandes, múltiples ubicaciones</td></tr><tr><td><strong>Premium Plus</strong></td><td>€50</td><td>Ilimitadas</td><td>Cadenas, corporativos, consultores</td></tr></tbody></table></div></figure>
 
 
 

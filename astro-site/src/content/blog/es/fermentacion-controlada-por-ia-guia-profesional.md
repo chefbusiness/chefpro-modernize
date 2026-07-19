@@ -84,7 +84,7 @@ wpId: 2007
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Variable</th><th>Rango Óptimo General</th><th>Impacto en el Proceso</th><th>Monitorización IA</th></tr></thead><tbody><tr><td>Temperatura</td><td>4°C &#8211; 45°C (según tipo)</td><td>Velocidad de fermentación, perfil aromático</td><td>Sensores térmicos + ajuste automático</td></tr><tr><td>pH</td><td>3.5 &#8211; 6.5 (según producto)</td><td>Seguridad alimentaria, desarrollo de sabor</td><td>Sondas continuas + alertas predictivas</td></tr><tr><td>Humedad relativa</td><td>65% &#8211; 95%</td><td>Desarrollo de mohos, textura superficial</td><td>Higrómetros digitales + control ambiental</td></tr><tr><td>Concentración de sal</td><td>2% &#8211; 10%</td><td>Selectividad microbiana, velocidad</td><td>Análisis de conductividad</td></tr><tr><td>Actividad de agua (Aw)</td><td>0.85 &#8211; 0.99</td><td>Crecimiento microbiano, seguridad</td><td>Sensores especializados</td></tr><tr><td>Concentración de CO2/O2</td><td>Variable según proceso</td><td>Tipo de fermentación (aeróbica/anaeróbica)</td><td>Analizadores de gases</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Variable</th><th>Rango Óptimo General</th><th>Impacto en el Proceso</th><th>Monitorización IA</th></tr></thead><tbody><tr><td>Temperatura</td><td>4°C &#8211; 45°C (según tipo)</td><td>Velocidad de fermentación, perfil aromático</td><td>Sensores térmicos + ajuste automático</td></tr><tr><td>pH</td><td>3.5 &#8211; 6.5 (según producto)</td><td>Seguridad alimentaria, desarrollo de sabor</td><td>Sondas continuas + alertas predictivas</td></tr><tr><td>Humedad relativa</td><td>65% &#8211; 95%</td><td>Desarrollo de mohos, textura superficial</td><td>Higrómetros digitales + control ambiental</td></tr><tr><td>Concentración de sal</td><td>2% &#8211; 10%</td><td>Selectividad microbiana, velocidad</td><td>Análisis de conductividad</td></tr><tr><td>Actividad de agua (Aw)</td><td>0.85 &#8211; 0.99</td><td>Crecimiento microbiano, seguridad</td><td>Sensores especializados</td></tr><tr><td>Concentración de CO2/O2</td><td>Variable según proceso</td><td>Tipo de fermentación (aeróbica/anaeróbica)</td><td>Analizadores de gases</td></tr></tbody></table></div></figure>
 
 
 
@@ -138,7 +138,7 @@ wpId: 2007
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Temperatura</th><th>Duración</th><th>pH Objetivo</th><th>Sal (%)</th></tr></thead><tbody><tr><td>Salado inicial</td><td>Ambiente (18-22°C)</td><td>6-8 horas</td><td>6.0-6.5</td><td>2-3%</td></tr><tr><td>Fermentación activa</td><td>18-22°C</td><td>24-48 horas</td><td>4.5-5.0</td><td>2-3%</td></tr><tr><td>Maduración</td><td>2-4°C</td><td>2-4 semanas</td><td>4.0-4.5</td><td>2-3%</td></tr><tr><td>Almacenamiento</td><td>0-2°C</td><td>Hasta 6 meses</td><td>3.8-4.2</td><td>2-3%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Temperatura</th><th>Duración</th><th>pH Objetivo</th><th>Sal (%)</th></tr></thead><tbody><tr><td>Salado inicial</td><td>Ambiente (18-22°C)</td><td>6-8 horas</td><td>6.0-6.5</td><td>2-3%</td></tr><tr><td>Fermentación activa</td><td>18-22°C</td><td>24-48 horas</td><td>4.5-5.0</td><td>2-3%</td></tr><tr><td>Maduración</td><td>2-4°C</td><td>2-4 semanas</td><td>4.0-4.5</td><td>2-3%</td></tr><tr><td>Almacenamiento</td><td>0-2°C</td><td>Hasta 6 meses</td><td>3.8-4.2</td><td>2-3%</td></tr></tbody></table></div></figure>
 
 
 
@@ -198,7 +198,7 @@ wpId: 2007
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Temperatura</th><th>Duración</th><th>pH</th><th>Indicadores IA</th></tr></thead><tbody><tr><td>Fermentación primaria</td><td>24-28°C</td><td>7-14 días</td><td>3.5-4.5</td><td>Grosor del SCOBY, acidez titulable</td></tr><tr><td>Segunda fermentación</td><td>20-24°C</td><td>2-4 días</td><td>2.8-3.5</td><td>Presión de CO2, carbonatación</td></tr><tr><td>Maduración</td><td>4-8°C</td><td>Variable</td><td>2.5-3.0</td><td>Perfil aromático estabilizado</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Temperatura</th><th>Duración</th><th>pH</th><th>Indicadores IA</th></tr></thead><tbody><tr><td>Fermentación primaria</td><td>24-28°C</td><td>7-14 días</td><td>3.5-4.5</td><td>Grosor del SCOBY, acidez titulable</td></tr><tr><td>Segunda fermentación</td><td>20-24°C</td><td>2-4 días</td><td>2.8-3.5</td><td>Presión de CO2, carbonatación</td></tr><tr><td>Maduración</td><td>4-8°C</td><td>Variable</td><td>2.5-3.0</td><td>Perfil aromático estabilizado</td></tr></tbody></table></div></figure>
 
 
 
@@ -427,7 +427,7 @@ wpId: 2007
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Nivel de Implementación</th><th>Inversión Aproximada</th><th>Tecnologías</th><th>Aplicaciones</th></tr></thead><tbody><tr><td>Básico</td><td>200-500€</td><td>Termómetros digitales, pH-metro, apps de registro</td><td>Kimchi, chucrut, encurtidos básicos</td></tr><tr><td>Intermedio</td><td>1.000-3.000€</td><td>Cámaras de fermentación controlada, sensores conectados</td><td>Miso, tempeh, kombucha consistente</td></tr><tr><td>Avanzado</td><td>5.000-15.000€</td><td>Sistemas IoT integrados, software de análisis predictivo</td><td>Koji, garums, fermentaciones de larga duración</td></tr><tr><td>Profesional</td><td>20.000€+</td><td>Laboratorio completo con IA, visión artificial</td><td>I+D culinario, desarrollo de productos únicos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Nivel de Implementación</th><th>Inversión Aproximada</th><th>Tecnologías</th><th>Aplicaciones</th></tr></thead><tbody><tr><td>Básico</td><td>200-500€</td><td>Termómetros digitales, pH-metro, apps de registro</td><td>Kimchi, chucrut, encurtidos básicos</td></tr><tr><td>Intermedio</td><td>1.000-3.000€</td><td>Cámaras de fermentación controlada, sensores conectados</td><td>Miso, tempeh, kombucha consistente</td></tr><tr><td>Avanzado</td><td>5.000-15.000€</td><td>Sistemas IoT integrados, software de análisis predictivo</td><td>Koji, garums, fermentaciones de larga duración</td></tr><tr><td>Profesional</td><td>20.000€+</td><td>Laboratorio completo con IA, visión artificial</td><td>I+D culinario, desarrollo de productos únicos</td></tr></tbody></table></div></figure>
 
 
 

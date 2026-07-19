@@ -131,7 +131,7 @@ Esta creación rinde homenaje a la tradición marinera mediterránea con una int
 <li>Generar informes detallados de eficiencia por ingrediente y proceso</li>
 </ul>
 
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
 <thead style="background-color: #f2f2f2;">
 <tr>
 <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Ingrediente</th>
@@ -172,7 +172,7 @@ Esta creación rinde homenaje a la tradición marinera mediterránea con una int
 <td style="border: 1px solid #ddd; padding: 12px;">12%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>La aplicación práctica de Mermas GenCal varía según el tipo de establecimiento:</p>
 
@@ -391,7 +391,7 @@ Esta creación rinde homenaje a la tradición marinera mediterránea con una int
 
 
 
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
 <thead style="background-color: #f2f2f2;">
 <tr>
 <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Concepto de negocio</th>
@@ -426,7 +426,7 @@ Esta creación rinde homenaje a la tradición marinera mediterránea con una int
 <td style="border: 1px solid #ddd; padding: 12px;">Diferenciación local, visibilidad online, propuestas rentables</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>Este enfoque especializado permite adaptar la tecnología a las necesidades específicas de cada tipo de negocio, maximizando el impacto de la inversión y facilitando la implementación.</p>
 
@@ -620,7 +620,7 @@ Este entrante contemporáneo rinde homenaje a los sabores de la tierra y su cicl
 
 <p>Aunque las herramientas GPT genéricas ofrecen capacidades impresionantes, AI Chef Pro se diferencia fundamentalmente por estar diseñado específicamente para el dominio gastronómico. Nuestras principales ventajas incluyen:</p>
 
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0;">
 <thead style="background-color: #f2f2f2;">
 <tr>
 <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Característica</th>
@@ -655,7 +655,7 @@ Este entrante contemporáneo rinde homenaje a los sabores de la tierra y su cicl
 <td style="border: 1px solid #ddd; padding: 12px;">Soluciones aisladas sin integración</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <h4>¿Se puede utilizar AI Chef Pro para capacitación y formación de personal?</h4>
 

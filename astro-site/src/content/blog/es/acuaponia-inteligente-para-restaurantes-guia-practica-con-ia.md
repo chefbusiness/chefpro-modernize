@@ -46,7 +46,7 @@ wpId: 2065
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Acuaponía</th><th>Hidroponía</th><th>Agricultura tradicional</th></tr></thead><tbody><tr><td>Consumo de agua</td><td>90% menos que tradicional</td><td>70% menos que tradicional</td><td>Referencia base</td></tr><tr><td>Uso de fertilizantes</td><td>Orgánico (de los peces)</td><td>Químicos o sintéticos</td><td>Químicos o naturales</td></tr><tr><td>Espacio requerido</td><td>10 veces menor</td><td>5-8 veces menor</td><td>Referencia base</td></tr><tr><td>Producción de proteína animal</td><td>Sí (peces)</td><td>No</td><td>Separada</td></tr><tr><td>Control ambiental</td><td>Total con IA</td><td>Parcial</td><td>Dependiente del clima</td></tr><tr><td>Certificación ecológica</td><td>Posible</td><td>Limitada</td><td>Sí</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Acuaponía</th><th>Hidroponía</th><th>Agricultura tradicional</th></tr></thead><tbody><tr><td>Consumo de agua</td><td>90% menos que tradicional</td><td>70% menos que tradicional</td><td>Referencia base</td></tr><tr><td>Uso de fertilizantes</td><td>Orgánico (de los peces)</td><td>Químicos o sintéticos</td><td>Químicos o naturales</td></tr><tr><td>Espacio requerido</td><td>10 veces menor</td><td>5-8 veces menor</td><td>Referencia base</td></tr><tr><td>Producción de proteína animal</td><td>Sí (peces)</td><td>No</td><td>Separada</td></tr><tr><td>Control ambiental</td><td>Total con IA</td><td>Parcial</td><td>Dependiente del clima</td></tr><tr><td>Certificación ecológica</td><td>Posible</td><td>Limitada</td><td>Sí</td></tr></tbody></table></div></figure>
 
 
 
@@ -177,7 +177,7 @@ wpId: 2065
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Componente</th><th>Función</th><th>Consideraciones para restaurantes</th></tr></thead><tbody><tr><td>Tanques de peces</td><td>Albergar los peces que producen los nutrientes</td><td>Pueden ser decorativos y visibles al público</td></tr><tr><td>Camas de cultivo</td><td>Espacio donde crecen las plantas</td><td>Sistemas NFT o flotantes para optimizar espacio</td></tr><tr><td>Biofiltro</td><td>Alberga bacterias que convierten amoníaco en nitratos</td><td>Esencial para el equilibrio del sistema</td></tr><tr><td>Sistema de bombeo</td><td>Circula el agua entre tanques y camas</td><td>Considerar sistemas airlift para menor consumo energético</td></tr><tr><td>Sistema de aireación</td><td>Mantiene niveles de oxígeno disuelto</td><td>Crítico para la supervivencia de los peces</td></tr><tr><td>Iluminación</td><td>Proporciona luz para fotosíntesis</td><td>LEDs de espectro completo para eficiencia energética</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Componente</th><th>Función</th><th>Consideraciones para restaurantes</th></tr></thead><tbody><tr><td>Tanques de peces</td><td>Albergar los peces que producen los nutrientes</td><td>Pueden ser decorativos y visibles al público</td></tr><tr><td>Camas de cultivo</td><td>Espacio donde crecen las plantas</td><td>Sistemas NFT o flotantes para optimizar espacio</td></tr><tr><td>Biofiltro</td><td>Alberga bacterias que convierten amoníaco en nitratos</td><td>Esencial para el equilibrio del sistema</td></tr><tr><td>Sistema de bombeo</td><td>Circula el agua entre tanques y camas</td><td>Considerar sistemas airlift para menor consumo energético</td></tr><tr><td>Sistema de aireación</td><td>Mantiene niveles de oxígeno disuelto</td><td>Crítico para la supervivencia de los peces</td></tr><tr><td>Iluminación</td><td>Proporciona luz para fotosíntesis</td><td>LEDs de espectro completo para eficiencia energética</td></tr></tbody></table></div></figure>
 
 
 
@@ -406,7 +406,7 @@ wpId: 2065
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Escala del sistema</th><th>Superficie</th><th>Inversión estimada</th><th>Producción aproximada</th></tr></thead><tbody><tr><td>Micro (demostrativo)</td><td>5-10 m²</td><td>3.000€ &#8211; 8.000€</td><td>50-100 plantas/mes</td></tr><tr><td>Pequeño (autoconsumo parcial)</td><td>20-50 m²</td><td>15.000€ &#8211; 35.000€</td><td>200-500 plantas/mes</td></tr><tr><td>Mediano (autoconsumo completo)</td><td>50-100 m²</td><td>35.000€ &#8211; 70.000€</td><td>500-1.500 plantas/mes</td></tr><tr><td>Grande (excedente para venta)</td><td>100-200 m²</td><td>70.000€ &#8211; 150.000€</td><td>1.500-3.000 plantas/mes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Escala del sistema</th><th>Superficie</th><th>Inversión estimada</th><th>Producción aproximada</th></tr></thead><tbody><tr><td>Micro (demostrativo)</td><td>5-10 m²</td><td>3.000€ &#8211; 8.000€</td><td>50-100 plantas/mes</td></tr><tr><td>Pequeño (autoconsumo parcial)</td><td>20-50 m²</td><td>15.000€ &#8211; 35.000€</td><td>200-500 plantas/mes</td></tr><tr><td>Mediano (autoconsumo completo)</td><td>50-100 m²</td><td>35.000€ &#8211; 70.000€</td><td>500-1.500 plantas/mes</td></tr><tr><td>Grande (excedente para venta)</td><td>100-200 m²</td><td>70.000€ &#8211; 150.000€</td><td>1.500-3.000 plantas/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -520,7 +520,7 @@ wpId: 2065
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Especie</th><th>Temperatura óptima</th><th>Ventajas</th><th>Uso gastronómico</th></tr></thead><tbody><tr><td>Tilapia</td><td>24-30°C</td><td>Rápido crecimiento, resistente, económica</td><td>Versátil, carne blanca suave</td></tr><tr><td>Trucha arcoíris</td><td>10-18°C</td><td>Alto valor gastronómico</td><td>Premium, carne rosada delicada</td></tr><tr><td>Carpa Koi</td><td>15-25°C</td><td>Ornamental, larga vida</td><td>Decorativo (no consumo)</td></tr><tr><td>Perca</td><td>18-24°C</td><td>Carne firme apreciada</td><td>Alta gastronomía</td></tr><tr><td>Lubina</td><td>20-26°C</td><td>Alto valor de mercado</td><td>Mediterránea, premium</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Especie</th><th>Temperatura óptima</th><th>Ventajas</th><th>Uso gastronómico</th></tr></thead><tbody><tr><td>Tilapia</td><td>24-30°C</td><td>Rápido crecimiento, resistente, económica</td><td>Versátil, carne blanca suave</td></tr><tr><td>Trucha arcoíris</td><td>10-18°C</td><td>Alto valor gastronómico</td><td>Premium, carne rosada delicada</td></tr><tr><td>Carpa Koi</td><td>15-25°C</td><td>Ornamental, larga vida</td><td>Decorativo (no consumo)</td></tr><tr><td>Perca</td><td>18-24°C</td><td>Carne firme apreciada</td><td>Alta gastronomía</td></tr><tr><td>Lubina</td><td>20-26°C</td><td>Alto valor de mercado</td><td>Mediterránea, premium</td></tr></tbody></table></div></figure>
 
 
 

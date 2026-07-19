@@ -178,7 +178,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Área de Integración</th><th>Beneficio Principal</th><th>Impacto en Eficiencia</th><th>ROI Esperado</th></tr></thead><tbody><tr><td>Gestión de Inventarios</td><td>Predicción automática de necesidades</td><td>40-60%</td><td>200-350%</td></tr><tr><td>Desarrollo de Recetas</td><td>Creatividad asistida por IA</td><td>50-70%</td><td>300-450%</td></tr><tr><td>Control de Costes</td><td>Optimización en tiempo real</td><td>30-45%</td><td>250-400%</td></tr><tr><td>Gestión de Equipos</td><td>Soporte psicológico y formativo</td><td>25-35%</td><td>150-300%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Área de Integración</th><th>Beneficio Principal</th><th>Impacto en Eficiencia</th><th>ROI Esperado</th></tr></thead><tbody><tr><td>Gestión de Inventarios</td><td>Predicción automática de necesidades</td><td>40-60%</td><td>200-350%</td></tr><tr><td>Desarrollo de Recetas</td><td>Creatividad asistida por IA</td><td>50-70%</td><td>300-450%</td></tr><tr><td>Control de Costes</td><td>Optimización en tiempo real</td><td>30-45%</td><td>250-400%</td></tr><tr><td>Gestión de Equipos</td><td>Soporte psicológico y formativo</td><td>25-35%</td><td>150-300%</td></tr></tbody></table></div></figure>
 
 
 
@@ -300,7 +300,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Reducción de Mermas</th><th>Ahorro Mensual Promedio</th><th>ROI en 6 Meses</th></tr></thead><tbody><tr><td>Restaurante pequeño (30-40 pax)</td><td>25-35%</td><td>€800-1,200</td><td>400-600%</td></tr><tr><td>Restaurante mediano (50-80 pax)</td><td>30-40%</td><td>€1,500-2,500</td><td>500-750%</td></tr><tr><td>Restaurante grande (+100 pax)</td><td>35-45%</td><td>€3,000-5,000</td><td>600-900%</td></tr><tr><td>Empresa de catering</td><td>40-50%</td><td>€2,500-4,500</td><td>700-1000%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Reducción de Mermas</th><th>Ahorro Mensual Promedio</th><th>ROI en 6 Meses</th></tr></thead><tbody><tr><td>Restaurante pequeño (30-40 pax)</td><td>25-35%</td><td>€800-1,200</td><td>400-600%</td></tr><tr><td>Restaurante mediano (50-80 pax)</td><td>30-40%</td><td>€1,500-2,500</td><td>500-750%</td></tr><tr><td>Restaurante grande (+100 pax)</td><td>35-45%</td><td>€3,000-5,000</td><td>600-900%</td></tr><tr><td>Empresa de catering</td><td>40-50%</td><td>€2,500-4,500</td><td>700-1000%</td></tr></tbody></table></div></figure>
 
 
 
@@ -662,7 +662,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Medición Inicial</th><th>Objetivo 4 Semanas</th><th>Herramienta Responsable</th></tr></thead><tbody><tr><td>Reducción de mermas</td><td>Línea base</td><td>15-25%</td><td>Mermas GenCal</td></tr><tr><td>Tiempo desarrollo recetas</td><td>Línea base</td><td>30-40%</td><td>Cocina Creativa</td></tr><tr><td>Gestión alérgenos</td><td>Manual</td><td>95% automatizado</td><td>ID Alérgenos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Medición Inicial</th><th>Objetivo 4 Semanas</th><th>Herramienta Responsable</th></tr></thead><tbody><tr><td>Reducción de mermas</td><td>Línea base</td><td>15-25%</td><td>Mermas GenCal</td></tr><tr><td>Tiempo desarrollo recetas</td><td>Línea base</td><td>30-40%</td><td>Cocina Creativa</td></tr><tr><td>Gestión alérgenos</td><td>Manual</td><td>95% automatizado</td><td>ID Alérgenos</td></tr></tbody></table></div></figure>
 
 
 
@@ -932,7 +932,7 @@ wpId: 1394
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Acceso básico con límites de uso</td><td>Exploración inicial, estudiantes, emprendedores</td><td>Aprendizaje sin inversión</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Acceso completo con límites ampliados</td><td>Chefs individuales, restaurantes pequeños</td><td>300-500% mensual</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Límites expandidos, funciones avanzadas</td><td>Restaurantes medianos, alta rotación</td><td>400-700% mensual</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Uso extensivo, análisis avanzado</td><td>Restaurantes grandes, múltiples locales</td><td>700-1000% mensual</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Uso ilimitado, soporte prioritario</td><td>Cadenas, empresas de catering, consultorías</td><td>1000%+ mensual</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Características Principales</th><th>Ideal Para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Acceso básico con límites de uso</td><td>Exploración inicial, estudiantes, emprendedores</td><td>Aprendizaje sin inversión</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Acceso completo con límites ampliados</td><td>Chefs individuales, restaurantes pequeños</td><td>300-500% mensual</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Límites expandidos, funciones avanzadas</td><td>Restaurantes medianos, alta rotación</td><td>400-700% mensual</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Uso extensivo, análisis avanzado</td><td>Restaurantes grandes, múltiples locales</td><td>700-1000% mensual</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Uso ilimitado, soporte prioritario</td><td>Cadenas, empresas de catering, consultorías</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
 
 
 

@@ -23,7 +23,7 @@ wpId: 3220
 <li><strong>Textura:</strong> Ligero en boca pero con cuerpo, nunca grasoso.</li>
 </ul>
 <h3>Consommé vs Caldo vs Sopa</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -58,7 +58,7 @@ wpId: 3220
 <td style="padding: 12px; border: 1px solid #ddd;">Plato completo</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/consomme-ingredientes.jpg" alt="Ingredientes frescos para consommé: huesos, verduras, claras de huevo" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Historia del Consommé</h2>
 <h3>Orígenes en la Cocina Francesa Clásica</h3>

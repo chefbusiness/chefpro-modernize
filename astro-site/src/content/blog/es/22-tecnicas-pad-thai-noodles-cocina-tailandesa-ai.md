@@ -152,7 +152,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Proporción</th><th class="has-text-align-left" data-align="left">Función</th></tr></thead><tbody><tr><td>Pasta de tamarindo</td><td>3 partes</td><td>Aporta acidez y profundidad</td></tr><tr><td>Salsa de pescado (Nam Pla)</td><td>2 partes</td><td>Umami y salinidad</td></tr><tr><td>Azúcar de palma</td><td>2 partes</td><td>Dulzor característico</td></tr><tr><td>Chile en polvo (opcional)</td><td>0.5 partes</td><td>Picante equilibrado</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Proporción</th><th class="has-text-align-left" data-align="left">Función</th></tr></thead><tbody><tr><td>Pasta de tamarindo</td><td>3 partes</td><td>Aporta acidez y profundidad</td></tr><tr><td>Salsa de pescado (Nam Pla)</td><td>2 partes</td><td>Umami y salinidad</td></tr><tr><td>Azúcar de palma</td><td>2 partes</td><td>Dulzor característico</td></tr><tr><td>Chile en polvo (opcional)</td><td>0.5 partes</td><td>Picante equilibrado</td></tr></tbody></table></div></figure>
 
 
 
@@ -289,7 +289,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Proteína</th><th class="has-text-align-left" data-align="left">Marinado base</th><th class="has-text-align-left" data-align="left">Tiempo</th></tr></thead><tbody><tr><td>Langostinos</td><td>Salsa de pescado + pimienta</td><td>10-15 minutos</td></tr><tr><td>Pollo</td><td>Soja + ajo + azúcar</td><td>20-30 minutos</td></tr><tr><td>Cerdo</td><td>Salsa de ostras + jengibre</td><td>15-20 minutos</td></tr><tr><td>Ternera</td><td>Soja oscura + aceite de sésamo</td><td>30-45 minutos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Proteína</th><th class="has-text-align-left" data-align="left">Marinado base</th><th class="has-text-align-left" data-align="left">Tiempo</th></tr></thead><tbody><tr><td>Langostinos</td><td>Salsa de pescado + pimienta</td><td>10-15 minutos</td></tr><tr><td>Pollo</td><td>Soja + ajo + azúcar</td><td>20-30 minutos</td></tr><tr><td>Cerdo</td><td>Salsa de ostras + jengibre</td><td>15-20 minutos</td></tr><tr><td>Ternera</td><td>Soja oscura + aceite de sésamo</td><td>30-45 minutos</td></tr></tbody></table></div></figure>
 
 
 
@@ -648,7 +648,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Merma típica</th><th class="has-text-align-left" data-align="left">Merma optimizada con IA</th></tr></thead><tbody><tr><td>Langostinos (pelado)</td><td>45%</td><td>38% (aprovechando cabezas)</td></tr><tr><td>Tofu (prensado)</td><td>15%</td><td>8% (técnica optimizada)</td></tr><tr><td>Brotes de soja</td><td>20%</td><td>10% (limpieza selectiva)</td></tr><tr><td>Cebollino</td><td>25%</td><td>12% (aprovechamiento total)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Ingrediente</th><th class="has-text-align-left" data-align="left">Merma típica</th><th class="has-text-align-left" data-align="left">Merma optimizada con IA</th></tr></thead><tbody><tr><td>Langostinos (pelado)</td><td>45%</td><td>38% (aprovechando cabezas)</td></tr><tr><td>Tofu (prensado)</td><td>15%</td><td>8% (técnica optimizada)</td></tr><tr><td>Brotes de soja</td><td>20%</td><td>10% (limpieza selectiva)</td></tr><tr><td>Cebollino</td><td>25%</td><td>12% (aprovechamiento total)</td></tr></tbody></table></div></figure>
 
 
 
@@ -702,7 +702,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tipo de Noodle</th><th class="has-text-align-left" data-align="left">Composición</th><th class="has-text-align-left" data-align="left">Platos principales</th><th class="has-text-align-left" data-align="left">Gluten</th></tr></thead><tbody><tr><td><strong>Sen Lek</strong></td><td>Arroz (planos finos)</td><td>Pad Thai clásico</td><td>No</td></tr><tr><td><strong>Sen Yai</strong></td><td>Arroz (planos anchos)</td><td>Pad See Ew, Rad Na</td><td>No</td></tr><tr><td><strong>Sen Mee</strong></td><td>Arroz (vermicelli fino)</td><td>Pad Mee, ensaladas</td><td>No</td></tr><tr><td><strong>Woon Sen</strong></td><td>Judía mungo (cristal)</td><td>Yam Woon Sen, sopas</td><td>No</td></tr><tr><td><strong>Ba Mee</strong></td><td>Trigo + huevo</td><td>Ba Mee Haeng, sopas</td><td>Sí</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Tipo de Noodle</th><th class="has-text-align-left" data-align="left">Composición</th><th class="has-text-align-left" data-align="left">Platos principales</th><th class="has-text-align-left" data-align="left">Gluten</th></tr></thead><tbody><tr><td><strong>Sen Lek</strong></td><td>Arroz (planos finos)</td><td>Pad Thai clásico</td><td>No</td></tr><tr><td><strong>Sen Yai</strong></td><td>Arroz (planos anchos)</td><td>Pad See Ew, Rad Na</td><td>No</td></tr><tr><td><strong>Sen Mee</strong></td><td>Arroz (vermicelli fino)</td><td>Pad Mee, ensaladas</td><td>No</td></tr><tr><td><strong>Woon Sen</strong></td><td>Judía mungo (cristal)</td><td>Yam Woon Sen, sopas</td><td>No</td></tr><tr><td><strong>Ba Mee</strong></td><td>Trigo + huevo</td><td>Ba Mee Haeng, sopas</td><td>Sí</td></tr></tbody></table></div></figure>
 
 
 
@@ -846,7 +846,7 @@ wpId: 2141
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Herramientas incluidas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>Gratis</td><td>Explorar la plataforma</td><td>Acceso básico limitado</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs individuales</td><td>Cocina Tailandesa AI + 10 herramientas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes pequeños</td><td>Suite completa + límites expandidos</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Chefs ejecutivos</td><td>Todas las herramientas + análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas y consultorías</td><td>Uso ilimitado + soporte prioritario</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Herramientas incluidas</th></tr></thead><tbody><tr><td><strong>Miembro</strong></td><td>Gratis</td><td>Explorar la plataforma</td><td>Acceso básico limitado</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs individuales</td><td>Cocina Tailandesa AI + 10 herramientas</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Restaurantes pequeños</td><td>Suite completa + límites expandidos</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Chefs ejecutivos</td><td>Todas las herramientas + análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Cadenas y consultorías</td><td>Uso ilimitado + soporte prioritario</td></tr></tbody></table></div></figure>
 
 
 

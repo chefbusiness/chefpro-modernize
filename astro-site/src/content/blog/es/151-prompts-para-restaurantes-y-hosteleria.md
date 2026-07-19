@@ -22,7 +22,7 @@ wpId: 1741
 <h2>¿Qué son los prompts para restaurantes y por qué son fundamentales?</h2>
 <p>Un <strong>prompt</strong> es una instrucción o solicitud específica que proporcionas a una herramienta de inteligencia artificial para obtener un resultado determinado. En el contexto gastronómico, los prompts especializados permiten a chefs, gerentes y propietarios de restaurantes aprovechar al máximo el potencial de la IA para resolver desafíos operativos, creativos y estratégicos.</p>
 <p>La diferencia entre un prompt genérico y uno profesional es abismal. Por ejemplo:</p>
-<table class="wp-block-table is-style-stripes" style="width: 100%; border-collapse: collapse; margin: 30px 0;">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes" style="width: 100%; border-collapse: collapse; margin: 30px 0;">
 <thead>
 <tr style="background-color: #667eea; color: white;">
 <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">Prompt Genérico</th>
@@ -37,7 +37,7 @@ wpId: 1741
 <td style="padding: 12px; border: 1px solid #ddd;">El segundo genera recetas detalladas, viables económicamente y adaptadas al contexto específico</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Los <strong>componentes clave de un prompt efectivo</strong> para restaurantes incluyen:</p>
 <ul>
 <li><strong>Contexto profesional:</strong> Define tu rol, tipo de establecimiento y especialización culinaria</li>
@@ -49,7 +49,7 @@ wpId: 1741
 <p>Para profundizar en técnicas avanzadas de creación de prompts gastronómicos, te recomendamos leer nuestro artículo sobre <a href="https://aichef.pro/blog/generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" target="_blank" rel="noopener">generador de prompts gastronómicos</a>, donde exploramos metodologías profesionales para optimizar tus instrucciones de IA.</p>
 <h2>Beneficios de usar prompts especializados en tu restaurante</h2>
 <p>La implementación estratégica de prompts profesionales en la operativa gastronómica genera beneficios tangibles y medibles. Según estudios del sector, los restaurantes que utilizan IA de manera efectiva reportan:</p>
-<table class="wp-block-table is-style-stripes" style="width: 100%; margin: 30px 0;">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes" style="width: 100%; margin: 30px 0;">
 <thead>
 <tr style="background-color: #764ba2; color: white;">
 <th style="padding: 15px;">Área de Impacto</th>
@@ -84,7 +84,7 @@ wpId: 1741
 <td style="padding: 12px; border: 1px solid #ddd;">2-3 semanas</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La clave está en utilizar <strong>herramientas especializadas</strong> como <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">AI Chef Pro</a>, que combinan modelos de lenguaje avanzados con bases de conocimiento gastronómico específico, generando respuestas mucho más precisas y aplicables que las herramientas genéricas.</p>
 <h2>Categoría 1: Creatividad Culinaria y Desarrollo de Recetas (15 Prompts)</h2>
 <p>La creatividad culinaria es el corazón de cualquier restaurante exitoso. Estos prompts están diseñados para estimular la innovación, adaptarse a restricciones específicas y generar propuestas gastronómicas de nivel profesional utilizando herramientas como <a href="https://aichef.pro/blog/libreria-de-prompts-para-recetario-cocina-creativa-ai" target="_blank" rel="noopener">Cocina Creativa AI</a> de nuestra suite.</p>
@@ -504,7 +504,7 @@ wpId: 1741
 <li>Actualiza y refina según aprendizajes de uso real</li>
 </ul>
 <h3>5. Herramientas recomendadas para usar con estos prompts</h3>
-<table class="wp-block-table is-style-stripes" style="width: 100%; margin: 30px 0;">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes" style="width: 100%; margin: 30px 0;">
 <thead>
 <tr style="background-color: #667eea; color: white;">
 <th style="padding: 15px;">Herramienta</th>
@@ -534,7 +534,7 @@ wpId: 1741
 <td style="padding: 12px; border: 1px solid #ddd;">Búsqueda en tiempo real con fuentes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Recomendación:</strong> Para obtener los mejores resultados en prompts gastronómicos, utiliza <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=libreria-de-prompts-blog&#038;utm_content=151-prompts-para-restaurantes-y-hosteleria" target="_blank" rel="noopener">AI Chef Pro</a> como tu herramienta principal. Al estar especializada en el sector, comprende mejor la terminología técnica, las restricciones operativas y genera respuestas más precisas y aplicables.</p>
 <h2>Preguntas Frecuentes (FAQ)</h2>
 <h3>¿Necesito conocimientos técnicos de IA para usar estos prompts?</h3>

@@ -49,7 +49,7 @@ wpId: 3191
 <p>Creada en Saint-Tropez en los años 50 por el pastelero Alexandre Micka. Consiste en una <strong>base de brioche partida horizontalmente y rellena de crema mousseline</strong> con toques de azahar.</p>
 <h2>Ingredientes y Proporciones</h2>
 <p>La fórmula clásica del brioche sigue proporciones específicas que determinan su carácter:</p>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Ingrediente</th>
@@ -94,7 +94,7 @@ wpId: 3191
 <td style="padding: 12px; border: 1px solid #ddd;">Realzar sabores</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/brioche-amasado.jpg" alt="Manos amasando masa de brioche con mantequilla" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Técnica de Elaboración Paso a Paso</h2>
 <p>La elaboración del brioche requiere paciencia y técnica. El proceso completo puede tomar de 6 a 24 horas según los tiempos de fermentación.</p>

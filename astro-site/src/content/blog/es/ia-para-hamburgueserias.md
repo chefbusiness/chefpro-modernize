@@ -44,7 +44,7 @@ wpId: 2495
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Indicador</th><th class="has-text-align-left" data-align="left">Dato 2024</th><th class="has-text-align-left" data-align="left">Variación</th></tr></thead><tbody><tr><td>Facturación hamburgueserías</td><td>3.580 millones €</td><td>+12,4%</td></tr><tr><td>Cuota de mercado en comida rápida</td><td>61%</td><td>+2 pp</td></tr><tr><td>Establecimientos totales sector</td><td>5.900+</td><td>+3,8%</td></tr><tr><td>Modelo franquicia</td><td>62%</td><td>-1 pp</td></tr><tr><td>Concentración top 5 cadenas</td><td>75,8%</td><td>+1,3 pp</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Indicador</th><th class="has-text-align-left" data-align="left">Dato 2024</th><th class="has-text-align-left" data-align="left">Variación</th></tr></thead><tbody><tr><td>Facturación hamburgueserías</td><td>3.580 millones €</td><td>+12,4%</td></tr><tr><td>Cuota de mercado en comida rápida</td><td>61%</td><td>+2 pp</td></tr><tr><td>Establecimientos totales sector</td><td>5.900+</td><td>+3,8%</td></tr><tr><td>Modelo franquicia</td><td>62%</td><td>-1 pp</td></tr><tr><td>Concentración top 5 cadenas</td><td>75,8%</td><td>+1,3 pp</td></tr></tbody></table></div></figure>
 
 
 
@@ -245,7 +245,7 @@ wpId: 2495
 </ol>
 
 <p><strong>Análisis de costes (precios orientativos España 2026):</strong></p>
-<table style="width:100%; border-collapse: collapse; margin: 15px 0;">
+<div class="table-scroll"><table style="width:100%; border-collapse: collapse; margin: 15px 0;">
 <tbody><tr style="background-color: #ecf0f1;">
 <td style="padding: 8px; border: 1px solid #ddd;">Carne blend</td>
 <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">1,44 €</td>
@@ -266,7 +266,7 @@ wpId: 2495
 <td style="padding: 8px; border: 1px solid #ddd;">COSTE TOTAL</td>
 <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">2,79 €</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 
 <p><strong>PVP recomendado:</strong> 9,50 € &#8211; 10,50 € (food cost 26-29%)</p>
 <p><strong>Margen bruto estimado:</strong> 71-74%</p>
@@ -317,7 +317,7 @@ wpId: 2495
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aspecto</th><th class="has-text-align-left" data-align="left">Método Tradicional</th><th class="has-text-align-left" data-align="left">Con IA</th></tr></thead><tbody><tr><td>Cálculo de mermas</td><td>Estimación general (25-30%)</td><td>Específico por ingrediente y técnica</td></tr><tr><td>Actualización de precios</td><td>Manual, periódica</td><td>Automática, en tiempo real</td></tr><tr><td>Análisis de rentabilidad</td><td>Por plato individual</td><td>Global con interdependencias</td></tr><tr><td>Sugerencias de mejora</td><td>Basadas en experiencia</td><td>Basadas en datos y tendencias</td></tr><tr><td>Tiempo de elaboración</td><td>Horas por receta</td><td>Minutos con análisis completo</td></tr><tr><td>Precisión estimada</td><td>±10-15%</td><td>±2-5%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Aspecto</th><th class="has-text-align-left" data-align="left">Método Tradicional</th><th class="has-text-align-left" data-align="left">Con IA</th></tr></thead><tbody><tr><td>Cálculo de mermas</td><td>Estimación general (25-30%)</td><td>Específico por ingrediente y técnica</td></tr><tr><td>Actualización de precios</td><td>Manual, periódica</td><td>Automática, en tiempo real</td></tr><tr><td>Análisis de rentabilidad</td><td>Por plato individual</td><td>Global con interdependencias</td></tr><tr><td>Sugerencias de mejora</td><td>Basadas en experiencia</td><td>Basadas en datos y tendencias</td></tr><tr><td>Tiempo de elaboración</td><td>Horas por receta</td><td>Minutos con análisis completo</td></tr><tr><td>Precisión estimada</td><td>±10-15%</td><td>±2-5%</td></tr></tbody></table></div></figure>
 
 
 
@@ -502,7 +502,7 @@ wpId: 2495
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Características destacadas</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Probar la plataforma</td><td>Acceso básico con límites de uso</td></tr><tr><td>Pro</td><td>25€/mes</td><td>Food trucks, pequeños locales</td><td>Acceso completo a herramientas básicas</td></tr><tr><td>Premium</td><td>50€/mes</td><td>Hamburgueserías medianas</td><td>Límites ampliados y funciones avanzadas</td></tr><tr><td>Premium Plus</td><td>95€/mes</td><td>Cadenas y franquicias</td><td>Uso intensivo y soporte prioritario</td></tr><tr><td>Anual</td><td>500€/año</td><td>Compromiso a largo plazo</td><td>Ahorro significativo (2 meses gratis)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th class="has-text-align-left" data-align="left">Plan</th><th class="has-text-align-left" data-align="left">Precio</th><th class="has-text-align-left" data-align="left">Ideal para</th><th class="has-text-align-left" data-align="left">Características destacadas</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Probar la plataforma</td><td>Acceso básico con límites de uso</td></tr><tr><td>Pro</td><td>25€/mes</td><td>Food trucks, pequeños locales</td><td>Acceso completo a herramientas básicas</td></tr><tr><td>Premium</td><td>50€/mes</td><td>Hamburgueserías medianas</td><td>Límites ampliados y funciones avanzadas</td></tr><tr><td>Premium Plus</td><td>95€/mes</td><td>Cadenas y franquicias</td><td>Uso intensivo y soporte prioritario</td></tr><tr><td>Anual</td><td>500€/año</td><td>Compromiso a largo plazo</td><td>Ahorro significativo (2 meses gratis)</td></tr></tbody></table></div></figure>
 
 
 

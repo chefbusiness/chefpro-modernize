@@ -54,7 +54,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Antes de IA</th><th>Con IA para Cocinar</th><th>Mejora Promedio</th></tr></thead><tbody><tr><td>Tiempo de desarrollo de recetas</td><td>4-6 horas</td><td>30-45 minutos</td><td>85% reducción</td></tr><tr><td>Precisión en costeo</td><td>70-75%</td><td>92-96%</td><td>25% incremento</td></tr><tr><td>Reducción de mermas</td><td>12-15%</td><td>4-6%</td><td>60% mejora</td></tr><tr><td>Satisfacción del equipo</td><td>65%</td><td>89%</td><td>37% incremento</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Antes de IA</th><th>Con IA para Cocinar</th><th>Mejora Promedio</th></tr></thead><tbody><tr><td>Tiempo de desarrollo de recetas</td><td>4-6 horas</td><td>30-45 minutos</td><td>85% reducción</td></tr><tr><td>Precisión en costeo</td><td>70-75%</td><td>92-96%</td><td>25% incremento</td></tr><tr><td>Reducción de mermas</td><td>12-15%</td><td>4-6%</td><td>60% mejora</td></tr><tr><td>Satisfacción del equipo</td><td>65%</td><td>89%</td><td>37% incremento</td></tr></tbody></table></div></figure>
 
 
 
@@ -331,7 +331,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma Tradicional</th><th>Merma con IA</th><th>Ahorro Económico Mensual</th></tr></thead><tbody><tr><td>Pescado blanco (50kg/mes)</td><td>45%</td><td>32%</td><td>€420</td></tr><tr><td>Verduras de hoja (30kg/mes)</td><td>30%</td><td>18%</td><td>€180</td></tr><tr><td>Carnes rojas (40kg/mes)</td><td>25%</td><td>15%</td><td>€800</td></tr><tr><td>Tubérculos (25kg/mes)</td><td>20%</td><td>8%</td><td>€90</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Ingrediente</th><th>Merma Tradicional</th><th>Merma con IA</th><th>Ahorro Económico Mensual</th></tr></thead><tbody><tr><td>Pescado blanco (50kg/mes)</td><td>45%</td><td>32%</td><td>€420</td></tr><tr><td>Verduras de hoja (30kg/mes)</td><td>30%</td><td>18%</td><td>€180</td></tr><tr><td>Carnes rojas (40kg/mes)</td><td>25%</td><td>15%</td><td>€800</td></tr><tr><td>Tubérculos (25kg/mes)</td><td>20%</td><td>8%</td><td>€90</td></tr></tbody></table></div></figure>
 
 
 
@@ -469,7 +469,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plato</th><th>Coste Real</th><th>Precio Venta</th><th>Margen Sin IA</th><th>Margen Con IA</th></tr></thead><tbody><tr><td>Paella de mariscos</td><td>€8.50</td><td>€24.00</td><td>65%</td><td>71%</td></tr><tr><td>Lubina a la sal</td><td>€12.00</td><td>€28.00</td><td>57%</td><td>68%</td></tr><tr><td>Arroz con verduras</td><td>€4.20</td><td>€16.00</td><td>74%</td><td>79%</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plato</th><th>Coste Real</th><th>Precio Venta</th><th>Margen Sin IA</th><th>Margen Con IA</th></tr></thead><tbody><tr><td>Paella de mariscos</td><td>€8.50</td><td>€24.00</td><td>65%</td><td>71%</td></tr><tr><td>Lubina a la sal</td><td>€12.00</td><td>€28.00</td><td>57%</td><td>68%</td></tr><tr><td>Arroz con verduras</td><td>€4.20</td><td>€16.00</td><td>74%</td><td>79%</td></tr></tbody></table></div></figure>
 
 
 
@@ -809,7 +809,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Prioritaria</th><th>ROI Esperado (3 meses)</th><th>Tiempo de Implementación</th></tr></thead><tbody><tr><td>Restaurante Alta Cocina</td><td>Cocina Creativa + Food Pairing</td><td>300-500%</td><td>4-6 semanas</td></tr><tr><td>Restaurante Casual</td><td>Mermas GenCal + Planificación</td><td>400-600%</td><td>3-4 semanas</td></tr><tr><td>Catering/Eventos</td><td>Catering AI+ + ID Alérgenos</td><td>500-800%</td><td>2-3 semanas</td></tr><tr><td>Pastelería/Obrador</td><td>Pastelería Creativa + Mermas</td><td>350-450%</td><td>3-5 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Herramienta Prioritaria</th><th>ROI Esperado (3 meses)</th><th>Tiempo de Implementación</th></tr></thead><tbody><tr><td>Restaurante Alta Cocina</td><td>Cocina Creativa + Food Pairing</td><td>300-500%</td><td>4-6 semanas</td></tr><tr><td>Restaurante Casual</td><td>Mermas GenCal + Planificación</td><td>400-600%</td><td>3-4 semanas</td></tr><tr><td>Catering/Eventos</td><td>Catering AI+ + ID Alérgenos</td><td>500-800%</td><td>2-3 semanas</td></tr><tr><td>Pastelería/Obrador</td><td>Pastelería Creativa + Mermas</td><td>350-450%</td><td>3-5 semanas</td></tr></tbody></table></div></figure>
 
 
 
@@ -909,7 +909,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Smart CookAI</th><th>Mr. Cook</th></tr></thead><tbody><tr><td>Aplicaciones disponibles</td><td>50+</td><td>5</td><td>3</td><td>2</td></tr><tr><td>Enfoque profesional</td><td>Especializado</td><td>General</td><td>Doméstico</td><td>General</td></tr><tr><td>Gestión de costes</td><td>Avanzada</td><td>Básica</td><td>No incluida</td><td>Básica</td></tr><tr><td>Food pairing científico</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Soporte especializado</td><td>24/7 gastronómico</td><td>General</td><td>Limitado</td><td>General</td></tr><tr><td>Precio desde</td><td>€10/mes</td><td>€2.99/mes</td><td>€15/mes</td><td>€9/mes</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro</th><th>ChefGPT</th><th>Smart CookAI</th><th>Mr. Cook</th></tr></thead><tbody><tr><td>Aplicaciones disponibles</td><td>50+</td><td>5</td><td>3</td><td>2</td></tr><tr><td>Enfoque profesional</td><td>Especializado</td><td>General</td><td>Doméstico</td><td>General</td></tr><tr><td>Gestión de costes</td><td>Avanzada</td><td>Básica</td><td>No incluida</td><td>Básica</td></tr><tr><td>Food pairing científico</td><td>Sí</td><td>No</td><td>No</td><td>No</td></tr><tr><td>Soporte especializado</td><td>24/7 gastronómico</td><td>General</td><td>Limitado</td><td>General</td></tr><tr><td>Precio desde</td><td>€10/mes</td><td>€2.99/mes</td><td>€15/mes</td><td>€9/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -1179,7 +1179,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Aplicaciones</th><th>Ideal Para</th><th>ROI Típico (3 meses)</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>€0/mes</td><td>Acceso básico limitado</td><td>Exploración inicial, estudiantes</td><td>Conocimiento del potencial</td></tr><tr><td>Pro</td><td>€10/mes</td><td>Acceso completo con límites</td><td>Chefs individuales, pequeños restaurantes</td><td>300-500%</td></tr><tr><td>Premium</td><td>€15/mes</td><td>Límites expandidos</td><td>Restaurantes medianos, pastelerías</td><td>400-700%</td></tr><tr><td>Premium Pro</td><td>€25/mes</td><td>Uso extensivo + análisis avanzado</td><td>Chefs ejecutivos, múltiples ubicaciones</td><td>700-1000%</td></tr><tr><td>Premium Plus</td><td>€50/mes</td><td>Ilimitado + soporte prioritario</td><td>Cadenas, consultorías gastronómicas</td><td>1000%+</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Aplicaciones</th><th>Ideal Para</th><th>ROI Típico (3 meses)</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>€0/mes</td><td>Acceso básico limitado</td><td>Exploración inicial, estudiantes</td><td>Conocimiento del potencial</td></tr><tr><td>Pro</td><td>€10/mes</td><td>Acceso completo con límites</td><td>Chefs individuales, pequeños restaurantes</td><td>300-500%</td></tr><tr><td>Premium</td><td>€15/mes</td><td>Límites expandidos</td><td>Restaurantes medianos, pastelerías</td><td>400-700%</td></tr><tr><td>Premium Pro</td><td>€25/mes</td><td>Uso extensivo + análisis avanzado</td><td>Chefs ejecutivos, múltiples ubicaciones</td><td>700-1000%</td></tr><tr><td>Premium Plus</td><td>€50/mes</td><td>Ilimitado + soporte prioritario</td><td>Cadenas, consultorías gastronómicas</td><td>1000%+</td></tr></tbody></table></div></figure>
 
 
 
@@ -1291,7 +1291,7 @@ wpId: 1550
 
 
 
-<figure class="wp-block-table \&quot;wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Restaurante</th><th>Plan Recomendado</th><th>Coste Mensual</th><th>ROI Esperado</th><th>Recuperación</th></tr></thead><tbody><tr><td>Pequeño (hasta 40 plazas)</td><td>Pro</td><td>€10</td><td>€300-500</td><td>1-2 semanas</td></tr><tr><td>Mediano (40-80 plazas)</td><td>Premium</td><td>€15</td><td>€600-900</td><td>2-3 semanas</td></tr><tr><td>Grande (80+ plazas)</td><td>Premium Pro</td><td>€25</td><td>€1000-2000</td><td>1-2 semanas</td></tr><tr><td>Cadena/Grupo</td><td>Premium Plus</td><td>€50</td><td>€3000-5000</td><td>1 semana</td></tr></tbody></table></figure>
+<figure class="wp-block-table \&quot;wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Restaurante</th><th>Plan Recomendado</th><th>Coste Mensual</th><th>ROI Esperado</th><th>Recuperación</th></tr></thead><tbody><tr><td>Pequeño (hasta 40 plazas)</td><td>Pro</td><td>€10</td><td>€300-500</td><td>1-2 semanas</td></tr><tr><td>Mediano (40-80 plazas)</td><td>Premium</td><td>€15</td><td>€600-900</td><td>2-3 semanas</td></tr><tr><td>Grande (80+ plazas)</td><td>Premium Pro</td><td>€25</td><td>€1000-2000</td><td>1-2 semanas</td></tr><tr><td>Cadena/Grupo</td><td>Premium Plus</td><td>€50</td><td>€3000-5000</td><td>1 semana</td></tr></tbody></table></div></figure>
 
 
 

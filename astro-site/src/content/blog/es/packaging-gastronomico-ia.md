@@ -52,7 +52,7 @@ wpId: 2153
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Envase Tradicional</th><th>Envase Inteligente con IA</th></tr></thead><tbody><tr><td>Monitorización</td><td>Ninguna</td><td>Tiempo real (temperatura, humedad, gases)</td></tr><tr><td>Comunicación</td><td>Estática (etiquetado fijo)</td><td>Dinámica (QR, NFC, RFID, sensores)</td></tr><tr><td>Interacción con el alimento</td><td>Pasiva</td><td>Activa (absorción, emisión de sustancias)</td></tr><tr><td>Información de frescura</td><td>Fecha de caducidad fija</td><td>Indicadores en tiempo real</td></tr><tr><td>Trazabilidad</td><td>Limitada</td><td>Completa (blockchain, IoT)</td></tr><tr><td>Análisis predictivo</td><td>Inexistente</td><td>Predicción de deterioro y patrones de consumo</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Envase Tradicional</th><th>Envase Inteligente con IA</th></tr></thead><tbody><tr><td>Monitorización</td><td>Ninguna</td><td>Tiempo real (temperatura, humedad, gases)</td></tr><tr><td>Comunicación</td><td>Estática (etiquetado fijo)</td><td>Dinámica (QR, NFC, RFID, sensores)</td></tr><tr><td>Interacción con el alimento</td><td>Pasiva</td><td>Activa (absorción, emisión de sustancias)</td></tr><tr><td>Información de frescura</td><td>Fecha de caducidad fija</td><td>Indicadores en tiempo real</td></tr><tr><td>Trazabilidad</td><td>Limitada</td><td>Completa (blockchain, IoT)</td></tr><tr><td>Análisis predictivo</td><td>Inexistente</td><td>Predicción de deterioro y patrones de consumo</td></tr></tbody></table></div></figure>
 
 
 
@@ -215,7 +215,7 @@ wpId: 2153
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Producto</th><th>Merma Tradicional</th><th>Merma con Packaging IA</th><th>Ahorro Potencial</th></tr></thead><tbody><tr><td>Pescados frescos</td><td>18-25%</td><td>8-12%</td><td>40-52%</td></tr><tr><td>Carnes rojas</td><td>12-18%</td><td>5-9%</td><td>50-58%</td></tr><tr><td>Productos lácteos</td><td>10-15%</td><td>4-7%</td><td>53-60%</td></tr><tr><td>Frutas y verduras</td><td>20-30%</td><td>10-15%</td><td>50%</td></tr><tr><td>Productos de pastelería</td><td>15-22%</td><td>6-10%</td><td>55-60%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Producto</th><th>Merma Tradicional</th><th>Merma con Packaging IA</th><th>Ahorro Potencial</th></tr></thead><tbody><tr><td>Pescados frescos</td><td>18-25%</td><td>8-12%</td><td>40-52%</td></tr><tr><td>Carnes rojas</td><td>12-18%</td><td>5-9%</td><td>50-58%</td></tr><tr><td>Productos lácteos</td><td>10-15%</td><td>4-7%</td><td>53-60%</td></tr><tr><td>Frutas y verduras</td><td>20-30%</td><td>10-15%</td><td>50%</td></tr><tr><td>Productos de pastelería</td><td>15-22%</td><td>6-10%</td><td>55-60%</td></tr></tbody></table></div></figure>
 
 
 
@@ -460,7 +460,7 @@ wpId: 2153
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Negocio</th><th>Tecnologías Prioritarias</th><th>Inversión Estimada</th></tr></thead><tbody><tr><td>Restaurante casual</td><td>Indicadores TTI, etiquetas QR</td><td>Baja (0,02-0,10€/unidad)</td></tr><tr><td>Restaurante gastronómico</td><td>Sensores de frescura, NFC, trazabilidad blockchain</td><td>Media-Alta (0,15-0,50€/unidad)</td></tr><tr><td>Empresa de catering</td><td>RFID, sensores temperatura, monitorización IoT</td><td>Alta (0,30-1,00€/unidad)</td></tr><tr><td>Servicio de delivery</td><td>Indicadores temperatura, QR dinámicos, tracking</td><td>Media (0,10-0,25€/unidad)</td></tr><tr><td>Obrador/cocina central</td><td>RFID, sensores gases, automatización logística</td><td>Alta (inversión infraestructura)</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Negocio</th><th>Tecnologías Prioritarias</th><th>Inversión Estimada</th></tr></thead><tbody><tr><td>Restaurante casual</td><td>Indicadores TTI, etiquetas QR</td><td>Baja (0,02-0,10€/unidad)</td></tr><tr><td>Restaurante gastronómico</td><td>Sensores de frescura, NFC, trazabilidad blockchain</td><td>Media-Alta (0,15-0,50€/unidad)</td></tr><tr><td>Empresa de catering</td><td>RFID, sensores temperatura, monitorización IoT</td><td>Alta (0,30-1,00€/unidad)</td></tr><tr><td>Servicio de delivery</td><td>Indicadores temperatura, QR dinámicos, tracking</td><td>Media (0,10-0,25€/unidad)</td></tr><tr><td>Obrador/cocina central</td><td>RFID, sensores gases, automatización logística</td><td>Alta (inversión infraestructura)</td></tr></tbody></table></div></figure>
 
 
 

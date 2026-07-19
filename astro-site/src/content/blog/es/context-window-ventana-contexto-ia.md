@@ -69,7 +69,7 @@ wpId: 3139
 <figure style="margin: 30px 0; text-align: center;">   <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/context-window-featured-1.jpg" alt="Comparativa de tamaños de ventana de contexto entre modelos de IA" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"><figcaption style="font-style: italic; color: #666; margin-top: 10px; font-size: 14px;">     Comparativa visual de capacidades entre los principales modelos de IA   </figcaption></figure>
 <h2>Comparativa de Modelos: Tamaños de Ventana de Contexto</h2>
 <p>Los principales modelos de IA ofrecen capacidades muy diferentes en términos de ventana de contexto. Esta tabla comparativa te ayuda a elegir el adecuado según tus necesidades en hostelería:</p>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Modelo</th>
@@ -104,7 +104,7 @@ wpId: 3139
 <td style="padding: 12px; border: 1px solid #ddd;">Recetas, menús, costes, inventarios y gestión restaurante</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><em><strong>Nota:</strong> Un «token» equivale aproximadamente a 0,75 palabras en español. Los números son orientativos.</em></p>
 <h2>Cómo Aprovecha AI Chef Pro la Ventana de Contexto</h2>
 <p>En AI Chef Pro hemos diseñado nuestra plataforma específicamente para las necesidades del sector hostelerío, optimizando cómo utilizamos la ventana de contexto:</p>

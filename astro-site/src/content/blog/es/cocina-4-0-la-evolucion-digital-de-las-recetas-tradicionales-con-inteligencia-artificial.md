@@ -78,7 +78,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Beneficio</th><th>Descripción</th><th>Impacto Medible</th></tr></thead><tbody><tr><td>Accesibilidad Global</td><td>Disponibles 24/7 sin restricciones geográficas</td><td>95% de usuarios reportan facilidad de acceso</td></tr><tr><td>Aprendizaje Continuo</td><td>Los algoritmos mejoran con cada interacción</td><td>Incremento del 40% en precisión mensual</td></tr><tr><td>Personalización Instantánea</td><td>Adaptación inmediata a preferencias específicas</td><td>78% de satisfacción en primera prueba</td></tr><tr><td>Reducción de Desperdicios</td><td>Optimización de ingredientes disponibles</td><td>Disminución del 35% en desperdicio alimentario</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Beneficio</th><th>Descripción</th><th>Impacto Medible</th></tr></thead><tbody><tr><td>Accesibilidad Global</td><td>Disponibles 24/7 sin restricciones geográficas</td><td>95% de usuarios reportan facilidad de acceso</td></tr><tr><td>Aprendizaje Continuo</td><td>Los algoritmos mejoran con cada interacción</td><td>Incremento del 40% en precisión mensual</td></tr><tr><td>Personalización Instantánea</td><td>Adaptación inmediata a preferencias específicas</td><td>78% de satisfacción en primera prueba</td></tr><tr><td>Reducción de Desperdicios</td><td>Optimización de ingredientes disponibles</td><td>Disminución del 35% en desperdicio alimentario</td></tr></tbody></table></div></figure>
 
 
 
@@ -150,7 +150,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Categoría</th><th>Características Principales</th><th>Usuarios Objetivo</th><th>Ejemplos Destacados</th></tr></thead><tbody><tr><td>Generadores Básicos</td><td>Creación simple de recetas por ingredientes</td><td>Cocineros amateur, estudiantes</td><td>Mr. Cook, SuperCook</td></tr><tr><td>Asistentes Inteligentes</td><td>Interacción conversacional avanzada</td><td>Entusiastas culinarios, familias</td><td>ChefGPT, Smart CookAI</td></tr><tr><td>Plataformas Profesionales</td><td>Suite completa para gestión gastronómica</td><td>Chefs profesionales, restaurantes</td><td>AI Chef Pro, Samsung Food</td></tr><tr><td>Especializadas</td><td>Enfoque en nichos específicos (vegano, sin gluten)</td><td>Usuarios con restricciones específicas</td><td>Plant Jammer, DishGen</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Categoría</th><th>Características Principales</th><th>Usuarios Objetivo</th><th>Ejemplos Destacados</th></tr></thead><tbody><tr><td>Generadores Básicos</td><td>Creación simple de recetas por ingredientes</td><td>Cocineros amateur, estudiantes</td><td>Mr. Cook, SuperCook</td></tr><tr><td>Asistentes Inteligentes</td><td>Interacción conversacional avanzada</td><td>Entusiastas culinarios, familias</td><td>ChefGPT, Smart CookAI</td></tr><tr><td>Plataformas Profesionales</td><td>Suite completa para gestión gastronómica</td><td>Chefs profesionales, restaurantes</td><td>AI Chef Pro, Samsung Food</td></tr><tr><td>Especializadas</td><td>Enfoque en nichos específicos (vegano, sin gluten)</td><td>Usuarios con restricciones específicas</td><td>Plant Jammer, DishGen</td></tr></tbody></table></div></figure>
 
 
 
@@ -286,7 +286,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Métrica</th><th>Antes de IA</th><th>Después de IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo de Cotización</td><td>48 horas</td><td>2 horas</td><td>-96%</td></tr><tr><td>Precisión en Cantidades</td><td>78%</td><td>94%</td><td>+16%</td></tr><tr><td>Desperdicio Alimentario</td><td>12%</td><td>4%</td><td>-67%</td></tr><tr><td>Satisfacción Cliente</td><td>8.2/10</td><td>9.1/10</td><td>+11%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Métrica</th><th>Antes de IA</th><th>Después de IA</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo de Cotización</td><td>48 horas</td><td>2 horas</td><td>-96%</td></tr><tr><td>Precisión en Cantidades</td><td>78%</td><td>94%</td><td>+16%</td></tr><tr><td>Desperdicio Alimentario</td><td>12%</td><td>4%</td><td>-67%</td></tr><tr><td>Satisfacción Cliente</td><td>8.2/10</td><td>9.1/10</td><td>+11%</td></tr></tbody></table></div></figure>
 
 
 
@@ -425,7 +425,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>24/7 Especializado</td><td>Resolución inmediata de problemas</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>Ilimitada</td><td>Crecimiento sin restricciones</td></tr><tr><td>ROI Demostrable</td><td>Difícil de medir</td><td>300-1000% mensual</td><td>Retorno de inversión documentado</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Característica</th><th>Herramientas Gratuitas</th><th>AI Chef Pro</th><th>Beneficio Diferencial</th></tr></thead><tbody><tr><td>Precisión de Recetas</td><td>60-70%</td><td>95%</td><td>+35% precisión validada</td></tr><tr><td>Personalización</td><td>Básica</td><td>Hiperespecífica</td><td>Adaptación total a necesidades</td></tr><tr><td>Soporte Técnico</td><td>Limitado/Inexistente</td><td>24/7 Especializado</td><td>Resolución inmediata de problemas</td></tr><tr><td>Integración</td><td>Herramientas aisladas</td><td>Ecosistema completo</td><td>Flujo de trabajo unificado</td></tr><tr><td>Escalabilidad</td><td>Limitada</td><td>Ilimitada</td><td>Crecimiento sin restricciones</td></tr><tr><td>ROI Demostrable</td><td>Difícil de medir</td><td>300-1000% mensual</td><td>Retorno de inversión documentado</td></tr></tbody></table></div></figure>
 
 
 
@@ -561,7 +561,7 @@ wpId: 1606
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>€15-25</td><td>€300-500</td><td>1200-2000%</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>€25-50</td><td>€800-1200</td><td>1600-2400%</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>€50-100</td><td>€2000-4000</td><td>2000-4000%</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>€100-200</td><td>€5000-15000</td><td>2500-7500%</td><td>1-2 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Esperado</th><th>ROI Proyectado</th><th>Período de Amortización</th></tr></thead><tbody><tr><td>Restaurante Pequeño (30 pax)</td><td>€15-25</td><td>€300-500</td><td>1200-2000%</td><td>1 mes</td></tr><tr><td>Restaurante Mediano (60 pax)</td><td>€25-50</td><td>€800-1200</td><td>1600-2400%</td><td>3-4 semanas</td></tr><tr><td>Empresa Catering</td><td>€50-100</td><td>€2000-4000</td><td>2000-4000%</td><td>2-3 semanas</td></tr><tr><td>Cadena Restaurantes</td><td>€100-200</td><td>€5000-15000</td><td>2500-7500%</td><td>1-2 semanas</td></tr></tbody></table></div></figure>
 
 
 

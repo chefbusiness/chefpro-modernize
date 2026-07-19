@@ -69,7 +69,7 @@ wpId: 2702
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Función</th><th>Ejemplo de uso</th></tr><tr><td>Alginato</td><td>Gelificación en frío</td><td>Caviar de frutas</td></tr><tr><td>Agar-agar</td><td>Gel firme y termoestable</td><td>Gelatina transparente</td></tr><tr><td>Lecitina</td><td>Emulsionante y espumante</td><td>Espumas aéreas</td></tr><tr><td>Goma xantana</td><td>Espesante</td><td>Salsas suspendidas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Ingrediente</th><th>Función</th><th>Ejemplo de uso</th></tr><tr><td>Alginato</td><td>Gelificación en frío</td><td>Caviar de frutas</td></tr><tr><td>Agar-agar</td><td>Gel firme y termoestable</td><td>Gelatina transparente</td></tr><tr><td>Lecitina</td><td>Emulsionante y espumante</td><td>Espumas aéreas</td></tr><tr><td>Goma xantana</td><td>Espesante</td><td>Salsas suspendidas</td></tr></tbody></table></div></figure>
 
 
 
@@ -171,7 +171,7 @@ wpId: 2702
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Ciencia aplicada a la cocina</td></tr><tr><td><strong>Origen</strong></td><td>1992, Kurti y This</td></tr><tr><td><strong>Pionero</strong></td><td>Ferran Adrià (Bulli)</td></tr><tr><td><strong>Base científica</strong></td><td>Física y química de alimentos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Definición</strong></td><td>Ciencia aplicada a la cocina</td></tr><tr><td><strong>Origen</strong></td><td>1992, Kurti y This</td></tr><tr><td><strong>Pionero</strong></td><td>Ferran Adrià (Bulli)</td></tr><tr><td><strong>Base científica</strong></td><td>Física y química de alimentos</td></tr></tbody></table></div></figure>
 
 
 

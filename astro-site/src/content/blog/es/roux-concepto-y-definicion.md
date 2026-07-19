@@ -21,7 +21,7 @@ wpId: 2730
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/roux-cuerpo.jpg" alt="Tres tipos de roux: blanco, rubio y oscuro" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Tipos de roux: blanco, rubio y oscuro</h2>
 <p>No todos los roux son iguales. La diferencia principal entre ellos está en el <strong>tiempo de cocción</strong> y, por tanto, en el color y el sabor que desarrollan. Elegir uno u otro depende del resultado que busques: ligereza para una salsa láctea, potencia para un fondo oscuro o un punto intermedio para preparaciones versátiles.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Tipo de roux</th>
@@ -54,7 +54,7 @@ wpId: 2730
 <td>Gravy, gumbo, salsas para carnes rojas, fondos oscuros</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Roux blanco: el más delicado</h3>
 <p>Se cocina lo justo para que la harina pierda el sabor a crudo, pero sin tomar color. La clave aquí es mantener un fuego bajo y retirar la mezcla en cuanto empieza a burbujear ligeramente. Es el compañero inseparable de la <a href="https://aichef.pro/blog/bechamel-concepto-y-definicion">salsa bechamel</a> y de cualquier preparación donde queramos espesar sin alterar el color blanco ni añadir notas tostadas.</p>
 <h3>Roux rubio: el equilibrio perfecto</h3>

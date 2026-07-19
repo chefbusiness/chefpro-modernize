@@ -98,7 +98,7 @@ wpId: 3277
 <h3>Acompañamientos:</h3>
 <p>El risotto es autónomo. Si se sirve como primer plato, seguir con carne o pescado a la plancha. Nunca con más arroz o pasta.</p>
 <h2>Conservación</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Método</th>
@@ -123,7 +123,7 @@ wpId: 3277
 <td style="padding: 12px; border: 1px solid #ddd;">Se vuelve pastoso</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>FAQ &#8211; Preguntas Frecuentes</h2>
 <p><strong>¿Puedo usar arroz largo o basmati?</strong><br /> No. El risotto requiere arroz de grano corto y alto contenido de almidón (arborio, carnaroli, vialone nano). Los arroces largos no liberan el almidón necesario.</p>
 <p><strong>¿Por qué mi risotto quedó pastoso/seco?</strong><br /> Pastoso: cocinado demasiado tiempo o removido en exceso. Seco: falta de caldo o cocción insuficiente. El punto ideal es al dente con textura ondulante («all&#8217;onda»).</p>
@@ -132,7 +132,7 @@ wpId: 3277
 <p><strong>¿Qué son las setas porcini?</strong><br /> Boletus edulis, el «cerdo» de los bosques italianos. Tienen sabor intenso a nuez y tierra. Secas concentran más sabor que frescas.</p>
 <p><strong>¿Puedo usar solo champiñones?</strong><br /> Sí, pero el sabor será más suave. Complementa con un poco de tomillo o romero para aportar complejidad.</p>
 <h2>Tabla Resumen</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Aspecto</th>
@@ -161,7 +161,7 @@ wpId: 3277
 <td style="padding: 12px; border: 1px solid #ddd;">Norte de Italia (Lombardía/Piemonte)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Glosario Relacionado</h2>
 <ul>
 <li>Sofrito &#8211; Base aromática de cebolla y ajo</li>

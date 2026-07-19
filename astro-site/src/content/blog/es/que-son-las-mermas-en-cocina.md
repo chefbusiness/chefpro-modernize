@@ -75,7 +75,7 @@ wpId: 616
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>Rendimiento Promedio</th><th>Merma Típica</th></tr></thead><tbody><tr><td>Pollo entero</td><td>70-75%</td><td>25-30%</td></tr><tr><td>Pescado entero</td><td>50-60%</td><td>40-50%</td></tr><tr><td>Verduras de hoja</td><td>85-90%</td><td>10-15%</td></tr><tr><td>Carne de res (corte promedio)</td><td>80-85%</td><td>15-20%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>Rendimiento Promedio</th><th>Merma Típica</th></tr></thead><tbody><tr><td>Pollo entero</td><td>70-75%</td><td>25-30%</td></tr><tr><td>Pescado entero</td><td>50-60%</td><td>40-50%</td></tr><tr><td>Verduras de hoja</td><td>85-90%</td><td>10-15%</td></tr><tr><td>Carne de res (corte promedio)</td><td>80-85%</td><td>15-20%</td></tr></tbody></table></div></figure>
 
 
 

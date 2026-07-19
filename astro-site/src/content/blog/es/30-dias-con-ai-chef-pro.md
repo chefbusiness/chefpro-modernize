@@ -88,7 +88,7 @@ wpId: 1645
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Métrica</th><th>Antes de AI Chef Pro</th><th>Después de 7 días</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>4 horas</td><td>1.5 horas</td><td>62%</td></tr><tr><td>Mermas promedio</td><td>18%</td><td>15%</td><td>17%</td></tr><tr><td>Ideas creativas/semana</td><td>2-3</td><td>8-10</td><td>200%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Métrica</th><th>Antes de AI Chef Pro</th><th>Después de 7 días</th><th>Mejora</th></tr></thead><tbody><tr><td>Tiempo desarrollo recetas</td><td>4 horas</td><td>1.5 horas</td><td>62%</td></tr><tr><td>Mermas promedio</td><td>18%</td><td>15%</td><td>17%</td></tr><tr><td>Ideas creativas/semana</td><td>2-3</td><td>8-10</td><td>200%</td></tr></tbody></table></div></figure>
 
 
 
@@ -166,7 +166,7 @@ wpId: 1645
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Función</th><th>Tiempo Anterior</th><th>Tiempo con AI</th><th>Reducción</th></tr></thead><tbody><tr><td>Análisis de alérgenos por plato</td><td>15 minutos</td><td>2 minutos</td><td>87%</td></tr><tr><td>Adaptación de recetas</td><td>45 minutos</td><td>8 minutos</td><td>82%</td></tr><tr><td>Documentación de seguridad</td><td>30 minutos</td><td>5 minutos</td><td>83%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Función</th><th>Tiempo Anterior</th><th>Tiempo con AI</th><th>Reducción</th></tr></thead><tbody><tr><td>Análisis de alérgenos por plato</td><td>15 minutos</td><td>2 minutos</td><td>87%</td></tr><tr><td>Adaptación de recetas</td><td>45 minutos</td><td>8 minutos</td><td>82%</td></tr><tr><td>Documentación de seguridad</td><td>30 minutos</td><td>5 minutos</td><td>83%</td></tr></tbody></table></div></figure>
 
 
 
@@ -216,7 +216,7 @@ wpId: 1645
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Métrica Clave</th><th>Antes de AI Chef Pro</th><th>Después de 30 días</th><th>Mejora</th></tr></thead><tbody><tr><td><strong>Eficiencia General</strong></td><td>Baseline 100%</td><td>167%</td><td>+67%</td></tr><tr><td><strong>Reducción de Mermas</strong></td><td>18% promedio</td><td>10.3% promedio</td><td>-43%</td></tr><tr><td><strong>Tiempo Desarrollo Menús</strong></td><td>8 horas/semana</td><td>2.5 horas/semana</td><td>-69%</td></tr><tr><td><strong>Satisfacción Cliente</strong></td><td>4.2/5</td><td>4.7/5</td><td>+12%</td></tr><tr><td><strong>Innovación (platos/mes)</strong></td><td>3-4 nuevos</td><td>12-15 nuevos</td><td>+275%</td></tr><tr><td><strong>Gestión de Estrés (equipo)</strong></td><td>7/10 tensión</td><td>4/10 tensión</td><td>-43%</td></tr><tr><td><strong>Margen de Beneficio</strong></td><td>22%</td><td>31%</td><td>+41%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Métrica Clave</th><th>Antes de AI Chef Pro</th><th>Después de 30 días</th><th>Mejora</th></tr></thead><tbody><tr><td><strong>Eficiencia General</strong></td><td>Baseline 100%</td><td>167%</td><td>+67%</td></tr><tr><td><strong>Reducción de Mermas</strong></td><td>18% promedio</td><td>10.3% promedio</td><td>-43%</td></tr><tr><td><strong>Tiempo Desarrollo Menús</strong></td><td>8 horas/semana</td><td>2.5 horas/semana</td><td>-69%</td></tr><tr><td><strong>Satisfacción Cliente</strong></td><td>4.2/5</td><td>4.7/5</td><td>+12%</td></tr><tr><td><strong>Innovación (platos/mes)</strong></td><td>3-4 nuevos</td><td>12-15 nuevos</td><td>+275%</td></tr><tr><td><strong>Gestión de Estrés (equipo)</strong></td><td>7/10 tensión</td><td>4/10 tensión</td><td>-43%</td></tr><tr><td><strong>Margen de Beneficio</strong></td><td>22%</td><td>31%</td><td>+41%</td></tr></tbody></table></div></figure>
 
 
 
@@ -363,7 +363,7 @@ wpId: 1645
 
 
 
-<figure class="wp-block-table"><table><thead><tr><th>Aspecto</th><th>Método Tradicional</th><th>Con AI Chef Pro</th><th>Ventaja AI</th></tr></thead><tbody><tr><td><strong>Desarrollo de Recetas</strong></td><td>Prueba y error, semanas</td><td>Generación inteligente, horas</td><td>90% más rápido</td></tr><tr><td><strong>Cálculo de Mermas</strong></td><td>Estimaciones, inexacto</td><td>Datos precisos, predictivo</td><td>85% más preciso</td></tr><tr><td><strong>Gestión de Alérgenos</strong></td><td>Manual, propenso a errores</td><td>Automático, 100% seguro</td><td>Eliminación de riesgos</td></tr><tr><td><strong>Creatividad Culinaria</strong></td><td>Limitada por experiencia</td><td>Infinitas posibilidades</td><td>300% más variedad</td></tr><tr><td><strong>Formación de Equipo</strong></td><td>Cursos costosos, tiempo</td><td>Consulta instantánea</td><td>80% reducción costes</td></tr><tr><td><strong>Planificación de Eventos</strong></td><td>Compleja, margen error</td><td>Optimizada, precisa</td><td>95% precisión</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Aspecto</th><th>Método Tradicional</th><th>Con AI Chef Pro</th><th>Ventaja AI</th></tr></thead><tbody><tr><td><strong>Desarrollo de Recetas</strong></td><td>Prueba y error, semanas</td><td>Generación inteligente, horas</td><td>90% más rápido</td></tr><tr><td><strong>Cálculo de Mermas</strong></td><td>Estimaciones, inexacto</td><td>Datos precisos, predictivo</td><td>85% más preciso</td></tr><tr><td><strong>Gestión de Alérgenos</strong></td><td>Manual, propenso a errores</td><td>Automático, 100% seguro</td><td>Eliminación de riesgos</td></tr><tr><td><strong>Creatividad Culinaria</strong></td><td>Limitada por experiencia</td><td>Infinitas posibilidades</td><td>300% más variedad</td></tr><tr><td><strong>Formación de Equipo</strong></td><td>Cursos costosos, tiempo</td><td>Consulta instantánea</td><td>80% reducción costes</td></tr><tr><td><strong>Planificación de Eventos</strong></td><td>Compleja, margen error</td><td>Optimizada, precisa</td><td>95% precisión</td></tr></tbody></table></div></figure>
 
 
 

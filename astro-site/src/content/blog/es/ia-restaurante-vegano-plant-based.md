@@ -81,7 +81,7 @@ wpId: 3490
 <p>Las herramientas genéricas como <a href="https://aichef.pro/blog/chatgpt-restaurantes-vs-ai-chef-pro-comparativa">ChatGPT</a> ofrecen capacidades de lenguaje natural que pueden aplicarse a tareas de restauración, pero requieren conocimientos técnicos y tiempo de configuración para obtener resultados útiles. Un restaurante que decide usar ChatGPT para generar contenido o responder preguntas debe dedicar horas a entrenar el modelo y refinar los prompts para obtener outputs útiles y consistentes.</p>
 <p>AI Chef Pro representa una alternativa especializada diseñada específicamente para las necesidades del sector de restauración. Con más de 55 herramientas especializadas, la plataforma cubre todo el ciclo de gestión de un restaurante vegano, desde el desarrollo de recetas hasta la gestión de clientes, pasando por <a href="https://aichef.pro/blog">control de costes</a>, marketing y operaciones diarias.</p>
 <p>A continuación, se presenta una tabla comparativa de las principales opciones:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -140,7 +140,7 @@ wpId: 3490
 <td>Media</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Las ventajas de las herramientas especializadas en gastronomía son evidentes. AI Chef Pro ha sido diseñado pensando en los flujos de trabajo específicos de cocinas profesionales, con comprensión de conceptos como escandallos, mise en place, estacionalidad y gestión de alérgenos que las herramientas genéricas simplemente no tienen.</p>
 <p>La suite de 55+ herramientas de AI Chef Pro incluye:</p>
 <ul>

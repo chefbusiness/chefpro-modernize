@@ -44,7 +44,7 @@ wpId: 3423
 
 <p>La siguiente tabla ilustra cómo se aplica esta metodología a un restaurante hipotético con una carta de entrantes, principales y postres. Los datos son orientativos pero reflejan situaciones reales que se encuentran frecuentemente en la restauración.</p>
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Plato</th>
@@ -159,7 +159,7 @@ wpId: 3423
 <td><strong>DOG</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>Analicemos este ejemplo con detalle. Las croquetas de jamón son un claro ejemplo de Star: margen del 67% y 320 ventas mensuales, lo que las convierte en el plato más vendido y uno de los más rentables. Este tipo de plato debe mantenerse siempre en carta, destacarse visualmente y el personal de sala debería recomendarlo activamente.</p>
 

@@ -66,7 +66,7 @@ wpId: 3965
 
 <p>He preparado una tabla con las funciones más relevantes para que veas de un vistazo para qué sirve cada una. Todo esto está operativo ya en la plataforma:</p>
 
-<table>
+<div class="table-scroll"><table>
   <thead>
 <tr>
 <th>Función</th>
@@ -115,7 +115,7 @@ wpId: 3965
 <td>Administrador (configura todo, facturación, usuarios, plantillas), Gerente/Manager (gestiona uno o varios locales) y Empleado (solo completa tareas con PIN).</td>
 </tr>
   </tbody>
-</table>
+</table></div>
 
 <h2>Papel, Excel y WhatsApp frente a un checklist digital</h2>
 <figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" width="1290" height="761" data-attachment-id="3961" data-orig-file="/blog-assets/2026/06/timlup-papel-vs-control-total.jpg" data-orig-size="1320,779" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Screenshot&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;Screenshot&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Screenshot" data-image-description="" data-image-caption="&lt;p&gt;Comparativa del papel disperso frente al control total con checklists digitales de Timlup&lt;/p&gt;
@@ -124,7 +124,7 @@ wpId: 3965
 
 <p>Vamos a ser claros: el papel, el Excel y WhatsApp no son herramientas de gestión, son apaños. Aquí tienes una tabla comparativa que resume por qué una <strong>lista de tareas digital hostelería</strong> como Timlup es un salto de gigante:</p>
 
-<table>
+<div class="table-scroll"><table>
   <thead>
 <tr>
 <th>Criterio</th>
@@ -171,7 +171,7 @@ wpId: 3965
 <td>Mínimos: el semáforo y la generación automática evitan que una lista quede olvidada.</td>
 </tr>
   </tbody>
-</table>
+</table></div>
 
 <h2>Trazabilidad y APPCC: el caso de uso estrella en hostelería</h2>
 
@@ -230,7 +230,7 @@ wpId: 3965
 
 <p>Uno de los puntos que más me gustan: hay un plan gratuito real y el salto a los planes de pago es progresivo. Aquí tienes la tabla con los precios actualizados:</p>
 
-<table>
+<div class="table-scroll"><table>
   <thead>
 <tr>
 <th>Plan</th>
@@ -275,7 +275,7 @@ wpId: 3965
 <td>490 €/año</td>
 </tr>
   </tbody>
-</table>
+</table></div>
 
 <p>El plan Gratis no caduca ni requiere tarjeta; es ideal para probar la plataforma con un local pequeño y un par de empleados. Las funciones de IA aplicada a la gestión que comentaba antes —agente que aprende, reseñas de Google a tareas, listas por voz— estarán disponibles en los planes Pro y Avanzado cuando se activen.</p>
 

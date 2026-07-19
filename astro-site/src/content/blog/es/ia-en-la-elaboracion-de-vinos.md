@@ -50,7 +50,7 @@ wpId: 1838
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Valor 2024</th><th>Variación vs. 2023</th><th>Proyección 2025</th></tr></thead><tbody><tr><td>Mercado global software bodegas</td><td>12.600 M$</td><td>+8,2%</td><td>13.500 M$</td></tr><tr><td>Consumo vino España</td><td>9,9 M hl</td><td>+2,5%</td><td>10,1 M hl</td></tr><tr><td>Bodegas exportadoras España</td><td>3.995</td><td>+2,1%</td><td>4.050</td></tr><tr><td>Superficie viñedo ecológico</td><td>166.285 ha</td><td>+4,8%</td><td>175.000 ha</td></tr><tr><td>Facturación media por bodega</td><td>747.585 €</td><td>+1,2%</td><td>760.000 €</td></tr><tr><td>Adopción IA en bodegas premium</td><td>35%</td><td>+12 pp</td><td>45%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Valor 2024</th><th>Variación vs. 2023</th><th>Proyección 2025</th></tr></thead><tbody><tr><td>Mercado global software bodegas</td><td>12.600 M$</td><td>+8,2%</td><td>13.500 M$</td></tr><tr><td>Consumo vino España</td><td>9,9 M hl</td><td>+2,5%</td><td>10,1 M hl</td></tr><tr><td>Bodegas exportadoras España</td><td>3.995</td><td>+2,1%</td><td>4.050</td></tr><tr><td>Superficie viñedo ecológico</td><td>166.285 ha</td><td>+4,8%</td><td>175.000 ha</td></tr><tr><td>Facturación media por bodega</td><td>747.585 €</td><td>+1,2%</td><td>760.000 €</td></tr><tr><td>Adopción IA en bodegas premium</td><td>35%</td><td>+12 pp</td><td>45%</td></tr></tbody></table></div></figure>
 
 
 
@@ -102,7 +102,7 @@ wpId: 1838
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tecnología de Viticultura de Precisión</th><th>Función Principal</th><th>Reducción de Costes</th><th>Mejora de Eficiencia</th></tr></thead><tbody><tr><td>Drones multiespectrales</td><td>Mapeo de vigor y estrés</td><td>15-25%</td><td>40%</td></tr><tr><td>Sensores IoT de suelo</td><td>Monitoreo hídrico continuo</td><td>20-30%</td><td>35%</td></tr><tr><td>Imágenes satelitales</td><td>Estimación de producción</td><td>10-15%</td><td>96%</td></tr><tr><td>Cámaras termográficas</td><td>Detección estrés hídrico</td><td>25-35%</td><td>45%</td></tr><tr><td>Modelos predictivos IA</td><td>Pronóstico enfermedades</td><td>30-40%</td><td>80%</td></tr><tr><td>Tractores autónomos</td><td>Labores mecánicas</td><td>20-30%</td><td>50%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tecnología de Viticultura de Precisión</th><th>Función Principal</th><th>Reducción de Costes</th><th>Mejora de Eficiencia</th></tr></thead><tbody><tr><td>Drones multiespectrales</td><td>Mapeo de vigor y estrés</td><td>15-25%</td><td>40%</td></tr><tr><td>Sensores IoT de suelo</td><td>Monitoreo hídrico continuo</td><td>20-30%</td><td>35%</td></tr><tr><td>Imágenes satelitales</td><td>Estimación de producción</td><td>10-15%</td><td>96%</td></tr><tr><td>Cámaras termográficas</td><td>Detección estrés hídrico</td><td>25-35%</td><td>45%</td></tr><tr><td>Modelos predictivos IA</td><td>Pronóstico enfermedades</td><td>30-40%</td><td>80%</td></tr><tr><td>Tractores autónomos</td><td>Labores mecánicas</td><td>20-30%</td><td>50%</td></tr></tbody></table></div></figure>
 
 
 
@@ -186,7 +186,7 @@ wpId: 1838
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Funcionalidad WINEGRID</th><th>Parámetros Monitorizados</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Fermentation Monitor</td><td>Temperatura, densidad, velocidad de consumo de azúcar</td><td>Predicción de paradas fermentativas</td></tr><tr><td>Barrel Monitor</td><td>Temperatura, nivel de llenado, evaporación</td><td>Optimización de crianza en barrica</td></tr><tr><td>Tank Monitor</td><td>Temperatura, oxígeno disuelto, pH, turbidez</td><td>Control de estabilización</td></tr><tr><td>Analytics Dashboard</td><td>Históricos, tendencias, alertas predictivas</td><td>Toma de decisiones informada</td></tr><tr><td>Integration API</td><td>Conexión con ERP, CRM, sistemas de trazabilidad</td><td>Ecosistema digital unificado</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Funcionalidad WINEGRID</th><th>Parámetros Monitorizados</th><th>Beneficio Principal</th></tr></thead><tbody><tr><td>Fermentation Monitor</td><td>Temperatura, densidad, velocidad de consumo de azúcar</td><td>Predicción de paradas fermentativas</td></tr><tr><td>Barrel Monitor</td><td>Temperatura, nivel de llenado, evaporación</td><td>Optimización de crianza en barrica</td></tr><tr><td>Tank Monitor</td><td>Temperatura, oxígeno disuelto, pH, turbidez</td><td>Control de estabilización</td></tr><tr><td>Analytics Dashboard</td><td>Históricos, tendencias, alertas predictivas</td><td>Toma de decisiones informada</td></tr><tr><td>Integration API</td><td>Conexión con ERP, CRM, sistemas de trazabilidad</td><td>Ecosistema digital unificado</td></tr></tbody></table></div></figure>
 
 
 
@@ -322,7 +322,7 @@ wpId: 1838
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Barrera</th><th>Impacto</th><th>Solución Propuesta</th></tr></thead><tbody><tr><td>Inversión inicial elevada</td><td>Alto</td><td>Modelos SaaS y financiación sectorial</td></tr><tr><td>Resistencia al cambio</td><td>Medio-Alto</td><td>Formación y casos de éxito demostrables</td></tr><tr><td>Ciclo de producción anual</td><td>Medio</td><td>Simulaciones y datos históricos</td></tr><tr><td>Falta de talento digital</td><td>Alto</td><td>Partnerships con empresas tech</td></tr><tr><td>Fragmentación del sector</td><td>Medio</td><td>Soluciones escalables y cooperativas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Barrera</th><th>Impacto</th><th>Solución Propuesta</th></tr></thead><tbody><tr><td>Inversión inicial elevada</td><td>Alto</td><td>Modelos SaaS y financiación sectorial</td></tr><tr><td>Resistencia al cambio</td><td>Medio-Alto</td><td>Formación y casos de éxito demostrables</td></tr><tr><td>Ciclo de producción anual</td><td>Medio</td><td>Simulaciones y datos históricos</td></tr><tr><td>Falta de talento digital</td><td>Alto</td><td>Partnerships con empresas tech</td></tr><tr><td>Fragmentación del sector</td><td>Medio</td><td>Soluciones escalables y cooperativas</td></tr></tbody></table></div></figure>
 
 
 

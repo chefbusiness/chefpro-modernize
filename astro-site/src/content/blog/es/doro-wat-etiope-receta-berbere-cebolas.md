@@ -83,7 +83,7 @@ wpId: 3576
 <h3>3. Huesos en el Pollo</h3>
 <p>El pollo con hueso aporta más sabor. No usar pechugas deshuesadas.</p>
 <h2>Tabla Resumen</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px;">Aspecto</th>
@@ -108,7 +108,7 @@ wpId: 3576
 <td>Etiopía</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <div style="background: #f5f5f5; padding: 20px; border-left: 4px solid #ffde59; margin: 30px 0;">
 <p><strong>Contenido desarrollado y creado usando AI Chef Pro</strong></p>
 </p></div>

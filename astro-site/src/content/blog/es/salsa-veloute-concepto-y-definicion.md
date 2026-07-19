@@ -59,7 +59,7 @@ wpId: 2732
 <p>La velouté no solo sirve para hacer otras salsas. En el día a día de un restaurante tiene aplicaciones directas que resuelven servicios enteros.</p>
 <p>Como <strong>salsa de cobertura</strong>, funciona perfectamente sobre aves escalfadas, pescados al vapor o verduras cocidas. Su textura ligera no enmascara el producto, lo realza. En <strong>gratinados</strong>, una velouté enriquecida con queso y yema se convierte en una capa dorada y cremosa bajo el salamandra. En <strong>rellenos y ligazones</strong> —croquetas, timbales, pasteles de pescado— aporta jugosidad sin apelmazar. Y en <strong>potajes y cremas</strong>, sustituir parte del caldo por velouté da una untuosidad natural sin necesidad de añadir patata o nata en exceso.</p>
 <h3>Tabla de proporciones según uso</h3>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Uso</th>
@@ -94,7 +94,7 @@ wpId: 2732
 <td>Media-alta, se mantiene al horno</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Preguntas frecuentes</h2>
 <h3>¿Cuál es la diferencia entre velouté y bechamel?</h3>
 <p>La diferencia fundamental está en el líquido de base. La bechamel se elabora con leche infusionada con cebolla, clavo y laurel, mientras que la velouté utiliza un fondo blanco de ave, pescado o ternera. Además, el roux de la bechamel suele ser blanco (apenas cocinado) y el de la velouté es rubio, ligeramente más cocido para aportar un matiz tostado sutil. La bechamel es más láctea y densa; la velouté, más ligera y sabrosa a fondo.</p>

@@ -144,7 +144,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de restricción</th><th>Complejidad tradicional</th><th>Solución con IA</th><th>Tiempo ahorrado</th></tr></thead><tbody><tr><td>Alérgenos múltiples</td><td>Requiere consulta manual de cada ingrediente</td><td>Identificación automática y sustituciones inteligentes</td><td>85%</td></tr><tr><td>Dietas especiales (vegano, halal, kosher)</td><td>Menús separados con logística duplicada</td><td>Menús integrados con variaciones automáticas</td><td>70%</td></tr><tr><td>Preferencias individuales</td><td>Imposible a escala</td><td>Personalización basada en datos de cada comensal</td><td>N/A (antes imposible)</td></tr><tr><td>Adaptación estacional</td><td>Investigación manual de disponibilidad</td><td>Análisis predictivo de mercado</td><td>60%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de restricción</th><th>Complejidad tradicional</th><th>Solución con IA</th><th>Tiempo ahorrado</th></tr></thead><tbody><tr><td>Alérgenos múltiples</td><td>Requiere consulta manual de cada ingrediente</td><td>Identificación automática y sustituciones inteligentes</td><td>85%</td></tr><tr><td>Dietas especiales (vegano, halal, kosher)</td><td>Menús separados con logística duplicada</td><td>Menús integrados con variaciones automáticas</td><td>70%</td></tr><tr><td>Preferencias individuales</td><td>Imposible a escala</td><td>Personalización basada en datos de cada comensal</td><td>N/A (antes imposible)</td></tr><tr><td>Adaptación estacional</td><td>Investigación manual de disponibilidad</td><td>Análisis predictivo de mercado</td><td>60%</td></tr></tbody></table></div></figure>
 
 
 
@@ -206,7 +206,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Categoría de ingrediente</th><th>Merma promedio sin IA</th><th>Merma optimizada con IA</th><th>Ahorro por 100 kg</th></tr></thead><tbody><tr><td>Pescados y mariscos</td><td>45-55%</td><td>30-38%</td><td>15-17 kg</td></tr><tr><td>Carnes rojas</td><td>25-35%</td><td>15-22%</td><td>10-13 kg</td></tr><tr><td>Verduras de hoja</td><td>30-40%</td><td>18-25%</td><td>12-15 kg</td></tr><tr><td>Frutas cítricas</td><td>40-50%</td><td>25-32%</td><td>15-18 kg</td></tr><tr><td>Tubérculos y raíces</td><td>20-25%</td><td>8-12%</td><td>12-13 kg</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Categoría de ingrediente</th><th>Merma promedio sin IA</th><th>Merma optimizada con IA</th><th>Ahorro por 100 kg</th></tr></thead><tbody><tr><td>Pescados y mariscos</td><td>45-55%</td><td>30-38%</td><td>15-17 kg</td></tr><tr><td>Carnes rojas</td><td>25-35%</td><td>15-22%</td><td>10-13 kg</td></tr><tr><td>Verduras de hoja</td><td>30-40%</td><td>18-25%</td><td>12-15 kg</td></tr><tr><td>Frutas cítricas</td><td>40-50%</td><td>25-32%</td><td>15-18 kg</td></tr><tr><td>Tubérculos y raíces</td><td>20-25%</td><td>8-12%</td><td>12-13 kg</td></tr></tbody></table></div></figure>
 
 
 
@@ -395,7 +395,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Descripción</th><th>Objetivo típico</th><th>Mejora con IA</th></tr></thead><tbody><tr><td>Food Cost Real vs. Presupuestado</td><td>Desviación entre coste planificado y ejecutado</td><td>&lt; 5%</td><td>Reducción del 60% en desviaciones</td></tr><tr><td>Ratio de Desperdicio</td><td>Porcentaje de comida no consumida</td><td>&lt; 10%</td><td>Reducción del 25-30%</td></tr><tr><td>Satisfacción del Cliente</td><td>Puntuación NPS post-evento</td><td>&gt; 70</td><td>Incremento de 15-20 puntos</td></tr><tr><td>Tiempo de Preparación</td><td>Horas totales de trabajo en cocina</td><td>Según presupuesto</td><td>Reducción del 20-25%</td></tr><tr><td>Margen Operativo</td><td>Beneficio real del evento</td><td>&gt; 25%</td><td>Incremento del 15-18%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Métrica</th><th>Descripción</th><th>Objetivo típico</th><th>Mejora con IA</th></tr></thead><tbody><tr><td>Food Cost Real vs. Presupuestado</td><td>Desviación entre coste planificado y ejecutado</td><td>&lt; 5%</td><td>Reducción del 60% en desviaciones</td></tr><tr><td>Ratio de Desperdicio</td><td>Porcentaje de comida no consumida</td><td>&lt; 10%</td><td>Reducción del 25-30%</td></tr><tr><td>Satisfacción del Cliente</td><td>Puntuación NPS post-evento</td><td>&gt; 70</td><td>Incremento de 15-20 puntos</td></tr><tr><td>Tiempo de Preparación</td><td>Horas totales de trabajo en cocina</td><td>Según presupuesto</td><td>Reducción del 20-25%</td></tr><tr><td>Margen Operativo</td><td>Beneficio real del evento</td><td>&gt; 25%</td><td>Incremento del 15-18%</td></tr></tbody></table></div></figure>
 
 
 
@@ -720,7 +720,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Desperdicio alimentario</td><td>18%</td><td>9%</td><td>-50%</td></tr><tr><td>Tiempo planificación/evento</td><td>12-15 horas</td><td>4-6 horas</td><td>-60%</td></tr><tr><td>Incidentes alérgenos</td><td>2-3/mes</td><td>0</td><td>-100%</td></tr><tr><td>Margen operativo</td><td>15%</td><td>24%</td><td>+60%</td></tr><tr><td>Satisfacción cliente (NPS)</td><td>62</td><td>78</td><td>+26%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Indicador</th><th>Antes</th><th>Después</th><th>Mejora</th></tr></thead><tbody><tr><td>Desperdicio alimentario</td><td>18%</td><td>9%</td><td>-50%</td></tr><tr><td>Tiempo planificación/evento</td><td>12-15 horas</td><td>4-6 horas</td><td>-60%</td></tr><tr><td>Incidentes alérgenos</td><td>2-3/mes</td><td>0</td><td>-100%</td></tr><tr><td>Margen operativo</td><td>15%</td><td>24%</td><td>+60%</td></tr><tr><td>Satisfacción cliente (NPS)</td><td>62</td><td>78</td><td>+26%</td></tr></tbody></table></div></figure>
 
 
 
@@ -873,7 +873,7 @@ wpId: 1825
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Explorar funcionalidades</td><td>Acceso básico a herramientas principales</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs freelance, eventos pequeños</td><td>Acceso completo con límites mensuales</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Pequeñas empresas de catering</td><td>Límites expandidos, funciones avanzadas</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Empresas de catering establecidas</td><td>Uso extensivo, análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Grandes operadores, consultoras</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>Características destacadas</th></tr></thead><tbody><tr><td><strong>Miembro (Gratis)</strong></td><td>0€/mes</td><td>Explorar funcionalidades</td><td>Acceso básico a herramientas principales</td></tr><tr><td><strong>Pro</strong></td><td>10€/mes</td><td>Chefs freelance, eventos pequeños</td><td>Acceso completo con límites mensuales</td></tr><tr><td><strong>Premium</strong></td><td>15€/mes</td><td>Pequeñas empresas de catering</td><td>Límites expandidos, funciones avanzadas</td></tr><tr><td><strong>Premium Pro</strong></td><td>25€/mes</td><td>Empresas de catering establecidas</td><td>Uso extensivo, análisis avanzado</td></tr><tr><td><strong>Premium Plus</strong></td><td>50€/mes</td><td>Grandes operadores, consultoras</td><td>Uso ilimitado, soporte prioritario</td></tr></tbody></table></div></figure>
 
 
 

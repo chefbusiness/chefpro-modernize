@@ -23,7 +23,7 @@ wpId: 3264
 <li><strong>pH-dependiente:</strong> Entornos ácidos ralentizan la oxidación enzimática.</li>
 </ul>
 <h3>Tipos de Oxidación en Alimentos</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -53,7 +53,7 @@ wpId: 3264
 <td style="padding: 12px; border: 1px solid #ddd;">Cambio de color (rojo→marrón)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Oxidación Enzimática (Pardeamiento)</h2>
 <h3>Mecanismo Bioquímico</h3>
 <p>Cuando cortamos una manzana o papa, rompemos las células liberando:</p>
@@ -86,7 +86,7 @@ wpId: 3264
 <li><strong>Aldehídos y cetonas:</strong> Responsables de olores rancios.</li>
 </ul>
 <h3>Factores que Aceleran</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Factor</th>
@@ -116,7 +116,7 @@ wpId: 3264
 <td style="padding: 12px; border: 1px solid #ddd;">Vacío, atmósfera inerte</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/oxidacion-interna.jpg" alt="Prevención de oxidación con limón" style="width: 100%; max-width: 800px; margin: 30px auto; display: block; border-radius: 8px;"></p>
 <h2>Prevención de la Oxidación Enzimática</h2>
 <h3>Métodos Químicos</h3>

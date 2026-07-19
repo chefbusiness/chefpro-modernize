@@ -32,7 +32,7 @@ wpId: 2734
 <p>Cuando los huesos empiezan a parecer frágiles y el caldo ha reducido a la mitad o un tercio, cuela todo por un chino fino o una estameña sin presionar el contenido (apretar extrae amargor). Enfría rápido en baño maría invertido y refrigera. Al día siguiente verás una capa de grasa solidificada que retirarás fácilmente, y el fondo quedará como una gelatina temblorosa que al calentarse se funde en un líquido aterciopelado.</p>
 <h2>Diferencias entre fondo oscuro y fondo blanco</h2>
 <p>Muchos cocineros novatos los confunden, pero en realidad son dos mundos organolépticos distintos, cada uno con su técnica y propósito. La tabla inferior resume las claves:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -67,7 +67,7 @@ wpId: 2734
 <td>Veloutés, sopas claras, braseados ligeros</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>El <a href="https://aichef.pro/blog/fondo-blanco-concepto-y-definicion">fondo blanco</a> es el lienzo neutro; el oscuro es el trazo grueso con personalidad. Si tu plato necesita un golpe de sabor que recuerde a asado, el oscuro es la herramienta; si buscas que la protagonista sea una verdura sutil o una carne blanca, el blanco respeta mejor ese equilibrio.</p>
 <h2>Aplicaciones en la cocina profesional</h2>
 <p>El fondo oscuro no se bebe en taza, sino que se convierte en el armazón de otras preparaciones. Su potencia hace que rinda mucho incluso en pequeñas cantidades, y en cocina profesional se prepara en grandes ollas y se congela en porciones.</p>

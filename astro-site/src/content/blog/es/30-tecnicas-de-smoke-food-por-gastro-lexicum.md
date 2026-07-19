@@ -34,7 +34,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Elemento</th><th>Función</th><th>Impacto en el Resultado</th></tr></thead><tbody><tr><td>Temperatura</td><td>Control de cocción</td><td>Textura y jugosidad</td></tr><tr><td>Humedad</td><td>Penetración del humo</td><td>Intensidad del ahumado</td></tr><tr><td>Tiempo</td><td>Desarrollo de sabores</td><td>Profundidad del ahumado</td></tr><tr><td>Tipo de madera</td><td>Perfil aromático</td><td>Carácter del producto final</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Elemento</th><th>Función</th><th>Impacto en el Resultado</th></tr></thead><tbody><tr><td>Temperatura</td><td>Control de cocción</td><td>Textura y jugosidad</td></tr><tr><td>Humedad</td><td>Penetración del humo</td><td>Intensidad del ahumado</td></tr><tr><td>Tiempo</td><td>Desarrollo de sabores</td><td>Profundidad del ahumado</td></tr><tr><td>Tipo de madera</td><td>Perfil aromático</td><td>Carácter del producto final</td></tr></tbody></table></div></figure>
 
 
 
@@ -290,7 +290,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Técnica</th><th>Temperatura Principal</th><th>Tiempo Promedio</th><th>Aplicación Ideal</th></tr></thead><tbody><tr><td>Ahumado por Etapas</td><td>30-80°C</td><td>8-12 horas</td><td>Jamones, paletas</td></tr><tr><td>Reverse Smoking</td><td>60-150°C</td><td>4-6 horas</td><td>Cortes premium</td></tr><tr><td>Hidratación Controlada</td><td>85°C</td><td>5-7 horas</td><td>Aves, cerdo</td></tr><tr><td>Rotativo</td><td>90°C</td><td>4-6 horas</td><td>Embutidos</td></tr><tr><td>Presión Negativa</td><td>40-50°C</td><td>2-3 horas</td><td>Pescados</td></tr><tr><td>Infusión de Hierbas</td><td>65-75°C</td><td>3-4 horas</td><td>Carnes blancas</td></tr><tr><td>Microahumado</td><td>30-35°C</td><td>30-60 min</td><td>Quesos, vegetales</td></tr><tr><td>Maduración Extendida</td><td>10-25°C</td><td>7-14 días</td><td>Embutidos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Técnica</th><th>Temperatura Principal</th><th>Tiempo Promedio</th><th>Aplicación Ideal</th></tr></thead><tbody><tr><td>Ahumado por Etapas</td><td>30-80°C</td><td>8-12 horas</td><td>Jamones, paletas</td></tr><tr><td>Reverse Smoking</td><td>60-150°C</td><td>4-6 horas</td><td>Cortes premium</td></tr><tr><td>Hidratación Controlada</td><td>85°C</td><td>5-7 horas</td><td>Aves, cerdo</td></tr><tr><td>Rotativo</td><td>90°C</td><td>4-6 horas</td><td>Embutidos</td></tr><tr><td>Presión Negativa</td><td>40-50°C</td><td>2-3 horas</td><td>Pescados</td></tr><tr><td>Infusión de Hierbas</td><td>65-75°C</td><td>3-4 horas</td><td>Carnes blancas</td></tr><tr><td>Microahumado</td><td>30-35°C</td><td>30-60 min</td><td>Quesos, vegetales</td></tr><tr><td>Maduración Extendida</td><td>10-25°C</td><td>7-14 días</td><td>Embutidos</td></tr></tbody></table></div></figure>
 
 
 
@@ -564,7 +564,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Técnica Moderna</th><th>Temperatura de Trabajo</th><th>Duración</th><th>Aplicación Principal</th></tr></thead><tbody><tr><td>Ultrasónico</td><td>20-25°C</td><td>30-90 min</td><td>Hierbas, microgreens</td></tr><tr><td>Criogénico</td><td>-20°C a 20°C</td><td>Ciclos de 4-6h</td><td>Pescados grasos</td></tr><tr><td>Resonancia Magnética</td><td>40-50°C</td><td>2-3h</td><td>Jamones enteros</td></tr><tr><td>Micro-Pulsos</td><td>60°C</td><td>3-4h</td><td>Carnes rojas</td></tr><tr><td>Atmósfera Modificada</td><td>35-45°C</td><td>4-6h</td><td>Conservación larga</td></tr><tr><td>Nano-Ahumado</td><td>30-40°C</td><td>1-2h</td><td>Alimentos densos</td></tr><tr><td>Plasma Frío</td><td>25-30°C</td><td>45-60 min</td><td>Quesos, frutas</td></tr><tr><td>Presión Oscilante</td><td>55-65°C</td><td>3-4h</td><td>Embutidos</td></tr><tr><td>Electroestático</td><td>45-55°C</td><td>2-3h</td><td>Superficies irregulares</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Técnica Moderna</th><th>Temperatura de Trabajo</th><th>Duración</th><th>Aplicación Principal</th></tr></thead><tbody><tr><td>Ultrasónico</td><td>20-25°C</td><td>30-90 min</td><td>Hierbas, microgreens</td></tr><tr><td>Criogénico</td><td>-20°C a 20°C</td><td>Ciclos de 4-6h</td><td>Pescados grasos</td></tr><tr><td>Resonancia Magnética</td><td>40-50°C</td><td>2-3h</td><td>Jamones enteros</td></tr><tr><td>Micro-Pulsos</td><td>60°C</td><td>3-4h</td><td>Carnes rojas</td></tr><tr><td>Atmósfera Modificada</td><td>35-45°C</td><td>4-6h</td><td>Conservación larga</td></tr><tr><td>Nano-Ahumado</td><td>30-40°C</td><td>1-2h</td><td>Alimentos densos</td></tr><tr><td>Plasma Frío</td><td>25-30°C</td><td>45-60 min</td><td>Quesos, frutas</td></tr><tr><td>Presión Oscilante</td><td>55-65°C</td><td>3-4h</td><td>Embutidos</td></tr><tr><td>Electroestático</td><td>45-55°C</td><td>2-3h</td><td>Superficies irregulares</td></tr></tbody></table></div></figure>
 
 
 
@@ -858,7 +858,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Técnica Innovadora</th><th>Temperatura Principal</th><th>Tiempo de Proceso</th><th>Aplicación Especial</th></tr></thead><tbody><tr><td>Aromático Molecular</td><td>35°C</td><td>45-60 min</td><td>Platos vanguardistas</td></tr><tr><td>Fermentación Controlada</td><td>20-35°C</td><td>5-7 días</td><td>Charcutería innovadora</td></tr><tr><td>Vacío-Humo</td><td>40-45°C</td><td>2-3 horas</td><td>Vegetales y frutas</td></tr><tr><td>Criodeshidratado</td><td>-40°C a 30°C</td><td>24+ horas</td><td>Guarniciones crujientes</td></tr><tr><td>Extracción Supercrítica</td><td>31.1°C</td><td>15-20 min</td><td>Concentrados de sabor</td></tr><tr><td>Enzimático</td><td>45-55°C</td><td>5-6 horas</td><td>Carnes y pescados</td></tr><tr><td>Ultrasonidos</td><td>30-35°C</td><td>45-60 min</td><td>Piezas densas</td></tr><tr><td>Fotocatálisis</td><td>25-30°C</td><td>1-2 horas</td><td>Ahumado superficial</td></tr><tr><td>Biocatalítico</td><td>35-40°C</td><td>4-6 horas</td><td>Productos orgánicos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Técnica Innovadora</th><th>Temperatura Principal</th><th>Tiempo de Proceso</th><th>Aplicación Especial</th></tr></thead><tbody><tr><td>Aromático Molecular</td><td>35°C</td><td>45-60 min</td><td>Platos vanguardistas</td></tr><tr><td>Fermentación Controlada</td><td>20-35°C</td><td>5-7 días</td><td>Charcutería innovadora</td></tr><tr><td>Vacío-Humo</td><td>40-45°C</td><td>2-3 horas</td><td>Vegetales y frutas</td></tr><tr><td>Criodeshidratado</td><td>-40°C a 30°C</td><td>24+ horas</td><td>Guarniciones crujientes</td></tr><tr><td>Extracción Supercrítica</td><td>31.1°C</td><td>15-20 min</td><td>Concentrados de sabor</td></tr><tr><td>Enzimático</td><td>45-55°C</td><td>5-6 horas</td><td>Carnes y pescados</td></tr><tr><td>Ultrasonidos</td><td>30-35°C</td><td>45-60 min</td><td>Piezas densas</td></tr><tr><td>Fotocatálisis</td><td>25-30°C</td><td>1-2 horas</td><td>Ahumado superficial</td></tr><tr><td>Biocatalítico</td><td>35-40°C</td><td>4-6 horas</td><td>Productos orgánicos</td></tr></tbody></table></div></figure>
 
 
 
@@ -917,7 +917,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Alimento</th><th>Técnica Recomendada</th><th>Temperatura Óptima</th><th>Tiempo Estimado</th></tr></thead><tbody><tr><td>Carnes Rojas</td><td>Ahumado en caliente prolongado</td><td>95-110°C</td><td>6-8 horas</td></tr><tr><td>Aves</td><td>Ahumado mixto</td><td>80-95°C</td><td>3-4 horas</td></tr><tr><td>Pescados</td><td>Ahumado en frío</td><td>20-30°C</td><td>24-48 horas</td></tr><tr><td>Vegetales</td><td>Ahumado rápido</td><td>60-75°C</td><td>1-2 horas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Alimento</th><th>Técnica Recomendada</th><th>Temperatura Óptima</th><th>Tiempo Estimado</th></tr></thead><tbody><tr><td>Carnes Rojas</td><td>Ahumado en caliente prolongado</td><td>95-110°C</td><td>6-8 horas</td></tr><tr><td>Aves</td><td>Ahumado mixto</td><td>80-95°C</td><td>3-4 horas</td></tr><tr><td>Pescados</td><td>Ahumado en frío</td><td>20-30°C</td><td>24-48 horas</td></tr><tr><td>Vegetales</td><td>Ahumado rápido</td><td>60-75°C</td><td>1-2 horas</td></tr></tbody></table></div></figure>
 
 
 
@@ -955,7 +955,7 @@ wpId: 1017
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Producto Ahumado</th><th>Maridaje Recomendado</th><th>Presentación Sugerida</th></tr></thead><tbody><tr><td>Salmón ahumado en frío</td><td>Vino blanco Riesling</td><td>Láminas finas con hierbas frescas</td></tr><tr><td>Costillas ahumadas</td><td>Cerveza Porter</td><td>Corte transversal, salsa aparte</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Producto Ahumado</th><th>Maridaje Recomendado</th><th>Presentación Sugerida</th></tr></thead><tbody><tr><td>Salmón ahumado en frío</td><td>Vino blanco Riesling</td><td>Láminas finas con hierbas frescas</td></tr><tr><td>Costillas ahumadas</td><td>Cerveza Porter</td><td>Corte transversal, salsa aparte</td></tr></tbody></table></div></figure>
 
 
 

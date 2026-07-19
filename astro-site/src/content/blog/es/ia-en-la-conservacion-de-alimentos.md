@@ -104,7 +104,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Método</th><th>Temperatura Operativa</th><th>Vida Útil Extendida</th><th>Limitaciones Principales</th></tr></thead><tbody><tr><td>Refrigeración</td><td>0-5°C</td><td>1-7 días</td><td>Control manual de temperatura, pérdida de propiedades organolépticas</td></tr><tr><td>Congelación</td><td>-18°C a -40°C</td><td>2-12 meses</td><td>Cristalización de agua, cambios texturales, consumo energético elevado</td></tr><tr><td>Pasteurización</td><td>72-85°C</td><td>Días-semanas</td><td>Pérdida parcial de nutrientes termosensibles</td></tr><tr><td>Esterilización</td><td>115-130°C</td><td>Meses-años</td><td>Degradación significativa de vitaminas, alteración organoléptica</td></tr><tr><td>Deshidratación</td><td>40-70°C</td><td>6-12 meses</td><td>Cambios irreversibles en textura y sabor</td></tr><tr><td>Salazón/Ahumado</td><td>Variable</td><td>Semanas-meses</td><td>Modificación sustancial del perfil sensorial</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Método</th><th>Temperatura Operativa</th><th>Vida Útil Extendida</th><th>Limitaciones Principales</th></tr></thead><tbody><tr><td>Refrigeración</td><td>0-5°C</td><td>1-7 días</td><td>Control manual de temperatura, pérdida de propiedades organolépticas</td></tr><tr><td>Congelación</td><td>-18°C a -40°C</td><td>2-12 meses</td><td>Cristalización de agua, cambios texturales, consumo energético elevado</td></tr><tr><td>Pasteurización</td><td>72-85°C</td><td>Días-semanas</td><td>Pérdida parcial de nutrientes termosensibles</td></tr><tr><td>Esterilización</td><td>115-130°C</td><td>Meses-años</td><td>Degradación significativa de vitaminas, alteración organoléptica</td></tr><tr><td>Deshidratación</td><td>40-70°C</td><td>6-12 meses</td><td>Cambios irreversibles en textura y sabor</td></tr><tr><td>Salazón/Ahumado</td><td>Variable</td><td>Semanas-meses</td><td>Modificación sustancial del perfil sensorial</td></tr></tbody></table></div></figure>
 
 
 
@@ -218,7 +218,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Categoría de Variable</th><th>Parámetros Específicos</th><th>Impacto en Precisión</th></tr></thead><tbody><tr><td>Condiciones Ambientales</td><td>Temperatura, humedad, presión atmosférica, luz UV</td><td>Alto (35-40%)</td></tr><tr><td>Características del Producto</td><td>pH, actividad de agua (Aw), composición nutricional</td><td>Muy Alto (40-45%)</td></tr><tr><td>Historial de Tratamiento</td><td>Técnicas de procesamiento previo, tiempos de transporte</td><td>Medio (15-20%)</td></tr><tr><td>Datos Microbiológicos</td><td>Carga microbiana inicial, tasa de crecimiento</td><td>Alto (30-35%)</td></tr><tr><td>Patrones de Uso</td><td>Frecuencia de apertura, manipulación, contaminación cruzada</td><td>Medio-Alto (20-25%)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Categoría de Variable</th><th>Parámetros Específicos</th><th>Impacto en Precisión</th></tr></thead><tbody><tr><td>Condiciones Ambientales</td><td>Temperatura, humedad, presión atmosférica, luz UV</td><td>Alto (35-40%)</td></tr><tr><td>Características del Producto</td><td>pH, actividad de agua (Aw), composición nutricional</td><td>Muy Alto (40-45%)</td></tr><tr><td>Historial de Tratamiento</td><td>Técnicas de procesamiento previo, tiempos de transporte</td><td>Medio (15-20%)</td></tr><tr><td>Datos Microbiológicos</td><td>Carga microbiana inicial, tasa de crecimiento</td><td>Alto (30-35%)</td></tr><tr><td>Patrones de Uso</td><td>Frecuencia de apertura, manipulación, contaminación cruzada</td><td>Medio-Alto (20-25%)</td></tr></tbody></table></div></figure>
 
 
 
@@ -342,7 +342,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Rango Tradicional</th><th>Optimización con IA</th><th>Beneficio</th></tr></thead><tbody><tr><td>Presión</td><td>6.000 bar (fijo)</td><td>4.000-9.000 bar (adaptativo)</td><td>Preservación óptima de textura y nutrientes</td></tr><tr><td>Tiempo de aplicación</td><td>3-5 minutos (estándar)</td><td>1-7 minutos (personalizado)</td><td>Reducción del 30% en tiempo de procesamiento</td></tr><tr><td>Temperatura inicial</td><td>Ambiente</td><td>5-15°C (calculado)</td><td>Mejora del 15% en resultados microbiológicos</td></tr><tr><td>Ciclos de presión</td><td>1 ciclo</td><td>1-3 ciclos (según producto)</td><td>Eficacia mejorada en alimentos complejos</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Parámetro</th><th>Rango Tradicional</th><th>Optimización con IA</th><th>Beneficio</th></tr></thead><tbody><tr><td>Presión</td><td>6.000 bar (fijo)</td><td>4.000-9.000 bar (adaptativo)</td><td>Preservación óptima de textura y nutrientes</td></tr><tr><td>Tiempo de aplicación</td><td>3-5 minutos (estándar)</td><td>1-7 minutos (personalizado)</td><td>Reducción del 30% en tiempo de procesamiento</td></tr><tr><td>Temperatura inicial</td><td>Ambiente</td><td>5-15°C (calculado)</td><td>Mejora del 15% en resultados microbiológicos</td></tr><tr><td>Ciclos de presión</td><td>1 ciclo</td><td>1-3 ciclos (según producto)</td><td>Eficacia mejorada en alimentos complejos</td></tr></tbody></table></div></figure>
 
 
 
@@ -434,7 +434,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>MAP Tradicional</th><th>DMA con IA</th><th>Extensión de Vida Útil</th></tr></thead><tbody><tr><td>Carnes rojas frescas</td><td>80% O₂, 20% CO₂</td><td>Variable: 60-80% O₂, 15-30% CO₂, 5-10% N₂</td><td>+35% (7→9-10 días)</td></tr><tr><td>Pescado fresco</td><td>40% CO₂, 30% O₂, 30% N₂</td><td>Variable: 35-50% CO₂, 25-35% O₂, resto N₂</td><td>+45% (4→5-6 días)</td></tr><tr><td>Vegetales de hoja</td><td>5% O₂, 10% CO₂, 85% N₂</td><td>Variable: 3-7% O₂, 8-12% CO₂, resto N₂</td><td>+50% (6→9 días)</td></tr><tr><td>Frutas climatéricas</td><td>2-5% O₂, 3-5% CO₂, resto N₂</td><td>Ajuste según etileno: 1-8% O₂, 2-8% CO₂</td><td>+60% (maduración controlada)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Producto</th><th>MAP Tradicional</th><th>DMA con IA</th><th>Extensión de Vida Útil</th></tr></thead><tbody><tr><td>Carnes rojas frescas</td><td>80% O₂, 20% CO₂</td><td>Variable: 60-80% O₂, 15-30% CO₂, 5-10% N₂</td><td>+35% (7→9-10 días)</td></tr><tr><td>Pescado fresco</td><td>40% CO₂, 30% O₂, 30% N₂</td><td>Variable: 35-50% CO₂, 25-35% O₂, resto N₂</td><td>+45% (4→5-6 días)</td></tr><tr><td>Vegetales de hoja</td><td>5% O₂, 10% CO₂, 85% N₂</td><td>Variable: 3-7% O₂, 8-12% CO₂, resto N₂</td><td>+50% (6→9 días)</td></tr><tr><td>Frutas climatéricas</td><td>2-5% O₂, 3-5% CO₂, resto N₂</td><td>Ajuste según etileno: 1-8% O₂, 2-8% CO₂</td><td>+60% (maduración controlada)</td></tr></tbody></table></div></figure>
 
 
 
@@ -598,7 +598,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Desperdicio Previo</th><th>Desperdicio Post-IA</th><th>Reducción (%)</th><th>Ahorro Mensual (€)</th></tr></thead><tbody><tr><td>Restaurante gastronómico (50 pax)</td><td>12,5% del coste de compras</td><td>4,8%</td><td>61,6%</td><td>€4,200-5,800</td></tr><tr><td>Restaurante casual (120 pax)</td><td>9,2%</td><td>3,5%</td><td>62%</td><td>€6,500-8,900</td></tr><tr><td>Catering eventos (500-1000 pax/semana)</td><td>15,3%</td><td>6,1%</td><td>60,1%</td><td>€12,000-18,000</td></tr><tr><td>Cocina central (2000+ comidas/día)</td><td>11,8%</td><td>4,2%</td><td>64,4%</td><td>€25,000-35,000</td></tr><tr><td>Pastelería/obrador</td><td>8,5%</td><td>2,9%</td><td>65,9%</td><td>€3,200-4,500</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Desperdicio Previo</th><th>Desperdicio Post-IA</th><th>Reducción (%)</th><th>Ahorro Mensual (€)</th></tr></thead><tbody><tr><td>Restaurante gastronómico (50 pax)</td><td>12,5% del coste de compras</td><td>4,8%</td><td>61,6%</td><td>€4,200-5,800</td></tr><tr><td>Restaurante casual (120 pax)</td><td>9,2%</td><td>3,5%</td><td>62%</td><td>€6,500-8,900</td></tr><tr><td>Catering eventos (500-1000 pax/semana)</td><td>15,3%</td><td>6,1%</td><td>60,1%</td><td>€12,000-18,000</td></tr><tr><td>Cocina central (2000+ comidas/día)</td><td>11,8%</td><td>4,2%</td><td>64,4%</td><td>€25,000-35,000</td></tr><tr><td>Pastelería/obrador</td><td>8,5%</td><td>2,9%</td><td>65,9%</td><td>€3,200-4,500</td></tr></tbody></table></div></figure>
 
 
 
@@ -772,7 +772,7 @@ wpId: 1880
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Etapa</th><th>Herramientas AI Chef Pro</th><th>Duración</th><th>Resultado Esperado</th></tr></thead><tbody><tr><td>Inicial (Básica)</td><td>Mermas GenCal, ID Alérgenos</td><td>2 semanas</td><td>Control de rendimientos y trazabilidad</td></tr><tr><td>Intermedia</td><td>+ Cocina Creativa, Gastro Lexicum</td><td>2 semanas</td><td>Desarrollo de recetas optimizadas</td></tr><tr><td>Avanzada</td><td>+ Integración con sensores IoT</td><td>2-4 semanas</td><td>Monitoreo automático continuo</td></tr><tr><td>Completa</td><td>Ecosistema integrado + APIs personalizadas</td><td>4-8 semanas</td><td>Automatización completa</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Etapa</th><th>Herramientas AI Chef Pro</th><th>Duración</th><th>Resultado Esperado</th></tr></thead><tbody><tr><td>Inicial (Básica)</td><td>Mermas GenCal, ID Alérgenos</td><td>2 semanas</td><td>Control de rendimientos y trazabilidad</td></tr><tr><td>Intermedia</td><td>+ Cocina Creativa, Gastro Lexicum</td><td>2 semanas</td><td>Desarrollo de recetas optimizadas</td></tr><tr><td>Avanzada</td><td>+ Integración con sensores IoT</td><td>2-4 semanas</td><td>Monitoreo automático continuo</td></tr><tr><td>Completa</td><td>Ecosistema integrado + APIs personalizadas</td><td>4-8 semanas</td><td>Automatización completa</td></tr></tbody></table></div></figure>
 
 
 

@@ -33,7 +33,7 @@ wpId: 2729
 <p>Más que un fondo, el court-bouillon es un líquido de cocción aromático, rápido y ácido. Se prepara con agua, vino, vinagre, verduras en mirepoix y especias. Se utiliza para escalfar pescados, mariscos o carnes blancas, y se descarta o se reduce para salsas instantáneas. Su función principal es aromatizar el producto que se cuece en él, no tanto servir de base para otras elaboraciones. Es el más humilde de la familia, pero imprescindible en cualquier cocina que se precie.</p>
 <h2>Diferencias entre caldo, fondo y consomé</h2>
 <p>A menudo se usan como sinónimos, pero caldo, fondo y consomé ocupan peldaños distintos en la escalera del sabor. La siguiente tabla resume las diferencias clave:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -74,7 +74,7 @@ wpId: 2729
 <td>Consomé royal</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La diferencia fundamental radica en la concentración y la función. El caldo es un alimento por sí mismo; el fond es un ingrediente; el consomé es la versión más refinada y cristalina, que parte de un caldo o fond y se clarifica con un proceso de “raft” (mezcla de carne magra, verduras y claras de huevo).</p>
 <h2>Por qué el fond es la base de salsas y sopas</h2>
 <p>La respuesta está en la gelatina y el colágeno. Durante la cocción prolongada, los huesos y cartílagos liberan gelatina natural, que no solo espesa ligeramente el líquido, sino que también aporta esa textura aterciopelada que recubre la lengua y hace que los sabores persistan. Cuando reduces un fond para hacer una salsa, esa gelatina se concentra y crea una emulsión estable con las grasas, dando brillo y untuosidad sin necesidad de añadir harina o maicena.</p>

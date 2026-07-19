@@ -202,7 +202,7 @@ wpId: 1671
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tecnología de Personalización</th><th>Implementación 2025</th><th>Predicción 2026</th><th>Impacto Esperado</th></tr></thead><tbody><tr><td>Menús Dinámicos</td><td>15%</td><td>75%</td><td>+45% satisfacción cliente</td></tr><tr><td>Chefs Virtuales</td><td>2%</td><td>30%</td><td>+60% engagement</td></tr><tr><td>Experiencias RA/RV</td><td>5%</td><td>40%</td><td>+70% tiempo estancia</td></tr><tr><td>Análisis Biométrico</td><td>1%</td><td>25%</td><td>+80% precisión recomendaciones</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tecnología de Personalización</th><th>Implementación 2025</th><th>Predicción 2026</th><th>Impacto Esperado</th></tr></thead><tbody><tr><td>Menús Dinámicos</td><td>15%</td><td>75%</td><td>+45% satisfacción cliente</td></tr><tr><td>Chefs Virtuales</td><td>2%</td><td>30%</td><td>+60% engagement</td></tr><tr><td>Experiencias RA/RV</td><td>5%</td><td>40%</td><td>+70% tiempo estancia</td></tr><tr><td>Análisis Biométrico</td><td>1%</td><td>25%</td><td>+80% precisión recomendaciones</td></tr></tbody></table></div></figure>
 
 
 
@@ -516,7 +516,7 @@ wpId: 1671
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Área de Impacto</th><th>Ahorro Estimado</th><th>Incremento Eficiencia</th><th>ROI Promedio</th></tr></thead><tbody><tr><td>Gestión de Inventarios</td><td>35-45%</td><td>60%</td><td>400%</td></tr><tr><td><a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">Costos</a> Laborales</td><td>25-30%</td><td>45%</td><td>320%</td></tr><tr><td>Desperdicio de Alimentos</td><td>70-85%</td><td>80%</td><td>600%</td></tr><tr><td>Tiempo de Preparación</td><td>40-50%</td><td>65%</td><td>380%</td></tr><tr><td>Satisfacción del Cliente</td><td>N/A</td><td>75%</td><td>250%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Área de Impacto</th><th>Ahorro Estimado</th><th>Incremento Eficiencia</th><th>ROI Promedio</th></tr></thead><tbody><tr><td>Gestión de Inventarios</td><td>35-45%</td><td>60%</td><td>400%</td></tr><tr><td><a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">Costos</a> Laborales</td><td>25-30%</td><td>45%</td><td>320%</td></tr><tr><td>Desperdicio de Alimentos</td><td>70-85%</td><td>80%</td><td>600%</td></tr><tr><td>Tiempo de Preparación</td><td>40-50%</td><td>65%</td><td>380%</td></tr><tr><td>Satisfacción del Cliente</td><td>N/A</td><td>75%</td><td>250%</td></tr></tbody></table></div></figure>
 
 
 

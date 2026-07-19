@@ -44,7 +44,7 @@ wpId: 3232
 <li><strong>Emulsión:</strong> El líquido se mezcla con las grasas residuales.</li>
 </ul>
 <h2>Líquidos para Deglasear</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Líquido</th>
@@ -84,7 +84,7 @@ wpId: 3232
 <td style="padding: 12px; border: 1px solid #ddd;">Costillas, estofados rústicos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Técnica de Deglaseado Paso a Paso</h2>
 <h3>Paso 1: Preparar el Fond</h3>
 <ul>

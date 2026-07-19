@@ -704,7 +704,7 @@ wpId: 1580
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th><strong>Área de Impacto</strong></th><th><strong>Mejora Promedio</strong></th><th><strong>Casos Documentados</strong></th></tr></thead><tbody><tr><td>Reducción de Desperdicios</td><td>15-30%</td><td>McDonald&#8217;s, LogMeal, Spice</td></tr><tr><td>Consistencia en Preparación</td><td>95-99%</td><td>Flippy, Creator, Cali Express</td></tr><tr><td>Velocidad de Servicio</td><td>20-40%</td><td>Starbucks, Pizza Hut, Wingstop</td></tr><tr><td>Reducción de Costes Laborales</td><td>25-45%</td><td>White Castle, Bear Robotics</td></tr><tr><td>Satisfacción del Cliente</td><td>18-35%</td><td>Domino&#8217;s, DataSparQ, Robot.He</td></tr><tr><td>Precisión en Pedidos</td><td>92-99%</td><td>KFC China, Burger King</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th><strong>Área de Impacto</strong></th><th><strong>Mejora Promedio</strong></th><th><strong>Casos Documentados</strong></th></tr></thead><tbody><tr><td>Reducción de Desperdicios</td><td>15-30%</td><td>McDonald&#8217;s, LogMeal, Spice</td></tr><tr><td>Consistencia en Preparación</td><td>95-99%</td><td>Flippy, Creator, Cali Express</td></tr><tr><td>Velocidad de Servicio</td><td>20-40%</td><td>Starbucks, Pizza Hut, Wingstop</td></tr><tr><td>Reducción de Costes Laborales</td><td>25-45%</td><td>White Castle, Bear Robotics</td></tr><tr><td>Satisfacción del Cliente</td><td>18-35%</td><td>Domino&#8217;s, DataSparQ, Robot.He</td></tr><tr><td>Precisión en Pedidos</td><td>92-99%</td><td>KFC China, Burger King</td></tr></tbody></table></div></figure>
 
 
 

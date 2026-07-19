@@ -96,7 +96,7 @@ wpId: 2034
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Impacto Promedio</th><th>Herramienta Recomendada</th></tr></thead><tbody><tr><td>Reducción de desperdicios</td><td>15-30%</td><td>Mermas GenCal</td></tr><tr><td>Optimización de compras</td><td>20-25%</td><td>IA predictiva</td></tr><tr><td>Precisión en pedidos</td><td>95%+</td><td>Sistemas automatizados</td></tr><tr><td>Tiempo de gestión</td><td>-40%</td><td>Dashboard integrado</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Beneficio</th><th>Impacto Promedio</th><th>Herramienta Recomendada</th></tr></thead><tbody><tr><td>Reducción de desperdicios</td><td>15-30%</td><td>Mermas GenCal</td></tr><tr><td>Optimización de compras</td><td>20-25%</td><td>IA predictiva</td></tr><tr><td>Precisión en pedidos</td><td>95%+</td><td>Sistemas automatizados</td></tr><tr><td>Tiempo de gestión</td><td>-40%</td><td>Dashboard integrado</td></tr></tbody></table></div></figure>
 
 
 
@@ -460,7 +460,7 @@ wpId: 2034
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro (Especializada)</th><th>Herramientas Genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones técnicas</td></tr><tr><td>Cálculo de costes y mermas</td><td>Precisión específica para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Gestión de alérgenos</td><td>Identificación automática según normativa</td><td>Sin validación específica de normativas</td></tr><tr><td>Integración con operativa</td><td>Herramientas específicas para kitchen management</td><td>Sin funciones específicas para cocina</td></tr><tr><td>Soporte especializado</td><td>Equipo con experiencia en hostelería</td><td>Soporte técnico general</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>AI Chef Pro (Especializada)</th><th>Herramientas Genéricas</th></tr></thead><tbody><tr><td>Conocimiento gastronómico</td><td>Optimizado para terminología y técnicas culinarias profesionales</td><td>Conocimiento generalista con limitaciones técnicas</td></tr><tr><td>Cálculo de costes y mermas</td><td>Precisión específica para ingredientes y técnicas</td><td>Capacidad limitada sin base de datos especializada</td></tr><tr><td>Gestión de alérgenos</td><td>Identificación automática según normativa</td><td>Sin validación específica de normativas</td></tr><tr><td>Integración con operativa</td><td>Herramientas específicas para kitchen management</td><td>Sin funciones específicas para cocina</td></tr><tr><td>Soporte especializado</td><td>Equipo con experiencia en hostelería</td><td>Soporte técnico general</td></tr></tbody></table></div></figure>
 
 
 
@@ -573,7 +573,7 @@ wpId: 2034
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Emprendedores, estudiantes, exploración inicial</td><td>Primeros pasos sin inversión</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chefs individuales, restaurantes pequeños (hasta 30 pax)</td><td>300-500% mensual</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td><td>400-700% mensual</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes grandes, grupos con varios locales</td><td>700-1000% mensual</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadenas, empresas de catering, consultorías gastronómicas</td><td>1000%+ mensual</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Ideal para</th><th>ROI Estimado</th></tr></thead><tbody><tr><td>Miembro (Gratis)</td><td>0€/mes</td><td>Emprendedores, estudiantes, exploración inicial</td><td>Primeros pasos sin inversión</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Chefs individuales, restaurantes pequeños (hasta 30 pax)</td><td>300-500% mensual</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Restaurantes medianos (30-60 pax), cafeterías, pastelerías</td><td>400-700% mensual</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Restaurantes grandes, grupos con varios locales</td><td>700-1000% mensual</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Cadenas, empresas de catering, consultorías gastronómicas</td><td>1000%+ mensual</td></tr></tbody></table></div></figure>
 
 
 

@@ -53,7 +53,7 @@ wpId: 3363
 <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/escandallo-mermas-ingredientes-cocina-profesional.jpg" alt="Control de mermas en cocina profesional con pesaje de ingredientes y porciones"/><figcaption>Control preciso de mermas: pesaje de ingredientes brutos, porciones netas y recortes</figcaption></figure>
 <h2>Tabla de mermas por categoría de producto</h2>
 <p>Las mermas varían significativamente según el tipo de producto y su estado de presentación. A continuación, se detallan los rangos estándar utilizados en cocina profesional:</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Categoría</th>
@@ -160,7 +160,7 @@ wpId: 3363
 <td>Caparazón</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Es fundamental recordar que estos porcentajes son orientativos. La merma real depende de la calidad del producto recibido, la estación del año, el proveedor y las técnicas de trabajo del equipo de cocina. Un restaurante sin control de mermas presenta pérdidas medias del 8-12%, mientras que con sistemas de control inteligente basados en IA, estas mermas pueden reducirse al 3-5%.</p>
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #f5c518; padding: 28px 32px; margin: 40px 0; border-radius: 2px;">
 <p style="color: #f5c518; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">Calcula el escandallo de tus platos con IA</p>
@@ -221,7 +221,7 @@ wpId: 3363
 </ul>
 <h3>Implementación de IA para escandallos</h3>
 <p>Tras seis meses de implementación de un sistema integral de IA que incluía escandallos automáticos, gestión predictiva de compras y control de mermas, los resultados transformaron la economics del establecimiento:</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Métrica</th>
@@ -280,13 +280,13 @@ wpId: 3363
 <td>—</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3>Análisis económico del caso</h3>
 <p>El retorno de la inversión en el sistema de IA se produjo en menos de tres meses. Considerando un coste de herramienta de IA de aproximadamente 50€/mes (plan Premium), el ahorro neto mensual supera los 1.500 euros, lo que equivale a un ROI anual superior al 350%.</p>
 <p>Además del ahorro directo en materia prima, el restaurante recuperó más de 7 horas semanales de tiempo del chef, que pudo dedicar a desarrollo de nuevos platos, mejora de la experiencia del cliente y tareas estratégicas de crecimiento del negocio.</p>
 <h2>Comparativa de herramientas para escandallos</h2>
 <p>El mercado ofrece diversas soluciones para el cálculo de escandallos, desde hojas de cálculo básicas hasta sistemas avanzados con inteligencia artificial. La elección depende del tamaño del establecimiento, el nivel de complejidad y el presupuesto disponible.</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Característica</th>
@@ -357,7 +357,7 @@ wpId: 3363
 <td>Alta</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La comparación evidencia que, aunque Excel puede parecer gratuito, el coste real en tiempo y errores supera ampliamente el investimento en soluciones especializadas. Los software de escandallo tradicionales ofrecen mejoras significativas, pero la IA proporciona capacidades predictivas y de automatización impossí­bles de replicar manualmente.</p>
 <p>En el caso de <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=escandallos-ia-cocina-profesional">AI Chef Pro</a>, la suite incluye más de 55 herramientas específicas para profesionales de la hostelería, con planes que van desde funciones básicas gratuitas hasta el Premium Pro a 95€/mes. Para un restaurante medio, el plan Premium (50€/mes) ofrece un equilibrio óptimo entre coste y funcionalidades.</p>
 <h2>Errores frecuentes en el cálculo de escandallos</h2>
@@ -410,7 +410,7 @@ wpId: 3363
 <p>La <a href="https://aichef.pro/blog/inteligencia-artificial-en-cocina">IA en cocina</a> evoluciona rápidamente hacia estos escenarios de automatización total, donde el chef dedicará su tiempo a la creatividad y al servicio mientras los sistemas inteligentes gestionan la eficiencia económica.</p>
 <h2>Tabla de ROI: Impacto de implementar IA en escandallos</h2>
 <p>A continuación se presenta un análisis del retorno de inversión basado en datos reales de implementación en restaurantes de diferentes tamaños:</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Métrica de impacto</th>
@@ -463,11 +463,11 @@ wpId: 3363
 <td>Menos de 1 mes</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Estos datos demuestran que la implementación de IA para escandallos genera retorno positivo desde el primer mes, con beneficios que se multiplican conforme aumenta el tamaño del establecimiento. El coste de la herramienta representa una fracción mínima del ahorro generado, convirtiendo la inversión en una decisión económicamente indefendible de no adoptar.</p>
 <h2>Escandallo completo de ejemplo: Lomo de bacalao con verduras</h2>
 <p>A continuación se presenta un ejemplo detallado de escandallo para un plato completo de un restaurante mediterráneo, incluyendo todos los cálculos:</p>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th>Ingrediente</th>
@@ -604,7 +604,7 @@ wpId: 3363
 <td><strong>€21,00</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Este ejemplo ilustra la importancia de incluir todos los ingredientes, incluso aquellos en pequeñas cantidades como especias y sales. El resultado es un plato con food cost del 29,6%, dentro del rango óptimo del 28-35%.</p>
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #f5c518; padding: 28px 32px; margin: 40px 0; border-radius: 2px;">
 <p style="color: #f5c518; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">Calcula el escandallo de tus platos con IA</p>
@@ -634,7 +634,7 @@ wpId: 3363
 </ul>
 <p>La clave estuvo en el sistema predictivo de mermas, que analiza patrones estacionales, día de la semana y comportamiento histórico de cada ingrediente. Además, las alertas automáticas de desviación permiten actuar antes de que el problema se materialice en pérdidas.</p>
 <h3>Métricas comparativas: el ROI de la implementación</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th><strong>Métrica</strong></th>
@@ -679,7 +679,7 @@ wpId: 3363
 <td>Automáticas</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>El <strong>ahorro mensual estimado</strong> se sitúa en <strong>1.800 euros</strong>, distribuidos entre:</p>
 <ul>
 <li>Reducción de food cost: 5 puntos porcentuales sobre ticket medio de 28€ × 80 cubiertos × 26 días = ~2.900€ mensuales en ventas → ahorro real ~1.450€</li>
@@ -719,7 +719,7 @@ wpId: 3363
 </ul>
 <p>La diferencia fundamental reside en la capacidad de aprendizaje: cada escandallo realizado mejora la precisión del siguiente, incorporando variables que ningún Excel podría procesar.</p>
 <h3>Tabla comparativa completa</h3>
-<table class="wp-block-table is-style-stripes">
+<div class="table-scroll"><table class="wp-block-table is-style-stripes">
 <thead>
 <tr>
 <th><strong>Criterio</strong></th>
@@ -778,7 +778,7 @@ wpId: 3363
 <td>Baja</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Conclusión:</strong> para restaurantes con más de 20 platos en carta, la IA no solo compensa el coste, sino que genera ahorro inmediato. El punto de inflexión se sitúa entre 15 y 20 referencias; por debajo, Excel puede ser suficiente; por encima, la automatización representa ahorro neto desde el primer mes.</p>
 <p>Además, el coste de AI Chef Pro (desde 25€/mes) es inferior al de software tradicional básico, eliminando el argumento económico tradicional contra la tecnología avanzada.</p>
 <h2>Escandallos para diferentes modelos de negocio</h2>

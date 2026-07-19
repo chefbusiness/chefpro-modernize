@@ -32,7 +32,7 @@ wpId: 2692
 <p>Los azúcares reductores como la <strong>glucosa</strong>, la <strong>fructosa</strong> o la <strong>maltosa</strong> reaccionan con mayor facilidad que la sacarosa, que debe hidrolizarse antes. La fructosa es especialmente rápida y produce tonos más oscuros; por eso los glaseados con miel o sirope de agave doran enseguida. En cuanto a los aminoácidos, la cisteína y la lisina destacan por generar aromas cárnicos muy intensos, mientras que la prolina, abundante en las harinas, contribuye al aroma a pan tostado.</p>
 <h2>Diferencia entre la reacción de Maillard y la caramelización</h2>
 <p>Son dos procesos distintos que a menudo se confunden. La caramelización implica solo azúcares, mientras que la reacción de Maillard necesita además aminoácidos. Ambas ocurren con calor seco, pero en rangos y con resultados diferentes.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Aspecto</th>
@@ -62,7 +62,7 @@ wpId: 2692
 <td>Azúcar quemada, cebolla pochada a fuego lento, flan</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>En la práctica, ambos fenómenos suelen convivir. El horneado de un bizcocho activa Maillard en la corteza (por las proteínas de la harina y el huevo) y caramelización en las zonas donde el azúcar de la masa se concentra. Saber diferenciarlos ayuda a manipularlos a voluntad.</p>
 <h2>Cómo favorecer la reacción de Maillard en tus platos</h2>
 <ul>

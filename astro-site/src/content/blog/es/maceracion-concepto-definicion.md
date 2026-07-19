@@ -24,7 +24,7 @@ wpId: 3258
 <li><strong>Concentración de sabores:</strong> Intensifica y purifica los perfiles aromáticos.</li>
 </ul>
 <h3>Tipos de Maceración en Gastronomía</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -59,7 +59,7 @@ wpId: 3258
 <td style="padding: 12px; border: 1px solid #ddd;">Carnes, pescados, quesos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Maceración</h2>
 <h3>Orígenes Ancestrales</h3>
 <p>La maceración es probablemente tan antigua como la agricultura misma. Las <strong>civilizaciones antiguas</strong> descubrieron que sumergir frutas en miel o alcohol no solo preservaba los alimentos sino que creaba nuevos sabores. Los <strong>egipcios</strong> maceraban hierbas en vino para uso medicinal; los <strong>romanos</strong> preparaban licores de frutas y especias.</p>
@@ -126,7 +126,7 @@ wpId: 3258
 <p><strong>Ultrasonidos:</strong> Las ondas sonoras aceleran la difusión celular, reduciendo tiempos de horas a minutos.</p>
 <p><strong>Presión:</strong> La alta presión altera la permeabilidad celular, facilitando la extracción.</p>
 <h3>Maceración en Frío vs. Calor</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -156,9 +156,9 @@ wpId: 3258
 <td style="padding: 12px; border: 1px solid #ddd;">Más blanda</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Errores Comunes y Soluciones</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Problema</th>
@@ -188,7 +188,7 @@ wpId: 3258
 <td style="padding: 12px; border: 1px solid #ddd;">Cortar más pequeño, aplastar ligeramente</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Conservación de Productos Macerados</h2>
 <h3>Factores de Deterioro</h3>
 <ul>

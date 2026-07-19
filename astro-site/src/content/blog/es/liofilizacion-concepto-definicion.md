@@ -24,7 +24,7 @@ wpId: 3255
 <li><strong>Rehidratación rápida:</strong> Recuperan casi todas sus propiedades originales.</li>
 </ul>
 <h3>Fases del Proceso de Liofilización</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Fase</th>
@@ -53,7 +53,7 @@ wpId: 3255
 <td style="padding: 12px; border: 1px solid #ddd;">4-12 horas</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Historia de la Liofilización</h2>
 <h3>Orígenes Científicos</h3>
 <p>El principio de la liofilización fue descubierto en <strong>1906 por Jacques-Arsène d&#8217;Arsonval</strong> en el Collège de France, pero no fue hasta la <strong>Segunda Guerra Mundial</strong> cuando la tecnología se desarrolló para su uso práctico. El ejército estadounidense necesitaba conservar plasma sanguíneo para los heridos, y la liofilización resultó ser la solución ideal.</p>
@@ -119,7 +119,7 @@ wpId: 3255
 <li>Colágeno y péptidos bioactivos.</li>
 </ul>
 <h2>Liofilización vs. Otros Métodos de Secado</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Característica</th>
@@ -160,7 +160,7 @@ wpId: 3255
 <td style="padding: 12px; border: 1px solid #ddd;">Bajo</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Productos Liofilizados Comunes</h2>
 <h3>Frutas y Verduras</h3>
 <p>Fresas, arándanos, plátanos, manzanas, <a href="https://aichef.pro/blog/que-es-el-maiz">maíz</a>, guisantes, champiñones. Ideales para snacks, cereales, repostería.</p>

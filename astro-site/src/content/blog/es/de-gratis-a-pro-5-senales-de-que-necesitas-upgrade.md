@@ -94,7 +94,7 @@ wpId: 1659
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Uso Típico</th><th>Plan Gratuito</th><th>Plan Pro (10€/mes)</th><th>Resultado</th></tr></thead><tbody><tr><td>Consultas diarias</td><td>15-20 máximo</td><td>200+ consultas</td><td>10x más capacidad</td></tr><tr><td>Desarrollo de recetas</td><td>5-8 por mes</td><td>100+ por mes</td><td>Creatividad ilimitada</td></tr><tr><td>Análisis de costes</td><td>Básico</td><td>Detallado con ROI</td><td>Control financiero total</td></tr><tr><td>Soporte</td><td>FAQ únicamente</td><td>Chat + Email</td><td>Asistencia personalizada</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Uso Típico</th><th>Plan Gratuito</th><th>Plan Pro (10€/mes)</th><th>Resultado</th></tr></thead><tbody><tr><td>Consultas diarias</td><td>15-20 máximo</td><td>200+ consultas</td><td>10x más capacidad</td></tr><tr><td>Desarrollo de recetas</td><td>5-8 por mes</td><td>100+ por mes</td><td>Creatividad ilimitada</td></tr><tr><td>Análisis de costes</td><td>Básico</td><td>Detallado con ROI</td><td>Control financiero total</td></tr><tr><td>Soporte</td><td>FAQ únicamente</td><td>Chat + Email</td><td>Asistencia personalizada</td></tr></tbody></table></div></figure>
 
 
 
@@ -156,7 +156,7 @@ wpId: 1659
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tamaño del Negocio</th><th>Plan Recomendado</th><th>Inversión Mensual</th><th>ROI Estimado</th><th>Ahorro Potencial</th></tr></thead><tbody><tr><td>Pequeño (hasta 30 pax)</td><td>Pro</td><td>10€</td><td>300-500%</td><td>300-450€/mes</td></tr><tr><td>Mediano (30-60 pax)</td><td>Premium</td><td>15€</td><td>400-700%</td><td>600-900€/mes</td></tr><tr><td>Grande (60+ pax)</td><td>Premium Pro</td><td>25€</td><td>700-1000%</td><td>1200-2000€/mes</td></tr><tr><td>Múltiples ubicaciones</td><td>Premium Plus</td><td>50€</td><td>1000%+</td><td>3000€+/mes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tamaño del Negocio</th><th>Plan Recomendado</th><th>Inversión Mensual</th><th>ROI Estimado</th><th>Ahorro Potencial</th></tr></thead><tbody><tr><td>Pequeño (hasta 30 pax)</td><td>Pro</td><td>10€</td><td>300-500%</td><td>300-450€/mes</td></tr><tr><td>Mediano (30-60 pax)</td><td>Premium</td><td>15€</td><td>400-700%</td><td>600-900€/mes</td></tr><tr><td>Grande (60+ pax)</td><td>Premium Pro</td><td>25€</td><td>700-1000%</td><td>1200-2000€/mes</td></tr><tr><td>Múltiples ubicaciones</td><td>Premium Plus</td><td>50€</td><td>1000%+</td><td>3000€+/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -322,7 +322,7 @@ wpId: 1659
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tamaño del Evento</th><th>Plan Gratuito</th><th>Plan Premium</th><th>Diferencia</th></tr></thead><tbody><tr><td>Hasta 20 personas</td><td>Funcional</td><td>Optimizado</td><td>15% más eficiente</td></tr><tr><td>20-50 personas</td><td>Limitado</td><td>Preciso</td><td>25% menos desperdicios</td></tr><tr><td>50-100 personas</td><td>Insuficiente</td><td>Completo</td><td>40% mejor rentabilidad</td></tr><tr><td>100+ personas</td><td>No recomendado</td><td>Especializado</td><td>Gestión profesional</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tamaño del Evento</th><th>Plan Gratuito</th><th>Plan Premium</th><th>Diferencia</th></tr></thead><tbody><tr><td>Hasta 20 personas</td><td>Funcional</td><td>Optimizado</td><td>15% más eficiente</td></tr><tr><td>20-50 personas</td><td>Limitado</td><td>Preciso</td><td>25% menos desperdicios</td></tr><tr><td>50-100 personas</td><td>Insuficiente</td><td>Completo</td><td>40% mejor rentabilidad</td></tr><tr><td>100+ personas</td><td>No recomendado</td><td>Especializado</td><td>Gestión profesional</td></tr></tbody></table></div></figure>
 
 
 
@@ -458,7 +458,7 @@ wpId: 1659
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Gratis</th><th>Pro (10€)</th><th>Premium (15€)</th><th>Premium Pro (25€)</th><th>Premium Plus (50€)</th></tr></thead><tbody><tr><td>Consultas mensuales</td><td>20-30</td><td>200+</td><td>500+</td><td>1000+</td><td>Ilimitadas</td></tr><tr><td>Herramientas básicas</td><td>✓ Limitadas</td><td>✓ Completas</td><td>✓ Completas</td><td>✓ Completas</td><td>✓ Completas</td></tr><tr><td>Análisis de costes</td><td>Básico</td><td>✓ Avanzado</td><td>✓ Avanzado</td><td>✓ Profesional</td><td>✓ Corporativo</td></tr><tr><td>Recetarios regionales</td><td>3</td><td>10</td><td>20</td><td>Todos</td><td>Todos + Premium</td></tr><tr><td>Catering AI+</td><td>✗</td><td>✓ Básico</td><td>✓ Completo</td><td>✓ Profesional</td><td>✓ Empresarial</td></tr><tr><td>Mental Coach</td><td>✗</td><td>✓</td><td>✓</td><td>✓ Avanzado</td><td>✓ Personalizado</td></tr><tr><td>Soporte</td><td>FAQ</td><td>Email</td><td>Chat + Email</td><td>Prioritario</td><td>Dedicado</td></tr><tr><td>Funciones exclusivas</td><td>✗</td><td>✗</td><td>Algunas</td><td>✓ Muchas</td><td>✓ Todas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Característica</th><th>Gratis</th><th>Pro (10€)</th><th>Premium (15€)</th><th>Premium Pro (25€)</th><th>Premium Plus (50€)</th></tr></thead><tbody><tr><td>Consultas mensuales</td><td>20-30</td><td>200+</td><td>500+</td><td>1000+</td><td>Ilimitadas</td></tr><tr><td>Herramientas básicas</td><td>✓ Limitadas</td><td>✓ Completas</td><td>✓ Completas</td><td>✓ Completas</td><td>✓ Completas</td></tr><tr><td>Análisis de costes</td><td>Básico</td><td>✓ Avanzado</td><td>✓ Avanzado</td><td>✓ Profesional</td><td>✓ Corporativo</td></tr><tr><td>Recetarios regionales</td><td>3</td><td>10</td><td>20</td><td>Todos</td><td>Todos + Premium</td></tr><tr><td>Catering AI+</td><td>✗</td><td>✓ Básico</td><td>✓ Completo</td><td>✓ Profesional</td><td>✓ Empresarial</td></tr><tr><td>Mental Coach</td><td>✗</td><td>✓</td><td>✓</td><td>✓ Avanzado</td><td>✓ Personalizado</td></tr><tr><td>Soporte</td><td>FAQ</td><td>Email</td><td>Chat + Email</td><td>Prioritario</td><td>Dedicado</td></tr><tr><td>Funciones exclusivas</td><td>✗</td><td>✗</td><td>Algunas</td><td>✓ Muchas</td><td>✓ Todas</td></tr></tbody></table></div></figure>
 
 
 

@@ -54,7 +54,7 @@ wpId: 3175
 <p>Tomates cherry, ajos o cebollas cocidos lentamente en aceite de oliva con hierbas. Dura semanas refrigerado y es ideal para acompañar carnes o pastas.</p>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/confit-plato.jpg" alt="Elegante plato de confit de pato con patatas doradas presentación fine dining" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Tabla de Temperaturas y Tiempos de Confit</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Alimento</th>
@@ -101,7 +101,7 @@ wpId: 3175
 <td style="padding: 12px; border: 1px solid #ddd;">Aceite de oliva</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Técnica Paso a Paso: Confit de Pato</h2>
 <h3>Día 1: Salazón</h3>
 <ol>

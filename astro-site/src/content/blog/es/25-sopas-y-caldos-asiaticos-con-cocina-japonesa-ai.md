@@ -56,7 +56,7 @@ wpId: 2147
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Caldo Base</th><th>Ingredientes Principales</th><th>Tiempo de Preparación</th><th>Aplicaciones</th></tr></thead><tbody><tr><td><strong>Dashi</strong></td><td>Alga kombu + Katsuobushi</td><td>15-20 minutos</td><td>Sopa miso, tamagoyaki, salsas</td></tr><tr><td><strong>Tonkotsu</strong></td><td>Huesos de cerdo</td><td>8-18 horas</td><td>Ramen cremoso, donburi</td></tr><tr><td><strong>Tori Paitan</strong></td><td>Huesos y carcasa de pollo</td><td>4-8 horas</td><td>Ramen de pollo, nabemono</td></tr><tr><td><strong>Shoyu</strong></td><td>Dashi + Salsa de soja</td><td>20-30 minutos</td><td>Ramen shoyu, udon caliente</td></tr><tr><td><strong>Shio</strong></td><td>Dashi + Sal marina</td><td>15-25 minutos</td><td>Ramen ligero, sopas claras</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Caldo Base</th><th>Ingredientes Principales</th><th>Tiempo de Preparación</th><th>Aplicaciones</th></tr></thead><tbody><tr><td><strong>Dashi</strong></td><td>Alga kombu + Katsuobushi</td><td>15-20 minutos</td><td>Sopa miso, tamagoyaki, salsas</td></tr><tr><td><strong>Tonkotsu</strong></td><td>Huesos de cerdo</td><td>8-18 horas</td><td>Ramen cremoso, donburi</td></tr><tr><td><strong>Tori Paitan</strong></td><td>Huesos y carcasa de pollo</td><td>4-8 horas</td><td>Ramen de pollo, nabemono</td></tr><tr><td><strong>Shoyu</strong></td><td>Dashi + Salsa de soja</td><td>20-30 minutos</td><td>Ramen shoyu, udon caliente</td></tr><tr><td><strong>Shio</strong></td><td>Dashi + Sal marina</td><td>15-25 minutos</td><td>Ramen ligero, sopas claras</td></tr></tbody></table></div></figure>
 
 
 
@@ -379,7 +379,7 @@ wpId: 2147
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Tipo de Fideo</th><th>Ingrediente Base</th><th>Textura</th><th>Mejor Preparación</th><th>Tiempo de Cocción</th></tr></thead><tbody><tr><td><strong>Ramen</strong></td><td>Harina de trigo + kansui</td><td>Elástica, firme</td><td>Caldos intensos (tonkotsu, miso)</td><td>1-3 minutos</td></tr><tr><td><strong>Udon</strong></td><td>Harina de trigo + sal + agua</td><td>Gruesa, masticable</td><td>Caldos ligeros, fritos</td><td>8-12 minutos</td></tr><tr><td><strong>Soba</strong></td><td>Harina de trigo sarraceno</td><td>Delicada, nutritiva</td><td>Fríos o caldos suaves</td><td>4-6 minutos</td></tr><tr><td><strong>Somen</strong></td><td>Harina de trigo</td><td>Muy fina, sedosa</td><td>Servidos fríos con hielo</td><td>1-2 minutos</td></tr><tr><td><strong>Harusame</strong></td><td>Almidón de judía mungo</td><td>Transparente, gelatinosa</td><td>Sopas claras, ensaladas</td><td>3-5 minutos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Fideo</th><th>Ingrediente Base</th><th>Textura</th><th>Mejor Preparación</th><th>Tiempo de Cocción</th></tr></thead><tbody><tr><td><strong>Ramen</strong></td><td>Harina de trigo + kansui</td><td>Elástica, firme</td><td>Caldos intensos (tonkotsu, miso)</td><td>1-3 minutos</td></tr><tr><td><strong>Udon</strong></td><td>Harina de trigo + sal + agua</td><td>Gruesa, masticable</td><td>Caldos ligeros, fritos</td><td>8-12 minutos</td></tr><tr><td><strong>Soba</strong></td><td>Harina de trigo sarraceno</td><td>Delicada, nutritiva</td><td>Fríos o caldos suaves</td><td>4-6 minutos</td></tr><tr><td><strong>Somen</strong></td><td>Harina de trigo</td><td>Muy fina, sedosa</td><td>Servidos fríos con hielo</td><td>1-2 minutos</td></tr><tr><td><strong>Harusame</strong></td><td>Almidón de judía mungo</td><td>Transparente, gelatinosa</td><td>Sopas claras, ensaladas</td><td>3-5 minutos</td></tr></tbody></table></div></figure>
 
 
 
@@ -878,7 +878,7 @@ wpId: 2147
 
 
 
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Ingrediente</th><th>Temperatura</th><th>Tiempo</th><th>Componente Umami</th></tr></thead><tbody><tr><td>1</td><td>Alga kombu</td><td>60-70°C</td><td>30-60 min</td><td>Ácido glutámico</td></tr><tr><td>2</td><td>Setas shiitake</td><td>70-80°C</td><td>20-30 min</td><td>Guanosina monofosfato</td></tr><tr><td>3</td><td>Katsuobushi</td><td>85-90°C</td><td>5-10 min</td><td>Inosina monofosfato</td></tr><tr><td>4</td><td>Niboshi (sardinas secas)</td><td>90-95°C</td><td>15-20 min</td><td>IMP + ácidos grasos</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Fase</th><th>Ingrediente</th><th>Temperatura</th><th>Tiempo</th><th>Componente Umami</th></tr></thead><tbody><tr><td>1</td><td>Alga kombu</td><td>60-70°C</td><td>30-60 min</td><td>Ácido glutámico</td></tr><tr><td>2</td><td>Setas shiitake</td><td>70-80°C</td><td>20-30 min</td><td>Guanosina monofosfato</td></tr><tr><td>3</td><td>Katsuobushi</td><td>85-90°C</td><td>5-10 min</td><td>Inosina monofosfato</td></tr><tr><td>4</td><td>Niboshi (sardinas secas)</td><td>90-95°C</td><td>15-20 min</td><td>IMP + ácidos grasos</td></tr></tbody></table></div></figure>
 
 
 

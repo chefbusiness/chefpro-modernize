@@ -72,7 +72,7 @@ wpId: 1424
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Sector</th><th>Aplicaciones IA</th><th>Impacto Medible</th><th>Inversión 2025</th></tr></thead><tbody><tr><td>Agricultura Inteligente</td><td>Drones, sensores IoT, predicción climática</td><td>+25% rendimiento cultivos</td><td>$12.8 mil millones</td></tr><tr><td>Procesamiento Industrial</td><td>Computer vision, robótica colaborativa</td><td>+95% precisión en control de calidad</td><td>$18.4 mil millones</td></tr><tr><td>Cadena de Suministro</td><td>Predicción de demanda, optimización logística</td><td>-40% tiempo de distribución</td><td>$9.7 mil millones</td></tr><tr><td>Retail y Comercialización</td><td>Personalización, chatbots, análisis predictivo</td><td>+35% satisfacción cliente</td><td>$7.1 mil millones</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Sector</th><th>Aplicaciones IA</th><th>Impacto Medible</th><th>Inversión 2025</th></tr></thead><tbody><tr><td>Agricultura Inteligente</td><td>Drones, sensores IoT, predicción climática</td><td>+25% rendimiento cultivos</td><td>$12.8 mil millones</td></tr><tr><td>Procesamiento Industrial</td><td>Computer vision, robótica colaborativa</td><td>+95% precisión en control de calidad</td><td>$18.4 mil millones</td></tr><tr><td>Cadena de Suministro</td><td>Predicción de demanda, optimización logística</td><td>-40% tiempo de distribución</td><td>$9.7 mil millones</td></tr><tr><td>Retail y Comercialización</td><td>Personalización, chatbots, análisis predictivo</td><td>+35% satisfacción cliente</td><td>$7.1 mil millones</td></tr></tbody></table></div></figure>
 
 
 
@@ -678,7 +678,7 @@ wpId: 1424
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Categoría</th><th>KPI Principal</th><th>Mejora Típica</th><th>Tiempo de Impacto</th></tr></thead><tbody><tr><td>Reducción de Desperdicios</td><td>% Merma vs Ventas</td><td>15-30% reducción</td><td>2-4 semanas</td></tr><tr><td>Eficiencia Operativa</td><td>Tiempo prep/plato</td><td>20-40% reducción</td><td>4-8 semanas</td></tr><tr><td>Innovación de Producto</td><td>Nuevos platos/mes</td><td>200-400% incremento</td><td>1-2 semanas</td></tr><tr><td>Satisfacción Cliente</td><td>Score reseñas online</td><td>0.5-1.0 puntos mejora</td><td>8-12 semanas</td></tr><tr><td>Margen Operativo</td><td>% Ganancia neta</td><td>3-8% incremento</td><td>6-16 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Categoría</th><th>KPI Principal</th><th>Mejora Típica</th><th>Tiempo de Impacto</th></tr></thead><tbody><tr><td>Reducción de Desperdicios</td><td>% Merma vs Ventas</td><td>15-30% reducción</td><td>2-4 semanas</td></tr><tr><td>Eficiencia Operativa</td><td>Tiempo prep/plato</td><td>20-40% reducción</td><td>4-8 semanas</td></tr><tr><td>Innovación de Producto</td><td>Nuevos platos/mes</td><td>200-400% incremento</td><td>1-2 semanas</td></tr><tr><td>Satisfacción Cliente</td><td>Score reseñas online</td><td>0.5-1.0 puntos mejora</td><td>8-12 semanas</td></tr><tr><td>Margen Operativo</td><td>% Ganancia neta</td><td>3-8% incremento</td><td>6-16 semanas</td></tr></tbody></table></div></figure>
 
 
 

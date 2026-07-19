@@ -52,7 +52,7 @@ wpId: 2726
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th>Componente</th><th>Función</th></tr><tr><td>Chiles secos</td><td>Calor y sabor base</td></tr><tr><td>Ajo frito</td><td>Umami crujiente</td></tr><tr><td>Cebollín</td><td>Aroma fresco</td></tr><tr><td>Aceite vegetal</td><td>Transportador de sabor</td></tr><tr><td>MSG (opcional)</td><td>Potenciador de umami</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><th>Componente</th><th>Función</th></tr><tr><td>Chiles secos</td><td>Calor y sabor base</td></tr><tr><td>Ajo frito</td><td>Umami crujiente</td></tr><tr><td>Cebollín</td><td>Aroma fresco</td></tr><tr><td>Aceite vegetal</td><td>Transportador de sabor</td></tr><tr><td>MSG (opcional)</td><td>Potenciador de umami</td></tr></tbody></table></div></figure>
 
 
 
@@ -215,7 +215,7 @@ wpId: 2726
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><td><strong>Origen</strong></td><td>China (sichuanesa)</td></tr><tr><td><strong>Textura</strong></td><td>Aceitosa con componentes crujientes</td></tr><tr><td><strong>Sabor</strong></td><td>Picante, umami, aromático</td></tr><tr><td><strong>Uso</strong></td><td>Universal (dulce y salado)</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><tbody><tr><td><strong>Origen</strong></td><td>China (sichuanesa)</td></tr><tr><td><strong>Textura</strong></td><td>Aceitosa con componentes crujientes</td></tr><tr><td><strong>Sabor</strong></td><td>Picante, umami, aromático</td></tr><tr><td><strong>Uso</strong></td><td>Universal (dulce y salado)</td></tr></tbody></table></div></figure>
 
 
 

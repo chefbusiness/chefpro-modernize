@@ -84,7 +84,7 @@ wpId: 1582
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Herramienta</th><th>Funcionalidad Principal</th><th>Beneficio para Chefs Profesionales</th></tr></thead><tbody><tr><td><strong>Cocina Creativa AI</strong></td><td>Generación de recetas innovadoras</td><td>Desarrolla nuevos conceptos en minutos con base científica</td></tr><tr><td><strong>Food Pairing AI</strong></td><td>Análisis molecular de combinaciones</td><td>Descubre maridajes únicos basados en 500+ compuestos aromáticos</td></tr><tr><td><strong>Mermas GenCal</strong></td><td>Cálculo preciso de rendimientos</td><td>Optimiza costes y reduce desperdicios hasta un 25%</td></tr><tr><td><strong>Mental Coach AI</strong></td><td>Apoyo psicológico para brigadas</td><td>Mejora el bienestar del equipo y reduce rotación de personal</td></tr><tr><td><strong>Gastro Lexicum</strong></td><td>Base de conocimiento gastronómico</td><td>Acceso instantáneo a técnicas y definiciones culinarias</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Herramienta</th><th>Funcionalidad Principal</th><th>Beneficio para Chefs Profesionales</th></tr></thead><tbody><tr><td><strong>Cocina Creativa AI</strong></td><td>Generación de recetas innovadoras</td><td>Desarrolla nuevos conceptos en minutos con base científica</td></tr><tr><td><strong>Food Pairing AI</strong></td><td>Análisis molecular de combinaciones</td><td>Descubre maridajes únicos basados en 500+ compuestos aromáticos</td></tr><tr><td><strong>Mermas GenCal</strong></td><td>Cálculo preciso de rendimientos</td><td>Optimiza costes y reduce desperdicios hasta un 25%</td></tr><tr><td><strong>Mental Coach AI</strong></td><td>Apoyo psicológico para brigadas</td><td>Mejora el bienestar del equipo y reduce rotación de personal</td></tr><tr><td><strong>Gastro Lexicum</strong></td><td>Base de conocimiento gastronómico</td><td>Acceso instantáneo a técnicas y definiciones culinarias</td></tr></tbody></table></div></figure>
 
 
 
@@ -210,7 +210,7 @@ wpId: 1582
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Área de Enfoque</th><th>Herramienta Recomendada</th><th>Métricas de Éxito</th><th>Duración</th></tr></thead><tbody><tr><td>Desarrollo de recetas</td><td>Cocina Creativa AI</td><td>Tiempo de desarrollo, aceptación del cliente</td><td>2 semanas</td></tr><tr><td>Optimización de costes</td><td>Mermas GenCal</td><td>Reducción de desperdicios, margen mejorado</td><td>3 semanas</td></tr><tr><td>Food pairing</td><td>Food Pairing AI</td><td>Nuevas combinaciones exitosas</td><td>2 semanas</td></tr><tr><td>Gestión de equipo</td><td>Mental Coach AI</td><td>Satisfacción del personal, productividad</td><td>4 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Área de Enfoque</th><th>Herramienta Recomendada</th><th>Métricas de Éxito</th><th>Duración</th></tr></thead><tbody><tr><td>Desarrollo de recetas</td><td>Cocina Creativa AI</td><td>Tiempo de desarrollo, aceptación del cliente</td><td>2 semanas</td></tr><tr><td>Optimización de costes</td><td>Mermas GenCal</td><td>Reducción de desperdicios, margen mejorado</td><td>3 semanas</td></tr><tr><td>Food pairing</td><td>Food Pairing AI</td><td>Nuevas combinaciones exitosas</td><td>2 semanas</td></tr><tr><td>Gestión de equipo</td><td>Mental Coach AI</td><td>Satisfacción del personal, productividad</td><td>4 semanas</td></tr></tbody></table></div></figure>
 
 
 
@@ -516,7 +516,7 @@ wpId: 1582
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Área</th><th>Métrica</th><th>Objetivo Típico</th><th>Herramienta de Medición</th></tr></thead><tbody><tr><td>Creatividad</td><td>Nuevos platos desarrollados/mes</td><td>+50% vs baseline</td><td>Registro manual</td></tr><tr><td>Eficiencia</td><td>Tiempo de desarrollo de recetas</td><td>-40% vs método tradicional</td><td>Cronometraje directo</td></tr><tr><td>Costes</td><td>% de mermas</td><td>-20% vs histórico</td><td>Sistema de inventario</td></tr><tr><td>Calidad</td><td>Satisfacción del cliente</td><td>+15% en puntuaciones</td><td>Encuestas/reviews</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Área</th><th>Métrica</th><th>Objetivo Típico</th><th>Herramienta de Medición</th></tr></thead><tbody><tr><td>Creatividad</td><td>Nuevos platos desarrollados/mes</td><td>+50% vs baseline</td><td>Registro manual</td></tr><tr><td>Eficiencia</td><td>Tiempo de desarrollo de recetas</td><td>-40% vs método tradicional</td><td>Cronometraje directo</td></tr><tr><td>Costes</td><td>% de mermas</td><td>-20% vs histórico</td><td>Sistema de inventario</td></tr><tr><td>Calidad</td><td>Satisfacción del cliente</td><td>+15% en puntuaciones</td><td>Encuestas/reviews</td></tr></tbody></table></div></figure>
 
 
 
@@ -724,7 +724,7 @@ wpId: 1582
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Factor de Ahorro</th><th>Ahorro Típico</th><th>Cálculo</th><th>Ejemplo (Rest. 50 pax)</th></tr></thead><tbody><tr><td><strong>Reducción de mermas</strong></td><td>15-25%</td><td>% reducción × coste ingredientes mensual</td><td>300€/mes</td></tr><tr><td><strong>Optimización tiempo chef</strong></td><td>8-12 horas/semana</td><td>Horas × salario horario chef</td><td>480€/mes</td></tr><tr><td><strong>Menor rotación personal</strong></td><td>30-40%</td><td>Reducción × coste contratación</td><td>200€/mes amortizado</td></tr><tr><td><strong>Incremento ventas</strong></td><td>8-15%</td><td>% incremento × facturación</td><td>600€/mes</td></tr><tr><td><strong>Mejora margen</strong></td><td>3-7%</td><td>% mejora × ventas mensuales</td><td>350€/mes</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Factor de Ahorro</th><th>Ahorro Típico</th><th>Cálculo</th><th>Ejemplo (Rest. 50 pax)</th></tr></thead><tbody><tr><td><strong>Reducción de mermas</strong></td><td>15-25%</td><td>% reducción × coste ingredientes mensual</td><td>300€/mes</td></tr><tr><td><strong>Optimización tiempo chef</strong></td><td>8-12 horas/semana</td><td>Horas × salario horario chef</td><td>480€/mes</td></tr><tr><td><strong>Menor rotación personal</strong></td><td>30-40%</td><td>Reducción × coste contratación</td><td>200€/mes amortizado</td></tr><tr><td><strong>Incremento ventas</strong></td><td>8-15%</td><td>% incremento × facturación</td><td>600€/mes</td></tr><tr><td><strong>Mejora margen</strong></td><td>3-7%</td><td>% mejora × ventas mensuales</td><td>350€/mes</td></tr></tbody></table></div></figure>
 
 
 
@@ -778,7 +778,7 @@ wpId: 1582
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Inicial</th><th>Ahorro Mensual</th><th>Punto de Equilibrio</th></tr></thead><tbody><tr><td>Restaurante pequeño (20-30 pax)</td><td>€1.125</td><td>€850</td><td>1.3 meses</td></tr><tr><td>Restaurante mediano (50-80 pax)</td><td>€1.425</td><td>€1.930</td><td>0.7 meses</td></tr><tr><td>Restaurante grande (100+ pax)</td><td>€1.825</td><td>€3.400</td><td>0.5 meses</td></tr><tr><td>Empresa de catering</td><td>€2.125</td><td>€4.200</td><td>0.5 meses</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Inicial</th><th>Ahorro Mensual</th><th>Punto de Equilibrio</th></tr></thead><tbody><tr><td>Restaurante pequeño (20-30 pax)</td><td>€1.125</td><td>€850</td><td>1.3 meses</td></tr><tr><td>Restaurante mediano (50-80 pax)</td><td>€1.425</td><td>€1.930</td><td>0.7 meses</td></tr><tr><td>Restaurante grande (100+ pax)</td><td>€1.825</td><td>€3.400</td><td>0.5 meses</td></tr><tr><td>Empresa de catering</td><td>€2.125</td><td>€4.200</td><td>0.5 meses</td></tr></tbody></table></div></figure>
 
 
 

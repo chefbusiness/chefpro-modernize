@@ -23,7 +23,7 @@ wpId: 3228
 <li><strong>Marinado no conservador:</strong> Consumo inmediato, no sirve para conservar.</li>
 </ul>
 <h3>Ceviche vs Otros Cortes Crudos</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Preparación</th>
@@ -58,7 +58,7 @@ wpId: 3228
 <td style="padding: 12px; border: 1px solid #ddd;">Totalmente crudo</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/ceviche-corte.jpg" alt="Corte de pescado fresco en cubos para ceviche" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
 <h2>Ciencia de la Desnaturalización Proteica</h2>
 <h3>¿Cómo «Cocina» el Limón?</h3>

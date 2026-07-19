@@ -56,7 +56,7 @@ wpId: 1184
 <p>La inteligencia artificial ha comenzado a transformar la forma en que los restaurantes interactúan con sus clientes y gestionan sus operaciones. Un ejemplo notable es el uso de chatbots inteligentes para la toma de pedidos y la gestión de reservas.</p>
 <h3>Implementación en Sistemas y Plataformas de Marketing</h3>
 <p>Los sistemas de marketing predictivo están revolucionando la manera en que los restaurantes promocionan sus servicios. Por ejemplo, al analizar datos de ventas y preferencias de los clientes, estos sistemas pueden recomendar menús personalizados y promociones específicas.</p>
-<table>
+<div class="table-scroll"><table>
 <tr>
 <th>Aplicación</th>
 <th>Ejemplo</th>
@@ -77,7 +77,7 @@ wpId: 1184
 <td>Promociones basadas en preferencias</td>
 <td>Aumenta la satisfacción del cliente</td>
 </tr>
-</table>
+</table></div>
 <p>Además, la integración de asistentes virtuales ha permitido a los restaurantes ofrecer una experiencia más personalizada a sus clientes. Esto no solo mejora la satisfacción del cliente, sino que también incrementa la lealtad y la repetición en los establecimientos.</p>
 <p><img loading="lazy" decoding="async" data-attachment-id="1188" data-orig-file="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" data-orig-size="768,1344" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Inteligencia-artificial-en-restaurantes-1" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" src="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" alt="Inteligencia artificial en restaurantes" title="Inteligencia artificial en restaurantes" width="585" height="1024" class="aligncenter size-large wp-image-1188" /></p>
 <p>Para aquellos interesados en profundizar en estas herramientas, se puede explorar más en la <a href="https://www.last.app/recursos/blog/impacto-inteligencia-artificial-gastronomia" target="_blank" rel="nofollow noopener" data-lasso-id="1569">librería de prompts</a> especializada en inteligencia artificial para la gastronomía.</p>

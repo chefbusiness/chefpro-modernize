@@ -72,7 +72,7 @@ wpId: 3288
 <h3>4. Los Quesos (Pecorino + Parmesano)</h3>
 <p>El pecorino romano es salado y fuerte. El parmesano es más suave y umami. La mezcla equilibra. 100% pecorino es demasiado agresivo; 100% parmesano pierde carácter.</p>
 <h2>Errores Comunes</h2>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Error</th>
@@ -102,7 +102,7 @@ wpId: 3288
 <td style="padding: 12px; border: 1px solid #ddd;">Más sal en agua, más queso, más pimienta</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Variantes (No Auténticas pero Populares)</h2>
 <h3>Carbonara con Nata (Alla Crema)</h3>
 <p>Versión italiana del norte. Añade 50ml de nata a la mezcla de huevo. Más suave, menos auténtica. No se sirve en Roma.</p>

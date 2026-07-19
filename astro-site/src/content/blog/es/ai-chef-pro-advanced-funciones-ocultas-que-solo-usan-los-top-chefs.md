@@ -204,7 +204,7 @@ wpId: 1664
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Ingrediente</th><th>Merma Tradicional</th><th>Merma Predictiva AI</th><th>Ahorro Mensual</th></tr></thead><tbody><tr><td>Pescado Fresco (Lubina)</td><td>35-45%</td><td>18-22%</td><td>€1.200-€1.800</td></tr><tr><td>Verduras de Hoja</td><td>25-35%</td><td>12-15%</td><td>€800-€1.200</td></tr><tr><td>Carnes Premium</td><td>20-30%</td><td>8-12%</td><td>€2.000-€3.500</td></tr><tr><td>Hierbas Aromáticas</td><td>40-50%</td><td>15-20%</td><td>€300-€500</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Ingrediente</th><th>Merma Tradicional</th><th>Merma Predictiva AI</th><th>Ahorro Mensual</th></tr></thead><tbody><tr><td>Pescado Fresco (Lubina)</td><td>35-45%</td><td>18-22%</td><td>€1.200-€1.800</td></tr><tr><td>Verduras de Hoja</td><td>25-35%</td><td>12-15%</td><td>€800-€1.200</td></tr><tr><td>Carnes Premium</td><td>20-30%</td><td>8-12%</td><td>€2.000-€3.500</td></tr><tr><td>Hierbas Aromáticas</td><td>40-50%</td><td>15-20%</td><td>€300-€500</td></tr></tbody></table></div></figure>
 
 
 
@@ -679,7 +679,7 @@ wpId: 1664
 
 
 
-<figure class="wp-block-table is-style-stripes"><table><thead><tr><th>Métrica</th><th>Antes AI Chef Pro Advanced</th><th>Después de Implementación</th><th>Mejora</th></tr></thead><tbody><tr><td>Mermas Totales</td><td>28%</td><td>18%</td><td>-35.7%</td></tr><tr><td>Coste por Plato</td><td>€18.50</td><td>€12.20</td><td>-34%</td></tr><tr><td>Tiempo Desarrollo Recetas</td><td>8 horas</td><td>2.5 horas</td><td>-68.7%</td></tr><tr><td>Satisfacción Cliente</td><td>8.2/10</td><td>9.4/10</td><td>+14.6%</td></tr><tr><td>Rotación Personal</td><td>45%</td><td>12%</td><td>-73.3%</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-stripes"><div class="table-scroll"><table><thead><tr><th>Métrica</th><th>Antes AI Chef Pro Advanced</th><th>Después de Implementación</th><th>Mejora</th></tr></thead><tbody><tr><td>Mermas Totales</td><td>28%</td><td>18%</td><td>-35.7%</td></tr><tr><td>Coste por Plato</td><td>€18.50</td><td>€12.20</td><td>-34%</td></tr><tr><td>Tiempo Desarrollo Recetas</td><td>8 horas</td><td>2.5 horas</td><td>-68.7%</td></tr><tr><td>Satisfacción Cliente</td><td>8.2/10</td><td>9.4/10</td><td>+14.6%</td></tr><tr><td>Rotación Personal</td><td>45%</td><td>12%</td><td>-73.3%</td></tr></tbody></table></div></figure>
 
 
 

@@ -49,7 +49,7 @@ wpId: 3352
 <p>La previsión de demanda no solo reduce mermas: permite planificar turnos de personal con precisión, evitando tanto los excesos de plantilla en días flojos como los infartos en días punta. Para un sector donde el margen neto rara vez supera el 10%, cada punto de eficiencia cuenta.</p>
 <h2>Comparativa: tipos de herramientas de IA para restaurantes</h2>
 <p>El ecosistema de <strong>software IA hostelería</strong> en 2026 es amplio y especializado. No existe una única herramienta que lo haga todo para todos, pero sí categorías claras que responden a necesidades concretas. Esta tabla te ayuda a orientarte según el área que quieras mejorar primero.</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Categoría</th>
@@ -96,7 +96,7 @@ wpId: 3352
 <td>Grupos de restauración y negocios con varios puntos de venta</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>La mayoría de estas herramientas funcionan bien por separado, pero la fricción aparece cuando toca integrarlas. Un POS que no habla con el inventario, un generador de recetas que no actualiza los escandallos, un chatbot que no sabe qué platos están agotados hoy. Ahí es donde una suite integrada marca la diferencia real en el día a día.</p>
 <h2>AI Chef Pro: la suite de IA para cocina y operación</h2>
 <p>Mientras la mayoría de herramientas se especializan en una sola función, <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=mejores-ia-restaurantes-2026" target="_blank" rel="noopener">AI Chef Pro</a> ha construido una suite de más de 55 herramientas de inteligencia artificial diseñada específicamente para la cocina profesional y la operación diaria de un restaurante. No es un chatbot genérico adaptado a hostelería: es un ecosistema creado por y para cocineros.</p>

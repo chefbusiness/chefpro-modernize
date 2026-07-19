@@ -24,7 +24,7 @@ wpId: 3249
 <li><strong>Mejora digestibilidad:</strong> Las moléculas pequeñas son más fáciles de asimilar.</li>
 </ul>
 <h3>Tipos de Hidrólisis en Gastronomía</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Tipo</th>
@@ -54,7 +54,7 @@ wpId: 3249
 <td style="padding: 12px; border: 1px solid #ddd;">Ceviche, conservas, gelificación</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Ciencia de la Hidrólisis</h2>
 <h3>Mecanismo de Reacción</h3>
 <p>La hidrólisis rompe enlaces químicos mediante la adición de agua:</p>
@@ -71,7 +71,7 @@ wpId: 3249
 <p><strong>Amilasas:</strong> Rompen enlaces glucosídicos en almidones, produciendo azúcares simples.</p>
 <p><strong>Lipasas:</strong> Rompen triglicéridos en ácidos grasos y glicerol.</p>
 <h3>Factores que Afectan la Velocidad</h3>
-<table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
+<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
 <thead>
 <tr style="background: #000000; color: white;">
 <th style="padding: 14px; border: 1px solid #ddd;">Factor</th>
@@ -100,7 +100,7 @@ wpId: 3249
 <td style="padding: 12px; border: 1px solid #ddd;">Mejora el contacto entre enzima y sustrato</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Aplicaciones en la Cocina</h2>
 <h3>Maduración de Carnes (Dry-Aging)</h3>
 <p>La maduración en seco utiliza proteasas endógenas de la carne:</p>

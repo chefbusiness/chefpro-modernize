@@ -37,7 +37,7 @@ wpId: 3864
 <h3>Salsa de tomate</h3>
 <p>La incorporación de Escoffier refleja el ascenso imparable del tomate como ingrediente central en la cocina francesa de principios del XX. Aquí no hablamos de un simple triturado, sino de una salsa trabajada: tomates maduros, mirepoix, hierbas aromáticas, un toque de ajo y una cocción larga que concentra los azúcares naturales y redondea la acidez. Esta salsa madre es la base de la marinara, la puttanesca o la boloñesa cuando se le añade carne. Es la más versátil para platos de pasta, arroces, guisos de legumbres y como base de pizzas.</p>
 <h2>Tabla comparativa de las 5 salsas madre</h2>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Salsa madre</th>
@@ -90,7 +90,7 @@ wpId: 3864
 <td>Pasta, pizzas, arroces, guisos y legumbres</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Salsas derivadas: cuando la base se viste de gala</h2>
 <p>El verdadero poder de las salsas madre se revela en sus hijas. Una salsa derivada es cualquier preparación que toma una salsa madre y la modifica añadiendo ingredientes que le dan una personalidad nueva sin alterar su estructura fundamental. Piensa en la <strong>salsa Mornay</strong>: no es más que una bechamel a la que incorporas queso rallado y un toque de mostaza, pero en la carta se convierte en el alma de un gratinado de coliflor que de otro modo sería una simple verdura hervida.</p>
 <p>El catálogo es casi infinito. De la velouté salen la salsa de champiñones, la de alcaparras o la de eneldo para salmón. De la española, el demi-glace, y del demi-glace salen la salsa al vino tinto, la bordelesa con tuétano, la cazadora con setas, la Perigourdine con trufa. De la holandesa, como hemos visto, el bearnés y sus variantes. Y de la de tomate, todo el universo de salsas italianas para pasta y pizza. Cada ramificación es un plato nuevo que apenas lleva unos minutos extra de elaboración si tienes la salsa madre lista.</p>

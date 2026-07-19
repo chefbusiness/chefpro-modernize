@@ -100,7 +100,7 @@ wpId: 3494
 
 <p>El Reglamento UE 1169/2011 establece 14 substances o grupos de sustancias que causan las reacciones alérgicas más frecuentes y graves. Todo establecimiento de restauración tiene la obligación legal de informar sobre la presencia de estos alérgenos en todos los platos que sirva. A continuación se presenta la tabla completa con ejemplos prácticos para cada categoría.</p>
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Nº</th>
@@ -210,7 +210,7 @@ wpId: 3494
 <td>Moluscos bivalvos, gasterópodos, cefalópodos</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p><strong>Nota importante</strong>: Esta tabla incluye los 14 alérgenos de declaración obligatoria según el Reglamento UE 1169/2011. Sin embargo, un cliente puede ser alérgico a otras sustancias no incluidas en esta lista (como ciertas frutas, verduras u otros alimentos). La buena práctica recomienda disponer de información completa sobre todos los ingredientes de cada plato.</p>
 
@@ -268,7 +268,7 @@ wpId: 3494
 
 <h3>Métricas de Impacto</h3>
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Indicador</th>
@@ -309,7 +309,7 @@ wpId: 3494
 <li>-75%</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <p>Este caso ilustra cómo la inversión en un sistema de gestión de alérgenos con IA se amortiza en pocos meses, además de eliminar riesgos legales y mejorar significativamente la experiencia del cliente.</p>
 
@@ -324,7 +324,7 @@ wpId: 3494
 
 <p>El mercado de soluciones tecnológicas para la gestión de alérgenos en hostelería ha experimentado un crecimiento exponencial. A continuación se presenta una comparativa de las principales opciones disponibles, incluyendo las soluciones de AI Chef Pro.</p>
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Característica</th>
@@ -420,7 +420,7 @@ wpId: 3494
 <td>Manual</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 
 <h3>AI Chef Pro: La Suite Completa</h3>
 

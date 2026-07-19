@@ -38,7 +38,7 @@ wpId: 2736
 </ul>
 <h2>Diferencia entre demi-glace y glace de viande</h2>
 <p>Es muy habitual que estos dos términos se confundan, incluso entre estudiantes de cocina. Aunque comparten origen, el resultado final y su papel en cocina son bastante distintos. Esta tabla comparativa te ayudará a verlo de un vistazo:</p>
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th scope="col">Característica</th>
@@ -78,7 +78,7 @@ wpId: 2736
 <td>Concentrado cárnico casi puro, más agresivo y salino si no se dosifica bien</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>En resumen, la <strong>glace de viande</strong> es un ingrediente casi extremo de concentración, mientras que la demi-glace es una preparación más equilibrada y lista para ser transformada en multitud de salsas. En muchas cocinas se complementan: la demi-glace como base diaria y la glace como recurso de emergencia para reforzar un fondo que haya quedado corto de intensidad.</p>
 <h2>¿Merece la pena hacer demi-glace hoy en día?</h2>
 <p>Con las prisas del servicio moderno, algunos cocineros jóvenes se preguntan si vale la pena dedicar dos días a una elaboración que no se sirve directamente al comensal. La respuesta de cualquier chef con oficio es un sí rotundo. La demi-glace casera aporta un brillo, una textura envolvente y una profundidad de sabor que ningún concentrado comercial puede replicar por completo. Además, es una inversión de tiempo que rinde mucho: de un lote bien hecho puedes sacar decenas de servicios y salsas distintas, multiplicando la eficiencia en cocina sin sacrificar la identidad de cada plato.</p>

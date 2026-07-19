@@ -517,7 +517,7 @@ wpId: 1423
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Herramienta</th><th>Costo Mensual</th><th>Calidad Visual</th><th>Facilidad de Uso</th><th>Especialización Gastronómica</th><th>Ideal Para</th></tr></thead><tbody><tr><td><strong>Midjourney</strong></td><td>$10-60</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>Fine Dining, Alta Cocina</td></tr><tr><td><strong>DALL-E 3</strong></td><td>$20</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Concepto, Innovación</td></tr><tr><td><strong>Stable Diffusion</strong></td><td>$0-50</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Uso Técnico Avanzado</td></tr><tr><td><strong>Adobe Firefly</strong></td><td>$23-60</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Grandes Cadenas</td></tr><tr><td><strong>Leonardo AI</strong></td><td>$10-48</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Food Styling Específico</td></tr><tr><td><strong>Runway ML</strong></td><td>$12-76</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐⭐</td><td>Contenido Video</td></tr><tr><td><strong>Canva AI</strong></td><td>$13</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Pequeños Establecimientos</td></tr><tr><td><strong>AI Chef Pro</strong></td><td>€10-50</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Solución Integral</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Herramienta</th><th>Costo Mensual</th><th>Calidad Visual</th><th>Facilidad de Uso</th><th>Especialización Gastronómica</th><th>Ideal Para</th></tr></thead><tbody><tr><td><strong>Midjourney</strong></td><td>$10-60</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>Fine Dining, Alta Cocina</td></tr><tr><td><strong>DALL-E 3</strong></td><td>$20</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Concepto, Innovación</td></tr><tr><td><strong>Stable Diffusion</strong></td><td>$0-50</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Uso Técnico Avanzado</td></tr><tr><td><strong>Adobe Firefly</strong></td><td>$23-60</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Grandes Cadenas</td></tr><tr><td><strong>Leonardo AI</strong></td><td>$10-48</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Food Styling Específico</td></tr><tr><td><strong>Runway ML</strong></td><td>$12-76</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐⭐</td><td>Contenido Video</td></tr><tr><td><strong>Canva AI</strong></td><td>$13</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>Pequeños Establecimientos</td></tr><tr><td><strong>AI Chef Pro</strong></td><td>€10-50</td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>Solución Integral</td></tr></tbody></table></div></figure>
 
 
 
@@ -651,7 +651,7 @@ wpId: 1423
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Ratio Recomendado</th><th>Consideraciones Especiales</th></tr></thead><tbody><tr><td><strong>Instagram Feed</strong></td><td>1:1 (cuadrado)</td><td>Composición centrada, colores vibrantes</td></tr><tr><td><strong>Instagram Stories</strong></td><td>9:16 (vertical)</td><td>Elementos en zona segura, textos legibles</td></tr><tr><td><strong>Menús Digitales</strong></td><td>16:9 (horizontal)</td><td>Claridad en detalles, iluminación uniforme</td></tr><tr><td><strong>Web/Blogs</strong></td><td>3:2 (paisaje)</td><td>Optimización SEO, alt-text descriptivo</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plataforma</th><th>Ratio Recomendado</th><th>Consideraciones Especiales</th></tr></thead><tbody><tr><td><strong>Instagram Feed</strong></td><td>1:1 (cuadrado)</td><td>Composición centrada, colores vibrantes</td></tr><tr><td><strong>Instagram Stories</strong></td><td>9:16 (vertical)</td><td>Elementos en zona segura, textos legibles</td></tr><tr><td><strong>Menús Digitales</strong></td><td>16:9 (horizontal)</td><td>Claridad en detalles, iluminación uniforme</td></tr><tr><td><strong>Web/Blogs</strong></td><td>3:2 (paisaje)</td><td>Optimización SEO, alt-text descriptivo</td></tr></tbody></table></div></figure>
 
 
 
@@ -955,7 +955,7 @@ wpId: 1423
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Día de Semana</th><th>Tipo de Contenido</th><th>Herramienta IA</th><th>Formato</th></tr></thead><tbody><tr><td><strong>Lunes</strong></td><td>Plato Estrella</td><td>Midjourney</td><td>16:9 para Feed</td></tr><tr><td><strong>Miércoles</strong></td><td>Ingrediente/Proceso</td><td>Leonardo AI</td><td>9:16 para Stories</td></tr><tr><td><strong>Viernes</strong></td><td>Dessert/Especial</td><td>DALL-E 3</td><td>1:1 para Feed</td></tr><tr><td><strong>Domingo</strong></td><td>Behind Scenes</td><td>Runway ML</td><td>Video/Carrusel</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Día de Semana</th><th>Tipo de Contenido</th><th>Herramienta IA</th><th>Formato</th></tr></thead><tbody><tr><td><strong>Lunes</strong></td><td>Plato Estrella</td><td>Midjourney</td><td>16:9 para Feed</td></tr><tr><td><strong>Miércoles</strong></td><td>Ingrediente/Proceso</td><td>Leonardo AI</td><td>9:16 para Stories</td></tr><tr><td><strong>Viernes</strong></td><td>Dessert/Especial</td><td>DALL-E 3</td><td>1:1 para Feed</td></tr><tr><td><strong>Domingo</strong></td><td>Behind Scenes</td><td>Runway ML</td><td>Video/Carrusel</td></tr></tbody></table></div></figure>
 
 
 
@@ -1205,7 +1205,7 @@ wpId: 1423
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>ROI Esperado</th><th>Payback Period</th></tr></thead><tbody><tr><td><strong>Pequeño (1-20 mesas)</strong></td><td>€25-50</td><td>300-500%</td><td>1-2 meses</td></tr><tr><td><strong>Mediano (21-50 mesas)</strong></td><td>€50-100</td><td>400-700%</td><td>1 mes</td></tr><tr><td><strong>Grande/Cadena</strong></td><td>€100-300</td><td>500-1000%</td><td>2-3 semanas</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>ROI Esperado</th><th>Payback Period</th></tr></thead><tbody><tr><td><strong>Pequeño (1-20 mesas)</strong></td><td>€25-50</td><td>300-500%</td><td>1-2 meses</td></tr><tr><td><strong>Mediano (21-50 mesas)</strong></td><td>€50-100</td><td>400-700%</td><td>1 mes</td></tr><tr><td><strong>Grande/Cadena</strong></td><td>€100-300</td><td>500-1000%</td><td>2-3 semanas</td></tr></tbody></table></div></figure>
 
 
 

@@ -64,7 +64,7 @@ wpId: 1594
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Plato</th><th>Ingredientes Principales</th><th>Técnicas Obligatorias</th></tr></thead><tbody><tr><td><strong>Entrante</strong></td><td>Ostras, higos, castañas, patata, bonito del Norte</td><td>Libre elección</td></tr><tr><td><strong>Principal</strong></td><td>Merluza</td><td>Curado en sal + Asado</td></tr><tr><td><strong>Postre</strong></td><td>Versión libre</td><td>Reinterpretación de carrot cake</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plato</th><th>Ingredientes Principales</th><th>Técnicas Obligatorias</th></tr></thead><tbody><tr><td><strong>Entrante</strong></td><td>Ostras, higos, castañas, patata, bonito del Norte</td><td>Libre elección</td></tr><tr><td><strong>Principal</strong></td><td>Merluza</td><td>Curado en sal + Asado</td></tr><tr><td><strong>Postre</strong></td><td>Versión libre</td><td>Reinterpretación de carrot cake</td></tr></tbody></table></div></figure>
 
 
 
@@ -123,7 +123,7 @@ wpId: 1594
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Chef Humano</th><th>Inteligencia Artificial</th></tr></thead><tbody><tr><td><strong>Velocidad de Procesamiento</strong></td><td>⭐⭐⭐ Reflexión pausada, intuición</td><td>⭐⭐⭐⭐⭐ Instantáneo, millones de datos</td></tr><tr><td><strong>Creatividad e Innovación</strong></td><td>⭐⭐⭐⭐⭐ Intuición, experiencia sensorial</td><td>⭐⭐⭐ Combinaciones algorítmicas</td></tr><tr><td><strong>Conocimiento Técnico</strong></td><td>⭐⭐⭐⭐ Experiencia práctica limitada</td><td>⭐⭐⭐⭐⭐ Acceso a toda la información culinaria</td></tr><tr><td><strong>Adaptabilidad</strong></td><td>⭐⭐⭐⭐⭐ Ajustes en tiempo real</td><td>⭐⭐⭐ Limitada por programación</td></tr><tr><td><strong>Comprensión Sensorial</strong></td><td>⭐⭐⭐⭐⭐ Todos los sentidos activos</td><td>⭐ Sin capacidades sensoriales</td></tr><tr><td><strong>Consistencia</strong></td><td>⭐⭐⭐ Variable según estado/día</td><td>⭐⭐⭐⭐⭐ Siempre igual</td></tr><tr><td><strong>Comprensión Emocional</strong></td><td>⭐⭐⭐⭐⭐ Conexión humana profunda</td><td>⭐ Sin comprensión emocional</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Aspecto</th><th>Chef Humano</th><th>Inteligencia Artificial</th></tr></thead><tbody><tr><td><strong>Velocidad de Procesamiento</strong></td><td>⭐⭐⭐ Reflexión pausada, intuición</td><td>⭐⭐⭐⭐⭐ Instantáneo, millones de datos</td></tr><tr><td><strong>Creatividad e Innovación</strong></td><td>⭐⭐⭐⭐⭐ Intuición, experiencia sensorial</td><td>⭐⭐⭐ Combinaciones algorítmicas</td></tr><tr><td><strong>Conocimiento Técnico</strong></td><td>⭐⭐⭐⭐ Experiencia práctica limitada</td><td>⭐⭐⭐⭐⭐ Acceso a toda la información culinaria</td></tr><tr><td><strong>Adaptabilidad</strong></td><td>⭐⭐⭐⭐⭐ Ajustes en tiempo real</td><td>⭐⭐⭐ Limitada por programación</td></tr><tr><td><strong>Comprensión Sensorial</strong></td><td>⭐⭐⭐⭐⭐ Todos los sentidos activos</td><td>⭐ Sin capacidades sensoriales</td></tr><tr><td><strong>Consistencia</strong></td><td>⭐⭐⭐ Variable según estado/día</td><td>⭐⭐⭐⭐⭐ Siempre igual</td></tr><tr><td><strong>Comprensión Emocional</strong></td><td>⭐⭐⭐⭐⭐ Conexión humana profunda</td><td>⭐ Sin comprensión emocional</td></tr></tbody></table></div></figure>
 
 
 
@@ -425,7 +425,7 @@ wpId: 1594
 
 
 
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Generado</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Restaurante pequeño (30 pax)</td><td>€10-15</td><td>€300-450</td><td>300-450%</td></tr><tr><td>Restaurante mediano (60 pax)</td><td>€25-50</td><td>€700-1200</td><td>400-800%</td></tr><tr><td>Empresa de catering</td><td>€25-50</td><td>€1000-2000</td><td>700-1500%</td></tr><tr><td>Cadena de restaurantes</td><td>€50-100</td><td>€5000-15000</td><td>1000-3000%</td></tr></tbody></table></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Tipo de Establecimiento</th><th>Inversión Mensual</th><th>Ahorro Generado</th><th>ROI Mensual</th></tr></thead><tbody><tr><td>Restaurante pequeño (30 pax)</td><td>€10-15</td><td>€300-450</td><td>300-450%</td></tr><tr><td>Restaurante mediano (60 pax)</td><td>€25-50</td><td>€700-1200</td><td>400-800%</td></tr><tr><td>Empresa de catering</td><td>€25-50</td><td>€1000-2000</td><td>700-1500%</td></tr><tr><td>Cadena de restaurantes</td><td>€50-100</td><td>€5000-15000</td><td>1000-3000%</td></tr></tbody></table></div></figure>
 
 
 
