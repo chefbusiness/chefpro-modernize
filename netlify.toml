@@ -1,39 +1,60 @@
-[build]
-  publish = "dist"
-  command = "npm run build"
+# ══════════════════════════════════════════════════════════════════════════
+# PRODUCCIÓN aichef.pro — ASTRO (Fase 7 CUTOVER 2026-07-19)
+#
+# El site de producción (aichefpro) conserva dominio, SSL, env vars y las 4
+# netlify functions de dinero (netlify/functions, same-origin — ya sin puente
+# FunctionsOriginPatch, que solo actúa en el hostname de staging). Lo único
+# que cambia es QUÉ se construye: astro-site/ en lugar de la SPA.
+#
+# ROLLBACK: `git revert` de este commit (rebuild SPA ~3 min) o restaurar el
+# último deploy SPA desde Netlify (instantáneo): panel → Deploys → Publish
+# deploy, o API restoreSiteDeploy.
+#
+# El site de STAGING (base=astro-site) lee astro-site/netlify.toml — conserva
+# su X-Robots-Tag noindex y NO se ve afectado por este fichero.
+# ══════════════════════════════════════════════════════════════════════════
 
+[build]
+  publish = "astro-site/dist"
+  command = "cd astro-site && npm install && npm run build"
+
+# Las functions de dinero NO se mueven (D4: 0 diff desde la SPA).
 [functions]
   directory = "netlify/functions"
 
-# Edge Function for auto-detecting user language on root "/"
-# Runs first — only redirects on "/" so language-prefixed paths pass through
+[build.environment]
+  NODE_VERSION = "20"
+  VITE_SITE_URL = "https://aichef.pro"
+
+# lang-redirect SE MANTIENE (decisión Fase 6): 302 en "/" por cookie>AL>geo,
+# bots excluidos. og-meta MUERE con el cutover (meta nativo en build) — el
+# fichero sigue en netlify/edge-functions/ pero ya no se declara.
 [[edge_functions]]
   function = "lang-redirect"
   path = "/"
 
-# Edge Function for social media OG meta tags
-[[edge_functions]]
-  function = "og-meta"
-  path = "/*"
-
-[build.environment]
-  NODE_VERSION = "18"
-  VITE_SITE_URL = "https://aichef.pro"
-
-# Force redirect from www to non-www for canonical URLs
+# www → apex canónico
 [[redirects]]
   from = "https://www.aichef.pro/*"
   to = "https://aichef.pro/:splat"
   status = 301
   force = true
 
-# Main site redirects (SPA routing)
+# Alias de idioma histórico de la SPA: /es/formacion-presencial → canónico ES
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from = "/es/formacion-presencial"
+  to = "/formacion-presencial"
+  status = 301
 
-# Security headers for all pages
+# robots.txt y GSC anuncian /sitemap.xml; @astrojs/sitemap genera sitemap-index
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 301
+
+# ⚠️ SIN fallback SPA (/* → /index.html): Astro es estático multi-página; un
+# path inexistente debe dar su 404 real (la SPA enmascaraba 404 con 200).
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -43,20 +64,9 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Robots-Tag = "index, follow"
 
-
-# Cache optimization for assets
+# Assets con hash de Astro → caché inmutable
 [[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.css"
+  for = "/_astro/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
@@ -66,13 +76,11 @@
     Cache-Control = "public, max-age=604800"
 
 [[headers]]
-  for = "/*.svg"
+  for = "/og/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-# Sitemap headers
 [[headers]]
-  for = "/sitemap.xml"
+  for = "/*.svg"
   [headers.values]
-    Content-Type = "application/xml"
-    Cache-Control = "public, max-age=3600"
+    Cache-Control = "public, max-age=604800"

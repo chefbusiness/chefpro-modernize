@@ -180,13 +180,16 @@ const globalSchemas = noindex
     {description && <meta name="description" content={description} />}
     {keywords && <meta name="keywords" content={keywords} />}
     <meta name="author" content="AI Chef Pro" />
-    {/* Para páginas indexables, <meta name="robots"> se OMITE deliberadamente: en
-        staging el noindex site-wide lo aplica netlify.toml (X-Robots-Tag: noindex)
-        hasta el cutover (Fase 7). La SPA (SEOHead.tsx) emite index,follow en
-        producción → añadir aquí SOLO en el cutover, junto con la retirada de la
-        cabecera X-Robots-Tag. La zona app post-pago (prop noindex) SÍ lo emite
-        server-side desde ya — mejora sobre la SPA, donde dependía de JS (Helmet). */}
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {/* Fase 7 (cutover): meta robots index,follow en páginas indexables — paridad
+        con SEOHead.tsx de la SPA. En STAGING sigue mandando la cabecera
+        X-Robots-Tag: noindex de su netlify.toml (más restrictiva → Google la
+        respeta), así que staging permanece fuera del índice. La zona app
+        post-pago (prop noindex) emite noindex server-side. */}
+    {noindex ? (
+      <meta name="robots" content="noindex, nofollow" />
+    ) : (
+      <meta name="robots" content="index, follow" />
+    )}
     {!noindex && <link rel="canonical" href={canonical} />}
     {!noindex && emittedLocales.map((l) => <link rel="alternate" hreflang={l} href={urlFor(l)} />)}
     {!noindex && <link rel="alternate" hreflang="x-default" href={urlFor(xDefaultLocale)} />}
