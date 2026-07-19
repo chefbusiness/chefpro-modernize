@@ -1,13 +1,8 @@
 # SESSION HANDOFF — 2026-07-19
 
-## Sesión 2 (mañana) — FASE 5 zona app: CÓDIGO COMPLETO, gate 767/767 ✅ · happy-path E2E pendiente de John
+## Sesión 2 (mañana) — ✅ FASE 5 COMPLETA: gate 767/767 + happy-path E2E real CERRADO
 
-**HEAD = `79d6661`** (staging Y producción verdes). Las 89 rutas de la zona app post-pago (44 access + 44 library + admin) LIVE en staging como islands `client:only` reutilizando los componentes de la SPA cross-root TAL CUAL. Detalle completo en plan maestro §8 (entrada 2026-07-19 Fase 5).
-
-**LO ÚNICO QUE FALTA para cerrar Fase 5** (bloqueado en secretos write-only, como debe ser):
-1. John abre `https://aichef-astro-staging.netlify.app/admin/generar-acceso` (la página admin NUEVA de Astro — dogfooding del S3), mete el ADMIN_PASSWORD, genera magic link para `kit-tareas-asador` con "enviar email" desactivado.
-2. Cambia el dominio del link a staging y lo abre: debe verificar → dashboard → todas las descargas bajan el archivo real.
-3. (Alternativa más completa: compra test real + refund.)
+Las 89 rutas de la zona app post-pago (44 access + 44 library + admin) LIVE en staging como islands `client:only` reutilizando los componentes de la SPA cross-root TAL CUAL. **Gate de aceptación cerrado con magic link real de John**: generado desde el admin de Astro en staging (S3 e2e) → gate vanilla Pro Prompts en staging → library compuesta → 3/3 descargas binarias reales. Detalle completo en plan maestro §8 (entrada 2026-07-19 Fase 5). **Próximo: Fase 6.**
 
 Claves rápidas para la próxima sesión: gotcha Netlify `/.netlify/*` no redirigible → `FunctionsOriginPatch.astro` (QUITAR en cutover, igual que el bloque noindex del toml) · generador+gate en `scripts/astro-migration/fase5-*.py` · fix admin select 27→44 YA EN PRODUCCIÓN · próximo: Fase 6 (sitemap build con +45 URLs de productos, diff vs sitemap.xml actual, og images, revisión lang-redirect, llms.txt).
 
