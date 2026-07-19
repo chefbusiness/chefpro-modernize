@@ -47,7 +47,8 @@ def sips_value(path, prop):
 
 
 def main():
-    renames = {}  # ruta relativa vieja → nueva (png→jpg)
+    skip_jpg = '--skip-jpg' in sys.argv  # re-runs: los jpg ya están finales
+    renames = {}  # ruta relativa vieja → nueva (png→jpg / wav→m4a)
     n = 0
 
     for f in sorted(ASSETS.rglob('*')):
@@ -58,7 +59,17 @@ def main():
         n += 1
         thermal_guard(n)
 
-        if ext in ('.jpg', '.jpeg') and size > JPG_THRESHOLD:
+        if ext == '.wav':
+            out = f.with_suffix('.m4a')
+            r = run(['afconvert', '-f', 'm4af', '-d', 'aac', str(f), str(out)])
+            if out.exists() and out.stat().st_size > 0:
+                f.unlink()
+                renames['/blog-assets/' + str(f.relative_to(ASSETS))] = \
+                    '/blog-assets/' + str(out.relative_to(ASSETS))
+            else:
+                print('  ⚠️  afconvert falló con %s: %s' % (f.name, (r.stderr or '')[:80]))
+
+        elif ext in ('.jpg', '.jpeg') and not skip_jpg and size > JPG_THRESHOLD:
             w = sips_value(f, 'pixelWidth')
             cmd = ['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '75']
             if w and w.isdigit() and int(w) > MAX_W:
@@ -84,13 +95,19 @@ def main():
             else:
                 print('  ⚠️  sips falló con %s: %s' % (f.name, (r.stderr or '')[:80]))
 
-    # Reescritura de referencias png→jpg en los .md
+    # Reescritura de referencias png→jpg / wav→m4a en los .md (también en su
+    # variante percent-encoded: los .md referencian %C2%BF… pero el fichero en
+    # disco se llama ¿…).
     changed = 0
     if renames:
+        from urllib.parse import quote
+        pairs = list(renames.items())
+        pairs += [(quote(o, safe='/:.-_'), quote(nw, safe='/:.-_'))
+                  for o, nw in renames.items()]
         for md in CONTENT.rglob('*.md'):
             txt = md.read_text(encoding='utf-8')
             new = txt
-            for old, newref in renames.items():
+            for old, newref in pairs:
                 new = new.replace(old, newref)
             if new != txt:
                 md.write_text(new, encoding='utf-8')
@@ -99,11 +116,13 @@ def main():
     total = sum(x.stat().st_size for x in ASSETS.rglob('*') if x.is_file())
     print('Procesados %d ficheros · %d png→jpg · %d .md actualizados · total %.0f MB'
           % (n, len(renames), changed, total / 1048576.0))
-    # Referencias .png que queden y ya no existan = error
+    # Referencias .png/.wav que queden y ya no existan = error
     missing = 0
+    from urllib.parse import unquote
     for md in CONTENT.rglob('*.md'):
-        for rel in re.findall(r'/blog-assets/([^"\'\s\)]+\.png)', md.read_text(encoding='utf-8')):
-            if not (ASSETS / rel).exists():
+        for rel in re.findall(r'/blog-assets/([^"\'\s\)]+\.(?:png|wav))',
+                              md.read_text(encoding='utf-8')):
+            if not (ASSETS / rel).exists() and not (ASSETS / unquote(rel)).exists():
                 print('  🚨 ref rota %s en %s' % (rel, md.name))
                 missing += 1
     if missing:

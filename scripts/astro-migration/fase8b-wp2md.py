@@ -91,6 +91,13 @@ def sanitize_body(html_body, migrated_slugs):
     """Limpia el HTML de WP y reescribe URLs internas."""
     body = WP_COMMENT_RE.sub('', html_body)
     body = SRCSET_RE.sub('', body)
+    # Atributos internos de WP con permalinks del subdominio (galerías)
+    body = re.sub(r'\sdata-permalink="[^"]*"', '', body)
+    # Archives y raíz del blog → hub /blog
+    body = re.sub(r'href="https?://blog\.aichef\.pro/(?:tag|category|author)/[^"]*"',
+                  'href="https://aichef.pro/blog"', body)
+    body = re.sub(r'href="https?://blog\.aichef\.pro/?"',
+                  'href="https://aichef.pro/blog"', body)
     # Imágenes → /blog-assets (la copia física la hace collect_assets)
     body = JETPACK_RE.sub(lambda m: '/blog-assets/' + m.group(1), body)
     body = UPLOADS_RE.sub(lambda m: '/blog-assets/' + m.group(1), body)
@@ -106,8 +113,12 @@ def sanitize_body(html_body, migrated_slugs):
         return 'https://aichef.pro/blog/' + slug
 
     body = INTERNAL_LINK_RE.sub(_link, body)
-    # Variantes redimensionadas de WP (-1024x683 etc.) → original (el export
-    # solo tiene originales; sobran bytes servir la variante).
+    # Catch-all: cualquier href residual al subdominio (paths multi-segmento,
+    # adjuntos, mayúsculas…) → hub /blog. Tras el cutover el subdominio muere.
+    body = re.sub(r'href="https?://blog\.aichef\.pro/[^"]*"',
+                  'href="https://aichef.pro/blog"', body, flags=re.I)
+    # Variantes redimensionadas de WP (-WxH) → original (el export solo tiene
+    # originales; sobran bytes servir la variante).
     body = re.sub(r'(/blog-assets/[^"\'\s\)]*?)-\d+x\d+\.(jpe?g|png|webp|gif)',
                   r'\1.\2', body)
     # Líneas con sangría inicial → colapsar (evita bloques de código markdown)
