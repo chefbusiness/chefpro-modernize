@@ -221,9 +221,9 @@ def main():
     # @astrojs/sitemap emite W3C datetime completo (2026-03-02T00:00:00.000Z);
     # prod emite fecha pelada. Se compara la FECHA (semánticamente idéntico,
     # Google acepta ambos formatos).
-    same = [p for p in list(prod)[:200]
+    same = [p for p in prod
             if p in stg and prod[p] and (stg[p] or '')[:10] != prod[p][:10]]
-    check(not same, f'sitemap: lastmod (fecha) difiere de prod en {same[:5]}')
+    check(not same, f'sitemap: lastmod (fecha) difiere de prod en {len(same)}: {same[:5]}')
 
     print('-- C. llms.txt')
     for f in ['llms.txt', 'llms-full.txt']:
@@ -262,6 +262,16 @@ def main():
     check(okj and 'Product' in types, f'kit landing: Product no presente ({sorted(types)})')
 
     print('-- G. Anti-regresión')
+    # D7: mientras NO haya cutover, el staging entero debe servir la cabecera
+    # X-Robots-Tag: noindex (netlify.toml). Netlify fusiona los bloques
+    # [[headers]] for="/*" — este check caza una regresión si el merge se rompe.
+    # ⚠️ En el gate POST-cutover este check se INVIERTE (debe desaparecer).
+    if 'staging' in BASE:
+        r = subprocess.run(['curl', '-sI', '-A', UA_BOT, '--max-time', '20', BASE + '/'],
+                           capture_output=True, text=True)
+        hdrs = r.stdout.lower()
+        check('x-robots-tag: noindex' in hdrs, 'D7: staging sin X-Robots-Tag noindex')
+        check('x-frame-options: deny' in hdrs, 'security headers ausentes (merge roto)')
     _, home, _ = curl(BASE + '/')
     check('AI Chef Pro' in (title_of(home) or ''), 'home: title roto')
     check(len(re.findall(r'hreflang="', home)) == 8, 'home: hreflang != 8')

@@ -48,7 +48,11 @@ export default defineConfig({
         return !(
           path.endsWith('-access') ||
           path.endsWith('-library') ||
-          path.startsWith('/admin') ||
+          // '/admin' o '/admin/...' — NO startsWith('/admin') a secas, que
+          // excluiría por error futuras rutas tipo /administracion-... (BAJA
+          // del revisor adversarial de Fase 6).
+          path === '/admin' ||
+          path.startsWith('/admin/') ||
           SITEMAP_EXCLUDE.has(path)
         );
       },
@@ -132,8 +136,10 @@ export default defineConfig({
         ),
         // Fase 5 (zona app islands): los gates/dashboards de la SPA se importan
         // cross-root TAL CUAL (fuente de verdad única, cero copias). Sus imports
-        // internos '@/x' apuntan al src/ de la RAÍZ del repo (no a astro-site/src;
-        // astro-site no usa '@/' en ningún fichero propio — verificado 2026-07-19).
+        // internos '@/x' apuntan al src/ de la RAÍZ del repo (no a astro-site/src).
+        // ⚠️ Desde Fase 6, BaseLayout.astro también usa '@/hooks/useLiveUserCount'
+        // A PROPÓSITO (fichero cross-root de la SPA). Si algún día se crea
+        // astro-site/src/hooks/*, recordar que '@/' SIEMPRE resuelve a la raíz.
         // Nota: el find '@' solo matchea '@' exacto o '@/...' — los paquetes
         // scoped tipo @astrojs/* NO se ven afectados (semántica @rollup/plugin-alias).
         '@': fileURLToPath(new URL('../src', import.meta.url)),
