@@ -31,7 +31,12 @@ REPO = Path(__file__).resolve().parents[2]
 EXPORT = Path.home() / 'aichef-blog' / 'export-2026-07-19'
 OUT_MD = REPO / 'astro-site' / 'src' / 'content' / 'blog' / 'es'
 OUT_ASSETS = REPO / 'astro-site' / 'public' / 'blog-assets'
-UPLOADS_RE = re.compile(r'https?://blog\.aichef\.pro/wp-content/uploads/([^"\'\s\)]+)')
+UPLOADS_RE = re.compile(
+    r'https?://blog\.aichef\.pro/wp-content/uploads/([^"\'\s\)\?]+)(?:\?[^"\'\s\)]*)?')
+# CDN de Jetpack (i0/i1/i2.wp.com) que proxyea los uploads del blog — moriría
+# con WP igual que el origen: se reescribe a /blog-assets y se pierde la query.
+JETPACK_RE = re.compile(
+    r'https?://i\d+\.wp\.com/blog\.aichef\.pro/wp-content/uploads/([^"\'\s\)\?]+)(?:\?[^"\'\s\)]*)?')
 INTERNAL_LINK_RE = re.compile(r'https?://blog\.aichef\.pro/([a-z0-9\-]+)/?(?=["\'])')
 WP_COMMENT_RE = re.compile(r'<!--\s*/?wp:[^>]*-->\s*')
 SRCSET_RE = re.compile(r'\s(?:srcset|sizes)="[^"]*"')
@@ -87,6 +92,7 @@ def sanitize_body(html_body, migrated_slugs):
     body = WP_COMMENT_RE.sub('', html_body)
     body = SRCSET_RE.sub('', body)
     # Imágenes → /blog-assets (la copia física la hace collect_assets)
+    body = JETPACK_RE.sub(lambda m: '/blog-assets/' + m.group(1), body)
     body = UPLOADS_RE.sub(lambda m: '/blog-assets/' + m.group(1), body)
 
     # Enlaces internos a posts → /blog/{slug} (si el destino no migra — Tier D —
@@ -147,6 +153,13 @@ def main():
     posts = {p['slug']: p for p in load_jsonl(EXPORT / 'posts-publish.jsonl')}
     media = {m['id']: m for m in load_jsonl(EXPORT / 'media.jsonl')}
     cats = {c['id']: c['name'] for c in json.load(open(str(EXPORT / 'categories.json'), encoding='utf-8'))}
+    # Cluster de la auditoría 2026-06-15: los posts money (C1..C5) archivados en
+    # WP bajo "Tutoriales"/"Recetario" se recolocan en ia-en-gastronomia.
+    catalogo_path = Path.home() / 'aichef-blog' / '.work' / 'audit-2026-06-15' / 'catalogo.json'
+    clusters = {}
+    if catalogo_path.exists():
+        clusters = {c['slug']: c['cluster']
+                    for c in json.load(open(str(catalogo_path), encoding='utf-8'))}
 
     ok, skipped, total_assets, all_missing = 0, [], 0, []
     for slug in wanted:
@@ -158,12 +171,18 @@ def main():
         if dest_cat is None:
             skipped.append((slug, 'Tier D (guias-ia-locales): NO se migra'))
             continue
+        if (clusters.get(slug, '').startswith('C')
+                and dest_cat in ('tutoriales', 'recetario-pro-ai', 'glosario')):
+            dest_cat = 'ia-en-gastronomia'
 
         title = html.unescape(strip_tags(p['title']['rendered']))
         desc = html.unescape(strip_tags(p.get('excerpt', {}).get('rendered', '')))
-        desc = re.sub(r'\s+', ' ', desc).strip()
+        desc = re.sub(r'\s+', ' ', desc).replace('[…]', '').replace('…', '').strip()
         if not desc:
             desc = title
+        # Meta description: máx ~158 chars cortando en límite de palabra.
+        if len(desc) > 158:
+            desc = desc[:158].rsplit(' ', 1)[0].rstrip(' ,;:.') + '…'
         body = sanitize_body(p['content']['rendered'], migrated_slugs)
 
         image_line = ''
