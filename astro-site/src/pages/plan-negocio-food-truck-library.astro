@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Plan de Negocio Food Truck (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de PlanNegocioFoodTruckDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import PlanNegocioFoodTruckLibraryIsland from '../islands/library/PlanNegocioFoodTruckLibraryIsland';
+---
+
+<BaseLayout title="Plan de Negocio Food Truck — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <PlanNegocioFoodTruckLibraryIsland client:only="react" />
+</BaseLayout>

@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Plan de Negocio Paellero / Paella Eventos (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de PlanNegocioPaelleroEventosDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import PlanNegocioPaelleroEventosLibraryIsland from '../islands/library/PlanNegocioPaelleroEventosLibraryIsland';
+---
+
+<BaseLayout title="Plan de Negocio Paellero / Paella Eventos — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <PlanNegocioPaelleroEventosLibraryIsland client:only="react" />
+</BaseLayout>

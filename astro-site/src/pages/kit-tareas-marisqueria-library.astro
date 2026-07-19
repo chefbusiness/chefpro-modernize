@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Kit de Tareas Marisquería (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de KitTareasMarisqueriaDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import KitTareasMarisqueriaLibraryIsland from '../islands/library/KitTareasMarisqueriaLibraryIsland';
+---
+
+<BaseLayout title="Kit de Tareas Marisquería — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <KitTareasMarisqueriaLibraryIsland client:only="react" />
+</BaseLayout>

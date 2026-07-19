@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Plan de Negocio para Catering & Kit Temático para Eventos (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de PlanCateringTematicoEventosDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import PlanCateringTematicoEventosLibraryIsland from '../islands/library/PlanCateringTematicoEventosLibraryIsland';
+---
+
+<BaseLayout title="Plan de Negocio Catering Temático Eventos — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <PlanCateringTematicoEventosLibraryIsland client:only="react" />
+</BaseLayout>

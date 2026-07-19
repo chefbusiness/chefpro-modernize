@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Kit de Tareas Panadería (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de KitTareasPanaderiaDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import KitTareasPanaderiaLibraryIsland from '../islands/library/KitTareasPanaderiaLibraryIsland';
+---
+
+<BaseLayout title="Kit de Tareas Panadería — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <KitTareasPanaderiaLibraryIsland client:only="react" />
+</BaseLayout>

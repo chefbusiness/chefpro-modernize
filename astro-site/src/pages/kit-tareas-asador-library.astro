@@ -1,12 +1,15 @@
 ---
-// Fase 5 — dashboard post-pago de Kit de Tareas Asador (PILOTO S0).
+// Fase 5 — dashboard post-pago de Kit de Tareas Asador (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
 // Island client:only="react": ProtectedRoute lee localStorage en render
-// síncrono (útil en cliente, ReferenceError bajo SSR) → sin pase SSR.
-// title: verbatim del <title> del Helmet de KitTareasAsadorDashboard.tsx.
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de KitTareasAsadorDashboard.tsx (extraído por el generador).
 import BaseLayout from '../layouts/BaseLayout.astro';
-import KitTareasAsadorLibrary from '../islands/library/KitTareasAsadorLibrary';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import KitTareasAsadorLibraryIsland from '../islands/library/KitTareasAsadorLibraryIsland';
 ---
 
 <BaseLayout title="Kit de Tareas Asador — Dashboard | AI Chef Pro" noindex>
-  <KitTareasAsadorLibrary client:only="react" />
+  <FunctionsOriginPatch />
+  <KitTareasAsadorLibraryIsland client:only="react" />
 </BaseLayout>

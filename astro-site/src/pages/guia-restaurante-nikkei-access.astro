@@ -1,5 +1,5 @@
 ---
-// Fase 5 — access gate de Kit de Tareas Asador (GENERADO por scripts/astro-migration/
+// Fase 5 — access gate de Guía Restaurante Nikkei (GENERADO por scripts/astro-migration/
 // fase5-generate-zona-app.py — editar el generador, no este fichero).
 // Island client:only="react": el gate de la SPA se monta TAL CUAL (window/
 // localStorage en cliente; sin pase SSR). Config de dinero: hardcodeada en el
@@ -8,10 +8,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
 import { ACCESS_TITLE } from '../lib/zona-app';
-import KitTareasAsadorAccessGate from '../../../src/pages/KitTareasAsadorAccessGate';
+import GuiaRestauranteNikkeiAccessGate from '../../../src/pages/GuiaRestauranteNikkeiAccessGate';
 ---
 
 <BaseLayout title={ACCESS_TITLE} noindex>
   <FunctionsOriginPatch />
-  <KitTareasAsadorAccessGate client:only="react" />
+  <GuiaRestauranteNikkeiAccessGate client:only="react" />
 </BaseLayout>

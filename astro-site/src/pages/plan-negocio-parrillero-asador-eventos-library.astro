@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Plan de Negocio Parrillero / Asador Eventos (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de PlanNegocioParrilleroAsadorEventosDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import PlanNegocioParrilleroAsadorEventosLibraryIsland from '../islands/library/PlanNegocioParrilleroAsadorEventosLibraryIsland';
+---
+
+<BaseLayout title="Plan de Negocio Parrillero / Asador Eventos — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <PlanNegocioParrilleroAsadorEventosLibraryIsland client:only="react" />
+</BaseLayout>

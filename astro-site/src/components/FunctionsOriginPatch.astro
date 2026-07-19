@@ -1,0 +1,35 @@
+---
+/**
+ * Fase 5 — puente STAGING → functions de producción (zona app post-pago).
+ *
+ * Este site de staging (base=astro-site) no sirve las netlify functions, y
+ * Netlify ignora redirects sobre /.netlify/* (verificado en el gate S0
+ * 2026-07-19: 404). Solución: en el dominio de staging se parchea
+ * window.fetch para reescribir las llamadas relativas /.netlify/functions/*
+ * al backend real de producción. Prerrequisitos VERIFICADOS en las 4
+ * functions (verify-purchase, get-download-urls, resend-access,
+ * admin-generate-access): Access-Control-Allow-Origin: * + handler OPTIONS
+ * (get-download-urls permite además el header Authorization).
+ *
+ * - Los componentes de la SPA llaman SIEMPRE fetch con URL string literal
+ *   '/.netlify/functions/...' (censo 2026-07-19) — no se manejan Request
+ *   objects a propósito.
+ * - En aichef.pro (post-cutover) el hostname no matchea → no-op total.
+ *   El script es is:inline y corre durante el parse, ANTES de que hidrate
+ *   cualquier island client:only.
+ * - ⚠️ Candidato a eliminarse en Fase 7 (cutover) junto con esta nota.
+ */
+---
+
+<script is:inline>
+  (function () {
+    if (!window.location.hostname.endsWith('aichef-astro-staging.netlify.app')) return;
+    var origFetch = window.fetch.bind(window);
+    window.fetch = function (input, init) {
+      if (typeof input === 'string' && input.indexOf('/.netlify/functions/') === 0) {
+        input = 'https://aichef.pro' + input;
+      }
+      return origFetch(input, init);
+    };
+  })();
+</script>

@@ -17,18 +17,12 @@
   to = "/formacion-presencial"
   status = 301
 
-# Fase 5 (STAGING ONLY): este site (base=astro-site) NO despliega las netlify
-# functions — viven en la raíz del repo y las sirve el site de producción.
-# Proxy 200 para que los islands de la zona app (verify-purchase,
-# get-download-urls, resend-access, admin-generate-access) funcionen en
-# staging contra el backend real (mismo origen para el navegador → sin CORS).
-# ⚠️ QUITAR en el cutover (Fase 7): si este toml pasara a ser el de producción,
-# la regla se proxyaría a sí misma en bucle.
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "https://aichef.pro/.netlify/functions/:splat"
-  status = 200
-  force = true
+# Fase 5: este site (base=astro-site) NO despliega las netlify functions —
+# viven en la raíz del repo y las sirve el site de producción. VERIFICADO
+# 2026-07-19: Netlify IGNORA redirects sobre el namespace /.netlify/* (gate S0
+# devolvió 404), así que el puente staging→prod NO va aquí: lo hace el
+# componente FunctionsOriginPatch.astro (fetch patch client-side keyed por
+# hostname de staging; CORS * + OPTIONS verificados en las 4 functions).
 
 # D7 del PLAN MAESTRO: el staging NO se indexa hasta el cutover (Fase 7).
 # ⚠️ QUITAR este bloque en el cutover — y solo entonces.

@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Plan de Negocio Coctelería de Eventos (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de PlanNegocioCocteleriaEventosDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import PlanNegocioCocteleriaEventosLibraryIsland from '../islands/library/PlanNegocioCocteleriaEventosLibraryIsland';
+---
+
+<BaseLayout title="Plan de Negocio Coctelería de Eventos — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <PlanNegocioCocteleriaEventosLibraryIsland client:only="react" />
+</BaseLayout>

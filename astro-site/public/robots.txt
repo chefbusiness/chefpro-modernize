@@ -1,0 +1,35 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /*-access
+Disallow: /*-library
+Disallow: /admin/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*-access
+Disallow: /*-library
+Disallow: /admin/
+
+User-agent: Twitterbot
+Allow: /
+Disallow: /*-access
+Disallow: /*-library
+Disallow: /admin/
+
+User-agent: facebookexternalhit
+Allow: /
+Disallow: /*-access
+Disallow: /*-library
+Disallow: /admin/
+
+User-agent: *
+Allow: /
+Disallow: /*-access
+Disallow: /*-library
+Disallow: /admin/
+
+Sitemap: https://aichef.pro/sitemap.xml
+
+# AI / LLM index — see https://llmstxt.org
+# https://aichef.pro/llms.txt
+# https://aichef.pro/llms-full.txt

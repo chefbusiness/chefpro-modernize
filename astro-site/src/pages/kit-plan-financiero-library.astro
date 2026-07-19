@@ -1,0 +1,15 @@
+---
+// Fase 5 — dashboard post-pago de Kit Plan Financiero (GENERADO por scripts/astro-migration/
+// fase5-generate-zona-app.py — editar el generador, no este fichero).
+// Island client:only="react": ProtectedRoute lee localStorage en render
+// síncrono (ReferenceError bajo SSR) → sin pase SSR, igual que el shell SPA.
+// Title verbatim del <title> del Helmet de KitPlanFinancieroDashboard.tsx (extraído por el generador).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../components/FunctionsOriginPatch.astro';
+import KitPlanFinancieroLibraryIsland from '../islands/library/KitPlanFinancieroLibraryIsland';
+---
+
+<BaseLayout title="Kit Plan Financiero para Restaurantes — Dashboard | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <KitPlanFinancieroLibraryIsland client:only="react" />
+</BaseLayout>
