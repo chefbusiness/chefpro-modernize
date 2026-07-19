@@ -350,7 +350,7 @@ export default function ModernFooter() {
               {lang === 'es' && (
                 <li>
                   <a
-                    href="/productos-digitales"
+                    href="/productos-digitales" target="_blank"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     Productos Digitales

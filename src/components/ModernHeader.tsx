@@ -401,7 +401,7 @@ export default function ModernHeader() {
                 <NavigationMenuItem>
                   <NavigationMenuLink
                     className="text-sm font-medium transition-colors hover:text-foreground/80 text-foreground/60 px-3 py-2"
-                    href="/productos-digitales"
+                    href="/productos-digitales" target="_blank"
                   >
                     Productos Digitales
                   </NavigationMenuLink>
@@ -636,7 +636,7 @@ export default function ModernHeader() {
                       </a>
                       {currentLanguage === 'es' && (
                         <a
-                          href="/productos-digitales"
+                          href="/productos-digitales" target="_blank"
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
