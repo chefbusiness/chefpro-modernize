@@ -1,6 +1,12 @@
 ---
 import '../styles/global.css';
 import { LOCALES, DEFAULT_LOCALE, SITE, type Locale } from '../i18n/config';
+// Contador determinista de usuarios (función pura, sin React pese al nombre) —
+// cross-root de la SPA: misma fórmula que alimenta el aggregateRating del
+// SoftwareApplication en SEOHead.tsx. En build queda congelado a la fecha del
+// deploy (desviación aceptada: en la SPA se calcula en cliente; los deploys
+// frecuentes lo mantienen al día).
+import { useLiveUserCount } from '@/hooks/useLiveUserCount';
 
 interface Props {
   title: string;
@@ -62,6 +68,107 @@ const urlFor = (locale: Locale): string => {
   return locale === DEFAULT_LOCALE ? `${SITE}${p || '/'}` : `${SITE}/${locale}${p}`;
 };
 const canonical = urlFor(lang);
+
+// Fase 6 — los 3 JSON-LD GLOBALES de SEOHead.tsx, replicados VERBATIM (misma
+// estructura, mismos literales). En la SPA los emite cada página con SEOHead;
+// aquí van en el layout para TODAS las páginas indexables (desviación aceptada
+// y documentada: las pocas páginas de la SPA sin SEOHead no los emitían).
+const userCount = useLiveUserCount('es').count;
+const globalSchemas = noindex
+  ? []
+  : [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'AI Chef Pro',
+        url: SITE,
+        logo: `${SITE}/logo-ai-chef-pro.svg`,
+        sameAs: [
+          'https://twitter.com/aichefpro',
+          'https://www.linkedin.com/company/aichefpro',
+        ],
+        contactPoint: {
+          '@type': 'ContactPoint',
+          email: 'info@aichef.pro',
+          telephone: '+34744717942',
+          contactType: 'customer service',
+        },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'AI Chef Pro',
+        url: SITE,
+        inLanguage: [...LOCALES],
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'AI Chef Pro',
+        description,
+        url: SITE,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Web',
+        offers: [
+          {
+            '@type': 'Offer',
+            name: 'AI Chef Miembro',
+            description: 'Acceso básico gratuito. 3.000 créditos/mes.',
+            category: 'SaaS',
+            priceCurrency: 'EUR',
+            price: '0',
+            priceValidUntil: '2026-12-31',
+          },
+          {
+            '@type': 'Offer',
+            name: 'AI Chef Premium Pro',
+            description:
+              'Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.',
+            category: 'SaaS',
+            priceCurrency: 'EUR',
+            price: '25',
+            priceValidUntil: '2026-12-31',
+          },
+          {
+            '@type': 'Offer',
+            name: 'AI Chef Premium Plus',
+            description:
+              'Para empresarios gastronómicos y cadenas de restaurantes. 175.000 créditos/mes.',
+            category: 'SaaS',
+            priceCurrency: 'EUR',
+            price: '50',
+            priceValidUntil: '2026-12-31',
+          },
+          {
+            '@type': 'Offer',
+            name: 'AI Chef Premium Max',
+            description: 'Créditos ilimitados mensuales para profesionales exigentes.',
+            category: 'SaaS',
+            priceCurrency: 'EUR',
+            price: '95',
+            priceValidUntil: '2026-12-31',
+          },
+          {
+            '@type': 'Offer',
+            name: 'AI Chef Premium Max Anual',
+            description:
+              'Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses.',
+            category: 'SaaS',
+            priceCurrency: 'EUR',
+            price: '950',
+            priceValidUntil: '2026-12-31',
+          },
+        ],
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          ratingCount: String(userCount),
+          bestRating: '5',
+          worstRating: '1',
+        },
+        inLanguage: [...LOCALES],
+      },
+    ];
 ---
 
 <!doctype html>
@@ -108,12 +215,13 @@ const canonical = urlFor(lang);
     {ogImage && <meta name="twitter:image:alt" content={ogImageAlt} />}
     <meta name="theme-color" content="#f59e0b" />
     <meta name="msapplication-TileColor" content="#f59e0b" />
-    {/* NOTA de paridad (desviación aceptada, explícita): los 3 JSON-LD GLOBALES de SEOHead.tsx
-        (Organization con contactPoint/sameAs/logo, WebSite, SoftwareApplication con offers y
-        aggregateRating.ratingCount = userCount EN VIVO) NO se replican aquí. Son schemas
-        site-wide (no específicos de esta ruta) y SoftwareApplication depende de un contador de
-        usuarios en vivo no reproducible en build estático → pendientes de un slice de plataforma
-        dedicado. La página /mentoria-online conserva sus JSON-LD propios (BreadcrumbList + Service). */}
+    {/* Fase 6: los 3 JSON-LD globales de SEOHead.tsx (Organization/WebSite/
+        SoftwareApplication), en UN script con array — mismo formato que la SPA.
+        Solo en páginas indexables (la zona app noindex no los lleva, igual que
+        en la SPA, donde los gates/dashboards no montan SEOHead). */}
+    {globalSchemas.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify(globalSchemas)} />
+    )}
     <slot name="head" />
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased">

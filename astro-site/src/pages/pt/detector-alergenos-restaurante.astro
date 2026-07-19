@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/DetectorAlergenos.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/detector-alergenos';
+import DetectorAlergenosIsland from '../../islands/marketing/DetectorAlergenosIsland';
+
+const lang = 'pt';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/detector-alergenos-restaurante", "en": "/en/restaurant-allergen-detector", "fr": "/fr/detecteur-allergenes-restaurant", "de": "/de/allergen-detektor-restaurant", "it": "/it/rilevatore-allergeni-ristorante", "pt": "/pt/detector-alergenos-restaurante", "nl": "/nl/allergenen-detector-restaurant"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <DetectorAlergenosIsland client:only="react" />
+</BaseLayout>

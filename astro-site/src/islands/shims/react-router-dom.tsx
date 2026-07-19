@@ -8,7 +8,9 @@
  *
  * Superficie EXACTA usada por el cierre de imports de la zona app (censo
  * 2026-07-19, 107 ficheros): useSearchParams, useNavigate, Navigate,
- * useLocation. Nada más — no ampliar sin re-censar.
+ * useLocation. Fase 6 (censo 2026-07-19, 56 ficheros marketing/legales):
+ * + useParams (useLanguage sincroniza idioma desde /:lang) y + Link
+ * (OtherFreeTools). Nada más — no ampliar sin re-censar.
  *
  * Todos los islands que llegan aquí van con client:only="react" (sin pase
  * SSR), por lo que window siempre existe cuando este código corre.
@@ -17,7 +19,7 @@
  * `navigate` en las deps de su useEffect de verificación — devolver un objeto
  * nuevo por render relanzaría el fetch a verify-purchase en bucle infinito.
  */
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 
 export interface NavigateOptions {
   replace?: boolean;
@@ -47,6 +49,47 @@ export function useLocation() {
     hash: window.location.hash,
   }));
   return location;
+}
+
+export function useParams<T extends Record<string, string | undefined>>(): T {
+  // Única forma usada por el cierre de imports: useParams<{ lang?: string }>()
+  // en useLanguage.ts (rutas /:lang/...). En Astro el idioma va en el primer
+  // segmento del path (es = sin prefijo → {}). useState initializer → misma
+  // referencia entre renders (useLanguage la mete en deps de su useEffect).
+  const [params] = useState(() => {
+    const seg = window.location.pathname.split('/')[1];
+    return (['en', 'fr', 'de', 'it', 'pt', 'nl'].includes(seg)
+      ? { lang: seg }
+      : {}) as T;
+  });
+  return params;
+}
+
+export function Link({
+  to,
+  replace: _replace,
+  state: _state,
+  children,
+  ...rest
+}: {
+  to: string | { pathname?: string; search?: string; hash?: string };
+  replace?: boolean;
+  state?: unknown;
+  children?: ReactNode;
+  [key: string]: unknown;
+}) {
+  // Sin router, un <Link> es un <a>: navegar entre páginas Astro es una carga
+  // de página completa normal. Se ignoran replace/state (semántica de historial
+  // SPA sin equivalente aquí).
+  const href =
+    typeof to === 'string'
+      ? to
+      : `${to?.pathname ?? ''}${to?.search ?? ''}${to?.hash ?? ''}`;
+  return (
+    <a href={href} {...rest}>
+      {children}
+    </a>
+  );
 }
 
 export function Navigate({ to, replace = false }: { to: string; replace?: boolean }) {

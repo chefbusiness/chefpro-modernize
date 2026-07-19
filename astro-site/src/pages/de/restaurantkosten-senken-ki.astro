@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/ReducirCostesRestaurante.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/reducir-costes-restaurante';
+import ReducirCostesRestauranteIsland from '../../islands/marketing/ReducirCostesRestauranteIsland';
+
+const lang = 'de';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/reducir-costes-restaurante-ia", "en": "/en/reduce-restaurant-costs-ai", "fr": "/fr/reduire-couts-restaurant-ia", "de": "/de/restaurantkosten-senken-ki", "it": "/it/ridurre-costi-ristorante-ia", "pt": "/pt/reduzir-custos-restaurante-ia", "nl": "/nl/restaurantkosten-verlagen-ai"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <ReducirCostesRestauranteIsland client:only="react" />
+</BaseLayout>

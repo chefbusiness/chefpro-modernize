@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/GeneradorTextosCarta.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../i18n/config';
+import { head } from '../lib/marketing-heads/generador-textos-carta';
+import GeneradorTextosCartaIsland from '../islands/marketing/GeneradorTextosCartaIsland';
+
+const lang = 'es';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/generador-textos-carta-restaurante", "en": "/en/restaurant-menu-copy-generator", "fr": "/fr/generateur-textes-carte-restaurant", "de": "/de/speisekarten-text-generator", "it": "/it/generatore-testi-menu-ristorante", "pt": "/pt/gerador-textos-cardapio-restaurante", "nl": "/nl/menukaart-tekst-generator"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <GeneradorTextosCartaIsland client:only="react" />
+</BaseLayout>

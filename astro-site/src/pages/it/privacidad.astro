@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/Privacy.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/privacy';
+import PrivacyIsland from '../../islands/marketing/PrivacyIsland';
+
+const lang = 'it';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  basePath="/privacidad"
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <PrivacyIsland client:only="react" />
+</BaseLayout>

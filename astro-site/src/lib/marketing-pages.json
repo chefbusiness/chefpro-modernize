@@ -1,0 +1,316 @@
+[
+  {
+    "component": "CalculadoraBrigada",
+    "kind": "marketing",
+    "kebab": "calculadora-brigada",
+    "alternates": {
+      "es": "/calculadora-brigada-restaurante",
+      "en": "/en/restaurant-brigade-calculator",
+      "fr": "/fr/calculateur-brigade-restaurant",
+      "de": "/de/brigaden-rechner-restaurant",
+      "it": "/it/calcolatore-brigata-ristorante",
+      "pt": "/pt/calculadora-brigada-restaurante",
+      "nl": "/nl/brigade-calculator-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "CalculadoraFoodCost",
+    "kind": "marketing",
+    "kebab": "calculadora-food-cost",
+    "alternates": {
+      "es": "/calculadora-food-cost-restaurante",
+      "en": "/en/food-cost-calculator-restaurant",
+      "fr": "/fr/calculateur-food-cost-restaurant",
+      "de": "/de/food-cost-rechner-restaurant",
+      "it": "/it/calcolatore-food-cost-ristorante",
+      "pt": "/pt/calculadora-food-cost-restaurante",
+      "nl": "/nl/food-cost-calculator-restaurant"
+    },
+    "aliasRoutes": [
+      "/en/ai-food-cost-calculator"
+    ],
+    "inSitemap": true
+  },
+  {
+    "component": "CalendarioContenidos",
+    "kind": "marketing",
+    "kebab": "calendario-contenidos",
+    "alternates": {
+      "es": "/calendario-contenidos-restaurante",
+      "en": "/en/restaurant-content-calendar",
+      "fr": "/fr/calendrier-contenu-restaurant",
+      "de": "/de/content-kalender-restaurant",
+      "it": "/it/calendario-contenuti-ristorante",
+      "pt": "/pt/calendario-conteudo-restaurante",
+      "nl": "/nl/content-kalender-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "ChatGPTRestaurantes",
+    "kind": "marketing",
+    "kebab": "chat-g-p-t-restaurantes",
+    "alternates": {
+      "es": "/chatgpt-para-restaurantes",
+      "en": "/en/chatgpt-for-restaurants",
+      "fr": "/fr/chatgpt-pour-restaurants",
+      "de": "/de/chatgpt-fuer-restaurants",
+      "it": "/it/chatgpt-per-ristoranti",
+      "pt": "/pt/chatgpt-para-restaurantes",
+      "nl": "/nl/chatgpt-voor-restaurants"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "DetectorAlergenos",
+    "kind": "marketing",
+    "kebab": "detector-alergenos",
+    "alternates": {
+      "es": "/detector-alergenos-restaurante",
+      "en": "/en/restaurant-allergen-detector",
+      "fr": "/fr/detecteur-allergenes-restaurant",
+      "de": "/de/allergen-detektor-restaurant",
+      "it": "/it/rilevatore-allergeni-ristorante",
+      "pt": "/pt/detector-alergenos-restaurante",
+      "nl": "/nl/allergenen-detector-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "EscandallosRestaurante",
+    "kind": "marketing",
+    "kebab": "escandallos-restaurante",
+    "alternates": {
+      "es": "/escandallos-restaurante-ia",
+      "en": "/en/food-cost-calculator-restaurant-ai",
+      "fr": "/fr/calcul-food-cost-restaurant-ia",
+      "de": "/de/food-cost-rechner-restaurant-ki",
+      "it": "/it/food-cost-ristorante-ia",
+      "pt": "/pt/escandallo-restaurante-ia",
+      "nl": "/nl/food-cost-berekening-restaurant-ai"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "GeneradorMenuDegustacion",
+    "kind": "marketing",
+    "kebab": "generador-menu-degustacion",
+    "alternates": {
+      "es": "/generador-menu-degustacion",
+      "en": "/en/tasting-menu-generator",
+      "fr": "/fr/generateur-menu-degustation",
+      "de": "/de/degustationsmenu-generator",
+      "it": "/it/generatore-menu-degustazione",
+      "pt": "/pt/gerador-menu-degustacao",
+      "nl": "/nl/proefmenu-generator"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "GeneradorTextosCarta",
+    "kind": "marketing",
+    "kebab": "generador-textos-carta",
+    "alternates": {
+      "es": "/generador-textos-carta-restaurante",
+      "en": "/en/restaurant-menu-copy-generator",
+      "fr": "/fr/generateur-textes-carte-restaurant",
+      "de": "/de/speisekarten-text-generator",
+      "it": "/it/generatore-testi-menu-ristorante",
+      "pt": "/pt/gerador-textos-cardapio-restaurante",
+      "nl": "/nl/menukaart-tekst-generator"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "HerramientasGratuitas",
+    "kind": "marketing",
+    "kebab": "herramientas-gratuitas",
+    "alternates": {
+      "es": "/herramientas-gratuitas",
+      "en": "/en/free-tools-restaurants",
+      "fr": "/fr/outils-gratuits-restaurant",
+      "de": "/de/kostenlose-tools-restaurant",
+      "it": "/it/strumenti-gratuiti-ristorante",
+      "pt": "/pt/ferramentas-gratuitas-restaurante",
+      "nl": "/nl/gratis-tools-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "HerramientasIARestaurantes",
+    "kind": "marketing",
+    "kebab": "herramientas-i-a-restaurantes",
+    "alternates": {
+      "es": "/herramientas-ia-para-restaurantes",
+      "en": "/en/ai-tools-for-restaurants",
+      "fr": "/fr/outils-ia-restaurant",
+      "de": "/de/ki-tools-restaurant",
+      "it": "/it/strumenti-ia-ristorante",
+      "pt": "/pt/ferramentas-ia-restaurante",
+      "nl": "/nl/ai-tools-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "MarketingRestaurante",
+    "kind": "marketing",
+    "kebab": "marketing-restaurante",
+    "alternates": {
+      "es": "/marketing-restaurante-ia",
+      "en": "/en/restaurant-marketing-ai",
+      "fr": "/fr/marketing-restaurant-ia",
+      "de": "/de/restaurant-marketing-ki",
+      "it": "/it/marketing-ristorante-ia",
+      "pt": "/pt/marketing-restaurante-ia-pt",
+      "nl": "/nl/restaurant-marketing-ai-nl"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "MenuRestaurante",
+    "kind": "marketing",
+    "kebab": "menu-restaurante",
+    "alternates": {
+      "es": "/carta-menu-restaurante-ia",
+      "en": "/en/restaurant-menu-ai",
+      "fr": "/fr/carte-menu-restaurant-ia",
+      "de": "/de/speisekarte-restaurant-ki",
+      "it": "/it/menu-ristorante-ia",
+      "pt": "/pt/cardapio-restaurante-ia",
+      "nl": "/nl/restaurantmenu-ai"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "RecetasIARestaurantes",
+    "kind": "marketing",
+    "kebab": "recetas-i-a-restaurantes",
+    "alternates": {
+      "es": "/recetas-ia-restaurantes",
+      "en": "/en/ai-recipes-for-restaurants",
+      "fr": "/fr/recettes-ia-restaurants",
+      "de": "/de/ki-rezepte-restaurants",
+      "it": "/it/ricette-ia-ristoranti",
+      "pt": "/pt/receitas-ia-restaurantes",
+      "nl": "/nl/ai-recepten-restaurants"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "ReducirCostesRestaurante",
+    "kind": "marketing",
+    "kebab": "reducir-costes-restaurante",
+    "alternates": {
+      "es": "/reducir-costes-restaurante-ia",
+      "en": "/en/reduce-restaurant-costs-ai",
+      "fr": "/fr/reduire-couts-restaurant-ia",
+      "de": "/de/restaurantkosten-senken-ki",
+      "it": "/it/ridurre-costi-ristorante-ia",
+      "pt": "/pt/reduzir-custos-restaurante-ia",
+      "nl": "/nl/restaurantkosten-verlagen-ai"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "SimuladorRentabilidad",
+    "kind": "marketing",
+    "kebab": "simulador-rentabilidad",
+    "alternates": {
+      "es": "/simulador-rentabilidad-restaurante",
+      "en": "/en/restaurant-profit-simulator",
+      "fr": "/fr/simulateur-rentabilite-restaurant",
+      "de": "/de/rentabilitaet-simulator-restaurant",
+      "it": "/it/simulatore-redditivita-ristorante",
+      "pt": "/pt/simulador-rentabilidade-restaurante",
+      "nl": "/nl/winstgevendheid-simulator-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "SoftwareGestionCocina",
+    "kind": "marketing",
+    "kebab": "software-gestion-cocina",
+    "alternates": {
+      "es": "/software-gestion-cocina-ia",
+      "en": "/en/kitchen-management-software-ai",
+      "fr": "/fr/logiciel-gestion-cuisine-ia",
+      "de": "/de/kuechenverwaltung-ki",
+      "it": "/it/software-gestione-cucina-ia",
+      "pt": "/pt/software-gestao-cozinha-ia",
+      "nl": "/nl/keuken-software-ai"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "TestDigitalizacion",
+    "kind": "marketing",
+    "kebab": "test-digitalizacion",
+    "alternates": {
+      "es": "/test-digitalizacion-restaurante",
+      "en": "/en/restaurant-digitalization-test",
+      "fr": "/fr/test-digitalisation-restaurant",
+      "de": "/de/digitalisierungstest-restaurant",
+      "it": "/it/test-digitalizzazione-ristorante",
+      "pt": "/pt/teste-digitalizacao-restaurante",
+      "nl": "/nl/digitaliseringstest-restaurant"
+    },
+    "aliasRoutes": [],
+    "inSitemap": true
+  },
+  {
+    "component": "Legal",
+    "kind": "legal",
+    "kebab": "legal",
+    "basePath": "/legales",
+    "aliasRoutes": [],
+    "inSitemap": false
+  },
+  {
+    "component": "Cookies",
+    "kind": "legal",
+    "kebab": "cookies",
+    "basePath": "/cookies",
+    "aliasRoutes": [],
+    "inSitemap": false
+  },
+  {
+    "component": "Privacy",
+    "kind": "legal",
+    "kebab": "privacy",
+    "basePath": "/privacidad",
+    "aliasRoutes": [],
+    "inSitemap": false
+  },
+  {
+    "component": "Terms",
+    "kind": "legal",
+    "kebab": "terms",
+    "basePath": "/terminos",
+    "aliasRoutes": [],
+    "inSitemap": false
+  },
+  {
+    "component": "SistemaCreditos",
+    "kind": "legal",
+    "kebab": "sistema-creditos",
+    "basePath": "/sistema-creditos",
+    "aliasRoutes": [],
+    "inSitemap": false
+  }
+]

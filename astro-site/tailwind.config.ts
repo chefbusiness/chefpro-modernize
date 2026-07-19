@@ -16,6 +16,13 @@ export default {
 		"../src/pages/AdminGenerateAccess.tsx",
 		"../src/components/shared/**/*.tsx",
 		"../src/components/library/**/*.tsx",
+		// Fase 6 (marketing/legales islands): cierre de imports = 22 páginas +
+		// components top-level (ModernHeader/Footer, PricingPlans, OtherFreeTools,
+		// HeroSocialProof, AnnouncementBar…) + ui. Censo 2026-07-19, 56 ficheros
+		// (scripts/astro-migration/fase6-*). Sigue sin abrirse ../src/** entero.
+		"../src/pages/{CalculadoraBrigada,CalculadoraFoodCost,CalendarioContenidos,ChatGPTRestaurantes,DetectorAlergenos,EscandallosRestaurante,GeneradorMenuDegustacion,GeneradorTextosCarta,HerramientasGratuitas,HerramientasIARestaurantes,MarketingRestaurante,MenuRestaurante,RecetasIARestaurantes,ReducirCostesRestaurante,SimuladorRentabilidad,SoftwareGestionCocina,TestDigitalizacion,Legal,Cookies,Privacy,Terms,SistemaCreditos}.tsx",
+		"../src/components/*.tsx",
+		"../src/components/ui/*.tsx",
 	],
 	prefix: "",
 	theme: {

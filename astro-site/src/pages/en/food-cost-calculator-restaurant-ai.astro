@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/EscandallosRestaurante.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/escandallos-restaurante';
+import EscandallosRestauranteIsland from '../../islands/marketing/EscandallosRestauranteIsland';
+
+const lang = 'en';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/escandallos-restaurante-ia", "en": "/en/food-cost-calculator-restaurant-ai", "fr": "/fr/calcul-food-cost-restaurant-ia", "de": "/de/food-cost-rechner-restaurant-ki", "it": "/it/food-cost-ristorante-ia", "pt": "/pt/escandallo-restaurante-ia", "nl": "/nl/food-cost-berekening-restaurant-ai"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <EscandallosRestauranteIsland client:only="react" />
+</BaseLayout>

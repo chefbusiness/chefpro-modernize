@@ -1,8 +1,32 @@
+import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+
+// Fase 6 — sitemap nativo con paridad EXACTA vs el sitemap.xml de la SPA:
+// lastmod por URL (snapshot de prod vía scripts/astro-migration/fase6-lastmod-map.py)
+// y exclusiones = zona app + legales + rutas alias (igual que en prod, donde
+// legales y alias nunca estuvieron en el sitemap).
+const LASTMOD = JSON.parse(
+  readFileSync(new URL('./src/lib/sitemap-lastmod.json', import.meta.url), 'utf8')
+);
+const MARKETING = JSON.parse(
+  readFileSync(new URL('./src/lib/marketing-pages.json', import.meta.url), 'utf8')
+);
+const SITEMAP_EXCLUDE = new Set(
+  MARKETING.flatMap((e) => {
+    const alias = e.aliasRoutes ?? [];
+    if (e.kind !== 'legal') return alias;
+    const bp = e.basePath;
+    return [bp, ...['en', 'fr', 'de', 'it', 'pt', 'nl'].map((l) => `/${l}${bp}`), ...alias];
+  })
+);
+// Fecha de alta para URLs que NO estaban en el sitemap de la SPA (hoy: las 45
+// de productos digitales, incorporadas al sitemap en Fase 6). Si en fases
+// posteriores se añaden páginas nuevas, actualizar esta constante o el mapa.
+const NEW_URLS_LASTMOD = '2026-07-19';
 
 // PLAN_MAESTRO_MIGRACION_ASTRO_2026.md — D6: paridad de URLs 1:1 con la SPA actual.
 // Esquema de rutas idéntico: es sin prefijo, resto de idiomas con prefijo.
@@ -18,13 +42,25 @@ export default defineConfig({
     sitemap({
       // Fase 5: la zona app post-pago (gates -access, dashboards -library,
       // /admin) NUNCA entra en el sitemap — URLs privadas de dinero, noindex.
+      // Fase 6: + legales y rutas alias (paridad: tampoco están en el de prod).
       filter: (page) => {
-        const path = new URL(page).pathname.replace(/\/$/, '');
+        const path = new URL(page).pathname.replace(/\/$/, '') || '/';
         return !(
           path.endsWith('-access') ||
           path.endsWith('-library') ||
-          path.startsWith('/admin')
+          path.startsWith('/admin') ||
+          SITEMAP_EXCLUDE.has(path)
         );
+      },
+      // Fase 6: lastmod por URL (paridad con prod; URLs nuevas → fecha de alta).
+      // NOTA paridad aceptada: el sitemap de prod lleva xhtml:link alternates en
+      // 521/658 URLs; aquí NO se emiten porque el hreflang va nativo en el HTML
+      // de TODAS las páginas (cobertura superior; Google acepta cualquiera de
+      // las dos vías y no exige ambas).
+      serialize: (item) => {
+        const path = new URL(item.url).pathname.replace(/\/$/, '') || '/';
+        item.lastmod = LASTMOD[path] ?? NEW_URLS_LASTMOD;
+        return item;
       },
     }),
   ],

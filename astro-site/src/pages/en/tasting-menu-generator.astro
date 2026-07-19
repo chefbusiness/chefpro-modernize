@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/GeneradorMenuDegustacion.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/generador-menu-degustacion';
+import GeneradorMenuDegustacionIsland from '../../islands/marketing/GeneradorMenuDegustacionIsland';
+
+const lang = 'en';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/generador-menu-degustacion", "en": "/en/tasting-menu-generator", "fr": "/fr/generateur-menu-degustation", "de": "/de/degustationsmenu-generator", "it": "/it/generatore-menu-degustazione", "pt": "/pt/gerador-menu-degustacao", "nl": "/nl/proefmenu-generator"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <GeneradorMenuDegustacionIsland client:only="react" />
+</BaseLayout>

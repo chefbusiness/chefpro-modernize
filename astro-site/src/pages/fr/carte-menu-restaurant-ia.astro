@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/MenuRestaurante.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/menu-restaurante';
+import MenuRestauranteIsland from '../../islands/marketing/MenuRestauranteIsland';
+
+const lang = 'fr';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/carta-menu-restaurante-ia", "en": "/en/restaurant-menu-ai", "fr": "/fr/carte-menu-restaurant-ia", "de": "/de/speisekarte-restaurant-ki", "it": "/it/menu-ristorante-ia", "pt": "/pt/cardapio-restaurante-ia", "nl": "/nl/restaurantmenu-ai"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <MenuRestauranteIsland client:only="react" />
+</BaseLayout>

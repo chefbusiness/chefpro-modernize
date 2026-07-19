@@ -8,6 +8,59 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Fase 6: lang-redirect PORTADO byte-idéntico de netlify/edge-functions/ de la
+# raíz (decisión: SE MANTIENE tras el cutover — el hreflang nativo no enruta
+# visitas directas; 302 en "/" con bots excluidos y cookie preferred-lang).
+# Activo YA en staging para probarlo antes del cutover. La edge function
+# og-meta de la SPA NO se porta: muere con el cutover (meta nativo en build).
+[[edge_functions]]
+  function = "lang-redirect"
+  path = "/"
+
+# Fase 6: www → apex (paridad con el netlify.toml de la raíz). Inerte en
+# staging (www.aichef.pro no apunta aquí); necesario desde el cutover.
+[[redirects]]
+  from = "https://www.aichef.pro/*"
+  to = "https://aichef.pro/:splat"
+  status = 301
+  force = true
+
+# Fase 6: robots.txt (byte-idéntico a prod) y GSC anuncian /sitemap.xml, pero
+# @astrojs/sitemap genera sitemap-index.xml → puente 301. Sin `force`: si algún
+# día existiera un fichero /sitemap.xml en dist, el fichero ganaría.
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap-index.xml"
+  status = 301
+
+# Fase 6: security headers — paridad con el netlify.toml de la raíz (SPA).
+# ⚠️ SIN X-Robots-Tag aquí: en staging manda el bloque noindex de abajo; en el
+# cutover (Fase 7) ese bloque se sustituye por X-Robots-Tag = "index, follow".
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Fase 6: caché inmutable para los assets con hash de Astro (equivalente al
+# /assets/* de Vite en la SPA).
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/og-image.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # Alias de idioma: en la SPA /es/formacion-presencial renderiza la MISMA página que
 # /formacion-presencial (ruta ES canónica sin prefijo). En Astro NO se duplica la página:
 # se redirige 301 al canónico. Sin `force` → solo aplica si no existe fichero /es/formacion-presencial

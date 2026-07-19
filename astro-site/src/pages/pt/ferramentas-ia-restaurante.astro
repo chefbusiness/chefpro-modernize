@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/HerramientasIARestaurantes.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/herramientas-i-a-restaurantes';
+import HerramientasIARestaurantesIsland from '../../islands/marketing/HerramientasIARestaurantesIsland';
+
+const lang = 'pt';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/herramientas-ia-para-restaurantes", "en": "/en/ai-tools-for-restaurants", "fr": "/fr/outils-ia-restaurant", "de": "/de/ki-tools-restaurant", "it": "/it/strumenti-ia-ristorante", "pt": "/pt/ferramentas-ia-restaurante", "nl": "/nl/ai-tools-restaurant"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <HerramientasIARestaurantesIsland client:only="react" />
+</BaseLayout>

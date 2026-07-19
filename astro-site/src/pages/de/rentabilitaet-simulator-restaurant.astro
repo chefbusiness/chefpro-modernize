@@ -1,0 +1,27 @@
+---
+// GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
+// Fase 6: la página de la SPA (src/pages/SimuladorRentabilidad.tsx) se monta TAL CUAL como
+// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
+// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../i18n/config';
+import { head } from '../../lib/marketing-heads/simulador-rentabilidad';
+import SimuladorRentabilidadIsland from '../../islands/marketing/SimuladorRentabilidadIsland';
+
+const lang = 'de';
+const h = head(lang);
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  keywords={h.keywords}
+  lang={lang}
+  alternates={{"es": "/simulador-rentabilidad-restaurante", "en": "/en/restaurant-profit-simulator", "fr": "/fr/simulateur-rentabilite-restaurant", "de": "/de/rentabilitaet-simulator-restaurant", "it": "/it/simulatore-redditivita-ristorante", "pt": "/pt/simulador-rentabilidade-restaurante", "nl": "/nl/winstgevendheid-simulator-restaurant"}}
+  ogImage={`${SITE}${h.ogImage ?? '/og-image.jpg'}`}
+>
+  {h.schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+  <SimuladorRentabilidadIsland client:only="react" />
+</BaseLayout>
