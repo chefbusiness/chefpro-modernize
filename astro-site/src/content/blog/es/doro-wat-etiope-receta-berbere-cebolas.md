@@ -3,7 +3,7 @@ title: "Doro Wat Etíope: Receta Pro con Berbere y Cebollas Caramelizadas"
 description: "Auténtico Doro Wat etíope: pollo guisado con berbere y cebollas caramelizadas 45 minutos. Técnica Pro de Addis Abeba."
 pubDate: 2026-06-16
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/doro-wat.jpg
 imageAlt: "Doro Wat Etíope: Receta Pro con Berbere y Cebollas Caramelizadas"
 lang: es

@@ -3,7 +3,7 @@ title: "Sauerbraten Alemán: Receta Pro de Marinado de 5 Días"
 description: "Auténtico Sauerbraten alemán: ternera marinada en vinagre y especias 3-5 días, guisada hasta la ternura. Técnica Pro de Renania."
 pubDate: 2026-06-06
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/sauerbraten.jpg
 imageAlt: "Sauerbraten Alemán: Receta Pro de Marinado de 5 Días"
 lang: es

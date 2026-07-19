@@ -3,7 +3,7 @@ title: "Beef Wellington: Receta Pro de la Alta Cocina Británica"
 description: "Clásico Beef Wellington británico: filete de ternera, duxelles de hongos, hojaldre dorado. Técnica Pro para cocción rosa perfecta."
 pubDate: 2026-04-14
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/beef-wellington.jpg
 imageAlt: "Beef Wellington: Receta Pro de la Alta Cocina Británica"
 lang: es

@@ -3,7 +3,7 @@ title: "Masala Dosa: Receta Pro del Desayuno del Sur de India"
 description: "Auténtico masala dosa: crêpe crujiente de arroz fermentado, relleno de patatas especiadas. Técnica Pro con fermentación natural."
 pubDate: 2026-05-19
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/masala-dosa.jpg
 imageAlt: "Masala Dosa: Receta Pro del Desayuno del Sur de India"
 lang: es

@@ -3,7 +3,7 @@ title: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
 description: "La verdadera carbonara italiana: yema de huevo, pecorino, guanciale y pimienta. Sin nata, sin champiñones. Técnica Pro para emulsión perfecta sin que el…"
 pubDate: 2026-03-17
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/carbonara-autentica.jpg
 imageAlt: "Carbonara Auténtica Romana: Receta Original Sin Nata (Paso a Paso)"
 lang: es

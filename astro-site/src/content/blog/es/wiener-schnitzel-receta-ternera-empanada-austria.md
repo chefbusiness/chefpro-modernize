@@ -3,7 +3,7 @@ title: "Wiener Schnitzel: Receta Pro del Plato Nacional Austriaco"
 description: "Auténtico Wiener Schnitzel vienés: ternera empanada dorada y crujiente, técnica Pro de empanado triple. El clásico de Austria."
 pubDate: 2026-05-08
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/wiener-schnitzel.jpg
 imageAlt: "Wiener Schnitzel: Receta Pro del Plato Nacional Austriaco"
 lang: es

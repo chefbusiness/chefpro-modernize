@@ -3,7 +3,7 @@ title: "Smash Burger: Receta Pro con Técnica de Restaurante"
 description: "Aprende la técnica del smash burger paso a paso. Costra crujiente, interior jugoso, sabor intenso. Receta profesional para resultados de restaurante en casa."
 pubDate: 2026-02-10
 modDate: 2026-02-12
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2026/02/smashburger-aichefpro-3.jpg
 imageAlt: "Smash Burger: Receta Pro con Técnica de Restaurante"
 lang: es

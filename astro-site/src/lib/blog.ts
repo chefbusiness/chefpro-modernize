@@ -34,19 +34,19 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
     slug: 'tutoriales',
     name: 'Tutoriales y Técnica',
     description:
-      'Técnica culinaria profesional y tutoriales paso a paso: elaboraciones, procesos y recetas de referencia.',
+      'Técnica culinaria profesional y tutoriales paso a paso: elaboraciones, procesos y guías de cocina con IA.',
+  },
+  {
+    slug: 'recetas',
+    name: 'Recetas Profesionales',
+    description:
+      'Recetas de cocina profesional plato a plato: platos nacionales, alta cocina y elaboraciones creadas con los recetarios de IA de AI Chef Pro.',
   },
   {
     slug: 'glosario',
     name: 'Glosario Culinario',
     description:
       'Léxico científico y técnico de cocina profesional: términos, conceptos y definiciones con rigor.',
-  },
-  {
-    slug: 'recetario-pro-ai',
-    name: 'Recetario Pro AI',
-    description:
-      'Recetas profesionales creadas y optimizadas con los recetarios de IA de AI Chef Pro.',
   },
 ];
 

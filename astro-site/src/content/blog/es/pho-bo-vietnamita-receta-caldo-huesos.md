@@ -3,7 +3,7 @@ title: "Pho Bo Vietnamita: Receta Pro del Caldo de Huesos Perfecto"
 description: "Auténtico pho bo vietnamita: caldo de huesos 10 horas, fideos de arroz, hierbas frescas. Técnica Pro para el desayuno nacional de Vietnam."
 pubDate: 2026-04-25
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pho-vietnamita.jpg
 imageAlt: "Pho Bo Vietnamita: Receta Pro del Caldo de Huesos Perfecto"
 lang: es

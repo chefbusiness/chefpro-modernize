@@ -3,7 +3,7 @@ title: "Albóndigas Suecas (Köttbullar): Receta Pro con Salsa de Crema"
 description: "Auténticas albóndigas suecas: mezcla de ternera y cerdo, cebolla caramelizada, salsa de crema. Técnica Pro tradicional escandinava."
 pubDate: 2026-05-26
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/swedish-meatballs.jpg
 imageAlt: "Albóndigas Suecas (Köttbullar): Receta Pro con Salsa de Crema"
 lang: es

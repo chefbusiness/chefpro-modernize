@@ -3,7 +3,7 @@ title: "Goulash Húngaro: Receta Pro con Pimentón Auténtico"
 description: "Auténtico goulash húngaro: ternera guisada con pimentón dulce, cebollas caramelizadas y especias. Técnica Pro tradicional."
 pubDate: 2026-06-27
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/goulash-1.jpg
 imageAlt: "Goulash Húngaro: Receta Pro con Pimentón Auténtico"
 lang: es

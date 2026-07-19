@@ -3,7 +3,7 @@ title: "BBQ Ribs Americanas: Receta Pro Estilo Memphis Low and Slow"
 description: "Auténticas BBQ ribs americanas: costillas de cerdo cocinadas low and slow 6 horas con dry rub y salsa BBQ casera. Técnica Pro de Memphis."
 pubDate: 2026-07-01
 modDate: 2026-07-01
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/bbq-ribs.jpg
 imageAlt: "BBQ Ribs Americanas: Receta Pro Estilo Memphis Low and Slow"
 lang: es

@@ -3,7 +3,7 @@ title: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
 description: "Auténtico pad thai tailandés: fideos de arroz, salsa tamarindo-azúcar de palma, técnicas de wok a fuego alto. Street food Pro en casa."
 pubDate: 2026-04-04
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pad-thai.jpg
 imageAlt: "Pad Thai Tailandés: Receta Pro de Wok y Equilibrio de Sabores"
 lang: es

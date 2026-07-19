@@ -3,7 +3,7 @@ title: "Bobotie Sudafricano: Receta Pro del Plato Nacional del Cabo"
 description: "Auténtico bobotie sudafricano: carne especiada al curry con cobertura de huevo horneada. Técnica Pro de Ciudad del Cabo."
 pubDate: 2026-05-15
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/bobotie-sudafrica.jpg
 imageAlt: "Bobotie Sudafricano: Receta Pro del Plato Nacional del Cabo"
 lang: es

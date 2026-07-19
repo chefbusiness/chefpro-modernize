@@ -3,7 +3,7 @@ title: "Coulant de Guanaja 70% y Praliné «Homenaje a Laguiole»"
 description: "Es un placer abordar una de las piezas más icónicas de la historia de la gastronomía contemporánea. El Biscuit de Chocolat Coulant, creado por el maestro…"
 pubDate: 2026-03-03
 modDate: 2026-06-28
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2026/03/coulant-choco-aichefpro-recipe.jpg
 imageAlt: "COULANT DE GUANAJA 70% Y PRALINÉ \"HOMENAJE A LAGUIOLE\""
 lang: es

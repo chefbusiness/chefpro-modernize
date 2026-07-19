@@ -3,7 +3,7 @@ title: "Mofongo Puertorriqueño: Receta Pro con Chicharrón y Ajo"
 description: "Auténtico Mofongo puertorriqueño: plátanos verdes fritos machacados con ajo y chicharrón. Técnica Pro de San Juan."
 pubDate: 2026-07-15
 modDate: 2026-07-15
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/mofongo-puertorriqueno.jpg
 imageAlt: "Mofongo Puertorriqueño: Receta Pro con Chicharrón y Ajo"
 lang: es

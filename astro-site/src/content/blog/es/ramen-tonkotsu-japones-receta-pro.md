@@ -3,7 +3,7 @@ title: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
 description: "Auténtico ramen tonkotsu japonés: caldo cremoso de hueso de cerdo 8-12 horas, chashu, huevo ajitsuke tamago y técnicas profesionales."
 pubDate: 2026-03-28
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/ramen-tonkotsu.jpg
 imageAlt: "Ramen Tonkotsu Japonés: Receta Pro de Caldo Cremoso Paso a Paso"
 lang: es

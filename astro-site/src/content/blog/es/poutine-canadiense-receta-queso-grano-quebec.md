@@ -3,7 +3,7 @@ title: "Poutine Canadiense: Receta Pro de Quebec con Queso en Grano"
 description: "Auténtica poutine canadiense: papas fritas doble cocción, queso en grano derretido y salsa gravy caliente. Técnica Pro de Quebec."
 pubDate: 2026-06-24
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/poutine.jpg
 imageAlt: "Poutine Canadiense: Receta Pro de Quebec con Queso en Grano"
 lang: es

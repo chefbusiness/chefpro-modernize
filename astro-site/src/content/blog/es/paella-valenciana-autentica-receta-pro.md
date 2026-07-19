@@ -3,7 +3,7 @@ title: "Paella Valenciana Auténtica: Receta Pro con Socarrat Perfecto"
 description: "La auténtica paella valenciana tradicional: arroz bomba, conejo, pollo y verduras. Técnica Pro para lograr el socarrat crujiente. Receta española original."
 pubDate: 2026-03-19
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/paella-valenciana.jpg
 imageAlt: "Paella Valenciana Auténtica: Receta Pro con Socarrat Perfecto"
 lang: es

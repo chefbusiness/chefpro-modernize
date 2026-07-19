@@ -3,7 +3,7 @@ title: "Moussaka Griega Auténtica: Capas Perfectas y Bechamel Dorada"
 description: "Auténtica moussaka griega: berenjenas, carne especiada y bechamel esponjosa. Técnica Pro para capas perfectas y dorado crujiente."
 pubDate: 2026-04-02
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/moussaka-griega.jpg
 imageAlt: "Moussaka Griega Auténtica: Capas Perfectas y Bechamel Dorada"
 lang: es

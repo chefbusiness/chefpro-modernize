@@ -3,7 +3,7 @@ title: "Goma Xantana: Concepto y Definición"
 description: "Descubre qué es la goma xantana (E415), el espesante de fermentación bacteriana imprescindible en cocina molecular profesional. Guía técnica completa."
 pubDate: 2026-03-02
 modDate: 2026-06-28
-category: tutoriales
+category: glosario
 image: /blog-assets/2026/03/goma-xantana-scaled.jpg
 imageAlt: "Goma Xantana: Concepto y Definición"
 lang: es

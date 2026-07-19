@@ -3,7 +3,7 @@ title: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
 description: "La auténtica receta francesa de coq au vin: pollo cocido lentamente en vino tinto de Borgoña. Técnica Pro para salsa espejada y carne tierna."
 pubDate: 2026-03-24
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/coq-au-vin.jpg
 imageAlt: "Coq au Vin Francés: Receta Borgoñona Paso a Paso Pro"
 lang: es

@@ -3,7 +3,7 @@ title: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
 description: "Receta original de ceviche peruano con leche de tigre. Tiempos exactos de marinado, pescado fresco y técnicas profesionales. Patrimonio de Perú."
 pubDate: 2026-03-21
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/ceviche-peruano.jpg
 imageAlt: "Ceviche Peruano Auténtico: Técnica Pro de Marinado Perfecto"
 lang: es

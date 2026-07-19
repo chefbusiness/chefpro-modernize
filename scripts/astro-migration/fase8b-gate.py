@@ -34,7 +34,7 @@ REPO = Path(__file__).resolve().parents[2]
 CONTENT = REPO / 'astro-site' / 'src' / 'content' / 'blog' / 'es'
 ASSETS = REPO / 'astro-site' / 'public' / 'blog-assets'
 VALID_CATS = {'ia-en-gastronomia', 'ai-chef-pro', 'libreria-de-prompts',
-              'tutoriales', 'glosario', 'recetario-pro-ai'}
+              'tutoriales', 'glosario', 'recetas'}
 EXPECTED_POSTS = 346
 PER_PAGE = 24
 

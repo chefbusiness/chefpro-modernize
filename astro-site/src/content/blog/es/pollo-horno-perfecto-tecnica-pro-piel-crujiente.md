@@ -3,7 +3,7 @@ title: "Pollo al Horno Perfecto: Técnica Pro para Piel Crujiente y Carne Jugosa
 description: "Domina el pollo al horno con técnica profesional: salmuera, temperaturas exactas, reposo obligatorio. Receta Pro con medidas duales y tabla de tiempos."
 pubDate: 2026-03-14
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pollo-horno-pro.jpg
 imageAlt: "Pollo al Horno Perfecto: Técnica Pro para Piel Crujiente y Carne Jugosa"
 lang: es

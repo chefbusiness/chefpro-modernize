@@ -3,7 +3,7 @@ title: "Tagine de Pollo Marroquí: Receta Pro con Limón Confitado"
 description: "Auténtico tagine marroquí: pollo, limones confitados, aceitunas, chermoula de especias. Técnica Pro de cocción lenta en tajine."
 pubDate: 2026-04-21
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/tagine.jpg
 imageAlt: "Tagine de Pollo Marroquí: Receta Pro con Limón Confitado"
 lang: es

@@ -3,7 +3,7 @@ title: "Salsa Boloñesa Auténtica (Ragù alla Bolognese): Receta Pro Paso a Pas
 description: "Aprende la auténtica receta italiana de ragù alla bolognese registrada en la Cámara de Comercio de Bolonia. Técnica Pro, tiempos exactos, medidas duales…"
 pubDate: 2026-03-09
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/salsa-bolonesa-autentica.jpg
 imageAlt: "Salsa Boloñesa Auténtica (Ragù alla Bolognese): Receta Pro Paso a Paso"
 lang: es

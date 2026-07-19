@@ -3,7 +3,7 @@ title: "Feijoada Brasileña: Receta Pro del Plato Nacional de Brasil"
 description: "Auténtica feijoada brasileña: frijoles negros, carnes de cerdo, chorizo y morcilla. Técnica Pro con remojo y cocción lenta tradicional."
 pubDate: 2026-04-11
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/feijoada.jpg
 imageAlt: "Feijoada Brasileña: Receta Pro del Plato Nacional de Brasil"
 lang: es

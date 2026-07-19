@@ -3,7 +3,7 @@ title: "Koshari Egipcio: Receta Pro del Plato Callejero de El Cairo"
 description: "Auténtico koshari egipcio: arroz, lentejas, pasta, garbanzos con salsa de tomate picante y cebollas fritas. Técnica Pro."
 pubDate: 2026-06-13
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/koshari.jpg
 imageAlt: "Koshari Egipcio: Receta Pro del Plato Callejero de El Cairo"
 lang: es

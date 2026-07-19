@@ -3,7 +3,7 @@ title: "Delicioso Chutney de Mango con un Toque Moderno"
 description: "Una receta original del modelo App Cocina Creativa de AI Chef Pro. Como chef de alta cocina creativa, te propongo una receta de chutney de mango con un toque…"
 pubDate: 2025-09-03
 modDate: 2026-06-28
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2025/09/chutney-de-mango-aichefpro-2.jpg
 imageAlt: "Chutney de Mango con un Toque Moderno by AI Chef Pro"
 lang: es

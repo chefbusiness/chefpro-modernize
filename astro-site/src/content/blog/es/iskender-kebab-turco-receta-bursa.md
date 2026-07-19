@@ -3,7 +3,7 @@ title: "Iskender Kebab Turco: Receta Pro de Bursa"
 description: "Auténtico Iskender Kebab turco: döner sobre pan pide, salsa de tomate, mantequilla derretida y yogur. Técnica Pro de Bursa."
 pubDate: 2026-05-22
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/iskender-kebab.jpg
 imageAlt: "Iskender Kebab Turco: Receta Pro de Bursa"
 lang: es

@@ -3,7 +3,7 @@ title: "Pabellón Criollo Venezolano: Receta Pro del Plato Nacional"
 description: "Auténtico Pabellón Criollo venezolano: carne mechada, frijoles negros, arroz y tajadas. Técnica Pro tradicional."
 pubDate: 2026-07-05
 modDate: 2026-07-05
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pabellon-criollo.jpg
 imageAlt: "Pabellón Criollo Venezolano: Receta Pro del Plato Nacional"
 lang: es

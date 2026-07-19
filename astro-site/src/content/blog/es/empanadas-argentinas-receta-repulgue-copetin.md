@@ -3,7 +3,7 @@ title: "Empanadas Argentinas: Receta Pro con Repulgue y Copetín"
 description: "Auténticas empanadas argentinas: masa quebrada, relleno jugoso de carne, repulgue tradicional. Técnica Pro del copetín incluida."
 pubDate: 2026-05-05
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/empanadas-argentinas.jpg
 imageAlt: "Empanadas Argentinas: Receta Pro con Repulgue y Copetín"
 lang: es

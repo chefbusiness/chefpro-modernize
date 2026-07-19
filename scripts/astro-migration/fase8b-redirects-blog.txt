@@ -23,7 +23,7 @@ https://blog.aichef.pro/category/glosario-y-lexico-cientifico-culinario/* https:
 https://blog.aichef.pro/category/guias-ia-locales/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/category/ia-en-gastronomia/* https://aichef.pro/blog/categoria/ia-en-gastronomia 301!
 https://blog.aichef.pro/category/libreria-de-prompts-blog/* https://aichef.pro/blog/categoria/libreria-de-prompts 301!
-https://blog.aichef.pro/category/recetario-pro-ai/* https://aichef.pro/blog/categoria/recetario-pro-ai 301!
+https://blog.aichef.pro/category/recetario-pro-ai/* https://aichef.pro/blog/categoria/recetas 301!
 https://blog.aichef.pro/category/tutoriales/* https://aichef.pro/blog/categoria/tutoriales 301!
 https://blog.aichef.pro/category/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/tag/* https://aichef.pro/blog 301!

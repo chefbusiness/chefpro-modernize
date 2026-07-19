@@ -3,7 +3,7 @@ title: "Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià"
 description: "El Aire de Zanahoria es una de las creaciones icónicas de Ferran Adrià, símbolo de la revolución molecular de elBulli y ejemplo perfecto de cómo la técnica y…"
 pubDate: 2026-01-05
 modDate: 2026-01-05
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2026/01/aire-de-zanahoria-2.jpg
 imageAlt: "Aire de Zanahoria en Bowl de Cristal: El Clásico de Ferran Adrià"
 lang: es

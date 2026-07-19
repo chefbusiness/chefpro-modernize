@@ -51,9 +51,14 @@ CAT_PRIORITY = [
     (21, 'glosario'),                    # Glosario y Léxico AI
     (13, 'ia-en-gastronomia'),           # IA en Gastronomía
     (9, 'ai-chef-pro'),                  # AI Chef Pro
-    (44, 'recetario-pro-ai'),            # Recetario Pro AI
+    (44, 'recetas'),                     # Recetario Pro AI → Recetas (John 2026-07-19)
     (1, 'tutoriales'),                   # Tutoriales
 ]
+
+# Overrides explícitos slug→categoría (ganan a todo lo demás). Generado por la
+# recategorización con jueces del 2026-07-19: recetas de platos que WP tenía
+# en "Tutoriales" (error arrastrado) + glosario perdido en tutoriales.
+OVERRIDES_FILE = REPO / 'scripts' / 'astro-migration' / 'fase8b-cat-overrides.json'
 
 
 def load_jsonl(path):
@@ -183,6 +188,9 @@ def main():
     if catalogo_path.exists():
         clusters = {c['slug']: c['cluster']
                     for c in json.load(open(str(catalogo_path), encoding='utf-8'))}
+    overrides = {}
+    if OVERRIDES_FILE.exists():
+        overrides = json.load(open(str(OVERRIDES_FILE), encoding='utf-8'))
 
     ok, skipped, total_assets, all_missing = 0, [], 0, []
     for slug in wanted:
@@ -195,8 +203,10 @@ def main():
             skipped.append((slug, 'Tier D (guias-ia-locales): NO se migra'))
             continue
         if (clusters.get(slug, '').startswith('C')
-                and dest_cat in ('tutoriales', 'recetario-pro-ai', 'glosario')):
+                and dest_cat in ('tutoriales', 'recetas', 'glosario')):
             dest_cat = 'ia-en-gastronomia'
+        if slug in overrides:
+            dest_cat = overrides[slug]
 
         title = html.unescape(strip_tags(p['title']['rendered']))
         desc = html.unescape(strip_tags(p.get('excerpt', {}).get('rendered', '')))
@@ -244,6 +254,17 @@ def main():
             out.write_text(fm + body + '\n', encoding='utf-8')
         ok += 1
         print('  ✅ %s → %s (%d medios)' % (slug, dest_cat, n))
+
+    # Lastmod real por post para el sitemap (astro.config.mjs → BLOG_LASTMOD).
+    if not args.dry_run:
+        lastmod = {}
+        for md in sorted(OUT_MD.glob('*.md')):
+            m = re.search(r'^modDate: (\d{4}-\d{2}-\d{2})', md.read_text(encoding='utf-8'), re.M)
+            if m:
+                lastmod['/blog/' + md.stem] = m.group(1)
+        (REPO / 'astro-site' / 'src' / 'lib' / 'blog-lastmod.json').write_text(
+            json.dumps(lastmod, ensure_ascii=False, indent=0, sort_keys=True),
+            encoding='utf-8')
 
     print('\n== RESUMEN: %d convertidos, %d saltados, %d medios copiados%s' % (
         ok, len(skipped), total_assets, ' [DRY-RUN]' if args.dry_run else ''))

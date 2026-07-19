@@ -3,7 +3,7 @@ title: "Bacalhau à Brás: Receta Pro de Lisboa"
 description: "Auténtico bacalhau à Brás portugués: bacalao desmigado, patatas paja, huevo revuelto. Técnica Pro de desalado perfecto."
 pubDate: 2026-05-12
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/bacalhau-a-bras.jpg
 imageAlt: "Bacalhau à Brás: Receta Pro de Lisboa"
 lang: es

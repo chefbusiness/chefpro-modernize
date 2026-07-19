@@ -3,7 +3,7 @@ title: "Pato Pekinés (北京烤鸭): Receta Pro de la Cocina Imperial China"
 description: "Auténtico pato pekinés chino: piel crujiente dorada, pancakes finos, salsa hoisin. Técnica Pro de la corte imperial de Beijing."
 pubDate: 2026-04-07
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/peking-duck.jpg
 imageAlt: "Pato Pekinés (北京烤鸭): Receta Pro de la Cocina Imperial China"
 lang: es

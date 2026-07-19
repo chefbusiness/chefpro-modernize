@@ -3,7 +3,7 @@ title: "Tres Leches Creativo: Esponja al Microondas, Leches Aromatizadas y Aire 
 description: "El Tres Leches es un postre venezolano que combina recetas europeas con ingredientes locales. La versión presentada utiliza técnicas modernas como esponja…"
 pubDate: 2025-06-12
 modDate: 2026-06-28
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2025/06/dulce-tres-leches-venezolano-moderno-aichefpro.webp
 imageAlt: "Tres Leches Creativo: Esponja al Microondas, Leches Aromatizadas y Aire de Ron"
 lang: es

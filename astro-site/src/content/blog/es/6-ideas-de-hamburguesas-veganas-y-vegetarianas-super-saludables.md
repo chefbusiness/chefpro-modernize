@@ -3,7 +3,7 @@ title: "6 Ideas de Hamburguesas Veganas y Vegetarianas Súper Saludables"
 description: "¿Buscas darle un toque especial a tu plan de comidas con algo delicioso y de origen vegetal? Aquí tienes seis deliciosas y saludables ideas de hamburguesas…"
 pubDate: 2025-01-29
 modDate: 2026-06-28
-category: recetario-pro-ai
+category: recetas
 image: /blog-assets/2025/01/hamburguesa_de_lentejas_y_champiC3B1ones_1.jpg
 imageAlt: "Hamburguesa de lentejas y champiñones"
 lang: es

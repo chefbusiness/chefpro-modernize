@@ -33,7 +33,7 @@ CAT_ARCHIVES = {
     'libreria-de-prompts-blog': 'libreria-de-prompts',
     'glosario-y-lexico-ai': 'glosario',
     'glosario-y-lexico-cientifico-culinario': 'glosario',
-    'recetario-pro-ai': 'recetario-pro-ai',
+    'recetario-pro-ai': 'recetas',  # fusionada en Recetas (John 2026-07-19)
     'guias-ia-locales': None,  # Tier D → hub
 }
 

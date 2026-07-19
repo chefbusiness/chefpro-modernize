@@ -3,7 +3,7 @@ title: "Kimchi Casero: Receta Coreana Auténtica Paso a Paso"
 description: "Receta auténtica de kimchi coreano paso a paso. Aprende a fermentar en casa con técnicas profesionales. Probióticos naturales, saludable y delicioso."
 pubDate: 2026-02-11
 modDate: 2026-03-09
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/02/kimchi-casero-aichefpro-1.jpg
 imageAlt: "Kimchi Casero: Receta Coreana Auténtica Paso a Paso"
 lang: es

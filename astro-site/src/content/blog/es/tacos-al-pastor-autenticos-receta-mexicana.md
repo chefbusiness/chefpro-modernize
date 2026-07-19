@@ -3,7 +3,7 @@ title: "Tacos al Pastor Auténticos: Receta Mexicana con Marinada Pro"
 description: "Auténticos tacos al pastor mexicanos: marinada de chiles guajillo y ancho, piña asada y técnica casera. Sabor de taquería en tu cocina."
 pubDate: 2026-03-26
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/tacos-al-pastor.jpg
 imageAlt: "Tacos al Pastor Auténticos: Receta Mexicana con Marinada Pro"
 lang: es

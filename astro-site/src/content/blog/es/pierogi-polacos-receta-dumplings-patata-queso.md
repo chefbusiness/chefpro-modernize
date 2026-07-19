@@ -3,7 +3,7 @@ title: "Pierogi Polacos: Receta Pro de Dumplings con Patata y Queso"
 description: "Auténticos pierogi polacos: masa casera, relleno de patata y queso cottage, cebolla caramelizada. Técnica Pro para sellado perfecto."
 pubDate: 2026-04-23
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pierogi.jpg
 imageAlt: "Pierogi Polacos: Receta Pro de Dumplings con Patata y Queso"
 lang: es

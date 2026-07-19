@@ -3,7 +3,7 @@ title: "Borscht Ucraniano: Sopa de Remolacha Roja Receta Pro"
 description: "Auténtico borscht ucraniano: remolacha, carne de ternera, repollo y crema agria. Técnica Pro para el color rojo intenso y sabor reconfortante."
 pubDate: 2026-04-09
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/borscht.jpg
 imageAlt: "Borscht Ucraniano: Sopa de Remolacha Roja Receta Pro"
 lang: es

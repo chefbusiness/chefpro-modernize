@@ -3,7 +3,7 @@ title: "Falafel Libanés: Receta Pro de Garbanzos Crujientes"
 description: "Auténtico falafel libanés: garbanzos secos, hierbas frescas, especias. Técnica Pro para exterior crujiente e interior tierno."
 pubDate: 2026-04-30
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/falafel-libanes.jpg
 imageAlt: "Falafel Libanés: Receta Pro de Garbanzos Crujientes"
 lang: es

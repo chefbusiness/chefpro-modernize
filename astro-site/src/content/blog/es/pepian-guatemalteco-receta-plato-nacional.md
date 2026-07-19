@@ -3,7 +3,7 @@ title: "Pepián Guatemalteco: Receta Pro del Plato Nacional"
 description: "Auténtico Pepián guatemalteco: pollo en salsa de chiles, pepitoria y especias. Técnica Pro con recado tradicional."
 pubDate: 2026-07-19
 modDate: 2026-07-19
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/pepian-guatemalteco.jpg
 imageAlt: "Pepián Guatemalteco: Receta Pro del Plato Nacional"
 lang: es

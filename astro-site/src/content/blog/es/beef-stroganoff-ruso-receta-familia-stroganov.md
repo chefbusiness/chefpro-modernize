@@ -3,7 +3,7 @@ title: "Beef Stroganoff Ruso: Receta Pro de la Familia Stroganov"
 description: "Auténtico Beef Stroganoff ruso: tiras de ternera, champiñones, salsa de crema agria. Técnica Pro de San Petersburgo."
 pubDate: 2026-05-29
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/beef-stroganoff.jpg
 imageAlt: "Beef Stroganoff Ruso: Receta Pro de la Familia Stroganov"
 lang: es

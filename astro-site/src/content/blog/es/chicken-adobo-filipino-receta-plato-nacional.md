@@ -3,7 +3,7 @@ title: "Chicken Adobo Filipino: Receta Pro del Plato Nacional"
 description: "Auténtico Chicken Adobo filipino: pollo guisado en vinagre, salsa de soja y ajo. Técnica Pro de Manila con variaciones regionales."
 pubDate: 2026-06-02
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/chicken-adobo.jpg
 imageAlt: "Chicken Adobo Filipino: Receta Pro del Plato Nacional"
 lang: es

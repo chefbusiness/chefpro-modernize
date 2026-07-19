@@ -3,7 +3,7 @@ title: "Wiener Schnitzel Austriaco: Receta Pro de la Costra Dorada Perfecta"
 description: "Auténtico Wiener Schnitzel austriaco: ternera fina empanizada y frita en mantequilla hasta costra dorada crujiente. Técnica Pro de Viena."
 pubDate: 2026-06-20
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/wiener-schnitzel-1.jpg
 imageAlt: "Wiener Schnitzel Austriaco: Receta Pro de la Costra Dorada Perfecta"
 lang: es

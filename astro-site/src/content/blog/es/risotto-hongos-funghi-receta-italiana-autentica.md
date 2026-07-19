@@ -3,7 +3,7 @@ title: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
 description: "Aprende a hacer risotto de setas auténtico italiano. Técnica de tostatura, cocción gradual y mantecatura. Medidas duales, tiempo exacto y trucos…"
 pubDate: 2026-03-12
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/risotto-hongos.jpg
 imageAlt: "Risotto de Hongos (Funghi): Receta Italiana Auténtica Paso a Paso"
 lang: es

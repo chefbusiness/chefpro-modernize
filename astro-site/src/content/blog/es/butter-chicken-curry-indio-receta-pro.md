@@ -3,7 +3,7 @@ title: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
 description: "Auténtico butter chicken indio: marinada de yogur, tadka de especias y salsa cremosa. Técnica Pro para currys perfectos."
 pubDate: 2026-03-31
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/butter-chicken-curry.jpg
 imageAlt: "Butter Chicken Curry Indio: Receta Pro con Tadka de Especias"
 lang: es

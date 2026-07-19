@@ -3,7 +3,7 @@ title: "Token: La Unidad Básica de la Inteligencia Artificial"
 description: "Descubre qué son los tokens, la unidad básica de procesamiento en IA, y cómo optimizar tus prompts para mejores resultados."
 pubDate: 2026-02-21
 modDate: 2026-06-28
-category: tutoriales
+category: glosario
 image: /blog-assets/2026/02/token-featured.jpg
 imageAlt: "Token: La Unidad Básica de la Inteligencia Artificial"
 lang: es

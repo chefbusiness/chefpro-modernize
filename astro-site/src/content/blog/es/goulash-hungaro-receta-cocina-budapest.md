@@ -3,7 +3,7 @@ title: "Goulash Húngaro: Receta Pro de la Cocina de Budapest"
 description: "Auténtico goulash húngaro: carne de ternera, pimentón dulce, cebolla caramelizada. Técnica Pro para la sopa-estofado nacional de Hungría."
 pubDate: 2026-04-16
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/goulash.jpg
 imageAlt: "Goulash Húngaro: Receta Pro de la Cocina de Budapest"
 lang: es

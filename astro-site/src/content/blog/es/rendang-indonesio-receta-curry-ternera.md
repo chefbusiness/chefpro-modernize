@@ -3,7 +3,7 @@ title: "Rendang Indonesio: Receta Pro del Curry Seco de Ternera"
 description: "Auténtico rendang indonesio: ternera, leche de coco, especias rempah. Técnica Pro de 4 horas para el mejor curry del mundo."
 pubDate: 2026-04-28
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/rendang-indonesio.jpg
 imageAlt: "Rendang Indonesio: Receta Pro del Curry Seco de Ternera"
 lang: es

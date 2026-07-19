@@ -59,14 +59,24 @@ st, _ = curl('/sitemap-0.xml')
 check(st == 200, 'sitemap-0: no accesible')
 _, sm0 = curl('/sitemap-0.xml')
 n = sm0.count('<loc>')
-check(n == 696, f'sitemap: {n} URLs != 696')
+# 696 (Fase 6) + blog Fase 8B (posts + hub + paginación + categorías),
+# computado del repo para que crezca solo al publicar contenido nuevo.
+from pathlib import Path
+_blog = list((Path(__file__).resolve().parents[2]
+              / 'astro-site/src/content/blog/es').glob('*.md'))
+_np = len(_blog)
+_nc = len(set(re.search(r'^category: (\S+)', p.read_text(), re.M).group(1)
+              for p in _blog))
+EXPECTED = 696 + _np + 1 + (-(-_np // 24) - 1) + _nc
+check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 
 st, robots = curl('/robots.txt')
 check(st == 200 and 'Disallow: /*-access' in robots, 'robots.txt alterado')
 
 for p in ['/en', '/usos/rol/sous-chef', '/abrir-restaurante/madrid',
           '/kit-tareas-asador', '/productos-digitales', '/pro-prompts-library-access',
-          '/calculadora-food-cost-restaurante', '/legales']:
+          '/calculadora-food-cost-restaurante', '/legales',
+          '/blog', '/blog/mejores-ia-restaurantes-2026', '/blog/categoria/recetas']:
     st, _ = curl(p)
     check(st == 200, f'{p}: HTTP {st}')
 

@@ -3,7 +3,7 @@ title: "Ropa Vieja Cubana: Receta Pro de la Carne Deshebrada"
 description: "Auténtica Ropa Vieja cubana: carne deshebrada en sofrito de tomate, pimientos y especias. Técnica Pro de La Habana."
 pubDate: 2026-07-08
 modDate: 2026-07-08
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/ropa-vieja-cubana.jpg
 imageAlt: "Ropa Vieja Cubana: Receta Pro de la Carne Deshebrada"
 lang: es

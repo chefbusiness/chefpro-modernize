@@ -3,7 +3,7 @@ title: "Bibimbap Coreano: Receta Pro del Tazón Mixto de Corea"
 description: "Auténtico bibimbap coreano: arroz, vegetales namul, carne sazonada, huevo y gochujang. Técnica Pro para el tazón de colores perfecto."
 pubDate: 2026-04-18
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/bibimbap.jpg
 imageAlt: "Bibimbap Coreano: Receta Pro del Tazón Mixto de Corea"
 lang: es

@@ -3,7 +3,7 @@ title: "Raclette Suizo: Receta Pro de la Experiencia Alpina"
 description: "Auténtica raclette suiza: queso derretido sobre patatas, embutidos y pepinillos. Guía Pro para una velada inolvidable."
 pubDate: 2026-06-09
 modDate: 2026-06-28
-category: tutoriales
+category: recetas
 image: /blog-assets/2026/03/raclette.jpg
 imageAlt: "Raclette Suizo: Receta Pro de la Experiencia Alpina"
 lang: es
