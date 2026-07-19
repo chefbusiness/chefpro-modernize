@@ -78,6 +78,34 @@ export default defineConfig({
         'lucide-react': fileURLToPath(
           new URL('./node_modules/lucide-react/dist/esm/lucide-react.js', import.meta.url)
         ),
+        // Fase 6: MISMO gotcha para todo el grafo cross-root de marketing/legales
+        // (Node resuelve subiendo desde el fichero importador → /opt/build/repo/
+        // node_modules, que NO existe en Netlify). Cada paquete bare del cierre de
+        // imports (censo fase6-import-walker, 56 ficheros) se apunta al node_modules
+        // de astro-site. Un find string solo matchea exacto o con '/' — 'i18next'
+        // NO captura 'i18next-browser-languagedetector'. react/react-dom no van
+        // aquí: los dedupe-a @astrojs/react.
+        ...Object.fromEntries(
+          [
+            'i18next',
+            'i18next-browser-languagedetector',
+            'react-i18next',
+            'xlsx',
+            'jspdf',
+            'class-variance-authority',
+            'clsx',
+            'tailwind-merge',
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-avatar',
+            '@radix-ui/react-collapsible',
+            '@radix-ui/react-dialog',
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-navigation-menu',
+            '@radix-ui/react-scroll-area',
+            '@radix-ui/react-separator',
+            '@radix-ui/react-slot',
+          ].map((p) => [p, fileURLToPath(new URL(`./node_modules/${p}`, import.meta.url))])
+        ),
         // Fase 5 (zona app islands): los gates/dashboards de la SPA se importan
         // cross-root TAL CUAL (fuente de verdad única, cero copias). Sus imports
         // internos '@/x' apuntan al src/ de la RAÍZ del repo (no a astro-site/src;
