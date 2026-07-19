@@ -1,0 +1,2042 @@
+{
+ "10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 822
+ },
+ "10-tendencias-en-food-tech-que-dominaran-la-proxima-decada": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2331
+ },
+ "12-anticuchos-y-parrillas-con-cocina-peruana-ai": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2511
+ },
+ "12-innovaciones-ia-cocinas-profesionales": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 1923
+ },
+ "12-mejores-arepas-venezolanas-con-rellenos-tradicionales-usando-app-cocina-venezolana-ai": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2525
+ },
+ "15-herramientas-de-ia-que-todo-chef-deberia-conocer": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1915
+ },
+ "15-metricas-clave-para-medir-el-exito-de-la-ia-en-tu-restaurante": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2337
+ },
+ "151-prompts-para-restaurantes-y-hosteleria": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 1741
+ },
+ "22-tecnicas-pad-thai-noodles-cocina-tailandesa-ai": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2141
+ },
+ "23-moles-regionales-mexicanos-con-ia-guia-definitiva-con-cocina-mexicana-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 2174
+ },
+ "25-prompts-de-ia-que-todo-chef-necesita-conocer": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 1941
+ },
+ "25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2147
+ },
+ "30-dias-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1645
+ },
+ "30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 2817
+ },
+ "30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 2974
+ },
+ "30-recursos-gratuitos-ia-gastronomia": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2807
+ },
+ "30-tecnicas-de-smoke-food-por-gastro-lexicum": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1017
+ },
+ "6-ideas-de-hamburguesas-veganas-y-vegetarianas-super-saludables": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 777
+ },
+ "8-errores-que-destruyen-el-food-cost-en-tu-restaurante": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 2835
+ },
+ "actualizacion-sobre-ai-chef-pro-y-nuevos-modulos-16-2-26": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2849
+ },
+ "acuaponia-inteligente-para-restaurantes-guia-practica-con-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2065
+ },
+ "ai-chef-pro-actualizacion-v-1-7": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 675
+ },
+ "ai-chef-pro-advanced-funciones-ocultas-que-solo-usan-los-top-chefs": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1664
+ },
+ "ai-chef-pro-intro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 50
+ },
+ "ai-chef-pro-revolucionando-la-cocina-mas-alla-de-los-metodos-tradicionales": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1289
+ },
+ "ai-chef-pro-un-chatgpt-para-la-pasteleria-profesional-usos-y-aplicaciones": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 967
+ },
+ "ai-chef-pro-version-en-ingles": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 693
+ },
+ "ai-cooking": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1489
+ },
+ "ai-para-cocinar": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1550
+ },
+ "aioli-concepto-definicion": {
+  "tier": "B",
+  "why": "glosario",
+  "wpId": 3208
+ },
+ "aire-de-zanahoria": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2252
+ },
+ "albondigas-suecas-kottbullar-receta-salsa-crema": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3565
+ },
+ "alergenos": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 607
+ },
+ "analisis-sensorial-asistido-por-ia": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1871
+ },
+ "api-interfaz-programacion-hosteleria": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2901
+ },
+ "app-bar-lounge-ai": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 490
+ },
+ "app-ia-cocina-como-integrar-herramientas-inteligencia-artificial-operativa-diaria": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1571
+ },
+ "appcc-seguridad-alimentaria-ia-hosteleria": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 3459
+ },
+ "aprendizaje-automatico-machine-learning": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 539
+ },
+ "automatizacion-en-cocinas-profesionales-el-impacto-de-la-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 895
+ },
+ "automatizacion-inteligente-en-hosteleria": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1744
+ },
+ "bacalhau-bras-receta-portuguesa-lisboa": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3557
+ },
+ "balsamico-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3212
+ },
+ "bbq-ribs-americanas-receta-memphis-low-slow": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3584
+ },
+ "bechamel-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2731
+ },
+ "beef-stroganoff-ruso-receta-familia-stroganov": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3566
+ },
+ "beef-wellington-receta-alta-cocina-britanica": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3346
+ },
+ "beurre-noisette-mantequilla-tostada-guia-tecnica": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 3050
+ },
+ "bibimbap-coreano-receta-tazon-mezclado": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3478
+ },
+ "bioacustica-en-restaurantes-optimizacion-del-paisaje-sonoro-con-inteligencia-artificial": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2656
+ },
+ "biomimetica-culinaria-inspiracion-natural-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2071
+ },
+ "bobotie-sudafricano-receta-plato-nacional-cabo": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3558
+ },
+ "borscht-ucraniano-sopa-remolacha-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3344
+ },
+ "branding-gastronomico-con-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 1971
+ },
+ "branding-gastronomico-ia-marca-restaurante": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 3451
+ },
+ "brioche-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3191
+ },
+ "butter-chicken-curry-indio-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3304
+ },
+ "calculadora-de-tiempo-cuantas-horas-semanales-te-ahorra-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1652
+ },
+ "calculadora-mermas-cuanto-dinero-pierde-restaurante": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 3051
+ },
+ "carbonara-autentica-romana-receta-original": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3288
+ },
+ "carta-digital-dinamica-con-ia-guia-practica": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 2080
+ },
+ "carta-restaurante-rentable-ingenieria-menu-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3423
+ },
+ "ceviche-concepto-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3228
+ },
+ "ceviche-peruano-autentico-tecnica-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3296
+ },
+ "chatgpt-restaurantes-vs-ai-chef-pro-comparativa": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 3389
+ },
+ "chef-gpt": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2552
+ },
+ "chef-gpt-espanol": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1416
+ },
+ "chicken-adobo-filipino-receta-plato-nacional": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3567
+ },
+ "chile-crisp-condimento-viral-2026": {
+  "tier": "B",
+  "why": "glosario",
+  "wpId": 2726
+ },
+ "chivito-uruguayo-receta-sandwich-nacional": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3591
+ },
+ "chocolateria-artesanal-e-ia-una-combinacion-innovadora": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 998
+ },
+ "chutney-de-mango-con-un-toque-moderno": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1471
+ },
+ "coccion-a-baja-temperatura-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2703
+ },
+ "cocina-4-0-la-evolucion-digital-de-las-recetas-tradicionales-con-inteligencia-artificial": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1606
+ },
+ "cocina-india-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 580
+ },
+ "cocina-molecular-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2702
+ },
+ "cocina-tailandesa-ai-para-principiantes": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2666
+ },
+ "como-abrir-restaurante-ia-guia-completa": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 3427
+ },
+ "como-calcular-el-costo-de-una-receta-facil-con-la-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 1363
+ },
+ "como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 559
+ },
+ "como-conseguir-ideas-de-recetas-y-que-cocinar-utilizando-inteligencia-artificial": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1770
+ },
+ "como-crear-un-plato-afgano-con-ia": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1786
+ },
+ "como-crear-un-restaurante-desde-cero-con-inteligencia-artificial": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2244
+ },
+ "como-el-aprendizaje-automatico-con-ia-transforma-la-creacion-de-recetas-culinarias": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1210
+ },
+ "como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 876
+ },
+ "como-la-ia-puede-potenciar-la-creatividad-de-los-chefs": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1190
+ },
+ "como-la-ia-transformara-el-rol-de-los-chefs": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2238
+ },
+ "como-se-utiliza-la-ia-en-la-gastronomia-con-ai-chef-pro-2": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1184
+ },
+ "como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 973
+ },
+ "como-usar-chatgpt-restaurante-ahorrar-tiempo": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2106
+ },
+ "como-utilizar-la-ia-en-el-negocio-alimentario": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 2113
+ },
+ "confit-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3175
+ },
+ "consejos-de-expertos-para-optimizar-tu-cocina-con-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2034
+ },
+ "consomme-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3220
+ },
+ "consultoria-gastronomica-2-0-ia-como-herramienta-de-asesoramiento": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 985
+ },
+ "context-window-ventana-contexto-ia": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3139
+ },
+ "coq-au-vin-frances-receta-borgonona": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3297
+ },
+ "coulant-de-guanaja-70-y-praline-homenaje-a-laguiole": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3152
+ },
+ "crea-contenido-para-restaurantes-con-inteligencia-artificial": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1056
+ },
+ "crear-carta-restaurante-con-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 2306
+ },
+ "cual-es-la-mejor-ia-para-la-alimentacion": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1516
+ },
+ "dark-kitchen-ia-rentabilidad": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3373
+ },
+ "de-chef-tradicional-a-chef-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1582
+ },
+ "de-gratis-a-pro-5-senales-de-que-necesitas-upgrade": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1659
+ },
+ "deglasear-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3232
+ },
+ "demi-glace-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2736
+ },
+ "desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1249
+ },
+ "desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo-2": {
+  "tier": "D",
+  "why": "duplicado exacto → 301 a desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo",
+  "wpId": 1268
+ },
+ "desbloqueando-el-futuro-aplicaciones-de-ia-en-artes-culinarias": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1227
+ },
+ "desbloqueando-las-funciones-de-ai-chef-pro-para-alcanzar-el-dominio-culinario": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1239
+ },
+ "desbloqueando-las-funciones-de-ai-chef-pro-para-sugerencias-de-recetas": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1309
+ },
+ "desbloqueando-los-beneficios-de-ai-chef-pro-revolucion-tecnologica-en-la-cocina-profesional": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1278
+ },
+ "descubre-las-mejores-funciones-de-ai-chef-pro-guia-completa-2025": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1323
+ },
+ "diseno-de-espacios-gastronomicos-con-ia": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1845
+ },
+ "diseno-de-uniformes-inteligentes-para-cocina": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2042
+ },
+ "diseno-vajilla-ia-gastronomia": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2676
+ },
+ "domina-la-ia-en-tu-cocina-profesional": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1394
+ },
+ "doro-wat-etiope-receta-berbere-cebolas": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3576
+ },
+ "el-futuro-de-la-creatividad-culinaria-ia-y-food-pairing": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 858
+ },
+ "el-futuro-de-los-restaurantes-inteligentes-ia-y-iot-en-la-gastronomia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 949
+ },
+ "el-impacto-de-la-ia-en-la-cadena-de-suministro-gastronomica": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 931
+ },
+ "el-papel-de-la-ia-en-la-formacion-de-los-futuros-chefs": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 901
+ },
+ "empanadas-argentinas-receta-repulgue-copetin": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3551
+ },
+ "emulsion-concepto-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3234
+ },
+ "ergonomia-cognitiva-en-cocinas-con-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2135
+ },
+ "errores-implementar-ia-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1978
+ },
+ "escabeche-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3224
+ },
+ "escandallos-ia-cocina-profesional": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3363
+ },
+ "esferificacion-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2705
+ },
+ "espumas-ferran-adria-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2707
+ },
+ "falafel-libanes-receta-garbanzos-crujientes": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3550
+ },
+ "feijoada-brasilena-plato-nacional-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3345
+ },
+ "fermentacion-concepto-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3237
+ },
+ "fermentacion-controlada-por-ia-guia-profesional": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2007
+ },
+ "fermentacion-koji-umami-natural": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2728
+ },
+ "flambeado-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3171
+ },
+ "foie-gras-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3200
+ },
+ "fond-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2729
+ },
+ "fondo-blanco-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2733
+ },
+ "fondo-oscuro-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2734
+ },
+ "food-cost-ia-escenarios-inflacionarios-2026": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3045
+ },
+ "fotografia-culinaria-mejorada-por-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 1831
+ },
+ "fotografia-gastronomica-ia-instagram": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 3463
+ },
+ "fusion-de-culturas-culinarias-con-ia-creando-nuevas-experiencias-gastronomicas": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 943
+ },
+ "gamificacion-en-restaurantes-con-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2028
+ },
+ "gelificacion-concepto-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3240
+ },
+ "genai-para-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1619
+ },
+ "generador-de-menus-con-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 1600
+ },
+ "generador-de-platos-con-ia-crea-imagenes-profesionales-de-comidas": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1804
+ },
+ "generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 1425
+ },
+ "generador-de-recetas-con-ingredientes-por-ia": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1410
+ },
+ "gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 2644
+ },
+ "gestion-de-alergenos-con-ia-en-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 1965
+ },
+ "gestion-de-crisis-en-restaurantes-con-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 1994
+ },
+ "gestion-de-eventos-gastronomicos-con-ia": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1825
+ },
+ "gestion-de-franquicias-gastronomicas-con-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 1930
+ },
+ "gestion-inventario-restaurantes-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3368
+ },
+ "gestion-personal-hosteleria-ia-reducir-rotacion": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 3405
+ },
+ "gestion-proveedores-restaurante-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 3431
+ },
+ "glazing-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3164
+ },
+ "goma-xantana-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3138
+ },
+ "goulash-hungaro-receta-cocina-budapest": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3477
+ },
+ "goulash-hungaro-receta-pimenton-autentico": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3583
+ },
+ "guia-completa-de-asistentes-virtuales-para-cocinas-profesionales": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 961
+ },
+ "guia-del-asesor-de-restaurantes-implementando-ia-en-tu-consultoria-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1010
+ },
+ "hidrolisis-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3249
+ },
+ "homogeneizacion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3244
+ },
+ "ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1424
+ },
+ "ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos-2025": {
+  "tier": "D",
+  "why": "duplicado exacto → 301 a ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos",
+  "wpId": 1612
+ },
+ "ia-arquitectura-diseno-restaurantes-cocinas-profesionales": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2601
+ },
+ "ia-catering-empresas-eventos-corporativos": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 3417
+ },
+ "ia-centros-produccion-alimentaria-industrial": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3455
+ },
+ "ia-churrerias-guia-completa": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 3439
+ },
+ "ia-colectividades-comedores-menus-nutricion": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3409
+ },
+ "ia-en-artes-culinarias-personalizando-tu-experiencia-gastronomica": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 1216
+ },
+ "ia-en-artes-culinarias-transformando-la-innovacion-en-la-cocina": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1233
+ },
+ "ia-en-el-control-de-calidad-gastronomico": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 1936
+ },
+ "ia-en-la-cocina-molecular-innovacion-y-experimentacion": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1818
+ },
+ "ia-en-la-conservacion-de-alimentos": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1880
+ },
+ "ia-en-la-cristaleria-gastronomica": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2129
+ },
+ "ia-en-la-destilacion-artesanal": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2059
+ },
+ "ia-en-la-elaboracion-de-cerveza-artesanal": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2001
+ },
+ "ia-en-la-elaboracion-de-vinos": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1838
+ },
+ "ia-en-la-gestion-de-criticas-y-reputacion-de-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 937
+ },
+ "ia-en-la-gestion-de-festivales-gastronomicos": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2021
+ },
+ "ia-en-la-gestion-de-residuos-especiales-en-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2621
+ },
+ "ia-en-la-gestion-de-temperatura-emocional-en-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2612
+ },
+ "ia-escandallos-para-chefs-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3725
+ },
+ "ia-escandallos-para-chefs-en-bogota": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3694
+ },
+ "ia-escandallos-para-chefs-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3730
+ },
+ "ia-escandallos-para-chefs-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3729
+ },
+ "ia-escandallos-para-chefs-en-guadalajara": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3720
+ },
+ "ia-escandallos-para-chefs-en-lima": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3699
+ },
+ "ia-escandallos-para-chefs-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3718
+ },
+ "ia-escandallos-para-chefs-en-miami": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3709
+ },
+ "ia-escandallos-para-chefs-en-santiago": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3731
+ },
+ "ia-escandallos-para-chefs-en-valencia": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3702
+ },
+ "ia-escandallos-para-panaderos-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3716
+ },
+ "ia-escandallos-para-panaderos-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3736
+ },
+ "ia-escandallos-para-panaderos-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3690
+ },
+ "ia-escandallos-para-panaderos-en-lima": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3721
+ },
+ "ia-escandallos-para-panaderos-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3698
+ },
+ "ia-escandallos-para-reposteros-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3717
+ },
+ "ia-escandallos-para-reposteros-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3711
+ },
+ "ia-escandallos-para-reposteros-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3724
+ },
+ "ia-escandallos-para-reposteros-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3703
+ },
+ "ia-escandallos-para-reposteros-en-miami": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3708
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3695
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-bogota": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3707
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3689
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3738
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-guadalajara": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3728
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-lima": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3697
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3719
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-miami": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3713
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-santiago": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3712
+ },
+ "ia-fidelizacion-para-duenos-restaurante-en-valencia": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3692
+ },
+ "ia-food-trucks-guia-rentabilizar-negocio-movil": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3413
+ },
+ "ia-franquicias-restaurantes-escalar-cadena": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 3435
+ },
+ "ia-gestion-alergenos-hosteleria": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 3494
+ },
+ "ia-hoteles-food-beverage-guia-completa": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 3393
+ },
+ "ia-ingenieria-menu-para-chefs-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3734
+ },
+ "ia-ingenieria-menu-para-chefs-en-bogota": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3696
+ },
+ "ia-ingenieria-menu-para-chefs-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3735
+ },
+ "ia-ingenieria-menu-para-chefs-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3727
+ },
+ "ia-ingenieria-menu-para-chefs-en-guadalajara": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3732
+ },
+ "ia-ingenieria-menu-para-chefs-en-lima": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3705
+ },
+ "ia-ingenieria-menu-para-chefs-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3688
+ },
+ "ia-ingenieria-menu-para-chefs-en-miami": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3733
+ },
+ "ia-ingenieria-menu-para-chefs-en-santiago": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3722
+ },
+ "ia-ingenieria-menu-para-chefs-en-valencia": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3700
+ },
+ "ia-maduracion-carnes-manual-tecnico-control-optimizacion": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1986
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-barcelona": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3715
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-bogota": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3691
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-buenos-aires": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3726
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-ciudad-de-mexico": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3704
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-guadalajara": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3701
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-lima": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3710
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-madrid": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3737
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-miami": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3723
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-santiago": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3706
+ },
+ "ia-marketing-gastronomico-para-duenos-restaurante-en-valencia": {
+  "tier": "D",
+  "why": "pSEO guias-ia-locales (canibaliza pSEO aichef.pro)",
+  "wpId": 3693
+ },
+ "ia-para-bares": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2212
+ },
+ "ia-para-cafeterias": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2230
+ },
+ "ia-para-crear-menus": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2203
+ },
+ "ia-para-crear-menus-semanales": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2456
+ },
+ "ia-para-hacer-imagenes-de-comida": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 1423
+ },
+ "ia-para-hamburgueserias": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2495
+ },
+ "ia-para-panaderias": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2594
+ },
+ "ia-para-pizzerias": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 2480
+ },
+ "ia-para-recetas-de-cocina-gratis": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1500
+ },
+ "ia-para-restaurantes-de-cocina-espanola": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2346
+ },
+ "ia-para-restaurantes-de-estrella-michelin": {
+  "tier": "A",
+  "why": "auditoría 06-15: C5_Modelos_Negocio",
+  "wpId": 2577
+ },
+ "ia-predicciones-2026-15-tendencias-que-cambiaran-la-gastronomia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1671
+ },
+ "ia-recuperacion-recetas-historicas-patrimonio-gastronomico": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1901
+ },
+ "ia-restaurante-vegano-plant-based": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3490
+ },
+ "ia-sommelier-maridajes-gestion-bodega": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3443
+ },
+ "ia-vs-chef-humano-quien-crea-mejores-recetas-analisis-comparativo-datos-reales": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1594
+ },
+ "ia-vs-metodos-tradicionales-revolucion-en-la-planificacion-de-menus": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 871
+ },
+ "ia-y-agricultura-urbana-para-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1860
+ },
+ "ia-y-analisis-predictivo-en-la-gestion-de-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 907
+ },
+ "ia-y-nutricion-planificacion-de-dietas-personalizadas-en-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 920
+ },
+ "ia-y-servicio-al-cliente-en-restaurantes-mejorando-la-experiencia-del-comensal": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 955
+ },
+ "ia-y-sostenibilidad-en-la-cocina-reduccion-de-desperdicios": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 888
+ },
+ "incrustacion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3252
+ },
+ "innovacion-en-heladeria-aplicaciones-practicas-de-chatgpt": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 991
+ },
+ "innovacion-en-recetas-como-la-ia-esta-transformando-la-creacion-culinaria": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 913
+ },
+ "inteligencia-artificial-en-cocina": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2096
+ },
+ "inteligencia-artificial-en-el-mundo-de-la-gastronomia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2051
+ },
+ "inteligencia-artificial-en-gastronomia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 97
+ },
+ "inteligencia-artificial-en-la-formacion-de-profesionales-gastronomicos": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 979
+ },
+ "inteligencia-artificial-para-restaurantes-con-ai-chef-pro-2": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1164
+ },
+ "inteligencia-artificial-rentabilidad-eficiencia-gestion-gastronomica": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 2356
+ },
+ "introduccion-a-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 377
+ },
+ "iskender-kebab-turco-receta-bursa": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3564
+ },
+ "kimchi-casero-receta-coreana-autentica": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2770
+ },
+ "koshari-egipcio-receta-plato-callejero-cairo": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3575
+ },
+ "la-ia-en-la-alta-cocina-aplicaciones-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1195
+ },
+ "la-revolucion-de-la-panaderia-con-inteligencia-artificial": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1004
+ },
+ "las-7-mejores-apps-de-ia-para-crear-recetas-de-cocina-en-2025-comparativa-completa": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 1404
+ },
+ "lecitina-de-soja-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2685
+ },
+ "libreria-de-prompts-para-barista-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4780
+ },
+ "libreria-de-prompts-para-bartender-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4829
+ },
+ "libreria-de-prompts-para-burger-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 512
+ },
+ "libreria-de-prompts-para-catering-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 157
+ },
+ "libreria-de-prompts-para-chef-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4673
+ },
+ "libreria-de-prompts-para-chef-ejecutivo-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4911
+ },
+ "libreria-de-prompts-para-chef-privado-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4883
+ },
+ "libreria-de-prompts-para-chocolateria-creativa-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4171
+ },
+ "libreria-de-prompts-para-chocolatero-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4712
+ },
+ "libreria-de-prompts-para-consultor-gastronomico-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4655
+ },
+ "libreria-de-prompts-para-fermentus-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4607
+ },
+ "libreria-de-prompts-para-food-pairing-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 273
+ },
+ "libreria-de-prompts-para-gastro-lexicum-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4638
+ },
+ "libreria-de-prompts-para-gerente-de-restaurante-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4940
+ },
+ "libreria-de-prompts-para-heladeria-creativa-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4177
+ },
+ "libreria-de-prompts-para-heladero-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4692
+ },
+ "libreria-de-prompts-para-mermas-gencal": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 308
+ },
+ "libreria-de-prompts-para-panaderia-creativa-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4204
+ },
+ "libreria-de-prompts-para-panadero-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4855
+ },
+ "libreria-de-prompts-para-pasteleria-creativa-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4165
+ },
+ "libreria-de-prompts-para-pastelero-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4733
+ },
+ "libreria-de-prompts-para-pizzero-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4755
+ },
+ "libreria-de-prompts-para-recetario-cocina-creativa-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 320
+ },
+ "libreria-de-prompts-para-sommelier-consultor-pro-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4804
+ },
+ "libreria-de-prompts-para-vegchef-plant-based-ai": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 4622
+ },
+ "liofilizacion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3255
+ },
+ "llm-large-language-model-cocina": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2902
+ },
+ "maceracion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3258
+ },
+ "maillard-concepto-y-definicion-2": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2692
+ },
+ "mandolina-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3182
+ },
+ "manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1689
+ },
+ "marketing-olfativo-con-ia-en-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 1886
+ },
+ "marketing-restaurantes-ia-redes-sociales": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 3386
+ },
+ "masala-dosa-receta-desayuno-india-sur": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3559
+ },
+ "mayonesa-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2738
+ },
+ "mejor-ia-para-cocinar-en-2025": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1563
+ },
+ "mejor-ia-para-restaurantes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2192
+ },
+ "mejores-calculadoras-food-cost-ia-comparativa": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3401
+ },
+ "mejores-ia-restaurantes-2026": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 3352
+ },
+ "microgreens-ia-restaurantes-cultivo-indoor": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2160
+ },
+ "mise-en-place": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2691
+ },
+ "mixologia-digital-ia-en-el-diseno-de-cocteles-y-bebidas": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1753
+ },
+ "mofongo-puertorriqueno-receta-chicharron-ajo": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3592
+ },
+ "moussaka-griega-autentica-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3319
+ },
+ "neurociencia-gastronomica-ia-en-el-diseno-de-experiencias-multisensoriales": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 1948
+ },
+ "nitrogeno-liquido-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3261
+ },
+ "optimizacion-de-delivery-con-ia-guia-practica-para-restaurantes": {
+  "tier": "A",
+  "why": "vertical/listicle comercial (hallazgo 3 auditoría)",
+  "wpId": 1956
+ },
+ "oxidacion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3264
+ },
+ "pabellon-criollo-venezolano-receta-plato-nacional": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3589
+ },
+ "packaging-gastronomico-ia": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2153
+ },
+ "pad-thai-tailandes-receta-pro-wok": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3320
+ },
+ "paella-valenciana-autentica-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3295
+ },
+ "papillote-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3196
+ },
+ "pasteurizacion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3267
+ },
+ "pato-peking-receta-cocina-imperial-china": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3343
+ },
+ "pepian-guatemalteco-receta-plato-nacional": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3600
+ },
+ "personalizacion-de-experiencias-gastronomicas-con-inteligencia-artificial": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 882
+ },
+ "pho-bo-vietnamita-receta-caldo-huesos": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3548
+ },
+ "pierogi-polacos-receta-dumplings-patata-queso": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3480
+ },
+ "platos-de-autor-reinventados-con-cocina-creativa-ai": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2313
+ },
+ "pollo-horno-perfecto-tecnica-pro-piel-crujiente": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3278
+ },
+ "poutine-canadiense-receta-queso-grano-quebec": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3582
+ },
+ "procesamiento-de-lenguaje-natural": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 594
+ },
+ "prompt-engineering-chefs-guia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 3011
+ },
+ "protocolos-de-limpieza-con-ia-en-hosteleria": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2088
+ },
+ "psicologia-del-consumidor-con-ia-en-restaurantes": {
+  "tier": "C",
+  "why": "resto (ia-en-gastronomia/ai-chef-pro sin cluster ni patrón money)",
+  "wpId": 2014
+ },
+ "puede-chatgpt-disenar-el-menu-o-la-carta-de-un-restaurante": {
+  "tier": "A",
+  "why": "auditoría 06-15: C4_Marketing_Ventas",
+  "wpId": 2121
+ },
+ "puede-la-ia-reemplazar-a-los-chefs-descubre-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1202
+ },
+ "puede-la-ia-reemplazar-a-los-chefs-transforma-tu-cocina-con-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 1171
+ },
+ "pulpo-atlantico-confitado-gazpacho-de-fresa-y-granizado-de-pepino-aire-de-albahaca-y-crujiente-de-arroz-negro": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1481
+ },
+ "que-es-el-food-pairing": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 533
+ },
+ "que-es-el-maiz": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 794
+ },
+ "que-es-inteligencia-artificial-cocina-guia": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3007
+ },
+ "que-es-la-inteligencia-artificial-generativa": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 397
+ },
+ "que-es-un-abatidor-de-temperatura": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 712
+ },
+ "que-es-un-prompt": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 390
+ },
+ "que-significa-abocar-en-cocina": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 713
+ },
+ "que-son-las-mermas-en-cocina": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 616
+ },
+ "raclette-suizo-receta-queso-derretido-patatas": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3574
+ },
+ "ramen-tonkotsu-japones-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3303
+ },
+ "reduccion-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3270
+ },
+ "reducir-mermas-restaurante-ia": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3381
+ },
+ "rendang-indonesio-receta-curry-ternera": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3549
+ },
+ "rentabilidad-restaurante-kpis-metricas-2026": {
+  "tier": "A",
+  "why": "auditoría 06-15: C1_Costes_Rentabilidad",
+  "wpId": 3467
+ },
+ "risotto-hongos-funghi-receta-italiana-autentica": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3277
+ },
+ "roner-concepto-y-definicion-2": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2693
+ },
+ "ropa-vieja-cubana-receta-carne-deshebrada": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3590
+ },
+ "roux-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2730
+ },
+ "salsa-bearnesa-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2739
+ },
+ "salsa-bolonesa-autentica-ragu-bolognese-receta-pro": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3273
+ },
+ "salsa-espanola-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2735
+ },
+ "salsa-holandesa-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2737
+ },
+ "salsa-veloute-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2732
+ },
+ "salsas-madre-cocina-guia": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3864
+ },
+ "salvar-recuperar-restaurante-hosteleria-24-48-horas-ia-ai-chef-pro": {
+  "tier": "A",
+  "why": "auditoría 06-15: C2_IA_Restaurantes",
+  "wpId": 2446
+ },
+ "sauerbraten-aleman-receta-marinado-ternera": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3573
+ },
+ "se-utiliza-la-ia-en-la-cocina": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1580
+ },
+ "smash-burger-receta-pro-tecnica-restaurante": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2771
+ },
+ "sous-vide-avanzado-concepto-y-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2706
+ },
+ "sous-vide-concepto-definicion": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3204
+ },
+ "tacos-al-pastor-autenticos-receta-mexicana": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3298
+ },
+ "tagine-pollo-marroqui-limon-confitado-receta": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3479
+ },
+ "tapas-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3216
+ },
+ "tecnicas-con-sifon-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2709
+ },
+ "tecnicas-de-coccion-al-vacio-sous-vide": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 2631
+ },
+ "tecnicas-de-prefermento-con-las-apps-de-ai-chef-pro": {
+  "tier": "A",
+  "why": "librería de prompts (destino final: página de agente 8C)",
+  "wpId": 2167
+ },
+ "tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 1221
+ },
+ "thermomix-concepto-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 3187
+ },
+ "timlup-checklist-digital-tareas-recurrentes": {
+  "tier": "A",
+  "why": "auditoría 06-15: C3_Operaciones_Cumplimiento",
+  "wpId": 3965
+ },
+ "tipos-de-cortes-en-la-cocina-profesional": {
+  "tier": "B",
+  "why": "glosario",
+  "wpId": 2748
+ },
+ "token-unidad-inteligencia-artificial": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 2903
+ },
+ "top-10-escuelas-baristas-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3111
+ },
+ "top-10-escuelas-bartender-mixologia-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3095
+ },
+ "top-10-escuelas-catering-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3119
+ },
+ "top-10-escuelas-chocolateria-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3107
+ },
+ "top-10-escuelas-cocina-profesional-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3067
+ },
+ "top-10-escuelas-heladeria-gelato-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3103
+ },
+ "top-10-escuelas-panaderia-artesanal-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3091
+ },
+ "top-10-escuelas-pasteleria-profesional-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3086
+ },
+ "top-10-escuelas-queseria-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3115
+ },
+ "top-10-escuelas-sommelier-vinos-estados-unidos-2026": {
+  "tier": "D",
+  "why": "listicle escuelas US fuera de estrategia (decisión análisis §3)",
+  "wpId": 3099
+ },
+ "tres-leches-creativo-esponja-al-microondas-leches-aromatizadas-y-aire-de-ron": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 1347
+ },
+ "umami-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2687
+ },
+ "vinagreta-concepto-y-definicion": {
+  "tier": "B",
+  "why": "auditoría 06-15: GLOSARIO",
+  "wpId": 2740
+ },
+ "wiener-schnitzel-austriaco-receta-empanizada-ternera": {
+  "tier": "C",
+  "why": "recetario/tutoriales (consumo)",
+  "wpId": 3581
+ },
+ "wiener-schnitzel-receta-ternera-empanada-austria": {
+  "tier": "C",
+  "why": "auditoría 06-15: RECETAS_TECNICA",
+  "wpId": 3556
+ },
+ "yuzu-kosho-condimento-japones-tendencia": {
+  "tier": "B",
+  "why": "glosario",
+  "wpId": 2727
+ }
+}

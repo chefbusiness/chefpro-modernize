@@ -12,6 +12,11 @@ import sitemap from '@astrojs/sitemap';
 const LASTMOD = JSON.parse(
   readFileSync(new URL('./src/lib/sitemap-lastmod.json', import.meta.url), 'utf8')
 );
+// Fase 8B: lastmod real (modDate del frontmatter) de los posts del blog,
+// generado por scripts/astro-migration/fase8b-wp2md.py en cada conversión.
+const BLOG_LASTMOD = JSON.parse(
+  readFileSync(new URL('./src/lib/blog-lastmod.json', import.meta.url), 'utf8')
+);
 const MARKETING = JSON.parse(
   readFileSync(new URL('./src/lib/marketing-pages.json', import.meta.url), 'utf8')
 );
@@ -63,7 +68,7 @@ export default defineConfig({
       // las dos vías y no exige ambas).
       serialize: (item) => {
         const path = new URL(item.url).pathname.replace(/\/$/, '') || '/';
-        item.lastmod = LASTMOD[path] ?? NEW_URLS_LASTMOD;
+        item.lastmod = LASTMOD[path] ?? BLOG_LASTMOD[path] ?? NEW_URLS_LASTMOD;
         return item;
       },
     }),

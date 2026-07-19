@@ -206,10 +206,23 @@ def main():
         exp_lost = {'/services'} | {f'/{l}/services' for l in LANGS if l != 'es'}
         lost = set(snap) - set(stg)
         new = set(stg) - set(snap)
+        # Fase 8B: el blog añade N URLs propias (posts + hub + paginación +
+        # categorías) — expectativa DINÁMICA desde el repo, separada de las 45
+        # de productos de Fase 6.
+        blog_mds = list((ROOT / 'astro-site/src/content/blog/es').glob('*.md'))
+        n_posts = len(blog_mds)
+        n_cats = len({re.search(r'^category: (\S+)', p.read_text(), re.M).group(1)
+                      for p in blog_mds})
+        exp_blog = n_posts + 1 + (-(-n_posts // 24) - 1) + n_cats
+        blog_new = {p for p in new if p == '/blog' or p.startswith('/blog/')}
+        new -= blog_new
         check(lost == exp_lost,
               f'sitemap post-cutover: perdidas vs snapshot {sorted(lost ^ exp_lost)[:6]}')
-        check(len(new) == 45, f'sitemap post-cutover: nuevas {len(new)} != 45')
-        check(len(stg) == 696, f'sitemap post-cutover: {len(stg)} URLs != 696')
+        check(len(new) == 45, f'sitemap post-cutover: nuevas no-blog {len(new)} != 45')
+        check(len(blog_new) == exp_blog,
+              f'sitemap post-cutover: blog {len(blog_new)} != {exp_blog}')
+        check(len(stg) == 696 + exp_blog,
+              f'sitemap post-cutover: {len(stg)} URLs != {696 + exp_blog}')
         for p in ['/productos-digitales', '/kit-tareas-asador', '/', '/usos']:
             check(p in stg, f'sitemap post-cutover: falta {p}')
         for p in ['/legales', '/en/ai-food-cost-calculator', '/admin/generar-acceso']:

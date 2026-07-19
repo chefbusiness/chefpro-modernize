@@ -1,0 +1,47 @@
+---
+// Fase 8B — Tarjeta de post para hub /blog y páginas de categoría.
+import { formatDateEs, getCategory, postSlug, type BlogPost } from '../../lib/blog';
+
+interface Props {
+  post: BlogPost;
+  /** Prioriza la carga de la imagen (primeras tarjetas above the fold). */
+  eager?: boolean;
+}
+
+const { post, eager = false } = Astro.props;
+const slug = postSlug(post);
+const cat = getCategory(post.data.category);
+---
+
+<article class="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
+  <a href={`/blog/${slug}`} class="flex h-full flex-col">
+    {post.data.image && (
+      <div class="aspect-[16/9] overflow-hidden bg-muted">
+        <img
+          src={post.data.image}
+          alt={post.data.imageAlt ?? post.data.title}
+          width="640"
+          height="360"
+          loading={eager ? 'eager' : 'lazy'}
+          decoding="async"
+          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+    )}
+    <div class="flex flex-1 flex-col gap-2 p-5">
+      {cat && (
+        <span class="text-xs font-semibold uppercase tracking-wide text-primary">{cat.name}</span>
+      )}
+      <h3 class="text-lg font-bold leading-snug text-foreground group-hover:text-primary">
+        {post.data.title}
+      </h3>
+      <p class="line-clamp-3 text-sm text-muted-foreground">{post.data.description}</p>
+      <time
+        datetime={post.data.pubDate.toISOString().slice(0, 10)}
+        class="mt-auto pt-2 text-xs text-muted-foreground"
+      >
+        {formatDateEs(post.data.pubDate)}
+      </time>
+    </div>
+  </a>
+</article>
