@@ -1,0 +1,28 @@
+---
+// Fase 8B — CTA estándar al final de cada post del blog (ES v1).
+// El blog existe para alimentar de tráfico cualificado a app.aichef.pro:
+// todo post lleva este bloque. Variantes por idioma llegarán con 8B.6.
+interface Props {
+  /** UTM content para atribuir el post de origen. */
+  utmContent?: string;
+}
+const { utmContent = 'blog-post' } = Astro.props;
+const appUrl = `https://app.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
+---
+
+<aside class="not-prose my-10 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-background p-8 text-center">
+  <p class="text-sm font-semibold uppercase tracking-wide text-primary">AI Chef Pro</p>
+  <h2 class="mt-2 text-2xl font-bold text-foreground">
+    Más de 70 agentes de IA culinarios trabajando para tu negocio
+  </h2>
+  <p class="mx-auto mt-3 max-w-xl text-muted-foreground">
+    Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Pruébalo gratis
+    y pon la inteligencia artificial a cocinar números por ti.
+  </p>
+  <a
+    href={appUrl}
+    class="mt-6 inline-block rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+  >
+    Probar AI Chef Pro gratis
+  </a>
+</aside>

@@ -140,5 +140,7 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	// Fase 8B: typography da estilo al HTML de los posts del blog migrado
+	// (clases prose en BlogPost.astro).
+	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;

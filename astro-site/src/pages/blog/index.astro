@@ -1,0 +1,94 @@
+---
+// Fase 8B — Hub del blog /blog (ES): página 1 del listado + navegación por
+// categorías. Las páginas 2+ viven en /blog/pagina/{n}.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PostCard from '../../components/blog/PostCard.astro';
+import { SITE } from '../../i18n/config';
+import { BLOG_CATEGORIES, getPublishedPosts, POSTS_PER_PAGE } from '../../lib/blog';
+
+const posts = await getPublishedPosts('es');
+const pagePosts = posts.slice(0, POSTS_PER_PAGE);
+const totalPages = Math.max(1, Math.ceil(posts.length / POSTS_PER_PAGE));
+const catsWithPosts = BLOG_CATEGORIES.filter((c) =>
+  posts.some((p) => p.data.category === c.slug)
+);
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Blog de AI Chef Pro',
+    description:
+      'Inteligencia artificial para restaurantes y hostelería: guías, herramientas, prompts y técnica culinaria profesional.',
+    url: `${SITE}/blog`,
+    inLanguage: 'es',
+    publisher: { '@type': 'Organization', name: 'AI Chef Pro', url: SITE },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog` },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Blog de IA para Restaurantes y Hostelería | AI Chef Pro"
+  description="Guías de inteligencia artificial para restaurantes, prompts profesionales, food cost, APPCC, marketing gastronómico y técnica culinaria. El blog de AI Chef Pro."
+  lang="es"
+  basePath="/blog"
+  locales={['es']}
+>
+  <Fragment slot="head">
+    <link rel="alternate" type="application/rss+xml" title="Blog AI Chef Pro" href={`${SITE}/blog/rss.xml`} />
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-6xl px-4 py-12">
+    <header class="mb-10 text-center">
+      <h1 class="text-4xl font-bold text-foreground md:text-5xl">Blog de AI Chef Pro</h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+        Inteligencia artificial para restaurantes y hostelería: guías prácticas, prompts
+        profesionales, gestión de costes y técnica culinaria de alto nivel.
+      </p>
+    </header>
+
+    {catsWithPosts.length > 0 && (
+      <nav aria-label="Categorías del blog" class="mb-10 flex flex-wrap justify-center gap-3">
+        {catsWithPosts.map((c) => (
+          <a
+            href={`/blog/categoria/${c.slug}`}
+            class="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+          >{c.name}</a>
+        ))}
+      </nav>
+    )}
+
+    {pagePosts.length > 0 ? (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {pagePosts.map((p, i) => <PostCard post={p} eager={i < 3} />)}
+      </div>
+    ) : (
+      <p class="text-center text-muted-foreground">Muy pronto: estamos migrando el blog.</p>
+    )}
+
+    {totalPages > 1 && (
+      <nav aria-label="Paginación" class="mt-12 flex items-center justify-center gap-4">
+        <span class="text-sm text-muted-foreground">Página 1 de {totalPages}</span>
+        <a
+          href="/blog/pagina/2"
+          class="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary"
+        >Siguiente →</a>
+      </nav>
+    )}
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>
