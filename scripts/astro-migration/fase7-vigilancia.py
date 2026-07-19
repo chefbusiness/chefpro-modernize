@@ -75,6 +75,19 @@ check(n == EXPECTED, f'sitemap: {n} URLs != {EXPECTED}')
 st, robots = curl('/robots.txt')
 check(st == 200 and 'Disallow: /*-access' in robots, 'robots.txt alterado')
 
+# 8B.5 cutover 2026-07-19: el subdominio blog debe 301-ear al path nuevo
+# (TLS estricto: si el cert del subdominio caduca o se rompe, esto avisa).
+for src, dst in [
+    ('https://blog.aichef.pro/', 'https://aichef.pro/blog'),
+    ('https://blog.aichef.pro/ia-para-cocinar', 'https://aichef.pro/blog/ia-para-cocinar'),
+    ('https://blog.aichef.pro/wp-content/uploads/x.jpg', 'https://aichef.pro/blog-assets/x.jpg'),
+]:
+    r = subprocess.run(['curl', '-s', '-o', '/dev/null', '--max-time', '30',
+                        '-w', '%{http_code} %{redirect_url}', src],
+                       capture_output=True, text=True)
+    out = r.stdout.strip()
+    check(out == f'301 {dst}', f'subdominio {src}: {out!r} != 301 {dst}')
+
 for p in ['/en', '/usos/rol/sous-chef', '/abrir-restaurante/madrid',
           '/kit-tareas-asador', '/productos-digitales', '/pro-prompts-library-access',
           '/calculadora-food-cost-restaurante', '/legales',
