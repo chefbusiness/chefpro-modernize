@@ -79,7 +79,7 @@ const blogHref = '/blog';
       <div>
         <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_formacion')}</h4>
         <ul class="space-y-3 text-sm">
-          <li><a href={lang === 'en' ? '/en/pricing' : '/precios'} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
+          <li><a href={{ es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise', it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen' }[lang] ?? '/precios'} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
           <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
           <li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>
           <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.planes_precios')}</a></li>

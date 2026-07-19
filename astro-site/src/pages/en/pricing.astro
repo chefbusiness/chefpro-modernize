@@ -9,7 +9,15 @@ import { SITE } from '../../i18n/config';
 
 const lang = 'en';
 const basePath = '/en/pricing';
-const alternates = { es: '/precios', en: '/en/pricing' };
+const alternates = {
+  es: '/precios',
+  en: '/en/pricing',
+  fr: '/fr/tarifs',
+  de: '/de/preise',
+  it: '/it/prezzi',
+  pt: '/pt/precos',
+  nl: '/nl/prijzen',
+};
 
 const APP = 'https://app.aichef.pro';
 const ctaUrl = (slug: string) =>
@@ -196,7 +204,6 @@ const btnClass = (variant: string) => {
   lang={lang}
   basePath={basePath}
   alternates={alternates}
-  locales={['es', 'en']}
   ogImage={`${SITE}/og-image.jpg`}
 >
   <Fragment slot="head">

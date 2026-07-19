@@ -86,6 +86,9 @@ La confusión ortográfica es tan común como la semántica. Conviene aclarar lo
 
 ## Cómo abocar bien: checklist de partida
 
+<figure class="wp-block-image size-large">
+<img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/07/abocar-tecnica-trasvase-cocina-profesional.jpg" alt="Chef abocando un fondo dorado de un cazo a una cubeta gastronorm, boca a boca, en cocina profesional"/><figcaption>El gesto exacto de abocar: las bocas de los dos recipientes casi en contacto para un trasvase limpio y sin turbulencias</figcaption></figure>
+
 Un abocado limpio no es fruto de la improvisación. Sigue estos pasos y convierte el gesto en un hábito de precisión:
 
 1. **Deja reposar el líquido.** Un mínimo de 15–20 minutos para que los sólidos se depositen en el fondo.

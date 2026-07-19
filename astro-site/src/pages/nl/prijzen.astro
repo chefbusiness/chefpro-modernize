@@ -1,0 +1,396 @@
+---
+// Prijzen (NL) — native Astro page (BaseLayout + Header/Footer .astro).
+// Pricing verified against the live schemas 2026-07-19. Single source of truth.
+// Sign-up / checkout: app.aichef.pro with per-plan UTM.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE } from '../../i18n/config';
+
+const lang = 'nl';
+const basePath = '/nl/prijzen';
+const alternates = {
+  es: '/precios',
+  en: '/en/pricing',
+  fr: '/fr/tarifs',
+  de: '/de/preise',
+  it: '/it/prezzi',
+  pt: '/pt/precos',
+  nl: '/nl/prijzen',
+};
+
+const APP = 'https://app.aichef.pro';
+const ctaUrl = (slug: string) =>
+  `${APP}/?utm_source=web&utm_medium=pricing&utm_content=${slug}`;
+
+const plans = [
+  {
+    slug: 'gratis',
+    name: 'AI Chef Lid',
+    priceBig: 'Gratis',
+    priceSub: '€ 0 · voor altijd',
+    credits: '3.000 credits / maand',
+    audience: 'Voor hulpkoks, koks en iedereen die het vrijblijvend wil uitproberen.',
+    features: [
+      'Toegang tot de meer dan 70 AI-agenten',
+      '3.000 credits per maand',
+      'Receptenboeken van wereldkeukens',
+      'Beschikbaar in 7 talen',
+      'Geen creditcard nodig',
+      'Ondersteuning per e-mail',
+    ],
+    cta: 'Gratis Beginnen',
+    variant: 'outline',
+    highlight: false,
+  },
+  {
+    slug: 'premium-pro',
+    name: 'AI Chef Premium Pro',
+    priceBig: '€ 25',
+    priceSub: '/ maand',
+    credits: '85.000 credits / maand',
+    audience: 'Voor chef-koks, executive chefs en restaurantmanagers.',
+    features: [
+      'Alles van het gratis abonnement',
+      '85.000 credits per maand',
+      'Geavanceerde bedrijfstools',
+      'Toegang tot alle wereldkeukens',
+      'Prioritaire ondersteuning',
+    ],
+    cta: 'Kies Premium Pro',
+    variant: 'gold',
+    highlight: true,
+  },
+  {
+    slug: 'premium-plus',
+    name: 'AI Chef Premium Plus',
+    priceBig: '€ 50',
+    priceSub: '/ maand',
+    credits: '175.000 credits / maand',
+    audience: 'Voor horecaondernemers en restaurantketens.',
+    features: [
+      'Alles van het Premium Pro-abonnement',
+      '175.000 credits per maand',
+      'Geavanceerde bedrijfstools',
+      'Toegang tot alle wereldkeukens',
+      'Premium support 24/7',
+    ],
+    cta: 'Kies Premium Plus',
+    variant: 'primary',
+    highlight: false,
+  },
+  {
+    slug: 'premium-max',
+    name: 'AI Chef Premium Max',
+    priceBig: '€ 95',
+    priceSub: '/ maand',
+    credits: 'Onbeperkte credits',
+    audience: 'Voor veeleisende operaties die de AI dagelijks gebruiken, zonder limieten.',
+    features: [
+      'Alles van het Premium Plus-abonnement',
+      'Onbeperkte credits per maand',
+      'Het enige écht onbeperkte abonnement',
+      'Vroege toegang tot nieuwe functies',
+      'Premium support 24/7',
+    ],
+    cta: 'Kies Premium Max',
+    variant: 'primary',
+    highlight: false,
+  },
+  {
+    slug: 'premium-max-anual',
+    name: 'AI Chef Premium Max Jaarlijks',
+    priceBig: '€ 950',
+    priceSub: '/ jaar',
+    credits: 'Onbeperkte credits',
+    audience: 'De onbeperkte optie voor het hele jaar, met twee maanden cadeau.',
+    features: [
+      'Alles van het Premium Max-abonnement',
+      'Onbeperkte credits het hele jaar',
+      'Je bespaart 2 maanden (komt neer op € 79 / maand)',
+      'Maandelijks persoonlijk advies',
+      'Premium support 24/7',
+    ],
+    cta: 'Kies Jaarabonnement',
+    variant: 'primary',
+    highlight: false,
+  },
+];
+
+const profiles = [
+  {
+    title: 'Individuele Chef of Kok',
+    body: 'Begin gratis met het Lid-abonnement en probeer de meer dan 70 agenten. Wanneer AI een vast onderdeel van je dag wordt, geeft Premium Pro je meer dan genoeg ruimte met 85.000 credits per maand.',
+    plan: 'Aanbevolen: Gratis → Premium Pro',
+  },
+  {
+    title: 'Restaurant',
+    body: 'Eén zaak met menukaart, kostprijsberekeningen, marketing en management, ondersteund door AI, werkt fantastisch met Premium Pro. Als het volume groeit of meerdere mensen de suite gebruiken, vermenigvuldigt Premium Plus de credits.',
+    plan: 'Aanbevolen: Premium Pro → Premium Plus',
+  },
+  {
+    title: 'Groep of Keten',
+    body: 'Meerdere zaken, meer handen en intensief gebruik vragen om speelruimte. Premium Plus dekt de meeste groepen en Premium Max heft de creditlimiet volledig op, met een jaarlijkse optie om twee maanden te besparen.',
+    plan: 'Aanbevolen: Premium Plus → Premium Max',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Is er een gratis abonnement?',
+    a: 'Ja. Het AI Chef Lid-abonnement is voor altijd gratis: € 0, 3.000 credits per maand en toegang tot de meer dan 70 AI-agenten. Ideaal om de suite echt uit te proberen voordat je beslist.',
+  },
+  {
+    q: 'Heb ik een creditcard nodig?',
+    a: 'Niet voor het gratis abonnement: je registreert je en begint zonder betalingsgegevens in te voeren. Je hebt alleen een creditcard nodig wanneer je kiest voor een Premium-abonnement.',
+  },
+  {
+    q: 'Kan ik op elk moment van abonnement wisselen?',
+    a: 'Ja. Je kunt op elk moment upgraden of downgraden vanuit je dashboard. De wijziging gaat in op je factureringscyclus, zonder ingewikkelde procedures.',
+  },
+  {
+    q: 'Kan ik het abonnement opzeggen?',
+    a: 'Ja, op elk moment en vanuit je eigen dashboard, zonder boetes of vaste looptijd. Bij opzegging behoud je toegang tot het einde van de periode die je al hebt betaald.',
+  },
+  {
+    q: 'Wat gebeurt er als mijn credits op zijn?',
+    a: 'Je credits worden elke maand automatisch vernieuwd. Als je meer nodig hebt vóór de vernieuwing, kun je op elk moment upgraden naar een hoger abonnement, of naar het Premium Max-abonnement, dat onbeperkte credits biedt.',
+  },
+  {
+    q: 'Sturen jullie een factuur met btw?',
+    a: 'Ja. Elk abonnement genereert een factuur en de btw wordt toegepast volgens de regelgeving van jouw land. Je kunt je fiscale gegevens toevoegen tijdens het betalingsproces, zodat de factuur correct wordt opgemaakt.',
+  },
+];
+
+const title = 'Prijzen AI Chef Pro: Abonnementen voor Chefs en Restaurants';
+const description =
+  'Bekijk de prijzen van AI Chef Pro. Begin gratis met 3.000 credits per maand, zonder creditcard, of kies Premium vanaf € 25/maand met 70+ AI-agenten.';
+const keywords =
+  'prijzen ai chef pro, abonnementen ai chef pro, ai chef pro gratis, credits ai chef pro, ai voor restaurants prijs, software keuken ai prijs';
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/nl` },
+      { '@type': 'ListItem', position: 2, name: 'Prijzen', item: `${SITE}/nl/prijzen` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+
+const btnClass = (variant: string) => {
+  const base =
+    'inline-flex w-full items-center justify-center rounded-md h-11 px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2';
+  if (variant === 'gold') return `${base} bg-accent text-accent-foreground hover:bg-accent-dark shadow-md`;
+  if (variant === 'outline') return `${base} border border-border bg-background text-foreground hover:bg-accent/10`;
+  return `${base} bg-primary text-primary-foreground hover:bg-primary/90`;
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  basePath={basePath}
+  alternates={alternates}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="nl" />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+
+    <!-- Hero -->
+    <header class="mx-auto mb-14 max-w-3xl text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        Prijzen van AI Chef Pro: Abonnementen voor Chefs en Restaurants
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+        Begin gratis, zonder creditcard en met 3.000 credits per maand. Wanneer je meer
+        wilt, zijn de Premium-abonnementen er vanaf € 25/maand, en alleen het Max-abonnement
+        geeft je onbeperkte credits. Ze bevatten allemaal de meer dan 70 AI-agenten en 7 talen.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Gratis Beginnen
+        </a>
+      </div>
+    </header>
+
+    <!-- Plans grid -->
+    <section aria-label="Abonnementen en prijzen" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      {plans.map((p) => (
+        <article class={`relative flex flex-col rounded-xl border bg-card p-6 shadow-sm ${p.highlight ? 'border-accent ring-2 ring-accent shadow-md' : 'border-border'}`}>
+          {p.highlight && (
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground shadow">
+              ⭐ Meest Gekozen
+            </span>
+          )}
+          <h2 class="text-base font-semibold text-foreground">{p.name}</h2>
+          <div class="mt-3 flex items-baseline gap-1">
+            <span class="text-3xl font-bold text-foreground">{p.priceBig}</span>
+            <span class="text-sm text-muted-foreground">{p.priceSub}</span>
+          </div>
+          <p class="mt-2 text-sm font-semibold text-primary">{p.credits}</p>
+          <p class="mt-3 text-sm text-muted-foreground">{p.audience}</p>
+          <ul class="mt-5 flex-1 space-y-2.5">
+            {p.features.map((f) => (
+              <li class="flex items-start gap-2 text-sm text-foreground">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={ctaUrl(p.slug)} class={`mt-6 ${btnClass(p.variant)}`}>{p.cta}</a>
+        </article>
+      ))}
+    </section>
+
+    <!-- What is a credit? -->
+    <section class="mx-auto mt-20 max-w-3xl rounded-xl border border-border bg-card p-8 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Wat Is een Credit?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Een credit is de eenheid waarmee je werkt binnen AI Chef Pro. Elke actie van een
+        agent (een recept genereren, een kostprijs berekenen, een menukaart opstellen, een
+        marketingplan maken…) verbruikt credits op basis van de complexiteit: eenvoudige
+        taken kosten weinig, de meer uitgebreide iets meer.
+      </p>
+      <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
+        De 3.000 gratis credits zijn genoeg om de suite echt te testen, niet alleen om even
+        te kijken. En als jouw operatie de AI nodig heeft zonder op de teller te letten,
+        geeft het Premium Max-abonnement je onbeperkte credits.
+      </p>
+    </section>
+
+    <!-- Comparison table -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Abonnementen Vergelijken</h2>
+      <div class="overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[720px] border-collapse text-sm">
+          <thead>
+            <tr class="bg-muted/50 text-left">
+              <th class="p-4 font-semibold text-foreground">Functionaliteit</th>
+              <th class="p-4 text-center font-semibold text-foreground">Lid</th>
+              <th class="p-4 text-center font-semibold text-primary">Premium Pro</th>
+              <th class="p-4 text-center font-semibold text-foreground">Premium Plus</th>
+              <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
+              <th class="p-4 text-center font-semibold text-foreground">Max Jaarlijks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Prijs</th>
+              <td class="p-4 text-center text-foreground">Gratis</td>
+              <td class="p-4 text-center text-foreground">€ 25/mnd</td>
+              <td class="p-4 text-center text-foreground">€ 50/mnd</td>
+              <td class="p-4 text-center text-foreground">€ 95/mnd</td>
+              <td class="p-4 text-center text-foreground">€ 950/jr</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Credits / maand</th>
+              <td class="p-4 text-center text-foreground">3.000</td>
+              <td class="p-4 text-center text-foreground">85.000</td>
+              <td class="p-4 text-center text-foreground">175.000</td>
+              <td class="p-4 text-center font-semibold text-accent-dark">Onbeperkt</td>
+              <td class="p-4 text-center font-semibold text-accent-dark">Onbeperkt</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">AI-agenten</th>
+              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">70+</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Talen</th>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Ondersteuning</th>
+              <td class="p-4 text-center text-foreground">E-mail</td>
+              <td class="p-4 text-center text-foreground">Prioritair</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7 + advies</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Creditcard vereist</th>
+              <td class="p-4 text-center text-foreground">Nee</td>
+              <td class="p-4 text-center text-foreground">Ja</td>
+              <td class="p-4 text-center text-foreground">Ja</td>
+              <td class="p-4 text-center text-foreground">Ja</td>
+              <td class="p-4 text-center text-foreground">Ja</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Who each plan is for -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Voor Wie Is Elk Abonnement</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        {profiles.map((pr) => (
+          <div class="flex flex-col rounded-xl border border-border bg-card p-6">
+            <h3 class="text-lg font-bold text-foreground">{pr.title}</h3>
+            <p class="mt-3 flex-1 text-sm text-muted-foreground">{pr.body}</p>
+            <p class="mt-4 text-sm font-semibold text-primary">{pr.plan}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto mt-20 max-w-3xl">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Veelgestelde Vragen</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {f.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Begin Vandaag, Gratis en zonder Creditcard</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Maak binnen een minuut een account aan, ontvang 3.000 credits per maand en probeer
+        de meer dan 70 AI-agenten voor chefs en restaurants. Je upgradet alleen wanneer je
+        het nodig hebt.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Mijn Gratis Account Aanmaken
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer lang="nl" />
+</BaseLayout>

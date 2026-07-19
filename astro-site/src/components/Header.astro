@@ -50,7 +50,12 @@ const freeTools = `/${HERRAMIENTAS_GRATUITAS_SLUGS[lang] || HERRAMIENTAS_GRATUIT
 
 const homeHref = lang === 'es' ? '/' : `/${lang}`;
 const mentoriaHref = lang === 'es' ? '/mentoria-online' : `/${lang}/mentoria-online`;
-const pricingHref = lang === 'es' ? '/#pricing' : `/${lang}#pricing`;
+// F8 2026-07-19: página de precios dedicada por idioma (antes ancla /#pricing).
+const PRICING_PATHS: Record<string, string> = {
+  es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise',
+  it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen',
+};
+const pricingHref = PRICING_PATHS[lang] ?? '/precios';
 
 // Etiquetas multi-idioma inline (verbatim)
 const pick = (m: Record<string, string>, fb: string) => m[lang] || fb;

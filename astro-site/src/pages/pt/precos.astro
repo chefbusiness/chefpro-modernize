@@ -1,14 +1,14 @@
 ---
-// Precios (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
-// Pricing verificado contra los schemas live 2026-07-19. Fuente única de verdad.
-// Registro/checkout: app.aichef.pro con UTM por plan.
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE } from '../i18n/config';
+// Preços (PT) — página nativa Astro (BaseLayout + Header/Footer .astro).
+// Pricing verificado contra os schemas live 2026-07-19. Fonte única de verdade.
+// Registo / checkout: app.aichef.pro com UTM por plano.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE } from '../../i18n/config';
 
-const lang = 'es';
-const basePath = '/precios';
+const lang = 'pt';
+const basePath = '/pt/precos';
 const alternates = {
   es: '/precios',
   en: '/en/pricing',
@@ -26,20 +26,20 @@ const ctaUrl = (slug: string) =>
 const plans = [
   {
     slug: 'gratis',
-    name: 'AI Chef Miembro',
-    priceBig: 'Gratis',
-    priceSub: '0 € · para siempre',
-    credits: '3.000 créditos / mes',
-    audience: 'Para ayudantes, cocineros y quien quiere probar sin compromiso.',
+    name: 'AI Chef Membro',
+    priceBig: 'Grátis',
+    priceSub: '0 € · para sempre',
+    credits: '3.000 créditos / mês',
+    audience: 'Para ajudantes, cozinheiros e quem quer experimentar sem compromisso.',
     features: [
-      'Acceso a los más de 70 agentes de IA',
-      '3.000 créditos cada mes',
-      'Recetarios de cocinas del mundo',
-      'Disponible en 7 idiomas',
-      'Sin tarjeta de crédito',
-      'Soporte por email',
+      'Acesso aos mais de 70 agentes de IA',
+      '3.000 créditos todos os meses',
+      'Receituários de cozinhas do mundo',
+      'Disponível em 7 idiomas',
+      'Sem cartão de crédito',
+      'Apoio por email',
     ],
-    cta: 'Empezar Gratis',
+    cta: 'Começar Grátis',
     variant: 'outline',
     highlight: false,
   },
@@ -47,17 +47,17 @@ const plans = [
     slug: 'premium-pro',
     name: 'AI Chef Premium Pro',
     priceBig: '25 €',
-    priceSub: '/ mes',
-    credits: '85.000 créditos / mes',
-    audience: 'Para chefs de cocina, chefs ejecutivos y gerentes de restaurante.',
+    priceSub: '/ mês',
+    credits: '85.000 créditos / mês',
+    audience: 'Para chefs de cozinha, chefs executivos e gerentes de restaurante.',
     features: [
-      'Todo lo del plan gratuito',
-      '85.000 créditos cada mes',
-      'Herramientas avanzadas de negocio',
-      'Acceso a todas las cocinas del mundo',
-      'Soporte prioritario',
+      'Tudo do plano gratuito',
+      '85.000 créditos todos os meses',
+      'Ferramentas avançadas de negócio',
+      'Acesso a todas as cozinhas do mundo',
+      'Apoio prioritário',
     ],
-    cta: 'Elegir Premium Pro',
+    cta: 'Escolher Premium Pro',
     variant: 'gold',
     highlight: true,
   },
@@ -65,17 +65,17 @@ const plans = [
     slug: 'premium-plus',
     name: 'AI Chef Premium Plus',
     priceBig: '50 €',
-    priceSub: '/ mes',
-    credits: '175.000 créditos / mes',
-    audience: 'Para empresarios gastronómicos y cadenas de restaurantes.',
+    priceSub: '/ mês',
+    credits: '175.000 créditos / mês',
+    audience: 'Para empresários gastronómicos e cadeias de restaurantes.',
     features: [
-      'Todo lo del plan Premium Pro',
-      '175.000 créditos cada mes',
-      'Herramientas avanzadas de negocio',
-      'Acceso a todas las cocinas del mundo',
-      'Soporte premium 24/7',
+      'Tudo do plano Premium Pro',
+      '175.000 créditos todos os meses',
+      'Ferramentas avançadas de negócio',
+      'Acesso a todas as cozinhas do mundo',
+      'Apoio premium 24/7',
     ],
-    cta: 'Elegir Premium Plus',
+    cta: 'Escolher Premium Plus',
     variant: 'primary',
     highlight: false,
   },
@@ -83,17 +83,17 @@ const plans = [
     slug: 'premium-max',
     name: 'AI Chef Premium Max',
     priceBig: '95 €',
-    priceSub: '/ mes',
+    priceSub: '/ mês',
     credits: 'Créditos ilimitados',
-    audience: 'Para operaciones exigentes que usan la IA a diario, sin límites.',
+    audience: 'Para operações exigentes que usam a IA diariamente, sem limites.',
     features: [
-      'Todo lo del plan Premium Plus',
-      'Créditos ilimitados cada mes',
-      'El único plan realmente ilimitado',
-      'Acceso anticipado a nuevas funciones',
-      'Soporte premium 24/7',
+      'Tudo do plano Premium Plus',
+      'Créditos ilimitados todos os meses',
+      'O único plano realmente ilimitado',
+      'Acesso antecipado a novas funcionalidades',
+      'Apoio premium 24/7',
     ],
-    cta: 'Elegir Premium Max',
+    cta: 'Escolher Premium Max',
     variant: 'primary',
     highlight: false,
   },
@@ -101,17 +101,17 @@ const plans = [
     slug: 'premium-max-anual',
     name: 'AI Chef Premium Max Anual',
     priceBig: '950 €',
-    priceSub: '/ año',
+    priceSub: '/ ano',
     credits: 'Créditos ilimitados',
-    audience: 'La opción ilimitada para todo el año, con dos meses de regalo.',
+    audience: 'A opção ilimitada para todo o ano, com dois meses de oferta.',
     features: [
-      'Todo lo del plan Premium Max',
-      'Créditos ilimitados todo el año',
-      'Ahorras 2 meses (equivale a 79 € / mes)',
-      'Consultoría mensual personalizada',
-      'Soporte premium 24/7',
+      'Tudo do plano Premium Max',
+      'Créditos ilimitados durante todo o ano',
+      'Poupas 2 meses (equivale a 79 € / mês)',
+      'Consultoria mensal personalizada',
+      'Apoio premium 24/7',
     ],
-    cta: 'Elegir Plan Anual',
+    cta: 'Escolher Plano Anual',
     variant: 'primary',
     highlight: false,
   },
@@ -119,62 +119,62 @@ const plans = [
 
 const profiles = [
   {
-    title: 'Chef o Cocinero Individual',
-    body: 'Empieza gratis con el plan Miembro y prueba los más de 70 agentes. Cuando la IA se convierta en parte de tu día a día, Premium Pro te da holgura de sobra con 85.000 créditos al mes.',
-    plan: 'Recomendado: Gratis → Premium Pro',
+    title: 'Chef ou Cozinheiro Individual',
+    body: 'Começa grátis com o plano Membro e experimenta os mais de 70 agentes. Quando a IA se tornar parte do teu dia a dia, o Premium Pro dá-te folga de sobra com 85.000 créditos por mês.',
+    plan: 'Recomendado: Grátis → Premium Pro',
   },
   {
     title: 'Restaurante',
-    body: 'Un solo local con carta, escandallos, marketing y gestión apoyados por IA funciona de maravilla con Premium Pro. Si el volumen crece o sois varias personas usando la suite, Premium Plus multiplica los créditos.',
+    body: 'Um único local com carta, escandalhos, marketing e gestão apoiados por IA funciona na perfeição com o Premium Pro. Se o volume crescer ou forem várias pessoas a usar a suite, o Premium Plus multiplica os créditos.',
     plan: 'Recomendado: Premium Pro → Premium Plus',
   },
   {
-    title: 'Grupo o Cadena',
-    body: 'Varios locales, más manos trabajando y uso intensivo piden margen. Premium Plus cubre a la mayoría de grupos y Premium Max elimina el límite de créditos por completo, con opción anual para ahorrar dos meses.',
+    title: 'Grupo ou Cadeia',
+    body: 'Vários locais, mais mãos a trabalhar e uso intensivo pedem margem. O Premium Plus cobre a maioria dos grupos e o Premium Max elimina o limite de créditos por completo, com opção anual para poupar dois meses.',
     plan: 'Recomendado: Premium Plus → Premium Max',
   },
 ];
 
 const faqs = [
   {
-    q: '¿Hay un plan gratis?',
-    a: 'Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir.',
+    q: 'Há um plano grátis?',
+    a: 'Sim. O plano AI Chef Membro é gratuito para sempre: 0 €, 3.000 créditos por mês e acesso aos mais de 70 agentes de IA. É ideal para experimentares a suite a sério antes de decidires.',
   },
   {
-    q: '¿Necesito tarjeta de crédito?',
-    a: 'No para el plan gratuito: te registras y empiezas sin introducir ningún dato de pago. Solo necesitas tarjeta cuando decides contratar un plan Premium.',
+    q: 'Preciso de cartão de crédito?',
+    a: 'Não para o plano gratuito: registas-te e começas sem introduzir nenhum dado de pagamento. Só precisas de cartão quando decides subscrever um plano Premium.',
   },
   {
-    q: '¿Puedo cambiar de plan cuando quiera?',
-    a: 'Sí. Puedes subir o bajar de plan en cualquier momento desde tu panel de usuario. El cambio se aplica a tu ciclo de facturación sin trámites complicados.',
+    q: 'Posso mudar de plano quando quiser?',
+    a: 'Sim. Podes subir ou descer de plano em qualquer momento a partir do teu painel de utilizador. A mudança aplica-se ao teu ciclo de faturação sem burocracias complicadas.',
   },
   {
-    q: '¿Puedo cancelar la suscripción?',
-    a: 'Sí, en cualquier momento y desde tu propio panel, sin penalizaciones ni permanencia. Al cancelar mantienes el acceso hasta el final del periodo que ya has pagado.',
+    q: 'Posso cancelar a subscrição?',
+    a: 'Sim, em qualquer momento e a partir do teu próprio painel, sem penalizações nem fidelização. Ao cancelares, manténs o acesso até ao final do período que já pagaste.',
   },
   {
-    q: '¿Qué pasa si me quedo sin créditos?',
-    a: 'Tus créditos se renuevan automáticamente cada mes. Si necesitas más antes de la renovación, puedes subir a un plan superior en cualquier momento, o al plan Premium Max, que ofrece créditos ilimitados.',
+    q: 'O que acontece se ficar sem créditos?',
+    a: 'Os teus créditos renovam-se automaticamente todos os meses. Se precisares de mais antes da renovação, podes subir para um plano superior em qualquer momento, ou para o plano Premium Max, que oferece créditos ilimitados.',
   },
   {
-    q: '¿Emitís factura con IVA?',
-    a: 'Sí. Cada suscripción genera su factura y el IVA se aplica según la normativa de tu país. Puedes añadir tus datos fiscales durante el proceso de pago para que la factura salga correcta.',
+    q: 'Emitem fatura com IVA?',
+    a: 'Sim. Cada subscrição gera a sua fatura e o IVA é aplicado de acordo com a legislação do teu país. Podes adicionar os teus dados fiscais durante o pagamento para que a fatura saia correta.',
   },
 ];
 
-const title = 'Precios de AI Chef Pro: Planes para Chefs y Restaurantes';
+const title = 'Preços do AI Chef Pro: Planos para Chefs e Restaurantes';
 const description =
-  'Descubre los precios de AI Chef Pro. Empieza gratis con 3.000 créditos al mes y sin tarjeta, o elige un plan Premium desde 25 €/mes con acceso a más de 70 agentes de IA para chefs y restaurantes.';
+  'Preços do AI Chef Pro: começa grátis com 3.000 créditos/mês e sem cartão, ou um plano Premium desde 25 €/mês, com mais de 70 agentes de IA para restaurantes.';
 const keywords =
-  'precios ai chef pro, planes ai chef pro, ai chef pro gratis, créditos ai chef pro, ia para restaurantes precio, software cocina ia precio';
+  'preços ai chef pro, planos ai chef pro, ai chef pro grátis, créditos ai chef pro, ia para restaurantes preço, software cozinha ia preço';
 
 const schemas = [
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
-      { '@type': 'ListItem', position: 2, name: 'Precios', item: `${SITE}/precios` },
+      { '@type': 'ListItem', position: 1, name: 'Início', item: `${SITE}/pt` },
+      { '@type': 'ListItem', position: 2, name: 'Preços', item: `${SITE}/pt/precos` },
     ],
   },
   {
@@ -210,34 +210,34 @@ const btnClass = (variant: string) => {
     {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </Fragment>
 
-  <Header lang="es" />
+  <Header lang="pt" />
 
   <main class="container mx-auto max-w-7xl px-4 py-14">
 
     <!-- Hero -->
     <header class="mx-auto mb-14 max-w-3xl text-center">
       <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-        Precios de AI Chef Pro: Planes para Chefs y Restaurantes
+        Preços do AI Chef Pro: Planos para Chefs e Restaurantes
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        Empieza gratis, sin tarjeta y con 3.000 créditos al mes. Cuando quieras más,
-        los planes Premium van desde 25 €/mes, y solo el plan Max te da créditos
-        ilimitados. Todos incluyen los más de 70 agentes de IA y 7 idiomas.
+        Começa grátis, sem cartão e com 3.000 créditos por mês. Quando quiseres mais,
+        os planos Premium começam nos 25 €/mês, e apenas o plano Max te dá créditos
+        ilimitados. Todos incluem os mais de 70 agentes de IA e 7 idiomas.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Empezar Gratis
+          Começar Grátis
         </a>
       </div>
     </header>
 
-    <!-- Grid de planes -->
-    <section aria-label="Planes y precios" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+    <!-- Grelha de planos -->
+    <section aria-label="Planos e preços" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       {plans.map((p) => (
         <article class={`relative flex flex-col rounded-xl border bg-card p-6 shadow-sm ${p.highlight ? 'border-accent ring-2 ring-accent shadow-md' : 'border-border'}`}>
           {p.highlight && (
             <span class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground shadow">
-              ⭐ Más Popular
+              ⭐ Mais Popular
             </span>
           )}
           <h2 class="text-base font-semibold text-foreground">{p.name}</h2>
@@ -260,31 +260,31 @@ const btnClass = (variant: string) => {
       ))}
     </section>
 
-    <!-- ¿Qué es un crédito? -->
+    <!-- O que é um crédito? -->
     <section class="mx-auto mt-20 max-w-3xl rounded-xl border border-border bg-card p-8 text-center">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">¿Qué Es un Crédito?</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">O Que É um Crédito?</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Un crédito es la unidad con la que trabajas dentro de AI Chef Pro. Cada acción
-        de un agente (generar una receta, calcular un escandallo, redactar una carta,
-        crear un plan de marketing…) consume créditos según su complejidad: las tareas
-        sencillas gastan pocos y las más elaboradas, algo más.
+        Um crédito é a unidade com que trabalhas dentro do AI Chef Pro. Cada ação de
+        um agente (gerar uma receita, calcular um escandalho, redigir uma carta, criar
+        um plano de marketing…) consome créditos consoante a sua complexidade: as
+        tarefas simples gastam poucos e as mais elaboradas, um pouco mais.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        Los 3.000 créditos gratuitos dan para probar la suite de verdad, no solo para
-        echar un vistazo. Y si tu operación necesita usar la IA sin pensar en el
-        contador, el plan Premium Max te da créditos ilimitados.
+        Os 3.000 créditos gratuitos dão para experimentar a suite a sério, não apenas
+        para dar uma vista de olhos. E se a tua operação precisar de usar a IA sem
+        pensar no contador, o plano Premium Max dá-te créditos ilimitados.
       </p>
     </section>
 
-    <!-- Tabla comparativa -->
+    <!-- Tabela comparativa -->
     <section class="mt-20">
-      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Comparativa de Planes</h2>
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Comparação de Planos</h2>
       <div class="overflow-x-auto rounded-xl border border-border">
         <table class="w-full min-w-[720px] border-collapse text-sm">
           <thead>
             <tr class="bg-muted/50 text-left">
               <th class="p-4 font-semibold text-foreground">Característica</th>
-              <th class="p-4 text-center font-semibold text-foreground">Miembro</th>
+              <th class="p-4 text-center font-semibold text-foreground">Membro</th>
               <th class="p-4 text-center font-semibold text-primary">Premium Pro</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Plus</th>
               <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
@@ -293,15 +293,15 @@ const btnClass = (variant: string) => {
           </thead>
           <tbody class="divide-y divide-border">
             <tr>
-              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Precio</th>
-              <td class="p-4 text-center text-foreground">Gratis</td>
-              <td class="p-4 text-center text-foreground">25 €/mes</td>
-              <td class="p-4 text-center text-foreground">50 €/mes</td>
-              <td class="p-4 text-center text-foreground">95 €/mes</td>
-              <td class="p-4 text-center text-foreground">950 €/año</td>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Preço</th>
+              <td class="p-4 text-center text-foreground">Grátis</td>
+              <td class="p-4 text-center text-foreground">25 €/mês</td>
+              <td class="p-4 text-center text-foreground">50 €/mês</td>
+              <td class="p-4 text-center text-foreground">95 €/mês</td>
+              <td class="p-4 text-center text-foreground">950 €/ano</td>
             </tr>
             <tr>
-              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Créditos / mes</th>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Créditos / mês</th>
               <td class="p-4 text-center text-foreground">3.000</td>
               <td class="p-4 text-center text-foreground">85.000</td>
               <td class="p-4 text-center text-foreground">175.000</td>
@@ -325,29 +325,29 @@ const btnClass = (variant: string) => {
               <td class="p-4 text-center text-foreground">7</td>
             </tr>
             <tr>
-              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Soporte</th>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Apoio</th>
               <td class="p-4 text-center text-foreground">Email</td>
-              <td class="p-4 text-center text-foreground">Prioritario</td>
+              <td class="p-4 text-center text-foreground">Prioritário</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
               <td class="p-4 text-center text-foreground">Premium 24/7</td>
-              <td class="p-4 text-center text-foreground">Premium 24/7 + consultoría</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7 + consultoria</td>
             </tr>
             <tr>
-              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Tarjeta requerida</th>
-              <td class="p-4 text-center text-foreground">No</td>
-              <td class="p-4 text-center text-foreground">Sí</td>
-              <td class="p-4 text-center text-foreground">Sí</td>
-              <td class="p-4 text-center text-foreground">Sí</td>
-              <td class="p-4 text-center text-foreground">Sí</td>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Cartão necessário</th>
+              <td class="p-4 text-center text-foreground">Não</td>
+              <td class="p-4 text-center text-foreground">Sim</td>
+              <td class="p-4 text-center text-foreground">Sim</td>
+              <td class="p-4 text-center text-foreground">Sim</td>
+              <td class="p-4 text-center text-foreground">Sim</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- Para quién es cada plan -->
+    <!-- Para quem é cada plano -->
     <section class="mt-20">
-      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Para Quién Es Cada Plan</h2>
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Para Quem É Cada Plano</h2>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
         {profiles.map((pr) => (
           <div class="flex flex-col rounded-xl border border-border bg-card p-6">
@@ -361,7 +361,7 @@ const btnClass = (variant: string) => {
 
     <!-- FAQ -->
     <section class="mx-auto mt-20 max-w-3xl">
-      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Preguntas Frecuentes</h2>
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Perguntas Frequentes</h2>
       <div class="space-y-3">
         {faqs.map((f) => (
           <details class="group rounded-xl border border-border bg-card p-5">
@@ -377,20 +377,20 @@ const btnClass = (variant: string) => {
 
     <!-- CTA final -->
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Empieza Hoy, Gratis y sin Tarjeta</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Começa Hoje, Grátis e sem Cartão</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Crea tu cuenta en un minuto, recibe 3.000 créditos al mes y prueba los más de
-        70 agentes de IA para chefs y restaurantes. Subes de plan solo cuando lo
-        necesites.
+        Cria a tua conta num minuto, recebe 3.000 créditos por mês e experimenta os
+        mais de 70 agentes de IA para chefs e restaurantes. Sobes de plano apenas
+        quando precisares.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Crear mi Cuenta Gratis
+          Criar a Minha Conta Grátis
         </a>
       </div>
     </section>
 
   </main>
 
-  <Footer lang="es" />
+  <Footer lang="pt" />
 </BaseLayout>

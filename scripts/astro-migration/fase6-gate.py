@@ -217,7 +217,8 @@ def main():
         blog_new = {p for p in new if p == '/blog' or p.startswith('/blog/')}
         new -= blog_new
         # F8: páginas nativas nuevas post-cutover (mantener al día)
-        f8_extra = {'/precios', '/en/pricing'}
+        f8_extra = {'/precios', '/en/pricing', '/fr/tarifs', '/de/preise',
+                    '/it/prezzi', '/pt/precos', '/nl/prijzen'}
         f8_found = new & f8_extra
         new -= f8_found
         check(lost == exp_lost,
