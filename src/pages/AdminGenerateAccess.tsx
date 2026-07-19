@@ -30,6 +30,26 @@ const PRODUCTS: { id: string; label: string }[] = [
   { id: 'guia-restaurante-japones', label: 'Guía Restaurante Japonés (€65)' },
   { id: 'guia-restaurante-nikkei', label: 'Guía Restaurante Nikkei (€65)' },
   { id: 'mega-pack-tareas', label: 'Mega Pack Tareas (€89)' },
+  // Añadidos 2026-07-19 — fix del gap 27→44: estos 17 productos LIVE (mayo–julio)
+  // no estaban en el select y el admin no podía generar magic links para ellos.
+  // Nombres/precios verbatim del hub ProductosDigitales.tsx.
+  { id: 'kit-tareas-sushi-bar', label: 'Kit Tareas Sushi Bar (€14)' },
+  { id: 'kit-tareas-asador', label: 'Kit Tareas Asador (€14)' },
+  { id: 'kit-tareas-marisqueria', label: 'Kit Tareas Marisquería (€14)' },
+  { id: 'kit-tareas-tapas-bar', label: 'Kit Tareas Tapas Bar / Gastrobar (€14)' },
+  { id: 'kit-tareas-food-truck', label: 'Kit Tareas Food Truck (€12)' },
+  { id: 'kit-tareas-panaderia', label: 'Kit Tareas Panadería / Obrador (€12)' },
+  { id: 'guia-panaderia-obrador', label: 'Guía Panadería con Obrador (€65)' },
+  { id: 'plan-negocio-bar-restaurante', label: 'Plan de Negocio Bar-Restaurante (€35)' },
+  { id: 'plan-negocio-tapas-bar', label: 'Plan de Negocio Tapas Bar / Gastrobar (€35)' },
+  { id: 'plan-negocio-cafeteria', label: 'Plan de Negocio Cafetería / Brunch (€29)' },
+  { id: 'plan-negocio-panaderia', label: 'Plan de Negocio Panadería / Obrador (€35)' },
+  { id: 'plan-negocio-food-truck', label: 'Plan de Negocio Food Truck (€29)' },
+  { id: 'plan-negocio-cocteleria-eventos', label: 'Plan de Negocio Coctelería de Eventos (€55)' },
+  { id: 'plan-negocio-parrillero-asador-eventos', label: 'Plan de Negocio Parrillero / Asador Eventos (€45)' },
+  { id: 'plan-negocio-paellero-eventos', label: 'Plan de Negocio Paellero / Paella Eventos (€45)' },
+  { id: 'plan-chef-privado-showcooking-eventos', label: 'Plan Chef Privado / Showcooking a Domicilio (€45)' },
+  { id: 'plan-catering-tematico-eventos', label: 'Plan Catering & Kit Temático Eventos (€45)' },
 ];
 
 export default function AdminGenerateAccess() {

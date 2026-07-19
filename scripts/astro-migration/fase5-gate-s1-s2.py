@@ -16,10 +16,12 @@ anti-regresión (home, landing Fase 4, spoke Fase 2).
 Uso: python3 scripts/astro-migration/fase5-gate-s1-s2.py [BASE_URL]
      BASE_URL default: https://aichef-astro-staging.netlify.app
 """
+import html as html_mod
 import pathlib
 import re
+import subprocess
 import sys
-import urllib.request
+import time
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'https://aichef-astro-staging.netlify.app'
@@ -33,15 +35,21 @@ failures = []
 checked = 0
 
 
-def fetch(path):
-    req = urllib.request.Request(BASE + path, headers={'User-Agent': UA})
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, r.read().decode('utf-8', 'replace')
-    except urllib.error.HTTPError as e:
-        return e.code, e.read().decode('utf-8', 'replace')
-    except Exception as e:  # noqa: BLE001
-        return 0, str(e)
+def fetch(path, attempts=4):
+    """GET vía curl (NO urllib: el Python de esta máquina no tiene los CA
+    certificates de macOS → CERTIFICATE_VERIFY_FAILED intermitente/total,
+    visto 2026-07-19; curl usa el trust store del sistema). Con reintentos."""
+    for i in range(attempts):
+        r = subprocess.run(
+            ['curl', '-s', '-A', UA, '--max-time', '30',
+             '-w', '\n__HTTP__%{http_code}', BASE + path],
+            capture_output=True, text=True)
+        body, sep, code = r.stdout.rpartition('\n__HTTP__')
+        if sep and code.strip().isdigit() and code.strip() != '000':
+            return int(code.strip()), body
+        time.sleep(2 * (i + 1))
+    print(f'  ⚠️  {path}: reintentos agotados (curl rc={r.returncode})')
+    return 0, ''
 
 
 def check(cond, label):
@@ -53,8 +61,10 @@ def check(cond, label):
 
 
 def title_of(html):
+    """Título del HTML crudo, DES-ESCAPADO: Astro emite 'F&B' como 'F&amp;B'
+    (HTML correcto); se compara el TEXTO, no la serialización."""
     m = re.search(r'<title>([^<]*)</title>', html)
-    return m.group(1) if m else None
+    return html_mod.unescape(m.group(1)) if m else None
 
 
 def dash_title(component):
@@ -96,11 +106,15 @@ def main():
     print(f'== Gate S1+S2 contra {BASE} ==')
     for pid, access, library in entries:
         print(f'-- {pid}')
+        time.sleep(0.1)  # pacing: no martillear el CDN
         check_page(access, ACCESS_TITLE, 'access')
         exp = dash_title(dash_map[pid])
         check(exp is not None, f'{pid}: no pude re-derivar title del dashboard')
         if exp:
             check_page(library, exp, 'library')
+
+    print('-- admin (S3)')
+    check_page('/admin/generar-acceso', 'Admin: Generar Acceso Manual | AI Chef Pro', 'admin')
 
     print('-- robots.txt')
     st, robots = fetch('/robots.txt')
@@ -126,8 +140,8 @@ def main():
     check(home.count('hreflang=') == 8, f'home: hreflang {home.count("hreflang=")} != 8')
     st, l4 = fetch('/kit-tareas-asador')
     check(st == 200 and 'hreflang' in l4, '/kit-tareas-asador (landing F4): regresión')
-    st, _ = fetch('/casos-de-uso')
-    check(st == 200, '/casos-de-uso (hub F2): regresión')
+    st, _ = fetch('/usos')
+    check(st == 200, '/usos (hub F2): regresión')
 
     print()
     if failures:

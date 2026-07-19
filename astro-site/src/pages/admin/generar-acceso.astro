@@ -1,0 +1,15 @@
+---
+// Fase 5 S3 — herramienta admin de rescate (Bug #3 de la doctrina): genera
+// magic links manualmente cuando un cliente reporta estar bloqueado post-pago.
+// Island client:only="react" importando AdminGenerateAccess.tsx de la SPA TAL
+// CUAL (la validación del password es server-side en admin-generate-access).
+// Title verbatim del Helmet de AdminGenerateAccess.tsx.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FunctionsOriginPatch from '../../components/FunctionsOriginPatch.astro';
+import AdminGenerateAccess from '../../../../src/pages/AdminGenerateAccess';
+---
+
+<BaseLayout title="Admin: Generar Acceso Manual | AI Chef Pro" noindex>
+  <FunctionsOriginPatch />
+  <AdminGenerateAccess client:only="react" />
+</BaseLayout>
