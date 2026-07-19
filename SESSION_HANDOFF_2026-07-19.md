@@ -1,5 +1,13 @@
 # SESSION HANDOFF — 2026-07-19
 
+## Sesión 3 (mediodía) — ✅ FASE 6 COMPLETA: SEO nativo + 155 URLs rescatadas, gate 2.278 checks verde
+
+**Fases 0-6 ✅ — solo queda Fase 7 (cutover, decisión de John) y las post-cutover.** El censo destapó 126 URLs de free tools/landings/hub jamás asignadas a fase + 5 legales en 404 → portadas 155 URLs como islands (22 head-modules con doble verificación adversarial). Sitemap nativo 696 URLs (= prod − /services×7 + 45 productos), lastmod portado, llms.txt, lang-redirect ACTIVO en staging (se mantiene tras cutover), 3 JSON-LD globales en BaseLayout, 51 OG cards ES (QA visual, 3 regeneradas) LIVE también en prod. Detalle completo en plan maestro §8 (entrada 2026-07-19 Fase 6).
+
+Claves para la próxima sesión: 2 gotchas nuevos en §8 (aliases de paquetes bare cross-root + plugin `cross-root-assets-as-url` para imágenes) · gate reutilizable `scripts/astro-migration/fase6-gate.py` (2.278 checks; correr tras cualquier cambio en astro-site) · **Fase 7 = cutover: quitar FunctionsOriginPatch.astro + bloque noindex del netlify.toml de astro-site + añadir meta robots index en BaseLayout + swap de site + GSC** — NO ejecutar sin OK explícito de John. Ideas nuevas registradas: Fase 8B (blog.aichef.pro → /blog con 301 por post) y 8C (~70 páginas de agentes IA).
+
+---
+
 ## Sesión 2 (mañana) — ✅ FASE 5 COMPLETA: gate 767/767 + happy-path E2E real CERRADO
 
 Las 89 rutas de la zona app post-pago (44 access + 44 library + admin) LIVE en staging como islands `client:only` reutilizando los componentes de la SPA cross-root TAL CUAL. **Gate de aceptación cerrado con magic link real de John**: generado desde el admin de Astro en staging (S3 e2e) → gate vanilla Pro Prompts en staging → library compuesta → 3/3 descargas binarias reales. Detalle completo en plan maestro §8 (entrada 2026-07-19 Fase 5). **Próximo: Fase 6.**
