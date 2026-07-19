@@ -106,6 +106,10 @@ def sanitize_body(html_body, migrated_slugs):
         return 'https://aichef.pro/blog/' + slug
 
     body = INTERNAL_LINK_RE.sub(_link, body)
+    # Variantes redimensionadas de WP (-1024x683 etc.) → original (el export
+    # solo tiene originales; sobran bytes servir la variante).
+    body = re.sub(r'(/blog-assets/[^"\'\s\)]*?)-\d+x\d+\.(jpe?g|png|webp|gif)',
+                  r'\1.\2', body)
     # Líneas con sangría inicial → colapsar (evita bloques de código markdown)
     body = '\n'.join(l.lstrip() if l[:4] == '    ' else l for l in body.split('\n'))
     return body.strip()
@@ -117,6 +121,14 @@ def collect_assets(body_and_featured, dry_run):
     for rel in sorted(set(re.findall(r'/blog-assets/([^"\'\s\)]+)', body_and_featured))):
         src = EXPORT / 'media' / rel
         dst = OUT_ASSETS / rel
+        if not src.exists():
+            # El export guarda nombres DECODIFICADOS (¿… en vez de %C2%BF…);
+            # la URL servida percent-encoded resuelve al fichero decodificado.
+            from urllib.parse import unquote
+            rel_dec = unquote(rel)
+            if (EXPORT / 'media' / rel_dec).exists():
+                src = EXPORT / 'media' / rel_dec
+                dst = OUT_ASSETS / rel_dec
         if dst.exists():
             continue
         if not src.exists():

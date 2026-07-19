@@ -1252,7 +1252,7 @@ wpId: 1404
 
 
 
-<p class="wp-block-paragraph">Profundiza en <a href="https://aichef.pro/blog/optimizacion-de-costes-restaurantes-ia" target="_blank" rel="noopener" data-lasso-id="3203">estrategias de optimización de costos con IA</a>.</p>
+<p class="wp-block-paragraph">Profundiza en <a href="https://aichef.pro/blog" target="_blank" rel="noopener" data-lasso-id="3203">estrategias de optimización de costos con IA</a>.</p>
 
 
 
@@ -1562,7 +1562,7 @@ wpId: 1404
 
 
 
-<p class="wp-block-paragraph">Mantente informado sobre novedades en nuestro <a href="https://aichef.pro/blog/roadmap" target="_blank" rel="noopener" data-lasso-id="3205">roadmap de desarrollo</a>.</p>
+<p class="wp-block-paragraph">Mantente informado sobre novedades en nuestro <a href="https://aichef.pro/blog" target="_blank" rel="noopener" data-lasso-id="3205">roadmap de desarrollo</a>.</p>
 
 
 
@@ -1784,7 +1784,7 @@ wpId: 1404
 
 
 
-<figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="768" height="1024" data-attachment-id="1326" data-permalink="https://blog.aichef.pro/descubre-las-mejores-funciones-de-ai-chef-pro-guia-completa-2025/a-photograph-of-two-young-chefs-engaged-_dlikcmbosn6ewwz1d6phyg_jgpgtepcsyg9upvjcn2vpg/" data-orig-file="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.png" data-orig-size="864,1152" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.png" src="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.png" alt="Las 7 Mejores Apps de IA para Crear Recetas de Cocina en 2025: Comparativa Completa" class="wp-image-1326" /></figure>
+<figure class="wp-block-image size-large"><img data-recalc-dims="1" loading="lazy" decoding="async" width="768" height="1024" data-attachment-id="1326" data-permalink="https://blog.aichef.pro/descubre-las-mejores-funciones-de-ai-chef-pro-guia-completa-2025/a-photograph-of-two-young-chefs-engaged-_dlikcmbosn6ewwz1d6phyg_jgpgtepcsyg9upvjcn2vpg/" data-orig-file="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.jpg" data-orig-size="864,1152" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.jpg" src="/blog-assets/2025/05/a-photograph-of-two-young-chefs-engaged-_dlIkcmBoSn6ewWZ1d6phYg_jGpgTepcSYG9upvjcn2vpg.jpg" alt="Las 7 Mejores Apps de IA para Crear Recetas de Cocina en 2025: Comparativa Completa" class="wp-image-1326" /></figure>
 
 
 
