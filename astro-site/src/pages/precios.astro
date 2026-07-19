@@ -1,0 +1,389 @@
+---
+// Precios (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
+// Pricing verificado contra los schemas live 2026-07-19. Fuente única de verdad.
+// Registro/checkout: app.aichef.pro con UTM por plan.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+
+const lang = 'es';
+const basePath = '/precios';
+const alternates = { es: '/precios', en: '/en/pricing' };
+
+const APP = 'https://app.aichef.pro';
+const ctaUrl = (slug: string) =>
+  `${APP}/?utm_source=web&utm_medium=pricing&utm_content=${slug}`;
+
+const plans = [
+  {
+    slug: 'gratis',
+    name: 'AI Chef Miembro',
+    priceBig: 'Gratis',
+    priceSub: '0 € · para siempre',
+    credits: '3.000 créditos / mes',
+    audience: 'Para ayudantes, cocineros y quien quiere probar sin compromiso.',
+    features: [
+      'Acceso a los más de 70 agentes de IA',
+      '3.000 créditos cada mes',
+      'Recetarios de cocinas del mundo',
+      'Disponible en 7 idiomas',
+      'Sin tarjeta de crédito',
+      'Soporte por email',
+    ],
+    cta: 'Empezar Gratis',
+    variant: 'outline',
+    highlight: false,
+  },
+  {
+    slug: 'premium-pro',
+    name: 'AI Chef Premium Pro',
+    priceBig: '25 €',
+    priceSub: '/ mes',
+    credits: '85.000 créditos / mes',
+    audience: 'Para chefs de cocina, chefs ejecutivos y gerentes de restaurante.',
+    features: [
+      'Todo lo del plan gratuito',
+      '85.000 créditos cada mes',
+      'Herramientas avanzadas de negocio',
+      'Acceso a todas las cocinas del mundo',
+      'Soporte prioritario',
+    ],
+    cta: 'Elegir Premium Pro',
+    variant: 'gold',
+    highlight: true,
+  },
+  {
+    slug: 'premium-plus',
+    name: 'AI Chef Premium Plus',
+    priceBig: '50 €',
+    priceSub: '/ mes',
+    credits: '175.000 créditos / mes',
+    audience: 'Para empresarios gastronómicos y cadenas de restaurantes.',
+    features: [
+      'Todo lo del plan Premium Pro',
+      '175.000 créditos cada mes',
+      'Herramientas avanzadas de negocio',
+      'Acceso a todas las cocinas del mundo',
+      'Soporte premium 24/7',
+    ],
+    cta: 'Elegir Premium Plus',
+    variant: 'primary',
+    highlight: false,
+  },
+  {
+    slug: 'premium-max',
+    name: 'AI Chef Premium Max',
+    priceBig: '95 €',
+    priceSub: '/ mes',
+    credits: 'Créditos ilimitados',
+    audience: 'Para operaciones exigentes que usan la IA a diario, sin límites.',
+    features: [
+      'Todo lo del plan Premium Plus',
+      'Créditos ilimitados cada mes',
+      'El único plan realmente ilimitado',
+      'Acceso anticipado a nuevas funciones',
+      'Soporte premium 24/7',
+    ],
+    cta: 'Elegir Premium Max',
+    variant: 'primary',
+    highlight: false,
+  },
+  {
+    slug: 'premium-max-anual',
+    name: 'AI Chef Premium Max Anual',
+    priceBig: '950 €',
+    priceSub: '/ año',
+    credits: 'Créditos ilimitados',
+    audience: 'La opción ilimitada para todo el año, con dos meses de regalo.',
+    features: [
+      'Todo lo del plan Premium Max',
+      'Créditos ilimitados todo el año',
+      'Ahorras 2 meses (equivale a 79 € / mes)',
+      'Consultoría mensual personalizada',
+      'Soporte premium 24/7',
+    ],
+    cta: 'Elegir Plan Anual',
+    variant: 'primary',
+    highlight: false,
+  },
+];
+
+const profiles = [
+  {
+    title: 'Chef o Cocinero Individual',
+    body: 'Empieza gratis con el plan Miembro y prueba los más de 70 agentes. Cuando la IA se convierta en parte de tu día a día, Premium Pro te da holgura de sobra con 85.000 créditos al mes.',
+    plan: 'Recomendado: Gratis → Premium Pro',
+  },
+  {
+    title: 'Restaurante',
+    body: 'Un solo local con carta, escandallos, marketing y gestión apoyados por IA funciona de maravilla con Premium Pro. Si el volumen crece o sois varias personas usando la suite, Premium Plus multiplica los créditos.',
+    plan: 'Recomendado: Premium Pro → Premium Plus',
+  },
+  {
+    title: 'Grupo o Cadena',
+    body: 'Varios locales, más manos trabajando y uso intensivo piden margen. Premium Plus cubre a la mayoría de grupos y Premium Max elimina el límite de créditos por completo, con opción anual para ahorrar dos meses.',
+    plan: 'Recomendado: Premium Plus → Premium Max',
+  },
+];
+
+const faqs = [
+  {
+    q: '¿Hay un plan gratis?',
+    a: 'Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir.',
+  },
+  {
+    q: '¿Necesito tarjeta de crédito?',
+    a: 'No para el plan gratuito: te registras y empiezas sin introducir ningún dato de pago. Solo necesitas tarjeta cuando decides contratar un plan Premium.',
+  },
+  {
+    q: '¿Puedo cambiar de plan cuando quiera?',
+    a: 'Sí. Puedes subir o bajar de plan en cualquier momento desde tu panel de usuario. El cambio se aplica a tu ciclo de facturación sin trámites complicados.',
+  },
+  {
+    q: '¿Puedo cancelar la suscripción?',
+    a: 'Sí, en cualquier momento y desde tu propio panel, sin penalizaciones ni permanencia. Al cancelar mantienes el acceso hasta el final del periodo que ya has pagado.',
+  },
+  {
+    q: '¿Qué pasa si me quedo sin créditos?',
+    a: 'Tus créditos se renuevan automáticamente cada mes. Si necesitas más antes de la renovación, puedes subir a un plan superior en cualquier momento, o al plan Premium Max, que ofrece créditos ilimitados.',
+  },
+  {
+    q: '¿Emitís factura con IVA?',
+    a: 'Sí. Cada suscripción genera su factura y el IVA se aplica según la normativa de tu país. Puedes añadir tus datos fiscales durante el proceso de pago para que la factura salga correcta.',
+  },
+];
+
+const title = 'Precios de AI Chef Pro: Planes para Chefs y Restaurantes';
+const description =
+  'Descubre los precios de AI Chef Pro. Empieza gratis con 3.000 créditos al mes y sin tarjeta, o elige un plan Premium desde 25 €/mes con acceso a más de 70 agentes de IA para chefs y restaurantes.';
+const keywords =
+  'precios ai chef pro, planes ai chef pro, ai chef pro gratis, créditos ai chef pro, ia para restaurantes precio, software cocina ia precio';
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Precios', item: `${SITE}/precios` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+
+const btnClass = (variant: string) => {
+  const base =
+    'inline-flex w-full items-center justify-center rounded-md h-11 px-5 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2';
+  if (variant === 'gold') return `${base} bg-accent text-accent-foreground hover:bg-accent-dark shadow-md`;
+  if (variant === 'outline') return `${base} border border-border bg-background text-foreground hover:bg-accent/10`;
+  return `${base} bg-primary text-primary-foreground hover:bg-primary/90`;
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  keywords={keywords}
+  lang={lang}
+  basePath={basePath}
+  alternates={alternates}
+  locales={['es', 'en']}
+  ogImage={`${SITE}/og-image.jpg`}
+>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-7xl px-4 py-14">
+
+    <!-- Hero -->
+    <header class="mx-auto mb-14 max-w-3xl text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+        Precios de AI Chef Pro: Planes para Chefs y Restaurantes
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+        Empieza gratis, sin tarjeta y con 3.000 créditos al mes. Cuando quieras más,
+        los planes Premium van desde 25 €/mes, y solo el plan Max te da créditos
+        ilimitados. Todos incluyen los más de 70 agentes de IA y 7 idiomas.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Empezar Gratis
+        </a>
+      </div>
+    </header>
+
+    <!-- Grid de planes -->
+    <section aria-label="Planes y precios" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      {plans.map((p) => (
+        <article class={`relative flex flex-col rounded-xl border bg-card p-6 shadow-sm ${p.highlight ? 'border-accent ring-2 ring-accent shadow-md' : 'border-border'}`}>
+          {p.highlight && (
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground shadow">
+              ⭐ Más Popular
+            </span>
+          )}
+          <h2 class="text-base font-semibold text-foreground">{p.name}</h2>
+          <div class="mt-3 flex items-baseline gap-1">
+            <span class="text-3xl font-bold text-foreground">{p.priceBig}</span>
+            <span class="text-sm text-muted-foreground">{p.priceSub}</span>
+          </div>
+          <p class="mt-2 text-sm font-semibold text-primary">{p.credits}</p>
+          <p class="mt-3 text-sm text-muted-foreground">{p.audience}</p>
+          <ul class="mt-5 flex-1 space-y-2.5">
+            {p.features.map((f) => (
+              <li class="flex items-start gap-2 text-sm text-foreground">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+          <a href={ctaUrl(p.slug)} class={`mt-6 ${btnClass(p.variant)}`}>{p.cta}</a>
+        </article>
+      ))}
+    </section>
+
+    <!-- ¿Qué es un crédito? -->
+    <section class="mx-auto mt-20 max-w-3xl rounded-xl border border-border bg-card p-8 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">¿Qué Es un Crédito?</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Un crédito es la unidad con la que trabajas dentro de AI Chef Pro. Cada acción
+        de un agente (generar una receta, calcular un escandallo, redactar una carta,
+        crear un plan de marketing…) consume créditos según su complejidad: las tareas
+        sencillas gastan pocos y las más elaboradas, algo más.
+      </p>
+      <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
+        Los 3.000 créditos gratuitos dan para probar la suite de verdad, no solo para
+        echar un vistazo. Y si tu operación necesita usar la IA sin pensar en el
+        contador, el plan Premium Max te da créditos ilimitados.
+      </p>
+    </section>
+
+    <!-- Tabla comparativa -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Comparativa de Planes</h2>
+      <div class="overflow-x-auto rounded-xl border border-border">
+        <table class="w-full min-w-[720px] border-collapse text-sm">
+          <thead>
+            <tr class="bg-muted/50 text-left">
+              <th class="p-4 font-semibold text-foreground">Característica</th>
+              <th class="p-4 text-center font-semibold text-foreground">Miembro</th>
+              <th class="p-4 text-center font-semibold text-primary">Premium Pro</th>
+              <th class="p-4 text-center font-semibold text-foreground">Premium Plus</th>
+              <th class="p-4 text-center font-semibold text-foreground">Premium Max</th>
+              <th class="p-4 text-center font-semibold text-foreground">Max Anual</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Precio</th>
+              <td class="p-4 text-center text-foreground">Gratis</td>
+              <td class="p-4 text-center text-foreground">25 €/mes</td>
+              <td class="p-4 text-center text-foreground">50 €/mes</td>
+              <td class="p-4 text-center text-foreground">95 €/mes</td>
+              <td class="p-4 text-center text-foreground">950 €/año</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Créditos / mes</th>
+              <td class="p-4 text-center text-foreground">3.000</td>
+              <td class="p-4 text-center text-foreground">85.000</td>
+              <td class="p-4 text-center text-foreground">175.000</td>
+              <td class="p-4 text-center font-semibold text-accent-dark">Ilimitados</td>
+              <td class="p-4 text-center font-semibold text-accent-dark">Ilimitados</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Agentes de IA</th>
+              <td class="p-4 text-center text-foreground">+70</td>
+              <td class="p-4 text-center text-foreground">+70</td>
+              <td class="p-4 text-center text-foreground">+70</td>
+              <td class="p-4 text-center text-foreground">+70</td>
+              <td class="p-4 text-center text-foreground">+70</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Idiomas</th>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+              <td class="p-4 text-center text-foreground">7</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Soporte</th>
+              <td class="p-4 text-center text-foreground">Email</td>
+              <td class="p-4 text-center text-foreground">Prioritario</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7</td>
+              <td class="p-4 text-center text-foreground">Premium 24/7 + consultoría</td>
+            </tr>
+            <tr>
+              <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Tarjeta requerida</th>
+              <td class="p-4 text-center text-foreground">No</td>
+              <td class="p-4 text-center text-foreground">Sí</td>
+              <td class="p-4 text-center text-foreground">Sí</td>
+              <td class="p-4 text-center text-foreground">Sí</td>
+              <td class="p-4 text-center text-foreground">Sí</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Para quién es cada plan -->
+    <section class="mt-20">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Para Quién Es Cada Plan</h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+        {profiles.map((pr) => (
+          <div class="flex flex-col rounded-xl border border-border bg-card p-6">
+            <h3 class="text-lg font-bold text-foreground">{pr.title}</h3>
+            <p class="mt-3 flex-1 text-sm text-muted-foreground">{pr.body}</p>
+            <p class="mt-4 text-sm font-semibold text-primary">{pr.plan}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto mt-20 max-w-3xl">
+      <h2 class="mb-8 text-center text-2xl font-bold text-foreground md:text-3xl">Preguntas Frecuentes</h2>
+      <div class="space-y-3">
+        {faqs.map((f) => (
+          <details class="group rounded-xl border border-border bg-card p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-semibold text-foreground">
+              {f.q}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 flex-shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <p class="mt-3 text-sm text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Empieza Hoy, Gratis y sin Tarjeta</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        Crea tu cuenta en un minuto, recibe 3.000 créditos al mes y prueba los más de
+        70 agentes de IA para chefs y restaurantes. Subes de plan solo cuando lo
+        necesites.
+      </p>
+      <div class="mt-7">
+        <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
+          Crear mi Cuenta Gratis
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>
