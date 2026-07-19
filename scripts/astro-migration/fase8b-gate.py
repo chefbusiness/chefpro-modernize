@@ -52,9 +52,18 @@ def check(cond, label):
 def curl(url):
     r = subprocess.run(['curl', '-s', '-A', 'Mozilla/5.0', '--max-time', '30',
                         '-w', '\n__HTTP__%{http_code}', url],
-                       capture_output=True, text=True)
-    body, _, code = r.stdout.rpartition('\n__HTTP__')
+                       capture_output=True)
+    out = r.stdout.decode('utf-8', errors='replace')
+    body, _, code = out.rpartition('\n__HTTP__')
     return (int(code) if code.strip().isdigit() else 0), body
+
+
+def curl_status(url):
+    """Solo código HTTP (para binarios/paginación — no descarga el cuerpo entero)."""
+    r = subprocess.run(['curl', '-s', '-o', '/dev/null', '-A', 'Mozilla/5.0',
+                        '--max-time', '30', '-w', '%{http_code}', url],
+                       capture_output=True, text=True)
+    return int(r.stdout.strip()) if r.stdout.strip().isdigit() else 0
 
 
 def parse_frontmatter(txt):
@@ -147,7 +156,7 @@ def main():
         for p in random.sample(all_assets, 10):
             rel = str(p.relative_to(ASSETS))
             from urllib.parse import quote
-            st, _ = curl('%s/blog-assets/%s' % (B, quote(rel)))
+            st = curl_status('%s/blog-assets/%s' % (B, quote(rel)))
             check(st == 200, '/blog-assets/%s: HTTP %d' % (rel, st))
 
         for path in ('/', '/kit-tareas-asador', '/usos/rol/sous-chef', '/en'):
