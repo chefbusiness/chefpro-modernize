@@ -4,7 +4,10 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": { "@/*": ["src/*"] },
+    // '@/*' → src/ de la RAÍZ del repo (igual que el alias Vite de astro.config.mjs):
+    // lo usan los componentes de la SPA importados cross-root por los islands de la
+    // zona app (Fase 5). astro-site NO usa '@/' en código propio (usa relativos).
+    "paths": { "@/*": ["../src/*"] },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   }

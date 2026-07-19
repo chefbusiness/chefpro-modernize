@@ -4,6 +4,17 @@ export default {
 	darkMode: ["class"],
 	content: [
 		"./src/**/*.{astro,html,md,mdx,js,jsx,ts,tsx}",
+		// Fase 5 (zona app islands): los componentes de la SPA importados
+		// cross-root deben entrar en el scan de Tailwind o sus clases se
+		// purgarían del CSS final. Globs ACOTADOS al cierre de imports de la
+		// zona app (censo 2026-07-19, 107 ficheros) — no abrir a ../src/** para
+		// no inflar el CSS con toda la SPA.
+		"../src/pages/*AccessGate.tsx",
+		"../src/pages/*Dashboard.tsx",
+		"../src/pages/ProPromptsLibrary.tsx",
+		"../src/pages/AdminGenerateAccess.tsx",
+		"../src/components/shared/**/*.tsx",
+		"../src/components/library/**/*.tsx",
 	],
 	prefix: "",
 	theme: {

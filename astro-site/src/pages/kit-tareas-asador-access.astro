@@ -1,0 +1,17 @@
+---
+// Fase 5 — access gate de Kit de Tareas Asador (PILOTO S0).
+// El gate de la SPA se monta TAL CUAL como island client:only="react":
+// - client:only porque el flujo usa window/localStorage y el shim de router
+//   lee window.location (no hay pase SSR; la SPA tampoco renderizaba nada
+//   server-side en estas páginas).
+// - title: ACCESS_TITLE verbatim del Helmet de ProductAccessGate.tsx:68
+//   (el shim de react-helmet-async anula el Helmet cliente; el title lo pone
+//   BaseLayout server-side — mejora sobre la SPA, donde dependía de JS).
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { ACCESS_TITLE } from '../lib/zona-app';
+import KitTareasAsadorAccessGate from '../../../src/pages/KitTareasAsadorAccessGate';
+---
+
+<BaseLayout title={ACCESS_TITLE} noindex>
+  <KitTareasAsadorAccessGate client:only="react" />
+</BaseLayout>
