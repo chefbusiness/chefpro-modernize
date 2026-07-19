@@ -76,7 +76,7 @@ export default function ModernHero() {
       <Button 
         variant="ghost"
         size="lg"
-        onClick={() => window.open('https://blog.aichef.pro', '_blank')}
+        onClick={() => window.open('/blog', '_blank')}
         className="btn-gold-outline w-full sm:w-auto min-h-[3rem]"
       >
           {t('hero.see_resources')}

@@ -270,7 +270,7 @@ export default function ModernFooter() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
+                  href={currentLanguage === 'en' ? '/blog' : '/blog'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -280,7 +280,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/tutoriales/"
+                  href="/blog/categoria/tutoriales"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -290,7 +290,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/libreria-de-prompts/"
+                  href="/blog/categoria/libreria-de-prompts"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -300,7 +300,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/recetario-pro-ai/"
+                  href="/blog/categoria/recetas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -310,7 +310,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/glosario-y-lexico-ai/"
+                  href="/blog/categoria/glosario"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -320,7 +320,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario/"
+                  href="/blog/categoria/glosario"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -330,7 +330,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="https://blog.aichef.pro/roadmap/"
+                  href="/blog"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

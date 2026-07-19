@@ -66,7 +66,7 @@ const ConversionNotifications = () => {
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
                 <img 
-                  src="https://blog.aichef.pro/wp-content/uploads/2024/09/Alguien-AI-Chef-Pro.png"
+                  src="/blog-assets/2024/09/Alguien-AI-Chef-Pro.png"
                   alt="AI Chef Pro User"
                   className="w-10 h-10 rounded-full object-cover"
                 />

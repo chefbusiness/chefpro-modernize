@@ -36,7 +36,7 @@ const usosHub = ({ es: '/usos', en: '/en/use-cases', fr: '/fr/cas-d-usage', de: 
 const casosLabel = ({ es: 'Casos de uso', en: 'Use cases', fr: "Cas d'usage", de: 'Anwendungsfälle', it: "Casi d'uso", pt: 'Casos de uso', nl: 'Use cases' } as Record<string, string>)[lang] || 'Casos de uso';
 const creditLabel = ({ es: 'Sistema de créditos', en: 'Credit system', fr: 'Système de crédits', de: 'Kreditsystem', it: 'Sistema di crediti', pt: 'Sistema de créditos', nl: 'Creditsysteem' } as Record<string, string>)[lang] || 'Sistema de créditos';
 
-const blogHref = lang === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro';
+const blogHref = lang === 'en' ? '/blog' : '/blog';
 ---
 
 <footer class="border-t bg-background">
@@ -89,12 +89,12 @@ const blogHref = lang === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.ai
         <h4 class="text-sm font-semibold uppercase tracking-wide mb-4">{t(lang, 'footer.section_recursos')}</h4>
         <ul class="space-y-3 text-sm">
           <li><a href={blogHref} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.blog_main')}</a></li>
-          <li><a href="https://blog.aichef.pro/tutoriales/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.tutoriales')}</a></li>
-          <li><a href="https://blog.aichef.pro/libreria-de-prompts/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.prompts_library')}</a></li>
-          <li><a href="https://blog.aichef.pro/recetario-pro-ai/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.recetario')}</a></li>
-          <li><a href="https://blog.aichef.pro/glosario-y-lexico-ai/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_ia')}</a></li>
-          <li><a href="https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_culinario')}</a></li>
-          <li><a href="https://blog.aichef.pro/roadmap/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.roadmap')}</a></li>
+          <li><a href="/blog/categoria/tutoriales" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.tutoriales')}</a></li>
+          <li><a href="/blog/categoria/libreria-de-prompts" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.prompts_library')}</a></li>
+          <li><a href="/blog/categoria/recetas" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.recetario')}</a></li>
+          <li><a href="/blog/categoria/glosario" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_ia')}</a></li>
+          <li><a href="/blog/categoria/glosario" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.glosario_culinario')}</a></li>
+          <li><a href="/blog" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.roadmap')}</a></li>
         </ul>
       </div>
 

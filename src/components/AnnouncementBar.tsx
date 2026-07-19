@@ -18,7 +18,7 @@ const AnnouncementBar = () => {
   const isSpanish = currentLanguage === 'es';
   const href = isSpanish
     ? '/pro-prompts-ebook'
-    : 'https://blog.aichef.pro/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina/';
+    : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
 
   return (
     <div className="bg-chef-dark text-background text-center text-xs sm:text-sm py-2 px-10 relative">

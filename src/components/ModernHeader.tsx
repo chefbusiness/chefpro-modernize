@@ -645,7 +645,7 @@ export default function ModernHeader() {
                         </a>
                       )}
                       <a
-                        href={currentLanguage === 'en' ? 'https://enblog.aichef.pro/' : 'https://blog.aichef.pro'}
+                        href={currentLanguage === 'en' ? '/blog' : '/blog'}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => setMobileMenuOpen(false)}
