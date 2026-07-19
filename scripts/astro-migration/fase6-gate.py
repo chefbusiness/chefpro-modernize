@@ -185,45 +185,79 @@ def main():
           'alias: canonical no apunta al primario EN')
 
     print('-- B. Sitemap: diff EXACTO vs producción LIVE')
-    _, prod_xml, _ = curl(f'{SITE}/sitemap.xml')
-    prod = {}
-    for blk in re.findall(r'<url>(.*?)</url>', prod_xml, re.S):
-        lm_ = re.search(r'<loc>([^<]+)</loc>', blk)
-        lmod = re.search(r'<lastmod>([^<]+)</lastmod>', blk)
-        if lm_:
-            p = urlparse(lm_.group(1).strip()).path.rstrip('/') or '/'
-            prod[p] = lmod.group(1) if lmod else None
-    _, idx, _ = curl(f'{BASE}/sitemap-index.xml')
-    stg = {}
-    for part in re.findall(r'<loc>([^<]+)</loc>', idx):
-        _, px, _ = curl(BASE + urlparse(part).path)
-        for blk in re.findall(r'<url>(.*?)</url>', px, re.S):
+    POST_CUTOVER = 'aichef.pro' in BASE
+    if POST_CUTOVER:
+        # Tras el cutover BASE == prod: el diff contra sí mismo no informa.
+        # Se verifica contra el snapshot committeado (sitemap-lastmod.json, 658
+        # URLs de la SPA) + las expectativas de Fase 6.
+        prod_xml = ''
+        snap = json.loads(
+            (ROOT / 'astro-site/src/lib/sitemap-lastmod.json').read_text())
+        _, idx, _ = curl(f'{BASE}/sitemap-index.xml')
+        stg = {}
+        for part in re.findall(r'<loc>([^<]+)</loc>', idx):
+            _, px, _ = curl(BASE + urlparse(part).path)
+            for blk in re.findall(r'<url>(.*?)</url>', px, re.S):
+                lm_ = re.search(r'<loc>([^<]+)</loc>', blk)
+                lmod = re.search(r'<lastmod>([^<]+)</lastmod>', blk)
+                if lm_:
+                    p = urlparse(lm_.group(1).strip()).path.rstrip('/') or '/'
+                    stg[p] = lmod.group(1) if lmod else None
+        exp_lost = {'/services'} | {f'/{l}/services' for l in LANGS if l != 'es'}
+        lost = set(snap) - set(stg)
+        new = set(stg) - set(snap)
+        check(lost == exp_lost,
+              f'sitemap post-cutover: perdidas vs snapshot {sorted(lost ^ exp_lost)[:6]}')
+        check(len(new) == 45, f'sitemap post-cutover: nuevas {len(new)} != 45')
+        check(len(stg) == 696, f'sitemap post-cutover: {len(stg)} URLs != 696')
+        for p in ['/productos-digitales', '/kit-tareas-asador', '/', '/usos']:
+            check(p in stg, f'sitemap post-cutover: falta {p}')
+        for p in ['/legales', '/en/ai-food-cost-calculator', '/admin/generar-acceso']:
+            check(p not in stg, f'sitemap post-cutover: {p} NO debería estar')
+        no_lm = [p for p, v in stg.items() if not v]
+        check(not no_lm, f'sitemap post-cutover: {len(no_lm)} URLs sin lastmod')
+        skip_diff = True
+    else:
+        skip_diff = False
+    if not skip_diff:
+        _, prod_xml, _ = curl(f'{SITE}/sitemap.xml')
+        prod = {}
+        for blk in re.findall(r'<url>(.*?)</url>', prod_xml, re.S):
             lm_ = re.search(r'<loc>([^<]+)</loc>', blk)
             lmod = re.search(r'<lastmod>([^<]+)</lastmod>', blk)
             if lm_:
                 p = urlparse(lm_.group(1).strip()).path.rstrip('/') or '/'
-                stg[p] = lmod.group(1) if lmod else None
-    lost = set(prod) - set(stg)
-    new = set(stg) - set(prod)
-    exp_lost = {'/services'} | {f'/{l}/services' for l in LANGS if l != 'es'}
-    check(lost == exp_lost,
-          f'sitemap: perdidas {sorted(lost ^ exp_lost)} (esperado SOLO /services ×7)')
-    check(len(new) == 45, f'sitemap: nuevas {len(new)} != 45 (productos)')
-    check(all(p.count("/") == 1 for p in new),
-          'sitemap: URLs nuevas con path inesperado (no producto raíz)')
-    check('/productos-digitales' in new, 'sitemap: falta /productos-digitales')
-    for p in ['/legales', '/en/ai-food-cost-calculator', '/admin/generar-acceso']:
-        check(p not in stg, f'sitemap: {p} NO debería estar')
-    check(re.search(r'-access</loc>|-library</loc>', str(sorted(stg))) is None,
-          'sitemap: fuga -access/-library')
-    no_lm = [p for p, v in stg.items() if not v]
-    check(not no_lm, f'sitemap: {len(no_lm)} URLs sin lastmod')
-    # @astrojs/sitemap emite W3C datetime completo (2026-03-02T00:00:00.000Z);
-    # prod emite fecha pelada. Se compara la FECHA (semánticamente idéntico,
-    # Google acepta ambos formatos).
-    same = [p for p in prod
-            if p in stg and prod[p] and (stg[p] or '')[:10] != prod[p][:10]]
-    check(not same, f'sitemap: lastmod (fecha) difiere de prod en {len(same)}: {same[:5]}')
+                prod[p] = lmod.group(1) if lmod else None
+        _, idx, _ = curl(f'{BASE}/sitemap-index.xml')
+        stg = {}
+        for part in re.findall(r'<loc>([^<]+)</loc>', idx):
+            _, px, _ = curl(BASE + urlparse(part).path)
+            for blk in re.findall(r'<url>(.*?)</url>', px, re.S):
+                lm_ = re.search(r'<loc>([^<]+)</loc>', blk)
+                lmod = re.search(r'<lastmod>([^<]+)</lastmod>', blk)
+                if lm_:
+                    p = urlparse(lm_.group(1).strip()).path.rstrip('/') or '/'
+                    stg[p] = lmod.group(1) if lmod else None
+        lost = set(prod) - set(stg)
+        new = set(stg) - set(prod)
+        exp_lost = {'/services'} | {f'/{l}/services' for l in LANGS if l != 'es'}
+        check(lost == exp_lost,
+              f'sitemap: perdidas {sorted(lost ^ exp_lost)} (esperado SOLO /services ×7)')
+        check(len(new) == 45, f'sitemap: nuevas {len(new)} != 45 (productos)')
+        check(all(p.count("/") == 1 for p in new),
+              'sitemap: URLs nuevas con path inesperado (no producto raíz)')
+        check('/productos-digitales' in new, 'sitemap: falta /productos-digitales')
+        for p in ['/legales', '/en/ai-food-cost-calculator', '/admin/generar-acceso']:
+            check(p not in stg, f'sitemap: {p} NO debería estar')
+        check(re.search(r'-access</loc>|-library</loc>', str(sorted(stg))) is None,
+              'sitemap: fuga -access/-library')
+        no_lm = [p for p, v in stg.items() if not v]
+        check(not no_lm, f'sitemap: {len(no_lm)} URLs sin lastmod')
+        # @astrojs/sitemap emite W3C datetime completo; prod fecha pelada →
+        # se compara la FECHA (semánticamente idéntico).
+        same = [p for p in prod
+                if p in stg and prod[p] and (stg[p] or '')[:10] != prod[p][:10]]
+        check(not same, f'sitemap: lastmod (fecha) difiere de prod en {len(same)}: {same[:5]}')
 
     print('-- C. llms.txt')
     for f in ['llms.txt', 'llms-full.txt']:
@@ -266,12 +300,16 @@ def main():
     # X-Robots-Tag: noindex (netlify.toml). Netlify fusiona los bloques
     # [[headers]] for="/*" — este check caza una regresión si el merge se rompe.
     # ⚠️ En el gate POST-cutover este check se INVIERTE (debe desaparecer).
+    r = subprocess.run(['curl', '-sI', '-A', UA_BOT, '--max-time', '20', BASE + '/'],
+                       capture_output=True, text=True)
+    hdrs = r.stdout.lower()
+    check('x-frame-options: deny' in hdrs, 'security headers ausentes (merge roto)')
     if 'staging' in BASE:
-        r = subprocess.run(['curl', '-sI', '-A', UA_BOT, '--max-time', '20', BASE + '/'],
-                           capture_output=True, text=True)
-        hdrs = r.stdout.lower()
         check('x-robots-tag: noindex' in hdrs, 'D7: staging sin X-Robots-Tag noindex')
-        check('x-frame-options: deny' in hdrs, 'security headers ausentes (merge roto)')
+    elif 'aichef.pro' in BASE:
+        check('x-robots-tag: index, follow' in hdrs,
+              'post-cutover: X-Robots-Tag index,follow ausente en prod')
+        check('noindex' not in hdrs, 'post-cutover: cabecera noindex en PROD (grave)')
     _, home, _ = curl(BASE + '/')
     check('AI Chef Pro' in (title_of(home) or ''), 'home: title roto')
     check(len(re.findall(r'hreflang="', home)) == 8, 'home: hreflang != 8')
