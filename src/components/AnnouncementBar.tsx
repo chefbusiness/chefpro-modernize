@@ -15,10 +15,16 @@ const AnnouncementBar = () => {
 
   if (!visible) return null;
 
-  const isSpanish = currentLanguage === 'es';
-  const href = isSpanish
-    ? '/pro-prompts-ebook'
-    : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
+  // Gemelo de la barra de astro-site/src/components/Header.astro: MISMO destino
+  // por idioma y mismo copy (announcement_bar.* de los locales). Si tocas uno,
+  // toca el otro. Desde 8B.6 el inglés tiene blog propio al que enviar el clic;
+  // los demás idiomas siguen cayendo en el post ES porque no hay alternativa.
+  const href =
+    currentLanguage === 'es'
+      ? '/pro-prompts-ebook'
+      : currentLanguage === 'en'
+        ? '/en/blog/best-ai-tools-for-chefs-2026'
+        : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
 
   return (
     <div className="bg-chef-dark text-background text-center text-xs sm:text-sm py-2 px-10 relative">

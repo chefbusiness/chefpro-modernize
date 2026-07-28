@@ -116,9 +116,20 @@ const cityItems = [
 const pickItem = (m: LMap) => m[lang] || m.es;
 
 // AnnouncementBar
-const annHref = lang === 'es'
-  ? '/pro-prompts-ebook'
-  : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
+// AnnouncementBar — destino por idioma. El copy vive en announcement_bar.* de
+// src/i18n/locales/<lang>.json, así que destino y texto van SIEMPRE de la mano:
+// si cambias uno, cambia el otro (y el gemelo de la SPA en
+// src/components/AnnouncementBar.tsx, que pinta esta misma barra en la zona app).
+//   · es → el ebook Gastro Pro Prompts (producto propio).
+//   · en → los 17 tools testados; desde 8B.6 hay blog inglés al que mandar el
+//     clic, antes caía en un post en español.
+//   · resto → siguen en el post ES de los 30 hacks: no hay blog en su idioma.
+const annHref =
+  lang === 'es'
+    ? '/pro-prompts-ebook'
+    : lang === 'en'
+      ? '/en/blog/best-ai-tools-for-chefs-2026'
+      : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
 const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 ---
 
