@@ -58,7 +58,14 @@ tarde.
    Comprueba portada, post migrado, guía de ciudad no migrada, archive de categoría,
    feed, medios y catch-all: que cada uno haga **301** y que el destino responda **200**.
    *Antes* del cutover este gate da 0/7 con "sigue sirviendo el WP" — es lo normal.
-5. Sólo con 7/7: dar por cerrada la Fase 8B.6 y planificar el apagado del WordPress inglés.
+5. Search Console, cuando el gate esté en verde:
+   - reenviar `https://aichef.pro/sitemap-index.xml` (se puede por API/MCP);
+   - **borrar a mano** los 4 sitemaps de `enblog.aichef.pro` que siguen dados de alta
+     (`sitemap_index.xml`, `post-sitemap.xml`, `page-sitemap.xml`, `category-sitemap.xml`),
+     igual que quedan por borrar los 5 del subdominio ES. La API sí permite darlos de
+     baja, pero es una operación destructiva desactivada por defecto: son 30 segundos
+     en la UI y evita que Google siga leyendo mapas de un sitio que ya no existe.
+6. Sólo con 7/7: dar por cerrada la Fase 8B.6 y planificar el apagado del WordPress inglés.
 
 ## Antes de apagar/cancelar nada
 
