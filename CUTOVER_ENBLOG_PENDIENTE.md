@@ -48,8 +48,13 @@ tarde.
 3. Esperar propagación + certificado (en 8B.5 fueron minutos).
 4. Batería de verificación:
    ```bash
-   python3 scripts/astro-migration/fase8b6-gate-301-en.py   # 7/7 esperado
+   python3 scripts/astro-migration/fase8b-auditar-301.py --sitio en  # offline, 189/189
+   python3 scripts/astro-migration/fase8b6-gate-301-en.py            # contra la red, 7/7
    ```
+   El primero simula el motor de Netlify contra el censo completo del WordPress
+   inglés (posts, páginas, categorías, tags, infraestructura) y exige que el
+   destino final exista en el `dist`; se puede correr ya, sin DNS. El segundo va
+   contra la red y sólo pasa después del cutover.
    Comprueba portada, post migrado, guía de ciudad no migrada, archive de categoría,
    feed, medios y catch-all: que cada uno haga **301** y que el destino responda **200**.
    *Antes* del cutover este gate da 0/7 con "sigue sirviendo el WP" — es lo normal.

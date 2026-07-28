@@ -37,6 +37,50 @@ CAT_ARCHIVES = {
     'guias-ia-locales': None,  # Tier D → hub
 }
 
+# ─────────────────────────────────────────────────────────────────────────────
+# TODO LO QUE VIVE EN UN SOLO SEGMENTO necesita regla propia. Ese es el radio de
+# acción de la genérica `/:slug → /blog/:slug`: trata como post cualquier cosa
+# que le llegue con un único segmento, así que sin estas entradas las páginas,
+# los sitemaps y hasta el robots.txt del WordPress acaban en /blog/<lo-que-sea>,
+# que no existe → 301 a un 404. Auditado el 2026-07-28 contra el censo completo
+# del export (408 posts + 7 páginas + 8 categorías + 237 tags + infra).
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Páginas del WP → su equivalente en el sitio nuevo ('libreria-de-prompts' tiene
+# su propio bloque más arriba).
+WP_PAGES = {
+    'about': '/sobre-nosotros',
+    'contact': '/contacto',
+    'home': '/',
+    'blog': '/blog',
+    'roadmap': '/blog',                    # no hay página de roadmap en Astro
+    'politica-de-privacidad': '/privacidad',
+}
+
+# Infraestructura del WP. Los nombres de los sitemaps hijos NO se inventan: son
+# los que declara el sitemap_index de la instancia (post-sitemap1..3 en el ES).
+WP_INFRA = {
+    'robots.txt': '/robots.txt',
+    'favicon.ico': '/favicon.ico',
+    'sitemap.xml': '/sitemap-index.xml',
+    'post-sitemap.xml': '/sitemap-index.xml',
+    'post-sitemap1.xml': '/sitemap-index.xml',
+    'post-sitemap2.xml': '/sitemap-index.xml',
+    'post-sitemap3.xml': '/sitemap-index.xml',
+    'page-sitemap.xml': '/sitemap-index.xml',
+    'category-sitemap.xml': '/sitemap-index.xml',
+    'post_tag-sitemap.xml': '/sitemap-index.xml',
+    'author-sitemap.xml': '/sitemap-index.xml',
+    'amp': '/blog',
+    'xmlrpc.php': '/blog',
+    'wp-login.php': '/blog',
+    'wp-admin': '/blog',
+    # Archives de fecha con un solo segmento (/2024/09 ya lo coge el catch-all).
+    '2024': '/blog',
+    '2025': '/blog',
+    '2026': '/blog',
+}
+
 # Idiomas GTranslate históricos (los 402/301 actuales): todo → hub del blog.
 LANGS = ('en fr de it pt nl fa ka uz uk bg el ru ko ja zh-TW ar cs hr lt lv ms '
          'sl tr vi hy mn id iw pl sk ro bs mk kk ky af tl la gd eu').split()
@@ -83,6 +127,19 @@ def main():
         target = '%s/blog/categoria/%s' % (DEST, dest_cat) if dest_cat else '%s/blog' % DEST
         lines.append('%s/%s %s 301!' % (HOST, wp_slug, target))
         lines.append('%s/%s/* %s 301!' % (HOST, wp_slug, target))   # /page/2, etc.
+    # Un slug de página/infra que coincida con el de un post le robaría la
+    # redirección (first match wins). Hoy no ocurre; si ocurre, parar aquí.
+    choque = (set(WP_PAGES) | set(WP_INFRA)) & set(tiers)
+    if choque:
+        raise SystemExit('Slug de página/infra que choca con un post: %s' % sorted(choque))
+
+    lines += ['', '# Páginas del WordPress (un solo segmento → sin regla caerían en la genérica)']
+    for slug, dest in sorted(WP_PAGES.items()):
+        lines.append('%s/%s %s%s 301!' % (HOST, slug, DEST, dest))
+    lines += ['', '# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año']
+    for slug, dest in sorted(WP_INFRA.items()):
+        lines.append('%s/%s %s%s 301!' % (HOST, slug, DEST, dest))
+
     lines += [
         '',
         '# Idiomas GTranslate históricos (MT muerta) → hub',

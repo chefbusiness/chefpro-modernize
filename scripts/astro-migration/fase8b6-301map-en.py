@@ -58,6 +58,29 @@ PAGINAS = [
     ('/politica-de-privacidad', '/en/privacidad'),
 ]
 
+# Infraestructura del WP. Mismo agujero que se auditó en el mapa ES: todo esto
+# vive en UN SOLO SEGMENTO, así que sin regla propia lo recoge la genérica y
+# acaba en /en/blog/<fichero>, que no existe. Los nombres de los sitemaps hijos
+# salen del sitemap_index real de enblog.aichef.pro, no de suposiciones.
+INFRA = [
+    ('/robots.txt', '/robots.txt'),
+    ('/favicon.ico', '/favicon.ico'),
+    ('/sitemap.xml', '/sitemap-index.xml'),
+    ('/post-sitemap.xml', '/sitemap-index.xml'),
+    ('/page-sitemap.xml', '/sitemap-index.xml'),
+    ('/category-sitemap.xml', '/sitemap-index.xml'),
+    ('/post_tag-sitemap.xml', '/sitemap-index.xml'),
+    ('/author-sitemap.xml', '/sitemap-index.xml'),
+    ('/amp', '/en/blog'),
+    ('/xmlrpc.php', '/en/blog'),
+    ('/wp-login.php', '/en/blog'),
+    ('/wp-admin', '/en/blog'),
+    # Archives de fecha de un solo segmento (/2026/02 ya lo coge el catch-all).
+    ('/2024', '/en/blog'),
+    ('/2025', '/en/blog'),
+    ('/2026', '/en/blog'),
+]
+
 # Categorías del WP inglés → destino. Sólo 2 tienen archive equivalente; el
 # resto estaban vacías (count=0) o son las guías de ciudad, que no se migran.
 #
@@ -101,9 +124,10 @@ def construir():
     # Un slug de categoría en la raíz que coincidiera con el de un post le
     # robaría la redirección al post (first match wins). Hoy no pasa; si algún
     # día pasa, mejor parar aquí que descubrirlo en producción.
-    choque = {s for s, _ in CATEGORIAS} & (migrados | set(fuera))
+    unicos = {s for s, _ in CATEGORIAS} | {o.lstrip('/') for o, _ in PAGINAS + INFRA}
+    choque = unicos & (migrados | set(fuera))
     if choque:
-        sys.exit('Slug de categoría que choca con un post: %s' % sorted(choque))
+        sys.exit('Slug de categoría/página/infra que choca con un post: %s' % sorted(choque))
     L = [
         INICIO,
         '# ACTIVAR SOLO EN EL CUTOVER (requiere enblog.aichef.pro como alias del site).',
@@ -122,6 +146,8 @@ def construir():
         '# Páginas del WordPress inglés',
     ]
     L += [r(o, d) for o, d in PAGINAS]
+    L += ['', '# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año']
+    L += [r(o, d) for o, d in INFRA]
     L += ['', '# Archives de categoría WP (URLs con la base /category/)']
     L += [r('/category/%s/*' % slug, d) for slug, d in CATEGORIAS]
     L += [

@@ -51,6 +51,35 @@ https://blog.aichef.pro/recetario-pro-ai/* https://aichef.pro/blog/categoria/rec
 https://blog.aichef.pro/tutoriales https://aichef.pro/blog/categoria/tutoriales 301!
 https://blog.aichef.pro/tutoriales/* https://aichef.pro/blog/categoria/tutoriales 301!
 
+# Páginas del WordPress (un solo segmento → sin regla caerían en la genérica
+# y acabarían en /blog/<slug>, que no existe). Auditado el 2026-07-28.
+https://blog.aichef.pro/about https://aichef.pro/sobre-nosotros 301!
+https://blog.aichef.pro/blog https://aichef.pro/blog 301!
+https://blog.aichef.pro/contact https://aichef.pro/contacto 301!
+https://blog.aichef.pro/home https://aichef.pro/ 301!
+https://blog.aichef.pro/politica-de-privacidad https://aichef.pro/privacidad 301!
+https://blog.aichef.pro/roadmap https://aichef.pro/blog 301!
+
+# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año
+https://blog.aichef.pro/2024 https://aichef.pro/blog 301!
+https://blog.aichef.pro/2025 https://aichef.pro/blog 301!
+https://blog.aichef.pro/2026 https://aichef.pro/blog 301!
+https://blog.aichef.pro/amp https://aichef.pro/blog 301!
+https://blog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
+https://blog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap1.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap2.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post-sitemap3.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
+https://blog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://blog.aichef.pro/wp-admin https://aichef.pro/blog 301!
+https://blog.aichef.pro/wp-login.php https://aichef.pro/blog 301!
+https://blog.aichef.pro/xmlrpc.php https://aichef.pro/blog 301!
+
 # Idiomas GTranslate históricos (MT muerta) → hub
 https://blog.aichef.pro/en/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/fr/* https://aichef.pro/blog 301!
@@ -95,7 +124,7 @@ https://blog.aichef.pro/gd/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/eu/* https://aichef.pro/blog 301!
 
 # Tier D — excepciones explícitas (NO migran a /blog/{slug})
-https://blog.aichef.pro/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo-2 https://aichef.pro/blog/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo 301!
+https://blog.aichef.pro/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo-2 https://aichef.pro/blog/ia-para-crear-menus-semanales 301!
 https://blog.aichef.pro/ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos-2025 https://aichef.pro/blog/ia-alimentaria-revolucion-tecnologica-en-la-industria-de-alimentos 301!
 https://blog.aichef.pro/ia-escandallos-para-chefs-en-barcelona https://aichef.pro/abrir-restaurante 301!
 https://blog.aichef.pro/ia-escandallos-para-chefs-en-bogota https://aichef.pro/abrir-restaurante 301!
@@ -230,6 +259,23 @@ https://enblog.aichef.pro/contact https://aichef.pro/en 301!
 https://enblog.aichef.pro/roadmap https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/libreria-de-prompts https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/politica-de-privacidad https://aichef.pro/en/privacidad 301!
+
+# Infraestructura del WP: sitemaps, robots, basura de bots y archives de año
+https://enblog.aichef.pro/robots.txt https://aichef.pro/robots.txt 301!
+https://enblog.aichef.pro/favicon.ico https://aichef.pro/favicon.ico 301!
+https://enblog.aichef.pro/sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/post-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/page-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/category-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/post_tag-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/author-sitemap.xml https://aichef.pro/sitemap-index.xml 301!
+https://enblog.aichef.pro/amp https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/xmlrpc.php https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/wp-login.php https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/wp-admin https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2024 https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2025 https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/2026 https://aichef.pro/en/blog 301!
 
 # Archives de categoría WP (URLs con la base /category/)
 https://enblog.aichef.pro/category/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
