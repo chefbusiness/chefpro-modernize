@@ -32,6 +32,7 @@ import {
 } from '../../lib/use-cases';
 import { getProductsByIds } from '../../../../src/data/products-catalog';
 import { linkifyHtml } from '../../lib/linkify-use-case';
+import SocialCountLive from '../SocialCountLive.astro';
 
 interface Props { lang?: Locale; uc: UseCase }
 const { lang = 'es', uc } = Astro.props;
@@ -422,7 +423,7 @@ const siblingHeading = type === 'role' ? ui.siblingHeadingRole : type === 'conce
                   ))}
                 </div>
                 <span class="text-sm text-muted-foreground">
-                  <span class="font-bold text-foreground">{socialCount}</span>{' '}
+                  <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
                   {t(lang, 'hero.social_proof_label')}
                 </span>
               </div>

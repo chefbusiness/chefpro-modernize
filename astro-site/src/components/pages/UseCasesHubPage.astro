@@ -25,6 +25,7 @@ import WhatsAppFloatingButton from '../WhatsAppFloatingButton.astro';
 import Icon from '../Icon.astro';
 import { t } from '../../i18n/translations';
 import { SITE, type Locale } from '../../i18n/config';
+import SocialCountLive from '../SocialCountLive.astro';
 import {
   SEGMENTS,
   getUseCasesByType,
@@ -211,7 +212,7 @@ const breadcrumbSchema = {
                   ))}
                 </div>
                 <span class="text-sm text-muted-foreground">
-                  <span class="font-bold text-foreground">{socialCount}</span>{' '}
+                  <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
                   {t(lang, 'hero.social_proof_label')}
                 </span>
               </div>

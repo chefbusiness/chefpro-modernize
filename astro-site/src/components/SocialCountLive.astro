@@ -1,0 +1,42 @@
+---
+// SocialCountLive.astro — mejora progresiva del contador de social proof.
+//
+// PROBLEMA QUE RESUELVE: getDynamicCount() vive en el frontmatter de los 4
+// componentes que pintan el social proof (Hero, UseCasePageContent,
+// UseCasesHubPage, ConsultoriaGastroProHubPage). En Astro el frontmatter corre
+// en BUILD TIME, así que el número se CONGELA hasta el siguiente deploy; en la
+// SPA React se recalculaba en cada render del navegador y por eso subía solo.
+//
+// Este script recalcula el valor en cliente con la MISMA aritmética y corrige
+// el span si el build es de un día anterior. El HTML server-side sigue
+// llevando el número (SEO y sin-JS), así que esto solo suma.
+//
+// Los elementos a corregir se marcan con `data-social-count`.
+---
+
+<script>
+  (() => {
+    const nodes = document.querySelectorAll<HTMLElement>('[data-social-count]');
+    if (!nodes.length) return;
+
+    // VERBATIM de getDynamicCount() en HeroSocialProof.tsx (fuente única de verdad)
+    const BASE_DATE = new Date('2026-02-12');
+    const BASE_COUNT = 48149;
+    const today = new Date();
+    const diffTime = today.getTime() - BASE_DATE.getTime();
+    const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+    let total = BASE_COUNT;
+    for (let i = 1; i <= diffDays; i++) {
+      const seed = (i * 7 + 13) % 21;
+      total += 60 + seed;
+    }
+
+    // Mismo formato que el server: lang === 'en' → en-US, resto → es-ES
+    const lang = document.documentElement.lang || 'es';
+    const formatted = total.toLocaleString(lang === 'en' ? 'en-US' : 'es-ES');
+
+    nodes.forEach((el) => {
+      if (el.textContent !== formatted) el.textContent = formatted;
+    });
+  })();
+</script>

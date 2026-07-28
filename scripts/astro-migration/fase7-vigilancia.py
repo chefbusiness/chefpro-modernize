@@ -79,16 +79,35 @@ check(st == 200 and 'Disallow: /*-access' in robots, 'robots.txt alterado')
 
 # 8B.5 cutover 2026-07-19: el subdominio blog debe 301-ear al path nuevo
 # (TLS estricto: si el cert del subdominio caduca o se rompe, esto avisa).
+#
+# ⚠️ DETERMINISMO POR LOCALE (2026-07-28, VPS): en `/` la edge function
+# lang-redirect se ejecuta ANTES que los redirects, así que un HUMANO con
+# Accept-Language != es (o geo no-ES, p.ej. este VPS en Alemania) recibe
+# 302 → blog.aichef.pro/{lang} y solo DESPUÉS el 301 al destino. La cadena
+# termina bien y Googlebot recibe el 301 directo, pero el check original
+# dependía de dónde corriera. Se fija UA de Googlebot (invariante SEO real)
+# y se añade un check de que la cadena humana TERMINA en el destino.
+GBOT = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 for src, dst in [
     ('https://blog.aichef.pro/', 'https://aichef.pro/blog'),
     ('https://blog.aichef.pro/ia-para-cocinar', 'https://aichef.pro/blog/ia-para-cocinar'),
     ('https://blog.aichef.pro/wp-content/uploads/x.jpg', 'https://aichef.pro/blog-assets/x.jpg'),
 ]:
     r = subprocess.run(['curl', '-s', '-o', '/dev/null', '--max-time', '30',
-                        '-w', '%{http_code} %{redirect_url}', src],
+                        '-A', GBOT, '-w', '%{http_code} %{redirect_url}', src],
                        capture_output=True, text=True)
     out = r.stdout.strip()
-    check(out == f'301 {dst}', f'subdominio {src}: {out!r} != 301 {dst}')
+    check(out == f'301 {dst}', f'subdominio {src} (Googlebot): {out!r} != 301 {dst}')
+
+# La cadena de un humano (con lang-redirect por medio) debe acabar igualmente
+# en el blog nuevo, en ≤3 saltos y sin bucles.
+r = subprocess.run(['curl', '-s', '-o', '/dev/null', '--max-time', '30', '-L',
+                    '--max-redirs', '3', '-A', 'Mozilla/5.0 (Macintosh)',
+                    '-H', 'Accept-Language: de-DE,de;q=0.9',
+                    '-w', '%{http_code} %{url_effective}',
+                    'https://blog.aichef.pro/'], capture_output=True, text=True)
+check(r.stdout.strip() == '200 https://aichef.pro/blog',
+      f'subdominio cadena humana no-ES: {r.stdout.strip()!r} != 200 https://aichef.pro/blog')
 
 for p in ['/en', '/usos/rol/sous-chef', '/abrir-restaurante/madrid',
           '/kit-tareas-asador', '/productos-digitales', '/pro-prompts-library-access',

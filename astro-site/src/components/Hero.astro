@@ -4,6 +4,7 @@
 // el estado estático ya muestra el valor final correcto sin JS.
 import { t, tList } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import SocialCountLive from './SocialCountLive.astro';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -63,7 +64,7 @@ const stats = [
         ))}
       </div>
       <span class="text-sm text-muted-foreground">
-        <span class="font-bold text-foreground">{socialCount}</span>{' '}
+        <span class="font-bold text-foreground" data-social-count>{socialCount}</span><SocialCountLive />{' '}
         {t(lang, 'hero.social_proof_label')}
       </span>
     </div>
