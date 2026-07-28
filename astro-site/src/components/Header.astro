@@ -4,6 +4,7 @@
 // menú móvil = panel deslizante con <script> vanilla mínimo, colapsables = <details>.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import { blogHubHref } from '../lib/blog';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -411,7 +412,7 @@ const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
             </a>
           )}
 
-          <a href={lang === 'en' ? '/blog' : '/blog'} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
+          <a href={blogHubHref(lang)} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 px-3 py-3 text-base font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-muted-foreground"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
             {t(lang, 'nav.blog')}
           </a>

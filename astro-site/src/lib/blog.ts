@@ -138,6 +138,19 @@ export const listPagePath = (n: number, lang: Locale = DEFAULT_LOCALE): string =
 export const homePath = (lang: Locale = DEFAULT_LOCALE): string =>
   lang === DEFAULT_LOCALE ? '/' : `/${lang}`;
 
+/** Idiomas que TIENEN blog propio (los que declaran taxonomía). Hoy: es, en. */
+export const hasBlog = (lang: Locale): boolean =>
+  (BLOG_CATEGORIES_BY_LANG[lang]?.length ?? 0) > 0;
+
+/**
+ * Hub del blog para la navegación global (Header/Footer/Hero), que se pinta en
+ * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /fr/blog, /de/blog… no
+ * existen y serían un 404. Los idiomas sin blog propio caen al ES, que es el
+ * comportamiento que ya tenían antes de 8B.6.
+ */
+export const blogHubHref = (lang: Locale): string =>
+  hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
+
 export type BlogPost = CollectionEntry<'blog'>;
 
 /** Slug público del post (basename del id — la carpeta de idioma no cuenta). */
