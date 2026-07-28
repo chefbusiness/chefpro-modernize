@@ -1,0 +1,21 @@
+---
+// Fase 8B.6 — Ruta de artículo /en/blog/{slug}.
+// El slug del .md conserva VERBATIM el slug de enblog.aichef.pro → 301 1:1
+// desde el subdominio inglés. Mismo layout que el ES: BlogPost ya resuelve
+// idioma, canonical, breadcrumbs y JSON-LD a partir de post.data.lang.
+import { render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+import { getPublishedPosts, postSlug } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('en');
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+  <Content />
+</BlogPost>

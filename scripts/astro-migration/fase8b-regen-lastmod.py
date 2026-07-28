@@ -14,6 +14,11 @@ Es idempotente y no depende del export de WP: sólo lee los .md de la colección
 Misma semántica que fase8b-wp2md.py:266-273 (clave `/blog/<slug>`, valor
 `modDate`, orden alfabético, indent=0).
 
+8B.6: recorre TODOS los idiomas de la colección, no sólo `es`. La clave es la
+URL real de cada post: `/blog/<slug>` en español (sin prefijo) y
+`/<lang>/blog/<slug>` en el resto — el mismo esquema que construye
+`blogBase()` en src/lib/blog.ts y que compara `serialize()` del sitemap.
+
 Uso:
     python3 scripts/astro-migration/fase8b-regen-lastmod.py [--check]
 `--check` no escribe: sale con código 1 si el JSON está desactualizado
@@ -26,20 +31,27 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-CONTENT = REPO / 'astro-site' / 'src' / 'content' / 'blog' / 'es'
+CONTENT = REPO / 'astro-site' / 'src' / 'content' / 'blog'
 DEST = REPO / 'astro-site' / 'src' / 'lib' / 'blog-lastmod.json'
+DEFAULT_LANG = 'es'   # español sin prefijo de idioma (paridad 1:1 con el WP)
+
+
+def url_de(lang, slug):
+    return ('/blog/' if lang == DEFAULT_LANG else '/%s/blog/' % lang) + slug
 
 
 def construir():
     lastmod = {}
     sin_moddate = []
-    for md in sorted(CONTENT.glob('*.md')):
-        txt = md.read_text(encoding='utf-8')
-        m = re.search(r'^modDate: (\d{4}-\d{2}-\d{2})', txt, re.M)
-        if m:
-            lastmod['/blog/' + md.stem] = m.group(1)
-        else:
-            sin_moddate.append(md.stem)
+    for d in sorted(p for p in CONTENT.iterdir() if p.is_dir()):
+        lang = d.name
+        for md in sorted(d.glob('*.md')):
+            txt = md.read_text(encoding='utf-8')
+            m = re.search(r'^modDate: (\d{4}-\d{2}-\d{2})', txt, re.M)
+            if m:
+                lastmod[url_de(lang, md.stem)] = m.group(1)
+            else:
+                sin_moddate.append('%s/%s' % (lang, md.stem))
     return lastmod, sin_moddate
 
 

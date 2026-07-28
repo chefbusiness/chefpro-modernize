@@ -1,9 +1,19 @@
 ---
-// Fase 8B — Layout de artículo del blog (/blog/{slug}).
+// Fase 8B — Layout de artículo del blog (/blog/{slug} en ES, /en/blog/{slug} en EN).
 // Envuelve BaseLayout (que ya emite canonical/hreflang/OG + los 3 JSON-LD
 // globales) y añade: BlogPosting + BreadcrumbList (+ FAQPage si el post trae
 // faq en frontmatter), migas visibles, meta del post, cuerpo prose, CTA y
 // posts relacionados de la misma categoría.
+//
+// 8B.6 — Multi-idioma. Dos cosas que NO se pueden confundir:
+//   · `basePath` que recibe BaseLayout va SIN prefijo de idioma (BaseLayout le
+//     antepone /{lang} al construir canonical/hreflang).
+//   · las URLs de los JSON-LD y de los enlaces visibles van CON prefijo → se
+//     construyen con los helpers de lib/blog (postPath/categoryPath/blogBase).
+// hreflang: los posts EN no son traducción de los ES (contenido distinto, slugs
+// distintos), así que se pasa locales={[lang]} → BaseLayout emite solo el
+// hreflang del propio idioma + x-default apuntando a esa misma URL. Nunca se
+// declara un par ES↔EN que no existe.
 import BaseLayout from './BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -11,9 +21,13 @@ import BlogCTA from '../components/blog/BlogCTA.astro';
 import PostCard from '../components/blog/PostCard.astro';
 import { SITE } from '../i18n/config';
 import {
-  formatDateEs,
+  blogBase,
+  categoryPath,
+  formatDate,
   getCategory,
   getPublishedPosts,
+  homePath,
+  postPath,
   postSlug,
   readingTime,
   type BlogPost,
@@ -25,12 +39,46 @@ interface Props {
 
 const { post } = Astro.props;
 const { title, description, pubDate, modDate, image, imageAlt, faq, category } = post.data;
+const lang = post.data.lang;
+const isEn = lang === 'en';
 const slug = postSlug(post);
-const cat = getCategory(category);
+const cat = getCategory(category, lang);
+/** Ruta SIN prefijo de idioma — la que espera BaseLayout para canonical/hreflang. */
 const canonicalPath = `/blog/${slug}`;
+/** Ruta REAL (con prefijo) — la que va en JSON-LD y enlaces. */
+const urlPath = postPath(slug, lang);
+const homeUrl = lang === 'es' ? SITE : `${SITE}${homePath(lang)}`;
 const minutes = readingTime(post.body ?? '');
 
-const related = (await getPublishedPosts(post.data.lang))
+const T = isEn
+  ? {
+      titleSuffix: 'AI Chef Pro Blog',
+      breadcrumbLabel: 'Breadcrumb',
+      home: 'Home',
+      blog: 'Blog',
+      by: 'By',
+      updated: '· Updated on',
+      readingTime: 'min read',
+      faqHeading: 'Frequently asked questions',
+      related: 'Keep reading',
+      authorBio:
+        'Chef and hospitality consultant: 29 years in high-end kitchens and 15 advising restaurants.',
+    }
+  : {
+      titleSuffix: 'Blog AI Chef Pro',
+      breadcrumbLabel: 'Migas de pan',
+      home: 'Inicio',
+      blog: 'Blog',
+      by: 'Por',
+      updated: '· Actualizado el',
+      readingTime: 'min de lectura',
+      faqHeading: 'Preguntas frecuentes',
+      related: 'Sigue leyendo',
+      authorBio:
+        'Chef y consultor gastronómico: 29 años en alta hostelería y 15 en consultoría de restaurantes.',
+    };
+
+const related = (await getPublishedPosts(lang))
   .filter((p) => p.data.category === category && postSlug(p) !== slug)
   .slice(0, 3);
 
@@ -40,17 +88,16 @@ const schemas: object[] = [
     '@type': 'BlogPosting',
     headline: title,
     description,
-    url: `${SITE}${canonicalPath}`,
+    url: `${SITE}${urlPath}`,
     datePublished: pubDate.toISOString(),
     dateModified: (modDate ?? pubDate).toISOString(),
-    inLanguage: post.data.lang,
+    inLanguage: lang,
     ...(image ? { image: `${SITE}${image}` } : {}),
     author: {
       '@type': 'Person',
       name: 'John Guerrero',
-      url: `${SITE}/blog`,
-      description:
-        'Chef y consultor gastronómico: 29 años en alta hostelería y 15 en consultoría de restaurantes.',
+      url: `${SITE}${blogBase(lang)}`,
+      description: T.authorBio,
     },
     publisher: {
       '@type': 'Organization',
@@ -58,27 +105,27 @@ const schemas: object[] = [
       url: SITE,
       logo: { '@type': 'ImageObject', url: `${SITE}/og-image.jpg` },
     },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${canonicalPath}` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE}${urlPath}` },
   },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog` },
+      { '@type': 'ListItem', position: 1, name: T.home, item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: T.blog, item: `${SITE}${blogBase(lang)}` },
       ...(cat
         ? [{
             '@type': 'ListItem',
             position: 3,
             name: cat.name,
-            item: `${SITE}/blog/categoria/${cat.slug}`,
+            item: `${SITE}${categoryPath(cat.slug, lang)}`,
           }]
         : []),
       {
         '@type': 'ListItem',
         position: cat ? 4 : 3,
         name: title,
-        item: `${SITE}${canonicalPath}`,
+        item: `${SITE}${urlPath}`,
       },
     ],
   },
@@ -97,28 +144,28 @@ const schemas: object[] = [
 ---
 
 <BaseLayout
-  title={`${title} | Blog AI Chef Pro`}
+  title={`${title} | ${T.titleSuffix}`}
   description={description}
-  lang={post.data.lang}
+  lang={lang}
   basePath={canonicalPath}
-  locales={[post.data.lang]}
+  locales={[lang]}
   ogImage={image ? `${SITE}${image}` : undefined}
 >
   <Fragment slot="head">
     {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </Fragment>
 
-  <Header lang={post.data.lang} />
+  <Header lang={lang} />
 
   <main class="container mx-auto max-w-4xl px-4 py-10">
-    <nav aria-label="Migas de pan" class="mb-6 text-sm text-muted-foreground">
-      <a href="/" class="hover:text-primary">Inicio</a>
+    <nav aria-label={T.breadcrumbLabel} class="mb-6 text-sm text-muted-foreground">
+      <a href={homePath(lang)} class="hover:text-primary">{T.home}</a>
       <span class="mx-2">/</span>
-      <a href="/blog" class="hover:text-primary">Blog</a>
+      <a href={blogBase(lang)} class="hover:text-primary">{T.blog}</a>
       {cat && (
         <>
           <span class="mx-2">/</span>
-          <a href={`/blog/categoria/${cat.slug}`} class="hover:text-primary">{cat.name}</a>
+          <a href={categoryPath(cat.slug, lang)} class="hover:text-primary">{cat.name}</a>
         </>
       )}
     </nav>
@@ -127,19 +174,19 @@ const schemas: object[] = [
       <header class="mb-8">
         {cat && (
           <a
-            href={`/blog/categoria/${cat.slug}`}
+            href={categoryPath(cat.slug, lang)}
             class="text-sm font-semibold uppercase tracking-wide text-primary"
           >{cat.name}</a>
         )}
         <h1 class="mt-2 text-3xl font-bold leading-tight text-foreground md:text-4xl">{title}</h1>
         <p class="mt-4 text-lg text-muted-foreground">{description}</p>
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-          <span>Por <strong class="text-foreground">John Guerrero</strong></span>
-          <time datetime={pubDate.toISOString().slice(0, 10)}>{formatDateEs(pubDate)}</time>
+          <span>{T.by} <strong class="text-foreground">John Guerrero</strong></span>
+          <time datetime={pubDate.toISOString().slice(0, 10)}>{formatDate(pubDate, lang)}</time>
           {modDate && modDate.valueOf() !== pubDate.valueOf() && (
-            <span>· Actualizado el {formatDateEs(modDate)}</span>
+            <span>{T.updated} {formatDate(modDate, lang)}</span>
           )}
-          <span>· {minutes} min de lectura</span>
+          <span>· {minutes} {T.readingTime}</span>
         </div>
       </header>
 
@@ -161,7 +208,7 @@ const schemas: object[] = [
 
       {faq.length > 0 && (
         <section class="mt-10">
-          <h2 class="text-2xl font-bold text-foreground">Preguntas frecuentes</h2>
+          <h2 class="text-2xl font-bold text-foreground">{T.faqHeading}</h2>
           <div class="mt-4 divide-y divide-border rounded-xl border border-border">
             {faq.map((f) => (
               <details class="group p-5">
@@ -175,12 +222,12 @@ const schemas: object[] = [
         </section>
       )}
 
-      <BlogCTA utmContent={slug} />
+      <BlogCTA utmContent={slug} lang={lang} />
     </article>
 
     {related.length > 0 && (
       <section class="mt-12 border-t border-border pt-10">
-        <h2 class="mb-6 text-2xl font-bold text-foreground">Sigue leyendo</h2>
+        <h2 class="mb-6 text-2xl font-bold text-foreground">{T.related}</h2>
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {related.map((p) => <PostCard post={p} />)}
         </div>
@@ -188,7 +235,7 @@ const schemas: object[] = [
     )}
   </main>
 
-  <Footer lang={post.data.lang} />
+  <Footer lang={lang} />
 </BaseLayout>
 
 <style is:global>

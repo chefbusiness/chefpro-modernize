@@ -1,6 +1,8 @@
 ---
 // Fase 8B — Tarjeta de post para hub /blog y páginas de categoría.
-import { formatDateEs, getCategory, postSlug, type BlogPost } from '../../lib/blog';
+// 8B.6: multi-idioma. El idioma NO se pasa por prop: sale del propio post
+// (post.data.lang), así una tarjeta nunca puede enlazar al árbol equivocado.
+import { formatDate, getCategory, postPath, postSlug, type BlogPost } from '../../lib/blog';
 
 interface Props {
   post: BlogPost;
@@ -9,12 +11,13 @@ interface Props {
 }
 
 const { post, eager = false } = Astro.props;
+const lang = post.data.lang;
 const slug = postSlug(post);
-const cat = getCategory(post.data.category);
+const cat = getCategory(post.data.category, lang);
 ---
 
 <article class="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
-  <a href={`/blog/${slug}`} class="flex h-full flex-col">
+  <a href={postPath(slug, lang)} class="flex h-full flex-col">
     {post.data.image && (
       <div class="aspect-[16/9] overflow-hidden bg-muted">
         <img
@@ -40,7 +43,7 @@ const cat = getCategory(post.data.category);
         datetime={post.data.pubDate.toISOString().slice(0, 10)}
         class="mt-auto pt-2 text-xs text-muted-foreground"
       >
-        {formatDateEs(post.data.pubDate)}
+        {formatDate(post.data.pubDate, lang)}
       </time>
     </div>
   </a>

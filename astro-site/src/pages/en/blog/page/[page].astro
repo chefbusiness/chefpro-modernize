@@ -1,0 +1,71 @@
+---
+// Fase 8B.6 — Páginas 2+ del listado del blog EN: /en/blog/page/{n}.
+// La página 1 es /en/blog (no se genera /en/blog/page/1 para evitar duplicado).
+// Segmento 'page' por el mismo criterio que 'category': el árbol EN es nuevo,
+// no hereda URLs de WordPress, así que usa la forma nativa inglesa. Ver la
+// DECISIÓN documentada en src/pages/en/blog/category/[category].astro y el
+// mapa ROUTE_SEGMENTS de src/lib/blog.ts.
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Header from '../../../../components/Header.astro';
+import Footer from '../../../../components/Footer.astro';
+import PostCard from '../../../../components/blog/PostCard.astro';
+import { blogBase, getPublishedPosts, listPagePath, POSTS_PER_PAGE } from '../../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('en');
+  const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE);
+  const paths = [];
+  for (let n = 2; n <= totalPages; n++) {
+    paths.push({
+      params: { page: String(n) },
+      props: {
+        posts: posts.slice((n - 1) * POSTS_PER_PAGE, n * POSTS_PER_PAGE),
+        page: n,
+        totalPages,
+      },
+    });
+  }
+  return paths;
+}
+
+const lang = 'en';
+const { posts, page, totalPages } = Astro.props;
+const prevHref = listPagePath(page - 1, lang);
+---
+
+<BaseLayout
+  title={`AI Chef Pro Blog — Page ${page}`}
+  description={`AI for restaurants and hospitality — page ${page} of ${totalPages} of the AI Chef Pro blog.`}
+  lang={lang}
+  basePath={`/blog/page/${page}`}
+  locales={['en']}
+>
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-6xl px-4 py-12">
+    <header class="mb-10 text-center">
+      <h1 class="text-3xl font-bold text-foreground">AI Chef Pro Blog — Page {page}</h1>
+      <p class="mt-2 text-muted-foreground"><a href={blogBase(lang)} class="text-primary hover:underline">← Back to the blog home</a></p>
+    </header>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((p) => <PostCard post={p} />)}
+    </div>
+
+    <nav aria-label="Pagination" class="mt-12 flex items-center justify-center gap-4">
+      <a
+        href={prevHref}
+        class="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary"
+      >← Previous</a>
+      <span class="text-sm text-muted-foreground">Page {page} of {totalPages}</span>
+      {page < totalPages && (
+        <a
+          href={listPagePath(page + 1, lang)}
+          class="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary"
+        >Next →</a>
+      )}
+    </nav>
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

@@ -6,12 +6,12 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import PostCard from '../../components/blog/PostCard.astro';
 import { SITE } from '../../i18n/config';
-import { BLOG_CATEGORIES, getPublishedPosts, POSTS_PER_PAGE } from '../../lib/blog';
+import { getCategories, getPublishedPosts, POSTS_PER_PAGE } from '../../lib/blog';
 
 const posts = await getPublishedPosts('es');
 const pagePosts = posts.slice(0, POSTS_PER_PAGE);
 const totalPages = Math.max(1, Math.ceil(posts.length / POSTS_PER_PAGE));
-const catsWithPosts = BLOG_CATEGORIES.filter((c) =>
+const catsWithPosts = getCategories('es').filter((c) =>
   posts.some((p) => p.data.category === c.slug)
 );
 

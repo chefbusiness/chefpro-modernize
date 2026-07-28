@@ -6,11 +6,13 @@ import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import PostCard from '../../../components/blog/PostCard.astro';
 import { SITE } from '../../../i18n/config';
-import { BLOG_CATEGORIES, getPublishedPosts } from '../../../lib/blog';
+import { getCategories, getPublishedPosts } from '../../../lib/blog';
 
 export async function getStaticPaths() {
+  // getCategories('es') + posts ES: la archive /blog/categoria/ai-chef-pro NUNCA
+  // ve los posts EN de la categoría homónima (viven en /en/blog/category/…).
   const posts = await getPublishedPosts('es');
-  return BLOG_CATEGORIES.filter((c) => posts.some((p) => p.data.category === c.slug))
+  return getCategories('es').filter((c) => posts.some((p) => p.data.category === c.slug))
     .map((c) => ({
       params: { categoria: c.slug },
       props: { cat: c, posts: posts.filter((p) => p.data.category === c.slug) },
