@@ -25,3 +25,23 @@ dist-ssr
 
 # Astro (astro-site/)
 .astro
+
+# ── Añadido 2026-07-28 (homologación Mac ↔ VPS) ──
+# Config local por máquina: permisos y claves de Claude Code.
+# Se custodia cifrada vía secrets-push, NUNCA en el repo.
+.claude/settings.local.json
+
+# Artefactos de sesión y bytecode
+.playwright-mcp/
+__pycache__/
+*.pyc
+
+# Auditoría visual de abril-2026: 16 MB de capturas ya consumidas
+audit-en-pilot/
+
+# Mockups sueltos de iteración de diseño (decisión ya tomada)
+/logos-*.png
+
+# Dossier con datos personales de cliente e IDs de Stripe (RGPD).
+# Si hace falta en otra máquina, va por el canal de secretos, no por git.
+Stripe Disputa/
