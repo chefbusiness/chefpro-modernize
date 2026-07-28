@@ -395,7 +395,7 @@ wpId: 1948
 
 
 
-<p class="wp-block-paragraph">El <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">Gastro Lexicum</a> de AI Chef Pro actúa como un chef mentor con acceso a un amplio conocimiento sobre terminología gastronómica, técnicas, procesos y conceptos científicos. Esta herramienta es especialmente valiosa para:</p>
+<p class="wp-block-paragraph">El <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">Gastro Lexicum</a> de AI Chef Pro actúa como un chef mentor con acceso a un amplio conocimiento sobre terminología gastronómica, técnicas, procesos y conceptos científicos. Esta herramienta es especialmente valiosa para:</p>
 
 
 
@@ -419,7 +419,7 @@ wpId: 1948
 
 
 
-<p class="wp-block-paragraph">Un aspecto frecuentemente olvidado de la experiencia gastronómica es el estado emocional del equipo de cocina. El estrés y el agotamiento se transmiten inevitablemente al plato y al servicio. <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">Mental Coach AI</a> proporciona apoyo psicológico específico para profesionales de la hostelería, ayudando a gestionar el estrés, mejorar el equilibrio trabajo-vida y mantener la creatividad en entornos de alta presión.</p>
+<p class="wp-block-paragraph">Un aspecto frecuentemente olvidado de la experiencia gastronómica es el estado emocional del equipo de cocina. El estrés y el agotamiento se transmiten inevitablemente al plato y al servicio. <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">Mental Coach AI</a> proporciona apoyo psicológico específico para profesionales de la hostelería, ayudando a gestionar el estrés, mejorar el equilibrio trabajo-vida y mantener la creatividad en entornos de alta presión.</p>
 
 
 

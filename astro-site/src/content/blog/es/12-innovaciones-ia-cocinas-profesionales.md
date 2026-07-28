@@ -224,7 +224,7 @@ wpId: 1923
 
 
 
-<p class="wp-block-paragraph">La integración con sistemas de <a href="https://aichef.pro/blog/tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias" target="_blank">seguridad alimentaria basados en IA</a> crea un ecosistema completo de control de calidad que funciona 24/7 sin fatiga ni sesgos humanos.</p>
+<p class="wp-block-paragraph">La integración con sistemas de <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">seguridad alimentaria basados en IA</a> crea un ecosistema completo de control de calidad que funciona 24/7 sin fatiga ni sesgos humanos.</p>
 
 
 
@@ -799,7 +799,7 @@ wpId: 1923
 
 
 <ul class="wp-block-list">
-<li><a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 Herramientas de IA Imprescindibles para los Chefs de Hoy</a></li>
+<li><a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 Herramientas de IA Imprescindibles para los Chefs de Hoy</a></li>
 
 
 

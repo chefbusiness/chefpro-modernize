@@ -840,7 +840,7 @@ wpId: 1871
 
 
 
-<p class="wp-block-paragraph">Para explorar todas estas herramientas en detalle, consulta nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción completa a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Para explorar todas estas herramientas en detalle, consulta nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción completa a AI Chef Pro</a>.</p>
 
 
 
@@ -1000,7 +1000,7 @@ wpId: 1871
 
 
 
-<p class="wp-block-paragraph">Implementar <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">Gastro Lexicum</a> para que todo el equipo utilice terminología consistente. Crear fichas de cata estandarizadas para platos clave (6-12 platos signature). Entrenar equipo en evaluación sistemática (2 sesiones semanales x 4 semanas).</p>
+<p class="wp-block-paragraph">Implementar <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">Gastro Lexicum</a> para que todo el equipo utilice terminología consistente. Crear fichas de cata estandarizadas para platos clave (6-12 platos signature). Entrenar equipo en evaluación sistemática (2 sesiones semanales x 4 semanas).</p>
 
 
 

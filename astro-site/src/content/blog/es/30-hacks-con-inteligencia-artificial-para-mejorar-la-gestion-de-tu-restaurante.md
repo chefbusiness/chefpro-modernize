@@ -22,7 +22,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph">Desde la reducción de mermas hasta la generación de contenido para redes sociales, pasando por la gestión de alérgenos y el bienestar de tu brigada: aquí está la hoja de ruta completa para transformar tu restaurante con IA en 2026. Si todavía no conoces la plataforma, puedes empezar por nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a> para entender el ecosistema completo antes de aplicar estos hacks.</p>
+<p class="wp-block-paragraph">Desde la reducción de mermas hasta la generación de contenido para redes sociales, pasando por la gestión de alérgenos y el bienestar de tu brigada: aquí está la hoja de ruta completa para transformar tu restaurante con IA en 2026. Si todavía no conoces la plataforma, puedes empezar por nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a> para entender el ecosistema completo antes de aplicar estos hacks.</p>
 
 
 
@@ -265,7 +265,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Introduce en Catering AI+ los parámetros del evento: número de comensales, tipología (boda, corporativo, cóctel, cena de gala), restricciones dietéticas conocidas, presupuesto por persona y espacio disponible. La herramienta genera el menú completo con cantidades por ración, lista de compras con pesos brutos, flujo de trabajo para la brigada y timing de producción y servicio. Para profundizar, consulta nuestra <a href="https://aichef.pro/blog/libreria-de-prompts-para-catering-ai" target="_blank">biblioteca de prompts para Catering AI+</a> y el artículo sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank">cómo revolucionar tu servicio de catering con AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph"><strong>Cómo implementarlo:</strong> Introduce en Catering AI+ los parámetros del evento: número de comensales, tipología (boda, corporativo, cóctel, cena de gala), restricciones dietéticas conocidas, presupuesto por persona y espacio disponible. La herramienta genera el menú completo con cantidades por ración, lista de compras con pesos brutos, flujo de trabajo para la brigada y timing de producción y servicio. Para profundizar, consulta nuestra <a href="https://aichef.pro/blog/libreria-de-prompts-para-catering-ai" target="_blank">biblioteca de prompts para Catering AI+</a> y el artículo sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank">cómo revolucionar tu servicio de catering con AI Chef Pro</a>.</p>
 
 
 

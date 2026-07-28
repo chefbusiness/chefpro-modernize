@@ -76,7 +76,7 @@ wpId: 1845
 
 
 
-<p class="wp-block-paragraph">Para profundizar en cómo la IA está transformando cada aspecto de la gestión gastronómica, recomendamos consultar nuestra <a href="https://aichef.pro/blog/inteligencia-artificial-para-restaurantes-con-ai-chef-pro-2" target="_blank" rel="noopener">guía de inteligencia artificial para restaurantes</a>.</p>
+<p class="wp-block-paragraph">Para profundizar en cómo la IA está transformando cada aspecto de la gestión gastronómica, recomendamos consultar nuestra <a href="https://aichef.pro/blog/mejores-ia-restaurantes-2026" target="_blank" rel="noopener">guía de inteligencia artificial para restaurantes</a>.</p>
 
 
 
@@ -616,7 +616,7 @@ wpId: 1845
 
 
 
-<p class="wp-block-paragraph">Descubre más sobre cómo optimizar tu negocio de catering en nuestra guía <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Descubre más sobre cómo optimizar tu negocio de catering en nuestra guía <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
@@ -788,7 +788,7 @@ wpId: 1845
 
 
 
-<p class="wp-block-paragraph">Para más recursos sobre cómo la IA está transformando el sector, explora nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y descubre todas las posibilidades que esta tecnología pone a tu disposición.</p>
+<p class="wp-block-paragraph">Para más recursos sobre cómo la IA está transformando el sector, explora nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y descubre todas las posibilidades que esta tecnología pone a tu disposición.</p>
 
 
 

@@ -222,7 +222,7 @@ wpId: 1500
 
 
 
-<p class="wp-block-paragraph"><strong>Enlace de acceso</strong>: <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" data-lasso-id="3947">Introducción a AI Chef Pro</a> <strong>Configuración inicial</strong>: <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="3948">Cómo configurar tu cuenta paso a paso</a></p>
+<p class="wp-block-paragraph"><strong>Enlace de acceso</strong>: <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="3947">Introducción a AI Chef Pro</a> <strong>Configuración inicial</strong>: <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="3948">Cómo configurar tu cuenta paso a paso</a></p>
 
 
 
@@ -1814,7 +1814,7 @@ wpId: 1500
 
 
 
-<p class="wp-block-paragraph">Para implementación práctica, consulta <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" data-lasso-id="3957">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para implementación práctica, consulta <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" data-lasso-id="3957">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 

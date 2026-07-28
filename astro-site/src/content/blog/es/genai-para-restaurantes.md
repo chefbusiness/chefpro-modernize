@@ -785,7 +785,7 @@ wpId: 1619
 
 
 
-<p class="wp-block-paragraph">La evolución hacia <a href="https://aichef.pro/blog/inteligencia-artificial-para-restaurantes-con-ai-chef-pro-2" data-lasso-id="5558">restaurantes impulsados por inteligencia artificial</a> es imparable. Los pioneros de hoy serán los líderes del mañana.</p>
+<p class="wp-block-paragraph">La evolución hacia <a href="https://aichef.pro/blog/mejores-ia-restaurantes-2026" data-lasso-id="5558">restaurantes impulsados por inteligencia artificial</a> es imparable. Los pioneros de hoy serán los líderes del mañana.</p>
 
 
 

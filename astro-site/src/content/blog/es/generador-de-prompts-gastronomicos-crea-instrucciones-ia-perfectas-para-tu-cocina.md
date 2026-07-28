@@ -72,7 +72,7 @@ wpId: 1425
 
 
 
-<p class="wp-block-paragraph">Según datos recopilados de más de 500 restaurantes que utilizan <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" rel="noopener" data-lasso-id="3496">herramientas de IA para chefs</a>, los prompts mal estructurados generan:</p>
+<p class="wp-block-paragraph">Según datos recopilados de más de 500 restaurantes que utilizan <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" rel="noopener" data-lasso-id="3496">herramientas de IA para chefs</a>, los prompts mal estructurados generan:</p>
 
 
 
@@ -299,7 +299,7 @@ wpId: 1425
 
 
 
-<p class="wp-block-paragraph">Esta técnica mejora la precisión del output en un 67% comparado con prompts lineales tradicionales, según pruebas realizadas con <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener" data-lasso-id="3499">AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Esta técnica mejora la precisión del output en un 67% comparado con prompts lineales tradicionales, según pruebas realizadas con <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener" data-lasso-id="3499">AI Chef Pro</a>.</p>
 
 
 
@@ -870,7 +870,7 @@ Parámetros económicos:
 
 
 
-<p class="wp-block-paragraph">Para configurar correctamente estas sincronizaciones, consulta nuestra guía detallada sobre <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener" data-lasso-id="3506">introducción a AI Chef Pro</a>, también disponible en <a href="https://aichef.pro/blog/ai-chef-pro-version-en-ingles" target="_blank" rel="noopener" data-lasso-id="3507">versión en inglés</a> para equipos internacionales.</p>
+<p class="wp-block-paragraph">Para configurar correctamente estas sincronizaciones, consulta nuestra guía detallada sobre <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener" data-lasso-id="3506">introducción a AI Chef Pro</a>, también disponible en <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener" data-lasso-id="3507">versión en inglés</a> para equipos internacionales.</p>
 
 
 

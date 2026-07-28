@@ -271,7 +271,7 @@ wpId: 2021
 
 
 
-<p class="wp-block-paragraph">Profundiza en este tema consultando nuestra guía completa sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">alérgenos en gastronomía profesional</a> y las aplicaciones de <a href="https://aichef.pro/blog/tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias" target="_blank">tecnología de seguridad alimentaria con IA</a>.</p>
+<p class="wp-block-paragraph">Profundiza en este tema consultando nuestra guía completa sobre <a href="https://aichef.pro/blog/alergenos" target="_blank">alérgenos en gastronomía profesional</a> y las aplicaciones de <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">tecnología de seguridad alimentaria con IA</a>.</p>
 
 
 

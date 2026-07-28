@@ -1129,7 +1129,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">Para aprender más sobre cómo AI Chef Pro revoluciona el sector de catering, consulta nuestro artículo especializado sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para aprender más sobre cómo AI Chef Pro revoluciona el sector de catering, consulta nuestro artículo especializado sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
@@ -1543,7 +1543,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph">Para comprender mejor el impacto estratégico de estas herramientas, consulta nuestros artículos sobre <a href="https://aichef.pro/blog" target="_blank" rel="noopener">optimización de costes en restaurantes con IA</a> y <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
+<p class="wp-block-paragraph">Para comprender mejor el impacto estratégico de estas herramientas, consulta nuestros artículos sobre <a href="https://aichef.pro/blog" target="_blank" rel="noopener">optimización de costes en restaurantes con IA</a> y <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
 
 
 

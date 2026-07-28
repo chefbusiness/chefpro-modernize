@@ -29,7 +29,9 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 ### Gotchas del blog que cuestan dinero
 
+- **Al BORRAR posts hay que limpiar `astro-site/.astro/` antes de construir.** La content collection de Astro 5 se cachea ahí y **sigue emitiendo el HTML de posts cuyo `.md` ya no existe**: tras consolidar 24 posts con 301, el build seguía generando 1.198 páginas y metiéndolos en el sitemap. Con `rm -rf astro-site/.astro astro-site/dist` bajó a 1.173, que es lo correcto. Cazado el 2026-07-28.
 - Tras CADA refresh de posts: `python3 scripts/astro-migration/fase8b-regen-lastmod.py` (el ensamblador actualiza el `modDate` del .md pero **no** toca `blog-lastmod.json`, del que vive el sitemap).
+- Reglas nuevas en `astro-site/public/_redirects`: Netlify resuelve por **primera coincidencia**. Cualquier regla del subdominio `blog.aichef.pro` debe insertarse ANTES de la genérica `/:slug → /blog/:slug` (línea marcada con `# Genérica`), o no se ejecuta nunca.
 - Los commits de slices deben incluir `astro-site/public/blog-assets/`: los productores generan imágenes nuevas y un `git add` quirúrgico de `content/` las deja fuera → 404 en producción.
 - Nombres de agentes/apps: catálogo canónico en `src/lib/linkify-use-case.tsx` y `src/data/apps.ts` (los recetarios del mundo se llaman `Mexicana`, `Peruana`…, **no** "Cocina Mexicana AI": ese nombre es un adorno editorial heredado de WordPress y no existe como producto).
 - Enlaces internos del blog: la convención establecida es **absoluta** (`https://aichef.pro/blog/<slug>`), 2.278 usos frente a 28 relativos.

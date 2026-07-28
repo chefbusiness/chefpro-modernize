@@ -308,7 +308,7 @@ wpId: 1753
 
 
 
-<p class="wp-block-paragraph">Para una visión completa de todas las herramientas disponibles, te recomendamos leer nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y la <a href="https://aichef.pro/blog/ai-chef-pro-intro" target="_blank" rel="noopener">guía de inicio completa</a>.</p>
+<p class="wp-block-paragraph">Para una visión completa de todas las herramientas disponibles, te recomendamos leer nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y la <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">guía de inicio completa</a>.</p>
 
 
 

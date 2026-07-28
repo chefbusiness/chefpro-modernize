@@ -4,14 +4,14 @@
 Fase 8B — Gate de aceptación del port del blog.
 
 LOCAL (siempre):
-  1. 346 .md en content/blog/es con frontmatter completo (title/description/
+  1. 322 .md en content/blog/es con frontmatter completo (title/description/
      category/pubDate/wpId) y categoría válida.
   2. Cero referencias a wp-content / i0.wp.com / blog.aichef.pro en hrefs/srcs.
   3. Toda referencia /blog-assets/... existe en disco (imágenes Y audio).
 
 REMOTO (--base URL, p.ej. el branch deploy):
   4. Hub /blog 200 con tarjetas + categorías + rel alternate RSS.
-  5. Paginación completa 200 (páginas 2..N según 346/24).
+  5. Paginación completa 200 (páginas 2..N según EXPECTED_POSTS/24).
   6. Muestra de 20 posts: 200 + <title> coincide con frontmatter + canonical
      a aichef.pro/blog/{slug} + BlogPosting + hreflang es/x-default.
   7. Categorías (6) 200 · RSS 200 con items · muestra de 10 assets 200.
@@ -35,7 +35,9 @@ CONTENT = REPO / 'astro-site' / 'src' / 'content' / 'blog' / 'es'
 ASSETS = REPO / 'astro-site' / 'public' / 'blog-assets'
 VALID_CATS = {'ia-en-gastronomia', 'ai-chef-pro', 'libreria-de-prompts',
               'tutoriales', 'glosario', 'recetas'}
-EXPECTED_POSTS = 346
+# 346 al portar desde WordPress (Fase 8B) − 24 consolidados con 301 hacia su
+# pilar refrescado el 2026-07-28 (fase8c-consolidar-301.py) = 322.
+EXPECTED_POSTS = 322
 PER_PAGE = 24
 
 checks = fails = 0

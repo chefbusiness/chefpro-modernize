@@ -96,7 +96,7 @@ wpId: 1770
 
 
 
-<p class="wp-block-paragraph">Esta diferencia fundamental es la razón por la cual <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">AI Chef Pro</a> fue diseñado específicamente para profesionales de la cocina, no como una adaptación de herramientas genéricas, sino como una plataforma construida desde cero para las necesidades reales del sector gastronómico.</p>
+<p class="wp-block-paragraph">Esta diferencia fundamental es la razón por la cual <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">AI Chef Pro</a> fue diseñado específicamente para profesionales de la cocina, no como una adaptación de herramientas genéricas, sino como una plataforma construida desde cero para las necesidades reales del sector gastronómico.</p>
 
 
 
@@ -241,7 +241,7 @@ wpId: 1770
 
 
 
-<p class="wp-block-paragraph">Si gestionas servicios de catering, la herramienta <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">Catering AI+</a> está específicamente diseñada para este tipo de operaciones, integrando planificación de menús, cálculo de cantidades y gestión logística.</p>
+<p class="wp-block-paragraph">Si gestionas servicios de catering, la herramienta <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">Catering AI+</a> está específicamente diseñada para este tipo de operaciones, integrando planificación de menús, cálculo de cantidades y gestión logística.</p>
 
 
 
@@ -343,7 +343,7 @@ wpId: 1770
 
 
 
-<p class="wp-block-paragraph">Para comprender la amplitud de herramientas disponibles, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para chefs</a>.</p>
+<p class="wp-block-paragraph">Para comprender la amplitud de herramientas disponibles, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para chefs</a>.</p>
 
 
 
@@ -928,7 +928,7 @@ wpId: 1770
 
 
 
-<p class="wp-block-paragraph">La IA potencia estas capacidades humanas, no las reemplaza. Para mantener el equilibrio y bienestar en tu equipo, explora nuestro <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">Mental Coach</a>, una herramienta diseñada para el bienestar de profesionales culinarios.</p>
+<p class="wp-block-paragraph">La IA potencia estas capacidades humanas, no las reemplaza. Para mantener el equilibrio y bienestar en tu equipo, explora nuestro <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">Mental Coach</a>, una herramienta diseñada para el bienestar de profesionales culinarios.</p>
 
 
 

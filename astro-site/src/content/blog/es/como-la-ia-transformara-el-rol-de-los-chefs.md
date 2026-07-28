@@ -14,7 +14,7 @@ wpId: 2238
 
 
 
-<p class="wp-block-paragraph">Según datos recientes del sector, más del 65% de los restaurantes que han implementado soluciones de IA reportan mejoras significativas en creatividad culinaria, eficiencia operativa y satisfacción del cliente. Esta cifra refleja una tendencia imparable que está redefiniendo las competencias necesarias para triunfar en la cocina profesional. Para comprender mejor este fenómeno, te invitamos a leer nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a>, donde exploramos los fundamentos de esta transformación.</p>
+<p class="wp-block-paragraph">Según datos recientes del sector, más del 65% de los restaurantes que han implementado soluciones de IA reportan mejoras significativas en creatividad culinaria, eficiencia operativa y satisfacción del cliente. Esta cifra refleja una tendencia imparable que está redefiniendo las competencias necesarias para triunfar en la cocina profesional. Para comprender mejor este fenómeno, te invitamos a leer nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a>, donde exploramos los fundamentos de esta transformación.</p>
 
 
 
@@ -507,7 +507,7 @@ wpId: 2238
 
 
 
-<p class="wp-block-paragraph"><strong>Servicios de catering:</strong> Empresas de eventos utilizan <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">herramientas de IA para revolucionar su servicio de catering</a>, logrando presupuestos más precisos y experiencias más personalizadas.</p>
+<p class="wp-block-paragraph"><strong>Servicios de catering:</strong> Empresas de eventos utilizan <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">herramientas de IA para revolucionar su servicio de catering</a>, logrando presupuestos más precisos y experiencias más personalizadas.</p>
 
 
 

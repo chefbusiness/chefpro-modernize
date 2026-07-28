@@ -541,7 +541,7 @@ wpId: 2331
 
 
 
-<p class="wp-block-paragraph">Descubre cómo implementar estas tecnologías en tu negocio consultando nuestros recursos sobre <a href="https://aichef.pro/blog" target="_blank" rel="noopener">optimización de costes con IA</a> y <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para chefs</a>.</p>
+<p class="wp-block-paragraph">Descubre cómo implementar estas tecnologías en tu negocio consultando nuestros recursos sobre <a href="https://aichef.pro/blog" target="_blank" rel="noopener">optimización de costes con IA</a> y <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" rel="noopener">10 herramientas de IA imprescindibles para chefs</a>.</p>
 
 
 

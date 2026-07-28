@@ -568,7 +568,7 @@ wpId: 1394
 
 
 
-<p class="wp-block-paragraph">Para explorar más casos de éxito y estrategias de implementación, consulta nuestro análisis sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener" data-lasso-id="3169">cómo revolucionar servicios de catering con IA</a>.</p>
+<p class="wp-block-paragraph">Para explorar más casos de éxito y estrategias de implementación, consulta nuestro análisis sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener" data-lasso-id="3169">cómo revolucionar servicios de catering con IA</a>.</p>
 
 
 

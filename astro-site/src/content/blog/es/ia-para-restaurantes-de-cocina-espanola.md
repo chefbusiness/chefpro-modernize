@@ -495,7 +495,7 @@ wpId: 2346
 
 
 
-<p class="wp-block-paragraph">Para una visión completa de la plataforma, consulta nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Para una visión completa de la plataforma, consulta nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a>.</p>
 
 
 
@@ -616,7 +616,7 @@ Esta interpretación de la paella valenciana rinde homenaje a los agricultores d
 
 
 
-<p class="wp-block-paragraph">Para una visión completa de las posibilidades, consulta nuestro artículo sobre las <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>. A continuación, destacamos las más relevantes para cocina española:</p>
+<p class="wp-block-paragraph">Para una visión completa de las posibilidades, consulta nuestro artículo sobre las <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>. A continuación, destacamos las más relevantes para cocina española:</p>
 
 
 

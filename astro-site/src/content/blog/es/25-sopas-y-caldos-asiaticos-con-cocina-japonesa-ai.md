@@ -656,7 +656,7 @@ wpId: 2147
 
 
 
-<p class="wp-block-paragraph">Esta elaboración es ideal para entender la filosofía japonesa del <em>kaiseki</em> y la <a href="https://aichef.pro/blog/la-ia-en-la-alta-cocina-aplicaciones-con-ai-chef-pro" target="_blank">aplicación de IA en la alta cocina</a>.</p>
+<p class="wp-block-paragraph">Esta elaboración es ideal para entender la filosofía japonesa del <em>kaiseki</em> y la <a href="https://aichef.pro/blog/ia-para-restaurantes-de-estrella-michelin" target="_blank">aplicación de IA en la alta cocina</a>.</p>
 
 
 

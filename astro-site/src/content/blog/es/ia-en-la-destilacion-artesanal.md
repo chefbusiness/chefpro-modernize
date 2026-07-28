@@ -590,7 +590,7 @@ wpId: 2059
 
 
 
-<p class="wp-block-paragraph">Para conocer otras herramientas de IA aplicables al sector gastronómico, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
+<p class="wp-block-paragraph">Para conocer otras herramientas de IA aplicables al sector gastronómico, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
 
 
 

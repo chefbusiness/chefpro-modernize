@@ -24,7 +24,7 @@ wpId: 2337
 
 
 
-<p class="wp-block-paragraph">Si estás comenzando tu viaje con la IA en la cocina profesional, te recomendamos consultar primero nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a> para comprender las bases de esta transformación tecnológica.</p>
+<p class="wp-block-paragraph">Si estás comenzando tu viaje con la IA en la cocina profesional, te recomendamos consultar primero nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a> para comprender las bases de esta transformación tecnológica.</p>
 
 
 
@@ -844,7 +844,7 @@ wpId: 2337
 
 
 
-<p class="wp-block-paragraph">Con las herramientas adecuadas, como las que ofrece <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">AI Chef Pro</a>, y un enfoque sistemático en la medición, tu restaurante puede maximizar el retorno de su inversión en IA y posicionarse a la vanguardia de la industria gastronómica.</p>
+<p class="wp-block-paragraph">Con las herramientas adecuadas, como las que ofrece <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">AI Chef Pro</a>, y un enfoque sistemático en la medición, tu restaurante puede maximizar el retorno de su inversión en IA y posicionarse a la vanguardia de la industria gastronómica.</p>
 
 
 

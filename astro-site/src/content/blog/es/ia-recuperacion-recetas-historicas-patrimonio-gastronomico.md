@@ -929,7 +929,7 @@ wpId: 1901
 
 
 
-<p class="wp-block-paragraph">Te recomendamos comenzar con un enfoque gradual: identifica una tradición culinaria local o regional relevante para tu concepto, utiliza <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">AI Chef Pro</a> para explorar recetas relacionadas, adapta una o dos preparaciones para probar respuesta del mercado, y documenta el proceso para crear narrativas atractivas que acompañen los platos.</p>
+<p class="wp-block-paragraph">Te recomendamos comenzar con un enfoque gradual: identifica una tradición culinaria local o regional relevante para tu concepto, utiliza <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">AI Chef Pro</a> para explorar recetas relacionadas, adapta una o dos preparaciones para probar respuesta del mercado, y documenta el proceso para crear narrativas atractivas que acompañen los platos.</p>
 
 
 

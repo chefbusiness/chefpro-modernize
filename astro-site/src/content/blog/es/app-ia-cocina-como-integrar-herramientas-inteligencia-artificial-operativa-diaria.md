@@ -879,7 +879,7 @@ wpId: 1571
 
 
 
-<p class="wp-block-paragraph">Para conocer las últimas innovaciones y herramientas disponibles, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" rel="noopener" data-lasso-id="5318">10 herramientas de IA imprescindibles para chefs</a>.</p>
+<p class="wp-block-paragraph">Para conocer las últimas innovaciones y herramientas disponibles, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" rel="noopener" data-lasso-id="5318">10 herramientas de IA imprescindibles para chefs</a>.</p>
 
 
 
@@ -1414,7 +1414,7 @@ wpId: 1571
 
 
 <ul class="wp-block-list">
-<li><a data-lasso-id="5323" href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">Introducción completa a AI Chef Pro</a></li>
+<li><a data-lasso-id="5323" href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">Introducción completa a AI Chef Pro</a></li>
 
 
 

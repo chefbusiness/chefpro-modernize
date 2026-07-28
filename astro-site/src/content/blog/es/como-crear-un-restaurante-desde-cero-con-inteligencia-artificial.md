@@ -596,7 +596,7 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 
 
-<p class="wp-block-paragraph">Descubre la suite completa en nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y aprende a <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">configurar tu cuenta paso a paso</a>.</p>
+<p class="wp-block-paragraph">Descubre la suite completa en nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y aprende a <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">configurar tu cuenta paso a paso</a>.</p>
 
 
 

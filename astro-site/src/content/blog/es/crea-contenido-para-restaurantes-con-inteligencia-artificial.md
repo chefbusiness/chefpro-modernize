@@ -937,7 +937,7 @@ wpId: 1056
 
 
 <ol class="wp-block-list">
-<li><a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" data-lasso-id="1251">Regístrate en AI Chef Pro</a></li>
+<li><a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="1251">Regístrate en AI Chef Pro</a></li>
 
 
 

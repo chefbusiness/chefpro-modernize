@@ -487,7 +487,7 @@ wpId: 2001
 
 
 
-<p class="wp-block-paragraph">Nuestra plataforma <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">AI Chef Pro</a> incluye herramientas específicamente diseñadas para profesionales de la gastronomía y la fermentación:</p>
+<p class="wp-block-paragraph">Nuestra plataforma <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">AI Chef Pro</a> incluye herramientas específicamente diseñadas para profesionales de la gastronomía y la fermentación:</p>
 
 
 
@@ -861,7 +861,7 @@ wpId: 2001
 
 
 
-<p class="wp-block-paragraph">Te invitamos a explorar las posibilidades que la inteligencia artificial puede ofrecer a tu operación cervecera. Ya sea que comiences con herramientas básicas de asistencia o planees una implementación completa con sensores y modelos predictivos, el momento de dar el primer paso es ahora. Para una introducción completa a las herramientas disponibles, visita nuestra <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">guía de herramientas de IA imprescindibles para profesionales de la gastronomía</a>.</p>
+<p class="wp-block-paragraph">Te invitamos a explorar las posibilidades que la inteligencia artificial puede ofrecer a tu operación cervecera. Ya sea que comiences con herramientas básicas de asistencia o planees una implementación completa con sensores y modelos predictivos, el momento de dar el primer paso es ahora. Para una introducción completa a las herramientas disponibles, visita nuestra <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">guía de herramientas de IA imprescindibles para profesionales de la gastronomía</a>.</p>
 
 
 

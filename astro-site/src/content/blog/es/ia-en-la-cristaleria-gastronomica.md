@@ -24,7 +24,7 @@ wpId: 2129
 
 
 
-<p class="wp-block-paragraph">En este artículo especializado, exploraremos cómo la <strong>inteligencia artificial está revolucionando la selección y optimización de cristalería</strong> en establecimientos gastronómicos, desde bares de cocktails hasta restaurantes con estrellas Michelin. Descubrirás herramientas prácticas, datos científicos y metodologías que podrás implementar inmediatamente para elevar la experiencia sensorial de tus comensales. Si deseas profundizar en cómo la IA está transformando diversos aspectos de la industria, te recomendamos nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">En este artículo especializado, exploraremos cómo la <strong>inteligencia artificial está revolucionando la selección y optimización de cristalería</strong> en establecimientos gastronómicos, desde bares de cocktails hasta restaurantes con estrellas Michelin. Descubrirás herramientas prácticas, datos científicos y metodologías que podrás implementar inmediatamente para elevar la experiencia sensorial de tus comensales. Si deseas profundizar en cómo la IA está transformando diversos aspectos de la industria, te recomendamos nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a>.</p>
 
 
 
@@ -199,7 +199,7 @@ wpId: 2129
 
 
 
-<p class="wp-block-paragraph">En establecimientos de <a href="https://aichef.pro/blog/la-ia-en-la-alta-cocina-aplicaciones-con-ai-chef-pro" target="_blank">alta cocina</a>, la cristalería es un elemento diferenciador crucial. Los sistemas de IA pueden:</p>
+<p class="wp-block-paragraph">En establecimientos de <a href="https://aichef.pro/blog/ia-para-restaurantes-de-estrella-michelin" target="_blank">alta cocina</a>, la cristalería es un elemento diferenciador crucial. Los sistemas de IA pueden:</p>
 
 
 
@@ -574,7 +574,7 @@ wpId: 2129
 
 
 
-<p class="wp-block-paragraph">Para una gestión óptima de eventos, nuestra herramienta <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank">Catering AI+</a> puede ayudarte a planificar todos los aspectos, incluyendo las necesidades de cristalería.</p>
+<p class="wp-block-paragraph">Para una gestión óptima de eventos, nuestra herramienta <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank">Catering AI+</a> puede ayudarte a planificar todos los aspectos, incluyendo las necesidades de cristalería.</p>
 
 
 
@@ -642,7 +642,7 @@ wpId: 2129
 
 
 
-<p class="wp-block-paragraph">Este enfoque integral es fundamental para crear las <a href="https://aichef.pro/blog/ia-en-artes-culinarias-personalizando-tu-experiencia-gastronomica" target="_blank">experiencias gastronómicas personalizadas</a> que los comensales modernos demandan.</p>
+<p class="wp-block-paragraph">Este enfoque integral es fundamental para crear las <a href="https://aichef.pro/blog/personalizacion-de-experiencias-gastronomicas-con-inteligencia-artificial" target="_blank">experiencias gastronómicas personalizadas</a> que los comensales modernos demandan.</p>
 
 
 

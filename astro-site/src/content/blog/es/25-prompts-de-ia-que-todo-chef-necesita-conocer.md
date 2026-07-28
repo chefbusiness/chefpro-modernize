@@ -330,7 +330,7 @@ Identifica: cuellos de botella que ralentizan la salida de platos, duplicidades 
 
 
 
-<p class="wp-block-paragraph">Para profundizar en estrategias de catering, visita nuestro artículo sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para profundizar en estrategias de catering, visita nuestro artículo sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
@@ -620,7 +620,7 @@ Antes de responder, confirma si necesitas información adicional para proporcion
 
 
 
-<p class="wp-block-paragraph">Para seguir aprendiendo sobre inteligencia artificial aplicada a gastronomía, te recomendamos explorar nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y descubrir cómo esta suite de herramientas puede transformar tu cocina profesional.</p>
+<p class="wp-block-paragraph">Para seguir aprendiendo sobre inteligencia artificial aplicada a gastronomía, te recomendamos explorar nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a> y descubrir cómo esta suite de herramientas puede transformar tu cocina profesional.</p>
 
 
 

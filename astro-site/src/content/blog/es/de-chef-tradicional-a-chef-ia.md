@@ -60,7 +60,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">El chef Marcos Delgado, del restaurante estrella Michelin «Raíces», comenta: «Inicialmente era escéptico sobre integrar IA en mi cocina. Pensaba que podría comprometer la autenticidad. Sin embargo, después de seis meses utilizando <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" data-lasso-id="5359">AI Chef Pro</a>, he descubierto que la tecnología potencia mi creatividad en lugar de limitarla. He desarrollado 23 nuevos platos este año, comparado con los 8 del año anterior».</p>
+<p class="wp-block-paragraph">El chef Marcos Delgado, del restaurante estrella Michelin «Raíces», comenta: «Inicialmente era escéptico sobre integrar IA en mi cocina. Pensaba que podría comprometer la autenticidad. Sin embargo, después de seis meses utilizando <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="5359">AI Chef Pro</a>, he descubierto que la tecnología potencia mi creatividad en lugar de limitarla. He desarrollado 23 nuevos platos este año, comparado con los 8 del año anterior».</p>
 
 
 
@@ -156,7 +156,7 @@ wpId: 1582
 
 
 
-<p class="wp-block-paragraph">La estrategia más efectiva para profesionales consiste en utilizar una plataforma principal (como <a href="https://aichef.pro/blog/desbloqueando-las-funciones-de-ai-chef-pro-para-alcanzar-el-dominio-culinario" data-lasso-id="5361">AI Chef Pro</a>) complementada con herramientas específicas según las necesidades particulares del establecimiento.</p>
+<p class="wp-block-paragraph">La estrategia más efectiva para profesionales consiste en utilizar una plataforma principal (como <a href="https://aichef.pro/blog/ai-chef-pro-advanced-funciones-ocultas-que-solo-usan-los-top-chefs" data-lasso-id="5361">AI Chef Pro</a>) complementada con herramientas específicas según las necesidades particulares del establecimiento.</p>
 
 
 

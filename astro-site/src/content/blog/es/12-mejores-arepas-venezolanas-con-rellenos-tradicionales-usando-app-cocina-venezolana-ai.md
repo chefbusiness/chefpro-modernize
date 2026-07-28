@@ -991,7 +991,7 @@ wpId: 2525
 
 
 
-<p class="wp-block-paragraph">Te invitamos a explorar todo el potencial de la <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">suite AI Chef Pro</a> y descubrir cómo la tecnología puede potenciar tu creatividad culinaria sin límites.</p>
+<p class="wp-block-paragraph">Te invitamos a explorar todo el potencial de la <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">suite AI Chef Pro</a> y descubrir cómo la tecnología puede potenciar tu creatividad culinaria sin límites.</p>
 
 
 

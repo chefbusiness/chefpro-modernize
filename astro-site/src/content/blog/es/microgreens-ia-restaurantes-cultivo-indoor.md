@@ -24,7 +24,7 @@ wpId: 2160
 
 
 
-<p class="wp-block-paragraph">Si estás explorando cómo la tecnología puede potenciar tu cocina profesional, te recomendamos comenzar con nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a>, donde encontrarás el punto de partida perfecto para integrar la inteligencia artificial en tu operativa diaria.</p>
+<p class="wp-block-paragraph">Si estás explorando cómo la tecnología puede potenciar tu cocina profesional, te recomendamos comenzar con nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a>, donde encontrarás el punto de partida perfecto para integrar la inteligencia artificial en tu operativa diaria.</p>
 
 
 
@@ -838,7 +838,7 @@ wpId: 2160
 
 
 
-<p class="wp-block-paragraph">En AI Chef Pro, entendemos que la tecnología debe estar al servicio de la creatividad culinaria. Por eso, nuestras herramientas de inteligencia artificial complementan perfectamente cualquier estrategia de producción propia de ingredientes. Desde la planificación de menús con <a href="https://aichef.pro/blog/desbloquea-las-funciones-de-ai-chef-pro-para-una-planificacion-de-comidas-sin-esfuerzo" target="_blank">funciones de planificación de comidas</a> hasta el desarrollo de recetas innovadoras con microgreens, estamos aquí para potenciar tu cocina.</p>
+<p class="wp-block-paragraph">En AI Chef Pro, entendemos que la tecnología debe estar al servicio de la creatividad culinaria. Por eso, nuestras herramientas de inteligencia artificial complementan perfectamente cualquier estrategia de producción propia de ingredientes. Desde la planificación de menús con <a href="https://aichef.pro/blog/ia-para-crear-menus-semanales" target="_blank">funciones de planificación de comidas</a> hasta el desarrollo de recetas innovadoras con microgreens, estamos aquí para potenciar tu cocina.</p>
 
 
 
@@ -872,7 +872,7 @@ wpId: 2160
 
 
 
-<li><a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a></li>
+<li><a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a></li>
 
 
 

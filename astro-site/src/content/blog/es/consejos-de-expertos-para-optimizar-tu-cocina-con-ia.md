@@ -18,7 +18,7 @@ wpId: 2034
 
 
 
-<p class="wp-block-paragraph">Si estás buscando llevar tu cocina al siguiente nivel tecnológico, esta guía te proporcionará las herramientas y el conocimiento necesarios para conseguirlo. Para una visión general de las tecnologías disponibles, te recomendamos consultar nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Si estás buscando llevar tu cocina al siguiente nivel tecnológico, esta guía te proporcionará las herramientas y el conocimiento necesarios para conseguirlo. Para una visión general de las tecnologías disponibles, te recomendamos consultar nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a>.</p>
 
 
 

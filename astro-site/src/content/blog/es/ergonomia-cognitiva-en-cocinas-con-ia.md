@@ -526,7 +526,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">Para una visión completa de todas las herramientas disponibles, consulta nuestra guía sobre <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
+<p class="wp-block-paragraph">Para una visión completa de todas las herramientas disponibles, consulta nuestra guía sobre <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 herramientas de IA imprescindibles para los chefs de hoy</a>.</p>
 
 
 
@@ -994,7 +994,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">Para una introducción completa a todas las posibilidades de la plataforma, consulta nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a> y comienza tu viaje hacia una cocina cognitivamente ergonómica.</p>
+<p class="wp-block-paragraph">Para una introducción completa a todas las posibilidades de la plataforma, consulta nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a> y comienza tu viaje hacia una cocina cognitivamente ergonómica.</p>
 
 
 

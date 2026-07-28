@@ -151,7 +151,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">La <strong>gestión de alérgenos con IA</strong> puede ayudarte a cumplir con todas estas obligaciones de manera sistemática y documentada, reduciendo significativamente el riesgo de sanciones. Para profundizar en cómo la tecnología mejora la seguridad alimentaria, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/tecnologia-de-seguridad-alimentaria-con-ia-transformando-practicas-culinarias" target="_blank">tecnología de seguridad alimentaria con IA</a>.</p>
+<p class="wp-block-paragraph">La <strong>gestión de alérgenos con IA</strong> puede ayudarte a cumplir con todas estas obligaciones de manera sistemática y documentada, reduciendo significativamente el riesgo de sanciones. Para profundizar en cómo la tecnología mejora la seguridad alimentaria, consulta nuestro artículo sobre <a href="https://aichef.pro/blog/como-la-ia-esta-mejorando-la-seguridad-alimentaria-en-restaurantes" target="_blank">tecnología de seguridad alimentaria con IA</a>.</p>
 
 
 
@@ -830,7 +830,7 @@ wpId: 1965
 
 
 
-<p class="wp-block-paragraph">No, la interfaz de AI Chef Pro está diseñada para profesionales de la hostelería sin formación técnica específica. El sistema utiliza lenguaje culinario familiar y flujos de trabajo intuitivos. Además, ofrecemos tutoriales, documentación y soporte para facilitar la adopción. Consulta nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a> para comenzar.</p>
+<p class="wp-block-paragraph">No, la interfaz de AI Chef Pro está diseñada para profesionales de la hostelería sin formación técnica específica. El sistema utiliza lenguaje culinario familiar y flujos de trabajo intuitivos. Además, ofrecemos tutoriales, documentación y soporte para facilitar la adopción. Consulta nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a> para comenzar.</p>
 
 
 

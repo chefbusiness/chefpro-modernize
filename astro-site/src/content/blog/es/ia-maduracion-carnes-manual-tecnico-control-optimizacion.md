@@ -494,7 +494,7 @@ wpId: 1986
 
 
 
-<p class="wp-block-paragraph">Para más información sobre cómo optimizar operaciones de catering con tecnología, visita nuestro artículo sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para más información sobre cómo optimizar operaciones de catering con tecnología, visita nuestro artículo sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
@@ -502,7 +502,7 @@ wpId: 1986
 
 
 
-<p class="wp-block-paragraph">La suite de herramientas de <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">AI Chef Pro</a> ofrece funcionalidades complementarias que potencian la gestión de carnes maduradas en el contexto de una operación gastronómica integral.</p>
+<p class="wp-block-paragraph">La suite de herramientas de <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">AI Chef Pro</a> ofrece funcionalidades complementarias que potencian la gestión de carnes maduradas en el contexto de una operación gastronómica integral.</p>
 
 
 

@@ -22,7 +22,7 @@ wpId: 2666
 
 
 
-<p class="wp-block-paragraph">Si estás listo para convertirte en un experto en cocina tailandesa sin años de ensayo y error, esta guía completa te proporcionará todo lo necesario para comenzar tu viaje culinario. Para una comprensión más amplia sobre cómo la IA está transformando la gastronomía profesional, te recomendamos leer nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Si estás listo para convertirte en un experto en cocina tailandesa sin años de ensayo y error, esta guía completa te proporcionará todo lo necesario para comenzar tu viaje culinario. Para una comprensión más amplia sobre cómo la IA está transformando la gastronomía profesional, te recomendamos leer nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a>.</p>
 
 
 
@@ -850,7 +850,7 @@ wpId: 2666
 
 
 
-<li><a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank">10 herramientas de IA imprescindibles para chefs</a> &#8211; Guía completa del ecosistema digital gastronómico</li>
+<li><a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank">10 herramientas de IA imprescindibles para chefs</a> &#8211; Guía completa del ecosistema digital gastronómico</li>
 
 
 

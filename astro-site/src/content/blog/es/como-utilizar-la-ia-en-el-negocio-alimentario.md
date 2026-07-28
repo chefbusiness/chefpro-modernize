@@ -287,7 +287,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Para entender mejor cómo revolucionar tu servicio de eventos, lee nuestro artículo sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para entender mejor cómo revolucionar tu servicio de eventos, lee nuestro artículo sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
@@ -403,7 +403,7 @@ wpId: 2113
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 30px; margin: 40px 0; border-radius: 10px; text-align: center;">
 <h3 style="color: #FFD700; margin-top: 0; font-size: 24px;">📚 Descubre las 10 Herramientas de IA Imprescindibles para Chefs</h3>
 <p style="color: #FFFFFF; font-size: 16px; margin-bottom: 20px;">Hemos creado una guía completa con las herramientas más efectivas para transformar tu cocina. Desde generadores de recetas hasta sistemas de control de costes.</p>
-<a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" target="_blank" style="display: inline-block; background-color: #FFD700; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px;">Leer Guía Completa</a>
+<a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" target="_blank" style="display: inline-block; background-color: #FFD700; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 18px;">Leer Guía Completa</a>
 </div>
 
 
@@ -881,7 +881,7 @@ wpId: 2113
 
 
 
-<p class="wp-block-paragraph">Para una visión más amplia de las posibilidades, consulta nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank">introducción a AI Chef Pro</a> o explora nuestro <a href="https://aichef.pro/blog" target="_blank">roadmap de desarrollo</a> para conocer las próximas innovaciones que estamos preparando.</p>
+<p class="wp-block-paragraph">Para una visión más amplia de las posibilidades, consulta nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank">introducción a AI Chef Pro</a> o explora nuestro <a href="https://aichef.pro/blog" target="_blank">roadmap de desarrollo</a> para conocer las próximas innovaciones que estamos preparando.</p>
 
 
 

@@ -384,7 +384,7 @@ wpId: 2007
 
 
 
-<p class="wp-block-paragraph">Para explorar cómo <a href="https://aichef.pro/blog/la-ia-en-la-alta-cocina-aplicaciones-con-ai-chef-pro" target="_blank" rel="noopener">la IA está transformando la alta cocina</a>, los sistemas de fermentación controlada representan uno de los campos más prometedores.</p>
+<p class="wp-block-paragraph">Para explorar cómo <a href="https://aichef.pro/blog/ia-para-restaurantes-de-estrella-michelin" target="_blank" rel="noopener">la IA está transformando la alta cocina</a>, los sistemas de fermentación controlada representan uno de los campos más prometedores.</p>
 
 
 

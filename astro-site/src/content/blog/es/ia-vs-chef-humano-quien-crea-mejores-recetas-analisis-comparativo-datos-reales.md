@@ -275,7 +275,7 @@ wpId: 1594
 
 
 
-<p class="wp-block-paragraph">Para una comparativa completa de herramientas, lee nuestro artículo sobre <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" data-lasso-id="5399">10 herramientas de IA imprescindibles para chefs</a>.</p>
+<p class="wp-block-paragraph">Para una comparativa completa de herramientas, lee nuestro artículo sobre <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" data-lasso-id="5399">10 herramientas de IA imprescindibles para chefs</a>.</p>
 
 
 
@@ -413,7 +413,7 @@ wpId: 1594
 
 
 
-<p class="wp-block-paragraph">Para estar preparado para este futuro, explora nuestras herramientas especializadas en nuestro artículo sobre <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" data-lasso-id="5402">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">Para estar preparado para este futuro, explora nuestras herramientas especializadas en nuestro artículo sobre <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="5402">introducción a AI Chef Pro</a>.</p>
 
 
 
@@ -509,7 +509,7 @@ wpId: 1594
 
 
 
-<p class="wp-block-paragraph">Descubre más casos de éxito en nuestro artículo sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" data-lasso-id="5404">cómo revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Descubre más casos de éxito en nuestro artículo sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" data-lasso-id="5404">cómo revolucionar tu servicio de catering</a>.</p>
 
 
 

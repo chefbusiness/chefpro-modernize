@@ -420,7 +420,7 @@ wpId: 1838
 
 <div style="background: #f8f5f0; border: 1px solid #d4c5a9; padding: 25px 30px; margin: 35px 0; border-radius: 8px;">
 <p style="color: #5d4e37; font-size: 1.2em; font-weight: bold; margin: 0 0 15px 0;">📚 Recursos Gratuitos para Profesionales Gastronómicos</p>
-<p style="color: #3d3d3d; margin: 0 0 15px 0; line-height: 1.6;">Explora nuestra biblioteca de contenidos sobre inteligencia artificial aplicada a la gastronomía. Desde <a href="https://aichef.pro/blog/10-herramientas-de-ia-imprescindibles-para-los-chefs-de-hoy" style="color: #8B4513; font-weight: bold;">herramientas de IA imprescindibles para chefs</a> hasta <a href="https://aichef.pro/blog" style="color: #8B4513; font-weight: bold;">optimización de costes con IA</a>.</p>
+<p style="color: #3d3d3d; margin: 0 0 15px 0; line-height: 1.6;">Explora nuestra biblioteca de contenidos sobre inteligencia artificial aplicada a la gastronomía. Desde <a href="https://aichef.pro/blog/15-herramientas-de-ia-que-todo-chef-deberia-conocer" style="color: #8B4513; font-weight: bold;">herramientas de IA imprescindibles para chefs</a> hasta <a href="https://aichef.pro/blog" style="color: #8B4513; font-weight: bold;">optimización de costes con IA</a>.</p>
 <p style="margin: 0;"><a href="https://aichef.pro/blog" target="_blank" rel="noopener" style="display: inline-block; background-color: #5d4e37; color: #ffffff; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold;">Explorar el Blog →</a></p>
 </div>
 
@@ -541,7 +541,7 @@ wpId: 1838
 
 
 
-<p class="wp-block-paragraph">• <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">Introducción a AI Chef Pro</a>: Guía completa de la plataforma</p>
+<p class="wp-block-paragraph">• <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">Introducción a AI Chef Pro</a>: Guía completa de la plataforma</p>
 
 
 

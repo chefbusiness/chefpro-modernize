@@ -18,7 +18,7 @@ wpId: 1410
 
 
 
-<p class="wp-block-paragraph">Te invitamos a explorar el fascinante mundo de la <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" data-lasso-id="3211">inteligencia artificial aplicada a la gastronomía</a>, donde cada ingrediente de tu despensa se convierte en una oportunidad de crear platos únicos y deliciosos.</p>
+<p class="wp-block-paragraph">Te invitamos a explorar el fascinante mundo de la <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" data-lasso-id="3211">inteligencia artificial aplicada a la gastronomía</a>, donde cada ingrediente de tu despensa se convierte en una oportunidad de crear platos únicos y deliciosos.</p>
 
 
 

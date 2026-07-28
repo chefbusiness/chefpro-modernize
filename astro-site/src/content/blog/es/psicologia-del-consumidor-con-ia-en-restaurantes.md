@@ -18,7 +18,7 @@ wpId: 2014
 
 
 
-<p class="wp-block-paragraph">En este artículo exhaustivo, descubrirás cómo la fusión entre neurociencia, psicología del consumidor e inteligencia artificial está revolucionando la gestión de restaurantes, permitiendo a los profesionales de la hostelería crear experiencias gastronómicas que conecten emocionalmente con sus clientes mientras optimizan su rentabilidad. Si te interesa profundizar en cómo la tecnología está transformando la gastronomía, te recomendamos consultar nuestra <a href="https://aichef.pro/blog/introduccion-a-ai-chef-pro" target="_blank" rel="noopener">introducción a AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">En este artículo exhaustivo, descubrirás cómo la fusión entre neurociencia, psicología del consumidor e inteligencia artificial está revolucionando la gestión de restaurantes, permitiendo a los profesionales de la hostelería crear experiencias gastronómicas que conecten emocionalmente con sus clientes mientras optimizan su rentabilidad. Si te interesa profundizar en cómo la tecnología está transformando la gastronomía, te recomendamos consultar nuestra <a href="https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso" target="_blank" rel="noopener">introducción a AI Chef Pro</a>.</p>
 
 
 
@@ -899,7 +899,7 @@ wpId: 2014
 
 
 
-<p class="wp-block-paragraph">Para aplicaciones prácticas, consulta nuestra guía sobre <a href="https://aichef.pro/blog/como-usar-ai-chef-pro-para-revolucionar-tu-servicio-de-catering" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
+<p class="wp-block-paragraph">Para aplicaciones prácticas, consulta nuestra guía sobre <a href="https://aichef.pro/blog/ia-catering-empresas-eventos-corporativos" target="_blank" rel="noopener">cómo usar AI Chef Pro para revolucionar tu servicio de catering</a>.</p>
 
 
 
