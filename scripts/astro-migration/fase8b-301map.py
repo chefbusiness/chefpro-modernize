@@ -73,6 +73,18 @@ def main():
         '%s/tag/* %s/blog 301!' % (HOST, DEST),
         '%s/author/* %s/blog 301!' % (HOST, DEST),
         '',
+        '# Las MISMAS archives SIN la base /category/: ese WordPress tiene la base',
+        '# vacía, así que su URL canónica (el campo `link` del REST) es /{slug}/ en',
+        '# la raíz. Sin estas reglas caen en la genérica de abajo y acaban en',
+        '# /blog/{slug-de-categoria}, que no existe: 301 a un 404. Cazado el',
+        '# 2026-07-28 con la batería del cutover EN, llevaba live desde 8B.5.',
+    ]
+    for wp_slug, dest_cat in sorted(CAT_ARCHIVES.items()):
+        target = '%s/blog/categoria/%s' % (DEST, dest_cat) if dest_cat else '%s/blog' % DEST
+        lines.append('%s/%s %s 301!' % (HOST, wp_slug, target))
+        lines.append('%s/%s/* %s 301!' % (HOST, wp_slug, target))   # /page/2, etc.
+    lines += [
+        '',
         '# Idiomas GTranslate históricos (MT muerta) → hub',
     ]
     for l in LANGS:

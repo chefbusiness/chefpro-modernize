@@ -58,12 +58,24 @@ PAGINAS = [
     ('/politica-de-privacidad', '/en/privacidad'),
 ]
 
-# Categorías del WP inglés. Sólo 2 tienen archive equivalente; el resto estaban
-# vacías (count=0) o son las guías de ciudad, que no se migran.
+# Categorías del WP inglés → destino. Sólo 2 tienen archive equivalente; el
+# resto estaban vacías (count=0) o son las guías de ciudad, que no se migran.
+#
+# OJO CON LA BASE VACÍA: este WordPress sirve las archives en la RAÍZ
+# (/ai-chef-pro/), no bajo /category/ — el campo `link` del REST lo confirma y
+# /category/x/ hace 301 a /x/. Por eso cada categoría necesita DOS familias de
+# regla: la de /category/… (URLs viejas) y la de raíz (las canónicas). Sin la
+# segunda caen en la genérica y acaban en /en/blog/{slug-de-categoria}: un 404.
 CATEGORIAS = [
     ('ai-in-gastronomy', '/en/blog/category/ai-in-gastronomy'),
     ('ai-chef-pro', '/en/blog/category/ai-chef-pro'),
     ('local-ai-guides', '/en/blog'),
+    # Vacías en el WP, pero pudieron estar indexadas en su día.
+    ('tutorials', '/en/blog'),
+    ('prompt-library', '/en/blog'),
+    ('pro-ai-recipe-book', '/en/blog'),
+    ('ai-glossary-and-lexicon', '/en/blog'),
+    ('culinary-science-glossary-and-lexicon', '/en/blog'),
 ]
 
 
@@ -86,6 +98,12 @@ def censo():
 
 def construir():
     migrados, fuera = censo()
+    # Un slug de categoría en la raíz que coincidiera con el de un post le
+    # robaría la redirección al post (first match wins). Hoy no pasa; si algún
+    # día pasa, mejor parar aquí que descubrirlo en producción.
+    choque = {s for s, _ in CATEGORIAS} & (migrados | set(fuera))
+    if choque:
+        sys.exit('Slug de categoría que choca con un post: %s' % sorted(choque))
     L = [
         INICIO,
         '# ACTIVAR SOLO EN EL CUTOVER (requiere enblog.aichef.pro como alias del site).',
@@ -104,12 +122,20 @@ def construir():
         '# Páginas del WordPress inglés',
     ]
     L += [r(o, d) for o, d in PAGINAS]
-    L += ['', '# Archives de categoría WP']
+    L += ['', '# Archives de categoría WP (URLs con la base /category/)']
     L += [r('/category/%s/*' % slug, d) for slug, d in CATEGORIAS]
     L += [
         r('/category/*', '/en/blog'),
         r('/tag/*', '/en/blog'),
         r('/author/*', '/en/blog'),
+        '',
+        '# Las MISMAS archives en la RAÍZ, que es su URL canónica en este WP (base',
+        '# de categoría vacía). Van antes de la genérica o acabarían en un 404.',
+    ]
+    for slug, d in CATEGORIAS:
+        L.append(r('/' + slug, d))
+        L.append(r('/%s/*' % slug, d))     # paginación /page/2, etc.
+    L += [
         '',
         '# Las %d guías de ciudad (local-ai-guides) NO se migran → hub. Explícitas:' % len(fuera),
         '# la genérica de abajo las mandaría a un /en/blog/{slug} que no existe.',

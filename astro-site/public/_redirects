@@ -29,6 +29,28 @@ https://blog.aichef.pro/category/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/tag/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/author/* https://aichef.pro/blog 301!
 
+# Las MISMAS archives SIN la base /category/: ese WordPress tiene la base
+# vacía, así que su URL canónica (el campo `link` del REST) es /{slug}/ en
+# la raíz. Sin estas reglas caen en la genérica de abajo y acaban en
+# /blog/{slug-de-categoria}, que no existe: 301 a un 404. Cazado el
+# 2026-07-28 con la batería del cutover EN, llevaba live desde 8B.5.
+https://blog.aichef.pro/ai-chef-pro https://aichef.pro/blog/categoria/ai-chef-pro 301!
+https://blog.aichef.pro/ai-chef-pro/* https://aichef.pro/blog/categoria/ai-chef-pro 301!
+https://blog.aichef.pro/glosario-y-lexico-ai https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-ai/* https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/glosario-y-lexico-cientifico-culinario/* https://aichef.pro/blog/categoria/glosario 301!
+https://blog.aichef.pro/guias-ia-locales https://aichef.pro/blog 301!
+https://blog.aichef.pro/guias-ia-locales/* https://aichef.pro/blog 301!
+https://blog.aichef.pro/ia-en-gastronomia https://aichef.pro/blog/categoria/ia-en-gastronomia 301!
+https://blog.aichef.pro/ia-en-gastronomia/* https://aichef.pro/blog/categoria/ia-en-gastronomia 301!
+https://blog.aichef.pro/libreria-de-prompts-blog https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+https://blog.aichef.pro/libreria-de-prompts-blog/* https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+https://blog.aichef.pro/recetario-pro-ai https://aichef.pro/blog/categoria/recetas 301!
+https://blog.aichef.pro/recetario-pro-ai/* https://aichef.pro/blog/categoria/recetas 301!
+https://blog.aichef.pro/tutoriales https://aichef.pro/blog/categoria/tutoriales 301!
+https://blog.aichef.pro/tutoriales/* https://aichef.pro/blog/categoria/tutoriales 301!
+
 # Idiomas GTranslate históricos (MT muerta) → hub
 https://blog.aichef.pro/en/* https://aichef.pro/blog 301!
 https://blog.aichef.pro/fr/* https://aichef.pro/blog 301!
@@ -209,13 +231,37 @@ https://enblog.aichef.pro/roadmap https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/libreria-de-prompts https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/politica-de-privacidad https://aichef.pro/en/privacidad 301!
 
-# Archives de categoría WP
+# Archives de categoría WP (URLs con la base /category/)
 https://enblog.aichef.pro/category/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
 https://enblog.aichef.pro/category/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
 https://enblog.aichef.pro/category/local-ai-guides/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/tutorials/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/prompt-library/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/category/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/category/* https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/tag/* https://aichef.pro/en/blog 301!
 https://enblog.aichef.pro/author/* https://aichef.pro/en/blog 301!
+
+# Las MISMAS archives en la RAÍZ, que es su URL canónica en este WP (base
+# de categoría vacía). Van antes de la genérica o acabarían en un 404.
+https://enblog.aichef.pro/ai-in-gastronomy https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+https://enblog.aichef.pro/ai-in-gastronomy/* https://aichef.pro/en/blog/category/ai-in-gastronomy 301!
+https://enblog.aichef.pro/ai-chef-pro https://aichef.pro/en/blog/category/ai-chef-pro 301!
+https://enblog.aichef.pro/ai-chef-pro/* https://aichef.pro/en/blog/category/ai-chef-pro 301!
+https://enblog.aichef.pro/local-ai-guides https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/local-ai-guides/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/tutorials https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/tutorials/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/prompt-library https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/prompt-library/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/pro-ai-recipe-book https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/pro-ai-recipe-book/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-glossary-and-lexicon https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/ai-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/culinary-science-glossary-and-lexicon https://aichef.pro/en/blog 301!
+https://enblog.aichef.pro/culinary-science-glossary-and-lexicon/* https://aichef.pro/en/blog 301!
 
 # Las 50 guías de ciudad (local-ai-guides) NO se migran → hub. Explícitas:
 # la genérica de abajo las mandaría a un /en/blog/{slug} que no existe.
