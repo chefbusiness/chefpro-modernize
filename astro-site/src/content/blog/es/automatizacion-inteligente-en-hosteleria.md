@@ -901,7 +901,7 @@ wpId: 1744
 
 
 
-<figure class="wp-block-image alignwide size-large has-custom-border"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=automatizacion-inteligente-en-hosteleria"><img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/www.aichef.pro/lovable-uploads/5863854b-f30c-47d7-89f0-6124f57cfacf.png?w=1290&#038;ssl=1" alt="" class="has-border-color has-palette-color-1-border-color"/></a></figure>
+<figure class="wp-block-image alignwide size-large has-custom-border"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=automatizacion-inteligente-en-hosteleria"><img data-recalc-dims="1" decoding="async" src="/lovable-uploads/5863854b-f30c-47d7-89f0-6124f57cfacf.png" alt="" class="has-border-color has-palette-color-1-border-color"/></a></figure>
 
 
 
@@ -1874,7 +1874,7 @@ wpId: 1744
 
 
 
-<figure class="wp-block-image alignwide size-large has-custom-border"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=automatizacion-inteligente-en-hosteleria"><img data-recalc-dims="1" decoding="async" src="https://i0.wp.com/www.aichef.pro/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png?w=1290&#038;ssl=1" alt="" class="has-border-color has-palette-color-1-border-color"/></a></figure>
+<figure class="wp-block-image alignwide size-large has-custom-border"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=automatizacion-inteligente-en-hosteleria"><img data-recalc-dims="1" decoding="async" src="/lovable-uploads/12abdf30-3381-42de-a8f1-2abe9342145f.png" alt="" class="has-border-color has-palette-color-1-border-color"/></a></figure>
 
 
 

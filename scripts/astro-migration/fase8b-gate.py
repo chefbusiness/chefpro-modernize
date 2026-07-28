@@ -102,11 +102,24 @@ def main():
         check(fm.get('category') in VALID_CATS,
               '%s: categoría inválida %r' % (slug, fm.get('category')))
         body = txt.split('---\n', 2)[-1]
-        for bad in ('blog.aichef.pro/wp-content', 'i0.wp.com/blog.aichef.pro',
-                    'i1.wp.com/blog.aichef.pro', 'i2.wp.com/blog.aichef.pro'):
-            check(bad not in body, '%s: referencia residual a %s' % (slug, bad))
+        check('blog.aichef.pro/wp-content' not in body,
+              '%s: referencia residual a blog.aichef.pro/wp-content' % slug)
+        # CDN de Jetpack: cualquier host iN.wp.com, apunte a donde apunte.
+        # (El patrón viejo sólo miraba i0-2.wp.com/blog.aichef.pro y se le
+        #  escaparon 2 imágenes servidas como i0.wp.com/www.aichef.pro —
+        #  ese CDN muere al apagar WordPress. Cazado el 2026-07-28.)
+        for m2 in re.finditer(r'i\d+\.wp\.com', body):
+            check(False, '%s: imagen servida por el CDN de Jetpack (%s)'
+                  % (slug, m2.group(0)))
+            break
         for m2 in re.finditer(r'(?:href|src)="https?://blog\.aichef\.pro', body):
             check(False, '%s: enlace vivo a blog.aichef.pro' % slug)
+            break
+        # Hrefs malformados del conversor: href="https://\&quot;URL\&quot;".
+        # No son URLs válidas → 404 en producción. El check anterior no los veía
+        # porque el \&quot; se cuela entre href=" y el esquema. (2026-07-28)
+        for m2 in re.finditer(r'(?:href|src)="[^"]*\\&quot;', body):
+            check(False, '%s: href/src malformado (comillas sin desescapar)' % slug)
             break
         for rel in set(re.findall(r'/blog-assets/([^"\'\s\)]+)', txt)):
             from urllib.parse import unquote

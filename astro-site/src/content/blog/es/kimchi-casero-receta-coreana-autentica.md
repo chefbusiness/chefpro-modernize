@@ -613,7 +613,7 @@ Maori Murota te presenta sus recetas preferidas y cien por cien caseras: sushi y
 
 
 
-<p class="wp-block-paragraph"><strong>👉 <a href="\&quot;https://app.aichef.pro\&quot;">Prueba AI Chef Pro gratis</a> y descubre por qué miles de cocineros ya lo usan diariamente.</strong></p>
+<p class="wp-block-paragraph"><strong>👉 <a href="https://app.aichef.pro">Prueba AI Chef Pro gratis</a> y descubre por qué miles de cocineros ya lo usan diariamente.</strong></p>
 
 
 
@@ -625,7 +625,7 @@ Maori Murota te presenta sus recetas preferidas y cien por cien caseras: sushi y
 
 
 
-<p class="wp-block-paragraph">Explora más recetas en nuestro <a href="\&quot;https://blog.aichef.pro/recetario-pro-ai/\&quot;">Recetario Pro AI</a> y domina técnicas profesionales paso a paso.</p>
+<p class="wp-block-paragraph">Explora más recetas en nuestro <a href="/blog/categoria/recetas">Recetario Pro AI</a> y domina técnicas profesionales paso a paso.</p>
 
 
 
