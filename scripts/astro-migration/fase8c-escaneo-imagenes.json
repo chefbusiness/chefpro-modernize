@@ -1,9 +1,11 @@
 {
  "2024/09/AI-Chef-Pro-En.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"1973 TASTE, Villa Cortes, Ocean Beach Club, PRIMANOVA, MABECAN, Academia Gastronómica de Canarias S.L., IRONA HORECA, HP, Lenovo, Apple, scentmate\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/AI-Chef-Pro-Inteligencia-Artificial-en-tu-Gestion.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/Bar-Lounge-AI1.png": {
   "cara": "NO"
@@ -18,13 +20,16 @@
   "cara": "NO"
  },
  "2024/09/a-photo-of-young-chefs-working-at-a-restaurant-in-cvR8ZTk3SQ6pDl4Pmv37nQ-6dQ06AyrSjCYsW6_9sz7lw.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/aichefpro-catering-ai2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Frankfurth\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/bartender1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple (en la tablet)\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/burger-pro-ai-by-ai-chef-pro-x.png": {
   "cara": "NO"
@@ -33,31 +38,38 @@
   "cara": "NO"
  },
  "2024/09/burgerproai-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Logo 'Joos' en chaqueta del chef, Letrero de neón 'BURGER'\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2024/09/chef-diego-schattenhofer-3.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"1973 TASTE\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/chef-diego-schattenhofer-78.jpg": {
   "cara": "NO"
  },
  "2024/09/chef-diego-schattenhofer-9.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"1973 Taste, MICHELIN 2024, 3 SOL Guia Repsol, MQ\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/chef-inteligencia-artificial-en-gastronomia1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/chef-inteligencia-artificial-en-gastronomia2.jpeg": {
   "cara": "NO"
  },
  "2024/09/chef-inteligencia-artificial-en-gastronomia3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"KSG ESPAÑA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2024/09/cocineros-aichefpro1-edited.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple, B&B, Arzak\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2024/09/cocineros-aichefpro2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple, Urdalaiz\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/equipo.png": {
   "cara": "NO"
@@ -66,46 +78,56 @@
   "cara": "NO"
  },
  "2024/09/que-es-el-food-pairing-blog.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Scentmate, Priman, Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/que-es-el-machine-learning.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2024/09/que-es-la-inteligencia-artificial-generativa.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2024/09/que-es-un-prompt-ai-chef-pro.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple, Emblema en la manga del chef\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2024/10/Cocina-India-con-AI-Chef-Pro1.png": {
   "cara": "NO"
  },
  "2024/10/Cocina-India-con-AI-Chef-Pro3.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/como-configurar-tu-cuenta-en-ai-chef-pro.png": {
   "cara": "NO"
  },
  "2024/10/configurar-tu-cuenta-en-AI-Chef-Pro.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": [\"273 INSTITUTO DEL CO...\", \"ocentmate\", \"dsm-firmenich\", \"COLLINS\"], \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/joven-Cocina-India-con-AI-Chef-Pro2.png": {
   "cara": "NO"
  },
  "2024/10/joven-chef-preparando-cocina-india.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Logotipo estilizado en el delantal (similar a 'UM HAMP')\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/procesamiento-de-lenguaje-natural-pnl.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/que-es-la-merma-1.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/que-es-la-merma-2-blog-ai-chef-pro.png": {
   "cara": "NO"
  },
  "2024/10/que-es-la-merma-blog-ai-chef-pro.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"NINGUNA\", \"marcas_terceros\": \"Mebecon, ARONA, OJA BEACH CLUB, 1973, HP\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/10/que-son-los-alergenos.jpg": {
   "cara": "NO"
@@ -123,7 +145,8 @@
   "cara": "NO"
  },
  "2024/12/IMG_1449.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"RATIONAL\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2024/12/IMG_1453.jpeg": {
   "cara": "NO"
@@ -150,7 +173,8 @@
   "cara": "NO"
  },
  "2025/02/AI-Chef-Pro-en-accion.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"AITRO, MTI\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/02/AI-Chef-Pro-un-ChatGPT-para-la-Pasteleria-Profesional-Usos-y-Aplicaciones.jpg": {
   "cara": "NO"
@@ -171,7 +195,8 @@
   "cara": "NO"
  },
  "2025/02/Casos-practicos-de-inteligencia-artificial-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Como-la-IA-Esta-Mejorando-la-Seguridad-Alimentaria-en-Restaurantes.jpg": {
   "cara": "NO"
@@ -180,7 +205,8 @@
   "cara": "NO"
  },
  "2025/02/Configuracion-de-inteligencia-artificial-en-la-cocina.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AI Chef\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Consultoria-Gastronomica-2.0-IA-como-Herramienta-de-Asesoramiento.jpg": {
   "cara": "NO"
@@ -198,16 +224,20 @@
   "cara": "NO"
  },
  "2025/02/El-Impacto-de-la-IA-en-la-Cadena-de-Suministro-Gastronomica.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/El-Papel-de-la-IA-en-la-Formacion-de-Futuros-Chefs.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Narcifad\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Formacion-culinaria-con-IA.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/02/Fusion-de-Culturas-Culinarias-con-IA-Creando-Nuevas-Experiencias-Gastronomicas.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/02/Gestion-de-residuos-en-la-industria-alimentaria.jpg": {
   "cara": "NO"
@@ -216,7 +246,8 @@
   "cara": "NO"
  },
  "2025/02/Herramientas-de-AI-Chef-Pro-en-Restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Herramientas-de-AI-Chef-Pro.jpg": {
   "cara": "NO"
@@ -225,10 +256,12 @@
   "cara": "NO"
  },
  "2025/02/Herramientas-de-IA-en-la-gestion-culinaria.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Herramientas-de-IA-para-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/IA-en-la-Gestion-de-Criticas-y-Reputacion-de-Restaurantes.jpg": {
   "cara": "NO"
@@ -240,10 +273,12 @@
   "cara": "NO"
  },
  "2025/02/IA-vs.-Metodos-Tradicionales-Revolucion-en-la-Planificacion-de-Menus.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/IA-y-Analisis-Predictivo-en-la-Gestion-de-Restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/IA-y-Nutricion-Planificacion-de-Dietas-Personalizadas-en-Restaurantes.jpg": {
   "cara": "NO"
@@ -252,10 +287,12 @@
   "cara": "NO"
  },
  "2025/02/IMG_2774-scaled.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Chrome\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/IMG_2775-scaled.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/IMG_2776-scaled.jpeg": {
   "cara": "NO"
@@ -273,7 +310,8 @@
   "cara": "NO"
  },
  "2025/02/IMG_2782-scaled.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Google, WordPress, Rank Math SEO, GoDaddy Quick Links\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Impacto-de-la-IA-en-la-gastronomia.jpg": {
   "cara": "NO"
@@ -294,7 +332,8 @@
   "cara": "NO"
  },
  "2025/02/Integracion-de-IA-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Integracion-de-tecnologias-en-restaurantes.jpg": {
   "cara": "NO"
@@ -306,7 +345,8 @@
   "cara": "NO"
  },
  "2025/02/Mejora-de-la-experiencia-del-cliente.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Monitoreo-en-tiempo-real.jpg": {
   "cara": "NO"
@@ -321,7 +361,8 @@
   "cara": "NO"
  },
  "2025/02/Optimizacion-de-menus.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2025/02/Optimizacion-de-procesos-con-AI-Chef-Pro.jpg": {
   "cara": "NO"
@@ -336,7 +377,8 @@
   "cara": "NO"
  },
  "2025/02/Optimizacion-operativa-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Personalizacion-de-Experiencias-Gastronomicas-con-Inteligencia-Artificial.jpg": {
   "cara": "NO"
@@ -345,7 +387,8 @@
   "cara": "NO"
  },
  "2025/02/Personalizacion-de-experiencias-gastronomicas.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Planes-de-suscripcion-de-AI-Chef-Pro.jpg": {
   "cara": "NO"
@@ -360,16 +403,19 @@
   "cara": "NO"
  },
  "2025/02/Soluciones-de-IA-en-hosteleria.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Suite-AI-Chef-Pro.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"A'Chef Pro\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/02/Transformacion-culinaria-con-IA.jpg": {
   "cara": "NO"
  },
  "2025/02/Transformacion-en-la-gestion-de-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"SI\",\n\"retrato_posado\": \"NO\"}"
  },
  "2025/02/hmcpg4cnsra.jpg": {
   "cara": "NO"
@@ -414,10 +460,12 @@
   "cara": "NO"
  },
  "2025/03/Como-el-aprendizaje-automatico-transforma-la-creacion-de-recetas-culinarias.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Como-la-IA-puede-potenciar-la-creatividad-de-los-Chefs.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Como-se-utiliza-la-IA-en-la-Gastronomia-1.jpg": {
   "cara": "NO"
@@ -432,7 +480,8 @@
   "cara": "NO"
  },
  "2025/03/Formacion-gastronomica-con-IA.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Fusion-de-tradicion-y-tecnologia-en-la-chocolateria.jpg": {
   "cara": "NO"
@@ -441,7 +490,8 @@
   "cara": "NO"
  },
  "2025/03/Guia-Completa-de-Asistentes-Virtuales-para-Cocinas-Profesionales.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Herramientas-de-inteligencia-artificial-en-restaurantes.jpg": {
   "cara": "NO"
@@ -450,16 +500,20 @@
   "cara": "NO"
  },
  "2025/03/IA-y-Servicio-al-Cliente-en-Restaurantes-Mejorando-la-Experiencia-del-Comensal.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/IMG_3020.webp": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/IMG_3079.webp": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/IMG_3082.webp": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/IMG_3083.webp": {
   "cara": "NO"
@@ -468,7 +522,8 @@
   "cara": "NO"
  },
  "2025/03/Implementacion-practica-en-heladerias.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"d Chlef, Chef\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Innovacion-en-Heladeria-Aplicaciones-Practicas-de-ChatGPT.jpg": {
   "cara": "NO"
@@ -480,7 +535,8 @@
   "cara": "NO"
  },
  "2025/03/Innovacion-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Innovacion-tecnologica-en-la-produccion-del-chocolate.jpg": {
   "cara": "NO"
@@ -498,31 +554,38 @@
   "cara": "NO"
  },
  "2025/03/Inteligencia-artificial-en-la-cocina-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Inteligencia-artificial-en-la-cocina.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Inteligencia-artificial-en-la-gastronomia.jpg": {
   "cara": "NO"
  },
  "2025/03/Inteligencia-artificial-en-restaurantes-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Inteligencia-artificial-en-restaurantes.jpg": {
   "cara": "NO"
  },
  "2025/03/La-Revolucion-de-la-Panaderia-con-Inteligencia-Artificial.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Marketing-predictivo-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Optimizacion-de-inventario-en-cocina.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Optimizacion-de-recursos-humanos-en-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/Planificacion-nutricional-en-la-cocina.jpg": {
   "cara": "NO"
@@ -537,7 +600,8 @@
   "cara": "NO"
  },
  "2025/03/Untitled-design.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/03/chatbots-en-restaurantes.jpg": {
   "cara": "NO"
@@ -549,13 +613,16 @@
   "cara": "NO"
  },
  "2025/05/IMG_3348-scaled.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"ChatGPT 4.0\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/05/a-photograph-of-two-young-chefs-on-a-sun_8dJ3wU_1R1exBVY5VqsBeQ_jGpgTepcSYG9upvjcn2vpg.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/05/catering-ai-app-aichefpro-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/05/mermas-alcachofas-gencal-aichefpro-scaled.jpg": {
   "cara": "NO"
@@ -564,7 +631,8 @@
   "cara": "NO"
  },
  "2025/06/Como-calcular-el-costo-de-una-receta-facil-con-la-IA1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/06/Como-calcular-el-costo-de-una-receta-facil-con-la-IA2.jpeg": {
   "cara": "NO"
@@ -585,52 +653,68 @@
   "cara": "NO"
  },
  "2025/08/a-photorealistic-image-of-a-cutting-edge_JUc-beBtQ42wALCwkg5xSQ_Liam-hLnRE-vKV337B6ytg.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/08/dominalaiaentucocinapro1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/30-dias-con-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/30-dias-con-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/30-dias-con-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/30-dias-con-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/7-mejores-apps-ia-cocina-pro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/7-mejores-apps-ia-cocina-pro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/AI-Chef-Pro-Advanced-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/AI-Chef-Pro-Advanced-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/AI-Chef-Pro-Advanced-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/AI-Chef-Pro-Advanced-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/09/App-IA-Cocina-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/App-IA-Cocina-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/App-IA-Cocina-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/App-IA-Cocina-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/Chef-GPT-Espanol-3.jpeg": {
   "cara": "NO"
@@ -642,16 +726,20 @@
   "cara": "NO"
  },
  "2025/09/GenAI-para-Restaurantes-ai-chef-pro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/GenAI-para-Restaurantes-ai-chef-pro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/GenAI-para-Restaurantes-ai-chef-pro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/GenAI-para-Restaurantes-ai-chef-pro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ai-cooking-aichefpro-1.jpeg": {
   "cara": "NO"
@@ -663,31 +751,39 @@
   "cara": "NO"
  },
  "2025/09/ai-cooking-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ai-para-cocinar-ai-chef-pro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ai-para-cocinar-ai-chef-pro-2.jpeg": {
   "cara": "NO"
  },
  "2025/09/ai-para-cocinar-ai-chef-pro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ai-para-cocinar-ai-chef-pro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/chef-tradicional-a-chef-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/chef-tradicional-a-chef-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"AI Chef Pro\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/chef-tradicional-a-chef-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/chef-tradicional-a-chef-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/chutney-de-mango-aichefpro-2.jpg": {
   "cara": "NO"
@@ -696,31 +792,40 @@
   "cara": "NO"
  },
  "2025/09/cocina-4-0-ai-chef-pro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cocina-4-0-ai-chef-pro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AI CHEF PRO\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cocina-4-0-ai-chef-pro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cocina-4-0-ai-chef-pro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/cuantas-horas-ahorras-con-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cuantas-horas-ahorras-con-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cuantas-horas-ahorras-con-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/cuantas-horas-ahorras-con-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/09/escandallo-chutney-de-mango-aichefpro-1-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Sosa\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/generador-de-prompts-gastronomicos-1.jpeg": {
   "cara": "NO"
@@ -735,7 +840,8 @@
   "cara": "NO"
  },
  "2025/09/generador-de-prompts-gastronomicos-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/generador-de-prompts-gastronomicos-6.jpeg": {
   "cara": "NO"
@@ -753,13 +859,16 @@
   "cara": "NO"
  },
  "2025/09/gratis-a-pro-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/gratis-a-pro-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/09/gratis-a-pro-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/ia-alimentaria-1.jpeg": {
   "cara": "NO"
@@ -771,10 +880,12 @@
   "cara": "NO"
  },
  "2025/09/ia-alimentaria-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-alimentaria-6.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-para-imagenes-de-comida-1.jpeg": {
   "cara": "NO"
@@ -786,25 +897,31 @@
   "cara": "NO"
  },
  "2025/09/ia-recetas-gratis-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-recetas-gratis-aichefpro-2.jpeg": {
   "cara": "NO"
  },
  "2025/09/ia-recetas-gratis-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-recetas-gratis-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-vs-chef-humano-ai-chef-pro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MICHELIN STAR, AI Chef Pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-vs-chef-humano-ai-chef-pro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MICHELIN STAR\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/ia-vs-chef-humano-ai-chef-pro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/manual-del-food-pairing-1.jpeg": {
   "cara": "NO"
@@ -825,19 +942,23 @@
   "cara": "NO"
  },
  "2025/09/mejor-ia-para-cocinar-2025-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"ChatGPT Plus, Claude Cookai, ChefGPT\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/09/predicciones-ia-2026-cocina-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"NINGUNO\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/predicciones-ia-2026-cocina-aichefpro-2.jpeg": {
   "cara": "NO"
  },
  "2025/09/predicciones-ia-2026-cocina-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/predicciones-ia-2026-cocina-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/09/pulpo-atlantico-gazpacho-fresas-1.jpg": {
   "cara": "NO"
@@ -852,7 +973,8 @@
   "cara": "NO"
  },
  "2025/09/pulpo-atlantico-gazpacho-fresas-5-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/09/receta-chutney-de-mango-aichefpro-1-scaled.jpg": {
   "cara": "NO"
@@ -867,7 +989,8 @@
   "cara": "NO"
  },
  "2025/11/Kabuli-Pulao-plato-afgano-con-AI-Chef-Pro-2-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/11/Kabuli-Pulao-plato-afgano-con-AI-Chef-Pro-3-scaled.jpg": {
   "cara": "NO"
@@ -891,16 +1014,20 @@
   "cara": "NO"
  },
  "2025/11/ideas-recetas-con-ia-que-cocinar-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/11/ideas-recetas-con-ia-que-cocinar-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/11/ideas-recetas-con-ia-que-cocinar-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/11/ideas-recetas-con-ia-que-cocinar-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/11/mixologia-digital-aichefpro-1.jpeg": {
   "cara": "NO"
@@ -921,64 +1048,80 @@
   "cara": "NO"
  },
  "2025/11/promo-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/11/prompts-restaurantes-hosteleria-aichefpro.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/11/vermut-spritz-mixologia-digital-aichefpro.jpg": {
   "cara": "NO"
  },
  "2025/12/12-innovaciones-ia-cocinas-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/12-innovaciones-ia-cocinas-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/12-innovaciones-ia-cocinas-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/12-innovaciones-ia-cocinas-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/15-herramientas-ia-para-chefs-2026-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/15-herramientas-ia-para-chefs-2026-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/15-herramientas-ia-para-chefs-2026-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/25-prompts-chefs-2026-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/25-prompts-chefs-2026-2.jpeg": {
   "cara": "NO"
  },
  "2025/12/25-prompts-chefs-2026-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/25-prompts-chefs-2026-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/acuaponia-inteligente-para-restaurantes-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/acuaponia-inteligente-para-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"SUSTAINABLE GASTRONOMY\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/acuaponia-inteligente-para-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/acuaponia-inteligente-para-restaurantes-4.jpeg": {
   "cara": "NO"
  },
  "2025/12/analisis-sensorial-asistido-por-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/analisis-sensorial-asistido-por-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Profoto\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/analisis-sensorial-asistido-por-ia-3.jpeg": {
   "cara": "NO"
@@ -1002,118 +1145,150 @@
   "cara": "NO"
  },
  "2025/12/carta-digital-dinamica-con-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/como-usar-chatgpt-en-tu-restaurante-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"ChatGPT\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/como-usar-chatgpt-en-tu-restaurante-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/como-usar-chatgpt-en-tu-restaurante-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"ChatGPT\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-2-scaled.jpg": {
   "cara": "NO"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-4-scaled.jpg": {
   "cara": "NO"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-5-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/12/consejo-experto-optimizar-cocina-ia-5.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"SI\"}"
  },
  "2025/12/diseno-de-espacios-gastronomicos-con-ia-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/diseno-de-espacios-gastronomicos-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-de-espacios-gastronomicos-con-ia-5.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-de-espacios-gastronomicos-con-ia-6.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MICHELIN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-de-espacios-gastronomicos-con-ia-7-scaled.png": {
   "cara": "NO"
  },
  "2025/12/diseno-uniformes-cocina-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Electrolux\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-uniformes-cocina-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"RATIONAL\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-uniformes-cocina-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-uniformes-cocina-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NANO CHEF SOLUTIONS\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/diseno-uniformes-cocina-ia-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ergonomia-cognitiva-en-cocinas-con-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ergonomia-cognitiva-en-cocinas-con-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ergonomia-cognitiva-en-cocinas-con-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ergonomia-cognitiva-en-cocinas-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gamificacion-en-restaurantes-con-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Lealify\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gamificacion-en-restaurantes-con-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gamificacion-en-restaurantes-con-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gamificacion-en-restaurantes-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-alergenos-con-ia-en-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"NINGUNO\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-alergenos-con-ia-en-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-alergenos-con-ia-en-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-alergenos-con-ia-en-restaurantes-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-de-eventos-gastronomicos-con-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/gestion-de-eventos-gastronomicos-con-ia-2.jpeg": {
   "cara": "NO"
  },
  "2025/12/gestion-de-eventos-gastronomicos-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-conservacion-alimentos-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-conservacion-alimentos-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-conservacion-alimentos-3.jpeg": {
   "cara": "NO"
@@ -1128,64 +1303,79 @@
   "cara": "NO"
  },
  "2025/12/ia-cristaleria-gastronomica-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-cristaleria-gastronomica-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"SI\",\n\"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-cristaleria-gastronomica-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-elaboracion-cerveza-artesanal-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-elaboracion-cerveza-artesanal-2.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-elaboracion-cerveza-artesanal-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"CERVECERÍA ARTESANAL\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-elaboracion-cerveza-artesanal-4.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-en-la-cocina-molecular-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-cocina-molecular-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-cocina-molecular-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-destilacion-artesanal-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-en-la-destilacion-artesanal-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-destilacion-artesanal-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-destilacion-artesanal-4.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-en-la-elaboracion-de-vinos-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-elaboracion-de-vinos-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-elaboracion-de-vinos-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-elaboracion-de-vinos-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-recuperacion-de-recetas-historicas-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/ia-en-la-recuperacion-de-recetas-historicas-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-en-la-recuperacion-de-recetas-historicas-3.jpeg": {
   "cara": "NO"
@@ -1203,40 +1393,51 @@
   "cara": "NO"
  },
  "2025/12/ia-y-agricultura-urbana-para-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-y-agricultura-urbana-para-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/ia-y-agricultura-urbana-para-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/inteligencia-artificial-en-el-mundo-de-la-gastronomia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/inteligencia-artificial-en-el-mundo-de-la-gastronomia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2025/12/inteligencia-artificial-en-el-mundo-de-la-gastronomia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/inteligencia-artificial-en-el-mundo-de-la-gastronomia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/marketing-olfativo-con-ia-en-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/marketing-olfativo-con-ia-en-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"KAZOO\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/marketing-olfativo-con-ia-en-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/microgreens-restaurante-indoor-ai-1.jpeg": {
   "cara": "NO"
  },
  "2025/12/microgreens-restaurante-indoor-ai-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/microgreens-restaurante-indoor-ai-4.jpeg": {
   "cara": "NO"
@@ -1260,13 +1461,16 @@
   "cara": "NO"
  },
  "2025/12/optimizacion-delivery-con-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"ENTREGA FUTURA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2025/12/optimizacion-delivery-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/optimizacion-delivery-con-ia-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/packaging-gastronomico-con-ia-1.jpeg": {
   "cara": "NO"
@@ -1296,31 +1500,38 @@
   "cara": "NO"
  },
  "2025/12/protocolos-limpieza-con-ia-hosteleria-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/protocolos-limpieza-con-ia-hosteleria-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/protocolos-limpieza-con-ia-hosteleria-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/protocolos-limpieza-con-ia-hosteleria-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/protocolos-limpieza-con-ia-hosteleria-5.jpeg": {
   "cara": "NO"
  },
  "2025/12/psicologia-del-consumidor-con-ia-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/psicologia-del-consumidor-con-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/psicologia-del-consumidor-con-ia-3.jpeg": {
   "cara": "NO"
  },
  "2025/12/psicologia-del-consumidor-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2025/12/sopas-caldos-japoneses-con-ai-1.jpeg": {
   "cara": "NO"
@@ -1338,7 +1549,8 @@
   "cara": "NO"
  },
  "2026/01/6-metricas-medir-ia-en-restaurantes-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/aire-de-zanahoria-1.jpg": {
   "cara": "NO"
@@ -1362,13 +1574,15 @@
   "cara": "NO"
  },
  "2026/01/anticuchos-cocina-peruana-ai-chef-pro-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"EL COMERCIO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/anticuchos-cocina-peruana-ai-chef-pro-6.jpeg": {
   "cara": "NO"
  },
  "2026/01/anticuchos-cocina-peruana-ai-chef-pro-7.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"NINGUNO\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/anticuchos-cocina-peruana-ai-chef-pro-8.jpeg": {
   "cara": "NO"
@@ -1395,10 +1609,12 @@
   "cara": "NO"
  },
  "2026/01/arepas-cocina-venezolana-aichefpro-8.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"POLAR\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/arepas-cocina-venezolana-aichefpro-9.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"HARINA (en saco)\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/arepas-venezolanas-con-aichefpro-scaled.jpg": {
   "cara": "NO"
@@ -1410,7 +1626,8 @@
   "cara": "NO"
  },
  "2026/01/chefgpt-vs-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/coliflor-asada-aichefpro.jpeg": {
   "cara": "NO"
@@ -1419,31 +1636,38 @@
   "cara": "NO"
  },
  "2026/01/como-la-ia-transformara-rol-de-los-chefs-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"SI\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/01/como-la-ia-transformara-rol-de-los-chefs-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2026/01/como-la-ia-transformara-rol-de-los-chefs-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/como-la-ia-transformara-rol-de-los-chefs-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-2.jpeg": {
   "cara": "NO"
  },
  "2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-4.jpeg": {
   "cara": "NO"
  },
  "2026/01/como-utilizar-la-ia-en-el-negocio-alimentario-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/crear-carta-restaurante-con-ia-1.jpg": {
   "cara": "NO"
@@ -1455,25 +1679,32 @@
   "cara": "NO"
  },
  "2026/01/crear-restaurante-con-ia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/crear-restaurante-con-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/crear-restaurante-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/errores-implementar-ia-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/errores-implementar-ia-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/errores-implementar-ia-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/errores-implementar-ia-restaurantes-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/esparrago-blanco-miso-caviar-aichefpro.jpeg": {
   "cara": "NO"
@@ -1491,34 +1722,42 @@
   "cara": "NO"
  },
  "2026/01/gestion-de-crisis-en-restaurantes-con-ia-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/gestion-de-crisis-en-restaurantes-con-ia-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-en-la-gestion-de-festivales-gastronomicos-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-en-la-gestion-de-festivales-gastronomicos-2.jpeg": {
   "cara": "NO"
  },
  "2026/01/ia-en-la-gestion-de-festivales-gastronomicos-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Citroën\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-en-la-gestion-de-festivales-gastronomicos-4.jpeg": {
   "cara": "NO"
  },
  "2026/01/ia-para-bares-1-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-bares-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-cafeterias-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-cafeterias-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-cafeterias-3.jpeg": {
   "cara": "NO"
@@ -1533,7 +1772,8 @@
   "cara": "NO"
  },
  "2026/01/ia-para-crear-menus-semanales-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-hamburgueserias-1.jpeg": {
   "cara": "NO"
@@ -1545,79 +1785,99 @@
   "cara": "NO"
  },
  "2026/01/ia-para-pizzerias-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-pizzerias-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-pizzerias-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-restaurates-cocina-espanola-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-restaurates-cocina-espanola-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-restaurates-cocina-espanola-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/ia-para-restaurates-cocina-espanola-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/image.webp": {
   "cara": "NO"
  },
  "2026/01/infografia-ergonomia-cognitiva-en-cocinas-con-ia-scaled.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AIChef.pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/infografia-ia-en-cristaleria-scaled.jpg": {
   "cara": "NO"
  },
  "2026/01/inteligencia-artificial-en-cocina-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/inteligencia-artificial-en-cocina-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"RATIONAL\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/inteligencia-artificial-en-cocina-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/inteligencia-artificial-en-cocina-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"EL ALMA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/inteligencia-artificial-en-cocina-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"RATIONAL\",\n\"texto_ilegible\": \"SI\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/01/kimchi-col-china-aichefpro-scaled.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/kombucha-optimizada-receta-aichefpro-scaled.png": {
   "cara": "NO"
  },
  "2026/01/mejor-ia-para-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/mejor-ia-para-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/metricas-ia-restaurantes-aichefpro-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/metricas-ia-restaurantes-aichefpro-2.jpg": {
   "cara": "NO"
  },
  "2026/01/metricas-ia-restaurantes-aichefpro-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/metricas-ia-restaurantes-aichefpro-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/microgreens-cultivos-indoor-con-ia-scaled.jpg": {
   "cara": "NO"
  },
  "2026/01/mugi-miso-receta-aichefpro-scaled.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/packaging-gastronomico-con-ia-scaled.jpg": {
   "cara": "NO"
@@ -1629,19 +1889,23 @@
   "cara": "NO"
  },
  "2026/01/rentabilidad-cocina-aichefpro-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/rentabilidad-cocina-aichefpro-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Logo amarillo con texto 'Candi...' (visible en la pared de fondo)\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/risotto-parmigiano-aichefpro.jpeg": {
   "cara": "NO"
  },
  "2026/01/salva-tu-restaurante-con-ia-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"SI\"}"
  },
  "2026/01/salva-tu-restaurante-con-ia-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"Apple\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/tarta-queso-vasca-txacoli-aichefpro.jpeg": {
   "cara": "NO"
@@ -1653,40 +1917,49 @@
   "cara": "NO"
  },
  "2026/01/tendencias-food-tech-proxima-decada-aichefpro-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/tendencias-food-tech-proxima-decada-aichefpro-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/01/tendencias-food-tech-proxima-decada-aichefpro-3.jpg": {
   "cara": "NO"
  },
  "2026/01/tendencias-food-tech-proxima-decada-aichefpro-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/01/torrija-molecular-aichefpro.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/8-errores-food-cost-aichefpro-2.jpg": {
   "cara": "NO"
  },
  "2026/02/8-errores-food-cost-aichefpro-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"LOVELY, D&R PRODUCE, BEST FOODS, THE KROGER CO.\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/8-errores-food-cost-aichefpro-4.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"aichef.pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/Captura-de-pantalla-2026-02-05-a-las-22.17.42-scaled.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"TheFork, OpenTable, Instagram, TikTok, Google Business, TripAdvisor\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/Tourne-aichefpro.jpg": {
   "cara": "NO"
  },
  "2026/02/Usu-zukuri-aichefpro.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/api-nanobanana.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/beurre-noisette-1.jpg": {
   "cara": "NO"
@@ -1698,7 +1971,8 @@
   "cara": "NO"
  },
  "2026/02/bioacustica-en-restaurantes-con-ia-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"Google Nest\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/02/bioacustica-en-restaurantes-con-ia-aichefpro-2.jpeg": {
   "cara": "NO"
@@ -1707,7 +1981,8 @@
   "cara": "NO"
  },
  "2026/02/bioacustica-en-restaurantes-con-ia-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/bioacustica-en-restaurantes-con-ia-aichefpro-5.jpeg": {
   "cara": "NO"
@@ -1716,7 +1991,8 @@
   "cara": "NO"
  },
  "2026/02/catering-featured.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"AI ARAMARK, AI Bolf\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ccina-a-baja-temperatura-aichefpro-1.jpg": {
   "cara": "NO"
@@ -1740,7 +2016,8 @@
   "cara": "NO"
  },
  "2026/02/cocina-al-vacio-sous-vide-aichefpro-post.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/cocina-al-vacio-sous-vide-aichefpro.jpg": {
   "cara": "NO"
@@ -1755,7 +2032,8 @@
   "cara": "NO"
  },
  "2026/02/cocina-tailandesa-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/cocina-tailandesa-aichefpro-captura-app-2-scaled.png": {
   "cara": "NO"
@@ -1764,7 +2042,8 @@
   "cara": "NO"
  },
  "2026/02/cocina-tailandesa-aichefpro-captura-app-scaled.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/concasse-aichefpro.jpg": {
   "cara": "NO"
@@ -1779,7 +2058,8 @@
   "cara": "NO"
  },
  "2026/02/diseno-de-vajilla-con-ia-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/diseno-de-vajilla-con-ia-aichefpro-4.jpeg": {
   "cara": "NO"
@@ -1788,7 +2068,8 @@
   "cara": "NO"
  },
  "2026/02/esferificacion-concepto-definicion-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/espumas-concepto-definicion-aichefpro-1.jpeg": {
   "cara": "NO"
@@ -1797,7 +2078,8 @@
   "cara": "NO"
  },
  "2026/02/food-pairing-remolacha-asada-aichefpro-1-scaled.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"NINGUNO\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/foodcost-ia-1.jpg": {
   "cara": "NO"
@@ -1806,22 +2088,26 @@
   "cara": "NO"
  },
  "2026/02/foodcost-ia-featured-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/gastro-lexicum-cocina-al-vacio-aichefpro-scaled.png": {
   "cara": "NO"
  },
  "2026/02/gastronomia-molecular-aichefpro-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"aichef.pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/gastronomia-molecular-aichefpro-2.jpg": {
   "cara": "NO"
  },
  "2026/02/gerente-de-restaurante-ia-gestion-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/gerente-de-restaurante-ia-gestion-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/hacks-ai-chef-pro-1.jpg": {
   "cara": "NO"
@@ -1830,55 +2116,69 @@
   "cara": "NO"
  },
  "2026/02/hacks-gestion-restaurantes-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"L'ATELIER, Apple iPad\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/hacks-gestion-restaurantes-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/hacks-gestion-restaurantes-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/hacks-gestion-restaurantes-aichefpro-4.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"Javier Bardem\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-cocina-nanobanana.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-en-arquitectura-restaurantes-aichefpro-1.jpeg": {
   "cara": "NO"
  },
  "2026/02/ia-en-arquitectura-restaurantes-aichefpro-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"TABERNA 1880\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-gestion-temperatura-emocional-restaurantes-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-gestion-temperatura-emocional-restaurantes-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-gestion-temperatura-emocional-restaurantes-3.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-gestion-temperatura-emocional-restaurantes-4.jpeg": {
   "cara": "NO"
  },
  "2026/02/ia-para-panaderias-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-para-panaderias-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-para-restaurantes-estrella-michelin-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-para-restaurantes-estrella-michelin-aichefpro-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"LANDSBEG, VITAL OPNI\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-para-restaurantes-michelin-scaled.jpg": {
   "cara": "NO"
  },
  "2026/02/ia-residuos-gestion-restaurantes-aichefpro-1.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DeWalt, IoT\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/ia-residuos-gestion-restaurantes-aichefpro-2.jpeg": {
   "cara": "NO"
@@ -1893,7 +2193,8 @@
   "cara": "NO"
  },
  "2026/02/juliana-aichef.pro_.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/kimchi-casero-aichefpro-1.jpg": {
   "cara": "NO"
@@ -1917,7 +2218,8 @@
   "cara": "NO"
  },
  "2026/02/mermas-featured.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/mermas-formula.jpg": {
   "cara": "NO"
@@ -1926,7 +2228,8 @@
   "cara": "NO"
  },
  "2026/02/mise-en-place-aichefpro-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/02/mise-en-place-aichefpro-2.png": {
   "cara": "NO"
@@ -1944,25 +2247,30 @@
   "cara": "NO"
  },
  "2026/02/post3-img2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/post3-img3.jpg": {
   "cara": "NO"
  },
  "2026/02/prompteng-nanobanana.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/queseria-featured.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"NINGUNO\",\n \"marcas_terceros\": \"AI CHEF PRO\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/02/recursos-gratuitos-ia-gastronomia-1.jpeg": {
   "cara": "NO"
  },
  "2026/02/recursos-gratuitos-ia-gastronomia-2.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/recursos-gratuitos-ia-gastronomia-5.jpeg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/02/sifon-nanobanana.jpg": {
   "cara": "NO"
@@ -2001,7 +2309,8 @@
   "cara": "NO"
  },
  "2026/03/71UqBVwYuLL._SL1500_.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"James Beard Foundation Book Award, The IACP Cookbook Awards, Gaia\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/81FeXMeuEoL._SL1500_.jpg": {
   "cara": "NO"
@@ -2010,25 +2319,29 @@
   "cara": "NO"
  },
  "2026/03/a4-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/a4-ia-2.jpg": {
   "cara": "NO"
  },
  "2026/03/a4-ia-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/a4-ia-4.jpg": {
   "cara": "NO"
  },
  "2026/03/a6-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"FRISOLUS\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/a7-ia-1.jpg": {
   "cara": "NO"
  },
  "2026/03/a8-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"TASTA, FARMACIA, BAR EL TIGRE\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/aioli-featured.jpg": {
   "cara": "NO"
@@ -2040,76 +2353,94 @@
   "cara": "NO"
  },
  "2026/03/b1-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b1-2.jpg": {
   "cara": "NO"
  },
  "2026/03/b1-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b2-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Château Marquis d'Alesme\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b2-2.jpg": {
   "cara": "NO"
  },
  "2026/03/b2-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b4-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b4-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Dell, Apple, Wacom, MADRID DISEÑO 2026\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b4-3.jpg": {
   "cara": "NO"
  },
  "2026/03/b5-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b5-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"FOODSAFE\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b5-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"NINGUNO\",\n\"marcas_terceros\": \"GLOBAL FOODS\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/03/b6-1.jpg": {
   "cara": "NO"
  },
  "2026/03/b6-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"SAN MIGUEL, TIRO-SOSA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b6-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"SANIDAD MADRID 2026\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b7-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DIVI XO, SONY, Manfrotto\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b7-2.jpg": {
   "cara": "NO"
  },
  "2026/03/b7-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple, Lightroom, EMT\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b8-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DELL\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b8-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Mahou, REVO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/b8-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Lenovo, Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/bacalhau-a-bras.jpg": {
   "cara": "NO"
  },
  "2026/03/balsamico-barriles.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Acetaia Modena, AI CHEF PRO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/balsamico-featured.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AI Chef Pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/balsamico-plato.jpg": {
   "cara": "NO"
@@ -2151,7 +2482,8 @@
   "cara": "NO"
  },
  "2026/03/calculadora-food-cost-ia-img2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/calculadora-food-cost-ia-img3.jpg": {
   "cara": "NO"
@@ -2166,13 +2498,16 @@
   "cara": "NO"
  },
  "2026/03/catering-empresas-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"alta\",\n\"marcas_terceros\": \"CATERING MADRID 2020, SUMMIT INNOVACIÓN MADRID\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/03/catering-empresas-ia-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MIRA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/catering-empresas-ia-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ceviche-corte.jpg": {
   "cara": "NO"
@@ -2187,10 +2522,12 @@
   "cara": "NO"
  },
  "2026/03/chatgpt-vs-ai-chef-pro-comparativa-restaurantes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"RESTAURANTE ALMA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/chef-fotografiando-plato-marketing-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"RESTAURANTE AMALAGAMA, MADRID 2026\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/chicken-adobo.jpg": {
   "cara": "NO"
@@ -2199,13 +2536,16 @@
   "cara": "NO"
  },
  "2026/03/colectividades-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/colectividades-ia-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/colectividades-ia-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/confit-de-pato.jpg": {
   "cara": "NO"
@@ -2220,7 +2560,8 @@
   "cara": "NO"
  },
  "2026/03/consomme-ingredientes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"AI Chef Pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/consomme-proceso.jpg": {
   "cara": "NO"
@@ -2229,7 +2570,8 @@
   "cara": "NO"
  },
  "2026/03/context-window-featured-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/coq-au-vin.jpg": {
   "cara": "NO"
@@ -2244,19 +2586,24 @@
   "cara": "NO"
  },
  "2026/03/dark-kitchen-analytics-dashboard-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Glovo, Deliveroo, Just Eat, Bolt\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/dark-kitchen-delivery-rider-recogida-pedidos.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"Glovo, Madrid Food Co., Must Eat\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/dark-kitchen-ia-cocina-fantasma-madrid-2026.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"GLOVO, DELIVEROO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/dark-kitchen-multi-marca-poke-burger-pasta-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"PASTA MADRID\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/dashboard-kpis-inventario-restaurante-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/deglasear-featured.jpg": {
   "cara": "NO"
@@ -2277,7 +2624,8 @@
   "cara": "NO"
  },
  "2026/03/equipo-restaurante-reputacion-online-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple, Google\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/escabeche-featured.jpg": {
   "cara": "NO"
@@ -2289,7 +2637,8 @@
   "cara": "NO"
  },
  "2026/03/escandallo-cocina-profesional-ia-chef-calculando-costes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"LUMBRE, Excel\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/escandallo-ia-dashboard-food-cost-restaurante.jpg": {
   "cara": "NO"
@@ -2301,19 +2650,22 @@
   "cara": "NO"
  },
  "2026/03/feijoada.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/fermentacion-featured.jpg": {
   "cara": "NO"
  },
  "2026/03/fermentacion-interna.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/flambeado-bananas.jpg": {
   "cara": "NO"
  },
  "2026/03/flambeado-bebidas.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/flambeado-featured.jpg": {
   "cara": "NO"
@@ -2325,16 +2677,20 @@
   "cara": "NO"
  },
  "2026/03/foiegras-tipos.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/food-truck-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MADRID 2026, CAFÉ SOL, FARMACIA, EMT (bus)\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/food-truck-ia-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/food-truck-ia-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"EL TACO MODERNO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/gelificacion-featured.jpg": {
   "cara": "NO"
@@ -2343,16 +2699,20 @@
   "cara": "NO"
  },
  "2026/03/gestion-inventario-restaurante-ia-chef-tablet.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DIVERXO MADRID\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/gestion-personal-hosteleria-ia-1.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/gestion-personal-hosteleria-ia-2.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/gestion-personal-hosteleria-ia-3.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/glazing-featured.jpg": {
   "cara": "NO"
@@ -2382,7 +2742,8 @@
   "cara": "NO"
  },
  "2026/03/homogeneizacion-featured.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"LANEMA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/homogeneizacion-interna.jpg": {
   "cara": "NO"
@@ -2391,28 +2752,35 @@
   "cara": "NO"
  },
  "2026/03/ia-gestion-alergenos-tablet-dashboard.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"EL MERCADO DE SAN MIGUEL, RESTAURANTE EL JARDÍN\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ia-hoteles-fb-img1-hero.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ia-hoteles-fb-img2-buffet.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ia-hoteles-fb-img3-banquet.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ia-restaurante-vegano-chef-madrid.jpg": {
-  "cara": "ERROR:Expecting value: line 1 column 1 (char 0)"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"HUERTA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ia-restaurante-vegano-dashboard-gestion.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/incrustacion-featured.jpg": {
   "cara": "NO"
  },
  "2026/03/incrustacion-interna.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/iskender-kebab.jpg": {
   "cara": "NO"
@@ -2442,13 +2810,15 @@
   "cara": "NO"
  },
  "2026/03/marketing-restaurantes-ia-analytics-redes-sociales.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Instagram, TikTok\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/masala-dosa.jpg": {
   "cara": "NO"
  },
  "2026/03/mermas-fifo-almacen-camara-frigorifica-profesional.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/mermas-ia-dashboard-prediccion-demanda-restaurante.jpg": {
   "cara": "NO"
@@ -2520,10 +2890,12 @@
   "cara": "NO"
  },
  "2026/03/productos-digitales-2.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/productos-digitales-3.png": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/productos-digitales-4.png": {
   "cara": "NO"
@@ -2541,22 +2913,27 @@
   "cara": "NO"
  },
  "2026/03/reducir-mermas-restaurante-control-desperdicios-ia.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"NINGUNA\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/03/rendang-indonesio.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/restaurante-vegano-interior-madrid.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MAÑANA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/risotto-hongos.jpg": {
   "cara": "NO"
  },
  "2026/03/risotto-tostatura.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/ropa-vieja-cubana.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/salsa-bolonesa-autentica.jpg": {
   "cara": "NO"
@@ -2571,7 +2948,8 @@
   "cara": "NO"
  },
  "2026/03/sousvide-resultado.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AI CHEF PRO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/03/swedish-meatballs.jpg": {
   "cara": "NO"
@@ -2598,7 +2976,8 @@
   "cara": "NO"
  },
  "2026/03/thermomix-vintage.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"thermomix, AI Chef Pro\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/03/wiener-schnitzel-1.jpg": {
   "cara": "NO"
@@ -2613,7 +2992,8 @@
   "cara": "NO"
  },
  "2026/04/pseo-es-city-madrid.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/04/pseo-es-city-miami.jpg": {
   "cara": "NO"
@@ -2646,7 +3026,8 @@
   "cara": "NO"
  },
  "2026/05/fond-cuerpo.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/05/fond-destacada.jpg": {
   "cara": "NO"
@@ -2664,7 +3045,8 @@
   "cara": "NO"
  },
  "2026/05/holandesa-cuerpo.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/05/holandesa-destacada.jpg": {
   "cara": "NO"
@@ -2718,7 +3100,8 @@
   "cara": "NO"
  },
  "2026/05/veloute-cuerpo.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/05/veloute-destacada.jpg": {
   "cara": "NO"
@@ -2748,13 +3131,16 @@
   "cara": "NO"
  },
  "2026/06/catering-ai-canapes-montaje.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/chefcon-cocina-profesional-brigada-apertura.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/chefcon-destacada-chef-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MD CONSULTING, THE OAK ROOM\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/chefcon-plato-signature-fine-dining.jpg": {
   "cara": "NO"
@@ -2778,7 +3164,8 @@
   "cara": "NO"
  },
  "2026/06/chocon-destacada-chocolatero-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"ORIGINS, AKAN\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/06/cocina-creativa-emplatado-tecnica.jpg": {
   "cara": "NO"
@@ -2790,22 +3177,27 @@
   "cara": "NO"
  },
  "2026/06/consultor-dashboard-kpis-rentabilidad-restaurante.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"MacBook Pro\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
  },
  "2026/06/consultor-destacada-consultoria-gastronomica.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/consultor-plan-negocio-proyecciones-financieras.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/fermentus-destacada-fermentacion-creativa.jpg": {
   "cara": "NO"
  },
  "2026/06/fermentus-koji-miso-garum-laboratorio.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/fermentus-kombucha-vinagres-conservas-autor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/food-pairing-mapa-aromas.jpg": {
   "cara": "NO"
@@ -2826,10 +3218,12 @@
   "cara": "NO"
  },
  "2026/06/heladcon-destacada-heladero-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"ATAGO\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"SI\"}"
  },
  "2026/06/heladcon-obrador-gelato-formulacion.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"CATTABRIGA, A&D, ZEUS\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/06/heladcon-vitrina-gelato-sabores-artesanal.jpg": {
   "cara": "NO"
@@ -2844,7 +3238,8 @@
   "cara": "NO"
  },
  "2026/06/mermas-gencal-control-costes-destacada.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"OAKTON, RESTAURANT LUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/06/mermas-gencal-despiece-merma.jpg": {
   "cara": "NO"
@@ -2862,10 +3257,12 @@
   "cara": "NO"
  },
  "2026/06/pastecon-destacada-pastelero-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"THE ART OF PASTRY\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/pastecon-obrador-montaje-equipamiento.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"Obrador Artesanal, MERANDINA, KitchenAid, EUROFOURS\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/06/pastecon-viennoiserie-croissants-laminado.jpg": {
   "cara": "NO"
@@ -2877,7 +3274,8 @@
   "cara": "NO"
  },
  "2026/06/pizzcon-fermentacion-bolas-panetti.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"King Arthur\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/pizzcon-margherita-napoletana-leopardatura.jpg": {
   "cara": "NO"
@@ -2892,19 +3290,22 @@
   "cara": "NO"
  },
  "2026/06/timlup-hero-checklist-digital.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/timlup-ia-aplicada-gestion.jpg": {
   "cara": "NO"
  },
  "2026/06/timlup-panel-listas-recurrentes.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/timlup-papel-vs-control-total.jpg": {
   "cara": "NO"
  },
  "2026/06/timlup-sectores-negocios.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/06/vegchef-bowl-plant-based-colorido-raw.jpg": {
   "cara": "NO"
@@ -2931,7 +3332,8 @@
   "cara": "NO"
  },
  "2026/07/bartcon-destacada-bartender-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/bartcon-destilados-backbar.jpg": {
   "cara": "NO"
@@ -2940,7 +3342,8 @@
   "cara": "NO"
  },
  "2026/07/chefejec-pase-brigada-servicio.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"THE FOUNDRY KITCHEN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/chefejec-plato-signature-fine-dining.jpg": {
   "cara": "NO"
@@ -2949,10 +3352,12 @@
   "cara": "NO"
  },
  "2026/07/chefpriv-cocina-yate-servicio.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"MY LUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/07/chefpriv-destacada-chef-privado.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"Lea Roesi\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Wolf\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
  },
  "2026/07/comparar-precios-proveedores-pedido-optimo.jpg": {
   "cara": "NO"
@@ -2970,13 +3375,16 @@
   "cara": "NO"
  },
  "2026/07/gerente-analisis-financiero-pl.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/gerente-destacada-gerente-restaurante.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/gerente-sala-experiencia-cliente.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/gestion-proveedores-recepcion-albaran-restaurante.jpg": {
   "cara": "NO"
@@ -2985,7 +3393,8 @@
   "cara": "NO"
  },
  "2026/07/pancon-destacada-panadero-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"BONGARD\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/pancon-hogaza-masa-madre-miga.jpg": {
   "cara": "NO"
@@ -3000,12 +3409,359 @@
   "cara": "NO"
  },
  "2026/07/sommcon-destacada-sommelier-consultor.jpg": {
-  "cara": "SI"
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  },
  "2026/07/sommcon-espumoso-copa-flauta.jpg": {
   "cara": "NO"
  },
  "2026/07/sommcon-maridaje-vino-plato.jpg": {
   "cara": "NO"
+ },
+ "en/2026/02/ai-generation.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/featured1-new.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/featured2-new.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/food-cost-chef.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MacBook Pro, Microsoft Excel\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/menu-engineering-ipad.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/profit-tablet.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/02/tools-comparison.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/ai-food-quality-control-machine-vision.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/ai-inventory-management-food-waste.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/ai-prep-planning-waste-reduction.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/automated-restaurant-kitchen-robotics.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/bar-profit-margins-guide.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/bar-profitability-analytics-software.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple, OCTAVE\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/bartender-measuring-pour-cost.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"CAMPARI, THE MACALLAN, TORO'S GIN, ROYTONORQ\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/best-recipe-costing-software-2026.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/best-restaurant-management-software-2026.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/break-even-chart.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/campus-food-delivery-robot.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/chef-social-media-food-photography-1.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"iPhone\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/chef-using-recipe-costing-software.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"SOUL KITCHEN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/computer-vision-food-quality-restaurant.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DISHA, EI-CAM_XS\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/customer-retention-strategies-restaurants.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"LOCALE, HOTEL, COURTNEY GILROY\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/digital-loyalty-program-restaurant.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n\"confianza\": \"baja\",\n\"marcas_terceros\": \"GRIN & CO.\",\n\"texto_ilegible\": \"NO\",\n\"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/food-delivery-robots-guide.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/food-quality-analytics-dashboard.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/google-business-profile-restaurant.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/haccp-documentation-digital-tablet.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"HARVEST\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/haccp-food-safety-7-principles.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"FIELD & CO, TORK, ECOLAB, GOJO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/haccp-hazard-analysis-team.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"Apple, Microsoft, Noma\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/haccp-plan-template-restaurant.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/haccp-temperature-monitoring-kitchen.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/inventory-chef.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/iot-temperature-monitoring-haccp.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/kds-kitchen-performance-analytics.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/kds-screen-orders-restaurant.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/kitchen-display-system-kds-guide.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/kitchen-display-system-restaurant-technology.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/local-restaurant-search-results-map.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple, Google\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/management-tablet.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Microsoft Excel\", \"texto_ilegible\": \"SI\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/mental-health-chef.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"CALM\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/menu-pricing-laptop.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MacBook Pro, Pyrex\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post1-hero-ai-recipe-scaling.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post1-recipe-prep-scaling.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post1-scaling-comparison.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post1-team-ai-kitchen.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post10-hero-virtual-launch.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post10-menu-development.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Uber Eats\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post11-food-cost.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post11-hero-profit.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"HARVEST BISTRO\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post12-hero-recipe-cost.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post12-ingredient-pricing.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post12-menu-costing.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post2-hero-chef-digital-kitchen.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post2-inventory-management.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post2-team-briefing.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"THE NEAT™ HART STORE\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post3-chef-plating.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"GREIFF\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post3-hero-menu-pricing.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"Apple, Microsoft\",\n \"texto_ilegible\": \"SI\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post3-pricing-analytics.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post4-combi-oven.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"RATIONAL, iCombi Pro, THE PIG & PINE\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post4-hero-smart-kitchen.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"RATIONAL\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post4-iot-dashboard.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post5-hero-ai-chef.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post5-recipe-scaling.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post5-team-training.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AURORA LIFESEA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post6-hero-ghost-kitchen.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post6-multi-brand.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post6-packaging-station.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post7-delivery-pickup.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"DELIVEROO, PIZZA EXPRESS, SUSHI SAMI, BOWL-LICIOUS, WOK TO BE, NAN'S CURRY KITCHEN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post7-hero-cloud-kitchen.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post7-multi-brand-ops.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"STAKT BURGER, STAKT, NAGA RAMEN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post8-comparison.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Nonna's Pasta, Burger Craft, Thai Wok, Sally's Salads, Urban Eats, Deliveroo\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post8-hero-dark-kitchen.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/post9-hero-tech-stack.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"NINGUNO\",\n \"marcas_terceros\": \"Uber Eats, DoorDash, Slice, Apple, GhostHQ, Google\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post9-order-tablets.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"NINGUNO\",\n \"marcas_terceros\": \"Deliveroo, Uber Eats, Just Eat, Scopdich, Sgord, HappyPanda\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/post9-pos-analytics.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"THE GHOST KITCHEN\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/recipe-costing-scale.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/recipe-costing-software-dashboard-comparison.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/restaurant-customer-feedback-review.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-email-marketing-campaign-1.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"DELL Technologies, Apple\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-food-waste-ai-strategies.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"baja\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-loading-delivery-robot.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/restaurant-marketing-strategy-2026-1.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Instagram\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-pos-system-touchscreen.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/restaurant-seo-complete-guide.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Apple, Google, THE HEARTHSTER\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-staff-scheduling-software.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"baja\",\n \"marcas_terceros\": \"NINGUNA\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/restaurant-technology-2026-guide.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"AURORA, DELL\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/robot-server-restaurant-delivery.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"Gusto\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/robotic-restaurant-robot-chef.png": {
+  "cara": "NO"
+ },
+ "en/2026/03/self-ordering-kiosk-restaurant-technology.png": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"NINGUNA\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/03/waste-management.jpg": {
+  "cara": "NO"
+ },
+ "en/2026/04/chef-analyzing-menu-profitability.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\",\n \"confianza\": \"alta\",\n \"marcas_terceros\": \"THE SKYLARK\",\n \"texto_ilegible\": \"NO\",\n \"retrato_posado\": \"NO\"}"
+ },
+ "en/2026/04/menu-engineering-dashboard-tablet.jpg": {
+  "cara": "NO"
+ },
+ "en/2026/04/menu-engineering-software-hero.jpg": {
+  "cara": "SI",
+  "riesgo": "{\"parecido\": \"NINGUNO\", \"confianza\": \"alta\", \"marcas_terceros\": \"MacBook Pro\", \"texto_ilegible\": \"NO\", \"retrato_posado\": \"NO\"}"
  }
 }

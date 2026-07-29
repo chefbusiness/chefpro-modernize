@@ -2,9 +2,9 @@
 title: "Prompts para Aprovechar al Máximo la Herramienta: Chef Privado Pro"
 description: "Chef Privado Pro: guía de prompts para planificar menús personalizados, integrar dietas, calcular escandallos domésticos con merma y cocinar en yates y jets."
 pubDate: 2026-07-05
-modDate: 2026-07-05
+modDate: 2026-07-29
 category: libreria-de-prompts
-image: /blog-assets/2026/07/chefpriv-destacada-chef-privado.jpg
+image: /blog-assets/2026/07/chefpriv-emplatado-manos.jpg
 imageAlt: "Chef privado emplatando un plato de alta cocina en la cocina de una residencia de lujo"
 lang: es
 wpId: 4883
