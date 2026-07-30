@@ -37,6 +37,10 @@ interface Props {
   post: BlogPost;
 }
 
+/** Marca personal del autor. Toda mención con nombre enlaza aquí, en pestaña
+ *  nueva: es sitio externo y no queremos sacar al lector del artículo. */
+const AUTOR_URL = 'https://johnguerrero.es';
+
 const { post } = Astro.props;
 const { title, description, pubDate, modDate, image, imageAlt, faq, category } = post.data;
 const lang = post.data.lang;
@@ -96,7 +100,11 @@ const schemas: object[] = [
     author: {
       '@type': 'Person',
       name: 'John Guerrero',
-      url: `${SITE}${blogBase(lang)}`,
+      // `url` es la página de identidad del autor, no el listado donde publica:
+      // apunta a su marca personal, que es la que consolida su E-E-A-T fuera de
+      // este dominio. `sameAs` la enlaza con el perfil del canal.
+      url: AUTOR_URL,
+      sameAs: [AUTOR_URL, 'https://youtube.com/@aichefpro'],
       description: T.authorBio,
     },
     publisher: {
@@ -181,7 +189,15 @@ const schemas: object[] = [
         <h1 class="mt-2 text-3xl font-bold leading-tight text-foreground md:text-4xl">{title}</h1>
         <p class="mt-4 text-lg text-muted-foreground">{description}</p>
         <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
-          <span>{T.by} <strong class="text-foreground">John Guerrero</strong></span>
+          <span>
+            {T.by}{' '}
+            <a
+              href={AUTOR_URL}
+              target="_blank"
+              rel="noopener noreferrer author"
+              class="font-semibold text-foreground hover:text-primary transition-colors"
+            >John Guerrero</a>
+          </span>
           <time datetime={pubDate.toISOString().slice(0, 10)}>{formatDate(pubDate, lang)}</time>
           {modDate && modDate.valueOf() !== pubDate.valueOf() && (
             <span>{T.updated} {formatDate(modDate, lang)}</span>

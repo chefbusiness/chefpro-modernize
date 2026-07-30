@@ -147,6 +147,9 @@ const schemas = [
       'Chef con 29 años de trayectoria en alta hostelería, 15 de ellos en consultoría gastronómica. Fundador del grupo ChefBusiness y creador de AI Chef Pro, la suite de IA para profesionales de la cocina.',
     image: founderImg,
     url: `${SITE}/sobre-nosotros`,
+    // Marca personal y canal oficial: enlazan la entidad Person con sus perfiles
+    // fuera de este dominio (señal E-E-A-T).
+    sameAs: ['https://johnguerrero.es', 'https://youtube.com/@aichefpro'],
     knowsAbout: [
       'Alta hostelería',
       'Consultoría gastronómica',
@@ -244,7 +247,9 @@ const iconPaths: Record<string, string> = {
             <div class="mx-auto mb-4 h-36 w-36 overflow-hidden rounded-full border-4 border-accent/30 shadow-md">
               <img src={founderImg} alt="Chef John Guerrero, fundador de AI Chef Pro" width="144" height="144" class="h-full w-full object-cover" loading="lazy" />
             </div>
-            <h2 class="text-xl font-bold text-foreground">John Guerrero</h2>
+            <h2 class="text-xl font-bold text-foreground">
+              <a href="https://johnguerrero.es" target="_blank" rel="noopener noreferrer author" class="hover:text-primary transition-colors">John Guerrero</a>
+            </h2>
             <p class="mt-1 text-sm font-semibold text-primary">Fundador y CEO de AI Chef Pro</p>
             <ul class="mt-4 space-y-2 text-left">
               {bioChips.map((c) => (

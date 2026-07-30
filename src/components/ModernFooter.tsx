@@ -589,7 +589,7 @@ export default function ModernFooter() {
               <Music className="h-4 w-4" />
             </a>
             <a
-              href="https://youtube.com/playlist?list=PLkevVb6pg5bs3b2hlwI8-2wW7juXV-eFj&si=eGAgpRRE0h6zfH1S"
+              href="https://youtube.com/@aichefpro"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
