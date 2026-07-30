@@ -41,9 +41,9 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 ### ⚠️ Material propietario — ESTE REPO ES PÚBLICO
 
-- `chefbusiness/chefpro-modernize` es **público**. Nunca entra aquí material propietario: los **prompts core de los agentes** (el system prompt de Pickaxe que da vida a cada uno) son el producto en sí.
-- Van al repo **privado** `chefbusiness/aichef-blog` → carpeta `agentes-core-prompts/` (clon estable en el VPS: `/root/aichef-blog-repo/`). Un `.md` por agente, con el slug del catálogo canónico; ahí está la plantilla y la convención.
-- Son la fuente de verdad de la Fase 8C: de cada core salen el trabajo que hace el agente, cómo lo hace y qué NO hace. En las páginas se explica **qué hace y cómo aprovecharlo**; **el prompt no se publica jamás**.
+- `chefbusiness/chefpro-modernize` es **público**. Los **prompts core de los agentes** (el system prompt de Pickaxe que da vida a cada uno) son el producto en sí: **no se commitean aquí, ni en el contenido del blog, ni en un `.astro`**.
+- John los comparte en la conversación como material de trabajo: sirven para entender a qué se dedica el agente, cómo lo hace y qué no hace, y desde ahí generar el listado de prompts del usuario final. **No se almacenan** en ningún repo.
+- En las páginas y en los posts se explica **qué hace el agente y cómo aprovecharlo**; **el prompt core no se publica jamás**.
 
 ### Reglas de marca (John, 2026-07-30)
 
