@@ -39,6 +39,12 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 - **El blog es MULTI-IDIOMA desde 8B.6 y sus URLs sólo salen de los helpers de `astro-site/src/lib/blog.ts`** (`postPath`, `categoryPath`, `listPagePath`, `blogBase`). El ES va sin prefijo y con segmentos heredados de WP (`/blog/categoria/…`); el EN va con prefijo y segmentos nativos (`/en/blog/category/…`). Las categorías se resuelven SIEMPRE con idioma (`getCategory(slug, lang)`): `ai-chef-pro` existe en los dos.
 - **En Header/Footer/Hero —que se pintan en los 7 idiomas— el hub del blog es `blogHubHref(lang)`, nunca `blogBase(lang)`**: sólo ES e EN tienen blog, así que `blogBase('fr')` daría `/fr/blog`, que es un 404. `blogHubHref` cae al ES para los idiomas sin blog propio.
 
+### ⚠️ Material propietario — ESTE REPO ES PÚBLICO
+
+- `chefbusiness/chefpro-modernize` es **público**. Nunca entra aquí material propietario: los **prompts core de los agentes** (el system prompt de Pickaxe que da vida a cada uno) son el producto en sí.
+- Van al repo **privado** `chefbusiness/aichef-blog` → carpeta `agentes-core-prompts/` (clon estable en el VPS: `/root/aichef-blog-repo/`). Un `.md` por agente, con el slug del catálogo canónico; ahí está la plantilla y la convención.
+- Son la fuente de verdad de la Fase 8C: de cada core salen el trabajo que hace el agente, cómo lo hace y qué NO hace. En las páginas se explica **qué hace y cómo aprovecharlo**; **el prompt no se publica jamás**.
+
 ### Reglas de marca (John, 2026-07-30)
 
 - **YouTube oficial: `https://youtube.com/@aichefpro`** — nunca el canal personal de John (el pie enlazaba a una playlist suya; corregido en `Footer.astro` y en el gemelo `ModernFooter.tsx` de la SPA).
