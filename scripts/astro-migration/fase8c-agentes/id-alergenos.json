@@ -1,0 +1,168 @@
+{
+ "agente": "ID Alérgenos",
+ "slug": "libreria-de-prompts-para-id-alergenos",
+ "fecha": "2026-07-31",
+ "title": "Prompts para Aprovechar al Máximo la Herramienta: ID Alérgenos",
+ "description": "ID Alérgenos: prompts para detectar los 14 alérgenos, evaluar contacto cruzado, sustituir ingredientes y cumplir el Reglamento UE 1169/2011 en tu cocina.",
+ "que_hace": "Experto en seguridad alimentaria y alérgenos. Identifica y documenta alérgenos en ingredientes, elaboraciones y productos procesados; evalúa riesgo de contacto cruzado; propone sustituciones seguras; y verifica el cumplimiento de etiquetado según el Reglamento UE 1169/2011 y normativa internacional. Analiza etiquetas comerciales (denominaciones técnicas, aditivos, declaraciones tipo «puede contener»), señala productos de alto riesgo (salsas, mezclas de especias, procesados) y devuelve tablas de alérgenos por ingrediente con nivel de riesgo y origen, recomendaciones de almacenamiento y preparación, alternativas y requisitos legales de etiquetado. Prioriza siempre la seguridad del comensal. Puede exportar el resultado a CSV o PDF.",
+ "publico": "chefs, jefes de cocina, responsables de APPCC y gerentes de restaurante en España",
+ "featured": {
+  "src": "/blog-assets/2026/07/idalergenos-destacada-14-alergenos.jpg",
+  "alt": "Los principales alérgenos alimentarios servidos por separado en cuencos blancos sobre una encimera de acero inoxidable"
+ },
+ "img1": {
+  "src": "/blog-assets/2026/07/idalergenos-lectura-etiquetas.jpg",
+  "alt": "Manos revisando la lista de ingredientes de un producto envasado en una cocina profesional"
+ },
+ "img2": {
+  "src": "/blog-assets/2026/07/idalergenos-zona-sin-alergenos.jpg",
+  "alt": "Zona de trabajo diferenciada con tabla de corte de color para elaboraciones sin alérgenos"
+ },
+ "bloques": [
+  {
+   "titulo": "Análisis de Ingredientes y Recetas",
+   "categoria": "Análisis de ingredientes",
+   "foco": "identificar alérgenos directos y secundarios en ingredientes sueltos, elaboraciones intermedias y fichas técnicas de plato completas"
+  },
+  {
+   "titulo": "Evaluación de Contacto Cruzado",
+   "categoria": "Contacto cruzado",
+   "foco": "detectar riesgo de contacto cruzado en recepción, almacenamiento, preparación, cocinado y pase; protocolos de limpieza, utensilios diferenciados y zonas reservadas"
+  },
+  {
+   "titulo": "Productos Procesados y Lectura de Etiquetas",
+   "categoria": "Productos procesados",
+   "foco": "interpretar listas de ingredientes comerciales, denominaciones técnicas y aditivos que esconden alérgenos, y valorar declaraciones tipo «puede contener»; salsas, mezclas de especias y semielaborados"
+  },
+  {
+   "titulo": "Sustituciones y Alternativas Seguras",
+   "categoria": "Sustituciones seguras",
+   "foco": "sustituir ingredientes alergénicos manteniendo textura, sabor, rendimiento y coste, y adaptar recetas existentes sin rehacer la carta"
+  },
+  {
+   "titulo": "Etiquetado y Cumplimiento Normativo",
+   "categoria": "Cumplimiento normativo",
+   "foco": "cumplir el Reglamento UE 1169/2011 y el RD 126/2015 en la información al comensal: cartas, menús, QR, soporte físico o digital y advertencias necesarias"
+  },
+  {
+   "titulo": "Documentación y Registros de Verificación",
+   "categoria": "Documentación y registros",
+   "foco": "montar el registro de alérgenos del establecimiento: fichas por plato, control de lotes y fechas, registro fotográfico de etiquetas, verificación periódica y encaje con el APPCC"
+  },
+  {
+   "titulo": "Formación del Equipo y Atención al Comensal",
+   "categoria": "Equipo y servicio",
+   "foco": "formar a cocina y sala, adaptar el protocolo al tipo de establecimiento y resolver la comunicación con el comensal alérgico durante el servicio"
+  }
+ ],
+ "enlaces": [
+  [
+   "libreria-de-prompts-para-barista-consultor-pro-ai",
+   "Prompts para Barista Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-bartender-consultor-pro-ai",
+   "Prompts para Bartender Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-burger-pro-ai",
+   "Prompts para Burger Pro AI+"
+  ],
+  [
+   "libreria-de-prompts-para-catering-ai",
+   "Prompts para Catering AI+"
+  ],
+  [
+   "libreria-de-prompts-para-chef-consultor-pro-ai",
+   "Prompts para Chef Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chef-ejecutivo-pro-ai",
+   "Prompts para Chef Ejecutivo Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chef-privado-pro-ai",
+   "Prompts para Chef Privado Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chocolateria-creativa-ai",
+   "Prompts para Chocolatería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-chocolatero-consultor-pro-ai",
+   "Prompts para Chocolatero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-consultor-gastronomico-ai",
+   "Prompts para Consultor Gastronómico"
+  ],
+  [
+   "libreria-de-prompts-para-fermentus-ai",
+   "Prompts para Fermentus con AI+"
+  ],
+  [
+   "libreria-de-prompts-para-food-pairing-ai",
+   "Prompts para Food Pairing AI"
+  ],
+  [
+   "libreria-de-prompts-para-gastro-lexicum-ai",
+   "Prompts para Gastro Lexicum"
+  ],
+  [
+   "libreria-de-prompts-para-gerente-de-restaurante-pro-ai",
+   "Prompts para Gerente de Restaurante Pro"
+  ],
+  [
+   "libreria-de-prompts-para-heladeria-creativa-ai",
+   "Prompts para Heladería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-heladero-consultor-pro-ai",
+   "Prompts para Heladero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-mermas-gencal",
+   "Prompts para Mermas GenCal"
+  ],
+  [
+   "libreria-de-prompts-para-panaderia-creativa-ai",
+   "Prompts para Panadería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-panadero-consultor-pro-ai",
+   "Prompts para Panadero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-pasteleria-creativa-ai",
+   "Prompts para Pastelería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-pastelero-consultor-pro-ai",
+   "Prompts para Pastelero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-pizzero-consultor-pro-ai",
+   "Prompts para Pizzero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-recetario-cocina-creativa-ai",
+   "Prompts para Prompts para Aprovechar al Máximo la Herramienta Recetarios AI: Cocina Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-sommelier-consultor-pro-ai",
+   "Prompts para Sommelier Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-vegchef-plant-based-ai",
+   "Prompts para VegChef Plant-Based"
+  ],
+  [
+   "ia-gestion-alergenos-hosteleria",
+   "Gestión de alérgenos en restaurante: los 14 y la ley"
+  ],
+  [
+   "alergenos",
+   "Alérgenos alimentarios: la lista de los 14 obligatorios"
+  ]
+ ]
+}

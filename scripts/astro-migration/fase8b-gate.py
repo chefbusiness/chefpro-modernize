@@ -11,7 +11,7 @@ LOCAL (siempre):
 
 REMOTO (--base URL, p.ej. el branch deploy):
   4. Hub /blog 200 con tarjetas + categorías + rel alternate RSS.
-  5. Paginación completa 200 (páginas 2..N según EXPECTED_POSTS/24).
+  5. Paginación completa 200 (páginas 2..N según los posts publicados/24).
   6. Muestra de 20 posts: 200 + <title> coincide con frontmatter + canonical
      a aichef.pro/blog/{slug} + BlogPosting + hreflang es/x-default.
   7. Categorías (6) 200 · RSS 200 con items · muestra de 10 assets 200.
@@ -37,7 +37,11 @@ VALID_CATS = {'ia-en-gastronomia', 'ai-chef-pro', 'libreria-de-prompts',
               'tutoriales', 'glosario', 'recetas'}
 # 346 al portar desde WordPress (Fase 8B) − 24 consolidados con 301 hacia su
 # pilar refrescado el 2026-07-28 (fase8c-consolidar-301.py) = 322.
-EXPECTED_POSTS = 322
+# A partir de 8C el blog también crea contenido NATIVO (que no viene de ningún
+# WordPress), así que este número deja de ser un censo cerrado y pasa a ser un
+# suelo: nunca menos, porque perder posts migrados sí sería un fallo.
+MIN_POSTS = 322
+POSTS_NATIVOS = 1   # +1 librería de prompts de ID Alérgenos (2026-07-31)
 PER_PAGE = 24
 
 checks = fails = 0
@@ -88,7 +92,9 @@ def main():
 
     print('— LOCAL —')
     mds = sorted(CONTENT.glob('*.md'))
-    check(len(mds) == EXPECTED_POSTS, 'posts .md: %d != %d' % (len(mds), EXPECTED_POSTS))
+    # Suelo, no igualdad: el blog ya crea contenido propio. Bajar de aquí
+    # significaría haber perdido posts migrados, que sí es un fallo.
+    check(len(mds) >= MIN_POSTS, 'posts .md: %d < %d (mínimo migrado)' % (len(mds), MIN_POSTS))
 
     posts = {}
     for md in mds:
@@ -99,8 +105,10 @@ def main():
         if not fm:
             continue
         posts[slug] = fm
-        for k in ('title', 'description', 'category', 'pubDate', 'wpId'):
+        for k in ('title', 'description', 'category', 'pubDate'):
             check(bool(fm.get(k)), '%s: falta %s' % (slug, k))
+        # `wpId` es la trazabilidad al post de WordPress de origen: sólo tiene
+        # sentido exigirlo a los migrados. Los nativos de Astro no lo tienen.
         check(fm.get('category') in VALID_CATS,
               '%s: categoría inválida %r' % (slug, fm.get('category')))
         body = txt.split('---\n', 2)[-1]
@@ -139,7 +147,10 @@ def main():
         check('application/rss+xml' in hub, '/blog: sin rel alternate RSS')
         check('/blog/pagina/2' in hub, '/blog: sin enlace a página 2')
 
-        total_pages = -(-EXPECTED_POSTS // PER_PAGE)
+        # La paginación se calcula sobre los posts REALES publicados, no sobre
+        # una constante: si no, cada post nuevo rompe el gate sin motivo.
+        publicados = sum(1 for fm in posts.values() if not fm.get('draft'))
+        total_pages = -(-publicados // PER_PAGE)
         for n in range(2, total_pages + 1):
             st, _ = curl('%s/blog/pagina/%d' % (B, n))
             check(st == 200, '/blog/pagina/%d: HTTP %d' % (n, st))
