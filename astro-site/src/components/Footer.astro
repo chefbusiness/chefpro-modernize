@@ -108,6 +108,10 @@ const blogLinks: FooterLink[] =
           <li><a href={{ es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise', it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen' }[lang] ?? '/precios'} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
           <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
           <li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>
+          <!-- Canal oficial de YouTube: además del icono social del pie, tiene
+               sitio propio en Formación porque es donde el usuario busca aprender
+               (John, 2026-07-31). -->
+          <li><a href="https://youtube.com/@aichefpro" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.youtube_canal')}</a></li>
           <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.planes_precios')}</a></li>
         </ul>
       </div>

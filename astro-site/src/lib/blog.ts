@@ -74,6 +74,15 @@ const CATEGORIES_EN: BlogCategory[] = [
     description:
       'Everything about the platform itself: walkthroughs of the culinary AI agents, what is new in each release and the workflows chefs and operators actually run with them.',
   },
+  {
+    // 8C — Las librerías de prompts por agente. El ES las tiene bajo
+    // 'libreria-de-prompts'; en EN el segmento es nativo, no una traducción
+    // literal del slug español.
+    slug: 'prompt-library',
+    name: 'Prompt Library',
+    description:
+      'Ready-to-use prompt libraries for every AI Chef Pro agent: copy them, adapt them to your operation and get straight to a usable answer instead of staring at a blank chat.',
+  },
 ];
 
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */

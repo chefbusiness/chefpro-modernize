@@ -1,0 +1,20 @@
+{
+ "id-alergenos": {
+  "agente": "ID Alérgenos",
+  "slug_en": "prompt-library-allergen-identification",
+  "productos": [
+   "pack-appcc",
+   "kit-tareas",
+   "pro-prompts-ebook"
+  ]
+ },
+ "comida-de-personal": {
+  "agente": "Comida de Personal",
+  "slug_en": "prompt-library-staff-meals",
+  "productos": [
+   "kit-gestion-personal",
+   "kit-escandallos",
+   "kit-tareas"
+  ]
+ }
+}
