@@ -123,8 +123,11 @@ def tabla(filas):
           '<th>Categoría</th></tr></thead>')
     tds = ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % (esc(a), esc(b), esc(c))
                   for a, b, c in filas)
-    return ('<figure class="wp-block-table"><div class="table-scroll"><table>%s<tbody>%s'
-            '</tbody></table></div></figure>' % (th, tds))
+    # `tabla-prompts` da a estas tablas su propio tratamiento responsive: la
+    # primera celda es prosa larga y con el CSS genérico del catálogo la tabla
+    # se iba a ~3.000 px de ancho con scroll horizontal (inusable).
+    return ('<figure class="wp-block-table"><div class="table-scroll tabla-prompts"><table>%s'
+            '<tbody>%s</tbody></table></div></figure>' % (th, tds))
 
 
 def h2(t):

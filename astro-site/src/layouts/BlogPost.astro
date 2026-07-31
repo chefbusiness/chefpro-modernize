@@ -270,12 +270,74 @@ const schemas: object[] = [
   }
   .blog-prose .table-scroll > table {
     margin: 0;
-    width: max-content;
-    min-width: 100%;
+    /* Antes: `width: max-content` + `min-width: 8rem` por celda. Servía para las
+       tablas de datos migradas de WP (celdas cortas), pero con prosa larga en una
+       celda la tabla crecía hasta ~3.000 px y escondía el 72 % del contenido tras
+       un scroll horizontal, además de desbordar la página. Ahora la tabla se
+       ajusta al contenedor y el texto ROMPE LÍNEA, que es lo que debe hacer. */
+    width: 100%;
+    min-width: 0;
   }
   .blog-prose .table-scroll th,
   .blog-prose .table-scroll td {
-    min-width: 8rem;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+  }
+
+  /* ── Tablas de prompts (177 en 26 posts de la línea de librerías) ──────────
+     Su primera celda es una petición de 25-60 palabras: necesitan reparto de
+     ancho propio, y en móvil dejar de ser tabla. La clase la pone
+     scripts/astro-migration/fase8c-marcar-tablas-prompts.py y la emite ya el
+     generador de librerías. */
+  .blog-prose .tabla-prompts > table {
+    table-layout: fixed;
+  }
+  .blog-prose .tabla-prompts th:first-child,
+  .blog-prose .tabla-prompts td:first-child {
+    width: 58%;
+  }
+  .blog-prose .tabla-prompts th:nth-child(2),
+  .blog-prose .tabla-prompts td:nth-child(2) {
+    width: 24%;
+  }
+  .blog-prose .tabla-prompts th:last-child,
+  .blog-prose .tabla-prompts td:last-child {
+    width: 18%;
+  }
+
+  /* En móvil una tabla de 3 columnas con un prompt largo es ilegible: cada fila
+     pasa a ser una tarjeta con el prompt arriba y sus dos etiquetas debajo. */
+  @media (max-width: 640px) {
+    .blog-prose .tabla-prompts thead {
+      display: none;
+    }
+    .blog-prose .tabla-prompts > table,
+    .blog-prose .tabla-prompts tbody,
+    .blog-prose .tabla-prompts tr,
+    .blog-prose .tabla-prompts td {
+      display: block;
+      /* sin `width: 100%`: un bloque ya ocupa el ancho disponible, y con el
+         padding de la tarjeta el 100% se desbordaba 32 px */
+      width: auto;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    .blog-prose .tabla-prompts tr {
+      border: 1px solid hsl(var(--border));
+      border-radius: 0.5rem;
+      padding: 0.85rem 1rem;
+      margin-bottom: 0.85rem;
+    }
+    .blog-prose .tabla-prompts td {
+      border: 0;
+      padding: 0;
+    }
+    .blog-prose .tabla-prompts td:not(:first-child) {
+      margin-top: 0.5rem;
+      font-size: 0.8125rem;
+      color: hsl(var(--muted-foreground));
+    }
   }
   /* Cinturón por si algún HTML trae tablas sin envolver o <pre> anchos */
   .blog-prose > table,
