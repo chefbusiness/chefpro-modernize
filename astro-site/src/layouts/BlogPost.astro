@@ -43,6 +43,14 @@ const AUTOR_URL = 'https://johnguerrero.es';
 
 const { post } = Astro.props;
 const { title, description, pubDate, modDate, image, imageAlt, faq, category } = post.data;
+/**
+ * Par de traducción (8C). Sin él, cada post declara solo su propio hreflang
+ * —correcto mientras el blog EN fue contenido distinto—; con él, los dos se
+ * declaran mutuamente, que es lo que Google necesita para no tratarlos como
+ * piezas sin relación. Las rutas van COMPLETAS (con prefijo de idioma) porque
+ * es lo que espera `alternates` de BaseLayout.
+ */
+const par = post.data.translations;
 const lang = post.data.lang;
 const isEn = lang === 'en';
 const slug = postSlug(post);
@@ -156,7 +164,13 @@ const schemas: object[] = [
   description={description}
   lang={lang}
   basePath={canonicalPath}
-  locales={[lang]}
+  locales={par ? (['es', 'en'] as const).filter((l) => l === lang || par[l]) : [lang]}
+  alternates={par
+    ? {
+        ...(par.es || lang === 'es' ? { es: `/blog/${par.es ?? slug}` } : {}),
+        ...(par.en || lang === 'en' ? { en: `/en/blog/${par.en ?? slug}` } : {}),
+      }
+    : undefined}
   ogImage={image ? `${SITE}${image}` : undefined}
 >
   <Fragment slot="head">

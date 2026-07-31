@@ -6,6 +6,16 @@
    "pack-appcc",
    "kit-tareas",
    "pro-prompts-ebook"
+  ],
+  "enlaces_extra": [
+   {
+    "slug": "haccp-food-safety-7-principles-restaurants",
+    "texto": "HACCP: the 7 principles, applied in a real kitchen"
+   },
+   {
+    "slug": "haccp-plan-template-restaurant-guide",
+    "texto": "How to build your HACCP plan, step by step"
+   }
   ]
  },
  "comida-de-personal": {
@@ -15,6 +25,16 @@
    "kit-gestion-personal",
    "kit-escandallos",
    "kit-tareas"
+  ],
+  "enlaces_extra": [
+   {
+    "slug": "ai-food-cost-calculator-reduce-costs",
+    "texto": "Cutting food cost with AI, without cutting quality"
+   },
+   {
+    "slug": "restaurant-food-waste-ai-strategies",
+    "texto": "Food waste strategies that actually stick"
+   }
   ]
  }
 }

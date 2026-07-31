@@ -24,6 +24,16 @@ const blog = defineCollection({
     wpId: z.number().optional(),
     /** Tier de migración del análisis (A oro / B autoridad / C consumo) */
     tier: z.enum(['A', 'B', 'C']).optional(),
+    /**
+     * Slug del MISMO post en otro idioma. 8B.6 asumió que el blog EN no traducía
+     * nada del ES y por eso el layout emite `locales={[lang]}`; con las librerías
+     * de prompts de 8C eso deja de ser cierto: son el mismo contenido adaptado.
+     * Cuando está presente, el layout emite hreflang recíproco entre los dos.
+     */
+    translations: z.object({
+      es: z.string().optional(),
+      en: z.string().optional(),
+    }).optional(),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     draft: z.boolean().default(false),
   }),

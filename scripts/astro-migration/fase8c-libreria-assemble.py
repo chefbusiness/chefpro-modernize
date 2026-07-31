@@ -158,12 +158,26 @@ def catalogo_productos():
     out = {}
     for m in re.finditer(
             r"id: '([^']+)',\s*\n\s*url: '([^']+)',\s*\n\s*price: '([^']+)',\s*\n"
-            r"\s*name: \{ es: '([^']+)'.*?description: \{\s*\n\s*es:\s*'([^']+)'", txt, re.S):
-        out[m.group(1)] = (m.group(4), m.group(2), m.group(3), m.group(5))
+            r"\s*name: \{ es: '([^']+)'(?:, en: '([^']+)')?.*?"
+            r"description: \{\s*\n\s*es:\s*'([^']+)',(?:\s*\n\s*en:\s*'([^']+)')?", txt, re.S):
+        pid, url, precio = m.group(1), m.group(2), m.group(3)
+        out[pid] = {
+            'url': url, 'precio': precio,
+            'es': (m.group(4), m.group(6)),
+            # Si un producto no tuviera versión EN se cae al ES: mejor un banner
+            # en español que ninguno, pero queda visible en el informe.
+            'en': (m.group(5) or m.group(4), m.group(7) or m.group(6)),
+        }
     return out
 
 
-def banner(slug_producto, prods, slug_post):
+COPY_BANNER = {
+    'es': ('Producto digital · pago único, acceso de por vida', 'Ver %s por %s'),
+    'en': ('Digital product · one-time payment, lifetime access', 'Get %s for %s'),
+}
+
+
+def banner(slug_producto, prods, slug_post, lang='es'):
     """Banner de producto digital.
 
     POLÍTICA (John, 2026-07-31): mínimo 3 por post de librería de prompts, a tres
@@ -173,17 +187,20 @@ def banner(slug_producto, prods, slug_post):
     y llevan UTM propio para poder medirlos."""
     if slug_producto not in prods:
         sys.exit('producto inexistente en el catálogo: %s' % slug_producto)
-    nombre, url, precio, desc = prods[slug_producto]
+    d = prods[slug_producto]
+    nombre, desc = d[lang]
+    url, precio = d['url'], d['precio']
+    etiqueta, cta = COPY_BANNER[lang]
     return (
         '<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6">'
-        '<p class="text-xs font-semibold uppercase tracking-wide text-accent">'
-        'Producto digital · pago único, acceso de por vida</p>'
+        '<p class="text-xs font-semibold uppercase tracking-wide text-accent">%s</p>'
         '<h3 class="mt-2 text-xl font-bold text-foreground">%s</h3>'
         '<p class="mt-2 text-muted-foreground">%s</p>'
         '<a href="%s?utm_source=blog&amp;utm_medium=banner&amp;utm_content=%s" '
         'class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold '
-        'text-accent-foreground transition-opacity hover:opacity-90">%s por %s</a>'
-        '</aside>' % (esc(nombre), esc(desc), url, slug_post, esc('Ver ' + nombre), esc(precio)))
+        'text-accent-foreground transition-opacity hover:opacity-90">%s</a>'
+        '</aside>' % (esc(etiqueta), esc(nombre), esc(desc), url, slug_post,
+                      esc(cta % (nombre, precio))))
 
 
 def figura(src, alt):

@@ -81,6 +81,21 @@ def bridge(prompt, etiqueta, slug, forzar=False):
     return txt
 
 
+def cargar_generador():
+    """El maquetado de banners e imágenes vive en el generador ES: se importa
+    para no tener dos versiones del mismo HTML."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        'gen', Path(__file__).parent / 'fase8c-libreria-assemble.py')
+    mod = importlib.util.module_from_spec(spec)
+    guardado, sys.argv = sys.argv, ['gen']
+    try:
+        spec.loader.exec_module(mod)
+    finally:
+        sys.argv = guardado
+    return mod
+
+
 def trocea_es(md):
     """Extrae del .md español lo que hay que adaptar."""
     txt = md.read_text(encoding='utf-8')
@@ -244,11 +259,68 @@ def main():
             if len(q.strip()) > 5 and len(a.strip()) > 20:
                 faq_en.append((q.strip().lstrip('-* '), a.strip()))
 
-    print('\n' + '\n'.join(partes[:0]) if False else '', end='')
-    salida = CACHE / ('%s-ARMADO.json' % args.slug)
-    salida.write_text(json.dumps({'partes': partes, 'faq': faq_en, 'cab': cab, 'es': {
-        'image': d['image'], 'imgs': d['imgs'], 'fecha': d['fecha']}}, ensure_ascii=False), encoding='utf-8')
-    print('\n✅ piezas listas en %s (%d secciones, %d FAQ)' % (salida.name, len(partes), len(faq_en)))
+    # 4) alts de las imágenes: se reutilizan los ficheros del post ES (fotos sin
+    #    texto ni caras), pero el texto alternativo hay que adaptarlo.
+    alts_txt = pedir('alts', CTX + (
+        'Adapt these Spanish image alt texts to English. One per line, same order, '
+        'no numbering, no markdown, max 120 chars each:\n%s'
+        % '\n'.join(a for _, a in [(d['image'], d['imageAlt'])] + d['imgs'])))
+    alts = [l.strip().lstrip('-* ') for l in alts_txt.splitlines() if len(l.strip()) > 15]
+
+    # 5) sustituir marcadores por imágenes y banners
+    gen = cargar_generador()
+    prods = gen.catalogo_productos()
+    cuerpo = '\n'.join(partes)
+    for n, (src, _alt) in enumerate(d['imgs'], 1):
+        alt = alts[n] if n < len(alts) else _alt
+        cuerpo = cuerpo.replace('<!--IMG%d-->' % n, gen.figura(src, alt))
+    for n, slug_prod in enumerate(info.get('productos', [])):
+        cuerpo = cuerpo.replace('<!--BANNER%d-->' % n,
+                                gen.banner(slug_prod, prods, info['slug_en'], 'en'))
+    sobrantes = re.findall(r'<!--(IMG|BANNER)\d+-->', cuerpo)
+    if sobrantes:
+        sys.exit('quedan marcadores sin sustituir: %s' % sobrantes)
+
+    # 6) interlinking EN: las librerías inglesas que ya existan + la archive de
+    #    su categoría + los posts EN que la configuración marque como afines.
+    hermanas = sorted(q.stem for q in EN.glob('prompt-library-*.md') if q.stem != info['slug_en'])
+    enlaces = [(s, 'Prompts for ' + s.replace('prompt-library-', '').replace('-', ' ').title())
+               for s in hermanas] + [(e['slug'], e['texto']) for e in info.get('enlaces_extra', [])]
+    cuerpo += ('<h2 class="wp-block-heading">More prompt libraries for AI Chef Pro agents</h2>'
+               '<p>Every agent in the suite has its own prompt library. Browse the rest and put '
+               'the AI to work across your whole operation:</p><ul>%s</ul>'
+               % ''.join('<li><a href="https://aichef.pro/en/blog/%s">%s</a></li>' % (s, txt)
+                         for s, txt in enlaces)
+               + '<p><a href="https://aichef.pro/en/blog/category/prompt-library">'
+                 'See every prompt library →</a></p>')
+
+    # 7) frontmatter y escritura
+    def y(s):
+        return '"%s"' % s.replace('\\', '\\\\').replace('"', '\\"').strip()
+    fm = ['---', 'title: %s' % y(sec('TITLE')), 'description: %s' % y(sec('DESCRIPTION')),
+          'pubDate: %s' % d['fecha'], 'modDate: %s' % d['fecha'],
+          'category: prompt-library', 'tags: []',
+          'translations:', '  es: %s' % y('libreria-de-prompts-para-%s' % args.slug),
+          'image: %s' % d['image'], 'imageAlt: %s' % y(alts[0] if alts else d['imageAlt']),
+          'lang: en', 'faq:']
+    for q, a in faq_en:
+        fm += ['  - q: %s' % y(q), '    a: %s' % y(a)]
+    fm += ['draft: false', '---', '']
+
+    destino = EN / (info['slug_en'] + '.md')
+    destino.write_text('\n'.join(fm) + cuerpo + '\n', encoding='utf-8')
+
+    # Recíproco en el post ES: si solo lo declara un lado, Google lo ignora.
+    txt_es = md_es.read_text(encoding='utf-8')
+    if 'translations:' not in txt_es.split('---')[1]:
+        txt_es = txt_es.replace('\nlang: es\n',
+                                '\nlang: es\ntranslations:\n  en: %s\n' % info['slug_en'], 1)
+        md_es.write_text(txt_es, encoding='utf-8')
+        print('   ↔ par declarado también en el post ES')
+    palabras = len(re.sub(r'<[^>]+>', ' ', cuerpo).split())
+    print('\n✅ %s\n   %d palabras · %d tablas · %d FAQ · %d banners · %d enlaces internos'
+          % (destino.relative_to(REPO), palabras, cuerpo.count('<table>'), len(faq_en),
+             cuerpo.count('Digital product ·'), len(enlaces) + 1))
 
 
 if __name__ == '__main__':
