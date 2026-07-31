@@ -14,6 +14,10 @@
 // arma cruzando el hub original, el sitemap público de la app y el catálogo canónico
 // de nombres (src/lib/linkify-use-case.tsx). Los prompts core NO se publican jamás.
 //
+// Las categorías son los MÓDULOS REALES del menú de la plataforma (capturas de
+// John, 2026-08-01): el usuario ve las mismas familias en el hub que dentro del
+// producto. No inventar agrupaciones propias.
+//
 // El bloque de HOTELERÍA usa nombres en INGLÉS también en la versión española:
 // el inglés es la lengua franca del F&B hotelero y así está en la plataforma
 // (John, 2026-08-01). No es un olvido de traducción.
@@ -70,7 +74,7 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Conocimientos",
+    "categoria": "Gastro Conocimiento",
     "agentes": [
       {
         "nombre": "Gastro Lexicum",
@@ -79,7 +83,7 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Consultoría Gastro pro",
+    "categoria": "Consultoría Gastro Pro",
     "agentes": [
       {
         "nombre": "Consultor Gastronómico",
@@ -124,7 +128,7 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Gastro Profile",
+    "categoria": "Gastro Profile Pro",
     "agentes": [
       {
         "nombre": "Chef Privado Pro",
@@ -145,7 +149,7 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Hotel / Hospitality AI Pro",
+    "categoria": "Hotel & Hospitality AI Pro",
     "agentes": [
       {
         "nombre": "Hotel Staff Meal Planner",
@@ -193,77 +197,6 @@ const catalogo = [
       },
       {
         "nombre": "Hotel Menu Engineering Pro",
-        "post": null
-      }
-    ]
-  },
-  {
-    "categoria": "Herramientas y Utilidades",
-    "agentes": [
-      {
-        "nombre": "ID Alérgenos",
-        "post": "libreria-de-prompts-para-id-alergenos"
-      },
-      {
-        "nombre": "Mermas GenCal",
-        "post": "libreria-de-prompts-para-mermas-gencal"
-      },
-      {
-        "nombre": "Calcula Pax",
-        "post": null
-      },
-      {
-        "nombre": "Conversor Ing",
-        "post": null
-      },
-      {
-        "nombre": "Mental Coach",
-        "post": null
-      },
-      {
-        "nombre": "¿Quién Soy?",
-        "post": null
-      },
-      {
-        "nombre": "ChatGPT 5.5",
-        "post": null
-      }
-    ]
-  },
-  {
-    "categoria": "Conceptos de Negocio",
-    "agentes": [
-      {
-        "nombre": "Catering AI+",
-        "post": "libreria-de-prompts-para-catering-ai"
-      },
-      {
-        "nombre": "Burger Pro AI+",
-        "post": "libreria-de-prompts-para-burger-pro-ai"
-      },
-      {
-        "nombre": "Food Truck AI+",
-        "post": null
-      },
-      {
-        "nombre": "Bar & Lounge AI+",
-        "post": null
-      },
-      {
-        "nombre": "Casual Restaurants AI+",
-        "post": null
-      }
-    ]
-  },
-  {
-    "categoria": "Proveedores Gastro",
-    "agentes": [
-      {
-        "nombre": "Sosa Ingredients Agent",
-        "post": null
-      },
-      {
-        "nombre": "tSpoonLab Agent",
         "post": null
       }
     ]
@@ -322,7 +255,7 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Recetarios de Latinoamérica",
+    "categoria": "Recetarios de Latam",
     "agentes": [
       {
         "nombre": "Cocina Argentina",
@@ -392,16 +325,71 @@ const catalogo = [
     ]
   },
   {
-    "categoria": "Otras Plataformas",
+    "categoria": "Herramientas y Utilities",
     "agentes": [
       {
-        "nombre": "MenuDish Local SEO",
+        "nombre": "ID Alérgenos",
+        "post": "libreria-de-prompts-para-id-alergenos"
+      },
+      {
+        "nombre": "Mermas GenCal",
+        "post": "libreria-de-prompts-para-mermas-gencal"
+      },
+      {
+        "nombre": "Calcula Pax",
         "post": null
       },
       {
-        "nombre": "Gastro Calendar",
+        "nombre": "Conversor Ing",
         "post": null
       },
+      {
+        "nombre": "Mental Coach",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Conceptos de Negocio",
+    "agentes": [
+      {
+        "nombre": "Catering AI+",
+        "post": "libreria-de-prompts-para-catering-ai"
+      },
+      {
+        "nombre": "Burger Pro AI+",
+        "post": "libreria-de-prompts-para-burger-pro-ai"
+      },
+      {
+        "nombre": "Food Truck AI+",
+        "post": null
+      },
+      {
+        "nombre": "Bar & Lounge AI+",
+        "post": null
+      },
+      {
+        "nombre": "Casual Restaurants AI+",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Proveedores Gastro",
+    "agentes": [
+      {
+        "nombre": "Sosa Ingredients Agent",
+        "post": null
+      },
+      {
+        "nombre": "tSpoonLab Agent",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Contenidos y RRSS",
+    "agentes": [
       {
         "nombre": "InstaFlow AI Pro",
         "post": null
@@ -423,11 +411,42 @@ const catalogo = [
         "post": null
       },
       {
-        "nombre": "Timlup – Asistente de Checklists",
+        "nombre": "MenuDish Local SEO",
+        "post": null
+      },
+      {
+        "nombre": "Gastro Calendar",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Modelos IA + LLM",
+    "agentes": [
+      {
+        "nombre": "ChatGPT 5.5",
         "post": null
       },
       {
         "nombre": "Sonar Deep Research",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Otras Plataformas",
+    "agentes": [
+      {
+        "nombre": "Timlup – Asistente de Checklists",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Sobre Mí",
+    "agentes": [
+      {
+        "nombre": "¿Quién Soy?",
         "post": null
       }
     ]

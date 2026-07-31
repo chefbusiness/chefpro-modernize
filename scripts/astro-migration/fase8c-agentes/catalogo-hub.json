@@ -37,7 +37,7 @@
   ]
  },
  {
-  "categoria": "Conocimientos",
+  "categoria": "Gastro Conocimiento",
   "agentes": [
    {
     "nombre": "Gastro Lexicum",
@@ -46,7 +46,7 @@
   ]
  },
  {
-  "categoria": "Consultoría Gastro pro",
+  "categoria": "Consultoría Gastro Pro",
   "agentes": [
    {
     "nombre": "Consultor Gastronómico",
@@ -91,7 +91,7 @@
   ]
  },
  {
-  "categoria": "Gastro Profile",
+  "categoria": "Gastro Profile Pro",
   "agentes": [
    {
     "nombre": "Chef Privado Pro",
@@ -112,7 +112,7 @@
   ]
  },
  {
-  "categoria": "Hotel / Hospitality AI Pro",
+  "categoria": "Hotel & Hospitality AI Pro",
   "agentes": [
    {
     "nombre": "Hotel Staff Meal Planner",
@@ -160,77 +160,6 @@
    },
    {
     "nombre": "Hotel Menu Engineering Pro",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Herramientas y Utilidades",
-  "agentes": [
-   {
-    "nombre": "ID Alérgenos",
-    "post": "libreria-de-prompts-para-id-alergenos"
-   },
-   {
-    "nombre": "Mermas GenCal",
-    "post": "libreria-de-prompts-para-mermas-gencal"
-   },
-   {
-    "nombre": "Calcula Pax",
-    "post": null
-   },
-   {
-    "nombre": "Conversor Ing",
-    "post": null
-   },
-   {
-    "nombre": "Mental Coach",
-    "post": null
-   },
-   {
-    "nombre": "¿Quién Soy?",
-    "post": null
-   },
-   {
-    "nombre": "ChatGPT 5.5",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Conceptos de Negocio",
-  "agentes": [
-   {
-    "nombre": "Catering AI+",
-    "post": "libreria-de-prompts-para-catering-ai"
-   },
-   {
-    "nombre": "Burger Pro AI+",
-    "post": "libreria-de-prompts-para-burger-pro-ai"
-   },
-   {
-    "nombre": "Food Truck AI+",
-    "post": null
-   },
-   {
-    "nombre": "Bar & Lounge AI+",
-    "post": null
-   },
-   {
-    "nombre": "Casual Restaurants AI+",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Proveedores Gastro",
-  "agentes": [
-   {
-    "nombre": "Sosa Ingredients Agent",
-    "post": null
-   },
-   {
-    "nombre": "tSpoonLab Agent",
     "post": null
    }
   ]
@@ -289,7 +218,7 @@
   ]
  },
  {
-  "categoria": "Recetarios de Latinoamérica",
+  "categoria": "Recetarios de Latam",
   "agentes": [
    {
     "nombre": "Cocina Argentina",
@@ -359,16 +288,71 @@
   ]
  },
  {
-  "categoria": "Otras Plataformas",
+  "categoria": "Herramientas y Utilities",
   "agentes": [
    {
-    "nombre": "MenuDish Local SEO",
+    "nombre": "ID Alérgenos",
+    "post": "libreria-de-prompts-para-id-alergenos"
+   },
+   {
+    "nombre": "Mermas GenCal",
+    "post": "libreria-de-prompts-para-mermas-gencal"
+   },
+   {
+    "nombre": "Calcula Pax",
     "post": null
    },
    {
-    "nombre": "Gastro Calendar",
+    "nombre": "Conversor Ing",
     "post": null
    },
+   {
+    "nombre": "Mental Coach",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Conceptos de Negocio",
+  "agentes": [
+   {
+    "nombre": "Catering AI+",
+    "post": "libreria-de-prompts-para-catering-ai"
+   },
+   {
+    "nombre": "Burger Pro AI+",
+    "post": "libreria-de-prompts-para-burger-pro-ai"
+   },
+   {
+    "nombre": "Food Truck AI+",
+    "post": null
+   },
+   {
+    "nombre": "Bar & Lounge AI+",
+    "post": null
+   },
+   {
+    "nombre": "Casual Restaurants AI+",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Proveedores Gastro",
+  "agentes": [
+   {
+    "nombre": "Sosa Ingredients Agent",
+    "post": null
+   },
+   {
+    "nombre": "tSpoonLab Agent",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Contenidos y RRSS",
+  "agentes": [
    {
     "nombre": "InstaFlow AI Pro",
     "post": null
@@ -390,11 +374,42 @@
     "post": null
    },
    {
-    "nombre": "Timlup – Asistente de Checklists",
+    "nombre": "MenuDish Local SEO",
+    "post": null
+   },
+   {
+    "nombre": "Gastro Calendar",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Modelos IA + LLM",
+  "agentes": [
+   {
+    "nombre": "ChatGPT 5.5",
     "post": null
    },
    {
     "nombre": "Sonar Deep Research",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Otras Plataformas",
+  "agentes": [
+   {
+    "nombre": "Timlup – Asistente de Checklists",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Sobre Mí",
+  "agentes": [
+   {
+    "nombre": "¿Quién Soy?",
     "post": null
    }
   ]
