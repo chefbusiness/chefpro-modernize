@@ -47,7 +47,18 @@ catálogo, **pedirle el listado**, no deducirlo del código.
   cabecera, bloques, tips, FAQ, alts, banners bilingües, pares de traducción y ensamblado del
   `.md`… **pero NUNCA se ha ejecutado de principio a fin**. El piloto (`--slug id-alergenos`)
   estaba corriendo al cerrar; sus piezas viven en `/tmp/fase8c-libreria-en/` y **no hay ningún
-  `.md` escrito**. Es lo primero que hay que verificar de forma adversarial.
+  `.md` escrito**.
+
+  **El piloto terminó FALLANDO, ya cerrada la sesión**: `respuesta vacía en tips` — bridge devolvió
+  una respuesta por debajo del mínimo en esa sección. Llegó a generar la cabecera y los **7
+  bloques** (8 piezas en `/tmp/fase8c-libreria-en/`), así que **reanudar cuesta solo tips + FAQ +
+  alts**: se repite el mismo comando y la caché salta lo ya hecho. El árbol del repo quedó limpio.
+
+  ⚠️ **Gotcha que me mordió dos veces**: lanzar el generador con `| tail -N` **enmascara el código
+  de salida** (se reporta el de `tail`, siempre 0) y bufferiza el progreso hasta el final. Lanzarlo
+  sin pipe si se quiere saber si ha fallado.
+
+  Verificarlo de forma adversarial es lo primero al retomar.
 - Decisiones ya tomadas para el inglés: **EE. UU. como mercado por defecto** (FDA Food Code,
   FALCPA, «Big Nine», imperial, dólares) con **guiño a UK (FSA, Natasha's Law), Australia y Nueva
   Zelanda (FSANZ) e India (FSSAI)** nombrando solo al regulador, nunca artículos ni umbrales.
