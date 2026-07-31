@@ -39,6 +39,13 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 - **El blog es MULTI-IDIOMA desde 8B.6 y sus URLs sólo salen de los helpers de `astro-site/src/lib/blog.ts`** (`postPath`, `categoryPath`, `listPagePath`, `blogBase`). El ES va sin prefijo y con segmentos heredados de WP (`/blog/categoria/…`); el EN va con prefijo y segmentos nativos (`/en/blog/category/…`). Las categorías se resuelven SIEMPRE con idioma (`getCategory(slug, lang)`): `ai-chef-pro` existe en los dos.
 - **En Header/Footer/Hero —que se pintan en los 7 idiomas— el hub del blog es `blogHubHref(lang)`, nunca `blogBase(lang)`**: sólo ES e EN tienen blog, así que `blogBase('fr')` daría `/fr/blog`, que es un 404. `blogHubHref` cae al ES para los idiomas sin blog propio.
 
+### Stack de research SEO (estado a 2026-07-31)
+
+- **DataForSEO** es la fuente contratada para volúmenes y SERP. Basic Auth: `DATAFORSEO_LOGIN` (email) + `DATAFORSEO_PASSWORD` (la *API password* del panel), en `/root/chefbusiness-ai/.env` (permisos 600, gitignorado, fuera del repo público). **Ninguna credencial se commitea aquí.**
+- **MUERTAS**, comprobado: **Keywords Everywhere** devuelve volumen 0 hasta para "recetas" o "pizza" (la cuenta no sirve datos de GKP) y la **API de Brave** da `422 token inválido`. No perder tiempo con ellas sin renovarlas antes.
+- **Empezar siempre por los datos propios**: GSC vía el MCP `gscServer` (`sc-domain:aichef.pro`). Antes de buscar demanda fuera, mirar qué activo propio ya posiciona para esa intención — es lo que evita canibalizar (en ID Alérgenos había uno en posición 9,1 al que no se podía pisar).
+- Si no hay volúmenes fiables, **no se inventan cifras**: se trabaja con SERP directa + GSC y se dice qué no se pudo medir.
+
 ### ⚠️ Material propietario — ESTE REPO ES PÚBLICO
 
 - `chefbusiness/chefpro-modernize` es **público**. Los **prompts core de los agentes** (el system prompt de Pickaxe que da vida a cada uno) son el producto en sí: **no se commitean aquí, ni en el contenido del blog, ni en un `.astro`**.
