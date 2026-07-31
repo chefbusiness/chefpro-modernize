@@ -1,6 +1,244 @@
 {
+ "recetario-cocina-creativa-ai": {
+  "agente": "Avant-garde Cuisine",
+  "slug_en": "prompt-library-avant-garde-cuisine",
+  "productos": [
+   "kit-tareas-restaurante-creativo",
+   "pro-prompts-ebook",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "pasteleria-creativa-ai": {
+  "agente": "Creative Pastry",
+  "slug_en": "prompt-library-creative-pastry",
+  "productos": [
+   "kit-tareas-pasteleria",
+   "kit-escandallos",
+   "pro-prompts-ebook"
+  ],
+  "enlaces_extra": []
+ },
+ "chocolateria-creativa-ai": {
+  "agente": "Creative Chocolate Making",
+  "slug_en": "prompt-library-creative-chocolate",
+  "productos": [
+   "kit-tareas-chocolateria",
+   "kit-escandallos",
+   "pro-prompts-ebook"
+  ],
+  "enlaces_extra": []
+ },
+ "heladeria-creativa-ai": {
+  "agente": "Creative Ice Cream Making",
+  "slug_en": "prompt-library-creative-ice-cream",
+  "productos": [
+   "kit-tareas-heladeria",
+   "kit-escandallos",
+   "pro-prompts-ebook"
+  ],
+  "enlaces_extra": []
+ },
+ "panaderia-creativa-ai": {
+  "agente": "Creative Bakery",
+  "slug_en": "prompt-library-creative-bakery",
+  "productos": [
+   "kit-tareas-pasteleria",
+   "kit-escandallos",
+   "pro-prompts-ebook"
+  ],
+  "enlaces_extra": []
+ },
+ "fermentus-ai": {
+  "agente": "Fermentus Pro AI+",
+  "slug_en": "prompt-library-fermentation",
+  "productos": [
+   "kit-tareas-pasteleria",
+   "pro-prompts-ebook",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "vegchef-plant-based-ai": {
+  "agente": "VegChef Plant-Based",
+  "slug_en": "prompt-library-plant-based-menus",
+  "productos": [
+   "pro-prompts-ebook",
+   "kit-escandallos",
+   "kit-tareas"
+  ],
+  "enlaces_extra": []
+ },
+ "food-pairing-ai": {
+  "agente": "Food Pairing AI",
+  "slug_en": "prompt-library-food-pairing",
+  "productos": [
+   "pro-prompts-ebook",
+   "kit-escandallos",
+   "kit-tareas-restaurante-creativo"
+  ],
+  "enlaces_extra": []
+ },
+ "gastro-lexicum-ai": {
+  "agente": "Gastro Lexicum",
+  "slug_en": "prompt-library-culinary-glossary",
+  "productos": [
+   "pro-prompts-ebook",
+   "kit-escandallos",
+   "kit-tareas"
+  ],
+  "enlaces_extra": []
+ },
+ "consultor-gastronomico-ai": {
+  "agente": "Gastronomy Consultant Pro",
+  "slug_en": "prompt-library-gastronomy-consulting",
+  "productos": [
+   "kit-plan-financiero",
+   "guia-restaurante-gastronomico",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "chef-consultor-pro-ai": {
+  "agente": "Chef Consultant Pro",
+  "slug_en": "prompt-library-chef-consulting",
+  "productos": [
+   "guia-restaurante-gastronomico",
+   "kit-escandallos",
+   "kit-plan-financiero"
+  ],
+  "enlaces_extra": []
+ },
+ "heladero-consultor-pro-ai": {
+  "agente": "Gelato & Ice Cream Consultant",
+  "slug_en": "prompt-library-gelato-consulting",
+  "productos": [
+   "kit-tareas-heladeria",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "chocolatero-consultor-pro-ai": {
+  "agente": "Chocolate Consultant Pro",
+  "slug_en": "prompt-library-chocolate-consulting",
+  "productos": [
+   "kit-tareas-chocolateria",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "pastelero-consultor-pro-ai": {
+  "agente": "Pastry Consultant Pro",
+  "slug_en": "prompt-library-pastry-consulting",
+  "productos": [
+   "kit-tareas-pasteleria",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "pizzero-consultor-pro-ai": {
+  "agente": "Pizza Consultant Pro",
+  "slug_en": "prompt-library-pizza-consulting",
+  "productos": [
+   "kit-tareas-pizzeria",
+   "guia-restaurante-casual",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "barista-consultor-pro-ai": {
+  "agente": "Barista Consultant Pro",
+  "slug_en": "prompt-library-barista-consulting",
+  "productos": [
+   "kit-tareas-cafeteria",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "sommelier-consultor-pro-ai": {
+  "agente": "Sommelier Consultant Pro",
+  "slug_en": "prompt-library-sommelier-consulting",
+  "productos": [
+   "kit-tareas-bar",
+   "guia-restaurante-gastronomico",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "bartender-consultor-pro-ai": {
+  "agente": "Bartender Consultant Pro",
+  "slug_en": "prompt-library-bartender-consulting",
+  "productos": [
+   "kit-tareas-bar",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "panadero-consultor-pro-ai": {
+  "agente": "Bakery Consultant Pro",
+  "slug_en": "prompt-library-bakery-consulting",
+  "productos": [
+   "kit-tareas-pasteleria",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "chef-ejecutivo-pro-ai": {
+  "agente": "Executive Chef Pro",
+  "slug_en": "prompt-library-executive-chef",
+  "productos": [
+   "kit-escandallos",
+   "kit-gestion-personal",
+   "kit-inventario"
+  ],
+  "enlaces_extra": []
+ },
+ "gerente-de-restaurante-pro-ai": {
+  "agente": "Restaurant Manager Pro",
+  "slug_en": "prompt-library-restaurant-manager",
+  "productos": [
+   "kit-plan-financiero",
+   "kit-gestion-personal",
+   "kit-inventario"
+  ],
+  "enlaces_extra": [
+   {
+    "slug": "restaurant-profit-margins-explained-benchmarks",
+    "texto": "Restaurant profit margins, explained with benchmarks"
+   },
+   {
+    "slug": "best-restaurant-management-software-2026",
+    "texto": "Restaurant management software, compared"
+   }
+  ]
+ },
+ "mermas-gencal": {
+  "agente": "Waste GenCal",
+  "slug_en": "prompt-library-food-waste-costing",
+  "productos": [
+   "kit-inventario",
+   "kit-escandallos",
+   "pack-appcc"
+  ],
+  "enlaces_extra": [
+   {
+    "slug": "restaurant-food-waste-ai-strategies",
+    "texto": "Food waste strategies that actually stick"
+   },
+   {
+    "slug": "restaurant-inventory-management-ai",
+    "texto": "Inventory management that survives a busy week"
+   }
+  ]
+ },
  "id-alergenos": {
-  "agente": "ID Alérgenos",
+  "agente": "Allergen ID",
   "slug_en": "prompt-library-allergen-identification",
   "productos": [
    "pack-appcc",
@@ -18,8 +256,28 @@
    }
   ]
  },
+ "catering-ai": {
+  "agente": "Catering AI+",
+  "slug_en": "prompt-library-catering",
+  "productos": [
+   "kit-tareas-catering",
+   "kit-plan-financiero",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
+ "burger-pro-ai": {
+  "agente": "Burgers Pro AI+",
+  "slug_en": "prompt-library-burger-restaurant",
+  "productos": [
+   "kit-tareas-hamburgueseria",
+   "guia-restaurante-casual",
+   "kit-escandallos"
+  ],
+  "enlaces_extra": []
+ },
  "comida-de-personal": {
-  "agente": "Comida de Personal",
+  "agente": "Staff Meal",
   "slug_en": "prompt-library-staff-meals",
   "productos": [
    "kit-gestion-personal",

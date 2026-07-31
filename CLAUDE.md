@@ -39,6 +39,12 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 - **El blog es MULTI-IDIOMA desde 8B.6 y sus URLs sólo salen de los helpers de `astro-site/src/lib/blog.ts`** (`postPath`, `categoryPath`, `listPagePath`, `blogBase`). El ES va sin prefijo y con segmentos heredados de WP (`/blog/categoria/…`); el EN va con prefijo y segmentos nativos (`/en/blog/category/…`). Las categorías se resuelven SIEMPRE con idioma (`getCategory(slug, lang)`): `ai-chef-pro` existe en los dos.
 - **En Header/Footer/Hero —que se pintan en los 7 idiomas— el hub del blog es `blogHubHref(lang)`, nunca `blogBase(lang)`**: sólo ES e EN tienen blog, así que `blogBase('fr')` daría `/fr/blog`, que es un 404. `blogHubHref` cae al ES para los idiomas sin blog propio.
 
+### Nombres de agentes: el bloque de hotelería va en inglés SIEMPRE
+
+- Los 12 agentes de hotelería (Hotel Staff Meal Planner, Room Service Menu Designer, Banquet Event Order AI, F&B Reporting Assistant, Buffet Master AI, In-Room Dining Optimizer, Outlet Concept Developer, Hotel F&B Cost Controller, Mini-Bar & Amenities AI, Hotel Pastry & Bakery Pro, Hotel Menu Engineering Pro, Hotel Bar & Lounge Menu AI) **se llaman igual en español que en inglés**. El inglés es la lengua franca del F&B hotelero premium; un director de A&B en España usa ese vocabulario a diario. **No traducirlos.**
+- El resto de agentes SÍ tiene nombre propio por idioma y NO coinciden: `ID Alérgenos`→`Allergen ID`, `Mermas GenCal`→`Waste GenCal`, `Comida de Personal`→`Staff Meal`, `Cocina Creativa`→`Avant-garde Cuisine`, `Heladero Consultor Pro`→`Gelato & Ice Cream Consultant`… El mapa completo (26 pares) está en `scripts/astro-migration/fase8c-agentes/agentes-en.json`. **Usar el nombre del idioma que se publica**: un post inglés que hable de «ID Alérgenos» describe un agente que el lector no encuentra en su interfaz.
+- `Chef Privado Pro` **no existe todavía en inglés** (pendiente de crear): no tiene versión EN.
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.

@@ -120,6 +120,59 @@
   ]
  },
  {
+  "categoria": "Hotel / Hospitality AI Pro",
+  "agentes": [
+   {
+    "nombre": "Hotel Staff Meal Planner",
+    "post": null
+   },
+   {
+    "nombre": "Hotel Bar & Lounge Menu AI",
+    "post": null
+   },
+   {
+    "nombre": "In-Room Dining Optimizer",
+    "post": null
+   },
+   {
+    "nombre": "F&B Reporting Assistant",
+    "post": null
+   },
+   {
+    "nombre": "Buffet Master AI",
+    "post": null
+   },
+   {
+    "nombre": "Hotel Pastry & Bakery Pro",
+    "post": null
+   },
+   {
+    "nombre": "Outlet Concept Developer",
+    "post": null
+   },
+   {
+    "nombre": "Hotel F&B Cost Controller",
+    "post": null
+   },
+   {
+    "nombre": "Mini-Bar & Amenities AI",
+    "post": null
+   },
+   {
+    "nombre": "Room Service Menu Designer",
+    "post": null
+   },
+   {
+    "nombre": "Banquet Event Order AI",
+    "post": null
+   },
+   {
+    "nombre": "Hotel Menu Engineering Pro",
+    "post": null
+   }
+  ]
+ },
+ {
   "categoria": "Herramientas y Utilidades",
   "agentes": [
    {
