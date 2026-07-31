@@ -4,35 +4,43 @@
   "agentes": [
    {
     "nombre": "Chocolatería Creativa",
-    "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
+    "post": "libreria-de-prompts-para-chocolateria-creativa-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Cocina Creativa",
-    "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
+    "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Fermentus con AI+",
-    "post": "libreria-de-prompts-para-fermentus-ai"
+    "post": "libreria-de-prompts-para-fermentus-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Food Pairing AI",
-    "post": "libreria-de-prompts-para-food-pairing-ai"
+    "post": "libreria-de-prompts-para-food-pairing-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Heladería Creativa",
-    "post": "libreria-de-prompts-para-heladeria-creativa-ai"
+    "post": "libreria-de-prompts-para-heladeria-creativa-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Panadería Creativa",
-    "post": "libreria-de-prompts-para-panaderia-creativa-ai"
+    "post": "libreria-de-prompts-para-panaderia-creativa-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Pastelería Creativa",
-    "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
+    "post": "libreria-de-prompts-para-pasteleria-creativa-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "VegChef Plant-Based",
-    "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
+    "post": "libreria-de-prompts-para-vegchef-plant-based-ai",
+    "tipo": "chat"
    }
   ]
  },
@@ -41,15 +49,18 @@
   "agentes": [
    {
     "nombre": "Gastro Lexicum",
-    "post": "libreria-de-prompts-para-gastro-lexicum-ai"
+    "post": "libreria-de-prompts-para-gastro-lexicum-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "GastroIMG Gen+",
-    "post": null
+    "post": null,
+    "tipo": "formulario"
    },
    {
     "nombre": "Sonar Deep Research",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -58,43 +69,53 @@
   "agentes": [
    {
     "nombre": "Barista Consultor Pro",
-    "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-barista-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Bartender Consultor Pro",
-    "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-bartender-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Chef Consultor Pro",
-    "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-chef-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Chocolatero Consultor Pro",
-    "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Consultor Gastronómico",
-    "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
+    "post": "libreria-de-prompts-para-consultor-gastronomico-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Heladero Consultor Pro",
-    "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-heladero-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Panadero Consultor Pro",
-    "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-panadero-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Pastelero Consultor Pro",
-    "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Pizzero Consultor Pro",
-    "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Sommelier Consultor Pro",
-    "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
+    "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai",
+    "tipo": "chat"
    }
   ]
  },
@@ -103,23 +124,28 @@
   "agentes": [
    {
     "nombre": "Chef Ejecutivo Pro",
-    "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
+    "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Chef Privado Pro",
-    "post": "libreria-de-prompts-para-chef-privado-pro-ai"
+    "post": "libreria-de-prompts-para-chef-privado-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Gerente de Restaurante Pro",
-    "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
+    "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Chef Español AI",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Comida de Personal",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -128,35 +154,43 @@
   "agentes": [
    {
     "nombre": "ID Alérgenos",
-    "post": "libreria-de-prompts-para-id-alergenos"
+    "post": "libreria-de-prompts-para-id-alergenos",
+    "tipo": "chat"
    },
    {
     "nombre": "Mermas GenCal",
-    "post": "libreria-de-prompts-para-mermas-gencal"
+    "post": "libreria-de-prompts-para-mermas-gencal",
+    "tipo": "chat"
    },
    {
     "nombre": "Calcula Pax",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "ChatGPT para tus estudios",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Chatbot Gastronómico Experto",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Conversor Ing",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Mental Coach",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "¿Quién Soy?",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -165,23 +199,28 @@
   "agentes": [
    {
     "nombre": "Burger Pro AI+",
-    "post": "libreria-de-prompts-para-burger-pro-ai"
+    "post": "libreria-de-prompts-para-burger-pro-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Catering AI+",
-    "post": "libreria-de-prompts-para-catering-ai"
+    "post": "libreria-de-prompts-para-catering-ai",
+    "tipo": "chat"
    },
    {
     "nombre": "Bar & Lounge AI+",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Casual Restaurants AI+",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Food Truck AI+",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -190,11 +229,13 @@
   "agentes": [
    {
     "nombre": "Sosa Ingredients Agent",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "tSpoonLab Agent",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -203,39 +244,48 @@
   "agentes": [
    {
     "nombre": "Alemana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Belga",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Británica",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Francesa",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Griega",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Italiana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Países Bajos",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Portuguesa",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Suiza",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -244,47 +294,58 @@
   "agentes": [
    {
     "nombre": "Argentina",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Brasileña",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Chilena",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Colombiana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Dominicana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Ecuatoriana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Jamaicana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Mexicana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Paraguaya",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Peruana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Venezolana",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -293,23 +354,28 @@
   "agentes": [
    {
     "nombre": "China",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "India",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Japonesa",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Tailandesa",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Turca",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  },
@@ -318,31 +384,38 @@
   "agentes": [
    {
     "nombre": "BlogPost SEO Gen+",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Gastro Calendar",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "InstaFlow AI Pro",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Keyword Discovery AI+",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "MenuDish Local SEO",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "PinterAI Content Pro",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    },
    {
     "nombre": "Pinterest Pins Gen",
-    "post": null
+    "post": null,
+    "tipo": "chat"
    }
   ]
  }
