@@ -13,6 +13,11 @@
 // El catálogo vive en scripts/astro-migration/fase8c-agentes/catalogo-hub.json y se
 // arma cruzando el hub original, el sitemap público de la app y el catálogo canónico
 // de nombres (src/lib/linkify-use-case.tsx). Los prompts core NO se publican jamás.
+//
+// CRITERIO DE INCLUSIÓN: solo agentes CONVERSACIONALES. Pickaxe permite además
+// formularios (el usuario rellena campos configurados, no escribe prompts): a esos
+// no les aplica una librería de prompts y se quedan fuera de esta lista. John los
+// va señalando a medida que se piden.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -28,43 +33,35 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Chocolatería Creativa",
-        "post": "libreria-de-prompts-para-chocolateria-creativa-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
       },
       {
         "nombre": "Cocina Creativa",
-        "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
       },
       {
         "nombre": "Fermentus con AI+",
-        "post": "libreria-de-prompts-para-fermentus-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-fermentus-ai"
       },
       {
         "nombre": "Food Pairing AI",
-        "post": "libreria-de-prompts-para-food-pairing-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-food-pairing-ai"
       },
       {
         "nombre": "Heladería Creativa",
-        "post": "libreria-de-prompts-para-heladeria-creativa-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-heladeria-creativa-ai"
       },
       {
         "nombre": "Panadería Creativa",
-        "post": "libreria-de-prompts-para-panaderia-creativa-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-panaderia-creativa-ai"
       },
       {
         "nombre": "Pastelería Creativa",
-        "post": "libreria-de-prompts-para-pasteleria-creativa-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
       },
       {
         "nombre": "VegChef Plant-Based",
-        "post": "libreria-de-prompts-para-vegchef-plant-based-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
       }
     ]
   },
@@ -73,18 +70,11 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Gastro Lexicum",
-        "post": "libreria-de-prompts-para-gastro-lexicum-ai",
-        "tipo": "chat"
-      },
-      {
-        "nombre": "GastroIMG Gen+",
-        "post": null,
-        "tipo": "formulario"
+        "post": "libreria-de-prompts-para-gastro-lexicum-ai"
       },
       {
         "nombre": "Sonar Deep Research",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -93,53 +83,43 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Barista Consultor Pro",
-        "post": "libreria-de-prompts-para-barista-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
       },
       {
         "nombre": "Bartender Consultor Pro",
-        "post": "libreria-de-prompts-para-bartender-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
       },
       {
         "nombre": "Chef Consultor Pro",
-        "post": "libreria-de-prompts-para-chef-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
       },
       {
         "nombre": "Chocolatero Consultor Pro",
-        "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
       },
       {
         "nombre": "Consultor Gastronómico",
-        "post": "libreria-de-prompts-para-consultor-gastronomico-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
       },
       {
         "nombre": "Heladero Consultor Pro",
-        "post": "libreria-de-prompts-para-heladero-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
       },
       {
         "nombre": "Panadero Consultor Pro",
-        "post": "libreria-de-prompts-para-panadero-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
       },
       {
         "nombre": "Pastelero Consultor Pro",
-        "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
       },
       {
         "nombre": "Pizzero Consultor Pro",
-        "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
       },
       {
         "nombre": "Sommelier Consultor Pro",
-        "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
       }
     ]
   },
@@ -148,28 +128,23 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Chef Ejecutivo Pro",
-        "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
       },
       {
         "nombre": "Chef Privado Pro",
-        "post": "libreria-de-prompts-para-chef-privado-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-chef-privado-pro-ai"
       },
       {
         "nombre": "Gerente de Restaurante Pro",
-        "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
       },
       {
         "nombre": "Chef Español AI",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Comida de Personal",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -178,43 +153,35 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "ID Alérgenos",
-        "post": "libreria-de-prompts-para-id-alergenos",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-id-alergenos"
       },
       {
         "nombre": "Mermas GenCal",
-        "post": "libreria-de-prompts-para-mermas-gencal",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-mermas-gencal"
       },
       {
         "nombre": "Calcula Pax",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "ChatGPT para tus estudios",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Chatbot Gastronómico Experto",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Conversor Ing",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Mental Coach",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "¿Quién Soy?",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -223,28 +190,23 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Burger Pro AI+",
-        "post": "libreria-de-prompts-para-burger-pro-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-burger-pro-ai"
       },
       {
         "nombre": "Catering AI+",
-        "post": "libreria-de-prompts-para-catering-ai",
-        "tipo": "chat"
+        "post": "libreria-de-prompts-para-catering-ai"
       },
       {
         "nombre": "Bar & Lounge AI+",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Casual Restaurants AI+",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Food Truck AI+",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -253,13 +215,11 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Sosa Ingredients Agent",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "tSpoonLab Agent",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -268,48 +228,39 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Alemana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Belga",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Británica",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Francesa",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Griega",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Italiana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Países Bajos",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Portuguesa",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Suiza",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -318,58 +269,47 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "Argentina",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Brasileña",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Chilena",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Colombiana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Dominicana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Ecuatoriana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Jamaicana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Mexicana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Paraguaya",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Peruana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Venezolana",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -378,28 +318,23 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "China",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "India",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Japonesa",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Tailandesa",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Turca",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   },
@@ -408,38 +343,31 @@ const catalogo = [
     "agentes": [
       {
         "nombre": "BlogPost SEO Gen+",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Gastro Calendar",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "InstaFlow AI Pro",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Keyword Discovery AI+",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "MenuDish Local SEO",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "PinterAI Content Pro",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       },
       {
         "nombre": "Pinterest Pins Gen",
-        "post": null,
-        "tipo": "chat"
+        "post": null
       }
     ]
   }
@@ -466,12 +394,14 @@ const faq = [
 ];
 
 
-const TOTAL = 73;
-const CON_LIBRERIA = 26;
+// Se DERIVAN del catálogo: escritas a mano se desincronizan en cuanto entra
+// o sale un agente (pasó al quitar el primer formulario).
+const TOTAL = catalogo.reduce((n, c) => n + c.agentes.length, 0);
+const CON_LIBRERIA = catalogo.reduce((n, c) => n + c.agentes.filter((a) => a.post).length, 0);
 
 const title = 'Librería de Prompts de AI Chef Pro: todos los agentes en un solo sitio';
 const description =
-  'El catálogo completo de agentes de AI Chef Pro con sus librerías de prompts: 73 agentes en 11 categorías y 26 librerías publicadas para copiar y adaptar.';
+  `El catálogo completo de agentes de AI Chef Pro con sus librerías de prompts: ${TOTAL} agentes en ${catalogo.length} categorías y ${CON_LIBRERIA} librerías publicadas para copiar y adaptar.`;
 
 const schemas = [
   {
@@ -571,9 +501,7 @@ const schemas = [
               ) : (
                 <div class="flex h-full items-center gap-3 rounded-lg border border-dashed border-border/70 p-4">
                   <span class="text-sm font-medium text-muted-foreground">{a.nombre}</span>
-                  <span class="ml-auto shrink-0 text-xs text-muted-foreground/70">
-                    {a.tipo === 'formulario' ? 'Formulario guiado' : 'En preparación'}
-                  </span>
+                  <span class="ml-auto shrink-0 text-xs text-muted-foreground/70">En preparación</span>
                 </div>
               )}
             </li>

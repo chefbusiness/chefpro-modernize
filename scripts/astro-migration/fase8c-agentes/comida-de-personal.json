@@ -1,0 +1,168 @@
+{
+ "agente": "Comida de Personal",
+ "slug": "libreria-de-prompts-para-comida-de-personal",
+ "fecha": "2026-07-31",
+ "title": "Prompts para Aprovechar al Máximo la Herramienta: Comida de Personal",
+ "description": "Comida de Personal: prompts para planificar el menú del equipo, controlar el coste por comensal, aprovechar elaboraciones base y estandarizar fichas.",
+ "que_hace": "Chef especializado en la comida de familia (comida del personal) de un restaurante. Trabaja de forma 100% conversacional, preguntando lo que necesita en vez de pedir formularios. Planifica menús semanales y mensuales con estructura de entrante, plato principal y postre, equilibrados y con producto de temporada, usando ingredientes accesibles y asequibles para equipos multiculturales, con un presupuesto orientativo de unos 4 € por persona y comida ajustable según la zona. Estandariza con fichas de producción, aprovecha elaboraciones base (caldos, sofritos, salsas) y organiza compras, almacenamiento y tiempos. Escala las recetas al número real de comensales y elabora escandallos de coste con precios de proveedor de la ciudad indicada, incorporando el porcentaje de merma de pescados, carnes, aves y verduras para que el coste sea realista. Puede exportar el resultado a CSV o PDF.",
+ "publico": "jefes de cocina, segundos y gerentes que dan de comer a su equipo cada día en España",
+ "featured": {
+  "src": "/blog-assets/2026/07/personal-destacada-comida-equipo.jpg",
+  "alt": "Fuentes de comida de personal servidas en una mesa larga de office de restaurante"
+ },
+ "img1": {
+  "src": "/blog-assets/2026/07/personal-olla-guiso-produccion.jpg",
+  "alt": "Olla grande de guiso en producción sobre fogón de cocina profesional"
+ },
+ "img2": {
+  "src": "/blog-assets/2026/07/personal-ficha-y-cajas.jpg",
+  "alt": "Cajas de producto de temporada y cuaderno de producción en el office de un restaurante"
+ },
+ "bloques": [
+  {
+   "titulo": "Planificación del Menú Semanal y Mensual",
+   "categoria": "Planificación de menús",
+   "foco": "montar el calendario de comidas del personal con estructura de entrante, principal y postre, equilibrado, sin repetir y con producto de temporada"
+  },
+  {
+   "titulo": "Control del Coste por Comensal",
+   "categoria": "Coste por comensal",
+   "foco": "ajustar el menú a un presupuesto por persona y comida, comparar alternativas de coste y detectar qué platos disparan el gasto"
+  },
+  {
+   "titulo": "Escandallos con Merma Real",
+   "categoria": "Escandallos y merma",
+   "foco": "calcular el coste real de cada elaboración con precios de proveedor de la ciudad y el porcentaje de merma de pescados, carnes, aves y verduras"
+  },
+  {
+   "titulo": "Aprovechamiento y Elaboraciones Base",
+   "categoria": "Aprovechamiento",
+   "foco": "exprimir caldos, sofritos, salsas y recortes del servicio para alimentar al equipo sin desperdiciar ni bajar la calidad"
+  },
+  {
+   "titulo": "Fichas de Producción y Estandarización",
+   "categoria": "Fichas de producción",
+   "foco": "convertir un plato en ficha reproducible: cantidades escaladas al número de comensales, pasos, tiempos y quién lo ejecuta"
+  },
+  {
+   "titulo": "Equipos Multiculturales y Restricciones",
+   "categoria": "Equipo y restricciones",
+   "foco": "dar de comer a una brigada con culturas, dietas y alergias distintas sin cocinar cinco menús diferentes"
+  },
+  {
+   "titulo": "Compras, Almacenamiento y Organización",
+   "categoria": "Compras y organización",
+   "foco": "traducir el menú a lista de compra, encaje con los pedidos del restaurante, almacenamiento y hueco real en la partida"
+  }
+ ],
+ "enlaces": [
+  [
+   "libreria-de-prompts-para-barista-consultor-pro-ai",
+   "Prompts para Barista Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-bartender-consultor-pro-ai",
+   "Prompts para Bartender Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-burger-pro-ai",
+   "Prompts para Burger Pro AI+"
+  ],
+  [
+   "libreria-de-prompts-para-catering-ai",
+   "Prompts para Catering AI+"
+  ],
+  [
+   "libreria-de-prompts-para-chef-consultor-pro-ai",
+   "Prompts para Chef Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chef-ejecutivo-pro-ai",
+   "Prompts para Chef Ejecutivo Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chef-privado-pro-ai",
+   "Prompts para Chef Privado Pro"
+  ],
+  [
+   "libreria-de-prompts-para-chocolateria-creativa-ai",
+   "Prompts para Chocolatería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-chocolatero-consultor-pro-ai",
+   "Prompts para Chocolatero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-consultor-gastronomico-ai",
+   "Prompts para Consultor Gastronómico"
+  ],
+  [
+   "libreria-de-prompts-para-fermentus-ai",
+   "Prompts para Fermentus con AI+"
+  ],
+  [
+   "libreria-de-prompts-para-food-pairing-ai",
+   "Prompts para Food Pairing AI"
+  ],
+  [
+   "libreria-de-prompts-para-gastro-lexicum-ai",
+   "Prompts para Gastro Lexicum"
+  ],
+  [
+   "libreria-de-prompts-para-gerente-de-restaurante-pro-ai",
+   "Prompts para Gerente de Restaurante Pro"
+  ],
+  [
+   "libreria-de-prompts-para-heladeria-creativa-ai",
+   "Prompts para Heladería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-heladero-consultor-pro-ai",
+   "Prompts para Heladero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-id-alergenos",
+   "Prompts para ID Alérgenos"
+  ],
+  [
+   "libreria-de-prompts-para-mermas-gencal",
+   "Prompts para Mermas GenCal"
+  ],
+  [
+   "libreria-de-prompts-para-panaderia-creativa-ai",
+   "Prompts para Panadería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-panadero-consultor-pro-ai",
+   "Prompts para Panadero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-pasteleria-creativa-ai",
+   "Prompts para Pastelería Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-pastelero-consultor-pro-ai",
+   "Prompts para Pastelero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-pizzero-consultor-pro-ai",
+   "Prompts para Pizzero Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-recetario-cocina-creativa-ai",
+   "Prompts para Prompts para Aprovechar al Máximo la Herramienta Recetarios AI: Cocina Creativa"
+  ],
+  [
+   "libreria-de-prompts-para-sommelier-consultor-pro-ai",
+   "Prompts para Sommelier Consultor Pro"
+  ],
+  [
+   "libreria-de-prompts-para-vegchef-plant-based-ai",
+   "Prompts para VegChef Plant-Based"
+  ],
+  [
+   "libreria-de-prompts",
+   "Todas las librerías de prompts, por agente"
+  ]
+ ]
+}
