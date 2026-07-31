@@ -39,6 +39,14 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 - **El blog es MULTI-IDIOMA desde 8B.6 y sus URLs sólo salen de los helpers de `astro-site/src/lib/blog.ts`** (`postPath`, `categoryPath`, `listPagePath`, `blogBase`). El ES va sin prefijo y con segmentos heredados de WP (`/blog/categoria/…`); el EN va con prefijo y segmentos nativos (`/en/blog/category/…`). Las categorías se resuelven SIEMPRE con idioma (`getCategory(slug, lang)`): `ai-chef-pro` existe en los dos.
 - **En Header/Footer/Hero —que se pintan en los 7 idiomas— el hub del blog es `blogHubHref(lang)`, nunca `blogBase(lang)`**: sólo ES e EN tienen blog, así que `blogBase('fr')` daría `/fr/blog`, que es un 404. `blogHubHref` cae al ES para los idiomas sin blog propio.
 
+### Banners de productos digitales: política obligatoria
+
+- **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.
+- Son **pago único con acceso vitalicio** a un dashboard, no la suscripción recurrente del SaaS. El banner lo dice explícitamente: es lo que los diferencia.
+- Datos **siempre** desde `src/data/products-catalog.ts` (22 productos, 9-85 €). Nunca duplicar nombre o precio en el contenido: los precios cambian.
+- Elegir por **relevancia temática** con el post. Paleta `accent` (el CTA de la app usa `primary`) para que no se confundan, y UTM `utm_source=blog&utm_medium=banner&utm_content=<slug>` para poder medir qué post vende.
+- El generador `fase8c-libreria-assemble.py` aborta si la config trae menos de 3 productos.
+
 ### Librerías de prompts por agente: qué son y qué NO son
 
 - Son **valor agregado de producto** para quien **ya usa AI Chef Pro** (de pago o gratuito) y entra al blog a sacarle más partido. **No se miden por tráfico SEO.** Criterio de John, 2026-07-31.

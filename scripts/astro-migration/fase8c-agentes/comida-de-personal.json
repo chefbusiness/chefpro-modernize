@@ -164,5 +164,10 @@
    "libreria-de-prompts",
    "Todas las librerías de prompts, por agente"
   ]
+ ],
+ "productos": [
+  "kit-gestion-personal",
+  "kit-escandallos",
+  "kit-tareas"
  ]
 }

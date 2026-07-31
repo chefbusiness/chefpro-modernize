@@ -44,6 +44,7 @@ PYBRIDGE = '/root/chefbusiness-ai/.venv/bin/python'
 # truncó a mitad de frase (cazado el 2026-07-31 en el bloque 6 de ID Alérgenos), así
 # que hay margen de sobra: lo que sobra no se paga, lo truncado sí se repite.
 MAX_TOKENS = 16000
+ALTURAS_BANNER = [2, 4, 6]   # tras qué bloques va cada banner
 
 SYSTEM = (
     'Eres redactor senior de contenidos gastronómicos profesionales para AI Chef Pro. '
@@ -145,6 +146,46 @@ def p(t):
     return '<p>%s</p>' % t
 
 
+PRODUCTOS_TS = REPO / 'src' / 'data' / 'products-catalog.ts'
+
+
+def catalogo_productos():
+    """{slug: (nombre, url, precio, descripción)} leído del catálogo real.
+
+    Se parsea el .ts en vez de duplicar los datos: los precios cambian y una
+    copia desactualizada en el blog es peor que no tener banner."""
+    txt = PRODUCTOS_TS.read_text(encoding='utf-8')
+    out = {}
+    for m in re.finditer(
+            r"id: '([^']+)',\s*\n\s*url: '([^']+)',\s*\n\s*price: '([^']+)',\s*\n"
+            r"\s*name: \{ es: '([^']+)'.*?description: \{\s*\n\s*es:\s*'([^']+)'", txt, re.S):
+        out[m.group(1)] = (m.group(4), m.group(2), m.group(3), m.group(5))
+    return out
+
+
+def banner(slug_producto, prods, slug_post):
+    """Banner de producto digital.
+
+    POLÍTICA (John, 2026-07-31): mínimo 3 por post de librería de prompts, a tres
+    alturas del contenido. Los productos digitales son PAGO ÚNICO con acceso
+    vitalicio —no la suscripción del SaaS— y hasta ahora no se estaban vendiendo
+    desde el blog. Se diferencian visualmente del CTA de la app (accent vs primary)
+    y llevan UTM propio para poder medirlos."""
+    if slug_producto not in prods:
+        sys.exit('producto inexistente en el catálogo: %s' % slug_producto)
+    nombre, url, precio, desc = prods[slug_producto]
+    return (
+        '<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6">'
+        '<p class="text-xs font-semibold uppercase tracking-wide text-accent">'
+        'Producto digital · pago único, acceso de por vida</p>'
+        '<h3 class="mt-2 text-xl font-bold text-foreground">%s</h3>'
+        '<p class="mt-2 text-muted-foreground">%s</p>'
+        '<a href="%s?utm_source=blog&amp;utm_medium=banner&amp;utm_content=%s" '
+        'class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold '
+        'text-accent-foreground transition-opacity hover:opacity-90">%s por %s</a>'
+        '</aside>' % (esc(nombre), esc(desc), url, slug_post, esc('Ver ' + nombre), esc(precio)))
+
+
 def figura(src, alt):
     return ('<figure class="wp-block-image size-large"><img decoding="async" src="%s" alt="%s" '
             'loading="lazy" /></figure>' % (src, esc(alt)))
@@ -162,6 +203,9 @@ def main():
         ruta = Path(__file__).parent / args.config
     cfg = json.loads(ruta.read_text(encoding='utf-8'))
     A = cfg['agente']
+    prods = catalogo_productos()
+    if len(cfg.get('productos', [])) < 3:
+        sys.exit('faltan productos: la política pide MÍNIMO 3 banners por post')
 
     def pedir(etiqueta, prompt, forzar=False):
         if args.ensamblar:
@@ -221,6 +265,11 @@ def main():
                    h3('Cómo utilizar estos prompts'), p(d['como']), tabla(d['filas'][:15])]
         if i == 4 and cfg.get('img2'):
             partes.append(figura(cfg['img2']['src'], cfg['img2']['alt']))
+        # Banners de producto a tres alturas: tras el bloque 2, el 4 y el 6.
+        if i in ALTURAS_BANNER and cfg.get('productos'):
+            n = ALTURAS_BANNER.index(i)
+            if n < len(cfg['productos']):
+                partes.append(banner(cfg['productos'][n], prods, cfg['slug']))
 
     # 3) Tips
     tips_txt = pedir('tips', (

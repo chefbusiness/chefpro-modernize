@@ -62,7 +62,7 @@ wpId: 512
 
 
 
-<h2 class="wp-block-heading">Prompts para Chef Ejecutivo de hamburguesería gourmet</h2>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Hamburguesería</h3><p class="mt-2 text-muted-foreground">Listas de prep, montaje, servicio y delivery.</p><a href="/kit-tareas-hamburgueseria?utm_source=blog&amp;utm_medium=banner&amp;utm_content=libreria-de-prompts-para-burger-pro-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Hamburguesería por €12</a></aside><h2 class="wp-block-heading">Prompts para Chef Ejecutivo de hamburguesería gourmet</h2>
 
 
 
@@ -87,7 +87,7 @@ wpId: 512
 
 
 
-<figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/06/burger-pro-smash-plancha.jpg" alt="Smash burgers dorándose en la plancha con queso fundiéndose" style="border-radius:10px;" loading="lazy"/><figcaption class="wp-element-caption">Técnica smash: pide al agente puntos de cocción, sellado y queso perfecto.</figcaption></figure><h2 class="wp-block-heading">Prompts para Jefe de Cocina de hamburguesería</h2>
+<figure class="wp-block-image size-large"><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/06/burger-pro-smash-plancha.jpg" alt="Smash burgers dorándose en la plancha con queso fundiéndose" style="border-radius:10px;" loading="lazy"/><figcaption class="wp-element-caption">Técnica smash: pide al agente puntos de cocción, sellado y queso perfecto.</figcaption></figure><aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Guía Restaurante Casual</h3><p class="mt-2 text-muted-foreground">80 plazas, todo el roadmap para abrir un casual.</p><a href="/guia-restaurante-casual?utm_source=blog&amp;utm_medium=banner&amp;utm_content=libreria-de-prompts-para-burger-pro-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Guía Restaurante Casual por €65</a></aside><h2 class="wp-block-heading">Prompts para Jefe de Cocina de hamburguesería</h2>
 
 
 
@@ -134,7 +134,7 @@ wpId: 512
 
 
 
-<h2 class="wp-block-heading">Prompts para Personal de servicio en hamburguesería</h2>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=libreria-de-prompts-para-burger-pro-ai" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside><h2 class="wp-block-heading">Prompts para Personal de servicio en hamburguesería</h2>
 
 
 
