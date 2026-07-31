@@ -1,0 +1,540 @@
+---
+// Hub de librerías de prompts — reconstruye la página `/libreria-de-prompts` que
+// existía en el WordPress del subdominio y que la migración degradó a un 301 hacia
+// la archive cronológica de la categoría (marcado en _redirects como «interino
+// hasta hub 8C»). Aquella archive lista posts por fecha; esto es otra cosa: el
+// catálogo COMPLETO de agentes agrupado por sus 11 categorías, con enlace a la
+// librería del que ya la tiene y presencia de los que aún no.
+//
+// PARA QUÉ EXISTE (criterio de John, 2026-07-31): valor agregado para quien YA usa
+// la plataforma, no captación desde buscadores. Por eso el copy no vende la suite:
+// da por hecho que el lector ya tiene cuenta.
+//
+// El catálogo vive en scripts/astro-migration/fase8c-agentes/catalogo-hub.json y se
+// arma cruzando el hub original, el sitemap público de la app y el catálogo canónico
+// de nombres (src/lib/linkify-use-case.tsx). Los prompts core NO se publican jamás.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../i18n/config';
+
+const lang = 'es';
+const basePath = '/libreria-de-prompts';
+const APP = 'https://app.aichef.pro/?utm_source=web&utm_medium=hub-prompts';
+
+const catalogo = [
+  {
+    "categoria": "Creatividad Culinaria",
+    "agentes": [
+      {
+        "nombre": "Chocolatería Creativa",
+        "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
+      },
+      {
+        "nombre": "Cocina Creativa",
+        "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
+      },
+      {
+        "nombre": "Fermentus con AI+",
+        "post": "libreria-de-prompts-para-fermentus-ai"
+      },
+      {
+        "nombre": "Food Pairing AI",
+        "post": "libreria-de-prompts-para-food-pairing-ai"
+      },
+      {
+        "nombre": "Heladería Creativa",
+        "post": "libreria-de-prompts-para-heladeria-creativa-ai"
+      },
+      {
+        "nombre": "Panadería Creativa",
+        "post": "libreria-de-prompts-para-panaderia-creativa-ai"
+      },
+      {
+        "nombre": "Pastelería Creativa",
+        "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
+      },
+      {
+        "nombre": "VegChef Plant-Based",
+        "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
+      }
+    ]
+  },
+  {
+    "categoria": "Conocimientos",
+    "agentes": [
+      {
+        "nombre": "Gastro Lexicum",
+        "post": "libreria-de-prompts-para-gastro-lexicum-ai"
+      },
+      {
+        "nombre": "GastroIMG Gen+",
+        "post": null
+      },
+      {
+        "nombre": "Sonar Deep Research",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Consultoría Gastro pro",
+    "agentes": [
+      {
+        "nombre": "Barista Consultor Pro",
+        "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
+      },
+      {
+        "nombre": "Bartender Consultor Pro",
+        "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
+      },
+      {
+        "nombre": "Chef Consultor Pro",
+        "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
+      },
+      {
+        "nombre": "Chocolatero Consultor Pro",
+        "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Consultor Gastronómico",
+        "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
+      },
+      {
+        "nombre": "Heladero Consultor Pro",
+        "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Panadero Consultor Pro",
+        "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Pastelero Consultor Pro",
+        "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Pizzero Consultor Pro",
+        "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Sommelier Consultor Pro",
+        "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
+      }
+    ]
+  },
+  {
+    "categoria": "Gastro Profile",
+    "agentes": [
+      {
+        "nombre": "Chef Ejecutivo Pro",
+        "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
+      },
+      {
+        "nombre": "Chef Privado Pro",
+        "post": "libreria-de-prompts-para-chef-privado-pro-ai"
+      },
+      {
+        "nombre": "Gerente de Restaurante Pro",
+        "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
+      },
+      {
+        "nombre": "Chef Español AI",
+        "post": null
+      },
+      {
+        "nombre": "Comida de Personal",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Herramientas y Utilidades",
+    "agentes": [
+      {
+        "nombre": "ID Alérgenos",
+        "post": "libreria-de-prompts-para-id-alergenos"
+      },
+      {
+        "nombre": "Mermas GenCal",
+        "post": "libreria-de-prompts-para-mermas-gencal"
+      },
+      {
+        "nombre": "Calcula Pax",
+        "post": null
+      },
+      {
+        "nombre": "ChatGPT para tus estudios",
+        "post": null
+      },
+      {
+        "nombre": "Chatbot Gastronómico Experto",
+        "post": null
+      },
+      {
+        "nombre": "Conversor Ing",
+        "post": null
+      },
+      {
+        "nombre": "Mental Coach",
+        "post": null
+      },
+      {
+        "nombre": "¿Quién Soy?",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Conceptos de Negocio",
+    "agentes": [
+      {
+        "nombre": "Burger Pro AI+",
+        "post": "libreria-de-prompts-para-burger-pro-ai"
+      },
+      {
+        "nombre": "Catering AI+",
+        "post": "libreria-de-prompts-para-catering-ai"
+      },
+      {
+        "nombre": "Bar & Lounge AI+",
+        "post": null
+      },
+      {
+        "nombre": "Casual Restaurants AI+",
+        "post": null
+      },
+      {
+        "nombre": "Food Truck AI+",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Proveedores Gastro",
+    "agentes": [
+      {
+        "nombre": "Sosa Ingredients Agent",
+        "post": null
+      },
+      {
+        "nombre": "tSpoonLab Agent",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Europa",
+    "agentes": [
+      {
+        "nombre": "Alemana",
+        "post": null
+      },
+      {
+        "nombre": "Belga",
+        "post": null
+      },
+      {
+        "nombre": "Británica",
+        "post": null
+      },
+      {
+        "nombre": "Francesa",
+        "post": null
+      },
+      {
+        "nombre": "Griega",
+        "post": null
+      },
+      {
+        "nombre": "Italiana",
+        "post": null
+      },
+      {
+        "nombre": "Países Bajos",
+        "post": null
+      },
+      {
+        "nombre": "Portuguesa",
+        "post": null
+      },
+      {
+        "nombre": "Suiza",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Latinoamérica",
+    "agentes": [
+      {
+        "nombre": "Argentina",
+        "post": null
+      },
+      {
+        "nombre": "Brasileña",
+        "post": null
+      },
+      {
+        "nombre": "Chilena",
+        "post": null
+      },
+      {
+        "nombre": "Colombiana",
+        "post": null
+      },
+      {
+        "nombre": "Dominicana",
+        "post": null
+      },
+      {
+        "nombre": "Ecuatoriana",
+        "post": null
+      },
+      {
+        "nombre": "Jamaicana",
+        "post": null
+      },
+      {
+        "nombre": "Mexicana",
+        "post": null
+      },
+      {
+        "nombre": "Paraguaya",
+        "post": null
+      },
+      {
+        "nombre": "Peruana",
+        "post": null
+      },
+      {
+        "nombre": "Venezolana",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Asia",
+    "agentes": [
+      {
+        "nombre": "China",
+        "post": null
+      },
+      {
+        "nombre": "India",
+        "post": null
+      },
+      {
+        "nombre": "Japonesa",
+        "post": null
+      },
+      {
+        "nombre": "Tailandesa",
+        "post": null
+      },
+      {
+        "nombre": "Turca",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Otras Plataformas",
+    "agentes": [
+      {
+        "nombre": "BlogPost SEO Gen+",
+        "post": null
+      },
+      {
+        "nombre": "Gastro Calendar",
+        "post": null
+      },
+      {
+        "nombre": "InstaFlow AI Pro",
+        "post": null
+      },
+      {
+        "nombre": "Keyword Discovery AI+",
+        "post": null
+      },
+      {
+        "nombre": "MenuDish Local SEO",
+        "post": null
+      },
+      {
+        "nombre": "PinterAI Content Pro",
+        "post": null
+      },
+      {
+        "nombre": "Pinterest Pins Gen",
+        "post": null
+      }
+    ]
+  }
+] as const;
+
+const entradilla = [
+  'Esta página centraliza todas las librerías de prompts de los agentes de AI Chef Pro. No es un manual de introducción ni una guía para empezar desde cero: es un recurso vivo para quien ya trabaja con la suite a diario y quiere ir más rápido, probar enfoques que otros profesionales de hostelería han validado y descubrir atajos que no siempre se intuyen al abrir un agente en blanco. Aquí encuentras el punto de partida que te ahorra dar vueltas y te acerca directamente a resultados útiles para cocina, sala, gestión o marketing.',
+  'Cada librería agrupa prompts listos para copiar, adaptar y encadenar dentro del mismo agente. Las 26 librerías ya publicadas cubren tareas concretas como fichas técnicas, escandallos, planning de partidas o respuestas a reseñas, y las del resto de los 73 agentes se irán incorporando progresivamente. Si ya tienes cuenta, gratuita o de pago, esto es tu caja de herramientas para exprimir al máximo lo que AI Chef Pro puede hacer por tu operativa diaria.'
+];
+
+const consejos = [
+  { t: 'Copia y adapta, no uses tal cual', d: 'Los prompts de las librerías son moldes de alto rendimiento, no piezas cerradas. Sustituye los ejemplos por tus ingredientes, nombres de plato o datos reales. Un mismo prompt base te sirve para decenas de situaciones si ajustas solo dos o tres variables.' },
+  { t: 'Encadena dentro del mismo agente', d: 'La potencia real aparece cuando usas varios prompts seguidos sin cambiar de agente. Por ejemplo, primero generas una receta base, luego pides el escandallo sobre esa misma receta y después el planning de mise en place; todo en el mismo hilo, aprovechando el contexto acumulado.' },
+  { t: 'Guarda los que te funcionan', d: 'Crea tu propia colección privada con los prompts que mejores resultados te dan en tu cocina o negocio. Así evitas reescribir y mantienes un estándar de salida coherente semana tras semana, sin depender de recordar cómo formulaste algo que salió bien hace un mes.' }
+];
+
+const faq = [
+  { q: '¿Los prompts valen para cualquier agente?', a: 'No. Cada librería está diseñada para el agente concreto al que pertenece. Usar un prompt de Ficha Técnica en el agente de Redes Sociales no dará un resultado útil porque el contexto y las capacidades del agente son distintos.' },
+  { q: '¿Hay que copiarlos literalmente?', a: 'No es necesario. Los prompts están pensados como punto de partida. Puedes modificar tono, variables o nivel de detalle. Lo importante es respetar la estructura y el objetivo del prompt para que el agente entienda la tarea.' },
+  { q: '¿Qué pasa con los agentes que aún no tienen librería?', a: 'Puedes seguir usándolos con total normalidad. Las librerías son un extra, no un requisito. Los agentes sin librería publicada funcionan exactamente igual que siempre; simplemente no disponen todavía de esa colección de ejemplos validados.' },
+  { q: '¿Sirven en otros idiomas?', a: 'Las librerías actuales están redactadas en español y optimizadas para ese idioma. Si trabajas en euskera, catalán o inglés, puedes traducir el prompt, pero el resultado dependerá del modelo y del agente. AI Chef Pro no garantiza el mismo rendimiento en otros idiomas.' },
+  { q: '¿Se pueden usar en el plan gratuito?', a: 'Sí. Las librerías de prompts están disponibles para todos los usuarios con cuenta activa, independientemente del plan. No hay restricción de acceso por tipo de suscripción.' },
+  { q: '¿Cada cuánto se amplían?', a: 'El ritmo de publicación depende de las validaciones internas del equipo de AI Chef Pro. Se van incorporando nuevas librerías a medida que se completa el testeo con casos reales de hostelería, sin un calendario fijo.' }
+];
+
+
+const TOTAL = 73;
+const CON_LIBRERIA = 26;
+
+const title = 'Librería de Prompts de AI Chef Pro: todos los agentes en un solo sitio';
+const description =
+  'El catálogo completo de agentes de AI Chef Pro con sus librerías de prompts: 73 agentes en 11 categorías y 26 librerías publicadas para copiar y adaptar.';
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    url: `${SITE}${basePath}`,
+    inLanguage: 'es',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: CON_LIBRERIA,
+      itemListElement: catalogo.flatMap((c) => c.agentes.filter((a) => a.post)).map((a, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: `Prompts para ${a.nombre}`,
+        url: `${SITE}/blog/${a.post}`,
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Inicio', item: SITE },
+      { '@type': 'ListItem', position: 2, name: 'Librería de Prompts', item: `${SITE}${basePath}` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+
+<BaseLayout title={title} description={description} lang={lang} basePath={basePath} locales={['es']}>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="es" />
+
+  <main class="container mx-auto max-w-6xl px-4 py-12">
+    <nav aria-label="Migas de pan" class="mb-6 text-sm text-muted-foreground">
+      <a href="/" class="hover:text-primary">Inicio</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Librería de Prompts</span>
+    </nav>
+
+    <header class="mb-10 max-w-3xl">
+      <h1 class="text-3xl font-bold leading-tight text-foreground md:text-4xl">
+        Librería de Prompts de AI Chef Pro
+      </h1>
+      {entradilla.map((p) => <p class="mt-4 text-lg text-muted-foreground">{p}</p>)}
+      <div class="mt-6 flex flex-wrap gap-3 text-sm">
+        <span class="rounded-full bg-primary/10 px-4 py-1.5 font-semibold text-primary">{TOTAL} agentes</span>
+        <span class="rounded-full bg-accent/10 px-4 py-1.5 font-semibold text-accent-foreground">{CON_LIBRERIA} librerías publicadas</span>
+        <span class="rounded-full bg-muted px-4 py-1.5 font-semibold text-muted-foreground">{catalogo.length} categorías</span>
+      </div>
+    </header>
+
+    <section class="mb-12 grid gap-6 md:grid-cols-3">
+      {consejos.map((c) => (
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h2 class="text-base font-bold text-foreground">{c.t}</h2>
+          <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
+        </div>
+      ))}
+    </section>
+
+    <!-- El catálogo: TODOS los agentes, tengan librería o no -->
+    {catalogo.map((c) => (
+      <section class="mb-10">
+        <div class="mb-4 flex items-baseline justify-between gap-4 border-b border-border pb-2">
+          <h2 class="text-xl font-bold text-foreground">{c.categoria}</h2>
+          <span class="shrink-0 text-xs text-muted-foreground">
+            {c.agentes.filter((a) => a.post).length} de {c.agentes.length} con librería
+          </span>
+        </div>
+        <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {c.agentes.map((a) => (
+            <li>
+              {a.post ? (
+                <a
+                  href={`/blog/${a.post}`}
+                  class="flex h-full items-center gap-3 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary hover:bg-accent/5"
+                >
+                  <span class="text-sm font-semibold text-foreground">{a.nombre}</span>
+                  <span class="ml-auto shrink-0 text-xs font-medium text-primary">Ver prompts →</span>
+                </a>
+              ) : (
+                <div class="flex h-full items-center gap-3 rounded-lg border border-dashed border-border/70 p-4">
+                  <span class="text-sm font-medium text-muted-foreground">{a.nombre}</span>
+                  <span class="ml-auto shrink-0 text-xs text-muted-foreground/70">En preparación</span>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="mt-14">
+      <h2 class="text-2xl font-bold text-foreground">Preguntas frecuentes</h2>
+      <div class="mt-4 divide-y divide-border rounded-xl border border-border">
+        {faq.map((f) => (
+          <details class="group p-5">
+            <summary class="cursor-pointer list-none font-semibold text-foreground marker:hidden">
+              {f.q}
+            </summary>
+            <p class="mt-3 text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <aside class="mt-12 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-background p-8 text-center">
+      <h2 class="text-2xl font-bold text-foreground">Abre un agente y pega tu primer prompt</h2>
+      <p class="mx-auto mt-3 max-w-xl text-muted-foreground">
+        Todas estas librerías están pensadas para usarse dentro de la suite. Entra, elige el agente
+        que necesites hoy y adapta el prompt a tu negocio.
+      </p>
+      <a
+        href={APP}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-6 inline-block rounded-lg bg-primary px-8 py-3 font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+      >Ir a AI Chef Pro</a>
+    </aside>
+  </main>
+
+  <Footer lang="es" />
+</BaseLayout>

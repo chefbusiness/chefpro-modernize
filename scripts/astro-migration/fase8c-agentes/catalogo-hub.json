@@ -1,0 +1,349 @@
+[
+ {
+  "categoria": "Creatividad Culinaria",
+  "agentes": [
+   {
+    "nombre": "Chocolatería Creativa",
+    "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
+   },
+   {
+    "nombre": "Cocina Creativa",
+    "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
+   },
+   {
+    "nombre": "Fermentus con AI+",
+    "post": "libreria-de-prompts-para-fermentus-ai"
+   },
+   {
+    "nombre": "Food Pairing AI",
+    "post": "libreria-de-prompts-para-food-pairing-ai"
+   },
+   {
+    "nombre": "Heladería Creativa",
+    "post": "libreria-de-prompts-para-heladeria-creativa-ai"
+   },
+   {
+    "nombre": "Panadería Creativa",
+    "post": "libreria-de-prompts-para-panaderia-creativa-ai"
+   },
+   {
+    "nombre": "Pastelería Creativa",
+    "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
+   },
+   {
+    "nombre": "VegChef Plant-Based",
+    "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
+   }
+  ]
+ },
+ {
+  "categoria": "Conocimientos",
+  "agentes": [
+   {
+    "nombre": "Gastro Lexicum",
+    "post": "libreria-de-prompts-para-gastro-lexicum-ai"
+   },
+   {
+    "nombre": "GastroIMG Gen+",
+    "post": null
+   },
+   {
+    "nombre": "Sonar Deep Research",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Consultoría Gastro pro",
+  "agentes": [
+   {
+    "nombre": "Barista Consultor Pro",
+    "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
+   },
+   {
+    "nombre": "Bartender Consultor Pro",
+    "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
+   },
+   {
+    "nombre": "Chef Consultor Pro",
+    "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
+   },
+   {
+    "nombre": "Chocolatero Consultor Pro",
+    "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
+   },
+   {
+    "nombre": "Consultor Gastronómico",
+    "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
+   },
+   {
+    "nombre": "Heladero Consultor Pro",
+    "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
+   },
+   {
+    "nombre": "Panadero Consultor Pro",
+    "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
+   },
+   {
+    "nombre": "Pastelero Consultor Pro",
+    "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
+   },
+   {
+    "nombre": "Pizzero Consultor Pro",
+    "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
+   },
+   {
+    "nombre": "Sommelier Consultor Pro",
+    "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
+   }
+  ]
+ },
+ {
+  "categoria": "Gastro Profile",
+  "agentes": [
+   {
+    "nombre": "Chef Ejecutivo Pro",
+    "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
+   },
+   {
+    "nombre": "Chef Privado Pro",
+    "post": "libreria-de-prompts-para-chef-privado-pro-ai"
+   },
+   {
+    "nombre": "Gerente de Restaurante Pro",
+    "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
+   },
+   {
+    "nombre": "Chef Español AI",
+    "post": null
+   },
+   {
+    "nombre": "Comida de Personal",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Herramientas y Utilidades",
+  "agentes": [
+   {
+    "nombre": "ID Alérgenos",
+    "post": "libreria-de-prompts-para-id-alergenos"
+   },
+   {
+    "nombre": "Mermas GenCal",
+    "post": "libreria-de-prompts-para-mermas-gencal"
+   },
+   {
+    "nombre": "Calcula Pax",
+    "post": null
+   },
+   {
+    "nombre": "ChatGPT para tus estudios",
+    "post": null
+   },
+   {
+    "nombre": "Chatbot Gastronómico Experto",
+    "post": null
+   },
+   {
+    "nombre": "Conversor Ing",
+    "post": null
+   },
+   {
+    "nombre": "Mental Coach",
+    "post": null
+   },
+   {
+    "nombre": "¿Quién Soy?",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Conceptos de Negocio",
+  "agentes": [
+   {
+    "nombre": "Burger Pro AI+",
+    "post": "libreria-de-prompts-para-burger-pro-ai"
+   },
+   {
+    "nombre": "Catering AI+",
+    "post": "libreria-de-prompts-para-catering-ai"
+   },
+   {
+    "nombre": "Bar & Lounge AI+",
+    "post": null
+   },
+   {
+    "nombre": "Casual Restaurants AI+",
+    "post": null
+   },
+   {
+    "nombre": "Food Truck AI+",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Proveedores Gastro",
+  "agentes": [
+   {
+    "nombre": "Sosa Ingredients Agent",
+    "post": null
+   },
+   {
+    "nombre": "tSpoonLab Agent",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Recetarios de Europa",
+  "agentes": [
+   {
+    "nombre": "Alemana",
+    "post": null
+   },
+   {
+    "nombre": "Belga",
+    "post": null
+   },
+   {
+    "nombre": "Británica",
+    "post": null
+   },
+   {
+    "nombre": "Francesa",
+    "post": null
+   },
+   {
+    "nombre": "Griega",
+    "post": null
+   },
+   {
+    "nombre": "Italiana",
+    "post": null
+   },
+   {
+    "nombre": "Países Bajos",
+    "post": null
+   },
+   {
+    "nombre": "Portuguesa",
+    "post": null
+   },
+   {
+    "nombre": "Suiza",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Recetarios de Latinoamérica",
+  "agentes": [
+   {
+    "nombre": "Argentina",
+    "post": null
+   },
+   {
+    "nombre": "Brasileña",
+    "post": null
+   },
+   {
+    "nombre": "Chilena",
+    "post": null
+   },
+   {
+    "nombre": "Colombiana",
+    "post": null
+   },
+   {
+    "nombre": "Dominicana",
+    "post": null
+   },
+   {
+    "nombre": "Ecuatoriana",
+    "post": null
+   },
+   {
+    "nombre": "Jamaicana",
+    "post": null
+   },
+   {
+    "nombre": "Mexicana",
+    "post": null
+   },
+   {
+    "nombre": "Paraguaya",
+    "post": null
+   },
+   {
+    "nombre": "Peruana",
+    "post": null
+   },
+   {
+    "nombre": "Venezolana",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Recetarios de Asia",
+  "agentes": [
+   {
+    "nombre": "China",
+    "post": null
+   },
+   {
+    "nombre": "India",
+    "post": null
+   },
+   {
+    "nombre": "Japonesa",
+    "post": null
+   },
+   {
+    "nombre": "Tailandesa",
+    "post": null
+   },
+   {
+    "nombre": "Turca",
+    "post": null
+   }
+  ]
+ },
+ {
+  "categoria": "Otras Plataformas",
+  "agentes": [
+   {
+    "nombre": "BlogPost SEO Gen+",
+    "post": null
+   },
+   {
+    "nombre": "Gastro Calendar",
+    "post": null
+   },
+   {
+    "nombre": "InstaFlow AI Pro",
+    "post": null
+   },
+   {
+    "nombre": "Keyword Discovery AI+",
+    "post": null
+   },
+   {
+    "nombre": "MenuDish Local SEO",
+    "post": null
+   },
+   {
+    "nombre": "PinterAI Content Pro",
+    "post": null
+   },
+   {
+    "nombre": "Pinterest Pins Gen",
+    "post": null
+   }
+  ]
+ }
+]

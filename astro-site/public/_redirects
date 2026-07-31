@@ -8,9 +8,11 @@ https://blog.aichef.pro/feed https://aichef.pro/blog/rss.xml 301!
 https://blog.aichef.pro/feed/* https://aichef.pro/blog/rss.xml 301!
 https://blog.aichef.pro/sitemap_index.xml https://aichef.pro/sitemap-index.xml 301!
 
-# Hub librería (página WP 234) → categoría (interino hasta hub 8C)
-https://blog.aichef.pro/libreria-de-prompts https://aichef.pro/blog/categoria/libreria-de-prompts 301!
-https://blog.aichef.pro/libreria-de-prompts/* https://aichef.pro/blog/categoria/libreria-de-prompts 301!
+# Hub librería (página WP 234) → el hub REAL, reconstruido en 8C (2026-07-31).
+# Antes iba a la archive de la categoría: un listado por fecha que perdía el
+# sentido de la página original (catálogo por categorías de agente).
+https://blog.aichef.pro/libreria-de-prompts https://aichef.pro/libreria-de-prompts 301!
+https://blog.aichef.pro/libreria-de-prompts/* https://aichef.pro/libreria-de-prompts 301!
 
 # Medios: misma estructura year/month en /blog-assets
 https://blog.aichef.pro/wp-content/uploads/* https://aichef.pro/blog-assets/:splat 301!
