@@ -5,6 +5,11 @@ import { useLanguage } from '@/hooks/useLanguage';
 const AnnouncementBar = () => {
   const { t, currentLanguage } = useLanguage();
   const [visible, setVisible] = useState(() => {
+    // Este initializer corre DURANTE el render, también en el pase SSR de los
+    // islands de marketing (client:load desde 2026-08-01), donde no hay
+    // localStorage. En servidor se pinta visible —es contenido, y así entra en
+    // el HTML— y el cliente la oculta al hidratar si el usuario ya la cerró.
+    if (typeof localStorage === 'undefined') return true;
     return localStorage.getItem('announcement-dismissed') !== 'true';
   });
 

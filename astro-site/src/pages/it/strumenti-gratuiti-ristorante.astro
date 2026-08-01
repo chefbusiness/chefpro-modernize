@@ -1,8 +1,8 @@
 ---
 // GENERADO por scripts/astro-migration/fase6-generate-marketing.py — NO editar a mano.
-// Fase 6: la página de la SPA (src/pages/HerramientasGratuitas.tsx) se monta TAL CUAL como
-// island client:only (D5, patrón Fase 5); el head SEO sale server-side del
-// head-module (claves i18n verbatim de la SPA — SEOHead/Helmet son la spec).
+// Fase 6: la página de la SPA (src/pages/HerramientasGratuitas.tsx) se monta como island (D5,
+// patrón Fase 5); el head SEO sale server-side del head-module (claves i18n
+// verbatim de la SPA — SEOHead/Helmet son la spec).
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE } from '../../i18n/config';
 import { head } from '../../lib/marketing-heads/herramientas-gratuitas';
@@ -23,5 +23,5 @@ const h = head(lang);
   {h.schemas.map((s) => (
     <script type="application/ld+json" set:html={JSON.stringify(s)} />
   ))}
-  <HerramientasGratuitasIsland client:only="react" />
+  <HerramientasGratuitasIsland client:load lang={lang} pathname={Astro.url.pathname} />
 </BaseLayout>

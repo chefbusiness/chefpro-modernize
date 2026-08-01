@@ -79,6 +79,15 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   vite: {
+    ssr: {
+      // Desde 2026-08-01 las 119 páginas de marketing pasan por SSR, así que sus
+      // dependencias se cargan también en Node. jspdf y xlsx (y fflate, que
+      // arrastra jspdf) son CommonJS con una forma de export que el loader ESM
+      // de Node rechaza: «does not provide an export named 'default'». Con
+      // noExternal las empaqueta Vite, que sí hace el interop.
+      // Solo se usan dentro de handlers de exportación; nunca durante el render.
+      noExternal: ['jspdf', 'xlsx', 'fflate'],
+    },
     plugins: [
       {
         // Fase 6: en el pipeline de Astro, importar .jpg/.svg devuelve un objeto

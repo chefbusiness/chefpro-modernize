@@ -12,14 +12,43 @@
  * + useParams (useLanguage sincroniza idioma desde /:lang) y + Link
  * (OtherFreeTools). Nada más — no ampliar sin re-censar.
  *
- * Todos los islands que llegan aquí van con client:only="react" (sin pase
- * SSR), por lo que window siempre existe cuando este código corre.
+ * Los islands de la zona APP siguen yendo con client:only="react" (contenido
+ * de pago: renderizarlo en servidor lo metería en el HTML público). Los de
+ * MARKETING pasan por SSR desde 2026-08-01, así que aquí `window` puede no
+ * existir: la ubicación llega entonces por <SsrLocation>, que la página Astro
+ * rellena con el path que está construyendo. Sin eso, `useParams` devolvía {} en
+ * el servidor y las seis versiones no españolas se renderizaban EN ESPAÑOL.
  *
  * ⚠️ Referencias ESTABLES obligatorias: ProductAccessGate mete `params` y
  * `navigate` en las deps de su useEffect de verificación — devolver un objeto
  * nuevo por render relanzaría el fetch a verify-purchase en bucle infinito.
  */
-import { useEffect, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+
+interface Ubicacion {
+  pathname: string;
+  search: string;
+  hash: string;
+}
+
+const VACIA: Ubicacion = { pathname: '/', search: '', hash: '' };
+const UbicacionSSR = createContext<Ubicacion | null>(null);
+
+export function SsrLocation({ pathname, children }: { pathname: string; children: ReactNode }) {
+  const [valor] = useState<Ubicacion>(() => ({ pathname, search: '', hash: '' }));
+  return <UbicacionSSR.Provider value={valor}>{children}</UbicacionSSR.Provider>;
+}
+
+/** En el navegador manda window; en el servidor, lo que inyectó la página Astro. */
+function useUbicacion(): Ubicacion {
+  const delServidor = useContext(UbicacionSSR);
+  if (typeof window === 'undefined') return delServidor ?? VACIA;
+  return {
+    pathname: window.location.pathname,
+    search: window.location.search,
+    hash: window.location.hash,
+  };
+}
 
 export interface NavigateOptions {
   replace?: boolean;
@@ -27,6 +56,7 @@ export interface NavigateOptions {
 
 // Función a nivel de módulo → referencia estable entre renders.
 function navigateImpl(to: string, options?: NavigateOptions): void {
+  if (typeof window === 'undefined') return;   // en SSR no se navega
   if (options?.replace) window.location.replace(to);
   else window.location.assign(to);
 }
@@ -38,16 +68,14 @@ export function useNavigate() {
 export function useSearchParams(): [URLSearchParams] {
   // useState con initializer → la MISMA instancia de URLSearchParams
   // durante toda la vida del componente (estabilidad para deps de efectos).
-  const [params] = useState(() => new URLSearchParams(window.location.search));
+  const ubicacion = useUbicacion();
+  const [params] = useState(() => new URLSearchParams(ubicacion.search));
   return [params];
 }
 
 export function useLocation() {
-  const [location] = useState(() => ({
-    pathname: window.location.pathname,
-    search: window.location.search,
-    hash: window.location.hash,
-  }));
+  const ubicacion = useUbicacion();
+  const [location] = useState(() => ubicacion);
   return location;
 }
 
@@ -56,8 +84,9 @@ export function useParams<T extends Record<string, string | undefined>>(): T {
   // en useLanguage.ts (rutas /:lang/...). En Astro el idioma va en el primer
   // segmento del path (es = sin prefijo → {}). useState initializer → misma
   // referencia entre renders (useLanguage la mete en deps de su useEffect).
+  const ubicacion = useUbicacion();
   const [params] = useState(() => {
-    const seg = window.location.pathname.split('/')[1];
+    const seg = ubicacion.pathname.split('/')[1];
     return (['en', 'fr', 'de', 'it', 'pt', 'nl'].includes(seg)
       ? { lang: seg }
       : {}) as T;
