@@ -23,6 +23,13 @@ que devolvió bridge, y de paso deja el post al estándar de contenido enriqueci
 Lo que NO toca: bloques propios del post que no vienen de bridge (el reproductor
 de podcast de `que-es-el-food-pairing` lleva un `.m4a` real y se conserva).
 
+⚠️ REGENERAR PISA LAS EDICIONES MANUALES. El cuerpo se reconstruye ENTERO desde
+el .txt de bridge, así que cualquier cosa añadida a mano al `.md` después de la
+primera pasada desaparece sin avisar. Pasó al reparar las viñetas de
+`cocina-molecular`: se llevó por delante los dos enlaces internos (`espumas` y
+`esferificación`) que se le habían puesto luego. Antes de volver a correrlo sobre
+un post ya publicado, comparar los enlaces con `git show HEAD:<fichero>`.
+
 Uso:
     python3 scripts/astro-migration/fase8d-ampliar-glosario.py --slug <slug>
 """
@@ -67,6 +74,37 @@ CONFIG = {
         # El reproductor del podcast lleva un .m4a real: se conserva tal cual.
         'preservar': ['<figure class="wp-block-image', '<figure class="wp-block-audio'],
     },
+    # — Tanda 2 (2026-08-01, noche). Las dos entradas más delgadas del glosario: 49 y 78
+    #   palabras, sin una sola imagen y con la FAQ inexistente. La SERP mandó el
+    #   enfoque: en «token» la keyword genérica es de criptomonedas y no se pelea;
+    #   en «LLM» el top lo ocupan IBM y AWS, así que el valor está en la capa que
+    #   ninguno cubre (qué NO sabe hacer un LLM en una cocina).
+    'token-unidad-inteligencia-artificial': {
+        'bridge': 'token.txt',
+        'productos': ['pro-prompts-ebook', 'kit-escandallos', 'pack-appcc'],
+        'imagenes': [
+            ('/blog-assets/2026/08/token-troceado.jpg',
+             'Una receta impresa recortada en decenas de tiras de papel ordenadas en filas '
+             'sobre una encimera de roble, junto a un cuchillo cebollero y unas hierbas frescas'),
+            ('/blog-assets/2026/08/token-ventana-contexto.jpg',
+             'Una tablet junto a una pila alta de fichas técnicas impresas y un portapapeles '
+             'sobre el pase de madera de una cocina profesional'),
+        ],
+        'preservar': [],
+    },
+    'llm-large-language-model-cocina': {
+        'bridge': 'llm.txt',
+        'productos': ['pro-prompts-ebook', 'pack-appcc', 'kit-tareas-restaurante-creativo'],
+        'imagenes': [
+            ('/blog-assets/2026/08/llm-validacion-chef.jpg',
+             'Las manos de un chef corrigiendo a bolígrafo una ficha técnica impresa sobre '
+             'una encimera de roble, con una tablet encendida al lado'),
+            ('/blog-assets/2026/08/llm-asistente-cocina.jpg',
+             'Una tablet apoyada en el pase de una cocina profesional entre cuencos de mise '
+             'en place y una sartén, con luz natural de ventana'),
+        ],
+        'preservar': [],
+    },
 }
 
 
@@ -75,38 +113,58 @@ def esc(s):
 
 
 def parsea(txt):
-    """Devuelve (bloques, faq). Un bloque es ('h2'|'h3'|'p'|'tabla', contenido)."""
+    """Devuelve (bloques, faq). Un bloque es ('h2'|'h3'|'p'|'lista'|'tabla', contenido)."""
     bloques, faq = [], []
-    tabla, en_faq = None, False
+    tabla, lista, en_faq = None, None, False
+
+    def cierra():
+        """Vuelca la tabla o la lista que estuviera abierta."""
+        nonlocal tabla, lista
+        if tabla:
+            bloques.append(('tabla', tabla)); tabla = None
+        if lista:
+            bloques.append(('lista', lista)); lista = None
+
     for linea in txt.splitlines():
         l = linea.strip()
         if not l:
             continue
         if l.startswith('==='):                      # marcador de tabla
+            cierra()
             tabla = []
             continue
         m = re.match(r'\[H([23])\]\s*(.+)', l)
         if m:
-            if tabla:
-                bloques.append(('tabla', tabla)); tabla = None
+            cierra()
             en_faq = bool(re.search(r'preguntas frecuentes|^faq$', m.group(2), re.I))
             if not en_faq:
                 bloques.append(('h%s' % m.group(1), m.group(2)))
+            continue
+        # Viñetas. Sin este caso caían al `else` y se servían como párrafos
+        # sueltos empezados por «- », sin <ul>: así se publicaron las 7 del
+        # equipamiento de `cocina-molecular` (cazado el 2026-08-01).
+        v = re.match(r'[-*•]\s+(.+)', l)
+        if v and not en_faq:
+            if tabla:
+                bloques.append(('tabla', tabla)); tabla = None
+            if lista is None:
+                lista = []
+            lista.append(v.group(1).strip())
             continue
         if '|' in l:
             if en_faq:
                 q, a = l.split('|', 1)
                 faq.append((q.strip(), a.strip()))
             else:
+                if lista:
+                    bloques.append(('lista', lista)); lista = None
                 if tabla is None:
                     tabla = []
                 tabla.append([c.strip() for c in l.split('|')])
             continue
-        if tabla:
-            bloques.append(('tabla', tabla)); tabla = None
+        cierra()
         bloques.append(('p', l))
-    if tabla:
-        bloques.append(('tabla', tabla))
+    cierra()
     return bloques, faq
 
 
@@ -181,6 +239,12 @@ def main():
             partes.append(gen.banner(cfg['productos'][donde_banner[i]], prods, args.slug, 'es'))
         if tipo == 'tabla':
             partes.append(html_tabla(cont))
+        elif tipo == 'lista':
+            # `wp-block-list` es la convención del corpus (1.489 usos frente a
+            # 946 de `<ul>` pelado). Sin escapar, igual que los párrafos: bridge
+            # devuelve enlaces internos y <strong> dentro de las viñetas.
+            partes.append('<ul class="wp-block-list">%s</ul>'
+                          % ''.join('<li>%s</li>' % x for x in cont))
         elif tipo in ('h2', 'h3'):
             partes.append('<%s class="wp-block-heading">%s</%s>' % (tipo, esc(cont), tipo))
         else:
