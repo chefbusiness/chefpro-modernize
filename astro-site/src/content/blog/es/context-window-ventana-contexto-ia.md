@@ -157,14 +157,6 @@ wpId: 3139
 <p><strong>¿La ventana de contexto afecta la creatividad de la IA?</strong><br /> Indirectamente, sí. Una ventana más grande permite a la IA considerar más variables, restricciones y contexto, lo que resulta en propuestas más matizadas y coherentes. Sin embargo, la creatividad pura depende más del modelo base y de cómo formules tus prompts.</p>
 <p><strong>¿Puedo aumentar la ventana de contexto de un modelo?</strong><br /> No, el tamaño de la ventana es una característica fija de cada modelo definida por sus creadores. Lo que sí puedes hacer es usar técnicas como el «prompt chaining» (encadenamiento de prompts) donde la salida de una conversación alimenta la siguiente, simulando una memoria más grande.</p>
 <p><strong>¿Todos los modelos de AI Chef Pro tienen la misma ventana de contexto?</strong><br /> No, AI Chef Pro utiliza diferentes modelos según la tarea. Para consultas rápidas usa modelos ágiles; para menús completos y análisis de costes, activa automáticamente modelos con ventanas de contexto extendidas, sin que tengas que preocuparte de la configuración técnica.</p>
-<p>  <!-- Banner CTA 3: Conclusión --> </p>
-<div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 50px; text-align: center; border-radius: 12px; margin: 50px 0;">
-<h2 style="color: #ffde59; margin-bottom: 20px; font-size: 28px;">📬 Suscríbete al Glosario AI Chef Pro</h2>
-<p style="color: #ffffff; margin-bottom: 25px; font-size: 18px;">     Recibe cada semana nuevos términos de IA aplicados a la hostelería.<br />     Conviértete en el experto tecnológico de tu cocina.   </p>
-<p>   <a href="https://aichef.pro/newsletter?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-ai&#038;utm_content=context-window-ventana-contexto-ia" style="display: inline-block; background: #ffde59; color: #000000; padding: 18px 50px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 18px;" target="_blank" rel="noopener">     SUSCRIBIRME GRATIS →   </a>   </p>
-<p style="color: #888; font-size: 14px; margin-top: 15px;">     +2.500 chefs ya reciben nuestro contenido exclusivo   </p>
-</p>
-</div>
 <h2>Conclusión</h2>
 <p>La <strong>ventana de contexto</strong> es mucho más que un dato técnico: es el factor que determina qué tan complejas pueden ser las tareas que delegas a la inteligencia artificial en tu restaurante. Desde generar una simple receta hasta diseñar menús degustación completos con análisis de rentabilidad, todo depende de esta «memoria a corto plazo» de la IA.</p>
 <p>Para el profesional de hostelería moderno, entender este concepto significa poder:</p>

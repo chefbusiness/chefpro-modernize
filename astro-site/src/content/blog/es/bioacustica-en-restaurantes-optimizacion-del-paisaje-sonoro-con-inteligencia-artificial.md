@@ -920,4 +920,3 @@ wpId: 2656
 
 
 
-<div class="wp-block-jetpack-donations"><h4>Haz una donación única</h4><p>Se agradece tu contribución.</p><a class="jetpack-donations-fallback-link" rel="noopener noreferrer noamphtml" target="_blank">Donar</a><hr class="donations__separator"/><h4>Haz una donación mensual</h4><p>Se agradece tu contribución.</p><a class="jetpack-donations-fallback-link" rel="noopener noreferrer noamphtml" target="_blank">Donar mensualmente</a><hr class="donations__separator"/><h4>Haz una donación anual</h4><p>Se agradece tu contribución.</p><a class="jetpack-donations-fallback-link" rel="noopener noreferrer noamphtml" target="_blank">Donar anualmente</a></div>
