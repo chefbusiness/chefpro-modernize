@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/mermas-gencal-control-costes-destacada.jpg
 imageAlt: "Chef pesando ingredientes en bascula de precision para control de costes y mermas"
 lang: es
+translations:
+  en: prompt-library-food-waste-costing
 wpId: 308
 ---
 

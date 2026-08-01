@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/food-pairing-maridaje-destacada.jpg
 imageAlt: "Flat-lay de maridajes creativos: chocolate y chili, fresa y albahaca, queso azul y miel, café y cítrico"
 lang: es
+translations:
+  en: prompt-library-food-pairing
 wpId: 273
 ---
 

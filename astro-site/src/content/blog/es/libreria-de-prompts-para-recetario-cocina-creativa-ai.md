@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/cocina-creativa-plato-autor-destacada.jpg
 imageAlt: "Plato de autor de cocina creativa con purés de verduras, microvegetales y flores comestibles"
 lang: es
+translations:
+  en: prompt-library-avant-garde-cuisine
 wpId: 320
 ---
 

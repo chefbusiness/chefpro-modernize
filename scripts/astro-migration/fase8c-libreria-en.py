@@ -143,12 +143,39 @@ def sin_espanol(textos, etiqueta, slug):
 # su zona, seguía con .*? hasta cazar uno en la FAQ 30 KB más abajo y devolvía
 # la FAQ disfrazada de tips.
 
+RELACIONADOS = re.compile(r'<h2[^>]*>\s*También te [Pp]uede [Ii]nteresar\s*</h2>')
+SECCION_REAL = re.compile(r'<h2[^>]*>\s*(?:Prompts para |Tips y Consejos|Preguntas Frecuentes|'
+                          r'Explora más)')
+
+
+def _sin_relacionados(cuerpo):
+    """Los 5 posts de molde WordPress antiguo llevan incrustado EN MITAD del
+    artículo un «También te puede interesar» congelado del WordPress: el 20-25 %
+    del HTML, 7-9 imágenes y SIETE <h2> falsos que son títulos de posts
+    relacionados (uno repetido cinco veces, apuntando a páginas pSEO de ciudades).
+
+    No es contenido del post —BlogPost.astro ya pinta sus propios relacionados de
+    la misma categoría— y envenena cualquier censo: por su culpa estos posts
+    parecían tener 12-16 imágenes cuando las suyas son 2-4."""
+    m = RELACIONADOS.search(cuerpo)
+    if not m:
+        return cuerpo
+    sig = SECCION_REAL.search(cuerpo, m.end())
+    return cuerpo[:m.start()] + (cuerpo[sig.start():] if sig else '')
+
+
 def _secciones(cuerpo):
-    """[(título del h2, contenido hasta el siguiente h2)] en orden de aparición."""
+    """[(título del h2, contenido hasta el siguiente h2)] en orden de aparición.
+
+    «Cómo utilizar estos prompts» NO abre sección: en casi todo el corpus es un
+    <h3> dentro del bloque, pero en recetario-cocina-creativa-ai es un <h2>, y
+    trocear ahí partía el bloque en dos y dejaba su tabla de 15 prompts fuera."""
+    limites = [m for m in re.finditer(r'<h2[^>]*>(.*?)</h2>', cuerpo, re.S)
+               if 'Cómo utilizar' not in m.group(1)]
     out = []
-    for m in re.finditer(r'<h2[^>]*>(.*?)</h2>', cuerpo, re.S):
-        sig = cuerpo.find('<h2', m.end())
-        out.append((limpia(m.group(1)), cuerpo[m.end():sig if sig > 0 else len(cuerpo)]))
+    for i, m in enumerate(limites):
+        fin = limites[i + 1].start() if i + 1 < len(limites) else len(cuerpo)
+        out.append((limpia(m.group(1)), cuerpo[m.end():fin]))
     return out
 
 
@@ -158,16 +185,34 @@ def _primer_parrafo(seccion):
 
 
 def _como_usar(seccion):
-    m = re.search(r'Cómo utilizar estos prompts\s*</h3>\s*<p[^>]*>(.*?)</p>', seccion, re.S)
+    # El encabezado va en h3 en casi todo el corpus y en h2 en recetario; en
+    # catering-ai el texto además vive dentro de un <strong>. Se salta cualquier
+    # cierre de etiqueta entre la frase y el párrafo siguiente.
+    # …y en catering-ai el texto acaba en «&nbsp;». Se tolera cualquier mezcla de
+    # espacios, entidades y cierres de etiqueta entre la frase y su párrafo.
+    m = re.search(r'Cómo utilizar estos prompts(?:&nbsp;|\s|</?[a-z][^>]*>){0,8}?<p[^>]*>(.*?)</p>',
+                  seccion, re.S)
+    if m:
+        return m.group(1)
+    # Y en el último bloque de catering-ai ni siquiera es un encabezado: es una
+    # entradilla en negrita DENTRO del párrafo, con el texto a continuación.
+    m = re.search(r'<p[^>]*><strong>Cómo utilizar estos prompts:?</strong>(?:&nbsp;|\s)*(.*?)</p>',
+                  seccion, re.S)
     return m.group(1) if m else ''
 
 
+# Un tip se abre con un <h3> o, en el molde WordPress antiguo, con un párrafo en
+# negrita que hace de encabezado sin serlo.
+ABRE_TIP = re.compile(r'(?:<h3[^>]*>(.*?)</h3>|<p[^>]*><strong>(.*?)</strong></p>)'
+                      r'\s*(.*?)(?=<h3|<p[^>]*><strong>|\Z)', re.S)
+
+
 def _tips(zona):
-    """Cada tip es un <h3> seguido de su desarrollo, venga en <p> (molde nuevo) o
-    en <ul><li>consejo</li><li><em>ejemplo</em></li></ul> (molde WordPress)."""
+    """Tres moldes de desarrollo: <p> (nuevo), <ul><li>consejo</li><li>ejemplo</li>
+    (WordPress) y el mismo <ul> colgando de un <p><strong> (WordPress antiguo)."""
     tips = []
-    for m in re.finditer(r'<h3[^>]*>(.*?)</h3>\s*(.*?)(?=<h3|\Z)', zona, re.S):
-        titulo, resto = limpia(m.group(1)), m.group(2)
+    for m in ABRE_TIP.finditer(zona):
+        titulo, resto = limpia(m.group(1) or m.group(2) or ''), m.group(3)
         p = re.search(r'<p[^>]*>(.*?)</p>', resto, re.S)
         lis = re.findall(r'<li>(.*?)</li>', resto, re.S)
         texto = limpia(p.group(1)) if p else ' '.join(limpia(x) for x in lis)
@@ -177,21 +222,23 @@ def _tips(zona):
 
 
 def _faq(fm, secciones):
-    """Frontmatter en el molde nuevo; sección visible en el de WordPress."""
+    """Frontmatter en el molde nuevo; sección visible en el de WordPress. En
+    catering-ai la FAQ es un bloque de Rank Math, que mete un <div> entre la
+    pregunta y la respuesta: sin tolerarlo, la extracción daba cero."""
     faq = re.findall(r'^  - q: "(.*?)"\n    a: "(.*?)"$', fm, re.M | re.S)
     if faq:
         return faq
     for titulo, seccion in secciones:
         if titulo.startswith('Preguntas Frecuentes'):
-            return [(limpia(q), limpia(a)) for q, a in
-                    re.findall(r'<h3[^>]*>(.*?)</h3>\s*<p[^>]*>(.*?)</p>', seccion, re.S)]
+            return [(limpia(q), limpia(a)) for q, a in re.findall(
+                r'<h3[^>]*>(.*?)</h3>(?:\s|<div[^>]*>)*<p[^>]*>(.*?)</p>', seccion, re.S)]
     return []
 
 
 def trocea_es(md):
     """Extrae del .md español lo que hay que adaptar."""
     txt = md.read_text(encoding='utf-8')
-    fm, cuerpo = txt.split('---', 2)[1], txt.split('---', 2)[2]
+    fm, cuerpo = txt.split('---', 2)[1], _sin_relacionados(txt.split('---', 2)[2])
     def campo(k):
         m = re.search(r'^%s: "(.*?)"$' % k, fm, re.M | re.S)
         return m.group(1) if m else ''
@@ -229,13 +276,16 @@ def verifica(d, slug):
             faltas.append('bloque %d: sin párrafo de introducción' % i)
         if not limpia(b['como']):
             faltas.append('bloque %d: sin «Cómo utilizar estos prompts»' % i)
-    if not d['tips']:
-        faltas.append('sin tips extraíbles (¿molde WordPress antiguo, con los tips en <ul> suelto?)')
     if not d['faq']:
         faltas.append('sin FAQ ni en el frontmatter ni en la sección «Preguntas Frecuentes»')
-    if len(d['imgs']) != 2:
-        faltas.append('%d imágenes en el cuerpo, y el molde inglés solo coloca 2 '
-                      '(los 5 posts de WordPress antiguo van en la segunda tanda)' % len(d['imgs']))
+    if not 1 <= len(d["imgs"]) <= 10:
+        faltas.append('%d imágenes en el cuerpo: fuera del rango que el molde reparte (1-10). '
+                      'Si son muchas, comprueba que _sin_relacionados() esté recortando el '
+                      'bloque «También te puede interesar»' % len(d['imgs']))
+    # Los tips SÍ pueden faltar: catering-ai no tiene esa sección en español y se
+    # redactan desde cero en inglés. Se avisa, no se aborta.
+    if not d['tips']:
+        print('   ⚠ sin tips en el post ES: se redactarán desde cero en inglés', flush=True)
     if faltas:
         sys.exit('EXTRACCIÓN INCOMPLETA de %s — el post ES no encaja con el molde:\n  · %s'
                  % (slug, '\n  · '.join(faltas)))
@@ -345,6 +395,27 @@ def main():
         m = re.search(r'===%s===\s*(.*?)(?====|\Z)' % n, t, re.S)
         return m.group(1).strip() if m else ''
 
+    # Reparto de imágenes. Estuvo fijo en 2 mientras todos los posts tenían 2; los
+    # del molde WordPress antiguo traen hasta 6 propias y descartarlas rompería la
+    # paridad con el español. La primera va tras el «por qué» y el resto se
+    # espacian entre los bloques.
+    def reparte(cuantos):
+        """Marcadores espaciados entre los bloques. Si hay más marcadores que
+        bloques caen varios tras el mismo, que es feo pero no pierde ninguno:
+        empujarlos al siguiente hueco libre los amontonaba todos en el último."""
+        sitios = {}
+        for k in range(cuantos):
+            idx = max(1, min(len(d['bloques']),
+                             round((k + 1) * len(d['bloques']) / (cuantos + 1)) or 1))
+            sitios.setdefault(idx, []).append(k)
+        return sitios
+
+    tras_bloque = reparte(len(d['imgs']) - 1)
+    # Tres banners a tres alturas (política de John). Estaban clavados en los
+    # bloques 2, 4 y 6: con 5 bloques el tercero no existía y el post salía con dos.
+    # Imágenes y banners NO se excluyen: un bloque puede llevar de los dos.
+    tras_bloque_banner = reparte(min(3, len(info.get('productos', []))))
+
     partes.append('<p>%s</p>' % sec('LEDE'))
     partes.append('<h2 class="wp-block-heading">Why prompts matter with %s</h2>' % A)
     partes += ['<p>%s</p>' % p for p in sec('WHY').split('\n') if p.strip()]
@@ -398,18 +469,29 @@ def main():
                    '<th>Category</th></tr></thead><tbody>%s</tbody></table></div></figure>'
                    % ''.join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>'
                              % (esc(a), esc(x), esc(c)) for a, x, c in filas[:len(b['filas'])])]
-        if i == 4 and len(d['imgs']) > 1:
-            partes.append('<!--IMG2-->')
-        if i in (2, 4, 6) and info.get('productos'):
-            n = [2, 4, 6].index(i)
-            if n < len(info['productos']):
-                partes.append('<!--BANNER%d-->' % n)
+        for n in tras_bloque.get(i, []):
+            partes.append('<!--IMG%d-->' % (n + 2))
+        for n in tras_bloque_banner.get(i, []):
+            partes.append('<!--BANNER%d-->' % n)
 
     # 3) tips y FAQ
-    tips_txt = pedir('tips', CTX + (
-        'Adapt these Spanish usage tips to US professional kitchens.\n%s\n\n'
-        'EXACT format: %d lines "SHORT TITLE | tip of 35-60 words". No markdown.'
-        % ('\n'.join('%s | %s' % (limpia(a), limpia(b)) for a, b in d['tips']), len(d['tips']))))
+    if d['tips']:
+        n_tips = len(d['tips'])
+        pide_tips = ('Adapt these Spanish usage tips to US professional kitchens.\n%s\n\n'
+                     'EXACT format: %d lines "SHORT TITLE | tip of 35-60 words". No markdown.'
+                     % ('\n'.join('%s | %s' % (limpia(a), limpia(b)) for a, b in d['tips']),
+                        n_tips))
+    else:
+        # catering-ai no tiene sección de tips en español. Se redactan desde cero,
+        # pero anclados a lo que el agente hace de verdad —las áreas de sus propios
+        # bloques—, no inventados en el aire.
+        n_tips = 8
+        pide_tips = ('Write practical usage tips for this agent, for US professional '
+                     'kitchens. Base them ONLY on what the agent actually does, which these '
+                     'prompt areas describe:\n%s\n\n'
+                     'EXACT format: %d lines "SHORT TITLE | tip of 35-60 words". No markdown.'
+                     % ('\n'.join('- ' + b['titulo'] for b in d['bloques']), n_tips))
+    tips_txt = pedir('tips', CTX + pide_tips)
     tips_en = []
     for l in tips_txt.splitlines():
         if '|' in l:
@@ -417,9 +499,9 @@ def main():
             if len(a.strip()) > 3 and len(b.strip()) > 20:
                 tips_en.append((a.strip().lstrip('-* '), b.strip()))
     sin_espanol([t for t, _ in tips_en] + [x for _, x in tips_en], 'tips', args.slug)
-    if len(tips_en) < len(d['tips']):
+    if len(tips_en) < n_tips:
         sys.exit('tips: %d de %d. Borra %s/%s-tips.txt y reintenta'
-                 % (len(tips_en), len(d['tips']), CACHE, args.slug))
+                 % (len(tips_en), n_tips, CACHE, args.slug))
     partes.append('<h2 class="wp-block-heading">Tips for getting more out of %s</h2>' % A)
     for titulo, texto in tips_en:
         partes += ['<h3 class="wp-block-heading">%s</h3>' % titulo, '<p>%s</p>' % texto]
@@ -447,19 +529,34 @@ def main():
 
     # 4) alts de las imágenes: se reutilizan los ficheros del post ES (fotos sin
     #    texto ni caras), pero el texto alternativo hay que adaptarlo.
+    # Los alts VACÍOS del español no se mandan a traducir. Descuadraban el recuento
+    # —bridge devuelve una línea menos por cada uno— y, sobre todo, pedirle que
+    # invente uno a partir del nombre del fichero puede meter el nombre de una
+    # PERSONA REAL en el post: recetario-cocina-creativa-ai trae una foto cuyo
+    # fichero es el nombre y apellido de un chef. Un alt vacío es HTML válido para
+    # una imagen decorativa; inventarlo no lo es.
+    todos = [(d['image'], d['imageAlt'])] + d['imgs']
+    pide = [(i, a) for i, (_, a) in enumerate(todos) if a.strip()]
     alts_txt = pedir('alts', CTX + (
         'Adapt these Spanish image alt texts to English. One per line, same order, '
         'no numbering, no markdown, max 120 chars each:\n%s'
-        % '\n'.join(a for _, a in [(d['image'], d['imageAlt'])] + d['imgs'])), minimo=60)
+        % '\n'.join(a for _, a in pide)), minimo=60)
     # El modelo a veces devuelve como primera línea el encabezado del contexto
     # («AGENT: Gastro Lexicum»). Cuela por longitud y descuadra el recuento.
-    alts = [l.strip().lstrip('-* ') for l in alts_txt.splitlines()
-            if len(l.strip()) > 15 and not re.match(r'(AGENT|CONTEXT)\s*:', l.strip(), re.I)]
-    if len(alts) != 1 + len(d['imgs']):
-        sys.exit('alts: bridge devolvió %d líneas y hacen falta %d (destacada + %d del cuerpo).\n'
-                 'Borra %s/%s-alts.txt y reintenta. Sin esto se cuela un alt EN ESPAÑOL dentro '
-                 'de un post inglés, y en silencio.'
-                 % (len(alts), 1 + len(d['imgs']), len(d['imgs']), CACHE, args.slug))
+    # Umbral bajo a propósito: un alt legítimo puede ser «AI Chef Pro» (11
+    # caracteres) y exigir más de 15 lo descartaba, descuadrando el recuento y
+    # haciendo parecer que fallaba el modelo. Quien valida aquí es el RECUENTO
+    # contra las imágenes del español, no la longitud de cada línea.
+    lineas = [l.strip().lstrip('-* ') for l in alts_txt.splitlines()
+              if len(l.strip()) > 3 and not re.match(r'(AGENT|CONTEXT)\s*:', l.strip(), re.I)]
+    if len(lineas) != len(pide):
+        sys.exit('alts: bridge devolvió %d líneas y hacen falta %d (%d imágenes, %d con alt '
+                 'en el español).\nBorra %s/%s-alts.txt y reintenta. Sin esto se cuela un alt '
+                 'EN ESPAÑOL dentro de un post inglés, y en silencio.'
+                 % (len(lineas), len(pide), len(todos), len(pide), CACHE, args.slug))
+    alts = [''] * len(todos)
+    for (i, _), texto in zip(pide, lineas):
+        alts[i] = texto
 
     # 5) sustituir marcadores por imágenes y banners
     gen = cargar_generador()

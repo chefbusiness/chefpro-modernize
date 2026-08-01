@@ -64,9 +64,26 @@ def limpia(s):
     return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s)).strip()
 
 
+# El mismo recorte que hace el generador: los 5 posts de molde WordPress antiguo
+# llevan un «También te puede interesar» congelado en mitad del artículo, con 7-9
+# imágenes y 7 <h2> falsos. Comparar contra el cuerpo SIN recortar daba un falso
+# error de paridad de imágenes (6 en inglés vs 13 en español).
+RELACIONADOS = re.compile(r'<h2[^>]*>\s*También te [Pp]uede [Ii]nteresar\s*</h2>')
+SECCION_REAL = re.compile(r'<h2[^>]*>\s*(?:Prompts para |Tips y Consejos|Preguntas Frecuentes|'
+                          r'Explora más)')
+
+
+def sin_relacionados(cuerpo):
+    m = RELACIONADOS.search(cuerpo)
+    if not m:
+        return cuerpo
+    sig = SECCION_REAL.search(cuerpo, m.end())
+    return cuerpo[:m.start()] + (cuerpo[sig.start():] if sig else '')
+
+
 def trozos(md):
     txt = md.read_text(encoding='utf-8')
-    return txt.split('---', 2)[1], txt.split('---', 2)[2]
+    return txt.split('---', 2)[1], sin_relacionados(txt.split('---', 2)[2])
 
 
 def frase(texto, pos, radio=110):
@@ -103,7 +120,10 @@ def revisa(slug, mapa, prods_ts):
     filas_en = re.findall(r'<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>', cu_en, re.S)
     if len(filas_en) != len(filas_es):
         errores.append('prompts: %d en inglés vs %d en español' % (len(filas_en), len(filas_es)))
-    tablas_es, tablas_en = cu_es.count('<table>'), cu_en.count('<table>')
+    # <table class="has-fixed-layout"> en el molde WordPress antiguo: contar la
+    # etiqueta pelada daba 0 tablas y un falso error de paridad.
+    cuenta_tablas = lambda s: len(re.findall(r'<table[^>]*>', s))
+    tablas_es, tablas_en = cuenta_tablas(cu_es), cuenta_tablas(cu_en)
     if tablas_en != tablas_es:
         errores.append('tablas: %d vs %d' % (tablas_en, tablas_es))
     if cu_en.count('tabla-prompts') != tablas_en:
@@ -111,8 +131,14 @@ def revisa(slug, mapa, prods_ts):
                        'horizontal que escondía el 72%% del contenido)'
                        % (tablas_en - cu_en.count('tabla-prompts'), tablas_en))
     faq_en = re.findall(r'^  - q: "(.*?)"\n    a: "(.*?)"$', fm_en, re.M | re.S)
-    if len(faq_en) < 8:
-        errores.append('FAQ con %d entradas (el molde son 10)' % len(faq_en))
+    faq_es = (re.findall(r'^  - q: "(.*?)"\n    a: "(.*?)"$', fm_es, re.M | re.S)
+              or re.findall(r'<h3[^>]*>(.*?)</h3>(?:\s|<div[^>]*>)*<p[^>]*>(.*?)</p>',
+                            next((s for t_, s in [(limpia(h), c) for h, c in re.findall(
+                                r'<h2[^>]*>(.*?)</h2>(.*?)(?=<h2|\Z)', cu_es, re.S)]
+                                 if t_.startswith('Preguntas Frecuentes')), ''), re.S))
+    if len(faq_en) < len(faq_es):
+        errores.append('FAQ: %d entradas en inglés vs %d en español'
+                       % (len(faq_en), len(faq_es)))
 
     # ── 2. Nada de español donde debería haber inglés ──────────────────────
     # El frontmatter entra en la revisión: ahí viven title, description y la FAQ, que
@@ -153,7 +179,7 @@ def revisa(slug, mapa, prods_ts):
         if not (ASSETS / s.lstrip('/')).exists():
             errores.append('imagen inexistente en public/: %s' % s)
     for alt in re.findall(r'<img[^>]*alt="([^"]*)"', cu_en):
-        if re.search(r'[áéíóúñÁÉÍÓÚÑ]', alt):
+        if len(set(m.group(0).lower() for m in FUNCION_ES.finditer(alt))) >= 3:
             errores.append('alt en español: «%s»' % alt)
 
     banners = re.findall(r'utm_source=blog&amp;utm_medium=banner&amp;utm_content=([\w-]+)', cu_en)

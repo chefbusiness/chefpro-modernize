@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/catering-ai-buffet-evento-destacada.jpg
 imageAlt: "Buffet de catering elegante con canapes gourmet y fuentes en una mesa de evento"
 lang: es
+translations:
+  en: prompt-library-catering
 wpId: 157
 ---
 

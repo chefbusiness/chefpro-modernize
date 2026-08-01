@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/burger-pro-gourmet-destacada.jpg
 imageAlt: "Hamburguesa gourmet artesana con carne jugosa, queso fundido y pan brioche"
 lang: es
+translations:
+  en: prompt-library-burger-restaurant
 wpId: 512
 ---
 

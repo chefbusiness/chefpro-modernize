@@ -59,7 +59,13 @@ Cazado el 2026-08-01 depurando por qué falló el piloto inglés. Cualquier scri
 1. **Un regex de sección SIN acotar la zona no falla: acierta en el sitio equivocado.** `<h3>(.*?)</h3><p>(.*?)</p>` lanzado sobre la sección de tips del molde WordPress no encuentra par ahí (los tips van en `<ul>`), así que `.*?` sigue 30 KB hacia abajo y caza el primer par **de la FAQ**. Devuelve 10 resultados, parece que funciona, y lo que alimenta al modelo es la FAQ disfrazada de tips. **Acotar siempre por sección antes de buscar dentro.**
 2. **Un `<h1>` incrustado en el cuerpo esconde contenido.** 6 posts ES lo tienen (doble H1 con el del layout). En `recetario-cocina-creativa-ai` hay un bloque entero de 15 prompts bajo `<h1>`, y en `burger-pro-ai` es el encabezado de los tips: cualquier parser que trocee por `<h2>` los pierde sin avisar.
 
+**El molde WordPress antiguo (5 posts) acumula además cinco peculiaridades**, todas descubiertas depurando una a una: el `<h2>Cómo utilizar` (en lugar de `<h3>`) que parte el bloque en dos, el `&nbsp;` pegado al final de ese encabezado, la variante en que ni siquiera es encabezado sino una entradilla en negrita **dentro** del párrafo, la FAQ como bloque de **Rank Math** (con un `<div>` entre pregunta y respuesta) y los tips colgando de un `<p><strong>` sin `<h3>`. Un regex por caso; no hay atajo.
+
+**⚠️ Bloque «También te puede interesar» congelado dentro del cuerpo.** Esos mismos 5 posts llevan incrustado en MITAD del artículo un widget de relacionados heredado de WordPress: **el 20-25 % del HTML**, 7-9 imágenes y **siete `<h2>` falsos** que son títulos de posts (uno repetido cinco veces, apuntando a páginas pSEO de ciudades). `BlogPost.astro` ya pinta sus propios relacionados de la misma categoría, así que es **duplicación pura y además obsoleta**. Envenena cualquier censo: por su culpa estos posts parecían tener 12-16 imágenes cuando las suyas son 2-9. El generador inglés lo recorta con `_sin_relacionados()`; **en los posts ES sigue ahí**.
+
 Gate: `python3 scripts/astro-migration/fase8c-libreria-en-gate.py --todos` compara el post inglés **contra el español** (paridad de prompts/tablas/imágenes, banners y UTM, hreflang recíproco en los dos lados, restos de español en cuerpo **y frontmatter**). Correrlo siempre antes de dar por buena una tanda.
+
+Gate de H1: `python3 scripts/astro-migration/fase8c-h1-unico.py` (dry-run por defecto). El layout ya pinta el `title` como `<h1>`; el del cuerpo llega por **dos vías** —HTML crudo y Markdown `# `— y en **los dos idiomas**. Mirar una sola vía o una sola carpeta da falso verde: así se me escaparon 20 de 26.
 
 ### Banners de productos digitales: política obligatoria
 
