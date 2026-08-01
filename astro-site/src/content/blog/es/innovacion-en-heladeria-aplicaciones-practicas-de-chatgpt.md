@@ -2,7 +2,7 @@
 title: "Heladería Artesanal: Rentabilidad Real con IA 2026"
 description: "Cómo mejorar la rentabilidad de tu heladería artesanal con IA: escandallo del cucurucho, equilibrado de la mezcla, estacionalidad y marketing local."
 pubDate: 2025-03-08
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Innovacion-en-Heladeria-Aplicaciones-Practicas-de-ChatGPT.jpg
 imageAlt: "Innovación en Heladería: Aplicaciones Prácticas de ChatGPT"
@@ -23,7 +23,7 @@ faq:
     a: "Suma materia prima, cucurucho, merma estimada, personal imputado por unidad, energía de conservación y una parte proporcional de alquiler y fijos. Divide todo entre el número de unidades. Así obtienes un escandallo completo, no solo el food cost. La IA puede automatizar ese cálculo en segundos."
 ---
 
-# Heladería artesanal rentabilidad IA: cómo ganar dinero de verdad, no solo en verano
+## Heladería artesanal rentabilidad IA: cómo ganar dinero de verdad, no solo en verano
 
 La **heladería artesanal rentabilidad IA** no es un eslogan: es la única forma de proteger el margen cuando la estacionalidad, las mermas y una mezcla mal equilibrada se comen el negocio. El margen bruto de un cucurucho puede superar el 70 %, pero la cuenta de explotación real rara vez pasa del 15-20 % de beneficio neto sobre facturación. Y eso, en julio. En enero, con la misma estructura de costes fijos, muchos obradores pierden dinero cada día que abren.
 

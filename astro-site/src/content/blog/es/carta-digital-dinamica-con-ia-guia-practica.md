@@ -2,7 +2,7 @@
 title: "Carta Digital Restaurante QR: Guía Práctica 2026"
 description: "Cómo hacer bien una carta digital con QR: qué debe tener, errores típicos, normativa de alérgenos 2026 y actualización del menú con IA. Práctica y sin humo."
 pubDate: 2026-01-08
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/carta-digital-dinamica-con-ia-3.jpeg
 imageAlt: "Carta Digital Dinámica con IA: Guía Práctica para Gestionar tu Restaurante"
@@ -23,7 +23,7 @@ faq:
     a: "Puedes empezar sin gastar nada. AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes, sin tarjeta, suficiente para generar descripciones, fichas de alérgenos y traducciones de una carta pequeña. Si necesitas más volumen, los planes de pago arrancan en 25 €/mes."
 ---
 
-# Carta digital restaurante QR: guía práctica para hosteleros en 2026
+## Carta digital restaurante QR: guía práctica para hosteleros en 2026
 
 Una carta digital restaurante QR bien hecha en 2026 no es un PDF colgado en una web ni una imagen escaneada que obliga a hacer zoom. Es un menú vivo, diseñado para móvil, que se carga en menos de dos segundos, muestra los platos con fotos ligeras, los alérgenos actualizados al momento y los precios reales que quieres cobrar hoy. Si tu QR lleva al mismo PDF de hace tres meses, no tienes una carta digital: tienes un problema de imagen y, probablemente, un riesgo legal con los alérgenos. Aquí vamos al grano: qué necesita, qué errores la tiran por tierra, cómo cumplir la normativa sin miedo y cómo la IA te ahorra horas de papeleo para que la carta trabaje por ti.
 

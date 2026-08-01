@@ -2,7 +2,7 @@
 title: "Prompts para Aprovechar al Máximo la Herramienta: Burger Pro AI+"
 description: "Burger Pro AI+ es una herramienta de inteligencia artificial para profesionales de hamburgueserías. Ofrece asesoramiento en creación de recetas, gestión…"
 pubDate: 2024-09-27
-modDate: 2026-07-05
+modDate: 2026-08-01
 category: libreria-de-prompts
 image: /blog-assets/2026/06/burger-pro-gourmet-destacada.jpg
 imageAlt: "Hamburguesa gourmet artesana con carne jugosa, queso fundido y pan brioche"
@@ -211,7 +211,7 @@ wpId: 512
 
 
 
-<h1 class="wp-block-heading">Tips y Consejos de Uso para Burger Pro AI+</h1>
+<h2 class="wp-block-heading">Tips y Consejos de Uso para Burger Pro AI+</h2>
 
 
 

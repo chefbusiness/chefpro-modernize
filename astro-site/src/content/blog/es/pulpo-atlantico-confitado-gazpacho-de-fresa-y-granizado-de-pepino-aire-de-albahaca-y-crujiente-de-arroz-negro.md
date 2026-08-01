@@ -2,7 +2,7 @@
 title: "Pulpo Atlántico confitado, gazpacho de fresa y granizado de pepino, aire de albahaca y crujiente de arroz negro"
 description: "Le he pedido al modelo App Cocina Creativa de AI Chef Pro que me diera una receta inspirada en Lisboa, Portugal para este Septiembre 2025 y me ha dado esta…"
 pubDate: 2025-09-03
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: recetas
 image: /blog-assets/2025/09/pulpo-atlantico-gazpacho-fresas-1.jpg
 imageAlt: "Pulpo Atlántico confitado, gazpacho de fresa y granizado de pepino, aire de albahaca y crujiente de arroz negro"
@@ -318,7 +318,7 @@ wpId: 1481
 
 
 
-<h1 class="wp-block-heading">Escandallo de Costos</h1>
+<h2 class="wp-block-heading">Escandallo de Costos</h2>
 
 
 

@@ -2,7 +2,7 @@
 title: "Food Truck Rentable: Costes, Márgenes y Previsión con IA"
 description: "Rentabiliza tu food truck en 2026: costes frente a un local fijo, ubicaciones y eventos, carta corta de alta rotación y previsión de demanda con IA."
 pubDate: 2026-03-23
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/food-truck-ia-1.jpg
 imageAlt: "Food truck gourmet en calle de Madrid con cola de clientes y chef visible"
@@ -23,7 +23,7 @@ faq:
     a: "La IA cruza datos históricos de ventas, calendario de eventos, meteorología y estacionalidad para afinar las previsiones de demanda por ubicación y día. Así reduces roturas de stock y mermas, ajustas las compras y dimensionas el personal. También sirve para escandallar cartas con food cost controlado y aplicar pricing dinámico."
 ---
 
-# Cómo rentabilizar un food truck en 2026: estructura de costes frente a un local fijo, ubicaciones, eventos, carta corta y previsión de demanda con IA
+## Cómo rentabilizar un food truck en 2026: estructura de costes frente a un local fijo, ubicaciones, eventos, carta corta y previsión de demanda con IA
 
 Un food truck bien gestionado en España puede alcanzar márgenes brutos del 60–70 % y una rentabilidad neta anual que ronda el 10–15 % en los casos más afinados. La inversión inicial es muy inferior a la de un local fijo: por cada euro que metes en un restaurante de ladrillo, el food truck te pide una fracción. Eso está claro.
 

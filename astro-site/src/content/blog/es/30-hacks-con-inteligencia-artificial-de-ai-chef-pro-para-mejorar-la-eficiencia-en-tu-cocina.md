@@ -2,7 +2,7 @@
 title: "Trucos de IA para Cocina Profesional: 30 Hacks por Área"
 description: "30 hacks de IA para cocina profesional organizados por área: escandallos, cartas, marketing y operativa. Cada truco con su instrucción lista para usar."
 pubDate: 2026-02-14
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: libreria-de-prompts
 image: /blog-assets/2026/02/hacks-ai-chef-pro-1.jpg
 imageAlt: "30 Hacks de AI Chef Pro para Mejorar la Eficiencia en tu Cocina"
@@ -23,7 +23,7 @@ faq:
     a: "AI Chef Pro trabaja en 7 idiomas, con español nativo de máxima calidad. También puedes generar contenidos en inglés, francés, alemán, italiano, portugués y neerlandés, manteniendo la precisión técnica culinaria. Ideal para cartas multilingües o comunicación con equipos internacionales."
 ---
 
-# Trucos de IA en Cocina Profesional: 30 Hacks por Área para Ganar Tiempo y Margen
+## Trucos de IA en Cocina Profesional: 30 Hacks por Área para Ganar Tiempo y Margen
 
 Los trucos ia cocina profesional no son magia: son flujos repetitivos que delegas en un agente de IA para ganar minutos y margen. Con más de 29 años en la alta hostelería, he visto cómo la tecnología se convierte en un aliado cuando se aplica sin rodeos. Este artículo te entrega 30 hacks probados, organizados por área operativa real —desde creatividad hasta gestión diaria—, cada uno con la instrucción exacta que puedes copiar y pegar en tu agente, sin humo.
 

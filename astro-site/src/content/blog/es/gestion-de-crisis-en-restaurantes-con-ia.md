@@ -2,7 +2,7 @@
 title: "Gestión de Crisis Restaurante: Manual con IA por Escenario"
 description: "Manual de gestión de crisis en restaurantes: protocolo por escenario (intoxicación, reseña viral, inspección) y cómo la IA ayuda a responder en minutos."
 pubDate: 2026-01-02
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/gestion-de-crisis-en-restaurantes-con-ia-4.jpeg
 imageAlt: "Gestión de Crisis en Restaurantes con IA: Manual Completo para Prevenir y Superar Situaciones Críticas"
@@ -23,7 +23,7 @@ faq:
     a: "AI Chef Pro tiene un plan gratuito con 3.000 créditos al mes, sin tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
 ---
 
-# Manual de gestión de crisis en restaurantes: protocolos, comunicación y cómo la IA te ayuda a responder en minutos
+## Manual de gestión de crisis en restaurantes: protocolos, comunicación y cómo la IA te ayuda a responder en minutos
 
 Un restaurante sin manual de crisis improvisa. Improvisar en caliente cuesta clientes, dinero y reputación. No importa si llevas un local pequeño o una cadena con varios puntos de venta: una intoxicación alimentaria, una reseña viral negativa o una inspección sanitaria pueden descolocar al equipo más rodado si no sabes exactamente qué hacer en los primeros 60 minutos.
 

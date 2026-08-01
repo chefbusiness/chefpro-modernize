@@ -2,7 +2,7 @@
 title: "Restaurant Marketing Strategy 2026: 15 Tactics That Actually Drive Covers"
 description: "The restaurant industry has undergone a massive transformation in how customers discover, choose, and return to dining establishments. 60% of new restaurant…"
 pubDate: 2026-04-09
-modDate: 2026-04-23
+modDate: 2026-08-01
 category: ai-in-gastronomy
 lang: en
 wpId: 3364
@@ -181,7 +181,7 @@ faq:
 </ul>
 <h3>Local Citations</h3>
 <p>Local citations are online mentions of your business that</p>
-<h1>Restaurant Marketing Strategy 2026: 15 Tactics That Actually Drive Covers &#8211; Part 2</h1>
+<h2>Restaurant Marketing Strategy 2026: 15 Tactics That Actually Drive Covers &#8211; Part 2</h2>
 <p>In <a href="#part1">Part 1</a>, we explored digital essentials, social media strategies, and the foundations of local SEO. Now, we complete our comprehensive guide with advanced local SEO tactics, loyalty programs, AI-powered marketing, and offline strategies that continue to deliver results in 2026.</p>
 <h2>Completing Your Local SEO Strategy</h2>
 <p>While we began exploring local SEO in Part 1, the following elements are essential for dominating local search results and capturing nearby hungry customers.</p>

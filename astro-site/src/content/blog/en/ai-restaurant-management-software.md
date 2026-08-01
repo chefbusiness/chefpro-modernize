@@ -2,7 +2,7 @@
 title: "AI Restaurant Management Software"
 description: "AI Restaurant Management Software How Smart Technology Eliminates Operational Chaos and Maximizes Profit Margins 📅 March 17, 2026 ⏱️ 12 min read 🍽️…"
 pubDate: 2026-03-17
-modDate: 2026-04-23
+modDate: 2026-08-01
 category: ai-chef-pro
 lang: en
 wpId: 3251
@@ -11,7 +11,6 @@ imageAlt: "Restaurant Management"
 ---
 
 <div class="hero">
-<h1>AI Restaurant Management Software</h1>
 <p class="subtitle">How Smart Technology Eliminates Operational Chaos and Maximizes Profit Margins</p>
 <div class="meta">            <span>📅 March 17, 2026</span>            <span>⏱️ 12 min read</span>            <span>🍽️ Operations</span>        </div>
 </p></div>

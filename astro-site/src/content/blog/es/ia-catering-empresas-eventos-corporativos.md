@@ -2,7 +2,7 @@
 title: "Catering para Empresas: Precios y Escandallos por Evento"
 description: "Estructura de precios por tipo de evento, cómo escandallar cada servicio y montar presupuestos con IA para tu negocio de catering. Datos 2026."
 pubDate: 2026-03-25
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/catering-empresas-ia-1.jpg
 imageAlt: "Catering corporativo elegante en centro de conferencias con personal profesional"
@@ -23,7 +23,7 @@ faq:
     a: "El plan gratuito incluye 3.000 créditos al mes sin tarjeta. El Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año."
 ---
 
-# Catering para Empresas: Guía de Negocio Rentable con Estructura de Precios, Escandallos y IA
+## Catering para Empresas: Guía de Negocio Rentable con Estructura de Precios, Escandallos y IA
 
 El catering para empresas es un modelo de negocio que funciona con contratos anticipados: cada evento se cierra con semanas o meses de margen, el número de comensales está cerrado y puedes ajustar la compra casi al céntimo. Con un food cost bien gestionado entre el 25 % y el 35 %, y un margen neto sano que en hostelería se mueve entre el 8 % y el 15 %, un catering corporativo bien armado ofrece estabilidad que un restaurante a la carta rara vez alcanza. Aquí no dependes del pase diario ni de si llueve el sábado; dependes de tu capacidad para escandallar con cabeza y de presentar propuestas que el cliente entienda y acepte.
 

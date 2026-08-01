@@ -2,17 +2,13 @@
 title: "Token: La Unidad Básica de la Inteligencia Artificial"
 description: "Descubre qué son los tokens, la unidad básica de procesamiento en IA, y cómo optimizar tus prompts para mejores resultados."
 pubDate: 2026-02-21
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: glosario
 image: /blog-assets/2026/02/token-featured.jpg
 imageAlt: "Token: La Unidad Básica de la Inteligencia Artificial"
 lang: es
 wpId: 2903
 ---
-
-<h1 class="wp-block-heading">Token: La Unidad Básica de la Inteligencia Artificial</h1>
-
-
 
 <p class="wp-block-paragraph">Los tokens son las unidades básicas de procesamiento en la IA. Comprender cómo funcionan es fundamental para optimizar la comunicación con herramientas como AI Chef Pro.</p>
 

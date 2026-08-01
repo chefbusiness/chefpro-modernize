@@ -2,17 +2,13 @@
 title: "LLM (Large Language Model): El Cerebro de la IA en la Cocina"
 description: "Descubre qué son los Large Language Models y cómo funcionan como el cerebro de la IA en aplicaciones culinarias como AI Chef Pro."
 pubDate: 2026-02-19
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: glosario
 image: /blog-assets/2026/02/llm-ia-nanobanana.jpg
 imageAlt: "LLM (Large Language Model): El Cerebro de la IA en la Cocina"
 lang: es
 wpId: 2902
 ---
-
-<h1 class="wp-block-heading">LLM (Large Language Model): El Cerebro de la IA en la Cocina</h1>
-
-
 
 <p class="wp-block-paragraph">Los LLM son modelos de IA entrenados con enormes cantidades de texto para comprender y generar lenguaje natural. En hostelería, permiten crear recetas, describir platos y asistir en la cocina.</p>
 

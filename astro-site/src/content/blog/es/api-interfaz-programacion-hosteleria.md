@@ -2,17 +2,13 @@
 title: "API (Interfaz de Programación): Qué es y Cómo Transforma la Hostelería"
 description: "Descubre qué es una API y cómo transforma la operativa de restaurantes mediante la integración de sistemas. Guía práctica para profesionales de hostelería."
 pubDate: 2026-02-17
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: glosario
 image: /blog-assets/2026/02/api-nanobanana.jpg
 imageAlt: "API (Interfaz de Programación): Qué es y Cómo Transforma la Hostelería"
 lang: es
 wpId: 2901
 ---
-
-<h1 class="wp-block-heading">API (Interfaz de Programación): Qué es y Cómo Transforma la Hostelería</h1>
-
-
 
 <p class="wp-block-paragraph">En el mundo digital actual, los restaurantes y negocios de hostelería necesitan conectar múltiples sistemas para operar eficientemente. Desde la gestión de reservas hasta el control de inventario, todo debe funcionar en armonía. Ahí es donde entran las <strong>APIs</strong>, el componente invisible pero fundamental que hace posible que diferentes aplicaciones «hablen» entre sí.</p>
 

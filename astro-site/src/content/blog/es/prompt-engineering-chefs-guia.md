@@ -2,7 +2,7 @@
 title: "Prompt Engineering para Chefs: Guía Práctica de Prompts 2026"
 description: "Domina el prompt engineering para chefs: anatomía de un buen prompt (rol, contexto, tarea, formato), 10 ejemplos antes/después y errores a evitar."
 pubDate: 2026-03-10
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ai-chef-pro
 image: /blog-assets/2026/02/prompteng-nanobanana.jpg
 imageAlt: "Prompt Engineering para Chefs: Guía Definitiva 2026"
@@ -23,7 +23,7 @@ faq:
     a: "Sí, AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes sin necesidad de tarjeta. Incluye acceso a todos los agentes de IA culinarios en español. Si necesitas más capacidad, hay planes de pago desde 25 € al mes. Puedes empezar gratis y escalar cuando tu volumen de trabajo lo requiera."
 ---
 
-# Prompt engineering para chefs: guía práctica para dejar de recibir respuestas genéricas
+## Prompt engineering para chefs: guía práctica para dejar de recibir respuestas genéricas
 
 El *prompt engineering* aplicado a una cocina profesional es tan sencillo como esto: la instrucción que le das a la IA funciona igual que la comanda que le pasas a tu partida. Si la comanda dice “un pescado”, el cocinero improvisa y el resultado es una lotería. Si dice “lomo de lubina salvaje, vuelta y vuelta, punto jugoso, guarnición de verduras de temporada salteadas, sin ajo”, el plato sale exacto. Con la inteligencia artificial pasa lo mismo. Un buen prompt —rol + contexto + tarea + formato— cambia la respuesta de genérica a utilizable en un pase real.
 

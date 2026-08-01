@@ -2,7 +2,7 @@
 title: "Prompts para Aprovechar al Máximo la Herramienta Recetarios AI: Cocina Creativa"
 description: "AI Chef Pro ofrece una herramienta de Cocina Creativa que utiliza inteligencia artificial para ayudar a chefs y cocineros a desarrollar recetas innovadoras…"
 pubDate: 2024-09-13
-modDate: 2026-07-05
+modDate: 2026-08-01
 category: libreria-de-prompts
 image: /blog-assets/2026/06/cocina-creativa-plato-autor-destacada.jpg
 imageAlt: "Plato de autor de cocina creativa con purés de verduras, microvegetales y flores comestibles"
@@ -73,7 +73,7 @@ wpId: 320
 
 
 
-<h1 class="wp-block-heading">Prompts para Chef Ejecutivo en Cocina Creativa AI</h1>
+<h2 class="wp-block-heading">Prompts para Chef Ejecutivo en Cocina Creativa AI</h2>
 
 
 

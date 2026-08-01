@@ -2,7 +2,7 @@
 title: "151 Prompts para Restaurantes: Guía por Áreas 2026"
 description: "151 prompts para restaurantes por áreas: cocina, costes, carta, marketing, RRHH y eventos. Plantillas, variantes y ejemplos listos para usar en 2026."
 pubDate: 2025-11-10
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: libreria-de-prompts
 image: /blog-assets/2025/11/prompts-restaurantes-hosteleria-aichefpro.jpeg
 imageAlt: "151 Prompts para Restaurantes y Hostelería: Guía Completa 2025-2026"
@@ -23,7 +23,7 @@ faq:
     a: "Totalmente. El flujo más productivo es encadenar: por ejemplo, primero pides un menú, luego el escandallo de ese menú y por último el calendario de redes para promocionarlo. Así construyes un proceso de trabajo completo sin empezar de cero cada vez."
 ---
 
-# 151 prompts para restaurantes: guía práctica por áreas de negocio
+## 151 prompts para restaurantes: guía práctica por áreas de negocio
 
 Tienes delante 151 prompts para restaurantes, agrupados en seis áreas de negocio que cubren el ciclo completo de un local: desde la cocina y el escandallo hasta el marketing, los eventos y la gestión de equipo. No son frases inspiracionales: son instrucciones de trabajo que cualquier cocinero o gestor hostelero puede copiar, pegar y adaptar a su operativa real. Con ellas ahorras horas de papeleo, creatividad bajo presión y decisiones sin datos, porque cada prompt te devuelve un entregable concreto (una ficha técnica, una tabla de costes, una parrilla de contenido) que puedes aplicar hoy mismo.
 

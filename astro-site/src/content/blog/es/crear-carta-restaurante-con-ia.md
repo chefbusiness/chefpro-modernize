@@ -2,7 +2,7 @@
 title: "Crear la Carta de tu Restaurante con IA: Guía en 6 Pasos"
 description: "Crea la carta de tu restaurante con IA paso a paso: estructura, número de platos, descripciones que venden, precios, diseño y QR. Guía práctica 2026."
 pubDate: 2026-01-09
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2026/01/crear-carta-restaurante-con-ia-1.jpg
 imageAlt: "Cómo Crear la Carta de tu Restaurante con IA"
@@ -23,7 +23,7 @@ faq:
     a: "Desde cero, un chef puede tener una estructura completa con descripciones, precios orientativos, diseño básico y QR en una tarde de trabajo concentrado. La IA elimina el bloqueo del folio en blanco y acelera tareas repetitivas como la redacción de descripciones o la declaración de alérgenos, reduciendo el proceso de semanas a horas."
 ---
 
-# Cómo crear la carta de un restaurante desde cero con IA: guía en 6 pasos
+## Cómo crear la carta de un restaurante desde cero con IA: guía en 6 pasos
 
 Crear la carta de un restaurante con inteligencia artificial se resume en 6 pasos claros: definir la estructura y el número de platos, redactar descripciones que venden, fijar los precios, ordenar el layout, diseñar el visual y digitalizarla con código QR. En esta guía ejecutamos cada paso con ejemplos reales, sin teoría vacía. Si lo que buscas es componer menús cerrados —un menú del día, un degustación o un maridaje— aquí no profundizamos en eso porque ya tenemos un artículo específico sobre [cómo crear menús con IA](https://aichef.pro/blog/ia-para-crear-menus). Aquí el foco es la carta como pieza completa, desde el folio en blanco hasta el QR que escanea el comensal en 2026.
 

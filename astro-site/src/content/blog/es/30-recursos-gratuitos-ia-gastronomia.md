@@ -2,7 +2,7 @@
 title: "Recursos Gratis de IA para Gastronomía: 30 Herramientas 2026"
 description: "Las 30 mejores herramientas y recursos gratis de IA para gastronomía en 2026: food cost, alérgenos, cartas y menús. Prueba gratis, sin tarjeta y en español."
 pubDate: 2026-02-12
-modDate: 2026-07-19
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/recursos-gratuitos-ia-gastronomia-2.jpeg
 imageAlt: "30 Recursos Gratuitos de IA para Profesionales de la Gastronomía: Guía Completa"
@@ -23,7 +23,7 @@ faq:
     a: "AI Chef Pro trabaja en 7 idiomas, con español nativo de alta calidad. Puedes generar contenidos, recetas y fichas en español, inglés, francés, italiano, alemán, portugués y neerlandés. Cada idioma ha sido afinado para sonar natural, sin traducciones literales robóticas, lo que marca la diferencia al describir un plato a un comensal extranjero."
 ---
 
-# 30 recursos gratuitos de IA para gastronomía (y cómo usarlos hoy en tu restaurante)
+## 30 recursos gratuitos de IA para gastronomía (y cómo usarlos hoy en tu restaurante)
 
 Sí, existen recursos de inteligencia artificial gratuitos y de calidad para gastronomía. En este artículo te entrego una lista curada de 30, organizados por bloques para que puedas escanearlos rápido y empezar a usarlos antes de que acabe el servicio de hoy. Desde herramientas de cálculo de food cost hasta generadores de imágenes para bocetos de plato, pasando por formación especializada; todo lo que necesitas para dar el primer paso con la IA sin abrir la cartera.
 
