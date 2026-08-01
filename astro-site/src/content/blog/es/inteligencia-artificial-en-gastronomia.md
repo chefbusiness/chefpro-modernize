@@ -2,7 +2,7 @@
 title: "Cómo la IA está Revolucionando la Industria Gastronómica"
 description: "La inteligencia artificial (IA) está revolucionando la gastronomía, optimizando procesos de cocina, inspirando creatividad, gestionando inventarios y…"
 pubDate: 2024-09-05
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: ia-en-gastronomia
 image: /blog-assets/2024/09/chef-diego-schattenhofer-3.png
 imageAlt: "Chef Diego Schattenhofer - Estrella Michelin - Usuario y Colaborador en el Desarrollo de AI Chef Pro"
@@ -46,7 +46,7 @@ wpId: 97
 
 
 
-<p class="wp-block-paragraph">Una de las aplicaciones más emocionantes de la IA en la gastronomía es su capacidad para inspirar nuevas combinaciones de ingredientes y técnicas culinarias. Herramientas como el <a href="https://aichef.pro/food-pairing-ai/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="16">Food Pairing AI de AI Chef Pro</a> utilizan algoritmos avanzados para sugerir combinaciones de sabores innovadoras basadas en la compatibilidad molecular de los ingredientes.</p>
+<p class="wp-block-paragraph">Una de las aplicaciones más emocionantes de la IA en la gastronomía es su capacidad para inspirar nuevas combinaciones de ingredientes y técnicas culinarias. Herramientas como el <a href="https://aichef.pro/blog/libreria-de-prompts-para-food-pairing-ai/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="16">Food Pairing AI de AI Chef Pro</a> utilizan algoritmos avanzados para sugerir combinaciones de sabores innovadoras basadas en la compatibilidad molecular de los ingredientes.</p>
 
 
 
@@ -72,7 +72,7 @@ wpId: 97
 
 
 
-<p class="wp-block-paragraph">Una herramienta innovadora en este campo es <a href="https://aichef.pro/mermas-gencal/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="17">Mermas GenCal de AI Chef Pro</a>, que utiliza IA para calcular con precisión las mermas y rendimientos de los ingredientes. Esto no solo ayuda a reducir el desperdicio, sino que también permite una planificación más precisa de los <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">costos</a> y la fijación de precios de los platos.</p>
+<p class="wp-block-paragraph">Una herramienta innovadora en este campo es <a href="https://aichef.pro/blog/libreria-de-prompts-para-mermas-gencal/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="17">Mermas GenCal de AI Chef Pro</a>, que utiliza IA para calcular con precisión las mermas y rendimientos de los ingredientes. Esto no solo ayuda a reducir el desperdicio, sino que también permite una planificación más precisa de los <a href="https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia">costos</a> y la fijación de precios de los platos.</p>
 
 
 
@@ -88,7 +88,7 @@ wpId: 97
 
 
 
-<p class="wp-block-paragraph">Además, herramientas como <a href="https://aichef.pro/id-alergenos/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="18">ID Alérgenos de AI Chef Pro</a> permiten a los restaurantes identificar rápidamente los alérgenos en sus platos y ofrecer alternativas seguras a los clientes con restricciones dietéticas. Esto no solo mejora la experiencia del cliente, sino que también aumenta la seguridad alimentaria.</p>
+<p class="wp-block-paragraph">Además, herramientas como <a href="https://aichef.pro/blog/libreria-de-prompts-para-id-alergenos/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="18">ID Alérgenos de AI Chef Pro</a> permiten a los restaurantes identificar rápidamente los alérgenos en sus platos y ofrecer alternativas seguras a los clientes con restricciones dietéticas. Esto no solo mejora la experiencia del cliente, sino que también aumenta la seguridad alimentaria.</p>
 
 
 
@@ -116,7 +116,7 @@ wpId: 97
 
 
 
-<p class="wp-block-paragraph">Herramientas como el <a href="https://aichef.pro/gastro-lexicum/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="19">Gastro Lexicum de AI Chef Pro</a> actúan como asistentes virtuales, proporcionando acceso instantáneo a definiciones, técnicas y conceptos gastronómicos. Esto permite a los chefs y estudiantes de cocina acceder rápidamente a la información que necesitan, ya sea en medio de una clase o durante un servicio ajetreado en el restaurante.</p>
+<p class="wp-block-paragraph">Herramientas como el <a href="https://aichef.pro/blog/libreria-de-prompts-para-gastro-lexicum-ai/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="19">Gastro Lexicum de AI Chef Pro</a> actúan como asistentes virtuales, proporcionando acceso instantáneo a definiciones, técnicas y conceptos gastronómicos. Esto permite a los chefs y estudiantes de cocina acceder rápidamente a la información que necesitan, ya sea en medio de una clase o durante un servicio ajetreado en el restaurante.</p>
 
 
 
@@ -173,7 +173,6 @@ wpId: 97
 
 
 <div class="wp-block-jetpack-related-posts">
-<h2 class="wp-block-heading">También te puede interesar</h2>
 </div>
 
 
@@ -199,15 +198,15 @@ wpId: 97
 
 
 <ul class="wp-block-list">
-<li><a href="https://aichef.pro/cocina-creativa/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="21">Cocina Creativa AI</a>: Explora cómo la IA puede inspirar tu creatividad culinaria.</li>
+<li><a href="https://aichef.pro/blog/libreria-de-prompts-para-recetario-cocina-creativa-ai?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="21">Cocina Creativa AI</a>: Explora cómo la IA puede inspirar tu creatividad culinaria.</li>
 
 
 
-<li><a href="https://aichef.pro/mental-coach/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="22">Mental Coach para Chefs</a>: Descubre cómo la IA puede ayudarte a manejar el estrés y mejorar tu rendimiento en la cocina.</li>
+<li><a href="https://aichef.pro/libreria-de-prompts?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="22">Mental Coach para Chefs</a>: Descubre cómo la IA puede ayudarte a manejar el estrés y mejorar tu rendimiento en la cocina.</li>
 
 
 
-<li><a href="https://aichef.pro/catering-ai-plus/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="23">Catering AI+</a>: Aprende cómo la IA puede optimizar tus servicios de catering y eventos.</li>
+<li><a href="https://aichef.pro/blog/libreria-de-prompts-para-catering-ai?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-gastronomia" data-lasso-id="23">Catering AI+</a>: Aprende cómo la IA puede optimizar tus servicios de catering y eventos.</li>
 </ul>
 
 

@@ -2,7 +2,7 @@
 title: "Cocina Molecular: Concepto y Definición"
 description: "Disciplina culinaria que aplica principios científicos a la gastronomía moderna. Descubre la cocina molecular de vanguardia."
 pubDate: 2026-02-12
-modDate: 2026-02-16
+modDate: 2026-08-01
 category: glosario
 image: /blog-assets/2026/02/gastronomia-molecular-aichefpro-1.jpg
 imageAlt: "Cocina Molecular: Concepto y Definición"
@@ -100,7 +100,6 @@ wpId: 2702
 
 
 <div class="wp-block-jetpack-related-posts">
-<h2 class="wp-block-heading">También te puede interesar</h2>
 </div>
 
 

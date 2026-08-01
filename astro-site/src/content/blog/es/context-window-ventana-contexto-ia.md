@@ -2,7 +2,7 @@
 title: "Context Window: Concepto y Definición"
 description: "Descubre qué es la ventana de contexto en IA y por qué es crucial para generar recetas largas, menús completos y análisis de costes en hostelería."
 pubDate: 2026-03-02
-modDate: 2026-06-28
+modDate: 2026-08-01
 category: glosario
 image: /blog-assets/2026/03/context-window-concepto-y-definicion_3139_592fd.jpg
 imageAlt: "Context Window: Concepto y Definición"
@@ -136,7 +136,7 @@ wpId: 3139
 <div style="background: #f5f5f5; padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #000000; margin-bottom: 15px; font-size: 24px;">👨‍🍳 ¿Quieres Dominar la IA en tu Cocina?</h3>
 <p style="color: #333333; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     Únete a nuestra <strong>Mentoría AI Chef Pro</strong> y aprende a aprovechar al máximo<br />     la ventana de contexto y todas las herramientas de IA para hostelería.   </p>
-<p>   <a href="https://aichef.pro/mentoria?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-ai&#038;utm_content=context-window-ventana-contexto-ia" style="display: inline-block; background: #000000; color: #ffffff; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">     DESCUBRIR LA MENTORÍA →   </a> </div>
+<p>   <a href="https://aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-ai&#038;utm_content=context-window-ventana-contexto-ia" style="display: inline-block; background: #000000; color: #ffffff; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">     DESCUBRIR LA MENTORÍA →   </a> </div>
 <h2>Limitaciones y Soluciones Prácticas</h2>
 <p>Incluso con las ventanas de contexto más grandes, existen limitaciones que todo profesional de hostelería debe conocer:</p>
 <h3>Problema 1: Olvido del «Medio» de la Conversación</h3>
