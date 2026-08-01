@@ -16,6 +16,10 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 > Un contenido sin research/SERP previo, o sin tablas/datos/FAQ/≥2 imágenes + destacada única, **no está terminado**.
 
+**Antes de AMPLIAR un post existente, comprobar canibalización.** El research no solo dice qué escribir: a veces dice que NO escribas. El 2026-08-01, ampliar `que-es-el-food-pairing` parecía obvio (421 palabras, 590 búsquedas/mes) hasta ver que existe un `manual-del-food-pairing` de 3.643 palabras cuyo primer `<h2>` es literalmente «¿Qué es el Food Pairing?» — y que **el glosario corto rankea MEJOR que el manual largo** (pos. 41 y 9 frente a 84). Inflarlo habría enfrentado dos páginas propias por la misma keyword. Se amplió como página de DEFINICIÓN, cediendo la profundidad al manual con enlace explícito. El chequeo son dos consultas: `ls` de posts con el término en el slug, y GSC agrupando por `page,query`.
+
+Referencia de longitud medida en el blog (2026-08-01): **mediana del glosario 1.285 palabras**, mediana del resto **2.661**. Por debajo de ~400 el post no compite ni siendo glosario.
+
 ## Stack y notas operativas
 
 > ⚠️ Actualizado 2026-07-28. **Desde el cutover de Fase 7 (2026-07-19) producción sirve ASTRO**, no la SPA. Lo que se construye y despliega es `astro-site/`; la SPA de la raíz sobrevive sólo como fuente de los islands React de la zona app (decisión D5) y **ya no se construye**. Doc canónico: `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` (§8 = log por sesión).
@@ -68,6 +72,20 @@ Gate: `python3 scripts/astro-migration/fase8c-libreria-en-gate.py --todos` compa
 Gate de H1: `python3 scripts/astro-migration/fase8c-h1-unico.py` (dry-run por defecto). El layout ya pinta el `title` como `<h1>`; el del cuerpo llega por **dos vías** —HTML crudo y Markdown `# `— y en **los dos idiomas**. Mirar una sola vía o una sola carpeta da falso verde: así se me escaparon 20 de 26.
 
 Gate de enlaces: `python3 scripts/astro-migration/fase8c-enlaces-vivos.py` pregunta a producción por los ~195 destinos internos únicos del blog (4.100 enlaces deduplicados). **No se ven desde el repo**: son URLs absolutas a `aichef.pro` dentro del HTML de los posts. Cazó 10 rotos el 2026-08-01.
+
+### El export de WordPress dejó bloques CONGELADOS en el cuerpo — van tres familias
+
+Bloques que en WordPress eran dinámicos y al exportar quedaron serializados como HTML muerto dentro del `.md`. No son contenido: son mobiliario del CMS anterior, y **cada uno se descubrió por casualidad investigando otra cosa**.
+
+| Familia | Alcance | Qué hacía |
+|---|---|---|
+| `wp-block-blocksy-query` («También te puede interesar») | 15 posts | Duplicaba los relacionados del layout, 7-8 `<h2>` falsos, 3 destinos 404. En 4 posts, **sin título ninguno** |
+| `wp-block-jetpack-donations` | **35 posts** | «Haz una donación única/mensual/anual» en el blog de un SaaS, con botones «Donar» **sin `href`**. 105 encabezados falsos |
+| CTA de newsletter | 1 post | A un `/newsletter` que da 404, afirmando «+2.500 chefs ya reciben nuestro contenido exclusivo» — y el formulario del pie está **desconectado** en el código (`Footer.astro`: «no wired») |
+
+**Asume que hay una cuarta.** Cuando algo no cuadre (un censo de imágenes desmadrado, encabezados repetidos, palabras que no aparecen en pantalla), `grep -rl "wp-block-" astro-site/src/content/blog/` antes que nada. Gates: `fase8c-quitar-relacionados.py` y `fase8c-restos-wordpress.py`, los dos con dry-run por defecto.
+
+**Se delimitan por firma ESTRUCTURAL, nunca adivinando dónde acaban.** El primer intento cortaba «hasta la siguiente sección conocida» y se tragó la FAQ entera de `que-es-el-food-pairing`, que escribe «Preguntas **f**recuentes» en minúscula. Lo que ata principio y fin es el `data-id` del `<div>` con su `<style>` de cierre.
 
 ### Dos trampas del `BaseLayout` y del sitemap
 

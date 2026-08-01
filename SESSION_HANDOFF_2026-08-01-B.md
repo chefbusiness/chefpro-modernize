@@ -1,7 +1,7 @@
 # SESSION HANDOFF — 2026-08-01 (noche): 8C-inglés completo, SSR de las free tools, limpieza del blog
 
 > Continúa `SESSION_HANDOFF_2026-08-01.md`. Doc canónico: `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` §8.
-> Sesión larga desde el VPS, en modo UltraCode. Cinco commits, todos pusheados y verificados en producción.
+> Sesión larga desde el VPS, en modo UltraCode. **Seis commits de trabajo** (más los de documentación), todos pusheados y verificados en producción.
 
 ## ✅ Hecho y verificado EN PRODUCCIÓN
 
@@ -12,14 +12,16 @@
 | `c80b148` | Las 5 librerías del molde WordPress antiguo → **26 de 26** |
 | `ac83809` | **Las 119 páginas indexables de marketing pasan a SSR** |
 | `c36d9ac` | Hub inglés `/en/prompt-libraries` |
+| `216d0b3` | Los 2 glosarios delgados ampliados + fuera el CTA de newsletter y las donaciones de Jetpack |
 
 Estado final medido contra el `dist` y contra `aichef.pro`:
 
 - **1.121 URLs indexables y NINGUNA sin texto server-side** (antes: 119 con cero).
 - **1.123 páginas con exactamente un `<h1>`, ninguna con dos.**
 - Gate de las 26 librerías EN: **26/26 sin errores**.
-- Gate de enlaces internos: **189 destinos, 1 roto** (el de newsletter, dejado a propósito — ver abajo).
+- Gate de enlaces internos: **191 destinos, 0 rotos**.
 - Build verde, 1.248 páginas.
+- Los cinco gates del proyecto, en verde.
 
 ## 🔴 Lo más gordo: las 119 páginas que servían HTML vacío
 
@@ -44,10 +46,56 @@ Verificado con navegador real (Playwright): 0 errores y 0 avisos de hidratación
 
 ## 🚧 Pendiente de John — decisiones, no trabajo
 
-1. **El CTA de newsletter.** `context-window-ventana-contexto-ia` tiene un «SUSCRIBIRME GRATIS → /newsletter» que da 404, y el formulario de newsletter del pie está **explícitamente desconectado** en el código. No hay newsletter detrás. Elegir destino o quitar el CTA es decisión de negocio; lo dejé intacto.
-2. **Contenido delgado que el widget disfrazaba**: `cocina-molecular-concepto-y-definicion` queda en **381 palabras** y `que-es-el-food-pairing` en **421**. Decidir si ampliar o consolidar con 301.
-3. **El listado inglés completo de agentes** (77 nombres + nombres de los módulos del menú). Sin él, el hub inglés indexa solo las 26 con librería; con él puede pasar a ser el catálogo entero, como el español. **No lo deduzco del código**: es el error que ya costó cuatro correcciones.
-4. Sigue pendiente lo de siempre: **alias de `enblog.aichef.pro` en Netlify + DNS** (`CUTOVER_ENBLOG_PENDIENTE.md`).
+1. **El listado inglés completo de agentes**: los 77 nombres **y los nombres de los 15 módulos del
+   menú**. Sin ellos el hub `/en/prompt-libraries` indexa solo las 26 con librería y no puede ser
+   el catálogo completo como el español. **No se deduce del código**: es el error que ya costó
+   cuatro correcciones.
+2. **Dos glosarios ultradelgados sin tocar**: `token-unidad-inteligencia-artificial` con **49
+   palabras** y `llm-large-language-model-cocina` con **78** — una frase de definición y un CTA.
+   Son páginas indexadas prácticamente vacías. El pipeline de ampliación (`fase8d-ampliar-glosario.py`)
+   ya está montado y probado con otros dos; van en una pasada cuando John lo diga.
+3. **Alias de `enblog.aichef.pro` en Netlify + DNS** (`CUTOVER_ENBLOG_PENDIENTE.md`), con la
+   trampa de las A records de Hostinger.
+
+### Resueltas en esta sesión (estaban pendientes al empezar)
+
+- ~~CTA de newsletter a 404~~ → quitado. Además de romper, afirmaba «+2.500 chefs ya reciben
+  nuestro contenido exclusivo» sobre una newsletter que no existe: el formulario del pie está
+  desconectado en el propio código.
+- ~~Los 2 posts delgados~~ → ampliados con research previo (ver abajo).
+
+## 📈 Los 2 glosarios ampliados: el research cambió el plan en uno
+
+| | cocina molecular | food pairing |
+|---|---|---|
+| Volumen (DataForSEO) | **880/mes** | **590/mes** |
+| GSC | 106 impresiones, pos. 66 | pos. 41 · **pos. 9** en «food pairing que es» |
+| Riesgo | ninguno: una sola página compite | **canibalización** |
+| Resultado | 352 → **1.437 palabras** | 421 → **938 palabras** |
+
+Lo de food pairing era una trampa: existe un `manual-del-food-pairing` de **3.643 palabras** cuyo
+primer `<h2>` es literalmente «¿Qué es el Food Pairing?», y aun así el glosario de 421 palabras
+rankea **mejor que él**. Ampliarlo hasta artículo largo habría enfrentado las dos páginas por la
+misma keyword. Se amplió como **página de definición**, cediendo la profundidad al manual con
+enlace explícito.
+
+La SERP mandó contenido concreto: `cocina molecular` tiene **AI Overview** (cada sección abre con
+una respuesta citable) y su People Also Ask exigía cuatro cosas que no estaban — ejemplos, qué
+ingredientes se usan, si es saludable y quién la creó.
+
+Los dos **emiten ahora `FAQPage`**, que antes no hacían: su FAQ eran encabezados sueltos en el
+cuerpo y ahora va en el frontmatter. Prosa con bridge.py, 4 imágenes con Nano Banana, 3 banners
+por post y enlaces internos donde no había ninguno.
+
+## 🧹 Tercer resto de WordPress: donaciones en 35 posts
+
+Buscando el CTA apareció un bloque `wp-block-jetpack-donations` en **35 posts**: «Haz una donación
+única / mensual / anual», con botones «Donar» que son enlaces **sin `href`**. Pidiendo donaciones
+en el blog de un SaaS comercial y metiendo 105 encabezados falsos. Fuera, con gate propio.
+
+Van ya **tres** familias de resto congelado del WordPress (relacionados, donaciones, CTA de
+newsletter). Merece la pena asumir que habrá una cuarta y mirar con `grep` de `wp-block-` cuando
+algo no cuadre.
 
 ## 🧭 Qué sigue
 
@@ -60,9 +108,12 @@ Verificado con navegador real (Playwright): 0 errores y 0 avisos de hidratación
 ```bash
 python3 scripts/astro-migration/fase8c-libreria-en-gate.py --todos   # 26 librerías EN vs su original ES
 python3 scripts/astro-migration/fase8c-h1-unico.py                   # un solo <h1> por página
-python3 scripts/astro-migration/fase8c-quitar-relacionados.py        # widget congelado
+python3 scripts/astro-migration/fase8c-quitar-relacionados.py        # widget de relacionados congelado
+python3 scripts/astro-migration/fase8c-restos-wordpress.py           # donaciones Jetpack y otros restos
 python3 scripts/astro-migration/fase8c-enlaces-vivos.py              # enlaces internos vs producción
 ```
+
+Estado al cierre: **los cinco en verde**, y el de enlaces con **191 destinos y 0 rotos**.
 
 ## 📌 El patrón de mis propios errores, para no repetirlo
 
