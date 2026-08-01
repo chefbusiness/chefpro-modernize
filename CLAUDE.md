@@ -46,6 +46,21 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 - El resto de agentes SÍ tiene nombre propio por idioma y NO coinciden: `ID Alérgenos`→`Allergen ID`, `Mermas GenCal`→`Waste GenCal`, `Comida de Personal`→`Staff Meal`, `Cocina Creativa`→`Avant-garde Cuisine`, `Heladero Consultor Pro`→`Gelato & Ice Cream Consultant`… El mapa completo (26 pares) está en `scripts/astro-migration/fase8c-agentes/agentes-en.json`. **Usar el nombre del idioma que se publica**: un post inglés que hable de «ID Alérgenos» describe un agente que el lector no encuentra en su interfaz.
 - `Chef Privado Pro` **no existe todavía en inglés** (pendiente de crear): no tiene versión EN.
 
+### El corpus del blog tiene TRES moldes de HTML, no uno
+
+Cazado el 2026-08-01 depurando por qué falló el piloto inglés. Cualquier script que parsee un `.md` del blog tiene que contar con esto o devolverá silencio (o basura, que es peor):
+
+- **Molde nuevo** — lo que emite `fase8c-libreria-assemble.py`: etiquetas separadas por `\n`, FAQ en el **frontmatter**. Son 2 posts.
+- **Molde WordPress** — los 25 heredados del export: etiquetas **pegadas** (`</h3><p>`), párrafos con `class="wp-block-paragraph"`, tips como `<h3>` + `<ul><li>`, y la FAQ **solo en el cuerpo** (`<h2>Preguntas Frecuentes…`), nunca en el frontmatter.
+- **Molde WordPress antiguo** — 5 posts (`burger-pro-ai`, `catering-ai`, `food-pairing-ai`, `mermas-gencal`, `recetario-cocina-creativa-ai`): sin intro ni «Cómo utilizar» por bloque, tips en `<ul>` suelto o inexistentes, y 12-16 imágenes en el cuerpo en vez de 2.
+
+**Dos trampas concretas, las dos con dinero detrás:**
+
+1. **Un regex de sección SIN acotar la zona no falla: acierta en el sitio equivocado.** `<h3>(.*?)</h3><p>(.*?)</p>` lanzado sobre la sección de tips del molde WordPress no encuentra par ahí (los tips van en `<ul>`), así que `.*?` sigue 30 KB hacia abajo y caza el primer par **de la FAQ**. Devuelve 10 resultados, parece que funciona, y lo que alimenta al modelo es la FAQ disfrazada de tips. **Acotar siempre por sección antes de buscar dentro.**
+2. **Un `<h1>` incrustado en el cuerpo esconde contenido.** 6 posts ES lo tienen (doble H1 con el del layout). En `recetario-cocina-creativa-ai` hay un bloque entero de 15 prompts bajo `<h1>`, y en `burger-pro-ai` es el encabezado de los tips: cualquier parser que trocee por `<h2>` los pierde sin avisar.
+
+Gate: `python3 scripts/astro-migration/fase8c-libreria-en-gate.py --todos` compara el post inglés **contra el español** (paridad de prompts/tablas/imágenes, banners y UTM, hreflang recíproco en los dos lados, restos de español en cuerpo **y frontmatter**). Correrlo siempre antes de dar por buena una tanda.
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.

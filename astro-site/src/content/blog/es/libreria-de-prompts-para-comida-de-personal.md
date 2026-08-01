@@ -8,6 +8,8 @@ tags: []
 image: /blog-assets/2026/07/personal-destacada-comida-equipo.jpg
 imageAlt: "Fuentes de comida de personal servidas en una mesa larga de office de restaurante"
 lang: es
+translations:
+  en: prompt-library-staff-meals
 faq:
   - q: "¿El agente exige rellenar formularios o puedo hablarle como a un compañero?"
     a: "Es un agente 100% conversacional. No hay formularios: le cuentas lo que necesitas y él te va preguntando lo imprescindible para afinar el menú, como haría un compañero de partida. Olvídate de rellenar casillas; la conversación fluye de forma natural y solo te pide los datos justos."

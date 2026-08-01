@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/heladeria-creativa-gelato-quenelles.jpg
 imageAlt: "Trío de quenelles de gelato artesanal de pistacho, frambuesa y chocolate con tuile y frutos rojos"
 lang: es
+translations:
+  en: prompt-library-creative-ice-cream
 wpId: 4177
 ---
 

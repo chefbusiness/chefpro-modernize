@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/barcon-destacada-barista-consultor.jpg
 imageAlt: "Barista consultor calibrando un espresso en una máquina profesional de dos grupos con báscula de precisión, refractómetro y sacos de café de origen junto a un cuaderno de parámetros de extracción"
 lang: es
+translations:
+  en: prompt-library-barista-consulting
 wpId: 4780
 ---
 

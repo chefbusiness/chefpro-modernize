@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/chefejec-destacada-chef-ejecutivo.jpg
 imageAlt: "Chef ejecutivo dirigiendo el servicio y emplatando en una cocina profesional de restaurante"
 lang: es
+translations:
+  en: prompt-library-executive-chef
 wpId: 4911
 ---
 

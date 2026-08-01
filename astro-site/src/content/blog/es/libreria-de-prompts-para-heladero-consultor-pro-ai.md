@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/heladcon-destacada-heladero-consultor.jpg
 imageAlt: "Heladero consultor con una quenelle de gelato de pistacho, refractómetro y cuaderno de fórmulas con notas de PAC y POD"
 lang: es
+translations:
+  en: prompt-library-gelato-consulting
 wpId: 4692
 ---
 

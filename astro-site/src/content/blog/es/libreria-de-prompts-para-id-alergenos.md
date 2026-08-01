@@ -8,6 +8,8 @@ tags: []
 image: /blog-assets/2026/07/idalergenos-destacada-14-alergenos.jpg
 imageAlt: "Los principales alérgenos alimentarios servidos por separado en cuencos blancos sobre una encimera de acero inoxidable"
 lang: es
+translations:
+  en: prompt-library-allergen-identification
 faq:
   - q: "¿Puede analizar la carta completa de un restaurante y devolver una lista de alérgenos por plato?"
     a: "Sí, el agente ID Alérgenos revisa cada elaboración y desglosa los alérgenos presentes según el Reglamento UE 1169/2011. Genera una tabla detallada por plato indicando nivel de riesgo, origen y posibles trazas, lista para cumplir con la obligación de información al consumidor."

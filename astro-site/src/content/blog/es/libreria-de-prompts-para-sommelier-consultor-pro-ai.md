@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/sommcon-destacada-sommelier-consultor.jpg
 imageAlt: "Sommelier consultor decantando vino tinto en un decantador de cristal en un restaurante de alta cocina, con la carta de vinos y copas de cata sobre la mesa y una pared de botellas al fondo"
 lang: es
+translations:
+  en: prompt-library-sommelier-consulting
 wpId: 4804
 ---
 

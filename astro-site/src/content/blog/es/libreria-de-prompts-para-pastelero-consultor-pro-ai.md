@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/pastecon-destacada-pastelero-consultor.jpg
 imageAlt: "Pastelero consultor emplatando un entremets individual con glaseado espejo junto a una manga, una balanza de precisión y un cuaderno de fórmulas con porcentajes"
 lang: es
+translations:
+  en: prompt-library-pastry-consulting
 wpId: 4733
 ---
 

@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/pancon-destacada-panadero-consultor.jpg
 imageAlt: "Panadero consultor greñando con una lame una hogaza de masa madre en un obrador profesional, con bannetons de ratán y un horno de solera al fondo"
 lang: es
+translations:
+  en: prompt-library-bakery-consulting
 wpId: 4855
 ---
 

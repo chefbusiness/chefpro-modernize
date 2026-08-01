@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/gerente-destacada-gerente-restaurante.jpg
 imageAlt: "Gerente de restaurante con una tablet supervisando la sala de un restaurante moderno"
 lang: es
+translations:
+  en: prompt-library-restaurant-manager
 wpId: 4940
 ---
 

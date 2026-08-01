@@ -34,6 +34,7 @@ import json
 import re
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -63,7 +64,7 @@ SYSTEM = (
 )
 
 
-def bridge(prompt, etiqueta, slug, forzar=False):
+def bridge(prompt, etiqueta, slug, forzar=False, minimo=200):
     CACHE.mkdir(exist_ok=True)
     destino = CACHE / ('%s-%s.txt' % (slug, etiqueta))
     if destino.exists() and not forzar:
@@ -75,8 +76,11 @@ def bridge(prompt, etiqueta, slug, forzar=False):
     if r.returncode != 0:
         sys.exit('bridge falló en %s:\n%s' % (etiqueta, r.stderr[-600:]))
     txt = r.stdout.strip()
-    if len(txt) < 200:
-        sys.exit('respuesta vacía en %s' % etiqueta)
+    if len(txt) < minimo:
+        sys.exit('respuesta demasiado corta en %s (%d caracteres, mínimo %d).\n'
+                 'Antes de culpar a bridge: comprueba que el material que se le manda NO va '
+                 'vacío — un prompt sin contenido devuelve una respuesta vacía.'
+                 % (etiqueta, len(txt), minimo))
     destino.write_text(txt, encoding='utf-8')
     return txt
 
@@ -96,6 +100,94 @@ def cargar_generador():
     return mod
 
 
+def limpia(s):
+    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s)).strip()
+
+
+# El inglés de cocina usa «sauté», «purée», «jalapeño»: los acentos NO delatan
+# español. Lo que sí delata es la apertura de interrogación y una acumulación de
+# palabras función. Con menos de tres se colarían falsos positivos («à la carte»).
+FUNCION_ES = re.compile(r'\b(el|la|los|las|del|que|para|con|una|por|más|cómo|qué|tus?|'
+                        r'este|esta|sus?|puede|cocina)\b', re.I)
+
+# Cabecera de la tabla o eco del contexto: lo único que hay que descartar de la
+# lista de prompts que devuelve el modelo.
+CABECERA = re.compile(r'(prompt\s*/|===|agent\s*:|context\s*:)', re.I)
+
+
+def sin_espanol(textos, etiqueta, slug):
+    """El modelo trata como clave fija lo que se le pasa en español y lo devuelve
+    sin traducir: en el piloto salieron las 10 preguntas de la FAQ en español con
+    la respuesta en inglés, y eso alimenta además el FAQPage."""
+    malos = [t for t in textos
+             if re.search(r'[¿¡]', t) or len(set(m.group(0).lower()
+                                                 for m in FUNCION_ES.finditer(t))) >= 3]
+    if malos:
+        sys.exit('%s: %d línea(s) siguen en español, p.ej. «%s».\n'
+                 'Borra %s/%s-%s.txt y reintenta.'
+                 % (etiqueta, len(malos), malos[0][:100], CACHE, slug, etiqueta))
+
+
+# ─── Extracción del post ES ─────────────────────────────────────────────────
+# El corpus tiene DOS moldes de HTML y hay que leer los dos. Asumir uno solo
+# costó una sesión entera (piloto de id-alergenos, 2026-08-01):
+#
+#   · «nuevo» — lo emite fase8c-libreria-assemble.py. Etiquetas separadas por
+#     "\n", tips como <h3>+<p>, FAQ en el frontmatter.
+#   · «WordPress» — los 25 heredados del export. Etiquetas PEGADAS, párrafos con
+#     class="wp-block-paragraph", tips como <h3>+<ul><li>, y la FAQ solo en el
+#     cuerpo (<h2>Preguntas Frecuentes…</h2>), nunca en el frontmatter.
+#
+# Por eso NADA de aquí puede dar por hecho que dos etiquetas van pegadas, y todo
+# se busca DENTRO de su sección: el regex viejo de tips, al no encontrar par en
+# su zona, seguía con .*? hasta cazar uno en la FAQ 30 KB más abajo y devolvía
+# la FAQ disfrazada de tips.
+
+def _secciones(cuerpo):
+    """[(título del h2, contenido hasta el siguiente h2)] en orden de aparición."""
+    out = []
+    for m in re.finditer(r'<h2[^>]*>(.*?)</h2>', cuerpo, re.S):
+        sig = cuerpo.find('<h2', m.end())
+        out.append((limpia(m.group(1)), cuerpo[m.end():sig if sig > 0 else len(cuerpo)]))
+    return out
+
+
+def _primer_parrafo(seccion):
+    m = re.search(r'<p[^>]*>(.*?)</p>', seccion, re.S)
+    return m.group(1) if m else ''
+
+
+def _como_usar(seccion):
+    m = re.search(r'Cómo utilizar estos prompts\s*</h3>\s*<p[^>]*>(.*?)</p>', seccion, re.S)
+    return m.group(1) if m else ''
+
+
+def _tips(zona):
+    """Cada tip es un <h3> seguido de su desarrollo, venga en <p> (molde nuevo) o
+    en <ul><li>consejo</li><li><em>ejemplo</em></li></ul> (molde WordPress)."""
+    tips = []
+    for m in re.finditer(r'<h3[^>]*>(.*?)</h3>\s*(.*?)(?=<h3|\Z)', zona, re.S):
+        titulo, resto = limpia(m.group(1)), m.group(2)
+        p = re.search(r'<p[^>]*>(.*?)</p>', resto, re.S)
+        lis = re.findall(r'<li>(.*?)</li>', resto, re.S)
+        texto = limpia(p.group(1)) if p else ' '.join(limpia(x) for x in lis)
+        if titulo and len(texto) > 20:
+            tips.append((titulo, texto))
+    return tips
+
+
+def _faq(fm, secciones):
+    """Frontmatter en el molde nuevo; sección visible en el de WordPress."""
+    faq = re.findall(r'^  - q: "(.*?)"\n    a: "(.*?)"$', fm, re.M | re.S)
+    if faq:
+        return faq
+    for titulo, seccion in secciones:
+        if titulo.startswith('Preguntas Frecuentes'):
+            return [(limpia(q), limpia(a)) for q, a in
+                    re.findall(r'<h3[^>]*>(.*?)</h3>\s*<p[^>]*>(.*?)</p>', seccion, re.S)]
+    return []
+
+
 def trocea_es(md):
     """Extrae del .md español lo que hay que adaptar."""
     txt = md.read_text(encoding='utf-8')
@@ -103,38 +195,109 @@ def trocea_es(md):
     def campo(k):
         m = re.search(r'^%s: "(.*?)"$' % k, fm, re.M | re.S)
         return m.group(1) if m else ''
-    faq = re.findall(r'^  - q: "(.*?)"\n    a: "(.*?)"$', fm, re.M | re.S)
-    imgs = re.findall(r'<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"', cuerpo)
+    secciones = _secciones(cuerpo)
     bloques = []
-    for m in re.finditer(
-            r'<h2 class="wp-block-heading">Prompts para (.*?)</h2>(.*?)(?=<h2 class="wp-block-heading">|\Z)',
-            cuerpo, re.S):
-        seccion = m.group(2)
-        filas = re.findall(r'<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>', seccion, re.S)
-        intro = re.search(r'^<p>(.*?)</p>', seccion, re.S)
-        como = re.search(r'Cómo utilizar estos prompts</h3><p>(.*?)</p>', seccion, re.S)
-        bloques.append({'titulo': m.group(1), 'intro': intro.group(1) if intro else '',
-                        'como': como.group(1) if como else '', 'filas': filas})
-    tips = re.findall(r'<h3 class="wp-block-heading">(.*?)</h3><p>(.*?)</p>',
-                      cuerpo[cuerpo.find('Tips y Consejos'):] if 'Tips y Consejos' in cuerpo else '', re.S)
+    for titulo, seccion in secciones:
+        if not titulo.startswith('Prompts para '):
+            continue
+        bloques.append({
+            'titulo': titulo[len('Prompts para '):],
+            'intro': _primer_parrafo(seccion),
+            'como': _como_usar(seccion),
+            'filas': re.findall(r'<tr><td>(.*?)</td><td>(.*?)</td><td>(.*?)</td></tr>',
+                                seccion, re.S)})
+    zona_tips = next((s for t, s in secciones if t.startswith('Tips y Consejos')), '')
     return {'title': campo('title'), 'description': campo('description'),
             'image': re.search(r'^image: (.*)$', fm, re.M).group(1).strip(),
-            'imageAlt': campo('imageAlt'), 'faq': faq, 'imgs': imgs,
-            'bloques': bloques, 'tips': tips,
+            'imageAlt': campo('imageAlt'), 'faq': _faq(fm, secciones),
+            'imgs': re.findall(r'<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"', cuerpo),
+            'bloques': bloques, 'tips': _tips(zona_tips),
             'fecha': re.search(r'^pubDate: (\S+)', fm, re.M).group(1)}
 
 
-def limpia(s):
-    return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s)).strip()
+def verifica(d, slug):
+    """Aborta ANTES de gastar un token si el post ES no encaja con el molde.
+    El fallo real se veía como 'respuesta vacía en tips', que acusaba al modelo
+    de un fallo del parser y mandaba a depurar al sitio equivocado."""
+    faltas = []
+    if not d['bloques']:
+        faltas.append('ningún <h2>Prompts para …</h2>')
+    for i, b in enumerate(d['bloques'], 1):
+        if not b['filas']:
+            faltas.append('bloque %d: tabla de prompts vacía' % i)
+        if not limpia(b['intro']):
+            faltas.append('bloque %d: sin párrafo de introducción' % i)
+        if not limpia(b['como']):
+            faltas.append('bloque %d: sin «Cómo utilizar estos prompts»' % i)
+    if not d['tips']:
+        faltas.append('sin tips extraíbles (¿molde WordPress antiguo, con los tips en <ul> suelto?)')
+    if not d['faq']:
+        faltas.append('sin FAQ ni en el frontmatter ni en la sección «Preguntas Frecuentes»')
+    if len(d['imgs']) != 2:
+        faltas.append('%d imágenes en el cuerpo, y el molde inglés solo coloca 2 '
+                      '(los 5 posts de WordPress antiguo van en la segunda tanda)' % len(d['imgs']))
+    if faltas:
+        sys.exit('EXTRACCIÓN INCOMPLETA de %s — el post ES no encaja con el molde:\n  · %s'
+                 % (slug, '\n  · '.join(faltas)))
+
+
+MARCA_HERMANAS = '<h2 class="wp-block-heading">More prompt libraries for AI Chef Pro agents</h2>'
+
+
+def bloque_enlaces(slug_en, mapa, extra=()):
+    """El anchor sale del nombre REAL del agente en agentes-en.json. Derivarlo del
+    slug daba «Allergen Id» y «Gencal Waste» en el enlace de cada post."""
+    nombres = {v['slug_en']: v['agente'] for v in mapa.values()}
+    enlaces = [(s, 'Prompts for %s' % nombres[s])
+               for s in sorted(q.stem for q in EN.glob('prompt-library-*.md'))
+               if s != slug_en and s in nombres]
+    return enlaces + [(e['slug'], e['texto']) for e in extra]
+
+
+def bloque_hermanas(enlaces):
+    html = (MARCA_HERMANAS +
+            '<p>Every agent in the suite has its own prompt library. Browse the rest and put '
+            'the AI to work across your whole operation:</p>')
+    if enlaces:      # el primero de la tanda nace sin hermanas: nada de <ul> vacío
+        html += '<ul>%s</ul>' % ''.join(
+            '<li><a href="https://aichef.pro/en/blog/%s">%s</a></li>' % (s, t) for s, t in enlaces)
+    return html + ('<p><a href="https://aichef.pro/en/blog/category/prompt-library">'
+                   'See every prompt library →</a></p>')
+
+
+def reenlazar(mapa):
+    """El bloque de hermanas se escribe una vez, así que el orden de generación deja
+    a los primeros con menos enlaces que los últimos. Esto lo rehace en todos."""
+    libs = sorted(EN.glob('prompt-library-*.md'))
+    tocados = 0
+    for p in libs:
+        txt = p.read_text(encoding='utf-8')
+        i = txt.find(MARCA_HERMANAS)
+        if i < 0:
+            print('  ⚠ %s no tiene bloque de hermanas; lo dejo intacto' % p.name)
+            continue
+        extra = next((v.get('enlaces_extra', []) for v in mapa.values()
+                      if v['slug_en'] == p.stem), [])
+        nuevo = txt[:i] + bloque_hermanas(bloque_enlaces(p.stem, mapa, extra)) + '\n'
+        if nuevo != txt:
+            p.write_text(nuevo, encoding='utf-8')
+            tocados += 1
+    print('↔ bloque de hermanas rehecho en %d de %d librerías EN' % (tocados, len(libs)))
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--slug', required=True, help='slug del agente, p.ej. id-alergenos')
+    ap.add_argument('--slug', help='slug del agente, p.ej. id-alergenos')
     ap.add_argument('--ensamblar', action='store_true')
+    ap.add_argument('--reenlazar', action='store_true',
+                    help='rehace el bloque de enlaces entre librerías EN y termina')
     args = ap.parse_args()
 
     mapa = json.loads(MAPA.read_text(encoding='utf-8')) if MAPA.exists() else {}
+    if args.reenlazar:
+        return reenlazar(mapa)
+    if not args.slug:
+        sys.exit('hace falta --slug (o --reenlazar)')
     if args.slug not in mapa:
         sys.exit('falta %s en %s (nombre del agente y slug EN)' % (args.slug, MAPA.name))
     info = mapa[args.slug]
@@ -142,15 +305,19 @@ def main():
     if not md_es.exists():
         sys.exit('no existe el post ES: %s' % md_es.name)
     d = trocea_es(md_es)
+    verifica(d, args.slug)
+    print('· %s → %d bloques / %d prompts / %d tips / %d FAQ / %d imágenes'
+          % (args.slug, len(d['bloques']), sum(len(b['filas']) for b in d['bloques']),
+             len(d['tips']), len(d['faq']), len(d['imgs'])), flush=True)
     A = info['agente']          # nombre del agente TAL CUAL está en la plataforma
 
-    def pedir(et, prompt, forzar=False):
+    def pedir(et, prompt, forzar=False, minimo=200):
         if args.ensamblar:
             f = CACHE / ('%s-%s.txt' % (args.slug, et))
             if not f.exists():
                 sys.exit('falta caché de %s' % et)
             return f.read_text(encoding='utf-8')
-        return bridge(prompt, et, args.slug, forzar)
+        return bridge(prompt, et, args.slug, forzar, minimo)
 
     CTX = ('AGENT: %s (an AI agent inside AI Chef Pro; keep the agent name EXACTLY as given, '
            'do not translate it).\n' % A)
@@ -212,7 +379,11 @@ def main():
         filas = []
         for l in (re.search(r'===PROMPTS===\s*(.*)', txt, re.S) or [None, ''])[1].splitlines():
             p = [x.strip() for x in l.split('|')]
-            if len(p) >= 3 and len(p[0]) > 40:
+            # Un umbral de longitud descarta prompts cortos LEGÍTIMOS: varios posts
+            # abren con uno deliberadamente vago («Dame el escandallo de este plato»,
+            # 34 caracteres) para contrastarlo con el específico. Lo que hay que
+            # descartar es la cabecera de la tabla o el eco del contexto, no la brevedad.
+            if len(p) >= 3 and all(p[:3]) and len(p[0]) > 12 and not CABECERA.match(p[0]):
                 filas.append(('«%s»' % p[0].strip('«»"“” '), p[1], p[2]))
         if len(filas) < len(b['filas']):
             sys.exit('bloque %d: %d prompts de %d — respuesta truncada.\n   Borra %s/%s-bloque%d.txt'
@@ -239,18 +410,29 @@ def main():
         'Adapt these Spanish usage tips to US professional kitchens.\n%s\n\n'
         'EXACT format: %d lines "SHORT TITLE | tip of 35-60 words". No markdown.'
         % ('\n'.join('%s | %s' % (limpia(a), limpia(b)) for a, b in d['tips']), len(d['tips']))))
-    partes.append('<h2 class="wp-block-heading">Tips for getting more out of %s</h2>' % A)
+    tips_en = []
     for l in tips_txt.splitlines():
         if '|' in l:
             a, b = l.split('|', 1)
             if len(a.strip()) > 3 and len(b.strip()) > 20:
-                partes += ['<h3 class="wp-block-heading">%s</h3>' % a.strip().lstrip('-* '),
-                           '<p>%s</p>' % b.strip()]
+                tips_en.append((a.strip().lstrip('-* '), b.strip()))
+    sin_espanol([t for t, _ in tips_en] + [x for _, x in tips_en], 'tips', args.slug)
+    if len(tips_en) < len(d['tips']):
+        sys.exit('tips: %d de %d. Borra %s/%s-tips.txt y reintenta'
+                 % (len(tips_en), len(d['tips']), CACHE, args.slug))
+    partes.append('<h2 class="wp-block-heading">Tips for getting more out of %s</h2>' % A)
+    for titulo, texto in tips_en:
+        partes += ['<h3 class="wp-block-heading">%s</h3>' % titulo, '<p>%s</p>' % texto]
 
+    # Ojo con el enunciado: con un «QUESTION | ANSWER» a secas, el modelo trata la
+    # pregunta como una clave fija y la devuelve EN ESPAÑOL, traduciendo solo la
+    # respuesta. Pasó en el piloto y se publicaría una FAQ bilingüe absurda que
+    # además alimenta el FAQPage.
     faq_txt = pedir('faq', CTX + (
-        'Adapt this Spanish FAQ to US professional kitchens.\n%s\n\n'
-        'EXACT format: %d lines "QUESTION | ANSWER of 40-70 words". Third person about the '
-        'agent, never first person. No markdown.'
+        'Adapt this Spanish FAQ to US professional kitchens. BOTH the question and the '
+        'answer must be WRITTEN IN ENGLISH: never echo the Spanish question back.\n%s\n\n'
+        'EXACT format: %d lines "ENGLISH QUESTION | ENGLISH ANSWER of 40-70 words". Third '
+        'person about the agent, never first person. No markdown.'
         % ('\n'.join('%s | %s' % (q, a) for q, a in d['faq']), len(d['faq']))))
     faq_en = []
     for l in faq_txt.splitlines():
@@ -258,22 +440,47 @@ def main():
             q, a = l.split('|', 1)
             if len(q.strip()) > 5 and len(a.strip()) > 20:
                 faq_en.append((q.strip().lstrip('-* '), a.strip()))
+    sin_espanol([q for q, _ in faq_en] + [a for _, a in faq_en], 'faq', args.slug)
+    if len(faq_en) < len(d['faq']):
+        sys.exit('faq: %d de %d preguntas. Borra %s/%s-faq.txt y reintenta'
+                 % (len(faq_en), len(d['faq']), CACHE, args.slug))
 
     # 4) alts de las imágenes: se reutilizan los ficheros del post ES (fotos sin
     #    texto ni caras), pero el texto alternativo hay que adaptarlo.
     alts_txt = pedir('alts', CTX + (
         'Adapt these Spanish image alt texts to English. One per line, same order, '
         'no numbering, no markdown, max 120 chars each:\n%s'
-        % '\n'.join(a for _, a in [(d['image'], d['imageAlt'])] + d['imgs'])))
-    alts = [l.strip().lstrip('-* ') for l in alts_txt.splitlines() if len(l.strip()) > 15]
+        % '\n'.join(a for _, a in [(d['image'], d['imageAlt'])] + d['imgs'])), minimo=60)
+    # El modelo a veces devuelve como primera línea el encabezado del contexto
+    # («AGENT: Gastro Lexicum»). Cuela por longitud y descuadra el recuento.
+    alts = [l.strip().lstrip('-* ') for l in alts_txt.splitlines()
+            if len(l.strip()) > 15 and not re.match(r'(AGENT|CONTEXT)\s*:', l.strip(), re.I)]
+    if len(alts) != 1 + len(d['imgs']):
+        sys.exit('alts: bridge devolvió %d líneas y hacen falta %d (destacada + %d del cuerpo).\n'
+                 'Borra %s/%s-alts.txt y reintenta. Sin esto se cuela un alt EN ESPAÑOL dentro '
+                 'de un post inglés, y en silencio.'
+                 % (len(alts), 1 + len(d['imgs']), len(d['imgs']), CACHE, args.slug))
 
     # 5) sustituir marcadores por imágenes y banners
     gen = cargar_generador()
     prods = gen.catalogo_productos()
-    cuerpo = '\n'.join(partes)
+
+    # Pese a la orden de no traducir el nombre del agente, el modelo cuela el
+    # español de vez en cuando (1 post de 21 en la primera tanda: «Barista
+    # Consultor Pro» en vez de «Barista Consultant Pro»). Se normaliza aquí en vez
+    # de fiarlo al prompt: un post inglés que nombra al agente en español describe
+    # algo que el lector no encuentra en su interfaz. En los 12 de hotelería, que
+    # se llaman igual en los dos idiomas, esto es un no-op.
+    m_nombre_es = re.search(r'<h[123][^>]*>Tips y Consejos de Uso para (.*?)</h[123]>',
+                            md_es.read_text(encoding='utf-8'), re.S)
+    nombre_es = limpia(m_nombre_es.group(1)) if m_nombre_es else ''
+
+    def en_ingles(s):
+        return s.replace(nombre_es, A) if nombre_es and nombre_es != A else s
+
+    cuerpo = en_ingles('\n'.join(partes))
     for n, (src, _alt) in enumerate(d['imgs'], 1):
-        alt = alts[n] if n < len(alts) else _alt
-        cuerpo = cuerpo.replace('<!--IMG%d-->' % n, gen.figura(src, alt))
+        cuerpo = cuerpo.replace('<!--IMG%d-->' % n, gen.figura(src, alts[n]))
     for n, slug_prod in enumerate(info.get('productos', [])):
         cuerpo = cuerpo.replace('<!--BANNER%d-->' % n,
                                 gen.banner(slug_prod, prods, info['slug_en'], 'en'))
@@ -283,31 +490,37 @@ def main():
 
     # 6) interlinking EN: las librerías inglesas que ya existan + la archive de
     #    su categoría + los posts EN que la configuración marque como afines.
-    hermanas = sorted(q.stem for q in EN.glob('prompt-library-*.md') if q.stem != info['slug_en'])
-    enlaces = [(s, 'Prompts for ' + s.replace('prompt-library-', '').replace('-', ' ').title())
-               for s in hermanas] + [(e['slug'], e['texto']) for e in info.get('enlaces_extra', [])]
-    cuerpo += ('<h2 class="wp-block-heading">More prompt libraries for AI Chef Pro agents</h2>'
-               '<p>Every agent in the suite has its own prompt library. Browse the rest and put '
-               'the AI to work across your whole operation:</p><ul>%s</ul>'
-               % ''.join('<li><a href="https://aichef.pro/en/blog/%s">%s</a></li>' % (s, txt)
-                         for s, txt in enlaces)
-               + '<p><a href="https://aichef.pro/en/blog/category/prompt-library">'
-                 'See every prompt library →</a></p>')
+    enlaces = bloque_enlaces(info['slug_en'], mapa, info.get('enlaces_extra', []))
+    cuerpo += bloque_hermanas(enlaces)
 
     # 7) frontmatter y escritura
     def y(s):
         return '"%s"' % s.replace('\\', '\\\\').replace('"', '\\"').strip()
-    fm = ['---', 'title: %s' % y(sec('TITLE')), 'description: %s' % y(sec('DESCRIPTION')),
-          'pubDate: %s' % d['fecha'], 'modDate: %s' % d['fecha'],
+    # La fecha NO se hereda del post español: este contenido no existía hasta que se
+    # generó, y 21 URLs nuevas entrando al sitemap fechadas cinco semanas antes
+    # regalan la señal de frescura del lanzamiento. Decisión de John, 2026-08-01.
+    # pubDate se fija una sola vez: si el post inglés ya existe, se respeta el suyo y
+    # solo se mueve modDate, para que un reensamblado no lo rejuvenezca.
+    destino = EN / (info['slug_en'] + '.md')
+    hoy = date.today().isoformat()
+    pub = hoy
+    if destino.exists():
+        previo = re.search(r'^pubDate: (\S+)', destino.read_text(encoding='utf-8'), re.M)
+        if previo:
+            pub = previo.group(1)
+
+    fm = ['---', 'title: %s' % y(en_ingles(sec('TITLE'))),
+          'description: %s' % y(en_ingles(sec('DESCRIPTION'))),
+          'pubDate: %s' % pub, 'modDate: %s' % hoy,
           'category: prompt-library', 'tags: []',
           'translations:', '  es: %s' % y('libreria-de-prompts-para-%s' % args.slug),
-          'image: %s' % d['image'], 'imageAlt: %s' % y(alts[0] if alts else d['imageAlt']),
+          'image: %s' % d['image'],
+          'imageAlt: %s' % y(en_ingles(alts[0] if alts else d['imageAlt'])),
           'lang: en', 'faq:']
     for q, a in faq_en:
-        fm += ['  - q: %s' % y(q), '    a: %s' % y(a)]
+        fm += ['  - q: %s' % y(en_ingles(q)), '    a: %s' % y(en_ingles(a))]
     fm += ['draft: false', '---', '']
 
-    destino = EN / (info['slug_en'] + '.md')
     destino.write_text('\n'.join(fm) + cuerpo + '\n', encoding='utf-8')
 
     # Recíproco en el post ES: si solo lo declara un lado, Google lo ignora.

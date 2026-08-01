@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/07/bartcon-destacada-bartender-consultor.jpg
 imageAlt: "Bartender consultor removiendo un cóctel en un vaso mezclador de cristal detrás de una barra premium, con jigger y strainer sobre el mármol y estanterías de destilados retroiluminadas al fondo"
 lang: es
+translations:
+  en: prompt-library-bartender-consulting
 wpId: 4829
 ---
 

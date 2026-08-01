@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/chocolateria-creativa-showpiece-escultura.jpg
 imageAlt: "Showpiece escultórico de chocolate artístico de competición sobre superficie reflectante"
 lang: es
+translations:
+  en: prompt-library-creative-chocolate
 wpId: 4171
 ---
 

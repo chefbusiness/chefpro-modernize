@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/consultor-destacada-consultoria-gastronomica.jpg
 imageAlt: "Reunión de consultoría gastronómica con documentos de P&L, plano del restaurante y gráficos sobre la mesa"
 lang: es
+translations:
+  en: prompt-library-gastronomy-consulting
 wpId: 4655
 ---
 

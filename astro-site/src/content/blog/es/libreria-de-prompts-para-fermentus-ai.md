@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/fermentus-destacada-fermentacion-creativa.jpg
 imageAlt: "Conjunto de tarros de fermentación creativa (kimchi, miso, kombucha, encurtidos, garum) sobre mesa rústica oscura"
 lang: es
+translations:
+  en: prompt-library-fermentation
 wpId: 4607
 ---
 

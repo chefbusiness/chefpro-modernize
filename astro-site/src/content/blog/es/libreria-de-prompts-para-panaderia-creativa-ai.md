@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/panaderia-creativa-hogaza-masa-madre-destacada.jpg
 imageAlt: "Hogaza de masa madre artesana con corteza crujiente y greñado pronunciado"
 lang: es
+translations:
+  en: prompt-library-creative-bakery
 wpId: 4204
 ---
 

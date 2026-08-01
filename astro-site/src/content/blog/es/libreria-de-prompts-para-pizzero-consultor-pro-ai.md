@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/pizzcon-destacada-pizzero-consultor.jpg
 imageAlt: "Pizzero consultor introduciendo una pizza napoletana con manchado de leopardo en un horno de leña encendido con la pala de madera, junto a un cuaderno de fórmulas en Baker's percent y un saco de harina 00"
 lang: es
+translations:
+  en: prompt-library-pizza-consulting
 wpId: 4755
 ---
 

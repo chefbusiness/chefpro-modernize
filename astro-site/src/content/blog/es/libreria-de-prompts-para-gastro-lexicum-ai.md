@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/gastro-lexicum-destacada-lexico-culinario.jpg
 imageAlt: "Enciclopedia culinaria abierta rodeada de especias, hierbas, mortero e instrumentos junto a tarros de ingredientes"
 lang: es
+translations:
+  en: prompt-library-culinary-glossary
 wpId: 4638
 ---
 

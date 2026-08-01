@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/vegchef-destacada-plant-based.jpg
 imageAlt: "Conjunto de platos plant-based vibrantes: tabla de quesos veganos, brochetas de tofu, bowls de cereales y leches vegetales"
 lang: es
+translations:
+  en: prompt-library-plant-based-menus
 wpId: 4622
 ---
 

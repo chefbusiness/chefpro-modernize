@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/chefcon-destacada-chef-consultor.jpg
 imageAlt: "Chef consultor revisando una carta, fichas técnicas y una tablet en el pase de una cocina profesional"
 lang: es
+translations:
+  en: prompt-library-chef-consulting
 wpId: 4673
 ---
 

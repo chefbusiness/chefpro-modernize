@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/pasteleria-creativa-entremet-glaseado-espejo.jpg
 imageAlt: "Entremet de pastelería creativa con glaseado espejo de frutos rojos, decoración de chocolate templado y oro comestible"
 lang: es
+translations:
+  en: prompt-library-creative-pastry
 wpId: 4165
 ---
 

@@ -7,6 +7,8 @@ category: libreria-de-prompts
 image: /blog-assets/2026/06/chocon-destacada-chocolatero-consultor.jpg
 imageAlt: "Chocolatero consultor partiendo una tableta de chocolate negro de origen único mostrando un quiebre limpio y brillante, junto a granos y nibs de cacao, termómetro de temperado y cuaderno de fórmulas"
 lang: es
+translations:
+  en: prompt-library-chocolate-consulting
 wpId: 4712
 ---
 
