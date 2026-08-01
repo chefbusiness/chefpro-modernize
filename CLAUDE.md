@@ -67,6 +67,13 @@ Gate: `python3 scripts/astro-migration/fase8c-libreria-en-gate.py --todos` compa
 
 Gate de H1: `python3 scripts/astro-migration/fase8c-h1-unico.py` (dry-run por defecto). El layout ya pinta el `title` como `<h1>`; el del cuerpo llega por **dos vías** —HTML crudo y Markdown `# `— y en **los dos idiomas**. Mirar una sola vía o una sola carpeta da falso verde: así se me escaparon 20 de 26.
 
+Gate de enlaces: `python3 scripts/astro-migration/fase8c-enlaces-vivos.py` pregunta a producción por los ~195 destinos internos únicos del blog (4.100 enlaces deduplicados). **No se ven desde el repo**: son URLs absolutas a `aichef.pro` dentro del HTML de los posts. Cazó 10 rotos el 2026-08-01.
+
+### Dos trampas del `BaseLayout` y del sitemap
+
+- **`basePath` va SIN el prefijo de idioma.** `urlFor()` ya antepone `/${lang}` a los idiomas no por defecto, así que pasar `/en/prompt-library` da un canonical `/en/en/prompt-library`. Se pasa `/prompt-libraries` y el layout compone.
+- **El filtro del sitemap excluye TODA ruta que acabe en `-library`** (y en `-access`): así se llaman los dashboards de la zona de pago, que nunca deben indexarse. Una página pública cuyo slug acabe así **desaparece del sitemap sin un solo aviso** — le pasó al hub inglés, que nació como `/en/prompt-library`. Se renombró a `/en/prompt-libraries` en vez de meterle una excepción a una regla que protege URLs de dinero.
+
 ### Banners de productos digitales: política obligatoria
 
 - **Todo contenido que se genere lleva MÍNIMO 3 banners de productos digitales, a tres alturas del artículo.** Instrucción de John (2026-07-31): es la línea de negocio más desatendida y hay que desplegarla.

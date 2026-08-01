@@ -1,0 +1,327 @@
+---
+// Hub INGLÉS de librerías de prompts. Equivalente de `/libreria-de-prompts`, pero
+// NO es su traducción y a propósito:
+//
+// El hub español lista el catálogo COMPLETO —85 agentes en los 15 módulos reales
+// del menú de la plataforma, tengan librería o no—. Para hacer lo mismo en inglés
+// harían falta dos cosas que el repo NO tiene verificadas: los nombres ingleses de
+// los ~51 agentes que aún no tienen librería, y los nombres ingleses de los
+// módulos. Deducirlos del código es justo el error que ya obligó a corregir cuatro
+// publicaciones (ver CLAUDE.md, «las fuentes del repo NO son el producto»), así que
+// esta página indexa SOLO las 26 librerías publicadas, con nombres tomados uno a
+// uno del listado de Pickaxe (scripts/astro-migration/fase8c-agentes/agentes-en.json).
+//
+// ⏳ Cuando John pase el listado inglés completo (77 agentes + nombres de módulo),
+// esto puede pasar a ser el catálogo entero, igual que el español.
+//
+// Sin par hreflang con el hub español justamente porque el alcance difiere; el
+// puente entre ambos es un enlace visible y la FAQ.
+//
+// Criterio de John (2026-07-31): esto es VALOR AGREGADO para quien ya usa la
+// plataforma, no captación. El copy no vende la suite.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE } from '../../i18n/config';
+
+const lang = 'en';
+// OJO con el slug: el filtro del sitemap (astro.config.mjs) excluye TODA ruta
+// que acabe en `-library`, porque así se llaman los dashboards de la zona de pago.
+// `/en/prompt-library` colisionaba con esa regla y la página desaparecía del
+// sitemap sin un solo aviso. Se usa el plural —que además es lo que dice el H1—
+// en vez de meterle una excepción a una regla que protege URLs de dinero.
+// Y el basePath va SIN el prefijo de idioma: BaseLayout.urlFor() ya antepone
+// `/${lang}` a los idiomas no por defecto (si no, el canonical sale /en/en/...).
+const basePath = '/prompt-libraries';
+
+// [categoría del módulo español, [[nombre EN verificado, slug del post EN]]]
+const catalogo: [string, [string, string][]][] = [
+  [
+    "Creatividad Culinaria",
+    [
+      [
+        "Avant-garde Cuisine",
+        "prompt-library-avant-garde-cuisine"
+      ],
+      [
+        "Creative Pastry",
+        "prompt-library-creative-pastry"
+      ],
+      [
+        "Creative Chocolate Making",
+        "prompt-library-creative-chocolate"
+      ],
+      [
+        "Creative Ice Cream Making",
+        "prompt-library-creative-ice-cream"
+      ],
+      [
+        "Creative Bakery",
+        "prompt-library-creative-bakery"
+      ],
+      [
+        "Fermentus Pro AI+",
+        "prompt-library-fermentation"
+      ],
+      [
+        "VegChef Plant-Based",
+        "prompt-library-plant-based-menus"
+      ],
+      [
+        "Food Pairing AI",
+        "prompt-library-food-pairing"
+      ]
+    ]
+  ],
+  [
+    "Gastro Conocimiento",
+    [
+      [
+        "Gastro Lexicum",
+        "prompt-library-culinary-glossary"
+      ]
+    ]
+  ],
+  [
+    "Consultoría Gastro Pro",
+    [
+      [
+        "Gastronomy Consultant Pro",
+        "prompt-library-gastronomy-consulting"
+      ],
+      [
+        "Chef Consultant Pro",
+        "prompt-library-chef-consulting"
+      ],
+      [
+        "Gelato & Ice Cream Consultant",
+        "prompt-library-gelato-consulting"
+      ],
+      [
+        "Chocolate Consultant Pro",
+        "prompt-library-chocolate-consulting"
+      ],
+      [
+        "Pastry Consultant Pro",
+        "prompt-library-pastry-consulting"
+      ],
+      [
+        "Pizza Consultant Pro",
+        "prompt-library-pizza-consulting"
+      ],
+      [
+        "Barista Consultant Pro",
+        "prompt-library-barista-consulting"
+      ],
+      [
+        "Sommelier Consultant Pro",
+        "prompt-library-sommelier-consulting"
+      ],
+      [
+        "Bartender Consultant Pro",
+        "prompt-library-bartender-consulting"
+      ],
+      [
+        "Bakery Consultant Pro",
+        "prompt-library-bakery-consulting"
+      ]
+    ]
+  ],
+  [
+    "Gastro Profile Pro",
+    [
+      [
+        "Executive Chef Pro",
+        "prompt-library-executive-chef"
+      ],
+      [
+        "Restaurant Manager Pro",
+        "prompt-library-restaurant-manager"
+      ],
+      [
+        "Staff Meal",
+        "prompt-library-staff-meals"
+      ]
+    ]
+  ],
+  [
+    "Herramientas y Utilities",
+    [
+      [
+        "Allergen ID",
+        "prompt-library-allergen-identification"
+      ],
+      [
+        "Waste GenCal",
+        "prompt-library-food-waste-costing"
+      ]
+    ]
+  ],
+  [
+    "Conceptos de Negocio",
+    [
+      [
+        "Catering AI+",
+        "prompt-library-catering"
+      ],
+      [
+        "Burgers Pro AI+",
+        "prompt-library-burger-restaurant"
+      ]
+    ]
+  ]
+];
+
+const tips = [
+  {
+    "t": "CHAIN INSIDE THE THREAD",
+    "d": "Build on responses by running several prompts in sequence inside the same agent conversation. The agent retains context, so your second and third prompts land with far more precision than starting fresh each time."
+  },
+  {
+    "t": "ADAPT, DON’T CLONE",
+    "d": "Treat every library prompt as a starting point, not a script. Swap in your own ingredients, covers, allergens, or service style so the output reflects your actual kitchen, not a generic one."
+  },
+  {
+    "t": "KEEP A HOUSE FILE",
+    "d": "Save the prompts that deliver for your operation. A running doc of your most-used sequences, tuned to your menu and team, becomes the most valuable resource you have."
+  }
+];
+const faq = [
+  {
+    "q": "Do these prompts work on any agent?",
+    "a": "No. Each prompt library is built for a specific AI Chef Pro agent and tuned to that agent’s expertise. A prompt written for Waste GenCal will not perform correctly if you paste it into Pastry Consultant Pro."
+  },
+  {
+    "q": "Do I have to copy prompts word for word?",
+    "a": "Not at all. The libraries give you proven starting points. Adjust ingredients, portion counts, service constraints, or dietary tags to match your operation, the agent will follow your lead."
+  },
+  {
+    "q": "What about agents that don’t have a library yet?",
+    "a": "Every agent works normally with or without a published prompt library. Libraries are an extra resource, not a requirement. You can still open any agent and prompt it directly from your own workflow."
+  },
+  {
+    "q": "Are the libraries available on the free plan?",
+    "a": "Yes. All published prompt libraries are accessible to any active AI Chef Pro account, free or paid. There is no paywall on the prompt collections themselves."
+  },
+  {
+    "q": "How often do you add new libraries?",
+    "a": "We publish new libraries as internal testing with real kitchens wraps up. There is no fixed calendar, but the collection grows steadily as we validate prompts in live production environments."
+  },
+  {
+    "q": "Do you offer prompt libraries in other languages?",
+    "a": "A full set of Spanish-language prompt libraries is available at aichef.pro/libreria-de-prompts."
+  }
+];
+
+const TOTAL = catalogo.reduce((n, [, a]) => n + a.length, 0);
+
+const title = "AI Chef Pro Prompt Libraries – Index for Every Agent";
+const description = "Browse the full index of 26 prompt libraries built for each AI Chef Pro agent. Find tested, kitchen-ready prompts for your station and workflow.";
+const intro = "You already work with AI Chef Pro every shift. These prompt libraries give you a direct line to what each agent does best, with sequences that have been tested in real kitchens. Browse by agent to find ready-to-use prompts for everything from recipe development and menu engineering to allergen checks and waste tracking. Whether you rely on Executive Chef Pro for high-level planning, turn to Allergen ID for guest safety, or push creative boundaries with Avant-garde Cuisine, this index connects you to the prompts that keep your kitchen moving.";
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    url: `${SITE}${basePath}`,
+    inLanguage: 'en',
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: TOTAL,
+      itemListElement: catalogo.flatMap(([, a]) => a).map(([nombre, slug], i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: `Prompts for ${nombre}`,
+        url: `${SITE}/en/blog/${slug}`,
+      })),
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/en` },
+      { '@type': 'ListItem', position: 2, name: 'Prompt Libraries', item: `${SITE}${basePath}` },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<BaseLayout title={title} description={description} lang={lang} basePath={basePath} locales={['en']}>
+  <Fragment slot="head">
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang="en" />
+
+  <main class="container mx-auto max-w-6xl px-4 py-12">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-muted-foreground">
+      <a href="/en" class="hover:text-primary">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-foreground">Prompt Libraries</span>
+    </nav>
+
+    <header class="mb-10 max-w-3xl">
+      <h1 class="text-3xl font-bold leading-tight text-foreground md:text-4xl">
+        AI Chef Pro Prompt Libraries
+      </h1>
+      <p class="mt-4 text-lg text-muted-foreground">{intro}</p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm">
+        <span class="rounded-full bg-primary/10 px-4 py-1.5 font-semibold text-primary">{TOTAL} libraries</span>
+        <span class="rounded-full bg-muted px-4 py-1.5 font-semibold text-muted-foreground">
+          <a href="/libreria-de-prompts" class="hover:text-primary">Spanish catalogue →</a>
+        </span>
+      </div>
+    </header>
+
+    <section class="mb-12 grid gap-6 md:grid-cols-3">
+      {tips.map((c) => (
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h2 class="text-base font-bold text-foreground">{c.t}</h2>
+          <p class="mt-2 text-sm leading-relaxed text-muted-foreground">{c.d}</p>
+        </div>
+      ))}
+    </section>
+
+    <ul class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {catalogo.flatMap(([, a]) => a).map(([nombre, slug]) => (
+        <li>
+          <a
+            href={`/en/blog/${slug}`}
+            class="flex h-full items-center gap-3 rounded-lg border border-border bg-card p-4 transition-colors hover:border-primary hover:bg-accent/5"
+          >
+            <span class="text-sm font-semibold text-foreground">{nombre}</span>
+            <span class="ml-auto shrink-0 text-xs font-medium text-primary">See prompts →</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <section class="mt-14">
+      <h2 class="text-2xl font-bold text-foreground">Frequently asked questions</h2>
+      <div class="mt-4 divide-y divide-border rounded-xl border border-border">
+        {faq.map((f) => (
+          <details class="group p-5">
+            <summary class="cursor-pointer list-none font-semibold text-foreground marker:hidden">
+              {f.q}
+            </summary>
+            <p class="mt-3 text-muted-foreground">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <Footer lang="en" />
+</BaseLayout>

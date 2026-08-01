@@ -311,7 +311,10 @@ def bloque_hermanas(enlaces):
     if enlaces:      # el primero de la tanda nace sin hermanas: nada de <ul> vacío
         html += '<ul>%s</ul>' % ''.join(
             '<li><a href="https://aichef.pro/en/blog/%s">%s</a></li>' % (s, t) for s, t in enlaces)
-    return html + ('<p><a href="https://aichef.pro/en/blog/category/prompt-library">'
+    # Al hub curado, no a la archive cronológica: el hub agrupa las 26 con sus
+    # nombres reales de agente. Ojo con el slug, en plural: el filtro del sitemap
+    # excluye todo lo que acabe en `-library` (así se llaman los dashboards de pago).
+    return html + ('<p><a href="https://aichef.pro/en/prompt-libraries">'
                    'See every prompt library →</a></p>')
 
 
