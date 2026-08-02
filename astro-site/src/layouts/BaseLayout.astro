@@ -1,6 +1,11 @@
 ---
 import '../styles/global.css';
 import { LOCALES, DEFAULT_LOCALE, SITE, type Locale } from '../i18n/config';
+// Google Ads (AW-17829651892) + su banner de consentimiento. Van juntos a
+// propósito: el tag arranca con Consent Mode DENEGADO y es el banner el único
+// que lo concede, así que meter uno sin el otro rompe la medición o el RGPD.
+import GoogleTag from '../components/GoogleTag.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 // Contador determinista de usuarios (función pura, sin React pese al nombre) —
 // cross-root de la SPA: misma fórmula que alimenta el aggregateRating del
 // SoftwareApplication en SEOHead.tsx. En build queda congelado a la fecha del
@@ -181,6 +186,9 @@ const globalSchemas = noindex
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Lo PRIMERO tras el charset: el Consent Mode tiene que fijarse antes de
+        que cargue nada que pueda sembrar una cookie publicitaria. */}
+    <GoogleTag />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     {keywords && <meta name="keywords" content={keywords} />}
@@ -234,5 +242,6 @@ const globalSchemas = noindex
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased">
     <slot />
+    <CookieConsent lang={lang} />
   </body>
 </html>

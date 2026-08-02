@@ -4150,5 +4150,15 @@
         }
       ]
     }
+  },
+  "cookies": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "We use cookies to improve your browsing experience, analyze site traffic, and personalize content. By clicking 'Accept', you consent to the use of all cookies.",
+      "accept": "Accept",
+      "reject": "Reject",
+      "learn_more": "Learn more",
+      "close": "Close"
+    }
   }
 }

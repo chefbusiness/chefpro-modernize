@@ -4445,5 +4445,15 @@
         }
       ]
     }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Wir verwenden Cookies",
+      "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, den Website-Traffic zu analysieren und Inhalte zu personalisieren. Wenn Sie auf 'Akzeptieren' klicken, willigen Sie in die Verwendung aller Cookies ein.",
+      "accept": "Akzeptieren",
+      "reject": "Ablehnen",
+      "learn_more": "Mehr erfahren",
+      "close": "Schließen"
+    }
   }
 }

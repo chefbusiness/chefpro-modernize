@@ -4420,5 +4420,15 @@
         }
       ]
     }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Utilizamos cookies",
+      "description": "Utilizamos cookies para melhorar a sua experiência de navegação, analisar o tráfego do site e personalizar conteúdos. Ao clicar em 'Aceitar', consente a utilização de todos os cookies.",
+      "accept": "Aceitar",
+      "reject": "Rejeitar",
+      "learn_more": "Saber mais",
+      "close": "Fechar"
+    }
   }
 }

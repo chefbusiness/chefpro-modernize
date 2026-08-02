@@ -4415,5 +4415,15 @@
         }
       ]
     }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Wij gebruiken cookies",
+      "description": "Wij gebruiken cookies om uw browse-ervaring te verbeteren, het siteverkeer te analyseren en inhoud te personaliseren. Door op 'Accepteren' te klikken, stemt u in met het gebruik van alle cookies.",
+      "accept": "Accepteren",
+      "reject": "Weigeren",
+      "learn_more": "Meer informatie",
+      "close": "Sluiten"
+    }
   }
 }

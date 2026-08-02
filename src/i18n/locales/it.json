@@ -4435,5 +4435,15 @@
         }
       ]
     }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Utilizziamo i cookie",
+      "description": "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico del sito e personalizzare i contenuti. Cliccando su 'Accetta', acconsenti all'uso di tutti i cookie.",
+      "accept": "Accetta",
+      "reject": "Rifiuta",
+      "learn_more": "Maggiori informazioni",
+      "close": "Chiudi"
+    }
   }
 }

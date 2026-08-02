@@ -1,0 +1,93 @@
+---
+/**
+ * Etiqueta de Google (gtag.js) con Consent Mode v2.
+ *
+ * POR QUÉ AQUÍ Y NO EN app.aichef.pro: esta es la web donde ATERRIZA el clic del
+ * anuncio, así que es donde hay que capturar el `gclid` y sembrar la cookie
+ * `_gcl_aw`. Sin esta etiqueta Google Ads no puede atribuir ninguna conversión,
+ * y es literalmente lo que reclama el diagnóstico de la campaña («Falta una
+ * etiqueta de Google»). La conversión en sí ocurre en app.aichef.pro (Vercel,
+ * con los embeds de Pickaxe dentro): allí va ESTA MISMA etiqueta más el evento
+ * `conversion`. Como los dos comparten dominio registrable (aichef.pro), gtag
+ * guarda la cookie en `.aichef.pro` y el subdominio la lee solo: NO hace falta
+ * cross-domain linker.
+ *
+ * ORDEN CRÍTICO: el bloque de consentimiento va SÍNCRONO y ANTES del loader
+ * async de gtag.js. Si se invierte, gtag.js puede procesar el `config` con los
+ * valores por defecto de Google (concedido) antes de leer nuestro `default`
+ * denegado, y se sembrarían cookies publicitarias sin consentimiento.
+ *
+ * Defectos por defecto DENEGADOS (RGPD/ePrivacy + política del EEE de Google
+ * desde marzo de 2024). Mientras el visitante no acepte:
+ *   · `ads_data_redaction` elimina los identificadores de los pings.
+ *   · `url_passthrough` propaga el gclid por la URL, para que la atribución
+ *     sobreviva sin cookies y Google pueda modelar las conversiones.
+ *   · `wait_for_update` da 500 ms al banner para responder antes de disparar.
+ *
+ * Lo concede/deniega `CookieConsent.astro` llamando a `window.aichefConsent()`.
+ *
+ * LA DECISIÓN SE GUARDA EN COOKIE, NO EN localStorage. `localStorage` está
+ * aislado POR ORIGEN, así que lo aceptado en https://aichef.pro no se lee desde
+ * https://app.aichef.pro y Pickaxe trataría al visitante como si no hubiera
+ * decidido nada: banner otra vez y consentimiento denegado en la mitad del
+ * embudo donde ocurre la conversión. La cookie va a `.aichef.pro` (el dominio
+ * registrable), que es exactamente el mismo alcance que usa gtag para `_gcl_aw`,
+ * y por eso el subdominio la lee sola. Cazado el 2026-08-02.
+ */
+const GOOGLE_ADS_ID = 'AW-17829651892';
+/** Cookie de consentimiento. Mismo nombre en la landing y en Pickaxe. */
+const CONSENT_COOKIE = 'aichef_consent';
+---
+
+<script is:inline define:vars={{ GOOGLE_ADS_ID, CONSENT_COOKIE }}>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  window.aichefConsentCookie = CONSENT_COOKIE;
+
+  window.aichefLeeConsent = function () {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + CONSENT_COOKIE + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : null;
+  };
+
+  // Estado previo: si ya decidió en otra visita, se respeta desde el primer ping.
+  var concedido = window.aichefLeeConsent() === 'accepted' ? 'granted' : 'denied';
+
+  gtag('consent', 'default', {
+    ad_storage: concedido,
+    ad_user_data: concedido,
+    ad_personalization: concedido,
+    analytics_storage: concedido,
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500,
+  });
+  gtag('set', 'ads_data_redaction', concedido === 'denied');
+  gtag('set', 'url_passthrough', true);
+
+  gtag('js', new Date());
+  gtag('config', GOOGLE_ADS_ID);
+
+  /** La llama el banner. `ok` true = aceptar, false = rechazar. */
+  window.aichefConsent = function (ok) {
+    var v = ok ? 'granted' : 'denied';
+    gtag('consent', 'update', {
+      ad_storage: v,
+      ad_user_data: v,
+      ad_personalization: v,
+      analytics_storage: v,
+    });
+    gtag('set', 'ads_data_redaction', !ok);
+
+    // `domain` sólo cuando estamos de verdad bajo aichef.pro: en un deploy
+    // preview de Netlify o en localhost el navegador RECHAZA en silencio una
+    // cookie de otro dominio y la decisión se perdería sin avisar.
+    var host = location.hostname;
+    var ambito = /(^|\.)aichef\.pro$/.test(host) ? '; domain=.aichef.pro' : '';
+    var seguro = location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = CONSENT_COOKIE + '=' + (ok ? 'accepted' : 'rejected')
+      + '; path=/' + ambito + '; max-age=15552000; SameSite=Lax' + seguro;
+  };
+</script>
+<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}></script>

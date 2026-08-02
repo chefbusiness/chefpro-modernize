@@ -1,0 +1,99 @@
+---
+/**
+ * Banner de consentimiento de cookies.
+ *
+ * Es la mitad que le falta a `GoogleTag.astro`: sin él, el Consent Mode se queda
+ * en «denegado» para siempre y las conversiones del EEE sólo serían MODELADAS,
+ * nunca medidas. Concede o deniega llamando a `window.aichefConsent()`.
+ *
+ * Vanilla, sin island de React: esto se pinta en las ~1.250 páginas del sitio y
+ * no compensa arrastrar el runtime de React por tres botones.
+ *
+ * Los textos salen de `cookies.banner.*` de los JSON de la SPA, que son la
+ * fuente única de i18n. Existían ya en es/fr (los usaba el CookieBanner.tsx de
+ * la SPA, que en producción no se pinta desde el cutover de Fase 7); los otros
+ * cinco idiomas se añadieron con bridge.py el 2026-08-02.
+ *
+ * Detalle que evita un salto de maquetación: arranca oculto con `hidden` y sólo
+ * se muestra por JS si no hay decisión previa, así que quien ya decidió no ve
+ * ni un parpadeo.
+ */
+import { t } from '../i18n/translations';
+import type { Locale } from '../i18n/config';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+
+// Misma regla que en Footer.astro: el ES va sin prefijo y el resto con él.
+// No hay helper compartido para esto; se replica para no inventar un import.
+const legalHref = (slug: string) => (lang === 'es' ? `/${slug}` : `/${lang}/${slug}`);
+---
+
+<div
+  id="cookie-consent"
+  hidden
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="cookie-consent-title"
+  aria-describedby="cookie-consent-desc"
+  class="fixed inset-x-0 bottom-0 z-[100] border-t border-border bg-white/95 backdrop-blur-sm shadow-[0_-4px_24px_rgba(0,0,0,0.08)] print:hidden"
+>
+  <div class="mx-auto flex max-w-5xl flex-col gap-4 p-4 sm:p-5 md:flex-row md:items-center md:gap-6">
+    <div class="flex-1">
+      <p id="cookie-consent-title" class="text-sm font-semibold text-foreground">
+        {t(lang, 'cookies.banner.title')}
+      </p>
+      <p id="cookie-consent-desc" class="mt-1 text-xs leading-relaxed text-muted-foreground">
+        {t(lang, 'cookies.banner.description')}{' '}
+        <a href={legalHref('cookies')} class="text-anchor underline underline-offset-2 hover:text-primary">
+          {t(lang, 'cookies.banner.learn_more')}
+        </a>
+      </p>
+    </div>
+    <div class="flex flex-shrink-0 gap-2">
+      <button
+        type="button"
+        data-consent="reject"
+        class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      >
+        {t(lang, 'cookies.banner.reject')}
+      </button>
+      <button
+        type="button"
+        data-consent="accept"
+        class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      >
+        {t(lang, 'cookies.banner.accept')}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var caja = document.getElementById('cookie-consent');
+    if (!caja) return;
+
+    // La decisión vive en una cookie de `.aichef.pro`, no en localStorage, para
+    // que viaje a app.aichef.pro (Pickaxe). Ver GoogleTag.astro.
+    var decidido = typeof window.aichefLeeConsent === 'function' ? window.aichefLeeConsent() : null;
+    if (decidido === 'accepted' || decidido === 'rejected') return;
+
+    caja.hidden = false;
+
+    caja.addEventListener('click', function (ev) {
+      var btn = ev.target.closest('[data-consent]');
+      if (!btn) return;
+      var ok = btn.getAttribute('data-consent') === 'accept';
+      // aichefConsent lo define GoogleTag.astro, que va antes en el <head>.
+      // El try protege el caso de que un bloqueador cargue el DOM pero no el tag:
+      // el banner debe cerrarse igual, o se queda pegado en pantalla para siempre.
+      try {
+        if (typeof window.aichefConsent === 'function') window.aichefConsent(ok);
+        else document.cookie = 'aichef_consent=' + (ok ? 'accepted' : 'rejected')
+          + '; path=/; domain=.aichef.pro; max-age=15552000; SameSite=Lax; Secure';
+      } catch (e) { /* noop */ }
+      caja.hidden = true;
+    });
+  })();
+</script>
