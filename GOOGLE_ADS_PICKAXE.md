@@ -1,37 +1,46 @@
 # Google Ads en Pickaxe — qué pegar y dónde
 
-> ID de la etiqueta: **`AW-17829651892`** · Creado el 2026-08-02.
-> La parte de `aichef.pro` (la landing) ya está hecha en código: `astro-site/src/components/GoogleTag.astro`.
-> Este documento cubre **solo** lo que hay que pegar a mano en Pickaxe.
+> ID de la etiqueta: **`AW-17829651892`** · 2026-08-02.
+> **La campaña es solo para el mercado ESPAÑOL** (decisión de John, 2026-08-02),
+> así que esto se hace **únicamente en el workspace español** («AI Chef Pro -
+> Español», el de `app.aichef.pro`). Los otros seis workspaces (en, fr, it, de,
+> pt, nl) **no se tocan**: cuando alguna campaña los necesite, es el mismo
+> snippet sin cambios.
+>
+> La mitad de `aichef.pro` **ya está hecha y desplegada** en código
+> (`astro-site/src/components/GoogleTag.astro`), y cubre los 7 idiomas de la
+> landing. Este documento es **solo** lo que hay que pegar a mano en Pickaxe.
 
 ## Por qué hacen falta las dos mitades
 
-| Dónde | Qué mide | Sin esto… |
+| Dónde | Qué hace | Sin esto… |
 |---|---|---|
-| **aichef.pro** (ya hecho) | Captura el `gclid` del clic y siembra la cookie `_gcl_aw` | Google Ads no puede atribuir NADA, haya o no evento |
-| **Pickaxe** (esto) | Dispara el evento cuando el usuario se registra | Se sabe que hubo clic, pero nunca que hubo alta |
+| **aichef.pro** ✅ hecho | Captura el `gclid` del clic y siembra la cookie `_gcl_aw` | Google Ads no atribuye NADA, haya o no evento |
+| **app.aichef.pro** ⬅ esto | Dispara el evento cuando el usuario se registra | Se sabe que hubo clic, nunca que hubo alta |
 
 **No hace falta «asociar» el subdominio a la campaña ni configurar cross-domain.**
-`aichef.pro`, `app.aichef.pro`, `enapp.aichef.pro`… comparten **dominio
-registrable**, así que la cookie que gtag guarda en `.aichef.pro` la leen todos
-los subdominios solos. Cruzar de la landing a la app **no es cross-domain**.
+`aichef.pro` y `app.aichef.pro` comparten **dominio registrable**, así que la
+cookie que gtag guarda en `.aichef.pro` la lee el subdominio solo. Ir de la
+landing a la app **no es cross-domain**.
 
-## Paso 0 — Crear la acción de conversión (una sola vez)
+---
 
-Sin esto los snippets no tienen a dónde enviar nada.
+## Paso 1 — Crear la acción de conversión (5 min, una sola vez)
 
-1. Google Ads → **Objetivos → Conversiones → Nueva acción de conversión → Sitio web**.
-2. Dominio: `aichef.pro`. Si pide configurarla a mano, elige **Añadir manualmente**.
-3. Categoría: **Registro** (`Sign-up`).
-4. Al terminar te da un **`send_to`** con esta forma:
-   `AW-17829651892/AbC-D_efGhIjKlMnOp`
-5. **Copia esa cadena entera.** Es la que sustituye a `PEGA_AQUI_TU_ETIQUETA` en el snippet B.
+Sin esto el Snippet B no tiene a dónde enviar nada.
 
-## Snippet A — campo «Header» de CADA workspace
+1. Google Ads → **Objetivos → Conversiones → Nueva acción de conversión → Sitio web**
+2. Dominio: `aichef.pro`. Si pide configurarla a mano → **Añadir manualmente**
+3. Categoría: **Registro** (`Sign-up`)
+4. Te dará un `send_to` con esta forma: `AW-17829651892/AbC-D_efGhIjKlMnOp`
+5. **Cópialo**: sustituye a `PEGA_AQUI_TU_ETIQUETA` en el Snippet B
 
-**Va en los 7 workspaces** (es, en, fr, it, de, pt, nl), en
-`Deployments → Deploy Settings → Workspace Level Custom code → Header`.
-Es idéntico en todos: no hay que cambiar nada por idioma.
+---
+
+## Paso 2 — Snippet A → campo «Header»
+
+Workspace **español** → `Deployments → Deploy Settings → Workspace Level Custom
+code → Header`.
 
 ```html
 <!-- Google tag (gtag.js) — AI Chef Pro, AW-17829651892 -->
@@ -59,17 +68,15 @@ Es idéntico en todos: no hay que cambiar nada por idioma.
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17829651892"></script>
 ```
 
-## Snippet B — campo «Confirmation Page Header»
+## Paso 3 — Snippet B → campo «Confirmation Page Header»
 
-Va en el mismo sitio, en el campo **Confirmation Page Header**. Este es el que
-**cuenta la conversión**, y lleva un candado para no contar dos veces si el
-usuario recarga la página.
+Mismo sitio, campo **Confirmation Page Header**. Este es el que **cuenta la
+conversión**. Lleva un candado para no contarla dos veces si el usuario recarga.
 
 ```html
 <script>
   (function () {
-    // Antirebote: una conversión por usuario cada 30 días, aunque recargue.
-    if (/(?:^|; )aichef_conv=1/.test(document.cookie)) return;
+    if (/(?:^|; )aichef_conv=1/.test(document.cookie)) return;   // antirebote
 
     gtag('event', 'conversion', {
       send_to: 'PEGA_AQUI_TU_ETIQUETA',   // <-- AW-17829651892/AbC-D_efGhIjKlMnOp
@@ -82,44 +89,45 @@ usuario recarga la página.
 </script>
 ```
 
-> El Snippet A tiene que estar puesto **también** para que exista `gtag` cuando
-> corra el B. Si sólo pones el B, no pasa nada: falla en silencio.
+> El Snippet A tiene que estar puesto **también**, o no existe `gtag` cuando
+> corre el B y este falla en silencio.
 
-## Lo que falta decidir (2 cosas)
+---
 
-### 1. ¿El alta gratuita pasa por una «Confirmation Page»?
+## ⚠️ Lo único que queda por confirmar
 
-En Pickaxe, esos campos se describen como *«product confirmation pages»*, que
-suenan a **compra**, no a registro. Si el alta gratuita **no** pasa por ahí, el
-Snippet B no se disparará nunca en los registros.
+**¿El alta GRATUITA pasa por una «Confirmation Page» de Pickaxe?**
 
-- Si pasa → listo, no hay que hacer nada más.
-- Si no pasa → hay que disparar el evento en la **primera visita autenticada**,
-  desde el campo **Body**. Para escribir eso necesito ver cómo marca Pickaxe que
-  hay sesión iniciada (una clase en el `<body>`, una variable global, una ruta
-  concreta). **Dímelo o dame acceso y lo escribo.**
+Los campos se describen como *«product confirmation pages»*, que suena a
+**compra**, no a registro. Si el alta gratuita no pasa por ahí, **el Snippet B
+no se disparará nunca en los registros** y la campaña seguirá sin medir nada.
 
-### 2. ¿Banner de cookies también en Pickaxe?
+- **Si pasa** → ya está, no hay más que hacer.
+- **Si no pasa** → hay que disparar el evento en la **primera visita
+  autenticada** desde el campo **Body**. Para escribirlo hace falta saber cómo
+  marca Pickaxe que hay sesión iniciada: una clase en el `<body>`, una variable
+  global, una ruta concreta tras el login… Con eso, son 6 líneas.
 
-Hoy el consentimiento se pide **solo en la landing**. Quien entre directo a
-`app.aichef.pro` (marcador, enlace de email, un anuncio que apunte ahí) nunca ve
-el banner, así que se queda en **denegado** y su conversión sólo se modela.
+Forma rápida de salir de dudas: date de alta con un correo de prueba en
+`app.aichef.pro` y mira **si la URL cambia a algo tipo `/confirmation`,
+`/welcome` o similar** en algún momento del proceso.
 
-- Si el 100% del tráfico de Ads entra por la landing, da igual.
-- Si no, hay que poner un banner también en el campo Body de los 7 workspaces.
+---
 
 ## Comprobación cuando esté puesto
 
-1. **Extensión Google Tag Assistant** en `aichef.pro` → debe verse `AW-17829651892`.
-2. Navega a la app y haz un alta de prueba → Tag Assistant debe registrar el evento `conversion`.
-3. Google Ads → Conversiones → la acción pasa de **«Sin datos recientes»** a
-   **«Registrando conversiones»**. Tarda hasta 24 h; no te alarmes antes.
-4. En el navegador, consola: `document.cookie` en `app.aichef.pro` debe mostrar
+1. Extensión **Google Tag Assistant** en `aichef.pro` → debe verse `AW-17829651892`.
+2. Alta de prueba en la app → Tag Assistant debe registrar el evento `conversion`.
+3. Google Ads → Conversiones: la acción pasa de **«Sin datos recientes»** a
+   **«Registrando conversiones»**. Tarda hasta 24 h.
+4. En consola, dentro de `app.aichef.pro`: `document.cookie` debe mostrar
    `_gcl_aw` **si** venías de un clic de anuncio. Si no está, la cadena se rompió.
 
-## Aviso sobre los subdominios
+---
 
-Comprobado el 2026-08-02: responden **200 los siete**, no tres o cuatro —
-`app`, `enapp`, `frapp`, `itapp`, `deapp`, `ptapp` y `nlapp`. Si de verdad sólo
-quieres cuatro públicos, los otros tres están accesibles y conviene revisarlo
-(aunque no estén enlazados, son indexables si alguien los enlaza).
+## Nota aparte, no urgente
+
+Comprobado el 2026-08-02: responden **200 los siete** subdominios de app
+(`app`, `enapp`, `frapp`, `itapp`, `deapp`, `ptapp`, `nlapp`). Si solo querías
+tener cuatro públicos, los otros están accesibles. No afecta a la campaña
+española; queda anotado por si interesa revisarlo más adelante.
