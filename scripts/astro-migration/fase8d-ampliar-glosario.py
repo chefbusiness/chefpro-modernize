@@ -105,6 +105,39 @@ CONFIG = {
         ],
         'preservar': [],
     },
+    # — Tanda 3 (2026-08-02). La pieza con más demanda de todo el glosario:
+    #   4.400 búsquedas/mes, competencia BAJA y demanda plana todo el año,
+    #   servida con 274 palabras. La SERP la copan blogs de cocina CASERA (más
+    #   Wikipedia y dos SaaS de gestión), así que el ángulo es la cocina
+    #   PROFESIONAL, que es lo que nadie del top cubre: cuánta mise en place hay
+    #   que hacer y con qué fórmula, el cronograma por horas, la diferencia
+    #   entre prep y mise en place, y el etiquetado/APPCC. El People Also Ask
+    #   pregunta DOS veces por los tipos (3 y 4) y nadie resuelve la
+    #   discrepancia: son dos ejes de clasificación distintos, no cuatro tipos.
+    #   OJO: las posiciones 46-94 del histórico son de la URL LEGACY
+    #   (blog.aichef.pro/mise-en-place/, ya 301-eada); la migrada arranca de cero.
+    'mise-en-place': {
+        'bridge': 'miseenplace.txt',
+        # kit-tareas (partidas y turnos) · kit-escandallos (el h2 del cálculo) ·
+        # pack-appcc (el h2 de etiquetado y trazabilidad). Elegidos por encaje
+        # temático con las tres alturas donde caen, no por rellenar la cuota.
+        'productos': ['kit-tareas', 'kit-escandallos', 'pack-appcc'],
+        # SOLO las dos del cuerpo. La destacada
+        # (mise-en-place-pase-listo-destacada.jpg) va al frontmatter a mano y no
+        # se repite dentro del artículo: si se añade aquí, el script la mete en
+        # el cuerpo Y en la portada, y se incumple la regla de destacada única.
+        'imagenes': [
+            ('/blog-assets/2026/08/mise-en-place-partida-cubetas.jpg',
+             'Partida de cocina profesional montada antes del servicio, con cubetas gastronorm '
+             'de acero llenas de verdura cortada y etiquetadas'),
+            ('/blog-assets/2026/08/mise-en-place-cronograma-portapapeles.jpg',
+             'Las manos de un cocinero repasan el cronograma de mise en place en un portapapeles '
+             'junto al pase de una cocina profesional'),
+        ],
+        # El Loom es un vídeo propio y on-topic, así que se conserva. Desde el
+        # parche de esta misma sesión se pinta DETRÁS del primer párrafo.
+        'preservar': ['<figure class="wp-block-embed is-type-video is-provider-loom'],
+    },
 }
 
 
@@ -207,13 +240,21 @@ def main():
     if len(faq) < 6:
         sys.exit('solo %d preguntas de FAQ: bridge no devolvió la sección completa' % len(faq))
 
-    # Se conserva del post original lo que no viene de bridge (podcast, audio).
+    # Se conserva del post original lo que no viene de bridge (podcast, audio, vídeo).
+    #
+    # Van DESPUÉS del primer párrafo, no al principio del cuerpo. Antes se
+    # volcaban aquí mismo, encima de todo, y el artículo abría con un vídeo de
+    # 1256x942 antes de una sola palabra: en móvil el lector no veía la
+    # definición, y es justo el párrafo que el AI Overview de Google copia.
+    # `que-es-el-food-pairing` sigue abriendo así (podcast antes del primer h2).
+    # Cazado el 2026-08-02 preparando `mise-en-place`, que lleva un Loom.
     partes = []
+    preservados = []
     for marca in cfg['preservar']:
         i = viejo.find(marca)
         if i < 0:
             sys.exit('no encuentro el bloque a preservar: %s' % marca)
-        partes.append(viejo[i:viejo.find('</figure>', i) + len('</figure>')])
+        preservados.append(viejo[i:viejo.find('</figure>', i) + len('</figure>')])
 
     # Reparto: banners a tres alturas e imágenes espaciadas entre los h2.
     # Se reparten sobre TODOS los bloques, no solo sobre los h2: `que-es-el-food-pairing`
@@ -249,14 +290,36 @@ def main():
             partes.append('<%s class="wp-block-heading">%s</%s>' % (tipo, esc(cont), tipo))
         else:
             partes.append('<p class="wp-block-paragraph">%s</p>' % cont)
+            # El primer párrafo es la respuesta citable de la sección de apertura:
+            # lo preservado (vídeo, podcast) va justo detrás, nunca delante.
+            if preservados:
+                partes.extend(preservados)
+                preservados = []
+
+    if preservados:
+        sys.exit('no se colocó lo preservado: el texto de bridge no tiene ni un párrafo')
 
     cuerpo = '\n'.join(partes)
     for n, (src, _) in enumerate(cfg['imagenes']):
         if src not in cuerpo:
             sys.exit('la imagen %d no se colocó: revisa el reparto' % (n + 1))
+    # La aserción de arriba sólo mira el cuerpo: comprueba también que el JPG
+    # exista en disco. Sin esto el post se publica con imágenes 404 en silencio.
+    for src, _ in cfg['imagenes']:
+        if not (REPO / 'astro-site' / 'public' / src.lstrip('/')).exists():
+            sys.exit('la imagen no existe en disco: %s (genérala antes de ensamblar)' % src)
 
     # FAQ al frontmatter (de ahí sale el FAQPage), reemplazando la que hubiera.
-    y = lambda s: '"%s"' % s.replace('\\', '\\\\').replace('"', '\\"').strip()
+    #
+    # SE LE QUITA EL HTML. `BlogPost.astro` pinta la respuesta como TEXTO
+    # (`<p>{f.a}</p>`, sin set:html) y la mete cruda en el JSON-LD, así que un
+    # <em> que cuele bridge se ve LITERAL en pantalla: «<em>Mise</em> viene del
+    # verbo <em>mettre</em>». Pasó en `mise-en-place`, 20 etiquetas visibles,
+    # cazado en el dist antes de publicar el 2026-08-02. El prompt ya pide texto
+    # plano, pero un prompt es una petición y esto es una garantía. Es el mismo
+    # gotcha que el CLAUDE.md documenta para `faq.astro` (campo `a` vs `aHtml`).
+    sin_html = lambda s: re.sub(r'\s{2,}', ' ', re.sub(r'<[^>]+>', '', s)).strip()
+    y = lambda s: '"%s"' % sin_html(s).replace('\\', '\\\\').replace('"', '\\"')
     fm = re.sub(r'\nfaq:\n(?:  - q: .*\n    a: .*\n)+', '\n', fm)
     bloque_faq = 'faq:\n' + ''.join('  - q: %s\n    a: %s\n' % (y(q), y(a)) for q, a in faq)
     fm = re.sub(r'^modDate: .*$', 'modDate: %s' % date.today().isoformat(), fm, flags=re.M)
