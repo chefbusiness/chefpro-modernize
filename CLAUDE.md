@@ -111,7 +111,8 @@ Bloques que en WordPress eran dinámicos y al exportar quedaron serializados com
 
 ### Stack de research SEO (estado a 2026-07-31)
 
-- **DataForSEO** es la fuente contratada para volúmenes y SERP. Basic Auth: `DATAFORSEO_LOGIN` (email) + `DATAFORSEO_PASSWORD` (la *API password* del panel), en `/root/chefbusiness-ai/.env` (permisos 600, gitignorado, fuera del repo público). **Ninguna credencial se commitea aquí.**
+- **DataForSEO** es la fuente contratada para volúmenes y SERP. Basic Auth: `DATAFORSEO_LOGIN` (email) + `DATAFORSEO_PASSWORD` (la *API password* del panel), en `/root/chefbusiness-ai/.env` (permisos 600, gitignorado, fuera del repo público). **Ninguna credencial se commitea aquí.** Helper en el repo: `python3 scripts/dataforseo.py vol "kw1" "kw2"` y `python3 scripts/dataforseo.py serp "kw"` (resuelve el `.env` en Mac y VPS, marca si hay AI Overview y saca el People Also Ask, que es el guion de la FAQ).
+- **El volumen sin SERP engaña.** «Qué es un token» son 1.600/mes… de **criptomonedas**: BBVA, Wikipedia, Fortinet y Kraken copan el top y la acepción de IA sólo asoma en las posiciones 10 y 13. Escribir para el volumen sin mirar la intención habría producido un post que no puede rankear jamás. Correr siempre `serp` antes de decidir el enfoque, no sólo `vol`.
 - **MUERTAS**, comprobado: **Keywords Everywhere** devuelve volumen 0 hasta para "recetas" o "pizza" (la cuenta no sirve datos de GKP) y la **API de Brave** da `422 token inválido`. No perder tiempo con ellas sin renovarlas antes.
 - **Empezar siempre por los datos propios**: GSC vía el MCP `gscServer` (`sc-domain:aichef.pro`). Antes de buscar demanda fuera, mirar qué activo propio ya posiciona para esa intención — es lo que evita canibalizar (en ID Alérgenos había uno en posición 9,1 al que no se podía pisar).
 - Si no hay volúmenes fiables, **no se inventan cifras**: se trabaja con SERP directa + GSC y se dice qué no se pudo medir.

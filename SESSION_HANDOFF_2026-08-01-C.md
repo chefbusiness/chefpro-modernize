@@ -82,9 +82,35 @@ los tres posts tocados.
 2. **Alias de `enblog.aichef.pro` en Netlify + DNS** (`CUTOVER_ENBLOG_PENDIENTE.md`), con la trampa
    de las A records de Hostinger.
 
+## 📋 8D: lo que queda medido, para no volver a contarlo
+
+Censo del glosario tras esta tanda: **71 entradas, mediana 1.345 palabras** (era 1.285; la subieron
+estas dos). El resto del blog está en 2.661.
+
+**Por debajo de 400 palabras — el umbral bajo el cual el `CLAUDE.md` dice que un post no compite ni
+siendo glosario:**
+
+| Palabras | Slug | Nota |
+|---|---|---|
+| 226 | `yuzu-kosho-condimento-japones-tendencia` | |
+| 274 | `mise-en-place` | **El más goloso con diferencia: 4.400 búsquedas/mes** (medido con DataForSEO), competencia baja y demanda plana todo el año. 274 palabras para eso es dinero tirado |
+| 331 | `chile-crisp-condimento-viral-2026` | |
+| 359 | `coccion-a-baja-temperatura-concepto-y-definicion` | Ojo canibalización con `tecnicas-de-coccion-al-vacio-sous-vide` (657) |
+
+**Entre 400 y 700, segunda tanda posible (8):** `que-es-la-inteligencia-artificial-generativa` (400),
+`tecnicas-con-sifon-concepto-y-definicion` (413), `esferificacion-concepto-y-definicion` (421),
+`que-es-el-maiz` (422), `espumas-ferran-adria-concepto-y-definicion` (442),
+`api-interfaz-programacion-hosteleria` (614), `procesamiento-de-lenguaje-natural` (649),
+`tecnicas-de-coccion-al-vacio-sous-vide` (657).
+
+⚠️ **Antes de ampliar cualquiera de estos, el chequeo de canibalización** (dos consultas: `ls` de
+slugs con el término y GSC agrupando por `page,query`). En esta tanda salió limpio, pero en
+`food-pairing` el research dijo que NO se inflara.
+
 ## 🧭 Qué sigue
 
 - Los ~58 agentes españoles sin librería de prompts (12 de ellos el bloque de hotelería).
 - Las páginas por agente de 8C, que siguen sin arrancar.
-- Vigilar en GSC las 119 free tools que pasaron a SSR anoche: es el cambio con más potencial y
+- La tanda 8D de arriba: 4 entradas bajo 400 palabras.
+- Vigilar en GSC las 119 free tools que pasaron a SSR: es el cambio con más potencial y
   todavía es pronto para leer nada.
