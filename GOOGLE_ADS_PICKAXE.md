@@ -30,10 +30,31 @@ landing a la app **no es cross-domain**.
 Sin esto el Snippet B no tiene a dónde enviar nada.
 
 1. Google Ads → **Objetivos → Conversiones → Nueva acción de conversión → Sitio web**
-2. Dominio: `aichef.pro`. Si pide configurarla a mano → **Añadir manualmente**
-3. Categoría: **Registro** (`Sign-up`)
-4. Te dará un `send_to` con esta forma: `AW-17829651892/AbC-D_efGhIjKlMnOp`
-5. **Cópialo**: sustituye a `PEGA_AQUI_TU_ETIQUETA` en el Snippet B
+2. Dominio: **`aichef.pro`** (ver más abajo por qué, aunque el alta ocurra en el subdominio)
+3. Cuando pregunte cómo configurarla → **«Añadir manualmente» / con código**.
+   **NO** elijas la opción basada en URL («cuando alguien visite una página»):
+   esa depende de la dirección concreta de destino, y las URLs internas de
+   Pickaxe no las controlamos.
+4. Categoría: **Registro** (`Sign-up`)
+5. Te dará un `send_to` con esta forma: `AW-17829651892/AbC-D_efGhIjKlMnOp`
+6. **Cópialo**: sustituye a `PEGA_AQUI_TU_ETIQUETA` en el Snippet B
+
+### ¿Por qué `aichef.pro` si el registro ocurre en `app.aichef.pro`?
+
+Duda razonable y conviene dejarla zanjada: **ese campo de dominio NO es donde se
+cuenta la conversión.**
+
+- Google lo usa para **detectar si ya hay una etiqueta instalada** en ese sitio y
+  proponerte la configuración. En `aichef.pro` ya está, así que la encontrará —
+  que es lo que hace desaparecer el aviso de «configuración errónea».
+- La conversión **se atribuye por el `send_to`**, no por el dominio: el evento
+  del Snippet B casa con el clic leyendo la cookie `_gcl_aw`, y ahí el dominio
+  que escribiste al crear la acción no interviene.
+- `app.aichef.pro` **es** `aichef.pro`: mismo dominio registrable, otro
+  subdominio. Google lo trata como un solo sitio.
+
+Pusieras `aichef.pro` o `app.aichef.pro`, la conversión se contaría igual.
+`aichef.pro` es mejor porque es donde vive la etiqueta que Google va a detectar.
 
 ---
 
