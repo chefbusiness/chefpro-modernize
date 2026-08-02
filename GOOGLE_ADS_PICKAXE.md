@@ -95,68 +95,138 @@ code → Header`.
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17829651892"></script>
 ```
 
-## Paso 3 — Snippet B → campo «Confirmation Page Header»
+## Paso 3 — Snippet B → campo «Body» (NO «Confirmation Page Header»)
 
-Mismo sitio, campo **Confirmation Page Header**. Este es el que **cuenta la
-conversión**. Lleva un candado para no contarla dos veces si el usuario recarga.
+> ⚠️ **Corregido el 2026-08-02 tras recorrer el flujo real con un navegador.**
+> El plan inicial era pegarlo en `Confirmation Page Header`. **No sirve**: el
+> alta de Pickaxe es un **modal**, no una página. No hay ninguna «confirmation
+> page» en el registro gratuito, así que ese campo no se ejecutaría jamás.
+
+### Lo que se comprobó, paso a paso
+
+| Comprobación | Resultado |
+|---|---|
+| ¿El alta abre una página propia? | **No.** Es un modal sobre `/invitado` |
+| ¿Cambia la URL al completar el alta? | **Sí**: recarga completa a `/invitado?success=login` |
+| ¿Y al iniciar sesión un usuario YA existente? | **También `?success=login`** — no distingue |
+| ¿El selector de plan («elige tu nivel de acceso») distingue? | **No**, sale en los dos casos |
+| ¿Qué SÍ distingue el alta? | El modal de registro es **el único con DOS campos de contraseña** (el de login tiene uno) |
+
+Por eso el snippet no puede limitarse a mirar la URL: **marca la intención de
+alta cuando detecta el modal de registro**, y sólo entonces cuenta la conversión
+al llegar la redirección de éxito.
+
+Va en el campo **Body** del workspace español (se inyecta en todas las páginas,
+que es lo que hace falta para poder escuchar el clic del modal).
 
 Acción de conversión creada el 2026-08-02: **«Registro»**, evento manual,
 categoría Registro, marcada como **Principal**. Su etiqueta ya está puesta abajo.
 
 ```html
-<!-- Conversión "Registro" — AI Chef Pro -->
+<!-- Conversión "Registro" — AI Chef Pro. Va en el campo BODY del workspace. -->
 <script>
-  (function () {
-    // Antirebote: una conversión por usuario cada 30 días, aunque recargue
-    // la página o vuelva a entrar. Sin esto, un F5 cuenta dos altas.
-    if (/(?:^|; )aichef_conv=1/.test(document.cookie)) return;
+(function () {
+  var INTENCION = 'aichef_signup_intent';   // el usuario está en el modal de ALTA
+  var HECHO     = 'aichef_conv';            // ya se contó en este navegador
+  var AMBITO    = /(^|\.)aichef\.pro$/.test(location.hostname) ? '; domain=.aichef.pro' : '';
+  var SEGURO    = location.protocol === 'https:' ? '; Secure' : '';
 
-    // gtag lo define el Snippet A del campo Header. Si por lo que sea no
-    // estuviera, no reventamos la página: simplemente no se mide.
-    if (typeof gtag !== 'function') return;
+  function leer(n) {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)'));
+    return m ? m[1] : null;
+  }
+  function guardar(n, v, seg) {
+    document.cookie = n + '=' + v + '; path=/' + AMBITO + '; max-age=' + seg + '; SameSite=Lax' + SEGURO;
+  }
 
-    gtag('event', 'conversion', {
-      'send_to': 'AW-17829651892/-p23CMHO5docELTL67VC',
-      'value': 1.0,
-      'currency': 'EUR'
-    });
+  // 1) MARCAR LA INTENCIÓN DE ALTA.
+  //    El modal de registro es el único con DOS campos de contraseña (el de
+  //    login tiene uno). Es una señal ESTRUCTURAL: sigue funcionando aunque
+  //    Pickaxe traduzca o cambie los textos de los botones. El match por texto
+  //    va de refuerzo, no como criterio principal.
+  //    15 minutos de margen: suficiente para el rodeo del OAuth de Google.
+  document.addEventListener('click', function (ev) {
+    var b = ev.target && ev.target.closest ? ev.target.closest('button') : null;
+    if (!b) return;
+    var t = (b.textContent || '').trim().toLowerCase();
+    var esAlta = document.querySelectorAll('input[type=password]').length >= 2
+              || t === 'create account' || t === 'crear cuenta'
+              || t.indexOf('regístrate con') === 0 || t.indexOf('registrate con') === 0;
+    if (esAlta) guardar(INTENCION, '1', 900);
+  }, true);
 
-    document.cookie = 'aichef_conv=1; path=/; domain=.aichef.pro; max-age=2592000; SameSite=Lax; Secure';
-  })();
+  // 2) CONTAR LA CONVERSIÓN.
+  //    Sólo si hay redirección de éxito Y veníamos de un alta. Un login normal
+  //    llega igualmente a ?success=login, y por eso la URL sola no basta.
+  if (location.search.indexOf('success=login') === -1) return;
+  if (!leer(INTENCION)) return;             // era un login, no un registro
+  if (leer(HECHO)) return;                   // ya contado en este navegador
+  if (typeof gtag !== 'function') return;    // la etiqueta base no cargó
+
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17829651892/-p23CMHO5docELTL67VC',
+    'value': 1.0,
+    'currency': 'EUR'
+  });
+
+  guardar(INTENCION, '', 0);                 // consumida
+  guardar(HECHO, '1', 63072000);             // 2 años: un alta por navegador
+})();
 </script>
 ```
 
-**Dos diferencias con el fragmento que da Google, y las dos importan:**
+### Comportamiento, caso por caso (validado en el navegador)
 
-1. **El candado antirebote.** El de Google dispara en CADA carga de la página:
-   un F5 o un «atrás» cuentan otra alta. Con registros gratuitos eso infla la
-   cifra y ensucia el aprendizaje de Smart Bidding.
-2. **La comprobación de `gtag`.** Si el Snippet A no cargara (bloqueador, fallo
-   de red), el código de Google lanzaría un error de JS en mitad de la página de
-   confirmación. Este no mide y sigue.
+| Escenario | ¿Cuenta? |
+|---|---|
+| Alta nueva desde el modal de registro | **Sí** ✅ |
+| Login de un usuario ya existente | No ✅ |
+| Alta y luego F5 / botón atrás | No ✅ (candado `aichef_conv`) |
+| Navegación normal por la app | No ✅ |
+| Abre el modal de alta y desiste | No ✅ |
+
+### Tres diferencias con el fragmento que da Google, y las tres importan
+
+1. **No dispara en cada carga.** El de Google cuenta una conversión cada vez que
+   se carga la página. Aquí un F5 contaría otra alta e inflaría la señal con la
+   que aprende Smart Bidding.
+2. **Distingue alta de login.** Sin la marca de intención, cada vez que un
+   cliente existente entrase desde un anuncio contaría como registro nuevo.
+3. **Comprueba que `gtag` exista.** Si un bloqueador impide cargar la etiqueta
+   base, el código de Google lanzaría un error de JS en mitad de la app. Este no
+   mide y sigue.
+
+> **Punto frágil, para que quede escrito**: si Pickaxe algún día pone un solo
+> campo de contraseña en el alta (sin confirmación), la señal estructural deja de
+> funcionar y sólo quedaría el match por texto. Si las conversiones caen a cero
+> de golpe sin motivo, mirar esto lo primero.
 
 > El Snippet A tiene que estar puesto **también**, o no existe `gtag` cuando
 > corre el B y este falla en silencio.
 
 ---
 
-## ⚠️ Lo único que queda por confirmar
+## Limpieza pendiente
 
-**¿El alta GRATUITA pasa por una «Confirmation Page» de Pickaxe?**
+1. **Borrar la cuenta de prueba** `test-gads-20260802@mailinator.com`, creada el
+   2026-08-02 para recorrer el flujo de alta.
+2. **Vaciar el campo antiguo de confirmación** de Pickaxe: tiene la etiqueta de
+   Google pelada, sin Consent Mode y **sin evento**, así que no mide nada y sólo
+   carga la etiqueta una segunda vez.
+3. `Confirmation Page Header` y `Confirmation Page Footer` se quedan **vacíos**:
+   no intervienen en el registro gratuito.
 
-Los campos se describen como *«product confirmation pages»*, que suena a
-**compra**, no a registro. Si el alta gratuita no pasa por ahí, **el Snippet B
-no se disparará nunca en los registros** y la campaña seguirá sin medir nada.
+## Ya había un GA4 en la plataforma
 
-- **Si pasa** → ya está, no hay más que hacer.
-- **Si no pasa** → hay que disparar el evento en la **primera visita
-  autenticada** desde el campo **Body**. Para escribirlo hace falta saber cómo
-  marca Pickaxe que hay sesión iniciada: una clase en el `<body>`, una variable
-  global, una ruta concreta tras el login… Con eso, son 6 líneas.
+Al inspeccionar `app.aichef.pro` aparecieron dos etiquetas conviviendo:
 
-Forma rápida de salir de dudas: date de alta con un correo de prueba en
-`app.aichef.pro` y mira **si la URL cambia a algo tipo `/confirmation`,
-`/welcome` o similar** en algún momento del proceso.
+- **`G-KVMQGZ1PH4`** — una propiedad de **Google Analytics 4** que ya estaba
+  (cookies `_ga` y `_ga_KVMQGZ1PH4`). No la hemos tocado.
+- **`AW-17829651892`** — la nuestra, del Snippet A.
+
+No entran en conflicto. Pero conviene saber que existe: si algún día se quiere
+importar conversiones desde GA4 en vez de medirlas con la etiqueta de Ads, la
+propiedad ya está ahí. Ojo con no acabar contando la misma alta dos veces.
 
 ---
 
