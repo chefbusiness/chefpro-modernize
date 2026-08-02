@@ -1,6 +1,12 @@
 # Google Ads en Pickaxe — qué pegar y dónde
 
 > ID de la etiqueta: **`AW-17829651892`** · 2026-08-02.
+> Etiqueta del evento de registro: **`AW-17829651892/-p23CMHO5docELTL67VC`**
+>
+> **Estado**: Snippet A ✅ pegado y verificado en vivo en `app.aichef.pro`.
+> Snippet B ⬅ pendiente de pegar en `Confirmation Page Header`.
+> Hay un **campo antiguo de confirmación** en Pickaxe con la etiqueta de Google
+> pelada (sin Consent Mode y **sin evento**, o sea que no mide nada): vaciarlo.
 > **La campaña es solo para el mercado ESPAÑOL** (decisión de John, 2026-08-02),
 > así que esto se hace **únicamente en el workspace español** («AI Chef Pro -
 > Español», el de `app.aichef.pro`). Los otros seis workspaces (en, fr, it, de,
@@ -94,21 +100,40 @@ code → Header`.
 Mismo sitio, campo **Confirmation Page Header**. Este es el que **cuenta la
 conversión**. Lleva un candado para no contarla dos veces si el usuario recarga.
 
+Acción de conversión creada el 2026-08-02: **«Registro»**, evento manual,
+categoría Registro, marcada como **Principal**. Su etiqueta ya está puesta abajo.
+
 ```html
+<!-- Conversión "Registro" — AI Chef Pro -->
 <script>
   (function () {
-    if (/(?:^|; )aichef_conv=1/.test(document.cookie)) return;   // antirebote
+    // Antirebote: una conversión por usuario cada 30 días, aunque recargue
+    // la página o vuelva a entrar. Sin esto, un F5 cuenta dos altas.
+    if (/(?:^|; )aichef_conv=1/.test(document.cookie)) return;
+
+    // gtag lo define el Snippet A del campo Header. Si por lo que sea no
+    // estuviera, no reventamos la página: simplemente no se mide.
+    if (typeof gtag !== 'function') return;
 
     gtag('event', 'conversion', {
-      send_to: 'PEGA_AQUI_TU_ETIQUETA',   // <-- AW-17829651892/AbC-D_efGhIjKlMnOp
-      value: 0.0,
-      currency: 'EUR'
+      'send_to': 'AW-17829651892/-p23CMHO5docELTL67VC',
+      'value': 1.0,
+      'currency': 'EUR'
     });
 
     document.cookie = 'aichef_conv=1; path=/; domain=.aichef.pro; max-age=2592000; SameSite=Lax; Secure';
   })();
 </script>
 ```
+
+**Dos diferencias con el fragmento que da Google, y las dos importan:**
+
+1. **El candado antirebote.** El de Google dispara en CADA carga de la página:
+   un F5 o un «atrás» cuentan otra alta. Con registros gratuitos eso infla la
+   cifra y ensucia el aprendizaje de Smart Bidding.
+2. **La comprobación de `gtag`.** Si el Snippet A no cargara (bloqueador, fallo
+   de red), el código de Google lanzaría un error de JS en mitad de la página de
+   confirmación. Este no mide y sigue.
 
 > El Snippet A tiene que estar puesto **también**, o no existe `gtag` cuando
 > corre el B y este falla en silencio.
