@@ -3,10 +3,19 @@
 > ID de la etiqueta: **`AW-17829651892`** · 2026-08-02.
 > Etiqueta del evento de registro: **`AW-17829651892/-p23CMHO5docELTL67VC`**
 >
-> **Estado**: Snippet A ✅ pegado y verificado en vivo en `app.aichef.pro`.
-> Snippet B ⬅ pendiente de pegar en `Confirmation Page Header`.
-> Hay un **campo antiguo de confirmación** en Pickaxe con la etiqueta de Google
-> pelada (sin Consent Mode y **sin evento**, o sea que no mide nada): vaciarlo.
+> **ESTADO: OPERATIVO** (2026-08-03). Probado de punta a punta contra producción
+> con navegador: un alta nueva envía la conversión a Google
+> (`label=-p23CMHO5docELTL67VC`, `value=1 EUR`, `gcs=G111`, HTTP 200) y un login
+> de usuario existente **no dispara nada**, ni siquiera borrando el candado a
+> propósito. En Google Ads la acción *Registro* pasó a **Activa** y la campaña
+> la usa (1 de 1), sustituyendo a *Vistas de una página*, que estaba marcada
+> como principal, **inactiva y con 0 conversiones**: la campaña llevaba
+> optimizando hacia una señal que nunca llegaba.
+>
+> Limpieza pendiente: borrar las cuentas de prueba
+> `test-gads-20260802@mailinator.com` y `test-gads-b-20260803@mailinator.com`, y
+> vaciar el **campo antiguo de confirmación** de Pickaxe (etiqueta pelada, sin
+> Consent Mode y sin evento: no mide nada y carga la etiqueta por segunda vez).
 > **La campaña es solo para el mercado ESPAÑOL** (decisión de John, 2026-08-02),
 > así que esto se hace **únicamente en el workspace español** («AI Chef Pro -
 > Español», el de `app.aichef.pro`). Los otros seis workspaces (en, fr, it, de,
@@ -229,6 +238,37 @@ importar conversiones desde GA4 en vez de medirlas con la etiqueta de Ads, la
 propiedad ya está ahí. Ojo con no acabar contando la misma alta dos veces.
 
 ---
+
+## La campaña optimizaba hacia una señal muerta
+
+Descubierto el 2026-08-03 al revisar *Objetivos → Conversiones → Resumen*. La
+campaña «IA para Chefs Profesionales» (Máximo rendimiento, 5 €/día, Maximiza las
+conversiones) tenía como objetivo **«Vistas de una página»**: marcada como
+**principal**, usada por **1 de 1 campañas**, en estado **Inactivo** y con
+**0,00 conversiones**. Normal: el sitio no tuvo ninguna etiqueta instalada hasta
+este mismo día, así que Smart Bidding nunca recibió una sola señal con la que
+aprender y repartía el presupuesto a ciegas.
+
+Corregido: la campaña usa ahora **Registros** como objetivo específico, y
+*Vistas de una página* y *Suscripción* quedan fuera. Quedan en la cuenta 3
+acciones viejas en la categoría *Suscripción* que tampoco han recibido datos
+nunca; no las usa ninguna campaña, pero conviene revisarlas.
+
+**Aviso para las próximas semanas**: con 5 €/día el volumen va a estar muy por
+debajo de las ~30 conversiones/mes que Smart Bidding necesita para afinar. No
+tocar puja ni presupuesto durante 2-3 semanas: cada cambio reinicia el
+aprendizaje. La diferencia respecto a antes es que ahora la señal es real.
+
+## Otra vía, más robusta, si algún día hace falta
+
+Durante la prueba se vio que **Pickaxe emite por su cuenta un evento `sign_up`**
+(`data=event=sign_up;method=email`) al completarse el alta, y **no lo emite al
+iniciar sesión**. Es una señal más limpia que contar campos de contraseña.
+
+No se ha cambiado porque lo actual está probado y funciona, pero si Pickaxe
+altera el formulario de registro, la forma de blindarlo es enganchar
+`dataLayer.push` y marcar la intención al ver ese `sign_up`, en vez de por el
+número de campos de contraseña.
 
 ## Comprobación cuando esté puesto
 
