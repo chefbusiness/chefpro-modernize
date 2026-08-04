@@ -1,236 +1,82 @@
 ---
-title: "Sous Vide: Concepto y Definición"
-description: "Descubre qué es el sous vide: técnica de cocción al vacío inventada por Georges Pralus en 1974. Equipos, tablas de temperatura/tiempos, proceso paso a paso y…"
+title: "Sous vide: qué es, equipo, tiempos y seguridad alimentaria"
+description: "Descubre el origen del sous vide, su funcionamiento, los equipos necesarios y una guía paso a paso con tablas de temperaturas y errores comunes."
 pubDate: 2026-03-12
-modDate: 2026-06-28
+modDate: 2026-08-04
 category: glosario
 image: /blog-assets/2026/03/sousvide-featured.jpg
 imageAlt: "Sous Vide: Concepto y Definición"
 lang: es
 wpId: 3204
+faq:
+  - q: "¿Qué es la técnica sous vide?"
+    a: "Es una cocción en la que el alimento se introduce en una bolsa sellada al vacío y se sumerge en agua a temperatura exacta y constante, controlada por un termocirculador."
+  - q: "¿Qué es el sous vide?"
+    a: "La expresión francesa significa literalmente «al vacío», y en cocina se refiere tanto al método de envasado como al sistema de cocción que aprovecha ese vacío para transmitir el calor de forma uniforme."
+  - q: "¿Cuánto cuesta un sous vide?"
+    a: "Sumando la gama de entrada que se detalla en el artículo —roner por debajo de 150 €, envasadora de campana de 400‑600 € y un paquete de bolsas de 10‑20 €— montar el equipo básico para hostelería sale por unos 550‑800 €. Los equipos profesionales más robustos superan esa cifra con holgura. La inversión se amortiza con la reducción de mermas y la estandarización de procesos."
+  - q: "¿Cómo se hace el sous vide?"
+    a: "Se prepara el alimento, se envasa al vacío, se sumerge en el baño de agua a la temperatura deseada durante el tiempo calculado según el grosor, y se termina con un sellado en sartén o plancha para desarrollar la costra."
+  - q: "¿Sous vide es peligroso?"
+    a: "No si se respetan las combinaciones tiempo‑temperatura de pasteurización y se enfría rápidamente lo que no se sirve al momento. El riesgo aparece cuando se cocina a baja temperatura sin control ni registro."
+  - q: "¿Es fácil la técnica sous vide para principiantes?"
+    a: "Sí, porque elimina la posibilidad de pasarse de punto. Con una tabla de temperaturas y un temporizador, un cocinero novel obtiene resultados más consistentes que con muchos métodos tradicionales."
+  - q: "¿Qué pasa si la bolsa flota durante la cocción?"
+    a: "Significa que hay aire atrapado o el sellado es defectuoso. La pieza no cocina de manera uniforme y pueden aparecer puntos fríos. Hay que sacar la bolsa, revisar el cierre y repetir el vacío."
+  - q: "¿Se puede cocinar sous vide sin envasadora?"
+    a: "Sí, usando bolsas con cierre hermético y la técnica de desplazamiento de agua. No es tan eficaz como el vacío de campana, pero permite experimentar con cocciones cortas y piezas sólidas."
+  - q: "¿Qué diferencia hay entre sous vide y cocción a baja temperatura?"
+    a: "El sous vide es una técnica concreta de cocción a baja temperatura que utiliza vacío y baño de agua. La cocción a baja temperatura es la familia más amplia, que incluye también hornos, asados y confitados."
+  - q: "¿El sous vide sirve para todo tipo de alimentos?"
+    a: "No. Es ideal para proteínas, verduras de raíz e infusiones, pero no para preparaciones que necesitan evaporación, fritura o gratín. No dora ni concentra caldos."
+  - q: "¿Por qué mi carne queda harinosa tras muchas horas?"
+    a: "Aunque la temperatura no suba, el tiempo excesivo degrada las proteínas y las enzimas rompen la estructura, dando una textura pastosa. Respeta los tiempos máximos recomendados para cada corte."
+  - q: "¿Puedo abrir la bolsa durante la cocción para comprobar el punto?"
+    a: "No es recomendable. Rompes el vacío, pierdes temperatura y contaminas el interior. Confía en el tiempo y la temperatura; si necesitas verificar, hazlo al final del ciclo."
 ---
-
-<p>El <strong>sous vide</strong> (pronunciado «suvíd», del francés «al vacío») es una de las técnicas culinarias más revolucionarias del siglo XX. Desarrollada en la década de 1970 por el chef francés Georges Pralus, esta técnica de cocción a baja temperatura en baño de agua controlada ha transformado la alta cocina mundial y, gracias a la democratización de los equipos, se ha vuelto accesible también para cocineros domésticos exigentes.</p>
-<p>En este artículo del glosario culinario de AI Chef Pro, exploraremos qué es exactamente el sous vide, su historia desde los primeros experimentos científicos hasta su adopción masiva, los equipos necesarios, técnicas profesionales, y cómo esta tecnología ha redefinido los estándares de la cocción moderna.</p>
-<h2>¿Qué es el Sous Vide?</h2>
-<p>El <strong>sous vide</strong> es una <strong>técnica de cocción en la que los alimentos se sellan al vacío en bolsas herméticas y se cocinan sumergidos en un baño de agua a temperatura controlada con precisión durante períodos prolongados</strong>. A diferencia de los métodos tradicionales de cocción donde la temperatura es mucho más alta y variable, el sous vide utiliza temperaturas precisas (generalmente entre 50°C y 85°C) mantenidas constantes durante horas.</p>
-<p>Esta técnica, también conocida como <strong>cocción LTLT</strong> (Low Temperature Long Time &#8211; Baja Temperatura Tiempo Prolongado), ofrece un control sin precedentes sobre el punto de cocción, eliminando la posibilidad de sobrecocción y garantizando resultados consistentes y reproducibles.</p>
-<h3>Características fundamentales:</h3>
-<ul>
-<li><strong>Precisión extrema:</strong> Control de temperatura con variaciones de ±0.1°C a ±0.5°C.</li>
-<li><strong>Cocción uniforme:</strong> El alimento alcanza la temperatura deseada en todo su volumen simultáneamente.</li>
-<li><strong>Conservación de jugos:</strong> El sellado al vacío retiene el 100% de los jugos naturales.</li>
-<li><strong>Imposibilidad de sobrecocinar:</strong> Una vez alcanzada la temperatura objetivo, el alimento se mantiene perfecto durante horas.</li>
-<li><strong>Reproducibilidad:</strong> Resultados idénticos cada vez que se repite una receta.</li>
-</ul>
-<p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/sousvide-resultado.jpg" alt="Corte perfecto de carne cocinada sous vide mostrando interior rosa uniforme" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
-<h2>Historia del Sous Vide</h2>
-<h3>Primeros Antecedentes (1799)</h3>
-<p>El concepto de cocción a baja temperatura en medio líquido tiene raíces científicas tempranas. En <strong>1799</strong>, Sir Benjamin Thompson (conde de Rumford) describió en sus experimentos científicos una forma de cocinar con aire caliente a temperatura controlada, aunque no utilizó agua ni sellado al vacío. Fue el primer acercamiento documentado a la cocción controlada por temperatura.</p>
-<h3>La Revolución de Georges Pralus (1974)</h3>
-<p>La técnica moderna de sous vide nació en <strong>1974</strong> cuando el chef francés <strong>Georges Pralus</strong>, trabajando en el famoso restaurante Troisgros en Roanne (Francia), buscaba una forma de cocinar foie gras sin que perdiera su forma y textura. Al cocinarlo en bolsas selladas al vacío sumergidas en agua a temperatura controlada, descubrió que:</p>
-<ul>
-<li>El foie gras mantenía su forma perfecta.</li>
-<li>Perdía mínima grasa (menos del 5% vs 30-40% tradicional).</li>
-<li>La textura era superior y más consistente.</li>
-</ul>
-<p>Pralus desarrolló más de <strong>600 recetas</strong> entre 1974 y 1980, estableciendo las bases técnicas del sous vide moderno.</p>
-<h3>Bruno Goussault y la Ciencia del Sous Vide</h3>
-<p>Paralelamente, el científico de alimentos <strong>Bruno Goussault</strong> (fundador de CREA &#8211; Culinary Research &#038; Education Academy) investigaba las aplicaciones científicas de la cocción al vacío. En 1981, Pralus y Goussault colaboraron para combinar el arte culinario con la ciencia alimentaria, desarrollando tablas de tiempos y temperaturas precisas para diferentes alimentos.</p>
-<h3>Democratización (Década de 2010)</h3>
-<p>Hasta principios de los 2000, el sous vide era exclusivo de restaurantes de alta cocina con equipos costosos. La revolución llegó con:</p>
-<ul>
-<li><strong>2013:</strong> Lanzamiento de circuladores domésticos accesibles (Anova, Joule).</li>
-<li><strong>2015-2020:</strong> Expansión masiva del mercado doméstico.</li>
-<li><strong>Actualidad:</strong> Disponible en electrodomésticos multifunción (hornos, ollas).</li>
-</ul>
-<h2>Equipos Necesarios para Sous Vide</h2>
-<h3>1. Termocirculador (Roner)</h3>
-<p>El corazón del sistema. Calienta el agua y la mantiene circulando a temperatura constante.</p>
-<p><strong>Tipos:</strong></p>
-<ul>
-<li><strong>De inmersión:</strong> Se acoplan a cualquier recipiente (ollas, cubetas). Más versátiles y económicos. Marcas: Anova, Joule, Wancle.</li>
-<li><strong>Independientes:</strong> Baños de agua con circulador integrado. Más precisos y profesionales. Marcas: Sammic, Julabo, PolyScience.</li>
-</ul>
-<p><strong>Características a considerar:</strong></p>
-<ul>
-<li>Potencia (700-1500W).</li>
-<li>Capacidad máxima de agua (10-120 litros).</li>
-<li>Precisión (±0.1°C a ±0.5°C).</li>
-<li>Conectividad (WiFi/Bluetooth para control remoto).</li>
-</ul>
-<h3>2. Envasadora al Vacío</h3>
-<p>Sella los alimentos en bolsas herméticas eliminando el aire.</p>
-<p><strong>Tipos:</strong></p>
-<ul>
-<li><strong>De cámara:</strong> Profesionales, vacían el aire de la cámara completa. Ideales para líquidos.</li>
-<li><strong>De externo (domésticas):</strong> Succionan el aire de la bolsa. No funcionan bien con líquidos.</li>
-</ul>
-<p><strong>Alternativas caseras:</strong> Método de desplazamiento de agua (sumergir bolsa dejando abierta una esquina para que el agua expulse el aire).</p>
-<h3>3. Bolsas de Vacío</h3>
-<p><strong>Obligatorio:</strong> Bolsas específicas para sous vide (polietileno LDPE).</p>
-<ul>
-<li>Resistentes hasta 100°C (algunas hasta 120°C).</li>
-<li>Libres de BPA y ftalatos.</li>
-<li>Reutilizables (si se lavan bien).</li>
-</ul>
-<p><strong>NO usar:</strong> Bolsas Ziploc domésticas regulares (no soportan el calor prolongado).</p>
-<h3>4. Recipiente para el Baño</h3>
-<p>Cualquier olla, cubeta o recipiente que:</p>
-<ul>
-<li>Soporte la temperatura (plástico resistente, acero inoxidable).</li>
-<li>Tenga capacidad suficiente para el alimento + circulación de agua.</li>
-<li>Permita tapar para minimizar evaporación.</li>
-</ul>
-<p>  <img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/03/sousvide-envasado.jpg" alt="Máquina de envasado al vacío sellando salmón con hierbas" style="width: 100%; max-width: 800px; display: block; margin: 30px auto; border-radius: 8px;">  </p>
-<h2>Tablas de Temperatura y Tiempos</h2>
-<p>El sous vide es ciencia aplicada a la cocina. Estas tablas son referencias estándar:</p>
-<h3>Carnes Rojas</h3>
-<div class="table-scroll"><table style="width: 100%; border-collapse: collapse; margin: 30px 0; border: 1px solid #ddd;">
-<thead>
-<tr style="background: #000000; color: white;">
-<th style="padding: 14px; border: 1px solid #ddd;">Punto</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Temperatura</th>
-<th style="padding: 14px; border: 1px solid #ddd;">Tiempo (grosor 2.5cm)</th>
-</tr>
-</thead>
-<tbody>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">Muy poco hecho (Rare)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">50-52°C</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;">Poco hecho (Medium Rare)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">54-56°C</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">En su punto (Medium)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">57-60°C</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
-</tr>
-<tr>
-<td style="padding: 12px; border: 1px solid #ddd;">Hecho (Medium Well)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">62-65°C</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
-</tr>
-<tr style="background: #f9f9f9;">
-<td style="padding: 12px; border: 1px solid #ddd;">Muy hecho (Well Done)</td>
-<td style="padding: 12px; border: 1px solid #ddd;">66-70°C</td>
-<td style="padding: 12px; border: 1px solid #ddd;">1-3 horas</td>
-</tr>
-</tbody>
-</table></div>
-<h3>Aves</h3>
-<ul>
-<li><strong>Pechna de pollo:</strong> 63-65°C durante 1-4 horas (jugosa y segura).</li>
-<li><strong>Pato:</strong> 57-60°C durante 2-4 horas.</li>
-<li><strong>Pavo:</strong> 62-65°C durante 2-6 horas según grosor.</li>
-</ul>
-<h3>Pescados</h3>
-<ul>
-<li><strong>Pescado blanco delicado:</strong> 48-52°C durante 30-45 minutos.</li>
-<li><strong>Salmón:</strong> 50-52°C durante 30-45 minutos.</li>
-<li><strong>Atún:</strong> 48-52°C durante 30-45 minutos.</li>
-<li><strong>Mariscos:</strong> 58-60°C durante 15-30 minutos.</li>
-</ul>
-<h3>Huevos</h3>
-<ul>
-<li><strong>64°C:</strong> Yema cremosa, clara apenas cuajada.</li>
-<li><strong>65°C:</strong> Yema fundente, clara suave.</li>
-<li><strong>66°C:</strong> Yema casi cuajada, clara firme.</li>
-<li><strong>75°C:</strong> Huevo duro perfecto (sin anillo gris).</li>
-</ul>
-<h3>Verduras</h3>
-<p>Las verduras requieren temperaturas más altas debido a su estructura celulosa:</p>
-<ul>
-<li><strong>Zanahoria:</strong> 85-90°C durante 1-2 horas.</li>
-<li><strong>Patata:</strong> 85-90°C durante 1-3 horas.</li>
-<li><strong>Espárragos:</strong> 85°C durante 15-30 minutos.</li>
-</ul>
-<h2>Proceso Paso a Paso</h2>
-<h3>Fase 1: Preparación</h3>
-<ol>
-<li><strong>Condimentar:</strong> Sazonar el alimento (sal, pimienta, hierbas, especias).</li>
-<li><strong>Añadir grasa:</strong> Opcional &#8211; aceite de oliva, mantequilla, aceite de sésamo para mejorar conducción térmica.</li>
-<li><strong>Colocar en bolsa:</strong> Dejar espacio para sellado.</li>
-</ol>
-<h3>Fase 2: Envasado</h3>
-<ol>
-<li><strong>Vaciar aire:</strong> Usar envasadora o método de desplazamiento de agua.</li>
-<li><strong>Sellar:</strong> Asegurar cierre hermético.</li>
-<li><strong>Verificar:</strong> No debe haber fugas.</li>
-</ol>
-<h3>Fase 3: Cocción</h3>
-<ol>
-<li><strong>Calentar agua:</strong> Programar temperatura objetivo.</li>
-<li><strong>Sumergir:</strong> Introducir la bolsa completamente bajo el agua.</li>
-<li><strong>Asegurar:</strong> Usar pinzas o pesos si flota.</li>
-<li><strong>Esperar:</strong> Dejar cocinar según tabla de tiempos.</li>
-</ol>
-<h3>Fase 4: Finalización (Crucial)</h3>
-<p>El sous vide NO dora ni crea textura crujiente. Para acabar:</p>
-<p><strong>Sellado rápido (Searing):</strong></p>
-<ul>
-<li>Sartén muy caliente (200°C+) o plancha.</li>
-<li>30-60 segundos por lado.</li>
-<li>Aceite de alto punto de humo (girasol, cacahuete).</li>
-</ul>
-<p><strong>Chamuscar con soplete:</strong></p>
-<ul>
-<li>Ideal para carnes gruesas.</li>
-<li>Control preciso del dorado.</li>
-</ul>
-<p><strong>Acabado en horno muy caliente:</strong></p>
-<ul>
-<li>250°C, función grill.</li>
-<li>1-2 minutos.</li>
-</ul>
-<h2>Ventajas del Sous Vide</h2>
-<h3>Para el Chef Profesional</h3>
-<ul>
-<li><strong>Planificación:</strong> Preparar con días de antelación, acabar al momento.</li>
-<li><strong>Consistencia:</strong> Cada plato idéntico, independientemente del cocinero.</li>
-<li><strong>Rendimiento:</strong> Menor merma (pérdida de peso del 5-10% vs 20-30% tradicional).</li>
-<li><strong>Calidad:</strong> Texturas imposibles con métodos tradicionales.</li>
-</ul>
-<h3>Para el Cocinero Casero</h3>
-<ul>
-<li><strong>Imposible fallar:</strong> El alimento no se puede sobrecocinar por tiempo.</li>
-<li><strong>Conveniencia:</strong> Preparar con antelación, terminar en minutos.</li>
-<li><strong>Economía:</strong> Cortes económicos quedan tiernos como los premium.</li>
-<li><strong>Sabor superior:</strong> Más jugoso y sabroso que métodos tradicionales.</li>
-</ul>
-<h2>Limitaciones y Precauciones</h2>
-<h3>Seguridad Alimentaria</h3>
-<p>El sous vide opera en la <strong>«zona de peligro»</strong> bacteriana (4-60°C) durante períodos prolongados:</p>
-<ul>
-<li>Siempre usar alimentos frescos de calidad.</li>
-<li>No cocinar por debajo de tiempos mínimos de pasteurización.</li>
-<li>Enfriar rápidamente si no se consume inmediatamente (abatidor de temperatura).</li>
-<li>Conservar refrigerado máximo 3-5 días tras cocción.</li>
-</ul>
-<h3>Limitaciones Culinarias</h3>
-<ul>
-<li><strong>No dorar:</strong> Requiere acabado adicional para textura exterior.</li>
-<li><strong>Tiempos:</strong> No es rápido (requiere planificación).</li>
-<li><strong>Equipos:</strong> Inversión inicial en circulador y envasadora.</li>
-</ul>
-<h2>Preguntas Frecuentes sobre Sous Vide</h2>
-<p><strong>¿Es seguro cocinar a bajas temperaturas?</strong><br /> Sí, si se siguen tiempos mínimos de pasteurización. La combinación de tiempo + temperatura mata bacterias patógenas. Consultar tablas de pasteurización según grosor.</p>
-<p><strong>¿Las bolsas de plástico son seguras?</strong><br /> Usar solo bolsas específicas para sous vide (LDPE). No usar bolsas domésticas regulares que pueden liberar químicos al calentarse.</p>
-<p><strong>¿Puedo cocinar congelado?</strong><br /> Sí, añadir tiempo extra (generalmente el doble) o descongelar primero.</p>
-<p><strong>¿Por qué mi carne sale gris?</strong><br /> Probablemente temperatura demasiado alta o tiempo excesivo. Seguir tablas específicas.</p>
-<p><strong>¿Vale la pena para uso doméstico?</strong><br /> Si valoras la consistencia, la jugosidad y preparar con antelación: absolutamente. Los cortes económicos quedan tiernos, ahorrando dinero a largo plazo.</p>
-<h2>Conclusión</h2>
-<p>El <strong>sous vide</strong> representa la perfecta unión entre ciencia y arte culinario. Desde los experimentos de Georges Pralus en 1974 hasta su democratización actual, esta técnica ha revolucionado nuestra forma de entender la cocción, ofreciendo un control que los métodos tradicionales simplemente no pueden igualar.</p>
-<p>Su capacidad para transformar cortes económicos en experiencias gastronómicas memorables, su consistencia infalible, y la conveniencia de poder preparar con antelación lo han convertido en una herramienta indispensable tanto en restaurantes de alta cocina como en cocinas domésticas exigentes.</p>
-<p>El sous vide no reemplaza las técnicas tradicionales, las complementa. Es una herramienta más en el arsenal del cocinero moderno, una que permite alcanzar resultados que de otro modo serían imposibles. Como dijo el chef Thomas Keller: «El sous vide no es trampa, es inteligencia aplicada a la cocina.»</p>
-<div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
-<h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Técnicas Modernas con AI Chef Pro</h3>
-<p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para técnicas de cocina avanzadas.<br />     Tiempos, temperaturas y creatividad potenciada.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=sous-vide-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR GRATIS AHORA →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Sin tarjeta de crédito • 48.733+ recetas generadas   </p>
-</p></div>
-<p><strong>¿Listo para dominar el sous vide y otras técnicas?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=sous-vide-concepto-definicion">AI Chef Pro</a>.</p>
+<p class="wp-block-paragraph">El sous vide —literalmente «al vacío» en francés, y se pronuncia «suvíd»— es una técnica de cocción que consiste en cocinar alimentos dentro de una bolsa sellada al vacío, sumergida en un baño de agua a temperatura exacta y constante. Lo que la hace única es el control absoluto sobre el punto final del producto: la pieza nunca se pasa de temperatura, porque el agua no puede calentarla más allá del valor que tú has fijado.</p>
+<h2 class="wp-block-heading">Cómo funciona el sous vide</h2>
+<p class="wp-block-paragraph">El sistema se apoya en tres elementos que trabajan juntos. El envasado al vacío retira el aire de la bolsa, elimina el oxígeno que oxida y asegura un contacto térmico perfecto entre el agua y la superficie del alimento. El baño de agua actúa como medio transmisor del calor, mucho más eficiente que el aire de un horno. Y el <a href="https://aichef.pro/blog/roner-concepto-y-definicion-2">roner</a> —el termocirculador— calienta el agua, la mantiene en el grado exacto que le pides y la mueve para que la temperatura sea uniforme en todo el recipiente. Los equipos actuales trabajan con precisiones de ±0,1 °C, y la horquilla habitual va desde unos 45 °C hasta 95 °C.</p>
+<h2 class="wp-block-heading">Un poco de historia</h2>
+<p class="wp-block-paragraph">El sous vide nació en la cocina profesional, no en un laboratorio doméstico. En 1974, el chef francés Georges Pralus buscaba una forma de cocinar foie gras reduciendo al mínimo la merma, y descubrió que envasarlo al vacío y cocinarlo a temperatura controlada conservaba su forma y casi todo su peso. Poco después, el científico Bruno Goussault aportó el rigor: sistematizó las combinaciones de tiempo y temperatura necesarias para pasteurizar los alimentos sin perder cualidades organolépticas. Durante décadas fue un recurso de alta cocina, y no fue hasta los años 2010, con la llegada de termocirculadores asequibles, cuando la técnica se democratizó y saltó a restaurantes de todos los tamaños y a cocinas domésticas.</p>
+<h2 class="wp-block-heading">¿Qué equipo necesitas y cuánto cuesta empezar?</h2>
+<p class="wp-block-paragraph">Para trabajar al vacío en un restaurante necesitas tres elementos básicos y uno opcional muy recomendable.</p>
+<ul class="wp-block-list"><li><strong>Termocirculador o roner:</strong> es el corazón del sistema. Los modelos de entrada para hostelería ofrecen potencias de 1.200-1.500 W, precisión de décima y capacidad para mover volúmenes de agua de hasta 30-40 litros. Por menos de 150 € encuentras equipos funcionales; si saltas a gamas profesionales con motores más robustos y conectividad, el precio sube, pero ganas en fiabilidad para turnos largos y producción en lote.</li><li><strong>Envasadora al vacío:</strong> las de campana extraen el aire de la bolsa y de la cámara, y son las que necesitas para líquidos y preparaciones con marinada. Las domésticas de aspiración externa valen para piezas secas, pero en cocina profesional la campana marca la diferencia. Una envasadora de campana semiprofesional arranca en torno a 400-600 € y, bien cuidada, dura años.</li><li><strong>Bolsas:</strong> lisas o gofradas, de polietileno y poliamida, resistentes a la temperatura de trabajo. Un paquete de 100 bolsas de tamaño medio cuesta entre 10 y 20 €.</li><li><strong>Recipiente:</strong> una olla alta o un contenedor de policarbonato con tapa. Si produces mucho, una tapa que encaje el roner y minimice la evaporación te ahorra agua y electricidad.</li></ul>
+<p class="wp-block-paragraph">Si estás arrancando y no tienes envasadora, puedes usar bolsas con cierre hermético y la técnica de desplazamiento de agua: introduces el alimento en la bolsa, la sumerges lentamente dejando la abertura fuera, el agua empuja el aire hacia arriba y, cuando llega al borde, cierras el zip. No es lo mismo que un vacío de campana, pero es suficiente para empezar a experimentar con cocciones cortas.</p>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Pack Plantillas APPCC</h3><p class="mt-2 text-muted-foreground">APPCC y trazabilidad listos para inspección.</p><a href="/pack-appcc?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sous-vide-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Pack Plantillas APPCC por €14</a></aside>
+<h2 class="wp-block-heading">Tabla de temperaturas y tiempos de referencia</h2>
+<p class="wp-block-paragraph">Las cifras que vienen a continuación son puntos de partida probados. El tiempo real depende del <strong>grosor</strong> de la pieza y de si buscas pasteurizar o solo texturizar. Anota siempre en tu recetario grosor, temperatura y tiempo para que el resultado sea repetible entre turnos.</p>
+<p class="wp-block-paragraph">Dos avisos antes de usarla. Los rangos más bajos —el salmón a 45 °C, por ejemplo— <strong>no pasteurizan</strong>: sirven para textura, y exigen materia prima de calidad contrastada, tiempos cortos y consumo inmediato. Y los cortes muy colagenosos admiten dos rutas distintas: la de esta tabla (65 °C durante 24‑48 h, más melosa) o una más caliente y más corta, del orden de 75 °C durante 8‑12 h, que deja la fibra más marcada y es la que se usa cuando no hay margen para dejar el baño toda la noche.</p>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Producto</th><th>Temperatura</th><th>Tiempo orientativo</th><th>Resultado</th></tr></thead><tbody><tr><td>Solomillo de ternera</td><td>52‑55 °C</td><td>1‑2 h</td><td>Poco hecho, tierno, merma mínima</td></tr><tr><td>Entrecot de ternera</td><td>55‑58 °C</td><td>1‑3 h</td><td>Al punto, jugoso, listo para sellar</td></tr><tr><td>Carrilleras u osobuco</td><td>65 °C</td><td>24‑48 h</td><td>Colágeno convertido en gelatina, textura melosa</td></tr><tr><td>Pechuga de pollo</td><td>63‑65 °C</td><td>1‑2 h</td><td>Jugosa, pasteurizada, sin hebras secas</td></tr><tr><td>Muslo de pollo</td><td>74‑75 °C</td><td>2‑4 h</td><td>Tierno, se desprende del hueso, perfecto para desmenuzar</td></tr><tr><td>Cerdo (lomo o presa)</td><td>58‑62 °C</td><td>1‑4 h</td><td>Sonrosado y seguro, merma muy baja</td></tr><tr><td>Salmón</td><td>45‑50 °C</td><td>25‑45 min</td><td>Textura sedosa, translúcido en el centro</td></tr><tr><td>Pescado blanco (merluza, bacalao)</td><td>50‑55 °C</td><td>20‑40 min</td><td>Firme pero húmedo, las láminas intactas</td></tr><tr><td>Huevo (en cáscara, sin vacío)</td><td>63‑65 °C</td><td>45‑60 min</td><td>Clara cuajada suave, yema cremosa</td></tr><tr><td>Verduras de raíz (zanahoria, nabo)</td><td>83‑85 °C</td><td>1‑2 h</td><td>Tiernas sin deshacerse, sabor concentrado</td></tr></tbody></table></div></figure>
+<figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/08/sous-vide-bano-roner.jpg" alt="Un roner sujeto al borde de una cubeta gastronorm llena de agua con varias bolsas al vacío sumergidas y etiquetadas, en una cocina profesional" loading="lazy" /></figure>
+<h2 class="wp-block-heading">Las cinco formas de trabajar al vacío</h2>
+<p class="wp-block-paragraph">No todo el sous vide es «cocción larga a baja temperatura». En la cocina profesional conviven cinco enfoques, cada uno con su propósito.</p>
+<figure class="wp-block-table"><div class="table-scroll"><table><thead><tr><th>Técnica</th><th>Horquilla de temperatura</th><th>Para qué producto</th><th>Qué resuelve</th></tr></thead><tbody><tr><td>LTLT (Low Temperature, Long Time)</td><td>55‑70 °C</td><td>Carnes colagenosas, pescados grasos, vegetales</td><td>Texturas melosas, gelificación suave del colágeno, merma mínima</td></tr><tr><td>Pasteurización al vacío</td><td>Según producto, con tiempo suficiente</td><td>Aves, platos preparados, producciones en lote</td><td>Seguridad microbiológica sin sobrecocción; alarga la vida útil</td></tr><tr><td>HTST (High Temperature, Short Time)</td><td>70‑90 °C</td><td>Vegetales, hortalizas firmes y mariscos de carne dura (pulpo, calamar)</td><td>Cocción rápida, color vibrante, firmeza controlada. No es el rango de los pescados delicados: esos van a las temperaturas bajas de la tabla anterior</td></tr><tr><td>Infusión al vacío</td><td>Frío o temperatura suave (hasta 60 °C)</td><td>Frutas, hortalizas, proteínas con marinadas</td><td>Impregna sabores en profundidad, acorta marinados de horas a minutos</td></tr><tr><td>Regeneración controlada al vacío</td><td>La misma de la cocción original</td><td>Platos ya cocinados y abatidos</td><td>Recalienta sin resecar ni cambiar el punto; clave en catering y eventos</td></tr></tbody></table></div></figure>
+<h2 class="wp-block-heading">El proceso paso a paso</h2>
+<h3 class="wp-block-heading">Preparación y mise en place</h3>
+<p class="wp-block-paragraph">Todo empieza con una buena <a href="https://aichef.pro/blog/mise-en-place">mise en place</a>. Limpia y porciona las piezas, sécalas bien y, si llevan aromáticos, tenlos listos. El grosor uniforme es más importante que el peso: si una parte de la pechuga tiene el doble de espesor, el tiempo de cocción será el que marque el centro de esa zona, y el resto puede quedar recocido. En producción, corta piezas similares para que todas terminen a la vez.</p>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Kit de Escandallos Pro</h3><p class="mt-2 text-muted-foreground">Plantillas Excel para escandallar en minutos con food cost real.</p><a href="/kit-escandallos?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sous-vide-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Kit de Escandallos Pro por €12</a></aside>
+<h3 class="wp-block-heading">Envasado</h3>
+<p class="wp-block-paragraph">Coloca el alimento en la bolsa con los aromáticos (aceite, mantequilla, hierbas) en cantidad moderada; demasiado líquido puede interferir en el sellado. Si usas envasadora de campana, ajusta el vacío según el producto: un pescado delicado pide menos presión que un trozo de carne. La bolsa debe quedar pegada al alimento sin arrugas. Una bolsa mal sellada o con aire residual flota y genera puntos fríos que arruinan la transferencia térmica. Si flota, abre, revisa y repite.</p>
+<h3 class="wp-block-heading">Cocción</h3>
+<p class="wp-block-paragraph">Sumerge la bolsa en el baño precalentado a la temperatura exacta. El tiempo empieza a contar cuando el agua recupera la temperatura fijada tras la inmersión. En piezas de más de 5 cm de grosor, conviene añadir un margen de seguridad para que el centro alcance la temperatura objetivo. Durante la cocción, evita abrir la tapa constantemente; cada apertura dispara la evaporación y puede desestabilizar el termocirculador en equipos justos de potencia.</p>
+<h3 class="wp-block-heading">Acabado y sellado</h3>
+<p class="wp-block-paragraph">El sous vide no dora. La <a href="https://aichef.pro/blog/maillard-concepto-y-definicion-2">reacción de Maillard</a> necesita temperaturas superficiales muy por encima de los 100 °C, así que el sellado final en sartén, plancha o con soplete es obligatorio, no decorativo. Saca la pieza de la bolsa, sécala con papel —la humedad superficial es el enemigo de una buena costra— y márcala a fuego muy vivo durante unos segundos por cada lado. En servicio, puedes tener las piezas ya cocinadas y abatidas, y solo darles el golpe de calor antes de emplatar.</p>
+<figure class="wp-block-image size-large"><img decoding="async" src="/blog-assets/2026/08/sous-vide-sellado-plancha.jpg" alt="Un solomillo recién sacado de su bolsa de vacío dorándose en una plancha muy caliente, sujeto con pinzas, con la bolsa vacía al lado" loading="lazy" /></figure>
+<h2 class="wp-block-heading">Qué le pasa al alimento: colágeno, proteínas y merma</h2>
+<p class="wp-block-paragraph">El sous vide es, sobre todo, una herramienta de control de textura y rendimiento económico. El colágeno, que en un guiso tradicional se reblandece tras horas de hervor, aquí se convierte en gelatina de forma progresiva a partir de 60‑65 °C, y el proceso depende tanto de la temperatura como del tiempo. Por eso unas carrilleras a 65 °C durante 24 horas quedan melosas sin deshilacharse.</p>
+<p class="wp-block-paragraph">Las proteínas musculares se contraen con el calor y expulsan agua. Cuanto más subes la temperatura, más se contraen y más jugo pierde la pieza. Al fijar el baño justo en el punto que quieres, reduces esa contracción y, por tanto, las <a href="https://aichef.pro/blog/que-son-las-mermas-en-cocina">mermas</a>. La diferencia frente a un asado tradicional es grande y se ve en la báscula, pero no hay un porcentaje universal: depende del corte, del grosor y del punto final. Pesa la pieza en crudo y ya cocinada con los dos métodos durante un par de semanas y tendrás tu cifra, que es la única que te sirve para el <a href="https://aichef.pro/blog/escandallos-ia-cocina-profesional">escandallo</a>. Cada gramo que no se evapora es gramo que puedes vender, y ese cálculo no aparece en la ficha técnica de ninguna máquina.</p>
+<aside class="not-prose my-10 rounded-xl border border-accent/30 bg-accent/5 p-6"><p class="text-xs font-semibold uppercase tracking-wide text-accent">Producto digital · pago único, acceso de por vida</p><h3 class="mt-2 text-xl font-bold text-foreground">Tareas: Restaurante Creativo</h3><p class="mt-2 text-muted-foreground">Operativa para restaurantes de autor y creativos.</p><a href="/kit-tareas-restaurante-creativo?utm_source=blog&amp;utm_medium=banner&amp;utm_content=sous-vide-concepto-definicion" class="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-accent-foreground transition-opacity hover:opacity-90">Ver Tareas: Restaurante Creativo por €12</a></aside>
+<p class="wp-block-paragraph">Pero ojo: pasarse de tiempo también estropea. En piezas magras, demasiadas horas dan una textura harinosa o pastosa, aunque la temperatura no haya subido. Las enzimas siguen trabajando y degradan la estructura. Por eso la tabla de tiempos no es una sugerencia: es una receta.</p>
+<h2 class="wp-block-heading">Seguridad alimentaria en el sous vide</h2>
+<p class="wp-block-paragraph">La pregunta «¿es peligroso?» tiene una respuesta clara: no lo es si respetas las combinaciones de tiempo y temperatura que garantizan la pasteurización, y sí lo es si improvisas sin conocerlas. La zona de peligro microbiológico se sitúa aproximadamente entre 5 °C y 65 °C. Cocinar por debajo de 65 °C durante periodos largos exige saber qué estás haciendo: no basta con que la pieza esté «buena», hay que haber sostenido el centro a una temperatura suficiente el tiempo necesario para reducir la carga bacteriana a niveles seguros.</p>
+<p class="wp-block-paragraph">La pasteurización no es un umbral suelto; es una curva. Cuanto más alta es la temperatura, menos tiempo de mantenimiento hace falta: a 65 °C el centro de la pieza necesita sostenerse muy pocos minutos, y a 60 °C hablamos de bastante más de media hora. Ojo, ese es el tiempo <strong>a corazón</strong>, y empieza a contar cuando el centro ya ha subido: por eso la tabla de arriba cifra la pechuga en 1‑2 horas de baño y no en minutos. Existen tablas normalizadas que indican el tiempo de reducción 6D de Salmonella y otros patógenos para cada temperatura. Si produces en lote y no sirves al momento, el protocolo es: cocina, saca la bolsa, <a href="https://aichef.pro/blog/que-es-un-abatidor-de-temperatura">abatidor de temperatura</a> para bajar de 65 °C a menos de 3 °C en el menor tiempo posible, y conserva en refrigeración. Todo esto debe estar documentado en tu sistema de <a href="https://aichef.pro/blog/appcc-seguridad-alimentaria-ia-hosteleria">APPCC</a>, con registros de tiempo y temperatura. La trazabilidad del vacío es impecable si trabajas con rigor; si no, te estás jugando un problema serio.</p>
+<h2 class="wp-block-heading">Errores comunes que se pagan en el servicio</h2>
+<ul class="wp-block-list"><li><strong>Envasado deficiente:</strong> bolsa con aire, mal sellada o con restos de grasa en la zona de cierre. Flota, crea puntos fríos y la cocción es desigual. Si ves una bolsa flotando, no la des por buena.</li><li><strong>Almacenar mal tras la cocción:</strong> si la pieza no se consume de inmediato y no se abate, se queda en la zona de peligro. El enfriamiento debe ser rápido y hasta menos de 3 °C. Una nevera saturada no enfría igual.</li><li><strong>Tratar todas las proteínas igual:</strong> un solomillo no es un morcillo. Si aplicas 24 h a un corte magro, obtienes puré. Conoce el corte y su contenido de colágeno.</li><li><strong>No estandarizar:</strong> si cada cocinero pone «un rato» y «a ojo», el sous vide pierde su sentido. Anota grosor, temperatura y tiempo de cada preparación. Así construyes un recetario propio y eliminas la variabilidad entre turnos.</li><li><strong>Olvidar el sellado:</strong> servir una pechuga pálida directamente de la bolsa es un error de concepto. El dorado final no es opcional, es parte de la técnica.</li><li><strong>Demasiado líquido en la bolsa:</strong> los aromáticos suman, pero un exceso de aceite o vino puede dificultar el sellado y diluir los jugos propios del alimento.</li></ul>
+<h2 class="wp-block-heading">Lo que el sous vide no hace bien</h2>
+<p class="wp-block-paragraph">El sous vide es una herramienta extraordinaria, pero no es universal. No dora, no gratina, no evapora líquidos y no concentra sabores por reducción. No es la técnica ideal para un risotto, para una fritura crujiente o para un pan. Tampoco acelera la cocción de piezas muy colagenosas: las 48 h de un osobuco son 48 h, y no hay atajo. Y, sobre todo, no convierte un mal producto en uno bueno: si la materia prima no tiene calidad, la bolsa solo la conserva tal cual.</p>
+<p class="wp-block-paragraph">Dentro de la familia de la <a href="https://aichef.pro/blog/coccion-a-baja-temperatura-concepto-y-definicion">cocción a baja temperatura</a>, el sous vide es una de las técnicas más precisas, pero no la única: existen las cocciones en horno a baja temperatura, los asados a fuego suave o las cocciones en aceite confitado, cada una con sus ventajas. El sous vide destaca cuando necesitas repetibilidad, control de merma y producción en lote; para otras situaciones, quizá no sea la primera opción.</p>
+<h2 class="wp-block-heading">Descarga las infografías</h2>
+<p class="wp-block-paragraph">Aquí tienes las dos infografías de cocción al vacío en PDF, pensadas para imprimirlas y colgarlas en la cocina. Llevan la misma información, una en español y otra en inglés.</p>
+<figure class="wp-block-image size-full"><a href="/blog-assets/2026/02/cocina-al-vacio-sous-vide-aichefpro.pdf" target="_blank" rel="noreferrer noopener"><img loading="lazy" decoding="async" width="768" height="1376" src="/blog-assets/2026/02/cocina-al-vacio-sous-vide-aichefpro.jpg" alt="Infografía en PDF sobre cocción al vacío sous vide, en español" /></a></figure>
+<figure class="wp-block-image size-full"><a href="/blog-assets/2026/02/sous-vide-cooking-aichefpro.pdf" target="_blank" rel="noreferrer noopener"><img loading="lazy" decoding="async" width="768" height="1376" src="/blog-assets/2026/02/sous-vide-cooking-aichefpro.jpg" alt="Sous vide cooking infographic in PDF, English version" /></a></figure>

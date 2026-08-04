@@ -3,7 +3,7 @@
 // El newsletter es estático (no wired, igual que el onSubmit no-op de la SPA): un <script> evita el submit.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { blogHubHref, categoryPath, getCategories, hasBlog } from '../lib/blog';
+import { blogHubHref, categoryPath, getCategories, hasBlog, promptHubHref } from '../lib/blog';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
@@ -41,23 +41,44 @@ const creditLabel = ({ es: 'Sistema de créditos', en: 'Credit system', fr: 'Sys
 // mano: un usuario inglés acababa en /blog/categoria/glosario. Ahora la lista se
 // deriva del idioma. Los idiomas SIN blog propio (fr, de, it, pt, nl) conservan
 // exactamente los enlaces ES de antes — es lo único que hay para ellos —, y el
-// inglés recibe su hub y sus 2 categorías reales (getCategories = fuente única).
+// inglés recibe su hub y sus categorías reales (getCategories = fuente única).
+//
+// El hub de librerías de prompts va en LAS DOS ramas. Antes sólo estaba en la de
+// abajo, así que en inglés —la única rama de arriba— se caía de la lista y el
+// hub `/en/prompt-libraries` quedaba huérfano: no lo enlazaba nada en todo el
+// sitio. Lo que el lector inglés veía en su lugar era la CATEGORÍA del blog
+// `prompt-library`, que se llama casi igual y lleva a un listado de posts.
+// Reportado por John el 2026-08-03.
+//
+// Y por eso mismo esa categoría se excluye aquí: con el hub presente, «Prompt
+// Libraries» y «Prompt Library» serían dos entradas contiguas, con el mismo
+// nombre a ojos de cualquiera, apuntando a sitios distintos. La categoría sigue
+// accesible desde el propio blog.
 interface FooterLink { href: string; label: string; blank?: boolean }
+
+const HUB_PROMPTS: FooterLink = {
+  href: promptHubHref(lang),
+  label: t(lang, 'footer.prompts_library'),
+  blank: true,
+};
 
 const blogLinks: FooterLink[] =
   lang !== 'es' && hasBlog(lang)
     ? [
         { href: blogHubHref(lang), label: t(lang, 'footer.blog_main'), blank: true },
-        ...getCategories(lang).map((c) => ({
-          href: categoryPath(c.slug, lang),
-          label: c.name,
-          blank: true,
-        })),
+        HUB_PROMPTS,
+        ...getCategories(lang)
+          .filter((c) => c.slug !== 'prompt-library')
+          .map((c) => ({
+            href: categoryPath(c.slug, lang),
+            label: c.name,
+            blank: true,
+          })),
       ]
     : [
         { href: '/blog', label: t(lang, 'footer.blog_main'), blank: true },
         { href: '/blog/categoria/tutoriales', label: t(lang, 'footer.tutoriales'), blank: true },
-        { href: '/libreria-de-prompts', label: t(lang, 'footer.prompts_library'), blank: true },
+        HUB_PROMPTS,
         { href: '/blog/categoria/recetas', label: t(lang, 'footer.recetario'), blank: true },
         { href: '/blog/categoria/glosario', label: t(lang, 'footer.glosario_ia'), blank: true },
         { href: '/blog/categoria/glosario', label: t(lang, 'footer.glosario_culinario'), blank: true },

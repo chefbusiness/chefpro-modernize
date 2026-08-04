@@ -289,8 +289,11 @@ export default function ModernFooter() {
                 </a>
               </li>
               <li>
+                {/* El HUB, no la categoría del blog del mismo nombre: son dos
+                    páginas distintas y este enlace apuntaba a la categoría.
+                    Paridad con Footer.astro (`promptHubHref`). */}
                 <a
-                  href="/blog/categoria/libreria-de-prompts"
+                  href="/libreria-de-prompts"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"

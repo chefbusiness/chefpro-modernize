@@ -138,6 +138,95 @@ CONFIG = {
         # parche de esta misma sesión se pinta DETRÁS del primer párrafo.
         'preservar': ['<figure class="wp-block-embed is-type-video is-provider-loom'],
     },
+    # ── Tanda 4 (2026-08-03). Dos condimentos y la familia de la baja
+    #    temperatura, más la consolidación del clúster sous-vide.
+    #
+    #    El research REFUTÓ otra vez al censo del roadmap, y van dos tandas
+    #    seguidas: la «canibalización real» que la sesión anterior había
+    #    identificado (tecnicas-de-coccion-al-vacio pos. 85,6 contra
+    #    sous-vide-concepto-definicion pos. 40,3) estaba medida sobre URLs de
+    #    `blog.aichef.pro`, el subdominio LEGACY ya 301-eado. Las URLs migradas
+    #    del clúster suman 4 impresiones en 90 días: no hay canibalización que
+    #    medir. El duplicado de verdad —comparando encabezados— era
+    #    `sous-vide-avanzado`, que es el MISMO guion que el pilar escrito otra
+    #    vez, y el que iba a caer resultó ser el único con contenido propio.
+    'yuzu-kosho-condimento-japones-tendencia': {
+        'bridge': 'yuzukosho.txt',
+        # 226 palabras rankeando en pos. 11,7 para «yuzu kosho» (320/mes) y 9,7
+        # para «kosho». La SERP la copan TIENDAS: ninguna enseña a usarlo, que es
+        # justo el hueco. No hay AI Overview.
+        'productos': ['kit-tareas-restaurante-creativo', 'kit-escandallos', 'pack-appcc'],
+        'imagenes': [
+            ('/blog-assets/2026/08/yuzu-kosho-verde-rojo.jpg',
+             'Dos cuencos de cerámica japonesa sobre una tabla de madera con pasta de yuzu kosho '
+             'verde y roja, junto a media pieza de yuzu y unos chiles frescos'),
+            ('/blog-assets/2026/08/yuzu-kosho-pase-pescado.jpg',
+             'Una cucharilla deposita un punto de yuzu kosho verde junto a unos cortes de pescado '
+             'crudo en un plato de pizarra, en el pase de una cocina profesional'),
+        ],
+        'preservar': [],
+    },
+    'coccion-a-baja-temperatura-concepto-y-definicion': {
+        'bridge': 'bajatemperatura.txt',
+        # Página PARAGUAS de la familia. El AI Overview de Google define
+        # «cocinar a baja temperatura (sous-vide)» como cocción en bolsa al
+        # vacío: describe UNA técnica, no la familia. Deshacer esa confusión ES
+        # el artículo. Cede el vacío al pilar con enlace explícito.
+        'productos': ['pack-appcc', 'kit-escandallos', 'kit-tareas'],
+        'imagenes': [
+            ('/blog-assets/2026/08/baja-temperatura-horno-sonda.jpg',
+             'Sonda de temperatura clavada en una paletilla dentro de un horno profesional, con el '
+             'display marcando la temperatura interna'),
+            ('/blog-assets/2026/08/baja-temperatura-confitado.jpg',
+             'Muslos de pato confitándose en grasa en una cazuela de hierro ancha sobre el fuego de '
+             'una cocina profesional, con tomillo, laurel y ajos'),
+        ],
+        'preservar': [],
+    },
+    'sous-vide-concepto-definicion': {
+        'bridge': 'sousvide.txt',
+        # PILAR del clúster: absorbe `sous-vide-avanzado` (mismo guion escrito
+        # dos veces) y `tecnicas-de-coccion-al-vacio` (591 palabras, pero el
+        # único con la taxonomía LTLT/HTST/pasteurización/infusión/regeneración,
+        # que por eso se rescata dentro de este texto). Se elige este slug y no
+        # otro porque «sous vide» son 3.600/mes y «sous vide avanzado» no es una
+        # consulta que nadie teclee.
+        'productos': ['pack-appcc', 'kit-escandallos', 'kit-tareas-restaurante-creativo'],
+        'imagenes': [
+            ('/blog-assets/2026/08/sous-vide-bano-roner.jpg',
+             'Un roner sujeto al borde de una cubeta gastronorm llena de agua con varias bolsas al '
+             'vacío sumergidas y etiquetadas, en una cocina profesional'),
+            ('/blog-assets/2026/08/sous-vide-sellado-plancha.jpg',
+             'Un solomillo recién sacado de su bolsa de vacío dorándose en una plancha muy caliente, '
+             'sujeto con pinzas, con la bolsa vacía al lado'),
+        ],
+        'preservar': [],
+        # Rescatadas de `tecnicas-de-coccion-al-vacio-sous-vide` antes de
+        # borrarlo: son los dos únicos enlaces a esos PDF en todo el sitio.
+        'extra_final': '''
+<h2 class="wp-block-heading">Descarga la infografía</h2>
+<p class="wp-block-paragraph">Las dos infografías de cocción al vacío en PDF, pensadas para imprimir y colgar en la cocina. La misma información, en español y en inglés.</p>
+<figure class="wp-block-image size-full"><a href="/blog-assets/2026/02/cocina-al-vacio-sous-vide-aichefpro.pdf" target="_blank" rel="noreferrer noopener"><img loading="lazy" decoding="async" width="768" height="1376" src="/blog-assets/2026/02/cocina-al-vacio-sous-vide-aichefpro.jpg" alt="Infografía en PDF sobre cocción al vacío sous vide, en español" /></a></figure>
+<figure class="wp-block-image size-full"><a href="/blog-assets/2026/02/sous-vide-cooking-aichefpro.pdf" target="_blank" rel="noreferrer noopener"><img loading="lazy" decoding="async" width="768" height="1376" src="/blog-assets/2026/02/sous-vide-cooking-aichefpro.jpg" alt="Sous vide cooking infographic in PDF, English version" /></a></figure>
+''',
+    },
+    'chili-crisp': {
+        'bridge': 'chilicrisp.txt',
+        # Re-targetizado: el post decía «chile crisp» (10 búsquedas/mes, una
+        # ERRATA) diez veces y «chili» ninguna. El término real es «chili crisp»,
+        # 480/mes. El slug viejo se 301-ea: la URL migrada tenía CERO filas en
+        # GSC, así que no había histórico que proteger.
+        'productos': ['pack-appcc', 'kit-escandallos', 'kit-tareas'],
+        'imagenes': [
+            ('/blog-assets/2026/08/chili-crisp-aceite-termometro.jpg',
+             'Cazo de acero con aceite caliente, copos de chile seco y ajo laminado burbujeando '
+             'sobre el fuego de una cocina profesional, con un termómetro de sonda dentro'),
+            ('/blog-assets/2026/08/chili-crisp-tarros-etiquetados.jpg',
+             'Tres tarros de cristal con chili crisp de elaboración propia, etiquetados, en el '
+             'estante de una cámara frigorífica de restaurante'),
+        ],
+        'preservar': [],
+    },
 }
 
 
@@ -299,7 +388,23 @@ def main():
     if preservados:
         sys.exit('no se colocó lo preservado: el texto de bridge no tiene ni un párrafo')
 
+    # Bloque suelto que se cuelga al FINAL del cuerpo, después de todo lo que
+    # viene de bridge.
+    #
+    # Existe por la consolidación del clúster sous-vide (2026-08-03): las dos
+    # infografías descargables en PDF (ES e EN) vivían en
+    # `tecnicas-de-coccion-al-vacio-sous-vide`, que se 301-ea hacia el pilar. Sin
+    # esto los PDF se quedaban en /blog-assets sirviendo 200 pero SIN un solo
+    # enlace en todo el sitio: valor real desapareciendo en silencio dentro de
+    # una consolidación que sólo mira texto. `preservar` no sirve aquí porque
+    # sólo lee del .md que se está reescribiendo, no del que se borra.
+    if cfg.get('extra_final'):
+        partes.append(cfg['extra_final'].strip())
+
     cuerpo = '\n'.join(partes)
+    for ruta in re.findall(r'(?:src|href)="(/blog-assets/[^"]+)"', cfg.get('extra_final') or ''):
+        if not (REPO / 'astro-site' / 'public' / ruta.lstrip('/')).exists():
+            sys.exit('el adjunto no existe en disco: %s' % ruta)
     for n, (src, _) in enumerate(cfg['imagenes']):
         if src not in cuerpo:
             sys.exit('la imagen %d no se colocó: revisa el reparto' % (n + 1))

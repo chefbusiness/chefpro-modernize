@@ -160,6 +160,24 @@ export const hasBlog = (lang: Locale): boolean =>
 export const blogHubHref = (lang: Locale): string =>
   hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
 
+/**
+ * Hub de las LIBRERÍAS DE PROMPTS, mismo patrón que `blogHubHref`: sólo hay
+ * versión nativa en es y en, y los demás idiomas caen al español.
+ *
+ * OJO, no confundirlo con la CATEGORÍA del blog del mismo nombre. Son cosas
+ * distintas y el parecido ha costado un enlace roto: en inglés existe a la vez
+ * la categoría `prompt-library` (/en/blog/category/prompt-library) y este hub
+ * (/en/prompt-libraries), y el footer inglés enseñaba la categoría porque el
+ * hub se le caía de la lista. Un lector que buscaba el catálogo de librerías
+ * aterrizaba en un listado de posts del blog.
+ *
+ * Y el slug inglés es `prompt-libraries` en PLURAL a propósito: el filtro del
+ * sitemap excluye toda ruta acabada en `-library` (así se llaman los dashboards
+ * de pago), así que `/en/prompt-library` desaparecía del sitemap sin un aviso.
+ */
+export const promptHubHref = (lang: Locale): string =>
+  lang === 'en' ? '/en/prompt-libraries' : '/libreria-de-prompts';
+
 export type BlogPost = CollectionEntry<'blog'>;
 
 /** Slug público del post (basename del id — la carpeta de idioma no cuenta). */

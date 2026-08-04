@@ -370,6 +370,19 @@ https://enblog.aichef.pro/:slug https://aichef.pro/en/blog/:slug 301!
 https://enblog.aichef.pro/* https://aichef.pro/en/blog 301!
 # ── fin del bloque enblog.aichef.pro ──
 
+# ── Fase 8D: consolidación del clúster sous-vide (2026-08-03) ──
+/blog/sous-vide-avanzado-concepto-y-definicion /blog/sous-vide-concepto-definicion 301!
+https://blog.aichef.pro/sous-vide-avanzado-concepto-y-definicion https://aichef.pro/blog/sous-vide-concepto-definicion 301!
+/blog/tecnicas-de-coccion-al-vacio-sous-vide /blog/sous-vide-concepto-definicion 301!
+https://blog.aichef.pro/tecnicas-de-coccion-al-vacio-sous-vide https://aichef.pro/blog/sous-vide-concepto-definicion 301!
+
+# ── Fase 8D: «chile crisp» → «chili crisp» (2026-08-03) ──
+# El slug viejo llevaba la ERRATA dentro: «chile crisp» son 10 búsquedas/mes y
+# «chili crisp» 480 (DataForSEO, España). La URL migrada no tenía NI UNA fila en
+# GSC, así que no hay histórico que preservar y el cambio de slug sale gratis.
+/blog/chile-crisp-condimento-viral-2026 /blog/chili-crisp 301!
+https://blog.aichef.pro/chile-crisp-condimento-viral-2026 https://aichef.pro/blog/chili-crisp 301!
+
 # Genérica: cualquier post A/B/C conserva su slug bajo /blog
 https://blog.aichef.pro/:slug https://aichef.pro/blog/:slug 301!
 # Catch-all (paths de 2+ segmentos no contemplados)

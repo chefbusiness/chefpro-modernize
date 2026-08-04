@@ -70,7 +70,7 @@ wpId: 2692
 <li><strong>No abarrotes la sartén.</strong> Amontonar piezas reduce la temperatura de la superficie de cocción, genera vapor y estropea el sellado. Cocina por tandas.</li>
 <li><strong>Juega con el pH.</strong> Un pincelado ligero con una solución de bicarbonato (1 cucharadita en 100 ml de agua) sobre pieles de pollo asado acelera un dorado uniforme y crujiente.</li>
 <li><strong>Pinta con grasa y lácteos.</strong> La mantequilla clarificada, la nata o un huevo batido aplicados sobre masas de pan o empanadas aportan proteínas y azúcares extra que intensifican el color.</li>
-<li><strong>Domina la transición desde cocciones húmedas.</strong> Cuando trabajas con <a href="https://aichef.pro/blog/sous-vide-avanzado-concepto-y-definicion">cocción al vacío sous vide</a>, el enfriamiento superficial rápido tras el baño —por ejemplo, con un agua-hielo de 30 segundos— fija la textura y retira humedad inicial, preparando la pieza para un sellado fulgurante que maximiza la reacción de Maillard en la mesa.</li>
+<li><strong>Domina la transición desde cocciones húmedas.</strong> Cuando trabajas con <a href="https://aichef.pro/blog/sous-vide-concepto-definicion">cocción al vacío sous vide</a>, el enfriamiento superficial rápido tras el baño —por ejemplo, con un agua-hielo de 30 segundos— fija la textura y retira humedad inicial, preparando la pieza para un sellado fulgurante que maximiza la reacción de Maillard en la mesa.</li>
 <li><strong>Usa el horno o el soplete como aliado final.</strong> Un gratinado breve o el paso bajo un soplete de cocina corrigen zonas pálidas en costras de pescado o crustáceos, siempre que la superficie esté seca.</li>
 </ul>
 <h2>El lado oscuro: acrilamida y pérdida de nutrientes</h2>
@@ -86,7 +86,7 @@ wpId: 2692
 <h3>¿El dorado de la carne a la plancha es siempre reacción de Maillard?</h3>
 <p>Sí, la costra marrón que se forma al sellar un filete es obra casi en exclusiva de la reacción de Maillard, porque la carne contiene proteínas (aminoácidos) y el glucógeno residual aporta azúcares reductores. Solo se produce en la zona seca que ha perdido humedad; la caramelización apenas interviene, porque la cantidad de azúcar libre en la carne es muy baja.</p>
 <h3>¿Cómo conseguir un dorado perfecto sin que el interior se seque o se queme?</h3>
-<p>La combinación ganadora es superficie ultraseca, sartén o plancha a temperatura alta (pero sin que el aceite humee en exceso) y un tiempo reducido. Para carnes gruesas, el sellado se remata con un horneado corto o, mejor aún, con una <a href="https://aichef.pro/blog/sous-vide-avanzado-concepto-y-definicion">cocción al vacío sous vide</a> previa que garantiza el punto interior, de modo que la reacción de Maillard se aplique solo en el golpe de calor final sin riesgo de sobrecocción.</p>
+<p>La combinación ganadora es superficie ultraseca, sartén o plancha a temperatura alta (pero sin que el aceite humee en exceso) y un tiempo reducido. Para carnes gruesas, el sellado se remata con un horneado corto o, mejor aún, con una <a href="https://aichef.pro/blog/sous-vide-concepto-definicion">cocción al vacío sous vide</a> previa que garantiza el punto interior, de modo que la reacción de Maillard se aplique solo en el golpe de calor final sin riesgo de sobrecocción.</p>
 <h2>Sigue aprendiendo</h2>
 <ul>
 <li><a href="https://aichef.pro/blog/umami-concepto-y-definicion">Umami: concepto y definición</a></li>
