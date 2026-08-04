@@ -9,10 +9,8 @@ imageAlt: "Sous Vide: Concepto y Definición"
 lang: es
 wpId: 3204
 faq:
-  - q: "¿Qué es la técnica sous vide?"
-    a: "Es una cocción en la que el alimento se introduce en una bolsa sellada al vacío y se sumerge en agua a temperatura exacta y constante, controlada por un termocirculador."
   - q: "¿Qué es el sous vide?"
-    a: "La expresión francesa significa literalmente «al vacío», y en cocina se refiere tanto al método de envasado como al sistema de cocción que aprovecha ese vacío para transmitir el calor de forma uniforme."
+    a: "«Sous vide» es una expresión francesa que significa literalmente «al vacío» y se pronuncia «suvíd». En cocina designa tanto el método de envasado como la técnica de cocción que lo aprovecha: el alimento se introduce en una bolsa sellada al vacío y se sumerge en agua a temperatura exacta y constante, controlada por un termocirculador o roner. El vacío es lo que hace que el calor llegue de forma uniforme a toda la superficie de la pieza."
   - q: "¿Cuánto cuesta un sous vide?"
     a: "Sumando la gama de entrada que se detalla en el artículo —roner por debajo de 150 €, envasadora de campana de 400‑600 € y un paquete de bolsas de 10‑20 €— montar el equipo básico para hostelería sale por unos 550‑800 €. Los equipos profesionales más robustos superan esa cifra con holgura. La inversión se amortiza con la reducción de mermas y la estandarización de procesos."
   - q: "¿Cómo se hace el sous vide?"
