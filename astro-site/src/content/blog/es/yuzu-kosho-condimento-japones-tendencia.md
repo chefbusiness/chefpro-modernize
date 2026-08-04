@@ -10,9 +10,7 @@ lang: es
 wpId: 2727
 faq:
   - q: "¿Qué es el yuzu kosho?"
-    a: "Es una pasta fermentada japonesa elaborada con cáscara de yuzu, chile y sal. Se utiliza como condimento de acabado en frío para aportar acidez cítrica, picante y salinidad a platos terminados. Es originario de la isla de Kyushu y existe en dos variedades: verde (más floral y punzante) y roja (más redonda y dulce)."
-  - q: "¿Qué es el condimento Yuzu Kosho?"
-    a: "Es un condimento fermentado de la cocina japonesa que combina la acidez aromática del yuzu con el picante del chile y la sal como conservante natural. Se aplica en pequeñas cantidades sobre pescados crudos, carnes a la brasa, caldos y sopas justo antes de servir. No se cocina porque el calor destruye sus aceites esenciales."
+    a: "Es una pasta fermentada japonesa elaborada con cáscara de yuzu, chile y sal, donde la sal hace además de conservante natural. Se usa como condimento de acabado en frío —sobre pescados crudos, carnes a la brasa, caldos y sopas, siempre justo antes de servir— para aportar acidez cítrica, picante y salinidad a un plato ya terminado. No se cocina, porque el calor destruye sus aceites esenciales. Es originario de la isla de Kyushu y existe en dos variedades: la verde, más floral y punzante, y la roja, más redonda y dulce."
   - q: "¿Qué significa koshō en japonés?"
     a: "En japonés estándar, «koshō» (胡椒) significa pimienta. Sin embargo, en el dialecto de la isla de Kyushu, de donde procede este condimento, la misma palabra se usaba para referirse al chile. Por eso el yuzu kosho lleva chile y no pimienta, a pesar de lo que sugiere su nombre."
   - q: "¿Qué es el yuzu y para qué sirve?"
