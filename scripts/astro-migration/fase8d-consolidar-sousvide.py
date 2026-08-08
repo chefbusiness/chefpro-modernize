@@ -14,7 +14,7 @@ QUÉ SE CONSOLIDA Y POR QUÉ. El roadmap y la sesión del 2026-08-02 señalaban 
 argumento de que pierde contra el pilar «pos. 85,6 frente a 40,3». Esas dos
 posiciones son de URLs de `blog.aichef.pro`, el subdominio LEGACY ya 301-eado
 (la trampa que el propio CLAUDE.md documenta). Las URLs MIGRADAS del clúster
-suman 4 impresiones y 0 clics en 90 días: no hay canibalización medible, así que
+suman 8 impresiones y 0 clics en 90 días (corregido 2026-08-08): no hay canibalización medible, así que
 el motivo real de consolidar es ESTRUCTURAL —tres páginas propias peleando una
 keyword de 3.600/mes—, no una posición.
 

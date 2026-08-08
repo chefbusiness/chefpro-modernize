@@ -29,7 +29,7 @@ El roadmap y la sesión anterior mandaban 301-ear
 **Las dos posiciones son de `blog.aichef.pro`**, el subdominio legacy ya
 301-eado. Es exactamente la trampa que `CLAUDE.md` documenta desde
 `mise-en-place`, y ha mordido por segunda vez. Las URLs **migradas** del clúster
-suman **4 impresiones y 0 clics en 90 días**: no hay canibalización medible, así
+suman **8 impresiones y 0 clics en 90 días** (corregido el 2026-08-08: escribí 4): no hay canibalización medible, así
 que el motivo real de consolidar es estructural (tres páginas propias peleando
 una keyword de 3.600/mes), no una posición.
 
