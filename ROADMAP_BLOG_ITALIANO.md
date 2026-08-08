@@ -1,4 +1,4 @@
-# Roadmap del blog italiano — los 12 primeros posts
+# Roadmap del blog italiano — los 13 primeros posts
 
 > Escrito el 2026-08-08 a partir del keyword research de Google.it (DataForSEO,
 > `--pais 2380 --idioma it`): 6 clústeres, ~700 keywords medidas y 60+ SERP en
@@ -31,7 +31,6 @@ negra más abajo.
 
 | Keyword | Volumen | Por qué se descarta |
 |---|---|---|
-| `mise en place` | **18.100/mes** | En italiano es **poner la mesa**, no la preparación de cocina. La SERP es mantelería, bodas y galateo (Tessitura Toscana, Tognana); las relacionadas son «mise en place matrimonio» |
 | `menu digitale QR` | 1.900/mes | La SERP son 12 SaaS de menús QR vendiendo un producto que aichef.pro no tiene. Tráfico que no convierte |
 | `celiachia ristorante` | 1.900/mes | Intención LOCAL de comensal: local pack de 12 resultados, TheFork, TripAdvisor y directorios AIC |
 | `etichettatura alimentare` | 2.400/mes | Intención de FABRICANTE de envasado (MIMIT, Your Europe, Mérieux), no de restaurador |
@@ -47,6 +46,41 @@ nuestro producto, pero traducir los posts españoles de IA habría sido escribir
 para un mercado que no busca eso. **Única excepción:** la familia `chefgpt`
 (~430/mes), que sí existe.
 
+### ⚠️ Los préstamos universales de cocina NO son «palabras de otro idioma»
+
+Corrección de John, 2026-08-08, y es una regla de método, no una anécdota.
+`mise en place`, `chef`, `sous vide`, `food cost`, `garde manger`, `roux`,
+`brigata`: son **términos universales de cocina profesional** que en Italia se
+usan tal cual, sin traducir. Un research que los trate como error de idioma o
+como «término que el mercado no usa» se equivoca.
+
+**El caso que casi cuesta un post de 18.100 búsquedas/mes.** La primera lectura
+del research concluyó que `mise en place` «en italiano significa poner la mesa,
+no la preparación de cocina» y lo mandó a esta lista negra. **Es falso.**
+Medido después contra la SERP italiana, el propio AI Overview de Google lo
+resuelve:
+
+> «La *mise en place* indica l'insieme delle operazioni preliminari di
+> organizzazione e preparazione. Nel settore della ristorazione, **si divide tra
+> la cucina** (preparazione e dosaggio degli ingredienti) **e la sala**
+> (l'allestimento e l'apparecchiatura dei tavoli).»
+
+Las dos acepciones, igual que en cualquier cocina profesional. Y el People Also
+Ask lo confirma: «**Quali sono le 7 fasi della mise en place?**» aparece **dos
+veces**, que es la pregunta procedimental profesional, conviviendo con «Nella
+mise en place dove va il cucchiaio?», que es de sala.
+
+Lo que el research **sí** midió bien es que la SERP del término desnudo se
+inclina hacia sala (Tessitura Toscana, Tognana, atelierdellalbergo). Pero eso es
+un problema de **ángulo**, no de idioma. Y las variantes cualificadas lo
+demuestran: `mise en place matrimonio` (320), `tavola` (260) y `ristorante`
+(110) suman **580 de 18.100** — el grueso del volumen NO es intención de boda,
+es un término ambiguo que Google desambigua como puede.
+
+**Regla:** antes de descartar un término por «no es del idioma» o «significa
+otra cosa», comprueba si es un préstamo universal del oficio. Si lo es, el
+problema es de ángulo y se resuelve cualificando, no descartando.
+
 ## Restricción de producto que condiciona todo
 
 La plataforma italiana tiene **54 agentes de los 89 españoles**. Ningún post
@@ -55,7 +89,7 @@ páginas de consulenza (ver `CATALOGO_ITALIANO_PENDIENTE.md`). **No hay agente
 italiano de social, ni de SEO local, ni de calendario editorial**, así que ese
 ángulo no se toca hasta que existan.
 
-## Los 12 posts, en orden de publicación
+## Los 13 posts, en orden de publicación
 
 El orden no va por volumen sino por **autoridad temática**: primero se cierra
 el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
@@ -68,22 +102,33 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 | 3 | `etichettatura allergeni` | 880 | MEDIA | sí | ID Allergeni | satélite |
 | 4 | `7 principi haccp` | 390 | BAJA | sí | ID Allergeni | satélite |
 | 5 | `temperature frigorifero haccp` | 260 | BAJA | sí | ID Allergeni | satélite |
-| 6 | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
-| 7 | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
-| 8 | `frollatura carne` | **4.400** | BAJA | sí | Cucina Creativa | **PILAR** |
-| 9 | `cucina molecolare` | 2.400 | BAJA | sí | **Sosa Ingredients AI** | PILAR |
-| 10 | `brigata di cucina` | 1.300 | BAJA | sí | Manager Ristorante Pro | **PILAR** |
-| 11 | `food cost tabella` / `calcolo food cost` | 670 | BAJA | sí | Manager Ristorante Pro | satélite |
-| 12 | `dark kitchen` | 1.000 | MEDIA | sí | Food Truck AI+ | PILAR |
+| 6 | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
+| 7 | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
+| 8 | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
+| 9 | `frollatura carne` | **4.400** | BAJA | sí | Cucina Creativa | **PILAR** |
+| 10 | `cucina molecolare` | 2.400 | BAJA | sí | **Sosa Ingredients AI** | PILAR |
+| 11 | `brigata di cucina` | 1.300 | BAJA | sí | Manager Ristorante Pro | **PILAR** |
+| 12 | `food cost tabella` / `calcolo food cost` | 670 | BAJA | sí | Manager Ristorante Pro | satélite |
+| 13 | `dark kitchen` | 1.000 | MEDIA | sí | Food Truck AI+ | PILAR |
 
-**Suma direccionable de los 12: ~24.000 búsquedas/mes.**
+**Suma direccionable de los 13: ~42.000 búsquedas/mes.**
+
+> Pasaron de 12 a 13 al recuperar `mise en place`, que la primera lectura
+> del research había descartado por error (ver la nota sobre préstamos
+> universales). Sus 18.100/mes lo convierten en el mayor volumen del plan.
 
 ### Por qué en ese orden
 
 - **1-5 (alérgenos y HACCP)** es el bloque más rentable: competencia BAJA, la
   SERP ocupada por PDFs sueltos de osterías, y el único agente con encaje
   literal. El post 1 es el pilar y los cuatro siguientes enlazan hacia él.
-- **6 `fondo bruno` es el mayor volumen sin AI Overview de todo el research**
+- **6 `mise en place`** es el mayor volumen del research (18.100) con
+  competencia BAJA. NO se ataca el término desnudo, cuya SERP se inclina a
+  sala: se ataca **«le 7 fasi della mise en place»**, que el People Also Ask
+  repite dos veces y que permite cubrir las dos acepciones —cocina y sala—
+  como hace el propio AI Overview. Nuestro público es hostelería completa,
+  así que la sala no es tráfico desviado.
+- **7 `fondo bruno` es el mayor volumen sin AI Overview de todo el research**
   (6.600/mes). GialloZafferano ocupa el 1 con receta, pero del 2 al 8 hay hueco.
   Con `salse madri` (7) se ata el clúster, y ojo: `besciamella` son **90.500/mes**
   como derivada.
