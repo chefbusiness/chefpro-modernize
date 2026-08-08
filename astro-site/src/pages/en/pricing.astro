@@ -1,11 +1,12 @@
 ---
 // Pricing (EN) — native Astro page (BaseLayout + Header/Footer .astro).
 // Pricing verified against the live schemas 2026-07-19. Single source of truth.
-// Sign-up / checkout: app.aichef.pro with per-plan UTM.
+// Sign-up / checkout: the per-language platform (see lib/app-url.ts), with per-plan UTM.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE } from '../../i18n/config';
+import { appCtaUrl } from '../../lib/app-url';
 
 const lang = 'en';
 const basePath = '/en/pricing';
@@ -19,9 +20,10 @@ const alternates = {
   nl: '/nl/prijzen',
 };
 
-const APP = 'https://app.aichef.pro';
-const ctaUrl = (slug: string) =>
-  `${APP}/?utm_source=web&utm_medium=pricing&utm_content=${slug}`;
+// La plataforma depende del idioma (itapp/enapp/frapp/...). Antes aquí había
+// un 'https://app.aichef.pro' clavado, así que TODOS los idiomas mandaban el
+// checkout a la plataforma española. Ver astro-site/src/lib/app-url.ts.
+const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
 
 const plans = [
   {
