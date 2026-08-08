@@ -85,10 +85,47 @@ const CATEGORIES_EN: BlogCategory[] = [
   },
 ];
 
+// 2026-08-08 — Blog ITALIANO. Arranca en 0 posts, así que la taxonomía nace
+// deliberadamente MÁS CORTA que la española (6 categorías) y algo más ancha que
+// la inglesa (3): cuatro cajas que se corresponden con los clústeres que dio el
+// keyword research de Google.it, sin fragmentar un blog que aún no tiene con qué
+// llenarlas. El hub sólo pinta las categorías que YA tienen posts, así que una
+// caja vacía no ensucia nada mientras se llena.
+//
+// No hay 'glosario' a propósito: en español son 69 posts que vienen del
+// histórico de WordPress, no una decisión editorial que replicar de cero.
+const CATEGORIES_IT: BlogCategory[] = [
+  {
+    slug: 'ia-in-gastronomia',
+    name: 'IA in Gastronomia',
+    description:
+      'Come l’intelligenza artificiale sta cambiando le cucine professionali: strumenti che valgono il tuo tempo, confronti onesti, automazioni che reggono un servizio pieno e i numeri dietro ogni decisione.',
+  },
+  {
+    slug: 'gestione-ristorante',
+    name: 'Gestione Ristorante',
+    description:
+      'Il mestiere che non si vede dalla sala: food cost e schede tecniche, margini, HACCP e allergeni, personale, fornitori e tutto quello che decide se il locale chiude l’anno in utile.',
+  },
+  {
+    slug: 'tecnica-e-ricette',
+    name: 'Tecnica e Ricette',
+    description:
+      'Tecnica di cucina professionale spiegata per chi la usa in servizio: cotture, fermentazioni, impasti, mise en place e ricette pensate per essere replicate in brigata, non per la fotografia.',
+  },
+  {
+    slug: 'ai-chef-pro',
+    name: 'AI Chef Pro',
+    description:
+      'Tutto sulla piattaforma: guide agli agenti IA culinari, novità di ogni rilascio e i flussi di lavoro che chef e gestori ci fanno girare davvero ogni giorno.',
+  },
+];
+
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */
 export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = {
   es: CATEGORIES_ES,
   en: CATEGORIES_EN,
+  it: CATEGORIES_IT,
 };
 
 /** Categorías de un idioma (vacío si ese idioma aún no tiene blog). */
@@ -121,9 +158,14 @@ export const getCategory = (
 // Todo el que construya un enlace del blog debe usar estos helpers: son la única
 // fuente de verdad del esquema de URLs por idioma.
 // ─────────────────────────────────────────────────────────────────────────────
+//   · El IT usa 'categoria'/'pagina' porque son las palabras ITALIANAS, que se
+//     escriben igual que las españolas. No es un copy-paste del ES: sin esta
+//     entrada caería al fallback inglés y serviría /it/blog/category/…, que en
+//     una URL italiana es ruido igual que 'categoria' lo sería en una inglesa.
 const ROUTE_SEGMENTS: Partial<Record<Locale, { category: string; page: string }>> = {
   es: { category: 'categoria', page: 'pagina' },
   en: { category: 'category', page: 'page' },
+  it: { category: 'categoria', page: 'pagina' },
 };
 const segments = (lang: Locale) => ROUTE_SEGMENTS[lang] ?? ROUTE_SEGMENTS.en!;
 
@@ -222,9 +264,26 @@ export function formatDateEn(d: Date): string {
   return `${MONTHS_EN[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
 }
 
+const MONTHS_IT = [
+  'gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+  'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre',
+];
+
+/**
+ * "17 febbraio 2026" — en italiano NO se intercalan preposiciones («17 de
+ * febrero de 2026» sería un calco del español), y el mes va en minúscula.
+ * Mismo criterio que las otras dos: UTC y sin Intl, para que el resultado no
+ * dependa del locale de la máquina que construye.
+ */
+export function formatDateIt(d: Date): string {
+  return `${d.getUTCDate()} ${MONTHS_IT[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
 /** Fecha larga en el idioma del post (fallback: formato ES). */
 export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
-  return lang === 'en' ? formatDateEn(d) : formatDateEs(d);
+  if (lang === 'en') return formatDateEn(d);
+  if (lang === 'it') return formatDateIt(d);
+  return formatDateEs(d);
 }
 
 export const POSTS_PER_PAGE = 24;

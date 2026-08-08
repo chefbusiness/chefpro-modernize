@@ -1,0 +1,112 @@
+---
+// Fase 9 (2026-08-08) — Hub del blog IT /it/blog: página 1 del listado +
+// navegación por categorías. Las páginas 2+ viven en /it/blog/pagina/{n}.
+//
+// SEGMENTOS: 'categoria' y 'pagina' son las palabras ITALIANAS, que coinciden
+// en grafía con las españolas. No es un calco del árbol ES: sin la entrada
+// `it` en ROUTE_SEGMENTS (src/lib/blog.ts) caería al fallback inglés y
+// serviría /it/blog/category/…, que en una URL italiana chirría igual que
+// 'categoria' chirriaría en una inglesa.
+//
+// hreflang: locales={['it']} — el blog IT es contenido NATIVO escrito a partir
+// del keyword research de Google.it, no la traducción del ES ni del EN
+// (decisión de John, 2026-08-08). Declarar un par ES↔IT sería falso.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import PostCard from '../../../components/blog/PostCard.astro';
+import { SITE } from '../../../i18n/config';
+import {
+  blogBase,
+  categoryPath,
+  getCategories,
+  getPublishedPosts,
+  listPagePath,
+  POSTS_PER_PAGE,
+} from '../../../lib/blog';
+
+const lang = 'it';
+const posts = await getPublishedPosts(lang);
+const pagePosts = posts.slice(0, POSTS_PER_PAGE);
+const totalPages = Math.max(1, Math.ceil(posts.length / POSTS_PER_PAGE));
+const catsWithPosts = getCategories(lang).filter((c) =>
+  posts.some((p) => p.data.category === c.slug)
+);
+
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Blog AI Chef Pro',
+    description:
+      'Intelligenza artificiale per ristoranti e ristorazione: guide, strumenti, prompt e tecnica di cucina professionale.',
+    url: `${SITE}${blogBase(lang)}`,
+    inLanguage: 'it',
+    publisher: { '@type': 'Organization', name: 'AI Chef Pro', url: SITE },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/it` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}${blogBase(lang)}` },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Blog IA per Ristoranti | AI Chef Pro"
+  description="Intelligenza artificiale pratica per ristoranti: strumenti IA, prompt professionali, controllo del food cost, sicurezza alimentare e gestione della cucina. Il blog di AI Chef Pro."
+  lang={lang}
+  basePath="/blog"
+  locales={['it']}
+>
+  <Fragment slot="head">
+    <link rel="alternate" type="application/rss+xml" title="Blog AI Chef Pro" href={`${SITE}${blogBase(lang)}/rss.xml`} />
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </Fragment>
+
+  <Header lang={lang} />
+
+  <main class="container mx-auto max-w-6xl px-4 py-12">
+    <header class="mb-10 text-center">
+      <h1 class="text-4xl font-bold text-foreground md:text-5xl">Il Blog di AI Chef Pro</h1>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+        Intelligenza artificiale per ristoranti e ristorazione: guide pratiche,
+        prompt professionali, controllo dei costi e tecnica di alta cucina.
+      </p>
+    </header>
+
+    {catsWithPosts.length > 0 && (
+      <nav aria-label="Categorie del blog" class="mb-10 flex flex-wrap justify-center gap-3">
+        {catsWithPosts.map((c) => (
+          <a
+            href={categoryPath(c.slug, lang)}
+            class="rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
+          >{c.name}</a>
+        ))}
+      </nav>
+    )}
+
+    {pagePosts.length > 0 ? (
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {pagePosts.map((p, i) => <PostCard post={p} eager={i < 3} />)}
+      </div>
+    ) : (
+      <p class="text-center text-muted-foreground">Presto online: stiamo preparando i primi articoli.</p>
+    )}
+
+    {totalPages > 1 && (
+      <nav aria-label="Paginazione" class="mt-12 flex items-center justify-center gap-4">
+        <span class="text-sm text-muted-foreground">Pagina 1 di {totalPages}</span>
+        <a
+          href={listPagePath(2, lang)}
+          class="rounded-lg border border-border px-4 py-2 text-sm font-medium hover:border-primary hover:text-primary"
+        >Avanti →</a>
+      </nav>
+    )}
+  </main>
+
+  <Footer lang={lang} />
+</BaseLayout>

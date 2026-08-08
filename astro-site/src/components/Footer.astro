@@ -3,7 +3,7 @@
 // El newsletter es estático (no wired, igual que el onSubmit no-op de la SPA): un <script> evita el submit.
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
-import { blogHubHref, categoryPath, getCategories, hasBlog, promptHubHref } from '../lib/blog';
+import { blogHubHref, categoryPath, getCategories, getPublishedPosts, hasBlog, promptHubHref } from '../lib/blog';
 // Helper compartido: la copia local que había aquí sólo mapeaba en/it/fr/de, así
 // que pt y nl caían a la plataforma española pese a que ptapp/nlapp existen.
 import { appUrl } from '../lib/app-url';
@@ -61,12 +61,21 @@ const HUB_PROMPTS: FooterLink = {
   blank: true,
 };
 
+// Las archives de categoría SÓLO se generan para categorías con posts (ver
+// getStaticPaths de blog/categoria/[category].astro). Enlazar aquí la taxonomía
+// entera mandaría a un 404 cada categoría todavía vacía — que es justo el estado
+// de un blog recién abierto: el italiano nace con 4 categorías y 0 posts.
+const postsDelIdioma = hasBlog(lang) ? await getPublishedPosts(lang) : [];
+const categoriasConPosts = getCategories(lang).filter((c) =>
+  postsDelIdioma.some((p) => p.data.category === c.slug)
+);
+
 const blogLinks: FooterLink[] =
   lang !== 'es' && hasBlog(lang)
     ? [
         { href: blogHubHref(lang), label: t(lang, 'footer.blog_main'), blank: true },
         HUB_PROMPTS,
-        ...getCategories(lang)
+        ...categoriasConPosts
           .filter((c) => c.slug !== 'prompt-library')
           .map((c) => ({
             href: categoryPath(c.slug, lang),

@@ -1,0 +1,25 @@
+---
+// Fase 9 (2026-08-08) — Ruta de artículo /it/blog/{slug}.
+// Mismo layout que ES y EN: BlogPost resuelve idioma, canonical, breadcrumbs y
+// JSON-LD a partir de post.data.lang, así que aquí no hay nada que decidir.
+//
+// A diferencia del EN, los slugs italianos NO heredan nada: no existe un
+// WordPress italiano cuyo historial preservar (blog.aichef.pro/it/* eran las
+// traducciones automáticas de GTranslate, declaradas muertas y 301-eadas en
+// _redirects:88). Se eligen por keyword research de Google.it.
+import { render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+import { getPublishedPosts, postSlug } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('it');
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+  <Content />
+</BlogPost>
