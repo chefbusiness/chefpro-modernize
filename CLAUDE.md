@@ -16,6 +16,19 @@ Aplica a **cualquier** contenido (artículo, landing, ficha de producto, post, p
 
 > Un contenido sin research/SERP previo, o sin tablas/datos/FAQ/≥2 imágenes + destacada única, **no está terminado**.
 
+### ⚠️ El punto 2 tiene matiz: el MODELO se elige por tipo de contenido (John, 2026-08-08)
+
+`bridge.py` sigue siendo la vía por defecto —es mucho más barato— pero **DeepSeek no vale para todo**, y la decisión de qué motor usar es de criterio, no automática. `bridge.py` acepta `--model` con cualquier slug de OpenRouter, así que cambiar de motor es un parámetro.
+
+**Donde NO vale, medido:** las **librerías de prompts por agente**. Son tablas de 105 prompts que el lector **copia y pega tal cual** en la plataforma, y ahí un desliz no se lee: se ejecuta. Dos defectos reales encontrados el 2026-08-08:
+
+- **Caracteres CJK inyectados en mitad de la frase.** En `fermentus-ai` había **24 inyecciones** —frases chinas enteras—, entre ellas «鬼笔鹅膏菌提取物替代» dentro de un prompt de garum: 鬼笔鹅膏菌 es ***Amanita phalloides***, la seta más venenosa que existe, donde debía decir «en sustitución de la fermentación bacteriana». También «但是 (dulce/animal)» (但是 = «pero») y «历代 (jengibre fresco)» (历代 = «dinastías sucesivas»). Más `consultor-gastronomico` («가스» = gas en coreano) y, en el blog inglés, `customer-retention-strategies-restaurants` («what惊喜 (surprise) might come»). **Los tres estaban vivos en producción.**
+- **Fechas caducas:** 41 menciones a años pasados, casi todas «precios HORECA de mayo de 2025» en prompts de escandallo — pidiendo precios de hace 15 meses y contradiciendo al propio agente.
+
+**Qué se hizo, y por qué las dos cosas:** `fase8c-libreria-assemble.py` usa ahora `MODELO = 'anthropic/claude-sonnet-4.6'` (sobreescribible con `--modelo`) **y** tiene `valida()`, que aborta con **cualquier** modelo ante caracteres no latinos o ante un año pasado a menos de 90 caracteres de lenguaje de precios. Cambiar de motor baja la probabilidad; sólo el gate la elimina. Ojo con el gate: su primera versión tumbó el bloque de historia por un «1982» legítimo — por eso mira la **ventana** alrededor del año y no el texto entero.
+
+**Criterio general:** prosa larga y narrativa → `bridge.py` por defecto. Contenido que el usuario **copia y ejecuta** (prompts, comandos, fórmulas, tablas de parámetros) o donde un carácter suelto cambia el significado → modelo bueno + gate automático. Y sea cual sea el motor, **un barrido de caracteres no latinos antes de publicar** cuesta un `grep`.
+
 **El volumen puede estar midiendo una FALTA DE ORTOGRAFÍA.** `chile-crisp` figuraba en el roadmap con 10 búsquedas/mes, casi descartable. El término real es «**chili crisp**» con i: **480/mes en España** y 49.500 en EE.UU. en español — 48 veces más. El post escribe «chile crisp» diez veces y «chili» **cero**, así que competía por una cadena que nadie teclea. Cazado el 2026-08-02: **antes de sentenciar por volumen, probar las variantes de grafía del término**.
 
 **Un censo del roadmap es una hipótesis, no un hecho.** En la tanda 3 de 8D el research refutó **3 de los 4** posts del censo: el descartable era el más rentable (`yuzu-kosho`, ya en pos. 9,7-11,7), el «canibalizado» no canibalizaba (`coccion-a-baja-temperatura`: solape de SERP 2/17 y PAA cero frente a sous-vide) y el de volumen cero lo tenía por una errata. Los censos se escriben con los datos de ese día.

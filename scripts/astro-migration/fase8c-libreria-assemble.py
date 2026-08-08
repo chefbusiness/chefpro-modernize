@@ -28,6 +28,7 @@ Uso:
     python3 fase8c-libreria-assemble.py --config ... --ensamblar       # sin llamar a la API
 """
 import argparse
+import datetime
 import json
 import re
 import subprocess
@@ -46,6 +47,32 @@ PYBRIDGE = '/root/chefbusiness-ai/.venv/bin/python'
 MAX_TOKENS = 16000
 ALTURAS_BANNER = [2, 4, 6]   # tras qué bloques va cada banner
 
+# EXCEPCIÓN A LA REGLA CAPITAL, autorizada por John el 2026-08-08 y SÓLO para
+# esta familia de contenido (librerías de prompts por agente).
+#
+# La norma del grupo es redactar con bridge.py sobre DeepSeek v4 porque es mucho
+# más barato que Claude. Aquí no se cumple por dos defectos medidos, no por
+# impresión:
+#
+#   · CARACTERES CJK. En 2 de los 27 posts publicados se colaron palabras en
+#     chino y coreano DENTRO de los prompts: «koji孢子», «miso de cebada发酵18
+#     meses», «materia prima, 가스, rendimiento» (가스 es «gas» en coreano).
+#     Son 103 caracteres vivos en producción.
+#   · FECHAS EN EL PASADO. En la tanda del 2026-08-08, 41 menciones a años
+#     anteriores al actual, casi todas «precios HORECA de mayo de 2025» en
+#     prompts de escandallo. Un prompt así pide precios de hace 15 meses y
+#     contradice al propio agente, cuya configuración insiste en usar la fecha
+#     actual.
+#
+# Los dos fallos comparten causa: son prompts que el LECTOR va a copiar y pegar
+# tal cual en la plataforma. En un artículo en prosa un desliz se nota y se
+# corrige; dentro de una tabla de 105 prompts pasa desapercibido y se ejecuta.
+#
+# El modelo se puede sobreescribir con --modelo. Y OJO: cambiar de motor baja la
+# probabilidad, no la elimina — por eso está `valida()`, que aborta con
+# cualquier modelo.
+MODELO = 'anthropic/claude-sonnet-4.6'
+
 SYSTEM = (
     'Eres redactor senior de contenidos gastronómicos profesionales para AI Chef Pro. '
     'Escribes en español de España, con tono humano y directo, sin relleno corporativo ni '
@@ -54,30 +81,95 @@ SYSTEM = (
     'dato, lo omites. Ortografía y acentuación impecables. '
     'NUNCA nombras a personas reales (chefs, marcas personales, famosos) ni sugieres que '
     'respaldan el producto: si el agente se inspira en una metodología conocida, se describe '
-    'la metodología sin atribuirla a nadie por su nombre.'
+    'la metodología sin atribuirla a nadie por su nombre. '
+    'ESCRIBES EXCLUSIVAMENTE EN ALFABETO LATINO: ni un solo carácter chino, japonés, coreano, '
+    'cirílico ni árabe, tampoco dentro de un nombre de ingrediente o de técnica. Si un término '
+    'es originalmente de otro alfabeto, va transcrito («koji», no «麹»). '
+    'HOY ES {hoy}. Cuando un texto pida precios, tarifas o datos de mercado, se dice «de este '
+    'mes», «actuales» o «de {anio}»: NUNCA un mes o un año anteriores, porque el lector va a '
+    'copiar ese texto tal cual y acabaría pidiendo datos caducados.'
 )
 
 
-def bridge(prompt, etiqueta, cfg, forzar=False):
+HOY = datetime.date.today()
+RX_NO_LATINO = re.compile(r'[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff'
+                          r'\uac00-\ud7af\u0400-\u04ff\u0600-\u06ff\u0900-\u097f]')
+# Años sueltos anteriores al actual. Se permiten los de normativa citada
+# (Reglamento 1169/2011, RD 3484/2000…), que van pegados a una barra o a «RD».
+RX_ANIO_VIEJO = re.compile(r'(?<![/\d])\b(19\d\d|20[0-2]\d)\b(?!/)')
+# Un año pasado sólo es un defecto si cuelga de una petición de PRECIOS o de
+# datos de mercado, que es lo que caduca. Un año histórico es legítimo y
+# abundante: el bloque de historia de cada recetario está lleno de ellos, y la
+# primera versión de este gate tumbó el bloque 7 de Cocina Italiana por un 1982
+# que era correcto. Se mira una ventana alrededor del año, no el texto entero,
+# para no contaminar un bloque completo por una palabra suelta.
+RX_MERCADO = re.compile(
+    r'precio|coste|cost[eo]s|HORECA|tarifa|mercado|escandallo|presupuesto|€', re.I)
+VENTANA = 90
+
+
+def valida(txt, etiqueta, guardar_rechazo=None):
+    """Rechaza lo que NO puede llegar a una tabla de prompts copiables.
+
+    Va aquí y no en una revisión posterior porque estos dos fallos son
+    invisibles a ojo dentro de 105 filas: el lector copia el prompt tal cual y
+    el error se ejecuta en la plataforma. Se aplica con CUALQUIER modelo —
+    cambiar de motor baja la probabilidad, no la elimina.
+    """
+    problemas = []
+    raros = RX_NO_LATINO.findall(txt)
+    if raros:
+        problemas.append('%d caracteres fuera del alfabeto latino: %s'
+                         % (len(raros), ' '.join(sorted(set(raros))[:10])))
+
+    caducos = []
+    for m in RX_ANIO_VIEJO.finditer(txt):
+        if int(m.group(1)) >= HOY.year:
+            continue
+        ventana = txt[max(0, m.start() - VENTANA):m.end() + VENTANA]
+        if RX_MERCADO.search(ventana):
+            caducos.append('%s → …%s…' % (m.group(1), ventana.replace('\n', ' ')[:150]))
+    if caducos:
+        problemas.append('precios o costes pedidos con un año anterior a %d — el lector '
+                         'copia el prompt tal cual y acabaría pidiendo datos caducados:\n     %s'
+                         % (HOY.year, '\n     '.join(caducos[:4])))
+
+    if problemas:
+        # Guardar lo rechazado: sin esto no hay forma de ver POR QUÉ falló, porque
+        # la respuesta no llega a cachearse. Lo aprendí tumbando el bloque 7.
+        if guardar_rechazo:
+            guardar_rechazo.write_text(txt, encoding='utf-8')
+            print('   (respuesta rechazada guardada en %s)' % guardar_rechazo, flush=True)
+        sys.exit('❌ %s no pasa la validación:\n   · %s\n   Revisa el .rechazado, borra '
+                 '%s/<slug>-%s.txt si existe y reejecuta.'
+                 % (etiqueta, '\n   · '.join(problemas), CACHE, etiqueta))
+
+
+def bridge(prompt, etiqueta, cfg, forzar=False, modelo=None):
     """Llama a bridge.py y cachea la salida en /tmp para poder reensamblar gratis."""
     CACHE.mkdir(exist_ok=True)
     destino = CACHE / ('%s-%s.txt' % (cfg['slug'], etiqueta))
     if destino.exists() and not forzar:
-        return destino.read_text(encoding='utf-8')
+        txt = destino.read_text(encoding='utf-8')
+        valida(txt, etiqueta)   # también lo cacheado: puede venir de otra tanda
+        return txt
     contexto = (
         'AGENTE: %s\nQUÉ HACE (resumen fiel de su configuración): %s\n'
         'PÚBLICO: %s\n\n' % (cfg['agente'], cfg['que_hace'], cfg['publico'])
     )
     cmd = [PYBRIDGE, str(BRIDGE), '--task', 'content', '--domain', 'aichef', '--lang', 'es',
-           '--system', SYSTEM, '--max-tokens', str(MAX_TOKENS),
+           '--model', modelo or MODELO,
+           '--system', SYSTEM.format(hoy=HOY.strftime('%d/%m/%Y'), anio=HOY.year),
+           '--max-tokens', str(MAX_TOKENS),
            '--prompt', contexto + prompt]
-    print('  bridge → %s …' % etiqueta, flush=True)
+    print('  bridge[%s] → %s …' % ((modelo or MODELO).split('/')[-1], etiqueta), flush=True)
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
     if r.returncode != 0:
         sys.exit('bridge falló en %s:\n%s' % (etiqueta, r.stderr[-800:]))
     txt = r.stdout.strip()
     if len(txt) < 200:
         sys.exit('bridge devolvió respuesta vacía o mínima en %s (¿max-tokens?)' % etiqueta)
+    valida(txt, etiqueta, destino.with_suffix('.rechazado'))
     destino.write_text(txt, encoding='utf-8')
     return txt
 
@@ -213,6 +305,8 @@ def main():
     ap.add_argument('--config', required=True)
     ap.add_argument('--solo-bloque', type=int, default=0, help='regenera sólo ese bloque (1-7)')
     ap.add_argument('--ensamblar', action='store_true', help='no llama a la API, usa la caché')
+    ap.add_argument('--modelo', default=MODELO,
+                    help='slug de OpenRouter; por defecto %s (ver la nota de MODELO)' % MODELO)
     args = ap.parse_args()
 
     ruta = Path(args.config)
@@ -229,8 +323,10 @@ def main():
             f = CACHE / ('%s-%s.txt' % (cfg['slug'], etiqueta))
             if not f.exists():
                 sys.exit('falta la caché de %s; corre sin --ensamblar' % etiqueta)
-            return f.read_text(encoding='utf-8')
-        return bridge(prompt, etiqueta, cfg, forzar)
+            txt = f.read_text(encoding='utf-8')
+            valida(txt, etiqueta)   # reensamblar no es excusa para saltarse el gate
+            return txt
+        return bridge(prompt, etiqueta, cfg, forzar, args.modelo)
 
     # 1) Apertura: dos secciones de contexto
     apertura = pedir('apertura', (

@@ -1,0 +1,70 @@
+{
+  "agente": "Cocina Italiana",
+  "slug": "libreria-de-prompts-para-cocina-italiana-ai",
+  "fecha": "2026-08-08",
+  "title": "Prompts para Aprovechar al Máximo el Recetario: Cocina Italiana",
+  "description": "Cocina Italiana: 105 prompts para pastas y risottos con medidas exactas, producto DOP con alternativas accesibles y escandallos con columna de merma real.",
+  "que_hace": "Recetario de cocina italiana regional y tradicional para uso profesional, con dominio de las cocinas de todas las regiones y de la diferencia entre el norte de mantequilla, arroz y polenta y el sur de aceite de oliva, tomate y pasta seca. Antes de desarrollar cualquier receta investiga las variantes regionales y las referencias más auténticas, priorizando las fuentes italianas y las versiones de origen tradicional. Sitúa cada plato en su región, cuenta su historia y su importancia cultural, y especifica el producto con denominación de origen que lo define, ofreciendo siempre alternativas accesibles cuando esa denominación no está disponible. Sus áreas son las pastas frescas y secas, los risottos, las polentas y los gnocchi; las carnes, pescados y mariscos a la manera clásica; la panadería y la pastelería tradicional; y las conservas y fermentados. Las medidas siguen un formato estricto: gramos por debajo del kilo, kilos por encima, mililitros y litros en líquidos, equivalencia entre paréntesis cuando la cantidad va en unidades, y la sal y la pimienta SIEMPRE en gramos, nunca «al gusto». Recomienda el utensilio tradicional adecuado en cada fase y redacta pasos reproducibles con temperaturas exactas, tiempos concretos y texturas descritas. En escandallos pregunta la ciudad, busca precios del canal HORECA del mes en curso y devuelve una tabla con cantidad bruta, porcentaje de merma, cantidad neta, precio por kilo, subtotal y coste por ración. Genera imágenes de alta calidad del plato y exporta el escandallo a CSV o la conversación completa a PDF. Responde en español, inglés, italiano o el idioma que use el usuario.",
+  "publico": "chefs, jefes de cocina y propietarios de trattorias, pizzerías, restaurantes italianos y cocinas de autor que trabajan producto y recetario italiano en España",
+  "featured": {
+    "src": "/blog-assets/2026/08/cocina-italiana-destacada-pasta-fresca.jpg",
+    "alt": "Tiras de pasta fresca recién cortadas sobre una mesa de madera enharinada de un obrador, con el rodillo y la sémola al lado"
+  },
+  "img1": {
+    "src": "/blog-assets/2026/08/cocina-italiana-producto-dop.jpg",
+    "alt": "Cuña de queso curado, tomates San Marzano, aceite de oliva y jamón curado dispuestos sobre una tabla de mármol en la mesa de trabajo de una cocina"
+  },
+  "img2": {
+    "src": "/blog-assets/2026/08/cocina-italiana-produccion-servicio.jpg",
+    "alt": "Bandejas de pasta fresca porcionada y etiquetada en un carro de producción, listas para el servicio de una cocina profesional"
+  },
+  "bloques": [
+    {
+      "titulo": "Pastas, Risottos, Gnocchi y Polentas",
+      "categoria": "Pastas y primi",
+      "foco": "desarrollar los primi de verdad: pasta fresca y seca con su formato correcto para cada salsa, hidratación y sémola, risottos por variedad de arroz y punto de mantecatura, gnocchi y polentas, todo con medidas exactas y el utensilio tradicional que corresponde a cada fase"
+    },
+    {
+      "titulo": "Las Cocinas Regionales de Italia",
+      "categoria": "Cocina regional",
+      "foco": "trabajar región por región y entender la frontera real entre el norte de mantequilla, arroz y polenta y el sur de aceite, tomate y pasta seca; identificar la versión auténtica de un plato frente a la versión internacionalizada, y elegir la variante que encaja con tu carta"
+    },
+    {
+      "titulo": "Producto DOP, IGP y Alternativas Accesibles",
+      "categoria": "Producto DOP",
+      "foco": "especificar la denominación de origen que define cada plato y, sobre todo, resolver el problema real de una cocina española: qué sustituto usar cuando ese producto no llega, no cabe en el escandallo o rompe el margen, y cómo declararlo en la carta sin faltar a la verdad"
+    },
+    {
+      "titulo": "Escandallos con Merma y Coste por Ración",
+      "categoria": "Escandallos y costes",
+      "foco": "montar la tabla de escandallo completa indicando la ciudad para que los precios sean HORECA y del mes en curso: cantidad bruta, porcentaje de merma, cantidad neta, precio por kilo, subtotal y coste por ración, y exportarla a CSV para seguir trabajándola en tu hoja de cálculo"
+    },
+    {
+      "titulo": "Panadería y Pastelería Tradicional Italiana",
+      "categoria": "Dolci y panificados",
+      "foco": "los dolci y los panificados clásicos con precisión de obrador: masas y fermentaciones largas, cremas y almíbares, temperaturas y tiempos exactos, conservación y vida útil, y cómo encajarlos en la carta de postres de un restaurante que no tiene pastelero"
+    },
+    {
+      "titulo": "Producción, Fichas Técnicas y Servicio",
+      "categoria": "Producción y fichas",
+      "foco": "pasar de la receta a la producción: escalar cantidades manteniendo el punto, decidir qué se elabora en lote y qué a la minuta, montar la ficha técnica reproducible entre turnos con rendimiento, conservación y alérgenos, y organizar el pase"
+    },
+    {
+      "titulo": "Historia, Región y Relato en la Carta",
+      "categoria": "Carta y sala",
+      "foco": "aprovechar el origen regional y la historia del plato para escribir la carta y formar a la sala, defender la autenticidad frente al tópico, y justificar con el relato por qué un plato lleva un producto concreto y cuesta lo que cuesta"
+    }
+  ],
+  "productos": ["kit-escandallos", "kit-tareas-pizzeria", "pro-prompts-ebook"],
+  "enlaces": [
+    ["libreria-de-prompts-para-cocina-espanola-ai", "Prompts para Cocina Española"],
+    ["libreria-de-prompts-para-pizzero-consultor-pro-ai", "Prompts para Pizzero Consultor Pro"],
+    ["libreria-de-prompts-para-panaderia-creativa-ai", "Prompts para Panadería Creativa"],
+    ["libreria-de-prompts-para-pasteleria-creativa-ai", "Prompts para Pastelería Creativa"],
+    ["libreria-de-prompts-para-recetario-cocina-creativa-ai", "Prompts para Cocina Creativa"],
+    ["libreria-de-prompts-para-chef-consultor-pro-ai", "Prompts para Chef Consultor Pro"],
+    ["libreria-de-prompts-para-mermas-gencal", "Prompts para Mermas GenCal"],
+    ["libreria-de-prompts-para-id-alergenos", "Prompts para ID Alérgenos"],
+    ["libreria-de-prompts-para-sommelier-consultor-pro-ai", "Prompts para Sommelier Consultor Pro"]
+  ]
+}

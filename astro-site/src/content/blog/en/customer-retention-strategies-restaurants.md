@@ -108,7 +108,7 @@ imageAlt: "Happy restaurant guest receiving loyalty card from smiling server in 
 <h3>6. Surprise and Delight</h3>
 <p>Expected excellence earns routine visits; unexpected generosity creates memorable moments worth sharing. Strategic surprise-and-delight tactics transform satisfied customers into enthusiastic advocates who tell friends about their extraordinary experience.</p>
 <ul>
-<li><strong>Random complimentary items:</strong> Occasionally sending a dessert or appetizer to a table (especially regulars) creates delight. The unpredictability enhances the impact—&#8221;You never know what惊喜 (surprise) might come.&#8221;</li>
+<li><strong>Random complimentary items:</strong> Occasionally sending a dessert or appetizer to a table (especially regulars) creates delight. The unpredictability enhances the impact—&#8221;You never know what surprise might come.&#8221;</li>
 <li><strong>Menu upgrades:</strong> Complimentary dish upgrades for loyal guests demonstrate appreciation without significant cost. A premium appetizer costs $5-8 wholesale but feels luxurious to the recipient.</li>
 <li><strong>Handwritten notes:</strong> In an age of digital communication, handwritten acknowledgment carries remarkable weight. A simple &#8220;Thank you for being a loyal guest&#8221; on a receipt or card creates keepsakes.</li>
 <li><strong>Exclusive previews:</strong> Inviting regulars to try new menu items before the general public makes them feel like insiders. This priority treatment rewards their loyalty and generates valuable feedback.</li>

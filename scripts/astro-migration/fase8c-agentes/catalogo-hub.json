@@ -1,417 +1,417 @@
 [
- {
-  "categoria": "Creatividad Culinaria",
-  "agentes": [
-   {
-    "nombre": "Cocina Creativa",
-    "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
-   },
-   {
-    "nombre": "Pastelería Creativa",
-    "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
-   },
-   {
-    "nombre": "Chocolatería Creativa",
-    "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
-   },
-   {
-    "nombre": "Heladería Creativa",
-    "post": "libreria-de-prompts-para-heladeria-creativa-ai"
-   },
-   {
-    "nombre": "Panadería Creativa",
-    "post": "libreria-de-prompts-para-panaderia-creativa-ai"
-   },
-   {
-    "nombre": "Fermentus Con AI+",
-    "post": "libreria-de-prompts-para-fermentus-ai"
-   },
-   {
-    "nombre": "VegChef Plant-Based",
-    "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
-   },
-   {
-    "nombre": "Food Pairing AI",
-    "post": "libreria-de-prompts-para-food-pairing-ai"
-   }
-  ]
- },
- {
-  "categoria": "Gastro Conocimiento",
-  "agentes": [
-   {
-    "nombre": "Gastro Lexicum",
-    "post": "libreria-de-prompts-para-gastro-lexicum-ai"
-   }
-  ]
- },
- {
-  "categoria": "Consultoría Gastro Pro",
-  "agentes": [
-   {
-    "nombre": "Consultor Gastronómico",
-    "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
-   },
-   {
-    "nombre": "Chef Consultor Pro",
-    "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
-   },
-   {
-    "nombre": "Heladero Consultor Pro",
-    "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
-   },
-   {
-    "nombre": "Chocolatero Consultor Pro",
-    "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
-   },
-   {
-    "nombre": "Pastelero Consultor Pro",
-    "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
-   },
-   {
-    "nombre": "Pizzero Consultor Pro",
-    "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
-   },
-   {
-    "nombre": "Barista Consultor Pro",
-    "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
-   },
-   {
-    "nombre": "Sommelier Consultor Pro",
-    "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
-   },
-   {
-    "nombre": "Bartender Consultor Pro",
-    "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
-   },
-   {
-    "nombre": "Panadero Consultor Pro",
-    "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
-   }
-  ]
- },
- {
-  "categoria": "Gastro Profile Pro",
-  "agentes": [
-   {
-    "nombre": "Chef Privado Pro",
-    "post": "libreria-de-prompts-para-chef-privado-pro-ai"
-   },
-   {
-    "nombre": "Chef Ejecutivo Pro",
-    "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
-   },
-   {
-    "nombre": "Gerente de Restaurante Pro",
-    "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
-   },
-   {
-    "nombre": "Comida del Personal",
-    "post": "libreria-de-prompts-para-comida-de-personal"
-   }
-  ]
- },
- {
-  "categoria": "Hotel & Hospitality AI Pro",
-  "agentes": [
-   {
-    "nombre": "Hotel Staff Meal Planner",
-    "post": null
-   },
-   {
-    "nombre": "Hotel Bar & Lounge Menu AI",
-    "post": null
-   },
-   {
-    "nombre": "In-Room Dining Optimizer",
-    "post": null
-   },
-   {
-    "nombre": "F&B Reporting Assistant",
-    "post": null
-   },
-   {
-    "nombre": "Buffet Master AI",
-    "post": null
-   },
-   {
-    "nombre": "Hotel Pastelería & Panadería Pro",
-    "post": null
-   },
-   {
-    "nombre": "Desarrollador de Conceptos F&B",
-    "post": null
-   },
-   {
-    "nombre": "Hotel F&B Cost Controller",
-    "post": null
-   },
-   {
-    "nombre": "Mini-Bar & Amenities AI",
-    "post": null
-   },
-   {
-    "nombre": "Diseñador de Menú Room Service",
-    "post": null
-   },
-   {
-    "nombre": "Banquet Event Order AI",
-    "post": null
-   },
-   {
-    "nombre": "Hotel Menu Engineering Pro",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Recetarios de Europa",
-  "agentes": [
-   {
-    "nombre": "Cocina Alemana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Belga",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Británica",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Croata",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Española",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Francesa",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Griega",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Italiana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Países Bajos",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Portuguesa",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Suiza",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Turca",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Recetarios de Latam",
-  "agentes": [
-   {
-    "nombre": "Cocina Argentina",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Brasileña",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Chilena",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Colombiana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Dominicana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Ecuatoriana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Jamaicana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Mexicana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Paraguaya",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Peruana",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Venezolana",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Recetarios de Asia",
-  "agentes": [
-   {
-    "nombre": "Cocina China",
-    "post": null
-   },
-   {
-    "nombre": "Cocina India",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Japonesa",
-    "post": null
-   },
-   {
-    "nombre": "Cocina Tailandesa",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Herramientas y Utilities",
-  "agentes": [
-   {
-    "nombre": "ID Alérgenos",
-    "post": "libreria-de-prompts-para-id-alergenos"
-   },
-   {
-    "nombre": "Mermas GenCal",
-    "post": "libreria-de-prompts-para-mermas-gencal"
-   },
-   {
-    "nombre": "Calcula Pax",
-    "post": null
-   },
-   {
-    "nombre": "Conversor Ing",
-    "post": null
-   },
-   {
-    "nombre": "Mental Coach",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Conceptos de Negocio",
-  "agentes": [
-   {
-    "nombre": "Catering AI+",
-    "post": "libreria-de-prompts-para-catering-ai"
-   },
-   {
-    "nombre": "Burger Pro AI+",
-    "post": "libreria-de-prompts-para-burger-pro-ai"
-   },
-   {
-    "nombre": "Food Truck AI+",
-    "post": null
-   },
-   {
-    "nombre": "Bar & Lounge AI+",
-    "post": null
-   },
-   {
-    "nombre": "Casual Restaurants AI+",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Proveedores Gastro",
-  "agentes": [
-   {
-    "nombre": "Sosa Ingredients Agent",
-    "post": null
-   },
-   {
-    "nombre": "tSpoonLab Agent",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Contenidos y RRSS",
-  "agentes": [
-   {
-    "nombre": "InstaFlow AI Pro",
-    "post": null
-   },
-   {
-    "nombre": "PinterAI Content Pro",
-    "post": null
-   },
-   {
-    "nombre": "Pinterest Pins Gen",
-    "post": null
-   },
-   {
-    "nombre": "BlogPost SEO Gen+",
-    "post": null
-   },
-   {
-    "nombre": "Keyword Discovery AI+",
-    "post": null
-   },
-   {
-    "nombre": "MenuDish Local SEO",
-    "post": null
-   },
-   {
-    "nombre": "Gastro Calendar",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Modelos IA + LLM",
-  "agentes": [
-   {
-    "nombre": "ChatGPT 5.5",
-    "post": null
-   },
-   {
-    "nombre": "Sonar Deep Research",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Otras Plataformas",
-  "agentes": [
-   {
-    "nombre": "Timlup – Asistente de Checklists",
-    "post": null
-   }
-  ]
- },
- {
-  "categoria": "Sobre Mí",
-  "agentes": [
-   {
-    "nombre": "¿Quién Soy?",
-    "post": null
-   }
-  ]
- }
+  {
+    "categoria": "Creatividad Culinaria",
+    "agentes": [
+      {
+        "nombre": "Cocina Creativa",
+        "post": "libreria-de-prompts-para-recetario-cocina-creativa-ai"
+      },
+      {
+        "nombre": "Pastelería Creativa",
+        "post": "libreria-de-prompts-para-pasteleria-creativa-ai"
+      },
+      {
+        "nombre": "Chocolatería Creativa",
+        "post": "libreria-de-prompts-para-chocolateria-creativa-ai"
+      },
+      {
+        "nombre": "Heladería Creativa",
+        "post": "libreria-de-prompts-para-heladeria-creativa-ai"
+      },
+      {
+        "nombre": "Panadería Creativa",
+        "post": "libreria-de-prompts-para-panaderia-creativa-ai"
+      },
+      {
+        "nombre": "Fermentus Con AI+",
+        "post": "libreria-de-prompts-para-fermentus-ai"
+      },
+      {
+        "nombre": "VegChef Plant-Based",
+        "post": "libreria-de-prompts-para-vegchef-plant-based-ai"
+      },
+      {
+        "nombre": "Food Pairing AI",
+        "post": "libreria-de-prompts-para-food-pairing-ai"
+      }
+    ]
+  },
+  {
+    "categoria": "Gastro Conocimiento",
+    "agentes": [
+      {
+        "nombre": "Gastro Lexicum",
+        "post": "libreria-de-prompts-para-gastro-lexicum-ai"
+      }
+    ]
+  },
+  {
+    "categoria": "Consultoría Gastro Pro",
+    "agentes": [
+      {
+        "nombre": "Consultor Gastronómico",
+        "post": "libreria-de-prompts-para-consultor-gastronomico-ai"
+      },
+      {
+        "nombre": "Chef Consultor Pro",
+        "post": "libreria-de-prompts-para-chef-consultor-pro-ai"
+      },
+      {
+        "nombre": "Heladero Consultor Pro",
+        "post": "libreria-de-prompts-para-heladero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Chocolatero Consultor Pro",
+        "post": "libreria-de-prompts-para-chocolatero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Pastelero Consultor Pro",
+        "post": "libreria-de-prompts-para-pastelero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Pizzero Consultor Pro",
+        "post": "libreria-de-prompts-para-pizzero-consultor-pro-ai"
+      },
+      {
+        "nombre": "Barista Consultor Pro",
+        "post": "libreria-de-prompts-para-barista-consultor-pro-ai"
+      },
+      {
+        "nombre": "Sommelier Consultor Pro",
+        "post": "libreria-de-prompts-para-sommelier-consultor-pro-ai"
+      },
+      {
+        "nombre": "Bartender Consultor Pro",
+        "post": "libreria-de-prompts-para-bartender-consultor-pro-ai"
+      },
+      {
+        "nombre": "Panadero Consultor Pro",
+        "post": "libreria-de-prompts-para-panadero-consultor-pro-ai"
+      }
+    ]
+  },
+  {
+    "categoria": "Gastro Profile Pro",
+    "agentes": [
+      {
+        "nombre": "Chef Privado Pro",
+        "post": "libreria-de-prompts-para-chef-privado-pro-ai"
+      },
+      {
+        "nombre": "Chef Ejecutivo Pro",
+        "post": "libreria-de-prompts-para-chef-ejecutivo-pro-ai"
+      },
+      {
+        "nombre": "Gerente de Restaurante Pro",
+        "post": "libreria-de-prompts-para-gerente-de-restaurante-pro-ai"
+      },
+      {
+        "nombre": "Comida del Personal",
+        "post": "libreria-de-prompts-para-comida-de-personal"
+      }
+    ]
+  },
+  {
+    "categoria": "Hotel & Hospitality AI Pro",
+    "agentes": [
+      {
+        "nombre": "Hotel Staff Meal Planner",
+        "post": null
+      },
+      {
+        "nombre": "Hotel Bar & Lounge Menu AI",
+        "post": null
+      },
+      {
+        "nombre": "In-Room Dining Optimizer",
+        "post": null
+      },
+      {
+        "nombre": "F&B Reporting Assistant",
+        "post": null
+      },
+      {
+        "nombre": "Buffet Master AI",
+        "post": null
+      },
+      {
+        "nombre": "Hotel Pastelería & Panadería Pro",
+        "post": null
+      },
+      {
+        "nombre": "Desarrollador de Conceptos F&B",
+        "post": null
+      },
+      {
+        "nombre": "Hotel F&B Cost Controller",
+        "post": null
+      },
+      {
+        "nombre": "Mini-Bar & Amenities AI",
+        "post": null
+      },
+      {
+        "nombre": "Diseñador de Menú Room Service",
+        "post": null
+      },
+      {
+        "nombre": "Banquet Event Order AI",
+        "post": null
+      },
+      {
+        "nombre": "Hotel Menu Engineering Pro",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Europa",
+    "agentes": [
+      {
+        "nombre": "Cocina Alemana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Belga",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Británica",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Croata",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Española",
+        "post": "libreria-de-prompts-para-cocina-espanola-ai"
+      },
+      {
+        "nombre": "Cocina Francesa",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Griega",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Italiana",
+        "post": "libreria-de-prompts-para-cocina-italiana-ai"
+      },
+      {
+        "nombre": "Cocina Países Bajos",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Portuguesa",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Suiza",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Turca",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Latam",
+    "agentes": [
+      {
+        "nombre": "Cocina Argentina",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Brasileña",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Chilena",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Colombiana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Dominicana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Ecuatoriana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Jamaicana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Mexicana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Paraguaya",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Peruana",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Venezolana",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Recetarios de Asia",
+    "agentes": [
+      {
+        "nombre": "Cocina China",
+        "post": null
+      },
+      {
+        "nombre": "Cocina India",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Japonesa",
+        "post": null
+      },
+      {
+        "nombre": "Cocina Tailandesa",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Herramientas y Utilities",
+    "agentes": [
+      {
+        "nombre": "ID Alérgenos",
+        "post": "libreria-de-prompts-para-id-alergenos"
+      },
+      {
+        "nombre": "Mermas GenCal",
+        "post": "libreria-de-prompts-para-mermas-gencal"
+      },
+      {
+        "nombre": "Calcula Pax",
+        "post": null
+      },
+      {
+        "nombre": "Conversor Ing",
+        "post": null
+      },
+      {
+        "nombre": "Mental Coach",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Conceptos de Negocio",
+    "agentes": [
+      {
+        "nombre": "Catering AI+",
+        "post": "libreria-de-prompts-para-catering-ai"
+      },
+      {
+        "nombre": "Burger Pro AI+",
+        "post": "libreria-de-prompts-para-burger-pro-ai"
+      },
+      {
+        "nombre": "Food Truck AI+",
+        "post": null
+      },
+      {
+        "nombre": "Bar & Lounge AI+",
+        "post": null
+      },
+      {
+        "nombre": "Casual Restaurants AI+",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Proveedores Gastro",
+    "agentes": [
+      {
+        "nombre": "Sosa Ingredients Agent",
+        "post": null
+      },
+      {
+        "nombre": "tSpoonLab Agent",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Contenidos y RRSS",
+    "agentes": [
+      {
+        "nombre": "InstaFlow AI Pro",
+        "post": null
+      },
+      {
+        "nombre": "PinterAI Content Pro",
+        "post": null
+      },
+      {
+        "nombre": "Pinterest Pins Gen",
+        "post": null
+      },
+      {
+        "nombre": "BlogPost SEO Gen+",
+        "post": null
+      },
+      {
+        "nombre": "Keyword Discovery AI+",
+        "post": null
+      },
+      {
+        "nombre": "MenuDish Local SEO",
+        "post": null
+      },
+      {
+        "nombre": "Gastro Calendar",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Modelos IA + LLM",
+    "agentes": [
+      {
+        "nombre": "ChatGPT 5.5",
+        "post": null
+      },
+      {
+        "nombre": "Sonar Deep Research",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Otras Plataformas",
+    "agentes": [
+      {
+        "nombre": "Timlup – Asistente de Checklists",
+        "post": null
+      }
+    ]
+  },
+  {
+    "categoria": "Sobre Mí",
+    "agentes": [
+      {
+        "nombre": "¿Quién Soy?",
+        "post": null
+      }
+    ]
+  }
 ]

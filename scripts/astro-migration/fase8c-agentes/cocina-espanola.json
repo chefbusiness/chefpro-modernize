@@ -1,0 +1,70 @@
+{
+  "agente": "Cocina Española",
+  "slug": "libreria-de-prompts-para-cocina-espanola-ai",
+  "fecha": "2026-08-08",
+  "title": "Prompts para Aprovechar al Máximo el Recetario: Cocina Española",
+  "description": "Cocina Española: 105 prompts para sacar recetas con medidas exactas, escandallos con precios HORECA de tu ciudad, mermas reales y fichas técnicas reproducibles.",
+  "que_hace": "Recetario de cocina española regional y nacional para uso profesional. Entrega recetas con medidas exactas y un formato estricto: gramos por debajo del kilo, kilos por encima, mililitros y litros en líquidos, y equivalencia entre paréntesis cuando la cantidad va en unidades. Su rasgo más distintivo es que la sal y la pimienta se pesan SIEMPRE en gramos, nunca «al gusto», lo que convierte cualquier receta en algo reproducible entre turnos. Acompaña cada plato de su origen, su historia y su contexto cultural, y desarrolla las instrucciones paso a paso con precisión. Calcula escandallos de coste preguntando primero la ciudad o el país, buscando precios actualizados del canal HORECA (profesional, no retail) para el mes en curso, y aplicando porcentajes de merma en pescados, carnes, aves y verduras premium para que el coste por ración sea realista y no teórico. Devuelve la tabla de escandallo con cantidad, precio por unidad, subtotal, columna de mermas y coste por ración. Genera imágenes de alta calidad del plato cuando aplica. Al terminar, exporta el escandallo a CSV (para abrir en Excel, Sheets o Numbers) o la conversación completa con receta y escandallo a PDF. Trabaja en español y en inglés.",
+  "publico": "chefs, jefes de cocina, propietarios de restaurante y responsables de escandallos que trabajan cocina española, tanto en España como en restaurantes españoles del exterior",
+  "featured": {
+    "src": "/blog-assets/2026/08/cocina-espanola-destacada-pase.jpg",
+    "alt": "Plato de cocina española tradicional terminado en el pase de una cocina profesional, con la comanda y las pinzas al lado"
+  },
+  "img1": {
+    "src": "/blog-assets/2026/08/cocina-espanola-bascula-gramos.jpg",
+    "alt": "Báscula de precisión con sal pesada en gramos junto a una ficha de receta escrita, sobre la encimera de acero de una cocina profesional"
+  },
+  "img2": {
+    "src": "/blog-assets/2026/08/cocina-espanola-producto-regional.jpg",
+    "alt": "Producto español de temporada dispuesto por regiones sobre una mesa de trabajo: pimentón, azafrán, legumbres, aceite de oliva y pescado fresco"
+  },
+  "bloques": [
+    {
+      "titulo": "Recetas Tradicionales con Medidas Exactas",
+      "categoria": "Recetas y medidas",
+      "foco": "obtener recetas de los platos clásicos españoles en formato profesional y reproducible: ingredientes en gramos, kilos, mililitros y litros según la cantidad, equivalencias entre paréntesis cuando van en unidades, y la sal y la pimienta SIEMPRE pesadas en gramos en lugar de «al gusto», que es lo que permite que dos cocineros distintos saquen el mismo plato"
+    },
+    {
+      "titulo": "Las Cocinas Regionales de España",
+      "categoria": "Cocina regional",
+      "foco": "trabajar las cocinas de cada región española y las variantes de un mismo plato según la zona, el producto local y de temporada, las denominaciones de origen, y cómo elegir la versión que encaja con la despensa y el cliente de tu establecimiento"
+    },
+    {
+      "titulo": "Escandallos con Precios Reales de tu Ciudad",
+      "categoria": "Escandallos y costes",
+      "foco": "montar el escandallo de un plato indicando la ciudad o el país para que los precios sean del canal HORECA y del mes en curso, no de supermercado ni de hace dos años; obtener la tabla completa con cantidad, precio por unidad, subtotal, coste total y coste por ración, y exportarla a CSV"
+    },
+    {
+      "titulo": "Mermas y Rendimiento del Producto",
+      "categoria": "Mermas y rendimiento",
+      "foco": "incorporar el porcentaje de merma de pescados, carnes, aves y verduras premium al cálculo de costes para que el escandallo refleje el peso neto que de verdad llega al plato, y detectar en qué elaboraciones la merma se está comiendo el margen sin que nadie lo mire"
+    },
+    {
+      "titulo": "Escalado a Producción y Servicio",
+      "categoria": "Producción y escalado",
+      "foco": "llevar una receta de cuatro raciones a la producción real de un servicio o un banquete manteniendo proporciones y punto, planificar la mise en place por partidas, decidir qué se elabora en lote y qué a la minuta, y organizar la regeneración sin perder calidad"
+    },
+    {
+      "titulo": "Fichas Técnicas, Conservación y Alérgenos",
+      "categoria": "Fichas técnicas",
+      "foco": "convertir la receta en una ficha técnica que cualquiera del equipo pueda ejecutar igual, con rendimiento, tiempos, temperaturas, vida útil, condiciones de conservación, declaración de alérgenos y todo lo que la inspección va a pedir"
+    },
+    {
+      "titulo": "Historia del Plato para la Carta y la Sala",
+      "categoria": "Carta y sala",
+      "foco": "aprovechar el origen, la historia y el contexto cultural de cada plato para escribir la descripción de la carta, formar al equipo de sala en lo que tiene que contar al comensal, y justificar el precio de un clásico con su relato en lugar de con adjetivos vacíos"
+    }
+  ],
+  "productos": ["kit-escandallos", "kit-inventario", "pro-prompts-ebook"],
+  "enlaces": [
+    ["libreria-de-prompts-para-recetario-cocina-creativa-ai", "Prompts para Cocina Creativa"],
+    ["libreria-de-prompts-para-chef-consultor-pro-ai", "Prompts para Chef Consultor Pro"],
+    ["libreria-de-prompts-para-chef-ejecutivo-pro-ai", "Prompts para Chef Ejecutivo Pro"],
+    ["libreria-de-prompts-para-mermas-gencal", "Prompts para Mermas GenCal"],
+    ["libreria-de-prompts-para-id-alergenos", "Prompts para ID Alérgenos"],
+    ["libreria-de-prompts-para-gerente-de-restaurante-pro-ai", "Prompts para Gerente de Restaurante Pro"],
+    ["libreria-de-prompts-para-comida-de-personal", "Prompts para Comida de Personal"],
+    ["libreria-de-prompts-para-sommelier-consultor-pro-ai", "Prompts para Sommelier Consultor Pro"],
+    ["libreria-de-prompts-para-gastro-lexicum-ai", "Prompts para Gastro Lexicum"]
+  ]
+}
