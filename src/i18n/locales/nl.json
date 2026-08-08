@@ -1501,6 +1501,11 @@
       "subtitle": "Sluit u aan bij {{userCount}}+ professionals die AI al gebruiken om hun marges te beschermen en hun bedrijf te laten groeien.",
       "primary": "Nu gratis beginnen",
       "secondary": "Alle plannen bekijken"
+    },
+    "testimonial": {
+      "quote": "We hebben onze keukenverliezen in minder dan een maand teruggebracht van 14% naar 5%. De ROI was onmiddellijk: we betaalden het abonnement met wat we in de eerste week bespaarden.",
+      "name": "Laura García",
+      "role": "Directeur Operaties, Grupo Gastronómico BCN"
     }
   },
   "landingRestaurantes": {
@@ -1663,7 +1668,12 @@
       "primary": "Nu gratis uitproberen",
       "secondary": "Alle plannen bekijken"
     },
-    "breadcrumb": "AI-Tools voor Restaurants"
+    "breadcrumb": "AI-Tools voor Restaurants",
+    "testimonial": {
+      "quote": "We hebben onze keukenverliezen in minder dan een maand teruggebracht van 14% naar 5%. De ROI was onmiddellijk: we betaalden het abonnement met wat we in de eerste week bespaarden.",
+      "name": "Laura García",
+      "role": "Directeur Operaties, Grupo Gastronómico BCN"
+    }
   },
   "landingMenu": {
     "seo": {

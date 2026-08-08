@@ -231,12 +231,14 @@ export default function ReducirCostesRestaurante() {
                     </svg>
                   ))}
                 </div>
+                {/* Estaba cableado en castellano: era el único bloque en español
+                    de esta página en los 6 idiomas no españoles. */}
                 <p className="text-lg italic text-foreground mb-6">
-                  "Reducimos nuestras mermas del 14% al 5% en menos de un mes. El ROI fue inmediato: pagamos la suscripción con lo que ahorramos la primera semana."
+                  "{s('testimonial.quote')}"
                 </p>
                 <div>
-                  <p className="font-semibold">Laura García</p>
-                  <p className="text-sm text-muted-foreground">Directora de Operaciones, Grupo Gastronómico BCN</p>
+                  <p className="font-semibold">{s('testimonial.name')}</p>
+                  <p className="text-sm text-muted-foreground">{s('testimonial.role')}</p>
                 </div>
               </div>
             </div>

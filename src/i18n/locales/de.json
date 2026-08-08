@@ -1519,6 +1519,11 @@
       "subtitle": "Schließen Sie sich {{userCount}}+ Profis an, die bereits KI nutzen, um ihre Margen zu schützen und ihr Geschäft auszubauen.",
       "primary": "Jetzt kostenlos starten",
       "secondary": "Alle Pläne ansehen"
+    },
+    "testimonial": {
+      "quote": "Wir haben unsere Lebensmittelverluste von 14 % auf 5 % in weniger als einem Monat reduziert. Der ROI war sofort: Wir haben das Abonnement mit dem bezahlt, was wir in der ersten Woche gespart haben.",
+      "name": "Laura García",
+      "role": "Betriebsleiterin, Grupo Gastronómico BCN"
     }
   },
   "landingRestaurantes": {
@@ -1681,7 +1686,12 @@
       "primary": "Kostenlos ausprobieren",
       "secondary": "Alle Pläne ansehen"
     },
-    "breadcrumb": "KI-Tools für Restaurants"
+    "breadcrumb": "KI-Tools für Restaurants",
+    "testimonial": {
+      "quote": "Wir haben unsere Lebensmittelverluste von 14 % auf 5 % in weniger als einem Monat reduziert. Der ROI war sofort: Wir haben das Abonnement mit dem bezahlt, was wir in der ersten Woche gespart haben.",
+      "name": "Laura García",
+      "role": "Betriebsleiterin, Grupo Gastronómico BCN"
+    }
   },
   "landingMenu": {
     "seo": {

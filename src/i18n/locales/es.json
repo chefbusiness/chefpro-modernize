@@ -1250,6 +1250,11 @@
       "subtitle": "Únete a más de {{userCount}} profesionales que ya usan IA para proteger sus márgenes y hacer crecer su negocio.",
       "primary": "Empezar gratis ahora",
       "secondary": "Ver todos los planes"
+    },
+    "testimonial": {
+      "quote": "Reducimos nuestras mermas del 14% al 5% en menos de un mes. El ROI fue inmediato: pagamos la suscripción con lo que ahorramos la primera semana.",
+      "name": "Laura García",
+      "role": "Directora de Operaciones, Grupo Gastronómico BCN"
     }
   },
   "landingRestaurantes": {
@@ -1412,7 +1417,12 @@
       "primary": "Probar gratis ahora",
       "secondary": "Ver todos los planes"
     },
-    "breadcrumb": "Herramientas IA para Restaurantes"
+    "breadcrumb": "Herramientas IA para Restaurantes",
+    "testimonial": {
+      "quote": "Reducimos nuestras mermas del 14% al 5% en menos de un mes. El ROI fue inmediato: pagamos la suscripción con lo que ahorramos la primera semana.",
+      "name": "Laura García",
+      "role": "Directora de Operaciones, Grupo Gastronómico BCN"
+    }
   },
   "landingMenu": {
     "seo": {

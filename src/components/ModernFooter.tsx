@@ -5,6 +5,20 @@ import { Facebook, Instagram, Twitter, Youtube, Music } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import logoAiChefPro from '@/assets/logo-ai-chef-pro.svg';
 
+// El hub de herramientas gratuitas existe en los 7 idiomas. Antes estaba
+// cableado a /herramientas-gratuitas: las 17 páginas italianas que montan
+// ESTE footer (no el Footer.astro) enlazaban con etiqueta italiana a una
+// página en español.
+const FREE_TOOLS_SLUGS: Record<string, string> = {
+  es: 'herramientas-gratuitas',
+  en: 'en/free-tools-restaurants',
+  fr: 'fr/outils-gratuits-restaurant',
+  de: 'de/kostenlose-tools-restaurant',
+  it: 'it/strumenti-gratuiti-ristorante',
+  pt: 'pt/ferramentas-gratuitas-restaurante',
+  nl: 'nl/gratis-tools-restaurant',
+};
+
 const AI_TOOLS_SLUGS: Record<string, string> = {
   es: 'herramientas-ia-para-restaurantes',
   en: 'en/ai-tools-for-restaurants',
@@ -241,14 +255,19 @@ export default function ModernFooter() {
                   {t('footer.mentoria_online')}
                 </a>
               </li>
-              <li>
-                <a
-                  href="/formacion-presencial"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {t('footer.formacion_presencial')}
-                </a>
-              </li>
+              {/* Sólo ES: no hay página traducida y /it/formacion-presencial da 404.
+                  El Header y Footer.astro ya tenían este guard; este gemelo de la
+                  SPA no, y lo montan 17 páginas italianas vía island. */}
+              {lang === 'es' && (
+                <li>
+                  <a
+                    href="/formacion-presencial"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t('footer.formacion_presencial')}
+                  </a>
+                </li>
+              )}
               <li>
                 <a
                   href={getAppUrl(lang)}
@@ -390,7 +409,7 @@ export default function ModernFooter() {
               </li>
               <li>
                 <a
-                  href="/herramientas-gratuitas"
+                  href={`/${FREE_TOOLS_SLUGS[lang] || FREE_TOOLS_SLUGS.es}`}
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {t('footer.free_tools_hub')}

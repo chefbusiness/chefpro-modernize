@@ -1239,6 +1239,11 @@
       "subtitle": "Join {{userCount}}+ professionals who already use AI to protect their margins and grow their business.",
       "primary": "Start for free now",
       "secondary": "View all plans"
+    },
+    "testimonial": {
+      "quote": "We reduced our food waste from 14% to 5% in less than a month. The ROI was immediate: we paid for the subscription with what we saved in the first week.",
+      "name": "Laura García",
+      "role": "Director of Operations, Grupo Gastronómico BCN"
     }
   },
   "landingRestaurantes": {
@@ -1401,7 +1406,12 @@
       "primary": "Try for free now",
       "secondary": "View all plans"
     },
-    "breadcrumb": "AI Tools for Restaurants"
+    "breadcrumb": "AI Tools for Restaurants",
+    "testimonial": {
+      "quote": "We reduced our food waste from 14% to 5% in less than a month. The ROI was immediate: we paid for the subscription with what we saved in the first week.",
+      "name": "Laura García",
+      "role": "Director of Operations, Grupo Gastronómico BCN"
+    }
   },
   "landingMenu": {
     "seo": {

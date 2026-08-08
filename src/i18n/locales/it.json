@@ -1525,6 +1525,11 @@
       "subtitle": "Unisciti a oltre {{userCount}} professionisti che usano già l'IA per proteggere i loro margini e far crescere il loro business.",
       "primary": "Inizia gratis ora",
       "secondary": "Vedi tutti i piani"
+    },
+    "testimonial": {
+      "quote": "Abbiamo ridotto i nostri scarti dal 14% al 5% in meno di un mese. Il ROI è stato immediato: abbiamo pagato l'abbonamento con i risparmi della prima settimana.",
+      "name": "Laura García",
+      "role": "Direttrice delle Operazioni, Grupo Gastronómico BCN"
     }
   },
   "landingRestaurantes": {
@@ -1687,7 +1692,12 @@
       "primary": "Prova gratuitamente ora",
       "secondary": "Vedi tutti i piani"
     },
-    "breadcrumb": "Strumenti IA per Ristoranti"
+    "breadcrumb": "Strumenti IA per Ristoranti",
+    "testimonial": {
+      "quote": "Abbiamo ridotto i nostri scarti dal 14% al 5% in meno di un mese. Il ROI è stato immediato: abbiamo pagato l'abbonamento con i risparmi della prima settimana.",
+      "name": "Laura García",
+      "role": "Direttrice delle Operazioni, Grupo Gastronómico BCN"
+    }
   },
   "landingMenu": {
     "seo": {
