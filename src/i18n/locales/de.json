@@ -76,66 +76,80 @@
     "chefs_label": "Köche und Gastronomieprofis vertrauen uns"
   },
   "mentoriaOnline": {
+    "hero": {
+      "title": "AI Chef Pro Personalisiertes Online-Mentoring",
+      "subtitle": "Maximieren Sie das Potenzial von AI Chef Pro mit spezialisierter Beratung"
+    },
     "seo": {
       "title": "AI Chef Pro Personalisiertes Online-Mentoring - Maximieren Sie Ihr Potenzial",
       "description": "Strategische 1:1-Sessions mit Gastronomie- und KI-Experten zur Beschleunigung der Ergebnisse in Ihrem Unternehmen. Pläne ab 150€. Jetzt buchen.",
       "keywords": "ki tools restaurant, künstliche intelligenz gastronomie, restaurant management software ki, ki für restaurantbesitzer, ki tools für köche, kostenverwaltung restaurant ki, ki für bars und cafés, gastronomie ki KI-agenten, intelligente digitale speisekarte, speisekarte mit künstlicher intelligenz, profi koch ki, ki rezepte, gastronomie marketing ki, KI-Apps Küche, Anwendungen KI Gastronomie, künstliche Intelligenz Apps Restaurant"
     },
-    "hero": {
-      "title": "AI Chef Pro Mentoring",
-      "subtitle": "Integrieren Sie Professionelle Künstliche Intelligenz in Ihren Alltag. Wir bieten maßgeschneiderte Ausbildungs- und Beratungspläne.",
-      "cta": "Buchen Sie Ihr Mentoring Jetzt"
-    },
-    "secondHero": {
-      "title": "AI Chef Pro Personalisiertes Online-Mentoring",
-      "subtitle": "Maximieren Sie das Potenzial von AI Chef Pro mit spezialisierter Beratung",
+    "sections": {
       "description": "Strategische 1:1-Sessions mit Gastronomie- und KI-Experten zur Beschleunigung der Ergebnisse in Ihrem Unternehmen",
-      "imageAlt": "AI Chef Pro Beratung"
-    },
-    "benefits": {
-      "title": "Warum benötigen Sie eine personalisierte Beratung?",
-      "cards": [
-        {
+      "cta_button": "Buchen Sie Ihr Mentoring Jetzt",
+      "benefits": {
+        "title": "Warum benötigen Sie eine personalisierte Beratung?",
+        "accelerated_results": {
           "title": "Beschleunigte Ergebnisse",
           "description": "Reduzieren Sie Monate des Versuchs und Irrtums auf eine einzige strategische Session. Sofortiger ROI auf Ihre AI Chef Pro Investition."
         },
-        {
+        "custom_strategy": {
           "title": "Maßgeschneiderte Strategie",
           "description": "Erhalten Sie einen personalisierten Plan für Ihren spezifischen Typ von gastronomischem Unternehmen, angepasst an Ihre besonderen Ziele."
         },
-        {
+        "advanced_techniques": {
           "title": "Fortgeschrittene Techniken",
           "description": "Zugang zu exklusiven Methodologien und undokumentierten Prompts, die nur Expertennutzer kennen."
         },
-        {
+        "time_saving": {
           "title": "Zeitersparnis",
           "description": "Eliminieren Sie die Lernkurve und beginnen Sie vom ersten Tag an mit der Implementierung effektiver Lösungen."
         }
-      ]
-    },
-    "pricing": {
-      "title": "Unsere Online-Beratungs- und Mentoring-Pläne",
-      "description": "Wählen Sie den Plan, planen Sie das Mentoring und bereiten Sie sich darauf vor, das Potenzial der künstlichen Intelligenz, angewandt auf Restaurantmanagement und die Welt der Gastronomie und Hotellerie im Allgemeinen, in einer oder mehreren Sessions zu meistern.",
-      "plans": [
-        {
-          "name": "Express Session",
+      },
+      "specialization": {
+        "title": "Spezialisiertes Mentoring nach Berufsprofil oder Geschäftskonzept-Beratung",
+        "subtitle": "Alle unsere 1-, 2- oder 3-stündigen Sessions passen sich an Ihr spezifisches Profil in der gastronomischen Industrie und/oder Ihr Geschäftskonzept an. Unsere Trainings- und Kapazitätsaufbau-Mentorings werden konfiguriert und auf Ihre Realität fokussiert, damit Sie das Beste aus der Nutzung dieser von künstlicher Intelligenz angetriebenen Toolsuite herausholen können, die für Restaurantbesitzer, Executive/Corporate Chefs, Restaurant Manager oder Direktoren, Teamleiter im Allgemeinen in der Hotellerie und Restaurantindustrie nützlich ist.",
+        "restaurants": {
+          "title": "Restaurants",
+          "description": "Menüoptimierung, Kostenmanagement, differenzielle Kreativität und Gästeerfahrung"
+        },
+        "catering": {
+          "title": "Catering",
+          "description": "Großmaßstäbliche Planung, Logistikoptimierung und operative Effizienz"
+        },
+        "bakery": {
+          "title": "Konditoreien",
+          "description": "Kreative Techniken, Premium-Präsentation und Produktdiversifizierung"
+        },
+        "food_truck": {
+          "title": "Food Trucks",
+          "description": "Menüanpassung, Mobilitätsstrategien und digitale Präsenz"
+        }
+      },
+      "pricing": {
+        "title": "Unsere Online-Beratungs- und Mentoring-Pläne",
+        "subtitle": "Wählen Sie den Plan, planen Sie das Mentoring und bereiten Sie sich darauf vor, das Potenzial der künstlichen Intelligenz, angewandt auf Restaurantmanagement und die Welt der Gastronomie und Hotellerie im Allgemeinen, in einer oder mehreren Sessions zu meistern.",
+        "ideal_for": "Ideal für:",
+        "express": {
+          "title": "Express Session",
           "price": "150€",
           "duration": "2 Stunden",
+          "ideal": "Neue Nutzer oder die mit spezifischen punktuellen Bedürfnissen",
+          "button": "Jetzt buchen",
           "features": [
             "Schnelle Bedarfsdiagnose",
             "Personalisierte Ersteinrichtung",
             "Fokus auf 1-2 Schlüsseltools",
             "Sofortige Implementierungslösungen"
-          ],
-          "idealFor": "Neue Nutzer oder die mit spezifischen punktuellen Bedürfnissen",
-          "cta": "Jetzt buchen"
+          ]
         },
-        {
-          "name": "Standard Session",
+        "standard": {
+          "title": "Standard Session",
           "price": "275€",
           "duration": "3 Stunden",
-          "popular": "🔥 Am beliebtesten",
-          "discount": "Sparen Sie 8%",
+          "ideal": "Restaurants, Bäckereien und etablierte Unternehmen",
+          "button": "Jetzt buchen",
           "features": [
             "Vollständige Bedarfsanalyse",
             "Erweiterte Profilkonfiguration",
@@ -143,14 +157,15 @@
             "30-Tage-Implementierungsplan",
             "Exklusives ergänzendes Material"
           ],
-          "idealFor": "Restaurants, Bäckereien und etablierte Unternehmen",
-          "cta": "Jetzt buchen"
+          "save": "Sparen Sie 8%",
+          "badge": "🔥 Am beliebtesten"
         },
-        {
-          "name": "Intensive Session",
+        "intensive": {
+          "title": "Intensive Session",
           "price": "360€",
           "duration": "4 Stunden",
-          "discount": "Sparen Sie 20%",
+          "ideal": "Restaurantgruppen, Catering-Unternehmen und mittlere Unternehmen",
+          "button": "Jetzt buchen",
           "features": [
             "Strategischer Gesamtintegrationsplan",
             "Erweiterte Schulung für alle Tools",
@@ -158,108 +173,86 @@
             "7-Tage-Follow-up inklusive",
             "Zugang zu exklusiven Premium-Ressourcen"
           ],
-          "idealFor": "Restaurantgruppen, Catering-Unternehmen und mittlere Unternehmen",
-          "cta": "Jetzt buchen"
+          "save": "Sparen Sie 20%"
         }
-      ]
-    },
-    "specialization": {
-      "title": "Spezialisiertes Mentoring nach Berufsprofil oder Geschäftskonzept-Beratung",
-      "description": "Alle unsere 1-, 2- oder 3-stündigen Sessions passen sich an Ihr spezifisches Profil in der gastronomischen Industrie und/oder Ihr Geschäftskonzept an. Unsere Trainings- und Kapazitätsaufbau-Mentorings werden konfiguriert und auf Ihre Realität fokussiert, damit Sie das Beste aus der Nutzung dieser von künstlicher Intelligenz angetriebenen Toolsuite herausholen können, die für Restaurantbesitzer, Executive/Corporate Chefs, Restaurant Manager oder Direktoren, Teamleiter im Allgemeinen in der Hotellerie und Restaurantindustrie nützlich ist.",
-      "profiles": [
-        {
-          "title": "Restaurants",
-          "description": "Menüoptimierung, Kostenmanagement, differenzielle Kreativität und Gästeerfahrung"
-        },
-        {
-          "title": "Catering",
-          "description": "Großmaßstäbliche Planung, Logistikoptimierung und operative Effizienz"
-        },
-        {
-          "title": "Konditoreien",
-          "description": "Kreative Techniken, Premium-Präsentation und Produktdiversifizierung"
-        },
-        {
-          "title": "Food Trucks",
-          "description": "Menüanpassung, Mobilitätsstrategien und digitale Präsenz"
-        }
-      ]
-    },
-    "testimonials": {
-      "title": "Was unsere Kunden sagen",
-      "items": [
-        {
-          "quote": "Das Mentoring transformierte unsere Nutzung von AI Chef Pro. In nur 3 Stunden lernten wir, was uns Monate gedauert hätte zu entdecken.",
-          "author": "María González",
-          "role": "Executive Chef, Restaurant La Mesa"
-        },
-        {
-          "quote": "Die Investition zahlte sich schon in der ersten Woche aus. Unsere operative Effizienz stieg um 30%.",
-          "author": "Carlos Ruiz",
-          "role": "Inhaber, Catering Delicious"
-        },
-        {
-          "quote": "Die fortgeschrittenen Techniken, die sie uns lehrten, gaben uns einen Wettbewerbsvorteil auf unserem Markt.",
-          "author": "Ana Martín",
-          "role": "Konditorin, Sweet Dreams"
-        }
-      ]
-    },
-    "process": {
-      "title": "Wie funktioniert unser Mentoring-Prozess?",
-      "steps": [
-        {
-          "title": "1. Erstbewertung",
+      },
+      "process": {
+        "title": "Wie funktioniert unser Mentoring-Prozess?",
+        "step1": {
+          "title": "Erstbewertung",
           "description": "Wir analysieren Ihr aktuelles Unternehmen und spezifische Bedürfnisse, um die Session zu personalisieren."
         },
-        {
-          "title": "2. Personalisierte Session",
+        "step2": {
+          "title": "Personalisierte Session",
           "description": "Live-Mentoring fokussiert auf Ihre Ziele mit praktischen Übungen und realen Fällen."
         },
-        {
-          "title": "3. Implementierungsplan",
+        "step3": {
+          "title": "Implementierungsplan",
           "description": "Wir liefern einen detaillierten Aktionsplan mit nächsten Schritten und empfohlenen Ressourcen."
         },
-        {
-          "title": "4. Follow-up-Support",
+        "step4": {
+          "title": "Follow-up-Support",
           "description": "Wir bieten kontinuierliche Unterstützung, um die erfolgreiche Implementierung von Strategien sicherzustellen."
         }
-      ]
-    },
-    "faq": {
-      "title": "Häufig gestellte Fragen",
-      "items": [
-        {
-          "question": "Muss ich AI Chef Pro haben, um das Mentoring zu nutzen?",
-          "answer": "Ja, das Mentoring ist darauf ausgelegt, die Nutzung von AI Chef Pro zu maximieren. Wenn Sie es noch nicht haben, empfehlen wir, sich vor der Session mit der Plattform vertraut zu machen."
+      },
+      "testimonials": {
+        "title": "Was unsere Kunden sagen",
+        "testimonial1": {
+          "name": "María González",
+          "position": "Executive Chef, Restaurant La Mesa",
+          "quote": "Das Mentoring transformierte unsere Nutzung von AI Chef Pro. In nur 3 Stunden lernten wir, was uns Monate gedauert hätte zu entdecken."
         },
-        {
-          "question": "Kann die Session aufgezeichnet werden?",
-          "answer": "Ja, mit vorheriger Genehmigung können wir die Session aufzeichnen, damit Sie den Inhalt später überprüfen können."
+        "testimonial2": {
+          "name": "Carlos Ruiz",
+          "position": "Inhaber, Catering Delicious",
+          "quote": "Die Investition zahlte sich schon in der ersten Woche aus. Unsere operative Effizienz stieg um 30%."
         },
-        {
-          "question": "Was ist, wenn ich mehr als eine Session benötige?",
-          "answer": "Kein Problem. Viele Kunden entscheiden sich für mehrere Sessions, um verschiedene Bereiche zu vertiefen. Wir bieten spezielle Pakete für mehrere Sessions."
-        },
-        {
-          "question": "Gibt es kontinuierliche Unterstützung nach dem Mentoring?",
-          "answer": "Ja, alle Pläne beinhalten E-Mail-Support für Fragen, die während der Implementierung auftreten können."
-        },
-        {
-          "question": "Kann ich meine Session neu planen?",
-          "answer": "Ja, Sie können bis zu 24 Stunden vor der geplanten Session ohne zusätzliche Kosten neu planen."
+        "testimonial3": {
+          "name": "Ana Martín",
+          "position": "Konditorin, Sweet Dreams",
+          "quote": "Die fortgeschrittenen Techniken, die sie uns lehrten, gaben uns einen Wettbewerbsvorteil auf unserem Markt."
         }
-      ]
-    },
-    "finalCta": {
-      "title": "Bereit, Ihr Unternehmen mit KI zu transformieren?",
-      "description": "Warten Sie nicht länger. Buchen Sie Ihre personalisierte Mentoring-Session und beginnen Sie heute damit, das Potenzial von AI Chef Pro zu maximieren.",
-      "cta": "Pläne ansehen und jetzt buchen"
-    },
-    "microSession": {
-      "title": "🎁 Kostenlose Mikro-Session",
-      "description": "Nicht sicher, welcher Plan für Sie richtig ist? Buchen Sie eine kostenlose 30-minütige Beratung.",
-      "cta": "Kostenlose Beratung buchen"
+      },
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "questions": {
+          "question1": {
+            "question": "Muss ich AI Chef Pro haben, um das Mentoring zu nutzen?",
+            "answer": "Ja, das Mentoring ist darauf ausgelegt, die Nutzung von AI Chef Pro zu maximieren. Wenn Sie es noch nicht haben, empfehlen wir, sich vor der Session mit der Plattform vertraut zu machen."
+          },
+          "question2": {
+            "question": "Kann die Session aufgezeichnet werden?",
+            "answer": "Ja, mit vorheriger Genehmigung können wir die Session aufzeichnen, damit Sie den Inhalt später überprüfen können."
+          },
+          "question3": {
+            "question": "Was ist, wenn ich mehr als eine Session benötige?",
+            "answer": "Kein Problem. Viele Kunden entscheiden sich für mehrere Sessions, um verschiedene Bereiche zu vertiefen. Wir bieten spezielle Pakete für mehrere Sessions."
+          },
+          "question4": {
+            "question": "Gibt es kontinuierliche Unterstützung nach dem Mentoring?",
+            "answer": "Ja, alle Pläne beinhalten E-Mail-Support für Fragen, die während der Implementierung auftreten können."
+          },
+          "question5": {
+            "question": "Kann ich meine Session neu planen?",
+            "answer": "Ja, Sie können bis zu 24 Stunden vor der geplanten Session ohne zusätzliche Kosten neu planen."
+          },
+          "question6": {
+            "question": "Kann ich eine Beratung für ein sehr spezifisches Thema anfragen?",
+            "answer": "Absolut. Im vorherigen Formular kannst du genau angeben, welche spezifischen Aspekte du bearbeiten möchtest, sei es ein konkretes Tool von AI Chef Pro oder eine besondere Herausforderung in deinem Unternehmen."
+          }
+        }
+      },
+      "final_cta": {
+        "title": "Bereit, Ihr Unternehmen mit KI zu transformieren?",
+        "description": "Warten Sie nicht länger. Buchen Sie Ihre personalisierte Mentoring-Session und beginnen Sie heute damit, das Potenzial von AI Chef Pro zu maximieren.",
+        "button": "Pläne ansehen und jetzt buchen"
+      },
+      "free_consultation": {
+        "title": "🎁 Kostenlose Mikro-Session",
+        "description": "Nicht sicher, welcher Plan für Sie richtig ist? Buchen Sie eine kostenlose 30-minütige Beratung.",
+        "button1": "Kostenlose Beratung buchen",
+        "button2": "Jetzt kontaktieren"
+      }
     }
   },
   "categories": {
@@ -1363,9 +1356,9 @@
     "mentoria_hero": "Personalisierte Online-Mentoring-Sitzung mit AI Chef Pro für Gastronomie-Profis"
   },
   "announcement_bar": {
-    "text": "30 KI-Hacks für mehr Effizienz in deiner Küche",
-    "text_short": "30 KI-Hacks für deine Küche",
-    "cta": "Mehr erfahren"
+    "text": "8 kostenlose Tools für dein Restaurant – ohne Registrierung",
+    "text_short": "8 kostenlose Tools, ohne Registrierung",
+    "cta": "Jetzt ausprobieren"
   },
   "landingCostes": {
     "breadcrumb": "Restaurantkosten senken mit KI",
@@ -4454,6 +4447,15 @@
       "reject": "Ablehnen",
       "learn_more": "Mehr erfahren",
       "close": "Schließen"
+    }
+  },
+  "schema": {
+    "offers": {
+      "miembro": "Kostenloser Basis-Zugang. 3.000 Credits/Monat.",
+      "premium_pro": "Für Küchenchefs, Executive Chefs und Restaurantleiter. 85.000 Credits/Monat.",
+      "premium_plus": "Für Gastronomieunternehmer und Restaurantketten. 175.000 Credits/Monat.",
+      "premium_max": "Unbegrenzte monatliche Credits für anspruchsvolle Profis.",
+      "premium_max_anual": "Ideal für Gastronomieunternehmer, Restaurantbesitzer und Führungskräfte. Spare 2 Monate."
     }
   }
 }

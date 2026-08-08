@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { LOCALES, DEFAULT_LOCALE, SITE, type Locale } from '../i18n/config';
+import { t } from '../i18n/translations';
 // Google Ads (AW-17829651892) + su banner de consentimiento. Van juntos a
 // propósito: el tag arranca con Consent Mode DENEGADO y es el banner el único
 // que lo concede, así que meter uno sin el otro rompe la medición o el RGPD.
@@ -119,11 +120,14 @@ const globalSchemas = noindex
         url: SITE,
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web',
+        // Las 5 descripciones estaban en CASTELLANO y se emitían en las 1.122
+        // URLs del sitio, también bajo <html lang="it"> y og:locale=it_IT.
+        // No lo lee un humano, pero sí Google y los motores generativos.
         offers: [
           {
             '@type': 'Offer',
             name: 'AI Chef Miembro',
-            description: 'Acceso básico gratuito. 3.000 créditos/mes.',
+            description: t(lang, 'schema.offers.miembro'),
             category: 'SaaS',
             priceCurrency: 'EUR',
             price: '0',
@@ -132,8 +136,7 @@ const globalSchemas = noindex
           {
             '@type': 'Offer',
             name: 'AI Chef Premium Pro',
-            description:
-              'Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.',
+            description: t(lang, 'schema.offers.premium_pro'),
             category: 'SaaS',
             priceCurrency: 'EUR',
             price: '25',
@@ -142,8 +145,7 @@ const globalSchemas = noindex
           {
             '@type': 'Offer',
             name: 'AI Chef Premium Plus',
-            description:
-              'Para empresarios gastronómicos y cadenas de restaurantes. 175.000 créditos/mes.',
+            description: t(lang, 'schema.offers.premium_plus'),
             category: 'SaaS',
             priceCurrency: 'EUR',
             price: '50',
@@ -152,7 +154,7 @@ const globalSchemas = noindex
           {
             '@type': 'Offer',
             name: 'AI Chef Premium Max',
-            description: 'Créditos ilimitados mensuales para profesionales exigentes.',
+            description: t(lang, 'schema.offers.premium_max'),
             category: 'SaaS',
             priceCurrency: 'EUR',
             price: '95',
@@ -161,8 +163,7 @@ const globalSchemas = noindex
           {
             '@type': 'Offer',
             name: 'AI Chef Premium Max Anual',
-            description:
-              'Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses.',
+            description: t(lang, 'schema.offers.premium_max_anual'),
             category: 'SaaS',
             priceCurrency: 'EUR',
             price: '950',

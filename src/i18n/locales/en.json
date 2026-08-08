@@ -4160,5 +4160,14 @@
       "learn_more": "Learn more",
       "close": "Close"
     }
+  },
+  "schema": {
+    "offers": {
+      "miembro": "Free basic access. 3,000 credits/month.",
+      "premium_pro": "For Head Chefs, Executive Chefs, and Restaurant Managers. 85,000 credits/month.",
+      "premium_plus": "For food entrepreneurs and restaurant chains. 175,000 credits/month.",
+      "premium_max": "Unlimited monthly credits for demanding professionals.",
+      "premium_max_anual": "Ideal for Food Entrepreneurs, Restaurant Owners, and Executives. Save 2 months."
+    }
   }
 }

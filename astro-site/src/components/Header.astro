@@ -123,13 +123,26 @@ const pickItem = (m: LMap) => m[lang] || m.es;
 //   · es → el ebook Gastro Pro Prompts (producto propio).
 //   · en → los 17 tools testados; desde 8B.6 hay blog inglés al que mandar el
 //     clic, antes caía en un post en español.
-//   · resto → siguen en el post ES de los 30 hacks: no hay blog en su idioma.
+//   · resto → su propio hub de herramientas gratuitas. Hasta el 2026-08-08
+//     caían en el post ES de los 30 hacks: la barra es el elemento más visible
+//     de la página (sticky, arriba del todo) y sacaba al visitante italiano del
+//     embudo para dejarlo en un artículo en español, en las 83 URLs de /it.
+//     El hub de free tools existe en los 7 idiomas y es captación de embudo alto.
+const FREE_TOOLS_HUB: Record<string, string> = {
+  es: '/herramientas-gratuitas',
+  en: '/en/free-tools-restaurants',
+  fr: '/fr/outils-gratuits-restaurant',
+  de: '/de/kostenlose-tools-restaurant',
+  it: '/it/strumenti-gratuiti-ristorante',
+  pt: '/pt/ferramentas-gratuitas-restaurante',
+  nl: '/nl/gratis-tools-restaurant',
+};
 const annHref =
   lang === 'es'
     ? '/pro-prompts-ebook'
     : lang === 'en'
       ? '/en/blog/best-ai-tools-for-chefs-2026'
-      : '/blog/30-hacks-con-inteligencia-artificial-de-ai-chef-pro-para-mejorar-la-eficiencia-en-tu-cocina';
+      : (FREE_TOOLS_HUB[lang] ?? FREE_TOOLS_HUB.es);
 const cookbookCount = (key: string) => (t(lang, key) || '').replace(/\D/g, '');
 ---
 

@@ -4,19 +4,18 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref, categoryPath, getCategories, hasBlog, promptHubHref } from '../lib/blog';
+// Helper compartido: la copia local que había aquí sólo mapeaba en/it/fr/de, así
+// que pt y nl caían a la plataforma española pese a que ptapp/nlapp existen.
+import { appUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const appUrl = (l: Locale): string => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-};
-
 const AI_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-ia-para-restaurantes', en: 'en/ai-tools-for-restaurants', fr: 'fr/outils-ia-restaurant', de: 'de/ki-tools-restaurant', it: 'it/strumenti-ia-ristorante', pt: 'pt/ferramentas-ia-restaurante', nl: 'nl/ai-tools-restaurant' };
+// El hub de free tools existe en los 7 idiomas (verificado en producción). Antes
+// estaba cableado a /herramientas-gratuitas, así que las 83 páginas italianas
+// enlazaban con etiqueta italiana a una página en español.
+const FREE_TOOLS_SLUGS: Record<string, string> = { es: 'herramientas-gratuitas', en: 'en/free-tools-restaurants', fr: 'fr/outils-gratuits-restaurant', de: 'de/kostenlose-tools-restaurant', it: 'it/strumenti-gratuiti-ristorante', pt: 'pt/ferramentas-gratuitas-restaurante', nl: 'nl/gratis-tools-restaurant' };
 const COSTES_SLUGS: Record<string, string> = { es: 'reducir-costes-restaurante-ia', en: 'en/reduce-restaurant-costs-ai', fr: 'fr/reduire-couts-restaurant-ia', de: 'de/restaurantkosten-senken-ki', it: 'it/ridurre-costi-ristorante-ia', pt: 'pt/reduzir-custos-restaurante-ia', nl: 'nl/restaurantkosten-verlagen-ai' };
 const MENU_SLUGS: Record<string, string> = { es: 'carta-menu-restaurante-ia', en: 'en/restaurant-menu-ai', fr: 'fr/carte-menu-restaurant-ia', de: 'de/speisekarte-restaurant-ki', it: 'it/menu-ristorante-ia', pt: 'pt/cardapio-restaurante-ia', nl: 'nl/restaurantmenu-ai' };
 const MARKETING_SLUGS: Record<string, string> = { es: 'marketing-restaurante-ia', en: 'en/restaurant-marketing-ai', fr: 'fr/marketing-restaurant-ia', de: 'de/restaurant-marketing-ki', it: 'it/marketing-ristorante-ia', pt: 'pt/marketing-restaurante-ia-pt', nl: 'nl/restaurant-marketing-ai-nl' };
@@ -128,7 +127,11 @@ const blogLinks: FooterLink[] =
         <ul class="space-y-3 text-sm">
           <li><a href={{ es: '/precios', en: '/en/pricing', fr: '/fr/tarifs', de: '/de/preise', it: '/it/prezzi', pt: '/pt/precos', nl: '/nl/prijzen' }[lang] ?? '/precios'} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'nav.precios')}</a></li>
           <li><a href={s(MENTORIA_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.mentoria_online')}</a></li>
-          <li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>
+          <!-- Sólo ES: la formación presencial no tiene página traducida y
+               /it/formacion-presencial da 404. El Header ya tenía este guard;
+               el Footer no, así que enlazaba con etiqueta italiana a una página
+               en español en las 83 URLs de /it. -->
+          {lang === 'es' && (<li><a href="/formacion-presencial" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.formacion_presencial')}</a></li>)}
           <!-- Canal oficial de YouTube: además del icono social del pie, tiene
                sitio propio en Formación porque es donde el usuario busca aprender
                (John, 2026-07-31). -->
@@ -160,7 +163,7 @@ const blogLinks: FooterLink[] =
           <li><a href={usosHub} class="text-primary hover:text-primary/80 transition-colors font-medium">{casosLabel}</a></li>
           {lang === 'es' && (<li><a href="/seo-restaurantes-por-ciudad" class="text-primary hover:text-primary/80 transition-colors font-medium">Recursos por ciudad</a></li>)}
           <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_tools')}</a></li>
-          <li><a href="/herramientas-gratuitas" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.free_tools_hub')}</a></li>
+          <li><a href={s(FREE_TOOLS_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.free_tools_hub')}</a></li>
           <li><a href={s(AI_TOOLS_SLUGS)} class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.nav_ai_tools')}</a></li>
           <li><a href={appUrl(lang)} target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-foreground transition-colors">{t(lang, 'footer.app_login')}</a></li>
         </ul>

@@ -4188,5 +4188,14 @@
         }
       ]
     }
+  },
+  "schema": {
+    "offers": {
+      "miembro": "Acceso básico gratuito. 3.000 créditos/mes.",
+      "premium_pro": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.",
+      "premium_plus": "Para empresarios gastronómicos y cadenas de restaurantes. 175.000 créditos/mes.",
+      "premium_max": "Créditos ilimitados mensuales para profesionales exigentes.",
+      "premium_max_anual": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos. Ahorra 2 meses."
+    }
   }
 }

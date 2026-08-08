@@ -1,7 +1,8 @@
 ---
 // Port 1:1 de src/components/ImageDisclaimerNote.tsx (la SPA es la spec).
-// COPY es/en VERBATIM; fr/de/it/pt/nl caen a ES (misma política que el original,
-// que los declara {} y hace fallback a COPY.es en el render).
+// COPY es/en VERBATIM del original. fr/de/it/pt/nl añadidos el 2026-08-08: antes
+// caían a COPY.es y volcaban 12 frases en CASTELLANO en 61 de las 83 páginas
+// italianas, incluidas las 10 que sí estaban bien traducidas.
 import Icon from './Icon.astro';
 import type { Locale } from '../i18n/config';
 
@@ -39,6 +40,76 @@ const COPY: Record<string, CopyShape> = {
     point2Prefix: 'After generating a recipe, cost card or any content, you can ',
     point2Bold: 'download the output as CSV, PDF or Word',
     point2Suffix: ' and add your real photo when you cook the dish in service.',
+  },
+  fr: {
+    galleryTitle: "À propos de ces images : elles sont illustratives, pas des photos finales de la fiche technique",
+    appsTitle: "Comment fonctionne l'image dans chaque agent IA : c'est une référence visuelle, pas la photo finale",
+    bodyPrefix: "Quand un agent IA génère une image, ça sert à ",
+    bodyIllustrate: "illustrer l'idée",
+    bodyMiddle: " du plat, de la boisson, du dessert ou de la préparation : ça t'aide à comparer le volume, la texture, le dressage, la vaisselle et la mathématique visuelle du concept. La ",
+    bodyDefinitive: "photo définitive de la fiche technique",
+    bodySuffix: " c'est celle que tu prends de ton plat réel, déjà dressé dans ta cuisine.",
+    point1Bold: "Tous les agents IA de recettes et de contenu créatif",
+    point1Rest: " offrent à la fin du flux la possibilité de générer une image avec Nano Banana 2 (l'agent IA dédié aux images part de zéro avec ses propres étapes). Tu peux générer la première puis autant de variantes que tu veux, y compris des préparations, pas seulement le plat final.",
+    point2Prefix: "Après avoir généré une recette, une fiche technique ou tout autre contenu, tu peux ",
+    point2Bold: "télécharger le résultat en CSV, PDF ou Word",
+    point2Suffix: " et intégrer ta vraie photo lorsque tu réalises le plat en cuisine.",
+  },
+  de: {
+    galleryTitle: "Über diese Bilder: Sie sind illustrativ, keine endgültigen Fotos des Kalkulationsblatts",
+    appsTitle: "Wie das Bild in jedem KI-Agenten funktioniert: Es ist eine visuelle Referenz, nicht das endgültige Foto",
+    bodyPrefix: "Wenn ein KI-Agent ein Bild erzeugt, dient es dazu, ",
+    bodyIllustrate: "die Idee zu veranschaulichen",
+    bodyMiddle: " des Gerichts, Getränks, Desserts oder der Teilzubereitung: Es hilft dir, Volumen, Textur, Anrichtung, Geschirr und die visuelle Mathematik des Konzepts zu vergleichen. Das ",
+    bodyDefinitive: "endgültige Foto des Kalkulationsblatts oder der Rezeptkarte",
+    bodySuffix: " ist das, was du von deinem echten Gericht machst, bereits angerichtet in deiner Küche.",
+    point1Bold: "Alle KI-Agenten für Rezepte und kreative Inhalte",
+    point1Rest: " bieten am Ende des Ablaufs an, ein Bild mit Nano Banana 2 zu generieren (der auf Bilder spezialisierte KI-Agent beginnt von Null mit seinen eigenen Schritten). Du kannst das erste und dann so viele Varianten generieren, wie du möchtest, einschließlich Teilzubereitungen, nicht nur das endgültige Gericht.",
+    point2Prefix: "Nachdem du ein Rezept, ein Kalkulationsblatt oder einen beliebigen Inhalt generiert hast, kannst du ",
+    point2Bold: "das Ergebnis als CSV, PDF oder Word herunterladen",
+    point2Suffix: " und dein echtes Foto einfügen, wenn du das Gericht in der Küche umsetzt.",
+  },
+  it: {
+    galleryTitle: "Riguardo a queste immagini: sono illustrative, non foto finali della scheda tecnica",
+    appsTitle: "Come funziona l'immagine in ogni agente IA: è un riferimento visivo, non la foto finale",
+    bodyPrefix: "Quando un agente IA genera un'immagine, serve a ",
+    bodyIllustrate: "illustrare l'idea",
+    bodyMiddle: " del piatto, bevanda, dessert o preparazione: ti aiuta a confrontare volume, consistenza, impiattamento, stoviglie e la matematica visiva del concetto. La ",
+    bodyDefinitive: "foto definitiva della scheda tecnica",
+    bodySuffix: " è quella che fai tu del tuo piatto reale, già impiattato nella tua cucina.",
+    point1Bold: "Tutti gli agenti IA di ricette e contenuti creativi",
+    point1Rest: " offrono alla fine del flusso di generare un'immagine con Nano Banana 2 (l'agente IA dedicato alle immagini parte da zero con i propri passi). Puoi generare la prima e poi quante varianti vuoi, incluse preparazioni, non solo il piatto finale.",
+    point2Prefix: "Dopo aver generato una ricetta, una scheda tecnica o qualsiasi contenuto, puoi ",
+    point2Bold: "scaricare il risultato in CSV, PDF o Word",
+    point2Suffix: " e incorporare la tua foto reale quando esegui il piatto in cucina.",
+  },
+  pt: {
+    galleryTitle: "Sobre estas imagens: são ilustrativas, não são fotos finais da ficha técnica",
+    appsTitle: "Como funciona a imagem em cada agente de IA: é uma referência visual, não a foto final",
+    bodyPrefix: "Quando um agente de IA gera uma imagem, serve para ",
+    bodyIllustrate: "ilustrar a ideia",
+    bodyMiddle: " do prato, bebida, sobremesa ou pré-preparação: te ajuda a contrastar volume, textura, empratamento, louça e a matemática visual do conceito. A ",
+    bodyDefinitive: "foto definitiva da ficha técnica",
+    bodySuffix: " é a que você faz do seu prato real, já empratado na sua cozinha.",
+    point1Bold: "Todos os agentes de IA de receitas e conteúdo criativo",
+    point1Rest: " oferecem gerar uma imagem com Nano Banana 2 no final do fluxo (o agente de IA dedicado a imagens parte do zero com seus próprios passos). Você pode gerar a primeira e depois quantas variantes quiser, incluindo pré-preparações, não apenas o prato final.",
+    point2Prefix: "Depois de gerar uma receita, ficha técnica ou qualquer conteúdo, você pode ",
+    point2Bold: "baixar o resultado em CSV, PDF ou Word",
+    point2Suffix: " e incorporar sua foto real quando você executar o prato na cozinha.",
+  },
+  nl: {
+    galleryTitle: "Over deze afbeeldingen: ze zijn illustratief, niet de definitieve foto's van het gerecht",
+    appsTitle: "Hoe de afbeelding werkt in elke AI-agent: het is een visuele referentie, niet de definitieve foto",
+    bodyPrefix: "Wanneer een AI-agent een afbeelding genereert, dient het om ",
+    bodyIllustrate: "het idee te illustreren",
+    bodyMiddle: " van het gerecht, drankje, dessert of basisbereiding: het helpt je om volume, textuur, presentatie, servies en de visuele verhoudingen van het concept te vergelijken. De ",
+    bodyDefinitive: "definitieve foto van het gerecht of de technische fiche",
+    bodySuffix: " is degene die jij van je echte gerecht maakt, al opgemaakt in je keuken.",
+    point1Bold: "Alle AI-agenten voor recepten en creatieve content",
+    point1Rest: " bieden aan het einde van de flow de mogelijkheid om een afbeelding te genereren met Nano Banana 2 (de AI-agent die zich toelegt op afbeeldingen begint vanaf nul met zijn eigen stappen). Je kunt de eerste genereren en daarna zoveel varianten als je wilt, inclusief basisbereidingen, niet alleen het eindgerecht.",
+    point2Prefix: "Na het genereren van een recept, kostenfiche of andere inhoud, kun je ",
+    point2Bold: "het resultaat downloaden als CSV, PDF of Word",
+    point2Suffix: " en je echte foto toevoegen wanneer je het gerecht in de keuken bereidt.",
   },
 };
 
