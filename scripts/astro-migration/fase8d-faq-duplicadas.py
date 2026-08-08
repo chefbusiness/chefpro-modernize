@@ -45,6 +45,13 @@ VACIAS_ES = {'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas', 'de', 'del',
              'se', 'su', 'sus', 'lo', 'a', 'mi', 'hay', 'ser', 'esta', 'este'}
 VACIAS_EN = {'the', 'a', 'an', 'of', 'in', 'and', 'or', 'that', 'is', 'are',
              'to', 'for', 'with', 'by', 'its', 'it', 'this', 'be', 'what'}
+# 2026-08-08 — blog italiano. Ojo a los apóstrofos: en italiano «l'haccp» y
+# «un'etichetta» son una sola palabra para el lector pero dos para un split
+# ingenuo, así que las formas elididas entran también en la lista.
+VACIAS_IT = {'il', 'lo', 'la', 'i', 'gli', 'le', 'un', 'uno', 'una', 'di', 'del',
+             'della', 'dei', 'delle', 'in', 'e', 'o', 'che', 'è', 'sono', 'al',
+             'per', 'con', 'da', 'si', 'suo', 'sua', 'a', 'ci', 'quali', 'quale',
+             'cosa', "l'", "un'", 'come', 'ha', 'essere', 'questo', 'questa'}
 
 # Arranques que marcan una pregunta de DEFINICIÓN.
 DEFINICION = (
@@ -151,19 +158,19 @@ ORDEN = {'IDENTICA': 0, 'DEFINICION': 1, 'PARECIDA': 2}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--lang', default='es', choices=['es', 'en', 'todos'])
+    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'todos'])
     ap.add_argument('--nivel', default='definicion',
                     choices=['identica', 'definicion', 'parecida'],
                     help='hasta qué nivel reportar (por defecto, sin las PARECIDA)')
     args = ap.parse_args()
 
-    idiomas = ['es', 'en'] if args.lang == 'todos' else [args.lang]
+    idiomas = ['es', 'en', 'it'] if args.lang == 'todos' else [args.lang]
     tope = ORDEN[args.nivel.upper()] if args.nivel.upper() in ORDEN else 1
     total = {'posts': 0, 'frontmatter': 0, 'cuerpo': 0, 'sin_faq': 0}
     hallazgos = []
 
     for lang in idiomas:
-        vacias = VACIAS_EN if lang == 'en' else VACIAS_ES
+        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT}.get(lang, VACIAS_ES)
         for p in sorted((CONTENT / lang).glob('*.md')):
             total['posts'] += 1
             fuente, qs = preguntas_de(p.read_text(encoding='utf-8'))
