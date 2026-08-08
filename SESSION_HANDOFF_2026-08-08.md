@@ -1,167 +1,158 @@
-# SESSION HANDOFF — 2026-08-08: FAQ duplicadas, dos recetarios y el bug del CJK
+# Session Handoff — 2026-08-08 → lunes 10
 
-> Continúa `SESSION_HANDOFF_2026-08-04.md`. Doc canónico: `PLAN_MAESTRO_MIGRACION_ASTRO_2026.md` §8.
-> Sesión desde el VPS. **5 commits** (`20db731`, `67b09fc`, `acb2a72`, `2b4a212`, `5c0cf4b`), todos pusheados y verificados en producción.
+## TL;DR
 
-## ✅ Bloque 1 — FAQ duplicadas: 3 posts arreglados y un gate nuevo
+Jornada de **homologación del italiano**, que era el objetivo declarado de John:
+llevar `/it` al nivel de español e inglés para lanzar tráfico a
+`itapp.aichef.pro`. Se cierra con el árbol italiano **limpio de castellano
+(91/91 páginas), los 61 spokes traducidos, el blog abierto y su primer post
+nativo publicado**.
 
-Salió de un cabo suelto del día 4: el pilar de sous vide tenía «¿Qué es la
-técnica sous vide?» y «¿Qué es el sous vide?» como dos `Question` distintas.
+Por el camino, una auditoría adversarial destapó un fallo que **no era del
+italiano y costaba dinero desde hacía 20 días**: las descargas de los 44
+productos digitales daban 404 en producción.
 
-| Post | Antes | Ahora |
+**HEAD**: `34882cd` · **10 commits, todos pusheados, build verde, gates verdes.**
+
+---
+
+## Lo que se publicó hoy
+
+| Commit | Qué |
+|---|---|
+| `0067c71` *(repo `chefbusiness-ai`)* | Bridge entero a `~deepseek/deepseek-v4-flash-latest` + `guard_idioma()` |
+| `d76b184` | Los CTAs de compra de 6 idiomas iban a la plataforma española |
+| `7e050c5` | **Los 524 entregables daban 404 desde el 19-jul** |
+| `0eb7f38` | Nota de traspaso de productos digitales |
+| `769e70c` | Castellano fuera del cromo italiano |
+| `459ce4a` | Informe del catálogo de agentes italiano |
+| `e2283e4` | **Los 51 spokes de casos de uso traducidos** |
+| `16a9f1d` | Gate del árbol italiano + los 2 últimos focos |
+| `9ca1f3b` | **Blog italiano abierto en `/it/blog`** |
+| `2242154` | Primer post nativo: los 14 alérgenos |
+| `bcbca0d` + `34882cd` | Roadmap del blog italiano (13 posts) |
+
+### El italiano, antes y después
+
+| | Al empezar | Al cerrar |
 |---|---|---|
-| `sous-vide-concepto-definicion` | 12 | **11** |
-| `chili-crisp` | 9 | **7** |
-| `yuzu-kosho-condimento-japones-tendencia` | 8 | **7** |
+| Páginas sin castellano | **9 de 88** | **91 de 91** |
+| Spokes con contenido italiano | 10 de 61 | **61 de 61** |
+| Tarjetas en el hub `/it/casi-uso` | 10 | **43** (las mismas que ES) |
+| Claves faltantes en `it.json` | 137 | **0** |
+| Posts de blog | 0 | **1** (+ infraestructura completa) |
 
-`chili-crisp` tenía **cuatro** preguntas «qué es». Y lo grave no era la
-redundancia: **en un rich result cada `Question` aparece SOLA**, y la respuesta
-de «¿Qué es un chili crisp?» abría con «Es exactamente lo mismo». Fuera de
-contexto no dice nada.
+---
 
-**Gate nuevo: `fase8d-faq-duplicadas.py`.** Compara normalizado (sin tildes, sin
-palabras vacías, Jaccard + ratio de secuencia) porque los duplicados vienen de
-recoger varias formulaciones del **People Also Ask**, que difieren en artículos,
-orden y hasta en la grafía. Tres niveles (IDENTICA / DEFINICION / PARECIDA)
-porque el ruido es alto: dos preguntas del mismo tema comparten casi todo el
-vocabulario sin ser la misma.
+## Lo siguiente: lunes 10
 
-**Dos hallazgos del barrido del corpus completo:**
+**Post 2 del roadmap: `contaminazione crociata`** (1.600/mes, competencia BAJA).
 
-1. **Sólo 93 de los 322 posts ES tienen `faq:` en el frontmatter.** Otros 149 la
-   llevan SÓLO en el cuerpo (molde WordPress: `<h3>` o `<p><strong>`) y 80 no
-   tienen ninguna. **Mirar sólo el frontmatter deja fuera al 71 % del corpus.**
-   El script lee las dos vías y marca cuál emite schema.
-2. Fuera de los 3 arreglados **no hay más duplicados**. Los 26 avisos al umbral
-   laxo son falsos positivos. Dos parecían reales y no lo eran: en
-   `mise-en-place` los «3 tipos» y los «4 tipos» están **a propósito** (el PAA
-   pregunta las dos y las respuestas resuelven la discrepancia: son dos ejes de
-   clasificación), y en `cual-es-la-mejor-ia-para-la-alimentacion` una es
-   paraguas y la otra baja al caso restaurante.
+**El cuerpo YA ESTÁ GENERADO Y VERIFICADO**, en
+`.work/post2-contaminazione-crociata/`:
+- `cuerpo2.html` — 2.589 palabras, 2 tablas, 7 `<h2>`, 0 `<h1>`, 0 acentos mal,
+  0 caracteres no latinos, 0 sanciones inventadas, los 7 colores de tablero
+  presentes.
+- `prompt2.txt` — el prompt exacto, por si hay que regenerarlo.
 
-**Validado con control negativo** contra el corpus previo: marca los 10 pares que
-ya se habían corregido a mano. Ese control destapó un agujero del propio
-detector —«chilli crisp» y «chili crisp» no comparten ningún token, así que la
-variante de **grafía** se colaba, justo el origen de la mitad de los duplicados—;
-el sujeto se compara ahora también por ratio de secuencia.
+⚠️ `.work/` está **gitignorado**: vive sólo en el VPS. Si se pierde, son 3
+minutos de `bridge.py` con ese mismo prompt.
 
-## ✅ Bloque 2 — Dos cifras del censo, corregidas contra la fuente viva
+**Lo que falta para publicarlo** (mismo pipeline que el post 1, que está
+documentado paso a paso en `ROADMAP_BLOG_ITALIANO.md`):
 
-- Las URLs migradas del clúster sous-vide sumaban **8 impresiones** en 90 días,
-  no 4. Los 0 clics sí eran correctos, que es lo que sostiene la consolidación;
-  el argumento de fondo era estructural. La cifra estaba en tres documentos y en
-  un docstring.
-- El blog EN son **65 posts**, no 39. Los 39 eran la foto de la Fase 8B.6; las
-  tandas 8C del 2026-08-01 añadieron 26. Contados en el **sitemap de
-  producción**, que es la fuente viva.
+1. Generar 3 imágenes con la skill `generate-images` (destacada + 2 de cuerpo)
+   y **mirarlas antes de optimizar** — en el post 1, una salía con harina sobre
+   la tabla que debía estar limpia, ilustrando lo contrario del texto.
+2. FAQ desde el People Also Ask ya recogido (está en
+   `.work/research-blog-italiano.md`): «Quali sono i 3 tipi di contaminazione?»,
+   «Qual è la differenza tra contaminazione diretta, indiretta e crociata?»,
+   «Come si possono evitare le contaminazioni crociate?»… **fundiendo las
+   variantes de "cos'è"**, que el PAA repite.
+3. Ensamblar con `modDate` en el frontmatter (**sin él NO entra en el sitemap**),
+   categoría `gestione-ristorante`, y enlace interno al post 1 (es su pilar).
+4. CTA a `ID Allergeni` (`https://itapp.aichef.pro/id-alergenos-g6b6g-it`), que
+   tiene la evaluación de riesgo de contacto cruzado como función declarada.
+5. Gates y publicación:
+   ```bash
+   python3 scripts/astro-migration/fase8d-faq-duplicadas.py --lang it
+   python3 scripts/astro-migration/fase8c-h1-unico.py
+   python3 scripts/astro-migration/fase8b-regen-lastmod.py
+   cd astro-site && rm -rf .astro dist && npm run build
+   python3 scripts/astro-migration/fase9-gate-italiano.py --sin-red
+   ```
+6. Reenviar el sitemap: `https://aichef.pro/sitemap-index.xml` (por API del MCP
+   de GSC, ya se hizo dos veces hoy).
 
-## ✅ Bloque 3 — Cocina Española y Cocina Italiana (hub: 27 → 29 de 85)
+**Martes y miércoles**: posts 3, 4 y 5 del clúster de alérgenos y HACCP
+(`etichettatura allergeni` 880, `7 principi haccp` 390,
+`temperature frigorifero haccp` 260), que cierran el bloque más rentable y
+enlazan todos al pilar.
 
-```
-cocina-espanola-ai   8.441 pal · 7 tablas · 105 prompts · 10 FAQ · 3 banners
-cocina-italiana-ai   8.520 pal · 7 tablas · 105 prompts · 10 FAQ · 3 banners
-```
+---
 
-Los 7 bloques son **distintos en cada uno a propósito**: el español gira sobre
-regiones, escandallo con precios HORECA de tu ciudad y ficha técnica; el italiano
-sobre primi, producto DOP con alternativas accesibles cuando no llega a España, y
-dolci. Si fueran calcados, los 27 recetarios pendientes acabarían siendo el mismo
-post 27 veces. **El molde de los 7 bloques se toma de los posts ya publicados**,
-no se inventa; lo que se diferencia es el contenido de cada bloque.
+## Decisiones que esperan a John (no las tomo yo)
 
-**Los dos prompts core confirman que los recetarios NO comparten plantilla:** el
-español es prosa de una generación anterior, el italiano lleva investigación
-previa obligatoria, columna de merma explícita, DOP/IGP y utensilio tradicional
-por fase. **No generar los 27 configs desde uno solo.**
+### 1. El catálogo italiano va 35 agentes por detrás → `CATALOGO_ITALIANO_PENDIENTE.md`
 
-**`fase8c-hub-registrar.py`, nuevo.** El catálogo vive **duplicado**: la fuente
-declarada es `fase8c-agentes/catalogo-hub.json`, pero la página del hub lleva su
-propia copia **inline** y no lo importa. Tocar sólo una deja el hub sin el enlace
-o el JSON mintiendo, y **ninguna de las dos cosas rompe el build**: el contador
-«X de Y con librería» simplemente no sube.
+`itapp.aichef.pro` sirve **54 agentes de los 89 españoles**. Faltan tres bloques
+enteros: los 10 de Consulenza Gastro Pro, los 12 de hotelería y ~13 de
+marketing. **Ya hay 10 páginas italianas publicadas vendiendo los de
+consulenza**, que el visitante no encontrará al registrarse. Es trabajo de John
+en Pickaxe, no de código.
 
-## 🔴 Bloque 4 — El motor de redacción cambia para esta familia (autorizado por John)
+### 2. `itapp` no tiene etiqueta de conversión
 
-John avisó de que bridge traía «caracteres chinos y demás». Medido, era peor.
+Cero apariciones de `AW-17829651892` frente a 9 en la plataforma española.
+**Sin eso no se registra ni una conversión del italiano**, así que no se podrá
+medir nada de lo que estamos construyendo. 30-45 min manuales en el campo *Body*
+del workspace de Pickaxe; el snippet está en `GOOGLE_ADS_PICKAXE.md`.
 
-**`fermentus-ai` tenía 24 inyecciones CJK**, frases chinas enteras dentro de
-prompts. Tres de verdad graves:
+### 3. Productos digitales, EN PAUSA por decisión suya → `PRODUCTOS_DIGITALES_PENDIENTE.md`
 
-- **«鬼笔鹅膏菌提取物替代»** en un prompt de garum vegano. 鬼笔鹅膏菌 es
-  ***Amanita phalloides***, la seta más venenosa que existe. Debía decir «en
-  sustitución de la fermentación bacteriana».
-- **«但是 (dulce/animal)»** — 但是 significa «pero», usado como descriptor de aroma.
-- **«历代 (jengibre fresco)»** — 历代 significa «dinastías sucesivas».
+Se retoma desde el Claude Code local. La nota lleva el diagnóstico completo para
+no repetir la auditoría.
 
-Más `consultor-gastronomico-ai` («가스» = gas en coreano, y un «gaz natural» en
-francés) y, buscando eso, **un tercero que no estaba en el radar, en el blog
-inglés**: `customer-retention-strategies-restaurants`, con «You never know
-what惊喜 (surprise) might come». **Los tres estaban vivos en producción.** De
-paso se quitó de `fermentus` la mención a un restaurante y un cocinero reales,
-que el `SYSTEM` del ensamblador prohíbe expresamente.
+### 4. Netlify avisó de límite de Edge Functions
 
-Y un **segundo defecto que nadie había visto**: 41 menciones a años pasados,
-casi todas «precios HORECA de mayo de 2025» en prompts de escandallo. Pedirían
-datos de hace 15 meses y contradicen al propio agente.
+Consultado hoy: sólo hay **una viva**, `lang-redirect`, y sólo en la ruta `/`.
+Si Netlify la corta, el único efecto es que quien teclee `aichef.pro` verá la
+home en español en vez de ir a la suya. **No afecta a SEO** (la función ya salta
+a los bots) ni a ninguna URL profunda. La sospecha es que el consumo viene de
+bots —la función se factura antes de decidir saltárselos— o de campañas de Ads
+apuntando a `/`. Recomendación: mirar *Analytics → Edge Functions* antes de
+tocar nada.
 
-**Por qué aquí y no en un artículo normal:** son tablas de 105 prompts que el
-lector **copia y pega tal cual** en la plataforma. En prosa un desliz se lee;
-dentro de la fila 63 de una tabla, se ejecuta.
+---
 
-**Se hicieron las dos cosas, y hacían falta las dos:**
+## Gotchas nuevos, que valen dinero
 
-1. `MODELO = 'anthropic/claude-sonnet-4.6'` en `fase8c-libreria-assemble.py`,
-   sobreescribible con `--modelo`. `bridge.py` ya aceptaba `--model`, así que el
-   cambio de motor es un parámetro.
-2. **`valida()`, que aborta con CUALQUIER modelo** ante caracteres no latinos o
-   ante un año pasado. Cambiar de motor baja la probabilidad; sólo el gate la
-   elimina.
+1. **Lo que vive sólo en `public/` de la raíz NO se publica** desde el cutover
+   de Fase 7. Así estuvieron 20 días en 404 los 524 entregables. El build sale
+   verde igual y no avisa. Falta escribir el gate que compare `public/` con
+   `astro-site/public/`.
+2. **Astro enruta por el nombre del DIRECTORIO**, no por el helper de rutas. La
+   carpeta del blog italiano tuvo que llamarse `categoria/`, no `category/`, o
+   cada enlace de categoría habría sido un 404.
+3. **Sin `modDate` un post no entra en el sitemap.** Lo avisa
+   `fase8b-regen-lastmod.py`.
+4. **`dataforseo.py` apunta a España (2724) por defecto.** Una tanda entera del
+   research salió con datos españoles y hubo que tirarla. Toda consulta italiana
+   necesita `--pais 2380 --idioma it`.
+5. **Los préstamos universales de cocina no son «palabras de otro idioma»**
+   (corrección de John): `mise en place`, `chef`, `sous vide`, `food cost`. Casi
+   cuesta descartar un post de 18.100 búsquedas/mes. Está documentado en el
+   roadmap.
+6. **El gemelo de la SPA.** Arreglar `Footer.astro` no basta: 17 páginas
+   italianas montan `ModernFooter.tsx` vía island. Hay que tocar los dos.
 
-⚠️ **Trampa del gate, cazada en caliente:** su primera versión tumbó el bloque de
-*Historia, Región y Relato en la Carta* del italiano por un «1982» que era una
-fecha histórica correcta. Ahora un año pasado sólo salta si está a **menos de 90
-caracteres de lenguaje de precios** («precio», «coste», «HORECA», «escandallo»,
-«€»). Y guarda la respuesta rechazada en `.rechazado`, porque `valida()` corría
-**antes** de cachear y no había forma de ver qué había fallado.
+---
 
-Barrido final de todo el corpus (324 ES + 65 EN): quedan 5 posts con caracteres
-de otro alfabeto, **los cinco legítimos** — 老干妈 en chili crisp, 北京烤鸭 en el
-pato pekinés, 胡椒 en yuzu kosho, y los de bibimbap y pad thai.
+## Estado del entorno
 
-## Gates y verificación en producción
-
-```
-build                     1.248 páginas
-fase8b-gate.py            3.548 checks · 0 fallos
-fase8c-h1-unico.py        limpio     fase8c-restos-wordpress.py  limpio
-fase8d-faq-duplicadas.py  0 duplicados en los nuevos; corpus limpio
-fase8b-regen-lastmod.py   389 entradas
-```
-
-En vivo: los dos posts a 200, el hub enlazándolos y «Recetarios de Europa»
-pasando de `0 de 12` a `2 de 12`, y **cero CJK** en los tres posts reparados.
-
-## 📌 Siguiente sesión
-
-**Lo único que bloquea:** la **sección de dominio** del prompt core de los dos
-recetarios siguientes. Sugerencia: **Cocina Francesa** y **Cocina Mexicana** —
-cierran los dos bloques grandes por su lado más buscado y dan un tercer molde
-antes de meterse con los 25 restantes. Basta la sección de dominio: el módulo de
-escandallos, el de export CSV/PDF y el de confidencialidad son idénticos entre
-agentes.
-
-**Cadencia acordada: 1-2 recetarios al día.** El coste por post baja mucho desde
-aquí: las configs tienen patrón, los gates están montados y la deuda del CJK ya
-está pagada.
-
-**Oportunidad medida esta sesión:** **80 posts ES no tienen FAQ ninguna** (ni en
-frontmatter ni en cuerpo). No emiten `FAQPage` ni cubren People Also Ask.
-Probablemente la bolsa de mejora más barata del blog. Sin tocar.
-
-## Pendiente de John (sin cambios)
-
-- **`enblog.aichef.pro`**: alias en Netlify + DNS. Las 301 ya están en
-  `_redirects` pero no se ejecutan hasta entonces. `CUTOVER_ENBLOG_PENDIENTE.md`.
-- Listado inglés de agentes.
-- Borrar las dos cuentas `test-gads-*@mailinator.com` y vaciar el campo de
-  confirmación antiguo de Pickaxe.
+- Repo limpio, `main` == `origin/main`, nada sin commitear.
+- Último build: **1.251 páginas, verde**. Gate italiano **91/91**.
+- Sitemap reenviado a GSC a las 21:28 (*Pending processing*).
+- El research crudo del blog (6 clústeres, ~700 keywords, 60+ SERP) está en
+  `.work/research-blog-italiano.md` y `.work/*.json` — **gitignorado**, sólo en
+  el VPS.
