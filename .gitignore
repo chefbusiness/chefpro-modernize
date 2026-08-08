@@ -45,3 +45,6 @@ audit-en-pilot/
 # Dossier con datos personales de cliente e IDs de Stripe (RGPD).
 # Si hace falta en otra máquina, va por el canal de secretos, no por git.
 Stripe Disputa/
+
+# Outputs intermedios de sesiones (research, cachés) — no versionar
+.work/
