@@ -2,7 +2,7 @@
 title: "I 14 allergeni alimentari: elenco completo e tabella da stampare per il menù"
 description: "Elenco ufficiale dei 14 allergeni del Reg. UE 1169/2011 con la numerazione, la tabella da stampare per il menù e gli ingredienti dove si nascondono."
 pubDate: 2026-08-08
-modDate: 2026-08-08
+modDate: 2026-08-14
 category: gestione-ristorante
 tags: ["allergeni", "haccp", "sicurezza alimentare", "normativa"]
 image: /blog-assets/2026/08/allergeni-destacada.jpg
@@ -193,7 +193,7 @@ faq:
 <figcaption>Due postazioni separate, ognuna con il suo coltello. La contaminazione crociata si evita nello spazio, non nelle buone intenzioni.</figcaption>
 </figure>
 
-<p>La contaminazione crociata è il passaggio di un allergene da un alimento all’altro attraverso strumenti, superfici o mani. Non basta dichiarare gli allergeni nel menù: devi anche evitare che un piatto “senza” entri in contatto con un ingrediente vietato. Ecco i punti critici che vediamo più spesso in cucina.</p>
+<p><a href="https://aichef.pro/it/blog/contaminazione-crociata">La contaminazione crociata</a> è il passaggio di un allergene da un alimento all’altro attraverso strumenti, superfici o mani. Non basta dichiarare gli allergeni nel menù: devi anche evitare che un piatto “senza” entri in contatto con un ingrediente vietato. Ecco i punti critici che vediamo più spesso in cucina.</p>
 <p><strong>La friggitrice</strong> – Se friggi le crocchette di patate (senza glutine) nello stesso olio delle panature, il glutine passa da un alimento all’altro. La soluzione è una friggitrice dedicata, oppure una programmazione che separi i prodotti.</p>
 <p><strong>I taglieri</strong> – Un tagliere usato per tagliare il pane e poi per affettare verdure crude è un veicolo di glutine perfetto. Servono taglieri di colore diverso e una procedura chiara per la loro pulizia.</p>
 <p><strong>Le pinze e i mestoli</strong> – La pinza che tocca i crostacei e poi viene usata per il contorno di verdure è un classico. Ogni pinza deve avere un posto preciso e non deve mai essere appoggiata su un piatto diverso da quello di servizio.</p>
