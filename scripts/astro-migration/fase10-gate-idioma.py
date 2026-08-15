@@ -47,7 +47,7 @@ MARCADORES_COMUNES = [
     'Explorar Agente', 'Ver caso de uso', 'Sin tarjeta',
     'Creatividad Culinaria', 'Recetarios Mundiales', 'Recetarios de',
     'Conceptos de Negocio', 'Proveedores Gastro', 'Contenidos y RRSS',
-    'Herramientas y Utilities', 'Gastro Conocimiento', 'Modelos IA + LLM',
+    'Herramientas y Utilities', 'Gastro Conocimiento',
     'Gerentes de Restaurantes', 'Chefs de Cocina',
     'Preguntas Frecuentes', 'miento de', ' para el ', ' del restaurante',
 ]
@@ -64,7 +64,7 @@ CONFIG = {
         #              verbatim). Mismo falso positivo que cazó el gate italiano.
         #   'Restaurante', 'Cocina' → nombres de PRODUCTO y de agente español
         #              citados a propósito (Kit de Tareas…, agente sin versión fr).
-        'marcadores': [' ción', 'ción ', 'cción',
+        'marcadores': ['Modelos IA + LLM', ' ción', 'ción ', 'cción',
                        ' y la ', ' y el ', ' con el ', ' con la ',
                        ' los que ', ' las que ', ' que el ', ' desde el '],
         # El error más frecuente del francés generado a máquina: tildes fuera.
@@ -90,7 +90,7 @@ CONFIG = {
         # Falsos positivos a NO reintroducir: 'ñ' (Jalapeño, Roscón en textos DE
         # legítimos → allowlist), 'für'-sin-umlaut como 'fur' (colisiona con
         # inglés), 'Uber' (marca). El alemán no usa á í ó ú ñ salvo préstamos.
-        'marcadores': ['ción', 'cción', ' y la ', ' y el ', ' con el ',
+        'marcadores': ['Modelos IA + LLM', 'ción', 'cción', ' y la ', ' y el ', ' con el ',
                        ' los que ', ' que el ', ' desde el '],
         # Umlauts caídos típicos de traducción a máquina. Lista corta a propósito:
         # solo palabras donde la variante sin umlaut NO existe en alemán.
@@ -111,6 +111,10 @@ CONFIG = {
         'doc_catalogo': 'CATALOGO_ITALIANO_PENDIENTE.md (la decisión es pentalingüe)',
         # ⚠ En portugués á í ó ú son LEGÍTIMOS y «ção» es lo correcto: los
         # marcadores de castellano deben ser léxicos, no de caracteres.
+        # Y varios marcadores COMUNES son portugués válido → exclusiones:
+        # «Explorar Agente», «Gerentes de Restaurantes», «Fornecedores…» etc.
+        'excluir_comunes': ['Explorar Agente', 'Gerentes de Restaurantes',
+                            'Preguntas Frecuentes', ' para el ', 'miento de'],
         'marcadores': ['ción', 'cción'],
         'acentos': {},
         'agentes_es_fr': [],
@@ -118,7 +122,7 @@ CONFIG = {
     'nl': {
         'plataforma': 'https://nlapp.aichef.pro/guest',
         'doc_catalogo': 'CATALOGO_ITALIANO_PENDIENTE.md (la decisión es pentalingüe)',
-        'marcadores': ['ción', 'cción'],
+        'marcadores': ['Modelos IA + LLM', 'ción', 'cción'],
         'acentos': {},
         'agentes_es_fr': [],
     },
@@ -222,7 +226,8 @@ def revisa_pagina(ident, h, lang, cfg, re_acento):
         return errores, avisos
     t = texto_visible(h)
 
-    marcadores = MARCADORES_COMUNES + cfg['marcadores']
+    excl = set(cfg.get('excluir_comunes', []))
+    marcadores = [m for m in MARCADORES_COMUNES if m not in excl] + cfg['marcadores']
     global PRODUCTOS_ES
     if PRODUCTOS_ES is None:
         PRODUCTOS_ES = cadenas_productos()

@@ -74,7 +74,9 @@
     "categories": "6",
     "categories_label": "Categorias Profissionais",
     "new_app_label": "Novo Agente IA Toda Semana",
-    "chefs_label": "Chefs e Profissionais da Hospitalidade confiam em nós"
+    "chefs_label": "Chefs e Profissionais da Hospitalidade confiam em nós",
+    "chefs": "764+",
+    "new_app": "1"
   },
   "mentoriaOnline": {
     "hero": {
@@ -395,7 +397,10 @@
     "business_title": "Ferramentas Business",
     "business_description": "Otimize a gestão e operação do seu estabelecimento",
     "use_case_label": "Caso de uso",
-    "use_tool": "Usar Ferramenta"
+    "use_tool": "Usar Ferramenta",
+    "creativity_subtitle": "Showcase",
+    "explore_app": "Explorar Agente",
+    "preview_label": "Preview"
   },
   "gallery": {
     "badge": "50+ Agentes IA Especializados em Ação",
@@ -3501,7 +3506,8 @@
           "cuscuz",
           "bulgur",
           "cerveja",
-          "kamut"
+          "kamut",
+          "cuscuz"
         ]
       },
       {
@@ -3515,7 +3521,11 @@
           "lagosta",
           "lagostim",
           "gambas",
-          "crustáceo"
+          "crustáceo",
+          "percebe",
+          "boi-de-mar",
+          "lagosta",
+          "carabineiro"
         ]
       },
       {
@@ -3530,7 +3540,11 @@
           "clara",
           "maionese",
           "omeleta",
-          "ovo cozido"
+          "ovo cozido",
+          "natas",
+          "flan",
+          "bolo",
+          "panado"
         ]
       },
       {
@@ -3547,7 +3561,10 @@
           "anchova",
           "peixe",
           "linguado",
-          "robalo"
+          "robalo",
+          "rodovalho",
+          "linguado",
+          "peixe"
         ]
       },
       {
@@ -3557,7 +3574,9 @@
         "description": "Amendoins e produtos derivados",
         "keywords": [
           "amendoim",
-          "manteiga de amendoim"
+          "manteiga de amendoim",
+          "manteiga de amendoim",
+          "óleo de amendoim"
         ]
       },
       {
@@ -3571,7 +3590,9 @@
           "tofu",
           "miso",
           "edamame",
-          "leite de soja"
+          "leite de soja",
+          "molho de soja",
+          "tamari"
         ]
       },
       {
@@ -3606,7 +3627,8 @@
           "pistácio",
           "macadâmia",
           "nozes",
-          "frutos secos"
+          "frutos secos",
+          "pecã"
         ]
       },
       {
@@ -3617,7 +3639,8 @@
         "keywords": [
           "aipo",
           "aipo-rábano",
-          "sal de aipo"
+          "sal de aipo",
+          "extrato de aipo"
         ]
       },
       {
@@ -3628,7 +3651,8 @@
         "keywords": [
           "mostarda",
           "sementes de mostarda",
-          "molho de mostarda"
+          "molho de mostarda",
+          "óleo de mostarda"
         ]
       },
       {
@@ -3657,7 +3681,10 @@
           "uvas passas",
           "damascos secos",
           "sulfitos",
-          "dióxido de enxofre"
+          "dióxido de enxofre",
+          "SO2",
+          "sulfito",
+          "bissulfito"
         ]
       },
       {
@@ -3668,7 +3695,8 @@
         "keywords": [
           "tremoço",
           "farinha de tremoço",
-          "sementes de tremoço"
+          "sementes de tremoço",
+          "proteína de tremoço"
         ]
       },
       {
@@ -3684,7 +3712,9 @@
           "lula",
           "choco",
           "amêijoa",
-          "molusco"
+          "molusco",
+          "vieira",
+          "navalheira"
         ]
       }
     ],
@@ -4262,6 +4292,14 @@
       {
         "q": "Por que as descrições dos pratos são tão importantes?",
         "a": "Uma boa descrição no cardápio pode aumentar o ticket médio entre 5 e 15%. Os clientes que leem descrições evocadoras têm mais probabilidade de pedir esse prato e percebem maior valor na experiência."
+      },
+      {
+        "a": "A versão clássica é formal e centra-se nos ingredientes e na técnica. A emocional apela aos sentidos e cria uma ligação afetiva com o comensal. A versão km0 destaca a origem e a sazonalidade do produto, cada vez mais valorizada pelos clientes conscientes.",
+        "q": "Qual é a diferença entre a versão clássica, emocional e km0?"
+      },
+      {
+        "a": "Sim, pode gerar textos em espanhol e inglês. Por agora estão disponíveis apenas estas duas línguas; pode usá-las como base e adaptá-las ao seu menu e ao seu mercado.",
+        "q": "Funciona noutros idiomas?"
       }
     ],
     "cta_section": {
@@ -4450,5 +4488,14 @@
     "proveedores": "Fornecedores Gastro",
     "marketing": "Marketing & Conteúdo",
     "recetarios": "Receituários Mundiais"
+  },
+  "common": {
+    "more": "mais"
+  },
+  "notfound": {
+    "back_home": "Voltar ao Início",
+    "description": "Lamentamos, mas a página que procura não existe. Volte ao início do AI Chef Pro.",
+    "message": "Ops! Página não encontrada",
+    "title": "404 - Página não encontrada | AI Chef Pro"
   }
 }

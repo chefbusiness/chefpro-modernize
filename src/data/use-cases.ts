@@ -98,6 +98,8 @@ import { USE_CASES_CONTENT_EN } from './use-cases-content.en';
 import { USE_CASES_CONTENT_IT } from './use-cases-content.it';
 import { USE_CASES_CONTENT_FR } from './use-cases-content.fr';
 import { USE_CASES_CONTENT_DE } from './use-cases-content.de';
+import { USE_CASES_CONTENT_PT } from './use-cases-content.pt';
+import { USE_CASES_CONTENT_NL } from './use-cases-content.nl';
 import { USE_CASES_CONTENT_ES_CONSULTOR } from './use-cases-content.es.consultor';
 import { USE_CASES_CONTENT_EN_CONSULTOR } from './use-cases-content.en.consultor';
 import { USE_CASES_CONTENT_FR_CONSULTOR } from './use-cases-content.fr.consultor';
@@ -115,8 +117,8 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
   const fr = USE_CASES_CONTENT_FR[id] ?? USE_CASES_CONTENT_FR_CONSULTOR[id] ?? es;
   const de = USE_CASES_CONTENT_DE[id] ?? USE_CASES_CONTENT_DE_CONSULTOR[id] ?? es;
   const it = USE_CASES_CONTENT_IT[id] ?? USE_CASES_CONTENT_IT_CONSULTOR[id] ?? es;
-  const pt = USE_CASES_CONTENT_PT_CONSULTOR[id] ?? es;
-  const nl = USE_CASES_CONTENT_NL_CONSULTOR[id] ?? es;
+  const pt = USE_CASES_CONTENT_PT[id] ?? USE_CASES_CONTENT_PT_CONSULTOR[id] ?? es;
+  const nl = USE_CASES_CONTENT_NL[id] ?? USE_CASES_CONTENT_NL_CONSULTOR[id] ?? es;
   const out: Record<LangCode, UseCaseContent> = {
     es,
     en,
@@ -138,8 +140,8 @@ export function hasNativeContent(id: string, lang: LangCode): boolean {
   if (lang === 'fr') return (id in USE_CASES_CONTENT_FR) || (id in USE_CASES_CONTENT_FR_CONSULTOR);
   if (lang === 'de') return (id in USE_CASES_CONTENT_DE) || (id in USE_CASES_CONTENT_DE_CONSULTOR);
   if (lang === 'it') return (id in USE_CASES_CONTENT_IT) || (id in USE_CASES_CONTENT_IT_CONSULTOR);
-  if (lang === 'pt') return id in USE_CASES_CONTENT_PT_CONSULTOR;
-  if (lang === 'nl') return id in USE_CASES_CONTENT_NL_CONSULTOR;
+  if (lang === 'pt') return (id in USE_CASES_CONTENT_PT) || (id in USE_CASES_CONTENT_PT_CONSULTOR);
+  if (lang === 'nl') return (id in USE_CASES_CONTENT_NL) || (id in USE_CASES_CONTENT_NL_CONSULTOR);
   return false;
 }
 

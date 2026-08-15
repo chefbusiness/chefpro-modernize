@@ -152,9 +152,10 @@ def main():
         (DATA / 'use-cases-content.pt.consultor.ts', 'pt'),
         (DATA / 'use-cases-content.nl.consultor.ts', 'nl'),
     ]
-    fr_ts = DATA / 'use-cases-content.fr.ts'
-    if fr_ts.exists():
-        objetivos.insert(3, (fr_ts, 'fr'))
+    for extra_lang in ['fr', 'de', 'pt', 'nl']:
+        extra = DATA / f'use-cases-content.{extra_lang}.ts'
+        if extra.exists():
+            objetivos.insert(3, (extra, extra_lang))
     fallos = 0
     for f, lang in objetivos:
         cambios, restos = procesa(f, lang, args.aplicar)

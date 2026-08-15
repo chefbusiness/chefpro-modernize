@@ -69,7 +69,9 @@
     "categories": "6",
     "categories_label": "Professionele Categorieën",
     "new_app_label": "Nieuwe AI-agent Elke Week",
-    "chefs_label": "Chefs en Horeca Professionals vertrouwen ons"
+    "chefs_label": "Chefs en Horeca Professionals vertrouwen ons",
+    "chefs": "764+",
+    "new_app": "1"
   },
   "mentoriaOnline": {
     "hero": {
@@ -390,7 +392,10 @@
     "business_title": "Business Tools",
     "business_description": "Optimaliseer het beheer en de werking van uw etablissement",
     "use_case_label": "Gebruikscase",
-    "use_tool": "Gebruik Tool"
+    "use_tool": "Gebruik Tool",
+    "creativity_subtitle": "Showcase",
+    "explore_app": "Verken de app",
+    "preview_label": "Voorbeeld"
   },
   "gallery": {
     "badge": "50+ Gespecialiseerde AI-agents in Actie",
@@ -3511,7 +3516,11 @@
           "krab",
           "langoustine",
           "scampi",
-          "schaaldier"
+          "schaaldier",
+          "zeekreeft",
+          "Noordzeekreeft",
+          "kreeft",
+          "langoustine"
         ]
       },
       {
@@ -3525,7 +3534,12 @@
           "eigeel",
           "eiwit",
           "mayonaise",
-          "omelet"
+          "omelet",
+          "schuim",
+          "vla",
+          "flan",
+          "cake",
+          "gepaneerd"
         ]
       },
       {
@@ -3542,7 +3556,10 @@
           "ansjovis",
           "vis",
           "schol",
-          "heilbot"
+          "heilbot",
+          "tarbot",
+          "tong",
+          "vis"
         ]
       },
       {
@@ -3553,7 +3570,8 @@
         "keywords": [
           "pinda",
           "pindakaas",
-          "pindanoten"
+          "pindanoten",
+          "pindaolie"
         ]
       },
       {
@@ -3567,7 +3585,9 @@
           "tofu",
           "miso",
           "edamame",
-          "sojamelk"
+          "sojamelk",
+          "sojasaus",
+          "tamari"
         ]
       },
       {
@@ -3601,7 +3621,8 @@
           "pistache",
           "macadamia",
           "noten",
-          "noot"
+          "noot",
+          "pecannoot"
         ]
       },
       {
@@ -3612,7 +3633,8 @@
         "keywords": [
           "selderij",
           "knolselderij",
-          "selderijzout"
+          "selderijzout",
+          "selderij-extract"
         ]
       },
       {
@@ -3623,7 +3645,8 @@
         "keywords": [
           "mosterd",
           "mosterdcorrels",
-          "mosterdzaad"
+          "mosterdzaad",
+          "mosterdolie"
         ]
       },
       {
@@ -3652,7 +3675,10 @@
           "rozijnen",
           "abrikozen",
           "sulfieten",
-          "zwaveldioxide"
+          "zwaveldioxide",
+          "SO2",
+          "sulfiet",
+          "bisulfiet"
         ]
       },
       {
@@ -3663,7 +3689,8 @@
         "keywords": [
           "lupine",
           "lupinebloem",
-          "lupinezaad"
+          "lupinezaad",
+          "lupine-eiwit"
         ]
       },
       {
@@ -3679,7 +3706,9 @@
           "inktvis",
           "zeekat",
           "venusschelp",
-          "weekdier"
+          "weekdier",
+          "mantel",
+          "mesheften"
         ]
       }
     ],
@@ -4257,6 +4286,14 @@
       {
         "q": "Waarom zijn gerecht beschrijvingen zo belangrijk?",
         "a": "Een goede menukaartbeschrijving kan de gemiddelde bonwaarde met 5–15% verhogen. Gasten die aansprekende beschrijvingen lezen, zijn eerder geneigd dat gerecht te bestellen en ervaren meer waarde in hun bezoek."
+      },
+      {
+        "a": "De klassieke versie is formeel en richt zich op ingrediënten en techniek. De emotionele versie speelt in op de zintuigen en creëert een affectieve band met de gast. De km0-versie benadrukt lokale herkomst en seizoensgebondenheid, steeds meer gewaardeerd door bewuste klanten.",
+        "q": "Wat is het verschil tussen de klassieke, emotionele en km0-versie?"
+      },
+      {
+        "a": "Ja, u kunt teksten genereren in het Spaans en Engels. Voorlopig zijn alleen deze twee talen beschikbaar; u kunt ze als basis gebruiken en aanpassen aan uw menu en uw gasten.",
+        "q": "Werkt het in andere talen?"
       }
     ],
     "cta_section": {
@@ -4445,5 +4482,19 @@
     "proveedores": "Gastro-leveranciers",
     "marketing": "Marketing & Content",
     "recetarios": "Wereldwijde Kookboeken"
+  },
+  "common": {
+    "more": "meer"
+  },
+  "notfound": {
+    "back_home": "Terug naar Home",
+    "description": "Sorry, de pagina die u zoekt bestaat niet. Ga terug naar de startpagina van AI Chef Pro.",
+    "message": "Oeps! Pagina niet gevonden",
+    "title": "404 - Pagina niet gevonden | AI Chef Pro"
+  },
+  "notifications": {
+    "minutes_ago": "{{minutes}} minuten geleden",
+    "registered": "Heeft zich aangemeld voor het 💜 Plan",
+    "someone_from": "Iemand uit"
   }
 }

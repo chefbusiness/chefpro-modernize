@@ -268,7 +268,7 @@ const UI: Record<string, {
     metric4: { value: 'PDF & CSV', label: 'Exportação profissional' },
     cardsTitle: 'Os 10 Agentes de Consultoria Gastronômica',
     cardsSubtitle: 'Cada perfil é um agente de IA dedicado com a profundidade técnica da disciplina e a visão de negócio que um projeto de consultoria gastronômica exige (BR e PT).',
-    cardCta: 'Ver caso de uso',
+    cardCta: 'Ver caso de utilização',
     forWhoTitle: 'Para Quem é a Consultoria Gastro Pro?',
     forWho1Title: 'Consultores independentes',
     forWho1Body: 'Trabalhe por projeto com IA especializada na sua disciplina. Acelere entregáveis sem perder rigor técnico nem autoridade diante do cliente, no Brasil ou em Portugal.',
