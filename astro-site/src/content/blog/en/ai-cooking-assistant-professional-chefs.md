@@ -17,7 +17,7 @@ imageAlt: "Professional chef using AI tablet assistant in modern commercial kitc
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Your AI Sous Chef Is Ready</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro puts 75+ specialized AI tools at your fingertips — recipe scaling, menu engineering, food cost analysis, and more. Built by chefs, for chefs.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro for €10/month →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">
 <img decoding="async" src="/blog-assets/en/2026/03/post5-recipe-scaling.png" alt="Chef using digital recipe scaling tool on screen with ingredient calculations" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">AI-powered recipe scaling ensures precise conversions from 10 covers to 1,000 — maintaining consistency every time.</figcaption></figure>
@@ -115,8 +115,8 @@ imageAlt: "Professional chef using AI tablet assistant in modern commercial kitc
 | Hotel kitchen (150+ seats) | €200-500/month | Full integration, staff training, compliance | Enterprise integrations, advanced reporting, training modules |<br />
 | Catering operation | €50-150/month | Menu planning, scaling, client management | Client preference tracking, scaling calculator, proposal tools |<br />
 <strong>The ROI calculation</strong>: A €50/month AI tool that reduces food waste by just 10% on a €15,000 monthly food budget saves €1,500 annually—30x the investment. Most operations see 300-500% ROI on professional-tier plans.</p>
-<h3>Free Trials and Proof of Concept</h3>
-<p>Never commit to an annual contract without testing first. Most reputable AI cooking assistant platforms offer free trials ranging from 7 to 30 days. Use this time strategically:</p>
+<h3>AI Chef Member and Proof of Concept</h3>
+<p>Never commit to an annual contract without testing first. Most reputable AI cooking assistant platforms offer paid subscription plans starting at €10/month. Use this time strategically:</p>
 <p><strong>Proof of concept checklist:</strong></p>
 <ul>
 <li>Run 3-5 real recipes through the system during actual service</li>
@@ -140,7 +140,7 @@ imageAlt: "Professional chef using AI tablet assistant in modern commercial kitc
 <p>The best AI cooking assistants for professional chefs make it easy to take your data with you. If a vendor seems reluctant to discuss data ownership, that&#8217;s a red flag.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Still Doing Menu Engineering by Hand?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro analyzes your menu data, calculates food costs, and optimizes pricing — all in minutes instead of hours. Free tier available.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro analyzes your menu data, calculates food costs, and optimizes pricing — all in minutes instead of hours. Paid plans available.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Explore 75+ AI Tools →</a>
 </div>
 <h2>Implementation Best Practices</h2>

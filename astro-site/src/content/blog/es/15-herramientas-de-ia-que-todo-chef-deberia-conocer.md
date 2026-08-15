@@ -1,6 +1,6 @@
 ---
 title: "15 Herramientas de IA para Chefs que Sí Usarás en 2026"
-description: "Las 15 herramientas de IA para chefs por oficio: creatividad, escandallos, fotografía, gestión y formación. Prueba gratis con 3.000 créditos, sin tarjeta."
+description: "Las 15 herramientas de IA para chefs por oficio: creatividad, escandallos, fotografía, gestión y formación. Plan AI Chef Miembro: 10 €/mes con 10.000 créditos, sin permanencia."
 pubDate: 2025-12-26
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -12,7 +12,7 @@ faq:
   - q: "¿Qué herramientas de IA necesita de verdad un chef?"
     a: "Depende del momento del negocio, pero las de mayor retorno inmediato son las de escandallos y food cost, y las de creatividad para I+D de platos. Con ellas ahorras horas de cálculo y desbloqueas ideas. Si además manejas redes, suma las de fotografía y copy."
   - q: "¿Cuánto cuesta empezar con AI Chef Pro?"
-    a: "Sí. El plan gratuito da 3.000 créditos al mes sin necesidad de tarjeta. Es suficiente para probar varios escandallos, generar recetas o preparar fichas técnicas y decidir si te encaja antes de pagar nada."
+    a: "Sí. El plan AI Chef Miembro da 10.000 créditos al mes por 10 €, sin permanencia. Es suficiente para probar varios escandallos, generar recetas o preparar fichas técnicas y decidir si te encaja antes de pagar nada."
   - q: "¿La IA sustituye la creatividad del cocinero?"
     a: "No. La IA propone combinaciones y variaciones a partir de datos, pero la decisión final, el ajuste de sazón y el criterio son del chef. Es una herramienta de apoyo, como un bloc de notas muy rápido, no un sustituto del oficio."
   - q: "¿Sirve para una cocina pequeña o solo para grandes restaurantes?"
@@ -149,7 +149,7 @@ Desde preparar el temario de una oposición a la hostelería hasta practicar voc
 
 La mayoría de estas herramientas están al alcance de cualquier cocina, sin necesidad de grandes inversiones. Mi recomendación es empezar por las categorías que más impacto tienen en la cuenta de resultados: escandallos y creatividad. Con solo esas dos, ya ahorras tiempo y ajustas márgenes.
 
-AI Chef Pro reúne más de 70 agentes de IA culinarios en español, pensados para cubrir recetas, escandallos, cartas, marketing y formación en una sola plataforma. Tiene un plan gratuito que no requiere tarjeta y te da 3.000 créditos al mes para probar sin compromiso. Cuando veas que el volumen de trabajo pide más, subes de plan.
+AI Chef Pro reúne más de 70 agentes de IA culinarios en español, pensados para cubrir recetas, escandallos, cartas, marketing y formación en una sola plataforma. Tiene un plan AI Chef Miembro que te da 10.000 créditos al mes por 10 €, sin permanencia. Cuando veas que el volumen de trabajo pide más, subes de plan.
 
 | Plan | Precio | Créditos/mes | Ideal para |
 | :--- | :--- | :--- | :--- |

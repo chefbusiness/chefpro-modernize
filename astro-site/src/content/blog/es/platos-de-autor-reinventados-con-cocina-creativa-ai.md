@@ -42,7 +42,7 @@ wpId: 2313
 <p style="color: #f0a500; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🍳 Transforma tu cocina con IA</p>
 <h3 style="color: #ffffff; font-size: 28px; margin: 0 0 15px 0; line-height: 1.3;">Crea Platos de Autor Únicos con AI Chef Pro</h3>
 <p style="color: #b8b8b8; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Accede a más de 55 herramientas de IA diseñadas específicamente para profesionales de la gastronomía. Genera recetas innovadoras, optimiza costes y sorprende a tus comensales.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #f0a500, #ff6b35); color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Prueba Gratis AI Chef Pro →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #f0a500, #ff6b35); color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Prueba AI Chef Miembro →</a>
 </div>
 
 
@@ -1185,7 +1185,7 @@ wpId: 2313
 <p style="color: #2d3436; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">🚀 Empieza Hoy Mismo</p>
 <h3 style="color: #2d3436; font-size: 26px; margin: 0 0 15px 0; line-height: 1.3;">Accede a Más de 55 Herramientas de IA Gastronómica</h3>
 <p style="color: #2d3436; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6; opacity: 0.9;">Desde 10€/mes. Genera recetas, optimiza mermas, identifica alérgenos y transforma tu cocina con inteligencia artificial profesional.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: #2d3436; color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;">Crear Cuenta Gratis →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=platos-de-autor-reinventados-con-cocina-creativa-ai" target="_blank" style="display: inline-block; background: #2d3436; color: #ffffff; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;">Crear Cuenta AI Chef Miembro →</a>
 </div>
 
 

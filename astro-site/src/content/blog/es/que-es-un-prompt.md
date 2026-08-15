@@ -2,7 +2,7 @@
 title: "Qué es un Prompt: Guía para Cocineros con Ejemplos"
 description: "Qué es un prompt y cómo escribir uno bueno para tu cocina: definición clara, anatomía, ejemplos de hostelería antes y después y errores a evitar."
 pubDate: 2024-09-20
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2024/09/que-es-un-prompt-ai-chef-pro.jpeg
 imageAlt: "qué es un prompt glosario ai chef pro"
@@ -147,7 +147,7 @@ Los más de 70 agentes de AI Chef Pro están entrenados específicamente en host
 
 Esto significa que donde antes necesitabas un prompt de doce líneas, ahora te basta con algo como: “Calcula el escandallo de mi tartar de atún rojo con los precios actualizados de mi proveedor” y subir la foto de la factura. El agente entiende el contexto culinario, te pide lo que le falte y te devuelve el resultado en el formato que necesitas.
 
-Puedes [probar los agentes de AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=que-es-prompt) con el plan gratuito, que incluye 3.000 créditos al mes sin necesidad de tarjeta. Si el volumen de trabajo crece, tienes el plan Premium Pro por 25 € al mes (85.000 créditos), el Plus por 50 € al mes (175.000 créditos) o el Max por 95 € al mes con créditos ilimitados. Y si prefieres el pago anual, el plan Max Anual sale por 950 € al año.
+Puedes [probar los agentes de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=que-es-prompt) con el plan AI Chef Miembro, que incluye 10.000 créditos al mes por 10 €, sin permanencia. Si el volumen de trabajo crece, tienes el plan Premium Pro por 25 € al mes (85.000 créditos), el Plus por 50 € al mes (175.000 créditos) o el Max por 95 € al mes con créditos ilimitados. Y si prefieres el pago anual, el plan Max Anual sale por 950 € al año.
 
 
 

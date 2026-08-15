@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo ayuda la IA a un consultor a atender más clientes?"
     a: "Delegando las tareas que más tiempo consumen: escandallos, redacción de informes, análisis de rentabilidad, fichas técnicas y respuesta a reseñas. Con más de 70 agentes trabajando en paralelo, el consultor libera horas para dedicarse a la estrategia y a la relación con el cliente, multiplicando su capacidad sin perder calidad."
   - q: "¿Cuánto cuesta usar AI Chef Pro en mi consultoría?"
-    a: "Hay un plan gratuito con 3.000 créditos al mes sin tarjeta. El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Un solo informe ahorrado paga varios meses de uso."
+    a: "Hay un plan de entrada AI Chef Miembro con 10.000 créditos al mes.” El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año. Un solo informe ahorrado paga varios meses de uso."
   - q: "¿Necesito saber de tecnología para usar estos agentes?"
     a: "No. La interfaz está en español nativo y diseñada para que cualquier profesional de la hostelería la use sin formación técnica. Si manejas WhatsApp y Excel, puedes manejar AI Chef Pro. Los agentes entienden el lenguaje del oficio: food cost, escandallo, ingeniería de menú y todo el vocabulario del sector."
   - q: "¿Qué tareas de consultoría se pueden delegar en la IA?"
@@ -118,19 +118,19 @@ Hablemos claro. Cuando escuchas "inteligencia artificial para tu negocio", lo pr
 
 | Plan | Créditos mensuales | Precio mensual | Ideal para |
 | :--- | :--- | :--- | :--- |
-| **Gratuito** | 3.000 créditos | 0 € (sin tarjeta) | Probar los agentes y hacer tus primeros diagnósticos |
+| **AI Chef Miembro** | 10.000 créditos | 10 € al mes | Probar los agentes y hacer tus primeros diagnósticos |
 | **Premium Pro** | 85.000 créditos | 25 €/mes | Consultores con 1-3 proyectos activos |
 | **Plus** | 175.000 créditos | 50 €/mes | Consultores con 4-8 proyectos simultáneos |
 | **Max** | **Ilimitados** | 95 €/mes | Despachos de consultoría con alto volumen de clientes |
 | **Max Anual** | **Ilimitados** | 950 €/año | Compromiso anual con dos meses de ahorro |
 
-El plan gratuito te da 3.000 créditos al mes sin necesidad de tarjeta. Son suficientes para probar varios agentes, generar tus primeros escandallos automatizados y ver si la herramienta encaja en tu flujo de trabajo. Si hablamos de rentabilidad: un solo informe de diagnóstico que ahorres ya paga varios meses del plan Plus. Y si tienes un despacho con varios consultores, el plan Max con créditos ilimitados te sale por menos de lo que facturas en una hora de consultoría.
+El plan AI Chef Miembro te da 10.000 créditos al mes por 10 €. Son suficientes para probar varios agentes, generar tus primeros escandallos automatizados y ver si la herramienta encaja en tu flujo de trabajo. Si hablamos de rentabilidad: un solo informe de diagnóstico que ahorres ya paga varios meses del plan Plus. Y si tienes un despacho con varios consultores, el plan Max con créditos ilimitados te sale por menos de lo que facturas en una hora de consultoría.
 
 ## Cómo Empezar Hoy
 
 No necesitas ser un experto en tecnología. Si sabes manejar un WhatsApp y un Excel, sabes manejar AI Chef Pro. La interfaz está en español nativo —uno de los 7 idiomas disponibles— y los agentes entienden el lenguaje de la hostelería porque han sido entrenados con el conocimiento real del oficio.
 
-Mi recomendación práctica, después de 15 años en consultoría de restaurantes, es esta: elige el servicio que más horas te roba cada semana. Para la mayoría de nosotros, suelen ser los escandallos y el food cost, o la redacción de informes. Arranca por ahí. Prueba [Consultoría Gastro Pro](https://aichef.pro/usos/consultoria-gastro-pro) con el plan gratuito. Dedica una tarde a integrarlo en tu flujo. En una semana verás la diferencia.
+Mi recomendación práctica, después de 15 años en consultoría de restaurantes, es esta: elige el servicio que más horas te roba cada semana. Para la mayoría de nosotros, suelen ser los escandallos y el food cost, o la redacción de informes. Arranca por ahí. Prueba [Consultoría Gastro Pro](https://aichef.pro/usos/consultoria-gastro-pro) con el plan AI Chef Miembro. Dedica una tarde a integrarlo en tu flujo. En una semana verás la diferencia.
 
 Si quieres ir más allá, te recomiendo esta lectura sobre [las 20 áreas de gestión del gerente de restaurante](https://aichef.pro/blog/gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar), donde desgloso cómo la IA apoya cada palanca del negocio hostelero. Y si te interesa saber [quién está detrás de AI Chef Pro](https://aichef.pro/sobre-nosotros), te cuento mi trayectoria: 29 años en alta hostelería, 15 como consultor, y la convicción de que la tecnología bien aplicada nos devuelve a los consultores lo que más valoramos: tiempo para pensar y capacidad para crecer.
 

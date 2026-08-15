@@ -2,7 +2,7 @@
 title: "Menús Personalizados por Nutrición en tu Restaurante con IA"
 description: "Diseña menús personalizados por nutrición en tu restaurante: dietas, alérgenos y colectividades con IA. La IA orienta; el nutricionista colegiado valida."
 pubDate: 2025-02-27
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IA-y-Nutricion-Planificacion-de-Dietas-Personalizadas-en-Restaurantes.jpg
 imageAlt: "IA y Nutrición: Planificación de Dietas Personalizadas en Restaurantes"
@@ -16,7 +16,7 @@ faq:
   - q: "¿Cómo puedo adaptar un mismo plato a varias dietas sin volverme loco en cocina?"
     a: "El truco está en planificar sustituciones base desde la receta matriz. Por ejemplo, una crema de verduras puede espesarse con patata (sin gluten), con almidón de maíz (disfagia) o con bebida vegetal y anacardos (vegano, sin lactosa). Una inteligencia artificial especializada puede generar estas variantes en segundos, con fichas independientes y alérgenos actualizados, para que el pase no se atasque."
   - q: "¿Cuánto cuesta empezar a usar AI Chef Pro para menús personalizados?"
-    a: "El plan gratuito ofrece 3.000 créditos al mes y no requiere tarjeta bancaria. Si necesitas más capacidad porque tu carta tiene muchas referencias o trabajas con colectividades, el plan Premium Pro cuesta 25 euros al mes (85.000 créditos), el Plus 50 euros al mes (175.000 créditos) y el Max 95 euros al mes con créditos ilimitados. También existe la modalidad Max Anual por 950 euros al año."
+    a: "El plan AI Chef Miembro ofrece 10.000 créditos al mes y se paga con tarjeta. Si necesitas más capacidad porque tu carta tiene muchas referencias o trabajas con colectividades, el plan Premium Pro cuesta 25 euros al mes (85.000 créditos), el Plus 50 euros al mes (175.000 créditos) y el Max 95 euros al mes con créditos ilimitados. También existe la modalidad Max Anual por 950 euros al año."
   - q: "¿Qué diferencia hay entre intolerancia y alergia alimentaria en el contexto de un restaurante?"
     a: "La intolerancia implica un problema digestivo o metabólico sin reacción inmunitaria inmediata; una persona con intolerancia a la lactosa puede tolerar pequeñas cantidades. La alergia, en cambio, es una respuesta del sistema inmunológico que puede desencadenar un shock anafiláctico incluso con trazas ínfimas. En cocina, una alergia obliga a extremar la limpieza, la separación de utensilios y la trazabilidad total del plato."
   - q: "¿Puede la IA ayudar a gestionar menús en colegios u hospitales?"
@@ -162,18 +162,18 @@ Para que todo esto no se quede en teoría, voy a detallar un flujo de trabajo re
 
 
 
-Puedes empezar a construir este flujo sin compromiso y comprobar si encaja en tu operativa real: [prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=nutricion).
+Puedes empezar a construir este flujo sin compromiso y comprobar si encaja en tu operativa real: [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=nutricion).
 
 ## Cuánto cuesta empezar
 
 AI Chef Pro es una suite con más de 70 agentes de IA culinarios, entrenada en 7 idiomas y con español nativo, pensada para que el chef tenga un copiloto digital sin tener que aprender prompts complicados.
 
-El plan gratuito te da 3.000 créditos al mes sin necesidad de tarjeta, para que explores las funcionalidades reales, no una demo capada. Si necesitas más capacidad porque tu volumen de platos y adaptaciones crece, los planes de pago son estos:
+El plan AI Chef Miembro te da 10.000 créditos al mes con tarjeta, para que explores las funcionalidades reales, no una demo capada. Si necesitas más capacidad porque tu volumen de platos y adaptaciones crece, los planes de pago son estos:
 
 - **Premium Pro**: 25 €/mes, con 85.000 créditos.
 - **Plus**: 50 €/mes, con 175.000 créditos.
 - **Max**: 95 €/mes, con créditos ilimitados. Este es el plan más adecuado para restaurantes con alta frecuencia de cambios de carta o colectividades que manejan decenas de referencias diarias.
-- **Max Anual**: 950 €/año, que equivale a dos meses gratis sobre el plan Max mensual.
+- **Max Anual**: 950 €/año.
 
 Todos los planes incluyen las funcionalidades de generación de variantes por perfil nutricional, cálculo de información nutricional, detección de alérgenos, traducción de cartas y redacción de fichas técnicas. No hay sorpresas ni módulos ocultos.
 
@@ -183,4 +183,4 @@ La personalización nutricional en restauración ha dejado de ser una tendencia 
 
 Pero que quede claro: la IA no cocina por ti ni firma por ti. Es un copiloto que multiplica la capacidad de tu cocina, mientras el criterio gastronómico, la validación clínica y la responsabilidad legal siguen siendo humanos. Si entiendes ese equilibrio, tienes mucho ganado.
 
-Si te apetece ver hasta dónde puede llegar tu carta con un copiloto así, date una vuelta por el plan gratuito y trabaja con datos reales de tu restaurante. Sin trampa ni tarjeta.
+Si te apetece ver hasta dónde puede llegar tu carta con un copiloto así, date una vuelta por el plan AI Chef Miembro y trabaja con datos reales de tu restaurante. Sin trampa ni tarjeta.

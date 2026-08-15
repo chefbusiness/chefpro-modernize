@@ -147,7 +147,7 @@ imageAlt: "Modern commercial kitchen with smart IoT-connected equipment and digi
 <p>These systems can model how price changes impact demand, which items to promote as anchors versus stars, and how menu layout influences selection patterns. The <strong><a href="https://aichef.pro/en/blog/ai-menu-engineering-software">AI Menu Engineering Software</a></strong> guide explores these capabilities in depth for operators looking to optimize their menu strategy.</p>
 <h3>AI Chef Pro: Comprehensive Kitchen Intelligence</h3>
 <p>For operators seeking an integrated approach to AI-powered kitchen management, <strong><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a></strong> offers a suite of over 55 AI tools specifically designed for commercial kitchen operations. From demand forecasting and inventory optimization to staff scheduling and recipe development, the platform provides unified intelligence that connects disparate kitchen functions.</p>
-<p>The platform&#8217;s free tier allows operators to explore capabilities with 10 uses monthly, while paid plans unlock full automation and integration features. This comprehensive approach addresses the fragmentation that often occurs when operators piece together multiple point solutions for different kitchen functions.</p>
+<p>The platform&#8217;s AI Chef Member plan allows operators to explore capabilities with 10,000 credits monthly, while higher-tier plans unlock full automation and integration features. This comprehensive approach addresses the fragmentation that often occurs when operators piece together multiple point solutions for different kitchen functions.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Running Your Kitchen on Gut Feeling?</p>
 <p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">Let AI handle demand forecasting, recipe scaling, and menu engineering while you focus on creating great food. Plans from €25/month.</p>
@@ -270,7 +270,7 @@ imageAlt: "Modern commercial kitchen with smart IoT-connected equipment and digi
 </div>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Ready to Build a Smarter Kitchen?</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join hospitality professionals worldwide using AI Chef Pro to cut waste, optimize labor, and boost profits. Free tier available — no credit card required.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join hospitality professionals worldwide using AI Chef Pro to cut waste, optimize labor, and boost profits. AI Chef Member available — €10/month, no commitment.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a>
 </div>
 <h2>The Future of Commercial Kitchens Is Smart</h2>

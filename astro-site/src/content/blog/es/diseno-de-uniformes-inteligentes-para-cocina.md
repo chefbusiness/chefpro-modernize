@@ -45,7 +45,7 @@ wpId: 2042
 <div style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center;">
 <p style="color: #ffffff; font-size: 24px; font-weight: bold; margin: 0 0 15px 0;">🍳 Optimiza tu Cocina Profesional con IA</p>
 <p style="color: #e8e8e8; font-size: 16px; margin: 0 0 20px 0;">Descubre cómo AI Chef Pro puede transformar la gestión de tu restaurante con más de 55 herramientas de inteligencia artificial especializadas</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Prueba Gratis AI Chef Pro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=diseno-de-uniformes-inteligentes-para-cocina" target="_blank" style="display: inline-block; background-color: #ff6b35; color: #ffffff; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">AI Chef Miembro</a>
 </div>
 
 

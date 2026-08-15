@@ -2,7 +2,7 @@
 title: "Franquiciar un Restaurante: de 1 Local a Cadena con IA"
 description: "Franquiciar un restaurante sin morir en el intento: qué estandarizar primero, cómo replicar recetas y fichas con IA y controlar tus costes multi-local."
 pubDate: 2026-03-28
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a8-ia-1.jpg
 imageAlt: "Restaurantes franquicia con misma marca en Madrid"
@@ -14,7 +14,7 @@ faq:
   - q: "¿Cuánto cuesta franquiciar un restaurante en 2026?"
     a: "La inversión inicial para el franquiciado oscila entre 20.000 € y 800.000 € según el formato. El canon de entrada es un pago único, y los royalties suelen estar entre el 1 % y el 10 % de las ventas. Como franquiciador, tu coste principal es crear y mantener el sistema de estándares."
   - q: "¿Cómo puedo estandarizar mis recetas con IA para que sepan igual en todos los locales?"
-    a: "Los agentes de IA de AI Chef Pro generan fichas técnicas completas con gramajes, mermas, alérgenos y coste por ración a partir de tu receta base. Esa ficha se convierte en el estándar que entregas a cada franquiciado. Puedes probarlo con el plan gratuito de 3.000 créditos sin tarjeta."
+    a: "Los agentes de IA de AI Chef Pro generan fichas técnicas completas con gramajes, mermas, alérgenos y coste por ración a partir de tu receta base. Esa ficha se convierte en el estándar que entregas a cada franquiciado. Puedes probarlo con el plan AI Chef Miembro de 10 € al mes con 10.000 créditos."
   - q: "¿Qué debo estandarizar primero si quiero franquiciar mi restaurante?"
     a: "Empieza por las recetas y fichas técnicas, los escandallos y los procesos operativos básicos (APPCC, apertura, cierre). Son los elementos que impactan directamente en la calidad del plato y la seguridad. La IA acelera la creación de todos estos documentos, reduciendo semanas de trabajo a días."
   - q: "¿Los royalties de una franquicia de restaurante son siempre un porcentaje de las ventas?"
@@ -157,13 +157,13 @@ AI Chef Pro es una plataforma con **más de 70 agentes de IA culinarios especial
 
 Esto es lo que tienes sobre la mesa:
 
-- **Plan gratuito**: 3.000 créditos al mes, sin necesidad de tarjeta. Ideal para que pruebes cómo un agente te genera una ficha técnica completa o un escandallo sin compromiso.
+- **AI Chef Miembro**: 10 € al mes con 10.000 créditos, sin permanencia. Ideal para que pruebes cómo un agente te genera una ficha técnica completa o un escandallo sin compromiso.
 - **Premium Pro**: 25 €/mes con 85.000 créditos. Para cuando ya estás en fase de estandarización seria y necesitas producir fichas, manuales y formación de forma recurrente.
 - **Plus**: 50 €/mes con 175.000 créditos. Pensado para quien ya gestiona varios locales y requiere actualizaciones frecuentes de escandallos y comparativas multi-local.
 - **Max**: 95 €/mes con créditos ilimitados. Si estás en plena expansión y la IA se convierte en tu brazo derecho para todo lo operativo.
 - **Max Anual**: 950 €/año. La opción más rentable si tienes claro que la estandarización y el control multi-local van a ser parte de tu día a día.
 
-[Probar los agentes de IA gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=franquicias) te va a dar en unos minutos una idea mucho más clara de lo que la IA puede hacer por tu proyecto de franquicia que cualquier artículo. Entra, trastea con los agentes de fichas técnicas y escandallos, y decide con datos si esto encaja en tu hoja de ruta.
+[Probar los agentes de IA con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=franquicias) te va a dar en unos minutos una idea mucho más clara de lo que la IA puede hacer por tu proyecto de franquicia que cualquier artículo. Entra, trastea con los agentes de fichas técnicas y escandallos, y decide con datos si esto encaja en tu hoja de ruta.
 
 ---
 

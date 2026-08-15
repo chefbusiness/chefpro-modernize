@@ -2,7 +2,7 @@
 title: "Calculadora de Mermas para Restaurantes: Cuánto Dinero Pierdes al Mes (y Cómo Recuperarlo)"
 description: "Calcula en euros lo que pierde tu restaurante por mermas: tabla de impacto por facturación, simulación paso a paso y plan de acción con datos del sector."
 pubDate: 2026-02-23
-modDate: 2026-07-28
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/mermas-featured.jpg
 imageAlt: "Calculadora de Mermas: Cuánto Dinero Pierde Tu Restaurante Cada Mes (y Cómo Recuperarlo)"
@@ -139,9 +139,9 @@ faq:
 
 <p>Con él le preguntas por un producto y una técnica concreta (corte, limpieza, cocción o conservación) y te devuelve el porcentaje de merma y el rendimiento esperados, además del precio por kilo limpio. Con ese dato ya puedes llevar la pérdida a tu escandallo y traducirla a euros: pasas de intuir que pierdes dinero a saber exactamente cuánto y dónde.</p>
 
-<p>Puedes empezar hoy mismo con el <strong>plan gratuito de AI Chef Pro</strong>: 3.000 créditos al mes, sin tarjeta, con acceso a todos los agentes, incluido Mermas GenCal. Si el volumen te pide más, los planes Premium arrancan en 25 €/mes y escalan hasta créditos ilimitados por 95 €/mes. Menos de lo que cuesta una sola cena de dos personas en tu propio restaurante.</p>
+<p>Puedes empezar hoy mismo con el <strong>plan de pago de AI Chef Pro</strong>: 10.000 créditos al mes, con acceso a todos los agentes, incluido Mermas GenCal. Si el volumen te pide más, los planes Premium arrancan en 25 €/mes y escalan hasta créditos ilimitados por 95 €/mes. Menos de lo que cuesta una sola cena de dos personas en tu propio restaurante.</p>
 
-<p><a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-mermas">Empieza gratis a calcular tus mermas con AI Chef Pro →</a></p>
+<p><a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadora-mermas">Empieza a calcular tus mermas con AI Chef Pro →</a></p>
 
 
 

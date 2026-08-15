@@ -1,6 +1,6 @@
 ---
 title: "Menú Semanal para Restaurante: Plantilla y Rotación con IA"
-description: "Crea el menú semanal de tu restaurante con IA: menús cíclicos de 4 semanas, plantilla lista para usar y escandallo bajo control. Empieza gratis, sin tarjeta."
+description: "Crea el menú semanal de tu restaurante con IA: menús cíclicos de 4 semanas, plantilla lista para usar y escandallo bajo control. Empieza por 10 € al mes, sin permanencia."
 pubDate: 2026-01-26
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -17,13 +17,13 @@ faq:
     a: "La planificación cíclica permite compras agrupadas, escandallos precisos y porciones estandarizadas. Con una rotación bien diseñada, el food cost se sitúa entre el 28% y el 35% de la facturación. Una buena planificación puede reducirlo entre un 10% y un 20% frente a un menú improvisado."
   - q: "¿AI Chef Pro sirve para colectividades y comedores escolares?"
     a: "Sí. Sus agentes de IA generan menús semanales aplicando métodos como el sistema figurativo por colores, gestionan alérgenos y adaptan las raciones a diferentes grupos de edad o necesidades dietéticas. Puedes definir ciclos de 4 semanas y exportar escandallos y listas de compra para producción centralizada."
-  - q: "¿Cómo puedo empezar gratis con AI Chef Pro?"
-    a: "Solo tienes que acceder a la aplicación: el plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta. Con esos créditos puedes generar varios menús semanales, calcular escandallos y probar el flujo completo antes de decidir si necesitas un plan superior."
+  - q: "¿Cómo puedo empezar con AI Chef Pro?"
+    a: "Solo tienes que acceder a la aplicación: el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, sin permanencia.” Con esos créditos puedes generar varios menús semanales, calcular escandallos y probar el flujo completo antes de decidir si necesitas un plan superior."
   - q: "¿En qué idiomas funciona la plataforma?"
     a: "AI Chef Pro está disponible en 7 idiomas, con español nativo de España. Todos los agentes, menús y fichas técnicas se generan en el idioma que elijas, lo que facilita el trabajo en equipos multiculturales o en cadenas con presencia en varios países."
 ---
 
-Planificar el menú semanal de un restaurante o colectividad es una partida de ajedrez. Necesitas variedad para no aburrir al comensal, controlar el escandallo para que los números cuadren y organizar la producción para que el equipo no se ahogue. Un menú semanal cíclico —con rotaciones de 3 o 4 semanas— te da ese orden, pero diseñarlo a mano roba horas que no tienes. Aquí es donde la IA te echa una mano real: acelera la generación de menús equilibrados, ajusta combinaciones de ingredientes y te permite arrancar gratis con 3.000 créditos al mes sin tarjeta. Con más de 70 agentes de IA culinarios y 7 idiomas (español nativo incluido), AI Chef Pro te ayuda a cruzar datos, alérgenos y costes para que el ciclo encaje desde el primer borrador. Si quieres probarlo ya, [entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales) y empieza a esbozar tu primer ciclo hoy mismo.
+Planificar el menú semanal de un restaurante o colectividad es una partida de ajedrez. Necesitas variedad para no aburrir al comensal, controlar el escandallo para que los números cuadren y organizar la producción para que el equipo no se ahogue. Un menú semanal cíclico —con rotaciones de 3 o 4 semanas— te da ese orden, pero diseñarlo a mano roba horas que no tienes. Aquí es donde la IA te echa una mano real: acelera la generación de menús equilibrados, ajusta combinaciones de ingredientes y te permite arrancar con AI Chef Miembro por 10 € al mes, 10.000 créditos y sin permanencia. Con más de 70 agentes de IA culinarios y 7 idiomas (español nativo incluido), AI Chef Pro te ayuda a cruzar datos, alérgenos y costes para que el ciclo encaje desde el primer borrador. Si quieres probarlo ya, [entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales) y empieza a esbozar tu primer ciclo hoy mismo.
 
 
 
@@ -174,7 +174,7 @@ Con más de 70 agentes de IA culinarios y disponible en 7 idiomas (español nati
 
 Un ejemplo de prompt que puedes usar: *“Genera un menú semanal cíclico de 4 semanas para un restaurante de menú del día en Valladolid, con un food cost objetivo del 30%, priorizando legumbres, pescados de lonja y verduras de temporada. Incluye opción vegetariana los miércoles y evita fritos dos días seguidos.”*
 
-Si todavía no lo has probado, [prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales): 3.000 créditos al mes sin tarjeta te bastan para esbozar tu primer ciclo y tocar el escandallo.
+Si todavía no lo has probado, [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales): 10.000 créditos al mes de AI Chef Miembro te bastan para esbozar tu primer ciclo y tocar el escandallo.
 
 ## Planes y precios de AI Chef Pro
 
@@ -182,16 +182,16 @@ Toda la potencia de los agentes de IA se adapta al volumen de tu cocina. Estos s
 
 | Plan | Créditos al mes | Precio |
 | :--- | :--- | :--- |
-| Gratuito | 3.000 | 0 € |
+| AI Chef Miembro | 10.000 | 10 € |
 | Premium Pro | 85.000 | 25 €/mes |
 | Plus | 175.000 | 50 €/mes |
 | Max | Ilimitados | 95 €/mes |
 | Max Anual | Ilimitados | 950 €/año |
 
-Con el plan gratuito puedes generar varias semanas de menú y calcular escandallos sin compromiso. Si tu operación es grande o gestionas varios centros, los créditos ilimitados de Max te quitan el contador de la cabeza.
+Con el plan AI Chef Miembro puedes generar varias semanas de menú y calcular escandallos sin permanencia. Si tu operación es grande o gestionas varios centros, los créditos ilimitados de Max te quitan el contador de la cabeza.
 
 ## Para llevarte a la cocina
 
 Planificar un menú semanal cíclico no es un lujo de restaurantes con tiempo libre: es la herramienta que te devuelve el control cuando el proveedor falla, la partida se retrasa o el cliente fijo te pide que no repitas el potaje tan a menudo. La IA no cocina por ti —eso lo sigues haciendo tú— pero te quita las horas de cruzar platos, contar gramos y perseguir el food cost en una hoja de cálculo. El resultado es una cocina más serena, un equipo que sabe qué esperar cada día y un comensal que vuelve porque siempre encuentra algo nuevo, aunque el ciclo se repita cada cuatro semanas. La consistencia fideliza tanto como la variedad.
 
-Empieza con lo que tienes: abre [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales), gasta tus 3.000 créditos gratuitos en un borrador de ciclo de 4 semanas y comprueba cuánto tiempo y dinero ahorras antes de que acabe el mes. Luego me lo cuentas en los fogones.
+Empieza con lo que tienes: abre [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=menus-semanales), gasta tus 10.000 créditos de AI Chef Miembro en un borrador de ciclo de 4 semanas y comprueba cuánto tiempo y dinero ahorras antes de que acabe el mes. Luego me lo cuentas en los fogones.

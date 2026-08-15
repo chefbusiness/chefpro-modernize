@@ -126,7 +126,7 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Transform Your Menu in 48 Hours</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro&#8217;s Menu Engineering tool analyzes your entire menu<br />    and delivers actionable recommendations in minutes, not weeks.  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    OPTIMIZE MY MENU NOW →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 5 free credits • Cancel anytime.  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 10,000 credits • Cancel anytime.  </p>
 </div>
 <h2>Step-by-Step Implementation: Getting Started with Menu Engineering Software</h2>
 <p>Ready to optimize your menu? Here&#8217;s how to implement menu engineering software in your restaurant:</p>
@@ -254,8 +254,8 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>Most restaurants still operate at the &#8220;traditional&#8221; level because they assume AI requires expensive enterprise contracts, dedicated data teams, and months of implementation. This assumption was accurate five years ago but no longer reflects reality. Modern consumer-grade AI platforms like AI Chef Pro deliver enterprise-level capability at a fraction of the cost—typically under €25/month—with no technical setup required. The real barrier isn&#8217;t budget or complexity; it&#8217;s awareness that restaurant-grade AI has matured beyond the research lab. Restaurants still relying on quarterly spreadsheet reviews are essentially flying blind while competitors with real-time AI optimization capture 8-15% margin improvements that compound monthly.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">See the algorithms in action</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro ships these four AI capabilities — demand forecasting, NLP copy, computer-vision layouts, contribution-margin optimization — inside one interface. 10 free uses per month, Pro €25/mo.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro ships these four AI capabilities — demand forecasting, NLP copy, computer-vision layouts, contribution-margin optimization — inside one interface. AI Chef Member: 10,000 credits, Pro €25/mo.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a>
 </div>
 <h2>Frequently Asked Questions About Menu Engineering Software</h2>
 <h3>How often should I analyze my menu using engineering software?</h3>
@@ -283,7 +283,7 @@ imageAlt: "Restaurant manager analyzing menu engineering data on iPad Pro"
 <p>AI menu engineering software transforms what was once a complex, time-consuming analysis into an accessible, ongoing practice that continuously improves your profitability. Whether you&#8217;re running a fine dining establishment, a casual neighborhood spot, or a food truck, understanding which dishes truly drive your business forward is essential.</p>
 <p>The tools available today, like AI Chef Pro&#8217;s Menu Engineering and Pricing AI, make this level of insight accessible to restaurants of all sizes. You don&#8217;t need a business degree or a data analyst on staff—you just need the willingness to look at your menu with fresh eyes and the courage to make changes based on what the data reveals.</p>
 <p>Your menu is your most powerful profit driver. Isn&#8217;t it time you treated it that way?</p>
-<p><strong>Ready to engineer a more profitable menu?</strong> Start your free trial of AI Chef Pro today and discover which of your dishes are stars, plowhorses, puzzles, and dogs. Your bottom line will thank you.</p>
+<p><strong>Ready to engineer a more profitable menu?</strong> Start with AI Chef Pro today and discover which of your dishes are stars, plowhorses, puzzles, and dogs. Your bottom line will thank you.</p>
 <div style="background:#f8f6f0;border-left:4px solid #f0c040;padding:24px;margin:32px 0;">
 <p style="font-size:18px;font-weight:700;margin:0 0 8px 0;color:#1a1a2e;">Related Local Guides</p>
 <p style="font-size:14px;margin:0 0 14px 0;color:#444444;">Menu engineering guidance tailored to restaurant owners, city by city:</p>

@@ -2,7 +2,7 @@
 title: "Rentabilidad de un Restaurante: KPIs y Benchmarks 2026"
 description: "KPIs que miden la rentabilidad de un restaurante en 2026: food cost, prime cost y margen neto con fórmulas, benchmarks por tipo de local y plan de 30 días."
 pubDate: 2026-04-05
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b8-1.jpg
 imageAlt: "Propietario revisando panel financiero con graficos de ingresos"
@@ -19,8 +19,8 @@ faq:
     a: "Los KPIs operativos como ticket medio, RevPASH y rotación de mesas deben revisarse a diario. El food cost conviene medirlo semanalmente para detectar desviaciones a tiempo. El coste de personal se analiza cada quincena, y el margen neto, una vez al mes. La frecuencia evita que los problemas se acumulen."
   - q: "¿Qué es el RevPASH y para qué sirve?"
     a: "El RevPASH (ingreso por asiento y hora disponible) mide cuánto factura cada asiento por hora de servicio. Se calcula dividiendo las ventas entre el número de asientos multiplicado por las horas de apertura. Sirve para evaluar la eficiencia real del espacio: un RevPASH bajo indica que sobran horas, asientos o ambas cosas."
-  - q: "¿Puedo controlar la rentabilidad de mi restaurante con IA gratis?"
-    a: "Sí, con el plan gratuito de AI Chef Pro dispones de 3.000 créditos al mes sin tarjeta. Puedes generar escandallos, calcular el food cost y simular la rentabilidad de platos sin coste inicial. Es una forma práctica de empezar a medir sin inversión mientras decides si escalas a un plan de pago."
+  - q: "¿Puedo controlar la rentabilidad de mi restaurante con IA?”"
+    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €/mes.” Puedes generar escandallos, calcular el food cost y simular la rentabilidad de platos sin coste inicial. Es una forma práctica de empezar a medir sin inversión mientras decides si escalas a un plan de pago."
 ---
 
 La rentabilidad de un restaurante no se adivina mirando la caja al final del día. Se mide con un puñado de KPIs que todo propietario y jefe de cocina debería tener clavados: food cost, coste de personal, prime cost, margen neto, ticket medio y RevPASH. Si tu margen neto ronda entre el 8 % y el 12 %, estás en zona sana; si no, este artículo te da los benchmarks por tipo de local, las fórmulas con ejemplos reales y un plan de 30 días para que dejes de «creer que ganas dinero» y sepas exactamente cuánto ganas y de dónde sale.
@@ -185,6 +185,6 @@ Controlar los KPIs de rentabilidad de un restaurante exige datos precisos y actu
 
 Con [AI Chef Pro](https://aichef.pro/blog/mejores-ia-restaurantes-2026) tienes más de 70 agentes de IA culinarios que hablan español nativo y trabajan en 7 idiomas. Puedes generar escandallos automáticos, calcular el food cost por plato o por periodo, simular la rentabilidad de la carta y ajustar recetas al instante. Todo sin depender de un consultor externo cada semana.
 
-Los planes se adaptan al volumen de cada cocina: el plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta; Premium Pro cuesta 25 €/mes (85.000 créditos); Plus, 50 €/mes (175.000 créditos); y Max ofrece créditos ilimitados por 95 €/mes o 950 €/año. Así puedes empezar sin riesgo y escalar cuando veas los resultados.
+Los planes se adaptan al volumen de cada cocina: el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €/mes con tarjeta; Premium Pro cuesta 25 €/mes (85.000 créditos); Plus, 50 €/mes (175.000 créditos); y Max ofrece créditos ilimitados por 95 €/mes o 950 €/año. Así puedes empezar sin riesgo y escalar cuando veas los resultados.
 
-Puedes empezar con el plan gratuito en [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rentabilidad) y tener tu primer escandallo listo hoy mismo. La rentabilidad de un restaurante se controla con números, no con intuición.
+Puedes empezar con el plan AI Chef Miembro en [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=rentabilidad) y tener tu primer escandallo listo hoy mismo. La rentabilidad de un restaurante se controla con números, no con intuición.

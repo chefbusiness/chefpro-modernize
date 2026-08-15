@@ -16,7 +16,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Scale Any Recipe in Seconds with AI</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ professional AI tools — recipe scaling, menu costing, inventory planning, and more. Start with the Member plan (€10/month).</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Member →</a>
 </div>
 <figure>
 <img loading="lazy" decoding="async" src="/blog-assets/en/2026/03/post1-recipe-prep-scaling.png" alt="Chef writing scaled recipe quantities on a prep whiteboard with measured ingredients" width="1024" height="576" /><figcaption>Precision scaling requires accounting for non-linear ingredient behavior at different batch sizes</figcaption></figure>
@@ -190,8 +190,8 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <tr>
 <td><strong><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a></strong></td>
 <td>Professional kitchens seeking comprehensive AI tools</td>
-<td>75+ AI tools including recipe scaling, costing, menu planning, and more. Free tier with 10 uses/month.</td>
-<td>Free tier; paid plans from $29/month</td>
+<td>75+ AI tools including recipe scaling, costing, menu planning, and more. AI Chef Member with 10,000 credits/month.</td>
+<td>AI Chef Member from €10/month</td></td>
 </tr>
 <tr>
 <td><strong>meez</strong></td>
@@ -209,7 +209,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <td><strong>DishGen</strong></td>
 <td>Recipe creation and adaptation</td>
 <td>AI recipe generation from ingredients or concepts. Includes scaling capabilities.</td>
-<td>Free tier; Pro from $12.99/month</td>
+<td>AI Chef Member €10/mo; Pro €25/mo</td></td>
 </tr>
 </tbody>
 </table></div>
@@ -218,7 +218,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p>Ready to transform your kitchen&#8217;s approach to recipe scaling? Here&#8217;s your implementation roadmap:</p>
 <h3>Step 2: Choose Your AI Tool</h3>
 <p>Selecting the right AI scaling platform depends on your operation&#8217;s size and complexity. For single-location restaurants, a focused recipe scaling tool may suffice. Multi-unit operations typically need full-suite solutions that integrate with inventory management and procurement systems.</p>
-<p><strong>AI Chef Pro</strong> offers an ideal starting point with its free tier, giving you 10 monthly uses to test the platform without commitment. This allows you to validate the technology before scaling adoption across your operation. The tool handles everything from simple yield adjustments to complex batch calculations across multiple measurement systems.</p>
+<p><strong>AI Chef Pro</strong> offers an ideal starting point with its AI Chef Member plan, giving you 10,000 credits monthly to test the platform without commitment. This allows you to validate the technology before scaling adoption across your operation. The tool handles everything from simple yield adjustments to complex batch calculations across multiple measurement systems.</p>
 <p>When evaluating tools, consider these factors:</p>
 <ul>
 <li><strong>Integration capabilities</strong> — Can it connect with your existing POS, inventory, or recipe management software?</li>
@@ -319,7 +319,7 @@ imageAlt: "Professional chef using AI tablet to scale recipes in a modern commer
 <p><strong>Predictive inventory</strong> will forecast prep needs based on reservations, events, weather patterns, and historical sales — generating purchase orders before you realize you need them. This transforms reactive ordering into proactive supply chain management.</p>
 <p><strong>Quality consistency</strong> will reach new levels as AI monitors cooking processes in real-time, adjusting temperatures and timing based on ingredient variance and environmental conditions.</p>
 <p>The chefs and operators who adopt these tools now position themselves at the competitive edge. Technology amplifies culinary expertise — it doesn&#8217;t replace the creativity, palate, and leadership that define great kitchens.</p>
-<p>Ready to experience the difference AI makes in your kitchen? Try AI Chef Pro&#8217;s free recipe scaling tools at <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro/en</a> and scale your first recipe in under 30 seconds.</p>
+<p>Ready to experience the difference AI makes in your kitchen? Try AI Chef Pro&#8217;s recipe scaling tools at <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro/en</a> and scale your first recipe in under 30 seconds.</p>
 <h2>Related Reading</h2>
 <ul>
 <li><a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">AI Food Cost Calculator: Reduce Restaurant Food Costs by 20%</a></li>

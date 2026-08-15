@@ -172,7 +172,7 @@ imageAlt: "Menu Pricing Strategy"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">💰 Capture Your Lost Profit Today</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro&#8217;s Price Optimizer analyzes your entire menu<br />    and delivers optimal pricing recommendations in minutes.  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    OPTIMIZE MY PRICES NOW →  </a>  </p>
-<p style="color: #888; font-size: 14px; margin-top: 15px;">    <strong>5 free credits to start</strong> • 1 credit = 1 use  </p>
+<p style="color: #888; font-size: 14px; margin-top: 15px;">    <strong>10,000 credits to start</strong> • 1 credit = 1 use  </p>
 <p style="color: #666; font-size: 12px; margin-top: 5px;">    Cancel anytime. • Results in minutes  </p>
 </div>
 <h2>Key Benefits of AI-Powered Restaurant Menu Pricing</h2>
@@ -211,8 +211,8 @@ imageAlt: "Menu Pricing Strategy"
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">⚡ Stop Leaving Money on the Table</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro to optimize their menu pricing.<br />    Price Optimizer • Menu Analytics • Cost Control • Profit Maximization  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE WITH 5 CREDITS →  </a>  </p>
-<p style="color: #888; font-size: 14px; margin-top: 15px;">    <strong>5 free credits to start</strong> • <strong>1 credit = 1 use</strong>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START WITH AI CHEF MEMBER →  </a>  </p>
+<p style="color: #888; font-size: 14px; margin-top: 15px;">    <strong>10,000 credits to start</strong> • <strong>1 credit = 1 use</strong>  </p>
 <p style="color: #666; font-size: 12px; margin-top: 5px;">    75+ AI tools for restaurant success • Cancel anytime.  </p>
 </div>
 <h2>Conclusion: The Future of Restaurant Menu Pricing</h2>
@@ -220,4 +220,4 @@ imageAlt: "Menu Pricing Strategy"
 <p>The restaurants that thrive in the coming decade will be those that embrace data-driven decision making, particularly in pricing. With tools like AI Chef Pro&#8217;s Price Optimizer and Menu Analytics, this capability is no longer reserved for large chains with dedicated pricing teams. Independent restaurants can now access the same intelligence, leveling the playing field and creating opportunities for unprecedented profitability.</p>
 <p>If you&#8217;ve been struggling with thin margins, questioning whether your prices are right, or simply knowing you could be more profitable, the solution is available today. AI-powered restaurant menu pricing isn&#8217;t the future—it&#8217;s the present, and restaurants that adopt it now will have a significant competitive advantage over those that wait.</p>
 <p>Your menu is your primary revenue driver. Every dollar of price optimization flows directly to your bottom line. Isn&#8217;t it time you knew—with certainty—that your prices are optimal?</p>
-<p><strong>Ready to optimize your restaurant menu pricing?</strong> Start your free trial of AI Chef Pro today. Use Price Optimizer to analyze your menu and discover the profit you&#8217;ve been missing. With 5 free credits to start, there&#8217;s nothing to lose and thousands in annual profit to gain.</p>
+<p><strong>Ready to optimize your restaurant menu pricing?</strong> Start your AI Chef Member plan today. Use Price Optimizer to analyze your menu and discover the profit you&#8217;ve been missing. With 10,000 credits to start, there&#8217;s nothing to lose and thousands in annual profit to gain.</p>

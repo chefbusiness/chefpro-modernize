@@ -12,15 +12,15 @@ faq:
   - q: "¿Cuál es la mejor IA para restaurantes en 2026?"
     a: "No existe una única respuesta. La mejor IA para tu restaurante depende del tipo de local, el tamaño del negocio y tu presupuesto. Un menú del día necesita IA de escandallos y costes; un fine dining prioriza agentes de reservas y fichas técnicas; una dark kitchen se beneficia de previsión de demanda. La clave es identificar tu cuello de botella y elegir la categoría de herramienta que lo resuelve."
   - q: "¿Cuánto cuesta usar IA en un restaurante?"
-    a: "Puedes empezar con 0 euros usando planes gratuitos como el de AI Chef Pro, que ofrece 3.000 créditos al mes sin tarjeta. Los planes de pago para herramientas especializadas parten de unos 25 euros al mes (85.000 créditos en Premium Pro). La mayoría de negocios pequeños encuentran su punto dulce entre 25 y 50 euros al mes. El plan más completo ronda los 95 euros con créditos ilimitados."
+    a: "Puedes empezar con 10 euros con el plan AI Chef Miembro, que ofrece 10.000 créditos al mes sin permanencia.” Los planes de pago para herramientas especializadas parten de unos 25 euros al mes (85.000 créditos en Premium Pro). La mayoría de negocios pequeños encuentran su punto dulce entre 25 y 50 euros al mes. El plan más completo ronda los 95 euros con créditos ilimitados."
   - q: "¿Necesito saber de tecnología para usar IA en mi restaurante?"
     a: "No. Las herramientas actuales están diseñadas con interfaces conversacionales pensadas para hosteleros, no para ingenieros. Si sabes usar WhatsApp, puedes usar una IA de cocina. La clave está en elegir herramientas con español nativo y que no requieran formación extensa. En 20 minutos de prueba puedes validar si te sirve."
   - q: "¿Qué IA es mejor para un restaurante pequeño o menú del día?"
     a: "Para un menú del día con margen ajustado, la prioridad es controlar costes y reducir desperdicio. La categoría que más rinde es la IA de escandallos y ajuste de compras. Con un plan de 25 euros al mes puedes acceder a herramientas como AI Chef Pro que calculan el coste real de cada plato y ayudan a ajustar guarniciones según precios de mercado."
   - q: "¿Sirve la misma IA para reservas y para cocina?"
     a: "Generalmente no. Son dos mundos distintos. Los agentes de reservas trabajan en sala: atienden teléfono 24/7, gestionan la ocupación y registran preferencias de clientes. La IA de cocina se ocupa de escandallos, fichas técnicas, alérgenos y generación de cartas. AI Chef Pro, por ejemplo, es una suite de más de 70 agentes especializada en cocina y gestión, no en reservas."
-  - q: "¿Puedo probar una IA para restaurantes gratis antes de pagar?"
-    a: "Sí, y deberías. AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes sin necesidad de tarjeta de crédito. Es suficiente para validar si la herramienta resuelve tu tarea principal. Otras herramientas del sector también ofrecen periodos de prueba. La recomendación es probar, medir resultados durante 15 días y solo entonces decidir si pagas un plan superior."
+  - q: "¿Puedo probar una IA para restaurantes con el plan de 10 € antes de subir?”"
+    a: "Sí, y deberías. AI Chef Pro ofrece un plan de entrada con 10.000 créditos al mes por 10 € sin permanencia. Es suficiente para validar si la herramienta resuelve tu tarea principal. Otras herramientas del sector también ofrecen periodos de prueba. La recomendación es probar, medir resultados durante 15 días y solo entonces decidir si pagas un plan superior."
 ---
 
 Si has aterrizado aquí buscando un nombre, un enlace de afiliado o un veredicto rápido, te lo digo ya: no hay *una* mejor IA para restaurantes. La respuesta correcta es "depende". Depende de si tu prioridad es llenar la sala un martes de febrero o cuadrar el escandallo de un menú degustación que apenas cubre costes. Depende de si tienes tres empleados o cuarenta. Depende de si tu presupuesto para tecnología este trimestre es cero o 100 euros al mes.
@@ -83,7 +83,7 @@ Si tienes más de 40 empleados o varias ubicaciones, el salto es a soluciones co
 
 ### Presupuesto
 
-Aquí va la verdad incómoda: en 2026 puedes hacer mucho con 0 euros, pero con limitaciones. Los planes gratuitos de herramientas serias permiten validar si la IA te sirve antes de soltar un euro. Eso sí, cuando hablamos de agentes especializados (no ChatGPT genérico reempaquetado), el salto cualitativo suele llegar entre los 25 y los 50 euros al mes.
+Aquí va la verdad incómoda: en 2026 puedes hacer mucho con 0 euros, pero con limitaciones. Los planes de entrada de herramientas serias permiten validar si la IA te sirve antes de subir a planes mayores. Eso sí, cuando hablamos de agentes especializados (no ChatGPT genérico reempaquetado), el salto cualitativo suele llegar entre los 25 y los 50 euros al mes.
 
 Más adelante desgloso por tramos lo que puedes esperar en cada nivel de inversión.
 
@@ -127,14 +127,14 @@ Esta tabla refleja qué puedes esperar en cada tramo de inversión, con realismo
 
 | Presupuesto mensual | Qué alcance puedes esperar | Limitaciones típicas |
 | :--- | :--- | :--- |
-| **0 €** (plan gratuito) | Validar una categoría concreta (escandallos, fichas, contenido) con uso limitado. Suficiente para decidir si esa IA encaja. | Créditos o usos restringidos. Sin soporte prioritario. Ideal para prueba, no para operativa diaria completa. |
+| **10 €** (AI Chef Miembro) | Validar una categoría concreta (escandallos, fichas, contenido) con 10.000 créditos. | Suficiente para decidir si esa IA encaja. | Créditos o usos restringidos. Sin soporte prioritario. Ideal para prueba, no para operativa diaria completa. |
 | **Hasta 30 €/mes** | Agentes especializados para 1-2 tareas concretas con uso diario moderado. Aplicable a la mayoría de negocios pequeños. | Funcionalidades avanzadas (API, multi-usuario, integraciones) suelen estar en planes superiores. |
 | **30-100 €/mes** | Suite completa con varios agentes, créditos amplios, soporte multi-idioma. Suficiente para un restaurante de tamaño medio con uso diario. | Las integraciones a medida o el soporte dedicado pueden requerir plan superior. |
 | **+100 €/mes o a medida** | Uso intensivo o multi-sede, acceso a API, soporte prioritario, créditos ilimitados. Justificable cuando el ahorro semanal supera ampliamente el coste. | El riesgo es pagar por funciones que no usas si no haces diagnóstico previo. |
 
 La mayoría de los restaurantes independientes que asesoro encuentran su punto dulce entre los 25 y los 50 euros al mes. Por debajo, validan. Por encima, escalan cuando el retorno está medido.
 
-El error que más veo: pagar el plan más caro "por si acaso". Haz la prueba en gratuito, mide resultados durante dos semanas, y solo entonces sube de plan si los números cuadran.
+El error que más veo: pagar el plan más caro "por si acaso". Haz la prueba con el plan de 10 €, mide resultados durante dos semanas, y solo entonces sube de plan si los números cuadran.
 
 ## Cómo probar una IA antes de pagar (checklist de evaluación en 20 minutos)
 
@@ -144,14 +144,14 @@ El error que más veo: pagar el plan más caro "por si acaso". Haz la prueba en 
 
 
 
-Toda herramienta de IA para hostelería que se precie ofrece un plan gratuito o un periodo de prueba. Si no lo ofrece, desconfía: o el producto no está maduro o no confían en que vuelvas después de probarlo.
+Toda herramienta de IA para hostelería que se precie ofrece un plan de entrada sin permanencia. Si no lo ofrece, desconfía: o el producto no está maduro o no confían en que vuelvas después de probarlo.
 
 Aquí tienes un checklist práctico para evaluar cualquier IA en menos de media hora:
 
 - **¿Resuelve mi tarea número 1?** Sin distracciones. Si entraste buscando escandallos, prueba solo eso. No te dejes deslumbrar por otras funciones.
 - **¿Está en español nativo, no traducido?** Si la interfaz o los textos generados suenan a traducción automática, tu carta y tus fichas también sonarán así. Descártala.
 - **¿Mi equipo la usaría sin formación?** Si necesitas un manual de 30 páginas para la primera tarea, tu equipo la abandonará en una semana.
-- **¿El plan gratuito da créditos suficientes para validar?** Con un puñado de créditos sueltos no validas nada serio. Busca planes que ofrezcan al menos varios miles de créditos o un mes completo de prueba funcional.
+- **¿El plan AI Chef Miembro da créditos suficientes para validar?** Con un puñado de créditos sueltos no validas nada serio. Busca planes que ofrezcan al menos varios miles de créditos o un mes completo de prueba funcional.
 - **¿Los datos y entregables son míos y exportables?** Si generas una carta o fichas técnicas, necesitas poder exportarlas en PDF, CSV o lo que uses. Si los datos quedan atrapados en la plataforma, es un riesgo.
 - **¿Respeta mi identidad?** La IA debe adaptarse a tu estilo, no imponer uno genérico. Si todos los textos suenan a "experiencia gastronómica única", huye.
 
@@ -174,17 +174,17 @@ AI Chef Pro es una suite de **más de 70 agentes de IA culinarios**, disponible 
 
 | Plan | Precio mensual | Créditos |
 | :--- | :--- | :--- |
-| **Gratuito** | 0 € | 3.000 créditos al mes, sin tarjeta |
+| **AI Chef Miembro** | 10 € | 10.000 créditos al mes, sin permanencia |
 | **Premium Pro** | 25 € | 85.000 créditos |
 | **Plus** | 50 € | 175.000 créditos |
 | **Max** | 95 € | Créditos ilimitados |
 | **Max Anual** | 950 €/año | Créditos ilimitados |
 
-El plan gratuito no requiere tarjeta y te da créditos reales para validar sin compromiso. Si tu restaurante encaja en los perfiles donde la palanca está en cocina y no en sala —menú del día, gastronómico con ficha técnica exigente, dark kitchen que necesita optimizar cartas, catering con presupuestos constantes—, tiene sentido que lo explores.
+El plan AI Chef Miembro cuesta 10 € al mes y te da créditos reales para validar sin permanencia. Si tu restaurante encaja en los perfiles donde la palanca está en cocina y no en sala —menú del día, gastronómico con ficha técnica exigente, dark kitchen que necesita optimizar cartas, catering con presupuestos constantes—, tiene sentido que lo explores.
 
 Si lo que buscas es el agente de reservas perfecto, no es esto. Y prefiero decírtelo yo a que lo descubras después de gastar tiempo.
 
-Puedes [probar AI Chef Pro gratis aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia), sin tarjeta de crédito.
+Puedes [probar AI Chef Pro con el plan de 10 € aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejor-ia), sin permanencia.
 
 ## Errores frecuentes al elegir IA para tu restaurante
 
@@ -200,7 +200,7 @@ Después de ver implementaciones fallidas y algunas muy rentables, estos son los
 
 **5. No verificar que los datos sean exportables.** Generas 40 fichas técnicas y luego descubres que no puedes descargarlas, o que la exportación es en un formato que no te sirve. Antes de comprometerte con ningún plan de pago, exporta algo y comprueba que el formato es aprovechable.
 
-**6. Pagar el plan más caro "por si acaso".** El plan Max ilimitado tiene sentido cuando ya has validado que usas la herramienta a diario y los créditos del plan inferior se quedan cortos. Hasta entonces, empieza por el gratuito, salta al plan de 25 o 50 euros cuando lo necesites, y escala solo con datos en la mano.
+**6. Pagar el plan más caro "por si acaso".** El plan Max ilimitado tiene sentido cuando ya has validado que usas la herramienta a diario y los créditos del plan inferior se quedan cortos. Hasta entonces, empieza por el plan de 10 €, salta al plan de 25 o 50 euros cuando lo necesites, y escala solo con datos en la mano.
 
 ---
 

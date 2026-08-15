@@ -1,6 +1,6 @@
 ---
 title: "IA para Crear Menús: Genera tu Carta en Minutos (Gratis)"
-description: "Crea menús y cartas con IA en minutos: menú del día, degustación, semanal y eventos, con ejemplos y costes por menú. Empieza gratis con 3.000 créditos."
+description: "Crea menús y cartas con IA en minutos: menú del día, degustación, semanal y eventos, con ejemplos y costes por menú. Empieza con AI Chef Miembro: 10 €/mes y 10.000 créditos."
 pubDate: 2026-01-04
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -9,8 +9,8 @@ imageAlt: "IA para Crear Menús: La Guía Definitiva para Transformar tu Restaur
 lang: es
 wpId: 2203
 faq:
-  - q: "¿Se puede crear un menú con IA gratis?"
-    a: "Sí, con el plan gratuito de AI Chef Pro dispones de 3.000 créditos al mes sin necesidad de tarjeta. Con esos créditos puedes generar varios menús completos (diarios, degustación, semanales o para eventos) sin coste alguno. Es una forma práctica de probar la herramienta y automatizar la creación de cartas sin compromiso."
+  - q: "¿Se puede crear un menú con IA con el plan AI Chef Miembro?"
+    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €. Con esos créditos puedes generar varios menús completos (diarios, degustación, semanales o para eventos) sin coste alguno. Es una forma práctica de probar la herramienta y automatizar la creación de cartas sin compromiso."
   - q: "¿La IA sustituye al chef en la creación de menús?"
     a: "No. La IA acelera la ideación, la redacción y el cálculo de escandallos, pero la validación del sabor, la ejecución en cocina y el ajuste de costes reales sigue siendo responsabilidad del chef. La tecnología es un asistente que te ahorra horas de trabajo, no un sustituto del criterio culinario y la experiencia."
   - q: "¿Cuánto se tarda en crear un menú con IA?"
@@ -23,7 +23,7 @@ faq:
     a: "AI Chef Pro trabaja en 7 idiomas, con español nativo de España. Esto significa que las descripciones, los alérgenos y la terminología culinaria se adaptan al lenguaje real de la hostelería española, sin traducciones automáticas que generen errores. También puedes generar cartas en inglés, francés, alemán y otros idiomas."
 ---
 
-La carta de un restaurante es un organismo vivo. Hoy necesitas montar el menú del día en 20 minutos, mañana un cliente te pide un menú degustación para 40 personas con alérgenos cruzados y, el viernes, toca cambiar la planificación semanal porque el proveedor de pescado te ha fallado. La IA para crear menús se ha metido en la cocina para resolver esto, no para hacerte sombra. Hablo de generar en minutos un menú del día completo con descripciones, alérgenos y precios orientativos; un menú degustación de siete pases con maridaje sugerido; una planificación semanal de lunes a viernes que ajusta el escandallo; o una propuesta para un evento con 50 comensales. Y sí, puedes empezar ya mismo, gratis, con 3.000 créditos al mes sin tarjeta. No es teoría: es una herramienta de trabajo que te devuelve tiempo para estar en los fogones. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=crear-menus) y genera tu primera carta hoy.
+La carta de un restaurante es un organismo vivo. Hoy necesitas montar el menú del día en 20 minutos, mañana un cliente te pide un menú degustación para 40 personas con alérgenos cruzados y, el viernes, toca cambiar la planificación semanal porque el proveedor de pescado te ha fallado. La IA para crear menús se ha metido en la cocina para resolver esto, no para hacerte sombra. Hablo de generar en minutos un menú del día completo con descripciones, alérgenos y precios orientativos; un menú degustación de siete pases con maridaje sugerido; una planificación semanal de lunes a viernes que ajusta el escandallo; o una propuesta para un evento con 50 comensales. Y sí, puedes empezar ya mismo con el plan AI Chef Miembro: 10.000 créditos al mes por 10 €. No es teoría: es una herramienta de trabajo que te devuelve tiempo para estar en los fogones. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=crear-menus) y genera tu primera carta hoy.
 
 
 
@@ -118,7 +118,7 @@ AI Chef Pro funciona con un sistema de créditos. Cada agente de IA que usas —
 
 Un menú del día completo con varios platos, descripciones, alérgenos y precios orientativos puede consumir del orden de **unos cientos de créditos** (200-400, según la profundidad). Un menú degustación de siete pases con maridaje y descripciones detalladas puede ir a **500-800 créditos**. Una planificación semanal para cinco días con tres platos por día oscila en un rango similar. Un menú para eventos con variantes de alérgenos y coste por persona se mueve también en ese margen de 400-700 créditos, dependiendo de las alternativas que necesites.
 
-Esto significa que, incluso con el plan gratuito de 3.000 créditos al mes, puedes generar entre 5 y 10 menús de trabajo al mes sin pagar nada. Si tu restaurante cambia la carta con frecuencia, el plan Pro (85.000 créditos) te da holgadamente para más de 100 menús completos al mes, el plan Plus (175.000 créditos) para varios cientos, y solo el plan Max ofrece créditos ilimitados sin ningún tope. La cuenta es sencilla: cada menú te cuesta unos céntimos de euro, no los euros que pagarías a una consultora o las horas de tu equipo creativo.
+Esto significa que, incluso con el plan AI Chef Miembro de 10.000 créditos al mes, puedes generar entre 5 y 10 menús de trabajo al mes por 10 €. Si tu restaurante cambia la carta con frecuencia, el plan Pro (85.000 créditos) te da holgadamente para más de 100 menús completos al mes, el plan Plus (175.000 créditos) para varios cientos, y solo el plan Max ofrece créditos ilimitados sin ningún tope. La cuenta es sencilla: cada menú te cuesta unos céntimos de euro, no los euros que pagarías a una consultora o las horas de tu equipo creativo.
 
 
 
@@ -128,7 +128,7 @@ Esto significa que, incluso con el plan gratuito de 3.000 créditos al mes, pued
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 créditos (sin tarjeta) | Probar la plataforma y generar menús puntuales |
+| AI Chef Miembro | 10 €/mes | 10.000 créditos | Probar la plataforma y generar menús puntuales |
 | Pro | 25 €/mes | 85.000 créditos | Restaurante en marcha con rotación habitual de carta |
 | Plus | 50 €/mes | 175.000 créditos | Grupos y negocios con alta rotación de cartas |
 | Max | 95 €/mes | Créditos ilimitados | Consultoras gastronómicas y cadenas |
@@ -163,4 +163,4 @@ Tras más de dos décadas en cocina y muchas horas con herramientas de IA, he vi
 - **No adaptar el menú al mercado local.** La IA puede darte platos muy creativos, pero si tu clientela no entiende ciertos productos o técnicas, la carta no venderá. Conoce a tu cliente.
 - **Copiar y pegar sin criterio.** La IA es un asistente, no un sustituto. Usa su salida como borrador; el toque final es tuyo.
 
-Empieza hoy mismo con 3.000 créditos gratis al mes, sin necesidad de tarjeta, y genera tu primera carta en minutos. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=crear-menus) y vuelve a poner el foco en lo que de verdad importa: cocinar.
+Empieza hoy mismo con el plan AI Chef Miembro: 10.000 créditos al mes por 10 €, y genera tu primera carta en minutos. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=crear-menus) y vuelve a poner el foco en lo que de verdad importa: cocinar.

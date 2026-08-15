@@ -15,8 +15,8 @@ imageAlt: "Autonomous food delivery robot on sidewalk in modern city neighborhoo
 <p>This comprehensive guide covers everything you need to know about autonomous delivery robots—including how they work, the leading companies in the space, cost comparisons, and practical steps to implement robot delivery in your restaurant.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Optimize Your Delivery Menu with AI</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro helps you engineer menus for delivery, forecast demand, and track food costs across all channels. 75+ tools, free tier available.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a></div>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro helps you engineer menus for delivery, forecast demand, and track food costs across all channels. 75+ tools, with AI Chef Member from €10/month.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro for €10/month →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/restaurant-loading-delivery-robot.png" alt="Restaurant worker loading food into delivery robot" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Loading food delivery robots takes seconds — most operate on a simple scan-and-go system integrated with restaurant POS.</figcaption></figure>
 <h2>How Food Delivery Robots Work</h2>
 <p>The technology behind <strong>autonomous delivery robots</strong> represents a sophisticated blend of robotics, artificial intelligence, and navigation systems. Understanding how these machines operate is essential for restaurant operators considering this delivery method.</p>
@@ -230,7 +230,7 @@ imageAlt: "Autonomous food delivery robot on sidewalk in modern city neighborhoo
 <li><strong>Consider portion sizes</strong> — Most robots have limited cargo space (typically 20-30 liters). Ensure your portions fit comfortably in the compartments</li>
 <li><strong>Adjust pricing</strong> — Factor in per-delivery costs when setting menu prices for robot orders</li>
 </ul>
-<p>For restaurants looking to optimize their entire menu for delivery—whether robotic or traditional—<strong>AI Chef Pro</strong> (aichef.pro/en) offers 75+ AI-powered tools including menu engineering, demand forecasting, and packaging recommendations. Their free tier includes 10 uses per month, perfect for operators exploring delivery optimization.</p>
+<p>For restaurants looking to optimize their entire menu for delivery—whether robotic or traditional—<strong>AI Chef Pro</strong> (aichef.pro/en) offers 75+ AI-powered tools including menu engineering, demand forecasting, and packaging recommendations. Their entry plan includes 10 uses per month, perfect for operators exploring delivery optimization.</p>
 <h3>Step 4: Set Up Operations</h3>
 <p>Smooth operational integration is critical for success:</p>
 <ul>

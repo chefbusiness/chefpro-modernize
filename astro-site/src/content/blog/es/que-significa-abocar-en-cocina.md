@@ -2,7 +2,7 @@
 title: "Qué Significa Abocar en Cocina: Definición y Usos Reales"
 description: "Qué significa abocar en cocina: definición directa, etimología, usos en la partida y diferencias con trasvasar, decantar y escanciar."
 pubDate: 2024-12-11
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2024/12/AI-Chef-Pro-Stories-Insta-1080-x-1350-px-Abocado.jpeg
 imageAlt: "Abocado"
@@ -99,4 +99,4 @@ Un abocado limpio no es fruto de la improvisación. Sigue estos pasos y conviert
 6. **Usa un embudo o un colador de malla fina si la receta lo exige.** No es obligatorio, pero en líquidos muy delicados (aceites de hierbas, reducciones claras) un colador de malla fina sobre el recipiente de destino da un plus de seguridad.
 7. **Reserva el poso.** A menudo concentra sabor; se puede aprovechar para un fondo de trabajo o para dar cuerpo a una salsa. Si no sirve, descártalo con responsabilidad.
 
-Dominar el abocado no solo mejora la presentación de fondos y aliños, sino que demuestra oficio y respeto por la materia prima. Si te surgen dudas sobre esta u otras técnicas, los agentes de IA culinarios de [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=abocar) te ayudan a resolverlas al instante. Con más de 70 agentes en 7 idiomas y español nativo, puedes consultar términos, ajustar recetas o planificar partidas. El plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta, suficiente para despejar las dudas del día a día.
+Dominar el abocado no solo mejora la presentación de fondos y aliños, sino que demuestra oficio y respeto por la materia prima. Si te surgen dudas sobre esta u otras técnicas, los agentes de IA culinarios de [AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=abocar) te ayudan a resolverlas al instante. Con más de 70 agentes en 7 idiomas y español nativo, puedes consultar términos, ajustar recetas o planificar partidas. El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, suficiente para despejar las dudas del día a día.

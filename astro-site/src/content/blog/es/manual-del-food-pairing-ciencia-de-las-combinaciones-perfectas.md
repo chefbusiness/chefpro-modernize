@@ -2,7 +2,7 @@
 title: "Manual del Food Pairing: Ciencia de las Combinaciones Perfectas"
 description: "Descubre la ciencia detrás de las combinaciones perfectas de alimentos. Manual completo de food pairing científico con más de 500 maridajes validados…"
 pubDate: 2025-10-04
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/manual-del-food-pairing-4.jpeg
 imageAlt: "Manual del Food Pairing: Ciencia de las Combinaciones Perfectas"
@@ -1028,7 +1028,7 @@ wpId: 1689
 <h3 style="color: white; margin-bottom: 20px; font-size: 1.5em;">🚀 Comienza tu Revolución Culinaria Hoy</h3>
 <p style="font-size: 1.2em; margin-bottom: 25px;">Únete a miles de chefs que ya están transformando su cocina con food pairing científico e IA generativa.</p>
 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: #fff; color: #667eea; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Probar Gratis →</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: #fff; color: #667eea; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; transition: all 0.3s ease;">Empezar Miembro →</a>
 <a href="https://www.aichef.pro/mentoria-online?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=manual-del-food-pairing-ciencia-de-las-combinaciones-perfectas" style="background: transparent; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; border: 2px solid #fff; transition: all 0.3s ease;">Mentoría Personalizada →</a>
 </div>
 </div>

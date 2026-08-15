@@ -183,7 +183,7 @@ faq:
 <p>Ambos agentes trabajan de forma complementaria y están disponibles en los 7 idiomas de la plataforma (español, inglés, francés, alemán, italiano, portugués y neerlandés). La idea es que la IA se convierta en ese segundo par de ojos que todo panadero agradece, sobre todo cuando toca hornear en días de calor o con harinas nuevas.</p>
 
 <h2>Precios de AI Chef Pro para tu obrador</h2>
-<p>La plataforma AI Chef Pro se adapta al volumen de tu panadería con planes pensados para que pagues solo por lo que necesitas. Todos los planes, incluido el gratuito, dan acceso a los más de 70 agentes de IA de la suite y a los 7 idiomas; lo que cambia entre ellos son los créditos mensuales, el soporte y las herramientas avanzadas de negocio. Puedes consultar el detalle actualizado en la <a href="https://aichef.pro/precios">página de precios</a>.</p>
+<p>La plataforma AI Chef Pro se adapta al volumen de tu panadería con planes pensados para que pagues solo por lo que necesitas. Todos los planes dan acceso a los más de 70 agentes de IA de la suite y a los 7 idiomas; lo que cambia entre ellos son los créditos mensuales, el soporte y las herramientas avanzadas de negocio. Puedes consultar el detalle actualizado en la <a href="https://aichef.pro/precios">página de precios</a>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -196,9 +196,9 @@ faq:
 <tbody>
 <tr>
 <td>AI Chef Miembro</td>
-<td>Gratis (0€)</td>
+<td>AI Chef Miembro (10€)</td>
 <td>3.000</td>
-<td>Probar la plataforma, sin tarjeta</td>
+<td>Probar la plataforma con el plan AI Chef Miembro</td>
 </tr>
 <tr>
 <td>AI Chef Premium Pro</td>
@@ -226,4 +226,4 @@ faq:
 </tr>
 </tbody>
 </table></div>
-<p>Si quieres comprobar en primera persona cómo Fermentus Con AI+ y Panadería Creativa pueden ayudarte a estandarizar tus prefermentos y a crear recetas nuevas sin ir a ciegas, empieza con el plan AI Chef Miembro. Es gratuito, no necesitas tarjeta y tendrás 3.000 créditos para trastear con tus fórmulas. Dar el salto a una panadería más precisa nunca fue tan fácil.</p>
+<p>Si quieres comprobar en primera persona cómo Fermentus Con AI+ y Panadería Creativa pueden ayudarte a estandarizar tus prefermentos y a crear recetas nuevas sin ir a ciegas, empieza con el plan AI Chef Miembro. Es el plan AI Chef Miembro, necesitas tarjeta y tendrás 10.000 créditos para trastear con tus fórmulas. Dar el salto a una panadería más precisa nunca fue tan fácil.</p>

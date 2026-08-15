@@ -2,7 +2,7 @@
 title: "Marketing para Restaurantes en Redes Sociales: Plan IA 2026"
 description: "Plan de marketing para restaurantes en redes sociales con IA: calendario mensual por canal (Instagram, TikTok, Google Business, email) y prompts de copys."
 pubDate: 2026-03-16
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/marketing-restaurantes-ia-analytics-redes-sociales.jpg
 imageAlt: "Gerente de restaurante analizando métricas de marketing digital y redes sociales con inteligencia artificial en tablet"
@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo mantengo el mismo tono de voz en todos los canales?"
     a: "Define primero la personalidad de tu restaurante: cercano, elegante, gamberro… Luego pide a la IA que redacte siempre en ese tono concreto, indicándoselo en cada prompt. Crea un pequeño documento de marca con ejemplos de frases que usarías y frases que no, y compártelo con quien escriba."
   - q: "¿Cuánto cuesta hacer el marketing de mi restaurante con IA?"
-    a: "Con el plan gratuito de AI Chef Pro (3.000 créditos al mes, sin tarjeta) puedes generar los copys básicos de un calendario mensual. Si necesitas producir más contenido o llevar varios canales, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un restaurante activo en redes."
+    a: "Con el plan AI Chef Miembro de AI Chef Pro (10 € al mes, 10.000 créditos) puedes generar los copys básicos de un calendario mensual.” Si necesitas producir más contenido o llevar varios canales, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un restaurante activo en redes."
   - q: "¿Cómo sé si la estrategia en redes está funcionando?"
     a: "Mide lo que impacta en caja: mensajes pidiendo mesa desde redes, clics en el enlace de reservas de la bio, llamadas desde Google Business y códigos de descuento exclusivos canjeados. Lleva un control sencillo en una hoja de cálculo y pregunta en sala cómo os conocieron los nuevos clientes."
 ---
@@ -136,10 +136,10 @@ No te fíes solo de los “me gusta”. Las métricas que de verdad impactan en 
 
 ## Cuánto Cuesta Montar Este Sistema con IA
 
-Si trabajas con AI Chef Pro, el plan gratuito te da 3.000 créditos al mes sin necesidad de tarjeta. Con eso puedes empezar a generar los copys del calendario, probar los seis prompts de la tabla anterior y decidir si la herramienta encaja en tu flujo. No hay trampa.
+Si trabajas con AI Chef Pro, el plan AI Chef Miembro te da 10.000 créditos al mes por 10 €. Con eso puedes empezar a generar los copys del calendario, probar los seis prompts de la tabla anterior y decidir si la herramienta encaja en tu flujo. No hay trampa.
 
 Cuando el volumen de publicaciones crece, el plan **Premium Pro** sale por 25 €/mes (85.000 créditos) y cubre sin problemas la producción de contenidos de un restaurante con presencia activa en tres canales. Si además llevas la comunicación de varios locales o quieres generar recetas, cartas y contenido a diario, el plan **Plus** (50 €/mes, 175.000 créditos) te da más margen. Para equipos grandes o asesorías que necesitan créditos ilimitados, el plan **Max** cuesta 95 €/mes (o 950 €/año en su versión anual).
 
 Elegir la herramienta de IA adecuada marca la diferencia entre un sistema que te aligera el trabajo y uno que te hace perder el tiempo. [Aquí puedes comparar opciones](https://aichef.pro/blog/mejores-ia-restaurantes-2026) con criterios de hostelería real, no de oficina.
 
-Si quieres empezar hoy a generar tus copys, calendarios y respuestas a reseñas sin atarte a nada, [entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=marketing) y pruébalo con los créditos gratuitos.
+Si quieres empezar hoy a generar tus copys, calendarios y respuestas a reseñas sin atarte a nada, [entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=marketing) y pruébalo con el plan AI Chef Miembro.

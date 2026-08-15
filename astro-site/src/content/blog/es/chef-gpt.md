@@ -20,7 +20,7 @@ faq:
   - q: "¿Existen alternativas a ChefGPT.xyz en español?"
     a: "Sí. ChatGPT genérico puede generar recetas si usas prompts técnicos, pero carece de trazabilidad y no guarda memoria de tus partidas. Para un uso profesional en español, AI Chef Pro ofrece interfaz y léxico nativos, con agentes que calculan costes, alérgenos y fichas de producción de forma integrada."
   - q: "¿Cuánto cuesta AI Chef Pro?"
-    a: "AI Chef Pro dispone de un plan gratuito con 3.000 créditos al mes, sin necesidad de tarjeta. Los planes de pago arrancan en 25 €/mes (Premium, 85.000 créditos) y llegan hasta 95 €/mes (Max, créditos ilimitados). También existe la opción Max Anual por 950 €/año, que ofrece el máximo ahorro para uso intensivo."
+    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos y sin permanencia. Los planes de pago arrancan en 25 €/mes (Premium, 85.000 créditos) y llegan hasta 95 €/mes (Max, créditos ilimitados). También existe la opción Max Anual por 950 €/año, que ofrece el máximo ahorro para uso intensivo."
 ---
 
 Cuando alguien busca "Chef GPT", se encuentra con dos realidades que conviene separar desde el primer momento. Por un lado está la **categoría**: cualquier asistente de cocina basado en inteligencia artificial. Por otro, la **herramienta concreta** ChefGPT.xyz, un generador de recetas pensado para el cocinero doméstico que arrasa en directorios de apps. En esta guía te cuento qué es cada cosa, para quién sirve (y para quién no), y qué alternativas profesionales existen en 2026 si lo tuyo es la hostelería de verdad.
@@ -119,7 +119,7 @@ Si ChefGPT.xyz se queda corto para tu restaurante, catering u obrador, estas son
 | :--- | :--- | :--- | :--- | :--- |
 | **ChefGPT.xyz** | Recetas para cocinero doméstico | Traducción automática, léxico genérico | Ninguna (sin escandallos, fichas técnicas ni food cost) | Gratis limitado / ~3 $/mes |
 | **ChatGPT (genérico)** | Asistente conversacional generalista | Variable según prompt | Muy limitadas: requiere prompts muy técnicos y no guarda trazabilidad | Gratis limitado / de pago desde unos pocos dólares al mes |
-| **AI Chef Pro** | Suite profesional para chefs y restaurantes | Español nativo, léxico técnico de cocina | +70 agentes: escandallos, fichas técnicas, alérgenos, food cost, cartas, y más | Gratis (3.000 créditos/mes sin tarjeta) / Premium desde 25 €/mes |
+| **AI Chef Pro** | Suite profesional para chefs y restaurantes | Español nativo, léxico técnico de cocina | +75 agentes: escandallos, fichas técnicas, alérgenos, food cost, cartas, y más | Miembro 10 €/mes (10.000 créditos) / Premium desde 25 €/mes |
 | **Otras apps de recetas con IA** | Principalmente doméstico, algunas con opción premium | Variable, generalmente traducción | Ninguna o muy básicas | Gratis con límites / suscripción desde pocos dólares |
 
 Si quieres una comparativa más detallada entre herramientas en español, tengo un artículo hermano que profundiza en ello: [Chef GPT en español: comparativa completa](https://aichef.pro/blog/chef-gpt-espanol).
@@ -191,9 +191,9 @@ Para todo eso, ChefGPT.xyz funciona bien. El problema es cuando un dueño de res
 
 Entonces necesitas herramientas que hablen tu idioma profesional. Literal y figuradamente. AI Chef Pro está construido sobre el feedback de cocineros reales: escandallos automáticos, fichas técnicas de producción, gestión de alérgenos con cruce de contaminación, planificación de partidas, food cost por plato y por carta completa. Si diriges un obrador, los agentes calculan mermas y rendimientos de cada elaboración (panes, masas, rellenos) con la misma precisión que en una partida de restaurante.
 
-No es una app de recetas bonitas. Es una suite de trabajo. Y tiene un plan gratuito de 3.000 créditos al mes sin tarjeta que te permite probar los agentes sin compromiso. Si luego necesitas más, los planes de pago empiezan en 25 €/mes.
+No es una app de recetas bonitas. Es una suite de trabajo. Y su plan Miembro —10 € al mes con 10.000 créditos y sin permanencia— te permite usar los agentes a diario. Si luego necesitas más, los planes de pago empiezan en 25 €/mes.
 
-Si te dedicas a la hostelería y quieres probar herramientas diseñadas para tu día a día, puedes [empezar con el plan gratuito de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=chef-gpt).
+Si te dedicas a la hostelería y quieres probar herramientas diseñadas para tu día a día, puedes [empezar con el plan Miembro de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=chef-gpt).
 
 ## Recetas con IA para restaurantes: más allá de la generación de texto
 

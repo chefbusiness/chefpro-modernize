@@ -162,7 +162,7 @@ Aquí van los números exactos, sin letra pequeña:
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año.
 
-Con el plan gratuito puedes generar el borrador de tu plan APPCC y probar las herramientas. Para un uso profesional continuo, los planes de pago te dan el margen de créditos que necesitas para mantener documentación, registros y fichas actualizados.
+Con el plan AI Chef Miembro puedes generar el borrador de tu plan APPCC y probar las herramientas. Para un uso profesional continuo, los planes de pago te dan el margen de créditos que necesitas para mantener documentación, registros y fichas actualizados.
 
 ## Cómo llegar preparado a una inspección de Sanidad
 

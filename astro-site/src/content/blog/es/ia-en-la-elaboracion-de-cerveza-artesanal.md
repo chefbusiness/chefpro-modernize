@@ -126,7 +126,7 @@ wpId: 2001
 <p style="color: #ffd700; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Potencia tu creatividad cervecera</p>
 <h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; line-height: 1.3;">Descubre las herramientas de IA de AI Chef Pro para crear recetas únicas</h3>
 <p style="color: #e0e0e0; font-size: 16px; margin: 0 0 25px 0;">Fermentus Con AI+, <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI y más de 55 aplicaciones especializadas para profesionales de la gastronomía</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-elaboracion-de-cerveza-artesanal" target="_blank" style="display: inline-block; background-color: #ffd700; color: #1a5f2a; padding: 14px 35px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; transition: all 0.3s ease;">Probar Gratis AI Chef Pro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-elaboracion-de-cerveza-artesanal" target="_blank" style="display: inline-block; background-color: #ffd700; color: #1a5f2a; padding: 14px 35px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; transition: all 0.3s ease;">Probar AI Chef Miembro</a>
 </div>
 
 

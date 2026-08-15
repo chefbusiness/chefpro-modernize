@@ -215,7 +215,7 @@ wpId: 3443
 <li><strong>Asistente de gestión de bodega</strong></li>
 <li><strong>Herramientas de formación</strong> enológica</li>
 </ul>
-<p>La plataforma está diseñada para chefs profesionales y propietarios de restaurantes, con un plan gratuito que incluye 10 usos mensuales para probar las funcionalidades.</p>
+<p>La plataforma está diseñada para chefs profesionales y propietarios de restaurantes, con el plan AI Chef Miembro por 10 € al mes que incluye 10.000 créditos para probar las funcionalidades.</p>
 <h3>Vivino: La app del consumidor</h3>
 <p>Aunque orientada principalmente al consumidor, Vivino proporciona datos valiosos:</p>
 <ul>
@@ -309,4 +309,4 @@ wpId: 3443
 <p>La integración de la inteligencia artificial en el mundo del sommelier no es una tendencia pasajera, sino una evolución fundamental del sector. El sommelier 2026 es un profesional híbrido que combina conocimiento tradicional enológico con capacidades tecnológicas avanzadas.</p>
 <p>Las ventajas son claras: decisiones basadas en datos, gestión optimizada de bodega, recomendaciones personalizadas y cartas de vinos rentables. Pero lo más importante es que la tecnología amplifica, no reemplaza, el arte de crear experiencias memorables autour del vino.</p>
 <p>La pregunta ya no es si adoptar estas herramientas, sino cómo hacerlo de manera estratégica. Los restaurantes que lideren esta transformación competitiva serán los que definan el futuro de la hostelería de calidad.</p>
-<p><strong>¿Listo para llevar la gestión de vinos de tu restaurante al siguiente nivel?</strong> Descubre cómo AI Chef Pro puede ayudarte a optimizar tu carta, gestionar tu bodega y ofrecer recomendaciones personalizadas. <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega">Prueba la plataforma gratis</a> con 10 usos mensuales y experimenta el poder de la inteligencia artificial aplicada a la hostelería.</p>
+<p><strong>¿Listo para llevar la gestión de vinos de tu restaurante al siguiente nivel?</strong> Descubre cómo AI Chef Pro puede ayudarte a optimizar tu carta, gestionar tu bodega y ofrecer recomendaciones personalizadas. <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega">Prueba la plataforma por 10 € al mes</a> con 10 usos mensuales y experimenta el poder de la inteligencia artificial aplicada a la hostelería.</p>

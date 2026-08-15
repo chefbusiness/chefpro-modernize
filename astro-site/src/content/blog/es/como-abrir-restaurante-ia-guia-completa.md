@@ -143,7 +143,7 @@ La IA no cocina por ti, pero puede quitarte horas de trastienda. Aquí lo llevo 
 En esa línea trabaja AI Chef Pro. Somos la suite de más de 70 agentes de IA culinarios especializados, disponible en 7 idiomas con español nativo, y está diseñada para que chefs y dueños de restaurante puedan delegar tareas de planificación, costes y contenido sin perder el control creativo.
 
 **Precios claros y directos:**
-- **Plan gratuito:** 3.000 créditos al mes, sin tarjeta.
+- **AI Chef Miembro:** 10 €/mes, 10.000 créditos, sin permanencia.
 - **Premium Pro:** 25 €/mes (85.000 créditos).
 - **Plus:** 50 €/mes (175.000 créditos).
 - **Max:** 95 €/mes (créditos ilimitados).

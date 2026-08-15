@@ -67,7 +67,7 @@ wpId: 1941
 <p style="color: #ffd700; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">🚀 Potencia tu cocina con IA</p>
 <h3 style="color: #ffffff; font-size: 24px; margin-bottom: 15px; line-height: 1.3;">Accede a más de 55 herramientas de IA especializadas para chefs</h3>
 <p style="color: #b8b8b8; font-size: 16px; margin-bottom: 25px;">Desde Cocina Creativa hasta <a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI, optimiza cada aspecto de tu cocina profesional.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffd700; color: #1a1a2e; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Probar AI Chef Pro Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=25-prompts-de-ia-que-todo-chef-necesita-conocer" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffd700; color: #1a1a2e; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Suscríbete a AI Chef Pro</a>
 </div>
 
 

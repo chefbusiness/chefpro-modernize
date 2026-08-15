@@ -16,7 +16,7 @@ faq:
   - q: "¿Cuánto cuesta el plan avanzado de AI Chef Pro?"
     a: "AI Chef Pro tiene varios planes. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos; el plan Plus, 50 €/mes con 175.000 créditos; y el plan Max, 95 €/mes con créditos ilimitados. Existe también el plan Max Anual por 950 €/año. Todos los planes dan acceso a los más de 70 agentes de la suite."
   - q: "¿Cuántos créditos consume el uso avanzado de AI Chef Pro?"
-    a: "El consumo depende de cuántos agentes encadenes y de la complejidad de cada tarea. Un uso puntual gasta pocos créditos, pero flujos avanzados con varios agentes en secuencia consumen más. El plan gratuito ofrece 3.000 créditos al mes para probar las técnicas; si las integras en tu día a día, los planes de pago dan margen suficiente."
+    a: "El consumo depende de cuántos agentes encadenes y de la complejidad de cada tarea. Un uso puntual gasta pocos créditos, pero flujos avanzados con varios agentes en secuencia consumen más. El plan AI Chef Miembro ofrece 10.000 créditos al mes por 10 € para probar las técnicas; si las integras en tu día a día, los planes superiores dan margen suficiente."
   - q: "¿Necesito saber programar para usar las funciones avanzadas de AI Chef Pro?"
     a: "No, en absoluto. Las técnicas avanzadas que describimos (encadenar agentes, reutilizar briefs, crear plantillas por partida o establecer flujos semanales) se basan en copiar, pegar y organizar tu trabajo. No requieren código, API ni automatizaciones complejas. Cualquier profesional de cocina puede aplicarlas desde el primer día."
   - q: "¿En qué idiomas funciona AI Chef Pro?"
@@ -136,7 +136,7 @@ En 2026 la inteligencia artificial ya no es una novedad en hostelería. Muchos r
 
 La tendencia es clara: la IA especializada para cocina —entrenada con lenguaje y criterios del sector, no con conocimiento genérico— está sustituyendo progresivamente a las herramientas generalistas en las cocinas profesionales. No porque sea «más inteligente», sino porque **habla tu idioma y entiende tus problemas**. Cuando le pides un escandallo a un agente especializado, no te da una tabla de nutrientes genérica; te da un documento con mermas reales de pescado de ración, con precios de mercado actualizables y con el formato que espera tu gestor.
 
-El salto del uso básico al avanzado no depende del tamaño del restaurante. El mismo patrón sirve tanto para una cocina pequeña que aplica flujos semanales con el plan gratuito como para una cadena de varios locales que usa el plan Max con créditos ilimitados para encadenar agentes en todos sus procesos. La diferencia no está en el presupuesto: está en **la decisión de sistematizar en lugar de improvisar**.
+El salto del uso básico al avanzado no depende del tamaño del restaurante. El mismo patrón sirve tanto para una cocina pequeña que aplica flujos semanales con el plan AI Chef Miembro como para una cadena de varios locales que usa el plan Max con créditos ilimitados para encadenar agentes en todos sus procesos. La diferencia no está en el presupuesto: está en **la decisión de sistematizar en lugar de improvisar**.
 
 ## Planes y créditos: cómo escalar sin fricción
 
@@ -146,15 +146,15 @@ AI Chef Pro funciona con créditos mensuales: cada vez que un agente genera un d
 
 | Plan | Precio mensual | Créditos al mes |
 | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 créditos (sin tarjeta) |
+| AI Chef Miembro | 10 € | 10.000 créditos |
 | Premium Pro | 25 € | 85.000 créditos |
 | Plus | 50 € | 175.000 créditos |
 | Max | 95 € | Ilimitados |
 | Max Anual | 950 €/año | Ilimitados |
 
-El plan gratuito te permite probar todas las técnicas que hemos explicado con un volumen moderado de tareas. Si tu flujo semanal incluye varios agentes encadenados para carta, escandallos y fichas, el plan Premium Pro o Plus suele ser el punto dulce. El plan Max con créditos ilimitados está pensado para quienes integran la suite en múltiples procesos diarios o gestionan varios locales.
+El plan AI Chef Miembro te permite probar todas las técnicas que hemos explicado con un volumen moderado de tareas. Si tu flujo semanal incluye varios agentes encadenados para carta, escandallos y fichas, el plan Premium Pro o Plus suele ser el punto dulce. El plan Max con créditos ilimitados está pensado para quienes integran la suite en múltiples procesos diarios o gestionan varios locales.
 
-Si aún no tienes cuenta o quieres probar estas técnicas desde cero, [abre AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=avanzado) y empieza con 3.000 créditos sin necesidad de tarjeta. La [guía de configuración paso a paso](https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso) te explica cómo dejarlo todo listo en minutos.
+Si aún no tienes cuenta o quieres probar estas técnicas desde cero, [abre AI Chef Pro con el plan Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=avanzado) y empieza con 10.000 créditos. La [guía de configuración paso a paso](https://aichef.pro/blog/como-configurar-tu-cuenta-en-ai-chef-pro-paso-a-paso) te explica cómo dejarlo todo listo en minutos.
 
 
 

@@ -15,8 +15,8 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <p>Whether you run a fine dining establishment, a fast-casual café, or a high-volume quick-service restaurant, understanding your true food costs is the foundation of sustainable profitability. This comprehensive guide walks you through everything you need to know about recipe cost calculators—from basic formulas to advanced AI-powered solutions that automate the entire process.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Calculate Your Recipe Costs in Seconds</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro includes AI-powered recipe costing, menu engineering, and food cost analysis — all in one platform. Free tier with 10 uses/month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a></div>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro includes AI-powered recipe costing, menu engineering, and food cost analysis — all in one platform. AI Chef Member with 10,000 credits/month.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post12-ingredient-pricing.png" alt="Hands organizing supplier invoices next to fresh produce on commercial kitchen counter" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Accurate supplier pricing is the foundation of precise recipe costing.</figcaption></figure>
 <h2>Why Every Restaurant Needs a Recipe Cost Calculator</h2>
 <h3>The Profitability Blind Spot</h3>
@@ -296,13 +296,13 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <th>Starting Price</th>
 <th>Key Features</th>
 <th>Best For</th>
-<th>Free Tier</th>
+<th>AI Chef Member</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>AI Chef Pro</strong></td>
-<td>Free (10 uses/month)</td>
+<td>€10/month (10,000 credits)</td>
 <td>75+ AI tools, recipe scaling, menu engineering, supplier integration, automated price updates</td>
 <td>Professional chefs and restaurant owners seeking comprehensive AI-powered solution</td>
 <td>✓ Yes</td>
@@ -353,7 +353,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <li><strong>Integrate with supplier systems</strong> for automatic price updates</li>
 <li><strong>Perform menu engineering analysis</strong> to optimize profitability across the entire menu</li>
 </ul>
-<p>The free tier provides 10 uses per month—enough to cost out your signature dishes and understand the platform&#8217;s value before committing to a paid plan. For professional chefs and restaurant owners serious about profitability, AI Chef Pro represents the most comprehensive and accessible solution available.</p>
+<p>The AI Chef Member plan provides 10,000 credits per month—enough to cost out your signature dishes and understand the platform&#8217;s value before committing to a premium plan. For professional chefs and restaurant owners serious about profitability, AI Chef Pro represents the most comprehensive and accessible solution available.</p>
 <h2>How to Use Recipe Costing to Set Menu Prices</h2>
 <p>Knowing your food costs is only half the battle. Applying this knowledge strategically to menu pricing requires understanding industry benchmarks, pricing methodologies, and when to deviate from standard practices.</p>
 <h3>Target Food Cost Percentages by Dish Type</h3>

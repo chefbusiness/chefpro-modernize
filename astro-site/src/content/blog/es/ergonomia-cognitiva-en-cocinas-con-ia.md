@@ -533,7 +533,7 @@ wpId: 2135
 <div style="background: linear-gradient(135deg, #2d3436 0%, #000000 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; border: 2px solid #f4d03f; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <h3 style="color: #f4d03f; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">🍳 +55 Herramientas de IA para Tu Cocina</h3>
 <p style="color: #ffffff; font-size: 16px; margin: 0 0 10px 0; line-height: 1.6;">Desde <strong>10€/mes</strong> accede a toda la suite de AI Chef Pro: recetarios de más de 20 cocinas del mundo, Food Pairing AI, Mermas GenCal, ID Alérgenos, Mental Coach y mucho más.</p>
-<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan gratuito disponible para probar las funcionalidades básicas.</p>
+<p style="color: #cccccc; font-size: 14px; margin: 0 0 20px 0;">Plan de entrada desde 10€/mes con 10.000 créditos.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #000000; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px;">Ver Planes y Precios</a>
 </div>
 
@@ -880,7 +880,7 @@ wpId: 2135
 <p style="color: #f4d03f; font-size: 14px; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 2px;">Transformación Digital Gastronómica</p>
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: 700;">¿Listo para Revolucionar Tu Cocina?</h3>
 <p style="color: #cccccc; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a los miles de profesionales que ya utilizan AI Chef Pro para reducir la carga mental, optimizar flujos de trabajo y potenciar su creatividad culinaria.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 17px;">Comienza Gratis Ahora</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 17px;">Comienza Ahora</a>
 </div>
 
 
@@ -990,7 +990,7 @@ wpId: 2135
 
 
 
-<p class="wp-block-paragraph">Te invitamos a dar el primer paso hoy. Explora las herramientas de <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank">AI Chef Pro</a>, comienza con nuestro plan gratuito y descubre cómo la inteligencia artificial puede transformar no solo tu cocina, sino también el bienestar de todos los que trabajan en ella.</p>
+<p class="wp-block-paragraph">Te invitamos a dar el primer paso hoy. Explora las herramientas de <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank">AI Chef Pro</a>, comienza con nuestro plan AI Chef Miembro y descubre cómo la inteligencia artificial puede transformar no solo tu cocina, sino también el bienestar de todos los que trabajan en ella.</p>
 
 
 
@@ -1001,7 +1001,7 @@ wpId: 2135
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%); border-radius: 12px; padding: 40px 25px; margin: 40px 0; text-align: center; border: 3px solid #f4d03f; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
 <h3 style="color: #f4d03f; font-size: 28px; margin: 0 0 15px 0; font-weight: 700;">🚀 Transforma Tu Cocina con Inteligencia Artificial</h3>
 <p style="color: #ffffff; font-size: 17px; margin: 0 0 10px 0; line-height: 1.6;">Únete a <strong>AI Chef Pro</strong> y accede a más de 55 herramientas diseñadas para reducir tu carga mental y potenciar tu creatividad culinaria.</p>
-<p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Planes desde 10€/mes • Plan gratuito disponible • Más de 20 recetarios del mundo</p>
+<p style="color: #cccccc; font-size: 15px; margin: 0 0 25px 0;">Planes desde 10€/mes • Sin permanencia • Más de 20 recetarios del mundo</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ergonomia-cognitiva-en-cocinas-con-ia" target="_blank" style="display: inline-block; background-color: #f4d03f; color: #1a1a2e; padding: 16px 45px; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 18px;">Comenzar Ahora Gratis</a>
 </div>
 

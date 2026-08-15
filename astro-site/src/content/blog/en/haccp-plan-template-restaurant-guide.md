@@ -14,7 +14,7 @@ imageAlt: "Food safety manager checking temperature with HACCP checklist in comm
 <p>This comprehensive guide provides a complete <strong>HACCP plan template</strong> designed specifically for restaurants. Whether you&#8217;re opening a new establishment or strengthening your existing food safety protocols, this step-by-step approach will help you build a robust HACCP system that protects your customers, your staff, and your business.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Streamline Your Kitchen Operations with AI</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro complements your HACCP system with 75+ AI tools for recipe management, food cost analysis, and demand forecasting. Free tier available.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro complements your HACCP system with 75+ AI tools for recipe management, food cost analysis, and demand forecasting. AI Chef Member available.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Explore AI Chef Pro →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/haccp-temperature-monitoring-kitchen.png" alt="Chef checking food temperature for HACCP" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Temperature monitoring is the most critical aspect of HACCP — digital probes provide precise, documentable readings.</figcaption></figure>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/haccp-documentation-digital-tablet.png" alt="HACCP documentation on digital tablet" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Digital HACCP documentation replaces paper logs, making record-keeping efficient and audit-ready.</figcaption></figure>
@@ -263,7 +263,7 @@ imageAlt: "Food safety manager checking temperature with HACCP checklist in comm
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Build a Safer, More Profitable Kitchen</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">HACCP protects your customers. AI Chef Pro protects your margins. Start with 10 free uses/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">HACCP protects your customers. AI Chef Pro protects your margins. Start with 10,000 credits/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started →</a></div>
 <div itemscope itemtype="https://schema.org/FAQPage">
 <div itemscope itemtype="https://schema.org/Question">

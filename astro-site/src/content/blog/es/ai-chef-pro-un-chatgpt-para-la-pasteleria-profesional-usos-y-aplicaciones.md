@@ -1,6 +1,6 @@
 ---
 title: "IA para Pastelería Profesional: Usos Reales en el Obrador"
-description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Prueba gratis con 3.000 créditos, sin tarjeta."
+description: "Usos reales de la IA para pastelería profesional: escandallos, balanceo de recetas y campañas de temporada. Plan AI Chef Miembro: 10.000 créditos por 10 €/mes."
 pubDate: 2025-02-21
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -15,8 +15,8 @@ faq:
     a: "ChatGPT es un modelo generalista. El agente de AI Chef Pro está entrenado específicamente en formulación pastelera, escandallos, alérgenos y normativa española. Evita errores graves de proporciones y te entrega fichas técnicas listas para imprimir, sin necesidad de corregir alucinaciones."
   - q: "¿Sirve para planificar campañas como el roscón de Reyes?"
     a: "Sí. Puedes planificar la producción semanal, prever la compra de materias primas según demanda estimada y ajustar el escalado de recetas. Ayuda a reducir roturas de stock y a coordinar al equipo en campañas de alta exigencia como Navidad o San Valentín."
-  - q: "¿Hay plan gratuito para probarlo en el obrador?"
-    a: "AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes sin necesidad de tarjeta bancaria. Es suficiente para probar varios agentes con tus propias recetas. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos."
+  - q: "¿Hay plan de entrada para probarlo en el obrador?"
+    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta. Es suficiente para probar varios agentes con tus propias recetas. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos."
   - q: "¿Ajusta recetas y escalado de tandas sin descuadrar la fórmula?"
     a: "Sí. El agente de pastelería recalcula cada ingrediente respetando los porcentajes de hidratación, grasa y azúcares. Puedes pasar de 5 kg de harina a 18 kg en segundos o modificar la proporción de mantequilla manteniendo la coherencia de toda la receta."
   - q: "¿Está en español de España y usa terminología de pastelería?"
@@ -140,15 +140,15 @@ AI Chef Pro pone a tu disposición +70 agentes de IA culinarios en 7 idiomas (es
 
 Eliges el plan que se ajusta a tu ritmo:
 
-- **Plan gratuito**: 3.000 créditos al mes. Sin tarjeta. Ideal para probar los agentes con tus propias recetas.
+- **Plan AI Chef Miembro**: 10.000 créditos al mes. Con tarjeta. Ideal para probar los agentes con tus propias recetas.
 - **Premium Pro**: 25 €/mes (85.000 créditos). Para obradores que quieran sistematizar fichas, escandallos y campañas.
 - **Plus**: 50 €/mes (175.000 créditos). Si produces muchas referencias o tienes varios puntos de venta.
 - **Max**: 95 €/mes. Créditos ilimitados. Para obradores con alta rotación de carta y producción escalada.
-- **Max Anual**: 950 €/año. Todo ilimitado con un descuento equivalente a dos meses gratis.
+- **Max Anual**: 950 €/año. Todo ilimitado con un descuento equivalente a dos meses.
 
 Ninguno te va a sustituir la manga pastelera. Pero sí te devuelven tiempo, datos y margen.
 
-[Probar AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=pasteleria) no cuesta nada y en menos de diez minutos estarás sacando tu primer escandallo con precios reales.
+[Probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=pasteleria) no cuesta nada y en menos de diez minutos estarás sacando tu primer escandallo con precios reales.
 
 ## Conclusión
 

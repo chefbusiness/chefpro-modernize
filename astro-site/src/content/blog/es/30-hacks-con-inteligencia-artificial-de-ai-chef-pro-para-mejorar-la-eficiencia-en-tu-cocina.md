@@ -17,8 +17,8 @@ faq:
     a: "No. Solo necesitas saber qué quieres conseguir y escribirlo en lenguaje natural, como si se lo pidieras a un compañero. Los agentes de AI Chef Pro entienden el lenguaje de cocina y están entrenados con terminología profesional. Si puedes escribir un WhatsApp, puedes usar un agente."
   - q: "¿Sirve la IA para hacer escandallos y control de costes?"
     a: "Sí, y es una de las áreas donde más impacto tiene. El agente de Escandallos y Costes calcula escandallos detallados, fija precios según margen, simula subidas de proveedor y genera informes de food cost semanal. Todo con tus datos reales, sin fórmulas complejas ni errores manuales."
-  - q: "¿Cuánto cuesta AI Chef Pro y hay plan gratuito?"
-    a: "Hay un plan gratuito con 3.000 créditos al mes, sin tarjeta. El plan Premium Pro cuesta 25 €/mes y ofrece 85.000 créditos, suficiente para una cocina profesional. Existen planes superiores (Plus y Max) con más créditos, e incluso una opción Max Anual con créditos ilimitados por 950 €/año."
+  - q: "¿Cuánto cuesta AI Chef Pro y qué plan de entrada hay?"
+    a: "Hay un plan de entrada, AI Chef Miembro: 10 € al mes con 10.000 créditos y sin permanencia. El plan Premium Pro cuesta 25 €/mes y ofrece 85.000 créditos, suficiente para una cocina profesional. Existen planes superiores (Plus y Max) con más créditos, e incluso una opción Max Anual con créditos ilimitados por 950 €/año."
   - q: "¿En qué idiomas funciona?"
     a: "AI Chef Pro trabaja en 7 idiomas, con español nativo de máxima calidad. También puedes generar contenidos en inglés, francés, alemán, italiano, portugués y neerlandés, manteniendo la precisión técnica culinaria. Ideal para cartas multilingües o comunicación con equipos internacionales."
 ---
@@ -241,8 +241,8 @@ AI Chef Pro reúne más de 70 agentes de IA culinarios, en 7 idiomas, con españ
 | Plus | 175.000 | 50 €/mes |
 | Max | Ilimitados | 95 €/mes (950 €/año) |
 
-Puedes empezar hoy mismo con el plan gratuito de 3.000 créditos al mes, sin necesidad de tarjeta, y probar los primeros hacks de escandallo o creatividad. Si necesitas más potencia, el plan Premium Pro, por 25 €/mes, te da 85.000 créditos y cubre la operativa diaria de una cocina profesional sin problemas.
+Puedes empezar hoy mismo con el plan AI Chef Miembro de 10 € al mes y 10.000 créditos, sin permanencia, y probar los primeros hacks de escandallo o creatividad. Si necesitas más potencia, el plan Premium Pro, por 25 €/mes, te da 85.000 créditos y cubre la operativa diaria de una cocina profesional sin problemas.
 
 Estos trucos ia cocina profesional no requieren saber programar ni dedicar horas a configurar nada. La clave está en las instrucciones que ya tienes aquí; y si quieres afinarlas todavía más, te vendrá bien esta [guía de prompt engineering para chefs](https://aichef.pro/blog/prompt-engineering-chefs-guia). Te recomiendo elegir 2 o 3 hacks, los que más te duelan en el día a día, y aplicarlos esta misma semana. Verás cómo esos minutos que ganas empiezan a sumar horas de margen.
 
-[Entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-hacks) y activa tu plan gratuito para empezar a usar cualquier agente hoy mismo.
+[Entra en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-hacks) y activa tu plan AI Chef Miembro para empezar a usar cualquier agente hoy mismo.

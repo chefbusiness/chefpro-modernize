@@ -2,7 +2,7 @@
 title: "Rotación de Personal en Hostelería: Cómo Reducirla con IA"
 description: "La rotación de personal en hostelería cuesta 3.000-5.000 € por baja. Por qué se van y cómo retenerlos con onboarding, turnos justos, formación e IA."
 pubDate: 2026-03-21
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-personal-hosteleria-ia-1.jpg
 imageAlt: "Equipo de restaurante en reunión con gerente revisando turnos en pantalla digital"
@@ -147,10 +147,10 @@ No necesitas implantar todo de golpe. De hecho, si intentas cambiar diez cosas a
 
 3. **Publica los horarios de las próximas dos semanas con un criterio transparente.** Si nunca lo has hecho, explica al equipo cómo has repartido los turnos y por qué. Pide feedback. La transparencia construye confianza aunque el horario no sea perfecto.
 
-4. **Prueba gratis una herramienta de IA para quitarte una tarea administrativa recurrente.** Por ejemplo, genera una checklist de tareas por puesto para tu cocina o sala. AI Chef Pro te da 3.000 créditos al mes sin necesidad de tarjeta, suficientes para probar varios agentes y ver cuáles te ahorran tiempo de verdad. Si luego necesitas más, los planes de pago arrancan en 25 euros al mes, y el plan Max con créditos ilimitados cuesta 95 euros al mes o 950 euros al año.
+4. **Prueba la IA de AI Chef Miembro para quitarte una tarea administrativa recurrente.** Por ejemplo, genera una checklist de tareas por puesto para tu cocina o sala. AI Chef Miembro te da 10.000 créditos al mes por 10 €, suficientes para probar varios agentes y ver cuáles te ahorran tiempo de verdad. Si luego necesitas más, los planes de pago arrancan en 25 euros al mes, y el plan Max con créditos ilimitados cuesta 95 euros al mes o 950 euros al año.
 
 Un recurso concreto que te puede servir para arrancar con el onboarding y la organización de turnos es este [kit de checklists y tareas por puesto](https://aichef.pro/kit-tareas-asador), que aunque está pensado para asador, te da una estructura que puedes adaptar a cualquier cocina.
 
 La rotación de personal en hostelería no se arregla con un cartel de "se busca camarero" más bonito ni con una subida salarial aislada. Se arregla con procesos, con coherencia y con liderazgo. La inteligencia artificial te da el tiempo y las herramientas para construir esos procesos sin ahogarte en el intento. El resto lo pones tú, tu experiencia y las ganas de que tu equipo se quede porque quiere, no porque no le queda otra.
 
-Si quieres empezar a probar cómo la IA puede liberarte carga administrativa, [crea tu cuenta gratuita en AI Chef Pro y empieza a usar tus 3.000 créditos mensuales](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=personal).
+Si quieres empezar a probar cómo la IA puede liberarte carga administrativa, [crea tu cuenta en AI Chef Miembro y empieza a usar tus 10.000 créditos mensuales](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=personal).

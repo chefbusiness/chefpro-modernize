@@ -12,13 +12,13 @@ faq:
   - q: "¿Cuánto food cost debe tener una hamburguesa para ser rentable?"
     a: "En una hamburguesería, el food cost por plato debe moverse entre el 25% y el 32% sobre el PVP sin IVA. Por debajo del 25% puede indicar que estás sacrificando calidad de ingredientes o que el precio es demasiado alto para tu clientela. Por encima del 32%, el margen se estrecha peligrosamente y cualquier imprevisto —subida de proveedor, comisión de delivery, devolución— te puede poner en pérdidas. El punto dulce suele estar en el 28-30% para burgers signature."
   - q: "¿Sirve la IA para una hamburguesería pequeña o un food truck?"
-    a: "Sí, y quizá más que para una cadena grande. En un negocio pequeño el dueño lleva la cocina, las compras, las redes y la administración. Cada hora que ahorras en escandallos, fichas o contenido es una hora que dedicas a cocinar, a atender o a descansar. Con el plan gratuito de AI Chef Pro puedes hacer muchas tareas sin pagar nada y decidir si te compensa."
+    a: "Sí, y quizá más que para una cadena grande. En un negocio pequeño el dueño lleva la cocina, las compras, las redes y la administración. Cada hora que ahorras en escandallos, fichas o contenido es una hora que dedicas a cocinar, a atender o a descansar. Con el plan AI Chef Miembro de AI Chef Pro puedes hacer muchas tareas por solo 10 € al mes y decidir si te compensa."
   - q: "¿Cómo ayuda la IA en el delivery de hamburguesas?"
     a: "La IA calcula el food cost real tras la comisión de cada plataforma, te propone PVP específicos para delivery que mantengan el margen, sugiere ingredientes que aguantan mejor el transporte y genera fichas de producto con descripciones y fotos optimizadas para apps de reparto. También te ayuda a crear combos exclusivos de delivery que el cliente no puede comparar con la carta de sala."
   - q: "¿Necesito saber de tecnología para usar IA en mi hamburguesería?"
     a: "No. Herramientas como AI Chef Pro están diseñadas para que un chef o un dueño de restaurante las use sin conocimientos técnicos. La interfaz es conversacional: escribes lo que necesitas en lenguaje natural, como si hablaras con un colega de cocina, y la IA te devuelve resultados en español nativo, con criterio de hostelería."
   - q: "¿Cuánto cuesta empezar con AI Chef Pro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta. Con eso puedes hacer escandallos, generar fichas de producto, diseñar combos y crear contenido para probar la herramienta. Si necesitas más créditos, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos. Para uso intensivo, el plan Max ofrece créditos ilimitados por 95 € al mes."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta. Con eso puedes hacer escandallos, generar fichas de producto, diseñar combos y crear contenido para probar la herramienta. Si necesitas más créditos, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos. Para uso intensivo, el plan Max ofrece créditos ilimitados por 95 € al mes."
   - q: "¿Cómo diseño combos rentables sin perder margen?"
     a: "La clave es calcular el coste real de cada componente del combo —burger, bebida, sides, salsas— y fijar un PVP conjunto que deje el food cost por debajo del 30%. La IA te propone combinaciones, calcula el margen resultante y sugiere add-ons de alto margen como doble de queso, bacon extra o salsas premium que suben el ticket medio sin disparar el coste."
 ---
@@ -205,13 +205,13 @@ Esto es lo que incluye y lo que cuesta:
 
 | Plan | Créditos mensuales | Precio mensual | Ideal para |
 | :--- | :--- | :--- | :--- |
-| **Gratuito** | 3.000 créditos | 0 € (sin tarjeta) | Probar la herramienta, hacer tus primeros escandallos, generar algunas fichas |
+| **AI Chef Miembro** | 10.000 créditos | 10 €/mes (con tarjeta) | Probar la herramienta, hacer tus primeros escandallos, generar algunas fichas |
 | **Premium Pro** | 85.000 créditos | 25 €/mes | Hamburgueserías con un local, que necesitan calcular food cost, diseñar carta y generar contenido con regularidad |
 | **Plus** | 175.000 créditos | 50 €/mes | Negocios con varios canales (sala + delivery), actualización frecuente de escandallos, gestión de redes |
 | **Max** | Ilimitados | 95 €/mes | Cadenas, dark kitchens, consultores que gestionan varias hamburgueserías y necesitan uso intensivo sin límites |
 | **Max Anual** | Ilimitados | 950 €/año | Mismo plan Max con dos meses de ahorro respecto al pago mensual |
 
-Cada crédito equivale aproximadamente a una acción: generar un escandallo, crear una ficha de producto, redactar una descripción para la carta, proponer un combo, escribir un post para redes. Con 3.000 créditos gratuitos al mes puedes hacer bastantes tareas sin pagar nada y decidir si te encaja.
+Cada crédito equivale aproximadamente a una acción: generar un escandallo, crear una ficha de producto, redactar una descripción para la carta, proponer un combo, escribir un post para redes. Con 10.000 créditos al mes por 10 € puedes hacer bastantes tareas y decidir si te encaja.
 
 El [kit de tareas para hamburguesería](https://aichef.pro/kit-tareas-hamburgueseria) está preconfigurado con los agentes que más usan los dueños de burger: escandallos, cartas, combos, delivery y branding. Entras, seleccionas lo que necesitas y la IA te guía.
 
@@ -223,4 +223,4 @@ He pasado 29 años en cocinas de alta hostelería y 15 asesorando negocios de re
 
 La IA no te va a cocinar las burgers. No te va a atender a los clientes ni te va a limpiar la plancha. Pero te va a quitar de encima las tres o cuatro horas diarias que pierdes con Excel, con dudas sobre precios, con bloqueos creativos para las redes o con la angustia de no saber si ese combo nuevo que has sacado te da margen o te lo quita.
 
-Si tienes una hamburguesería y quieres probar cómo funciona esto sin soltar un euro, [entra en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-hamburgueserias), crea tu cuenta gratuita y empieza a calcular escandallos, diseñar combos y generar contenido hoy mismo. Sin tarjeta, sin compromiso. Luego decides si te quedas.
+Si tienes una hamburguesería y quieres probar cómo funciona esto sin soltar un euro, [entra en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-hamburgueserias), crea tu cuenta de AI Chef Miembro y empieza a calcular escandallos, diseñar combos y generar contenido hoy mismo. Con tarjeta, sin compromiso. Luego decides si te quedas.

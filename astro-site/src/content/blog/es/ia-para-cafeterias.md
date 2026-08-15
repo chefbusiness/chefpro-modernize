@@ -10,7 +10,7 @@ lang: es
 wpId: 2230
 faq:
   - q: "¿Cuánto cuesta empezar con IA en una cafetería pequeña?"
-    a: "Puedes empezar con 0 euros usando planes gratuitos como el de AI Chef Pro, que ofrece 3.000 créditos al mes sin tarjeta. Con eso te da para recalcular los escandallos de tus bebidas principales o generar ideas de temporada. Si necesitas más volumen, los planes de pago van desde 25 € al mes, un coste asumible incluso para una cafetería de barrio."
+    a: "Puedes empezar con 10 euros al mes con el plan AI Chef Miembro, que ofrece 10.000 créditos al mes.” Con eso te da para recalcular los escandallos de tus bebidas principales o generar ideas de temporada. Si necesitas más volumen, los planes de pago van desde 25 € al mes, un coste asumible incluso para una cafetería de barrio."
   - q: "¿Necesito saber de tecnología para usar IA en mi cafetería?"
     a: "No. Las herramientas actuales están diseñadas para que hables con ellas como lo harías con un compañero. Le pides «calcula el food cost de un matcha latte con leche de avena» o «crea tres platos de brunch con calabaza» y te responde. Lo importante es que tú pongas el conocimiento del negocio; la IA pone la velocidad de cálculo."
   - q: "¿La IA va a sustituir a mis baristas?"
@@ -20,7 +20,7 @@ faq:
   - q: "¿Puedo usar la IA para las redes sociales de mi cafetería?"
     a: "Sí. Puedes generar imágenes de tus productos (flat white, tostadas, bowls) y redactar los pies de foto y hashtags en segundos. La calidad no siempre iguala a un fotógrafo profesional, pero te permite mantener una frecuencia diaria de publicación sin gastar una fortuna ni invertir horas que no tienes."
   - q: "¿Con qué plan de AI Chef Pro me conviene empezar?"
-    a: "Empieza con el plan gratuito, que te da 3.000 créditos al mes sin compromiso. Así pruebas a calcular escandallos o crear recetas sin riesgo. Si ves que lo usas a diario, el plan Premium Pro (25 €/mes, 85.000 créditos) cubre las necesidades de la mayoría de cafeterías. Los planes superiores son para negocios con alto volumen de creación de contenido o múltiples locales."
+    a: "Empieza con el plan AI Chef Miembro, que te da 10.000 créditos al mes por 10 € sin compromiso.” Así pruebas a calcular escandallos o crear recetas sin riesgo. Si ves que lo usas a diario, el plan Premium Pro (25 €/mes, 85.000 créditos) cubre las necesidades de la mayoría de cafeterías. Los planes superiores son para negocios con alto volumen de creación de contenido o múltiples locales."
 ---
 
 Si llevas una cafetería o un brunch, sabes que el margen está en los detalles: un escandallo mal ajustado, una carta que no rota o un cliente que no repite te comen la rentabilidad. La inteligencia artificial no viene a poner robots tras la barra, sino a darte herramientas para afinar costes, diseñar menús de temporada, generar contenido para redes y fidelizar a tus clientes sin añadir horas a tu jornada. En este artículo te cuento, desde la experiencia de 29 años en alta hostelería y 15 asesorando negocios como el tuyo, qué aplicaciones reales tiene la IA hoy en una cafetería y cómo puedes empezar a usarla mañana mismo.
@@ -133,7 +133,7 @@ Puedes usar la IA para diseñar un programa de fidelización con lógica condici
 Si nunca has usado IA en tu cafetería, no te agobies. Empieza con un solo problema y una herramienta que lo resuelva. Este es el camino que recomiendo a los dueños de cafetería con los que trabajo:
 
 1. **Identifica el punto que más te duele.** ¿Los costes de la carta de brunch? ¿La falta de tiempo para redes? ¿Los clientes que no repiten? Escoge uno.
-2. **Prueba una suite de IA con plan gratuito.** AI Chef Pro, por ejemplo, te da 3.000 créditos al mes sin tarjeta para que experimentes sin riesgo.
+2. **Prueba una suite de IA con el plan AI Chef Miembro.** AI Chef Pro, por ejemplo, te da 10.000 créditos al mes por 10 € para que experimentes sin riesgo.
 3. **Haz una tarea concreta.** Recalcula el escandallo de tus 10 bebidas más vendidas o genera tres ideas de platos de temporada con sus fichas. Mide el tiempo que te ahorra y el margen que ganas.
 4. **Escala poco a poco.** Cuando veas resultados en un área, añade otra. La curva de aprendizaje es mínima.
 
@@ -153,13 +153,13 @@ Los planes se adaptan al tamaño de tu negocio:
 
 | Plan | Créditos mensuales | Precio |
 | :--- | :--- | :--- |
-| Gratuito | 3.000 | 0 € |
+| AI Chef Miembro | 10.000 | 10 € |
 | Premium Pro | 85.000 | 25 €/mes |
 | Plus | 175.000 | 50 €/mes |
 | Max | Ilimitados | 95 €/mes |
 | Max Anual | Ilimitados | 950 €/año |
 
-El plan gratuito te permite probar sin compromiso y ver si encaja con tu operativa. Si tu cafetería mueve volumen, el plan Premium Pro o Plus te dará créditos de sobra para trabajar todas las semanas.
+El plan AI Chef Miembro te permite probar sin compromiso y ver si encaja con tu operativa. Si tu cafetería mueve volumen, el plan Premium Pro o Plus te dará créditos de sobra para trabajar todas las semanas.
 
 Puedes empezar hoy mismo desde [este enlace](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-cafeterias) y tener tus primeros escandallos y recetas listos en minutos.
 
@@ -174,4 +174,4 @@ Puedes empezar hoy mismo desde [este enlace](https://app.aichef.pro/?utm_source=
 
 Circuló el caso de una cafetería en Estocolmo que, al pretender funcionar casi solo con IA, habría terminado cerrando por problemas con la normativa laboral sueca. Sea cual sea el detalle exacto, la lección es clara: la inteligencia artificial no sustituye tu criterio, tu conocimiento del barrio ni a las personas que dan la cara cada mañana. Es un apoyo para que tú y tu equipo toméis mejores decisiones más rápido.
 
-Úsala para quitarte trabajo repetitivo, para afinar números y para liberar tiempo que puedas dedicar a lo que de verdad importa: el producto, el servicio y el ambiente de tu cafetería. No esperes milagros, pero sí resultados medibles. Si quieres ver cómo la IA puede ayudarte a controlar costes, rotar tu carta y fidelizar clientes sin perder la esencia de tu negocio, [pruébala gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-cafeterias) y empieza por donde más te duela.
+Úsala para quitarte trabajo repetitivo, para afinar números y para liberar tiempo que puedas dedicar a lo que de verdad importa: el producto, el servicio y el ambiente de tu cafetería. No esperes milagros, pero sí resultados medibles. Si quieres ver cómo la IA puede ayudarte a controlar costes, rotar tu carta y fidelizar clientes sin perder la esencia de tu negocio, [pruébala con el plan AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-cafeterias) y empieza por donde más te duela.

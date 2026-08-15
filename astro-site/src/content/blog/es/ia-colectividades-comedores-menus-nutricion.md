@@ -2,7 +2,7 @@
 title: "Menús para Colectividades: IA, Nutrición y Costes 2026"
 description: "Cómo planificar menús para colectividades con IA: requisitos nutricionales por colectivo, frecuencias del RD 315/2025, alérgenos y food cost ajustado."
 pubDate: 2026-03-22
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/colectividades-ia-1.jpg
 imageAlt: "Cocina industrial de colectividades preparando cientos de raciones con IA"
@@ -12,13 +12,13 @@ faq:
   - q: "¿Cómo ayuda la IA a cumplir con el RD 315/2025 en comedores escolares?"
     a: "La IA genera menús cíclicos que cumplen automáticamente con las frecuencias obligatorias de verduras, fruta, legumbres, pescado, carne y frituras que establece el decreto. Además, documenta cada menú con ingredientes, alérgenos y técnicas culinarias, y produce el informe de frecuencias listo para presentar en una auditoría o en una licitación pública."
   - q: "¿Puedo planificar un menú cíclico de 5 semanas para 800 comensales con AI Chef Pro?"
-    a: "Sí, puedes definir el número de semanas del ciclo (de 4 a 6), el tipo de colectivo, el presupuesto por ración y las restricciones de alérgenos. Los agentes de IA generan el calendario completo con fichas nutricionales, escandallos y cartas de alérgenos por plato y por día. El plan gratuito te permite empezar con 3.000 créditos al mes sin tarjeta."
+    a: "Sí, puedes definir el número de semanas del ciclo (de 4 a 6), el tipo de colectivo, el presupuesto por ración y las restricciones de alérgenos. Los agentes de IA generan el calendario completo con fichas nutricionales, escandallos y cartas de alérgenos por plato y por día. El plan AI Chef Miembro te permite empezar con 10.000 créditos al mes con tarjeta."
   - q: "¿Cómo gestiono los 14 alérgenos de declaración obligatoria para cientos de comensales?"
     a: "AI Chef Pro cruza automáticamente los ingredientes de cada receta con la lista de los 14 alérgenos del Reglamento UE 1169/2011 y genera las fichas por plato, día y semana. Si modificas un ingrediente, todas las fichas se actualizan. Puedes imprimir la carta de alérgenos del mes o el informe individual para un comensal alérgico en segundos."
   - q: "¿Cuál es la diferencia entre un menú de colectividad y un menú de restaurante?"
     a: "El menú de colectividad trabaja con volúmenes fijos de cientos o miles de raciones, un coste por cubierto cerrado entre 2,50 y 4,50 € y una normativa nutricional estricta (RD 315/2025, Ley 17/2011). El menú de restaurante busca la experiencia del cliente con mayor flexibilidad de costes y sin las obligaciones de frecuencia de grupos de alimentos que exige la restauración colectiva."
   - q: "¿Qué precios y planes tiene AI Chef Pro para una cocina de colectividad?"
-    a: "AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes sin tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados, o 950 €/año). Todos incluyen generación de menús cíclicos, cálculo de escandallos, perfiles nutricionales y gestión de alérgenos."
+    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes con tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados, o 950 €/año). Todos incluyen generación de menús cíclicos, cálculo de escandallos, perfiles nutricionales y gestión de alérgenos."
   - q: "¿Cómo documento los menús para una licitación o auditoría de Sanidad?"
     a: "La plataforma genera automáticamente el menú mensual con ingredientes, alérgenos y técnicas culinarias, las recomendaciones para las cenas, el informe de frecuencias de grupos de alimentos según el RD 315/2025 y las fichas técnicas de cada receta. Todo está listo para exportar y presentar en una licitación pública o en una inspección de Sanidad."
 ---
@@ -126,7 +126,7 @@ Con AI Chef Pro, el flujo es este:
 3. **Calcular nutrientes y alérgenos**: el sistema calcula automáticamente los valores nutricionales de cada plato y del menú semanal, y genera las fichas de alérgenos por plato, día y semana.
 4. **Documentar para auditoría o licitación**: exportas el menú mensual con ingredientes, alérgenos y técnicas culinarias, las recomendaciones para las cenas, el informe de frecuencias de grupos de alimentos y las fichas técnicas de cada receta. Todo listo para publicar o presentar.
 
-La plataforma cuenta con más de 70 agentes de IA culinarios, disponibles en español nativo y en 6 idiomas más, que cubren desde la generación de menús cíclicos hasta el cálculo de escandallos, la gestión de alérgenos y la documentación para colectividades. Puedes empezar con el plan gratuito —3.000 créditos al mes, sin tarjeta— y escalar a Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) o Max (95 €/mes, créditos ilimitados, o 950 €/año).
+La plataforma cuenta con más de 70 agentes de IA culinarios, disponibles en español nativo y en 6 idiomas más, que cubren desde la generación de menús cíclicos hasta el cálculo de escandallos, la gestión de alérgenos y la documentación para colectividades. Puedes empezar con el plan AI Chef Miembro —10.000 créditos al mes, con tarjeta— y escalar a Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) o Max (95 €/mes, créditos ilimitados, o 950 €/año).
 
 Si quieres probar cómo funciona en tu cocina, puedes acceder directamente a la [app de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=colectividades).
 

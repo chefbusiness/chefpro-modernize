@@ -911,7 +911,7 @@ wpId: 1056
 
 
 
-<p class="wp-block-paragraph">Comienza tu prueba gratuita de AI Chef Pro hoy y descubre cómo la IA puede transformar la comunicación de tu restaurante.<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" data-lasso-id="1252">Prueba AI Chef Pro →</a></p>
+<p class="wp-block-paragraph">Comienza con AI Chef Miembro hoy y descubre cómo la IA puede transformar la comunicación de tu restaurante.<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" data-lasso-id="1252">Prueba AI Chef Pro →</a></p>
 
 
 

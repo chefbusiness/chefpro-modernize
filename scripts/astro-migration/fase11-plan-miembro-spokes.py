@@ -77,7 +77,11 @@ def plantillas(lang, c):
         ]
     if lang == 'fr':
         return [
-            (re.compile(r"Commencez gratuitement avec l" + APO + r"onboarding de 2 minutes\. 3 000 crédits par mois pour tester tous les agents\.( Sans carte( bancaire| de crédit)?\.)?"), c['cta_a']),
+            # ambos formatos de número: los lotes tempranos escribieron 3.000 y los tardíos 3 000
+            (re.compile(r"Commencez gratuitement avec l" + APO + r"onboarding de 2 minutes\. 3[ .]000 crédits par mois pour tester tous les agents\.( Sans carte( bancaire| de crédit)?\.)?"), c['cta_a']),
+            (re.compile(r"Commencez gratuitement avec l" + APO + r"onboarding de 2 minutes\. 3[ .]000 crédits par mois\.( Sans carte( bancaire| de crédit)?\.)?"), c['cta_b']),
+            (re.compile(r"Vous pouvez commencer gratuitement avec 3[ .]000 crédits par mois pour vos propres listes et propositions\."), c['souschef_frag']),
+            ('Commencez gratuitement.', c['seo_sufijo']),
             ('Essai gratuit.', c['seo_sufijo']),
         ]
     if lang == 'de':

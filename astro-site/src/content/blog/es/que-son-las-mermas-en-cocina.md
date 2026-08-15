@@ -2,7 +2,7 @@
 title: "Qué Son las Mermas en Cocina: Tipos, Cálculo y Fórmulas"
 description: "Qué son las mermas en cocina, sus tipos con tabla, las fórmulas para calcularlas paso a paso y el rendimiento real de cada producto. Guía de chef."
 pubDate: 2024-10-19
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2024/10/que-es-la-merma-blog-ai-chef-pro.png
 imageAlt: "que es la merma en cocina"
@@ -107,9 +107,9 @@ Ese desfase se multiplica por cada servicio. Si vendes 30 raciones al día, la d
 
 Llevo casi tres décadas en cocina y sé que el ojo del chef es insustituible. Pero también sé que las herramientas digitales han llegado para quedarse, sobre todo cuando hablamos de control de costes. En 2026, con la presión sobre los márgenes, no podemos permitirnos llevar el control de mermas en una libreta o, peor aún, no llevarlo.
 
-AI Chef Pro es un asistente con más de 70 agentes de IA culinarios, en 7 idiomas (con español nativo), que te ayuda a medir y reducir las mermas desde el pedido hasta el pase. Puedes cargar tus compras, calcular rendimientos reales, generar escandallos automáticos y simular escenarios antes de cambiar un plato. El plan gratuito te da 3.000 créditos al mes, sin tarjeta, para que empieces a trabajar con datos reales desde el primer día. Si necesitas más capacidad, los planes Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados; también disponible en modalidad anual por 950 €/año) se adaptan al volumen de cada cocina.
+AI Chef Pro es un asistente con más de 70 agentes de IA culinarios, en 7 idiomas (con español nativo), que te ayuda a medir y reducir las mermas desde el pedido hasta el pase. Puedes cargar tus compras, calcular rendimientos reales, generar escandallos automáticos y simular escenarios antes de cambiar un plato. El plan AI Chef Miembro te da 10.000 créditos al mes por 10 €, para que empieces a trabajar con datos reales desde el primer día. Si necesitas más capacidad, los planes Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados; también disponible en modalidad anual por 950 €/año) se adaptan al volumen de cada cocina.
 
-Si quieres dar el paso y dejar de adivinar, [prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mermas-definicion) y empieza a medir lo que realmente te cuesta cada plato.
+Si quieres dar el paso y dejar de adivinar, [prueba AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mermas-definicion) y empieza a medir lo que realmente te cuesta cada plato.
 
 
 

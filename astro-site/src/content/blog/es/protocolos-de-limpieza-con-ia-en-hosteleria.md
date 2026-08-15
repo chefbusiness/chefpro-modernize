@@ -83,7 +83,7 @@ wpId: 2088
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #FFD700; border-radius: 8px; padding: 25px; margin: 30px 0; text-align: center;">
 <p style="color: #FFD700; font-size: 22px; font-weight: bold; margin: 0 0 15px 0;">🧹 Optimiza la Gestión Higiénica de tu Cocina con IA</p>
 <p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0;">AI Chef Pro incluye herramientas de gestión documental y protocolos que te ayudan a mantener los más altos estándares de limpieza y seguridad alimentaria en tu establecimiento.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=protocolos-de-limpieza-con-ia-en-hosteleria" target="_blank" style="display: inline-block; background-color: #FFD700; color: #000000; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Descubre AI Chef Pro Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=protocolos-de-limpieza-con-ia-en-hosteleria" target="_blank" style="display: inline-block; background-color: #FFD700; color: #000000; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Descubre AI Chef Pro Miembro</a>
 </div>
 
 
@@ -736,7 +736,7 @@ wpId: 2088
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 8px; padding: 25px; margin: 30px 0; text-align: center;">
 <p style="color: #000000; font-size: 22px; font-weight: bold; margin: 0 0 15px 0;">🚀 Transforma tu Cocina con AI Chef Pro</p>
 <p style="color: #1a1a1a; font-size: 16px; margin: 0 0 20px 0;">Más de 50 herramientas de IA diseñadas específicamente para profesionales de la hostelería. Desde gestión de alérgenos hasta optimización de mermas, todo en una sola plataforma.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=protocolos-de-limpieza-con-ia-en-hosteleria" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Prueba Gratis Ahora</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=protocolos-de-limpieza-con-ia-en-hosteleria" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;">Hazte Miembro Ahora</a>
 </div>
 
 

@@ -143,7 +143,7 @@ const PSeoCityPage = ({ modifier }: PSeoCityPageProps) => {
             </Button>
             <Button asChild size="lg" variant="outline">
               <Link to="/herramientas-ia-para-restaurantes">
-                Probar AI Chef Pro Gratis
+                Probar AI Chef Pro
               </Link>
             </Button>
           </div>
@@ -371,10 +371,10 @@ const PSeoCityPage = ({ modifier }: PSeoCityPageProps) => {
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">{content.saasCtaBody}</p>
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
                 <Link to="/herramientas-ia-para-restaurantes">
-                  Probar AI Chef Pro Gratis <ArrowRight className="ml-2 h-5 w-5" />
+                  Probar AI Chef Pro <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <p className="text-xs text-muted-foreground mt-4">3.000 créditos gratis al mes · Sin tarjeta</p>
+              <p className="text-xs text-muted-foreground mt-4">10.000 créditos/mes · Plan Miembro 10 €/mes</p>
             </CardContent>
           </Card>
         </div>

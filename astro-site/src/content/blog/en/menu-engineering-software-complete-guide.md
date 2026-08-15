@@ -29,7 +29,7 @@ faq:
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Stop Guessing. Engineer Your Menu with AI.</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro analyzes costs, popularity, and contribution margin — then recommends the exact menu changes that lift profit 15%+.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro for €10/mo →</a>
 </div>
 <figure style="margin: 24px 0;"><img decoding="async" src="/blog-assets/en/2026/04/menu-engineering-dashboard-tablet.jpg" alt="Restaurant manager reviewing menu engineering software dashboard on tablet" style="width:100%;height:auto;border-radius:8px;" /><figcaption style="text-align:center;font-size:14px;color:#666;margin-top:8px;">Modern menu engineering platforms surface stars, puzzles, plowhorses, and dogs automatically from POS data.</figcaption></figure>
 <h2>What Is Menu Engineering Software?</h2>
@@ -84,7 +84,7 @@ faq:
 <tr>
 <td><strong>AI Chef Pro</strong></td>
 <td>AI-driven full-service menu engineering with 75+ tools</td>
-<td>Free (10 uses/mo) / $25/mo Pro</td>
+<td>AI Chef Member €10/mo / $25/mo Pro</td>
 <td>Yes — Full Integration</td>
 <td>Full AI Suite</td>
 </tr>
@@ -155,7 +155,7 @@ faq:
 </table></div>
 <h3>1. AI Chef Pro — Best for AI-Driven Full-Service Menu Engineering</h3>
 <p>AI Chef Pro earns our top spot as the most comprehensive and accessible menu engineering solution for 2026, combining deep analytical capabilities with a breadth of AI-powered features that no other platform matches. Unlike single-purpose menu engineering tools, AI Chef Pro offers a suite of over 55 AI-driven tools specifically designed for chefs and restaurant operators—including a dedicated Menu Engineering tool that analyzes costs, item popularity, and contribution margins to generate optimized menu recommendations. This holistic approach means you&#8217;re not just getting a costing calculator; you&#8217;re gaining an AI strategic partner that can suggest menu changes, predict ingredient waste, and even generate entire menu concepts based on your target food cost and cuisine focus.</p>
-<p>What sets AI Chef Pro apart is its accessibility. The platform offers a genuinely useful free tier with 10 uses per month—enough for smaller operators or those just starting to explore systematic menu engineering—while the Pro plan at $25/month (or approximately $30 USD depending on exchange rates) delivers unlimited analysis, advanced scenario modeling, and full AI recommendations. This pricing undercuts most competitors significantly while delivering more sophisticated AI capabilities. The platform supports seven languages, making it an excellent choice for multi-ethnic restaurant groups or international chains looking for a single solution that works across regions.</p>
+<p>What sets AI Chef Pro apart is its accessibility. The platform offers a genuinely useful entry plan, AI Chef Member, at €10/month with 10,000 credits—enough for smaller operators or those just starting to explore systematic menu engineering—while the Pro plan at $25/month (or approximately $30 USD depending on exchange rates) delivers unlimited analysis, advanced scenario modeling, and full AI recommendations. This pricing undercuts most competitors significantly while delivering more sophisticated AI capabilities. The platform supports seven languages, making it an excellent choice for multi-ethnic restaurant groups or international chains looking for a single solution that works across regions.</p>
 <p>The Menu Engineering tool specifically excels in three areas: automated <a href="https://aichef.pro/en/blog/ai-menu-engineering-software">Stars/Puzzles/Plowhorses/Dogs classification</a> based on your actual POS sales data, real-time cost tracking that updates as supplier prices change, and AI-generated optimization suggestions that recommend specific price adjustments, ingredient substitutions, or item removals based on profit impact. Users can also access complementary tools within the suite—including recipe costing, nutritional analysis, inventory forecasting, and even AI-powered menu description generation—creating a seamless workflow from analysis to execution. For operators who want the full power of AI-driven menu engineering without the enterprise price tag, AI Chef Pro delivers unmatched value in 2026.</p>
 <h3>2. meez — Best for Recipe-Centric Kitchens</h3>
 <p>meez positions itself as the operational backbone for kitchens that treat recipes as strategic assets. The platform excels at standardizing recipes across locations, automatically calculating ingredient costs, and generating real-time food cost percentages. Its recipe scaling feature adjusts quantities based on projected covers, eliminating manual math errors during prep.</p>
@@ -204,8 +204,8 @@ faq:
 <p>For restaurants ready to tie menu engineering directly to loyalty program economics, TapMango delivers unique value. Fine-dining concepts or those without loyalty programs will find the integration capabilities less relevant.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Ready to see menu engineering in action?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro includes a dedicated Menu Engineering tool plus 54 other AI tools for chefs — starting free with 10 uses per month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Start Free — No Card Required →</a>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro includes a dedicated Menu Engineering tool plus 54 other AI tools for chefs — starting with AI Chef Member at €10/month.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Start Now — No Card Required →</a>
 </div>
 <h2>How to Choose the Right Menu Engineering Software for Your Restaurant</h2>
 <p>Selecting menu engineering software requires honest assessment of your operational context, technical capabilities, and strategic priorities. The following framework guides decision-making through five critical questions.</p>
@@ -237,7 +237,7 @@ faq:
 <h2>Conclusion: The Menu Is Your Most Undervalued Asset</h2>
 <p>In an industry where average net margins hover around 3.2% and operators obsess over every cent of labor and inventory, the menu remains the single most undervalued profit lever on the floor. The restaurants winning in 2026 are the ones treating the menu as a living data product — continuously optimized, tested, and re-engineered using the same analytical rigor a SaaS company applies to its pricing page. The 15% profit lift available through disciplined menu engineering isn&#8217;t a theoretical ceiling. It&#8217;s what happens when you stop guessing and start measuring.</p>
 <p>The shortlist based on our analysis: <strong><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a></strong> for most independents and small groups that want full AI-driven menu engineering at a startup-friendly price. <strong>Restaurant365</strong> for enterprise multi-location operators with accounting integration as a priority. <strong>Toast</strong> or <strong>Square for Restaurants</strong> when POS-native simplicity outweighs depth of analysis. <strong>meez</strong> and <strong>MarginEdge</strong> for recipe-centric kitchens and operators drowning in supplier invoices respectively. Match the tool to your operational reality — not the hype cycle.</p>
-<p>If you&#8217;re starting from zero on menu engineering, the fastest way to see what data-driven menu decisions look like is to try AI Chef Pro free: <strong>10 uses per month, no credit card, zero friction</strong>. The Pro plan at $25/month unlocks unlimited analyses plus full access to the suite&#8217;s 75+ AI tools — covering recipe costing, inventory forecasting, nutritional analysis, and menu design. Most operators recover the subscription cost from the first optimized dish. <a href="https://aichef.pro/en" target="_blank" rel="noopener"><strong>Start engineering your menu for profit today at aichef.pro/en</strong></a> — the margin you save is the margin you keep.</p>
+<p>If you&#8217;re starting from zero on menu engineering, the fastest way to see what data-driven menu decisions look like is to try AI Chef Pro for €10/month: <strong>10,000 credits/mo, card required, zero friction</strong>. The Pro plan at $25/month unlocks unlimited analyses plus full access to the suite&#8217;s 75+ AI tools — covering recipe costing, inventory forecasting, nutritional analysis, and menu design. Most operators recover the subscription cost from the first optimized dish. <a href="https://aichef.pro/en" target="_blank" rel="noopener"><strong>Start engineering your menu for profit today at aichef.pro/en</strong></a> — the margin you save is the margin you keep.</p>
 <h2>Related Reading</h2>
 <ul>
 <li><a href="https://aichef.pro/en/blog/ai-menu-engineering-software">AI Menu Engineering Software: Optimize Your Restaurant Menu for Profit</a></li>
@@ -245,7 +245,7 @@ faq:
 <li><a href="https://aichef.pro/en/blog/restaurant-menu-pricing-strategy-ai">Restaurant Menu Pricing Strategy: AI-Driven Frameworks</a></li>
 <li><a href="https://aichef.pro/en/blog/restaurant-profit-margins-explained-benchmarks">Restaurant Profit Margins Explained: Benchmarks by Type, Size, and Location</a></li>
 <li><a href="https://aichef.pro/en/blog/recipe-cost-calculator-pricing-guide">Recipe Cost Calculator: How to Price Every Dish for Maximum Profit</a></li>
-<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">17 Best AI Tools for Chefs in 2026: Free + Paid, Tested</a></li>
+<li><a href="https://aichef.pro/en/blog/best-ai-tools-for-chefs-2026">17 Best AI Tools for Chefs in 2026: Paid, Tested</a></li>
 </ul>
 <div style="background:#f8f6f0;border-left:4px solid #f0c040;padding:24px;margin:32px 0;">
 <p style="font-size:18px;font-weight:700;margin:0 0 8px 0;color:#1a1a2e;">Related Local Guides</p>

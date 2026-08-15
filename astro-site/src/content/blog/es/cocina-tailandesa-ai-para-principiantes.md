@@ -820,7 +820,7 @@ wpId: 2666
 
 <div style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 30px; margin: 40px 0; border-radius: 12px; text-align: center; color: white;">
 <h3 style="color: white; margin-top: 0; font-size: 28px;">🎯 Comienza Tu Viaje en Cocina Tailandesa Hoy Mismo</h3>
-<p style="font-size: 18px; margin: 20px 0; line-height: 1.6;">Únete a más de 5,000 chefs que están dominando técnicas culinarias complejas en tiempo récord gracias a AI Chef Pro. Prueba <strong>gratis durante 7 días</strong> sin compromiso.</p>
+<p style="font-size: 18px; margin: 20px 0; line-height: 1.6;">Únete a más de 5,000 chefs que están dominando técnicas culinarias complejas en tiempo récord gracias a AI Chef Pro. Prueba <strong>AI Chef Miembro por 10 € al mes</strong></strong> sin compromiso.</p>
 <p style="font-size: 16px; margin: 20px 0;"><strong>Incluye acceso inmediato a:</strong><br>✓ Cocina Tailandesa AI con 500+ recetas<br>✓ Food Pairing AI para combinaciones perfectas<br>✓ Mermas GenCal para optimización de costes<br>✓ Todos los recetarios regionales (20+ cocinas)</p>
 <div style="margin-top: 25px;">
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" style="display: inline-block; background-color: white; color: #00f2fe; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 8px; font-size: 18px; transition: all 0.3s;">Prueba Gratis 7 Días →</a>
@@ -1099,7 +1099,7 @@ wpId: 2666
 
 
 
-<p class="wp-block-paragraph">El siguiente paso es simple: <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">comienza tu prueba gratuita de 7 días</a> sin necesidad de tarjeta de crédito. Accederás inmediatamente al módulo completo de Cocina Tailandesa AI, Food Pairing AI para combinaciones innovadoras, y todas las herramientas necesarias para comenzar tu transformación culinaria hoy mismo.</p>
+<p class="wp-block-paragraph">El siguiente paso es simple: <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">comienza con AI Chef Miembro por 10 € al mes</a> con pago por tarjeta de crédito. Accederás inmediatamente al módulo completo de Cocina Tailandesa AI, Food Pairing AI para combinaciones innovadoras, y todas las herramientas necesarias para comenzar tu transformación culinaria hoy mismo.</p>
 
 
 
@@ -1111,7 +1111,7 @@ wpId: 2666
 
 
 
-<p class="wp-block-paragraph"><strong>Empieza ahora:</strong> <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">Accede gratis a AI Chef Pro</a> y comienza a crear tu primer Pad Thai perfecto esta misma semana.</p>
+<p class="wp-block-paragraph"><strong>Empieza ahora:</strong> <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=cocina-tailandesa-ai-para-principiantes" target="_blank">Accede a AI Chef Pro desde 10 € al mes</a> y comienza a crear tu primer Pad Thai perfecto esta misma semana.</p>
 
 
 

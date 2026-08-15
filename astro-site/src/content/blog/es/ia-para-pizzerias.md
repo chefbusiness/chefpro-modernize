@@ -1,6 +1,6 @@
 ---
 title: "IA para Pizzerías: Masa, Food Cost y Delivery en 2026"
-description: "IA para pizzerías proceso a proceso: masas y fermentación, food cost por pizza, cartas, delivery y marketing local. Empieza gratis con AI Chef Pro."
+description: "IA para pizzerías proceso a proceso: masas y fermentación, food cost por pizza, cartas, delivery y marketing local. Empieza con AI Chef Pro."
 pubDate: 2026-01-27
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -15,8 +15,8 @@ faq:
     a: "No. AI Chef Pro está diseñado para hosteleros, no para técnicos. Funciona con lenguaje natural: le dices lo que necesitas y te responde como si hablaras con un compañero de cocina. No se requiere más que saber leer y escribir en tu móvil o tablet."
   - q: "¿Cómo me ayuda la IA con la fermentación si la temperatura cambia en verano?"
     a: "Solo tienes que indicar la temperatura ambiente actual, la fuerza de tu harina y la hidratación deseada. El agente recalcula las horas de fermentación lenta y te sugiere ajustar la cantidad de levadura o usar un prefermento para compensar la humedad. Así evitas masas descontroladas."
-  - q: "Si empiezo con el plan gratuito, ¿puedo hacer un escandallo real de toda mi carta?"
-    a: "El plan gratuito incluye 3.000 créditos al mes sin tarjeta. Para probar escandallos de tus cinco pizzas más vendidas es más que suficiente. También puedes explorar las herramientas de previsión básica y gestión de alérgenos durante la prueba. Si luego ves los resultados y necesitas automatizar toda la carta, puedes escalar a Premium Pro sin compromiso."
+  - q: "Si empiezo con el plan AI Chef Miembro, ¿puedo hacer un escandallo real de toda mi carta?"
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes por 10 € con tarjeta. Para probar escandallos de tus cinco pizzas más vendidas es más que suficiente. También puedes explorar las herramientas de previsión básica y gestión de alérgenos durante la prueba. Si luego ves los resultados y necesitas automatizar toda la carta, puedes escalar a Premium Pro sin compromiso."
   - q: "¿La IA puede gestionar las reseñas de Google y las redes automáticamente?"
     a: "Sí, los agentes de marketing leen tus reseñas y redactan respuestas personalizadas al instante, además de generar contenido para Instagram o TikTok con descripciones apetecibles. También pueden programar publicaciones semanales y optimizar tu perfil de Google Business para búsquedas locales. Eso libera horas tuyas y te evita contratar un community manager."
   - q: "¿Qué diferencia hay entre los planes de pago en cuanto a la previsión de demanda para delivery?"
@@ -144,10 +144,10 @@ Cada pizzería tiene un ritmo distinto. Por eso los planes se ajustan desde la p
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 | Probar sin tarjeta, ideal para escandallos puntuales. |
+| AI Chef Miembro | 10 €/mes | 10.000 | Pago con tarjeta, sin permanencia, ideal para escandallos puntuales. |
 | Premium Pro | 25 €/mes | 85.000 | Pizzería pequeña con volumen estable, uso diario en varios procesos. |
 | Plus | 50 €/mes | 175.000 | Negocio con varios turnos, delivery activo o carta amplia. |
 | Max | 95 €/mes | Ilimitados | Varios locales, obrador grande o alta necesidad de automatización. |
 | Max Anual | 950 €/año | Ilimitados | Compromiso anual con dos meses de ahorro frente al plan mensual. |
 
-Una pizzería de barrio con un par de empleados suele encontrar su ritmo con el plan Premium Pro; si tienes un volumen de pedidos considerable o necesitas previsión diaria detallada, Plus te da más soltura. Para cadenas o locales con alta rotación, Max elimina cualquier límite. Sea cual sea tu tamaño, puedes empezar hoy mismo con 3.000 créditos sin introducir datos bancarios: [prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-pizzerias).
+Una pizzería de barrio con un par de empleados suele encontrar su ritmo con el plan Premium Pro; si tienes un volumen de pedidos considerable o necesitas previsión diaria detallada, Plus te da más soltura. Para cadenas o locales con alta rotación, Max elimina cualquier límite. Sea cual sea tu tamaño, puedes empezar hoy mismo con 10.000 créditos por 10 € al mes: [prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-pizzerias).

@@ -20,7 +20,7 @@ faq:
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
     a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. También hay planes Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). La plataforma incluye más de 70 agentes de IA culinarios en 7 idiomas con español nativo."
   - q: "¿Cómo puedo empezar a usar IA para gestionar mis proveedores?"
-    a: "Empieza por el plan gratuito de AI Chef Pro, que te da 3.000 créditos mensuales sin tarjeta. Sube tus primeras ofertas de proveedores para comparar precios normalizados, calcula un pedido óptimo basado en tu consumo real y deja que los agentes te ayuden a preparar la próxima negociación con datos. En pocos minutos verás el potencial."
+    a: "Empieza por el plan AI Chef Miembro de AI Chef Pro, que te da 10.000 créditos mensuales por 10€, sin permanencia. Sube tus primeras ofertas de proveedores para comparar precios normalizados, calcula un pedido óptimo basado en tu consumo real y deja que los agentes te ayuden a preparar la próxima negociación con datos. En pocos minutos verás el potencial."
 ---
 
 Gestionar proveedores no es un trámite administrativo. Es la palanca de margen más infrautilizada de este oficio. Cuando la materia prima se come entre el 28% y el 35% de cada euro que entra por caja, cada punto que rascas en la negociación, cada error que detectas en un albarán y cada pedido que ajustas al consumo real van directos al beneficio neto. No hay otra partida con ese impacto. Y si todavía compras como hace diez años —llamada al mayorista, intuición y un vistazo rápido a la nevera—, estás dejando dinero sobre la mesa todos los días. La **gestión de proveedores restaurante** con inteligencia artificial te da los datos, las comparativas y el control para convertir las compras en una ventaja competitiva, no en un agujero.
@@ -161,4 +161,4 @@ AI Chef Pro es una plataforma con más de 70 agentes de inteligencia artificial 
 
 No se trata de sustituir el criterio del chef ni la relación con los proveedores de toda la vida. Se trata de darle a ese criterio la mejor información posible y liberar horas de papeleo para dedicarlas a lo que de verdad importa.
 
-[Empieza gratis con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=proveedores) y prueba el plan gratuito con 3.000 créditos al mes, sin necesidad de tarjeta. Descubre en primera persona cómo la inteligencia artificial puede convertirse en el mejor aliado para tus compras y tu margen.
+[Empieza con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=proveedores) y prueba el plan AI Chef Miembro con 10.000 créditos al mes, por 10€, sin permanencia. Descubre en primera persona cómo la inteligencia artificial puede convertirse en el mejor aliado para tus compras y tu margen.

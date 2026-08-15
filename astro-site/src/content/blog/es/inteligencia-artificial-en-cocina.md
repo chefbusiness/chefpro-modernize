@@ -609,7 +609,7 @@ wpId: 2096
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px 25px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
 <h3 style="color: #1a1a1a; font-size: 24px; margin: 0 0 15px 0; font-weight: 700;">📊 Ver Planes y Precios</h3>
-<p style="color: #2d2d2d; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Encuentra el plan perfecto para tu cocina profesional. Desde opciones gratuitas hasta soluciones enterprise para grupos de restauración.</p>
+<p style="color: #2d2d2d; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;">Encuentra el plan perfecto para tu cocina profesional. Desde el plan AI Chef Miembro hasta soluciones enterprise para grupos de restauración.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 14px 35px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Comparar Planes →</a>
 </div>
 
@@ -1007,7 +1007,7 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 0€ (versión gratuita) hasta 50€/mes para uso ilimitado. El ROI típico supera el 300-500% mensual incluso en establecimientos pequeños, principalmente por ahorro en mermas y optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
+<p class="wp-block-paragraph">Los costes varían enormemente según el alcance. AI Chef Pro ofrece planes desde 10€/mes (AI Chef Miembro) hasta 95€/mes para uso ilimitado. El ROI típico supera el 300-500% mensual incluso en establecimientos pequeños, principalmente por ahorro en mermas y optimización de tiempos. Visita la <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener">página de precios</a> para más detalles.</p>
 
 
 
@@ -1102,7 +1102,7 @@ wpId: 2096
 
 
 
-<p class="wp-block-paragraph">Te invitamos a dar el primer paso. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener"><strong>Prueba AI Chef Pro gratuitamente</strong></a> y descubre por ti mismo cómo la inteligencia artificial puede transformar tu cocina. Nuestro plan gratuito te permite explorar las funcionalidades básicas sin compromiso, experimentando de primera mano el potencial de esta tecnología revolucionaria.</p>
+<p class="wp-block-paragraph">Te invitamos a dar el primer paso. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=inteligencia-artificial-en-cocina" target="_blank" rel="noopener"><strong>Prueba AI Chef Pro gratuitamente</strong></a> y descubre por ti mismo cómo la inteligencia artificial puede transformar tu cocina. Nuestro plan AI Chef Miembro te permite explorar las funcionalidades básicas sin compromiso, experimentando de primera mano el potencial de esta tecnología revolucionaria.</p>
 
 
 

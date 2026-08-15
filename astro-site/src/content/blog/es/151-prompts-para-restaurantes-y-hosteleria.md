@@ -17,8 +17,8 @@ faq:
     a: "Depende de la tarea. En marketing y creación de contenido, según estudios del sector, los equipos pueden reducir del orden de un 40-60 % el tiempo de producción. En control de costes, el análisis que antes llevaba horas se obtiene en minutos si partes de datos reales."
   - q: "¿Necesito conocimientos técnicos para sacarles partido?"
     a: "No. Basta con que sepas describir lo que quieres conseguir y rellenes los datos entre corchetes con información real de tu restaurante. Las plantillas ya están diseñadas para que el lenguaje sea natural y directo, como hablarías con un proveedor o un compañero de cocina."
-  - q: "¿Con cuántos créditos empieza el plan gratuito de AI Chef Pro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes, sin necesidad de tarjeta ni periodo de prueba limitado. Es suficiente para probar varios de estos prompts y ver si la plataforma especializada te encaja antes de plantearte un plan de pago."
+  - q: "¿Con cuántos créditos empieza el plan Miembro de AI Chef Pro?"
+    a: "El plan Miembro incluye 10.000 créditos al mes, con pago con tarjeta desde el alta y sin permanencia. Es suficiente para probar varios de estos prompts y ver si la plataforma especializada te encaja antes de plantearte un plan de pago."
   - q: "¿Puedo encadenar varios prompts para tareas complejas?"
     a: "Totalmente. El flujo más productivo es encadenar: por ejemplo, primero pides un menú, luego el escandallo de ese menú y por último el calendario de redes para promocionarlo. Así construyes un proceso de trabajo completo sin empezar de cero cada vez."
 ---
@@ -160,6 +160,6 @@ Planificar un evento o un servicio de catering sin cálculos precisos es sinóni
 
 Manejar con soltura los prompts para restaurantes es como tener un sexto sentido en la gestión: reduces el tiempo que pierdes entre papeles, mejoras la precisión de los números y liberas cabeza para lo que de verdad importa, que es cocinar y atender al cliente. Con 151 plantillas, ya tienes un punto de partida sólido para cualquier área de tu negocio.
 
-Si quieres llevarlo un paso más allá sin depender de herramientas genéricas, AI Chef Pro integra más de 70 agentes de IA culinarios en 7 idiomas, con [Chef GPT en español](https://aichef.pro/blog/chef-gpt-espanol) nativo que entiende jerga de cocina y devuelve resultados listos para implantar. Puedes empezar con el plan gratuito (3.000 créditos al mes, sin tarjeta) y probar estos prompts sobre un motor pensado para hostelería. Si el volumen de trabajo lo pide, los planes de pago van de 25 €/mes (85.000 créditos) hasta créditos ilimitados con el plan Max por 95 €/mes.
+Si quieres llevarlo un paso más allá sin depender de herramientas genéricas, AI Chef Pro integra más de 70 agentes de IA culinarios en 7 idiomas, con [Chef GPT en español](https://aichef.pro/blog/chef-gpt-espanol) nativo que entiende jerga de cocina y devuelve resultados listos para implantar. Puedes empezar con el plan Miembro (10.000 créditos al mes, con tarjeta) y probar estos prompts sobre un motor pensado para hostelería. Si el volumen de trabajo lo pide, los planes de pago van de 25 €/mes (85.000 créditos) hasta créditos ilimitados con el plan Max por 95 €/mes.
 
 [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=151-prompts) y empieza a transformar prompts en resultados hoy mismo.

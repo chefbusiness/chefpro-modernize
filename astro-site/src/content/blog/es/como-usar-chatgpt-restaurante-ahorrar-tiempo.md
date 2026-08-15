@@ -91,13 +91,13 @@ AI Chef Pro es una plataforma con más de 70 agentes de IA culinarios especializ
 | Enfoque en normativa de alérgenos/APPCC | No garantiza cumplimiento. Puede omitir alérgenos de declaración obligatoria. | Agentes que asignan los 14 alérgenos según normativa europea vigente. |
 | Idioma y contexto gastronómico | Funciona en español, pero sin especialización en terminología culinaria local. | Español nativo con vocabulario de hostelería de España y LATAM. |
 | Curva de aprendizaje / necesidad de prompting experto | Alta si quieres resultados precisos. Requiere saber formular instrucciones detalladas. | Baja. Los agentes ya están preconfigurados para cada tarea de hostelería. |
-| Precio de entrada | Gratuito con límites de uso; también dispone de plan de pago mensual. | Gratuito con 3.000 créditos al mes; planes de pago desde 25 €/mes. |
+| Precio de entrada | 10 €/mes con 10.000 créditos; también dispone de planes superiores. | AI Chef Miembro por 10 €/mes con 10.000 créditos; planes superiores desde 25 €/mes. |
 
 Si tu día a día te pide sobre todo ayuda con texto, ChatGPT es más que suficiente. Si necesitas que la IA entre en tus números, tu carta de alérgenos o tus fichas técnicas, un agente especializado como AI Chef Pro empieza a tener sentido económico. Para quien quiera profundizar en las capacidades actuales del modelo aplicado a cocina, recomiendo este artículo sobre <a href="https://aichef.pro/blog/chef-gpt-espanol" target="_blank">ChatGPT en español para cocina</a>.
 
 ## Precios: qué cuesta empezar
 
-AI Chef Pro tiene un plan gratuito real, sin tarjeta de crédito, para que puedas probar los agentes y ver si encajan en tu operativa antes de soltar un euro. Los planes de pago son estos:
+AI Chef Pro tiene un plan de entrada, AI Chef Miembro, por 10 € al mes y sin permanencia, para que puedas probar los agentes y ver si encajan en tu operativa antes de decidir si sigues. Los planes de pago son estos:
 
 - **Plan Miembro**: 10 € al mes con 10.000 créditos. Ideal para trastear con los agentes y probar tareas sueltas.
 - **Premium Pro**: 25 €/mes, 85.000 créditos.
@@ -105,7 +105,7 @@ AI Chef Pro tiene un plan gratuito real, sin tarjeta de crédito, para que pueda
 - **Max**: 95 €/mes, créditos ilimitados.
 - **Max Anual**: 950 €/año.
 
-Si vienes de usar ChatGPT, el salto natural es empezar por el plan gratuito, ver qué agentes te resuelven faena y, si el ahorro de tiempo justifica la inversión, subir de plan. Puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=chatgpt-restaurante" target="_blank">probar AI Chef Pro gratis</a> y decidir con datos en la mano, no con promesas.
+Si vienes de usar ChatGPT, el salto natural es empezar por AI Chef Miembro, ver qué agentes te resuelven faena y, si el ahorro de tiempo justifica la inversión, subir de plan. Puedes <a href="https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=chatgpt-restaurante" target="_blank">probar AI Chef Pro con AI Chef Miembro</a> y decidir con datos en la mano, no con promesas.
 
 
 
@@ -126,6 +126,6 @@ He visto a demasiados hosteleros emocionarse con la IA, probar diez cosas a la v
 
 ## Conclusión
 
-**ChatGPT para restaurantes** es un aliado real para tareas de texto y creatividad. Puedes empezar a usarlo hoy mismo, con el plan gratuito, y notar el ahorro de tiempo en descripciones de platos, respuestas a reseñas, contenido para redes o borradores de correos. Pero no es la herramienta adecuada para gestionar costes, alérgenos o producción, y usarla para eso es jugar con fuego.
+**ChatGPT para restaurantes** es un aliado real para tareas de texto y creatividad. Puedes empezar a usarlo hoy mismo, con AI Chef Miembro, y notar el ahorro de tiempo en descripciones de platos, respuestas a reseñas, contenido para redes o borradores de correos. Pero no es la herramienta adecuada para gestionar costes, alérgenos o producción, y usarla para eso es jugar con fuego.
 
 Cuando tu restaurante necesita que la IA entre en los números, la normativa y la planificación, un agente especializado como AI Chef Pro te ahorra mucho más tiempo y te quita el riesgo de las alucinaciones. Sin magia, sin promesas vacías. Solo herramientas que funcionan donde tienen que funcionar y se apartan donde no llegan. Como debe ser en una cocina profesional.

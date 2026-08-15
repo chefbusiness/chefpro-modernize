@@ -122,7 +122,7 @@ wpId: 2014
 <div style="background: linear-gradient(135deg, #1a5f7a 0%, #159895 50%, #57c5b6 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffffff; margin: 0 0 15px 0; font-size: 24px;">🧠 Potencia tu Restaurante con Inteligencia Artificial</h3>
 <p style="color: #e0f7fa; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Descubre cómo AI Chef Pro te ayuda a entender mejor a tus clientes con herramientas de análisis basadas en IA diseñadas específicamente para profesionales de la hostelería.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=psicologia-del-consumidor-con-ia-en-restaurantes" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffffff; color: #1a5f7a; padding: 14px 35px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Prueba Gratis AI Chef Pro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=psicologia-del-consumidor-con-ia-en-restaurantes" target="_blank" rel="noopener" style="display: inline-block; background-color: #ffffff; color: #1a5f7a; padding: 14px 35px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">AI Chef Miembro</a>
 </div>
 
 

@@ -2,7 +2,7 @@
 title: "Fermentación: Concepto y Definición"
 description: "Descubre qué es la fermentación: proceso microbiano anaeróbico que transforma alimentos. Tipos (láctica, alcohólica, acética), beneficios para la salud, y…"
 pubDate: 2026-03-18
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/03/fermentacion-featured.jpg
 imageAlt: "Fermentación: Concepto y Definición"
@@ -516,8 +516,8 @@ wpId: 3237
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Domina Fermentación con AI Chef Pro</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">55+ herramientas de IA para fermentaciones, masas madre y técnicas ancestrales.<br>Recetas paso a paso y guías de seguridad alimentaria.</p>
-<p><a style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=fermentacion-concepto-definicion" target="_blank" rel="noopener"> PROBAR GRATIS AHORA → </a></p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">Sin tarjeta de crédito • 48.733+ recetas generadas</p>
+<p><a style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=fermentacion-concepto-definicion" target="_blank" rel="noopener"> EMPEZAR AHORA → </a></p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">Plan desde 10€/mes • 48.733+ recetas generadas</p>
 </div>
 
 

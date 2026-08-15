@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo puedo simular una subida de precios con IA antes de aplicarla?"
     a: "Con herramientas como AI Chef Pro introduces el incremento estimado de un insumo —por ejemplo, carne +12%— y la IA recalcula al instante el food cost de toda tu carta. Puedes ver qué platos cruzan el umbral de rentabilidad, probar sustituciones de ingredientes y simular nuevos PVP, todo en segundos y sin arriesgar un solo plato real."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye?"
-    a: "AI Chef Pro tiene un plan gratuito con 3.000 créditos al mes sin tarjeta. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. Hay plan Plus por 50 €/mes con 175.000 créditos, y plan Max por 95 €/mes con créditos ilimitados. También existe el Max Anual por 950 €/año. Todos incluyen acceso a más de 70 agentes de IA culinarios en español nativo y 7 idiomas."
+    a: "AI Chef Pro ofrece el plan AI Chef Miembro con 10.000 créditos al mes por 10 €.” El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. Hay plan Plus por 50 €/mes con 175.000 créditos, y plan Max por 95 €/mes con créditos ilimitados. También existe el Max Anual por 950 €/año. Todos incluyen acceso a más de 70 agentes de IA culinarios en español nativo y 7 idiomas."
   - q: "¿Cada cuánto tiempo debo revisar los precios de la carta?"
     a: "En periodos de inflación activa, revisa los escandallos cada dos semanas y ajusta precios en rondas programadas cada 6-8 semanas si es necesario. En periodo estable, una revisión mensual de escandallos y una actualización de precios ligada a cambios de temporada —primavera-verano y otoño-invierno— suele ser suficiente. No esperes al cierre anual para tomar decisiones."
 ---
@@ -107,7 +107,7 @@ Imagina esto: el lunes te llega el aviso de que la carne de vacuno va a subir. N
 
 Eso es exactamente lo que hace **AI Chef Pro**: una suite de más de 70 agentes de IA culinarios especializados, en español nativo y 7 idiomas, que trabajan contigo en escandallos, reingeniería de recetas, sustituciones inteligentes y simulación de escenarios de subida. No es un chatbot genérico: son agentes entrenados con conocimiento de cocina profesional, que entienden lo que es un food cost, una merma, un escandallo y una carta de restaurante.
 
-Puedes [probar la app de AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inflacion) y simular tu primer escenario de subida hoy mismo, sin poner tarjeta.
+Puedes [probar la app de AI Chef Pro con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inflacion) y simular tu primer escenario de subida hoy mismo, sin poner tarjeta.
 
 ## Checklist accionable: lo que tienes que hacer esta semana
 
@@ -145,7 +145,7 @@ Estos son los planes, sin letra pequeña:
 - **Max**: 95 €/mes con créditos ilimitados.
 - **Max Anual**: 950 €/año.
 
-Todos los planes incluyen acceso a los más de 70 agentes, en español nativo y 7 idiomas. Puedes [empezar gratis con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inflacion) y simular tu primer escenario de subida antes de tocar un solo número de tu carta.
+Todos los planes incluyen acceso a los más de 70 agentes, en español nativo y 7 idiomas. Puedes [empezar con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inflacion) y simular tu primer escenario de subida antes de tocar un solo número de tu carta.
 
 
 

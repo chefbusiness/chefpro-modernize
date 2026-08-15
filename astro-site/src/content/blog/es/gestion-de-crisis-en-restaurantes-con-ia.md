@@ -20,7 +20,7 @@ faq:
   - q: "¿Cómo ayuda la IA en la gestión de crisis de un restaurante?"
     a: "Acelera la preparación redactando protocolos, plantillas de comunicación multi-idioma y checklists. Durante la crisis, genera borradores de respuesta en minutos, adaptados al tono de la marca. No sustituye al equipo, pero ahorra horas de trabajo bajo presión."
   - q: "¿Cuánto cuesta AI Chef Pro?"
-    a: "AI Chef Pro tiene un plan gratuito con 3.000 créditos al mes, sin tarjeta. Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
+    a: "AI Chef Pro tiene un plan AI Chef Miembro con 10.000 créditos al mes por 10 €, con tarjeta.” Los planes de pago son Premium Pro (25 €/mes, 85.000 créditos), Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). También existe la opción Max Anual por 950 €/año."
 ---
 
 ## Manual de gestión de crisis en restaurantes: protocolos, comunicación y cómo la IA te ayuda a responder en minutos

@@ -2,7 +2,7 @@
 title: "Cómo Calcular el Costo de una Receta: Fórmula y Ejemplo"
 description: "Aprende a calcular el costo de una receta paso a paso: fórmula, mermas y un ejemplo numérico completo con precio de venta al food cost del 30 %."
 pubDate: 2025-06-13
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/06/Como-calcular-el-costo-de-una-receta-facil-con-la-IA1.jpeg
 imageAlt: "Cómo calcular el costo de una receta fácil con la IA"
@@ -134,7 +134,7 @@ Hasta aquí hemos visto que calcular el costo de una receta es una cadena de pas
 
 Las herramientas de inteligencia artificial aplicada a la cocina han llegado para encargarse de esa parte. En AI Chef Pro, por ejemplo, cargas la receta con las cantidades netas, asignas el porcentaje de merma de cada ingrediente (o usas los valores predefinidos que la plataforma sugiere según el tipo de insumo) y la IA calcula el costo real, el costo por porción y el precio de venta sugerido en segundos. Además, como trabaja en 7 idiomas con español nativo, puedes compartir el escandallo con tu equipo sin barreras.
 
-La plataforma reúne más de 70 agentes de IA culinarios que cubren desde el escandallo y la ingeniería de menús hasta la creación de recetas y la gestión de alérgenos. Y lo mejor es que puedes empezar sin compromiso: el plan gratuito incluye 3.000 créditos al mes, sin necesidad de tarjeta, suficiente para probar el motor de cálculo con varias recetas. Si necesitas más capacidad, el plan Premium Pro ofrece 85.000 créditos por 25 € al mes, ideal para una cocina profesional con rotación alta de carta.
+La plataforma reúne más de 70 agentes de IA culinarios que cubren desde el escandallo y la ingeniería de menús hasta la creación de recetas y la gestión de alérgenos. Y lo mejor es que puedes empezar sin permanencia: el plan AI Chef Miembro incluye 10.000 créditos al mes, por 10 € al mes, suficiente para probar el motor de cálculo con varias recetas. Si necesitas más capacidad, el plan Premium Pro ofrece 85.000 créditos por 25 € al mes, ideal para una cocina profesional con rotación alta de carta.
 
 
 
@@ -142,7 +142,7 @@ La plataforma reúne más de 70 agentes de IA culinarios que cubren desde el esc
 
 
 
-[Prueba la app gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calcular-costo-receta) y deja que la IA haga los números mientras tú te concentras en lo que mejor sabes hacer: cocinar.
+[Prueba la app ahora](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calcular-costo-receta) y deja que la IA haga los números mientras tú te concentras en lo que mejor sabes hacer: cocinar.
 
 ## Errores frecuentes al calcular el costo de una receta
 
@@ -159,4 +159,4 @@ Incluso cocineros con años de oficio tropiezan con estos fallos al armar un esc
 
 Calcular el costo de una receta no es una tarea de administración aburrida; es el pulso financiero de tu cocina. Cada plato que sale al salón lleva una etiqueta invisible con un número: el costo real de los ingredientes que lo componen, mermas incluidas. Si ese número está mal calculado, estás vendiendo a pérdida sin saberlo. Si está bien calculado, tienes el control para fijar precios con criterio, negociar con proveedores y diseñar una carta que maximice los platos más rentables.
 
-La fórmula es simple, pero ejecutarla con precisión en 30 recetas requiere método. Hoy tienes dos caminos: seguir peleándote con la hoja de cálculo cada mes o delegarle el trabajo pesado a una IA que te devuelve el costo por porción en segundos. Con el [plan gratuito de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calcular-costo-receta) puedes arrancar hoy mismo, sin tarjeta, y comprobar que el escandallo de tu lomo saltado —o de cualquier plato— deja de ser una incógnita para convertirse en una decisión informada. Porque en hostelería, el margen no está en vender más caro, está en saber exactamente cuánto te cuesta cada bocado.
+La fórmula es simple, pero ejecutarla con precisión en 30 recetas requiere método. Hoy tienes dos caminos: seguir peleándote con la hoja de cálculo cada mes o delegarle el trabajo pesado a una IA que te devuelve el costo por porción en segundos. Con el [plan AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calcular-costo-receta) puedes arrancar hoy mismo, y comprobar que el escandallo de tu lomo saltado —o de cualquier plato— deja de ser una incógnita para convertirse en una decisión informada. Porque en hostelería, el margen no está en vender más caro, está en saber exactamente cuánto te cuesta cada bocado.

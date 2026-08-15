@@ -18,7 +18,7 @@ faq:
   - q: "¿Cómo escalo una receta india para 40 o 60 cubiertos sin desequilibrar las especias?"
     a: "Las especias no escalan de forma lineal: multiplicar por ocho el comino puede saturar el plato. La mejor práctica es escalar por tandas pequeñas partiendo de la receta probada, anotar ajustes reales, y usar un agente de IA culinaria para calcular proporciones y fichas técnicas. La suite de AI Chef Pro hace ese trabajo de cálculo y estandarización sin que pierdas el equilibrio aromático."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes, sin necesidad de tarjeta. Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos), y el Max 95 €/mes con créditos ilimitados. También hay plan Max Anual por 950 €/año. La suite incluye más de 70 agentes de IA culinarios para recetas, fichas técnicas, escandallos y menús."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes, con tarjeta.” Si necesitas más capacidad, el plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos), y el Max 95 €/mes con créditos ilimitados. También hay plan Max Anual por 950 €/año. La suite incluye más de 70 agentes de IA culinarios para recetas, fichas técnicas, escandallos y menús."
   - q: "¿En qué idiomas está disponible AI Chef Pro?"
     a: "La suite funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. Está pensada y escrita en español nativo por chefs, lo que significa que la terminología técnica de cocina no sufre las pérdidas de traducción que se ven en herramientas concebidas primero en inglés y luego traducidas de forma automática."
 ---
@@ -159,7 +159,7 @@ El valor real para un chef no está en que la IA “cocine por ti” —no lo ha
 
 | Plan | Créditos mensuales | Precio |
 | :--- | :--- | :--- |
-| Gratuito | 3.000 créditos al mes, sin tarjeta | 0 € |
+| AI Chef Miembro | 10.000 créditos al mes, con tarjeta | 10 € |
 | Premium Pro | 85.000 créditos | 25 €/mes |
 | Plus | 175.000 créditos | 50 €/mes |
 | Max (créditos ilimitados) | Ilimitados | 95 €/mes |
@@ -167,6 +167,6 @@ El valor real para un chef no está en que la IA “cocine por ti” —no lo ha
 
 La suite está disponible en 7 idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. Está pensada y escrita en español nativo por chefs, así que la terminología técnica de cocina no sufre las pérdidas de traducción que ves en otras herramientas. Para explorar [casos de uso de AI Chef Pro](https://aichef.pro/usos) en entornos reales de hostelería, puedes consultar ejemplos concretos en la web.
 
-Si quieres probar sin compromiso, [entra en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=cocina-india) y usa los créditos gratuitos para montar una ficha técnica de prueba. En veinte minutos sabrás si encaja en tu flujo de trabajo.
+Si quieres probar sin compromiso, [entra en la app](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=cocina-india) y usa los créditos de tu plan para montar una ficha técnica de prueba. En veinte minutos sabrás si encaja en tu flujo de trabajo.
 
 La cocina india profesional en occidente no necesita más misticismo: necesita técnica, despensa bien curada y un sistema de producción que funcione en servicio real. El resto —el aroma que sale de un tadka bien ejecutado o ese bocado de dal makhani con horas de cocción— lo pones tú.

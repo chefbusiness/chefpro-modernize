@@ -141,12 +141,12 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <p>        <!-- 7. CTA BANNER #1 -->        </p>
 <section class="cta-banner primary-cta">
 <div class="cta-content">
-<h3>🚀 Start Saving Today with 5 Free Credits</h3>
+<h3>🚀 Start Saving Today with AI Chef Pro</h3>
 <p class="cta-headline">Get instant access to AI-powered food cost calculations</p>
 <ul class="cta-benefits">
-<li>✅ 5 free credits to start (1 credit = 1 use)</li>
+<li>✅ Member plan: €10/month with 10,000 credits</li>
 <li>✅ Cancel anytime.</li>
-<li>✅ Calculate up to 5 recipes completely free</li>
+<li>✅ Calculate your full menu with AI</li>
 <li>✅ See your actual food costs in minutes</li>
 </ul>
 <p>                <a href="https://aichef.pro/en" class="cta-button primary" target="_blank" rel="noopener">Try Food Cost Calculator Free →</a>                </p>
@@ -172,10 +172,10 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <section class="faq">
 <h2>Frequently Asked Questions</h2>
 <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-<h3 itemprop="name">How does the 5 free credits system work?</h3>
+<h3 itemprop="name">How does the credits system work?</h3>
 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 <div itemprop="text">
-<p>Every new account receives 5 free credits—no credit card required. Each credit allows you to calculate costs for one complete recipe, including all ingredients, prep loss, and portioning. This lets you test the full power of the Food Cost Calculator before committing. Once you see the value, you can purchase additional credits as needed.</p>
+<p>The Member plan (€10/month) includes 10,000 monthly credits. Each credit allows you to calculate costs for one complete recipe, including all ingredients, prep loss, and portioning. This lets you test the full power of the Food Cost Calculator before committing. Once you see the value, you can purchase additional credits as needed.</p>
 </p></div>
 </p></div>
 </p></div>
@@ -225,8 +225,8 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <div class="cta-content">
 <h3>💰 Your Profits Are Waiting</h3>
 <p class="cta-headline">Every day you wait is money left on the table</p>
-<p class="cta-description">Join thousands of restaurant owners who have transformed their margins with AI Chef Pro. No risk, no commitment—just 5 free credits to see exactly where you can save.</p>
-<p>                <a href="https://aichef.pro/en" class="cta-button secondary" target="_blank" rel="noopener">Claim Your 5 Free Credits →</a>                </p>
+<p class="cta-description">Join thousands of restaurant owners who have transformed their margins with AI Chef Pro. No long-term commitment—start with the Member plan and see exactly where you can save.</p>
+<p>                <a href="https://aichef.pro/en" class="cta-button secondary" target="_blank" rel="noopener">Start with AI Chef Pro →</a>                </p>
 <p class="cta-note">Calculate your first recipe in under 5 minutes • 1 credit = 1 use</p>
 </p></div>
 </section>
@@ -234,7 +234,7 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 <section class="conclusion">
 <h2>The Bottom Line</h2>
 <p>Running a restaurant is hard enough without bleeding money on preventable cost overruns. A <strong>food cost calculator restaurant</strong> solution isn&#8217;t a luxury—it&#8217;s a necessity in today&#8217;s challenging market. AI Chef Pro gives you the visibility, control, and insights you need to protect your margins and grow your profits.</p>
-<p>The question isn&#8217;t whether you can afford to implement AI-powered cost management. It&#8217;s whether you can afford <em>not</em> to. With <strong>5 free credits to get started</strong> and no upfront commitment, there&#8217;s zero risk in discovering your true food costs.</p>
+<p>The question isn&#8217;t whether you can afford to implement AI-powered cost management. It&#8217;s whether you can afford <em>not</em> to. With <strong>the €10/month Member plan</strong> and no long-term commitment, there&#8217;s zero risk in discovering your true food costs.</p>
 <p><strong>Stop guessing. Start saving. Try AI Chef Pro today.</strong></p>
 </section>
 <p>        <!-- AUTHOR BIO -->        </p>
@@ -246,4 +246,4 @@ imageAlt: "Professional chef reviewing food cost calculations on MacBook Pro"
 </p></div>
 </p></div>
 </footer></div>
-<p>    <!-- SCHEMA MARKUP -->    <script type="application/ld+json">    {        "@context": "https://schema.org",        "@type": "BlogPosting",        "headline": "AI Food Cost Calculator: Reduce Restaurant Food Costs by 20%",        "description": "Discover how AI Chef Pro's food cost calculator restaurant tool helps reduce food costs by 20%. Get 5 free credits and start optimizing your restaurant profits today.",        "image": "https://aichef.pro/en/images/chef-macbook-costs.jpg",        "author": {            "@type": "Person",            "name": "Chef John Guerrero"        },        "publisher": {            "@type": "Organization",            "name": "AI Chef Pro",            "logo": {                "@type": "ImageObject",                "url": "https://aichef.pro/en/logo.png"            }        },        "datePublished": "2026-03-03T09:00:00",        "dateModified": "2026-03-03T09:00:00",        "mainEntityOfPage": {            "@type": "WebPage",            "@id": "https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-restaurant-costs"        }    }    </script>    <script type="application/ld+json">    {        "@context": "https://schema.org",        "@type": "FAQPage",        "mainEntity": [            {                "@type": "Question",                "name": "How does the 5 free credits system work?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "Every new account receives 5 free credits—no credit card required. Each credit allows you to calculate costs for one complete recipe, including all ingredients, prep loss, and portioning."                }            },            {                "@type": "Question",                "name": "Can AI Chef Pro integrate with my existing POS system?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "Yes! AI Chef Pro integrates seamlessly with Toast, Square, Clover, Lightspeed, and most major POS platforms. Integration typically takes under 10 minutes."                }            },            {                "@type": "Question",                "name": "How accurate is the AI food cost calculation?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "The Food Cost Calculator accounts for ingredient costs, yield percentages, prep loss, cooking loss, and portion variance. Most users report cost accuracy within ±3% of actual expenses."                }            }        ]    }    </script></p>
+<p>    <!-- SCHEMA MARKUP -->    <script type="application/ld+json">    {        "@context": "https://schema.org",        "@type": "BlogPosting",        "headline": "AI Food Cost Calculator: Reduce Restaurant Food Costs by 20%",        "description": "Discover how AI Chef Pro's food cost calculator restaurant tool helps reduce food costs by 20%. Start optimizing your restaurant profits today.",        "image": "https://aichef.pro/en/images/chef-macbook-costs.jpg",        "author": {            "@type": "Person",            "name": "Chef John Guerrero"        },        "publisher": {            "@type": "Organization",            "name": "AI Chef Pro",            "logo": {                "@type": "ImageObject",                "url": "https://aichef.pro/en/logo.png"            }        },        "datePublished": "2026-03-03T09:00:00",        "dateModified": "2026-03-03T09:00:00",        "mainEntityOfPage": {            "@type": "WebPage",            "@id": "https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-restaurant-costs"        }    }    </script>    <script type="application/ld+json">    {        "@context": "https://schema.org",        "@type": "FAQPage",        "mainEntity": [            {                "@type": "Question",                "name": "How does the credits system work?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "The Member plan (€10/month) includes 10,000 monthly credits. Each credit allows you to calculate costs for one complete recipe, including all ingredients, prep loss, and portioning."                }            },            {                "@type": "Question",                "name": "Can AI Chef Pro integrate with my existing POS system?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "Yes! AI Chef Pro integrates seamlessly with Toast, Square, Clover, Lightspeed, and most major POS platforms. Integration typically takes under 10 minutes."                }            },            {                "@type": "Question",                "name": "How accurate is the AI food cost calculation?",                "acceptedAnswer": {                    "@type": "Answer",                    "text": "The Food Cost Calculator accounts for ingredient costs, yield percentages, prep loss, cooking loss, and portion variance. Most users report cost accuracy within ±3% of actual expenses."                }            }        ]    }    </script></p>

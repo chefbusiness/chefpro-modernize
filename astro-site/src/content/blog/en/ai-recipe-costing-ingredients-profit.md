@@ -18,8 +18,8 @@ imageAlt: "Recipe Costing"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 Calculate Recipe Costs in Seconds, Not Hours</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI Chef Pro&#8217;s Recipe Costing App: Real-time ingredient prices • Automatic margin calculations • Profit alerts<br />    <strong>Join 50,000+ restaurants optimizing their margins with precision</strong>  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START CALCULATING FREE →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    5 free credits • Cancel anytime. • Setup in under 5 minutes  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START CALCULATING →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    10,000 credits • Cancel anytime. • Setup in under 5 minutes  </p>
 </div>
 <h2>The Hidden Profit Drain: Why Most Restaurants Get Recipe Costing Wrong</h2>
 <p>Before we dive into the solution, let&#8217;s diagnose the problem. Recipe costing failures typically fall into four categories, each costing your restaurant thousands monthly:</p>
@@ -170,8 +170,8 @@ imageAlt: "Recipe Costing"
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Protect Your Profits Starting Today</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Real-time recipe costing • Portion control integration • Profit alerts<br />    <strong>48,000+ recipes optimized • 50,000+ professional users</strong>  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE TRIAL →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    5 free credits • Cancel anytime. • Setup assistance included  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START MEMBERSHIP →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    10,000 credits • Cancel anytime. • Setup assistance included  </p>
 </div>
 <h2>Frequently Asked Questions About Recipe Costing Software</h2>
 <h3>How accurate is AI recipe costing compared to manual calculations?</h3>
@@ -185,7 +185,7 @@ imageAlt: "Recipe Costing"
 <h3>How does portion control integration work?</h3>
 <p>The <strong>Portion Control</strong> app connects to your recipe costing data, establishing theoretical usage amounts for each ingredient. When you record actual usage (through inventory or prep tracking), the system calculates variance. If you&#8217;re using 115% of theoretical beef portions, the system alerts you to investigate—typically revealing training needs or portion drift.</p>
 <h3>Can I try recipe costing software before committing?</h3>
-<p>Yes. AI Chef Pro offers 5 free credits to test the Recipe Costing and Portion Control apps. Most restaurants process their top 5 recipes through the system within the trial period and immediately see the value. No credit card is required to start.</p>
+<p>Yes. AI Chef Pro offers 10,000 credits to test the Recipe Costing and Portion Control apps. Most restaurants process their top 5 recipes through the system within the trial period and immediately see the value. A credit card is required to start.</p>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 Complete Restaurant Intelligence Platform</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Recipe Costing • Portion Control • Financial Analytics • Menu Engineering<br />    <strong>One platform. 75+ AI tools. Complete restaurant management.</strong>  </p>
@@ -197,4 +197,4 @@ imageAlt: "Recipe Costing"
 <p>AI-powered <strong>recipe costing software</strong> changes the equation. It transforms recipe costing from a reactive monthly chore into a proactive daily strategy. Every ingredient is accounted for. Every price change is immediately visible. Every portion is tracked. Every decision is data-driven.</p>
 <p>The restaurants thriving in 2026 aren&#8217;t guessing—they&#8217;re calculating. They&#8217;re using AI to squeeze every possible dollar of profit from their ingredients while maintaining quality and consistency. The Recipe Costing and Portion Control apps from AI Chef Pro give you that same capability, regardless of your restaurant&#8217;s size or concept.</p>
 <p>The question isn&#8217;t whether you can afford recipe costing software. With margins this tight, the question is whether you can afford to operate without it.</p>
-<p><strong>Ready to transform your ingredients into predictable profits?</strong> <a href="https://aichef.pro/en" target="_blank" rel="noopener">Start your free trial of AI Chef Pro&#8217;s Recipe Costing app today</a> and discover exactly where your margins are hiding.</p>
+<p><strong>Ready to transform your ingredients into predictable profits?</strong> <a href="https://aichef.pro/en" target="_blank" rel="noopener">Start your AI Chef Member plan for AI Chef Pro&#8217;s Recipe Costing app today</a> and discover exactly where your margins are hiding.</p>

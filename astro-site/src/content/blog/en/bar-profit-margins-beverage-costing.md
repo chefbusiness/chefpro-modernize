@@ -28,8 +28,8 @@ faq:
 <p>Whether you&#8217;re opening your first venue or optimizing an established bar, this guide delivers actionable insights backed by real industry data. You&#8217;ll learn how to calculate pour costs with precision, identify the most profitable beverage categories, and implement pricing strategies that balance competitive positioning with healthy margins.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Optimize Your Bar&#8217;s Pour Costs with AI</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro offers 75+ tools including beverage costing, menu engineering, and demand forecasting. Free tier — 10 uses/month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro offers 75+ tools including beverage costing, menu engineering, and demand forecasting. AI Chef Member — €10/month, 10,000 credits.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro for €10 →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">
 <img decoding="async" src="/blog-assets/en/2026/03/bartender-measuring-pour-cost.png" alt="Bartender precisely measuring spirits with jigger for accurate pour cost control" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Consistent measurement with jiggers is the foundation of pour cost control — free pouring can cost bars 15-25% in lost revenue.</figcaption></figure>
@@ -277,7 +277,7 @@ faq:
 <li>Supplier price comparison and cost tracking</li>
 <li>Demand forecasting for inventory optimization</li>
 </ul>
-<p><strong>Pricing:</strong> Start with the free tier offering 10 uses per month—perfect for testing the platform&#8217;s capabilities. Pro plans at €25/month unlock unlimited usage and advanced analytics, while Premium at €50/month includes white-label reports and priority support.</p>
+<p><strong>Pricing:</strong> Start with the AI Chef Member plan offering 10,000 credits per month—perfect for testing the platform&#8217;s capabilities. Pro plans at €25/month unlock unlimited usage and advanced analytics, while Premium at €50/month includes white-label reports and priority support.</p>
 </div>
 <hr>
 <h2>Frequently Asked Questions</h2>
@@ -293,7 +293,7 @@ faq:
 <p>The bars succeeding in today&#8217;s competitive environment aren&#8217;t just hoping for good margins—they&#8217;re actively managing them through systematic tracking, regular menu engineering, and proactive cost control. The margin killers we&#8217;ve covered—over-pouring, theft, waste, outdated pricing, and poor staffing—don&#8217;t happen because bar operators don&#8217;t care. They happen because traditional management methods can&#8217;t keep pace with the complexity of modern bar operations.</p>
 <p>Artificial intelligence makes this complexity manageable. Real-time pour cost tracking catches problems before they become losses. Demand forecasting ensures you&#8217;re neither overstocking nor running out. Menu engineering optimizes your offerings for maximum profitability. These tools democratize insights previously available only to large hospitality groups with dedicated analytics teams.</p>
 <p>Whether you run a neighborhood pub, a craft cocktail bar, or a restaurant with a significant beverage program, the principles remain the same: know your numbers, control your costs, price strategically, and leverage technology to automate what you can&#8217;t monitor constantly.</p>
-<p><strong>Ready to take control of your bar&#8217;s profitability?</strong> Start with <a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro&#8217;s free tier</a>—10 uses per month to explore beverage costing tools, menu engineering, and demand forecasting. Upgrade to Pro at €25/month for unlimited access, or Premium at €50/month for advanced reporting and priority support. Your margins will thank you.</p>
+<p><strong>Ready to take control of your bar&#8217;s profitability?</strong> Start with <a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro&#8217;s entry plan</a>—10 uses per month to explore beverage costing tools, menu engineering, and demand forecasting. Upgrade to Pro at €25/month for unlimited access, or Premium at €50/month for advanced reporting and priority support. Your margins will thank you.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>
 <ul>

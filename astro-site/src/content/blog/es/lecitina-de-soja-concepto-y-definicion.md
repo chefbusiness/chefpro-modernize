@@ -39,7 +39,7 @@ wpId: 2685
 <div style="background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%); border-radius: 12px; padding: 30px 20px; margin: 30px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
 <h3 style="color: #ffffff; font-size: 24px; margin: 0 0 15px 0; font-family: Arial, sans-serif;">🚀 Domina la cocina molecular</h3>
 <p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.5; font-family: Arial, sans-serif;">Descubre cómo la inteligencia artificial puede transformar tu restaurante. Recetas, costes y creatividad al alcance de un clic.</p>
-<p><a style="display: inline-block; background: #000000; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; font-family: Arial, sans-serif;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=lecitina-de-soja-concepto-y-definicion">Empieza Gratis →</a></p>
+<p><a style="display: inline-block; background: #000000; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; font-family: Arial, sans-serif;" href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=lecitina-de-soja-concepto-y-definicion">Empieza desde 10 €/mes →</a></p>
 </div>
 
 

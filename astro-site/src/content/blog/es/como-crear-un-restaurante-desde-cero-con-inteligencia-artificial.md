@@ -90,7 +90,7 @@ wpId: 2244
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 30px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #000; margin: 0 0 15px 0; font-size: 24px;">🚀 Impulsa tu Proyecto Gastronómico con AI Chef Pro</h3>
 <p style="color: #333; font-size: 16px; margin: 0 0 20px 0;">Más de 55 herramientas de IA especializadas para chefs y emprendedores gastronómicos. Desde el estudio de mercado hasta la operación diaria.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #000; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">Prueba Gratis AI Chef Pro</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #000; color: #FFD700; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px;">AI Chef Miembro desde 10 €/mes</a>
 </div>
 
 
@@ -836,9 +836,9 @@ Esta creación contemporánea rinde homenaje a la tradición hortícola mediterr
 
 <div style="background: linear-gradient(135deg, #000 0%, #1a1a1a 100%); padding: 40px; border-radius: 15px; margin: 40px 0; text-align: center; border: 3px solid #FFD700; box-shadow: 0 8px 25px rgba(255,215,0,0.3);">
 <h3 style="color: #FFD700; margin: 0 0 20px 0; font-size: 28px;">🎯 Comienza Tu Viaje Gastronómico con IA</h3>
-<p style="color: #fff; font-size: 18px; margin: 0 0 25px 0;">Únete a cientos de profesionales que ya están transformando sus cocinas con AI Chef Pro. Prueba gratis todas las herramientas y descubre el potencial de la inteligencia artificial en tu restaurante.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #FFD700; color: #000; padding: 18px 50px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 20px; margin-bottom: 15px;">Empieza Gratis Ahora</a>
-<p style="color: #aaa; font-size: 14px; margin: 15px 0 0 0;">Sin tarjeta de crédito · Acceso inmediato · +55 herramientas disponibles</p>
+<p style="color: #fff; font-size: 18px; margin: 0 0 25px 0;">Únete a cientos de profesionales que ya están transformando sus cocinas con AI Chef Pro. Con AI Chef Miembro usa todas las herramientas y descubre el potencial de la inteligencia artificial en tu restaurante.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-crear-un-restaurante-desde-cero-con-inteligencia-artificial" target="_blank" rel="noopener" style="display: inline-block; background: #FFD700; color: #000; padding: 18px 50px; border-radius: 10px; text-decoration: none; font-weight: bold; font-size: 20px; margin-bottom: 15px;">Empieza con AI Chef Miembro</a>
+<p style="color: #aaa; font-size: 14px; margin: 15px 0 0 0;">Pago con tarjeta de crédito · Acceso inmediato · +55 herramientas disponibles</p>
 </div>
 
 

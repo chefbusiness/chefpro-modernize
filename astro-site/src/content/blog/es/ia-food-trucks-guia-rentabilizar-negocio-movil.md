@@ -2,7 +2,7 @@
 title: "Food Truck Rentable: Costes, Márgenes y Previsión con IA"
 description: "Rentabiliza tu food truck en 2026: costes frente a un local fijo, ubicaciones y eventos, carta corta de alta rotación y previsión de demanda con IA."
 pubDate: 2026-03-23
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/food-truck-ia-1.jpg
 imageAlt: "Food truck gourmet en calle de Madrid con cola de clientes y chef visible"
@@ -214,13 +214,13 @@ Todo esto está disponible desde cualquier dispositivo con conexión a internet,
 
 En cuanto a precios, la transparencia es total:
 
-- **Plan gratuito**: 3.000 créditos al mes, sin necesidad de tarjeta.
+- **Plan Miembro**: 10 € al mes con 10.000 créditos, sin permanencia.
 - **Premium Pro**: 25 €/mes (85.000 créditos).
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).
 - **Max Anual**: 950 €/año (créditos ilimitados).
 
-Mi recomendación: empieza con el plan gratuito, prueba los agentes y, si la previsión de demanda o el escandallo te quitan horas de sueño, salta al plan que mejor se ajuste a tu volumen de operación. [Puedes probar los agentes aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=food-truck).
+Mi recomendación: empieza con el plan Miembro, prueba los agentes y, si la previsión de demanda o el escandallo te quitan horas de sueño, salta al plan que mejor se ajuste a tu volumen de operación. [Puedes probar los agentes aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=food-truck).
 
 ---
 

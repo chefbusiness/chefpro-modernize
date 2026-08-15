@@ -18,7 +18,7 @@ faq:
   - q: "¿La automatización sirve para un restaurante pequeño?"
     a: "Sí, y en muchos casos es donde más impacto tiene. Un restaurante pequeño sufre igual o más el papeleo porque el chef suele hacer también de gestor. Automatizar escandallos, pedidos y APPCC libera horas que en un equipo ajustado son críticas para el día a día."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta. Premium Pro cuesta 25 € al mes con 85.000 créditos, Plus 50 € al mes con 175.000 créditos, y Max 95 € al mes con créditos ilimitados. También hay plan Max Anual por 950 € al año."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta. Premium Pro cuesta 25 € al mes con 85.000 créditos, Plus 50 € al mes con 175.000 créditos, y Max 95 € al mes con créditos ilimitados. También hay plan Max Anual por 950 € al año."
   - q: "¿En cuántos idiomas está disponible AI Chef Pro?"
     a: "AI Chef Pro funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. El español es nativo, no una traducción automática, lo que garantiza precisión en términos del oficio como escandallos, fichas técnicas o registros APPCC."
 ---
@@ -141,13 +141,13 @@ Trabaja en siete idiomas con español nativo (inglés, francés, alemán, italia
 
 Los planes son directos y sin letra pequeña:
 
-- **Plan gratuito:** 3.000 créditos al mes, sin tarjeta. Entras, pruebas y decides si te sirve.
+- **Plan AI Chef Miembro:** 10.000 créditos al mes, con tarjeta. Entras, pruebas y decides si te sirve.
 - **Premium Pro:** 25 € al mes con 85.000 créditos.
 - **Plus:** 50 € al mes con 175.000 créditos.
 - **Max:** 95 € al mes con créditos ilimitados.
 - **Max Anual:** 950 € al año.
 
-Puedes [probar gratis AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=automatizacion) y empezar por donde más te duele: escandallos, APPCC o pedidos. Sin compromiso, sin tarjeta y sin discursos.
+Puedes [contratar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=automatizacion) y empezar por donde más te duele: escandallos, APPCC o pedidos. Sin compromiso, con tarjeta y sin discursos.
 
 ## Conclusión: Automatiza el Papeleo, Protege el Oficio
 

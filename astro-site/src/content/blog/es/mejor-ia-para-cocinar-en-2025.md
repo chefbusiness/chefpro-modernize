@@ -2,7 +2,7 @@
 title: "IA para Cocinar: Recetas, Técnicas y Trucos de Chef"
 description: "Aprende a usar la IA para cocinar como un chef: recetas con lo que tienes, sustituciones, maridajes y escalado de raciones, con ejemplos de prompts."
 pubDate: 2025-09-11
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/mejor-ia-para-cocinar-2025-1.jpeg
 imageAlt: "IA para cocinar: recetas, técnicas y trucos de chef con inteligencia artificial"
@@ -20,7 +20,7 @@ faq:
   - q: "¿Es mejor un ChatGPT genérico o una IA especializada en cocina?"
     a: "Un generalista sirve para salir del paso, pero se queda corto en terminología profesional, gramajes y contexto hispano. Una herramienta especializada como AI Chef Pro trae más de 70 agentes entrenados para tareas culinarias concretas, habla tu idioma de cocina y te da respuestas precisas sin que pierdas tiempo explicando lo básico."
   - q: "¿Cuánto cuesta usar una IA para cocinar?"
-    a: "Hay opciones gratuitas limitadas y herramientas especializadas de pago. AI Chef Pro tiene un plan gratuito con 3.000 créditos al mes sin tarjeta. El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe el plan Max Anual por 950 €/año."
+    a: "Hay opciones de pago limitadas y herramientas especializadas. AI Chef Pro tiene un plan de entrada Miembro con 10.000 créditos al mes por 10 €. El plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe el plan Max Anual por 950 €/año."
 ---
 
 Imagina que entras a la cocina un martes a las ocho de la tarde, abres la nevera y tienes un puerro mustio, tres huevos, un bote de tomate triturado a medio acabar y un trozo de queso que pide auxilio. La IA para cocinar no es una máquina que cocina por ti, sino un ayudante que te susurra al oído: “con eso te sacas una quiche sin masa o unos huevos al plato con tomate especiado y queso gratinado, y no tardas ni veinte minutos”. Eso es lo que hace bien: proponerte ideas, estructurarlas, explicarte la técnica y ajustar cantidades para que no te sobre ni te falte.
@@ -126,7 +126,7 @@ Aquí hay que hilar fino. Un modelo generalista —piensa en un asistente de eso
 
 Una herramienta especializada en cocina trae agentes ya entrenados para tareas culinarias concretas. No pierdes tiempo explicando qué es un pimentón de la Vera o qué diferencia hay entre un fondo blanco y uno oscuro. Si quieres profundizar en esto, aquí te cuento cómo trabaja [un chef GPT en español](https://aichef.pro/blog/chef-gpt-espanol) pensado para nuestro idioma y nuestros ingredientes.
 
-En AI Chef Pro llevamos tiempo construyendo justo eso: una suite de más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. Cada agente está afinado para una tarea distinta —crear recetas, escalar producciones, proponer maridajes, resolver sustituciones, explicar técnicas— y habla tu mismo lenguaje de cocina. Puedes empezar con el plan gratuito, que te da 3.000 créditos al mes sin necesidad de tarjeta, para que trastees sin compromiso. Si necesitas más profundidad, el plan Premium Pro son 25 € al mes con 85.000 créditos; el Plus, 50 € al mes con 175.000; y el Max, 95 € al mes con créditos ilimitados. También hay un plan Max Anual de 950 € al año. Pero insisto: con el gratuito ya puedes probar todo lo que hemos hablado en este artículo.
+En AI Chef Pro llevamos tiempo construyendo justo eso: una suite de más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. Cada agente está afinado para una tarea distinta —crear recetas, escalar producciones, proponer maridajes, resolver sustituciones, explicar técnicas— y habla tu mismo lenguaje de cocina. Puedes empezar con el plan Miembro, que te da 10.000 créditos al mes por 10 €, para que trastees sin compromiso. Si necesitas más profundidad, el plan Premium Pro son 25 € al mes con 85.000 créditos; el Plus, 50 € al mes con 175.000; y el Max, 95 € al mes con créditos ilimitados. También hay un plan Max Anual de 950 € al año. Pero insisto: con el plan Miembro ya puedes probar todo lo que hemos hablado en este artículo.
 
 
 
@@ -147,4 +147,4 @@ No necesitas instalar nada raro ni hacer un curso. Esto es lo que te propongo:
 3. **Cocina el resultado y anota qué ajustarías.** Prueba, corrige sal, acidez, punto de cocción. La IA te ha dado el mapa; el territorio lo recorres tú.
 4. **Itera.** Vuelve a preguntar con lo que has aprendido. “La receta de ayer quedó bien pero la salsa estaba algo líquida. ¿Cómo la reduzco sin pasarme de sal?” La IA aprende contigo si tú le das información.
 
-Si quieres probarlo ahora, [abre AI Chef Pro y pruébalo gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-cocinar). El plan gratuito te da 3.000 créditos al mes sin pedirte tarjeta. Suficiente para varias recetas, un par de maridajes y alguna técnica afinada. Luego decides si te quedas.
+Si quieres probarlo ahora, [abre AI Chef Pro y pruébalo](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-cocinar). El plan Miembro te da 10.000 créditos al mes por 10 €. Suficiente para varias recetas, un par de maridajes y alguna técnica afinada. Luego decides si te quedas.

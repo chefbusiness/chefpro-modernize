@@ -2,7 +2,7 @@
 title: "30 Técnicas de Smoke Food por Gastro Lexicum: La Guía Definitiva del Ahumado Optimizada por IA"
 description: "El ahumado, una técnica culinaria antigua que combina tradición e innovación, se transforma con la inteligencia artificial. La guía del Chef John Guerrero…"
 pubDate: 2025-02-21
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/8112246.jpeg
 imageAlt: "Close-up of grilling kebabs over a smoky barbecue, showcasing hands in action."
@@ -992,7 +992,7 @@ wpId: 1017
 
 
 
-<p class="wp-block-paragraph"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=30-tecnicas-de-smoke-food-por-gastro-lexicum" data-lasso-id="813">Prueba Gastro Lexicum Gratis</a></p>
+<p class="wp-block-paragraph"><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=30-tecnicas-de-smoke-food-por-gastro-lexicum" data-lasso-id="813">Prueba Gastro Lexicum</a></p>
 
 
 

@@ -2,7 +2,7 @@
 title: "Gestión de Alérgenos en Restaurante: los 14 y la Ley 2026"
 description: "Los 14 alérgenos de declaración obligatoria, qué te exige la ley en España y la UE, y cómo generar cartas y fichas de alérgenos automáticas con IA."
 pubDate: 2026-04-08
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/ia-gestion-alergenos-chef-cocina.jpg
 imageAlt: "Chef revisando etiquetas de alérgenos en cocina profesional con inteligencia artificial"
@@ -20,7 +20,7 @@ faq:
   - q: "¿La IA elimina el riesgo de contaminación cruzada en mi cocina?"
     a: "No. La IA documenta y avisa sobre los alérgenos presentes en cada plato, pero la manipulación segura para evitar la contaminación cruzada sigue siendo responsabilidad del equipo de cocina. Lo que sí hace es facilitar la trazabilidad y la formación del personal."
   - q: "¿Cuánto cuesta gestionar los alérgenos con AI Chef Pro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes sin tarjeta, suficiente para probar el sistema. El plan Premium Pro cuesta 25 euros al mes con 85.000 créditos. Hay planes superiores según el volumen de recetas que necesites gestionar."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta, suficiente para probar el sistema.” El plan Premium Pro cuesta 25 euros al mes con 85.000 créditos. Hay planes superiores según el volumen de recetas que necesites gestionar."
 ---
 
 Si llevas más de un año en cocina, sabes que la **gestión de alérgenos restaurante** dejó de ser una recomendación para convertirse en el primer punto que revisa cualquier inspector de sanidad en 2026. No es una moda ni un extra para quedar bien: es una obligación legal que arrastramos desde diciembre de 2014 y que, a día de hoy, sigue siendo el talón de Aquiles de la mayoría de los negocios de hostelería.
@@ -98,7 +98,7 @@ La **gestión de alérgenos restaurante** manual también falla cuando llega la 
 
 Aquí es donde la tecnología entra en la cocina sin quitarle el oficio al chef. La inteligencia artificial aplicada a la **gestión de alérgenos restaurante** no es un robot que cocina por ti: es un sistema que lee tus recetas, detecta automáticamente los alérgenos presentes en cada ingrediente y sus derivados, y genera las fichas técnicas y las cartas actualizadas en minutos.
 
-El [detector de alérgenos gratuito](https://aichef.pro/detector-alergenos-restaurante) de AI Chef Pro analiza cada ingrediente de una receta y cruza la información con los 14 alérgenos de declaración obligatoria. No se limita a buscar la palabra "leche": identifica caseinatos, suero lácteo, lactosa y cualquier derivado que un cocinero podría pasar por alto en una lectura rápida de la etiqueta. Lo mismo ocurre con la lecitina de soja (E-322), que aparece en productos donde nadie espera encontrar soja, o con los sulfitos en vinos y frutos secos.
+El [detector de alérgenos](https://aichef.pro/detector-alergenos-restaurante) de AI Chef Pro analiza cada ingrediente de una receta y cruza la información con los 14 alérgenos de declaración obligatoria. No se limita a buscar la palabra "leche": identifica caseinatos, suero lácteo, lactosa y cualquier derivado que un cocinero podría pasar por alto en una lectura rápida de la etiqueta. Lo mismo ocurre con la lecitina de soja (E-322), que aparece en productos donde nadie espera encontrar soja, o con los sulfitos en vinos y frutos secos.
 
 La ventaja real para una cocina profesional es que las fichas técnicas se recalculan solas cuando cambias una receta. Si modificas la salsa base de tres platos, el sistema actualiza automáticamente las fichas de todos ellos. No hay que rehacer nada a mano. Las cartas y los códigos QR se generan con filtros por alergia: un comensal celíaco puede ver en segundos qué platos puede comer sin gluten, sin necesidad de preguntar al camarero y sin margen de error.
 
@@ -125,7 +125,7 @@ La comparación no va de sustituir al cocinero, sino de quitarle de encima la ca
 
 Si llevas tiempo postergando la **gestión de alérgenos restaurante** porque te parece un marrón administrativo, la solución es más sencilla de lo que parece. AI Chef Pro es una suite de más de 70 agentes de IA culinarios en 7 idiomas, con español nativo, diseñada específicamente para cocinas profesionales. No es una herramienta genérica adaptada a hostelería: está pensada por y para chefs.
 
-El plan gratuito incluye 3.000 créditos al mes, sin necesidad de tarjeta, y te permite probar el detector de alérgenos y la generación de fichas técnicas sin compromiso. Si necesitas más capacidad, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos, el plan Plus asciende a 50 € al mes con 175.000 créditos, y el plan Max ofrece créditos ilimitados por 95 € al mes o 950 € al año.
+El plan AI Chef Miembro incluye 10.000 créditos al mes, con tarjeta, y te permite probar el detector de alérgenos y la generación de fichas técnicas sin compromiso. Si necesitas más capacidad, el plan Premium Pro cuesta 25 € al mes con 85.000 créditos, el plan Plus asciende a 50 € al mes con 175.000 créditos, y el plan Max ofrece créditos ilimitados por 95 € al mes o 950 € al año.
 
 La **gestión de alérgenos restaurante** y el sistema APPCC van de la mano: no tiene sentido tener las fichas de alérgenos al día si el plan de autocontrol está desactualizado. Por eso AI Chef Pro ofrece el [Pack APPCC](https://aichef.pro/pack-appcc), con plantillas de autocontrol que se integran con la documentación de alérgenos. Puedes profundizar en este tema en la [guía de APPCC y seguridad alimentaria con IA](https://aichef.pro/blog/appcc-seguridad-alimentaria-ia-hosteleria).
 

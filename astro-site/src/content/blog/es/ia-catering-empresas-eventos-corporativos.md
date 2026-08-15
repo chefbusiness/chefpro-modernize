@@ -20,7 +20,7 @@ faq:
   - q: "¿Cómo ayuda la IA a montar presupuestos y operar un catering?"
     a: "La IA escala recetas al instante, calcula el food cost, genera fichas de producción, redacta la propuesta comercial adaptada al cliente y traduce a siete idiomas. Así reduces horas de oficina y dedicas el tiempo a cocinar y a cerrar eventos."
   - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
-    a: "El plan gratuito incluye 3.000 créditos al mes sin tarjeta. El Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año."
+    a: "El plan AI Chef Miembro incluye 10.000 créditos al mes con tarjeta. El Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año."
 ---
 
 ## Catering para Empresas: Guía de Negocio Rentable con Estructura de Precios, Escandallos y IA
@@ -135,8 +135,8 @@ AI Chef Pro reúne más de 70 agentes de inteligencia artificial culinarios espe
 
 Si tienes que presentar una cena de gala, el [generador de menú degustación](https://aichef.pro/generador-menu-degustacion) te entrega propuestas afinadas en minutos. Y si estás montando el negocio desde cero, la [guía completa para abrir un restaurante o catering con IA](https://aichef.pro/blog/como-abrir-restaurante-ia-guia-completa) te da el paso a paso.
 
-La plataforma tiene un plan gratuito con 3.000 créditos al mes y sin tarjeta, ideal para probar sin riesgo. A partir de ahí, el plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plan Plus 50 €/mes (175.000 créditos) y el plan Max 95 €/mes con créditos ilimitados; también existe la opción Max Anual por 950 €/año. Con el plan gratuito puedes empezar a [montar presupuestos hoy mismo](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=catering) y ver cómo la IA te devuelve las horas que ahora inviertes en papeleo.
+La plataforma tiene un plan AI Chef Miembro con 10.000 créditos al mes y con tarjeta, ideal para probar sin riesgo. A partir de ahí, el plan Premium Pro cuesta 25 €/mes (85.000 créditos), el Plan Plus 50 €/mes (175.000 créditos) y el plan Max 95 €/mes con créditos ilimitados; también existe la opción Max Anual por 950 €/año. Con el plan AI Chef Miembro puedes empezar a [montar presupuestos hoy mismo](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=catering) y ver cómo la IA te devuelve las horas que ahora inviertes en papeleo.
 
 ## Conclusión
 
-El catering para empresas es un negocio con estructura ligera y margen sano, pero solo si dominas el escandallo y eres capaz de presentar propuestas que se cierren sin darle vueltas al precio. La inteligencia artificial te quita de encima las horas de cálculo, redacción y traducción para que dediques tu tiempo a lo que de verdad cuenta: cocinar bien y vender mejor. Entra con el plan gratuito de AI Chef Pro, monta tu primer presupuesto real y decide si quieres seguir haciendo números a mano o trabajar con un socio que no se cansa.
+El catering para empresas es un negocio con estructura ligera y margen sano, pero solo si dominas el escandallo y eres capaz de presentar propuestas que se cierren sin darle vueltas al precio. La inteligencia artificial te quita de encima las horas de cálculo, redacción y traducción para que dediques tu tiempo a lo que de verdad cuenta: cocinar bien y vender mejor. Entra con el plan AI Chef Miembro de AI Chef Pro, monta tu primer presupuesto real y decide si quieres seguir haciendo números a mano o trabajar con un socio que no se cansa.

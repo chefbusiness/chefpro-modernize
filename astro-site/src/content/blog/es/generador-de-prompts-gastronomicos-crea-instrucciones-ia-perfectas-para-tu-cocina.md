@@ -2,7 +2,7 @@
 title: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
 description: "La inteligencia artificial aplicada a la gastronomía está revolucionando las cocinas profesionales de todo el mundo. Sin embargo, la diferencia entre obtener…"
 pubDate: 2025-09-02
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: libreria-de-prompts
 image: /blog-assets/2025/09/generador-de-prompts-gastronomicos-1.jpeg
 imageAlt: "Generador de Prompts Gastronómicos: Crea Instrucciones IA Perfectas para tu Cocina"
@@ -1600,11 +1600,11 @@ Parámetros económicos:
 
 
 
-<h3 class="wp-block-heading">Recursos Gratuitos para Comenzar</h3>
+<h3 class="wp-block-heading">Recursos para Comenzar</h3>
 
 
 
-<p class="wp-block-paragraph">Para facilitar tu implementación inicial, <strong><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" data-lasso-id="3550"><strong>AI Chef Pro</strong></a></strong> ofrece recursos gratuitos diseñados para acelerar tu curva de aprendizaje:</p>
+<p class="wp-block-paragraph">Para facilitar tu implementación inicial, <strong><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=generador-de-prompts-gastronomicos-crea-instrucciones-ia-perfectas-para-tu-cocina" data-lasso-id="3550"><strong>AI Chef Pro</strong></a></strong> ofrece recursos diseñados para acelerar tu curva de aprendizaje:</p>
 
 
 
@@ -1890,7 +1890,7 @@ Parámetros económicos:
 
 
 
-<p class="wp-block-paragraph">Ofrecemos múltiples niveles de soporte adaptados a cada plan: documentación detallada 24/7, tutoriales interactivos, base de conocimiento especializada, soporte por chat en vivo, webinars mensuales gratuitos y sesiones de consultoría personalizada para planes Premium. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
+<p class="wp-block-paragraph">Ofrecemos múltiples niveles de soporte adaptados a cada plan: documentación detallada 24/7, tutoriales interactivos, base de conocimiento especializada, soporte por chat en vivo, webinars mensuales y sesiones de consultoría personalizada para planes Premium. Nuestro equipo está formado por profesionales con experiencia gastronómica que entienden los retos específicos del sector.</p>
 
 
 

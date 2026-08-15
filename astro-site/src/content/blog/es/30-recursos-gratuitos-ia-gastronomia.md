@@ -12,10 +12,10 @@ faq:
   - q: "¿La IA gratis para restaurantes sirve de verdad o es solo una demo recortada?"
     a: "Sirve, y mucho. La mayoría de herramientas gratuitas ofrecen funcionalidades completas, aunque con límites de uso (créditos, consultas, resolución). No son demos capadas: son versiones funcionales que te permiten trabajar en el día a día sin pagar, siempre que tu volumen no sea muy alto."
   - q: "¿Qué límites tienen los planes gratuitos de estas herramientas?"
-    a: "Varían según la herramienta. En AI Chef Pro, el plan gratuito te da 3.000 créditos al mes, suficiente para probar todos los agentes y resolver tareas puntuales. En herramientas externas, los límites suelen ser de número de generaciones diarias, palabras o resolución de imagen. Cuando los topas, sabes que necesitas más."
+    a: "Varían según la herramienta. En AI Chef Pro, el plan Miembro (10 €/mes) te da 10.000 créditos al mes, de sobra para usar todos los agentes a diario. En herramientas externas, los límites suelen ser de número de generaciones diarias, palabras o resolución de imagen. Cuando los topas, sabes que necesitas más."
   - q: "¿Necesito saber de tecnología para usar estas herramientas de IA?"
     a: "No. Están diseñadas para que hables en lenguaje natural, como si le pidieras algo a un compañero de cocina. Si sabes explicar lo que quieres (un escandallo, una receta, una respuesta a una reseña), la IA te entiende. No necesitas programar ni configurar nada complejo."
-  - q: "¿El plan gratuito de AI Chef Pro pide tarjeta de crédito?"
+  - q: "¿El plan Miembro de AI Chef Pro pide tarjeta de crédito?"
     a: "No. Te registras con un correo electrónico y empiezas a usar los 3.000 créditos al mes sin facilitar ningún dato de pago. No hay compromiso ni renovación automática: tú decides si y cuándo pasar a un plan superior cuando sientas que necesitas más potencia o créditos para el día a día de tu cocina."
   - q: "¿Cuándo merece la pena pagar por una herramienta de IA en hostelería?"
     a: "Cuando los límites gratuitos empiezan a frenarte el trabajo diario. Si te ves obligado a buscar alternativas constantemente, o necesitas automatizar tareas repetitivas a gran escala, un plan de pago se amortiza en horas de trabajo y en la calidad de las decisiones. Muchos chefs notan el retorno desde el primer mes en el que reducen el tiempo de escandallos o generación de contenidos."
@@ -31,7 +31,7 @@ Sí, existen recursos de inteligencia artificial gratuitos y de calidad para gas
 
 | Bloque | Qué incluye | Nº de recursos | Coste |
 | :--- | :--- | :--- | :--- |
-| Herramientas gratuitas de AI Chef Pro | Calculadora food cost, detector alérgenos, generador de textos de carta, plan gratuito, etc. | 6 | Gratis (sin tarjeta) |
+| Herramientas gratuitas de AI Chef Pro | Calculadora food cost, detector alérgenos, generador de textos de carta, etc. | 6 | Gratis (sin tarjeta) |
 | Guías y formación gratuita del blog | Biblioteca de prompts, ingeniería de menú, control de mermas, comparativa de IA, etc. | 6 | Gratis |
 | Categorías de recursos externos gratuitos | 18 tipos de herramientas de IA que puedes usar sin pagar (con límites típicos) | 18 | Gratis (con límites) |
 
@@ -65,9 +65,9 @@ Planifica un mes de publicaciones en redes sociales del restaurante. Propone ide
 Propón secuencias de pases coherentes, equilibrando técnicas, sabores y estacionalidad. Ahorra horas de lluvia de ideas cuando diseñas un menú largo. Puedes pedirle «menú de 10 pases con producto de mar Atlántico, sin lácteos, e incluir un pre-postre cítrico» y recibirás una secuencia coherente en la que cada pase dialoga con el siguiente.  
 [Generador de menú degustación](https://aichef.pro/generador-menu-degustacion)
 
-### 6. Plan gratuito de AI Chef Pro
+### 6. Plan Miembro de AI Chef Pro (10 €/mes)
 Accede a más de 70 agentes de IA culinarios en 7 idiomas, español nativo incluido. Con 3.000 créditos al mes, sin tarjeta, puedes probar todos los agentes y decidir si te encajan. Entre esos más de 70 agentes tienes asistentes para el cálculo de mermas y rendimientos, el maridaje de ingredientes, el escalado de raciones, el coaching para hosteleros y la creación de contenidos para redes sociales y SEO local; todo orquestado por un sistema que entiende el lenguaje de cocina.  
-[Plan gratuito de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-recursos)
+[Plan Miembro de AI Chef Pro (10 €/mes)](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-recursos)
 
 
 
@@ -204,7 +204,7 @@ Aquí tienes los planes de AI Chef Pro, sin letra pequeña:
 | Max Anual | Ilimitados | 950 €/año | Ahorra dos meses al año, mismo poder ilimitado |
 
 Todos los planes incluyen más de 70 agentes de IA culinarios, 7 idiomas y español nativo. El plan gratuito no pide tarjeta: usas 3.000 créditos al mes y decides si quieres más.  
-[Empieza gratis con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-recursos)
+[Empieza con AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=30-recursos)
 
 ## Conclusión: por dónde empezar hoy sin perder el foco
 

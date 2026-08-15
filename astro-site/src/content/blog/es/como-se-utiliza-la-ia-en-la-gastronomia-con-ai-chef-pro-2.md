@@ -18,7 +18,7 @@ faq:
   - q: "¿En qué se diferencia AI Chef Pro de un chatbot genérico?"
     a: "Un chatbot genérico no entiende de mermas, APPCC, escandallos ni terminología de partida. AI Chef Pro reúne más de 70 agentes entrenados con criterio gastronómico y responde en español nativo, adaptado a las necesidades reales de una cocina profesional."
   - q: "¿Cuánto cuesta empezar a usar IA en la cocina?"
-    a: "Puedes empezar gratis con el plan Gratuito de AI Chef Pro: 0 euros, 3.000 créditos al mes y sin tarjeta. Si necesitas más volumen, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un local pequeño."
+    a: "Puedes empezar con el plan AI Chef Miembro: 10 euros al mes, 10.000 créditos y sin permanencia.” Si necesitas más volumen, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para un local pequeño."
   - q: "¿Sirve la IA para la seguridad alimentaria y el APPCC?"
     a: "Sí, y mucho. La IA genera registros APPCC, fichas de alérgenos, trazabilidad de proveedores y protocolos de limpieza en minutos. Además, agentes como ID Alérgenos cruzan cada plato con los 14 alérgenos de declaración obligatoria y mantienen la documentación lista para una inspección."
 ---
@@ -138,19 +138,19 @@ No necesitas un máster en tecnología. Para empezar a usar IA en un restaurante
 
 1. **Elige la tarea que más duele.** Suele ser el escandallo o el diseño de carta. Ataca un solo frente, no quieras digitalizar todo a la vez. Si estos días te quita el sueño el food cost, empieza por ahí.
 2. **Aprende a dar contexto al agente.** Un buen prompt vale más que la herramienta. Explica quién eres, qué tipo de cocina haces y qué resultado esperas. No es lo mismo pedir «receta de arroz» que decir «soy jefe de cocina de una arrocería en Valencia, necesito un arroz meloso de pato y setas para 15 comensales, con coste por ración y ficha de alérgenos». Si buscas un ejemplo práctico, aquí tienes [la mejor IA para cocinar](https://aichef.pro/blog/mejor-ia-para-cocinar-en-2025) con instrucciones paso a paso.
-3. **Empieza gratis y escala cuando compense.** No hace falta inversión inicial. Cuando veas que el tiempo ahorrado paga de sobra el coste mensual, subes de plan. Muchos cocineros prueban con la planificación de un evento y, al ver que ahorran dos jornadas de oficina, deciden quedarse.
+3. **Empieza con el plan Miembro y escala cuando compense.** No hace falta inversión inicial. Cuando veas que el tiempo ahorrado paga de sobra el coste mensual, subes de plan. Muchos cocineros prueban con la planificación de un evento y, al ver que ahorran dos jornadas de oficina, deciden quedarse.
 
 El error típico es pedirle a la IA que lo haga todo sin revisar. La supervisión del profesional sigue siendo imprescindible. Pero si pruebas con una tarea concreta y ves que funciona, la adopción se acelera sola. En menos de una semana estarás generando fichas y escandallos mientras los fogones siguen encendidos.
 
 ## Cuánto cuesta: planes de AI Chef Pro
 
-AI Chef Pro ofrece un plan gratuito sin tarjeta para que cualquier cocinero pueda probar los agentes en su día a día. Cuando el uso lo justifica, los planes de pago se adaptan al volumen de trabajo del restaurante.
+AI Chef Pro ofrece el plan AI Chef Miembro por 10 € al mes para que cualquier cocinero pueda probar los agentes en su día a día. Cuando el uso lo justifica, los planes de pago se adaptan al volumen de trabajo del restaurante.
 
-La referencia mental es simple: 1 euro equivale aproximadamente a 1.000 créditos. Con los créditos se ejecutan las tareas de los agentes, y cada interacción consume una cantidad según su complejidad. Con 3.000 créditos mensuales del plan gratuito tienes margen de sobra para probar con soltura varios agentes antes de decidir si das el salto a un plan de pago.
+La referencia mental es simple: 1 euro equivale aproximadamente a 1.000 créditos. Con los créditos se ejecutan las tareas de los agentes, y cada interacción consume una cantidad según su complejidad. Con 10.000 créditos mensuales del plan Miembro tienes margen de sobra para probar con soltura varios agentes antes de decidir si das el salto a un plan superior.
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
-| Miembro | 10 € | 10.000 | Probar sin compromiso, sin tarjeta |
+| Miembro | 10 € | 10.000 | Probar sin compromiso |
 | Premium Pro | 25 €/mes | 85.000 | Un profesional o un local pequeño |
 | Plus | 50 €/mes | 175.000 | Restaurantes con volumen de trabajo |
 | Max | 95 €/mes | Ilimitados | Grupos y uso intensivo |

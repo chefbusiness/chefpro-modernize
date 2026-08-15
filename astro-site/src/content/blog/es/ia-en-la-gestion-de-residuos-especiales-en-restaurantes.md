@@ -1891,7 +1891,7 @@ Ahorro acumulado años 2-5: <strong>20.544€</strong></p>
 
 
 <ol class="wp-block-list">
-<li><strong>Mes 1-2:</strong> Suscripción AI Chef Pro nivel Pro (25€/mes) + auditoría interna gratuita usando Mermas GenCal</li>
+<li><strong>Mes 1-2:</strong> Suscripción AI Chef Pro nivel Pro (25€/mes) + auditoría interna incluida usando Mermas GenCal</li>
 
 
 

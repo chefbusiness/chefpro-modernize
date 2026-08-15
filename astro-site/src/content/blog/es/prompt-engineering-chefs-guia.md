@@ -19,8 +19,8 @@ faq:
     a: "No. El prompt engineering en cocina consiste en redactar instrucciones claras, igual que escribes una receta o una orden de compra. No requiere código ni conocimientos técnicos avanzados. Cualquier chef o jefe de cocina puede dominarlo con práctica y aplicando la estructura de rol, contexto, tarea y formato."
   - q: "¿Cuántos ejemplos debo dar en un prompt para que la IA entienda el formato?"
     a: "Con uno o dos ejemplos breves (técnica few-shot) suele bastar. Muestra la estructura deseada con datos inventados o de otro plato. La IA capta el patrón y replica el estilo. No hace falta dar muchos; lo importante es que el ejemplo refleje el nivel de detalle y el tono que esperas."
-  - q: "¿AI Chef Pro es gratis?"
-    a: "Sí, AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes sin necesidad de tarjeta. Incluye acceso a todos los agentes de IA culinarios en español. Si necesitas más capacidad, hay planes de pago desde 25 € al mes. Puedes empezar gratis y escalar cuando tu volumen de trabajo lo requiera."
+  - q: "¿AI Chef Pro es de pago?"
+    a: "No, AI Chef Pro es de pago. El plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos, con tarjeta. Incluye acceso a todos los agentes de IA culinarios en español. Si necesitas más capacidad, hay planes de pago desde 25 € al mes. Puedes empezar con AI Chef Miembro y escalar cuando tu volumen de trabajo lo requiera."
 ---
 
 ## Prompt engineering para chefs: guía práctica para dejar de recibir respuestas genéricas
@@ -114,7 +114,7 @@ Aplicar el *prompt engineering* en tu día a día no significa que tengas que di
 
 Estos son los planes disponibles en 2026:
 
-- **Plan gratuito**: 3.000 créditos al mes, sin tarjeta, acceso a todos los agentes.
+- **AI Chef Miembro**: 10 €/mes, 10.000 créditos, con tarjeta, acceso a todos los agentes.
 - **Premium Pro**: 25 €/mes (85.000 créditos).
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).

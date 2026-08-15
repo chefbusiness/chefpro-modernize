@@ -33,7 +33,7 @@ wpId: 1845
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #1a1a1a 100%); border-radius: 12px; padding: 30px; margin: 30px 0;">
 <h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🚀 Transforma tu Restaurante con AI Chef Pro</h3>
 <p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Accede a más de 55 herramientas de IA diseñadas específicamente para profesionales de la hostelería. Genera imágenes de diseño con <strong>Nano Banana Pro</strong>, optimiza costes con <strong>Mermas GenCal</strong> y revoluciona tu creatividad culinaria.</p>
-<p><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">PRUEBA GRATIS AHORA →</a></p>
+<p><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">PRUEBA AI CHEF MIEMBRO →</a></p>
 </div>
 
 
@@ -648,7 +648,7 @@ wpId: 1845
 
 
 
-<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>Gratis</td><td>Acceso limitado</td><td>Prueba inicial</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Moderado</td><td>Proyectos pequeños</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Amplio</td><td>Restaurantes medianos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Extensivo</td><td>Grupos y cadenas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Ilimitado</td><td>Consultoras, arquitectos</td></tr></tbody></table></div></figure>
+<figure class="wp-block-table"><div class="table-scroll"><table class="has-fixed-layout"><thead><tr><th>Plan</th><th>Precio</th><th>Generación de Imágenes</th><th>Ideal para</th></tr></thead><tbody><tr><td>Miembro</td><td>10€/mes</td><td>Acceso limitado</td><td>Prueba inicial</td></tr><tr><td>Pro</td><td>10€/mes</td><td>Moderado</td><td>Proyectos pequeños</td></tr><tr><td>Premium</td><td>15€/mes</td><td>Amplio</td><td>Restaurantes medianos</td></tr><tr><td>Premium Pro</td><td>25€/mes</td><td>Extensivo</td><td>Grupos y cadenas</td></tr><tr><td>Premium Plus</td><td>50€/mes</td><td>Ilimitado</td><td>Consultoras, arquitectos</td></tr></tbody></table></div></figure>
 
 
 
@@ -703,7 +703,7 @@ wpId: 1845
 <div style="background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 30px; margin: 30px 0;">
 <h3 style="color: #1a1a1a; margin-top: 0; font-size: 24px;">🏆 Únete a Miles de Profesionales que ya Usan AI Chef Pro</h3>
 <p style="color: #1a1a1a; font-size: 16px; margin-bottom: 20px;">Más de 55 herramientas de IA diseñadas exclusivamente para el sector hostelero. Desde diseño de espacios con <strong>Nano Banana Pro</strong> hasta optimización de menús con <strong><a href="https://aichef.pro/blog/que-es-el-food-pairing">Food Pairing</a> AI</strong>.</p>
-<div style="gap: 15px; flex-wrap: wrap;"><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">COMENZAR GRATIS</a><br><a style="background-color: transparent; color: #1a1a1a; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; border: 2px solid #1a1a1a;" href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">VER PLANES →</a></div>
+<div style="gap: 15px; flex-wrap: wrap;"><a style="background-color: #1a1a1a; color: #ffd700; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px;" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">COMENZAR CON AI CHEF MIEMBRO</a><br><a style="background-color: transparent; color: #1a1a1a; padding: 12px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; border: 2px solid #1a1a1a;" href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=diseno-de-espacios-gastronomicos-con-ia" target="_blank" rel="noopener">VER PLANES →</a></div>
 </div>
 
 

@@ -16,7 +16,7 @@ wpId: 2730
 <p>Los cocineros solemos decir que el roux es como los cimientos de una casa: no se ven, pero si fallan, todo se viene abajo. Un roux mal trabajado te deja salsas con sabor a harina cruda, textura granulosa o un color que no corresponde al plato que estás montando. Bien ejecutado, en cambio, aporta estructura, brillo y un sutil sabor tostado que eleva la preparación.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza con AI Chef Miembro</p>
 <p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=roux-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/roux-cuerpo.jpg" alt="Tres tipos de roux: blanco, rubio y oscuro" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Tipos de roux: blanco, rubio y oscuro</h2>

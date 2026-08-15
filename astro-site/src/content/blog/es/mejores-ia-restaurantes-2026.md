@@ -2,7 +2,7 @@
 title: "IA para Restaurantes 2026: Guía por Áreas y Herramientas"
 description: "IA para restaurantes en 2026: qué herramienta usar en mermas, escandallos, carta, marketing y reservas, y por dónde empezar sin gastar de más."
 pubDate: 2026-03-13
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/05/pillar-restaurantes-destacada.jpg
 imageAlt: "Panel de IA en una cocina de restaurante"
@@ -12,7 +12,7 @@ faq:
   - q: "¿Por dónde empiezo si quiero usar IA en mi restaurante?"
     a: "Empieza por el control de food cost y las mermas. Es el área con mayor retorno económico inmediato. Escandalla tus 10-15 platos de mayor rotación con una herramienta que actualice precios y luego conecta el inventario. Después, automatiza las comunicaciones repetitivas (reservas, WhatsApp). No intentes implantarlo todo a la vez."
   - q: "¿Es cara la IA para un restaurante pequeño?"
-    a: "No tiene por qué. Hay herramientas con planes gratuitos que permiten probar sin compromiso. Los costes de suscripción empiezan alrededor de 25 € al mes. El ahorro en mermas y en horas de trabajo administrativo suele cubrir con creces esa inversión incluso en negocios pequeños."
+    a: "No tiene por qué. Hay herramientas con planes desde 10 € al mes que permiten probar sin permanencia. Los costes de suscripción empiezan alrededor de 25 € al mes. El ahorro en mermas y en horas de trabajo administrativo suele cubrir con creces esa inversión incluso en negocios pequeños."
   - q: "¿La IA va a sustituir a mi personal?"
     a: "No. La IA sustituye tareas, no personas. Libera al equipo de papeleo, cálculos repetitivos y atención al teléfono para que se concentre en lo que importa: cocinar, atender al cliente y crear. El criterio gastronómico y la calidez en la sala siguen siendo humanos."
   - q: "¿Qué área del restaurante da más retorno con IA?"
@@ -111,11 +111,11 @@ La regla de oro es simple: empieza por donde más duele. Para la mayoría de los
 Para elegir cualquier herramienta de IA para hostelería, aplica estos filtros básicos:
 - Que hable español nativo. Si la interfaz o los resultados están en inglés, la fricción diaria acaba con la adopción.
 - Que se integre con tu TPV o que permita exportar/importar datos sin quebraderos de cabeza.
-- Que tenga un plan de pruebas real. Un plan gratuito que no pida tarjeta te permite validar si la herramienta encaja en tu operativa antes de rascarte el bolsillo. En AI Chef Pro, por ejemplo, el plan gratuito incluye 3.000 créditos al mes, sin tarjeta. Cuando necesites más, el plan Premium Pro (25 €/mes, 85.000 créditos) cubre la mayoría de necesidades de un restaurante mediano. El plan Max (95 €/mes, créditos ilimitados) está pensado para grupos o consultorías gastronómicas. [Ver todos los planes y créditos](https://aichef.pro/usos).
+- Que tenga un plan de pruebas real. Un plan desde 10 € al mes, sin permanencia, te permite validar si la herramienta encaja en tu operativa antes de rascarte el bolsillo. En AI Chef Pro, por ejemplo, el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €, sin permanencia. Cuando necesites más, el plan Premium Pro (25 €/mes, 85.000 créditos) cubre la mayoría de necesidades de un restaurante mediano. El plan Max (95 €/mes, créditos ilimitados) está pensado para grupos o consultorías gastronómicas. [Ver todos los planes y créditos](https://aichef.pro/usos).
 
 | Plan | Créditos/mes | Precio | Ideal para |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 3.000 | 0 € | Probar sin compromiso, familiarizarse con las herramientas |
+| AI Chef Miembro | 10.000 | 10 €/mes | Sin permanencia, familiarizarse con las herramientas |
 | Premium Pro | 85.000 | 25 €/mes | Restaurante que quiere implantar escandallos y fichas técnicas en su día a día |
 | Plus | 175.000 | 50 €/mes | Negocio con alta rotación de carta o varios formatos (carta, menú, delivery) |
 | Max | Ilimitados | 95 €/mes | Grupos de restauración, consultorías, alta frecuencia de uso |
@@ -123,4 +123,4 @@ Para elegir cualquier herramienta de IA para hostelería, aplica estos filtros b
 
 La clave de todo esto es que la inteligencia artificial en restaurantes no quita puestos de trabajo: quita tareas que nadie debería hacer a mano. El oficio sigue siendo tuyo. La máquina te devuelve tiempo para estar en la cocina, en la sala o en el mercado, que es donde se construye un restaurante de verdad.
 
-Si quieres probar sin riesgos, [empieza gratis en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejores-ia-restaurantes) y escandalla tus primeros platos esta misma semana.
+Si quieres probar sin riesgos, [empieza con AI Chef Miembro en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mejores-ia-restaurantes) y escandalla tus primeros platos esta misma semana.

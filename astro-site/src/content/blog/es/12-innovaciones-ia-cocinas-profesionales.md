@@ -618,7 +618,7 @@ wpId: 1923
 
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <p style="color: #FFD700; font-size: 24px; font-weight: bold; margin: 0 0 15px 0;">🏆 Planes Adaptados a Cada Necesidad</p>
-<p style="color: #fff; font-size: 16px; margin: 0 0 20px 0;">Desde 10€/mes accede a herramientas profesionales de IA para cocina. Plan gratuito disponible para empezar sin compromiso.</p>
+<p style="color: #fff; font-size: 16px; margin: 0 0 20px 0;">Desde 10€/mes accede a herramientas profesionales de IA para cocina. Plan AI Chef Miembro disponible para empezar sin compromiso.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">Comparar Planes</a>
 </div>
 
@@ -789,7 +789,7 @@ wpId: 1923
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); border-radius: 12px; padding: 35px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <p style="color: #1a1a1a; font-size: 26px; font-weight: bold; margin: 0 0 15px 0;">🌟 El Futuro de la Cocina Está Aquí</p>
 <p style="color: #333; font-size: 17px; margin: 0 0 25px 0;">Únete a miles de profesionales que ya están transformando sus cocinas con AI Chef Pro. Más de 55 herramientas de IA diseñadas para chefs y hosteleros.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Comienza Gratis Ahora</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=12-innovaciones-ia-cocinas-profesionales" target="_blank" style="display: inline-block; background-color: #1a1a1a; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Comienza con AI Chef Miembro</a>
 </div>
 
 

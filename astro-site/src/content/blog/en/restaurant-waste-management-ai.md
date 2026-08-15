@@ -17,8 +17,8 @@ imageAlt: "Waste Management"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🌱 Eliminate Waste, Maximize Sustainability</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    AI-powered restaurant waste management that pays for itself.<br />    Reduce waste by 50% • Cut costs • Boost sustainability scores  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE TRIAL →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    5 free AI credits • Cancel anytime. • Cancel anytime  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START AI CHEF MEMBER →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    10,000 AI credits • Cancel anytime. • Cancel anytime  </p>
 </div>
 <h2>The True Cost of Restaurant Waste: A Financial and Environmental Crisis</h2>
 <p></p>
@@ -49,7 +49,7 @@ imageAlt: "Waste Management"
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">📊 Track, Analyze, Eliminate Waste</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Get complete visibility into your waste streams with AI Chef Pro.<br />    Real-time tracking • Predictive analytics • Sustainability scoring  </p>
 <p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    TRY WASTE CONTROL APP →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Free 14-day trial • See results in first week  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    AI Chef Member • See results in first week  </p>
 </div>
 <h2>Waste Control App: Your AI Waste Management Command Center</h2>
 <p>The Waste Control app within AI Chef Pro represents the cutting edge of <strong>restaurant waste management</strong> technology. This isn&#8217;t just a digital logbook—it&#8217;s a comprehensive waste intelligence platform that learns your operation&#8217;s patterns and continuously optimizes for reduction.</p>
@@ -117,7 +117,7 @@ imageAlt: "Waste Management"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Transform Your Restaurant Today</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 10,000+ restaurants already reducing waste with AI.<br />    Waste Control + Sustainability Tracker = The Complete Solution  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED FREE →  </a>  </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 5 free credits • Full access to all features • Cancel anytime.  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET AI CHEF MEMBER →  </a>  </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">    Start with 10,000 credits • Full access to all features • Cancel anytime.  </p>
 </div>
 <p><em>Ready to revolutionize your restaurant&#8217;s waste management? Try AI Chef Pro&#8217;s Waste Control and Sustainability Tracker apps today and join the sustainability revolution transforming the restaurant industry.</em></p>

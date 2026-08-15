@@ -144,11 +144,11 @@ imageAlt: "Tablet showing restaurant profit margin dashboard with analytics"
 <h3>Is my financial data secure with AI platforms?</h3>
 <p>AI Chef Pro uses bank-level encryption and security protocols. Your data is never sold or shared, and you maintain full ownership. The system is SOC 2 Type II certified and compliant with all relevant data protection regulations.</p>
 <h3>How much does AI profit optimization cost?</h3>
-<p>AI Chef Pro uses a credit-based system with no subscription required. You purchase credits as needed, with each analysis or optimization using one credit. New users receive 5 free credits to start. Most restaurants see ROI within the first month of use.</p>
+<p>AI Chef Pro uses a credit-based system with no subscription required. You purchase credits as needed, with each analysis or optimization using one credit. New users receive 10,000 credits with AI Chef Member. Most restaurants see ROI within the first month of use.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Transform Your Restaurant&#8217;s Profitability</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro&#8217;s profit calculator.<br />    Real-time insights • Menu optimization • Waste reduction • Maximum ROI  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE TODAY →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET AI CHEF MEMBER →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    1 credit = 1 use • No subscription required  </p>
 </div>
 <h2>Conclusion: The New Standard for Restaurant Profitability</h2>

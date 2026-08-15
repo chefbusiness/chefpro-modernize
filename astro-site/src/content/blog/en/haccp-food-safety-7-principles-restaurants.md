@@ -28,7 +28,7 @@ faq:
 <p>Whether you&#8217;re opening a new restaurant, updating your existing safety protocols, or simply seeking to improve your knowledge, this comprehensive guide will walk you through each of the seven HACCP principles with practical examples, actionable insights, and real-world applications designed specifically for the restaurant industry.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">From Food Safety to Kitchen Intelligence</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro adds AI-powered recipe management, food cost analysis, and menu engineering to complement your HACCP program. 75+ tools, free tier.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro adds AI-powered recipe management, food cost analysis, and menu engineering to complement your HACCP program. 75+ tools, from €10/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/haccp-hazard-analysis-team.png" alt="HACCP hazard analysis team meeting" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Hazard analysis requires a cross-functional team including kitchen staff, management, and food safety specialists.</figcaption></figure>
 <h2>The 7 HACCP Principles — Your Complete Guide</h2>
@@ -311,12 +311,12 @@ faq:
 <li><strong>Supplier management:</strong> Track vendor compliance and documentation</li>
 </ul>
 <p>The platform integrates seamlessly with your existing temperature monitoring systems while providing comprehensive tools for every aspect of food safety management.</p>
-<p><strong>Try AI Chef Pro free:</strong> The free tier includes 10 uses monthly—perfect for evaluating how AI-powered tools can streamline your HACCP compliance. Visit <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro</a> to get started today.</p>
+<p><strong>Try AI Chef Pro for €10/month:</strong> The AI Chef Member plan includes 10,000 credits monthly—perfect for evaluating how AI-powered tools can streamline your HACCP compliance. Visit <a href="https://aichef.pro/en" target="_blank" rel="noopener">aichef.pro</a> to get started today.</p>
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Elevate Your Kitchen Standards</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">HACCP principles + AI intelligence = the modern kitchen advantage. Start today with AI Chef Pro.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Start Free →</a></div>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Start Now →</a></div>
 
 <h2>Conclusion: HACCP as Your Competitive Advantage</h2>
 <p>The seven HACCP principles provide a proven framework protecting your customers, your reputation, and your bottom line. Implementing these procedures isn&#8217;t merely regulatory compliance—it&#8217;s a commitment to excellence that distinguishes your establishment.</p>
@@ -324,7 +324,7 @@ faq:
 <p>Technology amplifies your efforts. Modern tools transform HACCP from paperwork into real-time protection. Temperature sensors that never sleep. Automated alerts that reach the right person immediately. Records that assemble themselves for any inspection.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener">AI Chef Pro</a> supports your HACCP journey with over 55 tools designed specifically for kitchen operations. From demand forecasting that ensures ingredient freshness to recipe management with built-in safety checkpoints, our platform streamlines every aspect of food safety while improving overall kitchen efficiency.</p>
 <p>Your customers trust you with their health. Your staff depends on you for clear procedures. Your business future hinges on consistent, documented excellence.</p>
-<p><strong>Ready to strengthen your HACCP program? Get started with AI Chef Pro&#8217;s free tier—10 uses monthly to explore how AI-powered tools can transform your food safety operations.</strong></p>
+<p><strong>Ready to strengthen your HACCP program? Get started with AI Chef Pro&#8217;s AI Chef Member plan—10,000 credits monthly to explore how AI-powered tools can transform your food safety operations.</strong></p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener">Visit AI Chef Pro today</a> and discover why leading restaurants trust our platform for HACCP compliance and kitchen excellence.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>

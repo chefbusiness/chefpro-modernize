@@ -16,7 +16,7 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Know Your Numbers, Grow Your Profits</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro gives you 75+ AI tools to analyze food costs, optimize menu pricing, and boost your restaurant profit margins. Start today.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a></div>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post11-food-cost.png" alt="Chef weighing ingredients on digital scale with food cost calculations clipboard" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Precise ingredient tracking is the foundation of healthy restaurant profit margins.</figcaption></figure>
 <h2>What Is Restaurant Profit Margin?</h2>
 <p>Before examining benchmarks or strategies, operators must fully understand what profit margin actually measures—and why the distinction between gross and net margin matters enormously for decision-making.</p>
@@ -149,7 +149,7 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <p>Industry estimates suggest that waste and theft combined can consume 2% to 5% of revenue at poorly managed establishments—losses that directly impact the bottom line without any offsetting benefit.</p>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Stop Leaving Money on the Table</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro helps restaurant operators improve margins with menu engineering, recipe costing, and pricing optimization. Free tier available.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">AI Chef Pro helps restaurant operators improve margins with menu engineering, recipe costing, and pricing optimization. Starter plan: €10/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a></div>
 <h2>How to Calculate Your Restaurant Profit Margin</h2>
 <p>Understanding the formulas behind profit margin calculation allows operators to accurately assess their current financial position and identify specific areas for improvement.</p>
@@ -325,7 +325,7 @@ imageAlt: "Restaurant owner reviewing financial reports and profit margin charts
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Calculate Your Exact Restaurant Profit Margin in 90 Seconds</p>
 <p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro auto-calculates gross, operating and net margin from your sales and costs — plus recommends the menu changes that lift it 10-15%.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Pro Free →</a>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Try AI Chef Member for €10 →</a>
 </div>
 <h2>Restaurant Profit Margins by Country: USA, UK, India, Canada, Australia, Spain</h2>
 <p>Restaurant profit margins vary dramatically across global markets, driven by labor costs, tax structures, real estate prices, and consumer dining habits. Understanding these regional differences helps operators benchmark performance against peers in their specific market and identify opportunities for improvement. Whether you&#8217;re running a fine dining establishment in London or a quick-service restaurant in Mumbai, knowing where your margins stack up against local competitors is essential for strategic planning.</p>

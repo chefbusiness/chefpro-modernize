@@ -2,7 +2,7 @@
 title: "Reducir Mermas en tu Restaurante: Guía Anti-Desperdicio IA"
 description: "Reduce las mermas de tu restaurante con esta guía práctica: tipos de merma, fórmula para medirlas, acciones por partida y cómo la IA te ahorra miles al año."
 pubDate: 2026-03-15
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/reducir-mermas-restaurante-control-desperdicios-ia.jpg
 imageAlt: "Chef profesional pesando ingredientes en cocina moderna para control de mermas y desperdicios"
@@ -117,13 +117,13 @@ Lo que la IA no sustituye es tu criterio. La tecnología te da fotos precisas y 
 
 ## Cómo empezar hoy con AI Chef Pro
 
-Si después de leer este recorrido te queda claro que medir y actuar con datos es el camino, la parte práctica es muy simple. AI Chef Pro tiene un plan gratuito que te permite probar la plataforma sin meter tarjeta, con 3.000 créditos al mes para que trastees sin compromiso. A partir de ahí, los planes de pago son estos:
+Si después de leer este recorrido te queda claro que medir y actuar con datos es el camino, la parte práctica es muy simple. AI Chef Pro tiene un plan de entrada llamado AI Chef Miembro por 10 € al mes con 10.000 créditos, sin permanencia, para que trastees sin compromiso. A partir de ahí, los planes de pago son estos:
 
 - **Premium Pro**: 25 €/mes, con 85.000 créditos. Pensado para un restaurante independiente que quiere profesionalizar el control de mermas y escandallos.
 - **Plus**: 50 €/mes, que te da 175.000 créditos, ideal si manejas varios puntos de venta o un volumen alto de elaboraciones.
 - **Max**: 95 €/mes, con créditos ilimitados. Sí, ilimitados. Para grupos hosteleros o cocinas centrales que no quieren pisar el freno.
 - **Max Anual**: 950 €/año, la misma potencia ilimitada con ahorro anual.
 
-Con más de 70 agentes de IA especializados y 7 idiomas disponibles, todo funciona en español nativo, sin traducciones raras. Si quieres empezar a convertir las mermas en beneficio neto, [prueba la app aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mermas) y dale caña al plan gratuito. No necesitas cambiar de ERP ni poner tu cocina patas arriba: solo ganar el control que el ojo humano no puede mantener solo en el día a día.
+Con más de 70 agentes de IA especializados y 7 idiomas disponibles, todo funciona en español nativo, sin traducciones raras. Si quieres empezar a convertir las mermas en beneficio neto, [prueba la app aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=mermas) y dale caña al plan AI Chef Miembro. No necesitas cambiar de ERP ni poner tu cocina patas arriba: solo ganar el control que el ojo humano no puede mantener solo en el día a día.
 
 Reducir mermas en un restaurante nunca fue una moda ni una imposición externa. Es el nombre técnico que le damos a la disciplina de cocinar con respeto al producto y con inteligencia financiera. Medir sin excusas, aplicar medidas por partida y apoyarte en herramientas que te lean los datos sin fatiga es lo que marca la línea entre un local que sobrevive con ansiedad y uno que construye rentabilidad de verdad. Sin magia, sin humo.

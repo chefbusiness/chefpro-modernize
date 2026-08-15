@@ -837,7 +837,7 @@ wpId: 2612
 
 <div style="background-color: #1a1a1a; padding: 35px 25px; border-radius: 12px; margin: 40px 0; text-align: center; border: 3px solid #FFD700;">
 <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 26px; font-weight: bold;">🌟 Comienza tu Transformación Digital Hoy</h3>
-<p style="color: #ffffff; font-size: 17px; margin: 0 0 20px 0; line-height: 1.6;">Únete a más de 650 profesionales que ya utilizan AI Chef Pro para revolucionar sus cocinas. Prueba gratuita disponible.</p>
+<p style="color: #ffffff; font-size: 17px; margin: 0 0 20px 0; line-height: 1.6;">Únete a más de 650 profesionales que ya utilizan AI Chef Pro para revolucionar sus cocinas. Plan AI Chef Miembro desde 10 €/mes.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=ia-en-la-gestion-de-temperatura-emocional-en-restaurantes" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Acceder a AI Chef Pro</a>
 </div>
 

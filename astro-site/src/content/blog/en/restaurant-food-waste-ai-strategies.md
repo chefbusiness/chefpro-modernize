@@ -18,7 +18,7 @@ faq:
   - q: "What is the ROI of food waste reduction programs?"
     a: "Most restaurant food waste reduction programs achieve 150-300% ROI within the first year. A restaurant spending $50,000 monthly on food that reduces waste from 8% to 4% saves $24,000 annually—far exceeding the $5,000-$10,000 cost of implementing AI waste reduction tools. Additional benefits include improved sustainability, regulatory compliance, and enhanced staff engagement."
   - q: "Which AI tools help reduce restaurant food waste?"
-    a: "Leading AI tools for restaurant food waste reduction include Winnow and Leanpath (specialized waste tracking), AI Chef Pro (comprehensive suite of 75+ tools for demand forecasting, inventory, and analytics), and IoT temperature monitoring systems. The best results come from integrating multiple tools—AI Chef Pro offers this integrated approach with a free tier of 10 uses per month."
+    a: "Leading AI tools for restaurant food waste reduction include Winnow and Leanpath (specialized waste tracking), AI Chef Pro (comprehensive suite of 75+ tools for demand forecasting, inventory, and analytics), and IoT temperature monitoring systems. The best results come from integrating multiple tools—AI Chef Pro offers this integrated approach with AI Chef Member at €10/month."
   - q: "How do you track food waste in a restaurant?"
     a: "Track food waste by implementing a systematic approach: first, conduct a baseline waste audit weighing all waste over 7 days; second, categorize waste by type (prep, plate, spoilage); third, calculate cost-based waste percentage monthly; fourth, use AI waste tracking tools like Winnow or AI Chef Pro to automate logging and analysis; fifth, review weekly reports to identify trends and implement corrective actions."
 ---
@@ -272,8 +272,8 @@ faq:
 <h2>Frequently Asked Questions</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Ready to Transform Your Kitchen&#8217;s Waste Performance?</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join thousands of operators using AI to reduce food waste, lower costs, and boost profitability. Free tier available — 10 uses/month.</p>
-<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Start Free with AI Chef Pro →</a>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Join thousands of operators using AI to reduce food waste, lower costs, and boost profitability. AI Chef Member available — €10/month, 10,000 credits.</p>
+<p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Start with AI Chef Member →</a>
 </div>
 
 <h2>Conclusion</h2>
@@ -281,7 +281,7 @@ faq:
 <p>The numbers don&#8217;t lie. A 30% reduction in restaurant food waste is achievable within 6 months using the phased approach outlined here. On a $600K annual food budget, that translates to $18,000-$24,000 in annual savings—money that goes directly to your bottom line.</p>
 <p>But the benefits extend beyond finances. Every pound of food waste you prevent reduces environmental impact, supports community feeding programs, and demonstrates to customers that your restaurant takes sustainability seriously. In an era where consumers increasingly choose restaurants aligned with their values, waste reduction is a competitive advantage.</p>
 <p>AI Chef Pro offers the most comprehensive suite of AI tools specifically designed for restaurants. With over 55 tools covering demand forecasting, inventory management, prep optimization, and waste analytics, you have everything needed to achieve and exceed your waste reduction targets.</p>
-<p><strong>Ready to transform your restaurant&#8217;s waste performance?</strong> Start with AI Chef Pro&#8217;s free tier—10 uses per month to test the tools and see results. Visit <a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a> to explore the full suite and begin your waste reduction journey today.</p>
+<p><strong>Ready to transform your restaurant&#8217;s waste performance?</strong> Start with AI Chef Member—€10/month with 10,000 credits to test the tools and see results. Visit <a href="https://aichef.pro/en" target="_blank" rel="noopener">https://aichef.pro/en</a> to explore the full suite and begin your waste reduction journey today.</p>
 <hr style="margin: 48px 0;" />
 <h2>Related Reading</h2>
 <ul>

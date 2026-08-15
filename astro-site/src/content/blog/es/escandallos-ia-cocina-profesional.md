@@ -2,7 +2,7 @@
 title: "Escandallo de Cocina: Guía Paso a Paso con Ejemplo"
 description: "Qué es un escandallo de cocina y cómo se hace paso a paso: ejemplo numérico completo, tabla de mermas, errores típicos y cómo automatizarlo con IA."
 pubDate: 2026-03-13
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/escandallo-cocina-profesional-ia-chef-calculando-costes.jpg
 imageAlt: "Chef profesional calculando escandallos con IA en cocina de restaurante Madrid"
@@ -111,7 +111,7 @@ Ahora bien, ese 30% no es una verdad absoluta. Según el tipo de restaurante y e
 | 30% | 14,30 € | 10,01 € |
 | 35% | 12,26 € | 7,97 € |
 
-Bajar el food cost al 25% dispara el precio a 17,16 € y deja 12,87 € de margen, pero puede sacarte del mercado si tu clientela no percibe ese valor. Subirlo al 35% baja el precio a 12,26 €, pero recortas notablemente el margen. La decisión no es solo matemática: tienes que equilibrar margen, percepción de precio y lo que tu competencia directa ofrece. Para profundizar en el cálculo y ver cómo la IA puede simplificarlo, tienes [una guía práctica sobre cómo calcular el costo de una receta](https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia). Y si necesitas hacer números rápido sin depender de hojas de cálculo propensas a errores, prueba [la calculadora de food cost gratuita](https://aichef.pro/calculadora-food-cost-restaurante).
+Bajar el food cost al 25% dispara el precio a 17,16 € y deja 12,87 € de margen, pero puede sacarte del mercado si tu clientela no percibe ese valor. Subirlo al 35% baja el precio a 12,26 €, pero recortas notablemente el margen. La decisión no es solo matemática: tienes que equilibrar margen, percepción de precio y lo que tu competencia directa ofrece. Para profundizar en el cálculo y ver cómo la IA puede simplificarlo, tienes [una guía práctica sobre cómo calcular el costo de una receta](https://aichef.pro/blog/como-calcular-el-costo-de-una-receta-facil-con-la-ia). Y si necesitas hacer números rápido sin depender de hojas de cálculo propensas a errores, prueba [la calculadora de food cost](https://aichef.pro/calculadora-food-cost-restaurante).
 
 ## Errores Típicos que se Comen tu Beneficio
 
@@ -141,17 +141,17 @@ En AI Chef Pro hemos desarrollado un ecosistema de más de 70 agentes de IA culi
 
 ### Planes y Precios de AI Chef Pro
 
-Antes de decidir nada, puedes empezar con el plan gratuito, sin tarjeta, y ver si la herramienta encaja en tu operativa. Todos los planes incluyen acceso a los agentes de IA, pero la capacidad de uso varía según los créditos mensuales.
+Antes de decidir nada, puedes empezar con el plan AI Chef Miembro, por 10 € al mes, y ver si la herramienta encaja en tu operativa. Todos los planes incluyen acceso a los agentes de IA, pero la capacidad de uso varía según los créditos mensuales.
 
 | Plan | Precio | Créditos/mes |
 | :--- | :---: | :--- |
-| Gratuito | 0 € (sin tarjeta) | 3.000 |
+| AI Chef Miembro | 10 €/mes | 10.000 |
 | Premium Pro | 25 €/mes | 85.000 |
 | Plus | 50 €/mes | 175.000 |
 | Max | 95 €/mes | Ilimitados |
 | Max Anual | 950 €/año | Ilimitados |
 
-Los créditos ilimitados son exclusivos del plan Max y Max Anual. Si tu volumen de trabajo es alto, la opción anual te da margen de sobra sin preocuparte por el contador. Para empezar gratis y probar los escandallos automatizados, solo tienes que [acceder a la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=escandallos).
+Los créditos ilimitados son exclusivos del plan Max y Max Anual. Si tu volumen de trabajo es alto, la opción anual te da margen de sobra sin preocuparte por el contador. Para empezar con el plan AI Chef Miembro y probar los escandallos automatizados, solo tienes que [acceder a la aplicación](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=escandallos).
 
 ## Preguntas que Deberías Hacerte Antes de Fijar tu Carta
 

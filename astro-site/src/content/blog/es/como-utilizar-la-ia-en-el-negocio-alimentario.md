@@ -891,8 +891,8 @@ wpId: 2113
 
 <div style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); padding: 35px; margin: 40px 0; border-radius: 10px; text-align: center;">
 <h3 style="color: #000000; margin-top: 0; font-size: 26px;">🍳 Comienza Tu Transformación Digital Hoy</h3>
-<p style="color: #333333; font-size: 17px; margin-bottom: 25px;">Únete a miles de profesionales de la hostelería que ya están aprovechando el poder de la IA para optimizar sus negocios. Acceso gratuito a herramientas profesionales sin compromiso.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 20px;">Empieza Gratis con AI Chef Pro</a>
+<p style="color: #333333; font-size: 17px; margin-bottom: 25px;">Únete a miles de profesionales de la hostelería que ya están aprovechando el poder de la IA para optimizar sus negocios. Acceso de pago a herramientas profesionales sin compromiso.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=como-utilizar-la-ia-en-el-negocio-alimentario" target="_blank" style="display: inline-block; background-color: #000000; color: #FFD700; padding: 18px 50px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 20px;">Empieza con AI Chef Pro desde 10€</a>
 </div>
 
 

@@ -121,7 +121,7 @@ La inteligencia artificial no hace magia. No te va a traer clientes ni va a coci
 
 A modo de ejemplo orientativo, una cocina que implanta un control semanal basado en datos podría pasar de un margen neto de un solo dígito a otro cercano al 14% en unos meses; los resultados varían según cada negocio. Y la IA hace ese trabajo pesado por ti.
 
-En AI Chef Pro tienes más de 70 agentes de IA culinarios que trabajan exactamente en esto: escandallos automáticos, fichas técnicas, predicción de inventario y optimización de carta. Todo en español nativo y en 7 idiomas. Puedes empezar con el plan gratuito de 3.000 créditos al mes, sin tarjeta, y comprobar si te sirve para tapar esas fugas de margen antes de comprometerte. Si luego necesitas más, el plan Premium Pro cuesta 25 € al mes (85.000 créditos) y el Plus 50 € al mes (175.000 créditos). Para uso intensivo, el plan Max ofrece créditos ilimitados por 95 € al mes o 950 € al año. Pero la clave no es la herramienta: es la disciplina de usarla cada semana para tomar decisiones.
+En AI Chef Pro tienes más de 70 agentes de IA culinarios que trabajan exactamente en esto: escandallos automáticos, fichas técnicas, predicción de inventario y optimización de carta. Todo en español nativo y en 7 idiomas. Puedes empezar con el plan AI Chef Miembro de 10.000 créditos al mes por 10 €, sin permanencia, y comprobar si te sirve para tapar esas fugas de margen antes de comprometerte. Si luego necesitas más, el plan Premium Pro cuesta 25 € al mes (85.000 créditos) y el Plus 50 € al mes (175.000 créditos). Para uso intensivo, el plan Max ofrece créditos ilimitados por 95 € al mes o 950 € al año. Pero la clave no es la herramienta: es la disciplina de usarla cada semana para tomar decisiones.
 
 
 

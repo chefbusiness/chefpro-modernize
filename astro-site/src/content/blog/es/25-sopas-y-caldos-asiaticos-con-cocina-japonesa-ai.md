@@ -35,7 +35,7 @@ wpId: 2147
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 12px; padding: 30px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 <h3 style="color: #ffd700; margin: 0 0 15px 0; font-size: 24px;">🍜 Domina la Cocina Japonesa con IA</h3>
 <p style="color: #ffffff; margin: 0 0 20px 0; font-size: 16px; line-height: 1.6;">Accede a Cocina Japonesa AI y más de 55 herramientas especializadas para profesionales de la hostelería</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank" style="display: inline-block; background: #ffd700; color: #1a1a2e; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Probar AI Chef Pro Gratis</a>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank" style="display: inline-block; background: #ffd700; color: #1a1a2e; padding: 14px 35px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease;">Probar AI Chef Pro Miembro</a>
 </div>
 
 
@@ -1049,7 +1049,7 @@ Este ramen rinde homenaje a las tradiciones de Hakata, donde los puestos calleje
 
 
 <ol class="wp-block-list">
-<li><strong>Crea tu cuenta gratuita:</strong> Regístrate en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">aichef.pro</a> y accede a las funcionalidades básicas sin coste.</li>
+<li><strong>Crea tu cuenta Miembro:</strong> Regístrate en <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=25-sopas-y-caldos-asiaticos-con-cocina-japonesa-ai" target="_blank">aichef.pro</a> y accede a las funcionalidades básicas sin coste.</li>
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Calculadora de Food Cost: Comparativa 2026 con IA y Excel"
-description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, gratis."
+description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, de pago."
 pubDate: 2026-03-20
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -15,17 +15,17 @@ faq:
     a: "Depende del tipo de negocio. En 2026, el fast food se mueve entre el 25-30 %, el casual dining entre el 28-35 %, el fine dining puede llegar al 40 % por usar materia prima premium, y las pizzerías rondan el 20-28 %. Por encima del 35 % de media, el margen se resiente y toca revisar precios, proveedores o recetas."
   - q: "¿Me basta con Excel para calcular el food cost?"
     a: "Sí, si tienes una carta corta y estable, actualizas precios una vez al mes y solo una persona mantiene la plantilla. Excel es gratis y flexible. Pero se queda corto cuando manejas muchas referencias, necesitas calcular mermas reales, los precios cambian cada semana o varias personas tocan los datos."
-  - q: "¿La calculadora de food cost de AI Chef Pro es gratis?"
-    a: "Sí, AI Chef Pro tiene un plan gratuito con 3.000 créditos al mes, sin necesidad de tarjeta. Es suficiente para probar la herramienta y calcular varios escandallos completos. Si necesitas más capacidad, los planes de pago empiezan en 25 € al mes con 85.000 créditos."
+  - q: "¿La calculadora de food cost de AI Chef Pro es de pago?"
+    a: "Sí, AI Chef Pro tiene un plan de entrada 'AI Chef Miembro' con 10.000 créditos al mes por 10 €, con tarjeta. Es suficiente para probar la herramienta y calcular varios escandallos completos. Si necesitas más capacidad, los planes de pago empiezan en 25 € al mes con 85.000 créditos."
   - q: "¿Qué diferencia hay entre una calculadora de food cost y un escandallo?"
     a: "La calculadora de food cost te da el porcentaje que representa la materia prima sobre el precio de venta. El escandallo es el documento completo que desglosa cada ingrediente con su cantidad, precio unitario, merma y coste final por ración. La calculadora usa los datos del escandallo para obtener el porcentaje final."
   - q: "¿Cuántos créditos gasta calcular un escandallo en AI Chef Pro?"
-    a: "El consumo exacto depende del número de ingredientes y de la complejidad de la receta, pero cada cálculo gasta solo una pequeña parte de tu saldo mensual. Con los 3.000 créditos del plan gratuito puedes generar varios escandallos completos con su ficha técnica para probar la herramienta antes de decidir si necesitas un plan de pago."
+    a: "El consumo exacto depende del número de ingredientes y de la complejidad de la receta, pero cada cálculo gasta solo una pequeña parte de tu saldo mensual. Con los 10.000 créditos del plan AI Chef Miembro puedes generar varios escandallos completos con su ficha técnica para probar la herramienta antes de decidir si necesitas un plan de pago."
 ---
 
 Lo reconozco: he pasado más horas delante de una hoja de cálculo que delante de un horno. Y no me enorgullece. Durante años, calcular el food cost ha sido ese trámite tedioso que nos roba tiempo de cocina, de creatividad, de estar en el pase. Una calculadora de food cost no hace magia, pero automatiza lo que antes hacíamos a mano con más o menos acierto: saber cuánto nos cuesta de verdad cada plato.
 
-¿El veredicto rápido? Si trabajas con una carta corta y estable, con precios de proveedor que apenas se mueven, una hoja de cálculo bien montada te saca del apuro. Pero en cuanto creces en referencias, manejas mermas reales, tienes varios locales o los precios bailan cada semana, una calculadora con IA te ahorra horas y errores que salen caros. En esta comparativa te cuento qué opciones hay en 2026, incluida la calculadora gratuita de AI Chef Pro (3.000 créditos al mes, sin tarjeta), para que decidas con criterio.
+¿El veredicto rápido? Si trabajas con una carta corta y estable, con precios de proveedor que apenas se mueven, una hoja de cálculo bien montada te saca del apuro. Pero en cuanto creces en referencias, manejas mermas reales, tienes varios locales o los precios bailan cada semana, una calculadora con IA te ahorra horas y errores que salen caros. En esta comparativa te cuento qué opciones hay en 2026, incluida la calculadora de pago de AI Chef Pro (10.000 créditos al mes, con tarjeta), para que decidas con criterio.
 
 
 
@@ -97,7 +97,7 @@ He probado y visto en acción bastantes herramientas. No voy a hacer leña del �
 
 | Herramienta | Tipo | IA / mermas | Idioma español | Coste (orientativo) |
 | :--- | :--- | :--- | :--- | :--- |
-| AI Chef Pro (calculadora de food cost / escandallos) | Suite de agentes IA | Sí (IA + mermas) | Nativo | Plan gratis 3.000 créditos/mes, de pago desde 25 €/mes |
+| AI Chef Pro (calculadora de food cost / escandallos) | Suite de agentes IA | Sí (IA + mermas) | Nativo | Plan AI Chef Miembro 10.000 créditos/mes (10 €/mes), y Pro desde 25 €/mes |
 | Hoja de cálculo (Excel / Google Sheets) | Manual | No | Depende de la plantilla | Gratis |
 | Software de gestión integral (tipo ERP hostelero) | Suite completa | Parcial | Variable | Gama alta (contrato anual habitual) |
 | Apps móviles de food cost | App puntual | No | Variable | Freemium |
@@ -108,7 +108,7 @@ Vamos a hablar claro de cada categoría, sin edulcorantes.
 
 **Hoja de cálculo (Excel / Google Sheets).** La vieja confiable. Ventajas: gratis, ubicua, la conoces de sobra. Inconvenientes: todo es manual, no calcula mermas automáticamente, los errores de fórmula son frecuentes y difíciles de detectar, y compartirla entre varias personas es un dolor de cabeza. Para una carta pequeña y estable, cumple.
 
-**Apps móviles de food cost.** Suelen ser freemium: empiezas gratis y, cuando superas el número de recetas o informes que permite su plan gratuito, pasas por caja. La mayoría no incluyen IA ni gestión de mermas. Son decentes para food trucks o negocios muy pequeños con pocas referencias.
+**Apps móviles de food cost.** Suelen ser por suscripción: empiezas con el plan AI Chef Miembro (10€/mes) y, cuando superas los 10.000 créditos, pasas a un plan superior. La mayoría no incluyen IA ni gestión de mermas. Son decentes para food trucks o negocios muy pequeños con pocas referencias.
 
 **Plataformas de compras/inventario.** Su foco es la gestión de compras y stock, no el escandallo puro. Algunas incluyen cálculo de food cost, pero suelen ser módulos añadidos, no el núcleo de la herramienta. Útiles si ya tienes digitalizada la relación con proveedores.
 
@@ -128,13 +128,13 @@ Además, genera automáticamente el **escandallo completo** y la **ficha técnic
 
 ¿Qué más aporta respecto a otras opciones? Pertenece a una suite de más de 70 agentes de IA culinarios, en 7 idiomas con español nativo. Esto significa que no es una herramienta aislada: puedes calcular el food cost, generar la ficha técnica, diseñar la carta, planificar menús y analizar márgenes desde un mismo ecosistema. Si quieres explorar qué más pueden hacer estas herramientas por tu cocina, échale un ojo a [las mejores IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026).
 
-Y sí, hay [plan gratuito](https://aichef.pro/calculadora-food-cost-restaurante) con 3.000 créditos al mes, sin necesidad de tarjeta. Suficiente para probar, hacer tus primeros escandallos y decidir si encaja en tu operativa.
+Y sí, hay [plan AI Chef Miembro](https://aichef.pro/calculadora-food-cost-restaurante) con 10.000 créditos al mes, con tarjeta. Suficiente para probar, hacer tus primeros escandallos y decidir si encaja en tu operativa.
 
 
 
 ## Planes y precios de AI Chef Pro (2026)
 
-Si después de probar el plan gratuito ves que la herramienta te encaja, estos son los planes disponibles en 2026:
+Si después de probar el plan AI Chef Miembro ves que la herramienta te encaja, estos son los planes disponibles en 2026:
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
@@ -144,7 +144,7 @@ Si después de probar el plan gratuito ves que la herramienta te encaja, estos s
 | Max | 95 €/mes | Ilimitados | Grupos, cadenas o consultores gastronómicos. |
 | Max Anual | 950 €/año | Ilimitados | Máximo ahorro para uso intensivo todo el año. |
 
-Mi consejo: empieza por el plan gratuito. Dedícale una tarde a montar los escandallos de tus platos más representativos y comprueba si el flujo de trabajo te agiliza la operativa. Si la respuesta es sí, el Premium Pro cubre de sobra las necesidades de la mayoría de restaurantes independientes. [Empieza gratis aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadoras-food-cost).
+Mi consejo: empieza por el plan AI Chef Miembro. Dedícale una tarde a montar los escandallos de tus platos más representativos y comprueba si el flujo de trabajo te agiliza la operativa. Si la respuesta es sí, el Premium Pro cubre de sobra las necesidades de la mayoría de restaurantes independientes. [Empieza aquí](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=calculadoras-food-cost).
 
 ## Conclusión: elige según el tamaño de tu cocina, no según la moda
 

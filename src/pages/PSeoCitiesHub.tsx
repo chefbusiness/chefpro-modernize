@@ -191,12 +191,12 @@ const PSeoCitiesHub = () => {
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             AI Chef Pro tiene +30 herramientas de IA específicas para hostelería + 26 productos digitales descargables.
-            Pruébalo gratis sin tarjeta.
+            Pruébalo con el plan Miembro (10 €/mes).
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link to="/herramientas-ia-para-restaurantes">
-                Probar AI Chef Pro Gratis <ArrowRight className="ml-2 h-5 w-5" />
+                Probar AI Chef Pro <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">

@@ -1,6 +1,6 @@
 ---
 title: "Asistentes Virtuales para Cocinas: Tu Copiloto IA 2026"
-description: "Guía de asistentes virtuales para cocinas: qué son, los 3 tipos, qué delegar y qué no, y cómo empezar gratis con AI Chef Pro y sus +70 agentes IA."
+description: "Guía de asistentes virtuales para cocinas: qué son, los 3 tipos, qué delegar y qué no, y cómo empezar con AI Chef Pro y sus +70 agentes IA.”"
 pubDate: 2025-03-02
 modDate: 2026-08-15
 category: ia-en-gastronomia
@@ -18,7 +18,7 @@ faq:
   - q: "¿Sustituye un asistente virtual al chef?"
     a: "No. La inteligencia artificial acelera el trabajo administrativo y creativo de borrador, pero el criterio sensorial, la cata, la firma del plan APPCC y la gestión del equipo son responsabilidad humana. El asistente es un apoyo que libera horas para que el chef se centre en lo que solo él puede hacer."
   - q: "¿Cuánto cuesta empezar con un asistente virtual de cocina?"
-    a: "En AI Chef Pro puedes empezar sin coste con el plan gratuito, que incluye 3.000 créditos al mes y no requiere tarjeta. Si necesitas más capacidad, los planes de pago van desde 25 € al mes (85.000 créditos) hasta 95 € al mes con créditos ilimitados. El coste se adapta al uso real."
+    a: "En AI Chef Pro puedes empezar con el plan AI Chef Miembro por 10 € al mes, que incluye 10.000 créditos y se paga con tarjeta.” Si necesitas más capacidad, los planes de pago van desde 25 € al mes (85.000 créditos) hasta 95 € al mes con créditos ilimitados. El coste se adapta al uso real."
   - q: "¿En qué idiomas funciona un asistente virtual de cocina?"
     a: "AI Chef Pro trabaja en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. Los agentes están redactados en español nativo y entienden las particularidades gastronómicas de cada lengua, lo que facilita la traducción de cartas y la comunicación con equipos internacionales."
 ---
@@ -160,11 +160,11 @@ La columna derecha no es magia: es el resultado de eliminar el trabajo mecánico
 Montar un asistente virtual no requiere ser informático ni cambiar tu forma de trabajar de golpe. Con estos cuatro pasos reduces la fricción al mínimo y empiezas a ver resultados en días.
 
 1. **Elige una sola tarea que te robe tiempo cada semana.** La carta nueva, los escandallos de la temporada, las fichas de alérgenos o la comida de personal. Una, no todas.
-2. **Prueba un asistente especializado con el plan gratuito.** AI Chef Pro, por ejemplo, te da 3.000 créditos al mes sin pedir tarjeta. Con eso puedes hacer varias rondas de escandallos, traducir la carta o generar fichas de alérgenos y ver si el flujo te encaja.
+2. **Prueba un asistente especializado con el plan AI Chef Miembro.** AI Chef Pro, por ejemplo, te da 3.000 créditos al mes sin pedir tarjeta. Con eso puedes hacer varias rondas de escandallos, traducir la carta o generar fichas de alérgenos y ver si el flujo te encaja.
 3. **Mide el tiempo ahorrado.** Compara cuánto tardabas antes y cuánto tardas ahora, incluyendo la revisión. La diferencia suele ser de horas.
 4. **Amplía a más tareas cuando te sientas cómodo.** Una vez que dominas una, añades otra. En pocas semanas el asistente se vuelve parte natural de tu rutina de oficina.
 
-AI Chef Pro está diseñado exactamente para ese arranque sin fricción: más de 70 agentes de IA culinarios que trabajan en español nativo y en otros seis idiomas (inglés, francés, alemán, italiano, portugués y neerlandés). Cada agente está afinado para una tarea concreta —escandallos, alérgenos, mermas, creatividad, local SEO de platos— de modo que no tengas que explicarle a la máquina qué es una merma o cómo se calcula una ración. Si quieres probarlo hoy, puedes crear tu cuenta gratuita en [app.aichef.pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=asistentes). Sin tarjeta, sin compromiso.
+AI Chef Pro está diseñado exactamente para ese arranque sin fricción: más de 70 agentes de IA culinarios que trabajan en español nativo y en otros seis idiomas (inglés, francés, alemán, italiano, portugués y neerlandés). Cada agente está afinado para una tarea concreta —escandallos, alérgenos, mermas, creatividad, local SEO de platos— de modo que no tengas que explicarle a la máquina qué es una merma o cómo se calcula una ración. Si quieres probarlo hoy, puedes crear tu cuenta con el plan AI Chef Miembro en [app.aichef.pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=asistentes). Con tarjeta, sin compromiso.
 
 ## Cuánto Cuesta: Planes y Créditos
 
@@ -178,8 +178,8 @@ El modelo de AI Chef Pro se basa en créditos: cada tarea que lanzas a un agente
 | Max | **Ilimitados** | 95 € |
 | Max Anual | Ilimitados | 950 €/año |
 
-El plan gratuito permite explorar sin riesgo. Para una cocina profesional que use el asistente varias veces por semana, el Premium Pro suele cubrir con holgura las tareas habituales: escandallos de la carta completa, fichas de alérgenos, planificación de menús de personal y traducciones de carta caben sin problema en los 85.000 créditos mensuales. Si el volumen de trabajo es alto o compartes cuenta con el equipo —por ejemplo, un restaurante grande con jefe de cocina y segundo usando el asistente a diario—, el plan Max da tranquilidad total con créditos ilimitados.
+El plan AI Chef Miembro permite explorar sin riesgo. Para una cocina profesional que use el asistente varias veces por semana, el Premium Pro suele cubrir con holgura las tareas habituales: escandallos de la carta completa, fichas de alérgenos, planificación de menús de personal y traducciones de carta caben sin problema en los 85.000 créditos mensuales. Si el volumen de trabajo es alto o compartes cuenta con el equipo —por ejemplo, un restaurante grande con jefe de cocina y segundo usando el asistente a diario—, el plan Max da tranquilidad total con créditos ilimitados.
 
-El modelo de pago por uso real evita la sensación de estar pagando una licencia que no aprovechas. En temporada alta, cuando el movimiento lo justifica, consumes más. En semanas de menor actividad, el consumo baja. Y el plan gratuito te permite probar sin meter la tarjeta ni comprometerte a nada.
+El modelo de pago por uso real evita la sensación de estar pagando una licencia que no aprovechas. En temporada alta, cuando el movimiento lo justifica, consumes más. En semanas de menor actividad, el consumo baja. Y el plan AI Chef Miembro te permite probar con tarjeta pero sin comprometerte a nada.
 
-Si todavía tienes dudas sobre qué IA encaja mejor en tu restaurante, échale un vistazo a la [guía de las mejores IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026). Y si quieres empezar a delegar tareas esta misma semana, la opción más rápida es abrir una cuenta gratuita en AI Chef Pro y poner a trabajar el primer agente. Sin instalaciones, sin tarjetas, sin letra pequeña. Tú cocinas; el copiloto se encarga del resto.
+Si todavía tienes dudas sobre qué IA encaja mejor en tu restaurante, échale un vistazo a la [guía de las mejores IA para restaurantes en 2026](https://aichef.pro/blog/mejores-ia-restaurantes-2026). Y si quieres empezar a delegar tareas esta misma semana, la opción más rápida es abrir una cuenta con el plan AI Chef Miembro en AI Chef Pro y poner a trabajar el primer agente. Sin instalaciones, con tarjeta, sin letra pequeña. Tú cocinas; el copiloto se encarga del resto.

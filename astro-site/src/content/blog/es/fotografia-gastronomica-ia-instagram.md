@@ -149,4 +149,4 @@ AI Chef Pro es una suite con más de 70 agentes de inteligencia artificial cread
 - **Max**: 95 €/mes con créditos ilimitados.
 - **Max Anual**: 950 €/año.
 
-Si quieres probar cómo la IA puede acelerar tu flujo de fotografía y publicación sin desvirtuar tus platos, [empieza gratis en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=foto-gastro).
+Si quieres probar cómo la IA puede acelerar tu flujo de fotografía y publicación sin desvirtuar tus platos, [empieza con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=foto-gastro).

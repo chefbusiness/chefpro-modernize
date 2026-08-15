@@ -2,7 +2,7 @@
 title: "Gestión de Inventario Restaurante con IA: Guía 2026"
 description: "Guía práctica de gestión de inventario en restaurantes con IA: conteos, PMP, rotación, pedidos sugeridos y escandallos. Con tabla de KPIs y proceso semanal."
 pubDate: 2026-03-13
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/gestion-inventario-restaurante-ia-chef-tablet.jpg
 imageAlt: "Chef profesional gestionando inventario con tablet en cocina de restaurante moderno"
@@ -17,8 +17,8 @@ faq:
     a: "Se calcula dividiendo el coste de la mercancía consumida entre el inventario medio. Para frescos, una rotación de 15 a 25 veces al mes es sana; para secos, de 4 a 8 veces. Una rotación baja indica dinero parado y riesgo de caducidad."
   - q: "¿La IA sustituye al jefe de cocina en los pedidos?"
     a: "No. La IA sugiere el pedido óptimo a partir del consumo real, el lead time de cada proveedor y el stock de seguridad. El chef revisa la propuesta, la ajusta según su criterio (eventos, cambios de carta) y la aprueba. La decisión final sigue siendo humana."
-  - q: "¿Puedo empezar gratis con la gestión de inventario con IA?"
-    a: "Sí, con el plan gratuito de AI Chef Pro dispones de 3.000 créditos al mes sin tarjeta. Puedes probar el conteo asistido, el cálculo de PMP y el pedido sugerido para convencerte de que la IA no es un gasto, sino una inversión en margen."
+  - q: "¿Puedo empezar con la gestión de inventario con IA con el plan AI Chef Miembro?"
+    a: "Sí, con el plan AI Chef Miembro de AI Chef Pro dispones de 10.000 créditos al mes por 10 €, con tarjeta y sin permanencia. Puedes probar el conteo asistido, el cálculo de PMP y el pedido sugerido para convencerte de que la IA no es un gasto, sino una inversión en margen."
   - q: "¿Cómo conecta el inventario con los escandallos de los platos?"
     a: "Cada ingrediente del escandallo toma su coste del PMP calculado en el inventario. Cuando actualizas el inventario tras una recepción, el coste de todos los platos que usan ese ingrediente se recalcula automáticamente. Así el food cost teórico siempre está al día."
 ---
@@ -177,10 +177,10 @@ Aquí no hay módulos sueltos: el inventario se conecta con los escandallos, los
 
 Los planes, sin letra pequeña:
 
-- **Plan gratuito:** 3.000 créditos al mes, sin tarjeta de crédito.
+- **AI Chef Miembro:** 10.000 créditos al mes, 10 €/mes, con tarjeta y sin permanencia.
 - **Premium Pro:** 25 €/mes con 85.000 créditos.
 - **Plus:** 50 €/mes con 175.000 créditos.
 - **Max:** 95 €/mes con créditos ilimitados.  
 - **Max Anual:** 950 €/año (el mismo plan Max con descuento).
 
-Si llevas años peleándote con hojas de cálculo o con softwares que no hablan el idioma de la cocina, puedes [empezar gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inventario) y probar el inventario con tres catas: un conteo, un escandallo y un pedido sugerido. Sin compromiso.
+Si llevas años peleándote con hojas de cálculo o con softwares que no hablan el idioma de la cocina, puedes [empezar con AI Chef Miembro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=inventario) y probar el inventario con tres catas: un conteo, un escandallo y un pedido sugerido. Sin compromiso.

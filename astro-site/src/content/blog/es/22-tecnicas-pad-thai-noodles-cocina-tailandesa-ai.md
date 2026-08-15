@@ -933,7 +933,7 @@ wpId: 2141
 
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); padding: 35px 25px; border-radius: 12px; margin: 40px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
 <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 26px; font-weight: bold;">🥢 Comienza Tu Transformación Culinaria Hoy</h3>
-<p style="color: #fff; margin: 0 0 25px 0; font-size: 17px; line-height: 1.7;">Únete a miles de chefs profesionales que ya utilizan AI Chef Pro para revolucionar sus cocinas. Acceso gratuito inmediato a herramientas de inteligencia artificial diseñadas específicamente para la gastronomía.</p>
+<p style="color: #fff; margin: 0 0 25px 0; font-size: 17px; line-height: 1.7;">Únete a miles de chefs profesionales que ya utilizan AI Chef Pro para revolucionar sus cocinas. Acceso inmediato con el plan AI Chef Miembro (10€/mes) a herramientas de inteligencia artificial diseñadas específicamente para la gastronomía.</p>
 <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=recetario-pro-ai&#038;utm_content=22-tecnicas-pad-thai-noodles-cocina-tailandesa-ai" target="_blank" style="display: inline-block; background-color: #FFD700; color: #1a1a1a; padding: 16px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 18px;">Crear Cuenta en AI Chef Pro</a>
 </div>
 

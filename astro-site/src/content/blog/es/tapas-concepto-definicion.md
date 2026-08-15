@@ -2,7 +2,7 @@
 title: "Tapas: Concepto y Definición"
 description: "Descubre qué son las tapas: origen con Alfonso X el Sabio, historia, tapas clásicas (tortilla, bravas, croquetas), regionalismo español y cultura del tapeo…"
 pubDate: 2026-03-13
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/03/tapas-featured.jpg
 imageAlt: "Tapas: Concepto y Definición"
@@ -172,7 +172,7 @@ wpId: 3216
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Crea Tapas con AI Chef Pro</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">     55+ herramientas de IA para recetas de tapas clásicas y modernas.<br />     Desde tortilla hasta deconstrucciones vanguardistas.   </p>
-<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=tapas-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR GRATIS AHORA →   </a>   </p>
-<p style="color: #888; font-size: 12px; margin-top: 10px;">     Sin tarjeta de crédito • 48.733+ recetas generadas   </p>
+<p>   <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=tapas-concepto-definicion" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">     PROBAR AI CHEF MIEMBRO →   </a>   </p>
+<p style="color: #888; font-size: 12px; margin-top: 10px;">     Con tarjeta desde el alta • 48.733+ recetas generadas   </p>
 </p></div>
 <p><strong>¿Quieres dominar el arte de las tapas?</strong> Descubre más en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=tapas-concepto-definicion">AI Chef Pro</a>.</p>

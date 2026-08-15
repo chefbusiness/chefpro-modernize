@@ -887,8 +887,8 @@ wpId: 2021
 <div style="background: linear-gradient(135deg, #00b894 0%, #00cec9 100%); border-radius: 12px; padding: 30px 25px; margin: 35px 0; text-align: center; box-shadow: 0 8px 25px rgba(0, 184, 148, 0.4);">
 <p style="color: #ffffff; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; margin: 0 0 10px 0;">Comienza Hoy</p>
 <h3 style="color: #ffffff; font-size: 26px; margin: 0 0 15px 0; font-weight: 700;">Transforma Tu Próximo Festival Gastronómico</h3>
-<p style="color: #e0f7fa; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a los miles de profesionales de la hostelería que ya utilizan AI Chef Pro para optimizar sus eventos. Prueba gratis y descubre el poder de la IA aplicada a la gastronomía.</p>
-<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank" style="display: inline-block; background-color: #ffffff; color: #00b894; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">Probar AI Chef Pro Gratis</a>
+<p style="color: #e0f7fa; font-size: 16px; margin: 0 0 25px 0; line-height: 1.6;">Únete a los miles de profesionales de la hostelería que ya utilizan AI Chef Pro para optimizar sus eventos. Prueba y descubre el poder de la IA aplicada a la gastronomía.</p>
+<a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-en-la-gestion-de-festivales-gastronomicos" target="_blank" style="display: inline-block; background-color: #ffffff; color: #00b894; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">Probar AI Chef Pro</a>
 </div>
 
 
@@ -951,7 +951,7 @@ wpId: 2021
 
 
 
-<p class="wp-block-paragraph">La inversión varía según la escala del evento y las herramientas seleccionadas. Con AI Chef Pro, puedes comenzar desde 0€ con el plan gratuito para eventos pequeños, o desde 10€/mes para acceso completo. Para eventos de gran escala, la inversión típica en tecnología representa entre el 2% y el 5% del presupuesto total del evento, con retornos que frecuentemente superan el 1000%.</p>
+<p class="wp-block-paragraph">La inversión varía según la escala del evento y las herramientas seleccionadas. Con AI Chef Pro, puedes comenzar desde 10€/mes con el plan AI Chef Miembro, o desde 25€/mes para acceso completo. Para eventos de gran escala, la inversión típica en tecnología representa entre el 2% y el 5% del presupuesto total del evento, con retornos que frecuentemente superan el 1000%.</p>
 
 
 

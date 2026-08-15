@@ -893,7 +893,7 @@ wpId: 2153
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); border-radius: 16px; padding: 40px 30px; margin: 40px 0; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.3); border: 2px solid #FFD700;">
 <p style="color: #FFD700; font-size: 14px; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px; font-weight: 600;">🎯 Tu Cocina, Tu Éxito</p>
 <h3 style="color: #ffffff; font-size: 28px; margin-bottom: 15px; font-weight: 700; line-height: 1.3;">Transforma tu Cocina Profesional con AI Chef Pro</h3>
-<p style="color: #b8c5d6; font-size: 17px; margin-bottom: 25px; line-height: 1.7;">Accede a más de 55 herramientas de inteligencia artificial diseñadas específicamente para chefs, cocineros y profesionales de la hostelería. Desde planes gratuitos hasta opciones premium con uso ilimitado.</p>
+<p style="color: #b8c5d6; font-size: 17px; margin-bottom: 25px; line-height: 1.7;">Accede a más de 55 herramientas de inteligencia artificial diseñadas específicamente para chefs, cocineros y profesionales de la hostelería. Desde el plan AI Chef Miembro hasta opciones premium con uso ilimitado.</p>
 <a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ia-en-gastronomia&#038;utm_content=packaging-gastronomico-ia" target="_blank" style="display: inline-block; background: linear-gradient(90deg, #FFD700, #FFA500); color: #1a1a2e; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 17px; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);">Ver Planes y Precios</a>
 </div>
 

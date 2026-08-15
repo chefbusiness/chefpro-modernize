@@ -11,8 +11,8 @@ wpId: 2212
 faq:
   - q: "¿La IA va a sustituir a mis camareros o al cocinero?"
     a: "No. La IA no sirve mesas ni cocina. Es una herramienta de cálculo y organización que te ayuda a decidir mejor: escandallar tapas, cuadrar turnos o escribir publicaciones para redes. El trato con el cliente, el ojo en la barra y la mano en la cocina siguen siendo humanos. La IA te quita el trabajo administrativo para que tú y tu equipo os centréis en lo que de verdad importa."
-  - q: "¿Cuánto cuesta y hay un plan gratis real?"
-    a: "Sí, el plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta. Con eso puedes escandallar varias tapas, probar la ingeniería de menú y generar contenido para redes. Si necesitas más, el plan Premium Pro son 25 €/mes con 85.000 créditos, y el plan Max ofrece créditos ilimitados por 95 €/mes. Todos funcionan en español nativo."
+  - q: "¿Cuánto cuesta y cuál es el plan de entrada?”"
+    a: "Sí, el plan AI Chef Miembro incluye 10.000 créditos al mes por 10 €.” Con eso puedes escandallar varias tapas, probar la ingeniería de menú y generar contenido para redes. Si necesitas más, el plan Premium Pro son 25 €/mes con 85.000 créditos, y el plan Max ofrece créditos ilimitados por 95 €/mes. Todos funcionan en español nativo."
   - q: "¿Sirve para un bar pequeño de barrio, no solo para restaurantes grandes?"
     a: "Totalmente. AI Chef Pro está diseñado para bares de barra, cafeterías y pequeños negocios hosteleros. Escandallar una carta de 20 tapas, programar turnos de 3 empleados o publicar en Instagram del barrio son tareas que la IA resuelve en minutos. No necesitas ser un gran grupo ni tener un contable en nómina."
   - q: "¿Cuánto se tarda en escandallar toda la carta con IA?"
@@ -115,18 +115,18 @@ No hace falta que digitalices todo el bar de golpe. Con cuatro pasos enfocados, 
 4. **Programa 5 publicaciones en redes.** Pide a la IA que te redacte los textos para Instagram y TikTok de las tapas estrella, el menú del día y una promo de hora valle. Súbelas y mide la respuesta.
 5. **A los 15 días, revisa el food cost.** Compara el coste teórico con el consumo real de cocina. Si hay desviaciones, ajusta escandallos o porciones.
 
-Puedes hacer todo esto con el plan gratuito de AI Chef Pro, sin meter tarjeta. Y si luego quieres profundizar en la planificación del negocio, el [plan de negocio para bar-restaurante](https://aichef.pro/plan-negocio-bar-restaurante) te da una estructura completa para sentarte con números y proyecciones.
+Puedes hacer todo esto con el plan AI Chef Miembro de AI Chef Pro por 10 € al mes. Y si luego quieres profundizar en la planificación del negocio, el [plan de negocio para bar-restaurante](https://aichef.pro/plan-negocio-bar-restaurante) te da una estructura completa para sentarte con números y proyecciones.
 
 ## 7. Precios de AI Chef Pro para tu bar
 
 AI Chef Pro es una suite de más de 70 agentes de IA culinarios, disponible en 7 idiomas y con español nativo, pensada para que cualquier bar de barra pueda usarla sin conocimientos técnicos. Los planes se adaptan al volumen de tu local:
 
-- **Gratuito:** 3.000 créditos al mes, sin tarjeta. Ideal para arrancar con los escandallos básicos y probar la ingeniería de menú.
+- **AI Chef Miembro:** 10.000 créditos al mes, 10 €/mes. Ideal para arrancar con los escandallos básicos y probar la ingeniería de menú.
 - **Premium Pro:** 25 €/mes, 85.000 créditos. Para bares que quieren tener toda la carta escandallada, turnos optimizados y contenido regular en redes.
 - **Plus:** 50 €/mes, 175.000 créditos. Si manejas varios turnos, una carta amplia y necesitas más profundidad en los análisis.
 - **Max:** 95 €/mes, créditos ilimitados. Para negocios con alto volumen de operaciones o varios locales, sin límite de uso.
 - **Max Anual:** 950 €/año, créditos ilimitados con dos meses de ahorro.
 
-Con el plan gratuito ya puedes escandallar tus tapas estrella, clasificar la carta y generar tus primeras publicaciones para redes. Cuando veas que el control de costes y la organización te piden más, saltas al plan que necesites sin compromiso de permanencia.
+Con el plan AI Chef Miembro ya puedes escandallar tus tapas estrella, clasificar la carta y generar tus primeras publicaciones para redes. Cuando veas que el control de costes y la organización te piden más, saltas al plan que necesites sin compromiso de permanencia.
 
 Si quieres empezar a poner orden en tu barra hoy mismo, [entra en el panel de AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ia-bares) y dale caña a los números.

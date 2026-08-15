@@ -2,7 +2,7 @@
 title: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en 2025"
 description: "La revolución de la inteligencia artificial ha llegado a las cocinas profesionales, transformando para siempre la manera en que chefs, cocineros y gerentes…"
 pubDate: 2025-08-17
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: tutoriales
 image: /blog-assets/2025/08/dominalaiaentucocinapro1.jpeg
 imageAlt: "Domina la IA en tu Cocina Profesional: La Guía Definitiva para Revolucionar tu Gestión Culinaria en 2025"
@@ -1085,7 +1085,7 @@ wpId: 1394
 
 
 <ol class="wp-block-list">
-<li><strong>Explora sin compromiso:</strong> Inicia con nuestro <a data-lasso-id="3173" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener">plan gratuito de AI Chef Pro</a></li>
+<li><strong>Explora sin compromiso:</strong> Inicia con nuestro <a data-lasso-id="3173" href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=domina-la-ia-en-tu-cocina-profesional" target="_blank" rel="noopener">plan AI Chef Miembro</a></li>
 
 
 

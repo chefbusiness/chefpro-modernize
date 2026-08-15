@@ -2,7 +2,7 @@
 title: "Chivito Uruguayo: Receta Pro del Sándwich Nacional"
 description: "Auténtico Chivito uruguayo: filete de ternera, jamón, queso, huevo frito y papas. Técnica Pro de Montevideo."
 pubDate: 2026-07-12
-modDate: 2026-07-12
+modDate: 2026-08-15
 category: recetas
 image: /blog-assets/2026/03/chivito-uruguayo.jpg
 imageAlt: "Chivito Uruguayo: Receta Pro del Sándwich Nacional"
@@ -106,4 +106,4 @@ wpId: 3591
 </p></div>
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px;">🚀 Cocina Uruguaya Pro</h3>
-<p>   <a href="https://aichef.pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR GRATIS →</a> </div>
+<p>   <a href="https://aichef.pro" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold;" target="_blank" rel="noopener">PROBAR AI CHEF MIEMBRO →</a> </div>

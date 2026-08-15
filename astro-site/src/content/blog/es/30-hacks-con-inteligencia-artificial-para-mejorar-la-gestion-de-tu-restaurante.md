@@ -524,7 +524,7 @@ wpId: 2974
   <p style="color:#e1bee7; font-size:13px; letter-spacing:3px; text-transform:uppercase; margin:0 0 12px 0; font-weight:700;">🚀 Suite Completa de IA Gastronómica</p>
   <h3 style="color:#ffffff; font-size:26px; margin:0 0 15px 0; line-height:1.3;">55+ herramientas especializadas para chefs y gestores de restaurantes</h3>
   <p style="color:#e1bee7; font-size:16px; margin:0 0 25px 0; line-height:1.6;">Implementa los 30 hacks de esta guía con acceso completo a AI Chef Pro. Planes desde 25€/mes con acceso inmediato.</p>
-  <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank" style="display:inline-block; background-color:#ffd54f; color:#4a148c; padding:14px 36px; border-radius:50px; font-weight:800; font-size:16px; text-decoration:none; letter-spacing:0.5px;">Empieza gratis ahora →</a>
+  <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank" style="display:inline-block; background-color:#ffd54f; color:#4a148c; padding:14px 36px; border-radius:50px; font-weight:800; font-size:16px; text-decoration:none; letter-spacing:0.5px;">Empieza hoy ahora →</a>
 </div>
 
 
@@ -650,7 +650,7 @@ wpId: 2974
 
 
 
-<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza gratis en AI Chef Pro</a> y aplica tu primer hack esta semana.</p>
+<p class="wp-block-paragraph">El futuro de tu restaurante se construye hoy. <a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=30-hacks-con-inteligencia-artificial-para-mejorar-la-gestion-de-tu-restaurante" target="_blank">Empieza en AI Chef Miembro desde 10€</a> y aplica tu primer hack esta semana.</p>
 
 
 

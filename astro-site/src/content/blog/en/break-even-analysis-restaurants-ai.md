@@ -187,7 +187,7 @@ imageAlt: "Break Even Analysis"
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0; border: 2px solid #ffde59;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🎯 Know Exactly When You&#8217;ll Be Profitable</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Join 50,000+ restaurants using AI Chef Pro&#8217;s break-even tools.<br />    Accurate projections • Scenario planning • Financial confidence • Maximum ROI  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START FREE TODAY →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    START MEMBER TODAY →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Break-Even Calculator • Financial Planner • 75+ AI apps   </p>
 </div>
 <h2>Conclusion: Precision Planning for Restaurant Success</h2>
@@ -198,6 +198,6 @@ imageAlt: "Break Even Analysis"
 <div style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 40px; text-align: center; border-radius: 8px; margin: 40px 0;">
 <h3 style="color: #ffde59; margin-bottom: 15px; font-size: 24px;">🚀 Your Complete Restaurant Financial Intelligence Platform</h3>
 <p style="color: #ffffff; margin-bottom: 20px; font-size: 16px; line-height: 1.5;">    Break-even analysis • Financial planning • Scenario modeling • Growth forecasting<br />    Join 50,000+ hospitality professionals using AI Chef Pro.  </p>
-<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED FREE →  </a>  </p>
+<p>  <a href="https://aichef.pro/en" style="display: inline-block; background: #ffde59; color: #000000; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;" target="_blank" rel="noopener">    GET STARTED MEMBER →  </a>  </p>
 <p style="color: #888; font-size: 12px; margin-top: 10px;">    Break-Even Calculator • Financial Planner • 75+ AI tools   </p>
 </div>
