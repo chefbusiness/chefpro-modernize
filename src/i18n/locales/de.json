@@ -23,7 +23,8 @@
     "marketing_ia": "Marketing mit KI",
     "chatgpt_ia": "ChatGPT für Restaurants",
     "blog": "Blog",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "formacion_presencial": "Präsenzschulungen"
   },
   "cta": {
     "primary": "JETZT TESTEN",
@@ -73,7 +74,9 @@
     "categories": "6",
     "categories_label": "Professionelle Kategorien",
     "new_app_label": "Neuer KI-Agent Jede Woche",
-    "chefs_label": "Köche und Gastronomieprofis vertrauen uns"
+    "chefs_label": "Köche und Gastronomieprofis vertrauen uns",
+    "chefs": "764+",
+    "new_app": "1"
   },
   "mentoriaOnline": {
     "hero": {
@@ -394,7 +397,10 @@
     "business_title": "Business Tools",
     "business_description": "Optimieren Sie das Management und den Betrieb Ihres Establishments",
     "use_case_label": "Anwendungsfall",
-    "use_tool": "Tool Verwenden"
+    "use_tool": "Tool Verwenden",
+    "creativity_subtitle": "Showcase",
+    "explore_app": "Agent erkunden",
+    "preview_label": "Preview"
   },
   "gallery": {
     "badge": "50+ Spezialisierte KI-Agenten in Aktion",
@@ -505,7 +511,7 @@
         "preview": "Hilft bei technischen Fragen und saisonaler Menüplanung"
       },
       "mermas_gencal": {
-        "name": "Mermas GenCal",
+        "name": "Lebensmittelabfälle AI",
         "description": "Optimiert Erträge und reduziert Verschwendung",
         "preview": "Spart bis zu 30% bei Zutatenkosten mit präzisen Berechnungen"
       },
@@ -799,7 +805,7 @@
         "preview": "Hilft bei technischen Fragen und saisonaler Menüplanung"
       },
       "mermas_gencal": {
-        "name": "Mermas GenCal",
+        "name": "Lebensmittelabfälle AI",
         "description": "Optimiert Erträge und reduziert Verschwendung",
         "preview": "Spart bis zu 30% bei Zutatenkosten mit präzisen Berechnungen"
       },
@@ -3531,7 +3537,9 @@
           "Hummer",
           "Languste",
           "Garnelen",
-          "Krebstier"
+          "Krebstier",
+          "kaisergranat",
+          "rote garnele"
         ]
       },
       {
@@ -3546,7 +3554,11 @@
           "Eiweiß",
           "Mayonnaise",
           "Omelette",
-          "Rührei"
+          "Rührei",
+          "pudding",
+          "karamellpudding",
+          "biskuit",
+          "paniert"
         ]
       },
       {
@@ -3564,7 +3576,9 @@
           "Anchovi",
           "Fisch",
           "Flunder",
-          "Heilbutt"
+          "Heilbutt",
+          "seezunge",
+          "seefisch"
         ]
       },
       {
@@ -3591,7 +3605,8 @@
           "Miso",
           "Edamame",
           "Sojamilch",
-          "Sojaöl"
+          "Sojaöl",
+          "tamari"
         ]
       },
       {
@@ -3682,7 +3697,9 @@
           "Aprikosen",
           "Sulfit",
           "Sulfite",
-          "Schwefel"
+          "Schwefel",
+          "schwefeldioxid",
+          "bisulfit"
         ]
       },
       {
@@ -3693,7 +3710,8 @@
         "keywords": [
           "Lupine",
           "Lupinenmehl",
-          "Lupinensamen"
+          "Lupinensamen",
+          "lupinenprotein"
         ]
       },
       {
@@ -3708,7 +3726,10 @@
           "Tintenfisch",
           "Kalmar",
           "Oktopus",
-          "Venusmuschel"
+          "Venusmuschel",
+          "herzmuschel",
+          "jakobsmuschel",
+          "messermuschel"
         ]
       }
     ],
@@ -4286,6 +4307,14 @@
       {
         "q": "Warum sind Gerichtsbeschreibungen so wichtig?",
         "a": "Eine gute Speisekartenbeschreibung kann den durchschnittlichen Bon um 5–15 % steigern. Gäste, die ansprechende Beschreibungen lesen, bestellen eher das beschriebene Gericht und nehmen einen höheren Wert wahr."
+      },
+      {
+        "a": "Die klassische Version ist formell und konzentriert sich auf Zutaten und Technik. Die emotionale Version spricht die Sinne an und schafft eine emotionale Bindung zum Gast. Die km0-Version hebt die lokale Herkunft und Saisonalität des Produkts hervor, die von bewussten Kunden zunehmend geschätzt wird.",
+        "q": "Was ist der Unterschied zwischen der klassischen, emotionalen und km0-Version?"
+      },
+      {
+        "a": "Ja, Sie können Texte auf Spanisch und Englisch generieren. Für Katalanisch und Baskisch wird der Basistext auf Spanisch generiert, damit Sie ihn manuell an Ihren lokalen Dialekt anpassen können.",
+        "q": "Funktioniert es in anderen Sprachen?"
       }
     ],
     "cta_section": {
@@ -4467,5 +4496,21 @@
       "premium_max": "Unbegrenzte monatliche Credits für anspruchsvolle Profis.",
       "premium_max_anual": "Ideal für Gastronomieunternehmer, Restaurantbesitzer und Führungskräfte. Spare 2 Monate."
     }
+  },
+  "categories_labels": {
+    "creatividad": "Kulinarische Kreativität",
+    "conceptos": "Geschäftskonzepte",
+    "proveedores": "Gastro-Lieferanten",
+    "marketing": "Marketing & Content",
+    "recetarios": "Weltweite Kochbücher"
+  },
+  "common": {
+    "more": "mehr"
+  },
+  "notfound": {
+    "back_home": "Zurück zur Startseite",
+    "description": "Es tut uns leid, die gesuchte Seite existiert nicht. Kehren Sie zur Startseite von AI Chef Pro zurück.",
+    "message": "Hoppla! Seite nicht gefunden",
+    "title": "404 - Seite nicht gefunden | AI Chef Pro"
   }
 }

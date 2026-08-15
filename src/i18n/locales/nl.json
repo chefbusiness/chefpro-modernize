@@ -23,7 +23,8 @@
     "marketing_ia": "Marketing met AI",
     "chatgpt_ia": "ChatGPT voor Restaurants",
     "blog": "Blog",
-    "login": "Inloggen"
+    "login": "Inloggen",
+    "formacion_presencial": "Training op Locatie"
   },
   "cta": {
     "primary": "PROBEER NU",
@@ -4437,5 +4438,12 @@
       "premium_max": "Onbeperkte maandelijkse credits voor veeleisende professionals.",
       "premium_max_anual": "Ideaal voor horeca-ondernemers, restauranteigenaren en directeuren. Bespaar 2 maanden."
     }
+  },
+  "categories_labels": {
+    "creatividad": "Culinaire Creativiteit",
+    "conceptos": "Zakelijke Concepten",
+    "proveedores": "Gastro-leveranciers",
+    "marketing": "Marketing & Content",
+    "recetarios": "Wereldwijde Kookboeken"
   }
 }

@@ -23,7 +23,8 @@
     "marketing_ia": "Marketing com IA",
     "chatgpt_ia": "ChatGPT para Restaurantes",
     "blog": "Blog",
-    "login": "Entrar"
+    "login": "Entrar",
+    "formacion_presencial": "Formação Presencial"
   },
   "cta": {
     "primary": "TESTAR AGORA",
@@ -4442,5 +4443,12 @@
       "premium_max": "Créditos ilimitados mensais para profissionais exigentes.",
       "premium_max_anual": "Ideal para empresários gastronômicos, proprietários de restaurantes e diretores. Economize 2 meses."
     }
+  },
+  "categories_labels": {
+    "creatividad": "Criatividade Culinária",
+    "conceptos": "Conceitos de Negócio",
+    "proveedores": "Fornecedores Gastro",
+    "marketing": "Marketing & Conteúdo",
+    "recetarios": "Receituários Mundiais"
   }
 }
