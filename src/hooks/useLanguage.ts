@@ -243,8 +243,11 @@ export const useLanguage = () => {
       if (i18n.language !== lang) {
         i18n.changeLanguage(lang);
       }
-      // Save preference so the edge function won't override on next visit to "/"
-      persistLangCookie(lang as Language);
+      // ⚠️ NO persistir la cookie aquí: este efecto se dispara con la VISITA a
+      // cualquier URL /:lang, no con una elección. Sembrarla aquí hizo que abrir
+      // un solo enlace italiano secuestrara "/" durante un año (2026-08-14, le
+      // pasó a John revisando el blog IT). La cookie es «el usuario ELIGIÓ»
+      // (contrato de lang-redirect.ts) y solo la siembra changeLanguage().
     } else if (lang) {
       // If invalid language in URL, redirect to Spanish (default)
       navigate('/', { replace: true });
