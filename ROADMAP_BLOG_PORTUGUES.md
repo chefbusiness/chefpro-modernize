@@ -1,0 +1,175 @@
+# Roadmap del blog portugués — los 14 primeros posts
+
+> Escrito el 2026-08-16 a partir del keyword research de Google.pt (DataForSEO,
+> `--pais 2620 --idioma pt`): ~240 keywords medidas en Portugal + 20 en Brasil
+> (2076) para los finalistas, y 34 SERP en vivo. Datos crudos en
+> `.work/research-blog-pt.md` y `.work/research-pt.json` (gitignorados, solo en
+> el VPS). Método heredado de `ROADMAP_BLOG_ITALIANO.md`.
+>
+> **Todos los volúmenes están MEDIDOS, no estimados.**
+>
+> ⚠️ **El blog pt NO existe aún**: antes del post 1, crear el árbol `/pt/blog/`
+> clonando la fase 9 italiana. El blog se escribe en **PT-PT** (controlo, não
+> controle; alergénios); Brasil queda anotado como upside por candidato, y el
+> día que se ataque **se cambia el acrónimo (APPCC), no se traduce el post**.
+
+## Las reglas que salieron del research (específicas de Portugal)
+
+**1. Portugal es pequeño y el listón se calibra distinto**: 10 M de habitantes
+producen cifras que en España se descartarían. `ficha técnica de pratos` hace
+80/mes y `food cost` 180 — y son candidatos, porque **la rentabilidad aquí sale
+de la ausencia de competencia, no del volumen**: keywords de 70-200 con la SERP
+vacía valen más que las de 8.000 con Continente y Pingo Doce delante.
+
+**2. ⚠️ «segurança alimentar» NO es food safety** — significa acceso a los
+alimentos (ONU, DGS, Iberdrola, Aliança Contra a Fome). La inocuidad vive en
+`higiene e segurança alimentar` (210) y en `haccp` (3.600). La trampa de
+traducción más cara del mercado.
+
+**3. El acrónimo cambia de lado del Atlántico**: Portugal HACCP 3.600 / APPCC
+70; Brasil APPCC 3.600 / HACCP 1.900. 51× por país sobre el mismo concepto.
+
+**4. Grafías: unas reparten y otras no — mirar la SERIE.** `alergenios` (480) y
+`alergénios` (390) son series DISTINTAS → usar las dos en el cuerpo. `controlo`
+y `controle` son la MISMA serie → da igual. La brasileña `alérgenos` hace 260
+en PT y 1.900 en BR.
+
+**5. Orden de palabras: hasta ×190.** `haccp o que é` 590 vs `o que é haccp` 90
+(×6,5) · `pão de fermentação natural` 320 vs `fermentação natural pão` 20 (×16)
+· `carne maturada` 1.900 vs `maturação de carne` 10 (×190). Gana sustantivo +
+adjetivo, no la nominalización.
+
+**6. Google rellena la SERP portuguesa con Brasil, y si no hay Brasil, con
+INGLÉS** (food cost sirve resultados en inglés desde el puesto 3; mirepoix y
+brunoise son blogs brasileños e Instagram; brunoise tiene a ALDI **España** en
+el 7). Los dos casos son **hueco, no muro**: no existe contenido PT-PT.
+Corolario: **el PAA vuelve en inglés si la cadena es inglesa** — la FAQ se saca
+de la variante local (`como calcular o food cost` sí responde en portugués).
+
+**7. Portugal está lleno de MARCAS HOMÓNIMAS de términos de cocina**: «Mise En
+Place» es un restaurante de Marinha Grande (#1 y #3), «Roux Professional» una
+tienda de fardas en Benfica (#1), «Combinação de Sabores» un restaurante de
+Famalicão que ocupa los NUEVE primeros, «Massa Mãe» dos panaderías. Antes de
+titular con un término de cocina, mirar quién ocupa el #1.
+
+**8. Los préstamos de cocina siguen valiendo** (mise en place 1.900, garum
+1.300, mirepoix 590, roux 590, brunoise 210, food cost 110): solo `sous vide`
+es irrecuperable (e-commerce puro). Cualificar el ángulo, no descartar.
+
+**9. El clúster IA es CERO** (toda la familia sin datos; `chefgpt` 90 y es una
+app de calorías) y el de marketing también — y ptapp no tiene agentes que los
+sostengan. **Agentes sin keyword propia en Portugal**: Mermas Genéricas,
+Refeição do Pessoal, Coach Mental, VegChef Plant-Based, Food Pairing AI — se
+sirven por enlace interno desde los pilares, no por posts propios.
+
+## Lo que NO hay que escribir (medido y refutado)
+
+| Keyword | Volumen | Por qué se descarta |
+|---|---|---|
+| `livro de reclamações` | 14.800 | El mayor volumen bruto del research: trámite estatal de TODO el comercio; el buscador es el consumidor que reclama |
+| `asae` | 12.100 | Navegacional puro (contactos, «Fiscalização ASAE hoje»). El ángulo B2B no existe: `inspeção asae` sin datos |
+| `kimchi` | 9.900 | Receta casera en canal retail (Continente, Auchan). Fermentus se sirve desde `garum` |
+| `plant based` | 8.100 | Dieta y salud; el PAA vuelve EN INGLÉS y pregunta si Elon Musk es vegano |
+| `molho bechamel` + salsas | 15.380 | Receta doméstica (Pingo Doce, TudoGostoso); `molhos mãe` 10 — el ángulo pro no tiene demanda |
+| `ementa` / `ementa restaurante` | 8.100 / 480 | Local pack: qué se come hoy en un sitio concreto |
+| `bacalhau` / `pastelaria` / `pastel de nata` | 74.000/74.000/49.500 | Comensal, turista y «perto de mim». La tentación de «arrancar con tráfico» que no convierte |
+| `catering` | 4.400 | Quien busca quiere CONTRATARLO (Zaask, bodas): el cliente de nuestro cliente |
+| `sous vide` | 1.900 HIGH | E-commerce con popular_products (Anova, Worten); cualificar no salva (todo sin datos) y no hay agente |
+| `carne maturada` | 1.900 | Consumidor y compra (LIDL, Time Out); sin agente de maduración en ptapp |
+| `combinação de sabores` | 720 | **Un restaurante de Famalicão ocupa los 9 primeros resultados.** El caso más limpio de «el volumen sin SERP miente» |
+| `segurança alimentar` | 720 | Food SECURITY (ONU, DGS) — ver regla 2 |
+| `roux` | 590 | #1 una tienda de uniformes de Benfica; intención diluida |
+| `desperdício alimentar` | 480 | Medio ambiente y eco-escuelas (patrón italiano calcado); el ángulo pro sin datos |
+| `formação haccp` | 320 | Venta de cursos; no vendemos formación certificada |
+| `regulamento 1169/2011` | 140 | EUR-Lex ×3 + ASAE: el patrón italiano con el mismo reglamento. Se cita dentro del post de alérgenos |
+| `mera comunicação prévia` | 110 | Monopolio de gov.pt; ningún agente tramita |
+| `chefgpt` | 90 | App de calorías con SERP en inglés (en Italia hacía 430) |
+| `gelado artesanal` / `hamburguer gourmet` | 210 / 110 | Local pack: comensales, no operadores |
+
+## Restricción de producto
+
+`ptapp.aichef.pro` sirve **53 agentes** (censo `.work/ptapp-agentes.txt`). Sin
+hotel, consultoría, social ni SEO local. Cinco agentes sin keyword propia (ver
+regla 9). Productos digitales ES-only → sin banners; conversión al agente de
+ptapp con UTM. Ganchos verificados 1 a 1 contra el censo.
+
+## Los 14 posts, en orden de publicación
+
+| # | Keyword objetivo | Clúster/mes | Dific. | AIO | Agente gancho | Tipo | Upside BR |
+|---|---|---|---|---|---|---|---|
+| 1 | `haccp` / `haccp restauração` | **5.230** | BAJA | sí | — plataforma | **PILAR** | BR usa APPCC (3.600) |
+| 2 | `alergenios` + `alergénios` (14 de decl. obrig.) | 1.330 | MEDIA | sí | ID Alergénios | **PILAR** | `alérgenos` 1.900 |
+| 3 | `contaminação cruzada` | 230 | BAJA | sí | ID Alergénios | satélite | **5.400 (26×)** |
+| 4 | `higiene e segurança alimentar` | 210 | BAJA | sí | — plataforma | satélite | 110 |
+| 5 | `controlo de temperaturas` | 110 | BAJA | no | — plataforma | satélite | 1.000 |
+| 6 | `food cost` | 180 | BAJA | sí | Gerente Restaurante Pro | **PILAR** | 70 (¡menos que PT!) |
+| 7 | `ficha técnica de pratos` | 80 | BAJA | no | tSpoonLab Agent | **PILAR** | 70 |
+| 8 | `mise en place` | 1.930 | MEDIA | sí | Chef Executivo Pro | **PILAR** | **22.200 (11,7×)** |
+| 9 | `mirepoix` / `brunoise` (cortes, con medidas) | 1.070 | BAJA-MEDIA | **no** | Léxico Gastronómico | **PILAR** | 9.000 |
+| 10 | `garum` | 1.300 | MEDIA | **no** | Fermentus Con AI+ | satélite | 1.300 |
+| 11 | `cozinha molecular` | 410 | BAJA | sí | Sosa Ingredients | PILAR | 2.900 |
+| 12 | `cocktails clássicos` (ángulo carta) | 340 | BAJA-MEDIA | sí | Bar & Lounge AI+ | satélite | — |
+| 13 | `food truck` (abrir en Portugal) | 2.420 bruto | MEDIA-ALTA | no | Food Truck AI+ | satélite | 27.100 |
+| 14 | `pão de fermentação natural` | 5.050 bruto¹ | ALTA (intención) | sí | Padaria Criativa | satélite | — |
+
+**Suma direccionable en Portugal: ~15.000/mes** — y un upside brasileño
+anotado post a post que multiplica varios candidatos ×10-26.
+
+¹ Con aviso del cazador: la intención medida es de panadero casero. Se ataca
+`pão de fermentação natural` (320) con enfoque de producción, NUNCA `massa mãe`
+(1.600: dos panaderías homónimas y un AI Overview con la receta resuelta). El
+término tradicional «isco» es vocabulario de autoridad, no keyword (sin datos).
+
+### Por qué en ese orden
+
+- **1 `haccp`** es el clúster más rentable y la SERP más débil del país: TRES
+  TESIS académicas y un PDF de Bruselas en el top 8 — Google no tiene guía
+  operativa que servir, y el AI Overview afirma que la obligación alcanza al
+  100 % de la restauração portuguesa. Sin agente HACCP en ptapp: conversión a
+  plataforma y enlace a ID Alergénios.
+- **2-5 (alérgenos, cruzada, higiene, temperaturas)** cierran el eje normativo
+  con el único encaje perfecto de producto (ID Alergénios) y SERPs donde los
+  rivales son una farmacéutica de antihistamínicos, una marca de papel de
+  cocina y dos vendedores de lejía. El cuerpo del post 2 usa AMBAS grafías
+  (alergenios/alergénios: series separadas).
+- **6-7 (food cost + ficha técnica)** son el clúster B: volumen mínimo pero
+  SERP literalmente vacía de portugués (Google sirve inglés desde el puesto 3)
+  e intención 100 % profesional. La FAQ del 6 se saca de «como calcular o food
+  cost» (el PAA de la cabecera vuelve en inglés).
+- **8-11 (técnica)**: mise en place pese al restaurante homónimo (cualificando
+  el ángulo — el #4 actual es un blog de packaging); los cortes con tabla de
+  medidas en mm contra una SERP de Instagram y Brasil; garum con patrimonio
+  propio (las salgadeiras romanas de Tróia, el productor Selo de Mar) y un PAA
+  que pregunta tres veces «como se faz»; molecular con Sosa Ingredients
+  mencionado POR LO QUE HACE.
+- **12-14** cierran con los agentes de concepto (Bar & Lounge, Food Truck,
+  Padaria). Food truck va tarde porque el grueso del volumen quiere comprar el
+  vehículo; lo salva que el PAA es 100 % emprendedor y solo responde el blog
+  de una empresa de TPV.
+
+## Reglas de ejecución
+
+1. **Antes del post 1: crear el árbol `/pt/blog/`** (clonar fase 9 IT).
+2. `modDate` + `fase8b-regen-lastmod.py`; purgar `.astro` y **verificar
+   recuento + URLs en `dist`** (lección 2026-08-15).
+3. PT-PT estricto (controlo, registo, ementa); las DOS grafías de alergénios
+   en el cuerpo; datos normativos FIJADOS (Reg. CE 852/2004, Reg. 1169/2011,
+   nota de la ASAE) y verificados; sin sanciones ni importes; separar LEY de
+   PRÁTICA.
+4. FAQ desde el PAA de la variante LOCAL cuando la cabecera devuelva PAA en
+   inglés; fundir formulaciones o salta `fase8d-faq-duplicadas.py --lang pt`.
+5. Sin banners (ES-only). Conversión → agente de ptapp con
+   `utm_source=blog&utm_medium=cta&utm_content=<slug>`.
+6. `dataforseo.py` con `--pais 2620 --idioma pt` SIEMPRE (Brasil: 2076 solo
+   para anotar upside).
+7. Imágenes: textos visibles EN PORTUGUÉS, verificadas a ojo.
+
+## Suplentes y semillas futuras
+
+- `goma xantana` (1.600 HIGH) y `agar agar` (1.300 HIGH) — satélites de
+  ingrediente del post 11 si se les encuentra ángulo no-e-commerce.
+- `prato do dia` (1.300) — hoy local pack; posible ángulo de gestión de oferta
+  diaria. Revisar en 6 meses.
+- El día que se ataque BRASIL: cambiar HACCP→APPCC, alergénios→alérgenos, y
+  re-medir TODO con `--pais 2076` (mise en place 22.200, food truck 27.100,
+  contaminação cruzada 5.400 esperan allí).

@@ -98,10 +98,14 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 | # | Keyword objetivo | Vol. | Dific. | AIO | Agente italiano | Tipo |
 |---|---|---|---|---|---|---|
 | 1 ✅ | `lista allergeni` | 3.600 | BAJA | **NO** | ID Allergeni | **PILAR** |
-| 2 | `contaminazione crociata` | 1.600 | BAJA | sí | ID Allergeni | satélite |
-| 3 | `etichettatura allergeni` | 880 | MEDIA | sí | ID Allergeni | satélite |
-| 4 | `7 principi haccp` | 390 | BAJA | sí | ID Allergeni | satélite |
-| 5 | `temperature frigorifero haccp` | 260 | BAJA | sí | ID Allergeni | satélite |
+| 2 ✅ | `contaminazione crociata` | 1.600 | BAJA | sí | ID Allergeni | satélite |
+| 3 ✅ | `etichettatura allergeni` | 880 | MEDIA | sí | ID Allergeni | satélite |
+| 4 ✅ | `7 principi haccp` | 390 | BAJA | sí | ID Allergeni | satélite |
+| 5 ✅ | `temperature frigorifero haccp` | 260 | BAJA | sí | ID Allergeni | satélite |
+
+> **Clúster 1-5 (alérgenos y HACCP) COMPLETO el 2026-08-16** — pentágono
+> interenlazado (cada satélite → pilar; pilar → los 4; post 2 → 4 y 5; 4 ↔ 5).
+> El siguiente es el 6, `mise en place` (18.100/mes), atacado por «le 7 fasi».
 | 6 | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
 | 7 | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
 | 8 | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
