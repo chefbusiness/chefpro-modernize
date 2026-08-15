@@ -44,9 +44,9 @@ IDIOMAS = {
     'de': {'nombre': 'alemán', 'const': 'USE_CASES_CONTENT_DE', 'tono':
            'Trato de usted (Sie/Ihr), coherente con el árbol alemán existente.'},
     'pt': {'nombre': 'portugués', 'const': 'USE_CASES_CONTENT_PT', 'tono':
-           'Trato: el de src/data/use-cases-content.pt.consultor.ts (revisar antes de lanzar).'},
+           'Trato de você (verbos en 3ª persona), coherente con pt.consultor.ts (0 tuteos medidos). Português europeu.'},
     'nl': {'nombre': 'neerlandés', 'const': 'USE_CASES_CONTENT_NL', 'tono':
-           'Trato: el de src/data/use-cases-content.nl.consultor.ts (revisar antes de lanzar).'},
+           'U-vorm estricta (u/uw), NUNCA je/jij/jouw: el árbol NL vosea (101/7 medido).'},
 }
 
 # Caracteres/secuencias que delatan castellano. Por idioma destino, porque lo

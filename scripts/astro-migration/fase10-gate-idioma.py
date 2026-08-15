@@ -87,9 +87,24 @@ CONFIG = {
     'de': {
         'plataforma': 'https://deapp.aichef.pro/guest',
         'doc_catalogo': 'CATALOGO_ITALIANO_PENDIENTE.md (la decisión es pentalingüe)',
-        'marcadores': ['ción', 'cción'],   # ⚠ config mínima: completar al homologar
-        'acentos': {},                      # ⚠ pendiente (umlauts ausentes, ß/ss…)
-        'agentes_es_fr': [],                # ⚠ pendiente: glosario desde deapp
+        # Falsos positivos a NO reintroducir: 'ñ' (Jalapeño, Roscón en textos DE
+        # legítimos → allowlist), 'für'-sin-umlaut como 'fur' (colisiona con
+        # inglés), 'Uber' (marca). El alemán no usa á í ó ú ñ salvo préstamos.
+        'marcadores': ['ción', 'cción', ' y la ', ' y el ', ' con el ',
+                       ' los que ', ' que el ', ' desde el '],
+        # Umlauts caídos típicos de traducción a máquina. Lista corta a propósito:
+        # solo palabras donde la variante sin umlaut NO existe en alemán.
+        'acentos': {'Kuche': 'Küche', 'kuche': 'küche', 'Kuchenchef': 'Küchenchef',
+                    'Speisekarte': None, 'Menu': None,   # None = no comprobar (ambiguas)
+                    'Getranke': 'Getränke', 'Qualitat': 'Qualität',
+                    'Kalkulationsblatter': 'Kalkulationsblätter'},
+        'agentes_es_fr': [('Gerente de Restaurante Pro', 'Profi Restaurantmanager'),
+                          ('Mermas GenCal', 'Lebensmittelabfälle AI'),
+                          ('ID Alérgenos', 'Allergen-ID'),
+                          ('¿Quién Soy?', 'Wer sind Sie?'),
+                          ('Cocina Creativa', 'Kreativküche'),
+                          ('Comida de Personal', 'Mitarbeiteressen AI'),
+                          ('Chef Ejecutivo Pro', 'Executive Chef Pro')],
     },
     'pt': {
         'plataforma': 'https://ptapp.aichef.pro/guest',
@@ -277,8 +292,11 @@ def main():
     args = ap.parse_args()
     lang, cfg = args.lang, CONFIG[args.lang]
 
-    re_acento = (re.compile(r'\b(' + '|'.join(cfg['acentos']) + r')\b')
-                 if cfg['acentos'] else None)
+    # None = palabra documentada como AMBIGUA (existe sin tilde/umlaut): se
+    # excluye del regex — el gate italiano ya pagó este falso positivo con 'meta'.
+    acentos_activos = [k for k, v in cfg['acentos'].items() if v]
+    re_acento = (re.compile(r'\b(' + '|'.join(acentos_activos) + r')\b')
+                 if acentos_activos else None)
 
     errores, avisos = [], []
     e, a = revisa_claves(lang)

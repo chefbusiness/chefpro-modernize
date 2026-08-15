@@ -79,7 +79,7 @@ export default function HerramientasIARestaurantes() {
   };
 
   const plans = [
-    { name: "AI Chef Miembro", price: "Gratis", uses: "3.000 créditos/mes", highlight: false },
+    { name: "AI Chef Miembro", price: "10€/mes", uses: "10.000 créditos/mes", highlight: false },
     { name: "AI Chef Premium Pro", price: "25€/mes", uses: "85.000 créditos/mes", highlight: false },
     { name: "AI Chef Premium Plus", price: "50€/mes", uses: "175.000 créditos/mes", highlight: true },
     { name: "AI Chef Premium Max", price: "95€/mes", uses: "Ilimitado", highlight: false },
