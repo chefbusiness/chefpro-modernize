@@ -2,7 +2,7 @@
 title: "I 14 allergeni alimentari: elenco completo e tabella da stampare per il menù"
 description: "Elenco ufficiale dei 14 allergeni del Reg. UE 1169/2011 con la numerazione, la tabella da stampare per il menù e gli ingredienti dove si nascondono."
 pubDate: 2026-08-08
-modDate: 2026-08-15
+modDate: 2026-08-16
 category: gestione-ristorante
 tags: ["allergeni", "haccp", "sicurezza alimentare", "normativa"]
 image: /blog-assets/2026/08/allergeni-destacada.jpg
@@ -19,8 +19,6 @@ faq:
     a: "Parti dalla ricetta effettiva: pesa ogni ingrediente e controlla le etichette dei fornitori. Poi abbina ogni piatto ai 14 allergeni, indicandoli in modo chiaro, ad esempio con simboli o note. Aggiorna la lista quando modifichi ricette o cambi prodotto. Tieni una copia in cucina e una per il personale di sala, così chi serve sa rispondere con precisione."
   - q: "Quali sono le allergie alimentari più comuni?"
     a: "Le più frequenti in Italia e in Europa sono: latte, uova, arachidi, frutta a guscio, pesce, crostacei, soia e grano. Attenzione però: un cliente può essere allergico a qualsiasi alimento, anche a sedano o lupini. Per questo non basarti solo sulle allergie più note: devi conoscere e dichiarare sempre tutti i 14 allergeni previsti dalla legge."
-  - q: "Quali sono i 7 principi HACCP?"
-    a: "Si chiamano principi, non regole: 1) analisi dei pericoli, 2) individuazione dei punti critici di controllo (CCP), 3) definizione dei limiti critici, 4) monitoraggio dei CCP, 5) azioni correttive, 6) verifica del sistema, 7) documentazione e registrazione. Questi sette passaggi ti aiutano a gestire la sicurezza alimentare, compresi gli allergeni, in modo strutturato e verificabile."
 ---
 
 <p>Ti è mai capitato? Arriva una comanda con scritto “allergia al sedano” e tu, in mezzo al servizio, devi capire al volo se quel piatto è sicuro. Oppure un cliente ti chiede informazioni sugli allergeni e tu non hai un documento chiaro da consultare. In questi casi non serve una lezione di diritto alimentare: serve la tabella numerata da 1 a 14, quella da appendere in cucina o da allegare al menù.</p>
@@ -210,7 +208,7 @@ faq:
 <p><strong>5. Contaminazione crociata evidente</strong> – L’ispettore vede la stessa pinza usata per il pane e per le verdure, o la friggitrice unica per prodotti impanati e non. Anche se il menù è perfetto, la pratica scorretta è una violazione.</p>
 <p><strong>6. Informazioni non veritiere</strong> – Scrivi “senza glutine” su un piatto che contiene salsa di soia (che ha glutine). Oppure dichiari “senza lattosio” su un piatto cotto nel burro. Le informazioni false sono più gravi di quelle mancanti.</p>
 <p><strong>7. Mancata indicazione per i prodotti sfusi e il catering</strong> – Nel banco dei dolci, nel buffet o nel catering, gli allergeni devono essere dichiarati allo stesso modo. Un cartello generico “può contenere allergeni” non basta: deve essere specifico.</p>
-<p>Se vuoi evitare contestazioni, fai una verifica interna ogni settimana: controlla le etichette, aggiorna il documento degli allergeni, parla con il personale di sala. Un sistema semplice e funzionante vale più di un manuale perfetto ma mai applicato.</p>
+<p>Se vuoi evitare contestazioni, fai una verifica interna ogni settimana: controlla le etichette, aggiorna il documento degli allergeni, parla con il personale di sala. Un sistema semplice e funzionante vale più di un manuale perfetto ma mai applicato. E se vuoi inquadrare tutto questo dentro il tuo piano di autocontrollo, qui trovi <a href="https://aichef.pro/it/blog/7-principi-haccp">i 7 principi HACCP applicati a una cucina vera</a> e <a href="https://aichef.pro/it/blog/temperature-frigorifero-haccp">le temperature di frigo e freezer</a> da tenere sotto controllo.</p>
 
 <p>La lista dei 14 allergeni non è un ostacolo burocratico: è uno strumento per proteggere i tuoi clienti e la tua reputazione. Stampala, usala, rendila parte del tuo lavoro quotidiano. Quando tutto il team conosce la tabella e sa dove guardare, il servizio diventa più sicuro e il cliente si fida di te. E in un settore dove la fiducia si costruisce piatto dopo piatto, questa è una differenza che si sente.</p>
 <h2>Fare tutto questo a mano è il vero problema</h2>
