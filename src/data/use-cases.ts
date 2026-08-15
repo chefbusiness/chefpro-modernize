@@ -96,6 +96,7 @@ const STUB_LANGS: LangCode[] = ['en', 'fr', 'de', 'it', 'pt', 'nl'];
 import { USE_CASES_CONTENT_ES } from './use-cases-content.es';
 import { USE_CASES_CONTENT_EN } from './use-cases-content.en';
 import { USE_CASES_CONTENT_IT } from './use-cases-content.it';
+import { USE_CASES_CONTENT_FR } from './use-cases-content.fr';
 import { USE_CASES_CONTENT_ES_CONSULTOR } from './use-cases-content.es.consultor';
 import { USE_CASES_CONTENT_EN_CONSULTOR } from './use-cases-content.en.consultor';
 import { USE_CASES_CONTENT_FR_CONSULTOR } from './use-cases-content.fr.consultor';
@@ -110,7 +111,7 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
     throw new Error(`Missing ES content for use-case id: ${id}`);
   }
   const en = USE_CASES_CONTENT_EN[id] ?? USE_CASES_CONTENT_EN_CONSULTOR[id] ?? es;
-  const fr = USE_CASES_CONTENT_FR_CONSULTOR[id] ?? es;
+  const fr = USE_CASES_CONTENT_FR[id] ?? USE_CASES_CONTENT_FR_CONSULTOR[id] ?? es;
   const de = USE_CASES_CONTENT_DE_CONSULTOR[id] ?? es;
   const it = USE_CASES_CONTENT_IT[id] ?? USE_CASES_CONTENT_IT_CONSULTOR[id] ?? es;
   const pt = USE_CASES_CONTENT_PT_CONSULTOR[id] ?? es;
@@ -133,7 +134,7 @@ function makeContent(id: string): Record<LangCode, UseCaseContent> {
 export function hasNativeContent(id: string, lang: LangCode): boolean {
   if (lang === 'es') return (id in USE_CASES_CONTENT_ES) || (id in USE_CASES_CONTENT_ES_CONSULTOR);
   if (lang === 'en') return (id in USE_CASES_CONTENT_EN) || (id in USE_CASES_CONTENT_EN_CONSULTOR);
-  if (lang === 'fr') return id in USE_CASES_CONTENT_FR_CONSULTOR;
+  if (lang === 'fr') return (id in USE_CASES_CONTENT_FR) || (id in USE_CASES_CONTENT_FR_CONSULTOR);
   if (lang === 'de') return id in USE_CASES_CONTENT_DE_CONSULTOR;
   if (lang === 'it') return (id in USE_CASES_CONTENT_IT) || (id in USE_CASES_CONTENT_IT_CONSULTOR);
   if (lang === 'pt') return id in USE_CASES_CONTENT_PT_CONSULTOR;

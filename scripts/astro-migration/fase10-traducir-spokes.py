@@ -135,7 +135,8 @@ def fundir(spoke_es, plano_tr):
     byte-idéntico por construcción."""
     out = deepcopy(spoke_es)
     for ruta, val in plano_tr.items():
-        m = re.fullmatch(r'([a-zA-Z]+)(?:\[(\d+)\])?(?:\.([a-zA-Z]+))?(?:\[(\d+)\])?', ruta)
+        # [a-zA-Z0-9]: el campo «h1» lleva dígito y rompía el fullmatch
+        m = re.fullmatch(r'([a-zA-Z][a-zA-Z0-9]*)(?:\[(\d+)\])?(?:\.([a-zA-Z][a-zA-Z0-9]*))?(?:\[(\d+)\])?', ruta)
         campo, idx, sub, idx2 = m.group(1), m.group(2), m.group(3), m.group(4)
         if campo == 'beforeAfter':
             if idx2 is not None:
@@ -173,12 +174,15 @@ def validar(spoke_id, plano_es, plano_tr, glosario, protegidos, allowlist, lang)
             if ord(c) > 0x2AF and unicodedata.category(c).startswith('L'):
                 errores.append(f'{ruta}: carácter de otro alfabeto «{c}» (U+{ord(c):04X})')
                 break
+        # La allowlist va PRIMERO y de largo a corto: si los protegidos borran
+        # antes «Guía Restaurante», el literal completo «Guía Restaurante
+        # Gastronómico» de la allowlist ya no casa y su cola con ó da falso rojo.
         enmascarado = tr_v
-        for p in protegidos:
+        for ok in sorted(allowlist, key=len, reverse=True):
+            enmascarado = enmascarado.replace(ok, '')
+        for p in sorted(protegidos, key=len, reverse=True):
             enmascarado = enmascarado.replace(p, '')
         enmascarado = PRODUCTO_RE.sub('', enmascarado)
-        for ok in allowlist:
-            enmascarado = enmascarado.replace(ok, '')
         hits = [c for c in enmascarado if c in marcadores]
         seqs = [s for s in SECUENCIAS_ES if s in enmascarado]
         if hits or seqs:
@@ -188,11 +192,18 @@ def validar(spoke_id, plano_es, plano_tr, glosario, protegidos, allowlist, lang)
                 if i >= 0:
                     frag = frag[max(0, i-30):i+30]; break
             errores.append(f'{ruta}: castellano {hits[:3]}{seqs} …{frag}…')
+        # El chequeo de glosario ignora lo que viva DENTRO de un literal
+        # protegido: «Kit de Tareas Chef Privado» contiene «Chef Privado» y ese
+        # producto va verbatim — flagearlo era un falso positivo (cazado en fr).
+        es_m, tr_m = es_v, tr_v
+        for p in sorted(protegidos, key=len, reverse=True):
+            es_m = es_m.replace(p, '∎')
+            tr_m = tr_m.replace(p, '∎')
         for k, v in glosario.items():
-            if k in es_v:
-                if k in tr_v:
+            if k in es_m:
+                if k in tr_m:
                     errores.append(f'{ruta}: conserva «{k}» (debe ser «{v}»)')
-                elif v not in tr_v:
+                elif v not in tr_m:
                     errores.append(f'{ruta}: falta el nombre oficial «{v}»')
         for p in protegidos:
             if p in es_v and p not in tr_v:
@@ -232,7 +243,7 @@ def traducir_spoke(spoke_id, plano_es, workdir, sysprompt, intento=1):
     payload = json.dumps(plano_es, ensure_ascii=False, indent=0)
     args = [BRIDGE_PY, BRIDGE, '--task', 'translation', '--strict-lang',
             '--temperature', '0.3' if intento == 1 else '0.2',
-            '--max-tokens', '20000', '--system', sysprompt,
+            '--max-tokens', '26000', '--system', sysprompt,
             '--prompt', payload, '--output', str(destino)]
     r = subprocess.run(args, capture_output=True, text=True, timeout=1200)
     if r.returncode != 0:

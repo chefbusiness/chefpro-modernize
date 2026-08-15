@@ -382,7 +382,7 @@
       "description": "Créez des plats contemporains uniques avec des ingrédients de saison et des techniques innovantes"
     },
     "catering_ai": {
-      "title": "Catering AI+",
+      "title": "Traiteur IA+",
       "description": "Modèle de connaissance alimenté par l'intelligence artificielle pour chefs, cuisiniers et entrepreneurs dans le secteur traiteur"
     },
     "food_pairing": {
@@ -398,7 +398,7 @@
       "description": "Travaillez avec des ingrédients d'avant-garde de la marque Sosa pour la haute cuisine"
     },
     "casual_restaurants": {
-      "title": "Casual Restaurants AI+",
+      "title": "Restaurants Décontractés AI+",
       "description": "Spécialisez-vous dans la gestion de restaurants décontractés avec des outils IA adaptés"
     },
     "menu_local_seo": {
@@ -641,7 +641,7 @@
     "q1": "Qu'est-ce qu'AI Chef Pro et comment peut-il m'aider en tant que chef ou professionnel de la gastronomie ?",
     "a1": "AI Chef Pro est une Suite d'Outils et Agents IA, des modèles entraînés pour l'usage quotidien des Chefs, Cuisiniers et professionnels de l'hôtellerie. Elle offre des outils qui boostent votre créativité, améliorent votre gestion et élargissent vos connaissances culinaires. En tant que leader dans n'importe quel domaine de la cuisine ou gastronomie, vous pourrez explorer de nouvelles combinaisons de saveurs, optimiser vos processus et rester à jour avec les dernières tendances gastronomiques. AI Chef Pro vous permet de vous concentrer sur votre passion culinaire pendant que l'IA vous assiste dans les tâches répétitives, vous aide à résoudre des scénarios et vous inspire avec de nouvelles idées.",
     "q2": "Quels outils spécifiques AI Chef Pro offre-t-il pour ma gestion professionnelle ?",
-    "a2": "AI Chef Pro offre une variété d'outils axés sur votre croissance en tant que chef : Catering AI+ pour la planification d'événements, Food Pairing AI pour découvrir des combinaisons innovantes, Mermas GenCal pour optimiser l'utilisation des ingrédients, ID Allergènes pour assurer la sécurité alimentaire, Mental Coach pour votre bien-être professionnel, et d'autres. Il inclut aussi des générateurs de recettes thématiques, chaque semaine le système lance une nouvelle agent IA dans la suite qui répond à une solution.",
+    "a2": "AI Chef Pro offre une variété d'outils axés sur votre croissance en tant que chef : Traiteur IA+ pour la planification d'événements, Food Pairing AI pour découvrir des combinaisons innovantes, Rendement GenCal pour optimiser l'utilisation des ingrédients, ID Allergènes pour assurer la sécurité alimentaire, Mental Coach pour votre bien-être professionnel, et d'autres. Il inclut aussi des générateurs de recettes thématiques, chaque semaine le système lance une nouvelle agent IA dans la suite qui répond à une solution.",
     "q3": "Comment fonctionne le plan AI Chef Membre ?",
     "a3": "Le plan AI Chef Membre coûte 10 € par mois et inclut 10 000 crédits mensuels avec accès aux 50+ outils. Lorsque vous avez besoin de plus, vous pouvez passer à AI Chef Premium Pro (25 €/mois, 85 000 crédits) ou supérieur. Sans engagement : vous changez de plan ou annulez quand vous voulez.",
     "q4": "Quel niveau d'expérience technologique ai-je besoin pour utiliser AI Chef Pro ?",
@@ -752,7 +752,7 @@
         "preview": "Aide aux questions techniques et planification de menus saisonniers"
       },
       "mermas_gencal": {
-        "name": "Mermas GenCal",
+        "name": "Rendement GenCal",
         "description": "Optimise rendements et réduit gaspillages",
         "preview": "Économise jusqu'à 30% sur les coûts d'ingrédients avec calculs précis"
       },
@@ -779,7 +779,7 @@
     },
     "concepts": {
       "catering_ai": {
-        "name": "Catering AI+",
+        "name": "Traiteur IA+",
         "description": "Spécialisez-vous dans le catering professionnel",
         "preview": "Menus pour événements avec logistique et coûts optimisés"
       },
@@ -799,7 +799,7 @@
         "preview": "Combinaisons uniques de boissons et accords parfaits"
       },
       "casual_restaurants_ai": {
-        "name": "Casual Restaurants AI+",
+        "name": "Restaurants Décontractés AI+",
         "description": "Gestion intégrale de restaurant",
         "preview": "Du menu jusqu'à l'expérience client"
       }

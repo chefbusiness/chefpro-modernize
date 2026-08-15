@@ -135,6 +135,20 @@ RE_NO_LATINO = re.compile(
 )
 
 
+def cadenas_productos():
+    """Nombres y descripciones ES de products-catalog.ts: los productos digitales
+    son ES-only POR DISEÑO (decisión de John) y sus tarjetas pintan español en
+    los 7 idiomas — no son una fuga del árbol de idioma. Se enmascaran antes de
+    buscar castellano, de largo a corto."""
+    src = (REPO / 'src/data/products-catalog.ts').read_text(encoding='utf-8')
+    lits = re.findall(r"(?:es|name)\s*:\s*'([^']{4,120})'", src)
+    lits += re.findall(r'(?:es|name)\s*:\s*"([^"]{4,120})"', src)
+    return sorted(set(lits), key=len, reverse=True)
+
+
+PRODUCTOS_ES = None
+
+
 def texto_visible(h):
     t = re.sub(r'<script.*?</script>|<style.*?</style>', ' ', h, flags=re.S)
     t = _html.unescape(re.sub(r'<[^>]+>', ' ', t))
@@ -194,6 +208,11 @@ def revisa_pagina(ident, h, lang, cfg, re_acento):
     t = texto_visible(h)
 
     marcadores = MARCADORES_COMUNES + cfg['marcadores']
+    global PRODUCTOS_ES
+    if PRODUCTOS_ES is None:
+        PRODUCTOS_ES = cadenas_productos()
+    for lit in PRODUCTOS_ES:
+        t = t.replace(lit, ' ')
     hits = {m: t.count(m) for m in marcadores if m in t}
     if hits:
         primero = next(iter(hits))
