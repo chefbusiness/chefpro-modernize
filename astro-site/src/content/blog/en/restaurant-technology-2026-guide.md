@@ -2,7 +2,7 @@
 title: "Restaurant Technology in 2026: The Definitive Guide to Modern Tech Stacks"
 description: "The restaurant industry is undergoing a technological transformation at an unprecedented pace. Restaurant technology spending is accelerating across all…"
 pubDate: 2026-04-01
-modDate: 2026-04-23
+modDate: 2026-08-15
 category: ai-in-gastronomy
 lang: en
 wpId: 3329
@@ -15,7 +15,7 @@ imageAlt: "Modern restaurant using tablet POS system with kitchen display in bac
 <p>This comprehensive guide maps the complete modern restaurant tech stack for 2026, helping you understand which technologies deliver the highest ROI, how to integrate them effectively, and which solutions—like AI Chef Pro—are leading the charge in artificial intelligence adoption for the foodservice industry.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">Add AI Intelligence to Your Restaurant Tech Stack</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro provides 55+ AI tools for <a href="https://aichef.pro/en/blog/ai-menu-engineering-software">menu engineering</a>, <a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">food cost</a> analysis, demand forecasting, and recipe management. Start free — 10 uses/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro provides 75+ AI tools for <a href="https://aichef.pro/en/blog/ai-menu-engineering-software">menu engineering</a>, <a href="https://aichef.pro/en/blog/ai-food-cost-calculator-reduce-costs">food cost</a> analysis, demand forecasting, and recipe management. Member plan — €10/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Explore AI Chef Pro →</a>
 </div>
 <figure style="margin: 32px 0; text-align: center;">

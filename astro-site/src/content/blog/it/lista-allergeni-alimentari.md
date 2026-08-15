@@ -2,7 +2,7 @@
 title: "I 14 allergeni alimentari: elenco completo e tabella da stampare per il menù"
 description: "Elenco ufficiale dei 14 allergeni del Reg. UE 1169/2011 con la numerazione, la tabella da stampare per il menù e gli ingredienti dove si nascondono."
 pubDate: 2026-08-08
-modDate: 2026-08-14
+modDate: 2026-08-15
 category: gestione-ristorante
 tags: ["allergeni", "haccp", "sicurezza alimentare", "normativa"]
 image: /blog-assets/2026/08/allergeni-destacada.jpg
@@ -221,7 +221,7 @@ peggio di nessuna tabella, perché ti dà una falsa sicurezza.</p>
 <p><strong><a href="https://itapp.aichef.pro/id-alergenos-g6b6g-it?utm_source=blog&utm_medium=cta&utm_content=lista-allergeni-alimentari" target="_blank" rel="noopener noreferrer">ID Allergeni</a></strong>
 fa questo lavoro partendo dalle tue ricette: incrocia ogni ingrediente con i 14 allergeni,
 segnala il rischio di contatto crociato e ti restituisce la tabella pronta da esportare.
-Puoi provarlo gratis su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=lista-allergeni-alimentari" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a>.</p>
+Puoi provarlo su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=lista-allergeni-alimentari" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a>.</p>
 <p>Resta comunque un principio che nessuno strumento sostituisce: <strong>la responsabilità
 della dichiarazione è tua</strong>. L'IA accelera la compilazione e non ti fa dimenticare il
 sedano nel fondo bruno, ma le etichette dei fornitori vanno lette e i cambi di ricetta vanno

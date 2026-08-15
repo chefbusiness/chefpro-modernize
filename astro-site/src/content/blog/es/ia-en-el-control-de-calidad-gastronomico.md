@@ -2,7 +2,7 @@
 title: "Control de Calidad en Restaurantes: Guía Práctica con IA"
 description: "Calidad constante plato a plato: fichas técnicas vivas, estandarización entre turnos, auditorías con checklist y el rol de la IA en cada punto."
 pubDate: 2025-12-27
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/ia-control-calidad-gastronomico-1.jpeg
 imageAlt: "IA en el Control de Calidad Gastronómico: Manual Técnico para Establecimientos Profesionales"
@@ -29,7 +29,7 @@ Llevo 29 años en alta hostelería y 15 como consultor. He visto decenas de rest
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 
@@ -137,7 +137,7 @@ No necesitas montar un sistema perfecto el lunes. Necesitas empezar. Aquí tiene
 2. **Monta un checklist de auditoría simple.** Usa la tabla del punto 3 como base, adáptala a tu cocina y empieza a aplicarla esta misma semana. No esperes a tenerla perfecta.
 3. **Activa la escucha de reseñas.** Dedica 15 minutos al día a revisar las reseñas nuevas de Google, Tripadvisor y TheFork. Anota patrones. Si tienes muchas, deja que la IA te haga el resumen semanal.
 4. **Compara un emplatado por turno.** Una vez al día, saca un plato al azar en el pase y compáralo con la foto de la ficha técnica. Si no coincide, corrige en el momento.
-5. **Prueba AI Chef Pro gratis.** Con el [plan gratuito](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=control-calidad) tienes 3.000 créditos al mes, sin tarjeta. Suficiente para generar esas 5 fichas, montar checklists y empezar a analizar reseñas. Si necesitas más, el plan Premium Pro son 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. Para grupos con varios locales, el plan Max Anual sale a 950 €/año. AI Chef Pro reúne más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. No es un chatbot genérico: está entrenado para cocina profesional.
+5. **Prueba AI Chef Pro.** Con el [plan gratuito](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=control-calidad) tienes 3.000 créditos al mes, sin tarjeta. Suficiente para generar esas 5 fichas, montar checklists y empezar a analizar reseñas. Si necesitas más, el plan Premium Pro son 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. Para grupos con varios locales, el plan Max Anual sale a 950 €/año. AI Chef Pro reúne más de 70 agentes de IA culinarios, en 7 idiomas, con español nativo. No es un chatbot genérico: está entrenado para cocina profesional.
 
 ## El siguiente paso
 
@@ -147,4 +147,4 @@ Según el Eurobarómetro 2025 de la EFSA sobre seguridad alimentaria, el 79% de 
 
 Empieza hoy. Coge un plato, genera su ficha técnica viva y compárala con lo que sale por el pase esta noche. Ahí empieza todo.
 
-[Prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=control-calidad) y monta tu primer sistema de calidad constante esta misma semana.
+[Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=control-calidad) y monta tu primer sistema de calidad constante esta misma semana.

@@ -2,7 +2,7 @@
 title: "Catering para Empresas: Precios y Escandallos por Evento"
 description: "Estructura de precios por tipo de evento, cómo escandallar cada servicio y montar presupuestos con IA para tu negocio de catering. Datos 2026."
 pubDate: 2026-03-25
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/catering-empresas-ia-1.jpg
 imageAlt: "Catering corporativo elegante en centro de conferencias con personal profesional"
@@ -19,7 +19,7 @@ faq:
     a: "Una propuesta ganadora incluye descripción del menú por momentos, alérgenos claros, número de personal, timing del servicio, condiciones de pago y tres niveles de precio (esencial, recomendado, premium) para que el cliente sienta que elige con tranquilidad. Añade también el plazo de validez de la oferta y una fecha límite de confirmación."
   - q: "¿Cómo ayuda la IA a montar presupuestos y operar un catering?"
     a: "La IA escala recetas al instante, calcula el food cost, genera fichas de producción, redacta la propuesta comercial adaptada al cliente y traduce a siete idiomas. Así reduces horas de oficina y dedicas el tiempo a cocinar y a cerrar eventos."
-  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan gratuito?"
+  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
     a: "El plan gratuito incluye 3.000 créditos al mes sin tarjeta. El Premium Pro cuesta 25 €/mes (85.000 créditos), el Plus 50 €/mes (175.000 créditos) y el Max 95 €/mes con créditos ilimitados. También existe la opción Max Anual por 950 €/año."
 ---
 

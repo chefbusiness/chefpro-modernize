@@ -2,7 +2,7 @@
 title: "Técnicas de Prefermento en Panadería: Poolish, Biga y Masa Madre con IA"
 description: "Poolish, biga, masa madre, levain, pâte fermentée, autólisis, tangzhong y yudane: hidratación, levadura, tiempos y temperaturas exactas para tu obrador."
 pubDate: 2026-01-16
-modDate: 2026-07-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2025/12/prefermentos-aichefpro-4.jpeg
 imageAlt: "Técnicas de Prefermento con las Apps de AI Chef Pro: Fermentus Con AI+ y Panadería Creativa"
@@ -31,7 +31,7 @@ faq:
 <p>No todas las masas previas son iguales: un poolish líquido no se comporta como una biga seca, y un tangzhong gelatinizado no fermenta pero cambia por completo la miga. En este artículo vamos a repasar cada técnica con los números exactos que necesitas —hidratación, tiempo, temperatura— para que sepas cuándo y por qué usar cada una, como si estuvieras charlando con un colega de profesión.</p>
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 

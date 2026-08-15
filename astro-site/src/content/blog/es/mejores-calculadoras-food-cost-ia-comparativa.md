@@ -2,7 +2,7 @@
 title: "Calculadora de Food Cost: Comparativa 2026 con IA y Excel"
 description: "Comparativa 2026 de calculadoras de food cost: tabla honesta, cuándo basta una hoja de Excel y cuándo necesitas IA. Incluye la de AI Chef Pro, gratis."
 pubDate: 2026-03-20
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/calculadora-food-cost-ia-img1.jpg
 imageAlt: "Las Mejores Calculadoras de Food Cost con IA 2026: Guía Comparativa"
@@ -138,7 +138,7 @@ Si después de probar el plan gratuito ves que la herramienta te encaja, estos s
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 | Probar sin compromiso, calcular algunos escandallos. |
+| Miembro | 10 € | 10.000 | Probar sin compromiso, calcular algunos escandallos. |
 | Premium Pro | 25 €/mes | 85.000 | Cocina profesional con uso frecuente. |
 | Plus | 50 €/mes | 175.000 | Restaurantes con carta amplia y varios usuarios. |
 | Max | 95 €/mes | Ilimitados | Grupos, cadenas o consultores gastronómicos. |

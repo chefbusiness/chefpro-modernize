@@ -27,21 +27,21 @@ const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
 
 const plans = [
   {
-    slug: 'gratis',
+    slug: 'lid',
     name: 'AI Chef Lid',
-    priceBig: 'Gratis',
-    priceSub: '€ 0 · voor altijd',
-    credits: '3.000 credits / maand',
+    priceBig: '€10',
+    priceSub: 'per maand · annuleer wanneer je wilt',
+    credits: '10.000 credits / maand',
     audience: 'Voor hulpkoks, koks en iedereen die het vrijblijvend wil uitproberen.',
     features: [
-      'Toegang tot de meer dan 70 AI-agenten',
-      '3.000 credits per maand',
+      'Toegang tot de meer dan 50 AI-agenten',
+      '10.000 credits per maand',
       'Receptenboeken van wereldkeukens',
       'Beschikbaar in 7 talen',
-      'Geen creditcard nodig',
+      'Creditcard vereist',
       'Ondersteuning per e-mail',
     ],
-    cta: 'Gratis Beginnen',
+    cta: 'Begin Nu',
     variant: 'outline',
     highlight: false,
   },
@@ -53,7 +53,7 @@ const plans = [
     credits: '85.000 credits / maand',
     audience: 'Voor chef-koks, executive chefs en restaurantmanagers.',
     features: [
-      'Alles van het gratis abonnement',
+      'Alles van het Lid-abonnement',
       '85.000 credits per maand',
       'Geavanceerde bedrijfstools',
       'Toegang tot alle wereldkeukens',
@@ -122,8 +122,8 @@ const plans = [
 const profiles = [
   {
     title: 'Individuele Chef of Kok',
-    body: 'Begin gratis met het Lid-abonnement en probeer de meer dan 70 agenten. Wanneer AI een vast onderdeel van je dag wordt, geeft Premium Pro je meer dan genoeg ruimte met 85.000 credits per maand.',
-    plan: 'Aanbevolen: Gratis → Premium Pro',
+    body: 'Begin met het Lid-abonnement voor €10 per maand en probeer de meer dan 50 agenten. Wanneer AI een vast onderdeel van je dag wordt, geeft Premium Pro je meer dan genoeg ruimte met 85.000 credits per maand.',
+    plan: 'Aanbevolen: Lid → Premium Pro',
   },
   {
     title: 'Restaurant',
@@ -139,12 +139,12 @@ const profiles = [
 
 const faqs = [
   {
-    q: 'Is er een gratis abonnement?',
-    a: 'Ja. Het AI Chef Lid-abonnement is voor altijd gratis: € 0, 3.000 credits per maand en toegang tot de meer dan 70 AI-agenten. Ideaal om de suite echt uit te proberen voordat je beslist.',
+    q: 'Is er een abonnement zonder contract?',
+    a: 'Ja. Het AI Chef Lid-abonnement heeft geen contract: je betaalt €10 per maand, ontvangt 10.000 credits per maand en hebt toegang tot de meer dan 50 AI-agenten. Je kunt op elk moment annuleren. Ideaal om de suite echt uit te proberen.',
   },
   {
     q: 'Heb ik een creditcard nodig?',
-    a: 'Niet voor het gratis abonnement: je registreert je en begint zonder betalingsgegevens in te voeren. Je hebt alleen een creditcard nodig wanneer je kiest voor een Premium-abonnement.',
+    a: 'Ja, voor alle abonnementen is een creditcard vereist. Je voert je betalingsgegevens in bij registratie, maar je kunt op elk moment annuleren zonder contract.',
   },
   {
     q: 'Kan ik op elk moment van abonnement wisselen?',
@@ -166,9 +166,9 @@ const faqs = [
 
 const title = 'Prijzen AI Chef Pro: Abonnementen voor Chefs en Restaurants';
 const description =
-  'Bekijk de prijzen van AI Chef Pro. Begin gratis met 3.000 credits per maand, zonder creditcard, of kies Premium vanaf € 25/maand met 70+ AI-agenten.';
+  'Bekijk de prijzen van AI Chef Pro. Begin met het Lid-abonnement voor €10 per maand, met 10.000 credits per maand en 50+ AI-agenten, of kies Premium vanaf € 25/maand met 50+ AI-agenten.';
 const keywords =
-  'prijzen ai chef pro, abonnementen ai chef pro, ai chef pro gratis, credits ai chef pro, ai voor restaurants prijs, software keuken ai prijs';
+  'prijzen ai chef pro, abonnementen ai chef pro, ai chef pro maandelijkse prijs, credits ai chef pro, ai voor restaurants prijs, software keuken ai prijs';
 
 const schemas = [
   {
@@ -222,13 +222,13 @@ const btnClass = (variant: string) => {
         Prijzen van AI Chef Pro: Abonnementen voor Chefs en Restaurants
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        Begin gratis, zonder creditcard en met 3.000 credits per maand. Wanneer je meer
+        Begin met het Lid-abonnement voor €10 per maand, met creditcard en 10.000 credits per maand. Wanneer je meer
         wilt, zijn de Premium-abonnementen er vanaf € 25/maand, en alleen het Max-abonnement
-        geeft je onbeperkte credits. Ze bevatten allemaal de meer dan 70 AI-agenten en 7 talen.
+        geeft je onbeperkte credits. Ze bevatten allemaal de meer dan 50 AI-agenten en 7 talen.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Gratis Beginnen
+          Begin Nu
         </a>
       </div>
     </header>
@@ -272,7 +272,7 @@ const btnClass = (variant: string) => {
         taken kosten weinig, de meer uitgebreide iets meer.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        De 3.000 gratis credits zijn genoeg om de suite echt te testen, niet alleen om even
+        De 10.000 credits zijn genoeg om de suite echt te testen, niet alleen om even
         te kijken. En als jouw operatie de AI nodig heeft zonder op de teller te letten,
         geeft het Premium Max-abonnement je onbeperkte credits.
       </p>
@@ -296,7 +296,7 @@ const btnClass = (variant: string) => {
           <tbody class="divide-y divide-border">
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Prijs</th>
-              <td class="p-4 text-center text-foreground">Gratis</td>
+              <td class="p-4 text-center text-foreground">€10/maand</td>
               <td class="p-4 text-center text-foreground">€ 25/mnd</td>
               <td class="p-4 text-center text-foreground">€ 50/mnd</td>
               <td class="p-4 text-center text-foreground">€ 95/mnd</td>
@@ -304,7 +304,7 @@ const btnClass = (variant: string) => {
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Credits / maand</th>
-              <td class="p-4 text-center text-foreground">3.000</td>
+              <td class="p-4 text-center text-foreground">10.000</td>
               <td class="p-4 text-center text-foreground">85.000</td>
               <td class="p-4 text-center text-foreground">175.000</td>
               <td class="p-4 text-center font-semibold text-accent-dark">Onbeperkt</td>
@@ -312,11 +312,11 @@ const btnClass = (variant: string) => {
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">AI-agenten</th>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">50+</td>
+              <td class="p-4 text-center text-foreground">50+</td>
+              <td class="p-4 text-center text-foreground">50+</td>
+              <td class="p-4 text-center text-foreground">50+</td>
+              <td class="p-4 text-center text-foreground">50+</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Talen</th>
@@ -379,15 +379,15 @@ const btnClass = (variant: string) => {
 
     <!-- Final CTA -->
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Begin Vandaag, Gratis en zonder Creditcard</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Begin Vandaag, zonder Contract</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Maak binnen een minuut een account aan, ontvang 3.000 credits per maand en probeer
-        de meer dan 70 AI-agenten voor chefs en restaurants. Je upgradet alleen wanneer je
+        Maak binnen een minuut een account aan, ontvang 10.000 credits per maand en probeer
+        de meer dan 50 AI-agenten voor chefs en restaurants. Je upgradet alleen wanneer je
         het nodig hebt.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Mijn Gratis Account Aanmaken
+          Mijn Account Aanmaken
         </a>
       </div>
     </section>

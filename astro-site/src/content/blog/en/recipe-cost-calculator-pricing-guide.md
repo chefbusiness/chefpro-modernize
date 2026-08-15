@@ -2,7 +2,7 @@
 title: "Recipe Cost Calculator: How to Price Every Dish for Maximum Profit"
 description: "The success of any restaurant hinges on one fundamental truth: you cannot manage what you cannot measure. Yet shockingly, most restaurant operators cannot…"
 pubDate: 2026-03-28
-modDate: 2026-04-23
+modDate: 2026-08-15
 category: ai-in-gastronomy
 lang: en
 wpId: 3313
@@ -303,7 +303,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <tr>
 <td><strong>AI Chef Pro</strong></td>
 <td>Free (10 uses/month)</td>
-<td>55+ AI tools, recipe scaling, menu engineering, supplier integration, automated price updates</td>
+<td>75+ AI tools, recipe scaling, menu engineering, supplier integration, automated price updates</td>
 <td>Professional chefs and restaurant owners seeking comprehensive AI-powered solution</td>
 <td>✓ Yes</td>
 </tr>
@@ -345,7 +345,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 </tbody>
 </table></div>
 <h3>Why AI Chef Pro Stands Out</h3>
-<p>AI Chef Pro offers a unique value proposition in the recipe costing space. With access to <strong>55+ AI-powered tools</strong>, users can:</p>
+<p>AI Chef Pro offers a unique value proposition in the recipe costing space. With access to <strong>75+ AI-powered tools</strong>, users can:</p>
 <ul>
 <li><strong>Automate recipe costing</strong> with intelligent ingredient matching</li>
 <li><strong>Scale recipes instantly</strong> without manual recalculation</li>
@@ -419,7 +419,7 @@ imageAlt: "Chef at workstation with laptop showing recipe costing spreadsheet an
 <p>The key is intentionality. Know your numbers and make conscious decisions rather than accidental sacrifices.</p>
 <div style="background: #f8f6f0; border-left: 4px solid #f0c040; padding: 24px; margin: 32px 0; text-align: left;">
 <p style="font-size: 18px; font-weight: 700; margin: 0 0 8px 0; color: #1a1a2e;">Still Using Spreadsheets for Recipe Costing?</p>
-<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro automates recipe cost calculations, accounts for waste and trim loss, and alerts you when ingredient prices change. 55+ AI tools from €25/month.</p>
+<p style="font-size: 15px; margin: 0 0 16px 0; color: #444444;">AI Chef Pro automates recipe cost calculations, accounts for waste and trim loss, and alerts you when ingredient prices change. 75+ AI tools from €10/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #1a1a2e; color: #f0c040; font-weight: 700; font-size: 15px; padding: 12px 28px; border-radius: 6px; text-decoration: none;">Upgrade Your Costing →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/post12-menu-costing.png" alt="Restaurant manager and chef reviewing menu with food cost percentages on tablet" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Data-driven menu pricing turns recipe costs into strategic decisions.</figcaption></figure>
 <h2>Advanced Recipe Costing Strategies</h2>

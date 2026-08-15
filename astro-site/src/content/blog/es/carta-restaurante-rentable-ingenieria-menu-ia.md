@@ -2,7 +2,7 @@
 title: "Ingeniería de Menú Restaurante: Carta Rentable con IA"
 description: "Ingeniería de menú para tu restaurante: la matriz de rentabilidad, un ejemplo numérico con 8 platos, psicología de precios de carta y automatización con IA."
 pubDate: 2026-03-24
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a4-ia-1.jpg
 imageAlt: "Chef y gerente diseñando carta rentable con IA"
@@ -114,7 +114,7 @@ AI Chef Pro cuenta con **más de 70 agentes de IA culinarios** en 7 idiomas con 
 
 Para la parte más operativa de la carta, puedes usar directamente el [generador de carta de menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y, si trabajas menús cerrados o eventos, el [generador de menú degustación](https://aichef.pro/generador-menu-degustacion) te ahorra horas de composición. Y como la ingeniería de menú no vive aislada, te conviene tener a mano el marco financiero completo que explico en [KPIs y métricas de rentabilidad de restaurante](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026).
 
-Puedes empezar sin compromiso. El **plan gratuito** te da 3.000 créditos al mes, sin tarjeta. Si necesitas más músculo, el plan **Premium Pro** son 25 €/mes (85.000 créditos), el **Plus** 50 €/mes (175.000 créditos), y el plan **Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Max Anual** cuesta 950 €/año. Lo sensato es arrancar con el plan gratuito, probar la matriz con tu carta real y decidir después. [Empieza gratis en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
+Puedes empezar sin compromiso. El **plan gratuito** te da 3.000 créditos al mes, sin tarjeta. Si necesitas más músculo, el plan **Premium Pro** son 25 €/mes (85.000 créditos), el **Plus** 50 €/mes (175.000 créditos), y el plan **Max** llega a 95 €/mes con créditos ilimitados. Si prefieres el pago anual, **Max Anual** cuesta 950 €/año. Lo sensato es arrancar con el plan gratuito, probar la matriz con tu carta real y decidir después. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=ingenieria-menu).
 
 ## Plan de acción en 5 pasos
 

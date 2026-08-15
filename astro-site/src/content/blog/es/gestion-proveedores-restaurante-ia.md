@@ -2,7 +2,7 @@
 title: "Gestión de Proveedores Restaurante: Más Margen con IA"
 description: "Convierte las compras en tu palanca de margen: compara precios, calcula pedidos, negocia con datos y controla albaranes con IA. Tabla de KPIs y checklist."
 pubDate: 2026-03-27
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a7-ia-1.jpg
 imageAlt: "Chef inspeccionando productos frescos en recepción"
@@ -17,8 +17,8 @@ faq:
     a: "Aplica un checklist de recepción sistemático: peso correcto, temperatura, estado visual, caducidad y coincidencia con el pedido. Pesa al menos una muestra de cada entrega, sobre todo en productos de alto valor. Las herramientas de IA pueden automatizar el cruce entre pedido, albarán y acuerdo de precios para señalar diferencias al instante."
   - q: "¿Qué KPIs de compras son imprescindibles para un restaurante?"
     a: "Los seis KPIs fundamentales son: cumplimiento de plazos de entrega, ratio de diferencias en albarán, desviación de precios frente al IPC de alimentos, food cost porcentual, concentración del gasto en los principales proveedores y días medios de cobertura de stock. Con estos seis indicadores tienes una radiografía completa de la salud de tus compras."
-  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan gratuito?"
-    a: "AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes, sin necesidad de tarjeta. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. También hay planes Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). La plataforma incluye más de 70 agentes de IA culinarios en 7 idiomas con español nativo."
+  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
+    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. El plan Premium Pro cuesta 25 €/mes con 85.000 créditos. También hay planes Plus (50 €/mes, 175.000 créditos) y Max (95 €/mes, créditos ilimitados). La plataforma incluye más de 70 agentes de IA culinarios en 7 idiomas con español nativo."
   - q: "¿Cómo puedo empezar a usar IA para gestionar mis proveedores?"
     a: "Empieza por el plan gratuito de AI Chef Pro, que te da 3.000 créditos mensuales sin tarjeta. Sube tus primeras ofertas de proveedores para comparar precios normalizados, calcula un pedido óptimo basado en tu consumo real y deja que los agentes te ayuden a preparar la próxima negociación con datos. En pocos minutos verás el potencial."
 ---

@@ -2,7 +2,7 @@
 title: "Umami: Concepto y Definición"
 description: "Descubre el quinto sabor fundamental en gastronomía. Comprende qué es el umami, su ciencia y aplicación culinaria."
 pubDate: 2026-02-10
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/05/umami-destacada.jpg
 imageAlt: "Ingredientes ricos en umami"
@@ -16,8 +16,8 @@ wpId: 2687
 <p>Durante décadas, Occidente fue escéptico. Se hablaba del umami como una curiosidad oriental. No fue hasta el año 2000 cuando investigadores de la Universidad de Miami confirmaron la existencia de receptores específicos para el glutamato en la lengua (los receptores mGluR4), lo que validó científicamente el quinto sabor a nivel mundial. Desde entonces, el umami ha pasado de leyenda culinaria a pilar fundamental en la cocina profesional.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 55+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=umami-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro gratis &rarr;</a></div>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=umami-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/umami-cuerpo.jpg" alt="Caldo dashi con alga kombu" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Alimentos ricos en umami: dónde encontrarlo de forma natural</h2>
 <p>La naturaleza está repleta de ingredientes que disparan los niveles de umami. La clave está en el ácido glutámico libre, que al combinarse con nucleótidos como el inosinato o el guanilato produce una sinergia que multiplica la sensación sabrosa hasta ocho veces. Estos son algunos de los campeones naturales del umami:</p>

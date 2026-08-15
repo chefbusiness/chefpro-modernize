@@ -2,7 +2,7 @@
 title: "AI Food Quality Control: How Machine Vision Is Transforming Restaurant Kitchens"
 description: "The restaurant industry is undergoing a technological revolution, and ai food quality control systems are at the forefront of this transformation. Machine…"
 pubDate: 2026-04-08
-modDate: 2026-04-23
+modDate: 2026-08-15
 category: ai-in-gastronomy
 lang: en
 wpId: 3357
@@ -19,7 +19,7 @@ faq:
 <p>This comprehensive guide explores the cutting-edge world of ai food quality control, examining how computer vision and machine learning algorithms are being deployed in restaurant kitchens worldwide. Whether you&#8217;re a restaurant owner, executive chef, or hospitality professional, understanding these technologies is essential for staying competitive in today&#8217;s demanding market.</p>
 <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0; color: #f0c040;">AI-Powered Kitchen Intelligence</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro offers 55+ AI tools to standardize recipes, optimize costs, and engineer menus. The perfect complement to machine vision quality systems.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #cccccc;">AI Chef Pro offers 75+ AI tools to standardize recipes, optimize costs, and engineer menus. The perfect complement to machine vision quality systems.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #f0c040; color: #1a1a2e; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Explore AI Chef Pro →</a></div>
 <figure style="margin: 32px 0; text-align: center;"><img decoding="async" src="/blog-assets/en/2026/03/computer-vision-food-quality-restaurant.png" alt="Computer vision analyzing food quality at plating station" style="max-width: 100%; height: auto; border-radius: 4px;" /><figcaption style="font-size: 14px; color: #666; margin-top: 8px;">Computer vision systems analyze every plate for portion accuracy, presentation consistency, and quality standards.</figcaption></figure>
 <h2>What Is AI Food Quality Control?</h2>
@@ -172,7 +172,7 @@ faq:
 <h2>Frequently Asked Questions About AI Food Quality Control</h2>
 <div style="background: linear-gradient(135deg, #0d7377 0%, #14a3a8 100%); border-radius: 8px; padding: 32px 24px; margin: 32px 0; text-align: center; color: #ffffff;">
 <p style="font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">Ready for AI-Powered Quality?</p>
-<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Start with recipe standardization and cost optimization using AI Chef Pro. 55+ tools, free tier — 10 uses/month.</p>
+<p style="font-size: 16px; margin: 0 0 20px 0; color: #e0f0f0;">Start with recipe standardization and cost optimization using AI Chef Pro. 75+ tools, free tier — 10 uses/month.</p>
 <p><a href="https://aichef.pro/en" target="_blank" rel="noopener" style="display: inline-block; background: #ffffff; color: #0d7377; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 6px; text-decoration: none;">Get Started Free →</a></div>
 <h2>Leading Companies in AI Food Quality Control</h2>
 <p>The AI food quality control market has grown rapidly, with several companies pioneering solutions that address different aspects of kitchen quality management. Understanding the landscape helps restaurant operators choose the right partner for their specific needs.</p>

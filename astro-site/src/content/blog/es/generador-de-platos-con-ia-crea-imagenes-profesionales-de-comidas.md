@@ -2,7 +2,7 @@
 title: "Generador de Platos con IA: Crea Imágenes Profesionales de Comida en Segundos"
 description: "En la era digital, la presentación visual de los platos es clave para el éxito gastronómico, ya que un 93% de los consumidores se siente influenciado por la…"
 pubDate: 2025-11-19
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/11/generador-de-platos-con-ia-3.jpeg
 imageAlt: "Generador de Platos con IA"
@@ -2123,7 +2123,7 @@ wpId: 1804
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro:</strong> Prueba gratis AI Chef Pro aquí en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=grupo-chefbusiness&#038;utm_content=bloque-grupo">https://aichef.pro</a>&nbsp;</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro:</strong> Prueba AI Chef Pro aquí en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=grupo-chefbusiness&#038;utm_content=bloque-grupo">https://aichef.pro</a>&nbsp;</p>
 
 
 

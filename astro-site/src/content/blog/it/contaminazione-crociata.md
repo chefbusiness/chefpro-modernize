@@ -2,7 +2,7 @@
 title: "Contaminazione crociata in cucina: esempi reali, allergeni e come evitarla in servizio"
 description: "Contaminazione crociata: scopri il codice colore dei 7 taglieri, i rischi in servizio (pinze, panni, friggitrice) e cosa verifica l'ispettore."
 pubDate: 2026-08-14
-modDate: 2026-08-14
+modDate: 2026-08-15
 category: gestione-ristorante
 tags: ["contaminazione crociata", "haccp", "sicurezza alimentare", "allergeni"]
 image: /blog-assets/2026/08/contaminazione-destacada.jpg
@@ -123,6 +123,6 @@ faq:
 
 <h2>Il controllo che non puoi fare a memoria</h2>
 <p>Hai visto che la contaminazione crociata si gioca nei dettagli: il colore del tagliere, l'ordine di lavorazione, la gestione degli allergeni. Ogni giorno in cucina fai scelte che proteggono i tuoi ospiti, ma quando il menù è lungo e la brigata corre, affidarsi solo alla memoria è un rischio che non puoi permetterti.</p>
-<p><strong><a href="https://itapp.aichef.pro/id-alergenos-g6b6g-it?utm_source=blog&utm_medium=cta&utm_content=contaminazione-crociata" target="_blank" rel="noopener noreferrer">ID Allergeni</a></strong> incrocia ogni ingrediente delle tue ricette con i 14 allergeni, valuta il rischio di contatto crociato e ti restituisce la tabella allergeni pronta da esportare per il menù. In pochi secondi hai un quadro chiaro, senza tabelle improvvisate o calcoli a mente. Puoi provarlo gratis su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=contaminazione-crociata" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a>. Ricorda: lo strumento ti supporta, ma la responsabilità finale delle scelte resta tua, come chef.</p>
+<p><strong><a href="https://itapp.aichef.pro/id-alergenos-g6b6g-it?utm_source=blog&utm_medium=cta&utm_content=contaminazione-crociata" target="_blank" rel="noopener noreferrer">ID Allergeni</a></strong> incrocia ogni ingrediente delle tue ricette con i 14 allergeni, valuta il rischio di contatto crociato e ti restituisce la tabella allergeni pronta da esportare per il menù. In pochi secondi hai un quadro chiaro, senza tabelle improvvisate o calcoli a mente. Puoi provarlo su <a href="https://itapp.aichef.pro/?utm_source=blog&utm_medium=cta&utm_content=contaminazione-crociata" target="_blank" rel="noopener noreferrer">itapp.aichef.pro</a>. Ricorda: lo strumento ti supporta, ma la responsabilità finale delle scelte resta tua, come chef.</p>
 
 <p>Riparti dalla tua cucina: guarda la pinza che hai in mano, il panno sul banco, il colore del tagliere. Se qualcosa non torna, fermati un secondo e sistemala. Il servizio può aspettare. Una contaminazione no.</p>

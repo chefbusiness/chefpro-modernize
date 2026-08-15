@@ -2,7 +2,7 @@
 // Sobre nosotros (ES) — página nativa Astro (BaseLayout + Header/Footer .astro).
 // Objetivo E-E-A-T: bio del fundador, historia de carrera y estándares editoriales
 // (lo prometido en public/llms.txt → /sobre-nosotros). SOLO ES por ahora → locales={['es']}.
-// HECHOS VERIFICADOS: +70 agentes IA · 7 idiomas · pricing live (ver /precios) · John Guerrero
+// HECHOS VERIFICADOS: +75 agentes IA · 7 idiomas · pricing live (ver /precios) · John Guerrero
 // 29 años alta hostelería / 15 consultoría · grupo ChefBusiness · info@aichef.pro.
 // Bio y estándares redactados con bridge.py (DeepSeek v4) y editados a mano. Sin claims fuera de hechos.
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -36,13 +36,13 @@ const bioChips = [
 const stats = [
   { big: '+70', label: 'Agentes de IA culinarios' },
   { big: '7', label: 'Idiomas (español nativo)' },
-  { big: '3.000', label: 'Créditos gratis al mes' },
-  { big: '0 €', label: 'Para empezar, sin tarjeta' },
+  { big: '10.000', label: 'Créditos al mes (plan Miembro)' },
+  { big: '10 €', label: 'Para empezar, sin permanencia' },
 ];
 
 // Resumen de precios (fuente de verdad: /precios). NO inventar.
 const pricingSummary = [
-  { name: 'Miembro', price: 'Gratis', detail: '3.000 créditos / mes · sin tarjeta' },
+  { name: 'Miembro', price: '10 €/mes', detail: '10.000 créditos / mes · sin permanencia' },
   { name: 'Premium Pro', price: '25 €/mes', detail: '85.000 créditos / mes' },
   { name: 'Premium Plus', price: '50 €/mes', detail: '175.000 créditos / mes' },
   { name: 'Premium Max', price: '95 €/mes', detail: 'Créditos ilimitados' },
@@ -86,7 +86,7 @@ const editorialStandards = [
 const faqs = [
   {
     q: '¿Qué es AI Chef Pro?',
-    a: 'Es una suite de más de 70 agentes de inteligencia artificial pensados para profesionales de la hostelería: escandallos, ingeniería de carta, APPCC, generación de contenidos, SEO local, planificación financiera y mucho más. Está disponible en 7 idiomas, con español nativo, y puedes empezar gratis con 3.000 créditos al mes y sin tarjeta.',
+    a: 'Es una suite de más de 75 agentes de inteligencia artificial pensados para profesionales de la hostelería: escandallos, ingeniería de carta, APPCC, generación de contenidos, SEO local, planificación financiera y mucho más. Está disponible en 7 idiomas, con español nativo, y puedes empezar con el plan Miembro por 10 € al mes, con 10.000 créditos.',
   },
   {
     q: '¿Quién está detrás del proyecto?',
@@ -102,7 +102,7 @@ const faqs = [
   },
   {
     q: '¿Cuánto cuesta usar AI Chef Pro?',
-    a: 'Puedes empezar gratis para siempre con el plan Miembro (3.000 créditos al mes, sin tarjeta). Los planes Premium van desde 25 €/mes (Pro, 85.000 créditos) a 50 €/mes (Plus, 175.000) y 95 €/mes (Max, créditos ilimitados), con opción anual de 950 €/año. Tienes el detalle completo en la página de precios.',
+    a: 'El plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos. Los planes Premium van desde 25 €/mes (Pro, 85.000 créditos) a 50 €/mes (Plus, 175.000) y 95 €/mes (Max, créditos ilimitados), con opción anual de 950 €/año. Tienes el detalle completo en la página de precios.',
   },
 ];
 
@@ -169,7 +169,7 @@ const schemas = [
     url: SITE,
     logo: `${SITE}/logo-ai-chef-pro.svg`,
     description:
-      'Suite de más de 70 agentes de IA para profesionales de la hostelería, en 7 idiomas y con español nativo.',
+      'Suite de más de 75 agentes de IA para profesionales de la hostelería, en 7 idiomas y con español nativo.',
     founder: { '@id': personId },
     email: 'info@aichef.pro',
     sameAs: [
@@ -226,14 +226,14 @@ const iconPaths: Record<string, string> = {
         AI Chef Pro: una IA para Cocineros, Creada Desde el Oficio
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        AI Chef Pro es una suite de más de 70 agentes de inteligencia artificial para
+        AI Chef Pro es una suite de más de 75 agentes de inteligencia artificial para
         profesionales de la hostelería: chefs, propietarios, gerentes, caterings,
         panaderías, heladerías y obradores. Está disponible en 7 idiomas, con español
         nativo, y la fundó un chef con casi tres décadas entre fogones y consultoría.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Empezar Gratis
+          Empezar Ahora
         </a>
       </div>
     </header>
@@ -285,7 +285,7 @@ const iconPaths: Record<string, string> = {
       <div class="mx-auto max-w-3xl text-center">
         <h2 class="text-2xl font-bold text-foreground md:text-3xl">Qué Hace la Suite Hoy</h2>
         <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Más de 70 agentes de IA cubren el día a día de un negocio de hostelería: recetas
+          Más de 75 agentes de IA cubren el día a día de un negocio de hostelería: recetas
           y escandallos, ingeniería de carta, APPCC, generación de contenidos, SEO local y
           planificación financiera. Todo en 7 idiomas y con español nativo.
         </p>
@@ -388,12 +388,12 @@ const iconPaths: Record<string, string> = {
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
       <h2 class="text-2xl font-bold text-foreground md:text-3xl">Prueba la IA Creada Desde la Cocina</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Crea tu cuenta gratis en un minuto, recibe 3.000 créditos al mes y prueba los más de
-        70 agentes de IA para chefs y restaurantes. Sin tarjeta y sin compromiso.
+        Crea tu cuenta en un minuto, elige el plan Miembro —10 €/mes con 10.000 créditos—
+        y prueba los más de 75 agentes de IA para chefs y restaurantes. Sin permanencia.
       </p>
       <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Empezar Gratis
+          Empezar Ahora
         </a>
         <a href="/precios" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
           Ver Precios

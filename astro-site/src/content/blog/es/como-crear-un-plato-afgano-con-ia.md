@@ -2,7 +2,7 @@
 title: "Cómo crear un plato afgano con IA, ¡receta súper exótica! Kabuli Pulao (Qabili Palau)"
 description: "La cocina afgana es un universo de sabores y texturas poco explorado en Occidente. Gracias a la integración de la inteligencia artificial en plataformas como…"
 pubDate: 2025-11-19
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: tutoriales
 image: /blog-assets/2025/11/Kabuli-Pulao-plato-afgano-con-AI-Chef-Pro.jpg
 imageAlt: "Kabuli Pulao plato afgano con AI Chef Pro"
@@ -237,7 +237,7 @@ wpId: 1786
 
 
 
-<p class="wp-block-paragraph"><strong>AI Chef Pro:</strong> Prueba gratis AI Chef Pro aquí en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=grupo-chefbusiness&#038;utm_content=bloque-grupo">https://aichef.pro</a>&nbsp;</p>
+<p class="wp-block-paragraph"><strong>AI Chef Pro:</strong> Prueba AI Chef Pro aquí en <a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=grupo-chefbusiness&#038;utm_content=bloque-grupo">https://aichef.pro</a>&nbsp;</p>
 
 
 

@@ -2,7 +2,7 @@
 title: "Cómo se Utiliza la IA en la Gastronomía: 6 Usos Reales"
 description: "Descubre cómo se utiliza la IA en la gastronomía en 2026: los 6 usos reales en cocina —escandallos, costes, cartas y APPCC— y por dónde empezar gratis."
 pubDate: 2026-03-02
-modDate: 2026-07-20
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Como-se-utiliza-la-IA-en-la-Gastronomia-1.jpg
 imageAlt: "Cómo se utiliza la IA en la Gastronomía"
@@ -150,13 +150,13 @@ La referencia mental es simple: 1 euro equivale aproximadamente a 1.000 crédito
 
 | Plan | Precio | Créditos/mes | Para quién |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 | Probar sin compromiso, sin tarjeta |
+| Miembro | 10 € | 10.000 | Probar sin compromiso, sin tarjeta |
 | Premium Pro | 25 €/mes | 85.000 | Un profesional o un local pequeño |
 | Plus | 50 €/mes | 175.000 | Restaurantes con volumen de trabajo |
 | Max | 95 €/mes | Ilimitados | Grupos y uso intensivo |
 | Max Anual | 950 €/año | Ilimitados | Compromiso anual con ahorro |
 
-Puedes [probar AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=como-se-usa) y empezar a usar los agentes hoy mismo, sin meter datos de pago.
+Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=como-se-usa) y empezar a usar los agentes hoy mismo, sin meter datos de pago.
 
 
 <figure><img loading="lazy" decoding="async" data-attachment-id="1188" data-orig-file="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" data-orig-size="768,1344" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Inteligencia-artificial-en-restaurantes-1" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" src="/blog-assets/2025/03/Inteligencia-artificial-en-restaurantes-1.jpg" alt="Inteligencia artificial en restaurantes" title="Inteligencia artificial en restaurantes" width="585" height="1024" class="aligncenter size-large wp-image-1188" /></figure>

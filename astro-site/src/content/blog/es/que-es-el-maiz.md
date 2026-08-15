@@ -2,7 +2,7 @@
 title: "¿Qué es el Maíz?"
 description: "El maíz es un cereal gramíneo perteneciente a la familia de las Poaceae, fundamental en la nutrición humana y animal. Se caracteriza por sus granos, que…"
 pubDate: 2025-02-17
-modDate: 2025-03-06
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2025/02/q_mjjen14uk.jpg
 imageAlt: "green corn plant - Qué es el maíz"
@@ -129,7 +129,7 @@ wpId: 794
 
 
 
-<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba Gratis <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
+<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
 
 
 

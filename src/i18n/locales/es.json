@@ -30,7 +30,7 @@
     "more": "más"
   },
   "cta": {
-    "primary": "PROBAR GRATIS AHORA",
+    "primary": "PROBAR AHORA",
     "secondary": "Prueba AI Chef Pro",
     "started": "Comenzar Ahora",
     "explore": "Explorar Agente",
@@ -42,7 +42,7 @@
     "title_prefix": "Transforma tu",
     "title_suffix": "con",
     "title_brand": "AI Chef Pro",
-    "subtitle": "55+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.",
+    "subtitle": "75+ Herramientas de IA Especializadas para Chefs. Desde Creatividad Culinaria hasta Marketing Digital.",
     "description": "Suite de Herramientas y Agentes de Inteligencia Artificial, modelos entrenados para el uso cotidiano de Chefs, Cocineros y profesionales de la hostelería.",
     "rating": "Calificación: 5 estrellas",
     "business_types": [
@@ -68,7 +68,7 @@
     "minutes_ago": "Hace {{minutes}} minutos"
   },
   "stats": {
-    "apps": "55+",
+    "apps": "75+",
     "apps_label": "Agentes IA Especializados",
     "cookbooks": "25+",
     "cookbooks_label": "Recetarios Regionales",
@@ -174,7 +174,7 @@
     }
   },
   "gallery": {
-    "badge": "55+ Agentes IA Especializados en Acción",
+    "badge": "75+ Agentes IA Especializados en Acción",
     "title": "Descubre el Poder de AI Chef Pro",
     "description": "Explora capturas reales de nuestros agentes IA especializados para profesionales gastronómicos",
     "previous": "Anterior",
@@ -507,19 +507,19 @@
     "most_popular": "Más Popular",
     "unlimited_badge": "Créditos Ilimitados",
     "uses_label": "CRÉDITOS",
-    "start_free": "Empezar Gratis",
+    "start_free": "Empezar AI Chef Pro",
     "select_plan": "Seleccionar Plan",
     "enterprise_question": "¿Necesitas un plan enterprise?",
     "contact_us": "Contáctanos para una solución personalizada",
     "plans": {
       "member": {
         "name": "AI Chef Miembro",
-        "price": "Gratis",
-        "uses": "3.000/mes",
+        "price": "10€",
+        "uses": "10.000/mes",
         "description": "Ideal para ayudantes de cocina, cocineros y jefes de partida",
         "features": {
-          "0": "Acceso a todas las 55+ herramientas",
-          "1": "3.000 créditos mensuales",
+          "0": "Acceso a todas las 75+ herramientas",
+          "1": "10.000 créditos mensuales",
           "2": "Recetarios mundiales",
           "3": "Soporte por email"
         }
@@ -531,7 +531,7 @@
         "uses": "85.000/mes",
         "description": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes",
         "features": {
-          "0": "Todas las 55+ herramientas incluidas",
+          "0": "Todas las 75+ herramientas incluidas",
           "1": "85.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -545,7 +545,7 @@
         "uses": "175.000/mes",
         "description": "Para empresarios gastronómicos y cadenas de restaurantes",
         "features": {
-          "0": "Todas las 55+ herramientas incluidas",
+          "0": "Todas las 75+ herramientas incluidas",
           "1": "175.000 créditos mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -559,7 +559,7 @@
         "uses": "∞",
         "description": "Créditos ilimitados mensuales para profesionales exigentes",
         "features": {
-          "0": "Todas las 55+ herramientas incluidas",
+          "0": "Todas las 75+ herramientas incluidas",
           "1": "Créditos ilimitados mensuales",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -577,7 +577,7 @@
         "discount": "Ahorra 2 meses",
         "description": "Ideal para Empresarios Gastronómicos, Dueños de Restaurantes y Directivos",
         "features": {
-          "0": "Todas las 55+ herramientas incluidas",
+          "0": "Todas las 75+ herramientas incluidas",
           "1": "Créditos ilimitados durante todo el año",
           "2": "Acceso a todas las cocinas del mundo",
           "3": "Herramientas avanzadas de negocio",
@@ -608,7 +608,7 @@
     "ai_powered": "Inteligencia Artificial Avanzada",
     "ai_powered_desc": "Modelos GPT especializados en gastronomía",
     "specialized": "Herramientas Especializadas",
-    "specialized_desc": "55+ agentes IA para cada necesidad gastronómica",
+    "specialized_desc": "75+ agentes IA para cada necesidad gastronómica",
     "global": "Cocina Global",
     "global_desc": "21 recetarios de cocinas del mundo",
     "business_tools": "Gestión de Negocio",
@@ -618,11 +618,11 @@
     "title": "Preguntas Frecuentes",
     "description": "Encuentra respuestas a las preguntas más comunes sobre AI Chef Pro",
     "q1": "¿Qué incluye AI Chef Pro?",
-    "a1": "AI Chef Pro incluye 55+ agentes IA especializados en gastronomía, desde creatividad culinaria hasta herramientas de negocio. Tendrás acceso a recetarios de 25 cocinas del mundo, generadores de recetas con IA, food pairing científico, herramientas de gestión y mucho más.",
+    "a1": "AI Chef Pro incluye 75+ agentes IA especializados en gastronomía, desde creatividad culinaria hasta herramientas de negocio. Tendrás acceso a recetarios de 25 cocinas del mundo, generadores de recetas con IA, food pairing científico, herramientas de gestión y mucho más.",
     "q2": "¿Puedo usar AI Chef Pro si soy principiante?",
     "a2": "¡Absolutamente! AI Chef Pro está diseñado para profesionales de todos los niveles. Nuestras herramientas incluyen explicaciones detalladas, técnicas paso a paso y coaching que te ayudarán a desarrollar tus habilidades gastronómicas.",
-    "q3": "¿Cómo funciona el plan gratuito?",
-    "a3": "El plan AI Chef Miembro es completamente gratuito y no requiere tarjeta de crédito. Incluye 3.000 créditos al mes con acceso a las 55+ herramientas. Cuando necesites más, puedes pasar al plan AI Chef Premium Pro (25€/mes), Premium Plus (50€/mes), Premium Max (95€/mes) o el plan Anual (950€/año) en cualquier momento.",
+    "q3": "¿Cómo funciona el plan AI Chef Miembro?",
+    "a3": "El plan AI Chef Miembro cuesta 10 € al mes e incluye 10.000 créditos mensuales con acceso a las 75+ herramientas. Cuando necesites más, puedes pasar a AI Chef Premium Pro (25 €/mes, 85.000 créditos) o superior. Sin permanencia: cambias de plan o cancelas cuando quieras.",
     "q4": "¿Las recetas se adaptan a diferentes tamaños de porción?",
     "a4": "Sí, todas nuestras herramientas incluyen cálculo automático de porciones. Puedes ajustar cualquier receta para 1 persona o para 1000 comensales, y nuestro sistema calculará automáticamente las cantidades exactas de cada ingrediente.",
     "q5": "¿Incluye soporte para restricciones alimentarias?",
@@ -653,7 +653,7 @@
     "nav_free_tools": "Herramientas Gratuitas",
     "contact_title": "Contacto",
     "plans_button": "Ver Planes",
-    "try_free_button": "Probar Gratis",
+    "try_free_button": "Probar AI Chef Pro",
     "follow_us": "Síguenos",
     "links": "Enlaces",
     "legal": "Legal",
@@ -672,7 +672,7 @@
     "glosario_ia": "Glosario IA",
     "glosario_culinario": "Glosario Científico Culinario",
     "roadmap": "Roadmap AI Chef Pro",
-    "app_tools": "55+ Herramientas en Agente IA",
+    "app_tools": "75+ Herramientas en Agente IA",
     "app_login": "Iniciar Sesión",
     "free_tools_hub": "Herramientas Gratuitas",
     "mentoria_online": "Mentoría Online",
@@ -993,15 +993,15 @@
     }
   },
   "seo": {
-    "title": "AI Chef Pro: 55+ Herramientas de IA para Chefs y Restaurantes",
-    "description": "Suite de inteligencia artificial para chefs y restaurantes. 55+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Prueba gratis.",
+    "title": "AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes",
+    "description": "Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Empieza hoy.",
     "keywords": "ai chef pro, ai chef, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, software restaurante ia, ia cocina profesional, agentes IA ia gastronomia, chef pro, aichef, apps IA cocina, aplicaciones IA hostelería, apps inteligencia artificial restaurante",
-    "og_image_alt": "AI Chef Pro - Suite de 55+ Herramientas de IA para Chefs Profesionales"
+    "og_image_alt": "AI Chef Pro - Suite de 75+ Herramientas de IA para Chefs Profesionales"
   },
   "pages": {
     "index": {
-      "seo_title": "AI Chef Pro: 55+ Herramientas de IA para Chefs y Restaurantes",
-      "seo_description": "Suite de inteligencia artificial para chefs y restaurantes. 55+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Prueba gratis.",
+      "seo_title": "AI Chef Pro: 75+ Herramientas de IA para Chefs y Restaurantes",
+      "seo_description": "Suite de inteligencia artificial para chefs y restaurantes. 75+ herramientas: recetas con IA, food cost, escandallos, marketing gastronomico. Empieza hoy.",
       "seo_keywords": "ai chef pro, chef ia, ia para restaurantes, inteligencia artificial hosteleria, herramientas ia chef, ia para chefs, ia cocina profesional, software restaurante ia, ai chef"
     },
     "mentoria_online": {
@@ -1103,7 +1103,7 @@
       "h1": "Reduce los costes de tu restaurante hasta un 35% con IA",
       "subtitle": "Controla mermas, optimiza el food cost y mejora el margen de cada plato sin hojas de Excel ni cálculos manuales.",
       "tagline": "La herramienta que usan más de {{userCount}} profesionales de la gastronomía.",
-      "cta_primary": "Empezar a ahorrar gratis",
+      "cta_primary": "Empezar a ahorrar",
       "cta_secondary": "Ver planes y precios",
       "no_card": "Sin tarjeta de crédito. Acceso inmediato."
     },
@@ -1221,7 +1221,7 @@
     },
     "pricing_section": {
       "title": "Empieza a reducir costes desde hoy",
-      "subtitle": "Prueba gratis con el plan Miembro. La suscripción se paga sola con lo que ahorras el primer mes.",
+      "subtitle": "Empieza con el plan Miembro por 10 € al mes. La suscripción se paga sola con lo que ahorras el primer mes.",
       "annual_note": "Planes anuales con 2 meses gratis. Sin permanencia."
     },
     "faq_section": {
@@ -1242,13 +1242,13 @@
       },
       {
         "question": "¿Funciona para restaurantes pequeños o solo para grandes grupos?",
-        "answer": "Funciona para cualquier tamaño. Desde el restaurante familiar con 40 cubiertos hasta grupos con 20 locales. El plan Miembro gratuito es ideal para empezar sin riesgo."
+        "answer": "Funciona para cualquier tamaño. Desde el restaurante familiar con 40 cubiertos hasta grupos con 20 locales. El plan Miembro por 10 € al mes es ideal para empezar sin permanencia."
       }
     ],
     "cta_section": {
       "title": "Deja de perder dinero. Empieza a controlar tus costes hoy.",
       "subtitle": "Únete a más de {{userCount}} profesionales que ya usan IA para proteger sus márgenes y hacer crecer su negocio.",
-      "primary": "Empezar gratis ahora",
+      "primary": "Empezar ahora",
       "secondary": "Ver todos los planes"
     },
     "testimonial": {
@@ -1260,18 +1260,18 @@
   "landingRestaurantes": {
     "seo": {
       "title": "Herramientas de IA para Restaurantes | AI Chef Pro",
-      "description": "55+ herramientas de inteligencia artificial para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Empieza gratis.",
+      "description": "75+ herramientas de inteligencia artificial para dueños de restaurantes. Controla costes, diseña carta, gestiona alérgenos y automatiza el marketing. Empieza hoy.",
       "keywords": "herramientas ia restaurante, inteligencia artificial restaurante, software ia hostelería, ia para dueños de restaurante, gestión restaurante con ia, food cost ia, carta digital ia, marketing restaurante ia",
       "url_slug": "herramientas-ia-para-restaurantes"
     },
     "hero": {
-      "badge": "55+ herramientas especializadas en hostelería",
+      "badge": "75+ herramientas especializadas en hostelería",
       "h1": "Herramientas de IA para Restaurantes",
       "subtitle": "La suite de inteligencia artificial diseñada para dueños de restaurantes, bares y cafeterías. Sin conocimientos técnicos. Sin curva de aprendizaje.",
       "tagline": "Controla costes · Diseña tu carta · Automatiza el marketing · Reduce mermas",
-      "cta_primary": "Empezar gratis ahora",
+      "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+      "no_card": "Sin permanencia · Cancela cuando quieras"
     },
     "results": [
       {
@@ -1287,7 +1287,7 @@
         "label": "reducción en desperdicio de comida"
       },
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "herramientas especializadas en gastronomía"
       }
     ],
@@ -1387,7 +1387,7 @@
     },
     "pricing_section": {
       "title": "Planes para cada tipo de negocio gastronómico",
-      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grandes operaciones.",
+      "subtitle": "Desde el plan Miembro por 10 € al mes hasta créditos ilimitados para grandes operaciones.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1396,7 +1396,7 @@
     "faq": [
       {
         "question": "¿Qué herramientas de IA son útiles para un restaurante?",
-        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro agrupa 55+ de estas herramientas especializadas en una sola suite."
+        "answer": "Las herramientas de IA más útiles para restaurantes incluyen: generadores de carta y menú digital, calculadoras de coste de plato, gestores de alérgenos, herramientas de marketing gastronómico para redes sociales, planificadores de compras y control de mermas. AI Chef Pro agrupa 75+ de estas herramientas especializadas en una sola suite."
       },
       {
         "question": "¿Puede la inteligencia artificial ayudar a reducir costes en un restaurante?",
@@ -1408,13 +1408,13 @@
       },
       {
         "question": "¿Cuánto cuesta usar IA para la gestión de restaurantes?",
-        "answer": "AI Chef Pro tiene un plan gratuito (AI Chef Miembro) con 3.000 créditos al mes. Los planes de pago empiezan en 25€/mes (AI Chef Premium Pro, 85.000 créditos) y llegan hasta 95€/mes para créditos ilimitados. También hay un plan anual a 950€ que equivale a 79€/mes."
+        "answer": "El plan de entrada es AI Chef Miembro: 10 € al mes con 10.000 créditos. Los planes Premium van desde 25 €/mes (AI Chef Premium Pro, 85.000 créditos) hasta 95 €/mes con créditos ilimitados. Sin permanencia."
       }
     ],
     "cta_section": {
       "title": "Empieza hoy con las herramientas de IA para tu restaurante",
-      "subtitle": "Plan gratuito disponible. Sin tarjeta de crédito. Acceso inmediato a 55+ herramientas especializadas en gastronomía y hostelería.",
-      "primary": "Probar gratis ahora",
+      "subtitle": "Sin permanencia · Cancela cuando quieras. Acceso inmediato a 75+ herramientas especializadas en gastronomía y hostelería.",
+      "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     },
     "breadcrumb": "Herramientas IA para Restaurantes",
@@ -1427,7 +1427,7 @@
   "landingMenu": {
     "seo": {
       "title": "Carta y Menú de Restaurante con IA | AI Chef Pro",
-      "description": "Crea la carta de tu restaurante con inteligencia artificial. Diseño de menú, ingeniería de carta, descripciones atractivas y gestión de alérgenos. Prueba gratis.",
+      "description": "Crea la carta de tu restaurante con inteligencia artificial. Diseño de menú, ingeniería de carta, descripciones atractivas y gestión de alérgenos. Empieza hoy.",
       "keywords": "carta restaurante ia, menú restaurante inteligencia artificial, diseño carta restaurante, ingeniería de menú, menu engineering, descripción platos ia, carta digital restaurante, alérgenos carta"
     },
     "hero": {
@@ -1435,9 +1435,9 @@
       "h1": "Carta y Menú de Restaurante con Inteligencia Artificial",
       "subtitle": "Diseña, optimiza y renueva la carta de tu restaurante con IA. Descripciones irresistibles, precios rentables, alérgenos gestionados y menús de temporada en minutos.",
       "tagline": "Diseña tu carta · Optimiza precios · Gestiona alérgenos · Renueva por temporada",
-      "cta_primary": "Crear mi carta gratis",
+      "cta_primary": "Crear mi carta",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+      "no_card": "Sin permanencia · Cancela cuando quieras"
     },
     "results": [
       {
@@ -1558,7 +1558,7 @@
     },
     "pricing_section": {
       "title": "Planes para diseñar cartas sin límites",
-      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grandes operaciones con múltiples cartas.",
+      "subtitle": "Desde el plan Miembro por 10 € al mes hasta créditos ilimitados para grandes operaciones con múltiples cartas.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1585,7 +1585,7 @@
     "cta_section": {
       "title": "Diseña la carta que tu restaurante merece",
       "subtitle": "Más de {{userCount}} profesionales ya usan AI Chef Pro para crear cartas rentables, atractivas y legalmente correctas.",
-      "primary": "Crear mi carta gratis",
+      "primary": "Crear mi carta",
       "secondary": "Ver todos los planes"
     },
     "breadcrumb": "Carta y Menú de Restaurante con IA"
@@ -1593,7 +1593,7 @@
   "landingMarketing": {
     "seo": {
       "title": "Marketing para Restaurantes con IA | AI Chef Pro",
-      "description": "Automatiza el marketing de tu restaurante con inteligencia artificial. Redes sociales, Google My Business, respuestas a reseñas y campañas en minutos. Prueba gratis.",
+      "description": "Automatiza el marketing de tu restaurante con inteligencia artificial. Redes sociales, Google My Business, respuestas a reseñas y campañas en minutos. Empieza hoy.",
       "keywords": "marketing restaurante ia, marketing hostelería inteligencia artificial, redes sociales restaurante ia, google my business restaurante, reseñas restaurante ia, contenido restaurante ia, publicidad restaurante ia"
     },
     "hero": {
@@ -1601,9 +1601,9 @@
       "h1": "Marketing para Restaurantes con Inteligencia Artificial",
       "subtitle": "Crea contenido para redes sociales, gestiona reseñas, optimiza tu ficha de Google y lanza campañas promocionales en minutos. Sin agencia, sin presupuesto disparado.",
       "tagline": "Redes sociales · Google My Business · Reseñas · Campañas · Email marketing",
-      "cta_primary": "Empezar gratis ahora",
+      "cta_primary": "Empezar ahora",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+      "no_card": "Sin permanencia · Cancela cuando quieras"
     },
     "results": [
       {
@@ -1619,7 +1619,7 @@
         "label": "valoración media de clientes en Google"
       },
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "herramientas de marketing gastronómico"
       }
     ],
@@ -1724,7 +1724,7 @@
     },
     "pricing_section": {
       "title": "Planes para automatizar tu marketing gastronómico",
-      "subtitle": "Desde el plan gratuito para empezar hasta los créditos ilimitados para grupos con múltiples locales.",
+      "subtitle": "Desde el plan Miembro por 10 € al mes hasta créditos ilimitados para grupos con múltiples locales.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1751,7 +1751,7 @@
     "cta_section": {
       "title": "Deja de improvisar. Automatiza el marketing de tu restaurante.",
       "subtitle": "Más de {{userCount}} restaurantes ya usan AI Chef Pro para crear contenido profesional, gestionar su reputación online y atraer más clientes.",
-      "primary": "Empezar gratis ahora",
+      "primary": "Empezar ahora",
       "secondary": "Ver todos los planes"
     },
     "breadcrumb": "Marketing para Restaurantes con IA"
@@ -1759,7 +1759,7 @@
   "landingChatGPT": {
     "seo": {
       "title": "ChatGPT para Restaurantes: la IA especializada | AI Chef Pro",
-      "description": "ChatGPT para restaurantes vs AI Chef Pro: descubre por qué la IA entrenada en gastronomía da mejores resultados que un modelo genérico. Prueba gratis.",
+      "description": "ChatGPT para restaurantes vs AI Chef Pro: descubre por qué la IA entrenada en gastronomía da mejores resultados que un modelo genérico. Empieza hoy.",
       "keywords": "chatgpt para restaurantes, chatgpt hostelería, chatgpt cocina, ia para restaurantes, chatgpt gastronomía, alternativa chatgpt restaurante, ia especializada hostelería"
     },
     "hero": {
@@ -1767,13 +1767,13 @@
       "h1": "ChatGPT para Restaurantes: por qué la IA especializada gana",
       "subtitle": "ChatGPT es una herramienta genérica. AI Chef Pro es la IA entrenada específicamente para chefs, cocineros y hosteleros.",
       "tagline": "Escandallos · Cartas · Alérgenos · Marketing gastronómico · Control de costes",
-      "cta_primary": "Probar AI Chef Pro gratis",
+      "cta_primary": "Probar AI Chef Pro",
       "cta_secondary": "Ver planes y precios",
-      "no_card": "Sin tarjeta de crédito · Plan gratuito disponible"
+      "no_card": "Sin permanencia · Cancela cuando quieras"
     },
     "results": [
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "herramientas entrenadas en gastronomía"
       },
       {
@@ -1927,7 +1927,7 @@
     },
     "pricing_section": {
       "title": "Precio justo para la IA que tu restaurante merece",
-      "subtitle": "Desde gratis para empezar hasta créditos ilimitados para grandes operaciones.",
+      "subtitle": "Desde 10 € al mes hasta créditos ilimitados para grandes operaciones.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -1954,7 +1954,7 @@
     "cta_section": {
       "title": "La IA de hostelería que ChatGPT no puede ser",
       "subtitle": "Más de {{userCount}} chefs y restauradores ya han elegido la IA especializada en gastronomía.",
-      "primary": "Probar AI Chef Pro gratis",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },
     "breadcrumb": "ChatGPT para Restaurantes"
@@ -1962,7 +1962,7 @@
   "landingSoftwareGestion": {
     "seo": {
       "title": "Software Gestión de Cocina con IA | AI Chef Pro",
-      "description": "Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. Más de 5.000 restaurantes ya lo usan. Empieza gratis.",
+      "description": "Software de gestión de cocina con IA: escandallos, inventario, recetas y alérgenos en un solo lugar. Más de 5.000 restaurantes ya lo usan. Empieza hoy.",
       "keywords": "software gestión cocina, gestión restaurante IA, programa gestión hostelería, software cocina profesional, gestión inventario restaurante, food cost IA"
     },
     "breadcrumb": "Software Gestión de Cocina con IA",
@@ -1971,7 +1971,7 @@
       "h1": "Software de Gestión de Cocina con IA para Restaurantes",
       "subtitle": "Controla escandallos, inventario, recetas y alérgenos desde una sola plataforma. La IA especializada que entiende la cocina profesional.",
       "tagline": "Ahorra hasta 3 horas diarias en gestión de cocina.",
-      "cta_primary": "Probar gratis ahora",
+      "cta_primary": "Probar ahora",
       "cta_secondary": "Ver planes y precios",
       "no_card": "Sin tarjeta de crédito · Acceso inmediato"
     },
@@ -1985,7 +1985,7 @@
         "label": "Restaurantes activos"
       },
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "Herramientas de cocina IA"
       },
       {
@@ -2007,7 +2007,7 @@
         {
           "feature": "Gestión de recetas",
           "other": "Ficheros Word o papel",
-          "aichef": "55+ herramientas IA especializadas"
+          "aichef": "75+ herramientas IA especializadas"
         },
         {
           "feature": "Control de alérgenos",
@@ -2127,7 +2127,7 @@
     },
     "pricing_section": {
       "title": "Software de gestión de cocina con IA desde 0€",
-      "subtitle": "Empieza gratis y escala cuando tu negocio lo necesite. Sin permanencia.",
+      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Sin permanencia.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -2136,7 +2136,7 @@
     "faq": [
       {
         "question": "¿Qué es un software de gestión de cocina con IA?",
-        "answer": "Es una plataforma que usa inteligencia artificial para automatizar las tareas de gestión de cocina: escandallos, inventario, recetas, alérgenos y análisis de rentabilidad. AI Chef Pro integra 55+ herramientas especializadas en hostelería."
+        "answer": "Es una plataforma que usa inteligencia artificial para automatizar las tareas de gestión de cocina: escandallos, inventario, recetas, alérgenos y análisis de rentabilidad. AI Chef Pro integra 75+ herramientas especializadas en hostelería."
       },
       {
         "question": "¿Puedo gestionar mis escandallos con AI Chef Pro?",
@@ -2154,7 +2154,7 @@
     "cta_section": {
       "title": "Empieza a gestionar tu cocina con IA hoy mismo",
       "subtitle": "Más de {{userCount}} profesionales de la hostelería ya usan AI Chef Pro para gestionar su cocina con más control y menos tiempo.",
-      "primary": "Probar gratis ahora",
+      "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     }
   },
@@ -2170,7 +2170,7 @@
       "h1": "Recetas con IA para Restaurantes: 25 Cocinas del Mundo",
       "subtitle": "Genera recetas técnicamente correctas al instante. Menús de temporada, fichas técnicas profesionales y escalado automático de raciones para tu restaurante.",
       "tagline": "Del concepto al plato en minutos, no en horas.",
-      "cta_primary": "Probar gratis ahora",
+      "cta_primary": "Probar ahora",
       "cta_secondary": "Ver planes y precios",
       "no_card": "Sin tarjeta de crédito · Acceso inmediato"
     },
@@ -2188,7 +2188,7 @@
         "label": "Menos tiempo en desarrollo de carta"
       },
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "Herramientas especializadas"
       }
     ],
@@ -2326,7 +2326,7 @@
     },
     "pricing_section": {
       "title": "Accede al generador de recetas con IA desde 0€",
-      "subtitle": "Empieza gratis y escala cuando tu negocio lo necesite. Sin permanencia.",
+      "subtitle": "Empieza con el plan Miembro y escala cuando tu negocio lo necesite. Sin permanencia.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -2353,14 +2353,14 @@
     "cta_section": {
       "title": "Empieza a crear recetas con IA para tu restaurante",
       "subtitle": "Más de {{userCount}} chefs y restauradores ya usan AI Chef Pro para crear recetas profesionales en minutos.",
-      "primary": "Probar gratis ahora",
+      "primary": "Probar ahora",
       "secondary": "Ver todos los planes"
     }
   },
   "landingEscandallos": {
     "seo": {
       "title": "Escandallos Restaurante con IA: Food Cost Automático | AI Chef Pro",
-      "description": "Calcula escandallos y food cost de tu restaurante con IA en 2 minutos. Control de mermas, precio de venta óptimo y análisis de rentabilidad por plato. Empieza gratis.",
+      "description": "Calcula escandallos y food cost de tu restaurante con IA en 2 minutos. Control de mermas, precio de venta óptimo y análisis de rentabilidad por plato. Empieza hoy.",
       "keywords": "escandallos restaurante, food cost IA, calcular escandallo, control costes restaurante, precio venta plato, mermas cocina, rentabilidad platos"
     },
     "breadcrumb": "Escandallos Restaurante con IA",
@@ -2369,7 +2369,7 @@
       "h1": "Escandallos de Restaurante con IA: Food Cost en 2 Minutos",
       "subtitle": "Calcula el coste exacto de cada plato al instante. Control de mermas, precio de venta óptimo y análisis de rentabilidad para maximizar el beneficio de tu restaurante.",
       "tagline": "Deja de perder dinero por no controlar tu food cost.",
-      "cta_primary": "Calcular mi food cost gratis",
+      "cta_primary": "Calcular mi food cost",
       "cta_secondary": "Ver planes y precios",
       "no_card": "Sin tarjeta de crédito · Acceso inmediato"
     },
@@ -2387,7 +2387,7 @@
         "label": "Restaurantes activos"
       },
       {
-        "metric": "55+",
+        "metric": "75+",
         "label": "Herramientas especializadas"
       }
     ],
@@ -2525,7 +2525,7 @@
     },
     "pricing_section": {
       "title": "Empieza a controlar tu food cost desde 0€",
-      "subtitle": "Calcula tus primeros escandallos gratis. Sin tarjeta, sin permanencia.",
+      "subtitle": "Escandalla tu carta completa con el plan Miembro por 10 € al mes. Sin permanencia.",
       "annual_note": "También disponible plan anual AI Chef Premium Max Anual a 950€/año · Ahorra 2 meses"
     },
     "faq_section": {
@@ -2552,7 +2552,7 @@
     "cta_section": {
       "title": "Empieza a controlar tu food cost con IA hoy mismo",
       "subtitle": "Más de {{userCount}} restaurantes ya usan AI Chef Pro para calcular escandallos y proteger su margen.",
-      "primary": "Calcular mi food cost gratis",
+      "primary": "Calcular mi food cost",
       "secondary": "Ver todos los planes"
     }
   },
@@ -2634,9 +2634,9 @@
     },
     "cta": {
       "title": "¿Necesitas más potencia?",
-      "subtitle": "Estas herramientas son solo una muestra de las 55+ funciones de IA disponibles en AI Chef Pro Premium.",
+      "subtitle": "Estas herramientas son solo una muestra de las 75+ funciones de IA disponibles en AI Chef Pro Premium.",
       "primary": "Ver Plan Premium",
-      "secondary": "Empezar gratis"
+      "secondary": "Empezar AI Chef Pro"
     }
   },
   "toolFoodCost": {
@@ -2728,9 +2728,9 @@
       "subtitle": "La calculadora gratuita es una muestra. Con AI Chef Pro calculas toda tu carta con control de mermas y actualización automática de precios.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -2777,7 +2777,7 @@
     "cta_section": {
       "title": "Automatiza todos tus escandallos con IA",
       "subtitle": "Con AI Chef Pro calculas el food cost de toda tu carta en minutos, con control de mermas y actualización automática cuando cambian los precios.",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
   },
@@ -2874,9 +2874,9 @@
       "subtitle": "El simulador básico es gratuito. Con AI Chef Pro obtienes análisis por plato, proyecciones anuales y alertas de desviación de costes.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -2923,7 +2923,7 @@
     "cta_section": {
       "title": "Optimiza la rentabilidad de tu restaurante con IA",
       "subtitle": "AI Chef Pro analiza tu food cost, margen por plato y rentabilidad global para que tomes las mejores decisiones financieras.",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
   },
@@ -2950,7 +2950,7 @@
       "restart": "Repetir test",
       "start_btn": "Empezar test →",
       "next_steps_title": "Próximos pasos recomendados:",
-      "try_free": "Probar AI Chef Pro gratis",
+      "try_free": "Probar AI Chef Pro",
       "cta_after": "¿Listo para dar el salto digital con IA?",
       "pdf_download": "Descargar Informe PDF",
       "pdf_filename": "informe-digitalizacion",
@@ -3124,9 +3124,9 @@
       "subtitle": "El test te dice dónde estás. AI Chef Pro te da las herramientas para llegar más lejos.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -3172,8 +3172,8 @@
     ],
     "cta_section": {
       "title": "Digitaliza tu restaurante con IA hoy mismo",
-      "subtitle": "AI Chef Pro es la suite de IA más completa para gastronomía: 55+ herramientas para gestionar tu restaurante con inteligencia artificial.",
-      "primary": "Probar gratis AI Chef Pro",
+      "subtitle": "AI Chef Pro es la suite de IA más completa para gastronomía: 75+ herramientas para gestionar tu restaurante con inteligencia artificial.",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
   },
@@ -3209,7 +3209,7 @@
       "cta_after": "¿Quieres gestionar los alérgenos de toda tu carta de forma automática?",
       "allergens_title": "Los 14 alérgenos de declaración obligatoria",
       "allergens_subtitle": "Reglamento (UE) 1169/2011",
-      "try_free": "Probar AI Chef Pro gratis",
+      "try_free": "Probar AI Chef Pro",
       "pdf_download": "Descargar Ficha PDF",
       "pdf_filename": "ficha-alergenos",
       "pdf_title": "FICHA TÉCNICA DE ALÉRGENOS",
@@ -3493,9 +3493,9 @@
       "subtitle": "El detector básico es gratuito. Con AI Chef Pro gestionas los alérgenos de toda tu carta con alertas automáticas.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -3542,7 +3542,7 @@
     "cta_section": {
       "title": "Gestiona los alérgenos de toda tu carta con IA",
       "subtitle": "Con AI Chef Pro gestionas los alérgenos de cada plato automáticamente, con alertas cuando cambias ingredientes y ficha exportable para tu carta.",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },
     "allergens_section": {
@@ -3657,9 +3657,9 @@
       "subtitle": "La calculadora básica es gratuita. Con AI Chef Pro optimizas turnos, costes de personal y productividad de tu brigada.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -3706,7 +3706,7 @@
     "cta_section": {
       "title": "Optimiza la gestión de tu equipo con IA",
       "subtitle": "AI Chef Pro te ayuda a gestionar turnos, calcular costes de personal y optimizar la productividad de tu brigada.",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
   },
@@ -3892,9 +3892,9 @@
       "note": "Sin compromiso · Cancela cuando quieras",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -3947,7 +3947,7 @@
       "subtitle": "Genera tu calendario editorial ahora y lleva la presencia digital de tu restaurante al siguiente nivel.",
       "cta_primary": "Generar mi calendario gratis",
       "cta_secondary": "Ver todas las herramientas",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     }
   },
@@ -4043,7 +4043,7 @@
       "subtitle": "Genera textos profesionales para cada plato y eleva la percepción de tu restaurante.",
       "cta_primary": "Generar textos gratis",
       "cta_secondary": "Ver todas las herramientas",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },
     "pricing": {
@@ -4051,9 +4051,9 @@
       "subtitle": "El generador gratuito es un punto de partida. Con AI Chef Pro Premium creas los textos de toda tu carta optimizados para SEO local y conversión.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -4165,7 +4165,7 @@
       "subtitle": "Genera propuestas en segundos y adapta el resultado a la identidad de tu restaurante.",
       "cta_primary": "Crear menú degustación gratis",
       "cta_secondary": "Ver todas las herramientas",
-      "primary": "Probar gratis AI Chef Pro",
+      "primary": "Probar AI Chef Pro",
       "secondary": "Ver todos los planes"
     },
     "pricing": {
@@ -4173,9 +4173,9 @@
       "subtitle": "El generador gratuito crea la estructura del menú. Con AI Chef Pro Premium generas recetas completas, escandallos y fichas técnicas para cada pase.",
       "plans": [
         {
-          "name": "Gratis",
-          "price": "0€/mes",
-          "uses": "3.000 créditos/mes",
+          "name": "Miembro",
+          "price": "10€/mes",
+          "uses": "10.000 créditos/mes",
           "highlight": false
         },
         {
@@ -4201,7 +4201,7 @@
   },
   "schema": {
     "offers": {
-      "miembro": "Acceso básico gratuito. 3.000 créditos/mes.",
+      "miembro": "Plan de entrada: 10 €/mes con 10.000 créditos mensuales.",
       "premium_pro": "Para Chefs de Cocina, Chefs Ejecutivos y Gerentes de Restaurantes. 85.000 créditos/mes.",
       "premium_plus": "Para empresarios gastronómicos y cadenas de restaurantes. 175.000 créditos/mes.",
       "premium_max": "Créditos ilimitados mensuales para profesionales exigentes.",

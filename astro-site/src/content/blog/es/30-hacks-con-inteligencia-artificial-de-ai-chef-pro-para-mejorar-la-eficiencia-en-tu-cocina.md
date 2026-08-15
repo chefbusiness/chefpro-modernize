@@ -2,7 +2,7 @@
 title: "Trucos de IA para Cocina Profesional: 30 Hacks por Área"
 description: "30 hacks de IA para cocina profesional organizados por área: escandallos, cartas, marketing y operativa. Cada truco con su instrucción lista para usar."
 pubDate: 2026-02-14
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: libreria-de-prompts
 image: /blog-assets/2026/02/hacks-ai-chef-pro-1.jpg
 imageAlt: "30 Hacks de AI Chef Pro para Mejorar la Eficiencia en tu Cocina"
@@ -39,7 +39,7 @@ Lo que te llevas es un mapa práctico: cada área suma 6 atajos que transforman 
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 
@@ -236,7 +236,7 @@ AI Chef Pro reúne más de 70 agentes de IA culinarios, en 7 idiomas, con españ
 
 | Plan | Créditos mensuales | Precio |
 | :--- | :--- | :--- |
-| Gratuito | 3.000 | 0 € (sin tarjeta) |
+| Miembro | 10.000 | 10 €/mes |
 | Premium Pro | 85.000 | 25 €/mes |
 | Plus | 175.000 | 50 €/mes |
 | Max | Ilimitados | 95 €/mes (950 €/año) |

@@ -2,7 +2,7 @@
 title: "Prompt Engineering para Chefs: Guía Práctica de Prompts 2026"
 description: "Domina el prompt engineering para chefs: anatomía de un buen prompt (rol, contexto, tarea, formato), 10 ejemplos antes/después y errores a evitar."
 pubDate: 2026-03-10
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ai-chef-pro
 image: /blog-assets/2026/02/prompteng-nanobanana.jpg
 imageAlt: "Prompt Engineering para Chefs: Guía Definitiva 2026"
@@ -122,6 +122,6 @@ Estos son los planes disponibles en 2026:
 
 No necesitas aprender a formular prompts complejos si no quieres; los agentes ya llevan la estructura incorporada. Pero si además dominas los fundamentos que has visto en esta guía, podrás personalizar cualquier respuesta al detalle y exprimir al máximo la herramienta. Si quieres profundizar, descárgate el [eBook Pro Prompts](https://aichef.pro/pro-prompts-ebook) con nuestra biblioteca de prompts profesionales y empieza a trabajar con la IA como un miembro más de tu brigada.
 
-[Prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=prompt-engineering) y comprueba en tu próxima producción lo que un buen prompt puede hacer por tu cocina.
+[Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=prompt-engineering) y comprueba en tu próxima producción lo que un buen prompt puede hacer por tu cocina.
 
 

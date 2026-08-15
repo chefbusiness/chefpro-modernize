@@ -2,7 +2,7 @@
 title: "AI Chef Pro Funciones Avanzadas: Técnicas de Power User"
 description: "Funciones avanzadas de AI Chef Pro para power users: encadenar agentes, briefs reutilizables y flujos semanales. Técnicas reales, sin humo, con precios 2026."
 pubDate: 2025-10-01
-modDate: 2026-07-20
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/AI-Chef-Pro-Advanced-1.jpeg
 imageAlt: "AI Chef Pro Advanced: Funciones Ocultas que Solo Usan los Top Chefs"
@@ -176,4 +176,4 @@ Las cuatro técnicas que hemos visto son acumulativas: puedes empezar por una y 
 
 AI Chef Pro pone a tu disposición más de 70 agentes en 7 idiomas con español nativo. Lo que hagas con ellos depende de cómo los uses. Las «funciones avanzadas» no son un menú escondido: son estas técnicas que acabas de leer, al alcance de cualquiera que quiera trabajar con método.
 
-[Empieza gratis en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=avanzado) y aplica hoy mismo la primera técnica.
+[Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=avanzado) y aplica hoy mismo la primera técnica.

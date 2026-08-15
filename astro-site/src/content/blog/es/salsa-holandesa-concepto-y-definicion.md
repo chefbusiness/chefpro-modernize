@@ -2,7 +2,7 @@
 title: "Salsa Holandesa: Concepto y Definición"
 description: "Emulsión clásica de yemas y mantequilla. Prepara holandesa sin cortar."
 pubDate: 2026-02-21
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/05/holandesa-destacada.jpg
 imageAlt: "Salsa holandesa emulsionada amarilla"
@@ -16,8 +16,8 @@ wpId: 2737
 <p>Pero más allá de la teoría, lo que todo cocinero aprende rápido es que la holandesa no perdona. No es una salsa que puedas abandonar unos segundos en el fuego mientras despachas otra partida. Exige atención, respeto por la temperatura y una comprensión clara del proceso de <a href="https://aichef.pro/blog/emulsion-concepto-definicion" title="Qué es una emulsión culinaria">emulsión</a>. Si entiendes esto —que la mantequilla no se mezcla con el agua del zumo de limón y la yema por arte de magia— dominar la holandesa se convierte en una cuestión de técnica, no de suerte.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 55+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=salsa-holandesa-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro gratis &rarr;</a></div>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=salsa-holandesa-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/holandesa-cuerpo.jpg" alt="Huevos benedict con salsa holandesa" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Qué es la salsa holandesa exactamente: estructura y función</h2>
 <p>Volviendo a la pregunta central de <strong>qué es la salsa holandesa</strong> en términos prácticos: hablamos de una emulsión de grasa (mantequilla clarificada) en agua ácida (zumo de limón o, en versiones más clásicas, una reducción de vinagre). La yema de huevo actúa como agente emulsionante gracias a la lecitina que contiene, que es capaz de unir dos líquidos que normalmente se repelerían.</p>

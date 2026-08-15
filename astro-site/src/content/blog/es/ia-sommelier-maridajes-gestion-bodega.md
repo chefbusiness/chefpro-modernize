@@ -2,7 +2,7 @@
 title: "IA para Sommelier: Maridajes Inteligentes y Gestión de Bodega 2026"
 description: "La figura del sommelier ha evolucionado dramáticamente en los últimos años. Lo que antes era un profesional basado exclusivamente en el conocimiento…"
 pubDate: 2026-03-30
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: tutoriales
 image: /blog-assets/2026/03/b2-1.jpg
 imageAlt: "Sommelier catando vino en bodega elegante de restaurante"
@@ -104,7 +104,7 @@ wpId: 3443
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #f5c518; padding: 28px 32px; margin: 40px 0; border-radius: 2px;">
 <p style="color: #f5c518; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">Maridajes Perfectos con IA</p>
 <p style="color: #e0e0e0; font-size: 15px; line-height: 1.7; margin: 0 0 18px 0;">AI Chef Pro sugiere maridajes basados en perfiles aromaticos y preferencias del comensal.</p>
-<p><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #f5c518; color: #1a1a1a; padding: 12px 28px; font-weight: 700; text-decoration: none; border-radius: 2px; font-size: 15px;">Probar Gratis</a></p>
+<p><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #f5c518; color: #1a1a1a; padding: 12px 28px; font-weight: 700; text-decoration: none; border-radius: 2px; font-size: 15px;">Probar AI Chef Pro</a></p>
 </div>
 <h2>Carta de Vinos Rentable: Estrategia de Pricing</h2>
 <p>La carta de vinos es el instrumento de monetización del sommelier. Una carta bien estructurada no solo ofrece variedad, sino que guía al cliente hacia opciones que maximizan el margen del restaurante.</p>
@@ -277,7 +277,7 @@ wpId: 3443
 <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); border-left: 4px solid #f5c518; padding: 28px 32px; margin: 40px 0; border-radius: 2px;">
 <p style="color: #f5c518; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">Tu Bodega, Optimizada</p>
 <p style="color: #e0e0e0; font-size: 15px; line-height: 1.7; margin: 0 0 18px 0;">Control stock, rotacion y temperaturas con IA. Margen objetivo 70% en carta de vinos.</p>
-<p><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #f5c518; color: #1a1a1a; padding: 12px 28px; font-weight: 700; text-decoration: none; border-radius: 2px; font-size: 15px;">Probar Gratis</a></p>
+<p><a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=tutoriales&#038;utm_content=ia-sommelier-maridajes-gestion-bodega" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #f5c518; color: #1a1a1a; padding: 12px 28px; font-weight: 700; text-decoration: none; border-radius: 2px; font-size: 15px;">Probar AI Chef Pro</a></p>
 </div>
 <h2>FAQ: Preguntas Frecuentes sobre IA para Sommelier</h2>
 <h3>¿Reemplazará la IA al sommelier?</h3>

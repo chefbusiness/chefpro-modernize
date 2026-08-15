@@ -2,7 +2,7 @@
 title: "Fotografía Gastronómica para Instagram con IA (Guía 2026)"
 description: "Fotografía gastronómica para Instagram: luz, composición y ángulos para fotos de platos reales, más edición con IA, tabla de errores y checklist de sesión."
 pubDate: 2026-04-04
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b7-1.jpg
 imageAlt: "Chef emplatando mientras un fotógrafo captura con cámara en trípode"
@@ -20,7 +20,7 @@ faq:
   - q: "¿Cuántas veces debo publicar fotos de mis platos?"
     a: "Lo ideal es mantener una frecuencia de 3 a 5 publicaciones semanales, combinando platos estrella, proceso en cocina y reseñas. La constancia es más importante que la cantidad: un calendario de contenidos evita huecos largos y mantiene el interés."
   - q: "¿Cuánto cuesta usar AI Chef Pro para esto?"
-    a: "AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes, sin tarjeta. Si necesitas más, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para gestionar fotos, pies de foto y calendario. Los planes Plus y Max añaden más créditos, y el plan Max incluye créditos ilimitados por 95 €/mes."
+    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. Si necesitas más, el plan Premium Pro cuesta 25 €/mes con 85.000 créditos, suficiente para gestionar fotos, pies de foto y calendario. Los planes Plus y Max añaden más créditos, y el plan Max incluye créditos ilimitados por 95 €/mes."
 ---
 
 ## Fotografía gastronómica para Instagram: cómo sacar fotos de platos que venden con tu móvil y un toque de IA
@@ -143,7 +143,7 @@ AI Chef Pro es una suite con más de 70 agentes de inteligencia artificial cread
 
 **Precios:**
 
-- **Plan gratuito**: 3.000 créditos al mes, sin tarjeta.
+- **Plan Miembro**: 10 € al mes con 10.000 créditos.
 - **Premium Pro**: 25 €/mes con 85.000 créditos.
 - **Plus**: 50 €/mes con 175.000 créditos.
 - **Max**: 95 €/mes con créditos ilimitados.

@@ -31,11 +31,11 @@ const blocks = [
     faqs: [
       {
         q: '¿Qué es AI Chef Pro?',
-        a: 'AI Chef Pro es una suite con más de 70 agentes de inteligencia artificial pensados por y para cocineros. No es un chatbot genérico: cada agente está entrenado para resolver tareas concretas de cocina y gestión de restaurante. Lo usas desde el navegador, sin instalar nada, y tienes un plan gratuito para siempre con el que empezar a trastear hoy mismo.',
+        a: 'AI Chef Pro es una suite con más de 75 agentes de inteligencia artificial pensados por y para cocineros. No es un chatbot genérico: cada agente está entrenado para resolver tareas concretas de cocina y gestión de restaurante. Lo usas desde el navegador, sin instalar nada, y el plan Miembro (10 €/mes) te deja empezar a trastear hoy mismo.',
       },
       {
-        q: '¿Qué puedo hacer con los más de 70 agentes de IA?',
-        a: 'Con los más de 70 agentes cubres prácticamente todo el día a día de una cocina profesional. Puedes crear y escandallar recetas al instante, redactar o rediseñar la carta completa, planificar menús y hasta generar el contenido para tus redes sociales. También te ayudan con el control de costes, las fichas de alérgenos, recetarios de cocinas del mundo y la gestión general del negocio.',
+        q: '¿Qué puedo hacer con los más de 75 agentes de IA?',
+        a: 'Con los más de 75 agentes cubres prácticamente todo el día a día de una cocina profesional. Puedes crear y escandallar recetas al instante, redactar o rediseñar la carta completa, planificar menús y hasta generar el contenido para tus redes sociales. También te ayudan con el control de costes, las fichas de alérgenos, recetarios de cocinas del mundo y la gestión general del negocio.',
       },
       {
         q: '¿Quién está detrás de AI Chef Pro?',
@@ -49,13 +49,13 @@ const blocks = [
     title: 'Planes y Créditos',
     faqs: [
       {
-        q: '¿Hay un plan gratis?',
-        a: 'Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir.',
-        aHtml: `Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir, y tienes el desglose completo de cada plan en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
+        q: '¿Cuál es el plan de entrada?',
+        a: 'El plan AI Chef Miembro: 10 € al mes, con 10.000 créditos mensuales y acceso a los más de 75 agentes de IA. Sin permanencia: cambias de plan o cancelas cuando quieras.',
+        aHtml: `El plan AI Chef Miembro cuesta 10 € al mes, con 10.000 créditos mensuales y acceso a los más de 75 agentes de IA. Sin permanencia: cambias o cancelas cuando quieras, y tienes el desglose completo de cada plan en la <a href="/precios" class="${linkClass}">página de precios</a>.`,
       },
       {
         q: '¿Qué es un crédito y cuántos gasta cada acción?',
-        a: 'Un crédito es la unidad de trabajo dentro de la plataforma: cada vez que un agente realiza una acción, consume una cantidad de créditos proporcional a la complejidad de la tarea. Las acciones sencillas, como generar una idea rápida, gastan pocos créditos; los trabajos más elaborados, como un escandallo completo o una carta entera, consumen algo más. El plan gratuito te da 3.000 créditos al mes para que pruebes sin límites artificiales.',
+        a: 'Un crédito es la unidad de trabajo dentro de la plataforma: cada vez que un agente realiza una acción, consume una cantidad de créditos proporcional a la complejidad de la tarea. Las acciones sencillas, como generar una idea rápida, gastan pocos créditos; los trabajos más elaborados, como un escandallo completo o una carta entera, consumen algo más. El plan Miembro te da 10.000 créditos al mes, de sobra para trabajar a diario.',
       },
       {
         q: '¿Qué pasa si me quedo sin créditos?',
@@ -69,7 +69,7 @@ const blocks = [
     faqs: [
       {
         q: '¿Necesito tarjeta de crédito?',
-        a: 'No para el plan gratuito: te registras y empiezas sin introducir ningún dato de pago. Solo necesitas tarjeta cuando decides contratar un plan Premium.',
+        a: 'Sí: todos los planes son suscripciones mensuales y se pagan con tarjeta desde el alta. Sin permanencia: puedes cancelar o cambiar de plan cuando quieras desde tu cuenta.',
       },
       {
         q: '¿Puedo cambiar de plan cuando quiera?',
@@ -124,9 +124,9 @@ const allFaqs = blocks.flatMap((b) => b.faqs);
 
 const title = 'Preguntas Frecuentes de AI Chef Pro: Planes, Créditos e Idiomas';
 const description =
-  'Resolvemos las dudas más habituales sobre AI Chef Pro: qué es, los más de 70 agentes de IA, el plan gratis con 3.000 créditos, planes desde 25 €/mes, facturación, reembolsos, idiomas y soporte.';
+  'Resolvemos las dudas más habituales sobre AI Chef Pro: qué es, los más de 75 agentes de IA, el plan Miembro de 10 €/mes con 10.000 créditos, planes Premium desde 25 €/mes, facturación, reembolsos, idiomas y soporte.';
 const keywords =
-  'preguntas frecuentes ai chef pro, faq ai chef pro, dudas ai chef pro, créditos ai chef pro, cancelar suscripción ai chef pro, reembolsos ai chef pro, ai chef pro idiomas, ai chef pro gratis';
+  'preguntas frecuentes ai chef pro, faq ai chef pro, dudas ai chef pro, créditos ai chef pro, cancelar suscripción ai chef pro, reembolsos ai chef pro, ai chef pro idiomas, ai chef pro precio mensual';
 
 const schemas = [
   {
@@ -173,13 +173,13 @@ const schemas = [
         Todo lo que Quieres Saber de AI Chef Pro
       </h1>
       <p class="mx-auto mt-5 text-lg text-muted-foreground">
-        Las dudas que más nos llegan sobre la suite de más de 70 agentes de IA para
+        Las dudas que más nos llegan sobre la suite de más de 75 agentes de IA para
         chefs y restaurantes: planes, créditos, facturación, idiomas y soporte.
         Respuestas directas, sin humo.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Empezar Gratis
+          Empezar Ahora
         </a>
       </div>
     </header>
@@ -220,7 +220,7 @@ const schemas = [
         <a href="/precios" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
           <h3 class="text-lg font-bold text-foreground">Precios y Planes</h3>
           <p class="mt-2 flex-1 text-sm text-muted-foreground">
-            Compara el plan gratis con los Premium desde 25 €/mes y elige el que mejor
+            Compara el plan Miembro de 10 €/mes con los Premium desde 25 €/mes y elige el que mejor
             encaja con tu cocina.
           </p>
           <span class="mt-4 text-sm font-semibold text-primary">Ver precios →</span>
@@ -244,7 +244,7 @@ const schemas = [
         <a href={ctaUrl('explora-app')} target="_blank" rel="noopener" class="flex flex-col rounded-xl border border-border bg-card p-6 transition-colors hover:border-accent">
           <h3 class="text-lg font-bold text-foreground">Entrar en la App</h3>
           <p class="mt-2 flex-1 text-sm text-muted-foreground">
-            Crea tu cuenta gratis en app.aichef.pro y empieza a usar los más de 70
+            Crea tu cuenta en app.aichef.pro y empieza a usar los más de 75
             agentes ahora mismo.
           </p>
           <span class="mt-4 text-sm font-semibold text-primary">Abrir la aplicación →</span>
@@ -258,11 +258,11 @@ const schemas = [
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
         Escríbenos a <a href="mailto:info@aichef.pro" class={linkClass}>info@aichef.pro</a> y te
         respondemos personalmente. Y si prefieres probarlo directamente, crea tu cuenta
-        gratis con 3.000 créditos al mes, sin tarjeta.
+        con el plan Miembro: 10 € al mes con 10.000 créditos, sin permanencia.
       </p>
       <div class="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Crear mi Cuenta Gratis
+          Crear mi Cuenta
         </a>
         <a href="/precios" class="inline-flex items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-base font-semibold text-foreground transition-colors hover:bg-accent/10">
           Ver los Planes

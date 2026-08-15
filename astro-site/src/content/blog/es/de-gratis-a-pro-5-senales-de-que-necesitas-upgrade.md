@@ -2,7 +2,7 @@
 title: "Cuándo Pasar de Plan Gratis a Premium en IA: 5 Señales"
 description: "El plan gratuito de AI Chef Pro da 3.000 créditos al mes sin tarjeta. Estas son las 5 señales medibles de cuándo compensa pasar a un plan premium."
 pubDate: 2025-09-30
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/gratis-a-pro-aichefpro-1.jpeg
 imageAlt: "De Gratis a Pro: 5 Señales de que Necesitas Upgrade en AI Chef Pro"
@@ -95,7 +95,7 @@ Para que veas de un vistazo qué ofrece cada plan, aquí tienes la comparativa c
 
 | Plan | Precio mensual | Créditos al mes | Para quién es |
 | :--- | :--- | :--- | :--- |
-| Gratuito | 0 € | 3.000 | Validar la herramienta, tareas puntuales, estudiantes, autónomos esporádicos |
+| Miembro | 10 € | 10.000 | Validar la herramienta, tareas puntuales, estudiantes, autónomos esporádicos |
 | Premium Pro | 25 € | 85.000 | Autónomo consolidado, negocio pequeño con uso diario, un solo servicio |
 | Plus | 50 € | 175.000 | Restaurante con volumen alto, carta amplia, varios servicios o turnos |
 | Max | 95 € | Ilimitados | Uso intensivo diario, equipos grandes, multi-local, producción masiva |

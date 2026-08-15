@@ -27,21 +27,21 @@ const ctaUrl = (slug: string) => appCtaUrl(lang, 'pricing', slug);
 
 const plans = [
   {
-    slug: 'free',
+    slug: 'member',
     name: 'AI Chef Member',
-    priceBig: 'Free',
-    priceSub: '€0 · forever',
-    credits: '3,000 credits / month',
+    priceBig: '€10',
+    priceSub: 'per month · cancel anytime',
+    credits: '10,000 credits / month',
     audience: 'For assistants, cooks and anyone who wants to try it with no strings attached.',
     features: [
-      'Access to all 70+ AI agents',
-      '3,000 credits every month',
+      'Access to all 75+ AI agents',
+      '10,000 credits every month',
       'Cookbooks from cuisines worldwide',
       'Available in 7 languages',
-      'No credit card required',
+      'Cancel anytime',
       'Email support',
     ],
-    cta: 'Start Free',
+    cta: 'Start Now',
     variant: 'outline',
     highlight: false,
   },
@@ -53,7 +53,7 @@ const plans = [
     credits: '85,000 credits / month',
     audience: 'For head chefs, executive chefs and restaurant managers.',
     features: [
-      'Everything in the free plan',
+      'Everything in the Member plan',
       '85,000 credits every month',
       'Advanced business tools',
       'Access to every world cuisine',
@@ -122,8 +122,8 @@ const plans = [
 const profiles = [
   {
     title: 'Individual Chef or Cook',
-    body: 'Start free with the Member plan and try all 70+ agents. Once AI becomes part of your daily routine, Premium Pro gives you plenty of room with 85,000 credits a month.',
-    plan: 'Recommended: Free → Premium Pro',
+    body: 'Start with the Member plan at €10/month and try all 75+ agents. Once AI becomes part of your daily routine, Premium Pro gives you plenty of room with 85,000 credits a month.',
+    plan: 'Recommended: Member → Premium Pro',
   },
   {
     title: 'Restaurant',
@@ -139,12 +139,12 @@ const profiles = [
 
 const faqs = [
   {
-    q: 'Is there a free plan?',
-    a: 'Yes. The AI Chef Member plan is free forever: €0, 3,000 credits every month and access to all 70+ AI agents. It is ideal for genuinely testing the suite before you decide.',
+    q: 'Is there a monthly price?',
+    a: 'Yes. The AI Chef Member plan costs €10/month with 10,000 credits every month and access to all 75+ AI agents. It is ideal for genuinely testing the suite before you decide.',
   },
   {
     q: 'Do I need a credit card?',
-    a: 'Not for the free plan: you sign up and get started without entering any payment details. You only need a card when you decide to subscribe to a Premium plan.',
+    a: 'Yes, a credit card is required for all plans, including the Member plan. You can cancel anytime without commitment.',
   },
   {
     q: 'Can I switch plans anytime?',
@@ -166,9 +166,9 @@ const faqs = [
 
 const title = 'AI Chef Pro Pricing: Plans for Chefs and Restaurants';
 const description =
-  'AI Chef Pro pricing. Start free with 3,000 credits a month and no card, or pick a Premium plan from €25/month with access to 70+ AI agents for chefs and restaurants.';
+  'AI Chef Pro pricing. Start with the Member plan at €10/month with 10,000 credits and no commitment, or pick a Premium plan from €25/month with access to 75+ AI agents for chefs and restaurants.';
 const keywords =
-  'ai chef pro pricing, ai chef pro plans, ai chef pro free, ai chef pro credits, ai for restaurants pricing, kitchen ai software price';
+  'ai chef pro pricing, ai chef pro plans, ai chef pro monthly price, ai chef pro credits, ai for restaurants pricing, kitchen ai software price';
 
 const schemas = [
   {
@@ -222,13 +222,13 @@ const btnClass = (variant: string) => {
         AI Chef Pro Pricing: Plans for Chefs and Restaurants
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        Start free, with no card and 3,000 credits a month. When you want more,
+        Start with the Member plan at €10/month, no commitment, with 10,000 credits a month. When you want more,
         Premium plans start at €25/month, and only the Max plan gives you unlimited
-        credits. Every plan includes all 70+ AI agents and 7 languages.
+        credits. Every plan includes all 75+ AI agents and 7 languages.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Start Free
+          Start Now
         </a>
       </div>
     </header>
@@ -272,7 +272,7 @@ const btnClass = (variant: string) => {
         few, more elaborate ones spend a bit more.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        The 3,000 free credits are enough to genuinely test the suite, not just take a
+        The 10,000 credits in the Member plan are enough to genuinely test the suite, not just take a
         quick look. And if your operation needs to use AI without watching the counter,
         the Premium Max plan gives you unlimited credits.
       </p>
@@ -296,7 +296,7 @@ const btnClass = (variant: string) => {
           <tbody class="divide-y divide-border">
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Price</th>
-              <td class="p-4 text-center text-foreground">Free</td>
+              <td class="p-4 text-center text-foreground">€10/month</td>
               <td class="p-4 text-center text-foreground">€25/mo</td>
               <td class="p-4 text-center text-foreground">€50/mo</td>
               <td class="p-4 text-center text-foreground">€95/mo</td>
@@ -304,7 +304,7 @@ const btnClass = (variant: string) => {
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Credits / month</th>
-              <td class="p-4 text-center text-foreground">3,000</td>
+              <td class="p-4 text-center text-foreground">10,000</td>
               <td class="p-4 text-center text-foreground">85,000</td>
               <td class="p-4 text-center text-foreground">175,000</td>
               <td class="p-4 text-center font-semibold text-accent-dark">Unlimited</td>
@@ -312,11 +312,11 @@ const btnClass = (variant: string) => {
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">AI agents</th>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
-              <td class="p-4 text-center text-foreground">70+</td>
+              <td class="p-4 text-center text-foreground">75+</td>
+              <td class="p-4 text-center text-foreground">75+</td>
+              <td class="p-4 text-center text-foreground">75+</td>
+              <td class="p-4 text-center text-foreground">75+</td>
+              <td class="p-4 text-center text-foreground">75+</td>
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Languages</th>
@@ -379,14 +379,14 @@ const btnClass = (variant: string) => {
 
     <!-- Final CTA -->
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Start Today, Free and Card-Free</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Start Today, No Commitment</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Create your account in a minute, get 3,000 credits a month and try all 70+ AI
+        Create your account in a minute, get 10,000 credits a month with the Member plan and try all 75+ AI
         agents for chefs and restaurants. Upgrade only when you need to.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Create My Free Account
+          Create My Account
         </a>
       </div>
     </section>

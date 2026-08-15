@@ -2,7 +2,7 @@
 title: "Consultor de Restaurantes: Multiplica tu Capacidad con IA"
 description: "Cómo un consultor de restaurantes multiplica su capacidad con IA: diagnósticos más rápidos, mejores entregables y más clientes. Tabla de servicios y precios."
 pubDate: 2025-02-24
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/Guia-del-Asesor-de-Restaurantes-Implementando-IA-en-tu-Consultoria.jpg
 imageAlt: "Guía del Asesor de Restaurantes: Implementando IA en tu Consultoría"
@@ -134,4 +134,4 @@ Mi recomendación práctica, después de 15 años en consultoría de restaurante
 
 Si quieres ir más allá, te recomiendo esta lectura sobre [las 20 áreas de gestión del gerente de restaurante](https://aichef.pro/blog/gerente-de-restaurante-20-areas-clave-donde-la-ia-te-puede-ayudar), donde desgloso cómo la IA apoya cada palanca del negocio hostelero. Y si te interesa saber [quién está detrás de AI Chef Pro](https://aichef.pro/sobre-nosotros), te cuento mi trayectoria: 29 años en alta hostelería, 15 como consultor, y la convicción de que la tecnología bien aplicada nos devuelve a los consultores lo que más valoramos: tiempo para pensar y capacidad para crecer.
 
-La IA no sustituye tu criterio. Lo multiplica. Y en un oficio donde cada hora cuenta, eso marca la diferencia entre un despacho estancado y uno que escala. [Prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=consultoria) y compruébalo por ti mismo.
+La IA no sustituye tu criterio. Lo multiplica. Y en un oficio donde cada hora cuenta, eso marca la diferencia entre un despacho estancado y uno que escala. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=consultoria) y compruébalo por ti mismo.

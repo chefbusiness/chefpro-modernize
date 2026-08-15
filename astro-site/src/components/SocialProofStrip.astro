@@ -9,8 +9,10 @@ interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 // CounterStat inline: cada { end, suffix, label } (mismo orden y wrappers que la SPA)
+// nº de agentes por idioma — mismo criterio que Hero.astro (75+ es/en, 50+ resto)
+const nAgentes = ['es', 'en'].includes(lang) ? 75 : 50;
 const stats = [
-  { end: 55, suffix: '+', label: t(lang, 'stats.apps_label') },
+  { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
   { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
   { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },
   { end: 1, suffix: '', label: t(lang, 'stats.new_app_label') },

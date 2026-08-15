@@ -2,7 +2,7 @@
 title: "Subida de Precios Alimentos: Protege tu Margen 2026"
 description: "Ante la subida de precios de alimentos en tu restaurante, protege el margen con reingeniería de recetas, sustituciones y repricing. Simula con IA."
 pubDate: 2026-02-22
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/foodcost-ia-featured-1.jpg
 imageAlt: "Cómo proteger tu food cost con IA ante la subida de precios de alimentos en 2026"
@@ -139,7 +139,7 @@ Si has llegado hasta aquí, sabes que la subida de precios de alimentos se gana 
 
 Estos son los planes, sin letra pequeña:
 
-- **Plan gratuito**: 3.000 créditos al mes, sin tarjeta. Empiezas a simular tu primer escenario hoy mismo.
+- **Plan Miembro**: 10 € al mes con 10.000 créditos. Empiezas a simular tu primer escenario hoy mismo.
 - **Premium Pro**: 25 €/mes con 85.000 créditos.
 - **Plus**: 50 €/mes con 175.000 créditos.
 - **Max**: 95 €/mes con créditos ilimitados.

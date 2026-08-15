@@ -2,7 +2,7 @@
 title: "Dark Kitchen Rentabilidad: Los Números Reales de 2026"
 description: "¿Es rentable una dark kitchen en 2026? Estructura de costes real frente a un restaurante tradicional, cuándo sí, cuándo no y el papel de la IA sin humo."
 pubDate: 2026-03-14
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/dark-kitchen-ia-cocina-fantasma-madrid-2026.jpg
 imageAlt: "Dark kitchen moderna en Madrid con equipo preparando pedidos delivery con pantallas de gestión IA"
@@ -141,6 +141,6 @@ Si después de leer todo esto sigues convencido, súbete al modelo con la cabeza
 5. **Revisa los KPIs que importan cada 15 días**: margen neto, food cost, comisión media, merma y ticket medio. No te fíes solo de la facturación. Si no conoces los [KPIs de rentabilidad que debes vigilar](https://aichef.pro/blog/rentabilidad-restaurante-kpis-metricas-2026), tu negocio se convierte en una ruleta.
 6. **Forma a tu equipo en la cultura del dato**: el cocinero que pesa, el que anota las mermas y el que ajusta las raciones es el que te hace ganar dinero. La tecnología es una ayuda, no un sustituto.
 
-Si quieres profundizar en el modelo, te dejo esta [guía para montar una dark kitchen](https://aichef.pro/guia-dark-kitchen) con todos los pasos prácticos. Y si quieres probar cómo la IA puede sostener el control de costes sin hacerte perder horas en Excel, puedes [probar AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=dark-kitchen) y dejarte de intuiciones.
+Si quieres profundizar en el modelo, te dejo esta [guía para montar una dark kitchen](https://aichef.pro/guia-dark-kitchen) con todos los pasos prácticos. Y si quieres probar cómo la IA puede sostener el control de costes sin hacerte perder horas en Excel, puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=dark-kitchen) y dejarte de intuiciones.
 
 La dark kitchen no es el negocio del siglo, pero puede ser un negocio sólido si la tratas con el mismo rigor que un restaurante de toda la vida. Lo que te mata no es la falta de clientes, es la falta de control sobre tus propios números.

@@ -2,7 +2,7 @@
 title: "Asistentes Virtuales para Cocinas: Tu Copiloto IA 2026"
 description: "Guía de asistentes virtuales para cocinas: qué son, los 3 tipos, qué delegar y qué no, y cómo empezar gratis con AI Chef Pro y sus +70 agentes IA."
 pubDate: 2025-03-02
-modDate: 2026-07-20
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/03/Guia-Completa-de-Asistentes-Virtuales-para-Cocinas-Profesionales.jpg
 imageAlt: "Guía Completa de Asistentes Virtuales para Cocinas Profesionales"
@@ -172,7 +172,7 @@ El modelo de AI Chef Pro se basa en créditos: cada tarea que lanzas a un agente
 
 | Plan | Créditos mensuales | Precio (€/mes) |
 | :--- | :--- | :--- |
-| Gratuito | 3.000 | 0 € (sin tarjeta) |
+| Miembro | 10.000 | 10 €/mes |
 | Premium Pro | 85.000 | 25 € |
 | Plus | 175.000 | 50 € |
 | Max | **Ilimitados** | 95 € |

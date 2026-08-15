@@ -2,7 +2,7 @@
 title: "Cómo Abrir un Restaurante en España: Guía 2026 Paso a Paso"
 description: "Guía 2026 para abrir un restaurante en España: pasos, licencias, inversión con desglose de partidas, plan financiero y dónde la IA acelera cada fase."
 pubDate: 2026-03-26
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/a6-ia-1.jpg
 imageAlt: "Restaurante en renovación con planos de arquitecto"
@@ -149,4 +149,4 @@ En esa línea trabaja AI Chef Pro. Somos la suite de más de 70 agentes de IA cu
 - **Max:** 95 €/mes (créditos ilimitados).
 - **Max Anual:** 950 €/año.
 
-No importa si estás dándole forma al proyecto o ya tienes el local firmado: la plataforma te reduce horas de oficina para que puedas centrarte en lo que de verdad importa —que el plato llegue impecable y los números cuadren. [Empieza gratis en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=abrir-restaurante) y doma el papeleo antes de que el fuego se encienda.
+No importa si estás dándole forma al proyecto o ya tienes el local firmado: la plataforma te reduce horas de oficina para que puedas centrarte en lo que de verdad importa —que el plato llegue impecable y los números cuadren. [Empieza hoy en AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=abrir-restaurante) y doma el papeleo antes de que el fuego se encienda.

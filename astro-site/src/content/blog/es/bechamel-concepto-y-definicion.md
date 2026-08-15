@@ -2,7 +2,7 @@
 title: "Bechamel: Concepto y Definición"
 description: "Salsa madre francesa con roux blanco y leche. Prepara bechamel perfecta."
 pubDate: 2026-02-18
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/05/bechamel-destacada.jpg
 imageAlt: "Salsa bechamel cremosa en un cazo"
@@ -15,8 +15,8 @@ wpId: 2731
 <p>En esencia, la bechamel es una emulsión cocida de leche y roux. El roux actúa como agente espesante mientras la leche aporta cuerpo y suavidad. La salsa resultante es ligeramente fluida, con un color marfil y un sabor lácteo muy limpio, que solo se redondea con sal, pimienta blanca, nuez moscada y, a veces, una infusión sutil de cebolla y clavo. Dentro de la familia clásica de las salsas madre codificadas por <strong>Marie-Antoine Carême</strong>, la bechamel ocupa un puesto fundamental junto a la velouté, la española, la holandesa y la de tomate. Sin una bechamel bien ligada, media cocina de fondo pierde su base.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 55+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=bechamel-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro gratis &rarr;</a></div>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=bechamel-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/bechamel-cuerpo.jpg" alt="Bechamel napando una lasaña" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Origen e historia: del marqués a Carême</h2>
 <p>El nombre bechamel se asocia tradicionalmente con <strong>Louis de Béchameil</strong>, marqués de Nointel y mayordomo de Luis XIV, aunque la mezcla de harina y leche ya existía en la cocina renacentista italiana y en las salsas blancas medievales. Lo que hizo Francia fue refinarla y convertirla en un estándar técnico. Fue el gran <strong>Antonin Carême</strong>, a principios del siglo XIX, quien la incluyó en su clasificación de las <strong>cuatro salsas madre</strong> – ampliadas luego por Escoffier –, fijando su preparación con roux blanco y estableciéndola como pilar de la cocina clásica. Desde entonces, la bechamel se enseña en todas las escuelas de hostelería como la primera salsa que un cocinero debe dominar.</p>

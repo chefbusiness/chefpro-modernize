@@ -312,7 +312,7 @@ const FormacionPresencial = () => {
   }];
   const valueItems = [{
     icon: Star,
-    text: 'Acceso a AI Chef Pro (55+ herramientas de IA gastronómica)',
+    text: 'Acceso a AI Chef Pro (75+ herramientas de IA gastronómica)',
     color: 'amber'
   }, {
     icon: BookOpen,
@@ -419,7 +419,7 @@ const FormacionPresencial = () => {
     return colors[color] || colors.amber;
   };
   return <div className="min-h-screen bg-background overflow-x-hidden">
-      <SEOHead title="Formación Presencial IA para Restaurantes | AI Chef Pro Academy" description="Workshops, conferencias y programas in-house de IA para hostelería. Chef John Guerrero lleva las 55+ herramientas de AI Chef Pro directamente a tu cocina." keywords="formación IA restaurantes, curso inteligencia artificial hostelería, workshop IA cocina profesional, consultoría IA restaurantes, formación presencial IA gastronomía" />
+      <SEOHead title="Formación Presencial IA para Restaurantes | AI Chef Pro Academy" description="Workshops, conferencias y programas in-house de IA para hostelería. Chef John Guerrero lleva las 75+ herramientas de AI Chef Pro directamente a tu cocina." keywords="formación IA restaurantes, curso inteligencia artificial hostelería, workshop IA cocina profesional, consultoría IA restaurantes, formación presencial IA gastronomía" />
       
       <Helmet>
         <script type="application/ld+json">
@@ -472,7 +472,7 @@ const FormacionPresencial = () => {
               {/* Stats with color - Responsive */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
                 <div className="bg-amber-100/80 rounded-xl p-3 sm:p-4 text-center border border-amber-200 min-w-0">
-                  <div className="text-2xl sm:text-3xl font-bold text-amber-700">55+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-amber-700">75+</div>
                   <div className="text-xs sm:text-sm text-amber-600">Herramientas IA</div>
                 </div>
                 <div className="bg-emerald-100/80 rounded-xl p-3 sm:p-4 text-center border border-emerald-200 min-w-0">
@@ -501,7 +501,7 @@ const FormacionPresencial = () => {
                       <Brain className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-slate-900">55+ Agentes IA</div>
+                      <div className="font-bold text-slate-900">75+ Agentes IA</div>
                       <div className="text-sm text-slate-500">Especializadas</div>
                     </div>
                   </div>
@@ -598,11 +598,11 @@ const FormacionPresencial = () => {
                   <p className="text-muted-foreground mb-6">
                     Con más de 15 años de experiencia en consultoría gastronómica, he ayudado a cientos de restaurantes 
                     a optimizar sus operaciones y potenciar su creatividad. Como desarrollador de AI Chef Pro y su suite 
-                    de 55+ herramientas de IA especializadas, pongo a tu disposición los conocimientos y tecnologías que 
+                    de 75+ herramientas de IA especializadas, pongo a tu disposición los conocimientos y tecnologías que 
                     están transformando la industria gastronómica.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-amber-100 text-amber-700">55+ Herramientas Propias</Badge>
+                    <Badge className="bg-amber-100 text-amber-700">75+ Herramientas Propias</Badge>
                     <Badge className="bg-blue-100 text-blue-700">+15 Años Experiencia</Badge>
                     <Badge className="bg-purple-100 text-purple-700">Único en España</Badge>
                     <Badge className="bg-emerald-100 text-emerald-700">Consultoría Gastronómica</Badge>
@@ -784,7 +784,7 @@ const FormacionPresencial = () => {
                   <tbody>
                     <tr className="border-t">
                       <td className="p-4">Herramientas Incluidas</td>
-                      <td className="p-4 text-center font-medium text-amber-700">55+ agentes IA propios</td>
+                      <td className="p-4 text-center font-medium text-amber-700">75+ agentes IA propios</td>
                       <td className="p-4 text-center text-muted-foreground">Herramientas genéricas</td>
                     </tr>
                     <tr className="border-t bg-amber-50/30">

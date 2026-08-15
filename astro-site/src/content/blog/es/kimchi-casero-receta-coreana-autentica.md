@@ -2,7 +2,7 @@
 title: "Kimchi Casero: Receta Coreana Auténtica Paso a Paso"
 description: "Receta auténtica de kimchi coreano paso a paso. Aprende a fermentar en casa con técnicas profesionales. Probióticos naturales, saludable y delicioso."
 pubDate: 2026-02-11
-modDate: 2026-03-09
+modDate: 2026-08-15
 category: recetas
 image: /blog-assets/2026/02/kimchi-casero-aichefpro-1.jpg
 imageAlt: "Kimchi Casero: Receta Coreana Auténtica Paso a Paso"
@@ -462,7 +462,7 @@ wpId: 2770
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 
@@ -613,7 +613,7 @@ Maori Murota te presenta sus recetas preferidas y cien por cien caseras: sushi y
 
 
 
-<p class="wp-block-paragraph"><strong>👉 <a href="https://app.aichef.pro">Prueba AI Chef Pro gratis</a> y descubre por qué miles de cocineros ya lo usan diariamente.</strong></p>
+<p class="wp-block-paragraph"><strong>👉 <a href="https://app.aichef.pro">Prueba AI Chef Pro</a> y descubre por qué miles de cocineros ya lo usan diariamente.</strong></p>
 
 
 

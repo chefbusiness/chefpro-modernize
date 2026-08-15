@@ -40,8 +40,12 @@ const socialCount = getDynamicCount().toLocaleString(lang === 'en' ? 'en-US' : '
 const avatars = [1, 2, 3, 4, 5, 6, 7, 8];
 
 // CounterStat: valor final + sufijo (estado visual final estático)
+// Nº de agentes por idioma (2026-08-15): es/en anuncian 75+ (las plataformas
+// sirven 89/80); it/fr/de/pt/nl anuncian 50+ porque sus plataformas sirven
+// 53-54 — subirlo cuando John complete esos catálogos (CATALOGO_ITALIANO_PENDIENTE.md).
+const nAgentes = ['es', 'en'].includes(lang) ? 75 : 50;
 const stats = [
-  { end: 55, suffix: '+', label: t(lang, 'stats.apps_label') },
+  { end: nAgentes, suffix: '+', label: t(lang, 'stats.apps_label') },
   { end: 25, suffix: '+', label: t(lang, 'stats.cookbooks_label') },
   { end: 10, suffix: '+', label: t(lang, 'stats.tools_label') },
   { end: 6, suffix: '', label: t(lang, 'stats.categories_label') },

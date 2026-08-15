@@ -2,7 +2,7 @@
 title: "¿Qué es el procesamiento de lenguaje natural? PLN"
 description: "El procesamiento de lenguaje natural (PLN) es un campo de la inteligencia artificial que se enfoca en la interacción entre computadoras y lenguaje humano. Su…"
 pubDate: 2024-10-14
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2024/10/procesamiento-de-lenguaje-natural-pnl.jpeg
 imageAlt: "procesamiento de lenguaje natural"
@@ -163,7 +163,7 @@ wpId: 594
 
 
 
-<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba Gratis <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
+<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
 
 
 

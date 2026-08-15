@@ -2,7 +2,7 @@
 title: "APPCC Restaurante: Guía 2026 para Pasar la Inspección"
 description: "Guía práctica de APPCC para restaurantes en 2026: prerrequisitos, PCC, registros e inspecciones, y cómo la IA genera tu plan y automatiza los registros."
 pubDate: 2026-04-03
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/03/b6-1.jpg
 imageAlt: "Chef comprobando la temperatura de los alimentos con termómetro digital"
@@ -156,7 +156,7 @@ Esa es la filosofía con la que está construido [AI Chef Pro](https://aichef.pr
 
 Aquí van los números exactos, sin letra pequeña:
 
-- **Plan gratuito**: 3.000 créditos al mes, sin tarjeta.
+- **Plan Miembro**: 10 € al mes con 10.000 créditos.
 - **Premium Pro**: 25 €/mes (85.000 créditos).
 - **Plus**: 50 €/mes (175.000 créditos).
 - **Max**: 95 €/mes (créditos ilimitados).

@@ -29,19 +29,19 @@ const plans = [
   {
     slug: 'gratis',
     name: 'AI Chef Miembro',
-    priceBig: 'Gratis',
-    priceSub: '0 € · para siempre',
-    credits: '3.000 créditos / mes',
+    priceBig: '10 €',
+    priceSub: '/ mes · sin permanencia',
+    credits: '10.000 créditos / mes',
     audience: 'Para ayudantes, cocineros y quien quiere probar sin compromiso.',
     features: [
-      'Acceso a los más de 70 agentes de IA',
-      '3.000 créditos cada mes',
+      'Acceso a los más de 75 agentes de IA',
+      '10.000 créditos cada mes',
       'Recetarios de cocinas del mundo',
       'Disponible en 7 idiomas',
-      'Sin tarjeta de crédito',
+      'Sin permanencia',
       'Soporte por email',
     ],
-    cta: 'Empezar Gratis',
+    cta: 'Empezar Ahora',
     variant: 'outline',
     highlight: false,
   },
@@ -53,7 +53,7 @@ const plans = [
     credits: '85.000 créditos / mes',
     audience: 'Para chefs de cocina, chefs ejecutivos y gerentes de restaurante.',
     features: [
-      'Todo lo del plan gratuito',
+      'Todo lo del plan Miembro',
       '85.000 créditos cada mes',
       'Herramientas avanzadas de negocio',
       'Acceso a todas las cocinas del mundo',
@@ -122,8 +122,8 @@ const plans = [
 const profiles = [
   {
     title: 'Chef o Cocinero Individual',
-    body: 'Empieza gratis con el plan Miembro y prueba los más de 70 agentes. Cuando la IA se convierta en parte de tu día a día, Premium Pro te da holgura de sobra con 85.000 créditos al mes.',
-    plan: 'Recomendado: Gratis → Premium Pro',
+    body: 'Empieza con el plan Miembro (10 €/mes, 10.000 créditos) y prueba los más de 75 agentes. Cuando la IA se convierta en parte de tu día a día, Premium Pro te da holgura de sobra con 85.000 créditos al mes.',
+    plan: 'Recomendado: Miembro → Premium Pro',
   },
   {
     title: 'Restaurante',
@@ -139,12 +139,12 @@ const profiles = [
 
 const faqs = [
   {
-    q: '¿Hay un plan gratis?',
-    a: 'Sí. El plan AI Chef Miembro es gratuito para siempre: 0 €, 3.000 créditos cada mes y acceso a los más de 70 agentes de IA. Es ideal para probar la suite de verdad antes de decidir.',
+    q: '¿Cuál es el plan de entrada?',
+    a: 'El plan AI Chef Miembro: 10 € al mes, 10.000 créditos mensuales y acceso a los más de 75 agentes de IA. Sin permanencia: cambias de plan o cancelas cuando quieras.',
   },
   {
     q: '¿Necesito tarjeta de crédito?',
-    a: 'No para el plan gratuito: te registras y empiezas sin introducir ningún dato de pago. Solo necesitas tarjeta cuando decides contratar un plan Premium.',
+    a: 'Sí: todos los planes son suscripciones mensuales y se pagan con tarjeta desde el alta. Sin permanencia: puedes cancelar o cambiar de plan cuando quieras desde tu cuenta.',
   },
   {
     q: '¿Puedo cambiar de plan cuando quiera?',
@@ -166,9 +166,9 @@ const faqs = [
 
 const title = 'Precios de AI Chef Pro: Planes para Chefs y Restaurantes';
 const description =
-  'Descubre los precios de AI Chef Pro. Empieza gratis con 3.000 créditos al mes y sin tarjeta, o elige un plan Premium desde 25 €/mes con acceso a más de 70 agentes de IA para chefs y restaurantes.';
+  'Descubre los precios de AI Chef Pro. Plan Miembro por 10 € al mes con 10.000 créditos, y planes Premium desde 25 €/mes, con acceso a más de 75 agentes de IA para chefs y restaurantes.';
 const keywords =
-  'precios ai chef pro, planes ai chef pro, ai chef pro gratis, créditos ai chef pro, ia para restaurantes precio, software cocina ia precio';
+  'precios ai chef pro, planes ai chef pro, ai chef pro precio mensual, créditos ai chef pro, ia para restaurantes precio, software cocina ia precio';
 
 const schemas = [
   {
@@ -222,13 +222,13 @@ const btnClass = (variant: string) => {
         Precios de AI Chef Pro: Planes para Chefs y Restaurantes
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
-        Empieza gratis, sin tarjeta y con 3.000 créditos al mes. Cuando quieras más,
+        El plan Miembro cuesta 10 €/mes e incluye 10.000 créditos. Cuando quieras más,
         los planes Premium van desde 25 €/mes, y solo el plan Max te da créditos
-        ilimitados. Todos incluyen los más de 70 agentes de IA y 7 idiomas.
+        ilimitados. Todos incluyen los más de 75 agentes de IA y 7 idiomas.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('hero')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Empezar Gratis
+          Empezar Ahora
         </a>
       </div>
     </header>
@@ -272,7 +272,7 @@ const btnClass = (variant: string) => {
         sencillas gastan pocos y las más elaboradas, algo más.
       </p>
       <p class="mx-auto mt-3 max-w-2xl text-muted-foreground">
-        Los 3.000 créditos gratuitos dan para probar la suite de verdad, no solo para
+        Los 10.000 créditos del plan Miembro dan para usar la suite de verdad, no solo para
         echar un vistazo. Y si tu operación necesita usar la IA sin pensar en el
         contador, el plan Premium Max te da créditos ilimitados.
       </p>
@@ -296,7 +296,7 @@ const btnClass = (variant: string) => {
           <tbody class="divide-y divide-border">
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Precio</th>
-              <td class="p-4 text-center text-foreground">Gratis</td>
+              <td class="p-4 text-center text-foreground">10 €/mes</td>
               <td class="p-4 text-center text-foreground">25 €/mes</td>
               <td class="p-4 text-center text-foreground">50 €/mes</td>
               <td class="p-4 text-center text-foreground">95 €/mes</td>
@@ -304,7 +304,7 @@ const btnClass = (variant: string) => {
             </tr>
             <tr>
               <th scope="row" class="p-4 text-left font-medium text-muted-foreground">Créditos / mes</th>
-              <td class="p-4 text-center text-foreground">3.000</td>
+              <td class="p-4 text-center text-foreground">10.000</td>
               <td class="p-4 text-center text-foreground">85.000</td>
               <td class="p-4 text-center text-foreground">175.000</td>
               <td class="p-4 text-center font-semibold text-accent-dark">Ilimitados</td>
@@ -379,15 +379,15 @@ const btnClass = (variant: string) => {
 
     <!-- CTA final -->
     <section class="mt-20 rounded-2xl border border-border bg-gradient-to-br from-accent-light/20 to-accent/5 p-10 text-center">
-      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Empieza Hoy, Gratis y sin Tarjeta</h2>
+      <h2 class="text-2xl font-bold text-foreground md:text-3xl">Empieza Hoy, sin Permanencia</h2>
       <p class="mx-auto mt-4 max-w-2xl text-muted-foreground">
-        Crea tu cuenta en un minuto, recibe 3.000 créditos al mes y prueba los más de
-        70 agentes de IA para chefs y restaurantes. Subes de plan solo cuando lo
-        necesites.
+        Crea tu cuenta en un minuto, elige el plan Miembro —10 €/mes con 10.000
+        créditos— y usa los más de 75 agentes de IA para chefs y restaurantes.
+        Subes de plan solo cuando lo necesites.
       </p>
       <div class="mt-7">
         <a href={ctaUrl('cta-final')} class="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-base font-semibold text-accent-foreground shadow-md transition-colors hover:bg-accent-dark">
-          Crear mi Cuenta Gratis
+          Crear mi Cuenta
         </a>
       </div>
     </section>

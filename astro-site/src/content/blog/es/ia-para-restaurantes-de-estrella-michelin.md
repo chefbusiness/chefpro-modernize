@@ -2,7 +2,7 @@
 title: "IA en la Alta Cocina: del Food Pairing al Menú Degustación"
 description: "Cómo usar la IA en la alta cocina sin perder el criterio del chef: food pairing, menús degustación, consistencia en el pase y reservas de alto valor."
 pubDate: 2026-02-02
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2026/02/ia-para-restaurantes-estrella-michelin-aichefpro-1.jpeg
 imageAlt: "IA para Restaurantes de Estrella Michelin: Guía Completa para Implementar Inteligencia Artificial en Alta Cocina"
@@ -12,7 +12,7 @@ faq:
   - q: "¿La IA puede sustituir al chef en un restaurante de alta cocina?"
     a: "No. La IA acelera la exploración de combinaciones, afina escandallos y ayuda a mantener la consistencia, pero el paladar, la técnica, la coherencia del menú y la ejecución en el pase son responsabilidad exclusiva del chef. Es una herramienta de apoyo, no un sustituto."
   - q: "¿Cómo puedo empezar a probar la IA en mi cocina sin gastar dinero?"
-    a: "AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes, sin necesidad de tarjeta. Puedes registrarte, explorar los más de 70 agentes culinarios y probar generación de menús degustación, food pairing o escandallos sin compromiso."
+    a: "AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. Puedes registrarte, explorar los más de 70 agentes culinarios y probar generación de menús degustación, food pairing o escandallos sin compromiso."
   - q: "¿Sirve la IA para diseñar un menú degustación completo?"
     a: "Sí. Herramientas como el generador de menús degustación de AI Chef Pro analizan ingredientes, estacionalidad y restricciones para proponer secuencias de pases con lógica sensorial. El chef valida, ajusta y cierra la propuesta final; la IA entrega un prototipo estructurado sobre el que trabajar."
   - q: "¿Qué es el food pairing algorítmico y cómo lo aplica la IA?"
@@ -29,7 +29,7 @@ Llevo años escuchando la misma pregunta en cuanto un jefe de cocina oye «IA»:
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 

@@ -2,7 +2,7 @@
 title: "151 Prompts para Restaurantes: Guía por Áreas 2026"
 description: "151 prompts para restaurantes por áreas: cocina, costes, carta, marketing, RRHH y eventos. Plantillas, variantes y ejemplos listos para usar en 2026."
 pubDate: 2025-11-10
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: libreria-de-prompts
 image: /blog-assets/2025/11/prompts-restaurantes-hosteleria-aichefpro.jpeg
 imageAlt: "151 Prompts para Restaurantes y Hostelería: Guía Completa 2025-2026"
@@ -162,4 +162,4 @@ Manejar con soltura los prompts para restaurantes es como tener un sexto sentido
 
 Si quieres llevarlo un paso más allá sin depender de herramientas genéricas, AI Chef Pro integra más de 70 agentes de IA culinarios en 7 idiomas, con [Chef GPT en español](https://aichef.pro/blog/chef-gpt-espanol) nativo que entiende jerga de cocina y devuelve resultados listos para implantar. Puedes empezar con el plan gratuito (3.000 créditos al mes, sin tarjeta) y probar estos prompts sobre un motor pensado para hostelería. Si el volumen de trabajo lo pide, los planes de pago van de 25 €/mes (85.000 créditos) hasta créditos ilimitados con el plan Max por 95 €/mes.
 
-[Prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=151-prompts) y empieza a transformar prompts en resultados hoy mismo.
+[Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=151-prompts) y empieza a transformar prompts en resultados hoy mismo.

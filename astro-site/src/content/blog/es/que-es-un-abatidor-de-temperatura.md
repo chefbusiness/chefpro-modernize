@@ -2,7 +2,7 @@
 title: "Abatidor de Temperatura, Un Indispensable de Hoy en las Cocinas Profesionales"
 description: "Un abatidor de temperatura es un dispositivo fundamental en la cocina profesional, diseñado para enfriar los alimentos de manera rápida y eficiente. Su…"
 pubDate: 2024-12-10
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2024/12/IMG_1453.jpeg
 imageAlt: "Qué es un abatidor de temperatura"
@@ -233,7 +233,7 @@ wpId: 712
 
 
 
-<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba Gratis <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
+<p class="has-vivid-cyan-blue-color has-text-color has-link-color wp-elements-bc95a7d27e7ee57c396ab325c358cc73 wp-block-paragraph"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=chatbot-onpage&#038;utm_content=bloque-chatbot" data-type="link" data-id="https://aichef.pro" target="_blank" rel="noopener" data-lasso-id="1444">Prueba <strong>AI Chef Pro</strong>, la Plataforma con Inteligencia Artificial Creada para Chefs y Restaurantes</a> 👈</p>
 
 
 

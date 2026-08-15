@@ -2,7 +2,7 @@
 title: "Automatización en Cocinas Profesionales: Qué Sí y Qué No"
 description: "Qué se automatiza hoy en una cocina profesional (documentación, escandallos, pedidos) y qué no. Mapa 2026 por áreas, esfuerzo vs impacto y errores a evitar."
 pubDate: 2025-02-25
-modDate: 2026-07-20
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/Automatizacion-en-Cocinas-Profesionales-El-Impacto-de-la-IA.jpg
 imageAlt: "Automatización en Cocinas Profesionales: El Impacto de la IA"
@@ -17,7 +17,7 @@ faq:
     a: "Empieza por lo que tiene bajo esfuerzo de implantación y alto impacto: escandallos y fichas técnicas. En días lo tienes funcionando y el retorno en margen es inmediato. Después salta a documentación APPCC y luego a pedidos e inventario. No intentes automatizarlo todo de golpe."
   - q: "¿La automatización sirve para un restaurante pequeño?"
     a: "Sí, y en muchos casos es donde más impacto tiene. Un restaurante pequeño sufre igual o más el papeleo porque el chef suele hacer también de gestor. Automatizar escandallos, pedidos y APPCC libera horas que en un equipo ajustado son críticas para el día a día."
-  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan gratuito?"
+  - q: "¿Cuánto cuesta AI Chef Pro y qué incluye el plan Miembro?"
     a: "El plan gratuito incluye 3.000 créditos al mes sin necesidad de tarjeta. Premium Pro cuesta 25 € al mes con 85.000 créditos, Plus 50 € al mes con 175.000 créditos, y Max 95 € al mes con créditos ilimitados. También hay plan Max Anual por 950 € al año."
   - q: "¿En cuántos idiomas está disponible AI Chef Pro?"
     a: "AI Chef Pro funciona en siete idiomas: español, inglés, francés, alemán, italiano, portugués y neerlandés. El español es nativo, no una traducción automática, lo que garantiza precisión en términos del oficio como escandallos, fichas técnicas o registros APPCC."

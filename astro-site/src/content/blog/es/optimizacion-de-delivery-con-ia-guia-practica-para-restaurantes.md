@@ -2,7 +2,7 @@
 title: "Delivery Rentable en tu Restaurante: Comisiones vs Propio"
 description: "Haz rentable el delivery de tu restaurante: comisiones de agregadores frente a canal propio, empaquetado, menú específico e IA para previsión y precios."
 pubDate: 2025-12-29
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/optimizacion-delivery-con-ia-5.jpeg
 imageAlt: "Optimización de Delivery con IA: Guía Práctica para Restaurantes"
@@ -29,7 +29,7 @@ Hacer rentable el *delivery* de tu restaurante no es una cuestión de suerte ni 
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 
@@ -135,4 +135,4 @@ Si estás montando una cocina oscura o quieres profundizar en cómo la IA mejora
 2. **Diseña un menú específico de delivery** con platos que viajen bien, combos que suban el ticket medio y un packaging que proteja la experiencia sin disparar costes. El objetivo: que el ticket medio de delivery sea un 20 % superior al de sala.
 3. **Activa la inteligencia artificial para la previsión y el pricing.** Con el plan gratuito de AI Chef Pro (3.000 créditos al mes, sin tarjeta) puedes empezar a predecir la demanda y a probar sugerencias de precios. Si los números te cuadran, el plan Premium Pro (25 €/mes, 85.000 créditos) te da la potencia para gestionar el día a día sin sorpresas.
 
-El delivery no tiene por qué ser un agujero en la cuenta de resultados. Controla la comisión, sube el ticket medio, cuida el empaquetado y deja que los datos trabajen para ti. [Prueba AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=delivery) y empieza a convertir cada pedido en margen limpio.
+El delivery no tiene por qué ser un agujero en la cuenta de resultados. Controla la comisión, sube el ticket medio, cuida el empaquetado y deja que los datos trabajen para ti. [Prueba AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=delivery) y empieza a convertir cada pedido en margen limpio.

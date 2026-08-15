@@ -2,7 +2,7 @@
 title: "Mejor IA para la Alimentación: Guía por Ámbitos 2026"
 description: "La mejor IA para la alimentación depende del ámbito: cocina profesional, nutrición, industria y agricultura. Guía comparativa y precios de AI Chef Pro."
 pubDate: 2025-09-10
-modDate: 2026-07-19
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/09/mejor-ia-para-alientacion-2.jpeg
 imageAlt: "¿Cuál es la Mejor IA para la Alimentación? Guía Definitiva para Profesionales Gastronómicos"
@@ -125,7 +125,7 @@ Aplica estos criterios a cualquier herramienta que estés considerando y verás 
 
 Hablando de costes, te detallo los planes de AI Chef Pro para que tengas cifras reales sobre la mesa y puedas comparar con otras opciones sin sorpresas. Todos funcionan con un sistema de créditos transparente: cada tarea consume una cantidad según su complejidad (no es lo mismo generar una ficha técnica completa con escandallo y alérgenos que traducir una carta corta), y tú decides cuánta gasolina necesitas al mes según tu volumen de trabajo. Sin letra pequeña, sin costes ocultos por tarea que se disparan cuando empiezas a usar la herramienta en serio.
 
-- **Plan gratuito**: 3.000 créditos al mes, sin tarjeta. Ideal para probar la herramienta en tu cocina sin compromiso, generar tus primeras fichas técnicas y escandallos, y comprobar si el flujo de trabajo encaja con tu operativa antes de decidir.
+- **Plan Miembro**: 10 € al mes con 10.000 créditos. Ideal para probar la herramienta en tu cocina sin compromiso, generar tus primeras fichas técnicas y escandallos, y comprobar si el flujo de trabajo encaja con tu operativa antes de decidir.
 - **Premium Pro**: 25 €/mes con 85.000 créditos. Pensado para cocineros y pequeños restaurantes que necesitan agilidad diaria en fichas técnicas, escandallos y cartas, con un volumen de trabajo que justifica la inversión sin disparar el gasto.
 - **Plus**: 50 €/mes con 175.000 créditos. Para equipos de cocina o restaurantes con alto volumen de fichas, cartas cambiantes por temporada y marketing gastronómico frecuente en redes y web.
 - **Max**: 95 €/mes con créditos ilimitados. Para obradores, cadenas de restauración, consultores gastronómicos o formadores que exprimen la IA a diario sin preocuparse por el contador de créditos.

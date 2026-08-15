@@ -208,7 +208,10 @@ export default function ModernPricing() {
                     : 'bg-accent text-accent-foreground hover:bg-accent-dark hover:shadow-lg hover:scale-105 font-semibold'
                 }`}
               >
-                {plan.price === t('pricing.plans.member.price') ? t('pricing.start_free') : t('pricing.select_plan')}
+                {/* Desde 2026-08-15 no hay plan gratis: todos los CTAs son «Seleccionar Plan».
+                    La condición vieja comparaba con member.price y con 10€ habría seguido
+                    pintando «Empezar Gratis» en un plan de pago. */}
+                {t('pricing.select_plan')}
               </Button>
               
               <ul className="grid gap-2 text-sm">

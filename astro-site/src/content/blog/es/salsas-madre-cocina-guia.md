@@ -2,7 +2,7 @@
 title: "Salsas madre de la cocina: la guía completa"
 description: "Las salsas madre de la cocina son preparaciones base de la cocina clásica francesa a partir de las cuales se elaboran, mediante adiciones y modificaciones…"
 pubDate: 2026-05-29
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/05/pillar-salsas-destacada.jpg
 imageAlt: "Las cinco salsas madre de la cocina"
@@ -16,8 +16,8 @@ wpId: 3864
 <p>En la cocina profesional, este concepto ahorra tiempo, estandariza resultados y permite que todo el equipo hable el mismo idioma de salsas. En casa, entender la lógica de una bechamel o una velouté te cambia la forma de cocinar: dejas de seguir recetas al pie de la letra y empiezas a crearlas.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 55+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=salsas-madre-cocina-guia" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro gratis &rarr;</a></div>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=salsas-madre-cocina-guia" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/pillar-salsas-cuerpo.jpg" alt="Chef napando un plato con salsa" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>De Carême a Escoffier: la evolución de las salsas madre</h2>
 <p>La historia de las salsas madre arranca en el siglo XIX con Marie-Antoine Carême, el primer gran clasificador de la cocina francesa. Carême estableció cuatro salsas fundamentales: bechamel, velouté, española y allemande. Su obsesión era ordenar el caos de las cocinas nobles y burguesas, y lo consiguió con una taxonomía que todavía respiramos.</p>

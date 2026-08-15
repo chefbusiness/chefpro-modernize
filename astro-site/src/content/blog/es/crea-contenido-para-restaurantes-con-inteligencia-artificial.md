@@ -2,7 +2,7 @@
 title: "Crea Contenido para Restaurantes con Inteligencia Artificial: Guía Completa 2025"
 description: "En la era digital, los restaurantes enfrentan el reto de mantener una presencia online dinámica. La inteligencia artificial, a través de herramientas como Ai…"
 pubDate: 2025-02-22
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/02/IMG_2781.png
 imageAlt: "Crea Contenido para Restaurantes con Inteligencia Artificial"
@@ -911,7 +911,7 @@ wpId: 1056
 
 
 
-<p class="wp-block-paragraph">Comienza tu prueba gratuita de AI Chef Pro hoy y descubre cómo la IA puede transformar la comunicación de tu restaurante.<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" data-lasso-id="1252">Prueba AI Chef Pro Gratis →</a></p>
+<p class="wp-block-paragraph">Comienza tu prueba gratuita de AI Chef Pro hoy y descubre cómo la IA puede transformar la comunicación de tu restaurante.<a href="https://app.aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=ai-chef-pro&#038;utm_content=crea-contenido-para-restaurantes-con-inteligencia-artificial" data-lasso-id="1252">Prueba AI Chef Pro →</a></p>
 
 
 

@@ -2,7 +2,7 @@
 title: "Fond: Concepto y Definición"
 description: "Base de salsas y caldos en cocina francesa. Aprende qué es el fond y sus tipos."
 pubDate: 2026-02-17
-modDate: 2026-06-28
+modDate: 2026-08-15
 category: glosario
 image: /blog-assets/2026/05/fond-destacada.jpg
 imageAlt: "Fondos de cocina en cazos"
@@ -16,8 +16,8 @@ wpId: 2729
 <p>El fond actúa como potenciador universal. Aporta notas tostadas (si es oscuro), dulzor vegetal (si es claro) o la sutileza marina del fumet. Su función principal es construir capas de sabor: al reducirse, concentra los sabores sin necesidad de añadir féculas o potenciadores artificiales. Por eso los chefs invierten tanto mimo en su elaboración: un fond mediocre condena cualquier plato que dependa de él.</p>
 <div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:8px;padding:28px 24px;margin:32px 0;text-align:center;color:#fff;">
 <p style="font-size:20px;font-weight:700;margin:0 0 10px;color:#f0c040;">Domina las técnicas de cocina con IA</p>
-<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 55+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
-<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=fond-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro gratis &rarr;</a></div>
+<p style="font-size:15px;margin:0 0 18px;color:#ccc;">AI Chef Pro reúne 75+ herramientas de IA para chefs y restaurantes: recetas, escandallos, fichas técnicas y más. Empieza gratis.</p>
+<p><a href="https://aichef.pro/?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=glosario-y-lexico-cientifico-culinario&#038;utm_content=fond-concepto-y-definicion" target="_blank" rel="noopener" style="display:inline-block;background:#f0c040;color:#1a1a2e;font-weight:700;font-size:15px;padding:13px 30px;border-radius:6px;text-decoration:none;">Prueba AI Chef Pro &rarr;</a></div>
 <figure><img data-recalc-dims="1" decoding="async" src="/blog-assets/2026/05/fond-cuerpo.jpg" alt="Colando un fondo con estameña" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin:24px 0;"/></figure>
 <h2>Tipos de fondos en cocina</h2>
 <p>La familia de los fondos es amplia, pero todos comparten una base técnica común. Los cuatro más importantes en cocina profesional son el fondo claro, el fondo oscuro, el fumet y el court-bouillon. Cada uno tiene su personalidad y su propósito.</p>

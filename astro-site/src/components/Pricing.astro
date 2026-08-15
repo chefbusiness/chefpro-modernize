@@ -34,7 +34,6 @@ const plans: Plan[] = [
   { id: 'premium_plus_annual', name: t(lang, 'pricing.plans.premium_plus_annual.name'), price: t(lang, 'pricing.plans.premium_plus_annual.price'), period: t(lang, 'pricing.plans.premium_plus_annual.period'), uses: t(lang, 'pricing.plans.premium_plus_annual.uses'), originalPrice: t(lang, 'pricing.plans.premium_plus_annual.original_price'), discount: t(lang, 'pricing.plans.premium_plus_annual.discount'), description: t(lang, 'pricing.plans.premium_plus_annual.description'), features: feat('premium_plus_annual', 6), popular: false, isAnnual: true },
 ];
 
-const memberPrice = t(lang, 'pricing.plans.member.price');
 
 // JSON-LD Product schema (equivalente al de ModernPricing.tsx, vía Helmet)
 const pricingSchema = {
@@ -104,7 +103,7 @@ const btnNormal = `${btnBase} bg-accent text-accent-foreground hover:bg-accent-d
 
         <div class="p-6 pt-0 grid gap-4">
           <a href={href} target="_blank" rel="noopener noreferrer" class={plan.popular ? btnPopular : btnNormal}>
-            {plan.price === memberPrice ? t(lang, 'pricing.start_free') : t(lang, 'pricing.select_plan')}
+            {t(lang, 'pricing.select_plan')}
           </a>
 
           <ul class="grid gap-2 text-sm">

@@ -2,7 +2,7 @@
 title: "Carta Digital Restaurante QR: Guía Práctica 2026"
 description: "Cómo hacer bien una carta digital con QR: qué debe tener, errores típicos, normativa de alérgenos 2026 y actualización del menú con IA. Práctica y sin humo."
 pubDate: 2026-01-08
-modDate: 2026-08-01
+modDate: 2026-08-15
 category: ia-en-gastronomia
 image: /blog-assets/2025/12/carta-digital-dinamica-con-ia-3.jpeg
 imageAlt: "Carta Digital Dinámica con IA: Guía Práctica para Gestionar tu Restaurante"
@@ -20,7 +20,7 @@ faq:
   - q: "¿Qué son los precios dinámicos y cuándo tienen sentido?"
     a: "Son precios que varían según franja horaria, canal o disponibilidad. Tienen sentido cuando reflejan un coste distinto (menú de mediodía más económico) o una oferta para horas valle. Aplicarlos sin criterio ni comunicación transparente genera desconfianza y quema al cliente."
   - q: "¿Cuánto cuesta empezar con IA para la carta?"
-    a: "Puedes empezar sin gastar nada. AI Chef Pro ofrece un plan gratuito con 3.000 créditos al mes, sin tarjeta, suficiente para generar descripciones, fichas de alérgenos y traducciones de una carta pequeña. Si necesitas más volumen, los planes de pago arrancan en 25 €/mes."
+    a: "Puedes empezar sin gastar nada. AI Chef Pro parte del plan Miembro: 10 € al mes con 10.000 créditos. suficiente para generar descripciones, fichas de alérgenos y traducciones de una carta pequeña. Si necesitas más volumen, los planes de pago arrancan en 25 €/mes."
 ---
 
 ## Carta digital restaurante QR: guía práctica para hosteleros en 2026
@@ -29,7 +29,7 @@ Una carta digital restaurante QR bien hecha en 2026 no es un PDF colgado en una 
 
 
 
-<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=prueba-gratis&#038;utm_content=bloque-prueba-gratis" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo Prueba Gratis AI Chef Pro" class="wp-image-1817" /></a></figure>
+<figure class="wp-block-image size-full"><a href="https://aichef.pro?utm_source=blog.aichef.pro&#038;utm_medium=cta&#038;utm_campaign=empieza-hoy&#038;utm_content=bloque-empieza-hoy" target="_blank" rel=" noreferrer noopener"><img data-recalc-dims="1" loading="lazy" decoding="async" width="848" height="1264" data-attachment-id="1817" data-orig-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" data-orig-size="848,1264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="promo-aichefpro-3" data-image-description="" data-image-caption="" data-large-file="/blog-assets/2025/11/promo-aichefpro-3.jpeg" src="/blog-assets/2025/11/promo-aichefpro-3.jpeg" alt="Promo AI Chef Pro" class="wp-image-1817" /></a></figure>
 
 
 
@@ -187,6 +187,6 @@ Un QR en cada mesa, otro en la entrada y, si trabajas con delivery, en el packag
 
 Si nunca has usado IA para la carta, empieza por una tarea pequeña: pide al sistema que te redacte la descripción de tres platos y te saque la ficha de alérgenos. En diez minutos verás si te sirve. Luego, si te convence, aborda la carta entera.
 
-Puedes [probar AI Chef Pro gratis](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=carta-digital) con el plan gratuito de 3.000 créditos al mes, sin meter tarjeta. Así pruebas cómo la IA te ayuda a [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y a [cómo usar la IA para crear menús](https://aichef.pro/blog/ia-para-crear-menus) sin arriesgar nada. Si luego necesitas más créditos, escalas al plan que mejor se ajuste a tu volumen de platos y frecuencia de cambios.
+Puedes [probar AI Chef Pro](https://app.aichef.pro/?utm_source=blog&utm_medium=body&utm_content=carta-digital) con el plan gratuito de 3.000 créditos al mes, sin meter tarjeta. Así pruebas cómo la IA te ayuda a [crear tu carta o menú con IA](https://aichef.pro/carta-menu-restaurante-ia) y a [cómo usar la IA para crear menús](https://aichef.pro/blog/ia-para-crear-menus) sin arriesgar nada. Si luego necesitas más créditos, escalas al plan que mejor se ajuste a tu volumen de platos y frecuencia de cambios.
 
 Una carta digital QR bien hecha no es un gasto: es una herramienta de venta que trabaja las 24 horas, sin cansarse, sin errores de alérgenos y en el idioma que haga falta. Y con la IA, el mantenimiento te cuesta menos tiempo del que pierdes hoy persiguiendo al de la imprenta.
