@@ -8,8 +8,12 @@
 > **Todos los volúmenes están MEDIDOS, no estimados.**
 >
 > ⚠️ **El blog de NO existe aún**: antes del post 1 hay que crear el árbol
-> `/de/blog/` clonando la fase 9 italiana. Recordar el Sie/du: los spokes de
-> fase10 fijaron **Sie-Form** — el blog debe decidir su registro ANTES del
+> `/de/blog/` clonando la fase 9 italiana (ahora hay DOS referencias: it y fr).
+> **DECIDIDO (2026-08-16, delegado por John al llevar el proyecto): el blog DE
+> usa Sie-Form**, por coherencia con los 51 spokes fase10 que ya la fijaron y
+> con el registro B2B del sector — un blog que tutea junto a una web que trata
+> de usted leería como dos marcas. Recordar el Sie/du: los spokes de
+> fase10 fijaron **Sie-Form** — el blog hereda ese registro ANTES del
 > post 1 y mantenerlo (los títulos propuestos abajo usan tono profesional).
 
 ## Las reglas que salieron del research (específicas de Alemania)

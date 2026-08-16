@@ -108,7 +108,7 @@ donde el agente encaja literal, después gestión y técnica.
 | # | Keyword objetivo | Clúster/mes | Dific. | AIO | Agente gancho | Tipo |
 |---|---|---|---|---|---|---|
 | 1 ✅ | `tableau des allergènes` + `liste des allergènes` | 5.580 | BAJA-MEDIA | sí | ID Allergènes | **PILAR** |
-| 2 | `contamination croisée` | 730 | MEDIA | sí | ID Allergènes | satélite |
+| 2 ✅ | `contamination croisée` | 730 | MEDIA | sí | ID Allergènes | satélite |
 | 3 | `haccp` (+ normes, méthode, c'est quoi) | **35.460** | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |
 | 4 | `plan de maitrise sanitaire` (PMS) | 1.530 | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |
 | 5 | `marche en avant` (cuisine) | 870 | BAJA | sí | Chef Exécutif Pro | satélite |
