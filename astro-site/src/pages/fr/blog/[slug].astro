@@ -1,0 +1,28 @@
+---
+// Fase 9-FR (2026-08-16) — Ruta de artículo /fr/blog/{slug}.
+// Mismo layout que ES, EN e IT: BlogPost resuelve idioma, canonical, migas y
+// JSON-LD a partir de post.data.lang, así que aquí no hay nada que decidir.
+//
+// Como el italiano, los slugs franceses NO heredan nada: no existe un WordPress
+// francés cuyo historial preservar (blog.aichef.pro/fr/* eran las traducciones
+// automáticas de GTranslate, declaradas muertas y 301-eadas en _redirects). Se
+// eligen por keyword research de Google.fr — ver ROADMAP_BLOG_FRANCES.md, que
+// además documenta la trampa nacional: en Francia el vocabulario de cocina es
+// palabra común (mirepoix es un pueblo, julienne un pescado), así que cada slug
+// sale de una SERP mirada, no de traducir el slug español.
+import { render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+import { getPublishedPosts, postSlug } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('fr');
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+  <Content />
+</BlogPost>

@@ -137,6 +137,14 @@ AGENTES_SOSPECHOSOS = ['Gastro Calendar', 'InstaFlow AI Pro', 'MenuDish Local SE
 # Rutas ES-only POR DISEÑO (misma lista y misma razón que el gate italiano):
 # productos digitales, pSEO por ciudad, blog (fallback documentado de
 # blogHubHref para idiomas sin blog propio), hub de librerías, formación.
+#
+# ⚠ 2026-08-16 — El FRANCÉS ya tiene blog propio (/fr/blog, árbol clonado de la
+# fase 9 italiana), así que para `fr` la exención de `blog` ha dejado de ser
+# «por diseño»: un enlace de una página /fr al /blog español sería un defecto y
+# aquí saldría exento. Hoy no hay ninguno (medido: dist/fr.html sólo emite
+# /fr/blog), pero cuando toque tocar esta lista, la exención de `blog` debería
+# pasar a la CONFIG por idioma y quitarse de fr —como pide el mismo comentario
+# del gate italiano— en vez de seguir siendo común a fr/de/pt/nl.
 RE_ES_POR_DISENO = re.compile(
     r'^/('
     r'kit-|pack-|plan-|guia-|mega-pack-|pro-prompts-|productos-digitales|'

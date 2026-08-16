@@ -121,11 +121,52 @@ const CATEGORIES_IT: BlogCategory[] = [
   },
 ];
 
+// 2026-08-16 — Blog FRANCÉS. Mismo criterio que el italiano: nace con 0 posts y
+// CUATRO cajas, una por clúster del keyword research de Google.fr
+// (ROADMAP_BLOG_FRANCES.md: 6 clústeres medidos, ~185 keywords y 40 SERP), no
+// una traducción de la taxonomía española. El hub sólo pinta las categorías que
+// YA tienen posts, así que una caja vacía no ensucia nada mientras se llena.
+//
+// Tampoco hay 'glossaire': los 69 posts de glosario del ES vienen del histórico
+// de WordPress, no de una decisión editorial que replicar de cero.
+//
+// Las descripciones son FRANCÉS NATIVO (redactadas sobre el research, no
+// traducidas del ES ni del IT). Apóstrofo RECTO a propósito: es la convención
+// del francés de este repo (src/i18n/locales/fr.json usa 566 rectos y 0
+// tipográficos), así que las cadenas van entre comillas dobles.
+const CATEGORIES_FR: BlogCategory[] = [
+  {
+    slug: 'ia-en-gastronomie',
+    name: 'IA en Gastronomie',
+    description:
+      "Comment l'intelligence artificielle transforme les cuisines professionnelles : des outils qui méritent votre temps, des comparatifs honnêtes, des automatisations qui tiennent un service complet et les chiffres derrière chaque décision.",
+  },
+  {
+    slug: 'gestion-restaurant',
+    name: 'Gestion de Restaurant',
+    description:
+      "Le métier qu'on ne voit pas depuis la salle : food cost et fiches techniques, marges, HACCP et allergènes, équipe, fournisseurs et tout ce qui décide si l'établissement finit l'année dans le vert.",
+  },
+  {
+    slug: 'technique-et-recettes',
+    name: 'Technique et Recettes',
+    description:
+      "La technique de cuisine professionnelle expliquée pour ceux qui l'utilisent en service : cuissons, fermentations, tailles de découpe, mise en place et des recettes pensées pour être reproduites en brigade, pas pour la photo.",
+  },
+  {
+    slug: 'ai-chef-pro',
+    name: 'AI Chef Pro',
+    description:
+      'Tout sur la plateforme : guides des agents IA culinaires, nouveautés de chaque version et les flux de travail que chefs et gérants font réellement tourner au quotidien.',
+  },
+];
+
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */
 export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = {
   es: CATEGORIES_ES,
   en: CATEGORIES_EN,
   it: CATEGORIES_IT,
+  fr: CATEGORIES_FR,
 };
 
 /** Categorías de un idioma (vacío si ese idioma aún no tiene blog). */
@@ -162,10 +203,18 @@ export const getCategory = (
 //     escriben igual que las españolas. No es un copy-paste del ES: sin esta
 //     entrada caería al fallback inglés y serviría /it/blog/category/…, que en
 //     una URL italiana es ruido igual que 'categoria' lo sería en una inglesa.
+//   · El FR usa 'categorie'/'page', que son las palabras FRANCESAS. Mismo
+//     criterio nativo que en/it, con dos matices propios: 'categorie' va SIN
+//     acento porque es un segmento de URL (la forma acentuada obligaría a
+//     percent-encoding, %C3%A9, y ninguna URL del sitio lo hace), y 'page' se
+//     escribe igual que en inglés — coincidencia, no fallback: sin esta entrada
+//     el francés caería al ROUTE_SEGMENTS.en y serviría /fr/blog/category/…,
+//     que en una URL francesa es ruido.
 const ROUTE_SEGMENTS: Partial<Record<Locale, { category: string; page: string }>> = {
   es: { category: 'categoria', page: 'pagina' },
   en: { category: 'category', page: 'page' },
   it: { category: 'categoria', page: 'pagina' },
+  fr: { category: 'categorie', page: 'page' },
 };
 const segments = (lang: Locale) => ROUTE_SEGMENTS[lang] ?? ROUTE_SEGMENTS.en!;
 
@@ -189,15 +238,16 @@ export const listPagePath = (n: number, lang: Locale = DEFAULT_LOCALE): string =
 export const homePath = (lang: Locale = DEFAULT_LOCALE): string =>
   lang === DEFAULT_LOCALE ? '/' : `/${lang}`;
 
-/** Idiomas que TIENEN blog propio (los que declaran taxonomía). Hoy: es, en. */
+/** Idiomas que TIENEN blog propio (los que declaran taxonomía). Hoy: es, en, it, fr. */
 export const hasBlog = (lang: Locale): boolean =>
   (BLOG_CATEGORIES_BY_LANG[lang]?.length ?? 0) > 0;
 
 /**
  * Hub del blog para la navegación global (Header/Footer/Hero), que se pinta en
- * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /fr/blog, /de/blog… no
+ * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /de/blog, /pt/blog… no
  * existen y serían un 404. Los idiomas sin blog propio caen al ES, que es el
- * comportamiento que ya tenían antes de 8B.6.
+ * comportamiento que ya tenían antes de 8B.6. (Desde el 2026-08-16 el francés
+ * SÍ tiene árbol propio, así que ya no cae: /fr/blog existe.)
  */
 export const blogHubHref = (lang: Locale): string =>
   hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
@@ -279,10 +329,29 @@ export function formatDateIt(d: Date): string {
   return `${d.getUTCDate()} ${MONTHS_IT[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 }
 
+const MONTHS_FR = [
+  'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+  'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre',
+];
+
+/**
+ * "17 août 2026" — como en italiano, el francés NO intercala preposiciones y
+ * escribe el mes en minúscula. Mismo criterio que las otras tres: UTC y sin
+ * Intl, para que el resultado no dependa del locale de la máquina que construye.
+ *
+ * Única excepción: el día 1 se escribe "1er" ("1er août 2026"). Es la norma en
+ * francés y la única fecha del mes que la lleva; el resto son cardinales.
+ */
+export function formatDateFr(d: Date): string {
+  const day = d.getUTCDate();
+  return `${day === 1 ? '1er' : day} ${MONTHS_FR[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
 /** Fecha larga en el idioma del post (fallback: formato ES). */
 export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
   if (lang === 'en') return formatDateEn(d);
   if (lang === 'it') return formatDateIt(d);
+  if (lang === 'fr') return formatDateFr(d);
   return formatDateEs(d);
 }
 

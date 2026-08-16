@@ -52,7 +52,6 @@ const { title, description, pubDate, modDate, image, imageAlt, faq, category } =
  */
 const par = post.data.translations;
 const lang = post.data.lang;
-const isEn = lang === 'en';
 const slug = postSlug(post);
 const cat = getCategory(category, lang);
 /** Ruta SIN prefijo de idioma — la que espera BaseLayout para canonical/hreflang. */
@@ -62,33 +61,76 @@ const urlPath = postPath(slug, lang);
 const homeUrl = lang === 'es' ? SITE : `${SITE}${homePath(lang)}`;
 const minutes = readingTime(post.body ?? '');
 
-const T = isEn
-  ? {
-      titleSuffix: 'AI Chef Pro Blog',
-      breadcrumbLabel: 'Breadcrumb',
-      home: 'Home',
-      blog: 'Blog',
-      by: 'By',
-      updated: '· Updated on',
-      readingTime: 'min read',
-      faqHeading: 'Frequently asked questions',
-      related: 'Keep reading',
-      authorBio:
-        'Chef and hospitality consultant: 29 years in high-end kitchens and 15 advising restaurants.',
-    }
-  : {
-      titleSuffix: 'Blog AI Chef Pro',
-      breadcrumbLabel: 'Migas de pan',
-      home: 'Inicio',
-      blog: 'Blog',
-      by: 'Por',
-      updated: '· Actualizado el',
-      readingTime: 'min de lectura',
-      faqHeading: 'Preguntas frecuentes',
-      related: 'Sigue leyendo',
-      authorBio:
-        'Chef y consultor gastronómico: 29 años en alta hostelería y 15 en consultoría de restaurantes.',
-    };
+/**
+ * Copy de la UI del artículo, POR IDIOMA.
+ *
+ * Antes era un ternario `isEn ? EN : ES`, y eso convertía a este fichero en la
+ * VÍA 3 del gate italiano («copy hardcodeado definido sólo para es/en en un
+ * .astro»): los posts del blog IT se servían bajo `<html lang="it">` con
+ * «Migas de pan», «Inicio», «Por», «min de lectura», «Preguntas frecuentes» y
+ * «Sigue leyendo» en castellano. El gate no lo cazó porque busca «Preguntas
+ * Frecuentes» con F mayúscula. Al abrir el árbol francés (2026-08-16) se pasa a
+ * un mapa por idioma y se rellenan a la vez `it` y `fr`.
+ *
+ * El fallback sigue siendo el español para de/pt/nl, que aún no tienen blog: el
+ * día que lo tengan, su entrada va AQUÍ antes de publicar el primer post.
+ */
+const COPY = {
+  en: {
+    titleSuffix: 'AI Chef Pro Blog',
+    breadcrumbLabel: 'Breadcrumb',
+    home: 'Home',
+    blog: 'Blog',
+    by: 'By',
+    updated: '· Updated on',
+    readingTime: 'min read',
+    faqHeading: 'Frequently asked questions',
+    related: 'Keep reading',
+    authorBio:
+      'Chef and hospitality consultant: 29 years in high-end kitchens and 15 advising restaurants.',
+  },
+  it: {
+    titleSuffix: 'Blog AI Chef Pro',
+    breadcrumbLabel: 'Briciole di pane',
+    home: 'Home',
+    blog: 'Blog',
+    by: 'Di',
+    updated: '· Aggiornato il',
+    readingTime: 'min di lettura',
+    faqHeading: 'Domande frequenti',
+    related: 'Continua a leggere',
+    authorBio:
+      'Chef e consulente gastronomico: 29 anni di alta ristorazione e 15 di consulenza ai ristoranti.',
+  },
+  fr: {
+    titleSuffix: 'Blog AI Chef Pro',
+    breadcrumbLabel: "Fil d'Ariane",
+    home: 'Accueil',
+    blog: 'Blog',
+    by: 'Par',
+    updated: '· Mis à jour le',
+    readingTime: 'min de lecture',
+    faqHeading: 'Questions fréquentes',
+    related: 'À lire ensuite',
+    authorBio:
+      "Chef et consultant en restauration : 29 ans en cuisine haut de gamme et 15 ans de conseil aux restaurants.",
+  },
+  es: {
+    titleSuffix: 'Blog AI Chef Pro',
+    breadcrumbLabel: 'Migas de pan',
+    home: 'Inicio',
+    blog: 'Blog',
+    by: 'Por',
+    updated: '· Actualizado el',
+    readingTime: 'min de lectura',
+    faqHeading: 'Preguntas frecuentes',
+    related: 'Sigue leyendo',
+    authorBio:
+      'Chef y consultor gastronómico: 29 años en alta hostelería y 15 en consultoría de restaurantes.',
+  },
+} as const;
+
+const T = COPY[lang as keyof typeof COPY] ?? COPY.es;
 
 const related = (await getPublishedPosts(lang))
   .filter((p) => p.data.category === category && postSlug(p) !== slug)

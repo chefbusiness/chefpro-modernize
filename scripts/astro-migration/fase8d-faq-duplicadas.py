@@ -25,7 +25,7 @@ comparten casi todo el vocabulario sin ser la misma pregunta («¿qué es X?» y
   PARECIDA  similitud alta pero distinto pronombre interrogativo → revisar a mano
 
 Uso:
-    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|todos]
+    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|it|fr|todos]
                                                              [--nivel identica|definicion|parecida]
 """
 import argparse
@@ -52,11 +52,31 @@ VACIAS_IT = {'il', 'lo', 'la', 'i', 'gli', 'le', 'un', 'uno', 'una', 'di', 'del'
              'della', 'dei', 'delle', 'in', 'e', 'o', 'che', 'è', 'sono', 'al',
              'per', 'con', 'da', 'si', 'suo', 'sua', 'a', 'ci', 'quali', 'quale',
              'cosa', "l'", "un'", 'come', 'ha', 'essere', 'questo', 'questa'}
+# 2026-08-16 — blog francés. La elisión es MÁS frecuente que en italiano y aquí
+# hay un detalle que la lista italiana no vio: tokens() borra el apóstrofo
+# (`[^a-z0-9ñ ]` → espacio), así que «qu'est-ce que l'HACCP» se parte en
+# «qu / est / ce / que / l / haccp». Poner "l'" en la lista NO sirve de nada
+# —ese token no existe nunca—; lo que hay que listar son las formas SUELTAS
+# (l, d, qu, n, s, c, j, m, t). Se listan las dos por si algún día tokens()
+# deja de comerse el apóstrofo.
+VACIAS_FR = {'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'au', 'aux',
+             'en', 'et', 'ou', 'que', 'qui', 'quoi', 'est', 'sont', 'a', 'ce',
+             'cet', 'cette', 'ces', 'pour', 'avec', 'par', 'dans', 'sur', 'se',
+             'son', 'sa', 'ses', 'il', 'elle', 'on', 'y', 'ne', 'pas', 'plus',
+             'comment', 'quel', 'quelle', 'quels', 'quelles', 'etre', 'faire',
+             'l', 'd', 'qu', 'n', 's', 'c', 'j', 'm', 't',
+             "l'", "d'", "qu'", "n'", "s'", "c'", "j'", "m'", "t'"}
 
 # Arranques que marcan una pregunta de DEFINICIÓN.
 DEFINICION = (
     re.compile(r'^(que es|que son|que significa|en que consiste)\b'),
     re.compile(r'^(what is|what are|what does .* mean)\b'),
+    # Francés. Ojo: se compara sobre el texto YA normalizado (sin apóstrofos ni
+    # guiones), así que «qu'est-ce que», «qu'est-ce qu'» y «c'est quoi» llegan
+    # aquí como «qu est ce que», «qu est ce qu» y «c est quoi». El orden importa:
+    # la alternativa larga va primero para que no gane el prefijo corto.
+    re.compile(r'^(qu est ce que c est que|qu est ce que|qu est ce qu|'
+               r'c est quoi|que signifie|que veut dire|a quoi sert)\b'),
 )
 
 
@@ -158,20 +178,27 @@ ORDEN = {'IDENTICA': 0, 'DEFINICION': 1, 'PARECIDA': 2}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'todos'])
+    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'fr', 'todos'])
     ap.add_argument('--nivel', default='definicion',
                     choices=['identica', 'definicion', 'parecida'],
                     help='hasta qué nivel reportar (por defecto, sin las PARECIDA)')
     args = ap.parse_args()
 
-    idiomas = ['es', 'en', 'it'] if args.lang == 'todos' else [args.lang]
+    idiomas = ['es', 'en', 'it', 'fr'] if args.lang == 'todos' else [args.lang]
     tope = ORDEN[args.nivel.upper()] if args.nivel.upper() in ORDEN else 1
     total = {'posts': 0, 'frontmatter': 0, 'cuerpo': 0, 'sin_faq': 0}
     hallazgos = []
 
     for lang in idiomas:
-        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT}.get(lang, VACIAS_ES)
-        for p in sorted((CONTENT / lang).glob('*.md')):
+        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT, 'fr': VACIAS_FR}.get(lang, VACIAS_ES)
+        carpeta = CONTENT / lang
+        if not carpeta.is_dir():
+            # Un blog recién abierto puede no tener aún la carpeta (el francés
+            # nació el 2026-08-16 con el árbol de rutas y 0 posts). No es un
+            # error: es 0 posts que revisar.
+            print('· %s: sin carpeta de contenido todavía (0 posts)' % lang)
+            continue
+        for p in sorted(carpeta.glob('*.md')):
             total['posts'] += 1
             fuente, qs = preguntas_de(p.read_text(encoding='utf-8'))
             if not qs:

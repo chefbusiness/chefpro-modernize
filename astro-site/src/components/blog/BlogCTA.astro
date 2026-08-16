@@ -1,9 +1,17 @@
 ---
 // Fase 8B — CTA estándar al final de cada post del blog.
 // El blog existe para alimentar de tráfico cualificado a la app: todo post lleva
-// este bloque. 8B.6: variante EN (copy nativo + enapp.aichef.pro, mismo mapeo de
-// subdominio que Header.astro). El resto de idiomas sigue cayendo al copy ES.
+// este bloque. 8B.6: variante EN (copy nativo). 2026-08-16 (apertura del blog
+// FR): variantes IT y FR, y el host deja de estar cableado aquí.
+//
+// EL HOST SALE DE lib/app-url.ts, QUE ES LA FUENTE ÚNICA. Antes era un ternario
+// `lang === 'en' ? enapp : app`, así que los posts italianos —que existen desde
+// la Fase 9— mandaban al lector a la plataforma ESPAÑOLA justo en el clic que
+// convierte, pese a que itapp.aichef.pro existe y está localizado. Es
+// exactamente el bug que documenta el encabezado de app-url.ts, cometido en un
+// componente más.
 import type { Locale } from '../../i18n/config';
+import { appUrl as plataforma } from '../../lib/app-url';
 
 interface Props {
   /** UTM content para atribuir el post de origen. */
@@ -11,23 +19,37 @@ interface Props {
   lang?: Locale;
 }
 const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
-const appHost = lang === 'en' ? 'https://enapp.aichef.pro' : 'https://app.aichef.pro';
-const appUrl = `${appHost}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
+const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
-const copy =
-  lang === 'en'
-    ? {
-        heading: 'Over 70 culinary AI agents working for your business',
-        body:
-          'Recipe costing, menus, HACCP, food marketing and a lot more. Try it for free and put artificial intelligence to work on your numbers.',
-        cta: 'Try AI Chef Pro for free',
-      }
-    : {
-        heading: 'Más de 70 agentes de IA culinarios trabajando para tu negocio',
-        body:
-          'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Pruébalo gratis y pon la inteligencia artificial a cocinar números por ti.',
-        cta: 'Probar AI Chef Pro gratis',
-      };
+// Copy por idioma; de/pt/nl no tienen blog todavía y caen al español.
+const COPY = {
+  en: {
+    heading: 'Over 70 culinary AI agents working for your business',
+    body:
+      'Recipe costing, menus, HACCP, food marketing and a lot more. Try it for free and put artificial intelligence to work on your numbers.',
+    cta: 'Try AI Chef Pro for free',
+  },
+  it: {
+    heading: 'Più di 70 agenti IA culinari al lavoro per la tua attività',
+    body:
+      'Food cost, menu, HACCP, marketing gastronomico e molto altro. Provalo gratis e metti l’intelligenza artificiale a farti i conti.',
+    cta: 'Prova AI Chef Pro gratis',
+  },
+  fr: {
+    heading: "Plus de 70 agents IA culinaires au service de votre établissement",
+    body:
+      "Fiches techniques, cartes, HACCP, marketing gastronomique et bien plus encore. Essayez gratuitement et mettez l'intelligence artificielle sur vos chiffres.",
+    cta: 'Essayer AI Chef Pro gratuitement',
+  },
+  es: {
+    heading: 'Más de 70 agentes de IA culinarios trabajando para tu negocio',
+    body:
+      'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Pruébalo gratis y pon la inteligencia artificial a cocinar números por ti.',
+    cta: 'Probar AI Chef Pro gratis',
+  },
+} as const;
+
+const copy = COPY[lang as keyof typeof COPY] ?? COPY.es;
 ---
 
 <aside class="not-prose my-10 rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/10 via-background to-background p-8 text-center">
