@@ -9,9 +9,11 @@
 > **Todos los volúmenes están MEDIDOS, no estimados.** Donde DataForSEO no
 > devolvió dato, pone «sin datos».
 >
-> ⚠️ **El blog fr NO existe aún**: antes del post 1 hay que crear el árbol
-> `/fr/blog/` (ruta, índice, categoría, RSS) clonando la fase 9 italiana
-> (`src/pages/it/blog/` → `src/pages/fr/blog/`, colección con `lang: fr`).
+> ✅ **Árbol `/fr/blog/` creado el 2026-08-16** (commit `4ebb928`): clon de la
+> fase 9 italiana con segmentos nativos `categorie`/`page`, 4 categorías por
+> clúster, RSS fr y gates `--lang fr`. **Post 1 publicado el mismo día**
+> (`tableau-des-allergenes`, commit `1be3f01`); agente verificado en frapp:
+> `pickaxe-project-45` (ID Allergènes).
 
 ## Las reglas que salieron del research (específicas de Francia)
 
@@ -105,7 +107,7 @@ donde el agente encaja literal, después gestión y técnica.
 
 | # | Keyword objetivo | Clúster/mes | Dific. | AIO | Agente gancho | Tipo |
 |---|---|---|---|---|---|---|
-| 1 | `tableau des allergènes` + `liste des allergènes` | 5.580 | BAJA-MEDIA | sí | ID Allergènes | **PILAR** |
+| 1 ✅ | `tableau des allergènes` + `liste des allergènes` | 5.580 | BAJA-MEDIA | sí | ID Allergènes | **PILAR** |
 | 2 | `contamination croisée` | 730 | MEDIA | sí | ID Allergènes | satélite |
 | 3 | `haccp` (+ normes, méthode, c'est quoi) | **35.460** | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |
 | 4 | `plan de maitrise sanitaire` (PMS) | 1.530 | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |

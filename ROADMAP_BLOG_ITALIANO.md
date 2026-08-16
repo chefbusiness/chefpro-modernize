@@ -105,8 +105,11 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 
 > **Clúster 1-5 (alérgenos y HACCP) COMPLETO el 2026-08-16** — pentágono
 > interenlazado (cada satélite → pilar; pilar → los 4; post 2 → 4 y 5; 4 ↔ 5).
-> El siguiente es el 6, `mise en place` (18.100/mes), atacado por «le 7 fasi».
-| 6 | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
+> **Post 6 publicado esa misma noche** (slug `mise-en-place`, 3.021 palabras),
+> agente verificado en la plataforma viva: `chef-ejecutivo-pro-05y07-it`.
+> El siguiente es el 7, `fondo bruno` (6.600/mes, el mayor volumen SIN AI
+> Overview del research).
+| 6 ✅ | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
 | 7 | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
 | 8 | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
 | 9 | `frollatura carne` | **4.400** | BAJA | sí | Cucina Creativa | **PILAR** |
