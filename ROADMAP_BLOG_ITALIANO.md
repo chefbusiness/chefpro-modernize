@@ -115,10 +115,8 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 > verificado). **Post 11 publicado el 2026-08-17**
 > (`brigata-di-cucina`; Manager Ristorante Pro =
 > `gerente-de-restaurante-pro-dumn4-it`, formid castellano con título italiano
-> — rareza de plataforma). **Post 12 publicado el 2026-08-17** (`food-cost`,
-> con CTA doble: Manager Ristorante Pro + agente tSpoonLab
-> `tspoonlab-agent-w7rey-it`, encaje literal de escandallos). **Queda SOLO el
-> 13** (`dark kitchen`, 1.000/mes, Food Truck AI+ — verificar formid).
+> — rareza de plataforma). **Posts 12 y 13 publicados el 2026-08-17** — el 13
+> (`dark-kitchen`, Food Truck AI+ = `food-truck-ai-yoce4-it`) cierra el plan.
 | 6 ✅ | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
 | 7 ✅ | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
 | 8 ✅ | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
@@ -126,9 +124,17 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 | 10 ✅ | `cucina molecolare` | 2.400 | BAJA | sí | **Sosa Ingredients AI** | PILAR |
 | 11 ✅ | `brigata di cucina` | 1.300 | BAJA | sí | Manager Ristorante Pro | **PILAR** |
 | 12 ✅ | `food cost tabella` / `calcolo food cost` | 670 | BAJA | sí | Manager Ristorante Pro | satélite |
-| 13 | `dark kitchen` | 1.000 | MEDIA | sí | Food Truck AI+ | PILAR |
+| 13 ✅ | `dark kitchen` | 1.000 | MEDIA | sí | Food Truck AI+ | PILAR |
 
 **Suma direccionable de los 13: ~42.000 búsquedas/mes.**
+
+> 🏁 **ROADMAP COMPLETO — los 13 publicados entre el 2026-08-09 y el
+> 2026-08-17** (los 8 últimos en una racha de 8 tandas los días 16-17).
+> Todos con research+SERP fresca previa, agente verificado en la plataforma
+> viva, FAQ del PAA sin Questions duplicadas entre FAQPages, ≥2 imágenes +
+> destacada única, interenlazado por clústeres y gates verdes. Siguiente
+> ciclo IT: dejar madurar en GSC (los primeros pilares ya imprimen) y decidir
+> con datos si toca research nuevo o consolidación.
 
 > Pasaron de 12 a 13 al recuperar `mise en place`, que la primera lectura
 > del research había descartado por error (ver la nota sobre préstamos

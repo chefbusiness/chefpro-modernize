@@ -130,7 +130,7 @@ faq:
 
 <h2>Construire votre tableau des allergènes, plat par plat</h2>
 
-<p>La méthode est simple, mais elle demande de la rigueur. Partez de vos fiches techniques. Pour chaque plat, décomposez-le en tous ses composants : la base, la sauce, la garniture, les éléments achetés tout prêts. Ne vous arrêtez pas au plat principal : pensez aux accompagnements, aux condiments, aux huiles de finition. Ensuite, cochez les 14 allergènes présents dans chaque composant. Faites valider par le chef ou par la personne responsable en cuisine. Ce travail, fait une fois, devient votre référence.</p>
+<p>La méthode est simple, mais elle demande de la rigueur. Partez de vos <a href="https://aichef.pro/fr/blog/fiche-technique-cuisine">fiches techniques</a>. Pour chaque plat, décomposez-le en tous ses composants : la base, la sauce, la garniture, les éléments achetés tout prêts. Ne vous arrêtez pas au plat principal : pensez aux accompagnements, aux condiments, aux huiles de finition. Ensuite, cochez les 14 allergènes présents dans chaque composant. Faites valider par le chef ou par la personne responsable en cuisine. Ce travail, fait une fois, devient votre référence.</p>
 
 <p>Voici un exemple compilé, fictif, pour illustrer la méthode. Ce n'est pas une liste exhaustive, mais une démonstration de ce que peut donner un tableau plat par plat.</p>
 

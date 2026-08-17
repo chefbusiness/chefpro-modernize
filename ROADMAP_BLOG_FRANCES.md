@@ -114,7 +114,7 @@ donde el agente encaja literal, después gestión y técnica.
 | 5 ✅ | `marche en avant` (cuisine) | 870 | BAJA | sí | Chef Exécutif Pro | satélite |
 | 6 ✅ | `hygiène alimentaire` / `gbph` / 5 règles | 2.930 | BAJA-MEDIA | sí | — plataforma | **PILAR** |
 | 7 ✅ | `plan de nettoyage cuisine` | 330 ↗ | BAJA | no | — plataforma | satélite |
-| 8 | `fiche technique cuisine` | 1.910 | BAJA | **no** | Chef Exécutif Pro | **PILAR** |
+| 8 ✅ | `fiche technique cuisine` | 1.910 | BAJA | **no** | Chef Exécutif Pro | **PILAR** |
 | 9 | `menu engineering` | 410 | BAJA | no | Manager de Restaurant Pro | satélite |
 | 10 | `brunoise` / tailles de découpe | 6.950 | BAJA | **no** | Gastro Lexicum | **PILAR** |
 | 11 | `sauces mères` | 370 | BAJA | no | Cuisine Française | satélite |
