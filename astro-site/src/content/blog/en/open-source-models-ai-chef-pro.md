@@ -16,7 +16,7 @@ faq:
   - q: "Which of the three models should I choose for each task?"
     a: "It depends on your priority. If you need fast responses with solid reasoning, choose DeepSeek V4 Flash. For tasks with very long context, like analyzing extensive documents, GLM-5.2 supports 1 million tokens and is multimodal. Kimi K2.5 is ideal for complex tasks with 256K context and vision. To start, any of the three handles daily tasks—try them and stick with the one that feels best."
   - q: "Do these models replace AI Chef Pro agents?"
-    a: "No, they don't replace them. The more than 85 specialized agents (recipe costing, allergens, menus, recipe books…) come with built-in industry instructions and remain the core of the platform. These general models are the free chat for anything that doesn't have a specific agent. So use them as a complement, not a replacement for your usual tools."
+    a: "No, they don't replace them. The more than 85 specialized agents (recipe costing, allergens, menus, recipe books…) come with built-in industry instructions and remain the core of the platform. These general models are the free-form chat for anything that doesn't have a specific agent. So use them as a complement, not a replacement for your usual tools."
   - q: "What is a 1 million token context useful for in practice?"
     a: "With a 1 million token context, you can paste entire documents into the conversation. For example, a complete HACCP manual, a supplier contract, or an exported sales history. The model processes them without splitting them up, and you can ask about any detail on top. It's like having an assistant that reads your entire file before answering."
   - q: "Can I trust what they answer?"

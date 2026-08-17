@@ -22,30 +22,34 @@ const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
 const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
 // Copy por idioma; de/pt/nl no tienen blog todavía y caen al español.
+// 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
+// escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
+// hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
+// desde 10 €») y el leitmotiv de cifras de fase11: 75+ es/en, 50+ it/fr.
 const COPY = {
   en: {
-    heading: 'Over 70 culinary AI agents working for your business',
+    heading: 'Over 75 culinary AI agents working for your business',
     body:
-      'Recipe costing, menus, HACCP, food marketing and a lot more. Try it for free and put artificial intelligence to work on your numbers.',
-    cta: 'Try AI Chef Pro for free',
+      'Recipe costing, menus, HACCP, food marketing and a lot more. Plans for every budget, from €10/month.',
+    cta: 'Discover AI Chef Pro',
   },
   it: {
-    heading: 'Più di 70 agenti IA culinari al lavoro per la tua attività',
+    heading: 'Più di 50 agenti IA culinari al lavoro per la tua attività',
     body:
-      'Food cost, menu, HACCP, marketing gastronomico e molto altro. Provalo gratis e metti l’intelligenza artificiale a farti i conti.',
-    cta: 'Prova AI Chef Pro gratis',
+      'Food cost, menu, HACCP, marketing gastronomico e molto altro. Piani per tutte le tasche, da 10 € al mese.',
+    cta: 'Scopri AI Chef Pro',
   },
   fr: {
-    heading: "Plus de 70 agents IA culinaires au service de votre établissement",
+    heading: "Plus de 50 agents IA culinaires au service de votre établissement",
     body:
-      "Fiches techniques, cartes, HACCP, marketing gastronomique et bien plus encore. Essayez gratuitement et mettez l'intelligence artificielle sur vos chiffres.",
-    cta: 'Essayer AI Chef Pro gratuitement',
+      "Fiches techniques, cartes, HACCP, marketing gastronomique et bien plus encore. Des formules pour tous les budgets, à partir de 10 €/mois.",
+    cta: 'Découvrir AI Chef Pro',
   },
   es: {
-    heading: 'Más de 70 agentes de IA culinarios trabajando para tu negocio',
+    heading: 'Más de 75 agentes de IA culinarios trabajando para tu negocio',
     body:
-      'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Pruébalo gratis y pon la inteligencia artificial a cocinar números por ti.',
-    cta: 'Probar AI Chef Pro gratis',
+      'Escandallos, cartas, APPCC, marketing gastronómico y mucho más. Planes para todos los bolsillos, desde 10 €/mes.',
+    cta: 'Descubrir AI Chef Pro',
   },
 } as const;
 
