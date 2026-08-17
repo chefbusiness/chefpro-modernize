@@ -121,4 +121,4 @@ faq:
 
 <h2>Il tuo prossimo passo</h2>
 
-<p>Scegli una madre e portala a regime questa settimana: una besciamella senza grumi che diventa Mornay, o una spagnola che parte da un fondo fatto come si deve. A proposito: se la spagnola ti chiama, il <a href="https://aichef.pro/it/blog/fondo-bruno">fondo bruno</a> ha il suo articolo completo — proporzioni, tecnica in 8 fasi e derivate. Le cinque madri non sono nostalgia da scuola alberghiera: sono il sistema operativo delle salse, e adesso ce l'hai in mano.</p>
+<p>Scegli una madre e portala a regime questa settimana: una besciamella senza grumi che diventa Mornay, o una spagnola che parte da un fondo fatto come si deve. A proposito: se la spagnola ti chiama, il <a href="https://aichef.pro/it/blog/fondo-bruno">fondo bruno</a> ha il suo articolo completo — proporzioni, tecnica in 8 fasi e derivate. E se il secondo che le aspetta è una costata frollata, la <a href="https://aichef.pro/it/blog/frollatura-carne">frollatura della carne</a> ha la sua guida completa. Le cinque madri non sono nostalgia da scuola alberghiera: sono il sistema operativo delle salse, e adesso ce l'hai in mano.</p>

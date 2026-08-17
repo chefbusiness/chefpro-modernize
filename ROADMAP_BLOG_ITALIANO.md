@@ -109,12 +109,14 @@ el clúster de alérgenos y HACCP —el más rentable y el que mejor encaja con
 > agente verificado en la plataforma viva: `chef-ejecutivo-pro-05y07-it`.
 > **Post 7 publicado el 2026-08-16** (slug `fondo-bruno`; agente verificado
 > en vivo: Cucina Creativa, formid `0UGX4TMPB2`). **Post 8 publicado el
-> 2026-08-17** (`salse-madri`, interenlazado ↔ con el 7). El siguiente es el 9,
-> `frollatura carne` (4.400/mes, BAJA).
+> 2026-08-17** (`salse-madri`, interenlazado ↔ con el 7). **Post 9 publicado el 2026-08-17**
+> (`frollatura-carne`, recíproco con el 8). El siguiente es el 10,
+> `cucina molecolare` (2.400/mes) — con **Sosa Ingredients AI** (verificar
+> formid en itapp: en el censo vivo figura «Sosa Ingredients AI»).
 | 6 ✅ | `mise en place` (7 fasi) | **18.100** | BAJA | sí | Chef Esecutivo Pro | **PILAR** |
 | 7 ✅ | `fondo bruno` | **6.600** | MEDIA | **NO** | Cucina Creativa | **PILAR** |
 | 8 ✅ | `salse madri` | 390 | BAJA | sí | Cucina Creativa | satélite |
-| 9 | `frollatura carne` | **4.400** | BAJA | sí | Cucina Creativa | **PILAR** |
+| 9 ✅ | `frollatura carne` | **4.400** | BAJA | sí | Cucina Creativa | **PILAR** |
 | 10 | `cucina molecolare` | 2.400 | BAJA | sí | **Sosa Ingredients AI** | PILAR |
 | 11 | `brigata di cucina` | 1.300 | BAJA | sí | Manager Ristorante Pro | **PILAR** |
 | 12 | `food cost tabella` / `calcolo food cost` | 670 | BAJA | sí | Manager Ristorante Pro | satélite |
