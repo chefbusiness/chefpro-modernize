@@ -93,7 +93,7 @@ faq:
 
 <h3>Les locaux et le matériel</h3>
 
-<p>Nous l’avons dit, nettoyer puis désinfecter sont deux opérations complémentaires. Le nettoyage enlève la saleté visible, la désinfection détruit les micro-organismes. Dans la pratique, cela signifie que chaque surface, chaque ustensile, chaque équipement doit passer par ces deux étapes, et pas seulement une fois par jour. Le plan de nettoyage écrit, signé et daté est votre meilleur allié : il indique qui fait quoi, quand, avec quel produit, et il permet de vérifier que rien n’est oublié. Un frigo nettoyé une fois par semaine, des étagères dépoussiérées, des poubelles vidées régulièrement : ce sont ces détails qui créent un environnement sain.</p>
+<p>Nous l’avons dit, nettoyer puis désinfecter sont deux opérations complémentaires. Le nettoyage enlève la saleté visible, la désinfection détruit les micro-organismes. Dans la pratique, cela signifie que chaque surface, chaque ustensile, chaque équipement doit passer par ces deux étapes, et pas seulement une fois par jour. Le <a href="https://aichef.pro/fr/blog/plan-de-nettoyage-cuisine">plan de nettoyage</a> écrit, signé et daté est votre meilleur allié : il indique qui fait quoi, quand, avec quel produit, et il permet de vérifier que rien n’est oublié. Un frigo nettoyé une fois par semaine, des étagères dépoussiérées, des poubelles vidées régulièrement : ce sont ces détails qui créent un environnement sain.</p>
 
 <h3>Les produits</h3>
 
