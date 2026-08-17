@@ -111,6 +111,8 @@ faq:
 <figcaption>Cuits en haut, crus en bas, tout couvert et étiqueté : un jus qui goutte ne doit jamais pouvoir tomber sur un produit fini.</figcaption>
 </figure>
 
+<p>Ce principe de séparation a d'ailleurs un nom et une méthode complète : la <a href="https://aichef.pro/fr/blog/marche-en-avant">marche en avant</a> — du sale vers le propre, jamais l'inverse, dans l'espace ou dans le temps.</p>
+
 <p>Séparer dans l’espace, c’est organiser la cuisine en zones dédiées : une zone pour les viandes crues, une zone pour les légumes, une zone pour les produits finis. Les plans de travail, les équipements et les ustensiles ne se mélangent pas. C’est la solution idéale, mais toutes les cuisines ne le permettent pas.</p>
 
 <p>Quand la cuisine est petite, la séparation dans le temps est la bonne méthode. On traite d’abord tout ce qui est cru : découpe des viandes, préparation des poissons, nettoyage des légumes. Ensuite, on nettoie et on désinfecte soigneusement les surfaces et les ustensiles. Enfin, on passe aux préparations propres : cuisson, dressage, produits finis. Cette séquence oblige à penser le service à l’envers, mais elle est fiable si elle est respectée par toute la brigade.</p>
