@@ -112,7 +112,7 @@ donde el agente encaja literal, después gestión y técnica.
 | 3 ✅ | `haccp` (+ normes, méthode, c'est quoi) | **35.460** | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |
 | 4 ✅ | `plan de maitrise sanitaire` (PMS) | 1.530 | MEDIA | sí | Manager de Restaurant Pro | **PILAR** |
 | 5 ✅ | `marche en avant` (cuisine) | 870 | BAJA | sí | Chef Exécutif Pro | satélite |
-| 6 | `hygiène alimentaire` / `gbph` / 5 règles | 2.930 | BAJA-MEDIA | sí | — plataforma | **PILAR** |
+| 6 ✅ | `hygiène alimentaire` / `gbph` / 5 règles | 2.930 | BAJA-MEDIA | sí | — plataforma | **PILAR** |
 | 7 | `plan de nettoyage cuisine` | 330 ↗ | BAJA | no | — plataforma | satélite |
 | 8 | `fiche technique cuisine` | 1.910 | BAJA | **no** | Chef Exécutif Pro | **PILAR** |
 | 9 | `menu engineering` | 410 | BAJA | no | Manager de Restaurant Pro | satélite |
