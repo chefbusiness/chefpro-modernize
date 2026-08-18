@@ -4,7 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   DoorOpen, Croissant, ClipboardList, Users,
   CalendarDays, PartyPopper, FileEdit, Megaphone, Calendar, Building2, Wallet,
-  CalendarRange, Cake, ShieldAlert,
+  CalendarRange, Cake, ShieldAlert, Thermometer,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -35,7 +35,8 @@ const TEMPLATES: TemplateCard[] = [
   { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo por denominación, cuadre con la Z y registro mensual con descuadre.' },
   { key: 'plan-produccion', icon: CalendarRange, title: 'Plan de Producción Semanal', desc: 'Previsión por producto y partida (Lun–Dom), producido vs vendido, merma en % y € y resumen semanal.', isNew: true },
   { key: 'encargos', icon: Cake, title: 'Control de Encargos', desc: 'Ficha de encargo imprimible con alérgenos, señal y pendiente, registro mensual y agenda de entregas.', isNew: true },
-  { key: 'alergenos', icon: ShieldAlert, title: 'Alérgenos de Vitrina (14 UE)', desc: 'Matriz pre-rellenada con más de 30 productos, cartel para la tienda y etiquetas de vitrina.', isNew: true },
+  { key: 'alergenos', icon: ShieldAlert, title: 'Alérgenos de Vitrina (14 UE)', desc: 'Matriz de partida con más de 30 productos (para verificar con tus fichas técnicas), carta de alérgenos, cartel para la tienda y etiquetas de vitrina.', isNew: true },
+  { key: 'temperaturas', icon: Thermometer, title: 'Temperaturas, Recepción y Etiquetas', desc: 'Registro mensual de temperaturas por equipo, recepción de mercancía con criterios de rechazo y etiquetas de elaborado con vidas útiles.', isNew: true },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Servicio', desc: 'Plantilla de briefing diario del obrador.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '17 fechas clave de pastelería.' },
 ];
@@ -94,7 +95,7 @@ export default function KitTareasPasteleriaDashboard() {
             <ProductVersionBadge productId="kit-tareas-pasteleria" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 12 checklists operativos + 2 bonus listos para descargar. Imprime, delega y controla.
+            Tus 13 checklists operativos + 2 bonus listos para descargar. Imprime, delega y controla.
           </p>
         </section>
 
@@ -102,7 +103,7 @@ export default function KitTareasPasteleriaDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              12 Checklists + 2 Bonus · Descarga Directa
+              13 Checklists + 2 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

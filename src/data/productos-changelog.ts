@@ -29,12 +29,14 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
       {
         version: '2.0',
         date: '2026-08-18',
-        title: 'Tres plantillas nuevas y revisión completa del kit',
+        title: 'Cuatro plantillas nuevas y revisión completa del kit',
         changes: [
           'Nueva plantilla 10 — Plan de Producción Semanal + Control de Mermas: previsión por producto y partida (Lun–Dom), producido vs vendido, merma en % y en euros, y resumen semanal por partida con semáforo.',
           'Nueva plantilla 11 — Ficha de Encargo + Registro de Encargos: ficha imprimible con alérgenos, señal y pendiente, registro mensual y agenda semanal de entregas.',
-          'Nueva plantilla 12 — Matriz de Alérgenos de Vitrina (14 UE): más de 30 productos de pastelería pre-rellenados, cartel para la tienda y etiquetas de vitrina imprimibles.',
+          'Nueva plantilla 12 — Alérgenos de Vitrina (14 UE): matriz de partida con más de 30 productos de pastelería para verificar con tus fichas técnicas, carta de alérgenos, cartel para la tienda y etiquetas de vitrina imprimibles.',
+          'Nueva plantilla 13 — Registro de Temperaturas, Recepción de Mercancía y Etiquetas de Elaborado: hoja mensual por equipo con rangos objetivo, control de recepción con criterios de rechazo y etiquetas con vidas útiles orientativas.',
           'Apertura y Cierre del Negocio rediseñado para pastelería con tienda: vitrinas, etiquetado, encargos del día, sobrante y comprobaciones de obrador.',
+          'Checklists revisados por un jefe de obrador: casilla de completado unificada (la que cuenta el total), calendario de campañas corregido (roscón, Semana Santa, Todos los Santos y comuniones), parámetros técnicos de bollería y referencias cruzadas entre plantillas.',
           'Apertura y Cierre de Caja: descuadre diario calculado en el registro mensual y formatos de moneda.',
           'Todas las plantillas: valores calculados visibles también en el móvil y en visores que no recalculan, impresión en A4 configurada, metadatos e instrucciones actualizados.',
         ],

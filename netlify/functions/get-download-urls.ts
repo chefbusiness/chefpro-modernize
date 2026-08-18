@@ -120,6 +120,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'plan-produccion': '/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx',
     'encargos': '/dl/kit-tareas-pasteleria/11-control-encargos.xlsx',
     'alergenos': '/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx',
+    'temperaturas': '/dl/kit-tareas-pasteleria/13-registro-temperaturas-recepcion.xlsx',
     'bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
   },
@@ -454,6 +455,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'kit-tareas-pasteleria__plan-produccion': '/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx',
     'kit-tareas-pasteleria__encargos': '/dl/kit-tareas-pasteleria/11-control-encargos.xlsx',
     'kit-tareas-pasteleria__alergenos': '/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx',
+    'kit-tareas-pasteleria__temperaturas': '/dl/kit-tareas-pasteleria/13-registro-temperaturas-recepcion.xlsx',
     'kit-tareas-pasteleria__bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
     'kit-tareas-pasteleria__bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
     // Bar
