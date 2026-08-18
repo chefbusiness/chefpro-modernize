@@ -355,12 +355,18 @@ export const handler: Handler = async (event) => {
     const Stripe = (await import('stripe')).default;
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: '2024-12-18.acacia' });
 
-    const sessions = await stripe.checkout.sessions.list({
-      customer_details: { email },
-      limit: 10,
-    });
+    // El cliente teclea el email a mano en "¿Ya compraste?": normalizar espacios/mayúsculas y
+    // consultar Stripe con la variante normalizada Y la literal (bug "email case-sensitive",
+    // catalogado en CB PRODUCTOS-DIGITALES-ROADMAP §2). Se conserva la literal para no romper
+    // a quien pagó con mayúsculas si el filtro de Stripe resultara sensible a ellas.
+    const emailNorm = String(email).trim().toLowerCase();
+    const variants = emailNorm === email ? [email] : [emailNorm, email];
+    const results = await Promise.all(
+      variants.map((e) => stripe.checkout.sessions.list({ customer_details: { email: e }, limit: 10 }))
+    );
+    const allSessions = results.flatMap((r) => r.data);
 
-    const paidSession = sessions.data.find((s) => s.payment_status === 'paid');
+    const paidSession = allSessions.find((s) => s.payment_status === 'paid');
 
     if (!paidSession) {
       return { statusCode: 404, headers, body: JSON.stringify({ error: 'No purchase found' }) };
@@ -369,7 +375,7 @@ export const handler: Handler = async (event) => {
     // Generate new JWT and send email
     const jwt = (await import('jsonwebtoken')).default;
     const token = jwt.sign(
-      { email, product: productId },
+      { email: emailNorm, product: productId },
       process.env.JWT_SECRET!,
       { expiresIn: '365d' }
     );
@@ -384,7 +390,7 @@ export const handler: Handler = async (event) => {
       },
       body: JSON.stringify({
         from: 'AI Chef Pro <noreply@contact.aichef.pro>',
-        to: email,
+        to: emailNorm,
         subject: config.emailSubject,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px;">

@@ -50,7 +50,9 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
   },
   'kit-tareas-cafeteria': {
     'apertura-cierre': '/dl/kit-tareas-cafeteria/01-apertura-cierre.xlsx',
-    'partidas': '/dl/kit-tareas-cafeteria/02-partidas-cocina.xlsx',
+    // Clave = TEMPLATES[].key del dashboard (KitTareasCafeteriaDashboard.tsx). Hasta 2026-08-18
+    // aquí decía 'partidas' → la tarjeta 'Tareas del Barista' mostraba 'Disponible pronto'.
+    'barista': '/dl/kit-tareas-cafeteria/02-partidas-cocina.xlsx',
     'manager': '/dl/kit-tareas-cafeteria/03-tareas-manager.xlsx',
     'perfiles': '/dl/kit-tareas-cafeteria/04-tareas-perfiles.xlsx',
     'periodicas': '/dl/kit-tareas-cafeteria/05-tareas-semanales-mensuales.xlsx',
@@ -63,7 +65,9 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
   },
   'kit-tareas-pizzeria': {
     'apertura-cierre': '/dl/kit-tareas-pizzeria/01-apertura-cierre.xlsx',
-    'partidas': '/dl/kit-tareas-pizzeria/02-partidas-cocina.xlsx',
+    // Clave = TEMPLATES[].key del dashboard (KitTareasPizzeriaDashboard.tsx). Hasta 2026-08-18
+    // aquí decía 'partidas' → la tarjeta 'Tareas del Horno' mostraba 'Disponible pronto'.
+    'horno': '/dl/kit-tareas-pizzeria/02-partidas-cocina.xlsx',
     'manager': '/dl/kit-tareas-pizzeria/03-tareas-manager.xlsx',
     'perfiles': '/dl/kit-tareas-pizzeria/04-tareas-perfiles.xlsx',
     'periodicas': '/dl/kit-tareas-pizzeria/05-tareas-semanales-mensuales.xlsx',
@@ -76,7 +80,9 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
   },
   'kit-tareas-hamburgueseria': {
     'apertura-cierre': '/dl/kit-tareas-hamburgueseria/01-apertura-cierre.xlsx',
-    'partidas': '/dl/kit-tareas-hamburgueseria/02-partidas-cocina.xlsx',
+    // Clave = TEMPLATES[].key del dashboard (KitTareasHamburgueseriaDashboard.tsx). Hasta 2026-08-18
+    // aquí decía 'partidas' → la tarjeta 'Tareas de Plancha y Grill' mostraba 'Disponible pronto'.
+    'plancha-grill': '/dl/kit-tareas-hamburgueseria/02-partidas-cocina.xlsx',
     'manager': '/dl/kit-tareas-hamburgueseria/03-tareas-manager.xlsx',
     'perfiles': '/dl/kit-tareas-hamburgueseria/04-tareas-perfiles.xlsx',
     'periodicas': '/dl/kit-tareas-hamburgueseria/05-tareas-semanales-mensuales.xlsx',
