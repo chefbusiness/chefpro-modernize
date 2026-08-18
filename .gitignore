@@ -48,3 +48,6 @@ Stripe Disputa/
 
 # Outputs intermedios de sesiones (research, cachés) — no versionar
 .work/
+
+# Local Netlify folder
+.netlify
