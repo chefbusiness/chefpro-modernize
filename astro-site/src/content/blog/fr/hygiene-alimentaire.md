@@ -97,7 +97,7 @@ faq:
 
 <h3>Les produits</h3>
 
-<p>Les matières premières que vous recevez doivent être protégées, étiquetées et stockées correctement. Concrètement : les aliments sont couverts ou filmés, étiquetés avec le produit et la date, stockés à la bonne température, et jamais posés à même le sol. La règle du premier entré, premier sorti (PEPS) évite que des produits anciens traînent au fond de la réserve. À la réception, vérifiez la température des camions, l’intégrité des emballages, les dates de durabilité. Un produit livré à 12 °C alors qu’il devait être à 4 °C, c’est un risque que vous acceptez sans le savoir. Le contrôle à réception n’est pas une formalité, c’est la première barrière.</p>
+<p>Les matières premières que vous recevez doivent être protégées, étiquetées et stockées correctement. Concrètement : les aliments sont couverts ou filmés, étiquetés avec le produit et la date, stockés à la bonne température, et jamais posés à même le sol. La règle du premier entré, premier sorti (PEPS) évite que des produits anciens traînent au fond de la réserve. Et chaque date sur ces étiquettes a son propre statut : <a href="https://aichef.pro/fr/blog/dlc-ddm">DLC, DDM et DCR ne se gèrent pas pareil</a>. À la réception, vérifiez la température des camions, l’intégrité des emballages, les dates de durabilité. Un produit livré à 12 °C alors qu’il devait être à 4 °C, c’est un risque que vous acceptez sans le savoir. Le contrôle à réception n’est pas une formalité, c’est la première barrière.</p>
 
 <figure>
 <img src="/blog-assets/2026/08/hygiene-produits.jpg" alt="Réserve sèche d'un restaurant : contenants fermés et étiquetés en français sur des étagères, rien posé au sol" width="1376" height="768" loading="lazy" decoding="async" />
