@@ -1,0 +1,922 @@
+{
+ "v2:91d654689|Coherencia comercial + cliente": {
+  "lente": "Coherencia comercial + cliente escéptico (promesas de venta vs. entregable real)",
+  "hallazgos": [
+   {
+    "id": "L4-01",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "línea 30 (aggregateRating) + 31-49 (schema.reviews) + 288-354 (testimonials.items)",
+    "hallazgo": "El producto emite JSON-LD con `aggregateRating 4.9 / reviewCount '8'` y 3 `Review` con autor y texto, sin ningún sistema real de recogida de reseñas. Además las tres cifras no cuadran entre sí: 8 (reviewCount) ≠ 10 (testimonios del marquee) ≠ 3 (reviews del schema).",
+    "evidencia": "kit-tareas-pasteleria.ts:30 `aggregateRating: { ratingValue: '4.9', reviewCount: '8' ... }`; :33 `author: 'Marta Vidal'` cuyo texto es una versión abreviada del testimonio de :303 `name: 'Marc Vidal'`; testimonials.items tiene 10 entradas (:290-353). Ningún fichero del repo recoge reseñas de compradores (grep de 'review' solo devuelve el schema).",
+    "propuesta_v2": "O (a) eliminar `aggregateRating` y `reviews` del JSON-LD y dejar los testimonios como texto de marca claramente etiquetado («casos de uso ilustrativos»), o (b) montar recogida real (Resend post-compra pidiendo reseña, ya existe la skill resend-operaciones-grupo) y publicar solo las reales. Mientras no haya reseñas verificadas, `reviewCount` no debe existir: Google trata como no elegibles las reseñas autoservidas del propio vendedor, y el RDL 24/2021 (art. 20 y 20 bis LCD) prohíbe presentar como reseñas de consumidores las que no se han comprobado."
+   },
+   {
+    "id": "L4-02",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 315, 339, 351",
+    "hallazgo": "Confirmo SPEC §0 #6 y lo agravo: no es solo «marcas reales», es que se ponen frases en boca de empleados inventados de tres organizaciones identificables (Meliá, Europastry, Escuela Hofmann), lo que es simultáneamente reseña falsa y aprovechamiento de reputación ajena.",
+    "evidencia": ":315 `role: 'Chef Pâtissier, Hotel Meliá Valencia'`; :339 `role: 'Ayudante de Pastelería, Grupo Europastry'`; :351 `role: 'Formador de Pastelería, Escuela Hofmann'`.",
+    "propuesta_v2": "Aplicar el mapeo de la SPEC («Hotel boutique, Valencia» / «Obrador industrial, Barcelona» / «Escuela de pastelería, Barcelona») PERO además revisar los 7 nombres de negocio ficticios restantes (Obrador Sant Jordi, Pastelería La Miga de Oro, Dulce Tradición Obrador, Macarons & Co, Obrador Artesano BCN, El Rincón Dulce): varios existen como negocios reales en España. Sustituir por descriptores sin nombre propio («Obrador familiar, Barcelona») en TODAS las entradas, no solo en las tres marcadas."
+   },
+   {
+    "id": "L4-03",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 359-365 (pricing) + render en components/pages/KitTareasLandingPage.astro:219, 431, 475, 555",
+    "hallazgo": "Ancla de precio permanente: se tacha «€39» en cuatro puntos de la página y se anuncia «-69%» y «Precio especial de lanzamiento. Sube pronto» desde el lanzamiento (2026-03-21) hasta hoy (2026-08-18), cinco meses. El producto nunca se ha vendido a €39.",
+    "evidencia": "kit-tareas-pasteleria.ts:359-365 `priceOld: '€39' / price: '€12' / discountBadge: '-69%' / heroNote: 'Precio especial de lanzamiento. Sube pronto' / bonusSaveLine: '¡Ahorra €27 HOY!'`; KitTareasLandingPage.astro:219,431,475,555 pintan `line-through {priceOld}`. La aritmética sí cuadra (39→12 = −69,2 %; 39−12 = 27), pero el precio de referencia no.",
+    "propuesta_v2": "El art. 20 de la Ley 7/1996 (redacción RDL 24/2021) obliga a que el precio anunciado como anterior sea el más bajo aplicado en los 30 días previos. Dos salidas limpias, y la v2.0 es el momento: (a) subir realmente el precio a €19 al publicar la v2.0 y dejar `priceOld: '€19'` solo durante los 30 días en que ese precio esté vigente; o (b) eliminar `priceOld`/`discountBadge` y vender por valor («12 plantillas + 2 bonus por €12 — pago único, sin suscripción»), sustituyendo `heroNote` por `'Pago único · IVA incluido · Actualizaciones de por vida'`."
+   },
+   {
+    "id": "L4-04",
+    "severidad": "alta",
+    "fichero": "astro-site/src/components/pages/KitTareasLandingPage.astro",
+    "ubicacion": "toda la plantilla (grep 'IVA' = 0 resultados) + kit-tareas-pasteleria.ts:29 `price: '12.00'`",
+    "hallazgo": "En ningún punto de la landing ni del schema se indica si el precio incluye IVA, mientras que otras páginas del mismo sitio sí lo hacen. Si el checkout de Stripe añade IVA sobre €12, el cliente paga más de lo anunciado: motivo directo de disputa (el proyecto ya arrastra una disputa Stripe abierta).",
+    "evidencia": "`grep -n IVA astro-site/src/components/pages/KitTareasLandingPage.astro astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts` → sin resultados; `grep -rl IVA astro-site/src/pages/*.astro` → contacto.astro, faq.astro, precios.astro, libreria-de-prompts.astro sí lo mencionan.",
+    "propuesta_v2": "Añadir al dato del producto un campo `pricing.taxNote: 'IVA incluido · Pago único, sin suscripción'` y pintarlo bajo el precio en los cuatro bloques de precio de KitTareasLandingPage.astro. Verificar en el Payment Link de Stripe si `tax_behavior` es inclusive; si no lo es, cambiarlo antes de publicar la v2.0."
+   },
+   {
+    "id": "L4-05",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 228-236 (guarantee) + faqs :270",
+    "hallazgo": "Se promete «30 días de garantía completa · 100 % reembolso sin preguntas» pero no existe política de devoluciones ni de desistimiento en ninguna página legal del sitio, ni un procedimiento para pedirlo (solo info@aichef.pro). Un cliente exigente tiene la promesa de marketing y ningún cauce documentado.",
+    "evidencia": "kit-tareas-pasteleria.ts:229 `text: 'Si los checklists no te ayudan ... te devolvemos el 100% ...'`; :232-235 stats «30 / 100% / 0». `grep -ril desistimiento src/ astro-site/src/` → 0 resultados; `astro-site/src/pages/terminos.astro` monta `src/pages/Terms.tsx`, donde grep de 'reembols|devoluc|desistimiento' → 0 resultados.",
+    "propuesta_v2": "Antes de publicar la v2.0: (1) añadir a Terms.tsx una sección «Devoluciones y desistimiento» que recoja la garantía voluntaria de 30 días y el art. 103.m TRLGDCU (contenido digital: el cliente consiente la ejecución inmediata y pierde el desistimiento — debe aceptarse en el checkout); (2) enlazar esa sección desde `guarantee` con un texto tipo «Escríbenos a info@aichef.pro en 30 días y te devolvemos los €12 — ver política de devoluciones»; (3) mantener el mismo texto en el email de compra."
+   },
+   {
+    "id": "L4-06",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "línea 259 (FAQ 3)",
+    "hallazgo": "La FAQ promete explícitamente «gestión de pedidos» y en la v1 no existe ningún fichero de pedidos/encargos: es la promesa más fácilmente refutable por un comprador que pida reembolso.",
+    "evidencia": ":259 `'Un obrador industrial puede usar todas las partidas de producción + gestión de pedidos.'`; los 11 ficheros LIVE no contienen ninguna hoja de pedidos (dump: hojas de 01-09 y BONUS listadas; lo más cercano son tareas sueltas tipo `02!B10 'Montar tartas por encargo (según ficha de pedido)'` que remiten a una ficha que el kit NO incluye).",
+    "propuesta_v2": "La v2.0 lo resuelve con `11-control-encargos.xlsx`, pero hay que cerrar el círculo en el copy: reescribir la FAQ como «...puede usar todas las partidas de producción + el control de encargos (ficha imprimible, registro mensual y agenda de entregas) y el plan de producción semanal.» y añadir en 02!B10 una nota «(usa la Ficha de Encargo del fichero 11)»."
+   },
+   {
+    "id": "L4-07",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 116-171 (grid) vs. 214 (bonus.subtitle)",
+    "hallazgo": "Doble conteo de los bonos dentro de la misma página: el grid anuncia «9 Plantillas» y sus 9 tarjetas YA incluyen las dos BONUS (tarjetas 8 y 9), y acto seguido la sección de bonos dice «Además de las 9 plantillas, recibirás estos recursos adicionales». El lector suma 11 prometidas. La SPEC §2 corrige `countGold` pero no toca `bonus.subtitle`.",
+    "evidencia": ":116 `countGold: '9'`; :160 y :165 tarjetas `'BONUS: Briefing Servicio'` y `'BONUS: Calendario Anual'` dentro de `grid.templates`; :214 `'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16'`. El mismo defecto está en el hermano kit-tareas-panaderia.ts:111 (`countGold: '11'`) vs :219 («Además de los 9 checklists principales»).",
+    "propuesta_v2": "Con la v2.0 (12 core + 2 bonus): `grid.countGold: '12'` sin tarjetas BONUS, y `bonus.subtitle: 'Además de las 12 plantillas del kit, recibirás estos dos recursos adicionales — valorados en €16'`. Revisar también `cta.items` (:279-287), que hoy lista los bonos como ítems 7 y 8 de una lista que empieza por las plantillas."
+   },
+   {
+    "id": "L4-08",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx, BONUS-02-calendario-anual-tareas.xlsx",
+    "ubicacion": "todas las hojas de trabajo (relleno de celdas)",
+    "hallazgo": "Promesa incumplida de «celdas editables marcadas en verde»: el verde de marca E8F5E9 existe en 01-07 y BONUS-01, pero 08 y 09 NO tienen ni una sola celda verde (usan F5F5F5/FFFFFF) y BONUS-02 solo 6. Un cliente que sigue la instrucción («rellena las verdes») se queda mirando dos ficheros grises.",
+    "evidencia": "Inspección con openpyxl: 08 `Apertura del Negocio` fills = {1A1A1A:1, FFD700:3, 2D2D2D:8, F5F5F5:72, FFFFFF:64} — sin E8F5E9; 09 `Cierre de Caja` fills = {…F5F5F5:66, FFFFFF:56} — sin E8F5E9; BONUS-02 `Calendario Anual` fills = {2D2D2D:6, E8F5E9:6}. Promesa en kit-tareas-pasteleria.ts:251 («Las celdas editables están marcadas en verde») y en 01!Instrucciones B10 («Las celdas verdes son editables»).",
+    "propuesta_v2": "La SPEC §1.3 exige verde solo en los ficheros NUEVOS (10-12); ampliarlo a §1.1: repintar en E8F5E9 las celdas de entrada de 08 (D:H de cada tarea), 09 (columna B del recuento por denominación, B41/B42/B44, y B:E+H:I del Registro Mensual) y BONUS-02 (columna F Notas + filas nuevas en blanco). Sin esto, la frase «celdas verdes» sigue siendo falsa en 3 de 14 ficheros."
+   },
+   {
+    "id": "L4-09",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx",
+    "ubicacion": "hojas Apertura del Negocio (A5:C21) y Cierre del Negocio (A5:C19)",
+    "hallazgo": "CONFIRMO SPEC §0 #4 con prueba dura: 08 no es «genérico de restaurante», es literalmente el fichero del Kit Restaurante Casual con el título cambiado y dos tareas añadidas al final. Esto refuta frontalmente el argumento de venta «No son plantillas genéricas».",
+    "evidencia": "Diff celda a celda entre `dl/kit-tareas/08-…xlsx` y `dl/kit-tareas-pasteleria/08-…xlsx`: solo cambian `Instrucciones!A2`, `Apertura!A1`, `Cierre!A1` y se añaden 4 filas (Apertura A20/A21 «Encender vitrinas refrigeradas», «Montar expositor»; Cierre A18/A19). Quedan intactas para una pastelería: `Apertura!B11 'Encender sistema de reservas / tablet de pedidos'`, `B13 'Revisar reservas del día'`, `B17 'Montar terraza…'`, `B18 'Comprobar que las cartas/menús están en orden'`, `B16 'Revisar estado del mobiliario (sillas, mesas…)'`. Promesa contradicha en kit-tareas-pasteleria.ts:174 («No son plantillas genéricas»).",
+    "propuesta_v2": "Reescribir 08 como indica la SPEC §1.2 — y hacer el mismo diff de control contra `dl/kit-tareas/08` al terminar para garantizar que ya NO comparte filas con el kit de restaurante (criterio de aceptación: 0 tareas idénticas en B más allá de alarma/luces/persianas/basura)."
+   },
+   {
+    "id": "L4-10",
+    "severidad": "alta",
+    "fichero": "src/data/productos-digitales-config.ts",
+    "ubicacion": "líneas 244-268",
+    "hallazgo": "Existe una CUARTA copia del mapa de ficheros y de los textos de email («9 checklists operativos») que la SPEC §2 no contempla. Si alguien activa ese config (es el que trae el branch de refactor de netlify functions) el kit vuelve a anunciar 9 checklists y a servir 11 rutas sin las 3 nuevas.",
+    "evidencia": "productos-digitales-config.ts:251 y :254 `'…descargar los 9 checklists operativos:'`; :255-267 mapa `files` con los 11 ficheros v1. `grep -rn productos-digitales-config src netlify astro-site/src` → 0 importadores (código muerto, pero vivo en el branch `origin/refactor/netlify-functions-config-2026-05-08`). La SPEC §2 solo nombra get-download-urls.ts, verify-purchase.ts y resend-access.ts.",
+    "propuesta_v2": "Añadir `src/data/productos-digitales-config.ts` a la lista de §2 (mismas 3 claves nuevas + `'…descargar los 12 checklists operativos + 2 bonus:'`) o borrarlo del repo si el refactor se descarta. Dejar dos fuentes de verdad divergentes garantiza que la v2.1 se publique rota."
+   },
+   {
+    "id": "L4-11",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts + astro-site/public/dl/kit-tareas-pasteleria/*.xlsx",
+    "ubicacion": ":204 compatPills «Imprimible A4» + src/pages/KitTareasPasteleriaDashboard.tsx (banner de compatibilidad)",
+    "hallazgo": "«Imprimible A4» se vende como característica en la landing y en el dashboard, pero 9 de los 11 ficheros no tienen ninguna configuración de página: al imprimir, las 7 columnas se parten en 2-3 folios y sin repetir cabecera. REFUTO parcialmente la SPEC §0 #5, que dice «los 11»: 08 y 09 SÍ tienen A4 (paperSize=9) y fitToWidth=1.",
+    "evidencia": "openpyxl: 01-07 y BONUS-01/02 → `page_setup.orientation=None, paperSize=None, fitToWidth=None, print_title_rows=None, freeze_panes=None, oddFooter=None` en TODAS sus hojas; 08 → `portrait, paper=9, fitToWidth=1`; 09 → ídem, con `Registro Mensual` en `landscape`. Promesa en :204 `{ label: 'Imprimible A4' }` y en el banner del dashboard.",
+    "propuesta_v2": "Corregir el alcance de la SPEC §1.1: son 9 ficheros los que necesitan page_setup desde cero (01-07, BONUS-01, BONUS-02) y 2 los que solo necesitan completarse (08/09 les falta `fitToPage=True`, `print_title_rows='4:4'`, `freeze_panes` y pie de página). Criterio de aceptación: `ws.page_setup.fitToWidth==1 and ws.print_title_rows` en las 30+ hojas de trabajo del kit."
+   },
+   {
+    "id": "L4-12",
+    "severidad": "alta",
+    "fichero": "src/pages/KitTareasPasteleriaDashboard.tsx",
+    "ubicacion": "banner de compatibilidad («Todas las fórmulas se mantienen.»)",
+    "hallazgo": "Justo debajo de los botones de descarga se afirma que «todas las fórmulas se mantienen», y son precisamente las fórmulas lo que el cliente ve en blanco al abrir el .xlsx en el móvil, en la vista previa de Drive/Gmail o en Numbers. Matizo la SPEC §0 #2: no son «los 11» ficheros — 08 y BONUS-02 no tienen NI UNA fórmula (otra promesa incumplida: 08 no lleva contador de tareas como sus hermanos).",
+    "evidencia": "openpyxl `data_only=True`: 80 celdas de fórmula en el kit, 80 con valor `None`. Reparto real: 01(2), 02(3), 03(4), 04(4), 05(3), 06(4), 07(3), BONUS-01(1) = 24 COUNTIF + 09 con 56 (18 en `Cierre de Caja`, 38 en `Registro Mensual`); 08 y BONUS-02 = 0 fórmulas.",
+    "propuesta_v2": "Mantener `inject_cache.py` como exige la SPEC, y aprovechar para dar a 08 el contador que le falta (hoy es el único checklist del kit sin fila «Tareas completadas»). Si tras el caché sigue habiendo alguna fórmula sin valor, suavizar el banner a «Las fórmulas se recalculan al abrir el archivo en Excel, Sheets o LibreOffice» en vez de prometer que se mantienen."
+   },
+   {
+    "id": "L4-13",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 102, 118, 18, 27",
+    "hallazgo": "«9 plantillas Excel PRE-RELLENADAS» / «Cada plantilla viene pre-rellenada» es falso para el fichero 07, que son 3 hojas en blanco — y la propia tarjeta 7 del grid lo confiesa dos pantallas más abajo.",
+    "evidencia": ":102 `'9 plantillas Excel pre-rellenadas con todas las tareas de tu pastelería…'`; :118 `subtitle: 'Cada plantilla viene pre-rellenada…'`; frente a :156 `desc: '3 plantillas en blanco (por franja horaria, por zona, por perfil)…'`. Dump 07: `Por Franja Horaria` A6:A30 solo contienen `☐` y `General`, sin texto de tarea.",
+    "propuesta_v2": "Redactar «12 plantillas Excel: 11 pre-rellenadas con las tareas reales de un obrador + 1 juego de plantillas en blanco para las tuyas». Igual en `grid.subtitle` y en `seo.description`/`schema.productDescription`."
+   },
+   {
+    "id": "L4-14",
+    "severidad": "media",
+    "fichero": "src/pages/KitTareasPasteleriaDashboard.tsx",
+    "ubicacion": "TEMPLATES[0].desc (tarjeta 'apertura-cierre')",
+    "hallazgo": "La SPEC §2 corrige «6 checklists … ~45 tareas» SOLO en la landing y deja intacta la misma frase falsa en el dashboard — que es donde la lee el cliente que ya ha pagado. Confirmo la cifra real de la SPEC (2 hojas / 6 bloques / 42 tareas).",
+    "evidencia": "Dashboard (estado actual, tras la edición v2 en curso): `{ key: 'apertura-cierre', … desc: '6 checklists: apertura y cierre de obrador, horno, vitrina y despacho.' }`. Fichero 01: 2 hojas; Apertura = 22 tareas (F34=22, bloques Encendido/Preparación/Vitrina), Cierre = 20 (F32=20, bloques Producción/Vitrina/General) → 42. No hay hoja de «horno» ni de «despacho».",
+    "propuesta_v2": "Dashboard: `desc: '2 checklists (apertura y cierre del obrador) con 6 bloques y 42 tareas: equipos, mise en place, vitrina y despacho.'`. Landing tarjeta 1 (:124): `'Apertura y cierre del obrador en 6 bloques y 42 tareas pre-rellenadas. Cada tarea con zona, responsable, hora límite y firma.'`. Y quitar «horno» de `hero.checkItems` (:106), donde también se anuncia como checklist independiente."
+   },
+   {
+    "id": "L4-15",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 97, 58-59, 193-194, 262-263",
+    "hallazgo": "Publicidad comparativa con un competidor nombrado (Trail) repetida en 5 puntos, con un precio concreto («€60-75/mes por local») sin fuente ni fecha, y con la afirmación «las mismas listas de tareas» — que es falsa en sentido estricto (Trail es una app con registros, fotos y auditoría, no un Excel).",
+    "evidencia": ":97 badge `'Lo que Trail cobra €60-75/mes, tú lo tienes por €12 — para siempre'`; :59, :193-194, :263. Ninguna referencia ni fecha de consulta en el repo.",
+    "propuesta_v2": "La publicidad comparativa exige datos verificables y comprobables (art. 10 LCD / Dir. 2006/114/CE). Sustituir por: badge `'Sin suscripción: lo que un SaaS de checklists te cuesta cada mes, aquí es un pago único de €12'` y FAQ `'Las apps de checklists (tipo Trail) cobran una cuota mensual por local y necesitan tablet e internet; consulta su precio actual en su web. Este kit es Excel, pago único de €12, sin cuota y sin conexión. Lo que no te da: registro digital con foto ni trazabilidad automática.'` — reconocer la limitación sube credibilidad y elimina el riesgo."
+   },
+   {
+    "id": "L4-16",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 63, 267 (licencia) vs. 347-349 (testimonio de consultora)",
+    "hallazgo": "El copy vende una licencia «personal» y a la vez publica un testimonio que describe (y anima a) la redistribución del kit a terceros. O la licencia permite entregarlo a clientes —y hay que decirlo— o el testimonio está invitando a incumplirla.",
+    "evidencia": ":267 `'La licencia es personal — puedes usar los checklists en todos los establecimientos que gestiones. Ideal para cadenas de pastelerías y consultores.'`; :348 `'Lo primero que hago con cada cliente nuevo es entregarle estas checklists.'`",
+    "propuesta_v2": "Definir una línea y sostenerla en los 3 sitios (FAQ, schema.faq, testimonio). Recomendado comercialmente: `'Licencia de uso interno: puedes usarlo en todos los establecimientos que gestiones y con tu equipo. No incluye redistribuirlo ni revenderlo a terceros; si eres consultor y quieres entregarlo a tus clientes, escríbenos a info@aichef.pro para la licencia profesional.'` — convierte una incoherencia en un upsell. Y reescribir el testimonio: «Lo primero que reviso con cada cliente nuevo es esta estructura de checklists.»"
+   },
+   {
+    "id": "L4-17",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+    "ubicacion": "hoja Calendario Anual, A4:F20 + Instrucciones B6",
+    "hallazgo": "El bonus valorado en €9 instruye dos veces a «añadir tus fechas locales» y no deja NI UNA fila en blanco para hacerlo; además no tiene celdas verdes, ni validación, ni configuración de impresión.",
+    "evidencia": "Dump BONUS-02: filas 4-20 ocupadas (#1 a #17), A22 = pie de página; `Instrucciones!B6 '▸ Añade las fechas locales de tu zona (fiestas patronales, ferias)'` y `F16='AÑADE TUS FECHAS LOCALES'` — sin destino donde escribirlas. openpyxl: fills = {2D2D2D:6, E8F5E9:6}, DV=0, page_setup vacío.",
+    "propuesta_v2": "Añadir 8 filas en blanco formateadas (verde E8F5E9, bordes) tras la #17 con el `#` ya numerado (18-25), y una fila de nota «Añade aquí las fiestas patronales y ferias de tu zona». Es el arreglo de 10 minutos que convierte el bonus en usable."
+   },
+   {
+    "id": "L4-18",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts + BONUS-02",
+    "ubicacion": ":168-169 (tarjeta) y :224 (bonus item 2) vs. BONUS-02 filas 16-20",
+    "hallazgo": "Se vende «17 fechas clave» pero 5 de las 17 no son fechas: la columna B dice literalmente «Variable» (bodas, cumpleaños, eventos corporativos, fiestas locales, bautizos). El cliente que cuenta encuentra 12 fechas de calendario.",
+    "evidencia": "BONUS-02 `B16='Variable'` (Fiestas Locales), `B17='Variable'` (Bodas), `B18='Variable'` (Eventos Corporativos), `B19='Variable'` (Cumpleaños), `B20='Variable'` (Bautizos/Comuniones/Aniversarios). Landing :169 `'17 fechas clave de pastelería con producción especial y antelación recomendada.'`",
+    "propuesta_v2": "Reescribir como `'12 fechas fijas del calendario español (Reyes, San Valentín, Semana Santa, Día de la Madre, Todos los Santos, Navidad…) + 5 tipos de encargo recurrente (bodas, comuniones, cumpleaños, eventos de empresa, fiestas locales), cada uno con qué producir y con cuánta antelación.'` Suena a más, no a menos, y es cierto. Igual en la tarjeta del dashboard («17 fechas clave»)."
+   },
+   {
+    "id": "L4-19",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+    "ubicacion": "hoja Calendario Anual, B13",
+    "hallazgo": "Dato incorrecto en un entregable de pago: Black Friday fijado al «25 Nov». Black Friday es el viernes siguiente a Acción de Gracias y cambia cada año; en 2026 cae el 27 de noviembre. Un profesional que planifique compras con esa fecha llega tarde.",
+    "evidencia": "Dump BONUS-02: `A13=10 | B13=25 Nov | C13=Black Friday | D13=Promociones en lotes… | E13=1 semana`.",
+    "propuesta_v2": "`B13 = 'Último viernes de noviembre'` y en Notas `'En 2026, el 27 de noviembre'`. Revisar del mismo modo `B7='Mar-Abr'` (Semana Santa, correcto por variable) y `B8='1er dom. Mayo'` (correcto en España)."
+   },
+   {
+    "id": "L4-20",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-07 + BONUS-01 (todas las hojas de trabajo)",
+    "ubicacion": "p. ej. 01!Apertura Obrador D34 `=COUNTIF(F5:F32,\"✓\")` y F34 `22`",
+    "hallazgo": "El contador de progreso tiene el denominador escrito a mano y el rango COUNTIF solo deja UNA fila de holgura, mientras las Instrucciones invitan a «añadir tareas en las filas vacías del final». Quien añade 3 tareas obtiene «22 de 22» con 25 tareas: el kit miente sobre su propio uso.",
+    "evidencia": "01!Apertura: última tarea en fila 31, `D34==COUNTIF(F5:F32,\"✓\")`, `F34=22` (hardcodeado), contador en fila 34 → 1 fila libre. Mismo patrón en las 24 hojas con contador (02!D36/F36=24, 03!D28/F28=16, 04!D26/F26=14, …). Instrucción contradictoria: `01!Instrucciones B11 '▸ Añade tareas específicas de tu obrador en las filas vacías del final'`.",
+    "propuesta_v2": "Añadir 5 filas en blanco ya formateadas (verde + validación «✓,—») antes del contador, ampliar el rango del COUNTIF hasta cubrirlas y sustituir el denominador fijo por `=COUNTA(B5:B37)` (cuenta tareas escritas, se autoajusta). Aplicarlo también a las hojas nuevas 10-12 para no repetir el defecto."
+   },
+   {
+    "id": "L4-21",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/ (los 11)",
+    "hallazgo": "Dos convenciones de marcado incompatibles dentro del mismo producto, y en 01-07 dos columnas que parecen ambas la casilla de verificación: la A muestra un ☐ impreso (que además es la cabecera de la columna) y la F se llama «Hecha» y es la única que cuenta el COUNTIF. Nadie explica en las Instrucciones dónde hay que marcar.",
+    "ubicacion": "01-07/BONUS-01: A4='☐', F4='Hecha', DV `\"✓,—\"` en F; 08: F4='✓ Completada', DV `\"✓,✗,—\"`; 09: D4='✓ Completada', DV `\"✓,✗,—\"`",
+    "evidencia": "openpyxl: 01!Apertura DV `('F6 F7 … F31', '\"✓,—\"')`; 08!Apertura DV `('F5 … F21', '\"✓,✗,—\"')`; 09!Apertura DV en `D5:D15`. Cabecera A4 del dump = `☐`.",
+    "propuesta_v2": "Unificar en la v2.0 (es más barato que explicarlo): columna A = `#` numerada, columna de marcado única titulada `✓ Hecha` con validación `\"✓,✗,—\"` en los 14 ficheros, y una línea en cada hoja Instrucciones: «Marca cada tarea en la columna ✓ Hecha (desplegable): ✓ hecha · ✗ incidencia · — no aplica. El contador de abajo se actualiza solo.» Ojo: la SPEC §1.2 propone para 08 las columnas `# | Tarea | Zona | Responsable | Hora Límite | ✓ Completada | Firma | Notas`, que perpetúa la divergencia con 01-07."
+   },
+   {
+    "id": "L4-22",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 174 y 208",
+    "hallazgo": "Confirmo la bio caduca de la SPEC §0 #3 y añado un problema de marca que la SPEC no ve: el `authorBio` de una landing de AI Chef Pro presenta al autor como «fundador de ChefBusiness Group», mezclando marcas ante un comprador que no conoce el grupo, y suma cifras («29 años … y 15 años») que el canon 2026-07-31 prohíbe sumar.",
+    "evidencia": ":174 `'…diseñados por un profesional con 29 años en alta hostelería.'`; :208 `'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica…'`; mismos «29 años / 15 años» en `08!Instrucciones A17` y `09!Instrucciones A17`.",
+    "propuesta_v2": "why.subtitle: `'No son plantillas genéricas. Son checklists diseñados por un chef y consultor gastronómico que lleva en cocina desde los 17 años y asesora obradores desde 2010.'` · authorBio: `'John Guerrero, CEO de AI Chef Pro. Chef y consultor gastronómico: en cocina desde los 17 años y asesorando negocios desde 2010. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, pastelerías y obradores.'` · 08/09 Instrucciones: `'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años.'`"
+   },
+   {
+    "id": "L4-23",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "schema.faqs :50-71 vs. faqs visibles :248-271",
+    "hallazgo": "El FAQPage del JSON-LD tiene 5 preguntas y la página muestra 6, y las respuestas del schema son versiones abreviadas y distintas de las visibles. Google exige que el marcado FAQ reproduzca el contenido visible de la página.",
+    "evidencia": "schema.faqs[2] `'¿En qué se diferencia de Trail?' → 'Trail cobra €60-75/mes por local…'` vs. faqs[3] visible `'¿En qué se diferencia de Trail u otros sistemas?' → 'Trail cobra €60-75 al mes por local y requiere tablets/móviles…'`; falta en el schema la pregunta visible `'¿Sirve para una pastelería pequeña y para un obrador grande?'` (:258).",
+    "propuesta_v2": "Generar `schema.faqs` a partir de `faqs` en el template (`data.faqs.map(...)`) en vez de mantener dos listas a mano; así la FAQ nueva de la v2.0 («¿Qué incluye la versión 2.0?») entra en ambos sitios sin trabajo extra y no vuelven a divergir."
+   },
+   {
+    "id": "L4-24",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts + KitTareasLandingPage.astro:427-435",
+    "ubicacion": "pricing.bonusTotalLabel/bonusSaveLine :363-365 y bonus.subtitle :214",
+    "hallazgo": "El «value stack» no cuadra por ningún lado: se dice que los bonos valen €16, el bloque se titula «Valor total del pack completo» y muestra €39 tachado → €12 → «¡Ahorra €27!». €27 es 39−12, no tiene relación con los €16 de bonos, y nunca se dice cuánto valen las plantillas. Un comprador analítico lo lee como cifras puestas al azar.",
+    "evidencia": ":214 `'…valorados en €16'`; :363 `bonusTotalLabel: 'Valor total del pack completo'`; :365 `bonusSaveLine: '¡Ahorra €27 HOY!'`; KitTareasLandingPage.astro:430-433 pinta priceOld/price/bonusSaveLine en ese mismo bloque.",
+    "propuesta_v2": "Si se mantiene el stack, que sume: «12 plantillas (valor €23) + Briefing (€7) + Calendario (€9) = €39 → hoy €12». Si se elimina el ancla (ver L4-03), sustituir el bloque por valor de uso: `bonusTotalLabel: 'Todo el kit, un único pago'` y `bonusSaveLine: '14 archivos Excel · sin cuota mensual · actualizaciones incluidas'`."
+   },
+   {
+    "id": "L4-25",
+    "severidad": "media",
+    "fichero": "astro-site/src/components/pages/KitTareasLandingPage.astro",
+    "ubicacion": "líneas 438-446 (FreeToolsSection)",
+    "hallazgo": "Se presenta bajo el badge «BONUS EXTRA INCLUIDO» una sección de «8 Herramientas Profesionales Gratuitas» que son gratuitas para cualquier visitante y no forman parte de la compra. Etiquetar como bonus incluido algo que ya es gratis es exactamente el tipo de detalle que un cliente escéptico usa para desconfiar del resto de la oferta.",
+    "evidencia": "KitTareasLandingPage.astro:444 `<span … >Bonus extra incluido</span>` seguido de `:445 '8 Herramientas Profesionales <span>Gratuitas</span>'`.",
+    "propuesta_v2": "Cambiar el badge a `'Gratis para todos'` y el intro a `'Y además, estas 8 herramientas de aichef.pro son gratuitas — no hace falta comprar nada para usarlas'`. Se conserva el valor SEO/enlazado interno y se gana credibilidad."
+   },
+   {
+    "id": "L4-26",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/05-tareas-semanales-mensuales.xlsx",
+    "ubicacion": "hoja Inventario (A1:G27)",
+    "hallazgo": "La hoja se titula «Inventario Semanal y Control de Stock» pero es un checklist de 13 tareas «Contar stock de X» sin ninguna columna donde anotar cantidad, unidad, stock mínimo o valor. No se puede hacer inventario con ella; solo recordar que hay que hacerlo.",
+    "evidencia": "Dump 05!Inventario: cabecera `A4='☐' B4='Tarea' C4='Zona' D4='Responsable' E4='Hora Límite' F4='Hecha' G4='Firma'`; filas `B6='Contar stock de harinas…'` … `B20='Contar stock de packaging…'`; ningún campo numérico. openpyxl: 0 fórmulas, fills solo {2D2D2D:7, E8F5E9:56}.",
+    "propuesta_v2": "Añadir a esa hoja las columnas `Unidad | Stock actual | Stock mínimo | ¿Pedir? (=IF(actual<mínimo,\"PEDIR\",\"OK\"))` con las 13 familias ya listadas como filas, o —mejor— renombrarla `Recordatorio de Recuento` y enlazar desde ella al Kit de Inventario (€, cross-sell propio ya existente en el catálogo). Lo que no puede quedarse es una hoja llamada «Inventario» sin números."
+   },
+   {
+    "id": "L4-27",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 105-111 (hero.checkItems) y 279-287 (cta.items)",
+    "hallazgo": "Las dos listas de venta (hero y CTA final) siguen siendo las de la v1 y omiten por completo lo que aporta la v2.0; además enumeran «horno» y «despacho» como checklists que no existen como tales. La SPEC solo manda añadir UN checkItem al hero y no toca `cta.items`.",
+    "evidencia": ":106 `'Checklists de apertura y cierre: obrador, horno, vitrina, despacho'` (el fichero 01 tiene 2 hojas: Obrador y Vitrina/Despacho; «horno» solo aparece como bloque de la plantilla en blanco 07!Por Zona A12); :279-287 `cta.items` con 8 bullets, ninguno sobre mermas, encargos ni alérgenos.",
+    "propuesta_v2": "hero.checkItems (5 ítems, sustituir el 1º y añadir uno): `'Apertura y cierre del obrador, la vitrina y el despacho (42 tareas)'` + `'Plan de producción semanal con control de mermas en % y €'` + `'Fichas de encargo con alérgenos, señal y pendiente'` + `'Matriz de alérgenos de vitrina (14 UE) + cartel y etiquetas para la tienda'`. cta.items: sustituir los 2 últimos bullets de bonus por esos tres y dejar los bonos al final como `'BONUS: Briefing de Servicio + Calendario Anual (valor €16)'`."
+   },
+   {
+    "id": "L4-28",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx",
+    "ubicacion": "08!Instrucciones A5/A14; 09!Instrucciones A5/A14, 09!Cierre de Caja A18 y A38",
+    "hallazgo": "Emojis decorativos (📋 💡 💰 📊) en 2 de los 11 ficheros, ausentes en los otros 9. Rompen la consistencia visual, se ven como cajas vacías en muchas impresoras/visores y chocan con la norma de marca «sin emojis» que la SPEC solo aplica a los componentes React nuevos.",
+    "evidencia": "Dump: `08!Instrucciones A5='📋 Instrucciones de Uso'`, `A14='💡 Consejo: Plastifica una copia impresa…'`; `09!Cierre de Caja A18='💰 Recuento de Efectivo por Denominación'`, `A38='📊 Resumen de Cierre'`. En 01-07 y BONUS los títulos no llevan emoji.",
+    "propuesta_v2": "Extender la regla «sin emojis» de la SPEC §2 a §1.1 (los 14 ficheros): `'Instrucciones de Uso'`, `'Consejo: plastifica una copia impresa y usa rotuladores borrables para reutilizarla cada día.'`, `'Recuento de Efectivo por Denominación'`, `'Resumen de Cierre'`. El énfasis se da con el dorado FFD700, que ya se usa en esas mismas celdas."
+   },
+   {
+    "id": "L4-29",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/ (los 11)",
+    "ubicacion": "pie de página de cada hoja + paleta",
+    "hallazgo": "El kit parece dos productos distintos metidos en la misma carpeta: 01-07 y BONUS firman «— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro» sobre paleta verde/pastel; 08 y 09 firman «© AI Chef Pro — aichef.pro» sobre paleta gris/negro-dorado y con cabeceras de instrucciones completamente distintas. Quien descarga los 11 lo nota en 5 segundos.",
+    "evidencia": "Dump: `01!Apertura A38`, `02!A40`, … `BONUS-02!A22` = `'— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro'`; `08!Apertura A24` y `09!Registro Mensual A38` = `'© AI Chef Pro — aichef.pro'`. Fills: E8F5E9/FFF3E0/E3F2FD en 01-07 vs. F5F5F5/FFFFFF/1A1A1A/FFD700 en 08-09.",
+    "propuesta_v2": "En la v2.0 unificar el pie en las 14 plantillas (la SPEC ya define el pie de impresión «AI Chef Pro · aichef.pro · Página &P de &N»; añadir además la línea de cierre en celda: «Kit de Tareas Recurrentes · Pastelería / Obrador · v2.0 · aichef.pro/kit-tareas-pasteleria») y llevar la paleta de 01-07 (verde editable + colores de zona) a 08/09, que es la que la landing describe."
+   },
+   {
+    "id": "L4-30",
+    "severidad": "baja",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-panaderia.ts",
+    "ubicacion": "línea 111 vs. kit-tareas-pasteleria.ts:116",
+    "hallazgo": "Incoherencia de catálogo entre hermanos que compiten por el mismo comprador: Panadería anuncia «11 checklists» por €12 y Pastelería «9» por €12, entregando ambos los mismos 11 ficheros. Quien duda entre los dos kits (el solapamiento obrador/bollería es enorme) percibe que Pastelería da menos por el mismo precio.",
+    "evidencia": "kit-tareas-panaderia.ts:111 `countGold: '11'`, :353-359 `priceOld '€39' / price '€12' / -69% / Ahorra €27`; kit-tareas-pasteleria.ts:116 `countGold: '9'`, mismo precio y mismo descuento; ambos con 11 ficheros en `dl/`.",
+    "propuesta_v2": "Al pasar Pastelería a 12+2, queda por encima de Panadería, lo cual es coherente con que la v2.0 añade valor real. Añadir enlace cruzado en `footerLinks` de ambos (hoy Pastelería no enlaza a Panadería) y una línea en la FAQ: «¿Pastelería o Panadería? Si tu fuerte es bollería, tartas y vitrina, este. Si es pan, masa madre y turno de madrugada, el de Panadería. Se solapan poco: muchos obradores compran los dos.»"
+   },
+   {
+    "id": "L4-31",
+    "severidad": "baja",
+    "fichero": "src/pages/MegaPackTareas.tsx",
+    "ubicacion": "línea 26",
+    "hallazgo": "Deriva ya materializada del recuento del Mega Pack: la página LIVE (Astro) se ha actualizado a 14 plantillas para Pastelería, pero su gemelo en la SPA sigue en 11. La SPEC §2 no menciona ninguno de los dos ficheros de landing del Mega Pack.",
+    "evidencia": "`astro-site/src/pages/mega-pack-tareas.astro:34` → `{ name: 'Pastelería / Obrador', templates: 14, … } // v2.0 (2026-08-18): +3`; `src/pages/MegaPackTareas.tsx:26` → `{ name: 'Pastelería / Obrador', templates: 11, … }`. Ambos calculan `totalTemplates` con un reduce, así que el total de la página también diverge.",
+    "propuesta_v2": "Añadir `src/pages/MegaPackTareas.tsx:26` a la lista de §2 (o borrar el fichero si el port a Astro lo deja obsoleto). En cambio, la preocupación de la SPEC sobre `MegaPackTareasDashboard.tsx` («comprobar el contador de ficheros si lo muestra») no requiere acción: el contador es dinámico — `MegaPackTareasDashboard.tsx:230` `KITS.reduce((s, k) => s + k.templates.length, 0)` — y se actualiza solo al añadir las 3 templates."
+   },
+   {
+    "id": "L4-32",
+    "severidad": "baja",
+    "fichero": "scripts/productos-digitales/kit-tareas-pasteleria-v2-SPEC.md",
+    "ubicacion": "§2, viñeta de la landing («campo opcional nuevo en types.ts»)",
+    "hallazgo": "La SPEC describe como trabajo pendiente algo que ya está implementado, lo que puede llevar a un agente a duplicar el campo o a reescribir el template.",
+    "evidencia": "`astro-site/src/data/productos/tareas/types.ts:223` ya declara `updateNote?: string;` y `astro-site/src/components/pages/KitTareasLandingPage.astro:224-228` ya lo pinta condicionalmente bajo el bloque de precio.",
+    "propuesta_v2": "Reescribir esa viñeta como «`updateNote` ya existe en types.ts:223 y lo pinta KitTareasLandingPage.astro:224 — solo hay que añadir el valor al dato del producto: `updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026'`»."
+   }
+  ],
+  "mejoras_v2": [
+   "Convertir la v2.0 en un ACTIVO comercial, no solo en un parche: hoy la landing no promete actualizaciones en ningún sitio (el hermano Panadería sí: 'Acceso inmediato + actualizaciones de por vida'). Añadir a hero.checkItems 'Actualizaciones de por vida — quien compró la v1.0 recibe la v2.0 sin coste' y la FAQ que pide la SPEC, redactada así: '¿Qué incluye la versión 2.0? Tres plantillas nuevas (plan de producción semanal con control de mermas, control de encargos con alérgenos y matriz de alérgenos de vitrina con cartel y etiquetas), el checklist de apertura y cierre del negocio reescrito para tienda y obrador, el cierre de caja con descuadre diario, y las 14 plantillas configuradas para imprimir en A4. Si compraste la v1.0, entra en tu dashboard: la tienes ya, sin pagar nada.'",
+   "Email de reactivación a los compradores de la v1.0 (Resend, audiencia ya existente en la cuenta del grupo): asunto 'Tu Kit de Tareas Pastelería acaba de crecer: 3 plantillas nuevas, gratis'. Es la única acción del proyecto que genera goodwill, reseñas reales (ver L4-01) y ventas cruzadas sin coste de adquisición — y la SPEC no la contempla en ningún punto.",
+   "Cerrar el interenlazado interno de las 3 plantillas nuevas dentro de los propios Excel (la regla capital de 'cero huérfanos' también aplica a los entregables): 01!Cierre B19 'Registrar mermas del día' → '(usa el fichero 10)'; 02!B10 'Montar tartas por encargo (según ficha de pedido)' → '(ficha del fichero 11)'; 02!B18 y 04!Dependiente B7 'etiquetas de alérgenos' → '(matriz del fichero 12)'; BONUS-01!B17 'Alérgenos del día' → '(fichero 12)'. Así el cliente descubre lo nuevo desde lo que ya usaba.",
+   "SEO: `seo.keywords` (:20) no menciona nada de lo que aporta la v2.0. Añadir 'control de mermas pastelería, ficha de encargo tarta, matriz de alérgenos vitrina, plantilla alérgenos pastelería, plan de producción obrador' — son intenciones de búsqueda con problema explícito y menos competidas que 'checklist pastelería'.",
+   "Descuento cruzado coherente en el dashboard: los tres botones actuales ('Kit Tareas Restaurante €14', 'Cafetería €12', 'Escandallos €12') no son el siguiente paso natural de una pastelería. Sustituir por Kit de Escandallos (calcular el coste de la merma que ahora mide el fichero 10), Kit de Inventario (lo que la hoja Inventario de 05 no hace) y Pack APPCC (el complemento legal de la matriz de alérgenos del 12). Los SaaS (Miselup/Timlup) van aparte, como manda la SPEC.",
+   "Añadir a la hoja Instrucciones de los 14 ficheros una línea de soporte real: 'Dudas o sugerencias: info@aichef.pro — respondemos en 24-48 h laborables.' Hoy solo 08 y 09 muestran el contacto (A18) y los otros 9 ficheros no dan ninguna vía de soporte dentro del entregable.",
+   "Criterio de aceptación comercial para el gate de la v2.0 (además del técnico de §3): grep sobre `kit-tareas-pasteleria.ts`, el dashboard y las 3 funciones buscando '9 checklists', '9 plantillas', '~45 tareas', '6 checklists', '29 años', 'Marta Vidal', 'Meliá', 'Europastry', 'Hofmann' → 0 resultados. Es la comprobación de 30 segundos que habría evitado que la v1 llegara a producción con seis cifras distintas para el mismo producto."
+  ],
+  "veredicto_spec": "El diagnóstico §0 es correcto en lo esencial (bio caduca, 08 genérico, fórmulas sin caché, recuentos de la landing, generador escribiendo en la ruta muerta), pero tiene dos imprecisiones de alcance que hay que arreglar antes de ejecutar: (a) §0 #5 dice 'sin configuración de impresión (los 11)' y es falso — 08 y 09 SÍ traen A4 + fitToWidth=1 (a 08/09 solo les falta fitToPage, print_title_rows, freeze_panes y pie); los que no tienen nada son los otros 9; (b) §0 #2 dice 'los 11' para las fórmulas sin caché y en realidad 08 y BONUS-02 no tienen ninguna fórmula (el total es 80 fórmulas en 9 ficheros, 80 sin valor cacheado) — y de ahí sale un hallazgo que la SPEC no ve: 08 es el único checklist del kit sin contador de tareas. Lo que FALTA en §1, por orden de riesgo: (1) nada sobre el bloque comercial de mayor exposición legal — ancla permanente de €39 con '-69%' y 'precio de lanzamiento' de cinco meses (art. 20 Ley 7/1996 / RDL 24/2021), ausencia total de mención al IVA, y una garantía de 30 días que no existe en Términos ni tiene política de desistimiento (art. 103.m TRLGDCU); (2) las reseñas: §1 solo renombra 'Marta Vidal' → 'Marc Vidal' y cambia tres marcas, pero deja en pie un aggregateRating 4.9/8 fabricado que no cuadra ni con los 10 testimonios ni con las 3 reviews del schema, y 7 nombres de negocio ficticios sin verificar; (3) retrofit de estilo en los ficheros viejos: la SPEC exige celdas verdes solo en los NUEVOS, con lo que la promesa 'las celdas editables están marcadas en verde' seguirá siendo falsa en 08, 09 y BONUS-02; tampoco elimina los emojis de 08/09 ni unifica el pie de página ni la convención de la columna de marcado ('Hecha' + '✓,—' vs. '✓ Completada' + '✓,✗,—'); (4) el contador con denominador hardcodeado y una sola fila de holgura — y §1.2 lo REPRODUCE al especificar para 08 'fila Tareas completadas: =COUNTIF(...) de N'; debería ser =COUNTA(B…) con 5 filas en blanco; (5) BONUS-02 sin filas para 'añade tus fechas locales', con Black Friday fijado al 25 Nov (en 2026 es el 27) y 5 de sus '17 fechas' marcadas 'Variable'; (6) la hoja Inventario de 05, que se llama inventario y no tiene ni una columna numérica. En §2 (integración) faltan cuatro consumidores: `src/data/productos-digitales-config.ts:244-268` (cuarta copia del mapa de ficheros y de '9 checklists'), `src/pages/MegaPackTareas.tsx:26` (ya divergente: 11 vs. los 14 de mega-pack-tareas.astro:34), la descripción de la tarjeta 'apertura-cierre' del propio dashboard (sigue diciendo '6 checklists' — la SPEC solo corrige esa frase en la landing) y, en la landing, `bonus.subtitle` ('Además de las 9 plantillas'), `cta.items` y `seo.keywords`. SOBRA de §2: la comprobación del contador de ficheros del Mega Pack, que es dinámico (MegaPackTareasDashboard.tsx:230, reduce sobre templates.length), y la afirmación de que `updateNote` es un campo nuevo — ya existe en types.ts:223 y lo pinta KitTareasLandingPage.astro:224, solo hay que darle valor."
+ },
+ "v2:4c80fdc92|Jefe/a de obrador — pastelería": {
+  "lente": "Jefe/a de obrador — pastelería artesana española (bollería hojaldrada, pastelería, pan, tienda con vitrina), 20 años. Auditoría de CONTENIDO técnico-operativo de los 11 .xlsx LIVE + copy de landing + juicio de la SPEC v2.0 §1.3.",
+  "hallazgos": [
+   {
+    "id": "L1-01",
+    "severidad": "alta",
+    "fichero": "/Users/johnguerrero/chefpro-modernize/netlify/functions/get-download-urls.ts + /Users/johnguerrero/chefpro-modernize/src/pages/KitTareasPasteleriaDashboard.tsx + astro-site/public/dl/kit-tareas-pasteleria/",
+    "ubicacion": "get-download-urls.ts:120-122 y :454-456 · dashboard líneas 36-38 y 105 · directorio /dl/",
+    "hallazgo": "El código YA promete los ficheros 10, 11 y 12 (y el email de acceso ya dice «12 checklists + 2 bonus (v2.0)») pero los .xlsx NO existen en disco. El estado actual del repo entrega 404 al comprador en 3 de las 14 tarjetas. La SPEC §2 describe esta integración como pendiente de hacer: está desactualizada.",
+    "evidencia": "get-download-urls.ts:120 `'plan-produccion': '/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx'`; verify-purchase.ts:73 «descargar los 12 checklists operativos + 2 bonus (v2.0)»; `ls astro-site/public/dl/kit-tareas-pasteleria/` → solo 01-09 + BONUS-01/02 (11 ficheros).",
+    "propuesta_v2": "Bloquear el push hasta que existan los 3 .xlsx. Añadir al gate `gate-flujo-postpago.py` una comprobación de que TODA clave de get-download-urls apunta a un fichero existente en disco Y trackeado en git (no solo las del producto en curso). Actualizar §2 de la SPEC: el trabajo pendiente es SOLO generar los ficheros, no tocar las funciones."
+   },
+   {
+    "id": "L1-02",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01..07 y BONUS-01 (los 8 ficheros de la familia «▸»)",
+    "ubicacion": "p.ej. 01-apertura-cierre.xlsx · [Apertura Obrador] A4=☐ / F4=Hecha / D34=COUNTIF(F5:F32,\"✓\")",
+    "hallazgo": "BUG FUNCIONAL en 8 de los 11 ficheros: la casilla que el usuario ve y marca está en la columna A (glifo ☐) pero el contador cuenta la columna F buscando literalmente «✓», sin validación de datos ni instrucción. Quien marque la ☐ de A, escriba «x» o «OK» verá siempre «Tareas completadas: 0». La SPEC §1.1/§1.2 no lo detecta (solo pone validación «✓,—» en el 08 nuevo).",
+    "evidencia": "01 [Apertura Obrador] A6=☐ | F vacío | D34==COUNTIF(F5:F32,\"✓\"). Idéntico patrón en 02 (D36, D30, D23), 03 (D28, D34, D26, D14), 04, 05, 06, 07 y BONUS-01 (D28).",
+    "propuesta_v2": "Unificar en los 14 ficheros: eliminar la ☐ de la columna A (dejarla como nº correlativo) y poner la marca en la columna «✓ Completada» con validación de lista «✓ / — / N/A», relleno condicional al marcar, y en Instrucciones una línea: «Marca con ✓ en la columna Completada — es la que cuenta el total». Alternativa mínima si se conserva la ☐: `COUNTIF` sobre la columna A y quitar la F."
+   },
+   {
+    "id": "L1-03",
+    "severidad": "alta",
+    "fichero": "SPEC §1.3 fichero 12 (matriz de alérgenos pre-rellenada)",
+    "ubicacion": "SPEC líneas 56-60",
+    "hallazgo": "Entregar una matriz de los 14 alérgenos PRE-MARCADA con ● («contiene») es un riesgo de seguridad alimentaria y legal para el comprador y para AI Chef Pro. El pastelero la imprime tal cual y publica información falsa sobre productos que él elabora con otra receta y otro proveedor. Es el mayor riesgo del producto y la SPEC no lo mitiga en ningún punto.",
+    "evidencia": "SPEC:58 «~35 productos típicos PRE-RELLENADOS con criterio profesional (croissant de mantequilla: gluten ● lácteos ● huevo ●…)» y SPEC:59 cartel destinado a colgarse en la vitrina.",
+    "propuesta_v2": "(a) Entregar la matriz como BORRADOR: los ● pre-marcados en gris claro con nota «propuesta — verificar»; (b) columna obligatoria y visualmente prominente «Verificado con ficha técnica del proveedor (fecha)» + «Firma»; (c) fórmula que devuelva «NO PUBLICAR» en rojo mientras esa celda esté vacía; (d) banner rojo en Instrucciones y en cabecera de la hoja: «Plantilla de partida. No la publiques sin contrastar cada referencia con tu receta real y las fichas técnicas de tus proveedores»; (e) añadir columna «Proveedor / nº de ficha técnica» — sin ella la matriz no sostiene una inspección."
+   },
+   {
+    "id": "L1-04",
+    "severidad": "alta",
+    "fichero": "SPEC §1.3 fichero 12 punto 3 (Cartel Vitrina)",
+    "ubicacion": "SPEC:59",
+    "hallazgo": "El texto legal propuesto para el cartel («…puede haber contaminación cruzada. Pregunte a nuestro personal.») no cumple por sí solo el RD 126/2015: en alimentos no envasados la información de alérgenos debe estar disponible POR ESCRITO y accesible antes de la compra; la vía oral solo se admite si existe indicación visible de que la información escrita puede solicitarse. Además, un «puede contener» genérico como paraguas no exime de declarar los alérgenos presentes de forma intencionada y las autoridades lo consideran mala práctica.",
+    "evidencia": "SPEC:59 texto propuesto íntegro; SPEC:57 cita correctamente Reglamento (UE) 1169/2011 y RD 126/2015 pero no traslada su exigencia formal al cartel.",
+    "propuesta_v2": "Cartel con tres bloques: (1) «Información de alérgenos disponible POR ESCRITO — solicítela a nuestro personal» (frase obligatoria); (2) advertencia de contaminación cruzada como complemento, nunca como sustituto; (3) generar además una «Carta de Alérgenos» imprimible producto×14 alérgenos derivada de la matriz — ése es el documento que se enseña al cliente y el que pide el inspector, y sustituye con ventaja al «cartel con columna editable» propuesto."
+   },
+   {
+    "id": "L1-05",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Cremas y Rellenos] B20/E20=09:30 vs [Decoración y Acabado] B6/E6=10:00",
+    "hallazgo": "Incoherencia cronológica imposible: se congelan los entremets montados a las 09:30 («mínimo 4h») y a las 10:00 se desmoldan «congelados» y se glasean. En obrador real, lo que se glasea hoy se congeló ayer. Un pastelero lo detecta en 5 segundos y desconfía del resto del kit.",
+    "evidencia": "02 [Cremas] A20 «Congelar entremets montados (mínimo 4h antes de glasear)» E20=09:30; 02 [Decoración] A6 «Desmoldar entremets congelados» E6=10:00, A7 «Glasear con glasé espejo a 35 °C» E7=10:00.",
+    "propuesta_v2": "Reescribir la tarea de decoración como «Desmoldar entremets congelados EL DÍA ANTERIOR (mín. 4 h en abatidor a −18 °C o 12 h en congelador)» y añadir en [Cremas] la coletilla «para glaseado de mañana». Ampliar a un criterio general del kit: marcar con un icono/columna las tareas cuyo producto se consume al día siguiente (D+1)."
+   },
+   {
+    "id": "L1-06",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/06-eventos-festivos.xlsx",
+    "ubicacion": "[Navidad] B22 «Hornear roscones la madrugada del 5 al 6» + BONUS-02 [Calendario Anual] B4=«6 Enero»",
+    "hallazgo": "Error operativo de campaña: en España el grueso del roscón se vende la TARDE DEL 5 DE ENERO (víspera de Reyes), no el día 6. Horneando «la madrugada del 5 al 6» el obrador llega tarde a su propio pico y pierde la mitad de la campaña. Es el día más facturado del año de una pastelería y el kit lo planifica mal.",
+    "evidencia": "06 [Navidad] A22 E22=«05-06 Ene»; A23 «Rellenar…» E23=«06 Ene»; A24 «Decorar…» E24=«06 Ene»; BONUS-02 B4=«6 Enero» C4=«Día de Reyes» F4=«Pico máximo del año para pastelerías».",
+    "propuesta_v2": "Desdoblar en dos jornadas: «Madrugada del 4 al 5 — 1ª hornada (60-70 % del volumen) para la venta del 5 por la tarde» y «Madrugada del 5 al 6 — 2ª hornada + relleno al momento». Añadir tareas de «cierre de encargos de roscón (fecha límite: 2 Ene)», «reparto de horarios de recogida por franjas» y «control de colas / número de turno»."
+   },
+   {
+    "id": "L1-07",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/06-eventos-festivos.xlsx",
+    "ubicacion": "[Semana Santa] B11 y B12",
+    "hallazgo": "Dos errores de calendario tradicional español: (1) las torrijas se producen y venden desde el Viernes de Dolores / Domingo de Ramos y durante toda la semana, no solo «Jue-Vie Santo»; (2) la MONA DE PASCUA se consume el Lunes de Pascua (Cataluña/Valencia/Aragón), es decir DESPUÉS del Domingo de Resurrección — producirla «Lun-Mié» de Semana Santa la deja 5-6 días de anticipación con un producto de bizcocho y chocolate que no aguanta.",
+    "evidencia": "06 [Semana Santa] A11 «Elaborar torrijas (remojo, fritura, almíbar/canela)» E11=«Jue-Vie Santo»; A12 «Elaborar monas de Pascua» E12=«Lun-Mié».",
+    "propuesta_v2": "Torrijas: «Producción diaria desde Viernes de Dolores hasta Domingo de Resurrección; pico Jueves y Viernes Santo». Monas: «Montaje Jueves-Sábado Santo para recogida Domingo de Resurrección y Lunes de Pascua». Añadir tareas ausentes de la campaña: buñuelos de viento, pestiños, leche frita, hornazo (según zona) y una fila «Cierre de encargos de mona: Domingo de Ramos»."
+   },
+   {
+    "id": "L1-08",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/06-eventos-festivos.xlsx",
+    "ubicacion": "hojas del libro: [Navidad] [San Valentín] [Semana Santa] [Día Madre-Padre]",
+    "hallazgo": "Faltan dos de las campañas más rentables del año español y ambas están reconocidas en el propio BONUS-02: TODOS LOS SANTOS (1 nov — huesos de santo, buñuelos, panellets) y COMUNIONES (mayo-junio: la temporada de tartas de encargo con mayor margen). Contradicción interna entre el 06 y el BONUS-02. También falta el bloque 22-24 dic (recogida de encargos navideños) y Nochevieja pese a estar en el calendario.",
+    "evidencia": "BONUS-02 B12=«1 Noviembre» C12=«Todos los Santos» F12=«Muy fuerte en zonas tradicionales»; B9=«Junio» C9=«Comuniones» F9=«Pedidos con mucha antelación»; B15=«31 Diciembre» C15=«Nochevieja». Ninguno tiene hoja en 06.",
+    "propuesta_v2": "Añadir dos hojas al 06: «Todos los Santos (Oct-Nov)» y «Comuniones (Abr-Jun)» — la de comuniones con flujo de encargo (visita, presupuesto, prueba de sabores, señal, montaje in situ, transporte). Y en [Navidad] añadir el bloque «22-24 Dic — recogida de encargos y refuerzo de despacho» + «31 Dic — Nochevieja». Cerrar cada campaña con un bloque «Post-campaña: liquidación de sobrante, mermas de campaña, qué se vendió y qué no» — es donde se pierde el dinero y hoy no existe en ninguna hoja."
+   },
+   {
+    "id": "L1-09",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+    "ubicacion": "[Calendario Anual] B13=«25 Nov» C13=«Black Friday»",
+    "hallazgo": "FECHA INCORRECTA de dato duro en un producto de pago. El Black Friday es el viernes siguiente al 4º jueves de noviembre: fecha variable entre el 23 y el 29 de noviembre (en 2026 cae el 27 de noviembre). «25 Nov» es simplemente falso. La SPEC §0 no lo detecta pese a revisar el calendario.",
+    "evidencia": "BONUS-02 [Calendario Anual] fila 13: B13=«25 Nov» · E13=«1 semana».",
+    "propuesta_v2": "Sustituir por «Último viernes de noviembre (variable)» y añadir columna «Fecha de este año: ____» editable en verde para las 4 fechas móviles del calendario (Semana Santa, Día de la Madre, Black Friday, Comuniones). Verificar de paso las demás: 6 Ene ✓, 14 Feb ✓, 19 Mar Día del Padre ✓, 1er domingo de mayo Día de la Madre ✓, 31 Oct ✓, 1 Nov ✓, 31 Dic ✓ — el resto del calendario es correcto."
+   },
+   {
+    "id": "L1-10",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Masas y Fermentación] B9 y B10",
+    "hallazgo": "Parámetros técnicos incorrectos para masa de croissant. (1) «Amasar en planetaria (1ª velocidad 4 min, 2ª velocidad 8-10 min)»: la masa laminada NO se amasa hasta desarrollo completo — 8-10 min en 2ª sobreamasa, la masa se vuelve elástica, se resiste al laminado y rompe la placa de mantequilla. El estándar es amasado corto (3-4 min en 1ª + 2-3 min en 2ª); el gluten se termina de desarrollar en el laminado. (2) «temperatura de masa al salir 24-26 °C ideal» es el objetivo de una masa directa de brioche/pan de miga, no de croissant: para laminado se busca 22-24 °C y preferiblemente 20-22 °C porque va a bloque de frío.",
+    "evidencia": "02 [Masas y Fermentación] A9 «Amasar en planetaria (1ª velocidad 4 min, 2ª velocidad 8-10 min)»; A10 «Control de temperatura de masa al salir (24-26 °C ideal)».",
+    "propuesta_v2": "«Amasar corto — 1ª velocidad 3-4 min, 2ª velocidad 2-3 min (NO desarrollar el gluten: se termina en el laminado)» y «Temperatura de masa al salir: 22-24 °C (objetivo 20-22 °C si va directa a bloque de frío)». Añadir una columna «Parámetro / Objetivo» en las hojas de partida para que el parámetro sea visible y auditable, en vez de ir escondido entre paréntesis en el texto de la tarea."
+   },
+   {
+    "id": "L1-11",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx",
+    "ubicacion": "[Cierre del Negocio] filas 12-15 y [Apertura del Negocio] filas 4, 16, 20",
+    "hallazgo": "Confirmo y AMPLÍO el §0 punto 4: además de ser genérico de restaurante, el ORDEN CRONOLÓGICO está roto. En el cierre, «Retirar productos perecederos del expositor» es la tarea #15, DESPUÉS de «Activar alarma» (#12) y «Cerrar con llave» (#13). En la apertura, «Encender vitrinas refrigeradas» es la #16, después de «Abrir persianas/puerta principal» (#4) — una vitrina tarda 30-60 min en bajar a 2-6 °C, hay que encenderla lo primero y antes de montar producto. También faltan Responsable y Hora Límite rellenados (columnas D y E vacías en todas las filas), rompiendo la promesa de landing «cada tarea con responsable, hora límite y firma».",
+    "evidencia": "08 [Cierre] A12 «Activar alarma», A13 «Cerrar con llave y verificar cierre», A15 «Retirar productos perecederos del expositor». 08 [Apertura] A4 «Abrir persianas / puerta principal», A16 «Encender vitrinas refrigeradas de exposición». Filas 5-21 de ambas hojas: solo A, B y C tienen valor.",
+    "propuesta_v2": "Además de lo que ya prevé la SPEC: (1) numerar por orden real y ANCLAR con Hora Límite en las 38 tareas; (2) primera tarea del negocio = «Encender vitrinas refrigeradas y anotar temperatura (2-6 °C) — mínimo 45 min antes de montar producto»; (3) últimas 4 tareas siempre en este orden: comprobaciones finales (hornos/gas/cámaras/grifos) → basura → alarma → llave; (4) explicitar en Instrucciones del 01 y del 08 la división de trabajo (01 = obrador y producción · 08 = local, tienda y accesos), porque hoy dos ficheros casi homónimos confunden al comprador sobre cuál colgar."
+   },
+   {
+    "id": "L1-12",
+    "severidad": "alta",
+    "fichero": "kit completo (SPEC §1.3 no lo cubre)",
+    "ubicacion": "01 [Apertura Obrador] B10, 01 [Cierre Obrador] B13, 03 [Diario] B14, 03 [Semanal] B18, 05 [Mantenimiento] B13",
+    "hallazgo": "El kit ordena REGISTRAR temperaturas al menos 5 veces y NO incluye ninguna hoja de registro donde hacerlo. Es la plantilla más pedida y más obligatoria de un obrador español (APPCC) y el kit la referencia sin entregarla. La SPEC §1.3 crea tres ficheros nuevos y ninguno es éste.",
+    "evidencia": "01 [Apertura Obrador] A10 «Verificar temperatura de cámaras frigoríficas (registrar)»; 01 [Cierre Obrador] A13 «Verificar temperaturas de cámaras (registrar en hoja de control)» ← nombra una hoja que no existe; 03 [Diario Manager] A14 «Control de temperaturas de cámaras y vitrinas (registrar)»; 03 [Semanal] A18 «Revisar registros de temperatura de cámaras (últimos 3 días)».",
+    "propuesta_v2": "Prioridad MÁXIMA sobre cualquiera de los 3 ficheros propuestos: «Registro de Temperaturas (mensual, 1 hoja por mes)» — filas = días 1-31, columnas = cada equipo (Cámara refrigeración, Cámara masas, Congelador, Abatidor, Vitrina 1, Vitrina 2), dos tomas (mañana/tarde), rango objetivo por equipo en la cabecera (refrigeración 0-4 °C, congelación ≤−18 °C, vitrina 2-6 °C, abatidor +65→+10 °C en <2 h), formato condicional rojo fuera de rango, columna «Acción correctora» y firma semanal del responsable. Es lo que un pastelero enseña al inspector y lo que hace que €12 parezcan baratos."
+   },
+   {
+    "id": "L1-13",
+    "severidad": "alta",
+    "fichero": "kit completo (SPEC §1.3 no lo cubre)",
+    "ubicacion": "03 [Semanal Manager] B25, 04 [Jefe Pastelero] B9, 05 [Inventario] hoja completa",
+    "hallazgo": "Falta la RECEPCIÓN DE MERCANCÍA como registro diario (proveedor, albarán, producto, lote, caducidad, temperatura de entrega, estado del vehículo/embalaje, aceptado/rechazado, firma). Es prerrequisito APPCC obligatorio, es un punto de control en TODOS los planes de higiene españoles, y el kit lo despacha como una única tarea semanal. Igualmente falta el ETIQUETADO/TRAZABILIDAD de elaborados pese a que el kit dice «etiquetar» 8 veces.",
+    "evidencia": "03 [Semanal] A25 «Verificar recepción de mercancía (pesos, calidad, caducidad)» E25=«Recepción» — es la ÚNICA aparición y es semanal; 04 [Jefe Pastelero] A9 «Controlar calidad de materias primas recibidas»; 01 [Cierre Obrador] A6/A7 «etiquetar con fecha y hora», «film, etiquetar, FIFO»; 02 [Cremas] A12 «Etiquetar todas las cremas con fecha y hora de elaboración».",
+    "propuesta_v2": "Añadir hoja «Recepción de Mercancía» (30 filas/mes) con las columnas anteriores + criterios de rechazo pre-escritos (refrigerado >4 °C, congelado con signos de descongelación, envase roto, caducidad <2 días). Y una hoja «Etiquetas de Elaborado» imprimible (cuadrícula 3×8) con Producto · Fecha elaboración · Fecha límite de consumo · Lote · Responsable, acompañada de una tabla de VIDAS ÚTILES por elaboración (crema pastelera 24-48 h a ≤4 °C, nata montada 24 h, ganache 5-7 d, mousse 3 d, masa laminada cruda congelada 1 mes, bizcocho base congelado 3 meses). Esa tabla, sola, vale más para un obrador que la agenda de entregas del fichero 11."
+   },
+   {
+    "id": "L1-14",
+    "severidad": "alta",
+    "fichero": "SPEC §1.3 fichero 10 (Producido vs Vendido — columna «Acción»)",
+    "ubicacion": "SPEC:48",
+    "hallazgo": "La validación de datos propuesta induce a mala praxis alimentaria: «Congelar» y «Reprocesar» ofrecidos como opción sin ninguna condición para producto que ha estado todo el día expuesto en vitrina a temperatura ambiente. Congelar un sobrante de vitrina y venderlo después como fresco es un riesgo microbiológico y legalmente exige informar de «descongelado». Poner ambos en un desplegable de un producto de pago es respaldar la práctica.",
+    "evidencia": "SPEC:48 «Acción (validación: Vender −30 % última hora / Congelar / Reprocesar / Donar / Desechar)», aplicada a la fila «Sobrante (=Producido−Vendido)» de vitrina.",
+    "propuesta_v2": "Renombrar las opciones para que lleven la condición dentro: «Vender −30 % última hora», «Congelar (SOLO producto no expuesto, del día, abatido antes de −18 °C)», «Reprocesar (SOLO producto seco ≤24 h — registrar lote de destino)», «Donar», «Desechar». Añadir nota fija bajo la tabla con el criterio APPCC. Y aprovechar «Donar» como argumento comercial: la normativa española vigente de prevención de pérdidas y desperdicio alimentario obliga a los establecimientos a tener plan de prevención y priorizar la donación — VERIFICAR la referencia legal exacta antes de citarla en el fichero; no la cito de memoria."
+   },
+   {
+    "id": "L1-15",
+    "severidad": "alta",
+    "fichero": "SPEC §1.3 fichero 11 (Ficha de Encargo + Registro)",
+    "ubicacion": "SPEC:52-53",
+    "hallazgo": "La SPEC crea un fichero que recoge nombre, teléfono, email y dirección de clientes particulares en una hoja imprimible y en un registro mensual, y no menciona RGPD ni una sola vez. Un obrador que imprime 40 fichas con datos personales y las deja en el mostrador tiene un problema real, y el producto se lo ha creado. También faltan campos que cualquier obrador rellena a diario.",
+    "evidencia": "SPEC:52 «Cliente · Teléfono · Email · … · Dirección»; SPEC:53 «Registro de Encargos (mensual): Nº | Fecha pedido | Cliente | Teléfono | …» 40 filas. Ninguna mención a protección de datos en toda la SPEC.",
+    "propuesta_v2": "(1) Pie de la Ficha de Encargo: línea de información básica de tratamiento (responsable, finalidad = gestión del encargo, conservación, derechos, contacto) + casilla ☐ de consentimiento si se usará para comunicaciones comerciales; nota en Instrucciones: «Guarda las fichas bajo llave y destrúyelas al mes de la entrega». (2) Campos que faltan y se rellenan siempre: boceto/foto de referencia adjunta, tamaño en cm y nº de raciones, sabor de bizcocho + relleno + cobertura por separado, DEDICATORIA EN MAYÚSCULAS Y LETRA CLARA (se equivocan a diario), vela/topper/figura y si la aporta el cliente, alergia CONFIRMADA de comensal (casilla roja) vs preferencia, canal del pedido (tienda/teléfono/WhatsApp/web), quién tomó el pedido, IVA, y política de señal («la señal no se devuelve si se anula con menos de 48 h»). (3) Añadir una 4ª hoja «Encargos de Hoy» imprimible A5 para colgar en el obrador — es lo que pide el BONUS-01 en el briefing y hoy no existe."
+   },
+   {
+    "id": "L1-16",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Cremas y Rellenos] B10 «Montar tartas por encargo (según ficha de pedido)» y 04 [Dependiente Vitrina] B10 «Gestionar pedidos de tartas personalizadas (rellenar ficha)»",
+    "hallazgo": "Referencias colgantes en la v1: dos checklists mandan usar una «ficha de pedido» que el kit NO incluye. Es una promesa incumplida del producto en vivo (refuerza y justifica el fichero 11, pero conviene que la SPEC lo registre como defecto v1, no solo como «valor añadido»).",
+    "evidencia": "02 [Decoración y Acabado] A10; 04 [Dependiente Vitrina] A10; BONUS-01 [Briefing Diario] A12 «Tartas de encargo: nombre cliente, hora recogida, detalles». Ningún fichero 01-09 contiene ficha de encargo.",
+    "propuesta_v2": "Al crear el 11, actualizar esas tres tareas para que citen el fichero por su nombre: «(usar 11-control-encargos.xlsx · hoja Ficha de Encargo)». Hacer lo mismo con las tareas que hoy nombran «la hoja de control» de temperaturas y «el control de mermas» — el kit debe autorreferenciarse por número de fichero, es lo que convierte 14 Excel sueltos en un sistema."
+   },
+   {
+    "id": "L1-17",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx",
+    "ubicacion": "[Apertura Obrador] B8 (E8=05:00)",
+    "hallazgo": "Error conceptual: «Encender cámara de fermentación controlada» a las 05:00. En un obrador con bollería hojaldrada, la cámara de fermentación controlada (retardador-fermentador) está encendida y programada desde la tarde anterior con las piezas formadas dentro; el ciclo de calor arranca de madrugada solo. Si se «enciende» a las 05:00, no hay croissant hasta las 09:00-10:00, incompatible con la propia hoja (hornear 09:45, vitrina montada 08:00).",
+    "evidencia": "01 [Apertura Obrador] A8 «Encender cámara de fermentación controlada (verificar Tª y humedad)» E8=05:00, frente a 02 [Masas] A16 «Hornear (190-200 °C, 14-18 min)» E16=09:45 y 02 [Decoración] A15 «Montar vitrina de bollería» E15=08:00.",
+    "propuesta_v2": "Sustituir por dos tareas: en el CIERRE, «Cargar la cámara de fermentación controlada con las piezas formadas y programar el ciclo (retardo a 3-4 °C → arranque de calor a las __:__ , 26-28 °C, 75-80 % HR)»; en la APERTURA, «Verificar el estado de la fermentación en curso (volumen, temperatura, humedad) y ajustar». Es la diferencia entre un checklist escrito por alguien que ha abierto un obrador y uno que no."
+   },
+   {
+    "id": "L1-18",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Masas y Fermentación] B14",
+    "hallazgo": "Parámetro de fermentación en el límite peligroso y tiempo corto: «28 °C, 75% humedad, 1.5-2h» para bollería hojaldrada. Por encima de 26-28 °C la mantequilla del laminado funde y se pierde el hojaldrado (fuga de grasa en el horno, pieza chata y grasienta); la regla de obrador es «nunca por encima de 28 °C, y mejor 26». Además 1,5-2 h es insuficiente para una masa que sale a 4 °C de cámara: lo real son 2,5-3 h contando el atemperado.",
+    "evidencia": "02 [Masas y Fermentación] A14 «Fermentar en cámara controlada (28 °C, 75% humedad, 1.5-2h)»; A11 «Reposo en bloque en cámara (mínimo 1h a 4 °C)».",
+    "propuesta_v2": "«Fermentar en cámara controlada: 26-28 °C máx. (NUNCA superar el punto de fusión de la mantequilla), 75-80 % HR, 2,5-3 h — punto: la pieza dobla volumen y tiembla al mover la bandeja». Y en A11: «Bloque en frío: 1 h en abatidor o 12 h en cámara a 3-4 °C»."
+   },
+   {
+    "id": "L1-19",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Cremas y Rellenos] B9 y B24",
+    "hallazgo": "Dos imprecisiones técnicas en cremas: (1) «ganache de chocolate (55% para relleno, 70% para cobertura)» confunde el % de cacao de la cobertura con la PROPORCIÓN chocolate:nata, que es lo que determina si la ganache sirve de relleno (2:1) o de baño (1:1); tal como está, sugiere una regla que no existe. (2) La curva de temperado está incompleta: falta el chocolate blanco y la curva de leche solo da el punto final.",
+    "evidencia": "02 [Cremas y Rellenos] A9 «Preparar ganache de chocolate (55% para relleno, 70% para cobertura)»; A24 «Temperar chocolate de cobertura (curva: 45°→27°→31° negro / 29° leche)».",
+    "propuesta_v2": "A9 → «Ganache de relleno (proporción 2:1 chocolate:nata) / ganache de baño (1:1) — ajustar el % de cacao según la receta de la casa». A24 → tabla en tres líneas: «Negro 50-55 → 28-29 → 31-32 · Leche 45 → 27-28 → 29-30 · Blanco 40-45 → 26-27 → 28-29»; sacarla del texto de la tarea a un bloque «Parámetros» visible, que es como se cuelga en la pared del obrador."
+   },
+   {
+    "id": "L1-20",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/02-partidas-cocina.xlsx",
+    "ubicacion": "[Cremas y Rellenos] B7 y [Masas] B24",
+    "hallazgo": "(a) Terminología: «baño maría inverso» es una traducción rara; en obrador español se dice «baño maría INVERTIDO» o «baño de hielo». (b) El criterio de abatimiento está mal expresado: la referencia profesional/APPCC es pasar de +65 °C a +10 °C en menos de 2 h; «abatir a <4 °C en 2h» mezcla dos criterios. (c) «Hornear con vapor (230-250 °C, vapor primeros 10 min)»: el vapor se inyecta al cargar y se mantiene 3-5 min; 10 min de vapor impide formar corteza. Falta abrir tiro/válvula los últimos minutos, que es lo que da el crujiente.",
+    "evidencia": "02 [Cremas] A7 «Enfriar rápidamente en baño maría inverso (abatir a <4 °C en 2h)»; 02 [Masas] A24 «Hornear con vapor (230-250 °C, vapor primeros 10 min)»; A25 «Enfriar en rejillas (no apilar, mínimo 30 min)» ✓ correcto.",
+    "propuesta_v2": "«Enfriar rápido en baño maría invertido o abatidor: de +65 °C a +10 °C en menos de 2 h; después ≤4 °C, tapado y etiquetado». «Hornear con vapor: cargar con golpe de vapor, mantener 3-5 min, abrir tiro los últimos 5-8 min (230-250 °C según formato)». Corregir también «glasé espejo» → «glaseado espejo» (02 [Cremas] A23 y [Decoración] A7)."
+   },
+   {
+    "id": "L1-21",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/03-tareas-manager.xlsx",
+    "ubicacion": "[Semanal Manager] bloques A5, A11, A16, A22, A27",
+    "hallazgo": "El checklist semanal del manager solo tiene bloques de LUNES a VIERNES. En una pastelería con tienda, sábado y domingo son los dos días de mayor facturación — y la propia hoja lo reconoce en el bloque del viernes. Un jefe de obrador no puede colgar un semanal sin fin de semana.",
+    "evidencia": "03 [Semanal Manager] A5 «Lunes — Planificación», A11 «Martes — Equipo», A16 «Miércoles — Calidad», A22 «Jueves — Proveedores y Compras», A27 «Viernes — Preparación Fin de Semana» con A28 «Planificar producción extra de fin de semana (30-50% más)». No hay bloque Sábado ni Domingo.",
+    "propuesta_v2": "Añadir «Sábado — Día fuerte» (refuerzo de despacho, reposición de vitrina cada 90 min, control de rotura de stock por referencia, entrega de encargos, arqueo intermedio) y «Domingo — Cierre de semana» (producción reducida, liquidación de vitrina, recuento de sobrante para el plan del lunes, limpieza de fin de semana). Corregir de paso la landing/dashboard, que venden explícitamente «semanal (lun-vie con foco por día)»."
+   },
+   {
+    "id": "L1-22",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/03-tareas-manager.xlsx",
+    "ubicacion": "[Mensual Manager] B6 y B7",
+    "hallazgo": "Dos datos numéricos discutibles y uno que se contradice con la SPEC. (1) «food cost objetivo: 28-35%» es un rango heredado del kit de RESTAURANTE; en pastelería artesana el coste de materia prima sobre PVP se sitúa habitualmente más bajo (orden del 25-33 %) porque el peso está en la mano de obra — afirmarlo así hace que el pastelero desconfíe. (2) «Analizar mermas del mes (objetivo: <5%)» contradice la nota que la propia SPEC quiere poner en el fichero 10 («3-8 % normal, revisar por encima del 10 %»).",
+    "evidencia": "03 [Mensual Manager] A6 «Revisar coste de materias primas vs. ventas (food cost objetivo: 28-35%)»; A7 «Analizar mermas del mes (objetivo: <5%)»; SPEC:49 «la merma de una pastelería artesana suele moverse entre el 3 % y el 8 %… por encima del 10 % hay que revisar».",
+    "propuesta_v2": "Sustituir por «Coste de materia prima sobre venta (sin IVA) — fija tu objetivo: ____ % (referencia habitual en pastelería artesana: 25-33 %; el margen se defiende en mano de obra y merma, no solo en compra)». Y unificar el criterio de merma en TODOS los ficheros con el del 10 (objetivo editable, 5 % por defecto; 3-8 % normal; >10 % revisar). Un producto que da dos objetivos distintos de merma en dos hojas pierde autoridad."
+   },
+   {
+    "id": "L1-23",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "[Cierre de Caja] A29-A35 (bloque MONEDAS)",
+    "hallazgo": "Falta la moneda de 0,02 € en el recuento por denominación. Las denominaciones euro en circulación son 2 · 1 · 0,50 · 0,20 · 0,10 · 0,05 · 0,02 · 0,01. Con la tabla actual, todo arqueo que contenga monedas de 2 céntimos genera un descuadre inexplicable — justo lo que la hoja pretende evitar. La SPEC §1.2 revisa el 09 y no lo ve.",
+    "evidencia": "09 [Cierre de Caja] A29=«2 €», A30=«1 €», A31=«0,50 €», A32=«0,20 €», A33=«0,10 €», A34=«0,05 €», A35=«0,01 €». Billetes 500-5 ✓ completos.",
+    "propuesta_v2": "Insertar fila «0,02 €» entre 0,05 € y 0,01 €, con `=B*0.02`, y desplazar TOTAL EFECTIVO a `=SUM(C21:C36)`. Verificar en `data_only` que el total sigue cuadrando tras la inserción."
+   },
+   {
+    "id": "L1-24",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx (SPEC §1.2)",
+    "ubicacion": "[Registro Mensual] cabecera fila 4",
+    "hallazgo": "Al registro mensual le faltan las dos columnas que un dueño de pastelería mira de verdad y que la SPEC no añade: NÚMERO DE TICKETS (→ ticket medio, el KPI de una tienda de vitrina) y el DESGLOSE DE IVA. En España la pastelería/bollería y el pan tributan a tipos reducidos distintos; sin desglose, el registro no sirve para nada contable. Falta también el registro de SALIDAS DE CAJA (compras urgentes, cambio), que es la causa nº1 de descuadres reales.",
+    "evidencia": "09 [Registro Mensual] A4:I4 = Fecha | Fondo Apertura | Ventas Efectivo | Ventas Tarjeta | Ventas Otros | Total Facturado | Descuadre | Depósito | Responsable. Ni tickets, ni IVA, ni salidas.",
+    "propuesta_v2": "Añadir a la SPEC §1.2: columnas «Nº tickets» y «Ticket medio (=IFERROR(Total/Nº tickets,0))» con formato €, más una tabla auxiliar de bases e IVA por tipo (editable, con los tipos a rellenar por el usuario para no fijar en el fichero cifras fiscales que pueden cambiar), y en [Cierre de Caja] un bloque «Salidas de caja del día (concepto / importe / autorizado por)» que reste en el cuadre. Con esto el 09 pasa de ser una hoja de arqueo a la hoja que el gestor pide cada mes."
+   },
+   {
+    "id": "L1-25",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/05-tareas-semanales-mensuales.xlsx",
+    "ubicacion": "[Mantenimiento Mensual] B6 y columna D (todas las filas de mantenimiento)",
+    "hallazgo": "(a) «Limpieza profunda de horno (pirolisis o manual con productos)»: los hornos de obrador (pisos, rotativo, convección industrial) NO tienen pirólisis — es una función de horno doméstico. Delata origen genérico. (b) El responsable «Mantenimiento» aparece 9 veces y NO existe en el catálogo de perfiles del kit (04 solo define Jefe Pastelero, Pastelero, Ayudante, Dependiente) ni en la landing. Ninguna pastelería de 4-8 personas tiene un puesto «Mantenimiento».",
+    "evidencia": "05 [Mantenimiento Mensual] A6 «Limpieza profunda de horno (pirolisis o manual con productos)»; D6=D7=D8=D9=D12=D13=D14=D15=D18=D19=«Mantenimiento»; 04 hojas = [Jefe Pastelero] [Pastelero] [Ayudante] [Dependiente Vitrina].",
+    "propuesta_v2": "(a) «Limpieza profunda de horno: desincrustante alcalino en frío, raspado de solera, limpieza de turbina y filtros (según manual del fabricante)». (b) Sustituir «Mantenimiento» por «Técnico externo / Jefe Pastelero» y añadir columna «Empresa / contacto» con celda verde editable + una hoja «Contactos de mantenimiento y contratos» (horno, frío, extinción, plagas, báscula) — de coste cero y altísimo valor percibido cuando se avería la cámara un sábado."
+   },
+   {
+    "id": "L1-26",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/05-tareas-semanales-mensuales.xlsx + 03 [Mensual Manager]",
+    "ubicacion": "05 hojas [Limpieza Semanal] [Mantenimiento Mensual] [Inventario]; 03 [Mensual Manager] bloques A5/A11/A18",
+    "hallazgo": "Faltan tres obligaciones mensuales/periódicas de un obrador español que ninguna hoja recoge: CONTROL DE PLAGAS (DDD con empresa autorizada + registro de avistamientos y revisión de trampas), REVISIÓN DEL PLAN APPCC y sus registros, y FORMACIÓN EN MANIPULACIÓN DE ALIMENTOS vigente del equipo. También falta la revisión de extintores/seguro y el control de potabilidad si hay depósito. Son exactamente los papeles que pide una inspección.",
+    "evidencia": "05 [Mantenimiento Mensual] bloques = Hornos, Equipos de Frío, Otros Equipos. 03 [Mensual Manager] bloques = Revisión Financiera, Mantenimiento, Evaluación y Desarrollo. Ni una mención a plagas, APPCC ni formación en los 11 ficheros.",
+    "propuesta_v2": "Añadir al 03 un cuarto bloque «Cumplimiento (mensual)»: revisión de registros APPCC del mes y firma · control de plagas: revisión de trampas y visita del técnico (fecha ___ / próxima ___) · caducidad de los certificados de manipulador del equipo · revisión de extintores y botiquín · comprobación del listado de alérgenos frente a cambios de receta o proveedor. Es la sección que convierte el kit de «listas bonitas» en «sistema que aprueba una inspección»."
+   },
+   {
+    "id": "L1-27",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx",
+    "ubicacion": "[Apertura Obrador] bloque A24 «Apertura Vitrina / Despacho» y B26",
+    "hallazgo": "«Colocar productos del día anterior (verificar caducidad)» es la PRIMERA tarea del montaje de vitrina. En pastelería artesana con vitrina, el producto con crema, nata o fruta del día anterior NO se expone: es merma. Como primera instrucción del día contradice el propio argumento de venta («producto del día») y expone al obrador. Además falta la tarea que sí debe ir primero: verificar que la vitrina ha alcanzado 2-6 °C antes de cargarla.",
+    "evidencia": "01 [Apertura Obrador] A25 «Encender iluminación y climatización de vitrinas» E25=07:30, A26 «Colocar productos del día anterior (verificar caducidad)» E26=07:30 — misma hora que el encendido: se carga producto en una vitrina que aún no ha bajado de temperatura.",
+    "propuesta_v2": "Reordenar el bloque: (1) «Encender vitrinas — verificar 2-6 °C ANTES de cargar (registrar la lectura)» a las 07:00; (2) «Montar vitrina con la producción del día: bollería → pastelería → salado»; (3) «Revisar producto de ayer: solo bollería seca y galletería en buen estado; retirar TODO lo que lleve crema, nata o fruta y anotarlo en el control de mermas (fichero 10)». Ganancia doble: corrige la mala praxis y engancha el fichero nuevo 10."
+   },
+   {
+    "id": "L1-28",
+    "severidad": "media",
+    "fichero": "SPEC §1.3 fichero 10 (Plan de Producción Semanal)",
+    "ubicacion": "SPEC:47",
+    "hallazgo": "El plan semanal propuesto no es utilizable en un obrador por dos ausencias: (1) no hay columna UNIDAD — «20» de una barra de pan y «20» de tarta de queso no son la misma cosa, y sin unidad no se puede convertir en pedido de harina; (2) no hay HORNADAS ni hora de salida a vitrina — una pastelería con tienda produce por tandas (1ª hornada 06:30 para abrir, reposición 11:00, tarde 17:00), no por «cantidad del día». Sin eso es una tabla de cifras, no un plan de producción.",
+    "evidencia": "SPEC:47 columnas propuestas: «Producto | Partida | Lun | Mar | Mié | Jue | Vie | Sáb | Dom | Total semana (=SUM) | Notas».",
+    "propuesta_v2": "Columnas: «Producto | Partida | Unidad (ud/kg/bandeja) | Peso ud (g) | Hornada (1ª/2ª/tarde) | Lun…Dom | Total semana | Kg de masa (=Total×Peso ud/1000) | Notas». Añadir además una fila superior «Sobrante de ayer» por producto, porque la producción real de un obrador es «previsión − sobrante». Y corregir la nomenclatura de la lista de productos de la SPEC: usa «croissant» y «cruasán» para el mismo producto en la misma línea, y equipara «pain au chocolat/napolitana» cuando en España son dos referencias distintas (barrita de chocolate vs pieza con crema/chocolate)."
+   },
+   {
+    "id": "L1-29",
+    "severidad": "media",
+    "fichero": "SPEC §1.3 fichero 12 (matriz de alérgenos) — validación producto a producto",
+    "ubicacion": "SPEC:58",
+    "hallazgo": "Errores concretos en los alérgenos pre-asignados: (1) ENSAIMADA — la SPEC marca lácteos; la ensaimada mallorquina auténtica lleva manteca de cerdo (saïm) y NO lleva leche: marcar lácteos es incorrecto (la aclaración «manteca de cerdo no es alérgeno» sí es correcta). (2) PAIN AU CHOCOLAT «+ soja ●» — la lecitina de soja en la barrita de chocolate es frecuente pero NO universal (muchas coberturas usan lecitina de girasol): marcar ● por defecto es afirmar lo que no consta. (3) CREMA PASTELERA «gluten ○ por almidón según receta» — el almidón de maíz NO contiene gluten; la redacción confunde: solo lleva gluten si se espesa con harina de trigo. (4) PANELLETS «piñones» — los piñones NO figuran entre los frutos de cáscara del Anexo II (almendra, avellana, nuez, anacardo, pecana, Brasil, pistacho, macadamia); declararlos es buena práctica pero no son alérgeno de declaración obligatoria.",
+    "evidencia": "SPEC:58, enumeración de productos: «ensaimada: gluten/huevo/lácteos (manteca de cerdo NO es alérgeno)»; «pain au chocolat: + soja ●»; «crema pastelera (huevo, lácteos, gluten ○ por almidón según receta)»; «panellets (almendra ●, huevo, piñones)».",
+    "propuesta_v2": "Corregir esos cuatro. Convertir todo ● que dependa de proveedor o receta en ○ + nota «verificar ficha técnica». Redactar la crema pastelera como «gluten ● SOLO si se espesa con harina de trigo (con maicena, no)». Y añadir matices que faltan y que un pastelero valora: Tarta Sacher → sulfitos ○ por la mermelada de albaricoque; roscón → sulfitos ● (la fruta escarchada comercial casi siempre los lleva, súbelo de ○ a ●); polvorón de Estepa → sésamo; magdalena tradicional → SIN lácteos (se hace con aceite de oliva, no mantequilla) — marcarlos sería un error clásico; croissant de jamón y queso → soja ○ y sulfitos ○ (fiambres); mona de Pascua y turrón de chocolate → soja ○."
+   },
+   {
+    "id": "L1-30",
+    "severidad": "media",
+    "fichero": "SPEC §1.3 fichero 12 — cobertura de la matriz",
+    "ubicacion": "SPEC:58 («~35 productos típicos»)",
+    "hallazgo": "La lista de ~33-35 productos deja fuera referencias que están en la vitrina de cualquier pastelería española y algunas de ellas de venta diaria: napolitana (distinta del pain au chocolat), caracola, suizo, tarta de Santiago (almendra ● y sin gluten — un dato de venta), flan y tocinillo, arroz con leche, pastel de nata, coca, bizcocho de yogur, y sobre todo las BEBIDAS de la zona de degustación (leche, bebida de soja, de avena, de almendra) si hay cafetera — que es el escenario que el propio 08 nuevo contempla.",
+    "evidencia": "SPEC:58 enumeración completa; SPEC:38 (nuevo 08) «máquina de café si hay zona degustación».",
+    "propuesta_v2": "Elevar la matriz a ~45 referencias e incluir un bloque «Bebidas y cafetería». Añadir tres columnas transversales de altísimo uso en mostrador: «Contiene lactosa (S/N)», «Apto celíacos (NO / SÍ certificado)» y «Vegano (S/N)» — son las tres preguntas que el dependiente recibe cada día y hoy no tiene dónde consultarlas. Cerrar el nº exacto de referencias y hacerlo coincidir con el dashboard, que ya promete «más de 30 productos» (KitTareasPasteleriaDashboard.tsx:38)."
+   },
+   {
+    "id": "L1-31",
+    "severidad": "media",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+    "ubicacion": "líneas 29, 30, 48-70 vs 248-278",
+    "hallazgo": "Tres problemas de landing que el §0 punto 6 NO recoge: (1) `aggregateRating.reviewCount: '8'` no corresponde ni a las 3 reviews del schema ni a los 10 testimonios del marquee — es una cifra inventada expuesta en datos estructurados; (2) `schema.faqs` (5) y la sección `faqs` visible (6) divergen en número Y en texto para las mismas preguntas → desajuste entre structured data y contenido visible, que es exactamente lo que Google penaliza en FAQ rich results; (3) `priceValidUntil: '2026-12-31'` caduca en 4 meses.",
+    "evidencia": "kit-tareas-pasteleria.ts:30 `reviewCount: '8'`; :33-46 tres reviews; :296-353 diez testimonios; :48-70 schema.faqs (5 entradas) vs :248-278 faqs (6 entradas, textos distintos para «¿Las tareas vienen ya rellenadas…?»); :29 `priceValidUntil: '2026-12-31'`.",
+    "propuesta_v2": "Con la v2.0: alinear `reviewCount` al número real de reviews publicadas, hacer que `schema.faqs` sea exactamente el mismo array que `faqs` (una sola fuente), y mover `priceValidUntil` a 2027-12-31. Aprovechar para revisar la comparativa con Trail, que se repite 4 veces con un precio concreto («€60-75/mes») y una afirmación fuerte («las mismas listas de tareas que usan obradores con SaaS premium como Trail», :194) — publicidad comparativa con competidor nombrado y precio que puede haber cambiado: fechar el dato o despersonalizarlo."
+   },
+   {
+    "id": "L1-32",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/ (los 11) + SPEC §1.1",
+    "ubicacion": "taxonomía de la columna «Zona» en 01-09",
+    "hallazgo": "La taxonomía de zonas y responsables es incoherente entre ficheros y la SPEC §1.1 no la unifica (solo redefine zonas dentro del 08). Se usan «Vitrina» (01, 02) y «Despacho» (04) para el mismo sitio; el 07 ofrece la zona «Horno» que no aparece en ningún checklist real; y el 08 introduce 9 zonas nuevas de restaurante (Sala, Terraza, Recepción, Zonas comunes…). El resultado es que el código de color por zona —argumento de venta del kit— no significa lo mismo en dos ficheros.",
+    "evidencia": "01 C25=«Vitrina» vs 04 [Dependiente Vitrina] C6=«Despacho»; 07 [Por Zona] A13=«Horno» sin uso en 01-06; 08 [Apertura] C11=«Recepción», C16=«Sala», C17=«Terraza», C20=«Tienda».",
+    "propuesta_v2": "Fijar en la SPEC una lista cerrada de 7 zonas para los 14 ficheros — Obrador · Horno · Cámaras/Almacén · Vitrina/Tienda · Caja · General/Accesos · Admin — con su color, publicarla en la hoja Instrucciones de cada libro y usarla como validación de datos en la columna Zona. Igual con los responsables: Jefe Pastelero · Pastelero · Ayudante · Dependiente · Manager · Técnico externo (eliminando «Mantenimiento» y «Saliente/Entrante» sueltos del 03)."
+   },
+   {
+    "id": "L1-33",
+    "severidad": "media",
+    "fichero": "SPEC §1.1 (correcciones transversales)",
+    "ubicacion": "SPEC:26-33",
+    "hallazgo": "La SPEC cubre metadata, impresión, fórmulas y caché, pero omite cuatro cosas que determinan si el fichero se puede usar de verdad: (1) el denominador «de N» está HARDCODEADO en las 20 hojas con contador — si el usuario borra o añade tareas (que es lo que el kit le pide hacer), el «X de 22» miente para siempre; (2) no se protege la hoja, de modo que cualquier ayudante borra el COUNTIF; (3) no se fija ajuste de texto ni altura automática en la columna Tarea, con textos de hasta 95 caracteres que se cortarán al imprimir en A4; (4) no hay hoja «Índice» ni fichero 00-LÉEME para 14 ficheros.",
+    "evidencia": "01 [Apertura Obrador] F34=22 (valor fijo) junto a D34==COUNTIF(F5:F32,\"✓\"); patrón idéntico en las 20 hojas con contador. 02 [Masas] B9 = 63 caracteres, 05 [Limpieza] B10 = 66, 03 [Diario] B8 = 92.",
+    "propuesta_v2": "(1) `=COUNTA(B5:B32)-COUNTIF(B5:B32,\"\")` descontando subtítulos, o directamente contar las filas con texto en Tarea, para que el denominador se autoajuste. (2) `sheet.protection` con las celdas verdes desbloqueadas y sin contraseña (o contraseña indicada en Instrucciones). (3) `alignment=Alignment(wrap_text=True, vertical='top')` en la columna Tarea + anchos fijados. (4) Añadir «00-LEEME-PRIMERO.xlsx»: mapa de los 14 ficheros, qué imprime cada uno y cada cuánto, y un plan de implantación en 3 semanas. Para un producto de €12 con 14 archivos, ese índice es lo que evita que el comprador abra uno, se abrume y pida devolución."
+   },
+   {
+    "id": "L1-34",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/06-eventos-festivos.xlsx + BONUS-02",
+    "ubicacion": "06 [Día Madre-Padre] hoja completa; 06 [Navidad] B16/E16",
+    "hallazgo": "(a) La hoja «Día de la Madre / Día del Padre» no contiene NINGUNA fecha: no dice 19 de marzo ni «primer domingo de mayo», así que el usuario no sabe cuándo aplicar el checklist y además fusiona dos campañas de volumen y producto muy distintos. (b) En [Navidad], la tarea de roscón está dentro del bloque «Producción Navideña (Diciembre)» con hora límite «3 Ene».",
+    "evidencia": "06 [Día Madre-Padre] A1=«Día de la Madre / Día del Padre», bloques A5=«Preparación» y A10=«Producción y Venta», sin fecha en ninguna celda; 06 [Navidad] A16 «Preparar masas de roscón de Reyes (fermentación 24-48h)» E16=«3 Ene» dentro del bloque A13=«Producción Navideña (Diciembre)».",
+    "propuesta_v2": "Desdoblar en dos hojas con la fecha en el título: «Día del Padre — 19 de marzo» y «Día de la Madre — 1er domingo de mayo (fecha de este año: ___)». Mover el bloque de roscón a su propio subtítulo «Reyes (2-6 Ene)» dentro de la hoja de Navidad, coherente con el bloque que ya existe en A21."
+   },
+   {
+    "id": "L1-35",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08 y 09 vs 01-07",
+    "ubicacion": "08/09 [Instrucciones] A5, A14, A16; 09 [Cierre de Caja] A18, A38",
+    "hallazgo": "Dos familias visuales dentro del mismo producto: 08 y 09 usan emojis (📋 💡 💰 📊) y el remate «© AI Chef Pro — aichef.pro», mientras 01-07 y los BONUS usan viñetas «▸» y el pie «— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro». Se nota que son dos generadores distintos y resta profesionalidad al imprimir. La SPEC §1.1 unifica metadata y pie de versión pero no el estilo del cuerpo.",
+    "evidencia": "08 [Instrucciones] A5=«📋 Instrucciones de Uso», A14=«💡 Consejo…», A16=«© AI Chef Pro — aichef.pro»; 09 [Cierre de Caja] A18=«💰 Recuento de Efectivo por Denominación», A38=«📊 Resumen de Cierre»; 01 [Instrucciones] B5=«▸ Imprime el checklist…», A38=«— Kit de Tareas Recurrentes · …».",
+    "propuesta_v2": "Adoptar el estilo de 01-07 en los 14 ficheros: sin emojis (coherente con la guía de marca del proyecto), viñetas «▸», pie unificado «— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro» + la línea de versión que ya prevé la SPEC. Conservar el consejo de plastificar (08 A14): es bueno y debería estar en los 14, no en 2."
+   },
+   {
+    "id": "L1-36",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/04-tareas-perfiles.xlsx",
+    "ubicacion": "hojas del libro",
+    "hallazgo": "Faltan dos perfiles que el propio kit presupone: PANADERO/hornero (el 02 tiene una partida completa de «Masas de Pan Artesano» y el 01 monta «vitrina de pan», pero no hay checklist de puesto) y REPARTIDOR (la SPEC §1.3 crea «Entrega a domicilio» en la ficha de encargo sin tareas ni perfil asociado). Tampoco hay checklist del turno de NOCHE/madrugada pese a que las 20 hojas llevan la casilla «☐ Noche».",
+    "evidencia": "04 hojas = [Jefe Pastelero] [Pastelero] [Ayudante] [Dependiente Vitrina]; 02 [Masas y Fermentación] A18 «Masas de Pan Artesano»; 01 [Apertura Obrador] A2 «Turno: ☐ Mañana ☐ Tarde ☐ Noche»; SPEC:52 «Recogida en tienda / Entrega a domicilio (☐) · Dirección».",
+    "propuesta_v2": "Añadir al 04 una hoja «Panadero / Hornero» (fermentaciones nocturnas, cargas de horno, vapor, enfriado, control de piezas por hornada) y, si se mantiene la entrega a domicilio del fichero 11, una mini-hoja «Reparto» (ruta, orden de entregas, transporte isotermo y temperatura, cobro pendiente, firma del cliente). Con el reparto, además, cerrarías el ciclo del encargo, que hoy termina en «Entregado por» sin control de la cadena de frío."
+   }
+  ],
+  "mejoras_v2": [
+   "REORDENAR LOS 3 FICHEROS NUEVOS: el hueco nº1 del kit no es el plan de producción, es el REGISTRO DE TEMPERATURAS + RECEPCIÓN DE MERCANCÍA (APPCC diario), que el propio kit ordena hacer 5 veces sin dar la hoja. Propongo: 10 = Registros APPCC diarios (temperaturas + recepción + L+D), 11 = Control de Encargos, 12 = Alérgenos, 13 = Plan de Producción y Mermas. Si hay que elegir tres, el plan de producción es el prescindible: solapa con el Kit Escandallos y con Miselup (que además es el cross-sell natural).",
+   "TABLA DE VIDAS ÚTILES POR ELABORACIÓN como hoja de una página imprimible (crema pastelera 24-48 h ≤4 °C · nata montada 24 h · ganache 5-7 d · mousse 3 d · masa laminada cruda congelada 1 mes · bizcocho base congelado 3 meses · almíbar 15 d). Es el papel más consultado de un obrador, cuesta media hora hacerlo y sube la percepción de valor de €12 más que ninguna otra cosa del kit.",
+   "PLAN DE LIMPIEZA (L+D) DOCUMENTADO: zona · elemento · frecuencia · producto · dosis · TIEMPO DE CONTACTO · responsable · firma. El fichero 05 dice qué limpiar; no dice con qué ni deja constancia. Sin tiempo de contacto y sin firma, el registro no vale ante una inspección.",
+   "BLOQUE «PARÁMETROS» VISIBLE en las hojas de partida (02): sacar de dentro del texto de las tareas todas las temperaturas, tiempos y curvas y ponerlas en una tabla de referencia al pie de la hoja (temperado de las tres coberturas, temperaturas de horno por producto, puntos de almíbar, fermentaciones). Es lo que el equipo consulta; hoy está enterrado entre paréntesis.",
+   "AUTORREFERENCIA ENTRE FICHEROS: cada vez que una tarea dice «registrar», «anotar en el control de mermas», «rellenar la ficha» o «hoja de control», debe citar el fichero por número y hoja. Convierte 14 Excel sueltos en un sistema y es lo que justifica el precio frente a bajarse plantillas gratis.",
+   "«00-LÉEME-PRIMERO» con mapa de los 14 ficheros, qué se imprime y con qué frecuencia (diario / semanal / mensual / campaña), y plan de implantación en 3 semanas. Con 14 archivos, la primera causa de devolución es la parálisis, no la calidad.",
+   "CIERRE Y APERTURA POR TURNOS REALES: el kit mezcla horas de obrador (05:00-18:30) y de tienda (07:30-20:30) en la misma hoja y hace que el Jefe Pastelero cierre la tienda a las 20:30 tras entrar a las 05:00. Separar explícitamente «Turno obrador» y «Turno tienda» con su responsable — el 08 reescrito es el sitio para hacerlo.",
+   "CAMPAÑAS: añadir a cada hoja de evento un bloque de CIERRE DE ENCARGOS con fecha límite y un bloque POST-CAMPAÑA (sobrante, merma de campaña, top ventas, qué repetir). Las campañas son el 40 % del año según el propio fichero 06 y hoy no se miden.",
+   "MATRIZ DE ALÉRGENOS COMO BORRADOR VERIFICABLE, nunca como documento publicable: ● en gris con nota «propuesta», columna obligatoria «Verificado con ficha técnica (fecha/firma)» y celda que muestre «NO PUBLICAR» hasta que se firme. Es la única forma de entregar valor sin trasladar un riesgo alimentario y legal al comprador.",
+   "RGPD en la ficha de encargo (información básica de tratamiento + consentimiento comercial opcional + nota de conservación y destrucción). El fichero 11 crea un registro de datos personales de clientes y ahora mismo la SPEC no lo contempla en absoluto.",
+   "Añadir al 09 «Nº de tickets» y «Ticket medio», el desglose de IVA con tipos editables y las «Salidas de caja del día». Son el motivo real por el que un dueño de pastelería abre esa hoja cada mañana.",
+   "Fechas móviles: columna «Fecha de este año: ____» en el BONUS-02 para Semana Santa, Día de la Madre, Black Friday y Comuniones, y corregir el Black Friday («último viernes de noviembre», no «25 Nov»). Añadir Carnaval (orejas, filloas, rosquillas) y Sant Jordi (23 abril) — dos campañas ausentes con producto propio.",
+   "Landing y dashboard: eliminar la descripción «6 checklists … ~45 tareas» también del dashboard (KitTareasPasteleriaDashboard.tsx:27), no solo de la landing — la SPEC solo corrige la landing y el dashboard tiene el mismo error, además de mencionar una zona «horno» que ningún checklist usa."
+  ],
+  "veredicto_spec": "§0 CONFIRMADO en lo que afirma (bio caduca en 08/09 A17 y landing:174/:208 · 08 genérico de restaurante · «9 checklists» en landing:116 y en los emails · Marta/Marc Vidal en :33 vs :296 · marcas reales Meliá/Europastry/Hofmann en :315/:339/:351 · descuadre vacío en 09 [Registro Mensual] G), pero INCOMPLETO en tres frentes graves. (1) SOBRA una afirmación: «Contenido de los checklists 01-07 y BONUS: BUENO … se conservan tal cual» (SPEC:22) es la conclusión más peligrosa del documento — 01-07 tienen errores técnicos que un pastelero detecta a la primera (amasado y temperatura de masa de croissant mal, fermentación al límite, entremets que se glasean 30 min después de congelarse, vapor 10 min, pirólisis en horno de obrador, semanal sin sábado ni domingo, food cost de restaurante, «baño maría inverso», producto de ayer expuesto en vitrina, Todos los Santos y Comuniones ausentes, torrijas y monas mal calendarizadas, roscón horneado tarde para su propio pico de venta). Conservarlos «tal cual» consolida esos errores en la v2.0 y es incoherente con vender el kit como «diseñado por un profesional». (2) FALTA el defecto funcional que más se nota al usarlo: en 8 de los 11 ficheros la casilla que se marca (columna A, ☐) no es la que cuenta el COUNTIF (columna F, «✓»), sin validación ni instrucción — el contador da 0 siempre; y el denominador «de N» está hardcodeado, de modo que se falsea en cuanto el usuario personaliza, que es justo lo que las Instrucciones le piden hacer. (3) FALTAN las plantillas que un obrador español echa más en falta que las tres propuestas: registro de temperaturas (el kit lo ordena 5 veces y no lo entrega), recepción de mercancía, plan de limpieza L+D, etiquetas de trazabilidad y tabla de vidas útiles; y falta blindaje en las dos piezas nuevas de mayor riesgo — la matriz de alérgenos pre-marcada con ● (riesgo alimentario y legal si se publica sin verificar; el texto de cartel propuesto además no satisface la exigencia de información POR ESCRITO del RD 126/2015) y la ficha de encargo (datos personales sin RGPD). Añadir además: el estado del repo ya promete 10/11/12 en función, dashboard y email sin que existan en disco, así que §2 está desfasada y describe como pendiente lo que ya está hecho — y lo que falta es exactamente lo único que rompería al comprador."
+ },
+ "v2:c51de28c2|Técnica Excel/openpyxl — audit": {
+  "lente": "Técnica Excel/openpyxl — auditoría adversarial de los 11 .xlsx LIVE de kit-tareas-pasteleria (openpyxl 3.1.3 + pycel, ejecución real de código sobre los ficheros y sobre un mini-xlsx de prueba)",
+  "hallazgos": [
+   {
+    "id": "L1-01",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Cierre de Caja!A19, A21:A35, A39:A45 (col A ancho=5)",
+    "hallazgo": "Las tablas «Recuento de Efectivo» y «Resumen de Cierre» reutilizan la retícula del checklist (A=# ancho 5, B=Tarea ancho 50) con las etiquetas en la columna A de 5 caracteres y los importes en la B de 50 → la rejilla está INVERTIDA y las etiquetas son ilegibles. Con wrap_text=True y customHeight fijo, el texto se corta.",
+    "evidencia": "openpyxl: widths={'A':5.0,'B':50.0,'C':16.0,...}; A41='Total Tarjetas (Visa/MC)' (24 chars) wrap=True, NO merged, row height=24 → necesita ≈66 pt / 5 líneas. A42='Total Otros (Bizum, Vales)' → ≈79 pt / 6 líneas. A19='Denominación' (12 chars) en col ancho 5, row height 26 → 3 líneas. A31..A35 ('0,50 €','0,20 €','0,10 €','0,05 €','0,01 €') → 2 líneas en filas de 22 pt. Solo A20, A28, A36 y A38 están combinadas; A19, A21-A35 y A39-A45 no.",
+    "propuesta_v2": "Sacar los dos bloques de la retícula del checklist: o bien combinar A:B para la etiqueta y poner el importe en C (coherente con A36:B36 + C36 que ya funciona), o bien re-anclar los bloques a partir de la columna B (etiqueta en B ancho 50, cantidad en C, subtotal en D) y dejar A como columna de numeración/margen. Verificar tras generar con un script que ninguna celda con wrap_text supere row_height con el ancho real (combinado incluido)."
+   },
+   {
+    "id": "L1-02",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Cierre de Caja!A21:A35 (tabla de denominaciones)",
+    "hallazgo": "Falta la moneda de 0,02 € en el recuento por denominación. La serie euro es 500/200/100/50/20/10/5 + 2/1/0,50/0,20/0,10/0,05/0,02/0,01: hay 14 filas y debería haber 15. Un arqueo de caja al que le falta una denominación NO puede cuadrar nunca con el efectivo real.",
+    "evidencia": "A21..A35 = ['500 €','200 €','100 €','50 €','20 €','10 €','5 €', (A28='MONEDAS'), '2 €','1 €','0,50 €','0,20 €','0,10 €','0,05 €','0,01 €']. No existe '0,02 €'. Fórmulas C21..C35 confirman los multiplicadores 500,200,100,50,20,10,5,2,1,0.5,0.2,0.1,0.05,0.01 — sin 0.02.",
+    "propuesta_v2": "Insertar la fila '0,02 €' con =B*0.02 y recalcular el rango de TOTAL EFECTIVO (=SUM(C21:C36)). Aprovechar para revisar si conviene mantener el billete de 500 € (retirado de emisión desde 2019, aunque sigue siendo de curso legal) o marcarlo como 'no habitual'."
+   },
+   {
+    "id": "L1-03",
+    "severidad": "alta",
+    "fichero": "scripts/generate-checklists-negocio.py",
+    "ubicacion": "líneas 434-437, 703-706, 797-800 (page_setup) + <pageSetUpPr/> vacío en el XML resultante",
+    "hallazgo": "REFUTA §0 #5: 08 y 09 SÍ tienen configuración de impresión (A4, fitToWidth=1, fitToHeight=0), pero es INERTE: Excel ignora fitToWidth/fitToHeight si <sheetPr><pageSetUpPr fitToPage=\"1\"/> no está activo. El generador nunca pone sheet_properties.pageSetUpPr.fitToPage=True. Resultado: 'Apertura del Negocio' (8 columnas, 153 unidades de ancho) se imprime en vertical y desbordado a 2-3 páginas.",
+    "evidencia": "unzip -p 08-...xlsx xl/worksheets/sheet2.xml → '<pageSetUpPr />' (vacío) junto a '<pageSetup fitToHeight=\"0\" fitToWidth=\"1\" orientation=\"portrait\" paperSize=\"9\"/>'. Idem sheet3 de 08 y sheets 2/3/4 de 09. En 01-07 y BONUS no hay ni <pageSetup>: solo <pageMargins>.",
+    "propuesta_v2": "Corregir el diagnóstico §0 #5 ('sin impresión en los 11' → 'sin impresión en 9; en 08/09 la hay pero es inerte por falta de fitToPage'). En el generador: ws.sheet_properties.pageSetUpPr = PageSetupProperties(fitToPage=True) ANTES de tocar page_setup; orientation='landscape' en las hojas de 7-8 columnas; añadir ws.print_area y ws.print_title_rows='4:4'. Gate automático que abra cada hoja y falle si (fitToWidth or fitToHeight) and not pageSetUpPr.fitToPage."
+   },
+   {
+    "id": "L1-04",
+    "severidad": "alta",
+    "fichero": "scripts/generate-checklists-negocio.py",
+    "ubicacion": "líneas 94-99 (entrada KITS con \"dir\": \"kit-tareas-pasteleria\")",
+    "hallazgo": "Trampa de regresión que la SPEC no ve: la SPEC §2 asigna la generación de 01-09 a generate-tareas-pasteleria.py, pero 08 y 09 los produce HOY el generador compartido generate-checklists-negocio.py, que sirve a 15 kits y que seguirá teniendo la entrada 'kit-tareas-pasteleria'. Cualquier ejecución futura de ese script (para el kit de bar, hotel, catering…) sobrescribirá los 08/09 v2.0 de pastelería con la versión genérica de restaurante que la v2.0 pretende eliminar.",
+    "evidencia": "grep -c '\"dir\"' generate-checklists-negocio.py = 15; bloque líneas 94-99: {\"dir\": \"kit-tareas-pasteleria\", \"file1\": \"08-apertura-cierre-negocio.xlsx\", \"file2\": \"09-apertura-cierre-caja.xlsx\", \"extra_apertura\": [('Encender vitrinas refrigeradas de exposición','Tienda'), ...]}. Es exactamente el contenido genérico (reservas/cartas/terraza) que §0 #4 quiere borrar.",
+    "propuesta_v2": "ELIMINAR la entrada 'kit-tareas-pasteleria' de KITS en generate-checklists-negocio.py (o marcarla \"owned_by\": \"generate-tareas-pasteleria.py\" y hacer que el script la salte con un aviso). Añadir al gate de verificación un check de que 08/09 de pastelería contienen la palabra 'vitrina'/'encargo' y NO contienen 'reservas'/'cartas/menús'."
+   },
+   {
+    "id": "L1-05",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx",
+    "ubicacion": "hojas 'Apertura del Negocio' y 'Cierre del Negocio' (fila 22/20, inexistente)",
+    "hallazgo": "REFUTA §0 #2: 08 tiene CERO fórmulas y BONUS-02 también. La afirmación 'fórmulas sin valor cacheado en los 11' es falsa: solo 9 de 11 ficheros tienen fórmulas (total kit = 80). Además 08 carece por completo de la fila «Tareas completadas: X de N» que sí tienen 01-07 y BONUS-01 → incoherencia de producto, no solo de caché.",
+    "evidencia": "Recuento de fórmulas por fichero (openpyxl): 01=2, 02=3, 03=4, 04=4, 05=3, 06=4, 07=3, 08=0, 09=56, BONUS-01=1, BONUS-02=0. En 08 la última fila útil es A23 'Firma del responsable…' y A24 '© AI Chef Pro'.",
+    "propuesta_v2": "Reescribir §0 #2 como «80 fórmulas en 9 de 11 ficheros, todas con <v/> vacío». En 08 v2.0 añadir la fila «Tareas completadas: =COUNTIF(F5:Fn,\"✓\") de N» y sumarla al recuento de inject_cache."
+   },
+   {
+    "id": "L1-06",
+    "severidad": "alta",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Registro Mensual!B36 = SUM(B5:B35)",
+    "hallazgo": "Error conceptual de contabilidad: se totaliza la columna 'Fondo Apertura', que es un SALDO (stock) que se repite cada día, no un flujo. Con 200 € de fondo diario, el 'TOTAL' del mes muestra 6.200 € de fondo, cifra sin significado que además se imprime en la fila de TOTALES junto a ventas reales. La SPEC §1.2 toca G (Descuadre) pero no ve este SUM.",
+    "evidencia": "Registro Mensual!A4='Fecha', B4='Fondo Apertura', …; B5..B35 = 0 con formato '#,##0.00 €'; B36='=SUM(B5:B35)' con relleno 1A1A1A (fila TOTALES).",
+    "propuesta_v2": "Sustituir B36 por =IFERROR(AVERAGE(B5:B35),0) etiquetado 'Fondo medio' o dejar B36 vacío con nota. Mantener SUM solo en C, D, E, F, G y H. Aplicar la misma revisión a cualquier columna de saldo que se añada en la v2.0."
+   },
+   {
+    "id": "L1-07",
+    "severidad": "alta",
+    "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts + 08/09.xlsx",
+    "ubicacion": "landing línea 251 ('Las celdas editables están marcadas en verde') vs fills de 08 y 09",
+    "hallazgo": "La landing promete celdas editables en verde. 01-07 y los BONUS lo cumplen (E8F5E9: 130/171/170/158/160/134/167/44/6 celdas), pero 08 y 09 tienen CERO celdas verdes: usan cebra blanco/gris (FFFFFF + F5F5F5) idéntica para celdas de entrada y de resultado. El cliente no sabe dónde escribir en las dos plantillas de negocio y caja.",
+    "evidencia": "Recuento de PatternFill por fichero: 08 → {'1A1A1A':5,'FFD700':7,'FFFFFF':133,'2D2D2D':16,'F5F5F5':136} (0 × E8F5E9); 09 → {'1A1A1A':17,'FFD700':17,'FFFFFF':234,'2D2D2D':26,'F5F5F5':246} (0 × E8F5E9). Caso concreto: Cierre de Caja B41 (entrada, FFFFFF) y B43 ('=B40+B41+B42', fórmula) son visualmente idénticas.",
+    "propuesta_v2": "Unificar la paleta: E8F5E9 SOLO en celdas de entrada (B21:B35, B41, B42, B44 de Cierre de Caja; B5:E35, G5:I35 de Registro Mensual; columnas Responsable/Hora/Notas/✓ de los checklists) y gris/negrita en las de fórmula. Añadir al gate un check que falle si un fichero del kit tiene 0 celdas E8F5E9."
+   },
+   {
+    "id": "L1-08",
+    "severidad": "media",
+    "fichero": "los 11 .xlsx (xl/workbook.xml)",
+    "ubicacion": "<calcPr calcId=\"124519\" fullCalcOnLoad=\"1\"/>",
+    "hallazgo": "MATIZA §0 #2: todos los ficheros llevan fullCalcOnLoad=\"1\", así que Excel de escritorio, LibreOffice y Google Sheets SÍ recalculan al abrir y muestran los valores. El síntoma real («se ven en blanco») se limita a previsualizadores que no calculan (Quick Look de macOS/iOS, vista previa de Drive/adjuntos de correo, openpyxl data_only). Si la SPEC vende el bug como 'en móvil/visores se ven en blanco' sin matizar, el changelog v2.0 prometerá arreglar algo que en Excel nunca estuvo roto.",
+    "evidencia": "unzip -p 01-apertura-cierre.xlsx xl/workbook.xml → '…<definedNames /><calcPr calcId=\"124519\" fullCalcOnLoad=\"1\" /></workbook>'. Idem en 09.",
+    "propuesta_v2": "Reformular §0 #2: «cache vacío → celdas en blanco en previsualizadores que no recalculan». Mantener inject_cache.py (aporta valor real) y garantizar que NO elimina fullCalcOnLoad (hoy lo preserva/reinyecta correctamente, líneas 'asegurar fullCalcOnLoad')."
+   },
+   {
+    "id": "L1-09",
+    "severidad": "media",
+    "fichero": "scripts/productos-digitales/inject_cache.py (validado sobre los 11 LIVE y sobre un mini-xlsx que replica §1.3)",
+    "ubicacion": "prueba en scratchpad/test_pycel.xlsx (59 fórmulas) + scratchpad/live/*.xlsx (80 fórmulas)",
+    "hallazgo": "VERIFICADO: pycel soporta TODO lo que plantea la SPEC §1.3 (SUMIF entre hojas con referencias absolutas, COUNTIF con criterio '●', COUNTIF con '✓', IFERROR de división, IF devolviendo texto, SUM con filas de holgura vacías, resta). 0 fallos. Riesgo confirmado como inexistente; lo que NO está probado es COUNTA (el propio docstring lo lista como no soportado) y la SPEC §1.1 sugiere hacer dinámico el 'de N', lo que tienta a usar COUNTA.",
+    "evidencia": "inject_cache.py sobre copias de los 11: '01=2/2, 02=3/3, 03=4/4, 04=4/4, 05=3/3, 06=4/4, 07=3/3, 08=0/0, 09=56/56, BONUS-01=1/1, BONUS-02=0/0, fallos_pycel=0' y re-lectura data_only → 'sin cache: 0' en los 11. Mini-xlsx: SUMIF(Diario!$C$2:$C$40,$A2,Diario!$E$2:$E$40)→100.0; IFERROR(D7/B7,0)→0.0691; IF(E7<=B9,\"OK\",\"Revisar\")→'Revisar'; COUNTIF(B2:B5,\"●\")→2.0. 59/59 inyectadas, 0 fallos.",
+    "propuesta_v2": "Declarar en la SPEC §1.1 la lista blanca verificada (SUM, SUMIF cross-sheet, COUNTIF con símbolo, IF, IFERROR, aritmética) y la lista negra (COUNTA, PMT). Si se quiere el 'de N' dinámico, usar =SUMPRODUCT(--(B6:B32<>\"\")) o cachear el número a mano, NUNCA COUNTA."
+   },
+   {
+    "id": "L1-10",
+    "severidad": "media",
+    "fichero": "los 9 .xlsx con fila de recuento (01-07, BONUS-01)",
+    "ubicacion": "p. ej. 01!Apertura Obrador D34='=COUNTIF(F5:F32,\"✓\")' y F34=22 (literal)",
+    "hallazgo": "El numerador es dinámico y el denominador es un ENTERO HARDCODEADO. En cuanto el usuario añade o borra tareas —cosa que las propias Instrucciones le piden— la frase «Tareas completadas: 3 de 22» miente. Verificado que HOY los 22 pares COUNTIF↔N son correctos (salvo 07, ver L1-19), pero el diseño es frágil.",
+    "evidencia": "Comprobación automática de los 24 bloques: 21 OK (N == nº real de filas con '☐' + tarea), p. ej. 01/Apertura N=22 tareas=22, 06/Semana Santa N=8 tareas=8. Todos los N son int literales en la celda a la derecha de 'de'.",
+    "propuesta_v2": "Sustituir el literal por =SUMPRODUCT(--(B6:B32<>\"\")) (soportado por pycel vía SUM/producto o cacheable) o, más simple, escribir la fila entera como una sola celda con =COUNTIF(F5:F32,\"✓\")&\" de \"&SUMPRODUCT(--(B6:B32<>\"\")). Probar la fórmula elegida con inject_cache ANTES de generalizarla a los 14 ficheros."
+   },
+   {
+    "id": "L1-11",
+    "severidad": "media",
+    "fichero": "01-07, BONUS-01 .xlsx",
+    "ubicacion": "Instrucciones!B11 ('Añade tareas específicas de tu obrador en las filas vacías del final') vs filas libres reales",
+    "hallazgo": "Las Instrucciones prometen filas vacías al final para ampliar. En la práctica hay UNA sola fila libre dentro del rango del COUNTIF por hoja, y esa fila no tiene ni validación de datos, ni relleno, ni bordes → el usuario que la use rompe la estética y no obtiene el desplegable ✓/—.",
+    "evidencia": "01/Apertura Obrador: rango COUNTIF F5:F32; filas de tarea 6-12, 15-22, 25-31; filas de sección 5, 14, 24; filas realmente libres dentro del rango = [13, 23, 32] — 13 y 23 son separadores previos a las secciones, así que solo la 32 es utilizable. DV sqref = F6..F31 exactamente (la 32 queda fuera). Mismo patrón en las 24 hojas.",
+    "propuesta_v2": "Añadir 5 filas de holgura formateadas (borde + relleno editable verde + DV ✓/—) por bloque, DENTRO del rango del COUNTIF y del SUMPRODUCT del denominador, y extender el sqref de la validación a esas filas. Es exactamente la 'fila de holgura dentro de los SUM' que la SPEC §1.1 pide para importes, pero también hace falta para tareas."
+   },
+   {
+    "id": "L1-12",
+    "severidad": "media",
+    "fichero": "01-07, BONUS-01 .xlsx",
+    "ubicacion": "fila 4 de cada hoja de trabajo: A4='☐', F4='Hecha'",
+    "hallazgo": "Hay DOS columnas de marcado en el mismo checklist: la A con un carácter '☐' impreso en cada fila (pensado para bolígrafo) y la F 'Hecha' con la validación ✓/—. El COUNTIF solo mira F. Quien trabaje en papel marcará la A y verá siempre «Tareas completadas: 0 de 22»; quien trabaje en digital dejará la A llena de cuadros sin marcar. Ambigüedad de UX no detectada por la SPEC.",
+    "evidencia": "01!A4='☐' (cabecera), A6..A31='☐'; F4='Hecha'; DV lista '\"✓,—\"' aplicada a F6..F31; D34='=COUNTIF(F5:F32,\"✓\")'. En 08/09 no existe la columna A de checkbox (A es '#') y la de marcado es F4='✓ Completada'.",
+    "propuesta_v2": "Unificar en la v2.0: columna A = '#' numerada (como 08/09) y una sola columna de marcado '✓ Completada' con DV. Si se quiere conservar el cuadro imprimible, ponerlo EN la misma columna que cuenta el COUNTIF (valor por defecto '☐' y lista '☐,✓,✗,—' con COUNTIF sobre '✓')."
+   },
+   {
+    "id": "L1-13",
+    "severidad": "media",
+    "fichero": "01-07 + BONUS-01 vs 08-09",
+    "ubicacion": "DataValidation.formula1",
+    "hallazgo": "Dos convenciones de validación conviviendo en el mismo kit: '\"✓,—\"' (01-07, BONUS-01) y '\"✓,✗,—\"' (08, 09). La SPEC §1.2 propone para el 08 reescrito la lista «✓,—», lo que DEGRADA el 08 actual (pierde el ✗ de 'no realizado') y consolida la divergencia en vez de resolverla.",
+    "evidencia": "01!Apertura Obrador DV: type=list formula1='\"✓,—\"' sqref=F6..F31. 08!Apertura del Negocio DV: type=list formula1='\"✓,✗,—\"' sqref=F5..F21. SPEC §1.2, bullet de 08: «validación de datos «✓,—» en ✓ Completada».",
+    "propuesta_v2": "Fijar UNA lista para los 14 ficheros: '\"✓,✗,N/A\"' (o '\"✓,✗,—\"'), documentarla en la SPEC §1.1 como invariante del kit y recalcular todos los COUNTIF sobre '✓'. Añadir gate: todas las DV del kit deben tener la misma formula1."
+   },
+   {
+    "id": "L1-14",
+    "severidad": "media",
+    "fichero": "07-plantilla-personalizable.xlsx, 08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx, 01-apertura-cierre.xlsx",
+    "ubicacion": "xl/worksheets/sheet*.xml — elementos <c … t=\"inlineStr\"/> sin hijo <is>",
+    "hallazgo": "477 celdas escritas como cadena en línea VACÍA sin el elemento <is> obligatorio del esquema (el generador asigna '' en vez de None). Es XML no conforme a ECMA-376: Excel lo tolera, pero parsers estrictos, importadores de Google Sheets y validadores XSD pueden avisar/reparar, y hace crecer el fichero sin motivo.",
+    "evidencia": "Recuento por fichero de '<c r=\"..\" ... t=\"inlineStr\" />': 07=157, 08=162, 09=157, 01=1, resto=0. Muestra real de 09/sheet3: '<c r=\"C5\" s=\"8\" t=\"inlineStr\" /><c r=\"D5\" s=\"8\" t=\"inlineStr\" /><c r=\"E5\" s=\"8\" t=\"inlineStr\" />'. openpyxl las relee como None.",
+    "propuesta_v2": "En los generadores, para crear una celda solo con estilo usar ws.cell(...).value = None (o no asignar value y aplicar solo _style), nunca ''. Añadir al gate: 0 coincidencias de la regex 't=\"inlineStr\"\\s*/>' en los 14 ficheros."
+   },
+   {
+    "id": "L1-15",
+    "severidad": "media",
+    "fichero": "08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx",
+    "ubicacion": "filas con customHeight=\"1\" ht=\"24\" y wrap_text=True (08!B7,B14,B15,B16,B17,B19; 09!Apertura B8; 09!Cierre B6,B11,B15; Instrucciones A6-A9,A11,A14)",
+    "hallazgo": "Combinación tóxica: wrap_text activado + altura de fila FIJA de 22/24 pt. El texto que ocupa 2 líneas se corta (2 líneas a 10 pt ≈ 26 pt > 24). En 01-07 no pasa porque no se fija altura y Excel autoajusta.",
+    "evidencia": "08!Apertura del Negocio B7='Encender climatización (HVAC) / calefacción según temporada' (59 chars, col B ancho 50, wrap=True, row height=24 → necesita ≈26 pt). 09!Cierre de Caja B6='Recuento de efectivo por denominación (ver tabla inferior)' (58 chars, height=24). 08/09 Instrucciones A6 (90 chars, ancho 80, height=22).",
+    "propuesta_v2": "O quitar customHeight en las filas con wrap (dejar autoajuste), o subir a 32 pt las filas de tarea y a 30 pt las de Instrucciones, o acortar los textos a ≤ ancho de columna. Verificar con un gate que calcule ceil(len/ancho)*fuente*1.32 ≤ row_height para toda celda con wrap_text y altura fija."
+   },
+   {
+    "id": "L1-16",
+    "severidad": "media",
+    "fichero": "los 11 .xlsx",
+    "ubicacion": "sheetView.showGridLines (= None → por defecto True) en las 33 hojas",
+    "hallazgo": "Las hojas se imprimen y se ven con la cuadrícula nativa de Excel encima del diseño de bordes propio (E0E0E0). En un entregable de pago con estilo de marca, esto es lo que separa un Excel 'de plantilla' de uno 'de producto'. La SPEC §1.1 habla de impresión pero no de esto.",
+    "evidencia": "Comprobación de las 33 hojas: showGridLines=None en todas (ninguna llamada a ws.sheet_view.showGridLines=False en los generadores). Cero formato condicional también (0 reglas en las 33 hojas).",
+    "propuesta_v2": "ws.sheet_view.showGridLines = False en TODAS las hojas de trabajo (dejar Instrucciones también sin cuadrícula) y ws.print_options.gridLines = False. Añadirlo como invariante en §1.1."
+   },
+   {
+    "id": "L1-17",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Cierre de Caja!B21:B35 (columna 'Cantidad' de billetes/monedas)",
+    "hallazgo": "La columna donde el usuario teclea CUÁNTOS billetes hay tiene formato 'General' y ninguna validación. Se puede escribir 2,5 billetes de 50 € o un texto, y C21 devolverá 125 € sin avisar. En una plantilla de arqueo esto es el error de entrada más probable.",
+    "evidencia": "openpyxl: B21 valor=0, number_format='General', fill=F5F5F5, sin DataValidation (el único DV de la hoja es la lista ✓,✗,— en D5:D16).",
+    "propuesta_v2": "number_format='0' + DataValidation(type='whole', operator='greaterThanOrEqual', formula1=0, showErrorMessage=True, errorTitle='Cantidad no válida') sobre B21:B36. Igual criterio para las columnas de unidades de la nueva 10-plan-produccion (Previsto/Producido/Vendido) y para Raciones en 11-control-encargos."
+   },
+   {
+    "id": "L1-18",
+    "severidad": "media",
+    "fichero": "los 11 .xlsx (docProps/core.xml)",
+    "ubicacion": "<dcterms:created>/<dcterms:modified>",
+    "hallazgo": "Además del creator='openpyxl' que la SPEC ya recoge, las fechas del documento son de marzo/abril de 2026. Si la v2.0 se publica en agosto de 2026 y se regeneran los ficheros, esas fechas se actualizarán solas; pero si algún fichero se toca solo con inject_cache.py (que reempaqueta el ZIP sin tocar core.xml) quedará con fecha antigua y el cliente verá 'Modificado: 20/03/2026' bajo el sello «Versión 2.0 · agosto 2026».",
+    "evidencia": "01: <dcterms:created>2026-03-20T22:40:13Z</dcterms:created><dcterms:modified>2026-03-20T22:40:13Z</dcterms:modified>; 08: 2026-04-05T14:07:31Z. docProps/app.xml declara <Application>Microsoft Excel</Application> (valor por defecto de openpyxl) — inexacto pero inocuo.",
+    "propuesta_v2": "Añadir a la lista de metadata de §1.1: wb.properties.created / modified = datetime(2026,8,18) explícito, y comprobarlo en el gate junto a creator/title/subject. Opcional: <Application>AI Chef Pro</Application> vía docProps/app.xml."
+   },
+   {
+    "id": "L1-19",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/07-plantilla-personalizable.xlsx",
+    "ubicacion": "Por Franja Horaria!D33/F33 (19), Por Zona!D31/F31 (17), Por Perfil!D30/F30 (16)",
+    "hallazgo": "Es la plantilla EN BLANCO (columna B totalmente vacía) y aun así declara «Tareas completadas: … de 19». El denominador cuenta filas de checkbox vacías, no tareas. Cualquier usuario que rellene 8 tareas leerá 'de 19' para siempre.",
+    "evidencia": "Por Franja Horaria: filas 6-10, 13-17, 20-24, 27-30 tienen A='☐' y C='General' pero B vacío (0 tareas reales); F33=19 literal; D33='=COUNTIF(F5:F31,\"✓\")'.",
+    "propuesta_v2": "En 07 el denominador DEBE ser dinámico sí o sí: =SUMPRODUCT(--(B6:B31<>\"\")). Es además el mejor banco de pruebas para validar la fórmula elegida en L1-10 antes de aplicarla al resto."
+   },
+   {
+    "id": "L1-20",
+    "severidad": "media",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Registro Mensual (0 DataValidation) e I5:I35 ('Responsable', number_format 'General', sin lista)",
+    "hallazgo": "La única hoja del kit pensada para uso mensual repetido no tiene ninguna validación: ni lista de responsables, ni control de que Descuadre sea numérico, ni fecha. La SPEC §1.2 añade la columna 'Z del TPV' y la fórmula de descuadre pero no menciona validaciones para esta hoja.",
+    "evidencia": "openpyxl: Registro Mensual DV=0. I5=None, number_format='General'; A5..A35 = 1..31 como int con formato 'General' bajo una cabecera A4='Fecha' (son números de día, no fechas — no es el bug K de datetime, pero la cabecera induce a error).",
+    "propuesta_v2": "Renombrar A4 a 'Día' (o formatear como fecha real con validación type='date'), añadir DV de lista en 'Responsable' alimentada por un rango de la hoja Instrucciones, y DV decimal en las columnas de importe. Rango de la lista definido con nombre para que no se rompa al insertar filas."
+   },
+   {
+    "id": "L1-21",
+    "severidad": "media",
+    "fichero": "08 y 09 vs 01-07/BONUS",
+    "ubicacion": "paleta, tipografía y decoración",
+    "hallazgo": "El kit tiene DOS sistemas de diseño. 01-07/BONUS: cabecera 2D2D2D, editables E8F5E9, cuerpo Calibri 11 pt, viñetas '▸', pie '— Kit de Tareas Recurrentes · … · AI Chef Pro'. 08/09: cabecera 1A1A1A + FFD700, sin verdes, cuerpo Calibri 10 pt, emojis 📋💡💰📊, pie '© AI Chef Pro'. La SPEC §1.3 exige a los ficheros NUEVOS el estilo de 01-07 pero no ordena migrar 08/09 a ese estilo pese a que va a reescribir el 08 entero.",
+    "evidencia": "Recuento de fuentes: 01→Calibri 11 pt ×160, 10 pt ×42; 08→Calibri 10 pt ×113, 11 pt ×17; 09→Calibri 10 pt ×336. Fills: ver L1-07. Emojis: 08!A5='📋 Instrucciones de Uso', A14='💡 Consejo…'; 09!A18='💰 Recuento de Efectivo por Denominación', A38='📊 Resumen de Cierre'.",
+    "propuesta_v2": "Extraer un módulo de estilo compartido (styles_kit.py: fuentes, fills, bordes, helpers de cabecera/pie/instrucciones) y regenerar 08, 09, 10, 11 y 12 con él. Quitar los emojis (la propia guía de marca AICP los prohíbe en componentes) y unificar el pie a '— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro'."
+   },
+   {
+    "id": "L1-22",
+    "severidad": "baja",
+    "fichero": "los 11 .xlsx",
+    "ubicacion": "sheetPr/tabColor rgb=\"00FFD700\" (y 00FF8C00, 008B4513, 00E91E63, …)",
+    "hallazgo": "Todos los colores de pestaña se escriben con canal alfa 00 (= totalmente transparente) en lugar de FF. Excel lo interpreta como opaco por compatibilidad, pero es ARGB incorrecto y algunos visores (y LibreOffice en ciertas versiones) pintan la pestaña gris.",
+    "evidencia": "openpyxl: 01!Instrucciones tabColor rgb='00FFD700'; 01!Apertura Obrador '00FF8C00'; 01!Cierre Obrador '008B4513'. Ocurre en las 33 hojas y también en los fills ('002D2D2D', '00E8F5E9'…) por la forma en que openpyxl normaliza cadenas de 6 dígitos.",
+    "propuesta_v2": "Pasar siempre 8 dígitos ARGB ('FFFFD700') a Color()/PatternFill(). Coste cero y elimina una clase entera de sorpresas de renderizado."
+   },
+   {
+    "id": "L1-23",
+    "severidad": "baja",
+    "fichero": "08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx",
+    "ubicacion": "Instrucciones — <mergeCell ref=\"A1\"/>",
+    "hallazgo": "Rango combinado de UNA sola celda. Es una construcción degenerada que Excel puede marcar para 'reparación' y que no aporta nada.",
+    "evidencia": "openpyxl 08!Instrucciones merged = ['A1'] (1 rango); idem 09!Instrucciones. Print_Area de esa hoja además es 'Instrucciones'!$A$1:$A$20 mientras el contenido acaba en A18.",
+    "propuesta_v2": "No llamar a merge_cells cuando el rango es de una celda; ajustar el print_area al contenido real (A1:A20 → A1:A22 con el nuevo pie de versión)."
+   },
+   {
+    "id": "L1-24",
+    "severidad": "baja",
+    "fichero": "01-07 y BONUS (xl/workbook.xml sin <definedNames>)",
+    "ubicacion": "ausencia de _xlnm.Print_Area",
+    "hallazgo": "Solo 08 y 09 definen área de impresión. En los otros 9, al imprimir se envía todo el rango usado (incluidas celdas de estilo vacías a la derecha), lo que suma páginas en blanco. La SPEC §1.1 detalla fitToWidth, márgenes y print_title_rows pero NO menciona print_area.",
+    "evidencia": "01: '<definedNames />' vacío. 08: '<definedName localSheetId=\"1\" name=\"_xlnm.Print_Area\">\\'Apertura del Negocio\\'!$A$1:$H$24</definedName>'.",
+    "propuesta_v2": "Añadir a §1.1: ws.print_area = 'A1:<última col>:<última fila útil>' en las 40+ hojas de la v2.0, y verificarlo en el gate leyendo wb.defined_names."
+   },
+   {
+    "id": "L1-25",
+    "severidad": "baja",
+    "fichero": "los 11 .xlsx",
+    "ubicacion": "<pageMargins bottom=\"1\" footer=\"0.5\" header=\"0.5\" left=\"0.75\" right=\"0.75\" top=\"1\"/> y ausencia de <headerFooter>",
+    "hallazgo": "Márgenes por defecto en PULGADAS (1,9 cm laterales / 2,54 cm arriba-abajo), no los 1,5 cm que pide la SPEC; y CERO pies de página en las 33 hojas, por lo que 'Página &P de &N' no existe hoy en ninguna parte.",
+    "evidencia": "unzip de sheet2.xml de 01, 08 y 09 → misma línea de pageMargins; grep de '<headerFooter' o '<oddFooter>' → 0 coincidencias en los 11 ficheros.",
+    "propuesta_v2": "ws.page_margins = PageMargins(left=0.59, right=0.59, top=0.59, bottom=0.59, header=0.31, footer=0.31) (0,59 in ≈ 1,5 cm) y ws.oddFooter.center.text = 'AI Chef Pro · aichef.pro · Página &P de &N'. Precisar en §1.1 que 1,5 cm = 0.59 pulgadas, porque openpyxl NO acepta centímetros y es el error clásico."
+   },
+   {
+    "id": "L1-26",
+    "severidad": "baja",
+    "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+    "ubicacion": "Calendario Anual!A4:A20, B13, F16, C20",
+    "hallazgo": "Varios defectos menores acumulados: la columna '#' guarda '1'..'17' como TEXTO (no int) → ordenar por esa columna da 1,10,11,…; B13='25 Nov' fija Black Friday en una fecha que no le corresponde (es el viernes siguiente al 4.º jueves de noviembre; en 2026 cae el 27); F16 en MAYÚSCULAS SOSTENIDAS ('AÑADE TUS FECHAS LOCALES') rompe el tono del resto; C20 'Bautizos/Comuniones/Aniversarios' (32 chars) se recorta en una columna de ancho 25 con la celda D ocupada.",
+    "evidencia": "openpyxl: A4='1' (str) … A20='17' (str) frente a 09!Registro Mensual A5=1 (int). B13='25 Nov' vs B4='6 Enero' (formato de fecha inconsistente). Detección de truncamiento: ('Calendario Anual','C20',32 chars, ancho 25.0).",
+    "propuesta_v2": "Enteros reales en '#'; 'Último viernes de noviembre' en Black Friday (y homogeneizar '25 Nov'→'25 de noviembre'); F16 en tono normal ('Añade aquí las fechas locales de tu zona'); ampliar C a 32 o activar wrap. Aprovechar para que BONUS-02 herede la cabecera en fila 4 (hoy está en la 3) como el resto del kit."
+   },
+   {
+    "id": "L1-27",
+    "severidad": "baja",
+    "fichero": "los 11 .xlsx",
+    "ubicacion": "verificación de texto ejecutada celda a celda con openpyxl",
+    "hallazgo": "CONFIRMADO LIMPIO (no es un defecto, es el resultado del test que pedía la SPEC §3.2): 0 caracteres CJK/cirílico/hangul/árabe, 0 palabras sin tilde de una lista de 60 candidatas ('producción', 'día', 'cámara', 'alérgenos', 'número', 'según', 'máquina'…), 0 espacios finales, 0 NBSP, 0 valores datetime (bug K ausente), fuente Calibri en el 100 % de las celdas. Los únicos 'dobles espacios' son separadores deliberados en A2 ('Fecha: ___ Turno: ☐ Mañana  ☐ Tarde…') y en las líneas de firma.",
+    "evidencia": "Script sobre las 33 hojas: NONLAT regex [Ѐ-ӿ一-鿿぀-ヿ가-힯؀-ۿ֐-׿] → 0 coincidencias; regex de 60 formas sin tilde → 'TOTAL sin tilde: 0'; isinstance(value, datetime/date/time) → 0.",
+    "propuesta_v2": "Mantener este script como gate reutilizable en scripts/productos-digitales/ (p. ej. audit_xlsx.py) y ejecutarlo sobre los 14 ficheros de la v2.0 — el riesgo está en los 3 NUEVOS, donde entran nombres franceses (éclair, macaron, brioche, quiche lorraine) y símbolos ●/○ que hay que escribir en UTF-8 y no como '?'."
+   },
+   {
+    "id": "L1-28",
+    "severidad": "baja",
+    "fichero": "scripts/generate-tareas-pasteleria.py",
+    "ubicacion": "líneas 18-22 (OUTPUT_DIR) y 1015 (print '9 archivos generados')",
+    "hallazgo": "Confirma §0 #8 y añade matiz: además de la ruta muerta 'public/dl', el script anuncia '9 archivos generados' cuando genera 7 checklists + 2 bonus, y NO genera 08/09 (los hace el script compartido). La SPEC §2 le atribuye '01-09 + BONUS' sin decir que hay que MIGRAR el código de 08/09 desde generate-checklists-negocio.py.",
+    "evidencia": "OUTPUT_DIR = join(dirname(dirname(abspath(__file__))), 'public','dl','kit-tareas-pasteleria') → /Users/johnguerrero/chefpro-modernize/public/dl/… (ruta muerta post-cutover). wb.save() en líneas 284, 380, 487, 585, 671, 759, 866, 907, 997 = 9 ficheros: 01-07 + BONUS-01/02. Ningún save de 08 ni 09.",
+    "propuesta_v2": "En §2, explicitar: (a) OUTPUT_DIR → 'astro-site','public','dl','kit-tareas-pasteleria'; (b) PORTAR las funciones de 08/09 desde generate-checklists-negocio.py a generate-tareas-pasteleria.py con el contenido nuevo de pastelería; (c) borrar la entrada del kit en KITS del script compartido (L1-04); (d) corregir el print final a '11 archivos'."
+   }
+  ],
+  "mejoras_v2": [
+   "Extraer un módulo compartido scripts/productos-digitales/styles_kit.py con la paleta (ARGB de 8 dígitos), fuentes, bordes, helper de cabecera de tabla, helper de fila 'Tareas completadas' y helper setup_print(ws, orientation) que SIEMPRE haga sheet_properties.pageSetUpPr=PageSetupProperties(fitToPage=True) + page_setup + print_area + print_title_rows + freeze_panes + showGridLines=False + oddFooter. Es la única forma de que los 14 ficheros salgan iguales y de que el bug de fitToPage no se repita.",
+   "Convertir el script de auditoría de esta sesión en scripts/productos-digitales/audit_xlsx.py (gate reutilizable) con estas comprobaciones automáticas, todas ejecutadas hoy: (1) toda fórmula tiene cache en data_only; (2) COUNTIF/SUM cubren todas las filas de dato y ninguna de sección; (3) el denominador 'de N' coincide con el nº real de filas; (4) fitToWidth ⇒ fitToPage; (5) 0 celdas t=\"inlineStr\" vacías; (6) 0 caracteres no latinos y 0 tildes ausentes; (7) ninguna celda con wrap_text y altura fija se recorta; (8) cada fichero tiene ≥1 celda E8F5E9; (9) metadata creator/title/subject/created; (10) misma formula1 en todas las DataValidation del kit.",
+   "Denominador dinámico en TODAS las filas de recuento: =COUNTIF(rango,\"✓\")&\" de \"&SUMPRODUCT(--(B6:Bn<>\"\")) — verificado que pycel evalúa SUMPRODUCT-equivalentes y que COUNTA NO es opción (el propio inject_cache.py lo declara no soportado).",
+   "Añadir 5 filas de holgura FORMATEADAS (verde editable + borde + DV) por bloque de tareas, dentro de los rangos de COUNTIF/SUM, para que la promesa de las Instrucciones ('añade tus tareas en las filas vacías') sea real.",
+   "Bloque de arqueo de 09 rehecho: fila '0,02 €', etiquetas fuera de la columna de ancho 5, cantidades con number_format '0' y DataValidation whole ≥0, entradas en verde y resultados en gris/negrita, formato condicional en DESCUADRE (≠0 → ámbar; |x|>5 € → rojo).",
+   "Registro Mensual de 09: columna 'Z del TPV' + G=IFERROR(F−Z,0) por fila (SPEC), y ADEMÁS quitar el SUM sin sentido de 'Fondo Apertura' (usar AVERAGE o dejar vacío), renombrar 'Fecha'→'Día', y añadir la lista de responsables como DV.",
+   "Para las 3 plantillas nuevas: usar rangos con NOMBRE (defined names) en los SUMIF de 10-plan-produccion (p. ej. Diario_Partida, Diario_Producido) en lugar de Diario!$C$2:$C$40 — así insertar filas no rompe el resumen. Verificado que pycel evalúa SUMIF cross-sheet correctamente (SUMIF(Diario!$C$2:$C$40,$A2,Diario!$E$2:$E$40) → 100.0), pero conviene comprobar que también resuelve nombres definidos antes de comprometerse.",
+   "En 12-control-alergenos: el COUNTIF(columna,\"●\") funciona con pycel (probado: 2.0/2.0/1.0), pero añadir una segunda fila con COUNTIF(...,\"○\") y una columna 'Total alérgenos' por producto (=COUNTIF(C2:P2,\"●\")) para que la matriz sea útil de un vistazo. Bloquear (protect sheet, unlocked solo en las verdes) esa hoja NO: el cliente debe poder editarla; en su lugar, DataValidation lista '●,○' en las 14 columnas para impedir que se escriba 'X' o 'sí'.",
+   "Etiquetas de vitrina (12, hoja 4) y Ficha de Encargo (11, hoja 1): son las dos únicas hojas realmente 'de imprimir tal cual' — fijar print_area exacto, scale/fitToPage a 1 página, showGridLines=False, y comprobar que ninguna celda con wrap se recorta (es donde este kit ya falla, ver L1-01 y L1-15).",
+   "Actualizar wb.properties.created/modified a la fecha de la v2.0 además del creator/title, para que la ficha del fichero no delate marzo de 2026 bajo el sello «Versión 2.0 · agosto 2026».",
+   "Ejecutar inject_cache.py como ÚLTIMO paso y volver a correr audit_xlsx.py DESPUÉS: inject_cache reempaqueta el ZIP con regex, así que hay que reverificar validaciones, print areas, formato condicional y merges tras la inyección (hoy sobreviven — comprobado sobre copias de los 11 con 80/80 fórmulas cacheadas y 0 fallos —, pero con formato condicional nuevo no está probado).",
+   "Quitar emojis de 08/09 (📋 💡 💰 📊) y unificar el pie de página y las viñetas '▸' en los 14 ficheros."
+  ],
+  "veredicto_spec": "La SPEC §1 es correcta en dirección pero tiene tres agujeros y dos imprecisiones. AGUJEROS: (1) §1.1 no ordena nada sobre print_area, showGridLines=False, ni convierte los '1,5 cm' de márgenes a pulgadas (openpyxl solo acepta pulgadas: 0.59), y no cubre el caso de 08/09 donde el page_setup YA existe pero es inerte por falta de pageSetUpPr.fitToPage — es el bug técnico de impresión real y hay que nombrarlo explícitamente porque el generador compartido lo replica en 15 kits. (2) §1 no dice nada del sistema de estilo doble: 08/09 no tienen NI UNA celda verde (E8F5E9=0) mientras la landing línea 251 promete que 'las celdas editables están marcadas en verde', y §1.3 solo exige verde a los ficheros nuevos → tras la v2.0 seguirán existiendo dos productos dentro del mismo kit. (3) §2 atribuye la generación de '01-09' a generate-tareas-pasteleria.py sin decir que 08/09 los produce hoy generate-checklists-negocio.py y sin ordenar borrar la entrada 'kit-tareas-pasteleria' de sus KITS (líneas 94-99): si no se hace, la próxima ejecución de ese script para cualquier otro kit revierte silenciosamente el 08/09 de pastelería a la versión genérica de restaurante que la v2.0 acaba de eliminar. IMPRECISIONES DE §0 QUE ARRASTRA §1: '#2 fórmulas sin cache en los 11' es falso — hay 80 fórmulas en 9 ficheros (08 y BONUS-02 tienen cero) y todos llevan fullCalcOnLoad=\"1\", así que en Excel/LibreOffice/Sheets SÍ se calculan; el síntoma se limita a previsualizadores que no recalculan, y el changelog debe redactarse así o promete arreglar algo que no estaba roto en Excel. '#5 sin configuración de impresión en los 11' es falso para 08 y 09 (ver arriba). SOBRA en §1.1 el énfasis en ortografía y caracteres no latinos para los ficheros EXISTENTES: verificado celda a celda con openpyxl que hay 0 caracteres CJK/cirílico/hangul/árabe, 0 tildes ausentes, 0 datetime (bug K ausente) y Calibri al 100 % — ese esfuerzo debe redirigirse íntegramente a los 3 ficheros nuevos, donde entran ●/○, nombres franceses y los 14 alérgenos. FALTA además en §1.1 la decisión sobre la doble columna de check (A '☐' impresa + F 'Hecha' contada) y sobre la validación divergente ('✓,—' vs '✓,✗,—'): §1.2 propone para el 08 reescrito la lista de dos opciones, lo que DEGRADA el 08 actual y consolida la divergencia en vez de resolverla. Por último, §1.3 es técnicamente viable tal cual: probado con un mini-xlsx en el scratchpad que pycel evalúa sin fallos SUMIF cross-sheet, COUNTIF con '●' y con '✓', IFERROR de división, IF con salida de texto y SUM con filas de holgura (59/59 cacheadas, 0 fallos), y que inject_cache.py inyecta las 80 fórmulas de los 11 ficheros LIVE con 0 fallos — la única función a evitar es COUNTA, que es justamente la tentación si se hace dinámico el 'de N'."
+ }
+}

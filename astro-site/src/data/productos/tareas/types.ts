@@ -216,4 +216,9 @@ export interface KitTareasData {
   // ---- Footer + gate "¿Ya compraste?" ----
   footerLinks: KitTareasFooterLink[];
   alreadyBought: { product: string; label: string };
+
+  /** Opcional (2026-08-18). Nota de vigencia bajo el precio del hero, p. ej.
+   *  «Producto actualizado · Versión 2.0 · agosto 2026». Solo la pintan los kits que
+   *  la definen; el resto no cambia. */
+  updateNote?: string;
 }

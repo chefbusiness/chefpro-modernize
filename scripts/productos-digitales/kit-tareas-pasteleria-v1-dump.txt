@@ -1,0 +1,922 @@
+
+
+######## 01-apertura-cierre.xlsx ########
+
+--- [Instrucciones] ---
+B2=01 — Apertura y Cierre · Pastelería / Obrador
+B4=Cómo usar esta plantilla:
+B5=▸ Imprime el checklist del turno correspondiente cada día
+B6=▸ El responsable de turno marca cada tarea al completarla
+B7=▸ Al finalizar el turno, firma y entrega al siguiente responsable
+B9=Personalización:
+B10=▸ Las celdas verdes son editables — ajusta responsables y horarios
+B11=▸ Añade tareas específicas de tu obrador en las filas vacías del final
+B12=▸ Borra las tareas que no apliquen a tu negocio
+
+--- [Apertura Obrador] ---
+A1=Apertura Obrador / Zona de Producción
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Encendido de Equipos
+A6=☐ | B6=Encender hornos (precalentar a temperatura según producción del día) | C6=Obrador | D6=Pastelero | E6=05:00
+A7=☐ | B7=Encender amasadora / batidora planetaria | C7=Obrador | D7=Pastelero | E7=05:00
+A8=☐ | B8=Encender cámara de fermentación controlada (verificar Tª y humedad) | C8=Obrador | D8=Pastelero | E8=05:00
+A9=☐ | B9=Encender temperadora de chocolate (si aplica) | C9=Obrador | D9=Pastelero | E9=05:15
+A10=☐ | B10=Verificar temperatura de cámaras frigoríficas (registrar) | C10=Obrador | D10=Pastelero | E10=05:00
+A11=☐ | B11=Encender laminadora de masa (si aplica) | C11=Obrador | D11=Pastelero | E11=05:15
+A12=☐ | B12=Comprobar stock de gas / electricidad (sin cortes) | C12=Obrador | D12=Pastelero | E12=05:00
+A14=  Preparación del Obrador
+A15=☐ | B15=Sacar masas de cámara de fermentación (revisar estado) | C15=Obrador | D15=Pastelero | E15=05:00
+A16=☐ | B16=Sacar mantequilla/margarina para templar (20 min antes de laminar) | C16=Obrador | D16=Pastelero | E16=05:00
+A17=☐ | B17=Preparar mise en place de ingredientes del día | C17=Obrador | D17=Ayudante | E17=05:30
+A18=☐ | B18=Pesar ingredientes para las primeras masas del día | C18=Obrador | D18=Pastelero | E18=05:30
+A19=☐ | B19=Revisar orden de producción del día (pedidos especiales) | C19=Obrador | D19=Jefe Pastelero | E19=05:00
+A20=☐ | B20=Preparar moldes, bandejas y papeles de horno | C20=Obrador | D20=Ayudante | E20=05:30
+A21=☐ | B21=Sanitizar superficies de trabajo y mesas de mármol | C21=Obrador | D21=Ayudante | E21=05:00
+A22=☐ | B22=Verificar stock de materias primas críticas (harina, azúcar, huevos, nata) | C22=Obrador | D22=Jefe Pastelero | E22=05:15
+A24=  Apertura Vitrina / Despacho
+A25=☐ | B25=Encender iluminación y climatización de vitrinas | C25=Vitrina | D25=Dependiente | E25=07:30
+A26=☐ | B26=Colocar productos del día anterior (verificar caducidad) | C26=Vitrina | D26=Dependiente | E26=07:30
+A27=☐ | B27=Preparar etiquetas de precio y alérgenos | C27=Vitrina | D27=Dependiente | E27=07:45
+A28=☐ | B28=Montar bandeja de degustación (si aplica) | C28=Vitrina | D28=Dependiente | E28=07:45
+A29=☐ | B29=Encender caja registradora / TPV | C29=Vitrina | D29=Dependiente | E29=07:50
+A30=☐ | B30=Verificar stock de bolsas, cajas y packaging | C30=Vitrina | D30=Dependiente | E30=07:45
+A31=☐ | B31=Limpiar cristales de vitrina y mostrador | C31=Vitrina | D31=Dependiente | E31=07:30
+A34=Tareas completadas: | D34==COUNTIF(F5:F32,"✓") | E34=de | F34=22
+A36=Verificado por: | E36=Firma:
+A38=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Cierre Obrador] ---
+A1=Cierre Obrador / Zona de Producción
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Cierre de Producción
+A6=☐ | B6=Guardar masas en cámara de fermentación (etiquetar con fecha y hora) | C6=Obrador | D6=Pastelero | E6=18:00
+A7=☐ | B7=Guardar pre-elaboraciones en cámara (film, etiquetar, FIFO) | C7=Obrador | D7=Pastelero | E7=18:00
+A8=☐ | B8=Limpiar amasadora, batidora y utensilios | C8=Obrador | D8=Ayudante | E8=18:00
+A9=☐ | B9=Limpiar mesas de trabajo y superficies de mármol | C9=Obrador | D9=Ayudante | E9=18:15
+A10=☐ | B10=Apagar hornos (o programar para madrugada si aplica) | C10=Obrador | D10=Pastelero | E10=18:30
+A11=☐ | B11=Limpiar interior de hornos (retirar restos, raspar solera) | C11=Obrador | D11=Ayudante | E11=18:15
+A12=☐ | B12=Apagar laminadora, temperadora y equipos auxiliares | C12=Obrador | D12=Pastelero | E12=18:30
+A13=☐ | B13=Verificar temperaturas de cámaras (registrar en hoja de control) | C13=Obrador | D13=Pastelero | E13=18:30
+A14=☐ | B14=Recoger y almacenar ingredientes (cerrar sacos, tapar envases) | C14=Obrador | D14=Ayudante | E14=18:15
+A16=  Cierre Vitrina / Despacho
+A17=☐ | B17=Retirar productos de vitrina (valorar si se pueden vender mañana) | C17=Vitrina | D17=Dependiente | E17=20:00
+A18=☐ | B18=Guardar productos recuperables en cámara (etiquetar) | C18=Vitrina | D18=Dependiente | E18=20:00
+A19=☐ | B19=Registrar mermas del día (productos descartados) | C19=Vitrina | D19=Dependiente | E19=20:00
+A20=☐ | B20=Limpiar vitrinas (interior y cristales) | C20=Vitrina | D20=Dependiente | E20=20:15
+A21=☐ | B21=Apagar iluminación de vitrinas | C21=Vitrina | D21=Dependiente | E21=20:15
+A22=☐ | B22=Cuadrar caja / cierre de TPV | C22=Vitrina | D22=Dependiente | E22=20:15
+A23=☐ | B23=Barrer y fregar suelo de zona de venta | C23=Vitrina | D23=Dependiente | E23=20:30
+A25=  Cierre General
+A26=☐ | B26=Sacar basura y residuos (separar reciclaje) | C26=General | D26=Ayudante | E26=18:30
+A27=☐ | B27=Verificar que no queda producto fuera de cámara | C27=General | D27=Jefe Pastelero | E27=18:30
+A28=☐ | B28=Cerrar llaves de gas (si aplica) | C28=General | D28=Jefe Pastelero | E28=18:30
+A29=☐ | B29=Activar alarma y cerrar con llave | C29=General | D29=Jefe Pastelero | E29=20:30
+A32=Tareas completadas: | D32==COUNTIF(F5:F30,"✓") | E32=de | F32=20
+A34=Verificado por: | E34=Firma:
+A36=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 02-partidas-cocina.xlsx ########
+
+--- [Instrucciones] ---
+B2=02 — Partidas de Producción · Pastelería / Obrador
+B4=Tareas organizadas por área de producción.
+B5=▸ Cada pestaña cubre un área específica del obrador
+B6=▸ Las tareas están ordenadas cronológicamente dentro del turno
+B7=▸ Personaliza añadiendo las recetas y elaboraciones de tu obrador
+
+--- [Masas y Fermentación] ---
+A1=Partida de Masas y Fermentación
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Masas de Bollería (Croissant, Brioche, Danesa)
+A6=☐ | B6=Verificar estado de masa madre / prefermento (olor, volumen, textura) | C6=Obrador | D6=Pastelero | E6=05:00
+A7=☐ | B7=Refrescar masa madre si es necesario (alimentar con harina y agua) | C7=Obrador | D7=Pastelero | E7=05:00
+A8=☐ | B8=Pesar ingredientes para masa de croissant (harina, mantequilla, levadura) | C8=Obrador | D8=Pastelero | E8=05:15
+A9=☐ | B9=Amasar en planetaria (1ª velocidad 4 min, 2ª velocidad 8-10 min) | C9=Obrador | D9=Pastelero | E9=05:30
+A10=☐ | B10=Control de temperatura de masa al salir (24-26 °C ideal) | C10=Obrador | D10=Pastelero | E10=05:45
+A11=☐ | B11=Reposo en bloque en cámara (mínimo 1h a 4 °C) | C11=Obrador | D11=Pastelero | E11=05:45
+A12=☐ | B12=Laminar con mantequilla (3 pliegues simples o 2 dobles) | C12=Obrador | D12=Pastelero | E12=07:00
+A13=☐ | B13=Cortar y dar forma (croissant, pain au chocolat, trenza) | C13=Obrador | D13=Pastelero | E13=07:30
+A14=☐ | B14=Fermentar en cámara controlada (28 °C, 75% humedad, 1.5-2h) | C14=Obrador | D14=Pastelero | E14=08:00
+A15=☐ | B15=Pincelar con huevo antes de hornear | C15=Obrador | D15=Ayudante | E15=09:30
+A16=☐ | B16=Hornear (190-200 °C, 14-18 min según tamaño) | C16=Obrador | D16=Pastelero | E16=09:45
+A18=  Masas de Pan Artesano
+A19=☐ | B19=Verificar fermentación nocturna de masas (volumen, alveolos) | C19=Obrador | D19=Pastelero | E19=05:00
+A20=☐ | B20=Dividir y pesar porciones según formato (barra, hogaza, chapata) | C20=Obrador | D20=Pastelero | E20=05:15
+A21=☐ | B21=Bolear y dar forma (tensión superficial correcta) | C21=Obrador | D21=Pastelero | E21=05:30
+A22=☐ | B22=Segunda fermentación en banastones / telas (45 min - 1h) | C22=Obrador | D22=Pastelero | E22=05:45
+A23=☐ | B23=Greñar / cortar con cuchilla antes de hornear | C23=Obrador | D23=Pastelero | E23=06:30
+A24=☐ | B24=Hornear con vapor (230-250 °C, vapor primeros 10 min) | C24=Obrador | D24=Pastelero | E24=06:45
+A25=☐ | B25=Enfriar en rejillas (no apilar, mínimo 30 min) | C25=Obrador | D25=Ayudante | E25=07:30
+A27=  Masas Quebradas y Bases
+A28=☐ | B28=Preparar masa sablée (mantequilla pomada + azúcar + harina) | C28=Obrador | D28=Pastelero | E28=06:00
+A29=☐ | B29=Preparar masa brisée para quiches/tartas saladas | C29=Obrador | D29=Pastelero | E29=06:00
+A30=☐ | B30=Estirar y forrar moldes de tarta | C30=Obrador | D30=Ayudante | E30=06:30
+A31=☐ | B31=Hornear en blanco con pesos (180 °C, 15 min) | C31=Obrador | D31=Pastelero | E31=07:00
+A32=☐ | B32=Retirar pesos y dorar 5 min más | C32=Obrador | D32=Pastelero | E32=07:20
+A33=☐ | B33=Enfriar bases antes de rellenar | C33=Obrador | D33=Ayudante | E33=07:30
+A36=Tareas completadas: | D36==COUNTIF(F5:F34,"✓") | E36=de | F36=24
+A38=Verificado por: | E38=Firma:
+A40=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Cremas y Rellenos] ---
+A1=Partida de Cremas, Rellenos y Coberturas
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Cremas Base
+A6=☐ | B6=Preparar crema pastelera (leche, yemas, azúcar, maicena, vainilla) | C6=Obrador | D6=Pastelero | E6=06:00
+A7=☐ | B7=Enfriar rápidamente en baño maría inverso (abatir a <4 °C en 2h) | C7=Obrador | D7=Pastelero | E7=06:30
+A8=☐ | B8=Preparar crema de mantequilla (merengue suizo o italiana) | C8=Obrador | D8=Pastelero | E8=06:30
+A9=☐ | B9=Preparar ganache de chocolate (55% para relleno, 70% para cobertura) | C9=Obrador | D9=Pastelero | E9=07:00
+A10=☐ | B10=Preparar crema diplomática (pastelera + nata montada) | C10=Obrador | D10=Pastelero | E10=07:30
+A11=☐ | B11=Preparar lemon curd / curd de frutas de temporada | C11=Obrador | D11=Pastelero | E11=07:00
+A12=☐ | B12=Etiquetar todas las cremas con fecha y hora de elaboración | C12=Obrador | D12=Ayudante | E12=08:00
+A14=  Mousses y Rellenos
+A15=☐ | B15=Preparar mousse de chocolate (templar chocolate + merengue + nata) | C15=Obrador | D15=Pastelero | E15=08:00
+A16=☐ | B16=Preparar mousse de frutas (puré + gelatina + merengue + nata) | C16=Obrador | D16=Pastelero | E16=08:00
+A17=☐ | B17=Preparar compota / confit de frutas para rellenos | C17=Obrador | D17=Ayudante | E17=07:30
+A18=☐ | B18=Preparar pralinés y praliné de frutos secos | C18=Obrador | D18=Pastelero | E18=08:30
+A19=☐ | B19=Montar entremet en aros (capas de mousse + inserto + bizcocho) | C19=Obrador | D19=Pastelero | E19=09:00
+A20=☐ | B20=Congelar entremets montados (mínimo 4h antes de glasear) | C20=Obrador | D20=Pastelero | E20=09:30
+A22=  Coberturas y Acabados
+A23=☐ | B23=Preparar glasé espejo (gelatina + glucosa + chocolate blanco + colorante) | C23=Obrador | D23=Pastelero | E23=10:00
+A24=☐ | B24=Temperar chocolate de cobertura (curva: 45°→27°→31° negro / 29° leche) | C24=Obrador | D24=Pastelero | E24=10:00
+A25=☐ | B25=Preparar fondant para glaseado de bollería | C25=Obrador | D25=Ayudante | E25=09:00
+A26=☐ | B26=Preparar merengue italiano para decoración (almíbar 121 °C + claras) | C26=Obrador | D26=Pastelero | E26=10:30
+A27=☐ | B27=Preparar caramelo para decoraciones (160-170 °C) | C27=Obrador | D27=Pastelero | E27=11:00
+A30=Tareas completadas: | D30==COUNTIF(F5:F28,"✓") | E30=de | F30=18
+A32=Verificado por: | E32=Firma:
+A34=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Decoración y Acabado] ---
+A1=Partida de Decoración y Acabado Final
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Decoración de Tartas y Entremets
+A6=☐ | B6=Desmoldar entremets congelados | C6=Obrador | D6=Pastelero | E6=10:00
+A7=☐ | B7=Glasear con glasé espejo a 35 °C (sobre rejilla) | C7=Obrador | D7=Pastelero | E7=10:00
+A8=☐ | B8=Decorar con frutas frescas, flores comestibles, láminas de chocolate | C8=Obrador | D8=Pastelero | E8=10:30
+A9=☐ | B9=Colocar etiquetas de chocolate / logotipos | C9=Obrador | D9=Pastelero | E9=10:45
+A10=☐ | B10=Montar tartas por encargo (según ficha de pedido) | C10=Obrador | D10=Pastelero | E10=11:00
+A11=☐ | B11=Fotografiar piezas especiales para RRSS (si aplica) | C11=Obrador | D11=Dependiente | E11=11:00
+A13=  Montaje de Vitrina
+A14=☐ | B14=Seleccionar piezas para vitrina (variedad, colores, tamaños) | C14=Vitrina | D14=Jefe Pastelero | E14=08:00
+A15=☐ | B15=Montar vitrina de bollería (croissants, pain au chocolat, napolitanas) | C15=Vitrina | D15=Dependiente | E15=08:00
+A16=☐ | B16=Montar vitrina de pastelería (tartas individuales, entremets, macarons) | C16=Vitrina | D16=Dependiente | E16=08:30
+A17=☐ | B17=Montar vitrina de pan (si aplica) | C17=Vitrina | D17=Dependiente | E17=08:00
+A18=☐ | B18=Colocar etiquetas de alérgenos e ingredientes | C18=Vitrina | D18=Dependiente | E18=08:30
+A19=☐ | B19=Actualizar pizarra / carta del día | C19=Vitrina | D19=Dependiente | E19=08:30
+A20=☐ | B20=Reponer vitrina cada 2 horas durante servicio | C20=Vitrina | D20=Dependiente | E20=Continuo
+A23=Tareas completadas: | D23==COUNTIF(F5:F21,"✓") | E23=de | F23=13
+A25=Verificado por: | E25=Firma:
+A27=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 03-tareas-manager.xlsx ########
+
+--- [Instrucciones] ---
+B2=03 — Tareas del Manager · Pastelería / Obrador
+B4=Checklists para el/la responsable de la pastelería.
+B5=▸ Diario: lo que hay que revisar cada día
+B6=▸ Semanal: tareas organizadas por día de la semana
+B7=▸ Mensual: revisiones periódicas
+B8=▸ Handover: traspaso de turno (si hay turnos)
+
+--- [Diario Manager] ---
+A1=Checklist Diario del Manager / Responsable
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Primera Hora (antes de producción)
+A6=☐ | B6=Revisar pedidos especiales del día (tartas encargo, catering) | C6=Admin | D6=Manager | E6=05:00
+A7=☐ | B7=Verificar asistencia del equipo y cubrir bajas | C7=Admin | D7=Manager | E7=05:00
+A8=☐ | B8=Revisar stock de materias primas críticas (harina, mantequilla, huevos, nata, chocolate) | C8=Admin | D8=Manager | E8=05:15
+A9=☐ | B9=Confirmar entregas de proveedores del día | C9=Admin | D9=Manager | E9=05:15
+A10=☐ | B10=Revisar producción planificada vs. capacidad del equipo | C10=Admin | D10=Manager | E10=05:30
+A12=  Durante la Jornada
+A13=☐ | B13=Supervisar calidad de producción (revisar piezas acabadas) | C13=Admin | D13=Manager | E13=10:00
+A14=☐ | B14=Control de temperaturas de cámaras y vitrinas (registrar) | C14=Admin | D14=Manager | E14=10:00
+A15=☐ | B15=Revisar ventas vs. producción (ajustar si sobra o falta producto) | C15=Admin | D15=Manager | E15=12:00
+A16=☐ | B16=Gestionar pedidos de clientes (tartas personalizadas, eventos) | C16=Admin | D16=Manager | E16=Continuo
+A17=☐ | B17=Resolver incidencias (equipo averiado, falta stock, personal) | C17=Admin | D17=Manager | E17=Continuo
+A18=☐ | B18=Supervisar limpieza y orden del obrador | C18=Admin | D18=Manager | E18=14:00
+A20=  Cierre de Día
+A21=☐ | B21=Revisar mermas del día (registrar producto descartado) | C21=Admin | D21=Manager | E21=18:00
+A22=☐ | B22=Planificar producción del día siguiente | C22=Admin | D22=Manager | E22=18:00
+A23=☐ | B23=Hacer pedidos a proveedores para mañana | C23=Admin | D23=Manager | E23=18:00
+A24=☐ | B24=Revisar pedidos especiales de los próximos 3 días | C24=Admin | D24=Manager | E24=18:15
+A25=☐ | B25=Verificar cierre correcto de obrador y despacho | C25=Admin | D25=Manager | E25=18:30
+A28=Tareas completadas: | D28==COUNTIF(F5:F26,"✓") | E28=de | F28=16
+A30=Verificado por: | E30=Firma:
+A32=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Semanal Manager] ---
+A1=Checklist Semanal del Manager
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Lunes — Planificación
+A6=☐ | B6=Planificar producción semanal (cantidades por producto por día) | C6=Admin | D6=Manager | E6=05:00
+A7=☐ | B7=Revisar pedidos especiales de la semana (tartas, eventos) | C7=Admin | D7=Manager | E7=05:30
+A8=☐ | B8=Verificar stock completo de materias primas | C8=Admin | D8=Manager | E8=06:00
+A9=☐ | B9=Hacer pedidos semanales a proveedores principales | C9=Admin | D9=Manager | E9=07:00
+A11=  Martes — Equipo
+A12=☐ | B12=Revisar cuadrante de turnos de la semana | C12=Admin | D12=Manager | E12=06:00
+A13=☐ | B13=Reunión breve con equipo (objetivos, novedades, feedback) | C13=Admin | D13=Manager | E13=06:30
+A14=☐ | B14=Revisar formación pendiente de nuevos empleados | C14=Admin | D14=Manager | E14=07:00
+A16=  Miércoles — Calidad
+A17=☐ | B17=Auditoría de calidad: revisar 5 piezas aleatorias de vitrina | C17=Admin | D17=Manager | E17=10:00
+A18=☐ | B18=Revisar registros de temperatura de cámaras (últimos 3 días) | C18=Admin | D18=Manager | E18=10:30
+A19=☐ | B19=Verificar etiquetado de alérgenos actualizado | C19=Admin | D19=Manager | E19=11:00
+A20=☐ | B20=Comprobar FIFO en cámaras y almacén | C20=Admin | D20=Manager | E20=11:30
+A22=  Jueves — Proveedores y Compras
+A23=☐ | B23=Comparar precios de ingredientes clave (harina, mantequilla, chocolate) | C23=Admin | D23=Manager | E23=07:00
+A24=☐ | B24=Negociar condiciones con proveedores si hay desviaciones | C24=Admin | D24=Manager | E24=08:00
+A25=☐ | B25=Verificar recepción de mercancía (pesos, calidad, caducidad) | C25=Admin | D25=Manager | E25=Recepción
+A27=  Viernes — Preparación Fin de Semana
+A28=☐ | B28=Planificar producción extra de fin de semana (30-50% más) | C28=Admin | D28=Manager | E28=06:00
+A29=☐ | B29=Verificar stock para producción del fin de semana | C29=Admin | D29=Manager | E29=06:30
+A30=☐ | B30=Confirmar turnos de fin de semana con el equipo | C30=Admin | D30=Manager | E30=07:00
+A31=☐ | B31=Preparar pedidos especiales del sábado/domingo | C31=Admin | D31=Manager | E31=14:00
+A34=Tareas completadas: | D34==COUNTIF(F5:F32,"✓") | E34=de | F34=18
+A36=Verificado por: | E36=Firma:
+A38=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Mensual Manager] ---
+A1=Checklist Mensual del Manager
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Revisión Financiera
+A6=☐ | B6=Revisar coste de materias primas vs. ventas (food cost objetivo: 28-35%) | C6=Admin | D6=Manager | E6=1ª semana
+A7=☐ | B7=Analizar mermas del mes (objetivo: <5%) | C7=Admin | D7=Manager | E7=1ª semana
+A8=☐ | B8=Revisar rentabilidad por producto (margen por pieza) | C8=Admin | D8=Manager | E8=1ª semana
+A9=☐ | B9=Comparar ventas mes actual vs. mes anterior y mismo mes año anterior | C9=Admin | D9=Manager | E9=1ª semana
+A11=  Mantenimiento
+A12=☐ | B12=Mantenimiento preventivo de hornos (limpieza profunda, calibración) | C12=Admin | D12=Manager | E12=2ª semana
+A13=☐ | B13=Mantenimiento de amasadora y batidora (engrasar, revisar ganchos) | C13=Admin | D13=Manager | E13=2ª semana
+A14=☐ | B14=Revisar estado de laminadora | C14=Admin | D14=Manager | E14=2ª semana
+A15=☐ | B15=Mantenimiento de cámaras frigoríficas (limpieza condensador) | C15=Admin | D15=Manager | E15=2ª semana
+A16=☐ | B16=Calibrar termómetros y sondas | C16=Admin | D16=Manager | E16=2ª semana
+A18=  Evaluación y Desarrollo
+A19=☐ | B19=Evaluación informal del equipo (feedback individual) | C19=Admin | D19=Manager | E19=3ª semana
+A20=☐ | B20=Revisar carta / oferta: retirar productos que no venden | C20=Admin | D20=Manager | E20=3ª semana
+A21=☐ | B21=Proponer nuevas recetas / productos de temporada | C21=Admin | D21=Manager | E21=3ª semana
+A22=☐ | B22=Revisar competencia (visitar 2-3 pastelerías de la zona) | C22=Admin | D22=Manager | E22=4ª semana
+A23=☐ | B23=Actualizar redes sociales con fotos de nuevos productos | C23=Admin | D23=Manager | E23=4ª semana
+A26=Tareas completadas: | D26==COUNTIF(F5:F24,"✓") | E26=de | F26=14
+A28=Verificado por: | E28=Firma:
+A30=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Handover Turno] ---
+A1=Handover / Cambio de Turno
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Traspaso de Información
+A6=☐ | B6=Estado de producción en curso (qué está en horno, qué fermenta, qué enfría) | C6=General | D6=Saliente | E6=Cambio
+A7=☐ | B7=Pedidos especiales pendientes (tartas encargo, catering) | C7=General | D7=Saliente | E7=Cambio
+A8=☐ | B8=Incidencias del turno (equipo averiado, falta stock, queja cliente) | C8=General | D8=Saliente | E8=Cambio
+A9=☐ | B9=Entregas de proveedores pendientes | C9=General | D9=Saliente | E9=Cambio
+A10=☐ | B10=Estado de vitrina (qué se ha vendido, qué falta reponer) | C10=General | D10=Saliente | E10=Cambio
+A11=☐ | B11=Notas para producción siguiente turno | C11=General | D11=Saliente | E11=Cambio
+A14=Tareas completadas: | D14==COUNTIF(F5:F12,"✓") | E14=de | F14=6
+A16=Verificado por: | E16=Firma:
+A18=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 04-tareas-perfiles.xlsx ########
+
+--- [Instrucciones] ---
+B2=04 — Tareas por Perfil · Pastelería / Obrador
+B4=Checklists específicos para cada perfil profesional.
+B5=▸ Cada pestaña = un puesto de trabajo
+B6=▸ Perfecto para onboarding de personal nuevo
+B7=▸ El empleado sabe exactamente qué se espera de él/ella cada día
+
+--- [Jefe Pastelero] ---
+A1=Tareas Diarias — Jefe Pastelero / Chef Pâtissier
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Inicio de Jornada
+A6=☐ | B6=Revisar planificación de producción del día | C6=Obrador | D6=Jefe Pastelero | E6=05:00
+A7=☐ | B7=Asignar tareas al equipo según producción | C7=Obrador | D7=Jefe Pastelero | E7=05:00
+A8=☐ | B8=Verificar estado de fermentaciones nocturnas | C8=Obrador | D8=Jefe Pastelero | E8=05:00
+A9=☐ | B9=Controlar calidad de materias primas recibidas | C9=Obrador | D9=Jefe Pastelero | E9=Recepción
+A10=☐ | B10=Supervisar primeras elaboraciones del día | C10=Obrador | D10=Jefe Pastelero | E10=06:00
+A12=  Producción
+A13=☐ | B13=Elaborar piezas premium / creativas (las más complejas) | C13=Obrador | D13=Jefe Pastelero | E13=06:00
+A14=☐ | B14=Supervisar puntos críticos de producción (horneado, temperado, montaje) | C14=Obrador | D14=Jefe Pastelero | E14=Continuo
+A15=☐ | B15=Control de calidad: revisar piezas antes de vitrina | C15=Obrador | D15=Jefe Pastelero | E15=08:00
+A16=☐ | B16=Desarrollar y probar nuevas recetas | C16=Obrador | D16=Jefe Pastelero | E16=14:00
+A17=☐ | B17=Estandarizar recetas (fichas técnicas con pesos, tiempos, temperaturas) | C17=Obrador | D17=Jefe Pastelero | E17=14:00
+A19=  Gestión
+A20=☐ | B20=Calcular costes de nuevas recetas (escandallo) | C20=Admin | D20=Jefe Pastelero | E20=14:00
+A21=☐ | B21=Formar al equipo en técnicas nuevas | C21=Admin | D21=Jefe Pastelero | E21=14:30
+A22=☐ | B22=Planificar producción del día siguiente | C22=Admin | D22=Jefe Pastelero | E22=17:00
+A23=☐ | B23=Hacer lista de pedidos a proveedores | C23=Admin | D23=Jefe Pastelero | E23=17:30
+A26=Tareas completadas: | D26==COUNTIF(F5:F24,"✓") | E26=de | F26=14
+A28=Verificado por: | E28=Firma:
+A30=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Pastelero] ---
+A1=Tareas Diarias — Pastelero / Oficial
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Producción de Masas
+A6=☐ | B6=Preparar masas según planificación del día | C6=Obrador | D6=Pastelero | E6=05:00
+A7=☐ | B7=Controlar tiempos de amasado y temperatura de masas | C7=Obrador | D7=Pastelero | E7=05:30
+A8=☐ | B8=Laminar masas de hojaldre / croissant | C8=Obrador | D8=Pastelero | E8=06:00
+A9=☐ | B9=Dar forma a bollería (croissants, pain au chocolat, etc.) | C9=Obrador | D9=Pastelero | E9=06:30
+A10=☐ | B10=Controlar fermentación (tiempo, temperatura, humedad) | C10=Obrador | D10=Pastelero | E10=07:00
+A11=☐ | B11=Hornear según parámetros de cada masa | C11=Obrador | D11=Pastelero | E11=08:00
+A13=  Elaboraciones
+A14=☐ | B14=Preparar cremas y rellenos del día | C14=Obrador | D14=Pastelero | E14=06:00
+A15=☐ | B15=Montar tartas y entremets | C15=Obrador | D15=Pastelero | E15=09:00
+A16=☐ | B16=Decorar piezas según estándar de la casa | C16=Obrador | D16=Pastelero | E16=10:00
+A17=☐ | B17=Preparar pedidos especiales (tartas encargo) | C17=Obrador | D17=Pastelero | E17=11:00
+A19=  Limpieza y Cierre
+A20=☐ | B20=Limpiar puesto de trabajo y utensilios | C20=Obrador | D20=Pastelero | E20=17:00
+A21=☐ | B21=Guardar productos en cámara (etiquetar) | C21=Obrador | D21=Pastelero | E21=17:30
+A22=☐ | B22=Dejar preparada mise en place para el día siguiente | C22=Obrador | D22=Pastelero | E22=17:30
+A25=Tareas completadas: | D25==COUNTIF(F5:F23,"✓") | E25=de | F25=13
+A27=Verificado por: | E27=Firma:
+A29=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Ayudante] ---
+A1=Tareas Diarias — Ayudante de Pastelería
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Soporte a Producción
+A6=☐ | B6=Pesar ingredientes según receta (preparar mise en place) | C6=Obrador | D6=Ayudante | E6=05:00
+A7=☐ | B7=Preparar moldes (engrasar, forrar con papel de horno) | C7=Obrador | D7=Ayudante | E7=05:30
+A8=☐ | B8=Ayudar en formado de bollería | C8=Obrador | D8=Ayudante | E8=06:30
+A9=☐ | B9=Pincelar piezas con huevo antes de hornear | C9=Obrador | D9=Ayudante | E9=08:00
+A10=☐ | B10=Desmoldar y enfriar piezas horneadas | C10=Obrador | D10=Ayudante | E10=09:00
+A11=☐ | B11=Rellenar y glasear bollería bajo supervisión | C11=Obrador | D11=Ayudante | E11=09:30
+A13=  Limpieza y Orden
+A14=☐ | B14=Mantener puestos de trabajo limpios durante producción | C14=Limpieza | D14=Ayudante | E14=Continuo
+A15=☐ | B15=Lavar utensilios, bandejas y moldes | C15=Limpieza | D15=Ayudante | E15=Continuo
+A16=☐ | B16=Barrer y fregar suelos del obrador | C16=Limpieza | D16=Ayudante | E16=17:00
+A17=☐ | B17=Organizar almacén (FIFO, etiquetado) | C17=Limpieza | D17=Ayudante | E17=16:00
+A18=☐ | B18=Sacar basura y reciclar envases | C18=Limpieza | D18=Ayudante | E18=17:30
+A21=Tareas completadas: | D21==COUNTIF(F5:F19,"✓") | E21=de | F21=11
+A23=Verificado por: | E23=Firma:
+A25=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Dependiente Vitrina] ---
+A1=Tareas Diarias — Dependiente / Vitrina
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Apertura y Venta
+A6=☐ | B6=Montar vitrina con productos del día | C6=Despacho | D6=Dependiente | E6=08:00
+A7=☐ | B7=Verificar etiquetas de alérgenos y precios | C7=Despacho | D7=Dependiente | E7=08:00
+A8=☐ | B8=Atender clientes con amabilidad y conocimiento del producto | C8=Despacho | D8=Dependiente | E8=Continuo
+A9=☐ | B9=Informar sobre ingredientes y alérgenos cuando pregunten | C9=Despacho | D9=Dependiente | E9=Continuo
+A10=☐ | B10=Gestionar pedidos de tartas personalizadas (rellenar ficha) | C10=Despacho | D10=Dependiente | E10=Continuo
+A11=☐ | B11=Preparar cajas y packaging para llevar | C11=Despacho | D11=Dependiente | E11=Continuo
+A13=  Mantenimiento y Cierre
+A14=☐ | B14=Reponer vitrina cada 2 horas | C14=Despacho | D14=Dependiente | E14=Continuo
+A15=☐ | B15=Mantener mostrador y zona de caja limpios | C15=Despacho | D15=Dependiente | E15=Continuo
+A16=☐ | B16=Registrar productos que se agotan (informar a producción) | C16=Despacho | D16=Dependiente | E16=Continuo
+A17=☐ | B17=Cierre de caja / cuadre de TPV | C17=Despacho | D17=Dependiente | E17=20:00
+A18=☐ | B18=Retirar productos de vitrina al cierre | C18=Despacho | D18=Dependiente | E18=20:00
+A19=☐ | B19=Limpiar vitrinas y zona de venta | C19=Despacho | D19=Dependiente | E19=20:15
+A22=Tareas completadas: | D22==COUNTIF(F5:F20,"✓") | E22=de | F22=12
+A24=Verificado por: | E24=Firma:
+A26=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 05-tareas-semanales-mensuales.xlsx ########
+
+--- [Instrucciones] ---
+B2=05 — Tareas Semanales y Mensuales · Pastelería / Obrador
+B4=Tareas que se realizan con frecuencia semanal o mensual.
+B5=▸ Limpieza profunda por zona
+B6=▸ Mantenimiento de equipos
+B7=▸ Revisión FIFO y caducidades
+B8=▸ Inventario periódico
+
+--- [Limpieza Semanal] ---
+A1=Limpieza Profunda Semanal por Zona
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Obrador / Zona de Producción
+A6=☐ | B6=Limpiar interior de hornos (raspar solera, vapor, desincrustante) | C6=Limpieza | D6=Ayudante | E6=Lunes
+A7=☐ | B7=Desmontar y limpiar amasadora (gancho, bol, protecciones) | C7=Limpieza | D7=Ayudante | E7=Lunes
+A8=☐ | B8=Desmontar y limpiar batidora planetaria | C8=Limpieza | D8=Ayudante | E8=Lunes
+A9=☐ | B9=Limpiar laminadora (rodillos, cintas, bandejas) | C9=Limpieza | D9=Ayudante | E9=Martes
+A10=☐ | B10=Limpiar mesas de mármol con producto específico (sin ácidos) | C10=Limpieza | D10=Ayudante | E10=Martes
+A11=☐ | B11=Limpiar campana extractora y filtros | C11=Limpieza | D11=Ayudante | E11=Miércoles
+A12=☐ | B12=Limpiar paredes y azulejos del obrador | C12=Limpieza | D12=Ayudante | E12=Miércoles
+A13=☐ | B13=Fregar suelos con desengrasante industrial | C13=Limpieza | D13=Ayudante | E13=Viernes
+A15=  Cámaras y Almacén
+A16=☐ | B16=Limpieza interior de cámaras frigoríficas | C16=Almacén | D16=Ayudante | E16=Martes
+A17=☐ | B17=Revisión FIFO completa (mover producto antiguo adelante) | C17=Almacén | D17=Pastelero | E17=Martes
+A18=☐ | B18=Verificar caducidades de todos los productos almacenados | C18=Almacén | D18=Pastelero | E18=Martes
+A19=☐ | B19=Limpiar estanterías de almacén seco | C19=Almacén | D19=Ayudante | E19=Jueves
+A20=☐ | B20=Verificar stock mínimo de ingredientes secos (harina, azúcar, cacao) | C20=Almacén | D20=Pastelero | E20=Jueves
+A21=☐ | B21=Revisar estado de congelados (cristalización, quemaduras de frío) | C21=Almacén | D21=Pastelero | E21=Jueves
+A23=  Vitrinas y Despacho
+A24=☐ | B24=Limpieza profunda de vitrinas (interior, bandejas, cristales) | C24=Vitrina | D24=Dependiente | E24=Lunes
+A25=☐ | B25=Limpiar caja registradora y báscula | C25=Vitrina | D25=Dependiente | E25=Lunes
+A26=☐ | B26=Limpiar cristales de entrada y escaparate | C26=Vitrina | D26=Dependiente | E26=Miércoles
+A27=☐ | B27=Organizar y limpiar zona de packaging (cajas, bolsas, cintas) | C27=Vitrina | D27=Dependiente | E27=Viernes
+A30=Tareas completadas: | D30==COUNTIF(F5:F28,"✓") | E30=de | F30=18
+A32=Verificado por: | E32=Firma:
+A34=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Mantenimiento Mensual] ---
+A1=Mantenimiento Mensual de Equipos
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Hornos
+A6=☐ | B6=Limpieza profunda de horno (pirolisis o manual con productos) | C6=Obrador | D6=Mantenimiento | E6=1ª semana
+A7=☐ | B7=Verificar juntas de puertas de horno (sellado, desgaste) | C7=Obrador | D7=Mantenimiento | E7=1ª semana
+A8=☐ | B8=Calibrar termostato de hornos (comparar con termómetro de sonda) | C8=Obrador | D8=Mantenimiento | E8=1ª semana
+A9=☐ | B9=Revisar sistema de vapor (boquillas, electroválvula) | C9=Obrador | D9=Mantenimiento | E9=1ª semana
+A11=  Equipos de Frío
+A12=☐ | B12=Limpiar condensadores de cámaras frigoríficas | C12=Obrador | D12=Mantenimiento | E12=2ª semana
+A13=☐ | B13=Verificar temperaturas reales vs. display (sonda independiente) | C13=Obrador | D13=Mantenimiento | E13=2ª semana
+A14=☐ | B14=Revisar juntas de puertas de cámaras | C14=Obrador | D14=Mantenimiento | E14=2ª semana
+A15=☐ | B15=Comprobar desagüe de cámaras | C15=Obrador | D15=Mantenimiento | E15=2ª semana
+A17=  Otros Equipos
+A18=☐ | B18=Engrasar engranajes de amasadora y planetaria | C18=Obrador | D18=Mantenimiento | E18=3ª semana
+A19=☐ | B19=Revisar cintas y rodillos de laminadora | C19=Obrador | D19=Mantenimiento | E19=3ª semana
+A20=☐ | B20=Verificar estado de moldes y bandejas (deformaciones, antiadherente) | C20=Obrador | D20=Pastelero | E20=3ª semana
+A21=☐ | B21=Calibrar báscula de precisión | C21=Obrador | D21=Manager | E21=3ª semana
+A22=☐ | B22=Revisar estado de boquillas, mangas pasteleras y espátulas | C22=Obrador | D22=Pastelero | E22=3ª semana
+A25=Tareas completadas: | D25==COUNTIF(F5:F23,"✓") | E25=de | F25=13
+A27=Verificado por: | E27=Firma:
+A29=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Inventario] ---
+A1=Inventario Semanal y Control de Stock
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Ingredientes Principales
+A6=☐ | B6=Contar stock de harinas (fuerza, floja, integral, centeno) | C6=Almacén | D6=Pastelero | E6=Viernes
+A7=☐ | B7=Contar stock de azúcares (blanco, moreno, glass, invertido) | C7=Almacén | D7=Pastelero | E7=Viernes
+A8=☐ | B8=Contar stock de mantequilla y margarinas | C8=Almacén | D8=Pastelero | E8=Viernes
+A9=☐ | B9=Contar stock de huevos (frescos y ovoproductos) | C9=Almacén | D9=Pastelero | E9=Viernes
+A10=☐ | B10=Contar stock de chocolate (negro, leche, blanco, cacao) | C10=Almacén | D10=Pastelero | E10=Viernes
+A11=☐ | B11=Contar stock de nata y lácteos | C11=Almacén | D11=Pastelero | E11=Viernes
+A12=☐ | B12=Contar stock de levaduras (fresca, seca, química) | C12=Almacén | D12=Pastelero | E12=Viernes
+A14=  Ingredientes Secundarios y Decoración
+A15=☐ | B15=Contar stock de frutos secos (almendra, avellana, pistacho) | C15=Almacén | D15=Ayudante | E15=Viernes
+A16=☐ | B16=Contar stock de frutas (frescas, congeladas, liofilizadas) | C16=Almacén | D16=Ayudante | E16=Viernes
+A17=☐ | B17=Contar stock de aromas y esencias (vainilla, café, licores) | C17=Almacén | D17=Ayudante | E17=Viernes
+A18=☐ | B18=Contar stock de gelatinas, pectinas y espesantes | C18=Almacén | D18=Ayudante | E18=Viernes
+A19=☐ | B19=Contar stock de colorantes y decoraciones | C19=Almacén | D19=Ayudante | E19=Viernes
+A20=☐ | B20=Contar stock de packaging (cajas, bolsas, cintas, etiquetas) | C20=Almacén | D20=Dependiente | E20=Viernes
+A23=Tareas completadas: | D23==COUNTIF(F5:F21,"✓") | E23=de | F23=13
+A25=Verificado por: | E25=Firma:
+A27=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 06-eventos-festivos.xlsx ########
+
+--- [Instrucciones] ---
+B2=06 — Eventos y Festivos · Pastelería / Obrador
+B4=Checklists para fechas especiales y temporadas.
+B5=▸ Las pastelerías facturan hasta el 40% de su año en temporadas clave
+B6=▸ Navidad, Reyes, San Valentín, Día de la Madre... cada una requiere planificación
+B7=▸ Personaliza con las fechas importantes de tu zona
+
+--- [Navidad] ---
+A1=Temporada Navidad (Nov-Ene)
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Planificación (Noviembre)
+A6=☐ | B6=Definir catálogo de Navidad (turrones, polvorones, roscón, troncos) | C6=Admin | D6=Jefe Pastelero | E6=1 Nov
+A7=☐ | B7=Calcular cantidades de producción por producto | C7=Admin | D7=Manager | E7=1 Nov
+A8=☐ | B8=Hacer pedidos especiales de ingredientes (mazapán, frutas confitadas, turrón) | C8=Admin | D8=Manager | E8=5 Nov
+A9=☐ | B9=Contratar personal extra si es necesario | C9=Admin | D9=Manager | E9=10 Nov
+A10=☐ | B10=Diseñar packaging navideño (cajas, lazos, etiquetas) | C10=Admin | D10=Manager | E10=10 Nov
+A11=☐ | B11=Publicar catálogo de Navidad en RRSS y web | C11=Admin | D11=Manager | E11=15 Nov
+A13=  Producción Navideña (Diciembre)
+A14=☐ | B14=Producción de turrones artesanos (2-3 semanas antes) | C14=Obrador | D14=Pastelero | E14=1-15 Dic
+A15=☐ | B15=Producción de polvorones y mantecados | C15=Obrador | D15=Pastelero | E15=1-15 Dic
+A16=☐ | B16=Preparar masas de roscón de Reyes (fermentación 24-48h) | C16=Obrador | D16=Pastelero | E16=3 Ene
+A17=☐ | B17=Producción de troncos de Navidad (bûche de Noël) | C17=Obrador | D17=Pastelero | E17=20-24 Dic
+A18=☐ | B18=Preparar cestas y lotes navideños | C18=Obrador | D18=Ayudante | E18=15-24 Dic
+A19=☐ | B19=Control de pedidos de clientes (lista de encargos) | C19=Obrador | D19=Dependiente | E19=Continuo
+A21=  Día de Reyes (5-6 Enero)
+A22=☐ | B22=Hornear roscones la madrugada del 5 al 6 | C22=Obrador | D22=Pastelero | E22=05-06 Ene
+A23=☐ | B23=Rellenar con nata, trufa, crema, cabello de ángel | C23=Obrador | D23=Pastelero | E23=06 Ene
+A24=☐ | B24=Decorar con fruta confitada, azúcar, corona | C24=Obrador | D24=Pastelero | E24=06 Ene
+A25=☐ | B25=Introducir sorpresa y haba | C25=Obrador | D25=Ayudante | E25=06 Ene
+A26=☐ | B26=Gestionar colas y pedidos (reforzar despacho) | C26=Obrador | D26=Dependiente | E26=06 Ene
+A29=Tareas completadas: | D29==COUNTIF(F5:F27,"✓") | E29=de | F29=17
+A31=Verificado por: | E31=Firma:
+A33=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [San Valentín] ---
+A1=San Valentín (14 Febrero)
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Planificación (2 semanas antes)
+A6=☐ | B6=Diseñar colección San Valentín (tartas corazón, bombones, macarons) | C6=Admin | D6=Jefe Pastelero | E6=1 Feb
+A7=☐ | B7=Pedir moldes de corazón y packaging especial | C7=Admin | D7=Manager | E7=1 Feb
+A8=☐ | B8=Publicar en RRSS y abrir pedidos anticipados | C8=Admin | D8=Manager | E8=5 Feb
+A9=☐ | B9=Calcular producción extra (50-100% más que día normal) | C9=Admin | D9=Manager | E9=10 Feb
+A11=  Producción (12-14 Feb)
+A12=☐ | B12=Producción de bombones y trufas artesanas | C12=Obrador | D12=Pastelero | E12=12 Feb
+A13=☐ | B13=Producción de tartas individuales con forma de corazón | C13=Obrador | D13=Pastelero | E13=13 Feb
+A14=☐ | B14=Producción de macarons con sabores especiales (rosa, frambuesa, pasión) | C14=Obrador | D14=Pastelero | E14=13 Feb
+A15=☐ | B15=Montar cajas regalo con selección de piezas | C15=Obrador | D15=Ayudante | E15=13 Feb
+A16=☐ | B16=Preparar tartas de encargo personalizadas | C16=Obrador | D16=Pastelero | E16=14 Feb
+A17=☐ | B17=Reforzar despacho para pico de ventas (14 Feb tarde) | C17=Obrador | D17=Dependiente | E17=14 Feb
+A20=Tareas completadas: | D20==COUNTIF(F5:F18,"✓") | E20=de | F20=10
+A22=Verificado por: | E22=Firma:
+A24=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Semana Santa] ---
+A1=Semana Santa
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Planificación
+A6=☐ | B6=Definir producción de Semana Santa (torrijas, monas, huevos de Pascua) | C6=Admin | D6=Jefe Pastelero | E6=4 sem antes
+A7=☐ | B7=Pedir moldes de huevos de Pascua y colorantes | C7=Admin | D7=Manager | E7=3 sem antes
+A8=☐ | B8=Producción de figuras de chocolate (conejos, huevos, campanas) | C8=Admin | D8=Pastelero | E8=2 sem antes
+A10=  Producción
+A11=☐ | B11=Elaborar torrijas (remojo, fritura, almíbar/canela) | C11=Obrador | D11=Pastelero | E11=Jue-Vie Santo
+A12=☐ | B12=Elaborar monas de Pascua (bizcocho + decoración chocolate) | C12=Obrador | D12=Pastelero | E12=Lun-Mié
+A13=☐ | B13=Producir huevos de chocolate rellenos | C13=Obrador | D13=Pastelero | E13=Lun-Mié
+A14=☐ | B14=Montar escaparate temático de Semana Santa | C14=Obrador | D14=Dependiente | E14=Dom Ramos
+A15=☐ | B15=Gestionar pedidos de encargo (monas, huevos personalizados) | C15=Obrador | D15=Dependiente | E15=Continuo
+A18=Tareas completadas: | D18==COUNTIF(F5:F16,"✓") | E18=de | F18=8
+A20=Verificado por: | E20=Firma:
+A22=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Día Madre-Padre] ---
+A1=Día de la Madre / Día del Padre
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Preparación
+A6=☐ | B6=Diseñar tartas especiales para la ocasión | C6=Admin | D6=Jefe Pastelero | E6=2 sem antes
+A7=☐ | B7=Abrir pedidos de tartas personalizadas (mensaje, dedicatoria) | C7=Admin | D7=Manager | E7=2 sem antes
+A8=☐ | B8=Preparar packaging especial | C8=Admin | D8=Manager | E8=1 sem antes
+A10=  Producción y Venta
+A11=☐ | B11=Producción extra de tartas (incremento 80-120%) | C11=Obrador | D11=Pastelero | E11=Día antes
+A12=☐ | B12=Preparar tartas con dedicatoria personalizada | C12=Obrador | D12=Pastelero | E12=Día
+A13=☐ | B13=Reforzar despacho (turno doble si es necesario) | C13=Obrador | D13=Dependiente | E13=Día
+A14=☐ | B14=Ofrecer servicio de entrega a domicilio (si aplica) | C14=Obrador | D14=Manager | E14=Día
+A17=Tareas completadas: | D17==COUNTIF(F5:F15,"✓") | E17=de | F17=7
+A19=Verificado por: | E19=Firma:
+A21=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 07-plantilla-personalizable.xlsx ########
+
+--- [Instrucciones] ---
+B2=07 — Plantilla Personalizable · Pastelería / Obrador
+B4=Plantillas en blanco para crear tus propias listas de tareas.
+B6=Cómo usar:
+B7=▸ Copia la pestaña que más se ajuste a lo que necesitas
+B8=▸ Rellena con las tareas específicas de tu pastelería
+B9=▸ Usa los colores de zona para diferenciar áreas
+B10=▸ Imprime en A4 y distribuye al equipo
+
+--- [Por Franja Horaria] ---
+A1=Plantilla en Blanco — Por Franja Horaria
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Madrugada / Inicio Producción (04:00 - 07:00)
+A6=☐ | C6=General
+A7=☐ | C7=General
+A8=☐ | C8=General
+A9=☐ | C9=General
+A10=☐ | C10=General
+A12=  Mañana / Producción Principal (07:00 - 12:00)
+A13=☐ | C13=General
+A14=☐ | C14=General
+A15=☐ | C15=General
+A16=☐ | C16=General
+A17=☐ | C17=General
+A19=  Tarde / Producción + Venta (12:00 - 17:00)
+A20=☐ | C20=General
+A21=☐ | C21=General
+A22=☐ | C22=General
+A23=☐ | C23=General
+A24=☐ | C24=General
+A26=  Cierre (17:00 - 20:00)
+A27=☐ | C27=General
+A28=☐ | C28=General
+A29=☐ | C29=General
+A30=☐ | C30=General
+A33=Tareas completadas: | D33==COUNTIF(F5:F31,"✓") | E33=de | F33=19
+A35=Verificado por: | E35=Firma:
+A37=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Por Zona] ---
+A1=Plantilla en Blanco — Por Zona de Trabajo
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Obrador
+A6=☐ | C6=Obrador
+A7=☐ | C7=Obrador
+A8=☐ | C8=Obrador
+A9=☐ | C9=Obrador
+A10=☐ | C10=Obrador
+A12=  Horno
+A13=☐ | C13=Horno
+A14=☐ | C14=Horno
+A15=☐ | C15=Horno
+A16=☐ | C16=Horno
+A18=  Vitrina / Despacho
+A19=☐ | C19=Vitrina
+A20=☐ | C20=Vitrina
+A21=☐ | C21=Vitrina
+A22=☐ | C22=Vitrina
+A24=  Almacén / Cámaras
+A25=☐ | C25=Almacén
+A26=☐ | C26=Almacén
+A27=☐ | C27=Almacén
+A28=☐ | C28=Almacén
+A31=Tareas completadas: | D31==COUNTIF(F5:F29,"✓") | E31=de | F31=17
+A33=Verificado por: | E33=Firma:
+A35=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+--- [Por Perfil] ---
+A1=Plantilla en Blanco — Por Perfil Profesional
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Jefe Pastelero / Chef Pâtissier
+A6=☐ | C6=General
+A7=☐ | C7=General
+A8=☐ | C8=General
+A9=☐ | C9=General
+A11=  Pastelero / Oficial
+A12=☐ | C12=General
+A13=☐ | C13=General
+A14=☐ | C14=General
+A15=☐ | C15=General
+A17=  Ayudante de Pastelería
+A18=☐ | C18=General
+A19=☐ | C19=General
+A20=☐ | C20=General
+A21=☐ | C21=General
+A23=  Dependiente / Vitrina
+A24=☐ | C24=General
+A25=☐ | C25=General
+A26=☐ | C26=General
+A27=☐ | C27=General
+A30=Tareas completadas: | D30==COUNTIF(F5:F28,"✓") | E30=de | F30=16
+A32=Verificado por: | E32=Firma:
+A34=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## 08-apertura-cierre-negocio.xlsx ########
+
+--- [Instrucciones] ---
+A1=AI Chef Pro — aichef.pro
+A2=Kit de Tareas — Pastelería / Obrador
+A3=Checklist de Apertura y Cierre del Negocio
+A5=📋 Instrucciones de Uso
+A6=1. Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio.
+A7=2. Imprime las hojas que necesites o úsalas en formato digital (tablet/ordenador).
+A8=3. Cada checklist incluye columnas para marcar tareas completadas, responsable, hora y notas.
+A9=4. Personaliza las tareas según las necesidades específicas de tu establecimiento.
+A10=5. Añade o elimina filas según tu operativa diaria.
+A11=6. Usa la validación de datos en la columna '✓ Completada' para marcar el estado.
+A12=7. Rellena la firma y fecha cada día para mantener el control.
+A14=💡 Consejo: Plastifica una copia impresa y usa rotuladores borrables para reutilizarla cada día.
+A16=© AI Chef Pro — aichef.pro
+A17=29 años de experiencia en alta hostelería · 15 años de consultoría gastronómica
+A18=Contacto: info@aichef.pro
+
+--- [Apertura del Negocio] ---
+A1=Apertura del Negocio — Pastelería / Obrador
+A2=Fecha: ____/____/________ | E2=Responsable de turno: _________________________
+A4=# | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=✓ Completada | G4=Firma | H4=Notas
+A5=1 | B5=Desactivar alarma del local | C5=Acceso
+A6=2 | B6=Encender luces generales (interior y exterior) | C6=General
+A7=3 | B7=Encender climatización (HVAC) / calefacción según temporada | C7=General
+A8=4 | B8=Abrir persianas / puerta principal | C8=Acceso
+A9=5 | B9=Montar señalización exterior / pizarra de menú | C9=Exterior
+A10=6 | B10=Encender TPV / POS / datáfono | C10=Caja
+A11=7 | B11=Encender sistema de reservas / tablet de pedidos | C11=Recepción
+A12=8 | B12=Poner música ambiente al volumen adecuado | C12=General
+A13=9 | B13=Revisar reservas del día y eventos especiales | C13=Recepción
+A14=10 | B14=Comprobar baños: papel, jabón, limpieza, ambientador | C14=Baños
+A15=11 | B15=Verificar limpieza de zonas comunes (entrada, pasillos) | C15=Zonas comunes
+A16=12 | B16=Revisar estado del mobiliario (sillas, mesas, iluminación) | C16=Sala
+A17=13 | B17=Montar terraza si aplica (mesas, sillas, sombrillas/estufas) | C17=Terraza
+A18=14 | B18=Comprobar que las cartas/menús están en orden | C18=Sala
+A19=15 | B19=Encender displays / pantallas informativas si las hay | C19=General
+A20=16 | B20=Encender vitrinas refrigeradas de exposición | C20=Tienda
+A21=17 | B21=Montar expositor de productos del día | C21=Tienda
+A23=Firma del responsable: _________________________     Hora de finalización: ________
+A24=© AI Chef Pro — aichef.pro
+
+--- [Cierre del Negocio] ---
+A1=Cierre del Negocio — Pastelería / Obrador
+A2=Fecha: ____/____/________ | E2=Responsable de turno: _________________________
+A4=# | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=✓ Completada | G4=Firma | H4=Notas
+A5=1 | B5=Apagar música ambiente | C5=General
+A6=2 | B6=Verificar que no quedan clientes en el local | C6=Sala
+A7=3 | B7=Limpiar y recoger terraza si aplica | C7=Terraza
+A8=4 | B8=Apagar TPV / POS / datáfono (o dejar en standby) | C8=Caja
+A9=5 | B9=Cerrar persianas y puertas | C9=Acceso
+A10=6 | B10=Apagar luces (dejar mínimas de seguridad) | C10=General
+A11=7 | B11=Apagar climatización | C11=General
+A12=8 | B12=Recoger señalización exterior | C12=Exterior
+A13=9 | B13=Comprobar que ventanas están cerradas | C13=General
+A14=10 | B14=Vaciar papeleras de zonas comunes y baños | C14=Baños
+A15=11 | B15=Revisión final de seguridad (gas, agua, enchufes) | C15=General
+A16=12 | B16=Activar alarma | C16=Acceso
+A17=13 | B17=Cerrar con llave y verificar cierre | C17=Acceso
+A18=14 | B18=Apagar vitrinas de exposición | C18=Tienda
+A19=15 | B19=Retirar productos perecederos del expositor | C19=Tienda
+A21=Firma del responsable: _________________________     Hora de finalización: ________
+A22=© AI Chef Pro — aichef.pro
+
+
+######## 09-apertura-cierre-caja.xlsx ########
+
+--- [Instrucciones] ---
+A1=AI Chef Pro — aichef.pro
+A2=Kit de Tareas — Pastelería / Obrador
+A3=Checklist de Apertura y Cierre de Caja
+A5=📋 Instrucciones de Uso
+A6=1. Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio.
+A7=2. Imprime las hojas que necesites o úsalas en formato digital (tablet/ordenador).
+A8=3. Cada checklist incluye columnas para marcar tareas completadas, responsable, hora y notas.
+A9=4. Personaliza las tareas según las necesidades específicas de tu establecimiento.
+A10=5. Añade o elimina filas según tu operativa diaria.
+A11=6. Usa la validación de datos en la columna '✓ Completada' para marcar el estado.
+A12=7. Rellena la firma y fecha cada día para mantener el control.
+A14=💡 Consejo: Plastifica una copia impresa y usa rotuladores borrables para reutilizarla cada día.
+A16=© AI Chef Pro — aichef.pro
+A17=29 años de experiencia en alta hostelería · 15 años de consultoría gastronómica
+A18=Contacto: info@aichef.pro
+
+--- [Apertura de Caja] ---
+A1=Apertura de Caja — Pastelería / Obrador
+A2=Fecha: ____/____/________ | D2=Responsable: _________________________
+A4=# | B4=Tarea | C4=Responsable | D4=✓ Completada | E4=Hora | F4=Notas
+A5=1 | B5=Verificar fondo de caja del día anterior
+A6=2 | B6=Contar fondo de caja inicial
+A7=3 | B7=Registrar importe de fondo de caja en hoja
+A8=4 | B8=Verificar cambio suficiente (monedas, billetes pequeños)
+A9=5 | B9=Encender TPV / POS
+A10=6 | B10=Imprimir X de apertura (informe de inicio)
+A11=7 | B11=Comprobar rollo de papel de ticket
+A12=8 | B12=Verificar datáfono operativo
+A13=9 | B13=Verificar conexión de pasarela de pago
+A14=10 | B14=Anotar incidencias del turno anterior
+A15=11 | B15=Firma del responsable de apertura
+A17=Firma del responsable: _________________________     Hora: ________
+A18=© AI Chef Pro — aichef.pro
+
+--- [Cierre de Caja] ---
+A1=Cierre de Caja — Pastelería / Obrador
+A2=Fecha: ____/____/________ | D2=Responsable: _________________________
+A4=# | B4=Tarea | C4=Responsable | D4=✓ Completada | E4=Hora | F4=Notas
+A5=1 | B5=Imprimir Z de cierre (informe final del día)
+A6=2 | B6=Recuento de efectivo por denominación (ver tabla inferior)
+A7=3 | B7=Calcular total efectivo
+A8=4 | B8=Anotar total tarjetas (Visa/Mastercard)
+A9=5 | B9=Anotar otros medios (Bizum, vales, invitaciones)
+A10=6 | B10=Total facturado = efectivo + tarjetas + otros
+A11=7 | B11=Comparar con Z del TPV → calcular diferencia/descuadre
+A12=8 | B12=Registrar devoluciones del día
+A13=9 | B13=Registrar anulaciones del día
+A14=10 | B14=Separar fondo de caja para mañana
+A15=11 | B15=Preparar depósito bancario / guardar en caja fuerte
+A16=12 | B16=Firma del responsable de cierre
+A18=💰 Recuento de Efectivo por Denominación
+A19=Denominación | B19=Cantidad | C19=Subtotal (€)
+A20=BILLETES
+A21=500 € | B21=0 | C21==B21*500
+A22=200 € | B22=0 | C22==B22*200
+A23=100 € | B23=0 | C23==B23*100
+A24=50 € | B24=0 | C24==B24*50
+A25=20 € | B25=0 | C25==B25*20
+A26=10 € | B26=0 | C26==B26*10
+A27=5 € | B27=0 | C27==B27*5
+A28=MONEDAS
+A29=2 € | B29=0 | C29==B29*2
+A30=1 € | B30=0 | C30==B30*1
+A31=0,50 € | B31=0 | C31==B31*0.5
+A32=0,20 € | B32=0 | C32==B32*0.2
+A33=0,10 € | B33=0 | C33==B33*0.1
+A34=0,05 € | B34=0 | C34==B34*0.05
+A35=0,01 € | B35=0 | C35==B35*0.01
+A36=TOTAL EFECTIVO | C36==SUM(C21:C35)
+A38=📊 Resumen de Cierre
+A39=Concepto | B39=Importe (€)
+A40=Total Efectivo | B40==C36
+A41=Total Tarjetas (Visa/MC) | B41=0
+A42=Total Otros (Bizum, Vales) | B42=0
+A43=TOTAL FACTURADO | B43==B40+B41+B42
+A44=Z del TPV | B44=0
+A45=DESCUADRE | B45==B43-B44
+A47=Firma del responsable: _________________________     Hora: ________
+A48=© AI Chef Pro — aichef.pro
+
+--- [Registro Mensual] ---
+A1=Registro Mensual de Caja — Pastelería / Obrador
+A2=Mes: ________________     Año: ________ | F2=Responsable general: _________________________
+A4=Fecha | B4=Fondo Apertura | C4=Ventas Efectivo | D4=Ventas Tarjeta | E4=Ventas Otros | F4=Total Facturado | G4=Descuadre | H4=Depósito | I4=Responsable
+A5=1 | B5=0 | C5=0 | D5=0 | E5=0 | F5==C5+D5+E5 | H5=0
+A6=2 | B6=0 | C6=0 | D6=0 | E6=0 | F6==C6+D6+E6 | H6=0
+A7=3 | B7=0 | C7=0 | D7=0 | E7=0 | F7==C7+D7+E7 | H7=0
+A8=4 | B8=0 | C8=0 | D8=0 | E8=0 | F8==C8+D8+E8 | H8=0
+A9=5 | B9=0 | C9=0 | D9=0 | E9=0 | F9==C9+D9+E9 | H9=0
+A10=6 | B10=0 | C10=0 | D10=0 | E10=0 | F10==C10+D10+E10 | H10=0
+A11=7 | B11=0 | C11=0 | D11=0 | E11=0 | F11==C11+D11+E11 | H11=0
+A12=8 | B12=0 | C12=0 | D12=0 | E12=0 | F12==C12+D12+E12 | H12=0
+A13=9 | B13=0 | C13=0 | D13=0 | E13=0 | F13==C13+D13+E13 | H13=0
+A14=10 | B14=0 | C14=0 | D14=0 | E14=0 | F14==C14+D14+E14 | H14=0
+A15=11 | B15=0 | C15=0 | D15=0 | E15=0 | F15==C15+D15+E15 | H15=0
+A16=12 | B16=0 | C16=0 | D16=0 | E16=0 | F16==C16+D16+E16 | H16=0
+A17=13 | B17=0 | C17=0 | D17=0 | E17=0 | F17==C17+D17+E17 | H17=0
+A18=14 | B18=0 | C18=0 | D18=0 | E18=0 | F18==C18+D18+E18 | H18=0
+A19=15 | B19=0 | C19=0 | D19=0 | E19=0 | F19==C19+D19+E19 | H19=0
+A20=16 | B20=0 | C20=0 | D20=0 | E20=0 | F20==C20+D20+E20 | H20=0
+A21=17 | B21=0 | C21=0 | D21=0 | E21=0 | F21==C21+D21+E21 | H21=0
+A22=18 | B22=0 | C22=0 | D22=0 | E22=0 | F22==C22+D22+E22 | H22=0
+A23=19 | B23=0 | C23=0 | D23=0 | E23=0 | F23==C23+D23+E23 | H23=0
+A24=20 | B24=0 | C24=0 | D24=0 | E24=0 | F24==C24+D24+E24 | H24=0
+A25=21 | B25=0 | C25=0 | D25=0 | E25=0 | F25==C25+D25+E25 | H25=0
+A26=22 | B26=0 | C26=0 | D26=0 | E26=0 | F26==C26+D26+E26 | H26=0
+A27=23 | B27=0 | C27=0 | D27=0 | E27=0 | F27==C27+D27+E27 | H27=0
+A28=24 | B28=0 | C28=0 | D28=0 | E28=0 | F28==C28+D28+E28 | H28=0
+A29=25 | B29=0 | C29=0 | D29=0 | E29=0 | F29==C29+D29+E29 | H29=0
+A30=26 | B30=0 | C30=0 | D30=0 | E30=0 | F30==C30+D30+E30 | H30=0
+A31=27 | B31=0 | C31=0 | D31=0 | E31=0 | F31==C31+D31+E31 | H31=0
+A32=28 | B32=0 | C32=0 | D32=0 | E32=0 | F32==C32+D32+E32 | H32=0
+A33=29 | B33=0 | C33=0 | D33=0 | E33=0 | F33==C33+D33+E33 | H33=0
+A34=30 | B34=0 | C34=0 | D34=0 | E34=0 | F34==C34+D34+E34 | H34=0
+A35=31 | B35=0 | C35=0 | D35=0 | E35=0 | F35==C35+D35+E35 | H35=0
+A36=TOTALES | B36==SUM(B5:B35) | C36==SUM(C5:C35) | D36==SUM(D5:D35) | E36==SUM(E5:E35) | F36==SUM(F5:F35) | G36==SUM(G5:G35) | H36==SUM(H5:H35)
+A38=© AI Chef Pro — aichef.pro
+
+
+######## BONUS-01-briefing-servicio.xlsx ########
+
+--- [Instrucciones] ---
+B2=BONUS 01 — Briefing de Servicio · Pastelería
+B4=Plantilla para la reunión diaria del equipo antes de abrir.
+B5=▸ 5 minutos que mejoran la comunicación del equipo
+B6=▸ Repasa producción del día, encargos especiales, alérgenos
+B7=▸ Imprime una copia cada día y pégala en el obrador
+
+--- [Briefing Diario] ---
+A1=Briefing Pre-Servicio — Pastelería / Obrador
+A2=Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________
+A4=☐ | B4=Tarea | C4=Zona | D4=Responsable | E4=Hora Límite | F4=Hecha | G4=Firma
+A5=  Producción del Día
+A6=☐ | B6=Productos planificados: bollería (croissants, napolitanas, ensaimadas...) | C6=Obrador | D6=Jefe Pastelero | E6=05:00
+A7=☐ | B7=Productos planificados: pastelería (tartas, entremets, individuales...) | C7=Obrador | D7=Jefe Pastelero | E7=05:00
+A8=☐ | B8=Productos planificados: pan (si aplica) | C8=Obrador | D8=Jefe Pastelero | E8=05:00
+A9=☐ | B9=Cantidades especiales (evento, festivo, fin de semana) | C9=Obrador | D9=Jefe Pastelero | E9=05:00
+A11=  Pedidos y Encargos Especiales
+A12=☐ | B12=Tartas de encargo: nombre cliente, hora recogida, detalles | C12=Admin | D12=Manager | E12=05:00
+A13=☐ | B13=Pedidos de catering / lotes | C13=Admin | D13=Manager | E13=05:00
+A14=☐ | B14=Entregas a domicilio programadas | C14=Admin | D14=Manager | E14=05:00
+A16=  Alertas del Día
+A17=☐ | B17=Alérgenos: productos con alérgenos especiales hoy | C17=General | D17=Jefe Pastelero | E17=05:00
+A18=☐ | B18=Producto nuevo en vitrina (ingredientes, precio, historia) | C18=General | D18=Jefe Pastelero | E18=05:00
+A19=☐ | B19=Promociones activas | C19=General | D19=Manager | E19=05:00
+A20=☐ | B20=Incidencias de ayer / notas del turno anterior | C20=General | D20=Manager | E20=05:00
+A22=  Equipo del Turno
+A23=☐ | B23=Quién trabaja hoy y en qué puesto | C23=General | D23=Manager | E23=05:00
+A24=☐ | B24=Personal nuevo / en formación (asignar tutor) | C24=General | D24=Manager | E24=05:00
+A25=☐ | B25=Horarios especiales de hoy | C25=General | D25=Manager | E25=05:00
+A28=Tareas completadas: | D28==COUNTIF(F5:F26,"✓") | E28=de | F28=14
+A30=Verificado por: | E30=Firma:
+A32=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro
+
+
+######## BONUS-02-calendario-anual-tareas.xlsx ########
+
+--- [Instrucciones] ---
+B2=BONUS 02 — Calendario Anual · Pastelería
+B4=Fechas clave para pastelerías con tareas asociadas.
+B5=▸ Cada fecha incluye qué producir y con cuánta antelación
+B6=▸ Añade las fechas locales de tu zona (fiestas patronales, ferias)
+B7=▸ Usa como base para planificar compras y producción extra
+
+--- [Calendario Anual] ---
+A1=Calendario Anual de Fechas Clave — Pastelería / Obrador
+A3=# | B3=Fecha | C3=Evento | D3=Producción Especial | E3=Antelación | F3=Notas
+A4=1 | B4=6 Enero | C4=Día de Reyes | D4=Roscón de Reyes (nata, trufa, crema) | E4=2 semanas | F4=Pico máximo del año para pastelerías
+A5=2 | B5=14 Febrero | C5=San Valentín | D5=Tartas corazón, bombones, macarons rosas | E5=2 semanas | F5=Packaging especial, mensajes personalizados
+A6=3 | B6=19 Marzo | C6=Día del Padre | D6=Tartas temáticas, pasteles de chocolate | E6=1 semana | F6=Segundo pico fuerte del Q1
+A7=4 | B7=Mar-Abr | C7=Semana Santa | D7=Torrijas, monas de Pascua, huevos chocolate | E7=3 semanas | F7=Producción intensiva 7-10 días
+A8=5 | B8=1er dom. Mayo | C8=Día de la Madre | D8=Tartas con dedicatoria, ramos de macarons | E8=2 semanas | F8=Pico muy fuerte — reforzar despacho
+A9=6 | B9=Junio | C9=Comuniones | D9=Tartas personalizadas, candy bars, galletas decoradas | E9=4 semanas | F9=Pedidos con mucha antelación
+A10=7 | B10=Jun-Sep | C10=Temporada Verano | D10=Helados artesanos, tartas frías, granizados | E10=4 semanas | F10=Adaptar vitrina a productos fríos
+A11=8 | B11=31 Octubre | C11=Halloween | D11=Galletas decoradas, cupcakes temáticos, tartas terror | E11=2 semanas | F11=Decoración de escaparate
+A12=9 | B12=1 Noviembre | C12=Todos los Santos | D12=Buñuelos de viento, huesos de santo, panellets | E12=2 semanas | F12=Muy fuerte en zonas tradicionales
+A13=10 | B13=25 Nov | C13=Black Friday | D13=Promociones en lotes, cajas regalo descuento | E13=1 semana | F13=Oportunidad de venta online
+A14=11 | B14=Diciembre | C14=Navidad Completa | D14=Turrones, polvorones, troncos, mazapanes | E14=6 semanas | F14=Mayor temporada — planificar personal extra
+A15=12 | B15=31 Diciembre | C15=Nochevieja | D15=Tartas para cena, petit fours, macarons | E15=1 semana | F15=Pedidos de restaurantes
+A16=13 | B16=Variable | C16=Fiestas Locales | D16=Dulces tradicionales de tu zona | E16=3 semanas | F16=AÑADE TUS FECHAS LOCALES
+A17=14 | B17=Variable | C17=Bodas (temporada) | D17=Tartas nupciales, candy bars, detalles invitados | E17=2-3 meses | F17=Abril-Octubre pico de bodas
+A18=15 | B18=Variable | C18=Eventos Corporativos | D18=Desayunos empresa, coffee break, cajas regalo | E18=2 semanas | F18=Todo el año, pico en Navidad
+A19=16 | B19=Variable | C19=Cumpleaños | D19=Tartas personalizadas por encargo | E19=3-7 días | F19=Ingresos constantes todo el año
+A20=17 | B20=Variable | C20=Bautizos/Comuniones/Aniversarios | D20=Tartas temáticas, galletas personalizadas | E20=3-4 semanas | F20=Fichas de pedido detalladas
+A22=— Kit de Tareas Recurrentes · Pastelería / Obrador · AI Chef Pro · aichef.pro

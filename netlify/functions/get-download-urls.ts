@@ -116,6 +116,10 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'personalizable': '/dl/kit-tareas-pasteleria/07-plantilla-personalizable.xlsx',
     'apertura-negocio': '/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx',
     'apertura-caja': '/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx',
+    // v2.0 (2026-08-18): 3 plantillas nuevas
+    'plan-produccion': '/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx',
+    'encargos': '/dl/kit-tareas-pasteleria/11-control-encargos.xlsx',
+    'alergenos': '/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx',
     'bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
     'bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
   },
@@ -447,6 +451,9 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'kit-tareas-pasteleria__personalizable': '/dl/kit-tareas-pasteleria/07-plantilla-personalizable.xlsx',
     'kit-tareas-pasteleria__apertura-negocio': '/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx',
     'kit-tareas-pasteleria__apertura-caja': '/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx',
+    'kit-tareas-pasteleria__plan-produccion': '/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx',
+    'kit-tareas-pasteleria__encargos': '/dl/kit-tareas-pasteleria/11-control-encargos.xlsx',
+    'kit-tareas-pasteleria__alergenos': '/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx',
     'kit-tareas-pasteleria__bonus-briefing': '/dl/kit-tareas-pasteleria/BONUS-01-briefing-servicio.xlsx',
     'kit-tareas-pasteleria__bonus-calendario': '/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx',
     // Bar
