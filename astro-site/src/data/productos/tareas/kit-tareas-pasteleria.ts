@@ -30,7 +30,7 @@ const data: KitTareasData = {
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
     reviews: [
       {
-        author: 'Marta Vidal',
+        author: 'Marc Vidal',
         rating: '5',
         body: 'El checklist de fermentación y laminado nos salvó. Ahora seguimos el mismo protocolo y los croissants salen perfectos cada día.',
       },
@@ -171,7 +171,7 @@ const data: KitTareasData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son checklists diseñados por un profesional con 29 años en alta hostelería.',
+      'No son plantillas genéricas. Son checklists diseñados por un chef y consultor gastronómico en activo desde 2010, en cocina desde los 17 años.',
     reasons: [
       {
         icon: 'ClipboardCheck',
@@ -205,7 +205,7 @@ const data: KitTareasData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, pastelerías y obradores.',
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010, ha sido chef propietario y ha dirigido operaciones de grupos de restauración. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, pastelerías y obradores. Más en johnguerrero.es.',
 
   bonus: {
     headingPre: 'Bonos ',
@@ -312,7 +312,7 @@ const data: KitTareasData = {
       },
       {
         name: 'Carlos Martín',
-        role: 'Chef Pâtissier, Hotel Meliá Valencia',
+        role: 'Chef Pâtissier, hotel boutique en Valencia',
         text: 'En un hotel con buffet de desayuno y pastelería de tarde necesitas que todo esté listo a tiempo. Los checklists de apertura por turno eliminaron los olvidos del equipo de noche.',
         avatar: '/avatars/avatar-4.jpg',
       },
@@ -336,7 +336,7 @@ const data: KitTareasData = {
       },
       {
         name: 'Diego Alonso',
-        role: 'Ayudante de Pastelería, Grupo Europastry',
+        role: 'Ayudante de Pastelería, obrador industrial en Barcelona',
         text: 'Como ayudante, el checklist de mi perfil me dice exactamente qué se espera de mí cada turno. No tengo que preguntar constantemente qué hacer. Me da autonomía.',
         avatar: '/avatars/avatar-8.jpg',
       },
@@ -348,7 +348,7 @@ const data: KitTareasData = {
       },
       {
         name: 'Fernando López',
-        role: 'Formador de Pastelería, Escuela Hofmann',
+        role: 'Formador de Pastelería, escuela de pastelería en Barcelona',
         text: 'Recomiendo este kit a todos mis alumnos que van a abrir su propio obrador. Las tareas de producción están perfectamente estructuradas por partida. Es el estándar que debería tener toda pastelería.',
         avatar: '/avatars/chef-avatar-3.jpg',
       },
@@ -374,6 +374,8 @@ const data: KitTareasData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+
+  updateNote: 'Producto revisado · Versión 1.1 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-pasteleria',

@@ -70,7 +70,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-tareas-pasteleria-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Pastelería / Obrador',
     emailTitle: 'Accede a tu Kit de Tareas: Pastelería / Obrador',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 13 checklists operativos + 2 bonus (v2.0):',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos + 2 bonus:',
     emailCta: 'Acceder a mis Checklists',
   },
   'kit-tareas-bar': {

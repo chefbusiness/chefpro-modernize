@@ -23,22 +23,20 @@ export interface ProductChangelogData {
 
 export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   'kit-tareas-pasteleria': {
-    version: '2.0',
+    version: '1.1',
     updated: '2026-08-18',
     entries: [
       {
-        version: '2.0',
+        version: '1.1',
         date: '2026-08-18',
-        title: 'Cuatro plantillas nuevas y revisión completa del kit',
+        title: 'Revisión completa de las 11 plantillas',
         changes: [
-          'Nueva plantilla 10 — Plan de Producción Semanal + Control de Mermas: previsión por producto y partida (Lun–Dom), producido vs vendido, merma en % y en euros, y resumen semanal por partida con semáforo.',
-          'Nueva plantilla 11 — Ficha de Encargo + Registro de Encargos: ficha imprimible con alérgenos, señal y pendiente, registro mensual y agenda semanal de entregas.',
-          'Nueva plantilla 12 — Alérgenos de Vitrina (14 UE): matriz de partida con más de 30 productos de pastelería para verificar con tus fichas técnicas, carta de alérgenos, cartel para la tienda y etiquetas de vitrina imprimibles.',
-          'Nueva plantilla 13 — Registro de Temperaturas, Recepción de Mercancía y Etiquetas de Elaborado: hoja mensual por equipo con rangos objetivo, control de recepción con criterios de rechazo y etiquetas con vidas útiles orientativas.',
-          'Apertura y Cierre del Negocio rediseñado para pastelería con tienda: vitrinas, etiquetado, encargos del día, sobrante y comprobaciones de obrador.',
-          'Checklists revisados por un jefe de obrador: casilla de completado unificada (la que cuenta el total), calendario de campañas corregido (roscón, Semana Santa, Todos los Santos y comuniones), parámetros técnicos de bollería y referencias cruzadas entre plantillas.',
-          'Apertura y Cierre de Caja: descuadre diario calculado en el registro mensual y formatos de moneda.',
-          'Todas las plantillas: valores calculados visibles también en el móvil y en visores que no recalculan, impresión en A4 configurada, metadatos e instrucciones actualizados.',
+          'Casilla de completado unificada: se marca con ✓ en la columna «Hecha» (desplegable) y el total de tareas completadas se calcula solo; la primera columna pasa a numerar las tareas.',
+          'Los totales y cálculos se ven también en el móvil y en visores que no recalculan (valores guardados en el fichero).',
+          'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
+          'Correcciones de un jefe de obrador: amasado corto y temperatura de la masa de croissant, entremets congelados el día anterior para el glaseado, campaña de roscón (venta de la tarde del 5 de enero), torrijas y monas de Pascua en sus fechas reales, Black Friday como fecha variable.',
+          'Metadatos, instrucciones y autoría actualizados en los 11 ficheros.',
+          'Próximamente (v2.0, sin coste): plan de producción semanal con control de mermas, control de encargos, alérgenos de vitrina (14 UE) y registro de temperaturas / recepción de mercancía.',
         ],
       },
       {
