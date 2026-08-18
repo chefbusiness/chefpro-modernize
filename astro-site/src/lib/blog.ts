@@ -161,12 +161,51 @@ const CATEGORIES_FR: BlogCategory[] = [
   },
 ];
 
+// 2026-08-18 — Blog ALEMÁN. Mismo criterio que IT y FR: nace con 0 posts y
+// CUATRO cajas, una por clúster del keyword research de Google.de
+// (ROADMAP_BLOG_ALEMAN.md: ~224 keywords en 19 tandas y 31 SERP), no una
+// traducción de otra taxonomía. El hub sólo pinta las categorías que YA tienen
+// posts.
+//
+// Registro: Sie-Form (decisión 2026-08-16, coherente con los 51 spokes fase10).
+// «KI», no «IA»: es la sigla alemana de la inteligencia artificial.
+// «Restaurantmanagement» va SOLDADO en el nombre (regla 4 del research: el
+// compuesto gana a la forma analítica) pero el slug lleva guion por legibilidad
+// de URL — la regla 2 midió que el guion no reparte series.
+const CATEGORIES_DE: BlogCategory[] = [
+  {
+    slug: 'ki-in-der-gastronomie',
+    name: 'KI in der Gastronomie',
+    description:
+      'Wie künstliche Intelligenz Profiküchen verändert: Werkzeuge, die Ihre Zeit verdienen, ehrliche Vergleiche, Automatisierung, die einen vollen Service übersteht, und die Zahlen hinter jeder Entscheidung.',
+  },
+  {
+    slug: 'restaurant-management',
+    name: 'Restaurantmanagement',
+    description:
+      'Das Handwerk, das man vom Gastraum aus nicht sieht: Wareneinsatz und Kalkulation, Margen, HACCP und Allergene, Team, Lieferanten — und alles, was darüber entscheidet, ob der Betrieb das Jahr im Plus beendet.',
+  },
+  {
+    slug: 'technik-und-rezepte',
+    name: 'Technik und Rezepte',
+    description:
+      'Professionelle Küchentechnik für alle, die sie im Service brauchen: Garverfahren, Fermentation, Schnitttechniken, Mise en Place und Rezepte, die für die Brigade gedacht sind, nicht fürs Foto.',
+  },
+  {
+    slug: 'ai-chef-pro',
+    name: 'AI Chef Pro',
+    description:
+      'Alles über die Plattform: Guides zu den kulinarischen KI-Agenten, Neuigkeiten zu jedem Release und die Workflows, mit denen Küchenchefs und Betreiber täglich wirklich arbeiten.',
+  },
+];
+
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */
 export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = {
   es: CATEGORIES_ES,
   en: CATEGORIES_EN,
   it: CATEGORIES_IT,
   fr: CATEGORIES_FR,
+  de: CATEGORIES_DE,
 };
 
 /** Categorías de un idioma (vacío si ese idioma aún no tiene blog). */
@@ -210,11 +249,17 @@ export const getCategory = (
 //     escribe igual que en inglés — coincidencia, no fallback: sin esta entrada
 //     el francés caería al ROUTE_SEGMENTS.en y serviría /fr/blog/category/…,
 //     que en una URL francesa es ruido.
+//   · El DE usa 'kategorie'/'seite', las palabras ALEMANAS. Mismo criterio
+//     nativo: sin esta entrada caería al fallback inglés y serviría
+//     /de/blog/category/…. 'kategorie' va en minúscula y sin adornos (los
+//     sustantivos alemanes se capitalizan en prosa, no en un segmento de URL:
+//     ninguna URL del sitio lleva mayúsculas).
 const ROUTE_SEGMENTS: Partial<Record<Locale, { category: string; page: string }>> = {
   es: { category: 'categoria', page: 'pagina' },
   en: { category: 'category', page: 'page' },
   it: { category: 'categoria', page: 'pagina' },
   fr: { category: 'categorie', page: 'page' },
+  de: { category: 'kategorie', page: 'seite' },
 };
 const segments = (lang: Locale) => ROUTE_SEGMENTS[lang] ?? ROUTE_SEGMENTS.en!;
 
@@ -244,10 +289,10 @@ export const hasBlog = (lang: Locale): boolean =>
 
 /**
  * Hub del blog para la navegación global (Header/Footer/Hero), que se pinta en
- * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /de/blog, /pt/blog… no
+ * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /pt/blog y /nl/blog no
  * existen y serían un 404. Los idiomas sin blog propio caen al ES, que es el
- * comportamiento que ya tenían antes de 8B.6. (Desde el 2026-08-16 el francés
- * SÍ tiene árbol propio, así que ya no cae: /fr/blog existe.)
+ * comportamiento que ya tenían antes de 8B.6. (El FR tiene árbol propio desde
+ * el 2026-08-16 y el DE desde el 2026-08-18, así que ya no caen.)
  */
 export const blogHubHref = (lang: Locale): string =>
   hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
@@ -347,11 +392,27 @@ export function formatDateFr(d: Date): string {
   return `${day === 1 ? '1er' : day} ${MONTHS_FR[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 }
 
+const MONTHS_DE = [
+  'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni',
+  'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember',
+];
+
+/**
+ * "17. August 2026" — el alemán escribe el día como ORDINAL (número + punto) y
+ * el mes con MAYÚSCULA inicial, como todo sustantivo. Mismo criterio que las
+ * otras cuatro: UTC y sin Intl, para que el resultado no dependa del locale de
+ * la máquina que construye.
+ */
+export function formatDateDe(d: Date): string {
+  return `${d.getUTCDate()}. ${MONTHS_DE[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+}
+
 /** Fecha larga en el idioma del post (fallback: formato ES). */
 export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
   if (lang === 'en') return formatDateEn(d);
   if (lang === 'it') return formatDateIt(d);
   if (lang === 'fr') return formatDateFr(d);
+  if (lang === 'de') return formatDateDe(d);
   return formatDateEs(d);
 }
 

@@ -25,7 +25,7 @@ comparten casi todo el vocabulario sin ser la misma pregunta («¿qué es X?» y
   PARECIDA  similitud alta pero distinto pronombre interrogativo → revisar a mano
 
 Uso:
-    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|it|fr|todos]
+    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|it|fr|de|todos]
                                                              [--nivel identica|definicion|parecida]
 """
 import argparse
@@ -66,6 +66,19 @@ VACIAS_FR = {'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'au', 'aux',
              'comment', 'quel', 'quelle', 'quels', 'quelles', 'etre', 'faire',
              'l', 'd', 'qu', 'n', 's', 'c', 'j', 'm', 't',
              "l'", "d'", "qu'", "n'", "s'", "c'", "j'", "m'", "t'"}
+# 2026-08-18 — blog alemán. Los tokens llegan ya normalizados por sin_tildes():
+# las diéresis caen (für→fur, müssen→mussen) y el ß se transcribe a ss ANTES del
+# regex de tokens() — sin esa transcripción «heißt» quedaría partido en
+# «hei / t», porque el ß no se descompone en NFD y el filtro [^a-z…] lo borra.
+# Por eso la lista se escribe SIN diéresis y con ss.
+VACIAS_DE = {'der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einen',
+             'einem', 'einer', 'eines', 'und', 'oder', 'in', 'im', 'an', 'am',
+             'auf', 'fur', 'mit', 'von', 'vom', 'zu', 'zum', 'zur', 'bei',
+             'ist', 'sind', 'was', 'wie', 'welche', 'welcher', 'welches',
+             'man', 'kann', 'darf', 'muss', 'soll', 'sollte', 'es', 'sich',
+             'nicht', 'nach', 'aus', 'uber', 'wird', 'werden', 'sein', 'hat',
+             'haben', 'gibt', 'viel', 'viele', 'lange', 'oft', 'wann', 'wo',
+             'warum', 'wozu', 'wer', 'ich', 'sie', 'ihr', 'ihre', 'ihren'}
 
 # Arranques que marcan una pregunta de DEFINICIÓN.
 DEFINICION = (
@@ -77,11 +90,18 @@ DEFINICION = (
     # la alternativa larga va primero para que no gane el prefijo corto.
     re.compile(r'^(qu est ce que c est que|qu est ce que|qu est ce qu|'
                r'c est quoi|que signifie|que veut dire|a quoi sert)\b'),
+    # Alemán. Se compara sobre el texto normalizado (ß→ss, sin diéresis), así
+    # que «was heißt» llega como «was heisst». «was versteht man unter» es la
+    # fórmula de manual; va primero para que no gane un prefijo corto.
+    re.compile(r'^(was versteht man unter|was bedeutet|was heisst|'
+               r'was ist|was sind)\b'),
 )
 
 
 def sin_tildes(s):
-    s = unicodedata.normalize('NFD', s.lower())
+    # ß→ss ANTES de normalizar: la eszett no se descompone en NFD y el filtro
+    # [^a-z0-9ñ ] de tokens() la borraría, partiendo «heißt» en «hei / t».
+    s = unicodedata.normalize('NFD', s.lower().replace('ß', 'ss'))
     return ''.join(c for c in s if unicodedata.category(c) != 'Mn')
 
 
@@ -178,19 +198,19 @@ ORDEN = {'IDENTICA': 0, 'DEFINICION': 1, 'PARECIDA': 2}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'fr', 'todos'])
+    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'fr', 'de', 'todos'])
     ap.add_argument('--nivel', default='definicion',
                     choices=['identica', 'definicion', 'parecida'],
                     help='hasta qué nivel reportar (por defecto, sin las PARECIDA)')
     args = ap.parse_args()
 
-    idiomas = ['es', 'en', 'it', 'fr'] if args.lang == 'todos' else [args.lang]
+    idiomas = ['es', 'en', 'it', 'fr', 'de'] if args.lang == 'todos' else [args.lang]
     tope = ORDEN[args.nivel.upper()] if args.nivel.upper() in ORDEN else 1
     total = {'posts': 0, 'frontmatter': 0, 'cuerpo': 0, 'sin_faq': 0}
     hallazgos = []
 
     for lang in idiomas:
-        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT, 'fr': VACIAS_FR}.get(lang, VACIAS_ES)
+        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT, 'fr': VACIAS_FR, 'de': VACIAS_DE}.get(lang, VACIAS_ES)
         carpeta = CONTENT / lang
         if not carpeta.is_dir():
             # Un blog recién abierto puede no tener aún la carpeta (el francés

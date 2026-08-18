@@ -72,8 +72,9 @@ const minutes = readingTime(post.body ?? '');
  * Frecuentes» con F mayúscula. Al abrir el árbol francés (2026-08-16) se pasa a
  * un mapa por idioma y se rellenan a la vez `it` y `fr`.
  *
- * El fallback sigue siendo el español para de/pt/nl, que aún no tienen blog: el
+ * El fallback sigue siendo el español para pt/nl, que aún no tienen blog: el
  * día que lo tengan, su entrada va AQUÍ antes de publicar el primer post.
+ * (El de entró el 2026-08-18 al abrir el árbol alemán, ANTES del primer post.)
  */
 const COPY = {
   en: {
@@ -114,6 +115,22 @@ const COPY = {
     related: 'À lire ensuite',
     authorBio:
       "Chef et consultant en restauration : 29 ans en cuisine haut de gamme et 15 ans de conseil aux restaurants.",
+  },
+  // 2026-08-18 — apertura del blog DE. Sie-Form (decisión 2026-08-16, coherente
+  // con los spokes fase10). La entrada va AQUÍ antes del primer post, como
+  // exige el comentario de arriba: sin ella la UI alemana saldría en castellano.
+  de: {
+    titleSuffix: 'AI Chef Pro Blog',
+    breadcrumbLabel: 'Brotkrumen-Navigation',
+    home: 'Startseite',
+    blog: 'Blog',
+    by: 'Von',
+    updated: '· Aktualisiert am',
+    readingTime: 'Min. Lesezeit',
+    faqHeading: 'Häufig gestellte Fragen',
+    related: 'Weiterlesen',
+    authorBio:
+      'Koch und Gastronomieberater: 29 Jahre in der Spitzengastronomie und 15 Jahre Beratung für Restaurants.',
   },
   es: {
     titleSuffix: 'Blog AI Chef Pro',

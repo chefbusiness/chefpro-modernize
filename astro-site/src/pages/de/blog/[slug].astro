@@ -1,0 +1,26 @@
+---
+// Fase 9-DE (2026-08-18) — Ruta de artículo /de/blog/{slug}.
+// Mismo layout que ES, EN, IT y FR: BlogPost resuelve idioma, canonical, migas
+// y JSON-LD a partir de post.data.lang, así que aquí no hay nada que decidir.
+//
+// Los slugs alemanes NO heredan nada: no existe un WordPress alemán cuyo
+// historial preservar. Se eligen por keyword research de Google.de — ver
+// ROADMAP_BLOG_ALEMAN.md, que documenta las trampas locales: el compuesto gana
+// a la forma analítica, la grafía que cambia letras reparte series
+// (grundsaucen/grundsoßen), y «Sosa» es un futbolista antes que un proveedor.
+import { render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+import { getPublishedPosts, postSlug } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('de');
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+  <Content />
+</BlogPost>

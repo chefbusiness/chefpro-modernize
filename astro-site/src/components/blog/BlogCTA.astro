@@ -21,7 +21,7 @@ interface Props {
 const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
 const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
-// Copy por idioma; de/pt/nl no tienen blog todavía y caen al español.
+// Copy por idioma; pt/nl no tienen blog todavía y caen al español.
 // 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
 // escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
 // hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
@@ -44,6 +44,14 @@ const COPY = {
     body:
       "Fiches techniques, cartes, HACCP, marketing gastronomique et bien plus encore. Des formules pour tous les budgets, à partir de 10 €/mois.",
     cta: 'Découvrir AI Chef Pro',
+  },
+  // 2026-08-18 — blog DE (Sie-Form). Leitmotiv de cifras de fase11: 50+ como
+  // it/fr (deapp sirve 53 agentes según el censo del roadmap alemán).
+  de: {
+    heading: 'Mehr als 50 kulinarische KI-Agenten im Einsatz für Ihren Betrieb',
+    body:
+      'Kalkulation, Speisekarten, HACCP, Gastro-Marketing und vieles mehr. Tarife für jedes Budget, ab 10 €/Monat.',
+    cta: 'AI Chef Pro entdecken',
   },
   es: {
     heading: 'Más de 75 agentes de IA culinarios trabajando para tu negocio',
