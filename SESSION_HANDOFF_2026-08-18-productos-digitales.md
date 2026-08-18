@@ -1,4 +1,12 @@
-# Handoff — 2026-08-18 · Productos digitales AICP: flujo post-pago + Kit Pastelería v2.0 (EN CURSO)
+# Handoff — 2026-08-18 · Productos digitales AICP: flujo post-pago + Kit Pastelería v1.1 LIVE → v2.0 (EN CURSO)
+
+## 0. ACTUALIZACIÓN 2026-08-18 (tarde) — v1.1 EN PRODUCCIÓN (`main` = `7365717`, deploy ready, verificado LIVE)
+- **Kit Pastelería v1.1 LIVE**: 11 xlsx post-procesados (casilla/contador, cache, impresión A4, metadata, bio anclada + johnguerrero.es, fixes de obrador: croissant, entremets D+1, roscón 4→5, torrijas/monas, Black Friday) — script idempotente `scripts/productos-digitales/kit-pasteleria-v1_1-postprocess.py`. Dashboard con badge v1.1 + changelog + cross-sell Miselup/Timlup. Landing saneada (bio, marcas reales fuera, review coherente, «Producto revisado · Versión 1.1»). Gate LIVE 11/11; ficheros de prod abiertos en `data_only` con valores; dashboard verificado en el Chrome de Windows.
+- **Email al cliente**: `scripts/productos-digitales/kit-tareas-pasteleria-v2-EMAIL-CLIENTE.md` (v1.1 ahora + aviso de v2.0 sin coste).
+- **Homologación AICP↔CB (regla de John: UNA sola versión; si AICP actualiza/crea, CB replica)**: censo md5 en `scripts/productos-digitales/homologacion-aicp-cb-censo-2026-08-18.json`. CB por delante → AICP replica: 6 planes de negocio v2.0 (bar-restaurante 14 ficheros vs 3, cafetería, food-truck, tapas-bar, panadería, coctelería), guía casual (7), catering (2). AICP por delante → CB replica: 08/09 en 12 kits + 7 productos que CB no tiene (guías DK/panadería/japonés/mexicano/nikkei/peruano, kit plan financiero) + **kit pastelería v1.1 (y v2.0 cuando salga)**. Kits en CB siguen en v1 (9 ficheros).
+- **v2.0 (4 plantillas nuevas) sigue pendiente**: SPEC §1.3+§1.4 y `kit-tareas-pasteleria-v2-workflow.js` listos; la rama `wip/kit-pasteleria-v2` ya está mergeada en main (el código volvió a 11 tarjetas para la v1.1: al construir la v2.0 volver a añadir las 4 claves plan-produccion/encargos/alergenos/temperaturas en dashboard, mapas kit+mega, MegaPack, mega landing 15, emails «13 checklists + 2 bonus», changelog v2.0 — el diff está en `git show db144d0`).
+- Inputs de John pendientes de usar: accesos Stripe en local (verificar redirect del Payment Link y sesión del cliente del 16-ago; mapa producto→payment link para validación producto↔sesión); bio en johnguerrero.es (barrido site-wide «29 años»); auditoría SEO on-page adversarial de landings (transversal a las 44).
+
 
 > Sesión en el Mac (Fable, ultracode). Se cortó por límite de uso a mitad de la construcción de la v2.0.
 > **Estado del repo al cortar:** `main` = `907066e` (LIVE, deploy ready). Trabajo en curso en la rama
