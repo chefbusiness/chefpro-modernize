@@ -19,6 +19,7 @@ import AuthorityBackedBy from '../AuthorityBackedBy.astro';
 import { t } from '../../i18n/translations';
 import { SITE, type Locale } from '../../i18n/config';
 import SocialCountLive from '../SocialCountLive.astro';
+import { appUrl } from '../../lib/app-url';
 import {
   SEGMENTS,
   getUseCasesByType,
@@ -33,14 +34,7 @@ const { lang = 'es' } = Astro.props;
 
 const SITE_URL = SITE;
 
-// getAppUrl(lang) — VERBATIM de useLanguage.ts.
-const APP_URL = ((l: Locale) => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-})(lang);
+const APP_URL = appUrl(lang);
 
 // ── UI strings — COPIADO VERBATIM de ConsultoriaGastroProHub.tsx (líneas 62-334, 7 idiomas) ──
 const UI: Record<string, {

@@ -5,17 +5,11 @@
 import { creativityApps } from '../../../src/data/apps';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import { appUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
-const appUrl = (l: Locale): string => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-};
 const appBase = appUrl(lang);
 
 // Mapeo de colores individuales por app (idéntico al de la SPA)

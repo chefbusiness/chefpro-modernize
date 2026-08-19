@@ -5,17 +5,10 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { ChefHat, Globe, Calculator, Camera } from 'lucide-react';
+import { appUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
-
-const appUrl = (l: Locale): string => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-};
 
 const ctaButtons = [
   { id: 'creativity', icon: ChefHat, title: t(lang, 'category_ctas.creativity.title'), description: t(lang, 'category_ctas.creativity.description'), path: '/cocina-creativa', color: 'from-orange-500 to-red-600' },

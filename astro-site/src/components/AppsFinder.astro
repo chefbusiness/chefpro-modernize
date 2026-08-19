@@ -6,18 +6,12 @@
 import { personas, getRecommendedApps } from '../../../src/data/personas';
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
+import { appUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 // getAppUrl() de useLanguage — subdominio de la app por idioma
-const appUrl = (l: Locale): string => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-};
 const appBase = appUrl(lang);
 
 const defaultValue = 'chef-ejecutivo';

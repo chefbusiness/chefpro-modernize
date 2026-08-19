@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ALL_USE_CASES, type UseCaseType } from '@/data/use-cases';
+import { APP_URLS } from '../lib/app-urls';
 
 export type Language = 'es' | 'en' | 'fr' | 'de' | 'it' | 'pt' | 'nl';
 
@@ -297,11 +298,8 @@ export const useLanguage = () => {
 
   const getAppUrl = (language?: Language) => {
     const targetLang = language || i18n.language as Language;
-    if (targetLang === 'en') return 'https://enapp.aichef.pro';
-    if (targetLang === 'it') return 'https://itapp.aichef.pro';
-    if (targetLang === 'fr') return 'https://frapp.aichef.pro';
-    if (targetLang === 'de') return 'https://deapp.aichef.pro';
-    return 'https://app.aichef.pro';
+    // i18n.language puede llegar regional ('es-ES'): el ?? cubre esa clave ausente
+    return APP_URLS[targetLang] ?? APP_URLS.es;
   };
 
   const getCurrentLanguage = (): Language => {

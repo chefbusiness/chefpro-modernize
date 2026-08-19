@@ -33,20 +33,14 @@ import {
 import { getProductsByIds } from '../../../../src/data/products-catalog';
 import { linkifyHtml } from '../../lib/linkify-use-case';
 import SocialCountLive from '../SocialCountLive.astro';
+import { appUrl } from '../../lib/app-url';
 
 interface Props { lang?: Locale; uc: UseCase }
 const { lang = 'es', uc } = Astro.props;
 
 const SITE_URL = SITE;
 
-// getAppUrl(lang) — VERBATIM de useLanguage.ts.
-const APP_URL = ((l: Locale) => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-})(lang);
+const APP_URL = appUrl(lang);
 
 // ── UI strings (rendered in JSX) — COPIADO VERBATIM de UseCasePage.tsx (líneas 72-254) ──
 const UI: Record<string, {

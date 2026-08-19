@@ -5,20 +5,12 @@
 import { t } from '../i18n/translations';
 import type { Locale } from '../i18n/config';
 import { blogHubHref } from '../lib/blog';
+import { appUrl } from '../lib/app-url';
 
 interface Props { lang?: Locale }
 const { lang = 'es' } = Astro.props;
 
 const LOCALES: Locale[] = ['es', 'en', 'fr', 'de', 'it', 'pt', 'nl'];
-
-// getAppUrl — mismo mapeo que src/hooks/useLanguage.ts
-const appUrl = (l: Locale): string => {
-  if (l === 'en') return 'https://enapp.aichef.pro';
-  if (l === 'it') return 'https://itapp.aichef.pro';
-  if (l === 'fr') return 'https://frapp.aichef.pro';
-  if (l === 'de') return 'https://deapp.aichef.pro';
-  return 'https://app.aichef.pro';
-};
 
 // Selector de idioma = enlaces planos a la home de cada idioma
 const languages: { code: Locale; name: string; flag: string }[] = [
