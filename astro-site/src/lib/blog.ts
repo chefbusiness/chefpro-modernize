@@ -199,6 +199,41 @@ const CATEGORIES_DE: BlogCategory[] = [
   },
 ];
 
+// 2026-08-19 — Blog PORTUGUÉS. Mismo criterio que IT, FR y DE: nace con 0
+// posts y CUATRO cajas, una por clúster del keyword research de Google.pt
+// (ROADMAP_BLOG_PORTUGUES.md: ~240 keywords + 34 SERP), no una traducción de
+// otra taxonomía. El hub sólo pinta las categorías que YA tienen posts.
+//
+// Registro: PT-PT ESTRICTO (decisión del roadmap: controlo, não controle;
+// «restauração», no «restaurantes» a la brasileña; «gastronómico» con ó).
+// El slug va sin acentos, como todos los segmentos de URL del sitio.
+const CATEGORIES_PT: BlogCategory[] = [
+  {
+    slug: 'ia-na-gastronomia',
+    name: 'IA na Gastronomia',
+    description:
+      'Como a inteligência artificial está a transformar as cozinhas profissionais: ferramentas que merecem o seu tempo, comparativos honestos, automatização que aguenta um serviço completo e os números por trás de cada decisão.',
+  },
+  {
+    slug: 'gestao-de-restaurantes',
+    name: 'Gestão de Restaurantes',
+    description:
+      'O ofício que não se vê a partir da sala: food cost e fichas técnicas, margens, HACCP e alergénios, equipa, fornecedores e tudo o que decide se o negócio acaba o ano no verde.',
+  },
+  {
+    slug: 'tecnica-e-receitas',
+    name: 'Técnica e Receitas',
+    description:
+      'A técnica de cozinha profissional explicada para quem a usa em serviço: confeções, fermentações, cortes, mise en place e receitas pensadas para serem reproduzidas em brigada, não para a fotografia.',
+  },
+  {
+    slug: 'ai-chef-pro',
+    name: 'AI Chef Pro',
+    description:
+      'Tudo sobre a plataforma: guias dos agentes de IA culinários, novidades de cada versão e os fluxos de trabalho que chefs e gestores realmente usam no dia a dia.',
+  },
+];
+
 /** Taxonomía por idioma. Los idiomas sin blog propio devuelven lista vacía. */
 export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = {
   es: CATEGORIES_ES,
@@ -206,6 +241,7 @@ export const BLOG_CATEGORIES_BY_LANG: Partial<Record<Locale, BlogCategory[]>> = 
   it: CATEGORIES_IT,
   fr: CATEGORIES_FR,
   de: CATEGORIES_DE,
+  pt: CATEGORIES_PT,
 };
 
 /** Categorías de un idioma (vacío si ese idioma aún no tiene blog). */
@@ -254,12 +290,18 @@ export const getCategory = (
 //     /de/blog/category/…. 'kategorie' va en minúscula y sin adornos (los
 //     sustantivos alemanes se capitalizan en prosa, no en un segmento de URL:
 //     ninguna URL del sitio lleva mayúsculas).
+//   · El PT usa 'categoria'/'pagina', las palabras PORTUGUESAS — que se
+//     escriben como las españolas ('página' pierde el acento porque es un
+//     segmento de URL, como 'categorie' francés perdió el suyo). No es un
+//     copy-paste del ES: sin esta entrada caería al fallback inglés y
+//     serviría /pt/blog/category/…, ruido en una URL portuguesa.
 const ROUTE_SEGMENTS: Partial<Record<Locale, { category: string; page: string }>> = {
   es: { category: 'categoria', page: 'pagina' },
   en: { category: 'category', page: 'page' },
   it: { category: 'categoria', page: 'pagina' },
   fr: { category: 'categorie', page: 'page' },
   de: { category: 'kategorie', page: 'seite' },
+  pt: { category: 'categoria', page: 'pagina' },
 };
 const segments = (lang: Locale) => ROUTE_SEGMENTS[lang] ?? ROUTE_SEGMENTS.en!;
 
@@ -289,10 +331,11 @@ export const hasBlog = (lang: Locale): boolean =>
 
 /**
  * Hub del blog para la navegación global (Header/Footer/Hero), que se pinta en
- * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /pt/blog y /nl/blog no
- * existen y serían un 404. Los idiomas sin blog propio caen al ES, que es el
+ * los 7 idiomas. OJO: no vale `blogBase(lang)` a secas — /nl/blog no existe
+ * todavía y sería un 404. Los idiomas sin blog propio caen al ES, que es el
  * comportamiento que ya tenían antes de 8B.6. (El FR tiene árbol propio desde
- * el 2026-08-16 y el DE desde el 2026-08-18, así que ya no caen.)
+ * el 2026-08-16, el DE desde el 2026-08-18 y el PT desde el 2026-08-19, así
+ * que ya no caen; sólo queda el NL.)
  */
 export const blogHubHref = (lang: Locale): string =>
   hasBlog(lang) ? blogBase(lang) : blogBase(DEFAULT_LOCALE);
@@ -407,12 +450,27 @@ export function formatDateDe(d: Date): string {
   return `${d.getUTCDate()}. ${MONTHS_DE[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 }
 
+const MONTHS_PT = [
+  'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro',
+];
+
+/**
+ * "17 de agosto de 2026" — el portugués SÍ intercala «de» como el español, y
+ * el mes va en minúscula. Mismo criterio que las demás: UTC y sin Intl, para
+ * que el resultado no dependa del locale de la máquina que construye.
+ */
+export function formatDatePt(d: Date): string {
+  return `${d.getUTCDate()} de ${MONTHS_PT[d.getUTCMonth()]} de ${d.getUTCFullYear()}`;
+}
+
 /** Fecha larga en el idioma del post (fallback: formato ES). */
 export function formatDate(d: Date, lang: Locale = DEFAULT_LOCALE): string {
   if (lang === 'en') return formatDateEn(d);
   if (lang === 'it') return formatDateIt(d);
   if (lang === 'fr') return formatDateFr(d);
   if (lang === 'de') return formatDateDe(d);
+  if (lang === 'pt') return formatDatePt(d);
   return formatDateEs(d);
 }
 

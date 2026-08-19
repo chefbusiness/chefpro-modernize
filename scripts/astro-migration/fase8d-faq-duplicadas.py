@@ -25,7 +25,7 @@ comparten casi todo el vocabulario sin ser la misma pregunta («¿qué es X?» y
   PARECIDA  similitud alta pero distinto pronombre interrogativo → revisar a mano
 
 Uso:
-    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|it|fr|de|todos]
+    python3 scripts/astro-migration/fase8d-faq-duplicadas.py [--lang es|en|it|fr|de|pt|todos]
                                                              [--nivel identica|definicion|parecida]
 """
 import argparse
@@ -79,6 +79,17 @@ VACIAS_DE = {'der', 'die', 'das', 'den', 'dem', 'des', 'ein', 'eine', 'einen',
              'nicht', 'nach', 'aus', 'uber', 'wird', 'werden', 'sein', 'hat',
              'haben', 'gibt', 'viel', 'viele', 'lange', 'oft', 'wann', 'wo',
              'warum', 'wozu', 'wer', 'ich', 'sie', 'ihr', 'ihre', 'ihren'}
+# 2026-08-19 — blog portugués. Los tokens llegan normalizados por sin_tildes():
+# las tildes y la cedilla caen en NFD (ã→a, ç→c, é→e), así que la lista se
+# escribe SIN diacríticos («nao», «sao», «e» cubre «é»). El PT-PT contrae
+# preposición+artículo con formas propias (no/na/nos/nas = em+o…, ao/a =
+# a+o…, pelo/pela = por+o…, dum/duma) que el ES no tiene.
+VACIAS_PT = {'o', 'a', 'os', 'as', 'um', 'uma', 'uns', 'umas', 'de', 'do',
+             'da', 'dos', 'das', 'em', 'no', 'na', 'nos', 'nas', 'e', 'ou',
+             'que', 'ao', 'aos', 'pelo', 'pela', 'para', 'com', 'por', 'se',
+             'seu', 'sua', 'seus', 'suas', 'ha', 'ser', 'esta', 'este',
+             'sao', 'nao', 'qual', 'quais', 'como', 'quanto', 'quantos',
+             'onde', 'quando', 'deve', 'pode', 'tem', 'ter', 'fazer'}
 
 # Arranques que marcan una pregunta de DEFINICIÓN.
 DEFINICION = (
@@ -95,6 +106,13 @@ DEFINICION = (
     # fórmula de manual; va primero para que no gane un prefijo corto.
     re.compile(r'^(was versteht man unter|was bedeutet|was heisst|'
                r'was ist|was sind)\b'),
+    # Portugués. Se compara sobre el texto normalizado (sin tildes ni cedilla),
+    # así que «o que é» llega como «o que e» y «o que são» como «o que sao».
+    # La fórmula nominal «haccp o que é» (que en PT gana a la interrogativa,
+    # regla 5 del roadmap) la cubre la rama de orden invertido de
+    # es_definicion(): acaba en «que e», que se añade allí.
+    re.compile(r'^(o que e|o que sao|o que significa|em que consiste|'
+               r'para que serve)\b'),
 )
 
 
@@ -117,9 +135,15 @@ def es_definicion(q):
         m = rx.match(plano)
         if m:
             return plano[m.end():].strip()
-    # «¿Chili Crisp qué es?» — el PAA también invierte el orden.
+    # «¿Chili Crisp qué es?» — el PAA también invierte el orden. La variante
+    # portuguesa es «haccp o que é» (normalizada: «haccp o que e»), que además
+    # es la forma GANADORA en PT (×6,5 sobre «o que é haccp», regla 5 del
+    # roadmap): sin esta rama, la formulación más frecuente del PAA portugués
+    # no contaría como definición.
     if re.search(r'\bque es\b\s*$', plano):
         return plano[:plano.rfind('que es')].strip()
+    if re.search(r'\bo que e\b\s*$', plano):
+        return plano[:plano.rfind('o que e')].strip()
     return None
 
 
@@ -198,19 +222,19 @@ ORDEN = {'IDENTICA': 0, 'DEFINICION': 1, 'PARECIDA': 2}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'fr', 'de', 'todos'])
+    ap.add_argument('--lang', default='es', choices=['es', 'en', 'it', 'fr', 'de', 'pt', 'todos'])
     ap.add_argument('--nivel', default='definicion',
                     choices=['identica', 'definicion', 'parecida'],
                     help='hasta qué nivel reportar (por defecto, sin las PARECIDA)')
     args = ap.parse_args()
 
-    idiomas = ['es', 'en', 'it', 'fr', 'de'] if args.lang == 'todos' else [args.lang]
+    idiomas = ['es', 'en', 'it', 'fr', 'de', 'pt'] if args.lang == 'todos' else [args.lang]
     tope = ORDEN[args.nivel.upper()] if args.nivel.upper() in ORDEN else 1
     total = {'posts': 0, 'frontmatter': 0, 'cuerpo': 0, 'sin_faq': 0}
     hallazgos = []
 
     for lang in idiomas:
-        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT, 'fr': VACIAS_FR, 'de': VACIAS_DE}.get(lang, VACIAS_ES)
+        vacias = {'en': VACIAS_EN, 'it': VACIAS_IT, 'fr': VACIAS_FR, 'de': VACIAS_DE, 'pt': VACIAS_PT}.get(lang, VACIAS_ES)
         carpeta = CONTENT / lang
         if not carpeta.is_dir():
             # Un blog recién abierto puede no tener aún la carpeta (el francés

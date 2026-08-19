@@ -1,0 +1,27 @@
+---
+// Fase 9-PT (2026-08-19) — Ruta de artículo /pt/blog/{slug}.
+// Mismo layout que ES, EN, IT, FR y DE: BlogPost resuelve idioma, canonical,
+// migas y JSON-LD a partir de post.data.lang, así que aquí no hay nada que
+// decidir.
+//
+// Los slugs portugueses NO heredan nada: no existe un WordPress portugués cuyo
+// historial preservar. Se eligen por keyword research de Google.pt — ver
+// ROADMAP_BLOG_PORTUGUES.md, que documenta las trampas locales: «segurança
+// alimentar» NO es food safety, el acrónimo cambia de lado del Atlántico
+// (HACCP/APPCC), y las grafías alergenios/alergénios reparten series.
+import { render } from 'astro:content';
+import BlogPost from '../../../layouts/BlogPost.astro';
+import { getPublishedPosts, postSlug } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts('pt');
+  return posts.map((post) => ({ params: { slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost post={post}>
+  <Content />
+</BlogPost>

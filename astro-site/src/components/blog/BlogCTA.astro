@@ -21,7 +21,7 @@ interface Props {
 const { utmContent = 'blog-post', lang = 'es' } = Astro.props;
 const appUrl = `${plataforma(lang)}/?utm_source=blog&utm_medium=cta&utm_content=${utmContent}`;
 
-// Copy por idioma; pt/nl no tienen blog todavía y caen al español.
+// Copy por idioma; nl no tiene blog todavía y cae al español.
 // 2026-08-17 — FIN DEL PLAN GRATIS (fase11, 2026-08-15): este componente se
 // escapó del barrido y siguió diciendo «Pruébalo gratis» en 4 idiomas hasta
 // hoy. Copy nuevo con el framing de John («planes para todos los bolsillos,
@@ -52,6 +52,15 @@ const COPY = {
     body:
       'Kalkulation, Speisekarten, HACCP, Gastro-Marketing und vieles mehr. Tarife für jedes Budget, ab 10 €/Monat.',
     cta: 'AI Chef Pro entdecken',
+  },
+  // 2026-08-19 — blog PT (PT-PT: «ementas», no «cardápios»; «carteiras»).
+  // Leitmotiv de cifras de fase11: 50+ como it/fr/de (ptapp sirve 53 agentes
+  // según el censo del roadmap portugués).
+  pt: {
+    heading: 'Mais de 50 agentes de IA culinários ao serviço do seu negócio',
+    body:
+      'Fichas técnicas, ementas, HACCP, marketing gastronómico e muito mais. Planos para todas as carteiras, desde 10 €/mês.',
+    cta: 'Descobrir o AI Chef Pro',
   },
   es: {
     heading: 'Más de 75 agentes de IA culinarios trabajando para tu negocio',
