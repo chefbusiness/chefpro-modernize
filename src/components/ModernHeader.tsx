@@ -101,6 +101,9 @@ const languages: { code: Language; name: string; flag: string }[] = [
 
 export default function ModernHeader() {
   const { currentLanguage, changeLanguage, t, getAppUrl } = useLanguage();
+  // 2026-08-20: ítems del mega-menú de apps → secciones de la landing con ruta
+  // completa (funcionan desde cualquier página). Gemelo de Header.astro.
+  const sectionHref = (id: string) => (currentLanguage === 'es' ? `/#${id}` : `/${currentLanguage}#${id}`);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const currentLang = languages.find(lang => lang.code === currentLanguage);
@@ -314,19 +317,19 @@ export default function ModernHeader() {
                       <div className="grid gap-1">
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                          href={sectionHref('showcase-creatividad')}
                         >
                           {t('nav.creatividad')}
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                          href={sectionHref('showcase-creatividad')}
                         >
                           {t('apps.creativity.pasteleria_creativa.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                          href={sectionHref('showcase-creatividad')}
                         >
                           {t('apps.creativity.food_pairing.name')}
                         </NavigationMenuLink>
@@ -337,25 +340,19 @@ export default function ModernHeader() {
                       <div className="grid gap-1">
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={getAppUrl(currentLanguage)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href={sectionHref('recetarios')}
                         >
                           {t('categories.world_cookbooks.europa.name')} ({t('categories.world_cookbooks.europa.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={getAppUrl(currentLanguage)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href={sectionHref('recetarios')}
                         >
                           {t('categories.world_cookbooks.latinoamerica.name')} ({t('categories.world_cookbooks.latinoamerica.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={getAppUrl(currentLanguage)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href={sectionHref('recetarios')}
                         >
                           {t('categories.world_cookbooks.asia.name')} ({t('categories.world_cookbooks.asia.count').replace(/\D/g, '')})
                         </NavigationMenuLink>
@@ -366,19 +363,19 @@ export default function ModernHeader() {
                       <div className="grid gap-1">
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
+                          href={sectionHref('herramientas-business')}
                         >
                           {t('apps.business.mermas_gencal.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
+                          href={sectionHref('herramientas-business')}
                         >
                           {t('apps.business.id_alergenos.name')}
                         </NavigationMenuLink>
                         <NavigationMenuLink
                           className="block text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
-                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
+                          href={sectionHref('herramientas-business')}
                         >
                           {t('apps.business.mental_coach.name')}
                         </NavigationMenuLink>
@@ -665,7 +662,7 @@ export default function ModernHeader() {
                       </h3>
                       <div className="space-y-1">
                         <a
-                          href={`/${AI_TOOLS_SLUGS[currentLanguage] || AI_TOOLS_SLUGS.es}`}
+                          href={sectionHref('showcase-creatividad')}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -673,9 +670,7 @@ export default function ModernHeader() {
                           {t('nav.creatividad')}
                         </a>
                         <a
-                          href={getAppUrl(currentLanguage)}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          href={sectionHref('recetarios')}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -683,7 +678,7 @@ export default function ModernHeader() {
                           {t('nav.recetarios')}
                         </a>
                         <a
-                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
+                          href={sectionHref('herramientas-business')}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >
@@ -691,7 +686,7 @@ export default function ModernHeader() {
                           {t('nav.herramientas')}
                         </a>
                         <a
-                          href={`/${HERRAMIENTAS_GRATUITAS_SLUGS[currentLanguage] || HERRAMIENTAS_GRATUITAS_SLUGS.es}`}
+                          href={sectionHref('filtro-apps')}
                           onClick={() => setMobileMenuOpen(false)}
                           className="flex items-center gap-3 px-3 py-3 text-sm font-medium rounded-lg hover:bg-accent/50 focus:bg-accent/50 transition-colors touch-manipulation"
                         >

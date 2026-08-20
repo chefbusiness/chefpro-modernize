@@ -14,7 +14,7 @@ export default function AppsFinder() {
   };
 
   return (
-    <section id="filtro-apps" className="container py-16 bg-muted/20">
+    <section id="filtro-apps" className="container scroll-mt-28 py-16 bg-muted/20">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
           {t('finder.title_prefix')} <span className="gradient-text">{t('finder.title_highlight')}</span>

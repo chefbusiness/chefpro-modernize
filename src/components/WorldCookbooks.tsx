@@ -17,7 +17,7 @@ export default function WorldCookbooks() {
   const { t } = useLanguage();
 
   return (
-    <section id="recetarios" className="container py-16 bg-muted/20">
+    <section id="recetarios" className="container scroll-mt-28 py-16 bg-muted/20">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
           <span className="gradient-text">{t('showcase.world_title')}</span>

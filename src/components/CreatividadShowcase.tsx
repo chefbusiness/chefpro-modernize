@@ -23,7 +23,7 @@ export default function CreatividadShowcase() {
   };
 
   return (
-    <section id="showcase-creatividad" className="container py-16">
+    <section id="showcase-creatividad" className="container scroll-mt-28 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
           <span className="gradient-text">{t('showcase.creativity_title')}</span> {t('showcase.creativity_subtitle')}
