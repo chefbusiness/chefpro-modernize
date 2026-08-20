@@ -42,6 +42,37 @@ DL_DIR = os.path.join(ROOT, 'astro-site', 'public')
 UA = {'User-Agent': 'Mozilla/5.0 (gate-flujo-postpago; +aichef.pro)'}
 
 
+SITE_ID = os.environ.get('AICP_SITE_ID', 'ee5802cf-34bb-4354-90d9-aa9f628b4038')
+ACCOUNT = os.environ.get('AICP_NETLIFY_ACCOUNT', 'chebfusiness')
+
+# pro-prompts-ebook es el UNICO producto cuyas descargas NO salen de PRODUCT_FILES:
+# get-download-urls.ts tiene una rama especial que las lee de estas 3 env vars.
+# Sin esto el gate lo daba por bueno habiendo verificado CERO entregables suyos.
+EBOOK_ENV = ('PDF_EBOOK_URL', 'PDF_BONUS1_URL', 'PDF_BONUS23_URL')
+# Tarjetas de src/components/library/DownloadsSection.tsx (claves fijas del JSON).
+EBOOK_CARDS = ('ebook', 'bonus1', 'bonus23')
+
+
+def ebook_env_urls():
+    """Lee PDF_*_URL del site de produccion via netlify CLI. {} si no se puede."""
+    data = json.dumps({'account_id': ACCOUNT, 'site_id': SITE_ID})
+    env = dict(os.environ, PATH=os.path.expanduser('~/Library/pnpm') + ':' + os.environ.get('PATH', ''))
+    try:
+        r = subprocess.run(['netlify', 'api', 'getEnvVars', '--data', data],
+                           capture_output=True, text=True, timeout=60, env=env)
+        vars_ = json.loads(r.stdout)
+    except Exception:
+        return {}
+    out = {}
+    for v in vars_:
+        if v.get('key') in EBOOK_ENV:
+            for val in v.get('values') or []:
+                if val.get('value'):
+                    out[v['key']] = val['value']
+                    break
+    return out
+
+
 def read(path):
     with open(os.path.join(ROOT, path), encoding='utf-8') as f:
         return f.read()
@@ -174,11 +205,12 @@ def main():
         zona = [z for z in zona if z['productId'] == args.only]
 
     fails = []
+    warns = []
     report = []
     all_dl = []
     for z in zona:
         pid = z['productId']
-        row = {'productId': pid, 'issues': []}
+        row = {'productId': pid, 'issues': [], 'warns': []}
         # A. presencia en mapas
         if pid not in vp:
             row['issues'].append('falta en verify-purchase PRODUCTS')
@@ -190,7 +222,30 @@ def main():
             row['issues'].append(f"accessPath resend-access {ra[pid]} != zona-app {z['accessPath']}")
         pf = files.get(pid)
         if pid == 'pro-prompts-ebook':
-            pf = pf or {}
+            # Rama especial de get-download-urls.ts: 3 env vars en lugar de PRODUCT_FILES.
+            pf = dict(pf or {})
+            if args.offline:
+                row['warns'].append('descargas por env var: SIN VERIFICAR en modo --offline (correr sin --offline)')
+            else:
+                urls = ebook_env_urls()
+                faltan = [k for k in EBOOK_ENV if not urls.get(k)]
+                if faltan:
+                    row['issues'].append(
+                        'no se pudieron leer %s del site (netlify CLI logueado?) -> el dashboard '
+                        'mostraria "No disponible"' % ', '.join(faltan))
+                for k, card in zip(EBOOK_ENV, EBOOK_CARDS):
+                    u = urls.get(k)
+                    if not u:
+                        continue
+                    if u.startswith(BASE_URL + '/'):
+                        pf[card] = u[len(BASE_URL):]
+                    else:
+                        row['issues'].append('%s apunta fuera de %s (%s): no se puede cotejar con disco/git'
+                                             % (k, BASE_URL, u))
+                row['n_cards'] = len(EBOOK_CARDS)
+                sin_url = [c for c in EBOOK_CARDS if c not in pf]
+                if sin_url:
+                    row['issues'].append('tarjetas de DownloadsSection sin URL verificable: %s' % sin_url)
         elif pf is None:
             row['issues'].append('falta en get-download-urls PRODUCT_FILES')
             pf = {}
@@ -244,8 +299,11 @@ def main():
               f"{str(r.get('landing', '-')):>8s} {str(r.get('access', '-')):>7s} {str(r.get('library', '-')):>8s}  {len(r['issues'])}")
         for i in r['issues']:
             print(f"    ✗ {i}")
+        for w in r.get('warns', []):
+            print(f"    ⚠ {w}")
         fails.extend(r['issues'])
-    print(f"\nProductos: {len(report)} · entregables: {len(all_dl)} · fallos: {len(fails)}")
+        warns.extend(r.get('warns', []))
+    print(f"\nProductos: {len(report)} · entregables: {len(all_dl)} · fallos: {len(fails)} · avisos: {len(warns)}")
     if args.json:
         with open(args.json, 'w', encoding='utf-8') as f:
             json.dump(report, f, ensure_ascii=False, indent=1)
