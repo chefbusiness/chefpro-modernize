@@ -30,9 +30,27 @@ openpyxl, NO con regex sobre el XML (openpyxl escribe tildes como entidades &#24
 """
 # 2026-08-18 (AICP): openpyxl 3.1.x escribe el cache vacío como <v /> (autocerrado) y no
 # como <v></v> → las regex aceptan ambas formas. Antes inyectaba 0 celdas en silencio.
+# 2026-08-22 (AICP): pycel devuelve a veces escalares de numpy (np.float64,
+# np.str_) y mas abajo solo se inyectan int/float/str nativos -> la celda se
+# quedaba sin cache en silencio. _nativo() los convierte antes de clasificar.
 import openpyxl, zipfile, re, shutil, os, html, logging, contextlib
 logging.disable(logging.CRITICAL)
 from pycel import ExcelCompiler
+
+try:
+    import numpy as _np
+except ImportError:
+    _np = None
+
+
+def _nativo(v):
+    """Escalar de numpy -> tipo nativo de Python (idempotente con el resto)."""
+    if _np is not None:
+        if isinstance(v, _np.generic):
+            return v.item()
+        if isinstance(v, _np.ndarray) and v.ndim == 0:
+            return v.item()
+    return v
 
 def inject(path):
     wb = openpyxl.load_workbook(path)
@@ -50,7 +68,7 @@ def inject(path):
     for sheet, ref in formula_cells:
         try:
             with open(os.devnull,'w') as dn, contextlib.redirect_stderr(dn):
-                v = xl.evaluate(f"'{sheet}'!{ref}")
+                v = _nativo(xl.evaluate(f"'{sheet}'!{ref}"))
             if v is not None and not (isinstance(v, str) and v == ''):
                 vals[(sheet, ref)] = v
         except Exception:
@@ -87,7 +105,12 @@ def inject(path):
             elif isinstance(v, str):
                 esc = html.escape(v)
                 pat = re.compile(r'<c r="'+ref+r'"([^>]*)>(<f[^>]*>[^<]*</f>)(?:<v>[^<]*</v>|<v\s*/>)?</c>')
-                rep = r'<c r="'+ref+r'"\1 t="str">\2<v>'+esc+r'</v></c>'
+                # IDEMPOTENTE (2026-08-22): si la celda ya lleva t="str" de una pasada anterior, se
+                # quita antes de reinsertarlo; si no, la segunda pasada dejaba t="str" t="str"
+                # (atributo duplicado → XML inválido → openpyxl revienta). Cazado en el 10 y el 12.
+                def rep(m, esc=esc, ref=ref):
+                    attrs = re.sub(r'\s+t="[^"]*"', '', m.group(1))
+                    return '<c r="'+ref+'"'+attrs+' t="str">'+m.group(2)+'<v>'+esc+'</v></c>'
                 xml, n = pat.subn(rep, xml, count=1)
                 injected += n
         parts[sfile] = xml.encode('utf-8')

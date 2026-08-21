@@ -13,54 +13,46 @@ const data: KitTareasData = {
 
   seo: {
     title:
-      'Kit de Tareas Recurrentes — Checklists Operativos para Pastelería / Obrador | AI Chef Pro',
+      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 2 Bonus para Pastelería / Obrador | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para pastelería y obrador: producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos. Imprime, delega y firma. Solo €12.',
+      '13 plantillas + 2 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist pastelería, tareas obrador, checklist apertura pastelería, tareas pastelero, control producción pastelería, plantilla tareas obrador, checklist vitrina pastelería, fermentación croissant checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-pasteleria.jpg',
   },
 
   schema: {
-    productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Pastelería / Obrador',
+    productName:
+      'Kit de Tareas Recurrentes — 13 Checklists Operativos + 2 Bonus para Pastelería / Obrador',
     productDescription:
-      '9 checklists operativos pre-rellenados para pastelería y obrador: producción de masas, fermentación, cremas, decoración, vitrina, perfiles y eventos.',
+      '13 plantillas + 2 bonus para pastelería y obrador: 9 checklists pre-rellenados con las tareas reales de un obrador (masas, fermentación, cremas, decoración, vitrina) y 4 registros listos para rellenar: producción y mermas, encargos, alérgenos de vitrina (14 UE) y temperaturas.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
-    aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
-    reviews: [
-      {
-        author: 'Marc Vidal',
-        rating: '5',
-        body: 'El checklist de fermentación y laminado nos salvó. Ahora seguimos el mismo protocolo y los croissants salen perfectos cada día.',
-      },
-      {
-        author: 'Laura Fernández',
-        rating: '5',
-        body: 'Gestionar un obrador que produce bollería, pan y pastelería era caótico. Los checklists por zona y perfil pusieron orden desde el primer día.',
-      },
-      {
-        author: 'Raquel Sánchez',
-        rating: '5',
-        body: 'Lo primero que hago con cada cliente nuevo es entregarle estas checklists. Producción, vitrinas, limpieza, inventario... cubren el 95% de lo que necesita cualquier obrador.',
-      },
-    ],
+    // = faqs on-page, mismo texto y orden (Google exige que el FAQPage sea visible tal cual)
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas para pastelería?',
-        a: 'Sí. Cada checklist viene pre-rellenado con las tareas reales de una pastelería / obrador. Solo personaliza: ajustar, borrar lo que no aplique y añadir lo específico de tu negocio.',
+        a: 'Los 9 checklists vienen pre-rellenados con las tareas reales de una pastelería / obrador: solo tienes que ajustar tareas a tu negocio, borrar las que no apliquen y añadir las específicas de tu obrador. Los 4 registros (producción y mermas, encargos, alérgenos y temperaturas) se entregan listos para rellenar con tus datos; la matriz de alérgenos trae más de 30 productos de partida que debes verificar con tus recetas y proveedores. Las celdas editables están marcadas en verde.',
       },
       {
-        q: '¿Incluye tareas de producción artesanal?',
-        a: 'Sí. Masas de bollería, fermentación, laminado, cremas, mousses, decoración y montaje de vitrina. Todo detallado por partida de producción.',
+        q: '¿Incluye tareas de producción artesanal (croissants, tartas, pan)?',
+        a: 'Sí. Las partidas de producción cubren masas de bollería (croissant, brioche, danesa), masas de pan artesano, masas quebradas, cremas y rellenos (pastelera, ganache, mousse), decoración y montaje de vitrina.',
       },
       {
-        q: '¿En qué se diferencia de Trail?',
-        a: 'Trail cobra €60-75/mes por local. Este kit da las mismas listas en Excel por €12, pago único. Sin suscripción, sin internet.',
+        q: '¿Sirve para una pastelería pequeña y para un obrador grande?',
+        a: 'Sí. Las plantillas son escalables. Una pastelería pequeña puede usar las tareas de obrador y vitrina. Un obrador industrial puede usar todas las partidas de producción, el control de encargos (ficha imprimible, registro mensual y agenda de entregas) y el plan de producción semanal.',
       },
       {
-        q: '¿Puedo usarlo en varias pastelerías?',
-        a: 'Sí. Licencia personal para todos los establecimientos que gestiones.',
+        q: '¿Qué incluye la versión 2.0?',
+        a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 2 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
+      },
+      {
+        q: '¿En qué se diferencia de Trail u otros sistemas?',
+        a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €12, pago único. Sin suscripción, sin internet, ilimitado en locales.',
+      },
+      {
+        q: '¿Puedo usarlo en varias pastelerías u obradores?',
+        a: 'Sí. La licencia es personal — puedes usar los checklists en todos los establecimientos que gestiones. Ideal para cadenas de pastelerías y consultores.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -99,13 +91,14 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Pastelería / Obrador — Checklists por Turno, Área y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu pastelería: producción de masas, fermentación, cremas, decoración, vitrina, eventos y perfiles. Imprime, delega al equipo, firma y archiva.',
+      '13 plantillas Excel: 9 checklists pre-rellenados con las tareas reales de tu pastelería (masas, fermentación, cremas, decoración, vitrina) y 4 registros listos para rellenar (producción y mermas, encargos, alérgenos, temperaturas). Imprime, delega al equipo, firma y archiva.',
     checkItems: [
-      'Checklists de apertura y cierre: obrador, horno, vitrina, despacho',
+      'Checklists de apertura y cierre del obrador: equipos, producción y vitrina/despacho',
       'Partidas de producción: masas, fermentación, cremas, decoración',
       'Tareas por perfil: jefe pastelero, oficial, ayudante, dependiente',
-      'Eventos y temporadas: Navidad, Reyes, San Valentín, Día de la Madre',
+      'Eventos y temporadas: Navidad, Reyes, San Valentín, Semana Santa, comuniones, Todos los Santos',
       'Plantilla en blanco personalizable + briefing de servicio',
+      'Plan de producción con mermas, fichas de encargo, alérgenos de vitrina (14 UE) y registro de temperaturas',
     ],
     ctaLabel: 'COMPRAR AHORA — €12',
   },
@@ -113,15 +106,15 @@ const data: KitTareasData = {
   stickyLabel: 'KIT TAREAS PASTELERÍA — €12',
 
   grid: {
-    countGold: '9',
+    countGold: '13',
     headingRest: ' Plantillas de Tareas Operativas',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de una pastelería / obrador. Solo ajusta, imprime y delega.',
+      '9 checklists pre-rellenados con las tareas reales de una pastelería / obrador y 4 registros listos para rellenar. Solo ajusta, imprime y delega.',
     templates: [
       {
         icon: 'DoorOpen',
         title: 'Apertura y Cierre',
-        desc: '6 checklists: apertura y cierre de obrador, horno, vitrina y despacho. Cada tarea con responsable, hora límite y firma. ~45 tareas pre-rellenadas.',
+        desc: '2 checklists (apertura y cierre del obrador) con 6 bloques y 42 tareas pre-rellenadas. Cada tarea con zona, responsable, hora límite y firma.',
       },
       {
         icon: 'Croissant',
@@ -146,7 +139,7 @@ const data: KitTareasData = {
       {
         icon: 'PartyPopper',
         title: 'Eventos y Festivos',
-        desc: 'Navidad (roscón, turrones), San Valentín (bombones, tartas corazón), Semana Santa (torrijas, monas), Día de la Madre y más.',
+        desc: 'Navidad y Reyes (roscón, turrones), San Valentín, Semana Santa (torrijas, monas), Día de la Madre y del Padre, comuniones (flujo de encargo completo) y Todos los Santos (huesos de santo, panellets, buñuelos). Cada campaña cierra con su post-campaña.',
       },
       {
         icon: 'FileEdit',
@@ -154,14 +147,34 @@ const data: KitTareasData = {
         desc: '3 plantillas en blanco (por franja horaria, por zona, por perfil) para crear tus propias listas de tareas.',
       },
       {
-        icon: 'Megaphone',
-        title: 'BONUS: Briefing Servicio',
-        desc: 'Plantilla de briefing diario: producción del día, encargos especiales, alérgenos, equipo del turno. Imprime y pega en obrador.',
+        icon: 'Store',
+        title: 'Apertura y Cierre del Negocio',
+        desc: 'Pastelería con tienda: vitrinas encendidas y a 2-6 °C, montaje del expositor, etiquetas de precio y alérgenos, encargos del día, TPV y cierre con el sobrante anotado en mermas.',
       },
       {
-        icon: 'Calendar',
-        title: 'BONUS: Calendario Anual',
-        desc: '17 fechas clave de pastelería con producción especial y antelación recomendada. Añade tus fechas locales.',
+        icon: 'Euro',
+        title: 'Apertura y Cierre de Caja',
+        desc: 'Fondo de caja, recuento por denominación al cierre, Z del TPV, descuadre calculado cada día y registro mensual de facturación por forma de pago.',
+      },
+      {
+        icon: 'CalendarRange',
+        title: 'Plan de Producción Semanal y Mermas',
+        desc: 'Plan de la semana por partida con productos ya listados, producido frente a vendido, sobrante, merma en porcentaje y en euros, y resumen semanal con objetivo.',
+      },
+      {
+        icon: 'ShoppingCart',
+        title: 'Control de Encargos',
+        desc: 'Ficha de encargo imprimible (cliente, entrega, alérgenos, señal y pendiente), registro mensual de encargos con estado y agenda de entregas por franjas horarias.',
+      },
+      {
+        icon: 'ShieldAlert',
+        title: 'Alérgenos de Vitrina (14 UE)',
+        desc: 'Matriz de los 14 alérgenos referencia por referencia para contrastar con tus fichas técnicas, carta de alérgenos, cartel para la vitrina y etiquetas recortables.',
+      },
+      {
+        icon: 'Thermometer',
+        title: 'Temperaturas, Recepción y Etiquetas',
+        desc: 'Registro mensual de temperaturas por equipo con dos tomas al día, control de recepción de mercancía con criterios de rechazo y etiquetas de elaborado con fecha y lote.',
       },
     ],
   },
@@ -205,13 +218,13 @@ const data: KitTareasData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010, ha sido chef propietario y ha dirigido operaciones de grupos de restauración. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, pastelerías y obradores. Más en johnguerrero.es.',
+    'John Guerrero, CEO de AI Chef Pro. Chef y consultor gastronómico: en cocina desde los 17 años y asesorando negocios desde 2010. Ha sido chef propietario y ha dirigido operaciones de grupos de restauración. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, pastelerías y obradores. Más en johnguerrero.es.',
 
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 9 plantillas, recibirás estos recursos adicionales — valorados en €16',
+      'Además de las 13 plantillas del kit, recibirás estos dos recursos adicionales — valorados en €16',
     items: [
       {
         icon: 'Megaphone',
@@ -248,7 +261,7 @@ const data: KitTareasData = {
   faqs: [
     {
       q: '¿Las tareas vienen ya rellenadas para pastelería?',
-      a: 'Sí. Cada checklist viene pre-rellenado con las tareas reales de una pastelería / obrador. Solo tienes que personalizar: ajustar tareas a tu negocio, borrar las que no apliquen y añadir las específicas de tu obrador. Las celdas editables están marcadas en verde.',
+      a: 'Los 9 checklists vienen pre-rellenados con las tareas reales de una pastelería / obrador: solo tienes que ajustar tareas a tu negocio, borrar las que no apliquen y añadir las específicas de tu obrador. Los 4 registros (producción y mermas, encargos, alérgenos y temperaturas) se entregan listos para rellenar con tus datos; la matriz de alérgenos trae más de 30 productos de partida que debes verificar con tus recetas y proveedores. Las celdas editables están marcadas en verde.',
     },
     {
       q: '¿Incluye tareas de producción artesanal (croissants, tartas, pan)?',
@@ -256,7 +269,11 @@ const data: KitTareasData = {
     },
     {
       q: '¿Sirve para una pastelería pequeña y para un obrador grande?',
-      a: 'Sí. Las plantillas son escalables. Una pastelería pequeña puede usar las tareas de obrador + vitrina. Un obrador industrial puede usar todas las partidas de producción + gestión de pedidos.',
+      a: 'Sí. Las plantillas son escalables. Una pastelería pequeña puede usar las tareas de obrador y vitrina. Un obrador industrial puede usar todas las partidas de producción, el control de encargos (ficha imprimible, registro mensual y agenda de entregas) y el plan de producción semanal.',
+    },
+    {
+      q: '¿Qué incluye la versión 2.0?',
+      a: 'La versión 2.0 amplía el kit a 13 checklists operativos + 2 bonus. Se suman cuatro plantillas nuevas: el plan de producción semanal con control de mermas en porcentaje y en euros, el control de encargos (ficha imprimible, registro mensual y agenda de entregas), la matriz de alérgenos de vitrina con los 14 de declaración obligatoria (con carta, cartel y etiquetas) y el registro de temperaturas con recepción de mercancía y etiquetas de elaborado. Además, la apertura y el cierre del negocio se han reescrito para una pastelería con tienda y todas las plantillas llevan la impresión A4 ya configurada.',
     },
     {
       q: '¿En qué se diferencia de Trail u otros sistemas?',
@@ -275,14 +292,18 @@ const data: KitTareasData = {
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
     subtitle:
-      '9 checklists operativos para pastelería por menos de lo que cuesta una hora de consultoría.',
+      '13 checklists operativos + 2 bonus para pastelería por menos de lo que cuesta una hora de consultoría.',
     items: [
-      'Checklists de apertura y cierre: obrador, horno, vitrina',
+      'Checklists de apertura y cierre del obrador y de la tienda',
       'Partidas: masas, fermentación, cremas, mousse, decoración',
       'Control de producción: temperaturas, tiempos, FIFO',
       'Checklist diario, semanal y mensual del manager',
       'Tareas por perfil: jefe pastelero, oficial, ayudante, dependiente',
-      'Eventos: Navidad, Reyes, San Valentín, Día de la Madre',
+      'Eventos: Navidad, Reyes, San Valentín, Semana Santa, comuniones, Todos los Santos',
+      'Plan de producción semanal con control de mermas',
+      'Fichas y registro de encargos',
+      'Matriz de alérgenos de vitrina (14 UE) con cartel y etiquetas',
+      'Registro de temperaturas y recepción de mercancía',
       'BONUS: Briefing de Servicio (€7)',
       'BONUS: Calendario Anual de Tareas (€9)',
     ],
@@ -319,7 +340,7 @@ const data: KitTareasData = {
       {
         name: 'Ana Belén Torres',
         role: 'Propietaria, Macarons & Co',
-        text: 'Las tareas de control de vitrina y etiquetado de alérgenos son oro. Con la normativa actual, tener un checklist impreso cada día nos da tranquilidad ante cualquier inspección.',
+        text: 'Las tareas de control de vitrina y etiquetado de alérgenos son oro. Tener el registro firmado cada día nos ordenó el control de vitrina y el etiquetado.',
         avatar: '/avatars/avatar-5.jpg',
       },
       {
@@ -356,13 +377,10 @@ const data: KitTareasData = {
   },
 
   pricing: {
-    priceOld: '€39',
     price: '€12',
-    discountBadge: '-69%',
-    heroNote: 'Precio especial de lanzamiento. Sube pronto',
-    buyBoxNote: 'Precio especial de lanzamiento — 69% de descuento',
-    bonusTotalLabel: 'Valor total del pack completo',
-    bonusSaveLine: '¡Ahorra €27 HOY!',
+    heroNote: 'Pago único · acceso de por vida · actualizaciones incluidas',
+    buyBoxNote: 'Pago único. Sin suscripción: descarga, imprime y úsalo en tu obrador desde hoy',
+    bonusTotalLabel: 'Kit completo: 13 plantillas + 2 bonus',
   },
 
   footerLinks: [
@@ -375,7 +393,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto revisado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-pasteleria',

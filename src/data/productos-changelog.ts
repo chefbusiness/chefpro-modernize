@@ -23,9 +23,25 @@ export interface ProductChangelogData {
 
 export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
   'kit-tareas-pasteleria': {
-    version: '1.1',
-    updated: '2026-08-18',
+    version: '2.0',
+    updated: '2026-08-21',
     entries: [
+      {
+        version: '2.0',
+        date: '2026-08-21',
+        title: 'Cuatro plantillas nuevas y el kit convertido en un sistema',
+        changes: [
+          'Nueva plantilla 10 — Plan de Producción Semanal + Control de Mermas: previsión por producto y partida (Lun–Dom), producido vs vendido, merma en % y en euros, y resumen semanal por partida con semáforo.',
+          'Nueva plantilla 11 — Ficha de Encargo + Registro de Encargos: ficha imprimible con alérgenos, señal y pendiente, registro mensual, agenda semanal de entregas y aviso RGPD.',
+          'Nueva plantilla 12 — Alérgenos de Vitrina (14 UE): matriz de partida con más de 30 productos de pastelería para verificar con tus fichas técnicas, carta de alérgenos, cartel para la tienda y etiquetas de vitrina imprimibles.',
+          'Nueva plantilla 13 — Registro de Temperaturas, Recepción de Mercancía y Etiquetas de Elaborado: hoja mensual por equipo con rangos objetivo, control de recepción con criterios de rechazo y etiquetas con vidas útiles orientativas.',
+          'Apertura y Cierre del Negocio rediseñado para pastelería con tienda: vitrinas, etiquetado, encargos del día, sobrante y comprobaciones finales de obrador.',
+          'Apertura y Cierre de Caja: descuadre diario frente a la Z del TPV en el registro mensual y formatos de moneda.',
+          'Eventos y Festivos: campañas de Todos los Santos y comuniones, y cierre post-campaña (sobrante, mermas, qué se vendió).',
+          'Referencias cruzadas entre plantillas: cada tarea que remite a una ficha, un registro o un control cita la plantilla por su número.',
+          'Columna de marca unificada en las 15 plantillas: «✓ Completada» con desplegable ✓ / — / N/A, resaltado en verde al marcar y total que se recalcula si añades o quitas tareas (antes «Hecha» con total fijo).',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-18',
@@ -36,7 +52,6 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Correcciones de un jefe de obrador: amasado corto y temperatura de la masa de croissant, entremets congelados el día anterior para el glaseado, campaña de roscón (venta de la tarde del 5 de enero), torrijas y monas de Pascua en sus fechas reales, Black Friday como fecha variable.',
           'Metadatos, instrucciones y autoría actualizados en los 11 ficheros.',
-          'Próximamente (v2.0, sin coste): plan de producción semanal con control de mermas, control de encargos, alérgenos de vitrina (14 UE) y registro de temperaturas / recepción de mercancía.',
         ],
       },
       {
