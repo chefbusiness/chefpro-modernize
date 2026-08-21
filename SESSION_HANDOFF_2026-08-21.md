@@ -1,5 +1,16 @@
 # Handoff — 2026-08-21 (sesión VPS 19-20 ago; sustituye a SESSION_HANDOFF_2026-08-19.md como handoff de pista principal)
 
+> ⚡ **ACTUALIZADO la noche del 21-ago: PT tanda 1 PUBLICADA Y VERIFICADA EN
+> VIVO** (commit `5fe1e4c`, deploy ready, batería live en verde). `haccp` y
+> `alergenios` viven en `/pt/blog/` con FAQPage, interenlace 1↔2, CTAs a ptapp
+> y 6 imágenes. **PT va 2/14; siguiente: tanda 2 (posts 3 `contaminação
+> cruzada` y 4 `higiene e segurança alimentar`), con SERP fresca ANTES**
+> (`--pais 2620 --idioma pt`; ojo regla 2: «segurança alimentar» a secas es
+> food SECURITY). Detalle completo en §8 2026-08-21-A del plan maestro.
+> Gotcha nuevo: el recuento esperado de un árbol vacío no cuenta las páginas
+> que solo nacen con contenido — el build es 1.305, no 1.304, porque la
+> página de `categoria/gestao-de-restaurantes` se materializó con la tanda.
+>
 > Estado al cierre del 2026-08-21 (mañana). Esta sesión NO tocó el blog: fue la
 > conexión de la web con las plataformas PT/NL recién lanzadas, el barrido
 > «nada gratis» y el fix del mega-menú del header. **La pista de blog PT sigue
