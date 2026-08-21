@@ -30,7 +30,7 @@ const canonical = `https://aichef.pro/${data.slug}`;
 
 // Los dos chips grises del AuthorSection. Default = el de bar-restaurante; cualquier producto
 // que traiga otra pareja la pasa VERBATIM vía data.authorBadges.
-const authorBadges = data.authorBadges ?? ['Consultor Gastronómico', '+29 años en alta hostelería'];
+const authorBadges = data.authorBadges ?? ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'];
 
 // ---- JSON-LD (equivalentes íntegros a los 3 <script> del Helmet de la SPA) ----
 const productSchema = {
@@ -49,19 +49,29 @@ const productSchema = {
     availability: 'https://schema.org/InStock',
     seller: { '@type': 'Organization', name: 'AI Chef Pro', url: 'https://aichef.pro' },
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: data.schema.aggregateRating.ratingValue,
-    reviewCount: data.schema.aggregateRating.reviewCount,
-    bestRating: data.schema.aggregateRating.bestRating,
-    worstRating: data.schema.aggregateRating.worstRating,
-  },
-  review: data.schema.reviews.map((r) => ({
-    '@type': 'Review',
-    author: { '@type': 'Person', name: r.author },
-    reviewRating: { '@type': 'Rating', ratingValue: r.rating },
-    reviewBody: r.body,
-  })),
+  // aggregateRating/review solo si el data file los define (desde 2026-08-21 son opcionales:
+  // sin sistema real de reseñas no se emiten).
+  ...(data.schema.aggregateRating
+    ? {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: data.schema.aggregateRating.ratingValue,
+          reviewCount: data.schema.aggregateRating.reviewCount,
+          bestRating: data.schema.aggregateRating.bestRating,
+          worstRating: data.schema.aggregateRating.worstRating,
+        },
+      }
+    : {}),
+  ...(data.schema.reviews && data.schema.reviews.length
+    ? {
+        review: data.schema.reviews.map((r) => ({
+          '@type': 'Review',
+          author: { '@type': 'Person', name: r.author },
+          reviewRating: { '@type': 'Rating', ratingValue: r.rating },
+          reviewBody: r.body,
+        })),
+      }
+    : {}),
 };
 
 const faqSchema = {
@@ -219,9 +229,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
 
       <div class="inline-block bg-white/5 border border-[#FFD700]/20 rounded-2xl p-6 md:p-8 backdrop-blur-sm">
         <div class="flex items-center justify-center gap-4 mb-3">
-          <span class="text-2xl text-gray-500 line-through">{data.pricing.priceOld}</span>
+          {data.pricing.priceOld && <span class="text-2xl text-gray-500 line-through">{data.pricing.priceOld}</span>}
           <span class="text-5xl md:text-6xl font-extrabold text-[#FFD700]">{data.pricing.price}</span>
-          <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">{data.pricing.discountBadge}</span>
+          {data.pricing.discountBadge && <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">{data.pricing.discountBadge}</span>}
         </div>
         <p class="text-sm text-gray-400 mb-5">{data.pricing.heroNote}</p>
         <a href={stripeLink} class="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">
@@ -422,9 +432,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
       <div class="kt-fade">
         <div class="text-center bg-white/5 border border-[#FFD700]/30 rounded-2xl p-8">
           <p class="text-gray-400 mb-2">{data.pricing.bonusTotalLabel}</p>
-          <p class="text-3xl text-gray-500 line-through mb-1">{data.pricing.priceOld}</p>
+          {data.pricing.priceOld && <p class="text-3xl text-gray-500 line-through mb-1">{data.pricing.priceOld}</p>}
           <p class="text-5xl md:text-6xl font-extrabold text-[#FFD700] mb-2">{data.pricing.price}</p>
-          <p class="text-[#FFD700] font-bold text-lg">{data.pricing.bonusSaveLine}</p>
+          {data.pricing.bonusSaveLine && <p class="text-[#FFD700] font-bold text-lg">{data.pricing.bonusSaveLine}</p>}
         </div>
       </div>
     </div>
@@ -466,9 +476,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
     <div class="relative max-w-lg mx-auto z-10">
       <div class="bg-white/5 border-2 border-[#FFD700]/50 rounded-2xl p-8 md:p-10 text-center backdrop-blur-sm">
         <div class="flex items-center justify-center gap-4 mb-3">
-          <span class="text-2xl text-gray-500 line-through">{data.pricing.priceOld}</span>
+          {data.pricing.priceOld && <span class="text-2xl text-gray-500 line-through">{data.pricing.priceOld}</span>}
           <span class="text-5xl md:text-6xl font-extrabold text-[#FFD700]">{data.pricing.price}</span>
-          <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">{data.pricing.discountBadge}</span>
+          {data.pricing.discountBadge && <span class="px-3 py-1 rounded-full bg-[#FFD700]/20 text-[#FFD700] text-sm font-bold">{data.pricing.discountBadge}</span>}
         </div>
         <p class="text-gray-400 text-sm mb-6">{data.pricing.buyBoxNote}</p>
         <a href={stripeLink} class="inline-block w-full px-8 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">{data.buyBox.ctaLabel}</a>
@@ -546,7 +556,7 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
           ))}
         </div>
         <div class="flex items-center justify-center gap-4 mb-4">
-          <span class="text-xl text-gray-500 line-through">{data.pricing.priceOld}</span>
+          {data.pricing.priceOld && <span class="text-xl text-gray-500 line-through">{data.pricing.priceOld}</span>}
           <span class="text-4xl md:text-5xl font-extrabold text-[#FFD700]">{data.pricing.price}</span>
         </div>
         <a href={stripeLink} class="inline-block w-full md:w-auto px-10 py-4 bg-[#FFD700] text-black font-bold text-lg rounded-xl hover:bg-[#FFD700]/90 transition-all hover:scale-[1.02] active:scale-[0.98]">{data.cta.ctaLabel}</a>

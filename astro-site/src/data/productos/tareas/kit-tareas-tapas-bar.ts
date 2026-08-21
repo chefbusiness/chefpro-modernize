@@ -172,7 +172,7 @@ const data: KitTareasData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son checklists diseñados por un profesional con 29 años en alta hostelería y experiencia en tapas bars, gastrobars y barras de pinchos.',
+      'No son plantillas genéricas. Son checklists diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010 y experiencia en tapas bars, gastrobars y barras de pinchos.',
     reasons: [
       {
         icon: 'ClipboardCheck',
@@ -206,7 +206,7 @@ const data: KitTareasData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a tapas bars, gastrobars y barras de pinchos en la profesionalización de su operativa: control de cerveza de grifo, rotación FIFO de la vitrina, cocina de raciones y rotación de carta estacional.',
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a tapas bars, gastrobars y barras de pinchos en la profesionalización de su operativa: control de cerveza de grifo, rotación FIFO de la vitrina, cocina de raciones y rotación de carta estacional.',
 
   bonus: {
     headingPre: 'Bonos ',

@@ -596,7 +596,7 @@ const FormacionPresencial = () => {
                   <Badge className="mb-4 bg-amber-100 text-amber-800 border-amber-300">Sobre el Formador</Badge>
                   <h2 className="text-2xl font-bold mb-4">Especialista en IA Aplicada a la Gastronomía</h2>
                   <p className="text-muted-foreground mb-6">
-                    Con más de 15 años de experiencia en consultoría gastronómica, he ayudado a cientos de restaurantes 
+                    Consultor gastronómico desde 2010, he ayudado a cientos de restaurantes 
                     a optimizar sus operaciones y potenciar su creatividad. Como desarrollador de AI Chef Pro y su suite 
                     de 75+ herramientas de IA especializadas, pongo a tu disposición los conocimientos y tecnologías que 
                     están transformando la industria gastronómica.

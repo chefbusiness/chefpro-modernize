@@ -61,7 +61,7 @@ const data: GuiaData = {
   grid: {
     countGold: '20',
     headingRest: ' Capítulos + 8 Plantillas + 6 Checklists + 2 Documentos',
-    subtitle: 'Todo lo que necesitas saber para montar tu restaurante casual en España, escrito por un profesional con 29 años en hostelería.',
+    subtitle: 'Todo lo que necesitas saber para montar tu restaurante casual en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Building2', num: '01', title: 'Qué es un Restaurante Casual', desc: 'Definición, diferencias con fast casual y fine dining. Ticket medio 18-35€, ambiente y público objetivo.' },
       { icon: 'TrendingUp', num: '02', title: 'El Mercado del Casual Dining en España 2026', desc: 'Datos del sector: 12.400M EUR, crecimiento +8% anual, ciudades con mayor demanda y tendencias.' },
@@ -103,7 +103,7 @@ const data: GuiaData = {
 
   why: {
     reasons: [
-      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: '29 años en hostelería, 200+ aperturas asesoradas. Datos reales de restaurantes casuales en España, no teoría de manual.' },
+      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas. Datos reales de restaurantes casuales en España, no teoría de manual.' },
       { icon: 'Calculator', title: 'Números Reales, No Fantasía', desc: 'Inversión real (150K-350K€), food cost 28-32%, salarios España 2026, break-even calculado y 3 escenarios financieros.' },
       { icon: 'FileSpreadsheet', title: 'Incluye Plantillas por Valor de 80€+', desc: 'Plan financiero, escandallos, menú engineering, cronograma Gantt, turnos y más — todo en Excel con fórmulas automáticas.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 3.000-10.000€', desc: 'La misma información que reciben los clientes de consultoría gastronómica, en formato guía por un pago único de 65€.' },
@@ -111,7 +111,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes casuales, gastrobares y franquicias.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes casuales, gastrobares y franquicias.',
     badge3: '+200 aperturas',
   },
 

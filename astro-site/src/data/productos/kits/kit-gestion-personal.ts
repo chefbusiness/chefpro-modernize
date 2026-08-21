@@ -13,7 +13,7 @@
 //   2. hero.badgeTone = 'red'.
 //   3. grid.fourCols = false/omitido (9 plantillas, md:grid-cols-3 — NO 4 columnas).
 //   4. guarantee.headingPre SIN tildes ("Garantia de Satisfaccion ").
-//   5. authorBadges SIN tildes (['Consultor Gastronomico', '+29 anos en alta hosteleria']).
+//   5. authorBadges SIN tildes (['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años']).
 //   stickyVariant: se omite (default 'v2', que es el que usa este producto).
 //   images.gridGallery: se omite — el ContentGrid de la SPA usa EXACTAMENTE el mismo set y
 //   orden de 6 imágenes que el hero (no diverge como en escandallos).
@@ -149,7 +149,7 @@ const data: KitExcelData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genericas de RRHH. Son herramientas disenadas por un profesional con 29 anos en alta hosteleria.',
+      'No son plantillas genericas de RRHH. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
       { icon: 'Utensils', title: 'Disenadas para Hosteleria', desc: 'No son plantillas de RRHH genericas. Estan pensadas para restaurantes, hoteles y catering: turnos partidos, servicios, cocina, sala, extras de fin de semana.' },
       { icon: 'Calculator', title: 'Formulas Reales', desc: 'Calculo automatico de coste laboral, horas extra segun convenio, ratios covers/empleado y prevision de plantilla por servicio. No es teoria: son numeros.' },
@@ -167,8 +167,8 @@ const data: KitExcelData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Mas de 29 anos de carrera profesional en alta hosteleria y restauracion, y 15 anos en consultoria gastronomica. Especialista en gestion de equipos en restaurantes y hoteles, ha disenado sistemas de planificacion de personal para cientos de establecimientos.',
-  authorBadges: ['Consultor Gastronomico', '+29 anos en alta hosteleria'],
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Especialista en gestion de equipos en restaurantes y hoteles, ha disenado sistemas de planificacion de personal para cientos de establecimientos.',
+  authorBadges: ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'],
 
   bonus: {
     headingPre: 'Bonos ',

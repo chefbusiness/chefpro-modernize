@@ -59,7 +59,7 @@ const data: GuiaData = {
   grid: {
     countGold: '22',
     headingRest: ' Capítulos + 10 Plantillas + 8 Checklists + 2 Documentos',
-    subtitle: 'Todo lo que necesitas saber para montar tu restaurante gastronómico en España, escrito por un profesional con 29 años en alta hostelería.',
+    subtitle: 'Todo lo que necesitas saber para montar tu restaurante gastronómico en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Building2', num: '01', title: 'Qué es un Restaurante Gastronómico', desc: 'Definición, categorías (fine dining, casual fine, tasting menu) y diferencias con la restauración convencional.' },
       { icon: 'TrendingUp', num: '02', title: 'El Mercado de la Alta Cocina en España 2026', desc: 'Datos del sector, ticket medio, tendencias de gasto y ciudades con mayor demanda gastronómica.' },
@@ -103,7 +103,7 @@ const data: GuiaData = {
 
   why: {
     reasons: [
-      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: '29 años en alta hostelería, 200+ aperturas asesoradas, clientes con Estrella Michelin y Soles Repsol. Experiencia real, no teoría de manual.' },
+      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas, clientes con Estrella Michelin y Soles Repsol. Experiencia real, no teoría de manual.' },
       { icon: 'Calculator', title: 'Números Reales, No Fantasía', desc: 'Inversión real (500K-900K€), food cost 25-28%, salarios España 2026, márgenes por cubierto y punto de equilibrio calculado.' },
       { icon: 'FileSpreadsheet', title: 'Incluye Plantillas por Valor de 100€+', desc: 'Plan financiero completo, escandallos por plato, menú engineering matrix, cronograma Gantt de apertura y más — todo en Excel con fórmulas.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 3.000-20.000€', desc: 'La misma información que reciben los clientes de consultoría gastronómica premium, en formato guía por un pago único de 85€.' },
@@ -111,7 +111,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos, incluyendo restaurantes con Estrella Michelin y Soles Repsol en España y Europa.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos, incluyendo restaurantes con Estrella Michelin y Soles Repsol en España y Europa.',
     badge3: '+200 aperturas',
   },
 

@@ -12,7 +12,7 @@
 //   · hero.checkItems tiene 8 elementos (bar-restaurante tenía 5) — longitud variable, sin impacto estructural.
 //   · images.gridGallery DIFIERE de images.gallery: hero usa [hero,1,2,3,4,5], grid usa [1,2,3,4,5,6]
 //     (mismo patrón que cocteleria-eventos — el set del ContentGrid excluye el hero e incluye el -6).
-//   · authorBadges se OMITE → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto, verbatim).
+//   · authorBadges se OMITE → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto, verbatim).
 //   · DIVERGENCIA NUEVA (reportada): WhySection.reasons usa el icono lucide `Home`, que NO existía en
 //     Icon.astro (solo estaban Coins/Banknote de la referencia anterior). Añadido aquí mismo: NODES.Home +
 //     KEBAB.Home = 'house' (en lucide-react v0.462.0 el componente `Home` es un alias directo de `House` —
@@ -193,8 +193,8 @@ const data: PlanNegocioData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a chefs privados, personal chefs y showcookers corporate en el lanzamiento de servicios premium a domicilio en España, incluyendo cenas íntimas, eventos corporate, hoteles boutique y wedding planners.',
-  // authorBadges omitido → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto, verbatim)
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a chefs privados, personal chefs y showcookers corporate en el lanzamiento de servicios premium a domicilio en España, incluyendo cenas íntimas, eventos corporate, hoteles boutique y wedding planners.',
+  // authorBadges omitido → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto, verbatim)
 
   bonus: {
     subtitle:

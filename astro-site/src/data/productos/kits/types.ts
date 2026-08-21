@@ -95,13 +95,14 @@ export interface KitExcelFooterLink {
 /** Precios de display (con símbolo/sufijo tal cual la SPA: "€12" o "14 EUR").
  *  Se repiten en hero / buybox / bonus / cta. */
 export interface KitExcelPricing {
-  priceOld: string; // "€49" / "49 EUR"
+  /** Opcional desde 2026-08-21: si se omite, el template no pinta precio tachado. */
+  priceOld?: string; // "€49" / "49 EUR"
   price: string; // "€12" / "14 EUR"
-  discountBadge: string; // "-75%"
+  discountBadge?: string; // "-75%" (opcional: sin ancla no hay badge)
   heroNote: string; // "Precio especial de lanzamiento. Sube pronto"
   buyBoxNote: string; // "Precio especial de lanzamiento — 75% de descuento"
   bonusTotalLabel: string; // "Valor total del kit completo" / "...del pack completo"
-  bonusSaveLine: string; // "¡Ahorra €37 HOY!" / "Ahorra 35 EUR HOY"
+  bonusSaveLine?: string; // "¡Ahorra €37 HOY!" / "Ahorra 35 EUR HOY" (opcional)
 }
 
 export interface KitExcelData {
@@ -128,13 +129,15 @@ export interface KitExcelData {
     productDescription: string;
     price: string; // "12.00" (numérico string para offers.price)
     priceValidUntil: string; // "2026-12-31"
-    aggregateRating: {
+    /** Opcionales desde 2026-08-21: sin sistema real de reseñas NO se emiten (riesgo de acción
+     *  manual de Google por reseñas autoeditadas). Si se omiten, el Product schema va sin ellos. */
+    aggregateRating?: {
       ratingValue: string;
       reviewCount: string; // OJO: puede diferir del nº de reviews (SPA: 10 con 3 reviews)
       bestRating: string;
       worstRating: string;
     };
-    reviews: KitExcelReview[];
+    reviews?: KitExcelReview[];
     faqs: KitExcelFaq[]; // FAQPage — OJO: en esta línea SON MÁS CORTAS que las FAQ on-page
     breadcrumbName: string; // nombre del item #2 del BreadcrumbList
   };
@@ -200,8 +203,8 @@ export interface KitExcelData {
   // ---- Author ----
   authorBio: string;
   /** Los DOS chips grises del AuthorSection (el chip dorado "CEO AI Chef Pro" es constante).
-   *  Default = variante acentuada ['Consultor Gastronómico', '+29 años en alta hostelería']
-   *  (= escandallos/appcc). inventario/gestion pasan la variante sin tildes; plan-financiero
+   *  Default = variante acentuada ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años']
+   *  (bio anclada, nunca sumar cifras). inventario/gestion pasan la variante sin tildes; plan-financiero
    *  pasa ['Consultor Gastronomico', '+200 aperturas asesoradas']. */
   authorBadges?: [string, string];
 

@@ -53,9 +53,9 @@
 //        titleSubtitle? (bloque <span class="block">). En la práctica todos los productos
 //        usan titlePre + titleGold + titleSubtitle (Forma B); titlePost queda opcional por
 //        robustez (ningún producto actual lo usa, se omite).
-//   3. AUTHOR chips grises → authorBadges? (default ['Consultor Gastronómico',
-//        '+29 años en alta hostelería'] = el de bar-restaurante; se sobrescribe VERBATIM si
-//        algún producto trae otra pareja).
+//   3. AUTHOR chips grises → authorBadges? (default ['Consultor Gastronómico desde 2010',
+//        'En cocina desde los 17 años'] = bio anclada, nunca sumar cifras; se sobrescribe
+//        VERBATIM si algún producto trae otra pareja).
 //   4. Longitud de arrays (hero.checkItems 5→9, grid.templates 9|11, bonus.items, etc.):
 //        variable por producto — cada uno copia su array VERBATIM.
 //
@@ -127,13 +127,14 @@ export interface PlanNegocioFooterLink {
 /** Precios de display (con símbolo tal cual la SPA: "€35"). Se repiten en
  *  hero / buyBox / bonus / cta. */
 export interface PlanNegocioPricing {
-  priceOld: string; // "€120"
+  /** Opcional desde 2026-08-21: si se omite, el template no pinta precio tachado. */
+  priceOld?: string; // "€120"
   price: string; // "€35"
-  discountBadge: string; // "-71%"
+  discountBadge?: string; // "-71%" (opcional: sin ancla no hay badge)
   heroNote: string; // hero: "Precio especial de lanzamiento. Sube pronto"
   buyBoxNote: string; // buyBox: "Precio especial de lanzamiento — 71 % de descuento"
   bonusTotalLabel: string; // "Valor total del pack completo"
-  bonusSaveLine: string; // "¡Ahorra €85 HOY!"
+  bonusSaveLine?: string; // "¡Ahorra €85 HOY!" (opcional)
 }
 
 export interface PlanNegocioData {
@@ -160,13 +161,15 @@ export interface PlanNegocioData {
     productDescription: string;
     price: string; // "35.00" (numérico string para offers.price)
     priceValidUntil: string; // "2026-12-31"
-    aggregateRating: {
+    /** Opcionales desde 2026-08-21: sin sistema real de reseñas NO se emiten (riesgo de acción
+     *  manual de Google por reseñas autoeditadas). Si se omiten, el Product schema va sin ellos. */
+    aggregateRating?: {
       ratingValue: string;
       reviewCount: string; // OJO: puede diferir del nº de reviews
       bestRating: string;
       worstRating: string;
     };
-    reviews: PlanNegocioReview[];
+    reviews?: PlanNegocioReview[];
     faqs: PlanNegocioFaq[]; // FAQPage — OJO: suele ser SUBCONJUNTO más corto que faqs on-page
     breadcrumbName: string; // nombre del item #2 del BreadcrumbList
   };
@@ -214,7 +217,8 @@ export interface PlanNegocioData {
   // ---- Author (heading/chip dorado constantes; solo bio + 2 chips grises varían) ----
   authorBio: string;
   /** Los DOS chips grises del AuthorSection (el chip dorado 'CEO AI Chef Pro' es constante).
-   *  Default = el de bar-restaurante ['Consultor Gastronómico', '+29 años en alta hostelería']. */
+   *  Default = variante acentuada ['Consultor Gastronómico desde 2010', 'En cocina desde los
+   *  17 años'] (bio anclada, nunca sumar cifras). */
   authorBadges?: [string, string];
 
   // ---- Bonus (H2 constante 'Bonos Exclusivos'; solo varía subtítulo + items) ----

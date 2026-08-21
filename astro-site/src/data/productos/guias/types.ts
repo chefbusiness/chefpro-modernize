@@ -56,13 +56,14 @@ export interface GuiaData {
 
   /** Precios/rótulos monetarios compartidos por Hero, BuyBox, Bonus, CtaFinal. */
   pricing: {
-    priceOld: string;        // "220 EUR"  (line-through; mismo valor en hero y caja bonus)
+    /** Opcional desde 2026-08-21: si se omite, el template no pinta precio tachado. */
+    priceOld?: string;       // "220 EUR"  (line-through; mismo valor en hero y caja bonus)
     price: string;           // "85 EUR"
-    discountBadge: string;   // "-61%"
+    discountBadge?: string;  // "-61%" (opcional: sin ancla no hay badge)
     heroNote: string;        // "Precio de lanzamiento — ahorra 135 EUR"
     buyBoxNote: string;      // nota del BuyBox (gastro = misma que heroNote)
     bonusTotalLabel: string; // "Valor total: guía + 5 bonus"
-    bonusSaveLine: string;   // "Ahorra 135 EUR HOY"
+    bonusSaveLine?: string;  // "Ahorra 135 EUR HOY" (opcional)
   };
 
   images: {
@@ -143,7 +144,9 @@ export interface GuiaData {
     productDescription: string;
     price: string;          // "85.00"
     priceValidUntil: string; // "2026-12-31"
-    aggregateRating: { ratingValue: string; reviewCount: string; bestRating: string; worstRating: string };
+    /** Opcional desde 2026-08-21: sin sistema real de reseñas NO se emite (riesgo de acción
+     *  manual de Google por reseñas autoeditadas). Si se omite, el Product schema va sin él. */
+    aggregateRating?: { ratingValue: string; reviewCount: string; bestRating: string; worstRating: string };
     /** FAQPage (3 Q en gastro) — NO confundir con las faqs de la página. */
     faqs: { q: string; a: string }[];
     /** BreadcrumbList completo tal cual la SPA (2 o 3 ítems). position = índice + 1. */

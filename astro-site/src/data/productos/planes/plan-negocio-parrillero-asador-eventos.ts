@@ -10,7 +10,7 @@
 // Divergencias vs. constantes de línea (ver types.ts):
 //   · cta.headingPre = 'Es Hora de Lanzar tu ' (patrón de la sub-línea B).
 //   · hero.checkItems tiene 8 elementos.
-//   · authorBadges se OMITE → default ['Consultor Gastronómico', '+29 años en alta hostelería']
+//   · authorBadges se OMITE → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años']
 //     (= el de este producto, verificado byte a byte contra AuthorSection.tsx).
 //   · images.gallery usa extensión .jpg (no .jpeg como cocteleria-eventos) — VERBATIM de la SPA.
 //
@@ -189,8 +189,8 @@ const data: PlanNegocioData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a parrilleros argentinos, asadores castellanos, BBQ pitmasters y emprendedores latinos en el lanzamiento de servicios premium itinerantes de parrilla en España.',
-  // authorBadges omitido → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto)
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a parrilleros argentinos, asadores castellanos, BBQ pitmasters y emprendedores latinos en el lanzamiento de servicios premium itinerantes de parrilla en España.',
+  // authorBadges omitido → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto)
 
   bonus: {
     subtitle:

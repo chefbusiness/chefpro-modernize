@@ -158,7 +158,7 @@ const data: KitTareasData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son checklists diseñados por un profesional con 29 años en alta hostelería.',
+      'No son plantillas genéricas. Son checklists diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
       {
         icon: 'ClipboardCheck',
@@ -192,7 +192,7 @@ const data: KitTareasData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, chocolaterías y obradores.',
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha diseñado sistemas operativos y checklists para cientos de restaurantes, chocolaterías y obradores.',
 
   bonus: {
     headingPre: 'Bonos ',

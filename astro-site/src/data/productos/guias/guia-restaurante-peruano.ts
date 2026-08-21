@@ -62,7 +62,7 @@ const data: GuiaData = {
   grid: {
     countGold: '20',
     headingRest: ' Capítulos + 8 Plantillas + 6 Checklists + 2 Documentos',
-    subtitle: 'Todo lo que necesitas saber para montar tu restaurante peruano en España, escrito por un profesional con 29 años en hostelería.',
+    subtitle: 'Todo lo que necesitas saber para montar tu restaurante peruano en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Building2', num: '01', title: 'Qué es un Restaurante Peruano', desc: 'Cevichería, criollo, Nikkei, Chifa, Novoandino. El fenómeno de la cocina peruana en el mundo y en España.' },
       { icon: 'TrendingUp', num: '02', title: 'El Mercado de la Cocina Peruana en España 2026', desc: 'Crecimiento +40% en 5 años, ciudades con mayor demanda, perfil del cliente y competencia actual.' },
@@ -104,7 +104,7 @@ const data: GuiaData = {
 
   why: {
     reasons: [
-      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: '29 años en hostelería, 200+ aperturas asesoradas. Incluye proveedores reales de productos peruanos en España.' },
+      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas. Incluye proveedores reales de productos peruanos en España.' },
       { icon: 'Calculator', title: 'Números Reales, No Fantasía', desc: 'Inversión real (130K-300K€), food cost 28-32%, márgenes pisco sour 78%, break-even calculado y 3 escenarios.' },
       { icon: 'FileSpreadsheet', title: 'Incluye Plantillas por Valor de 80€+', desc: 'Plan financiero, escandallos de ceviche/lomo saltado/causa, menú engineering, Gantt y más — todo en Excel.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 3.000-10.000€', desc: 'La misma información que reciben los clientes de consultoría gastronómica, en formato guía por un pago único de 65€.' },
@@ -112,7 +112,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes de cocina internacional y cevicherías.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes de cocina internacional y cevicherías.',
     badge3: '+200 aperturas',
   },
 

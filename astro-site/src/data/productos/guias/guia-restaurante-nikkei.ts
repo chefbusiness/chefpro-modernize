@@ -61,7 +61,7 @@ const data: GuiaData = {
   grid: {
     countGold: '20',
     headingRest: ' Capítulos + 9 Plantillas + 6 Checklists + 2 Documentos',
-    subtitle: 'Todo lo que necesitas saber para montar tu restaurante nikkei en España, escrito por un profesional con 29 años en hostelería.',
+    subtitle: 'Todo lo que necesitas saber para montar tu restaurante nikkei en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Building2', num: '01', title: 'Qué es la Cocina Nikkei', desc: 'Fusión peruano-japonesa nacida en Perú (siglo XIX). Referentes: Nobu, Maido, Osaka, Pakta. Identidad y técnica.' },
       { icon: 'TrendingUp', num: '02', title: 'El Mercado Nikkei en España 2026', desc: 'Tendencia premium alcista, ciudades clave, omakase nikkei con lista de espera, público foodie 30-50.' },
@@ -103,7 +103,7 @@ const data: GuiaData = {
 
   why: {
     reasons: [
-      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: '29 años en hostelería, 200+ aperturas asesoradas. Incluye proveedores reales de ají peruano, pescado sashimi-grade y pisco en España.' },
+      { icon: 'UtensilsCrossed', title: 'Escrita por un Profesional', desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas. Incluye proveedores reales de ají peruano, pescado sashimi-grade y pisco en España.' },
       { icon: 'Calculator', title: 'Números Reales, No Fantasía', desc: 'Inversión real (280K-520K€), food cost 32-34%, márgenes pisco/sake/coctelería 75-85%, break-even mes 10-16 y 3 escenarios.' },
       { icon: 'FileSpreadsheet', title: 'Incluye Plantillas por Valor de 80€+', desc: 'Plan financiero, escandallos de tiraditos/ceviches/anticuchos, menú engineering, Gantt y más — todo en Excel.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 3.000-10.000€', desc: 'La misma información que reciben los clientes de consultoría gastronómica, en formato guía por un pago único de 65€.' },
@@ -111,7 +111,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes de cocina internacional, cevicherías, nikkei y omakase premium de fusión peruano-japonesa.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo restaurantes de cocina internacional, cevicherías, nikkei y omakase premium de fusión peruano-japonesa.',
     badge3: '+200 aperturas',
   },
 

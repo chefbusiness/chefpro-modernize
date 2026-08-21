@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: UtensilsCrossed,
     title: 'Escrita por un Profesional',
-    desc: '29 años en hostelería, 200+ aperturas asesoradas. Incluye proveedores reales de ají peruano, pescado sashimi-grade y pisco en España.',
+    desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas. Incluye proveedores reales de ají peruano, pescado sashimi-grade y pisco en España.',
   },
   {
     icon: Calculator,

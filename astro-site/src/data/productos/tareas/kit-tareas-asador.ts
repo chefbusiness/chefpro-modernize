@@ -173,7 +173,7 @@ const data: KitTareasData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son checklists diseñados por un profesional con 29 años en alta hostelería y experiencia en parrilla, asador y cocina al carbón.',
+      'No son plantillas genéricas. Son checklists diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010 y experiencia en parrilla, asador y cocina al carbón.',
     reasons: [
       {
         icon: 'ClipboardCheck',
@@ -207,7 +207,7 @@ const data: KitTareasData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a asadores, steakhouses y parrillas con horno Josper en la profesionalización de su operativa: maduración de carnes, despiece, gestión de brasas y temperaturas por corte.',
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a asadores, steakhouses y parrillas con horno Josper en la profesionalización de su operativa: maduración de carnes, despiece, gestión de brasas y temperaturas por corte.',
 
   bonus: {
     headingPre: 'Bonos ',

@@ -15,12 +15,12 @@ export default function AuthorSection() {
               <p className="text-[#FFD700] text-xs font-bold tracking-[0.2em] uppercase mb-2">Creado por</p>
               <h3 className="text-white text-xl md:text-2xl font-bold mb-3">Chef John Guerrero</h3>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-4">
-                CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a food trucks, operadores de street food y cocinas móviles de eventos en la profesionalización de su operativa: setup y teardown, APPCC móvil, gestión de permisos por evento y calendario anual de eventos y temporadas.
+                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a food trucks, operadores de street food y cocinas móviles de eventos en la profesionalización de su operativa: setup y teardown, APPCC móvil, gestión de permisos por evento y calendario anual de eventos y temporadas.
               </p>
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <span className="px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] text-xs font-medium">CEO AI Chef Pro</span>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">Consultor Gastronómico</span>
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">+29 años en alta hostelería</span>
+                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">En cocina desde los 17 años</span>
               </div>
             </div>
           </div>

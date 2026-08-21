@@ -38,7 +38,7 @@ export default function WhySection() {
               ¿Por Qué Este <span className="text-[#FFD700]">Kit</span>?
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              No son plantillas genéricas. Son checklists diseñados por un profesional con 29 años en alta hostelería y experiencia en marisquerías, restaurantes de pescado y barra de mariscos.
+              No son plantillas genéricas. Son checklists diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010 y experiencia en marisquerías, restaurantes de pescado y barra de mariscos.
             </p>
           </div>
         </FadeIn>

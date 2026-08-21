@@ -48,7 +48,7 @@ export default function ContentGrid() {
               <span className="text-[#FFD700]">20</span> Capítulos + 8 Plantillas + 6 Checklists + 2 Documentos
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Todo lo que necesitas saber para montar tu restaurante mexicano en España, escrito por un profesional con 29 años en hostelería.
+              Todo lo que necesitas saber para montar tu restaurante mexicano en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.
             </p>
           </div>
         </FadeIn>

@@ -12,7 +12,7 @@
 //   · grid.fourCols = false/omitido (9 tarjetas, md:grid-cols-3) — SPA usa grid-cols-2 md:grid-cols-3 (9)
 //   · guarantee.headingPre = default acentuado "Garantía de Satisfacción " (SPA lo usa igual)
 //   · stickyVariant = 'v2' (default; SPA usa px-3 max-w-screen-sm, CTA "COMPRAR")
-//   · authorBadges = default acentuado ['Consultor Gastronómico', '+29 años en alta hostelería'] (SPA idéntico)
+//   · authorBadges = default acentuado ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (SPA idéntico)
 import type { KitExcelData } from './types';
 
 const data: KitExcelData = {
@@ -151,7 +151,7 @@ const data: KitExcelData = {
     headingGold: 'Pack',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son registros diseñados por un profesional con 29 años en alta hostelería.',
+      'No son plantillas genéricas. Son registros diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
       { icon: 'ShieldAlert', title: 'Obligatorio por Ley', desc: 'El sistema APPCC es obligatorio para todos los establecimientos de hostelería en España. Sin estos registros, te expones a sanciones de hasta €60.000 y cierre cautelar.' },
       { icon: 'ClipboardCheck', title: 'Listo para Usar', desc: 'No empieces de cero. Cada plantilla viene pre-rellenada con datos reales de hostelería: zonas de limpieza, peligros HACCP, rangos de temperatura, los 14 alérgenos.' },
@@ -169,8 +169,8 @@ const data: KitExcelData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha diseñado sistemas de seguridad alimentaria y control de costes para cientos de restaurantes.',
-  authorBadges: ['Consultor Gastronómico', '+29 años en alta hostelería'],
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha diseñado sistemas de seguridad alimentaria y control de costes para cientos de restaurantes.',
+  authorBadges: ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'],
 
   bonus: {
     headingPre: 'Bonos ',

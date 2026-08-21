@@ -9,7 +9,7 @@
 //
 // Divergencias vs. constantes de línea (ver types.ts):
 //   · cta.headingPre = 'Es Hora de Hacer Realidad tu ' (patrón de la sub-línea A).
-//   · authorBadges se OMITE → cae en el default ['Consultor Gastronómico', '+29 años en alta hostelería'],
+//   · authorBadges se OMITE → cae en el default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'],
 //     que es EXACTAMENTE el par de este producto.
 //   · hero.titlePost se omite (Forma B: titlePre + gold + titleSubtitle en bloque).
 //   · images.gridGallery se declara explícito: el ContentGrid de la SPA usa un set DISTINTO al hero
@@ -178,8 +178,8 @@ const data: PlanNegocioData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a propietarios de food trucks, flotas de gastro móvil y operadores de street food en España, combinando experiencia operativa con análisis financiero profesional para garantizar viabilidad y rentabilidad rápida.',
-  // authorBadges omitido → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto)
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a propietarios de food trucks, flotas de gastro móvil y operadores de street food en España, combinando experiencia operativa con análisis financiero profesional para garantizar viabilidad y rentabilidad rápida.',
+  // authorBadges omitido → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto)
 
   bonus: {
     subtitle:

@@ -11,7 +11,7 @@
 // Divergencias vs. constantes de línea (ver types.ts):
 //   · cta.headingPre = 'Es Hora de Lanzar tu ' (patrón de la sub-línea B, distinto del "Hacer Realidad tu" de A).
 //   · hero.checkItems tiene 6 elementos (bar-restaurante tenía 5) — longitud variable, sin impacto estructural.
-//   · authorBadges se OMITE → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto).
+//   · authorBadges se OMITE → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto).
 //
 // QUIRKS VERBATIM:
 //   · titlePre / seo.title / schema.productName llevan un '&' literal (la SPA lo escribe '&amp;' en JSX y
@@ -183,8 +183,8 @@ const data: PlanNegocioData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a empresas de eventos, bartenders freelance y wedding planners en el lanzamiento y escalado de barras móviles de coctelería en España.',
-  // authorBadges omitido → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto)
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a empresas de eventos, bartenders freelance y wedding planners en el lanzamiento y escalado de barras móviles de coctelería en España.',
+  // authorBadges omitido → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto)
 
   bonus: {
     subtitle:

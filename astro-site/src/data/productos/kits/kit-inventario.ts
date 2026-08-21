@@ -12,7 +12,7 @@
 //   · hero H1 = Forma B: titlePre + titleGold + titleSubtitle en <span block> (SIN titlePost).
 //   · grid.fourCols = omitido (9 tarjetas, grid-cols-2 md:grid-cols-3 — NO 4 columnas).
 //   · guarantee.headingPre = 'Garantia de Satisfaccion ' (sin tildes).
-//   · authorBadges = ['Consultor Gastronomico', '+29 anos en alta hosteleria'] (sin tildes).
+//   · authorBadges = ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (sin tildes).
 //   · stickyVariant = omitido (default 'v2', igual que la SPA: px-3 max-w-screen-sm, CTA "COMPRAR").
 //   · images.gridGallery = omitido: ContentGrid.tsx usa el MISMO set de 6 imágenes que el hero
 //     (heroImages === galleryImages en la SPA), cae en `images.gallery` por el default del template.
@@ -149,7 +149,7 @@ const data: KitExcelData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genericas de almacen. Son herramientas disenadas por un profesional con 29 anos en alta hosteleria.',
+      'No son plantillas genericas de almacen. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
       { icon: 'Utensils', title: 'Disenadas para Hosteleria', desc: 'Categorias pre-cargadas para restaurantes: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza. No son plantillas genericas de almacen.' },
       { icon: 'Calculator', title: 'Formulas que Ahorran Dinero', desc: 'Par levels con alertas, coste de mermas automatico, variacion de precios entre proveedores y food cost % por categoria. Los numeros trabajan por ti.' },
@@ -167,8 +167,8 @@ const data: KitExcelData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Mas de 29 anos de carrera profesional en alta hosteleria y restauracion, y 15 anos en consultoria gastronomica. Especialista en control de costes, gestion de compras y optimizacion de food cost en cientos de establecimientos.',
-  authorBadges: ['Consultor Gastronomico', '+29 anos en alta hosteleria'],
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Especialista en control de costes, gestion de compras y optimizacion de food cost en cientos de establecimientos.',
+  authorBadges: ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'],
 
   bonus: {
     headingPre: 'Bonos ',

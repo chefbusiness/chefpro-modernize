@@ -116,7 +116,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo panaderías boutique con masa madre, obradores artesanales y panaderías-bistró.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos en España y Europa, incluyendo panaderías boutique con masa madre, obradores artesanales y panaderías-bistró.',
     badge3: '+200 aperturas',
   },
 

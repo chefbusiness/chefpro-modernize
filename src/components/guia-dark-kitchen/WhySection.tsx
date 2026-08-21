@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: Utensils,
     title: 'Escrita por un Profesional',
-    desc: '29 años en alta hostelería y 15 años de consultoría gastronómica. No es teoría: es experiencia real asesorando aperturas de dark kitchens.',
+    desc: 'En cocina desde los 17 años y consultor gastronómico desde 2010. No es teoría: es experiencia real asesorando aperturas de dark kitchens.',
   },
   {
     icon: Calculator,

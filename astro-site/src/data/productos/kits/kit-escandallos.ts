@@ -154,7 +154,7 @@ const data: KitExcelData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas genéricas. Son escandallos diseñados por un profesional con 29 años en alta hostelería.',
+      'No son plantillas genéricas. Son escandallos diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
       { icon: 'Calculator', title: 'Fórmulas Reales, No Valores Fijos', desc: 'Cambias un ingrediente y todo se recalcula: coste, merma, food cost % y PVP sugerido. Sin errores manuales.' },
       { icon: 'FileSpreadsheet', title: 'Para Todo Tipo de Establecimiento', desc: 'Restaurante, catering, pastelería, bar, food truck, cafetería. Cada plantilla adaptada a su formato real.' },
@@ -172,8 +172,8 @@ const data: KitExcelData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha diseñado sistemas de control de costes para cientos de restaurantes.',
-  authorBadges: ['Consultor Gastronómico', '+29 años en alta hostelería'],
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha diseñado sistemas de control de costes para cientos de restaurantes.',
+  authorBadges: ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'],
 
   bonus: {
     headingPre: 'Bonos ',

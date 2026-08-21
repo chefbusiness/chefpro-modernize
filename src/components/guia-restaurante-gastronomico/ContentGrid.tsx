@@ -50,7 +50,7 @@ export default function ContentGrid() {
               <span className="text-[#FFD700]">22</span> Capítulos + 10 Plantillas + 8 Checklists + 2 Documentos
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Todo lo que necesitas saber para montar tu restaurante gastronómico en España, escrito por un profesional con 29 años en alta hostelería.
+              Todo lo que necesitas saber para montar tu restaurante gastronómico en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.
             </p>
           </div>
         </FadeIn>

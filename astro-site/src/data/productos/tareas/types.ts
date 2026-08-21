@@ -74,13 +74,14 @@ export interface KitTareasFooterLink {
 
 /** Precios de display (con símbolo €). Se repiten en hero / buybox / bonus / cta. */
 export interface KitTareasPricing {
-  priceOld: string; // "€69"
+  /** Opcional desde 2026-08-21: si se omite, el template no pinta precio tachado. */
+  priceOld?: string; // "€69"
   price: string; // "€14"
-  discountBadge: string; // "-80%"
+  discountBadge?: string; // "-80%" (opcional: sin ancla no hay badge)
   heroNote: string; // "Precio especial de lanzamiento. Sube pronto"
   buyBoxNote: string; // "Precio especial de lanzamiento — 80% de descuento"
   bonusTotalLabel: string; // "Valor total del pack completo"
-  bonusSaveLine: string; // "¡Ahorra €55 HOY!"
+  bonusSaveLine?: string; // "¡Ahorra €55 HOY!" (opcional)
 }
 
 export interface KitTareasData {
@@ -105,13 +106,15 @@ export interface KitTareasData {
     productDescription: string;
     price: string; // "14.00" (numérico string para offers.price)
     priceValidUntil: string; // "2026-12-31"
-    aggregateRating: {
+    /** Opcionales desde 2026-08-21: sin sistema real de reseñas NO se emiten (riesgo de acción
+     *  manual de Google por reseñas autoeditadas). Si se omiten, el Product schema va sin ellos. */
+    aggregateRating?: {
       ratingValue: string;
       reviewCount: string;
       bestRating: string;
       worstRating: string;
     };
-    reviews: KitTareasReview[];
+    reviews?: KitTareasReview[];
     faqs: KitTareasFaq[]; // FAQPage (OJO: puede diferir de las FAQ on-page)
     breadcrumbName: string; // nombre del item #2 del BreadcrumbList
   };
@@ -169,7 +172,7 @@ export interface KitTareasData {
   authorBio: string;
   /** Los DOS chips grises del AuthorSection (el chip dorado "CEO AI Chef Pro" es
    *  constante en toda la línea). Si se omite, el template usa la variante ACENTUADA
-   *  ['Consultor Gastronómico', '+29 años en alta hostelería'] que usan ~17 productos.
+   *  ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (bio anclada, nunca sumar cifras).
    *  Productos con el quirk tilde-free (dark-kitchen, restaurante-creativo) pasan aquí
    *  la variante sin tildes VERBATIM de su AuthorSection.tsx. */
   authorBadges?: [string, string];

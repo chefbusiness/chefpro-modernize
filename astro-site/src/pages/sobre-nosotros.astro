@@ -3,7 +3,7 @@
 // Objetivo E-E-A-T: bio del fundador, historia de carrera y estándares editoriales
 // (lo prometido en public/llms.txt → /sobre-nosotros). SOLO ES por ahora → locales={['es']}.
 // HECHOS VERIFICADOS: +75 agentes IA · 7 idiomas · pricing live (ver /precios) · John Guerrero
-// 29 años alta hostelería / 15 consultoría · grupo ChefBusiness · info@aichef.pro.
+// En cocina desde los 17 años · consultor gastronómico desde 2010 · grupo ChefBusiness · info@aichef.pro.
 // Bio y estándares redactados con bridge.py (DeepSeek v4) y editados a mano. Sin claims fuera de hechos.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
@@ -28,8 +28,8 @@ const bioParagraphs = [
 const bioChips = [
   'Fundador y CEO de AI Chef Pro',
   'Fundador del grupo ChefBusiness',
-  '+29 años en alta hostelería',
-  '+15 años en consultoría gastronómica',
+  'En cocina desde los 17 años',
+  'Consultor gastronómico desde 2010',
 ];
 
 // Qué hace la suite hoy — stats verificados.
@@ -90,7 +90,7 @@ const faqs = [
   },
   {
     q: '¿Quién está detrás del proyecto?',
-    a: 'AI Chef Pro lo fundó John Guerrero, chef con 29 años de trayectoria en alta hostelería, de los cuales 15 en consultoría gastronómica desde su grupo ChefBusiness. La suite nace de ese oficio: está pensada desde la cocina real, no desde fuera de ella.',
+    a: 'AI Chef Pro lo fundó John Guerrero, chef en cocina desde los 17 años y consultor gastronómico desde 2010 con su grupo ChefBusiness. La suite nace de ese oficio: está pensada desde la cocina real, no desde fuera de ella.',
   },
   {
     q: '¿Cómo creáis los contenidos del blog y del sitio?',
@@ -108,7 +108,7 @@ const faqs = [
 
 const title = 'Sobre AI Chef Pro y Chef John Guerrero | Historia y Estándares';
 const description =
-  'Conoce AI Chef Pro y a su fundador, el chef John Guerrero: 29 años en alta hostelería y 15 en consultoría gastronómica. Una IA para cocineros creada desde el oficio, y nuestros estándares editoriales.';
+  'Conoce AI Chef Pro y a su fundador, el chef John Guerrero: en cocina desde los 17 años y consultor gastronómico desde 2010. Una IA para cocineros creada desde el oficio, y nuestros estándares editoriales.';
 const keywords =
   'sobre ai chef pro, john guerrero chef, fundador ai chef pro, chefbusiness, quiénes somos ai chef pro, estándares editoriales, ia para cocineros';
 
@@ -144,7 +144,7 @@ const schemas = [
     name: 'John Guerrero',
     jobTitle: 'Fundador y CEO de AI Chef Pro',
     description:
-      'Chef con 29 años de trayectoria en alta hostelería, 15 de ellos en consultoría gastronómica. Fundador del grupo ChefBusiness y creador de AI Chef Pro, la suite de IA para profesionales de la cocina.',
+      'Chef en cocina desde los 17 años y consultor gastronómico desde 2010. Fundador del grupo ChefBusiness y creador de AI Chef Pro, la suite de IA para profesionales de la cocina.',
     image: founderImg,
     url: `${SITE}/sobre-nosotros`,
     // Marca personal y canal oficial: enlazan la entidad Person con sus perfiles

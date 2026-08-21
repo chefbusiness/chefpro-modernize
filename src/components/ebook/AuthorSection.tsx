@@ -26,7 +26,7 @@ export default function AuthorSection() {
                 Chef John Guerrero
               </h3>
               <p className="text-gray-400 leading-relaxed text-sm md:text-base mb-4">
-                CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Combina su experiencia en el sector con inteligencia artificial aplicada para ayudar a cientos de profesionales a transformar sus negocios gastronómicos.
+                CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Combina su experiencia en el sector con inteligencia artificial aplicada para ayudar a cientos de profesionales a transformar sus negocios gastronómicos.
               </p>
               <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
                 <span className="px-3 py-1 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/20 text-[#FFD700] text-xs font-medium">
@@ -36,7 +36,7 @@ export default function AuthorSection() {
                   Fundador ChefBusiness
                 </span>
                 <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-400 text-xs font-medium">
-                  +29 años en alta hostelería
+                  En cocina desde los 17 años
                 </span>
               </div>
             </div>

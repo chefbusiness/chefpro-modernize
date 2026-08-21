@@ -38,7 +38,7 @@ export default function ContentGrid() {
               <span className="text-[#FFD700]">12</span> Capítulos + 3 Checklists + Calculadora
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-              Todo lo que necesitas saber para montar tu dark kitchen en España, escrito por un profesional con 29 años en hostelería.
+              Todo lo que necesitas saber para montar tu dark kitchen en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.
             </p>
           </div>
         </FadeIn>

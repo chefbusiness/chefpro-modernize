@@ -67,7 +67,7 @@ const data: GuiaData = {
   grid: {
     countGold: '12',
     headingRest: ' Capítulos + 3 Checklists + Calculadora',
-    subtitle: 'Todo lo que necesitas saber para montar tu dark kitchen en España, escrito por un profesional con 29 años en hostelería.',
+    subtitle: 'Todo lo que necesitas saber para montar tu dark kitchen en España, escrito por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     chapters: [
       { icon: 'Building2', num: '01', title: '¿Qué es una Dark Kitchen?', desc: 'Definiciones, origen del modelo y diferencias clave con un restaurante tradicional.' },
       { icon: 'TrendingUp', num: '02', title: 'El Mercado Delivery en España', desc: 'Datos de Glovo, Uber Eats, Just Eat. Ciudades con mayor demanda y ticket medio.' },
@@ -101,7 +101,7 @@ const data: GuiaData = {
 
   why: {
     reasons: [
-      { icon: 'Utensils', title: 'Escrita por un Profesional', desc: '29 años en alta hostelería y 15 años de consultoría gastronómica. No es teoría: es experiencia real asesorando aperturas de dark kitchens.' },
+      { icon: 'Utensils', title: 'Escrita por un Profesional', desc: 'En cocina desde los 17 años y consultor gastronómico desde 2010. No es teoría: es experiencia real asesorando aperturas de dark kitchens.' },
       { icon: 'Calculator', title: 'Números Reales, No Fantasía', desc: 'Inversión real (30K-80K€), márgenes después de comisiones de plataformas (25-35%), y punto de equilibrio calculado con datos del mercado español.' },
       { icon: 'ShieldCheck', title: 'Requisitos Legales Actualizados', desc: 'Licencias, APPCC, registro sanitario, seguros — todo actualizado a 2026 para España, con diferencias por comunidad autónoma.' },
       { icon: 'RefreshCw', title: 'Un Consultor Cobra 3.000€. Esto es 24€', desc: 'La misma información que reciben los clientes de consultoría, pero en formato guía por un pago único. Sin suscripción.' },
@@ -109,7 +109,7 @@ const data: GuiaData = {
   },
 
   author: {
-    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años en alta hostelería y 15 años en consultoría gastronómica. Ha asesorado la apertura de más de 200 establecimientos hosteleros, incluyendo dark kitchens multi-marca en Madrid, Barcelona y Valencia.',
+    bio: 'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura de más de 200 establecimientos hosteleros, incluyendo dark kitchens multi-marca en Madrid, Barcelona y Valencia.',
     badge3: '+200 aperturas asesoradas',
   },
 

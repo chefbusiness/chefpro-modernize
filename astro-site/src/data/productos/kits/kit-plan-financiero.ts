@@ -161,7 +161,7 @@ const data: KitExcelData = {
     headingGold: 'Kit',
     headingPost: '?',
     subtitle:
-      'No son plantillas financieras genericas. Son herramientas disenadas por un profesional con 29 anos en alta hosteleria y 15 anos asesorando aperturas.',
+      'No son plantillas financieras genericas. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010, asesorando aperturas.',
     reasons: [
       { icon: 'Utensils', title: 'Disenado para Hosteleria', desc: 'Ratios, benchmarks y estructura de costes especificos del sector: food cost, labor cost, prime cost, GOP. No son plantillas financieras genericas.' },
       { icon: 'Calculator', title: 'Formulas Encadenadas', desc: 'Los datos del CAPEX alimentan el cash flow. El plan previsional alimenta el break-even. Los ratios se calculan solos. Todo conectado automaticamente.' },
@@ -179,7 +179,7 @@ const data: KitExcelData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Mas de 29 anos de carrera profesional en alta hosteleria y restauracion, y 15 anos en consultoria gastronomica. Ha asesorado la apertura y el plan financiero de mas de 200 establecimientos hosteleros.',
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado la apertura y el plan financiero de mas de 200 establecimientos hosteleros.',
   authorBadges: ['Consultor Gastronomico', '+200 aperturas asesoradas'],
 
   bonus: {

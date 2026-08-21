@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: UtensilsCrossed,
     title: 'Escrita por un Profesional',
-    desc: '29 años en alta hostelería, 200+ aperturas asesoradas, clientes con Estrella Michelin y Soles Repsol. Experiencia real, no teoría de manual.',
+    desc: 'Chef desde los 17 años y consultor desde 2010, 200+ aperturas asesoradas, clientes con Estrella Michelin y Soles Repsol. Experiencia real, no teoría de manual.',
   },
   {
     icon: Calculator,

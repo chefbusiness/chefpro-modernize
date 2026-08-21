@@ -11,7 +11,7 @@
 //   · cta.headingPre = 'Es Hora de Lanzar tu ' (patrón de la sub-línea B).
 //   · hero.checkItems tiene 9 elementos (bar-restaurante tenía 5) — longitud variable, sin impacto estructural.
 //   · grid.templates tiene 11 tarjetas (icono nuevo LayoutGrid añadido a Icon.astro para este producto).
-//   · authorBadges se OMITE → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto).
+//   · authorBadges se OMITE → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto).
 //
 // QUIRKS VERBATIM:
 //   · titlePre / seo.title / schema.productName llevan un '&' literal (la SPA lo escribe '&amp;' en JSX y
@@ -191,8 +191,8 @@ const data: PlanNegocioData = {
   },
 
   authorBio:
-    'CEO de AI Chef Pro y fundador de ChefBusiness Group. Más de 29 años de carrera profesional en alta hostelería y restauración, y 15 años en consultoría gastronómica. Ha asesorado a chefs y emprendedores en el lanzamiento de servicios premium de catering temático multi-concepto para eventos en España (sushi-bar, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, tandoor indio, BBQ texano, vegano premium…).',
-  // authorBadges omitido → default ['Consultor Gastronómico', '+29 años en alta hostelería'] (= el de este producto)
+    'CEO de AI Chef Pro y fundador de ChefBusiness Group. En cocina desde los 17 años y consultor gastronómico desde 2010. Ha asesorado a chefs y emprendedores en el lanzamiento de servicios premium de catering temático multi-concepto para eventos en España (sushi-bar, tacos al pastor, trattoria italiana, asado argentino, ceviche peruano, tandoor indio, BBQ texano, vegano premium…).',
+  // authorBadges omitido → default ['Consultor Gastronómico desde 2010', 'En cocina desde los 17 años'] (= el de este producto)
 
   bonus: {
     subtitle:
