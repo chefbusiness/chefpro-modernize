@@ -17,6 +17,10 @@ Checks:
   B. Cada /dl/… de get-download-urls existe en disco, está trackeado en git y sirve 200
      con content-type binario (no text/html) y el mismo tamaño que en disco.
   C. Cada clave del dashboard tiene fichero en get-download-urls y viceversa (huérfanas).
+  D. (2026-08-21) Validación producto↔sesión + webhook: netlify/shared/payment-links.ts cubre los 44
+     productos y coincide con las env VITE_STRIPE_PAYMENT_LINK_* de Netlify (drift); stripe-webhook
+     desplegado (LIVE: POST sin firma → 400; 501 = STRIPE_WEBHOOK_SECRET sin configurar → aviso);
+     PURCHASE_VALIDATION informativo.
   D. LIVE: landing 200 con enlace buy.stripe.com (sin '#comprar'), -access y -library 200
      con <astro-island … client="only">.
 
@@ -27,6 +31,7 @@ Uso:
 Salida: tabla por producto + lista de fallos; exit 1 si hay fallos.
 """
 import argparse
+import glob
 import concurrent.futures as cf
 import json
 import os
@@ -71,6 +76,109 @@ def ebook_env_urls():
                     out[v['key']] = val['value']
                     break
     return out
+
+
+def netlify_env_vars():
+    """Todas las env vars del site (valores solo de las no secretas). {} si no se puede."""
+    data = json.dumps({'account_id': ACCOUNT, 'site_id': SITE_ID})
+    env = dict(os.environ, PATH=os.path.expanduser('~/Library/pnpm') + ':' + os.environ.get('PATH', ''))
+    try:
+        r = subprocess.run(['netlify', 'api', 'getEnvVars', '--data', data],
+                           capture_output=True, text=True, timeout=60, env=env)
+        vars_ = json.loads(r.stdout)
+    except Exception:
+        return {}
+    out = {}
+    for v in vars_:
+        vals = v.get('values') or []
+        val = next((x.get('value') for x in vals if x.get('context') in ('production', 'all')), None) or (vals[0].get('value') if vals else None)
+        out[v['key']] = {'value': val, 'secret': bool(v.get('is_secret')), 'scopes': v.get('scopes') or []}
+    return out
+
+
+def check_validacion_y_webhook(vp, offline):
+    """Sección D. Devuelve (issues, warns, info)."""
+    issues, warns, info = [], [], []
+    # mapa productId → Payment Link congelado para las functions
+    try:
+        pl_src = read('netlify/shared/payment-links.ts')
+    except FileNotFoundError:
+        return (['falta netlify/shared/payment-links.ts (python3 scripts/productos-digitales/sync-payment-links.py)'], warns, info)
+    links = dict(re.findall(r"^\s*'([^']+)':\s*'(https://buy\.stripe\.com/[^']+)'", pl_src, re.M))
+    missing = sorted(set(vp) - set(links))
+    extra = sorted(set(links) - set(vp))
+    if missing:
+        issues.append(f'productos de verify-purchase SIN Payment Link en payment-links.ts: {missing}')
+    if extra:
+        issues.append(f'payment-links.ts tiene productos que no existen en verify-purchase: {extra}')
+    dup = {}
+    for pid, u in links.items():
+        dup.setdefault(u, []).append(pid)
+    for u, pids in dup.items():
+        if len(pids) > 1:
+            issues.append(f'Payment Link compartido por {pids} (la validación no los distingue): {u}')
+    for fn in ('netlify/functions/stripe-webhook.ts', 'netlify/shared/purchase-validation.ts'):
+        if not os.path.exists(os.path.join(ROOT, fn)):
+            issues.append(f'falta {fn}')
+    for fn in ('verify-purchase', 'resend-access'):
+        if 'validatePurchase(' not in read(f'netlify/functions/{fn}.ts'):
+            issues.append(f'{fn}.ts no llama a validatePurchase(): la validación producto↔sesión no está cableada')
+    if offline:
+        warns.append('sección D: drift del mapa vs Netlify y estado del webhook SIN VERIFICAR en modo --offline')
+        return issues, warns, info
+    env = netlify_env_vars()
+    if not env:
+        warns.append('no se pudieron leer las env vars de Netlify (netlify CLI): drift y webhook sin verificar')
+    else:
+        # drift: el .ts congelado debe coincidir con las VITE_* del site
+        src_map = {}
+        for f in glob.glob(os.path.join(ROOT, 'astro-site/src/data/productos/*/*.ts')):
+            if f.endswith('types.ts'):
+                continue
+            tt = open(f, encoding='utf-8').read()
+            s = re.search(r"^\s*slug:\s*'([^']+)'", tt, re.M)
+            k = re.search(r"^\s*stripeEnvKey:\s*'([^']+)'", tt, re.M)
+            if s and k:
+                src_map[s.group(1)] = k.group(1)
+        src_map['pro-prompts-ebook'] = 'VITE_STRIPE_PAYMENT_LINK'
+        src_map['mega-pack-tareas'] = 'VITE_STRIPE_PAYMENT_LINK_MEGA_PACK_TAREAS'
+        for pid, key in sorted(src_map.items()):
+            live = (env.get(key) or {}).get('value')
+            if live and links.get(pid) and live != links[pid]:
+                issues.append(f'DRIFT {pid}: Netlify {key}={live} ≠ payment-links.ts {links[pid]} (regenerar con sync-payment-links.py)')
+            elif not live:
+                issues.append(f'{pid}: env {key} no existe en Netlify')
+        mode = (env.get('PURCHASE_VALIDATION') or {}).get('value') or 'soft (default)'
+        info.append(f'PURCHASE_VALIDATION = {mode}')
+        if 'STRIPE_WEBHOOK_SECRET' not in env:
+            warns.append('STRIPE_WEBHOOK_SECRET no existe en el site: el webhook está INERTE (John: registrar endpoint en Stripe + env var)')
+        elif 'functions' not in env['STRIPE_WEBHOOK_SECRET']['scopes']:
+            issues.append("STRIPE_WEBHOOK_SECRET sin scope 'functions'")
+    # el endpoint responde (400 sin firma = desplegado y armado; 501 = inerte)
+    st, _, _, body = http_post(BASE_URL + '/.netlify/functions/stripe-webhook', '{}')
+    if st == 400:
+        info.append('stripe-webhook LIVE: 400 sin firma (desplegado y armado)')
+    elif st == 501:
+        warns.append('stripe-webhook LIVE responde 501: desplegado pero sin STRIPE_WEBHOOK_SECRET')
+    else:
+        issues.append(f'stripe-webhook LIVE → {st} (esperado 400/501): {body[:80]!r}')
+    return issues, warns, info
+
+
+def http_post(url, data):
+    args = ['curl', '-sS', '-A', UA['User-Agent'], '--max-time', '30', '-D', '-', '-X', 'POST',
+            '-H', 'Content-Type: application/json', '--data', data, url]
+    try:
+        r = subprocess.run(args, capture_output=True, timeout=40)
+    except Exception as e:  # noqa
+        return -1, str(e), None, b''
+    raw = r.stdout
+    sep = raw.find(b'\r\n\r\n')
+    if r.returncode != 0 or sep == -1:
+        return -1, '', None, b''
+    lines = raw[:sep].decode('latin-1').split('\r\n')
+    status = int(lines[0].split()[1]) if len(lines[0].split()) > 1 else -1
+    return status, '', None, raw[sep + 4:]
 
 
 def read(path):
@@ -303,6 +411,19 @@ def main():
             print(f"    ⚠ {w}")
         fails.extend(r['issues'])
         warns.extend(r.get('warns', []))
+    # D. validación producto↔sesión + webhook (transversal, no por producto)
+    d_issues, d_warns, d_info = check_validacion_y_webhook(vp, args.offline)
+    print('\nValidación producto↔sesión + webhook:')
+    for i in d_info:
+        print(f'    · {i}')
+    for i in d_issues:
+        print(f'    ✗ {i}')
+    for w in d_warns:
+        print(f'    ⚠ {w}')
+    if not d_issues and not d_warns:
+        print('    ✓ mapa de 44 Payment Links al día, validación cableada, webhook armado')
+    fails.extend(d_issues)
+    warns.extend(d_warns)
     print(f"\nProductos: {len(report)} · entregables: {len(all_dl)} · fallos: {len(fails)} · avisos: {len(warns)}")
     if args.json:
         with open(args.json, 'w', encoding='utf-8') as f:

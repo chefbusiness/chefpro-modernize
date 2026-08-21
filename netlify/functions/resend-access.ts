@@ -1,4 +1,5 @@
 import type { Handler } from '@netlify/functions';
+import { validatePurchase } from '../shared/purchase-validation';
 
 // ── Product config ──────────────────────────────────────────────
 interface ProductConfig {
@@ -70,7 +71,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-tareas-pasteleria-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Pastelería / Obrador',
     emailTitle: 'Accede a tu Kit de Tareas: Pastelería / Obrador',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos + 2 bonus:',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 13 checklists operativos + 2 bonus (v2.0):',
     emailCta: 'Acceder a mis Checklists',
   },
   'kit-tareas-bar': {
@@ -362,14 +363,35 @@ export const handler: Handler = async (event) => {
     const emailNorm = String(email).trim().toLowerCase();
     const variants = emailNorm === email ? [email] : [emailNorm, email];
     const results = await Promise.all(
-      variants.map((e) => stripe.checkout.sessions.list({ customer_details: { email: e }, limit: 10 }))
+      variants.map((e) => stripe.checkout.sessions.list({ customer_details: { email: e }, limit: 100 }))
     );
     const allSessions = results.flatMap((r) => r.data);
 
-    const paidSession = allSessions.find((s) => s.payment_status === 'paid');
+    const paidSessions = allSessions.filter((s) => s.payment_status === 'paid');
 
-    if (!paidSession) {
+    if (!paidSessions.length) {
       return { statusCode: 404, headers, body: JSON.stringify({ error: 'No purchase found' }) };
+    }
+
+    // Elegir la sesión que pagó ESTE producto (no cualquier compra del email):
+    // ver netlify/shared/purchase-validation.ts. En modo soft, si ninguna coincide se concede
+    // igualmente (y se loguea); en strict es 404 para este producto.
+    let paidSession: (typeof paidSessions)[number] | null = null;
+    let mode: 'off' | 'soft' | 'strict' = 'soft';
+    for (const s of paidSessions) {
+      const v = await validatePurchase(stripe, s, productId, 'resend-access');
+      mode = v.mode;
+      if (v.verdict === 'match' || v.verdict === 'unknown' || mode === 'off') {
+        paidSession = s;
+        break;
+      }
+    }
+    if (!paidSession) {
+      console.warn(`[purchase-validation] resend-access: ${emailNorm} tiene ${paidSessions.length} compra(s) pero ninguna de ${productId} (modo ${mode})`);
+      if (mode === 'strict') {
+        return { statusCode: 404, headers, body: JSON.stringify({ error: 'No purchase found for this product' }) };
+      }
+      paidSession = paidSessions[0];
     }
 
     // Generate new JWT and send email
@@ -404,7 +426,7 @@ export const handler: Handler = async (event) => {
               </a>
             </div>
             <p style="color: #666; font-size: 14px; line-height: 1.6;">
-              Guarda este email. Puedes usar este enlace en cualquier momento durante los próximos 12 meses.
+              Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
             </p>
             <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
             <p style="color: #999; font-size: 12px;">

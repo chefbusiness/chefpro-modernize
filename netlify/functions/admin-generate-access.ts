@@ -108,7 +108,7 @@ export const handler: Handler = async (event) => {
                 </a>
               </div>
               <p style="color: #666; font-size: 14px; line-height: 1.6;">
-                Guarda este email. El enlace es válido durante 12 meses.
+                Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
               </p>
               <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
               <p style="color: #999; font-size: 12px;">

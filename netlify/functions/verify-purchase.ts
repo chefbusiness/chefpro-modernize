@@ -1,4 +1,5 @@
 import type { Handler } from '@netlify/functions';
+import { validatePurchase } from '../shared/purchase-validation';
 
 // ── Product config ──────────────────────────────────────────────
 interface ProductConfig {
@@ -9,7 +10,7 @@ interface ProductConfig {
   emailCta: string;
 }
 
-const PRODUCTS: Record<string, ProductConfig> = {
+export const PRODUCTS: Record<string, ProductConfig> = {
   'pro-prompts-ebook': {
     accessPath: '/pro-prompts-library-access',
     emailSubject: 'Tu acceso a Pro Prompts Library',
@@ -70,7 +71,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-tareas-pasteleria-access',
     emailSubject: 'Tu acceso al Kit de Tareas: Pastelería / Obrador',
     emailTitle: '¡Gracias por tu compra!',
-    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Pastelería / Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos + 2 bonus:',
+    emailBody: 'Tu acceso al <strong>Kit de Tareas Recurrentes: Pastelería / Obrador</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 13 checklists operativos + 2 bonus (v2.0):',
     emailCta: 'Acceder a mis Checklists',
   },
   'kit-tareas-bar': {
@@ -354,6 +355,15 @@ export const handler: Handler = async (event) => {
       const session = await stripe.checkout.sessions.retrieve(checkoutSessionId);
 
       if (session.payment_status === 'paid') {
+        // La sesión debe ser del producto pedido (no de cualquier compra): ver netlify/shared/purchase-validation.ts
+        const { verdict, mode, resolved } = await validatePurchase(stripe, session, productId, 'verify-purchase');
+        if (verdict === 'mismatch' && mode === 'strict') {
+          return {
+            statusCode: 403,
+            headers,
+            body: JSON.stringify({ valid: false, error: 'product_mismatch', paidProduct: resolved.productId }),
+          };
+        }
         const email = session.customer_details?.email || session.customer_email || '';
         const token = jwt.sign(
           { email, product: productId },
@@ -399,7 +409,7 @@ export const handler: Handler = async (event) => {
 };
 
 // ── Email sender ────────────────────────────────────────────────
-async function sendAccessEmail(email: string, token: string, productId: string) {
+export async function sendAccessEmail(email: string, token: string, productId: string) {
   if (!email || !process.env.RESEND_API_KEY) return;
 
   const config = PRODUCTS[productId] || PRODUCTS['pro-prompts-ebook'];
@@ -427,7 +437,7 @@ async function sendAccessEmail(email: string, token: string, productId: string) 
             </a>
           </div>
           <p style="color: #666; font-size: 14px; line-height: 1.6;">
-            Guarda este email. Puedes usar este enlace para acceder en cualquier momento.
+            Guarda este email. El enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto («¿Ya compraste…?»): tu acceso no caduca.
           </p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;" />
           <p style="color: #999; font-size: 12px;">
