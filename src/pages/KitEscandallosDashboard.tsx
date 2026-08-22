@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   UtensilsCrossed, Wine, CakeSlice, Truck, Coffee,
-  BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper,
+  BarChart3, Calculator, TrendingDown, ClipboardList, ChefHat, PartyPopper, BookOpen,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -21,10 +21,11 @@ const TEMPLATES = [
   { key: 'catering', icon: PartyPopper, title: 'Catering', desc: 'Materia prima + personal + logística en un solo presupuesto.' },
   { key: 'cafeteria', icon: Coffee, title: 'Cafetería / Brunch', desc: 'Food cost objetivo 25-30% con ejemplos reales de cafetería.' },
   { key: 'food-truck', icon: Truck, title: 'Food Truck', desc: 'Street food con punto de equilibrio diario incluido.' },
-  { key: 'mermas', icon: TrendingDown, title: 'Control de Mermas', desc: 'Registro semanal de mermas en 16 categorías de producto.' },
-  { key: 'calculadora-pvp', icon: Calculator, title: 'Calculadora de PVP', desc: 'PVP recomendado para 9 tipos de establecimiento.' },
+  { key: 'mermas', icon: TrendingDown, title: 'Control de Mermas', desc: 'Registro semanal del desperdicio en 16 categorías, con semáforo y gráfico de evolución.' },
+  { key: 'calculadora-pvp', icon: Calculator, title: 'Calculadora de PVP', desc: 'PVP recomendado para 10 tipos de establecimiento.' },
   { key: 'dashboard', icon: BarChart3, title: 'Dashboard Mensual', desc: 'Seguimiento de food cost durante 12 meses consecutivos.' },
   { key: 'bonus-mermas', icon: TrendingDown, title: 'BONUS: Mermas + Inventario', desc: 'Plantilla avanzada de control de mermas con inventario integrado.' },
+  { key: 'bonus-guia', icon: BookOpen, title: 'BONUS: Guía Food Cost en 30 Días', desc: 'Guía paso a paso en PDF para bajar tu food cost 3-7 puntos en un mes.' },
 ];
 
 export default function KitEscandallosDashboard() {
@@ -81,7 +82,7 @@ export default function KitEscandallosDashboard() {
             <ProductVersionBadge productId="kit-escandallos" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 11 plantillas Excel profesionales listas para descargar.
+            Tus 11 plantillas + 2 bonus, listas para descargar.
             Acceso de por vida — incluye futuras actualizaciones.
           </p>
         </section>
@@ -90,7 +91,7 @@ export default function KitEscandallosDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              11 Plantillas + 1 Bonus · Descarga Directa
+              11 Plantillas + 2 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -114,7 +115,7 @@ export default function KitEscandallosDashboard() {
                       </div>
                       <div>
                         <h3 className="text-white font-bold text-sm leading-tight">{tpl.title}</h3>
-                        <p className="text-gray-500 text-xs mt-0.5">.xlsx</p>
+                        <p className="text-gray-500 text-xs mt-0.5">{tpl.key === 'bonus-guia' ? '.pdf' : '.xlsx'}</p>
                       </div>
                     </div>
                     <p className="text-gray-400 text-sm mb-4 leading-relaxed">{tpl.desc}</p>

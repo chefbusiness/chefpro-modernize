@@ -61,7 +61,7 @@ const data: KitExcelData = {
       },
       {
         q: '¿Los datos de merma son fiables?',
-        a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas.',
+        a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 21 categorías de ingredientes con mermas mínimas, máximas y típicas.',
       },
       {
         q: '¿Puedo personalizar las plantillas?',
@@ -115,8 +115,9 @@ const data: KitExcelData = {
     checkItems: [
       '11 plantillas Excel profesionales con fórmulas automáticas',
       'Mermas estándar de la industria precargadas',
-      'Calculadora de PVP para 9 tipos de establecimiento',
-      'Dashboard de Food Cost mensual con gráficos',
+      'Calculadora de PVP para 10 tipos de establecimiento',
+      'Dashboard de Food Cost mensual con gráfico de evolución',
+      'Food cost REAL: escribe el PVP que cobras hoy y la hoja te avisa en rojo si te pasas del objetivo',
       'Zona para foto del plato en cada escandallo',
     ],
     ctaLabel: 'COMPRAR AHORA — €12',
@@ -132,20 +133,20 @@ const data: KitExcelData = {
     countGold: '11',
     headingRest: ' Plantillas Profesionales',
     subtitle:
-      'Cada plantilla incluye fórmulas automáticas, mermas precargadas, zona para foto del plato y formato listo para imprimir.',
+      'Cada plantilla de escandallo incluye fórmulas automáticas, mermas precargadas, zona para foto del plato y formato listo para imprimir.',
     fourCols: true,
     templates: [
-      { icon: 'UtensilsCrossed', title: 'Escandallo Estándar', desc: 'La plantilla más completa para platos a la carta. Introduce ingredientes, cantidades y precios de compra — las fórmulas calculan automáticamente la merma, el coste real por ración, el food cost % y el PVP sugerido según tu margen objetivo. Incluye zona para foto del plato terminado.' },
+      { icon: 'UtensilsCrossed', title: 'Escandallo Estándar', desc: 'La plantilla más completa para platos a la carta. Introduce ingredientes, cantidades y precios de compra — las fórmulas calculan automáticamente la merma, el coste real por ración, el food cost % y el PVP sugerido según tu margen objetivo. Y al revés: escribe el PVP que ya tienes en carta y la hoja te devuelve tu food cost REAL, en rojo si supera tu objetivo. Incluye zona para foto del plato terminado.' },
       { icon: 'ChefHat', title: 'Menú Degustación', desc: 'Diseñada para menús de 5 a 9 pases con escandallo individual por plato. La hoja resumen suma el coste total del menú completo, calcula el food cost global y sugiere el PVP por comensal. Perfecta para restaurantes gastronómicos y experiencias premium.' },
       { icon: 'ClipboardList', title: 'Menú del Día', desc: 'Estructura completa: primer plato, segundo, postre y extras (pan, bebida, café). Calcula automáticamente el coste total del menú y el PVP necesario para mantener tu margen. Incluye rotación semanal para planificar 5 menús diferentes con sus costes comparados.' },
-      { icon: 'Wine', title: 'Cocktails y Bebidas', desc: 'Escandallo detallado de 4 cocktails con medidas exactas en cl/ml, coste por ingrediente y food cost unitario. Optimizada para barras con objetivo de food cost al 18-22%. Incluye cálculo de garnish, hielo y merma de destilados por evaporación y derrame.' },
+      { icon: 'Wine', title: 'Cocktails y Bebidas', desc: 'Escandallo detallado de 4 cocktails con medidas exactas en cl/ml, coste por ingrediente y food cost unitario. Optimizada para barras con objetivo de food cost al 20-25%. Incluye cálculo de garnish, hielo y merma de destilados por evaporación y derrame.' },
       { icon: 'CakeSlice', title: 'Pastelería', desc: 'Plantilla especializada con mermas reales de pastelería: temperado de chocolate (12%), horneado de masas (8%), montaje de mousses. Incluye rendimiento por receta — cuántas raciones salen de cada elaboración. Con ejemplos de tarta, croissants y macarons listos para personalizar.' },
       { icon: 'PartyPopper', title: 'Catering', desc: 'La única plantilla que integra coste de materia prima + personal + logística + menaje en un solo presupuesto por persona. Define tu margen objetivo y obtén el precio por comensal al instante. Incluye checklist de evento y desglose para presentar al cliente.' },
       { icon: 'Coffee', title: 'Cafetería / Brunch', desc: 'Escandallos adaptados al formato cafetería con food cost objetivo del 25-30%. Incluye ejemplos reales: tostada de aguacate, açaí bowl, eggs benedict, carrot cake. Cada receta con coste real desglosado para que descubras qué platos te dan margen y cuáles te lo comen.' },
       { icon: 'Truck', title: 'Food Truck', desc: 'Plantilla pensada para street food: recetas rápidas con foco en velocidad de servicio y márgenes altos. Incluye smash burger, loaded fries y pulled pork con coste real por unidad. Calcula el punto de equilibrio diario: cuántas unidades necesitas vender para cubrir costes fijos.' },
-      { icon: 'TrendingDown', title: 'Control de Mermas', desc: 'Sistema de registro semanal de mermas reales vs mermas estándar en 16 categorías de producto (carnes, pescados, frutas, lácteos…). Las celdas cambian de color automáticamente cuando la merma real supera el estándar. Incluye gráfico de evolución mensual para detectar tendencias.' },
-      { icon: 'Calculator', title: 'Calculadora de PVP', desc: 'Introduce el coste de cualquier plato y obtén el PVP recomendado para 9 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel y delivery. Cada uno con su rango de food cost objetivo del sector.' },
-      { icon: 'BarChart3', title: 'Dashboard Mensual', desc: 'Panel de control con seguimiento de food cost durante 12 meses consecutivos. Registra compras, ventas y calcula el food cost real vs objetivo mes a mes. Incluye gráfico de evolución anual y alertas cuando el food cost supera tu límite. Tu cockpit financiero de cocina.' },
+      { icon: 'TrendingDown', title: 'Control de Mermas', desc: 'Sistema de registro semanal de desperdicio real en 16 categorías de producto (carnes, pescados, frutas, lácteos…), con objetivo mínimo, típico y máximo por categoría. El semáforo marca OK o ALERTA en cuanto el desperdicio real supera el objetivo. Incluye gráfico de evolución del desperdicio a 12 semanas.' },
+      { icon: 'Calculator', title: 'Calculadora de PVP', desc: 'Introduce el coste de cualquier plato y obtén el PVP recomendado para 10 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel, pastelería y delivery. Cada uno con su rango de food cost objetivo del sector.' },
+      { icon: 'BarChart3', title: 'Dashboard Mensual', desc: 'Panel de control con seguimiento de food cost durante 12 meses consecutivos. Registra stock inicial, compras, stock final y ventas: el food cost sale del CONSUMO, no de las compras — una compra fuerte a fin de mes ya no te mueve el indicador. Incluye gráfico de evolución anual y alertas cuando el food cost supera tu límite. Tu cockpit financiero de cocina.' },
     ],
   },
 
@@ -158,7 +159,7 @@ const data: KitExcelData = {
     reasons: [
       { icon: 'Calculator', title: 'Fórmulas Reales, No Valores Fijos', desc: 'Cambias un ingrediente y todo se recalcula: coste, merma, food cost % y PVP sugerido. Sin errores manuales.' },
       { icon: 'FileSpreadsheet', title: 'Para Todo Tipo de Establecimiento', desc: 'Restaurante, catering, pastelería, bar, food truck, cafetería. Cada plantilla adaptada a su formato real.' },
-      { icon: 'TrendingDown', title: 'Mermas Estándar Precargadas', desc: '16 categorías de ingredientes con la merma típica de la industria. Editable para ajustar a tu realidad.' },
+      { icon: 'TrendingDown', title: 'Mermas Estándar Precargadas', desc: '21 categorías de ingredientes con la merma típica de la industria. Editable para ajustar a tu realidad.' },
       { icon: 'RefreshCw', title: 'Paga Una Vez, Tuyo Para Siempre', desc: 'Sin suscripciones. Acceso permanente al dashboard con todas las plantillas. Nuevas plantillas sin coste adicional.' },
     ],
     compatLabel: 'Compatible con cualquier software de hojas de cálculo:',
@@ -186,7 +187,7 @@ const data: KitExcelData = {
         label: 'BONUS 1',
         title: 'Guía: Controla tu Food Cost en 30 Días',
         value: '€27',
-        desc: 'Plan de acción semana a semana para reducir tu food cost. Incluye tácticas de negociación con proveedores, checklist semanal y caso práctico real.',
+        desc: 'Plan de acción semana a semana para reducir tu food cost. Incluye tácticas de negociación con proveedores, checklist semanal y caso práctico construido a partir de intervenciones reales.',
         image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg',
       },
       {
@@ -227,7 +228,7 @@ const data: KitExcelData = {
     },
     {
       q: '¿Los datos de merma son fiables?',
-      a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas. Puedes ajustarlas a tu realidad.',
+      a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 21 categorías de ingredientes con mermas mínimas, máximas y típicas. Puedes ajustarlas a tu realidad.',
     },
     {
       q: '¿Puedo personalizar las plantillas?',
@@ -249,9 +250,10 @@ const data: KitExcelData = {
       '11 plantillas profesionales por menos de lo que cuesta un menú del día. Empieza a controlar tus costes hoy.',
     items: [
       '11 plantillas Excel profesionales con fórmulas automáticas',
-      'Mermas estándar de la industria precargadas (16 categorías)',
-      'Calculadora de PVP para 9 tipos de establecimiento',
-      'Dashboard de Food Cost mensual con gráficos',
+      'Mermas estándar de la industria precargadas (21 categorías)',
+      'Calculadora de PVP para 10 tipos de establecimiento',
+      'Dashboard de Food Cost mensual con gráfico de evolución',
+      'Food cost REAL: escribe el PVP que cobras hoy y la hoja te avisa en rojo si te pasas del objetivo',
       'BONUS: Guía "Controla tu Food Cost en 30 Días" (€27)',
       'BONUS: Checklist de Mermas + Inventario (€19)',
       'Paga una vez — acceso de por vida al dashboard online',
@@ -283,7 +285,7 @@ const data: KitExcelData = {
     discountBadge: '-75%',
     heroNote: 'Precio especial de lanzamiento. Sube pronto',
     buyBoxNote: 'Precio especial de lanzamiento — 75% de descuento',
-    bonusTotalLabel: 'Valor total del kit completo',
+    bonusTotalLabel: 'Valor total del kit completo: €95 — 11 plantillas (€49) + 2 bonos (€46)',
     bonusSaveLine: '¡Ahorra €37 HOY!',
   },
 
@@ -295,7 +297,7 @@ const data: KitExcelData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-escandallos',

@@ -15,6 +15,7 @@ const PRODUCT_FILES: Record<string, Record<string, string>> = {
     'calculadora-pvp': '/dl/kit-escandallos/10-calculadora-pvp.xlsx',
     'dashboard': '/dl/kit-escandallos/11-dashboard-food-cost-mensual.xlsx',
     'bonus-mermas': '/dl/kit-escandallos/BONUS-mermas-inventario.xlsx',
+    'bonus-guia': '/dl/kit-escandallos/BONUS-guia-food-cost-30-dias.pdf',
   },
   'pack-appcc': {
     'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
