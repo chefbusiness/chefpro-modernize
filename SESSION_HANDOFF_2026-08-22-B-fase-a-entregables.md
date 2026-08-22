@@ -57,9 +57,10 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
 
 ## 4. Siguiente trabajo (orden)
 
-0. **Confirmar el deploy `ea43a62`** (build de Astro con los 43 dashboards cableados) y el gate LIVE
-   final — lo dejé corriendo al cerrar; si el build falló, `netlify api listSiteDeploys` da el
-   `error_message`, y el diff es solo JSX/TS mecánico (`git show b5b30cf --stat`).
+0. ~~Confirmar el deploy `ea43a62`~~ — **HECHO**: deploy `ready` 12:08, gate LIVE final
+   **44 · 645 · 0 fallos**, `updateNote` visible en `/kit-tareas-asador`, el chunk
+   `/_astro/ProductChangelog.*.js` va importado por los islands de los dashboards (el texto del
+   changelog viaja en su chunk de datos), `/dl/ke-17b9.xlsx` → 404, md5 de producción = repo.
 1. **Fase B — ronda 1 adversarial por representante (opus, 3 lentes)**, empezando por
    `kit-escandallos`: `Workflow({scriptPath: 'scripts/productos-digitales/auditoria-entregables-workflow.js',
    args:{productId:'kit-escandallos', familia:'kit-excel'}})`. ⚠️ Ese workflow usa `agent()` SIN
