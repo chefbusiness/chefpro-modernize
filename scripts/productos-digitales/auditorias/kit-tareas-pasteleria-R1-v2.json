@@ -1,0 +1,602 @@
+[
+ {
+  "id": "OBR-01",
+  "severidad": "alta",
+  "fichero": "09-apertura-cierre-caja.xlsx",
+  "ubicacion": "Cierre de Caja · B41/B44/B46 (y Apertura de Caja · B7)",
+  "hallazgo": "El DESCUADRE está mal planteado: suma el recuento COMPLETO del efectivo (que incluye el fondo de caja) y le resta la Z del TPV, que solo recoge ventas. El resultado da descuadre positivo TODOS los días por el importe exacto del fondo. No existe ninguna línea «menos fondo de caja» en el Resumen de Cierre.",
+  "evidencia": "B41='=C37' (=SUM(C21:C36), recuento íntegro por denominación, sin descontar fondo) · B44='=B41+B42+B43' («TOTAL FACTURADO») · B46='=B44-B45' («DESCUADRE», B45='Z del TPV'). Con fondo de 200 € y caja cuadrada, B46 marca +200,00 € de descuadre.",
+  "fix": "Añadir en el Resumen de Cierre una fila «Fondo de caja inicial (−)» y calcular TOTAL FACTURADO = (Total Efectivo − Fondo) + Tarjetas + Otros; y en la hoja Apertura de Caja crear la celda numérica del fondo que la tarea 3 dice registrar y que hoy no existe (solo hay columna Notas).",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-02",
+  "severidad": "alta",
+  "fichero": "11-control-encargos.xlsx",
+  "ubicacion": "Ficha de Encargo · A22-A31 y A43 (Información Básica de Protección de Datos)",
+  "hallazgo": "La ficha recoge datos de SALUD (alergias e intolerancias) y además de TERCEROS (los comensales, no el cliente que firma), pero la cláusula declara como única base jurídica «ejecución del contrato». Los datos de categoría especial (art. 9 RGPD) necesitan consentimiento explícito, y no hay casilla que lo recoja ni mención al origen de los datos de terceros. Falta también el derecho a reclamar ante la AEPD y la remisión a la información adicional (modelo de dos capas).",
+  "evidencia": "A31='☐ ALERGIA CONFIRMADA de un comensal…' · A43='…Legitimación: ejecución del contrato solicitado por el cliente… Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad…' (sin AEPD, sin consentimiento explícito para salud, sin información adicional). La única casilla de consentimiento (A46) es para comunicaciones comerciales.",
+  "fix": "Añadir a la cláusula: «Categorías especiales: los datos sobre alergias se tratan con su consentimiento explícito (art. 9.2.a RGPD) y con la única finalidad de elaborar el encargo con seguridad», una casilla ☐ de consentimiento explícito junto al bloque de alérgenos, la frase «puede presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)» y una línea de «Información adicional disponible en ______».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-03",
+  "severidad": "media",
+  "fichero": "08-apertura-cierre-negocio.xlsx",
+  "ubicacion": "Instrucciones · B7 · y Apertura del Negocio · E5, E12, E13",
+  "hallazgo": "La regla estrella del fichero se contradice con sus propias horas: se exige encender las vitrinas «mínimo 45 minutos antes de montar el género» y el cronograma deja 35 minutos. Un jefe de obrador lo ve al primer vistazo y deja de fiarse del resto de horas.",
+  "evidencia": "B7='…tardan entre 30 y 60 minutos en bajar a 2-6 °C' · A5/B5 «Desactivar la alarma y encender las vitrinas… mínimo 45 minutos antes de montar el género» E5='07:00' · E12='07:30' («Comprobar que las vitrinas han bajado a 2-6 °C») · E13='07:35' («Montar la vitrina en orden…»).",
+  "fix": "Mover el encendido de vitrinas a las 06:45 (o el montaje a las 07:45) para que la separación sea ≥45 min, y hacer que Instrucciones B7 y la tarea 1 digan el mismo número.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-04",
+  "severidad": "media",
+  "fichero": "08-apertura-cierre-negocio.xlsx",
+  "ubicacion": "Cierre del Negocio · E5-E9",
+  "hallazgo": "El cierre vacía la vitrina 20 minutos ANTES de cerrar la puerta al público: se pierden las últimas ventas del día (que es justo cuando se coloca el sobrante) y el cliente que entra a las 19:40 encuentra bandejas vacías.",
+  "evidencia": "Tarea 1 'Retirar el género de la vitrina…' E5='19:30'; tarea 2 'Guardar en cámara lo recuperable' E6='19:35'; tarea 3 'Decidir el destino del sobrante' E7='19:40'; tarea 5 'Cerrar la puerta al público…' E9='19:50'.",
+  "fix": "Reordenar: cerrar la puerta al público → retirar el género → recuperable a cámara → destino del sobrante. Y añadir antes del cierre la tarea real de las pastelerías: «Última hora: agrupar y señalizar el producto en promoción (→ 10 · columna Acción)».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-05",
+  "severidad": "media",
+  "fichero": "01-apertura-cierre.xlsx",
+  "ubicacion": "Apertura Obrador · E25 y E26",
+  "hallazgo": "El fichero 01 no se ha actualizado a la regla del 08: enciende las vitrinas y coloca el género DENTRO DEL MISMO MINUTO, sin ningún tiempo de bajada de temperatura. Es exactamente el fallo que la v2.0 dice haber corregido, y aquí sigue vivo.",
+  "evidencia": "A25/B25='Encender iluminación y climatización de vitrinas' E25='07:30' · A26/B26='Colocar productos del día anterior (verificar caducidad)' E26='07:30'. Compárese con 08!Apertura del Negocio!B5 («mínimo 45 minutos antes de montar»).",
+  "fix": "Adelantar el encendido de vitrinas de 01 a las 06:45 y añadir la comprobación «vitrina a 2-6 °C antes de montar (→ 13 Registro de Temperaturas)», igual que en el 08.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-06",
+  "severidad": "media",
+  "fichero": "01-apertura-cierre.xlsx / 08-apertura-cierre-negocio.xlsx",
+  "ubicacion": "01!Cierre Obrador!E17, E22 vs 08!Cierre del Negocio!E5, E11",
+  "hallazgo": "Los dos ficheros describen el MISMO cierre de la misma tienda con horas distintas: quien imprima los dos (que es lo que el kit pide) tendrá al dependiente retirando la vitrina a dos horas diferentes y cuadrando la caja a dos horas diferentes.",
+  "evidencia": "01!Cierre Obrador: 'Retirar productos de vitrina' E17='20:00' y 'Cuadrar caja / cierre de TPV' E22='20:15'. 08!Cierre del Negocio: 'Retirar el género de la vitrina' E5='19:30' y 'Cierre de caja: sacar la Z del TPV' E11='20:00'.",
+  "fix": "Fijar un único horario de referencia del local (apertura 08:00 / cierre 19:50) y propagarlo a 01, 02, 04 y 08; o dejar las horas del 01 en blanco y remitir al 08 como fuente única del horario de tienda.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-07",
+  "severidad": "media",
+  "fichero": "02-partidas-cocina.xlsx",
+  "ubicacion": "Masas y Fermentación · F9-F16 vs Decoración y Acabado · F15",
+  "hallazgo": "La cadena del croissant no llega a la vitrina a tiempo de la apertura: se amasa a las 05:30 y se hornea a las 09:45, pero la vitrina de bollería se monta a las 08:00 y la tienda abre a las 08:00 (fichero 08). El obrador abriría dos horas sin croissant, que es el producto que trae al cliente de la mañana.",
+  "evidencia": "02!Masas: 'Amasar corto…' F9='05:30' → 'Fermentar…' F14='08:00' (parámetro '2,5-3 h') → 'Hornear (190-200 °C, 14-18 min)' F16='09:45'. 02!Decoración: 'Montar vitrina de bollería' F15='08:00'. 08!Apertura: 'Subir la persiana y abrir la puerta al público' E23='08:00'.",
+  "fix": "Reflejar la práctica real: formar y bloquear/fermentar en frío el día anterior (o fermentación controlada nocturna) y hornear la 1ª hornada a las 07:00-07:30, dejando la fila actual como 2ª hornada de media mañana. Ajustar también las horas de fermentado, que hoy no cuadran con el propio parámetro de 2,5-3 h.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-08",
+  "severidad": "media",
+  "fichero": "02-partidas-cocina.xlsx",
+  "ubicacion": "Masas y Fermentación · B14/C14",
+  "hallazgo": "Parámetro de fermentación del croissant demasiado alto y autocontradictorio: se justifica el límite diciendo que por encima funde la mantequilla del laminado, y a continuación se fija el objetivo en 26-28 °C, que con mantequilla de laminado del 82 % MG ya es zona de sudado y pérdida de hojas.",
+  "evidencia": "B14='Fermentar en cámara controlada sin superar los 28 °C (por encima funde la mantequilla del laminado)' · C14='26-28 °C máx. · 75-80 % HR · 2,5-3 h · dobla volumen'. La misma hoja especifica en C8 'mantequilla de laminado 82 % MG' y en C12 'Masa y mantequilla a 12-14 °C'.",
+  "fix": "Cambiar el objetivo a 24-26 °C (28 °C como techo absoluto) y mantener 75-80 % HR.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-09",
+  "severidad": "media",
+  "fichero": "13-registro-temperaturas-recepcion.xlsx / 01-apertura-cierre.xlsx",
+  "ubicacion": "13!Vidas Útiles!A17-D17 vs 01!Apertura Obrador!B26 y 02!Decoración y Acabado!C20",
+  "hallazgo": "El kit se contradice sobre la bollería del día anterior: la tabla de vidas útiles dice que dura «el mismo día» y que al día siguiente va a merma o promoción, pero la apertura del obrador manda colocarla en vitrina como tarea normal. Es una contradicción con consecuencias comerciales y de imagen.",
+  "evidencia": "13!Vidas Útiles: A17='Bollería cocida' · B17='Ambiente, en vitrina' · C17='El mismo día' · D17='Al día siguiente, a merma o a promoción'. 01!Apertura Obrador: B26='Colocar productos del día anterior (verificar caducidad)'. 02!Decoración: C20='Cada 2 h · retirar lo que lleve más de un día'.",
+  "fix": "Reescribir 01!B26 como «Colocar la producción del día; el producto del día anterior solo en la zona de promoción señalizada o a merma (→ 10 · columna Acción y 13 · Vidas Útiles)».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-10",
+  "severidad": "media",
+  "fichero": "01/03/06 (autorreferencias)",
+  "ubicacion": "01!Cierre Obrador!B19 · 03!Diario Manager!B21 · 03!Mensual Manager!B7 · 06!Navidad!B38 (y las 5 hojas de campaña)",
+  "hallazgo": "La autorreferencia estrella de la v2.0 apunta a una hoja que NO EXISTE: se remite a «10 Plan de Producción · Mermas» y en el fichero 10 no hay ninguna pestaña llamada Mermas (las hojas son Plan Semanal, Producido vs Vendido y Resumen por Partida). El usuario abre el 10 y busca una pestaña fantasma.",
+  "evidencia": "01!Cierre Obrador!B19='Registrar mermas del día (productos descartados) → 10 Plan de Producción · Mermas'; 06!Navidad!B38='…→ 10 Plan de Producción · Mermas'. Hojas reales del 10: ['Instrucciones','Plan Semanal','Producido vs Vendido','Resumen por Partida'].",
+  "fix": "Sustituir en todas las apariciones por «→ 10 Plan de Producción Semanal · hoja Producido vs Vendido», que es la nomenclatura exacta que ya usa el fichero 08.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-11",
+  "severidad": "media",
+  "fichero": "12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Matriz Alérgenos · N53 (contador de sulfitos ●), N10, N23, N24",
+  "hallazgo": "En 47 referencias NO hay un solo sulfito declarado como «● contiene»: solo trazas. Falsos negativos claros en producto español de temporada — la fruta escarchada del roscón y las pasas sultanas de la caracola superan habitualmente los 10 mg/kg y son ingrediente intencionado, no contaminación cruzada.",
+  "evidencia": "N53='=COUNTIF(N5:N51,\"●\")' → 0. Roscón de Reyes A23 con N23='○'; Caracola de pasas A10 con N10='○'; Torrijas A24 (elaboradas con vino en muchas casas) N24='○'.",
+  "fix": "Marcar N23 (roscón, fruta escarchada) y N10 (caracola, pasas sulfitadas) como ●, y añadir en la columna R la advertencia «comprobar mg/kg en la ficha técnica de la fruta confitada y de las pasas».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-12",
+  "severidad": "media",
+  "fichero": "12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Matriz Alérgenos · E29 (Turrón de almendra)",
+  "hallazgo": "Falso negativo en un clásico: la clara de huevo es ingrediente de receta del turrón duro de Alicante (y de buena parte del blando artesano), no una traza. Marcarlo ○ en una carta de alérgenos es exactamente el error que genera una reacción.",
+  "evidencia": "A29='Turrón de almendra' · E29='○' (Huevos) · J29='●' (Frutos de cáscara).",
+  "fix": "E29 → '●' con nota en R29 «clara de huevo: verificar receta/variedad (Alicante lleva, Jijona puede no llevar)».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-13",
+  "severidad": "media",
+  "fichero": "12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Matriz Alérgenos · E5 vs E39",
+  "hallazgo": "Incoherencia interna entre dos referencias hechas con la misma masa: el croissant de mantequilla declara huevo ● (por el pincelado) y el croissant de jamón y queso, que sale de la misma laminada y se pincela igual, lo declara ○.",
+  "evidencia": "A5='Croissant de mantequilla' E5='●' · A39='Croissant de jamón y queso' E39='○'.",
+  "fix": "Igualar E39 a '●' (o justificar en R39 que esa referencia no se pincela).",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-14",
+  "severidad": "media",
+  "fichero": "12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Cartel Vitrina · B7 y Carta de Alérgenos · A54",
+  "hallazgo": "El cartel que se cuelga en la tienda afirma que en el obrador «se manipulan los 14 alérgenos de declaración obligatoria», y la propia matriz dice lo contrario: crustáceos, cacahuetes, altramuces y moluscos no aparecen ni como traza en ninguna referencia. Es un texto fijo, no editable, que hace declarar al pastelero algo que no es cierto y que además es el «puede contener genérico» que las Instrucciones (B9) desaconsejan.",
+  "evidencia": "Cartel!B7 y Carta!A54: 'Todos nuestros productos se elaboran en un obrador donde se manipulan los 14 alérgenos…'. Contadores de la matriz: D53(Crustáceos)=0 ●/0 ○, G53(Cacahuetes)=0/0, O53(Altramuces)=0/0, P53(Moluscos)=0/0.",
+  "fix": "Reformular a «En nuestro obrador se manipulan, entre otros, cereales con gluten, huevo, leche, frutos de cáscara, soja y sésamo, por lo que puede haber contaminación cruzada» y dejar la lista en celda verde editable para que cada obrador ponga los suyos.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-15",
+  "severidad": "media",
+  "fichero": "10-plan-produccion-semanal.xlsx",
+  "ubicacion": "Producido vs Vendido · filas 5-44 y A45 (TOTALES)",
+  "hallazgo": "La hoja es de control DIARIO pero solo tiene 40 filas, y el Resumen por Partida es SEMANAL y lee justo ese rango: con las 12 referencias de ejemplo la hoja se llena en tres días y medio, y una pastelería con 30 referencias la agota el primer día. El resumen semanal nunca llega a serlo.",
+  "evidencia": "Datos en 5:44 (40 filas), TOTALES en A45, y las SUMIF del Resumen apuntan a 'Producido vs Vendido'!$C$5:$C$44. 12 referencias × 7 días = 84 filas necesarias.",
+  "fix": "Ampliar a 250 filas (o una hoja por día con un resumen que consolide), o cambiar la unidad de registro a «una fila por producto y semana» con columnas Lun-Dom, coherente con la hoja Plan Semanal.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-16",
+  "severidad": "media",
+  "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+  "ubicacion": "Calendario Anual · A3:F3 (cabecera) y B7, B9, B13",
+  "hallazgo": "Falta la columna verde «Fecha de este año: ____» para las fechas móviles que la propia v2.0 se comprometía a añadir: Semana Santa, Día de la Madre, Comuniones y Black Friday siguen sin celda donde anotar la fecha real del año en curso (solo Black Friday lleva la coletilla «(variable)»).",
+  "evidencia": "Cabecera: A3='#' B3='Fecha' C3='Evento' D3='Producción Especial' E3='Antelación' F3='Notas' (6 columnas, ninguna de fecha del año). B7='Mar-Abr' (Semana Santa), B9='1er dom. Mayo', B13='Último viernes de nov. (variable)'.",
+  "fix": "Insertar una columna verde editable «Fecha de este año» y rellenar «(variable)» también en Semana Santa, Día de la Madre y Comuniones.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-17",
+  "severidad": "media",
+  "fichero": "BONUS-02-calendario-anual-tareas.xlsx / 06-eventos-festivos.xlsx",
+  "ubicacion": "BONUS-02!Calendario Anual!B9:E9 vs 06!Comuniones (Abr-Jun)!E6-E13",
+  "hallazgo": "Los dos ficheros dan planificaciones incompatibles para la campaña más rentable del año: el calendario dice «Comuniones · Junio · antelación 4 semanas» y la hoja de campaña arranca el catálogo en enero, las visitas en febrero-marzo y sitúa la temporada en abril-junio. Quien planifique por el calendario llega tarde a la mitad de la campaña.",
+  "evidencia": "BONUS-02: B9='Junio' C9='Comuniones' E9='4 semanas'. 06!Comuniones: E6='Enero' (catálogo), E7='Febrero' (agenda de visitas), E12='4-6 sem antes' (prueba de sabores), título de hoja 'Comuniones (Abr-Jun)'.",
+  "fix": "Cambiar la fila del calendario a «Abr-Jun · Comuniones · antelación 4-5 meses (catálogo en enero) → 06 Eventos y Festivos · hoja Comuniones (Abr-Jun)».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-18",
+  "severidad": "media",
+  "fichero": "06-eventos-festivos.xlsx",
+  "ubicacion": "Navidad · bloque 'Recogidas y Nochevieja (22-31 Dic)' E22-E25",
+  "hallazgo": "Falta la fecha de cierre de encargos de Navidad (troncos, postres y bandejas del 24-25 Dic), que es el corte de producción más crítico del año. El fichero sí fija cierre para Nochevieja (29 Dic) y para el roscón (2 Ene), así que la ausencia canta.",
+  "evidencia": "Tareas del bloque: 'Organizar la recogida de encargos por franjas horarias (22-24 Dic)' E22='22-24 Dic'; 'Reforzar el despacho…' E23='23-24 Dic'; 'Cerrar los encargos de Nochevieja…' E24='29 Dic'. No hay ninguna tarea de cierre de encargos para el 24-25 Dic.",
+  "fix": "Insertar antes de E22 la tarea «Cerrar los encargos de Nochebuena y Navidad y repartir las franjas de recogida (→ 11 Control de Encargos)» con hora límite '20 Dic'.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-19",
+  "severidad": "media",
+  "fichero": "01/02/03/04/05/06/07/BONUS-01 vs 08 vs 09",
+  "hallazgo": "Tres desplegables distintos para lo mismo: el kit se usa con el mismo bolígrafo en las 15 plantillas, pero la lista de estado cambia según el fichero, así que un ✗ escrito en la hoja de caja no lo cuenta ninguna fórmula y una N/A del 08 no existe en el resto.",
+  "ubicacion": "Validaciones de datos: 01-07 y BONUS-01 (col. F/G) · 08 (F5:F29) · 09 (D5:D16)",
+  "evidencia": "01!Apertura Obrador DV list='✓,—' · 08!Apertura del Negocio DV list='✓,—,N/A' · 09!Cierre de Caja DV list='✓,✗,—'.",
+  "fix": "Unificar en '✓ / — / N/A' en los 15 ficheros (es la lista que el SPEC §1.4 fijó) y dejar el COUNTIF sobre «✓» en todos.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-20",
+  "severidad": "baja",
+  "fichero": "11-control-encargos.xlsx",
+  "ubicacion": "Ficha de Encargo · A34/B34 y A37",
+  "hallazgo": "La ficha que firma el cliente no dice si el precio total lleva IVA incluido, en un documento que actúa como presupuesto aceptado. Es la discusión clásica en el mostrador el día de la recogida.",
+  "evidencia": "A34='Precio total (€)' B34=0 (formato '#,##0.00 €'); A37 solo cubre la política de señal.",
+  "fix": "Cambiar la etiqueta a «Precio total (€, IVA incluido)» y añadir junto a la señal «Señal entregada (€, a cuenta del total)».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-21",
+  "severidad": "baja",
+  "fichero": "BONUS-01-briefing-servicio.xlsx / 08-apertura-cierre-negocio.xlsx",
+  "ubicacion": "BONUS-01!Briefing Diario!E6-E25 vs 08!Apertura del Negocio!E24",
+  "hallazgo": "El briefing tiene dos horas incompatibles: el bonus lo sitúa entero a las 05:00 (arranque de obrador) y el 08 lo cita a las 08:05 como briefing del equipo de tienda. Con un solo equipo pequeño, uno de los dos no se hace nunca.",
+  "evidencia": "BONUS-01: todas las tareas con E='05:00'. 08!Apertura: B24='Briefing con el equipo… (→ BONUS-01 Briefing de Servicio)' E24='08:05'.",
+  "fix": "Dejar la hora en blanco en BONUS-01 (o poner «Inicio de turno») y aclarar en sus Instrucciones que se usa dos veces: al arranque del obrador y en la apertura de tienda.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-22",
+  "severidad": "baja",
+  "fichero": "02-partidas-cocina.xlsx",
+  "ubicacion": "Cremas y Rellenos · B23/C23/F23 vs Decoración y Acabado · B7/C7/F7",
+  "hallazgo": "El glaseado espejo se prepara y se usa el mismo día a la misma hora, cuando la propia ficha exige 12 h de reposo en frío. El entremet sí se resolvió como D+1; el glaseado no.",
+  "evidencia": "Cremas: B23='Preparar glaseado espejo…' C23='Reposo 12 h en frío antes de usarlo' F23='10:00'. Decoración: B7='Glasear con glaseado espejo sobre rejilla' C7='Glaseado a 32-35 °C · pieza a −18 °C' F7='10:00'.",
+  "fix": "Redactar Cremas B23 como «Preparar el glaseado espejo PARA MAÑANA (reposo mínimo 12 h en frío)», igual que se hizo con los entremets congelados.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-23",
+  "severidad": "baja",
+  "fichero": "07-plantilla-personalizable.xlsx",
+  "ubicacion": "Por Franja Horaria · F33 · Por Zona · F31 · Por Perfil · F30",
+  "hallazgo": "Las plantillas en blanco nacen diciendo «Tareas completadas: 0 de 19» aunque no haya ni una tarea escrita: el denominador está fijado a mano en vez de contar las filas rellenas, al revés que en el 08.",
+  "evidencia": "07!Por Franja Horaria: D33='=COUNTIF(F5:F31,\"✓\")' pero F33=19 (número fijo). En 08!Apertura del Negocio!F31='=COUNTIF(B5:B29,\"?*\")' (cuenta las tareas escritas).",
+  "fix": "Sustituir el número fijo por '=COUNTIF(B5:B31,\"?*\")' en las tres hojas del 07, como en el 08.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-24",
+  "severidad": "baja",
+  "fichero": "10-plan-produccion-semanal.xlsx / 12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "10!Plan Semanal!A6 vs A13 · 12!Matriz Alérgenos!A5 vs A12",
+  "hallazgo": "La misma pieza escrita de dos maneras en la misma lista («Croissant de mantequilla» y «Cruasán relleno de crema»), lo que rompe cualquier cruce por nombre entre el plan de producción, la matriz de alérgenos y las etiquetas.",
+  "evidencia": "10!Plan Semanal: A6='Croissant de mantequilla', A13='Cruasán relleno de crema'. 12!Matriz: A5='Croissant de mantequilla', A12='Cruasán relleno de crema'.",
+  "fix": "Unificar la grafía (recomendado «croissant» en todo el kit, que es como aparece en el resto de ficheros) para que el nombre sea la clave común entre 10, 12 y las etiquetas.",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-25",
+  "severidad": "baja",
+  "fichero": "13-registro-temperaturas-recepcion.xlsx",
+  "ubicacion": "Recepción de Mercancía · DV I5:I34 y bloque A38 (Criterios de Rechazo)",
+  "hallazgo": "El desplegable ofrece «Aceptado con reserva» y los criterios escritos solo explican cuándo aceptar y cuándo rechazar: el usuario no sabe qué obliga esa tercera opción (foto, nota al albarán, aviso al proveedor).",
+  "evidencia": "DV I5:I34 list='Aceptado,Rechazado,Aceptado con reserva'; A38 enumera únicamente supuestos de rechazo y termina en 'Anota el motivo, haz una foto y avisa al proveedor el mismo día'.",
+  "fix": "Añadir una frase a A38: «Aceptado con reserva: se recibe pero se anota la incidencia en el albarán y se fotografía; no se usa el producto hasta que el proveedor conteste».",
+  "lente": "obrador"
+ },
+ {
+  "id": "OBR-26",
+  "severidad": "baja",
+  "fichero": "12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Carta de Alérgenos · C6, E6, F6 … (458 celdas)",
+  "hallazgo": "Aviso para no perseguir un fantasma: el «sin_cache=458/828» de la verificación determinista NO es un defecto del producto. Las 458 celdas sin valor cacheado son exactamente aquellas cuya fórmula devuelve cadena vacía (alérgeno no marcado en la matriz); las 247 con contenido real sí tienen valor.",
+  "evidencia": "Carta de Alérgenos: 705 fórmulas, 458 sin caché; Matriz Alérgenos tiene 43 nombres de producto + 204 símbolos ●/○ = 247 celdas con resultado no vacío → 705 − 247 = 458. Comprobado: Carta!A6='Croissant de mantequilla' y B6='●' sí cachean; C6 (Crustáceos, vacío en la matriz) no.",
+  "fix": "Ajustar el gate para que trate el resultado '' como valor válido (o escribir '' en el caché) en lugar de reescribir el fichero 12.",
+  "lente": "obrador"
+ },
+ {
+  "id": "T-01",
+  "severidad": "alta",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx (+11, +12, +13)",
+  "ubicacion": "git index — los 4 ficheros nuevos",
+  "hallazgo": "Los 4 .xlsx nuevos de la v2.0 NO están trackeados en git. Si se hace push tal cual, Netlify no los publica y las 4 descargas nuevas dan 404 al cliente que ya ha pagado — es exactamente el bug G que el SPEC §2 marca como cerrar con `git add`.",
+  "evidencia": "`git status --porcelain astro-site/public/dl/kit-tareas-pasteleria/` → `?? 10-plan-produccion-semanal.xlsx`, `?? 11-control-encargos.xlsx`, `?? 12-control-alergenos-vitrina.xlsx`, `?? 13-registro-temperaturas-recepcion.xlsx`; `git ls-files` de esa carpeta sólo lista 11 ficheros (01-09 + BONUS). Coincide con el FAIL del gate en los dos productos (kit y mega-pack).",
+  "fix": "`git add astro-site/public/dl/kit-tareas-pasteleria/` antes del commit y volver a correr `gate-flujo-postpago.py --offline` hasta 0 fallos.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-02",
+  "severidad": "alta",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/13-registro-temperaturas-recepcion.xlsx",
+  "ubicacion": "Registro de Temperaturas :: CF sobre D6:E36, F6:G36, H6:I36, J6:K36",
+  "hallazgo": "Las reglas de formato condicional pintan de ROJO las celdas VACÍAS. Excel coacciona la celda vacía a 0 en los operadores numéricos: 0 NO está entre 2 y 6 → `notBetween` es TRUE; y 0 > −18 → `greaterThan` es TRUE. El registro mensual —la hoja estrella de la v2.0, la que se cuelga en la cámara y enseña el inspector— se abre e imprime con 248 celdas en rojo sangre antes de que nadie anote una sola temperatura.",
+  "evidencia": "CF extraídas: `D6:E36 cellIs notBetween [2,6] fill=FFCDD2`, `F6:G36 cellIs greaterThan [-18] fill=FFCDD2`, `H6:I36 notBetween [2,6]`, `J6:K36 notBetween [2,6]`. Filas 6-36 (31 días) × 8 columnas = 248 celdas, todas vacías. Sólo B6:C36 (`notBetween 0,4`) se salva porque el 0 sí cae dentro del rango.",
+  "fix": "Cambiar las 4 reglas a `formula` con guarda de vacío, p. ej. `=Y(D6<>\"\";O(D6<2;D6>6))` / `=Y(F6<>\"\";F6>-18)` (expression rule con `$` correctos), o añadir una regla previa `ISBLANK` con `stopIfTrue=True`.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-03",
+  "severidad": "alta",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/11-control-encargos.xlsx",
+  "ubicacion": "Ficha de Encargo :: A23:D23, A37:D37, A46:D46 (y A43:D45)",
+  "hallazgo": "Textos legales y de instrucción metidos en celdas COMBINADAS con `wrap_text=True` pero SIN alto de fila explícito. Excel no autoajusta el alto de una celda combinada: se quedan en los 15 pt por defecto = UNA línea, y el resto del texto es invisible en pantalla y en papel. Afecta a la casilla de consentimiento RGPD (A46, 150 car.), a la política de señal (A37, 146 car.) y al aviso de alérgenos del comensal (A23, 164 car.). La cláusula informativa RGPD (A43:D45, 503 car., alto 56 pt) necesita ~5 líneas y tiene 4: también pierde el bloque de Derechos.",
+  "evidencia": "`A23:D23 wrap=True h=None len=164` · `A37:D37 wrap=True h=None len=146` · `A46:D46 wrap=True h=None sz=9 len=150` · `A43:D45 wrap=True h=26+15+15=56 sz=9 len=503` ('…Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a ______'). Ancho combinado A+B+C+D = 26+22+26+22 = 96.",
+  "fix": "Fijar alto explícito en las cuatro (A23 y A37 → 30 pt; A46 → 28 pt; A43:D45 → 78 pt) o repartir el texto en varias filas. Regla general: toda celda combinada con `wrap_text` necesita `row_dimensions[r].height` a mano.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-04",
+  "severidad": "alta",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/08-apertura-cierre-negocio.xlsx",
+  "ubicacion": "Apertura del Negocio :: B5, B14, B15 · Cierre del Negocio :: B5, B6, B7, B11, B14",
+  "hallazgo": "El fichero reescrito de cero para la v2.0 tiene 8 tareas cuyo texto se corta: alto de fila fijado a 30 pt (= 2 líneas a 11 pt) con columna B de ancho 62 y textos de hasta 199 caracteres que necesitan 4 líneas. La PRIMERA tarea de la apertura —la que §1.4 exige que sea la primera, encender vitrinas 45 min antes— pierde más de la mitad al imprimir.",
+  "evidencia": "`Apertura del Negocio!B5` len=199, wrap=True, `row_dimensions[5].height=30.0`, ancho col B=62 → caben ~124 car. de 199. Mismo patrón en B14 (127), B15 (126), y en Cierre B5 (133), B6 (132), B7 (126), B11 (132), B14 (144). Las 8 filas están fijadas a 30 pt.",
+  "fix": "Subir a 45 pt las filas cuyo texto supere ~124 caracteres, o quitar el alto explícito y dejar que Excel autoajuste (funciona porque estas celdas NO están combinadas).",
+  "lente": "excel"
+ },
+ {
+  "id": "T-05",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Carta de Alérgenos :: A3:O3 y A54:O55 · Cartel Vitrina :: B7:D8 · Etiquetas Vitrina :: B2:F2",
+  "hallazgo": "Mismo defecto de celdas combinadas que T-03, y aquí toca documentos de cumplimiento. `Carta A3:O3` (184 car., sin alto → 1 línea) pierde la advertencia «verifica allí cada referencia antes de imprimir esta carta», que es justo lo que protege al cliente de publicar el borrador. El párrafo de contaminación cruzada del Cartel (B7:D8) y de la Carta (A54:O55) queda al límite (234 car. en 30 pt = 2 líneas justas) y es probable que se corte en la última línea.",
+  "evidencia": "`Carta de Alérgenos!A3:O3 wrap=True h=None len=184 ancho=100` → 2 líneas necesarias, 1 disponible. `Cartel Vitrina!B7:D8 h=30 sz=11 len=234 ancho=110` → 2,1 líneas necesarias / 2 disponibles. `Etiquetas Vitrina!B2:F2 h=None len=178 ancho=94` → 2/1.",
+  "fix": "Alto explícito: A3 → 30 pt, B2 (Etiquetas) → 30 pt, B7:D8 y A54:O55 → 45 pt.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-06",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx (y 02, 03, 04, 05, 06, 07, BONUS-01)",
+  "ubicacion": "todas las hojas de trabajo :: validación de datos de la columna «Hecha» + ausencia de formato condicional",
+  "hallazgo": "El fix L1-02 del SPEC §1.4 sólo se aplicó completo al 08. En los otros 8 ficheros la lista es «✓,—» (falta «N/A») y NO hay ningún formato condicional que resalte la fila al marcar, que el SPEC pide expresamente («relleno condicional al marcar»). Además el encabezado se llama «Hecha» y no «✓ Completada», así que el kit tiene dos nombres distintos para la misma columna.",
+  "evidencia": "DV de 01-07 y BONUS-01: `type=list formula1='\"✓,—\"'` (len 5). DV del 08: `'\"✓,—,N/A\"'` + CF `F5:F29 cellIs equal \"✓\" fill=E8F5E9`. Ningún `conditional_formatting` en 01-07 ni BONUS-01. Encabezados: `01!F4='Hecha'` vs `08!F4='✓ Completada'`.",
+  "fix": "Unificar: lista «✓,—,N/A» y CF de relleno verde al valer «✓» en las 22 hojas de checklist, y renombrar el encabezado a «✓ Completada» (tocando también la línea de Instrucciones que hoy dice «la columna «Hecha»»).",
+  "lente": "excel"
+ },
+ {
+  "id": "T-07",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx (y 02-07, BONUS-01)",
+  "ubicacion": "01!F34='22' · 02!G36='24' · 03!F28 · 04 · 05 · 06 · 07 · BONUS-01!G28",
+  "hallazgo": "El denominador del contador («Tareas completadas: X de N») está HARDCODEADO como número fijo en 22 hojas, mientras que el 08 lo calcula. En cuanto el usuario borre o añada una tarea —cosa que las propias Instrucciones le piden hacer— el total miente y no hay ninguna señal de ello.",
+  "evidencia": "`01!D34='=COUNTIF(F5:F32,\"✓\")'` pero `01!F34=22` literal. El 08 sí lo resuelve: `Apertura del Negocio!F31='=COUNTIF(B5:B29,\"?*\")'` → 20 en caché, recalculado en vivo.",
+  "fix": "Sustituir el literal por `=COUNTIF(B5:B32,\"?*\")` (rango de la columna Tarea) en las 22 hojas, como ya hace el 08.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-08",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+  "ubicacion": "Calendario Anual :: fila 3 (cabecera) y filas 4-20",
+  "hallazgo": "Falta la columna verde «Fecha de este año: ____» que el SPEC §1.4 exige para las fechas móviles. El fichero tiene 6 columnas (#, Fecha, Evento, Producción Especial, Antelación, Notas) y ninguna casilla editable donde anotar la fecha real del año en curso; Semana Santa sigue como «Mar-Abr», Día de la Madre como «1er dom. Mayo» y Comuniones como «Junio». Sólo se aplicó la mitad del fix (Black Friday sí dice «Último viernes de nov. (variable)»).",
+  "evidencia": "`BONUS-02!Calendario Anual` fila 3 = ['#','Fecha','Evento','Producción Especial','Antelación','Notas']; `B7='Mar-Abr'`, `B8='1er dom. Mayo'`, `B9='Junio'`, `B13='Último viernes de nov. (variable)'`. max_col=6, sin columna G.",
+  "fix": "Insertar columna «Fecha de este año» (relleno E8F5E9) tras «Fecha» y dejarla vacía en las filas 7, 8, 9, 13 y en las «Variable».",
+  "lente": "excel"
+ },
+ {
+  "id": "T-09",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Carta de Alérgenos :: 705 fórmulas `IF(...=\"\",\"\",...)`",
+  "hallazgo": "458 de las 828 fórmulas del fichero no tienen valor cacheado, que es lo que dispara el FAIL del post-procesado. Comprobado: las 458 son EXACTAMENTE las que evalúan a cadena vacía, así que el fichero se ve bien en móvil y visores — pero el gate lo marca en rojo y el equipo acabará ignorando ese rojo, que es peor que no tenerlo.",
+  "evidencia": "Barrido `data_only` sobre 12: total 828 fórmulas, 458 sin caché, y el filtro «sin caché que NO empiezan por `=IF(`» devuelve **0** resultados. Verificado con pycel: `'Carta de Alérgenos'!C6` → `''`, mientras `B6` → `'●'` sí trae caché.",
+  "fix": "Enseñar al verificador post-20 a no contar como fallo una fórmula cuyo resultado es cadena vacía (o que `inject_cache.py` escriba el string vacío explícito). No tocar el .xlsx.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-10",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+  "ubicacion": "Registro Mensual :: B36",
+  "hallazgo": "La fila de TOTALES suma la columna «Fondo Apertura» de los 31 días. Es un stock, no un flujo: sumar el fondo de caja de cada mañana da una cifra sin significado contable (con 200 € de fondo diario, el «total» del mes son 6.200 €) que aparece en negrita junto a totales que sí son reales.",
+  "evidencia": "`Registro Mensual!B36='=SUM(B5:B35)'` con formato `#,##0.00 €`, en la misma fila que `C36..I36`. Cabecera `B4='Fondo Apertura'`.",
+  "fix": "Sustituir B36 por `=IFERROR(PROMEDIO(B5:B35),0)` con el rótulo «Fondo medio», o dejar la celda vacía.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-11",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx (y 02-07, BONUS-01)",
+  "ubicacion": "01!D34 `=COUNTIF(F5:F32,\"✓\")` · 02!E36 `=COUNTIF(G5:G34,\"✓\")` · resto igual",
+  "hallazgo": "El COUNTIF abarca las filas de CABECERA DE SECCIÓN (F5, F14, F24 en el 01), contra lo que exige el SPEC §1.4 («COUNTIF sobre F cubriendo SOLO filas de tarea, no cabeceras de sección»). Hoy no falsea el total porque esas celdas están vacías, pero son celdas combinadas de sección sin validación: cualquiera puede pegar un ✓ ahí y el contador subirá sin que haya tarea que contar.",
+  "evidencia": "`01!Apertura Obrador`: secciones combinadas en `A5:G5`, `A14:G14`, `A24:G24`; DV sólo en F6-F12, F15-F22, F25-F31; el COUNTIF cubre F5:F32.",
+  "fix": "Usar `=COUNTIFS()` por bloques o mover la marca a una columna que no exista en las filas de sección; como mínimo, aplicar la validación de datos también a F5/F14/F24.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-12",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/01-apertura-cierre.xlsx (y 02-07, BONUS-01)",
+  "ubicacion": "01!F32 · 02!G34 · etc.",
+  "hallazgo": "Las Instrucciones prometen «Añade tareas específicas de tu obrador en las filas vacías», pero sólo hay UNA fila de holgura por hoja y esa fila NO tiene validación de datos: la tarea añadida ahí se queda sin desplegable. La siguiente fila libre ya cae fuera del COUNTIF, así que una segunda tarea añadida no cuenta nunca.",
+  "evidencia": "`01!Apertura Obrador`: última tarea en la fila 31 (DV hasta F31), COUNTIF hasta F32, total en la fila 34 → una sola fila (32) de holgura y sin DV. `02!Masas y Fermentación`: última tarea fila 33, DV hasta G33, COUNTIF hasta G34. Compárese con el 08, que sí deja 5 filas (25-29) dentro de DV, CF y COUNTIF.",
+  "fix": "Replicar el patrón del 08: 4-5 filas de holgura dentro del rango de DV, del CF y del COUNTIF en las 22 hojas de checklist.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-13",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx",
+  "ubicacion": "Producido vs Vendido :: H5:H16 (CF verde) y filas 5-16 pre-rellenadas",
+  "hallazgo": "Las 12 filas pre-rellenadas llevan Previsto/Producido/Vendido = 0, así que `Merma % = IFERROR(0/0,0) = 0` y la regla `cellIs lessThan 0.05 → verde` pinta las 12 filas de verde «todo correcto» sin un solo dato introducido. El semáforo miente en el estado inicial.",
+  "evidencia": "CF `H5:H44 cellIs lessThan [0.05] fill=E8F5E9`; `D5..F16 = 0` (números reales, no texto); `H5='=IFERROR(G5/E5,0)'` con caché 0.0.",
+  "fix": "Añadir guarda de vacío/cero a las tres reglas (`=Y(E5>0;H5<0,05)` etc.) o dejar Producido/Vendido vacíos en vez de 0 en las 12 filas de ejemplo.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-14",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+  "ubicacion": "Apertura de Caja!D5:D15 y Cierre de Caja!D5:D16 (DV `\"✓,✗,—\"`)",
+  "hallazgo": "Tercer vocabulario distinto para la misma acción dentro del mismo kit: 01-07 y BONUS-01 usan «✓,—», el 08 usa «✓,—,N/A» y el 09 usa «✓,✗,—». Un equipo que rote entre hojas encuentra tres desplegables incompatibles.",
+  "evidencia": "DV extraídas: `09!Apertura de Caja` y `09!Cierre de Caja` → `'\"✓,✗,—\"'` (len 7); `08` → `'\"✓,—,N/A\"'`; `01-07/BONUS-01` → `'\"✓,—\"'`.",
+  "fix": "Unificar a «✓,—,N/A» en los 15 ficheros (ver T-06).",
+  "lente": "excel"
+ },
+ {
+  "id": "T-15",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/10-plan-produccion-semanal.xlsx",
+  "ubicacion": "Resumen por Partida :: B13 (formato `0%`) vs E5:E10 y B14 (formato `0.0%`)",
+  "hallazgo": "El objetivo de merma editable se muestra con 0 decimales (`0%` → «5%») mientras las cifras que compara van con uno (`0.0%` → «12,0%»). Si el usuario escribe un objetivo de 4,5 %, la celda le mostrará «5%» y creerá que no se ha guardado, aunque el `IF` compare bien el valor real.",
+  "evidencia": "`Resumen por Partida!B13 = 0.05 number_format='0%'`; `E5..E10 number_format='0.0%'`; `B14='=E10' number_format='0.0%'`; `G5='=IF(E5<=$B$13,\"OK\",\"Revisar\")'`.",
+  "fix": "Poner `0.0%` en B13.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-16",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+  "ubicacion": "Calendario Anual :: A4:A20",
+  "hallazgo": "Los 17 números de orden están guardados como TEXTO, no como número: se alinean a la izquierda y rompen la vista respecto al resto del kit, donde la columna Nº sí es numérica.",
+  "evidencia": "Barrido de tipos: `A4..A20 data_type='s'` con valores '1'…'17'. En 01-08 la misma columna Nº es numérica (ningún hallazgo en el mismo barrido).",
+  "fix": "Escribirlos como `int` en el generador.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-17",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/13-registro-temperaturas-recepcion.xlsx",
+  "ubicacion": "Registro de Temperaturas :: B4:C4, F4:G4, L4:M4 (alto de fila 42 pt)",
+  "hallazgo": "Las cabeceras de equipo llevan salto de línea manual y van en celdas combinadas de 18 unidades de ancho con alto fijado a 42 pt: caben 3 líneas justas y necesitan 3. Es un margen de cero — cualquier ajuste de fuente del visor corta el rango objetivo, que es precisamente el dato que hace útil la hoja.",
+  "evidencia": "`L4:M4 = 'Abatidor\\n(+65 a +10 °C en menos de 2 h)'` (30 car. en la 2ª línea, ancho 18 → 2 líneas) con `row_dimensions[4].height=42.0`; mismo caso en `B4:C4 = 'Cámara de refrigeración\\n(0 a 4 °C)'` y `F4:G4 = 'Congelador\\n(≤ −18 °C)'`.",
+  "fix": "Subir la fila 4 a 54 pt o ensanchar las columnas de par a 10-11.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-18",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "Carta de Alérgenos :: filas 49-52",
+  "hallazgo": "La Carta arrastra por fórmula las 4 filas libres del final de la matriz (Matriz filas 48-51, vacías). Al imprimir el documento que se enseña al cliente salen 4 filas en blanco con bordes al pie de la tabla.",
+  "evidencia": "`'Carta de Alérgenos'!A49='=IF(\\'Matriz Alérgenos\\'!A48=\"\",\"\",\\'Matriz Alérgenos\\'!A48)'` → caché `None`/`''`; la matriz tiene productos hasta la fila 47 (`A47='Nata montada'`) y 48-51 vacías por diseño («Hay cuatro filas libres al final de la matriz», Instrucciones B24).",
+  "fix": "Es cosmético y aceptable si el cliente rellena esas 4 filas; si no, ocultar las filas 49-52 de la Carta o dejarlas sin borde.",
+  "lente": "excel"
+ },
+ {
+  "id": "T-19",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/ (los 15)",
+  "ubicacion": "159 celdas con doble espacio",
+  "hallazgo": "Hay 159 celdas con dobles espacios. Revisadas una a una: son sangría deliberada de las cabeceras de sección («  Bollería», «  Encendido de Equipos») y separación de campos en las líneas de firma («Fecha: ___/___/______    Turno:»). No es un defecto, pero cualquier gate de ortografía que barra dobles espacios dará 159 falsos positivos y se acabará desactivando.",
+  "evidencia": "Recuento por barrido de todas las hojas: 159 celdas. Ejemplos: `01!Apertura Obrador!A5='  Encendido de Equipos'`, `10!Plan Semanal!A5='  Bollería'`, `09!Registro Mensual!A2='Mes: ________________     Año: ________'`.",
+  "fix": "Documentar la excepción en el gate (ignorar celdas que empiecen por espacios o que contengan «___»), no tocar los ficheros.",
+  "lente": "excel"
+ },
+ {
+  "id": "COM-01",
+  "severidad": "alta",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/{10,11,12,13}.xlsx",
+  "ubicacion": "git ls-files vs git status",
+  "hallazgo": "Las 4 plantillas NUEVAS de la v2.0 (10, 11, 12, 13) están en disco pero NO trackeadas en git. Netlify construye desde el repo: si se despliega así, las 4 tarjetas «NUEVO v2.0» del dashboard, las 4 claves del Mega Pack y los 4 enlaces del email al cliente devuelven 404. Es exactamente el bug G/§2 que la SPEC manda evitar, y afecta justo a lo único por lo que la v2.0 existe.",
+  "evidencia": "`git ls-files astro-site/public/dl/kit-tareas-pasteleria/` → solo 01-09 + BONUS-01/02 (11 ficheros); `git status --short` → `?? 10-plan-produccion-semanal.xlsx`, `?? 11-control-encargos.xlsx`, `?? 12-control-alergenos-vitrina.xlsx`, `?? 13-registro-temperaturas-recepcion.xlsx`. Mientras tanto netlify/functions/get-download-urls.ts:120-123 y :455-458 ya los sirven y verify-purchase.ts:73 ya promete «13 checklists + 2 bonus (v2.0)».",
+  "fix": "`git add astro-site/public/dl/kit-tareas-pasteleria/` (los 4) antes del commit de cierre, y re-correr `gate-flujo-postpago.py --offline` hasta 0 fallos.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-02",
+  "severidad": "media",
+  "fichero": "src/pages/KitTareasPasteleriaDashboard.tsx",
+  "ubicacion": "línea 27 (TEMPLATES[0], tarjeta destacada)",
+  "hallazgo": "La PRIMERA tarjeta del dashboard —la resaltada en oro, lo primero que ve quien acaba de pagar— sigue con el texto de la v1: «6 checklists: apertura y cierre de obrador, horno, vitrina y despacho». El fichero tiene 2 checklists (6 bloques, 42 tareas). La landing SÍ se corrigió; el dashboard no. El comprador abre el .xlsx y encuentra un tercio de lo prometido en la tarjeta.",
+  "evidencia": "Dashboard:27 `desc: '6 checklists: apertura y cierre de obrador, horno, vitrina y despacho.'` · 01-apertura-cierre.xlsx: hojas «Apertura Obrador» (22 tareas, 3 bloques) y «Cierre Obrador» (20 tareas, 3 bloques) · landing kit-tareas-pasteleria.ts:112 ya dice «2 checklists (apertura y cierre del obrador) con 6 bloques y 42 tareas pre-rellenadas».",
+  "fix": "Alinear el desc del dashboard con el de la landing: «2 checklists (apertura y cierre del obrador) con 6 bloques y 42 tareas: encendido de equipos, preparación del obrador y vitrina/despacho».",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-03",
+  "severidad": "media",
+  "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "schema.faqs (líneas 31-63) vs faqs (líneas 256-…), pintadas en KitTareasLandingPage.astro:75 y :526",
+  "hallazgo": "El FAQPage del JSON-LD se genera de `data.schema.faqs` (6 preguntas) y la página pinta `data.faqs` (7 preguntas), con enunciados y respuestas DISTINTOS. Google exige que el contenido marcado esté visible tal cual en la página; es el mismo tipo de riesgo de acción manual por el que hoy se han quitado aggregateRating y reviews, así que dejarlo es incoherente con la decisión que se acaba de tomar.",
+  "evidencia": "schema.faqs: 6 ítems, p. ej. «¿Incluye tareas de producción artesanal?» / on-page faqs: 7 ítems, «¿Incluye tareas de producción artesanal (croissants, tartas, pan)?» con respuesta más larga, más «¿Sirve para una pastelería pequeña y para un obrador grande?» que no existe en el schema. Template: línea 75 `mainEntity: data.schema.faqs.map(...)`, línea 526 `data.faqs.map(...)`.",
+  "fix": "Hacer que `schema.faqs` derive de `faqs` (o duplicar literalmente las 7 con el mismo texto). Si se quiere schema más corto, recortar la lista pero con enunciado y respuesta idénticos a los visibles.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-04",
+  "severidad": "media",
+  "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "líneas 18, 28, 89, 107, 38, 263",
+  "hallazgo": "Se vende que las 13 plantillas vienen «pre-rellenadas», y 4 de las 13 se entregan deliberadamente en blanco o casi: 07 (3 plantillas en blanco), 11 (Registro de Encargos, Agenda de Entregas y Encargos de Hoy vacíos), 13 (los tres registros vacíos por diseño) y 10 (Plan Semanal con 32 productos pero todas las cantidades vacías; Producido vs Vendido a 0). El cliente escéptico cuenta y encuentra la promesa inflada justo en las plantillas nuevas.",
+  "evidencia": "seo.description:18 y schema.productDescription:28 «13 checklists operativos + 2 bonus pre-rellenados»; hero.description:89 «13 plantillas Excel pre-rellenadas con todas las tareas»; grid.subtitle:107 «Cada plantilla viene pre-rellenada»; faqs:263 «Sí. Cada checklist viene pre-rellenado». Contraste: 07-plantilla-personalizable.xlsx (3 hojas en blanco), 11 hoja «Registro de Encargos» A5:O48 vacía, 13 hoja «Registro de Temperaturas» vacía.",
+  "fix": "Redactar «13 plantillas: 9 checklists pre-rellenados con las tareas reales de un obrador + 4 registros y plantillas listos para rellenar (producción, encargos, alérgenos, temperaturas)». Ajustar también la FAQ «¿Las tareas vienen ya rellenadas?».",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-05",
+  "severidad": "media",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/ (varios) + src/data/productos-changelog.ts",
+  "ubicacion": "01-07 y BONUS-01 col. F/G «Hecha» · 08 y 09 col. F «✓ Completada» · changelog línea 49",
+  "hallazgo": "La columna que hay que marcar se llama distinto según el fichero, y el changelog que lee el cliente solo documenta uno de los dos nombres. Quien lee «se marca con ✓ en la columna Hecha» y abre el 08 o el 09 no encuentra ninguna columna «Hecha». La SPEC §1.4 mandaba unificarla en «✓ Completada» en TODOS los checklists.",
+  "evidencia": "01-apertura-cierre.xlsx:Apertura Obrador:F4 = «Hecha» y su Instrucciones B14 «columna «Hecha»»; 08-apertura-cierre-negocio.xlsx:Apertura del Negocio:F4 = «✓ Completada» e Instrucciones B20 «columna «✓ Completada»»; 09-apertura-cierre-caja.xlsx:Apertura de Caja:D4 = «✓ Completada»; productos-changelog.ts:49 «se marca con ✓ en la columna «Hecha»».",
+  "fix": "Unificar el encabezado (y el texto de Instrucciones) en los 15 ficheros a un único nombre, y que el changelog cite ese mismo. Los COUNTIF ya apuntan a la columna correcta en los 28 checklists (verificado), así que es solo renombrar.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-06",
+  "severidad": "media",
+  "fichero": "netlify/functions/resend-access.ts",
+  "ubicacion": "línea 429 (cuerpo del email) y línea 402 `expiresIn: '365d'`",
+  "hallazgo": "La landing vende «acceso de por vida» y el changelog se apoya en ello («El acceso es de por vida: el cliente vuelve a descargar y tiene la última versión»), pero el email que recibe el comprador le dice literalmente que el enlace vale «los próximos 12 meses» y el JWT caduca a 365 días. Un cliente exigente que compre por la promesa de acceso vitalicio y lea eso en su bandeja tiene motivo para reclamar.",
+  "evidencia": "kit-tareas-pasteleria.ts:376 `heroNote: 'Pago único · acceso de por vida · actualizaciones incluidas'` · productos-changelog.ts:5 «El acceso es de por vida» · resend-access.ts:429 «Puedes usar este enlace en cualquier momento durante los próximos 12 meses» · resend-access.ts:402 / verify-purchase.ts:371 `{ expiresIn: '365d' }`.",
+  "fix": "Cambiar el copy del email a algo que no contradiga la promesa: «Este enlace es válido 12 meses; cuando caduque, recupéralo gratis en un clic desde la página del producto (“¿Ya compraste…?”) — tu acceso al kit no caduca». La recuperación self-service ya existe (KitTareasLandingPage.astro:623).",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-07",
+  "severidad": "media",
+  "fichero": "src/pages/KitTareasPasteleriaDashboard.tsx + astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "Dashboard:32 · landing:94, 137, 297",
+  "hallazgo": "Novedad v2.0 sin vender: el fichero 06 ha ganado DOS hojas nuevas completas (Comuniones (Abr-Jun), 33 tareas, y Todos los Santos (Oct-Nov), 28 tareas) más el bloque de recogidas 22-31 Dic y el cierre post-campaña, y ni el dashboard ni la landing las mencionan en ningún sitio. Solo aparecen en el changelog. Se está entregando más de lo que se anuncia, que es el error simétrico del #4 y cuesta conversión.",
+  "evidencia": "06-eventos-festivos.xlsx: hojas «Comuniones (Abr-Jun)» y «Todos los Santos (Oct-Nov)»; Navidad:A21-A25 bloque «Recogidas y Nochevieja (22-31 Dic)», A37-A38 «Cierre de Campaña». Frente a: Dashboard:32 «Navidad, Reyes, San Valentín, Semana Santa, Día de la Madre.»; landing:137 «…Día de la Madre y más.»; landing:94 y :297 idem.",
+  "fix": "Añadir «Comuniones» y «Todos los Santos (buñuelos, huesos de santo, panellets)» a la descripción de la tarjeta 06 en dashboard y landing, y al cta.items.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-08",
+  "severidad": "media",
+  "fichero": "scripts/productos-digitales/kit-tareas-pasteleria-v2-EMAIL-CLIENTE.md",
+  "ubicacion": "Asunto («ahora tiene 15 plantillas») vs toda la web («13 plantillas + 2 bonus»)",
+  "hallazgo": "El email ya está reescrito para la v2.0 (contradice el enunciado de la tarea: NO habla de la v1.1) pero introduce una TERCERA forma de contar el producto. El asunto dice «15 plantillas», el dashboard al que le manda dice «13 Checklists + 2 Bonus», la landing dice «13 Plantillas» y el bonus «Además de las 13 plantillas». El cliente que hace clic ve un número distinto del que le prometió el asunto y cuenta 13 tarjetas + 2 bonus.",
+  "evidencia": "EMAIL-CLIENTE.md:8 «**Asunto:** Tu Kit de Tareas Pastelería ahora tiene 15 plantillas (versión 2.0, sin coste)» y :24 «Y las 11 que ya tenías, revisadas» · Dashboard:135 «13 Checklists + 2 Bonus · Descarga Directa» · landing grid.countGold '13' (:105) · pricing.bonusTotalLabel «Kit completo: 13 plantillas + 2 bonus» (:379).",
+  "fix": "Asunto: «Tu Kit de Tareas Pastelería pasa a 13 plantillas + 2 bonus (versión 2.0, sin coste)». Y en el cuerpo, «las 9 que ya tenías + los 2 bonus, revisados» en vez de «las 11 que ya tenías», para que el reparto core/bonus sea el mismo en email, landing y dashboard.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-09",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/12-control-alergenos-vitrina.xlsx",
+  "ubicacion": "hoja «Carta de Alérgenos», C6:O48 — resultado del gate post20 (sin_cache=458/828)",
+  "hallazgo": "EL FALLO DEL GATE ES UN FALSO POSITIVO Y NO DEBE BLOQUEAR LA PUBLICACIÓN. Las 458 fórmulas «sin cache» son EXACTAMENTE aquellas cuyo resultado es cadena vacía (la casilla del alérgeno está vacía en la matriz): openpyxl no distingue `<v/>` de ausencia de valor. Verificado a mano: 0 fórmulas sin cache cuya celda origen tenga contenido, así que en el móvil y en los visores el cliente ve la carta correcta, con sus ● y ○ y las casillas vacías vacías.",
+  "evidencia": "Script de verificación sobre la hoja: «total formulas Carta: 705 · sin cache: 458 · sin cache PERO fuente no vacía: 0». Ejemplo: C6 `=IF('Matriz Alérgenos'!D5=\"\",\"\",'Matriz Alérgenos'!D5)` con D5 vacía (Croissant no lleva crustáceos). Los valores no vacíos SÍ están cacheados: B6=●, D6=●, G6=○, H6=●.",
+  "fix": "Corregir el verificador (contar como OK la fórmula cuyo resultado esperado es \"\", o comparar contra la celda origen) y no rehacer el fichero 12. Documentarlo junto al gotcha `<v />` de openpyxl 3.1.x que ya está en la memoria del proyecto.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-10",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/BONUS-02-calendario-anual-tareas.xlsx",
+  "ubicacion": "hoja «Calendario Anual», cabecera A3:F3",
+  "hallazgo": "Falta la columna verde «Fecha de este año: ____» que la SPEC §1.4 exige para las fechas móviles. El fichero marca correctamente Black Friday como «Último viernes de nov. (variable)», Semana Santa como «Mar-Abr» y el Día de la Madre como «1er dom. Mayo», pero el cliente no tiene dónde anotar la fecha concreta del año en curso, que es justo lo que convierte el calendario en una herramienta de planificación.",
+  "evidencia": "BONUS-02:Calendario Anual:A3 `# | Fecha | Evento | Producción Especial | Antelación | Notas` (max_col=6, sin columna de fecha del año); SPEC §1.4 «columna verde «Fecha de este año: ____» para las fechas móviles (Semana Santa, Día de la Madre, Black Friday, Comuniones)».",
+  "fix": "Insertar una columna editable (verde) «Fecha de este año» tras «Fecha», al menos en las 6 filas de fecha variable.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-11",
+  "severidad": "baja",
+  "fichero": "src/data/productos-changelog.ts",
+  "ubicacion": "línea 54, dentro de la entrada v1.1 (2026-08-18)",
+  "hallazgo": "La entrada histórica v1.1 termina con un «Anuncio de la versión 2.0 sin coste (publicada el 21 de agosto de 2026)» que repite, tres líneas más abajo, lo que la entrada v2.0 ya cuenta justo encima con más detalle. Un histórico que anuncia el futuro y se contradice en el tiempo verbal es ruido en el único bloque del dashboard que sirve para dar confianza.",
+  "evidencia": "productos-changelog.ts:54 «Anuncio de la versión 2.0 sin coste (publicada el 21 de agosto de 2026): plan de producción con mermas, control de encargos, alérgenos de vitrina y registro de temperaturas / recepción.» frente a las entradas :30-38 de la v2.0 (misma fecha 2026-08-21) que ya listan las 4 plantillas una a una.",
+  "fix": "Borrar ese bullet de la entrada v1.1: la entrada v2.0 ya lo cubre.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-12",
+  "severidad": "baja",
+  "fichero": "astro-site/public/dl/kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx",
+  "ubicacion": "hoja «Instrucciones», A6",
+  "hallazgo": "La hoja de instrucciones del fichero de CAJA sigue con el texto genérico heredado: «Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio», que es literalmente la descripción del fichero 08. Además es el único fichero del kit cuyas Instrucciones van en la columna A con otro formato (los otros 14 usan B2 en adelante), sin la sección «Qué resuelve» ni las referencias cruzadas al resto del kit que son el argumento de venta de la v2.0.",
+  "evidencia": "09:Instrucciones:A6 «1. Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio.» · dims A1:A20 (los demás, B2:B26) · sin ninguna línea «→ NN …» pese a que 08:Cierre del Negocio:B11 sí remite a él («→ 09 Apertura y Cierre de Caja · hoja Cierre de Caja»): la referencia es de ida pero no de vuelta.",
+  "fix": "Reescribir las Instrucciones del 09 con el molde de los ficheros 08/10-13 (Qué resuelve / Cómo usar / Personalización / referencias cruzadas a 08 y a 10) y sustituir A6 por algo específico de caja.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-13",
+  "severidad": "baja",
+  "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "línea 33 (schema.faqs[0]) y línea 257 (faqs[0])",
+  "hallazgo": "La primera pregunta que ve un visitante que NUNCA ha comprado es «¿Qué incluye la versión 2.0?». Para quien aterriza desde Google, esa pregunta presupone un producto anterior que no conoce y no responde a su duda (qué me llevo por 12 €). La FAQ de actualización es valiosa, pero no como apertura.",
+  "evidencia": "faqs[0]:257 `q: '¿Qué incluye la versión 2.0?'` es el primer acordeón que pinta KitTareasLandingPage.astro:526; el `updateNote` («Producto actualizado · Versión 2.0 · agosto 2026», línea 386) ya cubre la señal de frescura bajo el precio.",
+  "fix": "Mover esa FAQ al 3er o 4º puesto y abrir con «¿Las tareas vienen ya rellenadas para pastelería?» (que es la objeción real de compra). Sincronizar el mismo orden en schema.faqs.",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-14",
+  "severidad": "baja",
+  "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "línea 338 (testimonials.items[4], Ana Belén Torres)",
+  "hallazgo": "Un testimonio afirma que el etiquetado de alérgenos del kit «nos da tranquilidad ante cualquier inspección», mientras la plantilla 12 se entrega —correctamente— como BORRADOR que no se puede publicar sin verificar cada referencia con las fichas técnicas del proveedor. La promesa del testimonio va más lejos de lo que el producto entrega, y en materia de alérgenos ese hueco es el que se cobra caro.",
+  "evidencia": "landing:338 «…tener un checklist impreso cada día nos da tranquilidad ante cualquier inspección.» frente a 12-control-alergenos-vitrina.xlsx:Matriz Alérgenos:A2 «PLANTILLA DE PARTIDA — NO LA PUBLIQUES SIN VERIFICARLA» y la fórmula U5 `=IF($S5=\"\",\"NO PUBLICAR\",\"Verificado\")` en las 43 referencias.",
+  "fix": "Suavizar el testimonio a algo verificable («tener el registro firmado cada día nos ordenó el control de vitrina») y, si se quiere hablar de inspección en la landing, hacerlo en la tarjeta 12 con la misma honestidad que el fichero: «matriz de partida que verificas con tus fichas técnicas antes de publicarla».",
+  "lente": "coherencia"
+ },
+ {
+  "id": "COM-15",
+  "severidad": "baja",
+  "fichero": "astro-site/src/data/productos/tareas/kit-tareas-pasteleria.ts",
+  "ubicacion": "línea 91 (hero.checkItems[0])",
+  "hallazgo": "El primer check del hero enumera «obrador, horno, vitrina, despacho» como si fueran los bloques del checklist 01. Los bloques reales son «Encendido de Equipos», «Preparación del Obrador» y «Apertura Vitrina / Despacho»: el horno no es un bloque, es una tarea dentro del primero. Detalle menor, pero es la primera lista que lee el visitante y contradice la descripción corregida de la tarjeta (línea 112).",
+  "evidencia": "landing:91 «Checklists de apertura y cierre: obrador, horno, vitrina, despacho» · 01-apertura-cierre.xlsx:Apertura Obrador:A5 «Encendido de Equipos», A14 «Preparación del Obrador», A24 «Apertura Vitrina / Despacho»; el horno aparece como tarea B6 «Encender hornos…».",
+  "fix": "«Checklists de apertura y cierre del obrador: equipos, producción y vitrina/despacho».",
+  "lente": "coherencia"
+ }
+]

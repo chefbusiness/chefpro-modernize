@@ -67,7 +67,12 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
 
 ## 4. Siguiente trabajo de productos digitales (orden propuesto)
 
-0. **AUDITORÍA DE CONTENIDO DE LOS 630 ENTREGABLES RESTANTES** (pregunta de John a las 02:30:
+0. **AUDITORÍA DE CONTENIDO DE LOS 630 ENTREGABLES RESTANTES — ARRANCA EL 23-AGO.** Plan completo
+   (familias, representantes, fases A-D, criterios de listo) en
+   **`scripts/productos-digitales/PLAN-AUDITORIA-ENTREGABLES-2026-08-23.md`** y workflow genérico
+   listo: `Workflow({scriptPath: 'scripts/productos-digitales/auditoria-entregables-workflow.js',
+   args: {productId: 'kit-escandallos', familia: 'kit-excel'}})`. Primer paso real: Fase A
+   (saneamiento determinista transversal, sonnet). (Pregunta de John a las 02:30:
    «¿están auditados, sin defectos?» — respuesta honesta: NO, solo Pastelería). Censo determinista
    del 2026-08-22 sobre los 645 (`scripts/productos-digitales/censo-entregables-2026-08-22.json`):
    458 xlsx + 61 docx + 9 pdf; **179 xlsx con fórmulas sin valor cacheado** (7.684 fórmulas: en
