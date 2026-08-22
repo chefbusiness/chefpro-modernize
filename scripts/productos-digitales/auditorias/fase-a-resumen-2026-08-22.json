@@ -1,0 +1,3287 @@
+{
+ "meta": {
+  "fecha": "2026-08-22",
+  "fuente": "informes real-<productId>.json de la ejecucion Fase A (postprocess-transversal.py --json, sin --dry-run)",
+  "excluidos": [
+   "kit-tareas-pasteleria (ya v2.0, con changelog y badge, regla dura de no tocar)"
+  ],
+  "spec": "scripts/productos-digitales/FASE-A-SPEC-postprocess-transversal.md (S2 y S2.6)"
+ },
+ "totales": {
+  "productos": 41,
+  "xlsx": 404,
+  "por_familia": {
+   "guia": 8,
+   "kit-excel": 5,
+   "kit-tareas": 18,
+   "plan": 10
+  },
+  "cambios_por_tipo": {
+   "metadata": 2828,
+   "pseudo_formula_a_texto": 6,
+   "formula_reparada": 27,
+   "impresion": 995,
+   "cabecera": 380,
+   "dv": 261,
+   "cf": 441,
+   "contador": 380,
+   "version": 343,
+   "numeracion": 187,
+   "bio": 25
+  },
+  "patrones": {
+   "P5": 694,
+   "P3a": 45,
+   "P4": 180,
+   "P1": 154,
+   "P2": 33,
+   "P3b": 36
+  },
+  "reparaciones_exactas": 27,
+  "pseudo_formula_a_texto": 6,
+  "nocache_pycel": 1,
+  "hojas_sin_contador": 68,
+  "productos_con_fallo_verificacion": 0
+ },
+ "fallos_verificacion": [],
+ "productos": {
+  "guia-dark-kitchen": {
+   "productId": "guia-dark-kitchen",
+   "familia": "guia",
+   "n_xlsx": 3,
+   "patrones": {
+    "P5": 5
+   },
+   "cambios_por_tipo": {
+    "metadata": 21,
+    "pseudo_formula_a_texto": 4,
+    "formula_reparada": 12,
+    "impresion": 5
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "B24",
+     "antes": "=-B23*B7",
+     "despues": "=-B22*B7"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "C24",
+     "antes": "=-C23*B7",
+     "despues": "=-C22*B7"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "D24",
+     "antes": "=-D23*B7",
+     "despues": "=-D22*B7"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "B26",
+     "antes": "=SUM(B26:B29)",
+     "despues": "=SUM(B22:B25)"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "C26",
+     "antes": "=SUM(C26:C29)",
+     "despues": "=SUM(C22:C25)"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "D26",
+     "antes": "=SUM(D26:D29)",
+     "despues": "=SUM(D22:D25)"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "B28",
+     "antes": "=B32+B33",
+     "despues": "=B26+B27"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "C28",
+     "antes": "=C32+C33",
+     "despues": "=C26+C27"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "D28",
+     "antes": "=D32+D33",
+     "despues": "=D26+D27"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "B29",
+     "antes": "=IF(B29=0,0,B35/B29)",
+     "despues": "=IF(B22=0,0,B28/B22)"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "C29",
+     "antes": "=IF(C29=0,0,C35/C29)",
+     "despues": "=IF(C22=0,0,C28/C22)"
+    },
+    {
+     "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+     "hoja": "Punto de Equilibrio",
+     "celda": "D29",
+     "antes": "=IF(D29=0,0,D35/D29)",
+     "despues": "=IF(D22=0,0,D28/D22)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-viabilidad-dark-kitchen.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-obra.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-panaderia-obrador": {
+   "productId": "guia-panaderia-obrador",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 9,
+    "P3a": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "impresion": 15,
+    "cabecera": 6,
+    "dv": 6,
+    "cf": 6,
+    "contador": 6
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-salida-humos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro-panaderia.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-fermentacion-y-produccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-casual": {
+   "productId": "guia-restaurante-casual",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "version": 9,
+    "impresion": 29,
+    "formula_reparada": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Break-Even",
+     "celda": "B12",
+     "antes": "=B12*(1-B8)",
+     "despues": "=B11*(1-B8)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala-terraza.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-gastronomico": {
+   "productId": "guia-restaurante-gastronomico",
+   "familia": "guia",
+   "n_xlsx": 18,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 126,
+    "version": 10,
+    "impresion": 29
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "budget-bodega.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-inspeccion-michelin-repsol.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-vajilla-cristaleria.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-japones": {
+   "productId": "guia-restaurante-japones",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "version": 9,
+    "impresion": 29,
+    "formula_reparada": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Break-Even",
+     "celda": "B12",
+     "antes": "=B12*(1-B8)",
+     "despues": "=B11*(1-B8)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala-japonesa.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina-japonesa.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro-japones.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-mexicano": {
+   "productId": "guia-restaurante-mexicano",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "version": 9,
+    "impresion": 29,
+    "formula_reparada": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Break-Even",
+     "celda": "B12",
+     "antes": "=B12*(1-B8)",
+     "despues": "=B11*(1-B8)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala-mexicana.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina-mexicana.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro-mexicano.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-nikkei": {
+   "productId": "guia-restaurante-nikkei",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "version": 9,
+    "impresion": 29,
+    "formula_reparada": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Break-Even",
+     "celda": "B12",
+     "antes": "=B12*(1-B8)",
+     "despues": "=B11*(1-B8)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala-nikkei.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina-nikkei.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro-nikkei.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "guia-restaurante-peruano": {
+   "productId": "guia-restaurante-peruano",
+   "familia": "guia",
+   "n_xlsx": 15,
+   "patrones": {
+    "P5": 29
+   },
+   "cambios_por_tipo": {
+    "metadata": 105,
+    "version": 9,
+    "impresion": 29,
+    "formula_reparada": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "cash-flow-break-even.xlsx",
+     "hoja": "Break-Even",
+     "celda": "B12",
+     "antes": "=B12*(1-B8)",
+     "despues": "=B11*(1-B8)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "calculadora-ticket-medio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cash-flow-break-even.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-contratacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-diseno-sala-peruana.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-equipamiento-cocina-peruana.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-legal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-marketing-preapertura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "cronograma-apertura-gantt.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "escandallo-maestro-peruano.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "menu-engineering-matrix.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "pl-mensual-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-3-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-turnos-brigada.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-escandallos": {
+   "productId": "kit-escandallos",
+   "familia": "kit-excel",
+   "n_xlsx": 12,
+   "patrones": {
+    "P5": 43
+   },
+   "cambios_por_tipo": {
+    "metadata": 84,
+    "version": 12,
+    "impresion": 43,
+    "formula_reparada": 9
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E7",
+     "antes": "=$C$4/=AVERAGE(C7,D7)",
+     "despues": "=$C$4/AVERAGE(C7,D7)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E8",
+     "antes": "=$C$4/=AVERAGE(C8,D8)",
+     "despues": "=$C$4/AVERAGE(C8,D8)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E9",
+     "antes": "=$C$4/=AVERAGE(C9,D9)",
+     "despues": "=$C$4/AVERAGE(C9,D9)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E10",
+     "antes": "=$C$4/=AVERAGE(C10,D10)",
+     "despues": "=$C$4/AVERAGE(C10,D10)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E11",
+     "antes": "=$C$4/=AVERAGE(C11,D11)",
+     "despues": "=$C$4/AVERAGE(C11,D11)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E12",
+     "antes": "=$C$4/=AVERAGE(C12,D12)",
+     "despues": "=$C$4/AVERAGE(C12,D12)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E13",
+     "antes": "=$C$4/=AVERAGE(C13,D13)",
+     "despues": "=$C$4/AVERAGE(C13,D13)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E14",
+     "antes": "=$C$4/=AVERAGE(C14,D14)",
+     "despues": "=$C$4/AVERAGE(C14,D14)"
+    },
+    {
+     "fichero": "10-calculadora-pvp.xlsx",
+     "hoja": "Calculadora PVP",
+     "celda": "E15",
+     "antes": "=$C$4/=AVERAGE(C15,D15)",
+     "despues": "=$C$4/AVERAGE(C15,D15)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-escandallo-estandar.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-menu-degustacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-menu-del-dia.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-cocktails-bebidas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-pasteleria.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-catering.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-cafeteria-brunch.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-food-truck.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-control-mermas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "10-calculadora-pvp.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "11-dashboard-food-cost-mensual.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-mermas-inventario.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-gestion-personal": {
+   "productId": "kit-gestion-personal",
+   "familia": "kit-excel",
+   "n_xlsx": 9,
+   "patrones": {
+    "P5": 26,
+    "P4": 1
+   },
+   "cambios_por_tipo": {
+    "metadata": 63,
+    "version": 9,
+    "impresion": 27,
+    "formula_reparada": 1,
+    "cf": 1,
+    "contador": 1
+   },
+   "reparaciones_exactas": [
+    {
+     "fichero": "04-onboarding-nuevo-empleado.xlsx",
+     "hoja": "Checklist Onboarding",
+     "celda": "C70",
+     "antes": "=IF(68>0,68/69*100,0)",
+     "despues": "=IF(C69>0,C68/C69*100,0)"
+    }
+   ],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-cuadrante-turnos-semanal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-control-horas-extras.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-coste-laboral-mensual.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-onboarding-nuevo-empleado.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-planificacion-vacaciones.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-evaluacion-desempeno.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-directorio-plantilla.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-cambio-turno.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-inventario": {
+   "productId": "kit-inventario",
+   "familia": "kit-excel",
+   "n_xlsx": 9,
+   "patrones": {
+    "P5": 35
+   },
+   "cambios_por_tipo": {
+    "metadata": 63,
+    "version": 9,
+    "impresion": 35
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-pedidos-compra.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-control-mermas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-plan-financiero": {
+   "productId": "kit-plan-financiero",
+   "familia": "kit-excel",
+   "n_xlsx": 10,
+   "patrones": {
+    "P5": 53
+   },
+   "cambios_por_tipo": {
+    "metadata": 70,
+    "version": 10,
+    "impresion": 53
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [
+    {
+     "fichero": "07-informe-viabilidad-bancos.xlsx",
+     "celda": "Proyecciones:B21 = '=IFERROR(IRR(B19:F19),\"N/A\")'"
+    }
+   ],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-plan-financiero-previsional.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-presupuesto-inversion-capex.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-08-simulador-escenarios.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas": {
+   "productId": "kit-tareas",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 14,
+    "P1": 28,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 56,
+    "numeracion": 28,
+    "dv": 28,
+    "cf": 32,
+    "contador": 29,
+    "version": 18,
+    "impresion": 41,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-asador": {
+   "productId": "kit-tareas-asador",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 13,
+    "P2": 17
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 34,
+    "numeracion": 17,
+    "dv": 17,
+    "cf": 17,
+    "contador": 16,
+    "version": 20,
+    "impresion": 30
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Plantilla en Blanco",
+     "patron": "P2",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre-asador.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-horno-josper-brasas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-maduracion-despiece-carne.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-parrilla-pescados-verduras.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-bar": {
+   "productId": "kit-tareas-bar",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 13,
+    "P1": 23,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 46,
+    "numeracion": 23,
+    "dv": 23,
+    "cf": 27,
+    "contador": 24,
+    "version": 19,
+    "impresion": 35,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-cafeteria": {
+   "productId": "kit-tareas-cafeteria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 16,
+    "P1": 28,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 56,
+    "numeracion": 28,
+    "dv": 28,
+    "cf": 32,
+    "contador": 29,
+    "version": 18,
+    "impresion": 17,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-catering": {
+   "productId": "kit-tareas-catering",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 13,
+    "P4": 21
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cf": 21,
+    "contador": 18,
+    "version": 11,
+    "impresion": 29,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Fase",
+     "patron": "P4",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "patron": "P4",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P4",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-chef-privado": {
+   "productId": "kit-tareas-chef-privado",
+   "familia": "kit-tareas",
+   "n_xlsx": 9,
+   "patrones": {
+    "P5": 10,
+    "P4": 11
+   },
+   "cambios_por_tipo": {
+    "metadata": 63,
+    "cf": 11,
+    "contador": 11,
+    "version": 9,
+    "impresion": 21
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-ficha-cliente-consulta.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-planificacion-menu-compras.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-equipo-transporte.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-seguridad-alimentaria-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-checklist-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-seguimiento-fidelizacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-administracion-autonomo.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-pre-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-demanda.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-chocolateria": {
+   "productId": "kit-tareas-chocolateria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 16,
+    "P4": 20
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cf": 20,
+    "contador": 20,
+    "version": 11,
+    "impresion": 31,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-produccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-temporada.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-dark-kitchen": {
+   "productId": "kit-tareas-dark-kitchen",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 15,
+    "P1": 23,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 46,
+    "numeracion": 23,
+    "dv": 23,
+    "cf": 27,
+    "contador": 24,
+    "version": 18,
+    "impresion": 17,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-food-truck": {
+   "productId": "kit-tareas-food-truck",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P3b": 8,
+    "P5": 3
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "dv": 7,
+    "cf": 7,
+    "impresion": 11
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "01-setup-teardown-food-truck.xlsx",
+     "hoja": "Setup y Teardown",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "02-operaciones-moviles-vehiculo.xlsx",
+     "hoja": "Operaciones Moviles",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "03-appcc-seguridad-alimentaria-movil.xlsx",
+     "hoja": "APPCC Movil",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "04-permisos-eventos-localizaciones.xlsx",
+     "hoja": "Permisos y Eventos",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "06-tareas-perfiles.xlsx",
+     "hoja": "Perfiles",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-semanales-mensuales.xlsx",
+     "hoja": "Semanales y Mensuales",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "08-eventos-estacionales.xlsx",
+     "hoja": "Eventos y Temporadas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Personalizable",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-setup-teardown-food-truck.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-operaciones-moviles-vehiculo.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-appcc-seguridad-alimentaria-movil.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-permisos-eventos-localizaciones.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-pre-evento.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-hamburgueseria": {
+   "productId": "kit-tareas-hamburgueseria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 15,
+    "P1": 26,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 52,
+    "numeracion": 26,
+    "dv": 26,
+    "cf": 30,
+    "contador": 27,
+    "version": 18,
+    "impresion": 17,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-heladeria": {
+   "productId": "kit-tareas-heladeria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 16,
+    "P4": 21
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cf": 21,
+    "contador": 21,
+    "version": 11,
+    "impresion": 32,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-produccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-temporada.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-hotel": {
+   "productId": "kit-tareas-hotel",
+   "familia": "kit-tareas",
+   "n_xlsx": 19,
+   "patrones": {
+    "P5": 21,
+    "P4": 52
+   },
+   "cambios_por_tipo": {
+    "metadata": 133,
+    "cf": 52,
+    "contador": 52,
+    "version": 19,
+    "impresion": 68,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-fb-buffet-desayuno.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-fb-buffet-comida-cena.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-fb-restaurante-carte.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-fb-outlets.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-fb-room-service-minibar.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-fb-banquetes-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-recepcion-turnos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-guest-services.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-housekeeping.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "10-areas-publicas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "11-piscina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "12-terraza.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "13-mantenimiento.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "14-administracion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "15-spa-wellness.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "18-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "19-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-marisqueria": {
+   "productId": "kit-tareas-marisqueria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P3b": 8,
+    "P5": 3
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "dv": 7,
+    "cf": 7,
+    "impresion": 11
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "01-apertura-cierre-marisqueria.xlsx",
+     "hoja": "Apertura y Cierre",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "02-vivero-lonjas-pescado.xlsx",
+     "hoja": "Vivero y Lonjas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "03-trazabilidad-appcc-marisco.xlsx",
+     "hoja": "Trazabilidad APPCC",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "04-expositor-barra-mariscos.xlsx",
+     "hoja": "Expositor y Barra",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "06-tareas-perfiles.xlsx",
+     "hoja": "Perfiles",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-semanales-mensuales.xlsx",
+     "hoja": "Semanales y Mensuales",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "08-eventos-estacionales.xlsx",
+     "hoja": "Eventos y Temporadas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Personalizable",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre-marisqueria.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-vivero-lonjas-pescado.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-trazabilidad-appcc-marisco.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-expositor-barra-mariscos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-panaderia": {
+   "productId": "kit-tareas-panaderia",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P3b": 8,
+    "P5": 3
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "dv": 7,
+    "cf": 7,
+    "impresion": 11
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "01-apertura-cierre-panaderia.xlsx",
+     "hoja": "Apertura y Cierre",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "02-masas-madre-fermentacion.xlsx",
+     "hoja": "Masas Madre",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "03-hornos-coccion.xlsx",
+     "hoja": "Hornos y Coccion",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "04-expositor-venta.xlsx",
+     "hoja": "Expositor y Venta",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "06-tareas-perfiles.xlsx",
+     "hoja": "Perfiles",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-semanales-mensuales.xlsx",
+     "hoja": "Semanales y Mensuales",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "08-eventos-estacionales.xlsx",
+     "hoja": "Eventos y Temporadas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Personalizable",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre-panaderia.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-masas-madre-fermentacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-hornos-coccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-expositor-venta.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-produccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-pizzeria": {
+   "productId": "kit-tareas-pizzeria",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 15,
+    "P1": 26,
+    "P4": 4
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 52,
+    "numeracion": 26,
+    "dv": 26,
+    "cf": 30,
+    "contador": 27,
+    "version": 18,
+    "impresion": 17,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "patron": "P1",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-partidas-cocina.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-eventos-festivos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-restaurante-creativo": {
+   "productId": "kit-tareas-restaurante-creativo",
+   "familia": "kit-tareas",
+   "n_xlsx": 13,
+   "patrones": {
+    "P5": 18,
+    "P4": 30
+   },
+   "cambios_por_tipo": {
+    "metadata": 91,
+    "cf": 30,
+    "contador": 30,
+    "version": 13,
+    "impresion": 43,
+    "bio": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-mise-en-place-degustacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-id-desarrollo-menu.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-tareas-brigada-creativa.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-sumiller-maridajes.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-chefs-table-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-fotografia-storytelling.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "10-apertura-cierre-negocio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "11-apertura-cierre-caja.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-sushi-bar": {
+   "productId": "kit-tareas-sushi-bar",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P5": 16,
+    "P2": 16
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "cabecera": 32,
+    "numeracion": 16,
+    "dv": 16,
+    "cf": 16,
+    "contador": 15,
+    "version": 19,
+    "impresion": 32
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Plantilla en Blanco",
+     "patron": "P2",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre-sushi.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-preparacion-arroz-pescado.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-seguridad-anisakis-appcc.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-barra-sushi-neta-case.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "kit-tareas-tapas-bar": {
+   "productId": "kit-tareas-tapas-bar",
+   "familia": "kit-tareas",
+   "n_xlsx": 11,
+   "patrones": {
+    "P3b": 8,
+    "P5": 3
+   },
+   "cambios_por_tipo": {
+    "metadata": 77,
+    "dv": 7,
+    "cf": 7,
+    "impresion": 11
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "01-apertura-cierre-tapas-bar.xlsx",
+     "hoja": "Apertura y Cierre",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "02-barra-tapas-pinchos.xlsx",
+     "hoja": "Barra Tapas y Pinchos",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "03-cocina-raciones-platos.xlsx",
+     "hoja": "Cocina Raciones",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "04-bebidas-cerveza-vino-vermut.xlsx",
+     "hoja": "Bebidas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "06-tareas-perfiles.xlsx",
+     "hoja": "Perfiles",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "07-semanales-mensuales.xlsx",
+     "hoja": "Semanales y Mensuales",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "08-eventos-estacionales.xlsx",
+     "hoja": "Eventos y Temporadas",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Personalizable",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-apertura-cierre-tapas-bar.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-barra-tapas-pinchos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-cocina-raciones-platos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-bebidas-cerveza-vino-vermut.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-tareas-manager.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-tareas-perfiles.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-semanales-mensuales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-eventos-estacionales.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-plantilla-personalizable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-calendario-anual.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "pack-appcc": {
+   "productId": "pack-appcc",
+   "familia": "kit-excel",
+   "n_xlsx": 17,
+   "patrones": {
+    "P5": 34
+   },
+   "cambios_por_tipo": {
+    "metadata": 119,
+    "version": 17,
+    "impresion": 34,
+    "bio": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "01-registro-temperaturas-diario.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "02-registro-temperaturas-recepcion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "04-registro-limpieza-diaria.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "05-checklist-recepcion-mercancias.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "06-registro-trazabilidad.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "07-control-plagas-ddd.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "09-control-aceite-fritura.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "10-control-agua-potable.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "11-registro-acciones-correctivas.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "13-checklist-higiene-personal.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "14-fichas-14-alergenos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "15-guia-inspeccion-sanidad.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-01-registro-formacion.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "BONUS-02-protocolo-alerta-alimentaria.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-catering-tematico-eventos": {
+   "productId": "plan-catering-tematico-eventos",
+   "familia": "plan",
+   "n_xlsx": 4,
+   "patrones": {
+    "P5": 9,
+    "P3b": 1
+   },
+   "cambios_por_tipo": {
+    "metadata": 28,
+    "impresion": 10
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+     "hoja": "Checklist 6 fases",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-pricing-catering-tematico-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-catering-tematico-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-catering-tematico-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-proveedores-catering-tematico-eventos.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-chef-privado-showcooking-eventos": {
+   "productId": "plan-chef-privado-showcooking-eventos",
+   "familia": "plan",
+   "n_xlsx": 4,
+   "patrones": {
+    "P5": 9,
+    "P3b": 1
+   },
+   "cambios_por_tipo": {
+    "metadata": 28,
+    "impresion": 10
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+     "hoja": "Checklist 6 fases",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-pricing-chef-privado-showcooking.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-chef-privado-showcooking.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-chef-privado-showcooking.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-proveedores-chef-privado-showcooking.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-bar-restaurante": {
+   "productId": "plan-negocio-bar-restaurante",
+   "familia": "plan",
+   "n_xlsx": 2,
+   "patrones": {
+    "P3b": 1,
+    "P5": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 14,
+    "dv": 1,
+    "cf": 1,
+    "impresion": 7,
+    "pseudo_formula_a_texto": 2,
+    "bio": 1,
+    "version": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "checklist-apertura-bar-restaurante.xlsx",
+     "hoja": "Checklist Apertura",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "checklist-apertura-bar-restaurante.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-bar-restaurante.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-cafeteria": {
+   "productId": "plan-negocio-cafeteria",
+   "familia": "plan",
+   "n_xlsx": 2,
+   "patrones": {
+    "P3a": 6,
+    "P5": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 14,
+    "dv": 6,
+    "cf": 6,
+    "contador": 6,
+    "impresion": 12,
+    "version": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "checklist-apertura-cafeteria-brunch.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-cafeteria-brunch.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-cocteleria-eventos": {
+   "productId": "plan-negocio-cocteleria-eventos",
+   "familia": "plan",
+   "n_xlsx": 4,
+   "patrones": {
+    "P5": 10,
+    "P3a": 15
+   },
+   "cambios_por_tipo": {
+    "metadata": 28,
+    "impresion": 25,
+    "dv": 15,
+    "cf": 15,
+    "contador": 6,
+    "version": 2,
+    "bio": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "1. Licores y destilados",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "2. Mixers premium",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "3. Cristaleria",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "4. Hielo y refrigeracion",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "5. Equipamiento accesorio",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "6. Frutas y garnish",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "7. Consumibles eco",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "8. Servicios pro",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    },
+    {
+     "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+     "hoja": "9. Captacion B2B",
+     "patron": "P3a",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-pricing-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-cocteleria-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-cocteleria-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-proveedores-cocteleria-eventos.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-food-truck": {
+   "productId": "plan-negocio-food-truck",
+   "familia": "plan",
+   "n_xlsx": 2,
+   "patrones": {
+    "P3a": 6,
+    "P5": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 14,
+    "dv": 6,
+    "cf": 6,
+    "contador": 6,
+    "impresion": 12,
+    "version": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "checklist-apertura-food-truck.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-food-truck.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-paellero-eventos": {
+   "productId": "plan-negocio-paellero-eventos",
+   "familia": "plan",
+   "n_xlsx": 4,
+   "patrones": {
+    "P5": 9,
+    "P3b": 1
+   },
+   "cambios_por_tipo": {
+    "metadata": 28,
+    "impresion": 10
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [
+    {
+     "fichero": "checklist-apertura-paellero-eventos.xlsx",
+     "hoja": "Checklist 6 fases",
+     "patron": "P3b",
+     "motivo": "sin motivo explicito en el informe (ver hoja: personalizable/proveedores/sub-tabla sin contador propio, o sin sitio)"
+    }
+   ],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-pricing-eventos-paellero.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-paellero-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-paellero-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-proveedores-paellero-eventos.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-panaderia": {
+   "productId": "plan-negocio-panaderia",
+   "familia": "plan",
+   "n_xlsx": 2,
+   "patrones": {
+    "P3a": 6,
+    "P5": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 14,
+    "dv": 6,
+    "cf": 6,
+    "contador": 6,
+    "impresion": 12,
+    "version": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "checklist-apertura-panaderia.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-panaderia.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-parrillero-asador-eventos": {
+   "productId": "plan-negocio-parrillero-asador-eventos",
+   "familia": "plan",
+   "n_xlsx": 4,
+   "patrones": {
+    "P5": 25
+   },
+   "cambios_por_tipo": {
+    "metadata": 28,
+    "impresion": 25,
+    "version": 2
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "calculadora-pricing-eventos-parrillero.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "checklist-apertura-parrillero-asador-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-parrillero-asador-eventos.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plantilla-proveedores-parrillero-asador-eventos.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  },
+  "plan-negocio-tapas-bar": {
+   "productId": "plan-negocio-tapas-bar",
+   "familia": "plan",
+   "n_xlsx": 2,
+   "patrones": {
+    "P3a": 6,
+    "P5": 6
+   },
+   "cambios_por_tipo": {
+    "metadata": 14,
+    "dv": 6,
+    "cf": 6,
+    "contador": 6,
+    "impresion": 12,
+    "version": 1
+   },
+   "reparaciones_exactas": [],
+   "hojas_sin_contador": [],
+   "nocache_pycel": [],
+   "verificacion_final": {
+    "todos_ok": true,
+    "detalle": [
+     {
+      "fichero": "checklist-apertura-tapas-bar.xlsx",
+      "ok": true
+     },
+     {
+      "fichero": "plan-financiero-tapas-bar.xlsx",
+      "ok": true
+     }
+    ]
+   }
+  }
+ }
+}
