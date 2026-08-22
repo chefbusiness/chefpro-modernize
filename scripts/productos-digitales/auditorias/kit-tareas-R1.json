@@ -1,0 +1,1012 @@
+{
+ "productId": "kit-tareas",
+ "familia": "kit-tareas",
+ "inventario": {
+  "productId": "kit-tareas",
+  "ficheros": [
+   {
+    "nombre": "01-apertura-cierre.xlsx",
+    "tipo": "xlsx",
+    "bytes": 23315,
+    "hojas": [
+     "Instrucciones",
+     "Apertura Cocina",
+     "Apertura Sala",
+     "Apertura Barra",
+     "Cierre Cocina",
+     "Cierre Sala",
+     "Cierre Barra"
+    ],
+    "formulas": 12,
+    "resumen": "6 checklists de apertura/cierre por área con COUNTIF de progreso (✓ completadas / total tareas no vacías)"
+   },
+   {
+    "nombre": "02-partidas-cocina.xlsx",
+    "tipo": "xlsx",
+    "bytes": 14145,
+    "hojas": [
+     "Instrucciones",
+     "Calientes",
+     "Fríos",
+     "Mise en Place"
+    ],
+    "formulas": 6,
+    "resumen": "Checklists de partida de cocina antes/durante/después de servicio"
+   },
+   {
+    "nombre": "03-tareas-manager.xlsx",
+    "tipo": "xlsx",
+    "bytes": 17119,
+    "hojas": [
+     "Instrucciones",
+     "Diario Manager",
+     "Semanal Manager",
+     "Mensual Manager",
+     "Handover Turno"
+    ],
+    "formulas": 8,
+    "resumen": "Checklists de manager por cadencia + handover de turno"
+   },
+   {
+    "nombre": "04-tareas-perfiles.xlsx",
+    "tipo": "xlsx",
+    "bytes": 18066,
+    "hojas": [
+     "Instrucciones",
+     "Jefe de Cocina",
+     "Sous Chef",
+     "Jefe de Sala",
+     "Camarero",
+     "Barman"
+    ],
+    "formulas": 10,
+    "resumen": "Checklists por puesto/perfil profesional"
+   },
+   {
+    "nombre": "05-tareas-semanales-mensuales.xlsx",
+    "tipo": "xlsx",
+    "bytes": 13795,
+    "hojas": [
+     "Instrucciones",
+     "Limpieza Semanal",
+     "FIFO Semanal",
+     "Mantenimiento Mensual"
+    ],
+    "formulas": 6,
+    "resumen": "Limpieza profunda, control FIFO y mantenimiento periódico"
+   },
+   {
+    "nombre": "06-eventos-festivos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 16197,
+    "hojas": [
+     "Instrucciones",
+     "Pre-Evento",
+     "San Valentín",
+     "Navidad",
+     "Temporada Terraza"
+    ],
+    "formulas": 8,
+    "resumen": "Checklists de eventos/festivos con tareas reales por antelación (7/15 días antes, etc.)"
+   },
+   {
+    "nombre": "07-plantilla-personalizable.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12711,
+    "hojas": [
+     "Instrucciones",
+     "Por Franja Horaria",
+     "Por Área",
+     "Por Perfil"
+    ],
+    "formulas": 3,
+    "resumen": "3 plantillas en blanco para que el cliente cree sus propias listas"
+   },
+   {
+    "nombre": "08-apertura-cierre-negocio.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11107,
+    "hojas": [
+     "Instrucciones",
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "formulas": 4,
+    "resumen": "Checklist de apertura/cierre del local en su conjunto (no por área)"
+   },
+   {
+    "nombre": "09-apertura-cierre-caja.xlsx",
+    "tipo": "xlsx",
+    "bytes": 13700,
+    "hojas": [
+     "Instrucciones",
+     "Apertura de Caja",
+     "Cierre de Caja",
+     "Registro Mensual"
+    ],
+    "formulas": 60,
+    "resumen": "Arqueo de caja con tabla de denominaciones EUR correctas (500→0.01), fórmulas de cuadre (B45=B43-B44) y registro mensual con sumas por fila/columna, todas verificadas correctas"
+   },
+   {
+    "nombre": "BONUS-01-briefing-servicio.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7342,
+    "hojas": [
+     "Instrucciones",
+     "Briefing"
+    ],
+    "formulas": 0,
+    "resumen": "Plantilla de briefing pre-servicio (reservas, platos del día, 86s, alérgenos)"
+   },
+   {
+    "nombre": "BONUS-02-calendario-anual-tareas.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8011,
+    "hojas": [
+     "Instrucciones",
+     "Calendario Anual"
+    ],
+    "formulas": 0,
+    "resumen": "17 fechas clave de hostelería (filas 5-21, verificado = 17) con tareas y antelación, más 5 filas en blanco para fechas propias"
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "apertura-cierre",
+    "title": "Apertura y Cierre",
+    "ruta": "01-apertura-cierre.xlsx"
+   },
+   {
+    "key": "partidas",
+    "title": "Partidas de Cocina",
+    "ruta": "02-partidas-cocina.xlsx"
+   },
+   {
+    "key": "manager",
+    "title": "Tareas del Manager",
+    "ruta": "03-tareas-manager.xlsx"
+   },
+   {
+    "key": "perfiles",
+    "title": "Tareas por Perfil",
+    "ruta": "04-tareas-perfiles.xlsx"
+   },
+   {
+    "key": "periodicas",
+    "title": "Semanales y Mensuales",
+    "ruta": "05-tareas-semanales-mensuales.xlsx"
+   },
+   {
+    "key": "eventos",
+    "title": "Eventos y Festivos",
+    "ruta": "06-eventos-festivos.xlsx"
+   },
+   {
+    "key": "personalizable",
+    "title": "Plantilla Personalizable",
+    "ruta": "07-plantilla-personalizable.xlsx"
+   },
+   {
+    "key": "apertura-negocio",
+    "title": "Apertura y Cierre del Negocio",
+    "ruta": "08-apertura-cierre-negocio.xlsx"
+   },
+   {
+    "key": "apertura-caja",
+    "title": "Apertura y Cierre de Caja",
+    "ruta": "09-apertura-cierre-caja.xlsx"
+   },
+   {
+    "key": "bonus-briefing",
+    "title": "BONUS: Briefing Servicio",
+    "ruta": "BONUS-01-briefing-servicio.xlsx"
+   },
+   {
+    "key": "bonus-calendario",
+    "title": "BONUS: Calendario Anual",
+    "ruta": "BONUS-02-calendario-anual-tareas.xlsx"
+   }
+  ],
+  "landing": {
+   "productName": "Kit de Tareas Recurrentes Pro — Checklists Operativos para Restaurante",
+   "cifras_prometidas": [
+    "'9' plantillas (grid.countGold + SEO title/description) — pero PRODUCT_FILES y TEMPLATES tienen 11 ficheros reales (9 numerados + 2 BONUS)",
+    "17 fechas clave en calendario anual (verificado exacto: filas 5-21)",
+    "'~90 tareas' en Apertura y Cierre (no verificado byte a byte, plausible por 6 hojas × ~15 filas)",
+    "Bonus valorados en €16 total (€7+€9, coincide con bonus.items)"
+   ],
+   "entregables_prometidos": [
+    "6 checklists apertura/cierre (cocina/sala/barra)",
+    "Partidas de cocina (calientes/fríos/mise en place)",
+    "Tareas manager diario/semanal/mensual + handover",
+    "Tareas por perfil (5 puestos)",
+    "Semanales/mensuales (limpieza/FIFO/mantenimiento)",
+    "Eventos y festivos (pre-evento/San Valentín/Navidad/terraza)",
+    "Plantilla personalizable (3 en blanco)",
+    "BONUS briefing servicio",
+    "BONUS calendario anual"
+   ],
+   "bonus": [
+    "Plantilla de Briefing Pre-Servicio — €7",
+    "Calendario Anual de Tareas Especiales — €9"
+   ],
+   "faqs": [
+    "¿Las tareas vienen ya rellenadas?",
+    "¿Cómo funciona el sistema de firma?",
+    "¿Funcionan con Google Sheets?",
+    "¿En qué se diferencia de Trail u otros sistemas?",
+    "¿Puedo usarlo en varios restaurantes?",
+    "¿Incluye tareas para eventos y festivos?"
+   ]
+  },
+  "gate": "Ambos gates en verde para kit-tareas. gate-flujo-postpago.py --offline --only kit-tareas: 11/11 ficheros, cards 11, 0 issues (1 aviso esperado: sección D de webhook sin verificar en modo offline, no aplica a este encargo). censo-entregables.py --only kit-tareas --fail --quiet: 11 ficheros censados (11 xlsx, 0 docx, 0 pdf), OK: 0 defectos.",
+  "notas": [
+   "Fase A confirmada como aplicada: no se encontró ningún caso que se le haya escapado (cache de valores, casilla '✓' unificada, sin fórmulas rotas) en el barrido de fórmulas de los 11 xlsx.",
+   "09-apertura-cierre-caja.xlsx hoja 'Cierre de Caja': tabla de denominaciones EUR correcta (500,200,100,50,20,10,5 billetes; 2,1,0.5,0.2,0.1,0.05,0.01 monedas) y cadena de fórmulas de cuadre C21:C35→C36→B40→B43→B45 verificada coherente (B45 = efectivo contado + tarjetas + otros − fondo separado).",
+   "'Registro Mensual' de 09-apertura-cierre-caja.xlsx: 38 fórmulas, todas sumas de fila (F=C+D+E) y de columna (SUM), sin errores detectados.",
+   "Único hallazgo de contenido/negocio real (no cubierto por la Fase A determinista): kit-tareas.ts:130-180 (grid.templates, 9 entradas) incluye los 2 ítems BONUS dentro del bloque titulado '9 Plantillas de Tareas Operativas', pero kit-tareas.ts:227 (bonus.subtitle) dice 'Además de las 9 plantillas, recibirás estos recursos adicionales' — la landing no deja claro si los 2 bonus cuentan dentro del '9' o son adicionales a él; de las 9 tarjetas del grid solo 7 son plantillas operativas 'core', las otras 2 son los mismos bonus repetidos más abajo. Es una imprecisión de copy, no un error de datos: el conteo interno del array (9) es consistente consigo mismo y con SEO title/description ('9 checklists'), pero el total real de ficheros entregados es 11, cifra que nunca se comunica en la landing.",
+   "Dashboard (KitTareasDashboard.tsx TEMPLATES, 11 keys) y PRODUCT_FILES['kit-tareas'] en get-download-urls.ts (11 keys) están perfectamente alineados 1:1, sin huérfanos ni faltantes.",
+   "verify-purchase.ts y resend-access.ts: accessPath '/kit-tareas-access' correcto y consistente entre ambas funciones.",
+   "productos-changelog.ts: entrada 'kit-tareas' versión 1.1 / 2026-08-22 presente, coincide con updateNote de la landing ('Versión 1.1 · agosto 2026')."
+  ],
+  "changelog": "",
+  "emails": {
+   "verify": "verify-purchase.ts:35-36 — kit-tareas → accessPath '/kit-tareas-access' (correcto, sin errores)",
+   "resend": "resend-access.ts:35-36 — kit-tareas → accessPath '/kit-tareas-access' (correcto, sin errores)"
+  }
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (astro-site/src/data/productos/tareas/kit-tareas.ts), dashboard (src/pages/KitTareasDashboard.tsx), emails de acceso (netlify/functions/verify-purchase.ts, resend-access.ts), changelog (src/data/productos-changelog.ts) y config (src/data/productos-digitales-config.ts) contra el contenido REAL de los 11 .xlsx de /astro-site/public/dl/kit-tareas/ (volcado celda a celda con openpyxl: valores, fórmulas, rellenos, validaciones, formato condicional, print setup y metadatos).",
+    "veredicto": "no listo",
+    "motivo": "Tres bloqueantes: (1) la hoja «Cierre de Caja» calcula el DESCUADRE sumando el efectivo contado —que incluye el fondo de caja— contra la Z del TPV, de modo que arroja un descuadre positivo falso igual al fondo TODOS los días, en el único fichero del kit que maneja dinero; (2) el JSON-LD emite un aggregateRating 4,9 con 10 reseñas y 3 reviews nominales inventadas (una de ellas afirmando pagos a un competidor con nombre y precio) sin ningún sistema de reseñas detrás; (3) el ancla de precio «€49 tachado / -71% / precio especial de lanzamiento, sube pronto» lleva idéntica desde el commit de lanzamiento del 2026-03-19, con lo que el «precio anterior» nunca se aplicó. Encima, toda la capa comercial (landing, email de compra, dashboard) sigue vendiendo «9 checklists» cuando el cliente descarga 11 ficheros —los kits hermanos ya dicen 11— y dos entregables completos (Apertura/Cierre del Negocio y de Caja) no aparecen en ninguna parte de la página de venta. Los ficheros de checklist en sí (01-06) son sólidos y están bien poblados; lo que no está listo es la coherencia entre lo que se promete, lo que se cobra y lo que se entrega.",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Cierre de Caja», celdas B40, B43, B45 (y tarea B14)",
+      "hallazgo": "El DESCUADRE está mal planteado: compara el efectivo FÍSICO contado (que incluye el fondo de caja) contra la Z del TPV (que sólo recoge ventas). El resultado es un descuadre positivo falso, igual al fondo de caja, todos los días. No existe ninguna celda para restar el fondo.",
+      "evidencia": "B40='=C36' (TOTAL EFECTIVO del recuento por denominación), B41=0 tarjetas, B42=0 otros, B43='=B40+B41+B42' (TOTAL FACTURADO), B44=0 (Z del TPV), B45='=B43-B44' (DESCUADRE). El recuento C21:C35 cuenta TODO el cajón. La tarea nº14 (B14='Separar fondo de caja para mañana') va DESPUÉS de la nº10 (B10='Total facturado = efectivo + tarjetas + otros'), y en las filas 39-45 no hay ningún concepto «Fondo de caja». Con un fondo de 200 €, el descuadre marcará +200 € cada día. (El inventario determinista previo daba por buena esta cadena describiéndola como «efectivo contado + tarjetas + otros − fondo separado»: esa resta NO existe en el fichero.)",
+      "fix": "Insertar en el bloque «Resumen de Cierre» una fila «Fondo de caja inicial» (p. ej. B41, editable, enlazable con la Apertura) y cambiar TOTAL FACTURADO a '=B40-B41+B42+B43' (efectivo contado menos fondo, más tarjetas y otros). Renumerar B45→B46 y dejar DESCUADRE = TOTAL FACTURADO − Z del TPV. Reordenar la tarea «Separar fondo de caja» antes del cálculo del total."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "líneas 38-55 (schema.aggregateRating y schema.reviews) y 304-367 (testimonials)",
+      "hallazgo": "Se publica marcado Schema.org de valoraciones (4,9 sobre 10 reseñas) con tres reviews nominales y diez testimonios con nombre, cargo y empresa, sin que exista ningún sistema de recogida de reseñas en el producto. Una de las reviews inventadas cita a un competidor por su nombre y con precio. Es práctica desleal engañosa (reseñas falsas, Directiva Omnibus / art. 20 LGDCU) y además incumple la política de datos estructurados de Google (rich results de reseña autogeneradas).",
+      "evidencia": "línea 38: aggregateRating: { ratingValue: '4.9', reviewCount: '10' } · líneas 50-54: author 'Javier López', body 'Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14.' · líneas 308-366: 10 testimonios con empresas nominadas ('Restaurante Origen', 'Grupo Tres Tenedores', 'Gastrobar La Esquina', 'Hotel Gran Bahía', 'Brasserie Central'). No existe en el repo ningún endpoint, tabla ni formulario de reseñas para este producto (get-download-urls / verify-purchase / resend-access sólo entregan ficheros).",
+      "fix": "O se recogen reseñas reales de compradores (petición por email post-compra con la skill de Resend) y el JSON-LD se alimenta de ellas, o se elimina aggregateRating+reviews del schema y los testimonios se marcan explícitamente como ejemplos ilustrativos sin nombre de empresa. Prioridad: quitar YA el aggregateRating del JSON-LD."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "líneas 371-375 (pricing.priceOld / discountBadge / heroNote / buyBoxNote)",
+      "hallazgo": "Ancla de precio permanente: se muestra «€49» tachado, «-71%» y «Precio especial de lanzamiento. Sube pronto» desde el día del lanzamiento, sin que el producto se haya vendido nunca a 49 €. Anunciar una reducción sobre un precio anterior que no se ha aplicado es infracción del art. 20.4 LGDCU (Omnibus/RDL 24/2021).",
+      "evidencia": "priceOld: '€49', price: '€14', discountBadge: '-71%', heroNote: 'Precio especial de lanzamiento. Sube pronto'. `git log -S\"€49\" -- src/components/kit-tareas/BuyBox.tsx` devuelve un único commit, 5c09738 del 2026-03-19 ('feat: Kit de Tareas Recurrentes Pro — complete product launch'), que introduce a la vez el €49 tachado y el precio de venta €14; cinco meses después sigue idéntico en el port a Astro (mismo bloque en kit-tareas.ts). No hay ningún commit que haya vendido a 49 €.",
+      "fix": "O se aplica de verdad el precio de 49 € durante ≥30 días antes de anunciar el descuento, o se elimina el tachado y el badge -71% y se presenta 14 € como precio de lanzamiento a secas. Y quitar «Sube pronto» si no hay fecha real de subida."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Cierre de Caja», bloque de denominaciones A28:C35",
+      "hallazgo": "La tabla de recuento de efectivo omite la moneda de 0,02 €, que es curso legal en la zona euro. Un arqueo con céntimos de 2 no cuadra exactamente y obliga a apañarlo a mano, justo en la hoja que se vende como control de caja.",
+      "evidencia": "MONEDAS listadas: A29='2 €', A30='1 €', A31='0,50 €', A32='0,20 €', A33='0,10 €', A34='0,05 €', A35='0,01 €'. Faltan los 0,02 €. Las ocho denominaciones de moneda euro son 2 €, 1 €, 0,50, 0,20, 0,10, 0,05, 0,02 y 0,01. (El inventario determinista previo la daba por «correcta».)",
+      "fix": "Insertar una fila entre A34 y A35 con '0,02 €', B=0 y C='=B*0.02', y actualizar el rango de TOTAL EFECTIVO a '=SUM(C21:C36)' junto con los desplazamientos de las filas 36-48."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "media",
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ubicacion": "hojas «Por Franja Horaria», «Por Área» y «Por Perfil», celda F27",
+      "hallazgo": "En las tres plantillas en blanco el denominador del contador es el número literal 15, no una fórmula, al revés que en los otros 10 ficheros. El cliente que escriba 8 tareas leerá «x de 15» y el que escriba 20 leerá «x de 15». El changelog que ve en su dashboard promete justo lo contrario.",
+      "evidencia": "07: F27=15 (valor literal) en las tres hojas, mientras D27='=COUNTIF(F5:F25,\"✓\")'. Comparar con 01-apertura-cierre.xlsx!'Apertura Cocina'!F41='=COUNTIF(B5:B39,\"?*\")'. src/data/productos-changelog.ts:305 anuncia «total que se recalcula en las hojas de checklist si añades o quitas tareas».",
+      "fix": "Sustituir F27 por '=COUNTIF(B5:B25,\"?*\")' en las tres hojas (contará las tareas que el cliente escriba realmente) y borrar los '(Escribe aquí tu tarea)' de B6/B13/B20 o dejarlos como texto de ejemplo asumido en el conteo."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "líneas 24-35 (seo/schema), 116 (hero.description), 130 (grid.countGold), 134-180 (grid.templates), 290-300 (cta)",
+      "hallazgo": "La página de venta anuncia 9 plantillas y no menciona en ningún sitio dos entregables completos que sí se entregan: 08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx (arqueo y registro mensual de caja, probablemente el contenido de más valor percibido del kit). El kit vende menos de lo que entrega y el comprador no puede saber que la caja va incluida.",
+      "evidencia": "grid.templates (134-180) tiene 9 entradas: apertura-cierre, partidas, manager, perfiles, periodicas, eventos, personalizable y los 2 BONUS. Ninguna es «Negocio» ni «Caja». cta.items (291-300) lista 8 puntos, ninguno de caja. seo.description (26) y schema.productDescription (35): «9 checklists operativos». En cambio get-download-urls.ts:43-55 entrega 11 ficheros y el dashboard renderiza 11 tarjetas (KitTareasDashboard.tsx:15-27). Los kits hermanos ya lo corrigieron: kit-tareas-asador.ts:108, kit-tareas-tapas-bar.ts:107 y kit-tareas-marisqueria.ts:108 dicen countGold '11'.",
+      "fix": "Añadir dos tarjetas al grid («Apertura y Cierre del Negocio» y «Apertura y Cierre de Caja — arqueo, cuadre y registro mensual»), subir countGold a '11', actualizar seo.title/description, schema.productName/productDescription y cta.items, siguiendo el patrón ya aplicado en kit-tareas-asador.ts."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "media",
+      "fichero": "netlify/functions/verify-purchase.ts",
+      "ubicacion": "verify-purchase.ts:39 y resend-access.ts:39 (bloque 'kit-tareas')",
+      "hallazgo": "El email que recibe el cliente justo después de pagar le anuncia «9 checklists operativos» y a continuación se encuentra 11 descargas. Es la primera impresión post-pago y contradice al propio dashboard. En los kits hermanos con la misma estructura de 11 ficheros el texto ya está corregido.",
+      "evidencia": "verify-purchase.ts:39 «…descargar los 9 checklists operativos:» frente a verify-purchase.ts:214 (asador) «…descargar los 11 checklists operativos:» y :207 (sushi bar) «11 checklists operativos con protocolo anisakis APPCC». Idéntico desfase en resend-access.ts:39 y en src/data/productos-digitales-config.ts:134 y :137, cuyos `files` (139-149) enumeran los 11 ficheros.",
+      "fix": "Cambiar los cuatro textos a «los 9 checklists operativos + 2 bonus (11 ficheros)» en verify-purchase.ts:39, resend-access.ts:39 y productos-digitales-config.ts:134 y 137."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "media",
+      "fichero": "src/pages/KitTareasDashboard.tsx",
+      "ubicacion": "líneas 83 y 91 frente a TEMPLATES (15-27)",
+      "hallazgo": "El dashboard se contradice consigo mismo en la misma pantalla: el hero dice «Tus 9 checklists», el rótulo de la rejilla dice «7 Checklists + 2 Bonus» (=9) y justo debajo se pintan 11 tarjetas de descarga. El cliente que cuente creerá que le sobran ficheros o que le falta información.",
+      "evidencia": "línea 83: 'Tus 9 checklists operativos listos para descargar.' · línea 91: '7 Checklists + 2 Bonus · Descarga Directa' · TEMPLATES (15-27) contiene 11 claves: apertura-cierre, partidas, manager, perfiles, periodicas, eventos, personalizable, apertura-negocio, apertura-caja, bonus-briefing, bonus-calendario — todas resueltas por get-download-urls.ts:44-54.",
+      "fix": "Poner «Tus 11 plantillas listas para descargar» en la línea 83 y «9 Checklists + 2 Bonus · Descarga Directa» en la 91."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "línea 227 (bonus.subtitle) frente a grid.templates 170-179",
+      "hallazgo": "El bloque de bonos dice «Además de las 9 plantillas, recibirás estos recursos adicionales», pero los dos bonos YA están contados dentro de esas 9 tarjetas del grid. El lector atento concluye que le están vendiendo dos veces lo mismo, y de las 9 «plantillas de tareas operativas» sólo 7 lo son.",
+      "evidencia": "grid.headingRest (131) '9 Plantillas de Tareas Operativas' con templates[7] = 'BONUS: Briefing Servicio' (170-174) y templates[8] = 'BONUS: Calendario Anual' (175-179). bonus.items (228-245) repite exactamente esos dos con precio (€7 y €9).",
+      "fix": "Al subir el grid a 11 tarjetas (COM-06), dejar las 9 operativas dentro del bloque «9 Plantillas de Tareas Operativas» y sacar los 2 bonos a su sección; el subtítulo de bonos pasa a ser coherente sin tocarlo."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "líneas 116, 132-133, 192-193 y 264 («pre-rellenadas») frente a 07, BONUS-01, 08 y 09",
+      "hallazgo": "«Pre-rellenadas» es la promesa central del producto («No empieces de cero») y se afirma de TODAS las plantillas, pero 4 de los 11 ficheros llegan vacíos en todo o en parte: uno es intencionadamente en blanco, otro es un formulario vacío y dos traen las columnas Responsable / Hora / Firma sin rellenar.",
+      "evidencia": "grid.subtitle (132-133): «Cada plantilla viene pre-rellenada con las tareas reales de un restaurante casual» · FAQ (264): «Sí. Cada checklist viene pre-rellenado…». Realidad: 07-plantilla-personalizable.xlsx!'Por Franja Horaria'!B6='(Escribe aquí tu tarea)' y B7:B12 vacías; BONUS-01-briefing-servicio.xlsx!'Briefing' es todo etiquetas sin datos (B5:'Nº de reservas:', C5 vacía); 08-apertura-cierre-negocio.xlsx!'Apertura del Negocio' filas 5-19 con D (Responsable), E (Hora Límite) y G (Firma) COMPLETAMENTE vacías, igual que 09!'Apertura de Caja' C5:C15 y E5:E15. En cambio 01-06 sí traen responsable y hora en cada fila (p. ej. 01!'Apertura Cocina'!D6='Cocinero apertura', E6='07:00').",
+      "fix": "Rellenar D/E en las 15+13 filas de 08 y en las 11+12 de 09 con responsable y hora tipo (Encargado / 07:00, Cierre…) como en 01-06, y matizar el copy: «9 plantillas pre-rellenadas + 1 en blanco personalizable + 2 bonus»."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "línea 264 (FAQ «las celdas editables están marcadas en verde») frente a 08 y 09",
+      "hallazgo": "La FAQ enseña al comprador a identificar las celdas editables por el color verde. En 08 y 09 no hay una sola celda verde: usan otra paleta (gris/blanco) y sus hojas de instrucciones ni mencionan el verde. El cliente que siga la FAQ en esos dos ficheros no encuentra nada que tocar.",
+      "evidencia": "Relleno E8F5E9 (verde) presente en 01-07 y BONUS (p. ej. 01!'Apertura Cocina' 107 celdas E8F5E9; 01!Instrucciones!B14 'Las celdas verdes son editables'). En 08!'Apertura del Negocio' los rellenos son F5F5F5 (64) y FFFFFF (56), cero E8F5E9; ídem 09!'Cierre de Caja' (F5F5F5 66, FFFFFF 56). 08!Instrucciones A6-A12 y 09!Instrucciones A6-A12 no mencionan el verde.",
+      "fix": "Aplicar el mismo relleno E8F5E9 a las columnas editables (Responsable, Hora, ✓ Completada, Firma, Notas y los importes de caja) de 08 y 09, o retirar la afirmación del verde de la FAQ."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "línea 305 (entrada v1.1 de 'kit-tareas', visible en el dashboard del cliente)",
+      "hallazgo": "El changelog que lee el comprador afirma que la columna «✓ Completada» tiene desplegable «✓ / — / N/A» en las 11 plantillas. En 08 y 09 el desplegable es «✓ / ✗ / —»: opciones distintas, un símbolo (✗) que no existe en el resto del kit y ninguna opción N/A.",
+      "evidencia": "changelog:304 'Revisión completa de las 11 plantillas' y :305 «desplegable ✓ / — / N/A». Validación real: 01-07 y sus hojas → list '\"✓,—,N/A\"'; 08!'Apertura del Negocio' (F5:F19) y 08!'Cierre del Negocio' (F5:F17) → list '\"✓,✗,—\"'; 09!'Apertura de Caja' (D5:D15) y 09!'Cierre de Caja' (D5:D16) → list '\"✓,✗,—\"'.",
+      "fix": "Unificar la validación de 08 y 09 a '\"✓,—,N/A\"' (la fórmula condicional y el COUNTIF ya buscan «✓», así que no se rompe nada) y dejar el changelog como está."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "líneas 309-310 frente a las hojas Instrucciones de los 11 xlsx",
+      "hallazgo": "El changelog promete al cliente «Datos de autoría actualizados con la biografía vigente del creador» y «autoría actualizados en los 11 ficheros». La biografía sólo está en 2 de los 11: los otros 9 no llevan ninguna firma de autor. Es un caso que se le escapó a la Fase A determinista.",
+      "evidencia": "Barrido de 'John Guerrero' en los 11 ficheros: sólo 08!Instrucciones!A17 y 09!Instrucciones!A17 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'. En 01-07 y los dos BONUS la hoja Instrucciones termina en '— Kit de Tareas Recurrentes · AI Chef Pro · aichef.pro' + 'Versión 1.1 · agosto 2026…' sin bio (p. ej. 01!Instrucciones B19 y B23).",
+      "fix": "Añadir la misma línea de bio a la hoja Instrucciones de 01-07, BONUS-01 y BONUS-02, justo encima de la línea de versión."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Registro Mensual», columna G (filas 5-35) y G36",
+      "hallazgo": "La columna «Descuadre» del registro mensual está vacía en los 31 días y no hay ninguna columna con la Z del TPV de la que derivarla, pero abajo se totaliza con un SUM. El cliente no tiene forma de que el registro mensual calcule el descuadre: tiene que teclearlo a mano día a día, en el fichero que se vende como control de caja.",
+      "evidencia": "Cabeceras A4:I4 = Fecha, Fondo Apertura, Ventas Efectivo, Ventas Tarjeta, Ventas Otros, Total Facturado, Descuadre, Depósito, Responsable. Filas 5-35: B..E=0 y F='=C+D+E' (p. ej. F5='=C5+D5+E5'), pero G5:G35 sin valor ni fórmula. G36='=SUM(G5:G35)'.",
+      "fix": "Añadir una columna «Z del TPV» (nueva G, con 0 por defecto) y convertir «Descuadre» en '=F5-G5' arrastrado hasta la fila 35, desplazando Depósito y Responsable."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Apertura de Caja», tarea B7 y ausencia de campo numérico",
+      "hallazgo": "La tarea 3 ordena «Registrar importe de fondo de caja en hoja», pero la hoja de apertura no tiene ni una sola celda numérica donde anotarlo: es sólo un checklist. El importe que luego hace falta para cuadrar el cierre (ver COM-01) no se captura en ningún sitio del día.",
+      "evidencia": "09!'Apertura de Caja' contiene A4:F4 = #, Tarea, Responsable, ✓ Completada, Hora, Notas y filas 5-15 sólo con texto de tarea; B7='Registrar importe de fondo de caja en hoja'; el único bloque numérico del fichero está en 'Cierre de Caja' (recuento) y en 'Registro Mensual' (columna B «Fondo Apertura»).",
+      "fix": "Añadir bajo el checklist de apertura un mini-bloque «Fondo de caja inicial: ____ €» con celda editable con nombre definido, y referenciarla desde el resumen de «Cierre de Caja» para la resta de COM-01."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ubicacion": "hojas «Por Franja Horaria», «Por Área» y «Por Perfil» (A1:G31 en las tres)",
+      "hallazgo": "Se venden «3 plantillas en blanco (por franja horaria, por área, por perfil)» pero las tres hojas son idénticas salvo el título de A1: mismas columnas, mismas secciones y la columna «Zona» pre-rellenada con «General» incluso en la plantilla que dice ser «por perfil». Es una plantilla renombrada tres veces, y el comprador escéptico lo ve en dos clics.",
+      "evidencia": "Las tres hojas: A4:G4 = Nº, Tarea, Zona, Responsable, Hora Límite, ✓ Completada, Firma; A5='  (Sección 1 — Personaliza este título)'; B6='(Escribe aquí tu tarea)'; C6:C10, C13:C17, C20:C24='General'; F27=15; mismos anchos {A:5, B:45, C:12, D:18, E:12, F:12, G:15} y mismo rango de formato condicional A5:G25. Sólo cambia A1 ('…Por Franja Horaria' / '…Por Área de Trabajo' / '…Por Perfil Profesional'). Landing kit-tareas.ts:168 promete las tres variantes.",
+      "fix": "Diferenciarlas de verdad: en «Por Franja Horaria» sustituir los títulos de sección por APERTURA / SERVICIO / CIERRE; en «Por Área» por COCINA / SALA / BARRA con la columna Zona pre-rellenada en consecuencia; en «Por Perfil» cambiar la cabecera «Zona» por «Puesto» y dejar C vacía en lugar de 'General'."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre.xlsx",
+      "ubicacion": "hoja Instrucciones B16 y contadores (p. ej. 'Apertura Cocina'!F41)",
+      "hallazgo": "Las instrucciones invitan a «añadir tareas específicas de tu local en las filas vacías del final», pero sólo hay UNA fila libre dentro del rango que cuentan las fórmulas. La tarea nº26 que el cliente escriba fuera de ese rango no se suma ni al numerador ni al denominador, y el contador queda mintiendo sin avisar.",
+      "evidencia": "01!Instrucciones!B16 = '▸ Añade tareas específicas de tu local en las filas vacías del final'. 'Apertura Cocina': última tarea en B38 (nº25), contadores D41='=COUNTIF(F5:F39,\"✓\")' y F41='=COUNTIF(B5:B39,\"?*\")' → sólo la fila 39 queda libre. Mismo patrón en las otras cinco hojas (Apertura Sala tareas hasta B34 / rango a B35; Cierre Barra hasta B19 / rango a B20) y en 02-06.",
+      "fix": "Dejar 5 filas libres formateadas (con validación y formato condicional) antes de la fila de totales en cada hoja y ampliar los rangos COUNTIF hasta la última de ellas; o cambiar la instrucción por «inserta filas ANTES de la última tarea para que el total las cuente»."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "líneas 111, 207-208, 276 y 53 (afirmaciones sobre Trail)",
+      "hallazgo": "El precio del competidor Trail (€60/mes, €60-75/mes) se afirma cuatro veces —badge del hero, motivo, FAQ y una reseña inventada— sin fuente, sin fecha y sin condiciones. Una comparación con un competidor identificado tiene que ser objetiva, verificable y comprobable (art. 10 LCD); ponerla además en boca de un cliente ficticio agrava el problema.",
+      "evidencia": "línea 111 hero.badge: 'Lo que Trail cobra €60/mes, tú lo tienes por €14 — para siempre' · líneas 207-208: 'Trail Cobra €60/mes. Esto es €14' · línea 276 FAQ: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles' · línea 53 review de 'Javier López': 'Pagábamos €60 al mes por Trail'. No hay ninguna referencia, captura ni fecha del tarifario en el repo.",
+      "fix": "Sustituir la comparación nominal por una genérica y verificable («los SaaS de checklists cobran suscripción mensual por local») o citar el tarifario público de Trail con fecha de consulta y enlace. Eliminar en cualquier caso la mención al competidor dentro de una reseña."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "08 y 09 completos, frente a 01-07 y BONUS",
+      "hallazgo": "08 y 09 vienen de otro generador y se nota a simple vista: distinta cabecera, columna extra, otro desplegable, otro pie y otra maquetación de las instrucciones. Dentro de un mismo kit de 14 € parecen dos productos pegados.",
+      "evidencia": "08/09: cabecera A4='#' (vs 'Nº' en 01-07), columna extra H='Notas', desplegable '\"✓,✗,—\"', pie de hoja A22='© AI Chef Pro — aichef.pro' (vs '— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro'), Instrucciones numeradas en columna A con emojis ('📋 Instrucciones de Uso', '💡 Consejo') frente a las de 01-07 en columna B con viñetas '▸', y anchos de columna distintos (08: A5 B50 C16 D16 E13 F14 G14 H25 vs 01: A5 B45 C12 D18 E12 F12 G15).",
+      "fix": "Regenerar 08 y 09 con el generador de 01-07 (cabecera Nº, mismo pie, mismas instrucciones con ▸, misma paleta verde) conservando la columna Notas si aporta."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "hojas «Apertura del Negocio» / «Cierre del Negocio» frente a 01!'Apertura Sala' y 01!'Cierre Sala'",
+      "hallazgo": "08 repite buena parte de las tareas de 01 (luces, climatización, TPV, música, terraza, alarma, cierre con llave) pero sin responsable asignado, mientras que en 01 sí lo tienen. Dos hojas del mismo kit dan instrucciones distintas para la misma tarea y el equipo no sabe cuál manda.",
+      "evidencia": "08!'Cierre del Negocio' B16='Activar alarma' y B17='Cerrar con llave y verificar cierre' con D16/D17 vacías; 01!'Cierre Sala' B31='Activar alarma' D31='Último en salir' y B32='Cerrar puerta con llave' D32='Último en salir'. Ídem 08!B5 'Apagar música ambiente' vs 01!'Cierre Sala' B28 'Apagar música y TV'; 08!B12 'Encender TPV / POS / datáfono' vs 01!'Apertura Sala' B30 'Encender TPV / sistema de cobro'.",
+      "fix": "Documentar en la hoja Instrucciones de 08 que es la vista de local completo (para negocios sin separación cocina/sala/barra) y que 01 es la vista por área, o eliminar de 08 las tareas ya cubiertas en 01 dejando sólo las de acceso/exterior."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "baja",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hojas «Apertura de Caja» y «Cierre de Caja», fila 4",
+      "hallazgo": "La FAQ garantiza que «cada checklist» tiene columna de firma; las dos hojas de caja —donde la firma es precisamente la prueba de quién tocó el dinero— no tienen columna de Firma, sólo una línea manuscrita al pie de página.",
+      "evidencia": "09!'Apertura de Caja'!A4:F4 = '#', 'Tarea', 'Responsable', '✓ Completada', 'Hora', 'Notas' (sin Firma); ídem 'Cierre de Caja'. Landing kit-tareas.ts:268: «Cada checklist tiene columnas de: responsable, hora límite, completada (✓) y firma.» Comparar con 01!'Apertura Cocina'!G4='Firma'.",
+      "fix": "Añadir columna «Firma» a las dos hojas de caja (entre Hora y Notas o al final) con el mismo formato de 01-07."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "baja",
+      "fichero": "01-apertura-cierre.xlsx",
+      "ubicacion": "contadores de todas las hojas de checklist (p. ej. 'Apertura Cocina'!D41/F41) y validación '\"✓,—,N/A\"'",
+      "hallazgo": "El denominador cuenta todas las tareas escritas, así que las marcadas «N/A» o «—» siguen sumando abajo: un turno que marque legítimamente 3 tareas como no aplicables nunca podrá leer «25 de 25» y el encargado verá siempre un checklist «incompleto».",
+      "evidencia": "Validación de F6:F39 = list '\"✓,—,N/A\"'; D41='=COUNTIF(F5:F39,\"✓\")' y F41='=COUNTIF(B5:B39,\"?*\")'. El mismo patrón en las 27 hojas de checklist del kit.",
+      "fix": "Cambiar el denominador a '=COUNTIF(B5:B39,\"?*\")-COUNTIF(F5:F39,\"N/A\")' para que las tareas marcadas como no aplicables salgan del total."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "baja",
+      "fichero": "03-tareas-manager.xlsx",
+      "ubicacion": "hojas «Semanal Manager» y «Mensual Manager», celda A2",
+      "hallazgo": "Las hojas semanal y mensual arrastran la cabecera de turno del generador de checklists diarios: piden marcar «Mañana / Tarde / Noche» y un «Responsable turno» en un documento que cubre una semana o un mes entero. Delata plantilla sin adaptar.",
+      "evidencia": "03!'Semanal Manager'!A2 = 'Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________' — idéntica a 03!'Diario Manager'!A2. Lo mismo en 03!'Mensual Manager'!A2 y en 05!'Mantenimiento Mensual'!A2.",
+      "fix": "En las hojas semanales poner 'Semana del ___/___ al ___/___    Responsable: ______' y en las mensuales 'Mes: ________  Año: ______    Responsable: ______'."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+      "ubicacion": "línea 138 (grid.templates[0].desc)",
+      "hallazgo": "La tarjeta principal promete «~90 tareas pre-rellenadas» cuando el fichero trae 121. Se está vendiendo un 26 % menos de lo que se entrega en el argumento de venta más cuantitativo de la página.",
+      "evidencia": "Recuento real de 01-apertura-cierre.xlsx: Apertura Cocina 25 (B6:B38), Apertura Sala 23, Apertura Barra 16, Cierre Cocina 24, Cierre Sala 21, Cierre Barra 12 = 121 tareas.",
+      "fix": "Cambiar '~90 tareas pre-rellenadas' por '121 tareas pre-rellenadas' (y comprobar el mismo dato en los kits hermanos antes de replicar)."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "baja",
+      "fichero": "BONUS-01-briefing-servicio.xlsx",
+      "ubicacion": "hoja «Briefing» (y BONUS-02!'Calendario Anual'), print_area",
+      "hallazgo": "Los dos bonus son los únicos ficheros sin área de impresión definida, justo cuando el copy del bonus dice literalmente que se imprime y se pega en el pase. Al imprimir, Excel decide el recorte por su cuenta.",
+      "evidencia": "BONUS-01!'Briefing' print_area = None y BONUS-02!'Calendario Anual' print_area = None; todas las demás hojas del kit la tienen fijada (p. ej. 01!'Apertura Cocina' → \"'Apertura Cocina'!$A$1:$G$45\", 09!'Registro Mensual' → \"'Registro Mensual'!$A$1:$I$38\"). Landing kit-tareas.ts:173: «Imprime y pega en el pase».",
+      "fix": "Fijar print_area en 'Briefing'!$B$1:$C$37 y en 'Calendario Anual'!$A$1:$D$29."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "baja",
+      "fichero": "06-eventos-festivos.xlsx",
+      "ubicacion": "hoja «Temporada Terraza» B17 frente a 01!'Apertura Sala' B18",
+      "hallazgo": "Contradicción operativa entre dos ficheros del kit: uno manda desmontar y guardar los calefactores exteriores al cerrar la temporada de terraza, y el otro incluye revisarlos como tarea de apertura diaria «(invierno)». O la terraza cierra en invierno o no.",
+      "evidencia": "06!'Temporada Terraza'!B17='Desmontar calefactores exteriores si aplica' (sección 'CIERRE DE TEMPORADA', E17='Último día'); 01!'Apertura Sala'!B18='Verificar calefactores exteriores (invierno)' dentro de 'MONTAJE DE TERRAZA' diario. BONUS-02!B18 sitúa el 'Cierre terraza' en Noviembre.",
+      "fix": "Reformular 06!B17 como 'Desmontar calefactores exteriores si la terraza no opera en invierno' y añadir en 01!B18 'si la terraza opera en temporada fría'."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "metadatos del documento (core.xml, propiedad title) de 08 y 09",
+      "hallazgo": "Los dos ficheros añadidos llevan un título de documento genérico que no dice de qué van; los otros nueve sí nombran su contenido. Se ve en la pestaña de propiedades y en los gestores de archivos.",
+      "evidencia": "08 y 09: title='Kit de Tareas — Restaurante Casual · Kit de Tareas Recurrentes Pro'. 01: 'Tareas de Apertura y Cierre — Restaurante Casual · Kit de Tareas Recurrentes Pro'; 09 debería decir 'Checklist de Apertura y Cierre de Caja…' (que es lo que sí pone en su propia hoja Instrucciones, A3).",
+      "fix": "Fijar title='Apertura y Cierre del Negocio — Restaurante Casual · Kit de Tareas Recurrentes Pro' en 08 y 'Apertura y Cierre de Caja — Restaurante Casual · Kit de Tareas Recurrentes Pro' en 09."
+     }
+    ]
+   },
+   "dominio": {
+    "lente": "Jefe/a de cocina y director/a de operaciones de un restaurante independiente en España (comida y cena, cocina + sala + barra): realismo y orden de las tareas, horas, temperaturas, responsables, terminología española, y si lo imprimiría mañana para su equipo. Se han abierto los 11 xlsx con openpyxl (valores, fórmulas, validaciones, rellenos y configuración de impresión) y se han contrastado con la landing (astro-site/src/data/productos/tareas/kit-tareas.ts), el dashboard (src/pages/KitTareasDashboard.tsx) y con el producto de referencia ya saneado de la misma familia (kit-tareas-pasteleria v2.0), además de comprobar en los 10 kits hermanos qué hallazgos son del MOTOR.",
+    "veredicto": "no listo",
+    "motivo": "Hay dos defectos que no se pueden entregar tal cual: (1) el arqueo de 09-apertura-cierre-caja.xlsx calcula el DESCUADRE sin descontar el fondo de caja (B45=B43-B44 sobre un efectivo contado que incluye el fondo), de modo que la caja «descuadra» todos los días exactamente por el importe del fondo — es un fichero de dinero que da un resultado erróneo desde el primer uso, y el propio grupo ya lo resolvió en kit-tareas-pasteleria v2.0 con la fila «Fondo de caja inicial (−)»; y (2) la partida de fríos precarga «Porcionar carpaccios, ceviches, tartares» y la mise en place «Pescado» y «Marisco» sin una sola mención en todo el kit a la congelación preventiva antianisakis (RD 1420/2006), obligatoria en España para pescado que se consume crudo o casi crudo. A eso se suma un bloque de fallos de coherencia que un profesional detecta en la primera hoja: la primera tarea del kit es «Encender cámaras frigoríficas» (una cámara no se apaga por la noche), las tareas de temperatura no traen ni valor objetivo ni casilla donde anotar la lectura, 08 entrega las 28 tareas con «Responsable» y «Hora Límite» vacíos pese a que la FAQ vende justo lo contrario, la plantilla personalizable trae el denominador clavado a 15 y sus 3 hojas son idénticas, y la landing dice «9» mientras se entregan 11 ficheros de los cuales 08 y 09 no se mencionan en ningún sitio. La mayoría son del MOTOR y se repetirán en los 18 kits hermanos; casi todos tienen fix ya escrito en pastelería v2.0.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Cierre de Caja», bloque A38:B45 (B40, B43, B45)",
+      "hallazgo": "MOTOR. El descuadre diario está mal calculado: no se descuenta el fondo de caja. B40 'Total Efectivo' = C36 = suma del recuento por denominaciones, que es TODO el efectivo del cajón e incluye el fondo (la tarea B14 'Separar fondo de caja para mañana' va después del recuento, tarea 10 de 12). B43 'TOTAL FACTURADO' = B40+B41+B42 y B45 'DESCUADRE' = B43-B44 se compara contra la Z del TPV, que sólo recoge ventas. Resultado: la caja aparece descuadrada en positivo por el importe exacto del fondo todos los días (con un fondo de 200 €, DESCUADRE = +200,00 € con la caja perfectamente cuadrada). No existe ninguna fila de fondo en el resumen: A40='Total Efectivo', A41='Total Tarjetas (Visa/MC)', A42='Total Otros (Bizum, Vales)', A43='TOTAL FACTURADO', A44='Z del TPV', A45='DESCUADRE'.",
+      "evidencia": "09:Cierre de Caja:B36='=SUM(C21:C35)' → B40='=C36' → B43='=B40+B41+B42' → B45='=B43-B44'. No hay fila «Fondo». Contraste con el producto ya saneado de la misma familia: kit-tareas-pasteleria/09-apertura-cierre-caja.xlsx:Cierre de Caja:A42='Fondo de caja inicial (−)', B42=\"=IFERROR('Apertura de Caja'!C17,0)\", B45='=IFERROR(B41-B42,0)+B43+B44', B47='=IFERROR(B45-B46,0)'. Verificado que el defecto está idéntico en 10 kits hermanos (bar, cafetería, catering, chocolatería, dark-kitchen, hamburguesería, heladería, hotel, pizzería, restaurante-creativo) y sólo pastelería lo tiene corregido.",
+      "fix": "Portar el bloque de pastelería v2.0 al motor: insertar fila 'Fondo de caja inicial (−)' en el resumen leyendo la celda de fondo de la hoja de apertura, y recalcular TOTAL FACTURADO = (efectivo contado − fondo) + tarjetas + otros, con DESCUADRE = IFERROR(TOTAL FACTURADO − Z, 0). Ajustar además el texto de la tarea B10, que hoy dice 'Total facturado = efectivo + tarjetas + otros' (pastelería ya dice '(efectivo contado − fondo de caja) + tarjetas + otros')."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx",
+      "ubicacion": "hoja «Fríos» B10 y B16; hoja «Mise en Place» B8 y B9",
+      "hallazgo": "CONTENIDO DE ESTE KIT (motor probable). El kit precarga elaboraciones con pescado crudo —'Porcionar carpaccios, ceviches, tartares' (Fríos:B10), 'Pescado: limpio, porcionado, en frío' (Mise en Place:B8), 'Marisco: limpio, desvenado si aplica' (B9)— y en los 11 ficheros no hay NI UNA mención a la congelación preventiva frente a Anisakis (barrido de los 11 xlsx: 0 coincidencias de 'anisakis'). En España el RD 1420/2006 obliga a congelar a −20 °C durante ≥24 h el pescado destinado a consumirse crudo o prácticamente crudo, y el establecimiento debe poder acreditarlo. Un checklist de partida de fríos que dirige la elaboración diaria de tartares y ceviches sin ese paso induce un incumplimiento sancionable y un riesgo sanitario real. Agravante: Fríos:B16 fija la temperatura de exposición en '< 8°C', permisiva de más para pescado crudo (lo razonable es ≤4 °C).",
+      "evidencia": "02-partidas-cocina.xlsx:Fríos:B10='Porcionar carpaccios, ceviches, tartares'; :Fríos:B16='Mantener temperatura de exposición < 8°C'; :Mise en Place:B8='Pescado: limpio, porcionado, en frío'. Grep de 'anisakis' sobre los 11 xlsx del producto: 0 resultados. Grep de 'congelación': 1 único resultado y es 05:FIFO Semanal:B17='Verificar etiquetado y fechas de congelación'.",
+      "fix": "Añadir en «Fríos» y en «Mise en Place» una tarea explícita del tipo 'Pescado para consumo crudo (tartar/ceviche/carpaccio): confirmar congelación previa ≥24 h a −20 °C y registrar lote → trazabilidad', y bajar la temperatura de exposición de crudos a ≤4 °C (dejando <8 °C sólo para vegetales/ensaladas). Convertirlo en tarea del motor, porque afecta a todos los kits con carta de crudos (marisquería, sushi-bar, restaurante-creativo, hotel)."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Cierre de Caja», tabla de denominaciones A20:C35",
+      "hallazgo": "MOTOR. Falta la moneda de 0,02 € en la tabla de recuento de efectivo: la serie salta de A34='0,05 €' a A35='0,01 €'. Con esa tabla el TOTAL EFECTIVO nunca puede igualar el contenido real del cajón; el encargado tiene que meter los 2 céntimos a mano en otra fila y el arqueo deja de ser auditable. Pastelería v2.0 ya la tiene.",
+      "evidencia": "09:Cierre de Caja: A29='2 €', A30='1 €', A31='0,50 €', A32='0,20 €', A33='0,10 €', A34='0,05 €', A35='0,01 €' (no existe '0,02 €'), C36='=SUM(C21:C35)'. Referencia correcta: kit-tareas-pasteleria/09:Cierre de Caja:A35='0,02 €', C35='=B35*0.02', A36='0,01 €', C37='=SUM(C21:C36)'.",
+      "fix": "Insertar la fila '0,02 €' con C='=B*0.02' entre 0,05 y 0,01 y ampliar el SUM del TOTAL EFECTIVO, replicando pastelería v2.0 en los 11 kits afectados."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Registro Mensual», cabecera A4:I4 y columna G",
+      "hallazgo": "MOTOR. El registro mensual tiene columna 'Descuadre' (G) pero NO tiene columna 'Z del TPV', que es el otro término de la resta. G5:G35 se quedan vacías (sin 0 y sin fórmula, a diferencia de B, C, D, E y H que sí vienen a 0) y G36='=SUM(G5:G35)' suma una columna que el usuario tiene que rellenar a ojo copiando un número desde otra hoja. Es el único dato no calculable de una tabla cuyo sentido es precisamente ver qué días descuadraron.",
+      "evidencia": "09:Registro Mensual: cabecera = ['Fecha','Fondo Apertura','Ventas Efectivo','Ventas Tarjeta','Ventas Otros','Total Facturado','Descuadre','Depósito','Responsable']; F5='=C5+D5+E5' pero G5=None. Referencia: kit-tareas-pasteleria/09:Registro Mensual cabecera = [...,'Total Facturado','Z del TPV','Descuadre','Depósito','Responsable'] con H5='=IFERROR(F5-G5,0)' y formato condicional en H5:H35.",
+      "fix": "Añadir la columna 'Z del TPV' antes de 'Descuadre', poner Descuadre = IFERROR(Total Facturado − Z, 0) en las 31 filas y el formato condicional ámbar de pastelería v2.0."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Apertura de Caja», tarea B7",
+      "hallazgo": "MOTOR. La tarea 3 ordena 'Registrar importe de fondo de caja en hoja' pero en la hoja no existe ninguna celda donde registrarlo: la hoja termina en la fila 15 (tarea 11) y el contador, y de ahí pasa a la firma. El dato clave del arqueo (el fondo) no se apunta en ninguna parte del fichero — que es justo la raíz del DOM-01.",
+      "evidencia": "09:Apertura de Caja:B7='Registrar importe de fondo de caja en hoja'; el rango de la hoja es A1:F18 y no hay ninguna etiqueta 'Fondo' fuera de las tareas B5 y B6. Referencia: kit-tareas-pasteleria/09:Apertura de Caja:B17='Fondo de caja inicial (€)', C17=0 (celda verde), D17='Se descuenta del efectivo en el Cierre de Caja', y su tarea B7 reformulada como 'Anotar el importe del fondo en la celda «Fondo de caja inicial (€)» de esta hoja'.",
+      "fix": "Replicar el par etiqueta+celda de pastelería v2.0 y reescribir la tarea B7 para que apunte a esa celda."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "hojas «Apertura del Negocio» D5:E19 y «Cierre del Negocio» D5:E17",
+      "hallazgo": "MOTOR. Las 28 tareas de este fichero (15 de apertura + 13 de cierre) tienen las columnas 'Responsable' (D) y 'Hora Límite' (E) COMPLETAMENTE VACÍAS, mientras que en 01-07 vienen pre-rellenadas tarea a tarea. La landing y la FAQ venden explícitamente lo contrario: hero.description 'plantillas Excel pre-rellenadas', grid.templates 'Cada tarea con responsable, hora límite y firma' y la FAQ '¿Cómo funciona el sistema de firma?' → 'Cada checklist tiene columnas de: responsable, hora límite, completada (✓) y firma'. Quien imprima este fichero se encuentra dos columnas en blanco que tiene que rellenar a mano cada día.",
+      "evidencia": "Recuento sobre 08:Apertura del Negocio D5:D19 → 0 celdas con valor (mismo resultado en los 10 kits hermanos). En kit-tareas-pasteleria/08 el mismo recuento da 15/15 rellenos. Promesas: astro-site/src/data/productos/tareas/kit-tareas.ts:116 y :138 y :268.",
+      "fix": "Precargar responsable y hora límite de las 28 tareas de 08 con el criterio del resto del kit (Encargado / Último en salir, y horas ancladas al horario de apertura del local), como ya hace pastelería v2.0."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/07-plantilla-personalizable.xlsx",
+      "ubicacion": "hojas «Por Franja Horaria», «Por Área» y «Por Perfil», celda F27 y contenido completo A1:G31",
+      "hallazgo": "MOTOR + valor. Dos problemas en el único fichero cuyo propósito es que el cliente lo modifique: (a) el denominador del contador está CLAVADO a 15 (F27=15) en las tres hojas, en vez de la fórmula '=COUNTIF(B5:B25,\"?*\")' que usan los otros 10 ficheros — en cuanto el usuario escriba 8 tareas el marcador dirá '8 de 15' y si escribe fuera del rango no contará; (b) las tres hojas son IDÉNTICAS salvo el título de A1: mismos títulos de sección '(Sección 1 — Personaliza este título)', mismos placeholders, misma Zona='General' en las 15 filas. La landing las vende como tres criterios distintos de organización ('por franja horaria, por área, por perfil'), pero no hay ninguna diferencia estructural entre ellas.",
+      "evidencia": "07:Por Franja Horaria:F27=15 (entero, no fórmula), idéntico en 'Por Área':F27 y 'Por Perfil':F27; comparado con 01:Apertura Cocina:F41='=COUNTIF(B5:B39,\"?*\")'. Contenido: A5/A12/A19 = '(Sección 1/2/3 — Personaliza este título)' y C6..C25='General' en las tres hojas. Referencia: kit-tareas-pasteleria/07 sí usa fórmula ('Por Franja Horaria':F36='=COUNTIF(B5:B34,\"?*\")') y hojas de longitud distinta. Defecto replicado en cafetería, dark-kitchen, hamburguesería y pizzería.",
+      "fix": "Sustituir el 15 por la fórmula COUNTIF del motor y diferenciar de verdad las tres hojas: la de franja horaria con secciones Apertura/Servicio/Cierre, la de área con Cocina/Sala/Barra y la de perfil con placeholders de puesto y la columna Zona en blanco en vez de 'General'."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts + src/pages/KitTareasDashboard.tsx",
+      "ubicacion": "kit-tareas.ts:26, :35, :116, :130, :227, :290 y KitTareasDashboard.tsx:15-27, :83, :91",
+      "hallazgo": "La cifra que se comunica no cuadra con lo que se entrega, y dos entregables enteros son invisibles antes de comprar. Se entregan 11 ficheros (9 numerados + 2 BONUS), pero la landing dice '9' en cinco sitios y su rejilla de 9 tarjetas está compuesta por 7 plantillas núcleo + los 2 BONUS repetidos — de modo que 08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx NO aparecen ni en el grid, ni en hero.checkItems, ni en cta.items, ni en el SEO. Encima bonus.subtitle dice 'Además de las 9 plantillas', contradiciendo que 2 de esas 9 tarjetas SON los bonus. Y el dashboard de pago rotula '7 Checklists + 2 Bonus' y 'Tus 9 checklists' encima de una rejilla que pinta 11 tarjetas.",
+      "evidencia": "kit-tareas.ts:130 countGold:'9'; :134-180 templates = 9 entradas de las que las dos últimas son 'BONUS: Briefing Servicio' y 'BONUS: Calendario Anual'; :227 \"Además de las 9 plantillas, recibirás estos recursos adicionales\"; :26 y :35 '9 checklists operativos'; :291-300 cta.items (8 puntos, ninguno menciona negocio ni caja). KitTareasDashboard.tsx:15-27 TEMPLATES con 11 keys (incluye 'apertura-negocio' y 'apertura-caja'); :83 'Tus 9 checklists operativos listos para descargar'; :91 '7 Checklists + 2 Bonus · Descarga Directa'.",
+      "fix": "Unificar en '9 plantillas + 2 bonus (11 ficheros)': añadir dos tarjetas al grid para 08 y 09 (que además son argumento de venta: arqueo de caja con recuento por denominaciones y registro mensual), sacar los 2 bonus del bloque de las 9, y corregir el dashboard a '9 checklists + 2 bonus'."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx + 08-apertura-cierre-negocio.xlsx + 09-apertura-cierre-caja.xlsx",
+      "ubicacion": "01:Apertura Sala A29:E34 y A19:E25 de «Cierre Sala»; 08:Apertura del Negocio B5:B19; 09:Apertura de Caja B5:B15",
+      "hallazgo": "MOTOR. Hay TRES checklists de apertura y TRES de cierre solapados, sin ninguna jerarquía ni indicación de cuál se imprime. El encargado que abre el local tiene que decidir entre '01 Apertura Sala', '08 Apertura del Negocio' y '09 Apertura de Caja', y las tres repiten las mismas tareas con redacciones distintas: encender TPV aparece en las tres, el datáfono en las tres, el rollo de papel en dos, la música en dos, el fondo de caja en dos. En el cierre, el bloque 'CIERRE DE CAJA' de 01:Cierre Sala (6 tareas) es una versión reducida del fichero 09 entero, y el bloque 'CIERRE GENERAL' de 01:Cierre Sala es casi literal el 08:Cierre del Negocio. En la práctica: o se hace el trabajo dos veces o se deja de hacer porque cada uno cree que va en la otra hoja.",
+      "evidencia": "01:Apertura Sala:B30='Encender TPV / sistema de cobro', B31='Verificar rollo de papel en TPV e impresora', B32='Abrir caja con fondo de cambio', B33='Verificar datáfono funciona', B34='Comprobar música ambiental' vs 08:Apertura del Negocio:B10='Encender TPV / POS / datáfono', B12='Poner música ambiente al volumen adecuado' vs 09:Apertura de Caja:B6='Contar fondo de caja inicial', B9='Encender TPV / POS', B11='Comprobar rollo de papel de ticket', B12='Verificar datáfono operativo'. En el cierre: 01:Cierre Sala:B20-B25 ('Imprimir informe Z del TPV', 'Contar efectivo y cuadrar con TPV'...) vs 09:Cierre de Caja:B5-B16; 01:Cierre Sala:B28-B32 ('Apagar música y TV', 'Apagar climatización', 'Verificar ventanas cerradas', 'Activar alarma', 'Cerrar puerta con llave') vs 08:Cierre del Negocio:B5, B11, B13, B16, B17.",
+      "fix": "Definir el orden de uso en las Instrucciones de cada fichero, como hace pastelería v2.0 con su bloque «Se conecta con»: 08 = checklist del local (marco), 01 = detalle por área, 09 = arqueo; y quitar de 01:Cierre Sala el bloque 'CIERRE DE CAJA' (o reducirlo a una única tarea 'Ejecutar 09 Cierre de Caja') y el solape de 'CIERRE GENERAL' con 08."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/ (los 11 xlsx con contador)",
+      "ubicacion": "p.ej. 01:Apertura Cocina D41/F41; validación de datos en F6:F39",
+      "hallazgo": "MOTOR. El desplegable ofrece 'N/A' (y '—') para las tareas que no aplican, pero el denominador del contador cuenta TODAS las tareas escritas, marcadas o no como N/A. Un restaurante sin terraza que marque N/A las 5 tareas de terraza verá siempre '18 de 23' con el turno perfectamente cerrado, y el 100 % es inalcanzable — justo lo contrario del efecto psicológico que busca un checklist. En 08/09 el desplegable cambia a '✓,✗,—' y pasa lo mismo con '—'.",
+      "evidencia": "01:Apertura Cocina: DV list '\"✓,—,N/A\"' sobre F6..F39; D41='=COUNTIF(F5:F39,\"✓\")' y F41='=COUNTIF(B5:B39,\"?*\")'. 08:Apertura del Negocio: DV list '\"✓,✗,—\"' sobre F5:F19; E20='=COUNTIF(B5:B19,\"?*\")'.",
+      "fix": "Denominador = COUNTIF(B…,\"?*\") − COUNTIF(F…,\"N/A\") − COUNTIF(F…,\"—\") (y el equivalente con '—' en 08/09), de forma que las tareas descartadas salgan del total."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx (y 02-06)",
+      "ubicacion": "01:Apertura Cocina fila 39 (rango contado B5:B39, última tarea en fila 38); mismo patrón en las 6 hojas de 01 y en 02-06",
+      "hallazgo": "MOTOR. Las Instrucciones prometen 'Añade tareas específicas de tu local en las filas vacías del final' (en plural), pero en cada hoja hay EXACTAMENTE UNA fila libre dentro del rango que cuentan las fórmulas. La segunda tarea que añada el cliente cae fuera del rango y no la cuenta ni el numerador ni el denominador, sin ningún aviso: el checklist dirá '25 de 25' con dos tareas propias sin hacer.",
+      "evidencia": "01:Instrucciones:B16='▸ Añade tareas específicas de tu local en las filas vacías del final'. 01:Apertura Cocina última tarea en fila 38, D41='=COUNTIF(F5:F39,\"✓\")' → sólo la fila 39 queda libre (y es la última con validación en el DV). Mismo cómputo en Apertura Sala (última 34, rango a 35), Apertura Barra (25/26), Cierre Cocina (35/36), Cierre Sala (32/33), Cierre Barra (19/20). Referencia: kit-tareas-pasteleria/01:Apertura Obrador deja 4 filas libres (última tarea en 31, rango B5:B35).",
+      "fix": "Dejar 4-5 filas libres con formato y validación dentro del rango contado, como pastelería v2.0, y matizar la instrucción ('en las filas verdes libres del final; si necesitas más, inserta filas dentro del bloque para que el contador las recoja')."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+      "ubicacion": "hoja «Apertura Cocina», bloques A5:A38 (no existe bloque de higiene personal)",
+      "hallazgo": "CONTENIDO. La apertura de cocina no incluye NINGUNA verificación de higiene del manipulador: lavado de manos, uniforme limpio, calzado, gorro/recogido del pelo, uñas, retirada de joyas, heridas cubiertas con apósito impermeable, declaración de síntomas. Es el prerrequisito de higiene con el que empieza cualquier inspección de sanidad y el primero que un jefe de cocina escribiría en la lista. Barrido de los 11 ficheros: 0 coincidencias de 'manos', 'higiene', 'uñas' y 'joyas'; 'uniforme' sólo aparece dos veces y ambas en SALA.",
+      "evidencia": "01:Apertura Cocina tiene los bloques 'ENCENDIDO DE EQUIPOS' (A5), 'CONTROL DE TEMPERATURAS' (A13), 'REVISIÓN DE MERCANCÍA' (A19), 'MISE EN PLACE' (A25) y 'LIMPIEZA PRE-SERVICIO' (A34, con B38='Gel desinfectante en dispensadores' como única tarea próxima). Las 2 menciones a uniforme son 03:Semanal Manager:B22 y 04:Jefe de Sala:B10.",
+      "fix": "Añadir un bloque 'HIGIENE PERSONAL' al inicio de Apertura Cocina (4-5 tareas: uniforme y calzado limpios, pelo recogido, sin joyas ni reloj, uñas cortas y sin esmalte, heridas cubiertas con apósito impermeable + guante, lavado de manos, declaración de síntomas digestivos/respiratorios) y replicarlo en el motor para las 19 variantes."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+      "ubicacion": "hoja «Apertura Cocina», filas 6-11 (tareas 1 a 6)",
+      "hallazgo": "CONTENIDO/SEGURIDAD. El orden numerado que el equipo sigue de arriba abajo enciende los equipos de gas ANTES de poner en marcha la extracción y ANTES de comprobar que no hay fugas: tarea 2 'Encender hornos y precalentar', tarea 3 'Encender planchas, freidoras y salamandra', tarea 4 'Encender campana extractora', tarea 5 'Verificar gas: llaves abiertas, sin fugas'. Las horas límite sugieren lo contrario (campana y gas a 07:00, hornos y planchas a 07:15), así que la información correcta está en el fichero pero el ORDEN IMPRESO —que es como se usa un checklist— es el inseguro. El producto se vende precisamente para personal nuevo y con rotación ('en 2 días ya sabe qué hacer').",
+      "evidencia": "01:Apertura Cocina: A7=2/B7='Encender hornos y precalentar a temperatura de trabajo'/E7='07:15'; A8=3/B8='Encender planchas, freidoras y salamandra'/E8='07:15'; A9=4/B9='Encender campana extractora'/E9='07:00'; A10=5/B10='Verificar gas: llaves abiertas, sin fugas'/E10='07:00'.",
+      "fix": "Reordenar el bloque: 1) encender campana extractora y ventilar, 2) comprobar la instalación de gas (llaves y ausencia de fugas con agua jabonosa), 3) encender hornos/planchas/freidoras. Es un cambio del motor: el mismo bloque se genera en todos los kits con cocina de gas."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+      "ubicacion": "hoja «Apertura Cocina» filas 14-17; hoja «Cierre Cocina» fila 11",
+      "hallazgo": "CONTENIDO. Las tareas de temperatura no traen ni valor de referencia ni casilla donde escribir la lectura: 'Registrar temperatura cámara 1 (refrigeración)', 'cámara 2', 'congelador' y 'Registrar temperatura final cámaras y congelador' sólo se pueden marcar con ✓. Registrar significa anotar un número; un ✓ no vale como registro APPCC y no detecta una cámara a 9 °C. Encima el kit es incoherente consigo mismo: 02 sí da cifras ('>65°C' de mantenimiento en caliente y '<8°C' de exposición en frío) y hasta el kit hermano de bar escribe 'verificar temperatura 2-4 °C'. La única salida que ofrece es B17='Registrar en hoja de control de temperaturas APPCC', un documento que no forma parte de este kit.",
+      "evidencia": "01:Apertura Cocina:B14='Registrar temperatura cámara 1 (refrigeración)', B15='...cámara 2...', B16='Registrar temperatura congelador', B17='Registrar en hoja de control de temperaturas APPCC'; 01:Cierre Cocina:B11='Registrar temperatura final cámaras y congelador'. Ninguna columna admite un valor (la fila sólo tiene Zona/Responsable/Hora Límite/✓/Firma). Contraste dentro de la familia: kit-tareas-bar/01:Apertura Barra:B9='Encender cámaras de barra (verificar temperatura 2-4 °C)' y kit-tareas-pasteleria/01:Apertura Obrador:B25='...comprobar que están a 2-6 °C antes de montar → 13 Registro de Temperaturas'.",
+      "fix": "Añadir el objetivo en el propio texto de la tarea (refrigeración 0-4 °C, congelación ≤ −18 °C) y una columna 'Valor' (o reutilizar 'Notas' en el molde de 08/09) donde se anote la lectura; si el registro formal vive en el Pack APPCC, enlazarlo explícitamente como hace pastelería v2.0 con sus flechas '→'."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/05-tareas-semanales-mensuales.xlsx",
+      "ubicacion": "hoja «Limpieza Semanal», B14 y B20",
+      "hallazgo": "CONTENIDO/ERROR TÉCNICO. Programa como tarea SEMANAL 'Descalcificar máquina de café' (B20) y 'Descalcificar lavavajillas' (B14). Descalcificar semanalmente una máquina de espresso profesional no es mantenimiento: es agredir la caldera y las juntas con ácido cada siete días, y con descalcificador de red o resinas no hace falta ni una vez al mes (lo habitual es trimestral/semestral según dureza del agua). Lo que sí es semanal en una cafetera es la limpieza química del grupo con detergente (backflush) y el remojo de portafiltros y filtros — que en este kit no aparecen por ningún lado. Igual con el lavavajillas: descalcificado mensual/trimestral, y semanal la limpieza de filtros y brazos de lavado.",
+      "evidencia": "05:Limpieza Semanal:B14='Descalcificar lavavajillas' (E14='Viernes'), B20='Descalcificar máquina de café' (E20='Miércoles'). El kit sí tiene la limpieza diaria correcta en 01:Cierre Barra:B7='Limpiar máquina de café: purgar, limpiar grupo', lo que confirma que la semanal debería ser el backflush con detergente, no la descalcificación.",
+      "fix": "Cambiar B20 por 'Limpieza química del grupo con detergente (backflush) + remojo de portafiltros, filtros y duchas' y B14 por 'Limpiar filtros, brazos de lavado y cuba del lavavajillas'; mover la descalcificación de ambos equipos a la hoja «Mantenimiento Mensual» con la nota 'frecuencia según dureza del agua'."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/05-tareas-semanales-mensuales.xlsx",
+      "ubicacion": "hoja «Mantenimiento Mensual», bloque 'SEGURIDAD' A19:E24 (y ausencia de hoja anual)",
+      "hallazgo": "CONTENIDO. Falta toda la capa de mantenimiento legal contratado, que es la que se le pide al hostelero en una inspección y la que se olvida porque no es diaria: no hay control de plagas por empresa autorizada (DDD, con su plan, sus partes y sus certificados; el kit sólo tiene 05:FIFO Semanal:B25 'Verificar ausencia de plagas (polillas, hormigas)'), no hay limpieza de conductos de extracción por empresa homologada, no hay revisión anual de extintores y BIE por empresa mantenedora (B20 sólo cubre la comprobación visual que hace el titular), no hay revisión periódica de la instalación de gas ni retimbrado de extintores. Y no existe ninguna hoja de periodicidad anual/trimestral: el fichero se queda en semanal y mensual.",
+      "evidencia": "05:Mantenimiento Mensual bloque SEGURIDAD = B20 'Verificar extintores: carga, accesibilidad, caducidad', B21 'Comprobar salidas de emergencia: señalización, acceso libre', B22 'Verificar botiquín', B23 'Comprobar detectores de humo'; B8='Revisión de campana extractora: motor, filtros, conducto' con D8='Empresa externa' pero periodicidad 'Mensual' y sin distinguir la limpieza de conductos. Barrido de los 11 ficheros: 'plaga' 1 resultado, 'DDD' 0, 'desinsect' 0.",
+      "fix": "Añadir a 05 una cuarta hoja 'Trimestral y Anual' con las revisiones contratadas y su firma/nº de parte (DDD, conductos de extracción, extintores y BIE por mantenedor, instalación de gas, analítica de agua si procede) y una casilla de fecha de próxima revisión. Es contenido del motor: aplica a los 19 kits."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/03-tareas-manager.xlsx",
+      "ubicacion": "hojas «Diario Manager» y «Mensual Manager» (B15)",
+      "hallazgo": "CONTENIDO. En un kit de tareas del manager de un restaurante español no aparece el registro diario de jornada laboral, obligatorio para todas las empresas desde 2019 y una de las infracciones que más se sanciona en hostelería. Lo más cercano es 'Revisar cumplimiento de horarios del mes' (mensual), que no es lo mismo: el registro es diario, individual y hay que conservarlo 4 años. Barrido de los 11 ficheros: 0 coincidencias de 'jornada' y 0 de 'fichaje'.",
+      "evidencia": "03:Diario Manager:A5-B37 (bloques PRIMERA HORA, PRE-SERVICIO, DURANTE SERVICIO, POST-SERVICIO, CIERRE DEL DÍA) no contiene ninguna tarea de fichaje; 03:Mensual Manager:B15='Revisar cumplimiento de horarios del mes'.",
+      "fix": "Añadir a 'Diario Manager', en el bloque de cierre, 'Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas)' y, en 'Mensual Manager', 'Archivar los registros de jornada del mes (conservación 4 años)'."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx + 02-partidas-cocina.xlsx + 03-tareas-manager.xlsx",
+      "ubicacion": "01:Cierre Cocina A21:E27 (bloque LIMPIEZA GENERAL); 02:Calientes B27; 03:Mensual Manager B7",
+      "hallazgo": "CONTENIDO. Cero registro de mermas en todo el kit y ningún tratamiento de residuos regulados. El cierre de cocina tira producto ('Retirar producto caducado o deteriorado', 'Desechar hojas marchitas y producto deteriorado') sin que nadie lo anote, y el manager tiene 'Calcular food cost real vs objetivo' sin ninguna fuente de datos de desperdicio: el food cost sale mal por definición. Además, 'Filtrar y/o cambiar aceite de freidora' no dice qué se hace con el aceite usado, que en España tiene que entregarse a gestor autorizado con su documento de entrega. Barrido de los 11 ficheros: 'merma' 0, 'residuo' 0, 'aceite usado' 0.",
+      "evidencia": "01:Cierre Cocina:B9='Retirar producto caducado o deteriorado'; 02:Fríos:B23='Desechar hojas marchitas y producto deteriorado'; 02:Calientes:B27='Filtrar y/o cambiar aceite de freidora' (E27='Cierre'); 03:Mensual Manager:B7='Calcular food cost real vs objetivo'.",
+      "fix": "Añadir en el cierre de cocina 'Anotar mermas del día (producto, cantidad y motivo) en la hoja de mermas' —enlazando con el Kit de Escandallos, que es venta cruzada—, y en 02:Calientes precisar 'Almacenar el aceite usado en el bidón del gestor autorizado y anotar la retirada'."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/06-eventos-festivos.xlsx",
+      "ubicacion": "hoja «Pre-Evento», bloques '48 HORAS ANTES' (filas 6-11) y '24 HORAS ANTES' (filas 14-18)",
+      "hallazgo": "CONTENIDO. El checklist de evento privado no recoge los alérgenos e intolerancias de los comensales en ningún momento —en un menú cerrado para un grupo es la información crítica y es obligación legal informar (Reg. 1169/2011)—, y tampoco hay nada de señal/anticipo, condiciones de cancelación ni precio por comensal cerrado por escrito, que es donde un restaurante pierde dinero con los grupos. La hoja pide 'Confirmar menú con cliente (si es privado)' y salta directamente al stock. Además el arranque en 48 h es corto para un banquete: la hoja se llama 'Checklist Pre-Evento (48h → Día del Evento)' pero incluye tareas de una semana (contratar personal extra, decoración).",
+      "evidencia": "06:Pre-Evento:A1='Checklist Pre-Evento (48h → Día del Evento)'; B6='Confirmar número definitivo de comensales', B7='Confirmar menú con cliente (si es privado)', B8='Verificar stock de ingredientes para el menú', B10='Confirmar personal extra si es necesario', B11='Preparar decoración especial si aplica'. No hay ninguna tarea con 'alérgen' en este fichero (las 7 menciones del kit están en 01, 04 y BONUS-01), ni ninguna con 'señal', 'anticipo' o 'cancelación'.",
+      "fix": "Añadir al bloque de 48 h 'Recoger por escrito alérgenos, intolerancias y dietas especiales de los comensales y trasladarlos a cocina', y un bloque previo 'AL CONFIRMAR LA RESERVA' con señal/anticipo, precio por comensal cerrado, política de cancelación y horario de entrada y salida del espacio."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/BONUS-02-calendario-anual-tareas.xlsx",
+      "ubicacion": "hoja «Calendario Anual», filas 5-21",
+      "hallazgo": "CONTENIDO. Al calendario de 17 fechas le faltan varias de las que más facturan en un restaurante español: Día del Padre (19 de marzo), 1 de noviembre (Todos los Santos, comida familiar), el puente de la Constitución y la Inmaculada (6 y 8 de diciembre), la temporada de comuniones y bautizos (abril-junio, el grueso de los banquetes del año) y el 15 de agosto. Sí están, en cambio, Halloween y Carnaval, de mucho menos peso en una cuenta de resultados. Y la primera fila propone servicio el 1 de enero ('Menú brunch recuperación'), el día en que la mayoría de restaurantes españoles cierra tras trabajar Nochevieja.",
+      "evidencia": "BONUS-02:Calendario Anual filas 5-21 = Año Nuevo, Reyes, San Valentín, Carnaval, Semana Santa, Apertura terraza, 1 Mayo, Día de la Madre, Inicio temporada alta, San Juan, Temporada alta, Vuelta al cole, Halloween, Cierre terraza, Cenas de empresa, Nochebuena/Navidad, Nochevieja. B5='1 Ene — Año Nuevo' con C5='Menú brunch recuperación, stock reducido'.",
+      "fix": "Añadir Día del Padre (19 mar), temporada de comuniones (abr-jun, 1 mes de antelación), 15 de agosto, 1 de noviembre y el puente del 6-8 de diciembre; reformular la fila del 1 de enero como decisión ('Decidir si se abre; si se cierra, comunicarlo en Google Business Profile y redes con 1 semana')."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/ (08 y 09 frente a 01-07 y BONUS)",
+      "ubicacion": "08:Instrucciones A1:A20 y 09:Instrucciones A1:A20 vs 01:Instrucciones B2:B23",
+      "hallazgo": "MOTOR. El kit son dos productos pegados: 01-07 y los BONUS salen de un generador y 08-09 de otro. Difieren en (a) el desplegable: '✓,—,N/A' en 01-07 frente a '✓,✗,—' en 08-09; (b) la paleta: verde/pastel con cabeceras 2D2D2D en 01-07 frente a oro FFD700 sobre 1A1A1A en 08-09; (c) las celdas verdes editables: 01-07 y BONUS las tienen (E8F5E9), 08 y 09 NO tienen ni una, aunque la FAQ de la landing afirma 'Las celdas editables están marcadas en verde'; (d) 08-09 llevan columna 'Notas' que 01-07 no tienen; (e) la estructura de las Instrucciones (columna A con emojis y numeración frente a columna B con viñetas '▸'); (f) los pies ('© AI Chef Pro — aichef.pro' vs '— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro'). El cliente que imprime los 11 ficheros nota que no son del mismo kit.",
+      "evidencia": "Validaciones: 01:Apertura Cocina DV=('list','\"✓,—,N/A\"') vs 08:Apertura del Negocio DV=('list','\"✓,✗,—\"'). Rellenos: 01:Apertura Cocina fills={'002D2D2D':7,'00E8F5E9':107} vs 08:Apertura del Negocio fills={'001A1A1A':1,'00FFD700':3,'002D2D2D':8,'00F5F5F5':64,'00FFFFFF':56} (0 celdas verdes). Promesa incumplida en kit-tareas.ts:264 ('Las celdas editables están marcadas en verde').",
+      "fix": "Unificar 08 y 09 con el molde de 01-07 (o al revés) en desplegable, paleta, celdas verdes editables y pie; y, si se conserva la columna 'Notas' de 08/09, llevarla también a 01-07, que es donde más falta hace (ver DOM-14)."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+      "ubicacion": "hoja «Instrucciones», A6-A12",
+      "hallazgo": "MOTOR. Las Instrucciones del fichero de CAJA son un copia-pega literal de las del fichero 08: dicen 'Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio' y no mencionan ni una vez el fondo de caja, el recuento por denominaciones, la Z del TPV, el descuadre ni el registro mensual — que es todo lo que hace el fichero, y lo único del kit que necesita explicación porque tiene 60 fórmulas. El cliente no sabe qué celdas rellena él y cuáles se calculan solas.",
+      "evidencia": "09:Instrucciones:A6='1. Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio.' (idéntico a 08:Instrucciones:A6), A7-A12 igualmente idénticas. Referencia: kit-tareas-pasteleria/09:Instrucciones tiene los bloques 'Qué resuelve', 'Cómo usar' ('el fondo se descuenta solo: total facturado = (efectivo contado − fondo) + tarjetas + otros', 'si la casilla DESCUADRE se pone ámbar, la caja no cuadra'), 'Personalización' y 'Se conecta con'.",
+      "fix": "Reescribir las Instrucciones de 09 con el modelo de pastelería v2.0 (qué resuelve / cómo usar / qué celdas son editables / con qué otro fichero se conecta), y revisar que ningún otro fichero del motor herede el texto de su vecino."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-tareas/ (los 11 xlsx)",
+      "ubicacion": "01:Apertura Cocina B17; 01:Cierre Sala B21; 05:Instrucciones B8",
+      "hallazgo": "MOTOR. Ninguno de los 11 ficheros remite a otro del mismo kit, y en cambio dos remiten a documentos que NO están en el kit: 'Registrar en hoja de control de temperaturas APPCC' y 'Archiva las hojas firmadas junto con los registros APPCC' apuntan al Pack APPCC, que se vende aparte. Un cliente que compra sólo este kit sigue la instrucción y no encuentra dónde. Pastelería v2.0 resolvió esto con referencias explícitas entre hojas ('→ 13 Registro de Temperaturas') y un bloque 'Se conecta con' en cada Instrucciones.",
+      "evidencia": "01:Apertura Cocina:B17='Registrar en hoja de control de temperaturas APPCC'; 05:Instrucciones:B8='▸ Archiva las hojas firmadas junto con los registros APPCC'; 01:Cierre Sala:B21='Contar efectivo y cuadrar con TPV' sin ninguna referencia al fichero 09, que es exactamente eso. Referencia: kit-tareas-pasteleria/01:Apertura Obrador:B10='...verificar temperatura de cámaras frigoríficas (registrar) → 13 Registro de Temperaturas' y kit-tareas-pasteleria/09:Instrucciones:B21='▸ 08 Apertura y Cierre del Negocio — el cierre de caja es una de sus últimas tareas del día'.",
+      "fix": "Añadir el bloque 'Se conecta con' a las Instrucciones de los 11 ficheros y flechas '→ NN Nombre del fichero' en las tareas que dependen de otra hoja; donde la referencia sea a un producto distinto (Pack APPCC), decirlo con nombre y enlace en vez de dar por hecho que el cliente lo tiene."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+      "ubicacion": "hoja «Apertura Cocina», B6",
+      "hallazgo": "CONTENIDO DE ESTE KIT (no está en los hermanos). La primerísima tarea del producto es 'Encender cámaras frigoríficas y verificar temperaturas'. Una cámara frigorífica no se apaga al cerrar: funciona 24/7, y si alguien la apagase por la noche habría que tirar todo el género por la mañana. Es el tipo de frase que hace que un jefe de cocina deje de fiarse del resto del documento en la línea 1. El kit de bar lo redacta bien ('Encender cámaras de barra (verificar temperatura 2-4 °C)' — encendido de una vitrina/nevera de barra, que sí se apaga).",
+      "evidencia": "01:Apertura Cocina:B6='Encender cámaras frigoríficas y verificar temperaturas' (E6='07:00'). Barrido de la familia: sólo kit-tareas y kit-tareas-bar contienen 'encender cámara'; kit-tareas-bar/01:Apertura Barra:B9='Encender cámaras de barra (verificar temperatura 2-4 °C)'.",
+      "fix": "Reescribir como 'Comprobar que las cámaras han funcionado toda la noche y registrar temperatura (refrigeración 0-4 °C, congelación ≤ −18 °C); si hay desviación, actuar según el plan APPCC antes de usar el género'."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/ (01-07)",
+      "ubicacion": "cabecera E4 'Hora Límite' de todas las hojas de 03, 05 y 06",
+      "hallazgo": "MOTOR. La columna se titula 'Hora Límite' pero en buena parte del kit contiene días de la semana, periodicidades o hitos: 'Lunes', 'Martes', 'Mensual', 'Día 1-3', '48h antes', 'Post-evento', 'Si aplica', 'Cambio', 'Según entrega', '30 diciembre'. Impreso queda 'Hora Límite: Mensual', que chirría y desaprovecha la columna.",
+      "evidencia": "03:Semanal Manager:E6='Lunes'; 03:Mensual Manager:E6='Día 1-3'; 04:Sous Chef:E10='Si aplica'; 06:Pre-Evento:E6='48h antes'; 06:Navidad:E17='30 diciembre'; frente a 01:Apertura Cocina:E6='07:00'.",
+      "fix": "Renombrar la columna a 'Cuándo' (o 'Plazo') en las hojas cuya unidad no es la hora, dejando 'Hora Límite' sólo en las diarias por turno."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx",
+      "ubicacion": "hoja «Fríos», B6",
+      "hallazgo": "CONTENIDO. 'Lavar y desinfectar lechugas y vegetales' se queda a medias: no dice con qué (lejía apta para uso alimentario), a qué dosis, cuánto tiempo, ni —lo importante— que hay que ACLARAR con agua potable después. Sin el aclarado queda residuo de hipoclorito en el producto que se sirve crudo. Es el detalle que se le explica a un ayudante nuevo el primer día y el que se olvida.",
+      "evidencia": "02:Fríos:B6='Lavar y desinfectar lechugas y vegetales' (D6='Cocinero', E6='10:00'). No hay ninguna otra celda del kit con dosificación ni con 'aclarar'.",
+      "fix": "Reescribir como 'Lavar, desinfectar con lejía apta para uso alimentario según dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante'."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx",
+      "ubicacion": "hoja «Calientes», B27 (E27='Cierre')",
+      "hallazgo": "CONTENIDO/SEGURIDAD. 'Filtrar y/o cambiar aceite de freidora' se programa al cierre sin ninguna advertencia de esperar a que el aceite enfríe. Filtrar aceite a temperatura de servicio es una de las quemaduras graves más habituales en cocina, y la hace normalmente el auxiliar del turno de noche con prisa por irse.",
+      "evidencia": "02:Calientes:B27='Filtrar y/o cambiar aceite de freidora', C27='Cocina', D27='Cocinero', E27='Cierre'. No hay ninguna mención a enfriamiento, guantes o temperatura segura en los 11 ficheros.",
+      "fix": "Reescribir como 'Apagar la freidora al terminar el servicio y filtrar el aceite SÓLO cuando haya bajado de 40 °C (nunca en caliente), con guantes y recipiente estable'."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/03-tareas-manager.xlsx",
+      "ubicacion": "hoja «Semanal Manager», bloques de lunes a viernes (filas 5-35)",
+      "hallazgo": "CONTENIDO. El checklist semanal reparte las 21 tareas de lunes a viernes y no asigna ninguna al fin de semana, que es cuando un restaurante independiente hace la mitad de su facturación (y para el que sólo hay tareas de preparación el viernes). Además ancla la planificación al lunes, el día de cierre semanal más habitual en la hostelería española: quien cierre los lunes se queda con un bloque de 5 tareas huérfano.",
+      "evidencia": "03:Semanal Manager: 'LUNES — PLANIFICACIÓN' (A5, 5 tareas), 'MARTES — PROVEEDORES' (A12), 'MIÉRCOLES — EQUIPO' (A18), 'JUEVES — CALIDAD' (A24), 'VIERNES — MARKETING Y ADMIN' (A30). No hay bloque de sábado ni domingo.",
+      "fix": "Renombrar los bloques por función y no por día ('DÍA 1 — Planificación', etc.) o dejar el día en la columna 'Cuándo' como celda verde editable, y añadir un bloque corto de fin de semana (control de tiempos de espera en pico, reposición entre servicios, cierre de reservas del domingo)."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/05-tareas-semanales-mensuales.xlsx",
+      "ubicacion": "hoja «FIFO Semanal», B18",
+      "hallazgo": "CONTENIDO. 'Comprobar que no hay producto > 3 meses congelado' aplica una regla única a todo el congelador. Las vidas útiles en congelación son muy distintas por familia (pescado azul 2-3 meses, carne de vacuno 8-12, aves 6-9, pan y masas 1-3) y una regla plana o tira producto bueno o valida producto pasado. Un jefe de cocina esperaría una tabla mínima de vidas útiles, no un número.",
+      "evidencia": "05:FIFO Semanal:B18='Comprobar que no hay producto > 3 meses congelado', D18='Sous Chef', E18='Lunes'.",
+      "fix": "Sustituir por 'Comprobar que ningún producto supera su vida útil de congelación (ver tabla)' y añadir en la misma hoja una tabla corta de vidas útiles por familia, editable."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-tareas/ (9 de los 11 xlsx)",
+      "ubicacion": "hoja «Instrucciones» de 01, 02, 03, 04, 05, 06, 07, BONUS-01 y BONUS-02",
+      "hallazgo": "MOTOR / posible caso que se le escapó a la Fase A. La firma de autoría 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' sólo está en 2 de los 11 ficheros (08 y 09, celda A17 de sus Instrucciones). Los otros 9 llevan sólo el pie '— Kit de Tareas Recurrentes · AI Chef Pro · aichef.pro'. Como la Fase A sólo sustituye bios existentes, los ficheros que nunca la tuvieron se quedaron sin ella: el activo de marca que justifica el precio ('diseñados por un chef en cocina desde los 17 años', kit-tareas.ts:188) desaparece justo en los 9 ficheros que el cliente más imprime. Pastelería v2.0 la lleva en todas las hojas de Instrucciones.",
+      "evidencia": "Barrido de 'John Guerrero'/'johnguerrero' en los 11 xlsx: sólo 08-apertura-cierre-negocio.xlsx:Instrucciones:A17 y 09-apertura-cierre-caja.xlsx:Instrucciones:A17. Referencia: kit-tareas-pasteleria/09:Instrucciones:B27 lleva la misma línea, y su versión de pie es 'Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pasteleria'.",
+      "fix": "Añadir la línea de autoría y el contacto a las Instrucciones de los 9 ficheros que no la tienen, justo encima de la línea 'Versión 1.1', y meter la comprobación en el postproceso transversal para que valga para los 19 kits de la familia."
+     }
+    ]
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + pycel) — fórmulas y rangos, evaluación con inputs reales, validaciones y formato condicional, formatos numéricos/moneda, anchos y altos de fila con wrap, coherencia entre cabeceras/instrucciones y contenido real. 11 xlsx / 38 hojas barridas. Temperatura CPU 40-47 °C durante todo el barrido; sin builds ni navegador.",
+    "veredicto": "no listo",
+    "motivo": "Dos defectos bloquean la entrega. (1) El arqueo de 09-apertura-cierre-caja.xlsx NUNCA resta el fondo de caja: evaluado con pycel, con un fondo de 150 € y descuadre real de 0,00 €, la celda DESCUADRE (B45) muestra 150,00 € — todos los días, en la hoja que el cliente usa para controlar dinero, y con el propio checklist pidiendo «Registrar importe de fondo de caja en hoja» cuando no existe ninguna celda para ello. (2) En 07-plantilla-personalizable.xlsx el denominador del contador es el literal 15 en las tres hojas (F27), no una fórmula como en los otros 10 ficheros: precisamente la plantilla cuyo propósito es que el cliente escriba SUS tareas es la única que no las cuenta. A eso se suma que en 'Cierre de Caja' toda la tabla «Resumen de Cierre» tiene sus etiquetas en la columna A (ancho 5) con wrap y alto de fila fijo, de modo que se imprimen cortadas —dos filas contiguas leyéndose ambas «Total»— y que la columna «Descuadre» del Registro Mensual no tiene fórmula ni una columna Z del TPV de la que derivarse, con un TOTALES que suma siempre 0,00 €. Fase A hizo su trabajo (cache, A4, metadata, bio, v1.1) y no encontré fórmulas rotas ni caracteres no latinos, pero se le escapó la unificación real de la casilla: 01-07 usan la lista «✓,—,N/A» y 08-09 «✓,✗,—».",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Cierre de Caja!B40:B45 (y Apertura de Caja!B7)",
+      "hallazgo": "El arqueo nunca resta el fondo de caja, así que el DESCUADRE de cada día es exactamente el importe del fondo. B40 'Total Efectivo' = C36 = TODO el efectivo contado en el cajón (fondo inicial incluido); B43 'TOTAL FACTURADO' = B40+B41+B42; B45 'DESCUADRE' = B43-B44. En ninguna parte de la hoja existe una celda para el fondo de caja, pese a que 'Apertura de Caja'!B7 pide literalmente «Registrar importe de fondo de caja en hoja» y 'Cierre de Caja'!B14 pide «Separar fondo de caja para mañana».",
+      "evidencia": "Evaluado con pycel sobre el fichero real. Escenario: cajón contado 300 € (fondo 150 € + ventas en efectivo 150 €) introducido en las denominaciones B23=2 (100 €), B25=4 (20 €), B27=4 (5 €); tarjetas B41=500; Z del TPV B44=650. Resultado: C36=300,0 · B40=300,0 · B43=800 · B44=650 · B45=150. El descuadre real es 0,00 € (150 efectivo + 500 tarjeta = 650 = Z) y el fichero muestra 150,00 €. Las fórmulas literales son B40='=C36', B43='=B40+B41+B42', B45='=B43-B44'; no hay ningún término de fondo en la cadena.",
+      "fix": "Insertar en el «Resumen de Cierre» una fila de entrada 'Fondo de caja inicial (a descontar)' —p. ej. desplazando el bloque para meterla entre B40 y B41— y reescribir el encadenado como: B40 'Efectivo contado en cajón' = C36; Bnn 'Fondo de caja inicial' = entrada manual; 'Ventas en efectivo' = B40-Bnn; 'TOTAL FACTURADO' = ventas efectivo + tarjetas + otros; 'DESCUADRE' = TOTAL FACTURADO - Z del TPV. Renombrar A40 a 'Efectivo contado en cajón' para que no se confunda con ventas."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ubicacion": "Por Franja Horaria!F27, Por Área!F27, Por Perfil!F27",
+      "hallazgo": "El denominador del contador de tareas es el número fijo 15 en lugar de una fórmula, en las tres hojas. Es el único fichero del kit con el denominador hardcodeado: los otros 10 usan =COUNTIF(B5:Bnn,\"?*\"). Justo la plantilla en blanco, cuyo único propósito es que el cliente escriba sus propias tareas, es la que no las cuenta: si escribe 8 tareas verá «0 de 15», y si añade tareas seguirá viendo 15.",
+      "evidencia": "Leído con openpyxl: en las tres hojas D27='=COUNTIF(F5:F25,\"✓\")' (fórmula) pero F27=15 (int, no str). Además la validación de datos cubre 16 celdas (F6:F10, F13:F17, F20:F25), una más que el 15 hardcodeado, así que el contador puede llegar a mostrar «16 de 15». Las Instrucciones B21 del propio fichero afirman «Marca con ✓ en la columna «✓ Completada» (desplegable): es la que cuenta el total de tareas completadas».",
+      "fix": "Sustituir el literal por la misma fórmula que el resto del kit: F27 = =COUNTIF(B5:B25,\"?*\") en las tres hojas. Así el denominador sigue al número real de filas con texto en la columna Tarea."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Cierre de Caja!A19 y A39:A45",
+      "hallazgo": "Las dos tablas de dinero reutilizan los anchos de columna del checklist de arriba sin adaptarlos: la etiqueta va en la columna A (ancho 5, dimensionada para el «#») y el importe en la B (ancho 50, dimensionada para «Tarea»). Con wrap_text activo y alto de fila FIJO, todas las etiquetas quedan cortadas en pantalla y en papel — y las Instrucciones A14 dicen «Plastifica una copia impresa».",
+      "evidencia": "Medido con openpyxl (ancho col A=5.0; wrap=True; alturas fijas): A19 'Denominación' h=26 fuente 11 → ~2 líneas necesarias, 1 visible. A39 'Concepto' h=26 → 2/1. A40 'Total Efectivo' h=24 fuente 10 → 3/1. A41 'Total Tarjetas (Visa/MC)' h=24 → 4/1. A42 'Total Otros (Bizum, Vales)' h=24 → 4/1. A43 'TOTAL FACTURADO' h=24 → 3/1. A44 'Z del TPV' h=24 → 2/1. A45 'DESCUADRE' h=24 → 2/1. Como B40:B45 están ocupadas por los importes y wrap está activo, el texto tampoco desborda: se recorta. Resultado práctico: A41 y A42 muestran ambas «Total» seguidas, con importes distintos. Las filas que sí están fusionadas (A20:C20 'BILLETES', A28:C28 'MONEDAS', A36:B36 'TOTAL EFECTIVO') se leen bien, lo que confirma que el problema es la falta de fusión en las demás.",
+      "fix": "Fusionar A19:B19, A39:B39 y A40:A45 con su columna contigua igual que ya se hace en A36:B36, o mover las dos tablas a un bloque propio con anchos propios (etiqueta ≥30, importe ≥16). Alternativa mínima: quitar el alto de fila fijo de las filas 19 y 39-45 para que Excel autoajuste."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Registro Mensual!G5:G35 y G36",
+      "hallazgo": "La columna 'Descuadre' —la razón de ser de un registro mensual de caja— no tiene fórmula en ninguna de sus 31 filas, y el registro no incluye ninguna columna 'Z del TPV' de la que pudiera derivarse. El TOTALES G36 suma una columna que en el fichero entregado está siempre vacía, así que muestra permanentemente 0,00 € bajo una cabecera negra de totales: un manager que mire esa fila concluirá que no hubo descuadres en todo el mes.",
+      "evidencia": "openpyxl: G5..G35 existen con number_format '#,##0.00 €' y fill sólido, pero value=None y ninguna fórmula, mientras la columna vecina F sí la tiene (F5='=C5+D5+E5', ídem hasta F35). G36='=SUM(G5:G35)'. Evaluado con pycel rellenando el día 1 (B5=150, C5=150, D5=500, E5=0): F5=650, F36=650,0 y G36=0,0. Cabeceras de la fila 4: A 'Fecha', B 'Fondo Apertura', C 'Ventas Efectivo', D 'Ventas Tarjeta', E 'Ventas Otros', F 'Total Facturado', G 'Descuadre', H 'Depósito', I 'Responsable' — no hay Z del TPV.",
+      "fix": "Añadir una columna 'Z del TPV' antes de 'Descuadre' y poner G5 = =F5-<ZdelTPV>5 arrastrada hasta G35, para que el descuadre se calcule igual que en 'Cierre de Caja'!B45 en vez de transcribirse a mano."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Registro Mensual!B5:B35 y B36",
+      "hallazgo": "La columna 'Fondo Apertura' se captura pero no entra en ningún cálculo: 'Total Facturado' es =C+D+E y la ignora deliberadamente (correcto), pero entonces el TOTALES B36 suma los 31 fondos diarios y produce una cifra sin significado económico alguno, presentada con formato € en la fila de totales junto a cifras que sí lo tienen.",
+      "evidencia": "openpyxl: B36='=SUM(B5:B35)' con formato '#,##0.00 €'. Evaluado con pycel con un único día relleno (B5=150): B36=150; con los 31 días a 150 € daría 4.650 € de «fondo de apertura mensual», que no es ni una venta ni un saldo. F5='=C5+D5+E5' no incluye B, lo que confirma que el fondo no forma parte del facturado.",
+      "fix": "Sustituir B36 por un promedio o dejarla en blanco con la etiqueta «(no sumable)». Si se quiere un control, la cifra útil es la varianza del fondo: =MAX(B5:B35)-MIN(B5:B35), o simplemente comprobar que el fondo es constante."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "media",
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "Apertura del Negocio!D5:E19 · Cierre del Negocio!D5:E17",
+      "hallazgo": "Las columnas 'Responsable' y 'Hora Límite' están completamente vacías en las dos hojas, mientras que en los ficheros 01-06 esas mismas columnas vienen pre-rellenadas tarea a tarea. La FAQ de la landing promete lo contrario de forma explícita.",
+      "evidencia": "openpyxl sobre las filas de tarea (5-19 y 5-17): columna D sin un solo valor (el único hit, 'de', es la etiqueta de la fila de totales D20/D18), columna E igual (el único hit es la fórmula del denominador). Columnas G 'Firma' y H 'Notas' también vacías, esas sí por diseño. Contraste: 01-apertura-cierre.xlsx!Apertura Cocina!D6='Cocinero apertura', E6='07:00'. Promesa incumplida en astro-site/src/data/productos/tareas/kit-tareas.ts, FAQ «¿Las tareas vienen ya rellenadas?» → «Sí. Cada checklist viene pre-rellenado con las tareas reales de un restaurante casual».",
+      "fix": "Pre-rellenar D y E en las 28 filas de tarea de 08 con el mismo criterio que 01-06 (p. ej. 'Desactivar alarma del local' → Responsable 'Encargado', Hora Límite '07:00'), o retirar las dos columnas si se decide que este fichero es genérico."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Apertura de Caja!A4:F4 · Cierre de Caja!A4:F4",
+      "hallazgo": "Los dos checklists de caja NO tienen columna 'Firma', y su columna de tiempo se llama 'Hora' y no 'Hora Límite'. La FAQ de la landing afirma que todos los checklists tienen las cuatro columnas. Además 'Responsable' (C) está vacía en todas las filas de tarea.",
+      "evidencia": "Cabeceras leídas de la fila 4 en ambas hojas: ['#', 'Tarea', 'Responsable', '✓ Completada', 'Hora', 'Notas'] — seis columnas, sin 'Firma'. Columna C sin valores en las filas de tarea (el único hit es la fórmula C16/C17 de la fila de totales). Contraste con 01-06, que sí tienen G 'Firma'. La FAQ «¿Cómo funciona el sistema de firma?» en astro-site/src/data/productos/tareas/kit-tareas.ts responde «Cada checklist tiene columnas de responsable, hora límite, completada y firma».",
+      "fix": "Añadir columna 'Firma' a las dos hojas de caja (es donde más importa, por trazabilidad del efectivo) y pre-rellenar 'Responsable'. Hay una firma al pie en A17/A47, pero es una sola para toda la hoja y la FAQ promete firma por tarea."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "todos (01-09)",
+      "ubicacion": "validación de datos de la columna «✓ Completada» en las 30 hojas de checklist",
+      "hallazgo": "La casilla NO está unificada, pese a que es uno de los puntos que la Fase A daba por cerrados: los ficheros 01-07 ofrecen la lista «✓,—,N/A» y los ficheros 08-09 ofrecen «✓,✗,—». Un mismo kit pide al mismo empleado tres opciones distintas según qué hoja imprima, y en ningún sitio se explica qué significan «—», «N/A» ni «✗».",
+      "evidencia": "openpyxl, dataValidation.formula1: 01-apertura-cierre.xlsx!Apertura Cocina → '\"✓,—,N/A\"'; ídem en 02-07 (comprobadas las 25 hojas). 08-apertura-cierre-negocio.xlsx!Apertura del Negocio → '\"✓,✗,—\"'; ídem 'Cierre del Negocio', 09!'Apertura de Caja', 09!'Cierre de Caja'. Las Instrucciones de 01-07 solo dicen «Marca con ✓ en la columna «✓ Completada» (desplegable)»; las de 08-09 solo «Usa la validación de datos en la columna '✓ Completada' para marcar el estado».",
+      "fix": "Elegir una sola lista para los 11 ficheros —recomiendo «✓,✗,N/A» porque distingue hecho / no hecho / no aplica, que es lo que un checklist operativo necesita— y añadir a la línea de Instrucciones la leyenda de cada símbolo."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "todos los que usan la lista «✓,—,N/A» (01-07)",
+      "ubicacion": "p. ej. 01-apertura-cierre.xlsx!Apertura Cocina!D41 y F41",
+      "hallazgo": "El contador trata «N/A» como tarea pendiente: el numerador solo cuenta «✓» pero el denominador cuenta TODAS las filas con texto en la columna Tarea, incluidas las marcadas como no aplicables. Un local sin terraza ni barril que marque 3 tareas N/A no podrá cerrar nunca el turno al 100 %, y las Instrucciones B15 invitan justo a eso («Borra las tareas que no aplican»), lo que obliga a borrar en vez de marcar N/A y hace inútil la opción del desplegable.",
+      "evidencia": "D41='=COUNTIF(F5:F39,\"✓\")' y F41='=COUNTIF(B5:B39,\"?*\")'. El segundo COUNTIF mira la columna B (texto de la tarea), no la F, así que la marca N/A no lo reduce. Con 25 tareas y 3 marcadas N/A el mejor resultado posible es «22 de 25». Mismo patrón en las 25 hojas de 01-06 y en 07.",
+      "fix": "Cambiar el denominador a =COUNTIF(B5:B39,\"?*\")-COUNTIF(F5:F39,\"N/A\") para que las tareas no aplicables salgan también del total. Aplicar el mismo ajuste en las 25 hojas."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "01-06 (25 hojas)",
+      "ubicacion": "cabecera E4 'Hora Límite' de 9 hojas de cadencia no diaria",
+      "hallazgo": "La cabecera 'Hora Límite' etiqueta una columna que no contiene ninguna hora en 9 de las 25 hojas: contiene días de la semana, cadencias o plazos de antelación. El cliente que ordene o filtre por esa columna, o que la lea impresa, encuentra una cabecera que describe otra cosa.",
+      "evidencia": "Valores reales leídos de la columna E: 05!'Limpieza Semanal' → 'Lunes','Martes','Miércoles','Jueves'; 05!'FIFO Semanal' → 'Lunes' en las 15 filas; 05!'Mantenimiento Mensual' → 'Mensual'; 03!'Semanal Manager' → 'Lunes','Martes'; 03!'Mensual Manager' → 'Día 1-3','Mensual'; 06!'Pre-Evento' → '48h antes','24h antes'; 06!'San Valentín' → '7 días antes','5 días antes'; 06!'Navidad' → '15 días antes','10 días antes','Martes-Miérc','30 diciembre'; 06!'Temporada Terraza' → 'Día apertura','1 semana antes','1 mes antes','Último día'.",
+      "fix": "Renombrar E4 según la hoja: 'Día' en las semanales, 'Cadencia' en las mensuales y 'Antelación' en las de eventos. Dejar 'Hora Límite' solo en las hojas diarias de 01, 02 y 03!'Diario Manager', que sí llevan horas."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "01-06 (25 hojas)",
+      "ubicacion": "p. ej. 01-apertura-cierre.xlsx!Apertura Cocina, fila 39",
+      "hallazgo": "Las Instrucciones prometen «filas vacías del final» en plural para añadir tareas propias, pero cada hoja tiene exactamente UNA. Y lo que se escriba por debajo de esa fila queda fuera de los dos COUNTIF y fuera de la validación de datos: no se cuenta, no tiene desplegable y no lo recoge el formato condicional, sin ningún aviso.",
+      "evidencia": "Barrido automático de las 25 hojas de 01-06 comparando la última fila con texto en B contra el final del rango del denominador: filas_libres = 1 en las 25 sin excepción (Apertura Cocina última tarea B38 / rango hasta B39; Cierre Barra B19 / B20; Camarero B25 / B26; etc.). Instrucciones de 01, B16: «▸ Añade tareas específicas de tu local en las filas vacías del final». El formato condicional de Apertura Cocina cubre A5:G39 y la DV llega a F39, así que la fila 40 queda descubierta en todo.",
+      "fix": "O ampliar cada tabla a 5 filas libres (extendiendo rangos de COUNTIF, DV y formato condicional), o reescribir la instrucción a «Añade tus tareas insertando filas dentro de la tabla (clic derecho → Insertar), nunca por debajo de la última, para que el contador las recoja»."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Instrucciones!A3:A12",
+      "hallazgo": "La hoja de Instrucciones es un copia-pega literal de la de 08 y no describe este fichero: habla de «checklists para la apertura y cierre de tu negocio» cuando el fichero es de CAJA, y no menciona en ningún punto las tres partes que de verdad tienen complejidad — el recuento por denominaciones, el Resumen de Cierre y el Registro Mensual, que juntos concentran las 60 fórmulas del fichero. En particular no explica en ninguna parte qué hacer con el fondo de caja, que es justo donde el cálculo falla (ver TEC-01).",
+      "evidencia": "09!Instrucciones A6 = 'Este archivo contiene checklists profesionales para la apertura y cierre de tu negocio.' — cadena idéntica byte a byte a 08!Instrucciones A6. A8 = 'Cada checklist incluye columnas para marcar tareas completadas, responsable, hora y notas.' Los puntos A6-A12 solo hablan de checklists; el fichero tiene además las secciones 'Recuento de Efectivo por Denominación' (A18), 'Resumen de Cierre' (A38) y la hoja 'Registro Mensual', ninguna mencionada. Solo A3 está personalizada ('Checklist de Apertura y Cierre de Caja').",
+      "fix": "Reescribir A6-A12 para este fichero: cómo se cuenta por denominaciones (rellenar solo la columna 'Cantidad'), qué celdas son de entrada en el Resumen (tarjetas, otros, Z del TPV) y cuáles se calculan solas, cómo tratar el fondo de caja, y cómo se traslada el día al Registro Mensual."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "07-plantilla-personalizable.xlsx",
+      "ubicacion": "Por Franja Horaria, Por Área, Por Perfil (hojas completas)",
+      "hallazgo": "Las tres «plantillas en blanco» son idénticas salvo el título de A1: mismos rótulos, misma estructura, mismos placeholders. No aportan tres formas de organizar las tareas, que es lo que sus nombres y la landing prometen. En concreto, la columna 'Zona' viene pre-rellenada con 'General' en las 15 filas incluso en la hoja 'Por Área', que es precisamente donde esa columna debería ser el eje de la organización.",
+      "evidencia": "Comparación celda a celda de las tres hojas: A1 difiere ('Plantilla en Blanco — Por Franja Horaria' / '— Por Área de Trabajo' / '— Por Perfil Profesional'); todo lo demás coincide, incluidos A5/A12/A19 = '  (Sección 1/2/3 — Personaliza este título)', C6:C24 = 'General' en las 15 filas, D6/D13/D20 = '(Responsable)', E6/E13/E20 = '(Hora)', el rango DV F6:F25 y el F27=15. Mismos anchos, mismas fusiones, mismo formato condicional A5:G25.",
+      "fix": "Diferenciar las tres: en 'Por Franja Horaria' precargar las secciones como 'APERTURA / SERVICIO / CIERRE' y dejar 'Zona' vacía; en 'Por Área' precargar 'COCINA / SALA / BARRA' en la columna Zona y dejar los títulos de sección libres; en 'Por Perfil' precargar la columna Responsable con los puestos y dejar Zona vacía."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "01-apertura-cierre.xlsx / 08 / 09",
+      "ubicacion": "01!Cierre Sala!B17:B21 y B11:B16 vs 08!Cierre del Negocio!B5:B17 vs 09!Cierre de Caja!B5:B16",
+      "hallazgo": "Tres ficheros distintos del mismo kit contienen el mismo cierre, sin que nada indique al cliente cuál debe imprimir. El bloque «CIERRE GENERAL» de 01!Cierre Sala repite el checklist entero de 08, y su bloque «CIERRE DE CAJA» repite el de 09. Quien imprima los tres hace las mismas tareas tres veces y firma tres hojas por el mismo trabajo.",
+      "evidencia": "01!'Cierre Sala' B17-B21: 'Apagar música y TV', 'Apagar climatización', 'Verificar ventanas cerradas', 'Activar alarma', 'Cerrar puerta con llave'. 08!'Cierre del Negocio' B5, B11, B13, B16, B17: 'Apagar música ambiente', 'Apagar climatización', 'Comprobar que ventanas están cerradas', 'Activar alarma', 'Cerrar con llave y verificar cierre'. 01!'Cierre Sala' B11-B16: 'Imprimir informe Z del TPV', 'Contar efectivo y cuadrar con TPV', 'Guardar efectivo en caja fuerte', 'Apagar TPV y datáfono'. 09!'Cierre de Caja' B5, B7, B15, B8: 'Imprimir Z de cierre (informe final del día)', 'Calcular total efectivo', 'Preparar depósito bancario / guardar en caja fuerte', 'Anotar total tarjetas'.",
+      "fix": "Decidir la jerarquía y decirla en las Instrucciones: o 01 es el checklist por áreas y 08/09 son los detallados para local y caja (entonces quitar de 01!Cierre Sala los bloques 'CIERRE DE CAJA' y 'CIERRE GENERAL' y remitir a los otros dos ficheros), o 08/09 son alternativas completas. Hoy no hay ninguna nota de remisión en ninguno de los tres."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "baja",
+      "fichero": "01-apertura-cierre.xlsx (y resto de 01-06)",
+      "ubicacion": "Instrucciones!B14 y B17 vs Apertura Cocina!E6:E38",
+      "hallazgo": "Las Instrucciones dicen que las celdas verdes son las editables y que se ajusten las horas límite, pero la columna 'Hora Límite' no tiene ni una sola celda verde. Además el mismo verde se usa para las cabeceras de sección en unas hojas y no en otras, así que el código de color no significa lo mismo dentro del propio libro.",
+      "evidencia": "Censo de rellenos en 01!'Apertura Cocina': el verde 00E8F5E9 aparece en A5, A13, A19, A25, A34 (cabeceras de sección), en C (25), D (25), F (26) y G (25) — y en la columna E, CERO celdas. Instrucciones B14: «▸ Las celdas verdes son editables — cambia responsables y horarios»; B17: «▸ Ajusta las horas límite a tus horarios reales». En 01!'Apertura Sala' las cabeceras de sección usan en cambio 00E3F2FD, 00F3E5F5 y 00FFF8E1, no el verde.",
+      "fix": "Aplicar 00E8F5E9 también a E6:E38 (y equivalentes en las 25 hojas), y sacar el verde de las cabeceras de sección de 'Apertura Cocina', 'FIFO Semanal' y 'Mantenimiento Mensual' para que el verde signifique solo «editable»."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "baja",
+      "fichero": "03, 05, 06, BONUS-02",
+      "ubicacion": "fila 2 de 'Semanal Manager', 'Mensual Manager', 'Limpieza Semanal', 'FIFO Semanal', 'Mantenimiento Mensual', 'Navidad', 'Temporada Terraza'",
+      "hallazgo": "La cabecera de turno se ha copiado a hojas donde no tiene sentido: una limpieza profunda semanal, un mantenimiento mensual o un cierre de temporada de terraza no tienen «Turno: Mañana / Tarde / Noche», y una hoja semanal necesita un rango de fechas, no una fecha suelta.",
+      "evidencia": "A2 idéntica en las 25 hojas de 01-07: 'Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________'. Está presente tal cual en 05!'Mantenimiento Mensual' (cuya columna E dice 'Mensual' en las 15 filas), en 03!'Mensual Manager' (columna E 'Día 1-3'), en 06!'Temporada Terraza' (columna E 'Día apertura' / '1 mes antes') y en 06!'Navidad' (columna E '15 días antes').",
+      "fix": "Sustituir A2 por cabeceras acordes: 'Semana del ___/___ al ___/___    Responsable: ______' en las semanales, 'Mes: __________  Año: ______    Responsable: ______' en las mensuales y 'Temporada: ______  Fecha: ___/___/______' en la de terraza."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "baja",
+      "fichero": "06-eventos-festivos.xlsx",
+      "ubicacion": "Temporada Terraza!E6:E11",
+      "hallazgo": "El bloque «APERTURA DE TEMPORADA» no está en orden cronológico, a diferencia de las otras tres hojas del fichero. Quien trabaje la lista de arriba abajo deja para el final la solicitud de licencia municipal, que es la tarea con más antelación y la única con riesgo administrativo.",
+      "evidencia": "Valores de la columna E en el orden en que aparecen: E6='Día apertura', E7='1 semana antes', E8='1 semana antes', E9='1 mes antes' (B9='Solicitar licencia de terraza al Ayuntamiento si aplica'), E10='1 semana antes', E11='Día apertura'. Comparar con 06!'Navidad' (15, 15, 10, 10, 10 días antes) y 06!'San Valentín' (7, 7, 7, 5, 5 días antes), que sí van de mayor a menor antelación.",
+      "fix": "Reordenar las filas 6-11 por antelación descendente: '1 mes antes' (licencia) → '1 semana antes' (mesas y sillas, toldo, carta) → 'Día apertura' (limpieza del mobiliario, iluminación), renumerando la columna A."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Instrucciones!A14 y A17 de ambos ficheros",
+      "hallazgo": "Dos líneas de la hoja de Instrucciones quedan cortadas a la mitad porque tienen alto de fila fijo y wrap activo, entre ellas la que atribuye la autoría a John Guerrero, que es la bio anclada por la Fase A. Es un caso que se le escapó al saneamiento determinista: el texto se insertó pero la fila no se dimensionó para él.",
+      "evidencia": "openpyxl: columna A ancho 80.0, wrap_text=True, alto de fila fijo 22.0, fuente 10. A17 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' → 116 caracteres, ~2 líneas necesarias y 1 visible. A14 = '💡 Consejo: Plastifica una copia impresa y usa rotuladores borrables para reutilizarla cada día.' → 95 caracteres, 2 líneas necesarias y 1 visible. En los ficheros 01-07 estas hojas no fijan alto de fila (row_dimensions vacío) y Excel autoajusta, por eso allí no se corta.",
+      "fix": "Poner row_dimensions[14].height y [17].height a None (autoajuste) en las Instrucciones de 08 y 09, o subirlas a 34, en línea con el resto del kit."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx",
+      "ubicacion": "Apertura del Negocio y Cierre del Negocio, configuración de página",
+      "hallazgo": "Las dos hojas son las más anchas del kit (8 columnas, 153 unidades) y están configuradas en vertical con ajuste a 1 página de ancho, lo que obliga a Excel a reducir la escala a ~60 % — bastante por debajo del resto del kit. El propio fichero recomienda imprimir y plastificar.",
+      "evidencia": "openpyxl: orientation='portrait', fitToWidth=1, fitToHeight=0, paperSize=9 (A4), márgenes 0.59. Anchos: A=5, B=50, C=16, D=16, E=13, F=14, G=14, H=25 → 153 unidades, frente a las 119 de las hojas de 01-07 (que escalan a ~82 %). La hoja 'Registro Mensual' de 09 sí está en landscape con 9 columnas, lo que demuestra que el generador sabe hacerlo.",
+      "fix": "Poner las dos hojas de 08 en orientation='landscape', como ya está 'Registro Mensual' de 09 y 'Calendario Anual' de BONUS-02."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "baja",
+      "fichero": "09-apertura-cierre-caja.xlsx",
+      "ubicacion": "Cierre de Caja!B21:B35",
+      "hallazgo": "Las 15 celdas de 'Cantidad' del recuento por denominaciones no tienen ninguna validación: admiten decimales, negativos o texto. Un '2,5' en la fila de billetes de 50 € o un signo negativo por error entra sin aviso en =SUM(C21:C35) y de ahí a TOTAL EFECTIVO, TOTAL FACTURADO y DESCUADRE. Es el único punto de entrada numérica manual del arqueo y es el que no está guardado, mientras que las columnas de marcar sí llevan desplegable.",
+      "evidencia": "openpyxl: la única dataValidation de la hoja es ('D5 D6 … D16', 'list', '\"✓,✗,—\"'); B21:B35 no aparecen en ninguna. Sus celdas tienen number_format 'General' y valor 0. Las fórmulas dependientes son C21='=B21*500' … C35='=B35*0.01', C36='=SUM(C21:C35)', y de ahí B40='=C36'.",
+      "fix": "Añadir a B21:B35 una validación whole / greaterThanOrEqual 0 con mensaje de error, y dar formato numérico '0' en vez de 'General' para que no acepte decimales silenciosamente."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "baja",
+      "fichero": "08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx",
+      "ubicacion": "08!Apertura del Negocio!B20:E20 · 08!Cierre del Negocio!B18:E18 · 09!Apertura de Caja!B16:E16 · 09!Cierre de Caja!B17:E17",
+      "hallazgo": "La fila de totales no está fusionada y sus cuatro celdas caen bajo cabeceras que no les corresponden: el resultado del contador aparece bajo 'Zona' o 'Responsable', la palabra «de» bajo 'Responsable' o '✓ Completada' y el denominador bajo 'Hora Límite' u 'Hora'. Se lee como si esas columnas tuvieran datos. En los ficheros 01-07 la misma fila sí está fusionada (p. ej. A41:C41).",
+      "evidencia": "08!'Apertura del Negocio': B20='Tareas completadas:', C20='=COUNTIF(F5:F19,\"✓\")' bajo la cabecera C4='Zona', D20='de' bajo D4='Responsable', E20='=COUNTIF(B5:B19,\"?*\")' bajo E4='Hora Límite'; merged_cells de la hoja no incluye ningún rango de la fila 20. 09!'Apertura de Caja': C16 (contador) bajo C4='Responsable', E16 (denominador) bajo E4='Hora'. Contraste: 01!'Apertura Cocina' tiene 'A41:C41' fusionado.",
+      "fix": "Fusionar la etiqueta y agrupar el contador como se hace en 01-07: fusionar A20:B20 con el texto 'Tareas completadas:' y dejar el «x de y» en dos celdas contiguas bajo la columna '✓ Completada', que es la que mide."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "baja",
+      "fichero": "06-eventos-festivos.xlsx",
+      "ubicacion": "Navidad!A5 vs E6:E10",
+      "hallazgo": "El título de la sección y los plazos de sus tareas no coinciden: la sección dice «2 SEMANAS ANTES» pero ninguna de sus cinco tareas tiene ese plazo — van a 15 y a 10 días. Quien planifique por el título llega tarde a las dos primeras y demasiado pronto a las tres últimas.",
+      "evidencia": "A5='  2 SEMANAS ANTES' (14 días). E6='15 días antes', E7='15 días antes', E8='10 días antes', E9='10 días antes', E10='10 días antes'. Las otras dos secciones de la hoja sí son coherentes: A12='  SEMANA DE NAVIDAD' con E13:E17 en días de la semana, y A19='  NOCHEVIEJA' con E20:E23 en horas ('18:00','19:00','23:30','00:00').",
+      "fix": "Renombrar A5 a '  2-3 SEMANAS ANTES', o ajustar E6 y E7 a '14 días antes' y agrupar las de 10 días en una sección propia '  10 DÍAS ANTES'."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "baja",
+      "fichero": "todos (01-09 y BONUS)",
+      "ubicacion": "38 hojas, propiedad de protección",
+      "hallazgo": "Ninguna hoja del kit está protegida, así que las fórmulas conviven sin barrera con las celdas de entrada. En un fichero pensado para que lo rellene el equipo a diario en tablet, basta un tabulador de más para machacar el contador o, en el arqueo, la cadena TOTAL EFECTIVO → TOTAL FACTURADO → DESCUADRE, y no queda rastro del cambio.",
+      "evidencia": "openpyxl: ws.protection.sheet es False en las 38 hojas de los 11 ficheros. Celdas expuestas de mayor riesgo: 09!'Cierre de Caja' C21:C36 (=B21*500 … =SUM(C21:C35)), B40 (=C36), B43 (=B40+B41+B42), B45 (=B43-B44); 09!'Registro Mensual' F5:F35 y B36:H36; y los 25 pares de COUNTIF de 01-07.",
+      "fix": "Marcar como desbloqueadas solo las celdas de entrada (columnas Responsable, Hora, ✓ Completada, Firma, Notas; B21:B35, B41, B42 y B44 en el arqueo; C5:E35, G5:I35 en el registro) y activar ws.protection.sheet=True sin contraseña, para que se pueda desproteger pero no se pise por accidente."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+      "ubicacion": "Calendario Anual!D23:D27 y print_area de la hoja",
+      "hallazgo": "El bloque de cinco filas libres para las fechas propias del cliente está incompleto: tiene placeholder y relleno verde en las columnas A, B y C, pero la columna D 'Antelación' se queda sin ninguna de las dos, así que no se ve que también sea rellenable. Además esta hoja y la de BONUS-01 son las dos únicas del kit sin área de impresión definida, cuando las Instrucciones del kit insisten en imprimir en A4.",
+      "evidencia": "openpyxl: A23:C27 tienen valores '(Tu fecha)', '(Añade aquí)', '(Tareas específicas)' y relleno 00E8F5E9; D23:D27 sin valor y sin relleno, pese a que D4='Antelación' y las filas 5-21 sí la rellenan ('1 semana', '2 semanas', '1 mes', 'Continuo'). print_area vacío en BONUS-02!'Calendario Anual' y en BONUS-01!'Briefing'; las 36 hojas restantes sí lo tienen (p. ej. 09!'Registro Mensual' → $A$1:$I$38).",
+      "fix": "Añadir '(Antelación)' con relleno 00E8F5E9 en D23:D27 y definir print_area '$A$1:$D$29' en BONUS-02 y '$B$1:$C$37' en BONUS-01."
+     }
+    ]
+   }
+  }
+ }
+}
