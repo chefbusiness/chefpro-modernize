@@ -1,0 +1,171 @@
+{
+ "pid": "kit-tareas-cafeteria",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 11,
+ "ficheros_intactos": 0,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → descuadre 0",
+   "ok": true,
+   "evidencia": "informe pycel del dry-run: 09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (entradas Apertura de Caja!C23=150, denominaciones→efectivo_contado=1150, C50=800 tarjetas, C53=1800 Z). Fórmulas: C48=IFERROR('Apertura de Caja'!C23,0); C49=IFERROR(C47-C48,0); C52=C49+C50+C51; C54=IFERROR(C52-C53,0)"
+  },
+  {
+   "caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10",
+   "ok": true,
+   "evidencia": "informe pycel del dry-run: 09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 con C53=1790 (resto igual); CF ámbar sobre C54 confirmada en el post-proceso del motor"
+  },
+  {
+   "caso": "Contador honesto con N/A: 25 tareas, 3 N/A, 22 ✓ → \"22 de 22\"",
+   "ok": true,
+   "evidencia": "informe pycel del dry-run: 01-apertura-cierre.xlsx:Apertura Barra Café:D40/F40 = \"22 de 22\" (numerador COUNTIFS exige texto en Tarea + ✓; denominador COUNTIF(Tarea,\"?*\")-COUNTIF(estado,\"N/A\"), y \"—\" SIGUE contando como pendiente por la regla §8)"
+  },
+  {
+   "caso": "07 con 8 tareas escritas (el kit lo tiene: Por Franja Horaria/Por Área/Por Perfil)",
+   "ok": true,
+   "evidencia": "informe pycel del dry-run: 07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 = 8 con 8 tareas escritas y ninguna marcada; denominador es fórmula COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\"), no clavado a 15; confirmado también que la columna «Tarea» no lleva placeholder — el aviso vive en la banda de sección (fila 5/12/19), evitando el bug TEC-R2-10"
+  },
+  {
+   "caso": "08 (apertura-cierre-negocio) sin ninguna tarea sin Responsable u Hora",
+   "ok": true,
+   "evidencia": "gate del motor: negocio_precargado.huecos = [] sobre 31 tareas; verificado a mano en 08-apertura-cierre-negocio.xlsx:Apertura del Negocio D5:E21 y Cierre del Negocio — Responsable=\"Encargado\" y Hora Límite en escalera 06:45→07:15 DESPUÉS de la apertura del local (regla §8 DOM-R2-08), sin celdas vacías"
+  },
+  {
+   "caso": "DV «✓,—,N/A» en las 32 hojas de checklist de los 11 ficheros, y bio anclada en las 11 hojas de Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "gate del motor: dv_y_bio.hojas_checklist=32, dv_incorrectas=[], instrucciones_con_bio=11, sin_bio=[]; verificado a mano en 09-apertura-cierre-caja.xlsx:Apertura de Caja DV(E5:E20)=\"✓,—,N/A\" y 01-apertura-cierre.xlsx:Instrucciones:B30 con la firma completa de John Guerrero"
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja: ya existe C48 «Fondo de caja inicial (−)» = IFERROR('Apertura de Caja'!C23,0) y C49 «Ventas en efectivo (contado − fondo)» = IFERROR(C47-C48,0); C52 TOTAL FACTURADO = C49+C50+C51; C54 DESCUADRE = C52-C53. El fondo ya no infla el descuadre (caso arqueo-cuadra→0)"
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:A41/B41/C41 = fila «0,02 €» insertada entre «0,05 €»(A40) y «0,01 €»(A42); C43 TOTAL EFECTIVO = SUM(C27:C42) incluye la nueva fila"
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Registro Mensual: cabecera G4=«Z del TPV», H4=«Descuadre»=IFERROR(F-G,0); antes G era Descuadre sin columna de Z. Fila TOTALES H36=SUMIF(H5:H35,\">0\")-SUMIF(H5:H35,\"<0\") (regla §8 DOM-R2-26)"
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Apertura de Caja:B7=«Anotar el fondo de caja en la celda verde de abajo» y C23=«Fondo de caja inicial (€)» (celda verde E8F5E9) con D23=«Se descuenta del efectivo en el Cierre de Caja»; existe la celda que antes faltaba"
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio D5:E21 y Cierre del Negocio: Responsable=«Encargado» y Hora Límite (06:45–07:15) en TODAS las filas; 0 huecos según el gate negocio_precargado"
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "resuelto",
+   "evidencia": "07-plantilla-personalizable.xlsx: denominador ya no clavado (F31=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\"), verificado con 8 tareas→8); las tres hojas están DIFERENCIADAS: Por Franja Horaria (APERTURA/SERVICIO/CIERRE), Por Área (COCINA/SALA/BARRA con Zona precargada), Por Perfil (COCINA/SALA/GERENCIA con Responsable precargado Jefe de Cocina/Jefe de Sala/Gerente)"
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "Jerarquía documentada en 01-apertura-cierre.xlsx:Instrucciones:B20-B26 («Se conecta con»: 08=marco del LOCAL, 01=DETALLE por área, 09=CAJA; «Orden de uso: local → áreas → caja. No se duplican»). No se ha verificado la reducción explícita en banda «→ ver 08/09» de un bloque tipo SISTEMAS dentro de las hojas de 01 (el patrón kit-tareas-base con «CIERRE GENERAL/CIERRE DE CAJA» no existe tal cual en cafetería); la solapa entre 01:Apertura Sala B23 «Verificar TPV/datáfono: cargado y funcionando» y 08:Apertura del Negocio B10 «Encender TPV/POS/datáfono» sigue existiendo como dos tareas distintas (verificar vs encender), lo cual es defendible pero no está remitido explícitamente en banda de sección como pide §8"
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:Instrucciones:B7 = «N/A = no aplica: SALE del total. «—» = no hecha: sigue contando como pendiente y baja el porcentaje» (regla §8 DOM-R2-02, ya no descuenta «—»), y confirmado con pycel (caso contador-honesto 22 de 22 con 3 N/A y 0 «—»)"
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:Apertura Cocina: rango contado B5:B33 (COUNTIFS/COUNTIF hasta fila 33) con 5 filas libres reales (filas 29-33) antes de la fila 35 de contador, frente a 1 fila libre original; Instrucciones:B12 dice «5 filas verdes libres DENTRO del rango»"
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "DV unificada «✓,—,N/A» tanto en 01-apertura-cierre.xlsx:Apertura Cocina (F6…) como en 09-apertura-cierre-caja.xlsx:Apertura de Caja (E5:E20); celdas editables verdes E8F5E9 presentes en 09 (C23 fondo) igual que en 01-07; cabeceras en paleta oscura unificada (09 A4=2D2D2D, 01 A4=333333) — ya no hay oro FFD700/1A1A1A frente a 2D2D2D"
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Instrucciones:B4-B22 es contenido PROPIO de caja (arqueo, recuento por denominaciones, Z del TPV, descuadre, Registro Mensual), ya no es el copia-pega de 08"
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:Instrucciones:B20-B26 bloque «Se conecta con» presente en los 11 ficheros (gate dv_y_bio confirma 11/11 Instrucciones); no se encontró ninguna referencia residual a «APPCC»/Pack APPCC en los 11 xlsx regenerados (grep sobre el corpus del kit) — nótese que en el fichero ORIGINAL de este hermano tampoco existía esa referencia rota al Pack APPCC (a diferencia de kit-tareas base), así que la parte «no manda a un documento inexistente» no aplicaba aquí de partida; lo que sí estaba roto (falta de jerarquía) queda resuelto"
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "03-tareas-manager.xlsx:Semanal Manager:E4=«Día», Mensual Manager:E4=«Cadencia»; 06-eventos-festivos.xlsx:San Valentín:E4=«Antelación», Brunch Dominical/Navidad/Temporada Terraza:E4=«Cuándo» — ya no hay «Hora Límite» genérico sobre columnas con días/periodicidades/hitos"
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "gate del motor: instrucciones_con_bio=11, sin_bio=[]; verificado a mano 01-apertura-cierre.xlsx:Instrucciones:B30 y 09-apertura-cierre-caja.xlsx:Instrucciones (fila con la firma) llevan la bio de John Guerrero, incluidos los 9 ficheros que originalmente no la tenían"
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "orden del gas",
+   "fichero": "01-apertura-cierre.xlsx:Apertura Cocina",
+   "hallazgo": "La banda «ENCENDIDO DE EQUIPOS» enciende primero el horno (fila 6) y la plancha/grill (fila 7) y sólo DESPUÉS la campana extractora (fila 8); no hay ningún paso de «comprobar gas» antes de encender los quemadores. Es el mismo patrón de riesgo que DOM-13 en el representante (acumulación de gas al encender equipos antes de ventilar/comprobar la instalación): el orden correcto es campana → comprobar gas → encender equipos.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "aceite en frío (freidora)",
+   "fichero": "01-apertura-cierre.xlsx:Cierre Cocina",
+   "hallazgo": "B16 «Vaciar y limpiar freidora (si aplica)» no incluye ninguna advertencia de temperatura; el equivalente DOM-27 del representante pide explícitamente manipular el aceite SOLO por debajo de 40 °C y nunca en caliente, por riesgo de quemadura al vaciar el cubo.",
+   "severidad": "media"
+  },
+  {
+   "tema": "registro de jornada",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "No existe ninguna tarea de cierre/validación del registro horario del equipo (diario ni mensual) en Diario Manager, Semanal Manager, Mensual Manager ni Handover Turno. Es obligación legal en España (registro de jornada RD-ley 8/2019) y el representante lo cubre (DOM-17: cerrar y validar el registro diario + archivar el mensual).",
+   "severidad": "alta"
+  },
+  {
+   "tema": "mermas",
+   "fichero": "02-partidas-cocina.xlsx:Calientes / Fríos / Pastelería Vitrina",
+   "hallazgo": "Ninguna de las tres hojas de cocina tiene tarea de «anotar mermas del día (producto, cantidad, motivo)» en el cierre, pese a manejar producto fresco de vida corta (fruta cortada, bollería, lácteos). Equivalente a DOM-18 del representante.",
+   "severidad": "media"
+  },
+  {
+   "tema": "alérgenos en eventos",
+   "fichero": "06-eventos-festivos.xlsx:San Valentín / Brunch Dominical",
+   "hallazgo": "Las tareas de confirmación de reserva («Publicar oferta en RRSS y aceptar reservas», «Confirmar reservas de brunch del domingo») no incluyen recoger alérgenos e intolerancias por escrito del cliente, a diferencia de DOM-19 en el representante («AL CONFIRMAR LA RESERVA»).",
+   "severidad": "media"
+  },
+  {
+   "tema": "vida útil de congelación",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "No hay ninguna tabla de vida útil de congelación por familia de producto (croissants, pan, fruta, salmón ahumado…); FIFO Semanal sólo dice «Revisar pan: congelar lo que no se usará» sin plazo. Equivalente a DOM-29 del representante.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "anisakis / pescado listo para consumo",
+   "fichero": "02-partidas-cocina.xlsx:Calientes / Fríos",
+   "hallazgo": "El kit maneja salmón ahumado (Calientes B8 «mise en place: bacon, huevos, salmón ahumado»; Brunch Dominical «pedido extra: huevos, aguacate, salmón, fruta») sin ninguna mención a la congelación previa exigida por el Reglamento (CE) 853/2004 para pescado destinado a consumirse sin cocción completa (ahumado en frío incluido). No hay tarea equivalente a la de anisakis del representante (DOM-02).",
+   "severidad": "media"
+  },
+  {
+   "tema": "fechas del calendario",
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual",
+   "hallazgo": "Faltan las mismas fechas que el representante identificó como huecos (DOM-20): Día del Padre, comuniones (abr-jun), 15 de agosto (Asunción), puente 6-8 de diciembre. El calendario cubre 21 fechas fijas más 5 filas libres, pero ninguna de esas cuatro está.",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": false,
+ "notas": [
+  "Dry-run con --solo motor exit 0; idempotencia 0 diferencias entre 1.ª y 2.ª pasada; inject_cache 141 fórmulas con valor, 0 fallos pycel.",
+  "censo-entregables.py --only <copia> --fail --quiet exit 0, 11/11 ficheros censados sin defectos.",
+  "Los 11 ficheros están DIFERENTES (shasum) frente a astro-site/public/dl/kit-tareas-cafeteria — este kit es «▸ completo» (01-09+BONUS), no un hermano de solo-08/09, así que tocar los 11 es lo esperado por SPEC §5; no hay comparación byte-a-byte contra el original que deba salir intacta.",
+  "Los 14 hallazgos DOM cuyo texto empieza literalmente por «MOTOR» en el R1 fueron los únicos verificados uno a uno contra el fichero regenerado, tal y como pide la tarea; TEC-*/COM-* del R1 no llevan el prefijo «MOTOR» en el campo hallazgo (aunque describen el mismo defecto en detalle Excel/producto) y no se han recorrido exhaustivamente por separado — quedan cubiertos indirectamente por los gates del motor (DV, bio, idempotencia, pycel) y por la verificación de DOM-01/03/04/05/06/07/09/10/11/21/22/23/25/30.",
+  "DOM-09 se marca «parcial»: la jerarquía está documentada en Instrucciones pero no hay una remisión explícita en banda de sección dentro de las hojas de 01 (patrón SISTEMAS→ver 08/09 de §8); es un matiz de forma, no rompe nada y no afecta a los casos de §6.",
+  "No se ha tocado astro-site/public/dl/** en ningún momento (todo el trabajo corrió en la copia de scratchpad vía CLAUDE_SCRATCHPAD). Ningún git add/commit.",
+  "istats antes del barrido: 53.9-55.0 °C, muy por debajo del umbral de 65 °C; no hizo falta pausar."
+ ]
+}

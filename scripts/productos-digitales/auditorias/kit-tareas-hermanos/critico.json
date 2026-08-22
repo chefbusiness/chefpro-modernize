@@ -1,0 +1,143 @@
+{
+ "listos_para_real": [
+  "kit-tareas-cafeteria",
+  "kit-tareas-pizzeria",
+  "kit-tareas-hamburgueseria",
+  "kit-tareas-catering",
+  "kit-tareas-chocolateria",
+  "kit-tareas-hotel",
+  "kit-tareas-restaurante-creativo"
+ ],
+ "bloqueados": [
+  {
+   "pid": "kit-tareas-bar",
+   "motivo": "exit 1. (1) IDEMPOTENCIA ROTA CON CORRUPCIÓN ACUMULATIVA: 50 diferencias entre 1ª y 2ª pasada; el nombre del kit CRECE en cada ejecución — 01-apertura-cierre.xlsx:Instrucciones:B2 pasa de 'Apertura y Cierre del Negocio — Bar / Cocktails' a '… — Apertura y Cierre · Bar / Cocktails', y lo mismo en el pie de 20+ hojas (01-apertura-cierre.xlsx:Apertura Barra:A47, 02-partidas-cocina.xlsx:Vinos y Bodega:A27, 04-tareas-perfiles.xlsx:Bartender:A34…). Correr el motor dos veces sobre producción deja títulos y pies basura. (2) CAUSA RAÍZ: contexto.f_negocio='01-apertura-cierre.xlsx' en vez de '08-apertura-cierre-negocio.xlsx' (motor.contexto()). (3) DOM-06 NO RESUELTO por eso: verificado a mano sobre la copia de trabajo, 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' D5:E22 vacías en las 18 tareas. (4) FALSO VERDE: gates.negocio_precargado reporta fichero '01-apertura-cierre.xlsx', 48 tareas, 0 huecos — auditó el fichero equivocado. (5) BONUS-02-calendario-anual-tareas.xlsx queda fuera de alcance (10/11 tocados) cuando el resto de kits «▸ completos» tocan 11."
+  },
+  {
+   "pid": "kit-tareas-dark-kitchen",
+   "motivo": "exit 0 ENGAÑOSO — no ejecutar. Mismo bug de detección que bar: contexto.f_negocio='01-apertura-cierre.xlsx' en vez de '08-apertura-cierre-negocio.xlsx'. Verificado a mano sobre la copia de trabajo: DOM-06 NO RESUELTO (08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' D5:E22 y 'Cierre del Negocio' D5:E19 vacías en las 18+15 tareas), gate negocio_precargado en FALSO VERDE ('01-apertura-cierre.xlsx', 48 tareas, 0 huecos) y DOM-09 con la jerarquía INVERTIDA en 'Se conecta con' (las Instrucciones presentan 01 como «marco del LOCAL» y nunca listan 08). Además DOM-01 parcial: 09-apertura-cierre-caja.xlsx:'Cierre de Caja':B10 sigue diciendo 'Total facturado = efectivo + tarjetas + otros' cuando la fórmula ya descuenta el fondo."
+  },
+  {
+   "pid": "kit-tareas-heladeria",
+   "motivo": "exit 1 por idempotencia: 1 diferencia en la 2ª pasada — 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' cambia alturas de fila entre pasadas (el informe trunca el detalle a 300 caracteres y no se ve qué fila). El resto está verde (censo 0, DV 0 incorrectas, bio 2/2, cache 0 fallos, arqueo 0/+10 y contador '15 de 15' OK) y f_negocio SÍ se detecta bien (08). Es el único fallo, pero la idempotencia es gate duro: hay que ver el diff completo antes de aplicar, porque una re-aplicación que reajusta alturas puede estar reinsertando o reformateando filas."
+  }
+ ],
+ "motor_no_resuelto": [
+  "DOM-06 — NO RESUELTO en kit-tareas-bar y kit-tareas-dark-kitchen: 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' D5:E22 y 'Cierre del Negocio' D5:E19 sin Responsable ni Hora Límite tras el motor (causa: f_negocio mal detectado como 01-apertura-cierre.xlsx; el gate negocio_precargado da falso verde porque audita 01)",
+  "DOM-01 — PARCIAL en kit-tareas-dark-kitchen: fórmulas correctas (C48/C49/C52/C54) pero el texto de la tarea 09-apertura-cierre-caja.xlsx:'Cierre de Caja':B10 sigue diciendo 'Total facturado = efectivo + tarjetas + otros' sin '(efectivo contado − fondo)'; motor.py no toca ese literal",
+  "DOM-09 — PARCIAL en kit-tareas-dark-kitchen: bloque 'Se conecta con' con los roles invertidos (presenta 01 como marco del LOCAL y nunca menciona 08-apertura-cierre-negocio.xlsx)",
+  "DOM-09 — PARCIAL en kit-tareas-pizzeria: motor.colapsar_duplicados reconoce las bandas por rótulo LITERAL ('CIERRE DE CAJA'/'CIERRE GENERAL'/'SISTEMAS', tomados del representante); en pizzería las secciones se llaman 'SALA'/'TERRAZA'/'DELIVERY Y CAJA'/'BAÑOS', así que no colapsa nada y quedan duplicadas y CONTADAS 01-apertura-cierre.xlsx:'Cierre Sala':B16 'Cuadrar caja del día' (duplica 09 entero) y B19 'Activar alarma y cerrar' (duplica 08:'Cierre del Negocio':B16), mientras Instrucciones promete 'No se duplican'",
+  "DOM-09 — PARCIAL en kit-tareas-cafeteria: jerarquía documentada en 01-apertura-cierre.xlsx:Instrucciones:B20-B26 pero sin la remisión en banda de sección '→ ver 08/09' que pide §8; sigue viva la solapa entre 01:'Apertura Sala':B23 (verificar TPV/datáfono) y 08:'Apertura del Negocio':B10 (encender TPV/POS/datáfono)",
+  "TRANSVERSAL (no es un id de R1; afecta a los 11 kits, representante incluido) — el mensaje de error de la validación de datos que escribe motor.py (~752-753, normalizar_checklist) dice 'Las marcadas N/A o — salen del total', que CONTRADICE la regla vigente §8/DOM-R2-02 ya implementada en la fórmula (sólo N/A sale; '—' sigue contando como pendiente). La fórmula es correcta; el texto que ve el cliente, no",
+  "TRANSVERSAL en los 5 kits de alcance «solo 08/09» (catering, chocolatería, heladería, hotel, restaurante-creativo) — el motor deja el producto CON DOS REGLAS DISTINTAS: comprobado en astro-site/public/dl/**, hoy los 10-18 ficheros de cada uno usan la DV '\"✓,✗,—\"' y contadores sin N/A (p.ej. kit-tareas-heladeria/01-apertura-cierre.xlsx:Apertura:C29='=COUNTIF(E6:E28,\"✓\")' y E29='=COUNTIF(B6:B28,\"?*\")'); tras el motor sólo 08/09 (18/19 en hotel, 10/11 en creativo) pasan a '\"✓,—,N/A\"' con denominador honesto. El cliente verá dos desplegables y dos semánticas de conteo en el mismo kit. Los informes lo registran (gates.dv_y_bio.listas_dv_del_producto = ['\"✓,—,N/A\"','\"✓,✗,—\"'] en los cinco) y aviso_dv_mezcladas=[] no lo detecta"
+ ],
+ "contenido_por_kit": [
+  {
+   "pid": "kit-tareas-cafeteria",
+   "altas": [
+    "Orden del gas inseguro — 01-apertura-cierre.xlsx:'Apertura Cocina': se enciende horno (fila 6) y plancha/grill (fila 7) ANTES de la campana extractora (fila 8) y no hay paso de comprobar gas. Orden correcto: campana → comprobar gas → encender equipos",
+    "Registro de jornada ausente (obligación legal, RD-ley 8/2019) — 03-tareas-manager.xlsx: ninguna hoja (Diario/Semanal/Mensual/Handover) cierra ni valida el registro horario del equipo"
+   ],
+   "medias": [
+    "Aceite en frío — 01-apertura-cierre.xlsx:'Cierre Cocina':B16 'Vaciar y limpiar freidora' sin advertencia de manipular sólo por debajo de 40 °C",
+    "Mermas — 02-partidas-cocina.xlsx:'Calientes'/'Fríos'/'Pastelería Vitrina': ninguna tarea de anotar mermas del día (producto, cantidad, motivo) pese a manejar fruta cortada, bollería y lácteos",
+    "Alérgenos en eventos — 06-eventos-festivos.xlsx:'San Valentín'/'Brunch Dominical': al confirmar reserva no se recogen alérgenos ni intolerancias por escrito",
+    "Anisakis / salmón ahumado — 02-partidas-cocina.xlsx:'Calientes':B8 y 'Fríos': sin mención a la congelación previa que exige el Rgto. (CE) 853/2004 para pescado consumido sin cocción completa",
+    "(baja) Vida útil de congelación por familia — 05-tareas-semanales-mensuales.xlsx: 'FIFO Semanal' dice 'congelar lo que no se usará' sin plazos",
+    "(baja) Calendario — BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual': faltan Día del Padre, comuniones (abr-jun), 15 de agosto y puente 6-8 de diciembre"
+   ]
+  },
+  {
+   "pid": "kit-tareas-pizzeria",
+   "altas": [
+    "Falta la hoja 'Trimestral y Anual' — 05-tareas-semanales-mensuales.xlsx sólo tiene Inventario Diario / Limpieza Semanal / FIFO Semanal / Mantenimiento Mensual. No existen DDD por empresa autorizada, limpieza de conductos de extracción (RITE), revisión de gas por instalador autorizado, legionela, seguro de RC ni revisión TPV/Verifactu; además 'Extintor: presión, caducidad' y 'Campana: filtros, motor' figuran como MENSUALES cuando por normativa son anuales/semestrales"
+   ],
+   "medias": [
+    "Orden campana/gas — 01-apertura-cierre.xlsx:'Apertura Cocina' enciende el horno de leña/piedra en la tarea 1 sin encender antes la campana (sólo aparece en 'Cierre Cocina', fila 15) ni comprobar gas, y el kit contempla horno de gas (05:'Mantenimiento Mensual':B9)",
+    "Higiene personal al final — 01-apertura-cierre.xlsx:'Apertura Cocina':B27 'Lavarse manos y colocarse uniforme' está en la fila 27 de 29, después de manipular masa, salsa y mozzarella",
+    "Registro de mermas diario — no existe en 01:'Cierre Cocina' ni en 02-partidas-cocina.xlsx; lo más cercano es 03:'Semanal Manager':B9, evaluación semanal sin producto/cantidad/motivo",
+    "Registro de jornada — 03-tareas-manager.xlsx: ninguna de las 4 hojas cierra/valida el registro horario ni archiva el mensual",
+    "Alérgenos al confirmar reserva — 06-eventos-festivos.xlsx: ninguna de las 4 hojas tiene bloque 'AL CONFIRMAR LA RESERVA' (alérgenos por escrito, señal, precio por comensal, cancelación)",
+    "Calendario — BONUS-02-calendario-anual-tareas.xlsx (filas 5-21): faltan Día del Padre, comuniones abr-jun, 15 de agosto, 1 de noviembre y puente 6-8 de diciembre",
+    "(baja) Cámaras al abrir — 01:'Apertura Cocina' no comprueba que las cámaras funcionaron toda la noche ni registra temperatura",
+    "(baja) Vida útil de congelación — 05-tareas-semanales-mensuales.xlsx sin tabla por familia; 01:'Cierre Cocina':B25 sólo dice 'Descongelar lo necesario para mañana'",
+    "(baja) Lavado de hoja — 02-partidas-cocina.xlsx:'Complementaria':B6 (ensaladas base) sin dosis de desinfección (~70 ppm, 5 min) ni aclarado"
+   ]
+  },
+  {
+   "pid": "kit-tareas-hamburgueseria",
+   "altas": [
+    "Aceite de freidora manipulado en caliente, y el kit se contradice a sí mismo — 01-apertura-cierre.xlsx:'Cierre Cocina':B13 'Filtrar o cambiar aceite de freidora' va ANTES de B14 'Apagar freidora, plancha, horno, campana', mientras 02-partidas-cocina.xlsx:'Freidora':B18-B19 sí lo hace bien (apagar y dejar enfriar → filtrar)"
+   ],
+   "medias": [
+    "Higiene personal al inicio — 01-apertura-cierre.xlsx:'Apertura Cocina':B29 'Lavarse manos, uniforme completo' es la penúltima tarea de 30, no la primera",
+    "Orden campana/gas — 01:'Apertura Cocina' enciende plancha/grill (B6), freidora (B7) y verifica aceite (B8) antes de la campana (B9), y no hay paso de comprobar gas",
+    "Registro de mermas — no existe tarea diaria en 01, 02 ni 03 (sólo 'Anotar faltantes para pedido' en 03:'Diario Manager':B19 y evaluación semanal en 03:'Semanal Manager':B9)",
+    "Cámaras al abrir — 01:'Apertura Cocina' no verifica el funcionamiento nocturno; el único control está en el cierre (01:'Cierre Cocina':B15)",
+    "Registro de jornada — 03-tareas-manager.xlsx:'Diario Manager'/'Mensual Manager' no cierran ni archivan el registro horario",
+    "Falta hoja 'Trimestral y Anual' — 05-tareas-semanales-mensuales.xlsx sólo tiene Instrucciones + Limpieza Semanal + FIFO Semanal + Mantenimiento Mensual (sin DDD, conductos, extintores/BIE, gas, legionela, seguro, TPV/Verifactu)",
+    "(baja) Vida útil de congelación por familia — 05:'FIFO Semanal' controla fechas de fresco pero no plazos de congelado",
+    "(baja) Calendario — BONUS-02-calendario-anual-tareas.xlsx sigue en 17 fechas (filas 5-21), sin Día del Padre, comuniones, 15 de agosto, 1 de noviembre ni puente de diciembre",
+    "(baja) Alérgenos en eventos — 06-eventos-festivos.xlsx:'Noche Fútbol'/'Burger Week'/'Navidad' sin bloque de confirmación de reserva (sector mayoritariamente walk-in/delivery)"
+   ]
+  },
+  {
+   "pid": "kit-tareas-dark-kitchen",
+   "altas": [
+    "Orden de seguridad del gas invertido — 01-apertura-cierre.xlsx:'Apertura Cocina':B6 'Encender todos los equipos: plancha, horno, freidora, fogones' va ANTES de B10 'Verificar gas: llaves abiertas, sin fugas'",
+    "Pescado crudo sin congelación previa (anisakis) — 02-partidas-cocina.xlsx:'Estación Fría' prepara arroz de sushi y toppings tipo poke sin ninguna tarea de congelación ≥24 h a −20 °C (Rgto. CE 853/2004)",
+    "Alérgenos ausentes del flujo de delivery (legal, RD 126/2015) — ninguna tarea de 01/02/03/06 contempla declarar alérgenos por plato en las fichas de Glovo/UberEats/JustEat; el único rastro es BONUS-01-briefing-servicio.xlsx:B19 'Reservas con alérgenos declarados', heredado de restaurante con sala",
+    "Calendario redactado para restaurante con sala, no para dark kitchen — BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual' habla de 'Apertura terraza', 'Cierre terraza' y 'Menú de grupo, reservas grandes' (fila 19) en un negocio 100 % delivery, y le faltan Día del Padre, comuniones, 15 de agosto, 1 de noviembre y puente de diciembre"
+   ],
+   "medias": [
+    "Registro de jornada — 03-tareas-manager.xlsx:'Diario Manager'/'Mensual Manager' no cierran, validan ni archivan el registro horario del equipo",
+    "Temperatura del aceite al cambiarlo — 05-tareas-semanales-mensuales.xlsx:'FIFO Semanal':B14 y 'Mantenimiento Mensual':B7, y 03-tareas-manager.xlsx:'Handover Turno':B12, no indican hacerlo sólo por debajo de 40 °C",
+    "Registro de mermas — 01-apertura-cierre.xlsx:'Cierre Cocina' y 02-partidas-cocina.xlsx no piden anotar mermas del día (producto, cantidad, motivo)",
+    "Vida útil de congelación por familia — 05-tareas-semanales-mensuales.xlsx no tiene tabla, aunque 01:'Cierre Cocina' manda 'Congelar lo que no se usará mañana'"
+   ]
+  },
+  {
+   "pid": "kit-tareas-bar",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — el informe del hermano llegó truncado justo antes de su bloque contenido_pendiente; sólo se recibieron sus casos §6 y sus veredictos DOM. Reclamar su contenido_pendiente antes de la mini-ronda de contenido"
+   ]
+  },
+  {
+   "pid": "kit-tareas-catering",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — informe del hermano no recibido (truncado). Gates del motor verdes (alcance 2 de 11 ficheros); falta su lectura de contenido"
+   ]
+  },
+  {
+   "pid": "kit-tareas-chocolateria",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — informe del hermano no recibido (truncado). Gates del motor verdes (alcance 2 de 11 ficheros); falta su lectura de contenido"
+   ]
+  },
+  {
+   "pid": "kit-tareas-heladeria",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — informe del hermano no recibido (truncado). Gates verdes salvo la idempotencia (1 diferencia); falta su lectura de contenido"
+   ]
+  },
+  {
+   "pid": "kit-tareas-hotel",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — informe del hermano no recibido (truncado). Gates del motor verdes (alcance 18/19 de 19 ficheros); falta su lectura de contenido"
+   ]
+  },
+  {
+   "pid": "kit-tareas-restaurante-creativo",
+   "altas": [],
+   "medias": [
+    "SIN DATOS — informe del hermano no recibido (truncado). Gates del motor verdes (alcance 10/11 de 13 ficheros); falta su lectura de contenido"
+   ]
+  }
+ ],
+ "recomendacion": "1) NO lanzar la tanda entera: arreglar primero motor.contexto(), que detecta f_negocio='01-apertura-cierre.xlsx' en bar y dark-kitchen — deja DOM-06 sin aplicar sobre el 08 real, invierte la jerarquía de 'Se conecta con' y, en bar, hace crecer el nombre del kit en cada pasada (50 diferencias de idempotencia: corrupción acumulativa de títulos y pies). 2) Endurecer el gate negocio_precargado para que EXIJA que el fichero auditado sea el 08/18/10 y falle si no lo es: hoy dio verde sobre el fichero equivocado y por eso dark-kitchen salió exit 0 estando roto. 3) Antes de tocar los 5 kits de alcance «solo 08/09» (catering, chocolatería, heladería, hotel, restaurante-creativo), decisión de John: el motor los deja con dos desplegables y dos reglas de conteo dentro del mismo producto (08/09 con ✓,—,N/A y denominador honesto; los otros 9-17 ficheros con ✓,✗,— y COUNTIF sin N/A) — o se extiende la normalización a todo el kit, o se deja 08/09 como está. 4) Corregir el mensaje de error de la DV que escribe motor.py (~752): afirma que «—» sale del total y la fórmula vigente dice lo contrario; afecta a los 11 kits, representante incluido. 5) Con eso hecho, ejecutar en real cafetería, pizzería y hamburguesería (verdes y verificados a mano), reabrir el diff completo de idempotencia de heladería y reclamar los informes de contenido de los 5 hermanos truncados antes de programar la mini-ronda de contenido, donde ya hay 8 riesgos altos vivos (orden del gas, anisakis, alérgenos en delivery, aceite en caliente, registro de jornada y mantenimiento legal trimestral/anual)."
+}

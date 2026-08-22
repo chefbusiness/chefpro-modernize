@@ -1,0 +1,182 @@
+{
+ "bloquea_real": false,
+ "pid": "kit-tareas-heladeria",
+ "dryrun_exit": 1,
+ "censo_exit": 0,
+ "ficheros_tocados": 2,
+ "ficheros_intactos": 9,
+ "casos6": [
+  {
+   "caso": "arqueo fondo 150 / efectivo 1.150 / tarjetas 800 / Z 1.800 → 0",
+   "ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54=IFERROR(C52-C53,0); demo pycel del propio motor.py: Apertura de Caja!C23=150, recuento=1.150, C50=800, C53=1.800 → C54=0 (esperado 0, obtenido 0)"
+  },
+  {
+   "caso": "mismo arqueo con Z 1.790 → +10 y CF ámbar",
+   "ok": true,
+   "evidencia": "demo pycel del motor: mismas entradas salvo C53=1.790 → C54=10 (esperado 10, obtenido 10). CF ámbar no verificada por color pero la fórmula que la dispara (C54<>0) es la que da el resultado correcto"
+  },
+  {
+   "caso": "contador honesto con N/A (equivalente 18 tareas/3 N/A/15✓ → 15 de 15)",
+   "ok": true,
+   "evidencia": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29 — demo del motor con 18 tareas, 3 N/A, 15 ✓ → '15 de 15' (esperado='15 de 15', obtenido='15 de 15'). Fórmula inspeccionada en 09:Cierre de Caja:C23='=COUNTIFS(B5:B21,\"?*\",E5:E21,\"✓\")', E23='=COUNTIF(B5:B21,\"?*\")-COUNTIF(E5:E21,\"N/A\")' — NO resta '—' (regla §8 correcta)"
+  },
+  {
+   "caso": "07 con 8 tareas escritas → 'x de 8'",
+   "ok": true,
+   "evidencia": "NO APLICA a este kit: main.py detecta el kit como 'solo 08/09' (log '2/7 · post-proceso': '07-plantilla-personalizable.xlsx: FUERA DE ALCANCE (intacto)'). shasum de 07 idéntico al de astro-site/public/dl/kit-tareas-heladeria/07-plantilla-personalizable.xlsx — el motor no lo toca en este hermano, así que el caso no es demostrable aquí y no debe considerarse fallo"
+  },
+  {
+   "caso": "08 sin tareas sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "gate 'negocio_precargado' del informe: {tareas: 33, huecos: []}. Confirmado celda a celda: 08:Apertura del Negocio filas 5-22 con C='Encargado'/'Responsable de caja' y D con hora ('07:00'…) en todas; 08:Cierre del Negocio ídem con D='Cierre'"
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist",
+   "ok": true,
+   "evidencia": "gate 'dv_y_bio': hojas_checklist=4, dv_incorrectas=[]. Confirmado con openpyxl en las 4 hojas en alcance: 08:Apertura del Negocio!F5:F27, 08:Cierre del Negocio!F5:F24, 09:Apertura de Caja!E5:E20, 09:Cierre de Caja!E5:E21 — las cuatro con formula1='\"✓,—,N/A\"'. (Las 9 hojas fuera de alcance del kit siguen con la lista vieja '✓,✗,—', que el propio gate señala como AVISO informativo, no como fallo — coherente con que el motor solo tocó 08/09)"
+  },
+  {
+   "caso": "bio en todas las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "gate 'dv_y_bio': instrucciones_con_bio=2/2, sin_bio=[]. Confirmado: 08-apertura-cierre-negocio.xlsx:Instrucciones:B42 y 09-apertura-cierre-caja.xlsx:Instrucciones:B53 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es', encima de la línea de versión"
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01/TEC-01/COM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C48=IFERROR('Apertura de Caja'!C23,0) [fondo], C49=IFERROR(C47-C48,0) [ventas efectivo], C52=C49+C50+C51 [total facturado], C54=IFERROR(C52-C53,0) [descuadre]. El fondo ya no se hardcodea (no aparece la coordenada literal en el texto de la tarea, solo 'la celda verde de abajo')."
+  },
+  {
+   "id": "DOM-03/COM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09:Cierre de Caja:A41='0,02 €', B41=0, C41='=B41*0.02'; TOTAL EFECTIVO C43='=SUM(C27:C42)' ya incluye la fila nueva."
+  },
+  {
+   "id": "TEC-20",
+   "veredicto": "resuelto",
+   "evidencia": "09:Cierre de Caja — DV whole ≥0 en B27:B42 (excepto separadores), number_format de B27='0'."
+  },
+  {
+   "id": "DOM-04/TEC-04/COM-14",
+   "veredicto": "resuelto",
+   "evidencia": "09:Registro Mensual:G4='Z del TPV' antes de H4='Descuadre'; H5='=IFERROR(F5-G5,0)' repetido en las 31 filas."
+  },
+  {
+   "id": "TEC-05",
+   "veredicto": "resuelto",
+   "evidencia": "09:Registro Mensual:B36='=IFERROR(AVERAGEIF(B5:B35,\">0\"),0)' — 'Fondo Apertura' ya no se suma, es el promedio; nota A37 lo explica."
+  },
+  {
+   "id": "DOM-05/COM-15",
+   "veredicto": "resuelto",
+   "evidencia": "09:Apertura de Caja:B7='Anotar el fondo de caja en la celda verde de abajo' (sin coordenada hardcodeada) apuntando a C23 ('Fondo de caja inicial (€)')."
+  },
+  {
+   "id": "DOM-06/TEC-06/COM-10",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx en las 33 tareas (18 apertura + 15 cierre) C y D/E precargados; gate negocio_precargado huecos=[]."
+  },
+  {
+   "id": "DOM-07/TEC-02/COM-05/TEC-13/COM-16 (07 plantilla)",
+   "veredicto": "no aplica",
+   "evidencia": "07-plantilla-personalizable.xlsx FUERA DE ALCANCE en este kit ('solo 08/09'); shasum idéntico al fichero LIVE. El motor de este hermano no toca 07, así que estos hallazgos no son evaluables aquí."
+  },
+  {
+   "id": "DOM-09/TEC-14/COM-20/DOM-23 (jerarquía, se conecta con)",
+   "veredicto": "resuelto",
+   "evidencia": "08:Instrucciones:B36='▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.' y 09:Instrucciones:B47 con la remisión recíproca a 08."
+  },
+  {
+   "id": "DOM-10/TEC-09/COM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09:Cierre de Caja:C23='=COUNTIFS(B5:B21,\"?*\",E5:E21,\"✓\")', E23='=COUNTIF(B5:B21,\"?*\")-COUNTIF(E5:E21,\"N/A\")' — regla §8 (solo resta N/A, no '—') aplicada, no la regla vieja del SPEC original."
+  },
+  {
+   "id": "DOM-11/TEC-11/COM-17 (filas libres)",
+   "veredicto": "parcial",
+   "evidencia": "Contenido correcto: log '«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)'. PERO la 2.ª pasada de idempotencia cambia la altura de la fila 21 de 08:Apertura del Negocio (24.0 → None, vuelve al alto por defecto de Excel) — comparado directamente con openpyxl entre 1.ª y 2.ª pasada. Es un defecto real del motor (no idempotente en alturas de filas libres), aunque no afecta al fichero entregado en una sola pasada."
+  },
+  {
+   "id": "DOM-21/COM-19/COM-11/COM-12/TEC-08 (molde ▸ 08/09)",
+   "veredicto": "resuelto",
+   "evidencia": "DV '✓,—,N/A' confirmada en las 4 hojas de 08/09; contador agrupado con etiqueta fusionada presente (log); columna Notas conservada (G4='Notas' en ambos ficheros)."
+  },
+  {
+   "id": "DOM-22/TEC-12 (Instrucciones propias de caja)",
+   "veredicto": "resuelto",
+   "evidencia": "09:Instrucciones tiene bloques propios de caja (B6 arqueo diario, B10 fondo, B16 fórmula del fondo, B21/B22 registro mensual) distintos de los de 08, ya no copia-pega."
+  },
+  {
+   "id": "DOM-25/TEC-10 (cabecera Hora Límite → Cuándo)",
+   "veredicto": "resuelto",
+   "evidencia": "08:Apertura del Negocio:E4='Hora Límite' (con horas reales tipo '07:00'); 08:Cierre del Negocio:E4='Cuándo' (con 'Cierre' literal); mismo patrón en 09 Apertura/Cierre de Caja."
+  },
+  {
+   "id": "DOM-30/COM-13 (bio anclada)",
+   "veredicto": "resuelto",
+   "evidencia": "08:Instrucciones:B42 y 09:Instrucciones:B53 con la bio de John Guerrero encima de la versión."
+  },
+  {
+   "id": "TEC-23 (protección de hojas)",
+   "veredicto": "resuelto",
+   "evidencia": "ws.protection.sheet=True y password=None en las 4 hojas de checklist de 08/09 (verificado con openpyxl)."
+  },
+  {
+   "id": "TEC-18 (alturas de fila sin cortar / idempotencia)",
+   "veredicto": "no resuelto",
+   "evidencia": "El propio dry-run del motor falla su gate de idempotencia: 'diferencias 1.ª vs 2.ª pasada: 1' en 08:Apertura del Negocio. Diff directo (openpyxl, 1.ª pasada vs 2.ª pasada): fila 21 pasa de altura 24.0 a None. No corta texto en la entrega de una sola pasada, pero rompe la garantía de reconstrucción idempotente que exige la arquitectura del paquete."
+  },
+  {
+   "id": "TEC-24/COM-25 (impresión BONUS)",
+   "veredicto": "no aplica",
+   "evidencia": "Los dos BONUS están FUERA DE ALCANCE en este kit ('solo 08/09'); shasum idéntico al LIVE, el motor no los toca aquí."
+  },
+  {
+   "id": "DOM-14 (objetivo de temperatura + lectura)",
+   "veredicto": "parcial",
+   "evidencia": "Se aplica mecánicamente (08:Apertura del Negocio:B21 pasó de 'Comprobar temperaturas de todas las vitrinas' a '...(refrigeración 0-4 °C) — anota la lectura: ____ °C'), PERO el valor 0-4 °C es incorrecto para vitrinas de heladería: el propio 01-apertura-cierre.xlsx:Apertura:B6 de este mismo kit dice 'verificar temperatura -14°C/-12°C' para las mismas vitrinas. motor.py:925 hardcodea OBJ_FRIO=' (refrigeración 0-4 °C)' para cualquier match de 'vitrina/expositor/mural' sin distinguir vitrina de sala (0-4°C) de vitrina de exposición de helado (-12/-14°C) — ver contenido_pendiente."
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Objetivo de temperatura erróneo para vitrinas de helado",
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "hallazgo": "El motor (DOM-14/§2.9) inyectó '(refrigeración 0-4 °C)' en 'Comprobar temperaturas de todas las vitrinas' (Apertura del Negocio:B21). 0-4 °C es temperatura de vitrina/nevera de sala, no de vitrina de exposición de helado, que trabaja en torno a -12/-14 °C. El propio kit se contradice: 01-apertura-cierre.xlsx:Apertura:B6 pide 'verificar temperatura -14°C/-12°C' para la misma vitrina, y 01:Cierre:B7 dice 'Pasar vitrinas a modo conservación -18°C'. Un empleado que siga la lectura de 08 registrará una temperatura fuera de rango como si fuera correcta.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "Tarea de cierre de temperatura sin objetivo ni hueco de lectura",
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "hallazgo": "Cierre del Negocio:B19 'Registrar temperaturas de cierre' no lleva ni el objetivo ni '____ °C' que sí tiene la tarea equivalente de apertura (B21). El texto no menciona 'vitrina/cámara' explícitamente así que el patrón RX_EQUIPO_FRIO del motor no la detecta y la deja sin completar — inconsistencia entre apertura y cierre del mismo fichero.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Registro de jornada del equipo ausente",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "No hay ninguna tarea de 'cerrar/validar el registro diario de jornada' ni 'archivar los registros de jornada del mes' (equivalente a DOM-17 del kit base). Es una obligación legal (registro horario, RDL 8/2019) que sí se resolvió en el kit representante y aquí no aparece en ninguna de las 4 hojas de 03-tareas-manager.xlsx (Diaria/Semanal/Mensual/Handover).",
+   "severidad": "media"
+  },
+  {
+   "tema": "Bloque 'al confirmar la reserva' ausente en eventos",
+   "fichero": "06-eventos-temporada.xlsx",
+   "hallazgo": "No existe un bloque equivalente a 'AL CONFIRMAR LA RESERVA' (alérgenos/intolerancias por escrito, señal, precio por persona, condiciones de cancelación) para eventos privados de heladería (cumpleaños, catering de tarta helada, etc.) — DOM-19 del kit base. Lo único relacionado con alérgenos en este fichero es una línea de formación de equipo en 'Temporada Baja' (B15), no un checklist de confirmación de evento.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Sin tarea de mantenimiento/descalcificación de café si la heladería sirve bebidas calientes",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "No se encontró ninguna mención a 'café', 'cafetera' o 'descalcificar' en todo el kit, así que no aplica directamente el hallazgo DOM-15 (backflush del grupo de café) del representante. Si el negocio real vende café (muy común en heladerías con terraza), falta esa tarea de mantenimiento; si no vende café, no hay nada que corregir. Se deja anotado para que el equipo de contenido lo confirme con el catálogo del kit.",
+   "severidad": "baja"
+  }
+ ],
+ "notas": [
+  "dry-run exit=1 SOLO por el gate de idempotencia (1 diferencia de altura de fila, fila 21 de 08:Apertura del Negocio, 24.0→None entre 1.ª y 2.ª pasada del motor); todos los demás gates internos del motor (inject_cache 4+95 fórmulas, data_only 85/85 sin fallos, pycel §6, DV, bio, precarga 08, censo) están en verde.",
+  "censo-entregables.py --only <copia> --fail --quiet: exit 0, 11/11 ficheros censados, 0 defectos.",
+  "Comparación byte a byte (shasum -a 256) de los 9 ficheros fuera de alcance (01-07 + BONUS-01/02) contra astro-site/public/dl/kit-tareas-heladeria/: idénticos en los 9; solo 08 y 09 cambiaron, como corresponde a un kit 'solo 08/09'.",
+  "El defecto de idempotencia (altura de fila 21 tras una 2.ª pasada) es un bug real y genérico del motor.py compartido (afecta potencialmente a los demás hermanos con 08/09), pero NO corrompe el fichero que se entrega en una sola pasada (que es como se genera y publica siempre): no toca fórmulas, DV, cache ni censo. Por eso bloquea_real=false, pero se deja documentado como hallazgo MOTOR sin resolver (TEC-18) para que se corrija antes de dar la familia por cerrada.",
+  "El hallazgo de contenido más serio es el de temperatura de vitrinas (0-4°C inyectado por el motor en 08 vs -12/-14°C que el propio kit ya usa correctamente en 01): es un caso de plantilla genérica de motor pisando contenido de sector — vale la pena que quien mantenga motor.py añada una excepción o parametrización por sector para OBJ_FRIO cuando el texto ya viene de un kit con vitrinas de exposición de helado.",
+  "No se ha modificado ningún fichero de astro-site/public/dl/**; todo el trabajo se hizo sobre copias en el scratchpad (CLAUDE_SCRATCHPAD=…/propio-heladeria). No se ha hecho git add/commit."
+ ]
+}

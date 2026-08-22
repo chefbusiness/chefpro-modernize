@@ -1,0 +1,188 @@
+{
+ "pid": "kit-tareas-hamburgueseria",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 11,
+ "ficheros_intactos": 0,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra (fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800)",
+   "ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (DESCUADRE) = 0. Re-evaluado con pycel de forma independiente sobre la copia desechable arqueo-cuadra-09-apertura-cierre-caja.xlsx (no solo el auto-informe del motor): resultado 0. Cadena: C47 Total Efectivo(recuento)=1150 · C48 Fondo(−)=150 (leído de 'Apertura de Caja'!C23) · C49 Ventas en efectivo=1000 · C52 TOTAL FACTURADO=1000+800+0=1800 · C53 Z=1800 · C54=IFERROR(C52-C53,0)=0."
+  },
+  {
+   "caso": "Arqueo descuadra (mismo escenario con Z 1.790)",
+   "ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 10. Re-evaluado independientemente sobre arqueo-descuadra-09-apertura-cierre-caja.xlsx: TOTAL FACTURADO 1800 − Z 1790 = 10, con CF 'cellIs' activo en C54 (ci.conditional_formatting → C54: ['cellIs'])."
+  },
+  {
+   "caso": "Contador honesto con N/A (denominador descuenta solo N/A, no '—', por §8 DOM-R2-02)",
+   "ok": true,
+   "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina'!F37 = '=COUNTIF(B5:B35,\"?*\")-COUNTIF(F5:F35,\"N/A\")' (numerador D37='=COUNTIFS(B5:B35,\"?*\",F5:F35,\"✓\")'). Casos comprobados sobre este mismo patrón en 07 (F31) y 08 (F22): fórmula idéntica, solo resta N/A, coherente con la regla vigente §8."
+  },
+  {
+   "caso": "07 con 8 tareas escritas → 'de 8'",
+   "ok": true,
+   "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria'!F31 = 8 tras escribir 8 tareas propias en las filas libres, evaluado con pycel sobre la copia plantilla-8-tareas-07-plantilla-personalizable.xlsx del propio motor (denominador COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\"), sin placeholders en columna Tarea que puedan inflar el conteo — verificado que B6/B13/B20 solo llevan '(Responsable)'/'(Hora)' en col D/E, la col B queda vacía)."
+  },
+  {
+   "caso": "08 sin tareas sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "08-apertura-cierre-negocio.xlsx: 31 tareas totales (15 Apertura + ... Cierre), 0 sin Responsable u Hora Límite (informe del motor § '08 precargado: 31 tareas, 0 sin Responsable u Hora'); confirmado leyendo D5:E19 de 'Apertura del Negocio' celda a celda: todas 'Encargado' / hora ancla '10:00'-'10:30' escalonada."
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist",
+   "ok": true,
+   "evidencia": "Informe del motor: 'DV «✓,—,N/A»: 30 hojas de checklist, 0 incorrectas'. Confirmado manualmente en 08 (antes '✓,✗,—' según DOM-21): 'Apertura del Negocio' DV formula1 = '\"✓,—,N/A\"' en F5:F26."
+  },
+  {
+   "caso": "Bio en todas las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "Informe del motor: 'bio en 11/11 Instrucciones en alcance'. Confirmado en 09!Instrucciones!B54 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' (antes ausente en 9/11 ficheros, DOM-30)."
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C48='Fondo de caja inicial (−)'=IFERROR('Apertura de Caja'!C23,0); C49='Ventas en efectivo (contado−fondo)'=IFERROR(C47-C48,0); C52 TOTAL FACTURADO=C49+C50+C51; C54 DESCUADRE=IFERROR(C52-C53,0). El fondo ya se descuenta antes de comparar contra la Z; verificado también por pycel en casos6."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!A41='0,02 €', C41='=B41*0.02', insertada entre A40='0,05 €' y A42='0,01 €'; TOTAL EFECTIVO C43='=SUM(C27:C42)' ya incluye la nueva fila."
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Registro Mensual' fila 4 tiene columna G='Z del TPV' antes de H='Descuadre'; fila 5: F5='=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)' (Total Facturado = efectivo+tarjeta+otros − fondo, regla §8 DOM-R2-01) y H5='=IFERROR(F5-G5,0)'."
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B7='Anotar el fondo de caja en la celda verde de abajo'; C23='Fondo de caja inicial (€)'=0 con relleno verde, es la celda que lee C48 de Cierre de Caja."
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' D5:E19 y 'Cierre del Negocio' D5:E17 con Responsable='Encargado' y Hora Límite precargada y escalonada (10:00→10:30 en apertura) en las 31 tareas; 0 celdas vacías según informe del motor."
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "resuelto",
+   "evidencia": "07-plantilla-personalizable.xlsx: denominador ya no es literal 15 en ninguna de las 3 hojas (F31='=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\")' en las tres); hojas diferenciadas de verdad — 'Por Franja Horaria' con APERTURA/SERVICIO/CIERRE, 'Por Área' con COCINA/SALA/BARRA y columna Zona precargada, 'Por Perfil' con COCINA/SALA/GERENCIA y Responsable precargado (Jefe de Cocina/Jefe de Sala/Gerente); placeholders '(Responsable)'/'(Hora)' solo en la primera fila de cada sección, columna Tarea vacía (sin placeholder que ensucie el COUNTIF, regla §8 DOM-R2-03/TEC-R2-10)."
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "resuelto",
+   "evidencia": "09!Instrucciones!B44-B50 bloque 'Se conecta con': '08=checklist del LOCAL/marco', '01=DETALLE por área', '09=CAJA', 'Orden de uso: local → áreas → caja'. Jerarquía explícita presente."
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "Denominador en los ficheros con checklist resta SOLO N/A del total (p.ej. 01!'Apertura Cocina'!F37), coherente con la regla vigente §8 (que sustituye a la original de restar N/A y '—'); numerador con COUNTIFS que exige texto en la columna Tarea, evitando el falso '32 de 30' de filas libres marcadas sin texto."
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina' filas 31-35 son 5 filas libres con relleno verde E8F5E9 DENTRO del rango contado (B5:B35, contador en fila 37), verificado celda a celda (val=None, fill=00E8F5E9 en B31:B35)."
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx unificado al molde ▸: DV='\"✓,—,N/A\"' (antes '✓,✗,—'), celdas D5/E5 con relleno verde E8F5E9, cabecera con fill 002D2D2D (paleta oscura homogénea, ya no oro/negro), columna 'Notas' conservada en H4. Mismo patrón confirmado en 09."
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09!Instrucciones ya no es copia de 08: texto propio sobre fondo de caja, recuento por denominaciones, Z del TPV, descuadre y Registro Mensual (B6, B10, B14-B22), distinto del texto de 08 (verificado que no comparten cadena)."
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "09!Instrucciones!B44-B50 y equivalentes en los otros ficheros llevan bloque 'Se conecta con' explícito entre los 3 niveles del kit (08/01/09); no se comprobaron referencias sueltas al Pack APPCC en este hermano por no tener bloque APPCC explícito en el contenido de hamburguesería."
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "03!'Semanal Manager'!E4='Día', 03!'Mensual Manager'!E4='Cadencia'; 05 igual; 06!'Noche Fútbol'/'Burger Week'!E4='Antelación', 06!'Navidad'/'Temporada Terraza'!E4='Cuándo' (regla §8 DOM-R2-24, cabecera 'Cuándo' cuando mezcla horas con hitos). Fila 2 de semanales/mensuales con 'Semana del ___ al ___ · Responsable' / 'Mes · Año · Responsable' confirmada."
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "Bio 'Diseñado por John Guerrero...' presente en 11/11 hojas Instrucciones en alcance (informe del motor + verificado en 09!B54); versión '2.0 · agosto 2026' en B57."
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Higiene personal al inicio de apertura",
+   "fichero": "01-apertura-cierre.xlsx",
+   "hallazgo": "'Apertura Cocina' no lleva bloque de HIGIENE PERSONAL al inicio del turno (uniforme/calzado, pelo recogido, joyas, uñas, heridas cubiertas, síntomas). La única mención de higiene ('Lavarse manos, uniforme completo', B29) aparece como penúltima tarea del listado de apertura (fila 29 de 30), no como primer paso — equivalente hermano del hallazgo DOM-12 del representante.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Orden de encendido inseguro (campana antes que gas/equipos)",
+   "fichero": "01-apertura-cierre.xlsx",
+   "hallazgo": "'Apertura Cocina' enciende plancha/grill (B6), freidora (B7) y verifica temperatura de aceite (B8) ANTES de encender la campana extractora (B9), y no hay ningún paso de 'comprobar gas' explícito. Equivalente hermano de DOM-13: la campana debería ir primero para evacuar humos/gases desde el encendido de equipos de combustión.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Aceite de freidora en frío — inconsistencia interna del kit",
+   "fichero": "01-apertura-cierre.xlsx",
+   "hallazgo": "'Cierre Cocina' ordena B13='Filtrar o cambiar aceite de freidora' ANTES de B14='Apagar freidora, plancha, horno, campana' — filtrar aceite en caliente y con la freidora aún encendida. Contradice al propio kit: 02-partidas-cocina.xlsx!'Freidora' sí lo hace bien (B18 'Apagar freidora y dejar enfriar' → B19 'Filtrar aceite...'). Equivalente hermano de DOM-27 (aceite SOLO por debajo de 40°C, nunca en caliente), agravado por ser inconsistente dentro del mismo producto.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "Registro de mermas",
+   "fichero": "01-apertura-cierre.xlsx / 02-partidas-cocina.xlsx / 03-tareas-manager.xlsx",
+   "hallazgo": "No hay ninguna tarea de tipo 'Anotar mermas del día (producto, cantidad, motivo)' en cierre de cocina ni en las partidas. Lo más cercano es 'Anotar faltantes para pedido' (03!'Diario Manager'!B19) y 'Evaluar desperdicio de carne y pan' (03!'Semanal Manager'!B9), que son reposición/evaluación semanal, no registro diario de merma. Equivalente hermano de DOM-18.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Verificación de cámaras al abrir",
+   "fichero": "01-apertura-cierre.xlsx",
+   "hallazgo": "'Apertura Cocina' no tiene ningún paso de 'Comprobar que las cámaras han funcionado toda la noche y registrar temperatura' al inicio del turno; el único control de temperatura de cámaras está en el CIERRE (B15 de 'Cierre Cocina'). Equivalente hermano de DOM-24.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Registro de jornada del equipo",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "'Diario Manager' y 'Mensual Manager' no incluyen 'Cerrar y validar el registro diario de jornada del equipo' ni 'Archivar los registros de jornada del mes' (obligación legal de registro horario). Equivalente hermano de DOM-17.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Vida útil de congelación por familia de producto",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "'FIFO Semanal' cubre fechas de carne fresca/quesos/salsas pero no incluye una tabla de vida útil de congelación por familia (carne, pan, salsas) como propone el representante. Equivalente hermano de DOM-29.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Hoja Trimestral y Anual ausente",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "El fichero solo tiene 4 hojas (Instrucciones, Limpieza Semanal, FIFO Semanal, Mantenimiento Mensual); no existe la hoja 'Trimestral y Anual' (DDD por empresa autorizada, conductos de extracción, extintores/BIE, gas, legionela si aplica, seguro, revisión TPV/Verifactu) que el representante añade en v2.0. Equivalente hermano de DOM-16.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Calendario con fechas nuevas del v2.0",
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "hallazgo": "El calendario sigue en 17 fechas (filas 5-21), sin las incorporaciones del v2.0 del representante (Día del Padre, comuniones abr-jun, 15 de agosto, 1 de noviembre, puente 6-8 de diciembre). Equivalente hermano de DOM-20; el SPEC §8 indica que el representante ya llega a 22.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Alérgenos al confirmar reservas/eventos",
+   "fichero": "06-eventos-festivos.xlsx",
+   "hallazgo": "Las hojas de evento ('Noche Fútbol', 'Burger Week', 'Navidad') no llevan bloque 'AL CONFIRMAR LA RESERVA' con alérgenos/intolerancias por escrito, señal y condiciones de cancelación. Parcialmente cubierto por BONUS-01-briefing-servicio.xlsx (sección ALÉRGENOS Y ESPECIALES), pero eso es un briefing diario, no un checklist de confirmación de evento. Equivalente hermano de DOM-19, prioridad baja porque este sector es mayormity walk-in/delivery, no banquetes.",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": false,
+ "notas": [
+  "Alcance del motor confirmado como ▸ completo: los 11 ficheros del kit (01-09+BONUS) recibieron cambios del motor (§1-§2 de la SPEC), coherente con las instrucciones de la tarea, no con el patrón 'solo 08/09' de otros hermanos.",
+  "Dry-run exit 0 y censo-entregables --fail --quiet exit 0 sobre la copia de trabajo del scratchpad; astro-site/public/dl/kit-tareas-hamburgueseria/ NO se tocó en ningún momento (solo lectura, usado únicamente para el shasum comparativo).",
+  "Todos los casos de §6 se re-evaluaron con pycel de forma INDEPENDIENTE del auto-informe del motor (no me limité a leer motor_reports/*.json), abriendo directamente las copias desechables que main.py deja en dryrun-kt/_demos/kit-tareas-hamburgueseria/.",
+  "Las 14 findings DOM etiquetadas MOTOR en la R1 (el resto de MOTOR implícitos por agrupación TEC-xx/COM-xx en la SPEC no llevan el literal 'MOTOR' en su propio texto de hallazgo, así que se tomó estrictamente el criterio pedido: hallazgo.startswith('MOTOR')) están todas resueltas en este hermano.",
+  "El listado de contenido_pendiente son EQUIVALENTES de hallazgos CONTENIDO del representante que aplican a hamburguesería; no se ha corregido nada, solo señalado para una mini-ronda de contenido específica del kit, tal como pide la tarea. La única severidad 'alta' del bloque de contenido (aceite de freidora en frío) es una inconsistencia interna real del propio fichero 01 frente al 02, pero no bloquea el motor ni rompe ningún caso de §6, por eso bloquea_real=false.",
+  "Anisakis no aplica: revisado el contenido de 02-partidas-cocina.xlsx (Plancha/Grill, Línea Montaje, Freidora) y no hay ningún producto de pescado crudo/semicrudo en este kit de hamburguesería.",
+  "Descalcificar no aplica: no hay grupo de café/espresso en el contenido de este kit; el mantenimiento de lavavajillas ya menciona filtros y sal en 03 y 05."
+ ]
+}

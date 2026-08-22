@@ -1,0 +1,165 @@
+{
+ "bloquea_real": false,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → descuadre 0",
+   "ok": true,
+   "evidencia": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C49 «Ventas en efectivo (contado − fondo)»=IFERROR(C47-C48,0); C52 TOTAL FACTURADO=C49+C50+C51; C54 DESCUADRE=IFERROR(C52-C53,0). pycel del propio motor: 'arqueo-cuadra · Cierre de Caja:C54: 0 OK'"
+  },
+  {
+   "caso": "Arqueo descuadra: Z 1.790 → +10 y CF ámbar",
+   "ok": true,
+   "evidencia": "pycel del motor: 'arqueo-descuadra · 11-apertura-cierre-caja.xlsx:Cierre de Caja:C54: 10 OK' (misma fórmula C54 evaluada con Z=1.790)"
+  },
+  {
+   "caso": "Contador honesto: N/A sale del denominador, ✓ cuenta sobre el resto",
+   "ok": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29 =COUNTIFS(B5:B27,\"?*\",F5:F27,\"✓\") / F29 =COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\"). pycel: 'contador-honesto · D29/F29: 15 de 15 OK'. Mismo patrón en 11-apertura-cierre-caja.xlsx:Apertura de Caja:D22/E22 y Cierre de Caja:D23/E23"
+  },
+  {
+   "caso": "07 con 8 tareas escritas → «x de 8» (denominador por fórmula)",
+   "ok": false,
+   "evidencia": "Este kit no tiene un fichero «07 plantilla personalizable»: el equivalente es 09-plantilla-personalizable.xlsx, y está FUERA del alcance del motor de este hermano (sólo 10/11). Verificado en la copia del dry-run: 09-plantilla-personalizable.xlsx:Plantilla A/B/C no tienen NI UNA fila de tarea ni fórmula de contador (dimensions A1:G31, sólo título fila 1-2, cabecera fila 4 y pie fila 31) — eco no resuelto de DOM-07, no aplica el caso de refutación tal cual está redactado"
+  },
+  {
+   "caso": "08 (equivalente=10-apertura-cierre-negocio.xlsx) sin tareas sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx: 33 tareas (18 Apertura del Negocio + 15 Cierre del Negocio), 0 con Responsable u Hora/Cuándo vacíos (barrido D/E de cada fila con Tarea) — motor log: '08 precargado: 33 tareas, 0 sin Responsable u Hora'"
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist EN ALCANCE",
+   "ok": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio F5:F27 y Cierre del Negocio F5:F24; 11-apertura-cierre-caja.xlsx:Apertura de Caja E5:E20 y Cierre de Caja E5:E21 → los 4 dataValidation.formula1 = \"✓,—,N/A\". Las 30 hojas de 01-09/BONUS mantienen el desplegable viejo «✓,✗,—» porque están fuera del alcance del motor de este hermano (aviso TEC-R2-08 del propio informe), no es un defecto de este parche"
+  },
+  {
+   "caso": "Bio anclada en TODAS las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Instrucciones:B42 y 11-apertura-cierre-caja.xlsx:Instrucciones:B53 = «Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es» (2/2 ficheros en alcance)"
+  }
+ ],
+ "censo_exit": 0,
+ "contenido_pendiente": [
+  {
+   "tema": "seguridad alimentaria — anisakis en pescado crudo",
+   "fichero": "02-mise-en-place-degustacion.xlsx (Pre-elab Día, B18)",
+   "hallazgo": "«Tartares y ceviches (cortar en el momento, no antes de 2h)» no menciona la congelación previa obligatoria (≥24h a −20°C, o −35°C 15h) que exige el RD 1420/2006 para pescado destinado a consumo crudo o semicrudo. Barrido de los 13 xlsx del kit: cero menciones a «anisakis» o «congela». Es el mismo hallazgo DOM-02 del representante, no cubierto aquí porque el módulo de contenido no se ha aplicado a este hermano",
+   "severidad": "alta"
+  },
+  {
+   "tema": "registro de jornada laboral",
+   "fichero": "todo el kit (equivalente al 03-manager del representante es aquí 03-id-desarrollo-menu.xlsx, que es un fichero de I+D, no de gestión de personal)",
+   "hallazgo": "Ninguna hoja del kit incluye la tarea «Cerrar y validar el registro diario de jornada del equipo» / «Archivar los registros de jornada del mes» (obligación legal española desde 2019, art. 34.9 ET). Barrido de los 13 xlsx: cero menciones a «jornada» o «fichaje». Eco de DOM-17 del representante",
+   "severidad": "media"
+  },
+  {
+   "tema": "vida útil de congelación por familia de producto",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "El kit tiene un perfil intensivo en pre-elaboraciones largas (sous-vide 48-72h, fermentaciones, maduraciones) y aun así no incluye una tabla de vida útil de congelación por familia, pese a que el 02 pide «Etiquetar TODAS las pre-elaboraciones (fecha, hora, contenido)». Eco de DOM-29",
+   "severidad": "baja"
+  },
+  {
+   "tema": "jerarquía interna — misma tarea con horas distintas (motor)",
+   "fichero": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio:B10 (07:00) vs 11-apertura-cierre-caja.xlsx:Apertura de Caja:B9 (07:30)",
+   "hallazgo": "«Encender TPV / POS / datáfono» en el fichero de negocio y «Encender TPV / POS» en el de caja son la MISMA acción física con dos horas distintas, dentro de los dos ficheros que el motor SÍ tocó. Es la reaparición concreta del defecto DOM-09/DOM-R2-07 (bloque SISTEMAS duplicado): la SPEC §8 dice que colapsar_duplicados no corre sobre negocio/caja porque son «el destino de la remisión», pero eso no explica que se dupliquen ENTRE SÍ con horas incoherentes",
+   "severidad": "media"
+  },
+  {
+   "tema": "jerarquía — 01 no remite a 10/11 (motor)",
+   "fichero": "01-apertura-cierre.xlsx:Cierre PM:B25 «Cierre de caja y registro de ventas del día»",
+   "hallazgo": "El checklist de sala/cocina (01, fuera de alcance del motor de este hermano) sigue teniendo su propia tarea de cierre de caja sin remitir a 11-apertura-cierre-caja.xlsx ni llevar bloque «Se conecta con» — a diferencia de 10 y 11, que sí se referencian entre sí. Un cliente puede acabar rellenando el mismo dato en dos ficheros distintos",
+   "severidad": "media"
+  },
+  {
+   "tema": "plantilla personalizable vacía (motor, fuera de alcance)",
+   "fichero": "09-plantilla-personalizable.xlsx (Plantilla A/B/C)",
+   "hallazgo": "Las tres hojas están literalmente vacías: título, cabecera de columnas y pie, sin una sola fila de tarea ni fórmula de contador — más grave que la descripción original de DOM-07 (que al menos tenía 15 filas con placeholder). No se ha tocado porque el motor de este hermano sólo alcanza 10/11",
+   "severidad": "alta"
+  }
+ ],
+ "dryrun_exit": 0,
+ "ficheros_intactos": 11,
+ "ficheros_tocados": 2,
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C48 'Fondo de caja inicial (−)'=IFERROR('Apertura de Caja'!C23,0); C49='Ventas en efectivo (contado − fondo)'=IFERROR(C47-C48,0); C52 TOTAL FACTURADO=C49+C50+C51; C54 DESCUADRE=IFERROR(C52-C53,0). Confirmado por pycel (0 y +10)"
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Cierre de Caja:A41 '0,02 €' / C41 =B41*0.02, entre A40 '0,05 €' y A42 '0,01 €' — la serie ya no salta"
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Registro Mensual:G4 'Z del TPV' antes de H4 'Descuadre'; H5 =IFERROR(F5-G5,0) en las 31 filas"
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Apertura de Caja:B7 'Anotar el fondo de caja en la celda verde de abajo' apunta a C23 'Fondo de caja inicial (€)', celda verde E8F5E9, con D23 'Se descuenta del efectivo en el Cierre de Caja'"
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "10-apertura-cierre-negocio.xlsx: 33 tareas (18+15) con columnas D 'Responsable' y E 'Hora Límite'/'Cuándo' precargadas al 100% (0 vacías)"
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "no resuelto",
+   "evidencia": "09-plantilla-personalizable.xlsx (equivalente al 07 del representante) está FUERA del alcance del motor de este hermano (sólo 10/11). Verificado en la copia del dry-run: hojas Plantilla A/B/C sin una sola fila de tarea ni fórmula de contador, sin diferenciación por franja/área/perfil — el defecto original sigue ahí, incluso agravado (antes tenía 15 filas con placeholder, ahora ninguna)"
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "10 y 11 SÍ tienen jerarquía explícita entre ellos ('Se conecta con': 10='marco del local', 11='caja', 'Orden de uso: local → caja'), pero (a) 01-apertura-cierre.xlsx sigue sin remitir a 10/11 (fuera de alcance) y (b) dentro de los DOS ficheros que el motor sí tocó persiste la duplicación de la misma acción física: 'Encender TPV/POS/datáfono' a las 07:00 en 10:Apertura del Negocio:B10/E10 vs 'Encender TPV/POS' a las 07:30 en 11:Apertura de Caja:B9/D9 — el mismo patrón que describía el hallazgo original (DOM-R2-07)"
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio:F29 =COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\") — sólo N/A sale del denominador, '—' sigue contando como pendiente (regla §8 vigente). Igual en Cierre del Negocio y en 11-apertura-cierre-caja.xlsx (Apertura y Cierre de Caja)"
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio: filas 23-27 en blanco con relleno verde E8F5E9 (B:E) DENTRO del rango contado B5:B27, antes de la fila 'Tareas completadas' (fila 29)"
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "10 y 11 llevan DV '✓,—,N/A' (no '✓,✗,—'), celdas verdes E8F5E9 en Responsable/Hora/✓/Firma/importes, columna 'Notas' conservada, Instrucciones con viñetas '▸' y orientación landscape en todas las hojas de datos — al molde de 01-07/BONUS"
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Instrucciones:B6 explica el arqueo diario, fondo de caja, recuento por denominaciones, Z del TPV y descuadre — texto propio, distinto del de 10-apertura-cierre-negocio.xlsx:Instrucciones:B6 (checklist del LOCAL COMPLETO). Ya no es copia-pega"
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Instrucciones:B33-B38 y 11-apertura-cierre-caja.xlsx:Instrucciones:B44+ llevan bloque 'Se conecta con' que remite explícitamente entre 10 y 11 (local→caja); no se ha verificado el resto del kit (fuera de alcance)"
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "11-apertura-cierre-caja.xlsx:Cierre de Caja:D4='Cuándo' (ya no 'Hora Límite') y 10-apertura-cierre-negocio.xlsx:Cierre del Negocio:E4='Cuándo'; las hojas de Apertura mantienen 'Hora Límite' porque ahí sí son horas fijas"
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "Bio anclada en 10-apertura-cierre-negocio.xlsx:Instrucciones:B42 y 11-apertura-cierre-caja.xlsx:Instrucciones:B53 (2/2 ficheros en alcance)"
+  }
+ ],
+ "notas": [
+  "CPU 40.25→41.94°C durante todo el barrido (istats antes/después de cada bloque pesado); nada se acercó a los 60/65°C, no hizo falta pausar.",
+  "Dry-run oficial: CLAUDE_SCRATCHPAD=.../propio-<pid> + main.py --producto kit-tareas-restaurante-creativo --dry-run --solo motor --json ... → EXIT=0, 'TODO VERDE (idempotencia, cache, §6, DV, bio, censo)'. Ese informe ya corre censo-entregables --fail internamente (paso 7/7) y también dio 0 defectos.",
+  "censo-entregables.py --only <copia> --fail --quiet ejecutado de forma independiente sobre esa misma copia: EXIT=0, 13 ficheros censados, 0 defectos.",
+  "Byte-a-byte (shasum) contra astro-site/public/dl/kit-tareas-restaurante-creativo/: 11/13 ficheros idénticos, sólo 10-apertura-cierre-negocio.xlsx y 11-apertura-cierre-caja.xlsx tocados — coincide exactamente con 'en alcance 2/13' que reporta el propio motor.",
+  "astro-site/public/dl/** NO se tocó en ningún momento: todo el trabajo se hizo en copias bajo /private/tmp/.../scratchpad (varias reejecuciones puntuales para inspeccionar 09-plantilla-personalizable.xlsx y la duplicación de TPV, cada una borrada tras usarla).",
+  "No se hizo git add ni commit.",
+  "El aviso TEC-R2-08 (dos listas de desplegable distintas conviviendo en el kit: '✓,—,N/A' en 4 hojas vs '✓,✗,—' en 30) es esperado dado el alcance declarado de esta tarea (solo 10/11), no un defecto nuevo.",
+  "AVISO para el orquestador: 09-plantilla-personalizable.xlsx (el equivalente al '07' de este kit) está prácticamente vacío — sin filas de tarea ni contador — y queda fuera de cualquier parche de motor de esta ronda; si se decide tratar el equivalente de DOM-07 en los hermanos, este fichero necesita contenido desde cero, no sólo una fórmula."
+ ],
+ "pid": "kit-tareas-restaurante-creativo"
+}

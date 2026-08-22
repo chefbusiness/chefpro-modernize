@@ -1,0 +1,185 @@
+{
+ "pid": "kit-tareas-pizzeria",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 11,
+ "ficheros_intactos": 0,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra: fondo 150, efectivo contado 1.150, tarjetas 800, Z del TPV 1.800 → DESCUADRE 0",
+   "ok": true,
+   "evidencia": "pycel sobre copia desechable de 09-apertura-cierre-caja.xlsx: 'Apertura de Caja'!C23=150 (fondo), 'Cierre de Caja'!B27=2(500€)+B29=1(100€)+B30=1(50€)→C43=1150, C47=1150, C48=150, C49=1000, C50=800(tarjetas), C52=1800, C53=1800(Z), C54(DESCUADRE)=0"
+  },
+  {
+   "caso": "Arqueo descuadra: mismos importes con Z del TPV 1.790 → DESCUADRE +10 y CF ámbar",
+   "ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':C54=IFERROR(C52-C53,0) evaluado a 10 con C53=1790; regla de formato condicional 'cellIs' sobre C54 (sqref C54, formula ['0']) confirmada en ws.conditional_formatting"
+  },
+  {
+   "caso": "Contador honesto con N/A y con «—»: 21 tareas reales, 3 marcadas N/A → '18 de 18'; al marcar 2 de las 18 como «—» (no hecha) → '16 de 18' (sigue contando como pendiente, no sale del total)",
+   "ok": true,
+   "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':D36=COUNTIFS(B6:B34,\"?*\",F6:F34,\"✓\") / F36=COUNTIF(B6:B34,\"?*\")-COUNTIF(F6:F34,\"N/A\"); evaluado con pycel sobre copia: 18/18 y luego 16/18 tras marcar 2 filas «—»"
+  },
+  {
+   "caso": "07-plantilla-personalizable con 8 tareas escritas por el cliente → 'x de 8' (denominador por fórmula, no fijo a 15)",
+   "ok": true,
+   "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria':F31=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\"); caso pycel del propio main.py: 'denominador-07 · 07-plantilla-personalizable.xlsx:Por Franja Horaria:F31: 8 OK'"
+  },
+  {
+   "caso": "08-apertura-cierre-negocio sin tareas sin Responsable/Hora Límite",
+   "ok": true,
+   "evidencia": "informe main.py: '08 precargado: 31 tareas, 0 sin Responsable u Hora'; inspección directa de 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' filas 5-21 y 'Cierre del Negocio': columnas D (Responsable) y E (Hora Límite/Cuándo) rellenas en todas las filas de tarea"
+  },
+  {
+   "caso": "Validación de datos «✓,—,N/A» presente en todas las hojas de checklist",
+   "ok": true,
+   "evidencia": "informe main.py: 'DV «✓,—,N/A»: 30 hojas de checklist, 0 incorrectas'; confirmado a mano en 01, 07 (todas hojas), 08 y 09 — DV.formula1 = '\"✓,—,N/A\"' en las 3"
+  },
+  {
+   "caso": "Bio de autoría en todas las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "informe main.py: 'bio en 11/11 Instrucciones en alcance'; confirmado a mano en 02-partidas-cocina.xlsx:Instrucciones!B30 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' + B33 'Versión 2.0 · agosto 2026 …'"
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':C47='Total Efectivo (recuento)'=C43; C48='Fondo de caja inicial (−)'=IFERROR('Apertura de Caja'!C23,0); C49='Ventas en efectivo (contado−fondo)'=IFERROR(C47-C48,0); C52='TOTAL FACTURADO'=C49+C50+C51; C54='DESCUADRE'=IFERROR(C52-C53,0). Ya no compara efectivo con fondo incluido contra la Z."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':A41='0,02 €' presente en la tabla de denominaciones (A34..A42 recorre 500€→0,01€ sin saltos)"
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Registro Mensual':fila4 = Fecha, Fondo Apertura(B), Efectivo Contado(C), Ventas Tarjeta(D), Ventas Otros(E), Total Facturado(F), Z del TPV(G), Descuadre(H), Depósito(I); G5..G35=0 (rellenable), H5=IFERROR(F5-G5,0)"
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja':B7 (tarea 3) = 'Anotar el fondo de caja en la celda verde de abajo'; C23 = 0 con etiqueta B23='Fondo de caja inicial (€)' y D23='Se descuenta del efectivo en el Cierre de Caja'"
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' filas 5-21 y 'Cierre del Negocio' filas 5-18: columnas D (Responsable, 'Encargado'/'Último en salir') y E (Hora Límite/Cuándo) precargadas en las 28 tareas"
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "resuelto",
+   "evidencia": "07-plantilla-personalizable.xlsx: las 3 hojas ('Por Franja Horaria','Por Área','Por Perfil') tienen F31=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\") (no fijo a 15) y secciones diferenciadas: APERTURA/SERVICIO/CIERRE, COCINA/SALA/BARRA (con Zona precargada), COCINA/SALA/GERENCIA (con Responsable precargado)"
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "La jerarquía SÍ está resuelta (01:Instrucciones filas 20-26 'Se conecta con' explica 08=local/01=área/09=caja). Pero el colapso de tareas duplicadas NO se aplica a este hermano: motor.colapsar_duplicados (motor.py línea ~1063) compara el título de la banda de sección contra las claves literales COLAPSO={'CIERRE DE CAJA','CIERRE GENERAL','SISTEMAS'}, tomadas de los rótulos del kit representante. En kit-tareas-pizzeria las secciones de 01:'Cierre Sala' se llaman 'SALA'/'TERRAZA'/'DELIVERY Y CAJA'/'BAÑOS' (ninguna coincide), así que persisten como tareas numeradas y contadas: 01:'Cierre Sala' fila16='Cuadrar caja del día' (duplica 09 entero) y fila19='Activar alarma y cerrar' (duplica 08:'Cierre del Negocio' fila16='Activar alarma'); 01:'Apertura Sala' fila11='Verificar TPV/datáfono funcionando' (duplica 08:'Apertura del Negocio' fila10='Encender TPV / POS / datáfono') y fila12='Preparar fondo de caja' (duplica 09:'Apertura de Caja' tareas 1-3). El bloque «Se conecta con» de 01:Instrucciones afirma 'No se duplican: cada uno cubre un nivel', lo cual es falso para este hermano."
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':F36=COUNTIF(B6:B34,\"?*\")-COUNTIF(F6:F34,\"N/A\") — pycel: con 3 N/A de 21 tareas → 18/18; al marcar 2 tareas como «—» (no hecha) el numerador D36 baja a 16 manteniendo denominador 18, confirmando que sólo N/A sale del total y «—» sigue contando como pendiente (regla §8/DOM-R2-02)"
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina': filas 30-34 son 5 filas libres verdes (relleno E8F5E9) DENTRO del rango contado (B5:B34/F5:F34), con DV «✓,—,N/A» aplicada (DV.sqref incluye F30:F34)"
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja' DV.formula1='\"✓,—,N/A\"' (igual que 01-07); columna G('Notas') presente en 'Apertura de Caja' fila4 (G4='Notas'); celdas Responsable/Hora/✓/Firma/Notas en verde E8F5E9 confirmado por CTX del motor"
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Instrucciones — bloque propio 'Qué resuelve' (B6: 'El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre…') y 'Cómo usar — Apertura de Caja' / 'Cómo usar — Cierre de Caja' / 'Registro Mensual', ya no es copia de 08"
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "01-apertura-cierre.xlsx:Instrucciones filas 20-26 = bloque 'Se conecta con' remitiendo a 08/09/01; barrido de los 11 xlsx sin ninguna coincidencia de 'APPCC' en ninguna celda (kit-tareas-pizzeria nunca tuvo esa referencia colgante, así que no aplica la mitad del hallazgo referida a APPCC)"
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "03-tareas-manager.xlsx:'Semanal Manager'!E4='Día'; 'Mensual Manager'!E4='Cadencia'; 06-eventos-festivos.xlsx:'Noche Fútbol'!E4='Antelación'; 05-tareas-semanales-mensuales.xlsx sigue el mismo patrón (Día/Cadencia)"
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "confirmado en los 9 ficheros sin bio original más 08/09: p.ej. 02-partidas-cocina.xlsx:Instrucciones!B30 = línea de bio de John Guerrero + B33 'Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pizzeria · info@aichef.pro'; informe main.py confirma 11/11"
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Orden seguro de apertura de cocina (campana / gas / encendido de equipos)",
+   "fichero": "01-apertura-cierre.xlsx:Apertura Cocina",
+   "hallazgo": "La tarea 1 es 'Encender horno de leña/piedra (precalentar 45-60 min)' sin ningún paso previo de 'encender campana extractora' ni 'comprobar gas'. La campana sólo aparece en el CIERRE ('Apagar campana extractora', fila 15 de Cierre Cocina) — nunca se enciende en la apertura antes de prender el horno. Si el horno es de gas (el kit contempla ambos: fila 9 dice 'Encender horno de pastas/gratinados si aplica' y Mantenimiento Mensual fila 9 dice 'Verificar válvulas de gas (si es horno de gas)'), encender el equipo sin haber comprobado antes la instalación de gas ni activado la extracción es el mismo riesgo que DOM-13 señaló en el kit base.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Bloque de higiene personal al inicio del turno",
+   "fichero": "01-apertura-cierre.xlsx:Apertura Cocina",
+   "hallazgo": "'Lavarse manos y colocarse uniforme' está en la fila 27 de 29 (sección HIGIENE casi al final), después de manipular masa, salsa, mozzarella y toppings. Mismo patrón que DOM-12 en el kit base: el bloque de higiene personal (uniforme/calzado, pelo, joyas, uñas, heridas cubiertas, síntomas) debería ir al PRINCIPIO, antes de tocar alimento.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Comprobar cámaras tras la noche y registrar temperatura",
+   "fichero": "01-apertura-cierre.xlsx:Apertura Cocina",
+   "hallazgo": "No existe ninguna tarea equivalente a 'Comprobar que las cámaras han funcionado toda la noche y registrar temperatura' (DOM-24 del kit base). Las menciones a 'cámara' son sólo para sacar masa a temperar (fila 12) o revisar caducidades (03:Semanal Manager fila 23), nunca para verificar que la cadena de frío no se rompió durante la noche.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Registro de mermas del día (producto, cantidad, motivo)",
+   "fichero": "01-apertura-cierre.xlsx:Cierre Cocina / 02-partidas-cocina.xlsx",
+   "hallazgo": "No hay ninguna tarea de registro DIARIO de mermas equivalente a DOM-18. Lo más cercano es 03:Semanal Manager fila 9 'Evaluar desperdicio de masa y toppings' (semanal, sin campos de producto/cantidad/motivo) y 02:Línea Montaje fila 20 'Anotar consumos para pedido de mañana' (consumo, no merma).",
+   "severidad": "media"
+  },
+  {
+   "tema": "Registro/control de jornada laboral del equipo",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "Ninguna de las 4 hojas (Diario/Semanal/Mensual/Handover) tiene una tarea de 'Cerrar y validar el registro diario de jornada' ni 'Archivar los registros de jornada del mes', que es el equivalente directo del DOM-17 del kit base (obligación legal de registro horario en España).",
+   "severidad": "media"
+  },
+  {
+   "tema": "Hoja Trimestral y Anual (mantenimiento legal: DDD, conductos extracción, extintores/BIE, gas, legionela, seguro, TPV/Verifactu)",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "El fichero sólo tiene Inventario Diario / Limpieza Semanal / FIFO Semanal / Mantenimiento Mensual — no existe la hoja 'Trimestral y Anual' que el DOM-16 del kit base añade (con nº de parte y firma). El 'Mantenimiento Mensual' actual mete 'Extintor: presión, caducidad' y 'Campana extractora: filtros, motor' como tareas MENSUALES cuando son de periodicidad anual/semestral por normativa, y faltan por completo: DDD por empresa autorizada, limpieza de conductos de extracción por empresa acreditada (RITE), revisión de gas por instalador autorizado, legionela (si hay torre de refrigeración/agua caliente sanitaria), seguro de responsabilidad civil y revisión del TPV/Verifactu.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "Vida útil de congelación por familia de producto",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "No existe ninguna tabla de vida útil de congelación por familia (masa, mozzarella, embutidos, salsas) equivalente al DOM-29 del kit base. 01:Cierre Cocina fila 25 sólo dice 'Descongelar lo necesario para mañana' sin ninguna referencia a cuánto tiempo aguanta cada producto congelado.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Bloque 'AL CONFIRMAR LA RESERVA' con alérgenos/intolerancias por escrito, señal, precio por comensal y condiciones de cancelación",
+   "fichero": "06-eventos-festivos.xlsx",
+   "hallazgo": "Ninguna de las 4 hojas (Noche Fútbol, San Valentín, Navidad, Temporada Terraza) tiene el bloque que el DOM-19 del kit base añade al confirmar una reserva de grupo/evento. La única mención a alérgenos está en BONUS-01-briefing-servicio.xlsx:Briefing (fila 18-19, 'ALÉRGENOS Y ESPECIALES' / 'Reservas con alérgenos declarados'), que es un briefing de turno, no el momento de la confirmación de la reserva.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Fechas del calendario anual propias del sector (Día del Padre, comuniones, 15 de agosto, 1 de noviembre, puente de diciembre)",
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "hallazgo": "El calendario de pizzería tiene 17 fechas (filas 5-21) con eventos propios del sector (Halloween, San Juan, apertura/cierre terraza) pero le faltan los equivalentes directos de las fechas que el DOM-20 del kit base añadió: Día del Padre, temporada de comuniones (abril-junio, muy relevante para reservas de grupo), 15 de agosto (Asunción, festivo con fuerte actividad en hostelería), 1 de noviembre (Todos los Santos) y el puente del 6-8 de diciembre.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Lavado de vegetales de hoja (lechuga/rúcula) con dosis y aclarado",
+   "fichero": "02-partidas-cocina.xlsx:Complementaria",
+   "hallazgo": "'Preparar ensaladas base (César, caprese, mixta)' (fila 6) no incluye ningún paso de desinfección con dosis (lejía apta uso alimentario ≈70 ppm, 5 min, y ACLARAR con agua potable), equivalente menor al DOM-26 del kit base.",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": false,
+ "notas": [
+  "Dry-run + censo + idempotencia + pycel + DV + bio: TODO VERDE (exit 0 en las dos herramientas). No hay caso de '§6' que falle y el motor no rompe nada existente de la Fase A (casilla unificada, contadores, A4, metadata) — por eso bloquea_real=false pese al hallazgo DOM-09 parcial.",
+  "kit-tareas-pizzeria es un kit «▸ completo» (como cafetería/hamburguesería/dark-kitchen/bar): el motor se aplica a los 11 ficheros, no sólo a 08/09, así que los 11 salen 'TOCADO' frente a la copia de astro-site/public/dl/kit-tareas-pizzeria/ — es el comportamiento esperado del SPEC, no un defecto.",
+  "Hallazgo NUEVO fuera del alcance de los 14 ids MOTOR de R1 (probablemente anterior a la Ronda 2 de refutación, que sustituyó la regla del contador): el mensaje de error de la validación de datos en TODAS las hojas de checklist (p.ej. 01-apertura-cierre.xlsx:'Apertura Cocina', DV sobre F6:F34) sigue diciendo 'Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.' — esto CONTRADICE la regla vigente (§8/DOM-R2-02, ya implementada correctamente en la fórmula): sólo N/A sale del total, «—» sigue contando como pendiente. Es motor.py línea ~752-753 (normalizar_checklist), texto compartido por TODA la familia — afecta también al representante y al resto de hermanos, no sólo a pizzería. Es un error de contenido/mensaje, no de cálculo (la fórmula real es correcta), pero es lo primero que ve el cliente si teclea un valor inválido en Excel.",
+  "DOM-09 queda 'parcial' porque motor.colapsar_duplicados (§2.5) reconoce los bloques a fusionar por coincidencia LITERAL del título de sección ('CIERRE DE CAJA'/'CIERRE GENERAL'/'SISTEMAS'), tomados tal cual del kit representante. En los hermanos cuyo 01 usa rótulos de sección distintos (aquí 'SALA'/'TERRAZA'/'DELIVERY Y CAJA'/'BAÑOS'), el colapso nunca se dispara y las tareas duplicadas con 08/09 permanecen visibles y CONTADAS, contradiciendo el texto de Instrucciones que promete 'No se duplican'. Antes de pasar el motor al resto de hermanos con `▸` (cafetería, hamburguesería, dark-kitchen, bar) conviene comprobar caso por caso si sus rótulos de sección coinciden o no con los del representante, o generalizar la detección por contenido semántico de las tareas (TPV, datáfono, fondo de caja, alarma, música) en vez de por el rótulo exacto de la banda."
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "bloquea_real": false,
+ "pid": "kit-tareas-hotel",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 2,
+ "ficheros_intactos": 17,
+ "casos6": [
+  {
+   "caso": "arqueo-cuadra (fondo 150, efectivo 1.150, tarjetas 800, Z 1.800)",
+   "ok": true,
+   "evidencia": "19-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (efectivo_contado=1150.0, total_facturado=1800)"
+  },
+  {
+   "caso": "arqueo-descuadra (Z 1.790)",
+   "ok": true,
+   "evidencia": "19-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10, CF ámbar sobre C54 (rango CF 'C54')"
+  },
+  {
+   "caso": "contador honesto (N/A no cuenta, — sí cuenta)",
+   "ok": true,
+   "evidencia": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29 → 18 tareas, 3 marcadas N/A, 15 ✓ → '15 de 15' (esperado=obtenido); denominador E29=COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\"), ya NO resta '—'"
+  },
+  {
+   "caso": "07 con 8 tareas escritas",
+   "ok": true,
+   "evidencia": "NO APLICA: kit-tareas-hotel no tiene fichero de plantilla personalizable tipo 07 (su 07-recepcion-turnos.xlsx no lleva hojas 'Por Franja Horaria'/'Por Área'/'Por Perfil'; motor.PLANTILLA_07 no encontró coincidencia y demo_07() devolvió vacío)"
+  },
+  {
+   "caso": "08 (negocio) sin tareas sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "gate_precargado sobre 18-apertura-cierre-negocio.xlsx: 33 tareas (18 Apertura + 15 Cierre), 0 huecos en Responsable ni Hora/Cuándo"
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist EN ALCANCE",
+   "ok": true,
+   "evidencia": "4/4 hojas (Apertura del Negocio, Cierre del Negocio, Apertura de Caja, Cierre de Caja) con DV única '\"✓,—,N/A\"', 0 incorrectas. AVISO informativo (no defecto de este hermano): el producto completo mezcla dos listas porque los 17 ficheros 01-15/BONUS quedan fuera del alcance del motor (48 hojas con '\"✓,✗,—\"' heredado de su propio generador) — coherente con la instrucción de que el alcance de este hermano es solo 18/19"
+  },
+  {
+   "caso": "bio en Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "2/2 — 18:Instrucciones!B42 y 19:Instrucciones!B53, ambas con 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'"
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "19-apertura-cierre-caja.xlsx:Cierre de Caja: C48 'Fondo de caja inicial (−)' = IFERROR('Apertura de Caja'!C23,0); C49 'Ventas en efectivo (contado − fondo)' = IFERROR(C47-C48,0); C52 TOTAL FACTURADO = C49+C50+C51; C54 DESCUADRE = IFERROR(C52-C53,0). Caso §6 arqueo-cuadra da 0 con fondo 150 restado."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "19:Cierre de Caja: A41='0,02 €' C41='=B41*0.02' presente en la tabla de denominaciones (A26:C42), entre 0,05€ y 0,01€."
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "19:Registro Mensual: G4='Z del TPV' con las 31 filas a 0 y H4='Descuadre' H5='=IFERROR(F5-G5,0)'; ya no falta la columna Z."
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "19:Apertura de Caja B7='Anotar el fondo de caja en la celda verde de abajo' apunta a B23/C23 'Fondo de caja inicial (€)' (celda verde E8F5E9), que existe en la propia hoja."
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "18:Apertura del Negocio D5:E22 y Cierre del Negocio D5:E19 — Responsable ('Encargado'/'Último en salir') y Hora Límite/Cuándo precargados en las 33 tareas; gate_precargado confirma 0 huecos."
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "no aplica",
+   "evidencia": "kit-tareas-hotel no tiene fichero '07-plantilla-personalizable' (su 07-recepcion-turnos.xlsx es contenido de recepción, sin hojas 'Por Franja Horaria/Por Área/Por Perfil'); demo_07() no encontró coincidencia."
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "no aplica",
+   "evidencia": "En este kit no hay tres checklists de apertura/cierre solapados como en el representante (01/08/09 del mismo local): los ficheros 01-15 son por DEPARTAMENTO (buffet desayuno, à la carte, housekeeping, spa…), no duplican 18 (marco del local). 18 y 19 sí tienen bloque 'Se conecta con' recíproco sin tareas repetidas entre sí (alarma/luces/clima en 18 vs TPV/fondo/Z en 19)."
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "18:Apertura del Negocio F29 = COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\"); caso §6 contador-honesto confirma 18 tareas/3 N/A/15 ✓ → '15 de 15'."
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "5 filas verdes libres (E8F5E9) DENTRO del rango contado en todas las hojas: p.ej. 18:Apertura del Negocio filas 23-27 (contador en fila 29, rango B5:B27); 19:Cierre de Caja filas 17-21 (contador en fila 23, rango B5:B21)."
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "18/19 ya usan la paleta unificada del molde ▸ (cabecera fill 002D2D2D / fuente 00FFFFFF, igual que 01-07), DV única '\"✓,—,N/A\"' y celdas verdes E8F5E9 en Responsable/Hora/✓/Firma/Notas/importes — ya no hay oro FFD700 sobre 1A1A1A ni ausencia de verdes."
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "19:Instrucciones ya no es copia de 18: menciona explícitamente fondo de caja (B10), recuento por denominación (B14), Z del TPV/descuadre (B16-B17) y Registro Mensual (B19-B22); 18:Instrucciones habla del marco del local (B6)."
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "18:Instrucciones B33-B38 y 19:Instrucciones B44-B49 llevan bloque 'Se conecta con' con remisión recíproca 18↔19; ninguna de las dos Instrucciones menciona el Pack APPCC (no hay referencia colgante que resolver en este par)."
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "18/19:Cierre del Negocio y Cierre de Caja usan cabecera 'Cuándo' (E4/D4) con valor 'Cierre' (hito, no hora) en vez de 'Hora Límite'; las hojas de Apertura mantienen 'Hora Límite' porque sus valores SÍ son horas reales (05:30-06:15)."
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "18:Instrucciones!B42 y 19:Instrucciones!B53 llevan la línea de bio de John Guerrero encima de la versión (B45/B56); ya la tenían en la v1.1 (eran los ficheros 08/09 del representante) y el motor la conserva intacta."
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Anisakis en preparaciones crudas/marinadas del buffet",
+   "fichero": "02-fb-buffet-comida-cena.xlsx (Buffet Cena B7 'foie, tartar, ceviche'; Buffet Almuerzo B8 'carpaccio, salmón') y 01-fb-buffet-desayuno.xlsx (Apertura Desayuno B22 'salmón')",
+   "hallazgo": "Ningún fichero de F&B tiene tarea de control de congelación previa para pescado crudo/marinado (tartar, ceviche, carpaccio de salmón), obligatoria por RD 1420/2006 (≥24h a −20°C o ≥15h a −35°C, con registro). Equivalente exacto a DOM-02 del representante (severidad alta allí), y aquí el riesgo es mayor: es un buffet de autoservicio con varias estaciones que sirven estas preparaciones a diario.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "Cámaras/refrigeración — comprobar funcionamiento nocturno al abrir",
+   "fichero": "01-fb-buffet-desayuno.xlsx, 02-fb-buffet-comida-cena.xlsx, 03-fb-restaurante-carte.xlsx (hojas de Apertura)",
+   "hallazgo": "Las aperturas de F&B verifican temperatura de vitrinas/estaciones de servicio (>65°C caliente, <5°C frío) pero ninguna tiene la tarea equivalente a DOM-24 del representante: comprobar que las cámaras/neveras de almacén han funcionado toda la noche y registrar su temperatura antes de sacar producto perecedero.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Descalcificar/backflush de cafeteras multi-outlet",
+   "fichero": "13-mantenimiento.xlsx (hojas Semanal y Mensual)",
+   "hallazgo": "El hotel tiene cafeteras en varios outlets (buffet desayuno, lobby bar, à la carte — confirmado por menciones de 'cafeteras'/'máquina de café' en 01/03/04) pero el fichero de mantenimiento periódico no incluye ninguna tarea de descalcificación ni backflush del grupo de café, equivalente al ajuste DOM-15 del representante (que sustituyó 'descalcificar' genérico por backflush+lavavajillas).",
+   "severidad": "media"
+  },
+  {
+   "tema": "Alérgenos en banquetes/eventos — falta bloque 'al confirmar la reserva'",
+   "fichero": "06-fb-banquetes-eventos.xlsx (Coordinación pre-evento B9 'Confirmar menú definitivo, alérgenos y distribución de mesas')",
+   "hallazgo": "Sí hay mención a alérgenos (no es un vacío total como en el hallazgo original DOM-19), pero va mezclada en una sola tarea junto con 'menú definitivo' y 'distribución de mesas', sin desglosar en un bloque propio que cubra: confirmación POR ESCRITO de alérgenos/intolerancias, señalización en el evento, precio por comensal y condiciones de cancelación — que es justo lo que pide §3/DOM-19 del representante y aquí el riesgo es mayor por el volumen de comensales de un banquete.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Orden seguro de apertura de cocina (gas antes de encender equipos)",
+   "fichero": "01-fb-buffet-desayuno.xlsx (Apertura Desayuno B6 'Encender hornos, planchas, baño maría y equipamiento') y 03-fb-restaurante-carte.xlsx",
+   "hallazgo": "La primera tarea de apertura de las cocinas de F&B es directamente 'encender' equipamiento, sin un paso previo de comprobación de la instalación de gas (campana → gas → encender), equivalente al ajuste DOM-13 del representante. Aplica solo si estos equipos son de gas (no se puede confirmar desde el Excel si son eléctricos/inducción).",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Custodia/archivo del registro de jornada laboral",
+   "fichero": "14-administracion.xlsx (RRHH Operativo B7 'Controlar fichaje de entrada/salida de todo el personal')",
+   "hallazgo": "Existe la tarea diaria de fichaje, pero no hay ninguna tarea (mensual o periódica) de cerrar/archivar el registro de jornada, obligación legal de custodia 4 años (RD-ley 8/2019) que sí se añadió en el representante como cambio DOM-17.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "Vida útil de congelación por familia de producto",
+   "fichero": "ninguno la tiene; el que más se acerca es 04-fb-outlets.xlsx (Pool Bar B27 'Almacenar licores y producto perecedero en cámara')",
+   "hallazgo": "No existe ninguna tabla de vida útil de congelación por familia de producto (carnes, pescados, elaborados), incorporada en el representante como DOM-29. Con múltiples outlets almacenando producto perecedero, sería una adición de valor razonable pero no urgente.",
+   "severidad": "baja"
+  }
+ ],
+ "notas": [
+  "Dry-run: exit 0. main.py --producto kit-tareas-hotel --dry-run --solo motor terminó 'TODO VERDE' (idempotencia 0 diferencias, inject_cache 99/99 fórmulas con cache, data_only 85 con valor/0 fallos, §6 OK, DV/bio OK, censo --fail OK).",
+  "Censo independiente (censo-entregables.py --only <copia> --fail --quiet) también exit 0, 19 ficheros, 0 defectos.",
+  "shasum -a256 confirma 17/19 ficheros byte-idénticos a astro-site/public/dl/kit-tareas-hotel/; solo 18-apertura-cierre-negocio.xlsx y 19-apertura-cierre-caja.xlsx cambian — exactamente el alcance declarado.",
+  "En ningún momento se escribió sobre astro-site/public/dl/**: se usó CLAUDE_SCRATCHPAD=.../propio-hotel y --dry-run (sin KIT_TAREAS_APPLY). No hubo git add/commit.",
+  "Temperatura CPU 39-40°C antes y durante los barridos (istats cpu temp), muy por debajo del umbral de 65°C; todo en serie, sin builds ni Playwright.",
+  "Los 14 hallazgos MOTOR de la R1 son todos de la lente 'dominio' (prefijo DOM-); no hay hallazgos con texto que empiece por 'MOTOR' en las lentes TEC/COM del JSON — se verificaron igualmente el resto de reglas técnicas de §8 (protección con insertRows=False≠bloqueado, anchos A=10/C=20 en el fichero de caja, alturas fijas, cabecera 'Cuándo', numerador con COUNTIFS que exige texto) contra el fichero regenerado, todas presentes.",
+  "El AVISO 'listas DV mezcladas' (4 hojas '✓,—,N/A' vs 48 hojas '✓,✗,—') es esperado y no es un defecto de este hermano: el propio encargo limita el alcance del motor a 18/19; los 17 ficheros 01-15/BONUS son contenido propio del kit de hotel, fuera de la familia ▸ que homogeneiza el motor.",
+  "bloquea_real=false: el motor no rompe nada y los 3 casos de §6 aplicables (arqueo cuadra/descuadra, contador honesto) dan OK; el caso '07 con 8 tareas' no aplica porque este kit no tiene fichero de plantilla personalizable."
+ ]
+}

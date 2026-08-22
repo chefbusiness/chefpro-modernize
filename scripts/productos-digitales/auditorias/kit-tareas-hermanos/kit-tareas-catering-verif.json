@@ -1,0 +1,158 @@
+{
+ "pid": "kit-tareas-catering",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 2,
+ "ficheros_intactos": 9,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra: fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800",
+   "ok": true,
+   "evidencia": "pycel sobre copia desechable 09-apertura-cierre-caja.xlsx: Apertura de Caja!C23=150 (fondo); Cierre de Caja!denominaciones→C43=1150; C50(tarjetas)=800; C53(Z)=1800 → C47=1150, C48(fondo)=150, C49(ventas efectivo)=1000, C52(TOTAL FACTURADO)=1800, C54(DESCUADRE)=0"
+  },
+  {
+   "caso": "Arqueo descuadra +10: mismos datos con Z 1.790",
+   "ok": true,
+   "evidencia": "Mismo escenario con Cierre de Caja!C53=1790 → C54=10 (pycel). CF ámbar confirmada: ws.conditional_formatting sobre C54, regla cellIs '0' (ámbar cuando ≠0)"
+  },
+  {
+   "caso": "Contador honesto: N/A sale del denominador, '—' NO",
+   "ok": true,
+   "evidencia": "pycel sobre copia de 08-apertura-cierre-negocio.xlsx, hoja Apertura del Negocio (18 tareas B5:B22): marcando 3 filas F='N/A' y 15 F='✓' → D29(numerador)=15, F29(denominador)=15 ('15 de 15'). Añadiendo además 1 fila con F='—' (sin tocar las N/A) → D29=14, F29=15 (el '—' resta del numerador pero NO del denominador, tal como exige §8/§2.1). Fórmulas: D29=COUNTIFS(B5:B27,\"?*\",F5:F27,\"✓\"); F29=COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\")"
+  },
+  {
+   "caso": "07 con 8 tareas escritas → 'x de 8'",
+   "ok": false,
+   "evidencia": "No aplica: 07-plantilla-personalizable.xlsx está FUERA DE ALCANCE del motor para este kit (molde P4, no reconocido por cabecera) — hash SHA-256 idéntico al original, el motor lo reporta 'FUERA DE ALCANCE (intacto)'. No hay caso que demostrar."
+  },
+  {
+   "caso": "08 sin tareas sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "Barrido de 08-apertura-cierre-negocio.xlsx: hoja Apertura del Negocio (18 tareas) y Cierre del Negocio (19 tareas), columnas D (Responsable) y E (Hora/Cuándo) — 0 filas con tarea y D o E vacíos en ambas hojas"
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist (08 y 09, único alcance del motor)",
+   "ok": true,
+   "evidencia": "08-apertura-cierre-negocio.xlsx: Apertura del Negocio F5:F27 y Cierre del Negocio F5:F24 = list \"✓,—,N/A\". 09-apertura-cierre-caja.xlsx: Apertura de Caja E5:E20 y Cierre de Caja E5:E21 = list \"✓,—,N/A\". Las 4 hojas de checklist en alcance, 0 incorrectas"
+  },
+  {
+   "caso": "Bio en todas las Instrucciones tocadas (08 y 09)",
+   "ok": true,
+   "evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones:B42 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es', B45='Versión 2.0 · agosto 2026 ·…'. 09-apertura-cierre-caja.xlsx:Instrucciones:B53 = misma bio, versión 2.0 anclada encima"
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja: A48='Fondo de caja inicial (−)', C48=\"=IFERROR('Apertura de Caja'!C23,0)\"; A49='Ventas en efectivo (contado − fondo)', C49='=IFERROR(C47-C48,0)'; C52(TOTAL FACTURADO)='=C49+C50+C51'; C54(DESCUADRE)='=IFERROR(C52-C53,0)'. Demostrado por pycel: fondo 150/efectivo 1150/tarjetas 800/Z 1800 → 0; Z 1790 → +10"
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:A41='0,02 €', C41='=B41*0.02', con DV whole≥0 en B27:B42 (incluye B41)"
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Registro Mensual fila 4: G4='Z del TPV' antes de H4='Descuadre'; F5='=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)' (Total Facturado descuenta fondo), H5='=IFERROR(F5-G5,0)' con CF ámbar en H5:H35"
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Apertura de Caja:B7='Anotar el fondo de caja en la celda verde de abajo' (sin coordenada hardcodeada), y la celda C23 (fill E8F5E9, verde) es la que lee Cierre de Caja!C48. La tarea no cita 'C23' en el texto"
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx: 18 tareas de Apertura del Negocio (B5:B22) + 19 de Cierre del Negocio (B5:B19), todas con Responsable='Encargado' y Hora precargada (07:00-07:30 en apertura, 'Cierre' en cierre); 0 filas con tarea y D/E vacíos"
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "no aplica",
+   "evidencia": "07-plantilla-personalizable.xlsx FUERA DE ALCANCE del motor para este kit — SHA-256 idéntico al original (2f87c3a1e7...), el contexto del motor detecta sólo 08/09 en alcance ('en alcance 2/11'). El resto del kit (01-07+BONUS) es otro molde P4 y queda intacto por diseño de esta tarea"
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "Este kit NO tiene la misma topología que el representante: 01-apertura-cierre.xlsx sólo trae hojas ['Instrucciones','Producción'] (no hay 'Cierre Sala' con bloques CIERRE GENERAL/CIERRE DE CAJA que reducir). El motor sí resolvió la jerarquía ENTRE 08 y 09 (08:Instrucciones:B33-B38 'Se conecta con' → 08=LOCAL, 09=CAJA, 'Orden de uso: local → caja'; 09:B44-B49 análogo), pero no hay remisión hacia 01/Producción porque ese fichero es de otro molde y queda fuera del alcance del motor — el solape de tres checklists de la R1 original no se repite aquí tal cual"
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "Fórmulas D29/F29 en 08 (ver casos6) confirmadas por pycel: N/A sale del denominador, '—' NO"
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio: 5 filas libres B23:B28→(F23,F27 con fill 00E8F5E9 confirmado) dentro del rango contado B5:B27 (denominador F29 usa B5:B27), con DV list en F23:F27"
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "08 y 09: DV '✓,—,N/A' en las 4 hojas de checklist, fill E8F5E9 en celdas editables (C23 fondo, Responsable/Hora, filas libres), contador agrupado con COUNTIFS/COUNTIF, Instrucciones con molde ▸ ('Cómo usar', 'Se conecta con'), page_setup.orientation='landscape' en las 4 hojas de 8/menos columnas, hojas protegidas sin contraseña con celdas verdes desbloqueadas, columna 'Notas' conservada (G en 08, F en 09)"
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Instrucciones tiene contenido PROPIO de caja (B6 'El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre…', B10 'Cuenta el fondo y escribe el importe…', B17 'DESCUADRE = TOTAL FACTURADO − Z del TPV…'), distinto del texto de 08-apertura-cierre-negocio.xlsx:Instrucciones (sobre el checklist del local) — no es copia-pega"
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "resuelto",
+   "evidencia": "08↔09 se remiten mutuamente en el bloque 'Se conecta con' de sus Instrucciones (evidencia en DOM-09). No se encontraron referencias a APPCC ni a otros documentos externos en 08/09 de este kit (grep vacío sobre ambos ficheros) que necesitaran reescribirse — la parte de la regla sobre 'referencias a Pack APPCC → anota en Notas' no aplica porque este kit no las tenía"
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:Cierre del Negocio:E4='Cuándo' (la columna E sólo contiene el literal 'Cierre' en las 15 filas de tarea, ningún valor horario) frente a Apertura del Negocio:E4='Hora Límite' (valores reales 07:00-07:30) y Apertura/Cierre de Caja:E4/D4='Hora Límite' (valores horarios reales) — cabecera decidida por contenido real de la columna, no por defecto"
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "Bio anclada verificada en ambos Instrucciones tocados (ver casos6): 08:B42 y 09:B53, versión '2.0 · agosto 2026' inmediatamente debajo"
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "anisakis / pescado crudo o semicurado",
+   "fichero": "06-eventos-festivos.xlsx",
+   "hallazgo": "Hoja 'Cocktail Standing', B8: 'Preparar estaciones de acción: ceviche, tartar, wok' — ceviche y tartar implican pescado/carne crudos o semicurados servidos sin cocción posterior, y en NINGÚN fichero del kit (01 Producción, 02 Transporte, 06 eventos) hay una tarea de congelación previa preventiva de anisakis (≥24h a −20°C / 15h a −35°C). El kit base (representante) sí la incorporó en DOM-02 (alta); este equivalente de catering — con estaciones de showcooking en vivo servidas al momento — es al menos igual de crítico porque no hay margen de reacción del comensal.",
+   "severidad": "alta"
+  },
+  {
+   "tema": "registro de jornada del equipo",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "El checklist de Event Manager (Pre-Evento/Montaje/Servicio/Post-Evento, B6-B47) no incluye ninguna tarea de cierre y validación del registro horario del personal (obligatorio en España desde 2019), pese a que el kit gestiona equipos temporales/extra por evento donde este control es especialmente sensible. El representante lo añadió con DOM-17 ('Cerrar y validar el registro diario de jornada del equipo' + archivo mensual); aquí no tiene equivalente en ninguna cadencia (diaria del evento ni mensual).",
+   "severidad": "media"
+  },
+  {
+   "tema": "vida útil de congelación por familia de producto",
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "hallazgo": "No hay ninguna tabla ni referencia de vida útil de congelación por familia (carnes, pescados, salsas, masas) pese a que 01-Producción maneja explícitamente congelación (B18, B26) y el catering trabaja con producción anticipada D-1/D-3. El representante añadió esta tabla con DOM-29; aquí el kit no orienta sobre cuánto tiempo es seguro mantener congelado lo preparado con antelación para varios eventos.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "temperaturas con signo no normalizado",
+   "fichero": "02-partidas-cocina.xlsx",
+   "hallazgo": "Hoja 'Transporte', B8: 'Pre-enfriar vehículo a temperatura objetivo (≤5°C frío, ≤-18°C congelado)' usa guion ASCII (U+002D) en '-18°C' en vez del signo menos tipográfico U+2212 que exige la normalización transversal (DOM-R2-22) aplicada ya al resto del corpus saneado. Cosmético pero rompe la consistencia del kit.",
+   "severidad": "baja"
+  },
+  {
+   "tema": "orden seguro de apertura (gas/campana antes de equipos)",
+   "fichero": "01-apertura-cierre.xlsx",
+   "hallazgo": "'Producción' (off-site) no tiene una secuencia explícita de seguridad al iniciar la jornada de cocina (campana → comprobar gas → encender equipos), pese a que D-1 y día D incluyen sous-vide, hornos y freidoras (B22, B31). El representante fijó este orden con DOM-13; aquí no hay tarea equivalente, aunque el impacto es menor porque la producción es en cocina propia habitual, no de campo.",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": false,
+ "notas": [
+  "Dry-run: python3 kit-tareas-v2_0/main.py --producto kit-tareas-catering --dry-run --solo motor → EXIT 0, 'TODO VERDE (idempotencia, cache, §6, DV, bio, censo)'; idempotencia 0 diferencias en 2.ª pasada; inject_cache 08=4/4, 09=95/95 sin fallos pycel; data_only 85 con valor/0 fallos.",
+  "censo-entregables.py --only <copia> --fail --quiet corrido de forma independiente sobre la copia del dry-run → EXIT 0, 0 defectos.",
+  "shasum -a 256 de los 11 xlsx: 01,02,03,04,05,06,07,BONUS-01,BONUS-02 son BYTE A BYTE idénticos al original en astro-site/public/dl/kit-tareas-catering/ (9 ficheros intactos); sólo 08 y 09 cambian de hash (2 ficheros tocados). Ningún fichero de astro-site/public/dl/ fue modificado — todo el trabajo se hizo en la copia de /private/tmp del scratchpad propio.",
+  "AVISO del propio motor (TEC-R2-08, informativo, no bloqueante): el producto tiene MÁS de una lista de desplegable en todo el kit ('✓,—,N/A' en las 4 hojas tocadas de 08/09 frente a '✓,✗,—' en 17 hojas de 01-07/BONUS que quedan fuera de alcance) — es la consecuencia esperada de que el motor sólo puede tocar 08/09 en este hermano; no es una regresión.",
+  "kit-tareas-catering NO tiene la topología 'checklist LOCAL (08=marco) / detalle por ÁREA (01) / CAJA (09)' del representante: su 01-apertura-cierre.xlsx es en realidad una hoja de 'Producción' off-site (planificación, D-1, día D), sin 'Cierre Sala' ni bloques CIERRE GENERAL/CIERRE DE CAJA que colapsar. DOM-09 y DOM-23 se marcan 'parcial'/'resuelto' con esa salvedad explícita.",
+  "El motor no toca contenido de sector (anisakis, jornada, vida útil de congelación, etc.) por diseño — esos 5 hallazgos van en contenido_pendiente como candidatos a una mini-ronda de contenido, sin corregirlos.",
+  "Temperatura de CPU monitorizada con istats antes de cada barrido pesado (42-44 °C durante toda la sesión); no hizo falta pausar."
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "pid": "kit-tareas-chocolateria",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "ficheros_tocados": 2,
+ "ficheros_intactos": 9,
+ "casos6": [
+  {
+   "caso": "Arqueo cuadra: fondo 150, efectivo contado 1150, tarjetas 800, otros 0, Z 1800 → descuadre 0",
+   "ok": true,
+   "evidencia": "09:Cierre de Caja C48=IFERROR('Apertura de Caja'!C23,0); C49=IFERROR(C47-C48,0); C52=C49+C50+C51; C54=IFERROR(C52-C53,0). Cálculo manual: C47(TOTAL EFECTIVO)=1150, C48(fondo)=150, C49=1000, C50=800, C51=0, C52=1800, C53(Z)=1800, C54=0. CF ámbar en C54 cellIs notEqual 0 confirmada."
+  },
+  {
+   "caso": "Arqueo descuadra: mismos valores con Z=1790 → descuadre +10 y CF ámbar",
+   "ok": true,
+   "evidencia": "C54=C52-C53=1800-1790=10, dispara la regla CF cellIs notEqual '0' sobre C54 (rango único, priority=2)."
+  },
+  {
+   "caso": "Contador honesto (N/A sale del denominador, '—' se queda dentro)",
+   "ok": true,
+   "evidencia": "08:Apertura del Negocio D28=COUNTIFS(B5:B26,\"?*\",F5:F26,\"✓\"); F28=COUNTIF(B5:B26,\"?*\")-COUNTIF(F5:F26,\"N/A\") — sin resta de '—', conforme a SPEC §8/§2.1 R2. Ejecución del motor reportó '14 de 14' OK en su propio caso interno de prueba."
+  },
+  {
+   "caso": "07 con 8 tareas escritas → 'x de 8'",
+   "ok": true,
+   "evidencia": "No aplica: 07-plantilla-personalizable.xlsx está FUERA DE ALCANCE del motor para este kit (hash idéntico al fichero live, no tocado)."
+  },
+  {
+   "caso": "08: ninguna tarea sin Responsable/Hora",
+   "ok": true,
+   "evidencia": "Barrido programático de 08:Apertura del Negocio y Cierre del Negocio, filas 5-26, columnas Responsable(C)/Hora(D): 0 filas con tarea en B y hueco en C o D."
+  },
+  {
+   "caso": "DV '✓,—,N/A' en todas las hojas de checklist tocadas",
+   "ok": true,
+   "evidencia": "Confirmado en 09:Apertura de Caja!E5:E20, 09:Cierre de Caja!E5:E21, 08:Apertura del Negocio!F5:F26, 08:Cierre del Negocio!F5:F24 — las 4 hojas leídas con openpyxl.data_validations, formula1='\"✓,—,N/A\"' exacto en las 4."
+  },
+  {
+   "caso": "Bio anclada en las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "08:Instrucciones!B42 y 09:Instrucciones!B53 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es', verificado por grep de 'Guerrero' en ambos workbooks."
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09:Cierre de Caja ya no compara efectivo bruto contra la Z: C48 trae el fondo desde 'Apertura de Caja'!C23, C49=C47-C48 (ventas en efectivo netas de fondo), C52=C49+C50+C51, C54=C52-C53. Verificado con los dos casos numéricos de §6 (0 y +10)."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09:Cierre de Caja, tabla de denominaciones: A41='0,02 €' con B41=0 y C41='=B41*0.02', entre A40='0,05 €' y A42='0,01 €'. C43=SUM(C27:C42) incluye la fila. Serie completa de 8 monedas presente."
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09:Registro Mensual, cabecera G4='Z del TPV', H4='Descuadre'. H5:H35='=IFERROR(F5-G5,0)'. Fila 36 (TOTALES): G36=SUM(G5:G35), H36='=SUMIF(H5:H35,\">0\")-SUMIF(H5:H35,\"<0\")' (regla R2: no se compensan positivos y negativos)."
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09:Apertura de Caja, B23='Fondo de caja inicial (€)' con celda de entrada C23 (verde, referenciada por 09:Cierre de Caja!C48) y D23 explica 'Se descuenta del efectivo en el Cierre de Caja'. Tarea B7='Anotar el fondo de caja en la celda verde de abajo'."
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "resuelto",
+   "evidencia": "08:Apertura del Negocio (17 tareas) y Cierre del Negocio (15 tareas): columnas Responsable/Cuándo pobladas al 100% (0 huecos en barrido programático de filas 5-26); ejemplo C5='Encargado', D5='07:00' en Apertura, C5='Encargado', D5='Cierre' en Cierre."
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "no aplica",
+   "evidencia": "07-plantilla-personalizable.xlsx queda FUERA DE ALCANCE del motor para este hermano (kit-tareas-chocolateria está en el grupo '08/09 únicamente' de §5). El fichero es byte a byte idéntico al publicado en producción (shasum coincide), así que el denominador clavado a 15 sigue como estaba."
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "08 y 09 se remiten explícitamente entre sí en sus Instrucciones ('Se conecta con': 08=LOCAL/marco, 09=CAJA, 'Orden de uso: local → caja. No se duplican'). Pero 01-apertura-cierre.xlsx —que contiene los bloques 'CIERRE DE CAJA'/'CIERRE GENERAL' duplicados que originan el hallazgo— está fuera de alcance para este kit y permanece intacto (hash idéntico al live), así que la duplicación CRUZADA con 01 no queda resuelta en este producto."
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "parcial",
+   "evidencia": "Resuelto en 08/09: D22/E22 de 'Apertura de Caja', C23/D23 de 'Cierre de Caja' y D28/F28 de 08 usan COUNTIFS/COUNTIF sobre el rango real de tareas escritas, sin denominador fijo. No aplica a 01-07 y BONUS-01/02: los 9 ficheros restantes están fuera de alcance y byte a byte idénticos al live, así que su estado del contador (si tenían el problema) no ha cambiado."
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "no aplica",
+   "evidencia": "El hallazgo original apunta a 01 (y por extensión 02-06), todos fuera de alcance del motor para este kit; los 6 ficheros permanecen intactos (hash idéntico al live)."
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "Las 4 hojas de checklist de 08/09 usan DV '\"✓,—,N/A\"' (verificado con openpyxl.data_validations en las 4), relleno editable E8F5E9 confirmado en columnas Responsable/Hora/✓/Notas de 08:Apertura del Negocio, e Instrucciones con el molde de viñetas '▸' (título/Qué resuelve/Cómo usar/Celdas editables/Cómo cuenta el contador/Filas libres/Protección/Se conecta con) en ambos ficheros."
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09:Instrucciones tiene contenido PROPIO de caja: B6 explica el arqueo (fondo, recuento por denominaciones, Z del TPV, descuadre, registro mensual), B14-B17 detallan el flujo de Cierre de Caja con las fórmulas del fondo, y no reutiliza el texto de 08 ('checklist del LOCAL COMPLETO')."
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "no aplica",
+   "evidencia": "Ningún texto de 08 o 09 contiene la cadena 'APPCC' (barrido completo de las dos hojas de tareas y de Instrucciones de ambos ficheros): el hallazgo, que trata de referencias colgantes al Pack APPCC, no tiene ninguna instancia en las dos hojas dentro de alcance de este kit."
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "no aplica",
+   "evidencia": "El hallazgo apunta a las cabeceras de 03/05/06 (fuera de alcance). En 08/09 la cabecera es 'Hora Límite' en Apertura de Caja/del Negocio (columna con horas reales tipo 07:00-07:45) y 'Cuándo' en Cierre de Caja/del Negocio (columna que mezcla hitos como 'Cierre'), conforme a la regla R2 §2.4 de renombrar a 'Cuándo' cuando hay hitos en vez de horas."
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "El hallazgo original apunta a los 9 ficheros SIN bio (01-07+BONUS), fuera de alcance en este kit. Dentro de alcance, 08 y 09 —que ya eran los 2 ficheros CON bio en la familia— la conservan intacta: 'Diseñado por John Guerrero…' presente en B42 de 08:Instrucciones y B53 de 09:Instrucciones."
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Temperatura de cierre del obrador sin objetivo ni hueco de lectura",
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "hallazgo": "La tarea de Apertura (fila 17) sí lleva el objetivo en el texto — 'Verificar temperatura obrador (18-20 °C)' — pero la tarea equivalente de Cierre (fila 15) dice solo 'Registrar temperatura de cierre del obrador', sin rango objetivo ni hueco '____ °C' para anotar la lectura. El normalizador de temperaturas del motor (texto_temperatura) no la toca porque exige un equipo de frío en el texto (cámara/congelador/nevera/vitrina) y 'obrador' no lo es — comportamiento correcto del motor, pero deja sin resolver la inconsistencia propia del contenido de chocolatería entre apertura y cierre.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Vitrinas temperadas sin objetivo de temperatura propio",
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "hallazgo": "Las tareas 'Encender vitrinas temperadas' (apertura, fila 16) y 'Apagar vitrinas temperadas' (cierre, fila 14) son de encendido/apagado, no de control de temperatura — correcto que el motor no las toque —, pero en un obrador de chocolate/bombones el punto crítico es que la vitrina MANTENGA el rango de temperatura (típicamente 16-18 °C para bombonería, por debajo del punto de fusión de la manteca de cacao), y ese control no aparece en ninguna tarea de 08 ni 09. Es un hueco de contenido específico del sector, no cubierto por el checklist de apertura/cierre del negocio.",
+   "severidad": "media"
+  },
+  {
+   "tema": "09 no distingue caja de mostrador/venta al peso, típica en chocolatería-bombonería",
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "hallazgo": "Las tareas de caja son genéricas de hostelería (TPV, datáfono, Bizum). Una chocolatería con venta de bombones al peso o cajas personalizadas suele tener un paso adicional de cuadre de peso/etiquetado en el punto de venta que no aparece aquí; no es un defecto del motor (el fichero de caja es de familia, no de contenido por producto) pero es una oportunidad de contenido que ni R1 ni el módulo de contenido de chocolatería cubren, dado que sólo se corrió el motor en esta pasada.",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": false,
+ "notas": [
+  "Alcance real confirmado por el propio motor: 'kit «Chocolatería / Bombonería» · en alcance 2/11' — sólo 08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx están dentro del motor para este kit; los otros 9 ficheros quedan FUERA DE ALCANCE (intactos) y así se confirmó por shasum: hash idéntico al publicado en astro-site/public/dl/kit-tareas-chocolateria/ en los 9 (01-07 + BONUS-01/02).",
+  "dry-run exit 0, idempotencia 0 diferencias entre 1ª y 2ª pasada sobre un clon, inject_cache 4+95=99 fórmulas con cache inyectado y 0 fallos de pycel, data_only 85 fórmulas con valor y 0 fallos.",
+  "censo-entregables.py --only <copia> --fail --quiet ejecutado de forma independiente (no sólo el que corre main.py internamente): exit 0, 11 ficheros censados (11 xlsx, 0 docx, 0 pdf), 0 defectos.",
+  "No se tocó astro-site/public/dl/** en ningún momento: todo el trabajo se hizo con CLAUDE_SCRATCHPAD apuntando a un directorio propio (propio-kit-tareas-chocolateria) dentro del scratchpad de la sesión, sin KIT_TAREAS_APPLY.",
+  "Casos numéricos de §6 (arqueo 0 y +10) verificados A MANO leyendo las fórmulas con openpyxl y sustituyendo valores, no sólo confiando en el resumen que imprime main.py — coinciden exactamente.",
+  "El AVISO TEC-R2-08 que imprime el motor ('el producto tiene MÁS de una lista de desplegable: ✓,—,N/A en 4 hojas frente a ✓,✗,— en 20 hojas') es esperado y no bloqueante: refleja que 01-07+BONUS quedan fuera de alcance con su DV previo, mientras 08/09 ya están unificados a ✓,—,N/A.",
+  "No se revisó la landing (kit-tareas-chocolateria.ts) ni el caso '0 menciones a Trail con precio' del §6, porque el encargo de esta verificación es el motor sobre los .xlsx de 08/09, no la capa comercial/producto (§4 de la SPEC), que corresponde a otro agente."
+ ]
+}

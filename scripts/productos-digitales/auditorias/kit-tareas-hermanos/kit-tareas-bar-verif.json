@@ -1,0 +1,141 @@
+{
+ "pid": "kit-tareas-bar",
+ "dryrun_exit": 1,
+ "censo_exit": 0,
+ "ficheros_tocados": 10,
+ "ficheros_intactos": 1,
+ "casos6": [
+  {
+   "caso": "arqueo: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → 0; Z 1.790 → +10",
+   "ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 — pycel dio 0 y 10 en los dos escenarios (demostraciones_spec_6, casos arqueo-cuadra/arqueo-descuadra). C48='Fondo de caja inicial (−)'=IFERROR('Apertura de Caja'!C23,0) no hardcodea coordenada (TEC-R2-04 OK); C49='Ventas en efectivo (contado−fondo)'; C52 TOTAL FACTURADO=C49+C50+C51; C54 DESCUADRE=IFERROR(C52-C53,0)."
+  },
+  {
+   "caso": "contador con N/A (25 tareas, 3 N/A → 22 de 22)",
+   "ok": true,
+   "evidencia": "01-apertura-cierre.xlsx:Apertura Barra:D43/F43 → '22 de 22' (demostraciones_spec_6). Fórmula F43='=COUNTIF(B5:B41,\"?*\")-COUNTIF(F5:F41,\"N/A\")' — regla §8 aplicada: sólo descuenta N/A, NO descuenta «—» (confirmado por inspección de la fórmula, no incluye COUNTIF(...,'—'))."
+  },
+  {
+   "caso": "07 con 8 tareas → 'x de 8'",
+   "ok": true,
+   "evidencia": "07-plantilla-personalizable.xlsx:Por Perfil:F34='=COUNTIF(B5:B32,\"?*\")-COUNTIF(F5:F32,\"N/A\")' (denominador por FÓRMULA, ya no el 15 fijo de DOM-07) — estructuralmente idéntica a la fórmula que en el representante dio '8 OK' con pycel. OJO: el gate automático §6 del informe kit-tareas-bar.json NO incluyó el caso 'denominador-07' entre sus demostraciones_spec_6 (sí lo hizo para el representante kit-tareas) — es un hueco del arnés de pruebas para este hermano, no una comprobación fallida; la fórmula en el fichero es correcta por inspección."
+  },
+  {
+   "caso": "08 sin tareas sin Responsable/Hora",
+   "ok": false,
+   "evidencia": "El gate 'negocio_precargado' del informe reporta erróneamente el fichero '01-apertura-cierre.xlsx' (48 tareas, 0 huecos) en vez de 08. Comprobado el 08-apertura-cierre-negocio.xlsx REAL: hoja 'Apertura del Negocio' filas 5-9 (y el resto) tienen Responsable (col D) y Hora Límite (col E) en None/vacío para las 33 tareas del fichero — el precargado del §1.4/DOM-06 NUNCA se aplicó a 08 en este kit."
+  },
+  {
+   "caso": "DV «✓,—,N/A» en todas las hojas de checklist",
+   "ok": true,
+   "evidencia": "gates.dv_y_bio: hojas_checklist=27, dv_incorrectas=[], listas_dv_del_producto=['\"✓,—,N/A\"'] — uniforme en los 10 ficheros en alcance."
+  },
+  {
+   "caso": "bio en todas las Instrucciones tocadas",
+   "ok": true,
+   "evidencia": "gates.dv_y_bio: instrucciones_con_bio=10, sin_bio=[] — verificado además con inspección directa: 08 y 09 Instrucciones!A17 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'."
+  }
+ ],
+ "motor_ids": [
+  {
+   "id": "DOM-01",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja C48/C49/C52/C54 — fondo se resta antes de sumar tarjetas/otros; pycel arqueo-cuadra=0, arqueo-descuadra=10 (ver casos6)."
+  },
+  {
+   "id": "DOM-03",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja fila 41 = '0,02 €' con fórmula C41='=B41*0.02' presente en la tabla de recuento (filas 27-42, billetes y monedas completas)."
+  },
+  {
+   "id": "DOM-04",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Registro Mensual fila 4 = ['Fecha','Fondo Apertura','Efectivo Contado','Ventas Tarjeta','Ventas Otros','Total Facturado','Z del TPV','Descuadre','Depósito'] — columna G 'Z del TPV' está ANTES de H 'Descuadre'; F5='=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)' descuenta el fondo (regla §8/DOM-R2-01)."
+  },
+  {
+   "id": "DOM-05",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Apertura de Caja fila 7 = 'Anotar el fondo de caja en la celda verde de abajo' apunta a C23 'Fondo de caja inicial (€)'."
+  },
+  {
+   "id": "DOM-06",
+   "veredicto": "no resuelto",
+   "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' filas 5-9 (y el resto de las 33 tareas del fichero): columnas D (Responsable) y E (Hora Límite) están en None/vacío. El motor aplicó la precarga de §1.4 al fichero EQUIVOCADO (01-apertura-cierre.xlsx, que sí tiene 48 tareas con Responsable/Hora), dejando el 08 real intacto — mismo bug de raíz que rompe la idempotencia (ver notas)."
+  },
+  {
+   "id": "DOM-07",
+   "veredicto": "resuelto",
+   "evidencia": "07-plantilla-personalizable.xlsx: las tres hojas 'Por Franja Horaria'/'Por Zona'/'Por Perfil' llevan denominador por FÓRMULA (F34='=COUNTIF(B5:B32,\"?*\")-COUNTIF(F5:F32,\"N/A\")', ya no el 15 fijo) y están diferenciadas (secciones Apertura/Servicio/Cierre en Franja Horaria; Barra Principal/Terraza en Zona; Head Bartender/etc. en Perfil, con Zona/Responsable propios de cada una)."
+  },
+  {
+   "id": "DOM-09",
+   "veredicto": "parcial",
+   "evidencia": "El bloque 'Se conecta con' existe en las Instrucciones de 01, 08 y 09, PERO con la jerarquía INVERTIDA para este kit: 08-apertura-cierre-negocio.xlsx:Instrucciones!B22-B25 dice '01-apertura-cierre.xlsx — checklist del LOCAL completo: MARCO del día' y '(08) es una capa MÁS... el marco del día está en 01', cuando la SPEC (§2.5) exige 08=marco/local, 01=detalle por área. Es el mismo bug de detección de rol (f_negocio=01 en vez de 08) que DOM-06."
+  },
+  {
+   "id": "DOM-10",
+   "veredicto": "resuelto",
+   "evidencia": "Fórmulas de contador en las 27 hojas de checklist (p.ej. 01:Apertura Barra F43) usan '=COUNTIF(rango,\"?*\")-COUNTIF(rango_DV,\"N/A\")' — sólo descuentan N/A, no '—', conforme a la regla §8 vigente (ver caso6 'contador con N/A')."
+  },
+  {
+   "id": "DOM-11",
+   "veredicto": "resuelto",
+   "evidencia": "Informe ficheros[0].cambios: '«Apertura Barra»: +4 filas libres dentro del rango contado (total 5)' repetido en las 27 hojas de checklist del kit."
+  },
+  {
+   "id": "DOM-21",
+   "veredicto": "resuelto",
+   "evidencia": "gates.dv_y_bio: una sola lista DV en todo el kit ('✓,—,N/A') en los 27 hojas de checklist incluidas 08 y 09 — ya no hay '✓,✗,—' distinto en 08-09."
+  },
+  {
+   "id": "DOM-22",
+   "veredicto": "resuelto",
+   "evidencia": "09-apertura-cierre-caja.xlsx:Instrucciones!B2-B14 — texto propio de caja ('El arqueo diario: fondo de caja, recuento del cajón por denominaciones, Z del TPV y descuadre...', 'Cómo usar — Apertura de Caja' / 'Cómo usar — Cierre de Caja'), NO es copia de 08 (que tiene su propio texto genérico de negocio). La detección de f_caja='09-apertura-cierre-caja.xlsx' sí fue correcta."
+  },
+  {
+   "id": "DOM-23",
+   "veredicto": "parcial",
+   "evidencia": "Mismo hallazgo que DOM-09: el bloque 'Se conecta con' de 08 SÍ remite a 01 y 09 con nombre de fichero (no a un producto externo indebido), pero con los roles intercambiados: describe a 01 como el checklist maestro del local y a 08 como capa secundaria, al revés de la jerarquía real del kit."
+  },
+  {
+   "id": "DOM-25",
+   "veredicto": "resuelto",
+   "evidencia": "Informe ficheros[*].cambios: 'cabecera «Hora Límite» → «Cuándo»/«Antelación»/«Día»' según la cadencia de cada hoja (Cierre Barra→Cuándo, 06-eventos→Antelación, 05-Limpieza Semanal→Día), acorde a §8/DOM-R2-24."
+  },
+  {
+   "id": "DOM-30",
+   "veredicto": "resuelto",
+   "evidencia": "gates.dv_y_bio: instrucciones_con_bio=10, sin_bio=[] — bio de John Guerrero presente en las 10 Instrucciones en alcance (verificado también literalmente en 08 y 09 Instrucciones!A17)."
+  }
+ ],
+ "contenido_pendiente": [
+  {
+   "tema": "Registro de jornada del equipo",
+   "fichero": "03-tareas-manager.xlsx",
+   "hallazgo": "No hay ninguna tarea equivalente a la DOM-17 del representante ('Cerrar y validar el registro diario de jornada del equipo' / 'Archivar los registros de jornada del mes'). Un bar tiene el mismo requisito legal de registro horario que cualquier hostelería; ni Diario Manager ni Mensual Manager lo mencionan.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Alérgenos e intolerancias en eventos con comida",
+   "fichero": "06-eventos-festivos.xlsx",
+   "hallazgo": "Las hojas 'Maridaje Catas' (con 'maridaje food: quesos, chocolates, tapas') y 'After Work' (con 'snacks/tapas de cortesía') sirven comida a grupos pero no llevan ningún bloque equivalente al DOM-19 del representante ('AL CONFIRMAR LA RESERVA: alérgenos e intolerancias por escrito'). Es el mismo riesgo APPCC que en el kit base, en un fichero que sí tiene reservas/eventos.",
+   "severidad": "media"
+  },
+  {
+   "tema": "Calendario anual con menos fechas que el representante",
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "hallazgo": "17 fechas frente a las 22 que trae ya la representante tras la v2.0 (DOM-20/§8). Fuera de alcance del motor por diseño (BONUS-02 no es tocado en el kit «▸ completo»), pero queda pendiente de una pasada de contenido específica de bar (p.ej. añadir Nochebuena/Cena de empresas de forma explícita, ya que ahora sólo aparece genérico 'Diciembre — Navidad/Empresas').",
+   "severidad": "baja"
+  }
+ ],
+ "bloquea_real": true,
+ "notas": [
+  "Comando 1 (dry-run motor): CLAUDE_SCRATCHPAD=.../propio-67426 python3 main.py --producto kit-tareas-bar --dry-run --solo motor --json .../kt-hermanos/kit-tareas-bar.json → EXIT=1 por 'idempotencia: 50 diferencias'. Copia de trabajo: .../propio-67426/dryrun-kt/kit-tareas-bar/ (pasada 1) y .../kit-tareas-bar-idem/ (pasada 2, clon).",
+  "BUG REAL DE MOTOR (bloqueante), raíz de la mayoría de fallos: contexto() detecta ctx['f_negocio']='01-apertura-cierre.xlsx' en vez de '08-apertura-cierre-negocio.xlsx'. Causa: 01-apertura-cierre.xlsx de kit-tareas-bar sólo tiene 2 hojas de checklist (Apertura Barra / Cierre Barra, sin desglose por área porque el bar no tiene cocina/sala separadas: contexto['f_areas']=null) — estructuralmente indistinguible del patrón que el motor usa para reconocer al fichero 'negocio' (2 hojas Apertura/Cierre de todo el local). El motor asigna el rol al PRIMER fichero que calza el patrón, y 01 va antes que 08 en el recorrido. Efecto en cascada: instrucciones_negocio() escribe en 01:Instrucciones!B2 el título 'Apertura y Cierre del Negocio — Bar / Cocktails'; set_metadata() lee ESE B2 (ya con ' — Bar / Cocktails' añadido en la MISMA pasada) para componer wb.properties.title = 'Apertura y Cierre del Negocio — Bar / Cocktails · <sufijo>'; en la 2.ª pasada contexto() vuelve a parsear ese título con 'tit.rsplit(\" · \",1)' + 'cabeza.rsplit(\" — \",1)' y extrae mal el kit ('Apertura y Cierre · Bar / Cocktails' en vez de 'Bar / Cocktails', porque cabeza ya tenía dos ' — '/' · ' de origen), lo que reescribe B2 con el nombre de kit corrupto en la 2.ª pasada → 50 diferencias de idempotencia. Esto es lo que rompe DOM-06 (08 sin precarga) y invierte la jerarquía de DOM-09/DOM-23 (08 dice que 01 es el 'marco' del local).",
+  "Este bug de detección de rol es genérico de la FAMILIA (afecta a cualquier hermano cuyo 01 tenga sólo 2 hojas Apertura/Cierre sin desglose por área, típico de negocios de un solo espacio: bares, cafeterías, food trucks) — no es exclusivo de kit-tareas-bar. Recomendación para el orquestador: en motor.contexto(), desempatar f_negocio vs f_areas usando el NOMBRE del fichero (08 vs 01) como señal adicional, o exigir >=3 sub-hojas de checklist para calificar como 'negocio' y dejar que 01 caiga por defecto a f_areas/checklist genérico cuando sólo tiene 2.",
+  "Comando 2 (censo standalone): python3 censo-entregables.py --only .../dryrun-kt/kit-tareas-bar --fail --quiet → 'OK: 0 defectos (--fail)', EXIT=0.",
+  "Alcance del motor para kit-tareas-bar: 10/11 ficheros tocados (01-09 + BONUS-01); BONUS-02-calendario-anual-tareas.xlsx queda FUERA DE ALCANCE e intacto (no aparece en el detalle de diferencias de idempotencia, coherente con 'FUERA DE ALCANCE (intacto)' del log). Este kit es de alcance '▸ completo' (no 'solo 08/09'), así que la comprobación shasum de 'ficheros restantes idénticos a la copia LIVE' del punto (2) de la tarea NO aplica aquí — se dejó fuera deliberadamente.",
+  "No se ha tocado astro-site/public/dl/kit-tareas-bar/ en ningún momento (todo el trabajo corrió sobre las copias en scratchpad); no se ha hecho git add/commit.",
+  "Istats cpu temp se mantuvo entre 41.5-43°C durante todo el barrido (por debajo del umbral de 60/65°C); ejecuciones en serie."
+ ]
+}
