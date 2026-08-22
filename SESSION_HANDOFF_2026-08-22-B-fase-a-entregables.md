@@ -124,3 +124,29 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
   (17→19 registros y sin «PDF export»).
 - Registro: `auditorias/pack-appcc-v2-construccion.json`.
 - **Siguiente: `kit-tareas`** (representante «▸») — R1 lanzada al cerrar este bloque.
+
+## 7. Tercer representante: **Kit de Tareas Recurrentes v2.0** (familia «▸», madrugada del 23-ago) — `228bfd0`/`de9f961`
+
+- R1: 81 hallazgos / 7 altas, cada uno etiquetado MOTOR (se repite en los hermanos) o CONTENIDO
+  (`auditorias/kit-tareas-R1.json`). Lo grave: el **arqueo de caja descuadraba cada día por el
+  importe del fondo** (nunca lo restaba; mismo bug que pastelería v2.0 ya resolvió; el fichero va en
+  12 kits), 08/09 de otro generador (otra paleta, otro desplegable, sin responsables), contador que
+  cuenta las N/A como pendientes, 07 con el denominador clavado a 15.
+- SPEC v2.0 (`kit-tareas-v2-SPEC.md`, §8 = reglas que cambiaron en la ronda 2): **motor de familia**
+  (`kit-tareas-v2_0/motor.py`, detecta las hojas por CABECERA; `main.py --producto <pid>`) +
+  `contenido_kit_tareas.py` (higiene personal, orden seguro del gas, anisakis, jornada, mantenimiento
+  legal trimestral/anual, calendario…). Probado en kit-tareas, cafetería y hotel (sus 01-17 quedan
+  byte a byte).
+- 3 refutadores (61, JSON a fichero) → corrección 61/61 → ronda 2 «listo» → 2.ª vuelta para un guion
+  ASCII → real: 0 diferencias, censo 0, gate 11/11. Landing «9 plantillas + 2 bonus (11 ficheros) ·
+  491 tareas» (recuento independiente: 491), tarjetas de 08/09, emails y dashboard coherentes,
+  changelog 2.0. Censo con campo informativo `autoria`.
+- **LIVE verificado**: deploy `de9f961`; gate LIVE 44 · 650 · 0; md5 producción = repo (01, 09);
+  09 con 0,02 €, «Fondo de caja inicial (−)» enlazado a `'Apertura de Caja'!C23` y DESCUADRE calculado.
+- Bugs del método cazados por los gates (en `auditorias/kit-tareas-v2-construccion.json`): hora ancla
+  que se realimentaba 15 min por pasada; nombre del kit leído de celdas que el motor reescribe;
+  `inject_cache` solo sobre ficheros con fórmulas nuevas (guardar borra el cache de TODAS); registro
+  de fórmulas heredado entre ficheros.
+- **Hermanos**: tanda en curso al cerrar (`kit-tareas-hermanos`: motor en dry-run sobre los 10 kits,
+  verificador sonnet por kit, crítico opus) → ejecución real por kit + mini-ronda de contenido donde
+  el crítico la pida.

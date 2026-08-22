@@ -99,3 +99,8 @@ Siguiente: `pack-appcc` (R1 opus), luego `kit-tareas` como representante de la f
 R1 92 → SPEC → paquete `pack-appcc-v2_0/` → 3 refutadores (57, JSON a fichero) → ronda 2 57/57 → real.
 19 registros + 2 bonos. Siguiente: `kit-tareas` (R1 lanzada) → SPEC del MOTOR de la familia «▸» →
 hermanos verificados por sonnet.
+
+## 8. Estado — 2026-08-23 (madrugada): kit-tareas v2.0 en producción (`de9f961`) + motor de familia
+R1 81 (MOTOR/CONTENIDO) → SPEC → `kit-tareas-v2_0/` (motor por cabecera, `--producto <pid>`) → 61
+hallazgos → 61/61 → real. Hermanos: `main.py --producto <hermano> --dry-run --solo motor` + verificador
+por kit (workflow `kit-tareas-hermanos`) → real por kit.
