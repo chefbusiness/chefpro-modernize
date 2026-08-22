@@ -192,6 +192,9 @@ REPARACIONES_EXACTAS = {
     ('calculadora-viabilidad-dark-kitchen.xlsx', 'Punto de Equilibrio', 'D29'): ('=IF(D29=0,0,D35/D29)', '=IF(D22=0,0,D28/D22)'),
     # mismo generador en las 5 guías casual / japonés / mexicano / nikkei / peruano
     ('cash-flow-break-even.xlsx', 'Break-Even', 'B12'): ('=B12*(1-B8)', '=B11*(1-B8)'),
+    # kit-gestion-personal: «Progreso (%)» con NÚMEROS DE FILA literales en vez de
+    # celdas (siempre daba 98,55 %): progreso = completadas (C68) / total (C69)
+    ('04-onboarding-nuevo-empleado.xlsx', 'Checklist Onboarding', 'C70'): ('=IF(68>0,68/69*100,0)', '=IF(C69>0,C68/C69*100,0)'),
 }
 
 HOJAS_TEXTO = ('Instrucciones', 'Índice', 'Indice')
@@ -699,8 +702,18 @@ def escribir_contador(ws, fila, col_label, col_num, col_marca, hr, fin, cambios,
                                     '{} = {!r}'.format(
                                         ws.cell(row=fila, column=col_num + 2).coordinate,
                                         den_actual))
-    valores = [
-        (col_label, ETIQ_CONTADOR),
+    # Un contador YA montado conserva su etiqueta («Completadas:» en cafetería y
+    # clones, «Total tareas completadas:» en el onboarding): escribir además la
+    # etiqueta canónica dejaba dos rótulos en la misma fila (cazado 2026-08-22).
+    etiqueta_existente = None
+    if not nuevo:
+        for c in range(1, col_num):
+            v = ws.cell(row=fila, column=c).value
+            if isinstance(v, str) and v.strip().endswith(':'):
+                etiqueta_existente = c
+                break
+    valores = [] if etiqueta_existente else [(col_label, ETIQ_CONTADOR)]
+    valores += [
         (col_num, '=COUNTIF({0}{1}:{0}{2},"✓")'.format(letra, hr + 1, fin)),
         (col_num + 1, 'de'),
         (col_num + 2, den_formula),
@@ -751,7 +764,13 @@ def detectar_patron(ws):
 
     filas_casilla = [r for r in range(hr + 1, ws.max_row + 1)
                      if ws.cell(row=r, column=1).value == '☐']
-    contador = _buscar_fila(ws, ETIQ_CONTADOR)
+    # El contador existente se reconoce por su ETIQUETA o por su FÓRMULA: los
+    # kits cafetería/pizzería/hamburguesería/dark-kitchen lo etiquetan
+    # «Completadas:» con «de 20» en texto, y el onboarding de gestión de personal
+    # «Total tareas completadas:». Mirar solo la etiqueta los clasificaba P2 y
+    # se les escribía un SEGUNDO contador encima del viejo (cazado el 2026-08-22
+    # en la ejecución real, antes de commitear).
+    contador = _buscar_fila(ws, ETIQ_CONTADOR) or _fila_contador_existente(ws)
 
     # --- P1 / P2: familia «▸», ☐ decorativa en A y columna de marca aparte ---
     if a in ('☐', 'Nº') and b == 'Tarea':
@@ -793,13 +812,30 @@ def detectar_patron(ws):
 # ==========================================================================
 # §2.4 Normalizadores por patrón
 # ==========================================================================
+def _fila_contador_existente(ws):
+    """Fila de la primera fórmula `COUNTIF(…,"✓")` de la hoja, o None: un
+    contador de tareas completadas ya montado, lleve la etiqueta que lleve."""
+    for row in ws.iter_rows():
+        for c in row:
+            v = c.value
+            if (c.data_type == 'f' and isinstance(v, str)
+                    and 'COUNTIF' in v.upper() and '"✓"' in v):
+                return c.row
+    return None
+
+
 def _contador_nuevo(ws, hr, fin, col_label, col_num, col_marca, cambios, informe_hoja):
     """Coloca un contador NUEVO si procede (decisiones INT-04 e INT-09).
 
-    Dos motivos para no ponerlo, los dos anotados en el informe: que la hoja sea
-    una plantilla en blanco (denominador 0 — un «0 de 0» no informa de nada y
-    encima parece un error) o que no haya una fila libre donde escribirlo.
+    Tres motivos para no ponerlo, los tres anotados en el informe: que ya exista
+    uno (por fórmula, sea cual sea su etiqueta), que la hoja sea una plantilla
+    en blanco (denominador 0 — un «0 de 0» no informa de nada y encima parece
+    un error) o que no haya una fila libre donde escribirlo.
     """
+    existente = _fila_contador_existente(ws)
+    if existente:
+        informe_hoja['nota'] = 'sin contador nuevo: ya existe uno en la fila {}'.format(existente)
+        return
     if _contar_texto_col(ws, 2, hr + 1, fin) == 0:
         informe_hoja['nota'] = 'sin contador: plantilla sin tareas'
         return
