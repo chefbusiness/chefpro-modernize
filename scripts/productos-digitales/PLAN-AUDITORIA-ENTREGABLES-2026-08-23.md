@@ -87,3 +87,10 @@ Verificación celda a celda de cada id de la R1 (resuelto/parcial/no) + regresio
 - Para la Fase B: B13 «Break-Even (meses)» vacía en 5 guías; 43 hojas P2/P3/P4 sin contador (motivo
   anotado); marca ChefBusiness en 7 productos de origen CB (decisión de John); el workflow de R1
   usa `agent()` sin `schema` → parsear el JSON o añadir schema antes de usarlo.
+
+## 6. Estado — 2026-08-22 (tarde): kit-escandallos FASES B+C+D HECHAS → v2.0 en producción
+
+R1 90 hallazgos (20 altas) → SPEC v2.0 (+§7 decisiones) → paquete `kit-escandallos-v2_0/` → 3
+refutadores (55) → 2 rondas de corrección/verificación (33/33) → ejecución real `ed45f35`. Bono
+prometido producido (PDF, `bonus-guia`). Método y trampas en `SESSION_HANDOFF_2026-08-22-B-…md` §5.
+Siguiente: `pack-appcc` (R1 opus), luego `kit-tareas` como representante de la familia «▸».

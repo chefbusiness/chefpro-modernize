@@ -74,3 +74,28 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
    pastelería v2.0 deben llegar a CB; y a AICP le falta traer los 6 planes v2.0, la guía casual y el
    catering de CB.
 3. SEO de las 44 landings ES + LATAM (memoria `project_seo-landings-productos-hispanoamerica.md`).
+
+## 5. Fase B+C ejecutadas en el primer representante: **Kit de Escandallos Pro v2.0** (tarde del 22-ago)
+
+- **Ronda 1** (workflow `auditoria-entregables-workflow.js`, ya con `schema`): 90 hallazgos / 20 altas
+  (`auditorias/kit-escandallos-R1.json`). Lo grave: bono «Guía Food Cost 30 días» vendido y NO
+  entregado, unidades compra/uso sin factor (costes ×100/×1000), control de mermas que comparaba
+  despiece con desperdicio, food cost = compras/ventas, pastelería sin rendimiento, cócteles con cl/L
+  cruzados, food truck sin punto de equilibrio.
+- **SPEC v2.0** (`kit-escandallos-v2-SPEC.md`, §7 = decisiones: delivery 28-32 % sobre ingreso neto,
+  catering por bloques con mínimo de evento, carrot cake realista, marca ChefBusiness deliberada).
+- **Construcción** (`kit-escandallos-v2_0/`: motor + grupos A/B/C + `bono_guia.py` + `main.py` con
+  `--dry-run`, `--solo`, `KIT_ESCANDALLOS_APPLY=1` y respaldo en scratch; 6 fases, 9 agentes) → 3
+  refutadores (55) → corrección → **ronda 2b** sobre los 33 que el corrector no vio (recorte a 40 k:
+  lección en memoria) → 33/33 resueltos, «listo». Texto del bono con `bridge.py` (Mac enruta a
+  `deepseek-v4-pro`: desactualizado, memoria) y 0 caracteres no latinos; PDF maquetado con reportlab
+  y saneado de glifos fuera de WinAnsi (gate propio).
+- **Ejecución real** `ed45f35` (+ gemelos SPA `ad1fac6`): 12 xlsx idénticos celda a celda a la copia
+  verificada, 13 entregables (PDF `bonus-guia` en `PRODUCT_FILES` y tarjeta), censo 0 defectos,
+  gate offline 13/13, changelog 2.0, landing 10 tipos / 21 categorías / 20-25 % barra / valor €95,
+  `updateNote` 2.0. Deploy y gate LIVE: ver línea siguiente.
+- **LIVE verificado**: deploy `ad1fac6` ready 17:15; gate LIVE 44 productos · **646 entregables** (el PDF nuevo) · 8 × 502 transitorios en kit-tareas/cafetería reintentados → 0 fallos en kit-tareas, cafetería, escandallos y mega pack; md5 de producción = repo (01, 10 y el PDF); `01` con hoja Factor y protegida, Delivery 26,19 €; landing «Versión 2.0 · 10 tipos · €95»; island del dashboard con `bonus-guia`.
+- Registro completo: `auditorias/kit-escandallos-v2-construccion.json`.
+- **Siguiente representante (orden del plan): `pack-appcc`** → `Workflow({scriptPath:
+  'scripts/productos-digitales/auditoria-entregables-workflow.js', args:{productId:'pack-appcc',
+  familia:'kit-excel'}})`; después kit-tareas (familia «▸») con hermanos verificados por sonnet.
