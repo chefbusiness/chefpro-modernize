@@ -49,7 +49,7 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
    → «stripe-webhook LIVE: 400 sin firma (desplegado y armado)».
 2. **Auditar los 44 Payment Links** (URL de confirmación): en este prompt `! stripe login --project-name aichefpro`
    (el `default` del Mac es Miselup) y luego `python3 scripts/productos-digitales/audit-payment-links.py`.
-   Con `--sessions <email>` saca las sesiones de un cliente (p. ej. el del 16-ago).
+   Sin prisa: es solo para confirmar la URL de confirmación de los 44 links.
 3. **Decisión:** pasar `PURCHASE_VALIDATION` a `strict` tras unos días mirando los logs
    `[purchase-validation]` en Netlify (ojo: si rotas un Payment Link, las sesiones antiguas
    llevan el plink viejo → en strict `resend-access` les daría 404; fallback `/admin/generar-acceso`).
@@ -58,9 +58,10 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
    solo borrar campos en cada data file: tipos y templates lo admiten. **Ojo:** el JSON-LD del
    layout (`BaseLayout.astro:173`) lleva otro `aggregateRating` site-wide del SaaS — misma
    conversación.
-5. **Email al cliente del Kit Pastelería** (compra 16-ago): borrador final en
-   `scripts/productos-digitales/kit-tareas-pasteleria-v2-EMAIL-CLIENTE.md` (v2.0, 13 + 2).
-   Enlace nuevo en `/admin/generar-acceso` → producto «Kit Tareas Pastelería» (no «Panadería»).
+5. ~~Email al cliente del Kit Pastelería~~ — **CERRADO por John el 2026-08-22**: el cliente del
+   16-ago ya tiene todo y está avisado por WhatsApp. El borrador
+   `scripts/productos-digitales/kit-tareas-pasteleria-v2-EMAIL-CLIENTE.md` queda como plantilla
+   para futuras actualizaciones de producto.
 6. **Disputa Stripe 650 €: responder ANTES del 25-ago** (memoria `project_disputa-stripe-650…`).
 
 ## 4. Siguiente trabajo de productos digitales (orden propuesto)
