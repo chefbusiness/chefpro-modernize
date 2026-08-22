@@ -164,6 +164,60 @@ término tradicional «isco» es vocabulario de autoridad, no keyword (sin datos
    para anotar upside).
 7. Imágenes: textos visibles EN PORTUGUÉS, verificadas a ojo.
 
+## ⚠️ Re-medición del 2026-08-22 (tanda 3): lo que el research REFUTÓ
+
+Los censos de este roadmap se escribieron con los datos del 16-ago. Seis días
+después, al abrir la tanda 3, **cuatro de sus afirmaciones no se sostuvieron**.
+Vale la regla general: *un censo del roadmap es una hipótesis, no un hecho*.
+
+| Lo que decía el roadmap | Lo medido el 22-ago |
+|---|---|
+| `controlo de temperaturas` 110/mes, **sin AIO** | **50/mes** (serie 40,40,40,50,50,50) y **CON AI Overview** en las 4 SERP del clúster |
+| `food cost` 180/mes | **110/mes** (serie 70,90,140,140,140,110) |
+| `ficha técnica de pratos` 80/mes | **10/mes** — ⚠️ afecta al post 7 |
+| SERP de food cost «literalmente vacía de portugués» | **Cinco resultados PT** en el top 18 (outside-in.pt de 2017, zpos, aboutyourway, joinbitte, alacarte) |
+
+El hueco de `food cost` sigue existiendo, pero es **otro hueco**: no es ausencia
+de contenido portugués, es que los cinco repiten la misma fórmula y el mismo
+28-35 % — que es exactamente lo que Google ya sirve en su AI Overview. El
+diferenciador no puede ser explicar la fórmula.
+
+### Regla 10 (nueva) — `registo de temperaturas` es METEOROLOGÍA
+
+La SERP de `registo de temperaturas` (20/mes) la copan **IPMA, Portal do Clima,
+la APA y un hilo de Reddit** sobre el tiempo de ayer; el PAA pregunta por olas
+de calor y por la ciudad más fría de Portugal. Es de la misma familia que la
+regla 2 (`segurança alimentar` = acceso a los alimentos): **no titular ni
+sloguear con «registo de temperaturas» a secas**; en el cuerpo va siempre
+calificado («registo de temperaturas dos equipamentos», «folha de registo»).
+
+El PAA de la cabecera `controlo de temperaturas` descarrila al **frigorífico
+doméstico** (manzanas, frascos, la parte menos fría) y el de la variante
+profesional está **canibalizado por HACCP** (los 7 princípios, quem é obrigado
+= las FAQ del post 1). Solo una pregunta profesional se salva.
+
+### ⚠️ El post 7 hay que reconsiderarlo antes de escribirlo
+
+Dos motivos, los dos verificados el 22-ago:
+
+1. **Volumen 10/mes**, no 80.
+2. **`tSpoonLab Agent` no es un agente de escandallos.** Su descripción real en
+   ptapp: «ajudá-lo a aprender a usar a ferramenta SaaS tSpoonLab». Es un bot de
+   soporte de un software de terceros, no un asistente de fichas técnicas — así
+   que el encaje de producto que justificaba el post no existe tal como estaba
+   escrito. Alternativa natural: **Gerente Restaurante Pro**, o fundir el tema
+   dentro del clúster del post 6, que ya trata la ficha técnica como el
+   instrumento del food cost.
+
+### El censo de agentes de ptapp ya no se deduce: se extrae
+
+El HTML de cualquier página de `ptapp.aichef.pro` trae **el catálogo completo
+embebido** con `formid`, `formtitle` y `formdescription` de los 53 agentes.
+Volcado en `.work/ptapp-agentes.json` (mejor fuente que el `.txt` que había,
+que solo tenía nombres). Y **ojo: Pickaxe no devuelve 404** — un slug inventado
+sirve 200 con el mismo shell y casi el mismo tamaño. La única verificación
+válida de un CTA es **buscar el nombre del agente dentro del HTML**.
+
 ## Suplentes y semillas futuras
 
 - `goma xantana` (1.600 HIGH) y `agar agar` (1.300 HIGH) — satélites de
