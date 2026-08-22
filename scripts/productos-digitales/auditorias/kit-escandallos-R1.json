@@ -1,0 +1,1095 @@
+{
+ "productId": "kit-escandallos",
+ "familia": "kit-excel",
+ "fecha": "2026-08-22",
+ "inventario": {
+  "productId": "kit-escandallos",
+  "ficheros": [
+   {
+    "nombre": "01-escandallo-estandar.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10525,
+    "hojas": [
+     "Instrucciones",
+     "Escandallo"
+    ],
+    "formulas": 37,
+    "resumen": "Escandallo de un plato (Solomillo PX): 11 ingredientes + 5 filas vacías con fórmulas IF, coste total, coste elaboración 10%, food cost objetivo 30%, PVP sin/con IVA 10%, margen."
+   },
+   {
+    "nombre": "02-menu-degustacion.xlsx",
+    "tipo": "xlsx",
+    "bytes": 22598,
+    "hojas": [
+     "Instrucciones",
+     "1. Aperitivo",
+     "2. Entrante",
+     "3. Pescado",
+     "4. Carne",
+     "5. Postre",
+     "Resumen"
+    ],
+    "formulas": 143,
+    "resumen": "5 escandallos de pase + hoja Resumen que suma los 5 costes (referencias ='X'!I18) y sugiere PVP del menú al 25%."
+   },
+   {
+    "nombre": "03-menu-del-dia.xlsx",
+    "tipo": "xlsx",
+    "bytes": 16879,
+    "hojas": [
+     "Instrucciones",
+     "Primer Plato",
+     "Segundo Plato",
+     "Postre",
+     "Resumen Menú"
+    ],
+    "formulas": 93,
+    "resumen": "3 escandallos + resumen que suma coste total del menú del día y PVP sugerido."
+   },
+   {
+    "nombre": "04-cocktails-bebidas.xlsx",
+    "tipo": "xlsx",
+    "bytes": 18315,
+    "hojas": [
+     "Instrucciones",
+     "Gin Tonic Premium",
+     "Mojito Clásico",
+     "Margarita",
+     "Aperol Spritz"
+    ],
+    "formulas": 112,
+    "resumen": "4 escandallos de cocktail con food cost objetivo 20%; cada uno etiqueta el PVP final como 'PVP CON IVA (10% hostelería)'."
+   },
+   {
+    "nombre": "05-pasteleria.xlsx",
+    "tipo": "xlsx",
+    "bytes": 16084,
+    "hojas": [
+     "Instrucciones",
+     "Tarta Chocolate",
+     "Croissants",
+     "Macarons"
+    ],
+    "formulas": 95,
+    "resumen": "3 escandallos de repostería con mermas específicas de temperado/horneado."
+   },
+   {
+    "nombre": "06-catering.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11188,
+    "hojas": [
+     "Instrucciones",
+     "Cocktail 50 pax",
+     "Presupuesto"
+    ],
+    "formulas": 46,
+    "resumen": "Escandallo de cóctel para 50 pax + hoja Presupuesto que añade personal, transporte, menaje y calcula PVP por persona con IVA 10%."
+   },
+   {
+    "nombre": "07-cafeteria-brunch.xlsx",
+    "tipo": "xlsx",
+    "bytes": 15831,
+    "hojas": [
+     "Instrucciones",
+     "Tostada Aguacate",
+     "Açaí Bowl",
+     "Eggs Benedict"
+    ],
+    "formulas": 86,
+    "resumen": "3 escandallos de brunch (food cost objetivo 25-30% según su propia hoja Instrucciones)."
+   },
+   {
+    "nombre": "08-food-truck.xlsx",
+    "tipo": "xlsx",
+    "bytes": 15638,
+    "hojas": [
+     "Instrucciones",
+     "Smash Burger",
+     "Loaded Fries",
+     "Pulled Pork Sándwich"
+    ],
+    "formulas": 89,
+    "resumen": "3 escandallos de street food (food cost objetivo 28-35%); SIN ninguna hoja ni fórmula de punto de equilibrio/costes fijos."
+   },
+   {
+    "nombre": "09-control-mermas.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8344,
+    "hojas": [
+     "Instrucciones",
+     "Mermas Semanal"
+    ],
+    "formulas": 51,
+    "resumen": "Tabla de 16 categorías con merma estándar, merma real, diferencia y estado OK/ALERTA."
+   },
+   {
+    "nombre": "10-calculadora-pvp.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7710,
+    "hojas": [
+     "Instrucciones",
+     "Calculadora PVP"
+    ],
+    "formulas": 27,
+    "resumen": "9 filas de tipo de establecimiento (Fine Dining, Casual Dining, Fast Casual, Cafetería, Catering, Food Truck, Hotel F&B, Pastelería, Bar/Cocktails) con rango food cost min/max y PVP sin/con IVA 10%."
+   },
+   {
+    "nombre": "11-dashboard-food-cost-mensual.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9542,
+    "hojas": [
+     "Instrucciones",
+     "Dashboard"
+    ],
+    "formulas": 39,
+    "resumen": "12 meses (Ene-Dic) con compras, ventas, food cost % vs objetivo y diferencia; solo Ene-Mar traen datos de ejemplo, resto vacío para rellenar."
+   },
+   {
+    "nombre": "BONUS-mermas-inventario.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9746,
+    "hojas": [
+     "Instrucciones",
+     "Inventario",
+     "Checklist Mermas"
+    ],
+    "formulas": 31,
+    "resumen": "Inventario semanal/mensual (consumo real vs teórico, éste último a rellenar a mano) + checklist diario de mermas con motivo/acción correctiva."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "estandar",
+    "title": "Escandallo Estándar",
+    "ruta": "PRODUCT_FILES['kit-escandallos'].estandar -> 01-escandallo-estandar.xlsx"
+   },
+   {
+    "key": "degustacion",
+    "title": "Menú Degustación",
+    "ruta": "-> 02-menu-degustacion.xlsx"
+   },
+   {
+    "key": "menu-dia",
+    "title": "Menú del Día",
+    "ruta": "-> 03-menu-del-dia.xlsx"
+   },
+   {
+    "key": "cocktails",
+    "title": "Cocktails y Bebidas",
+    "ruta": "-> 04-cocktails-bebidas.xlsx"
+   },
+   {
+    "key": "pasteleria",
+    "title": "Pastelería",
+    "ruta": "-> 05-pasteleria.xlsx"
+   },
+   {
+    "key": "catering",
+    "title": "Catering",
+    "ruta": "-> 06-catering.xlsx"
+   },
+   {
+    "key": "cafeteria",
+    "title": "Cafetería / Brunch",
+    "ruta": "-> 07-cafeteria-brunch.xlsx"
+   },
+   {
+    "key": "food-truck",
+    "title": "Food Truck",
+    "ruta": "-> 08-food-truck.xlsx"
+   },
+   {
+    "key": "mermas",
+    "title": "Control de Mermas",
+    "ruta": "-> 09-control-mermas.xlsx"
+   },
+   {
+    "key": "calculadora-pvp",
+    "title": "Calculadora de PVP",
+    "ruta": "-> 10-calculadora-pvp.xlsx"
+   },
+   {
+    "key": "dashboard",
+    "title": "Dashboard Mensual",
+    "ruta": "-> 11-dashboard-food-cost-mensual.xlsx"
+   },
+   {
+    "key": "bonus-mermas",
+    "title": "BONUS: Mermas + Inventario",
+    "ruta": "-> BONUS-mermas-inventario.xlsx"
+   }
+  ],
+  "landing": {
+   "productName": "Kit de Escandallos Pro — 11 Plantillas Excel Profesionales",
+   "cifras_prometidas": [
+    "11 plantillas Excel profesionales (+ 12º bonus)",
+    "16 categorías de mermas",
+    "9 tipos de establecimiento en la calculadora PVP",
+    "12 meses en el dashboard",
+    "€46 en bonus (€27+€19)"
+   ],
+   "entregables_prometidos": [
+    "Zona para foto del plato en cada escandallo",
+    "Punto de equilibrio diario incluido (Food Truck)",
+    "Ejemplos: tostada de aguacate, açaí bowl, eggs benedict, carrot cake (Cafetería/Brunch)",
+    "9 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel y delivery (Calculadora PVP)"
+   ],
+   "bonus": [
+    "Guía: Controla tu Food Cost en 30 Días — €27",
+    "Checklist de Mermas + Inventario — €19"
+   ],
+   "faqs": [
+    "¿Necesito Excel avanzado?",
+    "¿Funcionan con Google Sheets?",
+    "¿Los datos de merma son fiables?",
+    "¿Puedo personalizar las plantillas?",
+    "¿Incluye actualizaciones futuras?",
+    "¿Hay garantía de devolución?"
+   ]
+  },
+  "gate": "Ambos gates en verde: gate-flujo-postpago.py --offline --only kit-escandallos → 1 producto, 12 entregables, 0 fallos (1 aviso esperado: sección D webhook sin verificar en modo offline). censo-entregables.py --only kit-escandallos --fail --quiet → 12 ficheros censados (12 xlsx, 0 docx, 0 pdf), 0 defectos. Confirma que la Fase A determinista (cache, A4, metadata, bio, v1.1, casilla) está correctamente aplicada — no se encontró ningún caso que se le escapara a los scripts.",
+  "notas": [
+   "CPU vigilada con istats en todo el barrido: 47.9°C-49.6°C, muy por debajo del límite de 65°C. Python ejecutado en serie, nada de builds ni Playwright."
+  ],
+  "changelog": "productos-changelog.ts:201-216 'kit-escandallos' v1.1 (2026-08-22): \"Calculadora de PVP: corregidas nueve fórmulas que no calculaban\", A4 en todas las hojas, versión 1.1 en Instrucciones de los 12 ficheros. Coherente con lo verificado (calculadora PVP tiene 9 filas con fórmulas E/F/G funcionando). No hay entrada de v1.0 en el array (solo v1.1), pero esto es fuera del alcance de esta auditoría de contenido.",
+  "emails": {
+   "verify": "verify-purchase.ts:21-25 — accessPath '/kit-escandallos-access', asunto 'Tu acceso al Kit de Escandallos Pro', cuerpo dice '...descargar las 11 plantillas Excel' (coherente: 11 core + 1 bonus, el bonus se menciona aparte). Sin errores.",
+   "resend": "resend-access.ts:21-24 — mismo accessPath, mismo asunto/título. Sin errores. No hallado contenido divergente entre verify-purchase.ts y resend-access.ts para este producto."
+  }
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing LIVE (astro-site/src/data/productos/kits/kit-escandallos.ts, que es lo que sirve producción vía kit-escandallos.astro), schema JSON-LD, hub, tarjetas del dashboard post-pago (src/pages/KitEscandallosDashboard.tsx, montado por astro-site/src/islands/library/KitEscandallosLibraryIsland.tsx), emails de acceso, changelog y mapa PRODUCT_FILES contra el contenido REAL de los 12 .xlsx (celdas, fórmulas, formato condicional, charts, data validation, fills).",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "05-pasteleria.xlsx",
+      "ubicacion": "hojas 'Croissants'/'Macarons'/'Tarta Chocolate' + 'Instrucciones'!B8-B9; landing kit-escandallos.ts:142",
+      "hallazgo": "La plantilla de pastelería no divide por rendimiento: escandalla el LOTE y presenta el resultado como precio de venta de UNA pieza. Su propia hoja de Instrucciones promete un campo que no existe en ninguna de las 3 hojas.",
+      "evidencia": "'Instrucciones'!B8 = \"▸ Incluye campo de 'Rendimiento' (unidades por receta)\" y B9 = \"▸ El coste se calcula por unidad producida\". Barrido celda a celda de las 3 hojas (filas 1-27, cols A-L): NO existe ninguna celda 'Rendimiento', 'Raciones' ni 'Unidades'. 'Croissants' parte de 0,5 kg harina de fuerza (E5) + 0,28 kg mantequilla (E6) —un lote de ~15-20 croissants— y remata en 'Croissants'!A20 'COSTE TOTAL DEL PLATO' I20=I18+I19 = 5,19 €, 'Croissants'!I23 'PVP SUGERIDO (sin IVA)' =I20/H22 (H22=25%) = 20,75 € e I24 'PVP CON IVA' = 22,82 €. 'Macarons' (0,15 kg harina de almendra + 0,11 kg claras ≈ 40-50 uds) da I24 = 29,21 € «por macaron». Landing:142 vende justo lo contrario: «Incluye rendimiento por receta — cuántas raciones salen de cada elaboración».",
+      "fix": "Añadir en las 3 hojas una fila 'Rendimiento (uds/raciones)' editable (verde) bajo 'COSTE TOTAL DEL PLATO' y una fila 'COSTE POR UNIDAD' = COSTE_TOTAL/rendimiento; encadenar el PVP a esa celda y no al total del lote. Rellenar el ejemplo con 18 croissants, 45 macarons y 12 raciones de tarta. Mientras no exista, retirar de landing:142 la frase «Incluye rendimiento por receta»."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "(entregable ausente) astro-site/public/dl/kit-escandallos/",
+      "ubicacion": "landing kit-escandallos.ts:184-192 y :255; netlify/functions/get-download-urls.ts:5-18; src/pages/KitEscandallosDashboard.tsx:16-29",
+      "hallazgo": "El BONUS 1 que se vende con precio propio («Guía: Controla tu Food Cost en 30 Días — €27») NO se entrega: no existe fichero, no hay clave en PRODUCT_FILES y no hay tarjeta en el dashboard. El cliente paga viendo dos bonos y recibe uno.",
+      "evidencia": "landing:186-189 → label 'BONUS 1', title 'Guía: Controla tu Food Cost en 30 Días', value '€27', desc «Plan de acción semana a semana… tácticas de negociación con proveedores, checklist semanal y caso práctico real»; cta items:255 repite «BONUS: Guía \"Controla tu Food Cost en 30 Días\" (€27)»; bonus.subtitle:182 «recursos adicionales — valorados en €46» (27+19). get-download-urls.ts:6-17 lista 12 claves y las 12 apuntan a .xlsx; la única que es bono es 'bonus-mermas' → BONUS-mermas-inventario.xlsx (= BONUS 2). `ls astro-site/public/dl/kit-escandallos/` = 12 ficheros, 0 pdf/docx. TEMPLATES del dashboard (KitEscandallosDashboard.tsx:16-29) tiene 12 entradas y ninguna es la guía.",
+      "fix": "O producir la guía (PDF) y darla de alta como 13ª clave en PRODUCT_FILES + tarjeta en TEMPLATES, o eliminar el BONUS 1 de landing:184-192 y :255 y recalcular bonus.subtitle a «€19» y el ancla de valor. No dejarlo publicado sin entregable: es la promesa más literal de la página (lleva precio)."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "08-food-truck.xlsx",
+      "ubicacion": "todo el libro (3 hojas + Instrucciones); landing kit-escandallos.ts:145; dashboard src/pages/KitEscandallosDashboard.tsx:31",
+      "hallazgo": "El punto de equilibrio diario —prometido en la landing Y en la tarjeta que el cliente ve YA PAGADO dentro del dashboard— no existe en el fichero: no hay hoja, ni costes fijos, ni fórmula de unidades a vender.",
+      "evidencia": "landing:145 «Calcula el punto de equilibrio diario: cuántas unidades necesitas vender para cubrir costes fijos». KitEscandallosDashboard.tsx:31 → { key: 'food-truck', … desc: 'Street food con punto de equilibrio diario incluido.' }. El libro tiene exactamente 4 hojas: 'Instrucciones', 'Smash Burger', 'Loaded Fries', 'Pulled Pork Sándwich'; las 3 últimas terminan en 'Margen bruto (%)' (I27/I25/I24) y no hay ninguna celda con 'fijos', 'equilibrio', 'break', 'alquiler' ni 'unidades/día'. 'Instrucciones'!B8-B10 sólo habla de recetas rápidas y márgenes altos.",
+      "fix": "Añadir hoja 'Punto de Equilibrio': costes fijos diarios editables (alquiler plaza, seguro, combustible, personal, amortización) + margen de contribución medio tomado de las 3 hojas + celda 'UNIDADES/DÍA PARA CUBRIR COSTES' = fijos/margen_unitario. Si no se añade, quitar la frase de landing:145 y de la tarjeta del dashboard (línea 31), que es la que lee quien ya pagó."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "01-escandallo-estandar.xlsx (y 02, 03, 04, 05, 06, 07, 08: misma rejilla)",
+      "ubicacion": "columna F 'Ud. Uso' (F5:F19) vs fórmulas H/I; '01'!Instrucciones B18-B21; '04'!'Gin Tonic Premium'!C5/E5/F5",
+      "hallazgo": "La columna 'Ud. Uso' es decorativa: no entra en ninguna fórmula y no hay factor de conversión con 'Ud. Compra'. Las Instrucciones ordenan meter la cantidad EN LA UNIDAD DE USO y el desplegable ofrece g/ml/cl frente a kg/L, de modo que seguir la instrucción produce costes ×100 o ×1000. Los propios ejemplos publicados ya están rotulados mal.",
+      "evidencia": "Fórmulas únicas: H5 '=E5/(1-G5)' e I5 '=H5*D5' — D es €/Ud.Compra y E se multiplica sin convertir. '01'!Instrucciones B20 «▸ Cantidad: cantidad que necesitas para el plato (en la unidad de uso)» y B21 «▸ Ud. Uso: unidad en la que mides para el plato»; la data validation de F5:F19 ofrece «kg,g,L,ml,cl,ud,docena,manojo,sobre,lata,botella». Caso vivo en '04'!'Gin Tonic Premium': C5='L', D5=28, E5=0,05, F5='cl' → I5 = 1,43 € (el 0,05 son litros, no centilitros). Si el barman obedece B20-B21 y teclea 5 con F5='cl', I5 = 5/(1-0,02)*28 = 142,86 € y el PVP sugerido del gin tonic se va a ~785 €. Mismo patrón en '05'!'Tarta Chocolate' fila 7 (C='docena', E=0,5, F='ud') y '07' filas 6-7 (C='docena', E=0,167, F='ud').",
+      "fix": "Dos opciones: (a) añadir columna oculta de factor de conversión (kg→g 1000, L→cl 100, docena→ud 12…) con BUSCARV y usarla en I = H*D/factor; o (b) eliminar la columna F y la validación asociada, renombrar E a 'Cantidad (en Ud. Compra)' y corregir Instrucciones B20-B21. Y corregir los ejemplos publicados donde F dice 'cl'/'ud' pero el número está en L/docenas."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "06-catering.xlsx",
+      "ubicacion": "'Presupuesto'!B16/C16/C17 vs 'Cocktail 50 pax'!A25/H25/I26 vs 'Instrucciones'!B11",
+      "hallazgo": "El mismo número (35) significa dos cosas opuestas en el mismo libro y las Instrucciones empujan la interpretación errónea: el presupuesto lo trata como margen sobre venta y el escandallo como food cost. Un catering presupuestado con el criterio que dice la hoja de instrucciones sale un 46 % barato.",
+      "evidencia": "'Cocktail 50 pax'!A25 'Food Cost objetivo (%)' H25=0,35 con I26 '=I23/H25' (→ PVP = coste × 2,86). 'Presupuesto'!B16 'Margen objetivo (%)' C16=0,35 con C17 '=C14/(1-C16)' (→ PVP = coste × 1,538). 'Instrucciones'!B11 sólo dice «▸ Food cost objetivo en catering: 30-40%», sin mencionar en ningún sitio que C16 es un margen, no un food cost. Un usuario que lea B11 y ponga 35 en C16 creyendo fijar food cost cobra 1,538× el coste en vez de 2,86×.",
+      "fix": "Unificar criterio en todo el kit. Recomendado: dejar C16 como 'Food Cost objetivo (%)' con C17 '=C14/C16' (coherente con las 11 plantillas restantes), o si se quiere mantener el margen, renombrar B16 a 'Margen sobre PVP (%)' y añadir en Instrucciones una línea que distinga explícitamente «food cost 35 % ⇒ PVP = coste/0,35» de «margen 35 % ⇒ PVP = coste/0,65»."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-escandallos.ts",
+      "ubicacion": ":29-33 (aggregateRating), :35-51 (review[]), :266-276 (testimonials)",
+      "hallazgo": "El producto emite un AggregateRating 4,9 con 10 reseñas y tres Review con autor nombrado en el JSON-LD, más 10 testimonios con nombre, cargo y NEGOCIO concreto y cifras verificables — sin ningún sistema de reseñas detrás. No hay ni formulario, ni almacén, ni origen de esas valoraciones en todo el repo.",
+      "evidencia": "kit-escandallos.ts:30-32 → ratingValue '4.9', reviewCount '10', bestRating '5'. :36-50 → Review de 'Alejandro Ruiz', 'María José Pérez', 'Antonio Delgado'. :267-276 → los mismos nombres con negocio ('Restaurante Alma', 'Grupo MJP', 'Obrador La Dulce', 'Cóctel & Co', 'Banquetes FN', 'Food Truck Street Bites', 'Hotel Panorama') y afirmaciones cuantificadas: «He bajado del 35% al 28% en dos meses», «mi tostada de aguacate tenía un food cost del 42%… ahora está en el 27%», «me dejaba solo €1.20 de margen… ahora son €2.80». Los avatares son de la librería genérica /avatars/avatar-1..8 reutilizada en el resto de landings. Además el testimonio :270 («perdiendo un 12% en chocolate por la merma de temperado») describe un dato que el fichero real ni siquiera usa (05-pasteleria.xlsx pone 5% en 'Chocolate negro 70%'!G5).",
+      "fix": "Retirar aggregateRating y review[] del schema mientras no exista un sistema de reseñas verificables (Google penaliza el rich result self-serving y en la UE publicar reseñas sin comprobar su autenticidad es práctica desleal). Si se quieren mantener los textos en pantalla, etiquetarlos como «casos de uso ilustrativos» sin marcado Review y sin nombres de negocios que puedan confundirse con clientes reales."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-escandallos.ts",
+      "ubicacion": ":280-287 (pricing) y src/pages/ProductosDigitales.tsx:89-91",
+      "hallazgo": "Ancla de precio permanente: se anuncia «-75%» desde un precio anterior de €49 y se llama «precio especial de lanzamiento — sube pronto» en un producto que lleva meses a €12. Si nunca se vendió a €49, el descuento anunciado no es sostenible.",
+      "evidencia": "kit-escandallos.ts:281-285 → priceOld '€49', price '€12', discountBadge '-75%', heroNote 'Precio especial de lanzamiento. Sube pronto', buyBoxNote 'Precio especial de lanzamiento — 75% de descuento'. El hub repite lo mismo: ProductosDigitales.tsx:89-91 price '€12' / originalPrice '€49' / discount '-75%'. El schema declara price 12.00 con priceValidUntil '2026-12-31' (:27-28), es decir el «precio de lanzamiento que sube pronto» está fijado hasta fin de año. No hay ningún registro en el repo de que el producto se haya ofrecido a €49.",
+      "fix": "O documentar y poder acreditar un periodo real de venta a €49 en los 30 días previos, o retirar priceOld/discountBadge y las dos notas de lanzamiento y vender a €12 sin tachado. Un cliente que vea la misma «oferta que sube pronto» durante meses es exactamente el que pide el reembolso de los 30 días."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "media",
+      "fichero": "09-control-mermas.xlsx",
+      "ubicacion": "'Mermas Semanal' (formato condicional) + 'Instrucciones'!B12-B13; landing kit-escandallos.ts:146",
+      "hallazgo": "El semáforo de color no existe. Lo prometen la landing Y la propia hoja de instrucciones del fichero, pero el libro no tiene ni una sola regla de formato condicional.",
+      "evidencia": "'Instrucciones'!B12 «▸ Rojo = merma real superior al estándar (alerta)» y B13 «▸ Verde = merma real igual o inferior al estándar (bien)». Volcado de ws.conditional_formatting en las dos hojas de 09-control-mermas.xlsx → lista vacía. Lo único que reacciona es texto: G5 '=IF(E5=\"\",\"\",IF(E5<=B5,\"OK\",\"ALERTA\"))'. landing:146 «Las celdas cambian de color automáticamente cuando la merma real supera el estándar».",
+      "fix": "Añadir dos reglas de formato condicional sobre E5:G20 (CellIsRule GREATER THAN comparando E con B → relleno rojo FFC7CE; LESS THAN OR EQUAL → verde C6EFCE). Es media hora y cierra dos promesas a la vez (landing y hoja de instrucciones)."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "09-control-mermas.xlsx",
+      "ubicacion": "libro completo; landing kit-escandallos.ts:146",
+      "hallazgo": "«Gráfico de evolución mensual para detectar tendencias» — el fichero no contiene ningún gráfico, y además la hoja es un registro de UNA semana, sin serie temporal que graficar.",
+      "evidencia": "`unzip -l 09-control-mermas.xlsx | grep -Ei 'chart|drawing'` → sin resultados (el único libro del kit con xl/charts/chart1.xml es 11-dashboard-food-cost-mensual.xlsx). La hoja se llama 'Mermas Semanal', A2 dice 'Semana del:' y sólo hay 16 filas de categorías (A5:A20) + TOTAL en A21: no existe eje temporal.",
+      "fix": "Añadir una hoja 'Evolución' con 12 columnas (una por mes o por semana) alimentada por la fila TOTAL y un LineChart sobre ella; o quitar la frase de landing:146."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "'Dashboard'!G7:G18 (formato condicional); landing kit-escandallos.ts:148",
+      "hallazgo": "«Alertas cuando el food cost supera tu límite»: no hay alerta de ningún tipo. La columna Diferencia devuelve un número con signo y nada más.",
+      "evidencia": "landing:148 «…y alertas cuando el food cost supera tu límite. Tu cockpit financiero de cocina». En 'Dashboard' el formato condicional está vacío y G7 es '=IF(E7=\"\",\"\",E7-F7)' con number_format '+0.0%;-0.0%'. No hay columna 'Estado' (a diferencia de 09, que al menos escribe OK/ALERTA en texto).",
+      "fix": "Añadir columna H 'Estado' con '=IF(E7=\"\",\"\",IF(E7<=$C$4,\"OK\",\"ALERTA\"))' + formato condicional rojo sobre E7:H18 cuando E>$C$4. Coherente con lo que ya hace 09."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "10-calculadora-pvp.xlsx",
+      "ubicacion": "'Calculadora PVP'!B7:B15; landing kit-escandallos.ts:147",
+      "hallazgo": "La landing enumera los 9 tipos de establecimiento uno a uno y la lista NO coincide con el fichero: promete 'delivery' (no existe) y omite 'Pastelería' (sí existe). El cliente que compra por el caso delivery no lo encuentra.",
+      "evidencia": "landing:147 «…9 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel y delivery». Fichero B7:B15 = Fine Dining, Casual Dining, Fast Casual, Cafetería, Catering, Food Truck, Hotel F&B, Pastelería, Bar/Cocktails. Coinciden 8; 'delivery' no está y 'Pastelería' no se anuncia. (Además la landing castellaniza 'Fine Dining' como «restaurante gastronómico» y 'Bar/Cocktails' como «bar de copas», que sí es defendible.)",
+      "fix": "Añadir una fila 'Delivery' con su rango (food cost típico 25-30 % por la comisión de plataforma, o mejor una nota de que la comisión va aparte) y mencionar 'Pastelería' en el texto — o corregir la enumeración de landing:147 para que sea literalmente la del fichero."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "07-cafeteria-brunch.xlsx",
+      "ubicacion": "hojas del libro; landing kit-escandallos.ts:144",
+      "hallazgo": "De los cuatro ejemplos «reales» que enumera la landing sólo hay tres: falta la carrot cake.",
+      "evidencia": "landing:144 «Incluye ejemplos reales: tostada de aguacate, açaí bowl, eggs benedict, carrot cake». Hojas del libro: 'Instrucciones', 'Tostada Aguacate', 'Açaí Bowl', 'Eggs Benedict'. Las Instrucciones del propio fichero son honestas y dicen «▸ 3 recetas típicas de brunch/cafetería» ('Instrucciones'!B8) — la landing es la que promete 4.",
+      "fix": "Añadir la hoja 'Carrot Cake' (con rendimiento por porciones, ver COM-01) o borrar «carrot cake» de landing:144. La hoja de instrucciones del fichero ya dice 3, así que la incoherencia es sólo de la página."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "05-pasteleria.xlsx",
+      "ubicacion": "'Tarta Chocolate'!G5, 'Macarons'!G10, 'Croissants'!G5; landing kit-escandallos.ts:142 y testimonio :270",
+      "hallazgo": "La landing da tres cifras concretas de merma de pastelería como argumento de venta y ninguna aparece en el fichero.",
+      "evidencia": "landing:142 «mermas reales de pastelería: temperado de chocolate (12%), horneado de masas (8%), montaje de mousses». Valores reales: 'Tarta Chocolate'!G5 (Chocolate negro 70%) = 0,05 (5 %), 'Macarons'!G10 (Chocolate blanco) = 0,05, 'Croissants'!G5 (Harina de fuerza) = 0,02 y G6 (Mantequilla seca) = 0,03. No hay ninguna merma del 12 %, ninguna del 8 %, ninguna fila de horneado y ninguna elaboración de mousse en las tres hojas. El testimonio :270 refuerza el 12 % de temperado que el fichero no usa.",
+      "fix": "O subir la merma de chocolate a 12 % y añadir una fila/columna de pérdida por horneado del 8 % en 'Croissants' (que es donde tiene sentido: evaporación de agua), o cambiar landing:142 por las cifras que el fichero realmente trae. Las cifras concretas en una landing son lo primero que el cliente verifica al abrir el Excel."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "02-menu-degustacion.xlsx",
+      "ubicacion": "hojas del libro + 'Resumen'!C5:C10; landing kit-escandallos.ts:139",
+      "hallazgo": "«Menús de 5 a 9 pases»: el libro sólo sirve para 5. No hay hojas 6-9 y el Resumen tiene las 5 referencias cableadas, así que añadir un pase obliga a duplicar hoja Y editar el Resumen a mano.",
+      "evidencia": "landing:139 «Diseñada para menús de 5 a 9 pases». Hojas: 'Instrucciones','1. Aperitivo','2. Entrante','3. Pescado','4. Carne','5. Postre','Resumen'. 'Resumen'!C5..C9 = ='1. Aperitivo'!I18, ='2. Entrante'!I18, ='3. Pescado'!I18, ='4. Carne'!I18, ='5. Postre'!I18 y C10 '=SUM(C5:C9)' — cinco filas fijas, sin filas vacías preparadas.",
+      "fix": "Entregar 9 hojas de pase (las 4 extra vacías con la misma rejilla) y ampliar el Resumen a C5:C13 con IF sobre hoja vacía, o corregir landing:139 a «menús de 5 pases (ampliable)»."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "03-menu-del-dia.xlsx",
+      "ubicacion": "hojas del libro; landing kit-escandallos.ts:140",
+      "hallazgo": "La «rotación semanal para planificar 5 menús diferentes con sus costes comparados» no existe: el libro escandalla UN menú.",
+      "evidencia": "landing:140 «Incluye rotación semanal para planificar 5 menús diferentes con sus costes comparados». Hojas reales: 'Instrucciones', 'Primer Plato', 'Segundo Plato', 'Postre', 'Resumen Menú'. 'Resumen Menú' tiene una sola columna de importes (C5:C15) y ni una celda de día de la semana ni comparativa. Las Instrucciones del fichero (B8-B12) tampoco mencionan rotación. (Lo que sí cumple: los extras pan/bebida/café están en 'Resumen Menú'!B8-B10 con 0,15/0,40/0,20 €.)",
+      "fix": "Añadir hoja 'Rotación Semanal' con 5 columnas (L-V) que recojan el coste total de cada menú y su food cost, o borrar la frase de landing:140."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "06-catering.xlsx",
+      "ubicacion": "hojas del libro; landing kit-escandallos.ts:143",
+      "hallazgo": "«Incluye checklist de evento y desglose para presentar al cliente»: no hay checklist, y la hoja Presupuesto es interna (mezcla costes propios con el PVP), no un documento presentable a un cliente.",
+      "evidencia": "landing:143. Hojas: 'Instrucciones', 'Cocktail 50 pax', 'Presupuesto'. En 'Presupuesto' (B2:C20) conviven 'Coste alimentación por persona' (C6), 'Personal de servicio' (C8), 'Transporte y logística' (C9) y 'Margen objetivo (%)' (C16) con el 'PRESUPUESTO TOTAL (con IVA)' (C20): enseñarla al cliente es enseñarle el margen.",
+      "fix": "Añadir hoja 'Checklist Evento' (timings, personal, menaje, permisos, alérgenos) y una hoja 'Presupuesto Cliente' que sólo exponga concepto, nº de pax y PVP/persona con IVA. O retirar la promesa de landing:143."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "01..08 (todos los escandallos)",
+      "ubicacion": "p.ej. '01'!A25/H25 e I26; landing kit-escandallos.ts:138 y :157",
+      "hallazgo": "Ninguna plantilla calcula el food cost REAL. El único food cost del kit es un objetivo que teclea el usuario para derivar el PVP; no hay celda 'PVP real de mi carta' → 'food cost real'. La landing lo vende como cálculo automático dos veces.",
+      "evidencia": "landing:138 «las fórmulas calculan automáticamente la merma, el coste real por ración, el food cost % y el PVP sugerido»; landing:157 (why) «Cambias un ingrediente y todo se recalcula: coste, merma, food cost % y PVP sugerido». En el fichero '01' la cadena es: A25 'Food Cost objetivo (%)' H25=0,30 (INPUT) → I26 '=I23/H25' → I27 '=I26*1.10' → I28 '=I26-I23' → I29 '=I28/I26'. No existe ninguna celda donde meter el precio al que YA vendes el plato ni ninguna que devuelva coste/PVP_real. Idéntico en 02-08.",
+      "fix": "Añadir dos filas al bloque final de cada escandallo: 'PVP actual en carta (sin IVA)' (editable) y 'FOOD COST REAL (%)' = COSTE_TOTAL/PVP_actual, con formato condicional rojo si supera el objetivo. Es la pregunta que trae al cliente («¿cuánto me cuesta de verdad este plato?») y hoy la plantilla no la responde."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "01-escandallo-estandar.xlsx",
+      "ubicacion": "hoja 'Escandallo' completa; landing kit-escandallos.ts:138",
+      "hallazgo": "«Coste real por ración» sin campo de raciones: la plantilla asume implícitamente 1 ración y no lo dice en ninguna parte, así que cualquier receta de base (un fondo, una salsa, una masa) sale mal.",
+      "evidencia": "landing:138 «…el coste real por ración…». Barrido A1:L29 de 'Escandallo': no hay celda 'Raciones', 'Porciones' ni 'Rendimiento'. El bloque final es A21 'COSTE TOTAL INGREDIENTES', A22 'Coste elaboración (%)', A23 'COSTE TOTAL DEL PLATO', A25 'Food Cost objetivo (%)', A26 'PVP SUGERIDO'. Las Instrucciones (B16-B24) explican las 9 columnas y tampoco mencionan raciones.",
+      "fix": "Añadir fila 'Nº de raciones' (por defecto 1) y 'COSTE POR RACIÓN' = I23/raciones, y encadenar el PVP a esa celda. Misma corrección que COM-01 pero en el resto de plantillas."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "06-catering.xlsx",
+      "ubicacion": "nombre de hoja 'Cocktail 50 pax' vs 'Cocktail 50 pax'!A1 y 'Presupuesto'!C6-C7",
+      "hallazgo": "El nombre de la pestaña contradice su contenido y monta una trampa de ×50: la hoja está escandallada POR PERSONA pero se llama «50 pax», y el Presupuesto vuelve a multiplicar por el número de comensales.",
+      "evidencia": "Pestaña 'Cocktail 50 pax'; su A1 dice 'Catering Cocktail — Coste por Persona' y las cantidades son claramente unitarias (E5 = 0,04 kg de jamón, E9 = 3 croquetas, E14 = 1 café). 'Presupuesto'!C6 'Coste alimentación por persona' ='Cocktail 50 pax'!I23 y C7 'Coste total alimentación' '=C5*C6' con C5=50. Si el usuario hace caso al nombre de la pestaña y mete cantidades para 50 comensales, C7 factura el evento 50 veces.",
+      "fix": "Renombrar la pestaña a 'Cocktail (por persona)' y añadir en A2 un aviso «Introduce las cantidades PARA UNA PERSONA; el número de comensales se fija en Presupuesto!C5»."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "01-escandallo-estandar.xlsx / 09-control-mermas.xlsx",
+      "ubicacion": "'01'!G5:G19 y 'Instrucciones'!B28-B30; '09'!B5:B20; landing kit-escandallos.ts:64 y :230",
+      "hallazgo": "La FAQ (y el FAQPage del schema) afirma que las mermas vienen con valor mínimo, máximo y típico. En todo el kit hay un único valor por categoría.",
+      "evidencia": "landing:64 (schema FAQ) y :230 (FAQ on-page): «Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas». Realidad: '01'!Instrucciones B28-B30 lista un solo número por categoría («Carne roja: 20% | Aves: 25% | Pescado: 35% | Marisco: 45%…») y '09'!B5:B20 tiene una sola columna 'Merma Estándar' (B5=0,20, B6=0,25, B7=0,35, B8=0,45…). No hay ninguna columna Min/Max en ningún fichero. (Sí son 16 categorías: la validación de '01'!B5:B19 lista exactamente 16.)",
+      "fix": "O añadir columnas 'Merma mín. / típica / máx.' en 09 y en la referencia de Instrucciones, o cambiar el texto de la FAQ (dos sitios: schema :64 y on-page :230) a «la merma típica de la industria, editable»."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-escandallos.ts",
+      "ubicacion": ":182 (bonus.subtitle) vs :286-287 (bonusTotalLabel / bonusSaveLine) y :281 (priceOld)",
+      "hallazgo": "El ancla de valor se autodesmiente en el mismo bloque: los dos bonos «valen €46» y tres líneas más abajo el «valor total del kit completo» es €49 — con lo que las 11 plantillas que dan nombre al producto valdrían €3.",
+      "evidencia": "kit-escandallos.ts:182 «Además de las 11 plantillas, recibirás estos recursos adicionales — valorados en €46» (BONUS 1 €27 en :188 + BONUS 2 €19 en :195). :286 bonusTotalLabel 'Valor total del kit completo' sobre priceOld '€49' (:281) y :287 '¡Ahorra €37 HOY!' (49−12). El bloque se pinta uno debajo del otro en BonusSection.",
+      "fix": "Recalcular el ancla: si los bonos valen €46, el «valor total» debe ser el precio de las plantillas + €46 (p.ej. €95), o eliminar las valoraciones individuales de los bonos. Tal como está, es la incoherencia aritmética que primero detecta un comprador escéptico."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "media",
+      "fichero": "09-control-mermas.xlsx",
+      "ubicacion": "'Mermas Semanal'!B4-G20 (E5, F5, G5)",
+      "hallazgo": "Lógica de negocio mal planteada: compara una merma económica (€ perdidos / € comprados) contra un estándar de RENDIMIENTO de despiece (20 % en carne roja, 45 % en marisco). Con datos reales de desperdicio la columna Estado dirá «OK» prácticamente siempre y el sistema de alerta no alerta nunca.",
+      "evidencia": "E5 '=IF(C5=0,\"\",D5/C5)' con C4='Compra Total (€)' y D4='Merma Real (€)'; F5 '=IF(E5=\"\",\"\",E5-B5)' y G5 '=IF(E5=\"\",\"\",IF(E5<=B5,\"OK\",\"ALERTA\"))', donde B5=0,20 es la merma estándar de despiece que 01-escandallo-estandar.xlsx ya usa para inflar la cantidad bruta ('01'!H5 '=E5/(1-G5)'). Un restaurante que compre 1.000 € de carne y tire 50 € en mal estado obtiene 5 % → 'OK' frente a un umbral del 20 % que mide otra cosa; y esa merma de despiece ya está cobrada dentro del escandallo, así que contarla otra vez aquí sería duplicarla.",
+      "fix": "Separar los dos conceptos: dejar 'Merma de rendimiento' (la del escandallo) fuera de esta hoja y fijar el umbral de esta como % de desperdicio sobre compras realista por categoría (2-5 % en fresco, 0,5-1 % en secos), o cambiar las columnas C/D a kg entrados y kg aprovechados para que el % sí sea comparable con B."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "media",
+      "fichero": "04-cocktails-bebidas.xlsx",
+      "ubicacion": "'Instrucciones'!B9 vs 'Gin Tonic Premium'!C5/E5, 'Mojito Clásico'!C5/E5, 'Margarita'!C5/E5, 'Aperol Spritz'!C5/E5; landing kit-escandallos.ts:141",
+      "hallazgo": "La hoja de instrucciones y la landing afirman que las cantidades están «en cl/ml, medidas de bar». No lo están: están en litros y kilos, igual que el resto del kit.",
+      "evidencia": "'Instrucciones'!B9 «▸ Las cantidades están en cl/ml (medidas de bar)»; landing:141 «4 cocktails con medidas exactas en cl/ml». Realidad: 'Gin Tonic Premium' C5='L', D5=28 €, E5=0,05 (= 5 cl expresados en litros); 'Mojito Clásico' C5='L', D5=15, E5=0,06; 'Margarita' C5='L', E5=0,05; 'Aperol Spritz' C5='L', E5=0,06 y Prosecco E6=0,09. Si fueran cl como dice B9, el gin tonic llevaría 0,5 ml de ginebra.",
+      "fix": "Corregir 'Instrucciones'!B9 a «las cantidades van en la unidad de compra (L/kg): 5 cl = 0,05 L» y corregir el rótulo F5 de las filas de destilado (hoy 'cl') a 'L'. Ver COM-04: la solución de fondo es el factor de conversión."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "media",
+      "fichero": "11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "xl/charts/chart1.xml, elemento <cat>",
+      "hallazgo": "El único gráfico del kit define el eje de categorías como referencia NUMÉRICA sobre celdas de texto: los meses no se rotularán como Enero…Diciembre. Además el eje de categorías declara posición izquierda en un gráfico de columnas.",
+      "evidencia": "chart1.xml: <cat><numRef><f>'Dashboard'!$B$7:$B$18</f></numRef></cat> mientras 'Dashboard'!B7:B18 son cadenas ('Enero'…'Diciembre') — debería ser <strRef>. Y <catAx>…<axPos val=\"l\"/> con <barChart><barDir val=\"col\"/> (el eje de categorías de un gráfico de columnas va abajo, 'b').",
+      "fix": "Regenerar el gráfico con openpyxl usando Reference + set_categories (que emite strRef) y dejar que openpyxl fije el axPos, o parchear chart1.xml cambiando numRef→strRef y axPos 'l'→'b'. Verificar abriendo el .xlsx, no sólo el XML."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "media",
+      "fichero": "10-calculadora-pvp.xlsx / 11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "landing kit-escandallos.ts:133 (grid.subtitle)",
+      "hallazgo": "«Cada plantilla incluye fórmulas automáticas, mermas precargadas, zona para foto del plato y formato listo para imprimir» — cuatro de las doce no tienen ni zona de foto ni mermas precargadas.",
+      "evidencia": "landing:133. La zona de foto (celda K3 '📷 Foto del Plato' + K8 'Arrastra aquí la foto…' + K15 'Insertar → Imagen → Desde archivo') existe en las 8 plantillas de escandallo, pero NO en 09-control-mermas.xlsx, 10-calculadora-pvp.xlsx, 11-dashboard-food-cost-mensual.xlsx ni BONUS-mermas-inventario.xlsx (barrido completo: sus hojas llegan a la columna H como máximo). Mermas precargadas: 10 y 11 no tienen ninguna columna de merma.",
+      "fix": "Cambiar 'Cada plantilla' por 'Cada plantilla de escandallo' en landing:133. El check del hero (:120) «Zona para foto del plato en cada escandallo» sí es correcto y puede quedarse tal cual."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "baja",
+      "fichero": "src/pages/KitEscandallosDashboard.tsx",
+      "ubicacion": ":104 y :16-29 / :113",
+      "hallazgo": "El dashboard que ve el cliente ya pagado dice «Tus 11 plantillas» en el hero y pinta 12 tarjetas justo debajo; el rótulo de la sección sí dice 11+1.",
+      "evidencia": "línea 104: «Tus 11 plantillas Excel profesionales listas para descargar.»; TEMPLATES (:16-29) tiene 12 entradas incluida { key: 'bonus-mermas', title: 'BONUS: Mermas + Inventario' }; línea 113: «11 Plantillas + 1 Bonus · Descarga Directa».",
+      "fix": "Alinear el hero con la línea 113: «Tus 11 plantillas Excel + el bonus, listos para descargar»."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-escandallos.ts",
+      "ubicacion": ":120 (hero.checkItems)",
+      "hallazgo": "«Dashboard de Food Cost mensual con gráficos», en plural, para un fichero que tiene exactamente un gráfico.",
+      "evidencia": "landing:120 y :254 (cta items) repiten «Dashboard de Food Cost mensual con gráficos». `unzip -l 11-dashboard-food-cost-mensual.xlsx` → un único xl/charts/chart1.xml (barChart 'Food Cost Mensual vs Objetivo').",
+      "fix": "Singular («con gráfico de evolución anual») o añadir un segundo gráfico (p.ej. líneas de compras vs ventas)."
+     },
+     {
+      "id": "COM-28",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-escandallos.ts",
+      "ubicacion": ":108 (hero.badge)",
+      "hallazgo": "Claim de superioridad sin sustento: «El kit #1 de escandallos para hostelería profesional», en la misma página que un AggregateRating fabricado.",
+      "evidencia": "landing:108 badge: 'El kit #1 de escandallos para hostelería profesional'. No hay ninguna fuente, ranking ni métrica de ventas en el repo que respalde el #1; el hub lo etiqueta además con badge '🔥 Más Vendido' (ProductosDigitales.tsx:101).",
+      "fix": "Sustituir por un claim verificable y propio («11 plantillas + calculadora de PVP + dashboard anual, pago único») o dejar «Más vendido de nuestra tienda» si eso sí se puede acreditar con Stripe."
+     },
+     {
+      "id": "COM-29",
+      "severidad": "baja",
+      "fichero": "04-cocktails-bebidas.xlsx",
+      "ubicacion": "'Instrucciones'!B11 vs landing kit-escandallos.ts:141 vs 10-calculadora-pvp.xlsx 'Calculadora PVP'!C15/D15",
+      "hallazgo": "Tres cifras distintas para el mismo rango de food cost de bar en el mismo producto.",
+      "evidencia": "landing:141 «objetivo de food cost al 18-22%»; '04'!'Instrucciones'!B11 «▸ El food cost objetivo en bar suele ser 18-25%»; '10'!'Calculadora PVP' fila 15 'Bar/Cocktails' C15=0,18 D15=0,25. Las 4 hojas de cóctel usan H21/H20 = 0,20.",
+      "fix": "Unificar en 18-25 % (que es lo que traen los dos ficheros) corrigiendo landing:141."
+     },
+     {
+      "id": "COM-30",
+      "severidad": "baja",
+      "fichero": "06-catering.xlsx",
+      "ubicacion": "'Presupuesto'!C8 y C10",
+      "hallazgo": "Tarifas de negocio escondidas dentro de las fórmulas: el cliente no ve el precio unitario y no puede cambiarlo sin editar la fórmula, en contra de la FAQ «Puedes personalizar».",
+      "evidencia": "C8 'Personal de servicio (camareros)' = '=C5*3.50' y C10 'Material desechable / menaje' = '=C5*1.20' — los 3,50 € y 1,20 € por comensal están cableados, sin celda de entrada ni justificación. Las celdas verdes editables de esa hoja son sólo C5, C9, C11 y C16. FAQ landing:234: «Totalmente. Puedes añadir ingredientes, modificar precios…».",
+      "fix": "Sacar las tarifas a celdas propias editables (p.ej. F8 '€/pax camareros' = 3,50 y F10 '€/pax menaje' = 1,20) y referenciarlas: C8 '=C5*F8'."
+     },
+     {
+      "id": "COM-31",
+      "severidad": "baja",
+      "fichero": "BONUS-mermas-inventario.xlsx",
+      "ubicacion": "'Inventario'!G4:G19 y ausencia de columna de valor",
+      "hallazgo": "El bono se vende como «consumo real vs teórico» pero el consumo teórico es 100 % manual —nada del kit lo calcula— y la diferencia sale en kg, sin traducir a euros, que es lo que permite «detectar pérdidas ocultas».",
+      "evidencia": "landing:191 (BONUS 2) «control de inventario con consumo real vs teórico». En la hoja: F5 '=C5+D5-E5' (consumo real, automático), G5 vacío sin fórmula (consumo teórico, a mano) y H5 '=F5-G5' con number_format '+0.00;-0.00'. No hay ninguna columna de precio ni de importe en A4:H4 ('Producto, Ud., Stock Inicial, Compras, Stock Final, Consumo Real, Consumo Teórico, Diferencia'), ni enlace a los escandallos que darían el teórico.",
+      "fix": "Añadir columna 'Precio medio (€/ud)' y 'Diferencia (€)' = H*precio, y una nota en Instrucciones explicando cómo obtener el consumo teórico (ventas del plato × cantidad del escandallo). Sin el importe, la hoja no sirve para priorizar."
+     },
+     {
+      "id": "COM-32",
+      "severidad": "baja",
+      "fichero": "BONUS-mermas-inventario.xlsx",
+      "ubicacion": "'Checklist Mermas'!A4:F33 y A34",
+      "hallazgo": "Registro rotulado como diario con capacidad de 30 líneas al mes: una línea por día. Una cocina anota varias mermas al día, así que la hoja se llena en la primera semana.",
+      "evidencia": "A1 'Checklist de Mermas — Registro Diario', cabeceras en fila 3 y filas de datos 4-33 (la data validation del motivo cubre exactamente D4:D33); A34 'TOTAL MERMAS MES' con F34 '=SUM(F4:F33)'.",
+      "fix": "Ampliar a ~150 filas (5 registros/día × 30 días) extendiendo la validación y el SUM, o cambiar el rótulo a 'Registro Semanal'."
+     },
+     {
+      "id": "COM-33",
+      "severidad": "baja",
+      "fichero": "04-cocktails-bebidas.xlsx",
+      "ubicacion": "'Gin Tonic Premium'!A19/K3, 'Mojito Clásico'!A19, 'Margarita'!A18, 'Aperol Spritz'!A18",
+      "hallazgo": "Rótulos heredados sin adaptar: las cuatro hojas de coctelería hablan de «plato».",
+      "evidencia": "'Gin Tonic Premium'!A19 = 'COSTE TOTAL DEL PLATO', K3 = '📷 Foto del Plato', K8 = 'Arrastra aquí la foto del plato terminado'. Idéntico en las otras tres hojas (A18/A19 según la hoja). Mismo caso en 06-catering.xlsx!'Cocktail 50 pax'!A23.",
+      "fix": "Sustituir 'PLATO' por 'CÓCTEL' (y por 'MENÚ POR PERSONA' en catering) en los rótulos de esas hojas. Es cosmético pero es lo primero que ve el barman al abrir."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "La Fase A determinista está bien aplicada (cache, A4, metadatos, bio, v1.1, casilla: no encontré ningún caso que se le escapara), pero por debajo de esa capa el kit no está listo para un cliente que pagó. Hay siete problemas de nivel reembolso o riesgo legal: (1) 05-pasteleria.xlsx escandalla el LOTE y presenta el resultado como PVP unitario —22,82 € por croissant, 29,21 € por macaron— y su propia hoja de Instrucciones promete un campo 'Rendimiento' que no existe; (2) el BONUS 1 con precio propio (Guía «Controla tu Food Cost en 30 Días», €27) no se entrega en ningún sitio: 12 ficheros, 12 claves en PRODUCT_FILES, 12 tarjetas, ninguna es la guía; (3) el «punto de equilibrio diario» del Food Truck lo promete la landing Y la tarjeta que ve quien ya pagó, y 08-food-truck.xlsx no tiene ni una celda de costes fijos; (4) la columna 'Ud. Uso' es decorativa —no entra en ninguna fórmula, no hay conversión— y las Instrucciones ordenan usarla, de modo que teclear «5 cl» de ginebra en vez de «0,05» multiplica el coste por 100 (el propio ejemplo publicado ya está rotulado 'cl' sobre un valor en litros); (5) en 06-catering.xlsx el mismo 35 % significa food cost en una pestaña y margen sobre venta en la de al lado, y las Instrucciones empujan la lectura que infravalora el evento un 46 %; (6) el JSON-LD emite un AggregateRating 4,9/10 reseñas y tres Review nominales sin ningún sistema de reseñas detrás, con testimonios que citan negocios y cifras concretas —uno de ellos, el 12 % de merma de temperado, contradice el propio fichero, que usa 5 %—; y (7) el ancla «€49 → €12, -75%, precio de lanzamiento que sube pronto» es permanente y está duplicada en el hub. A eso se suman nueve promesas de la parrilla de producto que el fichero no cumple (rotación semanal de 5 menús, pases 6-9 del degustación, semáforo de color y gráfico de mermas, alertas del dashboard, fila 'Delivery' de la calculadora PVP, carrot cake, checklist de evento, mermas 12 %/8 % de pastelería) y el hueco de fondo: ninguna plantilla calcula el food cost REAL —sólo el objetivo que teclea el usuario—, que es justo la pregunta por la que se compra un kit de escandallos. Antes de dar por cerrado el producto hay que arreglar los siete de severidad alta (los tres primeros tocan ficheros; el cuarto y el quinto son fórmulas; el sexto y el séptimo son texto de landing) y decidir, promesa por promesa, si se construye la funcionalidad o se retira la frase."
+   },
+   "dominio": {
+    "lente": "Experto técnico — controller de costes de restaurante que escandalla a diario (rendimientos, mermas, food cost, IVA, ingeniería de menú)",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "src/components/kit-escandallos/BonusSection.tsx",
+      "ubicacion": "líneas 5-12 (BONUS 1) vs /dl/kit-escandallos/ (12 ficheros)",
+      "hallazgo": "El BONUS 1 anunciado y valorado en la landing —«Guía: Controla tu Food Cost en 30 Días», €27— NO se entrega en ninguna parte. La carpeta de descargas contiene 12 .xlsx y ninguno es esa guía; el dashboard (KitEscandallosDashboard.tsx:16-27) lista exactamente 12 descargas, todas plantillas Excel. El cliente paga viendo «recibirás estos recursos adicionales — valorados en €46» (BonusSection.tsx:35) y solo recibe el de €19.",
+      "evidencia": "BonusSection.tsx:7-9 → title:'Guía: Controla tu Food Cost en 30 Días', value:'€27', desc:'Plan de acción semana a semana... tácticas de negociación con proveedores, checklist semanal y caso práctico real'. BonusSection.tsx:35 → «valorados en €46». `ls astro-site/public/dl/kit-escandallos/` = 01..11 + BONUS-mermas-inventario.xlsx (12 xlsx, 0 pdf, 0 docx). KitEscandallosDashboard.tsx:16-27 = 12 entradas, ninguna con key de guía.",
+      "fix": "O se produce la guía (PDF) y se añade a PRODUCT_FILES + dashboard + gate, o se retira el BONUS 1 de la landing y se corrige el «valorados en €46» a €19. Mientras no exista, es un bono cobrado y no entregado."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "Mermas Semanal:B5:B20 y G5:G20",
+      "hallazgo": "La hoja compara dos cosas que no son la misma merma. La columna «Merma Estándar» está cargada con los RENDIMIENTOS DE DESPIECE/LIMPIEZA del escandallo (Carne roja 20 %, Pescado 35 %, Marisco 45 %, Verdura hoja 25 %), pero las columnas C/D/E miden DESPERDICIO en euros sobre la compra (D/C). Son conceptos distintos: la merma de despiece ya está costeada dentro del plato y se recupera en el PVP; el desperdicio semanal que vigila un controller (caducidad, mal estado, sobreproducción) tiene un benchmark del 2-5 % de la compra. Con estos estándares la hoja da «OK» a un 44 % de desperdicio de marisco —que sería la ruina— y a un 19 % de carne roja, y nunca alerta a una cocina bien llevada. El semáforo es inservible en las dos direcciones.",
+      "evidencia": "09-control-mermas.xlsx:Mermas Semanal:B8=0.45 (Marisco) con G8='=IF(E8=\"\",\"\",IF(E8<=B8,\"OK\",\"ALERTA\"))' y E8='=IF(C8=0,\"\",D8/C8)' donde D4='Merma Real (€)' y C4='Compra Total (€)'. Los mismos 0.20/0.35/0.45/0.25 aparecen como merma de despiece en 01-escandallo-estandar.xlsx:Instrucciones:B28 («Carne roja: 20% | Aves: 25% | Pescado: 35% | Marisco: 45%»).",
+      "fix": "Sustituir la columna B por benchmarks de DESPERDICIO sobre compra (2-3 % secos/congelados, 3-5 % carne/pescado, 5-8 % verdura/fruta, 1-2 % bebidas) y renombrarla «Desperdicio objetivo (% s/compra)». Aclarar en Instrucciones que la merma de despiece del escandallo no se registra aquí porque ya está en el coste del plato."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "Dashboard:E7:E18 (=IF(D7=0,\"\",C7/D7))",
+      "hallazgo": "El KPI central del kit está mal planteado: calcula food cost = COMPRAS / VENTAS. El food cost real es CONSUMO / VENTAS, siendo consumo = stock inicial + compras − stock final. Una compra fuerte a fin de mes (o un vaciado de cámara) desplaza el indicador varios puntos sin que haya cambiado nada en la cocina, que es justo el error que este dashboard debería evitar. Agravante: no dice si «Ventas» va con o sin IVA; con IVA incluido el food cost sale ~9 % más bajo de lo real y el usuario cree que va bien. El fichero BONUS ya pide stock inicial y final y no está conectado con esta hoja.",
+      "evidencia": "11-dashboard-food-cost-mensual.xlsx:Dashboard:C6='Compras (€)', D6='Ventas (€)', E7='=IF(D7=0,\"\",C7/D7)'; C7=8500, D7=28000 → 30,4 %. No existe ninguna celda de stock inicial/final ni nota sobre el IVA. BONUS-mermas-inventario.xlsx:Inventario:C4='Stock Inicial', E4='Stock Final', F5='=C5+D5-E5' (consumo) sin ninguna referencia cruzada al dashboard.",
+      "fix": "Añadir columnas «Stock inicial (€)» y «Stock final (€)» y cambiar E a =(Cini+Compras−Cfin)/Ventas. Rotular D6 como «Ventas netas (sin IVA)» y añadir una nota en Instrucciones. Idealmente enlazar el consumo desde la hoja Inventario del BONUS."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/05-pasteleria.xlsx",
+      "ubicacion": "Instrucciones:B8-B9 vs Croissants:A20:I24 (y Tarta Chocolate:A21:I25, Macarons:A20:I24)",
+      "hallazgo": "La hoja de Instrucciones promete literalmente «Incluye campo de 'Rendimiento' (unidades por receta)» y «El coste se calcula por unidad producida». No existe: no hay campo de rendimiento ni ninguna división por unidades en las tres pestañas. El bloque final es idéntico al de un plato a la carta, de modo que el «PVP SUGERIDO» que se le presenta al pastelero es el de la RECETA ENTERA. En Croissants (20 unidades) el fichero muestra 22,82 € «PVP CON IVA» cuando el precio correcto por croissant es 1,14 €: un factor 20. Es la promesa explícita de la plantilla y la cifra que el usuario copia a su carta.",
+      "evidencia": "05-pasteleria.xlsx:Instrucciones:B8='▸ Incluye campo de \\'Rendimiento\\' (unidades por receta)', B9='▸ El coste se calcula por unidad producida'. Croissants:A1='Croissants de Mantequilla — 20 unidades'; I18=SUM(I5:I16)=4,7158 €; I20=I18+I19=5,1874 €; H22=0,25; I23=I20/H22=20,75 €; I24=I23*1,10=22,82 €. Ninguna celda contiene «Rendimiento» ni «/20». Idéntico en Tarta Chocolate (12 raciones, I25=65,05 €) y Macarons (30 unidades).",
+      "fix": "Añadir en cada pestaña una celda «Rendimiento (uds/raciones)» (12/20/30) y dos filas nuevas: «COSTE POR UNIDAD = coste total / rendimiento» y «PVP POR UNIDAD», y mover el food cost objetivo al cálculo unitario. Sin eso, o se corrige el texto de Instrucciones y se renombra el bloque «PVP de la receta completa»."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (7 ficheros)",
+      "ubicacion": "Columnas C 'Ud. Compra' y F 'Ud. Uso' de todas las hojas de escandallo; 17 filas precargadas con unidades distintas",
+      "hallazgo": "La plantilla ofrece dos desplegables de unidad (compra y uso) pero NO hay ningún factor de conversión: la fórmula es Coste = Cantidad/(1−merma) × Precio de la unidad de COMPRA. Es decir, la columna «Ud. Uso» es decorativa y multiplica peras por manzanas en cuanto las dos unidades difieren, cosa que ocurre en 17 filas ya precargadas de 7 ficheros. Caso con error real medido: el flan del menú del día carga 1,01 € de huevo cuando la cantidad declarada (0,25 ud) cuesta 0,075 € — un factor 13,5. Y es una trampa activa: cualquier cliente que compre en kg y cocine en g (los dos están en el desplegable) se multiplicará el coste por 1.000 sin un solo aviso.",
+      "evidencia": "Fórmula: 01-escandallo-estandar.xlsx:Escandallo:H5='=E5/(1-G5)', I5='=H5*D5' (D=Precio/Ud de COMPRA). Desplegable de F: 'kg,g,L,ml,cl,ud,docena,manojo,sobre,lata,botella' (data validation sobre F5:F19). Caso: 03-menu-del-dia.xlsx:Postre:C5='docena', D5=3.6, E5=0.25, F5='ud', G5=0.11 → I5=0,25/0,89×3,60=1,011 €; 0,25 ud de huevo a 3,60 €/docena = 0,075 €. Otras 16 filas: 02:'4. Carne':A9 romero (manojo→ud), 04 ×7 (L→cl), 05:Tarta:A7 y Croissants:A11 (docena→ud), 07 ×3, 08:Loaded Fries:A9.",
+      "fix": "Añadir una columna oculta de factor de conversión (kg↔g, L↔ml/cl, docena↔ud) resuelta con un BUSCARV sobre una tabla de equivalencias, y que I = E/(1−G) × D × factor. Alternativa mínima si no se quiere tocar la lógica: eliminar la columna «Ud. Uso», dejar una sola unidad por fila y homogeneizar las 17 filas precargadas."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/04-cocktails-bebidas.xlsx",
+      "ubicacion": "Instrucciones:B9 y F5 de las 4 pestañas (Gin Tonic:F5, Mojito:F5, Margarita:F5-F6, Aperol:F5-F7)",
+      "hallazgo": "Las Instrucciones afirman «Las cantidades están en cl/ml (medidas de bar)» y las 7 filas de destilados/refrescos están etiquetadas «cl» en Ud. Uso, pero los VALORES están en litros. Un gin tonic con «0,05 cl» de ginebra son 0,5 ml. El coste solo sale bien porque la fórmula ignora la etiqueta y multiplica por el precio/litro. El daño es que el bartender que corrija el número a la medida real de bar (5 cl) obtendrá 5 × 28 = 140 € de ginebra en una copa, y el que se fíe de la etiqueta creerá que su receta lleva medio mililitro de alcohol. Es la plantilla completa del fichero, no un caso aislado.",
+      "evidencia": "04-cocktails-bebidas.xlsx:Instrucciones:B9='▸ Las cantidades están en cl/ml (medidas de bar)'. Gin Tonic Premium:C5='L', D5=28, E5=0.05, F5='cl' → I5=0,05/0,98×28=1,43 € (= el coste de 5 cl, no de 0,05 cl). Idéntico en Mojito:E5=0.06 'cl' (ron), Margarita:E5=0.05 y E6=0.025, Aperol Spritz:E5=0.06, E6=0.09, E7=0.03.",
+      "fix": "Poner F='L' en esas 7 filas (o convertir a cl los valores y añadir el factor /100 en la fórmula) y corregir Instrucciones:B9. Añadir además el matiz de que los destilados se compran en botella de 70 cl: el Precio/Ud debe ser €/L (precio de botella ÷ 0,7)."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-escandallos/08-food-truck.xlsx",
+      "ubicacion": "hojas del libro: ['Instrucciones','Smash Burger','Loaded Fries','Pulled Pork Sándwich']",
+      "hallazgo": "La landing y el dashboard prometen dos veces el punto de equilibrio diario como entregable diferencial de esta plantilla («Calcula el punto de equilibrio diario: cuántas unidades necesitas vender para cubrir costes fijos»). El fichero no tiene ninguna hoja, celda ni fórmula de costes fijos ni de umbral de rentabilidad: son tres escandallos idénticos a los del resto del kit. Es el único elemento que justifica una plantilla propia de food truck y no está.",
+      "evidencia": "08-food-truck.xlsx: 4 hojas, 89 fórmulas, ninguna con 'equilibrio', 'fijos', 'break' ni división por unidades/día; Instrucciones:B8-B10 solo hablan de food cost 28-35 %. Promesa en src/components/kit-escandallos/ContentGrid.tsx:15 y en src/pages/KitEscandallosDashboard.tsx:23 ('Street food con punto de equilibrio diario incluido.').",
+      "fix": "Añadir una hoja «Punto de Equilibrio» con costes fijos diarios (alquiler de plaza, seguro, amortización del truck, combustible/generador, personal, tasas) y umbral = costes fijos / margen de contribución unitario, tomando el margen de las tres pestañas. Si no se produce, retirar la frase de ContentGrid.tsx:15 y del dashboard."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/07-cafeteria-brunch.xlsx",
+      "ubicacion": "hojas del libro vs src/components/kit-escandallos/ContentGrid.tsx:14",
+      "hallazgo": "La landing enumera cuatro ejemplos concretos de esta plantilla —«tostada de aguacate, açaí bowl, eggs benedict, carrot cake»— y el fichero solo trae tres: falta carrot cake. Es una enumeración cerrada y verificable por el cliente en cuanto abre el Excel.",
+      "evidencia": "07-cafeteria-brunch.xlsx hojas = ['Instrucciones','Tostada Aguacate','Açaí Bowl','Eggs Benedict']. ContentGrid.tsx:14 → 'Incluye ejemplos reales: tostada de aguacate, açaí bowl, eggs benedict, carrot cake.'",
+      "fix": "Añadir la pestaña «Carrot Cake» (con rendimiento por porciones, ver DOM-04) o quitar la mención en ContentGrid.tsx:14."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "Instrucciones:B12-B13 vs Mermas Semanal (0 reglas de formato condicional)",
+      "hallazgo": "La hoja de Instrucciones promete un semáforo visual («Rojo = merma real superior al estándar (alerta)», «Verde = merma real igual o inferior al estándar (bien)») que no existe: no hay una sola regla de formato condicional en el fichero — ni en ningún otro de los 12 del kit. Lo único que se pinta es el texto «OK»/«ALERTA» en negro sobre blanco, así que en una tabla de 16 filas el usuario tiene que leerlas una a una, que es justo lo que el semáforo evitaba.",
+      "evidencia": "09-control-mermas.xlsx:Instrucciones:B12='▸ Rojo = merma real superior al estándar (alerta)', B13='▸ Verde = merma real igual o inferior al estándar (bien)'. Barrido con openpyxl sobre los 12 ficheros: `list(ws.conditional_formatting)` vacío en todas las hojas (0 reglas). G5='=IF(E5=\"\",\"\",IF(E5<=B5,\"OK\",\"ALERTA\"))' es texto plano.",
+      "fix": "Añadir formato condicional a G5:G20 (verde si ='OK', rojo si ='ALERTA') y a F5:F20 con escala de color. Mismo tratamiento en 11-dashboard:G7:G18."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "media",
+      "fichero": "src/pages/KitEscandallos.tsx",
+      "ubicacion": "línea 105 (FAQ JSON-LD) vs 09-control-mermas.xlsx:Mermas Semanal:B4",
+      "hallazgo": "La FAQ de la landing —que además va en el JSON-LD y puede salir como rich result en Google— afirma que las mermas «Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas». El fichero tiene 16 categorías, sí, pero un único valor por categoría («Merma Estándar»), sin mínimo ni máximo. Y sin rango el profesional no puede saber si su 22 % de carne roja es normal o malo.",
+      "evidencia": "KitEscandallos.tsx:105 → '...Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas.' 09-control-mermas.xlsx:Mermas Semanal:B4='Merma Estándar' con un solo valor por fila (B5=0.2 … B20=0.02); no existen columnas de mínimo/máximo. Contraste: 10-calculadora-pvp.xlsx sí tiene C6='Food Cost Min' y D6='Food Cost Max'.",
+      "fix": "Añadir columnas «Merma mín.» y «Merma máx.» junto a la típica en 09 (y en la referencia de 01:Instrucciones:B28-B30), o corregir la respuesta de la FAQ a «una merma estándar por categoría»."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/10-calculadora-pvp.xlsx",
+      "ubicacion": "Calculadora PVP:B7:B15 vs src/components/kit-escandallos/ContentGrid.tsx:17",
+      "hallazgo": "La landing enumera los 9 tipos de establecimiento uno a uno e incluye «delivery»; el fichero no lo tiene (en su lugar hay «Pastelería»). No es un detalle nominal: delivery es precisamente el canal donde el food cost objetivo debe bajar 8-12 puntos para absorber la comisión de plataforma (25-35 %), y es el caso en el que más restaurantes se equivocan hoy. Un usuario que aplique el PVP de «Casual Dining» a su carta de Glovo pierde dinero en cada pedido.",
+      "evidencia": "10-calculadora-pvp.xlsx:Calculadora PVP:B7:B15 = Fine Dining, Casual Dining, Fast Casual, Cafetería, Catering, Food Truck, Hotel F&B, Pastelería, Bar/Cocktails. ContentGrid.tsx:17 → '...9 tipos de establecimiento: restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel y delivery.'",
+      "fix": "Añadir la fila «Delivery» (food cost objetivo 18-22 % neto de comisión) con una columna extra «Comisión plataforma (%)» que descuente antes de calcular el PVP, y alinear la enumeración de ContentGrid.tsx:17 con las etiquetas reales del fichero."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "Cocktail 50 pax:H25/I26 vs Presupuesto:C16/C17",
+      "hallazgo": "El mismo número «35 %» significa dos cosas opuestas en dos hojas del mismo libro y se usa con fórmulas distintas: en el escandallo es food cost objetivo (PVP = coste/0,35 → multiplicador 2,86) y en el presupuesto es margen objetivo (PVP = coste/(1−0,35) → multiplicador 1,54). El resto del kit usa SIEMPRE la primera convención, así que un usuario que traslade su «35 %» habitual a la hoja de presupuesto se queda a la mitad de precio sin darse cuenta. Además el rótulo visual es casi idéntico («Food Cost objetivo (%)» / «Margen objetivo (%)») y ambos van con formato 0%.",
+      "evidencia": "06-catering.xlsx:Cocktail 50 pax:A25='Food Cost objetivo (%)', H25=0.35, I26='=I23/H25'. 06-catering.xlsx:Presupuesto:B16='Margen objetivo (%)', C16=0.35, C17='=C14/(1-C16)'. Las otras 11 plantillas usan solo la forma coste/food-cost (p.ej. 01:I26='=I23/H25').",
+      "fix": "Unificar a la convención del kit: en Presupuesto usar «Food Cost objetivo (%)» con C17=C14/C16, o dejar el margen pero renombrarlo «Margen sobre venta (%)» y añadir una nota en Instrucciones explicando que NO es el food cost."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (todos los ficheros con PVP)",
+      "ubicacion": "01:I27, 02:I22 ×5 y Resumen:C14, 03:I24/I23/I22 y Resumen:C15, 04:I23 ×4, 05:I25/I24 ×3, 06:I27 y Presupuesto:C18, 07:I24/I23 ×3, 08:I25/I23/I22 ×3, 10:F7:F15",
+      "hallazgo": "El 10 % de IVA está incrustado como literal «*1.10» en más de 30 fórmulas repartidas por los 10 ficheros con PVP, sin una sola celda parametrizable. Para cambiarlo hay que editar fórmula a fórmula. Rompe en tres escenarios reales del negocio: Canarias (IGIC 7 %) y Ceuta/Melilla (IPSI), la venta de pan común en la plantilla de pastelería (4 % superreducido en España), y sobre todo Hispanoamérica —hay compras reales desde GT/PA/MX/AR/UY, con tipos del 12 al 21 %—. Además el rótulo «PVP CON IVA (10% hostelería)» aparece incluso en la calculadora genérica, que es la plantilla pensada para 9 sectores distintos.",
+      "evidencia": "01-escandallo-estandar.xlsx:Escandallo:A27='PVP CON IVA (10% hostelería)', I27='=I26*1.10'. 10-calculadora-pvp.xlsx:Calculadora PVP:F7='=E7*1.10' … F15='=E15*1.10' (9 fórmulas). 06-catering.xlsx:Presupuesto:C18='=C17*1.10'. Ninguna celda de tipo impositivo en ninguno de los 12 libros.",
+      "fix": "Añadir en cada libro una celda «Tipo de IVA/impuesto (%)» (por defecto 10 %) y sustituir los *1.10 por *(1+$celda). En la calculadora, una celda por fila para permitir tipos distintos por sector."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "Instrucciones:B11 y B22 vs Escandallo:G15:G19 (y equivalentes en los otros 9 ficheros de escandallo)",
+      "hallazgo": "Las Instrucciones prometen que «La merma viene precargada por categoría de ingrediente (puedes ajustarla)» y describen la columna como «Merma (%): porcentaje de desperdicio (precargado, editable)». En las filas de ejemplo el valor está escrito a mano; en las filas vacías —las que va a usar el cliente para SUS platos— la columna G está en blanco y no hay ninguna fórmula ni BUSCARV que la rellene al elegir categoría en el desplegable. El resultado es silencioso y siempre a la baja: E/(1−0) devuelve la cantidad neta, así que un pescado añadido por el usuario se costea sin su 35 % de merma y el plato sale un tercio más barato de lo que cuesta.",
+      "evidencia": "01-escandallo-estandar.xlsx:Instrucciones:B11='▸ La merma viene precargada por categoría de ingrediente (puedes ajustarla)', B22='▸ Merma (%): porcentaje de desperdicio (precargado, editable)'. Escandallo:G5=0.2 … G14=0.1 (valores literales); G15:G19 vacías; H15='=IF(E15=\"\",\"\",E15/(1-G15))' → con G15 vacía divide por 1. La data validation de B15:B19 sí existe (16 categorías) pero no alimenta a G.",
+      "fix": "Poner en G15:G19 (y equivalentes) '=IF(B15=\"\",\"\",BUSCARV(B15,tabla_mermas,2,FALSO))' con una hoja auxiliar de 16 categorías → merma, dejando el valor sobrescribible. Alternativa mínima: precargar un valor por defecto y corregir el texto de Instrucciones."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/BONUS-mermas-inventario.xlsx",
+      "ubicacion": "Inventario:G4 'Consumo Teórico' y H5:H19",
+      "hallazgo": "La mitad del valor del bonus —«calcula consumo real vs teórico», «detectar pérdidas ocultas»— no está construida. «Consumo Teórico» es una columna de entrada manual sin ninguna fórmula ni hoja de ventas que lo alimente: el usuario tendría que multiplicar a mano cada escandallo por los platos vendidos del periodo. Mientras no lo haga, la columna H «Diferencia» —el único dato que importa— queda vacía en las 15 filas. Además el inventario no tiene precio unitario ni valoración en €, así que tampoco puede alimentar el consumo del dashboard mensual (DOM-03).",
+      "evidencia": "BONUS-mermas-inventario.xlsx:Instrucciones:B8='▸ Pestaña \\'Inventario\\': registra stock y calcula consumo real vs teórico', B10='▸ Usa ambas juntas para detectar pérdidas ocultas'. Inventario:F5='=C5+D5-E5' (consumo real, sí calculado), G5 vacía y sin fórmula en G5:G19, H5='=F5-G5'. No hay columna de precio ni de valor; el libro tiene 31 fórmulas en total.",
+      "fix": "Añadir una pestaña «Ventas del periodo» (plato × unidades) y calcular G con SUMAPRODUCTO contra los gramajes de los escandallos; y añadir columnas «Precio unitario (€)» y «Valor consumo (€)» para poder enlazar con 11-dashboard."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/02-menu-degustacion.xlsx",
+      "ubicacion": "hojas del libro vs ContentGrid.tsx:9 y KitEscandallosDashboard.tsx:17",
+      "hallazgo": "Landing y dashboard venden la plantilla como «Diseñada para menús de 5 a 9 pases»; el fichero trae exactamente 5 pestañas de pase y una hoja Resumen que referencia esos 5 en fórmulas explícitas. Añadir un sexto pase obliga a duplicar la pestaña Y a editar a mano el Resumen y el SUM, que es justo el trabajo que la plantilla debía ahorrar. Un menú degustación de 7-9 pases es lo habitual en el segmento gastronómico al que apunta el texto.",
+      "evidencia": "02-menu-degustacion.xlsx hojas = ['Instrucciones','1. Aperitivo','2. Entrante','3. Pescado','4. Carne','5. Postre','Resumen']. Resumen:C5=\"='1. Aperitivo'!I18\" … C9=\"='5. Postre'!I18\", C10='=SUM(C5:C9)'. ContentGrid.tsx:9 → 'Diseñada para menús de 5 a 9 pases'. KitEscandallosDashboard.tsx:17 → 'Para menús de 5 a 9 pases con resumen de coste global.'",
+      "fix": "Añadir 4 pestañas de pase vacías (6-9) ya referenciadas en el Resumen con IF para que no sumen si están sin datos, o bajar la promesa a «5 pases» en los dos textos."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (varios) ",
+      "ubicacion": "src/pages/KitEscandallosDashboard.tsx:18, :19, :20",
+      "hallazgo": "Tres descripciones del dashboard de descargas —lo que el cliente lee justo antes de pulsar «descargar»— prometen funciones que los ficheros no tienen: «rotación semanal» en el menú del día (el libro son 3 escandallos + un resumen de un solo menú), «merma de destilados» en cocktails (es un 2 % genérico igual que el del vino de cocina, y con las unidades mal etiquetadas, DOM-06) y «rendimiento por receta» en pastelería (no existe, DOM-04).",
+      "evidencia": "KitEscandallosDashboard.tsx:18 → 'Primer plato, segundo, postre y extras con rotación semanal.' vs 03-menu-del-dia.xlsx hojas=['Instrucciones','Primer Plato','Segundo Plato','Postre','Resumen Menú'], sin ninguna celda de día/semana. :19 → 'Escandallos de cocktails con medidas exactas y merma de destilados.' vs 04:Gin Tonic:G5=0.02. :20 → 'Mermas reales de pastelería y rendimiento por receta.' vs 05 sin campo de rendimiento.",
+      "fix": "Alinear los tres textos con lo que entrega cada fichero, o construir lo prometido (una pestaña de rotación L-V en 03 sería barata y añade valor real al menú del día)."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (kit completo)",
+      "ubicacion": "01:I26, 10:Calculadora PVP:E7:E15 — falta en las 12 plantillas",
+      "hallazgo": "Todo el kit va en una sola dirección: coste → PVP sugerido. Falta el cálculo inverso, que es la operación que un controller hace a diario: dado el precio al que YA vendo el plato en la carta, ¿qué food cost real tengo y cuánto margen de contribución me deja? Sin una celda «PVP actual de carta» no se puede auditar una carta existente —solo fijar precios de platos nuevos— y no hay ninguna hoja que cruce margen con popularidad (ingeniería de menú: estrellas / vacas / puzzles / perros), que es lo que convierte un escandallo en una decisión.",
+      "evidencia": "01-escandallo-estandar.xlsx:Escandallo:A26='PVP SUGERIDO (sin IVA)', I26='=I23/H25' y A29='Margen bruto (%)', I29='=I28/I26' — el margen se calcula siempre contra el PVP teórico, nunca contra uno introducido por el usuario. 10-calculadora-pvp.xlsx solo acepta C4='COSTE TOTAL DEL PLATO (€)'. Ninguna de las 12 plantillas contiene la cadena 'PVP actual', 'PVP carta' ni ninguna columna de unidades vendidas.",
+      "fix": "Añadir en el escandallo estándar dos filas: «PVP actual en carta (sin IVA)» y «Food cost REAL = coste/PVP actual», con un aviso si supera el objetivo. Y una hoja nueva de ingeniería de menú (plato · coste · PVP · uds vendidas · margen de contribución total · cuadrante)."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "Presupuesto:C8 ('=C5*3.50') y C10 ('=C5*1.20')",
+      "hallazgo": "El coste de personal se modela como lineal con los comensales (3,50 € por pax). El personal de un evento es escalonado y con mínimos: un cóctel necesita ~1 camarero cada 20-25 pax y nadie contrata por menos de 4-5 horas. Con el número de comensales editable (C5), el presupuesto de un evento de 10 pax arroja 35 € de personal —imposible— y el de 200 pax arroja 700 €, que tampoco recoge el jefe de sala ni las horas extra. El mismo problema, más leve, en el menaje.",
+      "evidencia": "06-catering.xlsx:Presupuesto:B5='Número de comensales', C5=50 (editable); B8='Personal de servicio (camareros)', C8='=C5*3.50'; B10='Material desechable / menaje', C10='=C5*1.20'. Instrucciones:B10 promete '▸ Incluye servicio, personal y logística como costes fijos' — pero se calculan como variables puros.",
+      "fix": "Sustituir por un bloque de personal explícito: nº de camareros = REDONDEAR.MAS(C5/22;0), horas por camarero, coste/hora, más una línea de jefe de sala; el total pasa a C8. Deja además la trazabilidad que un cliente de catering pide en el presupuesto."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/07-cafeteria-brunch.xlsx",
+      "ubicacion": "Tostada Aguacate:A5:I24",
+      "hallazgo": "El ejemplo precargado no es realista y arroja un PVP fuera de mercado: 19,23 € con IVA para una tostada de aguacate, cuando la horquilla en España es 9-13 €. Se acumulan tres decisiones discutibles: 2 rebanadas de pan a 0,60 € cada una (1,20 € solo de pan), un aguacate ENTERO neto —al que además se le aplica un 28 % de merma sobre la unidad ya contada, así que compra 1,39 aguacates— y 2 huevos (0,167 docenas) para un plato cuyo título dice «con Huevo Poché», en singular. Como es el ejemplo que el cliente abre para entender la plantilla, le enseña a costear caro.",
+      "evidencia": "07-cafeteria-brunch.xlsx:Tostada Aguacate:A1='Tostada de Aguacate con Huevo Poché'; E5=2 ud pan × D5=0,60 → I5=1,20 €; E6=1 ud aguacate, G6=0,28 → H6=1,389, I6=2,08 €; E7=0,167 (docenas) × D7=4,20 → I7=0,79 € (2 huevos); I18=4,45 €, I20=4,89 €, H22=0,28, I23=17,48 €, I24=19,23 €.",
+      "fix": "Ajustar el ejemplo a la realidad: 1 rebanada gruesa, 0,5 aguacate neto, 1 huevo (0,083 docenas). Coste ≈ 2,2 € → PVP ≈ 8,6 € (9,5 € con IVA), que sí es un precio de carta creíble."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "Escandallo:A14:I14 (Microgreens decoración)",
+      "hallazgo": "En el escandallo insignia del kit —el primero que abre todo el mundo— la decoración de microgreens cuesta 3,89 €, el 25 % del coste total del plato y más que los espárragos, la patata, el vino PX y el fondo juntos. El motivo es que se ha tomado el precio de la BANDEJA (3,50 €/ud) como precio de la ración: el coste real de un puñado de microgreens de guarnición es de 0,15-0,30 €. Además se le aplica una merma del 10 % sobre una unidad entera, con lo que la «Cant. Bruta» resultante es 1,11 unidades, que no es una cantidad comprable. El plato termina en 56,86 € con IVA cuando debería rondar los 43 €.",
+      "evidencia": "01-escandallo-estandar.xlsx:Escandallo:A14='Microgreens decoración', C14='ud', D14=3.5, E14=1, F14='ud', G14=0.1 → H14=1,111, I14=3,889 €. Total I21=14,10 €, I23=15,51 €, I27=56,86 €. Comparación: solomillo I5=7,13 €; espárrago I7=0,69 €; PX I9=0,43 €; fondo I10=1,03 €.",
+      "fix": "Cambiar a compra por bandeja con uso en gramos (D14=3,50 €/bandeja de 50 g → 3,50/0,05=70 €/kg, E14=0,003 kg → 0,21 €) o directamente D14=0,25 €/ración. Y quitar la merma del 10 % sobre una unidad indivisible."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-escandallos/04-cocktails-bebidas.xlsx",
+      "ubicacion": "Gin Tonic Premium:D5, Mojito:D5, Margarita:D5-D6, Aperol:D5 (Ud. Compra='L')",
+      "hallazgo": "El fichero pide el precio por LITRO de los destilados, pero un bar compra botellas de 70 cl (y de 75 cl el vino y el prosecco). El usuario que teclee el precio de la botella tal cual —lo que hay en la factura del proveedor— infravalorará el coste un 30 %. No hay ninguna nota ni columna de formato de compra que lo advierta. Falta también el concepto que un controller de bar mira primero: la merma de servicio (overpour), que en un bar sin jigger es del 8-15 % del destilado, muy por encima del 2 % genérico que trae la plantilla.",
+      "evidencia": "04-cocktails-bebidas.xlsx:Gin Tonic Premium:C5='L', D5=28 (una ginebra premium de 70 cl cuesta ~19,60 € en factura; 28 €/L es el precio ya convertido). Margarita:C5='L', D5=22. G5=0.02 en las cuatro pestañas para todos los destilados. Instrucciones:B10='▸ La merma en bebidas es mínima (2-5%)'.",
+      "fix": "Añadir una columna «Formato de compra (cl)» y calcular el €/L internamente, o al menos una línea en Instrucciones: «Precio/Ud = precio de la botella ÷ litros de la botella (0,70 para destilados)». Y subir la merma sugerida de destilados a 5-10 % citando el overpour."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (varios)",
+      "ubicacion": "05-pasteleria:Croissants:B9; 03-menu-del-dia:Primer Plato:B9 y B6; 08-food-truck:Smash Burger:B11 y B12; 02-menu-degustacion:2. Entrante:B7",
+      "hallazgo": "Varias filas precargadas están mal clasificadas en el desplegable de categoría. No cambia los euros hoy —la merma va escrita a mano en G— pero sí en cuanto se implemente el autocompletado por categoría (DOM-14) y sí ensucia cualquier análisis por familia de producto, que es para lo que sirve la columna. Un pastelero que vea «Levadura fresca → Lácteos» pierde confianza en el resto del fichero.",
+      "evidencia": "05-pasteleria.xlsx:Croissants:A9='Levadura fresca', B9='Lácteos'. 03-menu-del-dia.xlsx:Primer Plato:A9='Aceitunas negras', B9='Congelados'; A6='Tomate pera', B6='Verdura hoja'. 08-food-truck.xlsx:Smash Burger:A11='Salsa especial', B11='Secos/granos'; A12='Pepinillo', B12='Congelados'. 02-menu-degustacion.xlsx:'2. Entrante':A7='Trufa negra', B7='Verdura raíz'.",
+      "fix": "Revisar las ~10 asignaciones erróneas y ampliar el desplegable con las familias que faltan y obligan a estos apaños: «Setas/hongos», «Conservas/encurtidos», «Salsas/condimentos» y «Pasta/arroz»."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-escandallos/04-cocktails-bebidas.xlsx",
+      "ubicacion": "Gin Tonic Premium:A19/A21, Mojito:A19, Margarita:A18, Aperol:A18 y 06-catering.xlsx:Cocktail 50 pax:A23",
+      "hallazgo": "Etiquetas heredadas de la plantilla base sin adaptar al contexto: un gin tonic tiene «COSTE TOTAL DEL PLATO» y un «Coste elaboración (%)» del 10 % igual que un guiso de carrillera, y en catering ese mismo rótulo encabeza un coste que en realidad es POR PERSONA (la hoja se titula «Catering Cocktail — Coste por Persona»). Un profesional lee la hoja de un vistazo y estas etiquetas le hacen dudar de qué está mirando.",
+      "evidencia": "04-cocktails-bebidas.xlsx:Gin Tonic Premium:A19='COSTE TOTAL DEL PLATO', A18='Coste elaboración (%)' con H18=0.1. 06-catering.xlsx:Cocktail 50 pax:A1='Catering Cocktail — Coste por Persona' y A23='COSTE TOTAL DEL PLATO'.",
+      "fix": "Parametrizar el rótulo por tipo de plantilla: «COSTE TOTAL DE LA COPA» en cocktails, «COSTE TOTAL POR PERSONA» en catering, «COSTE TOTAL DE LA RECETA» en pastelería (ver DOM-04)."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-escandallos/BONUS-mermas-inventario.xlsx",
+      "ubicacion": "Checklist Mermas:A3:F34",
+      "hallazgo": "El registro se titula «Registro Diario» y su total se llama «TOTAL MERMAS MES», pero solo tiene 30 filas: eso da una incidencia por día. En una cocina en marcha se anotan entre 5 y 15 mermas diarias, así que la hoja se agota en la primera semana. Faltan además dos columnas que son lo primero que pide un jefe de cocina para poder actuar: turno/servicio y responsable — sin ellas la «acción correctiva» no tiene destinatario.",
+      "evidencia": "BONUS-mermas-inventario.xlsx:Checklist Mermas:A1='Checklist de Mermas — Registro Diario', cabeceras A3:F3 = Fecha · Producto · Cantidad · Motivo · Acción correctiva · Coste estimado (€); filas de datos A4:F33 (30) y A34='TOTAL MERMAS MES' con F34='=SUM(F4:F33)'. La data validation de motivo cubre D4:D33.",
+      "fix": "Ampliar a ~200 filas (extendiendo la validación de D y el SUM) y añadir columnas «Turno» (desayuno/comida/cena) y «Responsable». Añadir un pequeño resumen por motivo con SUMAR.SI, que es lo que convierte el registro en información."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "Mermas Semanal:A2 y ausencia de histórico",
+      "hallazgo": "La plantilla que la landing vende como «Registra las mermas reales de tu establecimiento semanalmente» solo admite UNA semana: hay una celda «Semana del:» y una única tabla de 16 categorías. No hay pestañas por semana, ni columnas por semana, ni acumulado ni tendencia, que es exactamente lo que da valor a un control de mermas —la foto de una semana suelta no dice nada—. El usuario acaba duplicando el fichero a mano cada lunes.",
+      "evidencia": "09-control-mermas.xlsx: 2 hojas ['Instrucciones','Mermas Semanal'], 51 fórmulas; A2='Semana del:' (B2 vacía), tabla única A4:H21. Instrucciones:B8='▸ Registra las mermas reales de tu establecimiento semanalmente'.",
+      "fix": "Convertir la tabla en un registro con columna «Semana» (o 52 bloques de columnas) y añadir una fila de tendencia / media móvil de 4 semanas por categoría, que es la lectura que permite decidir."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-escandallos/ (los 12 ficheros)",
+      "ubicacion": "ws.protection.sheet = False en las 27 hojas",
+      "hallazgo": "Ninguna hoja está protegida. Las columnas calculadas (Cant. Bruta, Coste, totales, PVP) están abiertas a escritura y la única señal de qué es editable es el relleno verde. En una plantilla que va a manos de cocina —y que se comparte por WhatsApp entre el jefe de cocina y el gerente— basta con teclear en I5 para romper la fórmula sin dejar rastro; el fichero seguirá dando un número, solo que equivocado.",
+      "evidencia": "Barrido openpyxl sobre los 12 libros: `ws.protection.sheet` es False en las 27 hojas. El relleno verde 00E8F5E9 marca A5:G19 (entradas) y H22/H25 (parámetros); H5:I19 y el bloque de totales van sin relleno pero sin bloqueo efectivo.",
+      "fix": "Bloquear todas las celdas salvo las verdes y aplicar protección de hoja sin contraseña (o con una trivial documentada en Instrucciones), que es el estándar en plantillas comerciales de este tipo."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "Los 12 ficheros están bien acabados de forma (Fase A limpia: caché, A4, metadata, v1.1, bio, casilla — no encontré ningún caso que se le escapara a los scripts), pero el contenido no aguanta la mirada de un controller que los vaya a usar mañana. Hay siete defectos de nivel reembolso: (1) el BONUS 1 «Guía: Controla tu Food Cost en 30 Días», anunciado a €27 y sumado a los «€46 en bonus», simplemente no se entrega; (2) la hoja de control de mermas compara desperdicio semanal contra rendimientos de despiece y por tanto da «OK» a un 44 % de merma de marisco; (3) el dashboard calcula food cost como Compras/Ventas en vez de Consumo/Ventas y no distingue ventas con o sin IVA; (4) la plantilla de pastelería promete por escrito un campo de rendimiento que no existe y presenta como PVP el precio de la receta entera —22,82 € por «un» croissant—; (5) las columnas Ud. Compra / Ud. Uso no convierten nada y hay 17 filas precargadas con unidades cruzadas, una de ellas con un error medido de 13,5×; (6) los cuatro cócteles etiquetan «cl» valores que están en litros mientras las Instrucciones insisten en «medidas de bar»; y (7) el punto de equilibrio diario que la landing y el dashboard prometen dos veces como el diferencial del Food Truck no existe en el fichero. A eso se añaden promesas menores incumplidas (carrot cake, semáforo rojo/verde, mermas mín/máx/típicas, «delivery» en la calculadora, «5 a 9 pases», «rotación semanal») y huecos que un profesional exigente notaría el primer día: no se puede introducir el PVP real de la carta para auditar el food cost existente, no hay ingeniería de menú ni margen de contribución, el IVA del 10 % está incrustado en más de 30 fórmulas —problema serio con las compras reales desde Hispanoamérica— y el consumo teórico del bonus de inventario es una columna vacía que nada calcula. Antes de darlo por bueno hay que cerrar al menos los siete de severidad alta."
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + pycel): fórmulas y rangos, referencias entre hojas, evaluación con cambio de inputs, validaciones, formato condicional, formatos numéricos, gráficos, anchos/altos y coherencia Instrucciones↔hoja↔landing↔dashboard. 12 ficheros, 849 fórmulas, todas evaluadas. Cache de Fase A verificada contra pycel: 0 discrepancias (la Fase A está bien aplicada; no reporto nada de ella).",
+    "veredicto": "no listo",
+    "motivo": "Seis defectos de severidad alta, todos verificados celda a celda. (1) La pareja de columnas «Ud. Compra»/«Ud. Uso» no se convierte en ninguna fórmula del kit y 17 filas PRECARGADAS declaran unidades distintas en las dos columnas; las Instrucciones dicen que la Cantidad va en la unidad de uso y todos los ejemplos la tienen en la unidad de compra, así que el primer ingrediente que el cliente edite siguiendo el manual se le encarece entre 12× y 100× (0,05 «cl» de ginebra facturados como 5 cl; 0,167 «ud» de huevo que son 2 huevos). (2) El BONUS 1 «Guía: Controla tu Food Cost en 30 Días», anunciado en €27 de los €46 de bonos, NO EXISTE: no hay ningún fichero no-xlsx en /dl/kit-escandallos/, no está en el mapa `files` ni en las 12 tarjetas del dashboard. Es publicidad de un entregable que el cliente nunca recibe. (3) No hay UN SOLO formato condicional en los 12 ficheros, pero las propias Instrucciones de 09 prometen «Rojo = alerta / Verde = bien» y la landing «las celdas cambian de color automáticamente». (4) La alerta de 09 compara merma de despiece en peso contra desperdicio en euros: hace falta tirar el 46 % del valor comprado de marisco para que salte «ALERTA» (verificado: 30 % de desperdicio devuelve «OK»), o sea que nunca salta. (5) 05-pasteleria no tiene campo Rendimiento ni divide por raciones pese a prometerlo en su Instrucciones B8/B9, en la landing y en el dashboard: la «Tarta de Chocolate 70% — 12 raciones» muestra PVP SUGERIDO 59,14 €. (6) 08-food-truck no tiene ni hoja ni celda de punto de equilibrio, que la landing y el dashboard del cliente que ya pagó anuncian por su nombre. A eso se suman dos PVP incompatibles dentro del mismo libro en 02 (155,45 € en el Resumen frente a 129,54 € sumando los pases) y en 06, y una hoja «Cocktail 50 pax» con cantidades por persona que el Presupuesto vuelve a multiplicar por 50.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/04-cocktails-bebidas.xlsx",
+      "ubicacion": "'Gin Tonic Premium'!C5,E5,F5,I5 (y 16 filas más en 02,03,05,07,08)",
+      "hallazgo": "Las columnas «Ud. Compra» (C) y «Ud. Uso» (F) no se convierten en ninguna fórmula del kit: el coste es siempre I = E/(1-G) × D, es decir Cantidad × Precio de la unidad de COMPRA. 17 filas precargadas declaran C ≠ F, y las Instrucciones de 01 (B20) definen «Cantidad: cantidad que necesitas para el plato (en la unidad de uso)» — justo lo contrario de lo que hacen los datos. El cliente que siga el manual multiplica su coste entre 12× y 100×.",
+      "evidencia": "C5='L', D5=28,00 €, E5=0,05, F5='cl' → H5=E5/(1-0,02)=0,051 → I5=1,4285 € (evaluado con pycel). 0,05 cl de ginebra son 0,5 ml: el fichero cobra 1,43 € por media gota, o bien la etiqueta 'cl' es falsa y son 5 cl. Si el usuario teclea 5 (cl, como manda F5 y como manda la Instrucción B9 «Las cantidades están en cl/ml») → 5/(0,98)×28 = 142,86 € por un gin tonic. Mismo patrón: 05-pasteleria!'Tarta Chocolate'!C7='docena', E7=0,5, F7='ud' (son 6 huevos, no 0,5); 07!'Eggs Benedict'!C6='docena', E6=0,167, F6='ud'; 04!'Margarita'!C6='L', E6=0,025, F6='cl'. Censo completo: 17 filas en 7 de los 8 ficheros de escandallo.",
+      "fix": "Añadir columna oculta de factor de conversión y cambiar I a `=IFERROR(H{r}*D{r}/FACTOR{r};\"\")`, con FACTOR resuelto por una tabla kg→g=1000, L→ml=1000, L→cl=100, docena→ud=12, manojo→ud=n. Si no se quiere tocar la lógica, la alternativa barata y honesta es eliminar la columna F entera, renombrar E a «Cantidad (en Ud. Compra)» y reescribir 01!Instrucciones!B20 y 04!Instrucciones!B9 en consecuencia — pero entonces hay que corregir las 17 filas precargadas para que C=F."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/components/kit-escandallos/BonusSection.tsx",
+      "ubicacion": "BonusSection.tsx:5-12 vs src/data/productos-digitales-config.ts:74-88 y src/pages/KitEscandallosDashboard.tsx:16-27",
+      "hallazgo": "El BONUS 1 «Guía: Controla tu Food Cost en 30 Días», valorado en €27 sobre los €46 de bonos anunciados (más del doble del precio del producto, €12), NO SE ENTREGA. No existe el fichero, no está en el mapa `files` del producto y no tiene tarjeta en el dashboard post-compra. El cliente paga, entra al dashboard y no hay forma alguna de obtenerlo.",
+      "evidencia": "`ls /dl/kit-escandallos/` devuelve exactamente 12 ficheros, los 12 .xlsx (ningún .pdf ni .docx). El objeto `files` de productos-digitales-config.ts tiene 12 claves: estandar…dashboard + bonus-mermas. KitEscandallosDashboard.tsx pinta 12 tarjetas (líneas 16-27) y ninguna es la guía. BonusSection.tsx:36 anuncia «recibirás estos recursos adicionales — valorados en €46»; el BONUS 2 (€19, BONUS-mermas-inventario.xlsx) sí existe. Grep de 'food-cost-30|30-dias|guia-food' en config, dashboard y netlify/: cero resultados.",
+      "fix": "Dos salidas, ninguna aplazable: (a) producir la guía (PDF/DOCX), añadirla al mapa `files` con clave `bonus-guia` y su tarjeta en KitEscandallosDashboard.tsx; o (b) retirar el BONUS 1 de BonusSection.tsx y ajustar el «valorados en €46» a €19 en BonusSection.tsx:36 y en cualquier otro punto de la landing que sume los bonos. Mientras exista la promesa sin el fichero, cualquier comprador tiene motivo de reembolso."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "'Mermas Semanal'!G5:G20 y 'Instrucciones'!B12-B13 (los 12 ficheros)",
+      "hallazgo": "No existe UN SOLO formato condicional en todo el kit, pero las Instrucciones del propio fichero prometen colores automáticos y la landing lo vende como característica. La columna Estado escupe el texto «OK»/«ALERTA» en negro sobre blanco, sin resaltado alguno: en una tabla de 16 filas el usuario tiene que leer celda a celda lo que se le vendió como semáforo.",
+      "evidencia": "`unzip -p *.xlsx 'xl/worksheets/*.xml' | grep -c conditionalFormatting` = 0 en los 12 ficheros (verificado a nivel XML, no solo con openpyxl). Frente a eso: 09!'Instrucciones'!B12 = '▸ Rojo = merma real superior al estándar (alerta)' y B13 = '▸ Verde = merma real igual o inferior al estándar (bien)'; ContentGrid.tsx:16 = 'Las celdas cambian de color automáticamente cuando la merma real supera el estándar'; ContentGrid.tsx:18 (Dashboard) = 'alertas cuando el food cost supera tu límite'.",
+      "fix": "Añadir `openpyxl.formatting.rule.CellIsRule` en 09: sobre G5:G20 con operator='equal' formula=['\"ALERTA\"'] relleno FFC7CE y otra con '\"OK\"' relleno C6EFCE; sobre F5:F20 escala de color o CellIsRule greaterThan 0. En 11-dashboard, la misma regla sobre G7:G18 (>0 rojo, <=0 verde). Si no se implementan, borrar B12-B13 de 09!Instrucciones y las dos frases de ContentGrid.tsx."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "'Mermas Semanal'!B5:B20 vs E5:E20 y G5:G20",
+      "hallazgo": "La alerta compara dos magnitudes incompatibles y por eso nunca salta. La columna B «Merma Estándar» son porcentajes de DESPIECE EN PESO (los mismos 10 valores que la tabla de referencia de 01!Instrucciones!B28-B30), mientras que E «Merma Real (%)» = D/C = euros desperdiciados / euros comprados. Un restaurante con un desperdicio real catastrófico marca «OK» en todas las categorías. La función declarada del fichero («Identifica categorías donde pierdes más de lo normal», B10) es inalcanzable.",
+      "evidencia": "B8 (Marisco) = 0,45 y G8 = IF(E8=\"\",\"\",IF(E8<=B8,\"OK\",\"ALERTA\")). Evaluado con pycel: con C8=1000 € de compra y D8=300 € tirados (30 % del valor, un desastre operativo real) → E8=0,30 y G8=\"OK\". Hay que llegar a D8=460 € (46 %) para que G8 devuelva \"ALERTA\". Igual en Pescado (B7=0,35) y Aves/Verdura hoja (0,25). En el otro extremo, Secos/granos (B13=0,02) y Bebidas (B20=0,02) saltan con un 2,1 % de desperdicio, que es normalidad.",
+      "fix": "Decidir qué mide el fichero y hacerlo explícito. Si mide desperdicio (lo que dicen B8-B10 y el BONUS): sustituir B5:B20 por umbrales de desperdicio sobre compra realistas por familia (frescos 3-6 %, secos 0,5-1 %, bebidas 0,5 %) y renombrar el encabezado B4 a «Objetivo desperdicio (% s/ compra)». Si mide despiece: renombrar C4/D4 a «Peso comprado (kg)» / «Merma de despiece (kg)» y cambiar el formato numérico de C y D de € a kg. Lo que no puede quedarse es la mezcla actual."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/05-pasteleria.xlsx",
+      "ubicacion": "'Tarta Chocolate'!I21,I24,I25 · 'Croissants'!I20,I23 · 'Macarons'!I20,I23 vs 'Instrucciones'!B8-B9",
+      "hallazgo": "No existe el campo «Rendimiento» ni ninguna división por unidades producidas, pese a que las Instrucciones del fichero lo declaran en dos líneas seguidas y la landing y el dashboard lo repiten. Los tres títulos anuncian el rendimiento («12 raciones», «20 unidades», «30 unidades») y el bloque de resultados es el mismo del escandallo de plato: da el coste y el PVP de la ELABORACIÓN ENTERA rotulados como «COSTE TOTAL DEL PLATO» y «PVP SUGERIDO». Un pastelero que lea el PVP y lo lleve a la vitrina se equivoca por un factor de 12, 20 o 30.",
+      "evidencia": "'Instrucciones'!B8 = \"▸ Incluye campo de 'Rendimiento' (unidades por receta)\" y B9 = '▸ El coste se calcula por unidad producida'. Realidad evaluada con pycel: A1='Tarta de Chocolate 70% — 12 raciones', I21 (COSTE TOTAL DEL PLATO) = 14,78 €, I24 (PVP SUGERIDO sin IVA) = 59,14 €, I25 (con IVA) = 65,05 €. No hay ninguna celda con el 12, ni ninguna fórmula que divida. 'Croissants' (20 unidades): I23 = 20,75 € → 1,04 €/croissant. 'Macarons' (30 unidades): I23 = 26,55 € → 0,89 €/macaron. También aplica a 01!'Escandallo' («coste real por ración» en ContentGrid.tsx:8) y a 06 (ver TEC-08).",
+      "fix": "Insertar en cada hoja de 05 una fila «Rendimiento (unidades)» con el valor del título (12/20/30) en una celda verde, y añadir tres filas debajo del bloque actual: «COSTE POR UNIDAD» =I21/$RENDIMIENTO, «PVP POR UNIDAD (sin IVA)» =I24/$RENDIMIENTO y «PVP POR UNIDAD (con IVA)» =I25/$RENDIMIENTO. Renombrar A21 de «COSTE TOTAL DEL PLATO» a «COSTE TOTAL DE LA ELABORACIÓN» para que no se confundan."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/08-food-truck.xlsx",
+      "ubicacion": "libro completo (hojas: Instrucciones, Smash Burger, Loaded Fries, Pulled Pork Sándwich)",
+      "hallazgo": "No hay punto de equilibrio: ni hoja, ni celda de costes fijos, ni fórmula que divida costes fijos entre margen unitario. La landing y —peor— el dashboard que ve el cliente que YA pagó lo anuncian nominalmente. Ninguna de las tres hojas contiene siquiera un input de costes fijos diarios.",
+      "evidencia": "El libro tiene 4 hojas y 89 fórmulas, todas del patrón escandallo (=E/(1-G), =H*D, =SUM, =I/H, =I*1.10). 'Instrucciones'!B8-B10 hablan solo de recetas rápidas, food cost 28-35 % y márgenes altos; no mencionan el break-even. Frente a eso: ContentGrid.tsx:15 = 'Calcula el punto de equilibrio diario: cuántas unidades necesitas vender para cubrir costes fijos' y KitEscandallosDashboard.tsx:23 = 'Street food con punto de equilibrio diario incluido'.",
+      "fix": "Añadir una cuarta hoja 'Punto de Equilibrio' con inputs (alquiler de plaza/día, combustible, personal/día, seguros y amortización prorrateados) y las fórmulas: margen unitario =PVP_sin_IVA − coste_total (referenciando I24-I21 de cada receta), unidades break-even =COSTES_FIJOS_DIA/MARGEN_MEDIO_PONDERADO, y facturación break-even. Si no se produce, borrar ContentGrid.tsx:15 y KitEscandallosDashboard.tsx:23."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "hoja 'Cocktail 50 pax' (nombre) vs E5:E14 vs 'Presupuesto'!C5,C7",
+      "hallazgo": "La hoja se llama «Cocktail 50 pax» pero contiene cantidades POR PERSONA, y la hoja Presupuesto vuelve a multiplicar por el número de comensales. Nada en el libro avisa: el rótulo del resultado sigue siendo el genérico «COSTE TOTAL DEL PLATO». Un usuario que interprete el nombre de la pestaña literalmente y meta las cantidades del evento completo se hace un presupuesto 50 veces mayor.",
+      "evidencia": "E5 = 0,04 kg de jamón ibérico: si la hoja fuera de 50 pax serían 0,8 g por persona (absurdo), luego es por persona. E9 = 3 croquetas, E11 = 3 panes mini, E13 = 0,35 L de bebida — todos por persona. Pero 'Presupuesto'!C6 = ='Cocktail 50 pax'!I23 (11,39 €) y C7 = C5*C6 = 50 × 11,39 = 569,58 €. Y el rótulo de I23 en la hoja es A23 = 'COSTE TOTAL DEL PLATO', heredado de la plantilla de 01. El único indicio de que es por persona está en A1 ('Catering Cocktail — Coste por Persona') y en Instrucciones B8.",
+      "fix": "Renombrar la pestaña de 'Cocktail 50 pax' a 'Cocktail (por persona)' —la referencia ='Cocktail 50 pax'!I23 de Presupuesto!C6 se actualiza sola al renombrar en Excel— y cambiar A23 a 'COSTE TOTAL POR PERSONA'. Añadir en A3 un aviso: 'Todas las cantidades son POR COMENSAL; el número de comensales se define en Presupuesto!C5'."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "'Cocktail 50 pax'!H25,I26 vs 'Presupuesto'!C16,C17 vs 'Instrucciones'!B11",
+      "hallazgo": "El mismo libro da dos PVP por persona calculados con métodos incompatibles y etiqueta el 35 % de dos maneras distintas, y las Instrucciones solo explican una de las dos. La hoja de escandallo divide por el food cost objetivo (×2,857) y la hoja de Presupuesto aplica un margen sobre coste (×1,538). Si el usuario lee la Instrucción «Food cost objetivo en catering: 30-40%» y la aplica a Presupuesto!C16, presupuesta con un criterio que no es el que la fórmula implementa.",
+      "evidencia": "'Cocktail 50 pax'!H25 = 0,35 rotulado 'Food Cost objetivo (%)' → I26 = I23/H25 = 11,39/0,35 = 32,55 €. 'Presupuesto'!C16 = 0,35 rotulado 'Margen objetivo (%)' → C17 = C14/(1-C16) = 23,09/0,65 = 35,53 €. Son dos operaciones distintas con el mismo número. 'Instrucciones'!B11 = '▸ Food cost objetivo en catering: 30-40%' y no menciona en ningún sitio que C16 sea un margen, no un food cost.",
+      "fix": "Ampliar 'Instrucciones' con dos líneas: que el 35 % de la hoja de escandallo es food cost sobre materia prima y el de Presupuesto es margen sobre el coste total del evento. Y desactivar el bloque PVP de la hoja de escandallo (filas 25-29) o rotularlo 'PVP orientativo solo de materia prima — el precio al cliente sale de la hoja Presupuesto', porque hoy compiten dos cifras sin jerarquía."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/02-menu-degustacion.xlsx",
+      "ubicacion": "'Resumen'!C12,C13 vs '1. Aperitivo'!H20,I21 (y las otras 4 pestañas)",
+      "hallazgo": "Cada pase calcula su propio PVP al 30 % de food cost y el Resumen calcula el PVP del menú al 25 %: dos precios distintos para lo mismo, con un 20 % de diferencia, y sin una sola línea que diga cuál manda. Además las Instrucciones B11 afirman que «El PVP se calcula sobre el coste total de todos los pases», lo que contradice los cinco bloques de PVP por pestaña.",
+      "evidencia": "Evaluado con pycel: 'Resumen'!C10 (COSTE TOTAL MENÚ) = 38,86 €, C12 = 0,25, C13 (PVP SUGERIDO) = 155,45 €. La suma de los PVP por pase (I21 de cada hoja, todas con H20 = 0,30) es 23,97 + 38,20 + 35,45 + 21,39 + 10,52 = 129,54 €. Diferencia: 25,91 € (20 %). El mismo patrón en 03-menu-del-dia.xlsx: 'Resumen Menú'!C13 = 0,33 frente a 'Primer Plato'!H22 = 0,30, 'Segundo Plato'!H21 = 0,30 y 'Postre'!H20 = 0,30.",
+      "fix": "Enlazar los food cost objetivo de las pestañas al del Resumen (H20 de cada pase = ='Resumen'!$C$12 en 02 y = 'Resumen Menú'!$C$13 en 03), de forma que solo haya un objetivo editable. Alternativa: ocultar el bloque PVP de las pestañas de pase y dejarlo solo en el Resumen, que es lo que anuncian las propias Instrucciones B11."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "'Escandallo'!G5:G19 vs 'Instrucciones'!B11 y B22 (patrón replicado en 02,03,04,05,06,07,08)",
+      "hallazgo": "«La merma viene precargada por categoría de ingrediente» es falso en dos sentidos: G no es una fórmula sino un número fijo sin vínculo con la categoría de B, y las filas vacías (las que el cliente va a usar) llegan con la merma en blanco, es decir 0 %. Cambiar la categoría en el desplegable de B no altera la merma. El usuario que añade su primer ingrediente lo cuesta sin merma y no recibe ningún aviso.",
+      "evidencia": "'Instrucciones'!B11 = '▸ La merma viene precargada por categoría de ingrediente (puedes ajustarla)' y B22 = '▸ Merma (%): porcentaje de desperdicio (precargado, editable)'. En la hoja, G5=0,2 · G6=0,12 · G7=0,25 … son constantes (data_type 'n'), no fórmulas; G15:G19 están vacías. Verificado con pycel: fijando E15=0,2 y D15=30 con G15 vacío, H15 = 0,200 e I15 = 6,00 € — merma 0 %, sin aviso. Además la tabla de referencia de B28-B30 solo lista 10 categorías mientras el desplegable de B5:B19 ofrece 16 (faltan Pan/bollería, Huevos, Aceites/grasas, Especias/hierbas, Chocolate/cacao, Bebidas/licores). Y hay incoherencias con la propia tabla: A14 'Microgreens decoración' es 'Verdura hoja' (estándar 25 %) con G14 = 0,10.",
+      "fix": "Crear una hoja oculta 'Mermas' con las 16 parejas categoría→merma y convertir G5:G19 en `=IFERROR(VLOOKUP($B5;Mermas!$A:$B;2;FALSE);\"\")` (sobrescribible por el usuario, que es lo que promete «puedes ajustarla»). Completar B28-B30 con las 6 categorías que faltan. Aplicar a los 8 ficheros de escandallo."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "'Escandallo'!H5:I14, I21, I23, I26, I27, I29 (y equivalentes en los 8 ficheros de escandallo)",
+      "hallazgo": "No hay IFERROR en ninguna de las 849 fórmulas del kit. Una merma del 100 % —un error de tecleo tan simple como escribir 100 en una celda con formato 0%— produce #DIV/0! que se propaga por toda la cadena y deja el bloque entero de PVP y márgenes en error. Las filas 5 a 14 ni siquiera tienen la guarda IF(E=\"\";\"\";…) que sí llevan las filas vacías.",
+      "evidencia": "Verificado con pycel sobre 01: fijando G5=1,0 → H5 = #DIV/0! y la cadena arrastra hasta I23 = #DIV/0! (y por tanto I26, I27, I28, I29). H5 = '=E5/(1-G5)' sin guarda; en cambio H15 = '=IF(E15=\"\",\"\",E15/(1-G15))'. Grep de 'IFERROR' en los 12 ficheros: 0 apariciones. Lo mismo en 10-calculadora-pvp: E7 = '=$C$4/AVERAGE(C7,D7)' revienta si el usuario pone 0 en C7 y D7; en 01, I29 = '=I28/I26' revienta si el food cost objetivo H25 se deja en blanco.",
+      "fix": "Envolver las fórmulas de división: H{r} = `=IFERROR(IF($E{r}=\"\";\"\";$E{r}/(1-$G{r}));\"revisa merma\")`, I29 = `=IFERROR(I28/I26;\"\")`, y en 10 E{r} = `=IFERROR($C$4/AVERAGE(C{r};D{r});\"\")`. Añadir además validación de datos en G5:G19 (decimal, entre 0 y 0,95) para que el 100 % ni se pueda teclear."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "'Escandallo'!I21 =SUM(I5:I19) (patrón en los 8 ficheros de escandallo)",
+      "hallazgo": "El total de ingredientes es un SUM de rango cerrado y solo hay 4-5 filas libres por receta, pero la FAQ de la landing promete explícitamente que se pueden añadir ingredientes. El cliente que agote las filas libres y escriba en la fila inmediatamente inferior (fila 20, que está vacía y sin formato) ve cómo su ingrediente NO entra en el total, sin ningún aviso: el coste del plato se queda corto y el PVP también.",
+      "evidencia": "01!'Escandallo'!I21 = '=SUM(I5:I19)' con A5:A14 ocupadas (11 ingredientes) y solo 5 filas libres (15-19). La fila 20 está completamente vacía (sin fórmula en H20/I20, sin relleno) y la 21 es 'COSTE TOTAL INGREDIENTES'. Casos más ajustados: 08!'Pulled Pork Sándwich'!I16 = '=SUM(I5:I14)' con 5 ingredientes; 02!'1. Aperitivo'!I16 = '=SUM(I5:I14)'. Frente a esto, FaqAccordion.tsx:20 = 'Totalmente. Puedes añadir ingredientes, modificar precios…'.",
+      "fix": "Cambiar a rango sobredimensionado con guarda —I21 = `=SUM(I5:I19)` pasa a `=SUM(I5:I20)` con la fila 20 preparada igual que las libres— o, mejor, convertir el rango de ingredientes en una Tabla de Excel (ListObject) para que el SUM se extienda solo al añadir filas. Como mínimo, una línea en Instrucciones: 'Para añadir más ingredientes, inserta filas DENTRO del bloque, nunca debajo de la última'."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "'Dashboard'!F7:F18 y xl/charts/chart1.xml (series E7:E18 y F7:F18)",
+      "hallazgo": "El gráfico —única pieza visual del kit— sale de fábrica engañoso. La serie Objetivo devuelve el 30 % en los 12 meses sin importar si hay datos, y la serie Food Cost devuelve cadena vacía en los 9 meses sin rellenar, que un gráfico de barras pinta como 0. El cliente abre su «cockpit financiero» y ve tres meses correctos seguidos de nueve meses de barra roja al 30 % contra barra amarilla a cero.",
+      "evidencia": "F7 a F18 son todas '=$C$4' sin condición, frente a E7 = '=IF(D7=0,\"\",C7/D7)' que sí tiene guarda. Con C10:D18 vacías, E10:E18 devuelven \"\" (verificado: openpyxl con data_only las lee como None y pycel devuelve cadena vacía). chart1.xml declara `<dispBlanksAs val=\"gap\"/>`, que solo funciona con celdas realmente en blanco, no con el \"\" que devuelve una fórmula. Además el eje de categorías está declarado `<cat><numRef><f>'Dashboard'!$B$7:$B$18</f></numRef></cat>` sobre celdas de TEXTO ('Enero'…'Diciembre') en vez de strRef, y el catAx lleva `<axPos val=\"l\"/>` en un gráfico con `<barDir val=\"col\"/>` (debería ser 'b').",
+      "fix": "F7:F18 pasa a `=IF(D7=0;\"\";$C$4)` para que la serie objetivo desaparezca en los meses sin datos. Cambiar `<cat><numRef>` por `<strRef>` (en openpyxl, construir la referencia de categorías con `Reference` sobre las celdas de texto y asignarla con `set_categories`, comprobando el XML resultante) y el catAx a `axPos=\"b\"`."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "'Dashboard'!C6, D6, E7:E18",
+      "hallazgo": "El food cost mensual se calcula como Compras/Ventas sin decir en ninguna parte si las ventas van con o sin IVA, y todos los escandallos del kit sí distinguen «sin IVA» y «con IVA». Un hostelero que copie sus ventas del TPV (que son con IVA) se autoevalúa un food cost ~3 puntos mejor del real, justo en la métrica que da nombre al producto.",
+      "evidencia": "E7 = '=IF(D7=0,\"\",C7/D7)' con C6 = 'Compras (€)' y D6 = 'Ventas (€)'. Datos precargados: C7 = 8.500, D7 = 28.000 → 30,4 %, que casualmente da el objetivo C4 = 30 %. Si esos 28.000 € incluyeran el 10 % de IVA, la base sería 25.454,55 € y el food cost real 33,4 % — 3 puntos por encima del objetivo en vez de 0,4 por debajo. 'Instrucciones'!B8 dice solo '▸ Registra compras y ventas mensuales en la tabla'. Contrasta con 01!'Escandallo'!A26/A27, donde el kit sí separa 'PVP SUGERIDO (sin IVA)' de 'PVP CON IVA'.",
+      "fix": "Renombrar C6 a 'Compras netas (sin IVA) (€)' y D6 a 'Ventas netas (sin IVA) (€)', y añadir a 'Instrucciones' la línea: 'Introduce las ventas SIN IVA. Si tu TPV te da el importe con IVA, divide entre 1,10.' Opcionalmente, añadir una columna de ventas brutas con conversión automática."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "'Escandallo'!I27 '=I26*1.10' (y sus 24 gemelas en 02,03,04,05,06,07,08,10)",
+      "hallazgo": "El tipo de IVA está incrustado en la fórmula, no en una celda editable, en las 25 fórmulas de PVP con IVA del kit. Nadie fuera de España puede usarlas sin editar fórmula por fórmula, y este producto tiene compras reales desde Guatemala, Panamá, México, Argentina y Uruguay, con tipos del 12 %, 16 %, 21 % y 22 %. Tampoco sirve en España para un bar de copas que venda botella (21 %).",
+      "evidencia": "01!I27 = '=I26*1.10' con el rótulo A27 = 'PVP CON IVA (10% hostelería)'. Mismo literal en 02 (×5 pases + Resumen C14), 03 (×3 + Resumen C15), 04 (×4), 05 (×3), 06 (I27 y Presupuesto C18), 07 (×3), 08 (×3) y 10 (F7:F15, nueve fórmulas '=E{r}*1.10'). No existe ni una celda de tipo impositivo en todo el kit.",
+      "fix": "Añadir en cada hoja una celda verde 'Tipo de IVA (%)' con 0,10 por defecto y cambiar las fórmulas a `=I26*(1+$H$24)`. En 10-calculadora-pvp basta una celda global (p. ej. C5) referenciada por F7:F15 como `=E7*(1+$C$5)`. Cambiar los rótulos de 'PVP CON IVA (10% hostelería)' a 'PVP CON IVA'."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/03-menu-del-dia.xlsx",
+      "ubicacion": "libro completo (hojas: Instrucciones, Primer Plato, Segundo Plato, Postre, Resumen Menú)",
+      "hallazgo": "No existe la «rotación semanal para planificar 5 menús diferentes con sus costes comparados» que anuncian la landing y el dashboard post-compra. El fichero tiene un solo menú de tres platos, sin ninguna estructura semanal ni comparativa.",
+      "evidencia": "El libro tiene 5 hojas y 93 fórmulas; ninguna referencia a días de la semana ni a más de un menú. 'Resumen Menú' es una tabla de 12 filas (B4:C15) con Primer Plato / Segundo Plato / Postre / Pan / Bebida / Café / total / PVP. 'Instrucciones'!B8-B12 tampoco mencionan rotación. Frente a eso: ContentGrid.tsx:10 = 'Incluye rotación semanal para planificar 5 menús diferentes con sus costes comparados' y KitEscandallosDashboard.tsx:18 = 'Primer plato, segundo, postre y extras con rotación semanal'.",
+      "fix": "Añadir una hoja 'Rotación Semanal' con 5 columnas (Lunes-Viernes) × filas de primer/segundo/postre, cada celda referenciando el coste de su escandallo, más una fila de coste medio y desviación por día. Si no se produce, corregir ContentGrid.tsx:10 y KitEscandallosDashboard.tsx:18."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/02-menu-degustacion.xlsx",
+      "ubicacion": "hojas del libro y 'Resumen'!C5:C10",
+      "hallazgo": "Se vende como plantilla «para menús de 5 a 9 pases» y trae exactamente 5 pestañas con el Resumen atado a 5 referencias fijas. Un cliente con un menú de 7 u 8 pases tiene que duplicar hojas Y editar la fórmula del Resumen a mano — justo lo que la FAQ dice que no hace falta («¿Necesito Excel avanzado? No»).",
+      "evidencia": "Pestañas: '1. Aperitivo', '2. Entrante', '3. Pescado', '4. Carne', '5. Postre'. 'Resumen'!C5 = =\"'1. Aperitivo'!I18\", C6…C9 idem para las otras cuatro, y C10 = '=SUM(C5:C9)'. No hay filas libres bajo C9 preparadas ni un rango sobredimensionado. ContentGrid.tsx:9 = 'Diseñada para menús de 5 a 9 pases'; KitEscandallosDashboard.tsx:17 = 'Para menús de 5 a 9 pases con resumen de coste global'; FaqAccordion.tsx:8 = 'No. Las plantillas vienen con todo configurado'.",
+      "fix": "Añadir 4 pestañas más ('6. Pase'…'9. Pase') vacías pero con el bloque de fórmulas puesto, ampliar el Resumen a B5:C13 con las 9 referencias y C14 = SUM(C5:C13) usando IF(...=0;\"\";...) para que los pases sin usar no ensucien. Alternativa honesta: ajustar la landing y el dashboard a '5 pases'."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/10-calculadora-pvp.xlsx",
+      "ubicacion": "'Calculadora PVP'!B7:B15 y 'Instrucciones'!B10",
+      "hallazgo": "Dos desajustes en el fichero más simple del kit: las Instrucciones describen una columna «multiplicador» que no existe en la hoja, y de los 9 tipos de establecimiento que la landing enumera por su nombre falta «delivery» —precisamente el canal cuyo cálculo de PVP es más distinto, por la comisión del 25-30 % de la plataforma— sustituido por «Pastelería», que la landing no menciona.",
+      "evidencia": "'Instrucciones'!B10 = '▸ Cada tipo tiene su food cost objetivo y multiplicador'. Las columnas reales de la hoja son B 'Tipo Establecimiento', C 'Food Cost Min', D 'Food Cost Max', E 'PVP sin IVA (€)', F 'PVP con IVA (€)', G 'Margen (€)' — no hay multiplicador. Y B7:B15 = Fine Dining, Casual Dining, Fast Casual, Cafetería, Catering, Food Truck, Hotel F&B, Pastelería, Bar/Cocktails, frente a ContentGrid.tsx:17 = 'restaurante gastronómico, casual dining, fast casual, cafetería, food truck, catering, bar de copas, hotel y delivery'.",
+      "fix": "Añadir una columna 'Multiplicador' = 1/AVERAGE(C{r};D{r}) —que es lo que ya hace la fórmula por dentro y hace la tabla mucho más legible— o borrar la palabra de B10. Y añadir una fila 'Delivery' con food cost 22-28 % más una columna de comisión de plataforma (%) que reste del PVP neto, porque sin ella el PVP de delivery es directamente incorrecto."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/BONUS-mermas-inventario.xlsx",
+      "ubicacion": "'Inventario'!G4:G19 y H5:H19 vs 'Instrucciones'!B8,B10",
+      "hallazgo": "La columna «Consumo Teórico», que es la mitad de la comparación que da sentido a la hoja, está vacía, no tiene fórmula, no tiene fuente y no está explicada en ningún sitio. Las Instrucciones prometen «calcula consumo real vs teórico» y «detectar pérdidas ocultas», pero solo el consumo real se calcula; el teórico el usuario tiene que sacarlo a mano de otro lado sin que nadie le diga de dónde ni cómo.",
+      "evidencia": "'Inventario'!F5 = '=C5+D5-E5' (consumo real, sí calculado) y H5 = '=F5-G5' (diferencia), pero G5:G19 están completamente vacías, sin fórmula ni valor ni validación. 'Instrucciones'!B8 = \"▸ Pestaña 'Inventario': registra stock y calcula consumo real vs teórico\" y B10 = '▸ Usa ambas juntas para detectar pérdidas ocultas'. Además la hoja no tiene ninguna columna de valor en euros: H4 'Diferencia' sale en kg/L, así que el desvío detectado no se puede cuantificar en dinero, que es lo que interesa.",
+      "fix": "Documentar en Instrucciones que el consumo teórico = suma de (raciones vendidas × cantidad por ración del escandallo correspondiente) y, mejor, añadir columnas 'Raciones vendidas' y 'Cantidad/ración' con G = producto de ambas. Añadir además una columna 'Precio/Ud (€)' y otra 'Desvío (€)' = H × precio, para que la pérdida se vea en euros."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/05-pasteleria.xlsx",
+      "ubicacion": "'Tarta Chocolate'!G5,G9 · 'Croissants'!G5 · 'Macarons'!G5:G11",
+      "hallazgo": "Las dos cifras concretas que la landing usa para acreditar que las mermas son «reales de pastelería» —temperado de chocolate 12 % y horneado de masas 8 %— no aparecen en el fichero. Las mermas cargadas son las mismas genéricas del resto del kit, y en el caso de la harina son incluso más bajas que las de un escandallo normal.",
+      "evidencia": "Barrido completo de las tres hojas de 05: los valores de G son 0,05 (chocolate negro), 0,03 (mantequilla), 0,11 (huevos), 0,02 (azúcar), 0,02 (harina floja), 0,03 (nata), 0,05 (cacao), 0,02 (sal), 0,02 (harina de fuerza), 0,05 (levadura), 0,07 (frambuesa congelada), 0,05 (chocolate blanco), 0 (colorante). No existe ningún 0,12 ni ningún 0,08 en el fichero. ContentGrid.tsx:12 = 'mermas reales de pastelería: temperado de chocolate (12%), horneado de masas (8%), montaje de mousses'. Tampoco hay ninguna mousse entre las tres recetas.",
+      "fix": "Subir la merma del chocolate de cobertura a 0,12 en 'Tarta Chocolate'!G5 y la de las harinas a 0,08 en 'Croissants'!G5 y 'Tarta Chocolate'!G9 (que es lo que la landing ya afirma y es defendible: pérdida de temperado y evaporación de horneado), o corregir ContentGrid.tsx:12. Lo que no puede quedarse es la cifra publicada sin respaldo en el fichero."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "'Presupuesto'!C8 y C10",
+      "hallazgo": "Dos costes del presupuesto son constantes mágicas escondidas dentro de la fórmula, sin celda de entrada, sin explicación y sin posibilidad de ajustarlas salvo editando la fórmula. El fichero se vende justo por integrar personal y menaje, y son los dos que el usuario no puede tocar. Además el modelo es lineal por comensal, cuando el personal de un catering escalona por tramos.",
+      "evidencia": "'Presupuesto'!C8 = '=C5*3.50' rotulado 'Personal de servicio (camareros)' y C10 = '=C5*1.20' rotulado 'Material desechable / menaje'. Ni el 3,50 ni el 1,20 aparecen en ninguna celda visible ni en 'Instrucciones'. Por contraste, C9 (150 €, transporte) y C11 (200 €, montaje) sí son valores en celda y editables. Con C5 = 50 → C8 = 175 € de personal para un cóctel de 50 personas.",
+      "fix": "Sacar las constantes a celdas verdes rotuladas ('€ personal por comensal', '€ menaje por comensal') y cambiar a `=C5*$D$8` y `=C5*$D$10`. Mejor aún para el personal: celdas de nº de camareros, horas y €/hora, con C8 = camareros × horas × coste_hora, que es como se presupuesta de verdad."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/09-control-mermas.xlsx",
+      "ubicacion": "'Mermas Semanal'!B4 y B5:B20 vs src/components/kit-escandallos/FaqAccordion.tsx:16",
+      "hallazgo": "La FAQ afirma que las 16 categorías vienen «con mermas mínimas, máximas y típicas». El fichero tiene una sola columna, «Merma Estándar», con un único valor por categoría. No hay mínimo ni máximo en ninguna parte del kit (el único sitio con min/max es 10-calculadora-pvp, y ahí son food costs por tipo de local, no mermas).",
+      "evidencia": "09!'Mermas Semanal'!B4 = 'Merma Estándar' y B5:B20 contienen un escalar por fila (0,2 · 0,25 · 0,35 · 0,45 · 0,25 · 0,12 · 0,15 · 0,03 · 0,02 · 0,07 · 0,1 · 0,11 · 0,03 · 0,2 · 0,05 · 0,02). El fichero tiene 8 columnas (A-H) y ninguna es min ni max. FaqAccordion.tsx:16 = 'Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas.'",
+      "fix": "Añadir columnas 'Merma mín.' y 'Merma máx.' junto a la típica en 09 (y en la tabla de referencia de 01!Instrucciones!B28-B30), o reescribir FaqAccordion.tsx:16 a 'con la merma típica de la industria por categoría'."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/07-cafeteria-brunch.xlsx",
+      "ubicacion": "hojas del libro",
+      "hallazgo": "La landing enumera cuatro ejemplos «reales» por su nombre y el fichero trae tres: falta el carrot cake. Es el único de los cuatro que es pastelería de vitrina, que es exactamente el producto con el que una cafetería gana margen, así que no es un ejemplo intercambiable.",
+      "evidencia": "Hojas de 07-cafeteria-brunch.xlsx: 'Instrucciones', 'Tostada Aguacate', 'Açaí Bowl', 'Eggs Benedict'. ContentGrid.tsx:14 = 'Incluye ejemplos reales: tostada de aguacate, açaí bowl, eggs benedict, carrot cake'.",
+      "fix": "Añadir una cuarta pestaña 'Carrot Cake' con el mismo bloque de fórmulas (y con el campo de rendimiento del TEC-05, porque es una elaboración por raciones), o quitar 'carrot cake' de ContentGrid.tsx:14."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/06-catering.xlsx",
+      "ubicacion": "hojas del libro",
+      "hallazgo": "La landing promete «checklist de evento y desglose para presentar al cliente» y el fichero tiene solo dos hojas de trabajo, ninguna de las dos es un checklist ni un documento presentable a un cliente: 'Presupuesto' es una lista interna de 8 conceptos con los costes propios a la vista, incluidos el margen objetivo y el coste real.",
+      "evidencia": "Hojas de 06-catering.xlsx: 'Instrucciones', 'Cocktail 50 pax', 'Presupuesto'. La hoja 'Presupuesto' ocupa B2:C20 y expone 'COSTE TOTAL EVENTO' (C13 = 1.154,58 €), 'Coste por persona' (C14 = 23,09 €) y 'Margen objetivo (%)' (C16 = 35 %) en la misma vista que el 'PRESUPUESTO TOTAL (con IVA)' (C20 = 1.953,90 €). Enseñársela a un cliente es enseñarle el margen. ContentGrid.tsx:13 = 'Incluye checklist de evento y desglose para presentar al cliente'.",
+      "fix": "Añadir una hoja 'Checklist Evento' (timings, personal asignado, menaje, transporte, montaje, alérgenos, permisos) y una hoja 'Presupuesto Cliente' que referencie solo los importes de venta —sin C13, C14 ni C16—, con área de impresión propia. Si no, retirar la frase de ContentGrid.tsx:13."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "todas las hojas de los 12 ficheros (sin sheetProtection)",
+      "hallazgo": "Ninguna hoja del kit está protegida: las 849 fórmulas están abiertas a sobrescritura accidental. En un producto cuya FAQ abre con «¿Necesito Excel avanzado? No», un usuario que teclee un número directamente sobre la celda del coste o del total la convierte en constante y a partir de ahí el escandallo deja de calcular en silencio, sin ningún indicio visual (las celdas de fórmula no tienen relleno; las editables sí).",
+      "evidencia": "`unzip -p *.xlsx 'xl/worksheets/*.xml' | grep -c sheetProtection` = 0 en los 12 ficheros. El código de colores existe y es correcto (verificado: 01!'Escandallo'!A5:G19 con relleno solid E8F5E9 verde para lo editable, H5:I19 sin relleno para las fórmulas, I21/I23 en FFF8DC y FFD700 para los totales), pero es meramente informativo: nada impide escribir en H o en I.",
+      "fix": "Marcar como desbloqueadas solo las celdas con relleno verde (`cell.protection = Protection(locked=False)`) y llamar a `ws.protection.enable()` sin contraseña, o con una trivial documentada en Instrucciones. Sin contraseña el usuario avanzado puede desproteger en un clic y el principiante queda a salvo."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/05-pasteleria.xlsx",
+      "ubicacion": "'Macarons'!E11 (y categorías erróneas en 05,07,08,04)",
+      "hallazgo": "Un dato precargado físicamente imposible y una tanda de categorías mal asignadas. El colorante de los macarons son 100 gramos para 30 unidades —con una masa total de unos 500 g—, cuando la dosis real es de 1-2 g o unas gotas. Y varias filas del kit están clasificadas en categorías que no les corresponden, lo que hoy es cosmético pero rompería el VLOOKUP categoría→merma que hace falta para arreglar TEC-10.",
+      "evidencia": "05!'Macarons'!A11 = 'Colorante rojo', C11='kg', D11 = 4,00 €/kg, E11 = 0,1 → 0,1 kg de colorante, 0,40 € y el 6 % del coste de la receta (I18 = 6,03 €). Categorías erróneas verificadas: 05!'Croissants'!B9 'Levadura fresca' = 'Lácteos'; 05!'Macarons'!B11 'Colorante rojo' = 'Especias/hierbas'; 08!'Smash Burger'!B10 'Tomate' = 'Verdura hoja' (y por eso lleva 10 % de merma mientras la lechuga de la fila de al lado lleva 25 %); 08!'Smash Burger'!B11 'Salsa especial' y B12 'Pepinillo' = 'Secos/granos' y 'Congelados'; 04!'Gin Tonic Premium'!B8 'Pepino' = 'Verdura raíz'; 01!'Escandallo'!B10 'Fondo oscuro de ternera' = 'Congelados' con 7 % de merma.",
+      "fix": "Corregir E11 a 0,002 (2 g). Reasignar las categorías: levadura → 'Secos/granos', colorante → 'Secos/granos', tomate y pepino → 'Verdura hoja' o crear 'Verdura fruto' en el desplegable, salsas → 'Secos/granos' es defendible pero 'Aceites/grasas' encaja mejor en salsas emulsionadas, pepinillo → 'Verdura raíz' o 'Conservas' (categoría que hoy no existe en el desplegable de 16)."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/11-dashboard-food-cost-mensual.xlsx",
+      "ubicacion": "'Dashboard'!B4 (ancho de columna B = 14) y xl/drawings/drawing1.xml",
+      "hallazgo": "Dos defectos de presentación en el fichero que más se mira. El rótulo del input principal se corta visualmente porque la celda de la derecha está ocupada, y el gráfico mide 9,84 pulgadas de ancho, más que el área imprimible de un A4 vertical, que es el formato que la Fase A dejó configurado en esa hoja.",
+      "evidencia": "'Dashboard'!B4 = 'Food Cost Objetivo (%):' (23 caracteres) en la columna B con width = 14,0 y C4 ocupada (0,3) y sin wrap_text: Excel trunca a unos 14 caracteres, el usuario lee 'Food Cost Obje'. El único caso real de truncamiento del kit (los otros 130 candidatos del barrido son cadenas de fórmula, no texto visible). Por otro lado, drawing1.xml declara `<ext cx=\"9000000\" cy=\"5040000\"/>` = 9,84 × 5,51 pulgadas, anclado en `<row>20</row>`, mientras la hoja va con `<pageSetup orientation=\"portrait\" paperSize=\"9\" fitToWidth=\"1\"/>`: el fitToWidth encogerá el conjunto para que quepa, dejando la tabla de datos ilegible.",
+      "fix": "Subir el ancho de la columna B a 26 (o poner el rótulo en B4:C4 combinado con el input en D4). Y reducir el gráfico a cx≈6.400.000 (7 pulgadas) o poner la hoja 'Dashboard' en landscape, que es lo coherente con un gráfico ancho."
+     },
+     {
+      "id": "TEC-28",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/BONUS-mermas-inventario.xlsx",
+      "ubicacion": "'Inventario'!H5:H19 · 'Checklist Mermas'!A4:A33, F34",
+      "hallazgo": "Tres descuidos en el bonus que sí se entrega. La columna Diferencia no tiene guarda de vacío y muestra quince '+0,00' sobre una hoja en blanco (el resto del kit sí usa IF(...=\"\";\"\";...)); la columna Fecha del checklist no tiene formato de fecha ni validación; y el total se llama «TOTAL MERMAS MES» sobre un rango de 30 filas cuando la hoja se describe como registro diario, lo que da una línea por día para un mes entero.",
+      "evidencia": "'Inventario'!H5 = '=F5-G5' con formato '+0.00;-0.00' y sin IF: con C:G vacías devuelve 0 y se pinta '+0,00' en las 15 filas. Comparar con 09!'Mermas Semanal'!F5 = '=IF(E5=\"\",\"\",E5-B5)', que sí protege. 'Checklist Mermas'!A3 = 'Fecha' y A4:A33 vacías, number_format 'General', sin data validation (la única validación de la hoja es la lista de motivos en D4:D33). A34:E34 combinadas = 'TOTAL MERMAS MES' con F34 = '=SUM(F4:F33)', es decir 30 líneas para el mes entero de un registro que 'Instrucciones'!B9 llama 'control diario de desperdicios'.",
+      "fix": "H5:H19 pasa a `=IF(F5=0;\"\";F5-G5)` (o mejor, condicionado a que C:E tengan algo). Aplicar number_format 'dd/mm/yyyy' y una validación de tipo date a A4:A33. Y ampliar el rango del checklist a F4:F100 con el total en la fila 101, o renombrar F34 a 'TOTAL MERMAS DEL PERIODO'."
+     },
+     {
+      "id": "TEC-29",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/01-escandallo-estandar.xlsx",
+      "ubicacion": "'Escandallo'!K3, K8:L9, K15 (mismo patrón en las 22 hojas de escandallo del kit)",
+      "hallazgo": "La «zona para foto del plato» —bullet destacado del hero y de ContentGrid— existe en las 22 hojas de escandallo, pero es un marco de aproximadamente 7,4 × 1 cm porque ninguna fila del libro tiene alto definido. No es un espacio donde encaje una foto: la imagen que el usuario inserte flotará tapando la tabla.",
+      "evidencia": "01!'Escandallo': K3 (combinada K3:L3) = '📷 Foto del Plato', K8:L9 combinada = 'Arrastra aquí la foto\\ndel plato terminado', K15:L15 = 'Insertar → Imagen → Desde archivo'. `ws.row_dimensions` devuelve {} en las 31 hojas de los 12 ficheros: ninguna fila tiene height asignado, luego todas quedan al alto por defecto de 15 pt. Columnas K y L = 20 caracteres cada una (≈3,7 cm). El bloque K3:L15 mide unos 7,4 cm de ancho por 4,8 cm de alto en total, pero el recuadro rotulado como zona de foto (K8:L9) son 2 filas = ~1 cm.",
+      "fix": "Fijar `ws.row_dimensions[r].height = 28` para r en 4..14 en las hojas de escandallo, con lo que el bloque K4:L14 pasa a unos 7,4 × 10,8 cm — proporción razonable para una foto de plato — y dejar el texto de ayuda solo en K3 y K15."
+     },
+     {
+      "id": "TEC-30",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-escandallos/04-cocktails-bebidas.xlsx",
+      "ubicacion": "'Instrucciones'!B11 vs 'Gin Tonic Premium'!H21 vs ContentGrid.tsx:11 · y 03!'Instrucciones'!B11",
+      "hallazgo": "Rangos de food cost que no coinciden entre la landing, las Instrucciones y el valor precargado, y una pestaña citada por un nombre que no tiene. Son inconsistencias menores, pero en un producto cuyo argumento es la precisión de los números restan credibilidad y son de coste de arreglo casi nulo.",
+      "evidencia": "04: ContentGrid.tsx:11 dice 'objetivo de food cost al 18-22%', 'Instrucciones'!B11 dice '18-25%' y las cuatro hojas traen H21 = 0,20. 03: 'Instrucciones'!B11 = \"▸ Pestaña 'Resumen': coste total del menú + PVP sugerido\", pero la pestaña se llama 'Resumen Menú' (en 02 sí se llama 'Resumen'). 07: 'Instrucciones'!B9 dice '25-30%' y coincide con la landing, correcto.",
+      "fix": "Unificar el rango de 04 a 18-25 % en ContentGrid.tsx:11 (o a 18-22 % en 'Instrucciones'!B11 y bajar H21 a 0,20, que ya lo está). Corregir 03!'Instrucciones'!B11 a \"Pestaña 'Resumen Menú'\"."
+     }
+    ]
+   }
+  }
+ }
+}
