@@ -59,7 +59,9 @@ def inject(path):
     for ws in wb.worksheets:
         for row in ws.iter_rows():
             for c in row:
-                if isinstance(c.value, str) and c.value.startswith('='):
+                # 2026-08-22 (AICP): por TIPO de celda, no por el '=' inicial: las etiquetas
+                # «= Margen bruto» convertidas a texto por postprocess-transversal.py no son formulas.
+                if c.data_type == 'f' and isinstance(c.value, str) and c.value.startswith('='):
                     formula_cells.append((ws.title, c.coordinate))
     # evaluar con pycel
     xl = ExcelCompiler(filename=path)
