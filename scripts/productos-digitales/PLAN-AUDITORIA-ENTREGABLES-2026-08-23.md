@@ -94,3 +94,8 @@ R1 90 hallazgos (20 altas) → SPEC v2.0 (+§7 decisiones) → paquete `kit-esca
 refutadores (55) → 2 rondas de corrección/verificación (33/33) → ejecución real `ed45f35`. Bono
 prometido producido (PDF, `bonus-guia`). Método y trampas en `SESSION_HANDOFF_2026-08-22-B-…md` §5.
 Siguiente: `pack-appcc` (R1 opus), luego `kit-tareas` como representante de la familia «▸».
+
+## 7. Estado — 2026-08-22 (noche): pack-appcc v2.0 en producción (`bf2be96`)
+R1 92 → SPEC → paquete `pack-appcc-v2_0/` → 3 refutadores (57, JSON a fichero) → ronda 2 57/57 → real.
+19 registros + 2 bonos. Siguiente: `kit-tareas` (R1 lanzada) → SPEC del MOTOR de la familia «▸» →
+hermanos verificados por sonnet.

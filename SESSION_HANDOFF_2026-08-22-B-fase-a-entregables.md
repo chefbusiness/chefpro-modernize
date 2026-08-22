@@ -99,3 +99,28 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
 - **Siguiente representante (orden del plan): `pack-appcc`** → `Workflow({scriptPath:
   'scripts/productos-digitales/auditoria-entregables-workflow.js', args:{productId:'pack-appcc',
   familia:'kit-excel'}})`; después kit-tareas (familia «▸») con hermanos verificados por sonnet.
+
+## 6. Segundo representante: **Pack de Plantillas APPCC v2.0** (noche del 22-ago) — `bf2be96`
+
+- R1: 92 hallazgos / 15 altas (`auditorias/pack-appcc-R1.json`; persistido con `r1-desde-journal.py`,
+  porque el agente haiku truncaba el JSON — fase eliminada del workflow). Lo grave: PCC declarados
+  sin registro (cocción, enfriamiento), sin anisakis, matriz de alérgenos en blanco, límites de
+  recepción que aceptaban pescado a 4 °C y rechazaban vacuno conforme, plan L+D que prescribía
+  **desincrustante ácido + lejía**, normas derogadas citadas (RD 2207/1995, RD 140/2003, carné de
+  manipulador), «€60.000» inventado, protocolo de alerta que mandaba al 112 en vez de a la autoridad.
+- SPEC v2.0 (`pack-appcc-v2-SPEC.md`): 4 registros nuevos (16 cocción/regeneración, 17
+  enfriamiento/descongelación, 18 congelación anisakis, 19 verificación de termómetros) → **19
+  registros + 2 bonos = 21 ficheros**; hoja «Límites» por familia en 02; semáforo y DV que valida en
+  todo el pack; normativa vigente; matriz con los 8 ejemplos declarados; HACCP con preventivas/
+  vigilancia/verificación, nivel de riesgo y 7 fases; guía con 25 puntos reales y Ley 17/2011.
+- Construcción `pack-appcc-v2_0/` (main.py `--dry-run` / `PACK_APPCC_APPLY=1`, respaldo en scratch) →
+  3 refutadores que **escriben su JSON a fichero** (57 hallazgos; el corrector los lee enteros:
+  `ids_vistos` = 57) → ronda 2: 57/57 «listo». Ejecución real: 0 diferencias frente a la copia
+  verificada, censo 0 defectos, gate offline 21/21. Deploy y LIVE: ver línea siguiente.
+- **LIVE verificado**: deploy `bf2be96` ready 21:34; gate LIVE **44 · 650 · 0 fallos** a la primera; md5 producción = repo (02, 16, 18); landing «19 registros · Versión 2.0», 0 ocurrencias de RD 2207/1995, RD 140/2003 o «60.000»; island del dashboard con `coccion/enfriamiento/anisakis/termometros`.
+- Para John: COM-15 (la landing promete «30 días de garantía» y `/terminos` no tiene cláusula de
+  productos digitales — toca `src/i18n/**`, territorio del VPS) y lo aparcado (reseñas, ancla de
+  precio, `priceValidUntil`). La integración retocó también `src/data/use-cases-content.*.ts`
+  (17→19 registros y sin «PDF export»).
+- Registro: `auditorias/pack-appcc-v2-construccion.json`.
+- **Siguiente: `kit-tareas`** (representante «▸») — R1 lanzada al cerrar este bloque.
