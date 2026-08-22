@@ -126,3 +126,31 @@ factor, IVA, raciones, protección).
 - COM-06/COM-07/COM-28 (reseñas, ancla de precio, «#1»): decisión aparcada por John (2026-08-22).
 - TEC-29 (zona de foto pequeña): cosmético, se amplía la fila si es trivial; no bloquea.
 - DOM-27 con contraseña: sin contraseña (el cliente debe poder desproteger).
+
+## 7. Decisiones del orquestador sobre las dudas de los constructores (2026-08-22, tras B y C)
+
+7.1 **Delivery en 10-calculadora (grupo C).** La regla literal de §4 (FC 18-22 % sobre ingreso neto)
+da PVP 39,29 € para un coste de 5,50 €: irreal. Nueva regla: el food cost objetivo de Delivery se
+mide **sobre el ingreso neto tras comisión y vale 28-32 %** (típico 30 %): `PVP = coste / (FC_neto ×
+(1 − comisión))` → 5,50 / (0,30 × 0,70) = **26,19 €** sin IVA, que es lo que se lista en plataforma.
+Mantener las columnas «Ingreso neto tras comisión» y «Margen neto»; nota en la hoja e Instrucciones:
+«un 30 % sobre neto equivale a ~21 % sobre el PVP bruto: por eso el precio de delivery sube».
+7.2 **Presupuesto de catering (grupo B).** El food cost objetivo se aplica SOLO a la alimentación
+(C6 × pax); personal, menaje, transporte y montaje van a coste más un «Margen sobre servicios (%)»
+editable (verde, 20 % por defecto): `PVP evento (sin IVA) = alimentación / FC + otros costes × (1 +
+margen servicios)`; `PVP por persona = PVP evento / pax`; celda «Mínimo de facturación por evento
+(€)» (verde, 600 €) y `PVP evento final = MAX(PVP evento, mínimo)`. Con 10 pax el precio por persona
+debe quedar en una horquilla creíble (40-80 €), con 80 pax en 25-45 €. Nota en Instrucciones.
+7.3 **Carrot cake (grupo A).** El coste por ración de 0,62 € está por debajo de una porción real.
+Receta de 12 raciones creíble: zanahoria 300 g, harina 250 g, azúcar 200 g, 3 huevos, aceite 150 ml,
+nueces 80 g, canela, y frosting de queso crema 200 g + mantequilla 80 g + azúcar glas 150 g; coste por
+ración ≈ 1,0-1,2 €; food cost objetivo de vitrina 25 % → PVP ≈ 4,4-4,8 € sin IVA (≈ 4,9-5,3 € con IVA).
+7.4 **Lo que ya decidieron bien los constructores y se ratifica:** 21 categorías en `Mermas` (no 16;
+la FAQ del 09 sigue diciendo 16 porque el 09 tiene sus 16 familias de desperdicio), VLOOKUP acotados,
+desplegable de categoría como rango, protección sin tocar `password`, línea «Versión 2.0» desde el
+motor, «Formato de compra» como hoja propia en 04, TEC-09 aplicado también al 03, `Bar/Cócteles`
+20-25 % en todo el kit, «evolución de 12 semanas» (no mensual) en el 09 y en la landing, el bono
+PDF + DOCX (solo se sirve el PDF). DOM-25 (turno/responsable en el registro) se descarta.
+7.5 **Colisión de agentes en `dryrun-v2/`**: cada agente que regenere la copia debe usar
+`CLAUDE_SCRATCHPAD=<carpeta propia>`; la copia canónica para verificar es la del último
+`main.py --dry-run --solo a,b,c` de integración.
