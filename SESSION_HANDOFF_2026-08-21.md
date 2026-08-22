@@ -1,12 +1,23 @@
 # Handoff — 2026-08-21 (sesión VPS 19-20 ago; sustituye a SESSION_HANDOFF_2026-08-19.md como handoff de pista principal)
 
+> ⚡⚡ **ACTUALIZADO el 22-ago: PT tanda 2 TAMBIÉN PUBLICADA — PT va 4/14**
+> (commit `887b94c`, deploy ready, batería live en verde): `contaminacao-
+> cruzada` y `higiene-e-seguranca-alimentar` cierran 4/5 del eje normativo,
+> interenlazados con la tanda 1 en las dos direcciones (recíprocos 2→3 y
+> 1→4 parcheados). **8º modo de fallo de bridge cazado: FAQ en PT infectada
+> de CASTELLANO** (tabla/cámara/fritadora/reducen — `guard_idioma()` no ve
+> castellano); cura medida: aviso anti-ES explícito + `--temperature 0.3`,
+> y el barrido anti-ES es ya assert permanente. El build raceó otra vez
+> (verde con 1.305, sin las 2 nuevas) → doble build con purga → 1.307.
+> Site_id real de Netlify: `dc777725-…` (el `ee5802cf-…` de abajo era un
+> deploy id). Detalle en §8 2026-08-22-A. **Siguiente: tanda 3 (5 `controlo
+> de temperaturas` + 6 `food cost`), SERP fresca antes; ojo regla 6 en food
+> cost: el PAA vuelve en inglés, la FAQ sale de «como calcular o food cost».**
+>
 > ⚡ **ACTUALIZADO la noche del 21-ago: PT tanda 1 PUBLICADA Y VERIFICADA EN
 > VIVO** (commit `5fe1e4c`, deploy ready, batería live en verde). `haccp` y
 > `alergenios` viven en `/pt/blog/` con FAQPage, interenlace 1↔2, CTAs a ptapp
-> y 6 imágenes. **PT va 2/14; siguiente: tanda 2 (posts 3 `contaminação
-> cruzada` y 4 `higiene e segurança alimentar`), con SERP fresca ANTES**
-> (`--pais 2620 --idioma pt`; ojo regla 2: «segurança alimentar» a secas es
-> food SECURITY). Detalle completo en §8 2026-08-21-A del plan maestro.
+> y 6 imágenes. Detalle completo en §8 2026-08-21-A del plan maestro.
 > Gotcha nuevo: el recuento esperado de un árbol vacío no cuenta las páginas
 > que solo nacen con contenido — el build es 1.305, no 1.304, porque la
 > página de `categoria/gestao-de-restaurantes` se materializó con la tanda.
