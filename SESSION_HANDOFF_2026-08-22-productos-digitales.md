@@ -39,7 +39,7 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
 - **Opus dio 529 (overloaded) 6 veces seguidas** a las 01:00 (hora Madrid): la ronda 2 se hizo
   con sonnet + verificación determinista mía. Tener el plan B a mano.
 
-## 3. Pendiente de JOHN (dos pasos de 5 minutos + dos decisiones)
+## 3. Pendiente de JOHN (un paso de 5 minutos + dos decisiones)
 
 1. **Armar el webhook** (mata la clase entera de «pagué y no tengo enlace»):
    Stripe → Developers → Webhooks → *Add endpoint* `https://aichef.pro/.netlify/functions/stripe-webhook`,
@@ -47,9 +47,10 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
    `whsec_…` a Netlify (site `ee5802cf-…`) como env var **`STRIPE_WEBHOOK_SECRET`** (secreta,
    scope *functions*). Sin redeploy. Comprobar: `python3 scripts/productos-digitales/gate-flujo-postpago.py`
    → «stripe-webhook LIVE: 400 sin firma (desplegado y armado)».
-2. **Auditar los 44 Payment Links** (URL de confirmación): en este prompt `! stripe login --project-name aichefpro`
-   (el `default` del Mac es Miselup) y luego `python3 scripts/productos-digitales/audit-payment-links.py`.
-   Sin prisa: es solo para confirmar la URL de confirmación de los 44 links.
+2. ~~Auditar los 44 Payment Links~~ — **HECHO el 2026-08-22**: CLI emparejado con «AI Chef Pro
+   ES/EN» (`acct_1PsZO84CcdRGidmE`, clave hasta el 2026-11-20) y `audit-payment-links.py` (modo
+   `--live`) → **44/44 activos con redirect correcto a `-access?session_id={CHECKOUT_SESSION_ID}`,
+   0 fallos**. La cuenta tiene otros 39 links activos ajenos al catálogo (el webhook los ignora).
 3. **Decisión:** pasar `PURCHASE_VALIDATION` a `strict` tras unos días mirando los logs
    `[purchase-validation]` en Netlify (ojo: si rotas un Payment Link, las sesiones antiguas
    llevan el plink viejo → en strict `resend-access` les daría 404; fallback `/admin/generar-acceso`).

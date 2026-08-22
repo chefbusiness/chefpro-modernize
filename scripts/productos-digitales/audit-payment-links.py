@@ -11,7 +11,8 @@ Comprueba, para cada Payment Link del mapa netlify/shared/payment-links.ts:
   - y lista los links activos de la cuenta que NO están en el mapa (productos huérfanos).
 
 Requisito: el CLI logueado en la cuenta de AI Chef Pro bajo un project-name propio
-(el `default` del Mac es Miselup):
+(el `default` del Mac es Miselup). Consulta en modo LIVE (`--live`): el CLI usa TEST por
+defecto y ahí no existe ningún Payment Link — los 44 salían como «NO existe» (STRIPE_LIVE=0 para test):
     stripe login --project-name aichefpro
 Uso:
     python3 scripts/productos-digitales/audit-payment-links.py              # tabla
@@ -26,8 +27,11 @@ PROJECT = os.environ.get('STRIPE_PROJECT', 'aichefpro')
 BASE = 'https://aichef.pro'
 
 
+LIVE = os.environ.get('STRIPE_LIVE', '1') != '0'  # el CLI consulta TEST por defecto; los links viven en LIVE
+
+
 def stripe(*args):
-    cmd = ['stripe', '--project-name', PROJECT, *args]
+    cmd = ['stripe', '--project-name', PROJECT, *args, *(['--live'] if LIVE else [])]  # --live va tras el subcomando
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
     if r.returncode != 0:
         err = r.stderr.strip()
