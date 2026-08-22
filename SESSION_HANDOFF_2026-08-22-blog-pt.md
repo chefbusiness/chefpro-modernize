@@ -14,7 +14,7 @@
 | IT | 13/13 completo (17-ago) | Madurar GSC → releer hacia el 8-15 sept |
 | FR | 14/14 completo (18-ago) | Ídem |
 | DE | 14/14 completo (19-ago) | Ídem |
-| **PT** | **6/14 — EN CURSO** | **Tanda 4, pero antes decidir qué pasa con el post 7 (ver abajo)** |
+| **PT** | **6/13 — EN CURSO** | **Tanda 4: posts 8 `mise en place` y 9 cortes (el 7 se salta, decidido)** |
 | NL | Solo roadmap | Se abre tras PT 14/14 |
 
 **PT publicado y verificado en vivo. El eje normativo está CERRADO (5/5).**
@@ -46,13 +46,15 @@ El research de esta tanda refutó las dos patas que lo sostenían:
    ptapp es «ajudá-lo a aprender a usar a ferramenta SaaS tSpoonLab» — un bot de
    soporte de un software de terceros. El encaje de producto no existe.
 
-Opciones, por orden de preferencia: **(a)** saltar al post 8 (`mise en place`,
-1.930/mes, el más rentable de la cola) y absorber la ficha técnica dentro del
-clúster del post 6, que ya la trata como el instrumento del food cost;
-**(b)** escribirlo con CTA a Gerente Restaurante Pro. **Decisión pendiente.**
+**DECIDIDO por John el 2026-08-22: se salta.** La tanda 4 es **8 `mise en place`**
+(1.930/mes, gancho Chef Executivo Pro `chef-ejecutivo-pro-05y07-pt` — ⚠️ verificar
+el formid en `.work/ptapp-agentes.json` y recordar la **regla 7**: «Mise En Place»
+es un restaurante de Marinha Grande que ocupa el #1 y el #3, hay que cualificar el
+ángulo) **+ 9 cortes mirepoix/brunoise** (1.070/mes, gancho Léxico Gastronómico,
+sin AIO, con tabla de medidas en mm frente a una SERP de Instagram y Brasil).
+La ficha técnica queda cubierta dentro del post 6. **El roadmap pasa a 13 posts.**
 
-Cola restante: 8 `mise en place` (ojo marca homónima) · 9 cortes
-mirepoix/brunoise · 10 `garum` · 11 `cozinha molecular` · 12 cocktails ·
+Cola restante tras la tanda 4: 10 `garum` · 11 `cozinha molecular` · 12 cocktails ·
 13 food truck · 14 `pão de fermentação natural`. Y **re-medir volúmenes antes
 de cada tanda**: el roadmap del 16-ago ya falló en 4 de 4 comprobaciones.
 

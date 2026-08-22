@@ -205,9 +205,13 @@ Dos motivos, los dos verificados el 22-ago:
    ptapp: «ajudá-lo a aprender a usar a ferramenta SaaS tSpoonLab». Es un bot de
    soporte de un software de terceros, no un asistente de fichas técnicas — así
    que el encaje de producto que justificaba el post no existe tal como estaba
-   escrito. Alternativa natural: **Gerente Restaurante Pro**, o fundir el tema
-   dentro del clúster del post 6, que ya trata la ficha técnica como el
-   instrumento del food cost.
+   escrito.
+
+**DECISIÓN DE JOHN (2026-08-22): se salta el post 7.** La tanda 4 es
+**8 `mise en place`** (1.930/mes, el más rentable de toda la cola, gancho Chef
+Executivo Pro) **+ 9 cortes mirepoix/brunoise** (1.070/mes, gancho Léxico
+Gastronómico). La ficha técnica queda cubierta dentro del post 6, que ya la
+trata como el instrumento del food cost. El roadmap pasa a ser de 13 posts.
 
 ### El censo de agentes de ptapp ya no se deduce: se extrae
 
