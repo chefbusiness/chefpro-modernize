@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: '¿Los datos de merma son fiables?',
-    a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 16 categorías de ingredientes con mermas mínimas, máximas y típicas. Puedes ajustarlas a tu realidad.',
+    a: 'Sí. Son los estándares utilizados en hostelería profesional y en consultoría gastronómica. Cubren 21 categorías de ingredientes con mermas mínimas, máximas y típicas. Puedes ajustarlas a tu realidad.',
   },
   {
     q: '¿Puedo personalizar las plantillas?',

@@ -18,7 +18,7 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS || '#com
 const checkItems = [
   '11 plantillas Excel profesionales con fórmulas automáticas',
   'Mermas estándar de la industria precargadas',
-  'Calculadora de PVP para 9 tipos de establecimiento',
+  'Calculadora de PVP para 10 tipos de establecimiento',
   'Dashboard de Food Cost mensual con gráficos',
   'Zona para foto del plato en cada escandallo',
 ];

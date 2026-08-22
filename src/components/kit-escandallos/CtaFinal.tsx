@@ -5,8 +5,8 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_ESCANDALLOS || '#com
 
 const items = [
   '11 plantillas Excel profesionales con fórmulas automáticas',
-  'Mermas estándar de la industria precargadas (16 categorías)',
-  'Calculadora de PVP para 9 tipos de establecimiento',
+  'Mermas estándar de la industria precargadas (21 categorías)',
+  'Calculadora de PVP para 10 tipos de establecimiento',
   'Dashboard de Food Cost mensual con gráficos',
   'BONUS: Guía "Controla tu Food Cost en 30 Días" (€27)',
   'BONUS: Checklist de Mermas + Inventario (€19)',

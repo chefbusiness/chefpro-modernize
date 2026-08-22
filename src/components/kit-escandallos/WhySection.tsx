@@ -15,7 +15,7 @@ const reasons = [
   {
     icon: TrendingDown,
     title: 'Mermas Estándar Precargadas',
-    desc: '16 categorías de ingredientes con la merma típica de la industria. Editable para ajustar a tu realidad.',
+    desc: '21 categorías de ingredientes con la merma típica de la industria. Editable para ajustar a tu realidad.',
   },
   {
     icon: RefreshCw,
