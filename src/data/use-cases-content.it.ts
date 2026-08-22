@@ -1431,7 +1431,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "HACCP e tracciabilità",
-        "description": "Pack APPCC con 17 modelli: temperature, sprechi, allergeni e tracciabilità dal cellulare del team.",
+        "description": "Pack APPCC con 19 registri: temperature, sprechi, allergeni e tracciabilità dal cellulare del team.",
         "icon": "ShieldCheck"
       },
       {
@@ -3961,7 +3961,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "HACCP e tracciabilità",
-        "description": "Pack HACCP con 17 registri, avvisi di temperatura da mobile ed esportazione pronta per l'ispezione.",
+        "description": "Pack HACCP con 19 registri, avvisi di temperatura da mobile e fogli pronti per l'ispezione.",
         "icon": "ShieldCheck"
       },
       {
@@ -6689,7 +6689,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "HACCP e sicurezza alimentare",
-        "description": "Pack APPCC con 17 modelli pronti per l'ispezione, registrazioni da mobile ed esportazione in PDF.",
+        "description": "Pack APPCC con 19 registri pronti per l'ispezione, registrazioni da mobile e fogli pronti da stampare in A4.",
         "icon": "ShieldCheck"
       },
       {
@@ -7149,7 +7149,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       },
       {
         "title": "HACCP e tracciabilità",
-        "description": "Pack APPCC con 17 modelli, registri dal cellulare, alert e esportazione in PDF pronta per l'ispezione.",
+        "description": "Pack APPCC con 19 registri, registri dal cellulare, alert e fogli pronti da stampare in A4 per l'ispezione.",
         "icon": "ShieldCheck"
       },
       {
@@ -9876,7 +9876,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
     "features": [
       {
         "title": "Pack HACCP con modelli Excel",
-        "description": "17 modelli Excel scaricabili: temperature, pulizia, tracciabilità, allergeni, parassiti, olio e acqua.",
+        "description": "19 registri Excel scaricabili: temperature, pulizia, tracciabilità, allergeni, parassiti, olio e acqua.",
         "icon": "ShieldCheck"
       },
       {
@@ -9922,7 +9922,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
     ],
     "workflowTitle": "Come Implementare l'HACCP Digitale in 4 Passi",
     "workflow": [
-      "1. Pack HACCP (€14, modelli Excel scaricabili) — scarichi i 17 modelli professionali adattati al tuo tipo di cucina (pasticceria, gelateria, ristorante, ecc.).",
+      "1. Pack HACCP (€14, modelli Excel scaricabili) — scarichi i 19 registri professionali adattati al tuo tipo di cucina (pasticceria, gelateria, ristorante, ecc.).",
       "2. ID Allergeni — scansiona automaticamente le ricette e i modelli del tuo menu per identificare gli allergeni per piatto. Lo integra nelle schede tecniche e in sala.",
       "3. Cucina Creativa con HACCP integrato — ogni nuova ricetta fornisce procedure HACCP (temperatura critica, conservazione, allergeni, stoccaggio) integrate nella scheda tecnica.",
       "4. Kit di Attività con HACCP — modelli di turno (apertura, servizio, chiusura) con HACCP integrato. Il team firma digitalmente ogni turno da smartphone."
@@ -9936,7 +9936,7 @@ export const USE_CASES_CONTENT_IT: Partial<Record<string, UseCaseContent>> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack HACCP + ID Allergeni ci hanno trasformato la sicurezza alimentare. Siamo passati da carta stampata sparsa a 17 modelli digitali con HACCP integrato per turno e allergeni automatici per ricetta. L'ispezione sanitaria è impeccabile e il rischio legale è sceso a zero.",
+    "testimonialQuote": "Pack HACCP + ID Allergeni ci hanno trasformato la sicurezza alimentare. Siamo passati da carta stampata sparsa a 19 registri digitali con HACCP integrato per turno e allergeni automatici per ricetta. L'ispezione sanitaria è impeccabile e il rischio legale è sceso a zero.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "F&B Director, hotel 5 stelle con 4 punti vendita",
     "faqTitle": "Domande Frequenti sull'HACCP con IA",

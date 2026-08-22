@@ -49,7 +49,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP en voedselveiligheid",
-        "description": "Pack APPCC met 17 sjablonen klaar voor inspectie, registraties vanaf mobiel en export naar PDF."
+        "description": "Pack APPCC met 19 registraties klaar voor inspectie, registraties vanaf mobiel en afdrukklare A4-bladen."
       },
       {
         "icon": "Users",
@@ -986,7 +986,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 17 sjablonen: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
+        "description": "Pack APPCC met 19 registraties: temperaturen, verliezen, allergenen en traceerbaarheid vanaf de mobiel van het team."
       },
       {
         "icon": "Beaker",
@@ -4402,7 +4402,7 @@ export const USE_CASES_CONTENT_NL: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC en traceerbaarheid",
-        "description": "Pack APPCC met 17 sjablonen, registraties via mobiel, meldingen en export naar PDF klaar voor inspectie."
+        "description": "Pack APPCC met 19 registraties, registraties via mobiel, meldingen en afdrukklare A4-bladen voor de inspectie."
       },
       {
         "icon": "Users",

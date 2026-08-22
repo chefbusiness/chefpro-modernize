@@ -42,14 +42,14 @@ export const appccTestimonials = [
   },
   {
     name: 'Ana Belén Torres',
-    role: 'Propietaria, Cafetería Miga',
+    role: 'Propietaria, Cafetería El Trigal',
     text: 'La matriz de alérgenos me salvó. Tenía una clienta celíaca y no tenía los alérgenos documentados correctamente. Ahora cada plato de la carta tiene su ficha con los 14 alérgenos marcados.',
     avatar: avatar6,
   },
   {
     name: 'Roberto Salazar',
     role: 'Propietario, Trattoria Don Roberto',
-    text: 'Me llegó una inspección sorpresa y gracias al pack tenía todos los registros de los últimos 6 meses impecables. El inspector me dijo que evité una sanción de más de €3.000.',
+    text: 'Me llegó una inspección sorpresa y gracias al pack tenía todos los registros de los últimos 6 meses impecables. El inspector me dijo que me había ahorrado un buen susto.',
     avatar: avatar7,
   },
   {
@@ -66,8 +66,8 @@ export const appccTestimonials = [
   },
   {
     name: 'Ignacio Vargas',
-    role: 'Director de Compras, Hotel Gran Vía Palace',
-    text: 'Los registros de temperatura en recepción de mercancías nos permiten rechazar producto fuera de rango con datos reales. Hemos reducido las incidencias con proveedores un 60% desde que lo usamos.',
+    role: 'Director de Compras, Hotel Costa Sereno',
+    text: 'Los registros de temperatura en recepción de mercancías nos permiten rechazar producto fuera de rango con datos reales. Desde que lo usamos, las incidencias con proveedores han bajado mucho.',
     avatar: avatar1,
   },
 ];

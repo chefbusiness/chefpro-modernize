@@ -49,7 +49,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP et sécurité alimentaire",
-        "description": "Pack APPCC avec 17 modèles prêts pour l'inspection, enregistrements depuis mobile et exportation en PDF."
+        "description": "Pack APPCC avec 19 registres prêts pour l'inspection, enregistrements depuis mobile et feuilles prêtes à imprimer en A4."
       },
       {
         "icon": "Users",
@@ -281,7 +281,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC et traçabilité",
-        "description": "Pack APPCC avec 17 registres, alertes de température depuis le mobile et export prêt pour l'inspection."
+        "description": "Pack APPCC avec 19 registres, alertes de température depuis le mobile et feuilles prêtes pour l'inspection."
       },
       {
         "icon": "BarChart3",
@@ -986,7 +986,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC et traçabilité",
-        "description": "Pack APPCC avec 17 modèles : températures, pertes, allergènes et traçabilité depuis le mobile de l'équipe."
+        "description": "Pack APPCC avec 19 registres : températures, pertes, allergènes et traçabilité depuis le mobile de l'équipe."
       },
       {
         "icon": "Beaker",
@@ -1208,7 +1208,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP depuis le mobile",
-        "description": "Pack APPCC avec registres, alertes de température et exportation en PDF. L'équipe enregistre depuis le mobile sans paperasse."
+        "description": "Pack APPCC avec registres, alertes de température et feuilles prêtes à imprimer en A4. L'équipe enregistre depuis le mobile sans paperasse."
       },
       {
         "icon": "Calculator",
@@ -4402,7 +4402,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP et traçabilité",
-        "description": "Pack APPCC avec 17 modèles, enregistrements depuis le mobile, alertes et exportation PDF prête pour inspection."
+        "description": "Pack APPCC avec 19 registres, enregistrements depuis le mobile, alertes et feuilles prêtes à imprimer en A4 pour l'inspection."
       },
       {
         "icon": "Users",
@@ -10992,7 +10992,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Pack APPCC avec modèles Excel",
-        "description": "17 modèles Excel téléchargeables : températures, nettoyage, traçabilité, allergènes, nuisibles, huile et eau."
+        "description": "19 registres Excel téléchargeables : températures, nettoyage, traçabilité, allergènes, nuisibles, huile et eau."
       },
       {
         "icon": "Sparkles",
@@ -11037,7 +11037,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Comment mettre en œuvre l'APPCC numérique en 4 étapes",
     "workflow": [
-      "1. Pack APPCC (€14, modèles Excel téléchargeables) — vous téléchargez les 17 modèles professionnels adaptés à votre type de cuisine (pâtisserie, glacerie, restaurant, etc.).",
+      "1. Pack APPCC (€14, modèles Excel téléchargeables) — vous téléchargez les 19 registres professionnels adaptés à votre type de cuisine (pâtisserie, glacerie, restaurant, etc.).",
       "2. ID Allergènes — scanne automatiquement les recettes et modèles de votre carte pour identifier les allergènes par plat. Il l'intègre aux fiches techniques et en salle.",
       "3. Cuisine Créative avec APPCC intégré — chaque nouvelle recette fournit des procédures APPCC (température critique, conservation, allergènes, stockage) intégrées à la fiche technique.",
       "4. Kit de Tareas con APPCC — modèles de service (ouverture, service, fermeture) avec APPCC intégré. L'équipe signe numériquement chaque service depuis mobile."
@@ -11051,7 +11051,7 @@ export const USE_CASES_CONTENT_FR: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Le Pack APPCC + ID Allergènes ont transformé notre sécurité alimentaire. Nous sommes passés de papier imprimé dispersé à 17 modèles numériques avec APPCC intégré par service et allergènes automatiques par recette. L'inspection sanitaire est impeccable et le risque juridique est tombé à zéro.",
+    "testimonialQuote": "Le Pack APPCC + ID Allergènes ont transformé notre sécurité alimentaire. Nous sommes passés de papier imprimé dispersé à 19 registres numériques avec APPCC intégré par service et allergènes automatiques par recette. L'inspection sanitaire est impeccable et le risque juridique est tombé à zéro.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "Directeur F&B, hôtel 5 étoiles avec 4 points de vente",
     "faqTitle": "Questions Fréquentes sur l'APPCC avec l'IA",

@@ -4,10 +4,10 @@ import PaymentBadges from '../ebook/PaymentBadges';
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_APPCC || '#comprar';
 
 const items = [
-  '17 plantillas Excel con fórmulas y alertas automáticas',
+  '12 registros Excel con Estado calculado y semáforo automático + 9 planes, checklists y carteles listos para imprimir',
   'Matriz de los 14 alérgenos obligatorios',
-  'Análisis de Peligros HACCP pre-rellenado con 13 peligros',
-  'Plan de Limpieza completo con 25+ zonas',
+  'Análisis de Peligros HACCP pre-rellenado con 21 peligros',
+  'Plan de Limpieza completo con 32 zonas, dentro y fuera',
   'Guía de los 25 puntos que revisa el inspector',
   'BONUS: Registro de Formación del Personal (€9)',
   'BONUS: Protocolo de Alerta Alimentaria (€7)',
@@ -30,7 +30,7 @@ export default function CtaFinal() {
           No Esperes a que Venga el Inspector
         </h2>
         <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-          17 plantillas profesionales por menos de lo que cuesta una consulta con un asesor de seguridad alimentaria.
+          19 plantillas profesionales por menos de lo que cuesta una consulta con un asesor de seguridad alimentaria.
         </p>
 
         <div className="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">

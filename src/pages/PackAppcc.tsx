@@ -23,15 +23,15 @@ export default function PackAppcc() {
   return (
     <>
       <Helmet>
-        <title>Pack Plantillas APPCC — 17 Registros de Seguridad Alimentaria | AI Chef Pro</title>
-        <meta name="description" content="17 plantillas APPCC profesionales para restaurantes: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP. Obligatorio por ley. Solo €14." />
+        <title>Pack Plantillas APPCC — 19 Registros de Seguridad Alimentaria | AI Chef Pro</title>
+        <meta name="description" content="19 plantillas APPCC profesionales para restaurantes: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP. Obligatorio por ley. Solo €14." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="plantillas APPCC restaurante, registros APPCC hostelería, control temperaturas restaurante, carta alergenos obligatoria, registro limpieza restaurante, inspección sanidad restaurante, HACCP hostelería, trazabilidad restaurante, control plagas restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/pack-appcc" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Pack Plantillas APPCC — 17 Registros de Seguridad Alimentaria" />
-        <meta property="og:description" content="Pasa la inspección de Sanidad con nota. 17 plantillas profesionales con fórmulas y alertas automáticas. Solo €14." />
+        <meta property="og:title" content="Pack Plantillas APPCC — 19 Registros de Seguridad Alimentaria" />
+        <meta property="og:description" content="Pasa la inspección de Sanidad con nota. 19 registros + 2 bonus, con semáforo automático en los de medición. Solo €14." />
         <meta property="og:url" content="https://aichef.pro/pack-appcc" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -44,7 +44,7 @@ export default function PackAppcc() {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Pack Plantillas APPCC — 17 Registros Profesionales" />
+        <meta name="twitter:title" content="Pack Plantillas APPCC — 19 Registros Profesionales" />
         <meta name="twitter:description" content="Plantillas APPCC profesionales: temperaturas, limpieza, alérgenos, HACCP. Obligatorio por ley. Solo €14." />
         <meta name="twitter:image" content="https://aichef.pro/og-pack-appcc.jpg" />
         <meta name="twitter:image:alt" content="Pack de Plantillas APPCC — AI Chef Pro" />
@@ -53,8 +53,8 @@ export default function PackAppcc() {
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "Pack de Plantillas APPCC — 17 Registros de Seguridad Alimentaria",
-          "description": "17 plantillas profesionales de seguridad alimentaria para hostelería: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP, control de plagas. Obligatorio por ley en España.",
+          "name": "Pack de Plantillas APPCC — 19 Registros de Seguridad Alimentaria",
+          "description": "19 plantillas profesionales de seguridad alimentaria para hostelería: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP, control de plagas. Obligatorio por ley en España.",
           "image": "https://aichef.pro/og-pack-appcc.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -100,7 +100,7 @@ export default function PackAppcc() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Necesito conocimientos técnicos para usar las plantillas?", "acceptedAnswer": { "@type": "Answer", "text": "No. Todo viene pre-rellenado con datos reales de hostelería. Solo tienes que personalizar con los datos de tu establecimiento." }},
+            { "@type": "Question", "name": "¿Necesito conocimientos técnicos para usar las plantillas?", "acceptedAnswer": { "@type": "Answer", "text": "No. Los planes, el análisis de peligros y las fichas vienen desarrollados; los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» que te enseñan cómo se rellenan y que borras antes de usarlos." }},
             { "@type": "Question", "name": "¿Estas plantillas sirven para pasar la inspección de Sanidad?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cubren todos los registros que exige la normativa APPCC en España: temperaturas, limpieza, trazabilidad, alérgenos, HACCP, control de plagas, aceite y agua." }},
             { "@type": "Question", "name": "¿Funcionan con Google Sheets?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Puedes importar los archivos .xlsx directamente a Google Sheets y todas las fórmulas se mantienen. También son compatibles con LibreOffice Calc y Apple Numbers." }},
             { "@type": "Question", "name": "¿Puedo personalizar las plantillas para mi restaurante?", "acceptedAnswer": { "@type": "Answer", "text": "Totalmente. Puedes añadir zonas de limpieza, equipos de frío, platos a la matriz de alérgenos, peligros al análisis HACCP. Las celdas editables están marcadas en verde." }},

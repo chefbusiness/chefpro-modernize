@@ -608,9 +608,31 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'pack-appcc': {
-    version: '1.1',
+    version: '2.0',
     updated: '2026-08-22',
     entries: [
+      {
+        version: '2.0',
+        date: '2026-08-22',
+        title: 'De 15 a 19 registros (21 ficheros con los 2 bonos) + normativa vigente actualizada',
+        changes: [
+          '4 registros nuevos: Cocción y Regeneración, Enfriamiento y Descongelación, Congelación Anisakis y Verificación de Termómetros — cerraban los PCC que el análisis de peligros ya citaba y no tenían ficha detrás.',
+          'Semáforo de color (verde/ámbar/rojo) en todas las columnas de estado, en los 19 registros.',
+          'Análisis de Peligros ampliado a 21 peligros en 7 fases del proceso, con nivel de riesgo calculado automáticamente y descongelación, huevo fresco, Anisakis, plagas, agua de consumo y aceite de fritura incorporados: ya no hay ningún registro del pack sin su peligro analizado detrás.',
+          'Nivel de gravedad de las sanciones actualizado a la Ley 17/2011 (Leve / Grave / Muy grave), sustituyendo la escala anterior.',
+          'Aceite de fritura y agua potable: referencias normativas actualizadas (Orden de 26 de enero de 1989 y RD 3/2023).',
+          'Comidas preparadas: las citas al RD 3484/2000 pasan al RD 1021/2022, que lo derogó. Los 75 °C de cocción y regeneración y el 60 → 10 °C en 2 horas se presentan ya como el límite crítico que fija tu propio APPCC, que es justo lo que exige la norma nueva.',
+          'Recepción: la carne picada (máx. 2 °C) y los preparados de carne (máx. 4 °C) se separan en dos familias, igual que hace el Reglamento 853/2004, y la caza mayor pasa a 7 °C. Antes el registro rechazaba entregas perfectamente legales.',
+          'Registro de cocción: en regeneración el veredicto mira también el tiempo. Más de una hora en llegar a los 75 °C es REPETIR aunque los alcance.',
+          'Verificación de termómetros: casilla de altitud en la cabecera. Con el método de la ebullición, la referencia se corrige sola (en Madrid el agua hierve a 97,8 °C, no a 100), así que una sonda buena deja de salir NO APTA.',
+          'Cartel de alérgenos: el protocolo de reacción se reordena por urgencia. Primero el 112 y la adrenalina; guardar el plato y la etiqueta, después.',
+          'Higiene personal: formación acreditada por la empresa en vez del carné de manipulador, suprimido desde 2010.',
+          'Guía de Inspección con los 25 puntos reales (antes numeraba 25 y traía 23) y resumen automático que distingue incumplimientos muy graves de graves.',
+          'Plan de Limpieza y Desinfección ampliado con el bloque exterior, lavamanos, maquinaria y pestaña de productos químicos; corregida la mezcla de ácido y lejía.',
+          'Registro de trazabilidad con pestaña de salida/uso interno para cerrar el rastreo hasta el plato servido.',
+          'Ejemplos sembrados en cada registro que se entrega vacío, todos marcados «(ejemplo)» para que no se archiven como reales, y pie con la frecuencia de conservación de registros en los 21 ficheros.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',

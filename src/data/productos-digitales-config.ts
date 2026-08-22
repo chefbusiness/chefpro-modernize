@@ -92,10 +92,10 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     accessPath: '/pack-appcc-access',
     emailSubject: 'Tu acceso al Pack de Plantillas APPCC',
     emailTitle: '¡Gracias por tu compra!',
-    emailBodyPostPurchase: 'Tu acceso al <strong>Pack de Plantillas APPCC</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Pack de Plantillas APPCC</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
     emailTitleResend: 'Accede a tu Pack de Plantillas APPCC',
-    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     files: {
       'temp-diario': '/dl/pack-appcc/01-registro-temperaturas-diario.xlsx',
       'temp-recepcion': '/dl/pack-appcc/02-registro-temperaturas-recepcion.xlsx',
@@ -112,6 +112,14 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'higiene': '/dl/pack-appcc/13-checklist-higiene-personal.xlsx',
       'fichas-alergenos': '/dl/pack-appcc/14-fichas-14-alergenos.xlsx',
       'guia-inspeccion': '/dl/pack-appcc/15-guia-inspeccion-sanidad.xlsx',
+      // COM-R2-02: faltaban las 4 claves de los registros nuevos, que
+      // get-download-urls.ts sí tenía. La cabecera de este fichero declara ser
+      // la «single source of truth», así que eran dos fuentes divergentes en
+      // la ruta del dinero.
+      'coccion': '/dl/pack-appcc/16-registro-coccion-regeneracion.xlsx',
+      'enfriamiento': '/dl/pack-appcc/17-registro-enfriamiento-descongelacion.xlsx',
+      'anisakis': '/dl/pack-appcc/18-registro-congelacion-anisakis.xlsx',
+      'termometros': '/dl/pack-appcc/19-verificacion-termometros.xlsx',
       'bonus-formacion': '/dl/pack-appcc/BONUS-01-registro-formacion.xlsx',
       'bonus-protocolo': '/dl/pack-appcc/BONUS-02-protocolo-alerta-alimentaria.xlsx',
     },

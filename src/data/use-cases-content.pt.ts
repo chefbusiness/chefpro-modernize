@@ -49,7 +49,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC e segurança alimentar",
-        "description": "Pack APPCC com 17 modelos prontos para inspeção, registos desde o telemóvel e exportação em PDF."
+        "description": "Pack APPCC com 19 registos prontos para inspeção, registos desde o telemóvel e folhas prontas a imprimir em A4."
       },
       {
         "icon": "Users",
@@ -281,7 +281,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC e rastreabilidade",
-        "description": "Pack APPCC com 17 registos, alertas de temperatura a partir do telemóvel e exportação pronta para inspeção."
+        "description": "Pack APPCC com 19 registos, alertas de temperatura a partir do telemóvel e folhas prontas para inspeção."
       },
       {
         "icon": "BarChart3",
@@ -986,7 +986,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC e rastreabilidade",
-        "description": "Pack APPCC com 17 modelos: temperaturas, quebras, alergénios e rastreabilidade a partir do telemóvel da equipa."
+        "description": "Pack APPCC com 19 registos: temperaturas, quebras, alergénios e rastreabilidade a partir do telemóvel da equipa."
       },
       {
         "icon": "Beaker",
@@ -4402,7 +4402,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "APPCC e rastreabilidade",
-        "description": "Pack APPCC com 17 modelos, registos a partir do telemóvel, alertas e exportação para PDF pronta para inspeção."
+        "description": "Pack APPCC com 19 registos, registos a partir do telemóvel, alertas e folhas prontas a imprimir em A4 para a inspeção."
       },
       {
         "icon": "Users",
@@ -10992,7 +10992,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "Pack APPCC com modelos Excel",
-        "description": "17 modelos Excel descarregáveis: temperaturas, limpeza, rastreabilidade, alergénios, pragas, óleo e água."
+        "description": "19 registos Excel descarregáveis: temperaturas, limpeza, rastreabilidade, alergénios, pragas, óleo e água."
       },
       {
         "icon": "Sparkles",
@@ -11037,7 +11037,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
     ],
     "workflowTitle": "Como Implementar APPCC Digital em 4 Passos",
     "workflow": [
-      "1. Pack APPCC (€14, modelos Excel descarregáveis) — descarrega os 17 modelos profissionais adaptados ao seu tipo de cozinha (pastelaria, gelataria, restaurante, etc.).",
+      "1. Pack APPCC (€14, modelos Excel descarregáveis) — descarrega os 19 registos profissionais adaptados ao seu tipo de cozinha (pastelaria, gelataria, restaurante, etc.).",
       "2. ID Alergénios — analisa automaticamente as receitas e modelos do seu menu para identificar alergénios por prato. Integra-o nas fichas técnicas e na sala.",
       "3. Culinária Criativa com APPCC integrado — cada receita nova entrega procedimentos APPCC (temperatura crítica, conservação, alergénios, armazenamento) integrados na ficha técnica.",
       "4. Kit de Tareas con APPCC — modelos de turno (abertura, serviço, fecho) com APPCC integrado. A equipa assina digitalmente cada turno a partir do telemóvel."
@@ -11051,7 +11051,7 @@ export const USE_CASES_CONTENT_PT: Record<string, UseCaseContent> = {
       "kit-inventario",
       "kit-gestion-personal"
     ],
-    "testimonialQuote": "Pack APPCC + ID Alergénios transformaram a nossa segurança alimentar. Passámos de papel impresso disperso para 17 modelos digitais com APPCC integrado por turno e alergénios automáticos por receita. A inspeção sanitária sai impecável e o risco legal caiu para zero.",
+    "testimonialQuote": "Pack APPCC + ID Alergénios transformaram a nossa segurança alimentar. Passámos de papel impresso disperso para 19 registos digitais com APPCC integrado por turno e alergénios automáticos por receita. A inspeção sanitária sai impecável e o risco legal caiu para zero.",
     "testimonialAuthor": "Roberto Castaño",
     "testimonialRole": "Diretor de F&B, hotel 5 estrelas com 4 outlets",
     "faqTitle": "Perguntas Frequentes sobre APPCC com IA",

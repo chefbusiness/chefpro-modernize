@@ -5,17 +5,17 @@ const reasons = [
   {
     icon: ShieldAlert,
     title: 'Obligatorio por Ley',
-    desc: 'El sistema APPCC es obligatorio para todos los establecimientos de hostelería en España. Sin estos registros, te expones a sanciones de hasta €60.000 y cierre cautelar.',
+    desc: 'El sistema APPCC es obligatorio para todos los establecimientos de hostelería en España. Sin estos registros, te expones a sanciones de 5.001 a 20.000 € en las graves y hasta 600.000 € en las muy graves (Ley 17/2011).',
   },
   {
     icon: ClipboardCheck,
     title: 'Listo para Usar',
-    desc: 'No empieces de cero. Cada plantilla viene pre-rellenada con datos reales de hostelería: zonas de limpieza, peligros HACCP, rangos de temperatura, los 14 alérgenos.',
+    desc: 'No empieces de cero. Los planes, el análisis de peligros, las fichas de alérgenos y la guía de inspección llegan desarrollados y listos para adaptar (32 zonas de limpieza, 21 peligros HACCP, límites de temperatura por familia, los 14 alérgenos); los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» que enseñan cómo se rellenan y se borran en un segundo.',
   },
   {
     icon: Calculator,
     title: 'Fórmulas y Alertas Automáticas',
-    desc: 'Las plantillas de temperatura cambian automáticamente entre OK y ALERTA. El control de aceite marca CAMBIAR cuando supera el 25% de compuestos polares.',
+    desc: 'Las plantillas de temperatura cambian automáticamente entre OK y ALERTA. El control de aceite marca VIGILAR a partir del 20 % de compuestos polares y CAMBIAR al llegar al 25 % —el límite legal— o si la fritura ha pasado de 180 °C.',
   },
   {
     icon: RefreshCw,
@@ -68,7 +68,7 @@ export default function WhySection() {
                 { label: 'Excel', highlight: true },
                 { label: 'Google Sheets' },
                 { label: 'LibreOffice' },
-                { label: 'PDF imprimible' },
+                { label: 'Listo para imprimir en A4' },
                 { label: 'Apple Numbers' },
               ].map((pill) => (
                 <span

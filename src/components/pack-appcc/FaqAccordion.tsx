@@ -5,7 +5,7 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Necesito conocimientos técnicos para usar las plantillas?',
-    a: 'No. Todo viene pre-rellenado con datos reales de hostelería. Solo tienes que personalizar con los datos de tu establecimiento: nombre de los platos para la matriz de alérgenos, equipos de frío, zonas de limpieza. Las fórmulas y alertas funcionan automáticamente.',
+    a: 'No. Los planes, el análisis de peligros, las fichas de alérgenos y la guía de inspección vienen completos; los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» para que veas cómo se rellenan y las borres antes de empezar. Solo tienes que personalizar con los datos de tu establecimiento: los platos de tu carta para la matriz de alérgenos, tus equipos de frío, tus zonas de limpieza. El Estado y el semáforo de los registros de medición se calculan solos.',
   },
   {
     q: '¿Estas plantillas sirven para pasar la inspección de Sanidad?',

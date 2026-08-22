@@ -8,7 +8,7 @@ const bonuses = [
     title: 'Registro de Formación en Seguridad Alimentaria',
     value: '€9',
     desc: 'Plantilla para registrar toda la formación de tu equipo: manipulador de alimentos, APPCC, alérgenos, primeros auxilios. El inspector puede pedirlo en cualquier momento.',
-    image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg',
+    image: '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
   },
   {
     icon: AlertTriangle,
@@ -16,7 +16,7 @@ const bonuses = [
     title: 'Protocolo de Actuación ante Alerta Alimentaria',
     value: '€7',
     desc: 'Cartel imprimible con los 7 pasos a seguir ante una alerta alimentaria + teléfonos de emergencia. Identificar → Aislar → Notificar → Documentar → Comunicar → Verificar → Registrar.',
-    image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
+    image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
   },
 ];
 
@@ -30,7 +30,7 @@ export default function BonusSection() {
               Bonos <span className="text-[#FFD700]">Exclusivos</span>
             </h2>
             <p className="text-gray-400 text-lg">
-              Además de las 17 plantillas, recibirás estos recursos adicionales — valorados en €16
+              Además de las 19 plantillas, recibirás estos recursos adicionales — valorados en €16
             </p>
           </div>
         </FadeIn>

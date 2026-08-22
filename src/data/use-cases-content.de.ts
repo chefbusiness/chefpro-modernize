@@ -49,7 +49,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP und Lebensmittelsicherheit",
-        "description": "Pack APPCC mit 17 Vorlagen bereit für Inspektionen, mobile Erfassung und PDF-Export."
+        "description": "Pack APPCC mit 19 Vorlagen bereit für Inspektionen, mobile Erfassung und druckfertige A4-Blätter."
       },
       {
         "icon": "Users",
@@ -986,7 +986,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP und Rückverfolgbarkeit",
-        "description": "Pack APPCC mit 17 Vorlagen: Temperaturen, Lebensmittelabfälle, Allergene und Rückverfolgbarkeit über das Handy des Teams."
+        "description": "Pack APPCC mit 19 Vorlagen: Temperaturen, Lebensmittelabfälle, Allergene und Rückverfolgbarkeit über das Handy des Teams."
       },
       {
         "icon": "Beaker",
@@ -4402,7 +4402,7 @@ export const USE_CASES_CONTENT_DE: Record<string, UseCaseContent> = {
       {
         "icon": "ShieldCheck",
         "title": "HACCP und Rückverfolgbarkeit",
-        "description": "Pack APPCC mit 17 Vorlagen, mobilen Erfassungen, Warnmeldungen und PDF-Export, bereit für Inspektionen."
+        "description": "Pack APPCC mit 19 Vorlagen, mobilen Erfassungen, Warnmeldungen und druckfertigen A4-Blättern für die Inspektion."
       },
       {
         "icon": "Users",

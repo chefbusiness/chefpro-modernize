@@ -29,7 +29,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/pack-appcc-access',
     emailSubject: 'Tu acceso al Pack de Plantillas APPCC',
     emailTitle: 'Accede a tu Pack de Plantillas APPCC',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 17 plantillas de seguridad alimentaria:',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 19 registros + 2 bonus de seguridad alimentaria:',
     emailCta: 'Acceder a mis Plantillas APPCC',
   },
   'kit-tareas': {

@@ -16,7 +16,7 @@ const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7, 
 const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_APPCC || '#comprar';
 
 const checkItems = [
-  '17 plantillas con fórmulas y alertas automáticas',
+  '19 registros con alertas automáticas con semáforo en los registros de medición; planes, checklists y carteles listos para imprimir',
   'Matriz de alérgenos con los 14 obligatorios',
   'Análisis de Peligros HACCP pre-rellenado',
   'Guía de los 25 puntos que revisa el inspector',
@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">
-          Obligatorio por ley — evita sanciones de hasta €60.000
+          Obligatorio por ley — las infracciones graves se sancionan con 5.001 a 20.000 € (Ley 17/2011)
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -79,7 +79,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          17 plantillas profesionales de seguridad alimentaria: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.
+          19 plantillas profesionales de seguridad alimentaria: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

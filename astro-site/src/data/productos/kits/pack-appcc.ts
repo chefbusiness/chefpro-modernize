@@ -20,18 +20,18 @@ const data: KitExcelData = {
   stripeEnvKey: 'VITE_STRIPE_PAYMENT_LINK_APPCC',
 
   seo: {
-    title: 'Pack Plantillas APPCC — 17 Registros de Seguridad Alimentaria | AI Chef Pro',
+    title: 'Pack Plantillas APPCC — 19 Registros de Seguridad Alimentaria | AI Chef Pro',
     description:
-      '17 plantillas APPCC profesionales para restaurantes: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP. Obligatorio por ley. Solo €14.',
+      '19 plantillas APPCC profesionales para restaurantes: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP. Obligatorio por ley. Solo €14.',
     keywords:
       'plantillas APPCC restaurante, registros APPCC hostelería, control temperaturas restaurante, carta alergenos obligatoria, registro limpieza restaurante, inspección sanidad restaurante, HACCP hostelería, trazabilidad restaurante, control plagas restaurante, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-pack-appcc.jpg',
   },
 
   schema: {
-    productName: 'Pack de Plantillas APPCC — 17 Registros de Seguridad Alimentaria',
+    productName: 'Pack de Plantillas APPCC — 19 Registros de Seguridad Alimentaria',
     productDescription:
-      '17 plantillas profesionales de seguridad alimentaria para hostelería: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP, control de plagas. Obligatorio por ley en España.',
+      '19 plantillas profesionales de seguridad alimentaria para hostelería: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP, control de plagas. Obligatorio por ley en España.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: {
@@ -61,7 +61,7 @@ const data: KitExcelData = {
     faqs: [
       {
         q: '¿Necesito conocimientos técnicos para usar las plantillas?',
-        a: 'No. Todo viene pre-rellenado con datos reales de hostelería. Solo tienes que personalizar con los datos de tu establecimiento.',
+        a: 'No. Los planes, el análisis de peligros y las fichas vienen desarrollados; los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» que te enseñan cómo se rellenan y que borras antes de usarlos.',
       },
       {
         q: '¿Estas plantillas sirven para pasar la inspección de Sanidad?',
@@ -104,15 +104,15 @@ const data: KitExcelData = {
 
   hero: {
     badgeTone: 'gold',
-    badge: 'Obligatorio por ley — evita sanciones de hasta €60.000',
+    badge: 'Obligatorio por ley — las infracciones graves se sancionan con 5.001 a 20.000 € (Ley 17/2011)',
     titlePre: 'Pack de Plantillas ',
     titleGold: 'APPCC',
     // Forma B: subtítulo en bloque, SIN titlePost
     titleSubtitle: 'Pasa la Inspección de Sanidad con Nota',
     description:
-      '17 plantillas profesionales de seguridad alimentaria: registros de temperatura, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.',
+      '19 registros profesionales de seguridad alimentaria + 2 bonus: temperatura, cocción, enfriamiento, anisakis, limpieza, trazabilidad, alérgenos, HACCP y más. Todo lo que exige la normativa APPCC, listo para usar en tu restaurante.',
     checkItems: [
-      '17 plantillas con fórmulas y alertas automáticas',
+      '19 registros con alertas automáticas con semáforo en los registros de medición; planes, checklists y carteles listos para imprimir',
       'Matriz de alérgenos con los 14 obligatorios',
       'Análisis de Peligros HACCP pre-rellenado',
       'Guía de los 25 puntos que revisa el inspector',
@@ -122,27 +122,31 @@ const data: KitExcelData = {
   },
 
   compatApps: {
-    titleHtml: 'Compatible con <span class="text-[#FFD700]">Excel</span>, Google Sheets y PDF Imprimible',
+    titleHtml: 'Compatible con <span class="text-[#FFD700]">Excel</span>, Google Sheets y LibreOffice',
     subtitleHtml:
-      'Descarga, personaliza e imprime. Compatible con Excel, Google Sheets, LibreOffice y Apple Numbers',
+      'Descarga, personaliza e imprime. Compatible con Excel, Google Sheets, LibreOffice y Apple Numbers: los 21 ficheros son .xlsx y salen listos para imprimir en A4 desde la propia hoja',
   },
 
   grid: {
-    countGold: '17',
+    countGold: '19',
     headingRest: ' Plantillas de Seguridad Alimentaria',
     subtitle:
-      'Cada plantilla incluye fórmulas automáticas, alertas visuales, datos pre-rellenados y formato listo para imprimir.',
-    // fourCols omitido → 9 tarjetas (grid-cols-2 md:grid-cols-3), paridad SPA
+      'Los 12 registros de medición traen Estado calculado y semáforo automático; los planes, checklists y carteles llegan desarrollados y listos para imprimir en A4.',
+    // fourCols omitido → 10 tarjetas (grid-cols-2 md:grid-cols-3), paridad SPA.
+    // La décima (COM-R2-09) nombra los 4 registros nuevos: eran el único motivo
+    // por el que la cifra sube de 17 a 19 y no aparecían en NINGÚN punto de la
+    // página de venta — sólo en el dashboard, es decir, después de pagar.
     templates: [
       { icon: 'Thermometer', title: 'Control de Temperaturas', desc: '2 plantillas: registro diario (cámaras, congeladores, exposición) con alertas automáticas OK/ALERTA + control en recepción de mercancías con límites por tipo de producto. Las celdas cambian cuando la temperatura sale del rango legal.' },
-      { icon: 'SprayCan', title: 'Limpieza y Desinfección', desc: 'Plan maestro L+D con 25+ zonas pre-rellenadas (cocina, sala, baños, almacén) + registro diario por turno con checklist imprimible. Define qué se limpia, cuándo, cómo, con qué producto y quién lo hace.' },
-      { icon: 'Truck', title: 'Recepción y Trazabilidad', desc: 'Checklist de recepción con verificación de temperatura, caducidad, etiquetado y estado del envase + registro de trazabilidad completo con lote, proveedor y destino. Localiza cualquier producto en menos de 4 horas.' },
+      { icon: 'SprayCan', title: 'Limpieza y Desinfección', desc: 'Plan maestro L+D con 32 zonas pre-rellenadas (cocina, sala, baños, almacén, vestuarios y exterior: terraza, contenedores y cámara de residuos) + registro diario por turno con checklist imprimible. Define qué se limpia, cuándo, cómo, con qué producto y quién lo hace.' },
+      { icon: 'Truck', title: 'Recepción y Trazabilidad', desc: 'Checklist de recepción con verificación de temperatura, caducidad, etiquetado y estado del envase + registro de trazabilidad completo con lote, proveedor y destino, más la pestaña de salida y uso interno. Responde de inmediato a la autoridad: de qué proveedor vino cada lote y en qué elaboración y servicio acabó.' },
       { icon: 'AlertTriangle', title: 'Alérgenos', desc: 'Matriz de los 14 alérgenos obligatorios × todos los platos de tu carta con desplegables S/T/N (contiene, trazas, no contiene) + fichas imprimibles de cada alérgeno para cocina y sala. Cumple el Reglamento UE 1169/2011.' },
-      { icon: 'Droplets', title: 'Aceite y Agua', desc: 'Control de aceite de fritura con test de compuestos polares y alertas (OK/VIGILAR/CAMBIAR) + registro de agua potable con niveles de cloro. Cumple RD 2207/1995 y RD 140/2003.' },
-      { icon: 'ClipboardCheck', title: 'HACCP y Acciones Correctivas', desc: 'Análisis de peligros completo pre-rellenado con 13 peligros tipo en 6 fases del proceso (recepción → servicio) + registro de acciones correctivas con causa, medida y verificación.' },
+      { icon: 'Droplets', title: 'Aceite y Agua', desc: 'Control de aceite de fritura con test de compuestos polares y alertas (OK/VIGILAR/CAMBIAR) + registro de agua potable con niveles de cloro. Cumple la Orden de 26 de enero de 1989 y el RD 3/2023.' },
+      { icon: 'ClipboardCheck', title: 'HACCP y Acciones Correctivas', desc: 'Análisis de peligros completo pre-rellenado con 21 peligros tipo en 7 fases del proceso (recepción → servicio), cada uno con su registro del pack detrás + registro de acciones correctivas con causa, medida y verificación.' },
       { icon: 'Bug', title: 'Control de Plagas', desc: 'Registro de actuaciones DDD (desinsectación, desratización, desinfección) con tipo, empresa, productos, zonas y certificados. Calendario de revisiones y espacio para plano de cebos.' },
-      { icon: 'ShieldCheck', title: 'Guía de Inspección', desc: 'Los 25 puntos que revisa el inspector de Sanidad con nivel de gravedad (GRAVE/MODERADA/LEVE). Autoevalúa tu establecimiento antes de la inspección. Incluye resumen automático de cumplimiento.' },
+      { icon: 'ShieldCheck', title: 'Guía de Inspección', desc: 'Los 25 puntos que revisa el inspector de Sanidad con nivel de gravedad (Leve / Grave / Muy grave, Ley 17/2011). Autoevalúa tu establecimiento antes de la inspección. Incluye resumen automático de cumplimiento.' },
       { icon: 'GraduationCap', title: 'Higiene y Formación', desc: 'Checklist de higiene personal imprimible para vestuario + registro de formación del personal en seguridad alimentaria. Normas de indumentaria, lavado de manos, conducta y certificaciones.' },
+      { icon: 'Flame', title: 'Cocción, Enfriamiento y Anisakis', desc: '4 registros nuevos que cierran los PCC que el análisis de peligros ya citaba y no tenían ficha detrás: temperatura en el centro del producto (≥75 °C y, en regeneración, en menos de una hora), enfriamiento de 60 a 10 °C en 2 horas, congelación preventiva de anisakis (−20 °C durante 24 h o −35 °C durante 15 h) y verificación mensual de termómetros y sondas.' },
     ],
   },
 
@@ -153,9 +157,9 @@ const data: KitExcelData = {
     subtitle:
       'No son plantillas genéricas. Son registros diseñados por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
-      { icon: 'ShieldAlert', title: 'Obligatorio por Ley', desc: 'El sistema APPCC es obligatorio para todos los establecimientos de hostelería en España. Sin estos registros, te expones a sanciones de hasta €60.000 y cierre cautelar.' },
-      { icon: 'ClipboardCheck', title: 'Listo para Usar', desc: 'No empieces de cero. Cada plantilla viene pre-rellenada con datos reales de hostelería: zonas de limpieza, peligros HACCP, rangos de temperatura, los 14 alérgenos.' },
-      { icon: 'Calculator', title: 'Fórmulas y Alertas Automáticas', desc: 'Las plantillas de temperatura cambian automáticamente entre OK y ALERTA. El control de aceite marca CAMBIAR cuando supera el 25% de compuestos polares.' },
+      { icon: 'ShieldAlert', title: 'Obligatorio por Ley', desc: 'El sistema APPCC es obligatorio para todos los establecimientos de hostelería en España. Sin estos registros, te expones a sanciones de 5.001 a 20.000 € en las graves y hasta 600.000 € en las muy graves (Ley 17/2011).' },
+      { icon: 'ClipboardCheck', title: 'Listo para Usar', desc: 'No empieces de cero. Los planes, el análisis de peligros, las fichas de alérgenos y la guía de inspección llegan desarrollados y listos para adaptar (32 zonas de limpieza, 21 peligros HACCP, límites de temperatura por familia, los 14 alérgenos); los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» que enseñan cómo se rellenan y se borran en un segundo.' },
+      { icon: 'Calculator', title: 'Fórmulas y Alertas Automáticas', desc: 'Las plantillas de temperatura cambian automáticamente entre OK y ALERTA. El control de aceite marca VIGILAR a partir del 20 % de compuestos polares y CAMBIAR al llegar al 25 % —el límite legal— o si la fritura ha pasado de 180 °C.' },
       { icon: 'RefreshCw', title: 'Paga Una Vez, Tuyo Para Siempre', desc: 'Sin suscripciones. Acceso permanente al dashboard con todas las plantillas. Actualizaciones incluidas si cambia la normativa.' },
     ],
     compatLabel: 'Compatible con cualquier software de hojas de cálculo:',
@@ -163,7 +167,7 @@ const data: KitExcelData = {
       { label: 'Excel', highlight: true },
       { label: 'Google Sheets' },
       { label: 'LibreOffice' },
-      { label: 'PDF imprimible' },
+      { label: 'Listo para imprimir en A4' },
       { label: 'Apple Numbers' },
     ],
   },
@@ -176,7 +180,7 @@ const data: KitExcelData = {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
     subtitle:
-      'Además de las 17 plantillas, recibirás estos recursos adicionales — valorados en €16',
+      'Además de las 19 plantillas, recibirás estos recursos adicionales — valorados en €16',
     items: [
       {
         icon: 'GraduationCap',
@@ -184,7 +188,7 @@ const data: KitExcelData = {
         title: 'Registro de Formación en Seguridad Alimentaria',
         value: '€9',
         desc: 'Plantilla para registrar toda la formación de tu equipo: manipulador de alimentos, APPCC, alérgenos, primeros auxilios. El inspector puede pedirlo en cualquier momento.',
-        image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg',
+        image: '/lovable-uploads/ai-gallery/appcc-registro-plantilla.jpeg',
       },
       {
         icon: 'AlertTriangle',
@@ -192,7 +196,7 @@ const data: KitExcelData = {
         title: 'Protocolo de Actuación ante Alerta Alimentaria',
         value: '€7',
         desc: 'Cartel imprimible con los 7 pasos a seguir ante una alerta alimentaria + teléfonos de emergencia. Identificar → Aislar → Notificar → Documentar → Comunicar → Verificar → Registrar.',
-        image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg',
+        image: '/lovable-uploads/ai-gallery/appcc-inspector-sanidad.jpeg',
       },
     ],
   },
@@ -216,7 +220,7 @@ const data: KitExcelData = {
   faqs: [
     {
       q: '¿Necesito conocimientos técnicos para usar las plantillas?',
-      a: 'No. Todo viene pre-rellenado con datos reales de hostelería. Solo tienes que personalizar con los datos de tu establecimiento: nombre de los platos para la matriz de alérgenos, equipos de frío, zonas de limpieza. Las fórmulas y alertas funcionan automáticamente.',
+      a: 'No. Los planes, el análisis de peligros, las fichas de alérgenos y la guía de inspección vienen completos; los registros traen 2-3 filas de ejemplo marcadas «(ejemplo)» para que veas cómo se rellenan y las borres antes de empezar. Solo tienes que personalizar con los datos de tu establecimiento: los platos de tu carta para la matriz de alérgenos, tus equipos de frío, tus zonas de limpieza. El Estado y el semáforo de los registros de medición se calculan solos.',
     },
     {
       q: '¿Estas plantillas sirven para pasar la inspección de Sanidad?',
@@ -243,12 +247,12 @@ const data: KitExcelData = {
   cta: {
     heading: 'No Esperes a que Venga el Inspector',
     subtitle:
-      '17 plantillas profesionales por menos de lo que cuesta una consulta con un asesor de seguridad alimentaria.',
+      '19 plantillas profesionales por menos de lo que cuesta una consulta con un asesor de seguridad alimentaria.',
     items: [
-      '17 plantillas Excel con fórmulas y alertas automáticas',
+      '12 registros Excel con Estado calculado y semáforo automático + 9 planes, checklists y carteles listos para imprimir',
       'Matriz de los 14 alérgenos obligatorios',
-      'Análisis de Peligros HACCP pre-rellenado con 13 peligros',
-      'Plan de Limpieza completo con 25+ zonas',
+      'Análisis de Peligros HACCP pre-rellenado con 21 peligros',
+      'Plan de Limpieza completo con 32 zonas, dentro y fuera',
       'Guía de los 25 puntos que revisa el inspector',
       'BONUS: Registro de Formación del Personal (€9)',
       'BONUS: Protocolo de Alerta Alimentaria (€7)',
@@ -266,11 +270,11 @@ const data: KitExcelData = {
       { name: 'Marcos Ibáñez', role: 'Dueño, Bar Txoko', text: 'La inspección de Sanidad me quitaba el sueño. Desde que uso las plantillas tengo todo al día: temperaturas, limpieza, trazabilidad. Ahora cuando viene el inspector, le abro la carpeta tranquilo.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Patricia Roldán', role: 'Consultora de Seguridad Alimentaria', text: 'Uso este pack con todos mis clientes de consultoría. Me ahorra horas de trabajo porque las plantillas ya tienen los campos correctos. Solo personalizo el nombre del establecimiento y listo.', avatar: '/avatars/avatar-4.jpg' },
       { name: 'Javier Esteban', role: 'Director, Catering Eventos del Sur', text: 'En catering, la documentación HACCP es obligatoria para cada evento. Con el registro de trazabilidad y las fichas de alérgenos, genero toda la documentación en 15 minutos por servicio.', avatar: '/avatars/avatar-5.jpg' },
-      { name: 'Ana Belén Torres', role: 'Propietaria, Cafetería Miga', text: 'La matriz de alérgenos me salvó. Tenía una clienta celíaca y no tenía los alérgenos documentados correctamente. Ahora cada plato de la carta tiene su ficha con los 14 alérgenos marcados.', avatar: '/avatars/avatar-6.jpg' },
-      { name: 'Roberto Salazar', role: 'Propietario, Trattoria Don Roberto', text: 'Me llegó una inspección sorpresa y gracias al pack tenía todos los registros de los últimos 6 meses impecables. El inspector me dijo que evité una sanción de más de €3.000.', avatar: '/avatars/avatar-7.jpg' },
+      { name: 'Ana Belén Torres', role: 'Propietaria, Cafetería El Trigal', text: 'La matriz de alérgenos me salvó. Tenía una clienta celíaca y no tenía los alérgenos documentados correctamente. Ahora cada plato de la carta tiene su ficha con los 14 alérgenos marcados.', avatar: '/avatars/avatar-6.jpg' },
+      { name: 'Roberto Salazar', role: 'Propietario, Trattoria Don Roberto', text: 'Me llegó una inspección sorpresa y gracias al pack tenía todos los registros de los últimos 6 meses impecables. El inspector me dijo que me había ahorrado un buen susto.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Miguel Ángel Prieto', role: 'Jefe de Cocina, Hotel Montaña', text: 'Llevo 20 años en cocina y siempre usé libretas para apuntar temperaturas. Pasar al Excel con alertas automáticas fue un antes y un después. Si la temperatura sube, lo veo en rojo al instante.', avatar: '/avatars/avatar-8.jpg' },
       { name: 'Daniel Ortega', role: 'Consultor Gastronómico', text: 'Recomiendo este pack a todos mis clientes sin excepción. Es la forma más rápida de poner en orden la seguridad alimentaria de cualquier establecimiento. Se lo he recomendado a más de 40 negocios.', avatar: '/avatars/chef-avatar-5.jpg' },
-      { name: 'Ignacio Vargas', role: 'Director de Compras, Hotel Gran Vía Palace', text: 'Los registros de temperatura en recepción de mercancías nos permiten rechazar producto fuera de rango con datos reales. Hemos reducido las incidencias con proveedores un 60% desde que lo usamos.', avatar: '/avatars/avatar-1.jpg' },
+      { name: 'Ignacio Vargas', role: 'Director de Compras, Hotel Costa Sereno', text: 'Los registros de temperatura en recepción de mercancías nos permiten rechazar producto fuera de rango con datos reales. Desde que lo usamos, las incidencias con proveedores han bajado mucho.', avatar: '/avatars/avatar-1.jpg' },
     ],
   },
 
@@ -293,7 +297,7 @@ const data: KitExcelData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'pack-appcc',

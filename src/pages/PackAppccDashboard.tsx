@@ -4,6 +4,7 @@ import {
   Download, Loader2, FileSpreadsheet, ArrowLeft,
   Thermometer, SprayCan, ClipboardCheck, Truck, Bug,
   AlertTriangle, Droplets, ShieldCheck, UserCheck, GraduationCap,
+  Flame, Snowflake, Fish, Gauge,
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
@@ -15,7 +16,7 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 const TEMPLATES = [
   { key: 'temp-diario', icon: Thermometer, title: 'Registro Temperaturas Diario', desc: 'Control 2x/día de cámaras, congeladores y exposición con alertas automáticas.' },
   { key: 'temp-recepcion', icon: Thermometer, title: 'Temperaturas Recepción', desc: 'Control de temperatura en recepción de mercancías con límites por producto.' },
-  { key: 'plan-limpieza', icon: SprayCan, title: 'Plan de Limpieza y Desinfección', desc: 'Plan maestro L+D con 25+ zonas pre-rellenadas y frecuencias.' },
+  { key: 'plan-limpieza', icon: SprayCan, title: 'Plan de Limpieza y Desinfección', desc: 'Plan maestro L+D con 32 zonas pre-rellenadas y frecuencias, dentro y fuera del local.' },
   { key: 'registro-limpieza', icon: SprayCan, title: 'Registro Limpieza Diaria', desc: 'Checklist diario por turno con verificación y firma.' },
   { key: 'recepcion', icon: ClipboardCheck, title: 'Checklist Recepción Mercancías', desc: 'Verificación de temperatura, caducidad, etiquetado y envase.' },
   { key: 'trazabilidad', icon: Truck, title: 'Registro de Trazabilidad', desc: 'Entrada/salida de productos con lote, proveedor y fechas.' },
@@ -24,10 +25,14 @@ const TEMPLATES = [
   { key: 'aceite', icon: Droplets, title: 'Control Aceite de Fritura', desc: 'Test de compuestos polares con alertas OK/VIGILAR/CAMBIAR.' },
   { key: 'agua', icon: Droplets, title: 'Control de Agua Potable', desc: 'Cloro residual, aspecto y análisis externos.' },
   { key: 'acciones', icon: ClipboardCheck, title: 'Acciones Correctivas', desc: 'Incidencias con causa, medida adoptada y verificación.' },
-  { key: 'haccp', icon: ShieldCheck, title: 'Análisis Peligros HACCP', desc: 'Identificación de peligros en 6 fases con PCC y límites críticos.' },
+  { key: 'haccp', icon: ShieldCheck, title: 'Análisis Peligros HACCP', desc: 'Identificación de peligros en 7 fases con PCC y límites críticos.' },
   { key: 'higiene', icon: UserCheck, title: 'Checklist Higiene Personal', desc: 'Normas de indumentaria, manos y conducta para imprimir.' },
   { key: 'fichas-alergenos', icon: AlertTriangle, title: 'Fichas 14 Alérgenos', desc: 'Fichas imprimibles con descripción y dónde se encuentran.' },
   { key: 'guia-inspeccion', icon: ShieldCheck, title: 'Guía Inspección Sanidad', desc: 'Los 25 puntos que revisa el inspector con autoevaluación.' },
+  { key: 'coccion', icon: Flame, title: 'Cocción y Regeneración', desc: 'Control de temperatura en el centro del producto con alerta OK/REPETIR.' },
+  { key: 'enfriamiento', icon: Snowflake, title: 'Enfriamiento y Descongelación', desc: 'Enfriamiento en la zona de peligro (60→10 °C) y descongelación en cámara.' },
+  { key: 'anisakis', icon: Fish, title: 'Congelación Anisakis', desc: 'Registro del PCC de congelación preventiva (−20 °C 24h o −35 °C 15h).' },
+  { key: 'termometros', icon: Gauge, title: 'Verificación de Termómetros', desc: 'Comprobación mensual de sondas con hielo fundente o ebullición.' },
   { key: 'bonus-formacion', icon: GraduationCap, title: 'BONUS: Registro Formación', desc: 'Formación del personal en seguridad alimentaria.' },
   { key: 'bonus-protocolo', icon: AlertTriangle, title: 'BONUS: Protocolo Alerta', desc: 'Cartel imprimible con los 7 pasos ante alerta alimentaria.' },
 ];
@@ -86,7 +91,7 @@ export default function PackAppccDashboard() {
             <ProductVersionBadge productId="pack-appcc" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 17 plantillas de seguridad alimentaria listas para descargar.
+            Tus 19 registros de seguridad alimentaria listos para descargar.
             Acceso de por vida — incluye futuras actualizaciones.
           </p>
         </section>
@@ -95,7 +100,7 @@ export default function PackAppccDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              15 Plantillas + 2 Bonus · Descarga Directa
+              19 Registros + 2 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -151,7 +156,7 @@ export default function PackAppccDashboard() {
             {/* ── Compatibility banner ────────────────────────── */}
             <div className="mt-8 bg-white/5 border border-white/10 rounded-xl p-6 text-center">
               <p className="text-white font-semibold mb-1">
-                Compatibles con Excel, Google Sheets, LibreOffice, Numbers + PDF imprimible
+                Compatibles con Excel, Google Sheets, LibreOffice y Numbers · listos para imprimir en A4 desde la propia hoja
               </p>
               <p className="text-gray-400 text-sm">
                 Descarga los archivos .xlsx y ábrelos con tu programa favorito. Todas las fórmulas se mantienen.

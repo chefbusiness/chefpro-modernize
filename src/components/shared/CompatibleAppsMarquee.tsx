@@ -52,7 +52,7 @@ export default function CompatibleAppsMarquee({ variant = 'ebook' }: CompatibleA
   const title = variant === 'tareas'
     ? <>Imprime, Delega y <span className="text-[#FFD700]">Controla</span></>
     : variant === 'appcc'
-    ? <>Compatible con <span className="text-[#FFD700]">Excel</span>, Google Sheets y PDF Imprimible</>
+    ? <>Compatible con <span className="text-[#FFD700]">Excel</span>, Google Sheets y LibreOffice</>
     : variant === 'kit'
     ? <>Compatible con las <span className="text-[#FFD700]">Herramientas</span> que Ya Usas</>
     : <>Funciona con las <span className="text-[#FFD700]">Apps</span> que Usas a Diario</>;
@@ -60,7 +60,7 @@ export default function CompatibleAppsMarquee({ variant = 'ebook' }: CompatibleA
   const subtitle = variant === 'tareas'
     ? <>Plantillas Excel optimizadas para imprimir en A4. Compatible con Excel, Google Sheets, LibreOffice y Numbers</>
     : variant === 'appcc'
-    ? <>Descarga, personaliza e imprime. Compatible con Excel, Google Sheets, LibreOffice y Apple Numbers</>
+    ? <>Descarga, personaliza e imprime. Compatible con Excel, Google Sheets, LibreOffice y Apple Numbers: los 21 ficheros son .xlsx y salen listos para imprimir en A4 desde la propia hoja</>
     : variant === 'kit'
     ? <>Funciona mejor con <a href="https://aichef.pro" className="text-[#FFD700] hover:underline">AI Chef Pro</a>. Compatible con Excel, Google Sheets, PDF y más</>
     : <>Funciona mejor con <a href="https://aichef.pro" className="text-[#FFD700] hover:underline">AI Chef Pro</a>. Compatible con ChatGPT, Claude, Gemini, Perplexity, Excel, Google Sheets y más</>;
