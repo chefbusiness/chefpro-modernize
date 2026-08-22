@@ -4,7 +4,6 @@ export const meta = {
   phases: [
     { title: 'Inventario', detail: 'sonnet: censo determinista del producto + landing/dashboard/functions', model: 'sonnet' },
     { title: 'Ronda 1', detail: '3 lentes opus en paralelo, cada una devuelve JSON de hallazgos (con schema)', model: 'opus' },
-    { title: 'Persistir', detail: 'haiku: escribe auditorias/<pid>-R1.json', model: 'haiku' },
   ],
 }
 
@@ -78,9 +77,6 @@ const [dom, tec, com] = res
 const total = res.filter(Boolean).reduce((n, r) => n + r.hallazgos.length, 0)
 log(`R1 ${pid}: ${total} hallazgos (dominio ${dom ? dom.hallazgos.length : '-'}, excel ${tec ? tec.hallazgos.length : '-'}, coherencia ${com ? com.hallazgos.length : '-'})`)
 
-phase('Persistir')
-const payload = { productId: pid, familia, fecha: '2026-08-22', inventario: inv, rondas: { R1: { dominio: dom, excel: tec, coherencia: com } } }
-const PERSIST_SCHEMA = { type: 'object', properties: { ok: { type: 'boolean' }, path: { type: 'string' }, bytes: { type: 'integer' } }, required: ['ok', 'path'] }
-const persist = await agent(`Escribe el fichero ${OUT} (crea la carpeta si no existe) con este JSON exacto, formateado con indent=1 y ensure_ascii=False, sin modificar su contenido (usa python: json.dump). No hagas commit. Contenido: ${JSON.stringify(payload)}`,
-  { label: `persistir:${pid}`, phase: 'Persistir', model: 'haiku', effort: 'low', schema: PERSIST_SCHEMA })
-return { productId: pid, out: OUT, persist, total, veredictos: res.map((r) => (r ? { lente: r.lente, veredicto: r.veredicto, n: r.hallazgos.length, altas: r.hallazgos.filter((h) => h.severidad === 'alta').length } : null)) }
+// Persistencia: NO con un agente (haiku truncaba el JSON). Tras el workflow:
+//   python3 scripts/productos-digitales/r1-desde-journal.py <journal.jsonl> <pid> <familia>
+return { productId: pid, out: OUT, total, veredictos: res.map((r) => (r ? { lente: r.lente, veredicto: r.veredicto, n: r.hallazgos.length, altas: r.hallazgos.filter((h) => h.severidad === 'alta').length } : null)) }

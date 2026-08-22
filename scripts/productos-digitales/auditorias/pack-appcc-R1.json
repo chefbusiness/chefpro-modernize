@@ -1,0 +1,1170 @@
+{
+ "productId": "pack-appcc",
+ "familia": "kit-excel",
+ "inventario": {
+  "productId": "pack-appcc",
+  "ficheros": [
+   {
+    "nombre": "01-registro-temperaturas-diario.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9765,
+    "hojas": [
+     "Instrucciones",
+     "Registro Semanal"
+    ],
+    "formulas": 84,
+    "resumen": "Registro semanal de temperaturas de cámaras/congeladores con fórmula IF por celda que marca OK/ALERTA según rango legal (0-4°C). Correcto."
+   },
+   {
+    "nombre": "02-registro-temperaturas-recepcion.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8620,
+    "hojas": [
+     "Instrucciones",
+     "Recepción Temperaturas"
+    ],
+    "formulas": 30,
+    "resumen": "Control de temperatura al recibir mercancía, compara contra límite máx. por fila y marca OK/RECHAZAR. Correcto."
+   },
+   {
+    "nombre": "03-plan-limpieza-desinfeccion.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9512,
+    "hojas": [
+     "Instrucciones",
+     "Plan Maestro L+D"
+    ],
+    "formulas": 0,
+    "resumen": "Plan de limpieza por zonas (cocina, sala, baños, almacén, vestuarios) con frecuencia/producto/método/responsable. Solo 18 zonas reales, no las '25+' que promete la landing/dashboard."
+   },
+   {
+    "nombre": "04-registro-limpieza-diaria.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7800,
+    "hojas": [
+     "Instrucciones",
+     "Limpieza Diaria"
+    ],
+    "formulas": 0,
+    "resumen": "Checklist de limpieza diaria por turno para firmar; sin lógica automática, correcto para un checklist manual."
+   },
+   {
+    "nombre": "05-checklist-recepcion-mercancias.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8326,
+    "hojas": [
+     "Instrucciones",
+     "Recepción Mercancías"
+    ],
+    "formulas": 0,
+    "resumen": "Checklist manual de verificación de temperatura/caducidad/etiquetado/envase en recepción."
+   },
+   {
+    "nombre": "06-registro-trazabilidad.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7972,
+    "hojas": [
+     "Instrucciones",
+     "Trazabilidad"
+    ],
+    "formulas": 0,
+    "resumen": "Registro manual de lote, proveedor, entrada/salida y destino de cada producto."
+   },
+   {
+    "nombre": "07-control-plagas-ddd.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7799,
+    "hojas": [
+     "Instrucciones",
+     "Control Plagas DDD"
+    ],
+    "formulas": 0,
+    "resumen": "Registro manual de actuaciones DDD (desinsectación/desratización/desinfección) con empresa y certificados."
+   },
+   {
+    "nombre": "08-matriz-alergenos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11480,
+    "hojas": [
+     "Instrucciones",
+     "Matriz Alérgenos"
+    ],
+    "formulas": 14,
+    "resumen": "Matriz de 14 alérgenos × 40 filas de platos con desplegable de validación de datos S/T/N (confirmado, list 'S,T,N') y fila 47 con COUNTIF de conteo por alérgeno. Lógica correcta y coincide con lo prometido."
+   },
+   {
+    "nombre": "09-control-aceite-fritura.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7888,
+    "hojas": [
+     "Instrucciones",
+     "Control Aceite"
+    ],
+    "formulas": 20,
+    "resumen": "Test de compuestos polares con IF anidado que marca OK/VIGILAR/CAMBIAR según %CP (>20 vigilar, >25 cambiar). Correcto y coincide con la promesa."
+   },
+   {
+    "nombre": "10-control-agua-potable.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7718,
+    "hojas": [
+     "Instrucciones",
+     "Control Agua"
+    ],
+    "formulas": 15,
+    "resumen": "Control de cloro residual con IF que exige rango 0.2-1.0 mg/L y aspecto 'Normal' para marcar OK. Correcto."
+   },
+   {
+    "nombre": "11-registro-acciones-correctivas.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8154,
+    "hojas": [
+     "Instrucciones",
+     "Acciones Correctivas"
+    ],
+    "formulas": 0,
+    "resumen": "Registro manual de incidencias con causa, medida adoptada y verificación."
+   },
+   {
+    "nombre": "12-analisis-peligros-haccp.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9334,
+    "hojas": [
+     "Instrucciones",
+     "Análisis Peligros"
+    ],
+    "formulas": 0,
+    "resumen": "13 peligros pre-rellenados (coincide con la promesa de '13 peligros'), pero repartidos en 7 fases del proceso (RECEPCIÓN, ALMACENAMIENTO, PREPARACIÓN, COCCIÓN, MANTENIMIENTO CALIENTE, ENFRIAMIENTO, SERVICIO), no en '6 fases' como dicen landing y dashboard."
+   },
+   {
+    "nombre": "13-checklist-higiene-personal.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7541,
+    "hojas": [
+     "Instrucciones",
+     "Higiene Personal"
+    ],
+    "formulas": 0,
+    "resumen": "Checklist imprimible de normas de indumentaria, manos y conducta."
+   },
+   {
+    "nombre": "14-fichas-14-alergenos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8306,
+    "hojas": [
+     "Instrucciones",
+     "14 Alérgenos"
+    ],
+    "formulas": 0,
+    "resumen": "Fichas descriptivas de los 14 alérgenos con dónde se encuentran; contenido de referencia, sin lógica."
+   },
+   {
+    "nombre": "15-guia-inspeccion-sanidad.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9205,
+    "hojas": [
+     "Instrucciones",
+     "25 Puntos Inspección"
+    ],
+    "formulas": 3,
+    "resumen": "Autoevaluación con resumen automático real (3× COUNTIF sobre columna Estado en fila 39-41, confirma la promesa de 'resumen automático de cumplimiento'). Pero el título de la hoja (celda A1: 'Los 25 Puntos que Revisa el Inspector de Sanidad') y la nomenclatura de la hoja prometen 25 puntos y solo hay 23 numerados (1-23, filas 5-37)."
+   },
+   {
+    "nombre": "BONUS-01-registro-formacion.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7639,
+    "hojas": [
+     "Instrucciones",
+     "Formación Personal"
+    ],
+    "formulas": 0,
+    "resumen": "Registro manual de formación del personal en seguridad alimentaria."
+   },
+   {
+    "nombre": "BONUS-02-protocolo-alerta-alimentaria.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7776,
+    "hojas": [
+     "Instrucciones",
+     "Protocolo Alerta"
+    ],
+    "formulas": 0,
+    "resumen": "Cartel imprimible con los 7 pasos ante alerta alimentaria, coincide con la promesa."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "temp-diario",
+    "title": "Registro Temperaturas Diario",
+    "ruta": "src/pages/PackAppccDashboard.tsx:16"
+   },
+   {
+    "key": "temp-recepcion",
+    "title": "Temperaturas Recepción",
+    "ruta": "src/pages/PackAppccDashboard.tsx:17"
+   },
+   {
+    "key": "plan-limpieza",
+    "title": "Plan de Limpieza y Desinfección",
+    "ruta": "src/pages/PackAppccDashboard.tsx:18"
+   },
+   {
+    "key": "registro-limpieza",
+    "title": "Registro Limpieza Diaria",
+    "ruta": "src/pages/PackAppccDashboard.tsx:19"
+   },
+   {
+    "key": "recepcion",
+    "title": "Checklist Recepción Mercancías",
+    "ruta": "src/pages/PackAppccDashboard.tsx:20"
+   },
+   {
+    "key": "trazabilidad",
+    "title": "Registro de Trazabilidad",
+    "ruta": "src/pages/PackAppccDashboard.tsx:21"
+   },
+   {
+    "key": "plagas",
+    "title": "Control de Plagas (DDD)",
+    "ruta": "src/pages/PackAppccDashboard.tsx:22"
+   },
+   {
+    "key": "alergenos",
+    "title": "Matriz de Alérgenos",
+    "ruta": "src/pages/PackAppccDashboard.tsx:23"
+   },
+   {
+    "key": "aceite",
+    "title": "Control Aceite de Fritura",
+    "ruta": "src/pages/PackAppccDashboard.tsx:24"
+   },
+   {
+    "key": "agua",
+    "title": "Control de Agua Potable",
+    "ruta": "src/pages/PackAppccDashboard.tsx:25"
+   },
+   {
+    "key": "acciones",
+    "title": "Acciones Correctivas",
+    "ruta": "src/pages/PackAppccDashboard.tsx:26"
+   },
+   {
+    "key": "haccp",
+    "title": "Análisis Peligros HACCP",
+    "ruta": "src/pages/PackAppccDashboard.tsx:27 — desc dice '6 fases con PCC' pero el fichero real tiene 7 fases"
+   },
+   {
+    "key": "higiene",
+    "title": "Checklist Higiene Personal",
+    "ruta": "src/pages/PackAppccDashboard.tsx:28"
+   },
+   {
+    "key": "fichas-alergenos",
+    "title": "Fichas 14 Alérgenos",
+    "ruta": "src/pages/PackAppccDashboard.tsx:29"
+   },
+   {
+    "key": "guia-inspeccion",
+    "title": "Guía Inspección Sanidad",
+    "ruta": "src/pages/PackAppccDashboard.tsx:30 — desc dice 'los 25 puntos' pero el fichero real solo numera 23"
+   },
+   {
+    "key": "bonus-formacion",
+    "title": "BONUS: Registro Formación",
+    "ruta": "src/pages/PackAppccDashboard.tsx:31"
+   },
+   {
+    "key": "bonus-protocolo",
+    "title": "BONUS: Protocolo Alerta",
+    "ruta": "src/pages/PackAppccDashboard.tsx:32"
+   }
+  ],
+  "landing": {
+   "productName": "Pack de Plantillas APPCC — 17 Registros de Seguridad Alimentaria",
+   "cifras_prometidas": [
+    "17 plantillas (hero, grid.countGold, seo, schema) — CORRECTO, coincide con PRODUCT_FILES y dashboard",
+    "14 alérgenos obligatorios (hero.checkItems, grid.templates[3]) — CORRECTO, matriz tiene 14 columnas de alérgeno con dropdown S/T/N",
+    "25+ zonas en el plan de limpieza (grid.templates[1].desc: 'Plan maestro L+D con 25+ zonas pre-rellenadas'; cta.items: 'Plan de Limpieza completo con 25+ zonas') — INCORRECTO: 03-plan-limpieza-desinfeccion.xlsx solo tiene 18 filas de zona reales (7 cocina + 4 sala + 3 baños + 2 almacén + 2 vestuarios)",
+    "13 peligros en 6 fases del proceso HACCP (grid.templates[5].desc: '13 peligros tipo en 6 fases del proceso (recepción → servicio)'; cta.items: 'HACCP pre-rellenado con 13 peligros') — el conteo de 13 peligros es correcto, pero las fases reales son 7 (RECEPCIÓN, ALMACENAMIENTO, PREPARACIÓN, COCCIÓN, MANTENIMIENTO CALIENTE, ENFRIAMIENTO, SERVICIO), no 6",
+    "25 puntos de inspección (hero.checkItems: 'Guía de los 25 puntos que revisa el inspector'; grid.templates[7].desc: 'Los 25 puntos que revisa el inspector'; cta.items: 'Guía de los 25 puntos que revisa el inspector') — INCORRECTO: 15-guia-inspeccion-sanidad.xlsx solo numera 23 puntos (1-23); el propio título A1 del fichero también dice '25 Puntos' pero el contenido no llega a 25"
+   ],
+   "entregables_prometidos": [
+    "17 plantillas Excel con fórmulas/alertas — verificado 17/17 en dl/ y en get-download-urls.ts"
+   ],
+   "bonus": [
+    "BONUS 1 Registro de Formación (€9) — coincide con fichero real",
+    "BONUS 2 Protocolo de Alerta Alimentaria (€7, 7 pasos) — coincide con fichero real (protocolo de 7 pasos confirmado en el .xlsx)"
+   ],
+   "faqs": [
+    "6 FAQ on-page + 6 FAQ schema (más cortas) — verbatim consistentes entre sí, sin contenido pobre detectado; mencionan RD 1021/2022 y Reglamento UE 1169/2011 como referencia normativa, coherente con el contenido de los ficheros"
+   ]
+  },
+  "gate": "\"gate-flujo-postpago.py --offline --only pack-appcc: 17/17 ficheros, dl_ok/landing/access/library no verificados en offline (normal), 0 fallos, 1 aviso esperado (drift webhook sin verificar en offline). censo-entregables.py --only pack-appcc --fail --quiet: 17 xlsx censados, 0 docx, 0 pdf, 0 defectos. Ambos gates en verde — confirman que la Fase A determinista (cache de valores, A4, metadata, bio, versión 1.1, casilla unificada, fórmulas reparadas) está correctamente aplicada y no hay huecos residuales de esa fase.\"",
+  "notas": [
+   "HALLAZGO 1 (contenido/promesa): '25+ zonas' en el plan de limpieza — landing (grid.templates[1].desc y cta.items) y probablemente el propio ánimo de la plantilla prometen 25+ zonas mientras astro-site/public/dl/pack-appcc/03-plan-limpieza-desinfeccion.xlsx solo tiene 18 filas de zona reales (filas 6-12 cocina=7, 15-18 sala=4, 21-23 baños=3, 26-27 almacén=2, 30-31 vestuarios=2). Discrepancia de 7 zonas respecto a lo prometido en dos sitios de la landing.",
+   "HALLAZGO 2 (contenido/promesa): '6 fases' del proceso HACCP — landing (grid.templates[5].desc) y dashboard (PackAppccDashboard.tsx:27) dicen 6 fases; 12-analisis-peligros-haccp.xlsx tiene realmente 7 fases distintas en la columna A (RECEPCIÓN, ALMACENAMIENTO, PREPARACIÓN, COCCIÓN, MANTENIMIENTO CALIENTE, ENFRIAMIENTO, SERVICIO). El conteo de 13 peligros SÍ es correcto (filas 5-17).",
+   "HALLAZGO 3 (contenido/promesa, el más visible): '25 puntos que revisa el inspector' — aparece en hero.checkItems, grid.templates[7].desc y cta.items de la landing, en PackAppccDashboard.tsx:30, en el nombre de la hoja del propio Excel ('25 Puntos Inspección') y en la celda A1 del fichero ('Los 25 Puntos que Revisa el Inspector de Sanidad'). Pero 15-guia-inspeccion-sanidad.xlsx solo numera 23 puntos (1 a 23, filas 5-37). Es la promesa numérica más repetida del producto y no se cumple en ningún sitio — ni el propio título interno del fichero coincide con su contenido.",
+   "El resto del contenido es sólido: la matriz de alérgenos tiene dropdowns S/T/N reales con data validation (no solo texto libre), el resumen automático de la guía de inspección usa COUNTIF real sobre la columna Estado, los rangos de temperatura/cloro/compuestos polares en las fórmulas de alerta son técnicamente correctos y coinciden con lo que promete cada landing/dashboard.",
+   "No se ha tocado ningún fichero; todo lo anterior es lectura, sin cambios.",
+   "Sugerencia (no ejecutada): o bien ampliar el contenido de los 3 ficheros a las cifras prometidas (25 zonas, 6 fases reales o 25 puntos), o bien corregir los 3 números en landing/dashboard/título de hoja para que coincidan con el contenido real — cualquiera de las dos cierra el hallazgo."
+  ],
+  "emails": {
+   "verify": "netlify/functions/verify-purchase.ts:28-34 — pack-appcc con accessPath, asunto y CTA correctos, menciona '17 plantillas de seguridad alimentaria' (coincide con el conteo real)",
+   "resend": "netlify/functions/resend-access.ts:28-34 — mismo patrón, sin discrepancias"
+  },
+  "changelog": "\"src/data/productos-changelog.ts:610-625 — entrada v1.1 (2026-08-22) describe exactamente las mejoras de Fase A (A4, versión en instrucciones, bio de autoría, metadatos en los 17 ficheros); coherente con el estado real de los ficheros, sin menciones falsas.\""
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "líneas 37-59 (schema.aggregateRating + schema.reviews) vs líneas 264-273 (testimonials.items); gemelo SPA en src/pages/PackAppcc.tsx:74-97 y src/data/testimonials-appcc.ts",
+      "hallazgo": "El JSON-LD emite un AggregateRating 4.9 con reviewCount 10 y tres Review firmadas con nombre propio, sin que exista ningún sistema de reseñas ni compra verificada detrás. Además los autores del schema NO son los del marquee de la página: schema dice «Carlos Moreno», «Laura García», «Miguel Torres»; la página muestra «Carlos Mendoza», «Laura Castillo», «Miguel Ángel Prieto». Un comprador escéptico que compare los dos bloques ve que las reseñas están inventadas.",
+      "evidencia": "pack-appcc.ts:38 `ratingValue: '4.9'`, :39 `reviewCount: '10'`; :45 `author: 'Carlos Moreno'` con body «Pasamos la inspección de Sanidad sin una sola incidencia»; :264 `name: 'Carlos Mendoza', role: 'Chef Ejecutivo, Restaurante Brasa Viva'` con un texto distinto. No hay ninguna fuente de reseñas en el repo (grep de 'review' solo devuelve estos literales hardcodeados).",
+      "fix": "Eliminar `aggregateRating` y `reviews` del JSON-LD hasta que haya reseñas verificables de compradores reales (art. 20.4 TRLGDCU tras el RDL 24/2021 prohíbe presentar como reseñas de consumidores lo que no se ha verificado; Google además retira los rich results de reseñas autoservidas). Mantener los testimonios en la página únicamente si se etiquetan como ilustrativos, o sustituirlos por casos reales con permiso."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "líneas 277-285 (pricing) + hero/buyBox/cta; commit de origen 67e2405 (2026-03-19)",
+      "hallazgo": "Ancla de precio permanente: €29 tachado, «-52%» y «Precio especial de lanzamiento. Sube pronto» llevan idénticos desde el commit de lanzamiento del producto, hace cinco meses. El producto nunca se ha vendido a €29, así que el «precio anterior» no existe y la urgencia («Sube pronto») es perpetua.",
+      "evidencia": "pack-appcc.ts:278-282 `priceOld: '€29'`, `discountBadge: '-52%'`, `heroNote: 'Precio especial de lanzamiento. Sube pronto'`. `git log -S\"€29\" -- src/components/pack-appcc/HeroSection.tsx` devuelve un único commit: 67e2405 «feat: Pack de Plantillas APPCC — complete product launch», 2026-03-19; el fichero se creó en ese mismo commit ya con €29→€14.",
+      "fix": "O se retira el tachado y se anuncia €14 como precio, o se documenta un precio anterior realmente aplicado (el art. 20.1 TRLGDCU tras el RD 66/2021 obliga a que el «precio anterior» sea el más bajo de los 30 días previos). Retirar «Sube pronto» salvo que haya fecha de subida comprometida."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts + los 17 .xlsx",
+      "ubicacion": "pack-appcc.ts:115 (hero.checkItems[0]), :134 (grid.subtitle), :248 (cta.items[0])",
+      "hallazgo": "«17 plantillas con fórmulas y alertas automáticas» y «Cada plantilla incluye fórmulas automáticas, alertas visuales…» son falsos para 11 de los 17 ficheros: sólo 6 contienen alguna fórmula. Es la promesa que más se repite (hero, grid, CTA final) y la más fácil de refutar abriendo cualquier fichero.",
+      "evidencia": "Ficheros CON fórmulas: 01 (84), 02 (30), 08 (14), 09 (20), 10 (15), 15 (3). Ficheros con CERO fórmulas: 03, 04, 05, 06, 07, 11, 12, 13, 14, BONUS-01, BONUS-02. Comprobado abriendo los 17 con openpyxl y contando celdas cuyo valor empieza por '='.",
+      "fix": "Reescribir la promesa a lo que hay («6 plantillas con fórmulas y alertas automáticas; el resto, registros y checklists imprimibles») o añadir lógica real donde falta y sea útil: p. ej. contador de tareas completadas en 04, semáforo de próxima revisión en 07, contador de incidencias abiertas en 11."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/pack-appcc/12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "hoja «Análisis Peligros», columna J (Registro): J9, J13, J15, J16",
+      "hallazgo": "El plan HACCP —que el propio fichero llama «el corazón del sistema APPCC»— remite a cuatro registros que el pack NO entrega, dos de ellos de PCC declarados. El cliente que compra porque la FAQ promete que «cubren todos los registros que exige la normativa APPCC» descubre que le faltan los registros de cocción y de enfriamiento, justo los dos PCC de proceso.",
+      "evidencia": "12-analisis-peligros-haccp.xlsx!'Análisis Peligros'!J13='Registro cocción' (fila F13='SÍ (PCC)', límite '≥ 75°C centro producto'); J15='Registro enfriamiento' (F15='SÍ (PCC)', 'De 60°C a 10°C en < 2 horas'); J16='Registro servicio'; J9='Checklist semanal'. El listado de entregables (netlify/functions/get-download-urls.ts:21-37) tiene 17 ficheros y ninguno es un registro de cocción, enfriamiento, servicio ni un checklist semanal.",
+      "fix": "Añadir al pack un «Registro de cocción y enfriamiento» (fecha, producto, T.ª centro, hora inicio/fin, estado con fórmula) —cierra los dos PCC y sube el valor percibido— o, como mínimo, cambiar la columna J de esas cuatro filas a registros que sí se entregan (Reg. Temperaturas Diario / Acciones Correctivas) y ajustar la FAQ."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts + 09-control-aceite-fritura.xlsx + 10-control-agua-potable.xlsx",
+      "ubicacion": "pack-appcc.ts:141 (grid.templates[4]); 09!Instrucciones!B10 y 09!'Control Aceite'!A26; 10!Instrucciones!B10 y 10!'Control Agua'!A21",
+      "hallazgo": "La landing vende «Cumple RD 2207/1995 y RD 140/2003» y los dos ficheros lo repiten impreso, pero ambas normas están derogadas: el RD 2207/1995 lo derogó el RD 640/2006 y el RD 140/2003 lo derogó el RD 3/2023. Además el límite del 25 % de compuestos polares no procede del RD 2207/1995 (que era de higiene general) sino de la Orden de 26/01/1989 sobre grasas calentadas. En un producto de compliance esto es lo primero que delata un documento viejo ante el inspector, y contradice de frente la FAQ «actualizaremos las plantillas si cambia la normativa» — la normativa cambió y las plantillas no.",
+      "evidencia": "pack-appcc.ts:141 «Cumple RD 2207/1995 y RD 140/2003»; 09-control-aceite-fritura.xlsx!Instrucciones!B10='▸ Obligatorio según RD 2207/1995' y !'Control Aceite'!A26='Límite legal: máx. 25% compuestos polares (RD 2207/1995)'; 10-control-agua-potable.xlsx!Instrucciones!B10='▸ Obligatorio según RD 140/2003' y !'Control Agua'!A21='Cloro residual aceptable: 0.2 - 1.0 mg/L (RD 140/2003)'. La FAQ de la misma página (pack-appcc.ts:223) sí cita norma vigente (RD 1021/2022), lo que hace el desajuste aún más visible.",
+      "fix": "Sustituir en los dos ficheros y en la tarjeta del grid: aceite → «Orden de 26 de enero de 1989 (máx. 25 % de compuestos polares)»; agua → «RD 3/2023, de 10 de enero». Barrer de una vez las citas legales de los 17 ficheros y dejar sólo normas vigentes (1169/2011, 178/2002, 852/2004, RD 1021/2022, RD 126/2015)."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "hoja «Plan Maestro L+D», filas 6-31 vs pack-appcc.ts:138 y :251, y src/pages/PackAppccDashboard.tsx:18",
+      "hallazgo": "«Plan maestro L+D con 25+ zonas pre-rellenadas» se repite en el grid, en la lista del CTA final y en la tarjeta del dashboard, pero el plan trae 18 líneas rellenas. Las filas 32-45 están vacías (con desplegable de frecuencia hasta C41), así que el cliente ve el hueco donde deberían estar las siete zonas que faltan.",
+      "evidencia": "Filas con contenido: 6-12 (COCINA, 7), 15-18 (SALA, 4), 21-23 (BAÑOS, 3), 26-27 (ALMACÉN, 2), 30-31 (VESTUARIOS, 2) = 18. La validación de datos de frecuencia llega hasta C41 y las filas 32-45 tienen relleno verde de celda editable pero ningún texto. Además Instrucciones!B18 anuncia una zona «Exterior (terraza, entrada, contenedores basura)» que no existe como sección en el Plan Maestro.",
+      "fix": "Rellenar 7-8 líneas más y crear la sección EXTERIOR que las propias Instrucciones prometen (terraza, entrada, cuarto de basuras, contenedores, desagües/sumideros, cámara de residuos, aparcamiento) hasta pasar de 25, o corregir las tres apariciones de «25+ zonas» a la cifra real."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/15-guia-inspeccion-sanidad.xlsx",
+      "ubicacion": "hoja «25 Puntos Inspección», A1 y filas 6-36; pack-appcc.ts:118, :144, :252; PackAppccDashboard.tsx:30",
+      "hallazgo": "«Los 25 puntos que revisa el inspector» aparece cuatro veces en la venta, en el nombre de la hoja y en el título A1 del propio fichero, pero sólo hay 23 puntos numerados. Es la promesa más contable del pack y cualquiera la verifica en diez segundos.",
+      "evidencia": "Numeración correlativa A6=1 … A36=23 (filas 6-10, 13-16, 19-23, 26-30, 33-36). A1='Los 25 Puntos que Revisa el Inspector de Sanidad'; Instrucciones!B6='▸ Los 25 puntos que revisa el inspector de Sanidad'. El resumen automático (C39-C41) cuenta sobre E5:E37, que cubre 23 evaluables.",
+      "fix": "Añadir dos puntos que faltan y que el propio pack cubre —control de agua potable (fichero 10) y registro de trazabilidad/lotes (fichero 06)— en las secciones DOCUMENTACIÓN o ALMACENAMIENTO, renumerar y ampliar la validación de datos y el rango del COUNTIF. Es más barato que corregir «25» en cinco sitios."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "hoja «Análisis Peligros», columna A filas 5-17 vs pack-appcc.ts:142 y PackAppccDashboard.tsx:27",
+      "hallazgo": "El grid y el dashboard dicen «13 peligros tipo en 6 fases del proceso»; el fichero tiene los 13 peligros pero repartidos en 7 fases. Cifra equivocada en la promesa más específica del entregable estrella.",
+      "evidencia": "Fases distintas en A5:A17: RECEPCIÓN (A5-A7), ALMACENAMIENTO (A8-A10), PREPARACIÓN (A11-A12), COCCIÓN (A13), MANTENIMIENTO CALIENTE (A14), ENFRIAMIENTO (A15), SERVICIO (A16-A17) = 7. pack-appcc.ts:142 «13 peligros tipo en 6 fases del proceso (recepción → servicio)»; PackAppccDashboard.tsx:27 «Identificación de peligros en 6 fases con PCC y límites críticos».",
+      "fix": "Cambiar «6 fases» por «7 fases» en pack-appcc.ts:142, en el gemelo src/components/pack-appcc/ContentGrid.tsx y en PackAppccDashboard.tsx:27. Siete fases además vende mejor."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts + 8 .xlsx",
+      "ubicacion": "pack-appcc.ts:64 y :219 (FAQ 1), :134 (grid.subtitle), :157 (why.reasons[1])",
+      "hallazgo": "«Todo viene pre-rellenado con datos reales de hostelería» / «No empieces de cero. Cada plantilla viene pre-rellenada» — ocho de los diecisiete ficheros se entregan sin una sola fila de contenido: sólo cabeceras y filas vacías. El comprador que abre primero el registro de trazabilidad o el de plagas ve una hoja en blanco después de leer tres veces que todo viene relleno.",
+      "evidencia": "Sin ninguna fila de datos: 02 (cabeceras A4:I4 y filas 5-34 vacías salvo la fórmula de Estado), 05 (A4:K4 y 25 filas vacías), 06 (A4:I4 y 36 filas vacías), 07 (A4:H4 y 20 filas vacías), 09 (A4:H4, 20 filas vacías), 10 (A4:G4, 15 filas vacías), BONUS-01 (A3:H3, 20 filas vacías); 11 sólo trae la numeración A5:A29 = 1..25. Sí vienen pre-rellenados 01, 03, 04, 08 (parcial), 12, 13, 14, 15, BONUS-02.",
+      "fix": "Matizar la FAQ y el why: «los planes y análisis vienen pre-rellenados (limpieza, HACCP, alérgenos, inspección); los registros diarios se entregan listos para rellenar». Alternativa mejor: sembrar 2-3 filas de ejemplo en gris/cursiva en 05, 06, 07, 09, 10 y BONUS-01 (con nota «ejemplo — bórralo»), que es lo que el cliente espera de «pre-rellenado»."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts + src/pages/PackAppccDashboard.tsx",
+      "ubicacion": "pack-appcc.ts:125 (compatApps.titleHtml), :166 (why.compatPills «PDF imprimible»); PackAppccDashboard.tsx:169",
+      "hallazgo": "Se anuncia «PDF imprimible» como formato incluido —en el titular de compatibilidad, en la píldora de formatos y otra vez en el banner del dashboard post-pago— pero no se entrega ningún PDF: los 17 ficheros son .xlsx. El cliente que pagó lo lee incluso DESPUÉS de comprar, en su propio dashboard.",
+      "evidencia": "pack-appcc.ts:125 'Compatible con <span…>Excel</span>, Google Sheets y PDF Imprimible'; :166 `{ label: 'PDF imprimible' }`; PackAppccDashboard.tsx:169 «Compatibles con Excel, Google Sheets, LibreOffice, Numbers + PDF imprimible». `ls astro-site/public/dl/pack-appcc/` = 17 ficheros, todos .xlsx.",
+      "fix": "O se generan los PDF de las hojas realmente imprimibles (13 Higiene Personal, 14 Fichas Alérgenos, BONUS-02 Protocolo — las tres son carteles) y se suben al dashboard, o se cambia la redacción a «listo para imprimir en A4» sin prometer el formato PDF."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "líneas 187 y 195 (bonus.items[].image)",
+      "hallazgo": "Las dos tarjetas de bonos ilustran «Registro de Formación en Seguridad Alimentaria» con una foto de focaccia y «Protocolo de Actuación ante Alerta Alimentaria» con una hogaza de masa madre. Son imágenes de un producto de panadería, sin relación con APPCC, en la sección que justifica €16 de valor añadido.",
+      "evidencia": "pack-appcc.ts:187 `image: '/lovable-uploads/ai-gallery/focaccia-jardin-alta-hidratacion-aichefpro.jpeg'`; :195 `image: '/lovable-uploads/ai-gallery/hogaza-masa-madre-oreja-perfecta-aichefpro.jpeg'`. El mismo fichero tiene seis imágenes temáticas APPCC sin usar en los bonos (images.gallery, :93-98, incluye appcc-inspector-sanidad.jpeg y appcc-registro-plantilla.jpeg).",
+      "fix": "Cambiar las dos por imágenes coherentes: formación → una de equipo/briefing o appcc-registro-plantilla.jpeg; protocolo de alerta → appcc-inspector-sanidad.jpeg o generar dos nuevas con la skill generate-images."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts + 05, 06, 07, BONUS-01",
+      "ubicacion": "productos-changelog.ts:619 (entrada v1.1 de 'pack-appcc'); hojas 'Recepción Mercancías', 'Trazabilidad', 'Control Plagas DDD', 'Formación Personal'",
+      "hallazgo": "El changelog que ve el cliente en su dashboard afirma que la v1.1 dejó «cabecera repetida en cada página» en todas las hojas. Cuatro hojas de registro —las más largas, precisamente las que pasan de una página— no tienen fila de título repetida, así que su segunda página se imprime sin encabezados de columna y es inservible como registro firmado ante inspección.",
+      "evidencia": "productos-changelog.ts:619 «Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración». `print_title_rows` = None en 05!'Recepción Mercancías', 06!'Trazabilidad' (40 filas de datos), 07!'Control Plagas DDD' y BONUS-01!'Formación Personal'; sí está en 01 ($6:$6), 02, 03, 04, 08 ($5:$5), 09, 10, 11, 12, 14, 15 ($4:$4).",
+      "fix": "Fijar `ws.print_title_rows = '4:4'` en 05, 06, 07 y '3:3' en BONUS-01, regenerar y volver a subir. Si no, corregir el texto del changelog: es una afirmación verificable que el cliente lee justo encima del botón de descarga."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/BONUS-02-protocolo-alerta-alimentaria.xlsx",
+      "ubicacion": "hoja Instrucciones B6 y hoja 'Protocolo Alerta' A35 vs pack-appcc.ts:227",
+      "hallazgo": "El bono 2 pide dos veces imprimir en A3, pero el fichero está configurado en A4 y la FAQ de la landing asegura que «los documentos imprimibles están optimizados para formato A4». Quien siga la instrucción del fichero manda a A3 una hoja escalada a A4 y obtiene un cartel con márgenes desproporcionados.",
+      "evidencia": "BONUS-02!Instrucciones!B6='▸ Imprime en tamaño A3 y coloca en zona visible de cocina'; !'Protocolo Alerta'!A35='Imprimir en A3 y colocar en zona visible.'; page_setup de esa hoja: paperSize=9 (A4), orientation=portrait, fitToWidth=1. pack-appcc.ts:227 «Los documentos imprimibles están optimizados para formato A4».",
+      "fix": "Decidir uno: o `paperSize = 8` (A3) en la hoja del cartel y excepción documentada en el changelog, o cambiar las dos frases del fichero a «Imprime en A4 (o amplía a A3 desde el diálogo de impresión)»."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "líneas 269 y 273 (testimonials.items)",
+      "hallazgo": "Dos testimonios inventados se atribuyen a establecimientos cuyo nombre roza marcas reales: «Hotel Gran Vía Palace» (en Madrid existe el Hotel Palacio de Gran Vía) y «Cafetería Miga» (Miga es una panadería/marca real). Es exactamente el defecto que la SPEC de la v2.0 de pastelería catalogó como riesgo legal/reputacional y obligó a corregir en aquel producto; aquí sigue vivo.",
+      "evidencia": "pack-appcc.ts:273 `role: 'Director de Compras, Hotel Gran Vía Palace'` con la cifra «reducido las incidencias con proveedores un 60%»; :269 `role: 'Propietaria, Cafetería Miga'`. Precedente: scripts/productos-digitales/kit-tareas-pasteleria-v2-SPEC.md §0, hallazgo 6: «testimonios con marcas reales (Hotel Meliá Valencia, Grupo Europastry, Escuela Hofmann) → riesgo legal/reputacional».",
+      "fix": "Renombrar a establecimientos claramente ficticios y no buscables (como ya se hizo en pastelería) y revisar de paso las cifras concretas atribuidas a terceros («60 %», «evité una sanción de más de €3.000», «más de 40 negocios»), que son afirmaciones cuantitativas puestas en boca de personas que no existen."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts + src/i18n/locales/es.json",
+      "ubicacion": "pack-appcc.ts:204-213 (guarantee) y :255 (cta.items[7]); es.json → pages.terms.content_paragraphs",
+      "hallazgo": "La landing promete cuatro veces «30 días de garantía, 100 % de reembolso, sin preguntas», pero los Términos y Condiciones del sitio no contienen ni una línea sobre productos digitales: hablan sólo de suscripciones al SaaS. No hay política de reembolso escrita ni cláusula de desistimiento de contenido digital a la que agarrarse ni el cliente ni la empresa.",
+      "evidencia": "pack-appcc.ts:207 «te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones», :209-211 stats 30/100%/0. Los 10 apartados de pages.terms.content_paragraphs (es.json) cubren cuenta de usuario, propiedad intelectual y «6. Suscripciones y Pagos … las renovaciones son automáticas»; grep de «reembols|devoluc|desist» en src/pages/Terms.tsx y en el bloque terms de es.json = 0 coincidencias.",
+      "fix": "Añadir a /terminos un apartado de productos digitales: precio único, entrega inmediata, garantía voluntaria de 30 días con el procedimiento (email a info@aichef.pro) y la cláusula de renuncia expresa al desistimiento por descarga inmediata (art. 103.m TRLGDCU). Sin eso, la promesa de la landing es la única fuente de verdad y juega en contra en cualquier disputa."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "línea 107 (hero.badge) y línea 156 (why.reasons[0])",
+      "hallazgo": "«Obligatorio por ley — evita sanciones de hasta €60.000» es una cifra que no corresponde a ningún tramo de la Ley 17/2011 de seguridad alimentaria (leves hasta 5.000 €; graves 5.001-20.000 €; muy graves 20.001-600.000 €). Ni es el tope de las graves ni el de las muy graves: es un número inventado, y además se queda muy corto respecto al máximo real, así que ni siquiera sirve al argumento de venta.",
+      "evidencia": "pack-appcc.ts:107 `badge: 'Obligatorio por ley — evita sanciones de hasta €60.000'`; :156 «te expones a sanciones de hasta €60.000 y cierre cautelar». Ninguno de los 17 ficheros ni ningún documento del repo cita la fuente de esa cifra.",
+      "fix": "Sustituir por el dato citable: «sanciones de 5.001 a 20.000 € en las infracciones graves y hasta 600.000 € en las muy graves (Ley 17/2011)», o quitar la cifra y dejar «sanciones y cierre cautelar»."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/08-matriz-alergenos.xlsx",
+      "ubicacion": "hoja «Matriz Alérgenos», filas 6-13 (platos de ejemplo) y fila 47 (COUNTIF D47:Q47) vs pack-appcc.ts:140",
+      "hallazgo": "Dos problemas en el entregable con más carga legal del pack. (1) Los ocho platos «pre-rellenados» se entregan con las catorce casillas de alérgeno VACÍAS, y la propia leyenda define vacío como «No verificado»: se entrega una matriz de alérgenos ejemplificada en la que ninguna paella lleva marcado crustáceo ni ninguna tarta de queso lácteos, que es justo lo contrario de lo que un ejemplo debe enseñar. (2) La venta dice «× todos los platos de tu carta», pero los catorce COUNTIF están clavados en las filas 6:45: una carta de más de 40 referencias deja de contar sin ningún aviso.",
+      "evidencia": "B6='Ensalada César', B9='Paella mixta', B12='Tarta de queso'… y D6:Q13 completamente vacías (la validación S,T,N está puesta pero ningún valor introducido). A3='Leyenda:  S = Contiene | T = Trazas | N = No contiene | (vacío) = No verificado'. D47='=COUNTIF(D6:D45,\"S\")+COUNTIF(D6:D45,\"T\")' (idéntico hasta Q47). pack-appcc.ts:140 «Matriz de los 14 alérgenos obligatorios × todos los platos de tu carta».",
+      "fix": "Marcar de verdad los 8 platos de ejemplo (César: gluten S, huevo S, lácteos S, pescado S por la anchoa; paella mixta: crustáceos S, moluscos S, pescado S, gluten T; tarta de queso: lácteos S, huevo S, gluten S) y ampliar los COUNTIF a 6:105, o convertir la tabla en tabla de Excel para que el rango crezca solo."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/01-registro-temperaturas-diario.xlsx",
+      "ubicacion": "hoja Instrucciones B15 vs hoja «Registro Semanal» C27:F43",
+      "hallazgo": "Las Instrucciones fijan el criterio legal correcto para congelación («-18 °C o inferior») pero la fórmula de las dos secciones de congelador exige un rango cerrado -25/-18: un arcón o un abatidor a -26 °C, perfectamente conforme, se marca ALERTA. El fichero se contradice a sí mismo y empuja al cliente a «corregir» una temperatura que está bien, o a desconfiar de todas las alertas.",
+      "evidencia": "Instrucciones!B15='▸ Congelador: -18°C o inferior'; 'Registro Semanal'!A25='📍 Congelador 1  |  Rango: -25°C a -18°C' y C27='=IF(B27=\"\",\"\",IF(AND(B27>=-25,B27<=-18),\"OK\",\"ALERTA\"))' (idéntico en C27:C33, F27:F33, C37:C43, F37:F43).",
+      "fix": "Cambiar las 28 fórmulas de congelador a `=IF(B27=\"\",\"\",IF(B27<=-18,\"OK\",\"ALERTA\"))` y el rótulo A25/A35 a «≤ -18 °C», o dejar el rango pero corregir la Instrucción para que expliquen que por debajo de -25 avisan de consumo eléctrico, no de incumplimiento."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/09-control-aceite-fritura.xlsx",
+      "ubicacion": "hoja Instrucciones B8; hoja «Control Aceite» columna E (E5:E24) y fórmulas F5:F24",
+      "hallazgo": "Las Instrucciones fijan «Temperatura máxima de fritura: 180 °C» y la hoja dedica una columna entera a registrarla, pero ninguna fórmula la mira: el Estado depende sólo del % de compuestos polares. Se puede anotar 220 °C y la fila dice OK. Es la mitad del control que el propio fichero define, y contradice la promesa de «alertas automáticas».",
+      "evidencia": "Instrucciones!B8='▸ Temperatura máxima de fritura: 180°C'; 'Control Aceite'!E4='Temp. Máx (°C)'; F5='=IF(D5=\"\",\"\",IF(D5>25,\"CAMBIAR\",IF(D5>20,\"VIGILAR\",\"OK\")))' — la referencia E5 no aparece en ninguna de las 20 fórmulas de la columna F.",
+      "fix": "Ampliar la fórmula a `=IF(D5=\"\",\"\",IF(OR(D5>25,E5>180),\"CAMBIAR\",IF(D5>20,\"VIGILAR\",\"OK\")))` (o un aviso separado «T.ª ALTA» en una columna nueva) para que la temperatura registrada sirva de algo."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "hoja «Análisis Peligros», filas 6 y 17 (columnas F y G)",
+      "hallazgo": "Dos de los siete PCC declarados tienen como «límite crítico» algo que no es medible ni tiene tolerancia («Etiquetado completo», «Carta alérgenos actualizada»). Por definición un PCC exige un límite crítico cuantificable y vigilable; un inspector o un consultor que revise el plan lo señalará, y el cliente que pagó por «el corazón del sistema APPCC» se lleva la corrección.",
+      "evidencia": "F6='SÍ (PCC)' con G6='Etiquetado completo' y H6='Verificar etiqueta'; F17='SÍ (PCC)' con G17='Carta alérgenos actualizada' y H17='Consultar carta alérgenos'. Contrastan con G5 ('≤ 4°C refrigerados / ≤ -18°C congelados') o G13 ('≥ 75°C centro producto'), que sí son límites críticos reales.",
+      "fix": "O reclasificar esas dos filas como PPR/PCO (F='NO', que es la doctrina habitual para etiquetado en recepción) o convertir el límite en medible: «100 % de las referencias recibidas con etiqueta legible que declare los 14 alérgenos» y «carta de alérgenos revisada y firmada en los últimos 30 días o tras cada cambio de receta»."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/pack-appcc/06-registro-trazabilidad.xlsx",
+      "ubicacion": "hoja «Trazabilidad» A1 y A42; PackAppccDashboard.tsx:21",
+      "hallazgo": "Dos desajustes en el mismo fichero. (1) La tarjeta del dashboard promete «Entrada/salida de productos» y el fichero se titula «Registro de Trazabilidad — Entrada de Productos»: no hay ninguna columna de salida, sólo un «Destino / Uso». (2) Afirma que el plazo de conservación de 5 años lo impone el Reglamento (CE) 178/2002, que no fija plazo alguno de archivo; y el propio pack da 2 años en otros dos ficheros sin explicar la diferencia.",
+      "evidencia": "06!'Trazabilidad'!A1='Registro de Trazabilidad — Entrada de Productos'; cabeceras A4:I4 = Fecha Entrada | Producto | Nº Lote | Proveedor | Fecha Caducidad | Fecha Consumo | Cantidad | Destino / Uso | Observaciones. A42='Conservar registros mínimo 5 años (Reglamento CE 178/2002).' Frente a 04!'Limpieza Diaria'!A31='Archivar hojas firmadas durante mínimo 2 años' y 05!A31='Archivo mínimo: 2 años'. PackAppccDashboard.tsx:21 desc='Entrada/salida de productos con lote, proveedor y fechas.'",
+      "fix": "Cambiar la nota a «Conservar los registros de trazabilidad al menos 5 años (criterio de la Comisión Europea para productos sin fecha de duración; el Reglamento (CE) 178/2002 exige trazabilidad pero no fija plazo)» y alinear la descripción del dashboard con lo que hay, o añadir una segunda hoja «Salida / Producto elaborado» que justifique el «entrada/salida»."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/pack-appcc.ts",
+      "ubicacion": "línea 36 (schema.priceValidUntil) vs líneas 281-282 (heroNote/buyBoxNote)",
+      "hallazgo": "El schema declara el precio de €14 válido hasta el 31-12-2026 mientras el hero dice «Precio especial de lanzamiento. Sube pronto». Google puede mostrar ambas señales y son incompatibles; un comprador que mire el código fuente ve que la urgencia es decorativa.",
+      "evidencia": "pack-appcc.ts:36 `priceValidUntil: '2026-12-31'`; :281 `heroNote: 'Precio especial de lanzamiento. Sube pronto'`.",
+      "fix": "Alinear los dos: si el precio se mantiene hasta fin de año, quitar «Sube pronto»; si va a subir, poner en priceValidUntil la fecha real de la subida."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/pack-appcc/04-registro-limpieza-diaria.xlsx",
+      "ubicacion": "hoja «Limpieza Diaria», print_area = A1:H29, texto en A31",
+      "hallazgo": "Es el único fichero del pack con área de impresión fijada y deja fuera la nota que da la instrucción legal de archivo: al imprimir la hoja semanal (que es justo el uso previsto: «Imprime una hoja por semana») no sale «Archivar hojas firmadas durante mínimo 2 años».",
+      "evidencia": "04!'Limpieza Diaria'!print_area = 'Limpieza Diaria'!$A$1:$H$29; A31='Marcar con ✓ cuando se complete. Archivar hojas firmadas durante mínimo 2 años.'; A32 = pie de marca. Instrucciones!B6='▸ Imprime una hoja por semana'.",
+      "fix": "Ampliar el print_area a $A$1:$H$32 o subir la nota a la fila 30, dentro del área."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/pack-appcc/10-control-agua-potable.xlsx",
+      "ubicacion": "hoja «Control Agua», filas 5-19",
+      "hallazgo": "El registro de agua sólo tiene 15 filas frente a las 20-40 del resto del pack, y las Instrucciones no dicen con qué periodicidad se mide. Con la práctica habitual (cloro residual diario o semanal) la hoja se agota en tres semanas o en tres meses, y el cliente tiene que duplicarla a mano.",
+      "evidencia": "Fórmulas de Estado sólo en E5:E19 (15 filas); comparar con 06 (36 filas), 11 (25), 05 (25), 08 (40). Instrucciones (B6-B10) no indica frecuencia de muestreo, sólo el rango 0.2-1.0 mg/L.",
+      "fix": "Llevar la hoja a 30-40 filas (un mes de control diario) y añadir en Instrucciones la frecuencia recomendada: cloro residual diario en un punto rotatorio si hay depósito, semanal si es red municipal."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/pack-appcc/BONUS-01-registro-formacion.xlsx",
+      "ubicacion": "hoja «Formación Personal», cabeceras A3:H3 y nota A25",
+      "hallazgo": "El registro de formación no tiene columna de caducidad/renovación, pese a que el propio fichero cierra diciendo «formación acreditada vigente» y a que la guía de inspección puntúa exactamente eso. Sin fecha de renovación el registro no permite saber quién tiene el carné caducado, que es para lo que el inspector lo pide.",
+      "evidencia": "Cabeceras A3:H3 = Nombre Empleado | Puesto | Formación Recibida | Fecha Inicio | Fecha Fin | Duración (h) | Entidad Formadora | Nº Certificado. A25='Todo el personal que manipula alimentos debe tener formación acreditada vigente.' 15-guia-inspeccion-sanidad.xlsx!fila 8: B8='Certificados de formación del personal', C8='Manipulador de alimentos de todos los empleados', D8='GRAVE'.",
+      "fix": "Añadir columna «Válido hasta» y una de «Estado» con fórmula `=IF(I4=\"\",\"\",IF(I4<TODAY(),\"CADUCADO\",IF(I4-TODAY()<60,\"RENOVAR\",\"VIGENTE\")))`. Es el tipo de automatismo que sostiene la promesa de «fórmulas y alertas automáticas» en un fichero que hoy tiene cero."
+     }
+    ],
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing LIVE (astro-site/src/data/productos/kits/pack-appcc.ts y su gemelo SPA src/pages/PackAppcc.tsx + src/components/pack-appcc/*), dashboard post-pago (src/pages/PackAppccDashboard.tsx), emails de acceso (netlify/functions/verify-purchase.ts), mapa de descargas (netlify/functions/get-download-urls.ts), changelog visible al cliente (src/data/productos-changelog.ts) y Términos (src/i18n/locales/es.json) contra el contenido real leído celda a celda de los 17 .xlsx de astro-site/public/dl/pack-appcc/. Vara de calidad: scripts/productos-digitales/kit-tareas-pasteleria-v2-SPEC.md.",
+    "motivo": "Cinco defectos de severidad alta bloquean el «listo para un cliente que pagó», y ninguno es cosmético. (1) El JSON-LD publica un AggregateRating 4.9 con 10 reseñas y tres Review firmadas que no existen —y cuyos autores ni siquiera coinciden con los testimonios de la propia página—, lo que es sancionable por el art. 20.4 TRLGDCU tras el RDL 24/2021 y motivo de retirada de rich results por Google. (2) El ancla «€29 → €14, -52%, sube pronto» lleva idéntica desde el commit de lanzamiento 67e2405 del 2026-03-19: el precio anterior nunca existió. (3) «17 plantillas con fórmulas y alertas automáticas», repetido en hero, grid y CTA, se refuta abriendo cualquier fichero: 11 de los 17 tienen cero fórmulas. (4) El análisis HACCP —el entregable que el pack llama «el corazón del sistema»— remite a cuatro registros que el pack no entrega, dos de ellos de PCC (cocción y enfriamiento), mientras la FAQ promete cubrir «todos los registros que exige la normativa». (5) Se vende «Cumple RD 2207/1995 y RD 140/2003» y ambos ficheros lo llevan impreso: las dos normas están derogadas (por el RD 640/2006 y el RD 3/2023), lo que contradice frontalmente la promesa de «actualizamos las plantillas si cambia la normativa» en un producto cuyo único valor es el cumplimiento. A eso se suman tres cifras de venta que no cuadran con el fichero (25+ zonas→18, 25 puntos→23, 6 fases→7), «pre-rellenado» en ocho ficheros que llegan vacíos, un «PDF imprimible» que no se entrega ni en la landing ni en el dashboard, y un changelog que promete cabeceras repetidas que cuatro hojas no tienen. Los arreglos son casi todos de una línea, pero hasta que se hagan el pack promete más de lo que entrega en cada una de las superficies que el cliente lee antes y después de pagar.",
+    "veredicto": "no listo"
+   },
+   "dominio": {
+    "lente": "Consultor/a de seguridad alimentaria (implantación de APPCC en restaurantes de España): validez de los registros ante inspección, rangos y límites críticos, frecuencias, firmas, referencias normativas vigentes y completitud del sistema APPCC.",
+    "veredicto": "no listo",
+    "motivo": "El pack no está listo para un cliente que pagó. Tres defectos son de calibre reembolso: (1) el propio Análisis de Peligros declara cuatro PCC cuyo registro de vigilancia NO existe en el pack (cocción, enfriamiento, servicio, checklist semanal), de modo que el «sistema APPCC completo» no puede evidenciar sus puntos críticos; (2) la Matriz de Alérgenos se entrega con 8 platos y las 14 columnas de alérgeno vacías —y su propia leyenda dice «(vacío) = No verificado»—, que es justo el documento que se enseña a un cliente alérgico; (3) la landing y la FAQ afirman «todo viene pre-rellenado con datos reales de hostelería» cuando 9 de los 17 ficheros se entregan como rejillas en blanco. A eso se suman un límite de recepción único de 4°C que valida pescado fresco fuera de norma y rechaza carne que sí cumple, una instrucción de limpieza que mezcla desincrustante con lejía (cloro gas), la ausencia total del control de anisakis, y dos referencias normativas derogadas (RD 2207/1995 y RD 140/2003) impresas en las hojas que se enseñan al inspector. Las cifras de la landing (25+ zonas, 6 fases, 25 puntos) tampoco se cumplen (18, 7 y 23).",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros!J9, J13, J15, J16",
+      "hallazgo": "El Análisis de Peligros declara PCC cuyos registros de vigilancia NO existen en el pack: el plan remite a «Registro cocción» (J13), «Registro enfriamiento» (J15), «Registro servicio» (J16) y «Checklist semanal» (J9), y ninguno de los 17 ficheros entregados es ese registro. El sistema APPCC queda sin evidencia documental de sus dos PCC más vigilados por el inspector (cocción y enfriamiento).",
+      "evidencia": "J13='Registro cocción' con G13='≥ 75°C centro producto\\n(aves ≥ 82°C)' y F13='SÍ (PCC)'; J15='Registro enfriamiento' con G15='De 60°C a 10°C\\nen < 2 horas' y F15='SÍ (PCC)'; J16='Registro servicio'; J9='Checklist semanal'. El directorio /astro-site/public/dl/pack-appcc/ contiene 17 xlsx y ninguno cubre cocción, enfriamiento, servicio ni checklist semanal.",
+      "fix": "Añadir dos plantillas nuevas al pack: «Registro de Cocción y Regeneración» (fecha, plato, hora, temperatura en el centro, tiempo, sonda usada, firma, con IF que marque OK/REPETIR contra ≥75°C) y «Registro de Enfriamiento Rápido» (hora y temperatura a 0/60/120 min, con fórmula que marque DESECHAR si no baja de 60°C a 10°C en 2 h). Mientras no existan, corregir la columna J para que apunte solo a registros incluidos."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ubicacion": "Matriz Alérgenos!D6:Q13 (y leyenda A3)",
+      "hallazgo": "La matriz se entrega con 8 platos de ejemplo y las 14 columnas de alérgeno COMPLETAMENTE vacías. Como la propia leyenda define el vacío como «No verificado», el fichero que el cliente puede imprimir y enseñar a un comensal alérgico es una carta de alérgenos en blanco. Además desperdicia el único caso didáctico del pack: los 8 platos elegidos son los ejemplos canónicos de alérgeno múltiple.",
+      "evidencia": "B6..B13 = 'Ensalada César', 'Croquetas de jamón', 'Sopa de pescado', 'Paella mixta', 'Solomillo con salsa Pedro Ximénez', 'Merluza a la vasca', 'Tarta de queso', 'Helado de vainilla'; leído con openpyxl, D6:Q13 devuelve None en las 112 celdas. A3='Leyenda:  S = Contiene | T = Trazas | N = No contiene | (vacío) = No verificado'.",
+      "fix": "Pre-rellenar los 8 ejemplos con su declaración real (p.ej. Ensalada César: gluten S, huevos S, lácteos S, pescado S por la anchoa, mostaza S; Croquetas de jamón: gluten S, lácteos S, huevos T; Paella mixta: crustáceos S, moluscos S, pescado S, sulfitos T) y añadir bajo la tabla la advertencia de que ninguna fila sirve hasta que las 14 casillas estén cumplimentadas."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "src/components/pack-appcc/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:8 y WhySection.tsx:13 (y PackAppcc.tsx:103)",
+      "hallazgo": "Promesa de landing incumplida: se vende que «todo viene pre-rellenado con datos reales de hostelería» y que «cada plantilla viene pre-rellenada», pero 9 de los 17 ficheros se entregan como rejilla vacía sin una sola fila de datos. Solo 03 (plan L+D) y 12 (análisis de peligros) están realmente pre-rellenados.",
+      "evidencia": "FaqAccordion.tsx:8 'No. Todo viene pre-rellenado con datos reales de hostelería.'; WhySection.tsx:13 'Cada plantilla viene pre-rellenada con datos reales de hostelería'. Ficheros sin ninguna fila de datos: 02 (A5:I34 vacío), 05 (A5:K29 vacío), 06 (A5:I40 vacío), 07 (A5:H24 vacío), 09 (A5:H24 sin datos, solo fórmulas), 10 (A5:G19 vacío), 11 (solo la numeración 1-25 en A5:A29), BONUS-01 (A4:H23 vacío) y 08 (8 nombres de plato sin ningún alérgeno marcado).",
+      "fix": "O se pre-rellenan 2-3 filas de ejemplo realistas en cada uno de esos 9 ficheros (proveedor, producto, lote, temperatura, %CP, mg/L de cloro, incidencia tipo) o se cambia el copy a «plantillas listas con fórmulas y validaciones; los ejemplos precargados están en el plan de limpieza, el análisis de peligros y la matriz de alérgenos»."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "02-registro-temperaturas-recepcion.xlsx",
+      "ubicacion": "Recepción Temperaturas!E5:E34 (validación) e Instrucciones!B12",
+      "hallazgo": "El PCC de recepción usa un límite único de 4°C para «carne, pescado, lácteos». Con esa lista desplegable el registro valida como OK pescado fresco recibido a 4°C (debe transportarse y recibirse en hielo fundente, 0-2°C) y carne picada a 4°C (límite legal 2°C), y en cambio marca RECHAZAR canales y despieces de vacuno a 5-7°C que sí cumplen (≤7°C). El registro deja por escrito la aceptación de producto fuera de límite legal y genera rechazos infundados a proveedores.",
+      "evidencia": "Validación de datos en E5:E34 = list \"4,-18,-20,N/A\"; Instrucciones!B12 '▸ Refrigerados (carne, pescado, lácteos): máx. 4°C'; fórmula F5 '=IF(D5=\"\",\"\",IF(E5=\"N/A\",\"OK\",IF(D5<=E5,\"OK\",\"RECHAZAR\")))'.",
+      "fix": "Ampliar la lista de validación a \"0,2,3,4,7,-18,-20,N/A\" y sustituir B12 por el desglose real: pescado fresco 0-2°C (hielo fundente), carne picada y preparados de carne ≤2°C, despojos ≤3°C, aves y caza ≤4°C, lácteos y platos preparados ≤4°C, carne de ungulados ≤7°C. Añadir en la hoja una tabla de referencia con esos valores por familia."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Plan Maestro L+D!D11",
+      "hallazgo": "El plan maestro —el documento que se cuelga en cocina y se entrega al inspector— prescribe para los fregaderos «Desincrustante + lejía diluida». La mezcla de un desincrustante ácido con hipoclorito sódico libera cloro gaseoso; es un accidente laboral clásico de cocina y el plan lo está indicando por escrito como método normalizado.",
+      "evidencia": "D11='Desincrustante + lejía diluida' junto a E11='Frotar con estropajo, aclarar' y F11='Auxiliar cocina', en la fila A11='Fregaderos'.",
+      "fix": "Sustituir D11 por «Desincrustante ácido (aclarar por completo) — desinfectar en una SEGUNDA pasada con hipoclorito 1:50» y añadir en E11 «NUNCA mezclar ácido y lejía: aclarar entre productos». Repasar el resto de filas por si hay otras combinaciones incompatibles."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros!A5:A17 (fases) — falta el peligro parasitario",
+      "hallazgo": "No existe en todo el pack el control de anisakis: ni el peligro parasitario en el análisis (no hay ninguna fila con Anisakis pese a haber 13 peligros), ni el registro de congelación preventiva del pescado destinado a consumo en crudo, marinado, escabechado o salazón ligera. En España es una obligación con sanción (Reg. 853/2004 Anexo III y RD 1420/2006) y es de los primeros registros que pide el inspector en un restaurante que sirva boquerones en vinagre, ceviche o sushi. La FAQ afirma que las plantillas «cubren todos los registros que exige la normativa APPCC en España».",
+      "evidencia": "Las 13 filas de peligros (A5:A17) sólo contienen RECEPCIÓN, ALMACENAMIENTO, PREPARACIÓN, COCCIÓN, MANTENIMIENTO CALIENTE, ENFRIAMIENTO y SERVICIO; búsqueda de 'anisakis'/'parásito' en los 17 ficheros: 0 coincidencias. PackAppcc.tsx:104 '¿Estas plantillas sirven para pasar la inspección de Sanidad?' → 'Sí. Cubren todos los registros que exige la normativa APPCC en España'.",
+      "fix": "Añadir al análisis una fila «PREPARACIÓN / B (Biológico) / Anisakis en pescado para consumo en crudo o semicrudo / SÍ (PCC) / -20°C durante 24 h en todas las partes de la pieza (o -35°C 15 h) / Registro de congelación preventiva» y crear esa plantilla de registro (fecha entrada, especie, lote, hora inicio y fin de congelación, temperatura del equipo, firma)."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "media",
+      "fichero": "09-control-aceite-fritura.xlsx",
+      "ubicacion": "Instrucciones!B10 y Control Aceite!A26",
+      "hallazgo": "Referencia normativa derogada y además equivocada de origen: se atribuye el límite del 25% de compuestos polares al RD 2207/1995, que fue derogado por el RD 640/2006 y que, además, nunca reguló las grasas calentadas (era la transposición de la Directiva 93/43/CEE sobre higiene general). El límite del 25% procede de la Orden de 26 de enero de 1989 por la que se aprueba la Norma de Calidad para los aceites y grasas calentados.",
+      "evidencia": "Instrucciones!B10 '▸ Obligatorio según RD 2207/1995'; Control Aceite!A26 'Límite legal: máx. 25% compuestos polares (RD 2207/1995). Cambiar aceite antes de superar este límite.'",
+      "fix": "Reemplazar las dos menciones por «Orden de 26 de enero de 1989 (Norma de Calidad para los aceites y grasas calentados), modificada por la Orden de 16 de enero de 1990: máx. 25% de compuestos polares», y citar el Reg. (CE) 852/2004 como marco de la obligación de autocontrol."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "media",
+      "fichero": "10-control-agua-potable.xlsx",
+      "ubicacion": "Instrucciones!B10 y Control Agua!A21",
+      "hallazgo": "Referencia normativa derogada: el registro se apoya en el RD 140/2003, sustituido íntegramente por el RD 3/2023, de 10 de enero, sobre criterios técnico-sanitarios de la calidad del agua de consumo. Un registro de autocontrol fechado en 2026 que cita la norma anterior es lo primero que un consultor externo rechaza.",
+      "evidencia": "Instrucciones!B10 '▸ Obligatorio según RD 140/2003'; Control Agua!A21 'Cloro residual aceptable: 0.2 - 1.0 mg/L (RD 140/2003).'",
+      "fix": "Actualizar ambas menciones a «RD 3/2023, de 10 de enero» y añadir en Instrucciones la frecuencia de autocontrol en grifo (habitual: diaria o semanal por punto) y la obligación de conservar los boletines del gestor del abastecimiento."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "media",
+      "fichero": "01-registro-temperaturas-diario.xlsx",
+      "ubicacion": "Registro Semanal!C27:C43 y F27:F43 vs Instrucciones!B15",
+      "hallazgo": "El criterio del congelador es un rango cerrado -25/-18°C, cuando el requisito es «-18°C o inferior». Un arcón a -22/-26°C —lo normal en muchos equipos— o un abatidor a -30°C se marcan como ALERTA, obligando al usuario a documentar falsas no conformidades en un registro legal (y, según el propio pie de hoja, a abrir una acción correctiva por cada una). Contradice a sus propias instrucciones y al resto del pack.",
+      "evidencia": "C27 '=IF(B27=\"\",\"\",IF(AND(B27>=-25,B27<=-18),\"OK\",\"ALERTA\"))' (idéntico en C27:C43/F27:F43); Instrucciones!B15 '▸ Congelador: -18°C o inferior'; 15-guia-inspeccion-sanidad.xlsx!B14 'Congeladores (≤ -18°C)'; 12-analisis-peligros-haccp.xlsx!G8 '-18°C congelador'.",
+      "fix": "Cambiar las 14 fórmulas de congelador a '=IF(B27=\"\",\"\",IF(B27<=-18,\"OK\",\"ALERTA\"))'. De paso, unificar el criterio de ultracongelados con 02-Instrucciones!B14 ('máx. -20°C'), que hoy es un tercer valor distinto para el mismo equipo."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "media",
+      "fichero": "15-guia-inspeccion-sanidad.xlsx",
+      "ubicacion": "Instrucciones!B6:B9 y 25 Puntos Inspección!A1, A36",
+      "hallazgo": "El producto se llama «Guía: Cómo Pasar una Inspección de Sanidad» y anuncia cuatro contenidos; entrega solo uno, y recortado. No hay sección de «errores que causan sanción inmediata», ni de «cómo prepararte antes de la inspección», ni de «qué documentos tener listos»: el fichero es una única tabla de autoevaluación. Y esa tabla tiene 23 puntos numerados, no los 25 que anuncian el título de la hoja, el nombre de la pestaña, la landing y el dashboard.",
+      "evidencia": "Instrucciones!B6:B9 = '▸ Los 25 puntos que revisa el inspector', '▸ Qué errores causan sanción inmediata', '▸ Cómo prepararte antes de la inspección', '▸ Qué documentos tener listos'; la hoja '25 Puntos Inspección' sólo contiene la tabla A4:E36 y el resumen B38:C41; último número: A36=23. HeroSection.tsx:22 y CtaFinal.tsx:11 'Guía de los 25 puntos que revisa el inspector'.",
+      "fix": "Añadir dos puntos que hoy faltan y son de inspección segura —«Registro de congelación preventiva de anisakis» y «Registro de calibración/verificación de termómetros»— para llegar a 25 reales, y añadir tres bloques cortos a la hoja: errores de cierre inmediato, checklist de preparación de 24 h antes y lista de documentos a tener a mano."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "media",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Plan Maestro L+D!A5:G31 (18 filas) vs ContentGrid.tsx:9",
+      "hallazgo": "La landing promete «25+ zonas pre-rellenadas» y el plan tiene 18 filas cumplimentadas. Además falta la zona EXTERIOR que anuncian las propias instrucciones del fichero, y faltan elementos que un inspector busca en el plan L+D: lavamanos de accionamiento no manual, desagües y sumideros, maquinaria (cortafiambres, picadora, batidora), paños y bayetas, máquina de hielo, cámara de congelación, cubo de residuos exterior y zona de recepción.",
+      "evidencia": "Filas con contenido en la columna B: 18 (A6:A12, A15:A18, A21:A23, A26:A27, A30:A31). Instrucciones!B18 '▸ Exterior (terraza, entrada, contenedores basura)' — no existe bloque EXTERIOR en la hoja, que salta de VESTUARIOS (A29) al pie (A44). ContentGrid.tsx:9 'Plan maestro L+D con 25+ zonas pre-rellenadas'; CtaFinal.tsx:10 'Plan de Limpieza completo con 25+ zonas'.",
+      "fix": "Añadir el bloque EXTERIOR y los 7-8 elementos citados hasta superar las 25 filas reales; si no, bajar la cifra de la landing y del dashboard a la real."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "media",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Plan Maestro L+D!D4 (encabezado) y D6:D31",
+      "hallazgo": "El plan L+D no recoge el tiempo de contacto del desinfectante ni la identificación del producto químico (número de registro y ficha de datos de seguridad). Sin tiempo de contacto la desinfección no es verificable, y el inspector pide sistemáticamente que el producto sea de uso alimentario con su registro y que las FDS estén accesibles. La columna «Producto / Dilución» sólo lleva descripciones genéricas.",
+      "evidencia": "D4='Producto / Dilución' con valores del tipo D6='Desengrasante + desinfectante alimentario', D8='Desinfectante alimentario', D12='Lejía diluida 1:50'; no existe ninguna columna de tiempo de contacto, nº de registro ni referencia a FDS en A4:G4.",
+      "fix": "Añadir dos columnas al plan maestro: «Tiempo de contacto» y «Nº registro / FDS disponible (S/N)», y una segunda pestaña «Listado de productos químicos» con marca, nº de registro (HA/plaguicida o registro sanitario), dosis, tiempo de contacto y ubicación de la ficha de seguridad."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "media",
+      "fichero": "04-registro-limpieza-diaria.xlsx",
+      "ubicacion": "Limpieza Diaria!A6:H24 frente a 03-plan-limpieza-desinfeccion.xlsx!C15, C18, C21:C23",
+      "hallazgo": "El registro diario no puede evidenciar el plan maestro que acompaña. El plan exige «Cada servicio» para superficies, mesas y barra y «2 veces/día» para inodoros, lavabos y suelos de baño, pero el registro sólo ofrece UNA casilla por tarea y día. Tampoco recoge las tareas semanales del plan (cámaras, almacén, vestuarios, filtros de campana), así que esas frecuencias quedan sin registro alguno.",
+      "evidencia": "Plan Maestro L+D: C15='Cada servicio' (mesas y sillas), C16='Cada servicio' (barra), C21=C22=C23='2 veces/día' (baños), C8='Semanal' (cámaras), C26=C27='Semanal' (almacén), C30='Semanal' (vestuarios). Registro Limpieza Diaria: encabezados B4:H4 = Lun..Dom, una sola celda por tarea y día (A21 'Inodoros y lavabos limpiados', A15 'Mesas y sillas limpiadas').",
+      "fix": "Desdoblar en el registro diario las tareas de doble frecuencia (columnas M/T por día para baños y para superficies de sala) y añadir un bloque «TAREAS SEMANALES» con casilla de fecha y firma para cámaras, almacén, vestuarios y filtros de campana."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "13-checklist-higiene-personal.xlsx",
+      "ubicacion": "Higiene Personal!B28 y 15-guia-inspeccion-sanidad.xlsx!C8",
+      "hallazgo": "Contenido obsoleto: el pack exige «carné/certificado de manipulador de alimentos vigente». El carné de manipulador fue suprimido en España por el RD 109/2010 (que derogó el RD 202/2000): ya no existe carné oficial ni caducidad. La obligación vigente (Reg. (CE) 852/2004, Anexo II, Cap. XII) es que la EMPRESA garantice y acredite la formación de sus manipuladores. Perpetuar el mito lleva al cliente a pagar «carnés» innecesarios y a creer que está en regla por tenerlos.",
+      "evidencia": "13!B28='Carné/certificado de manipulador de alimentos vigente'; 15!B8='Certificados de formación del personal' con C8='Manipulador de alimentos de todos los empleados' y D8='GRAVE'; BONUS-01!A25='Todo el personal que manipula alimentos debe tener formación acreditada vigente.'",
+      "fix": "Sustituir por «Formación en higiene alimentaria acreditada por la empresa (Reg. 852/2004 Anexo II Cap. XII; el carné oficial se suprimió con el RD 109/2010)» en 13!B28 y en 15!C8, y explicarlo en una nota de la hoja de formación."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "05-checklist-recepcion-mercancias.xlsx",
+      "ubicacion": "Instrucciones!B13 y 15-guia-inspeccion-sanidad.xlsx!B16",
+      "hallazgo": "Falta el registro de calibración/verificación de termómetros, pese a que dos ficheros del propio pack lo dan por existente: la recepción exige medir «con termómetro de sonda (calibrado)» y la guía de inspección incluye «Termómetro calibrado disponible» como punto que revisa el inspector. Sin ese registro no hay forma de acreditar la fiabilidad de TODAS las lecturas de temperatura del sistema (los tres registros de frío y el PCC de cocción).",
+      "evidencia": "05!Instrucciones!B13 '▸ Temperatura: medir con termómetro de sonda (calibrado)'; 15!B16='Termómetro calibrado disponible' con C16='Sonda limpia, calibrada, accesible'; ninguno de los 17 ficheros contiene la palabra «calibración» como registro.",
+      "fix": "Añadir una plantilla «Verificación de termómetros»: equipo/sonda, fecha, método (punto de fusión del hielo 0°C ± 1 y/o agua en ebullición), lectura obtenida, desviación, apto S/N, acción y firma, con periodicidad mensual y anual con patrón externo."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "07-control-plagas-ddd.xlsx",
+      "ubicacion": "Control Plagas DDD!A2, D4 y ContentGrid.tsx:14",
+      "hallazgo": "El registro DDD no recoge tres datos que el inspector comprueba: el nº de inscripción de la empresa en el ROESB (Registro Oficial de Establecimientos y Servicios Biocidas), el nº de registro del biocida aplicado y el plazo de seguridad de reentrada. Y la landing promete «espacio para plano de cebos» que no existe: sólo hay una frase pidiéndolo.",
+      "evidencia": "A2='Año: ______    Empresa contratada: ________    Nº Contrato: ____________' (no hay ROESB); D4='Productos Utilizados' sin columna de nº de registro ni plazo de seguridad; A26='Adjuntar certificados de cada actuación. El plano de cebos debe estar actualizado y accesible.'; ContentGrid.tsx:14 '...y certificados. Calendario de revisiones y espacio para plano de cebos.'",
+      "fix": "Añadir «Nº ROESB» junto a la empresa en A2, dos columnas («Nº registro biocida» y «Plazo de seguridad (h)») a la tabla, y una segunda pestaña «Plano de cebos» con una rejilla numerada de puntos (nº estación, ubicación, tipo, fecha de revisión, estado/consumo) que sirva de croquis."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros!A4:J4, F6 y F17",
+      "hallazgo": "Dos problemas de método en el documento «corazón del sistema»: (a) la tabla enumera los 7 principios en Instrucciones pero no tiene columna de medidas preventivas ni de VERIFICACIÓN (principio 6), así que el plan no puede documentar quién comprueba que la vigilancia se hace ni con qué frecuencia; (b) hay dos peligros marcados como PCC cuyo «límite crítico» no es medible ni observable en tiempo real, que es la definición de límite crítico —son prerrequisitos operativos, no PCC.",
+      "evidencia": "Encabezados A4:J4 = Fase, Tipo Peligro, Peligro Identificado, Probabilidad, Gravedad, ¿Es PCC?, Límite Crítico, Vigilancia, Acción Correctiva, Registro (no hay 'Medida preventiva' ni 'Verificación'); F6='SÍ (PCC)' con G6='Etiquetado completo'; F17='SÍ (PCC)' con G17='Carta alérgenos actualizada'. Instrucciones!B19 '▸ 6. Procedimientos de verificación'.",
+      "fix": "Añadir las columnas «Medida preventiva», «Frecuencia y responsable de la vigilancia» y «Verificación (qué, quién, cuándo)». Reclasificar las filas 6 y 17 como PPRo, o darles un límite crítico medible (p.ej. servicio: «100% de las comandas con alergia declarada verificadas contra la matriz antes de salir de cocina»)."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros (toda la hoja) e Instrucciones!B12:B20",
+      "hallazgo": "El único documento que sostiene jurídicamente todo el pack no cita ninguna norma. Faltan el Reg. (CE) 852/2004 art. 5 —que es de donde nace la obligación de implantar procedimientos basados en el APPCC— y el RD 3484/2000, que es precisamente la norma española de la que salen los límites que la propia hoja usa (65°C en mantenimiento caliente y el enfriamiento de 60°C a 10°C en menos de 2 horas). El pack cita el 1169/2011, el 178/2002 y dos reales decretos derogados, pero no estos dos.",
+      "evidencia": "Búsqueda de '852/2004' y '3484' en los 17 ficheros: 0 coincidencias. G14='≥ 65°C' y G15='De 60°C a 10°C\\nen < 2 horas' aparecen sin referencia. Instrucciones!B12:B20 enumera los 7 principios sin citar la norma que los impone.",
+      "fix": "Añadir en Instrucciones un bloque «Marco normativo»: Reg. (CE) 852/2004 (art. 5, autocontrol APPCC), RD 3484/2000 (comidas preparadas: temperaturas de conservación, enfriamiento y tratamiento térmico), Reg. (CE) 178/2002 (trazabilidad, art. 18-19), Reg. (UE) 1169/2011 y RD 126/2015 (alérgenos), y la guía de prácticas correctas de higiene de la comunidad autónoma."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ubicacion": "Matriz Alérgenos!D47:Q47 y validación D6:Q45",
+      "hallazgo": "La matriz sólo admite 40 platos y no crece: los COUNTIF del resumen están fijados a la fila 45 y la validación de datos S/T/N termina también en la 45. Un restaurante con más de 40 referencias que añada platos a partir de la fila 46 los verá fuera del recuento y sin desplegable, sin ningún aviso. Contradice literalmente la FAQ de la landing.",
+      "evidencia": "D47='=COUNTIF(D6:D45,\"S\")+COUNTIF(D6:D45,\"T\")' (idéntico patrón en E47:Q47); validación list \"S,T,N\" declarada sólo para D6:Q45. FaqAccordion.tsx:20 'Puedes añadir ... platos a la matriz de alérgenos ... Las fórmulas y alertas se adaptan automáticamente.'",
+      "fix": "Extender los rangos a D6:D200 (y la validación a Q200), o convertir el rango en tabla de Excel con referencia estructurada, para que el resumen y los desplegables acompañen a las filas nuevas."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ubicacion": "Matriz Alérgenos!D5 y K5; Instrucciones!B14:B17",
+      "hallazgo": "Los encabezados usan las categorías genéricas «Gluten» y «Frutos cáscara», pero el Anexo II del Reg. (UE) 1169/2011 obliga a declarar la especie concreta: el cereal (trigo, centeno, cebada, avena, espelta, kamut) y el fruto de cáscara concreto (almendra, avellana, nuez, anacardo, pistacho...). Una matriz que sólo dice «Gluten: S» no informa al celíaco de si es avena, ni al alérgico a la avellana de si el plato lleva almendra.",
+      "evidencia": "D5='Gluten', K5='Frutos cáscara'; Instrucciones!B14 '▸ 1. Gluten | 2. Crustáceos...' y B15 '...8. Frutos de cáscara'. El fichero 14-fichas-14-alergenos.xlsx sí desglosa las especies (C5, C12), lo que demuestra que la matriz podría hacerlo.",
+      "fix": "Renombrar D5 a «Cereales con gluten (indicar cuál)» y K5 a «Frutos de cáscara (indicar cuál)», y añadir a la derecha una columna «Especificación» donde se escriba el cereal o el fruto concreto de cada plato marcado con S o T."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "BONUS-02-protocolo-alerta-alimentaria.xlsx",
+      "ubicacion": "Protocolo Alerta!C12, B18, B27:C32",
+      "hallazgo": "El protocolo se salta la única obligación legal del operador ante una alerta: el art. 19 del Reg. (CE) 178/2002 exige informar INMEDIATAMENTE a la autoridad sanitaria competente (Salud Pública de la comunidad autónoma, que activa la red SCIRI/AESAN) cuando se sospecha que un alimento puesto en el mercado puede ser nocivo. En su lugar el cartel manda llamar al 112, que es el teléfono de emergencia médica y no el cauce de notificación de una alerta, y deja el aviso al público como algo a «evaluar». La lista de teléfonos no incluye a la autoridad sanitaria.",
+      "evidencia": "C12='Si hay riesgo para la salud: llamar al 112 / Sanidad'; B18='Si se ha servido al público: evaluar si hay que informar a los clientes'; B27:C32 lista 112, Centro de Salud, Responsable de calidad, Empresa de plagas y Proveedor — no aparece Salud Pública / autoridad competente.",
+      "fix": "Reescribir el PASO 3: «Notificar de inmediato a la autoridad sanitaria competente de tu comunidad autónoma (obligación del art. 19 Reg. 178/2002) y al proveedor; el 112 solo si hay una persona con síntomas». Añadir a la lista de teléfonos la fila «Salud Pública / Autoridad sanitaria de la CCAA (completar)»."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "06-registro-trazabilidad.xlsx",
+      "ubicacion": "Trazabilidad!A1 vs Instrucciones!B6 y B8",
+      "hallazgo": "Las instrucciones prometen registrar «TODOS los productos que entran y salen» y el fichero sólo contempla la entrada: no hay hoja ni columnas de trazabilidad hacia adelante (lote de elaborado, plato en que se usó, fecha y destino de la salida). Además se afirma como obligación un plazo de rastreo de «< 4 horas» que no está en ninguna norma —es un requisito de estándares privados tipo IFS/BRC, no del Reg. 178/2002— y se atribuye al reglamento un plazo de conservación de 5 años que este tampoco fija.",
+      "evidencia": "A1='Registro de Trazabilidad — Entrada de Productos'; encabezados A4:I4 sólo de entrada; Instrucciones!B6 '▸ Registra TODOS los productos que entran y salen'; B8 '▸ En caso de alerta alimentaria, debes poder rastrear el origen en < 4 horas'; A42='Conservar registros mínimo 5 años (Reglamento CE 178/2002).'",
+      "fix": "O añadir una segunda pestaña «Trazabilidad interna / salida» (lote de origen → elaboración → fecha y destino) o corregir B6 para que hable solo de entrada. Sustituir el «< 4 horas» por «de forma inmediata a requerimiento de la autoridad» y matizar el plazo: el Reg. 178/2002 no fija plazo; la recomendación de la Comisión es 5 años, o vida útil + 6 meses en perecederos."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "05-checklist-recepcion-mercancias.xlsx",
+      "ubicacion": "Recepción Mercancías!A4:K4",
+      "hallazgo": "El checklist de recepción no tiene ni nº de lote ni nº de albarán ni firma de quien recepciona, así que no engancha con el registro de trazabilidad y no acredita quién hizo la verificación. Además duplica al fichero 02 (fecha, producto, proveedor y temperatura se anotan dos veces), lo que en la práctica hace que el cliente rellene uno de los dos y deje el otro en blanco.",
+      "evidencia": "Encabezados A4:K4 = Fecha, Producto, Proveedor, Temp. (°C), Caducidad, Etiquetado OK, Envase OK, Aspecto OK, Cantidad OK, Aceptado, Observaciones. El fichero 02 repite Fecha/Producto/Proveedor/Temp y sí tiene 'Lote / Caducidad' (G4) pero tampoco firma. Instrucciones!B9 '▸ Conserva los albaranes junto con este registro'.",
+      "fix": "Añadir a 05 las columnas «Nº albarán», «Nº lote» y «Firma receptor», y valorar fusionar 02 y 05 en un único registro de recepción (temperatura + verificación documental) para no pedir el mismo dato dos veces."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "11-registro-acciones-correctivas.xlsx",
+      "ubicacion": "Acciones Correctivas!A4:I4",
+      "hallazgo": "Al registro de acciones correctivas le faltan las dos columnas que el inspector busca primero: qué producto/lote quedó afectado y qué se hizo con él (destruido, devuelto al proveedor, reprocesado, liberado tras evaluación). Sin la disposición del producto no conforme, la acción correctiva está incompleta según el principio 5 del APPCC. Tampoco hay columna de acción preventiva para evitar la recurrencia ni referencia al registro donde se detectó la desviación.",
+      "evidencia": "Encabezados A4:I4 = Nº, Fecha, Tipo Incidencia, Descripción del Problema, Causa Probable, Acción Correctiva Adoptada, Responsable, Fecha Cierre, Verificación. Ni 'producto afectado', ni 'lote', ni 'destino'. A31='Toda incidencia debe tener una acción correctiva documentada y verificada.'",
+      "fix": "Insertar tres columnas: «Producto / lote afectado», «Destino del producto no conforme (desechado / devuelto / reprocesado / liberado)» y «Acción preventiva para evitar recurrencia», más una casilla «Registro de origen» que enlace con la hoja donde se detectó."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "09-control-aceite-fritura.xlsx",
+      "ubicacion": "Control Aceite!E4:E24 y toda la hoja",
+      "hallazgo": "De los dos límites que declaran las instrucciones, sólo uno se controla. La columna «Temp. Máx (°C)» no tiene fórmula ni validación, así que el límite de 180°C que anuncia el fichero se puede anotar en 210°C sin que nada avise —y es la temperatura, no el %CP, la variable que degrada el aceite a diario. Falta además el registro de retirada del aceite usado por gestor autorizado, que se pide en toda inspección junto con el control de fritura.",
+      "evidencia": "Instrucciones!B8 '▸ Temperatura máxima de fritura: 180°C'; E4='Temp. Máx (°C)' sin ninguna fórmula ni validación en E5:E24 (las únicas fórmulas de la hoja son F5:F24, sobre el %CP); no hay columna ni hoja de retirada de aceite usado.",
+      "fix": "Añadir en una columna nueva '=IF(E5=\"\",\"\",IF(E5>180,\"EXCESO TEMP\",\"OK\"))' y una segunda pestaña «Retirada de aceite usado»: fecha, litros, gestor autorizado, nº de documento de entrega y firma."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros!A11:A12 (fase PREPARACIÓN)",
+      "hallazgo": "No existe la fase de DESCONGELACIÓN en el análisis de peligros, pese a que el propio pack la clasifica como falta GRAVE en la guía de inspección. Tampoco aparecen dos peligros de manual en cocina española: el uso de huevo fresco en elaboraciones sin tratamiento térmico (salsas, mayonesas: obligatorio ovoproducto pasteurizado salvo que el plato alcance 75°C) y la conservación de elaborados propios con vida útil y etiquetado.",
+      "evidencia": "Las fases presentes son RECEPCIÓN, ALMACENAMIENTO, PREPARACIÓN, COCCIÓN, MANTENIMIENTO CALIENTE, ENFRIAMIENTO y SERVICIO (A5:A17); ninguna fila menciona descongelación ni huevo. En cambio 15-guia-inspeccion-sanidad.xlsx!B35='Descongelación correcta' con C35='En cámara o microondas, nunca a temperatura ambiente' y D35='GRAVE'.",
+      "fix": "Añadir tres filas al análisis: «DESCONGELACIÓN / B / Multiplicación microbiana por descongelar a temperatura ambiente / PCC / En refrigeración ≤4°C, producto tapado y sobre bandeja / Inspección visual y registro», «PREPARACIÓN EN FRÍO / B / Salmonella por huevo fresco en salsas / PCC / Ovoproducto pasteurizado o ≥75°C» y «CONSERVACIÓN DE ELABORADOS / B / Vida útil superada / Etiqueta con fecha de elaboración y consumo preferente»."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "14-fichas-14-alergenos.xlsx",
+      "ubicacion": "14 Alérgenos!B20",
+      "hallazgo": "El «protocolo» que se imprime y se cuelga en cocina cabe en una línea y omite lo que de verdad evita un incidente: el cambio de guantes y el uso de utensilios, tabla y zona exclusivos, la prohibición de usar la misma freidora o la misma agua de cocción, la opción de decir al cliente que no se puede garantizar el plato, y sobre todo qué hacer si un comensal empieza una reacción (no mover a la persona, adrenalina autoinyectable si la lleva, llamar al 112). Es el único documento del pack que el personal de sala va a leer bajo presión.",
+      "evidencia": "B20='PROTOCOLO: Si un cliente informa de alergia → consultar carta de alérgenos → informar al chef → preparar con utensilios limpios → servir con aviso al camarero' — es todo el protocolo del fichero; no hay ninguna mención a reacción anafiláctica, 112 ni freidora compartida en los 17 ficheros.",
+      "fix": "Convertir B20 en un bloque de 8-10 pasos con dos columnas (antes de cocinar / si hay reacción), incluyendo cambio de guantes y utensilios exclusivos, prohibición de freidora y agua de cocción compartidas, entrega en mano al comensal alérgico, y el protocolo de emergencia (112, adrenalina, no dejar sola a la persona)."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "15-guia-inspeccion-sanidad.xlsx",
+      "ubicacion": "25 Puntos Inspección!D6:D36 y A43",
+      "hallazgo": "La escala de gravedad es inventada y la advertencia final es alarmista e inexacta: en España las infracciones en materia de seguridad alimentaria se clasifican como leves, graves y muy graves (Ley 17/2011, arts. 50-52), no como GRAVE/MODERADA/LEVE; y el cierre cautelar es una medida excepcional reservada al riesgo grave e inminente, no la consecuencia posible de cada uno de los 12 puntos etiquetados GRAVE (entre ellos «FIFO respetado» o «Vestuarios»).",
+      "evidencia": "D6:D36 usa los valores 'GRAVE', 'MODERADA' y 'LEVE'; A43='Los puntos marcados como GRAVE pueden suponer cierre cautelar del establecimiento.'",
+      "fix": "Renombrar la escala a «Leve / Grave / Muy grave» alineada con la Ley 17/2011 y sustituir A43 por «Los incumplimientos calificados como muy graves, o cualquier situación de riesgo grave e inminente para la salud, pueden dar lugar a medidas cautelares incluido el cierre (art. 27 Ley 17/2011)»."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "baja",
+      "fichero": "04-registro-limpieza-diaria.xlsx",
+      "ubicacion": "Limpieza Diaria — print_area 'Limpieza Diaria'!$A$1:$H$29",
+      "hallazgo": "El área de impresión corta las tres últimas filas de la hoja, justo las que contienen la instrucción de archivo y el pie de marca. Como el fichero está pensado para imprimirse cada semana («Imprime una hoja por semana»), lo que se archiva sale sin la nota de conservación ni la firma de marca. Es un caso que se le escapó al saneamiento A4 de la Fase A.",
+      "evidencia": "print_area = 'Limpieza Diaria'!$A$1:$H$29, pero la hoja llega a la fila 32: A31='Marcar con ✓ cuando se complete. Archivar hojas firmadas durante mínimo 2 años.' y A32='— Pack de Plantillas APPCC · AI Chef Pro · aichef.pro'.",
+      "fix": "Ampliar el área de impresión a $A$1:$H$32 (o eliminarla y dejar el fitToWidth ya configurado)."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "baja",
+      "fichero": "BONUS-02-protocolo-alerta-alimentaria.xlsx",
+      "ubicacion": "Instrucciones!B6 vs page_setup de 'Protocolo Alerta' (paperSize 9 = A4)",
+      "hallazgo": "Las instrucciones piden imprimir el cartel en A3 pero la hoja está configurada en A4, igual que el resto del pack. El usuario que siga la instrucción obtiene un A3 con el contenido escalado a la mitad superior o un A4 que contradice lo que le acaban de decir.",
+      "evidencia": "Instrucciones!B6 '▸ Imprime en tamaño A3 y coloca en zona visible de cocina'; page_setup.paperSize=9 (A4), orientation=portrait, fitToPage=True en la hoja 'Protocolo Alerta'; A35='Imprimir en A3 y colocar en zona visible.'",
+      "fix": "Elegir uno: configurar paperSize=8 (A3) en esa hoja, o cambiar B6 y A35 a «Imprime en A4 (o amplía a A3 si tu impresora lo permite)»."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "baja",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Plan Maestro L+D!C9, C18, C21, C22, C23",
+      "hallazgo": "Cinco celdas de frecuencia contienen valores que no están en su propia lista de validación. Excel los conserva porque venían escritos, pero al desplegar la lista el usuario los pierde y la herramienta «rodear datos no válidos» los marca en rojo delante del inspector.",
+      "evidencia": "Validación en C6:C41 = list \"Cada servicio,Diaria,Semanal,Quincenal,Mensual,Trimestral\"; valores reales C9='Semanal filtros / Mensual campana', C18='Cada uso', C21=C22=C23='2 veces/día'.",
+      "fix": "Ampliar la lista a \"Cada uso,Cada servicio,2 veces/día,Diaria,Semanal,Quincenal,Mensual,Trimestral,Semestral,Anual\" y partir C9 en dos filas (filtros semanal / campana mensual)."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "baja",
+      "fichero": "10-control-agua-potable.xlsx",
+      "ubicacion": "Control Agua!E5:E19",
+      "hallazgo": "La fórmula de estado devuelve REVISAR cuando el cloro es correcto pero la columna de aspecto se ha dejado en blanco, porque exige la igualdad exacta D=\"Normal\". El resultado es una no conformidad falsa por un campo sin rellenar, indistinguible de una real en la hoja archivada.",
+      "evidencia": "E5='=IF(C5=\"\",\"\",IF(AND(C5>=0.2,C5<=1.0,D5=\"Normal\"),\"OK\",\"REVISAR\"))' — con C5=0,6 y D5 vacío el resultado es 'REVISAR'.",
+      "fix": "Cambiar a '=IF(C5=\"\",\"\",IF(D5=\"\",\"INCOMPLETO\",IF(AND(C5>=0.2,C5<=1,D5=\"Normal\"),\"OK\",\"REVISAR\")))' para distinguir el dato que falta de la desviación real."
+     },
+     {
+      "id": "DOM-33",
+      "severidad": "baja",
+      "fichero": "BONUS-01-registro-formacion.xlsx",
+      "ubicacion": "Formación Personal!A3:H3",
+      "hallazgo": "El registro de formación no permite saber si la formación sigue vigente ni que el trabajador la recibió: no hay columna de caducidad o próximo reciclaje (la «Fecha Fin» es el fin del curso, no su vigencia) ni firma del empleado. El pie de la hoja sí exige «formación acreditada vigente», que es justo lo que la tabla no puede demostrar.",
+      "evidencia": "Encabezados A3:H3 = Nombre Empleado, Puesto, Formación Recibida, Fecha Inicio, Fecha Fin, Duración (h), Entidad Formadora, Nº Certificado; A25='Todo el personal que manipula alimentos debe tener formación acreditada vigente.'",
+      "fix": "Añadir «Fecha de próximo reciclaje», «Firma del empleado» y una columna de estado con '=IF(fecha_reciclaje<TODAY(),\"CADUCADA\",\"VIGENTE\")'."
+     },
+     {
+      "id": "DOM-34",
+      "severidad": "baja",
+      "fichero": "01-registro-temperaturas-diario.xlsx",
+      "ubicacion": "Registro Semanal!D6, G6 (encabezados replicados en cada bloque)",
+      "hallazgo": "Cada fila registra dos lecturas diarias (mañana y tarde) pero sólo tiene una columna «Hora» y una columna «Firma», colocadas además de forma ambigua: la hora queda entre el estado de la mañana y la temperatura de la tarde. Si las dos lecturas las hacen turnos distintos —lo habitual—, la hoja no puede acreditar quién tomó cada una, que es lo que pregunta el inspector cuando ve una desviación.",
+      "evidencia": "Fila de encabezados A6:G6 = Día, Temp. Mañana (°C), Estado, Hora, Temp. Tarde (°C), Estado, Firma; el mismo patrón se repite en las filas 16, 26, 36, 46 y 56 de los seis bloques de equipo.",
+      "fix": "Desdoblar en Hora M / Firma M y Hora T / Firma T (o iniciales), y añadir una columna «Acción correctiva / nº incidencia» para enlazar cada ALERTA con la hoja 11."
+     },
+     {
+      "id": "DOM-35",
+      "severidad": "baja",
+      "fichero": "06-registro-trazabilidad.xlsx",
+      "ubicacion": "Trazabilidad!A42 vs 04!A31 y 05!A31",
+      "hallazgo": "El pack da tres plazos distintos de conservación de registros sin explicar por qué: 2 años en los registros de limpieza y recepción y 5 años en trazabilidad. Un cliente que lea los tres no sabe cuánto tiene que archivar, y la disparidad hace dudar de todo el criterio documental del pack.",
+      "evidencia": "04!A31 '...Archivar hojas firmadas durante mínimo 2 años.'; 05!A31 'Conservar junto con albaranes de entrega. Archivo mínimo: 2 años.'; 06!A42 'Conservar registros mínimo 5 años (Reglamento CE 178/2002).'",
+      "fix": "Unificar el criterio en todos los ficheros con una única frase razonada: «Conservar un mínimo de 2 años (recomendado 5 en trazabilidad y proveedores); consultar la guía de prácticas correctas de higiene de tu comunidad autónoma, que puede fijar un plazo mayor»."
+     }
+    ]
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + análisis de semántica de fórmulas Excel): fórmulas y sus guardas, rangos, validaciones de datos, formato condicional, celdas que deberían ser fórmula, texto recortado por anchos/combinadas, configuración de impresión, y coherencia entre la hoja «Instrucciones» y lo que la hoja de trabajo realmente hace.",
+    "veredicto": "no listo",
+    "motivo": "Cuatro defectos de severidad alta impiden entregarlo tal cual. (1) El pack se vende con «fórmulas y alertas automáticas» (og:description de PackAppcc.tsx:34) y el propio fichero 01 promete «aparece ALERTA en rojo», pero los 17 ficheros tienen CERO reglas de formato condicional: ALERTA y OK se imprimen idénticos. (2) La fórmula de recepción (02) devuelve «OK» a un congelado recibido a −5 °C si el usuario deja en blanco la columna de límite, porque la guarda sólo protege D y Excel coacciona la celda vacía a 0. (3) La matriz de alérgenos entrega 8 platos con nombre y las 112 celdas de alérgeno vacías, sin ninguna fórmula que marque filas sin verificar, mientras el COUNTIF sólo suma S/T. (4) El análisis HACCP —el documento que ancla el sistema— remite a cuatro registros que el pack no incluye, dos de ellos respaldando PCC declarados. Por debajo hay ~25 defectos medios (rangos que contradicen las instrucciones, columnas capturadas que no alimentan ninguna fórmula, área de impresión que corta la nota de conservación, validaciones que no validan). Ninguno de los cuatro altos es cosmético: los tres primeros producen un falso «cumple» en un control de seguridad alimentaria y el cuarto deja un plan APPCC incoherente ante un inspector.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "02-registro-temperaturas-recepcion.xlsx",
+      "ubicacion": "Recepción Temperaturas:F5:F34 (fórmula) + E5:E34 (validación)",
+      "hallazgo": "La fórmula de Estado sólo guarda contra D vacío, no contra E vacío. Si el usuario anota la temperatura recibida pero no elige el límite en el desplegable, Excel coacciona la celda vacía a 0 y CUALQUIER temperatura negativa devuelve «OK». Un congelado recibido a −5 °C (14 grados por encima de su límite) se registra como conforme. La validación es allowBlank=True y showErrorMessage=False, así que nada obliga a rellenar E.",
+      "evidencia": "F5 = IF(D5=\"\",\"\",IF(E5=\"N/A\",\"OK\",IF(D5<=E5,\"OK\",\"RECHAZAR\"))). Con D5=-5 y E5 vacía: E5=\"N/A\" es FALSO; D5<=E5 evalúa -5<=0 → VERDADERO → \"OK\". Con D5=-20 y E5 vacía también \"OK\". La DV de E5:E34 es list \"4,-18,-20,N/A\" con allow_blank=True, showErrorMessage=False.",
+      "fix": "Añadir la guarda de E a las 30 fórmulas: =IF(OR(D5=\"\",E5=\"\"),\"\",IF(E5=\"N/A\",\"OK\",IF(D5<=E5,\"OK\",\"RECHAZAR\"))). Y poner showErrorMessage=True + allow_blank=False en la DV de E5:E34 para que el límite sea obligatorio."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "TODOS (17 ficheros, 34 hojas)",
+      "ubicacion": "Ninguna hoja tiene worksheet.conditional_formatting; ver 01:Registro Semanal:C7:C63 y F7:F63, 02:F5:F34, 09:F5:F24, 10:E5:E19, 15:E6:E36",
+      "hallazgo": "El pack no contiene NI UNA sola regla de formato condicional, pero la landing lo vende como «fórmulas y alertas automáticas» y el propio fichero 01 le dice al cliente que «aparece ALERTA en rojo». Las palabras OK, ALERTA, RECHAZAR, VIGILAR y CAMBIAR salen todas en negro sobre blanco con formato General: en la hoja impresa —que es el uso previsto y lo que ve el inspector— una desviación es tipográficamente indistinguible de un valor conforme. La promesa central del producto no está implementada.",
+      "evidencia": "Barrido de las 34 hojas: `sum(len(r.rules) for r in ws.conditional_formatting)` = 0 en todas. Contra: 01-registro-temperaturas-diario.xlsx:Instrucciones:B9 = '▸ Si la temperatura sale del rango, aparece ALERTA en rojo'. src/pages/PackAppcc.tsx:34 og:description = '17 plantillas profesionales con fórmulas y alertas automáticas'. src/pages/PackAppcc.tsx:93 reviewBody = 'Ahora tengo registros profesionales con alertas automáticas'.",
+      "fix": "Añadir CellIsRule/FormulaRule a cada columna de Estado: rojo (fondo FFC7CE, texto 9C0006) para ALERTA/RECHAZAR/CAMBIAR/REVISAR/'✗ No cumple', ámbar (FFEB9C/9C6500) para VIGILAR/'⚠ Mejorar', verde (C6EFCE/006100) para OK/'✓ Cumple', todas con guarda de vacío. Afecta a 01, 02, 09, 10 y 15."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ubicacion": "Matriz Alérgenos:B6:Q13 (8 platos demo) y D47:Q47 (totales)",
+      "hallazgo": "Se entregan 8 platos de ejemplo con nombre y categoría y las 112 celdas de alérgeno (D6:Q13) COMPLETAMENTE vacías. La leyenda declara «(vacío) = No verificado», pero nada en la hoja distingue visualmente una fila verificada de una sin verificar, y la única fórmula del fichero (COUNTIF de S+T) trata el vacío como ausencia de alérgeno. Un local que imprima la matriz sin borrar las filas demo entrega a un cliente celíaco una «Croquetas de jamón» y una «Tarta de queso» con cero alérgenos declarados, en un documento que el propio fichero califica de OBLIGATORIO por el Reglamento UE 1169/2011.",
+      "evidencia": "B7='Croquetas de jamón' (gluten, lácteos y huevo evidentes), B12='Tarta de queso', B6='Ensalada César'; el barrido de D6:Q13 devuelve lista vacía: 0 de 112 celdas rellenas. A3 = 'Leyenda: S = Contiene | T = Trazas | N = No contiene | (vacío) = No verificado'. D47 = COUNTIF(D6:D45,\"S\")+COUNTIF(D6:D45,\"T\") — sin ningún COUNTBLANK ni contador de filas incompletas.",
+      "fix": "Dos cosas: (a) rellenar los 8 platos demo con sus alérgenos reales, que es el material didáctico del fichero; (b) añadir una columna R «Verificado» con =IF(COUNTBLANK(D6:Q6)>0,\"⚠ SIN VERIFICAR\",\"Completo\") y una celda de resumen =COUNTIF(R6:R45,\"⚠ SIN VERIFICAR\"), con formato condicional rojo."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros:J9, J13, J15, J16 (columna «Registro»)",
+      "hallazgo": "El análisis de peligros —que el propio fichero llama «el corazón del sistema APPCC» (Instrucciones:B10)— designa como soporte documental cuatro registros que el pack de 17 ficheros NO incluye. Dos de ellos respaldan peligros declarados SÍ (PCC), es decir, exactamente los que la norma obliga a registrar. Un inspector que siga el plan pedirá el registro de cocción y el de enfriamiento y no existen; el cliente ha pagado por un sistema que se autoincumple en su documento maestro.",
+      "evidencia": "J13='Registro cocción' (fila 13, F13='SÍ (PCC)'), J15='Registro enfriamiento' (F15='SÍ (PCC)'), J16='Registro servicio', J9='Checklist semanal'. Ninguno corresponde a los 17 ficheros del pack; los demás sí (J8='Reg. Temperaturas Diario'→01, J5='Reg. Temperaturas Recepción'→02, J10='Reg. Trazabilidad'→06, J11='Plan L+D'→03, J17='Matriz Alérgenos'→08).",
+      "fix": "O crear las tres plantillas que faltan (cocción, enfriamiento, servicio), o reapuntar J13/J15/J16 a un registro existente. La opción barata: añadir bloques de cocción y enfriamiento a 01-registro-temperaturas-diario.xlsx y cambiar J13/J15 a 'Reg. Temperaturas Diario'. J9 puede apuntar a 'Checklist Recepción' o al Plan L+D."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "media",
+      "fichero": "01-registro-temperaturas-diario.xlsx",
+      "ubicacion": "Registro Semanal:C27:C43 y F27:F43 vs Instrucciones:B15",
+      "hallazgo": "Las fórmulas de los dos congeladores exigen un intervalo CERRADO por abajo (−25 °C), pero la hoja de Instrucciones del mismo fichero dice «Congelador: −18 °C o inferior», sin suelo. Un arcón funcionando correctamente a −26 °C (habitual en congeladores de cofre y en ciclos de recuperación tras abrir) marca ALERTA. El resultado práctico es peor que cosmético: el fichero 01 remite cada ALERTA al registro de Acciones Correctivas (A66), así que genera un rastro documental de incidencias falsas que un inspector leerá como un equipo inestable.",
+      "evidencia": "C27 = IF(B27=\"\",\"\",IF(AND(B27>=-25,B27<=-18),\"OK\",\"ALERTA\")) — 28 celdas con el mismo patrón en las filas 27-33 y 37-43. Instrucciones:B15 = '▸ Congelador: -18°C o inferior'. Cabecera A25 = '📍 Congelador 1 | Rango: -25°C a -18°C'.",
+      "fix": "Alinear los tres sitios. Si el criterio es el legal («−18 o inferior»), la fórmula es =IF(B27=\"\",\"\",IF(B27<=-18,\"OK\",\"ALERTA\")) y A25 debe decir «−18 °C o inferior». Si se quiere conservar el suelo de −25 como aviso de sobreconsumo, usar un tercer estado («REVISAR») en vez de ALERTA y decirlo en Instrucciones."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "media",
+      "fichero": "09-control-aceite-fritura.xlsx",
+      "ubicacion": "Control Aceite:F5:F24 vs A26 e Instrucciones:B7",
+      "hallazgo": "El umbral de CAMBIAR es estrictamente mayor que 25, así que una lectura de exactamente 25,0 % de compuestos polares —el límite legal justo— devuelve «VIGILAR». La nota al pie del propio fichero ordena lo contrario: cambiar el aceite ANTES de superar el límite. Quien se guíe por la columna Estado nunca cumplirá la instrucción de su propia plantilla, y con el medidor digital (que da enteros) el 25 clavado es una lectura frecuente, no un caso de borde teórico.",
+      "evidencia": "F5 = IF(D5=\"\",\"\",IF(D5>25,\"CAMBIAR\",IF(D5>20,\"VIGILAR\",\"OK\"))). Con D5=25: 25>25 es FALSO, 25>20 es VERDADERO → \"VIGILAR\". A26 = 'Límite legal: máx. 25% compuestos polares (RD 2207/1995). Cambiar aceite antes de superar este límite.' Instrucciones:B7 = '▸ El aceite debe cambiarse cuando supera el 25% de compuestos polares'.",
+      "fix": "Cambiar el operador en las 20 fórmulas: IF(D5>=25,\"CAMBIAR\",IF(D5>=20,\"VIGILAR\",\"OK\")). Y unificar la redacción de A26 y B7 con el umbral implementado."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "09-control-aceite-fritura.xlsx",
+      "ubicacion": "Control Aceite:E4 'Temp. Máx (°C)' — columna E5:E24, sin ninguna fórmula que la lea",
+      "hallazgo": "Se pide al usuario registrar la temperatura máxima de fritura y las Instrucciones fijan el límite en 180 °C, pero ninguna fórmula del fichero toca la columna E. Un registro con 210 °C —que degrada el aceite mucho más rápido que el propio %CP detecta y es una no conformidad por sí misma— sale con Estado «OK» si el test de polares va bien. Es una columna que captura un dato de control y lo deja muerto.",
+      "evidencia": "E4 = 'Temp. Máx (°C)'. Instrucciones:B8 = '▸ Temperatura máxima de fritura: 180°C'. Las 20 fórmulas del fichero (F5:F24) referencian únicamente D: IF(D5=\"\",\"\",IF(D5>25,...)). Ninguna referencia a E en toda la hoja.",
+      "fix": "Incorporar E al veredicto: =IF(D5=\"\",\"\",IF(OR(D5>=25,E5>180),\"CAMBIAR\",IF(D5>=20,\"VIGILAR\",\"OK\"))), o añadir una columna de estado propia para la temperatura si se quiere separar ambos criterios."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros:D5:F17 (Probabilidad, Gravedad, ¿Es PCC?)",
+      "hallazgo": "Las columnas Probabilidad y Gravedad no alimentan ninguna fórmula y las decisiones de PCC que se entregan pre-rellenadas se contradicen entre sí: seis filas con la puntuación idéntica Media/Alta se resuelven como SÍ (PCC) y dos con la MISMA puntuación como NO, sin árbol de decisión documentado. Además el mismo peligro (alérgeno no declarado) se declara PCC dos veces, en recepción y en servicio, cuando la doctrina HACCP exige elegir el punto donde efectivamente se controla. Es justo el tipo de incoherencia que un inspector desmonta leyendo la tabla en diagonal.",
+      "evidencia": "Media/Alta → SÍ (PCC): filas 6, 8, 13, 14, 15, 17. Media/Alta → NO: fila 9 ('Contaminación cruzada en cámara', D9='Media', E9='Alta', F9='NO') y fila 11 ('Contaminación cruzada por utensilios', D11='Media', E11='Alta', F11='NO'). Duplicidad: C6='Producto sin etiquetado de alérgenos' F6='SÍ (PCC)' y C17='Alérgeno no declarado al cliente' F17='SÍ (PCC)'. 7 PCC sobre 13 peligros. Ninguna fórmula en toda la hoja.",
+      "fix": "Añadir una columna de nivel de riesgo calculada (=IF(AND(D5=\"Alta\",E5=\"Alta\"),\"Crítico\",...)) y revisar las ocho decisiones para que la misma puntuación dé el mismo resultado, o documentar en Instrucciones el árbol de decisión del Codex que justifica las excepciones. Reconsiderar la fila 6 como prerrequisito (PPR) en lugar de PCC."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "14-fichas-14-alergenos.xlsx",
+      "ubicacion": "14 Alérgenos:B20 (combinada B20:D20, wrap_text=False)",
+      "hallazgo": "El protocolo de actuación ante un cliente alérgico está en una celda COMBINADA sin ajuste de texto y ocupa 158 caracteres frente a un ancho combinado de ~125. Las celdas combinadas no desbordan al vecino como las normales: el texto se corta duro en el borde de D. Se pierde el último paso del protocolo, precisamente el que cierra el circuito hacia la sala. Y el fichero está pensado para imprimirse y colgarse en cocina y barra, así que el recorte viaja al papel.",
+      "evidencia": "B20 = 'PROTOCOLO: Si un cliente informa de alergia → consultar carta de alérgenos → informar al chef → preparar con utensilios limpios → servir con aviso al camarero' (158 caracteres). Combinada B20:D20; anchos B=25, C=50, D=50 → ~125 unidades. alignment.wrap_text = None. Instrucciones:B6 = '▸ Imprime estas fichas y colócalas en cocina y sala'.",
+      "fix": "Poner wrap_text=True en B20 y fijar row_dimensions[20].height ≈ 30 (dos líneas), o partir el protocolo en varias filas de un paso cada una, como hace BONUS-02."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "TODOS los que usan desplegables (02, 03, 05, 07, 08, 09, 10, 11, 12, 15, BONUS-01)",
+      "ubicacion": "Las 15 dataValidation del pack: todas con showErrorMessage=False y allow_blank=True",
+      "hallazgo": "Ninguna validación valida. Con showErrorMessage=False Excel acepta en silencio cualquier texto tecleado a mano en la celda; el desplegable es sólo una comodidad. Donde esto deja de ser estético es en el fichero 15: su resumen automático —la única función de agregación del pack— compara por igualdad exacta contra las cadenas del desplegable, con glifos ✓ ⚠ ✗ que no están en un teclado español. Un encargado que escriba «Cumple», «OK» o «Sí» ve su respuesta ignorada por el contador, sin ningún aviso, y el resumen infradeclara el cumplimiento.",
+      "evidencia": "Todas las DV: allowblank True, showErr False. 15-guia-inspeccion-sanidad.xlsx:25 Puntos Inspección — DV list \"✓ Cumple,⚠ Mejorar,✗ No cumple\" sobre E6:E36; C39 = COUNTIF(E5:E37,\"✓ Cumple\"), C40 = COUNTIF(E5:E37,\"⚠ Mejorar\"), C41 = COUNTIF(E5:E37,\"✗ No cumple\").",
+      "fix": "Poner showErrorMessage=True (con errorTitle/error explicativos) en las 15 validaciones. En 15, además, añadir C42 = 23-C39-C40-C41 etiquetado «Sin responder» para que un valor no reconocido se delate en vez de desaparecer."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Plan Maestro L+D:C9, C18, C21:C23 (valores fuera de lista) y C13, C19, C24, C28 (filas libres sin desplegable)",
+      "hallazgo": "El desplegable de Frecuencia ofrece seis opciones y cinco de las celdas que vienen pre-rellenadas contienen valores que NO están en esa lista. Al abrir el desplegable en esas celdas el usuario ve seis opciones ninguna de las cuales es la que está escrita, y elegir cualquiera destruye la frecuencia correcta (2 veces/día en baños pasa a Diaria). Simétricamente, las cuatro filas libres verdes que rematan cada sección —las que el usuario debe usar para personalizar, según Instrucciones:B8— se quedaron FUERA del rango de la validación y no tienen desplegable.",
+      "evidencia": "DV list \"Cada servicio,Diaria,Semanal,Quincenal,Mensual,Trimestral\" aplicada a C6:C12, C15:C18, C21:C23, C26:C27, C30:C41. Valores fuera de lista: C9='Semanal filtros / Mensual campana', C18='Cada uso', C21=C22=C23='2 veces/día'. Filas verdes editables sin DV: C13, C19, C24, C28 (el relleno E8F5E9 sí las cubre, A13/B13/…/G13 etc.).",
+      "fix": "Añadir 'Cada uso' y '2 veces/día' a la lista, partir C9 en dos filas (filtros / campana), y extender el sqref de la DV a C13, C19, C24 y C28."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "03-plan-limpieza-desinfeccion.xlsx",
+      "ubicacion": "Instrucciones:B18 vs Plan Maestro L+D (sin bloque EXTERIOR; filas 32-43 en blanco)",
+      "hallazgo": "La hoja de Instrucciones enumera seis zonas estándar y el Plan Maestro sólo desarrolla cinco: falta EXTERIOR (terraza, entrada, contenedores de basura) por completo, sin encabezado ni filas. Los contenedores de basura exteriores son un foco de plagas de primer orden y el pack vende un fichero de control de plagas aparte, así que el hueco es visible. Debajo de VESTUARIOS quedan doce filas verdes sin encabezado de sección, que es donde debería estar ese bloque.",
+      "evidencia": "Instrucciones:B13-B18 lista 'Cocina', 'Sala/Comedor', 'Baños', 'Almacén', 'Vestuarios' y '▸ Exterior (terraza, entrada, contenedores basura)'. En Plan Maestro L+D los encabezados de sección son A5='COCINA', A14='SALA / COMEDOR', A20='BAÑOS', A25='ALMACÉN', A29='VESTUARIOS'. Filas 32-43 vacías (con relleno verde) hasta la nota de A44.",
+      "fix": "Añadir el encabezado 'EXTERIOR' en A33 y tres filas (terraza/entrada, contenedores de basura, zona de carga) siguiendo el patrón de las demás secciones. De paso sube el recuento de zonas reales de 18 hacia las 25+ que anuncian landing y dashboard."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "04-registro-limpieza-diaria.xlsx",
+      "ubicacion": "Limpieza Diaria: print_area = $A$1:$H$29, con contenido en A31 y A32",
+      "hallazgo": "Es el único fichero del pack con un área de impresión que no llega al final del contenido, y es precisamente el que se imprime todas las semanas. Quedan fuera del papel la nota de conservación legal («Archivar hojas firmadas durante mínimo 2 años») y el pie de marca. La hoja que el cliente archiva y enseña al inspector pierde la única indicación de cuánto tiempo debe conservarla, y AI Chef Pro pierde su firma en el documento que más se reproduce del pack.",
+      "evidencia": "ws.print_area = \"'Limpieza Diaria'!$A$1:$H$29\", ws.max_row = 32. A31 = 'Marcar con ✓ cuando se complete. Archivar hojas firmadas durante mínimo 2 años.' A32 = '— Pack de Plantillas APPCC · AI Chef Pro · aichef.pro'. Comparar con 01, cuyo print_area $A$1:$G$67 sí cubre max_row=67.",
+      "fix": "Cambiar el área de impresión a 'Limpieza Diaria'!$A$1:$H$32."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "05-checklist-recepcion-mercancias.xlsx, 06-registro-trazabilidad.xlsx, 07-control-plagas-ddd.xlsx, BONUS-01-registro-formacion.xlsx",
+      "ubicacion": "print_title_rows = None en las cuatro hojas de datos",
+      "hallazgo": "Cuatro registros no repiten la fila de encabezados al pasar de página, mientras que los otros nueve sí la fijan. El de trazabilidad es el caso claro: 36 filas de datos en A4 apaisado no caben en una hoja, así que la página 2 sale como una rejilla de columnas anónimas. En un registro de trazabilidad donde hay que distinguir «Fecha Caducidad» de «Fecha Consumo» y «Nº Lote» de «Cantidad», una segunda página sin cabecera es un documento que no se puede leer ni auditar.",
+      "evidencia": "print_title_rows: 05='None', 06='None', 07='None', BONUS-01='None'. Contra 02='$4:$4', 03='$4:$4', 09='$4:$4', 10='$4:$4', 11='$4:$4', 12='$4:$4', 15='$4:$4', 08='$5:$5', 01='$6:$6'. 06-registro-trazabilidad.xlsx:Trazabilidad tiene datos hasta la fila 40 con cabecera en la 4.",
+      "fix": "ws.print_title_rows = '4:4' en 05, 06 y 07, y '3:3' en BONUS-01 (su cabecera está en la fila 3)."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "10-control-agua-potable.xlsx",
+      "ubicacion": "Control Agua:E5:E19",
+      "hallazgo": "La guarda de vacío sólo mira el cloro. Si el operario anota agua turbia o con olor extraño pero no llega a medir el cloro —el caso típico: se detecta el problema a simple vista y se avisa antes de sacar el kit—, la columna Estado devuelve cadena vacía en lugar de REVISAR. El único indicio registrado de agua no potable no dispara ninguna señal. Al revés funciona peor de lo necesario pero en dirección segura, así que el fallo es asimétrico y va justo hacia el lado malo.",
+      "evidencia": "E5 = IF(C5=\"\",\"\",IF(AND(C5>=0.2,C5<=1.0,D5=\"Normal\"),\"OK\",\"REVISAR\")). Con C5 vacía y D5='Turbio' → la condición externa C5=\"\" es VERDADERA → \"\". La DV de D5:D19 ofrece 'Normal,Turbio,Olor extraño,Color anormal', es decir, tres de las cuatro opciones son anomalías.",
+      "fix": "Invertir el orden de las guardas: =IF(AND(C5=\"\",D5=\"\"),\"\",IF(AND(D5<>\"\",D5<>\"Normal\"),\"REVISAR\",IF(C5=\"\",\"FALTA CLORO\",IF(AND(C5>=0.2,C5<=1),\"OK\",\"REVISAR\"))))."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "15-guia-inspeccion-sanidad.xlsx",
+      "ubicacion": "25 Puntos Inspección:C39:C41 (resumen) y columna D6:D36 (Gravedad)",
+      "hallazgo": "El resumen automático mete en el mismo saco los incumplimientos LEVE y los GRAVE, pero el propio fichero avisa en su nota de cierre de que los GRAVE pueden suponer cierre cautelar. El dato accionable —cuántos puntos graves has suspendido— es el que no se calcula, aunque la columna de gravedad ya está ahí y bastaría un COUNTIFS. Un local con 3 GRAVE fallados y 2 LEVE lee «5 puntos que no cumplen» y no distingue el riesgo de cierre del detalle menor.",
+      "evidencia": "C39 = COUNTIF(E5:E37,\"✓ Cumple\"), C40 = COUNTIF(E5:E37,\"⚠ Mejorar\"), C41 = COUNTIF(E5:E37,\"✗ No cumple\") — las tres ignoran la columna D. D6='GRAVE', D10='MODERADA', D23='LEVE'… A43 = 'Los puntos marcados como GRAVE pueden suponer cierre cautelar del establecimiento.'",
+      "fix": "Añadir C42 = COUNTIFS($D$5:$D$37,\"GRAVE\",$E$5:$E$37,\"✗ No cumple\") con la etiqueta «Puntos GRAVES incumplidos (riesgo de cierre)» y formato condicional rojo si >0. Añadir también un % de cumplimiento sobre los 23 puntos."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "04-registro-limpieza-diaria.xlsx, 05-checklist-recepcion-mercancias.xlsx, 06-registro-trazabilidad.xlsx",
+      "ubicacion": "04:Limpieza Diaria:A31 · 05:Recepción Mercancías:A31 · 06:Trazabilidad:A42",
+      "hallazgo": "El pack da al cliente dos plazos de conservación distintos sin explicar por qué, en tres ficheros que se archivan juntos en la misma carpeta APPCC. Quien lo lea concluirá que puede tirar los registros de limpieza y recepción a los dos años y guardar cinco los de trazabilidad, o —más probable— se quedará con el plazo corto para todo. Un criterio de archivo contradictorio dentro del mismo producto es lo primero que se nota al montar la carpeta.",
+      "evidencia": "04:A31 = '…Archivar hojas firmadas durante mínimo 2 años.' 05:A31 = 'Conservar junto con albaranes de entrega. Archivo mínimo: 2 años.' 06:A42 = 'Conservar registros mínimo 5 años (Reglamento CE 178/2002).' Ningún fichero explica la diferencia y ninguno remite a los otros.",
+      "fix": "Unificar el criterio y explicarlo una vez. Si se mantiene la diferencia, decir en cada nota a qué obedece (la orientación de la Comisión sobre el art. 18 del Reg. 178/2002 modula el plazo según la vida útil del producto, no fija 5 años en bloque)."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "08-matriz-alergenos.xlsx",
+      "ubicacion": "Matriz Alérgenos:K5",
+      "hallazgo": "El encabezado del octavo alérgeno está recortado y además mal escrito. Ocupa 14 caracteres en una columna de ancho 12 y su vecina L5 ('Apio') no está vacía, así que Excel corta el texto en el borde: en pantalla y en papel se lee «Frutos cásca». Encima el nombre pierde la preposición respecto a la denominación legal, que la propia hoja de Instrucciones del mismo fichero escribe bien. Es la cabecera de una columna de un documento de declaración obligatoria.",
+      "evidencia": "K5 = 'Frutos cáscara' (14 caracteres), column_dimensions['K'].width = 12.0, alignment.wrap_text = None, L5 = 'Crustáceos'… perdón, L5 = 'Apio' (no vacía). Instrucciones:B15 = '▸ 5. Cacahuetes | 6. Soja | 7. Lácteos | 8. Frutos de cáscara'. Los otros 13 encabezados (D5:Q5) caben en 12.",
+      "fix": "Poner wrap_text=True en D5:Q5 con row_dimensions[5].height ≈ 30, y corregir K5 a 'Frutos de cáscara'. Con el ajuste de texto activo cabe en dos líneas sin tocar el ancho de columna, que está calibrado para las marcas S/T/N."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "09-control-aceite-fritura.xlsx, 10-control-agua-potable.xlsx",
+      "ubicacion": "09:Instrucciones:B10 y Control Aceite:A26 · 10:Instrucciones:B10 y Control Agua:A21",
+      "hallazgo": "Los dos registros que citan una norma concreta citan normas derogadas, y en el caso del aceite además una que no contiene el límite que se le atribuye. El RD 2207/1995 es la norma general de higiene alimentaria (desplazada por el Reg. CE 852/2004 y derogada por el RD 640/2006); el 25 % de compuestos polares procede de la Orden de 26 de enero de 1989 sobre aceites y grasas calentados. El RD 140/2003 de agua de consumo fue derogado por el RD 3/2023. El fichero lleva sello «Versión 1.1 · agosto 2026»: son citas obsoletas en un documento que se enseña a un inspector, que es exactamente el lector que se dará cuenta.",
+      "evidencia": "09:Instrucciones:B10 = '▸ Obligatorio según RD 2207/1995'; 09:Control Aceite:A26 = 'Límite legal: máx. 25% compuestos polares (RD 2207/1995)…'. 10:Instrucciones:B10 = '▸ Obligatorio según RD 140/2003'; 10:Control Agua:A21 = 'Cloro residual aceptable: 0.2 - 1.0 mg/L (RD 140/2003).' Todas las hojas Instrucciones cierran con 'Versión 1.1 · agosto 2026'.",
+      "fix": "En 09 sustituir por la Orden de 26 de enero de 1989 (Norma de Calidad para aceites y grasas calentados) para el 25 %, y por el Reg. CE 852/2004 si se quiere la referencia de higiene general. En 10 sustituir RD 140/2003 por RD 3/2023 y verificar el rango de desinfectante residual contra su Anexo I. Revisar de paso las demás citas del pack (178/2002 en 06, 1169/2011 y RD 126/2015 en 08 y 14, que sí son correctas)."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "07-control-plagas-ddd.xlsx",
+      "ubicacion": "Control Plagas DDD: 20 filas de datos (5-24) con A2 = 'Año: ______'",
+      "hallazgo": "La hoja se encabeza como registro anual y ofrece 20 filas, pero las frecuencias que prescribe su propia hoja de Instrucciones suman del orden de 70 actuaciones al año. El cliente se queda sin sitio en marzo. Y como las filas están estilizadas a mano (relleno verde, bordes) y el desplegable de Tipo de Actuación sólo cubre B5:B24, añadir filas obliga a copiar formato y validación a mano — el pack no usa tablas estructuradas en ninguna hoja.",
+      "evidencia": "A2 = 'Año: ______'; filas de datos 5-24 (relleno E8F5E9, 160 celdas = 20 filas × 8 columnas); DV sobre B5:B24. Instrucciones:B13-B16 = 'Desinsectación: trimestral' (4) + 'Desratización: mensual revisión de cebos' (12) + 'Desinfección general: semestral' (2) + 'Revisión visual: semanal' (52) ≈ 70 actuaciones/año.",
+      "fix": "Extender a 80 filas con formato y DV, o cambiar A2 a 'Trimestre: ___'. Mismo problema de dimensionado en 02 (30 filas/'Mes'), 05 (25 filas/'Mes'), 11 (25 filas/'Año') y 10 (15 filas). Lo robusto es convertir cada rango en una tabla de Excel para que formato, validación y fórmulas se propaguen solas."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "media",
+      "fichero": "BONUS-02-protocolo-alerta-alimentaria.xlsx",
+      "ubicacion": "Protocolo Alerta:A35 vs page_setup (paperSize=9, orientation='portrait')",
+      "hallazgo": "El cartel indica al usuario que lo imprima en A3, pero el fichero está configurado en A4 vertical con ajuste a una página de ancho. Quien siga la instrucción y cargue A3 en la bandeja obtendrá el contenido escalado a la mitad de la hoja, con el resto en blanco. Es una contradicción entre la instrucción impresa y la configuración de página en el único fichero del pack cuyo formato de salida se menciona explícitamente — y contradice también el criterio A4 aplicado al resto del pack.",
+      "evidencia": "A35 = 'Imprimir en A3 y colocar en zona visible. Todo el personal debe conocer este protocolo.' page_setup: paperSize = 9 (A4), orientation = 'portrait', fitToWidth = 1, fitToHeight = 0, pageSetUpPr fitToPage = True. Los 17 ficheros del pack tienen paperSize = 9.",
+      "fix": "Decidir uno de los dos. Si se quiere A3, poner paperSize = 8 y ajustar fitToHeight = 1. Si se mantiene A4 (coherente con el resto del pack), cambiar A35 a 'Imprimir en A4 y colocar en zona visible'."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "media",
+      "fichero": "04-registro-limpieza-diaria.xlsx (y contraste con 05, 13, 15)",
+      "ubicacion": "04:Limpieza Diaria:B6:H28 (celdas de marcado, sin DV) e Instrucciones:B7 · A31",
+      "hallazgo": "El fichero cuya interacción principal es marcar una casilla le pide al usuario un carácter que no puede teclear: ✓ (U+2713) no está en un teclado español y el fichero no ofrece ni desplegable, ni casilla ☐ pre-puesta, ni ninguna otra vía. Además el pack usa cuatro convenciones distintas para el mismo gesto de «marcar hecho», lo que rompe la coherencia de un producto que se archiva como una sola carpeta.",
+      "evidencia": "04:Instrucciones:B7 = '▸ El responsable de limpieza marca con ✓ cada tarea completada'; 04:A31 = 'Marcar con ✓ cuando se complete'; 04 tiene 0 validaciones de datos y ningún ☐ en B6:H28. Contra: 13-checklist-higiene-personal.xlsx usa 20 celdas con '☐' escrito; 05-checklist-recepcion-mercancias.xlsx usa DV list \"✓,✗\"; 15-guia-inspeccion-sanidad.xlsx usa DV list \"✓ Cumple,⚠ Mejorar,✗ No cumple\".",
+      "fix": "Añadir a 04 una DV list \"✓,✗,N/A\" sobre B6:H28 (mismo patrón que 05) y unificar la convención del pack: desplegable ✓/✗ en las hojas que se rellenan en pantalla, ☐ pre-impreso en las que se rellenan a bolígrafo (13, BONUS-02)."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "media",
+      "fichero": "02-registro-temperaturas-recepcion.xlsx y 05-checklist-recepcion-mercancias.xlsx",
+      "ubicacion": "02:Recepción Temperaturas:A4:I4 vs 05:Recepción Mercancías:A4:K4",
+      "hallazgo": "Dos de los 17 registros documentan el MISMO evento con cinco campos idénticos. El cliente tiene que anotar cada entrega dos veces —fecha, producto, proveedor, temperatura y observaciones en ambas— o elegir cuál rellena y dejar la otra vacía en la carpeta. En la práctica se rellena una y la otra queda como hueco documental. Peor: la lógica está sólo en 02, así que la hoja más completa (05, con etiquetado, envase, aspecto y cantidad) es la que no calcula nada y deja la decisión de aceptar en un desplegable libre.",
+      "evidencia": "02: Fecha, Producto, Proveedor, Temp. Recibida (°C), Límite Máx., Estado[fórmula], Lote/Caducidad, Aceptado (S/N), Observaciones. 05: Fecha, Producto, Proveedor, Temp. (°C), Caducidad, Etiquetado OK, Envase OK, Aspecto OK, Cantidad OK, Aceptado, Observaciones. Coinciden Fecha, Producto, Proveedor, Temp. y Observaciones. 05 tiene 0 fórmulas; 02 tiene 30.",
+      "fix": "Fundir en un solo registro de recepción: las columnas de 05 más la de Límite Máx. y la fórmula de Estado de 02, con un veredicto que combine temperatura y los cuatro checks (=IF(OR(F5=\"✗\",G5=\"✗\",H5=\"✗\",I5=\"✗\",estadoTemp=\"RECHAZAR\"),\"RECHAZAR\",\"OK\")). Si se quiere conservar el recuento de 17 entregables, reemplazar el hueco con uno de los registros que TEC-04 echa en falta (cocción o enfriamiento)."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "media",
+      "fichero": "06-registro-trazabilidad.xlsx",
+      "ubicacion": "Trazabilidad:A1 y A4:I4 vs Instrucciones:B6 y src/pages/PackAppccDashboard.tsx:21",
+      "hallazgo": "El registro se titula «Entrada de Productos» y su estructura es exclusivamente de entrada, pero tanto sus propias instrucciones como la ficha del dashboard prometen entrada Y salida. Lo único que apunta hacia adelante es una columna «Destino / Uso» de texto libre de 15 de ancho. El cliente que lea la instrucción buscará la sección de salidas y no la encontrará; y en un evento real de alerta alimentaria (el escenario que el propio fichero plantea en A41 y que BONUS-02 desarrolla) la pregunta operativa es a quién se sirvió el lote, que es justo lo que no está estructurado.",
+      "evidencia": "A1 = 'Registro de Trazabilidad — Entrada de Productos'. Instrucciones:B6 = '▸ Registra TODOS los productos que entran y salen'. src/pages/PackAppccDashboard.tsx:21 desc = 'Entrada/salida de productos con lote, proveedor y fechas.' Columnas: Fecha Entrada, Producto, Nº Lote, Proveedor, Fecha Caducidad, Fecha Consumo, Cantidad, Destino / Uso, Observaciones — ninguna de salida estructurada.",
+      "fix": "O añadir un bloque de salida (fecha, lote, cantidad, destino/servicio, nº comensales o cliente), o alinear las tres promesas al alcance real: cambiar Instrucciones:B6 a '…que entran' y la desc del dashboard a 'Entrada de productos con lote, proveedor y fechas'."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "media",
+      "fichero": "12-analisis-peligros-haccp.xlsx",
+      "ubicacion": "Análisis Peligros: DV sobre B18:B27, D18:E27, F18:F27; nada sobre las filas 5-17",
+      "hallazgo": "Los tres desplegables cubren únicamente las diez filas en blanco y dejan sin validación las trece filas de contenido entregado. Adaptar el análisis al propio local —que es lo que Instrucciones pide hacer— significa editar las filas 5-17, y ahí no hay desplegables: el usuario teclea a mano «SI (PCC)» sin tilde, «Sí», «PCC» o «Medio» en vez de «Media», y el documento acaba con vocabulario mezclado en la tabla que se enseña al inspector. La ayuda está exactamente donde no se necesita.",
+      "evidencia": "DV list \"B (Biológico),Q (Químico),F (Físico)\" → B18:B27. DV list \"Alta,Media,Baja\" → D18:E27. DV list \"SÍ (PCC),NO\" → F18:F27. Las filas 5-17 (los 13 peligros pre-rellenados) no aparecen en ningún sqref. Instrucciones:B6 = '▸ Identifica los peligros en cada fase del proceso alimentario'.",
+      "fix": "Extender los tres sqref a B5:B27, D5:E27 y F5:F27. Mismo patrón a revisar en 03 (TEC-11), donde también se dejaron filas fuera del rango de validación."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "media",
+      "fichero": "TODOS los ficheros con fórmulas (01, 02, 08, 09, 10, 15)",
+      "ubicacion": "Última fila con fórmula de cada hoja: 01:C63/F63 · 02:F34 · 08:D47:Q47 (rango D6:D45) · 09:F24 · 10:E19 · 15:C39:C41 (rango E5:E37)",
+      "hallazgo": "La FAQ de la landing promete que el cliente puede ampliar las plantillas, pero ninguna hoja usa tablas estructuradas: al insertar una fila más allá de la última estilizada no se hereda ni la fórmula de Estado, ni la validación, ni el relleno verde que la landing usa como señal de «celda editable». La fila nueva queda muda —sin veredicto y sin desplegable— y con el mismo aspecto que una fila de fórmula, así que el usuario no tiene forma de notar que su control dejó de calcular. En 08 el problema es peor porque los COUNTIF están anclados a D6:D45: el plato 41 no entra en el total y nada avisa.",
+      "evidencia": "src/pages/PackAppcc.tsx:106 FAQ = 'Totalmente. Puedes añadir zonas de limpieza, equipos de frío, platos a la matriz de alérgenos, peligros al análisis HACCP. Las celdas editables están marcadas en verde.' Ninguna hoja del pack define un ListObject/tabla. 08:D47 = COUNTIF(D6:D45,\"S\")+COUNTIF(D6:D45,\"T\"); la DV de la matriz termina en la fila 45.",
+      "fix": "Convertir cada rango de datos en tabla de Excel (openpyxl Table + TableStyleInfo) para que fórmula, validación y formato se propaguen al escribir una fila nueva. Alternativa barata: ampliar los rangos de COUNTIF con desbordamiento (D6:D200) y prealimentar 50 filas más con fórmula, DV y relleno."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "baja",
+      "fichero": "04-registro-limpieza-diaria.xlsx",
+      "ubicacion": "Limpieza Diaria:B4:H4 vs src/pages/PackAppccDashboard.tsx:19",
+      "hallazgo": "El dashboard vende un checklist «por turno» y la hoja está organizada por día: una sola marca por tarea y jornada, sin desglose de mañana/tarde. En un local con doble servicio el registro no distingue si las superficies se desinfectaron después de la comida o sólo al cierre, que es justo lo que un inspector pregunta. La cabecera de verificación tampoco es por turno: una sola línea de firma para toda la semana.",
+      "evidencia": "src/pages/PackAppccDashboard.tsx:19 desc = 'Checklist diario por turno con verificación y firma.' La hoja tiene B4='Lun', C4='Mar', D4='Mié', E4='Jue', F4='Vie', G4='Sáb', H4='Dom' — siete columnas de día, ninguna de turno. A27 = 'Verificado por (nombre):' y A28 = 'Firma:' aparecen una sola vez, en las filas 27-28. Contra 01, que sí desdobla mañana/tarde.",
+      "fix": "O desdoblar cada día en dos columnas (M/T) —14 columnas, cabe en A4 apaisado—, o corregir la desc del dashboard a 'Checklist diario con verificación y firma'."
+     },
+     {
+      "id": "TEC-28",
+      "severidad": "baja",
+      "fichero": "BONUS-01-registro-formacion.xlsx",
+      "ubicacion": "Formación Personal:A3:H3 (sin columna de vigencia) vs A25",
+      "hallazgo": "El registro captura fecha de inicio, fecha de fin, duración y nº de certificado, pero no la fecha de caducidad de la formación ni ninguna fórmula que avise de un certificado vencido — y su propia nota de cierre insiste en que la formación debe estar «vigente», que es también el punto 3 de la guía de inspección. El dato que el inspector comprueba es el único que no se registra ni se calcula, en un fichero donde el resto del pack ya demuestra que se sabe hacer un COUNTIF.",
+      "evidencia": "Cabeceras: A3='Nombre Empleado', B3='Puesto', C3='Formación Recibida', D3='Fecha Inicio', E3='Fecha Fin', F3='Duración (h)', G3='Entidad Formadora', H3='Nº Certificado'. A25 = 'Todo el personal que manipula alimentos debe tener formación acreditada vigente.' 0 fórmulas en el fichero. 15-guia-inspeccion-sanidad.xlsx:B8 punto 3 = 'Certificados de formación del personal' con D8='GRAVE'.",
+      "fix": "Añadir columna I 'Válido hasta' y columna J con =IF(I4=\"\",\"\",IF(I4<TODAY(),\"CADUCADO\",IF(I4<TODAY()+60,\"CADUCA PRONTO\",\"Vigente\"))), más formato condicional rojo/ámbar y un contador de caducados en la cabecera."
+     },
+     {
+      "id": "TEC-29",
+      "severidad": "baja",
+      "fichero": "13-checklist-higiene-personal.xlsx",
+      "ubicacion": "Higiene Personal:B33",
+      "hallazgo": "La línea de firma y fecha del verificador excede el ancho del rango usado de la hoja (columnas A-C) y, como no hay área de impresión definida, Excel imprime sólo hasta la última columna con contenido: el cartel sale con la línea de fecha cortada por la mitad. Es el remate del documento que las instrucciones mandan colgar en el vestuario y firmar semanalmente.",
+      "evidencia": "B33 = 'Responsable verificación: _________________________    Fecha: ___/___/______' (76 caracteres), wrap_text=None, no combinada. Anchos B=55 + C=12 = 67 unidades; D está vacía pero fuera del rango usado (max_column=3) y ws.print_area no está definido. Instrucciones:B8 = '▸ El encargado verifica semanalmente'.",
+      "fix": "Definir ws.print_area = 'Higiene Personal'!$A$1:$D$36 (o mover la fecha a la fila 34 en una celda propia). Definir área de impresión explícita en las hojas que no la tienen: sólo 01 y 04 la declaran."
+     },
+     {
+      "id": "TEC-30",
+      "severidad": "baja",
+      "fichero": "02-registro-temperaturas-recepcion.xlsx",
+      "ubicacion": "Recepción Temperaturas:H5:H34 ('Aceptado (S/N)') frente a F5:F34 ('Estado')",
+      "hallazgo": "La columna que registra la DECISIÓN es un desplegable libre que no dialoga con la columna que la calcula. Nada impide —ni señala— una fila con Estado=RECHAZAR y Aceptado=S, que es exactamente la combinación que un inspector busca al hojear el registro y la que documenta una no conformidad aceptada a sabiendas. Existiendo ya la fórmula de Estado, dejar la contradicción sin marcar desaprovecha el único control automático de la hoja.",
+      "evidencia": "F5 = IF(D5=\"\",\"\",IF(E5=\"N/A\",\"OK\",IF(D5<=E5,\"OK\",\"RECHAZAR\"))). DV list \"S,N\" sobre H5:H34, allow_blank=True, showErrorMessage=False. Ninguna fórmula ni formato condicional cruza F con H. A36 = 'Si Estado = RECHAZAR: devolver producto al proveedor y registrar en Acciones Correctivas.'",
+      "fix": "Añadir formato condicional sobre A5:I34 con la fórmula =AND($F5=\"RECHAZAR\",$H5=\"S\") en rojo, o una columna J de aviso: =IF(AND(F5=\"RECHAZAR\",H5=\"S\"),\"⚠ Aceptado pese a RECHAZAR — justificar en Acciones Correctivas\",\"\")."
+     },
+     {
+      "id": "TEC-31",
+      "severidad": "baja",
+      "fichero": "01-registro-temperaturas-diario.xlsx",
+      "ubicacion": "Registro Semanal:C57:C63 y F57:F63 vs Instrucciones:B16",
+      "hallazgo": "El bloque de exposición caliente cierra el rango por arriba a 100 °C mientras las instrucciones del mismo fichero definen el criterio como «65 °C o superior», sin techo. Una vitrina caliente o un baño maría a 102 °C —lectura habitual en equipos que trabajan con agua hirviendo— marca ALERTA sin que exista ninguna no conformidad. Es el mismo patrón que TEC-05 en el otro extremo de la escala.",
+      "evidencia": "C57 = IF(B57=\"\",\"\",IF(AND(B57>=65,B57<=100),\"OK\",\"ALERTA\")) — 14 celdas iguales en las filas 57-63. Instrucciones:B16 = '▸ Exposición caliente: 65°C o superior'. Cabecera A55 = '📍 Exposición Caliente (Baño María) | Rango: 65°C a 100°C'.",
+      "fix": "=IF(B57=\"\",\"\",IF(B57>=65,\"OK\",\"ALERTA\")) y actualizar A55 a '65 °C o superior', o justificar el techo en Instrucciones si se quiere detectar sobrecalentamiento."
+     },
+     {
+      "id": "TEC-32",
+      "severidad": "baja",
+      "fichero": "14-fichas-14-alergenos.xlsx",
+      "ubicacion": "14 Alérgenos:C16",
+      "hallazgo": "La ficha de sulfitos da el umbral de declaración obligatoria sin la referencia analítica que lo define. El Anexo II del Reglamento UE 1169/2011 expresa ese límite como SO2, y sin esa coletilla el umbral queda ambiguo para quien tenga que interpretarlo contra la ficha técnica de un proveedor. Es la única de las 14 fichas que cita una cifra, así que conviene que la cite completa.",
+      "evidencia": "C16 = 'Dióxido de azufre y sulfitos (> 10 mg/kg o 10 mg/L)'. Las otras 13 fichas (C5, C6, C7…) son descriptivas y no citan umbrales. B2 = 'Reglamento UE 1169/2011 — Real Decreto 126/2015'.",
+      "fix": "C16 = 'Dióxido de azufre y sulfitos en concentración superior a 10 mg/kg o 10 mg/L expresado como SO2'."
+     }
+    ]
+   }
+  }
+ }
+}
