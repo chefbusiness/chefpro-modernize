@@ -282,6 +282,8 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-negocio-panaderia',
     label: '¿Ya compraste el Plan de Negocio Panadería? Vuelve a entrar al dashboard',

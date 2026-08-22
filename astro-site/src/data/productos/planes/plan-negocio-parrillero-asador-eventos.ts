@@ -296,6 +296,8 @@ const data: PlanNegocioData = {
     { href: '/kit-tareas-asador', label: 'Kit Tareas Asador' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-negocio-parrillero-asador-eventos',
     label: '¿Ya compraste el Plan Parrillero / Asador Eventos? Vuelve a entrar al dashboard',

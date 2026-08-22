@@ -303,6 +303,8 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-paellero-eventos', label: 'Plan Paellero Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-catering-tematico-eventos',
     label: '¿Ya compraste el Plan Catering Temático? Vuelve a entrar al dashboard',

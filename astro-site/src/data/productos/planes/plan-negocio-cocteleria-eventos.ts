@@ -285,6 +285,8 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-food-truck', label: 'Plan Food Truck' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-negocio-cocteleria-eventos',
     label: '¿Ya compraste el Plan Coctelería de Eventos? Vuelve a entrar al dashboard',

@@ -300,6 +300,8 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-parrillero-asador-eventos', label: 'Plan Parrillero Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-chef-privado-showcooking-eventos',
     label: '¿Ya compraste el Plan Chef Privado / Showcooking? Vuelve a entrar al dashboard',

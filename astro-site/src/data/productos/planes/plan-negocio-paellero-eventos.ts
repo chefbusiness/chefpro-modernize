@@ -296,6 +296,8 @@ const data: PlanNegocioData = {
     { href: '/plan-negocio-cocteleria-eventos', label: 'Plan Coctelería Eventos' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-negocio-paellero-eventos',
     label: '¿Ya compraste el Plan Paellero / Paella Eventos? Vuelve a entrar al dashboard',

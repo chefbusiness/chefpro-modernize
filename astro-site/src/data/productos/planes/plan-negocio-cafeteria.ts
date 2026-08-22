@@ -287,6 +287,8 @@ const data: PlanNegocioData = {
     { href: '/pack-appcc', label: 'Pack APPCC' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'plan-negocio-cafeteria',
     label: '¿Ya compraste el Plan de Negocio Cafetería? Vuelve a entrar al dashboard',

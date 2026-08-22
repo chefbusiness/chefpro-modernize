@@ -293,6 +293,8 @@ const data: KitExcelData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'pack-appcc',
     label: '¿Ya compraste el Pack APPCC? Vuelve a entrar al dashboard',

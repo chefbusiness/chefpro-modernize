@@ -152,4 +152,9 @@ export interface GuiaData {
     /** BreadcrumbList completo tal cual la SPA (2 o 3 ítems). position = índice + 1. */
     breadcrumb: { name: string; item: string }[];
   };
+
+  /** Opcional (2026-08-18). Nota de vigencia bajo el precio del hero, p. ej.
+   *  «Producto actualizado · Versión 2.0 · agosto 2026». Solo la pintan los kits que
+   *  la definen; el resto no cambia. */
+  updateNote?: string;
 }

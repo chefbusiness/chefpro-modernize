@@ -175,6 +175,8 @@ const data: GuiaData = {
     { label: 'Contacto', href: 'mailto:info@aichef.pro' },
   ],
 
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'guia-panaderia-obrador',
     label: '¿Ya compraste la guía? Vuelve a entrar al dashboard',
