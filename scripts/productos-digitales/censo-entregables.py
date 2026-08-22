@@ -67,6 +67,13 @@ Qué mide cada campo y por qué (para no reinventar la rueda leyendo el código)
                    de la Fase A casi todas las hojas nuevas no tienen
                    paperSize fijado (None) y algunos visores imprimen en
                    Letter o con márgenes por defecto.
+    autoria        True si alguna celda nombra a John Guerrero (la firma de
+                   autoría que la Fase A ancló). INFORMATIVO, no activa --fail:
+                   sirve para medir la cobertura de la bio, que en kit-tareas
+                   sólo estaba en 2 de los 11 ficheros porque la Fase A
+                   SUSTITUYE bios existentes y nunca las AÑADE (DOM-30 de la
+                   R1). Se mide sobre todo el libro, no sólo sobre
+                   'Instrucciones': hay generadores que la ponen en el pie.
     version_line   True si alguna celda empieza por 'Versión ' o 'Version ' —
                    para detectar de un vistazo si el fichero ya lleva la línea
                    de versión/marca en Instrucciones. Informativo, no falla el
@@ -86,6 +93,7 @@ Qué mide cada campo y por qué (para no reinventar la rueda leyendo el código)
   Por DOCX (python-docx):
     parrafos       nº de párrafos no vacíos — orientativo, no defecto.
     bio_vieja      mismo patrón que en xlsx, sobre el texto de cada párrafo.
+    autoria        mismo patrón que en xlsx, sobre el texto de cada párrafo.
     nonlat         mismo patrón que en xlsx, sobre el texto de cada párrafo.
 
   Por PDF: si hay `pdftotext` en el PATH se extrae texto y se mide nonlat
@@ -139,6 +147,10 @@ RX_NONLAT = re.compile(
 RX_BIO_VIEJA = re.compile(
     r'29 a[ñn]os|15 a[ñn]os|a[ñn]os de experiencia|15\+ a[ñn]os|29\+ a[ñn]os'
 )
+#: Firma de autoría anclada (informativa). Basta el nombre: la redacción larga
+#: («chef y consultor gastronómico desde 2010…») convive con variantes cortas
+#: en algunos pies, y lo que se quiere medir es si el fichero atribuye o no.
+RX_AUTORIA = re.compile(r'John\s+Guerrero', re.I)
 
 #: Falsos positivos REALES y documentados de RX_BIO_VIEJA: no son bios, son
 #: contenido de negocio que casualmente casa el patrón — la vida útil de un
@@ -203,6 +215,7 @@ def censar_xlsx(path, prod, fname):
     nocache_pycel = 0
     nonlat = 0
     bio_vieja = False
+    autoria = False
     box_colA = 0
     box_colA_dv = 0
     version_line = False
@@ -236,6 +249,8 @@ def censar_xlsx(path, prod, fname):
                     nonlat += 1
                 if _es_bio_vieja(v):
                     bio_vieja = True
+                if isinstance(v, str) and RX_AUTORIA.search(v):
+                    autoria = True
                 if isinstance(v, str) and (v.startswith('Versión ') or v.startswith('Version ')):
                     version_line = True
                 if isinstance(v, str) and 'ChefBusiness' in v:
@@ -255,6 +270,7 @@ def censar_xlsx(path, prod, fname):
         nocache_real=nocache_total - nocache_vacio - nocache_pycel,
         nonlat=nonlat,
         bio_vieja=bio_vieja,
+        autoria=autoria,
         box_colA=box_colA,
         box_colA_dv=box_colA_dv,
         box_colA_muerta=box_colA - box_colA_dv,
@@ -279,6 +295,7 @@ def censar_docx(path, prod, fname):
     parrafos = 0
     nonlat = 0
     bio_vieja = False
+    autoria = False
     for para in d.paragraphs:
         t = para.text
         if t.strip():
@@ -287,7 +304,10 @@ def censar_docx(path, prod, fname):
             nonlat += 1
         if _es_bio_vieja(t):
             bio_vieja = True
-    r.update(parrafos=parrafos, nonlat=nonlat, bio_vieja=bio_vieja)
+        if RX_AUTORIA.search(t):
+            autoria = True
+    r.update(parrafos=parrafos, nonlat=nonlat, bio_vieja=bio_vieja,
+             autoria=autoria)
     return r
 
 

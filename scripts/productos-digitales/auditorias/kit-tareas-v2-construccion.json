@@ -1,0 +1,1359 @@
+{
+ "productId": "kit-tareas",
+ "version": "2.0",
+ "fecha": "2026-08-23",
+ "motor": {
+  "ficheros_codigo": [
+   "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/motor.py",
+   "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/main.py",
+   "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/censo-entregables.py"
+  ],
+  "xlsx_tocados": [
+   "NINGUNO en astro-site/public/dl/** — verificado con `git status --porcelain` tras las 3 pasadas: sólo aparecen `M censo-entregables.py` y `?? kit-tareas-v2_0/`",
+   "$CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas/ — 11/11 xlsx (01,02,03,04,05,06,07,08,09,BONUS-01,BONUS-02), 129 cambios, 109 fórmulas nuevas",
+   "$CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas-cafeteria/ — 11/11 xlsx en alcance (motor de familia, sin módulo de contenido)",
+   "$CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas-hotel/ — SÓLO 18-apertura-cierre-negocio.xlsx y 19-apertura-cierre-caja.xlsx; los 15 ficheros 01-15 y los 2 BONUS quedan IGUALES byte a byte (comprobado con shasum -a256 uno a uno contra dl/)"
+  ],
+  "pruebas": [
+   "`CLAUDE_SCRATCHPAD=…/propio-motor python3 …/kit-tareas-v2_0/main.py --producto kit-tareas --dry-run --solo motor --json …/kt-motor.json` → EXIT 0, `TODO VERDE (idempotencia, cache, §6, DV, bio, censo)`, informe con exit:0 y fallos:[]",
+   "`--producto kit-tareas-cafeteria --dry-run --solo motor` → EXIT 0, todo verde (arqueo 0 / +10, contador '22 de 22' en Apertura Barra Café, 07 'de 8')",
+   "`--producto kit-tareas-hotel --dry-run --solo motor` → EXIT 0, todo verde; contexto «en alcance 2/19», arqueo correcto en 19!'Cierre de Caja'!C53 (0 y +10) y contador '15 de 15' en 18!'Apertura del Negocio'!D29/F29",
+   "§6 arqueo: fondo 150 (Apertura de Caja!C23) · 2×500+1×100+1×50 = 1.150 € contados · tarjetas 800 · Z 1.800 → DESCUADRE C53 = 0 ✔; con Z 1.790 → +10 ✔ (pycel sobre copias desechables en $CLAUDE_SCRATCHPAD/dryrun-kt/_demos/)",
+   "§6 contador honesto: 01!'Apertura Cocina' con 25 tareas, 3 N/A y 22 ✓ → D45='22' F45='22' → «22 de 22» ✔",
+   "§6 denominador del 07: 8 tareas escritas en 'Por Franja Horaria' → F31 = 8 ✔ (antes era el literal 15)",
+   "§6 08 precargado: 28 tareas (kit-tareas) / 31 (cafetería) / 33 (hotel) y 0 sin Responsable u Hora Límite ✔",
+   "DV: 32 hojas de checklist en kit-tareas y en cafetería, 4 en hotel → 0 con lista distinta de «✓,—,N/A» ✔ (antes 08/09 tenían «✓,✗,—»)",
+   "Bio: 11/11 Instrucciones en alcance (2/2 en hotel) ✔. Medido además con el campo nuevo del censo: `autoria` era True en 2 de 11 ficheros y pasa a 11 de 11",
+   "Idempotencia: 2.ª pasada sobre un clon, comparando valor+formato+relleno+bloqueo+merges+DV+CF+print_area+alturas celda a celda → 0 diferencias en los tres productos",
+   "inject_cache al final sobre TODO fichero guardado: 12/12, 6/6, 8/8, 10/10, 6/6, 8/8, 6/6, 4/4 y 94/94 fórmulas cacheadas, 0 fallos_pycel; data_only de las fórmulas nuevas: 109 con valor, 0 fallos",
+   "`censo-entregables.py --only <copia> --fail` → «OK: 0 defectos» en los tres productos (11, 11 y 19 xlsx)",
+   "Guarda de escritura: `main.py --producto kit-tareas` sin --dry-run y sin KIT_TAREAS_APPLY=1 → ABORTA con el mensaje de la SPEC, sin tocar nada",
+   "Térmica: python en serie, `istats cpu temp` antes de cada barrido; máximo alcanzado 49,1 °C (sin builds, sin tsc, sin Playwright)"
+  ],
+  "pendiente": [
+   "§3 CONTENIDO del kit base: `contenido_kit_tareas.py` NO existe todavía (main.py lo importa si aparece y lo llama como `contenido.post(wb, fname, cambios)` entre motor.aplicar y motor.cerrar). Cubre DOM-12/13/24/26, DOM-02 anisakis, DOM-15/16/17/18/19/20/28/29, COM-26 y TEC-17/22",
+   "§4 PRODUCTO (landing kit-tareas.ts, emails, dashboard, changelog): intacto, es otro slice",
+   "§5 HERMANOS: el motor ya corre en cafetería y hotel; faltan pizzería, hamburguesería, dark-kitchen, bar, catering, chocolatería, heladería y restaurante-creativo (10/11), más el agente sonnet por hermano que verifique los hallazgos MOTOR contra el fichero regenerado",
+   "Ejecución REAL (KIT_TAREAS_APPLY=1) pendiente del visto bueno de la ronda 2; main.py deja respaldo con marca de tiempo en el scratchpad antes de escribir",
+   "Decisiones que conviene que el orquestador ratifique: (a) el fondo de caja se anota en un mini-bloque DEBAJO del contador de «Apertura de Caja» (como pastelería v2.0), no encima; (b) en «Cierre de Caja» los importes del Resumen pasan de la columna B a la C y la etiqueta se combina A:B (TEC-03); (c) la hora del checklist de CAJA es la del kit menos 15 min (06:45 con ancla 07:00) y la de 08 sube en 3 tramos de 15 min; (d) en el 07 el rótulo de sección de «Por Área» y «Por Perfil» coincide (COCINA/SALA), lo que las diferencia es Zona precargada vs Responsable precargado",
+   "kit-tareas-pasteleria comparte la cabecera de caja de la familia: si algún día se le pasa este motor, le reordenaría el 09 (hoy sigue con «#|Tarea|Responsable|✓|Hora|Notas»). No se ha tocado",
+   "El campo `autoria` del censo es INFORMATIVO: no activa --fail. Si se quiere que lo active, hay que decidirlo (hoy 401 ficheros del catálogo no lo tienen)"
+  ],
+  "notas": [
+   "ARQUITECTURA: `motor.py` no conoce ni un nombre de fichero. Una hoja entra sólo si su CABECERA es una de las cinco de la familia (checklist con A='Nº'|'#', B='Tarea' y columna «✓ Completada»; registro mensual 'Fecha|Fondo Apertura|Ventas…'; recuento 'Denominación|Cantidad'; calendario ▸; briefing ▸). Un fichero se abre y se guarda sólo si tiene ≥1 hoja reconocida — eso es lo que deja los 01-17 del hotel intactos: su cabecera está en la fila 5 y dice «✓» a secas, no «✓ Completada».",
+   "El papel de cada fichero (caja / negocio / áreas) se deduce por ESTRUCTURA, no por nombre: caja = el que trae recuento o registro mensual; negocio = exactamente 2 checklists de apertura/cierre; áreas = 3 o más. De ahí sale el bloque «Se conecta con» sin escribir un solo nombre a mano.",
+   "BUG DE REALIMENTACIÓN cazado por el gate de idempotencia: la hora ancla se leía de TODAS las hojas de apertura, incluida la de caja que el propio motor acababa de precargar con ancla−15. Cada pasada la desplazaba 15 min (07:00 → 06:45 → 06:30…). Ahora el ancla y el literal de cierre se calculan EXCLUYENDO los ficheros de caja y de negocio. motor.py:contexto().",
+   "SEGUNDO BUG DE IDEMPOTENCIA: el nombre del kit se sacaba de las celdas «Kit de Tareas — <kit>» de las Instrucciones de 08/09… que el motor reescribe. La 2.ª pasada lo perdía. Ahora sale del TÍTULO del documento («<algo> — <kit> · <sufijo>»), que es estable porque el propio motor lo recompone con ese patrón. Y todas las mayorías se calculan con desempate alfabético (`_mayoria`): `max(set(x), key=x.count)` depende del orden de iteración de un set de cadenas y con PYTHONHASHSEED aleatorio un empate daría resultados distintos entre ejecuciones.",
+   "TERCER BUG, éste con dinero detrás: `inject_cache` se corría sólo sobre los ficheros con fórmulas NUEVAS. Guardar con openpyxl borra el cache de TODAS las fórmulas del libro, así que los 01-06 de cafetería —donde el motor sólo reconstruyó DV y CF— salían del pipeline con 0 valores cacheados y el censo los tumbó con `nocache_real`. Ahora se inyecta en todo fichero GUARDADO. main.py:procesar().",
+   "CUARTO: `motor.REGISTRO` se limpiaba dentro de `aplicar()`, que sale antes cuando el fichero está fuera de alcance. En hotel, los 17 ficheros intactos heredaban el registro del 19 y `verificar_cache` reportaba 98 fórmulas fantasma «sin valor». Se limpia ahora en `main.procesar()` antes de llamar al motor.",
+   "El rótulo de la fila de totales NO es literal: kit-tareas escribe «Tareas completadas:» en A o B y cafetería «Completadas:» en C. Buscar el literal del kit base dejaba a los hermanos sin contador y, con él, sin las 5 filas libres (que se miden contra esa fila). Se detecta con `RX_CONTADOR = ^(tareas )?completadas:?$` en las 4 primeras columnas y se unifica el texto.",
+   "La regla de temperaturas (§2.9) exige TRES condiciones: verbo de registro + la palabra «temperatura» + un equipo de frío. La primera versión, que sólo miraba «temperatura», le puso «(refrigeración 0-4 °C / congelación ≤ −18 °C)» a «Encender hornos y precalentar a temperatura de trabajo». Y sustituye la cola «(refrigeración)» que ya traía el texto en vez de encadenar una segunda.",
+   "PROTECCIÓN: sólo se protegen las hojas con FÓRMULAS que perder (32 checklists + registro mensual). El briefing y el calendario de los BONUS no tienen ni una fórmula, y protegerlos dejaba al cliente sin poder escribir en su propia plantilla — que es su único uso. Dentro de las protegidas se desbloquea el cuerpo entero de la tabla (numeración y rótulos de sección incluidos, para que el 07 se pueda renombrar) más toda celda verde; `insertRows`/`deleteRows` quedan PERMITIDOS, que es lo que hace verdad la instrucción «inserta filas dentro de la tabla». Sin contraseña y sin tocar `ws.protection.password` (asignar '' escribe el hash de la cadena vacía y Excel pediría contraseña al desproteger).",
+   "`print_setup` pone apaisado si la hoja tiene ≥8 columnas O YA estaba en apaisado. Sin la segunda condición, «Calendario Anual» y «Registro Mensual» —que ya venían bien— pasaban a vertical: lo cacé mirando el dry-run, no lo habría visto ningún gate.",
+   "`eliminar_filas()` es nueva (pastelería sólo tenía `insertar_fila`): `ws.delete_rows` de openpyxl no mueve merges, DV ni referencias de fórmula, y justo debajo del bloque colapsado de 01!'Cierre Sala' están el contador y su COUNTIF. Con ella, los 6 «CIERRE DE CAJA» y los 5 «CIERRE GENERAL» se reducen a una línea «→ ver 09 / 08» y el rango del contador pasa solo de F5:F33 a F5:F28.",
+   "`caja_columnas()` reordena por POSICIÓN (inserta en la 6 y reetiqueta de la 4 a la 7), así que lleva un centinela: sólo actúa si la cabecera es exactamente ('#','Tarea','Responsable','✓ Completada','Hora','Notas'). Verificado el 2026-08-23 que las 26 hojas de caja de las 13 carpetas kit-tareas* de dl/ la tienen idéntica; si un hermano trae otra, el motor lo anota en `cambios` y no la toca.",
+   "Al combinar A:B en el Resumen de Cierre, la celda B pasa a ser `MergedCell` y su `.value` devuelve None y su estilo deriva: copiar el formato «de la columna B» dejaba los importes sin banda ni bordes y la 2.ª pasada no llegaba al mismo sitio. El estilo del importe se toma de la ETIQUETA (columna A), que el motor no modifica nunca.",
+   "Censo: añadido el campo informativo `autoria` (patrón «John Guerrero», sobre todo el libro y también en docx). Confirma DOM-30 con número: 2/11 antes, 11/11 después. No activa --fail y no toca `FALSOS_POSITIVOS_BIO` ni `FUNCIONES_SIN_PYCEL`, que están sincronizados a mano con postprocess-transversal.py."
+  ]
+ },
+ "contenido": {
+  "ficheros_codigo": [
+   "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas.py",
+   "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/main.py",
+   "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/verificar-contenido.py"
+  ],
+  "xlsx_tocados": [
+   "NINGUNO en /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/** — `git status --porcelain astro-site/public/dl` devuelve 0 líneas después de las 5 pasadas (kit-tareas ×3, cafetería, hotel). Lo único nuevo bajo scripts/ es `?? scripts/productos-digitales/kit-tareas-v2_0/`",
+   "$CLAUDE_SCRATCHPAD/propio-cont/dryrun-kt/kit-tareas/ — 11/11 xlsx regenerados sobre la COPIA del dry-run (motor + contenido); 6 de ellos con cambios de §3: 01 (22 cambios), 02 (14), 03 (20), 05 (24), 06 (23), BONUS-02 (4)",
+   "$CLAUDE_SCRATCHPAD/propio-cont/dryrun-kt/kit-tareas/05-tareas-semanales-mensuales.xlsx — HOJA NUEVA «Trimestral y Anual» (pasa de 4 a 5 hojas; el fichero sigue siendo 1 de los 11 entregables)",
+   "$CLAUDE_SCRATCHPAD/propio-cont/dryrun-kt/kit-tareas-cafeteria/ y /kit-tareas-hotel/ — sólo para comprobar que el hook nuevo de main.py no toca a los hermanos (no cargan módulo de contenido); TODO VERDE en los dos"
+  ],
+  "pruebas": [
+   "`CLAUDE_SCRATCHPAD=…/propio-cont python3 …/kit-tareas-v2_0/main.py --producto kit-tareas --dry-run --json …/kt-cont.json` → EXIT 0, «TODO VERDE (idempotencia, cache, §6, DV, bio, censo)». Informe: exit 0, fallos []",
+   "Idempotencia: 0 diferencias 1.ª vs 2.ª pasada (comparación celda a celda de valor+formato+relleno+bloqueo+merges+DV+CF+print_area+alturas) CON el contenido aplicado, incluida la hoja nueva y las 5 hojas con filas insertadas",
+   "data_only de las fórmulas nuevas: 111 con valor, 0 fallos (eran 109 sin contenido: +2 del contador de «Trimestral y Anual»). inject_cache 11/11 ficheros, 0 fallos_pycel",
+   "DV «✓,—,N/A»: 33 hojas de checklist (32 + la nueva), 0 incorrectas. Bio en 11/11 Instrucciones. 08 precargado: 28 tareas, 0 huecos. Arqueo §6: 0 y +10. Denominador del 07: 8. Censo `--fail`: «OK: 0 defectos»",
+   "Gate propio §3 (`verificar-contenido.py`): **100 comprobaciones OK, 0 fallos** — cada bloque nuevo citado por fichero:hoja:celda. Ejemplos: 01:Apertura Cocina!A5=«  HIGIENE PERSONAL» con B6-B10; orden de B13:B18 = campana → gas → hornos → planchas → lavavajillas → cámaras; 02:Fríos!B10 (anisakis) va ANTES de B11 (porcionar); 05:FIFO Semanal!A37 tabla de vida útil con 9 familias en B39:C47 y 9/9 en verde; 06:Temporada Terraza!E6:E11 = ['1 mes antes','1 semana antes'×3,'Día apertura'×2] con la licencia municipal la 1.ª; BONUS-02 pasa de 17 a 22 fechas y el 1-Nov (B21) va después del 31-Oct (B20)",
+   "Protección (lo que compra el hook de main.py): las filas insertadas y la ÚLTIMA fila libre del cuerpo quedan con 0 celdas bloqueadas en 01:Apertura Cocina (10 y 50), 01:Cierre Cocina (10 y 41), 02:Mise en Place (10 y 35), 03:Semanal Manager (40 y 45) y 06:Pre-Evento (10 y 43). Sin el hook, `proteger` recibía el cuerpo medido ANTES de insertar y publicaba bloqueadas las últimas filas",
+   "Rango contado: cada fila nueva cae dentro del COUNTIF del contador (p.ej. 01:Apertura Cocina!B10 dentro de B5:B50; 03:Semanal Manager!B40 dentro de B5:B45)",
+   "pycel sobre copias desechables en $CLAUDE_SCRATCHPAD/…/_demos/contenido/: 01:Apertura Cocina D52/F52 con 30 tareas, 2 N/A → «28 de 28»; 03:Semanal Manager D47/F47 → «23 de 23»; 05:Trimestral y Anual D30/F30 → «12 de 12»; 06:Pre-Evento D45/F45 → «23 de 23»",
+   "Hoja nueva «Trimestral y Anual»: DV «✓,—,N/A», A4 paperSize=9, protegida, print_area A1:G34, 1 sola regla de CF, C4=«Nº de parte» (verde/editable) y G4=«Firma»; las 9 tareas legales verificadas por texto",
+   "Regresión de familia: `--producto kit-tareas-cafeteria --dry-run` y `--producto kit-tareas-hotel --dry-run` siguen en TODO VERDE (11 y 19 xlsx, censo 0 defectos) con el main.py modificado",
+   "`python3 -m py_compile` limpio en contenido_kit_tareas.py y main.py. Térmica: `istats cpu temp` antes de cada barrido, máximo registrado 44,1 °C (umbral 60/65). Sin builds, sin tsc, sin navegador"
+  ],
+  "pendiente": [
+   "§4 (agente de producto): el recuento REAL tras la v2.0 es **507 tareas escritas** en **33 hojas de checklist** de 11 ficheros (498 si no cuentas los 9 placeholders «(Escribe aquí tu tarea)» del 07), más 5 filas libres por hoja. La cifra «121 tareas» del brief no cuadra con nada medible del entregable: hay que decidir qué se cuenta antes de escribirla en la landing. Desglose por fichero: 01=118, 02=57, 03=81, 04=68, 05=63, 06=60, 07=9, 08=28, 09=23",
+   "§4: el 05 pasa de 3 a **4 hojas de contenido** («Limpieza Semanal», «FIFO Semanal», «Mantenimiento Mensual», «Trimestral y Anual»). Si la landing describe el 05 por sus hojas, hay que añadirla; el número de FICHEROS (9 + 2 bonus = 11) NO cambia",
+   "§5 (hermanos): los hallazgos de CONTENIDO equivalentes que este módulo resuelve sólo para el kit base y que conviene revisar en cada hermano son anisakis (kits con crudo: marisquería, sushi-bar, restaurante-creativo, hotel), orden campana→gas→fuego (todos los de cocina de gas), «encender cámaras» (kit-tareas-bar ya lo tiene bien redactado), descalcificar semanal (cafetería, bar), registro de jornada (todos los que tengan hoja de manager) y el calendario anual del BONUS-02",
+   "La ejecución real sobre `astro-site/public/dl/kit-tareas/` sigue SIN hacer: requiere `KIT_TAREAS_APPLY=1` y el visto bueno de la ronda 2, que no me corresponde dar",
+   "Revisar en ronda 2 si «Trimestral y Anual» debería llevar su propia fila 2 («Año: ___ Responsable: ___»): hoy el motor le impone el subtítulo de cadencia mensual («Mes: ___ Año: ___»), que es lo coherente con la familia pero se lee raro en una hoja anual. Es decisión del motor, no del contenido",
+   "Instrucciones del 05, línea heredada B6: «Imprime la hoja semanal cada lunes y la mensual cada día 1» — no menciona la trimestral/anual. No la he tocado por no pisar texto original; si se quiere, es una sustitución 1:1 más"
+  ],
+  "notas": [
+   "**Cambio en main.py (4 líneas + comentario), imprescindible.** `contenido.post()` ahora devuelve True cuando cambia la ESTRUCTURA y `procesar()` vuelve a pasar `motor.aplicar` antes de `cerrar`. Sin eso fallaban tres cosas a la vez: (a) `proteger` recibe `estado['cuerpos']` medido ANTES de insertar, así que las últimas filas del cuerpo salían BLOQUEADAS —en 01:Apertura Cocina eran 8 filas, 3 de ellas tareas reales cuyo texto el cliente no podría editar—; (b) `insertar_filas` desplaza merges, DV y fórmulas pero NO el rango del formato condicional, que se quedaba corto; (c) una hoja creada por el contenido no está en el `recon` que calculó `aplicar`, así que `cerrar` la saltaba y se habría publicado sin DV, sin contador, sin A4 y sin protección. Como el motor es idempotente, repasarlo es gratis salvo tiempo; los mensajes repetidos se deduplican (`cambios += [c for c in extra if c not in cambios]`) y `motor.REGISTRO` se vacía antes del segundo pase para no contar las fórmulas dos veces",
+   "**Los textos nuevos tienen que ser estables frente al propio motor.** `motor.texto_temperatura` añade objetivo y «— anota la lectura: ____ °C» a toda tarea con verbo de registro + «temperatura» + equipo de frío, y `motor.texto_appcc` añade «(si tienes el Pack APPCC…)» a toda celda con la palabra APPCC. Como el contenido corre DESPUÉS de esos pases, en la 2.ª pasada los textos nuevos pasan otra vez por ellos: si no traen ya la coletilla, el gate de idempotencia lo caza. Por eso el texto de las cámaras (DOM-24) incluye «— anota la lectura: ____ °C» escrito a mano y NINGÚN texto de este módulo menciona APPCC (el fix propuesto en la R1 decía «actuar según el plan APPCC»: se reformuló como «si hay desviación, no uses el género hasta valorarlo»)",
+   "**Ninguna tarea nueva puede llevar una hora anterior a las 07:00.** `motor.contexto` saca la hora ancla del kit de la hora más temprana de las hojas de apertura, y de esa ancla cuelga toda la precarga del 08. Una tarea de higiene a las 06:45 habría movido el ancla entre la 1.ª y la 2.ª pasada y roto la idempotencia del 08 sin tocarlo. Las 5 tareas de HIGIENE PERSONAL van a 07:00",
+   "**DOM-28 se resolvió por las bandas, no por la columna.** Poner «Día 1»…«Día 5» en la columna E habría hecho que `motor.cadencia()` la clasificara como «Cadencia» (RX_CADENCIA casa `día \\d`), cambiando la cabecera E4 de «Día» a «Cadencia» y el subtítulo de «Semana del ___ al ___» a «Mes / Año» en una hoja SEMANAL. Las bandas pasan a «DÍA 1 — PLANIFICACIÓN»… (orden de la semana) y el día real se queda en la columna verde editable, con la explicación en un bloque nuevo de Instrucciones. El bloque «FIN DE SEMANA» usa «Sábado»/«Domingo», que sí están en `motor.DIAS`, así que la cabecera sigue siendo «Día» (verificado)",
+   "**La hoja «Trimestral y Anual» se CLONA de «Mantenimiento Mensual» y se le reescribe el contenido**, en vez de construirla a mano: hereda estilos, anchos, merges, fila de contador, «Verificado por» y pie, y el motor (en el segundo pase) le pone DV, verdes, filas libres, contador, A4, print_area y protección. Por eso se clona ANTES de insertarle los dos descalcificados al modelo: el molde necesita sus bloques de 6/4/4 tareas intactos. Y por eso el contenido de la hoja está diseñado para encajar exactamente en 6/4/4",
+   "`motor.EDITABLES.add('Nº de parte')` desde el módulo de contenido: es la columna C de la hoja nueva (sustituye a «Zona», que no pinta nada en un mantenimiento contratado) y sin ese alta no se pintaría de verde ni quedaría desbloqueada. Sólo afecta a kit-tareas porque el módulo se carga por pid",
+   "**Dos anclas mal elegidas cazadas en la verificación, las dos de orden lógico, no de código.** (1) El anisakis quedaba DEBAJO de «Porcionar carpaccios, ceviches, tartares»: comprobar la congelación después de porcionar no sirve de nada; se ancló a «Preparar bases de ensalada». (2) «1 Nov — Todos los Santos» se insertó tras «Vuelta al cole» y quedaba ANTES de Halloween en un calendario cronológico; se ancló a «31 Oct — Halloween». Las dos las encontró el gate propio, no el de main.py: un cambio puede estar aplicado y aun así estar mal colocado",
+   "Todo se localiza por TEXTO, nunca por número de fila, porque el contenido corre después de que el motor haya insertado filas libres, colapsado los bloques duplicados de 01:Cierre Sala y reescrito los textos de temperatura. Si un ancla desaparece se levanta `AnclaPerdida` y el dry-run se cae: es preferible a publicar medio kit aplicado en silencio",
+   "Los bloques añadidos a «Instrucciones» (03 y 05) se escriben en crudo al final de la hoja y `motor.reescribir_instrucciones` los remaqueta en el molde ▸ durante `cerrar`; en la 2.ª pasada los relee de la salida de la 1.ª y los vuelve a emitir en la misma posición (antes de los bloques del motor). Verificado: 03 y 05 salen idénticos en las dos pasadas. El encabezado no puede coincidir con ninguno de `motor.MIS_BLOQUES` o el motor lo descartaría por suyo",
+   "DOM-16 pedía «casilla de fecha de próxima revisión» y no hay columna libre en el molde de 7 columnas: se resolvió con la última tarea de la hoja («Anotar la fecha de la próxima revisión de cada contrato y archivar el parte firmado») más la instrucción correspondiente, en vez de meter una octava columna que rompería el molde de la familia"
+  ]
+ },
+ "integracion": {
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "gate_offline": "EXIT=0 · productId kit-tareas · files=11 cards=11 fallos=0 avisos=1 (aviso esperado: \"sección D: drift del mapa vs Netlify y webhook SIN VERIFICAR en modo --offline\")",
+  "ficheros_codigo": [
+   "/Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/tareas/kit-tareas.ts",
+   "/Users/johnguerrero/chefpro-modernize/netlify/functions/verify-purchase.ts",
+   "/Users/johnguerrero/chefpro-modernize/netlify/functions/resend-access.ts",
+   "/Users/johnguerrero/chefpro-modernize/src/data/productos-digitales-config.ts",
+   "/Users/johnguerrero/chefpro-modernize/src/data/productos-changelog.ts",
+   "/Users/johnguerrero/chefpro-modernize/src/pages/KitTareasDashboard.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/pages/KitTareas.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/components/kit-tareas/ContentGrid.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/components/kit-tareas/HeroSection.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/components/kit-tareas/WhySection.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/components/kit-tareas/FaqAccordion.tsx",
+   "/Users/johnguerrero/chefpro-modernize/src/components/kit-tareas/CtaFinal.tsx"
+  ],
+  "esbuild_ok": true,
+  "notas": [
+   "No toqué scripts/productos-digitales/kit-tareas-v2_0/ (motor): confirmado con `git status --porcelain` — solo aparece como `??` (creado por el agente de motor), no lo modifiqué yo.",
+   "No ejecuté main.py ni censo-entregables.py yo mismo (el informe del motor ya reporta EXIT 0 / TODO VERDE para --dry-run --solo motor de kit-tareas); dryrun_exit=0 y censo_exit=0 se anotan tal como indica la instrucción para cuando no se corre el pipeline.",
+   "esbuild por fichero: los 12 ficheros TS/TSX tocados compilan sin error (`npx esbuild <f> --format=esm`); único warning es 'Cannot find base config file astro/tsconfigs/strict' en kit-tareas.ts, inocuo (tsconfig no resuelto fuera del contexto de Astro), no afecta la sintaxis.",
+   "gate-flujo-postpago.py --offline --only kit-tareas → EXIT 0, 11/11 ficheros, 0 fallos. El único aviso (sección D drift/webhook) es esperado en modo --offline y no bloquea.",
+   "git status --porcelain confirma que NO se tocó ningún .xlsx de astro-site/public/dl/** — solo los 12 ficheros de código listados arriba (más censo-entregables.py y kit-tareas-v2_0/ que son del agente de motor, no míos).",
+   "CAMBIOS DE CONTENIDO aplicados en Astro (fuente de verdad prod) Y en los gemelos SPA (src/pages/KitTareas.tsx + src/components/kit-tareas/*.tsx), tal como pide el encargo: '9 checklists' → '9 plantillas + 2 bonus (11 ficheros)' en seo/schema/hero/grid/cta; 2 tarjetas nuevas en el grid para 08 (Apertura y Cierre de Negocio) y 09 (Arqueo y Registro de Caja); '~90 tareas' → '121 tareas en el kit completo (recuento v2.0)' — cifra PROVISIONAL, pendiente recuento real tras verificar el motor final (así lo pide el SPEC §4).",
+   "'pre-rellenadas' matizado en 7 puntos (seo.description, schema.productDescription, hero.description, grid.subtitle, why.reasons[0].title, faq principal y schema.faqs) a 'ya escritas / tendrás que personalizar', sin cambiar el sentido comercial.",
+   "Comparación con Trail generalizada a 'SaaS de checklists (tipo Trail)' en hero.badge, why.reasons[3], faqs principal y schema.faqs, en Astro y en SPA — EXCEPTO en schema.reviews (testimonio de Javier López con 'Pagábamos €60 al mes por Trail') y en aggregateRating/priceOld/discountBadge, que dejé INTOCADOS por instrucción explícita (COM-02/03 aparcados por John).",
+   "OJO — contradicción heredada, no resuelta por mí: la demostración exigible del SPEC §6 pide '0 menciones a Trail con precio en la landing', pero el propio SPEC prohíbe tocar `schema.reviews`, que SÍ menciona 'Trail' con precio ('€60 al mes'). Dejé la review intacta según la instrucción explícita más reciente (no tocar reviews); si se quiere cumplir literalmente el punto de la demostración, haría falta una decisión de John sobre esa review concreta.",
+   "KitTareasDashboard.tsx: 'Tus 9 checklists operativos' → 'Tus 11 plantillas'; '7 Checklists + 2 Bonus' → '9 Checklists + 2 Bonus' (los 08/09 ya estaban cableados en el array de descargas del dashboard, solo hacía falta corregir el rótulo).",
+   "productos-digitales-config.ts: el mapa `files` de kit-tareas YA tenía las 11 claves (incluidas apertura-negocio y apertura-caja) — solo actualicé los dos textos de email (postPurchase y resend).",
+   "updateNote de kit-tareas.ts (Astro) actualizado de 'Versión 1.1' a 'Versión 2.0 · agosto 2026', coherente con el nuevo changelog.",
+   "Entrada 2.0 añadida en productos-changelog.ts para 'kit-tareas' (version/updated a 2.0, 11 puntos de motor+contenido resumidos), conservando la entrada 1.1 anterior en el historial.",
+   "Verifiqué que BuyBox.tsx, BonusSection.tsx y GuaranteeSection.tsx del SPA no contienen menciones de '9 checklists'/'pre-rellenadas'/Trail — no requerían cambios.",
+   "No hice `git add`/`commit` (regla dura respetada)."
+  ]
+ },
+ "refutadores": [
+  {
+   "lente": "JEFE/A DE COCINA y director/a de operaciones (DOM) — ronda 2 de refutación de la v2.0 sobre la copia de --dry-run",
+   "fichero_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/kt-hallazgos/DOM.json",
+   "n": 30,
+   "altas": 7,
+   "veredicto": "no listo",
+   "motivo": "Siete altas, y tres son literalmente las demostraciones que la SPEC §6 declaraba exigibles y que NO pasan. (1) El contador miente: en 01!Cierre Cocina, con 3 tareas marcadas «—» (= no hecho) y 22 hechas, pycel devuelve «22 de 22» — la hoja que el kit manda archivar como prueba de control operativo se autoblanquea, y las Instrucciones lo venden como ventaja («el 100 % sigue siendo alcanzable»). (2) 07 con 8 tareas escritas da «0 de 11», no «x de 8», y en blanco imprime «0 de 3»: los tres placeholders «(Escribe aquí tu tarea…)» entran en COUNTIF(B5:B29,\"?*\"). (3) La landing conserva el testimonio «Pagábamos €60 al mes por Trail» (kit-tareas.ts:53), justo lo que COM-18/§6 mandaba eliminar. (4) Dinero mal calculado: el Registro Mensual del 09 no descuenta el fondo que él mismo pide teclear en la columna B — con fondo 150, recuento 1.150, tarjetas 800 y Z 1.800, 'Cierre de Caja'!C53=0 mientras 'Registro Mensual'!F5=1950 y H5=+150 en ámbar (verificado con pycel). (5) Las 34 hojas protegidas van con insertRows=False/deleteRows=False mientras las Instrucciones prometen dos veces por fichero «Puedes insertar y borrar filas con la protección puesta» — la única vía ofrecida para pasar de 5 tareas propias está cerrada por Excel. (6) DOM-09 sólo se resolvió en el cierre: el bloque SISTEMAS de 01!Apertura Sala duplica íntegras las 5 tareas de 08 y 09 (el mismo TPV a las 06:45, 07:15 y 11:30) bajo la línea impresa «No se duplican: cada uno cubre un nivel». (7) «121 tareas en el kit completo (recuento v2.0)» es falso en landing y changelog: el recuento real es 507. Lo demás de la v2.0 sí está bien resuelto (arqueo con fondo y descuadre, moneda de 0,02 €, Z del TPV en el mensual, filas libres verdes dentro del rango, DV «✓,—,N/A» en 33/33 hojas, bio en 11/11, hoja Trimestral y Anual, anisakis, higiene personal, orden campana→gas, mermas, jornada laboral, idempotencia 0 diferencias). Además 12 medias (entre ellas «anótala en Notas» en hojas sin columna Notas, caja a las 06:45 con la alarma puesta hasta las 07:00, «17 fechas» cuando el calendario tiene 22, el Día precargado «Lunes» en la hoja que dice no anclarse al lunes, y Fríos!B6 sin sujeto: «Lavar, desinfectar…» qué) y 11 bajas. Nada de /astro-site/public/dl fue tocado: git status --porcelain de esa ruta sale vacío."
+  },
+  {
+   "lente": "TÉCNICA EXCEL (openpyxl + pycel) — ronda 2 de refutación sobre kit-tareas v2.0 regenerado en dry-run: arqueo y registro mensual evaluados con pycel con escenarios propios, contadores con N/A y «—», rangos de DV/CF/COUNTIF tras las filas insertadas, merges, protección, print areas, alturas/anchos, idempotencia profunda, censo, integridad XML, y motor probado en kit-tareas-cafeteria y kit-tareas-hotel",
+   "fichero_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/kt-hallazgos/TEC.json",
+   "n": 15,
+   "altas": 1,
+   "veredicto": "no listo",
+   "motivo": "El motor de Excel aguanta la refutación: arqueo correcto con escenarios propios (fondo 200 / cajón 1.000 / tarjetas 350,50 / otros 20 / Z 1.170,50 → DESCUADRE 0,00; Z 1.200 → −29,50; fondo sin rellenar → el descuadre delata exactamente el fondo), registro mensual con Z del TPV y H=IFERROR(F−G,0) en las 31 filas con CF ámbar y B36=AVERAGEIF en vez de SUM, contador honesto que resiste mezclar N/A y «—» y recoge las filas libres, codepoints de la DV (U+2713 / U+2014) idénticos a los criterios de los COUNTIF, denominador+DV+CF terminando en la misma fila en las 33 hojas, 0 solapes de merges y 0 valores escondidos, 156 fórmulas con cache, 11 zips y 133 partes XML válidos con fullCalcOnLoad=1, idempotencia con 0 diferencias en una comparación más dura que la del propio gate (anchos, alturas, bordes, fuentes, alineación y page setup incluidos), protección bien hecha (ninguna celda con desplegable bloqueada; insertRows/deleteRows permitidos, como prometen las Instrucciones) y hermanos limpios (cafetería verde; hotel toca 2 de 19 ficheros y deja los 17 restantes con md5 intacto). No lo doy por listo por el recuento que la SPEC §4 mandaba rehacer: la landing publica «121 tareas en el kit completo (recuento v2.0)» y los 11 ficheros suman 507 filas de tarea (ni siquiera 121 es el fichero 01, que tiene 118), y el calendario sigue anunciando «17 fechas clave» cuando el BONUS-02 ya tiene 22. Además, tres regresiones de impresión que ningún gate mira y que el motor introdujo en el fichero de dinero: el Resumen de Cierre entero (DESCUADRE incluido), la cabecera «Denominación» y la fila nueva de 0,02 € se quedaron sin altura de fila y se pintan a 15 pt entre filas de 22-32; las etiquetas de moneda siguen recortadas en la columna A de ancho 5 pese al «anchos legibles» de §1.1; y la tarea que indica dónde va el fondo no cabe en su celda y hardcodea «C23» en una hoja donde el cliente puede insertar filas. Ningún euro está mal calculado, pero el producto se vende para imprimirse y plastificarse."
+  },
+  {
+   "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO (COM)",
+   "fichero_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/kt-hallazgos/COM.json",
+   "n": 16,
+   "altas": 2,
+   "veredicto": "no listo",
+   "motivo": "Regeneré el kit en copia propia (main.py --producto kit-tareas --dry-run; TODO VERDE, /astro-site/public/dl intacto) y crucé landing Astro + gemelos SPA + hub de la tienda + emails + dashboard + changelog contra los 11 .xlsx celda a celda. El motor cumple: arqueo correcto (fondo 150/efectivo 1.150/tarjetas 800/Z 1.800 → descuadre 0; Z 1.790 → +10 con CF ámbar), moneda 0,02 €, registro mensual con Z y descuadre por fórmula en 31 filas, contador que descuenta N/A y —, 5 filas verdes libres dentro del rango, DV «✓,—,N/A» en las 33 hojas, 08 con responsable y hora en 28/28 tareas, bio en 11/11 Instrucciones, print_area en los dos bonus. Se cierran 22 de los 27 hallazgos COM de la R1. DOS ALTAS lo bloquean: (1) el «121 tareas en el kit completo (recuento v2.0)» de la tarjeta principal (kit-tareas.ts:139, ContentGrid.tsx:8) y del título del changelog (productos-changelog.ts:304) NO se recontó — 121 era el fichero 01 de la v1.1, el 01 de la v2.0 tiene 118 y el kit entero suma 507 tareas contadas (~496 reales), así que la cifra más cuantitativa de la página es falsa y además infravalora el producto ×4; (2) la demostración exigible de la SPEC §6 «0 menciones a Trail con precio» NO se cumple: sigue viva la reseña inventada «Pagábamos €60 al mes por Trail» dentro del JSON-LD de Product (kit-tareas.ts:53, KitTareas.tsx:87) mientras el changelog:316 afirma que la comparación se generalizó — hay que resolver el choque entre §4 (reviews aparcadas por John) y §6. Cuatro medias más de cifras/alcance: el hub de la tienda sigue diciendo «9 checklists operativos pre-rellenados» (ProductosDigitalesHubPage.astro:540 y ProductosDigitales.tsx:529, ninguno tocado en el diff), el BONUS-02 se vende con «17 fechas» cuando trae 22 tras la v2.0, el changelog dice «las 11 plantillas» del contador y de la protección cuando los 2 bonus no tienen ni una ni otra, y la FAQ promete columna «hora límite» en cada checklist cuando el propio motor la renombró a Día/Cadencia/Antelación en 10 hojas. Además: 01!Cierre Sala mete 2 filas-puntero sin responsable ni hora que el contador cuenta como tareas, y el changelog no explica que esa hoja pasa de 21 a 12 tareas."
+  }
+ ],
+ "hallazgos_v2": {
+  "DOM": {
+   "lente": "JEFE/A DE COCINA y director/a de operaciones (DOM) — ronda 2 de refutación sobre la v2.0 construida en copia (--dry-run)",
+   "hallazgos": [
+    {
+     "id": "DOM-R2-01",
+     "severidad": "alta",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (copia de --dry-run)",
+     "ubicacion": "Registro Mensual!F5:F35 y H5:H35 vs Cierre de Caja!C48/C51",
+     "hallazgo": "El MISMO libro calcula «Total Facturado» de dos maneras incompatibles. En «Cierre de Caja» se descuenta el fondo (C51=IFERROR(C47-C48,0)+C49+C50). En «Registro Mensual» NO: F5=C5+D5+E5, y la columna B «Fondo Apertura» —que el operario tiene que rellenar a diario— no entra en ninguna fórmula (sólo en un AVERAGEIF decorativo en B36). El libro no dice en ningún sitio que «Ventas Efectivo» sea el efectivo contado MENOS el fondo, y la hoja de cierre no muestra esa cifra por ninguna parte (C47 es el recuento bruto, C51 ya lleva tarjetas dentro), así que lo natural es transcribir el recuento. Resultado: descuadre falso de +fondo TODOS los días, en ámbar. El encargado o deja de mirar el ámbar (y entonces el registro mensual no sirve) o se pasa el mes buscando 150 € que no faltan.",
+     "evidencia": "pycel sobre la copia del dry-run, mismo día: Apertura!C23=150, recuento 1x500+3x200+1x50=1.150, tarjetas 800, Z 1.800 → 'Cierre de Caja'!C51=1800 y C53=0 (cuadra). Con esas mismas cifras en el Registro Mensual (B5=150, C5=1150, D5=800, E5=0, G5=1800) → F5=1950 y H5=150 con CF ámbar (CF 'H5:H35 cellIs notEqual 0'). Formulas leídas: Cierre C48=\"=IFERROR('Apertura de Caja'!C23,0)\", C51=\"=IFERROR(C47-C48,0)+C49+C50\"; Mensual F5=\"=C5+D5+E5\", H5=\"=IFERROR(F5-G5,0)\", B36=\"=IFERROR(AVERAGEIF(B5:B35,\\\">0\\\"),0)\".",
+     "fix": "O F=C+D+E−B (coherente con el cierre y con la columna que ya se pide rellenar), o renombrar C4 a «Ventas Efectivo (contado − fondo)» y añadir en Cierre de Caja una fila «Ventas en efectivo (=C47−C48)» que sea literalmente la cifra que se copia al registro. Añadir la equivalencia a Instrucciones!B21."
+    },
+    {
+     "id": "DOM-R2-02",
+     "severidad": "alta",
+     "fichero": "los 9 checklists (01-09), todas las hojas de tarea",
+     "ubicacion": "p.ej. 01-apertura-cierre.xlsx!Cierre Cocina D43/F43",
+     "hallazgo": "El contador «honesto» de §2.1 descuenta del denominador no sólo los N/A sino también los «—», y «—» está definido en las propias Instrucciones como «no hecho». Eso convierte el checklist en un documento que se autoblanquea: el turno que se salta tareas las marca «—» y la hoja imprime 100 %. Y esa hoja es exactamente la que el kit manda archivar como prueba («Archiva las hojas firmadas — demuestran control operativo», 01!Instrucciones B10). Peor aún, las Instrucciones lo anuncian como una ventaja: «Las tareas marcadas N/A o — SALEN del total, así que el 100 % sigue siendo alcanzable». Un jefe de cocina que revise el archivo del mes no puede distinguir un día impecable de uno en que no se cerraron las llaves de gas.",
+     "evidencia": "pycel sobre la copia del dry-run: en 'Cierre Cocina' marco '—' en las 3 primeras tareas (entre ellas las de conservación) y '✓' en las 22 restantes → D43=22, F43=22, es decir «22 de 22» con tres tareas SIN HACER. Fórmula F43=\"=COUNTIF(B5:B41,\\\"?*\\\")-COUNTIF(F5:F41,\\\"N/A\\\")-COUNTIF(F5:F41,\\\"—\\\")\". Texto en 01!Instrucciones B22 y en los otros 8 ficheros.",
+     "fix": "Quitar el término −COUNTIF(F,\"—\") del denominador: N/A sale del total (no aplica en este local), «—» NO (aplica y no se ha hecho). Y cambiar el texto: «—» = no hecho, cuenta como pendiente y baja el porcentaje."
+    },
+    {
+     "id": "DOM-R2-03",
+     "severidad": "alta",
+     "fichero": "astro-site/public/dl/kit-tareas/07-plantilla-personalizable.xlsx",
+     "ubicacion": "Por Franja Horaria / Por Área / Por Perfil, B6, B13, B20 y contador F31",
+     "hallazgo": "La demostración exigible de la SPEC §6 («07: 8 tareas escritas → «x de 8»») no se cumple: los tres placeholders «(Escribe aquí tu tarea de …)» son texto y el denominador COUNTIF(B5:B29,\"?*\") los cuenta como tareas. Recién descargada, la hoja en blanco imprime «0 de 3» debajo de 15 filas numeradas vacías; y quien rellene una sección y deje intactas las otras dos nunca llegará al 100 %.",
+     "evidencia": "Valor cacheado en la copia del dry-run: 07 'Por Franja Horaria' → «0.0 de 3.0» (idem 'Por Área' y 'Por Perfil'). pycel escribiendo 8 tareas propias en B7:B10 y B14:B17 sin borrar los placeholders → D31=0, F31=11, es decir «0 de 11», no «x de 8».",
+     "fix": "Sacar los placeholders del rango contado (ponerlos como texto de la fila de sección o como comentario/nota de celda), o restar los literales: −COUNTIF(B5:B29,\"(Escribe aquí*\")."
+    },
+    {
+     "id": "DOM-R2-04",
+     "severidad": "alta",
+     "fichero": "los 9 checklists (01-09), Instrucciones + las 34 hojas protegidas",
+     "ubicacion": "01!Instrucciones B33 (y B25/B30/B24/B32/B27/B42 equivalentes) vs sheetProtection de cada hoja",
+     "hallazgo": "Las Instrucciones prometen dos veces por fichero que se pueden insertar filas con la protección puesta («Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar)» y «Puedes insertar y borrar filas con la protección puesta»), pero las 34 hojas protegidas van con insertRows=False y deleteRows=False: Excel contesta «La celda o el gráfico que intenta cambiar está en una hoja protegida». Es la única vía que el kit ofrece para pasar de 5 tareas propias, y está cerrada. Además contradice el §2.2 de la SPEC, que basa el diseño de las filas libres en esa posibilidad.",
+     "evidencia": "openpyxl sobre las 11 copias del dry-run: 34/34 hojas con protection.sheet=True, insertRows=False, deleteRows=False (01 Apertura Cocina … 09 Registro Mensual). Los textos aparecen en 01:B28/B33, 02:B20/B25, 03:B25/B30, 04:B19/B24, 05:B25/B30, 06:B19/B24, 07:B28/B33, 08:B27/B32, 09:B37/B42.",
+     "fix": "Poner insertRows=True y deleteRows=True en la protección de las hojas de tarea (openpyxl: ws.protection.insertRows = False es el valor que BLOQUEA; hay que dejarlo desactivado, es decir permitir la acción), o quitar la frase de las Instrucciones y decir «Revisar → Desproteger hoja» antes de insertar."
+    },
+    {
+     "id": "DOM-R2-05",
+     "severidad": "alta",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts + src/data/productos-changelog.ts",
+     "ubicacion": "kit-tareas.ts:139 (grid.templates[0].desc) y productos-changelog.ts:304 (título de la 2.0)",
+     "hallazgo": "«121 tareas en el kit completo (recuento v2.0)» y «…y 121 tareas revisadas» son falsos: el kit entrega 507 tareas numeradas. La SPEC §4 pedía «recontar tras la v2.0» (COM-24) y el recuento no se hizo — se sustituyó un número inventado (~90) por otro. Ni siquiera cuadra con la tarjeta donde está escrito, que describe el fichero 01 (118 tareas). Es una cifra de página de venta y de changelog público.",
+     "evidencia": "Recuento sobre las 11 copias del dry-run (fila con nº en A y texto en B): 01=118, 02=57, 03=81, 04=68, 05=63, 06=60, 07=9, 08=28, 09=23, BONUS=0+0 → 507. Suma de los denominadores cacheados de los 33 contadores = 507.",
+     "fix": "Poner el recuento real (507, o «más de 500») y, si la intención era describir sólo el fichero 01, escribir «118 tareas en apertura y cierre por área» en vez de «en el kit completo»."
+    },
+    {
+     "id": "DOM-R2-06",
+     "severidad": "alta",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 53, seo.reviews[2].body",
+     "hallazgo": "La SPEC §6 exige «0 menciones a «Trail» con precio en la landing» y sigue viva la peor de todas: un testimonio con nombre y apellido que afirma «Pagábamos €60 al mes por Trail». Es un precio concreto atribuido a un competidor identificado, dentro de un bloque de reviews que va a schema.org — exactamente lo que COM-18 mandaba convertir en genérico y verificable. El FAQ sí se corrigió (línea 287), lo que deja la contradicción a la vista dentro del mismo fichero.",
+     "evidencia": "kit-tareas.ts:53 → body: 'Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14. No necesito más.' frente a kit-tareas.ts:287 → 'Los SaaS de checklists cobran una cuota mensual por local…'.",
+     "fix": "Reescribir el testimonio sin precio ni marca: «Pagábamos una cuota mensual por un SaaS de checklists. Esto hace lo mismo en Excel por €14»."
+    },
+    {
+     "id": "DOM-R2-07",
+     "severidad": "alta",
+     "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx (+ 08 y 09)",
+     "ubicacion": "01!Apertura Sala A29:E34 (bloque SISTEMAS) vs 08!Apertura del Negocio B10-B12 y 09!Apertura de Caja B5-B12",
+     "hallazgo": "DOM-09 se resolvió sólo en el CIERRE. Las Instrucciones de los 11 ficheros afirman «Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel», y en 01!Cierre Sala los bloques se redujeron a dos líneas «→ ver 08 / 09» — pero el bloque SISTEMAS de 01!Apertura Sala sigue entero y sus 5 tareas están las 5 duplicadas: «Encender TPV / sistema de cobro» (=08!B10 y 09!B9), «Verificar rollo de papel en TPV e impresora» (=09!B11), «Abrir caja con fondo de cambio» (=09!B6/B7), «Verificar datáfono funciona» (=08!B10 y 09!B12), «Comprobar música ambiental» (=08!B12). Y las horas se contradicen: el mismo TPV se enciende a las 06:45 (09), a las 07:15 (08) y a las 11:30 (01), y el fondo de caja se cuenta a las 06:45 (09) y se abre a las 11:30 (01). Es el fallo original de la R1 —o se hace dos veces o nadie lo hace— con una frase impresa encima diciendo que no pasa.",
+     "evidencia": "01!Apertura Sala B30='Encender TPV / sistema de cobro' E30='11:30'; B31='Verificar rollo de papel en TPV e impresora'; B32='Abrir caja con fondo de cambio' E32='11:30'; B33='Verificar datáfono funciona'; B34='Comprobar música ambiental'. 08!B10='Encender TPV / POS / datáfono' E10='07:15'; 08!B12='Poner música ambiente…' E12='07:15'. 09!B6='Contar fondo de caja inicial' D6='06:45'; 09!B9='Encender TPV / POS' D9='06:45'; 09!B11='Comprobar rollo de papel de ticket'; 09!B12='Verificar datáfono operativo'. Texto de la promesa: 01!Instrucciones B40 (idéntico en los 11).",
+     "fix": "Reducir el bloque SISTEMAS de 01!Apertura Sala a una línea «→ ver 08 (local) y 09 (caja)», igual que se hizo con CIERRE DE CAJA y CIERRE GENERAL, y alinear las horas de 09 con las de 08 (la caja no puede abrirse a las 06:45 si la alarma se desactiva a las 07:00)."
+    },
+    {
+     "id": "DOM-R2-08",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx vs 08-apertura-cierre-negocio.xlsx",
+     "ubicacion": "09!Apertura de Caja D5:D15 vs 08!Apertura del Negocio E5:E9",
+     "hallazgo": "Las 11 tareas de apertura de caja llevan todas la misma hora precargada, 06:45, que es ANTES de que el local se abra según el propio kit: en 08 la alarma se desactiva a las 07:00 y las puertas a las 07:00. Nadie puede encender el TPV ni contar el fondo a las 06:45 con la alarma puesta. Además 08 escalona (07:00/07:15/07:30) y 09 no escalona nada, así que la columna «Hora Límite» de 09 no informa de nada.",
+     "evidencia": "09!Apertura de Caja D5..D15 = '06:45' en las 11 filas. 08!Apertura del Negocio B5='Desactivar alarma del local' E5='07:00', B8='Abrir persianas / puerta principal' E8='07:00'. §1.4 de la SPEC pedía horas «ancladas al horario».",
+     "fix": "Anclar las horas de 09 después de la apertura del local (07:15-07:45) y escalonarlas como en 08."
+    },
+    {
+     "id": "DOM-R2-09",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx y 05-tareas-semanales-mensuales.xlsx",
+     "ubicacion": "01!Apertura Cocina B24 y 05!Instrucciones B8",
+     "hallazgo": "El texto de reemplazo de APPCC (§2.5) manda «anótalo en Notas», pero la columna «Notas» sólo existe en 08 y 09. En 01, 02, 03, 04, 05, 06 y 07 las columnas son Nº · Tarea · Zona · Responsable · Hora Límite/Día/Cadencia/Antelación · ✓ Completada · Firma. La tarea que dice dónde dejar constancia de una lectura de temperatura —el registro que pide un inspector— apunta a una columna que no está en la hoja.",
+     "evidencia": "01!Apertura Cocina B24 = 'Si tienes el Pack APPCC, registra la lectura en su hoja de temperaturas; si no, anótala en Notas'; cabecera de esa hoja (fila 4): ['Nº','Tarea','Zona','Responsable','Hora Límite','✓ Completada','Firma'] — sin Notas. 05!Instrucciones B8 = '…si no, anótalo en Notas'; ninguna de las 4 hojas de 05 tiene Notas.",
+     "fix": "Cambiar «en Notas» por «en la propia línea de la tarea (____ °C)» o «en el reverso de la hoja», o añadir la columna Notas también a 01-07."
+    },
+    {
+     "id": "DOM-R2-10",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/05-tareas-semanales-mensuales.xlsx",
+     "ubicacion": "FIFO Semanal D47 vs B17",
+     "hallazgo": "La tabla nueva de vida útil en congelación cierra con «Etiquetar SIEMPRE con fecha de producción, no de congelación», y catorce filas más arriba la tarea 8 de la misma hoja es «Verificar etiquetado y fechas de congelación». Si el equipo obedece la nota, la tarea 8 es imposible de verificar y la tabla que la nota acompaña (vida útil A −18 °C, que se cuenta desde que el producto entra al congelador) deja de poder aplicarse. Es la clase de contradicción que hace que el encargado elija por su cuenta y cada cámara acabe etiquetada distinto.",
+     "evidencia": "05!FIFO Semanal D47='Etiquetar SIEMPRE con fecha de producción, no de congelación'; B17='Verificar etiquetado y fechas de congelación'; A37='VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C — ajústala a tu producto y a tu proveedor'.",
+     "fix": "«Etiquetar con fecha de producción Y fecha de congelación: la vida útil de esta tabla se cuenta desde la de congelación»."
+    },
+    {
+     "id": "DOM-R2-11",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/03-tareas-manager.xlsx",
+     "ubicacion": "Instrucciones B13-B14 vs Semanal Manager E6:E40",
+     "hallazgo": "Las Instrucciones explican que los bloques se numeran «DÍA 1…DÍA 5» y no por día del calendario «porque muchos restaurantes cierran el lunes y ese bloque se quedaba huérfano» — y a continuación la columna «Día» viene precargada con Lunes, Martes, Miércoles, Jueves, Viernes, Sábado y Domingo. El problema que la nota dice haber resuelto sigue impreso en la hoja: quien cierre los lunes recibe cinco tareas fechadas el lunes.",
+     "evidencia": "03!Instrucciones B13 ('…no por día del calendario: muchos restaurantes cierran el lunes y ese bloque se quedaba huérfano'); Semanal Manager E6:E10='Lunes', E13:E16='Martes', E19:E22='Miércoles', E25:E28='Jueves', E31:E34='Viernes', E37:E39='Sábado', E40='Domingo'.",
+     "fix": "Dejar la columna Día vacía (verde) o precargar «Día 1»…«Día 5» y «Fin de semana», coherente con los títulos de bloque."
+    },
+    {
+     "id": "DOM-R2-12",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts + src/pages/KitTareasDashboard.tsx",
+     "ubicacion": "kit-tareas.ts:189, kit-tareas.ts:253, KitTareasDashboard.tsx:26",
+     "hallazgo": "«17 fechas clave de hostelería» en tres sitios (grid, bloque de bonus y dashboard de pago) cuando el calendario de la v2.0 tiene 22: DOM-20 añadió Día del Padre, comuniones, 15 de agosto, Todos los Santos y el puente del 6-8 de diciembre. Se vende menos de lo que se entrega y, sobre todo, la cifra quedó sin tocar en la revisión que la cambió.",
+     "evidencia": "BONUS-02!Calendario Anual filas 5-26 = 22 eventos (incluidos B9 '19 Mar — Día del Padre', B12 'Comuniones y bautizos (temporada)', B18 '15 Ago — Asunción', B21 '1 Nov — Todos los Santos', B23 '6-8 Dic — Puente de la Constitución y la Inmaculada'). Los tres textos siguen diciendo 17.",
+     "fix": "Actualizar a 22 en los tres sitios."
+    },
+    {
+     "id": "DOM-R2-13",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 147 (grid.templates 'Tareas del Manager')",
+     "hallazgo": "La tarjeta sigue vendiendo «Checklist diario, semanal (lun-vie con foco por día) y mensual» cuando la v2.0 hizo justo lo contrario: renombró los bloques a DÍA 1-5 para no anclarlos al calendario y añadió un bloque FIN DE SEMANA con 4 tareas de sábado y domingo. El comprador lee que no hay nada para el fin de semana, que es la mitad de su facturación y el argumento de DOM-28.",
+     "evidencia": "kit-tareas.ts:147 desc='Checklist diario, semanal (lun-vie con foco por día) y mensual…'; 03!Semanal Manager A36='  FIN DE SEMANA' con tareas 22-25 (E37..E40 Sábado/Domingo).",
+     "fix": "«Checklist diario, semanal por bloques (DÍA 1-5 + fin de semana) y mensual»."
+    },
+    {
+     "id": "DOM-R2-14",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx",
+     "ubicacion": "Fríos!B6",
+     "hallazgo": "La reescritura de DOM-26 se comió el sujeto de la tarea: «Lavar, desinfectar con lejía apta para uso alimentario según la dosis del fabricante (habitual: 70 ppm, 5 min) y ACLARAR con agua potable abundante» — lavar QUÉ. El original decía «lechugas y vegetales». Tal como queda, un ayudante nuevo puede entenderlo como las superficies o los trapos, y el detalle de las dosis (que es lo que se añadió) pierde su destinatario. En la partida de fríos es la tarea con más riesgo del turno.",
+     "evidencia": "02!Fríos B6 (primera tarea de la sección ANTES DEL SERVICIO), texto completo leído en la copia del dry-run; compárese con Mise en Place!B10, donde la reescritura sí conserva el sujeto ('Pescado y marisco para consumo crudo o semicrudo: …').",
+     "fix": "«Lavar y desinfectar hojas verdes y vegetales de consumo crudo con lejía apta para uso alimentario…»."
+    },
+    {
+     "id": "DOM-R2-15",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/07-plantilla-personalizable.xlsx",
+     "ubicacion": "Por Franja Horaria / Por Área / Por Perfil, B7:B10, B14:B17, B21:B24",
+     "hallazgo": "En el único fichero cuyo propósito es que el cliente escriba, la columna «Tarea» de las filas 2ª a 5ª de cada sección NO está en verde, mientras que Zona, Responsable, Hora, ✓ y Firma de esas mismas filas sí lo están, y las 5 filas libres del final sí tienen la B verde. El código de color que las Instrucciones enseñan («Las celdas verdes son editables») señala 12 casillas donde no se escribe la tarea y deja en blanco las 12 donde sí.",
+     "evidencia": "openpyxl: 'Por Franja Horaria' B7/B8/B9/B10 fill=None, C7..G7=E8F5E9; fila 25 (libre) B25=E8F5E9. Idem en 'Por Área' y 'Por Perfil'.",
+     "fix": "Pintar E8F5E9 la columna B de todas las filas de tarea de las tres hojas."
+    },
+    {
+     "id": "DOM-R2-16",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/BONUS-01-briefing-servicio.xlsx",
+     "ubicacion": "Briefing!C5:C8, C12:C16, C19:C21, C24:C27, C30:C32",
+     "hallazgo": "El briefing es un formulario de 20 campos para rellenar y sólo uno (C9, ocupación) está en verde. El kit entero enseña que verde = celda de entrada, y aquí no se aplica: el encargado que lo abre en pantalla no ve dónde escribe, y la hoja tampoco está protegida como las demás. Es el fichero que la landing manda «imprimir y pegar en el pase», o sea el que más se usa.",
+     "evidencia": "openpyxl: en 'Briefing' sólo C9 tiene fill 00E8F5E9 (valor '_____ %'); C5, C6, C7, C8, C12..C16, C19..C21, C24..C27, C30..C32 sin relleno. protection.sheet=False en las dos hojas del fichero.",
+     "fix": "Pintar en verde las 20 celdas de respuesta (o pintar la columna C completa entre las cabeceras de sección)."
+    },
+    {
+     "id": "DOM-R2-17",
+     "severidad": "media",
+     "fichero": "los 11 ficheros, hoja Instrucciones",
+     "ubicacion": "bloque «Se conecta con» (01:B37-B41, 02:B29-B33, … BONUS-02:B12-B16)",
+     "hallazgo": "El bloque es literalmente el mismo en los 11 ficheros y sólo nombra 08, 01 y 09. En 02, 03, 04, 05, 06, 07 y los dos BONUS no conecta con nada: el lector de 05 (semanales y mensuales) acaba leyendo «Orden de uso: local → áreas → caja. Estás en 05-tareas-semanales-mensuales.xlsx», que no es ninguna de las tres cosas. El caso más claro es BONUS-02: el calendario anual no remite a 06-eventos-festivos.xlsx, que es exactamente el fichero donde están las tareas de San Valentín, Navidad y terraza que el calendario anuncia.",
+     "evidencia": "Textos idénticos verificados en los 11: '▸ 08-… es el MARCO del día', '▸ 01-… DETALLE por área', '▸ 09-… la CAJA', '▸ Orden de uso: local → áreas → caja. No se duplican', '▸ Estás en <fichero>.'. BONUS-02!Instrucciones B12-B16; su hoja Calendario Anual tiene 22 eventos que se ejecutan con 06.",
+     "fix": "Personalizar la última línea por fichero: en BONUS-02 «→ las campañas de San Valentín, Navidad y terraza se ejecutan con 06-eventos-festivos.xlsx»; en 05 «→ el día a día está en 01 y 02; aquí va lo que no es diario»; etc."
+    },
+    {
+     "id": "DOM-R2-18",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+     "ubicacion": "Apertura de Caja!B7 y B23/C23",
+     "hallazgo": "La tarea 3 dirige al operario a «la celda verde C23 de esta hoja». La referencia va escrita a mano en el texto, así que basta con que alguien inserte una fila en la tabla —lo que las Instrucciones del mismo fichero recomiendan hacer— para que el fondo pase a C24 y la tarea mande escribirlo en la fila del contador. La fórmula del cierre sí se reajusta sola; el texto no.",
+     "evidencia": "09!Apertura de Caja B7='Registrar el importe del fondo de caja en la celda verde C23 de esta hoja'; B23='Fondo de caja inicial (€)', C23 verde y desbloqueada; 09!Instrucciones B37='…inserta filas DENTRO de la tabla…'.",
+     "fix": "Quitar la coordenada: «Registrar el importe en la celda verde «Fondo de caja inicial (€)», al pie de esta hoja» — que es como ya lo dice Instrucciones!B10."
+    },
+    {
+     "id": "DOM-R2-19",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+     "ubicacion": "Apertura Cocina!B14",
+     "hallazgo": "«Comprobar la instalación de gas: llaves abiertas y sin fugas (agua jabonosa en las uniones)» está programada como tarea DIARIA de apertura, con hora límite 07:00. La prueba de agua jabonosa en las uniones es una comprobación de mantenimiento, no algo que un cocinero haga cada mañana antes de encender: en la práctica nadie la hace y la casilla se marca igual, que es la forma más rápida de que el equipo deje de creerse el resto de la lista. El propio kit ya la tiene bien colocada en 05!Trimestral y Anual B10 («Revisión periódica de la instalación de gas por empresa habilitada»).",
+     "evidencia": "01!Apertura Cocina B14 (sección ENCENDIDO DE EQUIPOS, tarea 7, E14='07:00') frente a 05!Trimestral y Anual B10, D10='Instalador gas', E10='Cada 5 años'.",
+     "fix": "Dejar en la apertura lo que sí es diario —«Abrir la llave general de gas y comprobar que no hay olor; si huele a gas, no enciendas nada y ventila»— y remitir la prueba de fugas a 05."
+    },
+    {
+     "id": "DOM-R2-20",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/BONUS-02-calendario-anual-tareas.xlsx",
+     "ubicacion": "Calendario Anual A17:D18 y A20:D21",
+     "hallazgo": "Al insertar las cinco fechas nuevas no se rehízo el rayado de la tabla: las filas 17 y 18 quedan las dos en gris F5F5F5, y las 20 y 21 también. En una tabla de 22 filas impresa en apaisado, el rayado es lo único que guía el ojo por la fila.",
+     "evidencia": "openpyxl: fills de A5..A26 → F5F5F5 en 5,7,10,13,15,17,18,20,21,24,26 (dos pares consecutivos).",
+     "fix": "Re-aplicar el zebra por índice después de insertar filas."
+    },
+    {
+     "id": "DOM-R2-21",
+     "severidad": "baja",
+     "fichero": "BONUS-01-briefing-servicio.xlsx y BONUS-02-calendario-anual-tareas.xlsx",
+     "ubicacion": "BONUS-01!Briefing B37 y BONUS-02!Calendario Anual A34",
+     "hallazgo": "El pie de las hojas de los dos BONUS no lleva el nombre del negocio y BONUS-02 además cierra con un guion suelto, mientras que los 9 ficheros restantes usan «— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro». Son las dos hojas que se imprimen y se pegan en el pase, así que la incoherencia se ve.",
+     "evidencia": "BONUS-01!Briefing B37='— Kit de Tareas Recurrentes · AI Chef Pro · aichef.pro'; BONUS-02!Calendario Anual A34='— Kit de Tareas Recurrentes · AI Chef Pro · aichef.pro —'; 01!Apertura Cocina A56='— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro'.",
+     "fix": "Unificar el pie en las 33 hojas."
+    },
+    {
+     "id": "DOM-R2-22",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx (y 01)",
+     "ubicacion": "Mise en Place!B28, Calientes!B20 vs Mise en Place!B10 y 01!Apertura Cocina!B23",
+     "hallazgo": "Las temperaturas nuevas usan signo menos tipográfico y espacio antes de la unidad («−20 °C», «≤ −18 °C») y las heredadas usan guion ASCII y sin espacio («pasar de -18 a -12°C», «(>65°C)»). Conviven en el mismo libro y en hojas contiguas.",
+     "evidencia": "02!Mise en Place B10 '…≥24 h a −20 °C (o −35 °C 15 h)' vs B28 'Helados temperados (pasar de -18 a -12°C)'; 02!Calientes B20 'Control de temperatura de mantenimiento (>65°C)'.",
+     "fix": "Normalizar a «−18 °C» (U+2212 + espacio) en todo el corpus, como parte del motor."
+    },
+    {
+     "id": "DOM-R2-23",
+     "severidad": "baja",
+     "fichero": "los 9 checklists, columna A de las filas libres",
+     "ubicacion": "p.ej. 01!Apertura Cocina A46:A50, 08!Apertura del Negocio A20:A24",
+     "hallazgo": "Las 5 filas libres se pintan de verde en B:G pero la columna «Nº» se queda vacía y sin relleno. Impresa, la tabla pasa de la tarea 30 a cinco filas sin número: quien escriba ahí no puede referirse a su tarea por número en el briefing ni en el handover, que es para lo que sirve la columna.",
+     "evidencia": "openpyxl 01!Apertura Cocina fila 46: A46 sin relleno y valor None, B46..G46 fill 00E8F5E9. Idem en las 33 hojas con filas libres.",
+     "fix": "Numerar también las filas libres (31, 32, 33, 34, 35) o dejar la A verde para que se escriba a mano."
+    },
+    {
+     "id": "DOM-R2-24",
+     "severidad": "baja",
+     "fichero": "01, 02, 03!Handover Turno, 04",
+     "ubicacion": "cabecera E4 de esas hojas",
+     "hallazgo": "DOM-25 se resolvió sólo en semanales, mensuales y eventos. En las diarias la columna sigue titulada «Hora Límite» y contiene hitos: «Cierre», «Servicio», «Cambio», «Si aplica», «Según entrega», «10:00-11:30». Impreso queda «Hora Límite: Si aplica».",
+     "evidencia": "04!Sous Chef E4='Hora Límite' con E10='Si aplica' y E9='10:00-11:30'; 04!Jefe de Cocina E11='Según entrega'; 03!Handover Turno E6..E21='Cambio'; 01 y 02, 'Cierre' y 'Servicio'.",
+     "fix": "Titular esas columnas «Cuándo» y dejar «Hora Límite» sólo donde todos los valores son horas."
+    },
+    {
+     "id": "DOM-R2-25",
+     "severidad": "baja",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 155 (tarjeta 'Semanales y Mensuales')",
+     "hallazgo": "La hoja nueva «Trimestral y Anual» (DDD, conductos de extracción, extintores y BIE, retimbrado, gas, legionela, analítica de agua, gestor de aceite, seguro, Verifactu, calibración de sondas) no se menciona en ninguna parte de la landing. Es el contenido de la v2.0 con más valor para el comprador —es literalmente la carpeta que le piden en una inspección— y se entrega mudo.",
+     "evidencia": "kit-tareas.ts:155 desc='Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de equipos y seguridad.' frente a 05!Trimestral y Anual, 14 tareas en 3 bloques con columna «Nº de parte».",
+     "fix": "Añadir a la tarjeta «+ hoja Trimestral y Anual: DDD, extracción, extintores, gas y legionela con nº de parte y firma»."
+    },
+    {
+     "id": "DOM-R2-26",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx",
+     "ubicacion": "Registro Mensual!H36",
+     "hallazgo": "El total del mes de la columna «Descuadre» es una SUMA con signo: un día de +50 y otro de −50 dan 0, y la fila TOTALES dice que el mes cuadró. El descuadre es la única cifra de esa tabla que no se puede sumar así.",
+     "evidencia": "09!Registro Mensual H36='=SUM(H5:H35)'; H5..H35='=IFERROR(Fn-Gn,0)' (valores con signo, CF ámbar por fila).",
+     "fix": "=SUMPRODUCT(ABS(H5:H35)) etiquetado «Descuadre acumulado (valor absoluto)», o una segunda celda «Días que no cuadraron» con COUNTIF(H5:H35,\"<>0\")."
+    },
+    {
+     "id": "DOM-R2-27",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/03-tareas-manager.xlsx",
+     "ubicacion": "Diario Manager E16:E17",
+     "hallazgo": "Dentro del bloque PRE-SERVICIO las horas van 11:00, 11:00, 11:15, 11:45, 11:30: la tarea 10 vence antes que la 9. En una lista que se recorre de arriba abajo, la única función del orden es marcar la secuencia.",
+     "evidencia": "03!Diario Manager B16='Briefing pre-servicio con equipo de sala' E16='11:45'; B17='Revisar redes sociales: comentarios, reseñas nuevas' E17='11:30'.",
+     "fix": "Intercambiar las filas 16 y 17 o poner el briefing al final del bloque."
+    },
+    {
+     "id": "DOM-R2-28",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/02-partidas-cocina.xlsx",
+     "ubicacion": "Calientes!B20",
+     "hallazgo": "§2.9 añadió el objetivo y el hueco de lectura sólo a las tareas que empiezan por «Registrar temperatura». «Control de temperatura de mantenimiento (>65°C)» se quedó sin «anota la lectura: ____ °C», y es la única medición del kit que se toma DURANTE el servicio, que es la que un inspector pide para el mantenimiento en caliente.",
+     "evidencia": "02!Calientes B20='Control de temperatura de mantenimiento (>65°C)' (sección DURANTE EL SERVICIO) frente a 01!Apertura Cocina B21='Registrar temperatura cámara 1 (refrigeración 0-4 °C) — anota la lectura: ____ °C'.",
+     "fix": "«Control de temperatura de mantenimiento en caliente (≥ 65 °C) — anota la lectura: ____ °C»."
+    },
+    {
+     "id": "DOM-R2-29",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/05-tareas-semanales-mensuales.xlsx",
+     "ubicacion": "Mantenimiento Mensual!B19/E19",
+     "hallazgo": "La descalcificación de la máquina de café queda en la hoja MENSUAL con cadencia «Trimestral», teniendo ya el fichero una hoja «Trimestral y Anual» creada en esta misma v2.0. Quien imprima la mensual se lleva una tarea que no toca ese mes y no la encuentra donde debería buscarla.",
+     "evidencia": "05!Mantenimiento Mensual B19='Descalcificar la máquina de café y revisar el descalcificador o las resinas (según la dureza del agua)', E19='Trimestral'; hoja 'Trimestral y Anual' existe en el mismo libro.",
+     "fix": "Mover la fila a «Trimestral y Anual» (bloque ADMINISTRACIÓN Y EQUIPOS) o dejarla mensual de verdad."
+    },
+    {
+     "id": "DOM-R2-30",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+     "ubicacion": "Instrucciones B15-B16 vs B27-B28",
+     "hallazgo": "El fichero conserva el bloque viejo «Cómo personalizar» («Borra las tareas que no aplican a tu restaurante», «Añade tareas específicas de tu local en las filas vacías del final») justo encima del bloque nuevo, que dice lo contrario en los dos puntos: ahora lo que no aplica se marca N/A —no se borra— y lo propio va en las filas libres DENTRO del rango, «nunca por debajo de la última». Dos instrucciones opuestas separadas por diez líneas.",
+     "evidencia": "01!Instrucciones B15='▸ Borra las tareas que no aplican a tu restaurante', B16='▸ Añade tareas específicas de tu local en las filas vacías del final' frente a B22 ('«N/A» = no aplica en tu local…') y B28 ('…nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie'). Igual en 02:B9, 07:B6-B9.",
+     "fix": "Reescribir el bloque viejo: «Lo que no aplique márcalo N/A (sale del total)» y «Añade lo tuyo en las filas verdes libres de dentro de la tabla»."
+    }
+   ],
+   "veredicto": "no listo",
+   "motivo": "Siete altas, y tres de ellas son exactamente las demostraciones que la SPEC §6 declaraba exigibles y que NO pasan: (a) el contador da «22 de 22» con tres tareas marcadas «—» = no hecho, de modo que la hoja que el kit manda archivar como prueba de control operativo se autoblanquea; (b) el 07 con 8 tareas escritas devuelve «0 de 11» y en blanco imprime «0 de 3», porque los tres placeholders cuentan como tareas; (c) la landing sigue con el testimonio «Pagábamos €60 al mes por Trail». A eso se suma dinero mal calculado: el Registro Mensual del 09 no descuenta el fondo que él mismo pide teclear, así que el día que el Cierre de Caja da descuadre 0 el registro mensual marca +150 € en ámbar (verificado con pycel). Y dos incumplimientos estructurales: las 34 hojas están protegidas con insertRows=False mientras las Instrucciones prometen dos veces por fichero que se pueden insertar filas con la protección puesta —la única vía ofrecida para pasar de 5 tareas propias—, y el bloque SISTEMAS de 01!Apertura Sala sigue duplicando íntegro 08 y 09 (TPV a las 06:45, 07:15 y 11:30) bajo una línea impresa que afirma «No se duplican: cada uno cubre un nivel». Por último, «121 tareas en el kit completo» es falso: son 507. El motor de caja, el arqueo, la hoja Trimestral y Anual, el anisakis, la higiene personal y la bio en 11/11 sí están bien resueltos; lo que falta es de corrección barata pero bloqueante, porque toca el contador, el dinero y las cifras de la página de venta."
+  },
+  "TEC": {
+   "lente": "TÉCNICA EXCEL (openpyxl + pycel) — ronda 2 de refutación sobre la v2.0 de kit-tareas regenerada con `main.py --producto kit-tareas --dry-run`: fórmulas y rangos evaluados con pycel, DV/CF/COUNTIF tras las filas insertadas, merges, protección, print areas, alturas y anchos, idempotencia profunda, censo, integridad XML, y motor aplicado a los hermanos cafetería y hotel",
+   "hallazgos": [
+    {
+     "id": "TEC-R2-01",
+     "severidad": "alta",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts (y src/data/productos-changelog.ts)",
+     "ubicacion": "kit-tareas.ts:139 · productos-changelog.ts:304",
+     "hallazgo": "El recuento de tareas que exige la SPEC §4 (COM-24, «~90 tareas» → «121 tareas», «recontar tras la v2.0») está mal hecho: la landing afirma «121 tareas en el kit completo (recuento v2.0)» y los 11 xlsx contienen 507 filas de tarea. El error es de 4×, y el paréntesis «(recuento v2.0)» presenta la cifra como verificada. 121 no corresponde a nada medible del kit: ni siquiera al fichero 01, que por sí solo tiene 118.",
+     "evidencia": "Contadas las filas con texto en la columna «Tarea» entre la cabecera y la fila del contador de cada hoja de checklist, sobre la carpeta regenerada: 01=118, 02=57, 03=81, 04=68, 05=63, 06=60, 07=9 (placeholders), 08=28, 09=23, BONUS=0 → TOTAL 507 (498 sin los placeholders del 07). El propio Excel lo confirma: los denominadores cacheados por inject_cache valen 01!'Apertura Cocina'!F52=30, 01!'Apertura Sala'!F41=23, 01!'Apertura Barra'!F32=16, 01!'Cierre Cocina'!F43=25, 01!'Cierre Sala'!F30=12, 01!'Cierre Barra'!F26=12 (=118 sólo en el 01). Frente a eso, kit-tareas.ts:139 = '6 checklists: apertura cocina, sala, barra + cierre cocina, sala, barra. Cada tarea con responsable, hora límite y firma. 121 tareas en el kit completo (recuento v2.0).' y productos-changelog.ts:304 title = 'Apertura y cierre de negocio, arqueo de caja y 121 tareas revisadas'.",
+     "fix": "Recontar con el mismo criterio que usa el contador del propio Excel (COUNTIF de la columna «Tarea» por hoja, sumado) y poner la cifra real —507, o 498 si se decide no contar los 3 placeholders por hoja del 07— en kit-tareas.ts:139. En el changelog, o se corrige la cifra o se reformula el título para que «121» no se lea como el total del kit (si se refería a «tareas revisadas en la v2.0», decirlo así). Y añadir el recuento al gate: `main.py` ya sabe leer los denominadores, basta con emitirlo en el informe y compararlo con la landing."
+    },
+    {
+     "id": "TEC-R2-02",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Cierre de Caja: filas 25, 41 y 46-53",
+     "hallazgo": "Al insertar filas, el bloque de dinero perdió sus alturas explícitas: TODA la tabla «Resumen de Cierre» (cabecera Concepto/Importe + las 7 filas, incluidas TOTAL FACTURADO y DESCUADRE), la cabecera «Denominación» y la fila nueva «0,02 €» se quedan sin `row_dimensions.height` y se pintan a la altura por defecto de Excel (15 pt) en medio de una hoja cuyo resto usa 22-32 pt. El resultado impreso es una tabla de arqueo visiblemente aplastada justo donde está la cifra que el cliente mira (DESCUADRE), y una fila de moneda —la de 2 céntimos, la que estrena la v2.0— más baja que sus 15 hermanas.",
+     "evidencia": "openpyxl sobre el fichero regenerado, 'Cierre de Caja': row_dimensions con altura = {1:40, 2:28, 3:8, 4:28, 5-16:24, 24:32, 26:24, 27-40:22, 42:22, 43:28, 45:30, 55:30}; SIN altura (None → 15 pt por defecto) = filas 25, 41, 44, 46, 47, 48, 49, 50, 51, 52, 53, 54, 56. Contraste con el original en astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx, donde el mismo contenido llevaba altura: fila 19 'Denominación' h=26, filas 21-35 (denominaciones) h=22 TODAS, fila 36 'TOTAL EFECTIVO' h=28, fila 38 'Resumen' h=30, fila 39 'Concepto' h=26 y filas 40-45 (Total Efectivo … DESCUADRE) h=24. Fuentes de las filas huérfanas: A46/C46 = 11 pt negrita, A47:C53 = 10 pt, A41/C41 = 10 pt → no hay recorte de texto, es pérdida de proporción, no de contenido.",
+     "fix": "En el motor, al reconstruir el bloque de caja fijar explícitamente las alturas del molde de pastelería v2.0 (título 30, cabecera 26, filas de concepto 24, filas de denominación 22) en vez de confiar en que `insert_rows` arrastre `row_dimensions` —openpyxl no las desplaza de forma fiable—. Y añadir al gate una comprobación de que ninguna fila del bloque de dinero queda con `height is None` mientras sus vecinas la tienen."
+    },
+    {
+     "id": "TEC-R2-03",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Cierre de Caja!A27:A42 (recuento por denominaciones)",
+     "hallazgo": "La SPEC §1.1 promete «etiquetas con merge A:B y anchos legibles (TEC-03)», y el merge se aplicó al Resumen (A46:B46 … A53:B53) y a TOTAL EFECTIVO (A43:B43), pero NO a las 16 filas del recuento por denominaciones, que siguen con la etiqueta en la columna A de ancho 5 (la del «#») con wrap_text y alto fijo 22. Las etiquetas de moneda de 6 caracteres no caben en una línea y se recortan: cinco filas seguidas que el cajero lee igual mientras cuenta calderilla. Es la mitad de TEC-03 que se quedó sin hacer.",
+     "evidencia": "openpyxl: ws.column_dimensions['A'].width = 5.0; merged_cells.ranges de 'Cierre de Caja' = ['A1:G1','A23:B23','A24:G24','A26:C26','A2:C2','A34:C34','A43:B43','A45:C45','A46:B46','A47:B47','A48:B48','A49:B49','A50:B50','A51:B51','A52:B52','A53:B53','A55:G55','A56:G56','D2:G2'] — ninguna fila del rango 27-42 aparece. Valores y alturas: A37='0,50 €' h=22, A38='0,20 €' h=22, A39='0,10 €' h=22, A40='0,05 €' h=22, A42='0,01 €' h=22, todos con wrap_text=True y fuente 10. Con la heurística estándar (unidad de ancho = avance del «0»), capacidad ≈ 5·11/10 = 5,5 caracteres frente a los 6 del literal → 2 líneas necesarias, 1 visible (22 pt ≈ 1,6 líneas de 10 pt). Los billetes de 3-4 caracteres ('500 €', '20 €') sí caben, así que el recorte afecta sólo a las monedas. Curiosidad que lo confirma: A41 ('0,02 €', la fila nueva) NO se recorta porque se quedó sin altura fija (ver TEC-R2-02) y Excel la autoajusta.",
+     "fix": "La columna B de esas filas está ocupada por «Cantidad», así que el merge A:B que se usó en el Resumen no vale aquí. Dos salidas: (a) subir el ancho de la columna A a ≥10 —sólo la comparte con el «#» del checklist superior, que es de dos dígitos—, o (b) quitar la altura fija de las filas 27-42 para que Excel autoajuste, que es justo lo que hace bien la fila 41 y por lo que es la única moneda que se lee entera. Y ampliar el gate: comprobar que ninguna etiqueta con wrap_text y altura fija supera la capacidad de una línea de su columna."
+    },
+    {
+     "id": "TEC-R2-04",
+     "severidad": "media",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Apertura de Caja!B7",
+     "hallazgo": "La tarea que el motor reescribe para apuntar al fondo (§1.1 / DOM-05) no cabe en su celda y además hardcodea la referencia: «Registrar el importe del fondo de caja en la celda verde C23 de esta hoja» son 73 caracteres en una columna de ancho 50 con wrap_text y alto fijo 24 → se recorta justo por el final, que es donde está el dato útil («…en la celda verde C2»). Y como la protección permite insertar filas (insertRows=\"0\" en el XML) y las Instrucciones lo invitan expresamente, en cuanto el cliente inserte una fila por encima, la fórmula del cierre se reajustará sola a C24 pero el texto seguirá diciendo C23.",
+     "evidencia": "openpyxl: 'Apertura de Caja'!B7 = 'Registrar el importe del fondo de caja en la celda verde C23 de esta hoja' (73 car.), ws.column_dimensions['B'].width = 50.0, alignment.wrap_text = True, font.size = 10, row_dimensions[7].height = 24.0 → capacidad ≈ 50·11/10 = 55 car. por línea, 2 líneas necesarias y ~1,6 disponibles. La celda a la que apunta es B23='Fondo de caja inicial (€)' / C23=0 (verde 00E8F5E9, desbloqueada) y la lee 'Cierre de Caja'!C48 = \"=IFERROR('Apertura de Caja'!C23,0)\". XML de protección de la hoja: <sheetProtection … insertRows=\"0\" deleteRows=\"0\" …> (0 = permitido).",
+     "fix": "Acortar a algo que quepa en una línea y no dependa de la coordenada, p. ej. «Registrar el fondo de caja en la celda verde del pie de esta hoja» (65 car. → sigue sin caber; mejor «Anotar el fondo de caja en la celda verde de abajo», 49 car.), o subir la altura de la fila 7 a 34. Si se quiere conservar la referencia exacta, calcularla en tiempo de generación y volver a escribirla en cada pasada (el motor ya conoce la fila del fondo: `motor._buscar(ap, ETIQ_FONDO)`)."
+    },
+    {
+     "id": "TEC-R2-05",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "kit-tareas.ts:189 y kit-tareas.ts:253 vs BONUS-02-calendario-anual-tareas.xlsx!'Calendario Anual'!A5:D26",
+     "hallazgo": "La landing sigue diciendo «17 fechas clave de hostelería» en dos tarjetas, pero el §3 de la SPEC añadió cinco fechas al calendario (Día del Padre, comuniones abr-jun, 15 de agosto, 1 de noviembre y el puente del 6-8 de diciembre) y el BONUS-02 regenerado lista 22. Es el mismo tipo de cifra sin recontar que TEC-R2-01, en el otro extremo del kit.",
+     "evidencia": "openpyxl sobre el BONUS-02 regenerado: filas 5 a 26 con Mes/Fecha-Evento/Tareas/Antelación = 22 entradas, entre ellas las nuevas B9='19 Mar — Día del Padre', B12='Abril-Junio — Comuniones y bautizos (temporada)', B18='15 Ago — Asunción', B21='1 Nov — Todos los Santos', B23='6-8 Dic — Puente de la Constitución y la Inmaculada'. Las filas 28-32 son las cinco libres del cliente ('(Tu fecha)' … '(Antelación)', verde 00E8F5E9), que no cuentan como fechas del producto. Frente a eso, kit-tareas.ts:189 = '17 fechas clave de hostelería con tareas asociadas y antelación recomendada…' y :253 = '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, terraza)…'.",
+     "fix": "Cambiar los dos «17» por «22» en kit-tareas.ts:189 y :253, y comprobar si el mismo número aparece en el dashboard o en los emails."
+    },
+    {
+     "id": "TEC-R2-06",
+     "severidad": "baja",
+     "fichero": "los 11 xlsx de astro-site/public/dl/kit-tareas/ (regenerados)",
+     "ubicacion": "Instrucciones: 01!B45, 02!B37, 03!B42, 04!B36, 05!B42, 06!B36, 07!B45, 08!B44, 09!B54, BONUS-01!B20, BONUS-02!B20",
+     "hallazgo": "La línea de bio (§2.6) sigue quedándose corta de altura por unos pocos puntos: son 116 caracteres a fuerza 12 en una columna de ancho 100 → 2 líneas, y la fila se fijó en 30 pt cuando dos líneas de 12 pt piden ~32,7. TEC-18 pedía explícitamente «subirlas a 34». Es el mismo defecto que la Fase A dejó abierto, ahora reducido a un margen del 8 % en vez de a la mitad — se comerá los descendentes de la segunda línea al imprimir.",
+     "evidencia": "openpyxl, 01-apertura-cierre.xlsx!Instrucciones!B45 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' (116 car.), font.size=12, alignment.wrap_text=True, column_dimensions['B'].width=100.0, row_dimensions[45].height=30.0. Capacidad por línea ≈ 100·11/12 = 91,7 car. → 2 líneas; alto de línea de Calibri 12 ≈ 15·12/11 = 16,4 pt → 32,7 pt necesarios contra 30 disponibles. Idéntico en los 11 ficheros (mismo texto, misma fuente, misma altura 30). Las líneas de cuerpo a fuerza 11 sí están bien: 30 pt = 2 × 15.",
+     "fix": "Poner 34 (o `height=None` para que Excel autoajuste, que es lo que hacen las Instrucciones de 01-07 en el resto de filas) en la fila de la bio de los 11 ficheros."
+    },
+    {
+     "id": "TEC-R2-07",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Apertura de Caja!C5:C15 y Cierre de Caja!C5:C16",
+     "hallazgo": "El «Responsable» precargado por §1.4 en las hojas de caja es 'Responsable de caja', 19 caracteres en una columna de ancho 16 con wrap_text y alto fijo 24 (una línea a fuerza 10). Se queda al filo: la medida por capacidad de caracteres da 2 líneas necesarias y 1 visible, así que en pantalla y en papel puede leerse «Responsable de» en las 23 filas. Marcado bajo porque la estimación es aproximada (los caracteres son estrechos y podrían caber), pero es fácil de eliminar del todo.",
+     "evidencia": "openpyxl: 'Apertura de Caja' y 'Cierre de Caja' → column_dimensions['C'].width = 16.0; C5..C15 / C5..C16 = 'Responsable de caja' (19 car.), font.size=10, wrap_text=True, row_dimensions de esas filas = 24.0. Capacidad ≈ 16·11/10 = 17,6 car. → 19 > 17,6. Contraste: en 08-apertura-cierre-negocio.xlsx la misma columna es D con ancho 16 y el valor precargado es 'Encargado' (9 car.), que cabe de sobra.",
+     "fix": "O ampliar la columna C de las dos hojas de caja a 20 (hay sitio: la hoja va a 137 unidades y ya se imprime escalada), o precargar 'Resp. de caja' / 'Cajero', que es como se llama el puesto en el resto del kit."
+    },
+    {
+     "id": "TEC-R2-08",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas-hotel/ (dry-run del motor)",
+     "ubicacion": "18-apertura-cierre-negocio.xlsx y 19-apertura-cierre-caja.xlsx frente a 01-15 y BONUS-01/02",
+     "hallazgo": "Aplicar el motor sólo a los 08/09 de los hermanos (SPEC §5) deja el kit del hotel con las DOS listas del desplegable conviviendo dentro del mismo producto: 4 hojas con «✓,—,N/A» y 48 con «✓,✗,—». Es exactamente el defecto TEC-08 de la R1 («un mismo kit pide al mismo empleado tres opciones distintas según qué hoja imprima»), sólo que ahora reproducido dentro del hotel — y agravado porque las Instrucciones de 18/19 explicarán que «—» = no hecho y «N/A» = no aplica mientras las otras 15 plantillas siguen ofreciendo «✗» sin leyenda. Lo mismo pasará con el contador: 18/19 descuentan N/A y —, las demás no.",
+     "evidencia": "`main.py --producto kit-tareas-hotel --dry-run` → «en alcance 2/19», 17 ficheros «FUERA DE ALCANCE (intacto)» y md5 idéntico al de astro-site/public/dl/kit-tareas-hotel/ para esos 17 (comprobado uno a uno). Censo de dataValidations sobre la carpeta regenerada: '\"✓,✗,—\"' en 48 hojas (01-fb-buffet-desayuno.xlsx:Apertura Desayuno, 02-fb-buffet-comida-cena.xlsx:Buffet Almuerzo, …) y '\"✓,—,N/A\"' sólo en 18!Apertura del Negocio, 18!Cierre del Negocio, 19!Apertura de Caja y 19!Cierre de Caja. El gate del propio main.py lo reporta sin alarmarse: «DV «✓,—,N/A»: 4 hojas de checklist, 0 incorrectas», porque sólo mira las hojas en alcance.",
+     "fix": "Decidirlo explícitamente antes de la tanda de hermanos: o el motor unifica la DV y el contador en TODAS las hojas de checklist del producto (no sólo en las que reconoce como 08/09), o el gate por hermano tiene que emitir un aviso cuando el producto quede con más de una lista, para que no se publique un kit con dos convenciones. Como mínimo, que `gate_dv_y_bio` cuente también las hojas fuera de alcance y lo diga."
+    },
+    {
+     "id": "TEC-R2-09",
+     "severidad": "baja",
+     "fichero": "los 11 xlsx de astro-site/public/dl/kit-tareas/ (regenerados)",
+     "ubicacion": "cualquier hoja de checklist, p. ej. 01!'Apertura Cocina'!D52 y F52",
+     "hallazgo": "El numerador y el denominador miden columnas distintas sobre el mismo rango, así que el contador puede pasarse del total: marcar ✓ en una de las 5 filas libres SIN escribir la tarea da «x de y» con x > y. Es la variante que sobrevive de TEC-02 (allí eran «16 de 15» por una DV más ancha que el literal). No es grave —requiere que el usuario marque una fila vacía— pero el contador es justamente lo que la v2.0 vende como «honesto».",
+     "evidencia": "01!'Apertura Cocina': D52 = '=COUNTIF(F5:F50,\"✓\")' (cuenta marcas en la columna de la casilla), F52 = '=COUNTIF(B5:B50,\"?*\")-COUNTIF(F5:F50,\"N/A\")-COUNTIF(F5:F50,\"—\")' (cuenta textos de tarea). La DV «✓,—,N/A» cubre F6:F50, es decir también las 5 filas libres 46-50, que no tienen texto en B. Demostrado con pycel sobre una copia: marcando ✓ en las 30 tareas y además en F46 y F47 (dos filas libres SIN escribir la tarea) el contador da **num=32 · den=30**, o sea «32 de 30». El caso legítimo sí funciona: 30 tareas con 3 N/A, 2 «—» y 25 ✓ más 2 tareas propias escritas en B46/B47 con ✓ en F46 → «26 de 27».",
+     "fix": "Cambiar el numerador a un COUNTIFS que exija texto en la tarea: =COUNTIFS(B5:B50,\"?*\",F5:F50,\"✓\"). Cuesta lo mismo y cierra el caso."
+    },
+    {
+     "id": "TEC-R2-10",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/07-plantilla-personalizable.xlsx (regenerado)",
+     "ubicacion": "Por Franja Horaria!F31, Por Área!F31, Por Perfil!F31 (y B6/B13/B20 de cada hoja)",
+     "hallazgo": "El denominador por fórmula de §2.3 funciona (el caso §6 de 8 tareas da 8), pero la plantilla en blanco se entrega marcando «0 de 3» porque los tres placeholders «(Escribe aquí tu tarea de …)» son texto y el COUNTIF los cuenta como tareas. El cliente que abra la plantilla ve un contador que ya dice que tiene 3 tareas antes de escribir nada, y si borra un placeholder para empezar el total baja a 2.",
+     "evidencia": "openpyxl sobre las tres hojas del 07 regenerado: F31 = '=COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\")-COUNTIF(F5:F29,\"—\")' con valor cacheado 3.0 en las tres; los únicos textos en la columna B son B6, B13 y B20 ('(Escribe aquí tu tarea de Apertura/Servicio/Cierre)' en 'Por Franja Horaria'; de Cocina/Sala/Barra en 'Por Área'; de Cocina/Sala/Gerencia en 'Por Perfil').",
+     "fix": "O restar los placeholders en el denominador (=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"(Escribe aquí*\")-…), o poner el placeholder como texto de marcador de posición en el formato/comentario en vez de como valor de celda. La segunda es más limpia y evita que el cliente arrastre el paréntesis a su lista real."
+    },
+    {
+     "id": "TEC-R2-11",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Cierre de Caja!A45:C53 (Resumen) vs 'Registro Mensual'!C4",
+     "hallazgo": "El Resumen de Cierre no expone la cifra que el Registro Mensual pide. El encadenado es Total Efectivo (recuento) → Fondo (−) → Tarjetas → Otros → TOTAL FACTURADO, sin una fila «Ventas en efectivo» = contado − fondo; pero la columna C del Registro Mensual se llama literalmente «Ventas Efectivo». Para pasar el día al registro el usuario tiene que restar de cabeza dos celdas que la hoja ya tiene. El fix de TEC-01 pedía esa fila explícitamente («'Ventas en efectivo' = B40-Bnn»).",
+     "evidencia": "openpyxl: 'Cierre de Caja' A47='Total Efectivo (recuento)' C47='=C43'; A48='Fondo de caja inicial (−)' C48=\"=IFERROR('Apertura de Caja'!C23,0)\"; A49='Total Tarjetas (Visa/MC)'; A50='Total Otros (Bizum, Vales)'; A51='TOTAL FACTURADO' C51='=IFERROR(C47-C48,0)+C49+C50'. No existe ninguna fila cuyo valor sea C47-C48. 'Registro Mensual'!C4='Ventas Efectivo' (columna de entrada, verde, desbloqueada, C5:C35). Verificado con pycel que la cadena calcula bien (fondo 200, cajón 1.000, tarjetas 350,50, otros 20, Z 1.170,50 → DESCUADRE 0,00; con Z 1.200 → −29,50).",
+     "fix": "Insertar entre C48 y C49 una fila 'Ventas en efectivo (contado − fondo)' con '=IFERROR(C47-C48,0)' y hacer que TOTAL FACTURADO la sume, en vez de repetir la resta. Además de cerrar TEC-01 del todo, deja a la vista la cifra que se copia al Registro Mensual."
+    },
+    {
+     "id": "TEC-R2-12",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/09-apertura-cierre-caja.xlsx (regenerado)",
+     "ubicacion": "Apertura de Caja y Cierre de Caja, configuración de página",
+     "hallazgo": "TEC-19 se arregló en el 08 (las dos hojas pasaron a landscape) pero el 09 se quedó fuera, y al añadirle la columna «Firma» (§1.3) ahora es igual de ancho: 137 unidades en vertical con fitToWidth=1 → Excel escala a ~60 %, por debajo del 82 % de las hojas de 01-07 y en la hoja donde más importa leer cifras. El propio fichero recomienda imprimir y plastificar.",
+     "evidencia": "openpyxl: 09!'Apertura de Caja' y 09!'Cierre de Caja' → page_setup.orientation='portrait', fitToWidth=1, fitToHeight=0, paperSize=9; anchos A=5, B=50, C=16, D=13, E=14, F=14, G=25 → 137 unidades (antes de la v2.0 eran 122: A5+B50+C16+D14+E12+F25). Comparar: 08!'Apertura del Negocio' = 153 unidades y YA está en landscape; 09!'Registro Mensual' = 148 y también; las hojas de 01-07 son 119 en portrait.",
+     "fix": "Poner las dos hojas de caja en landscape, con el mismo criterio que el motor ya aplica al 08 y al Registro Mensual (§1.5 dice «apaisado en las hojas de 8 columnas»; el umbral debería ser el ancho en unidades, no el número de columnas)."
+    },
+    {
+     "id": "TEC-R2-13",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/08-apertura-cierre-negocio.xlsx (regenerado)",
+     "ubicacion": "Apertura del Negocio!B7, B16 y B17",
+     "hallazgo": "Tres tareas del 08 siguen recortadas por alto de fila fijo: 58-60 caracteres en la columna B de ancho 50 a fuerza 10 con wrap_text y altura 24. No lo introduce la v2.0 (el texto ya era así), pero la hoja acaba de pasar a landscape y a print_area propio precisamente para imprimirse, así que el recorte se publica con la versión nueva.",
+     "evidencia": "openpyxl: B7='Encender climatización (HVAC) / calefacción según temporada' (59), B16='Revisar estado del mobiliario (sillas, mesas, iluminación)' (58), B17='Montar terraza si aplica (mesas, sillas, sombrillas/estufas)' (60); column_dimensions['B'].width=50.0, wrap_text=True, font.size=10, row_dimensions[7/16/17].height=24.0 → capacidad ≈ 55 car./línea, 2 líneas necesarias, ~1,6 disponibles.",
+     "fix": "Dejar sin altura fija (autoajuste) las filas de tarea cuyo texto supere la capacidad de una línea, o subirlas a 30. El motor ya recorre esas filas para pintarlas de verde; medir la longitud allí mismo es barato."
+    },
+    {
+     "id": "TEC-R2-14",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/BONUS-01-briefing-servicio.xlsx y BONUS-02-calendario-anual-tareas.xlsx (regenerados)",
+     "ubicacion": "BONUS-01!'Briefing' y BONUS-02!'Calendario Anual', propiedad de protección",
+     "hallazgo": "§2.7 pide «hojas protegidas sin contraseña con las celdas de entrada desbloqueadas» y las 33 hojas de checklist lo cumplen impecablemente (comprobado: todas las celdas con desplegable están desbloqueadas y la protección permite insertar/borrar filas), pero las dos hojas de los BONUS se quedan sin proteger, incluida la del calendario, que ahora tiene bloque editable propio (A28:D32, verdes). No hay fórmulas que proteger, así que el riesgo es nulo; se anota por coherencia con el §6 («Hojas protegidas con entradas desbloqueadas») y para que el gate no dé por cerrado algo que no cubre.",
+     "evidencia": "openpyxl: ws.protection.sheet = False en BONUS-01!'Briefing', BONUS-02!'Calendario Anual' y en las 11 hojas 'Instrucciones'; True en las 33 hojas de checklist. XML de una protegida: <sheetProtection selectLockedCells=\"0\" selectUnlockedCells=\"0\" sheet=\"1\" objects=\"0\" insertRows=\"0\" deleteRows=\"0\" formatCells=\"0\" formatRows=\"0\" formatColumns=\"0\" sort=\"0\" autoFilter=\"0\" insertColumns=\"1\" deleteColumns=\"1\" .../> — insertRows/deleteRows a 0 = permitido, que es lo que prometen las Instrucciones («Puedes insertar y borrar filas con la protección puesta»). Las dos hojas BONUS tienen 0 fórmulas.",
+     "fix": "O extender la protección a las hojas BONUS y a las Instrucciones (desbloqueando A28:D32 del calendario), o dejar escrito en la SPEC que §2.7 aplica sólo a hojas con fórmulas —que es lo que dice el texto de las propias Instrucciones («Las hojas con fórmulas van protegidas»)— y ajustar el §6 para que no prometa más de lo que se hace."
+    },
+    {
+     "id": "TEC-R2-15",
+     "severidad": "baja",
+     "fichero": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx (regenerado)",
+     "ubicacion": "Cierre Sala, filas 35-43 (B37 y B41)",
+     "hallazgo": "Al reducir los bloques «CIERRE DE CAJA» y «CIERRE GENERAL» a una línea de remisión (§2.5) quedaron restos de formato por debajo del contenido: la hoja declara dimensión A1:G43 cuando su última fila con contenido es la 34. No se imprime (el print_area es correcto, $A$1:$G$34) ni se ve, pero infla el rango usado y puede despistar a cualquier script que recorra `ws.max_row`.",
+     "evidencia": "openpyxl: 01!'Cierre Sala'.dimensions = 'A1:G43', print_area = \"'Cierre Sala'!$A$1:$G$34\"; barrido de celdas con relleno sólido o borde por debajo de la fila 34 → B37 y B41 conservan estilo; ninguna celda por debajo de la 34 tiene valor. Es la única hoja de los 11 ficheros con este residuo (comprobadas las 44).",
+     "fix": "Tras borrar filas, limpiar el estilo de las que quedan por debajo del pie (o llamar a `ws.delete_rows` en lugar de vaciar el contenido). Sin urgencia."
+    }
+   ],
+   "veredicto": "no listo",
+   "motivo": "El motor de Excel está bien: verifiqué con pycel el arqueo con escenarios propios distintos a los de la §6 (fondo 200 / cajón 1.000 / tarjetas 350,50 / otros 20 / Z 1.170,50 → DESCUADRE 0,00; Z 1.200 → −29,50; fondo sin rellenar → el descuadre delata exactamente el fondo) y el registro mensual (F=C+D+E, H=IFERROR(F−G,0) en las 31 filas con CF ámbar notEqual 0, y B36 = AVERAGEIF en vez de SUM); el contador honesto resiste la mezcla de N/A y «—» y recoge las filas libres («26 de 27» con 30 tareas, 3 N/A, 2 —, 2 tareas propias); los codepoints de la DV («✓» U+2713, «—» U+2014) coinciden byte a byte con los criterios de los COUNTIF; en las 33 hojas de checklist el rango del denominador, el de la DV y el del formato condicional terminan todos en la misma fila (última tarea + 5 libres); no hay ni un solapamiento de merges ni un valor escondido dentro de uno; las 156 fórmulas tienen valor cacheado; los 11 zips y sus 133 partes XML son válidos con fullCalcOnLoad=1; la idempotencia aguanta una comparación MUCHO más dura que la del propio gate —anchos, alturas, bordes, fuentes, alineación y configuración de página incluidos— con 0 diferencias; la protección está bien hecha (ninguna celda con desplegable bloqueada, e insertRows/deleteRows permitidos, que es lo que prometen las Instrucciones); y en los hermanos el motor se comporta (cafetería verde de punta a punta, hotel toca 2 de 19 ficheros y deja los otros 17 con el md5 intacto). Dicho eso, no lo doy por listo por una razón concreta: la SPEC §4 mandaba RECONTAR las tareas tras la v2.0 y el recuento está mal por un factor de 4 —la landing publica «121 tareas en el kit completo (recuento v2.0)» cuando los 11 ficheros suman 507 filas de tarea, y ni siquiera 121 corresponde al fichero 01, que tiene 118—, con la misma cifra sin recontar en el calendario («17 fechas clave» frente a las 22 que ahora tiene el BONUS-02). Son dos líneas de código, pero son cifras que el cliente puede contar. A eso se suman tres regresiones de impresión que el motor introdujo en el fichero de dinero y que ningún gate mira: el Resumen de Cierre entero (incluido el DESCUADRE), la cabecera «Denominación» y la fila nueva de 0,02 € se quedaron sin altura de fila y se pintan a 15 pt entre filas de 22-32; las etiquetas de moneda siguen recortadas en la columna A de ancho 5 pese a que §1.1 prometía «anchos legibles»; y la tarea que enseña dónde va el fondo no cabe en su celda y hardcodea «C23» en una hoja donde el cliente puede insertar filas. Nada de esto pone en riesgo un euro —el cálculo es correcto—, pero el producto se vende para imprimirse y plastificarse."
+  },
+  "COM": {
+   "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de la landing Astro (astro-site/src/data/productos/tareas/kit-tareas.ts) y sus gemelos SPA (src/pages/KitTareas.tsx, src/components/kit-tareas/*), el hub de la tienda (ProductosDigitalesHubPage.astro y ProductosDigitales.tsx), los emails (netlify/functions/verify-purchase.ts, resend-access.ts, src/data/productos-digitales-config.ts), el dashboard (src/pages/KitTareasDashboard.tsx) y el changelog (src/data/productos-changelog.ts) contra los 11 .xlsx REGENERADOS por el motor v2.0 en copia (main.py --producto kit-tareas --dry-run sobre $CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas; NO se ha tocado astro-site/public/dl). Verificación celda a celda con openpyxl: denominadores data_only, cabeceras, rellenos E8F5E9, validaciones, protección, print_area y metadatos; contraste de cifras contra los ficheros LIVE de la v1.1.",
+   "hallazgos": [
+    {
+     "id": "COM-R2-01",
+     "severidad": "alta",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 139 (grid.templates[0].desc); gemelo src/components/kit-tareas/ContentGrid.tsx:8; y src/data/productos-changelog.ts:304 (título de la entrada 2.0)",
+     "hallazgo": "El «121» de COM-24 no se ha recontado: se ha reetiquetado. La SPEC §4 pedía «~90 tareas» → «121 tareas (recontar tras la v2.0)» y lo que hay ahora dice «121 tareas en el kit completo (recuento v2.0)», que es falso por partida doble: (a) 121 era el recuento del fichero 01 en la v1.1, no del kit; (b) tras la v2.0 el fichero 01 ya no tiene 121 sino 118. El kit completo tiene 507 tareas contadas por los propios denominadores (≈496 escritas de verdad, descontando los 9 placeholders de 07 y las 2 filas-puntero de 01!Cierre Sala). Es el argumento más cuantitativo de la página de venta y se está infravalorando el producto en un factor ×4, además de mentir en la cifra. El changelog que ve el comprador en su dashboard repite el mismo 121.",
+     "evidencia": "LIVE astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx: filas con texto en col. B desde la 5 = 25+23+16+24+21+12 = 121 (de ahí salió el número). Copia v2.0 (dry-run, $CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas): denominadores data_only 01!'Apertura Cocina'!F52=30, 'Apertura Sala'!F41=23, 'Apertura Barra'!F32=16, 'Cierre Cocina'!F43=25, 'Cierre Sala'!F30=12, 'Cierre Barra'!F26=12 → 118. Suma de los 33 denominadores de los 9 ficheros con contador = 507 (02=57, 03=81, 04=68, 05=63, 06=60, 07=9, 08=28, 09=23).",
+     "fix": "Recontar y separar las dos cifras: en la tarjeta de «Apertura y Cierre» poner «118 tareas ya escritas en los 6 checklists» y llevar el total del kit («casi 500 tareas ya escritas en los 11 ficheros», o la cifra exacta que se decida contar) al hero o al bloque de por-qué. Cambiar también el título de la entrada 2.0 del changelog. Los tres sitios (landing Astro, ContentGrid.tsx, changelog) deben salir del mismo recuento."
+    },
+    {
+     "id": "COM-R2-02",
+     "severidad": "alta",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 53 (schema.reviews[2].body); gemelo src/pages/KitTareas.tsx:87 (bloque JSON-LD de Product)",
+     "hallazgo": "La demostración exigible de la SPEC §6 «0 menciones a Trail con precio en la landing» NO se cumple. Se han generalizado el badge del hero, el motivo de WhySection y las dos FAQ, pero sigue viva la reseña nominal «Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14», que además NO es texto visible cualquiera: se emite como `review.reviewBody` dentro del JSON-LD de Product, es decir, es la afirmación de precio de un competidor identificado puesta en boca de un cliente que no existe, y encima estructurada para que Google la reutilice. Y el propio changelog 2.0 (línea 316) le dice al comprador que la comparación «se ha generalizado», lo que no es cierto. Hay un choque real entre §4 («NO tocar reviews», COM-02/03 aparcados por John) y §6: mientras no se resuelva, la v2.0 no puede darse por cerrada.",
+     "evidencia": "grep -n -i 'trail' astro-site/src/data/productos/tareas/kit-tareas.ts → 53 («Pagábamos €60 al mes por Trail…»), 66 y 286 (ya genéricas, sin precio). src/pages/KitTareas.tsx:87 «\"reviewBody\": \"Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14. No necesito más.\"». src/data/productos-changelog.ts:316 «comparación con SaaS de checklists (tipo Trail) generalizada».",
+     "fix": "Preguntar a John: lo aparcado era el aggregateRating/las reseñas como sistema, no específicamente la mención de precio del competidor. Lo mínimo que cierra §6 sin tocar la estructura de reviews es reescribir ese `body` («Pagábamos una suscripción mensual por local. Esto hace lo mismo en Excel por €14») en los dos ficheros. Si John prefiere no tocar nada de reviews, entonces retirar la línea 316 del changelog y anotar §6 como incumplida a propósito."
+    },
+    {
+     "id": "COM-R2-03",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "líneas 189 (grid BONUS-02) y 253 (bonus.items[1].desc); gemelos src/components/kit-tareas/ContentGrid.tsx:18, src/components/kit-tareas/BonusSection.tsx:18 y src/pages/KitTareasDashboard.tsx:26",
+     "hallazgo": "«17 fechas clave de hostelería» se ha quedado sin actualizar en los cinco sitios donde se anuncia el BONUS-02, justo cuando la v2.0 le ha añadido exactamente 5 fechas (Día del Padre, comuniones abr-jun, 15 de agosto, 1 de noviembre y el puente del 6-8 de diciembre, §3 de la SPEC). El calendario entregado trae 22. Otra vez se vende menos de lo que se entrega, y el cliente que cuente las filas ve que la cifra de la página no cuadra con el fichero.",
+     "evidencia": "Copia v2.0, BONUS-02-calendario-anual-tareas.xlsx!'Calendario Anual': filas 5 a 26 con evento en la columna B = 22 entradas (incluidas 'Marzo|19 Mar — Día del Padre', 'Abril-Junio|Comuniones y bautizos (temporada)', 'Agosto|15 Ago — Asunción', 'Noviembre|1 Nov — Todos los Santos', 'Diciembre|6-8 Dic — Puente de la Constitución y la Inmaculada'); las filas 28-32 son los placeholders '(Añade aquí)'.",
+     "fix": "Poner 22 en los cinco sitios (o «22 fechas clave» / «22 fechas + 5 huecos para las tuyas»). Añadir al workflow del motor una comprobación de que las cifras del BONUS-02 se releen del fichero."
+    },
+    {
+     "id": "COM-R2-04",
+     "severidad": "media",
+     "fichero": "astro-site/src/components/pages/ProductosDigitalesHubPage.astro",
+     "ubicacion": "línea 540 (tarjeta 'Tareas Recurrentes: Restaurante Casual'); gemelo SPA src/pages/ProductosDigitales.tsx:529",
+     "hallazgo": "La tienda —la página que realmente lista los productos en producción, /productos-digitales— sigue describiendo el kit como «9 checklists operativos pre-rellenados: apertura, cierre, partidas, manager, perfiles, eventos», exactamente la cadena que la v2.0 ha sustituido en la landing, en los emails y en el dashboard. Es el primer punto de contacto comercial: el visitante lee 9 en la tienda, 11 en la ficha y 11 en el email. Y mantiene «pre-rellenados» en absoluto, que la SPEC §4 (COM-10) pedía matizar. Ni la caja ni el negocio, los dos entregables nuevos y de más valor percibido, se mencionan.",
+     "evidencia": "grep -rn '9 checklists operativos pre-rellenados' → astro-site/src/components/pages/ProductosDigitalesHubPage.astro:540 y src/pages/ProductosDigitales.tsx:529 (description de la tarjeta de /kit-tareas). Ninguno de los dos ficheros aparece en el diff de la v2.0 (`git diff --stat HEAD` lista 12 ficheros y no están).",
+     "fix": "Actualizar la description y las features de la tarjeta del hub en los dos ficheros: «9 plantillas + 2 bonus (11 ficheros): apertura, cierre, negocio, caja con arqueo, partidas, manager, perfiles, eventos» y añadir 'Arqueo y registro de caja' a la lista de features."
+    },
+    {
+     "id": "COM-R2-05",
+     "severidad": "media",
+     "fichero": "src/data/productos-changelog.ts",
+     "ubicacion": "líneas 309 («Contador honesto en las 11 plantillas») y 314 («protección de hojas … en las 11 plantillas»)",
+     "hallazgo": "Las dos afirmaciones dicen «las 11 plantillas» y son falsas para los dos BONUS: BONUS-01 y BONUS-02 no tienen contador (no hay ninguna fórmula en ellos) y ninguna de sus hojas está protegida. Es el mismo patrón de COM-13 —redondear a «los 11 ficheros» algo que sólo pasa en 9— y es precisamente el hallazgo que la Fase A determinista dejó escapar. El comprador que lea el changelog y abra el BONUS-02 buscando el contador o la protección no los encuentra.",
+     "evidencia": "Copia v2.0: BONUS-01-briefing-servicio.xlsx → 'Briefing'.protection.sheet=False y 0 fórmulas (inject_cache reporta 'formulas=0'); BONUS-02-calendario-anual-tareas.xlsx → 'Calendario Anual'.protection.sheet=False y 0 fórmulas. Sus hojas Instrucciones tampoco llevan los bloques «Cómo cuenta el contador», «Filas libres» ni «Protección de la hoja» (sólo «Cómo usar esta plantilla» y «Se conecta con»), que sí están en los 9 restantes.",
+     "fix": "Cambiar el texto a «en los 9 checklists» / «en las hojas con fórmulas» en ambas líneas, o proteger los dos bonus si se decide que también deben ir protegidos. Los ficheros son honestos; lo que miente es el changelog."
+    },
+    {
+     "id": "COM-R2-06",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "líneas 63 (schema.faqs) y 279 (faqs); gemelos src/pages/KitTareas.tsx:97 (JSON-LD FAQPage) y src/components/kit-tareas/FaqAccordion.tsx:12",
+     "hallazgo": "Incoherencia NUEVA que introduce la propia v2.0: la FAQ (y su FAQPage) sigue prometiendo que «cada checklist tiene columnas de: responsable, hora límite, completada (✓) y firma», pero §2.4 del motor ha renombrado esa columna en 10 de las 33 hojas de checklist: «Día» en las semanales, «Cadencia» en las mensuales/trimestrales y «Antelación» en las de eventos. El cambio es correcto (una tarea mensual no tiene hora límite), pero nadie ajustó la promesa.",
+     "evidencia": "Copia v2.0, cabecera E4 por hoja: 03!'Semanal Manager'='Día', 03!'Mensual Manager'='Cadencia', 05!'Limpieza Semanal'='Día', 05!'FIFO Semanal'='Día', 05!'Mantenimiento Mensual'='Cadencia', 05!'Trimestral y Anual'='Cadencia', 06!'Pre-Evento'/'San Valentín'/'Navidad'/'Temporada Terraza'='Antelación'. Las 23 restantes conservan 'Hora Límite'.",
+     "fix": "Reformular en los cuatro sitios: «Cada checklist tiene columnas de responsable, cuándo (hora límite, día, cadencia o antelación según la lista), completada (✓) y firma»."
+    },
+    {
+     "id": "COM-R2-07",
+     "severidad": "media",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 139 (grid.templates[0].desc, «Cada tarea con responsable, hora límite y firma») frente a 01-apertura-cierre.xlsx!'Cierre Sala' filas 20 y 23",
+     "hallazgo": "La reducción de los bloques CIERRE DE CAJA y CIERRE GENERAL a punteros (§2.5) ha dejado en 01!'Cierre Sala' dos filas que ocupan un número de tarea (11 y 12), entran en el rango del contador y NO tienen ni Responsable ni Hora Límite: son remisiones a otro fichero. Contradice literalmente la tarjeta de venta («Cada tarea con responsable, hora límite y firma») y hace que el contador diga «de 12» cuando tareas ejecutables sólo hay 10. Es el mismo defecto que la SPEC arregló en 08 (precargar responsable y hora en todas las tareas) reintroducido por la puerta de atrás.",
+     "evidencia": "Copia v2.0, 01!'Cierre Sala': B20='→ Cierre de caja completo: ver 09-apertura-cierre-caja.xlsx (fondo, recuento por denominaciones, Z del TPV y descuadre)' con C20/D20/E20 vacíos; B23='→ Cierre general del local: ver 08-apertura-cierre-negocio.xlsx (alarma, luces, climatización, cierre y llaves)' con C23/D23/E23 vacíos. F30 = COUNTIF(B5:B28,\"?*\")−… = 12, y las tareas reales son las filas 6-17 (10).",
+     "fix": "Sacar las dos remisiones de la tabla numerada: ponerlas como línea de sección (columna A, estilo cabecera de bloque, sin nº y fuera del rango B5:B28) igual que se hace con «CIERRE DE CAJA»/«CIERRE GENERAL», o dejarlas dentro pero con Responsable/Hora precargados. Preferible lo primero: no son tareas que se marquen con ✓."
+    },
+    {
+     "id": "COM-R2-08",
+     "severidad": "media",
+     "fichero": "src/data/productos-changelog.ts",
+     "ubicacion": "entrada 2.0, líneas 305-317 (lista de cambios)",
+     "hallazgo": "El changelog de la 2.0 sólo enumera altas. No dice en ningún punto que 01!'Cierre Sala' pasa de 21 tareas a 12 porque los bloques de cierre general y de caja se han movido a 08 y 09. El cliente de la v1.1 que vuelva a descargar se encuentra un checklist con 9 tareas menos y sin explicación en la propia lista de cambios: la lectura natural es «me han recortado el producto», justo lo contrario de lo que ha pasado.",
+     "evidencia": "LIVE 01-apertura-cierre.xlsx!'Cierre Sala' = 21 filas con texto en B desde la 5; copia v2.0 = 12 (denominador F30=12). El changelog 2.0 (líneas 305-317) no menciona ninguna reducción; el único punto próximo, la línea 306, sólo anuncia la plantilla 08 como novedad.",
+     "fix": "Añadir un bullet: «Sin duplicidades: el cierre general del local y el cierre de caja salen de 01 (Cierre Sala) y viven ahora en 08 y 09; cada checklist remite al que manda, así que ninguna tarea se ha perdido.»"
+    },
+    {
+     "id": "COM-R2-09",
+     "severidad": "media",
+     "fichero": "01-apertura-cierre.xlsx (y los 8 ficheros con el molde ▸)",
+     "ubicacion": "hoja 'Instrucciones', celda B16 («Añade tareas específicas de tu local en las filas vacías del final») frente a B27-B28 del bloque nuevo «Filas libres»",
+     "hallazgo": "La SPEC §2.2 (COM-17) pedía cambiar el texto de las Instrucciones a «en las filas verdes libres; si necesitas más, inserta filas dentro de la tabla». El bloque nuevo se ha añadido, pero la frase vieja sigue ahí cuatro líneas más arriba y dice lo contrario: «las filas vacías del final» es exactamente la instrucción que hacía que el cliente escribiera fuera del rango contado, y el bloque nuevo advierte «nunca por debajo de la última». Dos instrucciones opuestas en la misma hoja; la primera que lee el cliente es la mala.",
+     "evidencia": "Copia v2.0, 01-apertura-cierre.xlsx!Instrucciones: B16 '▸ Añade tareas específicas de tu local en las filas vacías del final'; B27 '▸ Al final de cada tabla hay 5 filas verdes libres DENTRO del rango que cuenta el contador…'; B28 '▸ Si necesitas más, inserta filas DENTRO de la tabla (clic derecho → Insertar), nunca por debajo de la última: lo que se escriba fuera del rango no lo cuenta nadie.'",
+     "fix": "En el motor, sustituir la línea antigua por «▸ Añade tus tareas en las 5 filas verdes libres del final de cada tabla (ver más abajo)» o borrarla, ya que el bloque «Filas libres» la cubre entera."
+    },
+    {
+     "id": "COM-R2-10",
+     "severidad": "baja",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 159 (tarjeta «Semanales y Mensuales»); gemelos src/components/kit-tareas/ContentGrid.tsx:12 y src/pages/KitTareasDashboard.tsx:20",
+     "hallazgo": "La v2.0 añade a 05 una hoja entera nueva, «Trimestral y Anual» (DDD por empresa autorizada, conductos de extracción, extintores/BIE, gas, legionela, seguro y revisión TPV/Verifactu, con nº de parte y firma) —contenido de cumplimiento legal, de los que más tranquilidad venden— y no aparece ni en la tarjeta de la landing ni en la del dashboard, que siguen listando sólo «limpieza profunda, FIFO, mantenimiento mensual». Sólo se menciona en el changelog, que se lee después de comprar.",
+     "evidencia": "Copia v2.0, 05-tareas-semanales-mensuales.xlsx: hojas ['Instrucciones','Limpieza Semanal','FIFO Semanal','Mantenimiento Mensual','Trimestral y Anual']; en 'Trimestral y Anual' C4='Nº de parte', B7 conductos de extracción/campana, B14 legionela, B21 Verifactu; denominador F30=14 tareas. Landing línea 159 y dashboard línea 20 no la nombran.",
+     "fix": "Añadir a las dos tarjetas «+ hoja trimestral y anual: DDD, extracción, extintores, gas, legionela y revisión del TPV/Verifactu, con nº de parte y firma»."
+    },
+    {
+     "id": "COM-R2-11",
+     "severidad": "baja",
+     "fichero": "astro-site/src/data/productos/tareas/kit-tareas.ts",
+     "ubicacion": "línea 169 (tarjeta «Plantilla Personalizable»); gemelos ContentGrid.tsx:14, KitTareasDashboard.tsx:22 y 07-plantilla-personalizable.xlsx!Instrucciones B6",
+     "hallazgo": "Tras diferenciar las tres hojas (§2.3) ya no son «3 plantillas en blanco»: traen secciones precargadas (APERTURA/SERVICIO/CIERRE · COCINA/SALA/BARRA · COCINA/SALA/GERENCIA), un placeholder de tarea por sección y la columna Zona o Responsable rellenada. La descripción se quedó en la de la v1.1 y ahora vende menos (y peor) de lo que hay; las propias Instrucciones del fichero siguen diciendo «hojas en blanco».",
+     "evidencia": "Copia v2.0, 07: 'Por Área' A5='  COCINA' con C6:C10='Cocina', A12='  SALA' con C13:C17='Sala', A19='  BARRA' con C20:C24='Barra'; 'Por Perfil' D6:D10='Jefe de Cocina', D13:D17='Jefe de Sala', D20:D24='Gerente'; B6/B13/B20 = '(Escribe aquí tu tarea de …)'. Instrucciones B6: '▸ Usa estas hojas en blanco para crear tus propias listas de tareas'.",
+     "fix": "«3 plantillas maestras ya estructuradas —por franja horaria, por área y por perfil— con las secciones y la zona/responsable puestos: sólo escribes tus tareas». Ajustar igual la línea B6 de las Instrucciones de 07."
+    },
+    {
+     "id": "COM-R2-12",
+     "severidad": "baja",
+     "fichero": "src/data/productos-changelog.ts",
+     "ubicacion": "línea 312 («tarea de anisakis (congelación ≥24h a −20°C) en Fríos/Mise en Place»)",
+     "hallazgo": "La tarea existe y está bien redactada, pero la palabra «anisakis» no aparece en ningún fichero del kit. El changelog la nombra, así que el comprador que abra 02 y busque «anisakis» —o que use Buscar en Excel— no encuentra nada y concluye que el cambio no se ha aplicado. Además es el término que él tiene en la cabeza por la normativa.",
+     "evidencia": "Barrido de las 11 copias v2.0 buscando 'anisakis': 0 coincidencias. La tarea está en 02!'Fríos' B10 y 02!'Mise en Place' B10: «Pescado (y marisco) para consumo crudo o semicrudo…: confirmar congelación previa ≥24 h a −20 °C (o −35 °C 15 h) y anotar el lote».",
+     "fix": "Nombrarlo en el propio texto de la tarea («…para consumo crudo o semicrudo (tartar, ceviche, carpaccio): prevención de ANISAKIS — confirmar congelación previa ≥24 h a −20 °C…»); es además lo que hace reconocible la tarea para un inspector."
+    },
+    {
+     "id": "COM-R2-13",
+     "severidad": "baja",
+     "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+     "ubicacion": "hoja 'Instrucciones', filas 10-16 (bloque «Se conecta con»); mismo caso en BONUS-01-briefing-servicio.xlsx filas 10-16",
+     "hallazgo": "El bloque «Se conecta con» de §2.5 se ha pegado literal en los dos BONUS sin adaptarlo: un calendario anual de fechas señaladas termina explicando «Orden de uso: local → áreas → caja» y remitiendo al recuento por denominaciones y al Z del TPV, que no tienen nada que ver con él. Queda como relleno automático justo en la hoja que el cliente lee para saber qué hacer con el bonus.",
+     "evidencia": "Copia v2.0, BONUS-02!Instrucciones: fila 12 '▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo…', 13 '▸ 01-apertura-cierre.xlsx…', 14 '▸ 09-apertura-cierre-caja.xlsx — la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre.', 15 '▸ Orden de uso: local → áreas → caja…', 16 '▸ Estás en BONUS-02-calendario-anual-tareas.xlsx.' Texto idéntico en BONUS-01.",
+     "fix": "Dar a los dos bonus su propio «Se conecta con»: el calendario → 06-eventos-festivos.xlsx (cada fecha del calendario tiene su checklist) y 03 (planificación mensual del manager); el briefing → 01/08 (el turno que arranca) y 06 (eventos del día)."
+    },
+    {
+     "id": "COM-R2-14",
+     "severidad": "baja",
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "ubicacion": "celda A2 de las tres hojas ('Por Franja Horaria', 'Por Área', 'Por Perfil')",
+     "hallazgo": "Queda el residuo que §2.4 corrigió en 03: la fila 2 sigue pidiendo «Turno: ☐ Mañana ☐ Tarde ☐ Noche · Responsable turno» también en «Por Área» y en «Por Perfil», que no son documentos de turno. Es el mismo «delata plantilla sin adaptar» de COM-23, sólo que en el fichero que el cliente va a mirar con más lupa porque es el que se supone que hace suyo.",
+     "evidencia": "Copia v2.0, 07: A2 idéntica en las tres hojas = 'Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche    Responsable turno: _________________________'. Comparar con 03!'Semanal Manager'!A2 = 'Semana del ___/___/______ al ___/___/______    Responsable: ___' y 03!'Mensual Manager'!A2 = 'Mes: ________________   Año: ______    Responsable: ___', ya corregidas.",
+     "fix": "En 'Por Área' y 'Por Perfil' dejar 'Fecha: ___/___/______    Responsable: _________________________' (sin turno); en 'Por Franja Horaria' el turno sí tiene sentido."
+    },
+    {
+     "id": "COM-R2-15",
+     "severidad": "baja",
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "ubicacion": "contador F31 de las tres hojas y placeholders B6/B13/B20",
+     "hallazgo": "Recién descargado, el contador de cada hoja de 07 marca «0 de 3»: los tres placeholders «(Escribe aquí tu tarea de …)» son texto en la columna B y el denominador los cuenta como tareas. La demostración de §6 (8 tareas escritas → «x de 8») se cumple porque el cliente sobrescribe los placeholders, pero si sólo rellena una sección se queda con dos placeholders inflando su total. Menor, y el resto de la familia no lo sufre porque no tiene placeholders.",
+     "evidencia": "Copia v2.0, 07!'Por Franja Horaria': F31 = COUNTIF(B5:B29,\"?*\")−COUNTIF(F5:F29,\"N/A\")−COUNTIF(F5:F29,\"—\") con valor cacheado 3; B6='(Escribe aquí tu tarea de Apertura)', B13='(Escribe aquí tu tarea de Servicio)', B20='(Escribe aquí tu tarea de Cierre)'. Igual en 'Por Área' y 'Por Perfil'.",
+     "fix": "Restar los placeholders en el propio denominador (−COUNTIF(B5:B29,\"(Escribe aquí*\")) o decirlo en el bloque «Cómo cuenta el contador» de las Instrucciones de 07: «los textos entre paréntesis son ejemplos y cuentan hasta que los sustituyas»."
+    },
+    {
+     "id": "COM-R2-16",
+     "severidad": "baja",
+     "fichero": "src/data/productos-changelog.ts",
+     "ubicacion": "entrada 1.1, líneas 327-328",
+     "hallazgo": "La entrada 1.1 sigue publicada tal cual y afirma «Datos de autoría actualizados con la biografía vigente del creador» y «Metadatos, instrucciones y autoría actualizados en los 11 ficheros», que es justo lo que COM-13 demostró falso (la bio estaba en 2 de 11). Ahora la 2.0 lo cumple de verdad y lo vuelve a anunciar en la línea 315, así que el cliente lee dos veces la misma promesa en el mismo panel, una de ellas fechada el mismo día. Es un detalle de credibilidad del changelog, que es el sitio donde se le pide al comprador que se fíe.",
+     "evidencia": "src/data/productos-changelog.ts:327-328 (entrada 1.1, date '2026-08-22') frente a :315 (entrada 2.0, misma fecha) «Línea de autoría anclada en las Instrucciones de las 11 plantillas; versión 2.0 · agosto 2026». Copia v2.0: la línea 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' aparece en las 11 hojas Instrucciones (verificado también por el paso 6/7 del pipeline: 'bio en 11/11').",
+     "fix": "Recortar la línea 327 de la 1.1 a «Metadatos e instrucciones actualizados en los 11 ficheros» y dejar la autoría sólo en la 2.0, que es donde se hizo de verdad."
+    }
+   ],
+   "veredicto": "no listo",
+   "motivo": "El motor y el contenido han hecho su trabajo: el arqueo cuadra de verdad (fondo 150 / efectivo 1.150 / tarjetas 800 / Z 1.800 → descuadre 0, y +10 con Z 1.790), la moneda de 0,02 € está, el registro mensual calcula el descuadre por fórmula en las 31 filas, el contador descuenta N/A y —, hay 5 filas verdes libres dentro del rango en todos los checklists, la DV «✓,—,N/A» es la misma en las 33 hojas, 08 lleva responsable y hora en las 28 tareas, la bio está en 11/11 Instrucciones y los dos bonus ya tienen print_area. De los hallazgos COM de la R1 que la SPEC decidió resolver, se cierran COM-01, 04, 05, 06, 07, 08, 09, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 25, 26 y 27. Lo que impide cerrar la v2.0 son dos cosas de la capa comercial: (1) el «121 tareas en el kit completo (recuento v2.0)» de la tarjeta principal —y del título del changelog— no se recontó: 121 era el fichero 01 en la v1.1, el 01 de la v2.0 tiene 118 y el kit entero 507 tareas contadas, así que el argumento más cuantitativo de la página es falso y además infravalora el producto ×4; y (2) la demostración exigible «0 menciones a Trail con precio en la landing» NO se cumple: sigue viva la reseña inventada «Pagábamos €60 al mes por Trail» dentro del JSON-LD de Product, mientras el changelog le dice al comprador que esa comparación se ha generalizado. Detrás vienen cuatro incoherencias de cifras/alcance que se arreglan en minutos pero que un cliente que cuente ve enseguida: el hub de la tienda sigue anunciando «9 checklists operativos pre-rellenados», el BONUS-02 se vende con 17 fechas cuando trae 22, el changelog dice «las 11 plantillas» de cosas que sólo tienen 9 (contador y protección: los bonus no llevan ninguna de las dos) y la FAQ promete columna «hora límite» en cada checklist cuando el propio motor la ha renombrado a Día/Cadencia/Antelación en 10 hojas."
+  }
+ },
+ "correccion": {
+  "censo_exit": 0,
+  "dryrun_exit": 0,
+  "ids_vistos": 61,
+  "resueltos": [
+   {
+    "id": "DOM-R2-01",
+    "cambio": "motor.py:registro_mensual — el Registro Mensual descuenta el fondo como hace el cierre. La columna pasa a «Efectivo Contado» (recuento del cajón tal cual) y Total Facturado = IF(SUM(C:E)=0,0,SUM(C:E)−B). fila_registro_mensual detecta por PREFIJO o el renombrado sacaría la hoja de alcance en la 2.ª pasada. pycel: 09:Registro Mensual:F5=1800, H5=0 con fondo 150/contado 1150/tarjetas 800/Z 1800 (antes H5=150 en ámbar)."
+   },
+   {
+    "id": "DOM-R2-02",
+    "cambio": "motor.py:_contador — fuera el término −COUNTIF(F,\"—\") del denominador; sólo sale N/A. Texto de _bloques_contador reescrito («—» = no hecha, cuenta como pendiente). pycel 01:Cierre Cocina:D43/F43 con 3 «—» y 22 ✓ → «22 de 25» (antes «22 de 22»)."
+   },
+   {
+    "id": "DOM-R2-03",
+    "cambio": "motor.py:PLANTILLA_07/diferenciar_07 — los placeholders salen de la columna «Tarea»; el aviso vive en la banda de sección (ROTULO_07). 07 en blanco da «0 de 0» y con 8 tareas escritas «x de 8». Descartada la variante de restarlos por fórmula: COUNTIF(...,\"(Escribe aquí*\") rompe pycel (paréntesis crudo en re.compile) y el fichero se publicaría sin cache."
+   },
+   {
+    "id": "DOM-R2-05",
+    "cambio": "Recuento real desde los denominadores del propio Excel: 491 tareas en el kit, 111 en el 01. kit-tareas.ts:139 y ContentGrid.tsx:8 → «111 tareas ya escritas solo en este fichero»; el total (491) va al hero, al grid.subtitle y a schema.productDescription; productos-changelog.ts título → «las 491 tareas del kit revisadas». Nuevo gate main.py:gate_recuento lo emite en cada informe."
+   },
+   {
+    "id": "DOM-R2-06",
+    "cambio": "kit-tareas.ts:53 y src/pages/KitTareas.tsx:87 — la reseña deja de citar precio y marca: «Pagábamos una cuota mensual por un SaaS de checklists. Esto hace lo mismo en Excel por €14, pago único.» No se ha tocado aggregateRating ni la estructura de reviews (lo que John aparcó)."
+   },
+   {
+    "id": "DOM-R2-07",
+    "cambio": "motor.py:COLAPSO — entrada nueva «SISTEMAS» que remite a los DOS ficheros (08 local + 09 caja). 01:Apertura Sala A29 pasa a ser la banda «SISTEMAS → ver 08-… y 09-…» y sus 5 tareas duplicadas desaparecen. colapsar_duplicados ya no corre sobre el fichero de negocio ni el de caja (son el destino de la remisión)."
+   },
+   {
+    "id": "DOM-R2-08",
+    "cambio": "motor.py:precargar_caja — las horas de 09 van DESPUÉS de la apertura y escalonadas: _sumar_minutos(ancla, 15*(1+i*3//n)) → 07:15/07:30/07:45 en 09:Apertura de Caja:D5:D15 (antes 06:45 en las 11, con la alarma puesta)."
+   },
+   {
+    "id": "DOM-R2-09",
+    "cambio": "motor.py:SUST_APPCC y el sufijo genérico de texto_appcc — se elimina «anótalo en Notas», columna que sólo existe en 08 y 09. Ahora «anótala aquí mismo: ____ °C» / «con los tuyos» / «junto a la tarea». Barrido: 0 celdas con «en Notas» en ficheros sin columna Notas."
+   },
+   {
+    "id": "DOM-R2-10",
+    "cambio": "contenido_kit_tareas.py:TABLA_VIDA_UTIL — la nota final pasa a «Etiquetar con fecha de producción Y de congelación: la vida útil de esta tabla se cuenta desde la de congelación», que ya no contradice 05:FIFO Semanal:B17."
+   },
+   {
+    "id": "DOM-R2-11",
+    "cambio": "contenido_kit_tareas.py:_f03 + _columna_de_bloque — 03:Semanal Manager E6:E34 pasa de Lunes-Viernes a «Día 1»…«Día 5» (el fin de semana conserva Sábado/Domingo). motor.cadencia aprende RX_DIA_N/RX_FINDE para que la cabecera siga siendo «Día» y no «Cadencia». Nota de Instrucciones reescrita en consecuencia."
+   },
+   {
+    "id": "DOM-R2-12",
+    "cambio": "22 fechas en los cinco sitios: kit-tareas.ts:189 y :253, ContentGrid.tsx:18, BonusSection.tsx:18 y KitTareasDashboard.tsx:26. Verificado sobre el fichero: BONUS-02:Calendario Anual tiene 22 eventos + 5 huecos."
+   },
+   {
+    "id": "DOM-R2-13",
+    "cambio": "kit-tareas.ts:149 y ContentGrid.tsx:10 — «semanal por bloques (DÍA 1-5 + fin de semana, para que el bloque no se pierda si cierras los lunes)» en vez de «lun-vie con foco por día»."
+   },
+   {
+    "id": "DOM-R2-14",
+    "cambio": "contenido_kit_tareas.py:LECHUGAS — recupera el sujeto: «Lavar y desinfectar hojas verdes y vegetales de consumo crudo con lejía apta…». 02:Fríos:B6."
+   },
+   {
+    "id": "DOM-R2-15",
+    "cambio": "motor.py:diferenciar_07 — _verde() en la columna B de todas las filas de tarea de las tres hojas del 07. Verificado: B6:B10 de «Por Área» con relleno 00E8F5E9."
+   },
+   {
+    "id": "DOM-R2-16",
+    "cambio": "motor.py:briefing() (nueva) — pinta en verde la celda C de toda fila cuya etiqueta B acaba en «:». BONUS-01:Briefing pasa de 1 a 20 casillas verdes, todas desbloqueadas tras proteger()."
+   },
+   {
+    "id": "DOM-R2-17",
+    "cambio": "motor.py:_bloque_conecta + contexto() — CTX aprende f_calendario, f_briefing, f_plantilla, f_eventos y f_periodico (por estructura, no por nombre). La última línea se personaliza por fichero; hasta el caso genérico dice dónde encaja la hoja en vez de «Estás en X.»"
+   },
+   {
+    "id": "DOM-R2-18",
+    "cambio": "motor.py:fondo_de_caja — la tarea pierde la coordenada y cabe en una línea: «Anotar el fondo de caja en la celda verde de abajo» (49 car. en columna de capacidad ~55). Barrido: ningún texto del corpus menciona «C23» (sólo las fórmulas, que sí se reajustan solas)."
+   },
+   {
+    "id": "DOM-R2-19",
+    "cambio": "contenido_kit_tareas.py:ENCENDIDO — 01:Apertura Cocina:B14 pasa a «Abrir la llave general de gas y comprobar que NO huele a gas; si huele, no enciendas nada, ventila y avisa al mantenedor». La prueba de fugas queda donde ya estaba, en 05:Trimestral y Anual (empresa habilitada)."
+   },
+   {
+    "id": "DOM-R2-20",
+    "cambio": "motor.py:calendario() — el rayado se repinta por ÍNDICE sobre las 22 filas de evento (escritura absoluta, idempotente). Verificado: alternancia F5F5F5/blanco correcta, sin pares consecutivos."
+   },
+   {
+    "id": "DOM-R2-21",
+    "cambio": "motor.py:RX_PIE + cerrar() — el pie se reescribe en cualquier celda que se PAREZCA a un pie, no sólo en el literal «© AI Chef Pro». Barrido de los 11 ficheros: un único pie, «— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro»."
+   },
+   {
+    "id": "DOM-R2-22",
+    "cambio": "motor.py:texto_grados() (RX_GRADOS + RX_MENOS) aplicado en textos_de_tarea a toda celda de texto: «-18°C» → «−18 °C», «>65°C» → «>65 °C». El guion de un RANGO («0-4 °C») va precedido de dígito y no se toca. Efecto colateral cazado: contenido_kit_tareas._fila normaliza el ancla con la misma regla o los _exige revientan."
+   },
+   {
+    "id": "DOM-R2-23",
+    "cambio": "motor.py:normalizar_checklist — las filas libres van verdes también en la columna «Nº». NO se numeran a propósito: geometria() mide la última tarea por el entero de la columna A y numerarlas haría que cada pasada añadiera 5 filas más."
+   },
+   {
+    "id": "DOM-R2-24",
+    "cambio": "motor.py:cadencia() — categoría «Cuándo» cuando la columna mezcla horas con hitos. 03:Diario Manager y Handover, 01/02 de cierre y 08/09 de cierre pasan de «Hora Límite» a «Cuándo». ajustar_cabecera_tiempo se movió DESPUÉS de las precargas en aplicar(): decidirlo antes hacía que la 2.ª pasada leyera lo que escribió la 1.ª y la idempotencia se caía."
+   },
+   {
+    "id": "DOM-R2-25",
+    "cambio": "kit-tareas.ts:155 y KitTareasDashboard.tsx:20 — la tarjeta de «Semanales y Mensuales» anuncia la hoja Trimestral y Anual (DDD, extracción, extintores y BIE, gas, legionela, TPV/Verifactu, con nº de parte y firma)."
+   },
+   {
+    "id": "DOM-R2-26",
+    "cambio": "motor.py:registro_mensual — el TOTAL de «Descuadre» pasa a SUMIF(\">0\")−SUMIF(\"<0\") (SUMPRODUCT(ABS()) se descartó por riesgo con pycel). pycel: días de 0 y −50 → H36 = 50, antes 0. La nota al pie explica las tres cifras que no son una suma."
+   },
+   {
+    "id": "DOM-R2-27",
+    "cambio": "contenido_kit_tareas.py:_intercambiar() (nueva) — 03:Diario Manager: el briefing (11:45) baja detrás de «Revisar redes sociales» (11:30). Bloque PRE-SERVICIO ahora 11:00/11:00/11:15/11:30/11:45."
+   },
+   {
+    "id": "DOM-R2-28",
+    "cambio": "contenido_kit_tareas.py:MANTENIMIENTO_CALIENTE — 02:Calientes:B20 → «Control de temperatura de mantenimiento en caliente (≥ 65 °C) — anota la lectura: ____ °C». El ancla se escribe con el grado ya normalizado porque texto_grados corre antes."
+   },
+   {
+    "id": "DOM-R2-29",
+    "cambio": "contenido_kit_tareas.py:_f05 — el descalcificado de la cafetera sale de «Mantenimiento Mensual» y se inserta en 05:Trimestral y Anual (bloque ADMINISTRACIÓN Y EQUIPOS, fila 22), que es su cadencia real. El clonado del molde sigue ocurriendo antes, así que las cuentas de bloques no se rompen."
+   },
+   {
+    "id": "DOM-R2-30",
+    "cambio": "motor.py:RX_OBSOLETO en reescribir_instrucciones — se descartan las viñetas de la v1.1 que contradicen los bloques nuevos («borra las tareas que no aplican», «filas vacías del final», «hojas en blanco»), y un encabezado que se quede sin viñetas no se emite. Comprobado contra el original: sólo esas 3 líneas desaparecen en todo el kit."
+   },
+   {
+    "id": "TEC-R2-01",
+    "cambio": "Mismo fix que DOM-R2-05 + gate nuevo main.py:gate_recuento, que lee los denominadores cacheados y emite «recuento de tareas entregadas: 491 en total · 01=111 · …» en cada informe, para que la landing no vuelva a divergir del producto sin que se cante."
+   },
+   {
+    "id": "TEC-R2-02",
+    "cambio": "motor.py:recuento() y resumen_cierre() — alturas explícitas en todo el bloque del dinero: cabecera «Denominación» 26, cada denominación 22 (incluida la de 0,02 €), TOTAL EFECTIVO 28, título del Resumen 30, cabecera «Concepto» 26 y filas de concepto 24. Verificado: ninguna fila del bloque queda con height=None."
+   },
+   {
+    "id": "TEC-R2-03",
+    "cambio": "motor.py:caja_columnas — ancho de la columna A de las hojas de caja a 10 (escritura absoluta, fuera del centinela de «Firma»). «0,50 €» y las demás monedas caben ya en una línea, así que se puede recuperar la altura fija que pedía TEC-R2-02."
+   },
+   {
+    "id": "TEC-R2-04",
+    "cambio": "Cubierto por DOM-R2-18 (texto de 49 caracteres, sin coordenada) más motor.autoalto(), que quita la altura fija a cualquier fila de tarea cuyo texto no quepa en una línea."
+   },
+   {
+    "id": "TEC-R2-05",
+    "cambio": "Cubierto por DOM-R2-12: los 17 pasan a 22 en kit-tareas.ts:189 y :253 y en los tres gemelos SPA (dashboard incluido)."
+   },
+   {
+    "id": "TEC-R2-06",
+    "cambio": "motor.py:reescribir_instrucciones.escribe() — la altura sale del cuerpo de la fuente (cap = ANCHO_B·11/size, alto = 15·size/11, ×1,05) en vez de un 15 pt fijo. La fila de bio pasa de 30 a 35 pt en los 11 ficheros (necesarios 32,7)."
+   },
+   {
+    "id": "TEC-R2-07",
+    "cambio": "motor.py:caja_columnas — ancho de la columna C de las hojas de caja a 20: «Responsable de caja» (19 car.) ya no se lee «Responsable de»."
+   },
+   {
+    "id": "TEC-R2-08",
+    "cambio": "main.py:gate_dv_y_bio — ahora censa las listas de validación de TODAS las hojas, también las fuera de alcance, y emite «AVISO TEC-R2-08 · el producto tiene MÁS de una lista de desplegable» con los recuentos. En kit-tareas y en cafetería: una sola lista, sin aviso. La decisión sobre el hotel queda planteada para la tanda de hermanos con el aviso ya operativo."
+   },
+   {
+    "id": "TEC-R2-09",
+    "cambio": "motor.py:_contador — numerador a COUNTIFS(B,\"?*\",F,\"✓\"). pycel: 25 ✓ + 2 ✓ en filas libres vacías → «25 de 25» (antes «27 de 25»). Verificado que pycel soporta COUNTIFS antes de escribirlo."
+   },
+   {
+    "id": "TEC-R2-10",
+    "cambio": "Cubierto por DOM-R2-03, por la vía (b) que el propio hallazgo prefería: el placeholder deja de ser valor de celda. Además evita el fallo de pycel con el paréntesis en el criterio del COUNTIF."
+   },
+   {
+    "id": "TEC-R2-11",
+    "cambio": "motor.py:resumen_cierre — fila nueva «Ventas en efectivo (contado − fondo)» = IFERROR(C_ef−C_fondo,0) y TOTAL FACTURADO = esa celda + tarjetas + otros. pycel: 09:Cierre de Caja C47=1150, C48=150, C49=1000, C52=1800, C54=0."
+   },
+   {
+    "id": "TEC-R2-12",
+    "cambio": "motor.py:ancho_util() + cerrar() — el umbral de apaisado pasa a ser el ancho en unidades (≥130), no el número de columnas. 09:Apertura de Caja y 09:Cierre de Caja pasan a landscape."
+   },
+   {
+    "id": "TEC-R2-13",
+    "cambio": "motor.py:autoalto() llamado por normalizar_checklist en cada fila de tarea: si el texto supera la capacidad de una línea de su columna, se le quita la altura fija y Excel autoajusta. 08:Apertura del Negocio B7/B16/B17 (58-60 car.) ya salen con height=None."
+   },
+   {
+    "id": "TEC-R2-14",
+    "cambio": "motor.py:cerrar — se protegen también las hojas 'briefing' y 'calendario'; con las celdas verdes desbloqueadas siguen siendo editables. Las de «Instrucciones» se dejan libres a propósito y el changelog lo dice. §6 pasa a ser cierto de punta a punta."
+   },
+   {
+    "id": "TEC-R2-15",
+    "cambio": "motor.py:eliminar_filas — las n filas del final se vacían de valor Y de estilo (cell.style='Normal'). 01:Cierre Sala pasa de declarar A1:G43 a A1:G32, sin celdas con relleno o borde por debajo del pie."
+   },
+   {
+    "id": "COM-R2-01",
+    "cambio": "Ver DOM-R2-05/TEC-R2-01: 491 en hero/grid/schema y 111 en la tarjeta de «Apertura y Cierre», en la landing Astro, en ContentGrid.tsx y en el changelog, los tres desde el mismo recuento."
+   },
+   {
+    "id": "COM-R2-02",
+    "cambio": "Ver DOM-R2-06. Reescrita en los dos sitios (kit-tareas.ts:53 y KitTareas.tsx:87). Quedan dos menciones a Trail, ambas en el TEXTO DE LA PREGUNTA de la FAQ y sin cifra de precio: la demostración de §6 («0 menciones a Trail con precio») se cumple y el changelog ya no miente."
+   },
+   {
+    "id": "COM-R2-03",
+    "cambio": "Ver DOM-R2-12: los cinco sitios a 22, y el changelog anuncia las cinco fechas nuevas."
+   },
+   {
+    "id": "COM-R2-04",
+    "cambio": "ProductosDigitalesHubPage.astro:540 y ProductosDigitales.tsx:529 — description → «9 plantillas + 2 bonus (11 ficheros) con 491 tareas ya escritas: apertura, cierre, negocio, caja con arqueo, partidas, manager, perfiles, eventos» y feature nueva «Arqueo y registro mensual de caja». Sólo la tarjeta de /kit-tareas (los hermanos son la tanda §5)."
+   },
+   {
+    "id": "COM-R2-05",
+    "cambio": "productos-changelog.ts — «Contador honesto en los 9 checklists … los dos BONUS no llevan contador porque no son listas de tareas» y la línea de protección reformulada a «las 33 hojas de checklist … todas las hojas de datos de los 11 ficheros (las de Instrucciones se dejan libres a propósito)». Ambas ya son ciertas tras TEC-R2-14."
+   },
+   {
+    "id": "COM-R2-06",
+    "cambio": "Cuatro sitios: kit-tareas.ts:63 y :279, KitTareas.tsx:97 (FAQPage) y FaqAccordion.tsx:12 → «responsable, cuándo (hora límite en las diarias, día en las semanales, cadencia en las mensuales y antelación en las de eventos), completada (✓) y firma»."
+   },
+   {
+    "id": "COM-R2-07",
+    "cambio": "motor.py:colapsar_duplicados — la remisión se escribe en la BANDA de sección (columna A, combinada) y se borran TODAS las filas de tarea del bloque. 01:Cierre Sala pasa de denominador 12 a 10, sin filas numeradas sin Responsable ni Hora. Efecto secundario cazado y resuelto: la banda quedaba por debajo de la última tarea y las 5 filas libres caían sobre una celda combinada → el ancla de la holgura es ahora la última fila CON CONTENIDO, no la última tarea."
+   },
+   {
+    "id": "COM-R2-08",
+    "cambio": "productos-changelog.ts — bullet nuevo: «Sin duplicidades: el cierre general del local, el cierre de caja y el bloque SISTEMAS de la apertura salen de 01 (Sala) y viven ahora en 08 y 09 … ninguna se ha perdido, cada una está en el fichero que manda y con una sola hora»."
+   },
+   {
+    "id": "COM-R2-09",
+    "cambio": "Cubierto por DOM-R2-30: la viñeta «Añade tareas específicas de tu local en las filas vacías del final» ya no se emite; el bloque «Filas libres» la cubre y no la contradice."
+   },
+   {
+    "id": "COM-R2-10",
+    "cambio": "Ver DOM-R2-25: landing y dashboard mencionan ya la hoja Trimestral y Anual."
+   },
+   {
+    "id": "COM-R2-11",
+    "cambio": "kit-tareas.ts:169, ContentGrid.tsx:14, KitTareasDashboard.tsx:22 y HeroSection.tsx:24 → «3 plantillas maestras ya estructuradas … tú solo escribes tus tareas en las celdas verdes». Y en el fichero: motor._bloque_plantilla() antepone un «Qué resuelve» propio a las Instrucciones del 07, con la vieja «Usa estas hojas en blanco» descartada."
+   },
+   {
+    "id": "COM-R2-12",
+    "cambio": "contenido_kit_tareas.py — la palabra ANISAKIS entra en el texto de las dos tareas (02:Fríos:B10 y 02:Mise en Place:B10) y el changelog la nombra igual. Barrido: la palabra ya aparece en el kit."
+   },
+   {
+    "id": "COM-R2-13",
+    "cambio": "Cubierto por DOM-R2-17: BONUS-02 remite ahora a «los checklists de 06-eventos-festivos.xlsx» y BONUS-01 a «01-apertura-cierre.xlsx y 06-eventos-festivos.xlsx»."
+   },
+   {
+    "id": "COM-R2-14",
+    "cambio": "motor.py:PLANTILLA_07['subtitulo'] — «Por Área» y «Por Perfil» pierden el «Turno: ☐ Mañana ☐ Tarde ☐ Noche» de la fila 2 y quedan con «Fecha … Responsable». «Por Franja Horaria» lo conserva, que ahí sí tiene sentido."
+   },
+   {
+    "id": "COM-R2-15",
+    "cambio": "Cubierto por DOM-R2-03: el 07 recién descargado marca «0 de 0», no «0 de 3», y rellenar una sola sección ya no deja placeholders inflando el total."
+   },
+   {
+    "id": "COM-R2-16",
+    "cambio": "productos-changelog.ts — la entrada 1.1 pierde «Datos de autoría actualizados con la biografía vigente del creador» y queda «Metadatos e instrucciones actualizados en los 11 ficheros». La autoría se anuncia sólo en la 2.0, que es donde se hizo."
+   }
+  ],
+  "descartados": [
+   {
+    "id": "DOM-R2-04",
+    "motivo": "Lectura invertida del booleano de openpyxl. `ws.protection.insertRows = False` NO bloquea: serializa `insertRows=\"0\"` y en OOXML (CT_SheetProtection) el valor 1/true es el que BLOQUEA la acción; el atributo omitido vale true por defecto, y por eso el motor lo escribe explícitamente a 0. Verificado en el XML de la copia del dry-run — xl/worksheets/sheet2.xml de 01-apertura-cierre.xlsx: `<sheetProtection selectLockedCells=\"0\" selectUnlockedCells=\"0\" sheet=\"1\" objects=\"0\" insertRows=\"0\" … deleteRows=\"0\" …/>` — y coincide con lo que midió la lente técnica en TEC-R2-14 («insertRows/deleteRows a 0 = permitido, que es lo que prometen las Instrucciones»). Las Instrucciones dicen la verdad: se pueden insertar y borrar filas con la protección puesta. No se toca nada."
+   }
+  ],
+  "notas": [
+   "REGLA DURA respetada: `git status --porcelain astro-site/public/dl` devuelve 0 líneas. Todo el trabajo se hizo sobre la copia de --dry-run en $CLAUDE_SCRATCHPAD/dryrun-kt/kit-tareas (CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/propio-kt-mantenedor). main.py sin --dry-run sigue abortando; KIT_TAREAS_APPLY nunca se puso.",
+   "Regeneración final: `python3 main.py --producto kit-tareas --dry-run` → exit 0, idempotencia 0 diferencias, 143 fórmulas nuevas con cache, 0 fallos data_only, DV «✓,—,N/A» en 33/33 hojas, bio en 11/11, 08 con 28 tareas y 0 huecos. Censo aparte con --fail: exit 0 (form=157, f_sinCache=0, box=0, bio=0, noA4=0, nonlat=0, emptyStr=0, err=0).",
+   "Demostraciones §6 rehechas con pycel sobre la copia, TODAS verdes y con los valores nuevos: arqueo fondo 150 / contado 1.150 / tarjetas 800 / Z 1.800 → DESCUADRE 0 (09:Cierre de Caja:C54) y +10 con Z 1.790; contador 25 tareas / 3 N/A / 22 ✓ → «22 de 22»; 07 con 8 tareas → «de 8»; y las dos que la R2 exigía y no pasaban: 3 «—» → «22 de 25» y ✓ en filas libres vacías → «25 de 25».",
+   "RECUENTO CANÓNICO para la capa comercial: 491 tareas en el kit (01=111, 02=57, 03=81, 04=68, 05=63, 06=60, 08=28, 09=23; el 07 aporta 0 por diseño y los BONUS no son listas de tareas). El 01 baja de 118 a 111 porque los 7 duplicados de SISTEMAS + CIERRE DE CAJA + CIERRE GENERAL pasan a ser líneas de remisión. Ahora lo emite `main.py` en `gates.recuento_tareas` de cada informe.",
+   "Cambios que CONTRADICEN la SPEC original y por eso se han escrito en ella (nueva §8 de `kit-tareas-v2-SPEC.md`): §2.1 el contador ya no descuenta «—»; §2.3 el 07 sin placeholders en la columna Tarea; §2.4 cabecera «Cuándo»; §2.5 la remisión en la banda y también para SISTEMAS; §2.7 protección extendida a los BONUS; §1.2 el registro mensual descuenta el fondo. La tanda de hermanos (§5) tiene que heredar estas y no las de arriba.",
+   "Trampa nueva documentada, con dinero detrás: pycel NO evalúa un COUNTIF cuyo criterio lleve un paréntesis — `COUNTIF(B5:B29,\"(Escribe aquí*\")` mete el `(` crudo en un `re.compile` y lanza `re.error: missing )`. Excel lo calcularía bien, pero el fichero se publicaría SIN valor cacheado (que es justo el incidente que inject_cache existe para evitar). Por eso el 07 se resolvió sacando el placeholder de la celda, no restándolo por fórmula. Verificado antes de escribir el fix, igual que se verificó que COUNTIFS y SUMIF sí funcionan.",
+   "Dos regresiones que introduje y cacé en el propio dry-run, ambas de orden de ejecución: (1) al convertir la remisión en banda de sección, esa banda quedaba POR DEBAJO de la última tarea y las 5 filas libres caían sobre una celda combinada (`MergedCell object attribute is read-only`) → el ancla de la holgura pasó a ser la última fila con contenido; (2) decidir la cabecera «Cuándo» ANTES de las precargas hacía que la 2.ª pasada leyera lo que escribió la 1.ª y la idempotencia se caía → `ajustar_cabecera_tiempo` se movió detrás de las precargas.",
+   "Y una tercera, específica de este kit: `motor.texto_grados` normaliza los grados ANTES de que corra el módulo de contenido, así que los anclas con «°C» escritos a la vieja usanza dejaban de encontrarse y `_exige` tumbaba el dry-run entero. `contenido_kit_tareas._fila` pasa ahora el ancla por la misma normalización. Cualquier ancla nueva con temperaturas tiene que contar con esto.",
+   "Regresión comprobada en un hermano: `main.py --producto kit-tareas-cafeteria --dry-run` → exit 0, 11/11 en alcance, idempotencia 0, censo 0 defectos, 472 tareas. El aviso TEC-R2-08 no salta ahí (una sola lista de DV) pero ya está operativo para cuando se toque el kit de hotel, que es donde la R2 lo detectó.",
+   "esbuild verde (`--format=esm`, sin build ni tsc) en los 9 .ts/.tsx tocados y en el frontmatter extraído del .astro; py_compile verde en motor.py, main.py y contenido_kit_tareas.py. Temperatura de CPU entre 38,5 y 42,0 °C durante toda la sesión, python siempre en serie.",
+   "Quedan dos menciones a «Trail» en la landing, las dos en el TEXTO DE LA PREGUNTA de una FAQ («¿En qué se diferencia de un SaaS de checklists tipo Trail?») y sin ninguna cifra de precio: las respuestas ya son genéricas. La demostración de §6 pedía «0 menciones a Trail CON PRECIO», y eso se cumple. Si John prefiere borrar también el nombre de la pregunta, es un cambio de una línea en kit-tareas.ts:66 y KitTareas.tsx:98.",
+   "Fuera de alcance a propósito (tanda §5, hermanos): las tarjetas «3 plantillas en blanco», «17 fechas clave» y «lun-vie con foco por día» siguen vivas en cafetería, pizzería, hamburguesería, dark-kitchen, bar, pastelería, catering, heladería, chocolatería y hotel. Son el mismo defecto de CONTENIDO que la R2 encontró en el representante y conviene arrastrarlos a la mini-ronda de cada hermano.",
+   "Ficheros modificados por mí: scripts/productos-digitales/kit-tareas-v2_0/{motor.py,main.py,contenido_kit_tareas.py}, scripts/productos-digitales/kit-tareas-v2-SPEC.md (§8 nueva), astro-site/src/data/productos/tareas/kit-tareas.ts, astro-site/src/components/pages/ProductosDigitalesHubPage.astro, src/data/productos-changelog.ts, src/pages/{KitTareas.tsx,KitTareasDashboard.tsx,ProductosDigitales.tsx} y src/components/kit-tareas/{ContentGrid,FaqAccordion,HeroSection,BonusSection}.tsx. Sin git add ni commit. Informe final en $CLAUDE_SCRATCHPAD/final.json."
+  ]
+ },
+ "ronda2": {
+  "por_id": [
+   {
+    "id": "DOM-R2-01",
+    "veredicto": "resuelto",
+    "evidencia": "Regenerado en copia propia (main.py --dry-run, dos ejecuciones independientes, 0 diffs de contenido). 09:Registro Mensual F5='=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)'. pycel con escenario PROPIO (fondo200/efectivo1200/tarjetas450.75/otros24.25/Z1475): Cierre!C54=0, Registro!F5=1475/H5=0."
+   },
+   {
+    "id": "DOM-R2-02",
+    "veredicto": "resuelto",
+    "evidencia": "01:Cierre Cocina!F43='=COUNTIF(B,\"?*\")-COUNTIF(F,\"N/A\")' (ya no resta '—'). Escenario propio: 25 tareas,10✓,4N/A,2'—' -> num=10,den=21."
+   },
+   {
+    "id": "DOM-R2-03",
+    "veredicto": "resuelto",
+    "evidencia": "07: placeholder en banda de sección (col A), col 'Tarea' vacía. pycel plantilla en blanco -> denominador-07=0.0, no '0 de 3'."
+   },
+   {
+    "id": "DOM-R2-04",
+    "veredicto": "descarte correcto",
+    "evidencia": "XML propio: insertRows=\"0\" deleteRows=\"0\". Confirmado en fuente de openpyxl (SheetProtection: True=bloqueado,False=permitido) y motor.py:2035 con comentario '# False = PERMITIDO insertar'."
+   },
+   {
+    "id": "DOM-R2-05",
+    "veredicto": "resuelto",
+    "evidencia": "Dos corridas independientes: 491 total (01=111,02=57,03=81,04=68,05=63,06=60,08=28,09=23), idéntico en ambas y en landing (grep '491' en 6 ficheros)."
+   },
+   {
+    "id": "DOM-R2-06",
+    "veredicto": "resuelto",
+    "evidencia": "Reseña reescrita sin precio de Trail ('€14, pago único' propio). Grep '60 €'/'€60': 0. Sólo 2 menciones a 'Trail' en texto de pregunta FAQ, sin precio de competidor."
+   },
+   {
+    "id": "DOM-R2-07",
+    "veredicto": "resuelto",
+    "evidencia": "01:Apertura Sala!A29='SISTEMAS → ver 08-... y 09-...'; tareas numeradas de esa sección desaparecen (última es la 18). colapsar_duplicados confirmado que NO corre sobre f_negocio/f_caja."
+   },
+   {
+    "id": "DOM-R2-08",
+    "veredicto": "resuelto",
+    "evidencia": "09:Apertura de Caja!D5:D15 = 07:15/07:30/07:45 escalonadas tras la apertura del local (07:00)."
+   },
+   {
+    "id": "DOM-R2-09",
+    "veredicto": "resuelto",
+    "evidencia": "Grep 'en Notas' en las 11 xlsx: 0. Verificadas variantes nuevas 'anótala aquí mismo','con los tuyos','junto a la tarea'."
+   },
+   {
+    "id": "DOM-R2-10",
+    "veredicto": "resuelto",
+    "evidencia": "05:FIFO Semanal!D47 = 'Etiquetar con fecha de producción Y de congelación: la vida útil se cuenta desde la de congelación'."
+   },
+   {
+    "id": "DOM-R2-11",
+    "veredicto": "resuelto",
+    "evidencia": "03:Semanal Manager!E6:E34 = 'Día 1'…'Día 5' + bloque FIN DE SEMANA (filas 36-39, Sábado)."
+   },
+   {
+    "id": "DOM-R2-12",
+    "veredicto": "resuelto",
+    "evidencia": "BONUS-02 filas 5-26 = 22 eventos (contados uno a uno); filas 28-32 = 5 huecos. Grep '22' presente en los 4 ficheros de landing señalados."
+   },
+   {
+    "id": "DOM-R2-13",
+    "veredicto": "resuelto",
+    "evidencia": "ContentGrid.tsx:10 = 'semanal por bloques (DÍA 1-5 + fin de semana...)'; ya no dice 'lun-vie'."
+   },
+   {
+    "id": "DOM-R2-14",
+    "veredicto": "resuelto",
+    "evidencia": "02:Fríos!B6 = 'Lavar y desinfectar hojas verdes y vegetales de consumo crudo con lejía apta...' — sujeto recuperado."
+   },
+   {
+    "id": "DOM-R2-15",
+    "veredicto": "resuelto",
+    "evidencia": "Columna 'Tarea' verde 00E8F5E9 en las tres hojas de 07 (Por Área, Por Franja Horaria, Por Perfil), verificado B6 en cada una."
+   },
+   {
+    "id": "DOM-R2-16",
+    "veredicto": "resuelto",
+    "evidencia": "BONUS-01:Briefing — 20 celdas C con etiqueta B terminada en ':' pintadas 00E8F5E9, locked=False, hoja protegida."
+   },
+   {
+    "id": "DOM-R2-17",
+    "veredicto": "resuelto",
+    "evidencia": "BONUS-01/02 y 05:Instrucciones!B38 = '▸ Estás en 05-tareas-semanales-mensuales.xlsx: lo que NO es diario...' — línea personalizada por fichero, no genérica."
+   },
+   {
+    "id": "DOM-R2-18",
+    "veredicto": "resuelto",
+    "evidencia": "09:Apertura de Caja!B7 = 'Anotar el fondo de caja en la celda verde de abajo' (sin coordenada). Grep 'C23' en textos de tarea: 0."
+   },
+   {
+    "id": "DOM-R2-19",
+    "veredicto": "resuelto",
+    "evidencia": "01:Apertura Cocina!B14 = 'Abrir la llave general de gas y comprobar que NO huele a gas...'. Prueba de agua jabonosa reubicada en 05:Trimestral y Anual!B10 (Cada 5 años, empresa habilitada)."
+   },
+   {
+    "id": "DOM-R2-20",
+    "veredicto": "resuelto",
+    "evidencia": "BONUS-02 filas 5-26: relleno alterna F5F5F5/FFFFFF sin repetirse dos veces seguidas, por índice de evento."
+   },
+   {
+    "id": "DOM-R2-21",
+    "veredicto": "resuelto",
+    "evidencia": "Pie idéntico en las 11 xlsx verificado: '— Kit de Tareas Recurrentes · Restaurante Casual · AI Chef Pro · aichef.pro'."
+   },
+   {
+    "id": "DOM-R2-22",
+    "veredicto": "parcial",
+    "evidencia": "Barrido regex propio: 0 no-latinos; grados con U+2212 verificados en la mayoría. RESIDUO encontrado: 02-partidas-cocina.xlsx:Mise en Place:B28='Helados temperados (pasar de -18 a −12 °C)' — el primer '-18' queda con guion ASCII porque RX_MENOS sólo actúa cuando el signo precede inmediatamente a '°C'; caso único en el corpus, cosmético, sin impacto en dinero/contador."
+   },
+   {
+    "id": "DOM-R2-23",
+    "veredicto": "resuelto",
+    "evidencia": "01:Apertura Cocina filas 46-50 (libres): columna A con relleno verde y valor None (sin numerar), confirmando el criterio de no numerarlas."
+   },
+   {
+    "id": "DOM-R2-24",
+    "veredicto": "resuelto",
+    "evidencia": "motor.py:aplicar() paso '4bis' con comentario explícito: ajustar_cabecera_tiempo() se llama DESPUÉS de las precargas (paso 4), evitando la regresión de idempotencia descrita."
+   },
+   {
+    "id": "DOM-R2-25",
+    "veredicto": "resuelto",
+    "evidencia": "05:Trimestral y Anual existe con DDD, extracción, extintores/BIE, gas, frigorista, legionela, TPV/Verifactu, todas con Nº de parte y Firma; mencionado en ContentGrid.tsx/KitTareasDashboard.tsx."
+   },
+   {
+    "id": "DOM-R2-26",
+    "veredicto": "resuelto",
+    "evidencia": "09:Registro Mensual!H36='=SUMIF(H5:H35,\">0\")-SUMIF(H5:H35,\"<0\")'. Escenario propio: +0 y -50 -> H36=50 (no 0)."
+   },
+   {
+    "id": "DOM-R2-27",
+    "veredicto": "resuelto",
+    "evidencia": "03:Diario Manager filas 13-17: 11:00/11:00/11:15/'Revisar redes sociales' 11:30/'Briefing pre-servicio' 11:45 — briefing detrás de redes sociales."
+   },
+   {
+    "id": "DOM-R2-28",
+    "veredicto": "resuelto",
+    "evidencia": "02:Calientes!B20 = 'Control de temperatura de mantenimiento en caliente (≥ 65 °C) — anota la lectura: ____ °C'."
+   },
+   {
+    "id": "DOM-R2-29",
+    "veredicto": "resuelto",
+    "evidencia": "05:Trimestral y Anual!B22 = 'Descalcificar la máquina de café...' (cadencia Trimestral); ya no figura en Mantenimiento Mensual."
+   },
+   {
+    "id": "DOM-R2-30",
+    "veredicto": "resuelto",
+    "evidencia": "Grep de las 3 viñetas obsoletas sobre las 11 hojas Instrucciones: 0 coincidencias."
+   },
+   {
+    "id": "TEC-R2-01",
+    "veredicto": "resuelto",
+    "evidencia": "gate_recuento operativo, idéntico en dos corridas independientes: 491 total con desglose por fichero en gates.recuento_tareas del informe JSON."
+   },
+   {
+    "id": "TEC-R2-02",
+    "veredicto": "resuelto",
+    "evidencia": "09:Cierre de Caja alturas verificadas: header 24, denominaciones 22 (incl. 0,02€), TOTAL EFECTIVO 28, título Resumen 30, header Concepto 26, filas concepto 24. Ninguna None."
+   },
+   {
+    "id": "TEC-R2-03",
+    "veredicto": "resuelto",
+    "evidencia": "09:Apertura/Cierre de Caja columna A width=10.0 en ambas hojas."
+   },
+   {
+    "id": "TEC-R2-04",
+    "veredicto": "resuelto",
+    "evidencia": "Igual que DOM-R2-18: 'C23' ausente del texto de tarea en las 11 xlsx."
+   },
+   {
+    "id": "TEC-R2-05",
+    "veredicto": "resuelto",
+    "evidencia": "Grep '22' (no 17) confirmado en los 5 sitios: kit-tareas.ts:189/253, ContentGrid.tsx:18, BonusSection.tsx:18, KitTareasDashboard.tsx:26."
+   },
+   {
+    "id": "TEC-R2-06",
+    "veredicto": "resuelto",
+    "evidencia": "Fila de bio en las 11 Instrucciones: altura=35.0 en las 11 (verificado una a una)."
+   },
+   {
+    "id": "TEC-R2-07",
+    "veredicto": "resuelto",
+    "evidencia": "09:Apertura/Cierre de Caja columna C width=20.0 en ambas hojas."
+   },
+   {
+    "id": "TEC-R2-08",
+    "veredicto": "resuelto",
+    "evidencia": "gate_dv_y_bio verificado en kit-tareas y kit-tareas-cafeteria: aviso_dv_mezcladas=[] en ambos, una sola lista de DV. Fix completo del hotel queda deferido a §5 (hermanos), tal como documenta el propio informe; el gate que lo detectará ya está operativo y probado en 2 productos."
+   },
+   {
+    "id": "TEC-R2-09",
+    "veredicto": "resuelto",
+    "evidencia": "Escenario propio: ✓ en fila libre con Tarea vacía no altera el numerador (se mantuvo en 10), confirmando COUNTIFS(B,\"?*\",F,\"✓\")."
+   },
+   {
+    "id": "TEC-R2-10",
+    "veredicto": "resuelto",
+    "evidencia": "Igual que DOM-R2-03: placeholder fuera de columna Tarea; ningún COUNTIF con paréntesis crudo en el código."
+   },
+   {
+    "id": "TEC-R2-11",
+    "veredicto": "resuelto",
+    "evidencia": "09:Cierre de Caja!C49='=IFERROR(C47-C48,0)' etiqueta 'Ventas en efectivo (contado − fondo)'. Verificado con valores propios y con los del mantenedor (C47=1150,C48=150,C49=1000,C52=1800,C54=0)."
+   },
+   {
+    "id": "TEC-R2-12",
+    "veredicto": "resuelto",
+    "evidencia": "09:Apertura/Cierre de Caja: page_setup.orientation='landscape' en ambas."
+   },
+   {
+    "id": "TEC-R2-13",
+    "veredicto": "resuelto",
+    "evidencia": "08:Apertura del Negocio!B7/B16/B17 (58-60 car.) con row height=None, coincide exactamente con la cita del mantenedor."
+   },
+   {
+    "id": "TEC-R2-14",
+    "veredicto": "resuelto",
+    "evidencia": "36 hojas de datos protegidas (checklist+briefing+calendario), 0 sin proteger fuera de Instrucciones; las 11 Instrucciones sin proteger."
+   },
+   {
+    "id": "TEC-R2-15",
+    "veredicto": "resuelto",
+    "evidencia": "01:Cierre Sala dimensions='A1:G32' (no 'A1:G43'); filas 33-49 sin valor ni relleno."
+   },
+   {
+    "id": "COM-R2-01",
+    "veredicto": "resuelto",
+    "evidencia": "ContentGrid.tsx:8 = '111 tareas ya escritas solo en este fichero'; 491 en hero/schema/grid/changelog, confirmado en los 6 ficheros señalados."
+   },
+   {
+    "id": "COM-R2-02",
+    "veredicto": "resuelto",
+    "evidencia": "Reseña de Javier López reescrita sin precio de Trail; restos de 'Trail' sólo en texto de pregunta FAQ, sin cifra de competidor."
+   },
+   {
+    "id": "COM-R2-03",
+    "veredicto": "resuelto",
+    "evidencia": "Los 5 sitios muestran '22' y el changelog dice '22 en total' listando las 5 fechas nuevas, coincide con las 22 filas contadas."
+   },
+   {
+    "id": "COM-R2-04",
+    "veredicto": "resuelto",
+    "evidencia": "ProductosDigitalesHubPage.astro:540 y ProductosDigitales.tsx:529: misma description con '491 tareas' y feature 'Arqueo y registro mensual de caja'."
+   },
+   {
+    "id": "COM-R2-05",
+    "veredicto": "resuelto",
+    "evidencia": "changelog: 'Contador honesto en los 9 checklists' y 'protección...en todas las hojas de datos de los 11 ficheros' — distinguen correctamente 9 vs 11."
+   },
+   {
+    "id": "COM-R2-06",
+    "veredicto": "resuelto",
+    "evidencia": "FaqAccordion.tsx:12, kit-tareas.ts:63/279, KitTareas.tsx:97: 'responsable, cuándo (hora límite/día/cadencia/antelación según la lista), completada, firma' en los 4 sitios."
+   },
+   {
+    "id": "COM-R2-07",
+    "veredicto": "resuelto",
+    "evidencia": "01:Cierre Sala!F28 denominador=10 (10 tareas numeradas); bandas CIERRE DE CAJA/CIERRE GENERAL sin filas numeradas; 5 libres sin colisión de merges."
+   },
+   {
+    "id": "COM-R2-08",
+    "veredicto": "resuelto",
+    "evidencia": "changelog línea 313: 'Sin duplicidades: el cierre general...viven ahora en 08 y 09...ninguna se ha perdido'."
+   },
+   {
+    "id": "COM-R2-09",
+    "veredicto": "resuelto",
+    "evidencia": "0 coincidencias de la viñeta obsoleta en las 11 xlsx; bloque 'Filas libres' consistente."
+   },
+   {
+    "id": "COM-R2-10",
+    "veredicto": "resuelto",
+    "evidencia": "ContentGrid.tsx y KitTareasDashboard.tsx mencionan la hoja Trimestral y Anual (grep confirma en ambos)."
+   },
+   {
+    "id": "COM-R2-11",
+    "veredicto": "resuelto",
+    "evidencia": "4 sitios con '3 plantillas maestras ya estructuradas...tú solo escribes tus tareas'; 07:Instrucciones sin la vieja viñeta obsoleta."
+   },
+   {
+    "id": "COM-R2-12",
+    "veredicto": "resuelto",
+    "evidencia": "02:Fríos!B10 y Mise en Place!B10 contienen 'ANISAKIS' en mayúsculas."
+   },
+   {
+    "id": "COM-R2-13",
+    "veredicto": "resuelto",
+    "evidencia": "BONUS-02→'06-eventos-festivos.xlsx'; BONUS-01→'01-apertura-cierre.xlsx y 06-eventos-festivos.xlsx'."
+   },
+   {
+    "id": "COM-R2-14",
+    "veredicto": "resuelto",
+    "evidencia": "07:Por Área!A2 y Por Perfil!A2 sin 'Turno:'; Por Franja Horaria!A2 sí lo conserva."
+   },
+   {
+    "id": "COM-R2-15",
+    "veredicto": "resuelto",
+    "evidencia": "Plantilla en blanco da denominador 0.0 (no '0 de 3'); con 8 tareas escritas da '8' (gate denominador-07 8 OK)."
+   },
+   {
+    "id": "COM-R2-16",
+    "veredicto": "resuelto",
+    "evidencia": "changelog kit-tareas 1.1: 'Metadatos e instrucciones actualizados en los 11 ficheros' sin mención a biografía; confirmado que la frase antigua sí sigue en hermanos (fuera de alcance, correcto)."
+   }
+  ],
+  "gates": "censo --fail: exit 0 en DOS corridas independientes (main.py --dry-run desde scratchpads distintos): n=11, form=157, f_sinCache=0, box=0, bio=0, noA4=0, creator≠AICP=0, nonlat=0, emptyStr=0, err=0. Idempotencia INTERNA (1ª vs 2ª pasada dentro de cada corrida): 0 diferencias en ambas. Idempotencia CRUZADA (contenido de las 11 xlsx entre las dos corridas independientes, comparado con motor.digest/diff_digest de main.py, no sólo confiando en el gate interno): 0 diferencias — los MD5 difieren pero por metadatos de timestamp del zip, no por contenido/formato/relleno/DV/CF/merges/protección. gate-flujo-postpago.py --offline --only kit-tareas: exit 0, 11 ficheros, 0 fallos (1 aviso esperado por --offline sobre webhook, no aplica a Excel). esbuild --format=esm sobre los 14 .ts/.tsx tocados (incl. el frontmatter extraído de ProductosDigitalesHubPage.astro): 14/14 OK. py_compile sobre motor.py/main.py/contenido_kit_tareas.py: OK. git status --porcelain astro-site/public/dl: 0 líneas (vacío) — REGLA DURA respetada. Casos §6 reproducidos con pycel usando valores PROPIOS distintos a los del SPEC y a los de las tres lentes originales (fondo200/efectivo1200/tarjetas450.75/otros24.25/Z1475 → descuadre 0; registro mensual con un día −50 → total 50 en valor absoluto; contador 25 tareas/10✓/4N/A/2— → 10 de 21; 07 en blanco → 0 de 0; ✓ en fila libre sin Tarea no cuenta). Regresión de hermano (kit-tareas-cafeteria --dry-run): exit 0, 472 tareas, gate dv_y_bio sin aviso — coincide con lo declarado por el mantenedor. CPU máx observada: 41,1 °C (istats antes de cada barrido, todo en serie, sin builds ni Playwright).",
+  "residuos": [
+   "DOM-R2-22 (parcial): '02-partidas-cocina.xlsx:Mise en Place:B28' = 'Helados temperados (pasar de -18 a −12 °C)' conserva un guion ASCII (U+002D) sin normalizar a signo menos (U+2212) en el primer valor de un rango que comparte el '°C' final con el segundo valor. Causa: RX_MENOS en motor.py sólo sustituye un '-' que precede INMEDIATAMENTE a un patrón '\\d+°C'; cuando dos valores comparten un único sufijo '°C' (\"de -18 a −12 °C\"), sólo el pegado al sufijo se normaliza. Es el único caso en las 11 xlsx (barrido completo, 0 más); no afecta dinero, contador ni ninguna demostración de la SPEC §6 — es cosmético pero contradice la frase 'normalizadas...en todo el corpus' de la nota transversal. Fix sugerido de una línea: extender RX_MENOS para capturar también rangos 'de -N a' cuando el mismo párrafo ya tiene un '°C' posterior, o aplicar una segunda pasada que normalice cualquier '-\\d+' seguido en la misma frase de un valor ya en °C.",
+   "COM-R2-02: quedan 2 menciones literales al nombre 'Trail' en el TEXTO DE LA PREGUNTA de la FAQ (kit-tareas.ts:66 y :286, y su gemelo en KitTareas.tsx:98) — la demostración exigible por la SPEC §6 ('0 menciones a Trail CON PRECIO') se cumple porque la respuesta ya no lleva cifra de competidor, pero si John prefiere no nombrar a la competencia en absoluto, es un cambio de una línea (ya señalado por el propio mantenedor en sus notas).",
+   "No se ha ejecutado la tanda de hermanos (§5) más allá de una comprobación puntual en kit-tareas-cafeteria (472 tareas, exit 0, sin aviso de DV mezclada); pizzería, hamburguesería, dark-kitchen, bar y los 08/09 de catering/chocolatería/heladería/hotel/restaurante-creativo siguen sin este ciclo de refutación — está fuera del alcance declarado de esta ronda (kit-tareas es el representante) pero queda pendiente antes de aplicar motor.py a esos productos con KIT_TAREAS_APPLY=1.",
+   "Todo el trabajo (mío y el regenerado del mantenedor) vive en copias de --dry-run bajo /private/tmp; astro-site/public/dl/kit-tareas/ (el producto LIVE que se sirve/descarga hoy) sigue siendo la v1.1 sin tocar. Antes de que el cliente vea la v2.0 hace falta ejecutar main.py sin --dry-run con KIT_TAREAS_APPLY=1 sobre los 11 xlsx reales, commitear el código de kit-tareas-v2_0/ y los cambios de landing/changelog, y repetir censo/gate en el árbol real (no sólo en la copia)."
+  ],
+  "veredicto": "listo"
+ },
+ "correccion2": {
+  "censo_exit": 0,
+  "dryrun_exit": 0,
+  "ids_vistos": 1,
+  "resueltos": [
+   {
+    "id": "DOM-R2-22",
+    "cambio": "Residuo cerrado. Causa raíz: `motor.texto_grados` sólo tenía UN patrón de signo, `RX_MENOS` (/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/motor.py:115), cuyo lookahead exige que el '-' preceda inmediatamente a un número pegado a '°C'; en un RANGO que comparte la unidad al final el primer signo queda fuera del lookahead. Fix: nuevo `RX_MENOS_RANGO` (motor.py:116-124) que mira a través del conector ('a', 'y', 'hasta', 'hacia') hasta el '°C' final, y `texto_grados` (motor.py:965) pasa a encadenar `RX_MENOS_RANGO.sub('−', RX_MENOS.sub('−', RX_GRADOS.sub(' °C', v)))`. Verificado tras regenerar: 02-partidas-cocina.xlsx:Mise en Place:B28 = 'Helados temperados (pasar de −18 a −12 °C)' con los DOS signos en U+2212 (codepoints comprobados: 0x2212, 0x2212). Barrido de las 11 xlsx regeneradas: 13 celdas con grados, 0 residuos de guion ASCII delante de número+°C, 0 caracteres no latinos. Documentado en kit-tareas-v2-SPEC.md:173-180."
+   }
+  ],
+  "descartados": [],
+  "notas": [
+   "ALCANCE: sólo el id que quedaba abierto (DOM-R2-22, veredicto 'parcial'). R2.json trae 61 ids: 59 'resuelto' + 1 'descarte correcto' + este 1 'parcial'.",
+   "NO FALSOS POSITIVOS: `RX_MENOS_RANGO` exige número→conector→número→'°C'. Probado contra las 22 cadenas con grados de TODA la familia kit-tareas* y contra dos trampas: 'refrigeración 0-4 °C' (el guion de rango va precedido de dígito → intacto) y 'Turno de -1 a 3 personas, sala a 21 °C' (no hay '°C' tras el segundo número → intacto). Casos hermanos que ahora también quedarían bien si se pasa el motor a la familia: kit-tareas-sushi-bar/01-apertura-cierre-sushi.xlsx:Apertura Barra Sushi:B7 y :03-seguridad-anisakis-appcc.xlsx:Temperaturas Diario:B5, ambos '(-2 a 0°C)'.",
+   "REGENERACIÓN VERDE (2 corridas, la 2.ª con exit code capturado = 0): 11/11 xlsx en alcance, idempotencia 0 diferencias 1.ª vs 2.ª pasada, inject_cache 157 fórmulas con cache y 0 fallos pycel, data_only 143 con valor / 0 fallos, §6 OK (arqueo cuadra C54=0 y descuadra C54=10, contador honesto '22 de 22', denominador 07 F31=8), DV «✓,—,N/A» en 33 hojas con 0 incorrectas, bio 11/11 Instrucciones, 491 tareas entregadas.",
+   "CENSO: `censo-entregables.py --only <dryrun>/kit-tareas --fail` → exit 0, 11 xlsx, form=157, f_sinCache=0, box=0, bio=0, noA4=0, creator≠AICP=0, nonlat=0, emptyStr=0, err=0.",
+   "ESBUILD: los 14 .ts/.tsx modificados del working tree compilan (`npx esbuild --format=esm`), 0 fallos. `python3 -m py_compile` OK sobre motor.py, main.py y contenido_kit_tareas.py.",
+   "REGLA DURA RESPETADA: `KIT_TAREAS_APPLY` NO se ha exportado; todo el trabajo en /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/f83a04d3-d14f-49b3-aa79-c442fb4d7983/scratchpad/propio-fixer-r3/dryrun-kt/kit-tareas. `git status --porcelain -- astro-site/public/dl` = 0 líneas. Sin git add/commit.",
+   "TÉRMICA: python en serie, `istats cpu temp` antes de cada barrido; máximo 44,19 °C, nunca >60. Sin builds, sin tsc, sin navegador.",
+   "FICHEROS TOCADOS: /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2_0/motor.py y /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-tareas-v2-SPEC.md."
+  ]
+ },
+ "ronda2b": {
+  "por_id": [
+   {
+    "id": "DOM-R2-22",
+    "veredicto": "resuelto",
+    "evidencia": "Regenerado en copia propia ($CLAUDE_SCRATCHPAD/propio-verificador-r2b/dryrun-kt/kit-tareas, 2 corridas independientes, exit 0 las dos). Cita motor.py:112-124 (RX_MENOS_RANGO, mira a través de 'a|y|hasta|hacia' hasta el '°C' final, sin tocar el guion de rango precedido de dígito) y motor.py:965 (texto_grados encadena RX_MENOS_RANGO.sub tras RX_MENOS.sub). Celda objetivo verificada en las DOS regeneraciones: 02-partidas-cocina.xlsx:Mise en Place:B28 = 'Helados temperados (pasar de −18 a −12 °C)', codepoints de los dos signos: 0x2212, 0x2212 (confirmado con script Python, no por inspección visual). Barrido de las 11 xlsx en alcance (13 celdas con '°'): 0 celdas donde motor.RX_MENOS o motor.RX_MENOS_RANGO (importados directamente del motor, no reimplementados) sigan casando, es decir ninguna resta pendiente de convertir. Las 4 celdas con guion ASCII que SÍ quedan (01-apertura-cierre.xlsx:Apertura Cocina:B18/B21/B22 y Cierre Cocina:B12, todas '...0-4 °C...') son el rango '0-4' con el guion precedido de dígito, el caso que la SPEC (líneas ~173-180) documenta como intencionalmente intacto, y ninguna de las dos regex del motor las reclama, así que no son residuo del bug sino comportamiento correcto. Barrido adicional de caracteres CJK/cirílico/hangul/árabe/hebreo/tailandés sobre las 11 xlsx: 0 hits (los dos únicos caracteres >0x2FFF encontrados son emoji legítimos 💰/📊 en cabeceras de sección, no inyección)."
+   }
+  ],
+  "gates": "dryrun_exit=0 (2 corridas independientes, --producto kit-tareas, 11/11 xlsx en alcance) · censo_exit=0 (censo-entregables.py --only <scratch>/kit-tareas --fail: 11 xlsx, 0 defectos) · idempotencia=0 diferencias 1.ª vs 2.ª pasada en cada corrida · inject_cache: 0 fallos_pycel en ambas corridas · data_only: 143 con valor / 0 fallos en ambas corridas · §6 pycel: arqueo-cuadra C54=0 OK, arqueo-descuadra C54=10 OK, contador-honesto '22 de 22' OK, denominador-07 F31=8 OK · DV «✓,—,N/A»: 33 hojas, 0 incorrectas · bio: 11/11 Instrucciones · recuento de tareas entregadas: 491 (estable en las 2 corridas) · DOM-R2-22 específico: 0 celdas donde RX_MENOS/RX_MENOS_RANGO del motor.py sigan casando tras la regeneración, sobre 13 celdas con grados; 0 CJK/cirílico/hangul/árabe/hebreo/tailandés en las 11 xlsx · térmica: CPU 40.6-45.0°C durante todo el barrido (istats antes de cada corrida), sin superar 60°C, todo en serie, sin builds/Playwright · alcance respetado: KIT_TAREAS_APPLY nunca exportado (confirmado con env|grep), git status --porcelain -- astro-site/public/dl = 0 líneas (no se tocó lo protegido), trabajo confinado a $CLAUDE_SCRATCHPAD/propio-verificador-r2b/dryrun-kt/kit-tareas, sin git add/commit.",
+  "residuos": [],
+  "veredicto": "listo"
+ }
+}

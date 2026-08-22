@@ -5,6 +5,7 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_TAREAS || '#comprar'
 
 const items = [
   'Checklists de apertura y cierre: cocina, sala, barra',
+  'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
   'Tareas por partida de cocina: calientes, fríos, mise en place',
   'Checklist diario, semanal y mensual del manager',
   'Tareas por perfil: chef, sous chef, sala, camarero, barman',
@@ -30,7 +31,7 @@ export default function CtaFinal() {
           Deja de Repetir las Mismas Instrucciones Cada Día
         </h2>
         <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-          9 checklists operativos por menos de lo que cuesta una hora de consultoría.
+          9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.
         </p>
 
         <div className="bg-white/5 border border-[#FFD700]/20 rounded-2xl p-8 md:p-10 backdrop-blur-sm">

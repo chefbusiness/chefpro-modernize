@@ -5,11 +5,11 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Las tareas vienen ya rellenadas?',
-    a: 'Sí. Cada checklist viene pre-rellenado con las tareas reales de un restaurante casual. Solo tienes que personalizar: ajustar tareas a tu local, borrar las que no apliquen y añadir las específicas de tu negocio. Las celdas editables están marcadas en verde.',
+    a: 'Cada checklist incluye ya escritas las tareas más habituales de un restaurante casual. Tendrás que personalizar: ajustar tareas a tu local, borrar las que no apliquen y añadir las específicas de tu negocio. Las celdas editables están marcadas en verde.',
   },
   {
     q: '¿Cómo funciona el sistema de firma?',
-    a: 'Cada checklist tiene columnas de: responsable, hora límite, completada (✓) y firma. El manager imprime el checklist, lo entrega al equipo, cada persona marca y firma sus tareas. Al final del turno, el encargado verifica y firma al pie.',
+    a: 'Cada checklist tiene columnas de: responsable, cuándo (hora límite en las diarias, día en las semanales, cadencia en las mensuales y antelación en las de eventos), completada (✓) y firma. El manager imprime el checklist, lo entrega al equipo, cada persona marca y firma sus tareas. Al final del turno, el encargado verifica y firma al pie.',
   },
   {
     q: '¿Funcionan con Google Sheets?',
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: '¿En qué se diferencia de Trail u otros sistemas?',
-    a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €14, pago único. Sin suscripción, sin internet, ilimitado en locales.',
+    a: 'Los SaaS de checklists cobran una cuota mensual por local y requieren tablets/móviles conectados. Este kit te da las mismas listas de tareas en Excel por €14, pago único. Sin suscripción, sin internet, ilimitado en locales.',
   },
   {
     q: '¿Puedo usarlo en varios restaurantes?',

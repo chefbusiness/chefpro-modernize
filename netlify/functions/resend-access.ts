@@ -36,7 +36,7 @@ const PRODUCTS: Record<string, ProductConfig> = {
     accessPath: '/kit-tareas-access',
     emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',
     emailTitle: 'Accede a tu Kit de Tareas Recurrentes',
-    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailBody: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas + 2 bonus (11 ficheros) operativos (v2.0):',
     emailCta: 'Acceder a mis Checklists',
   },
   'kit-tareas-cafeteria': {

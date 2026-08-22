@@ -17,13 +17,13 @@ const TEMPLATES = [
   { key: 'partidas', icon: ChefHat, title: 'Partidas de Cocina', desc: 'Calientes, fríos y mise en place general.' },
   { key: 'manager', icon: ClipboardList, title: 'Tareas del Manager', desc: 'Diario, semanal, mensual + handover de turno.' },
   { key: 'perfiles', icon: Users, title: 'Tareas por Perfil', desc: 'Chef, sous chef, jefe sala, camarero, barman.' },
-  { key: 'periodicas', icon: CalendarDays, title: 'Semanales y Mensuales', desc: 'Limpieza profunda, FIFO, mantenimiento.' },
+  { key: 'periodicas', icon: CalendarDays, title: 'Semanales y Mensuales', desc: 'Limpieza profunda, FIFO, mantenimiento + hoja trimestral y anual (DDD, extracción, extintores, gas, legionela, Verifactu) con nº de parte.' },
   { key: 'eventos', icon: PartyPopper, title: 'Eventos y Festivos', desc: 'Pre-evento, San Valentín, Navidad, terraza.' },
-  { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco para crear las tuyas.' },
+  { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas maestras ya estructuradas: solo escribes tus tareas.' },
   { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist completo para abrir y cerrar el local.' },
   { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Servicio', desc: 'Plantilla de briefing pre-servicio.' },
-  { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '17 fechas clave de hostelería.' },
+  { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '22 fechas clave de hostelería + 5 huecos para las tuyas.' },
 ];
 
 export default function KitTareasDashboard() {
@@ -80,7 +80,7 @@ export default function KitTareasDashboard() {
             <ProductVersionBadge productId="kit-tareas" />
           </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Tus 9 checklists operativos listos para descargar. Imprime, delega y controla.
+            Tus 11 plantillas listas para descargar. Imprime, delega y controla.
           </p>
         </section>
 
@@ -88,7 +88,7 @@ export default function KitTareasDashboard() {
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
             <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">
-              7 Checklists + 2 Bonus · Descarga Directa
+              9 Checklists + 2 Bonus · Descarga Directa
             </p>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

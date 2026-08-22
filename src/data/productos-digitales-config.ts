@@ -131,10 +131,10 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
     accessPath: '/kit-tareas-access',
     emailSubject: 'Tu acceso al Kit de Tareas Recurrentes',
     emailTitle: '¡Gracias por tu compra!',
-    emailBodyPostPurchase: 'Tu acceso al <strong>Kit de Tareas Recurrentes Pro</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailBodyPostPurchase: 'Tu acceso al <strong>Kit de Tareas Recurrentes Pro</strong> está listo. Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas + 2 bonus (11 ficheros) operativos (v2.0):',
     emailCta: 'Acceder a mis Checklists',
     emailTitleResend: 'Accede a tu Kit de Tareas Recurrentes',
-    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar los 9 checklists operativos:',
+    emailBodyResend: 'Haz clic en el botón para acceder a tu dashboard y descargar las 9 plantillas + 2 bonus (11 ficheros) operativos (v2.0):',
     files: {
       'apertura-cierre': '/dl/kit-tareas/01-apertura-cierre.xlsx',
       'partidas': '/dl/kit-tareas/02-partidas-cocina.xlsx',

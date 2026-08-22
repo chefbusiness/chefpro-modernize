@@ -23,7 +23,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Restaurante | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para restaurante casual: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14.',
+      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con las tareas más habituales ya escritas — apertura, cierre, caja, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14.',
     keywords:
       'checklist restaurante, tareas apertura restaurante, checklist cierre cocina, lista tareas cocina, checklist manager restaurante, tareas recurrentes hostelería, mise en place checklist, plantilla tareas restaurante, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas.jpg',
@@ -32,7 +32,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes Pro — Checklists Operativos para Restaurante',
     productDescription:
-      '9 checklists operativos pre-rellenados para restaurante casual: apertura, cierre, partidas de cocina, manager, perfiles profesionales, eventos y festivos.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con 491 tareas ya escritas — apertura, cierre, caja, partidas de cocina, manager, perfiles profesionales, eventos y festivos.',
     price: '14.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -50,21 +50,21 @@ const data: KitTareasData = {
       {
         author: 'Javier López',
         rating: '5',
-        body: 'Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14. No necesito más.',
+        body: 'Pagábamos una cuota mensual por un SaaS de checklists. Esto hace lo mismo en Excel por €14, pago único. No necesito más.',
       },
     ],
     faqs: [
       {
         q: '¿Las tareas vienen ya rellenadas?',
-        a: 'Sí. Cada checklist viene pre-rellenado con las tareas reales de un restaurante casual. Solo personaliza: ajustar, borrar lo que no aplique y añadir lo específico de tu local.',
+        a: 'Cada checklist incluye ya escritas las tareas más habituales de un restaurante casual. Personaliza: ajusta, borra lo que no aplique y añade lo específico de tu local.',
       },
       {
         q: '¿Cómo funciona el sistema de firma?',
-        a: 'Cada checklist tiene columnas de responsable, hora límite, completada y firma. El manager imprime, entrega al equipo, cada persona marca y firma.',
+        a: 'Cada checklist tiene columnas de responsable, cuándo (hora límite, día, cadencia o antelación, según la lista), completada y firma. El manager imprime, entrega al equipo, cada persona marca y firma.',
       },
       {
-        q: '¿En qué se diferencia de Trail?',
-        a: 'Trail cobra €60-75/mes por local. Este kit da las mismas listas en Excel por €14, pago único. Sin suscripción, sin internet.',
+        q: '¿En qué se diferencia de un SaaS de checklists tipo Trail?',
+        a: 'Los SaaS de checklists cobran suscripción mensual por local. Este kit da las mismas listas en Excel por €14, pago único. Sin suscripción, sin internet.',
       },
       {
         q: '¿Puedo usarlo en varios restaurantes?',
@@ -108,18 +108,19 @@ const data: KitTareasData = {
   },
 
   hero: {
-    badge: 'Lo que Trail cobra €60/mes, tú lo tienes por €14 — para siempre',
+    badge: 'Lo que los SaaS de checklists cobran por suscripción mensual, tú lo tienes por €14 — para siempre',
     titlePre: 'Kit de Tareas ',
     titleGold: 'Recurrentes',
     subtitleLine: 'Restaurante Casual — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu restaurante: apertura, cierre, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 491 tareas de restaurante ya escritas: apertura, cierre, negocio, caja, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre por área (cocina, sala, barra)',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
       'Tareas por perfil: chef, sous chef, jefe sala, camarero, barman',
       'Tareas del manager: diario, semanal y mensual',
       'Plantillas de eventos y festivos (San Valentín, Navidad)',
-      'Plantilla en blanco personalizable + briefing de servicio',
+      '3 plantillas maestras personalizables + briefing de servicio',
     ],
     ctaLabel: 'COMPRAR AHORA — €14',
   },
@@ -128,14 +129,14 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de un restaurante casual. Solo ajusta, imprime y delega.',
+      '491 tareas de restaurante casual ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
         icon: 'DoorOpen',
         title: 'Apertura y Cierre',
-        desc: '6 checklists: apertura cocina, sala, barra + cierre cocina, sala, barra. Cada tarea con responsable, hora límite y firma. ~90 tareas pre-rellenadas.',
+        desc: '6 checklists: apertura cocina, sala, barra + cierre cocina, sala, barra. Cada tarea con responsable, cuándo y firma. 111 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'ChefHat',
@@ -145,7 +146,7 @@ const data: KitTareasData = {
       {
         icon: 'ClipboardList',
         title: 'Tareas del Manager',
-        desc: 'Checklist diario, semanal (lun-vie con foco por día) y mensual. Plus handover de cambio de turno con traspaso de información.',
+        desc: 'Checklist diario, semanal por bloques (DÍA 1-5 + fin de semana, para que el bloque no se pierda si cierras los lunes) y mensual. Plus handover de cambio de turno.',
       },
       {
         icon: 'Users',
@@ -155,7 +156,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de equipos y seguridad.',
+        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de equipos y seguridad. + hoja Trimestral y Anual: DDD, conductos de extracción, extintores y BIE, gas, legionela y revisión del TPV/Verifactu, con nº de parte y firma.',
       },
       {
         icon: 'PartyPopper',
@@ -165,7 +166,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por franja horaria, por área, por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por franja horaria, por área y por perfil— con las secciones y la zona o el responsable puestos: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo cocina): luces, alarma, TPV, terraza. Responsable y hora límite precargados para cada tarea.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula.',
       },
       {
         icon: 'Megaphone',
@@ -175,7 +186,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '17 fechas clave de hostelería con tareas asociadas y antelación recomendada. Añade tus fechas locales.',
+        desc: '22 fechas clave de hostelería con tareas asociadas y antelación recomendada, más 5 huecos para las tuyas.',
       },
     ],
   },
@@ -189,7 +200,7 @@ const data: KitTareasData = {
     reasons: [
       {
         icon: 'ClipboardCheck',
-        title: 'Pre-Rellenadas y Listas para Usar',
+        title: 'Con las Tareas Habituales Ya Escritas',
         desc: 'No empieces de cero. Cada checklist viene con las tareas reales de un restaurante casual. Solo ajusta, borra lo que no aplique y añade lo que te falte.',
       },
       {
@@ -204,8 +215,8 @@ const data: KitTareasData = {
       },
       {
         icon: 'RefreshCw',
-        title: 'Trail Cobra €60/mes. Esto es €14',
-        desc: 'Las mismas listas de tareas que usan los restaurantes con SaaS premium como Trail, pero en Excel por un pago único. Sin suscripción.',
+        title: 'Los SaaS de Checklists Cobran Suscripción. Esto es €14',
+        desc: 'Las mismas listas de tareas que usan los restaurantes con SaaS premium de checklists, pero en Excel por un pago único. Sin suscripción.',
       },
     ],
     compatLabel: 'Compatible con cualquier software de hojas de cálculo:',
@@ -239,7 +250,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Tareas Especiales',
         value: '€9',
-        desc: '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, terraza) con tareas y antelación recomendada.',
+        desc: '22 fechas clave de hostelería (San Valentín, Día del Padre, comuniones, Semana Santa, terraza, Navidad, puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-restaurante-eventos.jpg',
       },
     ],
@@ -261,11 +272,11 @@ const data: KitTareasData = {
   faqs: [
     {
       q: '¿Las tareas vienen ya rellenadas?',
-      a: 'Sí. Cada checklist viene pre-rellenado con las tareas reales de un restaurante casual. Solo tienes que personalizar: ajustar tareas a tu local, borrar las que no apliquen y añadir las específicas de tu negocio. Las celdas editables están marcadas en verde.',
+      a: 'Cada checklist incluye ya escritas las tareas más habituales de un restaurante casual. Tendrás que personalizar: ajustar tareas a tu local, borrar las que no apliquen y añadir las específicas de tu negocio. Las celdas editables están marcadas en verde.',
     },
     {
       q: '¿Cómo funciona el sistema de firma?',
-      a: 'Cada checklist tiene columnas de: responsable, hora límite, completada (✓) y firma. El manager imprime el checklist, lo entrega al equipo, cada persona marca y firma sus tareas. Al final del turno, el encargado verifica y firma al pie.',
+      a: 'Cada checklist tiene columnas de: responsable, cuándo (hora límite en las diarias, día en las semanales, cadencia en las mensuales y antelación en las de eventos), completada (✓) y firma. El manager imprime el checklist, lo entrega al equipo, cada persona marca y firma sus tareas. Al final del turno, el encargado verifica y firma al pie.',
     },
     {
       q: '¿Funcionan con Google Sheets?',
@@ -273,7 +284,7 @@ const data: KitTareasData = {
     },
     {
       q: '¿En qué se diferencia de Trail u otros sistemas?',
-      a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da las mismas listas de tareas en Excel por €14, pago único. Sin suscripción, sin internet, ilimitado en locales.',
+      a: 'Los SaaS de checklists cobran una cuota mensual por local y requieren tablets/móviles conectados. Este kit te da las mismas listas de tareas en Excel por €14, pago único. Sin suscripción, sin internet, ilimitado en locales.',
     },
     {
       q: '¿Puedo usarlo en varios restaurantes?',
@@ -287,9 +298,10 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 checklists operativos por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: cocina, sala, barra',
+      'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
       'Tareas por partida de cocina: calientes, fríos, mise en place',
       'Checklist diario, semanal y mensual del manager',
       'Tareas por perfil: chef, sous chef, sala, camarero, barman',
@@ -385,7 +397,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas',

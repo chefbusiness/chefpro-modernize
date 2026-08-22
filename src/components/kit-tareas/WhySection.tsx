@@ -4,7 +4,7 @@ import FadeIn from '../ebook/FadeIn';
 const reasons = [
   {
     icon: ClipboardCheck,
-    title: 'Pre-Rellenadas y Listas para Usar',
+    title: 'Con las Tareas Habituales Ya Escritas',
     desc: 'No empieces de cero. Cada checklist viene con las tareas reales de un restaurante casual. Solo ajusta, borra lo que no aplique y añade lo que te falte.',
   },
   {
@@ -19,8 +19,8 @@ const reasons = [
   },
   {
     icon: RefreshCw,
-    title: 'Trail Cobra €60/mes. Esto es €14',
-    desc: 'Las mismas listas de tareas que usan los restaurantes con SaaS premium como Trail, pero en Excel por un pago único. Sin suscripción.',
+    title: 'Los SaaS de Checklists Cobran Suscripción. Esto es €14',
+    desc: 'Las mismas listas de tareas que usan los restaurantes con SaaS premium de checklists, pero en Excel por un pago único. Sin suscripción.',
   },
 ];
 

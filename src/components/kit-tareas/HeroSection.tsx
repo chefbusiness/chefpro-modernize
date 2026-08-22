@@ -17,10 +17,11 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_TAREAS || '#comprar'
 
 const checkItems = [
   'Checklists de apertura y cierre por área (cocina, sala, barra)',
+  'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
   'Tareas por perfil: chef, sous chef, jefe sala, camarero, barman',
   'Tareas del manager: diario, semanal y mensual',
   'Plantillas de eventos y festivos (San Valentín, Navidad)',
-  'Plantilla en blanco personalizable + briefing de servicio',
+  '3 plantillas maestras personalizables + briefing de servicio',
 ];
 
 const heroImages = [
@@ -68,7 +69,7 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium animate-fade-in">
-          Lo que Trail cobra €60/mes, tú lo tienes por €14 — para siempre
+          Lo que los SaaS de checklists cobran por suscripción mensual, tú lo tienes por €14 — para siempre
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
@@ -79,7 +80,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-          9 plantillas Excel pre-rellenadas con todas las tareas de tu restaurante: apertura, cierre, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.
+          9 plantillas + 2 bonus (11 ficheros) en Excel con las tareas más habituales de tu restaurante ya escritas: apertura, cierre, negocio, caja, partidas de cocina, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.
         </p>
 
         <div className="flex flex-col items-center gap-3 mb-10">

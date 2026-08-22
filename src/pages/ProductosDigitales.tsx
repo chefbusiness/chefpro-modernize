@@ -526,9 +526,10 @@ const products = [
     price: '€14',
     originalPrice: '€49',
     discount: '-71%',
-    description: '9 checklists operativos pre-rellenados: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma.',
+    description: '9 plantillas + 2 bonus (11 ficheros) con 491 tareas ya escritas: apertura, cierre, negocio, caja con arqueo, partidas, manager, perfiles, eventos. Imprime, delega y firma.',
     features: [
       'Apertura y cierre por área',
+      'Arqueo y registro mensual de caja',
       'Tareas por perfil profesional',
       'Checklist diario/semanal del manager',
       'Eventos y festivos incluidos',

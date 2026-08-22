@@ -24,13 +24,13 @@ export default function KitTareas() {
     <>
       <Helmet>
         <title>Kit de Tareas Recurrentes — Checklists Operativos para Restaurante | AI Chef Pro</title>
-        <meta name="description" content="9 checklists operativos pre-rellenados para restaurante casual: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14." />
+        <meta name="description" content="Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con las tareas más habituales ya escritas — apertura, cierre, caja, partidas, manager, perfiles, eventos. Imprime, delega y firma. Solo €14." />
         <meta name="robots" content="index, follow" />
         <meta name="keywords" content="checklist restaurante, tareas apertura restaurante, checklist cierre cocina, lista tareas cocina, checklist manager restaurante, tareas recurrentes hostelería, mise en place checklist, plantilla tareas restaurante, AI Chef Pro" />
         <link rel="canonical" href="https://aichef.pro/kit-tareas" />
 
         <meta property="og:title" content="Kit de Tareas Recurrentes — Checklists Operativos para Restaurante" />
-        <meta property="og:description" content="9 checklists pre-rellenados: apertura, cierre, partidas, manager, perfiles, eventos. Imprime, delega y firma. €14." />
+        <meta property="og:description" content="9 plantillas + 2 bonus (11 ficheros): apertura, cierre, caja, partidas, manager, perfiles, eventos. Imprime, delega y firma. €14." />
         <meta property="og:url" content="https://aichef.pro/kit-tareas" />
         <meta property="og:type" content="product" />
         <meta property="og:site_name" content="AI Chef Pro" />
@@ -48,7 +48,7 @@ export default function KitTareas() {
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Kit de Tareas Recurrentes Pro — Checklists Operativos para Restaurante",
-          "description": "9 checklists operativos pre-rellenados para restaurante casual: apertura, cierre, partidas de cocina, manager, perfiles profesionales, eventos y festivos.",
+          "description": "9 plantillas + 2 bonus (11 ficheros): checklists operativos para restaurante casual con las tareas más habituales ya escritas — apertura, cierre, caja, partidas de cocina, manager, perfiles profesionales, eventos y festivos.",
           "image": "https://aichef.pro/og-kit-tareas.jpg",
           "brand": { "@type": "Brand", "name": "AI Chef Pro" },
           "offers": {
@@ -84,7 +84,7 @@ export default function KitTareas() {
               "@type": "Review",
               "author": { "@type": "Person", "name": "Javier López" },
               "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-              "reviewBody": "Pagábamos €60 al mes por Trail. Esto hace lo mismo en Excel por €14. No necesito más."
+              "reviewBody": "Pagábamos una cuota mensual por un SaaS de checklists. Esto hace lo mismo en Excel por €14, pago único. No necesito más."
             }
           ]
         })}</script>
@@ -93,9 +93,9 @@ export default function KitTareas() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Las tareas vienen ya rellenadas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada checklist viene pre-rellenado con las tareas reales de un restaurante casual. Solo personaliza: ajustar, borrar lo que no aplique y añadir lo específico de tu local." }},
-            { "@type": "Question", "name": "¿Cómo funciona el sistema de firma?", "acceptedAnswer": { "@type": "Answer", "text": "Cada checklist tiene columnas de responsable, hora límite, completada y firma. El manager imprime, entrega al equipo, cada persona marca y firma." }},
-            { "@type": "Question", "name": "¿En qué se diferencia de Trail?", "acceptedAnswer": { "@type": "Answer", "text": "Trail cobra €60-75/mes por local. Este kit da las mismas listas en Excel por €14, pago único. Sin suscripción, sin internet." }},
+            { "@type": "Question", "name": "¿Las tareas vienen ya rellenadas?", "acceptedAnswer": { "@type": "Answer", "text": "Cada checklist incluye ya escritas las tareas más habituales de un restaurante casual. Personaliza: ajusta, borra lo que no aplique y añade lo específico de tu local." }},
+            { "@type": "Question", "name": "¿Cómo funciona el sistema de firma?", "acceptedAnswer": { "@type": "Answer", "text": "Cada checklist tiene columnas de responsable, cuándo (hora límite, día, cadencia o antelación, según la lista), completada y firma. El manager imprime, entrega al equipo, cada persona marca y firma." }},
+            { "@type": "Question", "name": "¿En qué se diferencia de un SaaS de checklists tipo Trail?", "acceptedAnswer": { "@type": "Answer", "text": "Los SaaS de checklists cobran suscripción mensual por local. Este kit da las mismas listas en Excel por €14, pago único. Sin suscripción, sin internet." }},
             { "@type": "Question", "name": "¿Puedo usarlo en varios restaurantes?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Licencia personal para todos los establecimientos que gestiones." }},
             { "@type": "Question", "name": "¿Incluye tareas para eventos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Checklists para eventos privados, San Valentín, Navidad, apertura y cierre de terraza." }},
             { "@type": "Question", "name": "¿Hay garantía de devolución?", "acceptedAnswer": { "@type": "Answer", "text": "30 días de garantía completa. Si no estás satisfecho, 100% reembolso sin preguntas." }}
