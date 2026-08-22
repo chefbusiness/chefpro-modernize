@@ -121,3 +121,68 @@ Hojas protegidas con entradas desbloqueadas. 0 menciones a «Trail» con precio 
 ## 7. Descartado con motivo
 COM-02/COM-03 (reseñas, ancla): aparcado por John. Columna «Valor» para temperaturas: se resuelve en
 el texto (§2.9). Regenerar 08/09 con otro generador desde cero: no, se unifican por post-proceso.
+
+---
+
+## 8. Ronda 2 de refutación (2026-08-23) — reglas que CAMBIAN respecto a lo de arriba
+
+61 hallazgos (DOM 30 · TEC 15 · COM 16) sobre la v2.0 construida en copia. 60 corregidos, 1
+descartado. Lo que sigue **sustituye** a lo escrito antes en esta misma SPEC; el motor ya lo
+implementa y la tanda de hermanos (§5) hereda estas reglas, no las originales.
+
+- **§2.1 — el contador ya NO descuenta «—».** Sólo sale del denominador `N/A` («no aplica en
+  este local»). «—» = no hecha: cuenta como pendiente y baja el porcentaje. Con la regla vieja,
+  el turno que se saltaba tareas las marcaba «—» y la hoja que el kit manda archivar como prueba
+  imprimía 100 % (DOM-R2-02). Numerador con `COUNTIFS` que exige texto en «Tarea»: un ✓ en una
+  fila libre vacía daba «32 de 30» (TEC-R2-09).
+- **§2.3 — el 07 no lleva placeholders en la columna «Tarea».** El aviso «escribe aquí abajo tus
+  tareas de …» va en la BANDA de sección. Como valor de celda lo contaba el `COUNTIF` y la
+  plantilla en blanco se entregaba marcando «0 de 3» (DOM-R2-03/TEC-R2-10/COM-R2-15). Ojo si se
+  prueba a restarlos por fórmula: `COUNTIF(...,"(Escribe aquí*")` **rompe pycel** (el paréntesis
+  entra crudo en un `re.compile`) y el fichero se publicaría sin cache. La columna «Tarea» de las
+  tres hojas va en verde (DOM-R2-15) y la fila 2 pierde el «Turno:» en «Por Área» y «Por Perfil»
+  (COM-R2-14).
+- **§2.5 — la remisión va en la banda de sección, no en una fila numerada** (COM-R2-07), y
+  alcanza también al bloque **SISTEMAS** de la apertura, que duplicaba 08 y 09 con tres horas
+  distintas para el mismo TPV (DOM-R2-07). `colapsar_duplicados` NO corre sobre el fichero de
+  negocio ni sobre el de caja: son el destino de la remisión.
+- **§2.4 — cabecera «Cuándo»** cuando la columna mezcla horas con hitos («Cierre», «Servicio»,
+  «Si aplica»): impreso, «Hora Límite: Si aplica» no dice nada (DOM-R2-24). Y se decide DESPUÉS
+  de las precargas, o la 2.ª pasada lee lo que escribió la 1.ª y la idempotencia se cae.
+- **§2.7 — se protegen también las hojas de los dos BONUS** (TEC-R2-14). Las de «Instrucciones»
+  no, a propósito. El changelog dice «los 9 checklists», no «las 11 plantillas» (COM-R2-05).
+- **§1.2 — el Registro Mensual descuenta el fondo.** La columna pasa a llamarse «Efectivo
+  Contado» (el recuento del cajón TAL CUAL) y `Total Facturado = SUM(efectivo:otros) − fondo`.
+  Antes el mismo libro calculaba el total de dos maneras incompatibles y el registro marcaba
+  +fondo en ámbar todos los días (DOM-R2-01). El total de la columna «Descuadre» es
+  `SUMIF(">0") − SUMIF("<0")`: un +50 y un −50 son 100 € de descuadre, no 0 (DOM-R2-26).
+  **`fila_registro_mensual` detecta por PREFIJO**, o el renombrado dejaría la hoja fuera de
+  alcance en la 2.ª pasada.
+- **§1.1 — el Resumen de Cierre expone «Ventas en efectivo (contado − fondo)»**, que es la cifra
+  que el registro pide (TEC-R2-11), y la tarea del fondo NO hardcodea la coordenada
+  (DOM-R2-18/TEC-R2-04). Anchos de caja A=10 y C=20; alturas fijas en todo el bloque del dinero
+  (TEC-R2-02/03/07). **§1.4 — las horas del 09 van DESPUÉS de la apertura del local** y
+  escalonadas: 06:45 era antes de desactivar la alarma (DOM-R2-08).
+- **§4 — el recuento real del kit son 491 tareas** (111 en el 01), leídas de los denominadores
+  del propio Excel. `main.py` lo emite en el informe (`gates.recuento_tareas`) para que la landing
+  no vuelva a divergir. El calendario trae **22** fechas, no 17.
+- **§6 — la reseña con el precio de Trail se reescribió** en `kit-tareas.ts` y en su gemelo
+  `KitTareas.tsx`: era un precio de competidor identificado, en boca de un cliente inventado y
+  dentro del JSON-LD de `Product`. Lo aparcado por John era el sistema de reseñas y el
+  `aggregateRating`, que no se han tocado.
+- **Transversal:** temperaturas normalizadas a «−18 °C» (U+2212 + espacio) en todo el corpus
+  (DOM-R2-22) — cualquier ancla de texto con grados en el módulo de contenido tiene que pasar por
+  `motor.texto_grados` o no encontrará nada. Son DOS patrones, no uno: `RX_MENOS` sólo ve el signo
+  pegado a la unidad, así que en un rango que comparte «°C» al final («pasar de -18 a −12 °C»,
+  «(-2 a 0 °C)») el primer signo se quedaba en guion ASCII junto a un hermano ya tipográfico —lo
+  cubre `RX_MENOS_RANGO`, que mira a través del conector («a», «y», «hasta», «hacia»)—. Ninguno
+  toca el guion de «0-4 °C», que va precedido de dígito; las referencias al Pack APPCC ya no mandan anotar «en
+  Notas», columna que sólo existe en 08 y 09 (DOM-R2-09); pie unificado por patrón, no por
+  literal (DOM-R2-21); filas libres con la columna «Nº» también en verde (DOM-R2-23 — numerarlas
+  haría que `geometria` las contase como tareas y cada pasada añadiría 5 más).
+
+**Descartado:** DOM-R2-04 («las hojas van con `insertRows=False` y Excel no deja insertar filas»).
+Es una lectura invertida del booleano de openpyxl: `ws.protection.insertRows = False` serializa
+`insertRows="0"` y en OOXML **0 = NO bloqueado**. Verificado en el XML de la copia del dry-run
+(`<sheetProtection … insertRows="0" deleteRows="0" …>`), y coincide con lo que midió la lente
+TEC-R2-14. Las Instrucciones dicen la verdad.
