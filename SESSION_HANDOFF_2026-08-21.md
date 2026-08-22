@@ -1,5 +1,10 @@
 # Handoff — 2026-08-21 (sesión VPS 19-20 ago; sustituye a SESSION_HANDOFF_2026-08-19.md como handoff de pista principal)
 
+> 🛑 **SUPERADO por `SESSION_HANDOFF_2026-08-22-blog-pt.md`** (22-ago), que es
+> ya el handoff vivo de la pista de blog e idiomas. Este documento se conserva
+> por el detalle de la sesión del 19-20 (plataformas PT/NL, «nada gratis»,
+> mega-menú) y por las 3 decisiones de header pendientes de John.
+
 > ⚡⚡ **ACTUALIZADO el 22-ago: PT tanda 2 TAMBIÉN PUBLICADA — PT va 4/14**
 > (commit `887b94c`, deploy ready, batería live en verde): `contaminacao-
 > cruzada` y `higiene-e-seguranca-alimentar` cierran 4/5 del eje normativo,
