@@ -68,3 +68,22 @@ Verificación celda a celda de cada id de la R1 (resuelto/parcial/no) + regresio
 - Fase A: 1 sesión (scripts + 43 carpetas en serie + deploy).
 - Fases B-D: ~1 sesión por representante (5 kits Excel + 5 representantes de familia = ~10
   sesiones cortas), hermanos en tandas de 3-4 con sonnet. Opus solo en B y en los fixes con criterio.
+
+## 5. Estado — 2026-08-22: FASE A EJECUTADA Y LIVE
+
+- Herramientas: `FASE-A-SPEC-postprocess-transversal.md` (spec), `postprocess-transversal.py`
+  (idempotente; `--dry-run` sobre copias; 8 patrones P1-P5 por cabecera), `censo-entregables.py`
+  (gate `--fail`). Resumen por producto: `auditorias/fase-a-resumen-2026-08-22.json`.
+- Commits `ee415aa`…`fa784ff` (7), deploy `ready` 11:26, **gate LIVE 44 productos · 645 entregables ·
+  0 fallos** (2 × 502 transitorios reintentados), md5 producción = repo, censo `--fail` 0 defectos
+  en los 458 xlsx, 0 contadores duplicados en 1.204 hojas. 38 huérfanos de la raíz borrados.
+- Reparaciones de fórmulas rotas (vendidas): escandallos `10-calculadora-pvp` (9 × `/=AVERAGE`),
+  dark-kitchen `calculadora-viabilidad` (12 celdas circulares + food cost sobre comisiones),
+  `cash-flow-break-even` B12 circular en 5 guías, onboarding «Progreso (%)» con filas literales,
+  6 etiquetas «= …» que abrían con `#¿NOMBRE?`.
+- Método: 2 refutadores (15 hallazgos, 5 altas) + 3 residuos del dry-run `all` + 1 defecto cazado en
+  la ejecución real (segundo contador en 4 kits: el existente se reconocía por etiqueta, no por
+  fórmula). Lecciones en memoria.
+- Para la Fase B: B13 «Break-Even (meses)» vacía en 5 guías; 43 hojas P2/P3/P4 sin contador (motivo
+  anotado); marca ChefBusiness en 7 productos de origen CB (decisión de John); el workflow de R1
+  usa `agent()` sin `schema` → parsear el JSON o añadir schema antes de usarlo.
