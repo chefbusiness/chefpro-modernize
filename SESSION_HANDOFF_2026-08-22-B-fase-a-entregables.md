@@ -4,7 +4,7 @@
 > locales ni Playwright; verificación por `curl` y API de Netlify). Arranca desde
 > `SESSION_HANDOFF_2026-08-22-productos-digitales.md` §4.0 y el plan
 > `scripts/productos-digitales/PLAN-AUDITORIA-ENTREGABLES-2026-08-23.md`.
-> **Repo al cerrar:** `main` = `ea43a62` (12 commits, pusheados). La sesión del VPS (blog PT/NL)
+> **Repo al cerrar:** `main` = `8a9b8d6`+ (14 commits, pusheados; deploy de código verificado en `ea43a62`). La sesión del VPS (blog PT/NL)
 > sigue viva: rebasar antes de pushear; no tocar `astro-site/src/content/blog/**` ni `src/i18n/**`.
 
 ## 1. Qué está LIVE
