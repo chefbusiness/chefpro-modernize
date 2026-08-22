@@ -211,7 +211,13 @@ def censar_xlsx(path, prod, fname):
     noprint = 0
 
     for ws, wsv in zip(wb.worksheets, wbv.worksheets):
-        if ws.page_setup.paperSize != 9:
+        # A4 COMPLETO: paperSize 9 + ajuste al ancho + pie (un paperSize=9 a secas
+        # es el mínimo del generador: 147 hojas así se colaron el 2026-08-22)
+        fit = (ws.sheet_properties.pageSetUpPr.fitToPage
+               if ws.sheet_properties.pageSetUpPr else None)
+        pie = ws.oddFooter.center.text if ws.oddFooter and ws.oddFooter.center else None
+        es_texto = ws.title in ('Instrucciones', 'Índice', 'Indice')
+        if ws.page_setup.paperSize != 9 or (not es_texto and (not fit or not pie)):
             noprint += 1
         for row in ws.iter_rows():
             for c in row:

@@ -82,7 +82,13 @@ decisión es GLOBAL, hay que ver los 42 a la vez. Comprobación:
 Después, la regex de bio vieja del censo NO debe casar ninguna celda; si casa → se informa como
 `bio_sin_patron` y NO se inventa sustitución (falla la verificación).
 
-### 2.3 Impresión A4 (solo hojas con `paperSize` None; si ya vale 9 no se toca nada de impresión)
+### 2.3 Impresión A4 (hojas sin setup COMPLETO: se respeta solo el que trae A4 + ajuste al ancho + pie)
+
+> Corrección del 2026-08-22 (hallazgo H3 del refutador del changelog): la regla original «si ya
+> vale 9 no se toca» dejó 147 hojas de 11 kits con el A4 «mínimo» del generador (vertical, sin
+> ajuste al ancho, sin pie ni cabecera repetida). Ahora se considera configurada solo la hoja con
+> las tres cosas; en las demás se aplica el setup respetando orientación, títulos de impresión y
+> freeze que ya existan. El censo mide `noprint` con el mismo criterio.
 `paperSize=9`, `fitToWidth=1`, `fitToHeight=0`, `fitToPage=True`, márgenes 0.59/0.3, pie
 `AI Chef Pro · aichef.pro · Página &P de &N` (tamaño 8). Hojas de texto (`Instrucciones`,
 `Índice`, `Indice`, o `max_column ≤ 3` sin fila de cabecera) → `portrait`, sin títulos de

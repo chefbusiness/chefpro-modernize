@@ -462,7 +462,7 @@ def print_setup(ws, header_row, landscape, cambios):
                'orientacion': ws.page_setup.orientation}
     if orientacion_previa:
         detalle['orientacion_conservada'] = orientacion_previa
-    if header_row:
+    if header_row and not ws.print_title_rows:
         ws.print_title_rows = '{0}:{0}'.format(header_row)
         detalle['print_title_rows'] = header_row
         # El freeze existente manda: si la hoja ya congelaba algo, quien la hizo
@@ -473,9 +473,26 @@ def print_setup(ws, header_row, landscape, cambios):
     cambios.append(detalle)
 
 
+def _impresion_completa(ws):
+    """True si la hoja ya trae el setup COMPLETO (A4 + ajuste al ancho + pie).
+
+    Hallazgo H3 del refutador del changelog (2026-08-22): 147 hojas de 11 kits
+    venían del generador con `paperSize=9` a secas —sin ajuste al ancho, sin
+    pie ni cabecera repetida y en vertical con 7 columnas— y la regla «si ya
+    vale 9 no se toca» las dejaba así. Un A4 «mínimo» no es una configuración
+    hecha a mano: sólo se respeta la que tiene las tres cosas.
+    """
+    ps = ws.page_setup
+    if ws.title in HOJAS_TEXTO:
+        return ps.paperSize == 9   # una hoja de texto en A4 vertical imprime bien sin más
+    fit = ws.sheet_properties.pageSetUpPr.fitToPage if ws.sheet_properties.pageSetUpPr else None
+    pie = ws.oddFooter.center.text if ws.oddFooter and ws.oddFooter.center else None
+    return ps.paperSize == 9 and bool(fit) and bool(pie)
+
+
 def configurar_impresion(ws, hr, cambios):
     """Decide orientación y títulos según el tipo de hoja (§2.3)."""
-    if ws.page_setup.paperSize is not None:
+    if _impresion_completa(ws):
         return
     es_texto = ws.title in HOJAS_TEXTO or (ws.max_column <= 3 and hr is None)
     if es_texto:
