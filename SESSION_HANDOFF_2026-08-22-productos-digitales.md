@@ -39,7 +39,7 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
 - **Opus dio 529 (overloaded) 6 veces seguidas** a las 01:00 (hora Madrid): la ronda 2 se hizo
   con sonnet + verificación determinista mía. Tener el plan B a mano.
 
-## 3. Pendiente de JOHN (un paso de 5 minutos + dos decisiones)
+## 3. Pendiente de JOHN (un paso de 5 minutos + dos decisiones) — **John (02:40 del 22-ago): «déjalo para mañana o pasado»** (23-24 ago): el webhook (punto 1) y la decisión soft→strict (punto 3)
 
 1. **Armar el webhook** (mata la clase entera de «pagué y no tengo enlace»):
    Stripe → Developers → Webhooks → *Add endpoint* `https://aichef.pro/.netlify/functions/stripe-webhook`,
@@ -66,6 +66,25 @@ sesión (muere al reiniciar); lo que importa vive en los scripts del repo.
 6. **Disputa Stripe 650 €: responder ANTES del 25-ago** (memoria `project_disputa-stripe-650…`).
 
 ## 4. Siguiente trabajo de productos digitales (orden propuesto)
+
+0. **AUDITORÍA DE CONTENIDO DE LOS 630 ENTREGABLES RESTANTES** (pregunta de John a las 02:30:
+   «¿están auditados, sin defectos?» — respuesta honesta: NO, solo Pastelería). Censo determinista
+   del 2026-08-22 sobre los 645 (`scripts/productos-digitales/censo-entregables-2026-08-22.json`):
+   458 xlsx + 61 docx + 9 pdf; **179 xlsx con fórmulas sin valor cacheado** (7.684 fórmulas: en
+   móvil/visores se ven en blanco — bug B de CB), **79 con la casilla ☐ en la columna A que no
+   cuenta** (bug L1-02, el mismo que tenía pastelería: 7 kits de tareas + asador/sushi/panadería-obrador),
+   **25 con la bio caducada dentro del Excel**, **401 sin impresión A4 configurada**, 443 con
+   `creator = openpyxl`; 0 caracteres no latinos. Los 39 xlsx sueltos en la raíz de `/dl/` (fuera de
+   carpeta de producto) son los peores (25 sin cache) — identificar a qué productos sirven.
+   Plan: (a) post-proceso determinista transversal (generalizar
+   `kit-pasteleria-v1_1-postprocess.py`: metadata, A4, cache con `inject_cache.py` ya idempotente,
+   bio anclada, casilla unificada «✓ Completada» donde aplique) sobre los 458 xlsx, por línea de
+   producto y con gate antes/después; (b) auditoría ADVERSARIAL de contenido por línea (kits de
+   tareas 12 → lente chef/obrador por sector; guías 8 + planes 9 → lente consultor; escandallos /
+   APPCC / inventario / RRHH / financiero → lente técnica Excel + experto), con Workflow, 3 lentes,
+   fixes y ronda 2 como en pastelería; (c) docx/pdf: revisión de texto (bio, tildes, promesas).
+   Es trabajo de varias sesiones: empezar por los que más se venden (kits de tareas, escandallos,
+   APPCC) y por los 7 kits con el bug de la casilla.
 
 1. **SEO de las 44 landings para España + Hispanoamérica** (encargo de John de hoy, memoria
    `project_seo-landings-productos-hispanoamerica.md`): baseline GSC 90 d = las landings casi no
