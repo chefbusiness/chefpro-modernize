@@ -385,6 +385,8 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'kit-tareas',
     label: '¿Ya compraste el Kit de Tareas? Vuelve a entrar al dashboard',

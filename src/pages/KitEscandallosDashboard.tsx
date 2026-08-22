@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -76,6 +77,9 @@ export default function KitEscandallosDashboard() {
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">
             Kit de Escandallos <span className="text-[#FFD700]">Pro</span>
           </h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="kit-escandallos" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
             Tus 11 plantillas Excel profesionales listas para descargar.
             Acceso de por vida — incluye futuras actualizaciones.
@@ -151,6 +155,7 @@ export default function KitEscandallosDashboard() {
           </div>
         </section>
 
+        <ProductChangelog productId="kit-escandallos" />
         {/* ── Cross-sell banner ─────────────────────────────── */}
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center">

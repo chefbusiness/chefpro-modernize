@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -55,6 +56,9 @@ export default function KitPlanFinancieroDashboard() {
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Plan <span className="text-[#FFD700]">Financiero</span> para Restaurantes</h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="kit-plan-financiero" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 10 plantillas financieras listas para descargar. Planifica, controla y presenta.</p>
         </section>
         <section className="pb-16 px-4">
@@ -87,6 +91,7 @@ export default function KitPlanFinancieroDashboard() {
             </div>
           </div>
         </section>
+        <ProductChangelog productId="kit-plan-financiero" />
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestion hostelera</p>

@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -75,6 +76,9 @@ export default function KitTareasCafeteriaDashboard() {
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">
             Kit de Tareas <span className="text-[#FFD700]">Cafetería / Brunch</span>
           </h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="kit-tareas-cafeteria" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
             Tus 9 checklists operativos listos para descargar. Imprime, delega y controla.
           </p>
@@ -149,6 +153,7 @@ export default function KitTareasCafeteriaDashboard() {
           </div>
         </section>
 
+        <ProductChangelog productId="kit-tareas-cafeteria" />
         {/* ── Cross-sell banners ──────────────────────────────── */}
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">

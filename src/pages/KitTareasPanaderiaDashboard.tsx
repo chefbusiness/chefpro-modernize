@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -57,6 +58,9 @@ export default function KitTareasPanaderiaDashboard() {
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Kit de Tareas <span className="text-[#FFD700]">Panadería</span></h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="kit-tareas-panaderia" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 11 checklists profesionales listos para descargar. Imprime, organiza y profesionaliza tu panadería u obrador con turno madrugada, masas madre, hornos y campañas estacionales bajo control.</p>
         </section>
         <section className="pb-16 px-4">
@@ -89,6 +93,7 @@ export default function KitTareasPanaderiaDashboard() {
             </div>
           </div>
         </section>
+        <ProductChangelog productId="kit-tareas-panaderia" />
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestión hostelera</p>

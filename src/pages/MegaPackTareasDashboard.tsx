@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Download, Loader2, FileSpreadsheet, ArrowLeft, Package, ChevronDown } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -231,6 +232,9 @@ export default function MegaPackTareasDashboard() {
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Mega Pack <span className="text-emerald-400">Tareas Recurrentes</span></h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="mega-pack-tareas" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 13 kits con {KITS.reduce((s, k) => s + k.templates.length, 0)} plantillas listos para descargar.</p>
         </section>
         <section className="pb-16 px-4">
@@ -277,6 +281,7 @@ export default function MegaPackTareasDashboard() {
             <p className="text-gray-400 text-sm">Descarga los archivos .xlsx y ábrelos con tu programa favorito.</p>
           </div>
         </section>
+        <ProductChangelog productId="mega-pack-tareas" />
         <footer className="py-8 px-4 border-t border-white/10">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-500 text-sm mb-2">© 2026 AI Chef Pro · Mega Pack Tareas Recurrentes · Todos los derechos reservados</p>

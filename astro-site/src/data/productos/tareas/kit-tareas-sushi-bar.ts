@@ -365,6 +365,8 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
+  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+
   alreadyBought: {
     product: 'kit-tareas-sushi-bar',
     label: '¿Ya compraste el Kit de Tareas Sushi Bar? Vuelve a entrar al dashboard',

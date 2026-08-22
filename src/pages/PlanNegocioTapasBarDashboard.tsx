@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import SaasDiscoveryBanner from '@/components/shared/SaasDiscoveryBanner';
+import ProductChangelog, { ProductVersionBadge } from '@/components/shared/ProductChangelog';
 import LogoBadge from '@/components/shared/LogoBadge';
 import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 
@@ -64,6 +65,9 @@ export default function PlanNegocioTapasBarDashboard() {
         <section className="py-12 md:py-16 px-4 text-center">
           <LogoBadge />
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-3 mt-4">Plan de Negocio <span className="text-[#FFD700]">Tapas Bar / Gastrobar</span></h1>
+          <div className="mb-3">
+            <ProductVersionBadge productId="plan-negocio-tapas-bar" />
+          </div>
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tu plan de negocio profesional listo para descargar: documento DOCX 10 secciones, plan financiero Excel con P&L 3 años y checklist de apertura con 63 trámites.</p>
         </section>
         <section className="pb-16 px-4">
@@ -96,6 +100,7 @@ export default function PlanNegocioTapasBarDashboard() {
             </div>
           </div>
         </section>
+        <ProductChangelog productId="plan-negocio-tapas-bar" />
         <section className="py-10 px-4 border-t border-white/10">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <p className="text-gray-400 text-sm mb-3">Completa tu toolkit de gestión hostelera</p>
