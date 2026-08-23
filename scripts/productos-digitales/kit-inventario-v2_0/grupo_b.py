@@ -103,7 +103,7 @@ MARCA = 'grupo_b'
 # 39 filas. El cliente no podría escribir ni un pedido en su propio historial.
 # `SIN_VERDE_AUTO` es el gancho que el motor documenta para exactamente esto
 # («los grupos marcan ahí las celdas concretas con `marcar_verde()`»).
-motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos'})
+motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos', 'Dashboard Mermas'})
 
 # ==========================================================================
 # «IVA %» es un TIPO (10), no un porcentaje (0,10)

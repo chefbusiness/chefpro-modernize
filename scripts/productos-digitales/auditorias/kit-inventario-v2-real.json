@@ -1,0 +1,1550 @@
+{
+ "producto": "kit-inventario",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md §1 (motor)",
+ "rol": "motor",
+ "fecha": "2026-08-24T01:12:55",
+ "modo": "produccion",
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-inventario",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-inventario",
+ "grupos_pedidos": [
+  "a",
+  "b",
+  "c"
+ ],
+ "grupos_ausentes": [],
+ "ficheros": [
+  {
+   "fichero": "01-inventario-stock-diario.xlsx",
+   "cambios": [
+    "01:Cocina!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01:Barra!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01:Almacén!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01-inventario-stock-diario.xlsx:Cocina!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C21: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C23: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01:Cocina!B5:J24: 20 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +20 filas libres hasta la 44",
+    "01:Barra!B5:J19: 15 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +15 filas libres hasta la 34",
+    "01:Almacén!B5:J19: 15 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +15 filas libres hasta la 34",
+    "01:Resumen Dashboard!A4:D20: 3 zonas + TOTAL (COUNTIF de BAJO/PEDIR y SUM del valor) y las 10 categorías con SUMIF — la hoja tenía 0 fórmulas (DOM-09/TEC-03/COM-14)",
+    "01:Instrucciones!A1:A24: reescritas — el «Resumen» que no existía es «Resumen Dashboard» (§1.6) y la banda ámbar ya propone reposición",
+    "01-inventario-stock-diario.xlsx: 213 celdas reformateadas (§1.7)",
+    "01-inventario-stock-diario.xlsx: 900 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "01-inventario-stock-diario.xlsx:Cocina!C5:C44: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Barra!C5:C34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Almacén!C5:C34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Cocina!D5:D44: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Barra!D5:D34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Almacén!D5:D34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Cocina!H5:H44: 3 regla(s) de formato condicional",
+    "01-inventario-stock-diario.xlsx:Barra!H5:H34: 3 regla(s) de formato condicional",
+    "01-inventario-stock-diario.xlsx:Almacén!H5:H34: 3 regla(s) de formato condicional",
+    "Cocina: protegida sin contraseña (360 celdas verdes editables)",
+    "Barra: protegida sin contraseña (270 celdas verdes editables)",
+    "Almacén: protegida sin contraseña (270 celdas verdes editables)",
+    "Resumen Dashboard: protegida sin contraseña (0 celdas verdes editables)",
+    "Instrucciones!A27:A29: nota de desprotección + bio anclada + versión 2.0",
+    "01-inventario-stock-diario.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 333,
+   "gates": {
+    "fichero": "01-inventario-stock-diario.xlsx",
+    "dv_aplicadas": 6,
+    "cf_aplicadas": 9,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 333,
+     "verdes": 900,
+     "verdes_con_dato": 300,
+     "dv": 6,
+     "cf": 9,
+     "protegidas": 4,
+     "celdas": 835
+    }
+   }
+  },
+  {
+   "fichero": "02-fichas-proveedores.xlsx",
+   "cambios": [
+    "02:Directorio Proveedores!A3:S3: +8 columnas (CIF/NIF, Nº RGSEAA, contacto de incidencias, día de pedido, plazo, homologación y sus dos fechas) — DOM-17",
+    "02:Comparativa Precios!D3:E3: +2 columnas (formato de venta y contenido) — sin ellas MIN compara la garrafa de 5 L con el litro (DOM-16)",
+    "02:Directorio Proveedores!A4:S9: 6 fichas de ejemplo (carnes, pescados, frutas y verduras, secos, bebidas, limpieza) + DV de categoría y de homologación — la hoja estaba en blanco salvo la numeración (COM-27/DOM-17)",
+    "02:Comparativa Precios!K4:M13 + U4:U13: mejor precio con guarda de COUNT y de CERO (RT-02), aviso «⚠ falta contenido» (RT-12), mejor PROVEEDOR con INDEX/MATCH, % de diferencia sobre el bloque oculto P:T y ESTADO de la cotización con su semáforo (RD-18); productos y unidades idénticos a los del 01 y DV de unidad (RC-20); los precios de ejemplo derivan del precio/ud de referencia del 01 (RD-11) (DOM-15/DOM-16/TEC-07/COM-18)",
+    "02:Evaluación Proveedores!H3:J13: media con guarda de 3 criterios, nota A/B/C/D y CRUCE nota → homologación (RD-19); 6 evaluaciones de ejemplo que cubren las cuatro notas y el proveedor con nota D pasa a «Pendiente» en el directorio (TEC-16/COM-29)",
+    "02:Condiciones Comerciales!B4:I13: proveedor, plazo de pago, pedido mínimo y días de pedido/reparto pasan a ser ENLACES al Directorio (RD-20) — estaban tecleados a mano en tres sitios del kit sin una sola fórmula que los ligara; «Rappel» pasa a «Rappel (%)» y «Pedido Mínimo» a euros (COM-27/§1.7)",
+    "02:Instrucciones!A7:A10: los nombres de las cuatro pestañas ya casan con wb.sheetnames y los criterios de evaluación son los cinco reales (§1.6, COM-29)",
+    "02-fichas-proveedores.xlsx: 30 celdas reformateadas (§1.7)",
+    "02-fichas-proveedores.xlsx: 570 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "02-fichas-proveedores.xlsx:Comparativa Precios!U4:U13: 3 regla(s) de formato condicional",
+    "Directorio Proveedores: protegida sin contraseña (360 celdas verdes editables)",
+    "Comparativa Precios: protegida sin contraseña (110 celdas verdes editables)",
+    "Evaluación Proveedores: protegida sin contraseña (60 celdas verdes editables)",
+    "Condiciones Comerciales: protegida sin contraseña (40 celdas verdes editables)",
+    "Instrucciones!A21:A23: nota de desprotección + bio anclada + versión 2.0",
+    "02-fichas-proveedores.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 175,
+   "gates": {
+    "fichero": "02-fichas-proveedores.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 3,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 175,
+     "verdes": 570,
+     "verdes_con_dato": 228,
+     "dv": 3,
+     "cf": 3,
+     "protegidas": 4,
+     "celdas": 534
+    }
+   }
+  },
+  {
+   "fichero": "03-pedidos-compra.xlsx",
+   "cambios": [
+    "03:Pedido Actual!C: columna «Categoría» insertada; el IVA de cada línea sale de ella (DOM-07)",
+    "03:Listas: hoja creada (§1.3)",
+    "03:Pedido Actual: 10 líneas nuevas (20 → 30)",
+    "03:Pedido Actual: IVA por línea desde la categoría, doble guarda en el subtotal, totales en H40:H42 y desglose por tipo en A45:D48 (DOM-07/DOM-18/TEC-13/TEC-20/COM-16)",
+    "03:Proveedores: hoja nueva VISIBLE, 20 filas y 6 de ejemplo (§1.6, §7-bis.2, DOM-19/COM-17)",
+    "03:Historial Pedidos: 40 filas, fila 4 enlazada al pedido en curso (E4/F4/G4 = H40/H41/H42), DV de estado, 3 filas de ejemplo y total del periodo (DOM-18/§1.4)",
+    "03:Instrucciones: reescritas; retirada la promesa de la pestaña Imprimible (§1.6) y corregido el nombre de Historial Pedidos; ancla de versión en A15",
+    "03-pedidos-compra.xlsx: 211 celdas reformateadas (§1.7)",
+    "03-pedidos-compra.xlsx: 310 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "03-pedidos-compra.xlsx:Pedido Actual!C9:C38: DV inline (10 valores)",
+    "03-pedidos-compra.xlsx:Pedido Actual!D9:D38: DV inline (10 valores)",
+    "Pedido Actual: protegida sin contraseña (158 celdas verdes editables)",
+    "Proveedores: protegida sin contraseña (160 celdas verdes editables)",
+    "Historial Pedidos: protegida sin contraseña (353 celdas verdes editables)",
+    "Listas: protegida sin contraseña (28 celdas verdes editables)",
+    "Instrucciones!A15:A17: nota de desprotección + bio anclada + versión 2.0",
+    "03-pedidos-compra.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 136,
+   "gates": {
+    "fichero": "03-pedidos-compra.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 116,
+     "verdes": 699,
+     "verdes_con_dato": 123,
+     "dv": 6,
+     "cf": 2,
+     "protegidas": 4,
+     "celdas": 358
+    }
+   }
+  },
+  {
+   "fichero": "04-recepcion-mercancias.xlsx",
+   "cambios": [
+    "04:Verificación Temperaturas: 6 familias de texto → 15 familias con umbral MÍNIMO y MÁXIMO numéricos y base normativa (DOM-05/COM-08, RD-06/RT-14/RT-15/RD-23); la carne picada baja de 7 °C a 2 °C, los congelados se reciben hasta -15 °C y el puente categoría → familia va en G3:H13 (RD-23)",
+    "04:Control Recepción: 0 fórmulas → 6 columnas calculadas (F familia sugerida, K diferencia, M valor de la diferencia, P/Q umbrales mín. y máx. por familia, R conforme) + categoría del kit, precio/ud, lote y albarán + resumen con el valor reclamable; el rojo lo pone el CF del motor sobre O4:O43 y R4:R43 (DOM-03/04/20/21, TEC-04/17, COM-04; RD-06/RD-16/RD-23, RT-01/RT-14/RT-15)",
+    "04:Registro Incidencias: nº de albarán, importe reclamado y abono recibido, DV de tipo y de estado, 3 ejemplos y totales con el pendiente de abono (DOM-20/§1.4)",
+    "04:Instrucciones: la línea del rojo automático pasa a ser CIERTA (COM-04); ancla de versión en A13",
+    "04-recepcion-mercancias.xlsx: 159 celdas reformateadas (§1.7)",
+    "04-recepcion-mercancias.xlsx: 860 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "04-recepcion-mercancias.xlsx:Control Recepción!R4:R43: 3 regla(s) de formato condicional",
+    "04-recepcion-mercancias.xlsx:Control Recepción!O4:O43: 1 regla(s) de formato condicional",
+    "Control Recepción: protegida sin contraseña (640 celdas verdes editables)",
+    "Registro Incidencias: protegida sin contraseña (220 celdas verdes editables)",
+    "Verificación Temperaturas: protegida sin contraseña (0 celdas verdes editables)",
+    "Instrucciones!A13:A15: nota de desprotección + bio anclada + versión 2.0",
+    "04-recepcion-mercancias.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 247,
+   "gates": {
+    "fichero": "04-recepcion-mercancias.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 4,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 247,
+     "verdes": 860,
+     "verdes_con_dato": 92,
+     "dv": 5,
+     "cf": 4,
+     "protegidas": 3,
+     "celdas": 500
+    }
+   }
+  },
+  {
+   "fichero": "05-control-mermas.xlsx",
+   "cambios": [
+    "05-control-mermas.xlsx:Análisis por Categoría!A8: «Secos» → «Secos/Granos» (§1.1)",
+    "05-control-mermas.xlsx:Análisis por Categoría!A10: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "05:Registro Diario Mermas: 50 filas nuevas (50 → 100); el TOTAL MES baja a la fila 105 y su SUM cubre el rango completo",
+    "05:Registro Diario Mermas: doble guarda en el coste, DV de motivo y 3 líneas de ejemplo (TEC-06/TEC-09)",
+    "05:Análisis por Categoría: 7 categorías sueltas → las 10 canónicas con COUNTIF/SUMIF, % del total, tendencia vs mes anterior y bloque de motivos en H4:I10 (DOM-11/TEC-09/COM-12)",
+    "05:Dashboard Mermas: 5 KPI con fórmula, entradas verdes B10 (compras del mes) y B11 (objetivo, 3 %) y objetivo relativo en C4; el semáforo de D lo colorea el motor (DOM-23/COM-12)",
+    "05:Plan de Acción: de título suelto a 9 columnas con DV de prioridad y estado, 5 causas precargadas y total del ahorro estimado (COM-10/§1.4)",
+    "05:Instrucciones: nombres de hoja corregidos (Registro Diario Mermas, Dashboard Mermas) y objetivo explicado; ancla de versión en A12",
+    "05-control-mermas.xlsx: 242 celdas reformateadas (§1.7)",
+    "05-control-mermas.xlsx: 1100 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "05-control-mermas.xlsx:Registro Diario Mermas!C4:C103: DV inline (10 valores)",
+    "05-control-mermas.xlsx:Registro Diario Mermas!E4:E103: DV inline (10 valores)",
+    "05-control-mermas.xlsx:Dashboard Mermas!D4:D8: 3 regla(s) de formato condicional",
+    "Registro Diario Mermas: protegida sin contraseña (900 celdas verdes editables)",
+    "Análisis por Categoría: protegida sin contraseña (20 celdas verdes editables)",
+    "Dashboard Mermas: protegida sin contraseña (3 celdas verdes editables)",
+    "Plan de Acción: protegida sin contraseña (180 celdas verdes editables)",
+    "Instrucciones!A12:A14: nota de desprotección + bio anclada + versión 2.0",
+    "05-control-mermas.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 216,
+   "gates": {
+    "fichero": "05-control-mermas.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 3,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 167,
+     "verdes": 1103,
+     "verdes_con_dato": 77,
+     "dv": 5,
+     "cf": 3,
+     "protegidas": 4,
+     "celdas": 317
+    }
+   }
+  },
+  {
+   "fichero": "06-fifo-caducidades.xlsx",
+   "cambios": [
+    "06:Control FIFO!A4:T4: +9 columnas (tipo de fecha, apertura, vida útil tras abrir, fecha límite efectiva, días en almacén, cantidad, unidad, precio/ud y valor en riesgo) — DOM-25/DOM-26/TEC-12",
+    "06:Control FIFO!J5:Q54: 250 fórmulas nuevas — fecha límite efectiva (J), días restantes (K), semáforo de CUATRO estados con ⛔ CADUCADO — RETIRAR (L, DOM-13/TEC-11/COM-09), días en almacén (M, DOM-24) y valor en riesgo (Q, DOM-25); DV de tipo de fecha (DOM-26), unidad y zona; autofiltro en A4:T54 (DOM-27), que no existía en ninguna de las 30 hojas del kit",
+    "06:Mapa Almacén!A4:E14: 11 zonas precargadas separando crudo de elaborados (DOM-28/COM-15) — la hoja se vendía tres veces en la landing y se entregaba con seis filas EN BLANCO; alimenta la DV de zona del Control FIFO. Ronda 2: se separan los QUÍMICOS del economato (RD-05) y los huevos estrenan zona de ambiente estable, porque el mapa mandaba refrigerarlos (RD-04)",
+    "06:Alertas Caducidad!A3:D10 + A12:A18: contadores COUNTIF por estado y valor en riesgo con SUMIF, más el protocolo en cuatro líneas con caducado = retirada obligatoria (DOM-27/COM-09) — la hoja era una instrucción de trabajo manual con 0 fórmulas. Ronda 2 (RD-14): el «valor en riesgo» del pie era el valor de TODO el stock; ahora hay una fila para cada cosa",
+    "06:Instrucciones!A1:A31: reescritas — FIFO vs FEFO (DOM-24/COM-26), los cuatro estados del semáforo (DOM-13) y el Mapa de Almacén citado con el nombre real de la pestaña, «Mapa Almacén» (§1.6)",
+    "06-fifo-caducidades.xlsx: 476 celdas reformateadas (§1.7)",
+    "06-fifo-caducidades.xlsx: 744 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "06-fifo-caducidades.xlsx:Control FIFO!C5:C54: DV inline (10 valores)",
+    "06-fifo-caducidades.xlsx:Control FIFO!L5:L54: 5 regla(s) de formato condicional",
+    "Control FIFO: protegida sin contraseña (700 celdas verdes editables)",
+    "Alertas Caducidad: protegida sin contraseña (0 celdas verdes editables)",
+    "Mapa Almacén: protegida sin contraseña (44 celdas verdes editables)",
+    "Instrucciones!A32:A34: nota de desprotección + bio anclada + versión 2.0",
+    "06-fifo-caducidades.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 264,
+   "gates": {
+    "fichero": "06-fifo-caducidades.xlsx",
+    "dv_aplicadas": 1,
+    "cf_aplicadas": 5,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 264,
+     "verdes": 744,
+     "verdes_con_dato": 118,
+     "dv": 4,
+     "cf": 5,
+     "protegidas": 3,
+     "celdas": 525
+    }
+   }
+  },
+  {
+   "fichero": "07-analisis-costes-compras.xlsx",
+   "cambios": [
+    "07:Top 20 Productos!A3:K3: +2 columnas (unidad de compra y precio anterior) — sin precio anterior la columna «Variación vs Anterior» era literalmente incalculable (DOM-29)",
+    "07:Coste por Categoría!O4:O14 + B4:B13: «% del Total» tenía el denominador calculado al lado (N14) y las 11 celdas vacías (DOM-31/TEC-08); cabecera y título con «(€, sin IVA)» (DOM-30) y enero sembrado con 10 importes de ejemplo",
+    "07:Evolución Mensual: hoja CREADA con 12 meses (§1.6/TEC-05) — Instrucciones!A8 la citaba desde la v1.1 y no existía; B = total del mes, C = variación mes a mes con guarda de cero, D = acumulado",
+    "07:Top 20 Productos!B4:M24: la hoja tenía 0 fórmulas y sólo la numeración 1-20 (TEC-08/COM-11). Ahora es la tabla de entrada (§7-bis.1): gasto anual (F), % del Top 20 (G), variación de precio con CF > 5 % (J, DOM-29), 8 productos de ejemplo coherentes con el 01 y ranking Top 5 con LARGE/INDEX/MATCH en L4:M8",
+    "07:Dashboard KPIs!B4:B9 + C4:C8 + E4:E8 + B10: la hoja DESCRIBÍA EN TEXTO cómo calcular cada KPI y no tenía ni una fórmula ni una celda de entrada (DOM-10/TEC-08/COM-11/COM-23). Food cost sobre CONSUMO, coste por cubierto sin Limpieza ni Otros, objetivo relativo al ticket medio (C5) y las 6 entradas verdes del periodo. Ronda 2: columna ESTADO con semáforo real (RD-13/RT-06/RC-13 — era el único dashboard del kit sin él y su print_area ya reservaba la columna E vacía), objetivos NUMÉRICOS y editables (RT-19) y selector de mes, porque el KPI de compras leía siempre los doce (RD-27)",
+    "07:Instrucciones!A1:A24: reescritas — aviso de «sin IVA» (DOM-30), definición correcta de los KPIs (COM-23) y la pestaña Evolución Mensual, que se citaba desde la v1.1 y no existía (§1.6)",
+    "07-analisis-costes-compras.xlsx: 309 celdas reformateadas (§1.7)",
+    "07-analisis-costes-compras.xlsx: 260 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "07-analisis-costes-compras.xlsx:Top 20 Productos!C4:C23: DV inline (10 valores)",
+    "07-analisis-costes-compras.xlsx:Dashboard KPIs!E4:E17: 3 regla(s) de formato condicional",
+    "07-analisis-costes-compras.xlsx:Top 20 Productos!J4:J23: 1 regla(s) de formato condicional",
+    "Coste por Categoría: protegida sin contraseña (120 celdas verdes editables)",
+    "Evolución Mensual: protegida sin contraseña (0 celdas verdes editables)",
+    "Top 20 Productos: protegida sin contraseña (140 celdas verdes editables)",
+    "Dashboard KPIs: protegida sin contraseña (10 celdas verdes editables)",
+    "Instrucciones!A24:A26: nota de desprotección + bio anclada + versión 2.0",
+    "07-analisis-costes-compras.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 130,
+   "gates": {
+    "fichero": "07-analisis-costes-compras.xlsx",
+    "dv_aplicadas": 1,
+    "cf_aplicadas": 4,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [
+     "Evolución Mensual"
+    ],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 153,
+     "verdes": 270,
+     "verdes_con_dato": 76,
+     "dv": 3,
+     "cf": 4,
+     "protegidas": 4,
+     "celdas": 371
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+   "cambios": [
+    "BONUS-08:Conteo Rápido!I4:L84: «Compras del mes», «Consumo del mes» (stock anterior + compras − stock final), variación con guarda de H y % de variación con ámbar por encima del ±20 %; G con doble guarda de cantidad y precio; 50 productos coherentes con el 01; +30 filas hasta la 84 (DOM-32/TEC-24/COM-28, §1.8)",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 480 celdas reformateadas (§1.7)",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 560 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido!C5:C84: DV inline (10 valores)",
+    "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido!D5:D84: DV inline (10 valores)",
+    "Conteo Rápido: protegida sin contraseña (560 celdas verdes editables)",
+    "Instrucciones!A16:A18: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 320,
+   "gates": {
+    "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 2,
+     "formulas": 321,
+     "verdes": 560,
+     "verdes_con_dato": 200,
+     "dv": 2,
+     "cf": 1,
+     "protegidas": 1,
+     "celdas": 631
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "cambios": [
+    "BONUS-09:Calculadora!A3:N3: +5 columnas (categoría, cobertura de seguridad en días, precio/ud, vida útil y cantidad a pedir sugerida) — sin precio no hay EOQ posible y sin vida útil no hay forma de caparla (DOM-06/TEC-02/COM-01)",
+    "BONUS-09:Calculadora!G4:N33: 150 fórmulas nuevas. EOQ parametrizada contra Parámetros!$D$4 y $D$5 —el 2 y el 0,5 iban HARDCODEADOS en las 30 fórmulas (DOM-06/TEC-02/COM-01)—, capada por vida útil (L), stock de seguridad en UNIDADES a partir de días de cobertura (G, DOM-12/TEC-14) y guarda de consumo cero en la frecuencia (N, TEC-15, que devolvía #DIV/0!). Ronda 2: IFERROR y guarda de cero en la EOQ (RT-03), el factor 0,7 sale de Parámetros!D12 y deja de ir hardcodeado en las 30 fórmulas (RT-08), columna «Stock máximo» y TERCER tope de la cantidad sugerida (RD-22) y los datos de ejemplo derivan de la misma tabla que los par levels del 01 (RD-02/RD-21)",
+    "BONUS-09:Parámetros!D4:D5: dos celdas verdes NUMÉRICAS (coste de pedido 3 € y 25 % anual de almacenamiento) — la hoja definía los dos costes como TEXTO («2-5 €», «20-30 % anual») mientras la EOQ llevaba 2 y 0,5 dentro de la fórmula (DOM-06/TEC-02); A10 describe ya la columna F en días (DOM-12/TEC-14)",
+    "BONUS-09:Instrucciones!A1:A24: reescritas — se RETIRA la promesa del «simulador», que nunca existió como pestaña (§1.6/§7-bis.4), y se explica por qué la cantidad sugerida capa la EOQ",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 150 celdas reformateadas (§1.7)",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 270 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "Calculadora: protegida sin contraseña (270 celdas verdes editables)",
+    "Parámetros: protegida sin contraseña (3 celdas verdes editables)",
+    "Instrucciones!A24:A26: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 150,
+   "gates": {
+    "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 3,
+     "formulas": 150,
+     "verdes": 273,
+     "verdes_con_dato": 75,
+     "dv": 1,
+     "cf": 0,
+     "protegidas": 2,
+     "celdas": 329
+    }
+   }
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-inventario-stock-diario.xlsx",
+    "salida": "01-inventario-stock-diario.xlsx: formulas=333 cache_inyectado=23 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-fichas-proveedores.xlsx",
+    "salida": "02-fichas-proveedores.xlsx: formulas=175 cache_inyectado=79 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-pedidos-compra.xlsx",
+    "salida": "03-pedidos-compra.xlsx: formulas=116 cache_inyectado=35 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-recepcion-mercancias.xlsx",
+    "salida": "04-recepcion-mercancias.xlsx: formulas=247 cache_inyectado=31 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-control-mermas.xlsx",
+    "salida": "05-control-mermas.xlsx: formulas=167 cache_inyectado=59 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-fifo-caducidades.xlsx",
+    "salida": "06-fifo-caducidades.xlsx: formulas=264 cache_inyectado=44 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-analisis-costes-compras.xlsx",
+    "salida": "07-analisis-costes-compras.xlsx: formulas=153 cache_inyectado=118 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+    "salida": "BONUS-08-inventario-rapido-mensual.xlsx: formulas=321 cache_inyectado=1 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+    "salida": "BONUS-09-calculadora-punto-pedido.xlsx: formulas=150 cache_inyectado=40 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 405,
+   "vacias_verificadas_con_pycel": 1566,
+   "sin_pycel": 0,
+   "no_evaluables_por_pycel": 0,
+   "fallos": []
+  },
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "9 ficheros censados (9 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-inventario)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ],
+   "stderr": []
+  },
+  "pestanas_citadas_inexistentes": {}
+ },
+ "demostraciones": {
+  "semaforo_stock_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:H5",
+   "par_level": 8,
+   "pruebas": [
+    {
+     "caso": "por debajo del par",
+     "stock": 4.0,
+     "estado": "🔴 PEDIR"
+    },
+    {
+     "caso": "entre par y par×1,5",
+     "stock": 9.6,
+     "estado": "🟡 BAJO"
+    },
+    {
+     "caso": "holgado",
+     "stock": 24,
+     "estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 3,
+   "ok": true
+  },
+  "semaforo_fifo_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:L5",
+   "columna_fecha": "G",
+   "pruebas": [
+    {
+     "caso": "caducado ayer",
+     "dias": -1,
+     "estado": "⛔ CADUCADO — RETIRAR"
+    },
+    {
+     "caso": "caduca mañana",
+     "dias": 1,
+     "estado": "🔴 URGENTE"
+    },
+    {
+     "caso": "caduca en 5 días",
+     "dias": 5,
+     "estado": "🟡 PRÓXIMO"
+    },
+    {
+     "caso": "caduca en 30 días",
+     "dias": 30,
+     "estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 4,
+   "nota": "en v1.1 son 3 estados y el consumo preferente vencido se marca igual que un caducado; el 4.º estado lo pone grupo_c (§4, DOM-13)"
+  },
+  "iva_por_categoria_03": {
+   "copia_desechable": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b/03-pedidos-compra-iva.xlsx",
+   "ref_tabla_iva": "03-pedidos-compra.xlsx:Listas:A2:B11",
+   "lineas": [
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H9/I9",
+     "producto": "Solomillo de ternera",
+     "categoria": "Cárnicos",
+     "cantidad": 2,
+     "precio": 32.0,
+     "iva_pct": 10,
+     "subtotal": 64,
+     "total": 70.4
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H10/I10",
+     "producto": "Vino tinto D.O.",
+     "categoria": "Bebidas Alcohólicas",
+     "cantidad": 6,
+     "precio": 5.0,
+     "iva_pct": 21,
+     "subtotal": 30,
+     "total": 36.3
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H11/I11",
+     "producto": "Lechuga",
+     "categoria": "Verduras/Frutas",
+     "cantidad": 10,
+     "precio": 1.1,
+     "iva_pct": 4,
+     "subtotal": 11.0,
+     "total": 11.440000000000001
+    }
+   ],
+   "base_imponible": 105.0,
+   "cuota_iva": 13.14,
+   "total": 118.14,
+   "desglose_por_tipo": [
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B46",
+     "tipo": 4,
+     "base": 11.0,
+     "cuota": 0.44,
+     "total": 11.44
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B47",
+     "tipo": 10,
+     "base": 64,
+     "cuota": 6.4,
+     "total": 70.4
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B48",
+     "tipo": 21,
+     "base": 30,
+     "cuota": 6.3,
+     "total": 36.3
+    }
+   ],
+   "total_v1_1_con_el_10_a_mano": 115.5,
+   "diferencia_eur": 2.64,
+   "lectura": "el mismo pedido con el 10 % escrito a mano en las tres líneas se enviaba por 115.5 € en vez de 118.14 €"
+  },
+  "doble_guarda_03": {
+   "copia_desechable": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b/03-pedidos-compra-guarda.xlsx",
+   "ref": "03-pedidos-compra.xlsx:Pedido Actual:G12",
+   "formula": "=IF($E12=\"\",\"\",IF($F12=\"\",\"⚠ falta coste\",$E12*$F12))",
+   "cantidad_15_sin_precio": "⚠ falta coste",
+   "cantidad_15_precio_6_40": 96.0,
+   "ok": true,
+   "lectura": "con la guarda de la v1.1 (=IF(D12=\"\",\"\",D12*E12)) esa misma línea valía 0,00 € y el total del pedido mentía"
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Cocina",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 360,
+     "verdes_desbloqueadas": 360
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Barra",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 270,
+     "verdes_desbloqueadas": 270
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Almacén",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 270,
+     "verdes_desbloqueadas": 270
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Resumen Dashboard",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Directorio Proveedores",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 360,
+     "verdes_desbloqueadas": 360
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Comparativa Precios",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 110,
+     "verdes_desbloqueadas": 110
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Evaluación Proveedores",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 60,
+     "verdes_desbloqueadas": 60
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Condiciones Comerciales",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 40,
+     "verdes_desbloqueadas": 40
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 158,
+     "verdes_desbloqueadas": 158
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Proveedores",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 160,
+     "verdes_desbloqueadas": 160
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Historial Pedidos",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 353,
+     "verdes_desbloqueadas": 353
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Listas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 28,
+     "verdes_desbloqueadas": 28
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 640,
+     "verdes_desbloqueadas": 640
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Registro Incidencias",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 220,
+     "verdes_desbloqueadas": 220
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Verificación Temperaturas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Registro Diario Mermas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 900,
+     "verdes_desbloqueadas": 900
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 20,
+     "verdes_desbloqueadas": 20
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Dashboard Mermas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 3,
+     "verdes_desbloqueadas": 3
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Plan de Acción",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 180,
+     "verdes_desbloqueadas": 180
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Control FIFO",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 700,
+     "verdes_desbloqueadas": 700
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Alertas Caducidad",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Mapa Almacén",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 44,
+     "verdes_desbloqueadas": 44
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Coste por Categoría",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 120,
+     "verdes_desbloqueadas": 120
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Evolución Mensual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 140,
+     "verdes_desbloqueadas": 140
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 10,
+     "verdes_desbloqueadas": 10
+    },
+    {
+     "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 560,
+     "verdes_desbloqueadas": 560
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 270,
+     "verdes_desbloqueadas": 270
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Parámetros",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 3,
+     "verdes_desbloqueadas": 3
+    }
+   ],
+   "fallos": []
+  },
+  "a_valoracion_stock_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:K5 + Resumen Dashboard:D4",
+   "formula": "K5 =IFERROR(IF(OR($G5=\"\",$J5=\"\"),\"\",$G5*$J5),\"\")",
+   "pruebas": [
+    {
+     "caso": "sin contar",
+     "Cocina!G5": "",
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": "",
+     "Resumen!D4_valor_cocina": 0.0
+    },
+    {
+     "caso": "10 kg contados",
+     "Cocina!G5": 10,
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": 65.0,
+     "Resumen!D4_valor_cocina": 65.0
+    },
+    {
+     "caso": "4 kg contados",
+     "Cocina!G5": 4,
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": 26.0,
+     "Resumen!D4_valor_cocina": 26.0
+    }
+   ],
+   "ok": true,
+   "nota": "en la v1.1 la columna Valor (€) no tenía fórmula en ninguna de las 50 filas y el Resumen Dashboard tenía 0 fórmulas"
+  },
+  "a_a_pedir_ambar_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:I5",
+   "formula": "=IF(OR($G5=\"\",$E5=\"\",$F5=\"\"),\"\",IF($G5<$E5*1.5,MAX(0,$F5-$G5),0))",
+   "par_level_E5": 8,
+   "par_max_F5": 20,
+   "pruebas": [
+    {
+     "caso": "por debajo del par (6)",
+     "stock": 6,
+     "H5_estado": "🔴 PEDIR",
+     "I5_a_pedir": 14
+    },
+    {
+     "caso": "en ámbar, 8 <= 10 < 12",
+     "stock": 10,
+     "H5_estado": "🟡 BAJO",
+     "I5_a_pedir": 10
+    },
+    {
+     "caso": "holgado (15)",
+     "stock": 15,
+     "H5_estado": "🟢 OK",
+     "I5_a_pedir": 0
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 devolvía 0 en todo el tramo ámbar: el semáforo avisaba y la columna de al lado decía que no pidieras nada"
+  },
+  "a_resumen_por_categoria_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Resumen Dashboard:B10/B20",
+   "formula": "B10 = SUMIF por categoría sobre Cocina+Barra+Almacén",
+   "fichero_recien_descargado": {
+    "B10_carnicos": 0.0,
+    "B20_total": 0.0,
+    "C10_porcentaje": ""
+   },
+   "con_10kg_de_pollo": {
+    "B10_carnicos": 65,
+    "B20_total": 65,
+    "C10_porcentaje": 1.0
+   },
+   "con_10kg_pollo_y_2kg_solomillo": {
+    "B10_carnicos": 129,
+    "B20_total": 129,
+    "C10_porcentaje": 1.0
+   },
+   "subiendo_el_solomillo_a_4kg": {
+    "B10_carnicos": 193,
+    "B20_total": 193,
+    "C10_porcentaje": 1.0
+   },
+   "ok": true,
+   "nota": "10 × 6,50 + 2 × 32,00 = 129,00 € → 10 × 6,50 + 4 × 32,00 = 193,00 €"
+  },
+  "a_comparativa_normalizada_02": {
+   "ref": "02-fichas-proveedores.xlsx:Comparativa Precios:K7/L7/M7/U7",
+   "formula": "K = IF(COUNT(F:J)=0;\"\";IF(E=\"\";\"⚠ falta contenido\";MIN(P:T))) sobre P = precio / contenido, con P vacío si el precio es 0 o negativo",
+   "con_las_cotizaciones_de_ejemplo": {
+    "B7_producto": "Aceite de oliva virgen extra",
+    "E7_contenido": 5,
+    "precios_F7_J7": [
+     31,
+     30.5,
+     30.2,
+     29,
+     31.5
+    ],
+    "normalizados_P7_T7": [
+     6.2,
+     6.1,
+     6.04,
+     5.8,
+     6.3
+    ],
+    "K7_mejor_precio_ud": 5.8,
+    "L7_mejor_proveedor": "Distribuciones Economato Sur (ejemplo)",
+    "M7_diferencia": 0.0862,
+    "U7_estado_cotizacion": "🟢 vigente",
+    "precio_ud_del_01": 5.8
+   },
+   "con_un_cero_tecleado_en_otro_proveedor": {
+    "H7": 0,
+    "K7_mejor_precio_ud": 5.8,
+    "L7_mejor_proveedor": "Distribuciones Economato Sur (ejemplo)"
+   },
+   "subiendo_al_mas_barato_a_50": {
+    "I7": 50.0,
+    "K7_mejor_precio_ud": 6.04,
+    "L7_mejor_proveedor": "Frutas y Verduras La Huerta (ejemplo)"
+   },
+   "fila_sin_cotizaciones": {
+    "fila": 6,
+    "K6_mejor_precio_ud": "",
+    "L6_mejor_proveedor": ""
+   },
+   "fila_con_precio_y_sin_contenido": {
+    "fila": 6,
+    "F6": 40.0,
+    "E6": "(vacío)",
+    "K6_mejor_precio_ud": "⚠ falta contenido",
+    "L6_mejor_proveedor": ""
+   },
+   "ok": true,
+   "nota": "la v1.1 hacía MIN sobre el importe y sin guarda de vacío: las 10 filas enseñaban un 0 nada más abrir el fichero (TEC-07) y la columna Mejor Proveedor estaba vacía (DOM-15). La v2.0 lo arregló a medias: la guarda excluía la celda VACÍA pero no el CERO (RT-02) y una fila sin contenido apagaba la comparativa sin decir por qué (RT-12). Y el mejor precio/ud tiene que ser EXACTAMENTE el precio de referencia del 01 (RD-11)"
+  },
+  "a_evaluacion_nota_02": {
+   "ref": "02-fichas-proveedores.xlsx:Evaluación Proveedores:H4/I4",
+   "formula": "H4 = IF(COUNT(C4:G4)<3;\"\";AVERAGE(C4:G4))",
+   "pruebas": [
+    {
+     "caso": "ejemplo con los 5 criterios (fila 4)",
+     "H4": 4.8,
+     "I4": "A — Preferente"
+    },
+    {
+     "caso": "sólo Calidad puntuada",
+     "valores": [
+      5,
+      "",
+      "",
+      "",
+      ""
+     ],
+     "H4": "",
+     "I4": ""
+    },
+    {
+     "caso": "proveedor flojo",
+     "valores": [
+      2,
+      3,
+      2,
+      2,
+      2
+     ],
+     "H4": 2.2,
+     "I4": "D — Sustituir"
+    },
+    {
+     "caso": "proveedor preferente",
+     "valores": [
+      5,
+      5,
+      5,
+      4,
+      5
+     ],
+     "H4": 4.8,
+     "I4": "A — Preferente"
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 daba 5,0 —nota perfecta— a un proveedor puntuado sólo en Calidad, y la columna Nota estaba vacía en las 10 filas"
+  },
+  "a_consumo_mensual_08": {
+   "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido:J5/K5/L5/G5",
+   "formula": "J5 =IF(OR($F5=\"\",$H5=\"\"),\"\",IF($I5=\"\",\"⚠ faltan compras\",$H5+$I5-$F5))",
+   "pruebas": [
+    {
+     "caso": "primer inventario: sin mes anterior",
+     "F5_actual": 15,
+     "H5_anterior": "",
+     "I5_compras": "",
+     "G5_valor": 97.5,
+     "J5_consumo": "",
+     "K5_variacion": "",
+     "L5_pct": ""
+    },
+    {
+     "caso": "anterior 20, compras 50, actual 15",
+     "F5_actual": 15,
+     "H5_anterior": 20,
+     "I5_compras": 50,
+     "G5_valor": 97.5,
+     "J5_consumo": 55,
+     "K5_variacion": -5,
+     "L5_pct": -0.25
+    },
+    {
+     "caso": "anterior 20, compras 50, actual 25",
+     "F5_actual": 25,
+     "H5_anterior": 20,
+     "I5_compras": 50,
+     "G5_valor": 162.5,
+     "J5_consumo": 45,
+     "K5_variacion": 5,
+     "L5_pct": 0.25
+    }
+   ],
+   "doble_guarda_G5": {
+    "caso": "cantidad contada y precio en blanco",
+    "G5_valor": "⚠ falta coste"
+   },
+   "ok": true,
+   "nota": "la v1.1 no tenía columna de compras (el consumo era incalculable), la variación miraba la guarda equivocada y el valor de una línea sin precio se sumaba como 0,00 €"
+  },
+  "conforme_por_familia_04": {
+   "copia_desechable": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b/04-recepcion-mercancias-conforme.xlsx",
+   "ref_tabla": "04-recepcion-mercancias.xlsx:Verificación Temperaturas:A4:E18",
+   "pruebas": [
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R10",
+     "familia": "Carne picada",
+     "temperatura_c": 1,
+     "umbral_maximo_leido": 2,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R11",
+     "familia": "Carne picada",
+     "temperatura_c": 6,
+     "umbral_maximo_leido": 2,
+     "esperado": "✗ RECHAZAR (calor)",
+     "obtenido": "✗ RECHAZAR (calor)",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R12",
+     "familia": "Canal y despiece de ungulados domésticos",
+     "temperatura_c": 6,
+     "umbral_maximo_leido": 7,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R13",
+     "familia": "Congelados",
+     "temperatura_c": -20,
+     "umbral_maximo_leido": -15,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R14",
+     "familia": "Congelados",
+     "temperatura_c": -16,
+     "umbral_maximo_leido": -15,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R15",
+     "familia": "Huevos",
+     "temperatura_c": 18,
+     "umbral_maximo_leido": "N/A",
+     "esperado": "N/A",
+     "obtenido": "N/A",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R16",
+     "familia": "Pescado fresco y marisco",
+     "temperatura_c": 5,
+     "umbral_maximo_leido": 2,
+     "esperado": "✗ RECHAZAR (calor)",
+     "obtenido": "✗ RECHAZAR (calor)",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R17",
+     "familia": "Pescado fresco y marisco",
+     "temperatura_c": -20,
+     "umbral_maximo_leido": 2,
+     "esperado": "✗ RECHAZAR (frío)",
+     "obtenido": "✗ RECHAZAR (frío)",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R18",
+     "familia": "Charcutería",
+     "temperatura_c": 18,
+     "umbral_maximo_leido": "",
+     "esperado": "⚠ FAMILIA SIN LÍMITE",
+     "obtenido": "⚠ FAMILIA SIN LÍMITE",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:R19",
+     "familia": "No alimentario (limpieza, menaje y desechables)",
+     "temperatura_c": 25,
+     "umbral_maximo_leido": "N/A",
+     "esperado": "N/A",
+     "obtenido": "N/A",
+     "ok": true
+    }
+   ],
+   "diferencia_12_pedidas_9_recibidas": -3,
+   "valor_de_esa_diferencia_eur": -42,
+   "familia_sugerida_desde_categoria": "Pescado fresco y marisco",
+   "veredicto_con_familia_sugerida": "✗ RECHAZAR (calor)",
+   "lineas_a_rechazar_en_el_resumen": 5,
+   "lectura": "con la tabla de la v1.1 («Carne fresca, 7°C máx.» como TEXTO) ninguna de estas líneas se podía calcular; con la de la v2.0, las tres últimas familias salían mal: una familia sin límite daba CONFORME a 18 °C, un pescado a -20 °C también, y un congelado a -16 °C —dentro de la tolerancia que el propio fichero cita— se rechazaba"
+  },
+  "agregacion_mermas_05": {
+   "copia_desechable": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b/05-control-mermas-agregacion.xlsx",
+   "analisis_por_categoria": [
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C4",
+     "categoria": "Cárnicos",
+     "incidencias": 3,
+     "coste_eur": 76.9,
+     "pct_del_total": 0.6539115646258503
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C5",
+     "categoria": "Pescados",
+     "incidencias": 1,
+     "coste_eur": 35.0,
+     "pct_del_total": 0.2976190476190476
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C6",
+     "categoria": "Lácteos",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C7",
+     "categoria": "Verduras/Frutas",
+     "incidencias": 1,
+     "coste_eur": 5.699999999999999,
+     "pct_del_total": 0.04846938775510203
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C8",
+     "categoria": "Secos/Granos",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C9",
+     "categoria": "Congelados",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C10",
+     "categoria": "Bebidas Alcohólicas",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C11",
+     "categoria": "Bebidas No Alcohólicas",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C12",
+     "categoria": "Limpieza",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C13",
+     "categoria": "Otros",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    }
+   ],
+   "total_mes": 117.60000000000001,
+   "dashboard_con_8000_de_compras": {
+    "ref": "05-control-mermas.xlsx:Dashboard Mermas:B4:B8",
+    "compras_del_mes_escritas_en_B10": 8000.0,
+    "coste_total_mermas": 117.60000000000001,
+    "objetivo_eur_C4": 240.0,
+    "pct_sobre_compras_B5": 0.014700000000000001,
+    "estado_D5": "🟢 OK",
+    "n_incidencias_B6": 5,
+    "categoria_con_mas_merma_B7": "Cárnicos",
+    "motivo_mas_frecuente_B8": "Caducidad superada · 3 veces"
+   },
+   "dashboard_con_2000_de_compras": {
+    "compras_del_mes_escritas_en_B10": 2000.0,
+    "pct_sobre_compras_B5": 0.058800000000000005,
+    "objetivo_eur_C4": 60.0,
+    "estado_D5": "🔴 ALERTA",
+    "estado_D4": "🔴 ALERTA"
+   },
+   "dashboard_con_el_registro_vacio": {
+    "ref": "05-control-mermas.xlsx:Dashboard Mermas:B7:B8 con el registro VACÍO",
+    "copia_desechable": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/demos-grupo-b/05-control-mermas-agregacion-sin-datos.xlsx",
+    "coste_total_B4": 0,
+    "categoria_con_mas_merma_B7": "— sin mermas registradas —",
+    "motivo_mas_frecuente_B8": "— sin mermas registradas —",
+    "lectura": "en la v2.0 estas dos celdas decían «Cárnicos» y «Caducidad superada» con CERO mermas registradas: MAX() de una columna de ceros es 0 y MATCH(0;…;0) engancha la primera fila"
+   },
+   "lectura": "las dos hojas de explotación estaban vacías de fórmulas y el «< 3 % sobre compras» era incalculable: no existía ninguna celda donde escribir las compras del mes (DOM-23)"
+  },
+  "grupo_b_fallos": [],
+  "c_semaforo_cuatro_estados_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:L5",
+   "formula": "=IF($K5=\"\",\"\",IF($K5<0,IF($F5=\"Consumo preferente\",\"⚠ REVISAR (consumo preferente)\",\"⛔ CADUCADO — RETIRAR\"),IF($K5<=2,\"🔴 URGENTE\",IF($K5<=7,\"🟡 PRÓXIMO\",\"🟢 OK\"))))",
+   "pruebas": [
+    {
+     "caso": "caducado hace 10 días",
+     "dias": -10,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": -10,
+     "L5_estado": "⛔ CADUCADO — RETIRAR"
+    },
+    {
+     "caso": "consumo preferente vencido hace 10 días",
+     "dias": -10,
+     "F5_tipo": "Consumo preferente",
+     "K5_dias_restantes": -10,
+     "L5_estado": "⚠ REVISAR (consumo preferente)"
+    },
+    {
+     "caso": "caduca mañana",
+     "dias": 1,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 1,
+     "L5_estado": "🔴 URGENTE"
+    },
+    {
+     "caso": "caduca en 5 días",
+     "dias": 5,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 5,
+     "L5_estado": "🟡 PRÓXIMO"
+    },
+    {
+     "caso": "caduca en 30 días",
+     "dias": 30,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 30,
+     "L5_estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 5,
+   "ok": true,
+   "nota": "la v1.1 devolvía «🔴 URGENTE» en los tres primeros casos: no distinguía caducado de «caduca mañana» ni caducidad de consumo preferente"
+  },
+  "c_fecha_limite_y_apertura_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:J11 · K11 · L11 · M11",
+   "formula": "J =IF($G11=\"\",\"\",IF($H11=\"\",$G11,IF($I11=\"\",$G11,MIN($G11,$H11+$I11)))) · M =IF($E11=\"\",\"\",TODAY()-$E11)",
+   "pruebas": [
+    {
+     "caso": "sin abrir (caducidad a 20 días)",
+     "K_dias_restantes": 20,
+     "L_estado": "🟢 OK",
+     "M_dias_en_almacen": 6
+    },
+    {
+     "caso": "abierto hoy, 3 días de vida útil tras abrir",
+     "K_dias_restantes": 3,
+     "L_estado": "🟡 PRÓXIMO",
+     "M_dias_en_almacen": 6
+    },
+    {
+     "caso": "abierto hoy, 1 día de vida útil tras abrir",
+     "K_dias_restantes": 1,
+     "L_estado": "🔴 URGENTE",
+     "M_dias_en_almacen": 6
+    }
+   ],
+   "ok": true,
+   "nota": "en la v1.1 no existían ni la apertura ni la vida útil tras abrir, y «Fecha Entrada» no aparecía en ninguna de las 100 fórmulas del libro (DOM-24)"
+  },
+  "c_valor_en_riesgo_y_alertas_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:Q11 + Alertas Caducidad:B4 · C4 · B9 · C9 · B10 · C10",
+   "formula": "Q =IF(OR($N11=\"\",$P11=\"\"),\"\",$N11*$P11) · C4 =SUMIF('Control FIFO'!$L$5:$L$54,\"*CADUCADO*\",'Control FIFO'!$Q$5:$Q$54) · C9 =SUM($C$4:$C$7) · C10 =SUM('Control FIFO'!$Q$5:$Q$54)",
+   "con_los_seis_lotes_de_ejemplo": {
+    "B4_caducados": 1.0,
+    "C4_valor_caducado": 56.0,
+    "B9_lotes_en_riesgo": 5.0,
+    "C9_valor_realmente_en_riesgo": 156.8,
+    "B10_lotes_totales": 6.0,
+    "C10_valor_total_del_stock": 185.8,
+    "C8_valor_de_los_OK": 29.0
+   },
+   "anadiendo_un_lote_caducado_de_8_kg_a_32": {
+    "L_estado": "⛔ CADUCADO — RETIRAR",
+    "Q_valor_en_riesgo": 256,
+    "B4_caducados": 2,
+    "C4_valor_caducado": 312.0,
+    "B9_lotes_en_riesgo": 6,
+    "C9_valor_realmente_en_riesgo": 412.8,
+    "B10_lotes_totales": 7,
+    "C10_valor_total_del_stock": 441.8
+   },
+   "ok": true,
+   "nota": "la hoja de alertas tenía 0 fórmulas y el Control FIFO no registraba cantidad: 200 g de perejil y 8 kg de solomillo generaban exactamente la misma alerta (DOM-25). Y la fila del pie llamaba «valor en riesgo» al valor de TODO el stock (RD-14): ahora el valor realmente en riesgo es ESTRICTAMENTE menor que el total, porque hay un lote 🟢 OK"
+  },
+  "c_kpis_reales_07": {
+   "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs:B4 · B5 · B6 · B7 · C5",
+   "formulas": {
+    "B4": "=IFERROR(($B$14+$B$6-$B$15)/$B$12,\"\")",
+    "B5": "=IFERROR(($B$14+$B$6-$B$15-'Coste por Categoría'!$N$12-'Coste por Categoría'!$N$13)/$B$13,\"\")",
+    "B6": "='Coste por Categoría'!$N$14",
+    "C5": "=IFERROR($B$17*0.3,\"\")"
+   },
+   "pruebas": [
+    {
+     "caso": "datos de ejemplo (34.000 € de ventas, 1.450 cubiertos)",
+     "B4_food_cost": 0.3103,
+     "B5_coste_cubierto": 6.8897,
+     "B6_compras": 10400.0,
+     "B7_variacion": 0.0421,
+     "C5_objetivo": 7.035
+    },
+    {
+     "caso": "ventas a la mitad (17.000 €)",
+     "B12_ventas": 17000,
+     "B4_food_cost": 0.6206
+    },
+    {
+     "caso": "ventas al doble (68.000 €)",
+     "B12_ventas": 68000,
+     "B4_food_cost": 0.1551
+    },
+    {
+     "caso": "el doble de cubiertos (2.900)",
+     "B5_coste_cubierto": 3.4448
+    },
+    {
+     "caso": "ticket medio 40 € (objetivo = 30 % del ticket)",
+     "C5_objetivo": 12.0
+    }
+   ],
+   "ok": true,
+   "nota": "las dos hojas que dan nombre al entregable en el dashboard post-pago no tenían UNA SOLA FÓRMULA, y la columna D describía en texto cómo hacer la cuenta a mano (COM-11); el objetivo de coste por cubierto era «< 4,50 €», que sólo vale para un ticket de 15 € (DOM-31/COM-23)"
+  },
+  "c_variacion_precio_top20_07": {
+   "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos:J4 · G4 · L27:M31 + Dashboard KPIs:B8 · B9 · E4",
+   "formulas": {
+    "J4": "=IF(OR($H4=\"\",$I4=\"\"),\"\",$I4/$H4-1)",
+    "G4": "=IFERROR($E4/$E$24,\"\")",
+    "L27": "=IFERROR(INDEX($B$4:$B$23,MATCH(LARGE($E$4:$E$23,1),$E$4:$E$23,0)),\"\")",
+    "B8": "=COUNTIF('Top 20 Productos'!$J$4:$J$23,\">0.05\")"
+   },
+   "con_los_ejemplos": {
+    "J4_solomillo": 0.0492,
+    "J9_aceite": 0.1373,
+    "G4_pct_top20": 0.213,
+    "E24_total": 4507.88,
+    "L_top1": "Solomillo de ternera",
+    "M_top1_gasto": 960.0,
+    "B8_con_subida": 2.0,
+    "B9_mayor_subida": "Aceite de oliva virgen extra",
+    "E4_estado_del_food_cost": "🟢 OK"
+   },
+   "subiendo_el_solomillo_a_40": {
+    "J4_solomillo": 0.3115,
+    "B8_con_subida": 3,
+    "B9_mayor_subida": "Solomillo de ternera"
+   },
+   "y_pasando_su_gasto_a_5000": {
+    "E24_total": 8547.88,
+    "G4_pct_top20": 0.5849,
+    "L_top1": "Solomillo de ternera",
+    "M_top1_gasto": 5000
+   },
+   "ok": true,
+   "nota": "la landing promete «alertas de variación de precios (>5%)» y en la v1.1 la columna «Variación vs Anterior» estaba vacía en las 20 filas y era imposible de calcular: no existía «Precio Anterior» (DOM-29/TEC-08). Ronda 2: el bloque Top 5 se ha movido de L4:M8 a L27:M31 porque vivía DENTRO del rango de datos que la propia hoja mandaba ordenar (RD-08/RT-11), y el Dashboard estrena columna de Estado (RD-13/RT-06/RC-13)"
+  },
+  "c_eoq_parametrizada_y_capada_09": {
+   "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora:L7 · M7 · N7 (Leche entera) y L6 · M6 (Salmón fresco)",
+   "formulas": {
+    "L": "=IFERROR(IF(OR($D4=\"\",$D4<=0,$I4=\"\",$I4<=0,Parámetros!$D$4<=0,Parámetros!$D$5<=0),\"\",ROUND(SQRT(2*$D4*365*Parámetros!$D$4/($I4*Parámetros!$D$5)),0)),\"\")",
+    "M": "=IFERROR(IF(OR($L4=\"\",$J4=\"\"),\"\",MIN($L4,ROUND($D4*$J4*Parámetros!$D$12,0),IF($K4=\"\",$L4,$K4))),\"\")",
+    "N": "=IF(OR($D4=\"\",$D4<=0,$M4=\"\"),\"\",ROUND($M4/$D4,0))"
+   },
+   "pruebas": [
+    {
+     "caso": "datos de ejemplo",
+     "L7_eoq_leche": 287.0,
+     "M7_cantidad_sugerida": 60.0,
+     "N7_frecuencia_dias": 8.0,
+     "K7_stock_maximo": 60,
+     "L6_eoq_salmon": 35.0,
+     "M6_cantidad_salmon": 4.0,
+     "N6_frecuencia_salmon": 2.0
+    },
+    {
+     "caso": "salmón al doble de precio (28 €/kg): la EOQ baja",
+     "L6_eoq_salmon": 25.0,
+     "M6_cantidad_salmon": 4.0
+    },
+    {
+     "caso": "coste de pedido 30 € en Parámetros!D4: la EOQ sube en TODAS las líneas",
+     "L6_eoq_salmon": 112.0,
+     "L7_eoq_leche": 908.0
+    },
+    {
+     "caso": "factor de vida útil al 40 % en Parámetros!D12 (RT-08): la cantidad sugerida baja sin tocar ninguna fórmula",
+     "M7_cantidad_sugerida": 38.0,
+     "M6_cantidad_salmon": 2.0
+    },
+    {
+     "caso": "leche con 2 días de vida útil: el tope se come la EOQ",
+     "L7_eoq_leche": 287.0,
+     "M7_cantidad_sugerida": 11.0,
+     "N7_frecuencia_dias": 1.0
+    },
+    {
+     "caso": "precio 0 €/ud (RT-03): sin #¡DIV/0!",
+     "L7_eoq_leche": "",
+     "M7_cantidad_sugerida": "",
+     "N7_frecuencia_dias": ""
+    },
+    {
+     "caso": "0 % de coste de almacenamiento en la casilla verde Parámetros!D5 (RT-03): sin #¡DIV/0! en las 30 filas",
+     "L6_eoq_salmon": "",
+     "L7_eoq_leche": ""
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 mandaba 454 L de leche de golpe (la EOQ pura) sobre un producto que aguanta 12 días. La v2.0 lo capó por vida útil pero no por el sitio donde hay que meterlo: ahora la leche se queda en 60 L, que es el par MÁXIMO de la plantilla 01 (RD-22), y la EOQ ya no revienta con un precio 0 ni con un 0 % de almacenamiento (RT-03)"
+  },
+  "c_stock_seguridad_en_unidades_09": {
+   "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora:G7 · H7",
+   "formulas": {
+    "G": "=IF(OR($D4=\"\",$F4=\"\"),\"\",$D4*$F4)",
+    "H": "=IF(OR($D4=\"\",$E4=\"\",$F4=\"\"),\"\",$D4*$E4+$G4)"
+   },
+   "consumo_diario_D7": 8,
+   "lead_time_E7": 2,
+   "pruebas": [
+    {
+     "caso": "1 día(s) de cobertura",
+     "F_cobertura_dias": 1,
+     "G_stock_seguridad_ud": 8.0,
+     "H_punto_de_pedido_ud": 24.0
+    },
+    {
+     "caso": "2 día(s) de cobertura",
+     "F_cobertura_dias": 2,
+     "G_stock_seguridad_ud": 16,
+     "H_punto_de_pedido_ud": 32
+    },
+    {
+     "caso": "3 día(s) de cobertura",
+     "F_cobertura_dias": 3,
+     "G_stock_seguridad_ud": 24,
+     "H_punto_de_pedido_ud": 40
+    }
+   ],
+   "ok": true,
+   "nota": "con 8 L/día y 2 días de lead time, la v1.1 daba a quien escribía «2» siguiendo su propia hoja Parámetros un punto de pedido a la mitad; con 1 día de cobertura —el del ejemplo— salen 24 L, que es EXACTAMENTE el par level de la leche en la plantilla 01 (RD-02: los dos ficheros dan el mismo número por construcción)"
+  }
+ },
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-inventario.bak-20260824-011227"
+}

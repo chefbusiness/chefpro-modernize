@@ -228,7 +228,7 @@ const data: KitExcelData = {
     },
     {
       q: '¿En que se diferencia del software de inventario?',
-      a: 'El software de inventario cobra entre 50 y 100 EUR/mes por restaurante. Este kit cuesta 14 EUR, pago unico, sin suscripcion ni limite de productos. Y puedes personalizar todo al 100%.',
+      a: 'El software de inventario cobra entre 50 y 100 EUR/mes por restaurante. Este kit cuesta 14 EUR, pago unico, sin suscripcion. Y puedes personalizar todo al 100%.',
     },
     {
       q: '¿Puedo usarlo en varios restaurantes?',
