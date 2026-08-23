@@ -1,0 +1,1089 @@
+{
+ "productId": "kit-plan-financiero",
+ "familia": "kit-excel",
+ "inventario": {
+  "productId": "kit-plan-financiero",
+  "ficheros": [
+   {
+    "nombre": "01-plan-financiero-previsional.xlsx",
+    "tipo": "xlsx",
+    "bytes": 13980,
+    "hojas": [
+     "Instrucciones",
+     "Año 1",
+     "Año 2",
+     "Año 3",
+     "Resumen"
+    ],
+    "formulas": 187,
+    "resumen": "Proyección 3 años por año con ingresos/gastos/EBITDA; Resumen consolida los 3 años. Landing/dashboard prometen 'gráficos automáticos' pero NO tiene ningún objeto chart (0 en las 5 hojas)."
+   },
+   {
+    "nombre": "01b-plan-financiero-previsional-5-anos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 18437,
+    "hojas": [
+     "Instrucciones",
+     "Año 1",
+     "Año 2",
+     "Año 3",
+     "Año 4",
+     "Año 5",
+     "Resumen"
+    ],
+    "formulas": 311,
+    "resumen": "Misma estructura que 01 pero a 5 años. También 0 gráficos pese a la misma promesa."
+   },
+   {
+    "nombre": "02-calculadora-punto-equilibrio.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10302,
+    "hojas": [
+     "Instrucciones",
+     "Datos",
+     "Break-Even",
+     "Escenarios"
+    ],
+    "formulas": 20,
+    "resumen": "Calcula punto de equilibrio y 3 escenarios; la landing promete 'grafico visual de break-even' y no hay ningún chart embebido."
+   },
+   {
+    "nombre": "03-cash-flow-forecast.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9882,
+    "hojas": [
+     "Instrucciones",
+     "Flujo Mensual",
+     "Alertas"
+    ],
+    "formulas": 83,
+    "resumen": "Flujo de caja 12 meses con alertas de liquidez; formulación correcta, sin incidencias detectadas."
+   },
+   {
+    "nombre": "04-presupuesto-inversion-capex.xlsx",
+    "tipo": "xlsx",
+    "bytes": 14669,
+    "hojas": [
+     "Instrucciones",
+     "Obra",
+     "Equipamiento Cocina",
+     "Mobiliario Sala",
+     "Tecnología",
+     "Licencias",
+     "Resumen"
+    ],
+    "formulas": 78,
+    "resumen": "CAPEX por partida con resumen; sin incidencias de lógica detectadas."
+   },
+   {
+    "nombre": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+    "tipo": "xlsx",
+    "bytes": 32165,
+    "hojas": [
+     "Instrucciones",
+     "Ene",
+     "Feb",
+     "Mar",
+     "Abr",
+     "May",
+     "Jun",
+     "Jul",
+     "Ago",
+     "Sep",
+     "Oct",
+     "Nov",
+     "Dic",
+     "Resumen Anual"
+    ],
+    "formulas": 636,
+    "resumen": "BUG DE NEGOCIO: las 12 hojas mensuales (Ene..Dic) calculan bien TOTAL INGRESOS/GASTOS/EBITDA por mes (fila 10/19/21), pero 'Resumen Anual'!B5:M10 son CONSTANTES 0 sin ninguna fórmula que referencie 'Ene'!B10..'Dic'!B10 etc. El usuario rellena 12 meses de datos reales y el resumen anual se queda en cero para siempre."
+   },
+   {
+    "nombre": "06-dashboard-ratios-financieros.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9300,
+    "hojas": [
+     "Instrucciones",
+     "Ratios",
+     "Benchmarks"
+    ],
+    "formulas": 12,
+    "resumen": "Food cost/labor cost/prime cost/GOP/RevPASH/ticket medio calculados con fórmulas correctas contra datos de entrada; benchmarks estáticos de referencia (correcto, no requieren fórmula)."
+   },
+   {
+    "nombre": "07-informe-viabilidad-bancos.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11446,
+    "hojas": [
+     "Instrucciones",
+     "Resumen Ejecutivo",
+     "Proyecciones",
+     "Ratios",
+     "Garantías"
+    ],
+    "formulas": 3,
+    "resumen": "BUG DE NEGOCIO GRAVE: hoja 'Proyecciones' fila 21 (TIR) usa =IRR(B19:F19) y fila 22 (VAN) usa =NPV(0.08,C19:F19)+B19, pero B19:F19 SOLO tiene B19=-150000 (inversión inicial); C19:F19 están vacías — los flujos de caja reales viven en la fila 16 'CASH FLOW OPERATIVO' (también vacía de datos) y nunca se referencian. Con solo un valor negativo y el resto en blanco, IRR/NPV no tienen datos válidos y el IFERROR devuelve 'N/A' siempre. Fila 23 'Payback (años)' NO tiene fórmula ni valor: celda vacía. La landing y el dashboard prometen explícitamente TIR, VAN y payback period 'calculados automáticamente' y este fichero nunca los calcula."
+   },
+   {
+    "nombre": "BONUS-08-simulador-escenarios.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9054,
+    "hojas": [
+     "Instrucciones",
+     "Simulador",
+     "Comparativa"
+    ],
+    "formulas": 39,
+    "resumen": "What-if de ticket medio/ocupación/food cost con 3 escenarios comparados; sin incidencias detectadas."
+   },
+   {
+    "nombre": "BONUS-09-checklist-pre-apertura.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10257,
+    "hojas": [
+     "Instrucciones",
+     "Checklist"
+    ],
+    "formulas": 4,
+    "resumen": "Checklist de 48 items en 6 fases; sin incidencias detectadas."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "plan-previsional",
+    "title": "Plan Financiero Previsional (3 Años)",
+    "ruta": "KitPlanFinancieroDashboard.tsx:15 → get-download-urls.ts:563"
+   },
+   {
+    "key": "plan-previsional-5",
+    "title": "Plan Financiero Previsional (5 Años)",
+    "ruta": "KitPlanFinancieroDashboard.tsx:16 → get-download-urls.ts:564"
+   },
+   {
+    "key": "break-even",
+    "title": "Calculadora Punto de Equilibrio",
+    "ruta": "KitPlanFinancieroDashboard.tsx:17 → get-download-urls.ts:565"
+   },
+   {
+    "key": "cash-flow",
+    "title": "Cash Flow Forecast (12 Meses)",
+    "ruta": "KitPlanFinancieroDashboard.tsx:18 → get-download-urls.ts:566"
+   },
+   {
+    "key": "capex",
+    "title": "Presupuesto de Inversion / CAPEX",
+    "ruta": "KitPlanFinancieroDashboard.tsx:19 → get-download-urls.ts:567"
+   },
+   {
+    "key": "pyl",
+    "title": "P&L Mensual Real vs Presupuesto",
+    "ruta": "KitPlanFinancieroDashboard.tsx:20 → get-download-urls.ts:568"
+   },
+   {
+    "key": "ratios",
+    "title": "Dashboard de Ratios Financieros",
+    "ruta": "KitPlanFinancieroDashboard.tsx:21 → get-download-urls.ts:569"
+   },
+   {
+    "key": "viabilidad",
+    "title": "Informe de Viabilidad para Bancos",
+    "ruta": "KitPlanFinancieroDashboard.tsx:22 → get-download-urls.ts:570"
+   },
+   {
+    "key": "bonus-simulador",
+    "title": "BONUS: Simulador de Escenarios",
+    "ruta": "KitPlanFinancieroDashboard.tsx:23 → get-download-urls.ts:571"
+   },
+   {
+    "key": "bonus-checklist",
+    "title": "BONUS: Checklist Pre-Apertura",
+    "ruta": "KitPlanFinancieroDashboard.tsx:24 → get-download-urls.ts:572"
+   }
+  ],
+  "landing": {
+   "productName": "Kit Plan Financiero para Restaurantes — Plantillas Excel",
+   "cifras_prometidas": [
+    "10 plantillas Excel",
+    "39 EUR (antes 190 EUR)",
+    "3 y 5 años de proyección",
+    "48 items en checklist pre-apertura, 6 fases",
+    "4.9/5 con 8 reviews (aggregateRating)"
+   ],
+   "entregables_prometidos": [
+    "Plan Financiero Previsional 3 años con gráficos automáticos",
+    "Plan Financiero Previsional 5 años",
+    "Calculadora Punto de Equilibrio con gráfico visual de break-even",
+    "Cash Flow Forecast 12 meses",
+    "Presupuesto CAPEX",
+    "P&L Mensual Real vs Presupuesto",
+    "Dashboard de Ratios Financieros",
+    "Informe de Viabilidad para Bancos: TIR, VAN, payback period",
+    "BONUS Simulador de Escenarios",
+    "BONUS Checklist Pre-Apertura"
+   ],
+   "bonus": [
+    "Simulador de Escenarios (What-If) — 14 EUR",
+    "Checklist Pre-Apertura Financiero — 14 EUR"
+   ],
+   "faqs": [
+    "¿Sirve para un restaurante que ya esta abierto?",
+    "¿Necesito conocimientos de contabilidad?",
+    "¿El banco aceptara este informe de viabilidad?",
+    "¿Las plantillas se conectan entre si?",
+    "¿Puedo usarlo para varios restaurantes?",
+    "¿Hay garantia de devolucion?"
+   ]
+  },
+  "gate": "gate-flujo-postpago.py --offline --only kit-plan-financiero: kit-plan-financiero 10 files / 10 cards / 0 issues, 1 aviso (sección D drift/webhook sin verificar en modo offline, esperado). censo-entregables.py --only kit-plan-financiero --fail --quiet: 10 ficheros censados (10 xlsx, 0 docx, 0 pdf), OK: 0 defectos. Ambos gates deterministas en VERDE — no detectan los 2 bugs de negocio descritos abajo porque no evalúan resultados de fórmulas ni promesas de landing.",
+  "notas": [
+   "BUG 1 (grave, dinero/confianza): 07-informe-viabilidad-bancos.xlsx:Proyecciones:B21 (TIR) y B22 (VAN) referencian el rango B19:F19/C19:F19, que solo contiene la inversión inicial (B19=-150000) y celdas vacías — los flujos de caja reales están en la fila 16 'CASH FLOW OPERATIVO' (también vacía) y nunca se conectan al cálculo. Resultado: TIR y VAN siempre devuelven 'N/A' (capturado por IFERROR), y B23 'Payback (años)' no tiene ni fórmula ni valor. La landing (hero checkItems, why.reasons, faqs on-page y schema, cta.items, testimonio de 'Daniel Ortiz') y el propio TEMPLATES del dashboard prometen explícitamente 'TIR, VAN, payback period... calculados automáticamente' para este fichero — la promesa no se cumple nunca, ni siquiera tras rellenar los datos de entrada.",
+   "BUG 2 (grave, credibilidad): 05-pyl-mensual-real-vs-presupuesto.xlsx:Resumen Anual!B5:M10 son constantes 0, sin ninguna fórmula que sume las 12 hojas mensuales (Ene..Dic, cuyas filas 10/19/21 sí calculan bien Total Ingresos/Gastos/EBITDA por mes). El usuario rellena un año entero de datos reales y la pestaña de resumen anual del propio fichero nunca refleja nada.",
+   "BUG 3 (promesa incumplida, menor pero repetida): la landing y el grid de plantillas prometen 'gráficos automáticos' (hero checkItems[0]) y 'gráfico visual de break-even' (grid.templates[2]) para los ficheros 01, 01b y 02. Verificado con openpyxl: 0 objetos chart en las 12 hojas de esos 3 ficheros. No hay ningún gráfico embebido en todo el kit (10/10 ficheros, 0 charts).",
+   "No se ha detectado ningún caso de la Fase A determinista que se haya escapado: cache de valores, A4, metadata AI Chef Pro, bio anclada, 'Versión 1.1' y casilla unificada están presentes de forma consistente en los 10 ficheros (verificado en las hojas 'Instrucciones' y en los pies '© 2026 AI Chef Pro · aichef.pro').",
+   "Cruce dashboard↔función de descarga: los 10 keys de TEMPLATES[] en KitPlanFinancieroDashboard.tsx:15-25 coinciden 1:1 con las 10 keys de PRODUCT_FILES['kit-plan-financiero'] en get-download-urls.ts:562-573. Sin huérfanos ni faltantes.",
+   "Landing: 'schema.faqs' (4 preguntas) es un subconjunto distinto del 'faqs' on-page (6 preguntas) — documentado como QUIRK VERBATIM intencional en el propio fichero de datos (líneas 28-31), no se reporta como bug nuevo.",
+   "Emails (verify-purchase.ts:196-197 y resend-access.ts:196-197): accessPath '/kit-plan-financiero-access' correctamente mapeado, sin incidencias.",
+   "Changelog (productos-changelog.ts:281-296): versión 1.1 / 2026-08-22, entrada única sobre impresión A4 + metadata + versión — coherente con la Fase A ya aplicada; no menciona (ni podía, por ser fecha anterior a esta auditoría) los 2 bugs de fórmulas encontrados aquí."
+  ],
+  "emails": {
+   "verify": "verify-purchase.ts:196-197 — accessPath '/kit-plan-financiero-access' correcto, sin incidencias",
+   "resend": "resend-access.ts:196-197 — accessPath '/kit-plan-financiero-access' correcto, sin incidencias"
+  },
+  "changelog": "productos-changelog.ts:281-296 — versión 1.1, 2026-08-22, 'Revisión completa de los 10 ficheros' (A4, versión 1.1 en instrucciones, metadatos/autoría). Coherente con la Fase A ya aplicada; no cubre los bugs de fórmulas de negocio (TIR/VAN/payback rotos, Resumen Anual sin fórmulas) encontrados en esta auditoría."
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (SEO, schema Product/FAQ, hero, grid, bonus, testimonios, CTA), dashboard, emails de acceso y changelog contra el contenido real de los 10 .xlsx",
+    "veredicto": "no listo",
+    "motivo": "El kit no cumple lo que vende en sus tres promesas nucleares y las tres son verificables en 30 segundos por el comprador: (1) NO hay ni un solo gráfico en los 10 ficheros (39 hojas, `_charts` = 0) pese a prometerse en hero, grid, CTA, dashboard, FAQ y hasta en un testimonio; (2) el informe de viabilidad para bancos —el argumento de venta más caro— NUNCA calcula TIR, VAN ni payback: `IRR(B19:F19)` sólo ve la inversión inicial y devuelve «N/A» siempre, la fila de payback está vacía y la hoja de Ratios no tiene una sola fórmula; (3) las pestañas «Resumen» de 01, 01b y 05 son constantes 0 que no referencian ninguna hoja mensual, así que el usuario rellena 12 meses o 3 años y el consolidado —el que se presenta al banco— se queda en cero. Además la auditoría determinista dio por bueno el `03-cash-flow` y tiene un fallo de encadenado que lo invalida desde febrero (`SALDO INICIAL` toma la fila «Otros pagos» en vez de «SALDO FINAL»), lo que rompe justo la «alerta de liquidez» que se vende. A eso se suma exposición legal: ancla de 190 € que nunca se cobró (git demuestra 19 € → 39 € el mismo día del lanzamiento) con «-79 %» y «sube pronto» vivos desde el 2026-04-05, y 8 testimonios inventados con `aggregateRating` 4.9/8 sin sistema de reseñas, uno afirmando «me aprobaron 120.000 EUR» y otro alabando el cálculo automático de TIR/VAN que no existe. Un cliente que pide reembolso tiene razón documentada.",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "Flujo Mensual!C5:M5",
+      "hallazgo": "El saldo inicial de febrero a diciembre se encadena con la fila equivocada: apunta a «Otros pagos» (fila 22) en vez de «SALDO FINAL» (fila 25). La previsión de tesorería es errónea desde el mes 2 y, con ella, las alertas de liquidez que vende la landing, el dashboard y un testimonio. Es un caso que se le escapó a la Fase A: la fórmula es sintácticamente válida, sólo apunta mal (verificado en el fichero pre-Fase A `git show 7e050c5:` — el defecto es de origen, no lo introdujo el saneado).",
+      "evidencia": "C5='=B22', D5='=C22' … M5='=L22'. A22='Otros pagos'; A25='SALDO FINAL' con B25='=B5+B24'. Resultado: el saldo inicial de cada mes es la línea «Otros pagos» del mes anterior. La hoja Alertas!C6:C17 lee ='Flujo Mensual'!B25..M25, así que todas las alertas se calculan sobre saldos falsos. Landing ContentGrid.tsx:12 promete «Alerta automatica en rojo cuando el saldo cae por debajo del umbral de seguridad».",
+      "fix": "Reemplazar C5:M5 por '=B25', '=C25' … '=L25'. Añadir al gate de la familia kit-excel una comprobación de encadenado: toda celda etiquetada «SALDO INICIAL» del mes n debe referenciar exactamente la celda «SALDO FINAL» del mes n-1."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B21, B22, B23",
+      "hallazgo": "TIR, VAN y payback —el titular del producto, repetido en landing, dashboard, FAQ, JSON-LD y testimonio— no se calculan nunca. Las fórmulas apuntan a la fila 19, que sólo contiene la inversión inicial, mientras los flujos viven en la fila 16 «CASH FLOW OPERATIVO», que ni se referencia ni se calcula. El payback ni siquiera tiene fórmula.",
+      "evidencia": "B21='=IFERROR(IRR(B19:F19),\"N/A\")' con B19=-150000 y C19:F19 VACÍAS; B22='=IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")'; B23 (etiqueta A23='Payback (años)') sin fórmula ni valor. B20='→ Ver fila Cash Flow Operativo arriba', fila 16 = constantes 0. Las propias Instrucciones del fichero (B9) dicen «TIR, VAN y Payback se calculan automáticamente». Testimonio Daniel Ortiz (src/data/testimonials-plan-financiero.ts:53): «TIR, VAN, payback period — todo calculado automaticamente».",
+      "fix": "Fila 16 por fórmula (=B14+B10, beneficio neto + amortización); fila 19 encadenada a la 16 (B19 = −inversión, C19:F19 = C16:F16); B21='=IFERROR(IRR(B19:F19),\"—\")', B22='=IFERROR(NPV(0,08;C19:F19)+B19,\"—\")' y B23 con payback real (p.ej. índice del primer acumulado ≥0 con interpolación). Hasta que exista, retirar «TIR, VAN, payback» de landing, dashboard, FAQ y JSON-LD."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "src/components/kit-plan-financiero/HeroSection.tsx",
+      "ubicacion": "HeroSection.tsx:24 (checkItems[0]); ContentGrid.tsx:8,10,53; CtaFinal.tsx:9; KitPlanFinancieroDashboard.tsx:15; FaqAccordion.tsx:12",
+      "hallazgo": "Los «gráficos automáticos» no existen: ninguno de los 10 ficheros contiene un solo objeto chart. La promesa aparece seis veces en superficies distintas más un testimonio, y es lo primero que un comprador comprueba al abrir el Excel.",
+      "evidencia": "Barrido con openpyxl: len(ws._charts)==0 en las 39 hojas de los 10 .xlsx. Textos: HeroSection.tsx:24 «Plan financiero previsional a 3 y 5 años con gráficos automáticos»; ContentGrid.tsx:53 «Cada plantilla incluye formulas encadenadas, graficos profesionales y benchmarks reales»; ContentGrid.tsx:10 «grafico visual de break-even»; CtaFinal.tsx:9; Dashboard TEMPLATES[0].desc «Proyección ingresos y gastos a 3 años con gráficos automáticos»; FaqAccordion.tsx:12 «las formulas calculan todo automaticamente: ratios, graficos, escenarios»; testimonio Ricardo Gomez «Lo presente tal cual, con los graficos».",
+      "fix": "Insertar gráficos reales (LineChart de EBITDA/ingresos en 01 y 01b, gráfico de break-even en 02, barras comparadas en BONUS-08 y en el Comparativa) o eliminar la palabra «gráficos» de las 6 superficies + el testimonio. Añadir al gate: si la copy dice «gráfico», exigir ≥1 chart en el .xlsx correspondiente."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/01-plan-financiero-previsional.xlsx",
+      "ubicacion": "Resumen!B5:D8 (01); Resumen!B5:F8 (01b); Resumen Anual!B5:N10 (05)",
+      "hallazgo": "Las pestañas «Resumen» de las tres plantillas de proyección no consolidan nada: son constantes 0 sin ninguna referencia a las hojas de año/mes. El usuario rellena 12 meses (o 3-5 años) y el consolidado —justo la hoja que se imprime para el banco o el inversor— sigue en cero para siempre, sin un solo aviso.",
+      "evidencia": "01!Resumen: A5='Total Ingresos' B5=0 C5=0 D5=0 (sólo E5 tiene fórmula '=IF(B5=0,0,(D5-B5)/B5)'), filas 6-8 enteras a 0. 01b!Resumen: B5:F8 a 0, sólo G5 con fórmula. 05!'Resumen Anual': B5:N10 = 60 constantes 0 pese a que 'Ene'!B10, 'Ene'!B19 y 'Ene'!B21 sí calculan. Las Instrucciones lo prometen explícitamente: 01!B10 «La pestaña Resumen consolida los 3 años para presentación a inversores o bancos», 01b!B12, 05!B10. Contraste dentro del mismo kit: 04!Resumen!B5=\"='Obra'!B15\" sí está bien encadenado, luego el patrón correcto existe.",
+      "fix": "01!Resumen: B5=\"='Año 1'!N10\", C5=\"='Año 2'!N10\", D5=\"='Año 3'!N10\"; B6..D6 →N19; B7..D7 →N21; B8..D8 →N22; replicar E6:E8 con la fórmula de crecimiento. 01b igual hasta Año 5. 05!'Resumen Anual': B5=Ene!B10, B6=Ene!C10, B7=Ene!B19, B8=Ene!C19, B9=Ene!B21, B10=Ene!C21 y arrastrar por los 12 meses; N = SUM(B:M)."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "src/components/kit-plan-financiero/HeroSection.tsx",
+      "ubicacion": "HeroSection.tsx:113-118, BuyBox.tsx:16-21, BonusSection.tsx:66-70, CtaFinal.tsx:52-54, ProductosDigitales.tsx:318-319",
+      "hallazgo": "El precio ancla de 190 € nunca se ha cobrado. El historial demuestra que el producto salió a 19 € y subió a 39 € el mismo día; los 190 € se inventaron en el propio commit de subida de precio. Anunciar «-79 %», «Ahorra 151 EUR HOY» y «Precio especial de lanzamiento. Sube pronto» sobre una referencia inexistente —y llevando así 4,5 meses— choca de frente con el art. 20 de la Ley 7/1996 tras la Directiva Ómnibus (RDL 24/2021): el precio anterior anunciado debe ser el más bajo aplicado en los 30 días previos, que aquí fue 19 €, no 190 €.",
+      "evidencia": "git: 153ccc1 (2026-04-05) «launch Kit Plan Financiero para Restaurantes (#19, €19)» y 7196f1c (2026-04-05) «update Kit Plan Financiero pricing to €39 (was €19) … Original price: €190, discount: -79%». Landing viva desde entonces con HeroSection.tsx:114 '190 EUR' tachado + '-79%' y :117 «Precio especial de lanzamiento. Sube pronto»; BonusSection.tsx:69 «Ahorra 151 EUR HOY»; schema priceValidUntil '2026-12-31'.",
+      "fix": "Retirar el tachado de 190 € y el «-79 %» de las 5 superficies, o sustituirlos por un ancla defendible y documentada (p.ej. suma de precios individuales realmente publicados de cada plantilla). Quitar «Sube pronto» mientras el precio no vaya a subir con fecha."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "src/data/testimonials-plan-financiero.ts",
+      "ubicacion": "testimonials-plan-financiero.ts:10-58 y KitPlanFinanciero.tsx:57-62 (aggregateRating + review[])",
+      "hallazgo": "Los 8 testimonios son ficticios (nombres genéricos, avatares de stock reutilizados en todo el catálogo) y alimentan un aggregateRating 4.9 con reviewCount 8 en el JSON-LD sin que exista ningún sistema de reseñas. Dos de ellos describen funciones que el producto NO tiene, y uno atribuye al kit un resultado financiero concreto («me aprobaron 120.000 EUR»). Es publicidad engañosa (art. 5 y 7 LGDCU / Ley 3/1991) y, además, review self-serving en marcado Product, que Google prohíbe desde 2019 (riesgo de acción manual sobre el dominio).",
+      "evidencia": "testimonials-plan-financiero.ts:14 «Me aprobaron 120.000 EUR en 2 semanas» + «con los graficos» (no hay gráficos, COM-03); :53 «TIR, VAN, payback period — todo calculado automaticamente» (nunca se calculan, COM-02); :44 «cash flow forecast con alertas de liquidez … ven 3 meses antes» (encadenado roto, COM-01). KitPlanFinanciero.tsx:57 '\"aggregateRating\": {\"ratingValue\":\"4.9\",\"reviewCount\":\"8\"}' y :59-61 tres Review con Person inventadas.",
+      "fix": "Eliminar del JSON-LD el bloque aggregateRating y el array review hasta tener reseñas verificables. En la marquee, o bien sustituir por casos reales con consentimiento, o etiquetar el bloque como ejemplos ilustrativos. En cualquier caso, borrar YA la cifra «120.000 EUR» y las menciones a gráficos y a TIR/VAN automáticos."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!C22 y D22",
+      "hallazgo": "El RevPASH está mal calculado: divide entre metros cuadrados por hora en vez de entre plazas (asientos) por hora. RevPASH es, por definición, Revenue Per Available Seat Hour. El benchmark que se le pone al lado («> 8 € casual dining») es un umbral por plaza-hora, así que el usuario compara peras con manzanas y con los datos precargados le sale 2,95 € — una falsa alarma de catástrofe. Es un ratio que la landing y el dashboard citan por su nombre.",
+      "evidencia": "C22='=C6/(C11*C12)' con C11='m² de sala'=80 y C12='Horas de servicio / mes'=360; B22='RevPASH (€/m²/hora)'; D22='> 8€ casual dining'. Con el ejemplo: 85.000/(80×360)=2,95 €. No existe fila de plazas/aforo en la hoja. Promesa: ContentGrid.tsx:14 «Calcula food cost %, labor cost %, prime cost %, GOP, RevPASH» y dashboard TEMPLATES ratios.desc.",
+      "fix": "Añadir la fila «Nº de plazas (aforo)» y cambiar C22='=C6/(aforo*C12)', reetiquetando B22 a 'RevPASH (€/plaza/hora)'. Si se quiere conservar la métrica por superficie, dejarla como fila aparte «Ventas por m²» con su propio benchmark; no reutilizar el umbral de RevPASH."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "Simulador!B11:D11 vs 02-calculadora-punto-equilibrio.xlsx:Datos!C7 y C14",
+      "hallazgo": "El escenario base precargado duplica el coste de personal: toma como «Costes fijos mensuales» exactamente los 19.000 € que en el fichero 02 ya incluyen 12.000 € de nóminas fijas, y encima aplica un Labor Cost del 28 % sobre ventas. Resultado: el mismo restaurante base sale rentable en la calculadora 02 y en pérdidas de 63.264 €/año en el simulador. Dos plantillas del mismo kit cuentan historias opuestas sobre el mismo negocio, y el simulador es el que la landing vende como «Negociar con inversores o socios».",
+      "evidencia": "08!C11=19000 (base) y C10=0,28 Labor Cost; 02!Datos!C14='=SUM(C6:C13)'=19.000 incluyendo C7=12000 'Nóminas fijas (bruto)'. Cálculo con los valores de fábrica — 02 base: 22×55×26=31.460 − 35 % CV − 19.000 = +1.449 €/mes. 08 base: 22×60×26=34.320 − food 10.982 − labor 9.610 − fijos 19.000 = −5.272 €/mes (C21 = −63.264 €/año). No hay ninguna nota que advierta de qué debe excluir «Costes fijos».",
+      "fix": "En 08, renombrar la fila 11 a «Costes fijos mensuales SIN personal (€)» y bajar los defaults a ~7.000/6.500/6.000 (los 19.000 menos las nóminas), o alternativamente eliminar la fila Labor Cost % y dejar el personal dentro de los fijos. Añadir en Instrucciones una línea explícita: «si copias los costes fijos del fichero 02, resta antes las nóminas». Homogeneizar el escenario Base de 02 y 08 (mismo ticket, mismos cubiertos, mismos días)."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "Instrucciones!B8 y Flujo Mensual!B21:M21",
+      "hallazgo": "El fichero afirma por escrito que «El IVA trimestral se calcula automáticamente», y la línea de liquidación de IVA es un input manual a cero: no hay tipo de IVA, ni base repercutida/soportada, ni ninguna fórmula trimestral. En una previsión de tesorería, el trimestre del IVA es precisamente el mes que hunde la caja de un restaurante nuevo; prometerlo automático y no darlo es peor que no ofrecerlo.",
+      "evidencia": "Instrucciones!B8=\"▸ El IVA trimestral se calcula automáticamente (línea 'Liquidación IVA').\"; Flujo Mensual!A21='Liquidación IVA trimestral' con B21..M21 = 0 constantes, sin fórmula. Los cobros y pagos se piden «IVA incl.» (A7:A9, B12/B13) pero no hay ningún tipo de IVA declarado en el libro. Landing ContentGrid.tsx:11 «desfase cobros/pagos, IVA trimestral y estacionalidad».",
+      "fix": "Añadir bloque de parámetros (IVA repercutido 10 % hostelería, IVA soportado 10/21 % por tipo de compra) y calcular en abril/julio/octubre/enero: '=(SUM(cobros del trimestre)/1,10*0,10) − (SUM(compras del trimestre)/1,21*0,21)'. Si no se implementa, corregir Instrucciones!B8 a «introduce aquí tu liquidación trimestral» y quitar «IVA trimestral» de la landing."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:24-26, WhySection.tsx:13-15, ProductosDigitales.tsx:320",
+      "hallazgo": "«Las plantillas se conectan entre sí» / «fórmulas encadenadas» entre ficheros es falso: los 10 libros son islas, sin una sola referencia externa. La FAQ describe tres encadenados concretos que no existen (CAPEX→cash flow, previsional→break-even, P&L→ratios), y es la respuesta a una pregunta que el comprador hace justo antes de pagar.",
+      "evidencia": "Comprobado en los 10 .xlsx: 0 partes `externalLink` en el paquete OOXML (unzip -l | grep externalLink = 0 en todos). FaqAccordion.tsx:25 «Si. Las formulas estan encadenadas: los datos del CAPEX alimentan el cash flow, el plan previsional alimenta el break-even, y los ratios se calculan automaticamente desde el P&L»; WhySection.tsx:14 idéntico; hub ProductosDigitales.tsx:320 «10 plantillas Excel con fórmulas encadenadas».",
+      "fix": "Reescribir la FAQ con la verdad útil: «cada plantilla es independiente para que puedas usar sólo la que necesitas; dentro de cada una las fórmulas sí están encadenadas (mensual→total→resumen)». Y añadir en cada Instrucciones una línea «de dónde sacar este dato» que remita al fichero hermano por su número, que es el encadenado realista entre libros separados."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "netlify/functions/verify-purchase.ts",
+      "ubicacion": "verify-purchase.ts:200, resend-access.ts:200, src/data/productos-digitales-config.ts:877 y 880",
+      "hallazgo": "El primer correo que recibe el cliente después de pagar dice «las 9 plantillas financieras» cuando el producto se vende como 10 y el dashboard le muestra 10 tarjetas. Es la peor superficie para descontar una unidad: el comprador acaba de pagar y ya está contando.",
+      "evidencia": "verify-purchase.ts:200 «…descargar las 9 plantillas financieras:»; resend-access.ts:200 idéntico; productos-digitales-config.ts:877/880 igual. Frente a KitPlanFinanciero.tsx:26 «10 plantillas Excel», ContentGrid.tsx:47 «10 Plantillas de Plan Financiero», Dashboard «Tus 10 plantillas financieras» y 10 entradas en get-download-urls.ts:563-572.",
+      "fix": "Cambiar los 4 textos a «las 10 plantillas financieras (8 + 2 bonus)». Ojo: el mapa de descargas y las tarjetas ya son 10, sólo la copy del email está desfasada."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/BuyBox.tsx",
+      "ubicacion": "BuyBox.tsx:18 y :22",
+      "hallazgo": "El mismo recuadro de compra muestra dos descuentos distintos: la píldora dice «-79%» y la línea de debajo «72% de descuento». Un comprador escéptico que ve dos cifras contradictorias a 4 cm de distancia asume que el ancla es inventada — y en este caso tiene razón (COM-05).",
+      "evidencia": "BuyBox.tsx:18 <span …>-79%</span> junto a '190 EUR' tachado y '39 EUR'; BuyBox.tsx:22 «Precio especial de lanzamiento — 72% de descuento». 190→39 es -79,5 %; el 72 % es residuo de una versión anterior de precios.",
+      "fix": "Unificar a una sola cifra (o eliminar ambas al ejecutar COM-05). Si se conserva el descuento, calcularlo en tiempo de render desde precio y ancla en vez de escribirlo a mano en cada componente."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/ContentGrid.tsx",
+      "ubicacion": "ContentGrid.tsx:12 vs 04-presupuesto-inversion-capex.xlsx (7 hojas)",
+      "hallazgo": "La ficha del CAPEX promete «Totales con y sin IVA» y en el fichero no hay ni una celda de IVA: ninguna columna, ningún tipo, ningún total alternativo. Para una inversión de apertura, distinguir base e IVA soportado (que se recupera) es exactamente el dato por el que se compra la plantilla.",
+      "evidencia": "ContentGrid.tsx:12 «Presupuesto vs real con % desviacion. Totales con y sin IVA.» El fichero 04 tiene sólo B='Presupuesto (€)', C='Real (€)', D='Desviación %', E='Notas' en Obra, Equipamiento Cocina, Mobiliario Sala, Tecnología y Licencias, y Resumen!B4:D4 con las mismas tres. Grep de 'IVA' en el libro: 0 apariciones.",
+      "fix": "Añadir columnas «% IVA» y «Total con IVA» por partida (21 % por defecto, editable) y dos totales en Resumen (base imponible / total desembolso), o retirar la frase de la landing."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/03-cash-flow-forecast.xlsx",
+      "ubicacion": "Alertas!D6:D17 (y todas las hojas del kit)",
+      "hallazgo": "«Alerta automática en rojo» no es roja: no hay una sola regla de formato condicional en ninguna hoja de los 10 ficheros. La alerta es texto plano con un emoji, así que si el usuario imprime en A4 en blanco y negro —que es justo lo que la Fase A habilitó— no destaca nada.",
+      "evidencia": "Barrido openpyxl: len(ws.conditional_formatting._cf_rules)==0 en las 39 hojas de los 10 .xlsx. Alertas!D6='=IF(C6<$C$3,\"⚠️ BAJO MÍNIMO\",\"OK\")' sin fill condicional. ContentGrid.tsx:11 «Alerta automatica en rojo cuando el saldo cae por debajo del umbral de seguridad».",
+      "fix": "Añadir formato condicional real: en 03!Alertas!C6:D17 fondo rojo si C<$C$3; en 05 semáforo por color en F6:F21; en 06!E17:E20 verde/ámbar/rojo. Es la forma barata de cumplir la promesa visual sin insertar gráficos."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/ContentGrid.tsx",
+      "ubicacion": "ContentGrid.tsx:11 vs 03-cash-flow-forecast.xlsx",
+      "hallazgo": "La ficha del cash flow vende «estacionalidad» y en el fichero no hay ningún mecanismo de estacionalidad: ni coeficientes por mes, ni curva, ni siquiera una fila de notas para marcarla. Son 12 columnas idénticas a cero.",
+      "evidencia": "ContentGrid.tsx:11 «Flujo de caja mensual con desfase cobros/pagos, IVA trimestral y estacionalidad». En 03!'Flujo Mensual' las 12 columnas B:M tienen exactamente la misma estructura sin ningún factor mensual; grep de 'estacional' en el libro: 0 apariciones. Tampoco existe el «desfase cobros/pagos» como funcionalidad (no hay días de cobro/pago ni decalaje).",
+      "fix": "O añadir una fila de «% estacionalidad» por mes que module los cobros previstos (y un parámetro de días de cobro/pago para el desfase), o dejar en la landing sólo lo que el fichero hace: previsión mensual de cobros y pagos con saldo y umbral de alerta."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B19 vs Resumen Ejecutivo!B13",
+      "hallazgo": "La inversión inicial está clavada a -150.000 € sin marcarla como ejemplo y sin ninguna relación con la «Inversión total necesaria» que el usuario acaba de escribir en el Resumen Ejecutivo. En un documento cuyo propósito literal es imprimirse y entregarse en una sucursal, el riesgo es que el cliente presente al banco la cifra de otro proyecto.",
+      "evidencia": "Proyecciones!A19='Inversión inicial (negativa)', B19=-150000 (constante, celda de fondo verde de «input» igual que las demás). Resumen Ejecutivo!B13='Inversión total necesaria' con su celda de valor vacía, sin vínculo. Todo el resto de la hoja Proyecciones está a 0.",
+      "fix": "B19='=-\\'Resumen Ejecutivo\\'!C13' (o la celda de valor que corresponda) y dejar el 150.000 sólo como nota de ejemplo en la columna de comentarios. Regla general para la familia: ningún importe con aspecto de dato real puede quedar hardcodeado en una hoja que se imprime para un tercero."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Ratios!C4:C10",
+      "hallazgo": "La hoja «Ratios» del informe bancario no calcula ninguno de sus siete ratios: sólo tiene el nombre y la referencia que pide el banco, con la columna «Valor» vacía y sin fórmulas. Justo los indicadores por los que un banco aprueba o deniega (DSCR, endeudamiento, fondos propios/inversión) se los tiene que calcular a mano el hostelero, que es quien compró la plantilla para no hacerlo.",
+      "evidencia": "Ratios!B4:B10 = 'Ratio de endeudamiento', 'Cobertura de deuda (DSCR)', 'Ratio de liquidez corriente', 'Margen EBITDA / Ventas', 'ROI', 'Fondos propios / Inversión', 'Deuda / EBITDA'; D4:D10 con las referencias ('< 60%', '> 1.25x'…); C4:C10 completamente vacías, sin fórmula. Todo el libro tiene 3 fórmulas. FaqAccordion.tsx:25: «los ratios se calculan automaticamente».",
+      "fix": "Encadenar cada ratio a Resumen Ejecutivo y Proyecciones: DSCR='=Proyecciones!B16/(cuota anual)', Margen EBITDA='=Proyecciones!B9/Proyecciones!B4', Fondos propios/Inversión='=RE!fondos/RE!inversión', Deuda/EBITDA, ROI='=Proyecciones!B14/RE!inversión'. Añadir columna «Estado» con el semáforo contra la referencia de la columna D."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B4:F16",
+      "hallazgo": "La hoja de proyecciones del informe bancario no encadena absolutamente nada: TOTAL GASTOS, EBITDA, BAI, Impuesto de Sociedades (25 %), BENEFICIO NETO y CASH FLOW OPERATIVO son constantes 0 en los cinco años. El comprador tiene que calcular a mano hasta la suma de sus propios gastos y su cuota del 25 %, en la plantilla que se vende como «formato profesional listo para presentar».",
+      "evidencia": "B8:F8 ('TOTAL GASTOS') = 0 y no '=SUM(B5:B7)'; B9 ('EBITDA') = 0 y no '=B4-B8'; B12 ('BAI') = 0 y no '=B9-B10-B11'; B13 ('Impuesto Sociedades (25%)') = 0 y no '=MAX(0;B12*0,25)'; B14 ('BENEFICIO NETO') = 0; B16 ('CASH FLOW OPERATIVO') = 0. Total de fórmulas del libro: 3 (B21, B22 y Garantías!C10).",
+      "fix": "Rellenar las seis filas con sus fórmulas en las cinco columnas (30 celdas) y dejar como inputs sólo B4:F7 y B10:F11. Es prerrequisito de COM-02: sin la fila 16 calculada, TIR y VAN no tienen de dónde salir."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Datos!C6:C21 y Break-Even!C5:C11",
+      "hallazgo": "El ejemplo precargado —que no está etiquetado como ejemplo en ninguna parte— describe un restaurante que el propio kit calificaría de inviable: con esos datos el labor cost en el punto de equilibrio es del 41 % y el prime cost ronda el 71 %, ambos en «peligro» según la hoja Benchmarks del fichero 06. La calculadora lo presenta sin ningún aviso, de modo que el usuario que sólo mira el resultado se lleva una referencia mental falsa de lo que es normal.",
+      "evidencia": "Datos!C7=12000 'Nóminas fijas (bruto)'; C14='=SUM(C6:C13)'=19.000; C17=0,35; C20=22; C21=26. Break-Even!C8='=Datos!C14/(1-Datos!C17)'=29.230,77 €/mes → nóminas/ventas = 12.000/29.230,77 = 41,0 %; con food cost ~30 % el prime cost ≈ 71 %. 06!Benchmarks!E5 'Labor Cost > 30% = Peligro' y E6 'Prime Cost > 65% = Peligro'. Ninguna celda de Datos dice «ejemplo».",
+      "fix": "Añadir en Datos!D4 o en una fila de cabecera el texto «VALORES DE EJEMPLO — sustitúyelos por los tuyos» y bajar las nóminas del ejemplo a un valor coherente con los benchmarks del propio kit (~8.000-9.000 € para ese volumen). Aplicar la misma etiqueta al ejemplo de 06!Ratios!C6:C12 y a los escenarios de 08."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Escenarios!C7:E7 y Escenarios!C10:E10",
+      "hallazgo": "La hoja de escenarios está desconectada de los datos del usuario: los costes fijos van clavados a 19.000 € y los días de apertura al mes van hardcodeados dentro de la fórmula (26). Si el hostelero cambia sus costes o abre 30 días, los tres escenarios siguen calculando con el ejemplo de fábrica y no hay ningún indicio en pantalla de que eso está pasando.",
+      "evidencia": "Escenarios!C7=19000, D7=19000, E7=19000 (constantes, no '=Datos!C14'); C10='=C4*C5*26', D10='=D4*D5*26', E10='=E4*E5*26' (el 26 literal en vez de 'Datos!C21'). La landing vende los 3 escenarios como parte de la calculadora: ContentGrid.tsx:10 «Incluye 3 escenarios (pesimista/realista/optimista)».",
+      "fix": "C7:E7='=Datos!$C$14' (o dejarlos editables pero precargados con esa fórmula y una nota) y sustituir el 26 por '=Datos!$C$21' en C10:E10. Regla para el gate de la familia: ningún parámetro que exista como input en otra hoja del mismo libro puede aparecer como literal dentro de una fórmula."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "src/pages/KitPlanFinanciero.tsx",
+      "ubicacion": "KitPlanFinanciero.tsx:70-77 vs src/components/kit-plan-financiero/FaqAccordion.tsx:5-38",
+      "hallazgo": "El FAQPage del JSON-LD no coincide con la FAQ visible: declara 4 preguntas de las 6 que se muestran, y una de ellas con un enunciado distinto al de la página. Google exige que el contenido marcado sea el mismo que ve el usuario; el desajuste puede costar el rich result de toda la página.",
+      "evidencia": "Schema (KitPlanFinanciero.tsx:73-76): 4 Question, con «¿El banco aceptara este informe?». Accordion (FaqAccordion.tsx): 6 preguntas, y la equivalente es «¿El banco aceptara este informe de viabilidad?». Faltan en el schema «¿Las plantillas se conectan entre si?» y «¿Puedo usarlo para varios restaurantes?». Las respuestas del schema también están recortadas respecto a las visibles.",
+      "fix": "Generar el JSON-LD a partir del mismo array `faqs` que renderiza el acordeón, en lugar de mantener dos copias a mano. Ojo al hacerlo: la respuesta de «se conectan entre sí» hay que corregirla antes (COM-10) o se estaría marcando una afirmación falsa."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "productos-changelog.ts:281-296",
+      "hallazgo": "El changelog que ve el comprador dentro de su dashboard titula la v1.1 «Revisión completa de los 10 ficheros» cuando lo revisado fue sólo la forma (A4, metadatos, número de versión). Ninguno de los tres puntos toca el contenido, y la revisión dejó vivos un informe bancario que no calcula nada y tres resúmenes en cero. Prometer «revisión completa» a quien ya pagó es lo que convierte un fallo en una petición de reembolso.",
+      "evidencia": "productos-changelog.ts:288 title «Revisión completa de los 10 ficheros»; :290-292 los tres cambios son «Impresión en A4 configurada…», «Número de versión actualizado a 1.1…», «Metadatos, instrucciones y autoría actualizados…». Contrastar con COM-01, COM-02, COM-04, COM-09 y COM-17, todos vivos en esa misma v1.1.",
+      "fix": "Retitular a lo que fue («Formato de impresión, metadatos y versión en los 10 ficheros») y reservar «revisión completa» para la v1.2 que arregle los cálculos. Añadir en esa v1.2 una entrada explícita por cada fórmula corregida — es el gesto que recupera la confianza del que ya detectó el fallo."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/HeroSection.tsx",
+      "ubicacion": "HeroSection.tsx:71; FaqAccordion.tsx:16; testimonials-plan-financiero.ts:14,19,26; KitPlanFinanciero.tsx:60",
+      "hallazgo": "«años» aparece seis veces escrito «anos» —incluido el badge rojo del hero, que es la primera línea que lee todo visitante, y el JSON-LD de una reseña—. En español «ano» significa otra cosa, y en una página que vende rigor financiero a 39 € el desliz trabaja en contra justo del argumento («formato profesional listo para el banco»).",
+      "evidencia": "HeroSection.tsx:71 «cierra en los primeros 3 anos»; FaqAccordion.tsx:16 «proyecciones a 3 anos»; testimonials:14 «El plan previsional a 3 anos», :19 «+15 anos», :26 «a final de ano»; KitPlanFinanciero.tsx:60 (reviewBody) «a 3 anos». El resto de la landing sí usa «años» correctamente (HeroSection.tsx:24, ContentGrid.tsx:8), así que es incoherencia interna, no una decisión de codificación.",
+      "fix": "Corregir las 6 ocurrencias a «años». Y de paso el resto de acentos perdidos de estos componentes (formulas, graficos, automatico, semaforo, mas, tecnologia, desviacion…), que están por decenas: un `grep -nE '\\b(anos|ano|formulas|graficos|automatico|semaforo)\\b'` sobre src/components/kit-plan-financiero/ los lista todos."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/HeroSection.tsx",
+      "ubicacion": "HeroSection.tsx:70-72",
+      "hallazgo": "El gancho del hero afirma un dato estadístico concreto sin fuente ni año: «El 60% de los restaurantes cierra en los primeros 3 anos por falta de planificacion financiera». Ni la cifra ni la atribución causal están respaldadas en ninguna parte del repo, y la regla capital del proyecto prohíbe expresamente inventar cifras. Es además el tipo de dato que un lector informado reconoce como leyenda urbana, y desactiva la credibilidad del resto de la página.",
+      "evidencia": "HeroSection.tsx:70-72, badge rojo con borde de alarma. No hay fuente en el componente, ni en la landing, ni en ningún fichero del kit. La misma cifra no aparece citada en ningún otro producto del catálogo con respaldo.",
+      "fix": "O citar fuente y año verificables junto a la cifra (INE, Hostelería de España, Cámaras de Comercio) ajustando el porcentaje a lo que esa fuente diga, o reformular sin número: «la mayoría de los cierres tempranos se explican por una planificación financiera inexistente»."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "media",
+      "fichero": "src/components/kit-plan-financiero/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:16-17",
+      "hallazgo": "La FAQ responde «Sí, el banco lo aceptará» y remata con «Lo hemos validado con asesores financieros», sobre un fichero que no calcula ninguno de los cuatro indicadores que la propia respuesta enumera. Es la afirmación de la landing con más potencial de reembolso: el cliente lo descubre precisamente el día que va a pedir el préstamo.",
+      "evidencia": "FaqAccordion.tsx:16 «…la estructura que las entidades financieras esperan ver: resumen ejecutivo, proyecciones a 3 anos, TIR, VAN, payback period y escenarios. Lo hemos validado con asesores financieros.» Frente a 07!Proyecciones!B21/B22 devolviendo «N/A» siempre, B23 vacía, Ratios!C4:C10 vacías y filas 4-16 en constantes 0 (COM-02, COM-17, COM-18). Además el fichero proyecta a 5 años, no a 3.",
+      "fix": "Arreglar primero el fichero (COM-02/17/18). Después reescribir la respuesta sin garantizar la decisión de un tercero: «te da la estructura que piden las entidades — resumen ejecutivo, proyecciones, ratios de solvencia, TIR, VAN y payback — pero la aprobación depende de tu proyecto». Retirar «lo hemos validado con asesores financieros» salvo que se pueda nombrar quién y cuándo."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "Simulador!A7 e Instrucciones!B7",
+      "hallazgo": "Landing, dashboard y las propias Instrucciones dicen que se modifica la «ocupación», y la variable que existe es «Cubiertos / día». No hay aforo ni porcentaje de ocupación en ninguna parte del libro, así que quien busque la palabra no la encuentra.",
+      "evidencia": "Instrucciones!B7 «Cambia los valores de Ticket Medio, Ocupación y Food Cost»; Simulador!A7='Cubiertos / día'. ContentGrid.tsx:15 y BonusSection.tsx:12 «Modifica ticket medio, ocupacion, food cost»; dashboard bonus-simulador.desc.",
+      "fix": "O añadir «Aforo (plazas)» y «% ocupación» con cubiertos/día = aforo × rotaciones × ocupación, o cambiar la palabra «ocupación» por «cubiertos/día» en las cuatro superficies y en Instrucciones!B7."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "baja",
+      "fichero": "src/components/kit-plan-financiero/ContentGrid.tsx",
+      "ubicacion": "ContentGrid.tsx:10 vs 02-calculadora-punto-equilibrio.xlsx:Datos!C20",
+      "hallazgo": "La ficha dice que la calculadora «calcula ticket medio necesario», y el ticket medio es un dato de entrada, no un resultado: la plantilla calcula facturación y cubiertos necesarios dando el ticket por conocido. Quien compre buscando «qué ticket medio necesito» no encuentra esa respuesta.",
+      "evidencia": "ContentGrid.tsx:10 «Calcula ticket medio necesario, comensales/dia minimos y umbral de facturacion». 02!Datos!C20=22 'Ticket medio por comensal' es input; Break-Even!C10='=C9/Datos!C20' usa el ticket para despejar cubiertos, nunca al revés.",
+      "fix": "Añadir una fila «Ticket medio necesario» = facturación break-even/día ÷ cubiertos previstos/día (con los cubiertos como nuevo input), o corregir la ficha a «calcula la facturación y los comensales/día mínimos a partir de tu ticket medio»."
+     },
+     {
+      "id": "COM-28",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/01b-plan-financiero-previsional-5-anos.xlsx",
+      "ubicacion": "Instrucciones!B9",
+      "hallazgo": "Frase de instrucciones sin sentido, resto evidente de una edición a medias: dice dos veces lo mismo como si fueran cosas distintas. Es la primera pestaña que abre el usuario.",
+      "evidencia": "Instrucciones!B9='▸ Año 1 con desglose mensual. Años 2-5 con desglose mensual.' (las 5 pestañas de año sí tienen las 12 columnas Ene-Dic, luego lo correcto es simplemente decirlo una vez).",
+      "fix": "Sustituir por «▸ Los 5 años con desglose mensual (Ene-Dic) y total anual automático.»"
+     },
+     {
+      "id": "COM-29",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!E17, E18, E19 vs Benchmarks!C4:E6 e Instrucciones!B12:B14",
+      "hallazgo": "Los umbrales del semáforo no coinciden con la tabla de benchmarks del mismo fichero ni con lo que dicen sus instrucciones. Un usuario con food cost del 32,5 % lee «Aceptable» en la hoja Ratios y «Peligro» según Instrucciones. No invalida el cálculo, pero es exactamente el detalle que un director financiero escéptico usa para descartar la plantilla.",
+      "evidencia": "E17 usa <0,33 para «Aceptable» mientras Instrucciones!B12 dice «Food Cost ideal: 28-32%» y Benchmarks!D4 dice «28% - 33%»; E18 usa <0,31 frente a Benchmarks!E5 «Labor Cost > 30% = Peligro»; E19 usa <0,66 frente a Benchmarks!E6 «Prime Cost > 65% = Peligro».",
+      "fix": "Reemplazar los literales de las tres fórmulas por referencias a la hoja Benchmarks (o al menos alinear a 0,32 / 0,30 / 0,65) y corregir Instrucciones!B12:B14 para que digan lo mismo. Una sola fuente de umbrales por fichero."
+     },
+     {
+      "id": "COM-30",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "Checklist!C59 y C55",
+      "hallazgo": "El porcentaje de avance divide entre un 48 escrito a mano y el total de tareas también es una constante. Si el usuario añade sus propios trámites (algo esperable en un checklist de apertura, donde cada comunidad autónoma pide lo suyo), el porcentaje se descuadra en silencio y puede superar el 100 %.",
+      "evidencia": "C59='=COUNTIF(F5:F52,\"Completada\")/48'; C55=48 constante. Los contadores C56:C58 sí usan rangos.",
+      "fix": "C55='=COUNTA(C5:C60)' sobre un rango con filas libres formateadas y validadas, y C59='=IF($C$55=0,0,COUNTIF(F5:F60,\"Completada\")/$C$55)'. Es el mismo «contador honesto» que ya se implementó en el Kit de Tareas v2.0; conviene reutilizar el patrón."
+     },
+     {
+      "id": "COM-31",
+      "severidad": "baja",
+      "fichero": "src/components/kit-plan-financiero/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:16 vs 07-informe-viabilidad-bancos.xlsx:Proyecciones!A1",
+      "hallazgo": "La FAQ y el JSON-LD dicen que el informe bancario lleva «proyecciones a 3 años» y el fichero proyecta a 5. Es una incoherencia menor pero cae en la respuesta más sensible de la página (la del banco), donde cada detalle se lee con lupa.",
+      "evidencia": "FaqAccordion.tsx:16 «proyecciones a 3 anos»; KitPlanFinanciero.tsx:75 igual. 07!Proyecciones!A1='Proyecciones Financieras — 5 Años' con columnas B3:F3 = Año 1..Año 5; Instrucciones!B14 «P&L + Cash Flow resumido 5 años».",
+      "fix": "Cambiar a «proyecciones a 5 años» en la FAQ visible y en el JSON-LD (que además hay que unificar, COM-21)."
+     },
+     {
+      "id": "COM-32",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-plan-financiero/06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!B9, C20 y D20",
+      "hallazgo": "El GOP se calcula restando unos «Gastos operativos totales» que el fichero no define: no dice si incluyen alquiler, seguros o amortización. Según USALI el GOP se calcula antes de alquiler y cargas fijas, así que el benchmark «> 15%» sólo es comparable si el usuario excluye esas partidas — y nada se lo indica. Dos usuarios con el mismo negocio obtendrán GOP distintos.",
+      "evidencia": "B9='Gastos operativos totales (€)' C9=72250 sin nota de qué incluye (D9 sólo dice 'Mensual'); C20='=(C6-C9)/C6'; D20='> 15%'. En cambio B6:B8 sí concretan («Coste materia prima», «Coste personal total»).",
+      "fix": "Precisar la etiqueta a «Gastos operativos totales (incluye materia prima y personal; EXCLUYE alquiler, seguros y amortización)» y, ya puestos, calcularla por fórmula a partir de C7+C8+una fila nueva de «Otros gastos operativos», para que no se pueda meter un número incoherente con las filas de arriba."
+     }
+    ]
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + pycel) — kit-plan-financiero, 10 xlsx, 1.373 fórmulas evaluadas y 4 pruebas de evaluación con inputs reales",
+    "veredicto": "no listo",
+    "motivo": "Los gates deterministas están en verde, pero la evaluación con datos reales demuestra que 5 de los 10 ficheros no calculan lo que dicen calcular. El más grave NO estaba en el inventario previo (que daba 03 por «formulación correcta»): en 03-cash-flow-forecast.xlsx la cadena de saldos arrastra la fila 22 («Otros pagos») en lugar de la fila 25 (SALDO FINAL) — probado con pycel: enero cierra en 33.766 € y febrero abre en 1.234 €, y la hoja Alertas dispara 11 falsas alarmas de liquidez sobre 12 meses. A eso se suman tres hojas de consolidación que son rejillas de ceros sin una sola referencia entre hojas (01!Resumen, 01b!Resumen, 05!'Resumen Anual'), la hoja Proyecciones del informe bancario donde TOTAL GASTOS, EBITDA, BAI, impuesto, BENEFICIO NETO y CASH FLOW son constantes 0 sin fórmula (probado: con 300.000 € de facturación y 90.000 € de food cost, B8=B9=B14=0), y TIR/VAN/payback que nunca se calculan. Además, dos promesas verificables de la landing son falsas en los 10 ficheros: 0 objetos chart y 0 enlaces externos entre libros («las plantillas se conectan entre sí»). Un cliente que pague 39 € y lleve esto a un banco presenta un documento con todas las cifras en cero y una previsión de tesorería incorrecta: es escenario de reembolso.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "03-cash-flow-forecast.xlsx:Flujo Mensual:C5:M5",
+      "hallazgo": "La cadena de arrastre del saldo está desplazada 3 filas: el SALDO INICIAL de cada mes referencia la fila 22 («Otros pagos», una línea de PAGOS incluida en TOTAL PAGOS) en lugar de la fila 25 (SALDO FINAL). El resultado es que la previsión de tesorería a 12 meses —el corazón del fichero— es incorrecta desde febrero, y la hoja Alertas encadena falsas alarmas. Es sintácticamente válida, por eso ningún gate la vio y el inventario previo dio este fichero por «sin incidencias».",
+      "evidencia": "Fórmulas leídas: C5='=B22', D5='=C22' … M5='=L22'; la fila 22 es A22='Otros pagos' y está dentro de B23='=SUM(B14:B22)' (TOTAL PAGOS). El saldo final vive en la fila 25 (B25='=B5+B24'). Evaluación con pycel sobre copia (B7=50.000 cobros, B14=30.000 pagos, B22=1.234 otros pagos): 'Flujo Mensual'!B25 = 33.766 (saldo final enero) pero 'Flujo Mensual'!C5 = 1.234 y C25 = 1.234 (febrero abre con los «otros pagos» de enero, no con los 33.766 €). Consecuencia en cascada: Alertas!D6='OK' y Alertas!D7='⚠️ BAJO MÍNIMO' con 33.766 € reales en caja.",
+      "fix": "Reescribir C5:M5 apuntando al saldo final del mes anterior: C5='=B25', D5='=C25', E5='=D25', F5='=E25', G5='=F25', H5='=G25', I5='=H25', J5='=I25', K5='=J25', L5='=K25', M5='=L25'. Después re-inyectar caché y verificar que Alertas!C7 devuelve el saldo de febrero y no un importe de pagos."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "07-informe-viabilidad-bancos.xlsx:Proyecciones:B8:F16",
+      "hallazgo": "La hoja de proyecciones del informe bancario no tiene NI UNA fórmula de P&L: TOTAL GASTOS, EBITDA, Amortización, Intereses, BAI, Impuesto Sociedades (25%), BENEFICIO NETO y CASH FLOW OPERATIVO son constantes 0. Y no están marcadas como input (sin relleno verde E8F5E9, a diferencia de las filas 4-7 que sí lo llevan), así que el usuario las lee como calculadas y las presenta al banco en cero. Es el documento que el cliente entrega a una entidad financiera.",
+      "evidencia": "Volcado openpyxl: toda la hoja 'Proyecciones' contiene sólo 2 fórmulas (B21, B22); B8..F8, B9..F9, B12..F12, B13..F13, B14..F14 y B16..F16 son el entero 0 con formato '#,##0.00 €'. Mapa de rellenos: B4:F7 = 00E8F5E9 (verde=input), B8:F16 = sin relleno (=output). Evaluación pycel tras rellenar B4=300.000 y B5=90.000: Proyecciones!B8=0, B9=0, B14=0, mientras B16 sólo devuelve 20.000 porque lo tecleé yo a mano.",
+      "fix": "Añadir las fórmulas por columna B..F: fila 8 '=SUM(B5:B7)'; fila 9 '=B4-B8'; fila 12 '=B9-B10-B11'; fila 13 '=IF(B12>0,B12*0.25,0)'; fila 14 '=B12-B13'; fila 16 '=B14+B10'. Dejar en verde sólo 4:7, 10 y 11 (los inputs reales)."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "07-informe-viabilidad-bancos.xlsx:Proyecciones:B21,B22,B23",
+      "hallazgo": "TIR, VAN y Payback —los tres indicadores que la landing, el dashboard, la FAQ y un testimonio prometen «calculados automáticamente»— no se calculan nunca. IRR y NPV operan sobre B19:F19, un rango que sólo contiene la inversión inicial hardcodeada; los flujos reales están en la fila 16 y jamás se referencian. Payback ni siquiera tiene fórmula. Además B21 es la ÚNICA fórmula de todo el kit sin valor cacheado (1 de 1.373): en cualquier visor que no recalcule (Vista previa de macOS, Google Sheets, Excel móvil) la celda de la TIR sale en blanco.",
+      "evidencia": "B21='=IFERROR(IRR(B19:F19),\"N/A\")' y B22='=IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")'; en la fila 19 sólo existe B19=-150000 (constante, verde) y C19:F19 no tienen celda. B20 es el texto '→ Ver fila Cash Flow Operativo arriba'. B23 vacía junto a A23='Payback (años)'. Caché: B22 cacheado en -150000.0 (el VAN que ve el banco) y B21 sin caché (barrido de caché: 07 → formulas=3, sin_cache=1).",
+      "fix": "Poner los flujos en la fila 19 con referencias: C19='=C16', D19='=D16', E19='=E16', F19='=F16' (y B19 como input verde con la inversión, no 150.000 fijos). Cambiar B22 a '=IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")' ya vale una vez la fila esté poblada. Para B23 añadir un payback real, p.ej. '=IFERROR(MATCH(TRUE,INDEX(SUBTOTAL(9,OFFSET(B19,0,0,1,COLUMN(B19:F19)-COLUMN(B19)+1))>=0,0),0)-1,\"N/A\")' o, más legible, una fila auxiliar de flujo acumulado 17 y buscar el primer año positivo. Re-inyectar caché con un motor que soporte IRR."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "05-pyl-mensual-real-vs-presupuesto.xlsx:Resumen Anual:B5:N10",
+      "hallazgo": "Las 12 hojas mensuales calculan bien, pero la hoja de consolidación anual son 78 constantes 0 sin una sola referencia a 'Ene'..'Dic'. El usuario mete un año entero de datos reales y el resumen anual —lo único que se mira— se queda en cero para siempre. Confirmado el bug del inventario y ampliado: la columna N («TOTAL») tampoco suma nada.",
+      "evidencia": "Volcado: 'Resumen Anual' tiene 87 celdas con valor y CERO fórmulas (barrido de rellenos: {(None,'val'):87, ('002D2D2D','val'):14}). Evaluación pycel tras rellenar Ene (B6=10.000 ppto, C6=12.000 real → Ene!C10=12.000): 'Resumen Anual'!B6 = 0 y N6 = 0.",
+      "fix": "B5='=Ene!B10', B6='=Ene!C10', B7='=Ene!B19', B8='=Ene!C19', B9='=Ene!B21', B10='=Ene!C21' y arrastrar C..M cambiando el nombre de hoja (Feb..Dic); N5:N10 '=SUM(B5:M5)' … '=SUM(B10:M10)'. Añadir además filas de desviación anual € y % para que la hoja tenga sentido."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "01-plan-financiero-previsional.xlsx",
+      "ubicacion": "01-plan-financiero-previsional.xlsx:Resumen:B5:D8 · 01b-plan-financiero-previsional-5-anos.xlsx:Resumen:B5:F8",
+      "hallazgo": "El mismo bug de consolidación que en 05, y NO estaba en el inventario previo: la hoja «Resumen» de los dos planes previsionales (3 y 5 años) son constantes 0 sin referencias a las pestañas de año, pese a que las Instrucciones prometen que «la pestaña Resumen consolida los 3/5 años para presentación a inversores o bancos». Las hojas de año sí calculan (N10, N19, N21 tienen los totales listos para enlazar), así que el usuario ve totales correctos por año y un resumen ejecutivo en cero. Además esas celdas no llevan el relleno verde de input, así que nada le indica que tiene que teclearlas.",
+      "evidencia": "01!Resumen: única fórmula E5='=IF(B5=0,0,(D5-B5)/B5)'; B5:D8 son enteros 0 (barrido de rellenos: Resumen → {(None,'val'):22, ('002D2D2D','val'):5, (None,'form'):1}, cero celdas verdes). En 'Año 1' existen ya N10='=SUM(N6:N9)' (Total Ingresos), N19 (Total Gastos) y N21='=N10-N19' (EBITDA). 01b!Resumen idéntico: única fórmula G5, B5:F8 constantes. Instrucciones 01!B10 y 01b!B12 prometen la consolidación.",
+      "fix": "01: B5=\"='Año 1'!N10\", C5=\"='Año 2'!N10\", D5=\"='Año 3'!N10\"; fila 6 → N19; fila 7 → N21; fila 8 '=IF(B5=0,0,B7/B5)'. Rellenar también E6:E8 con la fórmula de crecimiento (hoy son constantes con formato € en una columna titulada «Crecimiento Y1→Y3»). 01b igual extendiendo a 'Año 4'/'Año 5' y G6:G8."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "alta",
+      "fichero": "(los 10 xlsx)",
+      "ubicacion": "src/components/kit-plan-financiero/HeroSection.tsx:19 · ContentGrid.tsx:8,10,39 · CtaFinal.tsx:7 · src/pages/KitPlanFinancieroDashboard.tsx:15",
+      "hallazgo": "«Gráficos automáticos», «gráfico visual de break-even» y «cada plantilla incluye gráficos profesionales» son falsos en los 10 ficheros: no hay un solo objeto chart en ningún libro. Un testimonio de la landing llega a afirmar que el cliente presentó el plan al banco «con los graficos». Es una promesa contable y verificable por el comprador en 5 segundos.",
+      "evidencia": "Barrido openpyxl de ws._charts en las 47 hojas del kit: charts=0 en los 10 ficheros (01, 01b, 02, 03, 04, 05, 06, 07, BONUS-08, BONUS-09). Textos: HeroSection.tsx:19 'Plan financiero previsional a 3 y 5 años con gráficos automáticos'; ContentGrid.tsx:39 'Cada plantilla incluye formulas encadenadas, graficos profesionales y benchmarks reales'; src/data/testimonials-plan-financiero.ts:14 'Lo presente tal cual, con los graficos y los escenarios'.",
+      "fix": "Dos vías: (a) insertar charts reales con openpyxl (LineChart de EBITDA mensual en 01/01b!Resumen, ScatterChart de ingresos vs costes en 02!'Break-Even', BarChart comparativo en BONUS-08!Comparativa, LineChart de saldo en 03!Alertas), o (b) retirar la palabra «gráficos» de hero, CTA, ContentGrid, dashboard y del testimonio. La opción (b) sin tocar el testimonio deja una afirmación falsa firmada por un cliente."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "alta",
+      "fichero": "(los 10 xlsx)",
+      "ubicacion": "src/components/kit-plan-financiero/FaqAccordion.tsx:19-20",
+      "hallazgo": "La FAQ afirma «Si. Las formulas estan encadenadas: los datos del CAPEX alimentan el cash flow, el plan previsional alimenta el break-even, y los ratios se calculan automaticamente desde el P&L». Ninguna de las tres cadenas existe: los 10 libros son independientes, sin un solo enlace externo. 02!Datos son constantes tecleadas a mano, 03 no lee nada de 04, y 06 tiene sus propios inputs manuales en vez de leer 05. Con garantía de devolución de 30 días anunciada, es una afirmación que sostiene un reembolso.",
+      "evidencia": "unzip -l de los 10 xlsx: externalLinkParts=0 en todos. 02!'Break-Even'!C5='=Datos!C14' (intra-libro), 02!Datos!C6..C13 son constantes (3000, 12000, 400…). 06!Ratios!C6=85000 constante, no referencia a 05. 03!'Flujo Mensual' no tiene ninguna referencia fuera de su libro.",
+      "fix": "O bien reescribir la FAQ describiendo lo que sí hay («cada plantilla es independiente y encadena sus fórmulas entre pestañas»), o bien entregar un único libro maestro con las 10 hojas enlazadas. No dejar la redacción actual: es literalmente refutable abriendo dos ficheros."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "02-calculadora-punto-equilibrio.xlsx:Escenarios:C7:E7,C10:E10",
+      "hallazgo": "La hoja Escenarios está desconectada de la hoja Datos: los días de apertura (26) y los costes fijos (19.000 €) van hardcodeados en las fórmulas y en las celdas, no referenciados. El usuario cambia sus datos, la hoja Break-Even se actualiza y la hoja Escenarios sigue mostrando los números del ejemplo: dos verdades distintas en el mismo fichero.",
+      "evidencia": "C10='=C4*C5*26' (el 26 literal, en vez de Datos!C21), C7=D7=E7=19000 constantes (en vez de '=Datos!C14'). Prueba pycel: cambiando Datos!C6 de 3.000 a 6.000 y Datos!C21 de 26 a 30 → Datos!C14=22.000 y 'Break-Even'!C8=33.846,15, pero Escenarios!C7 sigue en 19.000 y Escenarios!D10 sigue en 31.460 (calculado con 26 días).",
+      "fix": "C7:E7 → '=Datos!$C$14'; C10='=C4*C5*Datos!$C$21', D10='=D4*D5*Datos!$C$21', E10='=E4*E5*Datos!$C$21'."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "05-pyl-mensual-real-vs-presupuesto.xlsx:Ene:F6:F21 (y las 11 hojas restantes)",
+      "hallazgo": "El semáforo usa ABS() sobre la desviación, así que trata igual una desviación favorable que una desfavorable: vender un 20% POR ENCIMA del presupuesto se marca «🔴 Alerta». En las líneas de INGRESOS el signo importa y aquí se descarta. El usuario aprende a ignorar el semáforo, que es justo el valor del fichero.",
+      "evidencia": "F10='=IF(ABS(E10)<0.05,\"✅ OK\",IF(ABS(E10)<0.1,\"⚠️ Atención\",\"🔴 Alerta\"))'. Prueba pycel con B6=10.000 (ppto) y C6=12.000 (real): Ene!E10 = 0.2 y Ene!F10 = '🔴 Alerta' para un mes que batió el presupuesto un 20%.",
+      "fix": "Separar el criterio por bloque. Ingresos (filas 6-10): '=IF(E10>=-0.05,\"✅ OK\",IF(E10>=-0.1,\"⚠️ Atención\",\"🔴 Alerta\"))'. Gastos (filas 13-19): '=IF(E13<=0.05,\"✅ OK\",IF(E13<=0.1,\"⚠️ Atención\",\"🔴 Alerta\"))'. Replicar en las 12 hojas."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "05-pyl-mensual-real-vs-presupuesto.xlsx:Ene:E21 (y las 11 hojas restantes)",
+      "hallazgo": "La desviación % del EBITDA divide por el presupuesto sin valor absoluto. Con EBITDA presupuestado negativo —lo normal en los primeros meses de una apertura, que es el público de este kit— el signo se invierte: una mejora real sale como desviación negativa gigante y el semáforo la pinta en rojo.",
+      "evidencia": "E21='=IF(B21=0,0,(C21-B21)/B21)'. Prueba pycel (ingresos ppto 10.000 / real 12.000; gastos ppto 11.000 / real 11.000): Ene!B21=-1.000 y Ene!C21=+1.000 → Ene!E21 = -2.0 (−200%) y Ene!F21 = '🔴 Alerta', cuando el EBITDA ha pasado de −1.000 € a +1.000 €.",
+      "fix": "E21='=IF(B21=0,0,(C21-B21)/ABS(B21))'. Aplicar el mismo criterio a cualquier fila que pueda tener presupuesto negativo."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "06-dashboard-ratios-financieros.xlsx:Ratios:C17,C19,C21,C22,C23,C24",
+      "hallazgo": "Seis de las ocho fórmulas de la hoja no tienen guarda de división por cero, al contrario que sus hermanas 01/04/05 que sí usan IF(x=0,0,…). El fichero se entrega con datos de ejemplo (85.000 € de ventas); en cuanto el usuario los borra para meter los suyos —el primer gesto que hará— el dashboard se llena de #¡DIV/0!.",
+      "evidencia": "C17='=C7/C6', C19='=(C7+C8)/C6', C21='=C9/C10', C22='=C6/(C11*C12)', C23='=C6/C10', C24='=(C6-C7)/C6'. Ninguna lleva IFERROR ni IF. Comparar con 05!Ene!B25='=IF(B10=0,0,B13/B10)', que sí protege el mismo cociente.",
+      "fix": "Envolver las seis en IFERROR: C17='=IFERROR(C7/C6,\"—\")', C19='=IFERROR((C7+C8)/C6,\"—\")', C21='=IFERROR(C9/C10,\"—\")', C22='=IFERROR(C6/(C11*C12),\"—\")', C23='=IFERROR(C6/C10,\"—\")', C24='=IFERROR((C6-C7)/C6,\"—\")'. Y añadir el mismo IFERROR a las columnas E17:E20 del semáforo, que heredarán el error."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "06-dashboard-ratios-financieros.xlsx:Ratios:E18,E19,E20 vs 06-dashboard-ratios-financieros.xlsx:Benchmarks:B5:E7",
+      "hallazgo": "Los umbrales del semáforo no coinciden con la tabla de Benchmarks del mismo fichero, ni con las Instrucciones. El usuario obtiene dos veredictos contradictorios sobre el mismo número sin salir del libro.",
+      "evidencia": "Labor Cost: E18 marca «⚠️ Aceptable» hasta 31% ('=IF(C18<0.25,…,IF(C18<0.31,…))') pero Benchmarks!E5 dice «Peligro > 30%». Prime Cost: E19 acepta hasta 66% pero Benchmarks!E6 dice «Peligro > 65%». GOP: E20='=IF(C20>0.15,\"✅ Sano\",IF(C20>0.1,\"⚠️ Ajustado\",\"🔴 Peligro\"))' mientras Benchmarks!C7 sitúa el óptimo en «> 20%» y el peligro en «< 15%» (Benchmarks!E7) — un GOP del 12% sale «⚠️ Ajustado» en Ratios y «Peligro» en Benchmarks. Food Cost: Instrucciones!B12 dice «ideal 28-32%» y E17 usa 33%.",
+      "fix": "Alinear a la tabla Benchmarks, que es la referencia publicada: E18 → '<0.25' / '<=0.30'; E19 → '<0.60' / '<=0.65'; E20 → '=IF(C20>0.2,\"✅ Sano\",IF(C20>=0.15,\"⚠️ Ajustado\",\"🔴 Peligro\"))'; y corregir Instrucciones!B12 a 28-33% o E17 a 0.32."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "06-dashboard-ratios-financieros.xlsx:Ratios:B22,C22,D22",
+      "hallazgo": "La fila etiquetada «RevPASH» no calcula RevPASH. RevPASH es Revenue Per Available Seat Hour (ingresos / (asientos × horas)); aquí se divide por metros cuadrados de sala. El benchmark que se pone al lado, «> 8€ casual dining», es el estándar por ASIENTO y hora, así que se compara una magnitud con la referencia de otra: con los datos de ejemplo del propio fichero el resultado es 2,95 y el usuario concluye que va tres veces por debajo del sector cuando la métrica ni siquiera es comparable.",
+      "evidencia": "B22='RevPASH (€/m²/hora)', C22='=C6/(C11*C12)' con C11='m² de sala'=80 y C12='Horas de servicio / mes'=360 → 2,95. D22='> 8€ casual dining'. No existe ninguna celda de input para el número de asientos/plazas en toda la hoja (inputs: C6 ventas, C7 materia prima, C8 personal, C9 gastos operativos, C10 cubiertos, C11 m², C12 horas).",
+      "fix": "Añadir un input «Nº de plazas (asientos)» y cambiar C22='=IFERROR(C6/(C_plazas*C12),\"—\")' manteniendo la etiqueta RevPASH y el benchmark de 8 €; o, si se quiere conservar el m², renombrar la fila a «Ingresos por m² y hora» y sustituir D22 por una referencia válida para esa métrica."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "06-dashboard-ratios-financieros.xlsx:Ratios:B9,C20",
+      "hallazgo": "El input «Gastos operativos totales (€)» no dice si incluye o no la materia prima y el personal, y el GOP depende enteramente de esa interpretación. Con los datos de ejemplo sí los incluye (72.250 € > 25.500 + 23.800), pero un usuario que entienda «operativos» como «los otros gastos» obtendrá un GOP absurdo sin ningún aviso, y no hay guarda que lo detecte.",
+      "evidencia": "C9=72250 con D9='Mensual' como única nota; C20='=(C6-C9)/C6' → 0,15 con el ejemplo. Si el usuario introduce sólo los otros gastos (72.250 − 49.300 = 22.950), C20 daría 0,73 = «✅ Sano» con un GOP del 73%, imposible en hostelería. Las columnas de nota D6:D10 sólo dicen «Mensual».",
+      "fix": "Cambiar B9 a «Gastos operativos totales (INCLUYE materia prima y personal) (€)» y usar la columna D9 para la aclaración: «Suma de TODOS los gastos de explotación, incluidos los de las filas 7 y 8». Añadir una guarda visible: '=IF(C9<C7+C8,\"⚠️ Revisa: los gastos totales no pueden ser menores que materia prima + personal\",\"\")'."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "02-calculadora-punto-equilibrio.xlsx:Break-Even:C8,C9,C10",
+      "hallazgo": "Las tres fórmulas centrales del cálculo dividen sin ninguna protección: si el usuario deja en 0 los días de apertura o el ticket medio (o pone el coste variable al 100%), la hoja entera se llena de #¡DIV/0!. Es el único fichero del kit cuyo resultado principal puede reventar con un input plausible.",
+      "evidencia": "C8='=Datos!C14/(1-Datos!C17)' (revienta con C17=1), C9='=C8/Datos!C21' (revienta con C21=0), C10='=C9/Datos!C20' (revienta con C20=0). Ninguna IFERROR en el libro (20 fórmulas, 0 con guarda).",
+      "fix": "C8='=IFERROR(Datos!C14/(1-Datos!C17),\"Revisa el % de coste variable\")', C9='=IFERROR(C8/Datos!C21,\"Indica los días de apertura\")', C10='=IFERROR(C9/Datos!C20,\"Indica el ticket medio\")'."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "02-calculadora-punto-equilibrio.xlsx:Break-Even:C10,C11",
+      "hallazgo": "Los cubiertos necesarios se muestran con formato '#,##0', que redondea a la baja: la pantalla dice 51 cubiertos/día cuando el punto de equilibrio exige 51,1. Un umbral de equilibrio SIEMPRE se redondea hacia arriba; con el número que el usuario lee se queda por debajo del break-even. Además la cifra mensual visible (1.329) no cuadra con multiplicar los 51 que ve por los días, lo que parece un error aritmético del fichero.",
+      "evidencia": "C10='=C9/Datos!C20' → 51,102743…, formato '#,##0' → muestra «51». C11='=C10*Datos!C21' → 1.328,67 → muestra «1.329»; 51 × 26 = 1.326, no 1.329. Con la prueba pycel (fijos 22.000, 30 días): C8=33.846,15 y C10=51,28 → mostrado 51; 51 × 22 € × 30 días = 33.660 €, es decir 186 € POR DEBAJO del break-even mensual.",
+      "fix": "C10='=IFERROR(ROUNDUP(C9/Datos!C20,0),\"—\")' y C11='=IFERROR(ROUNDUP(C8/Datos!C20,0),\"—\")'; así los dos son enteros coherentes y por encima del umbral."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "03-cash-flow-forecast.xlsx:Flujo Mensual:B21:M21 · 03-cash-flow-forecast.xlsx:Instrucciones:B8",
+      "hallazgo": "Las Instrucciones prometen «El IVA trimestral se calcula automáticamente (línea 'Liquidación IVA')», pero esa fila son 12 constantes 0 sin fórmula. El IVA es exactamente el pago que descuadra la tesorería de un restaurante y la razón de ser de esta plantilla; dejarlo manual sin avisar es una promesa incumplida en la propia hoja de instrucciones.",
+      "evidencia": "Instrucciones!B8 = \"▸ El IVA trimestral se calcula automáticamente (línea 'Liquidación IVA')\". A21='Liquidación IVA trimestral' y B21..M21 son el entero 0, formato '#,##0.00 €', sin fórmula (las únicas fórmulas de la hoja son las filas 12, 23, 24, 25 y la 5 rota).",
+      "fix": "O añadir el cálculo real —una fila auxiliar de IVA repercutido (cobros/1,10×0,10) y soportado, con liquidación en abril, julio, octubre y enero: D21='=IF(B_iva_acum>0,B_iva_acum,0)' en los meses de liquidación y 0 en el resto— o corregir Instrucciones!B8 a «introduce manualmente la liquidación trimestral en los meses de pago (abril, julio, octubre, enero)»."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "(los 10 xlsx)",
+      "ubicacion": "03-cash-flow-forecast.xlsx:Instrucciones:B9 · 06-dashboard-ratios-financieros.xlsx:Instrucciones:B9 · 05-pyl-mensual-real-vs-presupuesto.xlsx:Instrucciones:B8",
+      "hallazgo": "No hay ni una sola regla de formato condicional en los 10 ficheros, pero tres hojas de instrucciones prometen colores: «marca en rojo los meses donde el saldo < umbral», «el semáforo indica verde / amarillo / rojo», «semáforo automático: Verde (<5%), Amarillo (5-10%), Rojo (>10%)». Lo que hay son emojis en texto negro (✅ ⚠️ 🔴), que no destacan al escanear una tabla de 12 meses y que en algunas fuentes de Windows/Excel antiguo se renderizan en monocromo.",
+      "evidencia": "Barrido openpyxl de ws.conditional_formatting en las 47 hojas: cf=0 en los 10 ficheros. 03!Instrucciones!B9 = \"▸ La pestaña 'Alertas' marca en rojo los meses donde el saldo < umbral de seguridad\"; 03!Alertas!D6='=IF(C6<$C$3,\"⚠️ BAJO MÍNIMO\",\"OK\")' — texto, sin relleno ni color de fuente condicional.",
+      "fix": "Añadir FormatRule con openpyxl: en 03!Alertas rango C6:D17 con CellIsRule(operator='lessThan', formula=['$C$3'], fill=rojo claro FFC7CE); en 05 rangos E6:F21 con tres reglas por umbral; en 06 rango C17:E20 con reglas alineadas a los umbrales corregidos en TEC-12."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "07-informe-viabilidad-bancos.xlsx:Ratios:C4:C10",
+      "hallazgo": "La columna «Valor» de los siete ratios de solvencia que pide el banco (endeudamiento, DSCR, liquidez, margen EBITDA, ROI, fondos propios/inversión, deuda/EBITDA) no tiene celdas: ni fórmula, ni formato numérico, ni relleno de input. Sólo están las etiquetas y la columna «Referencia Bancaria». Varios de esos ratios son derivables de datos que ya están en el propio libro (Resumen Ejecutivo y Proyecciones), así que el fichero deja sin calcular lo que sí podía calcular.",
+      "evidencia": "Volcado de la hoja 'Ratios': existen B4:B10 (etiquetas) y D4:D10 (referencias '< 60%', '> 1.25x', …); la columna C sólo tiene C3='Valor'. Rellenos: {(None,'val'):16, ('002D2D2D','val'):3} — ninguna celda verde. Instrucciones!B15 anuncia «Ratios: indicadores de solvencia y rentabilidad».",
+      "fix": "Enlazar con el Resumen Ejecutivo y Proyecciones: C4=\"='Resumen Ejecutivo'!C15/'Resumen Ejecutivo'!C13\" (endeudamiento), C7=\"=IFERROR(Proyecciones!B9/Proyecciones!B4,\"\"—\"\")\" (margen EBITDA), C9=\"='Resumen Ejecutivo'!C14/'Resumen Ejecutivo'!C13\", C10=\"=IFERROR('Resumen Ejecutivo'!C15/Proyecciones!B9,\"\"—\"\")\"; los que dependan de datos que no están (DSCR, liquidez) como input verde con formato numérico explícito."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "07-informe-viabilidad-bancos.xlsx:Resumen Ejecutivo:C5:C25",
+      "hallazgo": "La columna de datos del resumen ejecutivo —la primera página que lee el analista de riesgos— no tiene ni una celda creada: sin formato de moneda para «Inversión total necesaria», «Financiación solicitada» o «Facturación prevista Año 1», sin relleno verde de input y sin validación. El usuario teclea 150000 y el banco lee «150000», no «150.000,00 €». Es la única hoja de todo el kit donde los inputs no están marcados en verde (E8F5E9), rompiendo la convención que las propias Instrucciones enuncian.",
+      "evidencia": "Volcado hoja 'Resumen Ejecutivo': dims=A1:C27 pero sólo existen celdas en B (etiquetas) y A27; barrido de rellenos: {(None,'val'):23} — cero verdes, cero formatos '#,##0.00 €'. Compárese con 'Garantías'!C4:C9, que sí llevan verde y formato moneda. Freeze panes también ausente en esta hoja (freeze=None) frente a 'A4' en las otras tres.",
+      "fix": "Crear C5:C25 con relleno E8F5E9; number_format '#,##0.00 €' en C13, C14, C15, C17, C18; '#,##0' en C8, C9; formato de fecha en C10; texto en el resto. Añadir freeze_panes='C5'."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "media",
+      "fichero": "BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "BONUS-08-simulador-escenarios.xlsx:Simulador:C19,C21 vs 02-calculadora-punto-equilibrio.xlsx:Escenarios:D13",
+      "hallazgo": "Los dos ficheros del kit que modelan «tres escenarios» parten de supuestos distintos y llegan a conclusiones opuestas para el escenario BASE del mismo restaurante: 02 dice que gana 1.449 €/mes y 08 dice que pierde 5.272 €/mes. Un usuario que abra los dos no sabe cuál creer, y ambos se presentan como aptos para «negociar con inversores o socios».",
+      "evidencia": "02!Escenarios base: ticket 22 €, 55 cubiertos, 35% coste variable, fijos 19.000 → D13 (EBITDA) = +1.449,00 €. 08!Simulador base: ticket 22 €, 60 cubiertos, food 32% + labor 28%, fijos 19.000 → C19 (EBITDA MENSUAL) = −5.272,00 € y C21 (EBITDA ANUAL) = −63.264,00 €. El desajuste viene de que 02 mete todo el coste variable en un 35% que no incluye personal y 08 usa 60% (food+labor).",
+      "fix": "Unificar los supuestos: o 02!Escenarios pasa a desglosar food y labor como 08, o su fila 6 se renombra a «% Coste Variable (food + labor + comisiones)» y los valores base se ajustan a 0,60/0,55/0,50. Y hacer que ambos partan de las mismas cifras base (mismo ticket y mismos cubiertos)."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "media",
+      "fichero": "BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "BONUS-08-simulador-escenarios.xlsx:Simulador:B19,C19,D19",
+      "hallazgo": "Los valores por defecto que se entregan hacen que DOS de los tres escenarios —incluido el llamado «Base»— salgan en pérdidas, con −63.264 € de EBITDA anual en el caso central. Es un mal ejemplo para un fichero cuyas Instrucciones lo proponen para «negociar con inversores o socios»: quien lo abra sin cambiar nada ve un negocio inviable.",
+      "evidencia": "Valores cacheados del fichero entregado: B19 = −14.700,00 € (pesimista), C19 = −5.272,00 € (BASE), D19 = +13.859,50 € (optimista); B21 = −176.400,00 €, C21 = −63.264,00 €. Con 60 cubiertos × 22 € × 26 días = 34.320 € de facturación y 60% de prime cost + 19.000 € de fijos, el base no puede ser positivo.",
+      "fix": "Recalibrar los defaults para que el escenario Base quede en un EBITDA razonable del sector (10-15%): p.ej. C7=75 cubiertos o C11=13.000 € de costes fijos, dejando el pesimista negativo como aviso. Alternativamente etiquetar la fila 4 como «Ejemplo — sustituye por tus datos»."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "02-calculadora-punto-equilibrio.xlsx:Escenarios:B13 · 02-calculadora-punto-equilibrio.xlsx:Datos:B12",
+      "hallazgo": "La fila etiquetada «EBITDA» resta unos costes fijos que incluyen la cuota del préstamo, es decir servicio de deuda. Por definición el EBITDA es anterior a intereses y amortización de deuda, así que el número está mal nombrado y subestima el EBITDA en el importe de la cuota. Importa porque este mismo kit compara el EBITDA contra el benchmark «> 12%» del informe bancario (07!Ratios!D7) y contra el «> 15%» de 06!Benchmarks!C10: se estará comparando una magnitud con la referencia de otra.",
+      "evidencia": "Datos!B12='Cuota préstamo', C12=800 €, incluida en C14='=SUM(C6:C13)'=19.000 €. Escenarios!C7:E7=19000 y B13='EBITDA' con C13='=C12-C7'. Con los defaults, el EBITDA real (sin cuota) del escenario base sería 2.249 € y el fichero muestra 1.449 €.",
+      "fix": "Sacar la cuota de préstamo del bloque de costes fijos operativos (dejarla en una fila aparte por debajo del EBITDA) o renombrar la fila 13 a «Resultado tras costes fijos y deuda». El punto de equilibrio de caja SÍ debe incluirla; el EBITDA no."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "BONUS-09-checklist-pre-apertura.xlsx:Checklist:C55,C59",
+      "hallazgo": "El total de tareas es una constante y el denominador del porcentaje va hardcodeado a 48. Si el usuario añade o quita tareas —cosa que la plantilla invita a hacer— el «% Completado» pasa a ser falso sin ningún aviso. El resto del bloque resumen sí usa COUNTIF sobre el rango.",
+      "evidencia": "C55 = 48 (entero constante), C59 = '=COUNTIF(F5:F52,\"Completada\")/48'. C56, C57 y C58 sí son '=COUNTIF(F5:F52,…)'.",
+      "fix": "C55='=COUNTA(A5:A52)' y C59='=IFERROR(COUNTIF(F5:F52,\"Completada\")/C55,0)'."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "(los 10 xlsx)",
+      "ubicacion": "01-plan-financiero-previsional.xlsx:Año 1:N6:N22 (y equivalentes en los 10 ficheros)",
+      "hallazgo": "Ninguna hoja de ningún fichero está protegida y no hay validación de datos salvo la lista de estados de 09. Las celdas de fórmula (totales, EBITDA, márgenes, consolidaciones) están tan desbloqueadas como los inputs: basta que el usuario teclee sobre un TOTAL para romper el modelo en silencio, y en un kit vendido a hosteleros «que no saben de contabilidad» es el fallo más probable de todos.",
+      "evidencia": "Barrido openpyxl: protected=[False, …] en las 47 hojas de los 10 ficheros; dv=1 en total, y sólo en BONUS-09 ('\"Pendiente,En curso,Completada\"' sobre F5:F52).",
+      "fix": "Marcar como locked=False sólo las celdas verdes de input y aplicar ws.protection.sheet=True sin contraseña (o con una trivial documentada) en las hojas de cálculo. Añadir validación numérica ≥0 en los inputs de importes y validación 0-1 en los de porcentaje."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "baja",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "05-pyl-mensual-real-vs-presupuesto.xlsx:Ene:D22:F22,D25:F27",
+      "hallazgo": "La tabla anuncia cuatro columnas (Presupuesto, Real, Desviación €, Desviación %, Semáforo) pero las filas de Margen EBITDA % y las tres de «RATIOS AUTOMÁTICOS» sólo tienen Presupuesto y Real: las columnas D, E y F quedan vacías bajo su encabezado. Justo los ratios que la propia hoja llama automáticos se quedan sin el análisis de desviación que da nombre al fichero.",
+      "evidencia": "Hoja 'Ene': B22 y C22 existen ('=IF(B10=0,0,B21/B10)' y su gemela), D22/E22/F22 no existen. Igual en B25:C25, B26:C26, B27:C27 (Food Cost %, Labor Cost %, Prime Cost %) sin D/E/F. La cabecera D4='Desviación (€)', E4='Desviación %', F4='Semáforo' abarca toda la tabla.",
+      "fix": "Añadir D22='=C22-B22' con formato '0.0%' (diferencia en puntos porcentuales), E22 en blanco o texto «p.p.», y F22 con un semáforo por puntos porcentuales; replicar en las filas 25-27. Replicar en las 12 hojas."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "baja",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "03-cash-flow-forecast.xlsx:Flujo Mensual:B5 · 06-dashboard-ratios-financieros.xlsx:Ratios:C6:C12 · 02-calculadora-punto-equilibrio.xlsx:Datos:C6:C21",
+      "hallazgo": "Tres ficheros se entregan con datos de ejemplo tecleados (saldo inicial 15.000 €, ventas 85.000 €, alquiler 3.000 €…) sin ninguna marca de que son ficticios. Combinado con TEC-05 y TEC-04 —donde los resúmenes se quedan en cero— el usuario puede acabar llevando al banco una mezcla de sus cifras y las del ejemplo sin darse cuenta. En 07 el caso es más serio: la inversión inicial de −150.000 € está hardcodeada y alimenta el VAN.",
+      "evidencia": "03!'Flujo Mensual'!B5 = 15000 (saldo inicial enero) con B25 cacheado en 15.000 €. 06!Ratios!C6=85000, C7=25500, C8=23800, C9=72250, C10=3200, C11=80, C12=360. 02!Datos!C6=3000 … C21=26. 07!Proyecciones!B19=-150000, referenciada por B22 (VAN cacheado en −150.000,00 €).",
+      "fix": "Añadir una fila de aviso en cada hoja de datos («Los valores en verde son un EJEMPLO — sustitúyelos por los tuyos») y, en 07, poner B19 a 0 o dejarlo vacío para que el VAN no muestre una cifra inventada. Alternativamente entregar los ejemplos en una pestaña «Ejemplo» aparte y las hojas de trabajo en blanco."
+     },
+     {
+      "id": "TEC-28",
+      "severidad": "baja",
+      "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+      "ubicacion": "01b-plan-financiero-previsional-5-anos.xlsx:Instrucciones:B9 · 04-presupuesto-inversion-capex.xlsx:Instrucciones:B13",
+      "hallazgo": "Dos hojas de instrucciones describen la plantilla con imprecisiones: una frase de copia-pega que se contradice a sí misma y una lista de pestañas cuyos nombres no coinciden con los reales. Son detalles, pero están en la primera pantalla que ve el comprador y en un kit de 39 € el acabado es parte de lo que se vende.",
+      "evidencia": "01b!Instrucciones!B9 = '▸ Año 1 con desglose mensual. Años 2-5 con desglose mensual.' (las dos mitades dicen lo mismo; el original decía presumiblemente «anual»). 04!Instrucciones!B13 = '▸ Obra civil, Equipamiento Cocina, Mobiliario Sala, Tecnología, Licencias y Permisos.' mientras las pestañas reales se llaman 'Obra' y 'Licencias'.",
+      "fix": "01b!B9 → '▸ Los cinco años con desglose mensual, una pestaña por año.'. 04!B13 → '▸ Obra, Equipamiento Cocina, Mobiliario Sala, Tecnología, Licencias.' (o renombrar las pestañas a 'Obra civil' y 'Licencias y Permisos')."
+     },
+     {
+      "id": "TEC-29",
+      "severidad": "baja",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "07-informe-viabilidad-bancos.xlsx:Garantías:B5,B7 · 03-cash-flow-forecast.xlsx:Alertas:B3",
+      "hallazgo": "Tres etiquetas se cortan visualmente porque el texto excede el ancho de columna y la celda contigua está ocupada, así que Excel trunca en lugar de desbordar. En el informe bancario afecta a la línea del aval SGR, un concepto que el analista busca por su nombre completo.",
+      "evidencia": "'Garantías'!B7 = 'Aval SGR (Sociedad de Garantía Recíproca)' (41 caracteres) con ancho de columna B = 30 y C7 ocupada (0 €). 'Garantías'!B5 = 'Hipoteca sobre local (si propiedad)' (35 car., ancho 30). 03!'Alertas'!B3 = 'Umbral de seguridad (€):' (24 car., ancho 20, C3 ocupada).",
+      "fix": "Subir el ancho: 07!'Garantías' columna B a 45 y 03!'Alertas' columna B a 26. No usar wrap_text sin fijar también row height, porque quedaría el texto cortado en vertical."
+     }
+    ]
+   },
+   "dominio": {
+    "lente": "Consultor/a financiero de hostelería en España (15 años; planes presentados a bancos y ENISA). Auditoría adversarial de los 10 xlsx de kit-plan-financiero abiertos uno a uno con openpyxl (fórmula + valor cacheado + relleno de celda), más contraste con la landing (src/pages/KitPlanFinanciero.tsx y src/components/kit-plan-financiero/*) y el dashboard (src/pages/KitPlanFinancieroDashboard.tsx). Criterio: ¿me atrevería a llevar mañana estos ficheros a una oficina bancaria con un cliente al lado?",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "Flujo Mensual!C5:M5 (y su efecto en Alertas!D7:D17)",
+      "hallazgo": "El arrastre del saldo de tesorería apunta a la fila equivocada: SALDO INICIAL de cada mes lee la fila 22 («Otros pagos») en vez de la fila 25 («SALDO FINAL»). El cash flow, plantilla estrella del kit, nunca encadena los meses. El inventario previo daba este fichero por «formulación correcta, sin incidencias».",
+      "evidencia": "'Flujo Mensual'!C5 = '=B22' (B22 = 'Otros pagos' de Ene, input verde), D5='=C22', E5='=D22'… M5='=L22'. El saldo final vive en la fila 25: B25='=B5+B24' con cache 15000.0, mientras C25 cachea 0.0 en vez de 15000. Efecto visible de fábrica: Alertas!D7:D17 cachean los once '⚠️ BAJO MÍNIMO' (solo D6/Ene cachea 'OK') porque C7:C17 leen los saldos rotos.",
+      "fix": "Reescribir C5:M5 como '=B25', '=C25', … '=L25'. Verificar con un caso trazado: saldo inicial 15.000, cobros 40.000, pagos 35.000 en Ene → Feb debe abrir en 20.000. Y revisar los otros kits generados por el mismo motor por si el desplazamiento de 3 filas es sistémico."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B8:F16",
+      "hallazgo": "El P&L del informe que se entrega al banco no calcula ni una sola línea: TOTAL GASTOS, EBITDA, BAI, Impuesto de Sociedades, BENEFICIO NETO y CASH FLOW OPERATIVO son ceros constantes sin fórmula, y además NO llevan el relleno verde de input, así que el usuario los interpreta como resultados y espera que se rellenen solos. El libro entero tiene 3 fórmulas.",
+      "evidencia": "Filas 8, 9, 12, 13, 14 y 16: valor int 0, sin fórmula, fill=00000000 (sin relleno) frente a las filas de input 4-7, que sí llevan fill=00E8F5E9. Las únicas fórmulas del workbook son Proyecciones!B21, Proyecciones!B22 y Garantías!C10='=SUM(C4:C9)'. Instrucciones!B8 promete «El formato profesional está listo para presentar directamente al banco».",
+      "fix": "B8:F8 '=SUM(B5:B7)'; B9 '=B4-B8'; B12 '=B9-B10-B11'; B13 '=IF(B12>0,B12*$tipo,0)' con el tipo impositivo en celda; B14 '=B12-B13'; B16 '=B14+B10' (beneficio neto + amortización). Y pintar de verde solo lo que es input."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B19:B23",
+      "hallazgo": "TIR, VAN y payback —el trípode que la landing, el dashboard, la FAQ y las propias Instrucciones del fichero venden como «calculados automáticamente»— no se calculan nunca. IRR/NPV leen una fila que solo contiene la inversión inicial, la fila de flujos reales (16) no se referencia jamás, y el payback es una celda de input vacía.",
+      "evidencia": "B21='=IFERROR(IRR(B19:F19),\"N/A\")' (sin valor cacheado: única fórmula del kit sin cache, escape de Fase A); B22='=IFERROR(NPV(0.08,C19:F19)+B19,\"N/A\")' con cache -150000.0. En la fila 19 solo existe B19=-150000; C19:F19 están vacías. B20 es el texto muerto '→ Ver fila Cash Flow Operativo arriba' y esa fila (16) no entra en ninguna fórmula. B23 «Payback (años)»: sin fórmula y con fill=00E8F5E9, es decir, un campo a rellenar a mano. Instrucciones!B9: «TIR, VAN y Payback se calculan automáticamente».",
+      "fix": "Montar la fila de flujos: B19 '=-Inversión' (enlazada al total de CAPEX) y C19:F19 '=C16' … '=F16'. TIR '=IFERROR(IRR(B19:F19),\"N/A\")'; VAN '=IFERROR(NPV($tasa,C19:F19)+B19,\"N/A\")' con la tasa de descuento en una celda etiquetada y editable (un banco pregunta qué tasa se ha usado); payback con una fila de flujo acumulado visible e interpolación del año de cruce. Borrar el texto de B20."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "01-plan-financiero-previsional.xlsx y 01b-plan-financiero-previsional-5-anos.xlsx",
+      "ubicacion": "01: Resumen!B5:E8 · 01b: Resumen!B5:G8",
+      "hallazgo": "La hoja Resumen —la que las propias Instrucciones venden «para presentación a inversores o bancos»— no consolida nada: son ceros constantes sin fórmula y sin relleno de input. El cliente rellena 36 (o 60) meses de datos y el ejecutivo que enseña al banco sale en cero.",
+      "evidencia": "01!Resumen!B5, C5, D5 = int 0, sin fórmula, fill=00000000 (los inputs reales llevan fill=00E8F5E9, p. ej. 'Año 1'!B6). Lo mismo B6:D8. La única fórmula viva es E5='=IF(B5=0,0,(D5-B5)/B5)'. 01b!Resumen!B5:F8 idéntico. Los datos existen y están listos para enlazarse: 'Año 1'!N10 (=SUM(N6:N9)), N19, N21. 01!Instrucciones!B10: «La pestaña Resumen consolida los 3 años…»; 01b!Instrucciones!B12: «…consolida los 5 años».",
+      "fix": "B5 = \"='Año 1'!N10\", C5 = \"='Año 2'!N10\", D5 = \"='Año 3'!N10\" (y E5/F5 para 01b); fila 6 → N19; fila 7 → N21; fila 8 '=IF(B5=0,0,B7/B5)'. Idéntico patrón en 01b."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "Resumen Anual!B5:N10",
+      "hallazgo": "Confirmado y peor de lo censado: las 6 filas × 13 columnas del resumen anual son ceros constantes, incluida la columna TOTAL (N), y ninguna lleva relleno de input. Doce pestañas mensuales perfectamente calculadas que no llegan a ningún sitio.",
+      "evidencia": "Resumen Anual!B5:N10 todas int 0 sin fórmula y con fill=00000000. N5:N10 (columna 'TOTAL') tampoco tienen SUM. Los orígenes existen y funcionan: 'Ene'!B10='=B6+B7+B8+B9', 'Ene'!C10, 'Ene'!B19, 'Ene'!C19, 'Ene'!B21, 'Ene'!C21 y hasta 'Dic'!C27='=IF(C10=0,0,(C13+C14)/C10)'. Instrucciones!B10: «La pestaña Resumen consolida los 12 meses».",
+      "fix": "B5=\"='Ene'!B10\" … M5=\"='Dic'!B10\"; fila 6 → C10; filas 7/8 → B19/C19; filas 9/10 → B21/C21; N5:N10 '=SUM(B5:M5)'. Añadir filas de desviación anual en € y % y los ratios anuales (food/labor/prime cost), que es lo que se mira en diciembre."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "BONUS-08-simulador-escenarios.xlsx",
+      "ubicacion": "Simulador!C11 y C16:C21 (contrastado con 02-calculadora-punto-equilibrio.xlsx:Datos!C7 y C14)",
+      "hallazgo": "Doble contabilización del personal: el simulador suma un Labor Cost como % de ventas ENCIMA de unos «costes fijos mensuales» de 19.000 € que en el otro fichero del mismo kit ya incluyen 12.000 € de nóminas. Resultado: el escenario BASE, el que se enseña a un inversor, sale en pérdidas de 5.272 €/mes y 63.264 €/año, y contradice al fichero 02, que con los mismos 19.000 € y el mismo ticket de 22 € da EBITDA positivo.",
+      "evidencia": "08!Simulador!C11=19000 «Costes fijos mensuales»; C16='=C14*C10' → 9.609,60 € de Labor Cost (28 %); C18='=C15+C16+C17' → 39.592; C19='=C14-C18' → cache -5272.0; C21='=C19*12' → -63264.0; C20 → -15,4 % de margen. En 02!Datos!C7=12000 «Nóminas fijas (bruto)» está dentro de C14='=SUM(C6:C13)' → cache 19000.0, y 02!Escenarios!D13 da EBITDA base +1.449 €/mes con ticket 22 €. Instrucciones!B13 del 08: «Ideal para… negociar con inversores o socios».",
+      "fix": "Renombrar C11 a «Costes fijos SIN personal (alquiler, suministros, seguros, gestoría, cuota préstamo)» y bajar el ejemplo a ~7.000 €, o eliminar la fila de Labor Cost % y dejar el personal solo dentro de los fijos. Después recalibrar los tres escenarios para que el BASE sea un negocio viable (EBITDA 8-12 % sobre ventas) y añadir una nota que remita al 02 para no mezclar bases de coste."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!C22 y D22 (inputs C11, C12)",
+      "hallazgo": "El RevPASH está calculado desde una referencia equivocada: divide por metros cuadrados en vez de por plazas. La «S» de RevPASH es Seat (Revenue Per Available Seat Hour); la propia etiqueta se autodelata escribiendo «€/m²/hora». Y luego lo compara contra un benchmark que sí es por plaza, así que el restaurante de ejemplo parece la mitad de rentable de lo que es.",
+      "evidencia": "Ratios!C22='=C6/(C11*C12)' con C11=80 «m² de sala» y C12=360 «Horas de servicio / mes» → cache 2.951388… €; D22 dice '> 8€ casual dining'. Con 85.000 € de ventas y las ~50 plazas que caben en 80 m² de sala, el RevPASH real sería 85.000/(50×360) = 4,72 €. No existe ningún input de plazas/asientos en toda la hoja (B6:B12).",
+      "fix": "Añadir input «Nº de plazas (asientos)» y cambiar C22 a '=C6/(plazas*C12)'. Si se quiere conservar la venta por m², dejarla como ratio aparte y renombrarla «Ventas por m² de sala (€/m²/mes)» con su propio benchmark; el de 8 € es por plaza y hora."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "src/components/kit-plan-financiero/HeroSection.tsx, ContentGrid.tsx, CtaFinal.tsx, FaqAccordion.tsx, src/pages/KitPlanFinancieroDashboard.tsx (y los 10 xlsx)",
+      "ubicacion": "HeroSection.tsx:19 · ContentGrid.tsx:8, :10, :39 · CtaFinal.tsx:7 · FaqAccordion.tsx:12 · KitPlanFinanciero.tsx:71 (FAQPage JSON-LD) · KitPlanFinancieroDashboard.tsx:15",
+      "hallazgo": "«Gráficos automáticos» se anuncia seis veces entre landing, hero, CTA, FAQ con schema.org y dashboard. No hay ni un solo gráfico en ningún fichero del kit. Es la promesa más repetida del producto y es falsa en el 100 % de los entregables.",
+      "evidencia": "HeroSection.tsx:19 'Plan financiero previsional a 3 y 5 años con gráficos automáticos'; ContentGrid.tsx:8 '…EBITDA y gráficos automáticos', :10 '…con grafico visual de break-even', :39 '…formulas encadenadas, graficos profesionales…'; CtaFinal.tsx:7; FaqAccordion.tsx:12 y el mismo texto dentro del FAQPage JSON-LD (KitPlanFinanciero.tsx:71); KitPlanFinancieroDashboard.tsx:15. Comprobación en los ficheros: `unzip -l` sobre los 10 xlsx no devuelve ninguna entrada chart/drawing, y openpyxl da len(ws._charts)==0 en las 39 hojas del kit.",
+      "fix": "O se insertan los gráficos (línea de EBITDA mensual en 01/01b, break-even con la recta de ingresos y la de costes totales en 02, barras de saldo final con la línea de umbral en 03, columnas real vs presupuesto en 05, radar de ratios en 06) o se retira la palabra «gráficos» de los 6 sitios, incluido el JSON-LD. Lo primero es lo que se ha vendido."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "src/components/kit-plan-financiero/FaqAccordion.tsx y WhySection.tsx (contra los 10 xlsx)",
+      "ubicacion": "FaqAccordion.tsx:20 · WhySection.tsx:13",
+      "hallazgo": "La landing afirma que las plantillas están encadenadas entre sí («los datos del CAPEX alimentan el cash flow, el plan previsional alimenta el break-even, y los ratios se calculan automáticamente desde el P&L»). Son diez libros aislados: cero enlaces externos entre ellos. Es además una de las 6 FAQ del producto, así que el comprador pregunta justo por esto y se le responde que sí.",
+      "evidencia": "`unzip -l` sobre los 10 xlsx: ninguna entrada externalLink/externalLinks en ninguno. 03!Flujo Mensual no referencia jamás 04!Resumen!B10 (INVERSIÓN TOTAL); 02!Datos!C6:C21 son inputs verdes tecleados a mano, no vienen de 01; 06!Ratios!C6:C12 son inputs verdes, no vienen de 05. WhySection.tsx:13 'Todo conectado automaticamente.'",
+      "fix": "Dos caminos honestos: (a) fusionar el kit en 2-3 libros con hojas enlazadas de verdad (Inputs → CAPEX → Previsional → Cash Flow → Ratios), que es lo que un consultor entrega; o (b) reescribir FAQ y WhySection diciendo que son plantillas independientes que comparten estructura de conceptos, y añadir en cada Instrucciones una nota de «qué celda de qué otra plantilla copiar aquí»."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "media",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "Instrucciones!B8 vs Flujo Mensual!B21:M21",
+      "hallazgo": "El propio fichero promete que «El IVA trimestral se calcula automáticamente» y la fila es un input manual. Un hostelero que se lo crea planifica la tesorería sin la liquidación del 303 y se lleva el susto en abril.",
+      "evidencia": "Instrucciones!B8: «▸ El IVA trimestral se calcula automáticamente (línea 'Liquidación IVA').» Flujo Mensual!A21 'Liquidación IVA trimestral', B21:M21 = int 0 con fill=00E8F5E9 (input verde) y sin fórmula. Tampoco hay tipos de IVA en ninguna parte para poder calcularlo (restauración al 10 %, suministros y bebidas de compra al 21 %).",
+      "fix": "Añadir un bloque de tipos (IVA repercutido 10 %, soportado 10 %/21 % por línea) y poner en B21/E21/H21/K21 (meses de liquidación: ene, abr, jul, oct) '=SUM(IVA repercutido trimestre)-SUM(IVA soportado trimestre)', dejando 0 en los meses sin liquidación. Si no se implementa, corregir la instrucción a «introduce el resultado de tu modelo 303»."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Ratios!C4:C10",
+      "hallazgo": "La hoja de ratios del informe bancario son siete celdas de input vacías: endeudamiento, DSCR, liquidez, margen EBITDA, ROI, fondos propios/inversión y deuda/EBITDA hay que calcularlos a mano y fuera del fichero. El DSCR es literalmente el número que decide la operación, y el kit se vende con «los ratios se calculan solos».",
+      "evidencia": "Ratios!C4:C10: todas NoneType con fill=00E8F5E9 (input) y sin fórmula; solo la columna D trae las referencias de texto ('< 60%', '> 1.25x', '> 1.0', '> 12%', '> 10%', '> 30%', '< 3.5x'). Además no existe ningún input de balance (activo/pasivo corriente, deuda viva, fondos propios) del que pudieran salir. WhySection.tsx:13 y FaqAccordion.tsx:20 prometen ratios automáticos.",
+      "fix": "Añadir un bloque «Datos de balance y deuda» (fondos propios, deuda viva, cuota anual de servicio de deuda, activo y pasivo corriente) y calcular: endeudamiento '=deuda/(deuda+FFPP)'; DSCR '=Proyecciones!B16/cuota_anual'; liquidez '=AC/PC'; margen EBITDA '=Proyecciones!B9/Proyecciones!B4'; ROI '=Proyecciones!B14/inversión'; FFPP/Inversión; deuda/EBITDA. Con semáforo contra la columna D, que ya está escrita."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "media",
+      "fichero": "05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "Ene..Dic!F6:F21 y E21",
+      "hallazgo": "El semáforo miente en dos direcciones: usa ABS(), así que gastar un 12 % MENOS de lo presupuestado en food cost pinta «🔴 Alerta» igual que pasarse; y la desviación de EBITDA divide por un presupuesto que en los primeros meses de un restaurante es negativo, con lo que una mejora sale con signo negativo y también en rojo.",
+      "evidencia": "'Ene'!F13='=IF(ABS(E13)<0.05,\"✅ OK\",IF(ABS(E13)<0.1,\"⚠️ Atención\",\"🔴 Alerta\"))' sobre E13='=IF(B13=0,0,(C13-B13)/B13)'. Caso trazado: ppto food 10.000, real 8.800 → E13=-0,12 → ABS=0,12 → «🔴 Alerta» por haber ahorrado 1.200 €. En EBITDA: E21 con B21=-5.000 y C21=-2.000 → (-2000+5000)/-5000 = -0,60 → «🔴 Alerta» por haber mejorado 3.000 €. Se repite en las 12 pestañas (mismo patrón verificado en 'Dic').",
+      "fix": "Semáforo con signo por tipo de línea: ingresos y EBITDA '=IF(E>=-0.05,\"✅\",IF(E>=-0.10,\"⚠️\",\"🔴\"))'; gastos '=IF(E<=0.05,\"✅\",IF(E<=0.10,\"⚠️\",\"🔴\"))'. Y para EBITDA usar la desviación en € (D21) o dividir por ABS(B21) para no invertir el signo con presupuestos negativos."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Escenarios!C7:E7 y C10:E10",
+      "hallazgo": "La hoja de escenarios está desconectada de la hoja de Datos: repite los costes fijos y los días de apertura como números escritos a mano. El usuario cambia sus datos, la pestaña Break-Even se actualiza y la de Escenarios sigue enseñando el negocio de otro. Es el clásico «la hoja que miente sin avisar».",
+      "evidencia": "Escenarios!C10='=C4*C5*26' (el 26 hardcodeado; el input real es Datos!C21=26). Escenarios!C7=D7=E7=19000 como constantes, mientras Datos!C14='=SUM(C6:C13)' cachea 19000.0. Break-Even sí lo hace bien: C8='=Datos!C14/(1-Datos!C17)'.",
+      "fix": "C10 '=C4*C5*Datos!$C$21' (y D10/E10); C7:E7 '=Datos!$C$14', o dejarlos como palanca de escenario pero con la fila etiquetada «(editable por escenario — base: Datos!C14)» y precargada con la fórmula."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx (y 01, 01b, 02, 03, 04)",
+      "ubicacion": "07!Proyecciones!A11 y 07!Ratios!B5 · 02!Datos!B12 · 03!Flujo Mensual!A20",
+      "hallazgo": "Falta el cuadro de amortización del préstamo, que es la pieza que un banco mira después del EBITDA. Cuatro plantillas piden «cuota préstamo» o «intereses deuda» a mano y ninguna los descompone en capital e intereses ni por años, con lo que el DSCR que exige el propio informe (>1,25x) no se puede calcular sin salirse del kit.",
+      "evidencia": "02!Datos!B12 'Cuota préstamo' (input C12=800); 03!Flujo Mensual!A20 'Cuota préstamo' (inputs B20:M20); 07!Proyecciones!A11 'Intereses deuda' (fila de ceros constantes); 07!Ratios!B5 'Cobertura de deuda (DSCR)' con referencia '> 1.25x' y celda vacía; 07!Resumen Ejecutivo!B16 'Plazo de amortización solicitado'. No existe ninguna hoja con capital pendiente, tipo de interés, carencia ni cuadro francés en ninguno de los 10 ficheros.",
+      "fix": "Añadir al 07 (o como plantilla 07b) una hoja «Financiación» con importe, tipo, plazo, carencia y cuadro francés por año: cuota '=PAGO(tipo;plazo;-importe)', intereses '=capital_pendiente*tipo', capital '=cuota-intereses'. Enlazar los intereses a Proyecciones!B11:F11 y la cuota al DSCR y a 03!B20:M20. Cubrir también la carencia, habitual en préstamos ICO de apertura."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "04-presupuesto-inversion-capex.xlsx",
+      "ubicacion": "Obra!A4:E4, Equipamiento Cocina!A4:E4, Mobiliario Sala!A4:E4, Tecnología!A4:E4, Licencias!A4:E4 y Resumen!B10",
+      "hallazgo": "El presupuesto de inversión no distingue base imponible de IVA soportado ni asigna coeficiente de amortización por tipo de activo. Son las dos cosas que se le piden a un CAPEX: la primera porque el desembolso real de caja es un 21 % mayor que el presupuesto que se enseña (y ese IVA se recupera meses después, justo el desfase que hunde tesorerías), y la segunda porque sin ella no hay dotación a la amortización que llevar al P&L.",
+      "evidencia": "Todas las hojas tienen exactamente 'Partida | Presupuesto (€) | Real (€) | Desviación % | Notas' (fila 4 de cada hoja). Resumen!B10='=SUM(B5:B9)' devuelve un único total sin desglose de IVA. En 07!Proyecciones!A10 hay una fila «Amortización» que se queda a cero y no tiene de dónde salir; en 03 no hay ninguna línea de IVA soportado de la inversión.",
+      "fix": "Añadir columnas «Base (€) | IVA % | IVA (€) | Total con IVA» y una columna «Coef. amortización» precargada por hoja (obra 3-5 %, equipamiento cocina 10-12 %, mobiliario 10 %, tecnología/software 25-33 %, licencias: gasto del ejercicio). En Resumen, filas de «Inversión (base)», «IVA soportado a recuperar» y «Dotación anual a la amortización», y llevar esta última a 07!Proyecciones!B10:F10."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "04-presupuesto-inversion-capex.xlsx",
+      "ubicacion": "Obra!A5:A14, Equipamiento Cocina!A5:A14, Mobiliario Sala!A5:A12, Tecnología!A5:A12, Licencias!A5:A13",
+      "hallazgo": "Al presupuesto de apertura le faltan las partidas que más dinero mueven y que son las que hacen que una petición de financiación se quede corta: traspaso, fianza del local, stock inicial de despensa y bodega, gastos de constitución y notaría, personal y formación pre-apertura, marketing de lanzamiento y —sobre todo— el fondo de maniobra para los primeros meses. Y a cambio mete un gasto corriente dentro de la inversión.",
+      "evidencia": "Las 5 hojas de partidas suman 46 líneas y ninguna recoge esos conceptos. Licencias!A13 = 'Seguros (año 1)' es OPEX y además duplica 02!Datos!B8 'Seguros' (400 €/mes = 4.800 €/año, ya dentro de los costes fijos). El propio kit sabe que falta: 09!Checklist!C15 (tarea 11) dice «Determinar capital circulante necesario (3-6 meses)» y no hay ninguna celda donde ponerlo.",
+      "fix": "Añadir una hoja «Otros conceptos de apertura» con traspaso, fianza y primeras rentas, constitución/notaría/registro, stock inicial, nóminas y formación pre-apertura, marketing de apertura, imprevistos (5-10 %) y fondo de maniobra 3-6 meses (enlazado a los costes fijos del 02). Mover 'Seguros (año 1)' fuera del CAPEX o marcarlo explícitamente como gasto anticipado no amortizable."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx, 06-dashboard-ratios-financieros.xlsx, 05-pyl-mensual-real-vs-presupuesto.xlsx",
+      "ubicacion": "02!Datos!B20/C20 y B17/C17 · 06!Ratios!B6/C6 · 05!Ene..Dic!B6:C9",
+      "hallazgo": "En ningún sitio se dice si las ventas y el ticket medio van con IVA o sin IVA. Es el error número uno del sector: el hostelero mira el TPV, que da el ticket con IVA, y lo teclea contra unos costes netos. Con el 10 % de restauración, el food cost % sale ~3 puntos bajo y los cubiertos necesarios para el equilibrio salen un 10 % por debajo de los reales.",
+      "evidencia": "02!Datos!B20 'Ticket medio por comensal' con C20=22 y la columna Notas (D20) vacía, mientras D7 sí se molesta en aclarar «incluye SS empresa» para las nóminas. 02!Break-Even!C10='=C9/Datos!C20' → 51,1 cubiertos/día; si esos 22 € llevan IVA, el neto es 20 € y hacen falta 56. 06!Ratios!B6 'Ventas totales (€)' C6=85000 sin nota, y C17='=C7/C6' da el food cost. 03 sí lo aclara («IVA incl.») en A7:A9, así que el kit es además incoherente consigo mismo.",
+      "fix": "Poner «(sin IVA)» en la etiqueta de cada input de ventas y de ticket medio en 02, 05 y 06, y una línea en Instrucciones: «Todas las cifras de este fichero van SIN IVA; en 03 Cash Flow van CON IVA porque es caja». Opcionalmente, un convertidor: ticket sin IVA '=ticket_TPV/1,10'."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!B9/C9, C20 y D20 (contra Benchmarks!B7, B8, B10)",
+      "hallazgo": "El GOP está calculado sobre un input («Gastos operativos totales») que no define qué incluye, y el resultado se compara contra un benchmark de GOP. Si el usuario mete el alquiler y las amortizaciones dentro —lo natural leyendo la etiqueta— eso no es GOP sino EBITDA/EBIT, y el número se mueve 10-15 puntos según lo que cada uno entienda. Un ratio que depende de la interpretación del que rellena no sirve para comparar con nadie.",
+      "evidencia": "Ratios!B9 'Gastos operativos totales (€)' C9=72250 sin nota de alcance; C20='=(C6-C9)/C6' → cache 0.15 etiquetado 'GOP (Gross Operating Profit) %' con D20 '> 15%'. La hoja Benchmarks distingue explícitamente 'GOP %' (B7), 'Alquiler / Ventas' (B8) y 'EBITDA %' (B10), es decir, el propio fichero sabe que no son lo mismo. En USALI el GOP se calcula antes de rentas y cargas de propiedad.",
+      "fix": "Renombrar C9 a «Gastos operativos SIN alquiler ni amortizaciones (incluye food y personal)» y añadir inputs separados de alquiler y amortización para poder sacar GOP '=(C6-C9)/C6' y EBITDA '=(C6-C9-alquiler)/C6' como dos filas distintas, cada una contra su benchmark de la hoja Benchmarks."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!A13 (fila 13)",
+      "hallazgo": "El tipo del Impuesto de Sociedades está clavado en la etiqueta al 25 %, cuando el destinatario típico de este kit es una entidad de nueva creación, que tributa al 15 % en el primer ejercicio con base positiva y en el siguiente; y si el proyecto se monta como autónomo o comunidad de bienes no hay IS, sino IRPF. Presentar al banco un año 1 con un 25 % de impuesto sobre un beneficio que probablemente sea negativo es un error de concepto en un documento que revisa un analista de riesgos.",
+      "evidencia": "Proyecciones!A13 = 'Impuesto Sociedades (25%)'; B13:F13 son ceros constantes sin fórmula (ver DOM-02), así que el 25 % no está ni siquiera aplicado en ningún sitio. En 09!Checklist!C5 (tarea 1) se contempla explícitamente «Elegir forma jurídica (SL, autónomo, cooperativa)», es decir, el kit sabe que el usuario puede no ser una SL.",
+      "fix": "Sacar el tipo a una celda etiquetada «Tipo impositivo (%)» con nota «entidad de nueva creación: 15 % los dos primeros ejercicios con base positiva (art. 29.1 LIS); general 25 %; autónomo: IRPF según escala» y calcular B13 '=IF(B12>0,B12*$tipo,0)' para que no se aplique impuesto sobre pérdidas. Añadir, si cabe, una fila de compensación de bases negativas."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "Checklist!C5:C52 (las 48 tareas) e Instrucciones!B7",
+      "hallazgo": "La checklist financiera pre-apertura no tiene ni una sola tarea de alta laboral. Faltan la inscripción de la empresa en la Seguridad Social y el código de cuenta de cotización, el alta de los trabajadores ANTES de que empiecen, la comunicación de apertura del centro de trabajo, los contratos según el convenio de hostelería provincial y el registro de jornada. Son obligaciones con sanción económica directa y con impacto de caja el primer mes, justo el terreno de esta plantilla.",
+      "evidencia": "Las 48 tareas están en Checklist!C5:C52 repartidas en 6 fases (Constitución, Financiación, Licencias, Proveedores, Seguros, Tesorería). Lo más cercano es C12 (tarea 8) «Alta en el Censo de Empresarios (Modelo 036/037)» y C39 (tarea 35) «Seguro de accidentes de trabajo»; el 04!Licencias!A10 menciona «Alta Hacienda / SS» de pasada, pero no hay tarea ni fase. La fase 6 (Tesorería, C45:C52) llega a detallar la «política de propinas» y el «fondo de caja».",
+      "fix": "Añadir una fase 7 «Personal y obligaciones laborales» con 5-6 tareas: inscripción de la empresa en la SS y CCC, alta en RETA del promotor, comunicación de apertura del centro de trabajo, contratos conforme al convenio provincial de hostelería, alta de trabajadores previa al inicio, registro de jornada y calendario de nóminas/modelo 111. Actualizar el «48» de Instrucciones!B7, A1, C55 y la fórmula C59."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "07-informe-viabilidad-bancos.xlsx",
+      "ubicacion": "Proyecciones!B19 (contra Resumen Ejecutivo!C13 y 04!Resumen!B10)",
+      "hallazgo": "El documento que se imprime para el banco viene con una inversión ficticia de 150.000 € precargada en una celda de input. Si el cliente rellena las proyecciones y no repara en ese número (está fuera del bloque de datos, abajo del todo, bajo un epígrafe de «indicadores»), presenta un informe con una cifra inventada que además no cuadra con su propio resumen ejecutivo ni con su CAPEX.",
+      "evidencia": "Proyecciones!B19 = -150000 con fill=00E8F5E9 (input), etiquetado 'Inversión inicial (negativa)'. Resumen Ejecutivo!B13 'Inversión total necesaria' tiene su celda C13 vacía, y 04!Resumen!B10 'INVERSIÓN TOTAL' cachea 0.0. Nada enlaza los tres.",
+      "fix": "Dejar B19 vacía con un comentario/placeholder («introduce aquí el total de tu CAPEX, en negativo») o, mejor, enlazarla al resumen ejecutivo: '=-C13' y que C13 se rellene desde el total del 04. Regla general para todo el kit: en un fichero que se entrega a un tercero, ningún dato de ejemplo debe quedar precargado."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Ratios!C21, C23 y E21:E24 (contra Benchmarks!B11/E11 e Instrucciones!B9)",
+      "hallazgo": "Los datos de ejemplo del dashboard colocan al restaurante en la zona de «Peligro» de su propio benchmark sin que nada lo señale, porque las cuatro últimas filas de ratios se quedaron sin columna Estado. Además las Instrucciones prometen semáforo para todos.",
+      "evidencia": "Ratios!C21='=C9/C10' → 22,578 € de coste por cubierto; C23='=C6/C10' → 26,5625 € de ticket medio; el cociente es 85 %, y Benchmarks!B11 'Coste cubierto / Ticket' marca 'Peligro' en E11 '> 70%'. E21, E22, E23 y E24 están vacías (solo E17:E20 tienen fórmula de semáforo). Instrucciones!B9: «El semáforo indica si estás dentro de rango óptimo (verde), aceptable (amarillo) o peligro (rojo)».",
+      "fix": "Añadir el semáforo a las filas 21-24 (coste/ticket contra 60 %/70 %, RevPASH contra su benchmark ya corregido, margen bruto contra 65 %) y recalibrar los datos de ejemplo para que describan un restaurante sano y coherente: si el margen bruto es del 70 %, el coste por cubierto no puede comerse el 85 % del ticket."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "03-cash-flow-forecast.xlsx",
+      "ubicacion": "Flujo Mensual!A7:A22 (contra src/components/kit-plan-financiero/ContentGrid.tsx:11)",
+      "hallazgo": "El cash flow no tiene la mecánica que le atribuye la landing —«desfase cobros/pagos» y «estacionalidad»— y le faltan las salidas que descuadran la caja de un restaurante español: las retenciones de IRPF del modelo 111, los pagos fraccionados, y la Seguridad Social, que se paga el mes siguiente pero aquí va pegada a la nómina en una sola línea.",
+      "evidencia": "ContentGrid.tsx:11: «Flujo de caja mensual con desfase cobros/pagos, IVA trimestral y estacionalidad». En el fichero, las 5 líneas de cobros (A7:A11) y las 9 de pagos (A14:A22) son inputs directos por mes: no hay ningún parámetro de días de cobro por tarjeta (D+1/D+2), ni de plazo de pago a proveedores (30/60 días), ni curva de estacionalidad. A15 = 'Nóminas + SS' en una sola fila. No existe fila de retenciones IRPF ni de pagos fraccionados (mod. 111/115/130/202).",
+      "fix": "Separar 'Nóminas (neto)' y 'Seguros Sociales (mes anterior)'; añadir 'Retenciones IRPF (mod. 111, trimestral)' y 'Pago fraccionado'. Para el desfase, un bloque de parámetros (% cobro tarjeta y días, plazo de pago a proveedores) que reparta automáticamente ventas y compras entre meses, o al menos una nota explicando cómo desplazarlos a mano. Y si no hay curva de estacionalidad, quitar la palabra de la landing."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "baja",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Datos!B7 y D7",
+      "hallazgo": "La etiqueta y la nota de la misma fila se contradicen: «bruto» y «incluye SS empresa» no son lo mismo, y entre una lectura y otra hay un 30-33 % de diferencia sobre 12.000 €, es decir, unos 4.000 € mensuales de coste fijo, que en este ejemplo mueven el break-even unos 6.000 € al mes.",
+      "evidencia": "Datos!B7 = 'Nóminas fijas (bruto)', C7 = 12000, D7 = '€/mes — incluye SS empresa'. C7 entra en C14='=SUM(C6:C13)' → 19.000 €, que alimenta Break-Even!C8='=Datos!C14/(1-Datos!C17)' → 29.230,77 €.",
+      "fix": "Dejar una sola formulación: «Coste total de personal fijo (salario bruto + SS empresa)» y en Notas «≈ bruto × 1,32»."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "baja",
+      "fichero": "02-calculadora-punto-equilibrio.xlsx",
+      "ubicacion": "Break-Even!C10 y C11",
+      "hallazgo": "Los cubiertos necesarios se muestran redondeados hacia abajo por formato: en pantalla se lee un número de comensales con el que todavía se pierde dinero. En una cifra que el usuario convierte en objetivo diario para su equipo, el redondeo tiene que ser siempre hacia arriba.",
+      "evidencia": "Break-Even!C10='=C9/Datos!C20' con valor 51,102743… y number_format '#,##0' → se lee «51». Con 51 cubiertos × 22 € × 26 días = 29.172 € < 29.230,77 € de break-even (C8). Lo mismo en C11='=C10*Datos!C21' (1.328,67 → «1.329»).",
+      "fix": "C10 '=ROUNDUP(C9/Datos!C20,0)' y C11 '=ROUNDUP(C8/Datos!C20,0)'. Mantener el formato entero."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "baja",
+      "fichero": "BONUS-09-checklist-pre-apertura.xlsx",
+      "ubicacion": "Checklist!F5:F52 y C55:C59",
+      "hallazgo": "La columna Estado no tiene validación de datos pese a que las Instrucciones dictan tres valores exactos, y el resumen cuenta por coincidencia literal de texto. Quien escriba «completado», «COMPLETADA» con espacio final o «Hecho» verá su avance estancado en 0 %. Además el porcentaje divide por un 48 fijo, así que añadir o quitar tareas lo descuadra en silencio.",
+      "evidencia": "F5:F52 = 'Pendiente' como texto libre, sin dataValidation en la hoja. C56='=COUNTIF(F5:F52,\"Completada\")', C57, C58 y C59='=COUNTIF(F5:F52,\"Completada\")/48' (48 hardcodeado); C55=48 también como constante.",
+      "fix": "Añadir dataValidation de lista ('Pendiente','En curso','Completada') sobre F5:F52, C55 '=COUNTA(C5:C52)' y C59 '=IF(C55=0,0,C56/C55)'. Formato condicional por estado, ya que la plantilla se usa a diario durante meses."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "baja",
+      "fichero": "01-plan-financiero-previsional.xlsx y 01b-plan-financiero-previsional-5-anos.xlsx",
+      "ubicacion": "01!Resumen!E6:E8 · 01b!Resumen!G6:G8",
+      "hallazgo": "La columna de crecimiento solo tiene fórmula en la primera fila; las tres de debajo son ceros constantes. Aun después de arreglar DOM-04, la hoja seguirá enseñando un crecimiento de ingresos calculado y un 0,0 % de crecimiento en gastos, EBITDA y margen, que es lo primero que mira un inversor.",
+      "evidencia": "01!Resumen!E5='=IF(B5=0,0,(D5-B5)/B5)' con formato 0.0%; E6, E7 y E8 son int 0 sin fórmula, con el mismo formato de porcentaje. Igual en 01b: G5 tiene fórmula ('=IF(B5=0,0,(F5-B5)/B5)') y G6:G8 son constantes.",
+      "fix": "Replicar la fórmula de E5 en E6:E8 (y de G5 en G6:G8). Para el margen (fila 8), que ya es un porcentaje, mostrar la diferencia en puntos porcentuales '=D8-B8' y etiquetarlo como «p.p.», no como crecimiento."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "baja",
+      "fichero": "01b-plan-financiero-previsional-5-anos.xlsx",
+      "ubicacion": "Instrucciones!B9",
+      "hallazgo": "Frase mal rematada en la primera pantalla que ve el cliente: opone dos cosas idénticas. Se lee como una plantilla copiada y no revisada, justo en el fichero que se vende como el que se lleva al banco o al franquiciador.",
+      "evidencia": "Instrucciones!B9 = '▸ Año 1 con desglose mensual. Años 2-5 con desglose mensual.' (Verificado que las 5 pestañas tienen efectivamente desglose mensual: 'Año 5'!N10='=SUM(N6:N9)' y B21='=B10-B19', igual que 'Año 1'.)",
+      "fix": "«▸ Los cinco años van con desglose mensual (Ene-Dic) y total anual en la columna N.»"
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "baja",
+      "fichero": "06-dashboard-ratios-financieros.xlsx",
+      "ubicacion": "Instrucciones!B12 vs Ratios!E17/D17 y Benchmarks!D4",
+      "hallazgo": "El umbral del food cost no coincide entre las tres partes del mismo fichero (32 % en las instrucciones y en la columna de referencia, 33 % en la fórmula del semáforo y en la tabla de benchmarks). Un punto porcentual de food cost sobre 85.000 € de ventas son 850 €/mes; en un dashboard cuya razón de ser es comparar contra referencias, las referencias no pueden discrepar entre hojas.",
+      "evidencia": "Instrucciones!B12: '▸ Food Cost ideal: 28-32% sobre ventas.' Ratios!E17='=IF(C17<0.28,\"✅ Excelente\",IF(C17<0.33,\"⚠️ Aceptable\",\"🔴 Alto\"))'. Ratios!D17 = '28% - 32%'. Benchmarks!D4 = '28% - 33%'. Con C17=0,325 el veredicto es «⚠️ Aceptable» según la fórmula y «Alto» según D17.",
+      "fix": "Fijar un único umbral (33 % es el habitual en casual dining español) y propagarlo a Instrucciones!B12, Ratios!D17 y Benchmarks!D4/E4. Mejor aún: que E17 lea los umbrales de la hoja Benchmarks en vez de llevarlos escritos dentro de la fórmula."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "Como consultor no entrego este kit a un cliente y menos a un banco. Hay tres hojas de consolidación muertas (01!Resumen, 01b!Resumen y 05!Resumen Anual: ceros constantes, sin fórmula y sin relleno de input, mientras sus Instrucciones dicen «consolida los 3/5 años» y «consolida los 12 meses»), el fichero 07 —el que da nombre a la promesa comercial— tiene 3 fórmulas en todo el libro y no calcula ni el P&L de proyecciones ni TIR ni VAN ni payback ni un solo ratio, y el 03, que el inventario daba por correcto, arrastra el saldo de tesorería desde la fila 22 («Otros pagos») en vez de la 25 («Saldo Final»): once meses de cash flow erróneos y once alertas rojas falsas ya cacheadas en el fichero que se descarga. A eso se suman dos cálculos que mienten con datos plausibles —el RevPASH del 06 dividido por m² y comparado contra un benchmark por plaza, y el simulador BONUS-08, que cuenta el personal dos veces y presenta un escenario BASE con 63.264 € de pérdidas anuales para «negociar con inversores»— y un bloque de publicidad refutable: «gráficos automáticos» se anuncia seis veces (landing, hero, CTA, FAQ con JSON-LD y dashboard) y no hay un solo objeto chart en las 39 hojas del kit, y «las fórmulas están encadenadas: el CAPEX alimenta el cash flow» se responde en la FAQ cuando los diez libros no tienen ni un externalLink. Con 30 días de garantía y 39 € de precio, un comprador que abra el 07 o el resumen del 01 pide el reembolso el mismo día. Prioridad de arreglo: DOM-01 a DOM-05 (fórmulas que faltan; es trabajo mecánico de media jornada), luego DOM-06 y DOM-07 (cálculos que engañan), y en paralelo alinear la landing con la realidad (DOM-08, DOM-09) mientras se decide si se implementan de verdad los gráficos y el encadenado. Lo que sí está sano: 04 CAPEX (Resumen correctamente enlazado a las 5 hojas de partidas), 09 Checklist (48 tareas coherentes y con Veri*factu al día) y las 12 pestañas mensuales del 05, que calculan bien y solo necesitan que alguien las sume. Único escape de Fase A detectado: 07!Proyecciones!B21, la única fórmula del kit sin valor cacheado."
+   }
+  }
+ }
+}
