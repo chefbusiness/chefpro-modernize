@@ -253,3 +253,24 @@ restaurante-creativo 477·55·34·13·12 meses · representante 491·111·33·11
 **Siguiente familia (orden del plan §4):** inventario / gestión-personal / plan-financiero con
 `auditoria-entregables-workflow.js` (añadir schema) + `r1-desde-journal.py`; después guías, planes, hotel completo, eBook.
 Homologación AICP↔CB sigue pendiente (los 11 kits v2.0 deben llegar a CB).
+
+## 10. Madrugada del 24-ago — familia inventario/gestión-personal/plan-financiero
+
+- **R1 de los 3 productos** (3 lentes opus cada uno): inventario 91 hallazgos/30 altas · gestión-personal 86/29 ·
+  plan-financiero 90/25 — «no listo» ×9 lentes. JSON en `auditorias/<pid>-R1.json`.
+- **SPEC v2.0 de los 3** (borrador opus + decisiones firmadas §7-bis): `kit-inventario-v2-SPEC.md`,
+  `kit-gestion-personal-v2-SPEC.md`, `kit-plan-financiero-v2-SPEC.md`. Claves: pycel no implementa COUNTA/MODE/IRR/PMT/
+  WEEKDAY(,tipo)/DATEDIF (sustitutos en las SPEC; TIR con Newton propio cacheada en main.py); los gráficos del
+  plan-financiero SE CONSTRUYEN (openpyxl.chart, antes de inject_cache, gate ws._charts); horas nocturnas con ROUND.
+- **⚠️ AVISO LEGAL PARA JOHN (plan-financiero)**: ancla de 190 € nunca cobrada (salió a 19 €, subió a 39 € el mismo día
+  — art. 20 Ley 7/1996 / Directiva Ómnibus) y aggregateRating 4,9/8 sin reseñas en JSON-LD (riesgo de acción manual).
+  También: licencia del kit-inventario (FAQ contradictoria, §7-bis.5) y testimonios con funcionalidades inexistentes.
+- **Kit de Inventario v2.0 LIVE** (`6039a4b`): construcción completa (motor + grupos A/B/C + integración + 3 refutadores
+  → corrección 72/72 ids → ronda 2 → crítico con 2 bloqueos de una línea, arreglados). 1.926 fórmulas (×3,6; el 04 tenía
+  0), 35 desplegables, 31 reglas de CF, 29/38 hojas protegidas, taxonomía única de 10 categorías, FIFO 5 estados,
+  temperaturas legales con «Conforme» por fórmula, EOQ parametrizada. Gate LIVE 9/9, producción = repo.
+  Paquete reutilizable: `kit-inventario-v2_0/` (motor + grupos + main con APPLY).
+- **Gestión-personal v2.0**: construcción EN CURSO al escribir esto (workflow `wf_186ca06c-b1d`); si se corta, WIP
+  commiteado entre fases y el runId no sobrevive a la sesión — relanzar el workflow entero (los ficheros del paquete
+  `kit-gestion-personal-v2_0/` que existan se revisan, no se pisan). Después: plan-financiero
+  (`kit-plan-financiero-v2-workflow.js`, ya escrito y commiteado).
