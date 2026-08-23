@@ -1,0 +1,1375 @@
+{
+ "producto": "kit-tareas-bar",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T17:39:59",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-bar",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-bar",
+ "contexto": {
+  "kit": "Bar / Cocktails",
+  "pie": "— Kit de Tareas Recurrentes · Bar / Cocktails · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+  "hora_apertura": "15:30",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": "01-apertura-cierre.xlsx",
+  "ficheros": [
+   "01-apertura-cierre.xlsx",
+   "02-partidas-cocina.xlsx",
+   "03-tareas-manager.xlsx",
+   "04-tareas-perfiles.xlsx",
+   "05-tareas-semanales-mensuales.xlsx",
+   "06-eventos-festivos.xlsx",
+   "07-plantilla-personalizable.xlsx",
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx",
+   "BONUS-01-briefing-servicio.xlsx",
+   "BONUS-02-calendario-anual-tareas.xlsx"
+  ],
+  "con_checklist": [
+   "01-apertura-cierre.xlsx",
+   "02-partidas-cocina.xlsx",
+   "03-tareas-manager.xlsx",
+   "04-tareas-perfiles.xlsx",
+   "05-tareas-semanales-mensuales.xlsx",
+   "06-eventos-festivos.xlsx",
+   "07-plantilla-personalizable.xlsx",
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx",
+   "BONUS-01-briefing-servicio.xlsx"
+  ],
+  "f_calendario": "BONUS-02-calendario-anual-tareas.xlsx",
+  "f_briefing": null,
+  "f_plantilla": "07-plantilla-personalizable.xlsx",
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [
+   "barra"
+  ],
+  "negocio_bandas": [],
+  "papeles": {
+   "01-apertura-cierre.xlsx": {
+    "ciclo": [
+     "Apertura Barra",
+     "Cierre Barra"
+    ],
+    "con_notas": [],
+    "recuento": false,
+    "registro": false
+   },
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true
+   }
+  },
+  "producto": "kit-tareas-bar"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura Barra",
+    "Cierre Barra"
+   ],
+   "cambios": [
+    "«Apertura Barra»: +4 filas libres dentro del rango contado (total 5)",
+    "«Apertura Barra»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre Barra»: +4 filas libres dentro del rango contado (total 5)",
+    "«Cierre Barra»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura Barra»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Apertura Barra»: bloque «HIGIENE PERSONAL» al inicio (5 tareas) — DOM-12 (equivalente)",
+    "«Apertura Barra»: las cámaras se COMPRUEBAN, no se encienden, y la desviación bloquea el género — DOM-24 (equivalente)",
+    "«Apertura Barra»: «25-30 seg» → «25-30 segundos» («seg» no es abreviatura de segundo)",
+    "«Cierre Barra»: tarea de mermas del turno con su consecuencia (pour cost) — DOM-18 (equivalente)",
+    "«Cierre Barra»: el arqueo se COMPRUEBA aquí y se hace en «Cierre de Caja» del 09 — antes eran dos recuentos paralelos sin remisión — DOM-23",
+    "«Cierre Barra»: «si necesario» → «si hace falta»",
+    "Instrucciones reescritas (23 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Cerveza y Grifo",
+    "Coctelería Clásica",
+    "Vinos y Bodega"
+   ],
+   "cambios": [
+    "«Coctelería Clásica»: +4 filas libres dentro del rango contado (total 5)",
+    "«Coctelería Clásica»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cerveza y Grifo»: +4 filas libres dentro del rango contado (total 5)",
+    "«Cerveza y Grifo»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Vinos y Bodega»: +4 filas libres dentro del rango contado (total 5)",
+    "«Vinos y Bodega»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cerveza y Grifo»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Coctelería Clásica»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Vinos y Bodega»: cabecera «Hora Límite» → «Cadencia» (la columna no lleva horas)",
+    "«Vinos y Bodega»: fila 2 acorde a la cadencia",
+    "«Coctelería Clásica»: alérgenos de la carta de cócteles por escrito antes del servicio — DOM-19 (equivalente)",
+    "«Coctelería Clásica»: el hielo se repone con pala o pinzas, nunca con el vaso",
+    "«Coctelería Clásica»: «Peychaud» → «Peychaud's» y «bitter/Orange bitters» → «bitters/orange bitters» (nombre real de la marca y minúscula en el genérico)",
+    "«Cerveza y Grifo»: «2.5-3.0 bar» → «2,5-3,0 bar» (separador decimal español)",
+    "Instrucciones reescritas (20 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Diario Manager",
+    "Mensual Manager",
+    "Semanal Manager"
+   ],
+   "cambios": [
+    "«Diario Manager»: +4 filas libres dentro del rango contado (total 5)",
+    "«Diario Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Semanal Manager»: +4 filas libres dentro del rango contado (total 5)",
+    "«Semanal Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Mensual Manager»: +4 filas libres dentro del rango contado (total 5)",
+    "«Mensual Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Semanal Manager»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Mensual Manager»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Diario Manager»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Mensual Manager»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Diario Manager»: registro diario de jornada (obligatorio desde 2019) — DOM-17 (equivalente)",
+    "«Diario Manager»: el manager VALIDA el descuadre del 09 en vez de hacer un tercer recuento del mismo dinero, y la tarea remite al fichero dueño — DOM-23",
+    "«Diario Manager»: las mermas se ANOTAN una sola vez (en «Cierre Barra», DOM-18) y aquí se revisan: dos anotaciones daban dos cifras para el mismo pour cost — DOM-23",
+    "«Mensual Manager»: archivo de los registros de jornada del mes — DOM-17 (equivalente)",
+    "«Mensual Manager»: se va el doble paréntesis «(limpieza, temperatura) (refrigeración 0-4 °C)» que dejaba la cola de §2.9 del motor",
+    "Instrucciones: el registro de jornada y su archivo — DOM-17 (equivalente)",
+    "Instrucciones reescritas (23 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Barback",
+    "Bartender",
+    "Camarero Barra",
+    "Head Bartender"
+   ],
+   "cambios": [
+    "«Head Bartender»: +4 filas libres dentro del rango contado (total 5)",
+    "«Head Bartender»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Bartender»: +4 filas libres dentro del rango contado (total 5)",
+    "«Bartender»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Barback»: +4 filas libres dentro del rango contado (total 5)",
+    "«Barback»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Camarero Barra»: +4 filas libres dentro del rango contado (total 5)",
+    "«Camarero Barra»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Head Bartender»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Bartender»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Barback»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Camarero Barra»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "Instrucciones reescritas (19 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Inventario",
+    "Limpieza Semanal",
+    "Mantenimiento Mensual",
+    "Trimestral y Anual"
+   ],
+   "cambios": [
+    "«Limpieza Semanal»: +4 filas libres dentro del rango contado (total 5)",
+    "«Limpieza Semanal»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Mantenimiento Mensual»: +4 filas libres dentro del rango contado (total 5)",
+    "«Mantenimiento Mensual»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Inventario»: +4 filas libres dentro del rango contado (total 5)",
+    "«Inventario»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Limpieza Semanal»: cabecera «Hora Límite» → «Día» (la columna no lleva horas)",
+    "«Limpieza Semanal»: fila 2 acorde a la cadencia",
+    "«Mantenimiento Mensual»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Inventario»: cabecera «Hora Límite» → «Día» (la columna no lleva horas)",
+    "«Inventario»: fila 2 acorde a la cadencia",
+    "hoja nueva «Trimestral y Anual»: mantenimiento contratado (DDD, extintores y BIE, conductos, gas, frigorista, legionela, limitador acústico, licencia de terraza, seguro y Verifactu) con nº de parte y firma — DOM-16 (equivalente)",
+    "«Mantenimiento Mensual»: el descalcificado del espresso deja de ser mensual por decreto y depende de la dureza del agua — DOM-15 (equivalente)",
+    "«Trimestral y Anual»: revisión periódica de la instalación de gas y de las bombonas de los calefactores de terraza — DOM-16 (equivalente)",
+    "«Inventario»: tarea de retirada de producto abierto que ha pasado su vida útil — DOM-29 (equivalente)",
+    "«Inventario»: tabla editable de vida útil del producto abierto y elaborado en barra (10 familias) — DOM-29 (equivalente)",
+    "Instrucciones: hoja trimestral/anual y tabla de vida útil en barra — DOM-16 / DOM-29 (equivalentes)",
+    "«Trimestral y Anual»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Trimestral y Anual»: cabecera «Cuándo» → «Cadencia» (la columna no lleva horas)",
+    "«Trimestral y Anual»: fila 2 acorde a la cadencia",
+    "Instrucciones reescritas (24 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "After Work",
+    "Maridaje Catas",
+    "Noche Cócteles",
+    "Nochevieja"
+   ],
+   "cambios": [
+    "«Noche Cócteles»: +4 filas libres dentro del rango contado (total 5)",
+    "«Noche Cócteles»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Nochevieja»: +4 filas libres dentro del rango contado (total 5)",
+    "«Nochevieja»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«After Work»: +4 filas libres dentro del rango contado (total 5)",
+    "«After Work»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Maridaje Catas»: +4 filas libres dentro del rango contado (total 5)",
+    "«Maridaje Catas»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Noche Cócteles»: cabecera «Hora Límite» → «Antelación» (la columna no lleva horas)",
+    "«Noche Cócteles»: fila 2 acorde a la cadencia",
+    "«Nochevieja»: cabecera «Hora Límite» → «Antelación» (la columna no lleva horas)",
+    "«Nochevieja»: fila 2 acorde a la cadencia",
+    "«After Work»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Maridaje Catas»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Maridaje Catas»: bloque «AL CONFIRMAR LA RESERVA» (alérgenos por escrito, precio por persona, señal, cancelación) — DOM-19 (equivalente)",
+    "«Maridaje Catas»: «maridaje food» → «la comida del maridaje» (ni inglés ni español, y ahora dice lo mismo que la tarea de alérgenos que abre la hoja)",
+    "«After Work»: alérgenos de los snacks de cortesía — DOM-19 (equivalente)",
+    "Instrucciones: qué se cierra al confirmar una cata y dónde están los alérgenos — DOM-19 (equivalente)",
+    "«Maridaje Catas»: cabecera «Cuándo» → «Antelación» (la columna no lleva horas)",
+    "«Maridaje Catas»: fila 2 acorde a la cadencia",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Por Franja Horaria",
+    "Por Perfil",
+    "Por Zona"
+   ],
+   "cambios": [
+    "«Por Franja Horaria»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Franja Horaria»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Zona»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Zona»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Perfil»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Perfil»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Franja Horaria»: se CONSERVAN sus 4 secciones propias (Apertura (15:00 - 18:00) · Servicio Tarde (18:00 - 22:00) · Servicio Noche (22:00 - 02:00) · Cierre (02:00 - 03:00)) y se le aplica el molde ▸ (subtítulo sin «Turno» donde no hay turno, banda con el aviso de dónde se escribe, «Tarea» vacía y en verde) — 27 celdas",
+    "«Por Zona»: se CONSERVAN sus 4 secciones propias (Barra Principal · Coctelería · Bodega / Almacén · Terraza) y se le aplica el molde ▸ (subtítulo sin «Turno» donde no hay turno, banda con el aviso de dónde se escribe, «Tarea» vacía y en verde) — 9 celdas",
+    "«Por Perfil»: se CONSERVAN sus 4 secciones propias (Head Bartender · Bartender · Barback · Camarero) y se le aplica el molde ▸ (subtítulo sin «Turno» donde no hay turno, banda con el aviso de dónde se escribe, «Tarea» vacía y en verde) — 37 celdas",
+    "Instrucciones reescritas (19 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura del Negocio»: Responsable y Hora Límite precargados en 18 tareas (ancla 15:30)",
+    "«Cierre del Negocio»: Responsable y Hora Límite precargados en 15 tareas (ancla 15:30)",
+    "«Cierre del Negocio»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura del Negocio»: 3 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Apertura del Negocio»: «presión CO2» → «presión de CO₂», como en «Cerveza y Grifo» (02) y «Mantenimiento Mensual» (05)",
+    "Instrucciones reescritas (24 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)",
+    "metadata title → Apertura y Cierre del Negocio — Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Apertura de Caja»: B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» (T-02: el hito de encender el TPV es del fichero de negocio; aquí se comprueba)",
+    "«Apertura de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Cierre de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Registro Mensual»: columna «Z del TPV» antes de «Descuadre» (DOM-04/TEC-04/COM-14)",
+    "«Registro Mensual»: la columna del efectivo pasa a «Efectivo Contado» (el recuento del cajón; el fondo lo descuenta la fórmula) — DOM-R2-01",
+    "«Registro Mensual»: nota al pie con las tres cifras que NO son una suma (TEC-05/DOM-R2-01/26)",
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Apertura de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre de Caja»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: añadida la denominación de 0,02 €",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Apertura de Caja»: celda editable del fondo de caja (C23)",
+    "«Apertura de Caja»: la tarea del fondo apunta a la celda verde sin hardcodear la coordenada",
+    "«Cierre de Caja»: fila «Fondo de caja inicial (−)» en el Resumen de Cierre",
+    "«Cierre de Caja»: fila «Ventas en efectivo (contado − fondo)» en el Resumen de Cierre",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (30 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)",
+    "metadata title → Apertura y Cierre de Caja — Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails"
+   ],
+   "formulas_nuevas": 81
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Briefing Diario"
+   ],
+   "cambios": [
+    "«Briefing Diario»: +4 filas libres dentro del rango contado (total 5)",
+    "«Briefing Diario»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Briefing Diario»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "Instrucciones reescritas (19 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "1 hojas protegidas sin contraseña (de 1 con print_area y A4)"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Calendario Anual"
+   ],
+   "cambios": [
+    "«Calendario Anual»: rayado rehecho por índice en las 17 fechas (DOM-R2-20)",
+    "«Calendario Anual»: 6 fechas que faltaban (Año Nuevo, Carnaval, 1 de mayo, 15 de agosto, puente de diciembre y Nochebuena)",
+    "«Calendario Anual»: «World Cocktail Day (13 May)» → «World Cocktail Day (13 de mayo)» (el mes iba en inglés y abreviado)",
+    "«Calendario Anual»: «Negroni Week (Sep)» → «Negroni Week (septiembre)» (el mes iba en inglés y abreviado)",
+    "«Calendario Anual»: rayado rehecho por índice en las 23 fechas (DOM-R2-20)",
+    "Instrucciones reescritas (9 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "1 hojas protegidas sin contraseña (de 1 con print_area y A4)"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 — Apertura y Cierre · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B44",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$44",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura Barra",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura Barra'!$A$1:$G$54",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Barra",
+     "dim": "A1:G46",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre Barra'!$A$1:$G$46",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "title": "02 — Partidas de Barra · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B39",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$39",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Coctelería Clásica",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Coctelería Clásica'!$A$1:$G$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cerveza y Grifo",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cerveza y Grifo'!$A$1:$G$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Vinos y Bodega",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Vinos y Bodega'!$A$1:$G$27",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 — Tareas del Manager · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B44",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$44",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Diario Manager",
+     "dim": "A1:G36",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Diario Manager'!$A$1:$G$36",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Semanal Manager",
+     "dim": "A1:G44",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Semanal Manager'!$A$1:$G$44",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual Manager",
+     "dim": "A1:G34",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Mensual Manager'!$A$1:$G$34",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 — Tareas por Perfil · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B38",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$38",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Head Bartender",
+     "dim": "A1:G34",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Head Bartender'!$A$1:$G$34",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Bartender",
+     "dim": "A1:G34",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Bartender'!$A$1:$G$34",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Barback",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Barback'!$A$1:$G$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Camarero Barra",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Camarero Barra'!$A$1:$G$22",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 — Semanales y Mensuales · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Limpieza Semanal",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Limpieza Semanal'!$A$1:$G$35",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mantenimiento Mensual",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Mantenimiento Mensual'!$A$1:$G$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Inventario",
+     "dim": "A1:G48",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Inventario'!$A$1:$G$48",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Trimestral y Anual'!$A$1:$G$32",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "title": "06 — Eventos y Festivos · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B43",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$43",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Noche Cócteles",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Noche Cócteles'!$A$1:$G$27",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Nochevieja",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Nochevieja'!$A$1:$G$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "After Work",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'After Work'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Maridaje Catas",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Maridaje Catas'!$A$1:$G$32",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 — Plantilla Personalizable · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B38",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$38",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Franja Horaria",
+     "dim": "A1:G41",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Franja Horaria'!$A$1:$G$41",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G40",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Zona'!$A$1:$G$40",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G38",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Perfil'!$A$1:$G$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B47",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$47",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B57",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$57",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 — Briefing de Servicio · Bar · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B38",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$38",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing Diario",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Briefing Diario'!$A$1:$G$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 — Calendario Anual · Bar / Cocktails · Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B22",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$22",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario Anual",
+     "dim": "A1:F28",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Calendario Anual'!$A$1:$F$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-cocina.xlsx",
+    "salida": "02-partidas-cocina.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-festivos.xlsx",
+    "salida": "06-eventos-festivos.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 133,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 28,
+   "hojas_p4": 0,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 342,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 54,
+    "02-partidas-cocina.xlsx": 32,
+    "03-tareas-manager.xlsx": 50,
+    "04-tareas-perfiles.xlsx": 47,
+    "05-tareas-semanales-mensuales.xlsx": 53,
+    "06-eventos-festivos.xlsx": 39,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 33,
+    "09-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 11,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 342,
+    "p4": 0
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura Barra",
+     "molde": "checklist_▸",
+     "celda": "F50",
+     "tareas": 30
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre Barra",
+     "molde": "checklist_▸",
+     "celda": "F42",
+     "tareas": 24
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Coctelería Clásica",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Cerveza y Grifo",
+     "molde": "checklist_▸",
+     "celda": "F24",
+     "tareas": 10
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Vinos y Bodega",
+     "molde": "checklist_▸",
+     "celda": "F23",
+     "tareas": 9
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Diario Manager",
+     "molde": "checklist_▸",
+     "celda": "F32",
+     "tareas": 16
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Semanal Manager",
+     "molde": "checklist_▸",
+     "celda": "F40",
+     "tareas": 20
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Mensual Manager",
+     "molde": "checklist_▸",
+     "celda": "F30",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Head Bartender",
+     "molde": "checklist_▸",
+     "celda": "F30",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Bartender",
+     "molde": "checklist_▸",
+     "celda": "F30",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Barback",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Camarero Barra",
+     "molde": "checklist_▸",
+     "celda": "F18",
+     "tareas": 6
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Limpieza Semanal",
+     "molde": "checklist_▸",
+     "celda": "F31",
+     "tareas": 15
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Mantenimiento Mensual",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 11
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Inventario",
+     "molde": "checklist_▸",
+     "celda": "F31",
+     "tareas": 15
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Noche Cócteles",
+     "molde": "checklist_▸",
+     "celda": "F23",
+     "tareas": 9
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Nochevieja",
+     "molde": "checklist_▸",
+     "celda": "F24",
+     "tareas": 10
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "After Work",
+     "molde": "checklist_▸",
+     "celda": "F22",
+     "tareas": 8
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Maridaje Catas",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 12
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "molde": "checklist_▸",
+     "celda": "F37",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "molde": "checklist_▸",
+     "celda": "F36",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "molde": "checklist_▸",
+     "celda": "F34",
+     "tareas": 0
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing Diario",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 11
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-bar)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-bar/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-bar/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "01-apertura-cierre.xlsx:Apertura Barra:D50/F50",
+   "entradas": "30 tareas · 3 N/A · 27 ✓",
+   "esperado": "27 de 27",
+   "obtenido": "27 de 27",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-bar/contador-01-apertura-cierre.xlsx"
+  },
+  {
+   "caso": "denominador-07",
+   "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F37",
+   "entradas": "8 tareas escritas, ninguna marcada",
+   "esperado": 8,
+   "obtenido": 8,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-bar/plantilla-8-tareas-07-plantilla-personalizable.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-bar.bak-20260823-173927"
+}
