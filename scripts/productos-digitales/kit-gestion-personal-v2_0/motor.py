@@ -1143,29 +1143,95 @@ def secciones_04(ws):
     return fuera
 
 
+def _fila_cola(ws, desde):
+    """Primera fila >= `desde` que ABRE la cola del bloque: un rótulo de texto
+    en la columna A que no sea una fórmula («TOTAL HORAS EQUIPO», «TOTALES»,
+    «CARNETS Y CERTIFICADOS A RENOVAR», «COBERTURA: QUIÉN SUSTITUYE A QUIÉN»,
+    «NOTAS:», el pie «© 2026 AI Chef Pro»…).
+
+    Se busca SÓLO por debajo de la última fila conocida de la v1.1, nunca desde
+    `r0`: dentro del bloque la columna A puede llevar texto perfectamente
+    legítimo —`05!Cobertura!A6:A8` son «Mañana / Tarde / Noche» y
+    `07!Vencimientos!A7:A21` son fórmulas `=IF(Plantilla!A5…)`—, así que
+    buscarla desde arriba cerraría el bloque en su primera fila de datos.
+    """
+    for f in range(desde, ws.max_row + 1):
+        v = ws.cell(row=f, column=1).value
+        if isinstance(v, str) and v.strip() and not v.startswith('='):
+            return f
+    return ws.max_row + 1
+
+
 def _rangos_filas(ws, fname, hoja):
     """Devuelve [(hdr, r0, r1)] de los bloques de DATOS, sin tragarse la cola.
 
-    `ws.max_row` NO sirve como tope: incluye el «TOTAL HORAS EQUIPO» y el pie
-    «© 2026 AI Chef Pro». Si la hoja ya creció por encima de `ULTIMA_V2` es que
-    un grupo la expandió y el bloque llega hasta ahí; si no, sigue siendo el de
-    la v1.1.
+    `ws.max_row` NO sirve como tope: incluye el «TOTAL HORAS EQUIPO» de
+    `01!Cuadrante Semanal!A21` y el pie «© 2026 AI Chef Pro». Y la regla del kit
+    hermano —«si `ws.max_row` supera `ULTIMA_V2`, el grupo expandió»— aquí
+    MIENTE: `07!Vencimientos` llega hoy a la fila 38 por su segundo bloque y su
+    pie, sin que nadie haya expandido nada, así que el primer bloque se estiraba
+    de `E7:E21` a `E7:E36` y el semáforo de contratos se comía las diez filas de
+    carnets. Medido el 2026-08-24.
+
+    Regla correcta, y además dinámica: el bloque llega hasta la fila anterior a
+    su COLA, y sólo crece por encima de `ULTIMA_HOY` mientras las filas tengan
+    contenido (que es lo que deja `expandir_filas` al replicar las fórmulas).
+    Como la cola se localiza por su rótulo y no por su número de fila, esto
+    sigue siendo cierto después de que un grupo añada 250 filas.
     """
     if fname.startswith('04-') and hoja == 'Checklist Onboarding':
         return [(hdr, r0, r1) for _t, hdr, r0, r1 in secciones_04(ws)]
     fuera = []
     for _h, hdr, r0, r1_hoy, r1_v2 in _bloques(fname, hoja):
-        r1 = r1_v2 if ws.max_row > r1_v2 else min(r1_hoy, ws.max_row)
+        tope = _fila_cola(ws, r1_hoy + 1)
+        techo = min(r1_v2, tope - 1)
+        r1 = min(r1_hoy, techo)
+        f = r1 + 1
+        while f <= techo and any(ws.cell(row=f, column=c).value is not None
+                                 for c in range(1, ws.max_column + 1)):
+            r1 = f
+            f += 1
         if r1 >= r0:
             fuera.append((hdr, r0, r1))
     return fuera
 
 
+def _dice(ws, coord, texto):
+    """Centinela de CELDA FIJA: `ws!coord` ya contiene `texto`.
+
+    ⚠ NO se puede escribir `if coord in ws`. `Worksheet.__contains__` indexa por
+    la TUPLA `(fila, columna)`, no por la coordenada en texto, así que
+    `'A3' in ws` es **siempre False** — y con ello se saltaban en silencio los
+    tres semáforos de celda fija (`03!Ratio Coste Laboral!B9`,
+    `06!Ficha Evaluación!C23`, la fila 38 del calendario) y los cuatro rangos de
+    formato de moneda de `RANGOS_FORMATO`: `02!Resumen Mensual!B3` seguía
+    enseñando «12» donde tiene que poner «12,00 €». El gate no lo cazaba porque
+    un centinela que devuelve False es indistinguible de «el grupo todavía no lo
+    ha construido». Medido el 2026-08-24.
+    """
+    try:
+        v = ws[coord].value
+    except (ValueError, KeyError, IndexError):
+        return False
+    return isinstance(v, str) and texto.lower() in v.lower()
+
+
 def _cabecera_dice(ws, hdr, col, texto):
-    """Centinela: la cabecera de ESTE bloque ya dice lo que tiene que decir."""
+    """Centinela: la cabecera de ESTE bloque ya dice lo que tiene que decir.
+
+    ⚠ La comprobación de límites NO es defensiva: `ws.cell(row, column)` de
+    openpyxl **crea** la celda si no existe, y con ella agranda `ws.max_column`.
+    Preguntar por `07!Vencimientos!I6` —una columna que sólo existirá cuando
+    grupo_c monte los 4 vencimientos— materializaba las columnas F..I vacías y
+    el `print_area` pasaba de `A1:E38` a `A1:I38`: cuatro columnas en blanco
+    dentro del área de impresión de una hoja de alertas. Medido el 2026-08-24.
+    """
     if texto is None:
         return True
-    v = ws.cell(row=hdr, column=column_index_from_string(col)).value
+    ci = column_index_from_string(col)
+    if ci > ws.max_column or hdr > ws.max_row:
+        return False
+    v = ws.cell(row=hdr, column=ci).value
     return isinstance(v, str) and texto.lower() in v.lower()
 
 
@@ -1342,12 +1408,28 @@ def _dxf(color):
                                               fill_type='solid'))
 
 
+def _norm_ref(ref):
+    """`B9:B9` → `B9`. openpyxl NORMALIZA el sqref de un rango de una sola celda
+    al guardarlo, así que la 2.ª pasada leía `B9` y lo comparaba contra el
+    `B9:B9` que el motor iba a escribir: `_limpiar_cf` no reconocía sus propias
+    reglas, no las borraba, y las 3 de `03!Ratio Coste Laboral!B9` y las 5 de
+    `06!Ficha Evaluación!C23` se DUPLICABAN en cada pasada (6 y 10 en la
+    segunda). Medido el 2026-08-24: era la única diferencia de idempotencia que
+    quedaba, y habría ido creciendo en cada ejecución hasta que Excel se
+    quejara del número de reglas."""
+    partes = ref.split(':')
+    if len(partes) == 2 and partes[0] == partes[1]:
+        return partes[0]
+    return ref
+
+
 def _limpiar_cf(ws, refs):
     """Borra las reglas de los rangos que gobierna el motor y deja intactas las
     de los grupos. `refs` = conjunto de sqref en texto."""
+    normalizadas = set(_norm_ref(r) for r in refs)
     nueva = ConditionalFormattingList()
     for cf in ws.conditional_formatting:
-        if str(cf.sqref) in refs:
+        if _norm_ref(str(cf.sqref)) in normalizadas:
             continue
         for regla in cf.rules:
             nueva.add(str(cf.sqref), regla)
@@ -1431,13 +1513,18 @@ def aplicar_cf(wb, fname, informe, pendientes):
                         'formato condicional aplazado al grupo'
                         .format(fname, hoja, col, texto))
             elif tipo == 'codigos':
+                # el color de los códigos se aplica SOBRE LA REJILLA QUE HAYA:
+                # hoy es la de 12 meses y mañana la de 53 semanas, y en las dos
+                # el valor de la celda es la misma letra. Condicionarlo a que
+                # grupo_c hubiera reconstruido el calendario habría dejado el
+                # `--solo motor` sin la única mejora visible del 05 —hoy la
+                # hoja tiene CERO reglas de formato condicional pese a que sus
+                # Instrucciones prometen «marca con código de color»
+                # (`05!Instrucciones!B5`, COM-10)—.
                 col, texto, voc = a, b, c
-                if not rangos or not _cabecera_dice(ws, rangos[0][0] - 1, 'A',
-                                                   texto):
-                    pendientes.append(
-                        '{}:{}: el calendario todavía es por MESES (una celda '
-                        'por mes) — semáforo de códigos aplazado a grupo_c '
-                        '(DOM-04)'.format(fname, hoja))
+                if not rangos:
+                    pendientes.append('{}:{}: sin bloque de datos'
+                                      .format(fname, hoja))
                     continue
                 hdr, r0, r1 = rangos[0]
                 ultima = get_column_letter(max(2, ws.max_column - 1))
@@ -1446,8 +1533,7 @@ def aplicar_cf(wb, fname, informe, pendientes):
                 listos.append(('texto', ref, voc, None))
             elif tipo == 'celda':
                 ref, cc, ct, voc = a, b, c, d
-                v = ws[cc].value if cc in ws else None
-                if not (isinstance(v, str) and ct.lower() in v.lower()):
+                if not _dice(ws, cc, ct):
                     pendientes.append(
                         '{}:{}!{}: no dice «{}» todavía — formato condicional '
                         'aplazado al grupo'.format(fname, hoja, cc, ct))
@@ -1456,8 +1542,7 @@ def aplicar_cf(wb, fname, informe, pendientes):
                 listos.append(('texto', ref, voc, None))
             else:
                 ref, cc, ct, expr = a, b, c, d
-                v = ws[cc].value if cc in ws else None
-                if not (isinstance(v, str) and ct.lower() in v.lower()):
+                if not _dice(ws, cc, ct):
                     pendientes.append(
                         '{}:{}!{}: no dice «{}» todavía — banda por mes '
                         'aplazada al grupo'.format(fname, hoja, cc, ct))
@@ -1615,8 +1700,7 @@ def aplicar_formatos(wb, fname, informe):
         if hoja not in wb.sheetnames:
             continue
         ws = wb[hoja]
-        v = ws[cc].value if cc in ws else None
-        if not (isinstance(v, str) and ct.lower() in v.lower()):
+        if not _dice(ws, cc, ct):
             continue
         filas = ws[ref]
         if not isinstance(filas, tuple):

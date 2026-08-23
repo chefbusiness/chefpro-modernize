@@ -40,7 +40,10 @@ Qué hace, en este orden:
      guardado posterior de openpyxl borraría el valor cacheado y el cliente
      vería las celdas de resultado en blanco en el visor del móvil.
   5. Verificación `data_only` de las fórmulas nuevas del registro + gate §1.5:
-     ningún valor cacheado puede empezar por `#`.
+     ninguna celda puede tener cacheado un valor de ERROR de Excel. Se compara
+     contra la lista de los 8 errores en sus dos grafías, no con «empieza por
+     #»: la cabecera de la columna de numeración del 04 y del 06 es literalmente
+     «#» y el gate ingenuo suspendía por cinco cabeceras sanas.
   6. `censo-entregables.py --only <carpeta> --fail --quiet`.
   7. Gates de texto: pestañas citadas que no existen y citas legales obsoletas.
   8. Demostraciones con pycel (SPEC §5). pycel NO implementa `COUNTA` ni
@@ -785,7 +788,7 @@ def main():
     log('\n== 3/7 · inject_cache (al final del todo) ==')
     cache = inject_cache(carpeta, nombres)
 
-    log('\n== 4/7 · verificación data_only + gate «ningún cacheado con #» ==')
+    log('\n== 4/7 · verificación data_only + gate «ningún cacheado con error» ==')
     ver = verificar_cache(carpeta, registros)
     log('  con valor: {} · "" VERIFICADA con pycel: {} · sin pycel: {} · '
         'no evaluables: {} · fallos: {}'
@@ -796,7 +799,7 @@ def main():
         log('    ' + f)
     errores = gate_errores_cacheados(carpeta, nombres)
     n_err = sum(len(v) for v in errores.values())
-    log('  valores cacheados que empiezan por «#»: {}'.format(n_err))
+    log('  valores de error de Excel cacheados: {}'.format(n_err))
     for n, lineas in errores.items():
         for l in lineas[:4]:
             log('    {}: {}'.format(n, l))
@@ -872,7 +875,7 @@ def main():
     pendientes_contenido = []
     if n_err:
         pendientes_contenido.append(
-            '{} valores cacheados empiezan por «#» (§1.5): {}'
+            '{} valores de error de Excel cacheados (§1.5): {}'
             .format(n_err, '; '.join('{}:{}'.format(n, v[0])
                                      for n, v in list(errores.items())[:3])))
     if pest:

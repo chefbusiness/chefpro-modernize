@@ -1,0 +1,337 @@
+{
+ "rol": "motor (§1) del Kit de Gestión de Personal y Turnos v2.0",
+ "fecha": "2026-08-24T01:39:42",
+ "spec": "scripts/productos-digitales/kit-gestion-personal-v2-SPEC.md — §1 entero, convenciones de cabecera y §7-bis",
+ "r1_de_referencia": "scripts/productos-digitales/auditorias/kit-gestion-personal-R1.json",
+ "entregables": [
+  "scripts/productos-digitales/kit-gestion-personal-v2_0/motor.py",
+  "scripts/productos-digitales/kit-gestion-personal-v2_0/main.py"
+ ],
+ "modelo_de_paquete": "scripts/productos-digitales/kit-escandallos-v2_0/ y kit-inventario-v2_0/ (motor + grupos, --dry-run/--solo/APPLY, respaldo, inject_cache al final, verificación data_only, idempotencia por reconstrucción)",
+ "comando_de_prueba": "CLAUDE_SCRATCHPAD=<scratch>/propio-motor python3 scripts/productos-digitales/kit-gestion-personal-v2_0/main.py --dry-run --solo motor --json <scratch>/kit-gp-v2/motor.json",
+ "resultado": {
+  "exit": 0,
+  "pasada": "parcial declarada (--solo motor)",
+  "idempotencia_diferencias": 0,
+  "censo_entregables_fail_exit": 0,
+  "censo_salida": [
+   "9 ficheros censados (9 xlsx, 0 docx, 0 pdf) en 1 productos (only=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-motor/dryrun-v2/kit-gestion-personal)",
+   "",
+   "OK: 0 defectos (--fail)"
+  ],
+  "data_only_fallos": 0,
+  "proteccion_fallos": [],
+  "leyenda_incoherente": {},
+  "pestanas_citadas_inexistentes": {},
+  "produccion_intacta": "SÍ — astro-site/public/dl/kit-gestion-personal/** sin tocar (git status limpio, mtime 22-ago); todo el trabajo en el scratchpad"
+ },
+ "que_hace_el_motor_hoy_por_fichero": {
+  "01-cuadrante-turnos-semanal.xlsx": {
+   "hojas": 3,
+   "formulas": 31,
+   "verdes": 180,
+   "verdes_con_dato": 0,
+   "dv": 1,
+   "cf": 4,
+   "protegidas": 2,
+   "celdas": 123
+  },
+  "02-control-horas-extras.xlsx": {
+   "hojas": 3,
+   "formulas": 164,
+   "verdes": 346,
+   "verdes_con_dato": 1,
+   "dv": 1,
+   "cf": 4,
+   "protegidas": 2,
+   "celdas": 205
+  },
+  "03-coste-laboral-mensual.xlsx": {
+   "hojas": 4,
+   "formulas": 51,
+   "verdes": 86,
+   "verdes_con_dato": 5,
+   "dv": 0,
+   "cf": 3,
+   "protegidas": 3,
+   "celdas": 127
+  },
+  "04-onboarding-nuevo-empleado.xlsx": {
+   "hojas": 2,
+   "formulas": 3,
+   "verdes": 190,
+   "verdes_con_dato": 0,
+   "dv": 1,
+   "cf": 1,
+   "protegidas": 1,
+   "celdas": 211
+  },
+  "05-planificacion-vacaciones.xlsx": {
+   "hojas": 4,
+   "formulas": 75,
+   "verdes": 437,
+   "verdes_con_dato": 0,
+   "dv": 2,
+   "cf": 4,
+   "protegidas": 3,
+   "celdas": 140
+  },
+  "06-evaluacion-desempeno.xlsx": {
+   "hojas": 3,
+   "formulas": 32,
+   "verdes": 109,
+   "verdes_con_dato": 0,
+   "dv": 1,
+   "cf": 5,
+   "protegidas": 2,
+   "celdas": 100
+  },
+  "07-directorio-plantilla.xlsx": {
+   "hojas": 3,
+   "formulas": 96,
+   "verdes": 480,
+   "verdes_con_dato": 0,
+   "dv": 2,
+   "cf": 14,
+   "protegidas": 2,
+   "celdas": 146
+  },
+  "BONUS-01-briefing-cambio-turno.xlsx": {
+   "hojas": 2,
+   "formulas": 0,
+   "verdes": 121,
+   "verdes_con_dato": 0,
+   "dv": 2,
+   "cf": 0,
+   "protegidas": 1,
+   "celdas": 49
+  },
+  "BONUS-02-calculadora-plantilla-optima.xlsx": {
+   "hojas": 3,
+   "formulas": 16,
+   "verdes": 6,
+   "verdes_con_dato": 5,
+   "dv": 0,
+   "cf": 0,
+   "protegidas": 1,
+   "celdas": 131
+  }
+ },
+ "totales_tras_la_pasada": {
+  "hojas": 27,
+  "formulas": 468,
+  "verdes": 1955,
+  "verdes_con_dato": 11,
+  "dv": 10,
+  "cf": 35,
+  "protegidas": 17,
+  "celdas": 1232
+ },
+ "seccion_1_cubierta": {
+  "1.1 leyenda única": "CODIGOS_JORNADA (8: M T N P D L V B, con D doble NUEVO) y CODIGOS_AUSENCIA (4: V B F PE) como constantes; DV inline en 01!'Cuadrante Semanal'!B6:H20 y 05!'Calendario Anual'!B6:M20; fila 3 de las dos rejillas con los códigos y sus colores; líneas de leyenda reescritas en 01!Instrucciones!B6/B8 y 05!Instrucciones!B6. El permiso pasa a PE (DOM-27): 05!'Calendario Anual'!E3 decía «P=Permiso» mientras 01!Instrucciones!B6 decía «P (partido)».",
+  "1.2 formato condicional real": "semaforo() + reglas expression. 27 reglas escritas donde el kit tenía UNA (04!'Checklist Onboarding'!A7:G65). Aplicadas ya: 01!J6:J20, 02!'Resumen Mensual'!D6:D20, 03!'Ratio Coste Laboral'!B9, 05!'Calendario Anual'!B6:M20 (los 4 códigos con su color), 06!'Ficha Evaluación'!C23, 07!'Vencimientos'!E7:E21 y E26:E35. Aplazadas con centinela a los grupos: 01!K/L/M/N, 02!F, 07!C/G/I, 05!fila 38, banda gris por mes.",
+  "1.3 capacidad 30": "CAPACIDAD=30 y FILAS_REGISTRO=300 como constantes + AVISO_REGISTRO (COM-18); expandir_filas() lista para los grupos. La expansión en sí es trabajo de los grupos.",
+  "1.4 parámetros en celda": "catálogo PARAMETROS con los 12 de la SPEC (valor por defecto, formato y nota de convenio/CNAE) + parametro(), para que ningún grupo invente un valor distinto. Hoy el 0,30 de la SS vive en 21 fórmulas y el 30 de vacaciones en 30.",
+  "1.5 guardas": "horas_mod() (MOD+ROUND, §7-bis.2), horas_alternativa(), guarda_media(), guarda_resta(), guarda_division(), contar_no_vacias() (sustituto de COUNTA, que pycel no implementa) + gate cacheados_con_error().",
+  "1.6 formatos y presentación": "FORMATO_POR_CABECERA (hh:mm, dd/mm/yyyy, #,##0.00 €, 0,0 %, 0,00, entero) + RANGOS_FORMATO para los parámetros sueltos; PRESENTACION con freeze_panes (las 5 que no lo tenían), print_title_rows/cols, fitToWidth=2 en 07!'Plantilla' (§7.6) y A4 con pie; protección de 17 hojas SIN contraseña con las 1.955 verdes desbloqueadas.",
+  "1.7 bio, versión y metadata": "bio_y_version() inserta NOTA_DESPROTEGER + BIO + «Versión 2.0 · agosto 2026 · aichef.pro/kit-gestion-personal · info@aichef.pro» al pie de las 9 Instrucciones (INSERCIÓN: no la llevaba ninguno); set_metadata() pone subject=«… · v2.0» y recupera la tilde de «Gestión» en el title de los 9."
+ },
+ "defectos_propios_cazados_y_corregidos": [
+  {
+   "que": "`'A3' in ws` es SIEMPRE False en openpyxl (Worksheet.__contains__ indexa por la tupla (fila, columna), no por la coordenada en texto).",
+   "consecuencia": "los tres semáforos de celda fija (03!'Ratio Coste Laboral'!B9, 06!'Ficha Evaluación'!C23, 05!fila 38) y los cuatro RANGOS_FORMATO de moneda se saltaban EN SILENCIO: 02!'Resumen Mensual'!B3 seguía enseñando «12» en vez de «12,00 €». Indistinguible de «el grupo aún no lo ha construido».",
+   "fix": "motor.py:_dice()"
+  },
+  {
+   "que": "`ws.cell(row, column)` CREA la celda si no existe.",
+   "consecuencia": "preguntar por el centinela de 07!'Vencimientos'!I6 —columna que sólo existirá cuando grupo_c monte los 4 vencimientos— materializaba F..I vacías y el print_area pasaba de A1:E38 a A1:I38.",
+   "fix": "motor.py:_cabecera_dice() con comprobación de límites"
+  },
+  {
+   "que": "la regla del kit hermano «si ws.max_row supera ULTIMA_V2, el grupo expandió» miente en este kit.",
+   "consecuencia": "07!'Vencimientos' llega hoy a la fila 38 por su SEGUNDO bloque y su pie, sin que nadie haya expandido nada: el semáforo del primer bloque se estiraba de E7:E21 a E7:E36 y se comía las diez filas de carnets.",
+   "fix": "motor.py:_fila_cola() + _rangos_filas(): el bloque termina en la fila anterior a su COLA, localizada por su RÓTULO (no por su número de fila) y buscada sólo por debajo de ULTIMA_HOY — dentro del bloque la columna A lleva texto legítimo (05!Cobertura!A6:A8 = Mañana/Tarde/Noche) o fórmulas (07!Vencimientos!A7:A21)."
+  },
+  {
+   "que": "openpyxl NORMALIZA el sqref de un rango de una sola celda («B9:B9» → «B9»).",
+   "consecuencia": "_limpiar_cf no reconocía sus propias reglas y las 3 de 03!B9 y las 5 de 06!C23 se DUPLICABAN en cada pasada (6 y 10 en la segunda). Habría crecido en cada ejecución.",
+   "fix": "motor.py:_norm_ref()"
+  },
+  {
+   "que": "la bio y la versión AÑADEN dos filas a Instrucciones y se escribían DESPUÉS de fijar el print_area.",
+   "consecuencia": "9 diferencias de idempotencia (una por fichero): la 1.ª pasada grababa A1:B22 y la 2.ª A1:B24.",
+   "fix": "motor.py:cerrar() — bio_y_version() y set_metadata() ANTES del bucle de presentación"
+  },
+  {
+   "que": "el gate «ningún valor cacheado empieza por #» suspendía por 5 cabeceras sanas.",
+   "consecuencia": "la cabecera de la columna de numeración del 04 y del 06 es literalmente «#» (04!'Checklist Onboarding'!A6, 06!'Ficha Evaluación'!A11): el gate ingenuo escondía los 2 errores reales entre 5 falsos positivos.",
+   "fix": "motor.py:ERRORES_EXCEL — lista de los 8 errores de Excel en sus dos grafías"
+  },
+  {
+   "que": "leyenda_coherente() barría el libro entero.",
+   "consecuencia": "3 falsos positivos en 04!'Checklist Onboarding'!F7, cuya DV «✓,✗,—» también es de valores de un carácter y no tiene nada que ver con la leyenda de turnos.",
+   "fix": "motor.py:leyenda_coherente() acotado a las hojas de DV_CODIGOS y LEYENDA_REJILLA"
+  }
+ ],
+ "hallazgos_sobre_los_ficheros_reales": [
+  {
+   "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C31..C39",
+   "que": "las 9 celdas de la categoría «EQUIPAMIENTO Y ACCESOS» están rellenas de E8F5E9, que es EXACTAMENTE el verde de edición de la familia.",
+   "por_que_importa": "cualquier es_verde() las tomaba por casillas editables y proteger() las dejaba desbloqueadas «porque son verdes», sobre un texto que el cliente no debe tocar. Colisión de significado en el único color con significado del kit.",
+   "resuelto": "colores_seccion_04() las repinta a C8E6C9 —sigue siendo el verde que anuncian sus propias Instrucciones (04!Instrucciones!B13)— y de paso pinta las 5 cabeceras de sección con los colores que la hoja prometía y no aplicaba (§1.2). E8F5E9 vuelve a significar EDITABLE y sólo eso en los 9 ficheros."
+  },
+  {
+   "ref": "kit-gestion-personal-v2_0/motor.py:VERSION_LINE",
+   "que": "el encargo pedía la línea «Versión 2.0 · agosto 2026 · aichef.pro/kit-inventario · info@aichef.pro».",
+   "por_que_importa": "es un arrastre del prompt del kit hermano. La SPEC §1.7, el slug real (astro-site/src/data/productos/kits/kit-gestion-personal.ts:25) y la línea de versión que HOY llevan los 9 ficheros dicen kit-gestion-personal. Mandar al cliente a la landing de otro producto sería un enlace roto en el único sitio donde mira cuando quiere la versión nueva.",
+   "resuelto": "se usa aichef.pro/kit-gestion-personal. Queda anotado como duda para el orquestador."
+  },
+  {
+   "ref": "kit-gestion-personal-v2_0/motor.py:col_instrucciones()",
+   "que": "en ESTE kit el texto de Instrucciones vive en la columna B (anchos A=3, B=80), no en la A como en el kit-inventario.",
+   "por_que_importa": "un linea_instrucciones() portado tal cual habría dejado la bio en una columna de 3 caracteres de ancho, invisible.",
+   "resuelto": "la columna se deduce (gana la que tiene más cadenas)."
+  },
+  {
+   "ref": "02-control-horas-extras.xlsx:Registro Horas:C4:D4",
+   "que": "«Hora Entrada» y «Hora Salida» iban en formato General.",
+   "por_que_importa": "teclear «9» donde se espera «9:00» graba el número 9, y a (D5-C5)*24 le salen 192 h de jornada sin un solo aviso (TEC-25).",
+   "resuelto": "hh:mm por FORMATO_POR_CABECERA."
+  }
+ ],
+ "gates_que_el_motor_deja_MIDIENDO_para_los_grupos": {
+  "valores_de_error_cacheados": {
+   "06-evaluacion-desempeno.xlsx": [
+    "Ficha Evaluación!C22: valor cacheado «#DIV/0!»",
+    "Ficha Evaluación!C23: valor cacheado «#DIV/0!»"
+   ]
+  },
+  "citas_legales_obsoletas": {
+   "01-cuadrante-turnos-semanal.xlsx": [
+    "Instrucciones!B12: descanso entre jornadas: son 12 h (art. 34.3 ET); las 11 h son el mínimo de la Directiva 2003/88/CE — «▸ Recuerda: mínimo 11h de descanso entre turnos (Estatuto Trabajadores Art. 34).»"
+   ],
+   "02-control-horas-extras.xlsx": [
+    "Instrucciones!B11: el ×1,75 se presenta como «Legislación española» y no lo es: art. 35.1 ET sólo exige que no valga menos que la ordinaria — «▸ Las primeras 80h se pagan ×1.75 del salario/hora (o según convenio).»",
+    "Instrucciones!B12: el ×2,0 se presenta como «Legislación española» y no lo es — «▸ Horas por encima de 80 anuales: ×2.0 (o compensación en descanso).»",
+    "Resumen Mensual!E5: el ×1,75 se presenta como «Legislación española» y no lo es: art. 35.1 ET sólo exige que no valga menos que la ordinaria — «Coste ×1.75»",
+    "Resumen Mensual!F5: el ×2,0 se presenta como «Legislación española» y no lo es — «Coste ×2.0»"
+   ],
+   "03-coste-laboral-mensual.xlsx": [
+    "Instrucciones!B6: la SS a cargo de la empresa ronda el 33-34 %, no el 30 %, y tiene que ser un parámetro editable por CNAE — «▸ La Seguridad Social empresa (~30%) se calcula automáticamente.»"
+   ],
+   "07-directorio-plantilla.xlsx": [
+    "Instrucciones!B12: dato de salud, categoría especial del art. 9 RGPD: se elimina (DOM-13) — «▸ Datos operativos: talla uniforme, taquilla, alérgenos propios.»",
+    "Plantilla!M4: dato de salud, categoría especial del art. 9 RGPD: se elimina (DOM-13) — «Alérgenos Propios»"
+   ],
+   "BONUS-02-calculadora-plantilla-optima.xlsx": [
+    "Calculadora!A27: la SS a cargo de la empresa ronda el 33-34 %, no el 30 %, y tiene que ser un parámetro editable por CNAE — «Seguridad Social empresa (30%):»"
+   ]
+  },
+  "demostraciones_pycel": {
+   "cruce_medianoche_02": {
+    "ref": "02-control-horas-extras.xlsx:Registro Horas:E5",
+    "formula": "=IF(AND(C5<>\"\",D5<>\"\"),(D5-C5)*24,\"\")",
+    "pruebas": [
+     {
+      "caso": "turno de noche 23:00→07:00",
+      "esperado": 8.0,
+      "obtenido": -16.0,
+      "ok": false
+     },
+     {
+      "caso": "partido 19:00→01:30 con 0 h de pausa",
+      "esperado": 6.5,
+      "obtenido": -17.5,
+      "ok": false
+     },
+     {
+      "caso": "partido 10:00→23:00 con 4 h de pausa",
+      "esperado": 9.0,
+      "obtenido": null,
+      "nota": "la columna «Pausa (h)» todavía no existe — la crea grupo_a (DOM-21)"
+     }
+    ],
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "nota": "mientras la fórmula sea `(D5-C5)*24` el turno de noche ficha −16 h y el partido no cabe en un solo par entrada/salida (DOM-03/DOM-21)"
+   },
+   "guarda_h_contratadas_02": {
+    "ref": "02-control-horas-extras.xlsx:Registro Horas:G5",
+    "formula": "=IF(E5<>\"\",MAX(0,E5-F5),\"\")",
+    "contratadas_vacia": 8,
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "nota": "con la guarda puesta, «contratadas vacía» debe dar \"\" y una jornada de 8 h contra 8 contratadas debe dar 0"
+   },
+   "ficha_vacia_06": {
+    "ref": "06-evaluacion-desempeno.xlsx:Ficha Evaluación:C22",
+    "media_con_ficha_vacia": "#DIV/0!",
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "nota": "es un documento que se FIRMA delante del empleado: no puede abrir con un error de Excel en la nota media (DOM-02/COM-04)"
+   },
+   "fte_03_vs_bonus02": {
+    "esperado_fte": 7,
+    "03_previsión": {
+     "ref": "03-coste-laboral-mensual.xlsx:Previsión por Servicio:B13",
+     "rotulo": "TOTAL personal/turno:",
+     "valor": 15.0
+    },
+    "BONUS-02_calculadora": {
+     "ref": "BONUS-02-calculadora-plantilla-optima.xlsx:Calculadora:B23",
+     "rotulo": "Personal total necesario (con rotación):",
+     "valor": 19.0
+    },
+    "coinciden": false,
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "nota": "un solo modelo de dimensionamiento: cubiertos por SERVICIO → personal por servicio → presencias/día → horas semanales → FTE (§3, grupo_b)"
+   },
+   "descanso_entre_jornadas_01": {
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "ref": "01-cuadrante-turnos-semanal.xlsx:Cuadrante Semanal:K5",
+    "columnas_hoy": [
+     "Empleado",
+     "Lunes",
+     "Martes",
+     "Miércoles",
+     "Jueves",
+     "Viernes",
+     "Sábado",
+     "Domingo",
+     "Total Horas",
+     "Alertas"
+    ],
+    "nota": "la columna «Descanso entre jornadas» todavía no existe — la crea grupo_a (DOM-05/COM-01). Hoy la única alerta del cuadrante es «>40 h» y la landing promete cuatro."
+   },
+   "progreso_onboarding_04": {
+    "ref": "04-onboarding-nuevo-empleado.xlsx:Checklist Onboarding:C68",
+    "completadas_recien_descargado": 4.0,
+    "total_declarado": 47,
+    "progreso": 8.51063829787234,
+    "ok": false,
+    "pendiente_de_grupo": true,
+    "nota": "los contadores tienen que acotarse por TRAMO (COUNTIF por sección) y las cabeceras pasar de «✓» a «Hecho» — se hacen las dos cosas (§4)"
+   },
+   "leyenda_unica": {
+    "ok": true
+   }
+  }
+ },
+ "para_los_grupos": [
+  "Contrato del pipeline: grupo.pre() inserta COLUMNAS (antes de que el motor fije rangos) · motor.aplicar() · grupo.post() AÑADE filas con motor.expandir_filas() (nunca insertar_fila en medio del bloque) · motor.cerrar(). Cada fórmula escrita se anota con motor._reg(ws, coord, formula) o main.py no la verifica.",
+  "Los valores por defecto salen de motor.PARAMETROS, no del grupo: SS 33 %, recargo 1,25, tarifa 12 €, tope 80 h, 30 días de convenio, jornada 40 h, máx. diario 9 h, descanso 12 h, 4 h/servicio, cobertura 1,15, 6 días de apertura.",
+  "Las fórmulas de horas se construyen con motor.horas_mod() (MOD envuelto en ROUND, §7-bis.2), nunca a mano: MOD(D5-C5,1)*24 con 23:00→07:00 da 7.999999999999998 y inject_cache graba ese ruido en el fichero que se descarga.",
+  "Al reestructurar una hoja hay que actualizar motor.BLOQUES (hoja, cabecera, primera, ULTIMA_HOY, ULTIMA_V2) y, si cambia el nombre de una columna, su centinela en DV_*/CF_*. El motor NUNCA adivina: lo que no case se declara pendiente_de_grupo con fichero:hoja:celda.",
+  "07!'Vencimientos' pasa a UN bloque de 30 filas con 4 alertas en C/E/G/I (SPEC §4): al hacerlo hay que retirar de BLOQUES el segundo bloque (25,26,35,35), que es el de carnets de la v1.1.",
+  "BONUS-02!'Ratios por Tipo' queda SIN proteger porque no tiene ni una celda verde y proteger una hoja sin verdes deja al cliente sin poder escribir nada. En cuanto grupo_b le ponga las tres columnas numéricas del VLOOKUP y las marque verdes, se protegerá sola. Mismo caso que RT-13 del kit-inventario: es una tabla de referencia de la que dependerá una hoja protegida.",
+  "01!'Cuadrante Mensual' y 04!'Checklist Onboarding' no están en BLOQUES con filas fijas: el mensual lo reconstruye grupo_a entero (hoy es una rejilla muerta de 4 bloques sin una sola fórmula) y los 5 tramos del checklist se DETECTAN con motor.secciones_04(), porque grupo_c añade 3 tareas al primer tramo y todo lo de abajo baja tres filas."
+ ],
+ "dudas_para_el_orquestador": [
+  "El encargo decía «aichef.pro/kit-inventario» en la línea de versión: se ha usado «aichef.pro/kit-gestion-personal» (SPEC §1.7 + slug real). Confirmar.",
+  "El encargo describía «taxonomía canónica de 10 categorías», «DV de categorías/unidades» e «IVA por categoría»: son conceptos del kit-inventario y no existen en este SPEC. Se ha implementado lo que el §1 pide de verdad — la LEYENDA ÚNICA de códigos de jornada y ausencia — como la taxonomía canónica del kit. Confirmar que es lo esperado.",
+  "«--solo motor» devuelve exit 0 (lo pedía el encargo) porque es una pasada PARCIAL DECLARADA; los gates de contenido (2 errores cacheados, 9 citas legales obsoletas, 6 demostraciones sin pasar) se listan como pendiente_de_grupo y BLOQUEAN en cuanto la pasada es completa (--solo motor,a,b,c). Verificado: la pasada por defecto con los grupos ausentes devuelve exit 1.",
+  "El 06 sigue cacheando #DIV/0! en 'Ficha Evaluación'!C22 y C23 hasta que grupo_c ponga la guarda de §4. Es el documento que se firma delante del empleado (DOM-02/COM-04): si por lo que sea el kit se publicara sin grupo_c, esto NO puede salir."
+ ]
+}
