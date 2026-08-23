@@ -69,11 +69,11 @@ export default function KitTareasHotelDashboard() {
           <div className="mb-3">
             <ProductVersionBadge productId="kit-tareas-hotel" />
           </div>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 46 checklists en 15 plantillas + 2 bonus listos para descargar. Imprime, delega y controla.</p>
+          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">Tus 53 checklists en 17 plantillas + 2 bonus (19 ficheros) listos para descargar. Imprime, delega y controla.</p>
         </section>
         <section className="pb-16 px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">15 Plantillas + 2 Bonus · 46 Checklists · Descarga Directa</p>
+            <p className="text-[#FFD700] text-sm font-bold uppercase tracking-wider mb-6">17 Plantillas + 2 Bonus · 53 Checklists · Descarga Directa</p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TEMPLATES.map((tpl, i) => {
                 const Icon = tpl.icon;

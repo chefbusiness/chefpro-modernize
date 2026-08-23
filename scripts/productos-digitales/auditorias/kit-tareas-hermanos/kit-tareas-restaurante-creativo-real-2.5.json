@@ -1,0 +1,1474 @@
+{
+ "producto": "kit-tareas-restaurante-creativo",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T20:36:56",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-restaurante-creativo",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-restaurante-creativo",
+ "sustitucion_09_catering": null,
+ "contexto": {
+  "kit": "Restaurante Creativo",
+  "pie": "— Kit de Tareas Recurrentes · Restaurante Creativo · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "10-apertura-cierre-negocio.xlsx",
+  "f_caja": "11-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "10-apertura-cierre-negocio.xlsx",
+   "11-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "10-apertura-cierre-negocio.xlsx",
+   "11-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "modelo_caja": "mostrador",
+  "papeles": {
+   "10-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false,
+    "liquidacion": false,
+    "registro_eventos": false
+   },
+   "11-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true,
+    "liquidacion": false,
+    "registro_eventos": false
+   }
+  },
+  "producto": "kit-tareas-restaurante-creativo"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «01 · Apertura y Cierre — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-mise-en-place-degustacion.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «02 · Mise en Place — Menú Degustación · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "03-id-desarrollo-menu.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «03 · I+D y Desarrollo de Menú · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "04-tareas-brigada-creativa.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «04 · Tareas por Rol — Brigada Creativa · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 14
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «05 · Tareas Semanales y Mensuales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "06-sumiller-maridajes.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «06 · Sumiller y Maridajes · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "07-chefs-table-eventos.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «07 · Chef's Table y Eventos Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-fotografia-storytelling.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «08 · Fotografía, RRSS y Storytelling · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "09-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «09 · Plantilla Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "10-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "11-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 80
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS · Briefing Diario de Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS · Calendario Anual — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0» · keywords «kit tareas restaurante creativo, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-mise-en-place-degustacion.xlsx",
+  "03-id-desarrollo-menu.xlsx",
+  "04-tareas-brigada-creativa.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-sumiller-maridajes.xlsx",
+  "07-chefs-table-eventos.xlsx",
+  "08-fotografia-storytelling.xlsx",
+  "09-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Apertura y Cierre — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B22",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura AM",
+     "dim": "A1:G49",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre PM",
+     "dim": "A1:G36",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-mise-en-place-degustacion.xlsx",
+   "title": "02 · Mise en Place — Menú Degustación · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B21",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Pre-elab Largo",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pre-elab Medio",
+     "dim": "A1:G21",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pre-elab Día",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Plating Bible",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-id-desarrollo-menu.xlsx",
+   "title": "03 · I+D y Desarrollo de Menú · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B16",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Sesiones I+D",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Documentación",
+     "dim": "A1:G44",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-brigada-creativa.xlsx",
+   "title": "04 · Tareas por Rol — Brigada Creativa · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chef Ejecutivo",
+     "dim": "A1:G17",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Sous-Chef",
+     "dim": "A1:G17",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Partida Caliente",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Partida Fría",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Chef Pastelero",
+     "dim": "A1:G17",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Sumiller",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Maître-Sala",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Tareas Semanales y Mensuales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Semanales",
+     "dim": "A1:G51",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensuales",
+     "dim": "A1:G36",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G40",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-sumiller-maridajes.xlsx",
+   "title": "06 · Sumiller y Maridajes · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B16",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Maridaje Menú",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Gestión Bodega",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-chefs-table-eventos.xlsx",
+   "title": "07 · Chef's Table y Eventos Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B23",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chef's Table",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pop-ups",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cenas Especiales",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-fotografia-storytelling.xlsx",
+   "title": "08 · Fotografía, RRSS y Storytelling · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B16",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Fotografía Platos",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "RRSS",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Prensa-Guías",
+     "dim": "A1:G21",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-plantilla-personalizable.xlsx",
+   "title": "09 · Plantilla Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B27",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Plantilla A",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Plantilla B",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Plantilla C",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "10-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "11-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS · Briefing Diario de Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B17",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing Servicio",
+     "dim": "A1:G40",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual.xlsx",
+   "title": "BONUS · Calendario Anual — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B16",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario Anual",
+     "dim": "A1:F18",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-mise-en-place-degustacion.xlsx",
+    "salida": "02-mise-en-place-degustacion.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-id-desarrollo-menu.xlsx",
+    "salida": "03-id-desarrollo-menu.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-brigada-creativa.xlsx",
+    "salida": "04-tareas-brigada-creativa.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-sumiller-maridajes.xlsx",
+    "salida": "06-sumiller-maridajes.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-chefs-table-eventos.xlsx",
+    "salida": "07-chefs-table-eventos.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-fotografia-storytelling.xlsx",
+    "salida": "08-fotografia-storytelling.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-plantilla-personalizable.xlsx",
+    "salida": "09-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "10-apertura-cierre-negocio.xlsx",
+    "salida": "10-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "11-apertura-cierre-caja.xlsx",
+    "salida": "11-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual.xlsx",
+    "salida": "BONUS-02-calendario-anual.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 144,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 30,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 13,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "10-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 477,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 55,
+    "02-mise-en-place-degustacion.xlsx": 63,
+    "03-id-desarrollo-menu.xlsx": 50,
+    "04-tareas-brigada-creativa.xlsx": 60,
+    "05-tareas-semanales-mensuales.xlsx": 63,
+    "06-sumiller-maridajes.xlsx": 32,
+    "07-chefs-table-eventos.xlsx": 44,
+    "08-fotografia-storytelling.xlsx": 34,
+    "09-plantilla-personalizable.xlsx": 0,
+    "10-apertura-cierre-negocio.xlsx": 33,
+    "11-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 20,
+    "BONUS-02-calendario-anual.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 56,
+    "p4": 421
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura AM",
+     "molde": "p4",
+     "celda": "E47",
+     "tareas": 33
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre PM",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 22
+    },
+    {
+     "fichero": "02-mise-en-place-degustacion.xlsx",
+     "hoja": "Pre-elab Largo",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "02-mise-en-place-degustacion.xlsx",
+     "hoja": "Pre-elab Medio",
+     "molde": "p4",
+     "celda": "E19",
+     "tareas": 10
+    },
+    {
+     "fichero": "02-mise-en-place-degustacion.xlsx",
+     "hoja": "Pre-elab Día",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 17
+    },
+    {
+     "fichero": "02-mise-en-place-degustacion.xlsx",
+     "hoja": "Plating Bible",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 20
+    },
+    {
+     "fichero": "03-id-desarrollo-menu.xlsx",
+     "hoja": "Sesiones I+D",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 23
+    },
+    {
+     "fichero": "03-id-desarrollo-menu.xlsx",
+     "hoja": "Documentación",
+     "molde": "p4",
+     "celda": "E42",
+     "tareas": 27
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Chef Ejecutivo",
+     "molde": "p4",
+     "celda": "E15",
+     "tareas": 9
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Sous-Chef",
+     "molde": "p4",
+     "celda": "E15",
+     "tareas": 9
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Partida Caliente",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Partida Fría",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Chef Pastelero",
+     "molde": "p4",
+     "celda": "E15",
+     "tareas": 9
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Sumiller",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "hoja": "Maître-Sala",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Semanales",
+     "molde": "p4",
+     "celda": "E36",
+     "tareas": 21
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Mensuales",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 19
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E38",
+     "tareas": 23
+    },
+    {
+     "fichero": "06-sumiller-maridajes.xlsx",
+     "hoja": "Maridaje Menú",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 16
+    },
+    {
+     "fichero": "06-sumiller-maridajes.xlsx",
+     "hoja": "Gestión Bodega",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "07-chefs-table-eventos.xlsx",
+     "hoja": "Chef's Table",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "07-chefs-table-eventos.xlsx",
+     "hoja": "Pop-ups",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "07-chefs-table-eventos.xlsx",
+     "hoja": "Cenas Especiales",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 21
+    },
+    {
+     "fichero": "08-fotografia-storytelling.xlsx",
+     "hoja": "Fotografía Platos",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "08-fotografia-storytelling.xlsx",
+     "hoja": "RRSS",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "08-fotografia-storytelling.xlsx",
+     "hoja": "Prensa-Guías",
+     "molde": "p4",
+     "celda": "E19",
+     "tareas": 10
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Plantilla A",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Plantilla B",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "hoja": "Plantilla C",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "10-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "10-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "11-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "11-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing Servicio",
+     "molde": "p4",
+     "celda": "E38",
+     "tareas": 20
+    }
+   ]
+  },
+  "metadata": {
+   "subject_esperado": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+   "keywords_esperado": "kit tareas restaurante creativo, AI Chef Pro",
+   "incoherentes": [],
+   "keywords_propias": [],
+   "por_fichero": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "title": "01 · Apertura y Cierre — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "02-mise-en-place-degustacion.xlsx",
+     "title": "02 · Mise en Place — Menú Degustación · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "03-id-desarrollo-menu.xlsx",
+     "title": "03 · I+D y Desarrollo de Menú · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "04-tareas-brigada-creativa.xlsx",
+     "title": "04 · Tareas por Rol — Brigada Creativa · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "title": "05 · Tareas Semanales y Mensuales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "06-sumiller-maridajes.xlsx",
+     "title": "06 · Sumiller y Maridajes · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "07-chefs-table-eventos.xlsx",
+     "title": "07 · Chef's Table y Eventos Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "08-fotografia-storytelling.xlsx",
+     "title": "08 · Fotografía, RRSS y Storytelling · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "09-plantilla-personalizable.xlsx",
+     "title": "09 · Plantilla Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "10-apertura-cierre-negocio.xlsx",
+     "title": "Apertura y Cierre del Negocio — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "11-apertura-cierre-caja.xlsx",
+     "title": "Apertura y Cierre de Caja — Restaurante Creativo / De Autor · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "title": "BONUS · Briefing Diario de Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-02-calendario-anual.xlsx",
+     "title": "BONUS · Calendario Anual — Restaurante Creativo · Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas restaurante creativo, AI Chef Pro"
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "13 ficheros censados (13 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-restaurante-creativo)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-restaurante-creativo/arqueo-cuadra-11-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-restaurante-creativo/arqueo-descuadra-11-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29",
+   "entradas": "18 tareas · 3 N/A · 15 ✓",
+   "esperado": "15 de 15",
+   "obtenido": "15 de 15",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-restaurante-creativo/contador-10-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Apertura AM:C47/E47",
+   "entradas": "hoja tal y como se entrega · 33 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 36",
+   "esperado": "0 de 33",
+   "obtenido": "0.0 de 33.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-restaurante-creativo/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-restaurante-creativo.bak-20260823-203636"
+}

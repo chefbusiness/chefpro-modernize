@@ -1,0 +1,2104 @@
+{
+ "producto": "kit-tareas-hotel",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T20:35:37",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hotel",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hotel",
+ "sustitucion_09_catering": null,
+ "contexto": {
+  "kit": "Apertura y Cierre",
+  "pie": "— Kit de Tareas Recurrentes · Apertura y Cierre · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+  "hora_apertura": "05:30",
+  "literal_cierre": "Cierre",
+  "f_negocio": "18-apertura-cierre-negocio.xlsx",
+  "f_caja": "19-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "18-apertura-cierre-negocio.xlsx",
+   "19-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "18-apertura-cierre-negocio.xlsx",
+   "19-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "modelo_caja": "mostrador",
+  "papeles": {
+   "18-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false,
+    "liquidacion": false,
+    "registro_eventos": false
+   },
+   "19-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true,
+    "liquidacion": false,
+    "registro_eventos": false
+   }
+  },
+  "producto": "kit-tareas-hotel"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-fb-buffet-desayuno.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «01 · Desayuno Buffet — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-fb-buffet-comida-cena.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «02 · Buffet Almuerzo y Cena · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "03-fb-restaurante-carte.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «03 · Restaurante À la Carte — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "04-fb-outlets.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «04 · F&B Outlets — Pool Bar, Lobby Bar, Snack Bar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "05-fb-room-service-minibar.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «05 · Room Service y Minibar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "06-fb-banquetes-eventos.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «06 · Banquetes y Eventos del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "07-recepcion-turnos.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «07 · Recepción — Turnos y Protocolo Check-in/out · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "08-guest-services.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «08 · Guest Services — Conserjería y Guest Experience · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-housekeeping.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «09 · Housekeeping — 5 Protocolos de Limpieza · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 10
+  },
+  {
+   "fichero": "10-areas-publicas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «10 · Áreas Públicas — Lobby, Pasillos, Baños, Parking · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "11-piscina.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «11 · Piscina — Apertura, Cierre, Mantenimiento y Toallas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "12-terraza.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «12 · Terraza — Montaje Temporada y Servicio Diario · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "13-mantenimiento.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «13 · Mantenimiento — 6 Áreas Técnicas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 14
+  },
+  {
+   "fichero": "14-administracion.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «14 · Administración — Revenue, Reservas, Contabilidad, RRHH · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "15-spa-wellness.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «15 · Spa & Wellness — Apertura, Cierre, Cabinas, Vestuarios · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "18-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "19-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 80
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 01 · Briefing Diario F&B del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 02 · Calendario Anual F&B Hotelero · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo» · subject «Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0» · keywords «kit tareas hotel, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-fb-buffet-desayuno.xlsx",
+  "02-fb-buffet-comida-cena.xlsx",
+  "03-fb-restaurante-carte.xlsx",
+  "04-fb-outlets.xlsx",
+  "05-fb-room-service-minibar.xlsx",
+  "06-fb-banquetes-eventos.xlsx",
+  "07-recepcion-turnos.xlsx",
+  "08-guest-services.xlsx",
+  "09-housekeeping.xlsx",
+  "10-areas-publicas.xlsx",
+  "11-piscina.xlsx",
+  "12-terraza.xlsx",
+  "13-mantenimiento.xlsx",
+  "14-administracion.xlsx",
+  "15-spa-wellness.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-fb-buffet-desayuno.xlsx",
+   "title": "01 · Desayuno Buffet — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura Desayuno",
+     "dim": "A1:G65",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Desayuno",
+     "dim": "A1:G44",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-fb-buffet-comida-cena.xlsx",
+   "title": "02 · Buffet Almuerzo y Cena · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Buffet Almuerzo",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Buffet Cena",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-fb-restaurante-carte.xlsx",
+   "title": "03 · Restaurante À la Carte — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura À la Carte",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre À la Carte",
+     "dim": "A1:G24",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-fb-outlets.xlsx",
+   "title": "04 · F&B Outlets — Pool Bar, Lobby Bar, Snack Bar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Pool Bar",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Lobby Bar - Lounge",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Snack Bar - Grab Go",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-fb-room-service-minibar.xlsx",
+   "title": "05 · Room Service y Minibar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Room Service",
+     "dim": "A1:G43",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Minibar",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-fb-banquetes-eventos.xlsx",
+   "title": "06 · Banquetes y Eventos del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Banquetes y Eventos",
+     "dim": "A1:G53",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-recepcion-turnos.xlsx",
+   "title": "07 · Recepción — Turnos y Protocolo Check-in/out · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Turno Mañana",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Turno Tarde",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Turno Noche",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Check-in Check-out",
+     "dim": "A1:G24",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-guest-services.xlsx",
+   "title": "08 · Guest Services — Conserjería y Guest Experience · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Conserjería",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Guest Experience",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-housekeeping.xlsx",
+   "title": "09 · Housekeeping — 5 Protocolos de Limpieza · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Limpieza Checkout",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Limpieza Estancia",
+     "dim": "A1:G20",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Turndown Service",
+     "dim": "A1:G16",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Deep Cleaning",
+     "dim": "A1:G16",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Control Lencería",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "10-areas-publicas.xlsx",
+   "title": "10 · Áreas Públicas — Lobby, Pasillos, Baños, Parking · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Lobby",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pasillos y Ascensores",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Baños Públicos",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Parking",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "11-piscina.xlsx",
+   "title": "11 · Piscina — Apertura, Cierre, Mantenimiento y Toallas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura Piscina",
+     "dim": "A1:G19",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Piscina",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mant. Semanal",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Servicio Toallas",
+     "dim": "A1:G14",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "12-terraza.xlsx",
+   "title": "12 · Terraza — Montaje Temporada y Servicio Diario · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Montaje Temporada",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Servicio Diario",
+     "dim": "A1:G21",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "13-mantenimiento.xlsx",
+   "title": "13 · Mantenimiento — 6 Áreas Técnicas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Ronda Diaria",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Semanal",
+     "dim": "A1:G16",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual",
+     "dim": "A1:G17",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G39",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "HVAC",
+     "dim": "A1:G14",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Fontanería",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Electricidad",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "14-administracion.xlsx",
+   "title": "14 · Administración — Revenue, Reservas, Contabilidad, RRHH · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Revenue Management",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Reservas",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Contabilidad",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "RRHH Operativo",
+     "dim": "A1:G15",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "15-spa-wellness.xlsx",
+   "title": "15 · Spa & Wellness — Apertura, Cierre, Cabinas, Vestuarios · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura Spa",
+     "dim": "A1:G19",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Spa",
+     "dim": "A1:G19",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cabinas Tratamientos",
+     "dim": "A1:G14",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Vestuarios",
+     "dim": "A1:G14",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "18-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Hotel Completo · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "19-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Hotel Completo · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 · Briefing Diario F&B del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "A1:G38",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 · Calendario Anual F&B Hotelero · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+   "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario",
+     "dim": "A1:F28",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-fb-buffet-desayuno.xlsx",
+    "salida": "01-fb-buffet-desayuno.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-fb-buffet-comida-cena.xlsx",
+    "salida": "02-fb-buffet-comida-cena.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-fb-restaurante-carte.xlsx",
+    "salida": "03-fb-restaurante-carte.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-fb-outlets.xlsx",
+    "salida": "04-fb-outlets.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-fb-room-service-minibar.xlsx",
+    "salida": "05-fb-room-service-minibar.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-fb-banquetes-eventos.xlsx",
+    "salida": "06-fb-banquetes-eventos.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-recepcion-turnos.xlsx",
+    "salida": "07-recepcion-turnos.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-guest-services.xlsx",
+    "salida": "08-guest-services.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-housekeeping.xlsx",
+    "salida": "09-housekeeping.xlsx: formulas=10 cache_inyectado=10 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "10-areas-publicas.xlsx",
+    "salida": "10-areas-publicas.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "11-piscina.xlsx",
+    "salida": "11-piscina.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "12-terraza.xlsx",
+    "salida": "12-terraza.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "13-mantenimiento.xlsx",
+    "salida": "13-mantenimiento.xlsx: formulas=14 cache_inyectado=14 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "14-administracion.xlsx",
+    "salida": "14-administracion.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "15-spa-wellness.xlsx",
+    "salida": "15-spa-wellness.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "18-apertura-cierre-negocio.xlsx",
+    "salida": "18-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "19-apertura-cierre-caja.xlsx",
+    "salida": "19-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 182,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 49,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 19,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "18-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 636,
+   "por_fichero": {
+    "01-fb-buffet-desayuno.xlsx": 64,
+    "02-fb-buffet-comida-cena.xlsx": 35,
+    "03-fb-restaurante-carte.xlsx": 28,
+    "04-fb-outlets.xlsx": 39,
+    "05-fb-room-service-minibar.xlsx": 38,
+    "06-fb-banquetes-eventos.xlsx": 34,
+    "07-recepcion-turnos.xlsx": 48,
+    "08-guest-services.xlsx": 23,
+    "09-housekeeping.xlsx": 52,
+    "10-areas-publicas.xlsx": 28,
+    "11-piscina.xlsx": 28,
+    "12-terraza.xlsx": 17,
+    "13-mantenimiento.xlsx": 69,
+    "14-administracion.xlsx": 28,
+    "15-spa-wellness.xlsx": 28,
+    "18-apertura-cierre-negocio.xlsx": 33,
+    "19-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 21,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 56,
+    "p4": 580
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-fb-buffet-desayuno.xlsx",
+     "hoja": "Apertura Desayuno",
+     "molde": "p4",
+     "celda": "E63",
+     "tareas": 46
+    },
+    {
+     "fichero": "01-fb-buffet-desayuno.xlsx",
+     "hoja": "Cierre Desayuno",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 18
+    },
+    {
+     "fichero": "02-fb-buffet-comida-cena.xlsx",
+     "hoja": "Buffet Almuerzo",
+     "molde": "p4",
+     "celda": "E33",
+     "tareas": 21
+    },
+    {
+     "fichero": "02-fb-buffet-comida-cena.xlsx",
+     "hoja": "Buffet Cena",
+     "molde": "p4",
+     "celda": "E23",
+     "tareas": 14
+    },
+    {
+     "fichero": "03-fb-restaurante-carte.xlsx",
+     "hoja": "Apertura À la Carte",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 15
+    },
+    {
+     "fichero": "03-fb-restaurante-carte.xlsx",
+     "hoja": "Cierre À la Carte",
+     "molde": "p4",
+     "celda": "E22",
+     "tareas": 13
+    },
+    {
+     "fichero": "04-fb-outlets.xlsx",
+     "hoja": "Pool Bar",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 17
+    },
+    {
+     "fichero": "04-fb-outlets.xlsx",
+     "hoja": "Lobby Bar - Lounge",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "04-fb-outlets.xlsx",
+     "hoja": "Snack Bar - Grab Go",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "05-fb-room-service-minibar.xlsx",
+     "hoja": "Room Service",
+     "molde": "p4",
+     "celda": "E41",
+     "tareas": 26
+    },
+    {
+     "fichero": "05-fb-room-service-minibar.xlsx",
+     "hoja": "Minibar",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-fb-banquetes-eventos.xlsx",
+     "hoja": "Banquetes y Eventos",
+     "molde": "p4",
+     "celda": "E51",
+     "tareas": 34
+    },
+    {
+     "fichero": "07-recepcion-turnos.xlsx",
+     "hoja": "Turno Mañana",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "07-recepcion-turnos.xlsx",
+     "hoja": "Turno Tarde",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "07-recepcion-turnos.xlsx",
+     "hoja": "Turno Noche",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "07-recepcion-turnos.xlsx",
+     "hoja": "Check-in Check-out",
+     "molde": "p4",
+     "celda": "E22",
+     "tareas": 13
+    },
+    {
+     "fichero": "08-guest-services.xlsx",
+     "hoja": "Conserjería",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "08-guest-services.xlsx",
+     "hoja": "Guest Experience",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "hoja": "Limpieza Checkout",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "hoja": "Limpieza Estancia",
+     "molde": "p4",
+     "celda": "E18",
+     "tareas": 9
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "hoja": "Turndown Service",
+     "molde": "p4",
+     "celda": "E14",
+     "tareas": 8
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "hoja": "Deep Cleaning",
+     "molde": "p4",
+     "celda": "E14",
+     "tareas": 8
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "hoja": "Control Lencería",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "10-areas-publicas.xlsx",
+     "hoja": "Lobby",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "10-areas-publicas.xlsx",
+     "hoja": "Pasillos y Ascensores",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "10-areas-publicas.xlsx",
+     "hoja": "Baños Públicos",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "10-areas-publicas.xlsx",
+     "hoja": "Parking",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "11-piscina.xlsx",
+     "hoja": "Apertura Piscina",
+     "molde": "p4",
+     "celda": "E17",
+     "tareas": 8
+    },
+    {
+     "fichero": "11-piscina.xlsx",
+     "hoja": "Cierre Piscina",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "11-piscina.xlsx",
+     "hoja": "Mant. Semanal",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "11-piscina.xlsx",
+     "hoja": "Servicio Toallas",
+     "molde": "p4",
+     "celda": "E12",
+     "tareas": 6
+    },
+    {
+     "fichero": "12-terraza.xlsx",
+     "hoja": "Montaje Temporada",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "12-terraza.xlsx",
+     "hoja": "Servicio Diario",
+     "molde": "p4",
+     "celda": "E19",
+     "tareas": 10
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Ronda Diaria",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Semanal",
+     "molde": "p4",
+     "celda": "E14",
+     "tareas": 8
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Mensual",
+     "molde": "p4",
+     "celda": "E15",
+     "tareas": 9
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E37",
+     "tareas": 25
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "HVAC",
+     "molde": "p4",
+     "celda": "E12",
+     "tareas": 6
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Fontanería",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "hoja": "Electricidad",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "14-administracion.xlsx",
+     "hoja": "Revenue Management",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "14-administracion.xlsx",
+     "hoja": "Reservas",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "14-administracion.xlsx",
+     "hoja": "Contabilidad",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "14-administracion.xlsx",
+     "hoja": "RRHH Operativo",
+     "molde": "p4",
+     "celda": "E13",
+     "tareas": 7
+    },
+    {
+     "fichero": "15-spa-wellness.xlsx",
+     "hoja": "Apertura Spa",
+     "molde": "p4",
+     "celda": "E17",
+     "tareas": 8
+    },
+    {
+     "fichero": "15-spa-wellness.xlsx",
+     "hoja": "Cierre Spa",
+     "molde": "p4",
+     "celda": "E17",
+     "tareas": 8
+    },
+    {
+     "fichero": "15-spa-wellness.xlsx",
+     "hoja": "Cabinas Tratamientos",
+     "molde": "p4",
+     "celda": "E12",
+     "tareas": 6
+    },
+    {
+     "fichero": "15-spa-wellness.xlsx",
+     "hoja": "Vestuarios",
+     "molde": "p4",
+     "celda": "E12",
+     "tareas": 6
+    },
+    {
+     "fichero": "18-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "18-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "19-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "19-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing",
+     "molde": "p4",
+     "celda": "E36",
+     "tareas": 21
+    }
+   ]
+  },
+  "metadata": {
+   "subject_esperado": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+   "keywords_esperado": "kit tareas hotel, AI Chef Pro",
+   "incoherentes": [],
+   "keywords_propias": [],
+   "por_fichero": [
+    {
+     "fichero": "01-fb-buffet-desayuno.xlsx",
+     "title": "01 · Desayuno Buffet — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "02-fb-buffet-comida-cena.xlsx",
+     "title": "02 · Buffet Almuerzo y Cena · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "03-fb-restaurante-carte.xlsx",
+     "title": "03 · Restaurante À la Carte — Apertura y Cierre · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "04-fb-outlets.xlsx",
+     "title": "04 · F&B Outlets — Pool Bar, Lobby Bar, Snack Bar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "05-fb-room-service-minibar.xlsx",
+     "title": "05 · Room Service y Minibar · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "06-fb-banquetes-eventos.xlsx",
+     "title": "06 · Banquetes y Eventos del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "07-recepcion-turnos.xlsx",
+     "title": "07 · Recepción — Turnos y Protocolo Check-in/out · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "08-guest-services.xlsx",
+     "title": "08 · Guest Services — Conserjería y Guest Experience · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "09-housekeeping.xlsx",
+     "title": "09 · Housekeeping — 5 Protocolos de Limpieza · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "10-areas-publicas.xlsx",
+     "title": "10 · Áreas Públicas — Lobby, Pasillos, Baños, Parking · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "11-piscina.xlsx",
+     "title": "11 · Piscina — Apertura, Cierre, Mantenimiento y Toallas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "12-terraza.xlsx",
+     "title": "12 · Terraza — Montaje Temporada y Servicio Diario · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "13-mantenimiento.xlsx",
+     "title": "13 · Mantenimiento — 6 Áreas Técnicas · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "14-administracion.xlsx",
+     "title": "14 · Administración — Revenue, Reservas, Contabilidad, RRHH · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "15-spa-wellness.xlsx",
+     "title": "15 · Spa & Wellness — Apertura, Cierre, Cabinas, Vestuarios · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "18-apertura-cierre-negocio.xlsx",
+     "title": "Apertura y Cierre del Negocio — Hotel Completo · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "19-apertura-cierre-caja.xlsx",
+     "title": "Apertura y Cierre de Caja — Hotel Completo · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "title": "BONUS 01 · Briefing Diario F&B del Hotel · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+     "title": "BONUS 02 · Calendario Anual F&B Hotelero · Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo",
+     "subject": "Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas hotel, AI Chef Pro"
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "19 ficheros censados (19 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hotel)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "19-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hotel/arqueo-cuadra-19-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "19-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hotel/arqueo-descuadra-19-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29",
+   "entradas": "18 tareas · 3 N/A · 15 ✓",
+   "esperado": "15 de 15",
+   "obtenido": "15 de 15",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hotel/contador-18-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:C63/E63",
+   "entradas": "hoja tal y como se entrega · 46 tareas reales, 4 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "4 de 50",
+   "esperado": "0 de 46",
+   "obtenido": "0.0 de 46.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hotel/p4-recien-impresa-01-fb-buffet-desayuno.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-hotel.bak-20260823-203510"
+}

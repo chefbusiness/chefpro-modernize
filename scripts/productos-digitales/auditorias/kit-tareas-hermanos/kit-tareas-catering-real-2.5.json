@@ -1,0 +1,1146 @@
+{
+ "producto": "kit-tareas-catering",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T20:38:32",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering",
+ "sustitucion_09_catering": {
+  "construido": "09-cobros-facturacion-eventos.xlsx",
+  "borrado": null,
+  "estado_previo": "09 nuevo (reconstruido)"
+ },
+ "contexto": {
+  "kit": "Catering / Eventos",
+  "pie": "— Kit de Tareas Recurrentes · Catering / Eventos · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-cobros-facturacion-eventos.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-cobros-facturacion-eventos.xlsx"
+  ],
+  "con_checklist": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-cobros-facturacion-eventos.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "modelo_caja": "eventos",
+  "papeles": {
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false,
+    "liquidacion": false,
+    "registro_eventos": false
+   },
+   "09-cobros-facturacion-eventos.xlsx": {
+    "ciclo": [],
+    "con_notas": [],
+    "recuento": true,
+    "registro": false,
+    "liquidacion": true,
+    "registro_eventos": true
+   }
+  },
+  "producto": "kit-tareas-catering"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «01 · Preparación y Producción Off-Site · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «02 · Transporte y Logística · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «03 · Tareas del Director / Event Manager · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «04 · Tareas por Perfil / Rol · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «05 · Montaje y Desmontaje del Venue · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «06 · Tipos de Evento — Checklists Específicos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «07 · Plantilla Personalizable — Catering · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 0
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "Instrucciones reescritas (23 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-cobros-facturacion-eventos.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Antes del Evento",
+    "Después del Evento",
+    "Liquidación del Evento",
+    "Registro de Eventos"
+   ],
+   "cambios": [
+    "«Antes del Evento»: +5 filas libres dentro del rango contado (total 5)",
+    "«Antes del Evento»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Después del Evento»: +5 filas libres dentro del rango contado (total 5)",
+    "«Después del Evento»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Antes del Evento»: 12 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Después del Evento»: 12 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "4 reglas de formato condicional del modelo por eventos (ámbar si queda PENDIENTE, rojo si el saldo está VENCIDO)",
+    "Instrucciones reescritas (31 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 01 · Briefing Pre-Evento · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 02 · Calendario Anual de Temporada Alta · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0» · keywords «kit tareas catering, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-partidas-cocina.xlsx",
+  "03-tareas-manager.xlsx",
+  "04-tareas-perfiles.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-eventos-festivos.xlsx",
+  "07-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Preparación y Producción Off-Site · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Producción",
+     "dim": "A1:G67",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "title": "02 · Transporte y Logística · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Transporte",
+     "dim": "A1:G41",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 · Tareas del Director / Event Manager · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Event Manager",
+     "dim": "A1:G50",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 · Tareas por Perfil / Rol · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chef de Evento",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Maître - Jefe Sala",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Camarero",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Barman",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Montaje y Desmontaje del Venue · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Montaje",
+     "dim": "A1:G44",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Desmontaje",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "title": "06 · Tipos de Evento — Checklists Específicos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Bodas",
+     "dim": "A1:G24",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Corporativo",
+     "dim": "A1:G21",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cocktail Standing",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Outdoor - Exterior",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 · Plantilla Personalizable — Catering · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Fase",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B46",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$46",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-cobros-facturacion-eventos.xlsx",
+   "title": "Cobros y Facturación por Evento — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B60",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$60",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Antes del Evento",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Antes del Evento'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Después del Evento",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Después del Evento'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Liquidación del Evento",
+     "dim": "A1:D51",
+     "dv": [],
+     "cf": 2,
+     "print_area": "'Liquidación del Evento'!$A$1:$D$51",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 24
+    },
+    {
+     "hoja": "Registro de Eventos",
+     "dim": "A1:K37",
+     "dv": [],
+     "cf": 2,
+     "print_area": "'Registro de Eventos'!$A$1:$K$37",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 82
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 · Briefing Pre-Evento · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 · Calendario Anual de Temporada Alta · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario",
+     "dim": "A1:F26",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-cocina.xlsx",
+    "salida": "02-partidas-cocina.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-festivos.xlsx",
+    "salida": "06-eventos-festivos.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-cobros-facturacion-eventos.xlsx",
+    "salida": "09-cobros-facturacion-eventos.xlsx: formulas=110 cache_inyectado=83 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 38,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 15,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 347,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 38,
+    "02-partidas-cocina.xlsx": 24,
+    "03-tareas-manager.xlsx": 53,
+    "04-tareas-perfiles.xlsx": 64,
+    "05-tareas-semanales-mensuales.xlsx": 44,
+    "06-eventos-festivos.xlsx": 47,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 33,
+    "09-cobros-facturacion-eventos.xlsx": 24,
+    "BONUS-01-briefing-servicio.xlsx": 20,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 57,
+    "p4": 290
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Producción",
+     "molde": "p4",
+     "celda": "E52",
+     "tareas": 38
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Transporte",
+     "molde": "p4",
+     "celda": "E39",
+     "tareas": 24
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Event Manager",
+     "molde": "p4",
+     "celda": "E48",
+     "tareas": 33
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Chef de Evento",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Maître - Jefe Sala",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Camarero",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Barman",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Montaje",
+     "molde": "p4",
+     "celda": "E42",
+     "tareas": 27
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Desmontaje",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 17
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Bodas",
+     "molde": "p4",
+     "celda": "E22",
+     "tareas": 13
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Corporativo",
+     "molde": "p4",
+     "celda": "E19",
+     "tareas": 10
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Cocktail Standing",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Outdoor - Exterior",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-cobros-facturacion-eventos.xlsx",
+     "hoja": "Antes del Evento",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "09-cobros-facturacion-eventos.xlsx",
+     "hoja": "Después del Evento",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    }
+   ]
+  },
+  "metadata": {
+   "subject_esperado": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "keywords_esperado": "kit tareas catering, AI Chef Pro",
+   "incoherentes": [],
+   "keywords_propias": [],
+   "por_fichero": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "title": "01 · Preparación y Producción Off-Site · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "title": "02 · Transporte y Logística · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "title": "03 · Tareas del Director / Event Manager · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "title": "04 · Tareas por Perfil / Rol · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "title": "05 · Montaje y Desmontaje del Venue · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "title": "06 · Tipos de Evento — Checklists Específicos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "title": "07 · Plantilla Personalizable — Catering · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "title": "Apertura y Cierre del Negocio — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "09-cobros-facturacion-eventos.xlsx",
+     "title": "Cobros y Facturación por Evento — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "title": "BONUS 01 · Briefing Pre-Evento · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+     "title": "BONUS 02 · Calendario Anual de Temporada Alta · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas catering, AI Chef Pro"
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "liquidacion-cuadra",
+   "ref": "09-cobros-facturacion-eventos.xlsx:Liquidación del Evento:C22/C24",
+   "entradas": {
+    "presupuesto (base)": 10000,
+    "extras": 0,
+    "base 10 %": 8000,
+    "base 21 %": 2000,
+    "anticipo cobrado": 4000,
+    "cobrado tras el evento": 7220,
+    "vencimiento": "2026-09-22",
+    "hoy": "2026-08-23"
+   },
+   "total_factura": 11220,
+   "saldo_tras_anticipo": 7220,
+   "esperado": "0 / Cobrado",
+   "obtenido": "0 / Cobrado",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/liquidacion-cuadra-09-cobros-facturacion-eventos.xlsx"
+  },
+  {
+   "caso": "liquidacion-vencida",
+   "ref": "09-cobros-facturacion-eventos.xlsx:Liquidación del Evento:C22/C24",
+   "entradas": {
+    "presupuesto (base)": 10000,
+    "extras": 0,
+    "base 10 %": 8000,
+    "base 21 %": 2000,
+    "anticipo cobrado": 4000,
+    "cobrado tras el evento": 0,
+    "vencimiento": "2026-08-13",
+    "hoy": "2026-08-23"
+   },
+   "total_factura": 11220,
+   "saldo_tras_anticipo": 7220,
+   "esperado": "7220 / VENCIDO",
+   "obtenido": "7220 / VENCIDO",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/liquidacion-vencida-09-cobros-facturacion-eventos.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29",
+   "entradas": "18 tareas · 3 N/A · 15 ✓",
+   "esperado": "15 de 15",
+   "obtenido": "15 de 15",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/contador-08-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Producción:C52/E52",
+   "entradas": "hoja tal y como se entrega · 38 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 41",
+   "esperado": "0 de 38",
+   "obtenido": "0.0 de 38.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-catering.bak-20260823-203814"
+}

@@ -426,30 +426,21 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'kit-tareas-catering': {
-    version: '2.1',
+    version: '2.0',
     updated: '2026-08-23',
     entries: [
       {
-        version: '2.1',
+        version: '2.0',
         date: '2026-08-23',
-        title: 'El 09 pasa de caja de mostrador a cobros y facturación por evento',
+        title: 'Apertura y cierre de negocio, cobros y facturación por evento y las 347 tareas del kit revisadas',
         changes: [
+          'Nueva plantilla 08 — Apertura y Cierre de Negocio: checklist del obrador y la base de operaciones completa (no solo cocina), con responsable y hora precargados en 33 tareas — traducida al oficio del catering (órdenes de servicio, hoja de ruta de vehículos, carga de isotermos con temperatura de salida, accesos de cada recinto), no al vocabulario de un restaurante con sala.',
           'La plantilla 09 deja de ser un arqueo de caja y pasa a ser «Cobros y Facturación por Evento»: una empresa de catering no tiene mostrador ni turno de TPV — factura por evento y cobra casi siempre por transferencia, con un anticipo del 30-50 % al firmar y el saldo después. El fichero anterior modelaba un negocio que no era el tuyo.',
           'Dos checklists nuevos con 24 tareas: «Antes del Evento» (presupuesto firmado por escrito, comensales y fecha límite de cambios, anticipo cobrado y registrado, forma de pago del saldo, datos de facturación, condiciones de cancelación, proveedores externos, escandallo y margen, seguro de RC, alérgenos por escrito) y «Después del Evento» (comensales reales frente a contratados, extras, cargos por roturas, factura con desglose de IVA, saldo comunicado, cobro registrado, conciliación bancaria, reseña y expediente archivado). La columna «Cuándo» va en días respecto al evento — D-15, D-7, D-3, D-1 y D+0, D+1, D+7, D+30 — porque en catering el calendario lo marca la fecha del evento, no la hora de apertura de un local.',
           'Hoja «Liquidación del Evento»: escribes el presupuesto, los extras y cómo se reparte la base entre el 10 % (alimentos y bebidas no alcohólicas del servicio de catering) y el 21 % (alquileres, decoración, servicios y bebidas alcohólicas), y la hoja calcula los dos IVA, el TOTAL FACTURA, el saldo tras anticipo y el PENDIENTE DE COBRO, que se pone en ámbar mientras quede algo. El ESTADO es automático: «Cobrado», «Pendiente» o «VENCIDO» en rojo cuando la fecha de vencimiento ya ha pasado. Si las dos bases no suman presupuesto + extras te avisa, pero no te bloquea: el reparto lo decides tú con tu asesor.',
           'Hoja «Registro de Eventos»: 25 eventos con base, total, anticipo, cobrado, pendiente, medio de pago, vencimiento y estado, fila de TOTALES y recuento de cuántos eventos están pendientes y cuántos vencidos. Es la vista que dice de un vistazo cuánto dinero hay en la calle.',
           'La barra en efectivo no desaparece, pasa a ser opcional: al final de la liquidación hay una sección «Solo si hubo barra con cobro en EFECTIVO» con el recuento por denominaciones (500 € a 0,01 €), el fondo y el efectivo neto. No se suma sola al cobro del evento, a propósito: en la mayoría de los eventos no hay efectivo y una fórmula fija dejaría un 0 restando donde no debe.',
           'El enlace de descarga del antiguo «09-apertura-cierre-caja.xlsx» redirige al fichero nuevo, así que los accesos ya enviados por email siguen funcionando. Recuento del kit actualizado: 347 tareas (el 09 nuevo entrega 24 frente a las 23 del anterior).',
-        ],
-      },
-      {
-        version: '2.0',
-        date: '2026-08-23',
-        title: 'Apertura y cierre de negocio, arqueo de caja y las 346 tareas del kit revisadas',
-        changes: [
-          'Nueva plantilla 08 — Apertura y Cierre de Negocio: checklist del obrador y la base de operaciones completa (no solo cocina), con responsable y hora precargados en 33 tareas — traducida al oficio del catering (órdenes de servicio, hoja de ruta de vehículos, carga de isotermos con temperatura de salida, accesos de cada recinto), no al vocabulario de un restaurante con sala.',
-          'Nueva plantilla 09 — Apertura y Cierre de Caja: fondo de caja inicial editable, recuento por denominaciones (con monedas de 0,02 €), y descuadre automático (Total facturado − Z del TPV) resaltado en ámbar si no cuadra.',
-          'Registro mensual de caja con columna «Z del TPV» y descuadre calculado por fórmula.',
           'Contador honesto en los 9 checklists: del total salen las tareas marcadas N/A (no aplican en tu operación), pero NO las marcadas «—» (no hechas), que siguen contando como pendientes y bajan el porcentaje. Los dos BONUS no llevan contador porque no son listas de tareas.',
           'Bloque de higiene personal y arranque seguro de la cocina (campana → gas → equipos) al inicio de «Producción»; prevención de ANISAKIS en el pescado que se sirve crudo o semicrudo (ceviche, tartar, marinados, ahumado) en Producción y en las estaciones de cocktail/standing; registro de mermas de producción del día.',
           'Tabla editable de vida útil en congelación (10 familias) al pie de «Producción».',
@@ -459,7 +450,7 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
           'Calendario anual (BONUS-02) con 2 fechas nuevas — Día del Padre y el puente de diciembre — 22 en total.',
           'Validación de datos unificada a «✓, —, N/A» en las 22 hojas de checklist y protección sin contraseña, con las celdas de entrada desbloqueadas, en los 11 ficheros (las de Instrucciones se dejan libres a propósito).',
           'Línea de autoría anclada en las Instrucciones de los 11 ficheros (9 plantillas + 2 bonus); versión 2.0 · agosto 2026.',
-          'Landing actualizada: 9 plantillas + 2 bonus (11 ficheros), 346 tareas recontadas sobre los propios ficheros y comparación con Trail generalizada, sin cifras de precio ajenas.',
+          'Landing actualizada: 9 plantillas + 2 bonus (11 ficheros), 347 tareas recontadas sobre los propios ficheros y comparación con Trail generalizada, sin cifras de precio ajenas.',
         ],
       },
       {

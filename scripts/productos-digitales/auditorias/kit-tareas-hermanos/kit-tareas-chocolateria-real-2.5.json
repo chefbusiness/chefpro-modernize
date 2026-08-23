@@ -1,0 +1,1190 @@
+{
+ "producto": "kit-tareas-chocolateria",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T20:35:56",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria",
+ "sustitucion_09_catering": null,
+ "contexto": {
+  "kit": "Chocolatería",
+  "pie": "— Kit de Tareas Recurrentes · Chocolatería · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "modelo_caja": "mostrador",
+  "papeles": {
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false,
+    "liquidacion": false,
+    "registro_eventos": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true,
+    "liquidacion": false,
+    "registro_eventos": false
+   }
+  },
+  "producto": "kit-tareas-chocolateria"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «02 · Partidas de Producción de Chocolate · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «03 · Tareas del Manager de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «04 · Tareas por Perfil — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «05 · Tareas Semanales y Mensuales — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «06 · Eventos y Temporada — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «07 · Plantilla Personalizable — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C56)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 80
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 01 · Briefing Diario de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "metadata: title «BONUS 02 · Calendario Anual de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate» · subject «Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0» · keywords «kit tareas chocolateria, AI Chef Pro»"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-partidas-produccion.xlsx",
+  "03-tareas-manager.xlsx",
+  "04-tareas-perfiles.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-eventos-temporada.xlsx",
+  "07-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura",
+     "dim": "A1:G41",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "title": "02 · Partidas de Producción de Chocolate · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Templado",
+     "dim": "A1:G36",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Moldeado",
+     "dim": "A1:G49",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 · Tareas del Manager de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Diario",
+     "dim": "A1:G29",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Semanal",
+     "dim": "A1:G43",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 · Tareas por Perfil — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B15",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chocolatero",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Dependiente",
+     "dim": "A1:G33",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Encargado",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Tareas Semanales y Mensuales — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Semanal",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "title": "06 · Eventos y Temporada — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Navidad",
+     "dim": "A1:G29",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "San Valentín",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pascua",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 · Plantilla Personalizable — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Turno",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$30",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G59",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$59",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 · Briefing Diario de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 · Calendario Anual de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B10",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario",
+     "dim": "A1:F18",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-produccion.xlsx",
+    "salida": "02-partidas-produccion.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-temporada.xlsx",
+    "salida": "06-eventos-temporada.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 124,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 20,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 32,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 338,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 41,
+    "02-partidas-produccion.xlsx": 41,
+    "03-tareas-manager.xlsx": 47,
+    "04-tareas-perfiles.xlsx": 44,
+    "05-tareas-semanales-mensuales.xlsx": 48,
+    "06-eventos-temporada.xlsx": 40,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 32,
+    "09-apertura-cierre-caja.xlsx": 27,
+    "BONUS-01-briefing-servicio.xlsx": 18,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 59,
+    "p4": 279
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura",
+     "molde": "p4",
+     "celda": "E39",
+     "tareas": 25
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Templado",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 19
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Moldeado",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 22
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Diario",
+     "molde": "p4",
+     "celda": "E27",
+     "tareas": 15
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Semanal",
+     "molde": "p4",
+     "celda": "E41",
+     "tareas": 20
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Mensual",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Chocolatero",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Dependiente",
+     "molde": "p4",
+     "celda": "E31",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Encargado",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Semanal",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Mensual",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Navidad",
+     "molde": "p4",
+     "celda": "E27",
+     "tareas": 15
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "San Valentín",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Pascua",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Turno",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 17
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E24",
+     "tareas": 13
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E25",
+     "tareas": 14
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing",
+     "molde": "p4",
+     "celda": "E33",
+     "tareas": 18
+    }
+   ]
+  },
+  "metadata": {
+   "subject_esperado": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "keywords_esperado": "kit tareas chocolateria, AI Chef Pro",
+   "incoherentes": [],
+   "keywords_propias": [],
+   "por_fichero": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "title": "01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "title": "02 · Partidas de Producción de Chocolate · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "title": "03 · Tareas del Manager de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "title": "04 · Tareas por Perfil — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "title": "05 · Tareas Semanales y Mensuales — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "title": "06 · Eventos y Temporada — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "title": "07 · Plantilla Personalizable — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "title": "Apertura y Cierre del Negocio — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "title": "Apertura y Cierre de Caja — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "title": "BONUS 01 · Briefing Diario de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    },
+    {
+     "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+     "title": "BONUS 02 · Calendario Anual de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+     "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+     "creator": "AI Chef Pro",
+     "keywords": "kit tareas chocolateria, AI Chef Pro"
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56",
+   "entradas": {
+    "Apertura de Caja!C25": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C52": 800,
+    "Cierre de Caja!C55": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56",
+   "entradas": {
+    "Apertura de Caja!C25": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C52": 800,
+    "Cierre de Caja!C55": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D28/F28",
+   "entradas": "17 tareas · 3 N/A · 14 ✓",
+   "esperado": "14 de 14",
+   "obtenido": "14 de 14",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/contador-08-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Apertura:C39/E39",
+   "entradas": "hoja tal y como se entrega · 25 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 28",
+   "esperado": "0 de 25",
+   "obtenido": "0.0 de 25.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-chocolateria.bak-20260823-203538"
+}
