@@ -1,0 +1,205 @@
+{
+ "productId": "kit-inventario",
+ "version": "2.0",
+ "rol": "refutador-coherencia",
+ "lente": "COHERENCIA COMERCIAL — cruce de landing (astro-site/src/data/productos/kits/kit-inventario.ts), dashboard post-pago (src/pages/KitInventarioDashboard.tsx) y changelog (src/data/productos-changelog.ts) EDITADOS contra mi propia copia dry-run del kit v2.0; toda cifra y toda promesa tiene que ser verificable en una celda",
+ "fecha": "2026-08-23",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md",
+ "r1": "scripts/productos-digitales/auditorias/kit-inventario-R1.json",
+ "copia_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-ref-coherencia/dryrun-v2/kit-inventario",
+ "informe_dry_run": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-inv-v2/ref-coherencia.json",
+ "como_se_genero": "CLAUDE_SCRATCHPAD=.../propio-ref-coherencia python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo motor,a,b,c --json .../ref-coherencia.json  (la pasada SIN --solo, que es la que pedía el encargo, sale con los tres grupos ausentes: ver RC-11)",
+ "veredicto": "no listo",
+ "motivo": "La v2.0 se vende como la release de la COHERENCIA (‘las 9 plantillas son coherentes entre sí’ está en el hero, en el grid, en la FAQ on-page, en el FAQPage indexable, en el CTA de cierre, en el dashboard del cliente ya pagado y en el changelog). El kit generado no sostiene esa frase en su formulación actual: el desplegable de proveedores del 03 NO sale del directorio del 02 (son dos tablas distintas con dos juegos de proveedores de ejemplo distintos), el 04 no tiene ni categoría ni unidad y usa una taxonomía propia de 13 familias, el 03 no genera nada desde los niveles de stock del 01, y el semáforo del 06 tiene CINCO estados donde landing, changelog e Instrucciones dicen cuatro. Además la SPA (src/components/kit-inventario/* y src/pages/KitInventario.tsx), que la SPEC §5 manda actualizar, sigue publicando el copy de la v1.1 íntegro, JSON-LD FAQPage incluido.",
+ "hallazgos": [
+  {
+   "id": "RC-01",
+   "severidad": "alta",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "faqs[1].a:221 · schema.faqs[1].a:73 · hero.checkItems[2]:114 · grid.templates[2].desc:137 · cta.items[2]:248 · src/data/productos-changelog.ts:277 · src/pages/KitInventarioDashboard.tsx:17",
+   "hallazgo": "COM-03 se ha reescrito a medias: la promesa de interconexión entre ficheros no se retira, se REFORMULA en una versión igual de falsa. La FAQ on-page dice literalmente «el desplegable de proveedores de los pedidos de compra sale de tu propio directorio de fichas de proveedores», y el FAQPage indexable repite «el desplegable de proveedores sale de tu propio directorio». El desplegable del 03 sale de una hoja Proveedores DENTRO del propio 03, que el cliente tiene que rellenar por segunda vez a mano; el fichero 02 no interviene. Y se nota porque ni siquiera los ejemplos coinciden: el directorio del 02 empieza por «Cárnicas del Norte» y el del 03 por «Cárnicas del Mercado». El comprador que rellene su directorio en el 02 abrirá el 03 y encontrará el desplegable con los seis proveedores de ejemplo de otro fichero.",
+   "evidencia": "03-pedidos-compra.xlsx :: 'Pedido Actual' [DV] C3 -> '=Proveedores!$A$4:$A$23' (hoja del MISMO libro) · 03!Proveedores!A4='Cárnicas del Mercado (ejemplo)', A5='Pescados del Puerto (ejemplo)', A6='La Huerta de Temporada (ejemplo)' · 02!'Directorio Proveedores'!B4='Cárnicas del Norte (ejemplo)', B5='Pescados Ría Fresca (ejemplo)', B6='Frutas y Verduras La Huerta (ejemplo)' · 03!'Pedido Actual'!E3='=IF($C$3=\"\",\"\",IFERROR(VLOOKUP($C$3,Proveedores!$A$4:$H$23,3,FALSE),\"\"))' — VLOOKUP contra la hoja local, cero referencias externas en los 9 libros (§6 de la SPEC prohíbe enlaces entre libros).",
+   "fix": "Decir lo que hace: «el desplegable de proveedores del pedido sale de la hoja Proveedores del propio fichero de pedidos, que rellenas una vez». Y sembrar 03!Proveedores!A4:A9 con los MISMOS seis proveedores de ejemplo del 02!'Directorio Proveedores'!B4:B9, que es lo que hace creíble la palabra ‘coherentes’."
+  },
+  {
+   "id": "RC-02",
+   "severidad": "alta",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "grid.templates[2].desc:137 (primera frase)",
+   "hallazgo": "La tarjeta del grid del 03 sigue abriendo con «Genera pedidos desde tus niveles de stock». Es la misma afirmación que el R1 refutó en COM-03, solo que sin el adverbio ‘automáticamente’. En la copia v2.0 el 03 no lee ningún nivel de stock: sus 30 líneas se teclean a mano y no hay ni una fórmula que traiga producto, cantidad ni par level del 01. Lo único que existe es la columna «A Pedir» del 01, que vive en otro fichero y no viaja a ninguna parte. Retirar la palabra ‘automática’ y dejar el verbo ‘genera desde tus niveles de stock’ es exactamente el patrón de ‘promesa retirada a medias’: quien lea la tarjeta espera importar el pedido y lo que recibe es un formulario en blanco.",
+   "evidencia": "03-pedidos-compra.xlsx :: 'Pedido Actual'!B9='Solomillo de ternera (ejemplo)' es un literal escrito a mano; B10:B38 vacías; las únicas fórmulas de la fila son G9 (subtotal), H9 (IVA desde Listas del mismo libro) e I9 (total). Ninguna referencia a 01-inventario-stock-diario.xlsx en todo el libro. Contraste: 01!Cocina!I5='=IF($G5=\"\",\"\",IF($G5<$E5*1.5,MAX(0,$F5-$G5),0))' — la sugerencia de reposición se calcula y se queda en el 01.",
+   "fix": "«Pásale tus productos y el pedido se calcula solo: IVA por categoría, subtotales y desglose por tipo listos para enviar al proveedor», y mover la relación con el stock a donde sí ocurre («la columna A Pedir del inventario te dice qué llevar aquí»)."
+  },
+  {
+   "id": "RC-03",
+   "severidad": "alta",
+   "fichero": "src/components/kit-inventario/*.tsx + src/pages/KitInventario.tsx",
+   "ubicacion": "HeroSection.tsx:71 · ContentGrid.tsx:10 y :16 · WhySection.tsx:8 y :22 · FaqAccordion.tsx:8, :12, :24 · KitInventario.tsx:70, :71, :72",
+   "hallazgo": "La SPEC §5 obliga expresamente a replicar los cambios en «los gemelos de la SPA en src/components/kit-inventario/*» y no se ha tocado ni un fichero (git status: solo 3 ficheros modificados, ninguno de esa carpeta). Resultado: en el repo conviven dos versiones del mismo copy, y la de la SPA es la v1.1 ENTERA — el badge de los 3.000-5.000 EUR/año sin fuente que §7-bis mandó retirar, el «Simulador de demanda variable» del BONUS-09 que §1.6 mandó retirar porque la pestaña no existe, el «formato imprimible» como pestaña, las 8 categorías, los 60 EUR/mes que contradicen los 50-100 ya unificados, el «Si.» taxativo de APPCC y la licencia contradictoria de COM-25. Lo más caro es KitInventario.tsx:70-72: es el bloque JSON-LD FAQPage, es decir, texto pensado para que Google lo indexe y lo muestre como respuesta.",
+   "evidencia": "src/components/kit-inventario/HeroSection.tsx:71 'Los restaurantes pierden entre 3.000 y 5.000 EUR/ano en mermas evitables' · ContentGrid.tsx:16 '...stock de seguridad. Simulador de demanda variable.' · ContentGrid.tsx:10 '...subtotales con IVA y formato imprimible para enviar.' · WhySection.tsx:22 'Software de Gestión Cobra 60 EUR/mes. Esto es 14 EUR' · FaqAccordion.tsx:12 'Si. Los niveles de stock alimentan automaticamente las sugerencias de pedido...' · KitInventario.tsx:72 '\"text\": \"Si. Incluye control de temperaturas en recepcion, trazabilidad FIFO y registro de caducidades con alertas por colores.\"'",
+   "fix": "Portar los 10 cambios a los 5 componentes y al Helmet de KitInventario.tsx en el mismo commit, o dejar escrito en el handoff que la SPA está congelada y que la fuente única es el .ts de Astro — pero entonces borrar el copy muerto, no dejarlo publicando el FAQPage viejo."
+  },
+  {
+   "id": "RC-04",
+   "severidad": "alta",
+   "fichero": "06-fifo-caducidades.xlsx + astro-site/src/data/productos/kits/kit-inventario.ts + src/data/productos-changelog.ts",
+   "ubicacion": "06!Instrucciones!A22 frente a A23:A27 · 06!'Alertas Caducidad'!A4:A8 · kit-inventario.ts grid.templates[5].desc:140 · productos-changelog.ts:280",
+   "hallazgo": "El semáforo del 06 tiene CINCO estados, no cuatro, y las tres capas de copy dicen cuatro — incluida la hoja de instrucciones del propio entregable, que se contradice a sí misma dos líneas después del titular. El estado que se cae de la lista en los tres sitios es «⚠ REVISAR (consumo preferente)», que es precisamente la aportación de criterio de la v2.0: es el que impide tirar a la basura una conserva con el consumo preferente vencido. Un cliente que lea «4 estados: caducado, urgente, próximo y OK» y se encuentre un quinto en pantalla no piensa que le han regalado algo: piensa que la plantilla está mal.",
+   "evidencia": "06!Instrucciones!A22='EL SEMÁFORO TIENE CUATRO ESTADOS, NO TRES:' seguido de A23='⛔ CADUCADO — RETIRAR…', A24='⚠ REVISAR (consumo preferente)…', A25='🔴 URGENTE…', A26='🟡 PRÓXIMO…', A27='🟢 OK…' (cinco) · 06!'Alertas Caducidad'!A4:A8 = cinco filas de contador · [CF] 'Control FIFO'!L5:L54 n=5 reglas containsText (CADUCADO, URGENTE, REVISAR, PRÓXIMO, OK) · kit-inventario.ts:140 'semaforo de 4 estados: caducado, urgente, proximo y OK' · productos-changelog.ts:280 'semáforo de 4 estados (antes 3)'.",
+   "fix": "«Semáforo de 5 estados» en los tres sitios, y en la landing nombrar el quinto porque es el que vende: «distingue la caducidad (retirada obligatoria) del consumo preferente vencido (revisión organoléptica)». En 06!Instrucciones!A22, «CINCO ESTADOS, NO TRES»."
+  },
+  {
+   "id": "RC-05",
+   "severidad": "alta",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "why.reasons[2].title:156 ('Cumplimiento APPCC') frente a why.reasons[2].desc:156",
+   "hallazgo": "COM-07 se ha matizado en el cuerpo y no en el titular. La tarjeta sigue titulándose «Cumplimiento APPCC» —una afirmación de conformidad normativa, en negrita y a tamaño de titular— y debajo, en cuerpo pequeño, dice «No sustituye al plan ni a un asesor». El titular es lo que se lee y lo que se recuerda; la matización que la SPEC exigía queda anulada por la palabra que la encabeza, y la contradicción está dentro de la misma tarjeta.",
+   "evidencia": "kit-inventario.ts:156 { icon: 'ShieldCheck', title: 'Cumplimiento APPCC', desc: 'Te ayuda a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC: ... No sustituye al plan ni a un asesor.' } · el mismo matiz sí llegó completo a faqs[2].a:225 y schema.faqs[2].a:77.",
+   "fix": "Titular «Registros para tu plan APPCC» o «Documenta tus registros APPCC». La palabra ‘cumplimiento’ es la que un titular llevaría a una reclamación."
+  },
+  {
+   "id": "RC-06",
+   "severidad": "media",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts + 04-recepcion-mercancias.xlsx + 06-fifo-caducidades.xlsx",
+   "ubicacion": "faqs[1].a:221 ('las mismas 10 categorias, las mismas unidades y las mismas familias de producto en las 9 plantillas') · why.reasons[0].desc:154 ('pre-cargadas en las 9 plantillas') · 06!Instrucciones!A17 · 04!'Control Recepción'!E4:E43",
+   "hallazgo": "El titular de la release dice ‘en las 9 plantillas’ y son 8. El 04 no tiene columna de Categoría ni de Unidad en ninguna de sus hojas: clasifica por una taxonomía PROPIA de 13 familias térmicas que no coincide con las 10 categorías (‘Canal y despiece de ungulados domésticos’, ‘Despojos comestibles’, ‘Comidas preparadas refrigeradas (menos de 24 h)’…). Es una decisión de diseño razonable —el umbral legal va por familia, no por categoría de compra— pero deja la frase cuantificada refutable abriendo el fichero, que es exactamente la mecánica de COM-19. Y la misma frase está DENTRO del entregable, en 06!Instrucciones!A17.",
+   "evidencia": "04-recepcion-mercancias.xlsx :: 'Control Recepción'!A3:Q3 = Fecha · Proveedor · Nº albarán/factura · Producto · Familia · Nº de lote · Pedido (ud) · Recibido (ud) · Diferencia (ud) · Caducidad · Temp. °C · Tª máx. (°C) · Conforme (Tª) · Calidad visual · Incidencia · Receptor · Firma — sin Categoría ni Unidad · [DV] E4:E43 -> \"='Verificación Temperaturas'!$A$4:$A$16\" (13 familias) · 06!Instrucciones!A17='Categoría, unidad y zona salen de desplegable: son los mismos 10 grupos y las mismas unidades en las 9 plantillas del kit.' · las 10 categorías con DV están en 01, 02, 03, 05, 06, 07, BONUS-08 y BONUS-09 (8 de 9).",
+   "fix": "«…en las 8 plantillas de producto; la de recepción clasifica por familia normativa, porque el límite de temperatura lo fija la norma y no tu categoría de compra» — decirlo así además explica una decisión buena en vez de esconderla."
+  },
+  {
+   "id": "RC-07",
+   "severidad": "media",
+   "fichero": "astro-site/public/dl/kit-inventario/ (copia dry-run, los 9 ficheros)",
+   "ubicacion": "02!'Directorio Proveedores'!B4:B9 · 03!Proveedores!A4:A9 · 03!'Historial Pedidos'!C5:C7 · 04!'Control Recepción'!B4:B6 · 07!'Top 20 Productos'!K4:K11 · BONUS-09!Calculadora!N4:N11",
+   "hallazgo": "Los datos sembrados por la v2.0 usan DOS juegos de proveedores de ejemplo distintos, repartidos por ficheros. Un comprador que abra los nueve seguidos —que es lo que hace el primer día— ve dos empresas cárnicas, dos pescaderías y dos fruterías inventadas para el mismo restaurante ficticio. Es el detalle que desmiente por sí solo la palabra que encabeza la release. Y en el 03 y el 07 los nombres ni siquiera casan entre sí dentro del mismo libro: el historial escribe ‘Cárnicas del Mercado’ y el desplegable ofrece ‘Cárnicas del Mercado (ejemplo)’, así que filtrar el historial por proveedor no agrupa.",
+   "evidencia": "Juego A (02, 07, BONUS-09): 'Cárnicas del Norte', 'Pescados Ría Fresca', 'Frutas y Verduras La Huerta', 'Distribuciones Economato Sur', 'Bebidas y Distribución Levante', 'Higiene Profesional HORECA'. Juego B (03, 04): 'Cárnicas del Mercado', 'Pescados del Puerto', 'La Huerta de Temporada', 'Almacén Central de Secos', 'Bodega y Bebidas', 'Higiene HORECA'. Cruce concreto: 07!'Top 20 Productos'!K4='Cárnicas del Norte' y 04!'Control Recepción'!B4='Cárnicas del Mercado' para el MISMO producto de ejemplo ('Solomillo de ternera'). Sufijo descuadrado: 03!'Historial Pedidos'!C5='Cárnicas del Mercado' vs 03!Proveedores!A4='Cárnicas del Mercado (ejemplo)'.",
+   "fix": "Un único juego de seis proveedores de ejemplo en motor.py y que los tres grupos lo importen, sufijo '(ejemplo)' incluido, para que el historial case con el desplegable."
+  },
+  {
+   "id": "RC-08",
+   "severidad": "media",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "why.reasons[1].desc:155 ('food cost % por categoria')",
+   "hallazgo": "La tarjeta ‘Formulas que Ahorran Dinero’ promete «food cost % por categoria» y el kit no lo calcula por categoría en ninguna parte. El 07 da un único food cost global en el Dashboard de KPIs y, por categoría, lo que da es el REPARTO DEL GASTO («% del Total»), que es otra cosa: dice qué porcentaje de tus compras se va en cárnicos, no qué porcentaje de tus ventas de cárnicos se come su materia prima. Para un food cost por categoría harían falta ventas por categoría, y no hay ninguna celda donde meterlas. Es la única afirmación de la sección ‘why’ que nadie revisó en la pasada de la v2.0, mientras se reescribían las tres de al lado.",
+   "evidencia": "07!'Dashboard KPIs'!B4='=IFERROR(($B$14+$B$6-$B$15)/$B$12,\"\")' (un solo food cost, contra ventas totales B12) · 07!'Coste por Categoría'!O3='% del Total' con O4='=IFERROR($N4/$N$14,\"\")' (peso sobre el total de COMPRAS) · 'Dashboard KPIs'!B12='Ventas del periodo (€, sin IVA)' es una única celda, sin desglose por categoría.",
+   "fix": "«…variacion de precios entre proveedores y reparto del gasto por categoria», y dejar el food cost donde de verdad está: «food cost sobre consumo y coste por cubierto en el dashboard de KPIs»."
+  },
+  {
+   "id": "RC-09",
+   "severidad": "media",
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "ubicacion": "Instrucciones!A18",
+   "hallazgo": "El ejemplo numérico que la v2.0 escribe para explicar el tope de la EOQ está mal resuelto, y es la única cifra del kit que un lector puede comprobar mentalmente. Dice que la cantidad sugerida son «168 L: los 12 días que aguanta», pero 168 L a 20 L/día son 8,4 días, no 12. El tope no es la vida útil: es el 70 % de la vida útil, tal y como explica la propia hoja de Parámetros dos pestañas más allá. Enseñar mal la fórmula justo en la frase que la vende deja al comprador creyendo que la calculadora le manda comprar para 12 días de leche.",
+   "evidencia": "BONUS-09!Instrucciones!A18='...Con 20 L/día de leche la EOQ da 454 L y la cantidad sugerida, 168 L: los 12 días que aguanta.' · Calculadora!L7='=IF(OR($K7=\"\",$J7=\"\"),\"\",MIN($K7,ROUND($D7*$J7*0.7,0)))' con D7=20, J7=12 → ROUND(20*12*0,7)=168, que son 8,4 días · Parámetros!A12='Factor de vida útil', B12='0,7 (70 %)', C12='La cantidad sugerida nunca pasa del 70 % de lo que consumes dentro de la vida útil…'. Comprobado también el 454: SQRT(2*20*365*3/(0,85*0,25))=454.",
+   "fix": "«…y la cantidad sugerida, 168 L: el 70 % de los 12 días que aguanta, 8 días y medio de consumo»."
+  },
+  {
+   "id": "RC-10",
+   "severidad": "media",
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "ubicacion": "Instrucciones!A11",
+   "hallazgo": "Resto de un código de colores que no existe: la hoja de instrucciones —texto NUEVO de la v2.0, no heredado— manda al cliente fijarse en «las columnas grises». En el fichero no hay ni una celda gris: la convención de la familia es verde E8F5E9 para lo editable y SIN relleno para lo calculado, y así está aplicada. El cliente busca un color que no aparece y no sabe qué columnas no debe tocar, que es justo lo que la frase pretendía resolver.",
+   "evidencia": "BONUS-09!Instrucciones!A11='1. Calculadora — una línea por producto; las columnas grises se calculan solas' · Calculadora!G4/H4/K4/L4/M4: fill patternType=None (sin relleno), locked=True · Calculadora!B4/D4/I4/N4: fill 00E8F5E9 solid, locked=False · el texto es NUEVO de la v2.0: la hoja de producción (astro-site/public/dl/kit-inventario/BONUS-09…xlsx!Instrucciones) tiene A9-A11 = '1. Introduce consumo diario…' / '2. La calculadora te dice exactamente cuándo pedir.' / '3. El simulador te permite probar diferentes escenarios de demanda.' y no menciona ningún color.",
+   "fix": "«las columnas SIN fondo verde se calculan solas», que además es la frase que ya usan los otros ocho ficheros al hablar de las celdas verdes."
+  },
+  {
+   "id": "RC-11",
+   "severidad": "media",
+   "fichero": "scripts/productos-digitales/kit-inventario-v2_0/main.py",
+   "ubicacion": "main.py:468 (--solo default 'motor') y main.py:634-636 (veredicto)",
+   "hallazgo": "La invocación que el propio encargo describe —`main.py --dry-run --json …`, sin `--solo`— NO construye la v2.0: el default de `--solo` es 'motor', así que los tres grupos no se cargan, los nueve ficheros salen con 0 fórmulas nuevas, el 04 se queda con CERO fórmulas y 'Evolución Mensual' ni siquiera existe. Y aun así el script termina con «TODO VERDE» y exit 0, porque el gate §1.6 solo bloquea si se han pedido los tres grupos: imprime las 9 promesas de pestaña rotas como texto informativo. Con el changelog ya publicado en 2.0 y `updateNote` en «Versión 2.0», una pasada de producción hecha así entrega a los clientes un kit que sigue siendo el 1.1 con la etiqueta cambiada, sin que nada avise.",
+   "evidencia": "Mi pasada por defecto (log /private/tmp/.../rc-dryrun.log): «01…: 0 fórmulas nuevas» ×9; «04-recepcion-mercancias.xlsx: formulas=0»; «== 6/7 · gate §1.6 …» lista 9 líneas, entre ellas «03-pedidos-compra.xlsx: Instrucciones!A9: «Imprimible» no existe» y «07-…: Instrucciones!A8: «Evolución Mensual» no existe»; última línea «TODO VERDE (idempotencia, cache, censo, protección)», EXIT=0. Con --solo motor,a,b,c: 283/105/137/126/216/262/126/320/150 fórmulas nuevas y el gate a 0.",
+   "fix": "Default `--solo motor,a,b,c` (o `all`), y que el gate §1.6 bloquee siempre que el fichero cite una pestaña inexistente, corran los grupos que corran. Un gate que no puede suspender no es un gate."
+  },
+  {
+   "id": "RC-12",
+   "severidad": "media",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts + los 9 xlsx",
+   "ubicacion": "why.reasons[3].desc:157 ('sin limite de productos') · 01!Cocina/Barra/Almacén, 03!'Pedido Actual', 05!'Registro Diario Mermas', 06!'Control FIFO', 07!'Top 20 Productos', BONUS-08!'Conteo Rápido', BONUS-09!Calculadora",
+   "hallazgo": "«Sin límite de productos» era discutible en la v1.1 y la v2.0 la ha empeorado sin darse cuenta: al añadir la protección de hoja (§1.5), pasar de la fila preparada exige ahora Revisar → Desproteger y copiar fórmulas, DV y relleno a mano. Los rangos son fijos y cortos frente a la promesa: 40 líneas de inventario en cocina, 30 líneas de pedido, 50 lotes de FIFO, 20 productos en el Top 20. La frase está además en la tarjeta que compara con el software de suscripción, que es donde el comprador escéptico más aprieta.",
+   "evidencia": "01!Cocina: fórmulas y verde hasta la fila 44, print_area 'Cocina'!$A$1:$M$47, protection.sheet=True · 03!'Pedido Actual': líneas 9-38, SUM $G$9:$G$38, protection.sheet=True · 06!'Control FIFO': 5-54, autofiltro A4:T54, protection.sheet=True · BONUS-09!Calculadora: 4-33, protection.sheet=True · Instrucciones de cada libro: «Para editar una celda bloqueada: Revisar → Desproteger hoja (no tiene contraseña)».",
+   "fix": "«sin cuota mensual y sin usuarios que pagar», o cuantificar de verdad («hasta 110 referencias de inventario, 50 lotes y 100 mermas al mes, ampliables»). Lo que no puede quedar es un absoluto que el primer restaurante grande refuta."
+  },
+  {
+   "id": "RC-13",
+   "severidad": "media",
+   "fichero": "src/data/productos-changelog.ts + 07-analisis-costes-compras.xlsx",
+   "ubicacion": "productos-changelog.ts:285 ('Semáforos de color reales … en inventario, recepción, mermas, FIFO y costes') · 07!'Dashboard KPIs'",
+   "hallazgo": "De las cinco áreas que el changelog enumera, la de ‘costes’ no tiene semáforo donde el cliente lo va a buscar. El único formato condicional del 07 está en 'Top 20 Productos'!J (subida de precio > 5 %); el 'Dashboard KPIs' —la hoja que el dashboard post-pago anuncia como «Food cost %, coste por cubierto, tendencias»— no tiene ni columna de estado ni una sola regla, pese a que la SPEC §1.2 la nombra explícitamente («07!'Dashboard KPIs'!E»). Con el ejemplo sembrado, el food cost sale 31,0 % contra un objetivo escrito de «28-32 %» y nada se colorea; el de mermas, en cambio, sí tiene su columna Estado.",
+   "evidencia": "07!'Dashboard KPIs' dims=19x4 (columnas A-D: KPI · Resultado · Objetivo · Cómo se calcula), 0 reglas de formato condicional en la hoja · el único [CF] del libro: 'Top 20 Productos'!J4:J23 n=1 expression AND($J4<>\"\",$J4>0.05) · contraste 05!'Dashboard Mermas'!D3='Estado' con [CF] D4:D8 n=3 · SPEC §1.2: «…y `07!'Dashboard KPIs'!E`».",
+   "fix": "O se añade la columna E de Estado con su semáforo (que es lo que pide la SPEC y lo que hace el 05), o el changelog dice «en inventario, recepción, mermas, FIFO y alertas de precio»."
+  },
+  {
+   "id": "RC-14",
+   "severidad": "media",
+   "fichero": "01-inventario-stock-diario.xlsx, 06-fifo-caducidades.xlsx, 07-analisis-costes-compras.xlsx",
+   "ubicacion": "01!'Resumen Dashboard' · 06!'Alertas Caducidad' · 07!'Evolución Mensual'",
+   "hallazgo": "Las tres hojas cuya primera línea dice al cliente que ahí no se escribe nada son justamente las tres que se entregan SIN protección de hoja. Son además hojas 100 % calculadas y de reciente factura (la de Evolución Mensual nace en esta versión). Cualquiera que teclee encima se lleva por delante el SUMIF por categoría, los contadores de caducidad o el enlace mensual, y el resto del kit sí está protegido, así que el cliente aprende lo contrario: que aquí se puede escribir.",
+   "evidencia": "01!'Resumen Dashboard'!A2='Todo sale solo de Cocina, Barra y Almacén: no se escribe nada aquí.' → protection.sheet=False · 06!'Alertas Caducidad'!A2='Todo se calcula solo desde Control FIFO. Aquí no se escribe nada.' → protection.sheet=False · 07!'Evolución Mensual'!A2='No se escribe nada aquí: sale entero de la fila TOTAL de Coste por Categoría.' → protection.sheet=False. Comparar con 05!'Dashboard Mermas' (protection.sheet=True) y 07!'Coste por Categoría' (True).",
+   "fix": "`ws.protection.sheet = True` en las tres (sin contraseña, como el resto) y las celdas verdes con Protection(locked=False) donde las haya."
+  },
+  {
+   "id": "RC-15",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "testimonials.items[4]:267 (Andres Lopez)",
+   "hallazgo": "La SPEC §6 aparcó los testimonios diciendo que «la v2.0 vuelve ciertos los dos testimonios que hoy describen funciones inexistentes». Ha pasado también lo contrario y nadie lo miró: el testimonio del FIFO describía bien el semáforo de tres estados de la v1.1 y con el nuevo queda FALSO. Ahora el rojo no es «caduca mañana» sino «quedan 2 días o menos», el ámbar no son 3 días sino 7, y por encima hay dos estados más. Es un testimonio con nombre y cargo explicando mal el producto que el visitante va a comprar.",
+   "evidencia": "kit-inventario.ts:267 'rojo = caduca manana, amarillo = 3 dias, verde = OK' · 06!'Control FIFO'!L5='…IF($K5<=2,\"🔴 URGENTE\",IF($K5<=7,\"🟡 PRÓXIMO\",\"🟢 OK\"))…' · 06!'Alertas Caducidad'!D6='Quedan 2 días o menos: al servicio de hoy.', D7='Quedan 7 días o menos: priorízalo en la producción de la semana.'",
+   "fix": "Reescribir la frase del testimonio con los umbrales reales (o dejarla genérica: «lo entienden de un vistazo por el color»). Es texto de marketing, no una cita literal auditada; cambiarlo no toca la decisión de John sobre reseñas."
+  },
+  {
+   "id": "RC-16",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "grid.templates[4].desc:139",
+   "hallazgo": "La tarjeta de mermas sigue enumerando los motivos de la v1.1 —«caducidad, preparacion, devolucion»— y la v2.0 los ha sustituido por una lista cerrada de diez que ya no incluye ‘preparación’. El comprador que busque ese motivo en el desplegable no lo encuentra; y de paso la landing se pierde los tres motivos que más venden la plantilla (sobreproducción, merma de despiece, descuadre sin justificar).",
+   "evidencia": "kit-inventario.ts:139 'Registro diario por categoria (caducidad, preparacion, devolucion)' · 05!'Registro Diario Mermas' [DV] H4:H103 -> \"Caducidad superada,Mal estado en recepción,Rotura o derrame,Error de elaboración,Sobreproducción,Devolución de cliente,Cadena de frío rota,Merma de despiece,Plato cambiado o rechazado,Descuadre sin justificar\".",
+   "fix": "«Registro diario con 10 motivos tipificados (caducidad, sobreproducción, despiece, rotura de frío…)»."
+  },
+  {
+   "id": "RC-17",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "grid.templates[1].desc:136 ('evaluacion de calidad/precio/entrega')",
+   "hallazgo": "COM-29 se arregló en la hoja y no en el copy que lo citaba. La hoja de evaluación ya puntúa cinco criterios y ninguno se llama ‘entrega’; el copy sigue enumerando tres y con el nombre viejo. Es la misma clase de desfase que el R1 marcó dentro del fichero, movida ahora a la landing.",
+   "evidencia": "kit-inventario.ts:136 '…evaluacion de calidad/precio/entrega y condiciones comerciales.' · 02!'Evaluación Proveedores'!C3:G3 = 'Calidad (1-5)' · 'Precio (1-5)' · 'Puntualidad (1-5)' · 'Servicio (1-5)' · 'Flexibilidad (1-5)', con H3='PUNTUACIÓN MEDIA (1-5)' e I3='Nota' (A/B/C/D) · 02!Instrucciones!A9 ya enumera los cinco.",
+   "fix": "«…evaluacion en 5 criterios con nota A/B/C/D y condiciones comerciales»: además es mejor argumento que el que hay."
+  },
+  {
+   "id": "RC-18",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "faqs[2].a:225 (última frase, 'revisa el Pack APPCC')",
+   "hallazgo": "La SPEC §5 pide el matiz de APPCC «con enlace a /pack-appcc» y el enlace no existe: el campo `a` de la FAQ se pinta como texto plano, así que la referencia cruzada al producto de 14 EUR que resuelve justo lo que esta FAQ dice que el kit NO hace se queda sin clic. Es la venta cruzada más natural de toda la página y es la única mención sin destino (el dashboard post-pago sí enlaza a /pack-appcc).",
+   "evidencia": "kit-inventario.ts:225 '…Si necesitas el plan APPCC completo, revisa el Pack APPCC.' (string plano) · footerLinks:290 { href: '/pack-appcc', label: 'Pack APPCC' } es el único enlace de la landing · src/pages/KitInventarioDashboard.tsx:100 <a href=\"/pack-appcc\">Ver Pack APPCC — 14 EUR</a>.",
+   "fix": "Si el template soporta `aHtml` (como faq.astro), pasar el enlace ahí; si no, añadir Pack APPCC a los productos relacionados con un CTA visible bajo la FAQ."
+  },
+  {
+   "id": "RC-19",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "hero.badge:104",
+   "hallazgo": "El badge nuevo escribe «3-5%» pegado, contra la norma tipográfica española y contra el propio kit, que escribe el porcentaje con espacio en todas partes (y la §7-bis lo redactó así: «3-5 %»). Es el primer texto de la página y va en rojo. Además el badge ha perdido el sujeto: «Las mermas sin control se comen un 3-5 % de tus compras» habla de un porcentaje sobre compras, que es coherente con el 05, pero no dice de quién es el dato; conviene rematarlo como estimación propia, que es lo que decidió §7-bis.",
+   "evidencia": "kit-inventario.ts:104 badge: 'Las mermas sin control se comen un 3-5% de tus compras: contarlas es el primer paso para recuperarlas' · productos-changelog.ts:281 escribe 'sube más de un 5 % de precio' (con espacio) · 05!Instrucciones!A10='OBJETIVO: mantener las mermas por debajo del 3 % sobre las compras del mes…' (con espacio) · 07!Instrucciones!A7='…entre un 4 % y un 21 % inflado…' (con espacio).",
+   "fix": "«3-5 %» con espacio fino y, si John lo aprueba, cerrar con «(rango que vemos en los establecimientos que auditamos)»."
+  },
+  {
+   "id": "RC-20",
+   "severidad": "baja",
+   "fichero": "02-fichas-proveedores.xlsx",
+   "ubicacion": "'Comparativa Precios'!C4:C13 ('Unidad') y B4:B13 ('Producto')",
+   "hallazgo": "La única hoja del kit que rompe la promesa de vocabulario común sin necesidad: la columna Unidad de la comparativa no tiene validación de datos (la hoja tiene 0 DV), así que ahí las unidades se teclean libres mientras en las otras ocho plantillas salen de desplegable. Y los nombres de producto tampoco casan con el 01: la comparativa arrastra el sufijo redundante «(kg)» y renombra el café. Cuesta una línea de DV y una pasada de nombres, y es lo que la landing está vendiendo.",
+   "evidencia": "02!'Comparativa Precios': data_validations = 0 (contraste: 02!'Directorio Proveedores' tiene DV en C4:C23 y P4:P23) · B4='Pechuga pollo (kg)' / C4='kg' frente a 01!Cocina!B5='Pechuga de pollo' · B13='Café grano (kg)' frente a 01!Barra!B5='Café en grano' · B7='Aceite oliva AOVE (5L)' frente a 01!Cocina!B13='Aceite de oliva virgen extra'.",
+   "fix": "DV de unidades en C4:C13 con la lista canónica y nombres de producto idénticos a los del 01 (el formato de venta ya va en la columna D, así que el «(kg)» del nombre sobra)."
+  },
+  {
+   "id": "RC-21",
+   "severidad": "baja",
+   "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+   "ubicacion": "bonus.subtitle:177 · pricing.priceOld:275, discountBadge:277, bonusTotalLabel:280, bonusSaveLine:281",
+   "hallazgo": "Nota, no reclamación: COM-20 y COM-21 están aparcados por John (§6) y NO los he verificado. Dejo constancia de que la aritmética sigue sin cerrar en la misma pantalla —bonos «valorados en 18 EUR» y, más abajo, valor total 49 con ahorro de 35, que es 49−14— porque la v2.0 se está presentando precisamente como la versión de la coherencia, y ésta es la incoherencia que un comprador resuelve con una resta. La §6 apunta que se cerraría quitando seis palabras sin tocar el ancla de precio.",
+   "evidencia": "kit-inventario.ts:177 'Ademas de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 18 EUR' · :275 priceOld: '49 EUR', :277 discountBadge: '-71%', :281 bonusSaveLine: 'Ahorra 35 EUR HOY' · bonus.items[0].value '9 EUR' + items[1].value '9 EUR' = 18, que no aparece en ninguna suma (49−14=35).",
+   "fix": "Decisión de John. La opción de coste cero que ya identificó la SPEC: borrar «— valorados en 18 EUR» de bonus.subtitle."
+  }
+ ]
+}

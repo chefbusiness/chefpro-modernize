@@ -548,7 +548,9 @@ const waUrl = `https://wa.me/${waPhone}?text=${waMessage}`;
               </button>
               <div data-faq-panel class="grid transition-all duration-300 grid-rows-[0fr]">
                 <div class="overflow-hidden">
-                  <p class="px-5 pb-5 text-gray-400 leading-relaxed">{faq.a}</p>
+                  {faq.aHtml
+                    ? <p class="px-5 pb-5 text-gray-400 leading-relaxed" set:html={faq.aHtml} />
+                    : <p class="px-5 pb-5 text-gray-400 leading-relaxed">{faq.a}</p>}
                 </div>
               </div>
             </div>

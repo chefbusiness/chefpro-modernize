@@ -263,13 +263,35 @@ export const PRODUCT_CHANGELOGS: Record<string, ProductChangelogData> = {
     ],
   },
   'kit-inventario': {
-    version: '1.1',
-    updated: '2026-08-22',
+    version: '2.0',
+    updated: '2026-08-23',
     entries: [
+      {
+        version: '2.0',
+        date: '2026-08-23',
+        title: 'Categorías unificadas, fórmulas reales y plantillas coherentes entre sí',
+        changes: [
+          'Las 10 categorías de la hostelería iguales en las 9 plantillas: cárnicos, pescados, lácteos, verduras/frutas, secos/granos, congelados, bebidas alcohólicas, bebidas no alcohólicas, limpieza y otros (antes había tres formas distintas de nombrarlas según el fichero).',
+          'Inventario de Stock Diario: las 50 filas de ejemplo llevan ahora la categoría, la unidad de compra y el par level real de cada producto — nueva columna de precio por unidad, valoración de tu stock y un Resumen con el valor total y por categoría.',
+          'Fichas de Proveedores: la comparativa de precios ya te dice quién es el proveedor más barato de cada producto, con CIF/NIF, nº de RGSEAA y fecha de homologación.',
+          'Pedidos de Compra: el IVA se aplica solo —primero busca el producto y, si no lo encuentra, aplica el de su categoría, porque el arroz va al 4 % y el aceite al 10 % aunque compartan categoría—, el desplegable de proveedores sale de la hoja Proveedores del propio fichero, te avisa si el pedido no llega al mínimo del proveedor y el historial queda enlazado al pedido en curso.',
+          'Recepción de Mercancías: pasa de ser una checklist en blanco a calcular la diferencia entre lo pedido y lo recibido —y su valor en euros, que es lo que le reclamas al proveedor—, comparar la temperatura contra el rango legal de cada familia (por arriba y por abajo: un pescado a -20 °C venía congelado) y avisarte en rojo si hay que rechazar. Si la familia no tiene límite en la tabla legal, lo dice en vez de darte un visto bueno que no puede sostener.',
+          'Control de Mermas: el coste por categoría y el dashboard mensual ya suman de verdad, con una celda para tus compras del mes y un Plan de Acción con 5 causas típicas precargadas.',
+          'FIFO y Caducidades: semáforo de 5 estados (antes 3) que distingue "caducado, retirar" de "consumo preferente vencido, revísalo antes de decidir" y de "urgente, se sirve hoy" —es el que impide tirar una conserva buena—, con la cantidad y el valor en riesgo de cada lote, seis lotes de ejemplo para que la hoja abra funcionando, y un Mapa de Almacén con 11 zonas: los productos de limpieza salen del economato de los alimentos y los huevos dejan de mandarse a la cámara.',
+          'Análisis de Costes de Compras: nueva hoja de Evolución Mensual, el Top 20 avisa cuando un producto sube más de un 5 % de precio, y el Dashboard de KPIs calcula el food cost sobre lo que consumes (no sobre lo que compras) y el coste por cubierto.',
+          'BONUS Inventario Rápido Mensual: ahora sí calcula tu consumo real del mes, no solo el stock contado.',
+          'BONUS Calculadora de Punto de Pedido: el coste de pedido, el % de almacenamiento y el factor de vida útil son celdas editables (antes iban fijos dentro de la fórmula), y la cantidad a pedir no supera nunca ni lo que tu producto aguanta sin caducar ni tu stock máximo. El punto de pedido que calcula es exactamente el par level del inventario: los dos ficheros dan el mismo número.',
+          'Ninguna línea sin precio se suma como si fuera gratis: toda división y todo cálculo de coste avisa en vez de fallar o mentir.',
+          'Semáforos de color reales (antes eran solo un emoji dentro del texto) en inventario, recepción, mermas, FIFO y en el Dashboard de KPIs de costes, que ahora tiene columna de Estado y objetivos que puedes cambiar tú.',
+          'Un solo juego de datos de ejemplo en los nueve ficheros: los mismos productos, los mismos precios y los mismos seis proveedores. Antes había dos directorios de proveedores inventados que no coincidían entre sí.',
+          'Todas las hojas se entregan protegidas sin contraseña, también las que son solo fórmulas y las tablas de referencia: un clic ya no borra el resumen del inventario ni la tabla legal de temperaturas.',
+          'Número de versión actualizado a 2.0 en la hoja de instrucciones de cada fichero.',
+        ],
+      },
       {
         version: '1.1',
         date: '2026-08-22',
-        title: 'Revisión completa de los 9 ficheros',
+        title: 'Mejoras de formato e impresión (A4) en los 9 ficheros',
         changes: [
           'Impresión en A4 configurada en todas las hojas: ajuste a una página de ancho, cabecera repetida en cada página y pie con numeración.',
           'Número de versión actualizado a 1.1 en la hoja de instrucciones de cada fichero.',

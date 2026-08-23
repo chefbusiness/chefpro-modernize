@@ -1,0 +1,452 @@
+{
+ "productId": "kit-inventario",
+ "version": "2.0",
+ "rol": "grupo_a",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md §2 (01, 02, BONUS-08) + §1.4/§1.8/§1.9 en esos tres ficheros",
+ "fecha": "2026-08-23T22:22:26",
+ "modo": "dry-run (astro-site/public/dl/kit-inventario/ INTACTO)",
+ "codigo": "scripts/productos-digitales/kit-inventario-v2_0/grupo_a.py",
+ "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_a python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo motor,grupo_a --json <scratch>/kit-inv-v2/grupo_a.json",
+ "exit": 0,
+ "gates": {
+  "idempotencia_diferencias": 0,
+  "data_only_formulas_nuevas": {
+   "con_valor": 63,
+   "vacias_por_diseno": 645,
+   "sin_pycel": 0,
+   "fallos": []
+  },
+  "censo_entregables_exit": 0,
+  "pestanas_citadas_inexistentes_en_mis_ficheros": {},
+  "proteccion_fallos": []
+ },
+ "ficheros": [
+  {
+   "fichero": "01-inventario-stock-diario.xlsx",
+   "cambios": [
+    "01:Cocina!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01:Barra!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01:Almacén!J: columna «Precio/ud (€)» insertada (Valor→K, Proveedor→L, Notas→M) — DOM-09",
+    "01-inventario-stock-diario.xlsx:Cocina!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C21: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Cocina!C23: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Barra!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C13: «Varios» → «Otros» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+    "01-inventario-stock-diario.xlsx:Almacén!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+    "01:Cocina!B5:J24: 20 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +20 filas libres hasta la 44",
+    "01:Barra!B5:J19: 15 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +15 filas libres hasta la 34",
+    "01:Almacén!B5:J19: 15 productos con categoría, unidad, par level/max y precio reales (DOM-01/DOM-02/DOM-14/TEC-01/TEC-25/COM-02); I y K reescritas; +15 filas libres hasta la 34",
+    "01:Resumen Dashboard!A4:D20: 3 zonas + TOTAL (COUNTIF de BAJO/PEDIR y SUM del valor) y las 10 categorías con SUMIF — la hoja tenía 0 fórmulas (DOM-09/TEC-03/COM-14)",
+    "01:Instrucciones!A1:A24: reescritas — el «Resumen» que no existía es «Resumen Dashboard» (§1.6) y la banda ámbar ya propone reposición",
+    "01-inventario-stock-diario.xlsx: 213 celdas reformateadas (§1.7)",
+    "01-inventario-stock-diario.xlsx: 900 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "01-inventario-stock-diario.xlsx:Cocina!C5:C44: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Barra!C5:C34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Almacén!C5:C34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Cocina!D5:D44: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Barra!D5:D34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Almacén!D5:D34: DV inline (10 valores)",
+    "01-inventario-stock-diario.xlsx:Cocina!H5:H44: 3 regla(s) de formato condicional",
+    "01-inventario-stock-diario.xlsx:Barra!H5:H34: 3 regla(s) de formato condicional",
+    "01-inventario-stock-diario.xlsx:Almacén!H5:H34: 3 regla(s) de formato condicional",
+    "Cocina: protegida sin contraseña (360 celdas verdes editables)",
+    "Barra: protegida sin contraseña (270 celdas verdes editables)",
+    "Almacén: protegida sin contraseña (270 celdas verdes editables)",
+    "Instrucciones!A24:A26: nota de desprotección + bio anclada + versión 2.0",
+    "01-inventario-stock-diario.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 283,
+   "gates": {
+    "fichero": "01-inventario-stock-diario.xlsx",
+    "dv_aplicadas": 6,
+    "cf_aplicadas": 9,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 333,
+     "verdes": 900,
+     "verdes_con_dato": 300,
+     "dv": 6,
+     "cf": 9,
+     "protegidas": 3,
+     "celdas": 832
+    }
+   }
+  },
+  {
+   "fichero": "02-fichas-proveedores.xlsx",
+   "cambios": [
+    "02:Directorio Proveedores!A3:S3: +8 columnas (CIF/NIF, Nº RGSEAA, contacto de incidencias, día de pedido, plazo, homologación y sus dos fechas) — DOM-17",
+    "02:Comparativa Precios!D3:E3: +2 columnas (formato de venta y contenido) — sin ellas MIN compara la garrafa de 5 L con el litro (DOM-16)",
+    "02:Directorio Proveedores!A4:S9: 6 fichas de ejemplo (carnes, pescados, frutas y verduras, secos, bebidas, limpieza) + DV de categoría y de homologación — la hoja estaba en blanco salvo la numeración (COM-27/DOM-17)",
+    "02:Comparativa Precios!K4:M13: mejor precio con guarda de COUNT, mejor PROVEEDOR con INDEX/MATCH y % de diferencia sobre el bloque oculto P:T de precio normalizado; F3:J3 traen el nombre del directorio (DOM-15/DOM-16/TEC-07/COM-18)",
+    "02:Evaluación Proveedores!H3:I13: media con guarda de 3 criterios y nota A/B/C/D; 6 evaluaciones de ejemplo que cubren las cuatro notas (TEC-16/COM-29)",
+    "02:Condiciones Comerciales!A4:J9: 6 filas de ejemplo coherentes con el directorio; «Rappel» pasa a «Rappel (%)» y «Pedido Mínimo» a euros (COM-27/§1.7)",
+    "02:Instrucciones!A7:A10: los nombres de las cuatro pestañas ya casan con wb.sheetnames y los criterios de evaluación son los cinco reales (§1.6, COM-29)",
+    "02-fichas-proveedores.xlsx: 30 celdas reformateadas (§1.7)",
+    "02-fichas-proveedores.xlsx: 620 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "Directorio Proveedores: protegida sin contraseña (360 celdas verdes editables)",
+    "Comparativa Precios: protegida sin contraseña (110 celdas verdes editables)",
+    "Evaluación Proveedores: protegida sin contraseña (60 celdas verdes editables)",
+    "Condiciones Comerciales: protegida sin contraseña (90 celdas verdes editables)",
+    "Instrucciones!A21:A23: nota de desprotección + bio anclada + versión 2.0",
+    "02-fichas-proveedores.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 105,
+   "gates": {
+    "fichero": "02-fichas-proveedores.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 105,
+     "verdes": 620,
+     "verdes_con_dato": 258,
+     "dv": 2,
+     "cf": 0,
+     "protegidas": 4,
+     "celdas": 491
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+   "cambios": [
+    "BONUS-08:Conteo Rápido!I4:L84: «Compras del mes», «Consumo del mes» (stock anterior + compras − stock final), variación con guarda de H y % de variación con ámbar por encima del ±20 %; G con doble guarda de cantidad y precio; 50 productos coherentes con el 01; +30 filas hasta la 84 (DOM-32/TEC-24/COM-28, §1.8)",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 480 celdas reformateadas (§1.7)",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 560 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido!C5:C84: DV inline (10 valores)",
+    "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido!D5:D84: DV inline (10 valores)",
+    "Conteo Rápido: protegida sin contraseña (560 celdas verdes editables)",
+    "Instrucciones!A16:A18: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-08-inventario-rapido-mensual.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 320,
+   "gates": {
+    "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+    "dv_aplicadas": 2,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 2,
+     "formulas": 321,
+     "verdes": 560,
+     "verdes_con_dato": 200,
+     "dv": 2,
+     "cf": 1,
+     "protegidas": 1,
+     "celdas": 631
+    }
+   }
+  }
+ ],
+ "demostraciones_pycel": {
+  "a_valoracion_stock_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:K5 + Resumen Dashboard:D4",
+   "formula": "K5 =IFERROR(IF(OR($G5=\"\",$J5=\"\"),\"\",$G5*$J5),\"\")",
+   "pruebas": [
+    {
+     "caso": "sin contar",
+     "Cocina!G5": "",
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": "",
+     "Resumen!D4_valor_cocina": 0.0
+    },
+    {
+     "caso": "10 kg contados",
+     "Cocina!G5": 10,
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": 65.0,
+     "Resumen!D4_valor_cocina": 65.0
+    },
+    {
+     "caso": "4 kg contados",
+     "Cocina!G5": 4,
+     "Cocina!J5_precio": 6.5,
+     "Cocina!K5_valor": 26.0,
+     "Resumen!D4_valor_cocina": 26.0
+    }
+   ],
+   "ok": true,
+   "nota": "en la v1.1 la columna Valor (€) no tenía fórmula en ninguna de las 50 filas y el Resumen Dashboard tenía 0 fórmulas"
+  },
+  "a_a_pedir_ambar_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:I5",
+   "formula": "=IF($G5=\"\",\"\",IF($G5<$E5*1.5,MAX(0,$F5-$G5),0))",
+   "par_level_E5": 8,
+   "par_max_F5": 20,
+   "pruebas": [
+    {
+     "caso": "por debajo del par (6)",
+     "stock": 6,
+     "H5_estado": "🔴 PEDIR",
+     "I5_a_pedir": 14
+    },
+    {
+     "caso": "en ámbar, 8 <= 10 < 12",
+     "stock": 10,
+     "H5_estado": "🟡 BAJO",
+     "I5_a_pedir": 10
+    },
+    {
+     "caso": "holgado (15)",
+     "stock": 15,
+     "H5_estado": "🟢 OK",
+     "I5_a_pedir": 0
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 devolvía 0 en todo el tramo ámbar: el semáforo avisaba y la columna de al lado decía que no pidieras nada"
+  },
+  "a_resumen_por_categoria_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Resumen Dashboard:B10/B20",
+   "formula": "B10 = SUMIF por categoría sobre Cocina+Barra+Almacén",
+   "fichero_recien_descargado": {
+    "B10_carnicos": 0.0,
+    "B20_total": 0.0,
+    "C10_porcentaje": ""
+   },
+   "con_10kg_de_pollo": {
+    "B10_carnicos": 65,
+    "B20_total": 65,
+    "C10_porcentaje": 1.0
+   },
+   "con_10kg_pollo_y_2kg_solomillo": {
+    "B10_carnicos": 129,
+    "B20_total": 129,
+    "C10_porcentaje": 1.0
+   },
+   "subiendo_el_solomillo_a_4kg": {
+    "B10_carnicos": 193,
+    "B20_total": 193,
+    "C10_porcentaje": 1.0
+   },
+   "ok": true,
+   "nota": "10 × 6,50 + 2 × 32,00 = 129,00 € → 10 × 6,50 + 4 × 32,00 = 193,00 €"
+  },
+  "a_comparativa_normalizada_02": {
+   "ref": "02-fichas-proveedores.xlsx:Comparativa Precios:K7/L7/M7",
+   "formula": "K = IF(COUNT(P:T)=0;\"\";MIN(P:T)) sobre P = precio / contenido",
+   "con_las_cotizaciones_de_ejemplo": {
+    "E7_contenido": 5,
+    "precios_F7_J7": [
+     42,
+     43.5,
+     41.2,
+     44,
+     42.8
+    ],
+    "normalizados_P7_T7": [
+     8.4,
+     8.7,
+     8.24,
+     8.8,
+     8.56
+    ],
+    "K7_mejor_precio_ud": 8.24,
+    "L7_mejor_proveedor": "Frutas y Verduras La Huerta (ejemplo)",
+    "M7_diferencia": 0.068
+   },
+   "subiendo_al_mas_barato_a_50": {
+    "H7": 50.0,
+    "K7_mejor_precio_ud": 8.4,
+    "L7_mejor_proveedor": "Cárnicas del Norte (ejemplo)"
+   },
+   "fila_sin_cotizaciones": {
+    "fila": 6,
+    "K6_mejor_precio_ud": "",
+    "L6_mejor_proveedor": ""
+   },
+   "ok": true,
+   "nota": "la v1.1 hacía MIN sobre el importe y sin guarda de vacío: las 10 filas enseñaban un 0 nada más abrir el fichero (TEC-07) y la columna Mejor Proveedor estaba vacía (DOM-15)"
+  },
+  "a_evaluacion_nota_02": {
+   "ref": "02-fichas-proveedores.xlsx:Evaluación Proveedores:H4/I4",
+   "formula": "H4 = IF(COUNT(C4:G4)<3;\"\";AVERAGE(C4:G4))",
+   "pruebas": [
+    {
+     "caso": "ejemplo con los 5 criterios (fila 4)",
+     "H4": 4.8,
+     "I4": "A — Preferente"
+    },
+    {
+     "caso": "sólo Calidad puntuada",
+     "valores": [
+      5,
+      "",
+      "",
+      "",
+      ""
+     ],
+     "H4": "",
+     "I4": ""
+    },
+    {
+     "caso": "proveedor flojo",
+     "valores": [
+      2,
+      3,
+      2,
+      2,
+      2
+     ],
+     "H4": 2.2,
+     "I4": "D — Sustituir"
+    },
+    {
+     "caso": "proveedor preferente",
+     "valores": [
+      5,
+      5,
+      5,
+      4,
+      5
+     ],
+     "H4": 4.8,
+     "I4": "A — Preferente"
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 daba 5,0 —nota perfecta— a un proveedor puntuado sólo en Calidad, y la columna Nota estaba vacía en las 10 filas"
+  },
+  "a_consumo_mensual_08": {
+   "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido:J5/K5/L5/G5",
+   "formula": "J5 =IF(OR($F5=\"\",$H5=\"\"),\"\",$H5+$I5-$F5)",
+   "pruebas": [
+    {
+     "caso": "primer inventario: sin mes anterior",
+     "F5_actual": 15,
+     "H5_anterior": "",
+     "I5_compras": "",
+     "G5_valor": 97.5,
+     "J5_consumo": "",
+     "K5_variacion": "",
+     "L5_pct": ""
+    },
+    {
+     "caso": "anterior 20, compras 50, actual 15",
+     "F5_actual": 15,
+     "H5_anterior": 20,
+     "I5_compras": 50,
+     "G5_valor": 97.5,
+     "J5_consumo": 55,
+     "K5_variacion": -5,
+     "L5_pct": -0.25
+    },
+    {
+     "caso": "anterior 20, compras 50, actual 25",
+     "F5_actual": 25,
+     "H5_anterior": 20,
+     "I5_compras": 50,
+     "G5_valor": 162.5,
+     "J5_consumo": 45,
+     "K5_variacion": 5,
+     "L5_pct": 0.25
+    }
+   ],
+   "doble_guarda_G5": {
+    "caso": "cantidad contada y precio en blanco",
+    "G5_valor": "⚠ falta coste"
+   },
+   "ok": true,
+   "nota": "la v1.1 no tenía columna de compras (el consumo era incalculable), la variación miraba la guarda equivocada y el valor de una línea sin precio se sumaba como 0,00 €"
+  }
+ },
+ "ids_R1_cubiertos": {
+  "DOM-01": "01!Cocina/Barra/Almacén!C5:C24 — categoría real por producto (Pechuga de pollo → Cárnicos, no Pescados). grupo_a.py:PRODUCTOS",
+  "DOM-02": "01!…!D5:D24 — unidad real de compra: kg carnes/pescados/verduras, L líquidos, docena huevos, barril la cerveza de grifo, ud las botellas de 75 cl, saco el hielo, rollo/caja/paquete los consumibles",
+  "DOM-09": "01!…!J «Precio/ud (€)» insertada + K5 '=IFERROR(IF(OR($G5=\"\",$J5=\"\"),\"\",$G5*$J5),\"\")' + Resumen Dashboard!A4:D20",
+  "DOM-14": "01!…!E5:F24 — par level/par max por producto y formato (pollo 8/20, solomillo 3/8, barril 2/6, patata 25/60)",
+  "DOM-15": "02!Comparativa Precios!L4 INDEX/MATCH sobre F3:J3 (nombres del directorio)",
+  "DOM-16": "02!Comparativa Precios!D3 «Formato de venta», E3 «Contenido (kg/L/ud)», N3 «Fecha de cotización», O3 «Vigencia hasta» y bloque oculto P4:T13 de precio normalizado",
+  "DOM-17": "02!Directorio Proveedores!A3:S3 — CIF/NIF, Nº RGSEAA, contacto de incidencias, día de pedido y de reparto, plazo, condiciones de pago, homologado + dos fechas",
+  "DOM-32": "BONUS-08!Conteo Rápido!I4 «Compras del mes (uds)» y J5 '=IF(OR($F5=\"\",$H5=\"\"),\"\",$H5+$I5-$F5)'",
+  "DOM-33": "01!…!I5 arranca en ámbar: '=IF($G5=\"\",\"\",IF($G5<$E5*1.5,MAX(0,$F5-$G5),0))'",
+  "TEC-01": "misma celda que DOM-01/DOM-02: la rotación cíclica desaparece; el mapa producto→categoría→unidad es explícito en grupo_a.py:PRODUCTOS",
+  "TEC-03": "01!Resumen Dashboard pasa de 0 fórmulas a 37 (COUNTIF/SUM por zona + SUMIF por las 10 categorías + total)",
+  "TEC-07": "02!Comparativa Precios!K4 '=IF(COUNT($P4:$T4)=0,\"\",MIN($P4:$T4))' — MIN ya no devuelve 0 sobre rango vacío",
+  "TEC-16": "02!Evaluación Proveedores!H3 «PUNTUACIÓN MEDIA (1-5)», H4 con COUNT<3 e I4 con la nota A/B/C/D",
+  "TEC-21": "01!…!I5 (ver DOM-33): el tramo ámbar propone reposición hasta el par max",
+  "TEC-24": "BONUS-08!Conteo Rápido!K5 '=IF(OR($F5=\"\",$H5=\"\"),\"\",$F5-$H5)' + L5 «% Variación»",
+  "TEC-25": "01!…!E5:F24 (ver DOM-14)",
+  "COM-02": "las 50 filas reasignadas producto a producto",
+  "COM-14": "01!Resumen Dashboard + columna Valor (€) viva",
+  "COM-18": "02!Comparativa Precios!F3:J3 traen el nombre del Directorio y L4 dice quién es el más barato",
+  "COM-28": "BONUS-08!Conteo Rápido!L5 «% Variación» + formato condicional ámbar por encima del ±20 % (L5:L84)",
+  "COM-29": "02!Evaluación Proveedores + Instrucciones!A9 con los cinco criterios reales y el nombre exacto de la pestaña",
+  "COM-31": "01!Barra!B9 «Coca-Cola» → «Refresco de cola» (Bebidas No Alcohólicas, ud)",
+  "COM-27 (parte del grupo A)": "02!Directorio Proveedores (6 fichas), 02!Condiciones Comerciales (6 filas) y BONUS-08!Conteo Rápido (50 productos) dejan de ser hojas esqueleto: hojas_esqueleto = [] en los tres ficheros",
+  "§1.8 (TEC-06)": "BONUS-08!G5 doble guarda vía motor.guarda_doble('F','E',5)",
+  "§1.9 (TEC-23)": "01!Cocina 5-44, 01!Barra/Almacén 5-34, BONUS-08 5-84; el TOTAL del BONUS-08 baja a la 86 y su SUM cubre G5:G84",
+  "§1.6": "01!Instrucciones ya no cita un «Resumen» inexistente y 02!Instrucciones usa «Directorio Proveedores» y «Evaluación Proveedores»: gate de pestañas = 0 en los tres ficheros"
+ },
+ "desviaciones_de_la_spec": [
+  {
+   "donde": "02-fichas-proveedores.xlsx:Comparativa Precios:P4:T13",
+   "spec_dice": "=IFERROR(F4/$E4,\"\")",
+   "hecho": "=IF(OR($F4=\"\",$E4=\"\",$E4=0),\"\",IFERROR($F4/$E4,\"\"))",
+   "por_que": "con F4 vacía la división NO da error: da 0. MIN sobre P:T devolvería 0 y la tabla volvería a enseñar la columna de ceros que es justo el defecto TEC-07."
+  },
+  {
+   "donde": "02-fichas-proveedores.xlsx:Comparativa Precios:L4",
+   "spec_dice": "=IFERROR(INDEX($F$3:$J$3,MATCH($K4,$P4:$T4,0)),\"\")",
+   "hecho": "=IF($K4=\"\",\"\",IFERROR(INDEX($F$3:$J$3,MATCH($K4,$P4:$T4,0)),\"\"))",
+   "por_que": "MEDIDO con pycel el 2026-08-23 en L6: con la fila sin cotizar, P:T son cinco cadenas vacías y MATCH(\"\";…;0) casa con la primera, así que la columna señalaba a «Cárnicas del Norte» como el proveedor más barato de una línea en la que nadie había cotizado. Con la guarda, L6 = \"\"."
+  },
+  {
+   "donde": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido:I4/J4/K4",
+   "spec_dice": "«Compras del mes», «Consumo», «Variación (ud)»",
+   "hecho": "«Compras del mes (uds)», «Consumo del mes (uds)», «Variación (uds)» + regla (FMT_CANT, ('(uds)',)) al principio de motor.FORMATO_POR_CABECERA",
+   "por_que": "«compras» es palabra de MONEDA en motor.FORMATO_POR_CABECERA (§1.7): sin la marca (uds) el conteo de unidades se imprimiría «40,00 €». La marca (uds) es explícita y no colisiona con «Precio/ud (€)», que no la lleva. La regla ayuda también al «Stock de seguridad (ud)» del BONUS-09 si grupo_c la usa."
+  },
+  {
+   "donde": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido:B5:E54",
+   "spec_dice": "sólo columnas nuevas y coherencia con el 01",
+   "hecho": "se precargan los MISMOS 50 productos del 01 (producto, categoría, unidad, precio de referencia)",
+   "por_que": "«coherencia con 01» sin los mismos productos es una promesa vacía: el inventario mensual cuenta exactamente el stock que lleva el diario. Además hace demostrables el consumo y la variación desde el minuto uno."
+  },
+  {
+   "donde": "scripts/productos-digitales/kit-inventario-v2_0/main.py (parseo de --solo)",
+   "spec_dice": "--",
+   "hecho": "`--solo motor,grupo_a` se normaliza a `a` (se le quita el prefijo «grupo_»)",
+   "por_que": "el comando documentado en el encargo usa «grupo_a»; sin esto main.py buscaba un módulo «grupo_grupo_a», lo declaraba ausente y daba VERDE sin haber corrido el grupo — un falso verde, el peor resultado posible de un gate."
+  }
+ ],
+ "decisiones_de_oficio": [
+  "Categoría de los aceites, vinagres, sal, especias, arroz, pasta, harina, azúcar y café: «Secos/Granos» (economato seco). La 10-taxonomía del kit no tiene una categoría de grasas.",
+  "Huevos en «Lácteos» y en «docena»: es donde los coloca el IVA del 4 % (motor.NOTA_IVA los cita expresamente) y donde están en el economato refrigerado.",
+  "Hielo en «Congelados» y en «saco»: cámara de congelación e IVA del 10 %, no el 21 % de «Otros».",
+  "Bebida de avena en «Bebidas No Alcohólicas», no en «Lácteos»: no es leche ni fiscal ni legalmente (tributa al 10 %, no al 4 %). Por eso también se renombró «Leche avena».",
+  "«Vino tinto (copa)» → «Vino tinto (botella 75 cl)»: el economato se cuenta en botellas; la copa es una unidad de venta, no de compra.",
+  "Cárnicos y pescados con par level bajo y par max corto (solomillo 3/8, gambas 3/8) frente a los secos y consumibles con par largo (patata 25/60, agua 60/150): es la diferencia entre rotación diaria y pedido semanal que pedía TEC-25.",
+  "Los 6 proveedores de ejemplo son empresas FICTICIAS con dominios ejemplo-*.es y el Nº RGSEAA enseña sólo el FORMATO (clave.número/provincia). El de limpieza lleva «No aplica (producto no alimentario)», que es lo correcto: un proveedor de químicos no está en el RGSEAA.",
+  "Las 6 evaluaciones de ejemplo cubren a propósito las cuatro notas (A 4,8 · B 3,8 y 4,2 · C 3,4 · D 2,2) para que el cliente vea la escala entera al abrir la hoja."
+ ],
+ "no_hecho_y_por_que": [
+  "No se añade total a las columnas de consumo/variación del BONUS-08: van en la unidad de cada producto y sumar kilos con litros no significa nada (DOM-32). Queda dicho en Instrucciones!A13.",
+  "No se toca el semáforo H del 01: la fórmula de la v1.1 es correcta y el color real lo pone motor.aplicar_cf (§1.2).",
+  "No se crea hoja nueva en el 02: la comparativa normalizada cabe en el propio bloque oculto P:T, y una hoja más es una pestaña más que mantener.",
+  "Nada de licencia dentro de los xlsx: §7-bis.5 lo deja en manos de John."
+ ]
+}

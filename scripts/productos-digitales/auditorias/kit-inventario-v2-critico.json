@@ -1,0 +1,151 @@
+{
+  "productId": "kit-inventario",
+  "version": "2.0",
+  "rol": "critico-de-completitud",
+  "fecha": "2026-08-24",
+  "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md",
+  "entradas_leidas": [
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-ronda2.json (verificador R2: listo=false, 1 mal_resuelto)",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-correccion.json (71 resueltos + 1 no_aplicado)",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-ref-dominio.json (RD-01..RD-29)",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-ref-excel.json (RT-01..RT-22)",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-ref-coherencia.json (RC-01..RC-21)",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-motor.json",
+    "scripts/productos-digitales/auditorias/kit-inventario-v2-grupo_a.json / grupo_b.json / grupo_c.json",
+    "scripts/productos-digitales/auditorias/kit-inventario-R1.json (91 ids DOM/TEC/COM)",
+    "scripts/productos-digitales/kit-inventario-v2-SPEC.md §8 (mapa id -> sección)"
+  ],
+  "metodo": "Copia propia dry-run en CLAUDE_SCRATCHPAD=.../propio-critico (main.py --dry-run --json, sin --solo) + una pasada parcial (--solo motor) para comprobar el gate; lectura celda a celda con openpyxl SOBRE MI PROPIA COPIA y sobre la v1.1 de producción en modo LECTURA; barrido programático reproduciendo el algoritmo de motor.aplicar_verde() para buscar HERMANOS del defecto RT-19; cruce de ids R1 (91) contra la SPEC §8 y contra los ids_R1_cubiertos de los 3 constructores; grep de las afirmaciones de copy en la capa de producto. astro-site/public/dl/kit-inventario/** NO se ha tocado (git status --short de esa ruta: vacío).",
+
+  "cruce_de_ids": {
+    "R2_refutadores_vs_correccion": {
+      "ids_en_los_3_refutadores": 72,
+      "resueltos_en_la_correccion": 71,
+      "no_aplicados": ["RC-21 (COM-20, aritmética de bonos: toca el ancla de precio, decisión de John)"],
+      "perdidos": [],
+      "inventados": [],
+      "duplicados": [],
+      "veredicto": "la suma cierra: 71 + 1 = 72, sin ids perdidos ni inventados"
+    },
+    "R1_vs_SPEC": {
+      "ids_en_kit-inventario-R1.json": 91,
+      "ids_en_la_SPEC": 91,
+      "perdidos_por_el_camino": [],
+      "veredicto": "NINGÚN id del R1 se perdió: los 91 (DOM-01..34, TEC-01..25, COM-01..32) aparecen en el mapa §8 y todos salvo los aparcados aparecen además en el cuerpo de la sección que les toca"
+    },
+    "SPEC_vs_constructores": {
+      "ids_citados_por_grupo_a": 25,
+      "ids_citados_por_grupo_b": 25,
+      "ids_citados_por_grupo_c": 25,
+      "ids_no_citados_por_ningun_constructor": 17,
+      "detalle_de_los_17": {
+        "motor_§1_(el_informe_del_motor_los_cubre_por_SECCIÓN,_no_por_id)": ["DOM-08", "DOM-22", "DOM-34", "TEC-10", "TEC-18", "TEC-22", "COM-05"],
+        "integracion_§5_(NO_hay_informe_.json_de_esa_capa_en_auditorias/)": ["COM-03", "COM-07", "COM-19", "COM-22", "COM-24", "COM-25", "COM-32"],
+        "descartados_por_John_§6": ["COM-13", "COM-20", "COM-21"]
+      },
+      "verificacion_propia_de_los_no_citados": "los 7 del motor están HECHOS y medidos en el dry-run (taxonomía única de 10, 35 DV, 31 reglas de CF, formatos, 29/38 hojas protegidas, 0 pestañas citadas inexistentes). Los 7 de integración los he comprobado a mano en el código porque no hay informe: COM-19 (10 categorías enumeradas en kit-inventario.ts:157), COM-22 (50-100 EUR/mes en :157 y :231), COM-07 (APPCC matizado en :157 y :225), COM-25 (licencia reescrita en :235), COM-24 (changelog retitulado en productos-changelog.ts:272), COM-32 (badge del hero en :104), COM-03 (copy reescrito, 0 restos de v1.1 según RC-03). Ninguno perdido."
+    }
+  },
+
+  "verificacion_en_solo_lectura_5_celdas_clave": [
+    {
+      "celda": "propio-critico/dryrun-v2/kit-inventario/05-control-mermas.xlsx!'Dashboard Mermas'!C6",
+      "medido": "value=20 · protection.locked=True · fill=00000000 (sin relleno) · hoja con protection.sheet=True",
+      "esperado": "value=20 · locked=False · fill=00E8F5E9",
+      "veredicto": "FALLA — confirma el mal_resuelto RT-19 del verificador R2"
+    },
+    {
+      "celda": "07-analisis-costes-compras.xlsx!'Dashboard KPIs'!C4 / C7 / C8",
+      "medido": "0.32 / 0.05 / 0 · locked=False · fill=00E8F5E9",
+      "esperado": "objetivos editables en verde",
+      "veredicto": "OK — es el gemelo bien resuelto (grupo_c.py:124-126 mete la hoja en SIN_VERDE_AUTO); demuestra que el mecanismo existe y sólo falta aplicarlo a 'Dashboard Mermas'"
+    },
+    {
+      "celda": "01-inventario-stock-diario.xlsx!Cocina!J5 y !K5",
+      "medido": "J5=6.5 locked=False fill=00E8F5E9 fmt='#,##0.00 €' · K5='=IFERROR(IF(OR($G5=\"\",$J5=\"\"),\"\",$G5*$J5),\"\")' locked=True",
+      "esperado": "precio/ud verde editable + valoración calculada con IFERROR (DOM-09/TEC-03/COM-14)",
+      "veredicto": "OK"
+    },
+    {
+      "celda": "03-pedidos-compra.xlsx!'Pedido Actual'!H9 (+H40/H41/H42)",
+      "medido": "H9='=IF($B9=\"\",\"\",IFERROR(VLOOKUP($B9,Listas!$E$2:$F$20,2,FALSE),IF($C9=\"\",\"\",IFERROR(VLOOKUP($C9,Listas!$A$2:$B$11,2,FALSE),\"\"))))' · H40='=SUM($G$9:$G$38)' · H41='=SUM($I$9:$I$38)-$H$40' · H42='=$H$40+$H$41'",
+      "esperado": "IVA por producto y, si no, por categoría; totales BASE/CUOTA/TOTAL bajo la columna correcta (DOM-07/TEC-13/TEC-20/COM-16)",
+      "veredicto": "OK — de hecho va MÁS allá de la SPEC (§3 sólo pedía el VLOOKUP por categoría; el implementado busca primero el producto). Coherente con el changelog, que ya lo cuenta así (productos-changelog.ts, entrada de Pedidos de Compra)"
+    },
+    {
+      "celda": "BONUS-09-calculadora-punto-pedido.xlsx!Calculadora!M4 (con K4)",
+      "medido": "M4='=IFERROR(IF(OR($L4=\"\",$J4=\"\"),\"\",MIN($L4,ROUND($D4*$J4*Parámetros!$D$12,0),IF($K4=\"\",$L4,$K4))),\"\")' · K4=20 verde editable",
+      "esperado": "cantidad sugerida capada por vida útil y por par max, parámetros en celda (DOM-06/DOM-22/TEC-02)",
+      "veredicto": "OK — el MIN incluye el par max y el factor de vida útil sale de Parámetros!$D$12, no de un literal"
+    },
+    {
+      "celda": "06-fifo-caducidades.xlsx!'Control FIFO'!L5 + sus 5 reglas de CF",
+      "medido": "5 estados reales (CADUCADO — RETIRAR / REVISAR (consumo preferente) / URGENTE / PRÓXIMO / OK) y 5 reglas containsText sobre L5:L54; la v1.1 de producción tenía 3 (URGENTE/PRONTO/OK) y 0 reglas",
+      "esperado": "cuarto y quinto estado + semáforo real (DOM-13/TEC-11)",
+      "veredicto": "OK — valida la frase del changelog «semáforo de 5 estados (antes 3)»"
+    }
+  ],
+
+  "barrido_de_hermanos_del_RT-19": {
+    "metodo": "reproducción del algoritmo de motor.aplicar_verde() sobre los 9 xlsx generados: por cada bloque de motor.BLOQUES que NO esté en SIN_VERDE_AUTO, columnas que mezclan fórmula y constante dentro del rango de datos (son las que el barrido global marca como «calculadas» y despinta)",
+    "candidatos_encontrados": 6,
+    "unico_defecto_real": "05-control-mermas.xlsx!'Dashboard Mermas'!C6 (Objetivo = 20). Los otros 5 son texto o subcabecera, no parámetros del cliente: 'Dashboard Mermas'!C7 y !C8 («Atácala/Atácalo en el plan»), !D8 (nota), y 01!'Resumen Dashboard'!B9/!C9 (rótulos «Valor (€)» / «% del Total»)",
+    "seguridad_del_fix": "en 'Dashboard Mermas' las TRES celdas que deben quedar verdes están marcadas a mano en grupo_b.py (C6 en :1550, B10 en :1584, B11 en :1595), así que meter la hoja en SIN_VERDE_AUTO no le quita el verde a nada; motor.proteger() (motor.py:1333-1363) desbloquea por es_verde(), no por SIN_VERDE_AUTO, así que C6 quedará editable"
+  },
+
+  "gates_reproducidos_por_mi": {
+    "dry_run_completo_exit": 0,
+    "formulas_nuevas_por_fichero": "333 / 175 / 116 / 247 / 167 / 264 / 153 / 321 / 150 — coincide EXACTO con la tabla del corrector y con la del verificador R2",
+    "idempotencia_diferencias": 0,
+    "data_only": "con valor 405 · \"\" verificada con pycel 1566 · sin pycel 0 · no evaluables 0 · fallos 0",
+    "censo_entregables_fail": "9 ficheros, 0 defectos",
+    "gate_1_6_pestanas": "0 pestañas citadas inexistentes",
+    "pasada_parcial_solo_motor": "EXIT 1 con «gate §1.6: 6 ficheros citan pestañas inexistentes» + «pasada PARCIAL … no se puede dar por bueno» (el default de --solo es motor,a,b,c: main.py:517)",
+    "guardia_de_produccion": "main.py:525-530 aborta sin --dry-run si KIT_INVENTARIO_APPLY!=1, ANTES de tocar nada (no lo he ejecutado: leerlo basta y probarlo sería escribir en producción)",
+    "produccion_intacta": "git status --short astro-site/public/dl/kit-inventario/ -> vacío"
+  },
+
+  "listo_para_real": false,
+
+  "bloqueos": [
+    "BLOQUEO 1 (alto · entregable) — astro-site/public/dl/kit-inventario/05-control-mermas.xlsx : hoja 'Dashboard Mermas' : celda C6. Medido en mi copia dry-run: value=20, protection.locked=True, fill=00000000, sobre una hoja con protection.sheet=True. El cliente NO puede cambiar su objetivo de «Nº de incidencias» sin desproteger la hoja, justo lo contrario de lo que promete src/data/productos-changelog.ts:285 («objetivos que puedes cambiar tú») y de lo que RT-19 daba por resuelto. Causa raíz: grupo_b.py:1550-1551 la pinta bien, pero motor.aplicar_verde() (motor.py:1274-1327) decide por COLUMNA ENTERA dentro del bloque ('Dashboard Mermas', 3, 4, 8, 17) de motor.py:347 — C4 y C5 son fórmulas, así que marca la columna C como calculada y le quita el relleno a C6 (motor.py:1313-1318); motor.proteger() corre después y la bloquea. B10/B11 se salvan sólo porque están en las filas 10-11, fuera del rango 4-8. FIX (una línea, patrón ya usado dos veces en el propio kit): en grupo_b.py:106 cambiar `motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos'})` por `... | {'Historial Pedidos', 'Dashboard Mermas'})`. Verificación posterior: C6 debe salir value=20, locked=False, fill=00E8F5E9.",
+    "BLOQUEO 2 (medio · capa de producto, DOS ficheros) — el absoluto «sin suscripcion ni limite de productos» sigue vivo en astro-site/src/data/productos/kits/kit-inventario.ts:231 (faqs, «¿En que se diferencia del software de inventario?») Y ADEMÁS en src/components/kit-inventario/FaqAccordion.tsx:20, que el verificador R2 no vio (sólo citó el .ts). Es la misma afirmación que RC-12 corrigió en la tarjeta de WhySection de la misma página — kit-inventario.ts:157 ya dice la verdad medida: «Vienen preparadas 100 referencias de inventario, 100 lineas de merma al mes, 50 lotes de FIFO y 30 lineas de pedido; ampliables desprotegiendo la hoja». Dos frases de la misma página se contradicen, y la del FAQ es la que lee el cliente que ya pagó. FIX: sustituir «sin suscripcion ni limite de productos» por «sin suscripcion» (o «sin usuarios que pagar») en las DOS ubicaciones, en el mismo commit.",
+    "AVISO (no bloqueante, decisión de John, ya escalado por el corrector) — RC-21/COM-20: bonus.subtitle sigue diciendo «— valorados en 18 EUR» frente al «valor total 49 / Ahorra 35» de la misma pantalla; y RC-19: el badge del hero se publicó con la coletilla «por lo que vemos auditando cocinas» (astro-site/src/data/productos/kits/kit-inventario.ts:104 y src/components/kit-inventario/HeroSection.tsx:71), que la SPEC §7-bis.6 no pedía. Ninguna de las dos impide aplicar.",
+    "AVISO (no bloqueante, higiene documental) — la tabla §8 de kit-inventario-v2-SPEC.md tiene los números de §1 desplazados +1 respecto al cuerpo: DOM-08/TEC-05/COM-05 aparecen como §1.7 y el cuerpo los trata en §1.6; TEC-18 como §1.8 vs §1.7; TEC-06 como §1.9 vs §1.8; TEC-23 como §1.10 vs §1.9; COM-27 como §1.5 vs §1.4; TEC-22 como §1.3 vs §1.2. No se ha perdido ningún id (91/91), pero quien siga el mapa a ciegas lee la sección equivocada.",
+    "AVISO (no bloqueante, trazabilidad) — de las 5 capas de la SPEC sólo hay informe .json de 4 (motor, grupo_a, grupo_b, grupo_c). NO existe auditorias/kit-inventario-v2-integracion.json para la §5, que es la que tocó los 11 ficheros de landing/changelog/SPA. He verificado sus 7 ids a mano (ver cruce_de_ids.SPEC_vs_constructores), pero la capa que toca el dinero es la única sin informe propio."
+  ],
+
+  "cifras_capa_producto": [
+    "9 ficheros xlsx, los MISMOS 9 nombres que la v1.1 (0 renombrados, 0 eliminados) — las 9 claves de descarga de netlify/functions/get-download-urls.ts siguen siendo válidas y los emails ya enviados no se rompen. Medido: diff de nombres entre astro-site/public/dl/kit-inventario/ y la copia dry-run.",
+    "Hojas: 35 → 38 (+3 nuevas, 0 eliminadas): 03-pedidos-compra.xlsx!Proveedores, 03!Listas y 07-analisis-costes-compras.xlsx!'Evolución Mensual'. Medido con openpyxl sobre los dos juegos.",
+    "Fórmulas: 537 → 1.926 (×3,6; +1.389). Por fichero (v2.0): 333 / 175 / 116 / 247 / 167 / 264 / 153 / 321 / 150.",
+    "04-recepcion-mercancias.xlsx pasa de 0 fórmulas a 247: era el único fichero del kit sin una sola fórmula (la landing prometía «9 plantillas con fórmulas», COM-06).",
+    "Desplegables (validación de datos): 4 → 35 listas.",
+    "Formato condicional REAL: 0 → 31 reglas. En la v1.1 el «semáforo» era un emoji dentro del texto, sin una sola regla de color en las 35 hojas.",
+    "Protección: 0 → 29 de las 38 hojas protegidas SIN contraseña. Las 9 que quedan abiertas son las 9 hojas «Instrucciones» (documentación, 0 entradas), a propósito.",
+    "5.978 celdas verdes editables (E8F5E9) repartidas por los 9 ficheros: es la superficie que el cliente puede escribir sin desproteger nada.",
+    "Taxonomía única: 10 categorías idénticas en los 9 ficheros (Cárnicos, Pescados, Lácteos, Verduras/Frutas, Secos/Granos, Congelados, Bebidas Alcohólicas, Bebidas No Alcohólicas, Limpieza, Otros), medidas en 07!'Coste por Categoría'!A4:A13. Antes había tres nomenclaturas distintas y el motor normalizó 22 alias («Verduras»→«Verduras/Frutas», «Bebidas»→«Bebidas No Alcohólicas», «Varios»→«Otros», «Secos»→«Secos/Granos»).",
+    "Mapa de almacén: 11 zonas (antes 9), con Huevera y Almacén de químicos separados del economato. Medido en 06!'Mapa Almacén'!A4:A14.",
+    "Capacidad preparada, medida fila a fila por el relleno verde (es EXACTAMENTE lo que dice la landing en kit-inventario.ts:157): 100 referencias de inventario (40 Cocina + 30 Barra + 30 Almacén), 100 líneas de merma al mes, 80 líneas de conteo rápido (BONUS-08), 50 lotes de FIFO, 40 recepciones y 30 líneas de pedido.",
+    "FIFO: semáforo de 5 estados (CADUCADO — RETIRAR / REVISAR (consumo preferente) / URGENTE / PRÓXIMO / OK) frente a los 3 de la v1.1 (URGENTE / PRONTO / OK). Verificado en 06!'Control FIFO'!L5 y sus 5 reglas de CF, y contra el fichero de producción.",
+    "Cifra INTERNA, no publicable: la verificación data_only del dry-run da 405 fórmulas con valor precalculado y 1.566 con «» verificado por pycel, 0 fallos — es un gate, no un argumento de venta.",
+    "Precio y comparativa que ya están en la página y siguen siendo coherentes: 14 EUR de pago único frente a los «50-100 EUR/mes» del software de inventario (kit-inventario.ts:157 y :231)."
+  ],
+
+  "orden_ejecucion_real": [
+    "0. THERMAL: `istats cpu temp` antes de CADA python; si >= 60 °C, `sleep 90` y repetir. Un python cada vez, sin paralelismo, sin builds locales ni Playwright.",
+    "1. FIX del bloqueo 1 (código del kit) — en /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-inventario-v2_0/grupo_b.py línea 106, sustituir `motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos'})` por `motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos', 'Dashboard Mermas'})`.",
+    "2. FIX del bloqueo 2 (copy, DOS ficheros) — quitar «ni limite de productos» en /Users/johnguerrero/chefpro-modernize/astro-site/src/data/productos/kits/kit-inventario.ts:231 y en /Users/johnguerrero/chefpro-modernize/src/components/kit-inventario/FaqAccordion.tsx:20 (las dos frases son idénticas: deben quedar idénticas después).",
+    "3. DRY-RUN de comprobación (NO escribe en producción): `istats cpu temp && CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/pre-apply python3 /Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --json /private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-inv-v2/pre-apply.json` → exige exit 0, idempotencia 0, cache 0 fallos, censo 0 defectos, 0 pestañas.",
+    "4. RE-VERIFICAR LA CELDA DEL BLOQUEO 1 en esa copia: `python3 -c \"import openpyxl; ws = openpyxl.load_workbook('/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/pre-apply/dryrun-v2/kit-inventario/05-control-mermas.xlsx')['Dashboard Mermas']; c = ws['C6']; print(c.value, c.protection.locked, c.fill.start_color.rgb)\"` → tiene que imprimir `20 False 00E8F5E9`. Si sigue diciendo `True 00000000`, PARAR: el fix no ha entrado.",
+    "5. APLICAR EN REAL (única orden que escribe en astro-site/public/dl/kit-inventario/; deja respaldo con marca de tiempo en el scratchpad): `istats cpu temp && KIT_INVENTARIO_APPLY=1 CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --json scripts/productos-digitales/auditorias/kit-inventario-v2-real.json` → exit 0. Anotar la ruta del respaldo que imprime al final; NO borrarla hasta el paso 10.",
+    "6. CENSO: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/censo-entregables.py --only kit-inventario --fail --quiet` → 0 defectos.",
+    "7. GATE OFFLINE: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/gate-flujo-postpago.py --offline --only kit-inventario` → exit 0 (cruza zona-app / verify-purchase / resend-access / get-download-urls / dashboard y comprueba que los 9 xlsx existen en disco y están trackeados).",
+    "8. COMMIT (lo hace el orquestador, nunca el subagente): `cd /Users/johnguerrero/chefpro-modernize && git add astro-site/public/dl/kit-inventario/ scripts/productos-digitales/kit-inventario-v2_0/ scripts/productos-digitales/auditorias/kit-inventario-v2-*.json astro-site/src/data/productos/kits/kit-inventario.ts astro-site/src/data/productos/kits/types.ts astro-site/src/components/pages/KitExcelLandingPage.astro src/data/productos-changelog.ts src/pages/KitInventario.tsx src/pages/KitInventarioDashboard.tsx src/components/kit-inventario/ && git commit -m \"feat(kit-inventario): v2.0 — 9 xlsx reconstruidos (1.926 formulas, 31 reglas de color, 38 hojas, 29 protegidas) + landing/changelog al dia\" && git push`. Los 9 xlsx TIENEN que ir en el mismo commit que la landing: si no, la página anuncia una v2.0 que no se descarga.",
+    "9. DEPLOY: esperar a que Netlify termine el build desde `main` (build EN LA NUBE, nunca `npm run build` local). Sin deploy verde el paso 10 mide la v1.1.",
+    "10. GATE LIVE: `istats cpu temp && cd /Users/johnguerrero/chefpro-modernize && python3 scripts/productos-digitales/gate-flujo-postpago.py --only kit-inventario` (sin --offline) → los 9 /dl/… deben servir 200 con content-type binario y el MISMO tamaño que en disco, y landing/-access/-library 200. Sólo entonces borrar el respaldo del paso 5.",
+    "11. NO ejecutar en ningún momento `main.py --solo <algo>` para una pasada de producción: el resultado sería un kit a medias. El default (`motor,a,b,c`) ya construye el kit entero, y una pasada parcial sale con exit 1 a propósito (comprobado: `--solo motor` → exit 1)."
+  ],
+
+  "recomendacion": "NO aplicar todavía. Faltan dos arreglos que suman una línea de Python y dos frases de copy, y los dos están medidos con celda y número de línea: (1) 05-control-mermas.xlsx!'Dashboard Mermas'!C6 sale bloqueada y sin verde —el cliente no puede tocar el objetivo que el changelog le promete— y se arregla en grupo_b.py:106 metiendo 'Dashboard Mermas' en SIN_VERDE_AUTO, el mismo patrón que el propio kit ya usa para 'Historial Pedidos' y 'Dashboard KPIs'; (2) el absoluto «sin límite de productos» sigue en DOS sitios (kit-inventario.ts:231 y FaqAccordion.tsx:20 — el verificador R2 sólo vio el primero) contradiciendo a la propia página, que tres tarjetas más arriba ya declara las 100/100/50/30 filas medidas. Todo lo demás está verificado de forma independiente sobre mi propia copia: 70 de los 71 ids resueltos se sostienen, los 72 ids de los refutadores cierran sin pérdidas, los 91 del R1 están mapeados en la SPEC, y los cinco gates (exit 0, idempotencia 0, cache 0 fallos, censo 0 defectos, 0 pestañas fantasma) los he reproducido con las mismas cifras exactas. Hecho el fix, correr el paso 3, comprobar la celda del paso 4 y encadenar 5→10 sin saltarse el gate LIVE."
+}

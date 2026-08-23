@@ -1,0 +1,75 @@
+{
+  "productId": "kit-inventario",
+  "version": "2.0",
+  "rol": "verificador-ronda2",
+  "fecha": "2026-08-24",
+  "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md",
+  "corrector_origen": "scripts/productos-digitales/auditorias/kit-inventario-v2-correccion.json",
+  "refutadores_origen": [
+    "auditorias/kit-inventario-v2-ref-dominio.json (29 · RD-01..RD-29)",
+    "auditorias/kit-inventario-v2-ref-excel.json (22 · RT-01..RT-22)",
+    "auditorias/kit-inventario-v2-ref-coherencia.json (21 · RC-01..RC-21)"
+  ],
+  "metodo": "Copia propia dry-run (CLAUDE_SCRATCHPAD=.../propio-verificador2[-full], sin tocar astro-site/public/dl/kit-inventario/). Cruce id a id de los 72 hallazgos de entrada contra el .json de corrección y contra la copia regenerada: openpyxl celda a celda (valores, fórmulas, DV, CF, protección, fill) + pycel parcheando copias para reproducir cada escenario de refutación (familia sin límite, cero tecleado, precio cero, registro vacío, línea sin contar) + grep de control sobre los 7 componentes SPA + tsc + lectura de main.py/motor.py/grupo_b.py/grupo_c.py para el origen de un defecto.",
+  "ids_entrada": 72,
+  "verificados_ok": 70,
+  "mal_resueltos": [
+    {
+      "id": "RT-19",
+      "evidencia": "05-control-mermas.xlsx!'Dashboard Mermas'!C6: value=20, protection.locked=TRUE, fill=00000000 (sin relleno) — NO 'verde y desbloqueada' como afirma la corrección. La mitad de 07 sí está bien: 'Dashboard KPIs'!C4/C7/C8 = 0.32/0.05/0, locked=False, fill=00E8F5E9. Root cause con línea: grupo_b.py:1550 llama `_verde(ws['C6'], motor.FMT_ENT)` y grupo_b.py:1551 `ws['C6']=20`, correcto en el momento en que se escribe. Pero el post-proceso global `motor.aplicar_verde()` (motor.py:1274-1322) recorre cada BLOQUE por COLUMNA ENTERA: el bloque de 'Dashboard Mermas' es `('Dashboard Mermas', 3, 4, 8, 17)` (motor.py:347) y como `ws.max_row`=13 no supera `r1_v2`=17, `_rango_filas()` (motor.py:907-922) resuelve r0=4/r1=8 — el mismo bloque que C4 y C5 (ambas FÓRMULAS). Al ver una fórmula en la columna C dentro de ese rango, `aplicar_verde` marca la columna entera como 'calculada' (motor.py:1310) y a cualquier celda verde de esa columna (C6) le QUITA el relleno (motor.py:1315-1319, «se le devuelve el relleno de banda de la columna A»). `motor.proteger()` corre después y bloquea C6 porque `es_verde(C6)` ya da False. Es EXACTAMENTE el defecto que el propio kit ya documenta y resuelve dos veces en esta misma ronda —grupo_c.py:113-126 lo explica letra por letra para 'Dashboard KPIs' y lo saca de la trampa metiéndolo en `motor.SIN_VERDE_AUTO`; grupo_b.py:104-106 hace lo mismo para 'Historial Pedidos'— pero 'Dashboard Mermas' nunca se añadió a esa lista de exclusión. B10/B11 (las otras dos celdas verdes de la misma hoja) se libran solo porque están en las filas 10-11, FUERA del rango 4-8 que examina este bloque, no porque el mecanismo esté bien aplicado. Consecuencia real: el cliente no puede cambiar su propio objetivo de «Nº de incidencias» sin desproteger la hoja, que es justo lo que el changelog anuncia en línea 285 de src/data/productos-changelog.ts ('objetivos que puedes cambiar tú') y lo que RT-19 decía haber arreglado.",
+      "fix_sugerido": "Una línea en grupo_b.py, mismo patrón que la línea 106: `motor.SIN_VERDE_AUTO = frozenset(set(motor.SIN_VERDE_AUTO) | {'Historial Pedidos', 'Dashboard Mermas'})`, y marcar C6 a mano con `marcar_verde`/`_verde` como ya se hace (el código ya lo intenta, solo falta blindarlo del barrido global)."
+    }
+  ],
+  "no_aplicados_injustificados": [],
+  "gates": {
+    "dryrun_exit": 0,
+    "idempotencia": 0,
+    "censo_exit": 0,
+    "cache_fallos": 0,
+    "ts_diagnosticos": 0
+  },
+  "gates_detalle": {
+    "dryrun_completo": "CLAUDE_SCRATCHPAD=propio-verificador2[-full] main.py --dry-run --json (sin --solo, default motor,a,b,c) -> exit 0. Fórmulas nuevas (inject_cache): 333/175/116/247/167/264/153/321/150 -- coincide EXACTO con la tabla de verificacion_final del corrector.",
+      "idempotencia": "0 diferencias 1.ª vs 2.ª pasada (reproducido de forma independiente sobre mi propio clon).",
+    "cache_fallos": "con valor: 405 · \"\" verificada con pycel: 1566 · sin pycel: 0 · no evaluables: 0 · fallos: 0 (reproducido).",
+    "censo_exit": "9 ficheros censados, 0 defectos (--fail) (reproducido).",
+    "gate_1_6_pestanas": "0 pestañas citadas inexistentes en la pasada completa (reproducido).",
+    "pasada_parcial_RD29_RC11": "CLAUDE_SCRATCHPAD=propio-verificador2 main.py --dry-run --solo motor --json ... -> EXIT REAL=1 (capturado sin el pipe que engañaba al primer intento), con 'gate §1.6: 6 ficheros citan pestañas inexistentes' y 'pasada PARCIAL: ... El resultado NO es la v2.0 y no se puede dar por bueno.' Confirma RD-29/RC-11: el default de --solo es ahora 'motor,a,b,c' (main.py:517) y el gate §1.6 siempre suma a fallos (main.py:655-665).",
+    "typecheck_spa": "npx tsc --noEmit (raíz, SPA) -> exit 0.",
+    "typecheck_astro": "cd astro-site && npx tsc --noEmit -> exit 2 GLOBAL por errores PRE-EXISTENTES y ajenos (import.meta.env en 5 páginas, JSON locales sin resolveJsonModule, un asset .jpg) -- 0 errores en KitExcelLandingPage.astro, kit-inventario.ts o types.ts. Coincide con lo que el corrector afirma literalmente ('sin errores en los ficheros tocados'), no con un exit 0 global que nunca reclamó.",
+    "produccion_intacta": "git status --short astro-site/public/dl/kit-inventario/ -> vacío. Los 10 ficheros de código tocados coinciden exactamente con ficheros_codigo_tocados del corrector; scripts/productos-digitales/kit-inventario-v2_0/ es directorio nuevo sin trackear (esperado)."
+  },
+  "verificaciones_representativas": {
+    "pycel_reproducido_con_exito": [
+      "RT-01: Charcutería (familia sin límite) a 18 °C -> '⚠ FAMILIA SIN LÍMITE' (antes CONFORME)",
+      "RD-06/RT-15: Pescado fresco a -20 °C -> '✗ RECHAZAR (frío)'",
+      "RD-06/RT-14: Congelados a -16 °C -> '✓ CONFORME' (tolerancia de recepción)",
+      "RD-06: Carne picada a 6 °C -> '✗ RECHAZAR (calor)'; a 2 °C -> '✓ CONFORME'",
+      "RT-02: comparativa 02 con un 0 tecleado en un proveedor -> excluido del MIN, gana el proveedor real (5,50 €, no 0,00 €)",
+      "RT-03: EOQ (BONUS-09) con precio 0 y con Parámetros!D5=0 -> '' en las tres columnas, sin #¡DIV/0!",
+      "RT-04: dashboard mermas con registro vacío -> '— sin mermas registradas —' en B7 y B8",
+      "RT-05: BONUS-08 % variación con línea sin contar -> '' (antes -100%)",
+      "RD-02: BONUS-09!H4:H11 (punto de pedido) = 8/3/4/24/25/10/10/2, exactamente los par level de 01 (evaluado con pycel, no solo estructura)",
+      "RD-22: BONUS-09!M4:M11 (cantidad sugerida) nunca supera K4:K11 (par max): 11/20, 6/8, 4/10, 60/60, 60/60, 25/25, 25/25, 6/6"
+    ],
+    "openpyxl_confirmado": [
+      "RD-01/RC-01/RC-07: un único juego de 6 proveedores '(ejemplo)' en 02, 03 (Proveedores + Historial), 04, 07 y BONUS-09!Calculadora columna O",
+      "RD-03: los 3 pares recepción/incidencia del 04 narran una sola historia (mismo albarán, mismo importe derivado del precio real)",
+      "RD-04/RD-05/RD-23: huevos en 'Otros', zona 'Huevera' y zona 'Almacén de químicos' añadidas (11 zonas), columna 'Categoría (kit)'+'Familia sugerida' en 04",
+      "RD-07/RT-21: 'Control FIFO' sembrado con 6 lotes",
+      "RD-08/RT-11: Top 5 movido a L26:M31 (fuera del rango 4-23), A2 ya no manda ordenar",
+      "RD-09/RT-04, RD-12, RD-13/RT-06, RD-14, RD-19, RD-20, RD-25, RD-26, RD-27, RD-28/RT-20, RT-08, RT-09/RT-10, RT-12, RT-13/RC-14, RC-04, RC-18: confirmados celda a celda contra la evidencia citada",
+      "RT-17 (main.py verificar_cache): código lee exactamente como describe -- exime solo COUNTA/MODE/PMT/IRR, todo lo demás se pregunta a pycel",
+      "RC-03: grep de las 9 frases v1.1 sobre los 7 componentes SPA + KitInventario.tsx -> 0 coincidencias"
+    ]
+  },
+  "hallazgos_nuevos": [
+    {
+      "severidad": "media",
+      "donde": "astro-site/src/data/productos/kits/kit-inventario.ts:231 (faqs[3].a, '¿En que se diferencia del software de inventario?') vs why.reasons[3].desc:157",
+      "hallazgo": "RC-12 corrigió el absoluto «sin límite de productos» en la tarjeta WhySection ('...por un pago unico y sin usuarios que pagar. Vienen preparadas 100 referencias...') pero la MISMA página repite el absoluto sin corregir en el acordeón de FAQ, dos scrolls más abajo: 'Este kit cuesta 14 EUR, pago unico, sin suscripcion ni limite de productos.' No entra en el FAQPage indexable (schema.faqs no incluye esta pregunta), pero sí es lo primero que lee un cliente que ya pagó y busca en la FAQ la diferencia con el software de suscripción -- la sección que el propio RC-12 identificó como la que 'el primer restaurante grande refuta'. Simula el mismo defecto que RC-12 cerró, en una segunda ubicación que nadie miró."
+    }
+  ],
+  "listo": false,
+  "motivo": "70 de los 71 IDs marcados como resueltos se sostienen con verificación directa (celda, fórmula evaluada con pycel, o grep/tsc de código): el kit generado por defecto (`main.py --dry-run`, sin --solo) reproduce exactamente la tabla de fórmulas nuevas del corrector, exit 0, idempotencia 0, cache 0 fallos, censo 0 defectos, gate §1.6 0 pestañas, la pasada parcial (`--solo motor`) da ahora exit 1 real como debía, y los escenarios adversariales de los 5 hallazgos altos de la lente Excel (familia sin límite, cotización a 0, EOQ con precio 0, dashboard de mermas vacío, línea sin contar en BONUS-08) devuelven el resultado corregido al reproducirlos con pycel sobre copias propias. Pero RT-19 -- 'los objetivos que eran literales bloqueados pasan a NÚMEROS en celda verde... el nº de incidencias del 05' -- está mal resuelto para el fichero 05: C6 sigue bloqueada y sin relleno verde en el kit que realmente se genera, porque el post-proceso global `aplicar_verde()` la desprotege por columna (C4/C5 llevan fórmula) y nadie añadió 'Dashboard Mermas' a `SIN_VERDE_AUTO`, el mismo mecanismo que sí se aplicó correctamente para 'Dashboard KPIs' (07) y 'Historial Pedidos' (03) en esta misma ronda. Es un defecto real, de una línea, con causa raíz identificada y ya resuelto dos veces en el propio código para otras hojas -- pero sigue vivo para esta. Sumado a la FAQ que repite el absoluto que RC-12 ya había corregido en otro sitio de la misma página, el criterio de cierre (0 mal_resueltos) no se cumple todavía."
+}

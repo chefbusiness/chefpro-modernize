@@ -47,6 +47,14 @@ export interface KitExcelReview {
 export interface KitExcelFaq {
   q: string;
   a: string;
+  /**
+   * Sólo para la FAQ ON-PAGE (el acordeón): misma respuesta con enlaces
+   * internos. El campo `a` se pinta como TEXTO PLANO y es el que alimenta el
+   * `FAQPage` de schema.org, así que el markup NUNCA va ahí — se escaparía
+   * literal en la página y ensuciaría el rich result. Mismo patrón que
+   * `src/pages/faq.astro`.
+   */
+  aHtml?: string;
 }
 
 export interface KitExcelTemplateItem {

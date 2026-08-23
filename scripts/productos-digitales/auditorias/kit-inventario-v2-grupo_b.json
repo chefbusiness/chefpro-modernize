@@ -1,0 +1,453 @@
+{
+ "rol": "grupo_b",
+ "producto": "kit-inventario",
+ "version": "2.0",
+ "fecha": "2026-08-23T22:28:50",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md §3 (+ §6 descartes, §7-bis decisiones)",
+ "ficheros_tocados": [
+  "03-pedidos-compra.xlsx",
+  "04-recepcion-mercancias.xlsx",
+  "05-control-mermas.xlsx"
+ ],
+ "codigo": "scripts/productos-digitales/kit-inventario-v2_0/grupo_b.py",
+ "contrato_con_main": {
+  "FICHEROS": [
+   "03-pedidos-compra.xlsx",
+   "04-recepcion-mercancias.xlsx",
+   "05-control-mermas.xlsx"
+  ],
+  "pre(wb, fname, informe)": "sólo 03: inserta la columna «Categoría» en Pedido Actual!C (antes de que el motor fije la DV de C)",
+  "post(wb, fname, informe, registro)": "todo lo demás; registra cada fórmula para la verificación data_only de main.py",
+  "demos(carpeta, origen)": "devuelve 5 bloques, incluido `grupo_b_fallos` (lista vacía = verde)",
+  "PROPIOS": "no se usa: los tres ficheros pasan por motor.aplicar y motor.cerrar"
+ },
+ "gates": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_b python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo motor,grupo_b --json <scratch>/kit-inv-v2/grupo_b.json",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "data_only": {
+   "con_valor": 94,
+   "vacias_por_diseno": 385,
+   "sin_pycel": 0
+  },
+  "data_only_fallos": [],
+  "censo_entregables_exit": 0,
+  "pestanas_citadas_inexistentes_en_mis_ficheros": {},
+  "pestanas_citadas_inexistentes_de_otros_grupos": [
+   "01-inventario-stock-diario.xlsx",
+   "02-fichas-proveedores.xlsx",
+   "06-fifo-caducidades.xlsx",
+   "07-analisis-costes-compras.xlsx"
+  ],
+  "inject_cache": [
+   {
+    "fichero": "03-pedidos-compra.xlsx",
+    "salida": "03-pedidos-compra.xlsx: formulas=117 cache_inyectado=25 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-recepcion-mercancias.xlsx",
+    "salida": "04-recepcion-mercancias.xlsx: formulas=126 cache_inyectado=15 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-control-mermas.xlsx",
+    "salida": "05-control-mermas.xlsx: formulas=167 cache_inyectado=55 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "proteccion_fallos": [],
+  "hojas_esqueleto_restantes": {
+   "03-pedidos-compra.xlsx": [],
+   "04-recepcion-mercancias.xlsx": [],
+   "05-control-mermas.xlsx": []
+  },
+  "demos_propias_fallos": [],
+  "cruce_con_grupo_a": "«--solo motor,grupo_a,grupo_b» también sale TODO VERDE (idempotencia 0, censo 0, cache 0): las dos constantes del motor que este módulo reescribe no interfieren con el grupo A"
+ },
+ "cambios_por_fichero": {
+  "03-pedidos-compra.xlsx": [
+   "03:Pedido Actual!C: columna «Categoría» insertada; el IVA de cada línea sale de ella (DOM-07)",
+   "03:Listas: hoja creada (§1.3)",
+   "03:Pedido Actual: 10 líneas nuevas (20 → 30)",
+   "03:Pedido Actual: IVA por línea desde la categoría, doble guarda en el subtotal, totales en H40:H42 y desglose por tipo en A45:D48 (DOM-07/DOM-18/TEC-13/TEC-20/COM-16)",
+   "03:Proveedores: hoja nueva VISIBLE, 20 filas y 6 de ejemplo (§1.6, §7-bis.2, DOM-19/COM-17)",
+   "03:Historial Pedidos: 40 filas, fila 4 enlazada al pedido en curso (E4/F4/G4 = H40/H41/H42), DV de estado, 3 filas de ejemplo y total del periodo (DOM-18/§1.4)",
+   "03:Instrucciones: reescritas; retirada la promesa de la pestaña Imprimible (§1.6) y corregido el nombre de Historial Pedidos; ancla de versión en A14",
+   "03-pedidos-compra.xlsx: 214 celdas reformateadas (§1.7)",
+   "03-pedidos-compra.xlsx: 310 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+   "03-pedidos-compra.xlsx:Pedido Actual!C9:C38: DV inline (10 valores)",
+   "03-pedidos-compra.xlsx:Pedido Actual!D9:D38: DV inline (10 valores)",
+   "Pedido Actual: protegida sin contraseña (158 celdas verdes editables)",
+   "Proveedores: protegida sin contraseña (160 celdas verdes editables)",
+   "Historial Pedidos: protegida sin contraseña (353 celdas verdes editables)",
+   "Instrucciones!A14:A16: nota de desprotección + bio anclada + versión 2.0",
+   "03-pedidos-compra.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+  ],
+  "04-recepcion-mercancias.xlsx": [
+   "04:Verificación Temperaturas: 6 familias de texto → 13 familias con umbral NUMÉRICO y base normativa (DOM-05/COM-08); la carne picada baja de 7 °C a 2 °C",
+   "04:Control Recepción: 0 fórmulas → 3 columnas calculadas (I diferencia, L umbral por familia, M conforme) + lote y albarán + resumen; el rojo lo pone el CF del motor sobre K4:K43 y M4:M43 (DOM-03/04/20/21, TEC-04/17, COM-04)",
+   "04:Registro Incidencias: nº de albarán, importe reclamado y abono recibido, DV de tipo y de estado, 3 ejemplos y totales con el pendiente de abono (DOM-20/§1.4)",
+   "04:Instrucciones: la línea del rojo automático pasa a ser CIERTA (COM-04); ancla de versión en A13",
+   "04-recepcion-mercancias.xlsx: 125 celdas reformateadas (§1.7)",
+   "04-recepcion-mercancias.xlsx: 780 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+   "04-recepcion-mercancias.xlsx:Control Recepción!M4:M43: 2 regla(s) de formato condicional",
+   "04-recepcion-mercancias.xlsx:Control Recepción!K4:K43: 1 regla(s) de formato condicional",
+   "Control Recepción: protegida sin contraseña (560 celdas verdes editables)",
+   "Registro Incidencias: protegida sin contraseña (220 celdas verdes editables)",
+   "Instrucciones!A13:A15: nota de desprotección + bio anclada + versión 2.0",
+   "04-recepcion-mercancias.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+  ],
+  "05-control-mermas.xlsx": [
+   "05-control-mermas.xlsx:Análisis por Categoría!A8: «Secos» → «Secos/Granos» (§1.1)",
+   "05-control-mermas.xlsx:Análisis por Categoría!A10: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+   "05:Registro Diario Mermas: 50 filas nuevas (50 → 100); el TOTAL MES baja a la fila 105 y su SUM cubre el rango completo",
+   "05:Registro Diario Mermas: doble guarda en el coste, DV de motivo y 3 líneas de ejemplo (TEC-06/TEC-09)",
+   "05:Análisis por Categoría: 7 categorías sueltas → las 10 canónicas con COUNTIF/SUMIF, % del total, tendencia vs mes anterior y bloque de motivos en H4:I10 (DOM-11/TEC-09/COM-12)",
+   "05:Dashboard Mermas: 5 KPI con fórmula, entradas verdes B10 (compras del mes) y B11 (objetivo, 3 %) y objetivo relativo en C4; el semáforo de D lo colorea el motor (DOM-23/COM-12)",
+   "05:Plan de Acción: de título suelto a 9 columnas con DV de prioridad y estado, 5 causas precargadas y total del ahorro estimado (COM-10/§1.4)",
+   "05:Instrucciones: nombres de hoja corregidos (Registro Diario Mermas, Dashboard Mermas) y objetivo explicado; ancla de versión en A12",
+   "05-control-mermas.xlsx: 242 celdas reformateadas (§1.7)",
+   "05-control-mermas.xlsx: 1100 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+   "05-control-mermas.xlsx:Registro Diario Mermas!C4:C103: DV inline (10 valores)",
+   "05-control-mermas.xlsx:Registro Diario Mermas!E4:E103: DV inline (10 valores)",
+   "05-control-mermas.xlsx:Dashboard Mermas!D4:D8: 3 regla(s) de formato condicional",
+   "Registro Diario Mermas: protegida sin contraseña (900 celdas verdes editables)",
+   "Análisis por Categoría: protegida sin contraseña (20 celdas verdes editables)",
+   "Dashboard Mermas: protegida sin contraseña (2 celdas verdes editables)",
+   "Plan de Acción: protegida sin contraseña (180 celdas verdes editables)",
+   "Instrucciones!A12:A14: nota de desprotección + bio anclada + versión 2.0",
+   "05-control-mermas.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+  ]
+ },
+ "demostraciones_pycel": {
+  "iva_por_categoria_03": {
+   "copia_desechable": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-grupo_b/dryrun-v2/demos-grupo-b/03-pedidos-compra-iva.xlsx",
+   "ref_tabla_iva": "03-pedidos-compra.xlsx:Listas:A2:B11",
+   "lineas": [
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H9/I9",
+     "producto": "Solomillo de ternera",
+     "categoria": "Cárnicos",
+     "cantidad": 2,
+     "precio": 32.0,
+     "iva_pct": 10,
+     "subtotal": 64,
+     "total": 70.4
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H10/I10",
+     "producto": "Vino tinto D.O.",
+     "categoria": "Bebidas Alcohólicas",
+     "cantidad": 6,
+     "precio": 5.0,
+     "iva_pct": 21,
+     "subtotal": 30,
+     "total": 36.3
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:H11/I11",
+     "producto": "Lechuga",
+     "categoria": "Verduras/Frutas",
+     "cantidad": 10,
+     "precio": 1.1,
+     "iva_pct": 4,
+     "subtotal": 11.0,
+     "total": 11.440000000000001
+    }
+   ],
+   "base_imponible": 105.0,
+   "cuota_iva": 13.14,
+   "total": 118.14,
+   "desglose_por_tipo": [
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B46",
+     "tipo": 4,
+     "base": 11.0,
+     "cuota": 0.44,
+     "total": 11.44
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B47",
+     "tipo": 10,
+     "base": 64,
+     "cuota": 6.4,
+     "total": 70.4
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual:B48",
+     "tipo": 21,
+     "base": 30,
+     "cuota": 6.3,
+     "total": 36.3
+    }
+   ],
+   "total_v1_1_con_el_10_a_mano": 115.5,
+   "diferencia_eur": 2.64,
+   "lectura": "el mismo pedido con el 10 % escrito a mano en las tres líneas se enviaba por 115.5 € en vez de 118.14 €"
+  },
+  "doble_guarda_03": {
+   "copia_desechable": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-grupo_b/dryrun-v2/demos-grupo-b/03-pedidos-compra-guarda.xlsx",
+   "ref": "03-pedidos-compra.xlsx:Pedido Actual:G12",
+   "formula": "=IF($E12=\"\",\"\",IF($F12=\"\",\"⚠ falta coste\",$E12*$F12))",
+   "cantidad_15_sin_precio": "⚠ falta coste",
+   "cantidad_15_precio_6_40": 96.0,
+   "ok": true,
+   "lectura": "con la guarda de la v1.1 (=IF(D12=\"\",\"\",D12*E12)) esa misma línea valía 0,00 € y el total del pedido mentía"
+  },
+  "conforme_por_familia_04": {
+   "copia_desechable": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-grupo_b/dryrun-v2/demos-grupo-b/04-recepcion-mercancias-conforme.xlsx",
+   "ref_tabla": "04-recepcion-mercancias.xlsx:Verificación Temperaturas:A4:C16",
+   "pruebas": [
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M10",
+     "familia": "Carne picada",
+     "temperatura_c": 1,
+     "umbral_leido": 2,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M11",
+     "familia": "Carne picada",
+     "temperatura_c": 6,
+     "umbral_leido": 2,
+     "esperado": "✗ RECHAZAR",
+     "obtenido": "✗ RECHAZAR",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M12",
+     "familia": "Canal y despiece de ungulados domésticos",
+     "temperatura_c": 6,
+     "umbral_leido": 7,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M13",
+     "familia": "Congelados",
+     "temperatura_c": -20,
+     "umbral_leido": -18,
+     "esperado": "✓ CONFORME",
+     "obtenido": "✓ CONFORME",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M14",
+     "familia": "Congelados",
+     "temperatura_c": -15,
+     "umbral_leido": -18,
+     "esperado": "✗ RECHAZAR",
+     "obtenido": "✗ RECHAZAR",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M15",
+     "familia": "Huevos",
+     "temperatura_c": 18,
+     "umbral_leido": "N/A",
+     "esperado": "N/A",
+     "obtenido": "N/A",
+     "ok": true
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción:M16",
+     "familia": "Pescado fresco y marisco",
+     "temperatura_c": 5,
+     "umbral_leido": 2,
+     "esperado": "✗ RECHAZAR",
+     "obtenido": "✗ RECHAZAR",
+     "ok": true
+    }
+   ],
+   "diferencia_12_pedidas_9_recibidas": -3,
+   "lineas_a_rechazar_en_el_resumen": 4,
+   "lectura": "con la tabla de la v1.1 («Carne fresca, 7°C máx.» como TEXTO) ninguna de estas siete líneas se podía calcular, y una carne picada a 6 °C —el triple de su límite legal— se daba por buena"
+  },
+  "agregacion_mermas_05": {
+   "copia_desechable": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-grupo_b/dryrun-v2/demos-grupo-b/05-control-mermas-agregacion.xlsx",
+   "analisis_por_categoria": [
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C4",
+     "categoria": "Cárnicos",
+     "incidencias": 3,
+     "coste_eur": 76.9,
+     "pct_del_total": 0.648945147679325
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C5",
+     "categoria": "Pescados",
+     "incidencias": 1,
+     "coste_eur": 35.0,
+     "pct_del_total": 0.29535864978902954
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C6",
+     "categoria": "Lácteos",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C7",
+     "categoria": "Verduras/Frutas",
+     "incidencias": 1,
+     "coste_eur": 6.6000000000000005,
+     "pct_del_total": 0.055696202531645575
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C8",
+     "categoria": "Secos/Granos",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C9",
+     "categoria": "Congelados",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C10",
+     "categoria": "Bebidas Alcohólicas",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C11",
+     "categoria": "Bebidas No Alcohólicas",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C12",
+     "categoria": "Limpieza",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría:C13",
+     "categoria": "Otros",
+     "incidencias": 0,
+     "coste_eur": 0,
+     "pct_del_total": 0.0
+    }
+   ],
+   "total_mes": 118.5,
+   "dashboard_con_8000_de_compras": {
+    "ref": "05-control-mermas.xlsx:Dashboard Mermas:B4:B8",
+    "compras_del_mes_escritas_en_B10": 8000.0,
+    "coste_total_mermas": 118.5,
+    "objetivo_eur_C4": 240.0,
+    "pct_sobre_compras_B5": 0.0148125,
+    "estado_D5": "🟢 OK",
+    "n_incidencias_B6": 5,
+    "categoria_con_mas_merma_B7": "Cárnicos",
+    "motivo_mas_frecuente_B8": "Caducidad superada"
+   },
+   "dashboard_con_2000_de_compras": {
+    "compras_del_mes_escritas_en_B10": 2000.0,
+    "pct_sobre_compras_B5": 0.05925,
+    "objetivo_eur_C4": 60.0,
+    "estado_D5": "🔴 ALERTA",
+    "estado_D4": "🔴 ALERTA"
+   },
+   "lectura": "las dos hojas de explotación estaban vacías de fórmulas y el «< 3 % sobre compras» era incalculable: no existía ninguna celda donde escribir las compras del mes (DOM-23)"
+  }
+ },
+ "ids_R1_cubiertos": {
+  "DOM-07": "03:Pedido Actual!H9:H38 · =IF($B9=\"\",\"\",IFERROR(VLOOKUP($C9,Listas!$A$2:$B$11,2,FALSE),10)) + DV «4,10,21». Demostrado: carne 10, vino 21, lechuga 4",
+  "TEC-13": "03:Pedido Actual!H9:H38 · el 10 escrito a mano en las 20 líneas desaparece; DV inline 4/10/21 con showErrorMessage",
+  "COM-16": "03:Pedido Actual!H40 (BASE), H41 (CUOTA = SUM(I)-BASE), H42 (TOTAL) y desglose por tipo en A45:D48",
+  "DOM-18": "03:Pedido Actual!H41 es la cuota que el historial pedía; 03:Historial Pedidos!A4:G4 enlazadas al pedido en curso, 40 filas y total del periodo en E45:G45",
+  "TEC-20": "03:Pedido Actual!F40:G42 rótulos + H40:I42 importes combinados: el total deja de imprimirse bajo la cabecera «Subtotal (€)»",
+  "DOM-19": "03:Proveedores!A3:H23 (hoja nueva VISIBLE, §7-bis.2) + 03:Pedido Actual!F3:G6 bloque de emisor verde",
+  "COM-17": "03:Pedido Actual!C3 · DV =Proveedores!$A$4:$A$23 y VLOOKUP de teléfono (E3) y pedido mínimo (E4)",
+  "COM-30": "03:Pedido Actual!F3:G6 · establecimiento, CIF, dirección de entrega y contacto",
+  "TEC-19": "03:Pedido Actual!A3:B6 combinadas con el dato en C3:C6; freeze_panes A9 y print_title_rows $8:$8 (los pone motor.print_setup con la fila de cabecera del BLOQUE)",
+  "TEC-06": "03:Pedido Actual!G9:G38 y 05:Registro Diario Mermas!G4:G103 · motor.guarda_doble: cantidad sin precio devuelve «⚠ falta coste», no 0,00 €",
+  "DOM-03": "04:Instrucciones!A8 pasa a ser cierta: el rojo lo pone el CF del motor sobre 04:Control Recepción!K4:K43 (regla expression =AND($K4<>\"\",$M4=\"✗ RECHAZAR\"))",
+  "COM-04": "igual que DOM-03: la afirmación estaba DENTRO del entregable",
+  "DOM-04": "04:Control Recepción!C (Nº albarán/factura), F (Nº de lote), P (Receptor) y Q (Firma)",
+  "TEC-17": "04:Control Recepción!I4:I43 · =IF(OR($G4=\"\",$H4=\"\"),\"\",$H4-$G4) sustituye al ✓/✗ que se marcaba a ojo",
+  "DOM-20": "04:Control Recepción!I45 (diferencia total) + 04:Registro Incidencias!I (importe reclamado), J (abono) e I26 (pendiente de abono)",
+  "DOM-05": "04:Verificación Temperaturas!A4:C16 · 13 familias con umbral NUMÉRICO; la carne picada baja de 7 °C (v1.1) a 2 °C",
+  "COM-08": "04:Verificación Temperaturas!D4:D16 · base normativa por fila (Reg. 853/2004 Anexo III Secc. I/II/V/VIII, RD 3484/2000 art. 6, Reg. 589/2008 art. 2, Reg. 852/2004 Anexo II Cap. IX)",
+  "DOM-21": "04:Control Recepción!E (Familia, DV contra 'Verificación Temperaturas'!$A$4:$A$16), L (VLOOKUP del umbral) y M (Conforme)",
+  "TEC-04": "04 pasa de 0 fórmulas a 126 y de 0 reglas de formato condicional a 3",
+  "COM-06": "«9 plantillas con fórmulas automáticas» deja de ser refutable abriendo el 04",
+  "DOM-11": "05:Análisis por Categoría!B4:F13 · COUNTIF/SUMIF sobre el registro + total en la 14",
+  "TEC-09": "05:Registro Diario Mermas!C4:C103 y E4:E103 con la DV del motor, H4:H103 con la DV de motivos: sin taxonomía cerrada, el SUMIF no suma",
+  "COM-12": "05:Dashboard Mermas!B4:B8 con fórmula (antes 0) e 05:Análisis por Categoría!H4:I13 para el motivo más frecuente",
+  "DOM-23": "05:Dashboard Mermas!B10 (compras del mes, verde) y B11 (objetivo 3 %, verde); C4 = IFERROR(IF($B$10=\"\",\"\",$B$10*$B$11),\"\") sustituye al «< 500 €» fijo",
+  "COM-10": "05:Plan de Acción!A3:I3 (9 columnas), 5 filas precargadas, DV de prioridad y de estado y total en H25"
+ },
+ "defectos_propios_cazados_y_corregidos": [
+  {
+   "donde": "03-pedidos-compra.xlsx:Pedido Actual:H9",
+   "que": "la cabecera «IVA %» hacía que motor.aplicar_formatos aplicara 0,0% a toda la columna, así que el tipo 10 se imprimía «1000,0 %»",
+   "fix": "grupo_b.py antepone (FMT_ENT, ('iva %',)) a motor.FORMATO_POR_CABECERA; verificado nf=0 y cache 10/21/4"
+  },
+  {
+   "donde": "05-control-mermas.xlsx:Registro Diario Mermas:H4:H53",
+   "que": "la DV de motivos HEREDADA de la v1.1 («Caducidad, Preparación, Devolución…») se quedaba solapada con la nueva: dos desplegables en la misma columna y un vocabulario que el COUNTIF del análisis no cuenta",
+   "fix": "_limpiar_dv() deja sólo las validaciones con la marca del motor"
+  },
+  {
+   "donde": "05-control-mermas.xlsx:Análisis por Categoría:H6",
+   "que": "el motivo «Rotura, derrame o caída» llevaba una COMA: una lista inline de Excel separa por comas, así que se partía en dos opciones y ninguna casaba con el COUNTIF",
+   "fix": "lista de 10 motivos sin comas + guardián en _lista_inline() que aborta si algún valor la lleva"
+  },
+  {
+   "donde": "05-control-mermas.xlsx:Dashboard Mermas:B5",
+   "que": "la cabecera «Valor» está en la lista de importes del motor: la columna se formateaba en euros y el 1,5 % de mermas salía impreso «0,01 €»",
+   "fix": "cabecera «Resultado»; formatos por celda (B4 €, B5 %, B6 entero)"
+  },
+  {
+   "donde": "03-pedidos-compra.xlsx:Historial Pedidos:A4",
+   "que": "una referencia a celda vacía devuelve 0 en Excel: con el pedido a medio escribir, el historial enseñaba «0» en Nº Pedido y Proveedor y «00/01/1900» en Fecha",
+   "fix": "guarda IF(...=\"\",\"\",...) en A4/B4/C4; E4/F4/G4 van directas como pide la SPEC (0,00 € en un pedido vacío es cierto)"
+  },
+  {
+   "donde": "03-pedidos-compra.xlsx:Proveedores:A23",
+   "que": "motor._rango_filas recorta el bloque a ws.max_row: con la fila 23 en blanco, el verde y el desplegable se quedaban en la 22 y la última de las 20 filas prometidas salía BLOQUEADA",
+   "fix": "nota en A25 que empuja max_row por encima del bloque; verificado A23/B23/E23 verdes y desbloqueadas"
+  },
+  {
+   "donde": "03-pedidos-compra.xlsx:Pedido Actual:F40",
+   "que": "en la 2.ª pasada, limpiar las filas de totales reventaba con «MergedCell object attribute 'value' is read-only»",
+   "fix": "se deshacen las combinaciones de 40:42 antes de limpiar; idempotencia 0 diferencias"
+  }
+ ],
+ "decisiones": [
+  "§7-bis.2 · hoja `Proveedores` VISIBLE con 20 filas y 6 ejemplos (uno por familia de compra).",
+  "Teléfonos y correos de los proveedores de ejemplo son PLACEHOLDERS (600 000 00x, @ejemplo.es): un dato verosímil acabaría siendo el de un negocio real.",
+  "`03!'Pedido Actual'` se precarga con 3 líneas SIN cantidad ni precio: enseñan el IVA por categoría (10/21/4) sin riesgo de que una línea de ejemplo viaje dentro de un pedido real. Los totales quedan en 0,00 €.",
+  "`05!'Registro Diario Mermas'` SÍ lleva 3 líneas con importe (80,00 €) para que el análisis y el dashboard arranquen con números en vez de ceros; van marcadas «(ejemplo)» y con aviso en A2.",
+  "Las fechas de ejemplo del 04 van escritas (18-20/08/2026) y no con TODAY(): sus columnas son VERDES y una fórmula convertiría toda la columna en «calculada» para motor.aplicar_verde, dejando al cliente sin poder escribir la fecha de sus entregas. En `03!'Historial Pedidos'`, que está en SIN_VERDE_AUTO, sí se usa =TODAY()-30/-20/-10 para que no caduquen.",
+  "Tabla de temperaturas: 13 familias (las 12 que enumera la SPEC + «Secos y economato (ambiente)»). Sin esa 13.ª, una entrega de harina o de conservas no tendría familia que elegir y la columna «Conforme» no se podría calcular para ella.",
+  "El objetivo del 3 % vive en la celda verde `05!'Dashboard Mermas'!B11`, no dentro de la fórmula (§1: parámetros en celda). C4 y C5 lo leen de ahí.",
+  "El bloque auxiliar de motivos llega a `H4:I13` y no a `H4:I10` como dice la SPEC: el verde del motor cubre todo el bloque de datos, así que con el COUNTIF parado en la 10 las tres casillas verdes de debajo invitarían a añadir un motivo que nadie contaría.",
+  "`03!'Historial Pedidos'` se añade a `motor.SIN_VERDE_AUTO` (el gancho que el propio motor documenta) porque la fila 4 enlazada convertía en «calculadas» —y por tanto bloqueadas— las 7 primeras columnas de las otras 39 filas."
+ ],
+ "dudas": [
+  "DV de IVA sobre una columna CALCULADA (`03!'Pedido Actual'!H9:H38`): la SPEC pide el desplegable «4,10,21» ENCIMA de la fórmula del VLOOKUP «para sobrescribirlo», pero la convención de familia bloquea toda celda que no sea verde y motor.aplicar_verde quita el verde a cualquier columna con fórmula. Hoy el desplegable existe y el prompt explica que hay que hacer Revisar → Desproteger hoja (sin contraseña). ¿Se deja así, o se prefiere H verde con la fórmula dentro (verde + fórmula rompe la convención) o dejar H vacía con sólo la DV (se pierde el automatismo, que es el hallazgo DOM-07)?",
+  "Totales del pedido: la SPEC fija las direcciones H40/H41/H42, que caen bajo la cabecera «IVA %», mientras el propio TEC-20 pide que el total NO se imprima bajo una cabecera equivocada. Se ha resuelto combinando H:I en las tres filas, de modo que la celda sigue siendo H40 y el importe se ve bajo «Total (€)». Confirmar que es la lectura correcta.",
+  "Nombres de los 6 proveedores de ejemplo del `03!Proveedores` (Cárnicas del Mercado, Pescados del Puerto, La Huerta de Temporada, Almacén Central de Secos, Bodega y Bebidas, Higiene HORECA): grupo_a siembra su propio directorio en el 02. Si se quiere que las dos listas coincidan, hay que unificarlas en una sola constante del motor.",
+  "Se ha reescrito `05!'Registro Diario Mermas'!F3` de «Coste/ud (€)» a «Precio/ud (€)» para igualarlo al resto del kit (01!J, 03!F). Si la landing o el changelog citan el nombre viejo, hay que tocarlo también.",
+  "Las tres líneas de ejemplo del registro de mermas suman 80,00 €. Si se prefiere que el cliente abra el mes en cero, se quitan borrando EJEMPLOS_MERMA (el análisis y el dashboard seguirían correctos, sólo que a cero)."
+ ],
+ "pendiente": [
+  "Integración (§5, rol `integracion`): la landing sigue diciendo «formato imprimible» como pestaña del 03 y el 04 sostiene el argumento APPCC — ya es cierto que registra lote, albarán y temperatura, pero el copy debe pasar a «documenta los registros que pide tu plan APPCC; no sustituye al plan ni a un asesor» (COM-07).",
+  "El gate §1.6 sigue en rojo en 01 («Resumen»), 02 («Directorio», «Evaluación»), 06 («Mapa de Almacén») y 07 («Evolución Mensual»): son de grupo_a y grupo_c, no de este grupo. Mis tres ficheros salen con 0.",
+  "Ejecución real con KIT_INVENTARIO_APPLY=1: la hace el orquestador cuando la ronda 2 dé verde. Este rol NO ha tocado astro-site/public/dl/kit-inventario/."
+ ]
+}

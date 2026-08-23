@@ -67,9 +67,9 @@ export default function KitInventario() {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
-            { "@type": "Question", "name": "¿Sirve para cualquier tipo de restaurante?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Las categorias estan pre-cargadas para hosteleria: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza." }},
-            { "@type": "Question", "name": "¿Las plantillas se conectan entre si?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Los niveles de stock alimentan las sugerencias de pedido. Las fichas de proveedores se enlazan con los pedidos de compra." }},
-            { "@type": "Question", "name": "¿Cumple con los requisitos de APPCC?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Incluye control de temperaturas en recepcion, trazabilidad FIFO y registro de caducidades con alertas por colores." }},
+            { "@type": "Question", "name": "¿Sirve para cualquier tipo de restaurante?", "acceptedAnswer": { "@type": "Answer", "text": "Si. Las 10 categorias estan pre-cargadas para hosteleria: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros." }},
+            { "@type": "Question", "name": "¿Las plantillas se conectan entre si?", "acceptedAnswer": { "@type": "Answer", "text": "Son nueve ficheros independientes que hablan el mismo idioma: las mismas 10 categorias en las 9 plantillas y las mismas unidades en las 8 de producto. La columna A Pedir te dice cuanto reponer y el desplegable de proveedores del pedido sale de la hoja Proveedores de ese mismo fichero, que rellenas una vez." }},
+            { "@type": "Question", "name": "¿Cumple con los requisitos de APPCC?", "acceptedAnswer": { "@type": "Answer", "text": "Te ayudan a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC; no sustituyen al plan ni a un asesor. Incluyen control de temperaturas en recepcion, trazabilidad FIFO/FEFO y registro de caducidades con alertas por colores." }},
             { "@type": "Question", "name": "¿Hay garantia de devolucion?", "acceptedAnswer": { "@type": "Answer", "text": "30 dias de garantia completa. 100% reembolso sin preguntas." }}
           ]
         })}</script>

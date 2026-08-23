@@ -18,7 +18,7 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_INVENTARIO || '#comp
 const checkItems = [
   'Inventario diario con par levels y alertas de reposicion automaticas',
   'Fichas de proveedores con comparativa de precios entre 5 proveedores',
-  'Pedidos de compra auto-calculados desde niveles de stock',
+  '9 plantillas coherentes entre si: las mismas 10 categorias en todas y las mismas unidades en las 8 de producto',
   'Control de recepcion con verificacion de temperatura y caducidad',
   'Mermas por categoria con dashboard y plan de accion',
 ];
@@ -68,7 +68,7 @@ export default function HeroSection() {
         </div>
 
         <span className="inline-block mb-6 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium animate-fade-in">
-          Los restaurantes pierden entre 3.000 y 5.000 EUR/ano en mermas evitables
+          Las mermas sin control se comen un 3-5 % de tus compras, por lo que vemos auditando cocinas: contarlas es el primer paso para recuperarlas
         </span>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">

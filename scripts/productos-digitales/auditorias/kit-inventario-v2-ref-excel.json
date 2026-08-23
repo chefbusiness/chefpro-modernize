@@ -1,0 +1,231 @@
+{
+ "productId": "kit-inventario",
+ "ronda": "R2-refutador",
+ "lente": "TECNICA EXCEL (openpyxl + pycel) — refutador de la v2.0",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md",
+ "r1_origen": "scripts/productos-digitales/auditorias/kit-inventario-R1.json",
+ "copia_propia": "CLAUDE_SCRATCHPAD=<scratch>/propio-ref-excel python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo a,b,c --json <scratch>/kit-inv-v2/ref-excel.json",
+ "informe_del_paquete": "TODO VERDE: idempotencia 0 diferencias · cache 0 fallos · censo-entregables 0 defectos · gate §1.6 0 pestanas · proteccion 0 fallos · 1.725 formulas nuevas registradas (1.730 formulas en el kit)",
+ "metodo": "Lectura completa de las 39 hojas con openpyxl (valores, formulas, DV, CF, proteccion celda a celda, formatos, merges, print_area, columnas ocultas) y evaluacion con pycel de CADA familia de formula nueva cambiando inputs. Las variantes se construyen parcheando COPIAS del xlsx con openpyxl y recompilando con pycel: set_value en caliente NO propaga entre hojas y da falsos verdes. Regla dura respetada: astro-site/public/dl/kit-inventario/** solo se ha leido.",
+ "resueltos_confirmados": [
+  "TEC-01/TEC-25/COM-02/COM-31 — 01: las 50 filas traen categoria, unidad, precio y par level por producto; 'Refresco de cola' en lugar de la marca; DV inline de 10 categorias y 10 unidades en 01!C/D, 03!C/D, 05!C/E, 06!C/O/R, 07!C y BONUS-08!C/D, identicas en las 6 hojas (comparadas cadena a cadena).",
+  "TEC-03/TEC-21/DOM-33 — 01: columna J Precio/ud verde, K=IFERROR(...) y 'Resumen Dashboard' con 33 formulas; A Pedir arranca en ambar (verificado con pycel: E5=8/F5=20 → stock 7 '🔴 PEDIR' I=13, stock 11 '🟡 BAJO' I=9, stock 12 '🟢 OK' I=0).",
+  "TEC-04/TEC-17/DOM-20 — 04 pasa de 0 a 126 formulas: I (diferencia), L (VLOOKUP del umbral) y M (veredicto), con CF expression sobre K4:K43 y containsText sobre M.",
+  "TEC-06/§1.8 — doble guarda «⚠ falta coste» presente y funcionando en 03!G, 05!G y BONUS-08!G (pycel: cantidad 5 sin precio → texto, y el SUM del total lo ignora).",
+  "TEC-11/TEC-12/DOM-13/DOM-24/DOM-25 — 06: semaforo de CUATRO estados verificado con pycel (-7 d Caducidad → '⛔ CADUCADO — RETIRAR'; -7 d Consumo preferente → '⚠ REVISAR'; +1 d → '🔴 URGENTE'; +5 d → '🟡 PROXIMO'; +30 d → '🟢 OK'; 0 d → '🔴 URGENTE'), fecha limite efectiva con apertura + vida util, dias en almacen, valor en riesgo y autofiltro A4:T54 REALMENTE utilizable (protection.autoFilter=False).",
+  "TEC-13/DOM-07 — 03: IVA por categoria desde 'Listas' con DV 4/10/21 encima; pycel con lechuga/pollo/vino/lejia da 4-10-21-21 y el desglose A46:D48 cuadra al centimo con H40 (120,00 € base, 16,90 € de cuota).",
+  "TEC-14/TEC-15/DOM-12 — BONUS-09: stock de seguridad en unidades desde dias (G=D*F) y punto de pedido D*E+G; la guarda $D4<=0 de M4 evita el #DIV/0! de la frecuencia.",
+  "TEC-16 — 02: 'Evaluacion Proveedores' H4 exige COUNT>=3 (pycel: 1 y 2 criterios → \"\", 3 criterios → 4,0 y nota 'B — Valido').",
+  "TEC-05/DOM-08 — gate de pestanas citadas: 0 incumplimientos; se crearon 03!Proveedores, 03!Listas y 07!'Evolucion Mensual' y se retiraron 'Imprimible' y 'Simulador'.",
+  "TEC-18 — formatos: #,##0.00 € tambien en las celdas de ENTRADA (03!F, 05!F, 07!B4:M13, 02!F4:J13 y N, BONUS-08!E, 06!P), dd/mm/yyyy en 04!A/J, 05!A, 06!E/G/H/J y '0' explicito en 06!K.",
+  "TEC-19/TEC-20 — 03: etiquetas combinadas A3:B3..A6:B6 con el dato en C, bloque emisor en F3:G6, freeze_panes A9, print_title_rows $8:$8 y totales bajo la columna correcta (H40/H41/H42).",
+  "TEC-22 — formato condicional real: 21 reglas en 5 hojas (01 x3 hojas, 04!M + 04!K, 05!D, 06!L con 5 estados, 07!'Top 20'!J, BONUS-08!L). Falta solo el punto de 07!'Dashboard KPIs'!E (ver RT-06).",
+  "TEC-23/§1.9 — filas ampliadas y SUM cubriendo el rango completo: 01 hasta 44/34, 03 hasta 38, 04 hasta 43, 05 hasta 103 con G105=SUM(G4:G103), 06 hasta 54, BONUS-08 hasta 84 con G86=SUM(G5:G84).",
+  "TEC-24/DOM-32 — BONUS-08: columnas Compras del mes, Consumo, Variacion y % Variacion presentes (el % tiene el defecto RT-05).",
+  "TEC-07 solo a medias (ver RT-02) · TEC-02 solo a medias (ver RT-08).",
+  "Idempotencia REPRODUCIDA de forma independiente: 0 diferencias entre la 1.a y la 2.a pasada sobre el clon, comparando valores, formatos, relleno, bloqueo, merges, DV, CF, proteccion y print_area.",
+  "Pagina: los 39 sheets con paperSize=9 (A4), fitToWidth=1, fitToPage=True; ninguna hoja protegida lleva contrasena."
+ ],
+ "veredicto": "no listo",
+ "motivo": "El paquete se autodeclara TODO VERDE, pero su propio gate data_only exime al 82,6 % de las formulas (RT-17) y ninguno de los cinco fallos altos de esta lista lo habria parado. Los cinco: 04 da «✓ CONFORME» a una temperatura de 18 °C en cuanto la familia no resuelve en la tabla legal, con la tabla ademas sin proteger (RT-01, y es el fichero con el que se sostiene el argumento APPCC); 02 sigue eligiendo como mejor proveedor al que cotiza 0, que es literalmente el escenario que TEC-07 mandaba cerrar (RT-02); la EOQ del BONUS-09 escupe #DIV/0! con precio 0 o con el % de almacenamiento a 0 y no lleva IFERROR, contra la convencion explicita de la SPEC (RT-03); el dashboard de mermas afirma una categoria y un motivo culpables cuando el registro esta vacio, que es el estado en que queda el fichero justo despues de que el cliente siga la instruccion de borrar los ejemplos (RT-04); y el % de variacion del BONUS-08 marca −100 % en toda linea aun no contada, repitiendo en la columna nueva el defecto que la v2.0 corrigio en la de al lado (RT-05). A eso se suman una exigencia de la SPEC sin cumplir (el semaforo de 07!'Dashboard KPIs'!E, §1.2) y la proteccion aplicada a medias sobre cinco hojas, dos de ellas tablas de referencia de las que dependen calculos de hojas que si estan protegidas.",
+ "hallazgos": [
+  {
+   "id": "RT-01",
+   "severidad": "alta",
+   "fichero": "04-recepcion-mercancias.xlsx",
+   "ubicacion": "'Control Recepcion'!M4:M43 (formula) + 'Verificacion Temperaturas'!A4:C16",
+   "hallazgo": "El veredicto de temperatura da «CONFORME» a CUALQUIER temperatura cuando la Familia no resuelve en la tabla legal. La formula compara un numero con la cadena vacia que devuelve el IFERROR del VLOOKUP, y en Excel todo numero es MENOR que cualquier texto: el <= se cumple siempre. Basta con que el cliente pegue una familia (la DV no bloquea el pegado), la escriba con otra grafia, o edite/renombre la tabla legal —cosa que las propias Instrucciones!A10 le invitan a hacer— para que TODAS esas lineas pasen a verde. Es el punto donde el fichero sostiene el argumento APPCC.",
+   "evidencia": "L4='=IF($E4=\"\",\"\",IFERROR(VLOOKUP($E4,'Verificacion Temperaturas'!$A$4:$C$16,3,FALSE),\"\"))' y M4='=IF(OR($K4=\"\",$E4=\"\"),\"\",IF($L4=\"N/A\",\"N/A\",IF($K4<=$L4,\"✓ CONFORME\",\"✗ RECHAZAR\")))'. Evaluado con pycel sobre una copia parcheada: E7='Charcuteria', K7=18 → L7='' y M7='✓ CONFORME'. Con E7='Carne picada', K7=6 → '✗ RECHAZAR' (la formula funciona cuando la familia resuelve). Agrava: la hoja 'Verificacion Temperaturas' se entrega SIN proteger (ws.protection.sheet=False) mientras 'Control Recepcion' si lo esta, asi que borrar C4:C16 es un clic y no avisa nada.",
+   "fix": "Anadir la rama de familia sin limite ANTES de la comparacion: M4='=IF(OR($K4=\"\",$E4=\"\"),\"\",IF($L4=\"N/A\",\"N/A\",IF($L4=\"\",\"⚠ FAMILIA SIN LIMITE\",IF($K4<=$L4,\"✓ CONFORME\",\"✗ RECHAZAR\"))))' y anadir esa palabra al vocabulario del semaforo (rojo o ambar). Proteger tambien 'Verificacion Temperaturas'."
+  },
+  {
+   "id": "RT-02",
+   "severidad": "alta",
+   "fichero": "02-fichas-proveedores.xlsx",
+   "ubicacion": "'Comparativa Precios'!K4:K13 y L4:L13 (y el bloque oculto P4:T13)",
+   "hallazgo": "TEC-07 sigue vivo en su mitad mas cara: la guarda nueva excluye la celda VACIA pero no el CERO, que es exactamente el caso que el R1 describia («un 0 tecleado para no me lo sirve»). Con una sola cotizacion a 0, «Mejor precio/ud» sale 0,00 €, «Mejor proveedor» nombra a ese proveedor y «% Diferencia» se queda en blanco: la comparativa entera se rompe en silencio y senala como ganador al que no sirve el producto.",
+   "evidencia": "K4='=IF(COUNT($P4:$T4)=0,\"\",MIN($P4:$T4))' y P4='=IF(OR($F4=\"\",$E4=\"\",$E4=0),\"\",IFERROR($F4/$E4,\"\"))' — la guarda del denominador si contempla el 0 ($E4=0), la del numerador no. Evaluado con pycel sobre copia limpia: E4=5, F4=29, G4=0, H4=27,5 → K4=0.0, L4='Pescados Ria Fresca (ejemplo)', M4=''. Sin el 0: K4=5,5 y L4='Frutas y Verduras La Huerta (ejemplo)'.",
+   "fix": "Excluir el cero en la normalizacion: P4='=IF(OR($F4=\"\",$F4<=0,$E4=\"\",$E4<=0),\"\",$F4/$E4)' (idem Q..T). Con eso MIN, INDEX/MATCH y el % vuelven a ser correctos sin tocar K/L/M."
+  },
+  {
+   "id": "RT-03",
+   "severidad": "alta",
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "ubicacion": "'Calculadora'!K4:K33 (EOQ) y su arrastre a L4:L33 y M4:M33",
+   "hallazgo": "La EOQ divide por «precio x % de almacenamiento» sin IFERROR y sin guarda de cero: la unica guarda es $I4=\"\". Un precio 0 (producto de coste cero, invitacion, o placeholder mientras se pide tarifa) devuelve #DIV/0! y lo propaga a la cantidad sugerida y a la frecuencia de pedido. Y como Parametros!D5 es una casilla VERDE editable, si el cliente teclea 0 % ahi revienta las 30 filas a la vez. La SPEC (cabecera y §1) exige «IFERROR/doble guarda en toda division».",
+   "evidencia": "K4='=IF(OR($D4=\"\",$D4<=0,$I4=\"\"),\"\",ROUND(SQRT(2*$D4*365*Parametros!$D$4/($I4*Parametros!$D$5)),0))' — ni IFERROR ni $I4<=0 ni guarda sobre Parametros!$D$5. Evaluado con pycel sobre copia parcheada con I4=0: K4='#DIV/0!', L4='#DIV/0!', M4='#DIV/0!'. Con los datos de ejemplo (D4=6, I4=6,5): K4=90, L4=17, M4=3.",
+   "fix": "K4='=IFERROR(IF(OR($D4=\"\",$D4<=0,$I4=\"\",$I4<=0,Parametros!$D$5<=0),\"\",ROUND(SQRT(2*$D4*365*Parametros!$D$4/($I4*Parametros!$D$5)),0)),\"\")'."
+  },
+  {
+   "id": "RT-04",
+   "severidad": "alta",
+   "fichero": "05-control-mermas.xlsx",
+   "ubicacion": "'Dashboard Mermas'!B7 y B8",
+   "hallazgo": "Los dos KPI cualitativos del dashboard no tienen guarda de cero: INDEX/MATCH(MAX(...)) sobre un rango de SUMIF/COUNTIF que valen 0 encuentra el 0 y devuelve SIEMPRE la primera fila. Cuando el cliente hace lo que la propia hoja le manda —'Registro Diario Mermas'!A2: «Las tres primeras lineas son un EJEMPLO: borralas antes de empezar tu mes»— el dashboard queda afirmando que su categoria con mas merma es «Carnicos» y su motivo mas frecuente «Caducidad superada» con 0,00 € de merma y 0 incidencias. El B7/B8 del 07 (Dashboard KPIs!B9) SI devuelve \"\" en el caso analogo, asi que dentro del mismo kit conviven las dos calidades.",
+   "evidencia": "B7='=IFERROR(INDEX('Analisis por Categoria'!$A$4:$A$13,MATCH(MAX('Analisis por Categoria'!$C$4:$C$13),'Analisis por Categoria'!$C$4:$C$13,0)),\"\")' (idem B8 sobre H/I). Evaluado con pycel sobre copia con las filas 4-6 del registro borradas: B4=0, B6=0, C14=0 y sin embargo B7='Carnicos' y B8='Caducidad superada'.",
+   "fix": "Envolver en una guarda de maximo: B7='=IF(MAX('Analisis por Categoria'!$C$4:$C$13)<=0,\"—\",IFERROR(INDEX(...),\"\"))' e idem B8 con $I$4:$I$13."
+  },
+  {
+   "id": "RT-05",
+   "severidad": "alta",
+   "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+   "ubicacion": "'Conteo Rapido'!L5:L84 (% Variacion) + su regla de formato condicional sobre L5:L84",
+   "hallazgo": "La columna nueva «% Variacion» hereda el defecto que la v2.0 dice haber corregido en su hermana: guarda el stock del mes ANTERIOR pero no el ACTUAL. Con el stock anterior cargado y la linea todavia sin contar, publica −100,0 % y la regla condicional (ABS>0,2) la pinta en ambar. En la practica, mientras el conteo esta a medias —que es todo el rato que se usa la hoja— las 50 lineas sin contar aparecen como caidas del 100 %. Las columnas J (Consumo) y K (Variacion ud) de la MISMA fila si guardan $F5, asi que el defecto es una inconsistencia interna, no una decision.",
+   "evidencia": "L5='=IF(OR($H5=\"\",$H5=0),\"\",$F5/$H5-1)' frente a J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",$H5+$I5-$F5)' y K5='=IF(OR($F5=\"\",$H5=\"\"),\"\",$F5-$H5)'. Evaluado con pycel sobre copia con H5=10 y F5 vacio: J5='', K5='', L5=-1 (−100,0 %). CF: 'Conteo Rapido' L5:L84 expression AND($L5<>\"\",ABS($L5)>0.2) → relleno FFEB9C.",
+   "fix": "L5='=IF(OR($F5=\"\",$H5=\"\",$H5=0),\"\",$F5/$H5-1)'."
+  },
+  {
+   "id": "RT-06",
+   "severidad": "media",
+   "fichero": "07-analisis-costes-compras.xlsx",
+   "ubicacion": "'Dashboard KPIs' (0 reglas de formato condicional; columna E vacia; print_area $A$1:$E$19)",
+   "hallazgo": "La SPEC §1.2 enumera CINCO puntos donde debe haber semaforo real con containsText: 01!H, 04!M, 05!'Dashboard Mermas'!D, 06!L y 07!'Dashboard KPIs'!E. Los cuatro primeros estan; el quinto no existe: 'Dashboard KPIs' no tiene ni columna de Estado ni una sola regla condicional, y ademas su area de impresion llega hasta la columna E, que esta vacia, asi que imprime una columna fantasma. Es el unico dashboard del kit sin semaforo, justo el que la landing vende como «dashboard de KPIs».",
+   "evidencia": "openpyxl sobre 07-analisis-costes-compras.xlsx: ws['Dashboard KPIs'].max_column=4, E3=None, len(list(ws.conditional_formatting))=0, ws.print_area=\"'Dashboard KPIs'!$A$1:$E$19\". Comparar con 05-control-mermas.xlsx:'Dashboard Mermas' → CF D4:D8 containsText ALERTA/REVISAR/OK.",
+   "fix": "Anadir E3='Estado' y E4:E9 con el veredicto por KPI (food cost vs 28-32 %, coste por cubierto vs C5, variacion vs ±5 %, subidas > 5 % vs 0) y las tres reglas containsText del motor; o retirar la columna E del print_area si se decide no ponerlo."
+  },
+  {
+   "id": "RT-07",
+   "severidad": "media",
+   "fichero": "01-inventario-stock-diario.xlsx",
+   "ubicacion": "Cocina!H25:H44, Barra!H20:H34, Almacen!H20:H34 (las 60 filas libres que anade §1.9)",
+   "hallazgo": "Las filas libres que la v2.0 anade —y que Instrucciones!A19 invita expresamente a usar— traen la formula del semaforo pero ningun par level. Como la formula no guarda E ni F, cualquier stock que el cliente escriba en una fila nueva compara contra un vacio (=0) y sale «🟢 OK», y «A Pedir» sale 0. El producto que el cliente da de alta el primer dia es precisamente el que nunca le va a avisar.",
+   "evidencia": "H25='=IF(G25=\"\",\"\",IF(G25<E25,\"🔴 PEDIR\",IF(G25<E25*1.5,\"🟡 BAJO\",\"🟢 OK\")))' con E25 y F25 vacias. Evaluado con pycel sobre copia con B25='Producto nuevo del cliente' y G25=12: H25='🟢 OK', I25=0, K25=''. En la fila 5 (con E5=8, F5=20) el mismo motor si funciona: stock 7→'🔴 PEDIR' I5=13, stock 11→'🟡 BAJO' I5=9, stock 12→'🟢 OK'.",
+   "fix": "H5='=IF(OR($G5=\"\",$E5=\"\"),\"\",IF(...))' e I5='=IF(OR($G5=\"\",$E5=\"\",$F5=\"\"),\"\",...)'. Con eso la fila nueva se queda en blanco hasta que tenga par level, que es lo honesto."
+  },
+  {
+   "id": "RT-08",
+   "severidad": "media",
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "ubicacion": "'Calculadora'!L4:L33 frente a 'Parametros'!A12:B12 y 'Parametros'!A14",
+   "hallazgo": "El tercer parametro del modelo —el factor de vida util 0,7— va HARDCODEADO en las 30 formulas de la columna L, que es el mismo pecado que el R1 denuncio en TEC-02 («el 2 y el 0.5 van hardcodeados en las 30 formulas»). Y no es un descuido invisible: 'Parametros' le dedica una fila entera (A12 «Factor de vida util», B12 «0,7 (70 %)») que parece un parametro y no lo es, y A14 lo confirma por escrito. La SPEC §1 exige «parametros en celdas, nunca literales en la formula».",
+   "evidencia": "L4='=IF(OR($K4=\"\",$J4=\"\"),\"\",MIN($K4,ROUND($D4*$J4*0.7,0)))' — el 0.7 literal, x30 filas. 'Parametros'!A12='Factor de vida util', B12='0,7 (70 %)', sin celda D12; A14='Solo las dos casillas verdes entran en las formulas: la de coste de pedido y la del coste de almacenamiento anual.'",
+   "fix": "Crear 'Parametros'!D12 verde con 0,7 (formato 0 %) y L4='=IF(OR($K4=\"\",$J4=\"\"),\"\",MIN($K4,ROUND($D4*$J4*Parametros!$D$12,0)))'; corregir A14."
+  },
+  {
+   "id": "RT-09",
+   "severidad": "media",
+   "fichero": "03-pedidos-compra.xlsx",
+   "ubicacion": "'Pedido Actual'!B9:F11, H40:H42 y 'Historial Pedidos'!D4:G4",
+   "hallazgo": "El fichero estrella del bloque de compras se entrega con tres lineas de ejemplo que traen producto, categoria y unidad pero NI cantidad NI precio. Resultado: las columnas Subtotal y Total quedan en blanco, el bloque de totales sale cacheado a 0,00 € y la fila enlazada del historial anuncia «3 lineas» por «0,00 €». Todos los demas ficheros de la v2.0 siembran ejemplos que SI calculan (05 da 80,00 € de merma, 04 da 3 recepciones y 1 rechazo, 07 da 31,0 % de food cost), asi que este es el unico que abre mostrando ceros — y es el que el cliente envia al proveedor.",
+   "evidencia": "openpyxl: 'Pedido Actual' B9='Solomillo de ternera (ejemplo)' C9='Carnicos' D9='kg' E9=None F9=None (idem filas 10 y 11). Leido con data_only tras inject_cache: G9=None, I9=None, H40=0.0, H41=0.0, H42=0.0, B47=0.0; 'Historial Pedidos' D4='3 lineas', E4=0.0, G4=0.0.",
+   "fix": "Sembrar E9:F11 con cantidad y precio coherentes con el 01 (p. ej. 5 kg x 32,00 € · 12 ud x 5,50 € · 10 ud x 0,95 €) para que el pedido de ejemplo ensene base, cuota y total, y el desglose por tipo de IVA tenga los tres tipos con importe."
+  },
+  {
+   "id": "RT-10",
+   "severidad": "media",
+   "fichero": "03-pedidos-compra.xlsx",
+   "ubicacion": "'Historial Pedidos'!E45:G45 («TOTAL DEL PERIODO») frente a la fila 4 y a Instrucciones!A10 / 'Historial Pedidos'!A2",
+   "hallazgo": "El total del periodo suma desde la fila 4, que es la fila ENLAZADA al pedido en curso. El flujo que documenta la propia hoja es «copia esa fila y pegala como valor en la primera fila libre»: en el momento en que el cliente lo hace —y hasta que ademas vacie 'Pedido Actual', que es un segundo paso separado— el pedido recien cerrado esta contado DOS veces en el total del periodo, sin ningun aviso.",
+   "evidencia": "E45='=SUM($E$4:$E$43)' (idem F45 y G45) y E4=\"='Pedido Actual'!$H$40\". Evaluado con pycel: con el pedido en curso vacio E45=657,70 (342,80+218,50+96,40); cargando un pedido de 120,00 € de base en 'Pedido Actual', E45=777,70 con la fila 4 a 120,00 €. Si esa fila se pega ademas en la 8, el total pasa a 897,70 € por 4 pedidos reales.",
+   "fix": "Arrancar el total en la fila 5: E45='=SUM($E$5:$E$43)' y etiquetar la fila 4 como «pedido en curso (no suma)», o mover el bloque enlazado a un bloque de cabecera fuera del rango de la tabla."
+  },
+  {
+   "id": "RT-11",
+   "severidad": "media",
+   "fichero": "07-analisis-costes-compras.xlsx",
+   "ubicacion": "'Top 20 Productos'!A2 frente a ws.protection (sheet=True, sort=False) y a las columnas bloqueadas A, F, G, J",
+   "hallazgo": "La hoja pide por escrito «Ordena la tabla de mayor a menor gasto», pero esta protegida y sus columnas calculadas (A el numero de orden, F, G y J) estan bloqueadas. Excel no ordena un rango que contenga celdas bloqueadas en una hoja protegida, aunque el permiso «Ordenar» este concedido: el cliente recibe el aviso de hoja protegida y no puede hacer lo que la propia hoja le manda. Ademas, si desprotege y ordena, arrastra las formulas relativas de F/G/J y descoloca el numero de fila.",
+   "evidencia": "openpyxl: 'Top 20 Productos'.protection → sheet=True, sort=False, autoFilter=False, password=None; A4=1 locked=True, F4='=IF($E4=\"\",\"\",$E4*12)' locked=True, G4 y J4 locked=True; A2='Datos de ejemplo; ... Ordena la tabla de mayor a menor gasto: el ranking de la derecha lo hace solo.'",
+   "fix": "Quitar la frase (el ranking L4:M8 con LARGE/INDEX/MATCH ya no necesita que la tabla este ordenada) o cambiarla por «no hace falta ordenarla». Si se quiere permitir el orden, hay que desbloquear todo el rango y dejar las formulas fuera de el."
+  },
+  {
+   "id": "RT-12",
+   "severidad": "media",
+   "fichero": "02-fichas-proveedores.xlsx",
+   "ubicacion": "'Comparativa Precios'!E4:E13 («Contenido (kg/L/ud)») y su efecto en K/L/M",
+   "hallazgo": "Toda la comparativa cuelga de una columna que es facil dejarse: si falta «Contenido», el bloque oculto de precio normalizado devuelve \"\" y con el se apagan «Mejor precio», «Mejor proveedor» y «% Diferencia», sin una sola pista de por que. El kit ya tiene doctrina para esto —el patron «⚠ falta coste» de §1.8, presente en 03!G, 05!G y BONUS-08!G— y aqui no se aplica.",
+   "evidencia": "P4='=IF(OR($F4=\"\",$E4=\"\",$E4=0),\"\",IFERROR($F4/$E4,\"\"))'. Evaluado con pycel sobre copia limpia con F4=29 y E4 vacio: K4='', L4='', M4=''. Con E4=5: K4=5,5 y L4 nombra al proveedor.",
+   "fix": "K4='=IF(COUNT($F4:$J4)=0,\"\",IF($E4=\"\",\"⚠ falta contenido\",MIN(...)))' — o pintar el aviso en L4, que es la columna que el usuario mira."
+  },
+  {
+   "id": "RT-13",
+   "severidad": "media",
+   "fichero": "01-inventario-stock-diario.xlsx, 06-fifo-caducidades.xlsx, 07-analisis-costes-compras.xlsx, 04-recepcion-mercancias.xlsx, 03-pedidos-compra.xlsx",
+   "ubicacion": "01!'Resumen Dashboard' · 06!'Alertas Caducidad' · 07!'Evolucion Mensual' · 04!'Verificacion Temperaturas' · 03!'Listas'",
+   "hallazgo": "La proteccion de §1.5 se ha aplicado a unas hojas si y a otras no, sin criterio visible. Quedan sin proteger tres hojas que son SOLO formulas (80 en total) y dos tablas de referencia de las que dependen los calculos de sus hermanas protegidas. Un clic borra el 'Resumen Dashboard' entero o la tabla de limites legales del 04 (ver RT-01), mientras que en la hoja de al lado no se puede ni tocar una celda calculada. Comparar con 03!'Proveedores' y 06!'Mapa Almacen', que son igual de nuevas y SI estan protegidas.",
+   "evidencia": "openpyxl ws.protection.sheet: '01!Resumen Dashboard'=False con 33 formulas · '06!Alertas Caducidad'=False con 12 · '07!Evolucion Mensual'=False con 35 · '04!Verificacion Temperaturas'=False (tabla legal que alimenta el VLOOKUP de 'Control Recepcion'!L, que si esta protegida) · '03!Listas'=False (tabla de IVA que alimenta el VLOOKUP de 'Pedido Actual'!H, protegida). Frente a ellas: '03!Proveedores'=True, '06!Mapa Almacen'=True.",
+   "fix": "Aplicar ws.protection.sheet=True (sin contrasena) a las cinco, dejando desbloqueadas las celdas verdes que ya lo estan (Listas!B2:B11 y Mapa Almacen ya tienen ese patron)."
+  },
+  {
+   "id": "RT-14",
+   "severidad": "media",
+   "fichero": "04-recepcion-mercancias.xlsx",
+   "ubicacion": "'Verificacion Temperaturas'!C10 y D10 frente a 'Control Recepcion'!M",
+   "hallazgo": "El libro se contradice consigo mismo en la unica familia donde la norma admite tolerancia: la nota dice «tolerancia breve de -15 °C en transporte» y el umbral computable es -18, asi que un congelado que llega a -16 —dentro de la tolerancia que el propio fichero cita— sale «✗ RECHAZAR» y pinta la celda de rojo. El registro que se guarda para una inspeccion queda con rechazos que la norma no exige.",
+   "evidencia": "'Verificacion Temperaturas' C10=-18, D10='Reg. (CE) 853/2004; tolerancia breve de -15 °C en transporte'. Evaluado con pycel: E7='Congelados', K7=-16 → L7=-18, M7='✗ RECHAZAR'; K7=-25 → '✓ CONFORME'.",
+   "fix": "O poner C10=-15 y explicar en D10 que -18 es el de conservacion y -15 el de recepcion, o anadir una cuarta columna «tolerancia» y un tercer estado «⚠ EN TOLERANCIA» entre C y la tolerancia."
+  },
+  {
+   "id": "RT-15",
+   "severidad": "media",
+   "fichero": "04-recepcion-mercancias.xlsx",
+   "ubicacion": "'Control Recepcion'!M4:M43 y 'Verificacion Temperaturas'!B4:B16",
+   "hallazgo": "El veredicto solo compara contra el MAXIMO, asi que una entrega demasiado FRIA pasa como conforme: pescado fresco recibido a -20 °C (venia congelado, o se congelo en transporte, que es una no conformidad de manual) sale «✓ CONFORME». La columna B de la tabla legal guarda el rango real («0 a 2 °C, en hielo fundente», «12-16 °C») pero como TEXTO, asi que el minimo existe en el fichero y no es computable — la misma criticidad que el R1 le puso al v1.1 en TEC-04.",
+   "evidencia": "'Verificacion Temperaturas' B9='0 a 2 °C, en hielo fundente' (texto) y C9=2 (numero). M4 solo usa C. Evaluado con pycel: E7='Pescado fresco y marisco', K7=-20 → L7=2, M7='✓ CONFORME'.",
+   "fix": "Anadir una columna numerica «Ta min.» (0 para refrigerados, vacio o -99 para congelados y N/A) y M4='...IF(AND($K4>=Tmin,$K4<=$L4),\"✓ CONFORME\",\"✗ RECHAZAR\")'."
+  },
+  {
+   "id": "RT-16",
+   "severidad": "baja",
+   "fichero": "03-pedidos-compra.xlsx",
+   "ubicacion": "'Pedido Actual'!H9:H38",
+   "hallazgo": "Si la linea tiene producto pero se queda sin categoria, el IVA cae en silencio al 10 % por el IFERROR de la VLOOKUP. En una linea de alcohol, limpieza o desechables eso son 11 puntos de menos, que es exactamente el error que DOM-07/TEC-13 venian a cerrar; y el fichero, que en la columna de al lado si sabe avisar («⚠ falta coste»), aqui no dice nada.",
+   "evidencia": "H9='=IF($B9=\"\",\"\",IFERROR(VLOOKUP($C9,Listas!$A$2:$B$11,2,FALSE),10))'. Evaluado con pycel: B9='Vino sin categoria', C9 vacia, E9=10, F9=5,00 € → H9=10, I9=55,00 €, H41 (cuota)=5,00 € en vez de los 10,50 € que corresponderian al 21 %.",
+   "fix": "H9='=IF($B9=\"\",\"\",IF($C9=\"\",\"\",IFERROR(VLOOKUP($C9,Listas!$A$2:$B$11,2,FALSE),10)))' y dejar que el aviso lo de la propia celda vacia, o poner un literal «⚠ falta categoria»."
+  },
+  {
+   "id": "RT-17",
+   "severidad": "baja",
+   "fichero": "scripts/productos-digitales/kit-inventario-v2_0/main.py",
+   "ubicacion": "main.py:verificar_cache() (la rama elif '\"\"' in formula) y el bloque 4/7 del informe",
+   "hallazgo": "El gate que el informe presenta como «verificacion data_only de las formulas nuevas» exime de comprobacion a toda formula cuyo TEXTO contenga una cadena vacia, que es el patron de guarda de practicamente todo el kit. En la pasada completa eso son 1.425 formulas de 1.725 (82,6 %): el «con valor: 300 · fallos: 0» que sostiene el verde mide el 17 % del registro. Ninguna de las formulas que este informe refuta habria sido detectada por ese gate.",
+   "evidencia": "main.py, funcion verificar_cache: «elif '\"\"' in formula: vacias += 1». Salida real de la pasada propia: «con valor: 300 · \"\" por diseno: 1425 · sin pycel: 0 · fallos: 0».",
+   "fix": "Cambiar el criterio: en vez de eximir por el texto de la formula, exigir valor cacheado en las celdas cuyas ENTRADAS estan sembradas (las filas de ejemplo) y aceptar el blanco solo cuando la fila esta vacia. Y anadir al menos un caso pycel por columna calculada nueva con un input fuera de rango, como pide la SPEC §5."
+  },
+  {
+   "id": "RT-18",
+   "severidad": "baja",
+   "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+   "ubicacion": "'Conteo Rapido'!J5:J84 (Consumo del mes)",
+   "hallazgo": "El consumo guarda el stock anterior y el actual pero no las compras del mes, que es el tercer sumando: con I vacia, Excel la trata como 0 y publica un consumo igual a la simple bajada de stock. Instrucciones!A10 lo vende como «el dato con el que se calcula el food cost real», asi que el numero que se va a usar para el food cost sale corto sin avisar — en la misma hoja donde el precio SI se avisa con «⚠ falta coste».",
+   "evidencia": "J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",$H5+$I5-$F5)'. Evaluado con pycel: H5=10, F5=8, I5 vacia → J5=2 (sin aviso). Comparar con G5='=IF($F5=\"\",\"\",IF($E5=\"\",\"⚠ falta coste\",$F5*$E5))'.",
+   "fix": "J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",IF($I5=\"\",\"⚠ faltan compras\",$H5+$I5-$F5))'."
+  },
+  {
+   "id": "RT-19",
+   "severidad": "baja",
+   "fichero": "05-control-mermas.xlsx, 07-analisis-costes-compras.xlsx",
+   "ubicacion": "05!'Dashboard Mermas'!C6 · 07!'Dashboard KPIs'!C4, C7 y C8",
+   "hallazgo": "Los objetivos que la v2.0 dejo sin parametrizar siguen siendo literales en celdas BLOQUEADAS dentro de hojas protegidas: el cliente no puede cambiarlos sin desproteger. Es una aplicacion a medias de la doctrina de §1 («parametros en celda»): en la misma hoja, el objetivo de % de mermas (B11) si es verde editable y el de numero de incidencias (C6) no.",
+   "evidencia": "openpyxl: 05!'Dashboard Mermas'!C6=20, fill=None, locked=True, hoja protegida; B11=0.03, fill=00E8F5E9, locked=False. 07!'Dashboard KPIs'!C4='28-32 %' (texto), C7='< ±5 %', C8='0', todos locked=True, mientras C5='=IFERROR($B$17*0.3,\"\")'.",
+   "fix": "Pintar C6, C4, C7 y C8 de verde con Protection(locked=False) y pasarlos a numero con su formato (0, 0,0 % y 0,0 %); el rango «28-32 %» puede partirse en dos celdas o dejarse como el limite superior."
+  },
+  {
+   "id": "RT-20",
+   "severidad": "baja",
+   "fichero": "03-pedidos-compra.xlsx",
+   "ubicacion": "'Historial Pedidos'!A5, A6 y A7",
+   "hallazgo": "Tres celdas VERDES desbloqueadas —que por convencion de la familia son dato del usuario— contienen formulas volatiles. Ademas inject_cache las congela con la fecha del build, asi que en el visor del movil el historial de ejemplo aparece fechado en el dia en que se genero el fichero y no en relacion con hoy; y la primera vez que el cliente escriba encima pierde la formula sin enterarse de que la habia.",
+   "evidencia": "openpyxl: A5='=TODAY()-30', A6='=TODAY()-20', A7='=TODAY()-10', fill=00E8F5E9, locked=False, formato dd/mm/yyyy. Leido con data_only tras inject_cache en la copia de hoy: A5=datetime(2026,7,24).",
+   "fix": "Sembrar fechas literales coherentes con el resto de los ejemplos (los de 04 y 05 son datetime fijos: 18/08/2026) en vez de formulas volatiles dentro de celdas de entrada."
+  },
+  {
+   "id": "RT-21",
+   "severidad": "baja",
+   "fichero": "06-fifo-caducidades.xlsx",
+   "ubicacion": "'Control FIFO'!A5:T54 (sin ninguna fila de ejemplo) y 'Alertas Caducidad'!B4:C9",
+   "hallazgo": "'Control FIFO' es la unica tabla del kit que se entrega completamente vacia, asi que la hoja que da nombre comercial al fichero abre con 0 lotes en los cinco estados y 0,00 € de valor en riesgo. Es justo lo contrario de lo que hace el resto de la v2.0 (§1.4 COM-27: las hojas esqueleto dejan de estar en blanco) y deja sin demostrar el semaforo de cuatro estados, que es la mejora estrella del fichero.",
+   "evidencia": "openpyxl: 'Control FIFO' B5:B54 todas None; leido con data_only tras inject_cache, 'Alertas Caducidad' B4=0, C4=0, B9=0, C9=0. Verificado que el motor funciona: con 3 lotes sembrados a mano (caducado -7 d, urgente +1 d, consumo preferente vencido) las alertas dan 1/56,00 €, 1/6,20 € y 1/14,50 € y el total 3/76,70 €.",
+   "fix": "Sembrar 4-6 lotes de ejemplo con fechas RELATIVAS calculadas al generar (no formulas) que cubran los cuatro estados, marcados «(ejemplo)» como en 03, 04 y 05."
+  },
+  {
+   "id": "RT-22",
+   "severidad": "baja",
+   "fichero": "05-control-mermas.xlsx, 07-analisis-costes-compras.xlsx",
+   "ubicacion": "05!'Dashboard Mermas'!B8 · 07!'Top 20 Productos'!L4:L8",
+   "hallazgo": "Los dos rankings resuelven los empates quedandose en silencio con la primera coincidencia. El 07 lo asume y lo explica en 'Top 20 Productos'!A26; el 05 no dice nada, y ahi el empate es lo normal (con pocas mermas al mes, media docena de motivos empatan a 1 o 2), asi que el «motivo mas frecuente» sera casi siempre el primero de la lista auxiliar.",
+   "evidencia": "05!B8='=IFERROR(INDEX('Analisis por Categoria'!$H$4:$H$13,MATCH(MAX('Analisis por Categoria'!$I$4:$I$13),'Analisis por Categoria'!$I$4:$I$13,0)),\"\")'. Con los tres ejemplos sembrados los motivos 'Error de elaboracion', 'Cadena de frio rota' y 'Caducidad superada' empatan a 1 y B8 devuelve 'Caducidad superada' solo por estar en H4. Verificado en 07: poniendo E5=1920 (empate con E4), L4:L8 = ['Solomillo de ternera','Solomillo de ternera','Pechuga de pollo',...].",
+   "fix": "Anadir el numero de veces al lado (B8 & \" (\" & MAX(...) & \")\") y una nota como la de 07!A26, o desempatar con un criterio economico (el motivo con mas coste, no con mas lineas)."
+  }
+ ]
+}

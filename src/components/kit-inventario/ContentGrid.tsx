@@ -6,14 +6,14 @@ import FadeIn from '../ebook/FadeIn';
 
 const templates = [
   { icon: Package, title: 'Inventario de Stock Diario', desc: 'Control de stock por zona (cocina, barra, almacen) con par levels, alertas de reposicion automaticas y valoracion de stock. Semaforo rojo/amarillo/verde.' },
-  { icon: Users, title: 'Fichas de Proveedores', desc: 'Directorio completo, comparativa de precios entre 5 proveedores por producto, evaluacion de calidad/precio/entrega y condiciones comerciales.' },
-  { icon: ShoppingCart, title: 'Pedidos de Compra', desc: 'Generacion automatica de pedidos desde niveles de stock. Dropdown de proveedores, subtotales con IVA y formato imprimible para enviar.' },
+  { icon: Users, title: 'Fichas de Proveedores', desc: 'Directorio completo, comparativa de precios entre 5 proveedores por producto, evaluacion en 5 criterios con nota A/B/C/D y condiciones comerciales.' },
+  { icon: ShoppingCart, title: 'Pedidos de Compra', desc: 'Pasale tus productos y el pedido se calcula solo: IVA por linea (por producto y por categoria), subtotales, cuota, total y desglose por tipo, listo para enviar al proveedor. Avisa si no llegas al pedido minimo. La columna "A Pedir" del inventario te dice que llevar aqui.' },
   { icon: ClipboardCheck, title: 'Recepcion de Mercancias', desc: 'Checklist de verificacion: cantidad, calidad, temperatura, caducidad. Registro de incidencias y discrepancias vs pedido original.' },
-  { icon: Trash2, title: 'Control de Mermas', desc: 'Registro diario por categoria (caducidad, preparacion, devolucion). Coste automatico, dashboard mensual y plan de accion. Objetivo: <3%.' },
-  { icon: RotateCcw, title: 'FIFO y Caducidades', desc: 'Control de rotacion First In First Out con alertas por colores: rojo (caduca manana), amarillo (3 dias), verde (OK). Mapa de almacen incluido.' },
+  { icon: Trash2, title: 'Control de Mermas', desc: 'Registro diario con 10 motivos tipificados (caducidad, sobreproduccion, merma de despiece, rotura de frio, descuadre sin justificar...). Coste automatico, dashboard mensual y plan de accion. Objetivo: <3%.' },
+  { icon: RotateCcw, title: 'FIFO y Caducidades', desc: 'Control de rotacion FIFO/FEFO con semaforo de 5 estados. Distingue la caducidad (retirada obligatoria) del consumo preferente vencido (revision organoleptica), que es lo que evita tirar una conserva buena. Mapa de almacen con 11 zonas y su temperatura incluido.' },
   { icon: BarChart3, title: 'Analisis de Costes de Compras', desc: 'Coste por categoria, evolucion mensual, top 20 productos, alertas de variacion de precios (>5%) y dashboard de KPIs: food cost %, coste por cubierto.' },
   { icon: Clock, title: 'BONUS: Inventario Rapido Mensual', desc: 'Conteo simplificado de una pagina para inventario mensual completo. Auto-calcula valoracion y variaciones vs mes anterior.' },
-  { icon: Calculator, title: 'BONUS: Calculadora Punto de Pedido', desc: 'Calcula cuando pedir cada ingrediente segun consumo diario, tiempo de entrega y stock de seguridad. Simulador de demanda variable.' },
+  { icon: Calculator, title: 'BONUS: Calculadora Punto de Pedido', desc: 'Calcula cuando pedir cada ingrediente segun consumo diario, tiempo de entrega y stock de seguridad, con cantidad economica de pedido (EOQ) capada por vida util y por tu stock maximo.' },
 ];
 
 const galleryImages = [

@@ -66,15 +66,15 @@ const data: KitExcelData = {
     faqs: [
       {
         q: '¿Sirve para cualquier tipo de restaurante?',
-        a: 'Si. Las categorias estan pre-cargadas para hosteleria: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza.',
+        a: 'Si. Las 10 categorias estan pre-cargadas para hosteleria: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros.',
       },
       {
         q: '¿Las plantillas se conectan entre si?',
-        a: 'Si. Los niveles de stock alimentan las sugerencias de pedido. Las fichas de proveedores se enlazan con los pedidos de compra.',
+        a: 'Son nueve ficheros independientes que hablan el mismo idioma: las mismas 10 categorias en las 9 plantillas y las mismas unidades en las 8 de producto. La columna "A Pedir" te dice cuanto reponer y el desplegable de proveedores del pedido sale de la hoja Proveedores de ese mismo fichero, que rellenas una vez.',
       },
       {
         q: '¿Cumple con los requisitos de APPCC?',
-        a: 'Si. Incluye control de temperaturas en recepcion, trazabilidad FIFO y registro de caducidades con alertas por colores.',
+        a: 'Te ayudan a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC; no sustituyen al plan ni a un asesor. Incluyen control de temperaturas en recepcion, trazabilidad FIFO/FEFO y registro de caducidades con alertas por colores.',
       },
       {
         q: '¿Hay garantia de devolucion?',
@@ -101,7 +101,7 @@ const data: KitExcelData = {
 
   hero: {
     badgeTone: 'red',
-    badge: 'Los restaurantes pierden entre 3.000 y 5.000 EUR/ano en mermas evitables',
+    badge: 'Las mermas sin control se comen un 3-5 % de tus compras, por lo que vemos auditando cocinas: contarlas es el primer paso para recuperarlas',
     titlePre: 'Kit Control de ',
     titleGold: 'Inventario y Compras',
     // sin titlePost (Forma B: subtítulo en bloque, no inline)
@@ -111,7 +111,7 @@ const data: KitExcelData = {
     checkItems: [
       'Inventario diario con par levels y alertas de reposicion automaticas',
       'Fichas de proveedores con comparativa de precios entre 5 proveedores',
-      'Pedidos de compra auto-calculados desde niveles de stock',
+      '9 plantillas coherentes entre si: las mismas 10 categorias en todas y las mismas unidades en las 8 de producto',
       'Control de recepcion con verificacion de temperatura y caducidad',
       'Mermas por categoria con dashboard y plan de accion',
     ],
@@ -133,14 +133,14 @@ const data: KitExcelData = {
     // fourCols omitido → grid-cols-2 md:grid-cols-3 (9 tarjetas, paridad ContentGrid.tsx)
     templates: [
       { icon: 'Package', title: 'Inventario de Stock Diario', desc: 'Control de stock por zona (cocina, barra, almacen) con par levels, alertas de reposicion automaticas y valoracion de stock. Semaforo rojo/amarillo/verde.' },
-      { icon: 'Users', title: 'Fichas de Proveedores', desc: 'Directorio completo, comparativa de precios entre 5 proveedores por producto, evaluacion de calidad/precio/entrega y condiciones comerciales.' },
-      { icon: 'ShoppingCart', title: 'Pedidos de Compra', desc: 'Generacion automatica de pedidos desde niveles de stock. Dropdown de proveedores, subtotales con IVA y formato imprimible para enviar.' },
+      { icon: 'Users', title: 'Fichas de Proveedores', desc: 'Directorio completo, comparativa de precios entre 5 proveedores por producto, evaluacion en 5 criterios con nota A/B/C/D y condiciones comerciales.' },
+      { icon: 'ShoppingCart', title: 'Pedidos de Compra', desc: 'Pasale tus productos y el pedido se calcula solo: IVA por linea (por producto y por categoria), subtotales, cuota, total y desglose por tipo, listo para enviar al proveedor. Avisa si no llegas al pedido minimo. La columna "A Pedir" del inventario te dice que llevar aqui.' },
       { icon: 'ClipboardCheck', title: 'Recepcion de Mercancias', desc: 'Checklist de verificacion: cantidad, calidad, temperatura, caducidad. Registro de incidencias y discrepancias vs pedido original.' },
-      { icon: 'Trash2', title: 'Control de Mermas', desc: 'Registro diario por categoria (caducidad, preparacion, devolucion). Coste automatico, dashboard mensual y plan de accion. Objetivo: <3%.' },
-      { icon: 'RotateCcw', title: 'FIFO y Caducidades', desc: 'Control de rotacion First In First Out con alertas por colores: rojo (caduca manana), amarillo (3 dias), verde (OK). Mapa de almacen incluido.' },
+      { icon: 'Trash2', title: 'Control de Mermas', desc: 'Registro diario con 10 motivos tipificados (caducidad, sobreproduccion, merma de despiece, rotura de frio, descuadre sin justificar...). Coste automatico, dashboard mensual y plan de accion. Objetivo: <3%.' },
+      { icon: 'RotateCcw', title: 'FIFO y Caducidades', desc: 'Control de rotacion FIFO/FEFO con semaforo de 5 estados. Distingue la caducidad (retirada obligatoria) del consumo preferente vencido (revision organoleptica), que es lo que evita tirar una conserva buena. Mapa de almacen con 11 zonas y su temperatura incluido.' },
       { icon: 'BarChart3', title: 'Analisis de Costes de Compras', desc: 'Coste por categoria, evolucion mensual, top 20 productos, alertas de variacion de precios (>5%) y dashboard de KPIs: food cost %, coste por cubierto.' },
       { icon: 'Clock', title: 'BONUS: Inventario Rapido Mensual', desc: 'Conteo simplificado de una pagina para inventario mensual completo. Auto-calcula valoracion y variaciones vs mes anterior.' },
-      { icon: 'Calculator', title: 'BONUS: Calculadora Punto de Pedido', desc: 'Calcula cuando pedir cada ingrediente segun consumo diario, tiempo de entrega y stock de seguridad. Simulador de demanda variable.' },
+      { icon: 'Calculator', title: 'BONUS: Calculadora Punto de Pedido', desc: 'Calcula cuando pedir cada ingrediente segun consumo diario, tiempo de entrega y stock de seguridad, con cantidad economica de pedido (EOQ).' },
     ],
   },
 
@@ -151,10 +151,10 @@ const data: KitExcelData = {
     subtitle:
       'No son plantillas genericas de almacen. Son herramientas disenadas por un chef en cocina desde los 17 años y consultor gastronómico desde 2010.',
     reasons: [
-      { icon: 'Utensils', title: 'Disenadas para Hosteleria', desc: 'Categorias pre-cargadas para restaurantes: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza. No son plantillas genericas de almacen.' },
-      { icon: 'Calculator', title: 'Formulas que Ahorran Dinero', desc: 'Par levels con alertas, coste de mermas automatico, variacion de precios entre proveedores y food cost % por categoria. Los numeros trabajan por ti.' },
-      { icon: 'ShieldCheck', title: 'Cumplimiento APPCC', desc: 'Control de temperaturas en recepcion, trazabilidad FIFO, registro de caducidades y mapa de almacen. Todo lo que necesitas para las inspecciones.' },
-      { icon: 'RefreshCw', title: 'Software de Gestión Cobra 60 EUR/mes. Esto es 14 EUR', desc: 'Las mismas funciones que los SaaS de gestion de inventario, pero en Excel por un pago unico. Sin suscripcion, sin limite de productos.' },
+      { icon: 'Utensils', title: 'Disenadas para Hosteleria', desc: 'Las 10 categorias canonicas de la hosteleria pre-cargadas en las 9 plantillas, con desplegable: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros. No son plantillas genericas de almacen.' },
+      { icon: 'Calculator', title: 'Formulas que Ahorran Dinero', desc: 'Par levels con alertas, coste de mermas automatico, variacion de precios entre proveedores y reparto del gasto por categoria. El food cost sobre consumo y el coste por cubierto, en el dashboard de KPIs. Los numeros trabajan por ti.' },
+      { icon: 'ShieldCheck', title: 'Registros para tu Plan APPCC', desc: 'Te ayuda a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC: control de temperaturas, trazabilidad FIFO/FEFO, registro de caducidades y mapa de almacen. No sustituye al plan ni a un asesor.' },
+      { icon: 'RefreshCw', title: 'Software de Gestión Cobra 50-100 EUR/mes. Esto es 14 EUR', desc: 'Para controlar stock, proveedores y mermas sin pagar una suscripcion, esto es suficiente: en Excel, por un pago unico y sin usuarios que pagar. Vienen preparadas 100 referencias de inventario, 100 lineas de merma al mes, 50 lotes de FIFO y 30 lineas de pedido; ampliables desprotegiendo la hoja (no lleva contrasena).' },
     ],
     compatLabel: 'Compatible con cualquier software de hojas de calculo:',
     compatPills: [
@@ -214,15 +214,17 @@ const data: KitExcelData = {
   faqs: [
     {
       q: '¿Sirve para cualquier tipo de restaurante?',
-      a: 'Si. Las categorias estan pre-cargadas para hosteleria en general: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza. Solo elimina las que no apliquen a tu negocio y anade las que falten.',
+      a: 'Si. Las 10 categorias estan pre-cargadas para hosteleria en general: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros. Solo elimina las que no apliquen a tu negocio y anade las que falten.',
     },
     {
       q: '¿Las plantillas se conectan entre si?',
-      a: 'Si. Los niveles de stock alimentan automaticamente las sugerencias de pedido. Las fichas de proveedores se enlazan con los pedidos de compra. El control de mermas calcula el coste en tiempo real.',
+      a: 'Son nueve ficheros independientes y a proposito: no se enlazan entre si, porque un Excel enlazado se rompe en cuanto mueves un fichero de carpeta y verias #!REF!. Lo que si comparten es el idioma: las mismas 10 categorias en las 9 plantillas y las mismas unidades en las 8 de producto (la de recepcion clasifica ademas por familia normativa, porque el limite legal de temperatura lo fija la norma y no tu categoria de compra, y trae el puente entre las dos listas). En el inventario, la columna "A Pedir" te dice cuanto reponer cuando el stock baja del par level, y el desplegable de proveedores del pedido sale de la hoja Proveedores del propio fichero de pedidos, que rellenas una vez. Los datos de ejemplo son los mismos en los nueve: los mismos productos, los mismos precios y los mismos seis proveedores.',
     },
     {
       q: '¿Cumple con los requisitos de APPCC?',
-      a: 'Si. La plantilla de recepcion incluye control de temperaturas y la de FIFO gestiona caducidades con alertas por colores. Ambas son trazables y auditables para inspecciones.',
+      a: 'Te ayudan a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC; no sustituyen al plan ni a un asesor. La plantilla de recepcion incluye control de temperaturas por familia de producto y la de FIFO/FEFO gestiona caducidades con alertas por colores, utiles para tus registros e inspecciones. Si necesitas el plan APPCC completo, revisa el Pack APPCC.',
+      aHtml:
+        'Te ayudan a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC; no sustituyen al plan ni a un asesor. La plantilla de recepcion incluye control de temperaturas por familia de producto y la de FIFO/FEFO gestiona caducidades con alertas por colores, utiles para tus registros e inspecciones. Si necesitas el plan APPCC completo, revisa el <a href="/pack-appcc" class="text-[#FFD700] underline underline-offset-2 hover:text-white">Pack APPCC</a>.',
     },
     {
       q: '¿En que se diferencia del software de inventario?',
@@ -230,7 +232,7 @@ const data: KitExcelData = {
     },
     {
       q: '¿Puedo usarlo en varios restaurantes?',
-      a: 'Si. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para grupos de restauracion, multi-unidades y consultores.',
+      a: 'Si. Licencia personal para tu negocio — puedes usar las plantillas en todos tus locales. ¿Eres consultor y quieres usarlas con tus clientes? Escribenos a info@aichef.pro.',
     },
     {
       q: '¿Hay garantia de devolucion?',
@@ -245,7 +247,7 @@ const data: KitExcelData = {
     items: [
       'Inventario diario con par levels y alertas de reposicion',
       'Fichas de proveedores con comparativa de precios',
-      'Pedidos de compra auto-generados desde stock',
+      'Pedidos de compra con IVA por linea y aviso de pedido minimo',
       'Recepcion de mercancias con control de temperatura',
       'Control de mermas con dashboard y plan de accion',
       'FIFO y caducidades con semaforo de colores',
@@ -264,7 +266,7 @@ const data: KitExcelData = {
       { name: 'Laura Martinez', role: 'Directora de operaciones, grupo de 4 restaurantes', text: 'La comparativa de proveedores nos ahorro mas de 2.000 EUR el primer trimestre. Tener los precios de 5 proveedores en una tabla con semaforo de variacion es brutal para negociar.', avatar: '/avatars/avatar-2.jpg' },
       { name: 'Carlos Ramos', role: 'Propietario, gastrobar en Barcelona', text: 'Antes haciamos pedidos a ojo. Con la plantilla de pedidos de compra y los puntos de reposicion, ya no nos quedamos sin producto un viernes noche ni tiramos genero el lunes.', avatar: '/avatars/avatar-3.jpg' },
       { name: 'Patricia Vega', role: 'Jefa de economato, hotel 4* (180 habitaciones)', text: 'El control de recepcion de mercancias nos ha evitado 3 incidencias de temperatura en el ultimo mes. Ahora todo queda registrado: proveedor, cantidad, temperatura, caducidad.', avatar: '/avatars/avatar-4.jpg' },
-      { name: 'Andres Lopez', role: 'Chef ejecutivo, catering de eventos', text: 'El FIFO por colores es genial. Mis cocineros lo entienden de un vistazo: rojo = caduca manana, amarillo = 3 dias, verde = OK. Las perdidas por caducidad bajaron un 80%.', avatar: '/avatars/avatar-5.jpg' },
+      { name: 'Andres Lopez', role: 'Chef ejecutivo, catering de eventos', text: 'El FIFO por colores es genial. Mis cocineros lo entienden de un vistazo por el color, sin tener que echar cuentas con las fechas. Las perdidas por caducidad bajaron un 80%.', avatar: '/avatars/avatar-5.jpg' },
       { name: 'Elena Ruiz', role: 'Consultora gastronomica, +12 anos', text: 'Lo uso con todos mis clientes. Es el kit mas completo que he visto en espanol: desde el inventario diario hasta el analisis de costes con dashboard. Profesionaliza la gestion desde el dia uno.', avatar: '/avatars/avatar-6.jpg' },
       { name: 'Jorge Navarro', role: 'Gerente, pizzeria artesanal (2 locales)', text: 'La calculadora de punto de pedido nos cambio la vida. Sabemos exactamente cuando pedir cada ingrediente segun nuestro consumo diario y el tiempo de entrega del proveedor.', avatar: '/avatars/avatar-7.jpg' },
       { name: 'Diego Serrano', role: 'Director de compras, cadena de restaurantes', text: 'El analisis de costes por categoria me da vision total: que porcentaje gastamos en carnicos, pescados, verdura, secos. Ahora negocio con datos reales, no con sensaciones.', avatar: '/avatars/avatar-8.jpg' },
@@ -292,7 +294,7 @@ const data: KitExcelData = {
     { href: '/pro-prompts-ebook', label: 'Pro Prompts eBook' },
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-inventario',

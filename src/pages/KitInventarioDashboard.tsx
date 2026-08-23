@@ -14,10 +14,10 @@ import WhatsAppProductSupport from '@/components/shared/WhatsAppProductSupport';
 const TEMPLATES = [
   { key: 'stock', icon: Package, title: 'Inventario de Stock Diario', desc: 'Par levels, alertas de reposicion y valoracion de stock.' },
   { key: 'proveedores', icon: Users, title: 'Fichas de Proveedores', desc: 'Directorio, comparativa precios y evaluacion.' },
-  { key: 'pedidos', icon: ShoppingCart, title: 'Pedidos de Compra', desc: 'Generacion automatica desde niveles de stock.' },
+  { key: 'pedidos', icon: ShoppingCart, title: 'Pedidos de Compra', desc: 'IVA por linea, desglose por tipo y aviso de pedido minimo.' },
   { key: 'recepcion', icon: ClipboardCheck, title: 'Recepcion de Mercancias', desc: 'Verificacion cantidad, calidad, temperatura, caducidad.' },
   { key: 'mermas', icon: Trash2, title: 'Control de Mermas', desc: 'Registro diario, coste automatico y dashboard.' },
-  { key: 'fifo', icon: RotateCcw, title: 'FIFO y Caducidades', desc: 'Rotacion con alertas por colores y mapa almacen.' },
+  { key: 'fifo', icon: RotateCcw, title: 'FIFO y Caducidades', desc: 'Semaforo de 5 estados, valor en riesgo y mapa de almacen.' },
   { key: 'costes', icon: BarChart3, title: 'Analisis de Costes', desc: 'Food cost %, coste por cubierto, tendencias.' },
   { key: 'bonus-inventario-rapido', icon: Clock, title: 'BONUS: Inventario Rapido Mensual', desc: 'Conteo simplificado con valoracion automatica.' },
   { key: 'bonus-calculadora', icon: Calculator, title: 'BONUS: Calculadora Punto de Pedido', desc: 'Punto optimo de reposicion y EOQ.' },

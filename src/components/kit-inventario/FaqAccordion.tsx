@@ -5,15 +5,15 @@ import FadeIn from '../ebook/FadeIn';
 const faqs = [
   {
     q: '¿Sirve para cualquier tipo de restaurante?',
-    a: 'Si. Las categorias estan pre-cargadas para hosteleria en general: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza. Solo elimina las que no apliquen a tu negocio y anade las que falten.',
+    a: 'Si. Las 10 categorias estan pre-cargadas para hosteleria en general: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros. Solo elimina las que no apliquen a tu negocio y anade las que falten.',
   },
   {
     q: '¿Las plantillas se conectan entre si?',
-    a: 'Si. Los niveles de stock alimentan automaticamente las sugerencias de pedido. Las fichas de proveedores se enlazan con los pedidos de compra. El control de mermas calcula el coste en tiempo real.',
+    a: 'Son nueve ficheros independientes y a proposito: no se enlazan entre si, porque un Excel enlazado se rompe en cuanto mueves un fichero de carpeta y verias #!REF!. Lo que si comparten es el idioma: las mismas 10 categorias en las 9 plantillas y las mismas unidades en las 8 de producto. En el inventario, la columna "A Pedir" te dice cuanto reponer cuando el stock baja del par level, y el desplegable de proveedores del pedido sale de la hoja Proveedores del propio fichero de pedidos, que rellenas una vez.',
   },
   {
     q: '¿Cumple con los requisitos de APPCC?',
-    a: 'Si. La plantilla de recepcion incluye control de temperaturas y la de FIFO gestiona caducidades con alertas por colores. Ambas son trazables y auditables para inspecciones.',
+    a: 'Te ayudan a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC; no sustituyen al plan ni a un asesor. La plantilla de recepcion incluye control de temperaturas por familia de producto y la de FIFO/FEFO gestiona caducidades con alertas por colores, utiles para tus registros e inspecciones. Si necesitas el plan APPCC completo, revisa el Pack APPCC.',
   },
   {
     q: '¿En que se diferencia del software de inventario?',
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     q: '¿Puedo usarlo en varios restaurantes?',
-    a: 'Si. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para grupos de restauracion, multi-unidades y consultores.',
+    a: 'Si. Licencia personal para tu negocio — puedes usar las plantillas en todos tus locales. ¿Eres consultor y quieres usarlas con tus clientes? Escribenos a info@aichef.pro.',
   },
   {
     q: '¿Hay garantia de devolucion?',

@@ -5,22 +5,22 @@ const reasons = [
   {
     icon: Utensils,
     title: 'Disenadas para Hosteleria',
-    desc: 'Categorias pre-cargadas para restaurantes: carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza. No son plantillas genericas de almacen.',
+    desc: 'Las 10 categorias canonicas de la hosteleria pre-cargadas en las 9 plantillas, con desplegable: carnicos, pescados, lacteos, verduras/frutas, secos/granos, congelados, bebidas alcoholicas, bebidas no alcoholicas, limpieza y otros. No son plantillas genericas de almacen.',
   },
   {
     icon: Calculator,
     title: 'Formulas que Ahorran Dinero',
-    desc: 'Par levels con alertas, coste de mermas automatico, variacion de precios entre proveedores y food cost % por categoria. Los numeros trabajan por ti.',
+    desc: 'Par levels con alertas, coste de mermas automatico, variacion de precios entre proveedores y reparto del gasto por categoria. El food cost sobre consumo y el coste por cubierto, en el dashboard de KPIs. Los numeros trabajan por ti.',
   },
   {
     icon: ShieldCheck,
-    title: 'Cumplimiento APPCC',
-    desc: 'Control de temperaturas en recepcion, trazabilidad FIFO, registro de caducidades y mapa de almacen. Todo lo que necesitas para las inspecciones.',
+    title: 'Registros para tu Plan APPCC',
+    desc: 'Te ayuda a documentar los registros de recepcion y trazabilidad que pide tu plan APPCC: control de temperaturas, trazabilidad FIFO/FEFO, registro de caducidades y mapa de almacen. No sustituye al plan ni a un asesor.',
   },
   {
     icon: RefreshCw,
-    title: 'Software de Gestión Cobra 60 EUR/mes. Esto es 14 EUR',
-    desc: 'Las mismas funciones que los SaaS de gestion de inventario, pero en Excel por un pago unico. Sin suscripcion, sin limite de productos.',
+    title: 'Software de Gestión Cobra 50-100 EUR/mes. Esto es 14 EUR',
+    desc: 'Para controlar stock, proveedores y mermas sin pagar una suscripcion, esto es suficiente: en Excel, por un pago unico y sin usuarios que pagar. Vienen preparadas 100 referencias de inventario, 100 lineas de merma al mes, 50 lotes de FIFO y 30 lineas de pedido; ampliables desprotegiendo la hoja (no lleva contrasena).',
   },
 ];
 

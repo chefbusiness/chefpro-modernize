@@ -1,0 +1,268 @@
+{
+  "lente": "REFUTADOR DE DOMINIO — Jefe/a de compras y almacén (economato) de restaurante con 15 años de oficio: ¿me sirve esto un LUNES? Copia propia generada con CLAUDE_SCRATCHPAD=.../propio-ref-dominio python3 kit-inventario-v2_0/main.py --dry-run --solo motor,a,b,c (la copia sin --solo NO trae los grupos: ver RD-26). Se cruzan los 9 xlsx entre sí (datos sembrados, precios, unidades, par levels, temperaturas, IVA, FIFO/FEFO, EOQ) y contra el R1.",
+  "hallazgos": [
+    {
+      "id": "RD-01",
+      "severidad": "alta",
+      "fichero": "02-fichas-proveedores.xlsx · 03-pedidos-compra.xlsx · 04-recepcion-mercancias.xlsx · 07-analisis-costes-compras.xlsx",
+      "ubicacion": "02!'Directorio Proveedores'!B4:B9 · 03!Proveedores!A4:A9 · 04!'Control Recepción'!B4:B6 · 07!'Top 20 Productos'!K4:K11",
+      "hallazgo": "El kit envía DOS directorios de proveedores de ejemplo distintos, con seis nombres cada uno y ninguno coincide. El pedido (03) y la recepción (04) hablan de unos proveedores; el directorio homologado (02), la comparativa de precios, el Top 20 (07) y la calculadora (BONUS-09) hablan de otros. Un jefe de compras no puede cotejar el albarán de «Cárnicas del Mercado» contra la ficha homologada de «Cárnicas del Norte» porque son dos universos ficticios paralelos. Justo la promesa que la §5 de la SPEC va a escribir en la landing («coherentes entre sí… el desplegable de proveedores sale de tu propio directorio») queda desmentida por los propios datos de ejemplo.",
+      "evidencia": "02!'Directorio Proveedores'!B4='Cárnicas del Norte (ejemplo)', B5='Pescados Ría Fresca (ejemplo)', B6='Frutas y Verduras La Huerta (ejemplo)', B7='Distribuciones Economato Sur (ejemplo)', B8='Bebidas y Distribución Levante (ejemplo)', B9='Higiene Profesional HORECA (ejemplo)'. || 03!Proveedores!A4='Cárnicas del Mercado (ejemplo)', A5='Pescados del Puerto (ejemplo)', A6='La Huerta de Temporada (ejemplo)', A7='Almacén Central de Secos (ejemplo)', A8='Bodega y Bebidas (ejemplo)', A9='Higiene HORECA (ejemplo)'. || 04!'Control Recepción'!B4='Cárnicas del Mercado', B5='Pescados del Puerto', B6='La Huerta de Temporada'. || 07!'Top 20 Productos'!K4='Cárnicas del Norte', K5='Pescados Ría Fresca'. || BONUS-09!Calculadora!N4='Cárnicas del Norte'.",
+      "fix": "Un único juego de 6 proveedores de ejemplo, replicado literalmente en 02!Directorio, 02!Condiciones Comerciales, 02!Evaluación, 03!Proveedores, 04!'Control Recepción'/'Registro Incidencias', 07!'Top 20'!K y BONUS-09!N. Es una constante en motor.py, no seis listas por grupo."
+    },
+    {
+      "id": "RD-02",
+      "severidad": "alta",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx · 01-inventario-stock-diario.xlsx",
+      "ubicacion": "BONUS-09!Calculadora!H4:H11 vs 01!Cocina!E5:F24, 01!Barra!E5:F19; 01!Instrucciones!A20",
+      "hallazgo": "El kit da TRES puntos de pedido distintos para el mismo producto y en dos casos el de BONUS-09 está por encima del par MAX de 01, es decir manda reponer cuando ya tienes más de lo que la otra plantilla te permite tener. Además la regla que 01!Instrucciones!A20 propone («consumo diario × plazo de entrega × 1,3») no reproduce ni sus propios par levels sembrados en 5 de los 8 productos que comparten las dos plantillas. El lunes, el encargado tiene que elegir a qué fichero del mismo kit hacer caso.",
+      "evidencia": "Patata: BONUS-09!Calculadora!D8=18, E8=2, F8=2 → G8=36, H8='=IF(...,$D8*$E8+$G8)'=72 kg de punto de pedido, mientras 01!Cocina!E12=25 (par level) y F12=60 (par MAX). Arroz: BONUS-09!D10=4, E10=4, F10=3 → H10=28 kg frente a 01!Cocina!E16=10 y F16=25 (par max). Pollo: BONUS-09!H4=6·1+6=12 frente a 01!Cocina!E5=8. Solomillo: H5=6 frente a 01!Cocina!E6=3. Leche: H7=60 = exactamente el par max 01!Barra!F6=60. Y la regla de 01!Instrucciones!A20 sobre la patata da 18×2×1,3=46,8, ni 25 ni 72.",
+      "fix": "Sembrar BONUS-09 derivando el consumo diario DE los par levels de 01 (o al revés) y añadir en 01!Instrucciones que el par level es el punto de pedido de BONUS-09, no otra regla. Y capar la cantidad sugerida por el par max de 01."
+    },
+    {
+      "id": "RD-03",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "04!'Control Recepción'!A4:O6 vs 04!'Registro Incidencias'!A4:K6",
+      "hallazgo": "Las dos hojas de ejemplo del 04 se contradicen sobre los mismos albaranes. La incidencia reclama 64 € por 2 kg que faltan en un albarán que la hoja de recepción registra como servido completo y conforme; y la falta real que sí registra la recepción (2 kg de merluza) no aparece en el registro de incidencias. El fichero que se vende como prueba documental ante una inspección se entrega con los ejemplos descuadrados: quien copie el patrón aprende a llevar dos registros que no cuadran.",
+      "evidencia": "04!'Control Recepción'!C4='ALB-24518', D4='Solomillo de ternera (ejemplo)', G4=12, H4=12 → I4='=IF(OR($G4=\"\",$H4=\"\"),\"\",$H4-$G4)'=0, N4='✓', O4 vacía. || 04!'Registro Incidencias'!B5='ALB-24518', D5='Solomillo de ternera (ejemplo)', E5='Cantidad incorrecta', F5='Faltan 2 kg de los 12 pedidos', I5=64. || En sentido inverso: 04!'Control Recepción'!G5=8, H5=6 (−2 kg de merluza) y la única incidencia de ese albarán (Registro Incidencias!B4='ALB-0091') es de temperatura, no de cantidad. || Y 'Registro Incidencias'!B6='ALB-7742' habla de «Tomate rama» cuando ese albarán en la recepción (C6) es de «Huevos M, docena».",
+      "fix": "Escribir los tres ejemplos como UNA historia: mismo albarán, misma cantidad, misma familia y el importe reclamado derivado de la diferencia y del precio."
+    },
+    {
+      "id": "RD-04",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx · 06-fifo-caducidades.xlsx · 04-recepcion-mercancias.xlsx",
+      "ubicacion": "01!Cocina!C19 · 06!'Mapa Almacén'!A6:C6 · 04!'Verificación Temperaturas'!A15:B15",
+      "hallazgo": "Los huevos vienen clasificados como «Lácteos». Como el mapa de almacén manda los lácteos a la cámara de elaborados a 0-4 °C, el kit termina diciéndole al usuario que refrigere los huevos, justo lo contrario de lo que su propia tabla legal de recepción dice dos ficheros más allá. Refrigerar y volver a sacar los huevos provoca condensación en la cáscara y es lo que el Reg. (CE) 589/2008 prohíbe expresamente antes de la venta. Ninguna de las 10 categorías canónicas sirve para los huevos, y tampoco hay zona de almacén para ellos.",
+      "evidencia": "01!Cocina!B19='Huevos M', C19='Lácteos', D19='docena'. || 06!'Mapa Almacén'!A6='Cámara elaborados', B6='0-4 °C', C6='Lácteos, elaborados propios, 5.ª gama y postres' (y la DV de 06!'Control FIFO'!R5:R54 sólo ofrece esas 9 zonas). || 04!'Verificación Temperaturas'!A15='Huevos', B15='Temperatura ambiente constante, sin cambios bruscos; no refrigerar antes de la venta', C15='N/A', D15='Reg. (CE) 589/2008, art. 2'.",
+      "fix": "Sacar los huevos de «Lácteos» (a «Otros» con nota, o abrir la categoría) y añadir la zona «Economato / huevos a temperatura ambiente constante» al mapa y a la DV."
+    },
+    {
+      "id": "RD-05",
+      "severidad": "alta",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "06!'Mapa Almacén'!A10:C10 y DV de 06!'Control FIFO'!R5:R54",
+      "hallazgo": "El mapa de almacén guarda los productos de limpieza y los químicos en el mismo economato seco que las conservas y los granos. Separar productos químicos de alimentos es de las primeras cosas que mira una inspección (Reg. (CE) 852/2004, Anexo II) y el propio fichero lo sabe: para los residuos sí escribe «fuera del circuito de alimentos». No hay ninguna zona de químicos en las 9 del desplegable, así que el usuario que siga el mapa no tiene dónde ponerlos.",
+      "evidencia": "06!'Mapa Almacén'!A10='Economato seco', C10='Secos y granos, conservas, bebidas no alcohólicas y limpieza', E10='Producto a ≥ 10 cm del suelo y separado de la pared'. || Contraste: A12='Residuos', C12='Residuos y envases', E12='Fuera del circuito de alimentos; cubos con tapa y pedal'. || Los productos afectados existen y están sembrados: 01!Almacén!B10='Detergente de lavavajillas', B11='Desengrasante de cocina', B12='Lejía alimentaria', todos con C='Limpieza'. || La DV de 06!'Control FIFO'!R5:R54 lista 9 zonas y ninguna es de químicos.",
+      "fix": "Décima zona «Almacén de productos químicos y limpieza — separado y señalizado, nunca sobre ni junto a alimentos» en 'Mapa Almacén'!A13 y en la DV; quitar «y limpieza» de C10."
+    },
+    {
+      "id": "RD-06",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "04!'Control Recepción'!M4:M43 y 04!'Verificación Temperaturas'!C4:C16",
+      "hallazgo": "La conformidad de temperatura sólo tiene techo. Un pescado que llega a −6 °C (congelado y descongelado en tránsito, motivo clásico de rechazo) o una caja de lechuga a −2 °C (quemada por frío) salen «✓ CONFORME» porque cumplen el «≤ máximo». Al revés, un congelado a −15 °C sale «✗ RECHAZAR» aunque la propia tabla escribe que −15 es tolerancia admitida en transporte. Es decir: la única fórmula de decisión del fichero de recepción falla en los dos extremos.",
+      "evidencia": "04!'Control Recepción'!M4='=IF(OR($K4=\"\",$E4=\"\"),\"\",IF($L4=\"N/A\",\"N/A\",IF($K4<=$L4,\"✓ CONFORME\",\"✗ RECHAZAR\")))' — sólo compara contra el máximo que trae L4 desde 'Verificación Temperaturas' columna C. || La tabla ya tiene el rango escrito pero en TEXTO y no lo usa nadie: B9='0 a 2 °C, en hielo fundente' (C9=2), B14='4 a 12 °C' (C14=12). || D10='Reg. (CE) 853/2004; tolerancia breve de -15 °C en transporte' con C10=-18, así que −15 se rechaza.",
+      "fix": "Columna «Tª mín. aceptable» numérica en 'Verificación Temperaturas' (0 para refrigerados, −25 para congelados con tolerancia −15) y M4 con doble comparación: '✗ RECHAZAR (frío)' / '✓ CONFORME' / '✗ RECHAZAR (calor)'."
+    },
+    {
+      "id": "RD-07",
+      "severidad": "alta",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "06!'Control FIFO'!B5:T54 (50 filas) y 06!'Alertas Caducidad'!B4:C9",
+      "hallazgo": "'Control FIFO' es la única hoja nuclear del kit que se entrega COMPLETAMENTE vacía: 50 filas con 262 fórmulas nuevas y ni un solo lote de ejemplo. El fichero que vende «alertas de caducidad» se abre con los cinco contadores a cero, el semáforo de cuatro estados sin demostrar y 20 columnas en blanco que el usuario tiene que interpretar (¿qué es «Vida útil tras abrir»? ¿qué pongo en «Fecha límite efectiva», que es calculada?). Todos los demás registros del kit sí traen ejemplo: 04 tres líneas, 05 tres, 03 tres, 02 seis, 07 ocho, BONUS-09 ocho.",
+      "evidencia": "06!'Control FIFO'!B5:B54 sin valores (la primera celda con contenido de la fila 5 es la fórmula J5); las 4 columnas verdes de entrada F5 (Tipo de fecha), G5 (Caducidad), N5 (Cantidad), P5 (Precio/ud) están vacías en las 50 filas. || 06!'Alertas Caducidad'!B4='=COUNTIF('Control FIFO'!$L$5:$L$54,\"*CADUCADO*\")' … B8, todos a 0 al abrir; C9='=SUM('Control FIFO'!$Q$5:$Q$54)'=0. || SPEC §1.4 enumera 12 hojas esqueleto a sembrar y 'Control FIFO' no está en la lista.",
+      "fix": "5-6 lotes de ejemplo que dejen ver los cuatro estados a la vez (uno caducado, uno de consumo preferente vencido, uno a 1 día, uno a 5 y dos OK), con cantidad y precio para que 'Alertas Caducidad' arranque con números."
+    },
+    {
+      "id": "RD-08",
+      "severidad": "alta",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "07!'Top 20 Productos'!A2 vs L4:M8 y protección de hoja",
+      "hallazgo": "La hoja pide expresamente al usuario que la ordene, y ordenarla es a la vez imposible y destructivo. Imposible porque la hoja está protegida y el rango a ordenar contiene columnas bloqueadas (Excel se niega con «la celda está en una hoja protegida»). Destructivo porque el bloque «Top 5» vive dentro de las MISMAS filas 4-8 del rango de datos y su rango k va literal por fila, así que al ordenar el ranking se baraja. La única instrucción de uso de la hoja es la que la rompe.",
+      "evidencia": "07!'Top 20 Productos'!A2='Datos de ejemplo… Ordena la tabla de mayor a menor gasto: el ranking de la derecha lo hace solo.' || ws.protection.sheet=True; en la fila 4 están bloqueadas A, F, G, J, L y M (locked=True) y sólo B, C, D, E, H, I, K son verdes desbloqueadas. || L4='=IFERROR(INDEX($B$4:$B$23,MATCH(LARGE($E$4:$E$23,1),$E$4:$E$23,0)),\"\")' … L8 con el 5 literal, y M4='=IFERROR(LARGE($E$4:$E$23,1),\"\")' — todo dentro de las filas 4-8 del propio rango de datos.",
+      "fix": "Mover el bloque «Top 5» fuera del rango ordenable (p. ej. L26:M30, bajo la fila TOTAL) y, o bien desbloquear A/F/G/J en las filas 4:23, o cambiar A2 por «no hace falta ordenar: el ranking de la derecha ya lo hace»."
+    },
+    {
+      "id": "RD-09",
+      "severidad": "media",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "05!'Dashboard Mermas'!B7 y B8",
+      "hallazgo": "En cuanto el usuario borra las tres líneas de ejemplo —que es literalmente lo que la propia hoja le manda hacer— el dashboard empieza a afirmar cosas falsas: dice que la categoría con más merma es «Cárnicos» y que el motivo más frecuente es «Caducidad superada» con CERO mermas registradas. MAX() de una columna de ceros es 0 y MATCH(0;…;0) engancha la primera fila. Un jefe de compras que abra el libro el día 1 del mes y vea eso, o desconfía del kit entero o se va a por los cárnicos sin motivo.",
+      "evidencia": "05!'Registro Diario Mermas'!A2='Las tres primeras líneas son un EJEMPLO … bórralas antes de empezar tu mes.' || 05!'Dashboard Mermas'!B7='=IFERROR(INDEX('Análisis por Categoría'!$A$4:$A$13,MATCH(MAX('Análisis por Categoría'!$C$4:$C$13),'Análisis por Categoría'!$C$4:$C$13,0)),\"\")' — con el registro vacío, C4:C13 son diez SUMIF que devuelven 0, MAX=0 y MATCH devuelve 1 → A4='Cárnicos'. || B8 igual sobre I4:I13 (COUNTIF por motivo) → H4='Caducidad superada'.",
+      "fix": "Envolver las dos: '=IF(MAX(rango)=0,\"— sin datos —\",INDEX(...))'. Misma guarda que ya lleva 07!'Dashboard KPIs'!B9 por accidente (allí la columna devuelve \"\" y no 0)."
+    },
+    {
+      "id": "RD-10",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "03!Listas!B2:B11 cruzado con 01!Cocina!B16/B18/B20/B21, 01!Almacén!B19 y 01!Barra!B9/B12",
+      "hallazgo": "El IVA por defecto que trae la tabla es incorrecto para una parte grande de los productos que el propio kit precarga, y falla en las dos direcciones: cobra de más en los básicos al 4 % (arroz, harina, legumbres, pan) y de menos en la nata, la mantequilla y los refrescos azucarados. La nota lo reconoce por escrito, lo cual no arregla el pedido: el desglose por tipo de IVA de A45:D48 —que es el que se coteja contra el albarán— sale mal salvo que el usuario corrija línea a línea. En una categoría como «Secos/Granos» conviven productos al 4 % y al 10 %, así que ninguna asignación por categoría puede acertar.",
+      "evidencia": "03!Listas!B6=10 para 'Secos/Granos', y los productos sembrados de esa categoría son 01!Cocina!B16='Arroz redondo', B18='Harina de trigo' y 01!Almacén!B19='Legumbres secas' (superreducido del 4 %). || 03!Listas!B4=4 para 'Lácteos', y ahí están 01!Cocina!B20='Nata 35 % M.G.' y B21='Mantequilla' (10 %). || 03!Listas!B9=10 para 'Bebidas No Alcohólicas', y ahí están 01!Barra!B9='Refresco de cola' y B12='Tónica' (21 %). || La propia nota 03!Listas!C2 admite: '…las harinas panificables, las legumbres, los cereales… van al 4 %; los refrescos con azúcares añadidos, al 21 %'.",
+      "fix": "Añadir a 'Listas' una segunda tabla producto→IVA (los 50 del 01) y que H9 haga VLOOKUP primero por producto y sólo caiga a la categoría si no lo encuentra. Es la misma mecánica que ya usa, con un rango más."
+    },
+    {
+      "id": "RD-11",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx · 01-inventario-stock-diario.xlsx · 07-analisis-costes-compras.xlsx",
+      "ubicacion": "02!'Comparativa Precios'!F7/E7 vs 01!Cocina!J13 y 07!'Top 20 Productos'!I9",
+      "hallazgo": "El aceite de oliva virgen extra cuesta 5,80 €/L en el inventario y en el análisis de costes, y 8,40 €/L en la comparativa de proveedores: un 45 % de diferencia para la misma referencia dentro del mismo kit. Es exactamente el error que la comparativa dice venir a evitar (normalizar el formato antes de comparar), cometido en su propia fila de ejemplo. El jefe de compras que valore el stock con 5,80 y negocie con 8,40 no sabe si está caro o barato.",
+      "evidencia": "02!'Comparativa Precios'!B7='Aceite oliva AOVE (5L)', D7='Garrafa 5 L', E7=5, F7=42 → P7='=IF(OR($F7=\"\",$E7=\"\",$E7=0),\"\",IFERROR($F7/$E7,\"\"))' = 8,40 €/L. || 01!Cocina!B13='Aceite de oliva virgen extra', D13='L', J13=5,8. || 07!'Top 20 Productos'!B9='Aceite de oliva virgen extra', I9=5,8 (precio actual) y H9=5,1 (anterior). || BONUS-09!Calculadora!I9=5,8. Comparación de control: el tomate SÍ cuadra (02!F8=19,5 / E8=10 = 1,95 = 01!Cocina!J9).",
+      "fix": "Derivar los precios de ejemplo del 02 de la misma tabla de precios de referencia del motor: F = precio/ud × contenido. Y ejecutar ese cruce como gate (todo producto que aparezca en dos ficheros tiene que dar el mismo precio/ud)."
+    },
+    {
+      "id": "RD-12",
+      "severidad": "media",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "05!'Dashboard Mermas'!B10 (y su cadena B4:D5, C4)",
+      "hallazgo": "El dashboard de mermas nace apagado. Su única casilla verde de entrada —las compras del mes— se entrega vacía, y de ella cuelgan el porcentaje de mermas, el objetivo en euros y los dos semáforos. Al abrir el fichero se ven cuatro celdas en blanco donde el cliente espera ver el KPI que le vendieron. El 07 hace lo contrario en el mismo kit: siembra sus seis entradas verdes (34.000 € de ventas, 1.450 cubiertos…) y el dashboard se abre funcionando. La incoherencia es del criterio, no del código.",
+      "evidencia": "05!'Dashboard Mermas'!A10='Compras del mes (€, sin IVA)' y B10 sin valor. || B5='=IFERROR($B$4/$B$10,\"\")' → \"\"; C4='=IFERROR(IF($B$10=\"\",\"\",$B$10*$B$11),\"\")' → \"\"; D4='=IF(OR($B$4=\"\",$C$4=\"\"),\"\",...)' → \"\"; D5 igual. Sólo B4 (80,00 € de los tres ejemplos), B6 y B11 (0,03) muestran algo. || Contraste: 07!'Dashboard KPIs'!B12=34000, B13=1450, B14=4200, B15=4050, B16=9980, B17=23,45.",
+      "fix": "Sembrar B10 con una cifra coherente con el ejemplo (los tres ejemplos suman 80 € de merma; con 10.400 € de compras —el enero del 07— sale 0,77 %, verde) y marcarla «(ejemplo)» como el resto."
+    },
+    {
+      "id": "RD-13",
+      "severidad": "media",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "07!'Dashboard KPIs' — columna E inexistente, 0 reglas de formato condicional",
+      "hallazgo": "El dashboard de KPIs es el único de los tres del kit que no tiene semáforo: da los números y deja que el usuario compare a ojo un 31,0 % contra un objetivo escrito como texto «28-32 %». El print_area de la hoja ya reserva una columna E que nunca se llenó, así que la intención estaba y se quedó a medias (la SPEC §1.2 la exige explícitamente: «regla en 07!'Dashboard KPIs'!E»). 05!'Dashboard Mermas'!D sí tiene su semáforo de tres estados, y 01!H y 06!L también.",
+      "evidencia": "07!'Dashboard KPIs': ws.max_column=4 (A:D) y las celdas E1:E19 están todas vacías, pero print_area=\"'Dashboard KPIs'!$A$1:$E$19\". || conditional_formatting del libro 07: una sola regla, sobre 'Top 20 Productos'!J4:J23; ninguna sobre 'Dashboard KPIs'. || Los objetivos son texto: C4='28-32 %', C7='< ±5 %', C8=0, C6='—'.",
+      "fix": "Columna E «Estado» con objetivos numéricos en celda (C4 pasa a dos celdas mín/máx o a 0,32) y semaforo() con containsText, igual que 05!'Dashboard Mermas'!D4:D8."
+    },
+    {
+      "id": "RD-14",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "06!'Alertas Caducidad'!C9 bajo la cabecera C3",
+      "hallazgo": "La fila de totales de las alertas presenta el valor de TODO el stock registrado en el FIFO bajo la cabecera «Valor en riesgo (€)». En un almacén con 4.000 € de género y 200 € realmente en riesgo, la hoja de alertas rematará diciendo «valor en riesgo: 4.000 €». Un número así en la hoja que se enseña al propietario o al inspector es peor que no darlo: las cinco filas de arriba sí están bien calculadas por estado y esta las desmiente.",
+      "evidencia": "06!'Alertas Caducidad'!C3='Valor en riesgo (€)'; A9='TOTAL de lotes registrados'; B9='=COUNTIF('Control FIFO'!$B$5:$B$54,\"<>\")'; C9='=SUM('Control FIFO'!$Q$5:$Q$54)' — la suma de la columna Q entera, sin filtrar por estado, mientras C4:C8 sí usan SUMIF por estado.",
+      "fix": "Renombrar A9 a «TOTAL de lotes registrados / valor total del stock» y separar: C9 = valor total, y una fila más con '=SUM($C$4:$C$7)' como «valor realmente en riesgo» (todo menos 🟢 OK)."
+    },
+    {
+      "id": "RD-15",
+      "severidad": "media",
+      "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "BONUS-08!'Conteo Rápido'!J5:J84",
+      "hallazgo": "El «consumo del mes» —que las Instrucciones venden como «el dato con el que se calcula el food cost real»— se calcula aunque no se hayan tecleado las compras, y entonces devuelve simplemente la bajada de stock. Sin aviso, sin celda en blanco: un número plausible y falso, que además se lleva a 07!'Dashboard KPIs'!B15. La guarda mira F y H pero se deja fuera I, que es el sumando que más se olvida (hay que ir a buscar los albaranes del mes). El mismo fichero demuestra que sabe hacerlo bien dos columnas antes, donde sí avisa por escrito.",
+      "evidencia": "BONUS-08!'Conteo Rápido'!J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",$H5+$I5-$F5)' — I5 no está en la guarda; una celda vacía suma 0 en Excel. || Contraste en la misma fila: G5='=IF($F5=\"\",\"\",IF($E5=\"\",\"⚠ falta coste\",$F5*$E5))' sí avisa. || BONUS-08!Instrucciones!A10: 'El consumo del mes sale solo: stock anterior + compras − stock actual. Es el dato con el que se calcula el food cost real'.",
+      "fix": "J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",IF($I5=\"\",\"⚠ faltan compras\",$H5+$I5-$F5))', replicado en las 80 filas (SPEC §1.8, misma doctrina que TEC-06)."
+    },
+    {
+      "id": "RD-16",
+      "severidad": "media",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "04!'Control Recepción'!I4:I43 y 04!'Registro Incidencias'!I4:I23",
+      "hallazgo": "La recepción calcula la diferencia entre lo pedido y lo recibido en UNIDADES y ahí se queda: no hay precio ni importe en toda la hoja. El dinero aparece dos hojas después, tecleado a mano en «Importe reclamado», sin ninguna relación con la diferencia registrada. El R1 pedía exactamente «el valor económico de lo no servido» (DOM-20) y eso sigue sin estar. En la práctica el jefe de compras acaba haciendo la multiplicación en la calculadora del móvil, que es justo el trabajo que compró para no hacer.",
+      "evidencia": "04!'Control Recepción'!A3:Q3 — 17 columnas y ninguna de precio o importe; I4='=IF(OR($G4=\"\",$H4=\"\"),\"\",$H4-$G4)' devuelve unidades. || 04!'Registro Incidencias'!I4=42,6, I5=64, I6=18,4 son constantes tecleadas; ninguna fórmula las liga a la recepción.",
+      "fix": "Columna verde «Precio/ud (€)» en 'Control Recepción' y una calculada «Valor de la diferencia (€)' = IF(OR(I=\"\",precio=\"\"),\"\",I*precio); el 'Importe reclamado' del registro de incidencias puede seguir a mano, pero ya con la cifra delante."
+    },
+    {
+      "id": "RD-17",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "03!'Pedido Actual'!E4 vs H42",
+      "hallazgo": "La cabecera del pedido va a buscar el pedido mínimo del proveedor y lo enseña, pero nada lo compara con el total del pedido. Es la comprobación que un jefe de compras hace veinte veces por semana (por debajo del mínimo, portes) y estaba a una fórmula: las dos celdas ya existen en la misma hoja. El propio kit documenta el coste de fallar: «Portes de 12 € por debajo del mínimo».",
+      "evidencia": "03!'Pedido Actual'!D4='Pedido mín. (€)', E4='=IF($C$3=\"\",\"\",IFERROR(VLOOKUP($C$3,Proveedores!$A$4:$H$23,5,FALSE),\"\"))' (=150 para Cárnicas). || H42='=$H$40+$H$41' (TOTAL DEL PEDIDO). Ninguna celda de la hoja relaciona ambas. || 02!'Condiciones Comerciales'!J4='Portes de 12 € por debajo del mínimo.' y J7='18 € por debajo del mínimo'.",
+      "fix": "Celda al lado de E4: '=IF(OR($E$4=\"\",$H$40=0),\"\",IF($H$40>=$E$4,\"✓ supera el mínimo\",\"⚠ faltan \"&TEXT($E$4-$H$40,\"#,##0.00\")&\" € para el mínimo\"))', con su semáforo."
+    },
+    {
+      "id": "RD-18",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "02!'Comparativa Precios'!N4:O13 vs K4:M13",
+      "hallazgo": "La comparativa añade fecha de cotización y vigencia —bien— pero nadie las mira: «Mejor precio», «Mejor proveedor» y «% Diferencia» siguen dando veredicto con precios caducados y sin decirlo. En compras, un comparativo vencido es peor que no tenerlo, porque se negocia con un dato que el proveedor ya no sostiene. Y la fila de ejemplo se entrega con una vigencia que caduca a los 30 días de una fecha fija.",
+      "evidencia": "02!'Comparativa Precios'!N4=03/08/2026 ('Fecha de cotización'), O4=02/09/2026 ('Vigencia hasta'), sin fórmula ni formato condicional en toda la hoja (conditional_formatting vacío en el libro 02). || K4='=IF(COUNT($P4:$T4)=0,\"\",MIN($P4:$T4))', L4 y M4 no referencian ni N ni O.",
+      "fix": "Columna de estado '=IF($O4=\"\",\"\",IF($O4<TODAY(),\"⛔ COTIZACIÓN VENCIDA\",IF($O4-TODAY()<=7,\"🟡 vence esta semana\",\"🟢 vigente\")))' con CF, y dejar K/L/M en gris cuando esté vencida."
+    },
+    {
+      "id": "RD-19",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "02!'Evaluación Proveedores'!H9:I9 vs 02!'Directorio Proveedores'!P9:R9",
+      "hallazgo": "El ejemplo se autodesmiente: el proveedor de limpieza saca un 2,2 sobre 5 y la hoja lo etiqueta «D — Sustituir», mientras el directorio del mismo fichero lo mantiene homologado con la revisión MÁS RECIENTE de los seis y sigue siendo el único proveedor de su familia en todo el kit. La homologación de proveedores es prerrequisito del plan APPCC que el producto dice ayudar a documentar; enseñar como ejemplo un proveedor suspendido y homologado a la vez enseña justo lo contrario.",
+      "evidencia": "02!'Evaluación Proveedores'!B9='Higiene Profesional HORECA (ejemplo)', C9=2, D9=3, E9=2, F9=2, G9=2 → H9='=IF(COUNT($C9:$G9)<3,\"\",AVERAGE($C9:$G9))'=2,2 → I9='D — Sustituir'. || 02!'Directorio Proveedores'!B9 (mismo proveedor), P9='S' (Homologado), Q9=03/02/2026, R9=03/08/2026 (la fecha de última revisión más reciente de la hoja). || Es además el único proveedor de Limpieza del kit (03!Proveedores!B9='Limpieza').",
+      "fix": "O se le suben las notas al ejemplo, o se le pone P9='Pendiente' y una nota en S9 del tipo «evaluación D: buscar alternativa antes de la próxima revisión». Y una fórmula que cruce nota→homologación."
+    },
+    {
+      "id": "RD-20",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx · 03-pedidos-compra.xlsx",
+      "ubicacion": "02!'Directorio Proveedores'!N4/O4/K4/L4 · 02!'Condiciones Comerciales'!D4/C4/H4/I4 · 03!Proveedores!E4/F4",
+      "hallazgo": "Los mismos cuatro datos comerciales (pedido mínimo, plazo de pago, día de pedido y día de reparto) están tecleados a mano en TRES sitios distintos del kit, sin una sola fórmula que los enlace. El día que el proveedor sube el mínimo de 150 a 200 €, el usuario lo cambia en uno y los otros dos siguen mintiendo — y el que alimenta la cabecera del pedido real es precisamente el tercero, el de 03. Es el mantenimiento oculto que hace que a los tres meses nadie use el fichero.",
+      "evidencia": "Pedido mínimo de Cárnicas: 02!'Directorio Proveedores'!N4=150 · 02!'Condiciones Comerciales'!D4=150 · 03!Proveedores!E4=150 (y este último es el que lee 03!'Pedido Actual'!E4 por VLOOKUP). || Plazo de pago: 02!'Directorio'!O4='30 días fecha factura' y 02!'Condiciones Comerciales'!C4='30 días fecha factura'. || Día de pedido/reparto: 02!'Directorio'!K4/L4 y 02!'Condiciones'!H4/I4.",
+      "fix": "Dentro del 02 son enlaces triviales ('Condiciones Comerciales'!D4 = 'Directorio Proveedores'!N4). Entre libros no se puede (§6), así que en 03!Proveedores!A2 hay que decirlo: «esta tabla es la copia operativa del directorio del fichero 02; si cambias algo allí, cámbialo aquí»."
+    },
+    {
+      "id": "RD-21",
+      "severidad": "media",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx · 07-analisis-costes-compras.xlsx",
+      "ubicacion": "BONUS-09!Calculadora!D4/D8 vs 07!'Top 20 Productos'!E6/E11",
+      "hallazgo": "Los consumos diarios de la calculadora no cuadran con el gasto mensual del análisis de costes para los mismos productos y los mismos precios, con desviaciones de hasta el 50 %. Las Instrucciones dicen que los ejemplos son «coherentes con la plantilla 01», pero no se comprobó contra el 07. Un cliente que haga la regla de tres —y un jefe de compras la hace— encuentra el descuadre en el primer minuto y deja de fiarse de los otros ocho ficheros.",
+      "evidencia": "Pollo: BONUS-09!Calculadora!D4=6 kg/día × 30 × 6,50 €/kg (I4) = 1.170 €/mes, frente a 07!'Top 20 Productos'!E6=780 € (= 4 kg/día a I6=6,5). || Patata: BONUS-09!D8=18 kg/día × 30 × 0,85 = 459 €, frente a 07!E11=340 € (= 13,3 kg/día). || Cuadran en cambio salmón (D6=3 vs 07!E5=1120/14/30=2,67) y AOVE (D9=3 vs 07!E9=522/5,8/30=3,0). || BONUS-09!Instrucciones!A21: 'Las 8 primeras líneas traen datos de ejemplo coherentes con la plantilla 01 del kit.'",
+      "fix": "Una sola tabla de consumos diarios de ejemplo en motor.py de la que salgan los par levels de 01, los consumos de BONUS-09 y los gastos mensuales del Top 20 del 07."
+    },
+    {
+      "id": "RD-22",
+      "severidad": "media",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "BONUS-09!Calculadora!L4:L11",
+      "hallazgo": "La «cantidad a pedir sugerida» está capada por vida útil (bien) pero no por el sitio donde hay que meterla ni por el formato en que se compra. Sugiere 9 barriles de cerveza a un local cuyo par max son 6, y 17 kg de pollo a quien lo compra en cajas de 5 kg. Cursar un pedido con esos números significa o rechazarlo en la puerta por falta de cámara, o pedir un formato que el proveedor no sirve.",
+      "evidencia": "Cerveza: BONUS-09!Calculadora!D11=0,5, I11=55, J11=120 → K11=ROUND(SQRT(2·0,5·365·3/(55·0,25)),0)=9 y L11='=IF($K11=\"\",\"\",MIN($K11,ROUND($D11*$J11*0,7,0)))'=MIN(9;42)=9 barriles, frente a 01!Barra!F10=6 (par max) y E10=2. || Pollo: D4=6, I4=6,5, J4=4 → K4=90, L4=MIN(90;17)=17 kg, y el formato de compra que el propio kit documenta es 02!'Comparativa Precios'!D4='Caja 5 kg' (E4=5).",
+      "fix": "Tercera capa en L: MIN(EOQ; vida útil × 0,7; par max del 01) y redondeo al múltiplo del contenido del formato (columna nueva «Formato/contenido», que ya existe en el 02)."
+    },
+    {
+      "id": "RD-23",
+      "severidad": "media",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "04!'Control Recepción'!E4:E43 (DV sobre 'Verificación Temperaturas'!$A$4:$A$16) vs la taxonomía de 10 del resto del kit",
+      "hallazgo": "El fichero de recepción usa un vocabulario propio de 13 familias legales, sin ningún puente con las 10 categorías comerciales que llevan los otros ocho ficheros. Separar familia legal de categoría de compra es correcto, pero el usuario se queda solo ante el mapeo, y para la mitad de lo que compra no hay familia: un barril de cerveza, una caja de guantes o un paquete de servilletas hay que archivarlos bajo «Secos y economato (ambiente)». Resultado: o se deja la columna en blanco —y entonces no hay veredicto de temperatura ni registro— o se falsea.",
+      "evidencia": "DV de 04!'Control Recepción'!E4:E43 = ='Verificación Temperaturas'!$A$4:$A$16 → 13 familias ('Canal y despiece de ungulados domésticos'… 'Secos y economato (ambiente)'). || DV de 01!Cocina!C5:C44, 03!'Pedido Actual'!C9:C38, 05!C4:C103, 06!C5:C54, 07!C4:C23 y BONUS-08!C5:C84 = las 10 categorías. || No existe ninguna categoría de bebidas ni de limpieza entre las 13 familias, aunque el kit siembra 8 productos de bebidas y 13 de limpieza en el 01.",
+      "fix": "Columna «Categoría (kit)» con la DV de 10 en 'Control Recepción' y una tabla puente categoría→familia por defecto en 'Verificación Temperaturas', para que la familia se proponga sola y el usuario sólo la afine (carne picada, despojos)."
+    },
+    {
+      "id": "RD-24",
+      "severidad": "baja",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "BONUS-09!Instrucciones!A18",
+      "hallazgo": "El ejemplo con el que las Instrucciones explican el tope de vida útil está mal calculado en el propio texto: dice que 168 L de leche son «los 12 días que aguanta» cuando a 20 L/día son 8,4 días. Los 12 días serían 240 L; el factor 0,7 de Parámetros recorta el 30 % precisamente para no apurar la caducidad. Quien lea la frase entenderá que la cantidad sugerida cubre toda la vida útil y planificará el pedido siguiente con cuatro días de retraso.",
+      "evidencia": "BONUS-09!Instrucciones!A18='…Con 20 L/día de leche la EOQ da 454 L y la cantidad sugerida, 168 L: los 12 días que aguanta.' Comprobado con las fórmulas del libro: EOQ=ROUND(SQRT(2·20·365·3/(0,85·0,25)),0)=454 ✓; sugerida=MIN(454;ROUND(20·12·0,7;0))=168 ✓; 168/20=8,4 días, no 12. || Parámetros!A12='Factor de vida útil', B12='0,7 (70 %)', C12='…nunca pasa del 70 % de lo que consumes dentro de la vida útil'.",
+      "fix": "«…y la cantidad sugerida, 168 L: 8 días de consumo, el 70 % de los 12 que aguanta»."
+    },
+    {
+      "id": "RD-25",
+      "severidad": "baja",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "01!Barra!B17 y 01!Almacén!B16",
+      "hallazgo": "La misma referencia está dada de alta dos veces, en dos zonas, con dos par levels distintos y ningún mecanismo que consolide el pedido. El resumen las cuenta como dos productos a pedir independientes, así que el pedido al mismo proveedor sale partido en dos líneas de la misma referencia — y el pedido mínimo, los portes y el rappel se calculan sobre el total, no sobre cada zona. Es defendible como stock por ubicación, pero entonces hay que decirlo en algún sitio, y no se dice.",
+      "evidencia": "01!Barra!B17='Servilletas de papel', C17='Limpieza', D17='caja', E17=4, F17=10, J17=12,5. || 01!Almacén!B16='Servilletas de papel (reserva)', C16='Limpieza', D16='caja', E16=3, F16=8, J16=12,5 (mismo precio, mismo formato). || 01!'Resumen Dashboard'!C5 y C6 las cuentan por separado ('=COUNTIF('Barra'!$H$5:$H$34,\"*PEDIR*\")' y la de Almacén).",
+      "fix": "O se unifican en una sola línea de Almacén con par level 7/18, o 01!Instrucciones!A21 explica que una referencia puede repetirse por zona y que el pedido se consolida en el 03."
+    },
+    {
+      "id": "RD-26",
+      "severidad": "baja",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "02!'Directorio Proveedores'!E6, E7, E8",
+      "hallazgo": "Tres de los seis RGSEAA de ejemplo llevan la misma clave 21 para tres sectores distintos (frutas y verduras, secos, bebidas alcohólicas). En el Registro General Sanitario la primera cifra identifica la actividad —vegetales, bebidas alcohólicas y distribución polivalente no comparten clave—, así que el ejemplo enseña un número que no puede existir tal cual. Como la propia hoja dice «pídeselo por escrito», conviene que el modelo sea verosímil: es el dato con el que se acredita la homologación del proveedor ante una inspección.",
+      "evidencia": "02!'Directorio Proveedores'!E6='21.024567/V' (C6='Verduras/Frutas'), E7='21.031204/SE' (C7='Secos/Granos'), E8='21.040918/A' (C8='Bebidas Alcohólicas'). Las otras dos sí discriminan: E4='10.05412/NA' para Cárnicos y E5='12.00987/PO' para Pescados. || A2='El Nº RGSEAA te lo da el proveedor: pídeselo por escrito y guárdalo con su ficha técnica.'",
+      "fix": "Diferenciar la clave por actividad en los ejemplos (o dejar la parte numérica como 'XX.NNNNNN/PP' con una nota), y en E9 mantener el acierto que ya tiene: 'No aplica (producto no alimentario)'."
+    },
+    {
+      "id": "RD-27",
+      "severidad": "baja",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "07!'Top 20 Productos'!F4:F23 y 07!'Dashboard KPIs'!B6",
+      "hallazgo": "Dos extrapolaciones que un jefe de compras no firma. La columna «Gasto anual (€)» multiplica un mes por 12 en un negocio estacional (el solomillo de enero pasa a 23.040 € al año), y el KPI «Compras del periodo» lee el TOTAL de los doce meses, de modo que el dashboard no puede enseñar nunca un mes concreto salvo que sólo haya un mes cargado. La hoja lo avisa por escrito, lo cual convierte la vista mensual —la que se mira cada día 1— en imposible.",
+      "evidencia": "07!'Top 20 Productos'!F3='Gasto anual (€)', F4='=IF($E4=\"\",\"\",$E4*12)' con E4=1920 (un mes) → 23.040. || 07!'Dashboard KPIs'!B6='='Coste por Categoría'!$N$14' y N14='=SUM($N$4:$N$13)' con N4='=SUM(B4:M4)' (los doce meses). || 07!'Coste por Categoría'!A16 y 07!Instrucciones!A17 lo admiten: 'si sólo has rellenado enero, los KPIs son de enero'.",
+      "fix": "Renombrar F a «Gasto anual estimado (€) — mes × 12» y añadir en 'Dashboard KPIs' una celda verde de mes (DV Ene-Dic + «Año completo») que mueva B6 con INDEX/MATCH sobre 'Coste por Categoría'!B14:N14."
+    },
+    {
+      "id": "RD-28",
+      "severidad": "baja",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "03!'Historial Pedidos'!A5:A7",
+      "hallazgo": "Las fechas de los tres pedidos históricos de ejemplo son volátiles: cada vez que se abre el libro se recolocan respecto de hoy. Un historial cuyo contenido cambia solo es lo contrario de un historial, y si el usuario conserva las filas de ejemplo como referencia (que es lo habitual) tendrá pedidos «de hace 10 días» eternamente. Además contamina el cotejo con el albarán, que se hace por fecha.",
+      "evidencia": "03!'Historial Pedidos'!A5='=TODAY()-30', A6='=TODAY()-20', A7='=TODAY()-10', con B5='PED-2026-001'…B7='PED-2026-003' y datos fijos en E:G. || Contraste: 04!'Control Recepción'!A4:A6 y 05!'Registro Diario Mermas' usan fechas constantes (18/08/2026…).",
+      "fix": "Fechas constantes como en el 04 y el 05, coherentes con los albaranes de esos ficheros."
+    },
+    {
+      "id": "RD-29",
+      "severidad": "media",
+      "fichero": "scripts/productos-digitales/kit-inventario-v2_0/main.py",
+      "ubicacion": "main.py:468 (--solo default='motor') y el cierre 'TODO VERDE' pese al gate 6/7",
+      "hallazgo": "El comando que la propia cabecera del script documenta —y el que se me pasó a mí para auditar— NO ejecuta los grupos A, B y C: --solo trae 'motor' por defecto, así que se produce una copia del kit con 0 fórmulas nuevas. Peor: en esa pasada el gate §1.6 encuentra NUEVE pestañas citadas en Instrucciones que no existen y el informe cierra igualmente con 'TODO VERDE' y exit 0. Quien corra el comando documentado, lea la última línea y dé el visto bueno, estará aprobando un kit sin construir. Es exactamente el escenario que la doctrina de la casa llama «arrastrar el error a la siguiente capa».",
+      "evidencia": "Ejecutado tal cual me lo pasaron (main.py --dry-run --json ref-dominio.json): «01-inventario-stock-diario.xlsx: 0 fórmulas nuevas» ×9, informe con 'grupos_pedidos': [] y 'grupos_ausentes': [], gate 6/7 con 9 entradas en 'pestanas_citadas_inexistentes' (01!A20 «Resumen», 02!A7 «Directorio», 02!A9 «Evaluación», 03!A8 «Historial», 03!A9 «Imprimible», 05!A6, 05!A9, 06!A11, 07!A8), y aun así 'fallos': [], 'exit': 0 y última línea 'TODO VERDE'. Con --solo motor,a,b,c: 1.725 fórmulas nuevas y 0 pestañas inexistentes.",
+      "fix": "Default de --solo a 'motor,a,b,c' (los ausentes ya se avisan sin fallar) y que 'pestanas_citadas_inexistentes' no vacío sume a 'fallos' y devuelva exit != 0, como hacen el censo y la idempotencia."
+    }
+  ],
+  "veredicto": "no listo",
+  "motivo": "Como jefe de compras, la v2.0 es un salto real frente al R1 —ya hay valoración de stock, IVA por línea, umbrales legales con base normativa, semáforo FIFO de cuatro estados y EOQ capada— pero no la pondría a funcionar un lunes por tres bloques. (1) SEGURIDAD ALIMENTARIA: los huevos van clasificados como «Lácteos» y el mapa de almacén los manda a 0-4 °C contra lo que el propio fichero 04 cita del Reg. (CE) 589/2008 (RD-04); la limpieza y los químicos duermen en el economato con las conservas y no hay zona para ellos (RD-05); y la única fórmula de decisión de la recepción sólo tiene techo, así que da CONFORME a un pescado congelado en tránsito y RECHAZA un congelado a la tolerancia que ella misma documenta (RD-06). (2) COHERENCIA ENTRE FICHEROS, que es lo que se está a punto de prometer en la landing: el kit envía dos directorios de proveedores con seis nombres distintos cada uno, de modo que el pedido y la recepción no se pueden cotejar contra la ficha homologada (RD-01); el punto de pedido del BONUS-09 contradice los par levels del 01 y en patata y arroz manda reponer por encima del par MAX (RD-02); los dos ejemplos del 04 se desmienten sobre el mismo albarán (RD-03); y el mismo aceite vale 5,80 €/L en dos ficheros y 8,40 en otro (RD-11). (3) COSAS QUE FALLAN EL PRIMER DÍA: el 'Control FIFO' —corazón del fichero de caducidades— se entrega vacío, con el semáforo de cuatro estados sin demostrar y los cinco contadores a cero (RD-07); el 'Top 20' pide ordenar una hoja protegida cuyo ranking vive dentro del rango a ordenar (RD-08); y el dashboard de mermas, en cuanto se borran los ejemplos como él mismo instruye, empieza a afirmar que la categoría con más merma es «Cárnicos» sin una sola merma registrada (RD-09). Añado un aviso de proceso: el comando documentado en main.py corre SÓLO el motor, deja 9 pestañas fantasma en pie y aun así imprime «TODO VERDE» (RD-29): con ese default es fácil aprobar un kit sin construir. Con RD-01 a RD-09 resueltos y RD-10/RD-11/RD-15 encima, esto sí se defiende delante de un cliente que ha pagado."
+}

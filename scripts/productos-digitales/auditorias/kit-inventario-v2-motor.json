@@ -1,0 +1,688 @@
+{
+ "producto": "kit-inventario",
+ "version": "2.0",
+ "rol": "motor",
+ "fecha": "2026-08-23T21:53:31",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md §1 + convenciones de cabecera + §7-bis",
+ "r1_referencia": "scripts/productos-digitales/auditorias/kit-inventario-R1.json (91 hallazgos)",
+ "entregables": [
+  "scripts/productos-digitales/kit-inventario-v2_0/motor.py",
+  "scripts/productos-digitales/kit-inventario-v2_0/main.py"
+ ],
+ "comando_de_prueba": "CLAUDE_SCRATCHPAD=<scratchpad>/propio-motor python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo motor --json <scratchpad>/kit-inv-v2/motor.json",
+ "produccion_intacta": {
+  "ruta": "astro-site/public/dl/kit-inventario/",
+  "git_status_porcelain": "",
+  "comprobado": true,
+  "nota": "el script ABORTA (exit 1) sin --dry-run y sin KIT_INVENTARIO_APPLY=1; verificado ejecutándolo"
+ },
+ "resultado_dry_run": {
+  "exit": 0,
+  "fallos": [],
+  "idempotencia_diferencias": 0,
+  "censo_entregables_fail_exit": 0,
+  "data_only_fallos": 0,
+  "contadores_totales": {
+   "hojas": 36,
+   "formulas": 537,
+   "verdes": 3023,
+   "verdes_con_dato": 317,
+   "dv": 16,
+   "cf": 12,
+   "protegidas": 19,
+   "celdas": 1590
+  }
+ },
+ "secciones_spec_cubiertas": {
+  "1.1_taxonomia_y_unidades": {
+   "estado": "HECHO",
+   "detalle": "CATEGORIAS (10, verificadas contra 07-analisis-costes-compras.xlsx:Coste por Categoría:A4..A13) y UNIDADES (10) como constantes. DV de lista INLINE con showErrorMessage=True: 125 caracteres las categorías y 55 las unidades, muy por debajo del límite de 255 de Excel — _dv_inline() ABORTA si algún día se pasaran, en vez de escribir una lista truncada.",
+   "aplicadas_hoy": [
+    "01-inventario-stock-diario.xlsx:Cocina!C5:C24 y !D5:D24",
+    "01-inventario-stock-diario.xlsx:Barra!C5:C19 y !D5:D19",
+    "01-inventario-stock-diario.xlsx:Almacén!C5:C19 y !D5:D19",
+    "05-control-mermas.xlsx:Registro Diario Mermas!C4:C53 y !E4:E53",
+    "06-fifo-caducidades.xlsx:Control FIFO!C5:C54",
+    "07-analisis-costes-compras.xlsx:Top 20 Productos!C4:C23",
+    "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido!C5:C54 y !D5:D54"
+   ],
+   "normalizaciones_de_alias": {
+    "total": 22,
+    "detalle": [
+     "01-inventario-stock-diario.xlsx:Cocina!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C13: «Varios» → «Otros» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C21: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Cocina!C23: «Varios» → «Otros» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C13: «Varios» → «Otros» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Barra!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C7: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C8: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C11: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C13: «Varios» → «Otros» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C17: «Verduras» → «Verduras/Frutas» (§1.1)",
+     "01-inventario-stock-diario.xlsx:Almacén!C18: «Frutas» → «Verduras/Frutas» (§1.1)",
+     "05-control-mermas.xlsx:Análisis por Categoría!A8: «Secos» → «Secos/Granos» (§1.1)",
+     "05-control-mermas.xlsx:Análisis por Categoría!A10: «Bebidas» → «Bebidas No Alcohólicas» (§1.1)"
+    ]
+   }
+  },
+  "1.2_formato_condicional": {
+   "estado": "HECHO (motor) / rangos nuevos PENDIENTES de grupo",
+   "detalle": "semaforo(ws, rango, vocabulario) con reglas containsText + stopIfTrue y dxf verde C6EFCE / ámbar FFEB9C / rojo FFC7CE, más reglas expression para 04!K (temperatura) y 07!'Top 20'!J (variación > 5 %). Antes de esto había 0 reglas en las 30 hojas: el semáforo era el emoji dentro del texto.",
+   "aplicadas_hoy": [
+    "01-inventario-stock-diario.xlsx:Cocina!H5:H24 (3 reglas)",
+    "01-inventario-stock-diario.xlsx:Barra!H5:H19 (3 reglas)",
+    "01-inventario-stock-diario.xlsx:Almacén!H5:H19 (3 reglas)",
+    "05-control-mermas.xlsx:Dashboard Mermas!D4:D8 (3 reglas)"
+   ]
+  },
+  "1.3_iva_por_categoria": {
+   "estado": "HECHO",
+   "detalle": "Hoja 03-pedidos-compra.xlsx:Listas creada con A1:C1 de cabecera, A2:B11 categoría→IVA (4 / 10 / 21) en celdas verdes y la nota «orientativo, edítalo» en C2:C11 combinado. La hoja se queda SIN protección: el cliente tiene que poder editar los tipos.",
+   "evidencia": "03-pedidos-compra.xlsx:Listas:A2:B11 — tipos distintos [4, 10, 21]"
+  },
+  "1.5_proteccion_sin_contrasena": {
+   "estado": "HECHO",
+   "detalle": "proteger(ws): verdes con Protection(locked=False), el resto locked=True, ws.protection.sheet=True y NUNCA se toca `password` (=None revienta openpyxl y ='' escribe el hash de la cadena vacía → Excel pediría contraseña al desproteger). Guarda añadida: una hoja SIN ninguna celda verde no se protege — dejarla bloqueada entera es peor que dejarla abierta, el cliente no podría escribir nada.",
+   "medido": "19 de 36 hojas protegidas; 0 con contraseña; verdes == verdes desbloqueadas en las 36"
+  },
+  "1.7_formatos": {
+   "estado": "HECHO",
+   "detalle": "Se deducen del TEXTO de la cabecera, no de la letra de la columna, para que sobrevivan a que grupo_b inserte «Categoría» delante de «Unidad» en el 03. #,##0.00 € para precio/coste/importe/valor/subtotal/total/gasto, dd/mm/yyyy para fecha/caducidad/vigencia, 0,0 % para lo que lleve %, y 0 explícito para «Días…» (sin él Excel hereda el formato de fecha de la columna de al lado y =J5-TODAY() imprime «14/01/1900» en vez de «14»). RANGOS_FORMATO cubre lo que ninguna cabecera delata: 07!'Coste por Categoría'!B4:N14, cuyas columnas se llaman «Ene»…«Dic»."
+  },
+  "1.8_doble_guarda": {
+   "estado": "UTILIDAD LISTA (la escriben los grupos)",
+   "detalle": "guarda_doble(col_cant, col_precio, fila) devuelve =IF($D4=\"\",\"\",IF($F4=\"\",\"⚠ falta coste\",$D4*$F4)). Demostrado el defecto vivo en 03-pedidos-compra.xlsx:Pedido Actual:F9: con cantidad 10 y sin precio la fórmula actual devuelve 0 y la línea se suma al total como si fuera gratis (TEC-06)."
+  },
+  "1.9_filas_libres": {
+   "estado": "UTILIDAD LISTA (la usan los grupos)",
+   "detalle": "expandir_filas(ws, r_ult, r_destino, cola, numerar) añade filas AL FINAL replicando la última (estilo desde fila-2 para que la banda cebra siga alternando, fórmula desde r_ult traducida) y baja la cola —totales y pie— con sus merges y sus SUM corregidos. Centinela de idempotencia: si r_destino ya tiene contenido, no hace nada.",
+   "smoke_test": {
+    "estado": "PROBADA sobre copias desechables (no forma parte del pipeline del motor)",
+    "casos": [
+     "05-control-mermas.xlsx:Registro Diario Mermas 4..53 → 4..103, cola=[55]: 50 filas añadidas, G103 = =IF(D103=\"\",\"\",D103*F103), TOTAL MES a la fila 105 y G105 = =SUM(G4:G103) (rango estirado, no desplazado)",
+     "01-inventario-stock-diario.xlsx:Cocina 5..24 → 5..44, cola=[27], numerar=1: A44 = 40, H44/I44 traducidas, pie «© 2026 AI Chef Pro» a A47 con su combinación A47:H47 rehecha, banda cebra alternando",
+     "03-pedidos-compra.xlsx:Pedido Actual 9..28 → 9..38, cola=[30,31]: SUBTOTAL a E40 con =SUM(F9:F38) y TOTAL CON IVA a E41 con =SUM(H9:H38)",
+     "2.ª llamada sobre la misma hoja: 0 filas (centinela de idempotencia)",
+     "los tres ficheros reabren con openpyxl sin error"
+    ]
+   }
+  },
+  "1.10_bio_version_metadata": {
+   "estado": "HECHO",
+   "detalle": "En este kit la bio es una INSERCIÓN, no una sustitución: ninguno de los 9 la lleva (por eso postprocess-transversal.py, que sólo sustituye patrones conocidos, nunca se la puso). Se dejan tres líneas seguidas al pie de Instrucciones: nota de desprotección, bio anclada y línea de versión. IDEMPOTENCIA: el ancla es la NOTA, no la línea de versión — anclar en la versión desplazaría el bloque dos filas en cada pasada.",
+   "literales": {
+    "bio": "Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es",
+    "version": "Versión 2.0 · agosto 2026 · aichef.pro/kit-inventario · info@aichef.pro"
+   },
+   "metadata": {
+    "creator": "AI Chef Pro",
+    "subject": "Kit Control de Inventario y Compras · v2.0",
+    "keywords": "kit inventario, AI Chef Pro",
+    "title": "<título del fichero> · Kit Control de Inventario y Compras",
+    "description": "aichef.pro/kit-inventario",
+    "category": "AI Chef Pro · Productos digitales"
+   },
+   "comprobado": "la bio no casa RX_BIO_VIEJA del censo (29 años|15 años|años de experiencia|15+ años|29+ años): dice «desde los 17 años», que no está en el patrón — censo --fail devuelve 0 defectos"
+  },
+  "utilidades_para_los_grupos": {
+   "insertar_columna": "PROBADA: insertar_columna(ws, 3) en 03!'Pedido Actual' desplaza la cabecera (C8 'Unidad' → D8), traduce la fórmula (F9 ==IF(D9=\"\",\"\",D9*E9) → G9 ==IF(E9=\"\",\"\",E9*F9)), extiende el merge A1:H1 → A1:I1 y mueve el ancho de columna",
+   "insertar_fila": "misma mecánica por filas (no ejercitada: los grupos AÑADEN filas, no las insertan en medio)",
+   "marcar_verde / sembrar / guarda_doble / linea_instrucciones / print_setup / _reg": "API pública para §1.4, §1.6 y §1.8"
+  }
+ },
+ "decisiones_de_diseno": [
+  {
+   "titulo": "CENTINELAS por objetivo: el motor no escribe a ciegas sobre un layout que aún no existe",
+   "por_que": "Los rangos de la SPEC describen el layout FINAL: 03!C es «Categoría» sólo DESPUÉS de que grupo_b inserte la columna. Hoy 03-pedidos-compra.xlsx:Pedido Actual:C8 dice «Unidad». Sin centinela, --solo motor habría puesto el desplegable de categorías sobre la columna de unidades: un fichero PEOR que el de partida. Cada objetivo lleva (celda, subcadena) y lo que no se aplica se declara como `pendientes_de_grupo` con fichero:hoja:celda.",
+   "consecuencia": "el mismo código vale con y sin grupos; nada que reescribir cuando aterricen"
+  },
+  {
+   "titulo": "Todo lo que depende de rangos vive en cerrar(), no en aplicar()",
+   "por_que": "El pipeline es grupo.pre → motor.aplicar → grupo.post → motor.cerrar. Si el motor fijara DV/CF/verde en aplicar(), una columna insertada por el grupo en post() las dejaría desplazadas una columna. En aplicar() sólo queda lo independiente del layout: normalizar la taxonomía y crear 03!Listas.",
+   "contrato_para_los_grupos": [
+    "las COLUMNAS se insertan en pre() con motor.insertar_columna()",
+    "las FILAS se AÑADEN en post() con motor.expandir_filas() (nunca insertar_fila en medio del bloque)",
+    "cada fórmula escrita se anota con motor._reg(ws, coord, formula) o main.py no la verifica",
+    "las hojas nuevas se añaden a motor.BLOQUES con sus 5 campos (hoja, cabecera, primera, ULTIMA_HOY, ULTIMA_V2)"
+   ]
+  },
+  {
+   "titulo": "BLOQUES lleva DOS últimas filas (ULTIMA_HOY y ULTIMA_V2), no una",
+   "por_que": "Recortar a ws.max_row era un BUG real, cazado y corregido en esta sesión: por debajo del bloque de datos hay COLA (el «TOTAL MES:» de 05-control-mermas.xlsx:Registro Diario Mermas:G55, el pie «© 2026 AI Chef Pro» de 01-inventario-stock-diario.xlsx:Cocina:A27, el SUBTOTAL/TOTAL de 03-pedidos-compra.xlsx:Pedido Actual:F30-F31). La primera versión ponía la DV de categorías sobre C5:C27 —incluida la fila del pie— y el verde de edición sobre el total. Regla actual: si ws.max_row ya supera ULTIMA_V2, el grupo expandió el bloque; si no, sigue siendo el de la v1.1.",
+   "verificado": "DV y CF ahora terminan exactamente en la última fila de datos (C5:C24, C4:C53, H5:H19…)"
+  },
+  {
+   "titulo": "El verde se DEDUCE, y también se QUITA",
+   "por_que": "Regla: dentro del bloque, una columna es editable si tiene cabecera y ninguna de sus celdas contiene fórmula. Así el verde se adapta solo a lo que construyan los grupos. Y al revés: si un grupo escribe una fórmula en una columna que el motor pintó de verde en la pasada anterior (p. ej. el «% del Total» de 07!'Coste por Categoría'!O), el motor le devuelve el relleno de banda de su fila — dejarla verde le diría al cliente que puede sobrescribir una fórmula.",
+   "regla_propia_de_la_columna_A": "verde si su cabecera no es «#» y NO está pre-rellena entera. Así 04!'Control Recepción'!A (Fecha) y 05!'Registro Diario Mermas'!A (Fecha) SON editables —lo son de verdad—, y 07!'Coste por Categoría'!A4:A13 y 05!'Análisis por Categoría'!A4:A10, que son la taxonomía impresa, no."
+  },
+  {
+   "titulo": "El gate §1.6 mira TRES formas de citar una pestaña, no una",
+   "por_que": "Buscar sólo lo entrecomillado junto a la palabra «pestaña» encontraba 3 de las 9 promesas rotas. Ahora mira: (a) entrecomillada con «pestaña/hoja/solapa» al lado, (b) enumerada en un bloque «PESTAÑAS:» con el patrón «N. Nombre — …», y (c) entrecomillada suelta, filtrando las que son encabezados de columna ('Producto', 'Estado', 'A Pedir') para no dar falsos positivos.",
+   "hallazgos_vivos_9": [
+    "01-inventario-stock-diario.xlsx:Instrucciones:A20 — «Resumen» (la hoja es «Resumen Dashboard»)",
+    "02-fichas-proveedores.xlsx:Instrucciones:A7 — «Directorio» (es «Directorio Proveedores»)",
+    "02-fichas-proveedores.xlsx:Instrucciones:A9 — «Evaluación» (es «Evaluación Proveedores»)",
+    "03-pedidos-compra.xlsx:Instrucciones:A8 — «Historial» (es «Historial Pedidos»)",
+    "03-pedidos-compra.xlsx:Instrucciones:A9 — «Imprimible» NO EXISTE (§1.6: se retira la promesa)",
+    "05-control-mermas.xlsx:Instrucciones:A6 — «Registro Diario» (es «Registro Diario Mermas»)",
+    "05-control-mermas.xlsx:Instrucciones:A9 — «Dashboard» (es «Dashboard Mermas»)",
+    "06-fifo-caducidades.xlsx:Instrucciones:A11 — «Mapa de Almacén» (la hoja es «Mapa Almacén», sin «de»)",
+    "07-analisis-costes-compras.xlsx:Instrucciones:A8 — «Evolución Mensual» NO EXISTE (§4: la crea grupo_c)"
+   ],
+   "nota": "el gate INFORMA siempre pero sólo BLOQUEA cuando los tres grupos están cargados: con --solo motor esas promesas siguen vivas por diseño, crearlas o retirarlas es trabajo de §2/§3/§4. BONUS-09:Instrucciones:A11 («El simulador te permite probar…») NO lo caza el gate porque no entrecomilla ni enumera nada: lo retira grupo_c a mano (§7-bis.4)."
+  },
+  {
+   "titulo": "pycel: dos limitaciones medidas, con su rodeo",
+   "detalle": [
+    "set_value() exige que la celda esté YA en el cell_map (AssertionError: Address \"Cocina!G5\" not found in the cell map): hay que evaluate() antes.",
+    "una fecha como CADENA da #VALUE! al restarla de TODAY(): se inyecta el NÚMERO DE SERIE de Excel (días desde el 30/12/1899).",
+    "COUNTA y MODE siguen sin implementarse (la SPEC ya da los sustitutos: COUNTIF(rango,\"<>\") e INDEX/MATCH sobre una columna de COUNTIF); verificar_cache() los cuenta aparte como `sin_pycel`, no como fallo."
+   ]
+  }
+ ],
+ "pendientes_de_grupo": {
+  "total": 7,
+  "detalle": [
+   "03-pedidos-compra.xlsx:Pedido Actual:C8: la cabecera no dice «Categoría» todavía — DV de categoría aplazada al grupo",
+   "03-pedidos-compra.xlsx:Pedido Actual:D8: la cabecera no dice «Unidad» todavía — DV de unidad aplazada al grupo",
+   "04-recepcion-mercancias.xlsx:Control Recepción:M3: la cabecera no dice «Conform» todavía — formato condicional aplazado al grupo",
+   "04-recepcion-mercancias.xlsx:Control Recepción:K3: la cabecera no dice «Temp» todavía — formato condicional aplazado al grupo",
+   "06-fifo-caducidades.xlsx:Control FIFO:L4: la cabecera no dice «Estado» todavía — formato condicional aplazado al grupo",
+   "07-analisis-costes-compras.xlsx:Dashboard KPIs:E3: la cabecera no dice «Estado» todavía — formato condicional aplazado al grupo",
+   "07-analisis-costes-compras.xlsx:Top 20 Productos:J3: la cabecera no dice «Variaci» todavía — formato condicional aplazado al grupo"
+  ],
+  "lectura": "no son fallos: son los objetivos del §1 cuyo layout todavía no existe. Cuando el grupo escriba la cabecera que dice el centinela, el motor los aplica solo, sin tocar una línea de código."
+ },
+ "hojas_esqueleto_para_el_1_4": {
+  "total": 15,
+  "por_fichero": {
+   "01-inventario-stock-diario.xlsx": [
+    "Resumen Dashboard"
+   ],
+   "02-fichas-proveedores.xlsx": [
+    "Directorio Proveedores",
+    "Evaluación Proveedores",
+    "Condiciones Comerciales"
+   ],
+   "03-pedidos-compra.xlsx": [
+    "Historial Pedidos"
+   ],
+   "04-recepcion-mercancias.xlsx": [
+    "Control Recepción",
+    "Registro Incidencias"
+   ],
+   "05-control-mermas.xlsx": [
+    "Registro Diario Mermas",
+    "Análisis por Categoría",
+    "Plan de Acción"
+   ],
+   "06-fifo-caducidades.xlsx": [
+    "Control FIFO"
+   ],
+   "07-analisis-costes-compras.xlsx": [
+    "Coste por Categoría",
+    "Top 20 Productos"
+   ],
+   "BONUS-08-inventario-rapido-mensual.xlsx": [
+    "Conteo Rápido"
+   ],
+   "BONUS-09-calculadora-punto-pedido.xlsx": [
+    "Calculadora"
+   ]
+  },
+  "nota": "la SPEC §1.4 nombra 8 hojas esqueleto y dice «las 12»; el contador del motor encuentra 15 con el criterio «ni un dato ni un ejemplo en el bloque, sin contar fórmulas». La diferencia son 06!'Mapa Almacén' (tiene 6 zonas y la SPEC quiere 9, así que no sale como esqueleto) y las que la SPEC no nombraba: 01!'Resumen Dashboard', 02!'Evaluación Proveedores', 05!'Registro Diario Mermas', 05!'Análisis por Categoría' (col. A tiene la taxonomía pero B:E están vacías), 06!'Control FIFO', 07!'Coste por Categoría' y BONUS-09!'Calculadora'."
+ },
+ "demostraciones": {
+  "semaforo_stock_01": {
+   "ref": "01-inventario-stock-diario.xlsx:Cocina:H5",
+   "par_level": 5,
+   "pruebas": [
+    {
+     "caso": "por debajo del par",
+     "stock": 2.5,
+     "estado": "🔴 PEDIR"
+    },
+    {
+     "caso": "entre par y par×1,5",
+     "stock": 6.0,
+     "estado": "🟡 BAJO"
+    },
+    {
+     "caso": "holgado",
+     "stock": 15,
+     "estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 3,
+   "ok": true
+  },
+  "semaforo_fifo_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:H5",
+   "columna_fecha": "F",
+   "pruebas": [
+    {
+     "caso": "caducado ayer",
+     "dias": -1,
+     "estado": "🔴 URGENTE"
+    },
+    {
+     "caso": "caduca mañana",
+     "dias": 1,
+     "estado": "🔴 URGENTE"
+    },
+    {
+     "caso": "caduca en 5 días",
+     "dias": 5,
+     "estado": "🟢 OK"
+    },
+    {
+     "caso": "caduca en 30 días",
+     "dias": 30,
+     "estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 2,
+   "nota": "en v1.1 son 3 estados y el consumo preferente vencido se marca igual que un caducado; el 4.º estado lo pone grupo_c (§4, DOM-13)"
+  },
+  "iva_por_categoria_03": {
+   "ref": "03-pedidos-compra.xlsx:Listas:A2:B11",
+   "tabla": [
+    {
+     "categoria": "Cárnicos",
+     "iva": 10
+    },
+    {
+     "categoria": "Pescados",
+     "iva": 10
+    },
+    {
+     "categoria": "Lácteos",
+     "iva": 4
+    },
+    {
+     "categoria": "Verduras/Frutas",
+     "iva": 4
+    },
+    {
+     "categoria": "Secos/Granos",
+     "iva": 10
+    },
+    {
+     "categoria": "Congelados",
+     "iva": 10
+    },
+    {
+     "categoria": "Bebidas Alcohólicas",
+     "iva": 21
+    },
+    {
+     "categoria": "Bebidas No Alcohólicas",
+     "iva": 10
+    },
+    {
+     "categoria": "Limpieza",
+     "iva": 21
+    },
+    {
+     "categoria": "Otros",
+     "iva": 21
+    }
+   ],
+   "tipos_distintos": [
+    4,
+    10,
+    21
+   ],
+   "ok": true,
+   "nota": "hoy `Pedido Actual!G9:G28` lleva el 10 escrito a mano en las 20 líneas: un pedido de vino sale con 11 puntos de IVA de menos (DOM-07)"
+  },
+  "doble_guarda_03": {
+   "ref": "03-pedidos-compra.xlsx:Pedido Actual:F9",
+   "formula": "=IF(D9=\"\",\"\",D9*E9)",
+   "cantidad_10_sin_precio": 0,
+   "doble_guarda": false,
+   "nota": "mientras el resultado sea 0 y no un aviso, el total del pedido miente: la línea se suma como si fuera gratis (§1.8, TEC-06)"
+  },
+  "proteccion": {
+   "hojas": [
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Cocina",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 180,
+     "verdes_desbloqueadas": 180
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Barra",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 135,
+     "verdes_desbloqueadas": 135
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Almacén",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 135,
+     "verdes_desbloqueadas": 135
+    },
+    {
+     "ref": "01-inventario-stock-diario.xlsx:Resumen Dashboard",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Directorio Proveedores",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 200,
+     "verdes_desbloqueadas": 200
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Comparativa Precios",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 80,
+     "verdes_desbloqueadas": 80
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Evaluación Proveedores",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 70,
+     "verdes_desbloqueadas": 70
+    },
+    {
+     "ref": "02-fichas-proveedores.xlsx:Condiciones Comerciales",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 90,
+     "verdes_desbloqueadas": 90
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Pedido Actual",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 100,
+     "verdes_desbloqueadas": 100
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Historial Pedidos",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "03-pedidos-compra.xlsx:Listas",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 10,
+     "verdes_desbloqueadas": 10
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Control Recepción",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 360,
+     "verdes_desbloqueadas": 360
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Registro Incidencias",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "04-recepcion-mercancias.xlsx:Verificación Temperaturas",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Registro Diario Mermas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 450,
+     "verdes_desbloqueadas": 450
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Análisis por Categoría",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 28,
+     "verdes_desbloqueadas": 28
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Dashboard Mermas",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 15,
+     "verdes_desbloqueadas": 15
+    },
+    {
+     "ref": "05-control-mermas.xlsx:Plan de Acción",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Control FIFO",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 400,
+     "verdes_desbloqueadas": 400
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Alertas Caducidad",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "06-fifo-caducidades.xlsx:Mapa Almacén",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 18,
+     "verdes_desbloqueadas": 18
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Coste por Categoría",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 130,
+     "verdes_desbloqueadas": 130
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 160,
+     "verdes_desbloqueadas": 160
+    },
+    {
+     "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 12,
+     "verdes_desbloqueadas": 12
+    },
+    {
+     "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "BONUS-08-inventario-rapido-mensual.xlsx:Conteo Rápido",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 300,
+     "verdes_desbloqueadas": 300
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Instrucciones",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora",
+     "protegida": true,
+     "con_password": false,
+     "verdes": 150,
+     "verdes_desbloqueadas": 150
+    },
+    {
+     "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Parámetros",
+     "protegida": false,
+     "con_password": false,
+     "verdes": 0,
+     "verdes_desbloqueadas": 0
+    }
+   ],
+   "fallos": []
+  }
+ },
+ "pruebas": [
+  "dry-run --solo motor: exit 0",
+  "idempotencia (2.ª pasada sobre clon, comparando valor+formato+relleno+bloqueo+merges+DV+CF+protección+print_area+propiedades OOXML): 0 diferencias",
+  "censo-entregables.py --only <copia> --fail --quiet: 0 defectos, 9 xlsx",
+  "verificación data_only de las fórmulas nuevas: 0 fallos (el motor no escribe fórmulas de celda; las escriben los grupos)",
+  "demo protección: 36 hojas, 0 con contraseña, verdes == verdes desbloqueadas en todas",
+  "demo semáforo de stock (pycel, 01!Cocina!H5): 3 estados distintos con par level 5 → 🔴 PEDIR / 🟡 BAJO / 🟢 OK",
+  "demo semáforo FIFO (pycel, 06!Control FIFO!H5): «caducado ayer» y «caduca mañana» devuelven AMBOS «🔴 URGENTE» — es DOM-13 en vivo, el 4.º estado lo pone grupo_c",
+  "demo IVA (03!Listas!A2:B11): tipos distintos [4, 10, 21]",
+  "demo doble guarda (03!Pedido Actual!F9): cantidad 10 sin precio → 0, no un aviso (TEC-06 en vivo)",
+  "abort sin --dry-run y sin KIT_INVENTARIO_APPLY=1: exit 1, no escribe nada",
+  "git status de astro-site/public/dl/kit-inventario/: vacío",
+  "smoke-test de expandir_filas (05, 01 y 03) e insertar_columna (03): correctos, idempotentes y los ficheros reabren"
+ ],
+ "trampas_para_la_siguiente_sesion": [
+  {
+   "titulo": "No canalizar main.py por `head`",
+   "detalle": "`python3 main.py … | head -8` cierra la tubería, python recibe BrokenPipeError en el primer print posterior y el proceso MUERE a mitad del bucle de 9 ficheros. Pasó en esta sesión: la carpeta de trabajo quedó con 05-control-mermas.xlsx sin procesar y parecía un bug del motor («normalizar_categorias no persiste»). Redirigir a un fichero y leerlo después."
+  },
+  {
+   "titulo": "inject_cache va SIEMPRE al final",
+   "detalle": "escribe el <v> directamente en el XML del zip; cualquier wb.save() posterior de openpyxl lo borra en silencio y el cliente ve las celdas de resultado en blanco en el visor del móvil."
+  },
+  {
+   "titulo": "El verde también se quita",
+   "detalle": "si un grupo convierte en calculada una columna que era verde, aplicar_verde() le devuelve la banda; pero si el grupo pinta verde a mano una celda de una hoja de SIN_VERDE_AUTO (Verificación Temperaturas, Parámetros, Listas), el motor NO la toca: esas hojas son suyas."
+  }
+ ],
+ "dudas_para_el_orquestador": [
+  "§1.4 · La SPEC dice «las 12 hojas esqueleto» y nombra 8. El contador encuentra 15 con criterio estricto. ¿Se siembran las 15 o sólo las 8 nombradas? Recomiendo las 15: 01!'Resumen Dashboard' y 07!'Coste por Categoría' son justo las que el cliente abre primero.",
+  "§1.2 · Los vocabularios del semáforo de 05!'Dashboard Mermas'!D y 07!'Dashboard KPIs'!E los he fijado en OK / REVISAR / ALERTA, porque la SPEC no los concreta (sólo dice «semáforo por formato condicional»). Si grupo_b y grupo_c escriben otro texto en esas columnas, hay que alinear VOC_KPI en motor.py o el color no saldrá.",
+  "§1.2 · El centinela del CF de 04!M es que la cabecera CONTENGA «Conform». grupo_b tiene que titular esa columna con esa palabra (p. ej. «Conformidad») o el formato condicional se queda sin aplicar y aparecerá como `pendientes_de_grupo`. Igual con 06!L y 07!'Dashboard KPIs'!E («Estado») y 07!'Top 20'!J («Variación»).",
+  "§1.5 · 04!'Verificación Temperaturas' y BONUS-09!'Parámetros' quedan HOY sin protección porque no tienen ninguna celda verde (el motor no la deduce en hojas de referencia). En cuanto grupo_b/grupo_c marquen sus verdes (D4/D5 de Parámetros, los umbrales editables de Temperaturas) pasarán a estar protegidas solas. ¿Se quiere que 'Verificación Temperaturas' sea editable o de sólo lectura? Son umbrales legales.",
+  "§7.5 (licencia) y §7.6 (cifras del hero) siguen siendo decisiones de John, y no tocan al motor: §7-bis ya cierra que NO se añade cláusula de licencia a los xlsx."
+ ],
+ "bugs_cazados_construyendo": [
+  {
+   "donde": "motor.py:_rango_filas (1.ª versión)",
+   "sintoma": "la DV de categorías llegaba a 01!Cocina!C5:C27 y el verde de edición a la fila 27",
+   "causa": "recortar el bloque a ws.max_row, que incluye la COLA (TOTAL, pie de página)",
+   "fix": "BLOQUES pasa a llevar ULTIMA_HOY y ULTIMA_V2; se elige según si ws.max_row ya superó ULTIMA_V2",
+   "verificado": "DV y CF terminan ahora en C5:C24 / C4:C53 / H5:H19"
+  },
+  {
+   "donde": "motor.py:expandir_filas",
+   "sintoma": "AttributeError: 'MergedCell' object attribute 'value' is read-only al mover el pie «© 2026 AI Chef Pro» (01!Cocina!A27:H27)",
+   "causa": "se rehacía la combinación en la fila DESTINO antes de copiar las celdas",
+   "fix": "deshacer todas las combinaciones de la cola primero, mover, y rehacerlas al final"
+  },
+  {
+   "donde": "motor.py:expandir_filas",
+   "sintoma": "05!G105 se quedaba en =SUM(G4:G53) tras crecer el bloque a 100 filas: las 50 mermas nuevas no entraban en el TOTAL MES",
+   "causa": "la traducción de la cola sólo desplazaba las referencias POR DEBAJO del bloque",
+   "fix": "_corre_cola(): una referencia a la ÚLTIMA fila del bloque se ESTIRA a la nueva última; las de más abajo se desplazan. Verificado: =SUM(G4:G103)"
+  },
+  {
+   "donde": "main.py:_set (demostraciones pycel)",
+   "sintoma": "AssertionError: Address \"Cocina!G5\" not found in the cell map",
+   "causa": "pycel exige que la celda esté en el cell_map antes de set_value()",
+   "fix": "evaluate() antes de set_value()"
+  },
+  {
+   "donde": "main.py:demo_semaforo_fifo",
+   "sintoma": "las cuatro pruebas devolvían #VALUE!",
+   "causa": "se inyectaba la fecha como CADENA y pycel no la resta de TODAY()",
+   "fix": "número de serie de Excel (días desde el 30/12/1899). Ahora la demo enseña el defecto real: «caducado ayer» y «caduca mañana» devuelven AMBOS 🔴 URGENTE (DOM-13)"
+  },
+  {
+   "donde": "método de trabajo, no código",
+   "sintoma": "«normalizar_categorias no persiste en 05» — falso",
+   "causa": "`python3 main.py … | head -8` cierra la tubería y el proceso muere a mitad del bucle de 9 ficheros; 05 no se llegaba a procesar",
+   "fix": "redirigir a fichero y leerlo después. Anotado en trampas_para_la_siguiente_sesion"
+  }
+ ]
+}

@@ -1,0 +1,526 @@
+{
+ "productId": "kit-inventario",
+ "version": "2.0",
+ "rol": "grupo_c",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md §4 (+ §6 descartes, §7-bis decisiones)",
+ "fecha": "2026-08-23T22:53:34",
+ "modulo": "scripts/productos-digitales/kit-inventario-v2_0/grupo_c.py",
+ "ficheros": [
+  "06-fifo-caducidades.xlsx",
+  "07-analisis-costes-compras.xlsx",
+  "BONUS-09-calculadora-punto-pedido.xlsx"
+ ],
+ "ids_r1_cubiertos": {
+  "06-fifo-caducidades.xlsx": [
+   "DOM-13",
+   "DOM-24",
+   "DOM-25",
+   "DOM-26",
+   "DOM-27",
+   "DOM-28",
+   "TEC-11",
+   "TEC-12",
+   "COM-09",
+   "COM-15",
+   "COM-26"
+  ],
+  "07-analisis-costes-compras.xlsx": [
+   "DOM-10",
+   "DOM-29",
+   "DOM-30",
+   "DOM-31",
+   "TEC-08",
+   "COM-11",
+   "COM-23",
+   "TEC-05/§1.6 (Evolución Mensual)"
+  ],
+  "BONUS-09-calculadora-punto-pedido.xlsx": [
+   "DOM-06",
+   "DOM-12",
+   "TEC-02",
+   "TEC-14",
+   "TEC-15",
+   "COM-01",
+   "§7-bis.4 (retirada del «Simulador»)"
+  ]
+ },
+ "comando_de_prueba": "CLAUDE_SCRATCHPAD=<scratch>/propio-grupo_c python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --solo motor,grupo_c --json <scratch>/kit-inv-v2/grupo_c.json",
+ "gates": {
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "data_only_formulas_nuevas": {
+   "con_valor": 143,
+   "vacias_por_diseno": 395,
+   "sin_pycel": 0,
+   "fallos": []
+  },
+  "censo_entregables_fail": 0,
+  "pestanas_citadas_inexistentes_en_mis_ficheros": {},
+  "pestanas_citadas_inexistentes_de_otros_grupos": [
+   "01-inventario-stock-diario.xlsx",
+   "02-fichas-proveedores.xlsx",
+   "03-pedidos-compra.xlsx",
+   "05-control-mermas.xlsx"
+  ],
+  "inject_cache": [
+   {
+    "fichero": "06-fifo-caducidades.xlsx",
+    "salida": "06-fifo-caducidades.xlsx: formulas=262 cache_inyectado=12 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-analisis-costes-compras.xlsx",
+    "salida": "07-analisis-costes-compras.xlsx: formulas=149 cache_inyectado=114 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+    "salida": "BONUS-09-calculadora-punto-pedido.xlsx: formulas=150 cache_inyectado=40 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "proteccion_fallos": []
+ },
+ "cambios_por_fichero": [
+  {
+   "fichero": "06-fifo-caducidades.xlsx",
+   "cambios": [
+    "06:Control FIFO!A4:T4: +9 columnas (tipo de fecha, apertura, vida útil tras abrir, fecha límite efectiva, días en almacén, cantidad, unidad, precio/ud y valor en riesgo) — DOM-25/DOM-26/TEC-12",
+    "06:Control FIFO!J5:Q54: 250 fórmulas nuevas — fecha límite efectiva (J), días restantes (K), semáforo de CUATRO estados con ⛔ CADUCADO — RETIRAR (L, DOM-13/TEC-11/COM-09), días en almacén (M, DOM-24) y valor en riesgo (Q, DOM-25); DV de tipo de fecha (DOM-26), unidad y zona; autofiltro en A4:T54 (DOM-27), que no existía en ninguna de las 30 hojas del kit",
+    "06:Mapa Almacén!A4:E12: 9 zonas precargadas separando crudo de elaborados (DOM-28/COM-15) — la hoja se vendía tres veces en la landing y se entregaba con seis filas EN BLANCO; alimenta la DV de zona del Control FIFO",
+    "06:Alertas Caducidad!A3:D9 + A11:A17: contadores COUNTIF por estado y valor en riesgo con SUMIF, más el protocolo en cuatro líneas con caducado = retirada obligatoria (DOM-27/COM-09) — la hoja era una instrucción de trabajo manual con 0 fórmulas",
+    "06:Instrucciones!A1:A31: reescritas — FIFO vs FEFO (DOM-24/COM-26), los cuatro estados del semáforo (DOM-13) y el Mapa de Almacén citado con el nombre real de la pestaña, «Mapa Almacén» (§1.6)",
+    "06-fifo-caducidades.xlsx: 500 celdas reformateadas (§1.7)",
+    "06-fifo-caducidades.xlsx: 736 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "06-fifo-caducidades.xlsx:Control FIFO!C5:C54: DV inline (10 valores)",
+    "06-fifo-caducidades.xlsx:Control FIFO!L5:L54: 5 regla(s) de formato condicional",
+    "Control FIFO: protegida sin contraseña (700 celdas verdes editables)",
+    "Mapa Almacén: protegida sin contraseña (36 celdas verdes editables)",
+    "Instrucciones!A31:A33: nota de desprotección + bio anclada + versión 2.0",
+    "06-fifo-caducidades.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 262,
+   "gates": {
+    "fichero": "06-fifo-caducidades.xlsx",
+    "dv_aplicadas": 1,
+    "cf_aplicadas": 5,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [
+     "Control FIFO"
+    ],
+    "contadores": {
+     "hojas": 4,
+     "formulas": 262,
+     "verdes": 736,
+     "verdes_con_dato": 36,
+     "dv": 4,
+     "cf": 5,
+     "protegidas": 2,
+     "celdas": 435
+    }
+   }
+  },
+  {
+   "fichero": "07-analisis-costes-compras.xlsx",
+   "cambios": [
+    "07:Top 20 Productos!A3:K3: +2 columnas (unidad de compra y precio anterior) — sin precio anterior la columna «Variación vs Anterior» era literalmente incalculable (DOM-29)",
+    "07:Coste por Categoría!O4:O14 + B4:B13: «% del Total» tenía el denominador calculado al lado (N14) y las 11 celdas vacías (DOM-31/TEC-08); cabecera y título con «(€, sin IVA)» (DOM-30) y enero sembrado con 10 importes de ejemplo",
+    "07:Evolución Mensual: hoja CREADA con 12 meses (§1.6/TEC-05) — Instrucciones!A8 la citaba desde la v1.1 y no existía; B = total del mes, C = variación mes a mes con guarda de cero, D = acumulado",
+    "07:Top 20 Productos!B4:M24: la hoja tenía 0 fórmulas y sólo la numeración 1-20 (TEC-08/COM-11). Ahora es la tabla de entrada (§7-bis.1): gasto anual (F), % del Top 20 (G), variación de precio con CF > 5 % (J, DOM-29), 8 productos de ejemplo coherentes con el 01 y ranking Top 5 con LARGE/INDEX/MATCH en L4:M8",
+    "07:Dashboard KPIs!B4:B9 + B12:B17: la hoja DESCRIBÍA EN TEXTO cómo calcular cada KPI y no tenía ni una fórmula ni una celda de entrada (DOM-10/TEC-08/COM-11/COM-23). Food cost sobre CONSUMO, coste por cubierto sin Limpieza ni Otros, objetivo relativo al ticket medio (C5) y las 6 entradas verdes del periodo",
+    "07:Instrucciones!A1:A24: reescritas — aviso de «sin IVA» (DOM-30), definición correcta de los KPIs (COM-23) y la pestaña Evolución Mensual, que se citaba desde la v1.1 y no existía (§1.6)",
+    "07-analisis-costes-compras.xlsx: 329 celdas reformateadas (§1.7)",
+    "07-analisis-costes-compras.xlsx: 260 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "07-analisis-costes-compras.xlsx:Top 20 Productos!C4:C23: DV inline (10 valores)",
+    "07-analisis-costes-compras.xlsx:Top 20 Productos!J4:J23: 1 regla(s) de formato condicional",
+    "Coste por Categoría: protegida sin contraseña (120 celdas verdes editables)",
+    "Top 20 Productos: protegida sin contraseña (140 celdas verdes editables)",
+    "Dashboard KPIs: protegida sin contraseña (6 celdas verdes editables)",
+    "Instrucciones!A23:A25: nota de desprotección + bio anclada + versión 2.0",
+    "07-analisis-costes-compras.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 126,
+   "gates": {
+    "fichero": "07-analisis-costes-compras.xlsx",
+    "dv_aplicadas": 1,
+    "cf_aplicadas": 1,
+    "pendientes_de_grupo": [
+     "07-analisis-costes-compras.xlsx:Dashboard KPIs:E3: la cabecera no dice «Estado» todavía — formato condicional aplazado al grupo"
+    ],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [
+     "Evolución Mensual"
+    ],
+    "contadores": {
+     "hojas": 5,
+     "formulas": 149,
+     "verdes": 266,
+     "verdes_con_dato": 72,
+     "dv": 2,
+     "cf": 1,
+     "protegidas": 3,
+     "celdas": 362
+    }
+   }
+  },
+  {
+   "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+   "cambios": [
+    "BONUS-09:Calculadora!A3:N3: +5 columnas (categoría, cobertura de seguridad en días, precio/ud, vida útil y cantidad a pedir sugerida) — sin precio no hay EOQ posible y sin vida útil no hay forma de caparla (DOM-06/TEC-02/COM-01)",
+    "BONUS-09:Calculadora!G4:M33: 150 fórmulas nuevas. EOQ parametrizada contra Parámetros!$D$4 y $D$5 —el 2 y el 0,5 iban HARDCODEADOS en las 30 fórmulas (DOM-06/TEC-02/COM-01)—, capada por vida útil (L), stock de seguridad en UNIDADES a partir de días de cobertura (G, DOM-12/TEC-14) y guarda de consumo cero en la frecuencia (M, TEC-15, que devolvía #DIV/0!)",
+    "BONUS-09:Parámetros!D4:D5: dos celdas verdes NUMÉRICAS (coste de pedido 3 € y 25 % anual de almacenamiento) — la hoja definía los dos costes como TEXTO («2-5 €», «20-30 % anual») mientras la EOQ llevaba 2 y 0,5 dentro de la fórmula (DOM-06/TEC-02); A10 describe ya la columna F en días (DOM-12/TEC-14)",
+    "BONUS-09:Instrucciones!A1:A24: reescritas — se RETIRA la promesa del «simulador», que nunca existió como pestaña (§1.6/§7-bis.4), y se explica por qué la cantidad sugerida capa la EOQ",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 150 celdas reformateadas (§1.7)",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 240 celdas marcadas como editables (verde E8F5E9), 0 desmarcadas por pasar a calculadas",
+    "Calculadora: protegida sin contraseña (240 celdas verdes editables)",
+    "Parámetros: protegida sin contraseña (2 celdas verdes editables)",
+    "Instrucciones!A23:A25: nota de desprotección + bio anclada + versión 2.0",
+    "BONUS-09-calculadora-punto-pedido.xlsx: 1 propiedades OOXML actualizadas (subject → v2.0)"
+   ],
+   "formulas_nuevas": 150,
+   "gates": {
+    "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+    "dv_aplicadas": 0,
+    "cf_aplicadas": 0,
+    "pendientes_de_grupo": [],
+    "pestanas_citadas_inexistentes": [],
+    "hojas_esqueleto": [],
+    "contadores": {
+     "hojas": 3,
+     "formulas": 150,
+     "verdes": 242,
+     "verdes_con_dato": 66,
+     "dv": 1,
+     "cf": 0,
+     "protegidas": 2,
+     "celdas": 315
+    }
+   }
+  }
+ ],
+ "layout_final": {
+  "06:Control FIFO": "A:T — #, Producto, Categoría(DV), Lote/Ref., Fecha de entrada, Tipo de fecha(DV), Fecha de caducidad, Fecha de apertura, Vida útil tras abrir (días), Fecha límite efectiva(f), Días restantes(f), Estado(f, 4 estados + rama de consumo preferente, CF 5 reglas), Días en almacén(f), Cantidad, Unidad(DV), Precio/ud (€), Valor en riesgo (€)(f), Zona de almacén(DV), Posición, Acción · autofiltro A4:T54",
+  "06:Alertas Caducidad": "A3:D9 contadores COUNTIF/SUMIF por estado + total; A11:A17 protocolo de 4 puntos",
+  "06:Mapa Almacén": "A4:E12 — 9 zonas (crudos, pescado, elaborados, verduras, congelador, descongelación, economato seco, bodega, residuos)",
+  "07:Coste por Categoría": "O4:O14 % del total; N3 y A1 con «(€, sin IVA)»; enero sembrado con 10 importes",
+  "07:Evolución Mensual": "HOJA NUEVA — A4:D15, 12 meses: total del mes, variación y acumulado",
+  "07:Top 20 Productos": "A:K + ranking en L4:M8 — #, Producto, Categoría(DV), Unidad(DV), Gasto mensual, Gasto anual(f), % del Top 20(f), Precio anterior, Precio actual, Variación de precio (%)(f, CF>5%), Proveedor; TOTAL en la 24; 8 filas de ejemplo",
+  "07:Dashboard KPIs": "B4:B9 KPIs calculados + C5 objetivo relativo; B12:B17 entradas verdes del periodo",
+  "BONUS-09:Calculadora": "A:N — #, Producto, Categoría(DV), Consumo diario, Lead time, Cobertura de seguridad (días), Stock de seguridad (ud)(f), Punto de pedido (ud)(f), Precio/ud, Vida útil, EOQ teórica(f), Cantidad a pedir sugerida(f), Frecuencia(f), Proveedor; 8 filas de ejemplo",
+  "BONUS-09:Parámetros": "D4=3 € y D5=25 % verdes y NUMÉRICAS; A10/A11/A12 describen las columnas F, J y el factor 0,7"
+ },
+ "datos_precargados": {
+  "criterio": "Coherentes producto a producto con las 50 filas del 01 (grupo_a): mismos nombres, mismas unidades de compra y mismos precios HORECA de referencia; los proveedores son los 6 del 02. Nada de rotaciones cíclicas.",
+  "07:Coste por Categoría (enero)": "Cárnicos 2.850 · Pescados 1.980 · Lácteos 620 · Verduras/Frutas 1.150 · Secos/Granos 1.240 · Congelados 480 · Bebidas Alcohólicas 980 · Bebidas No Alcohólicas 540 · Limpieza 380 · Otros 180 = 10.400 €/mes",
+  "07:Top 20 (8 filas)": "Solomillo 1.920 (30,50→32,00) · Salmón 1.120 (12,90→14,00) · Pollo 780 (6,20→6,50) · Gambas 720 (17,50→18,00) · Cerveza barril 660 (53,00→55,00) · AOVE 522 (5,10→5,80) · Parmesano 412,50 (16,20→16,50) · Patata 340 (0,95→0,85) = 6.474,50 €/mes, el 62 % de las compras (Pareto)",
+  "07:Dashboard (entradas)": "Ventas 34.000 € · 1.450 cubiertos · existencias 4.200/4.050 € · periodo anterior 9.980 € · ticket 23,45 € → food cost 31,0 % y 6,89 €/cubierto contra un objetivo de 7,03 €",
+  "BONUS-09:Calculadora (8 filas)": "Pollo 6 kg/día · Solomillo 2 · Salmón 3 · Leche 20 L · Patata 18 · AOVE 3 L · Arroz 4 · Cerveza 0,5 barril; lead time y vida útil por producto",
+  "06:Control FIFO": "NO se siembra a propósito: sus columnas son FECHAS y quedarían congeladas en la fecha del build; en tres meses el kit se entregaría con las 50 líneas en «⛔ CADUCADO». El «Mapa Almacén», que sí es estático, va precargado con las 9 zonas."
+ },
+ "decisiones_y_desviaciones": [
+  {
+   "que": "06!J lleva una guarda más que el literal de la SPEC",
+   "spec": "=IF($H5=\"\",$G5,IF($I5=\"\",$G5,MIN($G5,$H5+$I5)))",
+   "escrito": "=IF($G5=\"\",\"\",IF($H5=\"\",$G5,IF($I5=\"\",$G5,MIN($G5,$H5+$I5))))",
+   "por_que": "sin la guarda de $G, una fila vacía devuelve 0 —que con formato de fecha es 00/01/1900—, K da unos −46.000 y el semáforo pinta de rojo «⛔ CADUCADO» las 50 filas en blanco del fichero recién descargado.",
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:J5"
+  },
+  {
+   "que": "BONUS-09!H exige también $F y BONUS-09!L también $J",
+   "spec": "H4=IF(OR($D4=\"\",$E4=\"\"),…) · L4=IF($K4=\"\",\"\",MIN($K4,ROUND($D4*$J4*0.7,0)))",
+   "escrito": "H4=IF(OR($D4=\"\",$E4=\"\",$F4=\"\"),…) · L4=IF(OR($K4=\"\",$J4=\"\"),…)",
+   "por_que": "en Excel «número + \"\"» y «número × \"\"» no son 0: son #¡VALOR!. Con la guarda de la SPEC, una línea con consumo y lead time pero sin cobertura (o sin vida útil) rompía la celda.",
+   "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora:H4 · L4"
+  },
+  {
+   "que": "07!'Dashboard KPIs'!B3 «Valor Actual» → «Resultado» y BONUS-09!'Parámetros'!B3 «Valor Típico» → «Rango habitual»",
+   "por_que": "«valor» es clave de MONEDA en motor.FORMATO_POR_CABECERA (motor.py:409): con la cabecera vieja, el food cost (un porcentaje) y el nombre del producto de B9 salían con formato de euros, y «1-2 días» también.",
+   "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs:B3 · BONUS-09:Parámetros:B3"
+  },
+  {
+   "que": "07!'Top 20'!J3 se llama «Variación de precio (%)», con el «(%)» explícito",
+   "por_que": "misma razón: «precio» es clave de MONEDA y «%» es la de PORCENTAJE, y el motor se queda con la primera que casa. Sin el «(%)» la variación se imprimía «0,05 €». Medido en la 1.ª pasada y corregido. Sigue conteniendo «Variaci», que es el centinela del formato condicional (motor.py:CF_EXPRESION).",
+   "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos:J3"
+  },
+  {
+   "que": "07!'Dashboard KPIs'!A8 deja de ser «Nº Proveedores Activos»",
+   "escrito": "«Productos con subida > 5 %» = COUNTIF('Top 20 Productos'!$J$4:$J$23,\">0.05\")",
+   "por_que": "el libro 07 no tiene un solo dato de proveedores —el directorio vive en el 02, y los enlaces entre libros están DESCARTADOS en §6 porque se rompen al mover el fichero—, así que ese KPI era incalculable por diseño. El sustituto es justo lo que promete la landing («alertas de variación de precios >5%») y sale de datos que el propio libro tiene.",
+   "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs:A8 · B8"
+  },
+  {
+   "que": "grupo_c añade 'Dashboard KPIs' a motor.SIN_VERDE_AUTO y una regla '@' a motor.FORMATO_POR_CABECERA",
+   "por_que": "(1) el Dashboard tiene fórmulas en B4:B9 y entradas verdes en B12:B17, en la MISMA columna, y motor.aplicar_verde() decide por columna entera: despintaba las seis casillas de entrada. SIN_VERDE_AUTO está documentado en motor.py:266 exactamente para este caso. (2) «Tipo de fecha» es texto y contiene «fecha», clave de FECHA: sin la regla, el desplegable Caducidad/Consumo preferente salía con formato dd/mm/yyyy. Es el mismo patrón que grupo_a._extender_formatos().",
+   "ref": "grupo_c.py:_extender_motor()"
+  },
+  {
+   "que": "DV de unidad en 06!'Control FIFO'!O y en 07!'Top 20'!D, y DV de categoría en BONUS-09!'Calculadora'!C",
+   "por_que": "§1.1 enumera dónde va la DV sobre el layout de la v1.1; estas tres columnas son NUEVAS y son de taxonomía. Dejarlas a texto libre rompería el propósito del §1.1 (que los SUMIF/COUNTIF agreguen). Llevan la marca 'kitinv-c' para no chocar con el limpiador del motor.",
+   "ref": "06:Control FIFO:O5:O54 · 07:Top 20 Productos:D4:D23 · BONUS-09:Calculadora:C4:C33"
+  },
+  {
+   "que": "El «% del Total» del Top 20 se etiqueta «% del Top 20»",
+   "por_que": "la fórmula de la SPEC es $E4/$E$24, y E24 es el total DEL TOP 20, no el de las compras. Llamarlo «% del Total» haría creer que el solomillo es el 29,7 % de las compras cuando es el 29,7 % del Top 20 (y el 18,5 % de las compras).",
+   "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos:G3"
+  }
+ ],
+ "demostraciones_pycel": {
+  "c_semaforo_cuatro_estados_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:L5",
+   "formula": "=IF($K5=\"\",\"\",IF($K5<0,IF($F5=\"Consumo preferente\",\"⚠ REVISAR (consumo preferente)\",\"⛔ CADUCADO — RETIRAR\"),IF($K5<=2,\"🔴 URGENTE\",IF($K5<=7,\"🟡 PRÓXIMO\",\"🟢 OK\"))))",
+   "pruebas": [
+    {
+     "caso": "caducado hace 10 días",
+     "dias": -10,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": -10,
+     "L5_estado": "⛔ CADUCADO — RETIRAR"
+    },
+    {
+     "caso": "consumo preferente vencido hace 10 días",
+     "dias": -10,
+     "F5_tipo": "Consumo preferente",
+     "K5_dias_restantes": -10,
+     "L5_estado": "⚠ REVISAR (consumo preferente)"
+    },
+    {
+     "caso": "caduca mañana",
+     "dias": 1,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 1,
+     "L5_estado": "🔴 URGENTE"
+    },
+    {
+     "caso": "caduca en 5 días",
+     "dias": 5,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 5,
+     "L5_estado": "🟡 PRÓXIMO"
+    },
+    {
+     "caso": "caduca en 30 días",
+     "dias": 30,
+     "F5_tipo": "Caducidad",
+     "K5_dias_restantes": 30,
+     "L5_estado": "🟢 OK"
+    }
+   ],
+   "estados_distintos": 5,
+   "ok": true,
+   "nota": "la v1.1 devolvía «🔴 URGENTE» en los tres primeros casos: no distinguía caducado de «caduca mañana» ni caducidad de consumo preferente"
+  },
+  "c_fecha_limite_y_apertura_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:J5 · K5 · L5 · M5",
+   "formula": "J5 =IF($G5=\"\",\"\",IF($H5=\"\",$G5,IF($I5=\"\",$G5,MIN($G5,$H5+$I5)))) · M5 =IF($E5=\"\",\"\",TODAY()-$E5)",
+   "pruebas": [
+    {
+     "caso": "sin abrir (caducidad a 20 días)",
+     "K5_dias_restantes": 20,
+     "L5_estado": "🟢 OK",
+     "M5_dias_en_almacen": 6
+    },
+    {
+     "caso": "abierto hoy, 3 días de vida útil tras abrir",
+     "K5_dias_restantes": 3,
+     "L5_estado": "🟡 PRÓXIMO",
+     "M5_dias_en_almacen": 6
+    },
+    {
+     "caso": "abierto hoy, 1 día de vida útil tras abrir",
+     "K5_dias_restantes": 1,
+     "L5_estado": "🔴 URGENTE",
+     "M5_dias_en_almacen": 6
+    }
+   ],
+   "ok": true,
+   "nota": "en la v1.1 no existían ni la apertura ni la vida útil tras abrir, y «Fecha Entrada» no aparecía en ninguna de las 100 fórmulas del libro (DOM-24)"
+  },
+  "c_valor_en_riesgo_y_alertas_06": {
+   "ref": "06-fifo-caducidades.xlsx:Control FIFO:Q5 + Alertas Caducidad:B4 · C4 · B9 · C9",
+   "formula": "Q5 =IF(OR($N5=\"\",$P5=\"\"),\"\",$N5*$P5) · C4 =SUMIF('Control FIFO'!$L$5:$L$54,\"*CADUCADO*\",'Control FIFO'!$Q$5:$Q$54)",
+   "fichero_en_blanco": {
+    "B4_caducados": 0.0,
+    "C4_valor_caducado": 0.0,
+    "B9_lotes": 0.0,
+    "C9_valor_total": 0.0
+   },
+   "con_un_lote_caducado_de_8_kg_a_32": {
+    "L5_estado": "⛔ CADUCADO — RETIRAR",
+    "Q5_valor_en_riesgo": 256,
+    "B4_caducados": 1,
+    "C4_valor_caducado": 256,
+    "B9_lotes": 1,
+    "C9_valor_total": 256
+   },
+   "ok": true,
+   "nota": "la hoja de alertas tenía 0 fórmulas y el Control FIFO no registraba cantidad: 200 g de perejil y 8 kg de solomillo generaban exactamente la misma alerta (DOM-25)"
+  },
+  "c_kpis_reales_07": {
+   "ref": "07-analisis-costes-compras.xlsx:Dashboard KPIs:B4 · B5 · B6 · B7 · C5",
+   "formulas": {
+    "B4": "=IFERROR(($B$14+$B$6-$B$15)/$B$12,\"\")",
+    "B5": "=IFERROR(($B$14+$B$6-$B$15-'Coste por Categoría'!$N$12-'Coste por Categoría'!$N$13)/$B$13,\"\")",
+    "B6": "='Coste por Categoría'!$N$14",
+    "C5": "=IFERROR($B$17*0.3,\"\")"
+   },
+   "pruebas": [
+    {
+     "caso": "datos de ejemplo (34.000 € de ventas, 1.450 cubiertos)",
+     "B4_food_cost": 0.3103,
+     "B5_coste_cubierto": 6.8897,
+     "B6_compras": 10400.0,
+     "B7_variacion": 0.0421,
+     "C5_objetivo": 7.035
+    },
+    {
+     "caso": "ventas a la mitad (17.000 €)",
+     "B12_ventas": 17000,
+     "B4_food_cost": 0.6206
+    },
+    {
+     "caso": "ventas al doble (68.000 €)",
+     "B12_ventas": 68000,
+     "B4_food_cost": 0.1551
+    },
+    {
+     "caso": "el doble de cubiertos (2.900)",
+     "B5_coste_cubierto": 3.4448
+    },
+    {
+     "caso": "ticket medio 40 € (objetivo = 30 % del ticket)",
+     "C5_objetivo": 12.0
+    }
+   ],
+   "ok": true,
+   "nota": "las dos hojas que dan nombre al entregable en el dashboard post-pago no tenían UNA SOLA FÓRMULA, y la columna D describía en texto cómo hacer la cuenta a mano (COM-11); el objetivo de coste por cubierto era «< 4,50 €», que sólo vale para un ticket de 15 € (DOM-31/COM-23)"
+  },
+  "c_variacion_precio_top20_07": {
+   "ref": "07-analisis-costes-compras.xlsx:Top 20 Productos:J4 · G4 · L4:M8 + Dashboard KPIs:B8 · B9",
+   "formulas": {
+    "J4": "=IF(OR($H4=\"\",$I4=\"\"),\"\",$I4/$H4-1)",
+    "G4": "=IFERROR($E4/$E$24,\"\")",
+    "L4": "=IFERROR(INDEX($B$4:$B$23,MATCH(LARGE($E$4:$E$23,1),$E$4:$E$23,0)),\"\")",
+    "B8": "=COUNTIF('Top 20 Productos'!$J$4:$J$23,\">0.05\")"
+   },
+   "con_los_ejemplos": {
+    "J4_solomillo": 0.0492,
+    "J9_aceite": 0.1373,
+    "G4_pct_top20": 0.2965,
+    "E24_total": 6474.5,
+    "L4_top1": "Solomillo de ternera",
+    "M4_top1_gasto": 1920.0,
+    "B8_con_subida": 2.0,
+    "B9_mayor_subida": "Aceite de oliva virgen extra"
+   },
+   "subiendo_el_solomillo_a_40": {
+    "J4_solomillo": 0.3115,
+    "B8_con_subida": 3,
+    "B9_mayor_subida": "Solomillo de ternera"
+   },
+   "y_pasando_su_gasto_a_5000": {
+    "E24_total": 9554.5,
+    "G4_pct_top20": 0.5233,
+    "L4_top1": "Solomillo de ternera",
+    "M4_top1_gasto": 5000
+   },
+   "ok": true,
+   "nota": "la landing promete «alertas de variación de precios (>5%)» y en la v1.1 la columna «Variación vs Anterior» estaba vacía en las 20 filas y era imposible de calcular: no existía «Precio Anterior» (DOM-29/TEC-08)"
+  },
+  "c_eoq_parametrizada_y_capada_09": {
+   "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora:K7 · L7 · M7 (Leche entera) y K6 · L6 (Salmón fresco)",
+   "formulas": {
+    "K": "=IF(OR($D4=\"\",$D4<=0,$I4=\"\"),\"\",ROUND(SQRT(2*$D4*365*Parámetros!$D$4/($I4*Parámetros!$D$5)),0))",
+    "L": "=IF(OR($K4=\"\",$J4=\"\"),\"\",MIN($K4,ROUND($D4*$J4*0.7,0)))",
+    "M": "=IF(OR($D4=\"\",$D4<=0,$L4=\"\"),\"\",ROUND($L4/$D4,0))"
+   },
+   "pruebas": [
+    {
+     "caso": "datos de ejemplo",
+     "K7_eoq_leche": 454.0,
+     "L7_cantidad_sugerida": 168.0,
+     "M7_frecuencia_dias": 8.0,
+     "K6_eoq_salmon": 43.0,
+     "L6_cantidad_salmon": 6.0,
+     "M6_frecuencia_salmon": 2.0
+    },
+    {
+     "caso": "salmón al doble de precio (28 €/kg): la EOQ baja",
+     "K6_eoq_salmon": 31.0,
+     "L6_cantidad_salmon": 6.0
+    },
+    {
+     "caso": "coste de pedido 30 € en Parámetros!D4: la EOQ sube en TODAS las líneas",
+     "K6_eoq_salmon": 137.0,
+     "K7_eoq_leche": 1436.0
+    },
+    {
+     "caso": "leche con 2 días de vida útil: el tope se come la EOQ",
+     "K7_eoq_leche": 454.0,
+     "L7_cantidad_sugerida": 28.0,
+     "M7_frecuencia_dias": 1.0
+    },
+    {
+     "caso": "consumo diario 0 (TEC-15): sin #DIV/0!",
+     "K7_eoq_leche": "",
+     "L7_cantidad_sugerida": "",
+     "M7_frecuencia_dias": ""
+    }
+   ],
+   "ok": true,
+   "nota": "la v1.1 mandaba 454 L de leche de golpe (la EOQ pura) sobre un producto que aguanta 12 días, y con el salmón daba 121 kg cada 24 días mientras Parámetros!A7 decía «entrega diaria obligatoria». El tope por vida útil deja la leche en 168 L cada 8 días y el salmón en 6 kg cada 2 días"
+  },
+  "c_stock_seguridad_en_unidades_09": {
+   "ref": "BONUS-09-calculadora-punto-pedido.xlsx:Calculadora:G7 · H7",
+   "formulas": {
+    "G": "=IF(OR($D4=\"\",$F4=\"\"),\"\",$D4*$F4)",
+    "H": "=IF(OR($D4=\"\",$E4=\"\",$F4=\"\"),\"\",$D4*$E4+$G4)"
+   },
+   "consumo_diario_D7": 20,
+   "lead_time_E7": 2,
+   "pruebas": [
+    {
+     "caso": "1 día(s) de cobertura",
+     "F_cobertura_dias": 1,
+     "G_stock_seguridad_ud": 20.0,
+     "H_punto_de_pedido_ud": 60.0
+    },
+    {
+     "caso": "2 día(s) de cobertura",
+     "F_cobertura_dias": 2,
+     "G_stock_seguridad_ud": 40,
+     "H_punto_de_pedido_ud": 80
+    },
+    {
+     "caso": "3 día(s) de cobertura",
+     "F_cobertura_dias": 3,
+     "G_stock_seguridad_ud": 60,
+     "H_punto_de_pedido_ud": 100
+    }
+   ],
+   "ok": true,
+   "nota": "con 20 L/día y 2 días de lead time, la v1.1 daba 42 L de punto de pedido a quien escribía «2» siguiendo su propia hoja Parámetros; lo correcto son 80 L (40 de lead time + 40 de cobertura)"
+  }
+ },
+ "resumen_demostraciones": {
+  "c_semaforo_cuatro_estados_06": true,
+  "c_fecha_limite_y_apertura_06": true,
+  "c_valor_en_riesgo_y_alertas_06": true,
+  "c_kpis_reales_07": true,
+  "c_variacion_precio_top20_07": true,
+  "c_eoq_parametrizada_y_capada_09": true,
+  "c_stock_seguridad_en_unidades_09": true
+ },
+ "dudas_para_el_orquestador": [
+  "motor.proteger() (motor.py) NO protege una hoja sin celdas verdes: «dejarla bloqueada entera es peor». Eso deja DESPROTEGIDAS dos hojas 100 % derivadas que este grupo construye — 06!'Alertas Caducidad' y 07!'Evolución Mensual' —, donde no hay nada que editar y sí fórmulas que un cliente puede borrar sin querer. No lo cambio unilateralmente porque afecta a los tres grupos (01!'Resumen Dashboard' está en la misma situación). ¿Excepción en el motor para las hojas sin entrada?",
+  "El gate §1.6 sigue en rojo en 01, 02, 03 y 05 (pestañas citadas que no existen). Son de grupo_a y grupo_b; mis tres ficheros pasan limpios.",
+  "motor.hojas_esqueleto() marcará 06!'Control FIFO' como esqueleto: es deliberado (ver datos_precargados). Es informativo, no entra en `fallos`.",
+  "§5 pide reescribir la landing: `grid.templates[8].desc` y `BONUS-09!Instrucciones!A11` prometían un «Simulador». La promesa YA está retirada del xlsx; falta la de `kit-inventario.ts:143` (rol integracion).",
+  "Los 12 meses de 07!'Coste por Categoría' quedan vacíos salvo enero, que va sembrado. Si prefieres el libro completamente en blanco, se quita `COMPRAS_ENE` de grupo_c.py y el Dashboard pasa a enseñar «» hasta que el cliente cargue datos."
+ ],
+ "pendiente": [
+  "Ejecución real con KIT_INVENTARIO_APPLY=1 — la hace el orquestador cuando la ronda 2 dé verde.",
+  "§5 integración (rol `integracion`, sonnet): landing, dashboard, changelog y FAQ.",
+  "Ronda 2 adversarial sobre los tres ficheros."
+ ]
+}

@@ -1,0 +1,503 @@
+{
+ "productId": "kit-inventario",
+ "version": "2.0",
+ "rol": "corrector-ronda2",
+ "fecha": "2026-08-24T00:39:47",
+ "spec": "scripts/productos-digitales/kit-inventario-v2-SPEC.md",
+ "entrada": {
+  "total": 72,
+  "ficheros": [
+   "auditorias/kit-inventario-v2-ref-dominio.json (29 · RD-01..RD-29)",
+   "auditorias/kit-inventario-v2-ref-excel.json (22 · RT-01..RT-22)",
+   "auditorias/kit-inventario-v2-ref-coherencia.json (21 · RC-01..RC-21)"
+  ]
+ },
+ "cruce": {
+  "ids_de_entrada": 72,
+  "resueltos": 71,
+  "no_aplicados": 1,
+  "suma_correcta": true,
+  "perdidos": [],
+  "inventados": []
+ },
+ "ficheros_codigo_tocados": [
+  "scripts/productos-digitales/kit-inventario-v2_0/motor.py",
+  "scripts/productos-digitales/kit-inventario-v2_0/grupo_a.py",
+  "scripts/productos-digitales/kit-inventario-v2_0/grupo_b.py",
+  "scripts/productos-digitales/kit-inventario-v2_0/grupo_c.py",
+  "scripts/productos-digitales/kit-inventario-v2_0/main.py",
+  "astro-site/src/data/productos/kits/kit-inventario.ts",
+  "astro-site/src/data/productos/kits/types.ts",
+  "astro-site/src/components/pages/KitExcelLandingPage.astro",
+  "src/data/productos-changelog.ts",
+  "src/pages/KitInventario.tsx",
+  "src/pages/KitInventarioDashboard.tsx",
+  "src/components/kit-inventario/HeroSection.tsx",
+  "src/components/kit-inventario/ContentGrid.tsx",
+  "src/components/kit-inventario/WhySection.tsx",
+  "src/components/kit-inventario/CtaFinal.tsx",
+  "src/components/kit-inventario/FaqAccordion.tsx"
+ ],
+ "produccion_intacta": "astro-site/public/dl/kit-inventario/** NO se ha tocado: todo por --dry-run con CLAUDE_SCRATCHPAD; KIT_INVENTARIO_APPLY nunca se ha usado.",
+ "resueltos": [
+  {
+   "id": "RC-01",
+   "donde": "kit-inventario.ts faqs[1].a, schema.faqs[1].a, hero.checkItems[2], grid.templates[2].desc, cta.items[2] · productos-changelog.ts · KitInventarioDashboard.tsx · grupo_b.PROVEEDORES",
+   "que_se_hizo": "El copy dice lo que el fichero hace: nueve ficheros independientes a propósito, con el desplegable saliendo de la hoja Proveedores del PROPIO fichero de pedidos. Y los seis proveedores de ejemplo del 03 son ya los del 02 (RD-01), que es lo que hace creíble la palabra «coherentes».",
+   "prueba": "faqs[1].a: «…el desplegable de proveedores del pedido sale de la hoja Proveedores del propio fichero de pedidos, que rellenas una vez…» · schema.faqs[1].a idem · cta.items[2]='Pedidos de compra con IVA por linea y aviso de pedido minimo'"
+  },
+  {
+   "id": "RC-02",
+   "donde": "kit-inventario.ts grid.templates[2].desc · ContentGrid.tsx",
+   "que_se_hizo": "La tarjeta deja de decir «Genera pedidos desde tus niveles de stock» y describe lo que el fichero calcula de verdad, moviendo la relación con el stock a donde sí ocurre.",
+   "prueba": "«Pasale tus productos y el pedido se calcula solo: IVA por linea…, listo para enviar al proveedor. Avisa si no llegas al pedido minimo. La columna \"A Pedir\" del inventario te dice que llevar aqui.»"
+  },
+  {
+   "id": "RC-03",
+   "donde": "src/components/kit-inventario/{HeroSection,ContentGrid,WhySection,CtaFinal,FaqAccordion}.tsx · src/pages/KitInventario.tsx · src/pages/KitInventarioDashboard.tsx",
+   "que_se_hizo": "Los diez cambios portados a los cinco componentes de la SPA y al bloque JSON-LD FAQPage del Helmet, en el mismo commit que el .ts de Astro.",
+   "prueba": "grep de control sobre los 7 ficheros: 0 apariciones de «Simulador de demanda», «60 EUR/mes», «3.000 y 5.000», «formato imprimible», «4 estados», «9 zonas», «calidad/precio/entrega», «sin limite de productos» y «Cumplimiento APPCC». `npx tsc --noEmit` de la SPA → exit 0"
+  },
+  {
+   "id": "RC-04",
+   "donde": "grupo_c.INSTRUCCIONES_06 · kit-inventario.ts grid.templates[5].desc · ContentGrid.tsx · productos-changelog.ts",
+   "que_se_hizo": "«CINCO ESTADOS, NO TRES» en las tres capas de copy, y el quinto se nombra porque es el que vende: distingue la caducidad (retirada obligatoria) del consumo preferente vencido (revisión organoléptica).",
+   "prueba": "06!Instrucciones!A22='EL SEMÁFORO TIENE CINCO ESTADOS, NO TRES:' seguido de los cinco · landing: «semaforo de 5 estados. Distingue la caducidad (retirada obligatoria) del consumo preferente vencido…» · changelog: «semáforo de 5 estados (antes 3)»"
+  },
+  {
+   "id": "RC-05",
+   "donde": "kit-inventario.ts why.reasons[2].title · WhySection.tsx",
+   "que_se_hizo": "El titular deja de afirmar conformidad normativa.",
+   "prueba": "title: 'Registros para tu Plan APPCC' (antes 'Cumplimiento APPCC'); el cuerpo mantiene «No sustituye al plan ni a un asesor»"
+  },
+  {
+   "id": "RC-06",
+   "donde": "kit-inventario.ts faqs[1].a y schema.faqs[1].a, hero.checkItems[2], why.reasons[0].desc · grupo_c.INSTRUCCIONES_06 (A17) · grupo_b (columna Categoría del 04)",
+   "que_se_hizo": "Se corrige la frase Y se corrige el fichero: el 04 estrena la columna «Categoría (kit)» con la DV de las 10, así que las categorías SÍ están en las nueve; las unidades se declaran ahora en las 8 de producto y se explica por qué la recepción añade la familia normativa.",
+   "prueba": "«…las mismas 10 categorias en todas y las mismas unidades en las 8 de producto» (hero) · 06!Instrucciones: «…son las mismas 10 categorías en las 9 plantillas del kit y las mismas unidades en las 8 de producto. La de recepción (04) añade además la FAMILIA normativa…» · DV de 04!'Control Recepción'!E4:E43 = las 10 categorías"
+  },
+  {
+   "id": "RC-07",
+   "donde": "motor.PROVEEDORES_EJEMPLO / PROVEEDORES_MARCADOS",
+   "que_se_hizo": "Ver RD-01: un solo juego, sufijo «(ejemplo)» incluido, para que el historial case con el desplegable.",
+   "prueba": "03!'Historial Pedidos'!C5='Cárnicas del Norte (ejemplo)' = 03!Proveedores!A4='Cárnicas del Norte (ejemplo)' (antes 'Cárnicas del Mercado' sin sufijo frente a 'Cárnicas del Mercado (ejemplo)')"
+  },
+  {
+   "id": "RC-08",
+   "donde": "kit-inventario.ts why.reasons[1].desc · WhySection.tsx",
+   "que_se_hizo": "«food cost % por categoria» → «reparto del gasto por categoria», y el food cost se manda a donde de verdad está.",
+   "prueba": "«…variacion de precios entre proveedores y reparto del gasto por categoria. El food cost sobre consumo y el coste por cubierto, en el dashboard de KPIs.»"
+  },
+  {
+   "id": "RC-09",
+   "donde": "grupo_c.INSTRUCCIONES_09",
+   "que_se_hizo": "Ver RD-24.",
+   "prueba": "BONUS-09!Instrucciones con el ejemplo recalculado (287 → 67 → 60 L)"
+  },
+  {
+   "id": "RC-10",
+   "donde": "grupo_c.INSTRUCCIONES_09 (A11) + nota A35 de la Calculadora",
+   "que_se_hizo": "«las columnas grises» → «las columnas SIN fondo verde», que es la convención real de la familia.",
+   "prueba": "BONUS-09!Instrucciones: «1. Calculadora — una línea por producto; las columnas SIN fondo verde se calculan solas (en este kit el verde es siempre lo que escribes tú)». Calculadora!A35 idem"
+  },
+  {
+   "id": "RC-11",
+   "donde": "main.py",
+   "que_se_hizo": "Ver RD-29.",
+   "prueba": "parcial.json: exit 1 con dos fallos; final2.json (comando por defecto): 9 ficheros construidos, exit 0"
+  },
+  {
+   "id": "RC-12",
+   "donde": "kit-inventario.ts why.reasons[3].desc · WhySection.tsx",
+   "que_se_hizo": "El absoluto «sin limite de productos» se sustituye por el argumento que sí se sostiene y por las capacidades reales, con la vía de ampliación.",
+   "prueba": "«…por un pago unico y sin usuarios que pagar. Vienen preparadas 100 referencias de inventario, 100 lineas de merma al mes, 50 lotes de FIFO y 30 lineas de pedido; ampliables desprotegiendo la hoja (no lleva contrasena).» — 40+30+30 filas de 01, 4-103 de 05, 5-54 de 06 y 9-38 de 03"
+  },
+  {
+   "id": "RC-13",
+   "donde": "grupo_c._dashboard_07() · productos-changelog.ts",
+   "que_se_hizo": "Se elige la opción que la SPEC §1.2 pedía: el semáforo se construye (RD-13), así que la línea del changelog pasa a ser cierta y se precisa.",
+   "prueba": "07!'Dashboard KPIs' con columna Estado y 3 reglas CF · changelog: «…en inventario, recepción, mermas, FIFO y en el Dashboard de KPIs de costes, que ahora tiene columna de Estado y objetivos que puedes cambiar tú»"
+  },
+  {
+   "id": "RC-14",
+   "donde": "motor.PROTEGER_SIN_VERDE",
+   "que_se_hizo": "Ver RT-13: las tres hojas cuya línea 2 dice «aquí no se escribe nada» se entregan protegidas.",
+   "prueba": "01!'Resumen Dashboard', 06!'Alertas Caducidad' y 07!'Evolución Mensual' → protection.sheet=True, sin contraseña"
+  },
+  {
+   "id": "RC-15",
+   "donde": "kit-inventario.ts testimonials.items[4]",
+   "que_se_hizo": "Se quitan los umbrales, que la v2.0 ha cambiado, y se deja la frase genérica que la propia lente proponía.",
+   "prueba": "«…lo entienden de un vistazo por el color, sin tener que echar cuentas con las fechas» (antes 'rojo = caduca manana, amarillo = 3 dias, verde = OK')"
+  },
+  {
+   "id": "RC-16",
+   "donde": "kit-inventario.ts grid.templates[4].desc · ContentGrid.tsx",
+   "que_se_hizo": "Los motivos del copy son los del desplegable real, y se nombran los tres que más venden la plantilla.",
+   "prueba": "«Registro diario con 10 motivos tipificados (caducidad, sobreproduccion, merma de despiece, rotura de frio, descuadre sin justificar...)» — los 10 de grupo_b.MOTIVOS"
+  },
+  {
+   "id": "RC-17",
+   "donde": "kit-inventario.ts grid.templates[1].desc · ContentGrid.tsx",
+   "que_se_hizo": "El copy pasa a los cinco criterios reales con su nota.",
+   "prueba": "«…evaluacion en 5 criterios con nota A/B/C/D y condiciones comerciales» — 02!'Evaluación Proveedores'!C3:G3 son Calidad, Precio, Puntualidad, Servicio y Flexibilidad"
+  },
+  {
+   "id": "RC-18",
+   "donde": "types.ts (KitExcelFaq.aHtml) · KitExcelLandingPage.astro · kit-inventario.ts faqs[2].aHtml",
+   "que_se_hizo": "Se añade `aHtml` opcional a la FAQ on-page (el campo `a` sigue siendo texto plano y es el que alimenta el FAQPage, así que el markup no se escapa en el schema) y la mención al Pack APPCC pasa a ser un enlace.",
+   "prueba": "KitExcelLandingPage.astro:551 `{faq.aHtml ? <p … set:html={faq.aHtml} /> : <p …>{faq.a}</p>}` · kit-inventario.ts faqs[2].aHtml con `<a href=\"/pack-appcc\">Pack APPCC</a>` · `npx tsc --noEmit` del astro-site sin errores en estos ficheros"
+  },
+  {
+   "id": "RC-19",
+   "donde": "kit-inventario.ts hero.badge · HeroSection.tsx",
+   "que_se_hizo": "«3-5%» pasa a «3-5 %» con espacio, como el resto del kit, y el badge recupera el sujeto como estimación propia (la opción que §7.6 y §7-bis contemplaban, sin fuente inventada).",
+   "prueba": "badge: «Las mermas sin control se comen un 3-5 % de tus compras, por lo que vemos auditando cocinas: contarlas es el primer paso para recuperarlas». El gemelo de la SPA (HeroSection.tsx) llevaba todavía el badge de los 3.000-5.000 EUR/año: también corregido"
+  },
+  {
+   "id": "RC-20",
+   "donde": "grupo_a.COMPARATIVA + _comparativa_02()",
+   "que_se_hizo": "La comparativa estrena DV de unidad y sus nombres de producto son literalmente los del 01 (sin el sufijo «(kg)», que ya va en la columna de formato de venta).",
+   "prueba": "02!'Comparativa Precios': DV en C4:C13 con las 10 unidades del kit · B4='Pechuga de pollo' (antes 'Pechuga pollo (kg)'), B7='Aceite de oliva virgen extra' (antes 'Aceite oliva AOVE (5L)'), B13='Queso parmesano'"
+  },
+  {
+   "id": "RD-01",
+   "donde": "motor.py:PROVEEDORES_EJEMPLO / PROVEEDORES_MARCADOS · grupo_b.PROVEEDORES · grupo_c.PROVEEDOR_TOP20 y _CALC_BASE",
+   "que_se_hizo": "Un ÚNICO juego de 6 proveedores de ejemplo en motor.py, importado por los tres grupos. Los nombres del 03 y del 04 («Cárnicas del Mercado»…) desaparecen; el 02, el 03, el 04, el 07 y el BONUS-09 usan los mismos literales, sufijo «(ejemplo)» incluido, con los mismos teléfonos, pedidos mínimos y días de pedido del directorio del 02.",
+   "prueba": "02!'Directorio Proveedores'!B4='Cárnicas del Norte (ejemplo)' · 03!Proveedores!A4='Cárnicas del Norte (ejemplo)' · 03!'Historial Pedidos'!C5='Cárnicas del Norte (ejemplo)' · 04!'Control Recepción'!B4='Cárnicas del Norte (ejemplo)' · 07!'Top 20 Productos'!K4='Cárnicas del Norte (ejemplo)' · BONUS-09!Calculadora!O4='Cárnicas del Norte (ejemplo)'"
+  },
+  {
+   "id": "RD-02",
+   "donde": "motor.py:CONSUMO_EJEMPLO · grupo_a._gate_coherencia_consumos() · grupo_c.CALC_EJEMPLO · 01!Instrucciones",
+   "que_se_hizo": "Una sola tabla de consumo en motor.py de la que se derivan los tres ficheros. El consumo diario está elegido para que `consumo × (lead + cobertura)` sea EXACTAMENTE el par level del 01, así que el punto de pedido del BONUS-09 y el par level del 01 son el mismo número por construcción. Y el par MAX viaja con ella para capar la cantidad sugerida (RD-22). Un gate de importación en grupo_a aborta si alguna vez dejan de cuadrar.",
+   "prueba": "BONUS-09!Calculadora!H4=8 = 01!Cocina!E5=8 (pollo) · H5=3 = 01!E6=3 (solomillo) · H6=4 = 01!E7 (salmón) · H7=24 = 01!Barra!E6 (leche) · H8=25 = 01!Cocina!E12 (patata) · H9=H10=10 · H11=2. Ninguno supera ya su par MAX. `python3 -c 'import grupo_a'` ejecuta el gate y pasa."
+  },
+  {
+   "id": "RD-03",
+   "donde": "grupo_b.EJEMPLOS_RECEPCION y EJEMPLOS_INCIDENCIA",
+   "que_se_hizo": "Los ejemplos del 04 son UNA sola historia: 4 recepciones y 3 incidencias con el mismo albarán, el mismo proveedor, el mismo producto y un importe reclamado derivado de la diferencia (o de la cantidad devuelta) por el precio de la propia recepción.",
+   "prueba": "04!'Control Recepción': ALB-24518 pedido 12 / recibido 10 → K4=-2 y M4=-64,00 €; 'Registro Incidencias'!B4='ALB-24518' con I4=64,00 € (2 kg × 32,00). ALB-0091 8 kg a 14,00 € → incidencia I5=112,00 € y abono J5=112,00 €. ALB-7742 tomate → I6=39,00 € (20 kg × 1,95). Totales: I25=215,00 · J25=112,00 · I26=103,00 pendiente"
+  },
+  {
+   "id": "RD-04",
+   "donde": "grupo_a.PRODUCTOS (Huevos M) · grupo_c.ZONAS",
+   "que_se_hizo": "Los huevos salen de «Lácteos» y pasan a «Otros» (las 10 categorías son canónicas por §7-bis.3, no se abre una undécima), y el mapa de almacén estrena la zona «Huevera — ambiente constante 12-20 °C · NO refrigerar antes de la venta», con la cita del Reg. (CE) 589/2008.",
+   "prueba": "01!Cocina!C19='Otros' (antes 'Lácteos') · 06!'Mapa Almacén'!A13='Huevera', B13='Ambiente constante, 12-20 °C', C13='Huevos: NO refrigerar antes de la venta' · la DV de zona de 06!'Control FIFO'!R5:R54 lista 11 zonas · 04!'Verificación Temperaturas' sigue dando N/A a la familia Huevos"
+  },
+  {
+   "id": "RD-05",
+   "donde": "grupo_c.ZONAS",
+   "que_se_hizo": "Décima zona «Almacén de químicos — ambiente, zona separada y señalizada» y se quita «y limpieza» del economato seco.",
+   "prueba": "06!'Mapa Almacén'!A14='Almacén de químicos', C14='Productos de limpieza, desinfectantes y sus fichas de datos de seguridad', E14 cita el Reg. (CE) 852/2004, Anexo II, Cap. IX · C10 pasa a 'Secos y granos, conservas y bebidas no alcohólicas'"
+  },
+  {
+   "id": "RD-06",
+   "donde": "grupo_b.TEMPERATURAS (columna de mínimo) · _control_recepcion_04 (fórmula R)",
+   "que_se_hizo": "La tabla legal gana «Tª mín. aceptable (°C)» numérica y el veredicto compara por ARRIBA y por ABAJO, con cinco salidas: CONFORME · RECHAZAR (calor) · RECHAZAR (frío) · N/A · ⚠ FAMILIA SIN LÍMITE.",
+   "prueba": "Demo `conforme_por_familia_04` (informe final2.json): pescado a -20 °C → '✗ RECHAZAR (frío)'; congelado a -16 °C → '✓ CONFORME' (antes RECHAZAR); carne picada a 6 °C → '✗ RECHAZAR (calor)'. 10/10 casos correctos"
+  },
+  {
+   "id": "RD-07",
+   "donde": "grupo_c.LOTES_FIFO + _sembrar_lotes_06()",
+   "que_se_hizo": "Seis lotes de ejemplo con fechas relativas al día de generación que cubren los CINCO estados, incluido uno abierto cuya fecha límite efectiva la manda la vida útil tras abrir.",
+   "prueba": "06!'Control FIFO'!B5:B10 sembradas; L5='⛔ CADUCADO — RETIRAR', L6='⚠ REVISAR (consumo preferente)', L7='🔴 URGENTE', L8 y L9='🟡 PRÓXIMO', L10='🟢 OK'. 'Alertas Caducidad'!B4:C8 = 1/56,00 · 1/9,30 · 1/39,00 · 2/52,50 · 1/29,00"
+  },
+  {
+   "id": "RD-08",
+   "donde": "grupo_c.FILA_TOP5 = 26 · _top20_07()",
+   "que_se_hizo": "El bloque «Top 5» sale del rango de datos (L4:M8 → L26:M31, bajo la fila TOTAL) y la nota A2 deja de mandar ordenar la tabla: el ranking con LARGE ya no lo necesita.",
+   "prueba": "07!'Top 20 Productos'!L26='Top 5 productos', L27='Solomillo de ternera' (960,00 €) … L31; L4:M8 vacías. A2='…NO hace falta que ordenes la tabla: el ranking Top 5 de abajo la ordena solo con LARGE…'"
+  },
+  {
+   "id": "RD-09",
+   "donde": "grupo_b._dashboard_05() B7 y B8",
+   "que_se_hizo": "Guarda de máximo en los dos KPI cualitativos: con el registro vacío dicen «— sin mermas registradas —» en vez de acusar a los cárnicos con 0,00 € de merma.",
+   "prueba": "05!'Dashboard Mermas'!B7='=IF(MAX(…$C$4:$C$13)<=0,\"— sin mermas registradas —\",IFERROR(INDEX(…)))'. Demo `agregacion_mermas_05` → bloque 'dashboard_con_el_registro_vacio': B7 y B8 = '— sin mermas registradas —'"
+  },
+  {
+   "id": "RD-10",
+   "donde": "motor.IVA_POR_PRODUCTO + motor.tabla_iva() (bloque E:G de Listas) · grupo_b._pedido_actual() fórmula H",
+   "que_se_hizo": "Segunda tabla producto → IVA en 03!Listas con las EXCEPCIONES (los productos cuyo tipo no es el de su categoría) y VLOOKUP en cascada: primero el producto, después la categoría.",
+   "prueba": "03!Listas!E2:F10 = Arroz redondo 4 · Harina de trigo 4 · Huevos M 4 · Legumbres secas 4 · Mantequilla 10 · Nata 35 % M.G. 10 · Pasta seca 4 · Refresco de cola 21 · Tónica 21. 03!'Pedido Actual'!H9='=IF($B9=\"\",\"\",IFERROR(VLOOKUP($B9,Listas!$E$2:$F$20,2,FALSE),IF($C9=\"\",\"\",IFERROR(VLOOKUP($C9,Listas!$A$2:$B$11,2,FALSE),\"\"))))'"
+  },
+  {
+   "id": "RD-11",
+   "donde": "grupo_a.COMPARATIVA y COTIZACIONES",
+   "que_se_hizo": "Los precios de ejemplo de la comparativa se derivan del precio/ud de referencia del 01: el ganador de cada fila es exactamente `precio de referencia × contenido`. Y el proveedor ganador es el de la familia del producto, no uno al azar.",
+   "prueba": "02!'Comparativa Precios'!K7=5,80 €/L (I7=29,00 € / E7=5) = 01!Cocina!J13=5,80 = 07!'Top 20'!I9=5,80 = BONUS-09!Calculadora!I9=5,80. K4=6,50 (pollo) y K8=1,95 (tomate) también cuadran con el 01"
+  },
+  {
+   "id": "RD-12",
+   "donde": "grupo_b._dashboard_05()",
+   "que_se_hizo": "Se siembra B10 (compras del mes) con 10.400 €, el enero del 07, y el dashboard abre funcionando.",
+   "prueba": "05!'Dashboard Mermas'!B10=10.400,00 € · B4=79,10 € · B5=0,76 % · C4=312,00 € · D4='🟢 OK' · D5='🟢 OK' (antes las cuatro en blanco)"
+  },
+  {
+   "id": "RD-13",
+   "donde": "grupo_c.KPIS + _dashboard_07()",
+   "que_se_hizo": "Columna E «Estado» con semáforo real (containsText del motor) y objetivos NUMÉRICOS editables en celda verde.",
+   "prueba": "07!'Dashboard KPIs'!E3='Estado', E4='🟢 OK' (food cost 31,0 % contra C4=32,0 %), E8='🟡 REVISAR' (2 productos con subida contra C8=0). CF sobre E4:E17 con 3 reglas. C4/C7/C8 verdes y desbloqueadas"
+  },
+  {
+   "id": "RD-14",
+   "donde": "grupo_c._alertas_06()",
+   "que_se_hizo": "La fila del pie se desdobla: fila 9 «VALOR REALMENTE EN RIESGO (todo menos 🟢 OK)» y fila 10 «TOTAL de lotes registrados / valor total del stock», cada una con su explicación en la columna D.",
+   "prueba": "06!'Alertas Caducidad'!A9/B9/C9 = 5 lotes / 156,80 € · A10/B10/C10 = 6 lotes / 185,80 €. Antes C9 era el SUM de toda la columna Q bajo la cabecera «Valor en riesgo (€)»"
+  },
+  {
+   "id": "RD-15",
+   "donde": "grupo_a.F_CONSUMO",
+   "que_se_hizo": "El consumo del mes avisa cuando faltan las compras en vez de publicar la simple bajada de stock.",
+   "prueba": "BONUS-08!'Conteo Rápido'!J5='=IF(OR($F5=\"\",$H5=\"\"),\"\",IF($I5=\"\",\"⚠ faltan compras\",$H5+$I5-$F5))', replicado en las 80 filas"
+  },
+  {
+   "id": "RD-16",
+   "donde": "grupo_b.CAB_04 + _control_recepcion_04()",
+   "que_se_hizo": "Columna verde «Precio/ud (€)» y columna calculada «Valor de la diferencia (€)» en la recepción, más su total en el resumen.",
+   "prueba": "04!'Control Recepción'!M4='=IF(OR($K4=\"\",$L4=\"\"),\"\",$K4*$L4)' → M4=-64,00 € para los 2 kg que faltan del solomillo; N45 (resumen) = 'Valor de la diferencia (€)' = -64,00 €"
+  },
+  {
+   "id": "RD-17",
+   "donde": "grupo_b.FILA_MINIMO = 43 + _pedido_actual()",
+   "que_se_hizo": "Veredicto del pedido mínimo bajo los totales, con su semáforo, y la cifra que falta en euros.",
+   "prueba": "03!'Pedido Actual'!A43='✓ El pedido supera el mínimo de este proveedor' (base 227,10 € contra E4=150 €), H43=0,00 €; CF rojo/verde sobre A43:E43"
+  },
+  {
+   "id": "RD-18",
+   "donde": "grupo_a._comparativa_02() columna U",
+   "que_se_hizo": "Columna «Estado de la cotización» con TODAY() y semáforo: ⛔ VENCIDA / 🟡 vence esta semana / 🟢 vigente.",
+   "prueba": "02!'Comparativa Precios'!U4='=IF($O4=\"\",\"\",IF($O4<TODAY(),\"⛔ COTIZACIÓN VENCIDA\",IF($O4-TODAY()<=7,\"🟡 vence esta semana\",\"🟢 vigente\")))' → U4='🟢 vigente'. CF con VOC_COTIZACION en motor.CF_SEMAFORO"
+  },
+  {
+   "id": "RD-19",
+   "donde": "grupo_a.PROVEEDORES (fila 6) + _evaluacion_02() columna J",
+   "que_se_hizo": "El proveedor con nota D pasa a «Pendiente» en el directorio, con la nota que lo explica, y la hoja de evaluación estrena una columna que CRUZA la nota con la homologación del directorio.",
+   "prueba": "02!'Directorio Proveedores'!P9='Pendiente', S9='Evaluación D (2,2/5)… homologación EN SUSPENSO…' · 'Evaluación Proveedores'!J3='Coherencia con el directorio', J9='—' (ya no está homologado) y J7='🟡 nota C: vigílalo, sigue homologado'"
+  },
+  {
+   "id": "RD-20",
+   "donde": "grupo_a.ENLACES_CONDICIONES + _condiciones_02() · grupo_b._proveedores_03() nota A2",
+   "que_se_hizo": "Dentro del 02, proveedor, plazo de pago, pedido mínimo y días de pedido/reparto pasan a ser ENLACES al directorio (se escriben una vez). Entre libros no se puede (§6), así que 03!Proveedores!A2 dice por escrito que es la copia operativa del 02 y que hay que cambiarla también allí.",
+   "prueba": "02!'Condiciones Comerciales'!D4=\"=IF('Directorio Proveedores'!$N4=\\\"\\\",\\\"\\\",'Directorio Proveedores'!$N4)\" → 150,00 € · C4, B4, H4, I4 igual · 03!Proveedores!A2 contiene 'ESTA TABLA ES LA COPIA OPERATIVA del Directorio de Proveedores del fichero 02'"
+  },
+  {
+   "id": "RD-21",
+   "donde": "motor.CONSUMO_EJEMPLO · grupo_c.TOP20_EJEMPLO (derivado)",
+   "que_se_hizo": "El gasto mensual del Top 20 ya no se teclea: sale de `consumo diario × 30 × precio actual`, la misma tabla que da los par levels del 01 y los consumos del BONUS-09.",
+   "prueba": "07!'Top 20'!E6=780,00 € = 4 kg/día × 30 × 6,50 = BONUS-09!D4=4 (pollo). Patata: E11=159,38 = 6,25 × 30 × 0,85 = BONUS-09!D8=6,25. Suma del Top 20 = 4.507,88 €, por debajo de las compras de enero por categoría"
+  },
+  {
+   "id": "RD-22",
+   "donde": "grupo_c.CAB_CALC (columna K) + F_PEDIR",
+   "que_se_hizo": "Tercera capa del tope: la cantidad sugerida es MIN(EOQ, 70 % de la vida útil, stock máximo). El stock máximo es el par MAX del 01 y viene sembrado.",
+   "prueba": "BONUS-09!Calculadora!M7=60 (leche): EOQ 287, vida útil 67, stock máximo K7=60 → manda el 60. Cerveza M11=6 = par max del 01. Ninguna de las 8 filas supera su par MAX"
+  },
+  {
+   "id": "RD-23",
+   "donde": "grupo_b.TEMPERATURAS (+2 familias) + PUENTE_CATEGORIA_FAMILIA + columnas E y F de Control Recepción",
+   "que_se_hizo": "El 04 habla ahora los DOS vocabularios: columna verde «Categoría (kit)» con la DV de las 10, columna calculada «Familia sugerida» que la traduce con el puente publicado en la tabla legal, y dos familias nuevas para las bebidas y el material no alimentario, que no tenían dónde ir.",
+   "prueba": "04!'Verificación Temperaturas'!G3:H13 = puente de 10 filas · A17='Bebidas y conservas (ambiente)', A18='No alimentario (limpieza, menaje y desechables)' · DV de E4:E43 = las 10 categorías · demo: con E23='Pescados' y sin afinar la familia, F23='Pescado fresco y marisco' y R23='✗ RECHAZAR (calor)' a 5 °C"
+  },
+  {
+   "id": "RD-24",
+   "donde": "grupo_c.INSTRUCCIONES_09",
+   "que_se_hizo": "El ejemplo numérico se reescribe con los números reales del fichero y explica el 70 %.",
+   "prueba": "BONUS-09!Instrucciones: «…8 L/día, 12 días de vida útil y un stock máximo de 60 L. La EOQ da 287 L. El tope por vida útil la baja a 67 L, que es el 70 % de esos 12 días — ocho días y medio de consumo, no doce… Y el stock máximo la deja finalmente en 60 L.» Comprobado contra Calculadora!L7=287, M7=60"
+  },
+  {
+   "id": "RD-25",
+   "donde": "grupo_a.PRODUCTOS + INSTRUCCIONES_01",
+   "que_se_hizo": "Las dos líneas se distinguen por su nombre y las Instrucciones explican que una referencia puede repetirse por zona y que el pedido se consolida en el 03.",
+   "prueba": "01!Barra!B17='Servilletas de papel (barra)' · 01!Almacén!B16='Servilletas de papel (reserva de almacén)' · 01!Instrucciones: «Una misma referencia puede aparecer en DOS zonas… el pedido se consolida en la plantilla 03, que es donde cuentan el pedido mínimo, los portes y el rappel»"
+  },
+  {
+   "id": "RD-26",
+   "donde": "grupo_a.PROVEEDORES",
+   "que_se_hizo": "Las claves del RGSEAA se diferencian por actividad: 21 vegetales, 30 bebidas alcohólicas, 40 almacenamiento y distribución polivalente.",
+   "prueba": "02!'Directorio Proveedores'!E6='21.024567/V' (verduras), E7='40.031204/SE' (economato, antes 21), E8='30.040918/A' (bebidas alcohólicas, antes 21); E9 mantiene 'No aplica (producto no alimentario)'"
+  },
+  {
+   "id": "RD-27",
+   "donde": "grupo_c.CAB_TOP20 (columna F) · KPIS/PERIODOS · _dashboard_07()",
+   "que_se_hizo": "La columna F se llama ahora «Gasto anual estimado (€) — mes × 12» y el Dashboard estrena selector de periodo: B6 lee el MES elegido (o el año completo) con INDEX/MATCH sobre la fila TOTAL de Coste por Categoría.",
+   "prueba": "07!'Top 20 Productos'!F3='Gasto anual estimado (€) — mes × 12' · 'Dashboard KPIs'!A10='PERIODO QUE SE MIDE', B10='Ene' (verde, DV de 13 opciones), B6=10.400,00 € = el enero de 'Coste por Categoría'!B14 y no el total de los 12 meses"
+  },
+  {
+   "id": "RD-28",
+   "donde": "grupo_b.HISTORIAL + _historial_03()",
+   "que_se_hizo": "Las tres fechas del historial pasan de `TODAY()-n` a constantes, coherentes con los albaranes del 04 y del 05.",
+   "prueba": "03!'Historial Pedidos'!A5=20/07/2026, A6=03/08/2026, A7=14/08/2026, escritas como fecha y no como fórmula (openpyxl: datetime, no cadena '=')"
+  },
+  {
+   "id": "RD-29",
+   "donde": "main.py: default de --solo y veredicto",
+   "que_se_hizo": "El default de `--solo` pasa a `motor,a,b,c` (el comando documentado construye el kit) y una pasada PARCIAL suma a `fallos` y devuelve exit 1, lo diga o no el gate §1.6.",
+   "prueba": "`main.py --dry-run --json final2.json` (sin --solo) → 9 ficheros con 333/175/116/247/167/264/153/321/150 fórmulas nuevas, exit 0. `--solo motor` → exit 1 con 'pasada PARCIAL: … El resultado NO es la v2.0 y no se puede dar por bueno.' (parcial.json)"
+  },
+  {
+   "id": "RT-01",
+   "donde": "grupo_b._control_recepcion_04() fórmula R + motor.VOC_RECEPCION + motor.PROTEGER_SIN_VERDE",
+   "que_se_hizo": "La rama de «familia sin límite» va ANTES de la comparación, así que un número ya no puede ser «menor» que la cadena vacía y colar un CONFORME. Y la tabla legal se entrega protegida.",
+   "prueba": "Demo `conforme_por_familia_04`, caso R18: familia 'Charcutería' a 18 °C → '⚠ FAMILIA SIN LÍMITE' (en la v2.0 daba '✓ CONFORME'). 04!'Verificación Temperaturas'.protection.sheet=True"
+  },
+  {
+   "id": "RT-02",
+   "donde": "grupo_a._comparativa_02() bloque P:T",
+   "que_se_hizo": "La normalización excluye el CERO y los negativos en el numerador, no sólo la celda vacía.",
+   "prueba": "02!'Comparativa Precios'!P4='=IF(OR($F4=\"\",$F4<=0,$E4=\"\",$E4<=0),\"\",IFERROR($F4/$E4,\"\"))'. Demo `a_comparativa_normalizada_02`, bloque 'con_un_cero_tecleado_en_otro_proveedor': K7 sigue en 5,80 y L7 sigue siendo Distribuciones Economato Sur"
+  },
+  {
+   "id": "RT-03",
+   "donde": "grupo_c.F_EOQ",
+   "que_se_hizo": "IFERROR envolvente y guardas de cero en el precio y en los DOS parámetros editables.",
+   "prueba": "Demo `c_eoq_parametrizada_y_capada_09`: con I7=0 → L7/M7/N7 = '' (antes #¡DIV/0! en las tres); con Parámetros!D5=0 % → L6 y L7 = '' en vez de reventar las 30 filas"
+  },
+  {
+   "id": "RT-04",
+   "donde": "grupo_b._dashboard_05() B7 y B8",
+   "que_se_hizo": "Ver RD-09 (mismo defecto).",
+   "prueba": "Demo `agregacion_mermas_05` → 'dashboard_con_el_registro_vacio': B7='— sin mermas registradas —', B8='— sin mermas registradas —'"
+  },
+  {
+   "id": "RT-05",
+   "donde": "grupo_a.F_PCT",
+   "que_se_hizo": "El % de variación guarda también el stock ACTUAL: mientras la línea no esté contada se queda en blanco en vez de publicar −100 % en ámbar.",
+   "prueba": "BONUS-08!'Conteo Rápido'!L5='=IF(OR($F5=\"\",$H5=\"\",$H5=0),\"\",$F5/$H5-1)'"
+  },
+  {
+   "id": "RT-06",
+   "donde": "grupo_c._dashboard_07()",
+   "que_se_hizo": "Ver RD-13: la columna E existe, tiene contenido y tiene sus tres reglas condicionales, así que el print_area deja de imprimir una columna fantasma.",
+   "prueba": "07!'Dashboard KPIs': max_column=5, E3='Estado', E4:E8 con fórmula, conditional_formatting = 1 bloque (E4:E17) con 3 reglas containsText"
+  },
+  {
+   "id": "RT-07",
+   "donde": "grupo_a.F_ESTADO y F_APEDIR + _post_01()",
+   "que_se_hizo": "El semáforo del 01 se REESCRIBE con guarda del par level (antes `expandir_filas` replicaba a las 60 filas libres la fórmula de la v1.1, que no lo guardaba).",
+   "prueba": "01!Cocina!H25='=IF(OR($G25=\"\",$E25=\"\"),\"\",IF($G25<$E25,\"🔴 PEDIR\",…))' e I25='=IF(OR($G25=\"\",$E25=\"\",$F25=\"\"),\"\",…)'. Demo `a_a_pedir_ambar_01` sigue verde en las filas con par level"
+  },
+  {
+   "id": "RT-08",
+   "donde": "grupo_c.F_PEDIR + PARAMETROS (fila 12) + _parametros_09()",
+   "que_se_hizo": "El factor de vida útil sale de `Parámetros!$D$12`, una casilla verde numérica, y deja de ir escrito 30 veces dentro de la fórmula. A14 se corrige: son TRES casillas verdes, no dos.",
+   "prueba": "BONUS-09!Parámetros!D12=0,7 (verde, formato 0,0 %). Demo, caso 'factor de vida útil al 40 % en Parámetros!D12': M7 baja de 60 a 38 y M6 de 4 a 2 sin tocar ninguna fórmula"
+  },
+  {
+   "id": "RT-09",
+   "donde": "grupo_b.LINEAS_PEDIDO + _pedido_actual()",
+   "que_se_hizo": "Las tres líneas de ejemplo llevan cantidad y precio (los del 01) y la cabecera se siembra con proveedor, fechas y nº de pedido: el libro abre enseñando base, cuota, total y el desglose por los tres tipos. La nota de la fila 2 y las Instrucciones dicen que hay que borrarlas.",
+   "prueba": "03!'Pedido Actual': H40=227,10 € · H41=28,48 € · H42=255,58 € · desglose A46:D48 con los tres tipos (4/10/21) · 'Historial Pedidos'!D4='3 líneas', E4=227,10 € (antes 0,00 €)"
+  },
+  {
+   "id": "RT-10",
+   "donde": "grupo_b._historial_03()",
+   "que_se_hizo": "El total del periodo arranca en la fila 5 y la fila 4 se etiqueta «PEDIDO EN CURSO — … y NO SUMA en el total del periodo».",
+   "prueba": "03!'Historial Pedidos'!E45='=SUM($E$5:$E$43)' → 657,70 € con un pedido de 227,10 € cargado en curso (antes lo sumaba dos veces al copiarlo)"
+  },
+  {
+   "id": "RT-11",
+   "donde": "grupo_c._top20_07() nota A2",
+   "que_se_hizo": "Ver RD-08: se retira la instrucción que la hoja protegida no puede cumplir y se explica que el ranking se ordena solo.",
+   "prueba": "07!'Top 20 Productos'!A2 ya no contiene «Ordena la tabla»; A33 explica el ranking y el empate"
+  },
+  {
+   "id": "RT-12",
+   "donde": "grupo_a._comparativa_02() fórmula K",
+   "que_se_hizo": "Si falta el contenido, la casilla dice «⚠ falta contenido» en vez de apagar la comparativa en silencio (misma doctrina que el «⚠ falta coste» de §1.8).",
+   "prueba": "Demo `a_comparativa_normalizada_02`, bloque 'fila_con_precio_y_sin_contenido': K6='⚠ falta contenido'"
+  },
+  {
+   "id": "RT-13",
+   "donde": "motor.PROTEGER_SIN_VERDE + motor.proteger() + motor.cerrar()",
+   "que_se_hizo": "Las hojas 100 % calculadas y las tablas de referencia se protegen aunque no tengan celdas verdes, y `Listas` deja de exceptuarse (sus celdas de tipo y de producto son verdes, así que siguen editables).",
+   "prueba": "Barrido de los 9 ficheros: la única hoja sin proteger de cada libro es «Instrucciones» (documentación, sin entradas). 'Resumen Dashboard', 'Alertas Caducidad', 'Evolución Mensual', 'Verificación Temperaturas' y 'Listas' → protection.sheet=True, password=None"
+  },
+  {
+   "id": "RT-14",
+   "donde": "grupo_b.TEMPERATURAS (fila Congelados)",
+   "que_se_hizo": "El umbral de RECEPCIÓN de los congelados pasa a -15 °C —la tolerancia que el propio fichero citaba— y la nota separa conservación (-18) de recepción (-15).",
+   "prueba": "04!'Verificación Temperaturas'!D10=-15, B10='-18 °C en conservación; hasta -15 °C admisible al recibir'. Demo: congelado a -16 °C → '✓ CONFORME' (antes '✗ RECHAZAR')"
+  },
+  {
+   "id": "RT-15",
+   "donde": "grupo_b.TEMPERATURAS (columna C) + fórmula R",
+   "que_se_hizo": "Ver RD-06: el mínimo es numérico y computable.",
+   "prueba": "Demo, caso R17: 'Pescado fresco y marisco' a -20 °C → '✗ RECHAZAR (frío)' (antes '✓ CONFORME')"
+  },
+  {
+   "id": "RT-16",
+   "donde": "grupo_b._pedido_actual() fórmula H",
+   "que_se_hizo": "Si la línea tiene producto y no tiene categoría, el IVA se queda EN BLANCO en vez de caer al 10 % en silencio.",
+   "prueba": "03!'Pedido Actual'!H9 lleva `IF($C9=\"\",\"\",…)` dentro del IFERROR de producto; las Instrucciones lo explican («en una línea de alcohol o de limpieza eso serían 11 puntos de menos»)"
+  },
+  {
+   "id": "RT-17",
+   "donde": "main.py: verificar_cache()",
+   "que_se_hizo": "La celda sin valor cacheado ya NO se exime por su texto: se le pregunta a pycel cuánto vale y sólo se acepta el blanco si pycel también da vacío; si pycel devuelve un valor, va a `fallos`.",
+   "prueba": "Informe final2.json, gate 4/7: «con valor: 405 · \"\" VERIFICADA con pycel: 1566 · sin pycel: 0 · no evaluables: 0 · fallos: 0». Antes esas 1.566 se contaban como 'vacias_por_diseno' SIN comprobar nada"
+  },
+  {
+   "id": "RT-18",
+   "donde": "grupo_a.F_CONSUMO",
+   "que_se_hizo": "Ver RD-15 (mismo defecto).",
+   "prueba": "BONUS-08!'Conteo Rápido'!J5 con la rama '⚠ faltan compras'"
+  },
+  {
+   "id": "RT-19",
+   "donde": "grupo_b._dashboard_05() C6 · grupo_c.KPIS (campo editable)",
+   "que_se_hizo": "Los objetivos que eran literales bloqueados pasan a NÚMEROS en celda verde: el nº de incidencias del 05 y el food cost, la variación y las subidas de precio del 07.",
+   "prueba": "05!'Dashboard Mermas'!C6=20 verde y desbloqueada · 07!'Dashboard KPIs'!C4=0,32 · C7=0,05 · C8=0, las tres con fill 00E8F5E9 y protection.locked=False"
+  },
+  {
+   "id": "RT-20",
+   "donde": "grupo_b.HISTORIAL",
+   "que_se_hizo": "Ver RD-28: las tres celdas verdes dejan de contener fórmulas volátiles.",
+   "prueba": "openpyxl sobre 03!'Historial Pedidos'!A5:A7 → datetime, no cadenas que empiecen por '='"
+  },
+  {
+   "id": "RT-21",
+   "donde": "grupo_c.LOTES_FIFO",
+   "que_se_hizo": "Ver RD-07.",
+   "prueba": "'Alertas Caducidad' abre con 6 lotes, 156,80 € realmente en riesgo y 185,80 € de stock total"
+  },
+  {
+   "id": "RT-22",
+   "donde": "grupo_b._dashboard_05() B8",
+   "que_se_hizo": "El «motivo más frecuente» lleva pegado el recuento y una nota en D8 avisa del empate.",
+   "prueba": "05!'Dashboard Mermas'!B8='Caducidad superada · 1 veces' con los tres ejemplos; en la demo (3 caducidades) = 'Caducidad superada · 3 veces'. D8 explica el criterio de desempate"
+  }
+ ],
+ "no_aplicados": [
+  {
+   "id": "RC-21",
+   "motivo": "Descartado por §6 de la SPEC. La propia lente lo etiqueta como «Nota, no reclamación» y dice literalmente «COM-20 y COM-21 están aparcados por John (§6) y NO los he verificado». §6 lo repite: «tocan el ancla de precio, aparcada por John». La corrección de coste cero que ambos identifican —borrar «— valorados en 18 EUR» de bonus.subtitle:177— es una decisión comercial de John sobre el ancla de precio, no un defecto técnico: se deja escrita aquí y en el handoff para que la tome él. Ningún dato del producto es falso; lo que no cierra es una resta de marketing (49 − 14 = 35 frente a los 18 EUR de los bonos)."
+  }
+ ],
+ "verificacion_final": {
+  "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-corrector python3 scripts/productos-digitales/kit-inventario-v2_0/main.py --dry-run --json <scratch>/kit-inv-v2/final2.json   (sin --solo: el default ya construye motor,a,b,c)",
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "formulas_nuevas_por_fichero": {
+   "01-inventario-stock-diario.xlsx": 333,
+   "02-fichas-proveedores.xlsx": 175,
+   "03-pedidos-compra.xlsx": 116,
+   "04-recepcion-mercancias.xlsx": 247,
+   "05-control-mermas.xlsx": 167,
+   "06-fifo-caducidades.xlsx": 264,
+   "07-analisis-costes-compras.xlsx": 153,
+   "BONUS-08-inventario-rapido-mensual.xlsx": 321,
+   "BONUS-09-calculadora-punto-pedido.xlsx": 150
+  },
+  "data_only": "con valor 405 · \"\" VERIFICADA con pycel 1566 · sin pycel 0 · fallos 0",
+  "censo_entregables_fail": "0 defectos",
+  "gate_1_6_pestanas": "0 pestañas citadas inexistentes",
+  "proteccion": "la única hoja sin proteger de cada libro es Instrucciones (documentación, 0 entradas)",
+  "demostraciones_pycel": "18 bloques (6 grupo_a + 5 grupo_b + 7 grupo_c) + 5 del motor; ninguno con ok=false y grupo_b_fallos=[]",
+  "pasada_parcial": "main.py --solo motor → exit 1 ('pasada PARCIAL … no se puede dar por bueno'), que es lo que RD-29/RC-11 pedían",
+  "typecheck": "npx tsc --noEmit (SPA) exit 0 · npx tsc --noEmit (astro-site) sin errores en los ficheros tocados"
+ },
+ "para_john": [
+  "RC-21 / COM-20: la aritmética de los bonos («valorados en 18 EUR» frente a valor total 49 y «Ahorra 35 EUR») sigue sin cerrar en la misma pantalla. La corrección de coste cero es borrar «— valorados en 18 EUR» de bonus.subtitle. Toca el ancla de precio: decisión tuya.",
+  "RC-19: el badge del hero se ha rematado como estimación propia («por lo que vemos auditando cocinas»). Si prefieres el badge sin esa coletilla, es un borrado de seis palabras."
+ ]
+}

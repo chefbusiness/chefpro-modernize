@@ -6,10 +6,10 @@ const stripeLink = import.meta.env.VITE_STRIPE_PAYMENT_LINK_INVENTARIO || '#comp
 const items = [
   'Inventario diario con par levels y alertas de reposicion',
   'Fichas de proveedores con comparativa de precios',
-  'Pedidos de compra auto-generados desde stock',
+  'Pedidos de compra con IVA por linea y aviso de pedido minimo',
   'Recepcion de mercancias con control de temperatura',
   'Control de mermas con dashboard y plan de accion',
-  'FIFO y caducidades con semaforo de colores',
+  'FIFO y caducidades con semaforo de 5 estados',
   'Analisis de costes con KPIs: food cost %, coste/cubierto',
   'BONUS: Inventario Rapido Mensual (9 EUR)',
   'BONUS: Calculadora Punto de Pedido (9 EUR)',
