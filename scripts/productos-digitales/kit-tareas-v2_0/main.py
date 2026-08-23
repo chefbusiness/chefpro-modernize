@@ -258,7 +258,28 @@ def sustituir_09_catering(carpeta, pid):
     # único que necesita el constructor es el identificador del producto; el
     # `subject`, el `title` y las `keywords` definitivos los pone
     # `motor.set_metadata` desde `procesar`, ya con el contexto real.
-    c09.construir(nuevo, {'producto': pid})
+    # Pero el nombre del kit y el sufijo SÍ se le pasan, leídos del título de
+    # un hermano real de la misma carpeta (el patrón «<algo> — <kit> · <sufijo>»
+    # que el propio motor compone): sin ellos el constructor caía al fallback
+    # del representante y, como el 09 nuevo vota en `contexto()`, un empate
+    # 1-1 con el 08 se desempataba alfabéticamente a favor de «… Pro» y los
+    # 11 ficheros perdían el nombre del kit (cazado por el crítico-5).
+    extra = {'producto': pid}
+    for f in sorted(os.listdir(carpeta)):
+        if not f.endswith('.xlsx') or f in (c09.NOMBRE_NUEVO, c09.NOMBRE_VIEJO):
+            continue
+        tit = openpyxl.load_workbook(os.path.join(carpeta, f),
+                                     read_only=True).properties.title or ''
+        if ' · ' in tit:
+            cabeza, sufijo = tit.rsplit(' · ', 1)
+            extra['sufijo'] = sufijo.strip()
+            if ' — ' in cabeza:
+                extra['kit'] = cabeza.rsplit(' — ', 1)[1].strip()
+            break
+    if 'sufijo' not in extra:
+        log('  ⚠ catering: ningún hermano con título «… · <sufijo>»; el 09 '
+            'se construye con el sufijo por defecto')
+    c09.construir(nuevo, extra)
     if habia_viejo:
         os.remove(viejo)
     return {'construido': c09.NOMBRE_NUEVO,

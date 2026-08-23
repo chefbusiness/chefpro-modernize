@@ -967,6 +967,19 @@ def contexto(carpeta, ficheros, abrir):
                         v.strip()):
                     cierres[fname].append(v.strip())
 
+        # --- nombre del kit y sufijo de metadata, del TÍTULO del documento.
+        # VOTAN TODOS los ficheros del kit (también los que el motor no
+        # reconoce): antes sólo votaban los del molde ▸ y en catering el 08
+        # empataba 1-1 con el 09 recién construido (crítico-5).
+        # Es la única fuente estable: el motor reescribe las Instrucciones
+        # (donde estaba «Kit de Tareas — <kit>») pero deja el patrón
+        # «<algo> — <kit> · <sufijo>» en el título que él mismo compone.
+        tit = wb.properties.title or ''
+        if ' · ' in tit:
+            cabeza, sufijo = tit.rsplit(' · ', 1)
+            sufijos.append(sufijo)
+            if ' — ' in cabeza:
+                kits.append(cabeza.rsplit(' — ', 1)[1].strip())
         if not recon:
             continue
         ctx['ficheros'].append(fname)
@@ -1013,16 +1026,6 @@ def contexto(carpeta, ficheros, abrir):
         elif len(ritmos) >= 2 and all(x in ('Día', 'Cadencia') for x in ritmos):
             ctx['f_periodico'] = ctx['f_periodico'] or fname
 
-        # --- nombre del kit y sufijo de metadata, del TÍTULO del documento.
-        # Es la única fuente estable: el motor reescribe las Instrucciones
-        # (donde estaba «Kit de Tareas — <kit>») pero deja el patrón
-        # «<algo> — <kit> · <sufijo>» en el título que él mismo compone.
-        tit = wb.properties.title or ''
-        if ' · ' in tit:
-            cabeza, sufijo = tit.rsplit(' · ', 1)
-            sufijos.append(sufijo)
-            if ' — ' in cabeza:
-                kits.append(cabeza.rsplit(' — ', 1)[1].strip())
 
     # --- resolución de papeles: uno y sólo uno por papel -----------------
     for papel in ('caja', 'cobros', 'negocio'):
