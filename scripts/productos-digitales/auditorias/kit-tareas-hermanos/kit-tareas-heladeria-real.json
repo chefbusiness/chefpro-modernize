@@ -1,0 +1,1243 @@
+{
+ "producto": "kit-tareas-heladeria",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T17:56:31",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-heladeria",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-heladeria",
+ "contexto": {
+  "kit": "Heladería Artesanal",
+  "pie": "— Kit de Tareas Recurrentes · Heladería Artesanal · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "papeles": {
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true
+   }
+  },
+  "producto": "kit-tareas-heladeria"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Apertura»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Apertura»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Cierre»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Cierre»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Apertura»: sección nueva «Higiene personal y arranque seguro» (7 tareas) al INICIO de la hoja: higiene personal, extracción antes de encender y comprobación del gas si lo hay, que no existían en ninguno de los 11 ficheros — DOM-12 / DOM-13 (equivalentes)",
+    "«Apertura»: las vitrinas no se ENCIENDEN, pasan de conservación (−18 °C) a servicio (−14 a −12 °C) y se COMPRUEBA que han aguantado la noche — DOM-24 (equivalente)",
+    "«Apertura»: las cámaras se comprueban desde la noche anterior, con objetivo, hueco para la lectura y qué hacer si hay desviación — DOM-24 (equivalente)",
+    "«Apertura»: la cámara de maduración lleva hueco para la lectura y la consecuencia de pasarse de 4 °C — DOM-14 (equivalente)",
+    "«Apertura»: la referencia al APPCC deja de dar por hecho que el cliente lo tiene y ofrece la columna «Notas» como alternativa — DOM-R2-09",
+    "«Apertura»: la fruta de los toppings se sirve CRUDA — desinfección con dosis y aclarado con agua potable — DOM-26 (equivalente)",
+    "«Apertura»: contaminación cruzada de ALÉRGENOS en el mostrador (un porcionador por cubeta) y carta de alérgenos contrastada con la vitrina del día — DOM-19 (equivalente, punto de servicio)",
+    "«Cierre»: el modo conservación se explica como lo que es (la vitrina no se apaga) — DOM-24 (equivalente)",
+    "«Cierre»: las mermas del día con sabor, kg y motivo, y para qué sirve el dato — DOM-18 (equivalente)",
+    "Instrucciones: la portada ya no promete «encendido de vitrinas» — con género dentro no se apagan (DOM-24)",
+    "Instrucciones: higiene y arranque seguro, los tres niveles de temperatura y los alérgenos del mostrador — DOM-12 / DOM-14 / DOM-19",
+    "«Apertura»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Pasteurización»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Pasteurización»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Mantecación»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Mantecación»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Mantecación»: la etiqueta remite a la tabla de vida útil, que es la que dice qué caducidad escribir — DOM-29 (equivalente)",
+    "«Mantecación»: tabla editable de vida útil (6 familias) al pie, fuera del rango del contador — DOM-29 (equivalente)",
+    "Instrucciones: tabla de vida útil y por qué la base no se congela — DOM-29 (equivalente)",
+    "«Pasteurización»: 5 temperaturas normalizadas al signo menos tipográfico y con espacio antes de la unidad (DOM-R2-22, que el motor no aplica al molde P4)",
+    "«Mantecación»: 4 temperaturas normalizadas al signo menos tipográfico y con espacio antes de la unidad (DOM-R2-22, que el motor no aplica al molde P4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Tareas Diarias»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Tareas Diarias»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Tareas Semanales»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Tareas Semanales»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Tareas Mensuales»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Tareas Mensuales»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Tareas Diarias»: cierre y validación del registro diario de jornada, que no estaba en ninguna de las 4 hojas del 03 — DOM-17 (equivalente)",
+    "«Tareas Mensuales»: archivo y conservación 4 años de los registros de jornada — DOM-17 (equivalente)",
+    "Instrucciones: obligación y plazo de conservación del registro de jornada — DOM-17 (equivalente)",
+    "«Tareas Diarias»: 1 errata(s) corregidas («mantecc» doble C → «mantec») — hallazgo MEDIA de kit-tareas-heladeria-ver2.json (hallazgos_nuevos); la forma correcta ya estaba en 02!Mantecación!B32"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Heladero-Obrador»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Heladero-Obrador»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Dependiente-Mostrador»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Dependiente-Mostrador»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Encargado Turno»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Encargado Turno»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Heladero-Obrador»: 2 errata(s) corregidas («mantecc» doble C → «mantec») — hallazgo MEDIA de kit-tareas-heladeria-ver2.json (hallazgos_nuevos); la forma correcta ya estaba en 02!Mantecación!B32"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Limpieza Semanal»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Limpieza Semanal»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Gestión Semanal»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Gestión Semanal»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Tareas Mensuales»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Tareas Mensuales»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Gestión Semanal»: mantenimiento semanal de la cafetera y del lavavajillas, condicionado a que el local sirva bebidas calientes (si no, N/A y sale del contador) — DOM-15 (equivalente)",
+    "hoja nueva «Trimestral y Anual» en 05: mantenimiento y documentación que se CONTRATA y que pide una inspección (DDD, conductos, gases fluorados, calibración de sondas, extintores, gas, legionela, registro sanitario, formación en alérgenos, póliza del frío y facturación) — DOM-16 (equivalente); el kit no tenía ninguna capa anual",
+    "Instrucciones: para qué sirve la hoja «Trimestral y Anual» y cómo se usa — DOM-16 (equivalente)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Temporada Alta»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Temporada Alta»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Temporada Baja»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Temporada Baja»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Catering Eventos»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Catering Eventos»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Catering Eventos»: sección nueva «Al confirmar el pedido o el evento» (5 tareas) delante de la preparación: alérgenos por escrito, comensales, señal, cancelación y hueco de cámara — DOM-19 (equivalente)",
+    "«Catering Eventos»: la temperatura de llegada lleva hueco para la lectura y qué hacer si no cuadra — DOM-14 (equivalente)",
+    "Instrucciones: qué se cierra por escrito antes de aceptar un evento — DOM-19 (equivalente)",
+    "«Catering Eventos»: 1 temperaturas normalizadas al signo menos tipográfico y con espacio antes de la unidad (DOM-R2-22, que el motor no aplica al molde P4)",
+    "«Catering Eventos»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Por Zona»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Zona»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "«Por Turno»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Turno»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "«Por Perfil»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Perfil»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura del Negocio»: Responsable y Hora Límite precargados en 18 tareas (ancla 07:00)",
+    "«Apertura del Negocio»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre del Negocio»: Responsable y Hora Límite precargados en 15 tareas (ancla 07:00)",
+    "«Cierre del Negocio»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura del Negocio»: 4 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Apertura del Negocio»: la vitrina de helado no se enciende, se pasa de conservación a servicio, y el texto queda como HITO (sin repetir el detalle de 01) — DOM-24 (equivalente)",
+    "«Apertura del Negocio»: temperatura de vitrina de EXPOSICIÓN DE HELADO (−14/−12 °C) en lugar del «0-4 °C» genérico que inyectó el motor, que contradecía al propio 01 y daba por buena una lectura de vitrina perdida (hallazgo ALTA de kit-tareas-heladeria-ver3.json). El hueco «____ °C» se retira de AQUÍ: 01 y 08 pedían anotar la MISMA lectura dos veces, y la casilla se deja SOLO en 01, que es el detalle por ÁREA — hallazgo MEDIA de la misma verificación",
+    "«Apertura del Negocio»: Zona de «Encender sistema de reservas / tablet de pedidos» «Recepción» → «Mostrador» — una heladería de mostrador directo no tiene una zona de «Recepción» separada del propio mostrador de venta — hallazgo BAJA de kit-tareas-heladeria-ver3.json",
+    "«Apertura del Negocio»: 1 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre del Negocio»: la temperatura de cierre lleva objetivo y hueco para la lectura, igual que la de apertura — hallazgo MEDIA de la verificación",
+    "«Cierre del Negocio»: 1 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)",
+    "metadata title → Apertura y Cierre del Negocio — Heladería Artesanal · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Apertura de Caja»: B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» (T-02: el hito de encender el TPV es del fichero de negocio; aquí se comprueba)",
+    "«Apertura de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Cierre de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Registro Mensual»: columna «Z del TPV» antes de «Descuadre» (DOM-04/TEC-04/COM-14)",
+    "«Registro Mensual»: la columna del efectivo pasa a «Efectivo Contado» (el recuento del cajón; el fondo lo descuenta la fórmula) — DOM-R2-01",
+    "«Registro Mensual»: nota al pie con las tres cifras que NO son una suma (TEC-05/DOM-R2-01/26)",
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Apertura de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre de Caja»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: añadida la denominación de 0,02 €",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Apertura de Caja»: celda editable del fondo de caja (C23)",
+    "«Apertura de Caja»: la tarea del fondo apunta a la celda verde sin hardcodear la coordenada",
+    "«Cierre de Caja»: fila «Fondo de caja inicial (−)» en el Resumen de Cierre",
+    "«Cierre de Caja»: fila «Ventas en efectivo (contado − fondo)» en el Resumen de Cierre",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)",
+    "metadata title → Apertura y Cierre de Caja — Heladería Artesanal · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal"
+   ],
+   "formulas_nuevas": 81
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Briefing Diario»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Briefing Diario»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Briefing Diario»: 1 errata(s) corregidas («mantecc» doble C → «mantec») — hallazgo MEDIA de kit-tareas-heladeria-ver2.json (hallazgos_nuevos); la forma correcta ya estaba en 02!Mantecación!B32"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Calendario Anual»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Calendario Anual»: 7 meses con las fechas que faltaban (Día del Padre, campaña de comuniones, San Juan, 15 de agosto, 1 de noviembre y puente del 6-8 de diciembre) — DOM-20 (equivalente); y el Día de la Madre pasa de junio a MAYO, que es cuando es en España",
+    "Instrucciones: de dónde salen las fechas del calendario y qué hay que adaptar — DOM-20 (equivalente)"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-partidas-produccion.xlsx",
+  "03-tareas-manager.xlsx",
+  "04-tareas-perfiles.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-eventos-temporada.xlsx",
+  "07-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Apertura y Cierre de Heladería · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura",
+     "dim": "A1:G43",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "title": "02 · Partidas de Producción · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Pasteurización",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mantecación",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 · Tareas del Manager / Encargado · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Tareas Diarias",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Tareas Semanales",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Tareas Mensuales",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 · Tareas por Perfil Profesional · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B15",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Heladero-Obrador",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Dependiente-Mostrador",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Encargado Turno",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Tareas Semanales y Mensuales · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Limpieza Semanal",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Gestión Semanal",
+     "dim": "A1:G19",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Tareas Mensuales",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "title": "06 · Eventos y Temporada · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Temporada Alta",
+     "dim": "A1:G22",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Temporada Baja",
+     "dim": "A1:G20",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Catering Eventos",
+     "dim": "A1:G33",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 · Plantilla Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B16",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Turno",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Heladería Artesanal · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Heladería Artesanal · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS-01 · Briefing Diario de Heladería · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B15",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing Diario",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS-02 · Calendario Anual de Heladería · Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario Anual",
+     "dim": "A1:F18",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-produccion.xlsx",
+    "salida": "02-partidas-produccion.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-temporada.xlsx",
+    "salida": "06-eventos-temporada.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 127,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 21,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 298,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 43,
+    "02-partidas-produccion.xlsx": 27,
+    "03-tareas-manager.xlsx": 38,
+    "04-tareas-perfiles.xlsx": 41,
+    "05-tareas-semanales-mensuales.xlsx": 44,
+    "06-eventos-temporada.xlsx": 36,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 33,
+    "09-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 13,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 56,
+    "p4": 242
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura",
+     "molde": "p4",
+     "celda": "E41",
+     "tareas": 26
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 17
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Pasteurización",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Mantecación",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Tareas Diarias",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Tareas Semanales",
+     "molde": "p4",
+     "celda": "E23",
+     "tareas": 11
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Tareas Mensuales",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Heladero-Obrador",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Dependiente-Mostrador",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Encargado Turno",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Limpieza Semanal",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Gestión Semanal",
+     "molde": "p4",
+     "celda": "E17",
+     "tareas": 8
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Tareas Mensuales",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Temporada Alta",
+     "molde": "p4",
+     "celda": "E20",
+     "tareas": 11
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Temporada Baja",
+     "molde": "p4",
+     "celda": "E18",
+     "tareas": 9
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Catering Eventos",
+     "molde": "p4",
+     "celda": "E31",
+     "tareas": 16
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Turno",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing Diario",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "01-apertura-cierre.xlsx:Apertura!B36",
+     "papel": "otro fichero (otra capa: se deja)",
+     "texto": "Encender TPV / caja registradora y verificar fondo de caja"
+    },
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": [
+    "01-apertura-cierre.xlsx:Apertura!B36"
+   ]
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-heladeria)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-heladeria/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-heladeria/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29",
+   "entradas": "18 tareas · 3 N/A · 15 ✓",
+   "esperado": "15 de 15",
+   "obtenido": "15 de 15",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-heladeria/contador-08-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Apertura:C41/E41",
+   "entradas": "hoja tal y como se entrega · 26 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 29",
+   "esperado": "0 de 26",
+   "obtenido": "0.0 de 26.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-heladeria/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-heladeria.bak-20260823-175614"
+}
