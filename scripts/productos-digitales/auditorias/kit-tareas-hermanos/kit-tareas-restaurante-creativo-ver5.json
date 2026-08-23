@@ -1,0 +1,139 @@
+{
+  "rol": "verificador independiente · kit-tareas-restaurante-creativo · ver5 (post motor 2.5 / m5 metadata)",
+  "fecha": "2026-08-23",
+  "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-restaurante-creativo/ NO tocado (confirmado: `git status --short astro-site/public/dl` sin salida) · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean/mv",
+  "comando_dryrun": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver5 python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-restaurante-creativo --dry-run --json .../scratchpad/kt-catering-09/kit-tareas-restaurante-creativo.json",
+  "comando_diff": "script propio .../scratchpad/kt-catering-09/difprod-rc.py — usa main.digest/main.diff_digest (m3 celdas/DV/alturas/locked + m5 propiedades ·propiedades·) contra astro-site/public/dl/kit-tareas-restaurante-creativo/, sólo lectura",
+  "1_dryrun": {
+    "exit": 0,
+    "ficheros": 13,
+    "en_alcance_molde_▸": "2/13 (10-apertura-cierre-negocio.xlsx negocio · 11-apertura-cierre-caja.xlsx caja) · f_areas=None",
+    "idempotencia_2a_pasada": 0,
+    "censo_fail_exit": 0,
+    "censo_evidencia": "paso 7/7: 13 ficheros censados (13 xlsx, 0 docx, 0 pdf), OK: 0 defectos (--fail)"
+  },
+  "2_diff_vs_produccion": {
+    "total_diferencias": 11,
+    "por_categoria": {
+      "valor": 0, "dv": 0, "alturas": 0, "locked": 0, "properties": 11, "otros": 0
+    },
+    "ficheros_solo_produccion": [],
+    "ficheros_solo_dryrun": [],
+    "conclusion": "Las 11 diferencias son TODAS de la pseudo-hoja «·propiedades·» (m5) y TODAS del campo `subject`, ninguna otra: `title`, `creator`, `keywords`, `category`, `description` no cambian en ningún fichero. 0 diferencias en valor/DV/alturas/locked/merges/cf/area/prot/hojas-sólo-en-una-pasada — exactamente lo que pedía el encargo.",
+    "ficheros_con_subject_v1_1_a_v2_0": [
+      {
+        "fichero": "01-apertura-cierre.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "02-mise-en-place-degustacion.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "03-id-desarrollo-menu.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "04-tareas-brigada-creativa.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "05-tareas-semanales-mensuales.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "06-sumiller-maridajes.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "07-chefs-table-eventos.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "08-fotografia-storytelling.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "09-plantilla-personalizable.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "BONUS-01-briefing-servicio.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      },
+      {
+        "fichero": "BONUS-02-calendario-anual.xlsx",
+        "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v1.1",
+        "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0"
+      }
+    ],
+    "ficheros_sin_cambios": [
+      "10-apertura-cierre-negocio.xlsx (molde ▸ negocio — ya llevaba subject v2.0)",
+      "11-apertura-cierre-caja.xlsx (molde ▸ caja — ya llevaba subject v2.0)"
+    ]
+  },
+  "3_formato_subject_vs_representante": {
+    "representante": "astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+    "representante_subject": "Kit de Tareas Recurrentes Pro · v2.0",
+    "restaurante_creativo_subject_nuevo": "Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor · v2.0",
+    "patron": "«<sufijo del kit> · v2.0» — mismo separador (espacio + middot U+00B7 + espacio) y misma cola « · v2.0»; el sufijo cambia por kit (esperado, ya que el sufijo identifica el producto), la FORMA es idéntica. Verificado con `motor.CTX['sufijo']` = «Kit de Tareas Recurrentes — Checklists Operativos para Restaurante Creativo / De Autor» y `gates.metadata.subject_esperado` = ese sufijo + « · v2.0», coincide con lo escrito en los 11 ficheros.",
+    "ok": true
+  },
+  "4_cache_de_formulas": {
+    "gate_data_only_formulas_nuevas": "con_valor=144, vacias_por_diseno=0, fallos=0 (todas las fórmulas NUEVAS registradas por el motor tienen cache tras inject_cache)",
+    "muestra_5_al_azar_sobre_TODAS_las_formulas_del_libro": [
+      {"ref": "04-tareas-brigada-creativa.xlsx:Maître-Sala!C21", "formula": "=COUNTIFS(B6:B20,\"?*\",E6:E20,\"✓\")-COUNTIFS(B6:B20,\"Tarea\",E6:E20,\"✓\")", "valor_cacheado_data_only": 0.0},
+      {"ref": "02-mise-en-place-degustacion.xlsx:Pre-elab Medio!C19", "formula": "=COUNTIFS(B6:B18,\"?*\",E6:E18,\"✓\")-COUNTIFS(B6:B18,\"Tarea\",E6:E18,\"✓\")", "valor_cacheado_data_only": 0.0},
+      {"ref": "11-apertura-cierre-caja.xlsx:Cierre de Caja!C31", "formula": "=B31*20", "valor_cacheado_data_only": 0.0},
+      {"ref": "11-apertura-cierre-caja.xlsx:Apertura de Caja!C22", "formula": "=COUNTIFS(B5:B20,\"?*\",E5:E20,\"✓\")", "valor_cacheado_data_only": 0.0},
+      {"ref": "09-plantilla-personalizable.xlsx:Plantilla C!E30", "formula": "=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")", "valor_cacheado_data_only": 0.0}
+    ],
+    "resultado": "5/5 celdas con fórmula devuelven valor NO None en data_only=True (todas 0.0, que es el valor legítimo de un checklist recién impreso sin marcar — no un hueco de cache). El cache sigue intacto tras el guardado de m5.",
+    "ok": true
+  },
+  "5_gates_adicionales_sin_novedad": {
+    "tpv_duplicado": "1 tarea «Encender TPV/POS/datáfono» en 10-apertura-cierre-negocio.xlsx (papel: negocio, hito legítimo), 0 fuera del fichero de negocio",
+    "bandas_solapadas": [],
+    "dv_y_bio": "hojas_checklist=4 + hojas_p4=30 = 34 hojas de checklist, dv_incorrectas=[], listas_dv_del_producto=[\"✓,—,N/A\"] (una sola lista), instrucciones_con_bio=13/13, sin_bio=[], version_desfasada=[]",
+    "negocio_precargado": "10-apertura-cierre-negocio.xlsx: firma_ok=true, 33 tareas, 0 huecos de Responsable/Hora",
+    "gate_metadata_incoherentes": [],
+    "gate_metadata_keywords_propias": []
+  },
+  "6_demos_spec_6_del_dryrun": [
+    {"caso": "arqueo-cuadra", "ref": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C54", "esperado": 0, "obtenido": 0, "ok": true},
+    {"caso": "arqueo-descuadra", "ref": "11-apertura-cierre-caja.xlsx:Cierre de Caja:C54", "esperado": 10, "obtenido": 10, "ok": true},
+    {"caso": "contador-honesto", "ref": "10-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29", "esperado": "15 de 15", "obtenido": "15 de 15", "ok": true},
+    {"caso": "contador-p4-sin-rotulos", "ref": "01-apertura-cierre.xlsx:Apertura AM:C47/E47", "esperado": "0 de 33 (formula vieja habría dicho 3 de 36)", "obtenido": "0.0 de 33.0", "ok": true}
+  ],
+  "7_recuento_gate": {
+    "total": 477,
+    "esperado_firmado": 477,
+    "coincide": true,
+    "desglose": "molde ▸ 56 + molde P4 421 · por_fichero: 01=55 02=63 03=50 04=60 05=63 06=32 07=44 08=34 10=33 11=23 BONUS=20 (09 sin tareas contables por diseño)"
+  },
+  "8_produccion_intacta": {
+    "git_status_dl": "sin salida (0 cambios) — confirmado ANTES y DESPUÉS de correr el dry-run y el diff",
+    "trabajo_realizado_en": "/private/tmp/.../scratchpad/propio-ver5/dryrun-kt/kit-tareas-restaurante-creativo (copia de trabajo) y /private/tmp/.../scratchpad/kt-catering-09/ (informes)"
+  },
+  "9_termica": {
+    "istats_antes_dryrun": "40.44°C",
+    "istats_antes_dryrun2": "39.5°C",
+    "istats_antes_diff": "42.75°C / 41.69°C",
+    "maximo_registrado": "42.75°C",
+    "umbral": 65,
+    "nota": "todo en serie, un solo python a la vez, sin builds ni Playwright"
+  },
+  "hallazgos_nuevos": [],
+  "conclusion": "kit-tareas-restaurante-creativo tras el motor 2.5 (m5): dry-run exit 0, censo --fail 0, idempotencia 0, diff contra producción = 11 (100% en `properties`, campo `subject`, v1.1→v2.0 en los 11 ficheros que aún lo llevaban desactualizado; los 2 ficheros del molde ▸ ya estaban en v2.0 y no cambian). 0 diferencias en valor/DV/alturas/locked/merges/cf/area/prot. Formato del subject nuevo idéntico en forma al del representante («<sufijo> · v2.0»). Cache de fórmulas intacto (144/144 con valor tras inject_cache; 5/5 de la muestra al azar sin None). recuento_gate = 477, coincide con el firmado. Sin hallazgos nuevos. NO bloquea.",
+  "bloquea_real": false
+}

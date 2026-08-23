@@ -1,0 +1,127 @@
+{
+ "rol": "verificador independiente · kit-tareas-heladeria · ver5 (sobre motor 2.5 tanda 5, focalizada en m5 metadata + diff COMPLETO contra producción)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-heladeria",
+ "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver5hel · astro-site/public/dl/** intacto (git status --porcelain -- astro-site/public/dl/ = vacío antes y después) · sin git add/commit/stash/clean/mv · sin KIT_TAREAS_APPLY",
+ "regla_termica": "istats antes de cada arranque: 39,50 / 40,94 / 42,81 / 42,31 °C — máximo 42,81 °C, muy por debajo de 65 °C; un solo intérprete a la vez; nada de builds ni Playwright",
+
+ "1_regeneracion": {
+  "comando": "main.py --producto kit-tareas-heladeria --dry-run --json .../scratchpad/kt-catering-09/kit-tareas-heladeria-ver5.json (motor 2.5, --solo por defecto = motor,contenido)",
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_detalle": "11/11 · censo-entregables --fail sobre la COPIA del scratchpad (11 xlsx, 0 docx, 0 pdf) → 'OK: 0 defectos (--fail)'",
+  "idempotencia_2a_pasada": {"ejecutada": true, "diferencias": 0, "detalle": []},
+  "fallos_gate": [],
+  "gates_dv_y_bio": "hojas_checklist=4 (molde ▸, 08+09) + hojas_p4=21 = 25 hojas de checklist · listas_dv_del_producto=[\"✓,—,N/A\"] (UNA sola) · dv_incorrectas=[] · sin_bio=[] · sin_hoja_instrucciones=[] · version_desfasada=[] · aviso_dv_mezcladas=[] · instrucciones_con_bio=11/11"
+ },
+
+ "2_diff_completo_contra_produccion": {
+  "metodo": "kt_main.digest()/diff_digest() (m3 endurecido: valor+formato+relleno de TODAS las celdas del rango usado, locked celda a celda, merges/dv/cf/area/prot por hoja, alturas fila a fila, y desde m5 la pseudo-hoja «·propiedades·» con title/subject/creator/keywords/category/description) aplicado a cada uno de los 11 ficheros comunes entre la copia de trabajo del dry-run y astro-site/public/dl/kit-tareas-heladeria/ (sólo lectura sobre producción). Script: scratchpad/propio-verificador/difprod.py (reutilizado tal cual de la verificación de kit-tareas-hotel-ver5 de esta misma sesión — mismo código, importa main.digest/diff_digest directamente del motor real, sin reimplementación paralela).",
+  "ficheros_prod": 11,
+  "ficheros_work": 11,
+  "solo_en_produccion": [],
+  "solo_en_dry_run": [],
+  "total_diferencias": 9,
+  "resumen": {
+   "valor": 0,
+   "dv": 0,
+   "alturas": 0,
+   "locked": 0,
+   "properties": 9,
+   "otros": 0
+  },
+  "conclusion": "0 diferencias en valor de celda, DV, alturas de fila, locked u 'otros' (merges/cf/area/prot/ficheros añadidos-borrados). Las 9 diferencias son TODAS de la categoría properties, campo subject, en los 9 ficheros de molde P4/BONUS (01-07 + BONUS-01 + BONUS-02). Los 2 ficheros de molde ▸ (08-apertura-cierre-negocio, 09-apertura-cierre-caja) NO aparecen en el diff: su subject ya era v2.0 en producción (verificado leyendo directamente astro-site/public/dl/kit-tareas-heladeria/{08,09}*.xlsx, sólo lectura: los dos devuelven 'Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0'), así que m5 no les toca ni un byte — es justo lo que predice el diseño (subject ya canónico ⇒ sin escritura)."
+ },
+
+ "3_ficheros_con_subject_v1.1_antes_a_despues": [
+  {"fichero": "01-apertura-cierre.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "02-partidas-produccion.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "03-tareas-manager.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "04-tareas-perfiles.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "05-tareas-semanales-mensuales.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "06-eventos-temporada.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "07-plantilla-personalizable.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "BONUS-01-briefing-servicio.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"},
+  {"fichero": "BONUS-02-calendario-anual-tareas.xlsx", "subject_antes": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v1.1", "subject_despues": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0"}
+ ],
+ "3b_ficheros_sin_cambio_ninguno": ["08-apertura-cierre-negocio.xlsx", "09-apertura-cierre-caja.xlsx"],
+ "3c_campos_no_tocados_en_ninguno_de_los_9": "title, creator, keywords, category, description — el diff sólo reporta 'propiedades!subject' en las 9 líneas; ningún otro campo de CAMPOS_PROPS aparece. Verificado ADEMÁS de forma independiente al diff: barrido directo (openpyxl, sólo lectura) de los 5 campos de CAMPOS_PROPS != subject en los 11 ficheros comparando producción vs copia de trabajo → 0 diferencias. Confirmado también por gates.metadata del dry-run: incoherentes=[] y keywords_propias=[] en los 11 ficheros (keywords ya seguían la convención derivada 'kit tareas heladeria, AI Chef Pro' antes de esta tanda).",
+
+ "4_formato_del_subject_nuevo_vs_representante": {
+  "representante": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas/01-apertura-cierre.xlsx",
+  "subject_representante": "Kit de Tareas Recurrentes Pro · v2.0",
+  "subject_heladeria_nuevo": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0",
+  "patron": "«<sufijo> · v2.0», sin 'AI Chef Pro' insertado en medio — el sufijo de heladería es su propio nombre de kit (distinto al del representante, como corresponde), pero la ESTRUCTURA coincide byte a byte: sufijo + ' · v2.0'.",
+  "ok": true
+ },
+
+ "5_cache_de_formulas": {
+  "metodo": "sobre la copia de trabajo del dry-run: barrido de las 11 hojas con openpyxl (data_only=False) para localizar TODAS las celdas con fórmula (141 encontradas), muestra aleatoria de 5 (seed=42) reabierta con data_only=True",
+  "formulas_totales_encontradas": 141,
+  "coincide_con_inject_cache_del_dryrun": "4+4+6+6+8+6+6+4+95+2+0 = 141 (gates de inject_cache por fichero, paso 4/7 del dry-run) — mismo total, cuadra",
+  "muestra": [
+   {"fichero": "06-eventos-temporada.xlsx", "hoja": "Temporada Alta", "celda": "C20", "formula": "=COUNTIFS(B6:B19,\"?*\",E6:E19,\"✓\")-COUNTIFS(B6:B19,\"Tarea\",E6:E19,\"✓\")", "valor_cacheado": 0.0},
+   {"fichero": "02-partidas-produccion.xlsx", "hoja": "Mantecación", "celda": "C26", "formula": "=COUNTIFS(B6:B25,\"?*\",E6:E25,\"✓\")-COUNTIFS(B6:B25,\"Tarea\",E6:E25,\"✓\")", "valor_cacheado": 0.0},
+   {"fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Registro Mensual", "celda": "H5", "formula": "=IFERROR(F5-G5,0)", "valor_cacheado": 0.0},
+   {"fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Cierre de Caja", "celda": "C42", "formula": "=B42*0.01", "valor_cacheado": 0.0},
+   {"fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Cierre de Caja", "celda": "C37", "formula": "=B37*0.5", "valor_cacheado": 0.0}
+  ],
+  "ninguna_None": true,
+  "ok": true,
+  "nota": "El propio dry-run (paso 4/7) ya reportó cache_inyectado==formulas y fallos_pycel=0 en las 11/11 ficheros (data_only_formulas_nuevas: con_valor=126, fallos=[]); esta muestra manual de 5 al azar sobre la copia guardada lo confirma leyendo directamente el .xlsx con data_only=True, sin depender del informe del propio motor."
+ },
+
+ "6_casos_seccion6_del_dry_run": {
+  "arqueo-cuadra": {"ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54", "esperado": 0, "obtenido": 0},
+  "arqueo-descuadra": {"ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54", "esperado": 10, "obtenido": 10},
+  "contador-honesto": {"ok": true, "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29", "esperado": "15 de 15", "obtenido": "15 de 15"},
+  "contador-p4-sin-rotulos": {"ok": true, "ref": "01-apertura-cierre.xlsx:Apertura:C41/E41", "esperado": "0 de 26", "obtenido": "0.0 de 26.0"},
+  "casos_ok": 4,
+  "casos_total": 4,
+  "nota": "los 4 casos de demostraciones_spec_6 del JSON del dry-run, todos ok:true. m5 (metadata) no toca contenido de tareas ni fórmulas de arqueo/contador."
+ },
+
+ "7_recuento_de_tareas": {
+  "recuento_gate": 298,
+  "firmado_esperado": 298,
+  "coincide": true,
+  "desglose": "molde ▸ 56 + molde P4 242 = 298 (gates.recuento_tareas.recuento_por_molde), sin cambios frente a versiones previas del contenido — m5 (metadata) no toca contenido de tareas",
+  "por_fichero": {
+   "01": 43, "02": 27, "03": 38, "04": 41, "05": 44, "06": 36,
+   "07": 0, "08": 33, "09": 23, "BONUS-01": 13, "BONUS-02": 0
+  }
+ },
+
+ "8_gate_metadata_del_dry_run": {
+  "subject_esperado": "Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal · v2.0",
+  "keywords_esperado": "kit tareas heladeria, AI Chef Pro",
+  "incoherentes": [],
+  "keywords_propias": [],
+  "conclusion": "0 incoherencias en los 11 ficheros tras el cambio — el propio gate del motor confirma lo que mide el diff en §2/§3"
+ },
+
+ "recuento_gate": 298,
+ "casos_ok": 4,
+ "casos_total": 4,
+ "idempotencia": 0,
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+
+ "hallazgos_nuevos": [],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "El diff COMPLETO (m3 endurecido + m5 propiedades) contra astro-site/public/dl/kit-tareas-heladeria/ da exactamente lo que predice el diseño de m5: 0 diferencias en valor de celda, DV, alturas, locked y 'otros' (merges/cf/area/prot/ficheros añadidos-borrados); las 9 diferencias totales son TODAS 'properties!subject', una por cada uno de los 9 ficheros de molde P4/BONUS que llevaban 'v1.1' en producción, y los 2 ficheros de molde ▸ (08, 09) no cambian ni un byte porque su subject ya era v2.0. El formato del subject nuevo replica byte a byte el patrón '<sufijo> · v2.0' del representante. title/creator/keywords/category/description no se tocan en ninguno de los 9 (confirmado por el diff, que sólo reporta la clave subject, por un barrido independiente de los 5 campos restantes que da 0 diferencias, y por gates.metadata: 0 incoherencias). El cache de fórmulas sigue intacto: 141 fórmulas totales, muestra de 5 al azar con data_only sin ningún None, cuadrando con el recuento del propio inject_cache del dry-run. idempotencia=0, censo --fail=0 defectos, recuento_gate=298 (coincide con el firmado), y los 4 casos de la sección 6 del dry-run pasan. No hay ningún hallazgo nuevo que reportar.",
+
+ "notas": [
+  "Todas las lecturas de celda/propiedades son sobre la COPIA DE TRABAJO del dry-run (CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver5hel/dryrun-kt/kit-tareas-heladeria) o, cuando se cita explícitamente 'producción', sobre astro-site/public/dl/kit-tareas-heladeria/ EN SÓLO LECTURA (openpyxl.load_workbook sin .save en ningún momento). git status --porcelain -- astro-site/public/dl/ = vacío antes y después de esta verificación.",
+  "El comparador difprod.py reutilizado es el mismo fichero ya usado para kit-tareas-hotel-ver5 en esta sesión (scratchpad/propio-verificador/difprod.py), que importa main.digest/diff_digest directamente del motor real (mismo código, no una reimplementación paralela) para que el diff sea auditable con las mismas reglas m3/m5 que usa el propio kit-tareas-v2_0.",
+  "scripts/productos-digitales/kit-tareas-v2_0/{main.py,motor.py} y kit-tareas-v2-SPEC.md siguen con cambios sin commitear de la tanda del motor 2.5 (WIP de otra sesión, no tocados por esta verificación) — no forma parte del alcance de este informe."
+ ],
+
+ "artefactos": {
+  "informe_dry_run": "scratchpad/kt-catering-09/kit-tareas-heladeria-ver5.json",
+  "diff_contra_produccion": "scratchpad/kt-catering-09/diff-kit-tareas-heladeria-ver5.json (9, todas properties)",
+  "comparador": "scratchpad/propio-verificador/difprod.py — usa main.digest/diff_digest contra dl/kit-tareas-heladeria",
+  "copia_de_trabajo": "scratchpad/propio-ver5hel/dryrun-kt/kit-tareas-heladeria/"
+ }
+}

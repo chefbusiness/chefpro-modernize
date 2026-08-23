@@ -180,8 +180,39 @@ FRASE_NIVELES_SIN_AREAS = (
     'dos, es a propósito: una es el hito y la otra el detalle.')
 
 
+#: m6 (motor 2.5) — MODELO DE CAJA POR EVENTOS. Una empresa de catering no
+#: tiene mostrador: factura por EVENTO y cobra mayoritariamente por
+#: transferencia (anticipo del 30-50 % + saldo tras el evento). Su fichero del
+#: dinero no es un arqueo de cajón sino una liquidación por evento, así que las
+#: frases de la familia que dicen «el de caja lleva el DINERO» describirían un
+#: fichero que ya no existe. `CTX['modelo_caja']` vale 'mostrador' (los 10 kits
+#: con arqueo) o 'eventos' (catering), y lo decide `contexto()` por CABECERA.
+FRASE_NIVELES_EVENTOS = (
+    'Cada fichero cubre un nivel: el de negocio marca el HITO (abrir, montar, '
+    'cerrar) y el de cobros lleva el DINERO de cada evento (anticipo, factura '
+    'y saldo). Si una tarea aparece en los dos, es a propósito: una es el hito '
+    'y la otra el detalle.')
+FRASE_NIVELES_EVENTOS_AREAS = (
+    'Cada fichero cubre un nivel: el de negocio marca el HITO (abrir, montar, '
+    'cerrar), el de áreas detalla CÓMO se hace en cada zona y el de cobros '
+    'lleva el DINERO de cada evento (anticipo, factura y saldo). Si una tarea '
+    'aparece en dos, es a propósito: una es el hito y la otra el detalle.')
+
+
+def es_modelo_eventos():
+    """m6 — ¿el fichero del dinero de este kit es de EVENTOS, no de mostrador?"""
+    return CTX.get('modelo_caja') == 'eventos'
+
+
 def frase_niveles():
-    """m1 — la frase de T-08 con los niveles que este kit tiene DE VERDAD."""
+    """m1 — la frase de T-08 con los niveles que este kit tiene DE VERDAD.
+
+    m6 — y con el vocabulario del modelo de caja que tiene: en catering no hay
+    «caja», hay cobros por evento.
+    """
+    if es_modelo_eventos():
+        return (FRASE_NIVELES_EVENTOS_AREAS if CTX.get('f_areas')
+                else FRASE_NIVELES_EVENTOS)
     return FRASE_NIVELES if CTX.get('f_areas') else FRASE_NIVELES_SIN_AREAS
 
 #: R3-f — solape MEDIDO de cada banda contra el marco (08/09), se anote o no.
@@ -467,6 +498,140 @@ CAB_CALENDARIO = ('Mes', 'Fecha / Evento', 'Tareas Clave', 'Antelación')
 #: si la encuentra tal cual.
 CAB_CAJA = ('#', 'Tarea', 'Responsable', '✓ Completada', 'Hora', 'Notas')
 
+# --------------------------------------------------------------------------
+# m6 — vocabulario del MODELO DE CAJA POR EVENTOS (09 de catering)
+# --------------------------------------------------------------------------
+#: Estas etiquetas son el CONTRATO entre tres piezas que tienen que decir
+#: exactamente lo mismo o el fichero se rompe en silencio:
+#:   · `construir_09_catering.py`, que las escribe;
+#:   · `fila_liquidacion` / `fila_registro_eventos`, que detectan el papel del
+#:     fichero por CABECERA (regla de oro: nunca por nombre de fichero);
+#:   · `demo_liquidacion` de `main.py`, que localiza las celdas por su rótulo
+#:     para demostrar §6 con pycel.
+#: Por eso viven aquí y no en el constructor: si el constructor cambiara un
+#: rótulo por su cuenta, el motor dejaría de reconocer el fichero, `papel` sería
+#: None, `f_caja` quedaría vacío y las Instrucciones de los 11 ficheros del kit
+#: se publicarían sin la línea del dinero, sin que ningún gate lo cantase.
+#: Espacios NORMALES (U+0020) en «10 %» y «21 %», como el resto de la familia
+#: («0-4 °C», «0,05 €»): el espacio fino U+202F es de los .md ensamblados.
+ETIQ_EV_EVENTO = 'Evento / Cliente'
+ETIQ_EV_FECHA = 'Fecha del evento'
+ETIQ_EV_PAX_CONTR = 'Comensales contratados'
+ETIQ_EV_PAX_REAL = 'Comensales reales'
+ETIQ_EV_PRESUPUESTO = 'Presupuesto aceptado (base, sin IVA)'
+ETIQ_EV_EXTRAS = 'Extras (base, sin IVA)'
+ETIQ_EV_BASE10 = 'Base imponible al 10 %'
+ETIQ_EV_BASE21 = 'Base imponible al 21 %'
+ETIQ_EV_AVISO_BASE = 'Comprobación: las dos bases deben sumar presupuesto + extras'
+ETIQ_EV_IVA10 = 'IVA 10 %'
+ETIQ_EV_IVA21 = 'IVA 21 %'
+ETIQ_EV_TOTAL = 'TOTAL FACTURA'
+ETIQ_EV_ANTICIPO = 'Anticipo cobrado (−)'
+ETIQ_EV_SALDO = 'Saldo tras anticipo'
+ETIQ_EV_COBRADO = 'Cobrado tras el evento'
+ETIQ_EV_PENDIENTE = 'PENDIENTE DE COBRO'
+ETIQ_EV_VENCIMIENTO = 'Fecha de vencimiento del saldo'
+ETIQ_EV_ESTADO = 'ESTADO'
+#: Los tres estados que emite la fórmula de ESTADO, en la hoja de liquidación y
+#: en el registro. Son literales de fórmula: cambiarlos aquí y no allí dejaría
+#: al gate comparando contra un texto que el Excel no escribe nunca.
+EV_COBRADO = 'Cobrado'
+EV_PENDIENTE = 'Pendiente'
+EV_VENCIDO = 'VENCIDO'
+#: Tolerancia del «saldo cero»: un IVA del 10/21 % sobre bases con decimales no
+#: da 0 exacto casi nunca. 0,01 € = un céntimo, que es lo que factura.
+EV_TOLERANCIA = 0.01
+#: Cabecera del «Registro de Eventos» (una fila por evento). Se detecta por
+#: PREFIJO, como `CAB_REGISTRO`: «Base (presupuesto + extras)» y «Total factura»
+#: llevan cola. No comparte firma con el registro mensual de caja, que exige
+#: «Fondo Apertura» — un concepto que en catering no existe.
+CAB_EVENTOS = ('Fecha', 'Evento / Cliente', 'Anticipo', 'Cobrado', 'Pendiente',
+               'Estado')
+#: Rojo de aviso del modelo por eventos. La familia sólo tenía ÁMBAR
+#: (`AMBAR`, el descuadre del arqueo), y un saldo VENCIDO es otra cosa: el
+#: ámbar dice «queda por cobrar» y el rojo «ya pasó el plazo, llama hoy».
+#: Pintar los dos igual borraría la única distinción que el fichero hace.
+ROJO = 'F8D7DA'
+ROJO_TXT = '721C24'
+
+
+def cf_eventos(ws, tipo):
+    """(Re)aplica el formato condicional de las dos hojas del modelo eventos.
+
+    Vive AQUÍ y no en `construir_09_catering.py` por un defecto medido el
+    2026-08-23: `aplicar` VACÍA `ws.conditional_formatting` de todas las hojas
+    reconocidas para que el pipeline sea idempotente, y sólo lo reconstruye
+    para los checklists (§2) y para el arqueo de mostrador. El ámbar del
+    PENDIENTE y el rojo del VENCIDO existían en el fichero recién construido y
+    DESAPARECÍAN en la primera pasada del motor, con el dry-run en verde y sin
+    que ningún gate lo cantase — el mismo patrón que la caché del frontmatter
+    del blog: el cambio parece aplicado porque el resto de la hoja sí lo está.
+
+    Las celdas se localizan por RÓTULO, nunca por coordenada, para que el
+    constructor pueda mover una fila sin romper esto. Devuelve el nº de reglas.
+    """
+    reglas = 0
+    ambar = PatternFill('solid', start_color=AMBAR, end_color=AMBAR)
+    rojo = PatternFill('solid', start_color=ROJO, end_color=ROJO)
+    f_rojo = Font(bold=True, color='00' + ROJO_TXT)
+    if tipo == 'liquidacion':
+        pend = _buscar(ws, ETIQ_EV_PENDIENTE, col=1) or _buscar(
+            ws, ETIQ_EV_PENDIENTE, col=2)
+        estado = _buscar(ws, ETIQ_EV_ESTADO, col=1) or _buscar(
+            ws, ETIQ_EV_ESTADO, col=2)
+        if pend:
+            ws.conditional_formatting.add(
+                f'C{pend}', CellIsRule(operator='greaterThan',
+                                       formula=[str(EV_TOLERANCIA)],
+                                       fill=ambar))
+            reglas += 1
+        if estado:
+            ws.conditional_formatting.add(
+                f'C{estado}', CellIsRule(operator='equal',
+                                         formula=[f'"{EV_VENCIDO}"'],
+                                         fill=rojo, font=f_rojo))
+            reglas += 1
+        return reglas
+    if tipo != 'registro_eventos':
+        return 0
+    hr = fila_registro_eventos(ws)
+    if not hr:
+        return 0
+    cols = {}
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(row=hr, column=c).value
+        if isinstance(v, str) and v.strip():
+            cols[v.strip()] = c
+    def _col(prefijo):
+        for rot, c in cols.items():
+            if rot == prefijo or rot.startswith(prefijo):
+                return c
+        return None
+    c_pend, c_estado = _col('Pendiente'), _col('Estado')
+    # El cuerpo acaba en la fila anterior a TOTALES; si algún día no la
+    # hubiera, en la última fila con número de fila de datos.
+    fin = _buscar(ws, 'TOTALES', col=1)
+    ultima = (fin - 1) if fin else ws.max_row
+    if ultima <= hr:
+        return 0
+    if c_pend:
+        letra = get_column_letter(c_pend)
+        ws.conditional_formatting.add(
+            f'{letra}{hr + 1}:{letra}{ultima}',
+            CellIsRule(operator='greaterThan', formula=[str(EV_TOLERANCIA)],
+                       fill=ambar))
+        reglas += 1
+    if c_estado:
+        # La fila ENTERA en rojo: en una tabla de 25 líneas, un color en una
+        # sola celda se pierde justo cuando más falta hace verlo.
+        letra = get_column_letter(c_estado)
+        ws.conditional_formatting.add(
+            f'A{hr + 1}:{get_column_letter(ws.max_column)}{ultima}',
+            FormulaRule(formula=[f'${letra}{hr + 1}="{EV_VENCIDO}"'],
+                        fill=rojo))
+        reglas += 1
+    return reglas
+
 
 def cabecera_checklist(ws):
     """(fila, {texto: columna}) de la cabecera de un checklist de la familia."""
@@ -537,6 +702,48 @@ def fila_recuento(ws):
     return None
 
 
+def fila_registro_eventos(ws):
+    """Fila de cabecera del «Registro de Eventos» (m6), o None.
+
+    Misma técnica que `fila_registro_mensual` —prefijo, no igualdad— y por el
+    mismo motivo: los rótulos de esa hoja llevan cola («Base (presupuesto +
+    extras)», «Total factura») y con igualdad exacta cualquier retoque futuro
+    dejaría la hoja fuera de alcance sin un solo aviso.
+    """
+    for r in range(3, 9):
+        fila = [v.strip() for v in
+                (ws.cell(row=r, column=c).value
+                 for c in range(1, min(ws.max_column, 14) + 1))
+                if isinstance(v, str) and v.strip()]
+        if all(any(t == v or v.startswith(t) for v in fila)
+               for t in CAB_EVENTOS):
+            return r
+    return None
+
+
+def fila_liquidacion(ws):
+    """Fila del «PENDIENTE DE COBRO» de la «Liquidación del Evento», o None.
+
+    No es una tabla con cabecera sino un FORMULARIO (etiqueta a la izquierda,
+    importe en una columna verde), así que lo que la identifica es la pareja de
+    rótulos que sólo aparece junta ahí: «TOTAL FACTURA» y «PENDIENTE DE COBRO».
+    Se buscan en las dos primeras columnas porque la etiqueta va combinada A:B,
+    igual que el Resumen de Cierre del modelo de mostrador (TEC-03).
+    """
+    total = pendiente = None
+    for r in range(1, ws.max_row + 1):
+        for c in (1, 2):
+            v = ws.cell(row=r, column=c).value
+            if not isinstance(v, str):
+                continue
+            v = v.strip()
+            if v == ETIQ_EV_TOTAL:
+                total = r
+            elif v == ETIQ_EV_PENDIENTE:
+                pendiente = r
+    return pendiente if (total and pendiente) else None
+
+
 def fila_calendario(ws):
     """Fila de cabecera de un calendario ▸, o None.
 
@@ -587,6 +794,15 @@ def hojas_reconocidas(wb):
             fuera[ws.title] = 'checklist'
         elif fila_registro_mensual(ws):
             fuera[ws.title] = 'registro'
+        # m6 — las dos hojas del dinero del modelo POR EVENTOS. Van DESPUÉS del
+        # registro mensual (que exige «Fondo Apertura», ausente aquí) y ANTES
+        # del calendario. Sin reconocerlas, `cerrar` no les daría A4, ni
+        # print_area, ni protección, ni el pie del kit: se publicarían como las
+        # dos únicas hojas sueltas de un producto v2.0.
+        elif fila_registro_eventos(ws):
+            fuera[ws.title] = 'registro_eventos'
+        elif fila_liquidacion(ws):
+            fuera[ws.title] = 'liquidacion'
         elif fila_calendario(ws):
             fuera[ws.title] = 'calendario'
         elif es_briefing(ws):
@@ -657,7 +873,24 @@ def papel_del_fichero(wb):
             con_notas.append(t)
     detalle = {'ciclo': sorted(ciclo), 'con_notas': sorted(con_notas),
                'recuento': _tiene(wb, fila_recuento),
-               'registro': _tiene(wb, fila_registro_mensual)}
+               'registro': _tiene(wb, fila_registro_mensual),
+               # m6 — firma del modelo POR EVENTOS
+               'liquidacion': _tiene(wb, fila_liquidacion),
+               'registro_eventos': _tiene(wb, fila_registro_eventos)}
+    # m6 — el fichero del dinero de catering: liquidación y registro POR
+    # EVENTO. Se mira ANTES que el arqueo de mostrador, y no es un detalle de
+    # estilo: el 09 de eventos lleva una sección OPCIONAL «Solo si hubo barra
+    # con cobro en efectivo» con la misma tabla «Denominación | Cantidad» del
+    # modelo de mostrador, así que `fila_recuento` lo encuentra y, con el orden
+    # inverso, el fichero se llevaba el papel 'caja': `precargar_caja` le
+    # habría escrito «Responsable de caja» y horas de reloj encima de los
+    # responsables y de los D-15/D+7, `instrucciones_caja` le habría puesto un
+    # manual de arqueo y §6 habría intentado demostrar un descuadre que ese
+    # fichero no calcula. La firma de EVENTOS es específica (sólo aparece ahí);
+    # la del recuento la comparten los dos modelos. Medido el 2026-08-23 con el
+    # 09 de prueba: con el orden viejo, papel = 'caja'.
+    if detalle['liquidacion'] or detalle['registro_eventos']:
+        return 'cobros', detalle
     if detalle['recuento'] or detalle['registro']:
         return 'caja', detalle
     if len(ciclo) == 2 and len(con_notas) == 2:
@@ -686,10 +919,14 @@ def contexto(carpeta, ficheros, abrir):
            # T-04 — de aquí salen los paréntesis de «Se conecta con». Si el kit
            # no permite derivarlos, quedan vacíos y la frase va SIN paréntesis:
            # dark-kitchen no tiene terraza y su 01 sólo abre y cierra cocina.
-           'areas_nombres': [], 'negocio_bandas': []}
+           'areas_nombres': [], 'negocio_bandas': [],
+           # m6 — 'mostrador' (arqueo de cajón: 10 kits) o 'eventos'
+           # (liquidación por evento: catering). Lo decide la CABECERA del
+           # fichero del dinero, no el nombre del producto.
+           'modelo_caja': 'mostrador'}
     horas, cierres, sufijos, kits = {}, {}, [], []
     zonas, bandas_neg = {}, {}
-    candidatos = {'caja': [], 'negocio': [], 'areas': [],
+    candidatos = {'caja': [], 'cobros': [], 'negocio': [], 'areas': [],
                   'areas2': []}
     papeles, textos = {}, {}
     for fname in ficheros:
@@ -746,7 +983,8 @@ def contexto(carpeta, ficheros, abrir):
         # aplicar (`texto_tpv_caja` sólo en el fichero de caja): si no, la 1.ª
         # pasada compararía «Encender TPV / POS» y la 2.ª «Comprobar que el
         # TPV…», y `anotar_duplicados` daría dos resultados distintos.
-        textos[fname] = tareas_del_libro(wb, caja=(papel == 'caja'))
+        textos[fname] = tareas_del_libro(wb, caja=(papel == 'caja'),
+                                         cobros=(papel == 'cobros'))
         # T-04 — nombres reales de zona y bandas reales del negocio.
         if papel in ('areas', 'areas2'):
             zonas[fname] = _zonas_del_fichero(wb)
@@ -787,7 +1025,7 @@ def contexto(carpeta, ficheros, abrir):
                 kits.append(cabeza.rsplit(' — ', 1)[1].strip())
 
     # --- resolución de papeles: uno y sólo uno por papel -----------------
-    for papel in ('caja', 'negocio'):
+    for papel in ('caja', 'cobros', 'negocio'):
         if len(candidatos[papel]) > 1:
             raise KitAmbiguo(
                 f'DETECCIÓN AMBIGUA del fichero de {papel.upper()} en '
@@ -799,7 +1037,22 @@ def contexto(carpeta, ficheros, abrir):
         raise KitAmbiguo(
             f'DETECCIÓN AMBIGUA del fichero de ÁREAS en {carpeta}: {areas}. '
             'El motor NO adivina.')
-    ctx['f_caja'] = candidatos['caja'][0] if candidatos['caja'] else None
+    # m6 — el fichero del dinero ocupa SIEMPRE la ranura `f_caja`, sea de
+    # mostrador o de eventos: así las 20 referencias que ya existen (el bloque
+    # «Se conecta con», `colapsar_duplicados`, `aplicar`, los gates) siguen
+    # apuntando al mismo sitio y lo que cambia es el VOCABULARIO, no la
+    # topología del kit. Lo que no puede haber es los dos a la vez: serían dos
+    # ficheros del dinero en el mismo producto con dos modelos incompatibles, y
+    # el motor no adivina cuál manda (R3-a).
+    if candidatos['caja'] and candidatos['cobros']:
+        raise KitAmbiguo(
+            f'DETECCIÓN AMBIGUA del fichero del DINERO en {carpeta}: '
+            f'{candidatos["caja"]} tiene arqueo de mostrador y '
+            f'{candidatos["cobros"]} liquidación por evento. Un kit no puede '
+            'entregar los dos modelos: revisa las cabeceras antes de seguir.')
+    ctx['modelo_caja'] = 'eventos' if candidatos['cobros'] else 'mostrador'
+    del_dinero = candidatos['caja'] or candidatos['cobros']
+    ctx['f_caja'] = del_dinero[0] if del_dinero else None
     ctx['f_negocio'] = (candidatos['negocio'][0] if candidatos['negocio']
                         else None)
     ctx['f_areas'] = areas[0] if areas else None
@@ -835,14 +1088,20 @@ def contexto(carpeta, ficheros, abrir):
     return ctx
 
 
-def tareas_del_libro(wb, caja=False):
+def tareas_del_libro(wb, caja=False, cobros=False):
     """Todos los textos de la columna «Tarea» de un libro, en forma ESTABLE.
 
     «Estable» = ya pasados por las normalizaciones de texto del motor, que son
     idempotentes: así la 1.ª pasada (que los lee crudos) y la 2.ª (que los lee
     ya reescritos) comparan exactamente lo mismo y `anotar_duplicados` no puede
     dar un resultado distinto en cada pasada. `caja=True` añade la de T-02, que
-    sólo se aplica al fichero de caja.
+    sólo se aplica al fichero de caja de MOSTRADOR; `cobros=True` quita la de
+    DOM-01 (`texto_facturado`), que reescribe una cuenta de arqueo que en el
+    modelo por eventos no existe (m6).
+
+    Los dos parámetros se pasan explícitamente y NO se leen de `CTX`: esta
+    función corre DENTRO de `contexto()`, es decir antes de que `CTX` se
+    actualice, y leería el contexto del kit ANTERIOR.
     """
     fuera = []
     for ws in wb.worksheets:
@@ -852,7 +1111,8 @@ def tareas_del_libro(wb, caja=False):
         for r in range(g['hr'] + 1, (g.get('contador') or ws.max_row)):
             v = ws.cell(row=r, column=2).value
             if isinstance(v, str) and v.strip() and v.strip() != 'Tarea':
-                fuera.append(forma_estable(texto_tpv_caja(v) if caja else v))
+                fuera.append(forma_estable(texto_tpv_caja(v) if caja else v,
+                                           facturado=not cobros))
     return fuera
 
 
@@ -1322,19 +1582,27 @@ def texto_temperatura(v):
     return v + obj + LECTURA
 
 
-def forma_estable(v):
-    """El texto tal y como quedará tras el motor (las tres son idempotentes)."""
-    return texto_temperatura(texto_grados(texto_appcc(texto_facturado(v))))
+def forma_estable(v, facturado=True):
+    """El texto tal y como quedará tras el motor (las cuatro son idempotentes).
+
+    m6 — `facturado=False` en el fichero de COBROS: `texto_facturado` reescribe
+    «Total facturado = efectivo + tarjetas + otros» a la cuenta del arqueo con
+    fondo, y en un kit que factura por evento esa cuenta no existe.
+    """
+    if facturado:
+        v = texto_facturado(v)
+    return texto_temperatura(texto_grados(texto_appcc(v)))
 
 
-def textos_de_tarea(ws, cambios, col_tarea=None):
+def textos_de_tarea(ws, cambios, col_tarea=None, facturado=True):
     """§2.5 (Pack APPCC) en toda la hoja y §2.9 sólo en la columna «Tarea»."""
     n = 0
     for row in ws.iter_rows():
         for c in row:
             if not isinstance(c.value, str):
                 continue
-            nuevo = texto_grados(texto_appcc(texto_facturado(c.value)))
+            nuevo = texto_grados(texto_appcc(
+                texto_facturado(c.value) if facturado else c.value))
             if col_tarea and c.column == col_tarea:
                 nuevo = texto_temperatura(nuevo)
             if nuevo != c.value:
@@ -1363,6 +1631,27 @@ COLAPSO = {
                  '  SISTEMAS → ver {0} (TPV, datáfono y música del local) y '
                  '{1} (fondo de caja, cajón y rollo de ticket)'),
 }
+#: m6 — la misma remisión con el vocabulario del modelo POR EVENTOS. Remitir a
+#: «fondo, recuento por denominaciones, Z del TPV y descuadre» en un kit cuyo
+#: fichero del dinero no tiene ninguna de esas cuatro cosas mandaría al lector a
+#: buscar una hoja que no existe.
+COLAPSO_EVENTOS = {
+    'CIERRE DE CAJA': (('f_caja',),
+                       '  CIERRE DE CAJA → ver {0}: liquidación del evento, '
+                       'factura, anticipo y saldo pendiente'),
+    'SISTEMAS': (('f_negocio', 'f_caja'),
+                 '  SISTEMAS → ver {0} (TPV, datáfono y música del local) y '
+                 '{1} (facturación y cobro de cada evento)'),
+}
+
+
+def colapso():
+    """Plantillas de remisión del modelo de caja que tiene este kit (m6)."""
+    if not es_modelo_eventos():
+        return COLAPSO
+    fuera = dict(COLAPSO)
+    fuera.update(COLAPSO_EVENTOS)
+    return fuera
 
 
 def _filas_del_bloque(ws, banda, tope):
@@ -1396,9 +1685,10 @@ def colapsar_duplicados(ws, cambios):
             if not es_fila_seccion(ws, r):
                 continue
             titulo = (ws.cell(row=r, column=1).value or '').strip().upper()
-            if titulo not in COLAPSO:
+            tabla = colapso()
+            if titulo not in tabla:
                 continue
-            claves, plantilla = COLAPSO[titulo]
+            claves, plantilla = tabla[titulo]
             destinos = [CTX.get(k) for k in claves]
             if not all(destinos):
                 continue
@@ -2563,9 +2853,16 @@ def _bloque_conecta(fname):
                             + parentesis(CTX.get('areas_nombres')) + '.'))
         orden.append('áreas')
     if caja:
-        lineas.append(('b', f'{caja} — la CAJA: fondo, recuento por '
-                            'denominaciones, Z del TPV y descuadre.'))
-        orden.append('caja')
+        # m6 — el fichero del dinero se describe con el modelo que TIENE. En
+        # catering no hay cajón que arquear: hay anticipos, factura y saldo.
+        if es_modelo_eventos():
+            lineas.append(('b', f'{caja} — la FACTURACIÓN: anticipos, '
+                                'liquidación y cobro de cada evento.'))
+            orden.append('eventos')
+        else:
+            lineas.append(('b', f'{caja} — la CAJA: fondo, recuento por '
+                                'denominaciones, Z del TPV y descuadre.'))
+            orden.append('caja')
     if len(orden) > 1:
         # T-08 — la promesa impresa era más fuerte que lo que el motor
         # garantiza (el umbral del 80 % deja pasar solapes del 25-40 %).
@@ -2604,9 +2901,19 @@ def _bloque_conecta(fname):
             otros.append('el marco del día está en ' + neg)
         if areas:
             otros.append('el detalle por zona, en ' + areas)
-        cola = ('Estás en ' + fname + ': esta es la CAJA — el DINERO del día '
-                '(fondo, recuento, Z del TPV y descuadre)'
-                + ('; ' + ' y '.join(otros) if otros else '') + '.')
+        if es_modelo_eventos():
+            # m6 — (e) FIRMADO se escribió para el modelo de mostrador. Aquí el
+            # mismo hueco lo ocupa la facturación por evento: mantener el
+            # literal de caja diría «fondo, recuento, Z del TPV y descuadre» en
+            # el único fichero del kit donde no hay ninguna de las cuatro.
+            cola = ('Estás en ' + fname + ': esta es la FACTURACIÓN — el '
+                    'DINERO de cada evento (anticipo, liquidación, factura y '
+                    'saldo pendiente)'
+                    + ('; ' + ' y '.join(otros) if otros else '') + '.')
+        else:
+            cola = ('Estás en ' + fname + ': esta es la CAJA — el DINERO del '
+                    'día (fondo, recuento, Z del TPV y descuadre)'
+                    + ('; ' + ' y '.join(otros) if otros else '') + '.')
     elif fname == cal and evt:
         cola = (f'Estás en {fname}: cada fecha de este calendario se ejecuta '
                 f'con los checklists de {evt}.')
@@ -2672,15 +2979,89 @@ def instrucciones_caja(fname):
     ]
 
 
+def instrucciones_cobros(fname):
+    """m6 — Instrucciones del fichero del dinero del modelo POR EVENTOS.
+
+    `instrucciones_caja` describe un arqueo de mostrador de punta a punta
+    (fondo, recuento por denominaciones, Z del TPV, descuadre, registro
+    mensual). Aplicárselo al 09 de catering publicaría un manual de uso de
+    cuatro hojas que ese fichero no tiene: el cliente leería cómo contar
+    calderilla en un producto que factura por transferencia. El vocabulario es
+    el de catering —evento, comensales, anticipo, factura, saldo—; «caja» sólo
+    aparece en la sección OPCIONAL de la barra en efectivo, que es la única
+    parte donde hay un cajón.
+    """
+    kit = CTX.get('kit', '')
+    titulo = 'Cobros y Facturación por Evento' + (f' — {kit}' if kit else '')
+    return titulo, [
+        ('h', 'Qué resuelve'),
+        ('b', 'El dinero de cada EVENTO de principio a fin: qué hay que tener '
+              'cerrado antes (presupuesto firmado, anticipo cobrado, datos de '
+              'facturación), qué hay que hacer después (comensales reales, '
+              'extras, factura, saldo) y cuánto queda por cobrar.'),
+        ('b', 'No es un arqueo de caja: una empresa de catering no tiene '
+              'mostrador ni turno de TPV. Cobra por evento y casi siempre por '
+              'transferencia, así que lo que hay que vigilar es el SALDO '
+              'pendiente y su vencimiento, no el descuadre del cajón.'),
+        ('h', 'Cómo usar — Antes del Evento'),
+        ('b', 'Repásalo con el calendario en la mano: la columna «Cuándo» va '
+              'en días ANTES del evento (D-15, D-7, D-3, D-1), no en horas. '
+              'Nada sale de aquí sin presupuesto aceptado por escrito y sin el '
+              'anticipo cobrado y registrado.'),
+        ('h', 'Cómo usar — Después del Evento'),
+        ('b', 'Los días siguientes (D+0, D+1, D+7, D+30): comensales reales '
+              'frente a contratados, extras consumidos, factura emitida, saldo '
+              'comunicado, cobro registrado y conciliación con el banco.'),
+        ('h', 'Cómo usar — Liquidación del Evento'),
+        ('b', 'Escribe sólo las celdas VERDES: presupuesto y extras (base, sin '
+              'IVA), cómo se reparte esa base entre el 10 % y el 21 %, el '
+              'anticipo ya cobrado, lo cobrado tras el evento y la fecha de '
+              'vencimiento del saldo. El total, los IVA, el saldo, el '
+              'pendiente y el ESTADO son fórmula.'),
+        ('b', 'El reparto del IVA lo decides tú con tu asesor: la comida y las '
+              'bebidas no alcohólicas del servicio de catering suelen ir al '
+              '10 % y los alquileres, la decoración, los servicios y las '
+              'bebidas alcohólicas al 21 %. Si las dos bases no suman '
+              'presupuesto + extras, la hoja te avisa.'),
+        ('b', 'PENDIENTE DE COBRO se pone en ÁMBAR mientras quede saldo, y el '
+              'ESTADO pasa a «VENCIDO» solo cuando la fecha de vencimiento ya '
+              'ha pasado: es el aviso de que toca reclamar.'),
+        ('b', 'Si el evento llevaba barra con cobro en EFECTIVO, cuenta el '
+              'dinero en la tabla opcional del final (denominaciones, menos el '
+              'fondo) y, si quieres, suma tú ese efectivo neto a «Cobrado tras '
+              'el evento». No se enlaza solo a propósito: en la mayoría de los '
+              'eventos no hay efectivo y una fórmula fija te dejaría un 0 '
+              'restando donde no debe.'),
+        ('h', 'Registro de Eventos'),
+        ('b', 'Una fila por evento: de un vistazo ves cuánto se facturó, qué '
+              'anticipos entraron, qué queda pendiente y cuántos eventos están '
+              'VENCIDOS. La fila TOTALES suma el año y cuenta los pendientes.'),
+        ('h', 'Celdas editables'),
+        ('b', 'Todo lo que se rellena va en VERDE: Responsable, Cuándo, ✓ '
+              'Completada, Firma, los importes de la liquidación y las filas '
+              'del registro de eventos.'),
+    ]
+
+
 def instrucciones_negocio(fname):
     kit = CTX.get('kit', '')
     areas = CTX.get('f_areas')
+    caja = CTX.get('f_caja')
     titulo = 'Apertura y Cierre del Negocio' + (f' — {kit}' if kit else '')
     bloques = [
         ('h', 'Qué resuelve'),
         ('b', 'Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra '
               'del negocio entero, no de cada área. Úsalo como marco del día.'),
     ]
+    # m6 — en el modelo POR EVENTOS el fichero del dinero no se explica solo
+    # desde «Se conecta con»: es el que sostiene la facturación del kit y su
+    # nombre no dice «caja» por ningún lado. Se nombra aquí, igual que se
+    # nombra el de áreas cuando lo hay. Condicionado al modelo: en los 10 kits
+    # de mostrador esta línea NO se emite y sus Instrucciones no se mueven.
+    if caja and es_modelo_eventos():
+        bloques.append(('b', 'El DINERO no está aquí: los anticipos, la '
+                             'liquidación y el cobro de cada evento van en '
+                             + caja + '.'))
     if areas:
         # T-04 — mismo criterio que en «Se conecta con»: las zonas salen de los
         # nombres de hoja del fichero de áreas, no de un literal fijo.
@@ -2722,7 +3103,12 @@ def reescribir_instrucciones(wb, fname, cambios):
     propio = fname in (CTX.get('f_caja'), CTX.get('f_negocio'))
     if propio:
         if fname == CTX.get('f_caja'):
-            titulo, bloques = instrucciones_caja(fname)
+            # m6 — el mismo hueco, dos manuales incompatibles: arqueo de
+            # mostrador o liquidación por evento. Lo decide el modelo del kit,
+            # nunca el nombre del fichero (los dos se llaman «09-…»).
+            titulo, bloques = (instrucciones_cobros(fname)
+                               if es_modelo_eventos()
+                               else instrucciones_caja(fname))
         else:
             titulo, bloques = instrucciones_negocio(fname)
     else:
@@ -2849,22 +3235,90 @@ def proteger(ws, cuerpo, cambios):
 # ==========================================================================
 # Metadata
 # ==========================================================================
+#: m5 — firma de la convención de `keywords` de la familia: «<términos del
+#: kit>, AI Chef Pro». Es lo único que se exige, y por un motivo medido: los 15
+#: ficheros de `kit-tareas-pasteleria` llevan «pastelería, obrador, checklist,
+#: tareas, AI Chef Pro» —escrito a mano, más rico que cualquier cosa derivable
+#: del identificador— y una escritura ABSOLUTA lo habría sustituido por «kit
+#: tareas pasteleria, AI Chef Pro», borrando metadatos buenos en un producto
+#: que ni siquiera es de esta familia (tiene su propio postproceso). Se escribe
+#: sólo cuando falta o cuando no sigue la convención.
+COLA_KEYWORDS = 'AI Chef Pro'
+
+
+def keywords_del_kit():
+    """m5 — `keywords` por defecto, DERIVADO del identificador del producto.
+
+    Se deriva y no se inventa porque tiene que reproducir exactamente lo que ya
+    hay en producción: `kit-tareas` → «kit tareas, AI Chef Pro»,
+    `kit-tareas-restaurante-creativo` → «kit tareas restaurante creativo, AI
+    Chef Pro» (verificado en las 19 carpetas `kit-tareas*` de `dl/`: 206 de 221
+    ficheros ya lo cumplen al carácter). Una cadena nueva cambiaría los 11
+    ficheros del representante, que la regresión exige idénticos.
+    """
+    pid = CTX.get('producto') or 'kit-tareas'
+    return pid.replace('-', ' ') + ', ' + COLA_KEYWORDS
+
+
+def keywords_ok(v):
+    """¿Estas `keywords` siguen la convención de la familia? (m5)"""
+    return bool(v) and v.strip().endswith(COLA_KEYWORDS)
+
+
+def _nombre_documento(wb):
+    """m5 — nombre humano del documento: el título de «Instrucciones» o, si no
+    lo hay, la primera celda con texto de la primera hoja de datos."""
+    if 'Instrucciones' in wb.sheetnames:
+        ws = wb['Instrucciones']
+        for r in (2, 1, 3):
+            for c in (2, 1):
+                v = ws.cell(row=r, column=c).value
+                if isinstance(v, str) and v.strip():
+                    return v.strip()
+    for ws in wb.worksheets:
+        if ws.title == 'Instrucciones':
+            continue
+        for c in (1, 2):
+            v = ws.cell(row=1, column=c).value
+            if isinstance(v, str) and v.strip():
+                return v.strip()
+    return None
+
+
 def set_metadata(wb, fname, cambios):
+    """m5 — metadata coherente en CUALQUIER fichero del producto.
+
+    Hasta el motor 2.4 esto vivía dentro de `cerrar()`, que sale antes de
+    llamarlo cuando el fichero está FUERA del molde ▸. Resultado: los ficheros
+    del molde P4 y los dos BONUS de los cinco kits con alcance «sólo 08/09» se
+    guardaban (reciben desplegable, contador, bio y versión 2.0 desde
+    `normalizar_p4`) pero conservaban `subject` «… · v1.1». El cliente abría un
+    producto v2.0 y las propiedades de la mayoría de sus ficheros decían otra
+    versión. Ahora lo llama `main.procesar` para TODOS los ficheros, después de
+    `cerrar` — que es quien reescribe «Instrucciones», de donde sale el título.
+
+    El `title` se recompone SÓLO si no está ya en la forma canónica
+    «<nombre> · <sufijo>» (COM-27: había títulos genéricos «Kit de Tareas — …»).
+    Reescribirlo siempre no aportaría nada y pondría en riesgo los 11 títulos
+    del representante, que la regresión exige byte a byte.
+    """
     p = wb.properties
+    antes = (p.title, p.subject, p.creator, p.keywords)
     p.creator = 'AI Chef Pro'
     p.lastModifiedBy = 'AI Chef Pro'
     sufijo = CTX.get('sufijo') or 'Kit de Tareas Recurrentes Pro'
-    if p.subject and 'v1.1' in p.subject:
-        p.subject = p.subject.replace('v1.1', 'v2.0')
-    elif not p.subject:
-        p.subject = f'{sufijo} · v2.0'
+    p.subject = f'{sufijo} · v2.0'
+    if not keywords_ok(p.keywords):
+        p.keywords = keywords_del_kit()
     titulo = p.title or ''
-    if titulo.startswith('Kit de Tareas — '):        # COM-27: título genérico
-        ws = wb['Instrucciones'] if 'Instrucciones' in wb.sheetnames else None
-        nombre = ws.cell(row=2, column=2).value if ws else None
-        if isinstance(nombre, str) and nombre:
+    if not titulo.endswith(' · ' + sufijo):
+        nombre = _nombre_documento(wb)
+        if nombre:
             p.title = f'{nombre} · {sufijo}'
-            cambios.append(f'metadata title → {p.title}')
+    if (p.title, p.subject, p.creator, p.keywords) != antes:
+        cambios.append(
+            'metadata: title «{}» · subject «{}» · keywords «{}»'.format(
+                p.title, p.subject, p.keywords))
 
 
 # ==========================================================================
@@ -2889,18 +3343,24 @@ def aplicar(wb, fname, cambios):
 
     es_caja = fname == CTX.get('f_caja')
     es_negocio = fname == CTX.get('f_negocio')
+    # m6 — el fichero del dinero puede ser de MOSTRADOR (arqueo) o de EVENTOS
+    # (liquidación). Todo lo que sigue tocando cajón, TPV y fondo es del
+    # primero: aplicárselo al segundo escribiría «Responsable de caja» y horas
+    # de reloj encima de los responsables y de los D-15/D-7 del diseño.
+    es_mostrador = es_caja and not es_modelo_eventos()
+    es_cobros = es_caja and es_modelo_eventos()
 
     # 0) T-02 — el TPV se enciende UNA vez en el kit, y es en el fichero de
     #    negocio. En el de caja la tarea pasa a «Comprobar que el TPV está
     #    encendido y abrir turno de caja». Va antes que nada porque cambia el
     #    TEXTO que luego miden `autoaltos` y `anotar_duplicados`.
-    if es_caja:
+    if es_mostrador:
         for titulo, tipo in recon.items():
             if tipo == 'checklist':
                 tpv_de_caja(wb[titulo], cambios)
 
     # 1) cambios de COLUMNA (antes de medir geometrías)
-    if es_caja:
+    if es_mostrador:
         for titulo in ('Apertura de Caja', 'Cierre de Caja'):
             if titulo in wb.sheetnames:
                 caja_columnas(wb[titulo], cambios)
@@ -2937,7 +3397,7 @@ def aplicar(wb, fname, cambios):
         if tipo == 'checklist':
             if es_negocio:
                 precargar_negocio(ws, cambios)
-            elif es_caja:
+            elif es_mostrador:
                 precargar_caja(ws, cambios)
             diferenciar_07(ws, cambios)
         elif tipo == 'calendario':
@@ -2950,9 +3410,10 @@ def aplicar(wb, fname, cambios):
                 cuerpos[titulo] = cuerpo
         elif tipo == 'briefing':
             briefing(ws, cambios)
-        textos_de_tarea(ws, cambios, 2 if tipo == 'checklist' else None)
+        textos_de_tarea(ws, cambios, 2 if tipo == 'checklist' else None,
+                        facturado=not es_cobros)
     if 'Instrucciones' in wb.sheetnames:
-        textos_de_tarea(wb['Instrucciones'], cambios)
+        textos_de_tarea(wb['Instrucciones'], cambios, facturado=not es_cobros)
 
     # 4bis) la cabecera de la columna de tiempo se decide con los valores YA
     #   precargados. Si se decidiese antes (como hasta ahora), la 1.ª pasada
@@ -2974,11 +3435,27 @@ def aplicar(wb, fname, cambios):
     normalizar_p4(wb, cambios, saltar=set(recon), bio=False)
 
     # 5) el arqueo (§1.1) — después de las inserciones de fila del checklist
-    if es_caja and 'Cierre de Caja' in wb.sheetnames:
+    if es_mostrador and 'Cierre de Caja' in wb.sheetnames:
         moneda_002(wb['Cierre de Caja'], cambios)
         recuento(wb['Cierre de Caja'], cambios)
         fila_fondo = fondo_de_caja(wb, cambios)
         resumen_cierre(wb, fila_fondo, cambios)
+
+    # 6) m8 — el formato condicional de las dos hojas del modelo POR EVENTOS.
+    #    Va AL FINAL, después de cualquier inserción de fila, y es obligatorio
+    #    porque el vaciado de `conditional_formatting` de arriba se lleva por
+    #    delante el ámbar del PENDIENTE y el rojo del VENCIDO que trae el
+    #    fichero recién construido. Sin esto el 09 de catering se publicaba
+    #    sin un solo aviso de color y el dry-run seguía en verde.
+    reglas_ev = 0
+    for titulo, tipo in recon.items():
+        if tipo in ('liquidacion', 'registro_eventos'):
+            reglas_ev += cf_eventos(wb[titulo], tipo)
+    if reglas_ev:
+        cambios.append(f'{reglas_ev} reglas de formato condicional del modelo '
+                       'por eventos (ámbar si queda PENDIENTE, rojo si el '
+                       'saldo está VENCIDO)')
+
     return {'hojas': recon, 'cuerpos': cuerpos}
 
 
@@ -3009,6 +3486,8 @@ def cerrar(wb, fname, estado, cambios):
             hr = g['hr']
         elif fila_registro_mensual(ws):
             hr = fila_registro_mensual(ws)
+        elif fila_registro_eventos(ws):
+            hr = fila_registro_eventos(ws)          # m6
         elif fila_calendario(ws):
             hr = fila_calendario(ws)
         # TEC-19: apaisado en las hojas anchas (las de 8 columnas de 08
@@ -3028,10 +3507,19 @@ def cerrar(wb, fname, estado, cambios):
         # sigue pudiendo escribir en su plantilla; sólo cambia que no se pisen
         # las cabeceras por accidente. Las «Instrucciones» no se protegen: son
         # texto y el cliente puede querer anotar ahí.
-        if tipo in ('checklist', 'registro', 'briefing', 'calendario'):
+        # m6 — «Liquidación del Evento» y «Registro de Eventos» se protegen
+        # como el resto de hojas de datos: sus celdas VERDES (los importes que
+        # escribe el usuario y las 25 filas del registro) quedan desbloqueadas
+        # por `proteger`, y las fórmulas del IVA, el total, el saldo, el
+        # pendiente y el ESTADO, bloqueadas.
+        if tipo in ('checklist', 'registro', 'registro_eventos', 'liquidacion',
+                    'briefing', 'calendario'):
             protegidas += 1
             proteger(ws, cuerpos.get(titulo), cambios)
     if protegidas:
         cambios.append(f'{protegidas} hojas protegidas sin contraseña (de '
                        f'{len(recon)} con print_area y A4)')
-    set_metadata(wb, fname, cambios)
+    # m5 — `set_metadata` YA NO se llama aquí: `cerrar` sólo corre para los
+    # ficheros del molde ▸ y por eso los P4 y los BONUS se quedaban con el
+    # subject de la v1.1. Lo llama `main.procesar` para TODOS los ficheros,
+    # justo después de esta función.

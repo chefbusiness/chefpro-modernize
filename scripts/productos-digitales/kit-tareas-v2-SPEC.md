@@ -344,3 +344,279 @@ de ventas del día», que describe el fichero 11 entero); heladería `01:'Apertu
 fichero: se deja»). `colapsar_duplicados` no cruza 01/04 contra el fichero de caja. **NO bloquea la
 tanda 5** por decisión del orquestador; queda aquí para que la próxima ronda fije UN criterio
 (reescritura de texto con remisión, como en T-02) en vez de arrastrar cuatro severidades distintas.
+
+---
+
+## 10. Motor 2.5 (2026-08-23) — m5, m6, m7 y el 09 de catering
+
+Mismo estatuto que §8 y §9: **lo que sigue sustituye a lo escrito más arriba**, el motor ya lo
+implementa y la tanda de hermanos (§5) hereda estas reglas. Lo firma el orquestador sobre
+`auditorias/kit-tareas-hermanos/motor-2.5.json`.
+
+### 10.1 m5 — la metadata se fija en TODOS los ficheros, no sólo en los del molde «▸»
+
+`set_metadata` vivía **dentro de `motor.cerrar`**, que sale antes de llamarlo cuando `estado` es
+`None` — es decir, en todo fichero fuera del molde «▸». Resultado: los ficheros del molde P4 y los
+dos BONUS de los cinco kits con alcance «sólo 08/09» se **guardaban** (reciben desplegable,
+contador honesto, CF, bio y versión 2.0 desde `normalizar_p4`) pero conservaban `subject`
+«… · **v1.1**». El cliente abría un producto v2.0 y las propiedades de la mayoría de sus ficheros
+decían otra versión.
+
+- Ahora lo llama **`main.procesar`**, para todos los ficheros, **después** de `cerrar` (el título
+  sale de la hoja «Instrucciones», que `cerrar` reescribe) y **antes** de calcular `guardado`, para
+  que un fichero cuyo único cambio sea la metadata también se guarde.
+- `subject` = `«<sufijo> · v2.0»`, escritura ABSOLUTA. El sufijo sale de `CTX['sufijo']`, que
+  `contexto()` deriva del propio `title` de los ficheros — no hay literal por kit.
+- `creator` y `lastModifiedBy` = «AI Chef Pro».
+- `title` se recompone **sólo si no está ya en la forma canónica «<nombre> · <sufijo>»** (COM-27:
+  había títulos genéricos «Kit de Tareas — …»). Reescribirlo siempre no aporta nada y pondría en
+  riesgo los 11 títulos del representante, que la regresión exige byte a byte. Medido: de los 221
+  ficheros de las 19 carpetas `kit-tareas*` de `dl/`, **0** tienen el título fuera de la forma
+  canónica, así que esa rama es una red de seguridad, no un cambio.
+- **`keywords` se escribe SÓLO si falta o si no sigue la convención «…, AI Chef Pro»**
+  (`motor.keywords_ok`), y el valor por defecto se DERIVA del identificador del producto
+  (`kit-tareas-heladeria` → «kit tareas heladeria, AI Chef Pro»), que es exactamente lo que ya hay
+  en 206 de esos 221 ficheros. La escritura absoluta era la tentación obvia y habría **borrado
+  metadatos buenos**: los 15 ficheros de `kit-tareas-pasteleria` llevan «pastelería, obrador,
+  checklist, tareas, AI Chef Pro», escrito a mano y más rico que nada derivable del identificador.
+  El gate lo publica como AVISO (`gates.metadata.keywords_propias`), nunca como fallo.
+- Gate nuevo: **`gates.metadata`** (`main.gate_metadata`), que censa `subject`/`title`/`creator`/
+  `keywords` de TODOS los ficheros del producto y entra en `fallos`. Sin él m5 no sería auditable:
+  el defecto vivió cuatro tandas precisamente porque ningún gate miraba las propiedades de los
+  ficheros fuera del molde «▸» — el censo mira las hojas.
+- **`main.digest` incluye ahora las propiedades** bajo la pseudo-hoja `·propiedades·`
+  (`title`, `subject`, `creator`, `keywords`, `category`, `description`; `lastModifiedBy`,
+  `created` y `modified` fuera, que cambian en cada guardado). Sin esto, un cambio que es SÓLO de
+  metadata salía con «0 diferencias» y ni la idempotencia ni el diff contra producción podían
+  demostrarlo. El diff del representante sigue en 0: sus propiedades no cambian.
+
+**Alcance real, medido el 2026-08-23** (y corrige la cifra de «26 xlsx» del encargo): en los cinco
+kits con alcance «sólo 08/09» son **55** ficheros con `subject` v1.1 — hotel 17, restaurante-creativo
+11, catering 9, chocolatería 9, heladería 9. Los otros 90 que aparecen en un censo de todo `dl/`
+(asador, chef-privado, food-truck, marisquería, panadería, pastelería, sushi-bar, tapas-bar) **no
+son de esta familia**: nunca han pasado por este motor y m5 no los toca mientras nadie corra
+`main.py --producto` sobre ellos.
+
+### 10.2 m6 — MODELO DE CAJA POR EVENTOS (el 09 de catering)
+
+Diseño firmado por John: una empresa de catering **no tiene mostrador**. Factura por EVENTO y cobra
+mayoritariamente por transferencia (anticipo del 30-50 % + saldo), así que modelar su 09 como un
+arqueo de cajón —fondo, cambio, Z del TPV por turno— describe un negocio que no es el suyo.
+`09-apertura-cierre-caja.xlsx` se sustituye por **`09-cobros-facturacion-eventos.xlsx`**, «Cobros y
+Facturación por Evento — Catering / Eventos» (el `git mv` y el redirect los hace el ORQUESTADOR).
+
+**El modelo se detecta por CABECERA, como todo lo demás.** `CTX['modelo_caja']` vale `'mostrador'`
+(los 10 kits con arqueo) o `'eventos'`, y lo decide `contexto()` a partir de dos firmas nuevas:
+`fila_liquidacion` (la pareja de rótulos «TOTAL FACTURA» + «PENDIENTE DE COBRO», que sólo aparece
+junta en la hoja de liquidación) y `fila_registro_eventos` (cabecera por PREFIJO, como el registro
+mensual). `papel_del_fichero` devuelve `'cobros'`.
+
+> **Trampa cazada en el dry-run:** el 09 de eventos lleva una sección OPCIONAL «Solo si hubo barra
+> con cobro en efectivo» con la **misma tabla «Denominación | Cantidad»** del modelo de mostrador.
+> Con el orden de comprobación natural (`recuento` antes que `liquidacion`), `fila_recuento` la
+> encontraba y el fichero se llevaba el papel **'caja'**: `precargar_caja` le habría escrito
+> «Responsable de caja» y horas de reloj encima de los responsables y de los D-15/D+7,
+> `instrucciones_caja` le habría puesto un manual de arqueo de cuatro hojas y §6 habría intentado
+> demostrar un descuadre que ese fichero no calcula. **La firma de EVENTOS se mira primero**: es
+> específica, mientras que la del recuento la comparten los dos modelos.
+
+El fichero del dinero **sigue ocupando la ranura `CTX['f_caja']`**, sea de mostrador o de eventos:
+así las referencias que ya existen (el bloque «Se conecta con», `colapsar_duplicados`, `aplicar`,
+los gates) siguen apuntando al mismo sitio y lo que cambia es el VOCABULARIO, no la topología del
+kit. Un kit con los DOS modelos a la vez aborta con `KitAmbiguo`.
+
+Qué cambia con `modelo_caja == 'eventos'`:
+
+| Pieza | Mostrador | Eventos |
+|---|---|---|
+| `tpv_de_caja` (T-02) | se aplica | **no** — ese fichero no abre ningún turno de TPV |
+| `texto_facturado` (DOM-01) | se aplica | **no** — reescribe una cuenta de arqueo que aquí no existe (`forma_estable(..., facturado=False)`) |
+| `caja_columnas` · `registro_mensual` · `precargar_caja` · `moneda_002` · `recuento` · `fondo_de_caja` · `resumen_cierre` | se aplican | **no** (`es_mostrador`) |
+| Instrucciones propias | `instrucciones_caja` | **`instrucciones_cobros`** |
+| Línea de «Se conecta con» | «la CAJA: fondo, recuento por denominaciones, Z del TPV y descuadre» | «**la FACTURACIÓN: anticipos, liquidación y cobro de cada evento**» |
+| Orden de uso | «local → caja» | «**local → eventos**» |
+| Cola «Estás en …» (e) | «esta es la CAJA — el DINERO del día …» | «esta es la FACTURACIÓN — el DINERO de cada evento (anticipo, liquidación, factura y saldo pendiente)» |
+| `FRASE_NIVELES` (T-08/m1) | «…el de caja lleva el DINERO» | `FRASE_NIVELES_EVENTOS` / `…_AREAS` |
+| `COLAPSO` (§2.5) | «fondo, recuento…» | `COLAPSO_EVENTOS` |
+| `instrucciones_negocio` | sin línea de dinero | añade «El DINERO no está aquí: … van en 09-…» |
+| §6 | `demo_arqueo` (cuadra / descuadra) | **`demo_liquidacion`** (`liquidacion-cuadra` / `liquidacion-vencida`) |
+| `gates.tpv_duplicado` | «caja (T-02 NO aplicado: revisar)» | «cobros (modelo por eventos: T-02 no aplica)» — no se le exige nada |
+
+`hojas_reconocidas` gana dos tipos, **`liquidacion`** y **`registro_eventos`**, y `cerrar` los trata
+como hojas de datos: A4, `print_area`, pie del kit y **protección** (sus celdas verdes quedan
+desbloqueadas; las fórmulas del IVA, el total, el saldo, el pendiente y el ESTADO, bloqueadas). Sin
+esto se habrían publicado como las dos únicas hojas sueltas de un producto v2.0.
+
+**§6 en el modelo por eventos** — `demo_liquidacion` localiza las celdas **por su rótulo** (nunca
+por coordenada) y demuestra con pycel: base 10 % = 8.000 € y base 21 % = 2.000 € → TOTAL FACTURA
+11.220 €; anticipo 4.000 € → saldo 7.220 €. Caso **`liquidacion-cuadra`**: se cobra el saldo →
+PENDIENTE 0 y ESTADO «Cobrado». Caso **`liquidacion-vencida`**: no se cobra nada y el vencimiento ya
+pasó → PENDIENTE 7.220 € y ESTADO «VENCIDO». El contador honesto se sigue demostrando, ahora sobre
+«Antes del Evento» / la apertura del 08.
+
+### 10.3 El fichero: «Cobros y Facturación por Evento — Catering / Eventos»
+
+Cinco hojas. Constructor esbozado en `kit-tareas-v2_0/construir_09_catering.py`
+(`construir(ruta_destino, ctx)`).
+
+1. **Instrucciones** — la reconstruye `motor.reescribir_instrucciones` desde
+   `motor.instrucciones_cobros()`. El constructor sólo deja la hoja creada con su línea de versión,
+   que es donde se ancla la bio (§2.6).
+2. **Antes del Evento** — molde «▸» (`# · Tarea · Responsable · Cuándo · ✓ Completada · Firma`), 12
+   tareas precargadas + las 5 filas libres que mete el motor + contador honesto. La columna se llama
+   **«Cuándo»** y va en días ANTES del evento (**D-15, D-7, D-3, D-1**), no en horas: es lo que
+   `motor.cadencia` decidiría de todos modos (DOM-R2-24), escrito ya bien para que la 1.ª pasada no
+   tenga nada que corregir. Contenido: presupuesto firmado por escrito · comensales y fecha límite de
+   cambios · anticipo (30-50 %) cobrado y registrado con fecha y medio · forma de pago del saldo y
+   plazo · datos de facturación (razón social, CIF/NIF, dirección, email) · facturas anteriores
+   pendientes del cliente · condiciones de cancelación y modificación por escrito · proveedores
+   externos (carpa, sonido, menaje) con pedido y anticipo propios · escandallo del evento y margen ·
+   seguro de RC del evento y del recinto · alérgenos e intolerancias por escrito · y **sólo si habrá
+   barra con cobro en efectivo**, el fondo de caja.
+3. **Después del Evento** — mismo molde, «Cuándo» en **D+0, D+1, D+7, D+30**: comensales reales vs
+   contratados · extras (horas extra, bebidas, suplementos, roturas) · arqueo de la barra si la hubo ·
+   cargos por roturas comunicados · factura con desglose de IVA · saldo comunicado con vencimiento ·
+   liquidación volcada al registro · cobro del saldo registrado · conciliación bancaria · reseña ·
+   expediente archivado · saldos VENCIDOS reclamados.
+4. **Liquidación del Evento** — formulario, importes en la columna C **en verde** lo editable:
+   evento/cliente, fecha, comensales contratados y reales; presupuesto aceptado (base, sin IVA);
+   extras (base); **base imponible al 10 %** y **al 21 %** (dos celdas verdes que reparte el usuario,
+   con un aviso por fórmula si su suma ≠ presupuesto + extras); IVA 10 % e IVA 21 % (fórmula); TOTAL
+   FACTURA; anticipo cobrado (−); saldo tras anticipo; cobrado tras el evento; **PENDIENTE DE COBRO**
+   (fórmula, ámbar por CF si > 0,01 €); fecha de vencimiento del saldo; y **ESTADO** («Cobrado» si el
+   pendiente ≤ 0,01 € · «VENCIDO» si queda pendiente y hoy > vencimiento · si no «Pendiente»).
+   Debajo, la sección **opcional** «Solo si hubo barra con cobro en EFECTIVO»: recuento por
+   denominaciones (500 € … 0,01 €, con la de 0,02 € que DOM-03 echó en falta), TOTAL EFECTIVO, fondo
+   (−) y efectivo neto. **No se enlaza automáticamente** a «Cobrado tras el evento» —lo explica
+   Instrucciones—: en la mayoría de los eventos no hay barra en efectivo y una fórmula fija dejaría
+   un 0 restando donde no debe.
+   El reparto 10/21 % es del cliente y de su asesor (10 % en alimentos y bebidas no alcohólicas del
+   servicio de catering, 21 % en alquileres, decoración, servicios y bebidas alcohólicas), así que el
+   aviso **informa, no bloquea**: una validación dura le impediría guardar un evento 100 % al 21 %.
+5. **Registro de Eventos** — una fila por evento (25 + TOTALES): Fecha · Evento / Cliente ·
+   Comensales · Base (presupuesto + extras) · Total factura · Anticipo · Cobrado · Pendiente ·
+   Medio de pago · Vencimiento · Estado, con las mismas fórmulas de pendiente y estado y CF ámbar en
+   «Pendiente». Bajo TOTALES, el recuento de eventos PENDIENTES y VENCIDOS.
+
+**Vocabulario:** catering/eventos. «Caja», «turno de caja» y «Z del TPV» aparecen únicamente en la
+sección opcional de la barra en efectivo, que es la única parte del fichero donde hay un cajón.
+
+**Contrato de rótulos:** `ETIQ_EV_*`, `CAB_EVENTOS`, `EV_COBRADO/EV_PENDIENTE/EV_VENCIDO` y
+`EV_TOLERANCIA` viven en **`motor.py`**, no en el constructor, porque son lo que usan a la vez la
+detección por cabecera y la demostración §6. Cambiar un rótulo en el constructor y no en el motor
+deja el fichero sin papel, `CTX['f_caja']` a `None` y los 11 ficheros del kit sin la línea del dinero
+en sus Instrucciones, sin que ningún gate lo cante.
+
+### 10.4 m7 — `--producto kit-tareas-catering` sigue funcionando con 11 ficheros
+
+Verificado en dry-run con el 09 nuevo: **exit 0**, 11 ficheros, idempotencia 0, censo `--fail` 0
+defectos, §6 4/4 (`liquidacion-cuadra` · `liquidacion-vencida` · `contador-honesto` ·
+`contador-p4-sin-rotulos`), DV 0 incorrectas, bio y versión 2.0 en 11/11, metadata 0 incoherencias,
+recuento 347 tareas (▸ 57 + P4 290; eran 346 con el 09 viejo: el de eventos entrega **24** tareas
+frente a 23).
+
+**`main.py --origen <carpeta>`** (sólo con `--dry-run`) permite probar el motor contra un producto
+que todavía no está en `dl/`, que es como se ha verificado esto sin tocar `astro-site/public/dl/**`.
+
+### 10.5 Pendiente de firma del orquestador
+
+- El **«IVA medio aplicado»** de «Registro de Eventos» (celda verde, 10 % por defecto) es una
+  decisión del esbozo: el diseño pide «Total factura (fórmula con IVA medio o introducido)». La
+  alternativa es que «Total factura» sea celda verde y se copie de la liquidación — pero un total
+  tecleado a mano es justo lo que hace que las dos hojas dejen de cuadrar.
+- Los **textos de las 24 tareas** del constructor son los del brief, sin pasar por revisión de
+  redacción. Los pule el agente que construya el 09 definitivo.
+- La línea nueva de `instrucciones_negocio` («El DINERO no está aquí…») **desplaza una fila** las
+  Instrucciones del 08 de catering: 77 de las 88 diferencias contra producción de ese kit son eso.
+- §9.5 (**«caja» pedida FUERA del fichero 09**) sigue abierto y no lo toca esta tanda.
+
+## 11. Motor 2.6 (2026-08-23) — m8: el 09 de catering deja de ser un esbozo
+
+Sustituye a lo que §10.3 y §10.5 daban por pendiente. `construir_09_catering.py` es ya el
+constructor definitivo y `main.py` lo llama solo: **`--origen` deja de ser necesario** para probar
+el kit de catering.
+
+### 11.1 El paso vive en `main.py`, no en el orquestador
+
+`main.sustituir_09_catering(carpeta, pid)` corre **antes** de `ficheros_de` y de `motor.contexto`
+(que es quien lee la carpeta para decidir `modelo_caja`), sobre la copia de trabajo:
+
+1. **Construye siempre** `09-cobros-facturacion-eventos.xlsx`, esté o no ya ese nombre en la
+   carpeta. Aquí está la sutileza que hace que el paso funcione en los dos estados del repositorio:
+   **`git mv` sólo RENOMBRA**. Un fichero que ya se llame `09-cobros-facturacion-eventos.xlsx`
+   puede seguir siendo por dentro el arqueo de cajón de la v1.1, y saltarse la construcción
+   «porque el nombre nuevo ya está» publicaría el kit con el nombre bueno y el fichero viejo
+   dentro — con `papel_del_fichero` devolviendo `'caja'` y todo el vocabulario de mostrador
+   detrás.
+2. **Borra** `09-apertura-cierre-caja.xlsx` de la copia si sigue ahí.
+
+Verificado con las DOS entradas (carpeta con el 09 viejo · carpeta ya renombrada a mano
+simulando el `git mv`): **0 diferencias entre los dos resultados**, medidas con `main.digest` /
+`main.diff_digest` sobre los 11 ficheros. El informe publica `sustitucion_09_catering` para que se
+pueda distinguir una pasada de la otra.
+
+El `git mv` del entregable en `astro-site/public/dl/` y el 301 lo siguen haciendo el orquestador y
+`_redirects`; ningún script de este paquete toca `git`.
+
+### 11.2 m8 — DEFECTO CAZADO: `aplicar` borraba el formato condicional del modelo por eventos
+
+`aplicar` vacía `ws.conditional_formatting` de **todas** las hojas reconocidas para ser idempotente
+(«DV y CF se vacían y se reconstruyen enteros»), pero sólo lo reconstruía para los checklists y
+para el arqueo de mostrador. Las dos hojas nuevas —`liquidacion` y `registro_eventos`— entraban en
+el vaciado y no salían de ninguna reconstrucción: **el ámbar del PENDIENTE y el rojo del VENCIDO
+existían en el fichero recién construido y desaparecían en la primera pasada del motor**, con el
+dry-run en verde, la idempotencia en 0 y el censo en 0 defectos. Medido el 2026-08-23:
+`conditional_formatting` de «Liquidación del Evento» = `[]` después del motor.
+
+Es el mismo patrón que la caché del frontmatter del blog: el cambio *parece* aplicado porque el
+resto de la hoja sí lo está, y ningún gate mira esa propiedad.
+
+Arreglo: **`motor.cf_eventos(ws, tipo)`**, con `ROJO`/`ROJO_TXT`, llamada al final de `aplicar`
+para los dos tipos. Vive en `motor.py` por el mismo motivo que los `ETIQ_EV_*`: es una regla que
+comparten el constructor y el motor, y dejarla sólo en el constructor es exactamente lo que
+produjo el defecto. Localiza las celdas por RÓTULO (nunca por coordenada) y delimita el cuerpo del
+registro por la fila `TOTALES`. El constructor la llama también, para que un fichero generado
+suelto ya salga completo. Comprobado tras el motor: 4 reglas vivas —`C22` ámbar, `C24` rojo,
+`H6:H30` ámbar y `A6:K30` rojo por `$K6="VENCIDO"`— más las dos de fila completada de los
+checklists.
+
+### 11.3 Lo que el constructor copia y lo que no
+
+La paleta NO se inventa: sale de medir `dl/kit-tareas-catering/08-apertura-cierre-negocio.xlsx` y
+el propio `09-apertura-cierre-caja.xlsx`. Título blanco 16 sobre `1A1A1A` combinado en toda la
+fila · banda dorada `FFD700` en la fila 2 · separador de 8 px en la 3 · cabecera `2D2D2D` blanca en
+la 4 · zebrado `F5F5F5`/blanco en las columnas fijas · `E8F5E9` en todo lo editable · borde `thin`
+`E0E0E0` · Calibri · alturas 40/28/8/28/24 · `freeze_panes` en la primera fila de datos · fila de
+firma dorada y pie gris de 9 pt. El esbozo usaba `2E3B4E` y `Nº`: ninguna de las dos cosas existe
+en esta familia, y `Nº` además deja la hoja fuera de `cabecera_checklist`.
+
+Dos invariantes que **`main.demo_liquidacion` da por ciertas** y que no se pueden mover sin tocar
+la demo en el mismo commit: el rótulo va en la columna **A o B** (`motor._buscar` sólo mira esas
+dos) y el importe en la **C** (la demo escribe `column=3`).
+
+### 11.4 Decisiones que el esbozo dejaba abiertas, ya tomadas
+
+- **«IVA medio aplicado»** se queda como celda verde (10 % por defecto) con «Total factura» por
+  FÓRMULA, como pedía §10.5: un total tecleado a mano es lo que hace que las dos hojas dejen de
+  cuadrar. La nota de la propia hoja remite a «Liquidación del Evento» para el desglose exacto.
+- **El aviso de las bases calla con la hoja en blanco** (`IF(suma=0,"",…)`). Con la comprobación
+  desnuda, un fichero recién abierto felicitaba por un cuadre de ceros.
+- **El ESTADO calla mientras no haya factura** (`IF(TOTAL<=0,"",…)`). Sin eso, una liquidación
+  vacía se anunciaba como «Cobrado». Es también lo que deja 27 fórmulas sin caché en el 09 (las 25
+  del registro vacío más estas dos), todas devolviendo `""` **por diseño** y con `fallos_pycel=0`.
+- **La columna «Medio de pago» del registro NO lleva desplegable.** El gate `dv_y_bio` censa las
+  listas de todo el producto y avisa si hay más de una (`aviso_dv_mezcladas`): un segundo
+  desplegable metería ruido permanente en el gate a cambio de nada.
+- **Los textos de las 24 tareas** están redactados para el cliente final (§10.5 los dejaba sin
+  revisar).
+
+### 11.5 Pendiente para el orquestador
+
+- **`_bloques_contador` dice «no aplica en tu local»** — texto de FAMILIA, presente en las
+  Instrucciones de los 11 ficheros de los 12 kits. En un kit de catering la palabra «local» chirría,
+  pero cambiarla aquí mueve los 11 ficheros de catering y, si se hace en general, los de los 12
+  kits. No se toca en esta tanda.
+- **`resend-access.ts` sigue diciendo «(v2.0)»** para catering y NO se ha cambiado a propósito:
+  `motor.version_line()` escribe «Versión 2.0 · agosto 2026» dentro de los 11 ficheros, así que
+  poner v2.1 en el correo dejaría el correo diciendo una versión y el entregable otra. El bump de
+  `version_line` es de familia y lo decide el orquestador.

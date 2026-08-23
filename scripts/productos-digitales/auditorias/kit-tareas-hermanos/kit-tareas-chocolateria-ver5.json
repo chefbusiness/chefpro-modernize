@@ -1,0 +1,102 @@
+{
+ "rol": "verificador independiente · kit-tareas-chocolateria · ver5 (motor 2.5 / m5 metadata)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-chocolateria/ NO tocado (git status limpio antes y después; sólo lecturas openpyxl.load_workbook contra dl/ para el digest) · sin git add/commit/stash/clean/mv · sin KIT_TAREAS_APPLY",
+ "comandos": [
+  "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador-choc python3 kit-tareas-v2_0/main.py --producto kit-tareas-chocolateria --dry-run --json .../kt-catering-09/kit-tareas-chocolateria-run1.json",
+  "repetido ÍNTEGRO en .../scratchpad/propio-verificador-choc-b (2.ª invocación de main.py INDEPENDIENTE, distinta del gate de idempotencia interno del propio script) → .../kt-catering-09/kit-tareas-chocolateria-run2.json",
+  ".../kt-catering-09/difprod-choc.py — usa main.digest/diff_digest (m3+m5) contra dl/kit-tareas-chocolateria, corrido una vez por cada carpeta de trabajo (run1 y run2) → diff-chocolateria.json y diff-chocolateria-run2.json, idénticos",
+  ".../kt-catering-09/verif-cache-subject-choc.py — 5 fórmulas al azar (seed fija) con data_only propio + comparación de formato de `subject` contra el representante dl/kit-tareas/01-apertura-cierre.xlsx"
+ ],
+
+ "1_exit_censo_idempotencia": {
+  "dryrun_exit_run1": 0,
+  "dryrun_exit_run2": 0,
+  "censo_fail_exit_run1": 0,
+  "censo_fail_exit_run2": 0,
+  "idempotencia_2a_pasada_interna": { "run1": 0, "run2": 0, "nota": "'diferencias 1.ª vs 2.ª pasada: 0' en las dos invocaciones (gate interno de main.py, digest m3)" },
+  "reproducibilidad_entre_invocaciones_independientes": "run1 (propio-verificador-choc) y run2 (propio-verificador-choc-b), desde producción limpia, dan el MISMO resultado: 11 ficheros con los mismos nombres, mismo recuento por fichero (01=41,02=41,03=47,04=44,05=48,06=40,08=32,09=27,BONUS=18 → 338), mismos 4 casos §6 con los mismos valores, mismo censo 0 defectos, mismo diff contra producción (9, sólo properties)."
+ },
+
+ "2_diff_completo_contra_produccion_digest_m3_m5": {
+  "metodologia": "main.digest()/diff_digest() (m3, celdas+formato+relleno+bloqueo+merges+DV+CF+área+protección+alturas, AMPLIADO por m5 con la pseudo-hoja «·propiedades·»: title/subject/creator/keywords/category/description) sobre CADA fichero, dl/kit-tareas-chocolateria (ANTES) vs carpeta de trabajo del dry-run (DESPUÉS). Corrido dos veces, una por cada invocación independiente del pipeline: mismo resultado.",
+  "ficheros_solo_produccion": [],
+  "ficheros_solo_dryrun": [],
+  "total_diferencias": 9,
+  "desglose_por_categoria": { "valor": 0, "dv": 0, "alturas": 0, "locked": 0, "properties": 9, "otros": 0 },
+  "detalle_properties_9_9_subject_v1.1_a_v2.0": [
+   { "fichero": "01-apertura-cierre.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "02-partidas-produccion.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "03-tareas-manager.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "04-tareas-perfiles.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "05-tareas-semanales-mensuales.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "06-eventos-temporada.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "07-plantilla-personalizable.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "BONUS-01-briefing-servicio.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" },
+   { "fichero": "BONUS-02-calendario-anual-tareas.xlsx", "campo": "subject", "antes": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1", "despues": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0" }
+  ],
+  "campos_no_tocados_en_ninguno_de_los_9": "title, creator, keywords, category, description — 0 cambios en los 6 - 1(subject) = 5 campos restantes de CAMPOS_PROPS, en los 9 ficheros",
+  "ficheros_08_y_09_alcance_molde": "08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx (▸, en alcance del molde) → 0 diferencias contra producción: ya llevaban subject v2.0 de una pasada anterior del motor 2.1-2.4; el motor 2.5 los reprocesa (4 y 7 cambios reportados en el paso 2/7) pero el resultado final es BYTE-A-BYTE idéntico al que ya está publicado — confirmado por el digest, no sólo por el informe de main.py.",
+  "coincide_con_lo_esperado": "SÍ — 9 diferencias, las 9 en properties!subject, v1.1→v2.0, en los 9 ficheros del molde P4/BONUS (01-07 + BONUS-01 + BONUS-02); mismo patrón que kit-tareas-heladeria (motor-2.5.json, prueba 2) y coherente con la nota del propio informe del motor: «chocolatería... 9... ficheros»."
+ },
+
+ "3_cache_de_formulas_5_al_azar": {
+  "metodologia": "seed fija (20260823) sobre el pool de 139 fórmulas nuevas detectadas en las hojas tocadas del dry-run (run1); 5 elegidas al azar, evaluadas con openpyxl data_only=True por MÍ, no reutilizando el informe de main.py",
+  "muestra": [
+   { "fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Registro Mensual", "celda": "F35", "formula": "=IF(SUM(C35:E35)=0,0,SUM(C35:E35)-B35)", "valor_cache": 0.0 },
+   { "fichero": "07-plantilla-personalizable.xlsx", "hoja": "Por Turno", "celda": "E30", "formula": "=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")", "valor_cache": 0.0 },
+   { "fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Registro Mensual", "celda": "F9", "formula": "=IF(SUM(C9:E9)=0,0,SUM(C9:E9)-B9)", "valor_cache": 0.0 },
+   { "fichero": "04-tareas-perfiles.xlsx", "hoja": "Chocolatero", "celda": "C28", "formula": "=COUNTIFS(B6:B27,\"?*\",E6:E27,\"✓\")-COUNTIFS(B6:B27,\"Tarea\",E6:E27,\"✓\")", "valor_cache": 0.0 },
+   { "fichero": "09-apertura-cierre-caja.xlsx", "hoja": "Registro Mensual", "celda": "F10", "formula": "=IF(SUM(C10:E10)=0,0,SUM(C10:E10)-B10)", "valor_cache": 0.0 }
+  ],
+  "las_5_tienen_valor_ninguna_es_None": true,
+  "nota": "los 5 valores caen en 0.0 (contadores sin marcas ✓ y filas de registro mensual vacías todavía): es un valor cacheado LEGÍTIMO, no ausencia de cache — distinto de None, que es lo que buscaba la comprobación. Contrastado además con el gate propio de main.py del mismo dry-run: 'con valor: 124 · fallos: 0' sobre el total de 124 fórmulas evaluables (139 candidatas − 15 de filas vacías por diseño que no se cuentan como 'formulas_nuevas' registradas)."
+ },
+
+ "4_formato_del_subject_vs_representante": {
+  "representante": "dl/kit-tareas/01-apertura-cierre.xlsx",
+  "subject_representante": "Kit de Tareas Recurrentes Pro · v2.0",
+  "subject_chocolateria_nuevo_01": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+  "patron_verificado": "^.+ · v\\d+\\.\\d+$ (texto libre + « · v» + versión con un punto)",
+  "representante_cumple_patron": true,
+  "chocolateria_cumple_patron": true,
+  "mismo_formato": true,
+  "title_no_es_lo_que_se_compara": "el `title` de cada fichero es propio de cada producto/hoja (representante: «Tareas de Apertura y Cierre — Restaurante Casual · Kit de Tareas Recurrentes Pro»; chocolatería: «01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate») — la comprobación pedida es de FORMATO del `subject` (sufijo « · vX.Y»), que sí coincide en los dos, y ninguno de los dos `title` cambió en el diff de la sección 2."
+ },
+
+ "5_gates_internos_del_dry_run_run1": {
+  "recuento_tareas_total": 338,
+  "recuento_por_fichero": { "01": 41, "02": 41, "03": 47, "04": 44, "05": 48, "06": 40, "08": 32, "09": 27, "BONUS": 18 },
+  "recuento_por_molde": { "checklist_molde▸": 59, "p4": 279 },
+  "metadata_incoherencias": 0,
+  "metadata_keywords_propias_avisos": 0,
+  "dv_incorrectas": 0,
+  "hojas_checklist_con_dv": 4,
+  "bio_en_instrucciones": "11/11",
+  "version_desfasada": 0,
+  "tpv_encender": "1 tarea (08-apertura-cierre-negocio.xlsx, fichero de negocio — 0 fuera de sitio)",
+  "cache_data_only_formulas_nuevas": { "con_valor": 124, "vacias_por_diseno": 0, "fallos": 0 },
+  "censo_entregables_fail": 0
+ },
+
+ "6_demostraciones_spec_6_pycel": [
+  { "caso": "arqueo-cuadra", "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56", "obtenido": 0, "ok": true },
+  { "caso": "arqueo-descuadra", "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56", "obtenido": 10, "ok": true },
+  { "caso": "contador-honesto", "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D28/F28", "obtenido": "14 de 14", "ok": true },
+  { "caso": "contador-p4-sin-rotulos", "ref": "01-apertura-cierre.xlsx:Apertura:C39/E39", "obtenido": "0.0 de 25.0", "ok": true }
+ ],
+
+ "conclusion": "El motor 2.5 (m5 metadata) sobre kit-tareas-chocolateria en dry-run es EXIT 0, IDÉNTICO en dos invocaciones independientes, con 0 diferencias de idempotencia interna. El diff COMPLETO (celdas, formato, relleno, bloqueo, merges, DV, CF, área, protección, alturas Y properties) contra astro-site/public/dl/kit-tareas-chocolateria da EXACTAMENTE 9 diferencias, las 9 en `subject` (v1.1→v2.0) de los 9 ficheros P4/BONUS que aún llevaban metadata v1.1; 0 en valor/DV/alturas/locked/otros, tal y como se esperaba. El cache de fórmulas sigue intacto (5/5 al azar con valor, ninguna None) y el `subject` nuevo sigue el MISMO patrón de formato («<texto> · vX.Y») que el representante. No bloquea: SIN HALLAZGOS.",
+
+ "pid": "kit-tareas-chocolateria",
+ "dryrun_exit": 0,
+ "censo_exit": 0,
+ "idempotencia": 0,
+ "diff_vs_produccion": { "valor": 0, "dv": 0, "alturas": 0, "locked": 0, "properties": 9, "otros": 0 },
+ "casos_ok": 4,
+ "casos_total": 4,
+ "recuento_gate": 338,
+ "hallazgos_nuevos": [],
+ "bloquea_real": false,
+ "fichero_json": "scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-chocolateria-ver5.json"
+}

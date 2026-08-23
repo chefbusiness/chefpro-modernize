@@ -1,0 +1,70 @@
+{
+ "rol": "constructor del nuevo 09 de kit-tareas-catering + capa de producto (motor 2.6 / m8)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/** NO tocado (git status -- astro-site/public/dl: 0 cambios) · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean/mv",
+ "ficheros_codigo": [
+  "scripts/productos-digitales/kit-tareas-v2_0/construir_09_catering.py — REESCRITO. Deja de ser el esbozo: las 5 hojas con la paleta REAL de la familia (medida sobre dl/kit-tareas-catering/08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx), 24 tareas redactadas para el cliente final, liquidación con IFERROR y contrato de columnas con demo_liquidacion, registro de 25 eventos + TOTALES + recuento de pendientes/vencidos, sección opcional de barra en efectivo con billetes/monedas y DV «✓,—,N/A» propia.",
+  "scripts/productos-digitales/kit-tareas-v2_0/motor.py — m8: `ROJO`/`ROJO_TXT` y `cf_eventos(ws, tipo)` nuevos (bloque de constantes EV_*), y llamada al FINAL de `aplicar` para los tipos 'liquidacion' y 'registro_eventos'.",
+  "scripts/productos-digitales/kit-tareas-v2_0/main.py — `sustituir_09_catering(carpeta, pid)` nueva, llamada antes de `ficheros_de` y de `motor.contexto`; el informe publica `sustitucion_09_catering`.",
+  "scripts/productos-digitales/kit-tareas-v2-SPEC.md — §11 nueva (motor 2.6): 11.1 el paso en main.py · 11.2 el defecto m8 · 11.3 paleta y contrato de columnas · 11.4 decisiones cerradas · 11.5 pendiente del orquestador."
+ ],
+ "defecto_cazado_m8": {
+  "que": "`motor.aplicar` VACÍA `ws.conditional_formatting` de todas las hojas reconocidas (para ser idempotente) y sólo lo reconstruía para los checklists y para el arqueo de mostrador. Las dos hojas nuevas del modelo por eventos entraban en el vaciado y no salían de ninguna reconstrucción.",
+  "consecuencia": "El ámbar del PENDIENTE DE COBRO y el rojo del VENCIDO existían en el fichero recién construido y DESAPARECÍAN en la primera pasada del motor. El 09 se habría publicado sin un solo aviso de color — que es justo lo que el fichero vende.",
+  "por_que_no_lo_cantaba_ningun_gate": "dry-run exit 0, idempotencia 0, censo --fail 0 defectos, §6 4/4. Ningún gate mira el formato condicional. Mismo patrón que la caché del frontmatter del blog: el cambio parece aplicado porque el resto de la hoja sí lo está.",
+  "medida": "conditional_formatting de «Liquidación del Evento» = [] después del motor (2026-08-23).",
+  "arreglo": "`motor.cf_eventos(ws, tipo)` — vive en motor.py por el mismo motivo que los ETIQ_EV_*: es una regla compartida entre el constructor y el motor, y dejarla sólo en el constructor es exactamente lo que produjo el defecto. Localiza por RÓTULO, delimita el cuerpo del registro por la fila TOTALES, y la llaman los dos.",
+  "verificado_despues": "4 reglas vivas tras el motor: 'Liquidación del Evento'!C22 ámbar (>0,01) · C24 rojo (=\"VENCIDO\") · 'Registro de Eventos'!H6:H30 ámbar · A6:K30 rojo por $K6=\"VENCIDO\"."
+ },
+ "pruebas": [
+  "kit-tareas-catering (dry-run de récord, SIN --origen) — exit 0 · 11 ficheros · idempotencia 0 diferencias · censo-entregables --fail 0 defectos · §6 4/4 (liquidacion-cuadra · liquidacion-vencida · contador-honesto · contador-p4-sin-rotulos) · DV «✓,—,N/A» 4 hojas ▸ + P4, 0 incorrectas · bio 11/11 · metadata 0 incoherencias · recuento 347 tareas (▸ 57 + P4 290; el 09 entrega 24).",
+  "§6 con pycel sobre 09-cobros-facturacion-eventos.xlsx:'Liquidación del Evento'!C22/C24 — base 10 % 8.000 € + base 21 % 2.000 € → IVA 800 + 420 → TOTAL FACTURA 11.220 €; anticipo 4.000 € → saldo 7.220 €. `liquidacion-cuadra` (cobrado 7.220, vencimiento hoy+30) → PENDIENTE 0 / ESTADO «Cobrado». `liquidacion-vencida` (cobrado 0, vencimiento hoy−10) → PENDIENTE 7.220 / ESTADO «VENCIDO».",
+  "«Registro de Eventos» con pycel (3 eventos sembrados, IVA medio C3 = 10 %): fila 6 base 9.000 → total 9.900, anticipo 3.000, cobrado 6.000 → pendiente 900, vencimiento hoy−40 → VENCIDO. Fila 7 base 21.000 → total 23.100, anticipo 8.000 → pendiente 15.100, vencimiento hoy+20 → Pendiente. Fila 8 base 4.000 → total 4.400, anticipo 1.500 → pendiente 2.900, vencimiento hoy−15 → VENCIDO. TOTALES fila 31: base 34.000 · total 37.400 · anticipo 12.500 · cobrado 6.000 · pendiente 18.900 (= 900+15.100+2.900). Recuentos: PENDIENTES 1 · VENCIDOS 2.",
+  "LAS DOS ENTRADAS del paso de sustitución dan el MISMO fichero: (a) carpeta con `09-apertura-cierre-caja.xlsx` → construye el nuevo y borra el viejo; (b) carpeta ya renombrada a mano, simulando el `git mv` del orquestador → reconstruye el nuevo (el `git mv` sólo renombra: por dentro seguía siendo el arqueo de la v1.1). **0 diferencias** entre los dos resultados en los 11 ficheros, medidas con main.digest/diff_digest. Las dos pasadas exit 0 y TODO VERDE.",
+  "REGRESIÓN del representante (`--producto kit-tareas`): exit 0, TODO VERDE y **DIFF CONTRA PRODUCCIÓN = 0**. m8 no toca ningún kit de mostrador: `cf_eventos` sólo se llama para los tipos 'liquidacion' y 'registro_eventos', que sólo existen en catering.",
+  "Estructura del 09 tras el motor: «Antes del Evento» y «Después del Evento» con cabecera «# | Tarea | Responsable | Cuándo | ✓ Completada | Firma | Notas» (hr=4), 12 tareas + 5 filas libres dentro del rango, contador honesto `=COUNTIFS(B5:B21,\"?*\",E5:E21,\"✓\")` / `=COUNTIF(B5:B21,\"?*\")-COUNTIF(E5:E21,\"N/A\")`, «Cuándo» INTACTO (D-15/D-7/D-3/D-1 y D+0/D+1/D+7/D+30), DV correcta, protegidas, A4 apaisado, print_area A1:G26. «Liquidación del Evento» en A4 vertical (A1:D51) y «Registro de Eventos» apaisado (A1:K37), las dos protegidas con sus 11 + 200 celdas verdes desbloqueadas.",
+  "Metadata del 09: title «Cobros y Facturación por Evento — Catering / Eventos · Kit de Tareas Recurrentes Pro» · subject «Kit de Tareas Recurrentes Pro · v2.0» · keywords «kit tareas catering, AI Chef Pro». Instrucciones con bio, «Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-catering» y las líneas de m6 («la FACTURACIÓN…», «local → eventos», «Estás en 09-…»).",
+  "Vocabulario del 09: 0 ocurrencias de «turno de caja», «Z del TPV» y «el local». «arqueo de caja» aparece 1 vez y es una NEGACIÓN («No es un arqueo de caja: una empresa de catering no tiene mostrador ni turno de TPV»). «Caja» sólo en la sección opcional de la barra en efectivo.",
+  "Sintaxis de los 6 .ts/.tsx con `typescript.transpileModule` (node_modules/typescript, reportDiagnostics): 0 diagnósticos en get-download-urls.ts, KitTareasCateringDashboard.tsx, kit-tareas-catering.ts, productos-changelog.ts, productos-digitales-config.ts y resend-access.ts. NO se ha lanzado ningún build.",
+  "Térmica: todo en SERIE, `istats cpu temp` antes y después de cada python. Máximo registrado 45,06 °C (umbral 65). Sin builds, sin Playwright, sin paralelismo."
+ ],
+ "decisiones": [
+  "El paso de sustitución CONSTRUYE SIEMPRE, no sólo cuando encuentra el nombre viejo. `git mv` sólo renombra: saltárselo «porque el nombre nuevo ya está» publicaría el kit con el nombre bueno y el arqueo de cajón dentro, y `papel_del_fichero` lo etiquetaría como 'caja'.",
+  "«IVA medio aplicado» se queda como celda verde (10 % por defecto) con «Total factura» por FÓRMULA — la firma que §10.5 dejaba abierta. Un total tecleado a mano es justo lo que hace que la liquidación y el registro dejen de cuadrar; la nota de la hoja remite a «Liquidación del Evento» para el desglose exacto de cada factura.",
+  "El aviso de las bases CALLA con la hoja en blanco (`IF(suma=0,\"\",…)`) y el ESTADO calla mientras no haya factura (`IF(TOTAL<=0,\"\",…)`). Sin eso, un fichero recién abierto felicitaba por un cuadre de ceros y se anunciaba como «Cobrado» sin haber facturado nada.",
+  "La columna «Medio de pago» del registro NO lleva desplegable: el gate `dv_y_bio` censa las listas de todo el producto y avisa (`aviso_dv_mezcladas`) si hay más de una. Un segundo desplegable metería ruido permanente en el gate a cambio de nada.",
+  "La fila ENTERA del registro se tiñe de rojo cuando el estado es VENCIDO (no sólo la celda): en una tabla de 25 líneas, un color en una sola celda se pierde justo cuando más falta hace verlo.",
+  "El rojo es `F8D7DA`/`721C24`, los hermanos del ámbar `FFF3CD` que ya estaba en motor.py, para no meter un color de otra familia.",
+  "`resend-access.ts` NO se ha tocado: no menciona «caja» y su «(v2.0)» es coherente con lo que `motor.version_line()` escribe DENTRO de los 11 ficheros. Ponerle v2.1 dejaría el correo diciendo una versión y el entregable otra."
+ ],
+ "capa_producto": [
+  "netlify/functions/get-download-urls.ts:157 — 'apertura-caja' de kit-tareas-catering → '/dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx' (clave conservada)",
+  "netlify/functions/get-download-urls.ts:490 — 'kit-tareas-catering__apertura-caja' → mismo destino",
+  "src/pages/KitTareasCateringDashboard.tsx:26 — tarjeta: «Apertura y Cierre de Caja» → «Cobros y Facturación por Evento»; desc → «Anticipos, liquidación con IVA 10/21 %, saldo pendiente y registro de eventos.»",
+  "astro-site/src/data/productos/tareas/kit-tareas-catering.ts:18 · :27 · :89 · :107 — 346 → 347 tareas (gates.recuento_tareas del dry-run) y «caja»/«arqueo de caja» → «cobros y facturación por evento»",
+  "astro-site/src/data/productos/tareas/kit-tareas-catering.ts:93 — checkItem → «Apertura/cierre de negocio y cobros por evento: anticipo, liquidación y saldo»",
+  "astro-site/src/data/productos/tareas/kit-tareas-catering.ts:151-152 — tarjeta «Arqueo y Registro de Caja» → «Cobros y Facturación por Evento», desc reescrita (anticipo 30-50 %, IVA 10/21 %, PENDIENTE en ámbar, ESTADO VENCIDO, registro de 25 eventos)",
+  "astro-site/src/data/productos/tareas/kit-tareas-catering.ts:280 — item → «Cobros por evento: anticipos, liquidación con IVA 10/21 % y saldos vencidos»",
+  "src/data/productos-changelog.ts:429 — version del producto 2.0 → 2.1",
+  "src/data/productos-changelog.ts:433-441 — entrada 2.1 · 2026-08-23 «El 09 pasa de caja de mostrador a cobros y facturación por evento», 6 cambios, encima de la 2.0",
+  "src/data/productos-digitales-config.ts:328 y :1252 — mismas dos rutas (FUERA del encargo: 0 importadores hoy, pero su cabecera se declara «single source of truth» y auditorías previas ya marcaron esta divergencia como defecto)",
+  "astro-site/public/_redirects:8 — /dl/kit-tareas-catering/09-apertura-cierre-caja.xlsx → /dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx 301, en la CABECERA del fichero (antes de las dos «# Genérica»)",
+  "netlify/functions/resend-access.ts — SIN CAMBIOS: no menciona «caja» (ver decisiones)"
+ ],
+ "pendiente": [
+  "ORQUESTADOR · el `git mv` de astro-site/public/dl/kit-tareas-catering/09-apertura-cierre-caja.xlsx → 09-cobros-facturacion-eventos.xlsx y la ejecución real con KIT_TAREAS_APPLY=1. main.py funciona igual antes y después del mv (demostrado, 0 diferencias).",
+  "`motor._bloques_contador` dice «no aplica en tu LOCAL» — texto de FAMILIA presente en las Instrucciones de los 11 ficheros de los 12 kits. En catering la palabra chirría, pero cambiarla mueve los 11 ficheros de este kit y, en general, los de los 12. No se toca en esta tanda.",
+  "`resend-access.ts` y `motor.version_line()` siguen en «v2.0» mientras el changelog del producto dice 2.1. El bump de `version_line` es de familia (movería los 11 ficheros de cada kit) y lo decide el orquestador.",
+  "27 de las 110 fórmulas del 09 quedan sin valor cacheado, todas devolviendo «» POR DISEÑO (los 25 ESTADO de las filas vacías del registro + el aviso de bases y el ESTADO de una liquidación en blanco). `fallos_pycel = 0`.",
+  "§9.5 («caja» pedida FUERA del fichero 09 en hamburguesería, pizzería, restaurante-creativo y heladería) sigue abierto: esta tanda no lo toca.",
+  "Los otros kits P4 (chocolatería, hotel, restaurante-creativo) siguen esperando su dry-run con el motor 2.6 antes de aplicar."
+ ],
+ "artefactos": {
+  "informe_dry_run": "scratchpad/kt-catering-09/catering-cont.json",
+  "informe_post_git_mv": "scratchpad/kt-catering-09/catering-postmv.json",
+  "informe_regresion_representante": "scratchpad/kt-catering-09/kit-tareas.json",
+  "demo_registro_eventos": "scratchpad/kt-catering-09/demo.py + demo-reg.xlsx",
+  "comprobador_typescript": "scratchpad/kt-catering-09/tscheck.js (typescript.transpileModule)",
+  "09_resultante": "scratchpad/propio-cont/dryrun-kt/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx"
+ }
+}

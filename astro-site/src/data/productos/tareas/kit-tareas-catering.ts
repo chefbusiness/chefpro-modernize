@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos | AI Chef Pro',
     description:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 346 tareas ya escritas — producción off-site, transporte, apertura/cierre de negocio, caja, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
     keywords:
       'checklist catering, tareas evento, checklist montaje evento, tareas catering bodas, control logística catering, plantilla tareas evento, checklist desmontaje, inventario catering, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-catering.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos',
     productDescription:
-      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 346 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, arqueo de caja, montaje, servicio, desmontaje y post-evento.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 347 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, cobros y facturación por evento (anticipos, liquidación y saldos), montaje, servicio, desmontaje y post-evento.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -86,11 +86,11 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Catering / Eventos — Del Obrador al Venue',
     description:
-      '9 plantillas + 2 bonus (11 ficheros) en Excel con 346 tareas de catering y eventos ya escritas: producción off-site, transporte, apertura/cierre de negocio, caja, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 347 tareas de catering y eventos ya escritas: producción off-site, transporte, apertura/cierre de negocio, cobros y facturación por evento, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción off-site: mise en place, elaboraciones, empaquetado',
       'Transporte y logística: cadena de frío, carga, descarga',
-      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
+      'Apertura/cierre de negocio y cobros por evento: anticipo, liquidación y saldo',
       'Montaje y desmontaje del venue: sala, cocina, barra',
       'Tipos de evento: bodas, corporativos, cocktails, outdoor',
       'Plantilla personalizable + briefing pre-evento',
@@ -104,7 +104,7 @@ const data: KitTareasData = {
     countGold: '9',
     headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      '346 tareas de catering y eventos ya escritas y repartidas por fase, zona y perfil. Ajusta a tu operación, imprime y delega.',
+      '347 tareas de catering y eventos ya escritas y repartidas por fase, zona y perfil. Ajusta a tu operación, imprime y delega.',
     templates: [
       {
         icon: 'ChefHat',
@@ -148,8 +148,8 @@ const data: KitTareasData = {
       },
       {
         icon: 'Wallet',
-        title: 'Arqueo y Registro de Caja',
-        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula.',
+        title: 'Cobros y Facturación por Evento',
+        desc: 'El dinero de cada evento, no un cajón de mostrador: checklist de lo que hay que cerrar antes (presupuesto firmado, anticipo del 30-50 % cobrado, datos de facturación) y después (comensales reales, extras, factura, saldo). Liquidación con IVA 10/21 %, total, saldo tras anticipo y PENDIENTE DE COBRO en ámbar, con ESTADO automático que pasa a VENCIDO al llegar la fecha. Registro de 25 eventos con totales y recuento de vencidos.',
       },
       {
         icon: 'Megaphone',
@@ -277,7 +277,7 @@ const data: KitTareasData = {
     items: [
       'Producción off-site: planificación, mise en place, empaquetado',
       'Transporte: cadena de frío, carga, descarga, APPCC',
-      'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
+      'Cobros por evento: anticipos, liquidación con IVA 10/21 % y saldos vencidos',
       'Montaje: cocina temporal, sala, buffet, estaciones de acción',
       'Tareas del event manager: semana previa + día del evento',
       'Tareas por perfil: chef, maître, camarero, barman',

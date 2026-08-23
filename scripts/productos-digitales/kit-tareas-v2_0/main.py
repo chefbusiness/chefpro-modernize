@@ -92,6 +92,19 @@ def _orden_coord(coord):
     return (1, m.group(1).rjust(3), int(m.group(2)))
 
 
+#: m5 — clave del pseudo-«hoja» que lleva las PROPIEDADES del documento en la
+#: huella. Sin ellas el digest no podía demostrar ni la idempotencia de la
+#: metadata ni el diff contra producción de un cambio que es SÓLO de metadata
+#: (los 9 ficheros P4/BONUS de heladería): el fichero salía con «0 diferencias»
+#: mientras su `subject` cambiaba de v1.1 a v2.0. Va con «·» a los lados para
+#: que no pueda chocar con el título de una hoja real de Excel.
+CLAVE_PROPS = '·propiedades·'
+#: `lastModifiedBy`, `created` y `modified` quedan fuera a propósito: cambian en
+#: cada guardado y convertirían cualquier diff en ruido.
+CAMPOS_PROPS = ('title', 'subject', 'creator', 'keywords', 'category',
+                'description')
+
+
 def digest(path):
     """Huella comparable (valores, formato, relleno, bloqueo, merges, DV, CF).
 
@@ -139,6 +152,8 @@ def digest(path):
             'alturas': {k: v.height for k, v in ws.row_dimensions.items()
                         if v.height},
         }
+    fuera[CLAVE_PROPS] = {'props': {k: getattr(wb.properties, k, None)
+                                    for k in CAMPOS_PROPS}}
     return fuera
 
 
@@ -155,6 +170,13 @@ def diff_digest(a, b, fichero):
     for hoja in sorted(set(a) | set(b)):
         if hoja not in a or hoja not in b:
             fuera.append(f'{fichero}:{hoja}: hoja sólo en una pasada')
+            continue
+        if hoja == CLAVE_PROPS:                                       # m5
+            pa, pb = a[hoja]['props'], b[hoja]['props']
+            for k in sorted(set(pa) | set(pb)):
+                if pa.get(k) != pb.get(k):
+                    fuera.append(f'{fichero}:propiedades!{k}: '
+                                 f'{pa.get(k)!r} → {pb.get(k)!r}')
             continue
         ha, hb = a[hoja], b[hoja]
         for k in ('merges', 'dv', 'cf', 'area', 'prot'):
@@ -184,6 +206,65 @@ def diff_digest(a, b, fichero):
 # ==========================================================================
 def ficheros_de(carpeta):
     return sorted(f for f in os.listdir(carpeta) if f.endswith('.xlsx'))
+
+
+# --------------------------------------------------------------------------
+# m6/m8 — sustitución del 09 de catering
+# --------------------------------------------------------------------------
+def sustituir_09_catering(carpeta, pid):
+    """Reconstruye el fichero del dinero de catering ANTES del contexto.
+
+    Diseño firmado por John (2026-08-23): una empresa de catering no tiene
+    mostrador, así que `09-apertura-cierre-caja.xlsx` deja de existir y en su
+    lugar va `09-cobros-facturacion-eventos.xlsx`, que factura por EVENTO.
+
+    Este paso corre sobre la COPIA DE TRABAJO y hace dos cosas, en este orden:
+
+      1. Construye el 09 nuevo desde cero con `construir_09_catering`. Se
+         construye SIEMPRE, esté o no ya el nombre nuevo en la carpeta, y aquí
+         está la sutileza que hace que el paso sea idempotente **y** correcto
+         después del `git mv` del orquestador: `git mv` sólo RENOMBRA, no
+         cambia el contenido, así que un fichero que ya se llame
+         `09-cobros-facturacion-eventos.xlsx` puede seguir siendo por dentro el
+         arqueo de cajón de la v1.1. Si el paso se saltara «porque el nombre
+         nuevo ya está», el kit se publicaría con el nombre bueno y el fichero
+         viejo dentro, y `papel_del_fichero` lo etiquetaría como 'caja'.
+      2. Borra `09-apertura-cierre-caja.xlsx` de la copia si sigue ahí. En
+         producción el `git mv` lo hace el orquestador —este script no toca
+         `git`—, pero `main.py` tiene que funcionar en los dos estados del
+         repositorio: antes del `git mv` (está el viejo) y después (está sólo
+         el nuevo).
+
+    Corre ANTES de `motor.contexto`, que es lo que lee la carpeta para decidir
+    papeles y `modelo_caja`: si corriera después, el contexto se habría
+    calculado sobre el arqueo de mostrador.
+    """
+    import construir_09_catering as c09
+    if pid != c09.PRODUCTO:
+        return None
+    nuevo = os.path.join(carpeta, c09.NOMBRE_NUEVO)
+    viejo = os.path.join(carpeta, c09.NOMBRE_VIEJO)
+    habia_viejo = os.path.isfile(viejo)
+    habia_nuevo = os.path.isfile(nuevo)
+    if not (habia_viejo or habia_nuevo):
+        # Ni el uno ni el otro: el kit no trae fichero del dinero. No se
+        # inventa uno en silencio — se avisa y decide el orquestador.
+        log('  ⚠ catering: no está ni {} ni {}; no se construye nada'
+            .format(c09.NOMBRE_VIEJO, c09.NOMBRE_NUEVO))
+        return None
+    # NO se le pasa `motor.CTX`: este paso corre ANTES de `motor.contexto`, así
+    # que el global todavía trae los valores por defecto (o los del kit
+    # anterior si alguien encadenara dos productos en el mismo proceso). Lo
+    # único que necesita el constructor es el identificador del producto; el
+    # `subject`, el `title` y las `keywords` definitivos los pone
+    # `motor.set_metadata` desde `procesar`, ya con el contexto real.
+    c09.construir(nuevo, {'producto': pid})
+    if habia_viejo:
+        os.remove(viejo)
+    return {'construido': c09.NOMBRE_NUEVO,
+            'borrado': c09.NOMBRE_VIEJO if habia_viejo else None,
+            'estado_previo': ('09 viejo' if habia_viejo
+                              else '09 nuevo (reconstruido)')}
 
 
 def procesar(carpeta, fname, etapas, contenido, informe):
@@ -216,6 +297,17 @@ def procesar(carpeta, fname, etapas, contenido, informe):
             cambios += [c for c in extra if c not in cambios]
     if 'motor' in etapas and estado:
         motor.cerrar(wb, fname, estado, cambios)
+    # m5 — la metadata se fija para TODOS los ficheros del producto, estén o no
+    # en alcance del molde ▸. Vivía dentro de `motor.cerrar`, que sale antes
+    # cuando `estado` es None, y por eso los ficheros del molde P4 y los dos
+    # BONUS de los cinco kits con alcance «sólo 08/09» se publicaban con
+    # `subject` «… · v1.1» dentro de un producto v2.0 — guardados (reciben
+    # desplegable, contador y bio) pero sin tocar sus propiedades. Va DESPUÉS de
+    # `cerrar` porque el título sale de la hoja «Instrucciones», que `cerrar`
+    # reescribe, y ANTES de calcular `guardado` para que un fichero cuyo único
+    # cambio sea la metadata también se guarde.
+    if 'motor' in etapas:
+        motor.set_metadata(wb, fname, cambios)
     registro = list(motor.REGISTRO)
     guardado = bool(estado or cambios)
     if guardado:
@@ -287,12 +379,116 @@ def _copia(carpeta, fname, demos, etiqueta):
     return dst
 
 
+def demo_liquidacion(carpeta, demos):
+    """§6 (m6) — el arqueo no se puede demostrar en un kit que no tiene cajón.
+
+    En el modelo POR EVENTOS la cuenta que sostiene el fichero del dinero es
+    PENDIENTE = TOTAL FACTURA − anticipo − cobrado, y el ESTADO que sale de
+    ella. Se demuestran los dos casos que importan y que un cliente distingue
+    de un vistazo:
+
+      · «liquidacion-cuadra»  — se cobra todo el saldo → PENDIENTE 0 y
+        ESTADO «Cobrado».
+      · «liquidacion-vencida» — no se cobra nada y el vencimiento ya pasó →
+        PENDIENTE = saldo y ESTADO «VENCIDO», que es el aviso de reclamar.
+
+    Las celdas se localizan por su RÓTULO (las constantes `ETIQ_EV_*` de
+    motor.py), nunca por coordenada: el constructor puede mover una fila y la
+    demostración tiene que seguir midiendo lo mismo.
+    """
+    from pycel import ExcelCompiler
+    fname = motor.CTX.get('f_caja')
+    if not fname:
+        return []
+    ruta = os.path.join(carpeta, fname)
+    wb0 = openpyxl.load_workbook(ruta)
+    hoja = None
+    for ws in wb0.worksheets:
+        if motor.fila_liquidacion(ws):
+            hoja = ws.title
+            break
+    if hoja is None:
+        return [{'caso': 'liquidacion-cuadra', 'ref': fname,
+                 'entradas': 'ninguna', 'esperado': 'hoja de liquidación',
+                 'obtenido': 'el fichero de COBROS no tiene ninguna hoja con '
+                             '«TOTAL FACTURA» + «PENDIENTE DE COBRO»',
+                 'ok': False}]
+    ws0 = wb0[hoja]
+
+    def fila(etq):
+        return (motor._buscar(ws0, etq, col=1)
+                or motor._buscar(ws0, etq, col=2))
+
+    filas = {k: fila(v) for k, v in (
+        ('presupuesto', motor.ETIQ_EV_PRESUPUESTO),
+        ('extras', motor.ETIQ_EV_EXTRAS),
+        ('base10', motor.ETIQ_EV_BASE10), ('base21', motor.ETIQ_EV_BASE21),
+        ('total', motor.ETIQ_EV_TOTAL), ('anticipo', motor.ETIQ_EV_ANTICIPO),
+        ('saldo', motor.ETIQ_EV_SALDO), ('cobrado', motor.ETIQ_EV_COBRADO),
+        ('pendiente', motor.ETIQ_EV_PENDIENTE),
+        ('vencimiento', motor.ETIQ_EV_VENCIMIENTO),
+        ('estado', motor.ETIQ_EV_ESTADO))}
+    faltan = sorted(k for k, v in filas.items() if not v)
+    if faltan:
+        return [{'caso': 'liquidacion-cuadra', 'ref': f'{fname}:{hoja}',
+                 'entradas': 'ninguna', 'esperado': 'los 11 rótulos del molde',
+                 'obtenido': 'faltan rótulos: ' + ', '.join(faltan),
+                 'ok': False}]
+
+    hoy = datetime.date.today()
+    # base 10 % = 8.000 y base 21 % = 2.000 → 8.800 + 2.420 = 11.220 €.
+    # Anticipo del 40 % sobre la base (4.000) → saldo 7.220 €.
+    casos = []
+    for etiqueta, cobrado, venc, esp_pend, esp_estado in (
+            ('liquidacion-cuadra', 7220,
+             hoy + datetime.timedelta(days=30), 0, motor.EV_COBRADO),
+            ('liquidacion-vencida', 0,
+             hoy - datetime.timedelta(days=10), 7220, motor.EV_VENCIDO)):
+        dst = _copia(carpeta, fname, demos, etiqueta)
+        wb = openpyxl.load_workbook(dst)
+        ws = wb[hoja]
+        for clave, valor in (('presupuesto', 10000), ('extras', 0),
+                             ('base10', 8000), ('base21', 2000),
+                             ('anticipo', 4000), ('cobrado', cobrado)):
+            ws.cell(row=filas[clave], column=3).value = valor
+        ws.cell(row=filas['vencimiento'], column=3).value = venc
+        wb.save(dst)
+        xl = ExcelCompiler(filename=dst)
+        pend = _ev(xl, "'{}'!C{}".format(hoja, filas['pendiente']))
+        estado = _ev(xl, "'{}'!C{}".format(hoja, filas['estado']))
+        casos.append({
+            'caso': etiqueta,
+            'ref': '{}:{}:C{}/C{}'.format(fname, hoja, filas['pendiente'],
+                                          filas['estado']),
+            'entradas': {'presupuesto (base)': 10000, 'extras': 0,
+                         'base 10 %': 8000, 'base 21 %': 2000,
+                         'anticipo cobrado': 4000,
+                         'cobrado tras el evento': cobrado,
+                         'vencimiento': venc.isoformat(),
+                         'hoy': hoy.isoformat()},
+            'total_factura': _ev(xl, "'{}'!C{}".format(hoja, filas['total'])),
+            'saldo_tras_anticipo': _ev(xl, "'{}'!C{}".format(hoja,
+                                                            filas['saldo'])),
+            'esperado': '{} / {}'.format(esp_pend, esp_estado),
+            'obtenido': '{} / {}'.format(pend, estado),
+            'ok': (isinstance(pend, (int, float))
+                   and abs(pend - esp_pend) <= motor.EV_TOLERANCIA
+                   and estado == esp_estado),
+            'copia': dst})
+    return casos
+
+
 def demo_arqueo(carpeta, demos):
     """§6 — fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800 → 0."""
     from pycel import ExcelCompiler
     fname = motor.CTX.get('f_caja')
     if not fname:
         return []
+    # m6 — en el modelo POR EVENTOS no hay fondo, ni cajón, ni Z del TPV: la
+    # demostración exigible es otra. Se DELEGA en vez de devolver [] para que
+    # `fallos` siga cazando «§6: no se pudo ejecutar ninguna demostración».
+    if motor.es_modelo_eventos():
+        return demo_liquidacion(carpeta, demos)
     casos = []
     for etiqueta, z, esperado in (('arqueo-cuadra', 1800, 0),
                                   ('arqueo-descuadra', 1790, 10)):
@@ -547,7 +743,16 @@ def gate_tpv(carpeta, nombres):
                 if n == motor.CTX.get('f_negocio'):
                     papel = 'negocio (hito legítimo)'
                 elif n == motor.CTX.get('f_caja'):
-                    papel = 'caja (T-02 NO aplicado: revisar)'
+                    # m6 — T-02 («el TPV se enciende UNA vez, en el fichero de
+                    # negocio») es una regla del modelo de MOSTRADOR: nace de
+                    # que el 08 y el 09 encendían el mismo TPV con dos horas
+                    # distintas. En el modelo POR EVENTOS el fichero del dinero
+                    # no abre ningún turno de TPV, así que el gate no le exige
+                    # nada; si alguien escribe ahí una tarea de encender un TPV
+                    # (la barra opcional en efectivo), se anota y se deja.
+                    papel = ('cobros (modelo por eventos: T-02 no aplica)'
+                             if motor.es_modelo_eventos()
+                             else 'caja (T-02 NO aplicado: revisar)')
                 elif n == motor.CTX.get('f_areas'):
                     papel = 'areas (otra capa: se deja)'
                 else:
@@ -558,6 +763,44 @@ def gate_tpv(carpeta, nombres):
             'fuera_del_fichero_de_negocio': [
                 d['ref'] for d in encendidos
                 if not d['papel'].startswith('negocio')]}
+
+
+def gate_metadata(carpeta, nombres):
+    """m5 — `subject`, `title`, `creator` y `keywords` en TODOS los ficheros.
+
+    Sin este gate, m5 no sería auditable: el defecto que corrige (26 ficheros
+    del molde P4 y de los BONUS publicándose con `subject` «… · v1.1» dentro de
+    un producto v2.0) vivió cuatro tandas precisamente porque ningún gate miraba
+    las propiedades de los ficheros fuera del molde ▸ — el censo mira las hojas.
+    """
+    esperado_sub = '{} · v2.0'.format(
+        motor.CTX.get('sufijo') or 'Kit de Tareas Recurrentes Pro')
+    esperado_kw = motor.keywords_del_kit()
+    mal, detalle, propias = [], [], []
+    for n in nombres:
+        p = openpyxl.load_workbook(os.path.join(carpeta, n)).properties
+        detalle.append({'fichero': n, 'title': p.title, 'subject': p.subject,
+                        'creator': p.creator, 'keywords': p.keywords})
+        if p.subject != esperado_sub:
+            mal.append(f'{n}: subject = {p.subject!r} (esperado '
+                       f'{esperado_sub!r})')
+        if p.creator != 'AI Chef Pro':
+            mal.append(f'{n}: creator = {p.creator!r}')
+        if not motor.keywords_ok(p.keywords):
+            mal.append(f'{n}: keywords = {p.keywords!r} — no sigue la '
+                       f'convención «…, {motor.COLA_KEYWORDS}»')
+        elif p.keywords != esperado_kw:
+            # AVISO, no fallo: `kit-tareas-pasteleria` lleva keywords escritas
+            # a mano, más ricas que las derivadas. Se respetan y se anotan.
+            propias.append(f'{n}: keywords propias {p.keywords!r} '
+                           f'(el derivado sería {esperado_kw!r}) — se respetan')
+        if not p.title or not p.title.endswith(
+                ' · ' + (motor.CTX.get('sufijo') or '')):
+            mal.append(f'{n}: title = {p.title!r} — no acaba en « · '
+                       f'{motor.CTX.get("sufijo")}»')
+    return {'subject_esperado': esperado_sub, 'keywords_esperado': esperado_kw,
+            'incoherentes': mal, 'keywords_propias': propias,
+            'por_fichero': detalle}
 
 
 def gate_dv_y_bio(carpeta, nombres):
@@ -722,12 +965,22 @@ def main():
     ap.add_argument('--solo', default='motor,contenido',
                     help='etapas: motor, contenido')
     ap.add_argument('--json', default=None)
+    # m7 — carpeta de origen alternativa. Sirve para probar el motor contra un
+    # producto que TODAVÍA no está en `dl/` (el 09 nuevo de catering se
+    # construye fuera y sustituye al 09 viejo) sin tener que tocar `dl/**`, que
+    # la SPEC declara intocable. Sólo con --dry-run: con --origen y sin
+    # --dry-run el script escribiría en la carpeta que le pasen, que es
+    # exactamente lo que la regla dura impide.
+    ap.add_argument('--origen', default=None,
+                    help='carpeta de origen alternativa (exige --dry-run)')
     ap.add_argument('--sin-idempotencia', action='store_true')
     ap.add_argument('--sin-demos', action='store_true')
     args = ap.parse_args()
 
     pid = args.producto
-    origen = os.path.join(DL, pid)
+    if args.origen and not args.dry_run:
+        raise SystemExit('ABORTADO: --origen sólo se admite con --dry-run.')
+    origen = args.origen or os.path.join(DL, pid)
     destino = os.path.join(SCRATCH, 'dryrun-kt', pid)
     idem_dir = os.path.join(SCRATCH, 'dryrun-kt', pid + '-idem')
     demos_dir = os.path.join(SCRATCH, 'dryrun-kt', '_demos', pid)
@@ -761,6 +1014,15 @@ def main():
             log(f'  {modulo} cargado')
         except ImportError:
             log(f'  {modulo}.py no existe — sólo motor')
+
+    # m6/m8 — el 09 de catering se reconstruye ANTES de censar la carpeta y
+    # antes del contexto: el modelo del dinero ('mostrador' o 'eventos') se
+    # decide leyendo ese fichero.
+    sust09 = sustituir_09_catering(carpeta, pid)
+    if sust09:
+        log('  09 de catering: construido {}{}'.format(
+            sust09['construido'],
+            ' y borrado ' + sust09['borrado'] if sust09['borrado'] else ''))
 
     nombres = ficheros_de(carpeta)
     log(f'\n== 1/7 · contexto del kit ({len(nombres)} xlsx) ==')
@@ -928,6 +1190,14 @@ def main():
         f"{rec['recuento_por_molde']['p4']}) · "
         + ' · '.join(f'{k.split("-")[0]}={v}'
                      for k, v in rec['por_fichero'].items() if v))
+    meta = gate_metadata(carpeta, nombres)
+    log(f"  metadata (m5): subject «{meta['subject_esperado']}» · keywords "
+        f"«{meta['keywords_esperado']}» · {len(meta['incoherentes'])} "
+        f"incoherencias en {len(nombres)} ficheros")
+    for d in meta['incoherentes'][:8]:
+        log('    ' + d)
+    for d in meta['keywords_propias'][:4]:
+        log('    AVISO m5 · ' + d)
     tpv = gate_tpv(carpeta, nombres)
     log(f"  TPV: {len(tpv['tareas_encender_tpv'])} tareas «Encender …TPV» en "
         f"el producto ({len(tpv['fuera_del_fichero_de_negocio'])} fuera del "
@@ -952,6 +1222,8 @@ def main():
     # tenga hoja «Instrucciones», esté o no en alcance del molde ▸.
     fallos += [f'sin bio en Instrucciones: {n}' for n in gates['sin_bio']]
     fallos += gates['version_desfasada']
+    # m5 — la metadata del producto entero (también la de los P4 y los BONUS)
+    fallos += meta['incoherentes']
     fallos += [f'{n}: en alcance y SIN hoja «Instrucciones»'
                for n in gates['sin_hoja_instrucciones']
                if n in ctx['ficheros']]
@@ -966,6 +1238,11 @@ def main():
         'modo': 'dry-run' if args.dry_run else 'produccion',
         'etapas': sorted(etapas),
         'carpeta_origen': origen, 'carpeta_trabajo': carpeta,
+        # m6/m8 — queda escrito en el informe qué encontró el paso del 09 de
+        # catering (el 09 viejo o el nuevo ya renombrado) y qué hizo. Sin esto
+        # el informe no distinguiría una pasada antes del `git mv` de una
+        # después, y las dos producen el mismo fichero final.
+        'sustitucion_09_catering': sust09,
         'contexto': {k: (sorted(v) if isinstance(v, set) else v)
                      for k, v in ctx.items()},
         'ficheros': informe_ficheros,
@@ -979,6 +1256,7 @@ def main():
             'dv_y_bio': gates,
             'negocio_precargado': prec,
             'recuento_tareas': rec,
+            'metadata': meta,
             'tpv_duplicado': tpv,
             'bandas_solapadas': solapes,
             'censo_entregables': cen,

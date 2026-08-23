@@ -1,0 +1,202 @@
+{
+ "rol": "verificador independiente · kit-tareas-catering · ver5 (rediseño del 09: de caja de mostrador a cobros y facturación por evento — DISEÑO FIRMADO POR JOHN 2026-08-23)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-catering/ verificado INTACTO antes y después (git status limpio; el fichero viejo 09-apertura-cierre-caja.xlsx sigue ahí) · sin git add/commit/stash/clean/mv · sin KIT_TAREAS_APPLY",
+ "comandos": [
+  "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador-ver5 python3 kit-tareas-v2_0/main.py --producto kit-tareas-catering --dry-run --json .../kt-catering-09/ver5-run1.json",
+  "repetido ÍNTEGRO en .../propio-verificador-ver5b (2.ª invocación de main.py INDEPENDIENTE, distinta del gate de idempotencia interno del propio script) → .../kt-catering-09/ver5-run2.json"
+ ],
+
+ "1_exit_censo_idempotencia": {
+  "dryrun_exit_run1": 0,
+  "dryrun_exit_run2": 0,
+  "censo_fail_exit_run1": 0,
+  "censo_fail_exit_run2": 0,
+  "idempotencia_2a_pasada_interna": { "run1": 0, "run2": 0, "nota": "'diferencias 1.ª vs 2.ª pasada: 0' en las dos invocaciones (gate interno de main.py, digest m3)" },
+  "reproducibilidad_entre_invocaciones_independientes": "run1 (propio-verificador-ver5) y run2 (propio-verificador-ver5b), desde producción limpia, dan el MISMO resultado: 11 ficheros con los mismos nombres, mismo recuento por fichero (01=38,02=24,03=53,04=64,05=44,06=47,08=33,09=24,BONUS=20 → 347), mismo TPV (1, en negocio), mismos 4 casos §6 con los mismos valores, mismo censo 0 defectos. Los .xlsx difieren sólo en bytes de timestamp del ZIP (12576 vs 12576, 9299 vs 9300…, variación de 0-1 byte propia de openpyxl al reescribir), no en contenido."
+ },
+
+ "2_estructura_del_09_verificada_con_openpyxl_propio": {
+  "metodologia": "Abrí el .xlsx resultante del dry-run con MI PROPIO script openpyxl (no leí sólo el informe de main.py ni el del constructor), celda a celda, en las 5 hojas.",
+  "hojas": ["Instrucciones", "Antes del Evento", "Después del Evento", "Liquidación del Evento", "Registro de Eventos"],
+  "hojas_ok": true,
+  "titulo_metadata_09": "Cobros y Facturación por Evento — Catering / Eventos · Kit de Tareas Recurrentes Pro — coincide EXACTO con el título pedido en el encargo",
+  "antes_del_evento": {
+   "tareas": 12,
+   "con_responsable_y_cuando": "12/12",
+   "cuando_usa_dx": true,
+   "cuando_valores": ["D-15", "D-7", "D-3", "D-1"],
+   "cubre_los_puntos_del_encargo": "presupuesto firmado (T1) · comensales y fecha límite de cambios (T2) · anticipo 30-50% cobrado y registrado (T3) · forma de pago del saldo (T4) · datos de facturación (T5) · condiciones de cancelación (T7) · proveedores externos con pedido/pago (T8) · escandallo y margen (T9) · seguro RC (T10) · alérgenos por escrito, enlazado con 06 vía 'pasados a cocina' (T11) · fondo de caja SOLO si barra en efectivo, remite a la sección opcional (T12) — los 11 puntos del encargo presentes, más 1 extra (T6, comprobar facturas pendientes del cliente)",
+   "filas_libres_17_21": "vacías, dentro del rango protegido A5:G21 (confirmado con dump completo de filas 1-26)"
+  },
+  "despues_del_evento": {
+   "tareas": 12,
+   "con_responsable_y_cuando": "12/12",
+   "cuando_usa_dx": true,
+   "cuando_valores": ["D+0", "D+1", "D+7", "D+30"],
+   "cubre_los_puntos_del_encargo": "recuento comensales reales vs contratados (T1) · extras anotados (T2) · cargos roturas comunicados ANTES de facturar (T4) · factura con desglose IVA 10/21% (T5) · saldo comunicado (T6) · cobro registrado (T8) · conciliación bancaria (T9) · arqueo SOLO si barra efectivo, sección opcional (T3) · valoración/reseña (T10) · expediente archivado (T11) — los 9 puntos del encargo presentes, más 2 extras (T7 volcar a Registro, T12 revisar VENCIDOS)"
+  },
+  "contador_honesto": {
+   "formula_numerador": "=COUNTIFS(B5:B21,\"?*\",E5:E21,\"✓\")",
+   "formula_denominador": "=COUNTIF(B5:B21,\"?*\")-COUNTIF(E5:E21,\"N/A\")",
+   "cumple_regla_R2": "SÍ — resta N/A del denominador, NO resta «—» (ni B21 ni E21 se restan por «—»); idéntica a la fórmula que ya usan 01 y 08, confirmado por comparación de cadena literal",
+   "recien_impreso_gate": "08-apertura-cierre-negocio.xlsx (representante del molde ▸ del kit): D29/F29 = '15 de 15' en el dry-run del gate; 01 (P4): C52/E52 = '0.0 de 38.0'. Ninguna hoja del 09 arrastra marcas ✓ de fábrica (E5:E21 todas None, confirmado en el dump)."
+  }
+ },
+
+ "3_liquidacion_del_evento_pycel_propio": {
+  "metodologia": "Copié el .xlsx resultante a un fichero de trabajo PROPIO, escribí los valores con openpyxl y evalué con pycel (ExcelCompiler) — números MÍOS, no reutilizados del informe del constructor salvo los dos casos textuales del encargo, que reproduzco tal cual para comprobarlos.",
+  "caso_A_del_encargo": {
+   "entrada": "C10=3500 (presupuesto+extras declarado como base10 3000+base21 500 ⇒ tecleo C10=3500,C11=0,C12=3000,C13=500), C19=1050 (anticipo), C21=2855 (cobrado = resto)",
+   "calculo_manual": "IVA10=300, IVA21=105, TOTAL=3905, saldo=3905-1050=2855, pendiente=2855-2855=0",
+   "resultado_pycel": { "C14": "OK: las dos bases suman presupuesto + extras", "C17": 3905, "C20": 2855, "C22": 0, "C24": "Cobrado" },
+   "ok": true
+  },
+  "caso_B_del_encargo": {
+   "entrada": "C10=1000,C11=0,C12=1000,C13=0 (base 10% 1000€), C19=0, C21=0 (cobrado 0), C23=2026-01-01 (vencimiento pasado)",
+   "resultado_pycel": { "C17": 1100, "C20": 1100, "C22": 1100, "C24": "VENCIDO" },
+   "ok": true,
+   "nota": "hoy=2026-08-23 > vencimiento 2026-01-01 → VENCIDO, exacto como pide el encargo"
+  },
+  "caso_C_aviso_bases_propio": {
+   "entrada": "C10=1000 (presupuesto), C11=200 (extras) ⇒ deberían sumar 1200 en bases, pero tecleo C12=900,C13=200 (suman 1100, descuadre deliberado de 100)",
+   "resultado_pycel": { "C14": "REVISA: las dos bases no suman presupuesto + extras", "C24": "Pendiente" },
+   "ok": true,
+   "nota": "el aviso de C14 se dispara correctamente cuando C12+C13 ≠ C10+C11; NO bloquea el resto de fórmulas (TOTAL/ESTADO siguen calculando con lo que hay en las bases, tal y como documenta la nota de la celda)"
+  }
+ },
+
+ "4_registro_de_eventos_pycel_propio": {
+  "metodologia": "3 filas de prueba PROPIAS (nombres/importes distintos a los del informe del constructor) escritas con openpyxl sobre una copia, evaluadas con pycel, comprobación manual de cada fórmula.",
+  "iva_medio_c3": 0.10,
+  "filas_de_prueba": [
+   { "fila": 6, "evento": "Boda Garcia", "base": 5000, "anticipo": 1500, "cobrado": 3500, "vencimiento": "2026-09-15 (futuro)", "total_calculado": 5500, "pendiente_calculado": 500, "estado_esperado": "Pendiente", "resultado_pycel": { "total": 5500.0, "pendiente": 500, "estado": "Pendiente" }, "ok": true },
+   { "fila": 7, "evento": "Corporativo XYZ", "base": 2000, "anticipo": 600, "cobrado": 0, "vencimiento": "2026-07-20 (pasado)", "total_calculado": 2200, "pendiente_calculado": 1600, "estado_esperado": "VENCIDO", "resultado_pycel": { "total": 2200.0, "pendiente": 1600, "estado": "VENCIDO" }, "ok": true },
+   { "fila": 8, "evento": "Cumpleaños Perez", "base": 1200, "anticipo": 400, "cobrado": 800, "vencimiento": "2026-10-10 (futuro)", "total_calculado": 1320, "pendiente_calculado": 120, "estado_esperado": "Pendiente", "resultado_pycel": { "total": 1320.0, "pendiente": 120, "estado": "Pendiente" }, "ok": true }
+  ],
+  "totales_fila_31": {
+   "base_D31_esperado": 8200, "base_D31_pycel": 8200,
+   "total_E31_esperado": 9020.0, "total_E31_pycel": 9020.0,
+   "anticipo_F31_esperado": 2500, "anticipo_F31_pycel": 2500,
+   "cobrado_G31_esperado": 4300, "cobrado_G31_pycel": 4300,
+   "pendiente_H31_esperado": 2220, "pendiente_H31_pycel": 2220,
+   "ok": true
+  },
+  "recuentos_pendientes_vencidos": { "pendientes_D33_esperado": 2, "pendientes_D33_pycel": 2, "vencidos_D34_esperado": 1, "vencidos_D34_pycel": 1, "ok": true }
+ },
+
+ "5_formato_condicional_dv_proteccion_a4": {
+  "conditional_formatting_openpyxl_propio": [
+   { "hoja": "Antes del Evento", "rango": "A5:G21", "regla": "$E5=\"✓\"", "color": "C8E6C9 (verde claro, coherente con el resto de la familia)" },
+   { "hoja": "Después del Evento", "rango": "A5:G21", "regla": "$E5=\"✓\"", "color": "C8E6C9" },
+   { "hoja": "Liquidación del Evento", "celda": "C22 (PENDIENTE DE COBRO)", "regla": "greaterThan 0.01", "color": "FFF3CD (ámbar, el mismo de la familia)" },
+   { "hoja": "Liquidación del Evento", "celda": "C24 (ESTADO)", "regla": "equal \"VENCIDO\"", "color": "F8D7DA (rojo, nuevo en esta familia — hermano del ámbar)" },
+   { "hoja": "Registro de Eventos", "rango": "H6:H30 (Pendiente)", "regla": "greaterThan 0.01", "color": "FFF3CD" },
+   { "hoja": "Registro de Eventos", "rango": "A6:K30 (fila ENTERA)", "regla": "$K6=\"VENCIDO\"", "color": "F8D7DA" }
+  ],
+  "cf_verificado_tras_el_motor": "SÍ — las 6 reglas están presentes en el .xlsx que sale de main.py DESPUÉS de aplicar el motor completo (no sólo en el borrador del constructor); esto es justo lo que el propio constructor documenta haber cazado y arreglado con `motor.cf_eventos()` — lo confirmo de forma independiente, abriendo el fichero yo mismo con openpyxl, no leyendo su informe.",
+  "data_validation_producto_completo": {
+   "listas_encontradas": ["\"✓,—,N/A\""],
+   "unica": true,
+   "hojas_09_con_dv": ["Antes del Evento (E5:E21)", "Después del Evento (E5:E21)"]
+  },
+  "proteccion": {
+   "instrucciones": "sin proteger (correcto, es texto)",
+   "antes_del_evento": "protegida, sin contraseña",
+   "despues_del_evento": "protegida, sin contraseña",
+   "liquidacion_del_evento": "protegida, sin contraseña — 27 celdas verdes desbloqueadas: C5,C6,C7,C8 (evento/fecha/comensales), C10,C11,C12,C13 (presupuesto/extras/bases), C19,C21,C23 (anticipo/cobrado/vencimiento), B30-B45 excepto separadores (denominaciones), C47 (fondo) — coincide con el diseño exacto del encargo; las fórmulas (C14,C15,C16,C17,C20,C22,C24,C30-C46,C48) permanecen bloqueadas",
+   "registro_de_eventos": "protegida, sin contraseña — 201 celdas verdes desbloqueadas (C3 + A6:D30,F6:G30,I6:J30 de las 25 filas), las columnas de fórmula (E,H,K) permanecen bloqueadas"
+  },
+  "a4": {
+   "instrucciones": "paperSize=9 (A4), portrait",
+   "antes_del_evento": "A4, landscape, print_area A1:G26",
+   "despues_del_evento": "A4, landscape, print_area A1:G26",
+   "liquidacion_del_evento": "A4, portrait, print_area A1:D51",
+   "registro_de_eventos": "A4, landscape, print_area A1:K37"
+  }
+ },
+
+ "6_barrido_producto_completo": {
+  "ficheros": 11,
+  "fichero_09_correcto": "09-cobros-facturacion-eventos.xlsx presente; 09-apertura-cierre-caja.xlsx AUSENTE del dry-run (confirmado en las dos invocaciones)",
+  "errores_formula_11_ficheros_2_modos": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL!/#NUM!, data_only True y False, en los 11 ficheros",
+  "bio_y_version_11_11": true,
+  "metadata_title_subject_v2_0_11_11": true,
+  "titulo_09_coincide_con_encargo": true,
+  "linea_facturacion_nueva": "presente en 08-apertura-cierre-negocio.xlsx:Instrucciones!B37 («09-cobros-facturacion-eventos.xlsx — la FACTURACIÓN: anticipos, liquidación y cobro de cada evento») y en 09-cobros-facturacion-eventos.xlsx:Instrucciones (bloque «Estás en 09…»); los otros 9 ficheros (01-07 + BONUS) no llevan bloque «Orden de uso» por diseño de familia (molde P4, no lo tuvieron nunca — mismo patrón que documentó ver4)",
+  "barrido_vocabulario_prohibido": {
+   "terminos": ["Z del TPV", "z del tpv", "turno de caja", "Z de caja", "fondo de caja"],
+   "metodologia": "regex case-insensitive sobre TODAS las celdas de los 11 ficheros, sin límite de palabra",
+   "hallazgos": [
+    { "fichero": "09-cobros-facturacion-eventos.xlsx", "hoja": "Antes del Evento", "celda": "B16", "termino": "fondo de caja", "texto": "Solo si habrá barra con cobro en efectivo: fondo de caja preparado y anotado en la sección opcional de «Liquidación del Evento»", "evaluacion": "NO es una desviación: es LITERALMENTE la tarea T12 pedida por el propio encargo («Solo si habrá barra con cobro en efectivo: fondo de caja preparado... remite a la sección opcional»). Está condicionada por «Solo si...» y remite a la sección opcional, tal y como exige el encargo. No cuenta como mención fuera de la sección opcional en sentido sustantivo — es el puente hacia ella." }
+   ],
+   "total_menciones": 1,
+   "z_del_tpv_turno_de_caja": "0 apariciones en todo el producto",
+   "conclusion": "0 vocabulario de mostrador colado en el flujo principal; la única mención de «fondo de caja» fuera de la propia sección opcional es la llamada de atención condicional que el encargo pidió expresamente."
+  }
+ },
+
+ "7_capa_de_producto": {
+  "ficheros_modificados_git_diff_leido_linea_a_linea": [
+   "astro-site/public/_redirects — regla 301 del 09 viejo al nuevo, insertada en la CABECERA del fichero (líneas 1-9), ANTES de las dos reglas «# Genérica» (líneas 376 y 395) — orden correcto, Netlify resolverá por primera coincidencia como debe",
+   "netlify/functions/get-download-urls.ts — las DOS entradas ('apertura-caja' en L157 y 'kit-tareas-catering__apertura-caja' en L490) apuntan a /dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx; la CLAVE se conserva (coherente con accesos ya enviados)",
+   "src/data/productos-digitales-config.ts — mismas dos rutas actualizadas en L328/L1252 (fuera del encargo estricto pero coherente; ya señalado como fichero con 0 importadores hoy en auditorías previas)",
+   "src/pages/KitTareasCateringDashboard.tsx — tarjeta 'apertura-caja': título 'Apertura y Cierre de Caja'→'Cobros y Facturación por Evento', descripción reescrita (anticipos, liquidación 10/21%, saldo, registro)",
+   "astro-site/src/data/productos/tareas/kit-tareas-catering.ts — 346→347 tareas en 4 puntos (meta description, schema, hero description, subtitle del bloque de plantillas); vocabulario 'caja'/'arqueo' sustituido en 3 sitios (checkItems del hero, template card 'Cobros y Facturación por Evento' con descripción larga y correcta, items del bloque FAQ/resumen); NINGÚN residuo de 'arqueo de caja' encontrado en el diff",
+   "src/data/productos-changelog.ts — versión del producto 2.0→2.1, entrada nueva fechada 2026-08-23 con 6 puntos de changelog, detallada y consistente con lo que el .xlsx realmente entrega (24 tareas, IVA 10/21%, PENDIENTE ámbar, VENCIDO rojo, 25 eventos, redirect del enlace viejo)",
+   "netlify/functions/resend-access.ts — SIN CAMBIOS (confirmado: git diff vacío, 0 menciones a 'caja' en grep propio) — correcto, no había nada que tocar ahí"
+  ],
+  "sintaxis_typescript_transpileModule_propio": {
+   "metodologia": "typescript.transpileModule (node_modules/typescript, reportDiagnostics=true, jsx=React) sobre los 6 ficheros .ts/.tsx tocados o citados, ejecutado por MÍ, no reutilizando el resultado del constructor",
+   "ficheros": ["netlify/functions/get-download-urls.ts", "src/pages/KitTareasCateringDashboard.tsx", "astro-site/src/data/productos/tareas/kit-tareas-catering.ts", "src/data/productos-changelog.ts", "src/data/productos-digitales-config.ts", "netlify/functions/resend-access.ts"],
+   "diagnosticos_totales": 0
+  }
+ },
+
+ "8_diff_vs_produccion_medido_propio": {
+  "metodologia": "Comparé, fichero a fichero y celda a celda con openpyxl (no leí el diff del constructor), el .xlsx que sale de MI dry-run contra el .xlsx que hay HOY en astro-site/public/dl/kit-tareas-catering/, para los 10 ficheros que el encargo NO pide tocar (01-08 + BONUS-01/02; el 09 se excluye de esta comparación porque es una sustitución total DELIBERADA, no algo que deba «no diferir»).",
+  "valor": { "total": 40, "donde": "TODAS en 08-apertura-cierre-negocio.xlsx:Instrucciones (celdas B7 a B46)", "explicacion": "es un desplazamiento de fila coherente (patrón verificado línea a línea: el texto viejo de cada celda Bn aparece en Bn+1 o Bn+2 del nuevo), causado por: (a) una línea NUEVA insertada arriba del todo ('El DINERO no está aquí: los anticipos, la liquidación...') y (b) la actualización deliberada del bloque «Se conecta con» para que 08 apunte al 09 nuevo ('09-cobros-facturacion-eventos.xlsx — la FACTURACIÓN...' en vez de '09-apertura-cierre-caja.xlsx — la CAJA...') y a la frase de dos niveles con el vocabulario de eventos ('local → eventos' en vez de 'local → caja', motor.FRASE_NIVELES_EVENTOS). Es EXACTAMENTE el efecto que se pedía: si 08 no se actualizara, quedaría remitiendo a un fichero que ya no existe." },
+  "dv": { "total": 0, "explicacion": "ninguna hoja de los 10 ficheros no tocados cambia su lista de validación" },
+  "alturas": { "total": 1, "donde": "08-apertura-cierre-negocio.xlsx:Instrucciones", "explicacion": "el mapa de alturas de fila está desplazado en las mismas posiciones que el contenido (comprobado: incremento de +1/+2 en los mismos números de fila que el diff de valor) — no es un cambio independiente, es la fila auto-ajustándose al mismo contenido desplazado" },
+  "locked": { "total": 0, "explicacion": "0 diferencias en el conjunto de celdas desbloqueadas de los 10 ficheros no tocados" },
+  "properties": { "total": 10, "explicacion": "los 10 ficheros no tocados por este encargo (incluido 08) tienen en PRODUCCIÓN metadata de la familia ANTIGUA ('Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos' / v1.1 en 01-07 y BONUS; 08 ya estaba en v2.0 pero con el subtítulo largo antiguo) y el dry-run los deja con la metadata CORTA de la familia v2.0 ('Kit de Tareas Recurrentes Pro' / v2.0). Esto NO lo introduce el encargo del 09: es el estado de aplicación pendiente que ya documentaba el propio constructor en 'pendiente' (el kit completo espera su KIT_TAREAS_APPLY real) — producción de catering no se ha refrescado a v2.0 todavía en ningún fichero salvo parcialmente el 08. Lo señalo con exactitud pero NO es un defecto de este encargo del 09." },
+  "otros": { "total": 0 },
+  "conclusion": "Los únicos cambios frente a producción en los 10 ficheros que el encargo no pedía tocar son (1) la sincronización NECESARIA del cross-reference de 08 hacia el 09 nuevo, y (2) el refresco de metadata a v2.0 que ya estaba pendiente de aplicar en todo el kit por trabajo anterior (no introducido por esta tanda). Ningún cambio inesperado, ningún dato perdido, ninguna fórmula rota."
+ },
+
+ "9_hallazgos_nuevos": [
+  {
+   "severidad": "media",
+   "donde": "09-cobros-facturacion-eventos.xlsx entero (Antes del Evento tarea 7 + Liquidación del Evento, sección de anticipo/factura) — leído como jefe de eventos de catering, tal y como pide el encargo",
+   "hallazgo": "El ciclo de cobro modela bien el caso feliz (anticipo → saldo → cobrado → conciliado) pero le faltan dos piezas del caso NO feliz que sí pidió el encargo como ejemplo: (1) qué pasa con el ANTICIPO cuando el cliente cancela — la tarea 'Condiciones de cancelación... comunicadas por escrito y aceptadas' (Antes del Evento, fila 11) sólo cubre COMUNICAR las condiciones antes del evento, no hay ninguna tarea ni campo para aplicar la retención (parcial/total) del anticipo cuando la cancelación ocurre de verdad, ni una fila de 'Registro de Eventos' que distinga un evento cancelado de uno servido; (2) FACTURA RECTIFICATIVA — 0 menciones en todo el fichero (barrido propio: 'rectificativa', 'rectificación', 'abono', 'nota de crédito' → 0 resultados). Si los comensales reales difieren de los facturados, o se detecta un error después de emitida la factura, el kit no tiene ni una tarea ni un campo que recuerde emitir la rectificativa/abono correspondiente — sólo cubre el caso en que todo se corrige ANTES de facturar (tarea 'Cargos por roturas... comunicados al cliente antes de facturar, no dentro de la factura', Después del Evento fila 4). Ninguna de las dos ausencias rompe una fórmula ni un gate: son huecos de cobertura del ciclo de cobro, no defectos del motor. No bloquea, porque el producto ya delega el detalle fiscal a 'tu asesor' en varias celdas y el encargo pedía señalarlo, no resolverlo en esta tanda."
+  }
+ ],
+
+ "10_recuento_final": {
+  "casos_ok": 6,
+  "casos_total": 6,
+  "casos_detalle": [
+   "liquidacion-cuadra (caso A del encargo) → Cobrado: OK",
+   "liquidacion-vencida (caso B del encargo) → VENCIDO: OK",
+   "aviso si bases ≠ presupuesto + extras (caso propio): OK",
+   "Registro de Eventos con 3 filas de prueba propias → TOTALES y nº de vencidos: OK",
+   "≥10 tareas con Responsable y Cuándo en cada checklist (12 y 12): OK",
+   "contador honesto '0 de N' recién impreso, sin marcas de fábrica: OK"
+  ]
+ },
+
+ "recuento_gate": 347,
+ "recuento_gate_evidencia": "gates.recuento_tareas.total = 347 en las dos invocaciones independientes (01=38,02=24,03=53,04=64,05=44,06=47,08=33,09=24,BONUS=20); el 09 nuevo entrega 24 tareas (12+12) frente a las 23 del arqueo de caja anterior",
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Todos los gates verdes en dos invocaciones independientes y reproducibles: exit 0, censo --fail 0 defectos, idempotencia 0 (interna y entre invocaciones), 11 ficheros correctos (09 nuevo presente, 09 viejo ausente), 0 celdas con error de fórmula en 11/11 ficheros en los dos modos de lectura. Las 5 hojas del diseño están, con las 24 tareas pedidas (12+12, todas con Responsable y Cuándo en D-x/D+x), la Liquidación calcula exactamente lo que pide el encargo (caso A→Cobrado, caso B→VENCIDO, aviso de bases verificado con un tercer caso propio), el Registro de Eventos suma y cuenta bien con datos de prueba propios y distintos a los del constructor. CF ámbar/rojo presentes y verificadas tras el motor completo (no sólo en el borrador), DV única en todo el producto, protección sin contraseña con exactamente las celdas verdes que pedía el encargo, A4 en las 5 hojas, bio/versión/metadata en 11/11, título del 09 exacto al pedido, línea de FACTURACIÓN presente donde corresponde por diseño de familia (08/09), 0 vocabulario de mostrador colado fuera de la única mención condicional que el propio encargo pedía. La capa de producto (redirects/functions/dashboard/landing/changelog/config) es coherente, con sintaxis TypeScript válida (0 diagnósticos, comprobación propia) y resend-access.ts correctamente sin tocar. astro-site/public/dl/** queda intacto. El diff medido contra producción en los ficheros no tocados se explica en su totalidad por la sincronización necesaria de 08 y por un refresco de metadata v2.0 ya pendiente de antes, sin ninguna pérdida ni rotura. El único hallazgo nuevo es de severidad MEDIA (huecos de cobertura del ciclo de cobro: retención de anticipo en cancelación y factura rectificativa, exactamente los dos ejemplos que pedía el encargo comprobar) — no rompe ningún gate ni ninguna fórmula, así que no bloquea."
+,
+
+ "notas": [
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 37,75-45,06 °C durante toda la verificación (umbral 60/65 °C); nunca dos intérpretes a la vez; sin builds, sin Playwright, sin navegador.",
+  "astro-site/public/dl/** no se ha tocado: git status -- astro-site/public/dl/ vacío antes y después; el 09-apertura-cierre-caja.xlsx sigue existiendo en producción tal cual (el git mv es tarea del orquestador).",
+  "Los cambios de código en el working tree (main.py, motor.py, construir_09_catering.py, SPEC.md, _redirects, get-download-urls.ts, KitTareasCateringDashboard.tsx, kit-tareas-catering.ts, productos-changelog.ts, productos-digitales-config.ts) están SIN COMMITEAR — es trabajo del constructor en curso, no de este verificador; no he tocado ninguno.",
+  "Los JSON crudos de mis dos invocaciones quedan en scratchpad/kt-catering-09/ver5-run1.json y ver5-run2.json (se pierden con el reinicio); los .xlsx de prueba propios (pycel) también en scratchpad/kt-catering-09/; este informe en el repo es la fuente persistente.",
+  "Referencia cruzada con el informe del constructor (09-catering-constructor.json): mis números de §6 (caso A→Cobrado, caso B→VENCIDO, Registro con TOTALES/vencidos) coinciden con los suyos aunque los reproduje con datos propios y en una copia distinta del fichero — no es una verificación de fe, abrí el .xlsx yo mismo con openpyxl/pycel."
+ ]
+}

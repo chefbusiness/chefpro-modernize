@@ -20,7 +20,10 @@ const TEMPLATES = [
   { key: 'eventos', icon: PartyPopper, title: 'Tipos de Evento', desc: 'Bodas, corporativos, cocktail/standing, outdoor.' },
   { key: 'personalizable', icon: FileEdit, title: 'Plantilla Personalizable', desc: '3 plantillas en blanco: por fase, zona y perfil.' },
   { key: 'apertura-negocio', icon: Building2, title: 'Apertura y Cierre del Negocio', desc: 'Checklist para abrir y cerrar la cocina central.' },
-  { key: 'apertura-caja', icon: Wallet, title: 'Apertura y Cierre de Caja', desc: 'Fondo de caja, arqueo, cuadre y depósito.' },
+  // v2.1 (2026-08-23): la clave 'apertura-caja' se conserva (la usan
+  // get-download-urls y los emails de acceso ya enviados); lo que cambia es el
+  // fichero y lo que promete la tarjeta. Un catering no tiene mostrador.
+  { key: 'apertura-caja', icon: Wallet, title: 'Cobros y Facturación por Evento', desc: 'Anticipos, liquidación con IVA 10/21 %, saldo pendiente y registro de eventos.' },
   { key: 'bonus-briefing', icon: Megaphone, title: 'BONUS: Briefing Pre-Evento', desc: 'Info evento, menú, alérgenos, equipo, VIPs, protocolo.' },
   { key: 'bonus-calendario', icon: Calendar, title: 'BONUS: Calendario Anual', desc: '20 fechas clave para catering con antelación recomendada.' },
 ];

@@ -1,0 +1,75 @@
+{
+ "rol": "verificador independiente · kit-tareas (REPRESENTANTE, ya en producción v2.0) · ronda 5 (post motor 2.5, m5-m7 + SPEC §10 + esbozo 09-catering)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas",
+ "modo": "SOLO LECTURA sobre astro-site/public/dl/kit-tareas · dry-run en CLAUDE_SCRATCHPAD=…/propio-verificador-representante · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean/mv",
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=…/scratchpad/propio-verificador-representante python3 kit-tareas-v2_0/main.py --producto kit-tareas --dry-run --json …/scratchpad/kt-catering-09/kit-tareas.json",
+  "exit": 0,
+  "resumen_consola": "kit «Restaurante Casual» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · hora ancla 07:00. idempotencia (2.ª pasada sobre un clon, digest m3+m5 de main.py): 0 diferencias. inject_cache 11/11 sin fallos_pycel (142 con valor, 0 fallos). §6 (4 casos aplicables, representante SIN hojas P4): arqueo-cuadra C54=0 OK, arqueo-descuadra C54=10 OK, contador-honesto 03:'Diario Manager'!D45/F45='22 de 22' OK, denominador-07 07:'Por Franja Horaria'!F31=8 OK. DV 33 hojas checklist, 0 incorrectas. bio 11/11 Instrucciones, 0 sin versión 2.0. 08 precargado: 28 tareas, 0 huecos. metadata (m5): subject «Kit de Tareas Recurrentes Pro · v2.0» · keywords «kit tareas, AI Chef Pro» · 0 incoherencias en 11 ficheros. tpv_duplicado: 1 sola tarea de encendido en todo el producto (08:'Apertura del Negocio'!B10, hito legítimo). bandas_solapadas: []. recuento de tareas: 491 (molde ▸ 491 + P4 0)."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only …/dryrun-kt/kit-tareas --fail --quiet (paso 7/7 integrado en main.py)",
+  "exit": 0,
+  "resultado": "OK: 0 defectos (--fail) — 11 xlsx censados en 1 producto"
+ },
+ "idempotencia": 0,
+ "diff_completo_vs_produccion": {
+  "metodo": "Script propio difprod.py, INDEPENDIENTE pero reutilizando main.digest()/main.diff_digest() del propio motor kit-tareas-v2_0 (la huella m3 AMPLIADA con m5: valores, number_format, relleno, locked de TODAS las celdas del rango usado —con y sin valor—, merges, DV completa —type/formula1/sqref/errorTitle/error/prompt—, CF, print_area, protección de hoja, alturas de fila con valor, y la pseudo-hoja «·propiedades·» con title/subject/creator/keywords/category/description). Compara los 11 xlsx de astro-site/public/dl/kit-tareas (SOLO LECTURA) contra la copia dry-run recién regenerada bajo motor 2.5.",
+  "encargo": "Se esperaban 0 diferencias en TODAS las categorías, incluida properties (sus 11 ficheros ya llevan la metadata v2.0 desde la aplicación de la ronda 4/tanda 5).",
+  "resultado": "0 diferencias — confirmado, en TODAS las categorías.",
+  "total_diferencias": 0,
+  "desglose": {
+   "valor": 0,
+   "dv": 0,
+   "alturas": 0,
+   "locked": 0,
+   "properties": 0,
+   "merges": 0,
+   "cf": 0,
+   "area": 0,
+   "prot": 0,
+   "hoja_sola": 0,
+   "otros": 0
+  },
+  "ficheros_comparados": 11,
+  "solo_en_produccion": [],
+  "solo_en_dry_run": [],
+  "interpretacion": "El motor 2.5 (m5 metadata + m6 modelo por eventos + m7 demo_liquidacion) toca SÓLO el vocabulario/detección de caja-por-eventos y la fijación de metadata para ficheros que aún no la llevan. En kit-tareas ninguna de las dos ramas nuevas activa cambio alguno: (a) modelo_caja='mostrador' (fichero 09 sigue siendo 09-apertura-cierre-caja.xlsx, el de arqueo, no el de eventos — sustituir_09_catering() es no-op fuera de pid='kit-tareas-catering'), y (b) los 11 ficheros ya tienen subject/creator/keywords/title canónicos desde la ronda 4, así que set_metadata() no escribe nada nuevo. Coherente con lo reportado por el mantenedor en motor-2.5.json: 'kit-tareas (REGRESIÓN FIRMADA) … DIFF CONTRA PRODUCCIÓN = 0 con el digest m3 AMPLIADO con propiedades (m5)'. Verificado de forma independiente, no sólo repetido."
+ },
+ "metadata_gate_m5": {
+  "subject_esperado": "Kit de Tareas Recurrentes Pro · v2.0",
+  "keywords_esperado": "kit tareas, AI Chef Pro",
+  "incoherentes": 0,
+  "evidencia": "gates.metadata.incoherentes = [] en los 11 ficheros del dry-run (idéntico a producción, diff properties=0). Los 11 subject ya eran 'Kit de Tareas Recurrentes Pro · v2.0' ANTES de correr m5 — confirmado indirectamente por diff=0 en properties: si m5 hubiera tenido que reescribir algo, esa celda de propiedades habría aparecido en el diff contra producción."
+ },
+ "listas_dv": [
+  "\"✓,—,N/A\""
+ ],
+ "casos6_ok": 4,
+ "casos6_total": 4,
+ "casos6_detalle": [
+  {"caso": "arqueo cuadra (fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0 (pycel)."},
+  {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 10."},
+  {"caso": "contador honesto (25 tareas, 3 N/A, 22 ✓)", "ok": true, "evidencia": "03-tareas-manager.xlsx:'Diario Manager'!D45/F45 = '22 de 22' (pycel)."},
+  {"caso": "denominador-07 por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria'!F31 = 8 (pycel); plantilla en blanco, no cambia nada en el representante."}
+ ],
+ "nota_casos6": "El representante sigue en modelo_caja='mostrador' (09-apertura-cierre-caja.xlsx NO es el fichero de eventos: sustituir_09_catering() sólo actúa sobre pid='kit-tareas-catering'), así que demo_arqueo() ejecuta los 2 casos de arqueo de mostrador y no demo_liquidacion() del modelo por eventos (m6/m7); junto a contador-honesto y denominador-07 dan los 4/4 casos aplicables al representante, igual que en la ronda 4.",
+ "recuento_gate": 491,
+ "recuento_gate_evidencia": "gates.recuento_tareas.total del informe JSON = 491 (checklist_▸=491, p4=0; por_fichero: 01=111 02=57 03=81 04=68 05=63 06=60 08=28 09=23). Coincide con la SPEC §9.2 T-03 y con la regresión firmada de motor-2.5.json ('recuento 491').",
+ "ficheros_total": 11,
+ "ficheros_total_evidencia": "11 xlsx en producción y en dry-run, mismo listado (01..07, 08, 09, BONUS-01, BONUS-02); gates.censo_entregables confirma 11 ficheros censados en 1 producto; difprod.py confirma 0 en solo_en_produccion y 0 en solo_en_dry_run.",
+ "regla_dura_dl_intacto": {
+  "comprobacion": "git status --porcelain -- astro-site/public/dl",
+  "resultado": "0 líneas de salida — 0 cambios. astro-site/public/dl/** no se tocó en ningún momento de esta verificación."
+ },
+ "termica": {
+  "lecturas_istats": ["38.75°C (inicio)", "40.38°C (pre dry-run)", "45.25°C (pre diff)", "42.94°C (pre diff, tras Write)"],
+  "maximo": "45.25°C",
+  "umbral": "60°C (pausa) / 65°C (riesgo apagado)",
+  "ejecucion": "3 llamadas a python3 en SERIE (main.py --dry-run, difprod.py), ninguna en paralelo; sin builds, sin Playwright, sin navegador."
+ },
+ "bloquea_real": false,
+ "hallazgos_nuevos": [],
+ "conclusion": "Verificación independiente del representante kit-tareas tras el motor 2.5: dry-run exit 0, censo --fail 0 defectos, idempotencia 0 (digest m3+m5), 4/4 casos §6 aplicables OK, DV 33/33 hojas correctas, bio y versión 2.0 en 11/11 Instrucciones, metadata (m5) 0 incoherencias, recuento_gate=491. El diff COMPLETO contra producción (celda a celda + propiedades, script independiente reusando main.digest/diff_digest) da 0 diferencias en TODAS las categorías (valor, dv, alturas, locked, properties, merges, cf, area, prot) — se cumple exactamente lo que pedía el encargo, sin necesidad de excepción alguna en properties: los 11 ficheros ya llevaban la metadata v2.0 desde la ronda 4 y el motor 2.5 no les cambia ni un byte, ni de contenido ni de metadata. astro-site/public/dl/** queda intacto (git status 0 cambios). No hay hallazgos nuevos: bloquea_real=false."
+}

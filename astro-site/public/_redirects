@@ -1,3 +1,12 @@
+# ── Productos digitales: entregables renombrados ──
+# Netlify resuelve por PRIMERA COINCIDENCIA, así que estas reglas van ANTES de
+# cualquier «# Genérica» del fichero. Los enlaces de descarga viajan dentro de
+# los emails de acceso ya enviados: un entregable que cambia de nombre sin su
+# 301 es un cliente que ha pagado y se encuentra un 404.
+# Kit de Tareas · Catering / Eventos v2.1 (2026-08-23): el 09 deja de ser un
+# arqueo de caja de mostrador y pasa a «Cobros y Facturación por Evento».
+/dl/kit-tareas-catering/09-apertura-cierre-caja.xlsx  /dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx  301
+
 # ── Fase 8B: blog.aichef.pro → aichef.pro/blog (generado por fase8b-301map.py) ──
 # ACTIVAR SOLO EN EL CUTOVER 8B.5 (requiere blog.aichef.pro como alias del site).
 # Orden: excepciones → genérica /:slug → catch-all. First match wins.

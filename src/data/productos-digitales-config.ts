@@ -323,7 +323,9 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'eventos': '/dl/kit-tareas-catering/06-eventos-festivos.xlsx',
       'personalizable': '/dl/kit-tareas-catering/07-plantilla-personalizable.xlsx',
       'apertura-negocio': '/dl/kit-tareas-catering/08-apertura-cierre-negocio.xlsx',
-      'apertura-caja': '/dl/kit-tareas-catering/09-apertura-cierre-caja.xlsx',
+      // v2.1 (2026-08-23): el 09 de catering es «Cobros y Facturación por
+      // Evento», no un arqueo de mostrador. La CLAVE se conserva.
+      'apertura-caja': '/dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx',
       'bonus-briefing': '/dl/kit-tareas-catering/BONUS-01-briefing-servicio.xlsx',
       'bonus-calendario': '/dl/kit-tareas-catering/BONUS-02-calendario-anual-tareas.xlsx',
     },
@@ -1247,7 +1249,7 @@ export const PRODUCTS_CONFIG: Record<string, ProductDigitalConfig> = {
       'kit-tareas-catering__eventos': '/dl/kit-tareas-catering/06-eventos-festivos.xlsx',
       'kit-tareas-catering__personalizable': '/dl/kit-tareas-catering/07-plantilla-personalizable.xlsx',
       'kit-tareas-catering__apertura-negocio': '/dl/kit-tareas-catering/08-apertura-cierre-negocio.xlsx',
-      'kit-tareas-catering__apertura-caja': '/dl/kit-tareas-catering/09-apertura-cierre-caja.xlsx',
+      'kit-tareas-catering__apertura-caja': '/dl/kit-tareas-catering/09-cobros-facturacion-eventos.xlsx',
       'kit-tareas-catering__bonus-briefing': '/dl/kit-tareas-catering/BONUS-01-briefing-servicio.xlsx',
       'kit-tareas-catering__bonus-calendario': '/dl/kit-tareas-catering/BONUS-02-calendario-anual-tareas.xlsx',
       // Hotel
