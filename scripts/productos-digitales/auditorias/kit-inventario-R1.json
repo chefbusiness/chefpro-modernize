@@ -1,0 +1,1064 @@
+{
+ "productId": "kit-inventario",
+ "familia": "kit-excel",
+ "inventario": {
+  "productId": "kit-inventario",
+  "ficheros": [
+   {
+    "nombre": "01-inventario-stock-diario.xlsx",
+    "tipo": "xlsx",
+    "bytes": 14698,
+    "hojas": [
+     "Instrucciones",
+     "Cocina",
+     "Barra",
+     "Almacén",
+     "Resumen Dashboard"
+    ],
+    "formulas": 100,
+    "resumen": "3 hojas de conteo (Cocina/Barra/Almacén) con semáforo par-level y cantidad a pedir; 'Resumen Dashboard' es solo cabecera, 0 fórmulas, sin agregación desde las 3 hojas de conteo."
+   },
+   {
+    "nombre": "02-fichas-proveedores.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12032,
+    "hojas": [
+     "Instrucciones",
+     "Directorio Proveedores",
+     "Comparativa Precios",
+     "Evaluación Proveedores",
+     "Condiciones Comerciales"
+    ],
+    "formulas": 30,
+    "resumen": "Comparativa Precios calcula MIN() y %diferencia entre 5 proveedores por producto; la columna 'Mejor Proveedor' (J) queda vacía en las 10 filas, sin fórmula que identifique cuál de los 5 dio el mínimo."
+   },
+   {
+    "nombre": "03-pedidos-compra.xlsx",
+    "tipo": "xlsx",
+    "bytes": 8685,
+    "hojas": [
+     "Instrucciones",
+     "Pedido Actual",
+     "Historial Pedidos"
+    ],
+    "formulas": 42,
+    "resumen": "Formulario de pedido con subtotal+IVA por línea, 100% manual (Producto, Cantidad, Precio se tecleain a mano); cero enlaces externos a 01-inventario-stock-diario.xlsx pese a la promesa de 'generación automática desde stock'."
+   },
+   {
+    "nombre": "04-recepcion-mercancias.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9799,
+    "hojas": [
+     "Instrucciones",
+     "Control Recepción",
+     "Registro Incidencias",
+     "Verificación Temperaturas"
+    ],
+    "formulas": 0,
+    "resumen": "Checklist de recepción íntegramente manual (cantidad/calidad/temperatura/caducidad), sin ninguna fórmula ni siquiera de comparación pedido vs recibido."
+   },
+   {
+    "nombre": "05-control-mermas.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12069,
+    "hojas": [
+     "Instrucciones",
+     "Registro Diario Mermas",
+     "Análisis por Categoría",
+     "Dashboard Mermas",
+     "Plan de Acción"
+    ],
+    "formulas": 51,
+    "resumen": "Registro diario calcula coste total por línea (cantidad×coste/ud); 'Dashboard Mermas' y 'Análisis por Categoría' son tablas vacías sin una sola fórmula que sume o agrupe el registro diario."
+   },
+   {
+    "nombre": "06-fifo-caducidades.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11739,
+    "hojas": [
+     "Instrucciones",
+     "Control FIFO",
+     "Alertas Caducidad",
+     "Mapa Almacén"
+    ],
+    "formulas": 100,
+    "resumen": "Semáforo de caducidad correcto (días hasta caducar vs TODAY()); 'Alertas Caducidad' no filtra nada automáticamente, es una nota de texto pidiendo al usuario que filtre manualmente la otra hoja."
+   },
+   {
+    "nombre": "07-analisis-costes-compras.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10392,
+    "hojas": [
+     "Instrucciones",
+     "Coste por Categoría",
+     "Top 20 Productos",
+     "Dashboard KPIs"
+    ],
+    "formulas": 23,
+    "resumen": "Coste por Categoría suma filas/columnas del gasto mensual introducido a mano; 'Top 20 Productos' y 'Dashboard KPIs' están completamente vacíos, sin una sola fórmula pese a la columna 'Cómo Calcular' que describe el cálculo en texto."
+   },
+   {
+    "nombre": "BONUS-08-inventario-rapido-mensual.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9246,
+    "hojas": [
+     "Instrucciones",
+     "Conteo Rápido"
+    ],
+    "formulas": 101,
+    "resumen": "Conteo mensual de una hoja, calcula valor (precio×stock) y variación vs mes anterior por fila; consistente, sin problemas detectados."
+   },
+   {
+    "nombre": "BONUS-09-calculadora-punto-pedido.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9653,
+    "hojas": [
+     "Instrucciones",
+     "Calculadora",
+     "Parámetros"
+    ],
+    "formulas": 90,
+    "resumen": "Punto de pedido = consumo×lead time + stock seguridad (correcto); EOQ = ROUND(SQRT(2*consumo*365*2/0.5),0) con coste de pedido y coste de almacenamiento HARDCODEADOS (2 y 0.5) sin ninguna celda de precio/ud en la tabla, desconectados de la hoja 'Parámetros' que lista esos mismos valores como rango orientativo (2-5€ y 20-30% anual) sin que el usuario pueda cambiarlos."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "stock",
+    "title": "Inventario de Stock Diario",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:15"
+   },
+   {
+    "key": "proveedores",
+    "title": "Fichas de Proveedores",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:16"
+   },
+   {
+    "key": "pedidos",
+    "title": "Pedidos de Compra",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:17 — desc 'Generacion automatica desde niveles de stock' no se cumple en el xlsx"
+   },
+   {
+    "key": "recepcion",
+    "title": "Recepcion de Mercancias",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:18"
+   },
+   {
+    "key": "mermas",
+    "title": "Control de Mermas",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:19 — desc 'coste automatico y dashboard': coste sí, dashboard no"
+   },
+   {
+    "key": "fifo",
+    "title": "FIFO y Caducidades",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:20"
+   },
+   {
+    "key": "costes",
+    "title": "Analisis de Costes",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:21 — Dashboard KPIs sin fórmulas"
+   },
+   {
+    "key": "bonus-inventario-rapido",
+    "title": "BONUS: Inventario Rapido Mensual",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:22"
+   },
+   {
+    "key": "bonus-calculadora",
+    "title": "BONUS: Calculadora Punto de Pedido",
+    "ruta": "src/pages/KitInventarioDashboard.tsx:23"
+   }
+  ],
+  "landing": {
+   "productName": "Kit Control de Inventario y Compras — Plantillas Excel para Hosteleria",
+   "cifras_prometidas": [
+    "9 plantillas Excel",
+    "Precio 14 EUR (antes 49 EUR, -71%)",
+    "2 bonus valorados en 18 EUR (9+9)",
+    "rating 4.9/8 reviews",
+    "30 días garantía 100% reembolso"
+   ],
+   "entregables_prometidos": [
+    "Inventario de Stock Diario",
+    "Fichas de Proveedores",
+    "Pedidos de Compra",
+    "Recepcion de Mercancias",
+    "Control de Mermas",
+    "FIFO y Caducidades",
+    "Analisis de Costes de Compras",
+    "BONUS Inventario Rapido Mensual",
+    "BONUS Calculadora Punto de Pedido"
+   ],
+   "bonus": [
+    "Inventario Rapido Mensual — 9 EUR",
+    "Calculadora Punto de Pedido — 9 EUR"
+   ],
+   "faqs": [
+    "¿Sirve para cualquier tipo de restaurante?",
+    "¿Las plantillas se conectan entre si?",
+    "¿Cumple con los requisitos de APPCC?",
+    "¿En que se diferencia del software de inventario?",
+    "¿Puedo usarlo en varios restaurantes?",
+    "¿Hay garantia de devolucion?"
+   ]
+  },
+  "emails": {
+   "verify": "netlify/functions/verify-purchase.ts:133-139 — '9 plantillas de control de inventario', consistente con el fichero real (9 xlsx)",
+   "resend": "netlify/functions/resend-access.ts:133-139 — mismo texto, consistente"
+  },
+  "gate": "gate-flujo-postpago.py --offline --only kit-inventario: 9/9 ficheros OK, dl_ok/landing/access/library no verificados en modo offline (esperado), 1 aviso (drift webhook sin verificar, no aplica a este producto en particular). censo-entregables.py --only kit-inventario --fail --quiet: 9 xlsx censados, 0 defectos deterministas. Ambos gates confirman que la capa determinista (Fase A) está limpia; los hallazgos de este informe son de lógica de negocio/contenido, invisibles a esos scripts.",
+  "notas": [
+   "HALLAZGO 1 (grave, promesa incumplida — dinero): la landing y las FAQ afirman explícitamente que las plantillas 'se conectan entre sí' y que 'los niveles de stock alimentan automaticamente las sugerencias de pedido' (astro-site/src/data/productos/kits/kit-inventario.ts: hero.checkItems línea ~121 'Pedidos de compra auto-calculados desde niveles de stock', grid.templates 'Generacion automatica de pedidos desde niveles de stock', faqs[1].a 'Los niveles de stock alimentan automaticamente las sugerencias de pedido... Las fichas de proveedores se enlazan con los pedidos de compra', cta.items 'Pedidos de compra auto-generados desde stock'). Verificado con openpyxl: 01-inventario-stock-diario.xlsx, 02-fichas-proveedores.xlsx y 03-pedidos-compra.xlsx no tienen NINGÚN external_link ni fórmula cruzada entre libros — son 3 ficheros .xlsx independientes sin conexión técnica alguna. El usuario tiene que rellenar el pedido a mano igual que el resto. Esto es una promesa de producto (no solo de copy) que el entregable no cumple.",
+   "HALLAZGO 2 (moderado — dashboards vacíos): 3 de los 9 ficheros llevan una hoja llamada literalmente 'Dashboard' o cumplen esa función ('Resumen Dashboard' en 01, 'Dashboard Mermas' en 05, 'Dashboard KPIs' en 07) y las TRES tienen 0 fórmulas — son tablas de cabeceras totalmente en blanco para rellenar a mano, sin un solo SUM/COUNTIF/VLOOKUP que agregue los datos de las hojas de registro del mismo libro. La landing dice 'Control de Mermas... coste automatico y dashboard mensual' (grid.templates) y 'analisis de costes con dashboard' (testimonio de Elena Ruiz, usado también en schema.reviews) — el coste por línea sí es automático, el dashboard no lo es en ninguno de los 3 casos. Lo mismo pasa con 'Top 20 Productos' en 07 (vacío, 0 fórmulas) pese a tener columna '% del Total'.",
+   "HALLAZGO 3 (menor, bug de fórmula concreto): 02-fichas-proveedores.xlsx, hoja 'Comparativa Precios', columna J 'Mejor Proveedor' está vacía en las 10 filas — el header promete decir cuál de los 5 proveedores dio el precio mínimo (columna I ya calcula MIN(D:H) correctamente) pero falta la fórmula INDEX/MATCH que lo resuelva. El usuario tiene que buscar manualmente cuál de las 5 columnas coincide con el mínimo.",
+   "HALLAZGO 4 (menor, lógica de negocio floja): BONUS-09-calculadora-punto-pedido.xlsx, hoja 'Calculadora', columna G (EOQ) usa la fórmula ROUND(SQRT(2*C*365*2/0.5),0) con el coste de pedido (2) y el coste de almacenamiento (0.5) HARDCODEADOS en la fórmula, iguales para las 30 filas y para cualquier producto. La hoja 'Parámetros' del mismo libro lista esos dos conceptos como rango orientativo ('Coste de pedido: 2-5€', 'Coste almacenamiento: 20-30% anual') pero no hay ninguna celda de referencia enlazada — cambiar 'Parámetros' no cambia el resultado. Además la tabla no tiene columna de precio/unidad, así que el 20-30% anual de 'Parámetros' no puede aplicarse como % del valor del producto: el 0.5 de la fórmula es un número suelto sin relación con ese porcentaje. El EOQ es idéntico para un producto de 1€/kg que para uno de 50€/kg salvo por el consumo diario.",
+   "HALLAZGO 5 (informativo, no bug pero confunde): 04-recepcion-mercancias.xlsx tiene 0 fórmulas en las 3 hojas (incluida 'Verificación Temperaturas'), es 100% checklist manual — coherente con lo que promete la landing ('Checklist de verificacion'), así que NO es un incumplimiento, solo se anota porque contrasta con el resto del kit que sí automatiza cálculos.",
+   "No se ha encontrado ningún caso de reparación de fórmulas de Fase A que se le haya escapado; el censo --fail confirma 0 defectos deterministas y el gate de flujo post-pago está verde.",
+   "Recomendación no ejecutada (fuera de alcance de este inventario): (a) o bien añadir las fórmulas de agregación reales a los 3 dashboards, o bien suavizar el copy de landing/FAQ que dice 'se conectan entre sí' y 'automático' cuando en realidad es manual; (b) rellenar J en Comparativa Precios con INDEX/MATCH; (c) enlazar los parámetros de EOQ a la hoja 'Parámetros' o añadir columna de precio/ud."
+  ],
+  "changelog": "productos-changelog.ts 'kit-inventario' v1.1 (2026-08-22) documenta 'Revisión completa de los 9 ficheros' con foco en impresión A4 y numeración de versión — no menciona nada sobre las conexiones automáticas prometidas ni sobre los dashboards vacíos, es decir, la v1.1 (Fase A) no tocó ninguno de los 4 hallazgos de este informe: siguen presentes en el LIVE actual."
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (seo/schema/hero/grid/why/bonus/faqs/cta/testimonios), dashboard post-pago, emails de acceso y changelog contra el contenido real leído de los 9 .xlsx con openpyxl (fórmulas, validaciones de datos, formato condicional, hojas ocultas, number_format).",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora:G4:G33 (y H4:H33)",
+      "hallazgo": "La EOQ está mal parametrizada: el coste de almacenamiento va hardcodeado a 0,50 €/ud/año y no existe ninguna columna de precio/ud en la hoja. Como la EOQ es inversamente proporcional a la raíz de ese coste, cuanto MÁS CARO es el producto más se dispara el sobrepedido. El bonus que se vende a 9 EUR recomienda comprar de golpe semanas de género fresco — justo lo contrario de lo que el kit promete (reducir mermas). El propio fichero se contradice: Parámetros!B7 dice 'Lead time pescado 1 día / Entrega diaria obligatoria' y la Calculadora manda pedir cada 38 días.",
+      "evidencia": "G4='=IF(C4=\"\",\"\",ROUND(SQRT(2*C4*365*2/0.5),0))' — el 2 (coste de pedido) y el 0.5 (coste de almacenamiento) son literales. Ejecutado: consumo 2 kg/día de salmón → EOQ=76 kg y H4=ROUND(76/2)=38 días entre pedidos. Consumo 10 kg/día de solomillo → EOQ=171 kg, 17 días. Con el coste de posesión real que la propia hoja Parámetros!B5 declara ('20-30% anual' del valor): salmón a 14 €/kg → H=3,5 €/kg/año → EOQ=29 kg (2,6× menos); trufa a 600 €/kg → H=150 → EOQ=2 kg frente a las 38 que devuelve la ficha (19× de sobrepedido). Parámetros!B4='2-5 €' y B5='20-30% anual' son TEXTO, no celdas que la fórmula pueda leer.",
+      "fix": "Añadir a 'Calculadora' una columna 'Precio/ud (€)' y dos celdas de parámetros globales editables (p.ej. Parámetros!D4 coste de pedido y Parámetros!D5 % de posesión, como números). Reescribir G4 como =IF(OR(C4=\"\",Precio=\"\"),\"\",ROUND(SQRT(2*C4*365*CostePedido/(Precio*PctPosesion)),0)) y acotarla por vida útil: =MIN(EOQ, ConsumoDiario*DiasCaducidad). Sin columna de precio no hay EOQ posible: o se añade o se retira la columna y la promesa de EOQ de la landing y del dashboard."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina:C5:D24, Barra:C5:D19, Almacén:C5:D19 (50 filas)",
+      "hallazgo": "Las 50 filas precargadas tienen la categoría y la unidad asignadas por ROTACIÓN CÍCLICA, sin ninguna relación con el producto. Es el primer fichero que abre el cliente (tarjeta destacada del dashboard, borde dorado) y la primera fila que ve dice que la pechuga de pollo es pescado. La FAQ y el bloque 'why' venden exactamente esto como valor diferencial ('No son plantillas genericas de almacen'). Es un reembolso a la vista en los primeros 30 segundos de uso.",
+      "evidencia": "Cocina: B5='Pechuga de pollo' C5='Pescados' D5='ud' | B6='Solomillo ternera' C6='Lácteos' D6='L' | B7='Salmón fresco' C7='Verduras' | B8='Gambas' C8='Frutas' | B9='Tomate' C9='Secos/Granos' | B10='Cebolla' C10='Congelados' | B11='Lechuga' C11='Bebidas' | B12='Patata' C12='Limpieza' | B14='Sal' C14='Cárnicos'. Barra: B9='Coca-Cola' C9='Secos/Granos', B10='Cerveza grifo (barril)' C10='Congelados' D10='kg', B13='Vino tinto (copa)' C13='Varios' D13='kg'. Almacén: B5='Papel cocina' C5='Pescados', B9='Guantes nitrilo' C9='Secos/Granos'. Las categorías siguen el ciclo Pescados→Lácteos→Verduras→Frutas→Secos/Granos→Congelados→Bebidas→Limpieza→Varios→Cárnicos y las unidades el ciclo ud→L→kg. Contrasta con faqs[0].a de kit-inventario.ts: 'Las categorias estan pre-cargadas para hosteleria: carnicos, pescados, lacteos...'",
+      "fix": "Mapear producto→categoría→unidad a mano (son 50 filas): pollo/ternera→Cárnicos/kg, salmón/gambas→Pescados/kg, tomate/cebolla/lechuga/patata→Verduras/kg, aceite/vinagre→Varios/L, papel/film/bolsas/guantes→Limpieza/ud, refrescos/cervezas/vinos→Bebidas/ud (y contar el vino en botellas, no en 'copa'). Añadir validación de lista en C con las 10 categorías canónicas para que el usuario no pueda desalinearlas al ampliar filas."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "hero.checkItems[2], grid.templates[2].desc, faqs[1].a, schema.faqs[1].a, cta.items[2] + src/pages/KitInventarioDashboard.tsx:17",
+      "hallazgo": "La interconexión entre plantillas se afirma CINCO veces en la landing, una en el schema FAQPage indexable y una más en la tarjeta del dashboard post-pago. Verificado con openpyxl: en los 9 ficheros no existe ni una sola referencia externa ni entre hojas — cero '[' , cero nombres de hoja citados en fórmula. El cliente compra por una promesa que ningún fichero cumple, y la afirmación está en el JSON-LD que Google indexa.",
+      "evidencia": "faqs[1].a: 'Los niveles de stock alimentan automaticamente las sugerencias de pedido. Las fichas de proveedores se enlazan con los pedidos de compra.' Contra 03-pedidos-compra.xlsx:Pedido Actual — B9:E28 están vacías y las únicas fórmulas son F9='=IF(D9=\"\",\"\",D9*E9)' y H9='=IF(F9=\"\",\"\",F9*(1+G9/100))', ambas intra-fila. B3='Proveedor:' es texto libre sin validación (data_validations = 0 en toda la hoja). 01-inventario-stock-diario.xlsx:Cocina!I5='=IF(G5=\"\",\"\",IF(G5<E5,F5-G5,0))' calcula 'A Pedir' pero nadie lo lee desde 03.",
+      "fix": "Dos caminos, y hay que elegir uno antes de seguir vendiendo: (a) implementar de verdad — hoja 'Sugerencia de pedido' en 03 con =IFERROR(VLOOKUP(...)) contra un rango con nombre del 01 y validación de lista en B3 apuntando al Directorio de 02; o (b) reescribir los cinco textos a lo que el kit hace realmente ('columna A Pedir que te dice cuánto reponer, lista para copiar al pedido'). Lo que no puede quedarse es la redacción actual, que es falsable en un minuto."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/04-recepcion-mercancias.xlsx",
+      "ubicacion": "Instrucciones:A9 + Control Recepción:G4:G33",
+      "hallazgo": "La hoja de instrucciones del propio fichero afirma que las temperaturas fuera de rango se marcan automáticamente en rojo. Es falso: la hoja no tiene ni una fórmula ni una sola regla de formato condicional. Que la mentira esté DENTRO del entregable (no solo en la landing) es lo grave: el cliente introduce 9 °C en carne y espera que la casilla se ponga roja; no pasa nada y da la entrega por buena. Barrido en los 9 ficheros: conditional_formatting = 0 en las 30 hojas.",
+      "evidencia": "Instrucciones:A9='4. Las temperaturas fuera de rango se marcan automáticamente en rojo.' Control Recepción tiene 0 fórmulas (censo determinista lo confirma: formulas=0) y las únicas validaciones son tres listas '\"✓,✗,—\"' en F4:F33, H4:H33 y J4:J33 — todas de marcado manual. El único 'semáforo' del kit son emojis dentro de cadenas de texto (01:Cocina!H5, 06:Control FIFO!H5), no color de celda.",
+      "fix": "En Control Recepción!H4 sustituir el desplegable manual por =IF(G4=\"\",\"\",IF(G4<=VLOOKUP(categoría,'Verificación Temperaturas'!A:C,3,0),\"✓ OK\",\"✗ REVISAR\")) y añadir formato condicional real sobre G4:G33 (regla de fórmula, relleno rojo). Si no se implementa, borrar Instrucciones:A9 — hoy es una afirmación falsa firmada dentro del producto."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/03-pedidos-compra.xlsx",
+      "ubicacion": "Instrucciones:A9 (y 07:Instrucciones:A8, BONUS-09:Instrucciones:A11)",
+      "hallazgo": "Tres pestañas prometidas por escrito NO EXISTEN en el libro que las anuncia. No es una promesa de marketing: es la guía de uso del entregable remitiendo al comprador a pestañas inexistentes. La de BONUS-09 además se vende en la landing como característica del bonus de 9 EUR.",
+      "evidencia": "03-pedidos-compra.xlsx:Instrucciones:A9=\"4. La pestaña 'Imprimible' está optimizada para enviar o imprimir.\" → hojas reales: ['Instrucciones','Pedido Actual','Historial Pedidos']. 07-analisis-costes-compras.xlsx:Instrucciones:A8='2. Evolución Mensual — tendencia de costes 12 meses' → hojas reales: ['Instrucciones','Coste por Categoría','Top 20 Productos','Dashboard KPIs']. BONUS-09:Instrucciones:A11='3. El simulador te permite probar diferentes escenarios de demanda.' → hojas reales: ['Instrucciones','Calculadora','Parámetros']; y grid.templates[8].desc de kit-inventario.ts remata 'Simulador de demanda variable.' Ninguna hoja está oculta (comprobado sheet_state='visible' en las 30).",
+      "fix": "Crear las tres hojas o borrar las tres líneas. La de 07 es la más barata de crear: 'Evolución Mensual' ya está implícita en Coste por Categoría!B14:M14 (totales por mes) — basta una hoja con esa fila y un gráfico de líneas. 'Imprimible' se resuelve marcando el rango de impresión de 'Pedido Actual'. El simulador de BONUS-09 exige diseño; si no se hace, quitar también la promesa de la landing."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "seo.description, schema.productDescription, hero.description",
+      "hallazgo": "'9 plantillas Excel con formulas automaticas' se afirma en el título SEO indexable, en el schema Product y en el hero. Una de las nueve tiene CERO fórmulas y otras tres tienen la lógica solo en una hoja de las cuatro o cinco. La afirmación cuantificada es refutable abriendo un fichero.",
+      "evidencia": "04-recepcion-mercancias.xlsx: 0 fórmulas en sus 4 hojas (confirmado con openpyxl; es un checklist con tres desplegables ✓/✗/—). 02-fichas-proveedores.xlsx: 30 fórmulas, todas en 2 de las 5 hojas ('Directorio Proveedores' y 'Condiciones Comerciales' solo tienen la numeración A4:A23 y A4:A13). 07-analisis-costes-compras.xlsx: 23 fórmulas, todas en 'Coste por Categoría'; 'Top 20 Productos' y 'Dashboard KPIs' tienen 0.",
+      "fix": "O se dota de fórmulas al 04 (discrepancia pedido vs recibido, validación de temperatura) y a las hojas huecas, o se cambia el copy a '9 plantillas Excel, 8 con cálculo automático' / 'plantillas Excel listas para usar'. Es una cifra en el schema Product: conviene que sea cierta."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "faqs[2].a y schema.faqs[2].a ('¿Cumple con los requisitos de APPCC?' → 'Si.')",
+      "hallazgo": "Se afirma cumplimiento normativo de forma taxativa, sin matices, y además dentro del FAQPage que Google indexa. Lo que entrega el kit es un checklist manual sin límites críticos por producto, sin acciones correctoras vinculadas, sin verificación y sin registro de firma operativo. Un titular que confíe en esta frase ante una inspección se lleva la sanción y viene a por el reembolso — y la frase escrita es la prueba de la reclamación.",
+      "evidencia": "faqs[2].a: 'Si. La plantilla de recepcion incluye control de temperaturas y la de FIFO gestiona caducidades con alertas por colores. Ambas son trazables y auditables para inspecciones.' Contra 04-recepcion-mercancias.xlsx: 'Control Recepción' 0 fórmulas y sin CF (no hay 'alertas por colores'), 'Registro Incidencias' solo cabecera A3:H3 sin una fila, 'Verificación Temperaturas' es una tabla de referencia estática A4:C9. La columna L3='Firmado' no tiene ni validación ni fecha. No existe documento de plan APPCC, ni cuadro de gestión, ni verificación.",
+      "fix": "Reescribir a algo defendible: 'Estas plantillas te ayudan a documentar dos de los registros que pide tu plan APPCC (recepción y trazabilidad de caducidades). No sustituyen al plan APPCC de tu establecimiento, que debe estar redactado y validado por tu técnico.' Cambiarlo también en schema.faqs, que es la versión que se indexa. Nota: el kit tiene un hermano dedicado (pack-appcc, 14 EUR) — enlazarlo aquí convierte el matiz en venta cruzada."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/04-recepcion-mercancias.xlsx",
+      "ubicacion": "Verificación Temperaturas:A4:C9",
+      "hallazgo": "La tabla de temperaturas de referencia — el único contenido técnico del fichero y el que sostiene el argumento APPCC de toda la landing — da un umbral único de 7 °C para 'Carne fresca'. El Reglamento (CE) 853/2004 Anexo III solo permite 7 °C a las canales y despiece de ungulados: aves y lagomorfos son ≤4 °C, preparados de carne ≤4 °C y carne picada ≤2 °C. Un jefe de economato que siga esta tabla acepta carne picada a 6 °C dándola por buena, con el registro firmado como prueba en contra en la inspección.",
+      "evidencia": "A4='Carne fresca' B4='0 a 4°C' C4='7°C máx.' — una sola fila para toda la familia cárnica, sin distinguir picada, aves ni preparados. A9='Huevos' B9='< 18°C transporte' C9='20°C máx.' — el Reglamento (CE) 589/2008 fija la conservación y el transporte preferentemente entre 5 y 12 °C constantes; el '<18 °C' no corresponde a ninguna referencia normativa. A5='Pescado fresco' C5='4°C máx.' cuando la norma exige temperatura próxima a la fusión del hielo (0-2 °C), que la propia columna B5 recoge bien.",
+      "fix": "Desglosar en filas: 'Canal/despiece ungulados ≤7 °C', 'Aves y lagomorfos ≤4 °C', 'Preparados de carne ≤4 °C', 'Carne picada ≤2 °C', 'Despojos ≤3 °C', 'Huevos 5-12 °C constantes', 'Pescado fresco 0-2 °C (hielo fundente)'. Añadir en C la columna 'Base normativa' citando Reg. 853/2004 y 589/2008: eso además refuerza el argumento de venta, hoy sostenido sobre una tabla que no cita nada."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/06-fifo-caducidades.xlsx",
+      "ubicacion": "Alertas Caducidad:A7 + Control FIFO:H5:H54",
+      "hallazgo": "El semáforo mete en el mismo cubo 'URGENTE' el producto que caduca mañana y el que caducó hace tres días, y el protocolo escrito dice para ese cubo 'usar HOY o descartar'. Autoriza por escrito a servir producto caducado, a elección del operario. Es el peor consejo posible en un producto que se vende con el argumento APPCC.",
+      "evidencia": "H5='=IF(G5=\"\",\"\",IF(G5<=1,\"🔴 URGENTE\",IF(G5<=3,\"🟡 PRONTO\",\"🟢 OK\")))' — G5='=IF(F5=\"\",\"\",F5-TODAY())' devuelve negativo para producto caducado y G5<=1 lo captura igual que el que caduca mañana. Alertas Caducidad:A7='1. Productos con 🔴 URGENTE → usar HOY o descartar y registrar en Control de Mermas.' Instrucciones:A8='🔴 Rojo = caduca mañana o ya caducado' — el fichero es consciente de que mezcla los dos casos.",
+      "fix": "Cuatro niveles: =IF(G5<0,\"⛔ CADUCADO — DESECHAR\",IF(G5<=1,\"🔴 USAR HOY\",IF(G5<=3,\"🟡 PRONTO\",\"🟢 OK\"))). Y reescribir A7 en dos líneas: '⛔ CADUCADO → retirada obligatoria, no es utilizable bajo ningún concepto; registrar en Control de Mermas' / '🔴 USAR HOY → priorizar en el servicio de hoy'."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/05-control-mermas.xlsx",
+      "ubicacion": "Plan de Acción (hoja completa: A1 y nada más)",
+      "hallazgo": "La hoja 'Plan de Acción' contiene únicamente su título. Ni cabeceras de columna, ni filas, ni fórmulas. Se vende como entregable en la tarjeta del grid, en la lista de cierre de la landing y en la propia hoja de instrucciones del fichero. Es una pestaña en blanco con nombre.",
+      "evidencia": "05-control-mermas.xlsx:'Plan de Acción' dims=A1:G3, único contenido A1='PLAN DE ACCIÓN — REDUCCIÓN DE MERMAS'. Instrucciones:A10=\"5. 'Plan de Acción' te ayuda a reducir mermas sistemáticamente.\" grid.templates[4].desc: '...dashboard mensual y plan de accion.' cta.items[4]: 'Control de mermas con dashboard y plan de accion.'",
+      "fix": "Rellenar con la estructura mínima de un plan: cabeceras 'Problema detectado | Categoría | Coste mensual (€) | Causa raíz | Acción correctora | Responsable | Fecha límite | Estado | Coste tras la acción' y 4-6 filas precargadas con las causas típicas (sobreproducción de servicio, mal etiquetado FIFO, roturas en cámara, corte con merma excesiva) para que el cliente vea un ejemplo y no un folio en blanco."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/07-analisis-costes-compras.xlsx",
+      "ubicacion": "Dashboard KPIs:B4:B9 y Top 20 Productos:B4:I23",
+      "hallazgo": "Las dos hojas que dan nombre al entregable en el dashboard post-pago ('Food cost %, coste por cubierto, tendencias') no tienen una sola fórmula. La columna D del dashboard DESCRIBE EN TEXTO cómo calcular cada KPI, que es la confesión de que la plantilla no lo calcula: el cliente pagó por una hoja de cálculo y recibió instrucciones para hacer la cuenta a mano. Y ni siquiera puede: no hay celda donde meter las ventas ni el número de cubiertos.",
+      "evidencia": "Dashboard KPIs: A4='Food Cost %' B4=vacía C4='28-32%' D4='Coste materia prima / Ventas × 100'; A5='Coste por Cubierto (€)' B5=vacía D5='Compras del mes / Nº cubiertos'; A6='Gasto Total Compras (€)' B6=vacía D6='Suma todas las categorías'. B6 podría ser ='Coste por Categoría'!N14 y no lo es. No existe ninguna celda de entrada de Ventas ni de Nº de cubiertos en todo el libro. 'Top 20 Productos' solo tiene la numeración A4:A23 (1..20); grid.templates[6].desc promete 'alertas de variacion de precios (>5%)' y la columna H3='Variación vs Anterior' está vacía en las 20 filas.",
+      "fix": "Añadir en Dashboard KPIs un bloque de entradas (Ventas del mes, Nº de cubiertos, Existencias inicial y final) y conectar: B6='Coste por Categoría'!N14, B4=IF(Ventas=0,\"\",(Ei+Compras-Ef)/Ventas), B5=IF(Cubiertos=0,\"\",Consumo/Cubiertos), B7=variación vs mes anterior. En 'Top 20': F4=IF($D$24=0,\"\",D4/$D$24), H4=IF(G_ant=0,\"\",(G4-G_ant)/G_ant) y formato condicional >5%."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "alta",
+      "fichero": "astro-site/public/dl/kit-inventario/05-control-mermas.xlsx",
+      "ubicacion": "Análisis por Categoría:B4:E10 y Dashboard Mermas:B4:D8",
+      "hallazgo": "El registro diario sí calcula el coste línea a línea, pero las dos hojas que lo convierten en información — el análisis por categoría y el dashboard — están vacías de fórmulas. Y el KPI estrella del producto, el '<3% sobre compras' que se repite en instrucciones, grid y dashboard, es INCALCULABLE: no existe ninguna celda donde introducir las compras del mes. La agregación es un SUMIF de un renglón contra datos que ya están en el mismo libro.",
+      "evidencia": "Análisis por Categoría: A4:A10 lleva las 7 categorías precargadas y B/C/D/E ('Nº Incidencias','Coste Total (€)','% del Total','Tendencia vs Mes Anterior') están vacías en las 7 filas. Dashboard Mermas: A5='% mermas / compras' C5='< 3%' y B5 vacía, sin ninguna celda 'Compras del mes' en el libro. Existe el dato para alimentarlo: 'Registro Diario Mermas'!G55='=SUM(G4:G53)'. Instrucciones:A8=\"3. 'Análisis por Categoría' muestra dónde pierdes más dinero\" y A9=\"4. 'Dashboard' resume las métricas clave del mes\" — ninguna de las dos cosas ocurre.",
+      "fix": "C4='=SUMIF(\\'Registro Diario Mermas\\'!$C:$C,A4,\\'Registro Diario Mermas\\'!$G:$G)', B4='=COUNTIF(...)', D4='=IF($C$11=0,\"\",C4/$C$11)'. En el dashboard: B4=\\'Registro Diario Mermas\\'!G55, añadir celda de entrada 'Compras del mes (€)' y B5=B4/Compras, B7='=INDEX(A4:A10,MATCH(MAX(C4:C10),C4:C10,0))', B8 con MODA sobre la columna Motivo. Además falta validación de lista en 'Registro Diario Mermas'!C (Categoría): hoy se teclea libre y ningún SUMIF casaría."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "schema.aggregateRating (4.9 / 8) + schema.reviews[0..2] + testimonials.items[0..7]",
+      "hallazgo": "Se emite un aggregateRating de 4,9 sobre 8 reseñas y tres objetos Review con nombre y apellido, más ocho testimonios en página con resultados cuantificados, sin que exista ningún sistema de recogida de reseñas del producto. Dos riesgos a la vez: la Directiva Omnibus (transpuesta en España por el RDL 24/2021 en el TRLGDCU) prohíbe presentar como auténticas reseñas sin medidas razonables de verificación, y las políticas de rich results de Google sancionan el marcado de reseñas autogeneradas — retirarle las estrellas al resultado de un producto de 14 EUR es perder la ventaja competitiva en SERP. Agravante: varios testimonios atribuyen a los ficheros capacidades que no tienen.",
+      "evidencia": "schema.aggregateRating={ratingValue:'4.9', reviewCount:'8'}; reviews[0].author='Miguel Fernandez'. testimonials.items[6] (Jorge Navarro): 'La calculadora de punto de pedido nos cambio la vida' — es el fichero con la EOQ rota de COM-01. items[3] (Patricia Vega): 'El control de recepcion... nos ha evitado 3 incidencias de temperatura' — 04-recepcion tiene 0 fórmulas y 0 formato condicional. Los 8 avatares son genéricos y correlativos: '/avatars/avatar-1.jpg' … '/avatars/avatar-8.jpg'.",
+      "fix": "Decisión de John (en memoria consta que 'reviews' está aparcado). Mientras no haya sistema real: retirar aggregateRating y reviews del JSON-LD — el resto del schema Product sigue siendo válido — y dejar los testimonios en página sin marcado, etiquetados como 'casos de uso ilustrativos'. Y corregir los dos testimonios que describen funciones inexistentes: hoy son la munición de una reclamación."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina/Barra/Almacén columna J ('Valor (€)') + hoja 'Resumen Dashboard'",
+      "hallazgo": "La 'valoración de stock' se promete en la tarjeta del grid y en la tarjeta del dashboard post-pago. La columna existe con su cabecera y está vacía en las 50 filas, y no hay ninguna columna de precio/ud con la que pudiera calcularse. La hoja 'Resumen Dashboard' —que las instrucciones dicen que 'totaliza automáticamente'— es una fila de cabeceras y nada más.",
+      "evidencia": "Cocina!J4='Valor (€)' y J5:J24 = None en las 20 filas (mismo patrón en Barra y Almacén). No existe columna de precio unitario: las cabeceras son A='#', B='Producto', C='Categoría', D='Unidad', E='Par Level', F='Par Max', G='Stock Real', H='Estado', I='A Pedir', J='Valor (€)', K='Proveedor', L='Notas'. 'Resumen Dashboard' dims=A1:D3: A1='RESUMEN DE STOCK', A3='Zona' B3='Productos con stock bajo' C3='Productos a pedir' D3='Valor total stock (€)' — 0 fórmulas. Instrucciones:A20=\"- La pestaña 'Resumen' totaliza automáticamente\" (y además la llama 'Resumen', no 'Resumen Dashboard').",
+      "fix": "Insertar columna 'Precio/ud (€)' y poner J5='=IF(OR(G5=\"\",Precio=\"\"),\"\",G5*Precio)'. En 'Resumen Dashboard' añadir las tres filas Cocina/Barra/Almacén con =COUNTIF(Cocina!H:H,\"*BAJO*\"), =COUNTIF(Cocina!H:H,\"*PEDIR*\") y =SUM(Cocina!J:J). Son nueve fórmulas que convierten una hoja muerta en el dashboard que anuncia su nombre."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/06-fifo-caducidades.xlsx",
+      "ubicacion": "Mapa Almacén:A3:E9",
+      "hallazgo": "El 'Mapa de almacén' se anuncia dos veces en la landing con la palabra 'incluido' y una tercera en la tarjeta del dashboard. Lo que se entrega es una fila de cinco cabeceras sobre seis filas en blanco. En un fichero cuyas columnas 'Zona Almacén' y 'Posición' dependen de ese mapa para tener sentido, entregarlo vacío deja la mitad del Control FIFO sin referencia.",
+      "evidencia": "'Mapa Almacén' dims=A1:E9, contenido total: A1='MAPA DE ALMACÉN — ZONAS DE ALMACENAMIENTO', A3='Zona' B3='Temperatura' C3='Categorías' D3='Capacidad' E3='Notas'. Filas 4-9 vacías. grid.templates[5].desc: 'Mapa de almacen incluido.'; why.reasons[2].desc: '...trazabilidad FIFO, registro de caducidades y mapa de almacen.'; KitInventarioDashboard.tsx:20: 'Rotacion con alertas por colores y mapa almacen.'",
+      "fix": "Precargar las zonas estándar de un restaurante con su temperatura: Cámara refrigeración carnes (0-4 °C), Cámara pescado (0-2 °C sobre hielo), Cámara lácteos y postres (0-6 °C), Cámara verduras (4-8 °C), Congelador (-18 °C), Economato seco (15-20 °C), Bodega (12-16 °C), Zona limpieza (separada de alimentos). Con eso el mapa es útil desde el minuto uno y las columnas I/J del Control FIFO ganan una lista de validación."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/03-pedidos-compra.xlsx",
+      "ubicacion": "Pedido Actual:G9:G28 (IVA %) y F30:F31",
+      "hallazgo": "El IVA va precargado al 10 % en las veinte líneas del pedido. El propio kit inventaría bebidas alcohólicas y material de limpieza, que tributan al 21 %, y productos de la lista básica (pan, leche, huevos, frutas, verduras, quesos, cereales) que van al 4 %. Un pedido de barra o de limpieza sale con el total mal, y ese total es el documento que el cliente envía al proveedor y con el que casa la factura.",
+      "evidencia": "G9=10, G10=10, … G28=10 (literal en las 20 filas). H9='=IF(F9=\"\",\"\",F9*(1+G9/100))' y F31='=SUM(H9:H28)'. En el mismo kit, 01-inventario-stock-diario.xlsx:Barra precarga 'Cerveza grifo (barril)', 'Vino tinto (copa)', 'Vino blanco (copa)' (21 %) y Almacén precarga 'Lavavajillas', 'Desengrasante', 'Lejía alimentaria', 'Bolsas basura', 'Guantes nitrilo' (21 %), además de 'Leche entera' y 'Huevos' (4 %).",
+      "fix": "Dejar G en blanco con validación de lista '4,10,21' y una nota en Instrucciones explicando los tres tipos con ejemplos de la carta del propio kit. Añadir además el desglose que pide un pedido profesional: fila 'Base imponible', fila 'Cuota IVA' (=F31-F30) y 'Total'. Hoy solo hay 'SUBTOTAL' y 'TOTAL CON IVA', sin la cuota."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/03-pedidos-compra.xlsx",
+      "ubicacion": "Pedido Actual:B3 y el libro completo (data_validations = 0)",
+      "hallazgo": "'Dropdown de proveedores' es una característica enumerada literalmente en la tarjeta del grid. El fichero no tiene ni una sola validación de datos en ninguna de sus tres hojas: el proveedor se teclea a mano cada vez, con lo que el 'Historial Pedidos' nunca podrá agruparse por proveedor sin errores de tecleo.",
+      "evidencia": "grid.templates[2].desc: 'Dropdown de proveedores, subtotales con IVA y formato imprimible para enviar.' Barrido openpyxl de 03-pedidos-compra.xlsx: Instrucciones DV=0, 'Pedido Actual' DV=0, 'Historial Pedidos' DV=0. B3 solo contiene la etiqueta A3='Proveedor:' y su celda contigua vacía. Contraste: 04-recepcion sí usa validaciones ('\"✓,✗,—\"' en F/H/J) y 05-mermas también (lista de 7 motivos en H4:H53) — la técnica está en el kit, sencillamente no se aplicó aquí.",
+      "fix": "Añadir en 03 una hoja oculta 'Listas' o un rango con nombre alimentado desde el Directorio de 02, y poner validación de lista en la celda de proveedor y en B9:B28 (productos). Es el mismo mecanismo que ya usa 05 y de paso deja medio construida la conexión de COM-03."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/02-fichas-proveedores.xlsx",
+      "ubicacion": "Comparativa Precios:J4:J13 + Directorio Proveedores:B4:K23",
+      "hallazgo": "La comparativa calcula el mejor precio pero deja vacía la columna que dice QUIÉN lo ofrece, que es la única información accionable de la tabla. Y las columnas se llaman 'Prov. 1'…'Prov. 5' sin ninguna relación con el Directorio de la hoja anterior, que se entrega con 20 filas numeradas y todo lo demás en blanco. El testimonio de Laura Martinez ('la comparativa de proveedores nos ahorro mas de 2.000 EUR') describe una tabla que no dice a quién comprar.",
+      "evidencia": "Comparativa Precios: I4='=MIN(D4:H4)', K4='=IF(I4=0,\"\",ROUND((MAX(D4:H4)-I4)/I4*100,1))', J4 (cabecera J3='Mejor Proveedor') = None en las 10 filas. Directorio Proveedores: solo A4:A23 con 1..20; B..K vacías en las 20 filas pese a grid.templates[1].desc: 'Directorio completo, comparativa de precios entre 5 proveedores...'. 'Condiciones Comerciales' igual: solo A4:A13.",
+      "fix": "J4='=IF(I4=0,\"\",INDEX($D$3:$H$3,MATCH(I4,D4:H4,0)))'. Y sustituir las cabeceras D3:H3 por referencias al Directorio (='Directorio Proveedores'!B4, etc.) para que renombrar un proveedor una vez se propague a la comparativa. Nota adicional: MIN sobre un rango totalmente vacío devuelve 0 — envolver I4 en =IF(COUNT(D4:H4)=0,\"\",MIN(D4:H4)) evita que la tabla muestre ceros al abrirla."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/",
+      "ubicacion": "01:Cocina!C5:C24 vs 05:'Análisis por Categoría'!A4:A10 vs 07:'Coste por Categoría'!A4:A13",
+      "hallazgo": "El kit usa TRES taxonomías de categorías distintas e incompatibles entre sus propios ficheros, y ninguna coincide con la lista de ocho que la landing enumera como argumento de venta. Es lo que impide de raíz cualquier consolidación entre plantillas y explica por qué la promesa de interconexión (COM-03) nunca se pudo implementar.",
+      "evidencia": "01 usa 10: Cárnicos, Pescados, Lácteos, Verduras, Frutas, Secos/Granos, Congelados, Bebidas, Limpieza, Varios. 05 usa 7: Cárnicos, Pescados, Lácteos, Verduras/Frutas (fusionadas), Secos, Congelados, Bebidas (sin Limpieza ni Varios). 07 usa 10 distintas: …Verduras/Frutas, Secos/Granos, Congelados, Bebidas Alcohólicas, Bebidas No Alcohólicas, Limpieza, Otros. La landing (why.reasons[0].desc y faqs[0].a) enumera 8: 'carnicos, pescados, lacteos, verduras, secos, congelados, bebidas, limpieza'.",
+      "fix": "Fijar una taxonomía canónica única (propuesta: las 10 de 07, que son las más completas por separar bebidas), replicarla idéntica en 01, 05 y 07, y usarla como lista de validación en las tres. Actualizar los dos textos de la landing para que enumeren esa misma lista. Es requisito previo de cualquier SUMIF entre ficheros."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "src/components/kit-inventario/BonusSection.tsx",
+      "ubicacion": "BonusSection.tsx (subtítulo y bloque de cierre) + kit-inventario.ts pricing.priceOld/bonusSaveLine",
+      "hallazgo": "La aritmética de la oferta no cierra y está toda en la misma pantalla: se anuncian bonus 'adicionales valorados en 18 EUR' y tres párrafos más abajo el 'valor total del pack completo' son 49 EUR con un ahorro de 35, que es exactamente 49−14. Los 18 EUR de bonus no están en ninguna cuenta. Un comprador escéptico hace esa resta en dos segundos y concluye que el valor de los bonus es inventado — justo en el bloque diseñado para justificar el precio.",
+      "evidencia": "BonusSection.tsx: '<p>Ademas de las 7 plantillas principales, recibes estos recursos adicionales — valorados en 18 EUR</p>' y en el mismo componente '<p>Valor total del pack completo</p><p>49 EUR</p><p>14 EUR</p><p>Ahorra 35 EUR HOY</p>'. kit-inventario.ts: pricing.priceOld='49 EUR', pricing.price='14 EUR', pricing.bonusSaveLine='Ahorra 35 EUR HOY', bonus.items[*].value='9 EUR' ×2.",
+      "fix": "Elegir una de las dos historias y sostenerla: (a) los bonus van aparte → 'Valor total del pack completo: 67 EUR' y 'Ahorra 53 EUR HOY'; o (b) los bonus ya están dentro del ancla → quitar 'adicionales' y los '9 EUR' de cada tarjeta, dejando '2 bonus incluidos'. La versión actual afirma las dos cosas a la vez."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "pricing.priceOld/discountBadge/heroNote/buyBoxNote + schema.priceValidUntil",
+      "hallazgo": "El ancla de precio se presenta como urgencia temporal ('Precio especial de lanzamiento. Sube pronto', −71 %) mientras el propio schema declara ese precio válido hasta fin de año. Si el producto nunca se ha vendido a 49 EUR o el 'lanzamiento' lleva meses activo, el descuento anunciado incumple el art. 20 del TRLGDCU tras la reforma Omnibus, que exige que el precio anterior sea el más bajo aplicado en los 30 días previos. Y de cara al cliente, un 'sube pronto' que no sube nunca quema la credibilidad de toda la página.",
+      "evidencia": "pricing={priceOld:'49 EUR', price:'14 EUR', discountBadge:'-71%', heroNote:'Precio especial de lanzamiento. Sube pronto', buyBoxNote:'Precio especial de lanzamiento — 71% de descuento'} frente a schema.priceValidUntil:'2026-12-31'. updateNote:'Producto actualizado · Versión 1.1 · agosto 2026' sitúa el producto con al menos meses de vida.",
+      "fix": "O se fija una fecha real de subida y se cumple (y entonces priceValidUntil coincide con ella), o se retira el ancla y se vende a 14 EUR a secas, que para este precio funciona igual. Documentar en algún sitio el histórico de precio del producto: es lo que se pide si alguien reclama."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "why.reasons[3] ('Software de Gestión Cobra 60 EUR/mes') vs faqs[3].a ('entre 50 y 100 EUR/mes')",
+      "hallazgo": "Publicidad comparativa con una afirmación de equivalencia funcional que los ficheros desmienten, y con dos cifras distintas para el mismo competidor en la misma página. 'Las mismas funciones que los SaaS de gestion de inventario' es insostenible en un kit sin stock en tiempo real, sin conexión a TPV, sin multiusuario y —según los hallazgos anteriores— sin agregación entre hojas del mismo libro.",
+      "evidencia": "why.reasons[3].title: 'Software de Gestión Cobra 60 EUR/mes. Esto es 14 EUR'; .desc: 'Las mismas funciones que los SaaS de gestion de inventario, pero en Excel por un pago unico.' faqs[3].a: 'El software de inventario cobra entre 50 y 100 EUR/mes por restaurante.' Ninguna de las dos cifras cita fuente. Contra los ficheros: 07:'Dashboard KPIs' con 0 fórmulas, 05:'Dashboard Mermas' con 0 fórmulas, 01:'Resumen Dashboard' con 0 fórmulas.",
+      "fix": "Unificar la cifra (una sola, con rango y fuente citada) y cambiar la afirmación de equivalencia por una de suficiencia, que además vende mejor y es cierta: 'Cubre el control que de verdad usas a diario —stock, pedidos, mermas y caducidades— sin cuota mensual ni implantación'. Bajo el art. 10 de la Ley de Competencia Desleal, 'las mismas funciones' es la frase que hay que poder demostrar."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/07-analisis-costes-compras.xlsx",
+      "ubicacion": "Dashboard KPIs:D4, D5 y C5",
+      "hallazgo": "Las dos definiciones de KPI que el fichero da por escrito están mal planteadas, y son las que sostienen el argumento 'formulas que ahorran dinero' de la landing. Confunden compras con consumo (el food cost real es Existencias iniciales + Compras − Existencias finales, y el kit TIENE el inventario para calcularlo en 01 y BONUS-08), meten en el coste por cubierto categorías que no son materia prima, y fijan un objetivo absoluto que solo vale para un ticket medio concreto.",
+      "evidencia": "D4='Coste materia prima / Ventas × 100' sin definir consumo ni citar la variación de inventario. D5='Compras del mes / Nº cubiertos' — 'Coste por Categoría' incluye A12='Limpieza' y A13='Otros' en el total N14, así que 'compras del mes' arrastra productos que no son materia prima. C5='< 4,50 €' como objetivo universal: con un food cost del 30 % eso corresponde a un ticket medio de 15 €; un restaurante con ticket de 60 € tendría 18 €/cubierto y leería su dato como catastrófico.",
+      "fix": "D4='(Existencias iniciales + Compras del periodo − Existencias finales) / Ventas × 100' y añadir las tres celdas de entrada, enlazando existencias con BONUS-08:'Conteo Rápido'!G56. D5='Consumo de materia prima (sin limpieza ni otros) / Nº de cubiertos'. Sustituir C5 por un objetivo relativo: 'Ticket medio × food cost objetivo' con su celda de cálculo."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "media",
+      "fichero": "src/data/productos-changelog.ts",
+      "ubicacion": "línea 265-279, 'kit-inventario' v1.1 → title: 'Revisión completa de los 9 ficheros'",
+      "hallazgo": "El changelog que ve el cliente ya pagado en su dashboard anuncia una 'revisión completa' de agosto de 2026. Las tres líneas de detalle solo describen impresión A4, número de versión y metadatos. Con lo documentado en este informe vivo en los ficheros —categorías rotadas, tres pestañas inexistentes, cuatro dashboards vacíos— llamar 'revisión completa' a un pase de formato es sobrepromesa dirigida precisamente a quien ya pagó y podría estar esperando correcciones de fondo.",
+      "evidencia": "productos-changelog.ts:271-277: title:'Revisión completa de los 9 ficheros', changes:['Impresión en A4 configurada en todas las hojas...','Número de versión actualizado a 1.1 en la hoja de instrucciones de cada fichero.','Metadatos, instrucciones y autoría actualizados en los 9 ficheros.']. Ninguna de las tres toca contenido. El mismo texto se repite literal en 'kit-plan-financiero' y en la entrada anterior, lo que confirma que es un pase transversal automático, no una revisión de este producto.",
+      "fix": "Retitular a lo que fue: 'Mejoras de formato e impresión (A4) en los 9 ficheros'. Reservar 'Revisión completa' para la v1.2 que corrija el contenido — y entonces el changelog es un argumento de retención, no un reproche."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "faqs[4].a ('¿Puedo usarlo en varios restaurantes?')",
+      "hallazgo": "La respuesta se contradice en dos frases: dice que la licencia 'es personal' y acto seguido la declara 'ideal para consultores', que por definición entregan las plantillas a terceros. Ningún .xlsx incorpora términos de licencia —solo un copyright suelto—, así que ante una disputa no hay documento que diga qué se compró. Es la clase de ambigüedad que se resuelve a favor del consumidor y que además regala el producto a la reventa.",
+      "evidencia": "faqs[4].a: 'Si. La licencia es personal — puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para grupos de restauracion, multi-unidades y consultores.' En los ficheros, el único texto de derechos es el pie 01-inventario-stock-diario.xlsx:Cocina!A27='© 2026 AI Chef Pro · aichef.pro' — sin cláusula de uso, sin prohibición de redistribución.",
+      "fix": "Redactar la frase con el límite explícito: 'Licencia de uso para los establecimientos que tú gestionas. No incluye redistribución ni reventa a terceros; si eres consultor y quieres entregarlas a tus clientes, escríbenos a info@aichef.pro para la licencia profesional.' Y añadir esa línea al pie de la hoja de Instrucciones de los 9 ficheros — abre además una vía de ingreso que hoy se está regalando."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/06-fifo-caducidades.xlsx",
+      "ubicacion": "Control FIFO:E5:E54 ('Fecha Entrada') y H5:H54",
+      "hallazgo": "El fichero se titula y se vende como FIFO (First In First Out) pero lo que implementa es FEFO (First Expired First Out): todo el semáforo se calcula sobre la fecha de caducidad y la columna 'Fecha Entrada' no participa en ninguna fórmula del libro. No es un matiz académico — son dos políticas de rotación distintas, y el lote más antiguo no siempre es el que antes caduca. La landing repite 'rotacion First In First Out' cuatro veces.",
+      "evidencia": "E4='Fecha Entrada' y E5:E54 no aparecen en ninguna fórmula: G5='=IF(F5=\"\",\"\",F5-TODAY())' usa solo F (Fecha Caducidad) y H5 solo usa G. No hay ordenación, ni alerta de lote antiguo, ni comparación entre E y F. grid.templates[5].desc: 'Control de rotacion First In First Out con alertas por colores'.",
+      "fix": "Añadir una columna 'Orden de salida' que combine ambas cosas: =IF(F5=\"\",E5,MIN(E5+VidaÚtil,F5)) o, más simple, una alerta =IF(AND(E5<>\"\",E5>MIN($E$5:$E$54),G5>MIN($G$5:$G$54)),\"⚠ Hay lote más antiguo\",\"\"). Y ajustar el copy a 'rotación FIFO/FEFO' explicando la diferencia en Instrucciones: es contenido de valor que además demuestra criterio profesional."
+     },
+     {
+      "id": "COM-27",
+      "severidad": "media",
+      "fichero": "astro-site/public/dl/kit-inventario/",
+      "ubicacion": "12 de las 21 hojas de trabajo del kit (excluidas las 9 de 'Instrucciones')",
+      "hallazgo": "Más de la mitad de las hojas de trabajo del kit son esqueletos: cabecera (a veces ni eso) y ninguna fila de contenido ni fórmula. Individualmente cada una es un hallazgo menor; juntas definen el producto. Un comprador que abra los nueve ficheros seguidos encuentra doce pestañas en blanco a las que la landing pone nombre y precio, y eso es la conversación de reembolso.",
+      "evidencia": "Vacías de lógica: 01:'Resumen Dashboard' (solo A1 y cabecera A3:D3) · 02:'Directorio Proveedores' (solo A4:A23=1..20) · 02:'Condiciones Comerciales' (solo A4:A13) · 03:'Historial Pedidos' (solo cabecera A3:I3) · 04:'Control Recepción' (cabecera + 3 desplegables) · 04:'Registro Incidencias' (solo cabecera A3:H3) · 05:'Análisis por Categoría' · 05:'Dashboard Mermas' · 05:'Plan de Acción' (solo el título) · 06:'Mapa Almacén' · 07:'Top 20 Productos' · 07:'Dashboard KPIs'. Comprobado que ninguna está oculta: sheet_state='visible' en las 30 hojas del kit.",
+      "fix": "Priorizar por coste de implementación: las cuatro de agregación (01 Resumen, 05 Análisis + Dashboard, 07 Dashboard) se resuelven con SUMIF/COUNTIF sobre datos que ya están en el mismo libro — un par de horas y cambian la percepción del kit entero. Las de referencia (06 Mapa, 04 Verificación, 05 Plan de Acción) se resuelven precargando contenido de oficio. Las de registro (02 Directorio, 03 Historial, 04 Incidencias) se resuelven con 2-3 filas de ejemplo en gris para que no parezcan abandonadas."
+     },
+     {
+      "id": "COM-28",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-inventario/BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "Conteo Rápido:I5:I54",
+      "hallazgo": "La columna 'Variación' resta el stock del mes anterior sin comprobar que ese dato exista: la guarda mira la columna equivocada. Al hacer el primer inventario —el único momento garantizado en que todo cliente usa este bonus— la columna presenta la existencia completa como si fuese variación. Además la landing promete 'variaciones significativas' y lo que hay es una resta absoluta sin umbral ni porcentaje.",
+      "evidencia": "I5='=IF(F5=\"\",\"\",F5-H5)' — la condición valida F (Stock Actual) pero la fórmula depende de H (Stock Mes Anterior). Con F5=40 y H5 vacía devuelve 40. bonus.items[0].desc: 'Auto-calcula valoracion de stock y variaciones significativas vs mes anterior.' No hay ninguna columna de % ni umbral que defina 'significativa'. (El resto del fichero es el más sano del kit: G5='=IF(F5=\"\",\"\",E5*F5)' y G56='=SUM(G5:G54)' correctos.)",
+      "fix": "I5='=IF(OR(F5=\"\",H5=\"\"),\"\",F5-H5)' y añadir una columna '% Variación' con =IF(OR(H5=\"\",H5=0),\"\",(F5-H5)/H5) más formato condicional o un marcador de texto por encima de ±20 %, que es lo que da sentido a la palabra 'significativas'."
+     },
+     {
+      "id": "COM-29",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-inventario/02-fichas-proveedores.xlsx",
+      "ubicacion": "Evaluación Proveedores:H3, H4:H13, I4:I13 + Instrucciones:A9",
+      "hallazgo": "La columna se llama 'TOTAL' y contiene una MEDIA, la columna 'Nota' está vacía en las 10 filas, y la hoja de instrucciones enumera cuatro criterios cuando la tabla tiene cinco (y llama 'entrega' a lo que la tabla llama 'Puntualidad'). Detalles pequeños, pero es la hoja que sostiene el argumento de 'evaluacion de calidad/precio/entrega' del grid.",
+      "evidencia": "H3='TOTAL' con H4='=IF(C4=\"\",\"\",AVERAGE(C4:G4))'. I3='Nota' e I4:I13 = None. Instrucciones:A9='3. Evaluación — puntúa calidad, precio, entrega, servicio (1-5)' frente a las cabeceras reales C3='Calidad (1-5)' D3='Precio (1-5)' E3='Puntualidad (1-5)' F3='Servicio (1-5)' G3='Flexibilidad (1-5)'. La hoja se llama 'Evaluación Proveedores' y las instrucciones la llaman 'Evaluación'.",
+      "fix": "Renombrar H3 a 'PUNTUACIÓN MEDIA' y dar contenido a I4: =IF(H4=\"\",\"\",IF(H4>=4.5,\"A — Preferente\",IF(H4>=3.5,\"B — Válido\",IF(H4>=2.5,\"C — Vigilar\",\"D — Sustituir\")))). Corregir A9 a los cinco criterios reales y usar el nombre exacto de la hoja."
+     },
+     {
+      "id": "COM-30",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-inventario/03-pedidos-compra.xlsx",
+      "ubicacion": "Pedido Actual:A3:A6",
+      "hallazgo": "El documento se vende con 'formato imprimible para enviar' al proveedor y no identifica al comprador: no hay nombre del establecimiento, ni CIF, ni dirección de entrega, ni persona de contacto, ni teléfono. Un proveedor que reciba esa hoja no sabe quién pide ni dónde descargar.",
+      "evidencia": "Los únicos campos de cabecera son A3='Proveedor:', A4='Fecha pedido:', A5='Fecha entrega:', A6='Nº Pedido:'. grid.templates[2].desc: '...y formato imprimible para enviar.'",
+      "fix": "Añadir un bloque de emisor en las filas 3-6 de la columna E-H: 'Establecimiento', 'CIF', 'Dirección de entrega', 'Contacto y teléfono'. Cuatro celdas que convierten la hoja en un documento enviable de verdad."
+     },
+     {
+      "id": "COM-31",
+      "severidad": "baja",
+      "fichero": "astro-site/public/dl/kit-inventario/01-inventario-stock-diario.xlsx",
+      "ubicacion": "Barra:B9 ('Coca-Cola')",
+      "hallazgo": "Marca registrada de un tercero precargada como contenido en un producto que se vende. No es un problema serio a este volumen, pero es gratuito evitarlo y en un producto que se replica al catálogo de ChefBusiness conviene no arrastrarlo.",
+      "evidencia": "Barra!B9='Coca-Cola' (con su categoría además mal asignada, C9='Secos/Granos' — ver COM-02). El resto de líneas usa genéricos correctamente: 'Agua mineral', 'Tónica', 'Cerveza grifo (barril)', 'Vino tinto'.",
+      "fix": "Sustituir por el genérico 'Refresco de cola' y aprovechar para corregir su categoría a 'Bebidas' y su unidad a 'ud'."
+     },
+     {
+      "id": "COM-32",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-inventario.ts",
+      "ubicacion": "hero.badge",
+      "hallazgo": "El primer dato que ve el visitante —el badge rojo del hero, la cifra que crea el problema que el producto resuelve— no cita fuente. Para un comprador escéptico del sector es la primera señal de si la página es seria; y es un dato fácil de respaldar, no de inventar.",
+      "evidencia": "hero.badge: 'Los restaurantes pierden entre 3.000 y 5.000 EUR/ano en mermas evitables'. Ninguna referencia en la landing, ni en los ficheros, ni nota al pie. Ninguna otra cifra de la página (60 EUR/mes, 50-100 EUR/mes, <3 %, 28-32 %) cita fuente tampoco.",
+      "fix": "Anclar la cifra a una fuente citable (informes de desperdicio alimentario en hostelería de FAO/WRAP/MAPA, o el propio dato agregado de las consultorías de John si se puede formular como 'en los establecimientos que hemos auditado') y ponerla como microcopy bajo el badge. Aplicar el mismo criterio a las cifras de coste del software."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "El kit NO está listo para un cliente que pagó, y no por acabado sino por tres fallos que se ven en los primeros minutos de uso. (1) El primer fichero que abre el comprador —la tarjeta destacada del dashboard— dice que la pechuga de pollo es pescado y que el solomillo de ternera es lácteo medido en litros: las 50 filas precargadas tienen categoría y unidad asignadas por rotación cíclica, y eso es exactamente lo que la FAQ vende como valor diferencial frente a «plantillas genericas de almacen». (2) El bonus de la calculadora produce cálculos activamente dañinos: con el coste de almacenamiento hardcodeado a 0,50 €/ud y sin columna de precio, recomienda pedir 76 kg de salmón de una vez y volver a pedir a los 38 días, mientras la hoja Parámetros del mismo fichero dice «entrega diaria obligatoria» — un producto que se vende para reducir mermas prescribe sobrepedidos de 3× a 19× en perecederos. (3) La promesa que estructura toda la landing —que las plantillas se conectan entre sí, repetida cinco veces más el JSON-LD indexable y la tarjeta del dashboard— es falsa de forma trivialmente comprobable: cero referencias externas o entre hojas en los nueve ficheros. A eso se suman tres pestañas que los propios ficheros anuncian y no existen («Imprimible», «Evolución Mensual», el simulador del bonus), doce de veintiuna hojas de trabajo entregadas como esqueletos vacíos (incluida una «Plan de Acción» que contiene solo su título), y dos frentes con exposición legal: la afirmación taxativa de cumplimiento APPCC sobre un checklist sin límites críticos, con una tabla de temperaturas que autoriza 7 °C para toda la carne fresca cuando la picada es ≤2 °C y las aves ≤4 °C, y un protocolo FIFO que manda «usar HOY» producto ya caducado. En el plano comercial, el aggregateRating 4,9/8 sin sistema de reseñas y con dos testimonios que elogian funciones inexistentes es a la vez riesgo Omnibus y riesgo de perder las estrellas en SERP, y el bloque de bonus se contradice consigo mismo en la misma pantalla (18 EUR de bonus que no aparecen en «49 → 14, ahorra 35»). Mínimo para levantar el bloqueo: COM-01 a COM-13. Buena noticia: las cuatro hojas de agregación vacías (01 Resumen, 05 Análisis y Dashboard, 07 Dashboard KPIs) se resuelven con SUMIF/COUNTIF sobre datos que ya viven en el mismo libro, y BONUS-08 demuestra que el patrón correcto existe en el kit."
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL — openpyxl + pycel sobre los 9 .xlsx de /Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-inventario/ (volcado celda a celda de fórmulas, formatos numéricos, validaciones, formatos condicionales, anchos/wrap/merges e impresión; evaluación con pycel cambiando inputs y comprobando dirección del resultado; contraste con las Instrucciones de cada libro y con astro-site/src/data/productos/kits/kit-inventario.ts). Temperatura CPU vigilada: 44,2 → 38,8 °C, sin builds ni navegador.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!C5:D24, Barra!C5:D19, Almacén!C5:D19 (50 filas en 3 hojas)",
+      "hallazgo": "Los datos de ejemplo del PRIMER fichero del kit tienen la Categoría y la Unidad asignadas por rotación mecánica, sin ninguna relación con el producto. El cliente abre la plantilla estrella y ve pollo clasificado como pescado y ternera medida en litros.",
+      "evidencia": "Leído con openpyxl: Cocina B5='Pechuga de pollo' C5='Pescados' D5='ud'; B6='Solomillo ternera' C6='Lácteos' D6='L'; B7='Salmón fresco' C7='Verduras' D7='kg'; B8='Gambas' C8='Frutas'; B9='Tomate' C9='Secos/Granos' D9='L'. Barra B5='Café en grano' C5='Pescados'; B10='Cerveza grifo (barril)' C10='Congelados' D10='kg'. Almacén B5='Papel cocina' C5='Pescados' D5='ud'. La columna C recorre siempre el mismo ciclo de 10 categorías (Pescados, Lácteos, Verduras, Frutas, Secos/Granos, Congelados, Bebidas, Limpieza, Varios, Cárnicos) y la D el ciclo ud/L/kg, fila a fila, en las tres hojas.",
+      "fix": "Reasignar a mano las 50 filas: categoría real del producto y unidad real de compra (kg para carne/pescado/verdura a granel, L para líquidos, ud para piezas y envases). Ya que se toca, añadir validación de lista en C con la taxonomía única del kit (ver TEC-11) y en D con {kg, L, ud, caja, bandeja}."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora!G4:G33 y H4:H33",
+      "hallazgo": "La EOQ lleva el coste de pedido (2 €) y el coste de almacenamiento (0,5 €/ud/año) HARDCODEADOS dentro de la fórmula, no hay columna de precio unitario, y el resultado recomienda lotes y frecuencias imposibles para producto perecedero — contradiciendo a la propia hoja 'Parámetros' del mismo fichero.",
+      "evidencia": "G4: '=IF(C4=\"\",\"\",ROUND(SQRT(2*C4*365*2/0.5),0))' y H4: '=IF(C4=\"\",\"\",ROUND(G4/C4,0))'. Evaluado con pycel: consumo diario 5 → EOQ 121 y 'Frecuencia Pedido' 24 días; consumo 0,5 → EOQ 38 y 76 días; consumo 20 → EOQ 242 y 12 días. Es decir, para 5 kg/día de pescado manda comprar 121 kg y volver a pedir dentro de 24 días, mientras Parámetros!A7:C7 dice literalmente 'Lead time pescado · 1 día · Entrega diaria obligatoria'. Además Parámetros!A5:B5 define el coste de almacenamiento como '20-30% anual' del VALOR del producto, incompatible con el 0,5 € fijo de la fórmula, y la cabecera Calculadora!A3:I3 no tiene ninguna columna de precio/ud con la que calcularlo.",
+      "fix": "Añadir a 'Calculadora' columnas 'Precio/ud (€)' y 'Caducidad (días)' y celdas de parámetro globales (p.ej. Parámetros!D4 coste de pedido, Parámetros!D5 % almacenamiento). EOQ = ROUND(SQRT(2*(C4*365)*$Parámetros.$D$4/(precio*$Parámetros.$D$5)),0) y, sobre todo, acotarla por caducidad: =MIN(EOQ, consumo_diario*días_caducidad). Si no se quiere esa complejidad, quitar la columna EOQ del fichero y de la landing (línea 192) y dejar sólo el punto de pedido, que sí es correcto."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!J5:J24, Barra!J5:J19, Almacén!J5:J19 y hoja 'Resumen Dashboard'!A3:D3",
+      "hallazgo": "La valoración de stock es una funcionalidad completamente muerta: la columna 'Valor (€)' no tiene fórmula en ninguna de las 50 filas, no existe columna de precio unitario con la que calcularla, y la hoja que debía totalizarla tiene 0 fórmulas. Lo prometen las Instrucciones del propio fichero y la landing.",
+      "evidencia": "Recuento de fórmulas por hoja: Cocina 40 (sólo H e I), Barra 30, Almacén 30, 'Resumen Dashboard' 0. J4='Valor (€)' con J5 vacía y number_format 'General' en las tres hojas. 'Resumen Dashboard' contiene sólo A1='RESUMEN DE STOCK' y las cabeceras A3='Zona', B3='Productos con stock bajo', C3='Productos a pedir', D3='Valor total stock (€)' — ninguna fila de datos y ninguna fórmula. Instrucciones!A20 dice \"- La pestaña 'Resumen' totaliza automáticamente\" y la landing (kit-inventario.ts:135) vende 'valoracion de stock'.",
+      "fix": "Insertar columna 'Precio/ud (€)' antes de J en las 3 hojas, poner J5 '=IF($G5=\"\",\"\",$G5*precio)' con formato '#,##0.00 €', y rellenar 'Resumen Dashboard' A4:A6 con Cocina/Barra/Almacén y B4 '=COUNTIF(Cocina!H5:H24,\"*BAJO*\")', C4 '=COUNTIF(Cocina!H5:H24,\"*PEDIR*\")', D4 '=SUM(Cocina!J5:J24)', más fila TOTAL. Y renombrar la hoja a 'Resumen' o corregir Instrucciones!A20."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Instrucciones!A9 · 'Control Recepción'!G4:H33 · 'Verificación Temperaturas'!B4:C9",
+      "hallazgo": "El fichero afirma por escrito que las temperaturas fuera de rango se marcan solas en rojo. No hay ni un formato condicional ni una sola fórmula en todo el libro, y los umbrales de referencia están escritos como TEXTO, así que ni siquiera son computables. Es el fichero con el que la landing sostiene el argumento APPCC.",
+      "evidencia": "Instrucciones!A9 = '4. Las temperaturas fuera de rango se marcan automáticamente en rojo.'. Recuento: 04-recepcion-mercancias.xlsx → 0 fórmulas y 0 reglas de formato condicional en las 4 hojas (comprobado con ws.conditional_formatting._cf_rules vacío en todas). Las únicas validaciones son 3 listas '\"✓,✗,—\"' en F4:F33, H4:H33 y J4:J33, todas de marcado MANUAL. 'Verificación Temperaturas' guarda los límites como cadenas: B4='0 a 4°C', C4='7°C máx.', C5='4°C máx.', C7='-15°C máx.'. Landing kit-inventario.ts:225: 'La plantilla de recepcion incluye control de temperaturas... trazables y auditables para inspecciones'.",
+      "fix": "Convertir 'Verificación Temperaturas' en tabla numérica (A=Categoría, B=Tmin, C=Tmax como números) y en 'Control Recepción' añadir columna 'Categoría' con validación de lista, más H4 '=IF(OR($G4=\"\",$categoria=\"\"),\"\",IF(AND($G4>=VLOOKUP(...,2,0),$G4<=VLOOKUP(...,3,0)),\"✓\",\"✗\"))' y un formato condicional de tipo 'expression' sobre G4:G33 con fórmula =AND($G4<>\"\",$H4=\"✗\") y relleno rojo. Si no se implementa, borrar Instrucciones!A9."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx, 07-analisis-costes-compras.xlsx, BONUS-09-calculadora-punto-pedido.xlsx, 01-inventario-stock-diario.xlsx",
+      "ubicacion": "03!Instrucciones!A9 · 07!Instrucciones!A8 · BONUS-09!Instrucciones!A11 · 01!Instrucciones!A20",
+      "hallazgo": "Cuatro libros describen en sus Instrucciones pestañas que no existen en el propio fichero. El cliente busca la hoja, no la encuentra y concluye que la descarga está incompleta.",
+      "evidencia": "03: A9 = \"4. La pestaña 'Imprimible' está optimizada para enviar o imprimir\" · hojas reales = ['Instrucciones','Pedido Actual','Historial Pedidos']. 07: A8 = '2. Evolución Mensual — tendencia de costes 12 meses' · hojas reales = ['Instrucciones','Coste por Categoría','Top 20 Productos','Dashboard KPIs']. BONUS-09: A11 = '3. El simulador te permite probar diferentes escenarios de demanda' · hojas reales = ['Instrucciones','Calculadora','Parámetros']. 01: A20 menciona \"la pestaña 'Resumen'\" y la hoja se llama 'Resumen Dashboard'. Menores del mismo tipo: 02!Instrucciones!A7/A9 dicen 'Directorio' y 'Evaluación' frente a 'Directorio Proveedores' y 'Evaluación Proveedores'; 03!A8 dice 'Historial' frente a 'Historial Pedidos'.",
+      "fix": "O se crean las hojas (la 'Imprimible' de 03 es la más barata: copia de 'Pedido Actual' con print_area, orientación vertical y sin columnas de trabajo) o se corrigen las líneas de Instrucciones. Y homogeneizar los nombres citados con wb.sheetnames — es un gate de una línea: comprobar que toda pestaña entrecomillada en Instrucciones existe."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx, 05-control-mermas.xlsx, BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "03!'Pedido Actual'!F9:F28 · 05!'Registro Diario Mermas'!G4:G53 · 08!'Conteo Rápido'!G5:G54",
+      "hallazgo": "Las guardas de vacío están puestas sobre el factor equivocado: vigilan la CANTIDAD pero no el PRECIO. Una línea con cantidad y sin precio no queda en blanco: vale 0,00 € y se suma al total como si fuera gratis, sin ningún aviso.",
+      "evidencia": "03 F9 = '=IF(D9=\"\",\"\",D9*E9)' (guarda D=Cantidad, ignora E=Precio/ud) y F30 = '=SUM(F9:F28)'. 05 G4 = '=IF(D4=\"\",\"\",D4*F4)' (guarda D=Cantidad, ignora F=Coste/ud) y G55 = '=SUM(G4:G53)' bajo la etiqueta F55='TOTAL MES:'. 08 G5 = '=IF(F5=\"\",\"\",E5*F5)' (guarda F=Stock, ignora E=Precio/ud) y G56 = '=SUM(G5:G54)' bajo F56='TOTAL:'. Evaluado con pycel en 08: precio vacío + stock 10 → la línea aporta 0 al total en Excel (pycel lo señala como #VALUE!, Excel trata la celda vacía como 0). Es decir, un inventario valorado en 0 € que parece correcto.",
+      "fix": "Cambiar las tres a la forma con doble guarda y aviso, p.ej. 05!G4 '=IF(D4=\"\",\"\",IF(F4=\"\",\"⚠ falta coste\",D4*F4))'; idem 03!F9 con E9 y 08!G5 con E5. Los SUM ignoran el texto, así que el total deja de mentir y el usuario ve qué línea le falta."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "'Comparativa Precios'!I4:I13, J4:J13, K4:K13 y cabeceras D3:H3",
+      "hallazgo": "La comparativa de precios está a medias y con una trampa: MIN() sin guarda de vacío devuelve 0, la columna 'Mejor Proveedor' no tiene fórmula en ninguna de las 10 filas, y las cabeceras son 'Prov. 1'…'Prov. 5' sin ningún vínculo con el Directorio, así que aunque se añadiera la fórmula devolvería 'Prov. 3' y no el nombre del proveedor.",
+      "evidencia": "I4 = '=MIN(D4:H4)' y K4 = '=IF(I4=0,\"\",ROUND((MAX(D4:H4)-I4)/I4*100,1))'. Evaluado con pycel: fila virgen → 'Mejor Precio' = 0 (el fichero recién descargado enseña una columna de diez ceros); con D4=8,9 E4=9,5 F4=0 (un 0 tecleado para 'no me lo sirve') → 'Mejor Precio' = 0 y '% Diferencia' se queda en blanco, o sea la comparación se rompe en silencio. J4:J13 vacías, 0 fórmulas (recuento de la hoja: 20 fórmulas, sólo en I y K). D3:H3 = 'Prov. 1'..'Prov. 5'.",
+      "fix": "I4 '=IF(COUNT(D4:H4)=0,\"\",MIN(IF(D4:H4>0,D4:H4)))' (o SMALL sobre valores >0), J4 '=IF(I4=\"\",\"\",INDEX($D$3:$H$3,MATCH(I4,D4:H4,0)))' y poner en D3:H3 fórmulas que traigan el nombre desde 'Directorio Proveedores'!B4:B8 en vez de rótulos fijos. Formato '#,##0.00 €' en D4:I13 y '0,0 %' en K."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "'Coste por Categoría'!O4:O13 · hoja 'Top 20 Productos' · hoja 'Dashboard KPIs'",
+      "hallazgo": "Dos de las tres hojas de trabajo del fichero no tienen ni una fórmula, y en la única que sí calcula queda una columna etiquetada sin fórmula. El 'Dashboard KPIs' llega al extremo de describir en texto cómo se calcularía cada KPI en vez de calcularlo, y ni siquiera existen las celdas de entrada (ventas, cubiertos) que harían falta.",
+      "evidencia": "Recuento: 'Coste por Categoría' 23 fórmulas (N4:N13 SUM por fila + fila 14 SUM por columna), 'Top 20 Productos' 0, 'Dashboard KPIs' 0. O3='% del Total' con O4:O13 vacías, teniendo N14 el total del año justo al lado. En 'Top 20 Productos' están vacías D,E,F,G,H (E3='Gasto Anual (€)', F3='% del Total', H3='Variación vs Anterior'). En 'Dashboard KPIs' la columna B ('Valor Actual') está vacía en A4:A9 y la D dice D4='Coste materia prima / Ventas × 100', D5='Compras del mes / Nº cubiertos' — no hay ninguna celda de ventas ni de cubiertos en todo el libro. La landing (kit-inventario.ts:141) vende 'dashboard de KPIs: food cost %, coste por cubierto'.",
+      "fix": "O4 '=IF($N$14=0,\"\",N4/$N$14)' con formato '0,0 %'. En 'Top 20': E4 '=IF(D4=\"\",\"\",D4*12)', F4 '=IF($E$24=0,\"\",E4/SUM($E$4:$E$23))', H4 '=IF(OR(G4=\"\",precio_anterior=\"\"),\"\",G4/precio_anterior-1)'. En 'Dashboard KPIs' añadir dos celdas de entrada (Ventas del mes, Nº cubiertos) y B4 '=IF(ventas=0,\"\",\"Coste por Categoría\"!N14/ventas)', B6 \"='Coste por Categoría'!N14\"."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "hoja 'Análisis por Categoría'!B4:E10 · hoja 'Dashboard Mermas'!B4:D8 · 'Registro Diario Mermas'!C4:C53",
+      "hallazgo": "Las dos hojas de explotación del control de mermas están vacías de fórmulas, y además no podrían agregar nada aunque se añadieran: la columna 'Categoría' del registro es texto libre sin lista de validación, de modo que cualquier SUMIF fallaría por una tilde o un plural.",
+      "evidencia": "Recuento: 'Registro Diario Mermas' 51 fórmulas (todas G, coste por línea + G55 total), 'Análisis por Categoría' 0, 'Dashboard Mermas' 0, 'Plan de Acción' 0. 'Análisis por Categoría' tiene A4:A10 con las 7 categorías y B/C/D/E vacías bajo las cabeceras 'Nº Incidencias', 'Coste Total (€)', '% del Total', 'Tendencia vs Mes Anterior'. 'Dashboard Mermas' tiene los objetivos escritos (C4='< 500 €', C5='< 3%', C6='< 20') y la columna B ('Valor') vacía. La única validación del libro es la lista de Motivo en H4:H53; la columna C del registro no tiene ninguna. Instrucciones!A8/A9 prometen que esas hojas 'muestran dónde pierdes más dinero' y 'resumen las métricas clave'.",
+      "fix": "Validación de lista en 'Registro Diario Mermas'!C4:C53 con la taxonomía de 'Análisis por Categoría'!A4:A10, y luego B4 '=COUNTIF(\\'Registro Diario Mermas\\'!$C$4:$C$53,$A4)', C4 '=SUMIF(\\'Registro Diario Mermas\\'!$C$4:$C$53,$A4,\\'Registro Diario Mermas\\'!$G$4:$G$53)', D4 '=IF($C$11=0,\"\",C4/SUM($C$4:$C$10))'. En 'Dashboard Mermas': B4 \"='Registro Diario Mermas'!G55\", B6 '=COUNTA(...)', B7 '=INDEX(A4:A10,MATCH(MAX(C4:C10),C4:C10,0))', B8 con MODE sobre la columna Motivo, y D4 '=IF(B4<500,\"✓\",\"✗\")'. El objetivo '< 500 €' fijo debería ser además una celda editable, no un rótulo."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "01-inventario-stock-diario.xlsx, 05-control-mermas.xlsx, 07-analisis-costes-compras.xlsx",
+      "ubicacion": "01!Cocina!C5:C24 · 05!'Análisis por Categoría'!A4:A10 · 07!'Coste por Categoría'!A4:A13",
+      "hallazgo": "El kit usa tres taxonomías de categoría distintas e incompatibles entre sí, y ninguna está fijada con validación de lista. Consolidar mermas contra compras (que es la métrica que el propio kit fija como objetivo, '<3% sobre compras') es imposible sin reetiquetar a mano.",
+      "evidencia": "01 (datos demo) usa: Cárnicos, Pescados, Lácteos, Verduras, Frutas, Secos/Granos, Congelados, Bebidas, Limpieza, Varios. 05 'Análisis por Categoría'!A4:A10 usa 7: Cárnicos, Pescados, Lácteos, Verduras/Frutas, Secos, Congelados, Bebidas. 07 'Coste por Categoría'!A4:A13 usa 10: ...Verduras/Frutas, Secos/Granos, Congelados, Bebidas Alcohólicas, Bebidas No Alcohólicas, Limpieza, Otros. Es decir 'Verduras'/'Verduras/Frutas', 'Secos'/'Secos/Granos' y 'Bebidas'/'Bebidas Alcohólicas'+'No Alcohólicas' conviven en el mismo kit. Recuento de validaciones en todo el kit: 3 en 04 y 1 en 05; ninguna en columnas de categoría.",
+      "fix": "Fijar UNA lista canónica (la de 07, que es la más completa) y aplicarla como DataValidation de tipo list en 01!C, 05!'Registro Diario Mermas'!C, 06!'Control FIFO'!C, 08!'Conteo Rápido'!C y en las cabeceras de fila de 05 y 07. Con eso los SUMIF de TEC-09 casan y el kit puede cruzar mermas contra compras."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "'Control FIFO'!H5:H54 y 'Alertas Caducidad'!A7",
+      "hallazgo": "El semáforo no distingue 'caduca mañana' de 'caducó hace una semana': ambos salen como '🔴 URGENTE', y el protocolo de la hoja siguiente instruye a 'usar HOY' lo que esté en rojo. Un producto con fecha de consumo preferente vencida acaba en el pase por diseño de la fórmula.",
+      "evidencia": "G5='=IF(F5=\"\",\"\",F5-TODAY())' y H5='=IF(G5=\"\",\"\",IF(G5<=1,\"🔴 URGENTE\",IF(G5<=3,\"🟡 PRONTO\",\"🟢 OK\")))'. La primera rama captura todo G5<=1, incluidos los negativos: una caducidad de hace 7 días da G5=-7 y H5='🔴 URGENTE', idéntico a G5=1. 'Alertas Caducidad'!A7 = '1. Productos con 🔴 URGENTE → usar HOY o descartar y registrar en Control de Mermas.'",
+      "fix": "Añadir una rama previa: '=IF(G5=\"\",\"\",IF(G5<0,\"⛔ CADUCADO — RETIRAR\",IF(G5<=1,\"🔴 URGENTE\",IF(G5<=3,\"🟡 PRONTO\",\"🟢 OK\"))))' y separar el punto A7 en dos: CADUCADO → retirada obligatoria y registro de merma; URGENTE → usar hoy."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "'Control FIFO'!A4:K4 y hoja 'Alertas Caducidad'",
+      "hallazgo": "La hoja llamada 'Control FIFO' no controla FIFO: no tiene columna de cantidad ni de consumo, así que no sabe cuánto queda de cada lote ni ordena por fecha de entrada. Y la hoja 'Alertas Caducidad' no es una alerta sino un texto que pide al usuario que filtre a mano la otra hoja.",
+      "evidencia": "Cabeceras reales de 'Control FIFO' A4:K4 = ['#','Producto','Categoría','Lote/Ref','Fecha Entrada','Fecha Caducidad','Días Restantes','Estado','Zona Almacén','Posición','Acción'] — no hay 'Cantidad' ni 'Unidad', pese a que todas las demás plantillas del kit sí las tienen. 'Alertas Caducidad' es una hoja de 10 celdas de texto en la columna A, 0 fórmulas: A3 = \"Filtra la pestaña 'Control FIFO' por Estado = 🔴 URGENTE o 🟡 PRONTO\". La landing (kit-inventario.ts:140 y :225) lo vende como 'trazabilidad FIFO' 'auditable para inspecciones'.",
+      "fix": "Añadir 'Cantidad' y 'Unidad' a 'Control FIFO' y convertir 'Alertas Caducidad' en una extracción real: cabeceras + filas con '=IFERROR(INDEX(\\'Control FIFO\\'!B$5:B$54,SMALL(IF(\\'Control FIFO\\'!$G$5:$G$54<=3,ROW(\\'Control FIFO\\'!$G$5:$G$54)-4),ROW()-3)),\"\")' (matricial) o, más simple y robusto en LibreOffice/Sheets, dejar la hoja de origen como tabla con autofiltro y documentarlo así. Y activar el autofiltro en 'Control FIFO'!A4:K54, que hoy no existe."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "'Pedido Actual'!G9:G28",
+      "hallazgo": "El IVA viene fijado a 10 % en las 20 líneas del pedido, como número suelto sin validación ni nota. En un pedido de hostelería español conviven tres tipos, así que el 'Total con IVA' que el fichero calcula es incorrecto en cuanto el pedido lleve una sola línea de pan, leche, huevos o verdura (4 %) o de alcohol, limpieza o desechables (21 %) — y el kit vende precisamente plantillas de limpieza y bebidas.",
+      "evidencia": "G9..G28 contienen el valor literal 10 (number_format 'General'); H9 = '=IF(F9=\"\",\"\",F9*(1+G9/100))' y F31 = '=SUM(H9:H28)'. El libro no tiene ninguna DataValidation (recuento: 0 en las 3 hojas) ni nota en Instrucciones sobre los tipos de IVA. Los productos que el propio kit propone incluyen 'Lejía alimentaria', 'Guantes nitrilo', 'Vino tinto' y 'Huevos' (01-inventario-stock-diario.xlsx, hojas Almacén y Barra).",
+      "fix": "Poner DataValidation de lista '4,10,21' en G9:G28, dejar la celda VACÍA por defecto (o 10 pero con la lista visible), y añadir a Instrucciones una línea con la regla: 4 % pan/leche/huevos/frutas/verduras/quesos/cereales · 10 % resto de alimentación · 21 % bebidas alcohólicas, limpieza y desechables."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora!E3 y F4:F33 frente a Parámetros!A10:B10",
+      "hallazgo": "Choque de unidades entre la hoja de referencia y la fórmula: 'Parámetros' define el stock de seguridad en DÍAS y la fórmula del punto de pedido lo suma en UNIDADES. Quien siga la guía del propio fichero se queda corto de stock justo en el producto crítico.",
+      "evidencia": "Parámetros!A10='Stock seguridad (días)', B10='1-3 días', C10='Según criticidad del producto'. Calculadora!E3='Stock Seguridad' (sin unidad) y F4='=IF(C4=\"\",\"\",(C4*D4)+E4)'. Comprobado con pycel: consumo 20/día, lead time 1, E4=2 (los '2 días' que sugiere Parámetros) → punto de pedido 22, cuando el equivalente correcto a 2 días de cobertura sería 20*1+20*2 = 60. Subestima el punto de pedido en un 63 %.",
+      "fix": "O renombrar la cabecera a 'Stock Seguridad (uds)' y cambiar Parámetros!A10 a 'Stock seguridad (uds) = consumo diario × 1-3 días', o mejor: añadir columna 'Cobertura seguridad (días)' y F4 '=IF(C4=\"\",\"\",C4*(D4+E4))', que es la forma en que un jefe de compras lo piensa."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora!H4:H33",
+      "hallazgo": "'Frecuencia Pedido (días)' devuelve #DIV/0! en cuanto el consumo diario es 0 — un caso normalísimo: producto de temporada, referencia dada de alta pero aún sin consumo, o simplemente el usuario tecleando la tabla de arriba abajo.",
+      "evidencia": "H4 = '=IF(C4=\"\",\"\",ROUND(G4/C4,0))'. La guarda sólo cubre la celda vacía, no el cero. Evaluado con pycel: C4=0, D4=2, E4=1 → F4=1, G4=0 y H4=#DIV/0!. Ninguna fórmula del libro usa IFERROR (0 apariciones en los 90 formulas de la hoja).",
+      "fix": "H4 '=IF(OR(C4=\"\",C4<=0),\"\",ROUND(G4/C4,0))' o envolver en IFERROR. Aplicar el mismo criterio a F4 y G4, que con C4=0 devuelven cifras engañosas (punto de pedido = sólo el stock de seguridad)."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "'Evaluación Proveedores'!H3, H4:H13 e I4:I13",
+      "hallazgo": "La columna se titula 'TOTAL' pero la fórmula es una MEDIA, y la guarda de vacío mira sólo el primer criterio: un proveedor puntuado únicamente en Calidad sale con nota perfecta. La columna 'Nota', que es la que daría el veredicto, no tiene fórmula.",
+      "evidencia": "H3='TOTAL'; H4='=IF(C4=\"\",\"\",AVERAGE(C4:G4))' con number_format '0.0'. Evaluado con pycel: C4=5 y D4:G4 vacías → H4 = 5,0 (parece un proveedor de 5 sobre 5 evaluado en 5 criterios cuando sólo se ha puntuado uno); C4:G4 = 5,4,3,2,1 → 3,0. I3='Nota' con I4:I13 vacías; la hoja tiene 10 fórmulas, todas en H.",
+      "fix": "Renombrar H3 a 'MEDIA (1-5)' y endurecer la guarda: '=IF(COUNT(C4:G4)<5,\"\",AVERAGE(C4:G4))' — o exigir al menos 3 criterios. Y dar contenido a I4: '=IF(H4=\"\",\"\",IF(H4>=4,\"Preferente\",IF(H4>=3,\"Aceptable\",\"Revisar / sustituir\")))'."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "'Control Recepción'!D3:F3 y cabeceras A3:L3",
+      "hallazgo": "El checklist tiene 'Pedido (ud)' y 'Recibido (ud)' uno al lado del otro y aun así el '✓ Cantidad' es un desplegable que el usuario marca a ojo: no hay columna de diferencia ni comparación. Y para un registro que se vende como trazable en inspección faltan las dos columnas que pide la trazabilidad: nº de lote y nº de albarán.",
+      "evidencia": "Cabeceras A3:L3 = ['Fecha','Proveedor','Producto','Pedido (ud)','Recibido (ud)','✓ Cantidad','Temp. °C','✓ Temp. OK','Caducidad','✓ Calidad','Incidencia','Firmado']. F4:F33 es una DataValidation de lista '\"✓,✗,—\"'; el libro tiene 0 fórmulas. No existe columna 'Lote' ni 'Albarán' (sí existe 'Lote/Ref' en 06-fifo-caducidades.xlsx!'Control FIFO'!D4, con lo que la trazabilidad queda partida entre dos ficheros que no se hablan).",
+      "fix": "Sustituir F4 por '=IF(OR(D4=\"\",E4=\"\"),\"\",IF(E4=D4,\"✓\",\"✗\"))', añadir columna 'Diferencia' '=IF(OR(D4=\"\",E4=\"\"),\"\",E4-D4)' y dos columnas nuevas, 'Nº Albarán' y 'Lote', esta última con el mismo formato que 06!'Control FIFO'!D para poder cruzarlas."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "Los 9 ficheros del kit",
+      "ubicacion": "03!'Pedido Actual'!E9:E28 · 05!'Registro Diario Mermas'!F4:F53 y A4:A53 · 07!'Coste por Categoría'!B4:M13 · 02!'Comparativa Precios'!D4:I13 y 'Directorio Proveedores'!I4:I23 · 08!'Conteo Rápido'!E5:E54 · 06!'Control FIFO'!E5:F54 · 04!'Control Recepción'!A4:A33 e I4:I33",
+      "hallazgo": "Ninguna celda en la que el usuario teclea un importe lleva formato de moneda, y ninguna celda de fecha lleva formato de fecha. Sólo están formateadas las celdas calculadas, así que en la misma tabla conviven '12.5' escrito por el usuario y '12,50' calculado por la fórmula.",
+      "evidencia": "number_format leído celda a celda: 03!E9 'General' (frente a F9 y H9 '#,##0.00'); 05!F4 'General' (frente a G4 '#,##0.00'); 07!B4 'General' (frente a N4 y B14 '#,##0.00'); 02!D4 e I4 'General' — incluido el resultado de MIN(); 02!'Directorio Proveedores'!I4 'General' bajo la cabecera 'Pedido Mínimo (€)'; 08!E5 'General' (frente a G5 '#,##0.00'). Fechas: 04!A4 e I4 'General', 05!A4 'General', 06!E5 y F5 'General' bajo 'Fecha Entrada' y 'Fecha Caducidad'.",
+      "fix": "Aplicar '#,##0.00 €' a todas las columnas de importe (incluidas las de entrada) y 'dd/mm/yyyy' a las de fecha. En 06!G5:G54 ('Días Restantes', hoy 'General' con '=F5-TODAY()') fijar explícitamente el formato '0' para blindarlo frente a la propagación implícita de formato de fecha de Excel, y añadir en E/F una validación de tipo date para que una fecha mal tecleada no entre como texto y deje el semáforo mudo."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "'Pedido Actual'!A3:A6 (ancho de columna A = 5,0)",
+      "hallazgo": "Las cuatro etiquetas de cabecera del pedido están en la columna A, que mide 5 caracteres, sin ajuste de texto, y los datos van en B. En cuanto el usuario escribe el nombre del proveedor, la etiqueta de al lado se recorta y el documento que se envía al proveedor sale con 'Prove' y 'Fecha'.",
+      "evidencia": "A3='Proveedor:', A4='Fecha pedido:', A5='Fecha entrega:', A6='Nº Pedido:', las cuatro con font.b=True y alignment.wrap_text=None; ws.column_dimensions['A'].width = 5.0 (la A está dimensionada para la columna '#' de la tabla de líneas, que empieza en la fila 8). B3, B4 y B6 están vacías y sin borde ni relleno, o sea que tampoco se distinguen como celdas de entrada. Además 'Pedido Actual' tiene freeze_panes=None y print_title_rows=None, así que al imprimir un pedido de 20 líneas las cabeceras no se repiten.",
+      "fix": "Combinar A3:B3 (y A4:B4, A5:B5, A6:B6) para la etiqueta y poner el dato en C, o mover el bloque de cabecera a columnas D:E. Marcar las celdas de entrada con relleno claro y borde. Y añadir freeze_panes='A9' y print_title_rows='$8:$8'."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "baja",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "'Pedido Actual'!E30:F31 y hoja 'Historial Pedidos'",
+      "hallazgo": "El total con IVA se imprime bajo la cabecera 'Subtotal (€)', no bajo 'Total (€)', y no hay ninguna fila con el importe del IVA — que es justo la columna que la hoja 'Historial Pedidos' pide rellenar.",
+      "evidencia": "E30='SUBTOTAL:' F30='=SUM(F9:F28)'; E31='TOTAL CON IVA:' F31='=SUM(H9:H28)'. F8='Subtotal (€)' y H8='Total (€)', luego el gran total cae en la columna equivocada y H30/H31 están vacías. 'Historial Pedidos'!E3:G3 = ['Subtotal (€)','IVA (€)','Total (€)'] y la hoja tiene 0 fórmulas y ninguna fila.",
+      "fix": "Mover los totales a H30/H31, añadir una fila 'IVA (€)' con '=H31-F30' y, en 'Historial Pedidos', dejar la primera fila enlazada al pedido en curso (A4 \"='Pedido Actual'!B4\", E4 \"='Pedido Actual'!F30\", F4 '=G4-E4', G4 \"='Pedido Actual'!F31\") para que registrar un pedido sea copiar una fila y no volver a teclearlo todo."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "baja",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!H5:I24, Barra!H5:I19, Almacén!H5:I19",
+      "hallazgo": "Las dos columnas del semáforo se contradicen en toda la banda amarilla: el 'Estado' avisa de stock BAJO y 'A Pedir' dice que no hay que pedir nada, cuando las Instrucciones prometen que esa columna 'calcula cuánto necesitas'.",
+      "evidencia": "H5='=IF(G5=\"\",\"\",IF(G5<E5,\"🔴 PEDIR\",IF(G5<E5*1.5,\"🟡 BAJO\",\"🟢 OK\")))' e I5='=IF(G5=\"\",\"\",IF(G5<E5,F5-G5,0))'. Evaluado con pycel sobre E5=5, F5=15: G5=5 → Estado '🟡 BAJO', A Pedir 0; G5=7 → '🟡 BAJO', A Pedir 0; G5=3 → '🔴 PEDIR', A Pedir 12. Instrucciones!A15: \"5. 'A Pedir' calcula automáticamente cuánto necesitas.\"",
+      "fix": "I5 '=IF(G5=\"\",\"\",IF(G5<E5*1.5,MAX(0,F5-G5),0))' — así el amarillo también propone reposición hasta el par max, que es lo que la columna promete."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "baja",
+      "fichero": "01-inventario-stock-diario.xlsx (y los 9 del kit)",
+      "ubicacion": "Instrucciones!A11 · Cocina/Barra/Almacén!H5:H24",
+      "hallazgo": "No hay un solo formato condicional en todo el kit. El 'color' del semáforo es únicamente el glifo del emoji dentro del texto de la celda, así que la celda no se colorea y a 100 % de zoom en una hoja de 20 filas el aviso pasa desapercibido.",
+      "evidencia": "Comprobado con ws.conditional_formatting en las 33 hojas de los 9 ficheros: 0 reglas. Instrucciones!A11 dice \"4. La columna 'Estado' se colorea automáticamente:\" y A12-A14 describen rojo/amarillo/verde. Landing kit-inventario.ts:135 'Semaforo rojo/amarillo/verde' y :140 'alertas por colores'.",
+      "fix": "Añadir tres reglas de tipo 'containsText' sobre H5:H24 (PEDIR → relleno FFC7CE, BAJO → FFEB9C, OK → C6EFCE) y las equivalentes en 06!'Control FIFO'!H5:H54. Son 2 líneas de openpyxl por hoja y es lo que el cliente cree haber comprado."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "baja",
+      "fichero": "05-control-mermas.xlsx, BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "05!'Registro Diario Mermas'!G55 · 08!'Conteo Rápido'!G56",
+      "hallazgo": "Los totales suman un rango cerrado que termina justo en la última fila preformateada. Quien añada líneas al final de la tabla —lo normal cuando se acaban las 50 filas de un mes— las deja fuera del total sin ningún aviso.",
+      "evidencia": "05: G55 = '=SUM(G4:G53)' con las filas 4-53 con borde y G54 sin fórmula ni borde; 08: G56 = '=SUM(G5:G54)' con las filas 5-54 con borde. Ninguna de las dos hojas está definida como tabla de Excel (0 objetos ListObject).",
+      "fix": "Convertir los rangos en tablas de Excel (ws.add_table) para que el total se autoextienda, o al menos dejar 20 filas de colchón preformateadas con la fórmula de línea y ampliar el SUM hasta la fila anterior al total."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "'Conteo Rápido'!I5:I54",
+      "hallazgo": "La 'Variación' no distingue entre 'no había dato del mes anterior' y 'el mes anterior tenía 0': con H vacía muestra el stock entero como si todo fuera crecimiento. En la primera vez que se usa la plantilla —que es siempre— toda la columna miente.",
+      "evidencia": "I5 = '=IF(F5=\"\",\"\",F5-H5)'. La guarda mira F (Stock Actual) y no H (Stock Mes Anterior); en Excel una celda vacía se evalúa como 0, así que F5=10 y H5 vacía dan Variación +10. number_format 'General', sin signo ni unidad. Instrucciones!A8: '3. Compara con el mes anterior para detectar variaciones.'",
+      "fix": "I5 '=IF(OR(F5=\"\",H5=\"\"),\"\",F5-H5)' y, ya puestos, añadir columna '% Variación' '=IF(OR(H5=\"\",H5=0),\"\",F5/H5-1)' con formato '0,0 %', que es la lectura útil."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!E5:F24, Barra!E5:F19, Almacén!E5:F19",
+      "hallazgo": "Los par levels de ejemplo son idénticos (5 y 15) en las 50 filas de las tres zonas, aplicados por igual a la sal, al barril de cerveza y al salmón fresco. Refuerza la impresión de relleno automático del TEC-01 y, si alguien no los revisa, el semáforo dispara al azar.",
+      "evidencia": "E5:E24 = 5 y F5:F24 = 15 en Cocina; lo mismo en Barra E5:F19 y Almacén E5:F19. Sin ninguna nota en la fila que indique que son valores de ejemplo (Instrucciones!A19 sí lo dice, pero no la hoja).",
+      "fix": "Poner valores plausibles por familia (perecedero de rotación diaria vs seco de pedido semanal) y marcar con relleno claro + una nota en la fila 3 de cada hoja que son datos de ejemplo a sustituir."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "La capa determinista está limpia (cache con <v></v> + fullCalcOnLoad=\\\"1\\\" en los 9 libros, A4, metadata, bio y «Versión 1.1» correctos: no se le escapó nada a la Fase A), pero por encima de ella el kit no aguanta una lectura de cliente que ha pagado. Cuatro defectos de severidad alta: (1) el fichero 01, el más visible del kit, entrega 50 filas de datos demo con la categoría y la unidad rotadas mecánicamente —«Pechuga de pollo / Pescados / ud», «Solomillo ternera / Lácteos / L», «Café en grano / Pescados»—; (2) la EOQ del BONUS-09 lleva 2 € y 0,5 €/ud/año hardcodeados dentro de la fórmula y recomienda comprar 121 kg de un perecedero y volver a pedir en 24 días, contradiciendo a la hoja «Parámetros» del propio fichero; (3) toda la valoración de stock del fichero 01 está muerta —«Valor (€)» sin fórmula en 50 filas, sin columna de precio, «Resumen Dashboard» con 0 fórmulas— pese a prometerla las Instrucciones del libro y la landing; (4) el fichero de recepción afirma por escrito que marca en rojo las temperaturas fuera de rango cuando el kit entero tiene CERO formatos condicionales y ese libro CERO fórmulas, con los umbrales guardados como texto («7°C máx.»), que es justo el argumento APPCC de la venta. Debajo hay quince defectos medios que se repiten por familias: hojas fantasma citadas en Instrucciones («Imprimible», «Evolución Mensual», «simulador»), guardas de vacío puestas sobre el factor equivocado que meten líneas de 0,00 € en los totales sin avisar (03!F9, 05!G4, 08!G5), MIN() sin guarda que hace ganar la comparativa de precios a un 0, tres taxonomías de categoría incompatibles y sin validación de lista que impiden cualquier agregación, e IVA fijo al 10 % en las 20 líneas de un pedido que el propio kit llena de lejía y vino. Cinco de las nueve plantillas tienen al menos una hoja completa sin una sola fórmula. Nada de esto lo ven los gates deterministas y todo es reparable sin rehacer el kit; recomiendo bloquear hasta cerrar como mínimo las cuatro altas y las familias TEC-05, TEC-06 y TEC-10."
+   },
+   "dominio": {
+    "lente": "Jefe/a de compras y almacén (economato) de restaurante, 15 años de oficio: stock diario, homologación y fichas de proveedor, pedidos, recepción de mercancía (albarán vs pedido, temperaturas, lotes), mermas, FIFO/FEFO y caducidades, análisis de coste de compras y punto de pedido — leído como si tuviera que usarlo el lunes por la mañana.",
+    "veredicto": "no listo",
+    "motivo": "El kit no está listo para un cliente que ha pagado, y no por acabado sino por contenido. Tres bloques lo hunden. (1) Los datos precargados son ruido generado por rotación: en 01-inventario-stock-diario.xlsx las 50 filas llevan la categoría y la unidad asignadas por un ciclo que ignora el producto — «Pechuga de pollo» está en «Pescados», «Solomillo ternera» se mide en «L», «Aceite oliva» en «kg», «Huevos» en «kg» y «Cerveza grifo (barril)» en «kg». Cualquier profesional lo ve en los primeros diez segundos y deduce que nadie revisó el fichero; además la landing presume literalmente de «categorías pre-cargadas para hostelería… no son plantillas genéricas de almacén». (2) Hay promesas verificablemente falsas dentro de los propios ficheros: tres pestañas anunciadas en las Instrucciones no existen («Imprimible» en 03, «Evolución Mensual» en 07, el «simulador» del BONUS-09); 04-recepcion dice «las temperaturas fuera de rango se marcan automáticamente en rojo» y el libro entero tiene 0 fórmulas y 0 formatos condicionales; 01 dice «la pestaña Resumen totaliza automáticamente» y esa hoja son cuatro cabeceras; y los dos KPI estrella de 07 (food cost % y coste por cubierto) no sólo carecen de fórmula, es que en los 9 ficheros no existe ninguna celda donde meter las ventas ni los cubiertos. En los 9 libros hay CERO formatos condicionales, así que «semáforo rojo/amarillo/verde» y «se colorea automáticamente» son, en rigor, un emoji dentro de una cadena de texto. (3) Hay cálculo y criterio que mienten con consecuencias: el EOQ del BONUS-09 lleva el coste de pedido (2 €) y el de almacenamiento (0,5) hardcodeados y sin ninguna columna de precio, y aplicado a perecederos sugiere comprar 94 kg de salmón fresco y pedir cada 31 días — contradiciendo a su propia hoja «Parámetros», que dice «Lead time pescado: 1 día, entrega diaria obligatoria»; el stock de seguridad se pide en unidades en la Calculadora y en días en Parámetros, así que el punto de pedido sale infravalorado; el IVA viene prerrellenado al 10 % en las 20 líneas del pedido cuando bebidas y limpieza van al 21 % y los alimentos básicos al 4 % desde 2025; y la tabla de temperaturas de recepción acepta pescado fresco hasta 4 °C y mete toda la carne en una línea con máximo 7 °C, cuando la carne picada es ≤2 °C y las aves ≤4 °C. Ese último punto es el más caro: la FAQ afirma «Sí. Cumple APPCC… trazables y auditables para inspecciones», pero el registro de recepción no tiene ni número de lote ni número de albarán, que es exactamente lo que exige la trazabilidad de una etapa atrás. Un cliente que confíe en esa frase se lleva una sorpresa en la inspección, y esa es la vía directa al reembolso y a la queja pública.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!C5:C24, Barra!C5:C19, Almacén!C5:C19 (50 filas)",
+      "hallazgo": "Las categorías precargadas están asignadas por rotación cíclica de una lista de 10, sin ninguna relación con el producto de la fila. El resultado es un fichero que un jefe de economato descarta en diez segundos, y contradice frontalmente el argumento de venta.",
+      "evidencia": "Cocina!B5='Pechuga de pollo' → C5='Pescados'; B6='Solomillo ternera' → C6='Lácteos'; B7='Salmón fresco' → C7='Verduras'; B8='Gambas' → C8='Frutas'; B9='Tomate' → C9='Secos/Granos'; B10='Cebolla' → C10='Congelados'; B11='Lechuga' → C11='Bebidas'; B12='Patata' → C12='Limpieza'; B14='Sal' → C14='Cárnicos'. Barra!B5='Café en grano' → C5='Pescados'; B10='Cerveza grifo (barril)' → C10='Congelados'. Almacén!B5='Papel cocina' → C5='Pescados'. La secuencia Pescados→Lácteos→Verduras→Frutas→Secos/Granos→Congelados→Bebidas→Limpieza→Varios→Cárnicos se repite idéntica en las tres hojas. La landing lo desmiente: kit-inventario.ts why.reasons[0].desc = 'Categorias pre-cargadas para restaurantes: carnicos, pescados, lacteos… No son plantillas genericas de almacen' y faqs[0].a repite la promesa.",
+      "fix": "Reasignar las 50 categorías a mano al producto real (pollo/ternera→Cárnicos, salmón/gambas→Pescados, tomate/cebolla/lechuga/patata→Verduras, aceite/sal/pimienta/arroz/pasta/harina→Secos, nata/mantequilla/queso→Lácteos, papel/film/guantes/lejía→Limpieza…) y añadir validación de lista en la columna C con el juego único de categorías del kit, para que los SUMIF de 05 y 07 puedan cruzar."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina!D5:D24, Barra!D5:D19, Almacén!D5:D19",
+      "hallazgo": "Las unidades de medida siguen la misma rotación cíclica ud→L→kg, ajena al producto. La unidad es el multiplicador del precio: contar en la unidad equivocada falsea la valoración del stock y la cantidad a pedir.",
+      "evidencia": "Cocina: D6='L' para 'Solomillo ternera'; D13='kg' para 'Aceite oliva'; D14='ud' para 'Sal'; D19='kg' para 'Huevos'; D24='L' para 'Ajo'. Barra: D5='ud' para 'Café en grano'; D10='kg' para 'Cerveza grifo (barril)'; D13='kg' para 'Vino tinto (copa)'; D15='L' para 'Hielo'. Almacén: D13='kg' para 'Contenedores GN 1/1'; D17='ud' para 'Aceite girasol (5L)'. El patrón ud→L→kg se repite exacto en las tres hojas.",
+      "fix": "Poner la unidad real de compra de cada línea (kg para carnes/pescados/verduras a granel, L para líquidos, ud/docena para huevos, barril o L para cerveza de grifo, caja/rollo para consumibles) y añadir la columna 'Formato de compra' (p. ej. 'caja 5 kg') junto a la unidad de conteo."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Instrucciones!A9 vs. Control Recepción (hoja completa)",
+      "hallazgo": "Las Instrucciones afirman que las temperaturas fuera de rango se marcan automáticamente en rojo. El libro no tiene ni una fórmula ni un solo formato condicional: la columna de temperatura no reacciona a nada.",
+      "evidencia": "Instrucciones!A9='4. Las temperaturas fuera de rango se marcan automáticamente en rojo.' Verificado con openpyxl sobre las 4 hojas del libro: conditional_formatting = 0 reglas y 0 fórmulas en todo el fichero; Control Recepción!G3='Temp. °C' es una columna de entrada manual sin ninguna regla asociada. (Ampliación: los 9 xlsx del kit suman 0 formatos condicionales.)",
+      "fix": "Añadir columna 'Categoría' con desplegable ligado a Verificación Temperaturas!A4:A9, una columna calculada '¿Temp. OK?' con BUSCARV contra el máximo aceptable, y formato condicional rojo sobre G. Si no se implementa, borrar la línea A9 de las Instrucciones."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Control Recepción!A3:L3 (cabecera) y Registro Incidencias!A3:H3",
+      "hallazgo": "El registro de recepción no tiene número de lote ni número de albarán/factura. Sin esos dos datos no hay trazabilidad hacia atrás y el registro no sirve como prerrequisito documental de un plan APPCC — que es justo lo que promete la landing y las propias Instrucciones.",
+      "evidencia": "Cabecera completa de Control Recepción: A3='Fecha', B3='Proveedor', C3='Producto', D3='Pedido (ud)', E3='Recibido (ud)', F3='✓ Cantidad', G3='Temp. °C', H3='✓ Temp. OK', I3='Caducidad', J3='✓ Calidad', K3='Incidencia', L3='Firmado'. No aparece 'Lote' ni 'Albarán' (sí existe 'Lote/Ref' en 06-fifo-caducidades!D4, sin puente ninguno). Instrucciones!A4='Verifica cada entrega de proveedor con este checklist APPCC.' kit-inventario.ts faqs[2].a='Si… Ambas son trazables y auditables para inspecciones' y why.reasons[2].desc='Todo lo que necesitas para las inspecciones'.",
+      "fix": "Añadir a Control Recepción las columnas 'Nº albarán', 'Lote proveedor' y 'Nº RGSEAA proveedor', y cambiar 'Firmado' (✓/✗) por 'Nombre del receptor' + 'Firma', que es lo que un inspector pide poder identificar."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Verificación Temperaturas!A4:C5",
+      "hallazgo": "Los límites de aceptación de temperatura están por encima de la norma y agrupan en una sola línea productos con máximos legales muy distintos. Aplicados tal cual, hacen aceptar mercancía que debería rechazarse.",
+      "evidencia": "A4='Carne fresca', B4='0 a 4°C', C4='7°C máx.' — el Reglamento (CE) 853/2004 Anexo III fija ≤7 °C sólo para canales/despiece de ungulados, pero ≤4 °C para aves y conejo (Secc. II), ≤3 °C para despojos (Secc. I) y ≤2 °C para carne picada y ≤4 °C para preparados de carne (Secc. V). Con esta tabla, una carne picada a 7 °C se acepta con un '✓'. A5='Pescado fresco', C5='4°C máx.' — la misma norma (Secc. VIII) exige temperatura próxima a la de fusión del hielo, es decir 0-2 °C; aceptar a 4 °C es admitir pescado fuera de norma. A9='Huevos', C9='20°C máx.' — los huevos no se refrigeran y no tienen ese límite de rechazo (Regl. 589/2008: temperatura constante, no refrigerar antes de la venta), así que en agosto se rechazaría mercancía correcta.",
+      "fix": "Desdoblar la tabla en las líneas reales: canal/despiece ≤7 °C, despojos ≤3 °C, aves y conejo ≤4 °C, carne picada ≤2 °C, preparados de carne ≤4 °C, pescado fresco 0-2 °C (hielo fundente), congelados ≤-18 °C (tolerancia puntual -15 °C en transporte), platos elaborados refrigerados ≤4 °C, huevos 'temperatura ambiente constante, no refrigerar'. Añadir la columna 'Base normativa' con la referencia; es lo que le da valor en una inspección."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora!G4:G33 (30 fórmulas idénticas)",
+      "hallazgo": "El EOQ (fórmula de Wilson) se aplica sin capar por vida útil y con los dos costes hardcodeados, así que devuelve cantidades imposibles para producto perecedero y frecuencias de pedido que contradicen a la hoja Parámetros del mismo fichero.",
+      "evidencia": "G4='=IF(C4=\"\",\"\",ROUND(SQRT(2*C4*365*2/0.5),0))' — el 2 es el coste de pedido y el 0,5 el de almacenamiento, ninguno enlazado a celda ni a la hoja Parámetros (que dice B4='2-5 €' y B5='20-30% anual', un porcentaje SOBRE EL VALOR, mientras aquí se usa como euros absolutos, y en la hoja no existe ninguna columna de precio/ud). Traza numérica: salmón fresco con consumo diario 3 kg → G=ROUND(SQRT(2*3*365*2/0,5),0)=94 kg, y H4='=IF(C4=\"\",\"\",ROUND(G4/C4,0))'=ROUND(94/3)=31 días. La misma hoja, Parámetros!A7='Lead time pescado', B7='1 día', C7='Entrega diaria obligatoria'. Leche con 20 L/día → 242 L cada 12 días, sobre un producto que caduca en 7.",
+      "fix": "Añadir columnas 'Precio/ud (€)', 'Coste de pedido (€)', '% coste almacenamiento' y 'Vida útil (días)'; calcular H=Precio*%almacenamiento y EOQ=SQRT(2*D*S/H), y rematar con =MIN(EOQ; Consumo*VidaÚtil*0,7) para no proponer nunca más stock del que el producto aguanta. Para frescos, sustituir el EOQ por 'Cantidad a pedir = consumo × días entre entregas + stock seguridad − stock actual'."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "Pedido Actual!G9:G28 (valor constante 10)",
+      "hallazgo": "El IVA viene prerrellenado al 10 % en las 20 líneas del pedido. En España el tipo correcto depende del producto, y el kit incluye expresamente hojas de Barra y Almacén (bebidas y limpieza, al 21 %) y productos básicos al 4 %. Un pedido de bebidas cuadrado al 10 % infravalora el total un 11 % largo.",
+      "evidencia": "G9..G28 = 10 (constante, no fórmula); H9='=IF(F9=\"\",\"\",F9*(1+G9/100))'. Un pedido de 1.000 € de vino y cerveza sale H=1.100 € cuando la factura llegará a 1.210 €. Los productos afectados están en el propio kit: 01!Barra!B9='Coca-Cola', B10='Cerveza grifo (barril)', B13='Vino tinto (copa)' (21 %); 01!Almacén!B10='Lavavajillas', B12='Lejía alimentaria' (21 %); 01!Cocina!B13='Aceite oliva', B19='Huevos', 02!B12='Leche entera (L)' (4 % desde 2025).",
+      "fix": "Dejar G en blanco con validación de lista {4, 10, 21} y una nota en Instrucciones: 4 % pan/harinas/leche/queso/huevos/frutas/verduras/legumbres/cereales/aceite de oliva; 10 % resto de alimentos; 21 % bebidas alcohólicas, refrescos con azúcares añadidos y productos de limpieza."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "03-pedidos-compra.xlsx / 07-analisis-costes-compras.xlsx / BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "03!Instrucciones!A9 · 07!Instrucciones!A8 · BONUS-09!Instrucciones!A11",
+      "hallazgo": "Tres pestañas anunciadas en las Instrucciones (y dos de ellas también en la landing) no existen en el libro. El cliente las busca y no están.",
+      "evidencia": "03!Instrucciones!A9=\"4. La pestaña 'Imprimible' está optimizada para enviar o imprimir\" — hojas reales: Instrucciones, Pedido Actual, Historial Pedidos. 07!Instrucciones!A8='2. Evolución Mensual — tendencia de costes 12 meses' — hojas reales: Instrucciones, Coste por Categoría, Top 20 Productos, Dashboard KPIs (la lista numera 4 pestañas y sólo hay 3). BONUS-09!Instrucciones!A11='3. El simulador te permite probar diferentes escenarios de demanda' — hojas reales: Instrucciones, Calculadora, Parámetros. Ecos en landing: grid.templates[2].desc='…formato imprimible para enviar', grid.templates[6].desc='Coste por categoria, evolucion mensual…', grid.templates[8].desc='Simulador de demanda variable'.",
+      "fix": "Crear las tres hojas (una 'Imprimible' con área de impresión y los datos del pedido enlazados; una 'Evolución Mensual' con la serie de 12 meses y variación mes a mes; un 'Simulador' con consumo optimista/base/pesimista) o borrar las tres líneas de las Instrucciones y las tres frases de la landing. Lo que no puede quedarse es la mitad."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina/Barra/Almacén!J5:J24 (columna 'Valor (€)') y hoja 'Resumen Dashboard'!A1:D3",
+      "hallazgo": "La valoración de stock, prometida en landing y dashboard, no existe: no hay columna de precio unitario, la columna 'Valor (€)' está vacía en las 50 filas y el 'Resumen Dashboard' es una cabecera de cuatro celdas con 0 fórmulas, pese a que las Instrucciones dicen que totaliza solo.",
+      "evidencia": "Cocina!J4='Valor (€)' y J5:J24 sin valor ni fórmula (idéntico en Barra y Almacén); no existe ninguna columna 'Precio/ud' en las tres hojas de conteo. Resumen Dashboard: A1='RESUMEN DE STOCK', A3='Zona', B3='Productos con stock bajo', C3='Productos a pedir', D3='Valor total stock (€)' y nada más — max_row=3, 0 fórmulas. Instrucciones!A20=\"- La pestaña 'Resumen' totaliza automáticamente.\" Landing: grid.templates[0].desc='…alertas de reposicion automaticas y valoracion de stock'; KitInventarioDashboard.tsx:15 desc='Par levels, alertas de reposicion y valoracion de stock.'",
+      "fix": "Insertar columna 'Precio/ud (€)' antes de J, poner J5='=IF(G5=\"\",\"\",G5*<precio>)' en las 50 filas y rellenar el Resumen con tres filas (Cocina/Barra/Almacén) usando CONTAR.SI sobre la columna Estado y SUMA sobre la columna Valor de cada hoja, más una fila TOTAL."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "alta",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "Dashboard KPIs!B4:B9 (todas vacías)",
+      "hallazgo": "Los dos KPI que la landing pone como reclamo —food cost % y coste por cubierto— no tienen fórmula y, peor, son incalculables: en ninguno de los 9 ficheros del kit existe una celda donde introducir las ventas del mes ni el número de cubiertos.",
+      "evidencia": "A4='Food Cost %', B4 vacía, C4='28-32%', D4='Coste materia prima / Ventas × 100'. A5='Coste por Cubierto (€)', B5 vacía, D5='Compras del mes / Nº cubiertos'. B6:B9 igualmente vacías; la hoja tiene 0 fórmulas. Barrido de los 9 xlsx: no aparece ninguna celda de 'Ventas', 'Facturación' ni 'Cubiertos'. Landing grid.templates[6].desc='…dashboard de KPIs: food cost %, coste por cubierto'; KitInventarioDashboard.tsx:21 desc='Food cost %, coste por cubierto, tendencias.'",
+      "fix": "Añadir un bloque de inputs en Dashboard KPIs (Ventas del mes sin IVA, Nº de cubiertos, Compras del mes anterior) y calcular B4='=IF(Ventas=0,\"\",Compras/Ventas)', B5='=IF(Cubiertos=0,\"\",Compras/Cubiertos)', B6=''Coste por Categoría'!N14', B7 con la variación vs mes anterior y un semáforo contra la columna Objetivo."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "alta",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "Análisis por Categoría!B4:E10 y Dashboard Mermas!B4:B8",
+      "hallazgo": "Las dos hojas de análisis están vacías de fórmulas mientras las Instrucciones del propio fichero y la landing las venden como automáticas. Todo lo que falta es un SUMAR.SI trivial sobre el registro que ya existe.",
+      "evidencia": "Instrucciones!A8=\"3. 'Análisis por Categoría' muestra dónde pierdes más dinero\" y A9=\"4. 'Dashboard' resume las métricas clave del mes\". Análisis por Categoría tiene A4:A10 con las categorías y B/C/D/E completamente vacías (0 fórmulas). Dashboard Mermas: A4='Coste total mermas (€)' B4 vacía, A5='% mermas / compras' B5 vacía, A6='Nº incidencias' B6 vacía, A7='Categoría con más merma' B7 vacía, A8='Motivo más frecuente' B8 vacía. En cambio el registro sí calcula: G4='=IF(D4=\"\",\"\",D4*F4)' y G55='=SUM(G4:G53)'. Landing grid.templates[4].desc='Coste automatico, dashboard mensual y plan de accion'.",
+      "fix": "C4='=SUMAR.SI(\\'Registro Diario Mermas\\'!$C$4:$C$53;A4;\\'Registro Diario Mermas\\'!$G$4:$G$53)', B4 con CONTAR.SI, D4='=IF($C$11=0;\"\";C4/$C$11)'; en el Dashboard, B4=''Registro Diario Mermas'!G55', B6='=CONTARA(...)', B7 con INDICE/COINCIDIR sobre el máximo del análisis y B8 con MODA.SI sobre la columna Motivo (que ya tiene desplegable)."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "alta",
+      "fichero": "BONUS-09-calculadora-punto-pedido.xlsx",
+      "ubicacion": "Calculadora!E3 y F4:F33 vs. Parámetros!A10:B10",
+      "hallazgo": "El stock de seguridad se pide en unidades en la Calculadora y en DÍAS en la hoja Parámetros del mismo fichero. Quien siga Parámetros teclea '2' pensando en días y el punto de pedido sale infravalorado en (consumo diario − 1) × días, provocando roturas de stock sistemáticas justo en el producto crítico.",
+      "evidencia": "Calculadora!E3='Stock Seguridad' (sin unidad) y F4='=IF(C4=\"\",\"\",(C4*D4)+E4)' — E se suma en unidades. Parámetros!A10='Stock seguridad (días)', B10='1-3 días', C10='Según criticidad del producto'. Traza: consumo 10 kg/día, lead time 2 días, usuario escribe 2 siguiendo Parámetros → F=(10*2)+2=22 kg cuando lo pretendido eran (10*2)+(10*2)=40 kg. Casi la mitad.",
+      "fix": "Renombrar E3 a 'Stock Seguridad (días)' y cambiar la fórmula a F4='=IF(C4=\"\",\"\",C4*(D4+E4))', o dejarla en unidades y corregir Parámetros!A10 a 'Stock seguridad (unidades) = consumo diario × 1-3 días'. Una de las dos, no las dos."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "alta",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Control FIFO!H5:H54 y Alertas Caducidad!A7",
+      "hallazgo": "El semáforo no distingue un producto YA CADUCADO de uno que caduca mañana: los dos salen '🔴 URGENTE'. Y el protocolo de la hoja siguiente instruye a usar hoy lo que esté en rojo. Un producto con la fecha de caducidad vencida no se puede usar bajo ningún concepto.",
+      "evidencia": "H5='=IF(G5=\"\",\"\",IF(G5<=1,\"🔴 URGENTE\",IF(G5<=3,\"🟡 PRONTO\",\"🟢 OK\")))' con G5='=IF(F5=\"\",\"\",F5-TODAY())'. Un lote caducado hace 10 días da G5=-10, que cumple G5<=1 y devuelve el mismo '🔴 URGENTE' que uno con G5=1. Alertas Caducidad!A7='1. Productos con 🔴 URGENTE → usar HOY o descartar y registrar en Control de Mermas.' Instrucciones!A8='🔴 Rojo = caduca mañana o ya caducado' — el fichero admite explícitamente que mezcla los dos estados.",
+      "fix": "Añadir un cuarto nivel por delante: '=IF(G5<0,\"⛔ CADUCADO — NO USAR\",IF(G5<=1,\"🔴 URGENTE\",…))' y reescribir Alertas!A7 separando ambos casos: caducado = retirada y registro de merma, nunca uso."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "media",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina/Barra/Almacén!E5:F24 (Par Level y Par Max)",
+      "hallazgo": "Los 50 productos llevan exactamente el mismo par level (5) y par max (15), sean kilos, litros o unidades. El par level es LA decisión del kit y viene puesta por defecto, así que el semáforo y la columna 'A Pedir' dan avisos falsos hasta que el usuario reescriba las 100 celdas a mano.",
+      "evidencia": "E5:E24=5 y F5:F24=15 en las tres hojas, sin una sola excepción. Consecuencias literales: 5 kg de sal como mínimo y reponer hasta 15 kg; 5 unidades de hielo; 5 L de pimienta; el mismo mínimo para 'Solomillo ternera' que para 'Etiquetas FIFO'.",
+      "fix": "Precargar par levels plausibles por producto y formato (p. ej. sal 2 kg / 5 kg, tomate 10 kg / 25 kg, aceite 3 garrafas / 8, servilletas 2 cajas / 6) y añadir en Instrucciones la regla de cálculo: par level ≈ consumo diario × lead time × 1,3."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "Comparativa Precios!J4:J13 ('Mejor Proveedor')",
+      "hallazgo": "La columna que da el dato accionable —qué proveedor es el más barato— está vacía en las 10 filas, aunque la de al lado ya calcula el mínimo. El usuario tiene que mirar cinco celdas a ojo en cada línea.",
+      "evidencia": "I4='=MIN(D4:H4)' y K4='=IF(I4=0,\"\",ROUND((MAX(D4:H4)-I4)/I4*100,1))' están puestas en las 10 filas; J4:J13 sin valor ni fórmula. Cabecera D3:H3='Prov. 1'…'Prov. 5'. Además, con el rango vacío MIN devuelve 0, así que la columna 'Mejor Precio' muestra 0 en las 10 filas nada más abrir el fichero.",
+      "fix": "J4='=IF(I4=0,\"\";INDICE($D$3:$H$3;COINCIDIR(I4;D4:H4;0)))' arrastrado a J13, y envolver I4 en '=SI(CONTAR(D4:H4)=0;\"\";MIN(D4:H4))'. Y sustituir 'Prov. 1..5' por una fila donde se escriba el nombre real del proveedor, para que el INDICE devuelva algo útil."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "Comparativa Precios!B4:C13 y D4:H13",
+      "hallazgo": "Falta la columna de formato/envase y la fecha de la cotización. Comparar cinco proveedores sin normalizar el formato de venta es el error clásico de compras: el MIN() elegirá al que cotice la garrafa contra quien cotiza el litro.",
+      "evidencia": "B7='Aceite oliva AOVE (5L)' con C7='L' e I7='=MIN(D7:H7)' — si el proveedor 1 mete 42 (la garrafa de 5 L, es decir 8,40 €/L) y el proveedor 2 mete 9,20 (el litro), MIN devuelve 9,20 y señala como más barato al que en realidad es un 9 % más caro. Mismo riesgo en B11='Huevos M (docena)' con C11='ud'. Ninguna celda del libro recoge la fecha de la oferta.",
+      "fix": "Añadir 'Formato de venta' y 'Contenido (kg/L/ud)' y calcular una columna oculta de precio unitario normalizado (=precio/contenido) sobre la que corran MIN y MAX. Añadir 'Fecha cotización' y 'Vigencia' — en frescos una comparativa sin fecha caduca en una semana."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "02-fichas-proveedores.xlsx",
+      "ubicacion": "Directorio Proveedores!A3:K3",
+      "hallazgo": "La ficha de proveedor no recoge CIF/NIF ni número de registro sanitario (RGSEAA), ni campo de homologación. Sin eso no se puede dar de alta al proveedor en contabilidad ni acreditar el prerrequisito de homologación de proveedores que exige el plan APPCC que el kit dice cubrir.",
+      "evidencia": "Cabecera completa: A3='#', B3='Proveedor', C3='Categoría', D3='Contacto', E3='Teléfono', F3='Email', G3='Dirección', H3='Días Entrega', I3='Pedido Mínimo (€)', J3='Forma Pago', K3='Notas'. No hay CIF, ni RGSEAA, ni 'Homologado S/N', ni 'Fecha revisión documentación'. Las 20 filas (A4:A23) están numeradas y por lo demás vacías. Landing why.reasons[2].title='Cumplimiento APPCC'.",
+      "fix": "Añadir 'CIF/NIF', 'Nº RGSEAA', 'Homologado (S/N)', 'Fecha última revisión de documentación' y 'Certificaciones (ISO/IFS/BRC/eco)'. Es la diferencia entre una agenda de teléfonos y una ficha de proveedor."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "Historial Pedidos (hoja completa) y Pedido Actual!F30:F31",
+      "hallazgo": "El historial es una cabecera sin fórmulas y sin filas, y 'Pedido Actual' es una hoja única que se pisa a sí misma en el siguiente pedido: no queda copia del pedido enviado con la que cotejar el albarán. Además falta la cuota de IVA que el propio historial pide.",
+      "evidencia": "Historial Pedidos: A3:I3 = 'Fecha','Nº Pedido','Proveedor','Productos','Subtotal (€)','IVA (€)','Total (€)','Estado','Observaciones'; max_row=3, 0 fórmulas. En Pedido Actual, E30='SUBTOTAL:' F30='=SUM(F9:F28)' y E31='TOTAL CON IVA:' F31='=SUM(H9:H28)', pero no hay ninguna celda que dé la cuota (F31−F30) para copiarla a la columna F del historial.",
+      "fix": "Insertar 'IVA:' con '=F31-F30' entre ambas, y convertir el historial en un registro real (una fila por pedido con fórmulas que traigan Nº Pedido, Proveedor, Subtotal, IVA y Total de la hoja del pedido, más el flujo de trabajo para duplicar la hoja de pedido antes de vaciarla)."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "03-pedidos-compra.xlsx",
+      "ubicacion": "Pedido Actual!A3 (campo 'Proveedor:') — libro entero",
+      "hallazgo": "La landing promete 'Dropdown de proveedores' en los pedidos. El libro no tiene ni una sola validación de datos, y tampoco enlaza con el directorio de 02. Falta además la cabecera con los datos fiscales del comprador, sin la cual el pedido no es enviable.",
+      "evidencia": "Verificado con openpyxl: data_validations = 0 en las tres hojas de 03-pedidos-compra.xlsx (frente a las 3 que sí tiene 04 y la 1 que tiene 05, así que el generador sabe ponerlas). La cabecera del pedido es sólo A3='Proveedor:', A4='Fecha pedido:', A5='Fecha entrega:', A6='Nº Pedido:' — sin razón social, CIF, dirección de entrega ni persona de contacto del restaurante. Landing kit-inventario.ts grid.templates[2].desc='…Dropdown de proveedores, subtotales con IVA y formato imprimible para enviar.'",
+      "fix": "Añadir una hoja 'Proveedores' (o pegar el directorio de 02) con validación de lista en la celda de proveedor y un BUSCARV que traiga teléfono, email y pedido mínimo; y un bloque de emisor con razón social, CIF, dirección de entrega, horario de recepción y persona de contacto."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Control Recepción!D3:F33",
+      "hallazgo": "Teniendo las columnas 'Pedido (ud)' y 'Recibido (ud)' una al lado de la otra, la verificación de cantidad es un desplegable manual ✓/✗/—: no hay ni resta, ni porcentaje de desvío, ni valor económico de lo no servido. Es exactamente el control que justifica la plantilla.",
+      "evidencia": "D3='Pedido (ud)', E3='Recibido (ud)', F3='✓ Cantidad' con validación de lista '✓,✗,—' en F4:F33 y CERO fórmulas en toda la hoja. El Registro de Incidencias tampoco recoge importe: A3:H3='Fecha','Proveedor','Producto','Tipo Incidencia','Descripción','Acción Tomada','Responsable','Resuelta'. Landing grid.templates[3].desc='…Registro de incidencias y discrepancias vs pedido original.'",
+      "fix": "Añadir 'Diferencia' ='=IF(E4=\"\",\"\",E4-D4)', '% desvío' y 'Importe no servido (€)' (diferencia × precio del pedido), dejar F como '=IF(E4=D4,\"✓\",\"✗\")' calculada, y añadir al Registro de Incidencias 'Importe reclamado' y 'Abono recibido'. La suma de esas columnas es el argumento con el que se reclama al proveedor."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "04-recepcion-mercancias.xlsx",
+      "ubicacion": "Verificación Temperaturas!A3:C9 vs. Control Recepción!G3:H33",
+      "hallazgo": "La tabla de temperaturas de referencia y el registro donde se anotan viven en hojas distintas sin ningún puente: el registro ni siquiera tiene columna de categoría, así que el criterio existe en papel y no se aplica a ningún dato.",
+      "evidencia": "Verificación Temperaturas!A4:A9 = Carne fresca, Pescado fresco, Lácteos, Congelados, Frutas y verduras, Huevos con sus máximos en C4:C9. Control Recepción!C3='Producto' (texto libre), G3='Temp. °C', H3='✓ Temp. OK' (desplegable manual). No hay columna 'Categoría' ni ninguna fórmula que cruce ambas hojas.",
+      "fix": "Insertar 'Categoría' con validación de lista contra Verificación Temperaturas!A4:A9 y convertir H en calculada: '=IF(O(G4=\"\";Categoría=\"\");\"\";IF(G4<=BUSCARV(Categoría;límites;2;FALSO);\"✓\";\"✗ RECHAZAR\"))', con formato condicional rojo."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "Análisis por Categoría!A4:A10 vs. Registro Diario Mermas!C4:C53 y 01!Cocina!C5:C24",
+      "hallazgo": "Las 7 categorías del análisis no coinciden con las 10 que usa el inventario ni con las 10 de 07, y la columna Categoría del registro no tiene desplegable (la de Motivo sí). Cualquier agregación futura fallará y el usuario que copie la categoría del inventario nunca cuadrará.",
+      "evidencia": "Análisis por Categoría!A4:A10 = Cárnicos, Pescados, Lácteos, 'Verduras/Frutas', Secos, Congelados, Bebidas. En 01 las categorías son Pescados, Lácteos, Verduras, Frutas, Secos/Granos, Congelados, Bebidas, Limpieza, Varios, Cárnicos: 'Verduras' y 'Frutas' van separadas, 'Secos/Granos' no es 'Secos', y faltan 'Limpieza' y 'Varios'. En 07!Coste por Categoría!A4:A13 hay un TERCER juego (con 'Bebidas Alcohólicas', 'Bebidas No Alcohólicas' y 'Otros'). Validaciones en 05: sólo H4:H53 (Motivo), C sin validación.",
+      "fix": "Unificar un único juego de categorías para los tres ficheros, guardarlo en una hoja 'Listas' y poner validación de lista en 01!C, 05!C y 07!A. Sin esto, ningún SUMAR.SI del kit puede funcionar."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "05-control-mermas.xlsx",
+      "ubicacion": "Instrucciones!A12, Dashboard Mermas!A5 y C4:C6",
+      "hallazgo": "El objetivo estrella —mermas por debajo del 3 % sobre compras— no se puede medir porque no hay ninguna celda donde meter las compras del mes. Y el objetivo alternativo en euros absolutos contradice la propia cifra con la que la landing vende el producto.",
+      "evidencia": "Instrucciones!A12='OBJETIVO: mantener mermas por debajo del 3% sobre compras.' Dashboard Mermas!A5='% mermas / compras', C5='< 3%' — sin input de compras en el fichero ni enlace a 07. C4='< 500 €' mensual = 6.000 €/año, mientras el hero de la landing dice 'Los restaurantes pierden entre 3.000 y 5.000 EUR/ano en mermas evitables' (250-420 €/mes): el objetivo que fija el kit está por encima de la pérdida que denuncia para vender.",
+      "fix": "Añadir la celda 'Compras del mes (€)' en el Dashboard (idealmente enlazada a 07!Coste por Categoría) y calcular B5 = total mermas / compras. Sustituir el '< 500 €' fijo por un objetivo relativo (3 % de compras), que es el que se sostiene en cualquier tamaño de negocio."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Control FIFO!E4 ('Fecha Entrada') y G5:H54",
+      "hallazgo": "La hoja se llama FIFO pero lo que implementa es FEFO: todo el semáforo cuelga de la fecha de caducidad y la columna 'Fecha Entrada' no la usa ninguna fórmula. Conceptualmente FEFO es lo correcto en hostelería, pero el fichero y la landing venden otra cosa y la columna sobrante confunde al que la rellena.",
+      "evidencia": "E4='Fecha Entrada' — no aparece en ninguna de las 100 fórmulas del libro. G5='=IF(F5=\"\",\"\",F5-TODAY())' usa sólo F (caducidad), y H5 encadena sobre G. Instrucciones!A4='Controla la rotación First In First Out'. Landing grid.templates[5].title='FIFO y Caducidades', desc='Control de rotacion First In First Out…'.",
+      "fix": "Explicar en Instrucciones que el criterio operativo es FEFO (sale primero lo que antes caduca) y que FIFO es el criterio de colocación; y darle uso a 'Fecha Entrada' con una columna 'Días en almacén' ='=SI(E5=\"\";\"\";HOY()-E5)' que delate el producto olvidado al fondo de la cámara."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Control FIFO!A4:K4 (cabecera)",
+      "hallazgo": "El control de caducidades no registra cantidad ni valor. No se puede saber cuánto hay que consumir con urgencia, ni priorizar entre lo que da igual y lo que duele, ni pasar la pérdida al control de mermas.",
+      "evidencia": "Cabecera: A4='#', B4='Producto', C4='Categoría', D4='Lote/Ref', E4='Fecha Entrada', F4='Fecha Caducidad', G4='Días Restantes', H4='Estado', I4='Zona Almacén', J4='Posición', K4='Acción'. No hay 'Cantidad' ni 'Valor'. Con esta hoja, 200 g de perejil y 8 kg de solomillo generan exactamente la misma alerta '🔴 URGENTE'.",
+      "fix": "Añadir 'Cantidad', 'Unidad', 'Precio/ud (€)' y 'Valor en riesgo (€)' ='=SI(Cantidad=\"\";\"\";Cantidad*Precio)', más un total del valor en rojo/ámbar. Ese total es el número que hace que alguien actúe."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Control FIFO!F4 y Alertas Caducidad!A7:A8",
+      "hallazgo": "No se distingue 'fecha de caducidad' de 'consumo preferente', que jurídicamente y operativamente son cosas distintas: lo caducado se retira sí o sí, lo de consumo preferente vencido puede seguir usándose bajo criterio. Tratarlos igual genera merma innecesaria (o riesgo, según el lado del error).",
+      "evidencia": "F4='Fecha Caducidad' es la única columna de fecha límite y H aplica el mismo semáforo a todo (H5='=IF(G5=\"\",\"\",IF(G5<=1,\"🔴 URGENTE\",…))'). El Reglamento (UE) 1169/2011 art. 24 separa 'fecha de caducidad' (microbiológicamente perecederos) de 'consumo preferente'. El protocolo Alertas!A7 manda descartar todo lo rojo sin matizar. En la hoja conviven productos de ambos tipos por diseño (Mapa Almacén!C7='Secos, Conservas, Bebidas').",
+      "fix": "Añadir columna 'Tipo de fecha' con desplegable {Caducidad, Consumo preferente} y ramificar el estado: en caducidad, vencido = retirada obligatoria; en consumo preferente, vencido = 'revisar organolépticamente antes de usar'."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Alertas Caducidad!A3 vs. Control FIFO (auto_filter)",
+      "hallazgo": "La hoja de alertas pide al usuario que filtre la otra hoja por estado, pero ninguna hoja del kit tiene el autofiltro activado. La 'alerta' es una instrucción de trabajo manual disfrazada de funcionalidad.",
+      "evidencia": "Alertas Caducidad!A3=\"Filtra la pestaña 'Control FIFO' por Estado = 🔴 URGENTE o 🟡 PRONTO\" — la hoja completa son 6 líneas de texto, 0 fórmulas. Verificado con openpyxl: auto_filter.ref = None en las 4 hojas de este libro y en las 30 hojas de los 9 ficheros del kit. Landing grid.templates[5].desc='…con alertas por colores'.",
+      "fix": "Activar autofiltro en Control FIFO!A4:K54 y, mejor, poblar 'Alertas Caducidad' con fórmulas que extraigan automáticamente las filas en rojo/ámbar ordenadas por días restantes (FILTRAR/ORDENAR en Excel 365 y Google Sheets, o ÍNDICE+K.ESIMO.MENOR para compatibilidad con LibreOffice)."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "media",
+      "fichero": "06-fifo-caducidades.xlsx",
+      "ubicacion": "Mapa Almacén!A4:E9",
+      "hallazgo": "El mapa de almacén mete carne cruda y lácteos en la misma cámara, fija para el almacén seco un rango que en España no se sostiene en verano y no contempla tres zonas que cualquier cocina tiene. Es un mapa que un inspector cuestiona.",
+      "evidencia": "A4='Cámara Fría 1', B4='0-4°C', C4='Cárnicos, Lácteos' — carne cruda y producto lácteo listo para consumo en el mismo espacio es riesgo de contaminación cruzada. A7='Almacén Seco', B7='15-20°C' — un almacén sin climatizar en Madrid o Sevilla en agosto no baja de 20 °C; fijar un rango incumplible garantiza que el registro se rellene mal o se abandone. Faltan filas para producto elaborado/5ª gama, zona de descongelación y zona de residuos. Las columnas D ('Capacidad') y E ('Notas') están vacías en las 6 filas.",
+      "fix": "Separar 'Cámara de producto crudo' y 'Cámara de elaborados/lácteos', poner el almacén seco como 'lugar fresco y seco, <25 °C, HR <60 %, producto a ≥10 cm del suelo y separado de la pared', y añadir filas para descongelación (0-4 °C, identificada), producto elaborado y residuos."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "media",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "Top 20 Productos!A3:I23",
+      "hallazgo": "La hoja está vacía por completo y, además, mal diseñada: la columna 'Variación vs Anterior' es imposible de calcular porque no existe la columna 'Precio Anterior'. La alerta de variación >5 % que promete la landing no está en ninguna parte del kit.",
+      "evidencia": "Cabecera: A3='#', B3='Producto', C3='Categoría', D3='Gasto Mensual (€)', E3='Gasto Anual (€)', F3='% del Total', G3='Precio Actual', H3='Variación vs Anterior', I3='Proveedor'. Filas A4:A23 numeradas 1-20, todo lo demás vacío, 0 fórmulas. Con sólo 'Precio Actual' (G) no hay contra qué comparar en H. Landing grid.templates[6].desc='…top 20 productos, alertas de variacion de precios (>5%)'; en Dashboard KPIs!D9 la alerta existe sólo como texto: 'Alerta si sube >5%'.",
+      "fix": "Insertar 'Precio Anterior' antes de G y poner H='=SI(O(G4=\"\";PrecioAnterior=\"\");\"\";(G4-PrecioAnterior)/PrecioAnterior)' con formato condicional que marque >5 %; E='=D4*12', F='=SI($D$24=0;\"\";D4/$D$24)'. Y precargar 8-10 productos de ejemplo para que se entienda el uso."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "media",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "Instrucciones!A4:A10 y Coste por Categoría!B4:M13",
+      "hallazgo": "En ninguna parte se advierte de que los costes de compra deben registrarse SIN IVA. Si el usuario copia los totales de las facturas, el food cost sale inflado entre un 4 % y un 21 % y todas las decisiones que tome sobre él serán erróneas.",
+      "evidencia": "Instrucciones!A4='Analiza y controla los costes de compras de tu restaurante' — sin mención al IVA en las 12 líneas de la hoja. Coste por Categoría!B3:M3 son los 12 meses y las 120 celdas de entrada están vacías y en formato 'General'. Dashboard KPIs!D4='Coste materia prima / Ventas × 100' — tampoco especifica base imponible en ninguno de los dos términos. Mientras tanto 03-pedidos!H9 sí calcula el total CON IVA, que es justo lo que el usuario tendrá a mano para copiar.",
+      "fix": "Poner en las cabeceras 'Coste (€, sin IVA)' y añadir a Instrucciones una línea explícita: 'Todos los importes van SIN IVA (base imponible); el IVA soportado se deduce y no forma parte del food cost'. Lo mismo en el Dashboard: 'Ventas sin IVA'."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "media",
+      "fichero": "07-analisis-costes-compras.xlsx",
+      "ubicacion": "Coste por Categoría!O4:O14 y Dashboard KPIs!C5",
+      "hallazgo": "La columna '% del Total' está vacía en las 11 filas pese a que la fila TOTAL ya existe; y el objetivo de coste por cubierto está fijado en un valor absoluto en euros que no significa nada sin el ticket medio.",
+      "evidencia": "O3='% del Total' con O4:O14 sin fórmula, mientras N4='=SUM(B4:M4)' y N14='=SUM(N4:N13)' sí están calculadas: el denominador ya está ahí. Dashboard KPIs!C5='< 4,50 €' para 'Coste por Cubierto (€)' — en un menú del día de 13 € eso es un food cost del 35 % (alto), y en un restaurante de ticket 60 € es un 7,5 % (irreal por bajo). El mismo objetivo no puede valer para los dos.",
+      "fix": "O4='=SI($N$14=0;\"\";N4/$N$14)' con formato de porcentaje, arrastrado hasta O14. Y sustituir el objetivo absoluto por uno relativo: 'coste por cubierto ≤ 30-35 % del ticket medio', añadiendo la celda 'Ticket medio (€)' como input."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "media",
+      "fichero": "BONUS-08-inventario-rapido-mensual.xlsx",
+      "ubicacion": "Conteo Rápido!H4:I54",
+      "hallazgo": "El inventario mensual no calcula el consumo, que es la razón por la que se hace un inventario mensual (Stock inicial + Compras − Stock final). Lo que calcula es una variación de stock en unidades, que mezcla kg, litros y unidades y por tanto no se puede sumar ni interpretar.",
+      "evidencia": "H4='Stock Mes Anterior', I4='Variación', I5='=IF(F5=\"\",\"\",F5-H5)' en las 50 filas. No existe columna 'Compras del mes', así que el consumo real es incalculable. G56='=SUM(G5:G54)' totaliza el valor en euros (bien), pero la columna I no tiene total porque sumar kilos con litros no significa nada. Además, si H está vacía, F−'' devuelve F, presentando todo el stock como variación.",
+      "fix": "Añadir 'Compras del mes (ud)' y 'Consumo' ='=SI(F5=\"\";\"\";H5+Compras-F5)', más 'Variación (€)' ='=SI(F5=\"\";\"\";G5-(E5*H5))' con su total. Y proteger I con '=SI(O(F5=\"\";H5=\"\");\"\";F5-H5)' para que no cuente un mes anterior en blanco como cero."
+     },
+     {
+      "id": "DOM-33",
+      "severidad": "media",
+      "fichero": "01-inventario-stock-diario.xlsx",
+      "ubicacion": "Cocina/Barra/Almacén!H5:I24",
+      "hallazgo": "El estado '🟡 BAJO' nunca genera cantidad a pedir: el semáforo avisa de que vigiles y la columna de al lado dice que pidas 0. Y cuando por fin pide, no considera el plazo de entrega, así que en un producto con lead time de 2 días el aviso llega tarde por definición.",
+      "evidencia": "H5='=IF(G5=\"\",\"\",IF(G5<E5,\"🔴 PEDIR\",IF(G5<E5*1.5,\"🟡 BAJO\",\"🟢 OK\")))' e I5='=IF(G5=\"\",\"\",IF(G5<E5,F5-G5,0))'. Con E5=5 y G5=6: el estado sale '🟡 BAJO' (6 < 7,5) e 'A Pedir' devuelve 0. El salto de 0 a F5−G5 es discontinuo y no incorpora ni consumo ni lead time, pese a que el BONUS-09 sí calcula el punto de pedido correcto — sin ningún puente entre ambos ficheros.",
+      "fix": "Que 'A Pedir' arranque en el nivel ámbar: '=SI(G5=\"\";\"\";SI(G5<E5*1,5;F5-G5;0))', y añadir columna 'Lead time (días)' y 'Consumo diario' para que el disparo sea contra el punto de pedido real (consumo × lead time + seguridad), que es exactamente lo que el BONUS-09 ya sabe calcular."
+     },
+     {
+      "id": "DOM-34",
+      "severidad": "baja",
+      "fichero": "01-inventario-stock-diario.xlsx (y los otros 8 xlsx del kit)",
+      "ubicacion": "01!Instrucciones!A11 · 02!Directorio Proveedores!A4:K23 · 04!Control Recepción!A4:L33 · 05!Plan de Acción!A3:G3 · 07!Top 20!A4:I23 · 03!Pedido Actual!E9",
+      "hallazgo": "Cuatro cuestiones de acabado que se acumulan: cero formatos condicionales pese a prometerse colores automáticos, seis hojas entregadas sin un solo ejemplo, ninguna hoja protegida y columnas de precio sin formato de moneda.",
+      "evidencia": "(a) conditional_formatting = 0 en las 30 hojas de los 9 ficheros, mientras 01!Instrucciones!A11 dice \"La columna 'Estado' se colorea automáticamente\" y la landing grid.templates[0].desc='Semaforo rojo/amarillo/verde' — el color es sólo un emoji dentro de la cadena de texto. (b) Hojas entregadas sin un solo dato de ejemplo: 02!Directorio Proveedores (20 filas sólo numeradas), 02!Condiciones Comerciales, 04!Control Recepción, 04!Registro Incidencias, 05!Plan de Acción, 07!Top 20 Productos. (c) protection.sheet=False en las 30 hojas: quien cuente el stock puede machacar las fórmulas de Estado y A Pedir sin enterarse. (d) Formato 'General' en columnas de precio —03!E9 'Precio/ud (€)', 05!F4 'Coste/ud (€)', 07!B4:M13, BONUS-08!E5, 02!D4:H13— frente a #,##0.00 en las de resultado (03!F9, 05!G4, 07!N4).",
+      "fix": "Añadir formato condicional real a las columnas Estado (01, 06) y a Temp. °C (04); precargar 5-8 filas de ejemplo en las seis hojas vacías; proteger las hojas dejando desbloqueadas sólo las celdas de entrada; y aplicar #,##0.00 € a todas las columnas de precio y coste."
+     }
+    ]
+   }
+  }
+ }
+}
