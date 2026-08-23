@@ -1,0 +1,139 @@
+{
+  "rol": "verificador independiente · kit-tareas-dark-kitchen · tanda 3 (motor 2.2)",
+  "pid": "kit-tareas-dark-kitchen",
+  "fecha": "2026-08-23",
+  "fuente": "astro-site/public/dl/kit-tareas-dark-kitchen (LEÍDO, no tocado) → copia scratchpad vía CLAUDE_SCRATCHPAD=propio-verificador",
+  "modo": "SOLO --dry-run de main.py --producto kit-tareas-dark-kitchen (motor.py 2.2 + contenido_kit_tareas_dark_kitchen.py), sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean",
+  "resultado_dryrun": {
+    "exit": 0,
+    "censo_fail_exit": 0,
+    "idempotencia_1a_vs_2a_pasada": 0,
+    "inject_cache": "133 fórmulas con valor, 0 fallos pycel",
+    "ficheros_en_alcance": "11/11 (▸ completo)",
+    "listas_dv_del_producto": [
+      "\"✓,—,N/A\""
+    ],
+    "hojas_checklist_con_dv": 28,
+    "dv_incorrectas": [],
+    "mensaje_error_dv": "«Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.» — coherente con la fórmula (sólo descuenta N/A), verificado en 01-apertura-cierre.xlsx:Apertura Cocina. Nota para el orquestador: la fórmula ya está bien en las 28 hojas de este hermano, pero el mensaje VIEJO (que sí contradice la fórmula) sigue en producción del REPRESENTANTE `kit-tareas` — no es un defecto de este hermano, es el mismo hallazgo ya anotado por el mantenedor en motor-2.2.json.",
+    "instrucciones_con_bio": "11/11, 0 sin_bio, 0 version_desfasada",
+    "ficheros_todos_abren_sin_roturas": true,
+    "bad_values_ref_name_value_div0": 0,
+    "recuento_tareas_total": 331,
+    "recuento_por_fichero": {
+      "01-apertura-cierre.xlsx": 55,
+      "02-partidas-cocina.xlsx": 39,
+      "03-tareas-manager.xlsx": 57,
+      "04-tareas-perfiles.xlsx": 52,
+      "05-tareas-semanales-mensuales.xlsx": 39,
+      "06-eventos-festivos.xlsx": 33,
+      "07-plantilla-personalizable.xlsx": 0,
+      "08-apertura-cierre-negocio.xlsx": 33,
+      "09-apertura-cierre-caja.xlsx": 23,
+      "BONUS-01-briefing-servicio.xlsx": 0,
+      "BONUS-02-calendario-anual-tareas.xlsx": 0
+    }
+  },
+  "casos_6": [
+    {
+      "caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → 0",
+      "ok": true,
+      "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel sobre la copia recién impresa)"
+    },
+    {
+      "caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10, CF ámbar",
+      "ok": true,
+      "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel)"
+    },
+    {
+      "caso": "Contador con N/A: 31 tareas, 3 N/A, 28 ✓ → «28 de 28»",
+      "ok": true,
+      "ref": "01-apertura-cierre.xlsx:Apertura Cocina:D48/F48 (pycel); fórmula real E/F='=COUNTIF(B..,\"?*\")-COUNTIF(..,\"N/A\")' — sólo descuenta N/A, no «—», conforme a SPEC §8"
+    },
+    {
+      "caso": "07 plantilla personalizable: denominador por fórmula, 8 tareas escritas → «8»",
+      "ok": true,
+      "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 (pycel); placeholder «escribe aquí abajo tus tareas de …» está en la BANDA de sección (A5/A12/A19), no en la columna «Tarea» (verificado a mano) — el `COUNTIF` no lo cuenta"
+    },
+    {
+      "caso": "08 precargado: ninguna tarea sin Responsable/Hora",
+      "ok": true,
+      "ref": "08-apertura-cierre-negocio.xlsx: contexto correctamente detecta negocio=08-apertura-cierre-negocio.xlsx (antes detectaba negocio=01, hallazgo estructural de la tanda 1); verificado celda a celda: 'Apertura del Negocio'!D5:E22 y 'Cierre del Negocio'!D5:E19, las 33 tareas (18+15) tienen Responsable Y Hora Límite/Cuándo — 0 huecos"
+    },
+    {
+      "caso": "Bio en todas las Instrucciones",
+      "ok": true,
+      "ref": "'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' verificado en 01/08/09/05/BONUS-02 Instrucciones; gate del main.py confirma 11/11"
+    }
+  ],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+  "motor_ids_r1_verificados": [
+    "DOM-01: RESUELTO (antes «parcial» en tanda 1 — el texto 09:Cierre de Caja!B10 seguía diciendo «Total facturado = efectivo + tarjetas + otros»; ahora dice «Total facturado = efectivo contado − fondo + tarjetas + otros», coherente con la fórmula C52 y con Instrucciones!B16)",
+    "DOM-03: resuelto (0,02 € en el recuento, DV whole ≥0, formato '0')",
+    "DOM-04: resuelto (Registro Mensual: 'Z del TPV' antes de 'Descuadre'; columna del efectivo renombrada a 'Efectivo Contado' que descuenta el fondo en la fórmula del Total Facturado — regla §8/DOM-R2-01; TOTALES con AVERAGEIF del fondo y SUMIF(+)/SUMIF(−) del descuadre — DOM-R2-26)",
+    "DOM-05: resuelto (Apertura de Caja!C23 celda verde de fondo; la tarea del fondo remite a ella sin hardcodear coordenada)",
+    "DOM-06: RESUELTO (antes «no resuelto» en tanda 1 por el bug de contexto que detectaba negocio=01-apertura-cierre.xlsx en vez de 08-apertura-cierre-negocio.xlsx; el log de esta corrida confirma 'negocio=08-apertura-cierre-negocio.xlsx' y las 33 tareas del fichero CORRECTO llevan Responsable/Hora — el fix del motor 2.2/orquestador entre tandas ya está aplicado)",
+    "DOM-07: resuelto (07 con tres hojas diferenciadas — Por Franja Horaria / Por Área / Por Perfil — con secciones y columnas propias del kit; denominador por fórmula)",
+    "DOM-09: RESUELTO (antes «parcial» — el bloque 'Se conecta con' invertía los roles de 01 y 08; ahora 08-apertura-cierre-negocio.xlsx:Instrucciones dice correctamente 'checklist del LOCAL completo: es el MARCO del día' y 01-apertura-cierre.xlsx:Instrucciones dice 'el mismo día con el DETALLE por área' — consecuencia directa de arreglar el bug de DOM-06)",
+    "DOM-10: resuelto (contador honesto, sólo descuenta N/A)",
+    "DOM-11: resuelto (5 filas libres dentro del rango contado en las 28 hojas de checklist)",
+    "DOM-21: resuelto (mismo molde ▸ en los 11 ficheros, no hay evidencia de 'dos generadores' distintos)",
+    "DOM-22: resuelto (Instrucciones de 09-caja con bloques propios: 'Qué resuelve', 'Cómo usar — Apertura de Caja', 'Cómo usar — Cierre de Caja', 'Registro Mensual', 'Celdas editables', 'Se conecta con' — no es copia-pega genérica)",
+    "DOM-23: no aplica (confirmado de nuevo: 01-apertura-cierre.xlsx no tiene hoja 'Cierre Sala' — dark kitchen no tiene sala de comensales; grep de 'APPCC' en las 11 hojas = 0 resultados)",
+    "DOM-25: resuelto (cabeceras 'Día'/'Cadencia'/'Antelación'/'Cuándo' según corresponda; fila 2 acorde a la cadencia en cada hoja)",
+    "DOM-30: resuelto (bio en 11/11 Instrucciones, versión '2.0 · agosto 2026')"
+  ],
+  "motor_no_resueltos": [],
+  "contenido_pendiente_tanda1": [
+    "Orden de seguridad del gas invertido (alta) — DOM-13 equivalente",
+    "Anisakis / pescado crudo sin tarea de congelación (alta) — DOM-02 equivalente",
+    "Alérgenos ausentes en el flujo de delivery (alta) — DOM-19 equivalente",
+    "Calendario anual no adaptado a dark kitchen (alta) — DOM-20 equivalente",
+    "Registro de jornada del equipo ausente (media) — DOM-17 equivalente",
+    "Temperatura del aceite de freidora al cambiarlo (media) — DOM-27 equivalente",
+    "Registro de mermas ausente (media) — DOM-18 equivalente",
+    "Vida útil de congelación por familia ausente (media) — DOM-29 equivalente"
+  ],
+  "contenido_no_aplicado": [],
+  "verificaciones_directas_celda": [
+    "01-apertura-cierre.xlsx:'Apertura Cocina'!A5:E10 — bloque «  HIGIENE PERSONAL» AL INICIO (5 tareas: uniforme, joyas/uñas, heridas, lavado de manos, síntomas), antes de «  EQUIPOS»",
+    "01-apertura-cierre.xlsx:'Apertura Cocina'!A11:E14 — «  EQUIPOS» en orden seguro: fila 12 campana, fila 13 gas ('Verificar el gas ANTES de encender nada... si huele, no enciendas'), fila 14 encender equipos — campana → gas → fuego",
+    "02-partidas-cocina.xlsx:'Estación Fría'!B6 — lejía 70 ppm/5 min + ACLARAR con agua potable; !B8 — tarea ANISAKIS explícita ('congelado previamente ≥24 h a −20 °C (o 15 h a −35 °C)')",
+    "03-tareas-manager.xlsx:'Diario Manager'!B24 — 'Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas)', fila 17, 22:30",
+    "05-tareas-semanales-mensuales.xlsx — hoja NUEVA 'Trimestral y Anual' (6 hojas totales, antes 5): 11 tareas en 3 bloques (5/4/2) con nº de parte y firma — DDD, conductos, extintores/BIE, gas, legionela, frigorista, gestor de aceite/cartón, seguro RC, Verifactu",
+    "05-tareas-semanales-mensuales.xlsx:'FIFO Semanal'!B14 — aceite SOLO por debajo de 40 °C; filas 25-34 tabla editable 'VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C' con 8 familias, FUERA del rango del contador (fila 21)",
+    "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!A5:D26 — 22 fechas (antes 17): confirmadas las 5 nuevas (19 Mar Día del Padre fila 9, Comuniones fila 12, 15 Ago fila 18, 1 Nov fila 21, 6-8 Dic fila 23) y vocabulario reescrito a pedidos/riders/packaging/plataformas en las 17 restantes; 0 menciones a 'comensales', 'cotillón' o 'reservas de mesa'",
+    "09-apertura-cierre-caja.xlsx:'Registro Mensual'!C4/F5/B36/H36 — 'Efectivo Contado', fórmula que descuenta el fondo, TOTALES con AVERAGEIF/SUMIF(±) — regla §8 confirmada byte a byte",
+    "Escaneo completo de las 11 hojas del kit en busca de 'APPCC': 0 resultados (DOM-23 sigue sin aplicar, correcto)"
+  ],
+  "hallazgos_nuevos": [
+    {
+      "severidad": "media",
+      "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B11 ('Encender sistema de reservas / tablet de pedidos'), !B13 ('Revisar reservas del día y eventos especiales'), !B16/C16 ('Revisar estado del mobiliario (sillas, mesas, iluminación)' / zona 'Sala'), !B17/C17 ('Montar terraza si aplica (mesas, sillas, sombrillas/estufas)' / zona 'Terraza'), !C18 (zona 'Sala'); 'Cierre del Negocio'!C6 (zona 'Sala'), !B7/C7 ('Limpiar y recoger terraza si aplica' / zona 'Terraza')",
+      "hallazgo": "El fichero 08 (en alcance, 33 tareas) conserva vocabulario de restaurante con sala de comensales y terraza — mismo tipo de problema que ya se corrigió explícitamente en BONUS-01-briefing-servicio.xlsx para ESTE MISMO kit (contenido_kit_tareas_dark_kitchen.py:BRIEFING, docstring: 'el briefing entero hablaba de comensales, mesas VIP, barra y carta en un negocio 100% delivery donde no entra nadie'). El motor sólo aplicó a 08 la precarga estructural de Responsable/Hora (§1.4, ya resuelto), pero el módulo de CONTENIDO de este hermano no tiene una función `_f08` que reescriba estas tareas —FICHEROS en contenido_kit_tareas_dark_kitchen.py cubre 01/02/03/05/06/BONUS-01/BONUS-02, no 08 ni 09—, así que un cliente de dark kitchen recibe instrucciones para 'montar la terraza' y 'revisar las reservas del día' en un negocio sin comedor ni reservas de mesa. Es un candidato claro para una mini-ronda de contenido sobre 08, análoga a la ya hecha sobre BONUS-01, pero NO rompe ninguna fórmula ni afecta a los casos de §6 — por eso se rebaja de 'alta' (como se calificó el mismo tipo de hallazgo en BONUS-01) a 'media': es un defecto de encaje de sector, no de seguridad, dinero o legalidad."
+    },
+    {
+      "severidad": "media",
+      "donde": "motor.py:2397-2408 (`_bloque_conecta`) y motor.py:2489-2502 (`instrucciones_negocio`) — el texto '(cocina, sala, barra)' y 'MARCO del día (accesos, luces, clima, terraza)' está hardcodeado igual para los 12 kits de la familia; en kit-tareas-dark-kitchen aparece literal en las Instrucciones de LOS 11 FICHEROS (verificado, p.ej., en 01-apertura-cierre.xlsx:Instrucciones!B22-B23, 08-apertura-cierre-negocio.xlsx:Instrucciones!B7/B36-B37 y BONUS-02-calendario-anual-tareas.xlsx:Instrucciones!B12-B13)",
+      "hallazgo": "El bloque 'Se conecta con' (y el 'Qué resuelve' de 08) describe el detalle por área de 01 como '(cocina, sala, barra)', pero 01-apertura-cierre.xlsx de este kit SÓLO tiene las hojas 'Apertura Cocina' y 'Cierre Cocina' — sin 'Sala' ni 'Barra' (esto ya lo confirmó R1 en DOM-23: 'dark kitchen no tiene sala de comensales'). Es texto MOTOR (§2.5), no de contenido de este hermano, y por tanto afecta potencialmente a cualquier otro kit de la familia cuyo 01 no tenga esas tres áreas exactas (p. ej. food-truck si entrase en la familia). No es un dato falso grave — es descriptivo, no operativo, y no cambia ninguna celda que el cliente rellene — pero es información inexacta impresa en un documento que el cliente lee para entender su propio kit. Se resolvería mejor derivando la frase de los nombres reales de las hojas de `CTX['f_areas']` en vez de una cadena fija, cambio de una línea en motor.py que beneficiaría a toda la familia."
+    },
+    {
+      "severidad": "baja",
+      "donde": "01-apertura-cierre.xlsx:'Cierre Cocina'!B24 ('Desactivar todas las marcas en plataformas') vs 08-apertura-cierre-negocio.xlsx:'Cierre del Negocio'!B18 ('Desactivar restaurante en plataformas delivery'); 03-tareas-manager.xlsx:'Diario Manager'!B19 ('Desactivar todas las marcas') vs 04-tareas-perfiles.xlsx:'Gestor Plataformas'!B18 (mismo texto); 01!B28/04:'Encargado Operaciones'!B18 ('Hacer pedidos para mañana', texto idéntico)",
+      "hallazgo": "Tareas con el MISMO texto literal en ficheros distintos (área/manager vs perfil por rol), detectadas también por el gate `bandas_solapadas` al 25% de solape (por debajo del umbral del 80% que dispara la anotación automática, decisión (f) del mantenedor ya documentada — no es una regresión de esta tanda). Se aporta como evidencia concreta adicional por si se revisa ese umbral: no está claro para quien usa 04-tareas-perfiles.xlsx si 'desactivar marcas' o 'hacer pedidos para mañana' ya lo hizo el manager en 03/01 o si le toca a él repetirlo. No bloquea: no afecta a ningún caso de §6 ni a ninguna fórmula."
+    }
+  ],
+  "tareas_total": 331,
+  "ficheros_total": 11,
+  "bloquea_real": false,
+  "notas": [
+    "istats antes de cada arranque de python: 41.3-43.3 °C durante todo el trabajo, muy por debajo de 65 °C; un solo intérprete python a la vez; sin builds ni Playwright.",
+    "REGLAS DURAS respetadas: astro-site/public/dl/kit-tareas-dark-kitchen no se ha tocado (sólo LEÍDO como carpeta_origen del propio main.py); todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD=…/propio-verificador; sin KIT_TAREAS_APPLY; sin git add/commit/stash/clean; kit-tareas (el representante) no se ha regenerado ni tocado, sólo se leyeron R1/SPEC/motor-2.2.json/verif de tanda 1 como referencia.",
+    "El hallazgo estructural de la tanda 1 (motor.contexto() detectando negocio=01 en vez de negocio=08) YA NO REPRODUCE en esta corrida: el log del paso 1/7 muestra 'negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx', confirmando que el fix llegó entre la tanda 1 y esta tanda 3 (no está documentado explícitamente en motor-2.2.json, que se centra en las decisiones (i)-(l); vale la pena que el orquestador confirme en qué commit/tanda se corrigió `motor.contexto()` para dejarlo trazado).",
+    "Los 8 temas de contenido_pendiente de la tanda 1 están 8/8 aplicados y verificados abriendo la celda real (9 verificaciones directas listadas arriba, más de las 6 mínimas exigidas), no sólo leídos del log de `cambios` del informe.",
+    "Los dos hallazgos nuevos de severidad media (08 sin adaptar al sector delivery; texto motor hardcodeado 'cocina, sala, barra') no bloquean: no rompen ninguna fórmula, no afectan a los 6 casos de §6, no mezclan listas de DV y no dejan contenido_pendiente de la tanda 1 sin aplicar — por eso bloquea_real=false, coherente con el criterio ya aplicado en la verificación ver2 de kit-tareas-cafeteria (mismo tipo de hallazgo — vocabulario/solape en 08 —, mismo veredicto de severidad y de no bloqueo).",
+    "04-tareas-perfiles.xlsx, 06-eventos-festivos.xlsx y el resto de hojas no citadas en contenido_kit_tareas_dark_kitchen.py se revisaron como jefe de cocina de dark kitchen/delivery y encajan bien en el perfil (vocabulario de marcas, plataformas, riders, packaging consistente), salvo las excepciones citadas en hallazgos_nuevos."
+  ],
+  "fichero_json": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-dark-kitchen-ver2.json"
+}

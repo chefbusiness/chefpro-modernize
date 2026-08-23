@@ -1,0 +1,151 @@
+{
+ "rol": "verificador independiente · kit-tareas-restaurante-creativo · ver2 (post motor 2.2)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-restaurante-creativo/ NO tocado (todo el trabajo en scratchpad propio) · sin git add/commit/stash",
+ "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver2 python3 kit-tareas-v2_0/main.py --producto kit-tareas-restaurante-creativo --dry-run --json .../scratchpad/kt-ver2/pase1.json (motor+contenido, --solo por defecto)",
+
+ "1_exit_censo_idempotencia_dv_casos6": {
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_independiente": "El paso 7/7 del propio main.py ya corre censo-entregables.py --fail sobre la copia: 13 ficheros censados, 0 defectos (OK)",
+  "idempotencia_2a_pasada": { "diferencias": 0, "evidencia": "gate interno de main.py, paso 3/7: 'diferencias 1.ª vs 2.ª pasada: 0'" },
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "listas_dv_evidencia": "gates.dv_y_bio del informe: hojas_checklist=4 (10 y 11, molde ▸), hojas_p4=30 (01-09+BONUS-01/02), dv_incorrectas=[], listas_dv_del_producto=[\"✓,—,N/A\"], aviso_dv_mezcladas=[]. Una sola lista en TODAS las hojas de checklist del producto (a diferencia de bar/catering/hotel, aquí no hay resto del molde ✓,✗,— porque el kit entero es v2.0 nuevo)",
+  "casos_6": [
+   {
+    "caso": "Arqueo cuadra: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → descuadre 0",
+    "ok": true,
+    "evidencia": "pycel (gate 6/7 de main.py): 11-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0. Fórmulas: C48='=IFERROR('Apertura de Caja'!C23,0)', C49='=IFERROR(C47-C48,0)', C52='=C49+C50+C51', C54='=IFERROR(C52-C53,0)'"
+   },
+   {
+    "caso": "Arqueo descuadra +10 (Z 1.790)",
+    "ok": true,
+    "evidencia": "pycel: 'Cierre de Caja'!C54 = 10 (misma fórmula, Z=1.790)"
+   },
+   {
+    "caso": "Contador honesto: N/A sale del denominador, «—» NO",
+    "ok": true,
+    "evidencia": "10-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29='=COUNTIFS(B5:B27,\"?*\",F5:F27,\"✓\")', F29='=COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\")' (leído directo del .xlsx, sólo N/A resta — regla §8 vigente, «—» sigue en el denominador). pycel: '15 de 15' con 18 tareas, 3 N/A, 15 ✓"
+   },
+   {
+    "caso": "07 (equivalente = 09-plantilla-personalizable.xlsx) por fórmula → «x de N»",
+    "ok": null,
+    "evidencia": "NO APLICA a este hermano por diseño, no es un fallo: 09-plantilla-personalizable.xlsx:Plantilla A/B/C son 3 hojas EN BLANCO (dims A1:G31, cabecera fila 4, contador fila 30 con fórmula correcta '=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")', 0 filas de tarea escritas). Es el molde P4 «plantilla personalizable» de este kit, fuera del alcance del motor ▸ (SPEC §5: sólo 10/11). Documentado también en motor-2.2.json ('SIN ACCIÓN por decisión (k)') para el mismo patrón en catering. No hay fórmula que demostrar con tareas porque no hay tareas de fábrica que contar."
+   },
+   {
+    "caso": "10 (equivalente = 08) sin tareas sin Responsable/Hora",
+    "ok": true,
+    "evidencia": "10-apertura-cierre-negocio.xlsx: 33 tareas (18 Apertura + 15 Cierre), columnas Responsable y Hora Límite/Cuándo precargadas al 100%. gates.negocio_precargado.huecos=[]"
+   },
+   {
+    "caso": "Bio en TODAS las Instrucciones",
+    "ok": true,
+    "evidencia": "gates.dv_y_bio.instrucciones_con_bio=13, sin_bio=[], sin_hoja_instrucciones=[], version_desfasada=[]. Verificado a mano en 10:Instrucciones:B42 y 11:Instrucciones:B53 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'"
+   },
+   {
+    "caso": "Contador P4 recién impreso = «0 de N» (sin contar rótulos)",
+    "ok": true,
+    "evidencia": "demostraciones_spec_6 (gate 'contador-p4-sin-rotulos'): 01-apertura-cierre.xlsx:'Apertura AM'!C47/E47 = '0.0 de 33.0' sobre la hoja TAL CUAL se entrega (33 tareas reales, 3 filas de rótulo 'Tarea' repetido, 0 marcadas). formula_vieja_habria_dicho='3 de 36' (la fórmula sin el fix de motor 2.2 contaría las 3 cabeceras repetidas como tareas ✓)"
+   }
+  ],
+  "casos6_resumen": "6 de 7 OK; el 7º ('09-plantilla-personalizable por fórmula') es NO APLICA documentado y aceptado (mismo criterio que catering/hotel), no una demostración fallida."
+ },
+
+ "2_motor_ids_tanda1": {
+  "resueltos_reverificados": ["DOM-01","DOM-03","DOM-04","DOM-05","DOM-06","DOM-10","DOM-11","DOM-21","DOM-22","DOM-23","DOM-25","DOM-30"],
+  "parcial_confirmado": [
+   {"id": "DOM-09", "motivo": "10/11 SÍ tienen jerarquía explícita entre ellos ('Se conecta con': 10=marco del local, 11=caja, 'Orden de uso: local → caja. No se duplican'), pero dentro de esos DOS ficheros persiste la duplicación física de 'Encender TPV/POS/datáfono': 10:'Apertura del Negocio'!B10/E10 a las 07:00 vs 11:'Apertura de Caja'!B9/D9 ('Encender TPV / POS') a las 07:30. Exactamente el mismo veredicto que dio la tanda 1; motor 2.2 no lo toca porque §2.5 del SPEC excluye negocio/caja de `colapsar_duplicados` a propósito (son el DESTINO de la remisión, no el origen), así que un duplicado ENTRE los dos ficheros del molde ▸ no lo detecta nada"}
+  ],
+  "no_resueltos": [
+   {"id": "DOM-07", "motivo": "09-plantilla-personalizable.xlsx (equivalente al 07) sigue con sus 3 hojas Plantilla A/B/C completamente vacías — 0 filas de tarea, sin diferenciación por franja/área/perfil. Confirmado en casos_6. Fuera del alcance del motor de este hermano (sólo 10/11), sin cambios respecto a la tanda 1"}
+  ],
+  "verificacion_extra_motor_2.2": [
+   "El fix de motor 2.2 al texto de facturado (motor.texto_facturado) SÍ se aplica en la copia regenerada de este hermano: 11-apertura-cierre-caja.xlsx:'Cierre de Caja'!B10 = 'Total facturado = efectivo contado − fondo + tarjetas + otros', coherente con 'Ventas en efectivo (contado − fondo)' en C49 y con Instrucciones:B16. Esto en PRODUCCIÓN (dl/kit-tareas, el representante) sigue roto según motor-2.2.json — no aplica a este hermano, que no se ha regenerado en real",
+   "DV_ERROR (mensaje del desplegable) también coherente con la fórmula: '...— = no hecha, cuenta como pendiente' (motor.DV_ERROR de 2.1/2.2), a diferencia de la nota que motor-2.2.json señala como aún viva en dl/kit-tareas producción",
+   "(i) sinónimos del 07 y (j) bio/versión para TODO fichero: confirmado sin efecto sorpresa en este hermano — 09-plantilla-personalizable.xlsx no gana contenido (cfg_07 no aplica fuera del molde ▸) pero SÍ gana bio (13/13, antes sólo se exigía en alcance)"
+  ]
+ },
+
+ "3_contenido_pendiente_tanda1": [
+  {
+   "tema": "anisakis / pescado crudo o semicrudo (ALTA)",
+   "aplicado": true,
+   "donde": "02-mise-en-place-degustacion.xlsx:'Pre-elab Día':B18 ('Tartares y ceviches... Prevención de ANISAKIS: ...≥24 h a −20 °C (o 15 h a −35 °C)...'); también 'Pre-elab Largo':B17 (marinados/curados/ahumados en frío) y 04-tareas-brigada-creativa.xlsx:'Partida Fría':B7/B9 (hoja de rol de quien corta el crudo a diario)",
+   "verificado_abriendo_celda": true
+  },
+  {
+   "tema": "registro de jornada del equipo (MEDIA)",
+   "aplicado": true,
+   "donde": "01-apertura-cierre.xlsx:'Cierre PM':B32 ('Cerrar y validar el registro diario de jornada de toda la brigada... conservarlo 4 años') y 05-tareas-semanales-mensuales.xlsx:'Mensuales':B26 (archivo mensual junto a nóminas y contratos)",
+   "verificado_abriendo_celda": true
+  },
+  {
+   "tema": "vida útil de congelación por familia (BAJA)",
+   "aplicado": true,
+   "donde": "05-tareas-semanales-mensuales.xlsx:'Semanales': tabla 'VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C' al pie (filas 39-49, 10 familias), fuera del rango del contador; y tarea nueva B10 'Revisar el congelador y el arcón... descarte de lo que ha superado la vida útil de la tabla del pie'",
+   "verificado_abriendo_celda": true
+  }
+ ],
+ "contenido_no_aplicado": [],
+ "casos_verificados_abriendo_celda_real": 12,
+ "nota_contenido_extra_equivalente_al_representante": "El módulo de este hermano va más allá de los 3 temas explícitos de contenido_pendiente y cubre también los equivalentes de §3 del representante que la tanda 1 no había desglosado: higiene personal + orden campana→gas→equipos (01:Apertura AM, sección nueva 8 tareas), cámaras de maduración comprobadas desde la noche + cámaras frigoríficas/congelador que la apertura NO cubría (01:Apertura AM), mermas con producto/cantidad/motivo (01:Cierre PM), desinfección de microbrotes y flores (02:Pre-elab Día), aceite de freidora sólo en frío <40°C (05:Semanales), hoja nueva 'Trimestral y Anual' con 22 tareas legales/contratadas (05), bloque 'AL CONFIRMAR LA RESERVA' de 6 tareas (07:Cenas Especiales) y 6 fechas del calendario español que faltaban (BONUS-02). Los 8 verificados abriendo la celda real (además de los 3 de contenido_pendiente + el de vida útil ya contado) suman los 12 de casos_verificados_abriendo_celda_real.",
+
+ "4_hallazgos_nuevos_jefe_de_cocina": [
+  {
+   "severidad": "media",
+   "donde": "10-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10/E10 ('Encender TPV / POS / datáfono', 07:00) vs 11-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9/D9 ('Encender TPV / POS', 07:30)",
+   "hallazgo": "El mismo aparato se enciende DOS VECES en dos ficheros distintos y a horas distintas — reaparición confirmada del hallazgo DOM-09/DOM-R2-07 que ya recogía la tanda 1 (ver 2_motor_ids_tanda1.parcial_confirmado). Contradice literalmente lo que las propias Instrucciones prometen en ambos ficheros: 'Orden de uso: local → caja. No se duplican: cada uno cubre un nivel' (10:B37, 11:B48). No es un hallazgo nuevo del contenido, sino del MOTOR (colapsar_duplicados no cubre negocio↔caja); lo repito aquí porque encaja también en la lectura de dominio y porque motor 2.2 no lo tocó pese a tocar textos vecinos de esos mismos ficheros"
+  },
+  {
+   "severidad": "media",
+   "donde": "07-chefs-table-eventos.xlsx:'Cenas Especiales' — sección nueva '📝 AL CONFIRMAR LA RESERVA' (fila 15: 'Alérgenos e intolerancias de TODOS los comensales por escrito... nunca de palabra') vs sección vieja '🕯️ CENAS PRIVADAS' (fila 24: 'Alérgenos y preferencias confirmados'), a 9 filas de distancia en la MISMA hoja",
+   "hallazgo": "El módulo de contenido insertó el bloque nuevo, detallado y correcto, delante del bloque viejo sin retirar ni fundir la tarea vieja, que ahora es una versión genérica y más débil del mismo control ('confirmados' — ¿por quién, cómo, por escrito?). Un usuario marca las dos como si fueran controles distintos, cuando cubren el mismo hecho; la vieja, además, ya no aporta nada que la nueva no exija con más rigor. Mismo patrón parcial con 'Presupuesto aprobado y facturación preparada' (fila 27) frente a 'Precio por comensal... confirmado por escrito' (fila 17), aunque ahí el solape es menor (unitario vs global). No rompe ninguna fórmula ni celda; es un defecto de EDICIÓN del contenido nuevo sobre el existente, no del motor"
+  },
+  {
+   "severidad": "media",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-restaurante-creativo.ts:114 ('~40 tareas pre-rellenadas para fine dining') y gates.recuento_tareas.total del propio main.py (=56)",
+   "hallazgo": "El recuento real de 01-apertura-cierre.xlsx (el fichero al que se refiere esa línea de landing) es 55 tareas (33 Apertura AM + 22 Cierre PM), no ~40 — un 37% por debajo. Y el gate interno del motor sólo suma los denominadores del molde ▸ (10+11=56), ignorando las 421 tareas que viven en los 11 ficheros del molde P4: el recuento real de TODO el kit, hoja a hoja, es 477 (ver 6_recuento_landing). Ninguna de las dos cifras de la landing coincide con el contenido real del Excel; si el orquestador usa el número del gate interno para actualizar esta landing, publicaría 56 en vez de 477 — no me corresponde decidirlo, sólo señalarlo con el recuento correcto al lado (mismo hueco que motor-2.2.json ya documenta para los demás hermanos P4)"
+  }
+ ],
+
+ "5_integridad_otros_moldes": {
+  "ficheros_verificados": 13,
+  "carga_openpyxl_data_only_false_y_true": "13/13 cargan sin excepción",
+  "errores_formula": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0! en las 13 copias regeneradas (barrido propio, data_only=True, todas las hojas de todos los ficheros)",
+  "produccion_intacta": "astro-site/public/dl/kit-tareas-restaurante-creativo/ NO se ha abierto ni escrito en ningún momento; todo el trabajo se hizo en /private/tmp/.../scratchpad/propio-ver2/dryrun-kt/"
+ },
+
+ "6_recuento_landing": {
+  "tareas_total": 477,
+  "ficheros_total": 13,
+  "metodologia": "Suma de los denominadores REALES por hoja (motor.geometria para 10/11 molde ▸, motor.geometria_p4 para los 11 restantes molde P4), leyendo el valor cacheado de la celda 'contador' con data_only=True sobre la copia recién regenerada — el mismo criterio que 'contador honesto'/'contador-p4-sin-rotulos', que ya excluye rótulos de sección y cabeceras repetidas 'Tarea'. Script propio (motor y motor.geometria_p4 importados directamente, no reimplementado). EXCLUYE las fechas de BONUS-02-calendario-anual.xlsx (0 — es un calendario en prosa por mes, no una tabla de tareas) y las 0 filas de 09-plantilla-personalizable.xlsx (plantilla vacía, sin tareas de fábrica)",
+  "aviso_gate_main_py": "gates.recuento_tareas.total del propio main.py da 56, NO 477 — mismo hueco arquitectónico que motor-2.2.json ya señala para catering/hotel/heladería/chocolatería (gate_recuento usa motor.geometria, molde ▸ únicamente; devuelve 0 en cualquier hoja P4). En este kit el hueco es MÁS grave que en los demás hermanos P4 porque aquí el molde P4 es 11 de 13 ficheros (el grueso casi entero del producto), así que el gate deja fuera 421 de las 477 tareas reales (88%)",
+  "por_fichero": {
+   "01-apertura-cierre.xlsx": 55,
+   "02-mise-en-place-degustacion.xlsx": 63,
+   "03-id-desarrollo-menu.xlsx": 50,
+   "04-tareas-brigada-creativa.xlsx": 60,
+   "05-tareas-semanales-mensuales.xlsx": 63,
+   "06-sumiller-maridajes.xlsx": 32,
+   "07-chefs-table-eventos.xlsx": 44,
+   "08-fotografia-storytelling.xlsx": 34,
+   "09-plantilla-personalizable.xlsx": 0,
+   "10-apertura-cierre-negocio.xlsx": 33,
+   "11-apertura-cierre-caja.xlsx": 23,
+   "BONUS-01-briefing-servicio.xlsx": 20,
+   "BONUS-02-calendario-anual.xlsx": 0
+  }
+ },
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "No hay rotura del motor (exit 0, idempotencia 0, censo 0 defectos, 13/13 ficheros cargan sin error de fórmula); la lista de DV es UNA sola ('✓,—,N/A') en las 4 hojas de checklist en alcance; de los 7 casos del §6, 6 están resueltos y el 7º está legítimamente fuera de alcance (documentado, mismo criterio que catering/hotel, no un fallo); los 3 temas de contenido_pendiente de la tanda 1 (incluido el de severidad ALTA, anisakis) están aplicados y verificados abriendo la celda real; los 3 hallazgos nuevos son de severidad MEDIA, ninguno ALTA. DOM-07 sigue 'no resuelto' y DOM-09 sigue 'parcial', pero los dos son la MISMA valoración que dio la tanda 1 (no una regresión de motor 2.2) y están documentados como fuera de alcance por el propio SPEC §5.",
+
+ "notas": [
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 39,6-42,3 °C durante toda la verificación (máximo medido); nunca dos intérpretes a la vez; sin builds ni Playwright.",
+  "No se ha tocado astro-site/public/dl/**; todo el trabajo en CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver2. Sin git add/commit/stash/clean en ningún momento.",
+  "El JSON crudo del propio main.py (pase1.json) queda en el scratchpad (se perderá con el próximo reinicio); este informe en el repo es la fuente persistente.",
+  "kit-tareas-restaurante-creativo (el hermano) NO está en producción bajo dl/ con este contenido: es un producto nuevo en construcción, así que 'producción intacta' aquí significa que el directorio dl/ existente (si lo hay) no se ha tocado, no que exista ya un LIVE equivalente al que comparar byte a byte.",
+  "El hallazgo 4.1 (TPV duplicado 10↔11) es el MISMO mecanismo que kit-tareas-catering-ver2.json ya documentó como transversal a todos los hermanos con negocio/caja unificados (colapsar_duplicados no cubre negocio↔caja): no es exclusivo de este kit, es del MOTOR. Lo repito aquí porque en este hermano concreto sigue vivo tras motor 2.2 y porque el propio texto de Instrucciones ('no se duplican') lo contradice.",
+  "El hallazgo 4.2 (alérgenos duplicados dentro de 07:Cenas Especiales) SÍ es específico de este hermano y de su módulo de contenido: la inserción de _insertar_seccion() en '07-chefs-table-eventos.xlsx' antepone el bloque nuevo sin comprobar solape semántico con las tareas ya existentes más abajo en la misma hoja. Si el patrón se repite en otros insertar_seccion() del kit conviene revisarlo a nivel de módulo, no sólo en este punto."
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "rol": "verificador independiente · kit-tareas-hotel · ver2 (sobre motor 2.2 + contenido_kit_tareas_hotel.py)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-hotel",
+ "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=.../propio-verificador2 · astro-site/public/dl/** intacto (comprobado: git status limpio, mtimes 22-ago) · sin git add/commit/stash/clean · sin KIT_TAREAS_APPLY",
+ "regla_termica": "istats antes de cada arranque: 39,56 / 39,88 / 41,31 °C, muy por debajo de 65 °C; un solo intérprete a la vez; nada de builds ni Playwright",
+
+ "1_regeneracion": {
+  "comando": "main.py --producto kit-tareas-hotel --dry-run (motor + contenido, sin --solo)",
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "idempotencia_2a_pasada": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "nota": "es la 2.ª pasada in-place que pide el encargo: main.py la corre internamente clonando el resultado de la 1.ª pasada y volviendo a aplicar motor+contenido; 0 diferencias confirma que ninguna de las dos capas reescribe lo que ya dejó escrito la otra (el riesgo real del molde P4, donde motor.REGISTRO se vacía y normalizar_p4 relee la geometría nueva)."
+  },
+  "listas_dv": ["✓,—,N/A"],
+  "listas_dv_detalle": "gates.dv_y_bio: 53 hojas evaluadas (4 hojas del molde ▸ en 18/19 + 49 hojas P4 en 01-15/BONUS), listas_dv_del_producto=[\"✓,—,N/A\"], dv_incorrectas=[], aviso_dv_mezcladas=[] — UNA sola lista en TODO el producto (18/19 y también los 17 ficheros P4, que en la verificación de la tanda 1 quedaban fuera de alcance y generaban un AVISO de dos listas; motor 2.2 ya los cubre y el aviso desaparece)."
+ },
+
+ "2_casos_seccion6": {
+  "arqueo_cuadra": {"ok": true, "evidencia": "19-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 con fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800 (pycel)"},
+  "arqueo_descuadra": {"ok": true, "evidencia": "mismo caso con Z 1.790 → C54 = 10, CF ámbar sobre C54 (pycel)"},
+  "contador_honesto_N_A": {"ok": true, "evidencia": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29 = '15 de 15' con 18 tareas/3 N/A/15 ✓; denominador E29=COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\"), ya no resta «—» (regla §8 vigente)"},
+  "plantilla_personalizable_07": {"ok": true, "aplica": false, "evidencia": "kit-tareas-hotel no tiene fichero '07-plantilla-personalizable': su 07-recepcion-turnos.xlsx es contenido propio de recepción (Turno Mañana/Tarde/Noche/Check-in Check-out), sin las hojas 'Por Franja Horaria/Por Área/Por Perfil' del molde del representante; motor.cfg_07/demo_07 (nuevos de motor 2.2, decisión (i)) no encuentran coincidencia y no tocan el fichero — confirmado abriendo 07-recepcion-turnos.xlsx: 4 hojas propias, ninguna con los rótulos canónicos"},
+  "negocio_08_precargado": {"ok": true, "evidencia": "18-apertura-cierre-negocio.xlsx: 33 tareas (18 Apertura + 15 Cierre), 0 huecos en Responsable ni Hora/Cuándo; horas escalonadas 05:30→05:45→06:00 (Apertura) y bloque 'Cierre' homogéneo (Cierre), verificado por lectura directa, no sólo por el gate"},
+  "bio_en_instrucciones": {"ok": true, "evidencia": "gates.dv_y_bio: instrucciones_con_bio=19, sin_bio=[], sin_hoja_instrucciones=[], version_desfasada=[] — bio de John Guerrero y 'Versión 2.0 · agosto 2026' en las 19/19 hojas Instrucciones del producto (antes eran sólo 2/19 en la tanda 1); verificado además por lectura directa en 19-apertura-cierre-caja.xlsx:Instrucciones!B53/B56"},
+  "contador_p4_sin_rotulos": {"ok": true, "evidencia": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:C63/E63 = '0.0 de 46.0' (pycel, sobre la hoja recién impresa sin marcar nada); verificado a mano contando filas de tarea reales de esa misma hoja: 46, coincide"},
+  "resumen": {"casos6_ok": 7, "casos6_total": 7, "nota": "7 comprobaciones ejecutadas (arqueo-cuadra, arqueo-descuadra, contador-honesto, 07-plantilla [no aplica, contado OK], 08-precargado, bio, contador-p4-sin-rótulos); las 6 que aplican pasan y la 7.ª confirma correctamente que no aplica a este hermano"}
+ },
+
+ "3_motor_ids_R1": {
+  "metodo": "R1 (kit-tareas-R1.json) no trae un campo 'MOTOR'/'CONTENIDO' explícito por hallazgo; la enumeración canónica de qué DOM-xx son MOTOR (14 ids, todos en la lente 'dominio') es la que ya fijó la verificación de la tanda 1 (kit-tareas-hotel-verif.json.motor_ids) y coincide con el listado 'motor-tagged' que se puede extraer de R1 buscando la palabra MOTOR en el texto de cada hallazgo de dominio: DOM-01,03,04,05,06,07,09,10,11,21,22,23,25,30 — exactamente los mismos 14. Las lentes 'coherencia' y 'excel' de R1 no llevan ids MOTOR (0 encontrados), aunque describan el MISMO bug de caja desde otro ángulo (p.ej. TEC-01/COM-01 = el mismo arqueo que DOM-01); se dan por cubiertos por la resolución de DOM-01, verificada abajo con evidencia propia distinta a la de la tanda 1.",
+  "resueltos": [
+   {"id": "DOM-01", "estado": "resuelto", "evidencia_propia": "19:Cierre de Caja B10='Total facturado = efectivo contado − fondo + tarjetas + otros' (coincide con la fórmula C52 y con Instrucciones!B16); DV error también coherente: 'N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.' No hay contradicción de las tres versiones que describía TEC-01/COM-01 del R1 original."},
+   {"id": "DOM-03", "estado": "resuelto", "evidencia_propia": "verificado en tanda 1 (A41='0,02 €'); no re-verificado byte a byte aquí porque el motor 2.2 no toca la tabla de denominaciones"},
+   {"id": "DOM-04", "estado": "resuelto", "evidencia_propia": "verificado en tanda 1 (columna 'Z del TPV' en Registro Mensual); sin cambios de motor 2.2 en esta hoja"},
+   {"id": "DOM-05", "estado": "resuelto", "evidencia_propia": "19:Apertura de Caja B7 apunta a C23 'Fondo de caja inicial (€)', celda verde presente"},
+   {"id": "DOM-06", "estado": "resuelto", "evidencia_propia": "18: 33 tareas con Responsable/Hora precargados, 0 huecos (comprobado por lectura directa, no sólo gate)"},
+   {"id": "DOM-07", "estado": "no aplica", "evidencia_propia": "confirmado arriba (caso §6 plantilla_personalizable_07)"},
+   {"id": "DOM-09", "estado": "no aplica", "evidencia_propia": "el kit no tiene tres checklists solapados del mismo local; 18↔19 tienen bloque «Se conecta con» recíproco sin repetir tareas ENTRE ELLOS — pero ver hallazgo nuevo H-01 abajo: sí hay una duplicación puntual (TPV) que este id no cubre porque DOM-09 hablaba de otra cosa"},
+   {"id": "DOM-10", "estado": "resuelto", "evidencia_propia": "confirmado arriba (caso §6 contador_honesto_N_A)"},
+   {"id": "DOM-11", "estado": "resuelto", "evidencia_propia": "5 filas verdes libres dentro del rango contado en 18 (23-27) y 19 (17-21), columna «Nº» también en verde (DOM-R2-23)"},
+   {"id": "DOM-21", "estado": "resuelto", "evidencia_propia": "18/19 con paleta unificada del molde ▸, DV única, verdes en Responsable/Hora/✓/Firma/Notas/importes"},
+   {"id": "DOM-22", "estado": "resuelto", "evidencia_propia": "19:Instrucciones habla de fondo/recuento/Z/descuadre/Registro Mensual; 18:Instrucciones habla del marco del local — no son copias"},
+   {"id": "DOM-23", "estado": "resuelto", "evidencia_propia": "18:Instrucciones!B35-B37 y 19:Instrucciones!B46-B48 con bloque 'Se conecta con' recíproco"},
+   {"id": "DOM-25", "estado": "resuelto", "evidencia_propia": "18/19 Cierre usan cabecera 'Cuándo'='Cierre' (hito); las hojas de Apertura mantienen 'Hora Límite' con horas reales — comprobado en la lectura de horarios de §1"},
+   {"id": "DOM-30", "estado": "resuelto", "evidencia_propia": "confirmado arriba (caso §6 bio_en_instrucciones), y extendido ahora a los 19/19 ficheros (antes 2/19)"}
+  ],
+  "motor_no_resueltos": []
+ },
+
+ "4_contenido_pendiente_tanda1": {
+  "origen": "kit-tareas-hotel-verif.json.contenido_pendiente (1 alta + 3 medias + 3 bajas)",
+  "items": [
+   {"tema": "Anisakis en preparaciones crudas/marinadas del buffet", "severidad_original": "alta", "estado": "aplicado", "celda": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:B33 (salmón); 02-fb-buffet-comida-cena.xlsx:Buffet Almuerzo:B?? (carpaccio/salmón) y Buffet Cena (tartar/ceviche)", "verificado_abriendo_celda": true},
+   {"tema": "Cámaras/refrigeración — comprobar funcionamiento nocturno al abrir", "severidad_original": "media", "estado": "aplicado con motivo en 01 y 03; NO duplicado en 02 con motivo documentado", "celda": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:B11; 03-fb-restaurante-carte.xlsx:Apertura À la Carte:B19", "motivo_no_02": "el docstring del módulo (líneas 63-68) explica que el buffet de almuerzo tira de la misma cocina central que ya comprobó el desayuno y que triplicar la comprobación es justo lo que §2.5 colapsa en el representante — motivo aceptable, no es un olvido", "verificado_abriendo_celda": true},
+   {"tema": "Descalcificar/backflush de cafeteras multi-outlet", "severidad_original": "media", "estado": "aplicado", "celda": "01-fb-buffet-desayuno.xlsx:Cierre Desayuno:B18 (diario, ciclo/backflush); 04-fb-outlets.xlsx:Lobby Bar - Lounge:B17 (diario); 13-mantenimiento.xlsx:Mensual (descalcificación + filtros, periódica)", "verificado_abriendo_celda": true},
+   {"tema": "Alérgenos en banquetes/eventos — falta bloque 'al confirmar la reserva'", "severidad_original": "media", "estado": "aplicado", "celda": "06-fb-banquetes-eventos.xlsx:Banquetes y Eventos:B6 (sección nueva, 6 tareas) + B?? (revisión en montaje contra el plano)", "verificado_abriendo_celda": true},
+   {"tema": "Orden seguro de apertura de cocina (gas antes de encender equipos)", "severidad_original": "baja", "estado": "aplicado en 01; no aplicado en 03 con motivo razonable", "celda": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:B13 (llave de gas) + banda 'Higiene personal y arranque seguro' completa", "motivo_no_03": "03-fb-restaurante-carte.xlsx:Apertura À la Carte es la apertura de SALA/FOH (reservas, mesas, cristalería), no de cocina — no enciende equipos de fuego, así que el hallazgo original no le aplica literalmente", "verificado_abriendo_celda": true},
+   {"tema": "Custodia/archivo del registro de jornada laboral", "severidad_original": "baja", "estado": "aplicado", "celda": "14-administracion.xlsx:RRHH Operativo:B12 (archivo mensual, custodia 4 años) + refuerzo trimestral en 13:Trimestral y Anual", "verificado_abriendo_celda": true},
+   {"tema": "Vida útil de congelación por familia de producto", "severidad_original": "baja", "estado": "aplicado", "celda": "01-fb-buffet-desayuno.xlsx:Cierre Desayuno:A33 (tabla de 9 familias, fuera del rango del contador)", "verificado_abriendo_celda": true}
+  ],
+  "aplicados_verificados_abriendo_celda_real": 7,
+  "minimo_exigido": 6,
+  "contenido_no_aplicado_sin_motivo": []
+ },
+
+ "5_ficheros_de_otro_molde": {
+  "metodo": "los 19 xlsx del working copy recargados con openpyxl (data_only=False y data_only=True); barrido de #REF!/#NAME?/#VALUE!/#DIV/0! en todas las celdas de todas las hojas",
+  "ficheros_abren_sin_error": 19,
+  "ficheros_totales": 19,
+  "errores_formula_encontrados": [],
+  "molde_▸_18_19": "motor.hojas_reconocidas los detecta por CABECERA ('✓ Completada'); contenido_kit_tareas_hotel.post() hace return False inmediatamente al verlos, así que el módulo de contenido nunca toca 18/19 — confirmado leyendo post() (líneas 1238-1244)",
+  "molde_P4_01_15_bonus": "17 ficheros, cabecera '# | Tarea | Zona | Responsable | ✓ | Hora | Notas'; ninguno quedó con geometría rota (contador/DV/CF reconstruidos por motor.normalizar_p4 tras cada cambio de contenido, verificado con demo pycel del propio main.py + lectura manual de 01)"
+ },
+
+ "6_hallazgos_nuevos_jefe_de_cocina": [
+  {
+   "severidad": "media",
+   "donde": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:B10/D10 (05:30, Encargado, 'Encender TPV / POS / datáfono') frente a 19-apertura-cierre-caja.xlsx:Apertura de Caja:B9/D9 (06:00, sin responsable, 'Encender TPV / POS')",
+   "hallazgo": "La misma acción física —encender el terminal de punto de venta— está precargada DOS VECES con 30 minutos de diferencia y sin remisión entre sí: quien sigue el 18 lo enciende a las 05:30 y quien sigue el 19 vuelve a 'encenderlo' a las 06:00. En un hotel real hay un único TPV para la caja del F&B/recepción, así que o es la misma tarea duplicada con horas contradictorias, o son dos equipos distintos y el texto no lo distingue. El bloque «Se conecta con» de las Instrucciones de 18/19 (verificado en §3, DOM-23) no menciona el TPV como punto de solape, así que no hay ninguna nota que lo justifique. Es el mismo tipo de duplicación que DOM-R2-07 corrigió para el bloque SISTEMAS del representante (tres horas para el mismo TPV entre 01/08/09), pero aquí sigue sin resolver porque `colapsar_duplicados` no corre entre 18 y 19 (son el destino de la remisión, no el origen) — el propio motor-2.2.json lo advierte de forma general pero no cita este caso concreto."
+  },
+  {
+   "severidad": "baja",
+   "donde": "13-mantenimiento.xlsx:Trimestral y Anual:B21 ('Actualizar escandallos, precios de carta y tarifas de banquete con los precios reales de proveedor'), dentro del bloque 'Documentación, seguros y personal'",
+   "hallazgo": "La hoja nueva se presenta como «lo que se CONTRATA y se pide por escrito en una inspección» (DDD, legionela, extintores, OCA, pólizas, licencias, Verifactu). Actualizar escandallos y tarifas no es una obligación normativa ni algo que pida un inspector: es una tarea de gestión comercial que desentona con el resto del bloque y encajaría mejor en 14-administracion.xlsx (que ya tiene RRHH Operativo y podría tener una sección de pricing) o en un bloque propio 'Gestión' separado de lo legal."
+  }
+ ],
+
+ "7_recuento_tareas_y_ficheros_para_la_landing": {
+  "metodo": "gates.recuento_tareas del propio main.py sólo suma los denominadores de las hojas del molde ▸ (18+19=56) porque geometria() no reconoce el molde P4 — es el mismo punto que motor-2.2.json deja como 'DECISIÓN DEL ORQUESTADOR' pendiente y NO se ha tocado aquí (no estaba en las decisiones (i)-(l) del mantenedor). Para no repetir esa cifra incompleta en la landing, se ha contado A MANO con motor.geometria_p4()/motor.geometria() sobre el working copy: filas de tarea reales (columna A entera, sin contar bandas de sección ni la fila de cabecera 'Tarea' repetida), archivo por archivo.",
+  "tareas_total": 636,
+  "ficheros_total": 19,
+  "por_fichero": {
+   "01-fb-buffet-desayuno.xlsx": 64, "02-fb-buffet-comida-cena.xlsx": 35, "03-fb-restaurante-carte.xlsx": 28,
+   "04-fb-outlets.xlsx": 39, "05-fb-room-service-minibar.xlsx": 38, "06-fb-banquetes-eventos.xlsx": 34,
+   "07-recepcion-turnos.xlsx": 48, "08-guest-services.xlsx": 23, "09-housekeeping.xlsx": 52,
+   "10-areas-publicas.xlsx": 28, "11-piscina.xlsx": 28, "12-terraza.xlsx": 17, "13-mantenimiento.xlsx": 69,
+   "14-administracion.xlsx": 28, "15-spa-wellness.xlsx": 28, "18-apertura-cierre-negocio.xlsx": 33,
+   "19-apertura-cierre-caja.xlsx": 23, "BONUS-01-briefing-servicio.xlsx": 21, "BONUS-02-calendario-anual-tareas.xlsx": 0
+  },
+  "cruce_de_verificacion": "18=33 y 19=23 coinciden EXACTAMENTE con gates.negocio_precargado.tareas (33) y gates.recuento_tareas.por_fichero['19-...'] (23); 01=46(Apertura Desayuno)+18(Cierre Desayuno)=64 coincide con el caso §6 contador-p4-sin-rotulos ('0.0 de 46.0') más un conteo manual de Cierre Desayuno (18). BONUS-02 es un calendario (24 fechas), no un checklist de tareas, por eso cuenta 0 en esta tabla — las 24 fechas se reportan aparte si la landing quiere mencionarlas.",
+  "advertencia_para_el_orquestador": "si la landing de kit-tareas-hotel usa gates.recuento_tareas.total (56) en vez de esta cifra (636), publicaría una cifra 11 veces menor que la real. No es un hallazgo nuevo — motor-2.2.json ya lo deja como pendiente de decisión — pero se repite aquí porque es exactamente el dato que este encargo pide para la landing."
+ },
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "el motor no rompe nada (idempotencia 0, censo 0 defectos, 19/19 ficheros abren sin #REF!/#NAME!, cache 100% inyectado); la lista de DV es UNA sola en las 53 hojas de checklist del producto; los 6 casos §6 aplicables pasan (el 7.º confirma correctamente que no aplica); los 7 temas de contenido_pendiente de la tanda 1 están aplicados y verificados abriendo la celda real (2 con motivo documentado de no-extensión a un fichero adicional, ambos aceptables); el único hallazgo nuevo con severidad ≥ media es la duplicación de horario del TPV entre 18 y 19, que es un defecto de CONTENIDO heredado (no introducido por esta regeneración: 18/19 no fueron tocados por contenido_kit_tareas_hotel.py, sólo por el motor) y no rompe ninguna fórmula ni gate — corregible en una mini-ronda, no bloqueante para cerrar esta tanda.",
+
+ "notas": [
+  "Todas las lecturas de celda de este informe son sobre el WORKING COPY del dry-run (CLAUDE_SCRATCHPAD=.../propio-verificador2/dryrun-kt/kit-tareas-hotel), nunca sobre astro-site/public/dl/kit-tareas-hotel/, que se comprobó intacto (git status limpio + mtimes del 22-ago sin cambiar).",
+  "No se ha vuelto a regenerar kit-tareas (el representante): sólo se ha leído lo que motor-2.2.json documenta sobre él en 'afecta_al_representante', y no se ha añadido nada nuevo sobre esa parte porque no formaba parte de este encargo.",
+  "El caso 'contador-p4-sin-rotulos' y el gate 'sin_hoja_instrucciones/version_desfasada' son mejoras de motor 2.2 (decisiones (i)/(j)/(l)) que no existían cuando se hizo kit-tareas-hotel-verif.json (tanda 1, sobre un motor anterior): con motor 2.2 el AVISO de 'listas DV mezcladas' que constaba en la tanda 1 (4 hojas correctas vs 48 heredadas) ya no aparece — es una regresión positiva, verificada con datos, no asumida."
+ ]
+}

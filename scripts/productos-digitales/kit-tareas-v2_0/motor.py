@@ -1556,7 +1556,16 @@ def normalizar_p4(wb, cambios, saltar=(), bio=True):
         _contador_p4(ws, g, cambios)
         _cf_p4(ws, g)
         tocadas.append(ws.title)
-    if bio and (tocadas or n_dv):
+    # (j) — la bio y la versión NO dependen de que haya algo que normalizar.
+    # Antes se pedían `tocadas or n_dv` y los dos ficheros del kit que no son
+    # ni checklist ni P4 —los BONUS-02 de catering y de hotel, calendarios de
+    # otro molde— se publicaban con «Versión 1.1» y sin autoría dentro de un
+    # producto v2.0: el cliente abre once ficheros y dos le dicen otra versión.
+    # Se escribe SÓLO en celdas que ya existen (la línea de versión y la de
+    # debajo, vacía): no se toca la maquetación. Si no hay hoja «Instrucciones»
+    # —o no hay línea de versión donde anclar— no se inventa nada y lo canta el
+    # gate `dv_y_bio` de main.py.
+    if bio:
         bio_en_instrucciones(wb, cambios)
     return tocadas
 
@@ -2036,7 +2045,7 @@ SUB_TURNO = ('Fecha: ___/___/______    Turno: ☐ Mañana  ☐ Tarde  ☐ Noche 
              'Responsable turno: _________________________')
 SUB_SIMPLE = ('Fecha: ___/___/______    '
               'Responsable: _________________________')
-PLANTILLA_07 = {
+_PLANTILLA_07 = {
     'Por Franja Horaria': {
         'secciones': ('APERTURA', 'SERVICIO', 'CIERRE'),
         'zona': None, 'responsable': None, 'subtitulo': SUB_TURNO,
@@ -2054,20 +2063,145 @@ PLANTILLA_07 = {
     },
 }
 ROTULO_07 = '  {sec} — escribe aquí abajo tus tareas de {min}'
+#: Cuando las secciones son PROPIAS del hermano no se repite el nombre en la
+#: cola («Apertura (15:00 - 18:00) — … tus tareas de apertura (15:00 -
+#: 18:00)»), que además dobla la longitud de la banda.
+ROTULO_07_PROPIO = '  {sec} — escribe aquí abajo tus tareas'
+#: Las dos colas se quitan para recuperar el NOMBRE de la sección: sin esto la
+#: 2.ª pasada leería el rótulo ya escrito por la 1.ª y las secciones propias
+#: crecerían una cola en cada ejecución.
+RX_SEC_ROTULO = re.compile(
+    r'\s+—\s+escribe aquí abajo tus tareas(\s+de\s+.*)?$')
+#: Placeholder genérico del generador v1.1 («(Sección 1 — Personaliza este
+#: título)» en cafetería, pizzería, hamburguesería y dark-kitchen): eso NO es
+#: una sección propia, es la plantilla sin adaptar, y sí se sustituye por el
+#: molde del representante.
+RX_SEC_GENERICA = re.compile(r'(?i)^\(?\s*secci[óo]n\s*\d')
+
+#: (i) — los hermanos no llaman igual a las tres hojas del 07: bar y pastelería
+#: entregan «Por Zona» donde el representante dice «Por Área». Sin el mapa,
+#: `diferenciar_07` no reconocía la hoja (se quedaba con «Turno: ☐ Mañana…» en
+#: un documento que no es de turno, sin banda de aviso y con la columna «Tarea»
+#: sin verde) y la demostración §6 del denominador ni siquiera se ejecutaba,
+#: porque exige TRES hojas del 07 en el mismo fichero.
+#: «Por Fase» y «Por Turno» (catering, chocolatería, heladería) se quedan FUERA
+#: a propósito: son del molde P4, que por diseño recibe sólo el mínimo.
+SINONIMOS_07 = {
+    'por franja horaria': 'Por Franja Horaria',
+    'por franjas horarias': 'Por Franja Horaria',
+    'por franja': 'Por Franja Horaria',
+    'por franjas': 'Por Franja Horaria',
+    'por area': 'Por Área',
+    'por areas': 'Por Área',
+    'por zona': 'Por Área',
+    'por zonas': 'Por Área',
+    'por perfil': 'Por Perfil',
+    'por perfiles': 'Por Perfil',
+}
+
+
+def _sin_tildes(v):
+    t = unicodedata.normalize('NFD', (v or '').strip().lower())
+    return ''.join(ch for ch in t if unicodedata.category(ch) != 'Mn')
+
+
+class _Plantillas07(dict):
+    """`dict` que además entiende los sinónimos de título de §2.3.
+
+    Se resuelve aquí y no en cada llamada porque `PLANTILLA_07` se consulta
+    con `in` desde tres sitios distintos (`contexto`, los ritmos y la
+    demostración §6 de `main.py`): con un mapa aparte, cualquiera de ellos se
+    quedaría con la lista corta sin que nada lo cantase.
+    """
+
+    def canonica(self, titulo):
+        if not isinstance(titulo, str):
+            return None
+        if dict.__contains__(self, titulo):
+            return titulo
+        return SINONIMOS_07.get(_sin_tildes(titulo))
+
+    def __contains__(self, titulo):
+        return self.canonica(titulo) is not None
+
+    def get(self, titulo, defecto=None):
+        clave = self.canonica(titulo)
+        return dict.get(self, clave, defecto) if clave else defecto
+
+
+PLANTILLA_07 = _Plantillas07(_PLANTILLA_07)
+
+
+def _nombre_seccion(v):
+    """Nombre de una banda del 07, sin la cola que escribe el motor."""
+    return RX_SEC_ROTULO.sub('', (v or '').strip()).strip()
+
+
+def _zona_de_seccion(ws, g, banda, fin, col_zona):
+    """Primer valor de «Zona» ya escrito en esa sección, o None."""
+    for r in range(banda + 1, fin):
+        if not isinstance(ws.cell(row=r, column=1).value, int):
+            continue
+        v = ws.cell(row=r, column=col_zona).value
+        if isinstance(v, str) and v.strip():
+            return v.strip()
+    return None
+
+
+def cfg_07(ws, g, bandas):
+    """Config de §2.3 para esta hoja: la del representante, o la SUYA.
+
+    (i). El molde del representante sólo se impone cuando la hoja no tiene
+    secciones propias que perder: o son el placeholder «(Sección N —
+    Personaliza este título)» del generador v1.1, o ya son las canónicas. Bar
+    entrega CUATRO secciones escritas para un bar («Barra Principal»,
+    «Coctelería», «Bodega / Almacén», «Terraza» / «Head Bartender»,
+    «Bartender», «Barback», «Camarero») y su Zona precargada: escribirle
+    encima COCINA / SALA / BARRA sería borrar el contenido del hermano para
+    imponerle el del kit base. Lo que se aplica en ese caso es lo UNIVERSAL —
+    subtítulo sin «Turno:» donde no hay turno, banda con el aviso de dónde se
+    escribe, columna «Tarea» vacía y en verde, responsable precargado— con sus
+    propios nombres.
+    """
+    cfg = PLANTILLA_07.get(ws.title)
+    if not cfg:
+        return None
+    nombres = [_nombre_seccion(ws.cell(row=b, column=1).value) for b in bandas]
+    canon = list(cfg['secciones'])
+    if len(bandas) == len(canon) and (
+            all(RX_SEC_GENERICA.match(n) for n in nombres)
+            or [n.upper() for n in nombres] == [c.upper() for c in canon]):
+        return dict(cfg, propias=False)
+    if not all(nombres):
+        return None                      # bandas sin rótulo: no se inventa
+    col_zona = g['cols'].get('Zona')
+    zona = None
+    if cfg['zona'] and col_zona:
+        tope = g['contador'] or ws.max_row
+        zona = []
+        for i, b in enumerate(bandas):
+            fin = bandas[i + 1] if i + 1 < len(bandas) else tope
+            zona.append(_zona_de_seccion(ws, g, b, fin, col_zona)
+                        or nombres[i])
+        zona = tuple(zona)
+    return {'secciones': tuple(nombres), 'zona': zona,
+            'responsable': tuple(nombres) if cfg['responsable'] else None,
+            'subtitulo': cfg['subtitulo'], 'propias': True}
 
 
 def diferenciar_07(ws, cambios):
     """Las tres hojas eran la misma renombrada (DOM-07/TEC-13/COM-16)."""
-    cfg = PLANTILLA_07.get(ws.title)
     g = geometria(ws)
-    if not cfg or not g:
+    if not g or ws.title not in PLANTILLA_07:
         return
     col_zona = g['cols'].get('Zona')
     col_resp = g['cols'].get('Responsable')
     bandas = [r for r in range(g['hr'] + 1, (g['contador'] or ws.max_row))
               if es_fila_seccion(ws, r)]
-    if len(bandas) != len(cfg['secciones']):
+    cfg = cfg_07(ws, g, bandas) if bandas else None
+    if not cfg:
         return
+    plantilla = ROTULO_07_PROPIO if cfg['propias'] else ROTULO_07
     n = 0
     # COM-R2-14 — «Turno: ☐ Mañana ☐ Tarde ☐ Noche» en «Por Área» y «Por
     # Perfil», que no son documentos de turno: el mismo «plantilla sin adaptar»
@@ -2077,7 +2211,7 @@ def diferenciar_07(ws, cambios):
         n += 1
     for i, banda in enumerate(bandas):
         sec = cfg['secciones'][i]
-        rotulo = ROTULO_07.format(sec=sec, min=sec.lower())
+        rotulo = plantilla.format(sec=sec, min=sec.lower())
         if ws.cell(row=banda, column=1).value != rotulo:
             ws.cell(row=banda, column=1).value = rotulo
             n += 1
@@ -2108,9 +2242,18 @@ def diferenciar_07(ws, cambios):
             _verde(ws.cell(row=r, column=2))
             primera = False
     if n:
-        cambios.append(f'«{ws.title}»: secciones '
-                       f'{" / ".join(cfg["secciones"])} y columnas propias '
-                       f'({n} celdas) — las tres hojas dejan de ser la misma')
+        if cfg['propias']:
+            cambios.append(
+                f'«{ws.title}»: se CONSERVAN sus {len(cfg["secciones"])} '
+                'secciones propias ('
+                + ' · '.join(cfg['secciones']) + ') y se le aplica el molde ▸ '
+                '(subtítulo sin «Turno» donde no hay turno, banda con el aviso '
+                f'de dónde se escribe, «Tarea» vacía y en verde) — {n} celdas')
+        else:
+            cambios.append(f'«{ws.title}»: secciones '
+                           f'{" / ".join(cfg["secciones"])} y columnas propias '
+                           f'({n} celdas) — las tres hojas dejan de ser la '
+                           'misma')
 
 
 # ==========================================================================

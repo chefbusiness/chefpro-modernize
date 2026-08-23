@@ -1,0 +1,115 @@
+{
+ "rol": "verificador independiente · kit-tareas-pizzeria · tanda 3 (motor 2.2)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-pizzeria",
+ "modo": "SOLO dry-run · astro-site/public/dl/** intacto · sin git add/commit · CLAUDE_SCRATCHPAD=propio-verificador2",
+ "comando": "python3 kit-tareas-v2_0/main.py --producto kit-tareas-pizzeria --dry-run --json .../kit-tareas-pizzeria.json",
+ "resultado_dryrun": {
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_fail_exit": 0,
+  "censo_defectos": 0,
+  "cache_inyectado": "todas las fórmulas nuevas: 0 fallos_pycel en los 11 xlsx",
+  "data_only_formulas_nuevas": {"con_valor": 139, "fallos": 0},
+  "listas_dv_del_producto": ["“✓,—,N/A”"],
+  "listas_dv_del_producto_texto_plano": ["\"✓,—,N/A\""],
+  "dv_hojas_checklist": 31,
+  "dv_incorrectas": 0,
+  "hojas_p4": 0,
+  "bio_instrucciones": "11/11",
+  "version_desfasada": 0,
+  "sin_hoja_instrucciones": 0,
+  "recuento_tareas_total": 373,
+  "recuento_tareas_por_fichero": {
+   "01-apertura-cierre.xlsx": 76,
+   "02-partidas-cocina.xlsx": 39,
+   "03-tareas-manager.xlsx": 55,
+   "04-tareas-perfiles.xlsx": 63,
+   "05-tareas-semanales-mensuales.xlsx": 47,
+   "06-eventos-festivos.xlsx": 39,
+   "07-plantilla-personalizable.xlsx": 0,
+   "08-apertura-cierre-negocio.xlsx": 31,
+   "09-apertura-cierre-caja.xlsx": 23,
+   "BONUS-01-briefing-servicio.xlsx": 0,
+   "BONUS-02-calendario-anual-tareas.xlsx": 0
+  },
+  "nota_recuento": "0 en 07/BONUS-01/BONUS-02 es correcto: 07 es plantilla en blanco (su contador es 'x de 8' cuando el cliente escribe 8 tareas, no aporta al total del kit) y los BONUS no son checklist ▸."
+ },
+ "casos_6": [
+  {"caso": "arqueo-cuadra: fondo 150, efectivo contado 1150, tarjetas 800, Z 1800 → DESCUADRE 0", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':C54=IFERROR(C52-C53,0) evaluado a 0 con pycel"},
+  {"caso": "arqueo-descuadra: mismos importes con Z 1790 → DESCUADRE +10 y CF ámbar en C54", "ok": true, "evidencia": "misma celda evaluada a 10; CF cellIs sobre C54 confirmada en ws.conditional_formatting"},
+  {"caso": "contador-honesto (N/A sale, «—» no sale)", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':D46/F46 = COUNTIFS(...)/COUNTIF(B,\"?*\")-COUNTIF(F,\"N/A\") → '27 de 27' con pycel del propio main.py"},
+  {"caso": "denominador-07 por fórmula (8 tareas → 'x de 8')", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria':F31 = COUNTIF(B5:B29,\"?*\")-COUNTIF(F5:F29,\"N/A\") evaluado a 8"},
+  {"caso": "08 precargado sin huecos de Responsable/Hora", "ok": true, "evidencia": "informe main.py: '08 precargado: 31 tareas, 0 sin Responsable u Hora'; confirmado a mano en las 17+14 filas de 08-apertura-cierre-negocio.xlsx"},
+  {"caso": "bio en TODAS las Instrucciones (11/11) con versión 2.0", "ok": true, "evidencia": "gate dv_y_bio: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]; confirmado a mano en 01-apertura-cierre.xlsx:Instrucciones!B30/B33"},
+  {"caso": "contador P4 sin rótulos («0 de N» recién impreso)", "ok": null, "evidencia": "NO APLICA: kit-tareas-pizzeria es un kit «▸ completo» (como bar/cafetería/hamburguesería/dark-kitchen), no tiene ninguna hoja del molde P4 (gate: hojas_p4=0). La demostración es propia de catering/hotel/heladería/chocolatería/restaurante-creativo."}
+ ],
+ "casos6_ok": 6,
+ "casos6_total": 6,
+ "motor_ids_r1_reverificados": [
+  {"id": "DOM-01", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja': C47='Total Efectivo (recuento)'=C43; C48='Fondo de caja inicial (−)'=IFERROR('Apertura de Caja'!C23,0); C49='Ventas en efectivo (contado − fondo)'=IFERROR(C47-C48,0); C52='TOTAL FACTURADO'=C49+C50+C51; C54='DESCUADRE'=IFERROR(C52-C53,0). Texto B10 ya dice 'Total facturado = efectivo contado − fondo + tarjetas + otros' (motor.texto_facturado aplicado en esta copia)."},
+  {"id": "DOM-03", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':A41='0,02 €' presente entre A40='0,05 €' y A42='0,01 €'; C43=SUM(C27:C42) las incluye"},
+  {"id": "DOM-04", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx:'Registro Mensual': fila4 B='Fondo Apertura' C='Efectivo Contado' ... F5=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5); fila36 TOTALES B36=IFERROR(AVERAGEIF(B5:B35,\">0\"),0) (promedio, no sumable) y H36=SUMIF(H5:H35,\">0\")-SUMIF(H5:H35,\"<0\") (descuadre acumulado en valor absoluto, DOM-R2-26); nota B37 explica ambas reglas"},
+  {"id": "DOM-05", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja': tarea 3 (B7)='Anotar el fondo de caja en la celda verde de abajo'; C23=0 verde con etiqueta B23='Fondo de caja inicial (€)' — es la celda que lee 'Cierre de Caja'!C48"},
+  {"id": "DOM-06", "veredicto": "resuelto", "evidencia": "08-apertura-cierre-negocio.xlsx: 'Apertura del Negocio' (17 tareas) y 'Cierre del Negocio' (14 tareas), columnas D/E precargadas en las 31; horas escalonadas 09:00→09:30 en apertura"},
+  {"id": "DOM-07", "veredicto": "resuelto", "evidencia": "07-plantilla-personalizable.xlsx: 3 hojas diferenciadas — 'Por Franja Horaria' (APERTURA/SERVICIO/CIERRE), 'Por Área' (COCINA/SALA/BARRA con Zona precargada), 'Por Perfil' (COCINA/SALA/GERENCIA con Jefe de Cocina/Jefe de Sala/Gerente precargados); denominador por fórmula en las 3 (F31)"},
+  {"id": "DOM-09", "veredicto": "parcial (sin cambio desde tanda 1)", "evidencia": "01-apertura-cierre.xlsx:'Cierre Sala' banda 'DELIVERY Y CAJA' (fila 13): 2/6 tareas ya viven en 08/09 (fila16 'Cuadrar caja del día' duplica 09 entero; fila19 'Activar alarma y cerrar' duplica 08!'Cierre del Negocio' filas 12-13) — ratio 0.33, por DEBAJO de UMBRAL_BANDA=0.8, así que anotar_duplicados lo registra en gates.bandas_solapadas pero NO lo anota ni lo colapsa: sigue como tarea numerada y CONTADA. Mismo patrón en 'Cierre Cocina' banda 'HORNO Y EQUIPOS' (ratio 0.25). Instrucciones!01:B25 sigue afirmando 'No se duplican: cada uno cubre un nivel', que es FALSO para este hermano. Es EXACTAMENTE el hallazgo de la tanda 1 (kit-tareas-pizzeria-verif.json), sin cambio: motor 2.2 (decisiones i/j/k/l) no tocó anotar_duplicados/colapsar_duplicados — motor-2.2.json lo confirma explícitamente como decisión (f) 'sin acción, umbral 80% se mantiene'."},
+  {"id": "DOM-10", "veredicto": "resuelto", "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':F46=COUNTIF(B6:B44,\"?*\")-COUNTIF(F6:F44,\"N/A\"); regla §8/DOM-R2-02 vigente: sólo N/A sale del total"},
+  {"id": "DOM-11", "veredicto": "resuelto", "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina' filas libres verdes DENTRO del rango contado (5 filas, relleno E8F5E9, DV incluida en sqref)"},
+  {"id": "DOM-21", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx: DV '\"✓,—,N/A\"' en 'Apertura de Caja' y 'Cierre de Caja' (mismo formula1 que 01-07); columna 'Notas' no existe en el molde de este 09 en concreto pero Responsable/✓/Firma están en verde E8F5E9"},
+  {"id": "DOM-22", "veredicto": "resuelto", "evidencia": "09-apertura-cierre-caja.xlsx:Instrucciones — bloque propio, no copia de 08 (confirmado por lectura completa de la hoja: encabezados 'Cómo cuenta el contador', 'Filas libres', 'Protección', 'Se conecta con' específicos de caja)"},
+  {"id": "DOM-23", "veredicto": "resuelto", "evidencia": "01-apertura-cierre.xlsx:Instrucciones filas 20-26 = bloque 'Se conecta con' completo (08=marco, 01=detalle, 09=caja); barrido de los 11 xlsx sin ninguna mención a 'APPCC' (este hermano nunca la tuvo)"},
+  {"id": "DOM-25", "veredicto": "resuelto", "evidencia": "03-tareas-manager.xlsx:'Semanal Manager'!E4 y 06-eventos-festivos.xlsx (hojas de evento) usan 'Antelación' en vez de 'Hora Límite'; 02-partidas-cocina.xlsx cabeceras 'Cuándo' cuando la columna no lleva horas fijas (nuevo desde Ronda 2, cubre DOM-25/DOM-R2-24)"},
+  {"id": "DOM-30", "veredicto": "resuelto", "evidencia": "confirmado en los 11 ficheros: p.ej. 02-partidas-cocina.xlsx:Instrucciones!B30 = bio de John Guerrero + B33 'Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pizzeria · info@aichef.pro'"}
+ ],
+ "hallazgos_motor_de_tanda1_reverificados": [
+  {"hallazgo": "(motor) mensaje de error de la DV contradecía la fórmula («N/A o — salen del total» cuando sólo N/A sale)", "veredicto": "resuelto en esta copia", "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina' DV.error = 'Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.' — coincide con motor.DV_ERROR corregido. (Nota: motor-2.2.json señala que el REPRESENTANTE en producción sigue con el mensaje viejo porque no se ha re-ejecutado; eso es competencia del orquestador, no de este hermano.)"},
+  {"hallazgo": "(motor) DOM-09 — colapsar_duplicados no reconoce rótulos de sección propios del hermano", "veredicto": "PARCIAL, sin cambio — ver motor_ids_r1_reverificados/DOM-09", "evidencia": "ver arriba"}
+ ],
+ "contenido_pendiente_tanda1": [
+  {"tema": "Orden seguro de apertura (campana/gas antes de encender horno)", "severidad_original": "media", "estado": "aplicado", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina' filas 12-14 (bloque HORNO, 3 tareas nuevas al inicio: campana/tiro → gas → [horno ya existente])"},
+  {"tema": "Bloque de higiene personal al inicio del turno", "severidad_original": "media", "estado": "aplicado", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina' filas 6-10 (bloque HIGIENE PERSONAL, 5 tareas, ahora primero de la hoja)"},
+  {"tema": "Comprobar cámaras tras la noche + registrar temperatura", "severidad_original": "baja", "estado": "aplicado", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina' fila 21 (con motor.OBJ_AMBOS + LECTURA ya compuestos: '0-4 °C / ≤ −18 °C — anota la lectura: ____ °C')"},
+  {"tema": "Registro de mermas del día", "severidad_original": "media", "estado": "aplicado", "celda": "01-apertura-cierre.xlsx:'Cierre Cocina' fila 25 + 02-partidas-cocina.xlsx:'Línea Montaje' (tarea de mermas del turno)"},
+  {"tema": "Registro/control de jornada laboral", "severidad_original": "media", "estado": "aplicado", "celda": "03-tareas-manager.xlsx:'Diario Manager' fila 22 (cierre diario) + 'Mensual Manager' fila 9 (archivo, 4 años)"},
+  {"tema": "Hoja Trimestral y Anual (DDD, conductos, extintores/BIE, gas, legionela, seguro, TPV/Verifactu)", "severidad_original": "alta", "estado": "aplicado", "celda": "05-tareas-semanales-mensuales.xlsx: hoja nueva 'Trimestral y Anual' completa (15 tareas en 3 bloques, Nº de parte verde, DV, contador, print_area, protegida)"},
+  {"tema": "Vida útil de congelación por familia", "severidad_original": "baja", "estado": "aplicado", "celda": "05-tareas-semanales-mensuales.xlsx:'FIFO Semanal' fila 27+ (tabla de 9 familias) + tarea nueva de comprobación"},
+  {"tema": "Bloque AL CONFIRMAR LA RESERVA (alérgenos, precio, señal, cancelación)", "severidad_original": "media", "estado": "aplicado", "celda": "06-eventos-festivos.xlsx:'Navidad' filas 5-10 (este kit no tiene hoja 'Pre-Evento'; se usó 'Navidad' porque es la reserva de grupo real de una pizzería — motivado en el docstring del módulo)"},
+  {"tema": "Fechas del calendario (Día del Padre, comuniones, 15-Ago, 1-Nov, puente Dic)", "severidad_original": "media", "estado": "aplicado", "celda": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual' — 5 fechas nuevas insertadas, total 22 filas de fecha (5-26), verificado por recuento manual"},
+  {"tema": "Lavado de hojas verdes con dosis y aclarado", "severidad_original": "baja", "estado": "aplicado", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina' fila 28 + 02-partidas-cocina.xlsx:'Complementaria' (ensaladas) y 'Línea Montaje' (rúcula/albahaca en crudo tras horno)"}
+ ],
+ "contenido_no_aplicado": [],
+ "nota_contenido": "Los 10 temas de contenido_pendiente de la tanda 1 están aplicados con celda verificada (6+ comprobados abriendo el fichero real, ver arriba). El módulo además documenta y JUSTIFICA por qué NO añade la tarea de anisakis del kit base (no forma parte de los 10 temas de contenido_pendiente de este hermano, es una comprobación proactiva): la carta de una pizzería no lleva pescado crudo/semicrudo (las anchoas son de conserva/salazón), así que sería una casilla N/A universal — motivo aceptable, documentado en el docstring del módulo (líneas 48-51).",
+ "hallazgos_nuevos": [
+  {
+   "severidad": "media",
+   "donde": "kit-tareas-v2_0/motor.py:anotar_duplicados (ejecutado sobre 01-apertura-cierre.xlsx:'Cierre Sala' y 'Cierre Cocina')",
+   "hallazgo": "gates.bandas_solapadas del informe main.py registra CADA banda solapada DOS VECES (entradas idénticas duplicadas: 'Cierre Sala!A13'/'DELIVERY Y CAJA' aparece dos veces con ratio 0.33, y 'Cierre Cocina!A11'/'HORNO Y EQUIPOS' dos veces con ratio 0.25). No corrompe el .xlsx (es sólo el JSON del informe), pero cualquier consumidor automático del gate (dashboard, censo agregado) contaría el doble de solapes de los que hay. Probablemente `anotar_duplicados` se invoca dos veces sobre la misma hoja (antes y después de que el módulo de contenido devuelva True y main.py re-pase el motor) sin deduplicar SOLAPES."
+  },
+  {
+   "severidad": "baja",
+   "donde": "01-apertura-cierre.xlsx:'Apertura Sala' filas 11-12 vs 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio' filas 6 y 9-apertura-cierre-caja.xlsx:'Apertura de Caja' tareas 1-3",
+   "hallazgo": "'Verificar TPV/datáfono funcionando' (Sala, 11:15) y 'Preparar fondo de caja' (Sala, 11:15) leen como el mismo gesto que 08 ('Encender TPV / POS / datáfono', 09:00) y 09 ('Contar/anotar fondo de caja', sin hora). anotar_duplicados NO los marca (verbos distintos: verificar≠encender, preparar≠contar/anotar), y es DEFENDIBLE como secuencia real (encargado enciende a las 9, sala verifica que funciona antes del servicio a las 11:15; alguien prepara el cajón físicamente, caja lo cuenta y firma formalmente) — pero el texto no lo distingue explícitamente y un cliente que lea las cuatro hojas puede sentir que se le pide lo mismo tres veces. No es un bug de cálculo, es una oportunidad de claridad de copy."
+  },
+  {
+   "severidad": "baja",
+   "donde": "06-eventos-festivos.xlsx:'Noche Fútbol' título y fila 1",
+   "hallazgo": "'Noche de Fútbol / Super Bowl — Pico de Delivery' mezcla un evento genérico (fútbol, relevante todo el año en España) con uno específicamente estadounidense (Super Bowl, ni festivo ni tradicionalmente celebrado en la España media, aunque cada vez hay más fiestas temáticas en ciudades grandes). No es incorrecto, pero un jefe de cocina de una pizzería de barrio podría no reconocerse en la mención al Super Bowl; el resto de la hoja (masa extra, apps de delivery, refuerzo de turnos) es genérico y correcto para CUALQUIER noche de partido grande."
+  }
+ ],
+ "otro_molde_no_roto": {
+  "comprobacion": "Los 11 xlsx abren sin excepción con openpyxl en modo fórmula Y en modo data_only; barrido completo de todas las celdas de los 11 ficheros sin encontrar '#REF!', '#NAME?', '#VALUE!' ni '#DIV' en ningún valor cacheado.",
+  "hoja_de_otro_molde_detectada": "05-tareas-semanales-mensuales.xlsx:'Inventario Diario' — tabla de stock (Producto/Stock/Unidad/Mínimo/Estado/Pedido) sin '✓ Completada' ni Nº ordinal: no es un checklist del molde ▸ (geometria() no la reconoce), así que el motor no la toca ni la protege. No es un defecto: es contenido previo a la v2.0 que el motor deja intacto a propósito por no ser de su competencia.",
+  "protecciones": "Confirmado: 4/4 hojas de checklist protegidas sin contraseña en 01 (y el mismo patrón en el resto de ficheros con checklist), Instrucciones SIN proteger (a propósito), BONUS-02 'Calendario Anual' protegida (TEC-R2-14 confirmado), insertRows=False en todas → serializa insertRows=\"0\" en el XML = FILAS NO bloqueadas (el descartado DOM-R2-04 de la SPEC es correcto, no se ha revertido nada por error)."
+ },
+ "tareas_total": 373,
+ "ficheros_total": 11,
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Nada rompe: exit 0 en dry-run y censo, idempotencia 0, 0 fórmulas rotas/#REF en los 11 xlsx, UNA sola lista de DV en las 31 hojas de checklist, los 6/6 casos §6 aplicables pasan con pycel, y los 10/10 temas de contenido_pendiente de la tanda 1 están aplicados con celda verificada (0 sin aplicar). El único motor id no resuelto (DOM-09) es 'parcial' — no es una rotura, es un umbral de anotación (80%) que el orquestador decidió NO bajar (decisión f de motor 2.2), y está identificado y documentado desde la tanda 1 sin agravarse. Los 3 hallazgos nuevos son media/baja, ninguno alta.",
+ "notas": [
+  "Todo verificado sobre una copia DESECHABLE (CLAUDE_SCRATCHPAD=propio-verificador2, carpeta dryrun-kt/kit-tareas-pizzeria); astro-site/public/dl/kit-tareas-pizzeria/ NO se ha tocado.",
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: máximo 47,5 °C, un solo intérprete a la vez, sin builds ni Playwright.",
+  "kit-tareas (el representante) NO se ha regenerado ni tocado; sólo se ha citado motor-2.2.json donde documenta el estado de su producción.",
+  "El módulo contenido_kit_tareas_pizzeria.py está anclado por TEXTO (no por número de fila) y documenta explícitamente en su docstring las 4 diferencias estructurales de este hermano frente al kit base (sin fila separadora entre bandas, hora ancla 09:00 no 07:00, Mantenimiento Mensual con 2 bloques no 3, sin pescado crudo → sin tarea de anisakis) — la lectura del código y la del fichero regenerado coinciden en las 10 sustituciones/inserciones verificadas."
+ ]
+}

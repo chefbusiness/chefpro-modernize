@@ -1,0 +1,172 @@
+{
+  "rol": "verificador independiente · kit-tareas-heladeria · tanda 2 (sobre motor 2.2)",
+  "fecha": "2026-08-23",
+  "pid": "kit-tareas-heladeria",
+  "modo": "SOLO dry-run · astro-site/public/dl/** intacto · CLAUDE_SCRATCHPAD=.../propio-verif2 · sin git add/commit",
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "idempotencia_diferencias": 0,
+  "resumen": "Regenerado motor+contenido en copia propia (main.py --producto kit-tareas-heladeria --dry-run, sin --solo). TODO VERDE: exit 0, censo --fail 0 defectos, idempotencia 0 diferencias (el defecto TEC-18 de la tanda 1 — altura de fila 21 tras 2.ª pasada — está RESUELTO), inject_cache 127 fórmulas nuevas con valor y 0 fallos pycel, DV unificada, bio 11/11, casos §6 7/7 OK. Los 2 hallazgos de la tanda 1 que seguían abiertos (TEC-18 idempotencia, DOM-14 temperatura 0-4°C en vitrinas de helado) están CORREGIDOS. Contraparte: encontré 1 hallazgo NUEVO de severidad ALTA (TPV/POS encendido por partida doble en 08 y 09 con horas distintas) que el detector automático de duplicados no cazó porque no compara 08 contra 09 entre sí. bloquea_real=true por ese hallazgo.",
+
+  "casos6": [
+    {
+      "caso": "arqueo cuadra: fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800 → descuadre 0",
+      "ok": true,
+      "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel, hoja recién impresa sin tocar): 0. Fórmula C48=IFERROR('Apertura de Caja'!C23,0) [fondo] · C49=IFERROR(C47-C48,0) [ventas efectivo] · C52=C49+C50+C51 [total facturado] · C54=IFERROR(C52-C53,0) [descuadre]"
+    },
+    {
+      "caso": "arqueo descuadra: mismas entradas con Z 1.790 → +10",
+      "ok": true,
+      "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel): 10, con C53=1790"
+    },
+    {
+      "caso": "contador honesto: sólo N/A sale del denominador, «—» cuenta como pendiente",
+      "ok": true,
+      "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29(num)/F29(den) — fórmula E29='=COUNTIF(B5:B22,\"?*\")-COUNTIF(F5:F22,\"N/A\")' (NO resta «—»); pycel con 18 tareas/3 N/A/15 ✓ → '15 de 15'"
+    },
+    {
+      "caso": "contador P4 recién impreso, sin contar rótulos (cabecera repetida)",
+      "ok": true,
+      "evidencia": "01-apertura-cierre.xlsx:'Apertura'!C41(num)/E41(den), hoja recién impresa sin tocar (pycel): '0.0 de 26.0'. El denominador ignora las filas de cabecera «Tarea» repetida de cada sección"
+    },
+    {
+      "caso": "07 plantilla personalizable: 8 tareas escritas → denominador por fórmula",
+      "ok": true,
+      "evidencia": "PROBADO A MANO (no lo cubre ningún gate automático de main.py para este hermano porque 07 está fuera del alcance ▸): copia de 07-plantilla-personalizable.xlsx, hoja 'Por Zona', 8 filas con texto en B5:B12 y 5 marcadas ✓ en E5:E9 → pycel 'Por Zona'!C30(num)/E30(den) = '5 de 8'. Fórmula denominador ='=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")', exactamente la regla del §2.3 (DOM-R2-03/TEC-R2-10)"
+    },
+    {
+      "caso": "08 precargado: ninguna tarea sin Responsable/Hora",
+      "ok": true,
+      "evidencia": "gate negocio_precargado del informe: {tareas: 33, huecos: []}. Confirmado celda a celda en 08:'Apertura del Negocio' filas 5-22 (C=Encargado, E=hora real) y 08:'Cierre del Negocio' filas 5-19 (D=Encargado, E=Cuándo/hora)"
+    },
+    {
+      "caso": "bio en todas las Instrucciones del producto",
+      "ok": true,
+      "evidencia": "gate dv_y_bio.instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]. Confirmado a mano en 08:Instrucciones:B42 y BONUS-02:Instrucciones:B18 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es' con 'Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-heladeria · info@aichef.pro' debajo"
+    }
+  ],
+
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "dv_incorrectas": [],
+  "hojas_checklist_dv": 4,
+  "hojas_p4_dv": 21,
+
+  "motor_ids": [
+    {"id": "DOM-01/TEC-01/COM-01", "veredicto": "resuelto", "evidencia": "09:'Cierre de Caja' fondo no hardcodeado, cadena C48→C49→C52→C54 correcta (repetido de tanda 1, sin cambios)"},
+    {"id": "DOM-03/COM-04", "veredicto": "resuelto", "evidencia": "09:'Cierre de Caja' fila 0,02 € presente en el recuento (repetido de tanda 1)"},
+    {"id": "TEC-20", "veredicto": "resuelto", "evidencia": "DV whole≥0 y formato '0' en Cantidad del recuento (repetido de tanda 1)"},
+    {"id": "DOM-04/TEC-04/COM-14", "veredicto": "resuelto", "evidencia": "09:'Registro Mensual'!G4='Z del TPV', H4='Descuadre', H5='=IFERROR(F5-G5,0)'; además la columna B ya es 'Fondo Apertura' y F4='Total Facturado' descuenta el fondo (regla §8 DOM-R2-01 aplicada, ver más abajo)"},
+    {"id": "TEC-05", "veredicto": "resuelto", "evidencia": "09:'Registro Mensual'!B36='=IFERROR(AVERAGEIF(B5:B35,\">0\"),0)' — el fondo ya no se suma"},
+    {"id": "DOM-05/COM-15", "veredicto": "resuelto", "evidencia": "09:'Apertura de Caja'!B7 sin coordenada hardcodeada, apunta a la celda verde de abajo"},
+    {"id": "DOM-06/TEC-06/COM-10", "veredicto": "resuelto", "evidencia": "08 con las 33 tareas precargadas (Responsable+Hora), huecos=[]"},
+    {"id": "DOM-07/TEC-02/COM-05/TEC-13/COM-16 (07 plantilla)", "veredicto": "resuelto (parcial por alcance)", "evidencia": "El denominador por fórmula SÍ funciona (probado a mano, caso §6 arriba: '5 de 8'). La diferenciación en 3 hojas temáticas (Franja/Área/Perfil con secciones propias) NO aplica a este hermano: kit-tareas-heladeria está fuera del alcance ▸-completo (§5 de la SPEC sólo mete diferenciar_07 a cafetería/pizzería/hamburguesería/dark-kitchen/bar), así que sus 3 hojas ('Por Zona','Por Turno','Por Perfil') se entregan en blanco sin secciones — es el comportamiento previsto, no un defecto"},
+    {"id": "DOM-09/TEC-14/COM-20/DOM-23 (jerarquía)", "veredicto": "resuelto", "evidencia": "08:Instrucciones bloque 'Se conecta con' (B33-B38) remite a 09 y explica 'Orden de uso: local → caja'; 09:Instrucciones remite a 08"},
+    {"id": "DOM-10/TEC-09/COM-22", "veredicto": "resuelto", "evidencia": "fórmula del denominador sólo resta N/A, no '—' (regla §8, ver caso §6 arriba)"},
+    {"id": "DOM-11/TEC-11/COM-17 (filas libres)", "veredicto": "resuelto", "evidencia": "08:'Apertura del Negocio' 5 filas libres (23-27) DENTRO del rango DV (F5:F27) y del contador, con relleno E8F5E9; fila 28 es el separador antes del contador (fila 29), sin DV — geometría correcta. CORRIGE el 'parcial' de la tanda 1 (la idempotencia ya no mueve la altura de esa fila)"},
+    {"id": "DOM-21/COM-19/COM-11/COM-12/TEC-08 (molde ▸ 08/09)", "veredicto": "resuelto", "evidencia": "DV unificada, contador con etiqueta fusionada, columna Notas conservada en las 4 hojas de 08/09"},
+    {"id": "DOM-22/TEC-12 (Instrucciones propias de caja)", "veredicto": "resuelto", "evidencia": "09:Instrucciones con bloques propios (arqueo, fondo, fórmula, registro mensual) distintos de 08"},
+    {"id": "DOM-25/TEC-10 (cabecera Hora Límite → Cuándo)", "veredicto": "resuelto", "evidencia": "08:'Apertura del Negocio'!E4='Hora Límite' (horas reales); 08:'Cierre del Negocio'!E4='Cuándo' ('Cierre' literal); 09:'Cierre de Caja'!D4='Cuándo'='Cierre' en las 12 filas"},
+    {"id": "DOM-30/COM-13 (bio anclada)", "veredicto": "resuelto", "evidencia": "11/11 Instrucciones con bio, incluidos los 9 ficheros P4 que la tanda 1 no exigía comprobar (gate ampliado por (j) de motor 2.2)"},
+    {"id": "TEC-23 (protección de hojas)", "veredicto": "resuelto", "evidencia": "Las 5 hojas de checklist de 08/09 protegidas sin contraseña (sheet=True, password=None), celdas de datos (filas de tarea, Responsable, Hora, ✓, Notas) desbloqueadas, sólo la cabecera fija bloqueada. Las hojas P4 (01-07+BONUS) NO están protegidas: es coherente con el alcance 'solo 08/09' del hermano, TEC-23 sólo aplica al molde ▸"},
+    {"id": "TEC-18 (alturas de fila / idempotencia)", "veredicto": "resuelto — CAMBIO respecto a la tanda 1", "evidencia": "gate idempotencia: 0 diferencias 1.ª vs 2.ª pasada (antes 1, fila 21 de 08:'Apertura del Negocio' 24.0→None). El módulo de contenido llama motor.autoaltos tras sus sustituciones en 08 exactamente por este motivo (docstring de _f08) y funciona: verificado diff directo openpyxl entre 1.ª y 2.ª pasada, 0 diferencias en todo el fichero"},
+    {"id": "TEC-24/COM-25 (impresión BONUS)", "veredicto": "no aplica", "evidencia": "Los dos BONUS siguen fuera de alcance ▸ en este hermano ('solo 08/09'); no reciben print_area del motor. Consistente con el resto del informe de motor 2.2"},
+    {"id": "DOM-14 (objetivo de temperatura + lectura)", "veredicto": "resuelto — CAMBIO respecto a la tanda 1 (era el hallazgo ALTA)", "evidencia": "08:'Apertura del Negocio'!B21='Comprobar la temperatura de todas las vitrinas de exposición de helado (servicio −14 a −12 °C; por la noche, conservación −18 °C) — anota la lectura: ____ °C'. Ya NO dice '(refrigeración 0-4 °C)'. 08:'Cierre del Negocio'!B19 también lleva ya objetivo y hueco de lectura ('Registrar las temperaturas de cierre: vitrinas... (−18 °C) y cámaras (≤ −18 °C) — anota la lectura: ____ °C'), cerrando también el hallazgo MEDIA de la tanda 1"}
+  ],
+
+  "contenido_pendiente_verificado": [
+    {
+      "tema": "Objetivo de temperatura erróneo para vitrinas de helado (alta, tanda 1)",
+      "veredicto": "aplicado",
+      "fichero_celda": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B21 (antes 'Comprobar temperaturas de todas las vitrinas' con '(refrigeración 0-4 °C)' inyectado por el motor genérico)",
+      "evidencia": "Abierta la celda: ahora dice 'servicio −14 a −12 °C; por la noche, conservación −18 °C', coherente con 01!Apertura!B16/B18 y 01!Cierre!B7"
+    },
+    {
+      "tema": "Tarea de cierre de temperatura sin objetivo ni hueco de lectura (media, tanda 1)",
+      "veredicto": "aplicado",
+      "fichero_celda": "08-apertura-cierre-negocio.xlsx:'Cierre del Negocio'!B19",
+      "evidencia": "Abierta la celda: 'Registrar las temperaturas de cierre: vitrinas de exposición ya en modo conservación (−18 °C) y cámaras (≤ −18 °C) — anota la lectura: ____ °C'"
+    },
+    {
+      "tema": "Registro de jornada del equipo ausente (media, tanda 1)",
+      "veredicto": "aplicado",
+      "fichero_celda": "03-tareas-manager.xlsx:'Tareas Diarias'!B17 (diaria) y 'Tareas Mensuales'!B15 (archivo mensual)",
+      "evidencia": "Abiertas las dos celdas: cierre/validación diaria del registro (RD-ley 8/2019, incluye refuerzo de temporada) y archivo/conservación 4 años en la mensual"
+    },
+    {
+      "tema": "Bloque 'al confirmar la reserva' ausente en eventos (baja, tanda 1)",
+      "veredicto": "aplicado",
+      "fichero_celda": "06-eventos-temporada.xlsx:'Catering Eventos' — sección nueva 'Al confirmar el pedido o el evento' filas 4-10 (5 tareas)",
+      "evidencia": "Abierta la hoja: alérgenos por escrito, comensales/formatos/hora, precio+señal, condiciones de cancelación, hueco en cámara −18 °C ANTES de aceptar"
+    },
+    {
+      "tema": "Sin tarea de mantenimiento/descalcificación de café si la heladería sirve bebidas calientes (baja, tanda 1)",
+      "veredicto": "aplicado, condicional",
+      "fichero_celda": "05-tareas-semanales-mensuales.xlsx:'Gestión Semanal'!B10",
+      "evidencia": "Abierta la celda: 'Si sirves café o bebidas calientes: backflush del grupo... y ciclo de limpieza del lavavajillas'. Condicional a propósito (no toda heladería sirve café); si no aplica, se marca N/A y sale del contador"
+    },
+    {
+      "tema": "Extra no pedido por la tanda 1, aplicado igualmente por el módulo (DOM-16 equivalente)",
+      "veredicto": "aplicado",
+      "fichero_celda": "05-tareas-semanales-mensuales.xlsx — hoja nueva 'Trimestral y Anual' (12 tareas: DDD, conductos, gases fluorados, calibración de sondas, extintores/BIE, gas, legionela, registro sanitario, formación en alérgenos, póliza, TPV/Verifactu)",
+      "evidencia": "Hoja confirmada en wb.sheetnames, con desplegable propio, print_setup apaisado y contador — no estaba en la lista de contenido_pendiente de la tanda 1 pero cierra un vacío real del kit (capa de mantenimiento contratado, que el kit no tenía en ningún fichero)"
+    }
+  ],
+
+  "hallazgos_nuevos": [
+    {
+      "severidad": "alta",
+      "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10/E10 (E10=07:00) frente a 09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9/D9 (D9=07:30)",
+      "hallazgo": "El encendido del TPV/datáfono está por PARTIDA DOBLE en el mismo turno de apertura, con dos horas distintas para la misma acción física: 08 dice 'Encender TPV / POS / datáfono' a las 07:00 y 09 dice 'Encender TPV / POS' a las 07:30. Un empleado que siga las dos hojas (que es justo lo que el kit pide: 'Orden de uso: local → caja') encenderá el mismo aparato dos veces, o se preguntará por qué el datáfono ya estaba encendido media hora antes de lo que dice 09. Además CONTRADICE la afirmación explícita de 08:Instrucciones!B37 ('▸ Orden de uso: local → caja. No se duplican: cada uno cubre un nivel.'), que no es cierta para esta tarea. La causa raíz es de MOTOR: colapsar_duplicados (§2.5 de la SPEC) sólo remite contenido de 01-07 HACIA 08/09, pero no compara 08 contra 09 entre sí — es el mismo patrón que motivó DOM-R2-07 (bloque SISTEMAS con tres horas para el mismo TPV), sólo que aquí sobrevive entre los propios ficheros marco/caja, que están fuera del alcance de esa función a propósito (\"colapsar_duplicados NO corre sobre el fichero de negocio ni sobre el de caja: son el destino de la remisión\"). gates.bandas_solapadas del informe no lo detecta porque compara BANDAS/secciones completas, no tareas sueltas."
+    },
+    {
+      "severidad": "media",
+      "donde": "03-tareas-manager.xlsx:'Tareas Diarias'!B9, 04-tareas-perfiles.xlsx:'Heladero-Obrador'!B6 y B14, BONUS-01-briefing-servicio.xlsx:'Briefing Diario'!B7",
+      "hallazgo": "Errata ortográfica repetida 4 veces en el kit: 'manteccar'/'Manteccar' (doble C) en vez de 'mantecar'/'Mantecar'. La forma correcta SÍ existe en el mismo kit (02-partidas-produccion.xlsx:'Mantecación'!B32: 'Mezcla base pasteurizada, sin mantecar'), lo que confirma que es una errata y no una variante regional. Ninguna de las 4 celdas fue tocada por el módulo de contenido de este hermano (los 3 ficheros son SOLO_GRADOS o P4 sin cambio propio en esa zona), así que es contenido de base (Fase A) que sigue sin corregir. Viola el estándar de 'ortografía y semántica perfectas' del CLAUDE.md del proyecto."
+    },
+    {
+      "severidad": "media",
+      "donde": "01-apertura-cierre.xlsx:'Apertura'!B16 (tarea VITRINAS) frente a 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B20-B21 (NEG_ENCENDER + NEG_VITRINAS)",
+      "hallazgo": "El control de temperatura de las vitrinas de exposición se pide anotar DOS VECES el mismo dato en el mismo turno: 01!Apertura!B16 lo resuelve en una sola tarea ('...y comprobar que han mantenido la temperatura toda la noche — anota la lectura: ____ °C') y 08 lo parte en dos tareas separadas (pasar a modo servicio, y comprobar+anotar lectura) con su propio hueco '____ °C'. Como 01 es el detalle por ÁREA y 08 es el checklist del LOCAL (jerarquía que la propia SPEC define en §2.5), un empleado a conciencia rellena dos casillas de lectura para la misma vitrina en el mismo momento del día, y las dos lecturas pueden no coincidir sin que el kit diga cuál manda. No es tan grave como el TPV (aquí al menos las DOS tareas piden el dato correcto, −14/−12 °C, no hay contradicción de VALOR), pero es trabajo duplicado real que ningún bloque 'Se conecta con' de 01 ni de 08 explica ni remite."
+    }
+  ],
+
+  "integridad_ficheros": {
+    "verificado": true,
+    "metodo": "openpyxl.load_workbook() normal + data_only=True sobre los 11 xlsx de la copia regenerada; barrido de todas las celdas buscando '#REF!'/'#NAME?'/'#VALUE!'/'#DIV/0!'",
+    "resultado": "11/11 ficheros recargan sin excepción, 0 errores de fórmula encontrados en ninguna hoja"
+  },
+
+  "recuento_tareas": {
+    "nota": "gates.recuento_tareas de main.py sólo suma los denominadores del molde ▸ (08=33 + 09=23 = 56): es una limitación conocida y ya documentada por motor 2.2 como 'pendiente' para kits P4 como este. Recuento independiente hecho aquí sumando los denominadores REALES de cada hoja (molde ▸ vía motor.geometria + molde P4 vía motor.geometria_p4, excluyendo bandas/rótulos y las 3 hojas en blanco de 07):",
+    "por_fichero": {
+      "01-apertura-cierre.xlsx": 43,
+      "02-partidas-produccion.xlsx": 27,
+      "03-tareas-manager.xlsx": 38,
+      "04-tareas-perfiles.xlsx": 41,
+      "05-tareas-semanales-mensuales.xlsx": 44,
+      "06-eventos-temporada.xlsx": 36,
+      "07-plantilla-personalizable.xlsx": 0,
+      "08-apertura-cierre-negocio.xlsx": 33,
+      "09-apertura-cierre-caja.xlsx": 23,
+      "BONUS-01-briefing-servicio.xlsx": 13,
+      "BONUS-02-calendario-anual-tareas.xlsx": 0
+    },
+    "total": 298,
+    "nota_07": "0 a propósito: es la plantilla en blanco que el cliente rellena, con denominador por fórmula (probado en casos §6)",
+    "nota_bonus02": "0 a propósito: es un calendario (12 filas, una por mes), no un checklist de tareas"
+  },
+
+  "tareas_total": 298,
+  "ficheros_total": 11,
+  "bloquea_real": true,
+  "motivo_bloqueo": "1 hallazgo nuevo de severidad ALTA (TPV/POS encendido por partida doble en 08 y 09 con horas incoherentes, 07:00 vs 07:30, que además contradice el texto propio del kit 'No se duplican'). El resto del informe (motor, casos §6, DV, contenido_pendiente de la tanda 1) está resuelto/verde.",
+
+  "notas": [
+    "Regenerado con: CLAUDE_SCRATCHPAD=.../propio-verif2 python3 main.py --producto kit-tareas-heladeria --dry-run --json .../kt-hermanos-3/kit-tareas-heladeria.json (motor+contenido juntos, sin --solo). No se ha tocado astro-site/public/dl/** en ningún momento; toda la verificación adicional (test manual de 07, barrido de #REF!, conteo de tareas) se hizo sobre COPIAS dentro del propio scratchpad.",
+    "El caso §6 del 07 (plantilla personalizable por fórmula) no lo cubre ningún gate automático del informe de main.py para este hermano concreto, porque 07 está fuera del alcance ▸ de un kit 'solo 08/09': lo verifiqué a mano con pycel sobre una copia de trabajo con 8 tareas escritas, resultado '5 de 8' (5 marcadas de las 8 escritas), que es exactamente la fórmula del §2.3.",
+    "TEC-18 y DOM-14, los dos hallazgos que la verificación de la tanda 1 dejó como 'parcial'/'no resuelto', están confirmados como RESUELTOS en esta regeneración sobre motor 2.2 + el módulo de contenido de heladeria (el módulo llama motor.autoaltos tras tocar 08, que es justo el mecanismo que arregla TEC-18).",
+    "El hallazgo ALTA de TPV duplicado es GENÉRICO DE MOTOR, no específico de heladeria: cualquier hermano 'solo 08/09' (catering, chocolatería, hotel, restaurante-creativo) que tenga una tarea equivalente en 08 y en 09 sobre el mismo sistema (TPV, alarma, luces) puede tener el mismo problema, porque colapsar_duplicados no compara 08 contra 09. Vale la pena que quien mantenga motor.py lo revise en los otros 4 hermanos P4 y en el propio representante.",
+    "Temperatura de CPU vigilada con istats antes de cada python: máximo 41,25 °C durante toda la verificación, un solo intérprete a la vez, sin builds ni navegador.",
+    "No se ha hecho git add/commit/stash/clean. Este fichero es la única escritura en el repo."
+  ]
+}

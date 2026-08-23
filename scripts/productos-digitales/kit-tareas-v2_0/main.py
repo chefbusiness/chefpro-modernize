@@ -330,8 +330,12 @@ def demo_07(carpeta, demos):
     from pycel import ExcelCompiler
     for fname in sorted(motor.CTX.get('con_checklist', ())):
         wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        # La geometría ▸ se exige aquí y no sólo el título: los sinónimos de
+        # §2.3 («Por Zona») también los llevan hojas del molde P4 (catering,
+        # chocolatería, heladería) y sin este filtro la demostración se
+        # llevaría una de ellas y reventaría en `g['hr']` con `g = None`.
         hojas = [ws.title for ws in wb.worksheets
-                 if ws.title in motor.PLANTILLA_07]
+                 if ws.title in motor.PLANTILLA_07 and motor.geometria(ws)]
         if len(hojas) < 3:
             continue
         dst = _copia(carpeta, fname, demos, 'plantilla-8-tareas')
@@ -353,6 +357,65 @@ def demo_07(carpeta, demos):
                  'entradas': '8 tareas escritas, ninguna marcada',
                  'esperado': 8, 'obtenido': den, 'ok': den == 8,
                  'copia': dst}]
+    return []
+
+
+def demo_p4(carpeta, nombres, demos):
+    """(l) — molde P4: hoja RECIÉN IMPRESA → «0 de N», N = tareas reales.
+
+    El contador del molde P4 contaba los rótulos: la cabecera «Nº | Tarea | …»
+    se repite en cada sección, así que `COUNTIF(B,"?*")` sumaba esas filas al
+    denominador y `COUNTIF(E,"✓")` sumaba sus «✓» al numerador. Medido en
+    heladería, 01-apertura-cierre.xlsx:'Apertura'!C29/E29: la hoja sin marcar
+    nada anunciaba «2 de 19» con 17 tareas. La demostración NO toca el fichero
+    —la gracia es que sea el que se entrega— y compara contra el recuento
+    hecho a mano, publicando además lo que habría dicho la fórmula vieja.
+    """
+    from pycel import ExcelCompiler
+    for fname in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+        for ws in wb.worksheets:
+            g = motor.geometria_p4(ws)
+            if not g or not g['contador']:
+                continue
+            lo, hi = g['hr'] + 1, g['contador'] - 1
+            if hi < lo:
+                continue
+            reales = rotulos = marcadas = ingenuo_num = 0
+            for r in range(lo, hi + 1):
+                v = ws.cell(row=r, column=2).value
+                marca = ws.cell(row=r, column=g['marca']).value
+                if marca == motor.MARCA_OK:
+                    ingenuo_num += 1
+                if not isinstance(v, str) or not v.strip():
+                    continue
+                if v.strip() == 'Tarea':
+                    rotulos += 1
+                    continue
+                reales += 1
+                if marca == motor.MARCA_OK:
+                    marcadas += 1
+            if not reales or not rotulos:
+                continue        # sin cabeceras repetidas no demuestra nada
+            dst = _copia(carpeta, fname, demos, 'p4-recien-impresa')
+            xl = ExcelCompiler(filename=dst)
+            cn = motor.get_column_letter(g['marca'] - 2)
+            cd = motor.get_column_letter(g['marca'])
+            num = _ev(xl, "'{}'!{}{}".format(ws.title, cn, g['contador']))
+            den = _ev(xl, "'{}'!{}{}".format(ws.title, cd, g['contador']))
+            return [{
+                'caso': 'contador-p4-sin-rotulos',
+                'ref': '{}:{}:{}{}/{}{}'.format(fname, ws.title, cn,
+                                                g['contador'], cd,
+                                                g['contador']),
+                'entradas': ('hoja tal y como se entrega · {} tareas reales, '
+                             '{} filas de rótulo repetido, {} marcadas ✓'
+                             .format(reales, rotulos, marcadas)),
+                'formula_vieja_habria_dicho': '{} de {}'.format(
+                    ingenuo_num, reales + rotulos),
+                'esperado': '{} de {}'.format(marcadas, reales),
+                'obtenido': '{} de {}'.format(num, den),
+                'ok': (num, den) == (marcadas, reales), 'copia': dst}]
     return []
 
 
@@ -390,6 +453,7 @@ def gate_dv_y_bio(carpeta, nombres):
     """
     dv_mal, sin_bio, hojas, con_bio = [], [], 0, 0
     listas_kit, hojas_p4 = {}, 0
+    sin_instrucciones, version_mal = [], []
     for n in nombres:
         wb = openpyxl.load_workbook(os.path.join(carpeta, n))
         for ws in wb.worksheets:
@@ -408,6 +472,26 @@ def gate_dv_y_bio(carpeta, nombres):
             if listas and listas != {motor.DV_LISTA}:
                 dv_mal.append(f'{n}:{ws.title} (molde P4): DV = '
                               f'{sorted(listas)} (esperada {motor.DV_LISTA})')
+        # (j) — la autoría y la versión se censan en TODOS los ficheros del
+        # producto, también los que quedan FUERA de alcance. Antes el censo iba
+        # detrás del `continue` de abajo y los dos calendarios que no son ni
+        # checklist ▸ ni molde P4 —los BONUS-02 de catering y de hotel— se
+        # publicaban dentro de un producto v2.0 diciendo «Versión 1.1 · agosto
+        # 2026» y sin la línea de autoría, sin que ningún gate lo mirase.
+        ins = wb['Instrucciones'] if 'Instrucciones' in wb.sheetnames else None
+        if ins is None:
+            # No se inventa una hoja: se anota y decide el orquestador.
+            sin_instrucciones.append(n)
+        else:
+            texto = ' '.join(str(c.value) for row in ins.iter_rows()
+                             for c in row if c.value)
+            if motor.RX_BIO.search(texto):
+                con_bio += 1
+            else:
+                sin_bio.append(n)
+            if motor.version_line() not in texto:
+                version_mal.append(f'{n}:Instrucciones: no dice '
+                                   f'«{motor.version_line()}»')
         if not motor.en_alcance(wb):
             continue
         for ws in wb.worksheets:
@@ -419,13 +503,6 @@ def gate_dv_y_bio(carpeta, nombres):
             if listas != {motor.DV_LISTA}:
                 dv_mal.append(f'{n}:{ws.title}: DV = {sorted(listas)} '
                               f'(esperada {motor.DV_LISTA})')
-        ws = wb['Instrucciones'] if 'Instrucciones' in wb.sheetnames else None
-        texto = ' '.join(str(c.value) for row in (ws.iter_rows() if ws else [])
-                         for c in row if c.value)
-        if ws is None or not motor.RX_BIO.search(texto):
-            sin_bio.append(n)
-        else:
-            con_bio += 1
     mezcla = []
     if len(listas_kit) > 1:
         mezcla = [f'{f} en {len(h)} hojas (p.ej. {h[0]})'
@@ -433,6 +510,8 @@ def gate_dv_y_bio(carpeta, nombres):
     return {'hojas_checklist': hojas, 'hojas_p4': hojas_p4,
             'dv_incorrectas': dv_mal,
             'instrucciones_con_bio': con_bio, 'sin_bio': sin_bio,
+            'sin_hoja_instrucciones': sin_instrucciones,
+            'version_desfasada': version_mal,
             'listas_dv_del_producto': sorted(listas_kit),
             'aviso_dv_mezcladas': mezcla}
 
@@ -664,17 +743,24 @@ def main():
             shutil.rmtree(demos_dir)
         demostraciones = (demo_arqueo(carpeta, demos_dir)
                           + demo_contador(carpeta, demos_dir)
-                          + demo_07(carpeta, demos_dir))
+                          + demo_07(carpeta, demos_dir)
+                          + demo_p4(carpeta, nombres, demos_dir))
     for c in demostraciones:
         log(f"  {c['caso']} · {c['ref']}: {c['obtenido']!r} "
             f"{'OK' if c['ok'] else 'FALLA (esperaba ' + repr(c['esperado']) + ')'}")
     gates = gate_dv_y_bio(carpeta, nombres)
+    con_ins = len(nombres) - len(gates['sin_hoja_instrucciones'])
     log(f"  DV «✓,—,N/A»: {gates['hojas_checklist']} hojas de checklist, "
         f"{len(gates['dv_incorrectas'])} incorrectas · bio en "
-        f"{gates['instrucciones_con_bio']}/{len(ctx['ficheros'])} "
-        'Instrucciones en alcance')
+        f"{gates['instrucciones_con_bio']}/{con_ins} Instrucciones del "
+        f"producto · {len(gates['version_desfasada'])} sin la versión 2.0")
     for d in gates['dv_incorrectas'][:8]:
         log('    ' + d)
+    for d in gates['version_desfasada'][:8]:
+        log('    ' + d)
+    for d in gates['sin_hoja_instrucciones']:
+        log(f'    AVISO (j) · {d}: no tiene hoja «Instrucciones» — no se '
+            'inventa ninguna; lo decide el orquestador')
     for m in gates['aviso_dv_mezcladas']:
         log('    AVISO TEC-R2-08 · el producto tiene MÁS de una lista de '
             'desplegable: ' + m)
@@ -705,7 +791,12 @@ def main():
     fallos += gates['dv_incorrectas']
     fallos += prec.get('huecos_firma', [])
     fallos += prec['huecos'][:10]
-    fallos += [f'sin bio en Instrucciones: {n}' for n in gates['sin_bio']
+    # (j) — la bio y la versión se exigen en TODO fichero del producto que
+    # tenga hoja «Instrucciones», esté o no en alcance del molde ▸.
+    fallos += [f'sin bio en Instrucciones: {n}' for n in gates['sin_bio']]
+    fallos += gates['version_desfasada']
+    fallos += [f'{n}: en alcance y SIN hoja «Instrucciones»'
+               for n in gates['sin_hoja_instrucciones']
                if n in ctx['ficheros']]
     if cen['exit'] != 0:
         fallos.append('censo-entregables --fail devolvió ' + str(cen['exit']))

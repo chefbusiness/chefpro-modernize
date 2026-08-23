@@ -1,0 +1,132 @@
+{
+ "pid": "kit-tareas-chocolateria",
+ "rol": "verificador independiente · kit-tareas-chocolateria · sobre motor 2.2",
+ "fecha": "2026-08-23",
+ "insumos": [
+  "scripts/productos-digitales/kit-tareas-v2-SPEC.md",
+  "scripts/productos-digitales/auditorias/kit-tareas-R1.json",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-chocolateria-verif.json (tanda 1, motor ~2.1)",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/motor-2.2.json",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_chocolateria.py"
+ ],
+ "ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=…/scratchpad/propio-verificador-choco python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-chocolateria --dry-run --json …/kt-hermanos-3/kit-tareas-chocolateria.json",
+  "dryrun_exit": 0,
+  "alcance_motor": "en alcance 2/11 (08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx) · resto molde P4",
+  "idempotencia_1a_vs_2a_pasada": 0,
+  "inject_cache": "124 fórmulas nuevas con cache inyectado, 0 fallos de pycel (el propio main.py); 0 errores #REF!/#NAME?/#VALUE!/#DIV0! en la relectura data_only independiente de los 11 xlsx (verificado por mí, no sólo confiando en el resumen)",
+  "censo_entregables_fail": {"exit": 0, "ficheros_censados": 11, "xlsx": 11, "docx": 0, "pdf": 0, "defectos": 0},
+  "reload_openpyxl_11_ficheros": "los 11 .xlsx abren limpios con openpyxl (data_only=False y data_only=True), 0 fallos de apertura, 0 fórmulas con error"
+ },
+ "listas_dv_del_producto": ["\"✓,—,N/A\""],
+ "dv_detalle": {
+  "hojas_checklist_molde_trio": 4,
+  "hojas_p4_con_dv": 20,
+  "dv_incorrectas": 0,
+  "nota": "gate del propio main.py: listas_dv_del_producto=['\"✓,—,N/A\"'], dv_incorrectas=[]. Una sola lista en las 24 hojas de tarea del producto (molde ▸ y molde P4), confirmado también a mano en 01:Apertura (DV list '✓,—,N/A' sobre E6…E38) y en 05:'Trimestral y Anual' (hoja nueva, 14 rangos, misma lista)."
+ },
+ "casos_parrafo6": {
+  "total": 7,
+  "ok": 7,
+  "detalle": [
+   {"caso": "arqueo cuadra: fondo 150, efectivo contado 1150, tarjetas 800, otros 0, Z 1800 → descuadre 0", "ok": true, "metodo": "pycel INDEPENDIENTE (no el interno de main.py): copia de 09-apertura-cierre-caja.xlsx con 'Apertura de Caja'!C25=150 y denominaciones sumando 1150; ExcelCompiler evalúa 'Cierre de Caja'!C45=1150, C50=150, C51=1000, C54=1800, C56=0"},
+   {"caso": "arqueo descuadra: mismos valores con Z=1790 → descuadre +10", "ok": true, "metodo": "misma copia con C55=1790: pycel evalúa C56=10"},
+   {"caso": "contador honesto con N/A: 17 tareas de 08:Apertura del Negocio, 2 marcadas N/A, las 15 restantes ✓ → '15 de 15'", "ok": true, "metodo": "pycel sobre copia de 08 con F20/F21='N/A' y F5:F19='✓': D28=15, F28=15 (las N/A salen del denominador; ninguna resta por '—', conforme a SPEC §8/§2.1 R2)"},
+   {"caso": "07 (plantilla personalizable) con 8 tareas escritas → 'x de 8', denominador por FÓRMULA no literal", "ok": true, "metodo": "pycel sobre copia de 07:'Por Zona' con B5:B12=8 tareas (5 ✓, 3 —): C30=5, E30=8. Confirmado además que E30 es '=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")', no el 15 literal del hallazgo COM-05 original"},
+   {"caso": "08: ninguna tarea sin Responsable/Hora", "ok": true, "metodo": "lectura directa de las 17+15 filas de 'Apertura del Negocio' y 'Cierre del Negocio': columnas Responsable(D) y Hora Límite/Cuándo(E) pobladas al 100 %, además del gate propio del main.py ('32 tareas, 0 sin Responsable u Hora')"},
+   {"caso": "bio en las Instrucciones de los 11 ficheros", "ok": true, "metodo": "gate del main.py: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]; confirmado a mano en 07:Instrucciones!B13 (antes NO tenía el módulo tocara este fichero para bio)"},
+   {"caso": "contador P4 recién impreso = «0 de N» sin contar rótulos (kit con hojas P4)", "ok": true, "metodo": "demo propia del main.py (pycel), no tocada por mí: 01-apertura-cierre.xlsx:'Apertura'!C39/E39 = '0.0 de 25.0' sobre la hoja TAL CUAL se entrega (la fórmula vieja habría dicho más, con rótulos contados)"}
+  ]
+ },
+ "motor_ids_r1": [
+  {"id": "DOM-01", "veredicto": "resuelto", "evidencia": "confirmado con pycel independiente, casos 0 y +10 (ver casos_parrafo6)"},
+  {"id": "DOM-03", "veredicto": "resuelto", "evidencia": "09:'Cierre de Caja' fila 43 = '0,02 €', B43=0, C43='=B43*0.02', entre 0,05€(42) y 0,01€(44); TOTAL EFECTIVO=SUM(C29:C44) la incluye"},
+  {"id": "DOM-04", "veredicto": "resuelto", "evidencia": "09:'Registro Mensual' cabecera fila4 = Fecha|Fondo Apertura|Efectivo Contado|Ventas Tarjeta|Ventas Otros|Total Facturado|Z del TPV|Descuadre; F5='=IF(SUM(C5:E5)=0,0,SUM(C5:E5)-B5)' (Total Facturado = efectivo+tarjeta+otros − fondo); H5='=IFERROR(F5-G5,0)'; fila36: B36 (Fondo) usa AVERAGEIF (no se suma, TEC-05) y H36='=SUMIF(H5:H35,\">0\")-SUMIF(H5:H35,\"<0\")' (no compensa + y −, DOM-R2-26)"},
+  {"id": "DOM-05", "veredicto": "resuelto", "evidencia": "09:'Apertura de Caja' B25='Fondo de caja inicial (€)' celda C25 editable verde, referenciada por 'Cierre de Caja'!C50 vía IFERROR; tarea B7='Anotar el fondo de caja en la celda verde de abajo'"},
+  {"id": "DOM-06", "veredicto": "resuelto", "evidencia": "08:'Apertura del Negocio' (17 tareas) y 'Cierre del Negocio' (15 tareas): Responsable/Hora al 100%, ejemplo C5='Encargado' D5='07:00' en Apertura, C5='Encargado'/'Último en salir' D5='Cierre' en Cierre"},
+  {"id": "DOM-07", "veredicto": "resuelto — MEJORA respecto a tanda 1", "evidencia": "tanda1 (motor ~2.1) marcó 'no aplica' porque 07 no se tocaba en absoluto (hash idéntico al live). En esta pasada (motor 2.2) 07 SÍ recibe normalización P4 (8 cambios, 6 fórmulas): las tres hojas ('Por Zona','Por Turno','Por Perfil') tienen denominador por FÓRMULA ('=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")'), no el 15 literal del hallazgo COM-05/DOM-07 original. Es la normalización genérica de motor.normalizar_p4, no la diferenciación de bandas (§2.3/diferenciar_07), que sigue sin aplicarse porque 07 es P4 en este kit — eso SÍ sigue como decía el módulo de contenido."},
+  {"id": "DOM-09", "veredicto": "PARCIAL — sigue sin resolver, con evidencia nueva", "evidencia": "01:'Apertura' B30='Activar TPV y verificar fondo de caja' duplica 09:'Apertura de Caja' B6-B10 (fondo, TPV); 01:'Cierre' B8='Cuadre de caja y registro de ventas del día' duplica 09:'Cierre de Caja' entero (arqueo); 01:'Cierre' B9='Apagar TPV y cerrar terminal de pago' duplica 08:'Cierre del Negocio' B8. Causa estructural: `colapsar_duplicados`/la remisión '→ ver 08/09' de §2.5 sólo se aplica en ficheros del molde ▸, y 01 es P4 en este kit → fuera de alcance del motor. Es el mismo gap que motor-2.2.json ya documenta como pendiente del orquestador para los 5 kits P4 (catering/chocolatería/heladería/hotel/restaurante-creativo)."},
+  {"id": "DOM-10", "veredicto": "resuelto — MEJORA respecto a tanda 1 (antes 'parcial')", "evidencia": "tanda1 lo dio por resuelto sólo en 08/09 y 'no aplica' en 01-07/BONUS por estar fuera de alcance con su DV previo. En esta pasada, motor.normalizar_p4 unifica el contador honesto (COUNTIF sin restar '—', sólo N/A) en LAS 20 hojas P4 además de las 4 del molde ▸: confirmado en 01:'Apertura'!F39, 05:'Trimestral y Anual'!E26 y con el caso pycel de N/A (arriba)"},
+  {"id": "DOM-11", "veredicto": "resuelto (equivalente, en 08/09)", "evidencia": "08:'Apertura del Negocio' tiene 6 filas libres (22-27) DENTRO del rango que cuenta F28 (COUNTIF sobre B5:B26); 'Cierre del Negocio' tiene 6 filas libres (20-25) dentro de B5:B24. El hallazgo original de R1 apuntaba a 01 (fuera de alcance del motor en este kit, molde P4), pero la MISMA regla (§2.2, aplicable a todo fichero molde ▸) se cumple en 08/09, que son los únicos ficheros molde ▸ de este kit."},
+  {"id": "DOM-21", "veredicto": "resuelto", "evidencia": "08 y 09: DV '✓,—,N/A', verde E8F5E9 en columnas editables, contador con etiqueta fusionada, Instrucciones con molde ▸ (confirmado en tanda1 y no ha cambiado)"},
+  {"id": "DOM-22", "veredicto": "resuelto", "evidencia": "09:Instrucciones con contenido PROPIO de caja (arqueo, denominaciones, Z, descuadre, registro mensual), distinto del de 08 (confirmado en tanda1, sin cambios)"},
+  {"id": "DOM-23", "veredicto": "resuelto (más amplio de lo que evaluó tanda 1)", "evidencia": "tanda1 sólo miró 08/09 (sin menciones a APPCC ahí, correcto) y concluyó 'no aplica'. En P4 SÍ hay menciones a APPCC y las tres llevan la fórmula honesta exigida por DOM-23/§2.5: 01:'Apertura'!B21, 04:'Encargado'!B17 y 05:'Mensual'!B22 = '… si tienes el Pack APPCC, en su hoja de temperaturas/regístralo allí; si no, anótalo aquí mismo en «Notas»/junto a la tarea'. También confirmado que la hoja nueva 05:'Trimestral y Anual' NO arrastra la coletilla de forma circular en la tarea que manda revisar el propio plan de autocontrol (a propósito, según el comentario del módulo)."},
+  {"id": "DOM-25", "veredicto": "resuelto (equivalente, en 08/09)", "evidencia": "08:'Apertura del Negocio'!E4='Hora Límite' (columna de horas reales 07:00-07:30) y 08:'Cierre del Negocio'!E4='Cuándo' (columna que mezcla el hito 'Cierre'), conforme a la regla R2 §2.4. El hallazgo original apuntaba a 03/05/06 del REPRESENTANTE (estructura distinta, no presente en el molde P4 de chocolatería), pero la regla se cumple donde sí aplica (08/09)."},
+  {"id": "DOM-30", "veredicto": "resuelto — MEJORA respecto a tanda 1 (antes sólo 08/09)", "evidencia": "gate del main.py: instrucciones_con_bio=11 (los 11 ficheros, no sólo los 2 del molde ▸ que ya la tenían en tanda1). Confirmado a mano en 07:Instrucciones!B13 y BONUS-01:Instrucciones."}
+ ],
+ "motor_no_resueltos": ["DOM-09"],
+ "contenido_pendiente_tanda1": [
+  {
+   "tema": "Temperatura de cierre del obrador sin objetivo ni hueco de lectura",
+   "estado": "aplicado",
+   "evidencia": "08:'Cierre del Negocio'!B19 = 'Registrar la temperatura de cierre del obrador: objetivo 18-20 °C — anota la lectura: ____ °C' (celda abierta y leída, no sólo el resumen de cambios)"
+  },
+  {
+   "tema": "Vitrinas temperadas sin objetivo de temperatura propio",
+   "estado": "aplicado",
+   "evidencia": "08:'Apertura del Negocio'!B20 = 'Encender las vitrinas temperadas y comprobar que alcanzan 16-18 °C antes de montar el género — anota la lectura: ____ °C'; 08:'Cierre del Negocio'!B18 = 'Apagar las vitrinas temperadas una vez retirado el género a la cámara de conservación' (celdas abiertas y leídas)"
+  },
+  {
+   "tema": "09 no distingue caja de mostrador/venta al peso",
+   "estado": "aplicado",
+   "evidencia": "09:'Apertura de Caja'!B9-B10 = báscula de mostrador (tara + peso patrón) y cuadre de precio/kilo cartel↔TPV; 09:'Cierre de Caja'!B14-B15 = cuadre de venta al peso y registro de señales de encargos (celdas abiertas y leídas, filas 9-10 y 14-15 del volcado completo de ambas hojas)"
+  }
+ ],
+ "contenido_no_aplicado": [],
+ "aplicados_verificados_abriendo_celda_real": [
+  "01:'Apertura'!B6-B12 — sección 'Higiene personal y arranque seguro del obrador' (7 tareas nuevas, DOM-12/13 equivalente)",
+  "01:'Apertura'!B16 — cámara de conservación comprobada desde la noche anterior con objetivo 15-18 °C y humedad (DOM-24 equivalente)",
+  "01:'Apertura'!B19 — vitrina de bombonería 16-18 °C con hueco de lectura",
+  "08:'Apertura del Negocio'!B20 — vitrina temperada con objetivo (hallazgo media de tanda1)",
+  "08:'Cierre del Negocio'!B19 — temperatura de cierre del obrador con objetivo (hallazgo media de tanda1)",
+  "09:'Apertura de Caja'!B9-B10 y 'Cierre de Caja'!B14-B15 — venta al peso (hallazgo baja de tanda1)",
+  "09:'Registro Mensual'!F5/H5/B36/H36 — fórmulas DOM-04 con fondo descontado y sin compensar +/− (motor)",
+  "01/04/05 — texto honesto de APPCC con fallback a 'Notas' (DOM-23, 3 ubicaciones distintas)"
+ ],
+ "conteo_landing": {
+  "ficheros_total": 11,
+  "tareas_total": 338,
+  "metodo": "recuento propio, NO el gate.recuento_tareas del main.py (ese sólo suma los denominadores del molde ▸ = 08+09 = 59, tal como ya advierte motor-2.2.json en su nota 'pendiente'). Conté filas de tarea REALES (entero en columna # que no es rótulo de sección ni cabecera repetida 'Tarea') con motor.geometria_p4/motor.geometria sobre los 11 xlsx de la copia regenerada.",
+  "por_fichero": {
+   "01-apertura-cierre.xlsx": 41,
+   "02-partidas-produccion.xlsx": 41,
+   "03-tareas-manager.xlsx": 47,
+   "04-tareas-perfiles.xlsx": 44,
+   "05-tareas-semanales-mensuales.xlsx": 48,
+   "06-eventos-temporada.xlsx": 40,
+   "07-plantilla-personalizable.xlsx": 0,
+   "08-apertura-cierre-negocio.xlsx": 32,
+   "09-apertura-cierre-caja.xlsx": 27,
+   "BONUS-01-briefing-servicio.xlsx": 18,
+   "BONUS-02-calendario-anual-tareas.xlsx": 0
+  },
+  "nota_07_y_bonus02": "07 = 0 a propósito (tres plantillas EN BLANCO para que el cliente escriba; el denominador ya es por fórmula, ver casos_parrafo6). BONUS-02 = 0 porque es una tabla de referencia (12 meses, sin columna ✓ que se marque), no un checklist de tareas — igual que el gate del propio producto no la cuenta."
+ },
+ "hallazgos_nuevos": [
+  {
+   "severidad": "media",
+   "donde": "02-partidas-produccion.xlsx:Templado:B26 y B33",
+   "hallazgo": "El test de templado en punta de espátula —el control que decide si el lote se moldea o se vuelve a fundir— sólo lleva el criterio completo ('debe secar en 3-5 min a 20 °C, con brillo, snap seco y contracción en el molde. Si no, volver a fundir y templar') en la sección 'Chocolate negro' (B18). Las secciones paralelas 'Chocolate con leche' (B26) y 'Chocolate blanco' (B33) —mismo control, mismo riesgo— se quedaron con el texto original vago 'Test de templado y registrar lote', sin ningún criterio de paso/no-paso. El módulo de contenido sólo sustituyó el ancla que existía en la sección de negro; leche y blanco ya traían otro texto de fábrica y `_sustituir` no las tocó al no encontrar coincidencia."
+  },
+  {
+   "severidad": "media",
+   "donde": "01-apertura-cierre.xlsx:Apertura:B30, 01-apertura-cierre.xlsx:Cierre:B8-B9",
+   "hallazgo": "DOM-09 (motor, no resuelto — ver motor_ids_r1): el checklist general de apertura/cierre (01, molde P4 en este kit) sigue duplicando sin remisión tareas que ya están en 08 y 09: 'Activar TPV y verificar fondo de caja' (Apertura B30) solapa con 09:Apertura de Caja B6-B10; 'Cuadre de caja y registro de ventas del día' (Cierre B8) solapa con el arqueo entero de 09:Cierre de Caja; 'Apagar TPV y cerrar terminal de pago' (Cierre B9) solapa con 08:Cierre del Negocio B8. La remisión '→ ver 08/09' de §2.5 sólo la aplica el motor en ficheros molde ▸, y 01 es P4 aquí, así que el encargado puede acabar haciendo (o creyendo hecho) el arqueo dos veces con dos criterios de cálculo distintos."
+  },
+  {
+   "severidad": "baja",
+   "donde": "BONUS-01-briefing-servicio.xlsx:Briefing y BONUS-02-calendario-anual-tareas.xlsx:Calendario",
+   "hallazgo": "Ninguna de las dos hojas queda protegida (ws.protection.sheet=False en ambas), a pesar de que sus celdas de datos SÍ están marcadas 'locked=True' por estilo — la protección de hoja que activaría ese bloqueo simplemente no se aplica. Es un gap ya señalado por el mantenedor del motor en motor-2.2.json ('pendiente') para catering y hotel; confirmado aquí que también afecta a chocolatería. No bloqueante (P4/BONUS fuera del alcance de `motor.cerrar`, que es quien protege en el molde ▸), pero deja las dos plantillas más simples del kit sin la protección que sí tienen 08 y 09."
+  }
+ ],
+ "bloquea_real": false,
+ "motivo_no_bloquea": "Motor: exit 0, 0 diferencias de idempotencia, 0 fallos de pycel/cache, censo --fail en 0 defectos, los 11 xlsx recargan limpios sin #REF!/#NAME?. DV: una sola lista '\"✓,—,N/A\"' en las 24 hojas de tarea del producto. Casos §6: 7/7 OK con pycel (2 propios de main.py reconfirmados de forma independiente + 5 verificados por mí desde cero). Contenido pendiente de tanda 1: 3/3 aplicados y verificados abriendo la celda real. Único MOTOR no resuelto (DOM-09) es severidad MEDIA y estructural (afecta a los 5 kits P4 de la familia, ya documentado por el mantenedor, no es un roto de este kit). Los 3 hallazgos nuevos son media/media/baja, ninguno alta.",
+ "notas": [
+  "No se tocó astro-site/public/dl/** en ningún momento: todo el trabajo se hizo con CLAUDE_SCRATCHPAD apuntando a scratchpad/propio-verificador-choco, sin KIT_TAREAS_APPLY, sin --producto distinto de kit-tareas-chocolateria.",
+  "kit-tareas (el representante) NO se ha tocado ni regenerado: sólo se ha ejecutado y leído la copia de dry-run de kit-tareas-chocolateria.",
+  "Todos los casos pycel de este informe se ejecutaron con COPIAS de un solo uso dentro del propio scratchpad (08test.xlsx, 09test.xlsx, 09test-2.xlsx, 07test.xlsx), nunca sobre la copia de trabajo del dry-run ni sobre astro-site/.",
+  "Temperatura de CPU vigilada con istats antes de cada arranque de python: máximo medido 41,4 °C, un intérprete a la vez, sin builds ni Playwright.",
+  "No se revisó la landing (kit-tareas-chocolateria.ts) ni el caso '0 menciones a Trail con precio': fuera del encargo de esta verificación (motor+contenido sobre los .xlsx), igual que hizo tanda 1.",
+  "Discrepancias con tanda 1 (motor ~2.1) que el orquestador debería tener en cuenta: DOM-07, DOM-10, DOM-23 y DOM-30 mejoraron su veredicto en esta pasada porque motor 2.2 extiende la normalización P4 (DV, contador honesto, bio) a los 11 ficheros del producto, no sólo a 08/09. DOM-09 se mantiene 'parcial' con evidencia más concreta."
+ ]
+}

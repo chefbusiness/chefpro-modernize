@@ -1,0 +1,100 @@
+{
+ "rol": "verificador independiente · kit-tareas-bar · ronda 2 (post motor 2.2)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-bar",
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=.../propio-verificador python3 main.py --producto kit-tareas-bar --dry-run --json .../kt-hermanos-3/kit-tareas-bar-p1.json",
+  "exit": 0,
+  "resumen_consola": "kit «Bar / Cocktails» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · hora ancla 15:30. idempotencia (2.ª pasada sobre clon interno): 0 diferencias. inject_cache 11/11 sin fallos_pycel. data_only formulas nuevas: 133 con valor, 0 fallos. §6: arqueo-cuadra=0 OK, arqueo-descuadra=10 OK, contador-honesto=27 de 27 OK, denominador-07=8 OK. DV 28 hojas checklist, 0 incorrectas. bio 11/11 Instrucciones, 0 sin versión 2.0. 08 precargado: 33 tareas, 0 huecos, firma OK. recuento de tareas: 342 total."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only .../dryrun-kt/kit-tareas-bar --fail --quiet",
+  "exit": 0,
+  "resultado": "OK: 0 defectos (--fail) — 11 xlsx censados en 1 producto"
+ },
+ "idempotencia": {
+  "diferencias": 0,
+  "metodo": "2.ª pasada IN PLACE sobre un clon de la copia ya regenerada (paso 3/7 del propio main.py, sobre mi propia ejecución independiente, no reutilizando el informe ajeno)"
+ },
+ "reload_openpyxl_11_ficheros": {
+  "resultado": "11/11 ficheros cargan sin excepción (openpyxl, data_only=False y data_only=True) y NINGUNA celda contiene #REF!/#NAME?/#VALUE!/#DIV/0! tras recargar el .xlsx final",
+  "sheets_por_fichero": "01=3,02=4,03=4,04=5,05=5,06=5,07=4,08=3,09=4,BONUS-01=2,BONUS-02=2"
+ },
+ "listas_dv": {
+  "hallazgo": "UNA sola lista de validación en las 28 hojas de checklist de los 11 ficheros: la cadena literal es \"✓,—,N/A\" (verificado enumerando ws.data_validations.dataValidation de cada hoja, no sólo leyendo el gate del informe)",
+  "lista_unica": "\"✓,—,N/A\""
+ },
+ "proteccion_hojas": {
+  "resultado": "Las 28 hojas de checklist + BONUS-01 + BONUS-02 (30 hojas de datos en total) están protegidas (ws.protection.sheet=True); las 11 hojas «Instrucciones» NO están protegidas, tal como manda §2.7/§8. Confirma TEC-R2-14 (los dos BONUS entran en la protección)."
+ },
+ "casos_spec_6": {
+  "casos6_ok": 5,
+  "casos6_total": 5,
+  "detalle": [
+   {"caso": "arqueo cuadra (fondo 150, efectivo 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel)"},
+   {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel), CF ámbar"},
+   {"caso": "contador con N/A", "ok": true, "evidencia": "01-apertura-cierre.xlsx:Apertura Barra:D50/F50 = '27 de 27' con 30 tareas y 3 N/A (pycel); F50 sólo descuenta N/A, no «—»"},
+   {"caso": "07 plantilla personalizable por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F37 = 8 con 8 tareas escritas (pycel); denominador es fórmula COUNTIF, ya no un 15 fijo"},
+   {"caso": "08 precargado (Responsable/Hora en toda tarea)", "ok": true, "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'/'Cierre del Negocio' — 33 tareas, 0 huecos de Responsable u Hora Límite; f_negocio detectado correctamente como 08 (antes detectaba 01 por error)"}
+  ],
+  "nota_p4": "kit-tareas-bar es «▸ completo» (0 hojas P4 según gates.dv_y_bio.hojas_p4=0); el 6.º caso de §6 (contador P4 «0 de N» sin rótulos) no aplica a este kit y se excluye del total, tal como indica el propio enunciado de la tarea ('si el kit tiene P4')."
+ },
+ "motor_ids_r1_y_verif_tanda1": [
+  {"id": "DOM-01", "veredicto": "resuelto", "evidencia": "09:Cierre de Caja:C48/C49/C52/C54 — fondo se resta antes de sumar; pycel 0 y 10"},
+  {"id": "DOM-03", "veredicto": "resuelto", "evidencia": "09:Cierre de Caja fila 41 = 0,02 € en el recuento de moneda"},
+  {"id": "DOM-04", "veredicto": "resuelto", "evidencia": "09:Registro Mensual columna 'Z del TPV' antes de 'Descuadre'; F5 descuenta el fondo"},
+  {"id": "DOM-05", "veredicto": "resuelto", "evidencia": "09:Apertura de Caja fila 7 apunta a C23 'Fondo de caja inicial (€)'"},
+  {"id": "DOM-06", "veredicto": "resuelto", "evidencia": "CORREGIDO respecto a la tanda 1 (antes 'no resuelto' por f_negocio mal detectado). Confirmado independientemente: contexto.f_negocio='08-apertura-cierre-negocio.xlsx' (no 01); 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'/'Cierre del Negocio' — 33/33 tareas con Responsable y Hora Límite precargados, 0 huecos (verificado celda a celda vía gates.negocio_precargado y con lectura directa openpyxl)"},
+  {"id": "DOM-07", "veredicto": "resuelto", "evidencia": "07: las tres hojas ('Por Franja Horaria' 4 secciones Apertura/Servicio Tarde/Servicio Noche/Cierre, 'Por Zona' Barra/Coctelería/Bodega/Terraza con Zona precargada, 'Por Perfil' Head Bartender/Bartender/Barback/Camarero con Responsable precargado) tienen denominador por FÓRMULA y conservan su propia geometría (4 secciones, no las 3 del representante) — MEJORA sobre la tanda 1, que ni siquiera ejecutaba diferenciar_07 en este hermano"},
+  {"id": "DOM-09", "veredicto": "NO resuelto (parcial, igual que en la tanda 1 pero por otra causa)", "evidencia": "Ver hallazgo nuevo #1: el bloque 'Se conecta con' ya NO invierte los roles en sus líneas normales (08=marco, 01=detalle, 09=caja, en ese orden — CORRECTO), pero la ÚLTIMA línea del bloque ('Estás en 08-apertura-cierre-negocio.xlsx: es una capa MÁS... el marco del día está en 01-apertura-cierre.xlsx') se autocontradice con la línea 6 y la línea 36 de la MISMA hoja, que dicen que 08 SÍ es el marco. 08-apertura-cierre-negocio.xlsx:Instrucciones:B36 vs B40."},
+  {"id": "DOM-10", "veredicto": "resuelto", "evidencia": "Fórmulas de contador en las 28 hojas: COUNTIF(...,'?*')-COUNTIF(...,'N/A'), no descuentan '—' (regla §8 vigente)"},
+  {"id": "DOM-11", "veredicto": "resuelto", "evidencia": "01:Apertura Barra filas 44-48 = 5 filas libres dentro del rango contado (B5:B48)"},
+  {"id": "DOM-21", "veredicto": "resuelto", "evidencia": "1 sola lista DV '✓,—,N/A' en 28/28 hojas de checklist, incluidas 08 y 09"},
+  {"id": "DOM-22", "veredicto": "resuelto", "evidencia": "09:Instrucciones — texto propio de caja (arqueo, recuento por denominaciones, Z del TPV), distinto del texto de 08"},
+  {"id": "DOM-23", "veredicto": "NO resuelto (mismo bug que DOM-09)", "evidencia": "01:Instrucciones:B37 y 09:Instrucciones:B50 SÍ son correctos ('el marco del día está en 08...'), porque para esos dos ficheros fname≠neg. El único caso roto es cuando fname==neg (el propio 08), que es precisamente el caso de DOM-23."},
+  {"id": "DOM-25", "veredicto": "resuelto", "evidencia": "Cabeceras 'Hora Límite'→'Cuándo'/'Día'/'Antelación' aplicadas según cadencia de cada hoja"},
+  {"id": "DOM-30", "veredicto": "resuelto", "evidencia": "bio de John Guerrero en 11/11 Instrucciones, versión '2.0 · agosto 2026' en 11/11"}
+ ],
+ "contenido_pendiente_tanda1_aplicado": [
+  {
+   "tema": "Registro de jornada del equipo",
+   "fichero": "03-tareas-manager.xlsx",
+   "aplicado": true,
+   "evidencia": "'Diario Manager'!B24 = 'Cerrar y validar el registro diario de jornada del equipo (entradas, salidas y pausas), incluidas las horas de cierre pasadas las 00:00' (Resp=Manager, Cuándo=Cierre); 'Mensual Manager'!B10 = 'Archivar los registros de jornada del mes (...4 años...)' (Resp=Manager, Cuándo=1ª semana). Bloque propio en Instrucciones también verificado."
+  },
+  {
+   "tema": "Alérgenos e intolerancias en eventos con comida",
+   "fichero": "06-eventos-festivos.xlsx",
+   "aplicado": true,
+   "evidencia": "'Maridaje Catas' fila 5 = banda '  AL CONFIRMAR LA RESERVA' con 5 tareas (fila 6 = alérgenos por escrito); 'After Work' fila 13 = 'Tener por escrito los alérgenos de los snacks y las tapas de cortesía...'"
+  },
+  {
+   "tema": "Calendario anual con menos fechas que el representante",
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "aplicado": true,
+   "evidencia": "23 fechas numeradas (filas 4-26) frente a las 17 de la tanda 1 — 6 fechas nuevas añadidas (Año Nuevo, Carnaval, 1 de mayo, Asunción/15 agosto, puente de diciembre, Nochebuena), renumeración de la columna '#' en TEXTO sin huecos ni duplicados"
+  }
+ ],
+ "hallazgos_nuevos": [
+  {
+   "severidad": "alta",
+   "donde": "scripts/productos-digitales/kit-tareas-v2_0/motor.py:2445-2450 (función _bloque_conecta) → 08-apertura-cierre-negocio.xlsx:Instrucciones:B40",
+   "hallazgo": "La frase de cierre del bloque «Se conecta con» se autocontradice DENTRO del propio fichero que el cliente imprime. En 08-apertura-cierre-negocio.xlsx:Instrucciones, la línea B6 ('Es el checklist del LOCAL COMPLETO... Úsalo como marco del día') y la línea B36 ('08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día') dicen correctamente que 08 ES el marco. Pero 4 líneas más abajo, B40 dice 'Estás en 08-apertura-cierre-negocio.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre.xlsx' — justo lo contrario. Causa raíz en motor.py:2445-2450: la rama genérica de `_bloque_conecta` calcula `marco = ' y '.join(x for x in (neg, areas) if x and x != fname)`, que EXCLUYE fname de los candidatos pero no comprueba si `fname == neg` (es decir, si el propio fichero ES el marco); en ese caso el resultado (marco=areas='01-apertura-cierre.xlsx') es la respuesta equivocada, porque el fichero que SÍ es el marco es el que se está describiendo. Ninguna de las ramas específicas (cal/brief/plant/evt/per) cubre el caso fname==neg, así que 08 cae siempre en la rama genérica rota. NO es un bug introducido por el hermano: está VIVO EN PRODUCCIÓN en el representante — verificado leyendo (solo lectura) astro-site/public/dl/kit-tareas/08-apertura-cierre-negocio.xlsx:Instrucciones, mismas líneas B36/B40 con el mismo texto contradictorio. Un cliente que lea la hoja de apertura del negocio —el fichero que más usa a diario— ve dos afirmaciones opuestas sobre cuál es el checklist maestro del local.",
+   "impacto": "Ambigüedad real de uso: el usuario no sabe si 08 o 01 es el 'marco' del día. Afecta a TODOS los kits de la familia con f_negocio detectado como el propio fname (cualquier ▸ completo con 08), no sólo a bar."
+  }
+ ],
+ "recuento_landing": {
+  "tareas_total": 342,
+  "ficheros_total": 11,
+  "metodo": "gates.recuento_tareas del informe (suma de los denominadores reales de cada hoja de checklist: 01=54,02=32,03=50,04=47,05=53,06=39,07=0(plantilla en blanco),08=33,09=23,BONUS-01=11,BONUS-02=0(no es checklist de tareas)). Verificado por suma manual = 342."
+ },
+ "bloquea_real": true,
+ "motivo_bloquea_real": "Hallazgo nuevo de severidad ALTA (autocontradicción en las Instrucciones del fichero 08, el más usado a diario) que por criterio explícito de la tarea fuerza bloquea_real=true. Nada más bloquea: exit 0, censo 0 defectos, idempotencia 0, DV única, 5/5 casos §6 OK, 0 ficheros rotos, 3/3 temas de contenido_pendiente aplicados.",
+ "notas": [
+  "REGLA TÉRMICA respetada: istats antes de cada python, rango medido 39.5-43°C durante todo el barrido, muy por debajo del umbral de 60/65°C; python en serie, sin builds ni Playwright.",
+  "astro-site/public/dl/** NO se ha tocado en ningún momento — todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD propio (propio-verificador); las únicas lecturas contra dl/ fueron de SOLO LECTURA (kit-tareas y kit-tareas-bar actuales, para contrastar el hallazgo #1 contra producción).",
+  "No se ha hecho git add/commit/stash/clean.",
+  "Esta verificación es INDEPENDIENTE: se regeneró el kit desde cero con main.py (no se reutilizó el kit-tareas-bar.json de la tanda 1 ni el motor-2.2.json del mantenedor como fuente de verdad; ambos se usaron sólo como hipótesis a contrastar, y en el caso de DOM-06/DOM-09/DOM-23 el resultado propio difiere en detalle del resumen del mantenedor — éste no bajó al nivel de la línea B40).",
+  "El módulo contenido_kit_tareas_bar.py es coherente con el sector: excluye deliberadamente anisakis/gas/aceite de freidora (no aplican a un bar de cócteles) y traduce los riesgos reales (hielo/cítricos manipulados a mano, alérgenos de la carta de cócteles: almendra del orgeat, clara de huevo del sour, lácteos del flip, sulfitos de vinos/vermuts) — no se han encontrado textos fuera de sector, tareas duplicadas entre ficheros (verificado que 01 no repite TPV/alarma, que sí están sólo en 08/09) ni horas incoherentes (09 empieza 15:45, después del ancla 15:30 de apertura del local en 08, escalonada como manda §8/DOM-R2-08)."
+ ]
+}

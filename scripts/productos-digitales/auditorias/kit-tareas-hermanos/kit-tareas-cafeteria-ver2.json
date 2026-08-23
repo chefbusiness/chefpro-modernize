@@ -1,0 +1,113 @@
+{
+ "rol": "verificador independiente · kit-tareas-cafeteria · tanda 3 (motor 2.2)",
+ "pid": "kit-tareas-cafeteria",
+ "fecha": "2026-08-23",
+ "fuente": "astro-site/public/dl/kit-tareas-cafeteria (LEÍDO, no tocado) → copia scratchpad vía CLAUDE_SCRATCHPAD",
+ "modo": "SOLO --dry-run, dos ejecuciones INDEPENDIENTES de main.py --producto kit-tareas-cafeteria (motor 2.2 + contenido_kit_tareas_cafeteria.py), sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean",
+
+ "resultado_1_dryrun": {
+  "exit": 0,
+  "censo_fail_exit": 0,
+  "idempotencia_interna_1a_vs_2a_pasada": 0,
+  "segunda_ejecucion_independiente": {
+   "descripcion": "corrida 2 desde CERO (CLAUDE_SCRATCHPAD distinto: propio-verificador2b), comparando cada celda de los 11 xlsx contra la corrida 1 (propio-verificador2)",
+   "diffs_shasum": "las 11 shasum difieren (metadata/timestamp interno de openpyxl en el zip, docProps)",
+   "diffs_celda_a_celda_todas_las_hojas": 0,
+   "veredicto": "reproducible; el motor es determinista a nivel de contenido"
+  },
+  "inject_cache": "143 fórmulas con valor, 0 fallos pycel (ambas corridas)",
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "hojas_checklist_con_dv": 33,
+  "dv_incorrectas": [],
+  "instrucciones_con_bio": "11/11, 0 sin_bio, 0 version_desfasada",
+  "ficheros_todos_abren_sin_roturas": true,
+  "bad_values_ref_name": 0,
+  "recuento_tareas_total": 500,
+  "recuento_por_fichero": {
+   "01-apertura-cierre.xlsx": 130, "02-partidas-cocina.xlsx": 53,
+   "03-tareas-manager.xlsx": 69, "04-tareas-perfiles.xlsx": 75,
+   "05-tareas-semanales-mensuales.xlsx": 62, "06-eventos-festivos.xlsx": 57,
+   "07-plantilla-personalizable.xlsx": 0, "08-apertura-cierre-negocio.xlsx": 31,
+   "09-apertura-cierre-caja.xlsx": 23, "BONUS-01": 0, "BONUS-02": 0
+  }
+ },
+
+ "casos_6": [
+  {"caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → 0", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel, dos corridas)"},
+  {"caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10, CF ámbar", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel, dos corridas)"},
+  {"caso": "Contador con N/A: 25 tareas, 3 N/A, 22 ✓ → «22 de 22»", "ok": true, "ref": "01-apertura-cierre.xlsx:Apertura Barra Café:D40/F40 (pycel, dos corridas)"},
+  {"caso": "07 plantilla personalizable: denominador por fórmula, 8 tareas escritas → «8»", "ok": true, "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 (pycel, dos corridas); ninguna de las tres hojas lleva placeholder en la columna «Tarea» (verificado a mano: fila 5 col2='  APERTURA — escribe aquí abajo tus tareas de esta franja', no en la fila de dato)"},
+  {"caso": "08 precargado: ninguna tarea sin Responsable/Hora", "ok": true, "ref": "gate negocio_precargado: 31 tareas, huecos=[]; verificado a mano 08-apertura-cierre-negocio.xlsx Apertura/Cierre del Negocio, Responsable=Encargado/Último en salir en las 31 filas, horas 06:45→07:15 DESPUÉS de desactivar la alarma"},
+  {"caso": "Bio en todas las Instrucciones", "ok": true, "ref": "gate dv_y_bio: instrucciones_con_bio=11, sin_bio=[]; verificado a mano 01-apertura-cierre.xlsx:Instrucciones fila 30 «Diseñado por John Guerrero…» y versión «2.0 · agosto 2026»"}
+ ],
+ "casos6_ok": 6,
+ "casos6_total": 6,
+
+ "motor_ids_r1_verificados": [
+  {"id": "DOM-01", "veredicto": "resuelto", "ref": "09:Cierre de Caja C48/C49/C52/C54, texto B10 coincide con la fórmula"},
+  {"id": "DOM-03", "veredicto": "resuelto", "ref": "09:Cierre de Caja fila 41 = «0,02 €», C43=SUM(C27:C42)"},
+  {"id": "DOM-04", "veredicto": "resuelto", "ref": "09:Registro Mensual col G4=«Z del TPV», H4=«Descuadre»=IFERROR(F-G,0), TOTALES H36=SUMIF(>0)-SUMIF(<0)"},
+  {"id": "DOM-05", "veredicto": "resuelto", "ref": "09:Apertura de Caja C23 celda verde del fondo, tarea B7 apunta a ella sin hardcodear coordenada"},
+  {"id": "DOM-06", "veredicto": "resuelto", "ref": "08: 31 tareas, 0 huecos de Responsable/Hora"},
+  {"id": "DOM-07", "veredicto": "resuelto", "ref": "07: denominador por fórmula (F31=8 con 8 tareas), tres hojas diferenciadas (Franja/Área/Perfil) con secciones y precargas propias"},
+  {"id": "DOM-09", "veredicto": "parcial (SIN CAMBIO respecto a tanda 1, por decisión de diseño documentada)", "ref": "gate bandas_solapadas: 3 bandas con solape 25-40% en Cierre Sala/Apertura Sala, ninguna anotada (umbral 80% de anotar_duplicados no se toca por decisión (f) del mantenedor). El bloque «Se conecta con» SÍ está en las 11 Instrucciones, pero la remisión NO está en banda de sección dentro de los checklists de 01 — sigue siendo un matiz de forma, no bloquea"},
+  {"id": "DOM-10", "veredicto": "resuelto", "ref": "01:Instrucciones fila 7 «N/A sale del total; «—» sigue contando como pendiente»; caso contador-honesto 22 de 22 con 3 N/A"},
+  {"id": "DOM-11", "veredicto": "resuelto", "ref": "+5 filas libres dentro del rango contado en las 33 hojas de checklist (cambios del run)"},
+  {"id": "DOM-21", "veredicto": "resuelto", "ref": "DV unificada única «✓,—,N/A» en 33 hojas, verde E8F5E9 en celdas editables, 0 dv_incorrectas"},
+  {"id": "DOM-22", "veredicto": "resuelto", "ref": "09:Instrucciones contenido propio de caja (arqueo, denominaciones, Z del TPV, Registro Mensual), ya no copia-pega de 08"},
+  {"id": "DOM-23", "veredicto": "resuelto", "ref": "bloque «Se conecta con» presente en las 11 Instrucciones (verificado a mano en 01, contenido correcto: 08=marco, 01=detalle, 09=caja)"},
+  {"id": "DOM-25", "veredicto": "resuelto", "ref": "cabeceras diferenciadas: 03 Semanal→«Día», Mensual→«Cadencia»; 06 San Valentín→«Antelación», Brunch/Navidad/Terraza→«Cuándo»; 02/09→«Cuándo»"},
+  {"id": "DOM-30", "veredicto": "resuelto", "ref": "gate: instrucciones_con_bio=11/11, sin_bio=[]"}
+ ],
+ "motor_no_resueltos": ["DOM-09 (parcial, decisión de diseño ya documentada en motor-2.2.json — no es una regresión de esta tanda ni bloquea)"],
+
+ "contenido_pendiente_tanda1": [
+  {"tema": "orden del gas", "estado": "aplicado", "evidencia": "01-apertura-cierre.xlsx:Apertura Cocina fila 12 campana, fila 13 comprobación de gas, fila 14 horno — orden seguro"},
+  {"tema": "aceite en frío (freidora)", "estado": "aplicado", "evidencia": "01-apertura-cierre.xlsx:Cierre Cocina fila 16 «manipular el aceite SÓLO por debajo de 40 °C»"},
+  {"tema": "registro de jornada", "estado": "aplicado", "evidencia": "03-tareas-manager.xlsx:Diario Manager fila 28 «Cerrar y validar el registro diario de jornada…»; Mensual Manager fila 15 «Archivar los registros de jornada del mes»"},
+  {"tema": "mermas", "estado": "aplicado", "evidencia": "02-partidas-cocina.xlsx:Calientes fila 10, Fríos fila 23, Pastelería Vitrina fila 26 (las tres hojas)"},
+  {"tema": "alérgenos en eventos", "estado": "aplicado", "evidencia": "06-eventos-festivos.xlsx:San Valentín fila 10, Brunch Dominical fila 7 — alérgenos POR ESCRITO al confirmar"},
+  {"tema": "vida útil de congelación", "estado": "aplicado", "evidencia": "05-tareas-semanales-mensuales.xlsx:FIFO Semanal fila 23 (texto) + tabla nueva filas 34-43 (8 familias), verde y editable"},
+  {"tema": "anisakis / pescado listo para consumo", "estado": "aplicado", "evidencia": "02-partidas-cocina.xlsx:Calientes fila 9, texto con ANISAKIS en mayúsculas y Rgto. CE 853/2004"},
+  {"tema": "fechas del calendario", "estado": "aplicado", "evidencia": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual filas 9,12,18,21,23 (5 fechas nuevas) + fila 5 (1 Ene reescrito); calendario pasa de 17 a 22 fechas"}
+ ],
+ "contenido_no_aplicado": [],
+
+ "hallazgos_nuevos": [
+  {
+   "severidad": "media",
+   "donde": "01-apertura-cierre.xlsx:Apertura Barra Café!B6/E6 (06:45, «Encender máquina de espresso»); 08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B20/D20 (07:15, «Encender máquinas de café y molinillo»); 09-apertura-cierre-caja.xlsx:Apertura de Caja!B9/D9 (07:15, «Encender TPV / POS»); 08-apertura-cierre-negocio.xlsx!B10/D10 (06:45, «Encender TPV / POS / datáfono»); 01-apertura-cierre.xlsx:Cierre Barra Café!B6-B11 (backflush completo + apagar máquina) vs 08!Cierre del Negocio!B18 («Purgar y limpiar grupo de café», Último en salir); y 01-apertura-cierre.xlsx:Instrucciones!B25 dice «No se duplican: cada uno cubre un nivel»",
+   "hallazgo": "El TPV/datáfono y la máquina de espresso se encienden DOS VECES con el mismo verbo «Encender» en ficheros distintos y a horas distintas que no cuadran entre sí: el TPV a las 06:45 en 08 y otra vez a las 07:15 en 09 (30 min después); la máquina de espresso ya arranca su rutina completa a las 06:45 en 01 (Barista) y 08 vuelve a mandar «encenderla» a las 07:15, cuando el barista ya lleva media hora trabajando con ella. En el cierre pasa lo mismo al revés: 01 ya hace el backflush completo y apaga la máquina (Barista), y 08 manda a «Último en salir» purgar y limpiar el grupo de café otra vez. Es la misma familia de problema que DOM-09 (solape 08↔01/09), con instancias concretas que no estaban citadas en la verificación de la tanda 1 (que sólo citaba el TPV como «verificar» vs «encender», no como «encender» dos veces con horas distintas), y contradice literalmente la línea de Instrucciones que dice «No se duplican». Confundir a un encargado nuevo sobre si el TPV ya está encendido o no, o si hay que volver a purgar la máquina que el barista acaba de limpiar, es el tipo de fricción real que el kit dice resolver."
+  },
+  {
+   "severidad": "baja",
+   "donde": "BONUS-01-briefing-servicio.xlsx:Briefing!B2 («Turno: ☐ Comida ☐ Cena»); 06-eventos-festivos.xlsx:Navidad!B2 («Turno: ☐ Mañana ☐ Tarde ☐ Noche»)",
+   "hallazgo": "Estos dos campos de turno incluyen «Cena»/«Noche», pero el resto del kit (01, 08, 09, y todos los horarios de las hojas operativas) describe una cafetería/brunch que abre ~06:45 y cierra ~17:00-17:30, sin servicio de noche en ningún otro fichero. Son restos de una plantilla genérica de restaurante no adaptados al perfil de este kit (BONUS-01 no está en el alcance de `contenido_kit_tareas_cafeteria.py`); un encargado que rellene el briefing o la hoja de Navidad se encuentra una opción que su negocio nunca usa."
+  }
+ ],
+
+ "tareas_total": 500,
+ "ficheros_total": 11,
+ "bloquea_real": false,
+
+ "verificaciones_directas_celda": [
+  "01!Apertura Cocina filas 6-10: bloque HIGIENE PERSONAL al inicio",
+  "01!Apertura Cocina fila 13: comprobación de gas entre campana (12) y horno (14)",
+  "01!Cierre Cocina fila 16: aceite <40°C",
+  "02!Calientes fila 9: anisakis salmón ahumado",
+  "02!Fríos fila 23 y 02!Calientes fila 10: mermas del turno",
+  "02!Pastelería Vitrina fila 26: merma ampliada 1:1",
+  "03!Diario Manager fila 28 y Mensual Manager fila 15: jornada",
+  "05!FIFO Semanal filas 34-43: tabla vida útil (8 familias) + fila 23 texto",
+  "05!Trimestral y Anual: hoja nueva completa (15 tareas en 4 bloques), DV «✓,—,N/A» en F6:F28, Nº de parte verde/desbloqueado",
+  "BONUS-02!Calendario Anual filas 5,9,12,18,21,23: decisión 1-Ene + 5 fechas nuevas (22 fechas totales)"
+ ],
+
+ "notas": [
+  "istats antes de cada arranque: 42.2-45.8 °C durante todo el trabajo, muy por debajo de 65 °C; python en serie, nunca dos a la vez; sin builds ni Playwright.",
+  "REGLAS DURAS respetadas: astro-site/public/dl/** no se ha tocado en ningún momento (confirmado con `git status --short` al cierre, diff vacío); todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD propio; sin KIT_TAREAS_APPLY; sin git add/commit/stash/clean; kit-tareas (representante) no se ha regenerado, sólo se leyeron sus fuentes de referencia (SPEC, R1, verif tanda1, motor-2.2.json).",
+  "Los 04-tareas-perfiles.xlsx y el resto de hojas de 01/02/03/06 no citadas en `contenido_kit_tareas_cafeteria.py` (roles, servicio, limpieza) se revisaron como jefe de cocina y encajan bien en el perfil cafetería/brunch: sin mezclas de sector, sin anacronismos de carta.",
+  "gates.recuento_tareas para 07 = 0 porque son plantillas en blanco (nada que contar hasta que el cliente escriba); es coherente con que la SPEC diferencie el 07 del resto y no es un defecto.",
+  "El hallazgo DOM-09/duplicados no se marca alto ni bloquea_real: no rompe ninguna fórmula, no afecta a los casos de §6, y es el mismo patrón ya documentado y aceptado por decisión (f) del mantenedor (umbral 80% de anotar_duplicados); aquí se aporta evidencia nueva y más concreta (TPV/espresso/backflush) para cuando se revise ese umbral."
+ ]
+}
