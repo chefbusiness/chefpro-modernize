@@ -150,3 +150,32 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
 - **Hermanos**: tanda en curso al cerrar (`kit-tareas-hermanos`: motor en dry-run sobre los 10 kits,
   verificador sonnet por kit, crítico opus) → ejecución real por kit + mini-ronda de contenido donde
   el crítico la pida.
+
+## 8. CIERRE DE SESIÓN (23-ago, ~01:20) — cómo retomar mañana
+
+**Estado:** Fase A + Escandallos v2.0 + APPCC v2.0 + Kit de Tareas v2.0 LIVE y verificados. Hermanos «▸»:
+tanda 1 verificada (informes en `auditorias/kit-tareas-hermanos/`, crítico con 3 bloqueos del motor);
+tanda 2 en curso al cerrar (workflow `kit-tareas-hermanos-2`, run `wf_954d79a7-6ac`): **motor 2.1
+hecho** (negocio detectado por estructura, gate estricto, DV+contador normalizados en TODO el kit,
+alturas idempotentes) y módulos de contenido de cafetería, pizzería, hamburguesería y dark-kitchen
+escritos (`kit-tareas-v2_0/contenido_*.py`, commit WIP `e38bb62`). Faltan: contenido de bar,
+catering, chocolatería, heladería, hotel y restaurante-creativo; verificación sonnet por kit; crítico.
+**Producción NO se ha tocado** en ninguno de los 10 hermanos (todo en dry-run).
+
+**Para retomar:**
+1. `git log --oneline -5` y `git status` (si el workflow siguió corriendo tras cerrar, puede haber
+   módulos nuevos sin commitear en `kit-tareas-v2_0/`: revisarlos, no pisarlos).
+2. Relanzar la tanda 2 SOLO para lo que falte (el `resumeFromRunId` es de la misma sesión y ya no
+   vale): script en `~/.claude/projects/…/workflows/scripts/kit-tareas-hermanos-2-wf_954d79a7-6ac.js`
+   — quitar de `HERMANOS` los kits cuyo `contenido_<pid>.py` exista y pase `--dry-run` exit 0, y
+   correr Contenido → Verificar → Crítico. Decisiones ya tomadas en el prompt `DECISIONES` (a)-(h).
+3. Con el crítico en verde, por kit: `KIT_TAREAS_APPLY=1 CLAUDE_SCRATCHPAD=<scratch> python3
+   scripts/productos-digitales/kit-tareas-v2_0/main.py --producto <pid>` → censo `--fail` → gate
+   offline → commit → push → gate LIVE. Aplicar también al representante `kit-tareas` lo que el
+   motor 2.1 haya cambiado (`afecta_al_representante` del informe del motor: al menos el mensaje de
+   error de la DV).
+4. Después: inventario / gestión-personal / plan-financiero (R1 opus con
+   `auditoria-entregables-workflow.js` + `r1-desde-journal.py`), guías, planes, eBook.
+
+**Regla térmica:** los workflows de hermanos van de 2 en 2 a propósito (pico de la sesión 61 °C con 3
+opus en paralelo abriendo libros). Mantenerlo.
