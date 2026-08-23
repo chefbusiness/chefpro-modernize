@@ -179,3 +179,60 @@ catering, chocolatería, heladería, hotel y restaurante-creativo; verificación
 
 **Regla térmica:** los workflows de hermanos van de 2 en 2 a propósito (pico de la sesión 61 °C con 3
 opus en paralelo abriendo libros). Mantenerlo.
+
+## 9. SESIÓN 23-ago (10:30 → tarde) — los 10 hermanos «▸» + representante en v2.0 LIVE
+
+**Resultado:** la familia «Kit de Tareas» completa (11 kits: representante + 10 hermanos) está en **v2.0 en producción**,
+con gate LIVE **44 · 650 · 0 fallos** (`auditorias/kit-tareas-hermanos/gate-live-2026-08-23.json`) y producción = repo
+byte a byte (09 del representante, 01 de hotel, 07 de bar comprobados con `cmp`). Commits `187a32d` → `6925a78`.
+
+**Lo que pasó al retomar (no repetir):** el Mac se apagó a las 03:25 con la tanda 2 corriendo y se perdieron los 4 módulos
+escritos después del último commit (bar, catering, heladería, chocolatería). Se **recuperaron byte a byte desde los
+transcripts** (`agent-*.jsonl` del workflow: reproducir Write/Edit/heredocs en orden) — memoria
+`feedback_commitear-wip-de-subagentes-y-recuperar-desde-transcripts.md`. Desde entonces: commit WIP entre fases, informes
+de verificación SIEMPRE en `auditorias/` (repo), nunca en el scratchpad. `photoanalysisd` al 150 % tras arrancar
+(66 °C): SIP impide `bootout`, `pkill -STOP photoanalysisd` lo congela (`-CONT` para reanudar).
+
+**Tandas (scripts en `scripts/productos-digitales/kit-tareas-hermanos-{3,4,5}-workflow.js`, informes en
+`auditorias/kit-tareas-hermanos/`):**
+- Tanda 3 → motor 2.2 (sinónimos de hojas del 07, bio/versión en todo fichero con Instrucciones, demo pycel del contador
+  P4) + contenido hotel y restaurante-creativo + `*-ver2.json` + `critico-2.json`: 0 listos, T-01 (el 08 se
+  contradecía sobre cuál es el marco) VIVO en producción.
+- Tanda 4 → motor 2.3 (T-01, T-02 TPV «Comprobar…» en caja, T-03 recuento ▸+P4, T-04 paréntesis de áreas derivado,
+  T-05, T-08 frase honesta) + 6 fixes de contenido + `*-ver3.json` (representante incluido en dry-run) + `critico-3.json`:
+  9 listos a falta de firmar (d)/(e).
+- Tanda 5 → motor 2.4 (frase de niveles condicionada a `f_areas`, dedupe sin nº de fila, **digest con mensajes de DV
+  y locked de todas las celdas**) + SPEC §9 + mini-ronda (dark-kitchen delivery, heladería vitrina, catering/chocolatería
+  vocabulario del 08, restaurante-creativo plantillas A/B/C diferenciadas) + `*-ver4.json` + `kit-tareas-diff-firmado.json`
+  (177 = 26 valor + 33 DV + 26 alturas + 92 locked) + `critico-4.json`: **11/11 listos**.
+- Ejecución real en serie (canario hamburguesería → cafetería, pizzería, bar, dark-kitchen → catering, chocolatería,
+  heladería, hotel, restaurante-creativo → representante el último). Cada kit: `main.py` con `KIT_TAREAS_APPLY=1`
+  (idempotencia 0, cache, §6, DV, bio, censo) + `gate-flujo-postpago.py --offline`. Informes `*-real.json`. El diff real
+  del representante contra producción dio **exactamente 177** en las 4 categorías firmadas.
+- Capa de producto (`kit-tareas-capa-producto-workflow.js`, sonnet por kit + refutador opus): landings con cifras
+  reales, tarjetas 08/09 que faltaban en 5 landings, hotel 19 ficheros / 53 checklists / 636 tareas, BONUS-02 como
+  calendario MENSUAL en chocolatería/heladería/restaurante-creativo, changelog 2.0 por kit, email post-pago «(v2.0)»,
+  tildes y eñes restauradas en dark-kitchen y restaurante-creativo (sus `.ts` llevaban nota «verbatim, no corregir»:
+  desobedecida a conciencia por la regla capital de ortografía; la fuente SPA `src/components/kit-tareas-dark-kitchen/*`
+  sigue sin tildes, no se usa en la landing Astro).
+
+**Cifras firmadas (tareas · tareas del 01 · hojas checklist · ficheros · BONUS-02):** cafetería 500·130·33·11·22 ·
+pizzería 373·76·31·11·22 · hamburguesería 346·72·31·11·22 · dark-kitchen 331·55·28·11·22 · bar 342·54·28·11·23 ·
+catering 346·38·22·11·22 · chocolatería 338·41·24·11·12 meses · heladería 298·43·25·11·12 meses · hotel 636·64·53·19·24 ·
+restaurante-creativo 477·55·34·13·12 meses · representante 491·111·33·11·22.
+
+**Pendiente (documentado, no bloqueante):**
+1. **Metadato `subject` en v1.1 en 26 xlsx antiguos de los 5 kits P4** (hotel 17, catering/chocolatería/heladería/
+   restaurante-creativo 9 cada uno): el motor no toca metadata fuera del molde ▸. Arreglo = `normalizar_p4` (o
+   `motor.cerrar`) fija `wb.properties.subject/title` + re-run real de esos 5 kits + gate. ~30 min.
+2. SPEC §9.5 «caja fuera del 09» (hamburguesería 01/04, pizzería 01, restaurante-creativo 01, heladería 01!B36): criterio
+   T-02 (reescribir con remisión), cuando se aborde.
+3. `UMBRAL_BANDA` 0,8 y T-06 (BONUS sin protección en catering/hotel/chocolatería): decisiones abiertas, sin acción.
+4. **Decisión de PRODUCTO para John — catering:** su 09 modela cobro en mostrador (fondo, cambio, Z por turno); una
+   empresa de catering factura por evento y por transferencia. No es copy: es el papel del fichero.
+5. `casos_6` con denominadores distintos entre verificadores (métrica, no fondo).
+6. Landings: la comparación «Trail» no se generalizó en los hermanos (solo en el representante) — pedirlo si se quiere.
+
+**Siguiente familia (orden del plan §4):** inventario / gestión-personal / plan-financiero con
+`auditoria-entregables-workflow.js` (añadir schema) + `r1-desde-journal.py`; después guías, planes, hotel completo, eBook.
+Homologación AICP↔CB sigue pendiente (los 11 kits v2.0 deben llegar a CB).
