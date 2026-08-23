@@ -11,6 +11,13 @@ errata «manteccar»/«Manteccar» (doble C, severidad media) que corrige
 `_arreglar_erratas` — sustitución por REGEX en CUALQUIER celda, no por ancla,
 porque la errata puede repetirse con distinta redacción alrededor.
 
+`kit-tareas-heladeria-ver3.json` (tanda 4, campo `hallazgos_nuevos`) añade dos
+más, los dos en 08 y ya resueltos aquí: la MISMA lectura de la vitrina pedida
+DOS VECES (01!«Apertura»!B16 y 08!«Apertura del Negocio»!B20-B21, con dos
+huecos «____ °C» separados — severidad media) y la zona «Recepción» de la
+tarea del sistema de reservas / tablet de pedidos (08!C11), que no encaja en
+una heladería de mostrador directo (severidad baja).
+
 `main.py` lo carga sólo con `--producto kit-tareas-heladeria` (compone el nombre
 del módulo con el pid: `contenido_` + pid con guiones bajos), así que aquí se
 puede hablar de «Mantecación», «Catering Eventos» o «Gestión Semanal» por su
@@ -1022,15 +1029,22 @@ def _f06(wb, cambios):
 #: («modo conservación -18°C»), así que el libro se contradecía a sí mismo y un
 #: empleado que siguiera 08 habría registrado como correcta una lectura que
 #: significa que ha perdido la vitrina entera.
+#: HALLAZGO MEDIA de `kit-tareas-heladeria-ver3.json` (§`hallazgos_nuevos`,
+#: sin resolver hasta esta versión) — 01!«Apertura»!B16 y estas dos tareas de
+#: 08 pedían la MISMA lectura de la MISMA vitrina en el mismo turno con DOS
+#: huecos «____ °C» separados: uno en el detalle por ÁREA (01) y otro en el
+#: checklist del LOCAL (08). El valor objetivo coincidía en los dos —no había
+#: contradicción de dato, sólo trabajo duplicado—, así que la lectura se deja
+#: SOLO en 01 (que es el detalle, §2.5 de la SPEC) y 08 pasa a ser el HITO sin
+#: hueco, con referencia explícita al fichero que sí lleva la casilla.
 NEG_VITRINAS_VIEJO = 'Comprobar temperaturas de todas las vitrinas'
-NEG_VITRINAS = ('Comprobar la temperatura de todas las vitrinas de exposición '
-                'de helado (servicio −14 a −12 °C; por la noche, conservación '
-                '−18 °C) — anota la lectura: ____ °C')
+NEG_VITRINAS = ('Vitrinas de helado en temperatura (−12/−14 °C; lectura '
+                'anotada en 01-apertura-cierre)')
 
 NEG_ENCENDER_VIEJO = 'Encender vitrinas/mantecadoras'
-NEG_ENCENDER = ('Pasar las vitrinas de exposición de conservación nocturna a '
-                'modo servicio y encender las mantecadoras: con género dentro '
-                'la vitrina NO se apaga por la noche')
+NEG_ENCENDER = ('Vitrinas de helado en modo servicio y mantecadoras '
+                'encendidas (con género dentro no se apagan por la noche; '
+                'detalle en 01-apertura-cierre)')
 
 #: HALLAZGO MEDIA del verif.json — «Registrar temperaturas de cierre» no lleva
 #: ni objetivo ni hueco de lectura porque no nombra ningún equipo y el patrón
@@ -1040,6 +1054,30 @@ NEG_CIERRE_VIEJO = 'Registrar temperaturas de cierre'
 NEG_CIERRE = ('Registrar las temperaturas de cierre: vitrinas de exposición ya '
               'en modo conservación (−18 °C) y cámaras (≤ −18 °C) — anota la '
               'lectura: ____ °C')
+
+
+def _zona_08(ws, tarea, zona_vieja, zona_nueva, cambios, motivo):
+    """Sustitución 1:1 de la Zona (col. 3) de una tarea del molde ▸.
+
+    Ancla por el TEXTO de la tarea (col. 2, con `_estable`), nunca por número
+    de fila. Sólo cambia el VALOR de la celda — nunca su relleno ni su
+    estilo, que ya trae el generador base — igual que `_sustituir` con el
+    texto. Idempotente: si `zona_nueva` ya está puesta, no hace nada.
+    """
+    r = _fila(ws, tarea, col=2, norm=_estable)
+    if r is None:
+        raise AnclaPerdida(f'«{ws.title}»: no encuentro la tarea «{tarea}» '
+                           '(kit-tareas-heladeria, zona)')
+    actual = ws.cell(row=r, column=3).value
+    if actual == zona_nueva:
+        return False                                   # ya aplicado
+    if actual != zona_vieja:
+        raise AnclaPerdida(f'«{ws.title}»: la fila de «{tarea}» tiene Zona '
+                           f'«{actual}», esperaba «{zona_vieja}»')
+    ws.cell(row=r, column=3).value = zona_nueva
+    cambios.append(f'«{ws.title}»: Zona de «{tarea}» «{zona_vieja}» → '
+                   f'«{zona_nueva}» — {motivo}')
+    return True
 
 
 def _f08(wb, cambios):
@@ -1054,15 +1092,25 @@ def _f08(wb, cambios):
     ws = wb['Apertura del Negocio']
     if _sustituir(ws, NEG_ENCENDER_VIEJO, NEG_ENCENDER, norm=_estable):
         cambios.append('«Apertura del Negocio»: la vitrina de helado no se '
-                       'enciende, se pasa de conservación a servicio — DOM-24 '
-                       '(equivalente)')
+                       'enciende, se pasa de conservación a servicio, y el '
+                       'texto queda como HITO (sin repetir el detalle de 01) '
+                       '— DOM-24 (equivalente)')
     if _sustituir(ws, NEG_VITRINAS_VIEJO, NEG_VITRINAS, norm=_estable):
         cambios.append('«Apertura del Negocio»: temperatura de vitrina de '
-                       'EXPOSICIÓN DE HELADO (−14 a −12 °C en servicio, '
-                       '−18 °C de noche) en lugar del «0-4 °C» genérico que '
-                       'inyectó el motor, que contradecía al propio 01 y daba '
-                       'por buena una lectura de vitrina perdida — hallazgo '
-                       'ALTA de la verificación')
+                       'EXPOSICIÓN DE HELADO (−14/−12 °C) en lugar del «0-4 '
+                       '°C» genérico que inyectó el motor, que contradecía al '
+                       'propio 01 y daba por buena una lectura de vitrina '
+                       'perdida (hallazgo ALTA de kit-tareas-heladeria-ver3.'
+                       'json). El hueco «____ °C» se retira de AQUÍ: 01 y 08 '
+                       'pedían anotar la MISMA lectura dos veces, y la '
+                       'casilla se deja SOLO en 01, que es el detalle por '
+                       'ÁREA — hallazgo MEDIA de la misma verificación')
+    if _zona_08(ws, 'Encender sistema de reservas / tablet de pedidos',
+                'Recepción', 'Mostrador', cambios,
+                'una heladería de mostrador directo no tiene una zona de '
+                '«Recepción» separada del propio mostrador de venta — '
+                'hallazgo BAJA de kit-tareas-heladeria-ver3.json'):
+        pass
     motor.autoaltos(ws, cambios)
 
     ws = wb['Cierre del Negocio']

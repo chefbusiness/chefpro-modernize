@@ -83,6 +83,42 @@ QUÉ NO SE HA APLICADO (y por qué), del §3 del representante
     lo dice explícitamente y reserva la congelación para el granel de ganache.
   · **07 diferenciado** (§2.3): es MOTOR (`motor.diferenciar_07`), y en este kit
     el 07 es molde P4, fuera de su alcance. No se toca desde contenido.
+
+BARRIDO DE VOCABULARIO DE SALA EN 08/09 (tanda 5)
+================================================================================
+`…-ver3.json` señaló como BAJA que el 08 —el único fichero del kit con el molde
+genérico de los 12 hermanos— seguía hablando como un restaurante con comedor.
+Barridos los dos ficheros del molde ▸ y sus «Instrucciones» con «carta»,
+«pizarra», «menú», «mesa» y «comensal», el censo son SEIS celdas, todas en
+`08:'Apertura del Negocio'` menos la última:
+
+  · B9 «pizarra de menú», B11 «sistema de reservas», B13 «reservas del día»,
+    B16 «(sillas, mesas, iluminación)» y B18 «las cartas/menús» → reescritas
+    1:1 (constantes `SENALIZACION`, `VITRINA_ENCENDER`, `ENCARGOS_08`,
+    `MOBILIARIO` y `VITRINA_ETIQUETAS`).
+  · B17 «Montar terraza si aplica (mesas, sillas, sombrillas/estufas)» → **SE
+    QUEDA**, justificada: es la única de las seis que va CONDICIONADA («si
+    aplica»), describe una terraza —donde sí hay mesas y sillas— y tiene
+    pareja en el cierre (`'Cierre del Negocio'!B7`, «Limpiar y recoger terraza
+    si aplica»). Una chocolatería con degustación es un caso real del oficio y
+    reescribirla le quitaría al cliente una tarea que puede necesitar; lo que
+    no era honesto es afirmar sillas y mesas como el mobiliario del local, que
+    es lo que decía B16 sin condicionar. Es además el caso que `critico-2.json`
+    tiene abierto como DECISIÓN DEL ORQUESTADOR para toda la familia.
+  · Ni «comensal» ni «menú» aparecen en 09, y las «Instrucciones» de 08 y 09
+    —que reescribe entera `motor.reescribir_instrucciones`— no contienen
+    ninguno de los cinco términos.
+
+FUERA DE ESTE BARRIDO, PERO MEDIDO (para el orquestador)
+================================================================================
+El mismo vocabulario sobrevive en dos celdas de los ficheros P4, que el encargo
+de esta tanda no incluía: `01-apertura-cierre.xlsx:'Apertura'!B21` («Colocar
+pizarra con novedades y productos destacados» — defendible: es una pizarra de
+NOVEDADES dentro de la tienda, no una carta) y
+`03-tareas-manager.xlsx:'Mensual'!B20` («Actualizar carta y etiquetado si hay
+cambios» — aquí «carta» sí es el término del restaurante; en una bombonería lo
+que se actualiza es el SURTIDO). No se tocan sin encargo: quedan citadas para
+que el orquestador decida.
 """
 import copy
 
@@ -1426,8 +1462,18 @@ def _bonus02(wb, cambios):
 #: Hallazgo «Vitrinas temperadas sin objetivo» (media) — «Encender vitrinas
 #: temperadas» es una tarea de interruptor. Lo que hay que comprobar antes de
 #: montar el género es que la vitrina HA ALCANZADO su rango.
-VITRINA_08 = ('Encender las vitrinas temperadas y comprobar que alcanzan '
-              '16-18 °C antes de montar el género — anota la lectura: ____ °C')
+#:
+#: Desde la tanda 5 la tarea se parte en dos porque las dos mitades caen en
+#: momentos distintos de la mañana y el molde ya trae DOS filas para ellas: se
+#: ENCIENDE al entrar (B11, hora precargada temprana) y se COMPRUEBA justo
+#: antes de montar el género (B20, hora precargada tarde). Tal y como estaba,
+#: la única fila que hablaba de vitrinas era la 20 y mandaba encenderlas y
+#: comprobar su rango en el mismo gesto: o se enciende tarde o se comprueba un
+#: equipo que lleva dos minutos en marcha. La humedad entra aquí y no en la de
+#: encendido porque es lo que se mide sobre la vitrina YA en régimen.
+VITRINA_08 = ('Comprobar que las vitrinas temperadas han alcanzado 16-18 °C y '
+              'menos del 55 % de humedad antes de montar el género — anota la '
+              'lectura: ____ °C')
 #: Hallazgo «Temperatura de cierre del obrador sin objetivo ni hueco de
 #: lectura» (media) — la tarea de apertura sí llevaba el rango (18-20 °C) y la
 #: de cierre no llevaba nada: se pedía un registro sin decir contra qué se
@@ -1438,6 +1484,117 @@ OBRADOR_APERTURA = ('Verificar la temperatura y la humedad del obrador: '
                     'objetivo 18-20 °C y 50-60 % — anota la lectura: ____ °C')
 VITRINA_CIERRE = ('Apagar las vitrinas temperadas una vez retirado el género a '
                   'la cámara de conservación')
+
+# --------------------------------------------------------------------------
+# Vocabulario de restaurante con sala en el 08 (hallazgo BAJA de
+# kit-tareas-chocolateria-ver3.json, y el mismo patrón que critico-2.json tiene
+# abierto para toda la familia)
+# --------------------------------------------------------------------------
+# El 08 es el ÚNICO fichero del kit escrito con el molde genérico de los 12
+# hermanos, y por eso conservaba el vocabulario de un restaurante con comedor
+# abierto: «pizarra de menú» (B9), «sistema de reservas» (B11), «reservas del
+# día» (B13), «mobiliario (sillas, mesas…)» (B16) y «cartas/menús» (B18). Una
+# bombonería de mostrador no tiene carta que repasar ni reservas que confirmar:
+# lo que tiene es una VITRINA que hay que enfriar, montar, etiquetar y reponer,
+# unas CAJAS de regalo con las que se estucha y unos ENCARGOS que alguien viene
+# a recoger a una hora.
+#
+# Todo son sustituciones 1:1: mismo número de filas, ni una fila nueva. Las
+# columnas D («Responsable») y E («Hora Límite») NO se tocan — las escribe
+# `motor.precargar_negocio` POR POSICIÓN (`filas[i]`, no por texto), así que
+# reescribir el texto de una tarea no puede mover ni su responsable ni su hora
+# y el gate `negocio_precargado` sigue verde.
+#
+# Redacción atada a la idempotencia de la 2.ª pasada del motor: ningún texto de
+# aquí lleva «=» (`texto_facturado`), ni «APPCC» (`texto_appcc`), ni la palabra
+# «temperatura» sin el hueco «____ °C» ya escrito (`texto_temperatura` pica con
+# temperatura + verbo de registro + equipo de frío, y «vitrina» ES equipo de
+# frío). Los rangos van «16-18 °C», que es la forma que ya deja `texto_grados`.
+#
+# Y ninguno vuelve a decir «Encender … TPV»: ese hito es de B10 y una segunda
+# aparición dispararía el gate `tpv_duplicado` de §6.
+
+#: B9 — la señalización exterior se queda (su pareja de cierre, B12 «Recoger
+#: señalización exterior», es la misma tarea al revés), pero lo que se cuelga
+#: fuera de una bombonería no es una pizarra de menú: es el horario, el cartel
+#: de encargos y un escaparate que, si le da el sol, funde el género que hay
+#: dentro. El escaparate al sol es el defecto de tienda más caro del oficio y
+#: no lo vigilaba ninguna de las 11 hojas.
+SENALIZACION = ('Montar la señalización exterior y el cartel de encargos por '
+                'adelantado, y comprobar que al escaparate no le da el sol '
+                'directo: el chocolate expuesto se funde y pierde el brillo')
+#: B11 — no hay «sistema de reservas» que encender. Lo que hay que encender al
+#: entrar es la vitrina, que es lo que más tarda: aquí queda el ENCENDIDO y en
+#: B20 la comprobación del rango, que es donde el molde la había puesto (fila
+#: 20, con hora precargada más tardía).
+VITRINA_ENCENDER = ('Encender las vitrinas temperadas de bombones y tabletas '
+                    'nada más entrar: tardan en bajar y el género no se monta '
+                    'hasta que estén en rango')
+#: B13 — una bombonería no toma reservas, toma ENCARGOS, y lo que descoloca la
+#: mañana es que a las 11:00 llegue alguien a recoger una caja que nadie ha
+#: estuchado. Se queda en el nivel de MARCO (qué hay comprometido para hoy y
+#: quién lo prepara); el detalle de la agenda y de los pedidos online sigue en
+#: 01-apertura-cierre.xlsx y la señal cobrada, en 09.
+ENCARGOS_08 = ('Revisar los encargos comprometidos para hoy: unidades, '
+               'hora de recogida y quién los prepara, y dejar preparadas '
+               'las cajas de regalo y las cintas de los que se recojan por '
+               'la mañana')
+#: B16 — el mobiliario de una bombonería de mostrador no son sillas y mesas.
+#: Se queda en ESTADO (desperfectos, bombillas, cristales rayados) y no en
+#: limpieza, que ya es tarea propia de 01 («Verificar limpieza de cristales de
+#: vitrina»).
+MOBILIARIO = ('Revisar el estado del mobiliario de tienda: mostrador, '
+              'estanterías y escaparate sin desperfectos, sin bombillas '
+              'fundidas y sin cristales rayados')
+#: B18 — la «carta» de una bombonería es la etiqueta que hay delante de cada
+#: bandeja: denominación, precio, precio por kilo del granel y alérgenos. Aquí
+#: va el HITO —no se abre la puerta con una bandeja sin etiquetar— y de paso la
+#: reposición, que es lo que decide si a las 12:00 queda vitrina o queda hueco.
+#: El repaso referencia a referencia es de 01-apertura-cierre.xlsx:«Apertura»,
+#: que es el detalle; el 08 comprueba que está hecho.
+VITRINA_ETIQUETAS = ('Comprobar antes de abrir que ninguna bandeja de la '
+                     'vitrina se queda sin su etiqueta de precio (y sin el '
+                     'precio por kilo, si se vende al peso) ni sin sus '
+                     'alérgenos a la vista, y que hay repuesto en cámara para '
+                     'reponer durante el día')
+
+
+def _zona_neg(ws, fila, vieja, nueva):
+    """Zona (col. 3) de una tarea del molde ▸: sólo el VALOR, nunca el estilo.
+
+    En 08 el relleno de la columna «Zona» es la CEBRA de la fila (medido:
+    FFFFFF y F5F5F5 alternos en las 17 filas de «Apertura del Negocio»), no
+    depende del VALOR como en las hojas P4 de este kit. Por eso aquí no se
+    copia el estilo de ninguna parte —lo haría `_zona`, que es del molde P4— y
+    se escribe sólo el texto. Idempotente, y con centinela: si la zona vieja no
+    es la esperada, el molde ha cambiado y se para.
+    """
+    cel = ws.cell(row=fila, column=3)
+    if cel.value == nueva:
+        return False
+    if cel.value != vieja:
+        raise AnclaPerdida(f'«{ws.title}»: C{fila} tiene Zona «{cel.value}», '
+                           f'esperaba «{vieja}» (kit-tareas-chocolateria)')
+    cel.value = nueva
+    return True
+
+
+def _tarea_neg(ws, viejo, nuevo, zona_vieja=None, zona_nueva=None):
+    """Sustitución 1:1 de una tarea de 08: texto y, si procede, su «Zona».
+
+    Ancla por TEXTO (nunca por número de fila) y con la misma normalización
+    que el motor deja en el molde ▸ (`_NORM` = `motor.forma_estable`).
+    Devuelve True si ha cambiado algo.
+    """
+    r = _fila(ws, nuevo)
+    cambiado = False
+    if r is None:
+        r = _exige(ws, viejo)
+        ws.cell(row=r, column=2).value = nuevo
+        cambiado = True
+    if zona_nueva:
+        cambiado = _zona_neg(ws, r, zona_vieja, zona_nueva) or cambiado
+    return cambiado
 
 
 def _f08(wb, cambios):
@@ -1450,19 +1607,71 @@ def _f08(wb, cambios):
     # las dos hojas de 08.
     tocado = False
     ws = wb['Apertura del Negocio']
-    if _sustituir(ws, 'Encender vitrinas temperadas', VITRINA_08):
+    if _tarea_neg(ws, 'Encender vitrinas temperadas', VITRINA_08,
+                  'Tienda', 'Vitrina'):
         tocado = True
-        cambios.append('«Apertura del Negocio»: la vitrina temperada pasa de '
-                       'encenderse a COMPROBARSE contra su rango (16-18 °C) '
-                       'antes de montar el género, con hueco para la lectura '
-                       '(hallazgo «Vitrinas temperadas sin objetivo de '
-                       'temperatura propio», media)')
+        cambios.append('«Apertura del Negocio»: B20 pasa de encender la '
+                       'vitrina a COMPROBAR que ha alcanzado su rango '
+                       '(16-18 °C y menos del 55 % de humedad) antes de '
+                       'montar el género, con hueco para la lectura; el '
+                       'encendido se '
+                       'va a B11, que es la fila con la hora temprana. Zona '
+                       '«Tienda» → «Vitrina» (hallazgo «Vitrinas temperadas '
+                       'sin objetivo de temperatura propio», media, + la '
+                       'humedad, que no vigilaba ninguna hoja)')
     if _sustituir(ws, 'Verificar temperatura obrador (18-20 °C)',
                   OBRADOR_APERTURA):
         tocado = True
         cambios.append('«Apertura del Negocio»: la temperatura del obrador '
                        'añade la humedad y el hueco de lectura, y queda '
                        'simétrica con la de cierre — §2.9')
+    if _tarea_neg(ws, 'Montar señalización exterior / pizarra de menú',
+                  SENALIZACION):
+        tocado = True
+        cambios.append('«Apertura del Negocio»: B9 deja de mandar montar una '
+                       '«pizarra de menú» que una bombonería no tiene y monta '
+                       'lo que sí cuelga fuera —horario y cartel de encargos— '
+                       'más la comprobación del sol sobre el escaparate, que '
+                       'funde el género y no la hacía ninguna de las 11 hojas '
+                       '(hallazgo baja de …-ver3.json)')
+    if _tarea_neg(ws, 'Encender sistema de reservas / tablet de pedidos',
+                  VITRINA_ENCENDER, 'Recepción', 'Vitrina'):
+        tocado = True
+        cambios.append('«Apertura del Negocio»: B11 pasa del «sistema de '
+                       'reservas» de un restaurante al ENCENDIDO de las '
+                       'vitrinas temperadas, que es lo que hay que poner en '
+                       'marcha nada más entrar porque es lo que más tarda en '
+                       'bajar; su comprobación de rango se queda en B20. Zona '
+                       '«Recepción» → «Vitrina»: no hay recepción en un '
+                       'mostrador (hallazgo baja de …-ver3.json)')
+    if _tarea_neg(ws, 'Revisar reservas del día y eventos especiales',
+                  ENCARGOS_08, 'Recepción', 'Mostrador'):
+        tocado = True
+        cambios.append('«Apertura del Negocio»: B13 pasa de «reservas del '
+                       'día» a los ENCARGOS comprometidos para hoy (unidades, '
+                       'hora '
+                       'de recogida, quién los prepara) y al estuchado de los '
+                       'de la mañana con sus cajas de regalo — el marco: la '
+                       'agenda y los pedidos online siguen en 01 y la señal '
+                       'cobrada, en 09. Zona «Recepción» → «Mostrador» '
+                       '(hallazgo baja de …-ver3.json)')
+    if _tarea_neg(ws, 'Revisar estado del mobiliario (sillas, mesas, '
+                      'iluminación)', MOBILIARIO):
+        tocado = True
+        cambios.append('«Apertura del Negocio»: B16 revisaba «sillas, mesas» '
+                       'en un local sin comedor; pasa al mobiliario que sí '
+                       'hay (mostrador, estanterías y escaparate) y se queda '
+                       'en ESTADO, no en limpieza, que ya es tarea de 01 — '
+                       'barrido de «mesa» del 08/09')
+    if _tarea_neg(ws, 'Comprobar que las cartas/menús están en orden',
+                  VITRINA_ETIQUETAS, 'Sala', 'Vitrina'):
+        tocado = True
+        cambios.append('«Apertura del Negocio»: B18 pasa de repasar «las '
+                       'cartas/menús» —que una bombonería no tiene— a '
+                       'comprobar que ninguna bandeja de la vitrina se abre '
+                       'sin etiqueta de precio, precio por kilo del granel y '
+                       'alérgenos, y que hay repuesto en cámara. Zona '
+                       '«Sala» → «Vitrina» (hallazgo baja de …-ver3.json)')
     ws = wb['Cierre del Negocio']
     if _sustituir(ws, 'Registrar temperatura de cierre del obrador',
                   OBRADOR_CIERRE):
@@ -1472,11 +1681,13 @@ def _f08(wb, cambios):
                        'lectura; era la única de las dos que no lo tenía '
                        '(hallazgo «Temperatura de cierre del obrador sin '
                        'objetivo ni hueco de lectura», media)')
-    if _sustituir(ws, 'Apagar vitrinas temperadas', VITRINA_CIERRE):
+    if _tarea_neg(ws, 'Apagar vitrinas temperadas', VITRINA_CIERRE,
+                  'Tienda', 'Vitrina'):
         tocado = True
         cambios.append('«Cierre del Negocio»: la vitrina no se apaga con el '
                        'género dentro — primero se retira a la cámara de '
-                       'conservación')
+                       'conservación. Zona «Tienda» → «Vitrina», la misma que '
+                       'su pareja de apertura')
     return tocado
 
 

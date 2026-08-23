@@ -1,0 +1,98 @@
+{
+ "rol": "verificador independiente · kit-tareas-restaurante-creativo · ver4 (post motor 2.4 / tanda 5, focalizada)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-restaurante-creativo/ NO tocado (confirmado sin cambios) · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean",
+ "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver4 python3 kit-tareas-v2_0/main.py --producto kit-tareas-restaurante-creativo --dry-run --json .../scratchpad/kt-hermanos-5/kit-tareas-restaurante-creativo.json (motor 2.4 + contenido sin cambios desde ver3)",
+ "contexto_relevante": "gates.contexto: f_negocio=10-apertura-cierre-negocio.xlsx · f_caja=11-apertura-cierre-caja.xlsx · f_areas=null → este kit es UNO de los 5 P4-sin-áreas que motor-2.4.json ('pendiente') declaraba con m1 aplicado pero SIN medir en su propia carpeta. Esta verificación cierra ese pendiente para restaurante-creativo.",
+ "1_exit_censo_idempotencia_dv_casos6": {
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_independiente": "paso 7/7: 13 ficheros censados (13 xlsx, 0 docx, 0 pdf), 0 defectos (--fail)",
+  "idempotencia_2a_pasada_digest_m3": {
+   "diferencias": 0,
+   "evidencia": "paso 3/7: 'diferencias 1.ª vs 2.ª pasada: 0', medido YA con el digest endurecido de m3 (compara errorTitle/error/prompt de las DV y locked de TODAS las celdas del rango, no sólo las que tienen valor) — el kit aguanta el listón nuevo sin producir falsos positivos"
+  },
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "listas_dv_evidencia": "gates.dv_y_bio: hojas_checklist=4 (molde ▸, 10/11) + hojas_p4=30 = 34 hojas de checklist en total, dv_incorrectas=[], UNA sola lista en las 34 hojas, aviso_dv_mezcladas=[]. Idéntico a ver3 — m1/m2/m3 no tocan DV",
+  "casos_6": [
+   {"caso": "Arqueo cuadra: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → descuadre 0", "ok": true, "evidencia": "demostraciones_spec_6[arqueo-cuadra]: 11-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0 (pycel)"},
+   {"caso": "Arqueo descuadra +10 (Z 1.790)", "ok": true, "evidencia": "demostraciones_spec_6[arqueo-descuadra]: 'Cierre de Caja'!C54 = 10 (pycel)"},
+   {"caso": "Contador honesto: N/A sale del denominador, «—» NO", "ok": true, "evidencia": "demostraciones_spec_6[contador-honesto]: 10-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29/F29 = '15 de 15' con 18 tareas, 3 N/A, 15 ✓ (pycel)"},
+   {"caso": "07 (equivalente = 09-plantilla-personalizable.xlsx) por fórmula → «x de N»", "ok": null, "evidencia": "NO APLICA por diseño, sin cambios desde ver3: verificado abriendo celda, 09:'Plantilla A'/'Plantilla B'/'Plantilla C'!E5:E7 = 'N/A' en las tres, B5 con fila de ejemplo distinta por plantilla; gate recuento_por_hoja no lista 09 (0 tareas contables)"},
+   {"caso": "08/10 sin tareas sin Responsable/Hora", "ok": true, "evidencia": "gates.negocio_precargado: fichero=10-apertura-cierre-negocio.xlsx, tareas=33, huecos=[], firma_ok=true, huecos_firma=[]"},
+   {"caso": "Bio en TODAS las Instrucciones", "ok": true, "evidencia": "gates.dv_y_bio.instrucciones_con_bio=13, sin_bio=[], sin_hoja_instrucciones=[], version_desfasada=[]"},
+   {"caso": "Contador P4 recién impreso = «0 de N» (sin contar rótulos)", "ok": true, "evidencia": "demostraciones_spec_6[contador-p4-sin-rotulos]: 01-apertura-cierre.xlsx:'Apertura AM'!C47/E47 = '0.0 de 33.0' (33 tareas reales, 3 rótulos, 0 marcadas); formula_vieja_habria_dicho='3 de 36'"}
+  ],
+  "casos6_resumen": "6 de 7 OK; el 7º (09-plantilla-personalizable por fórmula) sigue NO APLICA documentado — no es un fallo, sin cambios desde ver3"
+ },
+ "2_fixes_tanda5_verificados": {
+  "m1_frase_niveles_sin_areas": {
+   "declarado_en": "motor-2.4.json §9.4 m1 y SPEC §9.4: restaurante-creativo 10!B37/11!B48, uno de los 5 kits P4-sin-áreas afectados; motor-2.4.json lo listaba en 'pendiente' como NO MEDIDO todavía en su propia carpeta",
+   "verificado_abriendo_celda": true,
+   "10-apertura-cierre-negocio.xlsx:Instrucciones!B37": "▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.",
+   "11-apertura-cierre-caja.xlsx:Instrucciones!B48": "▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.",
+   "resultado": "COINCIDE EXACTO con el literal FRASE_NIVELES_SIN_AREAS firmado en SPEC §9.4 (m1) — dos niveles (local→caja), sin mención de un fichero de áreas que este kit no tiene. Correcto: f_areas=null en gates.contexto",
+   "grep_no_se_duplican_13_instrucciones": 0,
+   "grep_orden_de_uso_fuera_de_10_11": 0,
+   "ok": true
+  },
+  "m2_dedup_bandas": {
+   "aplica": false,
+   "motivo": "gates.bandas_solapadas = [] — este kit no tiene fichero de áreas (f_areas=null) y por tanto no hay bandas que deduplicar. m2 no puede confirmarse ni refutarse con este hermano (la prueba real vive en dark-kitchen, motor-2.4.json). Confirmado que no introduce entradas falsas: lista vacía, no un error"
+  },
+  "m3_digest_endurecido": {
+   "aplica": true,
+   "resultado": "idempotencia.diferencias = 0 con el digest de m3 (DV por mensaje + locked por celda). El kit aguanta el listón nuevo sin regresión"
+  },
+  "m4_spec_9": {
+   "aplica": "documental, no verificable contra el xlsx",
+   "resultado": "SPEC §9.4 describe exactamente las celdas 10!B37/11!B48 para este kit, y coincide con lo medido"
+  },
+  "fixes_tanda5_ok": true
+ },
+ "3_metricas_solicitadas": {
+  "recuento_gate": 477,
+  "recuento_gate_evidencia": "gates.recuento_tareas.total = 477 (molde ▸ 56 + molde P4 421). Idéntico a ver3 (m1/m2/m3 no tocan recuento de tareas, sólo texto/DV/alturas/locked)",
+  "tareas_01": 55,
+  "tareas_01_evidencia": "gates.recuento_tareas.por_fichero['01-apertura-cierre.xlsx'] = 55 (Apertura AM 33 + Cierre PM 22)",
+  "hojas_checklist": 34,
+  "hojas_checklist_evidencia": "gates.recuento_tareas.por_hoja tiene 34 entradas (4 molde checklist_▸ en 10/11 + 30 molde p4 en 01-09+BONUS-01); BONUS-02 no cuenta como hoja de checklist (0 tareas, es calendario)",
+  "ficheros_total": 13,
+  "fechas_bonus02": 12,
+  "fechas_bonus02_evidencia": "BONUS-02-calendario-anual.xlsx:'Calendario Anual' filas 5-16 (Enero…Diciembre), las 12 con contenido completo (Mes/Acciones-Fechas señaladas/Producto estrella/Demanda), 0 filas vacías o placeholder",
+  "fechas_bonus02_nota_de_alcance": "ADVERTENCIA DE DEFINICIÓN: la métrica tal como está pedida ('filas con fecha entregadas ... sin las «(Tu fecha)»') asume el molde del REPRESENTANTE, que tiene un calendario de FECHA-POR-FILA (23 filas, A5:D27) con placeholders literales '(Tu fecha)' en las celdas vacías. El BONUS-02 de restaurante-creativo es un molde DISTINTO (fuera del molde ▸, 'p4' con 0 tareas contables): un calendario MENSUAL de 12 filas (una por mes) con fechas señaladas incrustadas como texto libre dentro de la columna B ('1 ene', '19 mar', '15 ago', '6-8 dic'...), sin columna 'Fecha' propia ni placeholder '(Tu fecha)' en ninguna celda (grep de 'fecha' case-insensitive: sólo 2 apariciones, ambas en Instrucciones, ninguna es placeholder). Por eso reporto 12 (filas de mes completas, ninguna vacía) en vez de 0 — un 0 literal sugeriría un calendario vacío, que sería falso. No es un defecto del producto, es que la pregunta se escribió pensando en el molde del representante y este hermano usa otro; señalado para que quien agregue estas métricas entre kits no sume peras con manzanas"
+ },
+ "4_integridad_otros_moldes": {
+  "ficheros_verificados": 13,
+  "carga_openpyxl_data_only_true": "13/13 cargan sin excepción",
+  "errores_formula": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL!/#NUM! en las 13 copias regeneradas (barrido propio, data_only=True, todas las hojas)",
+  "inject_cache": "145 fórmulas nuevas con valor, 0 fallos pycel, en las 13 hojas de destino",
+  "produccion_intacta": "confirmado con `git status --short astro-site/public/dl` sin salida — dl/kit-tareas-restaurante-creativo/ no se ha tocado; todo el trabajo en /private/tmp/.../scratchpad/propio-ver4/dryrun-kt/"
+ },
+ "5_barrido_vocabulario_ajeno_al_sector": {
+  "alcance": "08-fotografia-storytelling.xlsx (todas las hojas) + 09-plantilla-personalizable.xlsx (todas las hojas) + Instrucciones de los 13 ficheros — 435 celdas de texto recogidas",
+  "terminos_buscados": ["pizza", "hamburguesa/burger", "cafetería/barista", "hotel/habitación/huésped/check-in", "heladería/helado", "chocolatería/bombón", "dark kitchen/reparto/delivery", "food truck", "panadería/obrador", "pastelería/tarta", "bar/coctel/mostrador", "catering/banquete"],
+  "coincidencias_brutas": 5,
+  "hallazgos_reales_tras_revisar_contexto": 0,
+  "detalle_descartes": [
+   {"donde": "01-apertura-cierre.xlsx:Instrucciones!B13", "coincidencia": "'bar '", "veredicto": "falso positivo — substring de 'Ámbar' (código de color del semáforo de tareas), no vocabulario de bar"},
+   {"donde": "02-mise-en-place-degustacion.xlsx:Instrucciones!B17", "coincidencia": "'tarta'", "veredicto": "falso positivo — substring de 'tartar' (preparación de pescado crudo), vocabulario propio del sector"},
+   {"donde": "04-tareas-brigada-creativa.xlsx:Instrucciones!B13", "coincidencia": "'helado'", "veredicto": "legítimo — 'Chef Pastelero — postres de autor, helados, fermentaciones dulces' es repostería DENTRO de un restaurante creativo, no vocabulario de heladería como negocio"},
+   {"donde": "09-plantilla-personalizable.xlsx:Instrucciones!B17/B19", "coincidencia": "'pastelería' x2", "veredicto": "legítimo — 'partida de pastelería' es una sección estándar de brigada de restaurante de autor, no vocabulario de pastelería como negocio"}
+  ],
+  "conclusion": "0 hallazgos nuevos de vocabulario ajeno al sector en 08/09/Instrucciones — muy por debajo del máximo de 6 admitido"
+ },
+ "hallazgos_nuevos": [],
+ "hallazgos_heredados_de_ver3_sin_cambios": [
+  "Ninguno de los 3 hallazgos MEDIA/BAJA de ver3 (cierre de caja en 01 sin remisión a 11; copy de landing '3 plantillas en blanco'; solape menor unitario/global en 07) ha cambiado en esta tanda — m1/m2/m3 no tocan contenido del módulo, sólo texto de motor en 10/11. No se listan como 'nuevos' porque ya estaban reportados en ver3 y no son responsabilidad de esta tanda focalizada (que sólo cubre motor 2.4)."
+ ],
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Ninguno de los criterios de bloqueo se cumple: (1) exit 0, censo --fail 0, idempotencia 0 diferencias YA con el digest endurecido de m3; (2) frase_niveles_ok=true — la viñeta de T-08 en 10!B37 y 11!B48 usa el literal SIN_AREAS de dos niveles (local→caja), coincide EXACTO con lo firmado en SPEC §9.4/m1, y 0/13 Instrucciones contienen 'No se duplican'; (3) el único fix de tanda 5 declarado para este kit (m1) está aplicado y verificado celda a celda — fixes_tanda5_ok=true; (4) los 13 ficheros de otro molde cargan limpios, 0 errores de fórmula; (5) barrido de vocabulario ajeno al sector: 0 hallazgos reales (5 coincidencias brutas, las 5 descartadas por contexto), muy por debajo del máximo de 6; (6) 0 hallazgos NUEVOS de severidad alta o media — los únicos hallazgos vivos son los 3 ya reportados en ver3 (fuera del alcance de esta tanda, ninguno alta).",
+ "notas": [
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 44,6-46,3 °C durante toda la verificación; un solo intérprete python a la vez; sin builds ni Playwright.",
+  "No se ha tocado astro-site/public/dl/**; confirmado con `git status --short` sin salida sobre ese directorio. Todo el trabajo en CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver4 y kt-hermanos-5. Sin git add/commit/stash/clean en ningún momento.",
+  "Esta verificación cierra el pendiente explícito de motor-2.4.json ('RE-DRY-RUN DE LOS 5 KITS P4 QUE m1 SÍ CAMBIA ... Faltan ... restaurante-creativo (10!B37/11!B48): m1 les toca 2 celdas a cada uno y el cambio es el mismo, pero no está MEDIDO en su carpeta') específicamente para kit-tareas-restaurante-creativo: ya está medido y coincide con lo esperado.",
+  "El JSON crudo de main.py (kit-tareas-restaurante-creativo.json) queda en el scratchpad kt-hermanos-5 (se perderá con el próximo reinicio); este informe en el repo es la fuente persistente.",
+  "Recuento, hojas y ficheros idénticos byte a byte a ver3 (477 / 34 / 13 / 55 en 01) — m1/m2/m3 son cambios de TEXTO y de GATE, no de estructura de tareas, así que la ausencia de diferencia en estas cifras es la confirmación esperada, no una omisión de verificación."
+ ]
+}

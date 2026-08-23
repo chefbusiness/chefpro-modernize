@@ -1,0 +1,186 @@
+{
+  "rol": "crítico de completitud · kit-tareas hermanos «▸» + representante · tanda 5 (motor 2.4)",
+  "fecha": "2026-08-23",
+  "modo": "Lectura íntegra de los 11 <pid>-ver4.json + motor-2.4.json + kit-tareas-diff-firmado.json + critico-3.json + los 2 informes de contenido de la tanda 5 (kit-tareas-catering-contenido-08.json y kit-tareas-restaurante-creativo-contenido-dom07-residual.json). UNA sola ejecución de python, de SOLO LECTURA (openpyxl read_only sobre 3 BONUS-02 de astro-site/public/dl/, sin escribir nada ahí). Sin dry-run propio, sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean.",
+
+  "cobertura_de_entrada": {
+    "pids_esperados": 11,
+    "con_fichero_ver4": 11,
+    "sin_verificacion": [],
+    "nota": "Los 11 pids tienen su <pid>-ver4.json en scripts/productos-digitales/auditorias/kit-tareas-hermanos/. Ninguno queda BLOQUEADO por «sin verificación». motor-2.4.json, kit-tareas-diff-firmado.json y critico-3.json presentes y leídos enteros."
+  },
+
+  "cruce_bloqueos_de_critico_3": [
+    {
+      "pid": "kit-tareas",
+      "motivo_tanda_4": "177 diferencias contra producción con 4 categorías FUERA de lo autorizado: (d) paréntesis del fichero de negocio en 11 celdas, (e) cola «Estás en…» de caja en 09:Instrucciones!B50, (c) alturas de fila, (f) desbloqueo del calendario A5:D27 (23 filas / 92 celdas) frente a las 22 filas / 88 celdas comunicadas.",
+      "estado": "RESUELTO",
+      "evidencia": "motor-2.4.json:firmas_recibidas = «(d) FIRMADO · (e) FIRMADO · (c) aceptado · (f) aceptado». kit-tareas-diff-firmado.json fija el diff de referencia en 177 = 26 valor + 33 DV + 26 alturas + 92 locked, con detalle celda a celda y `categorias_nuevas` VACÍO (0 en merges, cf, print_area, protección de hoja y nº de hojas). kit-tareas-ver4.json lo reproduce de forma INDEPENDIENTE (script propio diff_celda_ver4.py, no el digest interno) y da EXACTO el mismo desglose 26/33/26/92 = 177, categoría a categoría. Las 4 firmas cubren las 4 categorías: ya no hay ninguna diferencia no autorizada."
+    },
+    {
+      "pid": "kit-tareas-dark-kitchen",
+      "motivo_tanda_4": "`_f08` declaraba resolver «el vocabulario de sala y terraza» del 08 y sólo cubría 7 de 12 tareas. Vivas: 08:'Apertura del Negocio'!B9, !B12, !B22 y 08:'Cierre del Negocio'!B5, !B18.",
+      "estado": "RESUELTO",
+      "evidencia": "kit-tareas-dark-kitchen-ver4.json lee las 5 celdas en el .xlsx regenerado: 08:'Apertura del Negocio'!B9 = «Colocar la señalización del punto de recogida de riders y el cartel con el horario de cada marca», !B12 = «Comprobar que el timbre o el interfono de la puerta de riders funciona…», !B22 = «Activar las marcas en las plataformas…»; 08:'Cierre del Negocio'!B5 = «Pausar los pedidos nuevos en todas las marcas…», !B18 = «Desactivar las marcas en las plataformas…». Responsable y Hora Límite intactos (negocio_precargado.huecos=[]). Barrido con límite de palabra de vocabulario de sala/comedor en 08/09/Instrucciones: 0 apariciones. Extra no pedido pero verificado: BONUS-01:Instrucciones!B6 pasa de «El jefe de sala o manager rellena…» a «El manager o el gestor de plataformas rellena…»."
+    }
+  ],
+
+  "cruce_fixes_pedidos_por_critico_3": [
+    {
+      "fix": "m1 — condicionar la cláusula «el de áreas» de FRASE_NIVELES a CTX['f_areas'] (10 celdas mal en los 5 kits P4)",
+      "estado": "RESUELTO Y MEDIDO EN LOS 5",
+      "evidencia": "motor.py:157-185 (FRASE_NIVELES_SIN_AREAS + frase_niveles()) y motor.py:2569-2577 (_bloque_conecta). Celdas leídas una a una en los ver4: catering 08!B37/09!B48 · chocolatería 08!B37/09!B48 · heladería 08!B37/09!B48 · hotel 18!B37/19!B48 · restaurante-creativo 10!B37/11!B48, las 10 con el literal de DOS niveles («Orden de uso: local → caja…»). motor-2.4.json:pendiente sólo había medido catering; los otros 4 quedan cerrados por chocolateria-ver4, heladeria-ver4, hotel-ver4 y restaurante-creativo-ver4.",
+      "correccion_de_referencia": "critico-3.json citaba catering como 08!B38/09!B49. Lo medido es 08!B37/09!B48: B38/B49 es la fila siguiente (la cola «Estás en…»). Los otros 4 kits que citaba critico-3 (B37/B48) sí coincidían. Corrección firmada en motor-2.4.json y confirmada por catering-ver4."
+    },
+    {
+      "fix": "m1 — REGRESIÓN en los 6 kits que SÍ tienen fichero de áreas (deben conservar la frase de 3 niveles)",
+      "estado": "VERDE",
+      "evidencia": "cafetería, pizzería, hamburguesería, dark-kitchen, bar y el representante: 11/11 Instrucciones con la frase de TRES niveles y 0/11 con la de dos. 0 apariciones de «No se duplican» en los 11 kits (barrido sobre el libro completo, no sólo Instrucciones, en cafetería, bar y kit-tareas)."
+    },
+    {
+      "fix": "m2 — deduplicar gates.bandas_solapadas por hoja SIN nº de fila",
+      "estado": "RESUELTO",
+      "evidencia": "main.py:811-844. dark-kitchen (el único kit donde el bug se manifestaba, porque _f01 inserta una fila entre las dos pasadas): gates.bandas_solapadas pasa de 2 entradas ('Cierre Cocina!A28' y '!A29', idénticas salvo la fila) a 1 ('Cierre Cocina!A29', 25 %), y conserva la ÚLTIMA medida, que es la fila real del libro entregado. Sin regresión en el resto: cafetería sigue con sus 3 entradas conocidas (40/25/25 %), pizzería con 2 (0,33 y 0,25), hamburguesería con 2 (67 % y 29 %), y bar / heladería / hotel / restaurante-creativo / representante con lista vacía."
+    },
+    {
+      "fix": "m3 — digest endurecido (mensaje de DV + locked de TODAS las celdas, también las vacías)",
+      "estado": "RESUELTO SIN FALSOS ROJOS",
+      "evidencia": "main.py:95-180. Los 11 kits miden idempotencia 0 diferencias CON el listón nuevo. Efecto colateral bueno y comprobado: el diff del representante pasa de las 127 que veía el digest 2.3 a las 177 reales, que es exactamente lo que critico-3 exigía fijar y firmar."
+    },
+    {
+      "fix": "contenido dark-kitchen — 5 sustituciones 1:1 en _f08",
+      "estado": "RESUELTO",
+      "evidencia": "ver cruce_bloqueos_de_critico_3[1]."
+    },
+    {
+      "fix": "re-dry-run de los 11 tras 2.4 (motor-2.4.json:pendiente dejaba 4 kits P4 + 6 hermanos ▸ sin medir)",
+      "estado": "RESUELTO",
+      "evidencia": "Los 11 ver4 son ese re-dry-run: exit 0 y censo --fail 0 defectos en los 11; cafetería y catering lo hicieron además con DOS invocaciones independientes desde cero (0 diffs celda a celda entre corridas)."
+    },
+    {
+      "fix": "m4 — SPEC §9",
+      "estado": "RESUELTO",
+      "evidencia": "kit-tareas-v2-SPEC.md:190-346 (§9.1 tanda 3 · §9.2 tanda 4 T-01…T-08 · §9.3 firmas de la tanda 5 · §9.4 motor 2.4 m1-m3 · §9.5 el pendiente «caja fuera del 09» con su censo de celdas). Leído y citado por 8 de los 11 verificadores para acotar qué les aplicaba."
+    },
+    {
+      "fix": "landings de los 11 kits con las cifras de gates.recuento_tareas",
+      "estado": "NO HECHO — pendiente de la capa de producto (§4), no del motor. Ver cifras_landing y pendientes_no_bloqueantes."
+    }
+  ],
+
+  "cruce_decisiones_abiertas_de_critico_3": [
+    {"decision": "DECISIÓN 1 — firmar (d) y (e), y acotar el desbloqueo del calendario", "estado": "FIRMADA (d, e) y ACEPTADA (c, f) en motor-2.4.json:firmas_recibidas"},
+    {"decision": "DECISIÓN 2 — UMBRAL_BANDA = 0,8", "estado": "FIRMADA: se mantiene. Cafetería (3 bandas al 25-40 %) y pizzería (2 al 25-33 %) conservan el solape sin anotar; ya no lo desmiente ningún texto, porque la frase de T-08 admite el solape deliberado"},
+    {"decision": "DECISIÓN 3 — vocabulario genérico del 08/18/10 en kits sin sala", "estado": "PARCIALMENTE RESUELTA, SIGUE ABIERTA. Resueltas: dark-kitchen (5 celdas), catering (14 celdas de _f08, verificadas una a una), chocolatería (5 celdas de texto + 3 zonas), heladería (zona de 08!C11). Vivas: ver pendientes_no_bloqueantes[1]"},
+    {"decision": "DECISIÓN 4 — bar: el 07 pierde la columna «Zona» rellena con «General» en 35 filas", "estado": "FIRMADA: «BAR 07 «Zona» vacía en verde: aceptado» (motor-2.4.json)"},
+    {"decision": "T-06 — BONUS-01/02 de catering, hotel y chocolatería sin protección ni print_area", "estado": "SIN ACCIÓN por decisión explícita, reconfirmada en motor-2.4.json"},
+    {"decision": "CRITERIO DE FAMILIA — «caja» pedida fuera del fichero 09 sin remisión", "estado": "DOCUMENTADA EN SPEC §9.5 y sin acción en esta tanda, por firma del orquestador. Censo: hamburguesería 01:'Apertura Sala'!B11-B12 y 'Cierre Sala'!B12 + 04!B10/B17 · pizzería 01:'Apertura Sala'!B11-B12 · restaurante-creativo 01:'Cierre PM'!B25 · heladería 01:'Apertura'!B36"},
+    {"decision": "DOM-07 residual — restaurante-creativo, Plantilla A/B/C idénticas entre sí", "estado": "RESUELTO EN LA TANDA 5, pero MAL REPORTADO por su propio verificador. Ver hallazgos_del_critico[0]"},
+    {"decision": "MÉTRICA — casos_6 con denominadores distintos por verificador", "estado": "SIGUE IGUAL: 4/4 (representante) · 4/4 (chocolatería, heladería) · 5/5 (bar) · 5/6 (catering) · 6/6 (cafetería, pizzería, hamburguesería, dark-kitchen) · 6/7 (restaurante-creativo) · 7/7 (hotel). No cambia el fondo — ningún caso APLICABLE falla en ningún kit — pero sigue impidiendo comparar informes de un vistazo"}
+  ],
+
+  "tabla_por_kit": [
+    {"pid": "kit-tareas-cafeteria", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "6/6", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-pizzeria", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "6/6", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-hamburgueseria", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "6/6", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-dark-kitchen", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "6/6", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO — el bloqueo de contenido de la tanda 4 queda cerrado celda a celda"},
+    {"pid": "kit-tareas-bar", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "5/5 (sin P4)", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO — la DECISIÓN 4 del 07 queda firmada («aceptado»)"},
+    {"pid": "kit-tareas-catering", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "5 OK + 1 NO APLICA (SPEC §9.1(k))", "frase_niveles_ok": true, "frase": "2 niveles (f_areas=None)", "fixes_tanda5_ok": true, "hallazgos_nuevos": "2 baja", "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-chocolateria", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "4/4", "frase_niveles_ok": true, "frase": "2 niveles (f_areas=None)", "fixes_tanda5_ok": true, "hallazgos_nuevos": "2 baja", "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-heladeria", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "4/4", "frase_niveles_ok": true, "frase": "2 niveles (f_areas=None)", "fixes_tanda5_ok": true, "hallazgos_nuevos": "1 baja", "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO"},
+    {"pid": "kit-tareas-hotel", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "7/7", "frase_niveles_ok": true, "frase": "2 niveles (f_areas=None)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO — H-01 de ver3 queda RESUELTO por m1"},
+    {"pid": "kit-tareas-restaurante-creativo", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "6 OK + 1 NO APLICA", "frase_niveles_ok": true, "frase": "2 niveles (f_areas=None)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO — con la salvedad de hallazgos_del_critico[0]: el ver4 no atribuye el fix de DOM-07 que sí corrió en su propia pasada"},
+    {"pid": "kit-tareas", "exit": 0, "censo": 0, "idempotencia": 0, "dv_listas": 1, "casos6": "4/4 (sin P4)", "frase_niveles_ok": true, "frase": "3 niveles (tiene f_areas)", "fixes_tanda5_ok": true, "hallazgos_nuevos": 0, "altos": 0, "bloquea_real_informe": false, "veredicto_critico": "LISTO — diff de 177 firmado y reproducido de forma independiente, sin categoría nueva"}
+  ],
+
+  "listos_para_real": [
+    "kit-tareas-cafeteria",
+    "kit-tareas-pizzeria",
+    "kit-tareas-hamburgueseria",
+    "kit-tareas-dark-kitchen",
+    "kit-tareas-bar",
+    "kit-tareas-catering",
+    "kit-tareas-chocolateria",
+    "kit-tareas-heladeria",
+    "kit-tareas-hotel",
+    "kit-tareas-restaurante-creativo",
+    "kit-tareas"
+  ],
+  "listos_matiz": "11 de 11. A diferencia de la tanda 4, el «LISTO a nivel de kit pero no a nivel de tanda» ya no aplica: lo que lo impedía eran las diferencias (d) y (e), que se imprimen en los 11 kits y estaban sin firmar. Las cuatro firmas están dadas y el diff de referencia del representante está fijado y reproducido por dos partes independientes. No queda ningún hallazgo ALTO vivo en ningún kit, ningún fix declarado a medias dentro del entregable, y ninguna diferencia no autorizada contra producción.",
+
+  "bloqueados": [],
+
+  "hallazgos_del_critico": [
+    {
+      "severidad": "media (de PROCESO, no del entregable)",
+      "donde": "scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-restaurante-creativo-ver4.json (campos «comando», «hallazgos_heredados_de_ver3_sin_cambios» y «2_fixes_tanda5_verificados»)",
+      "hallazgo": "El ver4 afirma «motor 2.4 + contenido SIN CAMBIOS desde ver3» y da DOM-07 residual por vivo («Plantilla A/B/C siguen IDÉNTICAS»), pero `git status` lista `contenido_kit_tareas_restaurante_creativo.py` como MODIFICADO y kit-tareas-restaurante-creativo-contenido-dom07-residual.json (misma tanda, 32 min antes) documenta el fix aplicado: 09:'Plantilla A'!A1 → «… — Por Franja Horaria», 'Plantilla B'!A1 → «… — Por Partida», 'Plantilla C'!A1 → «… — Por Perfil», más 9 filas de ejemplo distintas (B5/B6/B7 de cada hoja) y 09:Instrucciones!B5/B8/B15-B19/B24 reescritas. Su gate propio da unicidad_A_B_C = 0 celdas iguales entre las tres hojas (antes 4 de 4).",
+      "por_que_no_bloquea": "El fix SÍ entró en la pasada del verificador —su propia evidencia lo delata: casos_6 cita «09:'Plantilla A'/'B'/'C'!E5:E7 = N/A en las tres, B5 con fila de ejemplo DISTINTA por plantilla»—, y esa pasada dio exit 0, censo 0, idempotencia 0 y recuento 477 sin cambio (las filas de ejemplo van marcadas N/A y no mueven el contador). Es decir: el fix está cubierto por un dry-run verde independiente, sólo que mal atribuido en la prosa del informe. El entregable es MEJOR de lo que su verificador declara, no peor.",
+      "accion": "Corregir la prosa del ver4 al cerrar la tanda y, sobre todo, arrastrar la consecuencia a la landing: los tres ejes son franja horaria / partida / perfil (no partida / turno / perfil) y ya no son «3 plantillas en blanco»."
+    },
+    {
+      "severidad": "media (de MÉTRICA, afecta a lo que se publica)",
+      "donde": "kit-tareas-heladeria-ver4.json, campo de primer nivel «hojas_checklist»: 4",
+      "hallazgo": "El campo de primer nivel dice 4, pero su propia «nota_dv» dice «hojas_checklist=4 (molde ▸: 08 Apertura+Cierre del Negocio, 09 Apertura+Cierre de Caja) + hojas_p4=21 = 25 hojas con desplegable en total». Publicar 4 sería un subrecuento del 84 %.",
+      "accion": "La cifra publicable de heladería es 25, no 4. Recogida así en cifras_landing."
+    },
+    {
+      "severidad": "baja (de MÉTRICA)",
+      "donde": "los 11 ver4, campo hojas_checklist",
+      "hallazgo": "«hoja de checklist» se cuenta con TRES criterios distintos y los tres conviven en la tanda: (a) el gate `dv_y_bio` cuenta hojas con fila de contador — deja fuera las 3 hojas de 07 de catering, que llevan la DV pero no contador (19 en vez de 22); (b) el barrido de libro completo de catering las incluye (22); (c) el barrido crudo de ver3 de chocolatería/heladería incluía además la columna ✓ del BONUS-02 (E5:E16), que no es un checklist de tareas (25 y 26 en vez de 24 y 25). Por eso chocolatería y heladería «bajan» una hoja entre la tanda 4 y la 5 sin que nada haya cambiado en el producto.",
+      "accion": "Fijar UN criterio antes de publicar. El de esta tabla: hojas con la DV «✓,—,N/A» que son checklist de tareas — incluye las plantillas en blanco de 07, excluye la columna ✓ del calendario."
+    }
+  ],
+
+  "pendientes_no_bloqueantes": [
+    "SIN COMMITEAR (operativo, el más urgente): motor 2.4 y toda la tanda 5 viven en el árbol de trabajo. `git status` lista M en kit-tareas-v2_0/motor.py, kit-tareas-v2_0/main.py, kit-tareas-v2-SPEC.md y los 5 módulos de contenido tocados (catering, chocolatería, dark_kitchen, heladería, restaurante_creativo), más 14 JSON de auditoría sin trackear. Un stash/clean, o simplemente cambiar de máquina (este repo se trabaja desde el Mac y desde el VPS), se lleva por delante m1/m2/m3 y los fixes de contenido de dark-kitchen, catering, chocolatería, heladería y restaurante-creativo. Comitear ANTES de cualquier KIT_TAREAS_APPLY: si no, lo ejecutado en real no es reproducible desde el repo.",
+    "DECISIÓN 3 (vocabulario genérico en kits sin sala) sigue abierta, ahora con censo fino y sólo en la columna ZONA y en texto de MOTOR: chocolatería 08:'Apertura del Negocio'!C16 (Zona «Sala» en la única de las 5 filas del barrido a la que el código no le pasó zona_nueva) y 08:'Cierre del Negocio'!C6 (Zona «Sala» del molde genérico); heladería 08:'Apertura del Negocio'!C13 (segunda tarea con Zona «Recepción»; el fix de la tanda 5 sólo ancló 08!C11); catering 08:Instrucciones!B6/B38 y 09:Instrucciones!B31 («LOCAL COMPLETO», «no aplica en tu local» — texto que reescribe motor.reescribir_instrucciones en cada pasada, así que afecta a los 12 kits y no se puede arreglar desde un módulo de contenido: necesita una clave nueva en CTX). Todo cosmético: ninguna toca gate, fórmula ni recuento.",
+    "SPEC §9.5 «caja fuera del 09» — firmado como NO bloqueante y sin acción en esta tanda. Censo: hamburguesería 01:'Apertura Sala'!B11-B12, 'Cierre Sala'!B12, 04!B10/B17 · pizzería 01:'Apertura Sala'!B11-B12 · restaurante-creativo 01:'Cierre PM'!B25 · heladería 01:'Apertura'!B36. Cuando se aborde, el criterio barato es el de T-02: reescribir el texto con remisión, no borrar la tarea.",
+    "UMBRAL_BANDA sigue en 0,8 por firma: cafetería (Cierre Sala!A22 40 % · Apertura Sala!A25 25 % · Cierre Sala!A17 25 %) y pizzería (Cierre Sala!A13 33 % · Cierre Cocina!A11 25 %) y hamburguesería (Cierre Sala!A14 67 % · Apertura Sala!A5 29 %) conservan solapes sin anotar. Decisión de umbral formalmente abierta desde la tanda 1.",
+    "CATERING, decisión de PRODUCTO para John (la más de fondo de la tanda): 09-apertura-cierre-caja.xlsx entero modela un negocio que cobra en mostrador (fondo, cambio en monedas, Z del TPV por turno). Una empresa de catering factura por evento y mayoritariamente por transferencia. No se arregla con sustituciones 1:1 — es el PAPEL del fichero. Lo levanta kit-tareas-catering-ver4.json §6 y no le corresponde decidirlo a un verificador.",
+    "CAPA DE PRODUCTO — las 11 landings, el email post-pago, el dashboard y el changelog siguen con cifras de la v1.1. Fuente fiable desde T-03: gates.recuento_tareas.total (ver cifras_landing). Los dos peores desfases siguen siendo hotel (kit-tareas-hotel.ts:22/:31/:63/:93/:246/:295/:310 venden «46 checklists en 15 plantillas» por 19 ficheros / 53 hojas / 636 tareas, y las dos comparaciones con Trail cuelgan de la cifra de 46) y restaurante-creativo (kit-tareas-restaurante-creativo.ts:21/:30/:92/:277 dicen «11 plantillas» por 13 ficheros, y :214 dice «9 plantillas» contradiciendo a su propia landing).",
+    "AVISO DE UNIDAD en fechas_bonus02 — NO son comparables entre kits y publicarlas a ciegas es un error de venta. Ocho kits (cafetería, pizzería, hamburguesería, dark-kitchen, catering, hotel, bar y el representante) traen un calendario de FECHA POR FILA: 22, 22, 22, 22, 22, 24, 23 y 22 fechas reales. Pero chocolatería, heladería y restaurante-creativo traen un calendario MENSUAL de 12 filas (A5:F16, una por mes) con las fechas señaladas incrustadas como texto dentro de la columna B — verificado hoy por lectura directa de producción: chocolatería BONUS-02-calendario-anual-tareas.xlsx:'Calendario'!B6 «San Valentín (14)…», !B7 «Día del Padre (19 España)…», !B14 «Halloween (31)…»; heladería BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!B5 «Reyes: roscón helado…», !B7 «Semana Santa…»; restaurante-creativo BONUS-02-calendario-anual.xlsx:'Calendario Anual'!B5 «…Menú especial Año Nuevo (1 ene)…», !B16 «Menús Navidad, Nochebuena, Nochevieja…». En esos tres el 12 son MESES, no fechas: la landing debe decir «calendario anual mes a mes con las fechas señaladas del sector», nunca «12 fechas» (hoy publican 15 y 15, así que un cambio a 12 sería además un retroceso aparente).",
+    "hojas_checklist con tres criterios de recuento conviviendo — ver hallazgos_del_critico[2]. Fijar el criterio antes de tocar las landings.",
+    "casos_6 sigue publicándose con denominadores distintos (4/4, 5/5, 5/6, 6/6, 6/7, 7/7). Ningún caso aplicable falla en ningún kit, pero impide comparar informes de un vistazo. Ya lo señalaban critico-2 y critico-3.",
+    "T-06 (BONUS-01/02 de catering, hotel y chocolatería sin protección ni print_area): sin acción por decisión, reconfirmada.",
+    "Carry-overs baja ya documentados y sin cambio: cafetería BONUS-01:Briefing!B2 («Turno: ☐ Comida ☐ Cena» en una cafetería) · hamburguesería columna «Hora Límite» del 01 no monótona · hotel 13-mantenimiento.xlsx:'Trimestral y Anual'!B35 (escandallos dentro del bloque legal/inspección) · dark-kitchen 05:'Inventario Diario' (hoja preexistente fuera del molde) y el solape 01:'Cierre Cocina'!B24 ↔ 03:'Diario Manager'!B19 al 25 %."
+  ],
+
+  "cifras_landing": {
+    "fuente": "gates.recuento_tareas.total y .por_fichero del dry-run de motor 2.4 de cada kit (T-03, validado contra recuento manual independiente con 0,0 % de desviación en los 11), leídos de los <pid>-ver4.json. hojas_checklist normalizado al criterio (b) de hallazgos_del_critico[2].",
+    "tabla": [
+      {"pid": "kit-tareas-cafeteria", "tareas_total": 500, "tareas_01": 130, "hojas_checklist": 33, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-pizzeria", "tareas_total": 373, "tareas_01": 76, "hojas_checklist": 31, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-hamburgueseria", "tareas_total": 346, "tareas_01": 72, "hojas_checklist": 31, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-dark-kitchen", "tareas_total": 331, "tareas_01": 55, "hojas_checklist": 28, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-bar", "tareas_total": 342, "tareas_01": 54, "hojas_checklist": 28, "ficheros_total": 11, "fechas_bonus02": 23, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-catering", "tareas_total": 346, "tareas_01": 38, "hojas_checklist": 22, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-chocolateria", "tareas_total": 338, "tareas_01": 41, "hojas_checklist": 24, "ficheros_total": 11, "fechas_bonus02": 12, "unidad_bonus02": "MESES (calendario mensual, fechas dentro de la columna B) — NO publicar como «12 fechas»"},
+      {"pid": "kit-tareas-heladeria", "tareas_total": 298, "tareas_01": 43, "hojas_checklist": 25, "ficheros_total": 11, "fechas_bonus02": 12, "unidad_bonus02": "MESES (calendario mensual) — NO publicar como «12 fechas»"},
+      {"pid": "kit-tareas-hotel", "tareas_total": 636, "tareas_01": 64, "hojas_checklist": 53, "ficheros_total": 19, "fechas_bonus02": 24, "unidad_bonus02": "fechas (fila por fecha)"},
+      {"pid": "kit-tareas-restaurante-creativo", "tareas_total": 477, "tareas_01": 55, "hojas_checklist": 34, "ficheros_total": 13, "fechas_bonus02": 12, "unidad_bonus02": "MESES (calendario mensual) — NO publicar como «12 fechas»"},
+      {"pid": "kit-tareas", "tareas_total": 491, "tareas_01": 111, "hojas_checklist": 33, "ficheros_total": 11, "fechas_bonus02": 22, "unidad_bonus02": "fechas (fila por fecha)"}
+    ],
+    "correcciones_aplicadas_por_el_critico": [
+      "heladería hojas_checklist: 25 (4 molde ▸ + 21 P4, según su propia nota_dv), no el 4 del campo de primer nivel de su ver4.",
+      "catering hojas_checklist: 22 (barrido de libro completo, incluye las 3 hojas de 07 que llevan la DV sin contador), no el 19 del gate.",
+      "chocolatería 24 y heladería 25: sin la columna ✓ del BONUS-02, que ver3 sí contaba (25 y 26). El producto no ha cambiado; el criterio sí."
+    ]
+  },
+
+  "recomendacion": [
+    "1. Antes de tocar nada en real, COMMIT. motor.py, main.py, la SPEC §9 y los 5 módulos de contenido de la tanda 5 están sin commitear: un stash, un clean o un salto al VPS se lleva m1/m2/m3 y los fixes de dark-kitchen, catering, chocolatería, heladería y restaurante-creativo, y lo ejecutado dejaría de ser reproducible desde el repo.",
+    "2. Canario en real: kit-tareas-hamburgueseria. Es el que menos piezas mueve (0 hallazgos nuevos, módulo de contenido sin tocar, 11 ficheros, m1 no le cambia ninguna celda). Tras el APPLY, censo-entregables --fail sobre la carpeta real y gate-flujo-postpago antes de seguir.",
+    "3. Luego los ▸ restantes en serie —cafetería, pizzería, bar, dark-kitchen— y después los 5 P4 —catering, chocolatería, heladería, hotel, restaurante-creativo—, con istats antes de cada python y nunca dos intérpretes a la vez.",
+    "4. El representante kit-tareas, EL ÚLTIMO. Es el único ya vivo en v2.0 y su diff son 177 celdas (26 valor + 33 DV + 26 alturas + 92 locked) firmadas y reproducidas por dos partes; dejarlo para el final mantiene barato el rollback si algún kit anterior enseña algo.",
+    "5. Sólo después, la capa de producto: 11 landings + email + dashboard + changelog con la tabla de cifras_landing, y con los tres avisos aplicados — en chocolatería, heladería y restaurante-creativo el BONUS-02 son MESES y no «12 fechas»; hojas_checklist con un único criterio; y en restaurante-creativo el 09 ya no son «3 plantillas en blanco» sino tres ejes (franja horaria · partida · perfil) con ejemplos."
+  ],
+
+  "notas": [
+    "REGLAS DURAS respetadas: astro-site/public/dl/** NO modificado — la única ejecución de python fue una lectura openpyxl en read_only de 3 ficheros BONUS-02, para poder afirmar con evidencia propia que su calendario es mensual y no de fecha por fila. Sin dry-run, sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean. Un solo intérprete, python 3.7 (sin f-strings con '=' ni walrus).",
+    "REGLA TÉRMICA: istats antes de cada python — 44,75 °C y 46,88 °C. Nunca cerca de 60 °C, no hizo falta ningún sleep.",
+    "Criterio de bloqueo aplicado (el mismo de critico-3): bloquea quien tenga un hallazgo ALTO vivo, un fix declarado resuelto y aplicado a medias DENTRO del entregable, o diferencias no autorizadas contra producción. Los 6 hallazgos baja nuevos de la tanda (2 catering, 2 chocolatería, 1 heladería, más los carry-over) son cosméticos y ninguno toca gate, fórmula, recuento ni dinero.",
+    "Por qué chocolatería y heladería NO se bloquean pese a tener un fix «incompleto» a la vista: en los dos casos el código hizo EXACTAMENTE lo que declaraba (chocolatería reescribió 5 textos y las 4 zonas que pedía; heladería ancló la celda que citaba su hallazgo de ver3). Lo incompleto era la DECLARACIÓN, no la aplicación — al revés que en dark-kitchen en la tanda 4, donde el docstring prometía «el vocabulario de sala y terraza» y cubría 7 de 12. La diferencia importa: uno es un fix a medias dentro del entregable, el otro es un censo corto que se resuelve con la DECISIÓN 3.",
+    "Hueco de verificación de esta tanda, del mismo tipo que el de B40 (tanda 3) y el de la segunda mitad de la viñeta FRASE_NIVELES (tanda 4): el verificador de restaurante-creativo declaró «contenido sin cambios» sin mirar `git status` de su propio módulo, con el fix de DOM-07 corriendo dentro de su pasada. Esta vez el error va a favor del producto, pero la clase de fallo es la misma: dar por conocido el estado del código en vez de medirlo."
+  ]
+}

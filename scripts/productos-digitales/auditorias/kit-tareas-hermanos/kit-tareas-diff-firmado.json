@@ -1,0 +1,1289 @@
+{
+ "rol": "mantenedor del motor · kit-tareas-v2_0 · tanda 5 (motor 2.4) — DIFF FIRMADO del representante",
+ "fecha": "2026-08-23",
+ "modo": "SOLO LECTURA sobre astro-site/public/dl/kit-tareas (nunca escritura) · dry-run en CLAUDE_SCRATCHPAD=…/propio-mantenedor · sin KIT_TAREAS_APPLY · sin git",
+ "origen_produccion": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas",
+ "origen_dryrun": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-mantenedor/dryrun-kt/kit-tareas",
+ "herramienta": "main.digest + main.diff_digest con m3 (mensaje de DV: errorTitle/error/prompt; locked de TODAS las celdas, también las vacías; alturas y locked desglosados celda a celda). El digest de motor 2.3 comparaba type:formula1:sqref y sólo el locked de las celdas CON valor, y por eso contaba 127 donde el verificador contaba 177.",
+ "total_diferencias": 177,
+ "esperado_por_el_orquestador": "≈177: 26 valor + 33 DV + 26-28 alturas + 92 locked",
+ "recuento_por_categoria": {
+  "valor": 26,
+  "dv": 33,
+  "alturas": 26,
+  "locked": 92,
+  "merges": 0,
+  "cf": 0,
+  "print_area": 0,
+  "proteccion_hoja": 0,
+  "hojas": 0
+ },
+ "cuadre": "177 = 26 valor + 33 DV + 26 alturas + 92 locked. CERO diferencias en merges, formato condicional, print_area, protección de hoja y nº de hojas: no aparece ninguna categoría nueva, así que `pendiente` no recibe nada por este diff.",
+ "recuento_por_fichero": {
+  "01-apertura-cierre.xlsx": 10,
+  "02-partidas-cocina.xlsx": 7,
+  "03-tareas-manager.xlsx": 8,
+  "04-tareas-perfiles.xlsx": 9,
+  "05-tareas-semanales-mensuales.xlsx": 8,
+  "06-eventos-festivos.xlsx": 8,
+  "07-plantilla-personalizable.xlsx": 7,
+  "08-apertura-cierre-negocio.xlsx": 8,
+  "09-apertura-cierre-caja.xlsx": 12,
+  "BONUS-01-briefing-servicio.xlsx": 4,
+  "BONUS-02-calendario-anual-tareas.xlsx": 96
+ },
+ "categorias": {
+  "valor": {
+   "n": 26,
+   "desglose": {
+    "d — T-04 quita el paréntesis «(accesos, luces, clima, terraza)» de la línea del fichero de NEGOCIO (11 celdas, una por fichero)": 11,
+    "a5 — T-08: «No se duplican: cada uno cubre un nivel.» → FRASE_NIVELES de 3 niveles (11 celdas). El representante TIENE fichero de áreas, así que m1 NO le cambia el literal": 11,
+    "a4 — T-01: 08:Instrucciones!B40 deja de remitir al 01 como marco (1 celda)": 1,
+    "e — cola «Estás en …» específica de CAJA en 09:Instrucciones!B50 (1 celda)": 1,
+    "a3 — T-02: 09:'Apertura de Caja'!B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido…» (1 celda)": 1,
+    "a2 — DOM-01 (texto): 09:'Cierre de Caja'!B10 «Total facturado = efectivo + tarjetas + otros» → «… efectivo contado − fondo + …» (1 celda)": 1
+   },
+   "detalle": [
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "01-apertura-cierre.xlsx:Instrucciones!B35",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "02-partidas-cocina.xlsx:Instrucciones!B29",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "03-tareas-manager.xlsx:Instrucciones!B34",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "04-tareas-perfiles.xlsx:Instrucciones!B28",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Instrucciones!B34",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "06-eventos-festivos.xlsx:Instrucciones!B28",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "07-plantilla-personalizable.xlsx:Instrucciones!B41",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!B46",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "BONUS-01-briefing-servicio.xlsx:Instrucciones!B12",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "d",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Instrucciones!B12",
+     "antes": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día (accesos, luces, clima, terraza).",
+     "despues": "▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "01-apertura-cierre.xlsx:Instrucciones!B38",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "02-partidas-cocina.xlsx:Instrucciones!B32",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "03-tareas-manager.xlsx:Instrucciones!B37",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "04-tareas-perfiles.xlsx:Instrucciones!B31",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Instrucciones!B37",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "06-eventos-festivos.xlsx:Instrucciones!B31",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "07-plantilla-personalizable.xlsx:Instrucciones!B44",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!B39",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!B49",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "BONUS-01-briefing-servicio.xlsx:Instrucciones!B15",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a5",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Instrucciones!B15",
+     "antes": "▸ Orden de uso: local → áreas → caja. No se duplican: cada uno cubre un nivel.",
+     "despues": "▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a4",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!B40",
+     "antes": "▸ Estás en 08-apertura-cierre-negocio.xlsx: es una capa MÁS, no una repetición — el marco del día está en 01-apertura-cierre.xlsx.",
+     "despues": "▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx."
+    },
+    {
+     "categoria": "valor",
+     "firma": "e",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!B50",
+     "antes": "▸ Estás en 09-apertura-cierre-caja.xlsx: es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx y 01-apertura-cierre.xlsx.",
+     "despues": "▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08-apertura-cierre-negocio.xlsx y el detalle por zona, en 01-apertura-cierre.xlsx."
+    },
+    {
+     "categoria": "valor",
+     "firma": "a3",
+     "ref": "09-apertura-cierre-caja.xlsx:Apertura de Caja!B9",
+     "antes": "Encender TPV / POS",
+     "despues": "Comprobar que el TPV está encendido y abrir turno de caja"
+    },
+    {
+     "categoria": "valor",
+     "firma": "a2",
+     "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja!B10",
+     "antes": "Total facturado = efectivo + tarjetas + otros",
+     "despues": "Total facturado = efectivo contado − fondo + tarjetas + otros"
+    }
+   ]
+  },
+  "dv": {
+   "n": 33,
+   "que_cambia": "SÓLO el mensaje de error (DV_ERROR). En las 33 hojas la lista sigue siendo \"✓,—,N/A\" y el rango (sqref) es idéntico: 33/33 con solo_mensaje=true. Texto viejo «Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.» → nuevo «Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.» El viejo CONTRADECÍA la fórmula vigente desde DOM-R2-02 (sólo N/A sale del total).",
+   "detalle": [
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Apertura Barra",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Apertura Cocina",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F42 F43 F44 F45 F46 F47 F48 F49 F50:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F42 F43 F44 F45 F46 F47 F48 F49 F50:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Apertura Sala",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F30 F31 F32 F33 F34:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Cierre Barra",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Cierre Cocina",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F31 F32 F33 F34 F35 F36 F37 F38 F39 F40 F41:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "01-apertura-cierre.xlsx:Cierre Sala",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F20 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F20 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "02-partidas-cocina.xlsx:Calientes",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "02-partidas-cocina.xlsx:Fríos",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F16 F17 F18 F19 F22 F23 F24 F25 F26 F27 F28 F29 F30 F31:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "02-partidas-cocina.xlsx:Mise en Place",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "03-tareas-manager.xlsx:Diario Manager",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F26 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F26 F27 F28 F29 F30 F33 F34 F35 F36 F37 F38 F39 F40 F41 F42 F43:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "03-tareas-manager.xlsx:Handover Turno",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "03-tareas-manager.xlsx:Mensual Manager",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F27 F28 F29 F30 F31 F32 F33 F34 F35:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "03-tareas-manager.xlsx:Semanal Manager",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F25 F26 F27 F28 F31 F32 F33 F34 F37 F38 F39 F40 F41 F42 F43 F44 F45:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F19 F20 F21 F22 F25 F26 F27 F28 F31 F32 F33 F34 F37 F38 F39 F40 F41 F42 F43 F44 F45:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "04-tareas-perfiles.xlsx:Barman",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F12 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F12 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25 F26:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "04-tareas-perfiles.xlsx:Camarero",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "04-tareas-perfiles.xlsx:Jefe de Cocina",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "04-tareas-perfiles.xlsx:Jefe de Sala",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "04-tareas-perfiles.xlsx:Sous Chef",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F18 F19 F20 F21 F22 F23 F24 F25:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "05-tareas-semanales-mensuales.xlsx:FIFO Semanal",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F12 F13 F14 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F12 F13 F14 F17 F18 F19 F20 F23 F24 F25 F26 F27 F28 F29 F30 F31:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Limpieza Semanal",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F14 F17 F18 F19 F20 F21 F24 F25 F26 F27 F28 F29 F30 F31 F32:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F13 F14 F17 F18 F19 F20 F21 F24 F25 F26 F27 F28 F29 F30 F31 F32:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Mantenimiento Mensual",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F12 F15 F16 F17 F18 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Trimestral y Anual",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "06-eventos-festivos.xlsx:Navidad",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "06-eventos-festivos.xlsx:Pre-Evento",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F25 F28 F29 F30 F31 F32 F35 F36 F37 F38 F39 F40 F41 F42 F43:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F21 F22 F23 F24 F25 F28 F29 F30 F31 F32 F35 F36 F37 F38 F39 F40 F41 F42 F43:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "06-eventos-festivos.xlsx:San Valentín",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "06-eventos-festivos.xlsx:Temporada Terraza",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F11 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "07-plantilla-personalizable.xlsx:Por Perfil",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "07-plantilla-personalizable.xlsx:Por Área",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F6 F7 F8 F9 F10 F13 F14 F15 F16 F17 F20 F21 F22 F23 F24 F25 F26 F27 F28 F29:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22 F23 F24:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "08-apertura-cierre-negocio.xlsx:Cierre del Negocio",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 F17 F18 F19 F20 F21 F22:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "09-apertura-cierre-caja.xlsx:Apertura de Caja",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None"
+     ]
+    },
+    {
+     "categoria": "dv",
+     "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja",
+     "solo_mensaje": true,
+     "antes": [
+      "list:\"✓,—,N/A\":E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21:Marca no válida:Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). Las marcadas N/A o — salen del total.:None",
+      "whole:0:B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42:Cantidad no válida:Escribe el número de billetes o monedas: un número entero y positivo, sin decimales.:None"
+     ],
+     "despues": [
+      "list:\"✓,—,N/A\":E5 E6 E7 E8 E9 E10 E11 E12 E13 E14 E15 E16 E17 E18 E19 E20 E21:Marca no válida:Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.:None",
+      "whole:0:B27 B28 B29 B30 B31 B32 B33 B35 B36 B37 B38 B39 B40 B41 B42:Cantidad no válida:Escribe el número de billetes o monedas: un número entero y positivo, sin decimales.:None"
+     ]
+    }
+   ]
+  },
+  "alturas": {
+   "n": 26,
+   "desglose": {
+    "22 — las 11 Instrucciones, 2 filas cada una: la línea del fichero de negocio baja de 32 a 16 pt (texto más corto sin el paréntesis) y la de la frase T-08 sube de 16 a 48 pt (texto más largo)": 22,
+    "2 — la cola «Estás en …» de 08!fila 40 y 09!fila 50 sube de 32 a 48 pt": 2,
+    "2 — 09:'Apertura de Caja'!fila 9 y 09:'Cierre de Caja'!fila 10 pasan de 24,0 pt FIJOS a None: es `autoalto` (TEC-R2-13) quitando la altura fija porque el texto nuevo no cabe en una línea y se imprimiría recortado; Excel la autoajusta al abrir": 2
+   },
+   "detalle": [
+    {
+     "categoria": "alturas",
+     "ref": "01-apertura-cierre.xlsx:Instrucciones!fila 35",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "01-apertura-cierre.xlsx:Instrucciones!fila 38",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "02-partidas-cocina.xlsx:Instrucciones!fila 29",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "02-partidas-cocina.xlsx:Instrucciones!fila 32",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "03-tareas-manager.xlsx:Instrucciones!fila 34",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "03-tareas-manager.xlsx:Instrucciones!fila 37",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "04-tareas-perfiles.xlsx:Instrucciones!fila 28",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "04-tareas-perfiles.xlsx:Instrucciones!fila 31",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Instrucciones!fila 34",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "05-tareas-semanales-mensuales.xlsx:Instrucciones!fila 37",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "06-eventos-festivos.xlsx:Instrucciones!fila 28",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "06-eventos-festivos.xlsx:Instrucciones!fila 31",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "07-plantilla-personalizable.xlsx:Instrucciones!fila 41",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "07-plantilla-personalizable.xlsx:Instrucciones!fila 44",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!fila 36",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!fila 39",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "08-apertura-cierre-negocio.xlsx:Instrucciones!fila 40",
+     "antes": "32.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "09-apertura-cierre-caja.xlsx:Apertura de Caja!fila 9",
+     "antes": "24.0",
+     "despues": "None"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja!fila 10",
+     "antes": "24.0",
+     "despues": "None"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!fila 46",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!fila 49",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "09-apertura-cierre-caja.xlsx:Instrucciones!fila 50",
+     "antes": "32.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "BONUS-01-briefing-servicio.xlsx:Instrucciones!fila 12",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "BONUS-01-briefing-servicio.xlsx:Instrucciones!fila 15",
+     "antes": "16.0",
+     "despues": "48.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Instrucciones!fila 12",
+     "antes": "32.0",
+     "despues": "16.0"
+    },
+    {
+     "categoria": "alturas",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Instrucciones!fila 15",
+     "antes": "16.0",
+     "despues": "48.0"
+    }
+   ]
+  },
+  "locked": {
+   "n": 92,
+   "alcance": "TODO en BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!A5:D27 — 23 filas × 4 columnas = 92 celdas, las 92 de locked=True a locked=False. Ninguna cambia de valor, de formato ni de relleno, y ninguna otra hoja del producto cambia de bloqueo.",
+   "filas": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "por_que_23_y_no_22": "`calendario()` devuelve el cuerpo (hr+1, max(eventos+libres)) y `proteger` desbloquea ese rango entero. Las fechas ENTREGADAS son 22 (filas 5-26) y la 27 es la última fila libre del molde: está VACÍA, así que desbloquearla no expone nada — pero el alcance real es A5:D27 / 92 celdas, no el A5:D26 / 88 que comunicó motor-2.3.json. Es la diferencia (f) que el orquestador acepta en esta tanda.",
+   "detalle": [
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A5",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A6",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A7",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A8",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A9",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A10",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A11",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A12",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A13",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A14",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A15",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A16",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A17",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A18",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A19",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A20",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A21",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A22",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A23",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A24",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A25",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A26",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!A27",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B5",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B6",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B7",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B8",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B9",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B10",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B11",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B12",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B13",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B14",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B15",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B16",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B17",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B18",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B19",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B20",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B21",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B22",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B23",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B24",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B25",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B26",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!B27",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C5",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C6",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C7",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C8",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C9",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C10",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C11",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C12",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C13",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C14",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C15",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C16",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C17",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C18",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C19",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C20",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C21",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C22",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C23",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C24",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C25",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C26",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!C27",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D5",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D6",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D7",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D8",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D9",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D10",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D11",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D12",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D13",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D14",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D15",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D16",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D17",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D18",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D19",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D20",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D21",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D22",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D23",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D24",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D25",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D26",
+     "cambio": "True -> False"
+    },
+    {
+     "categoria": "locked",
+     "ref": "BONUS-02-calendario-anual-tareas.xlsx:Calendario Anual!D27",
+     "cambio": "True -> False"
+    }
+   ]
+  },
+  "merges": {
+   "n": 0,
+   "detalle": []
+  },
+  "cf": {
+   "n": 0,
+   "detalle": []
+  },
+  "print_area": {
+   "n": 0,
+   "detalle": []
+  },
+  "proteccion_hoja": {
+   "n": 0,
+   "detalle": []
+  },
+  "hojas": {
+   "n": 0,
+   "detalle": []
+  }
+ },
+ "firmas_del_orquestador_cubiertas": [
+  "(d) FIRMADO — el paréntesis del fichero de negocio se deriva de sus bandas reales y, si no se puede, se OMITE. En el representante queda SIN paréntesis: las 11 celdas de la categoría «valor/d».",
+  "(e) FIRMADO — la cola «Estás en …» del fichero de CAJA es la específica de caja: 09-apertura-cierre-caja.xlsx:Instrucciones!B50.",
+  "(c) ACEPTADO — alturas autoalto donde el texto creció: las 26 de la categoría «alturas».",
+  "(f) ACEPTADO — el calendario del representante desbloquea A5:D27 (23 filas; la 27 vacía): las 92 de la categoría «locked»."
+ ],
+ "categorias_nuevas": [],
+ "nota_final": "Este diff SUSTITUYE al recuento de 127 de motor-2.3.json y coincide EXACTO con las 177 diferencias que contó por su cuenta el verificador del representante (26 + 33 + 26 + 92). Con m3 el propio `main.py` ya lo mide: no hace falta volver a verificar el mensaje de las DV aparte."
+}

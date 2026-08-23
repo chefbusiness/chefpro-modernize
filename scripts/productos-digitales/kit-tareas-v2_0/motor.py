@@ -164,6 +164,25 @@ FRASE_NIVELES = (
     'abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de '
     'caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una '
     'es el hito y la otra el detalle.')
+#: m1 (tanda 5) — la frase de arriba enumera TRES niveles, y en los cinco kits
+#: del molde P4 el kit sólo tiene dos ficheros en alcance: no hay fichero de
+#: ÁREAS. La misma viñeta abría «Orden de uso: local → caja» (dos pasos) y
+#: seguía «…el de áreas detalla CÓMO se hace en cada zona…» (tres ficheros): se
+#: contradecía a sí misma en 10 celdas (catering 08!B38 y 09!B49, chocolatería
+#: 08!B37 y 09!B48, heladería 08!B37 y 09!B48, hotel 18!B37 y 19!B48,
+#: restaurante-creativo 10!B37 y 11!B48). Es la misma clase de defecto que T-01:
+#: una rama que no comprueba el caso que la contradice. Se condiciona a
+#: `CTX['f_areas']`, que es lo mismo que mira `_bloque_conecta` para decidir si
+#: emite la línea de áreas y si mete «áreas» en el orden de uso.
+FRASE_NIVELES_SIN_AREAS = (
+    'Cada fichero cubre un nivel: el de negocio marca el HITO (encender, '
+    'abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los '
+    'dos, es a propósito: una es el hito y la otra el detalle.')
+
+
+def frase_niveles():
+    """m1 — la frase de T-08 con los niveles que este kit tiene DE VERDAD."""
+    return FRASE_NIVELES if CTX.get('f_areas') else FRASE_NIVELES_SIN_AREAS
 
 #: R3-f — solape MEDIDO de cada banda contra el marco (08/09), se anote o no.
 #: El umbral del ≥80 % no lo alcanza ninguna banda de los kits auditados (el
@@ -2550,8 +2569,11 @@ def _bloque_conecta(fname):
     if len(orden) > 1:
         # T-08 — la promesa impresa era más fuerte que lo que el motor
         # garantiza (el umbral del 80 % deja pasar solapes del 25-40 %).
+        # m1 — y la frase enumera SÓLO los niveles que este kit tiene: sin
+        # fichero de áreas, «el de áreas detalla CÓMO…» contradecía al «Orden
+        # de uso: local → caja» de la misma viñeta.
         lineas.append(('b', 'Orden de uso: ' + ' → '.join(orden) + '. '
-                            + FRASE_NIVELES))
+                            + frase_niveles()))
     # DOM-R2-17/COM-R2-13 — hasta aquí el bloque es el MISMO en los 11 ficheros
     # y sólo nombra tres. El lector de las semanales acababa leyendo «local →
     # áreas → caja. Estás en 05-…», que no es ninguna de las tres cosas, y el

@@ -70,10 +70,14 @@ hoja a hoja), pero la numeración no coincide con la del representante:
   05-tareas-semanales-mensuales.xlsx → el «05» del representante, tal cual
   07-chefs-table-eventos.xlsx        → el «06 Eventos» del representante
   09-plantilla-personalizable.xlsx   → el «07» del representante. Sus tres
-                                       hojas se entregaban EN BLANCO (DOM-07):
-                                       el motor no puede llenarlas —no sabe de
-                                       qué va el kit—, así que las tres filas
-                                       de ejemplo las pone este módulo (`_f09`)
+                                       hojas se entregaban EN BLANCO (DOM-07)
+                                       y, después, con las MISMAS tres filas
+                                       de ejemplo: el motor no puede llenarlas
+                                       —no sabe de qué va el kit— ni las
+                                       reconoce (se llaman «Plantilla A/B/C»,
+                                       no «Por Franja Horaria»…), así que el
+                                       eje de cada hoja y sus ejemplos los
+                                       pone este módulo (`_f09` / `EJES`)
 
 Por eso:
   · el registro diario de jornada (DOM-17) va al cierre de 01, que es la única
@@ -1176,23 +1180,134 @@ def _f07(wb, cambios):
 #: `main.py` sumaría 9 tareas de mentira al recuento del kit, que es la cifra
 #: que va a la landing. Con la marca, el contador sigue en «0 de 0» y el
 #: recuento del producto no se mueve ni una tarea.
+#: DOM-07 RESIDUAL (verificación ver3, tanda 5) — las tres filas de ejemplo
+#: arreglaron la hoja EN BLANCO, pero las escribían IGUALES en «Plantilla A»,
+#: «B» y «C»: el fichero seguía entregando la misma plantilla tres veces y la
+#: SPEC §2.3 pide justo lo contrario, tres EJES distintos. El motor no lo
+#: alcanza aquí (`diferenciar_07` pasa por `motor.geometria`, del molde ▸, y
+#: además exige que la hoja se llame «Por Franja Horaria» / «Por Área» / «Por
+#: Perfil»: estas se llaman «Plantilla A/B/C» y son molde P4), así que el eje
+#: lo pone este módulo.
+#:
+#: El eje se escribe en TRES sitios de la hoja, todos celdas que YA existen:
+#:   · el rótulo A1 (banda de título, merge A1:G1) — con el mismo formato que
+#:     ya usan chocolatería y heladería en su 07: «Plantilla Personalizable —
+#:     Por Zona / Por Turno / Por Perfil»;
+#:   · el texto de las tres tareas de ejemplo, que abren con el valor del eje
+#:     en mayúsculas (MISE EN PLACE DE MAÑANA / PARTIDA DE FRÍO / SUMILLER…);
+#:   · la columna «Zona» de esas tres filas y, SÓLO en «Plantilla C»,
+#:     «Responsable» — que es lo que §2.3 pide para «Por Perfil» y lo que
+#:     distingue a C de las otras dos de un vistazo.
+#:
+#: Lo que NO se toca, a propósito:
+#:   · el NOMBRE de la pestaña («Plantilla A»), que es el ancla de este módulo
+#:     y de las Instrucciones del fichero;
+#:   · la fila 2, que en los 11 ficheros P4 de este kit es la MISMA línea de
+#:     marca («AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo /
+#:     De Autor»): cambiarla sólo en tres hojas rompería la uniformidad del
+#:     producto entero para decir algo que ya dice A1;
+#:   · el contador (fila 30), el rango que cuenta, el merge, los anchos y las
+#:     alturas: las filas de ejemplo siguen siendo las tres primeras LIBRES
+#:     dentro del rango y siguen marcadas «N/A».
+#:
+#: Los rótulos van a 39-46 caracteres. Es el margen medido del kit: los A1 del
+#: molde P4 van de 16 a 57 caracteres (el más largo, «Mantenimiento Trimestral
+#: y Anual — Revisiones Contratadas», lo escribe este mismo módulo en 05) y
+#: ninguno lleva altura de fila propia, así que pasarse obligaría a fijar la
+#: altura de una celda combinada — maquetación, justo lo que no se toca.
 PLANTILLAS = ('Plantilla A', 'Plantilla B', 'Plantilla C')
 GRIS_EJEMPLO = 'FF999999'
-EJEMPLOS = [
-    ('Ejemplo (escribe encima o borra la fila): cerrar los pases del nuevo '
-     'menú degustación con I+D — fichas, orden y tiempos', 'I+D'),
-    ('Ejemplo (escribe encima o borra la fila): briefing del chef\'s table '
-     'del viernes — comensales, alérgenos y storytelling de cada pase',
-     "Chef's table"),
-    ('Ejemplo (escribe encima o borra la fila): prueba de emplatado del plato '
-     'nuevo y foto para la plating bible', 'Emplatado'),
+
+#: Por qué estos tres ejes y no otros: son los que pide el orquestador sobre
+#: la §2.3 y los que ya promete la landing del producto («por partida, por
+#: turno y por perfil»); «franja horaria» es además el nombre canónico de la
+#: familia (`motor.SINONIMOS_07` mapea «por turno» fuera y «por franja» →
+#: «Por Franja Horaria»).
+#:
+#: Cada hoja lleva TRES ejemplos —los mismos tres que ya tenía, no se añade ni
+#: se quita ninguna fila— y el eje de B y de C tiene CUATRO valores, así que
+#: el cuarto (pastelería · jefe de partida) no tiene ejemplo escrito: se
+#: enumera en las Instrucciones. Preferible a meter dos partidas en una línea,
+#: que es exactamente el duplicado que este módulo persigue en el resto del
+#: kit.
+EJES = {
+    'Plantilla A': {
+        'rotulo': 'Plantilla Personalizable A — Por Franja Horaria',
+        'eje': 'franja horaria',
+        'valores': 'mise en place de mañana, pase y cierre',
+        'ejemplos': (
+            ('Ejemplo — MISE EN PLACE DE MAÑANA (escribe encima o borra la '
+             'fila): sacar las pre-elaboraciones del día y cotejarlas con el '
+             'pase del menú degustación', 'Mise en place', None),
+            ('Ejemplo — PASE (escribe encima o borra la fila): briefing con '
+             'la brigada antes del primer pase — comensales, alérgenos y '
+             'storytelling', 'Pase', None),
+            ('Ejemplo — CIERRE (escribe encima o borra la fila): anotar las '
+             'mermas del día (producto, cantidad y motivo) y cerrar cámaras '
+             'y pase', 'Cocina', None),
+        ),
+    },
+    'Plantilla B': {
+        'rotulo': 'Plantilla Personalizable B — Por Partida',
+        'eje': 'partida',
+        'valores': 'I+D, frío, caliente y pastelería',
+        'ejemplos': (
+            ('Ejemplo — PARTIDA DE I+D (escribe encima o borra la fila): '
+             'cerrar la ficha del plato nuevo — pases, orden en el menú y '
+             'tiempos', 'I+D', None),
+            ('Ejemplo — PARTIDA DE FRÍO (escribe encima o borra la fila): '
+             'repasar encurtidos, fermentados y flores comestibles del menú',
+             'Frío', None),
+            ('Ejemplo — PARTIDA DE CALIENTE (escribe encima o borra la '
+             'fila): baños térmicos, fondos y salsas a punto antes del primer '
+             'pase', 'Caliente', None),
+        ),
+    },
+    'Plantilla C': {
+        'rotulo': 'Plantilla Personalizable C — Por Perfil',
+        'eje': 'perfil',
+        'valores': ('jefe de cocina, jefe de partida, sumiller y jefe de '
+                    'sala'),
+        'ejemplos': (
+            ('Ejemplo — JEFE DE COCINA (escribe encima o borra la fila): '
+             'validar escandallo y ficha del plato nuevo antes de que entre '
+             'en el menú', 'Cocina', 'Jefe de cocina'),
+            ('Ejemplo — SUMILLER (escribe encima o borra la fila): repasar el '
+             'maridaje pase a pase y las botellas abiertas (nivel y fecha)',
+             'Bodega', 'Sumiller'),
+            ('Ejemplo — JEFE DE SALA (escribe encima o borra la fila): '
+             'repartir rangos y repasar alérgenos por mesa con la brigada de '
+             'sala', 'Sala', 'Jefe de sala'),
+        ),
+    },
+}
+
+#: Las dos líneas de «Instrucciones» que este cambio deja MINTIENDO. La
+#: primera decía «hojas en blanco» cuando ya traen ejemplos —el mismo desfase
+#: que el verificador anotó sobre la landing— y la segunda afirmaba
+#: literalmente lo que la SPEC §2.3 prohíbe. Sustitución 1:1, sin mover filas.
+INSTR_09 = [
+    ('▸ Usa estas hojas en blanco para crear tus propios checklists.',
+     '▸ Usa estas tres hojas para montar tus propios checklists: cada una '
+     'trae tres filas de ejemplo que puedes reescribir o borrar.'),
+    ('▸ Las 3 plantillas son idénticas para que tengas margen.',
+     '▸ Cada plantilla va por un eje distinto (A franja horaria · B partida · '
+     'C perfil): el detalle, más abajo.'),
 ]
 
 
-def _fila_ejemplo(ws, fila, texto, zona, marca):
-    """Fila de ejemplo: tarea normal + marca «N/A» + gris y cursiva."""
+def _fila_ejemplo(ws, fila, texto, zona, marca, responsable=None):
+    """Fila de ejemplo: tarea normal + marca «N/A» + gris y cursiva.
+
+    `responsable` sólo lo usa «Plantilla C»: en el eje POR PERFIL el dato que
+    diferencia la fila es la persona, y §2.3 pide precisamente «Responsable
+    precargado» en esa hoja. En A y B se deja vacía, como en todo el molde P4
+    de este kit.
+    """
     _escribir_tarea(ws, fila, texto, zona)
     ws.cell(row=fila, column=marca).value = 'N/A'
+    if responsable:
+        ws.cell(row=fila, column=4).value = responsable
     for c in range(1, NCOL + 1):
         cel = ws.cell(row=fila, column=c)
         f = cel.font
@@ -1208,7 +1323,19 @@ def _f09(wb, cambios):
             raise AnclaPerdida('09-plantilla-personalizable: no encuentro la '
                                'hoja «{}»'.format(titulo))
         ws = wb[titulo]
-        if _fila(ws, EJEMPLOS[0][0]) is not None:
+        cfg = EJES[titulo]
+        ejemplos = cfg['ejemplos']
+        # 1) El rótulo de la hoja dice de qué EJE es. Va primero y aparte del
+        #    bloque de ejemplos: si compartiera el `continue` de más abajo, la
+        #    2.ª pasada saltaría el rótulo sin haberlo comprobado nunca.
+        if ws.cell(row=1, column=1).value != cfg['rotulo']:
+            ws.cell(row=1, column=1).value = cfg['rotulo']
+            cambios.append('«{}»: el rótulo A1 pasa a «{}» — las tres hojas '
+                           'eran la MISMA plantilla renombrada (DOM-07 '
+                           'residual, SPEC §2.3)'
+                           .format(titulo, cfg['rotulo']))
+            tocado = True
+        if _fila(ws, ejemplos[0][0]) is not None:
             continue                                   # ya están (2.ª pasada)
         g = motor.geometria_p4(ws)
         if not g:
@@ -1223,23 +1350,48 @@ def _f09(wb, cambios):
                    for c in range(1, NCOL + 1)):
                 continue
             libres.append(r)
-            if len(libres) == len(EJEMPLOS):
+            if len(libres) == len(ejemplos):
                 break
-        if len(libres) < len(EJEMPLOS):
+        if len(libres) < len(ejemplos):
             cambios.append('«{}»: NO se han puesto las filas de ejemplo — '
                            'sólo hay {} filas libres dentro del rango del '
                            'contador y hacen falta {} (DOM-07)'
-                           .format(titulo, len(libres), len(EJEMPLOS)))
+                           .format(titulo, len(libres), len(ejemplos)))
             continue
-        for fila, (texto, zona) in zip(libres, EJEMPLOS):
-            _fila_ejemplo(ws, fila, texto, zona, g['marca'])
+        for fila, (texto, zona, resp) in zip(libres, ejemplos):
+            _fila_ejemplo(ws, fila, texto, zona, g['marca'], resp)
         _renumerar_p4(ws)
-        cambios.append('«{}»: {} filas de EJEMPLO en gris y cursiva con el '
-                       'vocabulario del kit (menú degustación, chef\'s table, '
-                       'I+D, plating bible), marcadas «N/A» para que no '
-                       'cuenten en el contador ni en el recuento del producto; '
-                       'la hoja se entregaba en blanco — DOM-07'
-                       .format(titulo, len(EJEMPLOS)))
+        cambios.append('«{}»: {} filas de EJEMPLO en gris y cursiva, una por '
+                       'cada valor del eje POR {} ({}), marcadas «N/A» para '
+                       'que no cuenten en el contador ni en el recuento del '
+                       'producto — DOM-07'
+                       .format(titulo, len(ejemplos), cfg['eje'].upper(),
+                               cfg['valores']))
+        tocado = True
+    ws_i = wb['Instrucciones'] if 'Instrucciones' in wb.sheetnames else None
+    if ws_i is not None:
+        for viejo, nuevo in INSTR_09:
+            if _sustituir(ws_i, viejo, nuevo) is not None:
+                cambios.append('Instrucciones: «{}» → «{}» (DOM-07 residual: '
+                               'la hoja ya no está en blanco y las tres '
+                               'plantillas ya no son idénticas)'
+                               .format(viejo, nuevo))
+                tocado = True
+    if _instrucciones(wb, 'Cada plantilla tiene su propio eje:', [
+            'Plantilla A — POR FRANJA HORARIA: una fila por momento del día '
+            '(mise en place de mañana, pase y cierre). Es la que se imprime y '
+            'se cuelga en el pase.',
+            'Plantilla B — POR PARTIDA: una fila por partida (I+D, frío, '
+            'caliente y pastelería). Reparte el trabajo del menú entre quien '
+            'lo ejecuta.',
+            'Plantilla C — POR PERFIL: una fila por persona (jefe de cocina, '
+            'jefe de partida, sumiller y jefe de sala), con el perfil escrito '
+            'en la columna «Responsable».',
+            'Los ejemplos cubren tres valores de cada eje; el cuarto de B '
+            '(pastelería) y el de C (jefe de partida) los escribes tú en la '
+            'primera fila verde libre.']):
+        cambios.append('Instrucciones: qué eje lleva cada plantilla y qué '
+                       'valores cubre — DOM-07 residual (SPEC §2.3)')
         tocado = True
     if _instrucciones(wb, 'Las tres filas de ejemplo:', [
             'Cada plantilla arranca con tres filas de EJEMPLO en gris y en '
@@ -1248,8 +1400,8 @@ def _f09(wb, cambios):
             'Van marcadas «N/A» a propósito, que es como no cuentan en '
             '«Tareas completadas». Si escribes tu tarea sobre una de ellas, '
             'cambia esa marca o la fila seguirá sin sumar.',
-            'El vocabulario es el de esta casa (menú degustación, chef\'s '
-            'table, I+D, plating bible): cámbialo por el tuyo.']):
+            'El vocabulario es el de esta casa (menú degustación, mise en '
+            'place, pase, partidas, maridaje): cámbialo por el tuyo.']):
         cambios.append('Instrucciones: qué son las tres filas de ejemplo y por '
                        'qué van marcadas «N/A» — DOM-07')
         tocado = True

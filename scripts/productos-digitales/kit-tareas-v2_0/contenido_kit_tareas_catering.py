@@ -69,6 +69,16 @@ Por eso:
     renueva el ATP del vehículo y paga la póliza — no en un libro de montaje;
   · el orden seguro campana → gas → equipos (DOM-13) y la higiene personal
     (DOM-12) van a 01 «Producción», que es donde se enciende la cocina.
+
+LA EXCEPCIÓN: el 08 TAMBIÉN lleva contenido propio (molde «▸»)
+================================================================================
+El 11.º fichero, `08-apertura-cierre-negocio.xlsx`, sí es molde «▸» y sí lo
+normaliza el motor, pero su LISTA DE TAREAS es la genérica del generador v1.1,
+la misma en los 12 kits de la familia: un checklist de restaurante con sala
+abierta al público (pizarra de menú, sistema de reservas, música ambiente,
+cartas/menús, terraza) dentro de un kit de producción off-site. El motor no
+puede arreglarlo —es contenido de sector, no estructura—, así que se traduce
+aquí, 1:1 y en la misma fila. Detalle y reglas, en el bloque del 08, más abajo.
 """
 import copy
 
@@ -1015,6 +1025,165 @@ def _bonus02(wb, cambios):
 
 
 # ==========================================================================
+# 08-apertura-cierre-negocio.xlsx — el único fichero de molde «▸» de este
+# módulo: vocabulario del OFICIO
+# ==========================================================================
+#: El 08 y el 09 son los dos únicos ficheros de este kit que el motor reconoce
+#: como molde «▸», y su contenido viene del generador v1.1 GENÉRICO de los 12
+#: kits: una lista pensada para un restaurante con sala abierta al público.
+#: `kit-tareas-catering-ver3.json` §7 lo censó como hallazgo BAJO —«pizarra de
+#: menú», «sistema de reservas», «música ambiente», «cartas/menús»— en una
+#: empresa que produce off-site y a la que no entra un comensal por la puerta.
+#: Aquí se traduce al oficio, tarea a tarea y EN LA MISMA FILA.
+#:
+#: Tres cosas condicionan este bloque y no se pueden perder de vista:
+#:
+#:  · **Es 1:1 y sólo de texto.** Ni una fila nueva, ni una borrada: el
+#:    recuento del kit (346 tareas, `gates.recuento_tareas`, que desde T-03 es
+#:    la fuente de la landing) tiene que salir idéntico antes y después.
+#:  · **Las columnas D («Responsable») y E («Hora Límite» / «Cuándo») NO se
+#:    tocan.** Las precarga `motor.precargar_negocio` POR ÍNDICE de fila, no
+#:    por el texto de la tarea, así que reescribir la B no mueve una sola hora
+#:    (comprobado leyendo la función: `resp`/`hora` salen de `i`, no de la
+#:    celda). Escribir ahí desde aquí, en cambio, rompería el gate
+#:    `negocio_precargado`.
+#:  · **El texto se escribe en su FORMA ESTABLE.** A diferencia del molde P4,
+#:    aquí `motor.textos_de_tarea` sí corre —y corre ANTES que este módulo, en
+#:    `aplicar`—, así que en la 2.ª pasada volvería a leer lo que se escriba
+#:    aquí. `_reescribir` lo pasa por `motor.forma_estable` (grados, Pack APPCC
+#:    y §2.9), que es idempotente: si el texto ya está en su forma final, no
+#:    encuentra nada que cambiar y la idempotencia se mantiene en 0.
+#:
+#: La columna C («Zona») sí se ajusta cuando la zona heredada nombra un sitio
+#: que este negocio no tiene («Sala», «Terraza»). No la usa ningún gate ni
+#: ninguna fórmula —T-04 descartó a propósito la columna «Zona» como fuente de
+#: los paréntesis de «Se conecta con» justamente porque es la misma en los 12
+#: kits— y en el molde «▸» va en verde y desbloqueada, es decir, es una celda
+#: que el cliente edita. Las zonas nuevas son todas zonas que ya existen en la
+#: propia hoja (Logística, Almacén, Oficina, Exterior): no se inventa ninguna.
+#:
+#: Lo que NO se toca: B10 («Encender TPV / POS / datáfono»), que es el hito de
+#: T-02 y el gate `tpv_duplicado` cuenta; y las Instrucciones del 08 y del 09,
+#: que las reescribe `motor.reescribir_instrucciones` en cada pasada (meter
+#: aquí una línea sería una diferencia nueva en cada pasada).
+
+#: Carga de isotermos: el texto se compone con `motor.LECTURA` para que el
+#: hueco de la lectura sea EXACTAMENTE el mismo literal del resto del corpus.
+#: El detalle (pre-enfriado, temperatura por GN, ruta y descarga) vive en la
+#: hoja «Transporte» de 02, y la frase de T-08 que el propio fichero imprime
+#: admite ese solape: «una es el hito y la otra el detalle».
+CARGA_ISOTERMOS = (
+    'Cargar los isotermos de los eventos que salen primero y registrar la '
+    'temperatura de salida' + motor.LECTURA +
+    ' (el detalle de la carga va en la hoja «Transporte» de '
+    '02-partidas-cocina.xlsx)')
+
+#: (viejo, nuevo, zona nueva o None para dejar la que tiene)
+NEGOCIO_APERTURA = [
+    ('Desactivar alarma del local',
+     'Desactivar la alarma y abrir el obrador, el almacén de material y el '
+     'muelle de carga', None),
+    ('Montar señalización exterior / pizarra de menú',
+     CARGA_ISOTERMOS, None),
+    ('Encender sistema de reservas / tablet de pedidos',
+     'Entregar a cada conductor la hoja de ruta de su vehículo: eventos, '
+     'direcciones, horas de entrega y teléfono de contacto', 'Logística'),
+    ('Poner música ambiente al volumen adecuado',
+     'Imprimir las órdenes de servicio del día y repartirlas: una para '
+     'producción, una para transporte y una para el responsable de cada '
+     'evento', 'Oficina'),
+    ('Revisar reservas del día y eventos especiales',
+     'Confirmar con cada cliente el número definitivo de comensales y los '
+     'cambios de última hora', None),
+    ('Comprobar baños: papel, jabón, limpieza, ambientador',
+     'Comprobar aseos y vestuario del personal: papel, jabón, papel de manos '
+     'y limpieza', None),
+    ('Revisar estado del mobiliario (sillas, mesas, iluminación)',
+     'Revisar el mobiliario y la mantelería que salen hoy (mesas, sillas y '
+     'tableros) y apartar lo dañado', 'Almacén'),
+    ('Montar terraza si aplica (mesas, sillas, sombrillas/estufas)',
+     'Preparar el material de exterior si hay evento al aire libre: carpas, '
+     'sombrillas, estufas y lastres', 'Exterior'),
+    ('Comprobar que las cartas/menús están en orden',
+     'Confirmar con cada recinto el acceso y el horario de montaje: muelle, '
+     'ascensor, permisos y persona de contacto', 'Oficina'),
+    ('Encender displays / pantallas informativas si las hay',
+     'Briefing con el equipo del día: eventos, horas críticas, alérgenos y '
+     'quién va en cada servicio (el guion completo está en '
+     'BONUS-01-briefing-servicio.xlsx)', None),
+]
+
+NEGOCIO_CIERRE = [
+    ('Apagar música ambiente',
+     'Apagar los equipos del obrador que no queden en marcha (hornos, '
+     'freidora, campana) y dejar cámaras y abatidor encendidos', None),
+    ('Verificar que no quedan clientes en el local',
+     'Verificar que no queda personal ni visitas en el obrador antes de '
+     'cerrar', 'General'),
+    ('Limpiar y recoger terraza si aplica',
+     'Recoger y guardar el material de exterior que haya vuelto (carpas, '
+     'sombrillas y estufas)', 'Exterior'),
+    ('Recoger señalización exterior',
+     'Despejar y baldear el muelle de carga: sin carros, sin palés y sin '
+     'residuos', None),
+]
+
+
+def _reescribir(ws, viejo, nuevo, zona=None):
+    """Sustitución 1:1 en la columna «Tarea» del molde «▸». Devuelve la fila
+    si ha cambiado algo, o None si ya estaba como debe.
+
+    `motor.forma_estable` deja el texto tal y como lo dejaría el motor: es la
+    garantía de que la 2.ª pasada no encuentre nada que reescribir.
+    """
+    nuevo = motor.forma_estable(nuevo)
+    cambiada = _sustituir(ws, viejo, nuevo) is not None
+    fila = _exige(ws, nuevo)
+    if zona is not None:
+        cel = ws.cell(row=fila, column=3)
+        if cel.value != zona:
+            cel.value = zona
+            cambiada = True
+    return fila if cambiada else None
+
+
+def _f08(wb, cambios):
+    """Devuelve SIEMPRE False: no cambia la estructura del libro.
+
+    Si devolviera True, `main.py` volvería a pasar el motor entero sobre un
+    libro cuya geometría es la misma — trabajo inútil y una oportunidad más de
+    que algo se mueva.
+    """
+    for hoja, filas in (('Apertura del Negocio', NEGOCIO_APERTURA),
+                        ('Cierre del Negocio', NEGOCIO_CIERRE)):
+        ws = wb[hoja]
+        tocadas = [_reescribir(ws, viejo, nuevo, zona)
+                   for viejo, nuevo, zona in filas]
+        tocadas = [r for r in tocadas if r]
+        # R3-d, la misma lección que documenta `motor.autoaltos`: la pasada de
+        # alturas va DESPUÉS del último cambio de texto. `aplicar` ya la hizo,
+        # pero midiendo el texto VIEJO (corto): 10 de estas tareas son más
+        # largas y con altura fija de 24 pt se imprimirían recortadas por el
+        # final. Sin esto, la 1.ª pasada dejaba 24 y la 2.ª —que ya lee el
+        # texto nuevo— lo ponía en `None`: 12 diferencias de idempotencia sin
+        # nada roto. `autoalto` sólo QUITA la altura fija, nunca la repone, así
+        # que repetirlo no mueve nada.
+        motor.autoaltos(ws, cambios)
+        if tocadas:
+            cambios.append(
+                '«%s»: %d tareas reescritas del vocabulario de restaurante '
+                'con sala (pizarra de menú, reservas, música ambiente, '
+                'cartas/menús, terraza) al oficio del catering —órdenes de '
+                'servicio, hoja de ruta de vehículos, carga de isotermos con '
+                'temperatura de salida, material por evento y accesos del '
+                'recinto— en las filas %s; D y E (Responsable y Hora) '
+                'intactas — ver3 §7'
+                % (ws.title, len(tocadas),
+                   ', '.join('B' + str(r) for r in tocadas)))
+    return False
+
+
+# ==========================================================================
 # API
 # ==========================================================================
 FICHEROS = {
@@ -1031,6 +1200,16 @@ FICHEROS = {
 SOLO_GRADOS = ('04-tareas-perfiles.xlsx', '07-plantilla-personalizable.xlsx',
                'BONUS-01-briefing-servicio.xlsx')
 
+#: Ficheros de molde «▸» con contenido propio. Van por una rama APARTE porque
+#: la cola de `post()` es del molde P4 y aquí haría daño: `motor.REGISTRO.clear()`
+#: borraría las fórmulas que acaba de registrar `motor.aplicar` (el gate de
+#: cache dejaría de comprobarlas) y `motor.normalizar_p4` no tiene nada que
+#: hacer en un libro que ya pasó por el molde ▸ y que aún tiene por delante
+#: `motor.cerrar`.
+FICHEROS_FLECHA = {
+    '08-apertura-cierre-negocio.xlsx': _f08,
+}
+
 
 def post(wb, fname, cambios):
     """CONTENIDO sobre un libro ya normalizado por `motor.aplicar`.
@@ -1040,6 +1219,9 @@ def post(wb, fname, cambios):
     así que la reconstrucción del contador, del formato condicional y del
     desplegable se hace AQUÍ antes de salir.
     """
+    flecha = FICHEROS_FLECHA.get(fname)
+    if flecha is not None:
+        return flecha(wb, cambios)
     fn = FICHEROS.get(fname)
     if fn is None and fname not in SOLO_GRADOS:
         return False

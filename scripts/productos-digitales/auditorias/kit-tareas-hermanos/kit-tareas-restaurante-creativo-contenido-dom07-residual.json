@@ -1,0 +1,60 @@
+{
+  "rol": "mantenedor del módulo de CONTENIDO · kit-tareas-restaurante-creativo · DOM-07 residual (tanda 5, motor 2.4)",
+  "fecha": "2026-08-23",
+  "modo": "SOLO dry-run · astro-site/public/dl/** NO tocado (git status --short astro-site/public/dl sin salida)",
+  "fichero_codigo": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_restaurante_creativo.py",
+  "comando": "CLAUDE_SCRATCHPAD=<scratch>/propio-cont-kit-tareas-restaurante-creativo python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-restaurante-creativo --dry-run --json <scratch>/kt-hermanos-5/kit-tareas-restaurante-creativo-cont.json",
+  "hallazgo_de_partida": "ver3.json → motor_no_resueltos[0]: «09-plantilla-personalizable.xlsx ya no se entrega en blanco (3 filas de ejemplo por hoja), pero las tres hojas Plantilla A/B/C siguen siendo IDÉNTICAS entre sí — el SPEC §2.3 pide diferenciación (franja horaria / área / perfil)».",
+
+  "por_que_lo_hace_el_modulo_y_no_el_motor": "motor.diferenciar_07 exige DOS cosas que este fichero no cumple: motor.geometria(ws) (geometría del molde ▸, que devuelve None en estas hojas P4) y que el título de la hoja esté en motor.PLANTILLA_07 / SINONIMOS_07 («Por Franja Horaria» / «Por Área» / «Por Perfil» y plurales). Estas hojas se llaman «Plantilla A/B/C», así que cfg_07 nunca se llega a evaluar. Es contenido del kit, no estructura de familia.",
+
+  "cambios_por_celda": {
+    "09-plantilla-personalizable.xlsx:'Plantilla A'!A1": "'Plantilla Personalizable A' → 'Plantilla Personalizable A — Por Franja Horaria' (47 car.)",
+    "09-plantilla-personalizable.xlsx:'Plantilla B'!A1": "'Plantilla Personalizable B' → 'Plantilla Personalizable B — Por Partida' (40 car.)",
+    "09-plantilla-personalizable.xlsx:'Plantilla C'!A1": "'Plantilla Personalizable C' → 'Plantilla Personalizable C — Por Perfil' (39 car.)",
+    "09:'Plantilla A'!B5/C5": "'Ejemplo — MISE EN PLACE DE MAÑANA (escribe encima o borra la fila): sacar las pre-elaboraciones del día y cotejarlas con el pase del menú degustación' · Zona 'Mise en place' (FFF3E0)",
+    "09:'Plantilla A'!B6/C6": "'Ejemplo — PASE (…): briefing con la brigada antes del primer pase — comensales, alérgenos y storytelling' · Zona 'Pase'",
+    "09:'Plantilla A'!B7/C7": "'Ejemplo — CIERRE (…): anotar las mermas del día (producto, cantidad y motivo) y cerrar cámaras y pase' · Zona 'Cocina'",
+    "09:'Plantilla B'!B5/C5": "'Ejemplo — PARTIDA DE I+D (…): cerrar la ficha del plato nuevo — pases, orden en el menú y tiempos' · Zona 'I+D' (E8EAF6)",
+    "09:'Plantilla B'!B6/C6": "'Ejemplo — PARTIDA DE FRÍO (…): repasar encurtidos, fermentados y flores comestibles del menú' · Zona 'Frío'",
+    "09:'Plantilla B'!B7/C7": "'Ejemplo — PARTIDA DE CALIENTE (…): baños térmicos, fondos y salsas a punto antes del primer pase' · Zona 'Caliente'",
+    "09:'Plantilla C'!B5/C5/D5": "'Ejemplo — JEFE DE COCINA (…): validar escandallo y ficha del plato nuevo antes de que entre en el menú' · Zona 'Cocina' · Responsable 'Jefe de cocina'",
+    "09:'Plantilla C'!B6/C6/D6": "'Ejemplo — SUMILLER (…): repasar el maridaje pase a pase y las botellas abiertas (nivel y fecha)' · Zona 'Bodega' (F3E5F5) · Responsable 'Sumiller'",
+    "09:'Plantilla C'!B7/C7/D7": "'Ejemplo — JEFE DE SALA (…): repartir rangos y repasar alérgenos por mesa con la brigada de sala' · Zona 'Sala' (E3F2FD) · Responsable 'Jefe de sala'",
+    "09:Instrucciones!B5": "'▸ Usa estas hojas en blanco para crear tus propios checklists.' → '▸ Usa estas tres hojas para montar tus propios checklists: cada una trae tres filas de ejemplo que puedes reescribir o borrar.'",
+    "09:Instrucciones!B8": "'▸ Las 3 plantillas son idénticas para que tengas margen.' → '▸ Cada plantilla va por un eje distinto (A franja horaria · B partida · C perfil): el detalle, más abajo.'",
+    "09:Instrucciones!B15-B19": "bloque nuevo «Cada plantilla tiene su propio eje:» con los 4 valores de cada eje y la advertencia de que los ejemplos cubren 3 de ellos",
+    "09:Instrucciones!B24": "vocabulario del bloque de ejemplos actualizado (ya no cita «chef's table / plating bible», que dejaron de aparecer en los ejemplos)"
+  },
+
+  "lo_que_NO_se_ha_movido": {
+    "contador": "'Plantilla A/B/C'!C30 y !E30 idénticos al baseline: =COUNTIFS(B5:B29,\"?*\",E5:E29,\"✓\")-COUNTIFS(B5:B29,\"Tarea\",E5:E29,\"✓\") · =COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\") · cache 0.0 / 0.0 («0 de 0»)",
+    "recuento_del_producto": "gates.recuento_tareas.total = 477, igual que en ver3 (las 9 filas siguen marcadas N/A en E5:E7)",
+    "maquetacion": "anchos A..G = 5/45/14/18/12/12/15 sin cambio · merges A1:G1, A2:G2, A31:G31 sin cambio · row_dimensions[1].height sigue None (no se fija altura en celda combinada: por eso los rótulos se quedan en 39-47 car., dentro del rango 16-57 que ya usa el kit) · DV sqref E5:E29 · CF A5:G29 · pie A31 intacto",
+    "fila_2": "'AI Chef Pro · aichef.pro — Kit de Tareas: Restaurante Creativo / De Autor' — es la MISMA línea en los 11 ficheros P4 del kit; cambiarla en 3 hojas rompería la uniformidad para decir lo que ya dice A1",
+    "nombre_de_las_pestañas": "'Plantilla A/B/C' — son el ancla de este módulo y de Instrucciones!B2, y renombrarlas no haría que motor.diferenciar_07 las cogiera (sigue exigiendo motor.geometria, molde ▸)"
+  },
+
+  "gates": {
+    "exit": 0,
+    "idempotencia_diferencias": 0,
+    "censo_entregables_fail": "0 defectos",
+    "negocio_precargado": "10-apertura-cierre-negocio.xlsx · 33 tareas · huecos=[] · firma_ok=true (VERDE)",
+    "dv_y_bio": "DV «✓,—,N/A» 0 incorrectas · bio 13/13 · 0 sin versión 2.0",
+    "inject_cache": "09: formulas=6 cache=6 fallos_pycel=0 · producto: 145 fórmulas con valor, 0 fallos",
+    "recuento_tareas": 477,
+    "unicidad_A_B_C": "0 celdas iguales entre las tres hojas comparando A1+B5+B6+B7 (antes: 4 de 4 iguales)",
+    "barrido_caracteres_no_latinos": "0 en las 4 hojas del fichero"
+  },
+
+  "pendiente_fuera_de_este_modulo": [
+    "astro-site/src/data/productos/tareas/kit-tareas-restaurante-creativo.ts:154 — desc: '3 plantillas en blanco (por partida, por turno y por perfil)'. Dos desfases: (a) «en blanco» dejó de ser cierto con el fix de DOM-07 de la tanda anterior; (b) los ejes ahora son franja horaria / partida / perfil, no partida / turno / perfil. Es la landing (astro-site), no el módulo de contenido: lo tiene que aplicar quien lleve §4."
+  ],
+
+  "notas": [
+    "Regla térmica: istats antes de cada arranque de python; 42,6-47,4 °C durante todo el trabajo, nunca dos intérpretes a la vez, sin builds ni Playwright.",
+    "Sin git add/commit/stash/clean. `git status --short astro-site/public/dl` sin salida antes y después.",
+    "Los ejes B y C tienen CUATRO valores y sólo TRES filas de ejemplo (la instrucción fija 3 por hoja): el cuarto —pastelería y jefe de partida— se enumera en Instrucciones!B17/B18 y se declara explícitamente en B19. Preferido a meter dos partidas en una misma línea, que es justo el duplicado que este módulo persigue en el resto del kit.",
+    "El formato del rótulo («Plantilla Personalizable X — Por Y») es el que ya usan chocolatería y heladería en su 07 (scripts/generate-tareas-chocolateria.py:808-810, scripts/generate-tareas-heladeria.py:776-778), así que la familia queda homogénea."
+  ]
+}

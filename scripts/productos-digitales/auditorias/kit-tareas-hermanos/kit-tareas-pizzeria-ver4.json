@@ -1,0 +1,99 @@
+{
+ "rol": "verificador independiente · kit-tareas-pizzeria · tanda 5 (motor 2.4)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-pizzeria",
+ "modo": "SOLO dry-run · astro-site/public/dl/** intacto (no leído ni tocado) · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean · CLAUDE_SCRATCHPAD=propio-verificador5",
+ "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador5 python3 kit-tareas-v2_0/main.py --producto kit-tareas-pizzeria --dry-run --json .../kt-hermanos-5/kit-tareas-pizzeria.json",
+
+ "resultado_dryrun": {
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_fail_exit": 0,
+  "censo_defectos": 0,
+  "nota_idempotencia": "0 diferencias en la 2.ª pasada YA CON el digest endurecido de m3 (main.digest ahora compara errorTitle/error/prompt de cada DataValidation y locked de TODAS las celdas del rango usado, no sólo las que tienen valor). El motor de pizzería escribe DV y protección de forma absoluta y no genera falso rojo con el listón nuevo.",
+  "cache_inyectado": "0 fallos_pycel en los 11 xlsx (05 tiene 40 fórmulas totales por la hoja Trimestral y Anual, 8 nuevas cacheadas)",
+  "data_only_formulas_nuevas": {"con_valor": 139, "fallos": 0},
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "dv_hojas_checklist": 31,
+  "dv_incorrectas": 0,
+  "bio_instrucciones": "11/11",
+  "version_desfasada": 0,
+  "recuento_tareas_total_gate": 373,
+  "recuento_tareas_por_fichero_gate": {
+   "01-apertura-cierre.xlsx": 76, "02-partidas-cocina.xlsx": 39, "03-tareas-manager.xlsx": 55,
+   "04-tareas-perfiles.xlsx": 63, "05-tareas-semanales-mensuales.xlsx": 47, "06-eventos-festivos.xlsx": 39,
+   "07-plantilla-personalizable.xlsx": 0, "08-apertura-cierre-negocio.xlsx": 31,
+   "09-apertura-cierre-caja.xlsx": 23, "BONUS-01-briefing-servicio.xlsx": 0, "BONUS-02-calendario-anual-tareas.xlsx": 0
+  }
+ },
+
+ "verificacion_m2_dedup_bandas": {
+  "gates_bandas_solapadas": [
+   {"hoja": "Cierre Sala!A13", "banda": "DELIVERY Y CAJA", "tareas": 6, "casadas": 2, "ratio": 0.33, "destinos": ["08-apertura-cierre-negocio.xlsx"], "anotada": false},
+   {"hoja": "Cierre Cocina!A11", "banda": "HORNO Y EQUIPOS", "tareas": 4, "casadas": 1, "ratio": 0.25, "destinos": ["08-apertura-cierre-negocio.xlsx"], "anotada": false}
+  ],
+  "ok": true,
+  "evidencia": "EXACTAMENTE 2 entradas, cada banda una sola vez (la clave de m2 sin nº de fila no ha cambiado nada visible en pizzería porque en tanda 4 ya salía sin duplicar en A13/A11 — a diferencia de dark-kitchen, donde m2 sí fusionó A28/A29). Ambas por debajo de UMBRAL_BANDA=0,8 (0,33 y 0,25), NO anotadas — decisión de umbral firmada en SPEC §9.2/T-08, no un defecto."
+ },
+
+ "verificacion_m1_frase_niveles": {
+  "contexto_kit": "areas=01-apertura-cierre.xlsx (pizzería SÍ tiene fichero de áreas, molde «▸», no es de los 5 kits P4 que m1 modifica)",
+  "frase_niveles_ok": true,
+  "evidencia": "11/11 Instrucciones con la frase de TRES niveles ('▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO..., el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito...'): 01!B25 · 02!B25 · 03!B25 · 04!B25 · 05!B32 · 06!B25 · 07!B44 · 08!B39 · 09!B49 · BONUS-01!B15 · BONUS-02!B15. 0/11 con la frase de DOS niveles (FRASE_NIVELES_SIN_AREAS) — correcto, porque m1 sólo condiciona a CTX['f_areas'], y pizzería SÍ lo tiene.",
+  "no_se_duplican_ocurrencias": 0
+ },
+
+ "casos_6": [
+  {"caso": "arqueo-cuadra: fondo 150, contado 1150, tarjetas 800, Z 1800 → DESCUADRE 0", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':C54 evaluado a 0 con pycel"},
+  {"caso": "arqueo-descuadra: Z 1790 → DESCUADRE +10, CF ámbar", "ok": true, "evidencia": "misma celda evaluada a 10 (informe main.py, paso 6/7)"},
+  {"caso": "contador-honesto: N/A sale, «—» no sale", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':F46 → '27 de 27' con pycel"},
+  {"caso": "denominador-07 por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria':F31 evaluado a 8"},
+  {"caso": "08 precargado sin huecos", "ok": true, "evidencia": "informe: '31 tareas, 0 sin Responsable u Hora'; fichero 08-apertura-cierre-negocio.xlsx firma de negocio OK"},
+  {"caso": "bio + versión 2.0 en 11/11 Instrucciones", "ok": true, "evidencia": "gate dv_y_bio 11/11, DV «✓,—,N/A» 31 hojas de checklist 0 incorrectas, 0 sin versión 2.0"}
+ ],
+ "casos6_ok": 6,
+ "casos6_total": 6,
+
+ "recuento_gate": 373,
+ "tareas_total_manual_01": 76,
+ "hojas_checklist": 31,
+ "fechas_bonus02": 22,
+ "fechas_bonus02_evidencia": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual' filas 5-26 = 22 filas con fecha/evento entregados (Enero a Diciembre); fila 27 vacía (separador); filas 28-32 son las 5 plantillas '(Tu fecha)'/'(Añade aquí)' sin contar; fila 34 es el pie del kit, fuera de la tabla. Coincide con la nota de ver3.json ('5 fechas nuevas en BONUS-02, 22 filas de fecha totales').",
+
+ "ficheros_total": 11,
+
+ "otro_molde_no_roto": {
+  "comprobacion": "Los 11 xlsx abren sin excepción en modo fórmula y en modo data_only; barrido completo de todas las celdas de los 11 ficheros sin '#REF!', '#NAME?', '#VALUE!', '#DIV' ni '#N/A' cacheados.",
+  "no_latinos": "0 caracteres CJK/hangul/cirílico/árabe en los 11 xlsx (barrido celda a celda, fórmulas y valores)."
+ },
+
+ "barrido_vocabulario_ajeno_sector": {
+  "alcance": "las 11 hojas Instrucciones + 08-apertura-cierre-negocio.xlsx + 09-apertura-cierre-caja.xlsx, todas las celdas",
+  "terminos_probados": ["cafetería", "hotel", "catering", "chocolate/chocolatería", "helado/heladería", "hamburguesa/hamburguesería", "sushi", "dark kitchen", "ghost kitchen", "restaurante creativo", "cóctel/coctelería", "brunch", "buffet", "repostería", "panadería", "sommelier", "check-in", "huésped", "habitación", "room service", "anisakis", "sashimi"],
+  "hallazgos_encontrados": 0
+ },
+
+ "fixes_tanda5_ok": true,
+ "motivo_fixes_tanda5_ok": "Los dos fixes de motor 2.4 aplicables a este hermano están confirmados: (m2) gates.bandas_solapadas trae exactamente 2 entradas, una por banda, sin duplicar; (m3) idempotencia 0 con el digest endurecido (mensaje de DV + locked de todas las celdas). El de motor m1 se cumple: pizzería SÍ tiene fichero de áreas (f_areas=01-apertura-cierre.xlsx), por lo que le corresponde y mantiene la frase de TRES niveles en 11/11 Instrucciones, con 0 apariciones de la frase vieja 'No se duplican'. No hay ningún fix de tanda 5 declarado para pizzería en motor-2.4.json 'pendiente' salvo el re-dry-run mismo (que es lo que esta verificación ejecuta y confirma en verde).",
+
+ "hallazgos_persistentes_no_nuevos": [
+  {
+   "hallazgo": "01-apertura-cierre.xlsx:'Apertura Sala'!B11-B12 ('Verificar TPV/datáfono funcionando' + 'Preparar fondo de caja') sigue leyendo como el mismo gesto que 08!B10 (encender TPV, 09:00) y 09!B9 (comprobar TPV/abrir turno, 09:30). Documentado ya en ver3.json (severidad baja) y ahora también en SPEC §9.5 ('caja fuera del 09') como pendiente reconocido y explícitamente SIN acción en esta tanda por decisión del orquestador — no bloquea.",
+   "severidad": "baja",
+   "estado": "persiste, sin cambio, ya documentado fuera de esta tanda"
+  }
+ ],
+
+ "hallazgos_nuevos": [],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Nada rompe: exit 0 en dry-run y censo (0 defectos), idempotencia 0 incluso con el digest endurecido de m3, cero fórmulas rotas/#REF/no-latinos en los 11 xlsx, UNA sola lista de DV en las 31 hojas de checklist, 6/6 casos §6 con pycel, recuento del gate 373 sin cambio frente a tanda 4. Los fixes de tanda 5 aplicables a pizzería (m2 dedup de bandas, m3 digest endurecido, m1 vía su condición f_areas) están los tres confirmados en verde. Barrido de vocabulario ajeno al sector en 08/09/Instrucciones: 0 hallazgos. El único hallazgo que persiste es de severidad BAJA, ya conocido desde tanda 3 y explícitamente fuera de alcance de esta tanda por decisión del orquestador (SPEC §9.5). Ningún hallazgo nuevo de severidad alta ni media.",
+
+ "notas": [
+  "Todo verificado sobre una copia DESECHABLE (CLAUDE_SCRATCHPAD=propio-verificador5, carpeta dryrun-kt/kit-tareas-pizzeria); astro-site/public/dl/kit-tareas-pizzeria/ NO se ha tocado ni leído en esta ronda.",
+  "Temperatura CPU vigilada con istats antes de arrancar python: 43,56 °C (muy por debajo de 60 °C); un solo intérprete de Python, sin builds ni Playwright, sin paralelismo.",
+  "SPEC §9 releída completa (9.1 a 9.5) antes de verificar, para acotar qué fixes de tanda 5 aplican de verdad a pizzería (m2, m3, condición de m1) y cuáles son ajenos (m1 en sí sólo toca los 5 kits P4 sin fichero de áreas: catering/chocolatería/heladería/hotel/restaurante-creativo).",
+  "motor-2.4.json 'pendiente' lista pizzería explícitamente entre los '6 hermanos ▸ restantes' cuyo re-dry-run tras m2/m3 faltaba por medir: esta verificación es esa medición, y sale en verde.",
+  "No se ha tocado ningún fichero del repo salvo la escritura de este JSON de salida."
+ ]
+}

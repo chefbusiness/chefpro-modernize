@@ -1,0 +1,89 @@
+{
+  "rol": "verificador independiente · kit-tareas-cafeteria · tanda 5 (motor 2.4)",
+  "pid": "kit-tareas-cafeteria",
+  "fecha": "2026-08-23",
+  "fuente": "astro-site/public/dl/kit-tareas-cafeteria (LEÍDO, no tocado) → copia scratchpad vía CLAUDE_SCRATCHPAD",
+  "modo": "SOLO --dry-run, dos ejecuciones INDEPENDIENTES de main.py --producto kit-tareas-cafeteria (motor 2.4 = m1+m2+m3, contenido_kit_tareas_cafeteria.py SIN CAMBIOS respecto a la tanda 4 — git status no lo lista modificado), sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean",
+
+  "resultado_dryrun": {
+    "exit_1a_corrida": 0,
+    "exit_2a_corrida_independiente": 0,
+    "censo_fail_exit": 0,
+    "censo_defectos": 0,
+    "idempotencia_interna_1a_vs_2a_pasada_digest_m3": 0,
+    "reproducibilidad_entre_corridas_independientes": {
+      "descripcion": "corrida A (CLAUDE_SCRATCHPAD=propio-verificador5) vs corrida B (propio-verificador5b), ambas desde CERO, comparadas celda a celda en las 11 xlsx (todas las hojas, todas las celdas de valor, sin data_only)",
+      "diffs_celda_a_celda": 0,
+      "veredicto": "reproducible; motor 2.4 (m1/m2/m3) + contenido_kit_tareas_cafeteria son deterministas a nivel de contenido"
+    },
+    "inject_cache": "143 fórmulas con valor, 0 fallos pycel (ambas corridas)",
+    "ficheros_todos_abren_sin_roturas": true,
+    "bad_values_ref_name_data_only": 0
+  },
+
+  "listas_dv_del_producto": ["✓,—,N/A"],
+  "hojas_checklist_con_dv": 33,
+  "dv_incorrectas": [],
+  "instrucciones_con_bio": "11/11, 0 sin_bio, 0 version_desfasada",
+
+  "casos_6": [
+    {"caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → 0", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel, dos corridas)"},
+    {"caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10, CF ámbar", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel, dos corridas)"},
+    {"caso": "Contador con N/A: 22 tareas efectivas → «22 de 22»", "ok": true, "ref": "01-apertura-cierre.xlsx:Apertura Barra Café:D40/F40 (pycel, dos corridas)"},
+    {"caso": "07 plantilla personalizable: denominador por fórmula, 8 tareas escritas → «8»", "ok": true, "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 (pycel, dos corridas)"},
+    {"caso": "08 precargado: ninguna tarea sin Responsable/Hora", "ok": true, "ref": "gate negocio_precargado: 31 tareas, huecos=[], firma_ok=true"},
+    {"caso": "Bio en todas las Instrucciones, versión 2.0", "ok": true, "ref": "gate dv_y_bio: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]"}
+  ],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+
+  "frase_niveles_ok": true,
+  "frase_niveles_evidencia": "Cafetería tiene fichero de áreas (contexto.f_areas = 01-apertura-cierre.xlsx), así que m1 (frase_niveles() de motor.py) NO le toca ni una celda: la viñeta «Orden de uso» sigue en 3 NIVELES en 11/11 Instrucciones (01!B25 · 02!B25 · 03!B25 · 04!B25 · 05!B31 · 06!B25 · 07!B44 · 08!B39 · 09!B49 · BONUS-01!B15 · BONUS-02!B15): «▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.» Coherente con que el kit SÍ tiene fichero de áreas (regla: 3 niveles si hay áreas, 2 si no — cafetería cae en el primer caso). 0 apariciones de «No se duplican» en las 11 Instrucciones + 33 hojas de checklist (grep celda a celda). Coincide exactamente con lo que declara el mantenedor en motor-2.4.json (bloque «kit-tareas-cafeteria · m1 REGRESIÓN VERDE»).",
+
+  "recuento_gate": 500,
+  "tareas_total_manual": 500,
+  "recuento_manual_metodo": "gates.recuento_tareas.total del propio dry-run (T-03, fuente única desde tanda 4): 01=130 · 02=53 · 03=69 · 04=75 · 05=62 · 06=57 · 07=0 · 08=31 · 09=23 · BONUS-01=0 · BONUS-02=0 → 500, recuento_por_molde={checklist_▸:500, p4:0} (cafetería es kit ▸ puro, sin ficheros P4). Idéntico en las dos corridas independientes y a la tanda 4 (ver3.json) y a lo medido por el mantenedor en motor-2.4.json.",
+  "tareas_01": 130,
+  "hojas_checklist": 33,
+  "ficheros_total": 11,
+  "fechas_bonus02": 22,
+  "fechas_bonus02_evidencia": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!A5:A26 = 22 filas con fecha/evento real (Enero 1 Ene a Diciembre 31 Dic). Fila 27 VACÍA (última fila libre del molde, coincide con la firma (f) del orquestador sobre el representante: A5:D27 = 23 filas, la 27 sin dato). Filas 28-30 son los tres placeholders «(Tu fecha)» / «(Añade aquí)», EXCLUIDOS del recuento por instrucción explícita.",
+
+  "gates_bandas_solapadas": [
+    {"hoja": "Cierre Sala!A22", "banda": "CAJA Y CIERRE", "tareas": 5, "casadas": 2, "ratio": 0.4, "destinos": ["08-apertura-cierre-negocio.xlsx", "09-apertura-cierre-caja.xlsx"], "anotada": false},
+    {"hoja": "Apertura Sala!A25", "banda": "LIMPIEZA RÁPIDA", "tareas": 4, "casadas": 1, "ratio": 0.25, "destinos": ["08-apertura-cierre-negocio.xlsx"], "anotada": false},
+    {"hoja": "Cierre Sala!A17", "banda": "ESTACIONES Y BAÑOS", "tareas": 4, "casadas": 1, "ratio": 0.25, "destinos": ["08-apertura-cierre-negocio.xlsx"], "anotada": false}
+  ],
+  "gates_bandas_solapadas_nota": "3 entradas, SIN duplicado de fila (m2 no tenía nada que deduplicar aquí: el bug de m2 —clave con nº de fila— sólo se manifestaba en kits donde el módulo de contenido inserta una fila sobre la banda, como dark-kitchen; en cafetería las bandas no se mueven entre pasadas). Idéntico a lo publicado por el mantenedor en motor-2.4.json. UMBRAL_BANDA=0,8 se mantiene (decisión firmada, T-08/9.4): el solape 25-40% queda sin anotar mecánicamente pero ya no lo desmiente ningún texto, porque la frase de T-08 admite el solape a propósito.",
+
+  "fixes_tanda5_ok": true,
+  "fixes_tanda5_evidencia": "contenido_kit_tareas_cafeteria.py NO aparece modificado en git status (los fixes de contenido de este kit —espresso, T-01/T-02/T-08— ya se aplicaron y verificaron en la tanda 4/ver3, y persisten intactos: verificado en esta corrida). Los fixes de MOTOR declarados para tanda 5 (m1/m2/m3) SÍ aplican al motor y a cómo se mide el kit: m1 se cumple con el resultado correcto para un kit CON fichero de áreas (frase de 3 niveles, verificado arriba, celda a celda); m2 no tenía nada que corregir en este kit (0 duplicados de banda con nº de fila distinto, coincide con lo declarado); m3 sólo endurece lo que MIDE el gate (digest con mensaje de DV + locked de celdas vacías), no cambia el entregable — verificado: idempotencia sigue en 0 con el digest nuevo. Todas las cifras de esta corrida (500 tareas, 11 ficheros, 33 hojas DV, 3 bandas sin anotar, frase de 3 niveles en 11/11) coinciden EXACTAMENTE con las que el mantenedor declara para cafetería en motor-2.4.json (bloque «kit-tareas-cafeteria (REGRESIÓN)»).",
+
+  "otro_molde_intacto": "No aplica en sentido estricto: cafetería es kit ▸ puro (recuento_por_molde.p4=0, no tiene ficheros del molde P4). Verificado igualmente que las 11 xlsx (el único molde presente) abren sin roturas y 0 #REF!/#NAME? en data_only en las dos corridas.",
+
+  "barrido_vocabulario_ajeno": {
+    "alcance": "08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx y la hoja «Instrucciones» de las 11 xlsx",
+    "terminos": "pizza, hamburguesa/burger, dark kitchen, marisco/marisquería, cóctel, chocolatería/chocolate, heladería/helado, hotel/habitación/huésped, bar (con límite de palabra, para no disparar con «barra»), asador, parrilla, carnicería, sushi, wok, ramen, panadería, obrador, catering, banquete, food truck",
+    "hallazgos_nuevos_reales": 0,
+    "nota": "Primera pasada sin límite de palabra dio 30 falsos positivos, todos por «bar» dentro de «barra»/«barra café»/«barra de autoservicio» (legítimo: cafetería SÍ tiene barra). Repetido con regex \\b...\\b: 0 coincidencias reales."
+  },
+
+  "hallazgo_persistente_no_nuevo": {
+    "donde": "BONUS-01-briefing-servicio.xlsx:Briefing!B2",
+    "texto": "«Fecha: ___/___/______    Turno: ☐ Comida  ☐ Cena    Encargado: _________________________»",
+    "estado": "SIGUE PRESENTE, verificado en esta corrida. NO es hallazgo nuevo: ya lo reportó ver2/ver3 como severidad baja y sigue fuera de alcance de contenido_kit_tareas_cafeteria.py (que no toca BONUS-01), y esta tanda no tocó ese módulo de contenido."
+  },
+
+  "hallazgos_nuevos": [],
+
+  "bloquea_real": false,
+  "bloquea_real_motivo": "(1)-(2) todos verdes: exit 0 en dos corridas independientes, censo --fail 0, idempotencia interna 0 con el digest endurecido de m3, 0 diffs celda a celda entre las dos corridas, DV única «✓,—,N/A» en 33 hojas, bio+versión 11/11, 6/6 casos §6 con pycel, frase_niveles_ok=true (3 niveles, coherente con que el kit SÍ tiene fichero de áreas), 0 apariciones de «No se duplican», 0 #REF!/#NAME? en data_only. No hay fix de contenido declarado para cafetería en esta tanda 5 que verificar (el módulo no cambió) y el fix de motor m1 se cumple correctamente para este kit. 0 hallazgos nuevos (el único hallazgo abierto —Turno Comida/Cena del BONUS-01— es persistente, ya reportado, severidad baja, y no entra en el conteo de 'hallazgos nuevos altos').",
+
+  "notas": [
+    "istats antes de cada arranque: 43,5-45,8 °C durante todo el trabajo, muy por debajo de 65 °C; python en serie, nunca dos a la vez; sin builds ni Playwright.",
+    "REGLAS DURAS respetadas: astro-site/public/dl/** no se ha tocado en ningún momento (sólo LEÍDO como fuente); todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD propio (propio-verificador5 y propio-verificador5b); sin KIT_TAREAS_APPLY; sin git add/commit/stash/clean; kit-tareas (representante) no se ha regenerado.",
+    "Diferencia respecto a ver3 (tanda 4/motor 2.3): esta tanda verifica el mismo kit sobre motor 2.4 (m1+m2+m3 de motor.py/main.py). Ninguna cifra de negocio cambia (500 tareas, 11 ficheros, 33 hojas DV, frase de 3 niveles, 3 bandas sin anotar) porque m1/m2 no tienen nada que corregir en cafetería (SÍ tiene áreas, y sus bandas no se mueven entre pasadas) y m3 sólo endurece la MEDICIÓN del gate, no el entregable — consistente con lo que motor-2.4.json llama explícitamente «(REGRESIÓN)» para este kit.",
+    "No se ha citado como hallazgo nuevo el resto de campos «☐ Mañana ☐ Tarde ☐ Noche» de las 19 hojas del molde ▸: es cabecera compartida de TODA la familia (motor-level), ya descartada en tandas anteriores, y esta tanda no tocó ese contenido.",
+    "gates.recuento_tareas para 07 = 0 porque son plantillas en blanco (nada que contar hasta que el cliente escriba); coherente con la SPEC y no es un defecto."
+  ]
+}

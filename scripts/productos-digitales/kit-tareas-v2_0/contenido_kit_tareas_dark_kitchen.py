@@ -15,6 +15,14 @@ congelación. Y, del verificador de la tanda 3
 (`kit-tareas-dark-kitchen-ver2.json`, `hallazgos_nuevos`), el vocabulario de
 sala y terraza que quedaba en 08-apertura-cierre-negocio.xlsx (`_f08`).
 
+TANDA 4 (`kit-tareas-dark-kitchen-ver3.json`, `hallazgos_nuevos` #1, BLOQUEO):
+`_f08` cubría 7 de las 12 tareas del 08 y dejaba vivas cinco —«pizarra de
+menú», «música ambiente» ×2 y «restaurante» ×2— en un negocio 100 % delivery
+sin público. Las cinco se sustituyen 1:1 (misma fila, D/E intactas) al
+vocabulario del kit: «marca(s)», riders, plataformas. Y el hallazgo baja de ese
+mismo informe, BONUS-01:Instrucciones!B6 («el jefe de sala o manager»), en
+`INS_BRIEFING`.
+
 NO es de familia. `main.py` lo carga sólo con
 `--producto kit-tareas-dark-kitchen` (compone el nombre del módulo con el pid,
 guiones → guiones bajos), así que aquí se puede hablar de «Estación Fría», de
@@ -296,6 +304,39 @@ def _instrucciones(wb, encabezado, lineas):
     for i, txt in enumerate(lineas, start=1):
         ws.cell(row=fila + i, column=col).value = '▸ ' + txt
     return True
+
+
+def _sustituir_instrucciones(wb, viejo, nuevo):
+    """Sustitución 1:1 de UNA línea ya existente de «Instrucciones».
+
+    Distinto de `_instrucciones`, que AÑADE un bloque al final. Aquí se reescribe
+    una línea que viene baked-in en el molde original del fichero, así que hay
+    que aceptar los dos formatos: con la viñeta «▸ » (que es como sale del
+    molde de BONUS-01, y como la vuelve a emitir `motor.reescribir_instrucciones`
+    en `cerrar`) y sin ella. La viñeta se conserva tal cual estaba.
+
+    Idempotente: primero barre la hoja entera buscando el texto NUEVO —si ya
+    está, no hay nada que hacer— y sólo después busca el viejo. No levanta
+    `AnclaPerdida`: si la línea no está, no está.
+    """
+    if 'Instrucciones' not in wb.sheetnames:
+        return False
+    ws = wb['Instrucciones']
+    celdas = [(r, c) for r in range(1, ws.max_row + 1) for c in (1, 2)
+              if isinstance(ws.cell(row=r, column=c).value, str)]
+    for r, c in celdas:
+        v = ws.cell(row=r, column=c).value.strip()
+        if v == nuevo or v == '▸ ' + nuevo:
+            return False                               # ya está
+    for r, c in celdas:
+        v = ws.cell(row=r, column=c).value.strip()
+        if v == viejo:
+            ws.cell(row=r, column=c).value = nuevo
+            return True
+        if v == '▸ ' + viejo:
+            ws.cell(row=r, column=c).value = '▸ ' + nuevo
+            return True
+    return False
 
 
 # ==========================================================================
@@ -850,8 +891,10 @@ def _f06(wb, cambios):
 # ==========================================================================
 # 08 — apertura y cierre del NEGOCIO (el marco del día)
 # ==========================================================================
-#: Hallazgo del verificador de la tanda 3 (media) — el 08 es el ÚNICO fichero
-#: del kit que seguía escrito para un restaurante con comedor: mandaba
+#: Hallazgos de los verificadores de las tandas 3 y 4 (media) — el 08 es el
+#: ÚNICO fichero del kit que seguía escrito para un restaurante con comedor:
+#: son 12 tareas en total (5+3 en la apertura, 2+2 en el cierre), y la tanda 3
+#: sólo llegó a 7. Mandaba
 #: «Montar terraza si aplica (mesas, sillas, sombrillas/estufas)», «Revisar
 #: reservas del día» y «Revisar estado del mobiliario (sillas, mesas...)» en un
 #: negocio 100 % delivery donde no entra ni un comensal. Es el mismo defecto
@@ -926,6 +969,46 @@ NEGOCIO_APERTURA = [
      'Comprobar que las etiquetas de marca, los flyers y las fichas de '
      'alérgenos impresas están repuestos en el puesto de empaquetado',
      'Packaging'),
+    # ---- tanda 4 (ver3.json, hallazgo nuevo #1): las 3 que quedaban vivas ---
+    # B9 — «pizarra de menú» es señalización para quien entra a pie, y aquí no
+    # entra nadie: la única señalización que se lee es la que busca el rider.
+    # El verbo se queda en «Colocar» (no «Comprobar») a propósito: su pareja de
+    # cierre, «Recoger señalización exterior» (B12 de «Cierre del Negocio»),
+    # sigue siendo la misma tarea al revés y el par se rompería. La zona no
+    # cambia: sigue siendo «Exterior», que es donde está el cartel.
+    ('Montar señalización exterior / pizarra de menú',
+     'Colocar la señalización del punto de recogida de riders y el cartel con '
+     'el horario de cada marca',
+     'Exterior'),
+    # B12 — no hay comensales que oigan la música ambiente. Lo que sí hay es un
+    # rider que tiene que ENTRAR: en un dark kitchen (naves compartidas,
+    # polígonos, patios interiores) el pedido llega tarde porque el rider no
+    # encuentra la puerta o el timbre no suena.
+    # DELIBERADAMENTE NO se usa aquí el texto propuesto por la orquestación
+    # («tablets/impresoras de cada marca tienen papel y batería»): ese contenido
+    # ya está TRES veces en el kit y §2.5 prohíbe que el marco duplique el
+    # detalle — 01-apertura-cierre.xlsx:'Apertura Cocina'!B32 («Verificar
+    # conexión wifi / datos en cada tablet»), 04-tareas-perfiles.xlsx:'Gestor
+    # Plataformas'!B6 («Encender tablets, verificar wifi y batería») y
+    # 09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B11 («Comprobar rollo de
+    # papel de ticket»). La zona pasa de «General» a «Acceso», que es la que ya
+    # llevan las otras dos tareas de puerta (B5 y B8).
+    ('Poner música ambiente al volumen adecuado',
+     'Comprobar que el timbre o el interfono de la puerta de riders funciona y '
+     'que las indicaciones de acceso publicadas en cada plataforma siguen '
+     'siendo correctas',
+     'Acceso'),
+    # B22 — «restaurante» es la única palabra de todo el kit que llama así al
+    # negocio: el resto (las 11 Instrucciones, el 01, el 03, el 06 y el propio
+    # `_f08`) dice siempre «marca(s)». Se queda como HITO del marco, SIN repetir
+    # la lista de plataformas: ya la nombran B20 de esta misma hoja y
+    # 01-apertura-cierre.xlsx:'Apertura Cocina'!B33 («Activar todas las marcas
+    # en Glovo, Uber Eats, Just Eat»), que es el DETALLE de esta misma acción.
+    # Lo que aporta el marco es la comprobación del resultado.
+    ('Activar restaurante en plataformas',
+     'Activar las marcas en las plataformas y comprobar que cada una figura '
+     'como ABIERTA y recibiendo pedidos',
+     'Operaciones'),
 ]
 
 NEGOCIO_CIERRE = [
@@ -943,6 +1026,31 @@ NEGOCIO_CIERRE = [
      'retirar cartón, precintos y etiquetas sobrantes y dejar el mostrador de '
      'entrega despejado',
      'Packaging'),
+    # ---- tanda 4 (ver3.json, hallazgo nuevo #1): las 2 que quedaban vivas ---
+    # B5 — es la PRIMERA tarea del cierre, y en delivery lo primero que se hace
+    # al cerrar no es apagar una música que nadie oye: es dejar de aceptar
+    # pedidos nuevos mientras se terminan los que ya están dentro. No es la
+    # misma tarea que B18 (desactivar), que va 13 filas más abajo y con otro
+    # responsable («Último en salir»): pausar corta la entrada, desactivar
+    # cierra la marca. Tampoco es el «Pausar marcas si hay saturación» de
+    # 03-tareas-manager.xlsx:'Diario Manager'!B15 ni el de
+    # 04-tareas-perfiles.xlsx:'Gestor Plataformas'!B15: esos son condicionales
+    # de servicio, este es el hito del cierre. Zona «General» → «Operaciones».
+    ('Apagar música ambiente',
+     'Pausar los pedidos nuevos en todas las marcas: a partir de aquí sólo se '
+     'terminan los pedidos ya aceptados',
+     'Operaciones'),
+    # B18 — el gemelo de la apertura, y la segunda y última aparición de
+    # «restaurante» en el kit. NO se le cuelga «y anotar los pedidos
+    # rechazados/cancelados» (que era la propuesta de la orquestación) porque
+    # eso ya es una tarea propia del fichero de áreas:
+    # 01-apertura-cierre.xlsx:'Cierre Cocina'!B27 dice «Anotar incidencias:
+    # pedidos cancelados, reembolsos, quejas». El marco comprueba el resultado
+    # del hito, que es lo que aquí no tenía nadie.
+    ('Desactivar restaurante en plataformas delivery',
+     'Desactivar las marcas en las plataformas y comprobar que ninguna queda '
+     'ABIERTA aceptando pedidos',
+     'Operaciones'),
 ]
 
 
@@ -953,25 +1061,30 @@ def _f08(wb, cambios):
         n += _sustituir_con_zona(ws, viejo, nuevo, zona)
     motor.autoaltos(ws, cambios)
     if n:
-        cambios.append('«Apertura del Negocio»: 5 tareas y sus zonas pasan del '
+        cambios.append('«Apertura del Negocio»: 8 tareas y sus zonas pasan del '
                        'vocabulario de restaurante con comedor (reservas, '
-                       'mobiliario de sala, montar terraza, cartas) al de una '
+                       'mobiliario de sala, montar terraza, cartas, pizarra de '
+                       'menú, música ambiente, «restaurante») al de una '
                        'cocina 100 % delivery (impresoras de plataforma, '
                        'pedidos programados y tiempos de preparación '
-                       'publicados, zona de recogida de riders, puesto de '
-                       'empaquetado y etiquetado) — hallazgo de la tanda 3 '
-                       '(media), 1:1 y sin tocar Responsable ni Hora Límite')
+                       'publicados, zona y puerta de recogida de riders, '
+                       'puesto de empaquetado y etiquetado, activar las '
+                       'MARCAS) — hallazgos de las tandas 3 y 4 (media), 1:1 y '
+                       'sin tocar Responsable ni Hora Límite')
     m = 0
     ws = wb['Cierre del Negocio']
     for viejo, nuevo, zona in NEGOCIO_CIERRE:
         m += _sustituir_con_zona(ws, viejo, nuevo, zona)
     motor.autoaltos(ws, cambios)
     if m:
-        cambios.append('«Cierre del Negocio»: las 2 tareas de sala y terraza '
-                       '(«no quedan clientes en el local», «recoger terraza») '
-                       'pasan a la zona de recogida de riders y al puesto de '
-                       'empaquetado — hallazgo de la tanda 3 (media), 1:1 y '
-                       'sin tocar Responsable ni Cuándo')
+        cambios.append('«Cierre del Negocio»: las 4 tareas de sala, terraza, '
+                       'música y «restaurante» («no quedan clientes en el '
+                       'local», «recoger terraza», «apagar música ambiente», '
+                       '«desactivar restaurante en plataformas») pasan a la '
+                       'zona de recogida de riders, al puesto de empaquetado y '
+                       'al ciclo pausar → desactivar las MARCAS — hallazgos de '
+                       'las tandas 3 y 4 (media), 1:1 y sin tocar Responsable '
+                       'ni Cuándo')
     return False                       # sólo texto: la estructura no cambia
 
 
@@ -1010,7 +1123,24 @@ BRIEFING = [
 ]
 
 
+#: Hallazgo baja de `kit-tareas-dark-kitchen-ver3.json` — el único resto de
+#: vocabulario de sala que quedaba en una hoja «Instrucciones» de todo el kit:
+#: BONUS-01:Instrucciones!B6 nombraba al «jefe de sala» como quien rellena el
+#: briefing. En un dark kitchen no hay sala y por tanto no hay jefe de sala; los
+#: dos perfiles que sí existen —y que usa el resto del contenido, incluida la
+#: lista BRIEFING de aquí abajo— son el Manager y el Gestor de Plataformas
+#: (04-tareas-perfiles.xlsx tiene una hoja «Gestor Plataformas»).
+INS_BRIEFING = ('El jefe de sala o manager rellena antes del briefing',
+                'El manager o el gestor de plataformas rellena antes del '
+                'briefing')
+
+
 def _bonus01(wb, cambios):
+    if _sustituir_instrucciones(wb, *INS_BRIEFING):
+        cambios.append('«Instrucciones»: quien rellena el briefing pasa de «el '
+                       'jefe de sala o manager» al «manager o gestor de '
+                       'plataformas», que son los perfiles que este kit tiene '
+                       '— hallazgo (baja) de la tanda 3, ver3.json')
     ws = wb['Briefing']
     n = 0
     for viejo, nuevo in BRIEFING:

@@ -84,26 +84,55 @@ def preparar_copia(origen, destino):
     log(f'  copia de trabajo regenerada: {destino}')
 
 
+def _orden_coord(coord):
+    """Clave de orden natural de una coordenada: A5 antes que A10 y que B1."""
+    m = re.match(r'^([A-Z]+)(\d+)$', coord)
+    if not m:
+        return (0, coord, 0)
+    return (1, m.group(1).rjust(3), int(m.group(2)))
+
+
 def digest(path):
-    """Huella comparable (valores, formato, relleno, bloqueo, merges, DV, CF)."""
+    """Huella comparable (valores, formato, relleno, bloqueo, merges, DV, CF).
+
+    m3 (tanda 5) — dos puntos ciegos que hacían que el diff contra producción
+    saliera CORTO, y que ya costaron una discrepancia de recuento (127 según el
+    digest frente a las 177 diferencias reales del verificador):
+
+    · **El mensaje de la validación no se comparaba.** La huella era
+      `type:formula1:sqref`, así que el cambio de `DV_ERROR` en las 33 hojas de
+      checklist del representante —texto que el cliente ve al equivocarse de
+      marca— no aparecía por ningún lado y hubo que verificarlo a mano. Ahora
+      entran `errorTitle`, `error` y `prompt`.
+    · **El bloqueo sólo se miraba en las celdas CON valor.** `proteger` decide
+      `locked` celda a celda, también en las vacías, y en BONUS-02 del
+      representante la fila 27 está vacía: el digest veía 88 celdas
+      desbloqueadas donde el fichero tiene 92. Ahora `locked` es un mapa
+      aparte, de TODAS las celdas del rango usado, y sale del valor de la celda
+      para que un cambio de bloqueo no se disfrace de cambio de valor.
+    """
     wb = openpyxl.load_workbook(path)
     fuera = {}
     for ws in wb.worksheets:
-        celdas = {}
+        celdas, locked = {}, {}
         for row in ws.iter_rows():
             for c in row:
+                locked[c.coordinate] = bool(c.protection.locked)
                 if c.value is None:
                     continue
                 relleno = None
                 if c.fill is not None and c.fill.fill_type == 'solid':
                     relleno = str(c.fill.fgColor.rgb)
                 celdas[c.coordinate] = (repr(c.value), c.number_format,
-                                        relleno, bool(c.protection.locked))
+                                        relleno)
         fuera[ws.title] = {
             'celdas': celdas,
+            'locked': locked,
             'merges': sorted(str(m) for m in ws.merged_cells.ranges),
-            'dv': sorted(f'{dv.type}:{dv.formula1}:{dv.sqref}'
-                         for dv in ws.data_validations.dataValidation),
+            'dv': sorted('{}:{}:{}:{}:{}:{}'.format(
+                dv.type, dv.formula1, dv.sqref, dv.errorTitle, dv.error,
+                dv.prompt)
+                for dv in ws.data_validations.dataValidation),
             'cf': sorted(str(r.sqref) for r in ws.conditional_formatting),
             'area': str(ws.print_area),
             'prot': bool(ws.protection.sheet),
@@ -114,18 +143,36 @@ def digest(path):
 
 
 def diff_digest(a, b, fichero):
+    """Diferencias entre dos huellas, UNA LÍNEA POR COSA que cambia.
+
+    m3 — `alturas` y `locked` se comparan elemento a elemento y no como un
+    bloque: un `dict != dict` daba UNA línea por hoja con el detalle recortado a
+    300 caracteres, así que ni se podían contar las categorías ni se sabía qué
+    fila o qué celda había cambiado. Con el desglose, el recuento del diff
+    contra producción es directamente auditable.
+    """
     fuera = []
     for hoja in sorted(set(a) | set(b)):
         if hoja not in a or hoja not in b:
             fuera.append(f'{fichero}:{hoja}: hoja sólo en una pasada')
             continue
         ha, hb = a[hoja], b[hoja]
-        for k in ('merges', 'dv', 'cf', 'area', 'prot', 'alturas'):
+        for k in ('merges', 'dv', 'cf', 'area', 'prot'):
             if ha[k] != hb[k]:
                 fuera.append(f'{fichero}:{hoja}: cambia {k} '
                              f'({ha[k]} → {hb[k]})'[:300])
+        aa, ab = ha['alturas'], hb['alturas']
+        for f in sorted(set(aa) | set(ab)):
+            if aa.get(f) != ab.get(f):
+                fuera.append(f'{fichero}:{hoja}!fila {f}: altura '
+                             f'{aa.get(f)} → {ab.get(f)}')
+        la, lb = ha['locked'], hb['locked']
+        for coord in sorted(set(la) | set(lb), key=_orden_coord):
+            if la.get(coord) != lb.get(coord):
+                fuera.append(f'{fichero}:{hoja}!{coord}: locked '
+                             f'{la.get(coord)} → {lb.get(coord)}')
         ca, cb = ha['celdas'], hb['celdas']
-        for coord in sorted(set(ca) | set(cb)):
+        for coord in sorted(set(ca) | set(cb), key=_orden_coord):
             if ca.get(coord) != cb.get(coord):
                 fuera.append(f'{fichero}:{hoja}!{coord}: '
                              f'{ca.get(coord)} → {cb.get(coord)}')
@@ -768,13 +815,31 @@ def main():
     # informe, pero falseaba cualquier censo agregado. Si una misma banda
     # apareciera con DOS medidas distintas se conservan las dos: eso no sería
     # ruido, sería el motor dando resultados inestables.
-    vistos, unicos = set(), []
+    #
+    # m2 (tanda 5) — la clave de T-05 incluía la REFERENCIA DE CELDA
+    # («Cierre Cocina!A28»), y el módulo de contenido que inserta una fila por
+    # encima de la banda mueve esa referencia: la 2.ª pasada del motor mide la
+    # MISMA banda en A29 y las dos entradas sobrevivían a la deduplicación.
+    # Medido en dark-kitchen: «PREPARACIÓN MAÑANA», tareas=4, casadas=1,
+    # ratio=0,25, dos veces, idénticas salvo la fila. La clave pasa a ser
+    # (hoja SIN nº de fila, banda, tareas, casadas, ratio) y se conserva la
+    # ÚLTIMA medida, que es la que se tomó sobre la geometría FINAL del libro
+    # —la que de verdad se entrega—: quedarse con la primera citaría una fila
+    # en la que ya no está la banda.
+    vistos, unicos = {}, []
     for d in motor.SOLAPES:
-        clave = (d['hoja'], d['banda'], d['tareas'], d['casadas'], d['ratio'],
-                 tuple(d['destinos']), d['anotada'])
-        if clave in vistos:
+        clave = (d['hoja'].split('!')[0], d['banda'], d['tareas'],
+                 d['casadas'], d['ratio'])
+        # `destinos` y `anotada` NO entran en la clave (los fija la misma
+        # medición que da `casadas` y `ratio`) pero sí se vigilan: si dos
+        # mediciones de la misma banda discrepasen en ellos, se publican las
+        # dos, que es el criterio de T-05.
+        firma = (tuple(d['destinos']), d['anotada'])
+        anterior = vistos.get(clave)
+        if anterior is not None and anterior[0] == firma:
+            unicos[anterior[1]] = d              # se queda la ÚLTIMA medida
             continue
-        vistos.add(clave)
+        vistos[clave] = (firma, len(unicos))
         unicos.append(d)
     solapes = sorted(unicos, key=lambda d: -d['ratio'])
     if solapes:

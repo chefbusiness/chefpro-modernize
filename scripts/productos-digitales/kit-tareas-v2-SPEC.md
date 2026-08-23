@@ -186,3 +186,161 @@ Es una lectura invertida del booleano de openpyxl: `ws.protection.insertRows = F
 `insertRows="0"` y en OOXML **0 = NO bloqueado**. Verificado en el XML de la copia del dry-run
 (`<sheetProtection … insertRows="0" deleteRows="0" …>`), y coincide con lo que midió la lente
 TEC-R2-14. Las Instrucciones dicen la verdad.
+
+---
+
+## 9. Tandas 3, 4 y 5 (2026-08-23) — reglas que CAMBIAN o AMPLÍAN lo anterior
+
+Mismo estatuto que el §8: **lo que sigue sustituye a lo escrito más arriba**, el motor ya lo
+implementa y la tanda de hermanos (§5) hereda estas reglas, no las originales. Las decisiones se
+citan con la letra o el código con que las firmó el orquestador, para que la próxima ronda no
+vuelva a discutirlas.
+
+### 9.1 Tanda 3 — el motor deja de suponer que todos los kits son el representante
+
+- **(i) El 07 no se llama igual en todos los hermanos, y sus secciones son SUYAS.** `SINONIMOS_07`
+  + `_Plantillas07` resuelven «Por Zona» ≡ «Por Área», «Por Franja» ≡ «Por Franja Horaria» y los
+  plurales; `cfg_07` sólo impone el molde del representante (APERTURA/SERVICIO/CIERRE …) cuando la
+  hoja no tiene nada que perder: o sus rótulos son el placeholder «(Sección N — Personaliza este
+  título)» del generador v1.1, o ya son los canónicos. Bar entrega cuatro secciones escritas para un
+  bar y su columna «Zona» precargada: se le aplica lo UNIVERSAL (subtítulo sin «Turno:» donde no hay
+  turno, banda con el aviso de dónde se escribe, «Tarea» vacía y en verde) con SUS nombres. «Por
+  Fase» y «Por Turno» quedan fuera a propósito: son del molde P4. Trampa de idempotencia:
+  `RX_SEC_ROTULO` quita la cola que escribe el propio motor antes de leer el nombre de la sección, o
+  cada pasada añadiría otra.
+- **(j) La bio y la versión se exigen en TODO fichero con hoja «Instrucciones»,** esté o no en
+  alcance del molde «▸». `normalizar_p4` llama siempre a `bio_en_instrucciones` y el gate
+  `dv_y_bio` censa delante del `continue` de `en_alcance`. Es lo que alcanza a los BONUS-02 de
+  catering y de hotel, que se publicaban diciendo «Versión 1.1 · agosto 2026» y sin autoría dentro
+  de un producto v2.0. Sólo se escribe en celdas que YA existen (la línea de versión y la vacía de
+  debajo): si no hay dónde anclar no se inventa nada y lo canta `version_desfasada` /
+  `sin_hoja_instrucciones`.
+- **(k) SIN ACCIÓN, decidido:** `kit-tareas-catering/07-plantilla-personalizable.xlsx` se queda sin
+  contador. Sus tres hojas no son ni «▸» ni P4 (`geometria_p4` no encuentra fila libre sobre el
+  pie), así que sólo reciben el desplegable y la bio.
+- **(l) El contador del molde P4 se DEMUESTRA sobre la hoja tal y como se entrega.** `demo_p4` no
+  toca el fichero: compara el contador contra un recuento hecho a mano y publica además lo que habría
+  dicho la fórmula vieja. El molde P4 repite la fila de cabecera en cada sección, así que el
+  `COUNTIF` original contaba los rótulos: heladería, `01-apertura-cierre.xlsx:'Apertura'!C29/E29`
+  anunciaba «2 de 19» recién impresa con 17 tareas. `demo_07` se endurece en la misma tanda (exige
+  `motor.geometria` además del título) o con los sinónimos de (i) se llevaría una hoja P4 y
+  reventaría.
+
+### 9.2 Tanda 4 — T-01 … T-08
+
+- **T-01. El fichero que ES el marco no puede remitir a otro como marco.** `_bloque_conecta`
+  contempla `fname == f_negocio` y `fname == f_caja` ANTES que ninguna otra rama de la cola. En
+  producción, `08-apertura-cierre-negocio.xlsx:Instrucciones!B36` decía «08 … es el MARCO del día» y
+  cuatro líneas más abajo `!B40` «el marco del día está en 01-apertura-cierre.xlsx»: dos
+  afirmaciones opuestas en la misma hoja impresa. La rama genérica excluía `fname` de los candidatos
+  pero nunca comprobaba si `fname` ERA el marco.
+- **T-02. El TPV se enciende UNA vez por kit, y es en el fichero de negocio.** En el de caja la
+  tarea pasa a «Comprobar que el TPV está encendido y abrir turno de caja» (`RX_TPV_CAJA` +
+  `texto_tpv_caja` + `tpv_de_caja`, paso 0 de `aplicar`, sólo si `fname == CTX['f_caja']`). Es regla
+  de FAMILIA, no de contenido. La HORA no se toca (la escribe `precargar_caja`, escalonada tras la
+  apertura). El regex sólo pica cuando la tarea ENTERA es «encender el TPV»: la de pastelería y la
+  de heladería 01 quedan intactas. **La trampa no era el regex, era la idempotencia:**
+  `tareas_del_libro(wb, caja=True)` aplica la misma normalización al leer el marco en `contexto()`,
+  o la 1.ª pasada compararía «Encender TPV / POS» y la 2.ª «Comprobar que el TPV…» y
+  `anotar_duplicados` mediría distinto en cada una.
+- **T-03. `gate_recuento` suma TODAS las hojas de checklist del producto,** molde «▸» y molde P4,
+  leyendo el denominador cacheado. Antes sólo sumaba el molde «▸» y en los cinco kits P4 devolvía 56
+  —las tareas de 08 y 09— ignorando los cientos de los 01-07: hotel habría anunciado 56 en vez de
+  636. Publica `recuento_por_molde` y `por_hoja` (fichero:hoja:celda). Un denominador sin valor
+  cacheado se ANOTA como aviso en vez de sumar 0 en silencio. **Desde la tanda 4,
+  `gates.recuento_tareas.total` SÍ es la fuente para la landing** (los 11 recuentos cuadran al
+  0,0 % contra recuentos manuales independientes): 491 kit-tareas · 500 cafetería · 373 pizzería ·
+  346 hamburguesería · 331 dark-kitchen · 342 bar · 346 catering · 338 chocolatería · 298 heladería ·
+  636 hotel · 477 restaurante-creativo.
+- **T-04. Los paréntesis de «Se conecta con» salen de la ESTRUCTURA del kit,** no de un literal.
+  `_zonas_del_fichero` (nombres reales de hoja del fichero de áreas: «Apertura Cocina» → «cocina»),
+  `_bandas_del_fichero` (rótulos reales de las bandas del de negocio) y `parentesis()`, que devuelve
+  cadena VACÍA si no hay nada que enumerar. Iban hardcodeados para los 12 kits y dark-kitchen
+  imprimía «(accesos, luces, clima, terraza)» y «(cocina, sala, barra)» en sus 11 ficheros teniendo
+  sólo «Apertura Cocina» y «Cierre Cocina». **Sin datos, sin paréntesis: se omite antes que
+  inventar.**
+- **T-05. `gates.bandas_solapadas` se deduplica antes de emitirse.** El duplicado venía de
+  `procesar`, que vuelve a pasar el motor cuando el módulo de contenido cambia la estructura del
+  libro. Si una misma banda apareciera con DOS medidas distintas se conservan las dos: eso no sería
+  ruido del informe, sería el motor midiendo distinto en cada pasada. (Corregido en m2, abajo.)
+- **T-06. SIN ACCIÓN, decidido:** los BONUS-01/02 de catering, hotel y chocolatería siguen sin
+  protección, sin `print_area` y sin el pie del kit. Meterlos en el molde «▸» exigiría ampliar
+  `fila_calendario` a su cabecera, que es justo lo que excluye el alcance «sólo 08/09» de esos kits.
+- **T-07.** Documental (trazabilidad del fix de `contexto`): no toca código.
+- **T-08. La promesa impresa era más fuerte que lo que el motor garantiza.** «No se duplican: cada
+  uno cubre un nivel.» se sustituye por `FRASE_NIVELES`, que admite el solape deliberado, DENTRO de
+  la misma viñeta «Orden de uso: …». Va en una sola viñeta a propósito: emitirla como línea nueva
+  desplazaría una fila TODAS las Instrucciones y convertiría un cambio de 11 celdas en uno de ~200.
+  Coste aceptado: esa fila pasa de 16 a 48 pt. **`UMBRAL_BANDA` se mantiene en 0,8**; el solape
+  residual del 25-40 % (cafetería, pizzería) es una decisión de umbral abierta, no un defecto.
+
+### 9.3 Tanda 5 — firmas del orquestador sobre el diff del representante
+
+Las tres se firman contra `auditorias/kit-tareas-hermanos/kit-tareas-diff-firmado.json`, que es
+**el diff de referencia** (177 diferencias) y sustituye al recuento de 127 de `motor-2.3.json`.
+
+- **(d) FIRMADO.** El paréntesis del fichero de negocio se deriva de sus bandas reales y, si no se
+  puede, se OMITE (nunca una «terraza» inventada). En el representante queda SIN paréntesis: 11
+  celdas, `01!B35 · 02!B29 · 03!B34 · 04!B28 · 05!B34 · 06!B28 · 07!B41 · 08!B36 · 09!B46 ·
+  BONUS-01!B12 · BONUS-02!B12`. Motivo: los 08/18/10 de los 11 kits se entregan como listas PLANAS,
+  sin una sola banda de sección. La otra fuente posible —la columna «Zona»— es la misma en los 11
+  kits (sale del generador v1.1) y seguiría diciendo «Terraza» en una dark kitchen.
+- **(e) FIRMADO.** La cola «Estás en …» del fichero de CAJA es la específica de caja
+  (`09-apertura-cierre-caja.xlsx:Instrucciones!B50` en el representante): «esta es la CAJA — el
+  DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08 … y el
+  detalle por zona, en 01 …». La rama `elif caja and fname == caja` de `_bloque_conecta` se queda.
+- **(f) ACEPTADO.** El calendario del representante desbloquea `A5:D27` — 23 filas, 92 celdas, no
+  las 22 filas / 88 celdas que se habían comunicado. La fila 27 está VACÍA (es la última libre del
+  molde), así que el efecto es inocuo; lo que se firma es el ALCANCE. Sale de que `calendario()`
+  devuelve el cuerpo hasta la última fila libre y `proteger` desbloquea ese rango entero.
+- **(c) ACEPTADO.** Las 26 alturas de fila que cambian son consecuencia mecánica de (d), T-08, T-01
+  y (e): 22 en las 11 Instrucciones (la línea del negocio baja de 32 a 16 pt al perder el paréntesis
+  y la de T-08 sube de 16 a 48 pt), 2 en las colas «Estás en …» de 08 y 09, y 2 en
+  `09:'Apertura de Caja'!9` y `09:'Cierre de Caja'!10`, que pasan de 24 pt FIJOS a `None` porque
+  `autoalto` (TEC-R2-13) ve que el texto nuevo no cabe en una línea.
+- **BAR 07 «Zona» vacía en verde: ACEPTADO** (decisión heredada de motor-2.2, ya sin abrir).
+- **T-06: sin acción**, reconfirmado.
+
+### 9.4 Motor 2.4 — m1, m2, m3
+
+- **m1. `FRASE_NIVELES` enumera SÓLO los niveles que el kit tiene.** La frase de T-08 nombra tres
+  ficheros («…el de áreas detalla CÓMO se hace en cada zona…») y en los cinco kits del molde P4 no
+  hay fichero de ÁREAS: la misma viñeta abría «Orden de uso: local → caja» (dos pasos) y seguía
+  enumerando tres. Se condiciona a `CTX['f_areas']` con `frase_niveles()` /
+  `FRASE_NIVELES_SIN_AREAS`: «Cada fichero cubre un nivel: el de negocio marca el HITO (encender,
+  abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una
+  es el hito y la otra el detalle.» Afecta a 10 celdas: catering `08!B37`/`09!B48`, chocolatería
+  `08!B37`/`09!B48`, heladería `08!B37`/`09!B48`, hotel `18!B37`/`19!B48`, restaurante-creativo
+  `10!B37`/`11!B48`. **Ojo:** `critico-3.json` citaba las de catering como `08!B38`/`09!B49`, que es
+  la fila SIGUIENTE (la cola «Estás en …»); las medidas en el dry-run son B37 y B48. Es la misma
+  clase de defecto que T-01: una rama que no comprueba el caso que la contradice.
+- **m2. La deduplicación de T-05 ya no incluye el nº de fila.** La clave llevaba la referencia de
+  celda («Cierre Cocina!A28») y el módulo de contenido que inserta una fila por encima de la banda
+  la mueve: la 2.ª pasada del motor medía la MISMA banda en A29 y las dos entradas sobrevivían
+  (dark-kitchen, «PREPARACIÓN MAÑANA», tareas=4, casadas=1, ratio=0,25). La clave pasa a ser
+  **(hoja SIN nº de fila, banda, tareas, casadas, ratio)** y se conserva la ÚLTIMA medida, que es la
+  tomada sobre la geometría FINAL del libro: quedarse con la primera citaría una fila en la que ya
+  no está la banda. `destinos` y `anotada` no entran en la clave pero sí se vigilan: si dos
+  mediciones discrepasen en ellos se publican las dos (criterio de T-05).
+- **m3. `main.digest` compara el MENSAJE de las validaciones y el bloqueo de TODAS las celdas.**
+  Eran dos puntos ciegos que hacían que el diff saliera corto: la huella de DV era
+  `type:formula1:sqref` —así que el cambio de `DV_ERROR` en 33 hojas no aparecía y hubo que
+  verificarlo aparte— y `locked` sólo se miraba en las celdas CON valor, así que las 4 celdas vacías
+  de la fila 27 del calendario no se contaban. Ahora la DV incluye `errorTitle`, `error` y `prompt`,
+  `locked` es un mapa aparte de todas las celdas del rango usado, y `diff_digest` desglosa
+  `alturas` y `locked` elemento a elemento (antes daban UNA línea por hoja recortada a 300
+  caracteres, imposible de contar). Con esto el diff del representante da **177 = 26 valor + 33 DV +
+  26 alturas + 92 locked**, exactamente lo que había contado por su cuenta el verificador, y el
+  digest vuelve a ser utilizable como prueba de «no cambia nada más».
+
+### 9.5 Pendiente documentado — «caja» pedida FUERA del fichero 09
+
+Mismo patrón que T-02 resolvió para el TPV, pero sin criterio único todavía: hay tareas que mandan
+hacer caja en ficheros que no son el de caja, sin remisión. Censadas: hamburguesería
+`01:'Apertura Sala'!B11-B12` y `'Cierre Sala'!B12` + `04:'Encargado'!B10/B17`; pizzería
+`01:'Apertura Sala'!B11-B12`; restaurante-creativo `01:'Cierre PM'!B25` («Cierre de caja y registro
+de ventas del día», que describe el fichero 11 entero); heladería `01:'Apertura'!B36` («Encender TPV
+/ caja registradora y verificar fondo de caja», que `gates.tpv_duplicado` ya etiqueta como «otro
+fichero: se deja»). `colapsar_duplicados` no cruza 01/04 contra el fichero de caja. **NO bloquea la
+tanda 5** por decisión del orquestador; queda aquí para que la próxima ronda fije UN criterio
+(reescritura de texto con remisión, como en T-02) en vez de arrastrar cuatro severidades distintas.

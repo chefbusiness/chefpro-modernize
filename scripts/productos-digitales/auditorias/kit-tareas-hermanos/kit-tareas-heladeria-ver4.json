@@ -1,0 +1,101 @@
+{
+  "rol": "verificador independiente · kit-tareas-heladeria · tanda 5 (sobre motor 2.4)",
+  "fecha": "2026-08-23",
+  "pid": "kit-tareas-heladeria",
+  "modo": "SOLO dry-run · astro-site/public/dl/** NO tocado (sin leer ni escribir ahí) · CLAUDE_SCRATCHPAD=.../propio-verificador5 · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean · un solo intérprete a la vez, istats antes de cada python (45,7-48,3 °C, siempre muy por debajo de 60 °C, sin necesitar ningún sleep)",
+
+  "resumen": "Regenerado desde cero con motor 2.4 + contenido_kit_tareas_heladeria.py (main.py --producto kit-tareas-heladeria --dry-run, sin --solo). TODO VERDE: exit 0, censo --fail 0 defectos, idempotencia 0 diferencias (con el digest ENDURECIDO de m3, que ahora también mira el mensaje de las DV y el bloqueo de TODAS las celdas), cache 127/127 con pycel, DV unificada (una sola lista «✓,—,N/A», 0 incorrectas), bio 11/11 con «Versión 2.0», recuento_gate=298 (idéntico a la tanda 4, m1/m2/m3 no tocan números de venta). m1 verificado celda a celda: heladería no tiene fichero de ÁREAS (CTX['f_areas']=None), así que la viñeta «Orden de uso» de 08!B37 y 09!B48 usa AHORA FRASE_NIVELES_SIN_AREAS (2 niveles: negocio+caja) en vez del literal de 3 niveles que citaba un fichero de áreas inexistente — la contradicción que motor-2.4.json documentaba para este kit («Orden de uso: local → caja», dos pasos, seguida de un texto que enumeraba tres) queda resuelta; 0 apariciones de «No se duplican» en las 11 hojas de Instrucciones. Los dos fixes declarados en el diff de contenido_kit_tareas_heladeria.py (vitrina: hueco «____ °C» retirado de 08, se deja SOLO en 01 con remisión explícita; zona «Recepción»→«Mostrador» de la tarea «Encender sistema de reservas / tablet de pedidos») están, los dos, verificados presentes en la celda. Pero el barrido de vocabulario descubre que el segundo fix es INCOMPLETO: el molde base trae DOS tareas con zona «Recepción» en 08 (comparado con chocolatería, que sí las corrigió las dos) y contenido_kit_tareas_heladeria.py sólo ancla una — la tarea «Revisar reservas del día y eventos especiales» (08!C13) sigue en «Recepción». Es BAJA (cosmético, no toca ningún gate ni cálculo) y no bloquea. bloquea_real=false.",
+
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "idempotencia": 0,
+
+  "listas_dv": ["\"✓,—,N/A\""],
+  "dv_incorrectas": [],
+  "hojas_con_dv_lista": 4,
+  "nota_dv": "gates.dv_y_bio: hojas_checklist=4 (molde ▸: 08 Apertura+Cierre del Negocio, 09 Apertura+Cierre de Caja) + hojas_p4=21 = 25 hojas con desplegable en total; una sola lista del producto («✓,—,N/A»), 0 incorrectas, 0 avisos de listas mezcladas.",
+
+  "casos6": [
+    {"caso": "arqueo cuadra (Z 1.800 sobre el mismo dato de la 09)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel, log del dry-run): 0"},
+    {"caso": "arqueo descuadra", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel): 10"},
+    {"caso": "contador honesto: N/A sale del denominador", "ok": true, "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29/F29 (pycel): '15 de 15'"},
+    {"caso": "contador P4 recién impreso, sin contar rótulos", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura'!C41/E41 (pycel): '0.0 de 26.0'"}
+  ],
+  "casos6_ok": 4,
+  "casos6_total": 4,
+
+  "frase_niveles_ok": true,
+  "frase_niveles_evidencia": {
+    "kit_sin_fichero_de_areas": true,
+    "nota": "Log del dry-run: «negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=None» — CTX['f_areas'] es None, así que frase_niveles() debe devolver FRASE_NIVELES_SIN_AREAS (2 niveles).",
+    "08_B37": "'▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.'",
+    "09_B48": "'▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.'",
+    "coherencia": "«Orden de uso: local → caja» (2 pasos) y el texto que sigue enumera exactamente 2 niveles (negocio+caja), sin mencionar un fichero de áreas que este kit no tiene. Resuelve la contradicción que motor-2.4.json documentaba explícitamente para heladería (08!B37/09!B48 citados en m1).",
+    "ficheros_con_bloque_orden_de_uso": 2,
+    "no_se_duplican_apariciones": 0,
+    "metodo": "Barrido de las 11 hojas 'Instrucciones' completas (todas las celdas de columna B) buscando literalmente 'Orden de uso' y 'No se duplican'; sólo 08 y 09 llevan el bloque (los 9 ficheros P4 —01-07 y los 2 BONUS— no tienen ese bloque, es exclusivo del molde ▸)."
+  },
+
+  "recuento_gate": 298,
+  "tareas_01": 43,
+  "hojas_checklist": 4,
+  "fechas_bonus02": 12,
+  "ficheros_total": 11,
+  "nota_recuento": "gates.recuento_tareas.total=298 (checklist_▸ 56 + p4 242) idéntico a la tanda 4 (0 % de diferencia); m1/m2/m3 no tocan cifras de venta. Por fichero: 01=43 · 02=27 · 03=38 · 04=41 · 05=44 · 06=36 · 07=0 (plantilla, denominador por fórmula) · 08=33 · 09=23 · BONUS-01=13 · BONUS-02=0 (calendario mensual, no checklist).",
+
+  "nota_fechas_bonus02": "El BONUS-02 de heladería está FUERA del molde ▸ (log: 'fuera del molde ▸ · molde P4: 5 cambios') y su 'Calendario Anual' NO es la rejilla de 23 filas con placeholder «(Tu fecha)» que trae el representante — es una tabla fija de 12 meses (Enero-Diciembre) con eventos/fechas señaladas de heladería precargados en la columna 'Acciones clave / Fechas señaladas'. Barrido de «(Tu fecha)» en todo el fichero: 0 apariciones (no existe ese patrón en este kit). Contadas las 12 filas de mes (5-16), TODAS con contenido entregado (ninguna vacía ni placeholder): fechas_bonus02=12.",
+
+  "gates_verificados": {
+    "bandas_solapadas": [],
+    "bandas_solapadas_nota": "Vacío: el fichero de negocio de heladería se entrega como lista PLANA sin bandas de sección, igual que los otros 10 hermanos (firma (d)). m2 no tiene nada que deduplicar aquí.",
+    "tpv_duplicado": "2 tareas «Encender…TPV» en el producto: 01!Apertura!B36 (otro fichero, se deja) y 08!'Apertura del Negocio'!B10 (negocio, hito legítimo). 09!'Apertura de Caja'!B9 ya no dice «Encender» (T-02): «Comprobar que el TPV está encendido y abrir turno de caja». Sin cambios respecto a la tanda 4."
+  },
+
+  "fixes_tanda5_ok": true,
+  "fixes_verificados": [
+    {
+      "fix": "m1 (motor) — frase_niveles() condicionada a CTX['f_areas']",
+      "declarado_en": "motor-2.4.json (afecta a 10 celdas de 5 kits P4, entre ellas heladería 08!B37/09!B48)",
+      "verificado": true,
+      "evidencia": "08!B37 y 09!B48 llevan FRASE_NIVELES_SIN_AREAS (texto de 2 niveles) — ver frase_niveles_evidencia arriba."
+    },
+    {
+      "fix": "contenido — vitrina: hueco «____ °C» retirado de 08, se deja sólo en 01",
+      "declarado_en": "contenido_kit_tareas_heladeria.py (diff no comiteado): NEG_VITRINAS/NEG_ENCENDER reescritos, resuelve el hallazgo MEDIA de kit-tareas-heladeria-ver3.json",
+      "verificado": true,
+      "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B20 = «Vitrinas de helado en modo servicio y mantecadoras encendidas (con género dentro no se apagan por la noche; detalle en 01-apertura-cierre)» · !B21 = «Vitrinas de helado en temperatura (−12/−14 °C; lectura anotada en 01-apertura-cierre)» — SIN hueco «____ °C» en ninguna de las dos. 01-apertura-cierre.xlsx:'Apertura'!B16 SIGUE con el único hueco «____ °C» de la vitrina, ahora sin duplicado en 08. Trabajo duplicado eliminado, sin pérdida del dato (la lectura vive en el detalle por ÁREA, que es el sitio correcto según §2.5 de la SPEC)."
+    },
+    {
+      "fix": "contenido — zona «Recepción»→«Mostrador» de «Encender sistema de reservas / tablet de pedidos»",
+      "declarado_en": "contenido_kit_tareas_heladeria.py (diff no comiteado): _zona_08(), resuelve el hallazgo BAJA de kit-tareas-heladeria-ver3.json (08!C11)",
+      "verificado": true,
+      "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!C11 = «Mostrador» (antes «Recepción»), fila de la tarea «Encender sistema de reservas / tablet de pedidos». El fix declarado SÍ está en la celda tal como lo codifica _zona_08.",
+      "nota": "Este fix es correcto pero INCOMPLETO respecto al patrón del resto de la familia — ver hallazgos_nuevos: queda una SEGUNDA tarea con zona «Recepción» en el mismo fichero que _zona_08 no cubre (no es que el fix declarado esté roto, es que el hallazgo original de ver3.json sólo citó una de las dos celdas afectadas)."
+    }
+  ],
+
+  "integridad_ficheros": {
+    "verificado": true,
+    "metodo": "openpyxl.load_workbook() normal + data_only=True sobre los 11 xlsx regenerados; barrido de todas las celdas con los 7 patrones de error de Excel (#REF!, #NAME?, #VALUE!, #DIV/0!, #N/A, #NULL!, #NUM!)",
+    "resultado": "11/11 ficheros cargan sin excepción en los dos modos, 0 errores de fórmula en ninguna hoja."
+  },
+
+  "hallazgos_nuevos": [
+    {
+      "severidad": "baja",
+      "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!C13 (zona de la tarea «Revisar reservas del día y eventos especiales»)",
+      "hallazgo": "El fix de tanda 5 (_zona_08 en contenido_kit_tareas_heladeria.py) corrige la zona «Recepción»→«Mostrador» SÓLO de la tarea «Encender sistema de reservas / tablet de pedidos» (ahora en 08!C11=«Mostrador», verificado). Pero el molde base trae DOS tareas con zona «Recepción» en el fichero de negocio, y la segunda —«Revisar reservas del día y eventos especiales»— sigue sin tocar en 08!C13. Comparado con chocolatería (contenido_kit_tareas_chocolateria.py:1637-1656), que corrige explícitamente las DOS tareas homónimas («Recepción»→«Vitrina» y «Recepción»→«Mostrador»), el módulo de heladería sólo ancló la primera. El defecto es el mismo que ya documentaba kit-tareas-heladeria-ver3.json (severidad baja, vocabulario de hostelería con mostrador de bienvenida que no encaja en una heladería de mostrador directo): no rompe ningún gate ni cálculo, es cosmético, pero el fix de esta tanda deja una segunda celda con el mismo problema sin resolver."
+    }
+  ],
+
+  "bloquea_real": false,
+  "motivo": "(1)-(2) pasan completos: exit 0, censo --fail 0 defectos, idempotencia 0 (con el digest endurecido de m3), DV unificada 0 incorrectas, casos §6 4/4, frase_niveles_ok=true (0 apariciones de «No se duplican», Orden de uso coherente con 2 niveles en un kit sin fichero de áreas). Los tres fixes declarados para este kit (m1 + vitrina + Recepción→Mostrador de UNA tarea) están, los tres, verificados presentes en su celda: fixes_tanda5_ok=true. El único hallazgo nuevo (Recepción residual en una segunda tarea, 08!C13) es BAJA — no cumple el criterio de bloqueo de esta tarea (que exige alta) — y es la misma clase de defecto cosmético que la tanda anterior ya había aceptado como no bloqueante. No hay ningún hallazgo ALTA ni MEDIA vivo en esta pasada.",
+
+  "notas": [
+    "Regenerado con: CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-verificador5 python3 main.py --producto kit-tareas-heladeria --dry-run --json .../kt-hermanos-5/kit-tareas-heladeria.json (motor 2.4 + contenido juntos, sin --solo). astro-site/public/dl/** no se ha leído ni tocado en ningún momento.",
+    "Verificado explícitamente contra el diff `git diff contenido_kit_tareas_heladeria.py` (cambios no comiteados) que los DOS fixes de contenido declarados para esta tanda están tal cual en el .py, y luego contra la celda regenerada que están tal cual en el xlsx — no sólo confiando en motor-2.4.json.",
+    "La incompletitud del fix de zona se descubrió por comparación cruzada con contenido_kit_tareas_chocolateria.py (mismo patrón de tarea, misma familia de kits), no por una relectura ciega del fichero de heladería solo.",
+    "Temperatura de CPU vigilada con istats antes de cada python: 45,69-48,31 °C durante toda la verificación (un solo dry-run ejecutado), un solo intérprete a la vez, sin builds ni navegador. Nunca se acercó a los 60 °C.",
+    "No se ha hecho git add/commit/stash/clean. Este fichero es la única escritura en el repo."
+  ]
+}

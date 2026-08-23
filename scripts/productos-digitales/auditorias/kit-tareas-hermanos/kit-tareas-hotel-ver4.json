@@ -1,0 +1,120 @@
+{
+ "rol": "verificador independiente · kit-tareas-hotel · ver4 (sobre motor 2.4 tanda 5, focalizada en m1/m2/m3 + fixes declarados)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-hotel",
+ "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=.../propio-verificador5 · astro-site/public/dl/** intacto (git status --porcelain astro-site/public/dl/ = vacío antes y después) · sin git add/commit/stash/clean · sin KIT_TAREAS_APPLY",
+ "regla_termica": "istats antes de cada arranque: 44,5 / 44,69 / 45,44 / 45,56 °C — máximo 45,56 °C, muy por debajo de 65 °C; un solo intérprete a la vez; nada de builds ni Playwright",
+
+ "0_fixes_tanda5_declarados_para_hotel": {
+  "contenido_kit_tareas_hotel.py": "git status --porcelain sobre scripts/productos-digitales/kit-tareas-v2_0/ muestra M en catering/chocolatería/dark-kitchen/heladería/restaurante-creativo + main.py + motor.py + SPEC — contenido_kit_tareas_hotel.py NO figura modificado en esta tanda: 0 fixes de contenido declarados para hotel en tanda 5.",
+  "motor_m1": {
+   "aplica_a_hotel": true,
+   "celdas_esperadas": "18-apertura-cierre-negocio.xlsx:Instrucciones!B37 y 19-apertura-cierre-caja.xlsx:Instrucciones!B48 (SPEC §9.4 m1 y motor-2.4.json pendiente)",
+   "verificado": true,
+   "evidencia": "18!B37 = '▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.' · 19!B48 = idéntico. Es FRASE_NIVELES_SIN_AREAS (2 niveles, sin mención de 'áreas'), coherente con contexto.f_areas=null del kit. Código: motor.py:157-183 define FRASE_NIVELES_SIN_AREAS y frase_niveles(); motor.py:2576 la usa en el punto de composición de la viñeta T-08. Grep de las 19 hojas Instrucciones: 0 apariciones de 'No se duplican' (frase vieja), 2/19 con el bloque 'Orden de uso' (18 y 19, los únicos con esa sección), ambas con la frase de 2 niveles, 0 con la de 3."
+  },
+  "motor_m2": {
+   "aplica_a_hotel": false,
+   "motivo": "gates.bandas_solapadas = [] para hotel, igual que en motor 2.2/2.3 — no hay solapes de banda que deduplicar en este kit; m2 no cambia nada aquí (verificado: lista vacía en el informe JSON de este dry-run)."
+  },
+  "motor_m3": {
+   "aplica_a_hotel": true,
+   "verificado": true,
+   "evidencia": "3/7 del run: 'diferencias 1.ª vs 2.ª pasada: 0' con el digest ENDURECIDO (mensaje de DV + locked de todas las celdas). Idempotencia sigue en 0 bajo el listón más estricto."
+  },
+  "fixes_tanda5_ok": true,
+  "motivo_ok": "no hay fix de contenido declarado para hotel en esta tanda (nada que comprobar ahí); m1 (el único T-item de motor que le toca 2 celdas a hotel) está verificado celda a celda; m2 no aplica (lista vacía, sin regresión); m3 verificado con idempotencia 0."
+ },
+
+ "1_regeneracion": {
+  "comando": "main.py --producto kit-tareas-hotel --dry-run (motor 2.4 + contenido sin cambios, sin --solo)",
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_detalle": "7/7 · censo-entregables --fail sobre la COPIA del scratchpad (19 xlsx, 0 docx, 0 pdf) → 'OK: 0 defectos (--fail)'",
+  "idempotencia_2a_pasada": {"ejecutada": true, "diferencias": 0, "detalle": [], "digest": "endurecido por m3 (mensaje de DV + locked de todas las celdas del rango usado)"},
+  "listas_dv": ["✓,—,N/A"],
+  "listas_dv_detalle": "gates.dv_y_bio: hojas_checklist=4 (molde ▸, 18+19) + hojas_p4=49 = 53 hojas de checklist evaluadas · listas_dv_del_producto=[\"\\\"✓,—,N/A\\\"\"] (UNA sola) · dv_incorrectas=[] · sin_bio=[] · sin_hoja_instrucciones=[] · version_desfasada=[] · aviso_dv_mezcladas=[] — idéntico a ver3; motor 2.4 no toca la DV."
+ },
+
+ "2_casos_seccion6": {
+  "arqueo_cuadra": {"ok": true, "evidencia": "main.py 6/7 (pycel): 19-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 OK"},
+  "arqueo_descuadra": {"ok": true, "evidencia": "main.py 6/7 (pycel): mismo caso con Z alterada → C54 = 10 OK"},
+  "contador_honesto_N_A": {"ok": true, "evidencia": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29 = '15 de 15' OK"},
+  "contador_p4_sin_rotulos": {"ok": true, "evidencia": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:C63/E63 = '0.0 de 46.0' OK"},
+  "plantilla_personalizable_07": {"ok": true, "aplica": false, "evidencia": "07-recepcion-turnos.xlsx sheetnames = ['Instrucciones','Turno Mañana','Turno Tarde','Turno Noche','Check-in Check-out'] — reverificado con openpyxl sobre la copia de este dry-run; sigue sin las hojas 'Por Franja Horaria/Por Área/Por Perfil' del molde del representante, DOM-07 no aplica a este hermano"},
+  "negocio_08_precargado": {"ok": true, "evidencia": "gates.negocio_precargado: fichero=18-apertura-cierre-negocio.xlsx, tareas=33, huecos=[], firma_ok=true, huecos_firma=[]"},
+  "bio_en_instrucciones": {"ok": true, "evidencia": "gates.dv_y_bio: instrucciones_con_bio=19, sin_bio=[]; bio de John Guerrero + 'Versión 2.0 · agosto 2026' en las 19/19 hojas Instrucciones"},
+  "resumen": {"casos6_ok": 7, "casos6_total": 7, "nota": "4 verificados con pycel/gate por main.py (arqueo-cuadra, arqueo-descuadra, contador-honesto, contador-p4) + 3 verificados por lectura directa/gate propia (07-no-aplica, 08-precargado, bio) = 7/7; sin regresiones frente a ver3"}
+ },
+
+ "3_barrido_frase_niveles_todo_el_producto": {
+  "metodo": "grep de columna B de la hoja 'Instrucciones' de los 19 ficheros, contando apariciones de la frase vieja ('No se duplican') y de la nueva en sus dos variantes (2 y 3 niveles)",
+  "frase_vieja_total": 0,
+  "frase_nueva_2_niveles": 2,
+  "frase_nueva_3_niveles": 0,
+  "ficheros_con_bloque_orden_de_uso": ["18-apertura-cierre-negocio.xlsx:B37", "19-apertura-cierre-caja.xlsx:B48"],
+  "frase_niveles_ok": true,
+  "motivo": "coherente: hotel NO tiene fichero de áreas (contexto.f_areas=null, sus 15 P4 reparten el detalle por zona, no hay un fichero ▸ único de áreas), así que los 2 únicos ficheros con el bloque 'Orden de uso' (18 y 19, los únicos con sección 'Se conecta con') usan la frase de 2 niveles; 0 apariciones de la frase vieja en las 19 hojas Instrucciones del producto. Los 17 ficheros P4 restantes no tienen ese bloque estructuralmente (tienen 'Cómo usar esta plantilla' en su lugar), así que no aplica ahí ni antes ni ahora."
+ },
+
+ "4_hallazgo_ver3_resuelto": {
+  "H-01_ver3": "el literal fijo de T-08 seguía nombrando 'el de áreas' aunque hotel no tiene un fichero ▸ dedicado de áreas — severidad baja en ver3",
+  "estado_en_ver4": "RESUELTO por m1: 18!B37 y 19!B48 ya no mencionan 'áreas' ('Cada fichero cubre un nivel: el de negocio marca el HITO... y el de caja lleva el DINERO...'), verificado celda a celda arriba (§0/§3)."
+ },
+
+ "5_ficheros_de_otro_molde": {
+  "metodo": "19 xlsx del working copy recargados con openpyxl (data_only=True); barrido de #REF!/#NAME?/#VALUE!/#DIV0!/#N/A/#NULL!/#NUM! en TODAS las celdas de TODAS las hojas de los 19 ficheros",
+  "ficheros_abren_sin_error": 19,
+  "ficheros_totales": 19,
+  "errores_formula_encontrados": [],
+  "censo_confirma": "censo-entregables --fail sobre la copia: 0 defectos"
+ },
+
+ "6_recuento_y_metricas": {
+  "recuento_gate": 636,
+  "desglose_gate": "molde ▸ 56 + molde P4 580 = 636 (gates.recuento_tareas.recuento_por_molde), idéntico a ver3 — m1/m2/m3 no tocan contenido de tareas",
+  "tareas_01": 64,
+  "hojas_checklist": 53,
+  "hojas_checklist_desglose": "gates.dv_y_bio.hojas_checklist(4, molde ▸ de 18+19) + hojas_p4(49) = 53",
+  "fechas_bonus02": 24,
+  "fechas_bonus02_detalle": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario' filas 5-28 (24 filas), columna B 'Fecha / Período' con contenido concreto en las 24 (Enero-Reyes Magos … Inspección sanidad); columna F 'Notas' vacía en las 24 y 0 apariciones de '(Tu fecha)' en todo el fichero — este BONUS-02 es un calendario 100% entregado, sin placeholders de personalización que restar.",
+  "ficheros_total": 19
+ },
+
+ "7_barrido_vocabulario_ajeno_al_sector": {
+  "metodo": "grep sobre las 19 hojas de checklist + Instrucciones del producto (incluye 18/19 negocio-caja) buscando vocabulario de otros sectores del catálogo (pizza, hamburguesa, croissant, helado, heladería, chocolate, dark kitchen, obrador, parrilla, rider, domicilio, food truck, panadería, pastelería, sushi, marisco)",
+  "coincidencias_brutas": 9,
+  "hallazgos_nuevos_confirmados": 0,
+  "detalle": "las 9 coincidencias son vocabulario F&B hotelero legítimo, no vocabulario ajeno: '01!B23 croissants/pain au chocolat' y '01!B37 marisco crudo' (buffet desayuno), '02!B13 helados' y '02!B10 parrilla/robata' (estaciones de buffet), '05!B9 chocolate de bienvenida' y '08!B17 chocolate/fruta/vino' y '09!B8 chocolate/bombón en almohada' (amenities de hotel, categoría estándar del sector), 'BONUS-02!D13 helados/chiringuito' y 'BONUS-02!D25 chocolate turndown' (calendario estacional F&B). Ninguno es una fuga de contenido de otro kit del catálogo (pizzería/hamburguesería/heladería/dark-kitchen/panadería propiamente dichos): 0 hallazgos nuevos que reportar."
+ },
+
+ "8_hallazgo_carry_over_no_nuevo": {
+  "nota": "no se reporta como 'nuevo' porque ya constaba en kit-tareas-hotel-ver3.json §7; se deja constancia de que sigue igual",
+  "donde": "13-mantenimiento.xlsx:'Trimestral y Anual':B35",
+  "estado": "SIN CAMBIOS — 'Actualizar escandallos, precios de carta y tarifas de banquete con los precios reales de proveedor' sigue dentro del bloque legal/inspección (pólizas, jornada, Verifactu, licencias). No es un fix declarado en tanda 5 (contenido_kit_tareas_hotel.py no se tocó esta tanda) ni un T-item de motor 2.4; severidad baja, no bloqueante, ya documentado."
+ },
+
+ "recuento_gate": 636,
+ "tareas_01": 64,
+ "hojas_checklist": 53,
+ "fechas_bonus02": 24,
+ "ficheros_total": 19,
+ "casos6_ok": 7,
+ "casos6_total": 7,
+ "idempotencia": 0,
+ "listas_dv": ["✓,—,N/A"],
+ "frase_niveles_ok": true,
+ "fixes_tanda5_ok": true,
+
+ "hallazgos_nuevos": [],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "motor 2.4 resuelve para hotel el único T-item que le tocaba en esta tanda (m1, FRASE_NIVELES_SIN_AREAS en 18!B37/19!B48, verificado celda a celda) sin regresión: idempotencia 0 con el digest endurecido de m3, censo 0 defectos, 19/19 ficheros sin errores de fórmula, DV sigue siendo UNA sola lista en las 53 hojas de checklist, recuento_gate=636 sin cambios, los 7 casos §6 aplicables pasan (el 7.º confirma correctamente que no aplica). m2 no aplica a hotel (bandas_solapadas=[] tanto antes como ahora). No hay fix de contenido declarado para hotel en esta tanda (contenido_kit_tareas_hotel.py intacto), así que no hay nada pendiente de esa categoría que verificar. El hallazgo H-01 de ver3 queda RESUELTO. El barrido de vocabulario ajeno no encuentra ninguna fuga nueva (0/9 coincidencias brutas son alienas al sector). El único hallazgo abierto es el carry-over baja de 13-mantenimiento!B35, ya conocido, no nuevo y no bloqueante.",
+
+ "notas": [
+  "Todas las lecturas de celda son sobre el WORKING COPY del dry-run (CLAUDE_SCRATCHPAD=.../propio-verificador5/dryrun-kt/kit-tareas-hotel); astro-site/public/dl/kit-tareas-hotel/ no se ha tocado — comprobado con 'git status --porcelain astro-site/public/dl/' vacío antes y después.",
+  "No se ha regenerado kit-tareas (el representante): esta verificación es focalizada en kit-tareas-hotel, tanda 5.",
+  "landing (astro-site/src/data/productos/tareas/kit-tareas-hotel.ts) sigue desfasada según motor-2.4.json.pendiente — publica '46 checklists en 15 plantillas' y '~40 tareas' del 01 cuando el 01 real tiene 64 y el kit entero 636; no es objeto de esta verificación (motor/contenido de los xlsx) pero se deja constancia de que sigue pendiente.",
+  "Pendientes de motor-2.4.json que NO tocan a hotel y no se han vuelto a comprobar aquí por no ser objeto de esta tanda focalizada: contenido de dark-kitchen (_f08), DECISIÓN 3 de critico-3 (vocabulario genérico 08/18/10 en otros kits), 'caja fuera del 09' (no aplica a hotel — no está en la lista de SPEC §9.5), landings de los otros 9 hermanos."
+ ]
+}

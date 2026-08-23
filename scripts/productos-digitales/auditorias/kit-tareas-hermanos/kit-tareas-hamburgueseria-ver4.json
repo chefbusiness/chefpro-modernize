@@ -1,0 +1,92 @@
+{
+  "pid": "kit-tareas-hamburgueseria",
+  "rol": "verificador independiente · tanda 5 (motor 2.4, m1/m2/m3) · foco en fixes_tanda5_ok + frase_niveles_ok, sobre kit-tareas-hamburgueseria-ver3.json (motor 2.3) y motor-2.4.json",
+  "fecha": "2026-08-23",
+  "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=…/scratchpad/propio-verif5 · astro-site/public/dl/kit-tareas-hamburgueseria NO tocado en ningún momento · sin git add/commit/stash/clean",
+  "comando": "CLAUDE_SCRATCHPAD=…/scratchpad/propio-verif5 python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-hamburgueseria --dry-run --json …/kt-hermanos-5/kit-tareas-hamburgueseria.json",
+  "estado_del_kit_ante_tanda_5": {
+    "contenido_kit_tareas_hamburgueseria.py": "SIN CAMBIOS desde el commit e38bb62 (git diff HEAD vacío) — ningún fix de contenido específico de este kit fue declarado en la tanda 5; sólo cambian motor.py y main.py (m1/m2/m3), que son transversales.",
+    "m1_frase_niveles": "NO le cambia ni una celda a propósito: hamburgueseria TIENE fichero de áreas (01-apertura-cierre.xlsx), así que la rama que aplica es la de FRASE_NIVELES de 3 niveles (frase_niveles() con CTX['f_areas'] presente), no FRASE_NIVELES_SIN_AREAS (esa es sólo para los 5 kits del molde P4). Verificado: 11/11 Instrucciones con la frase de 3 niveles.",
+    "m2_bandas_solapadas": "SÍ aplica (dedup sin nº de fila): gates.bandas_solapadas devuelve exactamente 2 entradas (Cierre Sala!A14 67%, Apertura Sala!A5 29%), la MISMA pareja que ya medía motor 2.3 en ver3.json — sin duplicados por desfase de fila entre pasadas, que es lo que m2 corrige.",
+    "m3_digest_endurecido": "SÍ aplica de forma transversal: la comprobación de idempotencia del paso 3/7 usa ahora el digest reforzado (mensaje de DV + locked por celda) y sigue dando 0 diferencias 1.ª vs 2.ª pasada."
+  },
+  "1_dryrun_censo_idempotencia_dv_casos6": {
+    "dryrun_exit": 0,
+    "censo_fail_exit": 0,
+    "segunda_pasada_con_digest_m3": {
+      "metodo": "gate interno de main.py (paso 3/7), que desde m3 compara también errorTitle/error/prompt de cada DataValidation y locked de TODAS las celdas del rango usado (antes sólo type:formula1:sqref y locked únicamente en celdas con valor) — es el digest más estricto posible en este momento, y aun así 0 diferencias",
+      "diferencias": 0,
+      "evidencia": "salida de main.py: '== 3/7 · idempotencia (2.ª pasada sobre un clon) == diferencias 1.ª vs 2.ª pasada: 0'"
+    },
+    "listas_dv_del_producto": ["\"✓,—,N/A\""],
+    "listas_dv_evidencia": "gates.dv_y_bio.listas_dv_del_producto del informe nuevo = ['\"✓,—,N/A\"'], dv_incorrectas=[], 31 hojas de checklist, 0 con lista distinta.",
+    "casos_6": {
+      "total_aplicables": 6,
+      "ok": 6,
+      "detalle": [
+        {"caso": "arqueo-cuadra", "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54", "esperado": 0, "obtenido": 0, "ok": true, "metodo": "pycel del propio dry-run (paso 6/7 de main.py, salida 'arqueo-cuadra … C54: 0 OK')"},
+        {"caso": "arqueo-descuadra", "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54", "esperado": 10, "obtenido": 10, "ok": true, "metodo": "pycel del dry-run, salida 'arqueo-descuadra … C54: 10 OK'"},
+        {"caso": "contador-honesto (N/A no cuenta, '—' no descuenta)", "ref": "01-apertura-cierre.xlsx:'Apertura Cocina'!D46/F46", "esperado": "27 de 27", "obtenido": "27 de 27", "ok": true, "metodo": "pycel del dry-run, salida 'contador-honesto … D46/F46: 27 de 27 OK'"},
+        {"caso": "denominador-07 (COUNTIF no cuenta la banda placeholder)", "ref": "07-plantilla-personalizable.xlsx:'Por Franja Horaria'!F31", "esperado": 8, "obtenido": 8, "ok": true, "metodo": "pycel del dry-run, salida 'denominador-07 … F31: 8 OK'"},
+        {"caso": "08 precargado sin huecos de Responsable/Hora", "ref": "08-apertura-cierre-negocio.xlsx (firma de negocio)", "esperado": "0 huecos", "obtenido": "31 tareas, 0 sin Responsable u Hora", "ok": true, "metodo": "gate negocio_precargado del informe (paso 6/7, salida '08 precargado: … 31 tareas, 0 sin Responsable u Hora')"},
+        {"caso": "bio + versión 2.0 en todas las Instrucciones", "ref": "11 hojas Instrucciones", "esperado": "11/11", "obtenido": "11/11", "ok": true, "metodo": "gate dv_y_bio: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]"}
+      ]
+    },
+    "apertura_todos_los_ficheros_data_only": {
+      "metodo": "openpyxl.load_workbook(..., data_only=True) sobre los 11 xlsx regenerados en este dry-run, barrido celda a celda buscando '#REF!'/'#NAME?' (script propio, independiente del censo del informe)",
+      "resultado": "11/11 abren sin excepción, 0 celdas con #REF!/#NAME? en ninguna hoja",
+      "ficheros_de_otro_molde_intactos": "confirmado: 07 (plantilla), BONUS-01 (briefing), BONUS-02 (calendario), Registro Mensual (dentro de 09) y la hoja «Trimestral y Anual» (dentro de 05) abren sin fórmulas rotas; cache 139/139 con valor, 0 fallos de pycel (paso 5/7 del informe)"
+    }
+  },
+  "2_frase_niveles_ok": {
+    "frase_niveles_ok": true,
+    "evidencia": "barrido propio con openpyxl sobre las 11 hojas Instrucciones del xlsx regenerado: la viñeta 'Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO...' presente en 11/11 (01!B25 · 02!B25 · 03!B25 · 04!B25 · 05!B32 · 06!B25 · 07!B44 · 08!B39 · 09!B49 · BONUS-01!B15 · BONUS-02!B15); 0/11 con la frase de 2 niveles (FRASE_NIVELES_SIN_AREAS, que sólo aplica a los 5 kits P4); 0/11 con el literal viejo 'No se duplican: cada uno cubre un nivel.'",
+    "coherencia_con_estructura_del_kit": "correcto: hamburgueseria SÍ tiene fichero de áreas (01-apertura-cierre.xlsx, contexto.areas confirmado en la cabecera del dry-run 'areas=01-apertura-cierre.xlsx'), así que la frase de 3 niveles es la que corresponde según m1 — no es un defecto que aparezca, es la rama esperada."
+  },
+  "3_recuentos_y_estructura": {
+    "recuento_gate": 346,
+    "recuento_gate_evidencia": "gates.recuento_tareas.total del informe nuevo = 346 (recuento_por_molde: checklist_▸=346, p4=0) — idéntico al medido bajo motor 2.3 en ver3.json; 07 aporta 0 a propósito (plantilla en blanco).",
+    "tareas_01": 72,
+    "tareas_01_evidencia": "gates.recuento_tareas.por_fichero['01-apertura-cierre.xlsx'] = 72 (Apertura Cocina 30 + Apertura Sala 14 + Cierre Cocina 18 + Cierre Sala 10, por_hoja del mismo gate)",
+    "hojas_checklist": 31,
+    "hojas_checklist_evidencia": "gates.dv_y_bio.hojas_checklist = 31 (hojas_p4 = 0, este hermano no tiene molde P4)",
+    "fechas_bonus02": 22,
+    "fechas_bonus02_evidencia": "lectura fila a fila de BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!A5:D26 — 22 filas con Mes+Evento+Tareas+Antelación reales (1 Ene Año Nuevo … 31 Dic Nochevieja); fila 27 vacía; filas 28-32 son las 5 filas placeholder '(Tu fecha)' / '(Añade aquí)', excluidas tal y como pide el encargo",
+    "ficheros_total": 11,
+    "ficheros_total_evidencia": "inventario del dry-run: 11 xlsx en alcance, 0 fuera de alcance, censo --fail 11 ficheros censados (11 xlsx, 0 docx, 0 pdf)"
+  },
+  "4_fixes_tanda5_ok": {
+    "fixes_tanda5_ok": true,
+    "razonamiento": "ningún fix de CONTENIDO fue declarado para kit-tareas-hamburgueseria en esta tanda (contenido_kit_tareas_hamburgueseria.py sin diff contra HEAD); los tres fixes de MOTOR (m1/m2/m3) son transversales y los tres se comprueban en la celda de este kit: m1 no debía tocarlo (tiene f_areas) y no lo toca — frase de 3 niveles intacta en 11/11; m2 debía deduplicar bandas_solapadas por hoja sin nº de fila — el gate devuelve exactamente 2 entradas, las mismas que ya medía motor 2.3, sin duplicado por desfase de fila; m3 debía endurecer el digest de idempotencia sin introducir falsos positivos — la 2.ª pasada sigue en 0 diferencias con el digest reforzado. El pendiente documentado en SPEC §9.5 ('caja fuera del 09', que censa expresamente hamburgueseria 01!B11-B12/'Cierre Sala'!B12 + 04!B10/B17) queda firmado por el orquestador como NO bloqueante para esta tanda, así que no cuenta como fix incumplido."
+  },
+  "5_barrido_vocabulario_ajeno": {
+    "metodo": "barrido propio con openpyxl sobre las hojas de 08-apertura-cierre-negocio.xlsx y 09-apertura-cierre-caja.xlsx completas + la hoja Instrucciones de los 11 ficheros, buscando ~30 términos típicos de otros sectores del catálogo (sushi, pizza, espresso/barista, cóctel/mixología, helado/gelato, chocolate/bombón, hotel (check-in/room service/minibar/banquete), dark kitchen, catering, obrador/masa madre, pastelería/tarta/croissant, etc.)",
+    "hallazgos": 0,
+    "nota": "0 apariciones — el vocabulario de 08/09/Instrucciones es coherente con hamburguesería en las 11 hojas revisadas"
+  },
+  "6_hallazgos_nuevos_de_esta_ronda": [],
+  "7_continuidad_no_bloqueante": {
+    "nota": "los 2 hallazgos ya reportados en ver3.json (media: caja pedida fuera del 09 en 01/04 sin remisión; baja: columna Hora Límite del 01 no monótona) siguen vivos sin cambio — no son hallazgos NUEVOS de esta ronda, no los toca ningún fix de la tanda 5, y el primero está explícitamente documentado y aceptado como no bloqueante en SPEC §9.5 ('NO bloquea la tanda 5 por decisión del orquestador'). Por eso no se listan en hallazgos_nuevos."
+  },
+  "8_notas_finales": [
+    "REGLAS DURAS respetadas: astro-site/public/dl/kit-tareas-hamburgueseria/ no tocado (sólo --dry-run con CLAUDE_SCRATCHPAD propio, sin KIT_TAREAS_APPLY); sin git add/commit/stash/clean; un solo intérprete python en serie por llamada; istats antes de cada arranque (máx. 52,1 °C medido, muy por debajo del umbral de 60 °C); nada de builds ni Playwright.",
+    "El representante kit-tareas NO se ha regenerado en esta sesión (fuera del alcance de este encargo); el diff de referencia de 177 (motor-2.4.json / kit-tareas-diff-firmado.json) es de otro kit y no se ha reutilizado aquí sin verificar.",
+    "bloquea_real=false: dryrun_exit=0, censo_exit=0, idempotencia=0 diferencias con el digest endurecido de m3, DV única en 31/31 hojas, 6/6 casos §6, frase_niveles_ok=true (3 niveles, 0 'No se duplican'), recuento_gate=346=tareas manuales previas, 11/11 ficheros sin #REF!/#NAME?, ficheros de otro molde (07/BONUS-01/BONUS-02/Trimestral y Anual) intactos, fixes_tanda5_ok=true (m1 no aplica y no toca nada, m2 y m3 verificados en la celda de este kit), y 0 hallazgos nuevos en el barrido de vocabulario ajeno."
+  ],
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "idempotencia": 0,
+  "listas_dv": ["✓,—,N/A"],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+  "frase_niveles_ok": true,
+  "recuento_gate": 346,
+  "fechas_bonus02": 22,
+  "tareas_01": 72,
+  "hojas_checklist": 31,
+  "ficheros_total": 11,
+  "fixes_tanda5_ok": true,
+  "hallazgos_nuevos": [],
+  "bloquea_real": false,
+  "fichero_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kt-hermanos-5/kit-tareas-hamburgueseria.json"
+}

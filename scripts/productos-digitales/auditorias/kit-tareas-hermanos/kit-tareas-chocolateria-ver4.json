@@ -1,0 +1,110 @@
+{
+ "pid": "kit-tareas-chocolateria",
+ "rol": "verificador independiente · kit-tareas-chocolateria · sobre motor 2.4 (tanda 5)",
+ "fecha": "2026-08-23",
+ "insumos": [
+  "scripts/productos-digitales/kit-tareas-v2-SPEC.md §9",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-chocolateria-ver3.json (tanda 4)",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/motor-2.4.json",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_chocolateria.py (diff contra ec648ae, commit de la tanda 4)"
+ ],
+ "ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=…/scratchpad/propio-verificador-choco5 python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-chocolateria --dry-run --json …/kt-hermanos-5/kit-tareas-chocolateria.json",
+  "dryrun_exit": 0,
+  "contexto": "negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=None (kit del molde P4, en alcance del molde ▸ sólo 2/11)",
+  "idempotencia_1a_vs_2a_pasada_digest_m3": 0,
+  "inject_cache": "124 fórmulas nuevas, cache inyectado en las 124, 0 fallos de pycel",
+  "data_only_formulas_nuevas": {"con_valor": 124, "fallos": 0},
+  "censo_entregables_fail": {"exit": 0, "ficheros_censados": 11, "xlsx": 11, "docx": 0, "pdf": 0, "defectos": 0},
+  "negocio_precargado": {"tareas": 32, "huecos": 0, "firma_ok": true},
+  "integridad_otros_moldes_grep_independiente": "grep propio (no el del main.py) de #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL! sobre los 11 xlsx recargados data_only=True: 0 apariciones"
+ },
+ "listas_dv_del_producto": ["\"✓,—,N/A\""],
+ "dv_detalle": {
+  "hojas_checklist_molde_trio": 4,
+  "hojas_p4_con_dv": 20,
+  "hojas_checklist_total": 24,
+  "dv_incorrectas": 0,
+  "nota": "gates.dv_y_bio del propio informe: hojas_checklist=4 + hojas_p4=20 = 24, dv_incorrectas=[], una sola lista distinta en todo el corpus"
+ },
+ "casos_parrafo6": {
+  "total": 4,
+  "ok": 4,
+  "detalle": [
+   {"caso": "arqueo-cuadra", "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C56", "esperado": 0, "obtenido_main": 0, "obtenido_pycel_independiente": 0, "ok": true, "metodo": "el propio demostraciones_spec_6 de main.py (pycel interno) MÁS una re-evaluación independiente con ExcelCompiler(pycel) fresco sobre la copia .xlsx que main.py ya había escrito en _demos/ (no se generó copia propia, se leyó la que main.py produjo en su dry-run)"},
+   {"caso": "arqueo-descuadra", "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C56", "esperado": 10, "obtenido_main": 10, "obtenido_pycel_independiente": 10, "ok": true, "metodo": "misma re-evaluación independiente con pycel sobre la copia arqueo-descuadra-*.xlsx de _demos/"},
+   {"caso": "contador-honesto (17 tareas, 3 N/A, 14 ✓)", "ref": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D28/F28", "esperado": "14 de 14", "obtenido": "14 de 14", "ok": true, "metodo": "demostraciones_spec_6 del propio main.py (pycel interno); no revalidado con pycel aparte por no aportar información nueva sobre un COUNTIF ya confirmado por fórmula en tandas previas"},
+   {"caso": "contador-p4-sin-rotulos (hoja tal cual se entrega)", "ref": "01-apertura-cierre.xlsx:'Apertura'!C39/E39", "esperado": "0 de 25", "obtenido": "0.0 de 25.0", "ok": true, "metodo": "demostraciones_spec_6 del propio main.py: 25 tareas reales, 3 filas de rótulo repetido no cuentan, 0 marcadas ✓ en la hoja recién impresa"}
+  ],
+  "nota": "El main.py de motor 2.4 sólo corre 4 casos de demo (arqueo×2 + contador×2); los otros 3 casos que la tanda 4 verificó a mano con pycel INDEPENDIENTE sobre copias de un solo uso (contador P4 con 8 tareas escritas, ninguna tarea sin Responsable/Hora, bio en las 11 Instrucciones) no forman parte de esta pasada porque no cambiaron: negocio_precargado (32 tareas, 0 huecos) y dv_y_bio (bio 11/11, sin_bio=[], version_desfasada=[]) del propio gate los reconfirman sin necesidad de repetir el pycel manual."
+ },
+ "frase_niveles_ok": true,
+ "frase_niveles_detalle": {
+  "kit_tiene_fichero_areas": false,
+  "esperado": "frase de 2 niveles (FRASE_NIVELES_SIN_AREAS, sin mencionar «el de áreas») en 08 y 09, únicos ficheros con el bloque «Se conecta con» en este kit",
+  "verificado": "08-apertura-cierre-negocio.xlsx:Instrucciones!B37 y 09-apertura-cierre-caja.xlsx:Instrucciones!B48 = «▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar) y el de caja lleva el DINERO. Si una tarea aparece en los dos, es a propósito: una es el hito y la otra el detalle.» — texto idéntico en los dos ficheros, sin mención de «fichero de áreas»",
+  "no_se_duplican_apariciones": 0,
+  "otros_9_ficheros": "01-07 y BONUS-01/02 no tienen el bloque «Se conecta con» ni ninguna variante de la frase (arquitectura documentada desde la tanda 4: sólo 08/09 pasan por motor.reescribir_instrucciones en este kit)"
+ },
+ "recuento_gate": 338,
+ "recuento_por_molde": {"checklist_▸": 59, "p4": 279},
+ "recuento_desviacion_pct": 0.0,
+ "recuento_nota": "gates.recuento_tareas.total = 338, idéntico al recuento manual de la tanda 4 (kit-tareas-chocolateria-ver3.json) celda a celda, y los 24 recuentos por_hoja coinciden uno a uno con el detalle manual de esa pasada",
+ "tareas_01": 41,
+ "tareas_01_detalle": "01-apertura-cierre.xlsx: Apertura=25 + Cierre=16 = 41 (gates.recuento_tareas.por_fichero)",
+ "hojas_checklist": 24,
+ "fechas_bonus02": 12,
+ "fechas_bonus02_nota": "El BONUS-02 de este kit NO usa el molde de calendario del representante (23 filas × 4 columnas con placeholders «(Tu fecha)»): es una tabla de 12 filas (Enero-Diciembre, A5:F16), cada una con su fecha/evento entregado en texto dentro de la celda B. Las 12 filas tienen contenido real; grep de «Tu fecha» sobre las dos hojas del fichero: 0 apariciones — no hay placeholders sin rellenar que descontar.",
+ "ficheros_total": 11,
+ "fixes_tanda5_ok": true,
+ "fixes_tanda5_detalle": {
+  "m1_frase_niveles": "APLICADO Y VERIFICADO en 08!B37 y 09!B48 (ver frase_niveles_detalle). Coincide EXACTAMENTE con las celdas que motor-2.4.json §9.4/m1 declara para chocolatería (08!B37/09!B48), aunque motor-2.4.json admite en su propia sección «pendiente» que sólo había ejecutado catering de los cinco kits P4 — esta verificación cierra ese pendiente para chocolatería con la celda real abierta.",
+  "fix_contenido_barrido_vocabulario_ajeno_baja": {
+   "declarado_en": "docstring de contenido_kit_tareas_chocolateria.py (sección nueva «BARRIDO DE VOCABULARIO DE SALA EN 08/09 (tanda 5)»), responde al hallazgo baja de kit-tareas-chocolateria-ver3.json",
+   "celdas_verificadas": [
+    "08!'Apertura del Negocio'!B9 = «Montar la señalización exterior y el cartel de encargos por adelantado, y comprobar que al escaparate no le da el sol directo…» (antes «…/ pizarra de menú») — OK",
+    "08!'Apertura del Negocio'!B11 = «Encender las vitrinas temperadas de bombones y tabletas nada más entrar…» (antes «Encender sistema de reservas / tablet de pedidos») — OK, Zona Recepción→Vitrina confirmada",
+    "08!'Apertura del Negocio'!B13 = «Revisar los encargos comprometidos para hoy…» (antes «Revisar reservas del día y eventos especiales») — OK, Zona Recepción→Mostrador confirmada",
+    "08!'Apertura del Negocio'!B16 = «Revisar el estado del mobiliario de tienda: mostrador, estanterías y escaparate…» (antes «…sillas, mesas, iluminación») — texto OK; Zona SIN cambiar (ver hallazgo nuevo baja #1)",
+    "08!'Apertura del Negocio'!B18 = «Comprobar antes de abrir que ninguna bandeja de la vitrina se queda sin su etiqueta de precio…» (antes «…las cartas/menús están en orden») — OK, Zona Sala→Vitrina confirmada"
+   ],
+   "resultado": "5/5 celdas reescritas 1:1 tal y como declara el código, con las Zonas que el código pedía cambiar (4 de 5; la 5.ª — B16 — no pedía cambio de Zona y no lo tiene)"
+  },
+  "fix_contenido_vitrina_08_split_humedad": {
+   "declarado_en": "constante VITRINA_08 reescrita + comentario «Desde la tanda 5 la tarea se parte en dos»",
+   "celdas_verificadas": [
+    "08!'Apertura del Negocio'!B11 = encendido (ver arriba)",
+    "08!'Apertura del Negocio'!B20 = «Comprobar que las vitrinas temperadas han alcanzado 16-18 °C y menos del 55 % de humedad antes de montar el género — anota la lectura: ____ °C» — OK, Zona Vitrina"
+   ],
+   "resultado": "aplicado: la vitrina se enciende en B11 (hora temprana) y se comprueba con rango+humedad en B20 (hora tardía), como describe el docstring"
+  },
+  "cierre_negocio_apagar_vitrina": "08!'Cierre del Negocio'!B18 = «Apagar las vitrinas temperadas una vez retirado el género a la cámara de conservación», Zona=Vitrina (antes Tienda) — OK, coincide con el diff de código"
+ },
+ "hallazgos_nuevos": [
+  {
+   "severidad": "baja",
+   "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!C16 (contenido_kit_tareas_chocolateria.py:_f08, llamada a _tarea_neg sin zona_nueva)",
+   "hallazgo": "El barrido de vocabulario de esta misma tanda reescribió B16 de «Revisar estado del mobiliario (sillas, mesas, iluminación)» a «Revisar el estado del mobiliario de tienda: mostrador, estanterías y escaparate…», pero la Zona de esa fila (columna C) se quedó en «Sala» — la única Zona de las 5 filas tocadas por el barrido que NO se actualizó (las otras 4 pasan a Vitrina/Mostrador). Una bombonería no tiene «Sala»; el propio texto reescrito ya no la menciona. Es un descuido mecánico, no de redacción: `_tarea_neg` sólo cambia la Zona si se le pasan `zona_vieja`/`zona_nueva`, y en esta llamada concreta no se pasaron. No afecta a ningún gate, fórmula ni al recuento — la columna Zona no entra en `gates.recuento_tareas` ni en `dv_y_bio`."
+  },
+  {
+   "severidad": "baja",
+   "donde": "08-apertura-cierre-negocio.xlsx:'Cierre del Negocio'!C6 (molde genérico compartido por los 12 kits, fuera del alcance del barrido de esta tanda)",
+   "hallazgo": "La tarea «Verificar que no quedan clientes en el local» conserva Zona=«Sala» en el fichero de cierre. El texto de la tarea es universal (aplica a cualquier negocio con puerta al público) y no fue tocado ni necesita tocarse, pero la Zona vuelve a etiquetar como «Sala» un espacio que en esta familia de kits ya se llama «Tienda»/«Mostrador»/«Vitrina» en el resto de filas del mismo fichero (ver B16, B11, B18 tras el barrido). Es el mismo patrón de fondo que critico-3.json deja abierto como DECISIÓN 3 (vocabulario genérico del 08 en kits sin sala), pero esta celda concreta —la Zona de Cierre!fila 6, no el texto de ninguna B citada en esa decisión— no estaba censada ahí. Cosmético, no toca ningún gate."
+  }
+ ],
+ "hallazgos_nuevos_max6_ok": true,
+ "integridad_otros_moldes": {
+  "ok": true,
+  "evidencia": "grep independiente de #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL! sobre los 11 xlsx (data_only=True, recarga propia, no reutilizando el pycel interno de main.py): 0 apariciones"
+ },
+ "bloquea_real": false,
+ "motivo_no_bloquea": "Motor: dry-run exit 0, idempotencia 0 diferencias con el digest ENDURECIDO de m3 (mensaje de DV + locked de todas las celdas), inject_cache 124/124 sin fallos de pycel, censo --fail 0 defectos, negocio_precargado 32/0 huecos, 0 errores #REF!/#NAME?/… en los 11 xlsx recargados de forma independiente. DV: una sola lista '\"✓,—,N/A\"' en las 24 hojas de checklist (0 incorrectas). Casos §6: 4/4 OK según el propio gate del main.py, y los dos casos numéricos (arqueo cuadra/descuadra) re-verificados con un ExcelCompiler de pycel INDEPENDIENTE sobre las copias que el propio dry-run había escrito: 0 y 10, coinciden. frase_niveles_ok=true: la viñeta «Orden de uso» de 08!B37 y 09!B48 es AHORA la de 2 niveles (m1 aplicado), sin mención de «fichero de áreas» que este kit no tiene, y «No se duplican» aparece 0 veces en las 11 Instrucciones. Los DOS fixes de contenido declarados para esta tanda (barrido de vocabulario ajeno de 5 celdas del 08 + partición encendido/comprobación de la vitrina con humedad) están los 7/7 aplicados y verificados abriendo la celda real, con las Zonas que el código pedía cambiar. Los 2 hallazgos nuevos son de severidad BAJA (una Zona sin actualizar en la propia fila que el barrido tocó, y una Zona genérica preexistente fuera del alcance del barrido): ninguno es ALTO, ninguno toca un gate, una fórmula ni un dato de dinero, así que no cambian el veredicto de esta verificación.",
+ "notas": [
+  "No se tocó astro-site/public/dl/** en ningún momento: todo el trabajo (el dry-run del producto y la re-evaluación con pycel) se hizo dentro de scratchpad/propio-verificador-choco5 sobre ficheros que el propio dry-run ya había escrito allí, sin KIT_TAREAS_APPLY, sin --producto distinto de kit-tareas-chocolateria, sin git add/commit/stash/clean.",
+  "kit-tareas (el representante) NO se ha tocado ni regenerado en esta verificación: fuera del encargo (que era sólo kit-tareas-chocolateria).",
+  "Temperatura de CPU vigilada con istats ANTES de cada arranque de python: 45,88 · 45,81 · 46,75 · 47,38 · 46,31 °C — nunca por encima de 47,4 °C en toda la sesión, un intérprete de python a la vez, sin builds ni Playwright.",
+  "Discrepancia con motor-2.4.json a corregir por el orquestador: su lista `pendiente` dice «sólo se ha ejecutado catering de los cinco» kits P4 que m1 cambia — esta verificación añade chocolatería como segundo kit P4 con m1 medido y firmado (08!B37/09!B48, texto de 2 niveles, exactamente la celda que motor-2.4.json predijo en su §9.4). Quedan heladería, hotel y restaurante-creativo por medir.",
+  "No se revisó la landing (kit-tareas-chocolateria.ts): fuera del encargo de esta verificación (motor+contenido sobre los .xlsx), igual que en las tandas anteriores.",
+  "Los 2 hallazgos nuevos de esta pasada son EXCLUSIVOS de la columna Zona (metadato de impresión, no de negocio/fórmula/gate); no se ha encontrado ningún vocabulario de restaurante/sala en el TEXTO de ninguna tarea de 08 o 09 tras el barrido de esta tanda — el barrido de contenido fue completo en B9/B11/B13/B16/B18/B20, sólo dejó una Zona sin tocar (B16) y no tocó la Zona preexistente de Cierre!B6, que nunca estuvo en su alcance."
+ ]
+}

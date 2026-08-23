@@ -1,0 +1,76 @@
+{
+ "rol": "verificador independiente · kit-tareas (REPRESENTANTE, ya en producción v2.0) · ronda 4 (post motor 2.4 / tanda 5, firmas d/e/f/c)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas",
+ "modo": "SOLO LECTURA sobre astro-site/public/dl/kit-tareas · dry-run en CLAUDE_SCRATCHPAD=…/propio-verificador4 · sin KIT_TAREAS_APPLY · sin git",
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=…/propio-verificador4 python3 kit-tareas-v2_0/main.py --producto kit-tareas --dry-run --json …/kt-hermanos-5/kit-tareas.json",
+  "exit": 0,
+  "resumen_consola": "kit «Restaurante Casual» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · hora ancla 07:00. idempotencia (2.ª pasada sobre un clon, con el digest m3 de main.py): 0 diferencias. inject_cache 11/11 sin fallos_pycel (142 con valor, 0 fallos). §6 (4 casos aplicables, representante SIN hojas P4): arqueo-cuadra C54=0 OK, arqueo-descuadra C54=10 OK, contador-honesto '22 de 22' OK, denominador-07 F31=8 OK. DV 33 hojas checklist, 0 incorrectas. bio 11/11 Instrucciones, 0 sin versión 2.0. 08 precargado: 28 tareas, 0 huecos. tpv_duplicado: 1 sola tarea de encendido en todo el producto (08, hito legítimo). bandas_solapadas: []. recuento de tareas: 491 (molde ▸ 491 + P4 0)."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only …/dryrun-kt/kit-tareas --fail --quiet (paso 7/7 integrado en main.py)",
+  "exit": 0,
+  "resultado": "OK: 0 defectos (--fail) — 11 xlsx censados en 1 producto"
+ },
+ "idempotencia": 0,
+ "fixes_tanda5_ok": true,
+ "diff_celda_a_celda_vs_produccion": {
+  "metodo": "Script propio diff_celda_ver4.py (openpyxl, INDEPENDIENTE del digest interno de main.py): compara los 11 xlsx de astro-site/public/dl/kit-tareas contra la copia dry-run recién regenerada, celda a celda — valor, TODAS las propiedades de cada data validation por rango (type/operator/formula1/formula2/allow_blank/showErrorMessage/errorTitle/error/promptTitle/prompt), alturas de fila, anchos de columna, locked de TODAS las celdas usadas (con y sin valor), merges, print_area y las 17 flags de protección de hoja.",
+  "total_diferencias": 177,
+  "desglose": {
+   "valor": 26,
+   "dv": 33,
+   "alturas": 26,
+   "locked": 92,
+   "merges": 0,
+   "cf": 0,
+   "print_area": 0,
+   "proteccion_hoja": 0,
+   "hojas": 0,
+   "anchos": 0
+  },
+  "comparacion_con_firmado": "EXACTO, no sólo dentro de ±2: mi diff (26/33/26/92 = 177) coincide categoría a categoría, celda a celda, con auditorias/kit-tareas-hermanos/kit-tareas-diff-firmado.json (26/33/26/92 = 177). Cero diferencias en merges/cf/print_area/proteccion_hoja/hojas/anchos en los dos.",
+  "verificacion_firma_d": "11/11 celdas confirmadas: 'Instrucciones'!B35/B29/B34/B28/B34/B28/B41/B36/B46/B12/B12 (01..09+BONUS) pierden '(accesos, luces, clima, terraza)' y quedan en '…es el MARCO del día.' — ANTES=DESPUÉS-paréntesis exacto, ningún otro cambio en esas celdas.",
+  "verificacion_firma_a5_T08": "11/11 celdas: 'No se duplican: cada uno cubre un nivel.' → FRASE_NIVELES de 3 niveles ('el de negocio marca el HITO…, el de áreas detalla CÓMO…, el de caja lleva el DINERO'), mismo literal en las 11, dentro de la MISMA viñeta 'Orden de uso' (no se añadió fila). Confirmado con f_areas presente (01-apertura-cierre.xlsx) → versión de 3 niveles, coherente con m1.",
+  "verificacion_firma_a4_T01": "08:Instrucciones!B40: 'el marco del día está en 01-apertura-cierre.xlsx' (contradecía a !B36) → 'este ES el marco del día — el HITO…; el DETALLE de cada zona está en 01… y el DINERO, en 09…' — !B36 y !B40 ya no se contradicen (b40_ok verificado celda a celda).",
+  "verificacion_firma_e": "09:Instrucciones!B50 = '▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 08… y el detalle por zona, en 01…' — cola ESPECÍFICA de caja, distinta de la de 08, confirmada.",
+  "verificacion_firma_a3_T02": "09:'Apertura de Caja'!B9 'Encender TPV / POS' → 'Comprobar que el TPV está encendido y abrir turno de caja'; 08:'Apertura del Negocio'!B10 sigue intacto 'Encender TPV / POS / datáfono' (07:15, ANTES que la comprobación de caja en 09 a las 07:30) — 1 sola tarea 'Encender…TPV' en todo el producto, 0 fuera de 08 (gates.tpv_duplicado).",
+  "verificacion_firma_a2_DOM01": "09:'Cierre de Caja'!B10 = 'Total facturado = efectivo contado − fondo + tarjetas + otros'. Fórmulas trazadas a mano: C47=SUM(recuento)=1150, C48=IFERROR('Apertura de Caja'!C23,0)=150, C49=IFERROR(C47-C48,0)=1000, C52=C49+C50+C51=1800, C54=IFERROR(C52-C53,0) — el texto ya no contradice la fórmula (DOM-R2-01 cerrado).",
+  "verificacion_firma_f_calendario": "BONUS-02:'Calendario Anual' — 92 celdas locked→unlocked, filas 5-27 (23 filas × 4 columnas A:D), TODAS True→False. Confirmado por separado: producción ya tenía A28:D32 (20 celdas, placeholders '(Tu fecha)') desbloqueado de antes, así que el conjunto desbloqueado final es A5:D32 (112 celdas) pero el CAMBIO frente a producción es sólo A5:D27 (92 celdas) — coincide con el alcance firmado. Fila 27 vacía (última libre del molde), efecto inocuo confirmado.",
+  "verificacion_firma_c_alturas": "26 alturas, exactamente las 3 familias firmadas: 22 en las 11 Instrucciones (línea del negocio 32.0→16.0 al perder el paréntesis + línea T-08 16.0→48.0), 2 en las colas 'Estás en…' de 08 (32.0→48.0) y 09 (32.0→48.0), 2 en 09:'Apertura de Caja'!9 y 'Cierre de Caja'!10 (24.0→None, fijo→autoalto)."
+ },
+ "listas_dv": [
+  "\"✓,—,N/A\""
+ ],
+ "casos6_ok": 4,
+ "casos6_total": 4,
+ "casos6_detalle": [
+  {"caso": "arqueo cuadra (fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09:'Cierre de Caja'!C54 = 0 (pycel)."},
+  {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "C54 = 10, CF ámbar confirmada sobre C54."},
+  {"caso": "contador honesto (25 tareas, 3 N/A, 22 ✓)", "ok": true, "evidencia": "01:'Cierre Cocina'!D43/F43 = '22 de 22' (pycel)."},
+  {"caso": "denominador-07 por fórmula", "ok": true, "evidencia": "07:'Por Franja Horaria'!F31 = 8 (pycel); plantilla en blanco, no cambia nada en el representante."}
+ ],
+ "nota_casos6": "El representante es «▸ completo» sin hojas P4 (gates.dv_y_bio.hojas_p4=0), así que sólo aplican 4 de los 6 casos de §6 (arqueo ×2, contador honesto, denominador-07); los 2 restantes son de kits P4 (hermanos).",
+ "frase_niveles_ok": true,
+ "frase_niveles_evidencia": "Grep de 'Orden de uso' en 11/11 hojas Instrucciones (dry-run): las 11 celdas (01!B38 02!B32 03!B37 04!B31 05!B37 06!B31 07!B44 08!B39 09!B49 BONUS-01!B15 BONUS-02!B15) llevan la frase de 3 NIVELES ('local → áreas → caja… el de negocio marca el HITO…, el de áreas detalla CÓMO…, el de caja lleva el DINERO'), coherente con que kit-tareas SÍ tiene fichero de áreas (01-apertura-cierre.xlsx). Grep global (las 11 xlsx completos, no sólo Instrucciones) de 'No se duplican': 0 apariciones.",
+ "recuento_gate": 491,
+ "recuento_gate_evidencia": "gates.recuento_tareas.total del informe JSON = 491 (checklist_▸=491, p4=0). Coincide con el 'recuento real del kit son 491 tareas' de la SPEC §9.2 T-03.",
+ "tareas_01": 111,
+ "tareas_01_evidencia": "gates.recuento_tareas.por_fichero['01-apertura-cierre.xlsx'] = 111 (30 Apertura Cocina + 18 Apertura Sala + 16 Apertura Barra + 25 Cierre Cocina + 10 Cierre Sala + 12 Cierre Barra, por gates.recuento_tareas.por_hoja).",
+ "hojas_checklist": 33,
+ "hojas_checklist_evidencia": "gates.dv_y_bio.hojas_checklist = 33, igual a len(gates.recuento_tareas.por_hoja) = 33 (todas molde checklist_▸, hojas_p4=0).",
+ "fechas_bonus02": 22,
+ "fechas_bonus02_evidencia": "BONUS-02:'Calendario Anual' filas 5-26 = 22 filas con fecha/evento real entregado (Ene..Dic, incl. Día del Padre 19 Mar, Comuniones abr-jun, 15 Ago, 1 Nov, puente 6-8 Dic de DOM-20). Filas 28-32 son los 5 placeholders '(Tu fecha)' y se excluyen explícitamente; fila 27 vacía (frontera del rango desbloqueado, no cuenta). Coincide con SPEC §9.2 T-03 ('el calendario trae 22 fechas, no 17').",
+ "ficheros_total": 11,
+ "ficheros_total_evidencia": "11 xlsx en producción y en dry-run, mismo listado; gates.censo_entregables confirma 11 ficheros censados en 1 producto.",
+ "molde_otro_intacto": "N/A para el representante: gates.fuera_de_alcance=[] — los 11/11 ficheros de kit-tareas están en alcance del molde ▸ (0 P4). No hay ficheros de otro molde que verificar aparte en este producto (a diferencia de los 5 hermanos P4 de §5).",
+ "barrido_vocabulario": {
+  "alcance": "08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx y las 11 hojas 'Instrucciones' del producto (dry-run regenerado).",
+  "no_latinos": "0 caracteres CJK/cirílico/hangul/árabe/hebreo/tailandés en el corpus completo de los 11 xlsx (barrido global, no sólo 08/09/Instrucciones).",
+  "vocabulario_ajeno_al_sector": "0 hallazgos. Grep dirigido de vocabulario de otros verticales de la familia ▸ (café/obrador/masa madre/pizza/hamburguesa/dark kitchen/hotel-recepción-minibar/heladería-sorbetera/coctelería/catering-banquete/chocolate-bombonería) sobre 08/09/Instrucciones: 0 apariciones reales (1 coincidencia de subcadena 'spa' dentro de 'espacio', descartada por falso positivo). Lectura íntegra manual de 08 y 09 (Instrucciones + hojas de tareas): terminología consistente con 'Restaurante Casual', sin residuos de otros kits (grep de los 11 nombres de kit hermanos sobre el corpus completo: 0 apariciones)."
+ },
+ "bloquea_real": false,
+ "hallazgos_nuevos": [],
+ "conclusion": "El representante kit-tareas en dry-run reproduce EXACTAMENTE las 4 diferencias firmadas de la tanda 5 (d, e, f, c) y nada más: 177 diferencias totales, mismo desglose 26/33/26/92 que kit-tareas-diff-firmado.json, celda a celda. (1) dry-run exit 0, censo --fail 0 defectos, idempotencia 0 (digest m3), 1 sola lista de DV, 4/4 casos §6 aplicables OK. (2) frase_niveles_ok=true (3 niveles en las 11 Instrucciones, coherente con que el representante SÍ tiene fichero de áreas; 0 'No se duplican' en todo el producto). (3) recuento_gate=491, tareas_01=111, hojas_checklist=33, fechas_bonus02=22, ficheros_total=11 — todos verificados contra el informe JSON y/o contados a mano sobre el xlsx. (4) N/A (representante sin ficheros fuera de molde). (5) barrido de vocabulario limpio, 0 hallazgos nuevos. bloquea_real=false: no falla (1)-(2), los 4 fixes de la tanda 5 están presentes y verificados, y no hay ningún hallazgo nuevo de severidad alta."
+}

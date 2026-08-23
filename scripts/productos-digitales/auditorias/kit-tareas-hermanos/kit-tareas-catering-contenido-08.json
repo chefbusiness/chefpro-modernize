@@ -1,0 +1,80 @@
+{
+ "rol": "mantenedor del módulo de CONTENIDO · kit-tareas-catering · vocabulario del 08 (ver3 §7)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-catering/ verificado intacto (git status --porcelain de dl/ vacío antes y después) · sin git add/commit/stash/clean · sin KIT_TAREAS_APPLY",
+ "fichero_codigo": "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_catering.py",
+ "comando": "CLAUDE_SCRATCHPAD=.../propio-cont-kit-tareas-catering python3 kit-tareas-v2_0/main.py --producto kit-tareas-catering --dry-run --json .../kt-hermanos-5/kit-tareas-catering-cont.json",
+
+ "encargo": "El 08 (molde ▸, lista genérica del generador v1.1 compartida por los 12 kits) conservaba vocabulario de restaurante con sala abierta al público dentro de un kit de producción off-site. Reescritura 1:1 al oficio del catering, misma fila, D (Responsable) y E (Hora Límite / Cuándo) intactas; después, barrido de «carta», «pizarra», «reservas», «música» y «comensales en sala» en las Instrucciones y en el 08/09 enteros.",
+
+ "resultado": {
+  "dryrun_exit": 0,
+  "fallos": [],
+  "idempotencia": 0,
+  "censo_fail": "0 defectos",
+  "recuento_tareas": 346,
+  "gates_vs_baseline": "los 9 gates del informe (negocio_precargado, recuento_tareas, tpv_duplicado, bandas_solapadas, dv_y_bio, censo_entregables, data_only_formulas_nuevas, inject_cache, idempotencia) salen BYTE A BYTE IGUALES que en el dry-run de baseline corrido antes de tocar nada. Es la prueba de que la reescritura no mueve ni una hora, ni un contador, ni un recuento."
+ },
+
+ "cambios": {
+  "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'": [
+   {"celda": "B5", "antes": "Desactivar alarma del local", "ahora": "Desactivar la alarma y abrir el obrador, el almacén de material y el muelle de carga", "zona": "Acceso (sin cambio)"},
+   {"celda": "B9", "antes": "Montar señalización exterior / pizarra de menú", "ahora": "Cargar los isotermos de los eventos que salen primero y registrar la temperatura de salida — anota la lectura: ____ °C (el detalle de la carga va en la hoja «Transporte» de 02-partidas-cocina.xlsx)", "zona": "Exterior (sin cambio: se carga en el muelle)", "nota": "el hueco de la lectura se compone con `motor.LECTURA`, así que es el MISMO literal del resto del corpus; el solape con el detalle de 02 es el que la frase de T-08 declara impreso en el propio fichero («una es el hito y la otra el detalle»)"},
+   {"celda": "B11", "antes": "Encender sistema de reservas / tablet de pedidos", "ahora": "Entregar a cada conductor la hoja de ruta de su vehículo: eventos, direcciones, horas de entrega y teléfono de contacto", "zona": "Recepción → Logística"},
+   {"celda": "B12", "antes": "Poner música ambiente al volumen adecuado", "ahora": "Imprimir las órdenes de servicio del día y repartirlas: una para producción, una para transporte y una para el responsable de cada evento", "zona": "General → Oficina"},
+   {"celda": "B13", "antes": "Revisar reservas del día y eventos especiales", "ahora": "Confirmar con cada cliente el número definitivo de comensales y los cambios de última hora", "zona": "Recepción (sin cambio)", "nota": "no estaba en la lista del encargo; lo caza el barrido de «reservas»"},
+   {"celda": "B14", "antes": "Comprobar baños: papel, jabón, limpieza, ambientador", "ahora": "Comprobar aseos y vestuario del personal: papel, jabón, papel de manos y limpieza", "zona": "Baños (sin cambio)", "nota": "en una base de catering el aseo es del PERSONAL (y el vestuario es obligación); el ambientador es del baño de clientes"},
+   {"celda": "B16", "antes": "Revisar estado del mobiliario (sillas, mesas, iluminación)", "ahora": "Revisar el mobiliario y la mantelería que salen hoy (mesas, sillas y tableros) y apartar lo dañado", "zona": "Sala → Almacén", "nota": "no estaba en la lista; su zona era «Sala»"},
+   {"celda": "B17", "antes": "Montar terraza si aplica (mesas, sillas, sombrillas/estufas)", "ahora": "Preparar el material de exterior si hay evento al aire libre: carpas, sombrillas, estufas y lastres", "zona": "Terraza → Exterior", "nota": "no estaba en la lista; una empresa de catering no tiene terraza, tiene eventos al aire libre"},
+   {"celda": "B18", "antes": "Comprobar que las cartas/menús están en orden", "ahora": "Confirmar con cada recinto el acceso y el horario de montaje: muelle, ascensor, permisos y persona de contacto", "zona": "Sala → Oficina"},
+   {"celda": "B19", "antes": "Encender displays / pantallas informativas si las hay", "ahora": "Briefing con el equipo del día: eventos, horas críticas, alérgenos y quién va en cada servicio (el guion completo está en BONUS-01-briefing-servicio.xlsx)", "zona": "General (sin cambio)"}
+  ],
+  "08-apertura-cierre-negocio.xlsx:'Cierre del Negocio'": [
+   {"celda": "B5", "antes": "Apagar música ambiente", "ahora": "Apagar los equipos del obrador que no queden en marcha (hornos, freidora, campana) y dejar cámaras y abatidor encendidos", "zona": "General (sin cambio)"},
+   {"celda": "B6", "antes": "Verificar que no quedan clientes en el local", "ahora": "Verificar que no queda personal ni visitas en el obrador antes de cerrar", "zona": "Sala → General"},
+   {"celda": "B7", "antes": "Limpiar y recoger terraza si aplica", "ahora": "Recoger y guardar el material de exterior que haya vuelto (carpas, sombrillas y estufas)", "zona": "Terraza → Exterior"},
+   {"celda": "B12", "antes": "Recoger señalización exterior", "ahora": "Despejar y baldear el muelle de carga: sin carros, sin palés y sin residuos", "zona": "Exterior (sin cambio)"}
+  ]
+ },
+
+ "no_tocado_a_proposito": [
+  "08:'Apertura del Negocio'!B10 «Encender TPV / POS / datáfono» — es el hito de T-02 y lo cuenta `gates.tpv_duplicado` (1 en todo el producto, en el fichero de negocio).",
+  "Las Instrucciones de 08 y de 09: las reescribe `motor.reescribir_instrucciones` en CADA pasada. Una línea escrita desde el módulo de contenido sería una diferencia nueva en cada pasada (o quedaría pisada).",
+  "Las columnas D y E de las 14 filas: las precarga `motor.precargar_negocio` POR ÍNDICE de fila, no por el texto (`resp`/`hora` salen de `i`), así que reescribir la B no las mueve — y el informe lo confirma con las mismas dos líneas que el baseline («precargados en 18 tareas», «en 15 tareas»)."
+ ],
+
+ "barrido": {
+  "alcance": "las 3 hojas de 08 y las 4 de 09, celda a celda, incluidas las dos «Instrucciones»",
+  "carta": "0 apariciones (la única era 'cartas/menús' en 08!B18, ya reescrita)",
+  "pizarra": "0 (la única era 08!B9)",
+  "reservas": "0 (eran 08!B11 y 08!B13)",
+  "musica": "0 (eran 08:'Apertura'!B12 y 08:'Cierre'!B5)",
+  "comensales_en_sala": "0. «comensales» aparece una vez, en 08!B13 («el número definitivo de comensales»), que es vocabulario correcto de catering: se cotiza y se produce POR COMENSAL. No es «comensales en sala».",
+  "terraza": "0 (eran 08:'Apertura'!B17 y 08:'Cierre'!B7; añadido al barrido por ser el mismo patrón)",
+  "sala": "1 falso positivo: 08:Instrucciones!B10 «…o úsala en tablet» (subcadena de «úsala»). Texto del motor, no hay nada que corregir.",
+  "09": "cero apariciones de los cinco términos en los cuatro paneles del fichero de caja."
+ },
+
+ "hallazgos_para_el_orquestador": [
+  {
+   "severidad": "baja",
+   "donde": "08:Instrucciones!B6 y B38 · 09:Instrucciones!B31 (texto del MOTOR, no de este módulo)",
+   "hallazgo": "El molde ▸ habla del «LOCAL COMPLETO» y de «no aplica en tu local». En catering el «local» es el obrador/base, no una sala. No lo toco desde aquí porque `reescribir_instrucciones` lo reescribe en cada pasada: si se quiere una palabra por kit, es un cambio de MOTOR (una clave más en CTX, como el pie o el sufijo), no de contenido.",
+   "afecta_a": "los 12 kits, no sólo a catering"
+  },
+  {
+   "severidad": "baja",
+   "donde": "09-apertura-cierre-caja.xlsx entero",
+   "hallazgo": "El fichero de caja sigue siendo el de un negocio que cobra en mostrador (fondo, cambio en monedas, Z del TPV por turno). Una empresa de catering factura por evento y cobra por transferencia; el arqueo diario le sobra casi entero. No es vocabulario suelto —es el papel del fichero— y no se arregla con sustituciones 1:1, así que no lo he tocado: es una decisión de producto (¿el 09 de catering debería ser «cobros y facturación por evento»?) que corresponde al orquestador y a John."
+  }
+ ],
+
+ "notas": [
+  "Idempotencia: la 1.ª versión del cambio dejó 12 diferencias (altura 24,0 → None en las filas reescritas). Es exactamente el caso que `motor.autoaltos` documenta como R3-d: `aplicar` mide las alturas ANTES que este módulo, con el texto viejo y corto. Se resuelve llamando a `motor.autoaltos(ws, cambios)` al final de `_f08` —después del último cambio de texto—, no devolviendo True para forzar una 2.ª pasada entera del motor. `autoalto` sólo QUITA la altura fija, nunca la repone, así que repetirlo es inocuo.",
+  "Los textos se escriben pasando por `motor.forma_estable` (grados + Pack APPCC + §2.9): es lo que garantiza que la 2.ª pasada de `textos_de_tarea` no encuentre nada que reescribir.",
+  "`_f08` devuelve SIEMPRE False (no cambia la estructura): ni una fila más, ni una menos. Por eso `main.py` no repite el motor y el recuento sigue en 346.",
+  "La rama del molde ▸ va APARTE de la cola de `post()`, que es del molde P4: `motor.REGISTRO.clear()` habría borrado las fórmulas que acababa de registrar `aplicar` (el gate de cache dejaría de comprobar 4 de ellas) y `normalizar_p4` no pinta nada en un libro que aún tiene por delante `motor.cerrar`.",
+  "La columna «Zona» se ajusta en 5 filas. No la lee ningún gate ni ninguna fórmula —T-04 la descartó a propósito como fuente de los paréntesis de «Se conecta con», por ser la misma en los 12 kits— y en el molde ▸ va verde y desbloqueada, es decir, es una celda que el cliente edita. Las zonas nuevas (Logística, Almacén, Oficina, Exterior) ya existían en la propia hoja: no se inventa ninguna.",
+  "Temperatura vigilada con `istats` antes de cada python: 38,6-48,3 °C; nunca dos intérpretes a la vez; sin builds ni Playwright."
+ ]
+}

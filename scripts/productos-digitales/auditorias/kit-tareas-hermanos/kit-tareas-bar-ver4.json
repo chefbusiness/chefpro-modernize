@@ -1,0 +1,82 @@
+{
+ "rol": "verificador independiente · kit-tareas-bar · ronda 4 (post motor 2.4, tanda 5)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-bar",
+
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=.../propio-verificador5 python3 kit-tareas-v2_0/main.py --producto kit-tareas-bar --dry-run --json .../kt-hermanos-5/kit-tareas-bar.json",
+  "exit": 0,
+  "resumen_consola": "kit «Bar / Cocktails» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · idempotencia (2.ª pasada, digest m3 endurecido: DV por mensaje + locked mapa completo) = 0 diferencias · inject_cache 11/11, 0 fallos_pycel (133 con valor) · §6: arqueo-cuadra=0 OK, arqueo-descuadra=10 OK, contador-honesto='27 de 27' OK, denominador-07 F37=8 OK, 08 precargado 33/0 huecos OK · DV 28 hojas, 0 incorrectas · bio 11/11 · recuento 342 · tpv 1 tarea (negocio, legítima) · bandas_solapadas=[] · censo --fail 0 defectos (integrado en el paso 7/7)."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only .../dryrun-kt/kit-tareas-bar --fail --quiet (paso 7/7 del propio main.py)",
+  "exit": 0,
+  "resultado": "OK: 0 defectos — 11 xlsx censados en 1 producto"
+ },
+
+ "idempotencia": 0,
+ "idempotencia_metodo": "2.ª pasada del propio main.py sobre un clon de la copia regenerada en ESTA ejecución, medida con el digest endurecido de m3 (compara errorTitle/error/prompt de cada DataValidation, no sólo type:formula1:sqref, y un mapa `locked` de TODAS las celdas del rango usado, incluidas las vacías): 0 diferencias. Confirmado además que ninguna celda de ningún fichero contiene #REF!/#NAME?/#VALUE!/#DIV/0! tras recargar los 11 .xlsx finales con data_only=True (barrido propio, independiente del inject_cache del main.py).",
+
+ "listas_dv": ["✓,—,N/A"],
+
+ "casos6_ok": 5,
+ "casos6_total": 5,
+ "casos6_detalle": [
+  {"caso": "arqueo cuadra (fondo 150, efectivo 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0 (pycel)"},
+  {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 10 (pycel), CF ámbar"},
+  {"caso": "contador honesto con N/A", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura Barra'!D50/F50 = '27 de 27' (30 tareas, 3 N/A)"},
+  {"caso": "07 denominador por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria'!F37 = 8"},
+  {"caso": "08 precargado (Responsable/Hora en toda tarea)", "ok": true, "evidencia": "08-apertura-cierre-negocio.xlsx: 33 tareas, 0 huecos de Responsable u Hora Límite"}
+ ],
+ "nota_p4": "kit-tareas-bar es «▸ completo» (gates.dv_y_bio.hojas_p4=0); no aplica el 6.º caso de contador P4.",
+
+ "frase_niveles_ok": true,
+ "frase_niveles_evidencia": "Los 11/11 ficheros llevan la frase de TRES niveles (bar tiene fichero de áreas: 01-apertura-cierre.xlsx) en la viñeta «Orden de uso»: 01!B36 · 02!B31 · 03!B36 · 04!B30 · 05!B37 · 06!B35 · 07!B30 · 08!B39 · 09!B49 · BONUS-01!B30 · BONUS-02!B14, el MISMO literal en los 11 ('▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO…, el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito…'). Grep de 'No se duplican' sobre los 11 xlsx completos (no sólo Instrucciones): 0 apariciones. m1 (frase_niveles() condicionada a CTX['f_areas']) se comporta como se firmó: bar conserva la frase de 3 niveles, sin cambios respecto a ver3.",
+
+ "recuento_gate": 342,
+ "tareas_01": 54,
+ "tareas_01_detalle": "01-apertura-cierre.xlsx: 'Apertura Barra' 30 + 'Cierre Barra' 24 = 54 (gates.recuento_tareas.por_fichero)",
+ "hojas_checklist": 28,
+ "fechas_bonus02": 23,
+ "fechas_bonus02_metodo": "Lectura fila a fila de BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual', filas 4-26 con valor en col B (Fecha): 23 filas de evento real. Fila 27 vacía (última fila libre del molde, coherente con la firma (f) de motor-2.4: A5:D27 desbloqueado con la fila 27 sin contenido). 0 filas placeholder '(Tu fecha)' entre las contadas.",
+ "ficheros_total": 11,
+
+ "b40_check": {
+  "ok": true,
+  "evidencia": "08:Instrucciones!B36='…es el MARCO del día.' y !B40='Estás en 08…: este ES el marco del día…' concuerdan; 09:Instrucciones!B46 dice que 08 es el marco y !B50='Estás en 09…: esta es la CAJA…el marco del día está en 08…' concuerda. Sin cambios respecto a ver3 (T-01 sigue resuelto; motor 2.4 no toca esta rama para bar)."
+ },
+ "tpv_check": {
+  "ok": true,
+  "evidencia": "08:'Apertura del Negocio'!B10='Encender TPV / POS / datáfono' (Encargado, 15:30); 09:'Apertura de Caja'!B9='Comprobar que el TPV está encendido y abrir turno de caja' (escalonada tras el ancla). gates.tpv_duplicado=1 tarea, la del negocio, legítima; 0 fuera del fichero de negocio."
+ },
+ "bandas_solapadas_check": {
+  "resultado": "[]",
+  "nota": "m2 (dedup con nueva clave sin nº de fila, conserva la ÚLTIMA medida) no tiene nada que deduplicar en bar: gates.bandas_solapadas ya salía vacío en ver3 y sigue vacío en esta tanda — m2 no introduce ni elimina entradas porque no había ninguna banda con ratio ≥ 0,25 contra el marco. Sin cambio de comportamiento observable."
+ },
+
+ "ficheros_otro_molde_intactos": {
+  "aplica": false,
+  "motivo": "kit-tareas-bar es «▸ completo», sin hojas de molde P4 (gates.dv_y_bio.hojas_p4=0). Barrido igualmente: los 11 .xlsx cargan con openpyxl (data_only=False y data_only=True) sin excepción y 0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL! en ninguna hoja de ningún fichero."
+ },
+
+ "vocabulario_ajeno_sector": {
+  "hallazgos": 0,
+  "detalle": "Barrido de los 11 ficheros (todas las hojas, no sólo 08/09/Instrucciones) contra una lista de términos de otros kits (anisakis, freidora, descalcificar, hotel/habitación, pastelería/chocolate, heladería, pizza, hamburguesa, dark kitchen, panadería, catering, restaurante-creativo, gas natural, campana extractora, legionela, conducto de extracción): 6 coincidencias léxicas, TODAS legítimas en un bar y ya condicionadas — 'descalcificar máquina de espresso' (03/05, un bar con barra de café tiene máquina de espresso), 'legionela' en la hoja Trimestral (nebulizadores de terraza/agua caliente, aplica a cualquier local con terraza), 'campana extractora (si hay cocina de barra)' con la condición explícita, y 'chocolates' como parte de la comida de un maridaje de catas (no chocolatería). 0 términos realmente ajenos al sector."
+ },
+
+ "fixes_tanda5_ok": true,
+ "fixes_tanda5_motivo": "contenido_kit_tareas_bar.py NO está en `git status` de esta tanda (sin cambios de contenido específicos para bar en tanda 5) y motor-2.4.json declara a kit-tareas-bar como PENDIENTE de re-dry-run (no lo probó el mantenedor). No hay, por tanto, un 'fix declarado para este kit' más allá de los genéricos de familia m1/m2/m3, y los tres se comprueban aquí sobre el kit regenerado desde cero: m1 cumple (frase de 3 niveles intacta en 11/11, bar tiene f_areas), m2 cumple (bandas_solapadas sigue en [], sin cambio porque no había nada que deduplicar), m3 cumple (idempotencia medida con el digest endurecido = 0). Los hallazgos MOTOR heredados de tandas anteriores (T-01, T-02, DOM-09, DOM-23) siguen resueltos sin regresión.",
+
+ "hallazgos_nuevos": [],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Nada bloquea: dry-run exit 0, censo --fail 0 defectos, idempotencia 0 con el digest m3 endurecido, UNA sola lista de DV en las 28 hojas de checklist, 5/5 casos §6 OK, frase_niveles_ok=true (3 niveles, 0 'No se duplican'), recuento_gate=342 (tareas_01=54, hojas_checklist=28, ficheros_total=11 todos coherentes con ver3), 0 ficheros con #REF!/#NAME?, 0 vocabulario realmente ajeno al sector, y los tres fixes de familia de motor 2.4 (m1/m2/m3) se cumplen para este kit sin necesitar ningún cambio de contenido propio. 0 hallazgos nuevos.",
+
+ "notas": [
+  "REGLA TÉRMICA respetada: istats antes de cada python (50,44 °C al inicio, sin picos observados durante el barrido de un único xlsx en serie), un solo intérprete a la vez, sin builds ni Playwright.",
+  "astro-site/public/dl/** NO se ha tocado: todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD=…/propio-verificador5; el representante de producción no se ha leído ni escrito en esta ronda.",
+  "No se ha hecho git add/commit/stash/clean.",
+  "Verificación INDEPENDIENTE: regeneré el kit desde cero (comando y JSON propios, kt-hermanos-5/), y todos los chequeos de idempotencia/§6/frase-niveles/fechas/errores/vocabulario se hicieron con scripts openpyxl propios que releen los .xlsx ya regenerados — no se reutilizó kit-tareas-bar-ver3.json ni motor-2.4.json como fuente de verdad, sólo como hipótesis a contrastar.",
+  "Diferencia con ver3: esta ronda usa el digest m3 (endurecido) para medir idempotencia y confirma explícitamente que m1/m2 no alteran el entregable de bar (frase de 3 niveles y bandas_solapadas=[] sin cambio); ver3 medía con el digest 2.3, que no veía el mensaje de las DV ni el bloqueo de celdas vacías — aquí sí se comprobó y siguió dando 0."
+ ]
+}
