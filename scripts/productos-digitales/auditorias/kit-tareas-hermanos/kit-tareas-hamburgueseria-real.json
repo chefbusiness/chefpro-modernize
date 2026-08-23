@@ -1,0 +1,1497 @@
+{
+ "producto": "kit-tareas-hamburgueseria",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T17:35:42",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hamburgueseria",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hamburgueseria",
+ "contexto": {
+  "kit": "Hamburguesería",
+  "pie": "— Kit de Tareas Recurrentes · Hamburguesería · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+  "hora_apertura": "10:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": "01-apertura-cierre.xlsx",
+  "ficheros": [
+   "01-apertura-cierre.xlsx",
+   "02-partidas-cocina.xlsx",
+   "03-tareas-manager.xlsx",
+   "04-tareas-perfiles.xlsx",
+   "05-tareas-semanales-mensuales.xlsx",
+   "06-eventos-festivos.xlsx",
+   "07-plantilla-personalizable.xlsx",
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx",
+   "BONUS-01-briefing-servicio.xlsx",
+   "BONUS-02-calendario-anual-tareas.xlsx"
+  ],
+  "con_checklist": [
+   "01-apertura-cierre.xlsx",
+   "02-partidas-cocina.xlsx",
+   "03-tareas-manager.xlsx",
+   "04-tareas-perfiles.xlsx",
+   "05-tareas-semanales-mensuales.xlsx",
+   "06-eventos-festivos.xlsx",
+   "07-plantilla-personalizable.xlsx",
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": "BONUS-02-calendario-anual-tareas.xlsx",
+  "f_briefing": "BONUS-01-briefing-servicio.xlsx",
+  "f_plantilla": "07-plantilla-personalizable.xlsx",
+  "f_eventos": null,
+  "f_periodico": "05-tareas-semanales-mensuales.xlsx",
+  "areas_nombres": [
+   "cocina",
+   "sala"
+  ],
+  "negocio_bandas": [],
+  "papeles": {
+   "01-apertura-cierre.xlsx": {
+    "ciclo": [
+     "Apertura Cocina",
+     "Apertura Sala",
+     "Cierre Cocina",
+     "Cierre Sala"
+    ],
+    "con_notas": [],
+    "recuento": false,
+    "registro": false
+   },
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true
+   }
+  },
+  "producto": "kit-tareas-hamburgueseria"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura Cocina",
+    "Apertura Sala",
+    "Cierre Cocina",
+    "Cierre Sala"
+   ],
+   "cambios": [
+    "«Apertura Cocina»: +5 filas libres dentro del rango contado (total 5)",
+    "«Apertura Cocina»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura Sala»: +5 filas libres dentro del rango contado (total 5)",
+    "«Apertura Sala»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre Cocina»: +5 filas libres dentro del rango contado (total 5)",
+    "«Cierre Cocina»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre Sala»: +5 filas libres dentro del rango contado (total 5)",
+    "«Cierre Sala»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura Cocina»: 2 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre Cocina»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Apertura Cocina»: la sección final pasa a llamarse «STOCK Y DESINFECCIÓN» — la higiene PERSONAL ya no vive ahí, vive al principio del turno",
+    "«Apertura Cocina»: el lavado de manos del final deja de duplicar el del inicio y cubre el cruce carne picada CRUDA → pan, toppings y salsas",
+    "«Apertura Cocina»: encender la campana pasa a ser el primer paso del bloque, así que la tarea 4 se reconvierte en comprobar que TIRA y que lleva filtros",
+    "«Apertura Cocina»: bloque «HIGIENE PERSONAL» al inicio (5 tareas), antes de tocar carne, pan, queso o salsas",
+    "«Apertura Cocina»: orden seguro al abrir el bloque PLANCHA Y FREIDORA (campana → comprobar gas → encender equipos), 2 tareas nuevas",
+    "«Apertura Cocina»: comprobación de que las cámaras han funcionado toda la noche, con registro de temperatura, ANTES de sacar la carne picada",
+    "«Cierre Cocina»: primero se apaga la freidora y se deja enfriar el aceite (antes se filtraba con la freidora todavía encendida)",
+    "«Cierre Cocina»: el filtrado del aceite pasa detrás del apagado y se acota a menos de 40 °C — coherente con 02!«Freidora», que ya lo hacía bien",
+    "«Cierre Cocina»: apagado de plancha, horno y campana como paso propio, cuando los equipos ya están fríos",
+    "«Cierre Cocina»: registro DIARIO de mermas con producto, cantidad y motivo",
+    "Instrucciones reescritas (16 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Freidora",
+    "Línea Montaje",
+    "Plancha Grill"
+   ],
+   "cambios": [
+    "«Plancha Grill»: +5 filas libres dentro del rango contado (total 5)",
+    "«Plancha Grill»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Línea Montaje»: +5 filas libres dentro del rango contado (total 5)",
+    "«Línea Montaje»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Freidora»: +5 filas libres dentro del rango contado (total 5)",
+    "«Freidora»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Plancha Grill»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Freidora»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Plancha Grill»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Línea Montaje»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Freidora»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Plancha Grill»: el punto de la carne PICADA se fija en 70 °C de núcleo (75 °C en población de riesgo) y con sonda — antes sólo decía «medio, hecho, muy hecho»",
+    "«Plancha Grill»: utillaje de crudo separado y marcado, antes de que empiece el servicio",
+    "«Línea Montaje»: los vegetales que van crudos dentro de la burger se lavan y desinfectan con dosis y aclarado",
+    "«Línea Montaje»: registro de mermas del turno (producto, cantidad y motivo)",
+    "«Freidora»: el filtrado del aceite se acota a menos de 40 °C (el orden apagar → enfriar → filtrar ya era correcto en esta partida)",
+    "Instrucciones reescritas (16 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Diario Manager",
+    "Handover Turno",
+    "Mensual Manager",
+    "Semanal Manager"
+   ],
+   "cambios": [
+    "«Diario Manager»: +5 filas libres dentro del rango contado (total 5)",
+    "«Diario Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Semanal Manager»: +5 filas libres dentro del rango contado (total 5)",
+    "«Semanal Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Mensual Manager»: +5 filas libres dentro del rango contado (total 5)",
+    "«Mensual Manager»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Handover Turno»: +5 filas libres dentro del rango contado (total 5)",
+    "«Handover Turno»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Diario Manager»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Semanal Manager»: cabecera «Hora Límite» → «Día» (la columna no lleva horas)",
+    "«Semanal Manager»: fila 2 acorde a la cadencia",
+    "«Mensual Manager»: cabecera «Hora Límite» → «Cadencia» (la columna no lleva horas)",
+    "«Mensual Manager»: fila 2 acorde a la cadencia",
+    "«Handover Turno»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Diario Manager»: cierre y validación del registro diario de jornada (obligatorio desde 2019)",
+    "«Mensual Manager»: archivo de los registros de jornada del mes (conservación 4 años)",
+    "Instrucciones reescritas (16 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Camarero",
+    "Cocinero Línea",
+    "Encargado",
+    "Freidurista",
+    "Parrillero"
+   ],
+   "cambios": [
+    "«Parrillero»: +5 filas libres dentro del rango contado (total 5)",
+    "«Parrillero»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cocinero Línea»: +5 filas libres dentro del rango contado (total 5)",
+    "«Cocinero Línea»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Freidurista»: +5 filas libres dentro del rango contado (total 5)",
+    "«Freidurista»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Encargado»: +5 filas libres dentro del rango contado (total 5)",
+    "«Encargado»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Camarero»: +5 filas libres dentro del rango contado (total 5)",
+    "«Camarero»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Parrillero»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Cocinero Línea»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Freidurista»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Encargado»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Camarero»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "Instrucciones reescritas (16 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "5 hojas protegidas sin contraseña (de 5 con print_area y A4)"
+   ],
+   "formulas_nuevas": 10
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "FIFO Semanal",
+    "Limpieza Semanal",
+    "Mantenimiento Mensual",
+    "Trimestral y Anual"
+   ],
+   "cambios": [
+    "«Limpieza Semanal»: +5 filas libres dentro del rango contado (total 5)",
+    "«Limpieza Semanal»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«FIFO Semanal»: +5 filas libres dentro del rango contado (total 5)",
+    "«FIFO Semanal»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Mantenimiento Mensual»: +5 filas libres dentro del rango contado (total 5)",
+    "«Mantenimiento Mensual»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Limpieza Semanal»: cabecera «Hora Límite» → «Día» (la columna no lleva horas)",
+    "«Limpieza Semanal»: fila 2 acorde a la cadencia",
+    "«FIFO Semanal»: cabecera «Hora Límite» → «Día» (la columna no lleva horas)",
+    "«FIFO Semanal»: fila 2 acorde a la cadencia",
+    "«Mantenimiento Mensual»: cabecera «Hora Límite» → «Cadencia» (la columna no lleva horas)",
+    "«Mantenimiento Mensual»: fila 2 acorde a la cadencia",
+    "hoja nueva «Trimestral y Anual»: mantenimiento contratado (DDD, conductos de extracción, extintores y BIE, gas, frigorista, aceite usado por gestor autorizado, legionela, agua, seguro y Verifactu) con nº de parte y firma",
+    "«Mantenimiento Mensual»: el extintor mensual es la comprobación VISUAL del usuario; la revisión contratada vive en «Trimestral y Anual»",
+    "«Mantenimiento Mensual»: lo mensual de la campana son motor y filtros; la limpieza de CONDUCTOS por empresa homologada vive en «Trimestral y Anual»",
+    "«FIFO Semanal»: comprobación de vida útil en congelación por familia",
+    "«FIFO Semanal»: tabla editable de vida útil en congelación (9 familias de una hamburguesería)",
+    "Instrucciones: hoja trimestral/anual y tabla de vida útil en congelación",
+    "«Trimestral y Anual»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "Instrucciones reescritas (21 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Burger Week",
+    "Navidad",
+    "Noche Fútbol",
+    "Temporada Terraza"
+   ],
+   "cambios": [
+    "«Noche Fútbol»: +5 filas libres dentro del rango contado (total 5)",
+    "«Noche Fútbol»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Burger Week»: +5 filas libres dentro del rango contado (total 5)",
+    "«Burger Week»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Navidad»: +5 filas libres dentro del rango contado (total 5)",
+    "«Navidad»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Temporada Terraza»: +5 filas libres dentro del rango contado (total 5)",
+    "«Temporada Terraza»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Noche Fútbol»: cabecera «Hora Límite» → «Antelación» (la columna no lleva horas)",
+    "«Noche Fútbol»: fila 2 acorde a la cadencia",
+    "«Burger Week»: cabecera «Hora Límite» → «Antelación» (la columna no lleva horas)",
+    "«Burger Week»: fila 2 acorde a la cadencia",
+    "«Navidad»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Temporada Terraza»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Navidad»: bloque «AL CONFIRMAR LA RESERVA» (alérgenos por escrito con gluten, sésamo, lactosa, huevo y mostaza; alternativas y cruce; precio por comensal, señal, cancelación y género reservado) — es el momento en que se cierra una cena de empresa, no el día del evento",
+    "«Navidad»: cabecera «Cuándo» → «Antelación» (la columna no lleva horas)",
+    "«Navidad»: fila 2 acorde a la cadencia",
+    "Instrucciones reescritas (16 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "4 hojas protegidas sin contraseña (de 4 con print_area y A4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Por Franja Horaria",
+    "Por Perfil",
+    "Por Área"
+   ],
+   "cambios": [
+    "«Por Franja Horaria»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Franja Horaria»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Área»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Área»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Perfil»: +4 filas libres dentro del rango contado (total 5)",
+    "«Por Perfil»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Por Franja Horaria»: secciones APERTURA / SERVICIO / CIERRE y columnas propias (21 celdas) — las tres hojas dejan de ser la misma",
+    "«Por Área»: secciones COCINA / SALA / BARRA y columnas propias (22 celdas) — las tres hojas dejan de ser la misma",
+    "«Por Perfil»: secciones COCINA / SALA / GERENCIA y columnas propias (37 celdas) — las tres hojas dejan de ser la misma",
+    "«Por Franja Horaria»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Por Área»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Por Perfil»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura del Negocio»: Responsable y Hora Límite precargados en 17 tareas (ancla 10:00)",
+    "«Cierre del Negocio»: Responsable y Hora Límite precargados en 14 tareas (ancla 10:00)",
+    "«Cierre del Negocio»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura del Negocio»: 3 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "Instrucciones reescritas (24 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)",
+    "metadata title → Apertura y Cierre del Negocio — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Apertura de Caja»: B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» (T-02: el hito de encender el TPV es del fichero de negocio; aquí se comprueba)",
+    "«Apertura de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Cierre de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Registro Mensual»: columna «Z del TPV» antes de «Descuadre» (DOM-04/TEC-04/COM-14)",
+    "«Registro Mensual»: la columna del efectivo pasa a «Efectivo Contado» (el recuento del cajón; el fondo lo descuenta la fórmula) — DOM-R2-01",
+    "«Registro Mensual»: nota al pie con las tres cifras que NO son una suma (TEC-05/DOM-R2-01/26)",
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Apertura de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre de Caja»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: añadida la denominación de 0,02 €",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Apertura de Caja»: celda editable del fondo de caja (C23)",
+    "«Apertura de Caja»: la tarea del fondo apunta a la celda verde sin hardcodear la coordenada",
+    "«Cierre de Caja»: fila «Fondo de caja inicial (−)» en el Resumen de Cierre",
+    "«Cierre de Caja»: fila «Ventas en efectivo (contado − fondo)» en el Resumen de Cierre",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (30 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)",
+    "metadata title → Apertura y Cierre de Caja — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería"
+   ],
+   "formulas_nuevas": 81
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Briefing"
+   ],
+   "cambios": [
+    "«Briefing»: 20 casillas de respuesta en verde (DOM-R2-16)",
+    "Instrucciones reescritas (10 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "1 hojas protegidas sin contraseña (de 1 con print_area y A4)"
+   ],
+   "formulas_nuevas": 0
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Calendario Anual"
+   ],
+   "cambios": [
+    "«Calendario Anual»: placeholder y verde en la columna «Antelación» de las 5 filas libres (TEC-24)",
+    "«Calendario Anual»: rayado rehecho por índice en las 17 fechas (DOM-R2-20)",
+    "«Calendario Anual»: el 1 de enero pasa a ser una DECISIÓN (abrir o no, y comunicarlo también en las apps de delivery), no un brunch dado por hecho",
+    "«Calendario Anual»: 5 fechas que faltaban (Día del Padre, comuniones, 15-Ago, Todos los Santos, puente de diciembre)",
+    "«Calendario Anual»: rayado rehecho por índice en las 22 fechas (DOM-R2-20)",
+    "Instrucciones reescritas (10 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "1 hojas protegidas sin contraseña (de 1 con print_area y A4)"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "Tareas de Apertura y Cierre — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B33",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$33",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura Cocina",
+     "dim": "A1:G50",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura Cocina'!$A$1:$G$50",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Apertura Sala",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura Sala'!$A$1:$G$32",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Cocina",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre Cocina'!$A$1:$G$37",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre Sala",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre Sala'!$A$1:$G$28",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "title": "Línea de Producción de Burgers — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B33",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$33",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Plancha Grill",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Plancha Grill'!$A$1:$G$32",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Línea Montaje",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Línea Montaje'!$A$1:$G$31",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Freidora",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Freidora'!$A$1:$G$31",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "Tareas del Manager / Encargado — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B33",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$33",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Diario Manager",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Diario Manager'!$A$1:$G$32",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Semanal Manager",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Semanal Manager'!$A$1:$G$31",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual Manager",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Mensual Manager'!$A$1:$G$32",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Handover Turno",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Handover Turno'!$A$1:$G$27",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "Tareas por Perfil Profesional — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B33",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$33",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Parrillero",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Parrillero'!$A$1:$G$30",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cocinero Línea",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cocinero Línea'!$A$1:$G$27",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Freidurista",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Freidurista'!$A$1:$G$26",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Encargado",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Encargado'!$A$1:$G$30",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Camarero",
+     "dim": "A1:G29",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Camarero'!$A$1:$G$29",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "Tareas Semanales, Mensuales e Inventarios — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B40",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$40",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Inventario Diario",
+     "dim": "A1:F40",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Inventario Diario'!$A$1:$F$40",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 28
+    },
+    {
+     "hoja": "Limpieza Semanal",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Limpieza Semanal'!$A$1:$G$25",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "FIFO Semanal",
+     "dim": "A1:G38",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'FIFO Semanal'!$A$1:$G$38",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mantenimiento Mensual",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Mantenimiento Mensual'!$A$1:$G$25",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G32",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Trimestral y Anual'!$A$1:$G$32",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "title": "Tareas para Eventos y Festivos — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B33",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$33",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Noche Fútbol",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Noche Fútbol'!$A$1:$G$27",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Burger Week",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Burger Week'!$A$1:$G$25",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Navidad",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Navidad'!$A$1:$G$31",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Temporada Terraza",
+     "dim": "A1:G25",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Temporada Terraza'!$A$1:$G$25",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "Plantilla Maestra Personalizable · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B52",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$52",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Franja Horaria",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Franja Horaria'!$A$1:$G$35",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Área",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Área'!$A$1:$G$35",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Por Perfil'!$A$1:$G$35",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B47",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$47",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$30",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$27",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Hamburguesería · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B57",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$57",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS: Plantilla de Briefing Pre-Servicio · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B23",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$23",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "B1:C37",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Briefing'!$A$1:$C$37",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": true,
+     "formulas": 0
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS: Calendario Anual de Tareas Especiales · Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Hamburguesería · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B23",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$23",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario Anual",
+     "dim": "A1:G34",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Calendario Anual'!$A$1:$D$34",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-cocina.xlsx",
+    "salida": "02-partidas-cocina.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=10 cache_inyectado=10 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=36 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-festivos.xlsx",
+    "salida": "06-eventos-festivos.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 139,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 31,
+   "hojas_p4": 0,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 31,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 346,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 72,
+    "02-partidas-cocina.xlsx": 40,
+    "03-tareas-manager.xlsx": 50,
+    "04-tareas-perfiles.xlsx": 52,
+    "05-tareas-semanales-mensuales.xlsx": 39,
+    "06-eventos-festivos.xlsx": 39,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 31,
+    "09-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 0,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 346,
+    "p4": 0
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura Cocina",
+     "molde": "checklist_▸",
+     "celda": "F46",
+     "tareas": 30
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura Sala",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 14
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre Cocina",
+     "molde": "checklist_▸",
+     "celda": "F33",
+     "tareas": 18
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre Sala",
+     "molde": "checklist_▸",
+     "celda": "F24",
+     "tareas": 10
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Plancha Grill",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 14
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Línea Montaje",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Freidora",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Diario Manager",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 14
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Semanal Manager",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Mensual Manager",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 14
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Handover Turno",
+     "molde": "checklist_▸",
+     "celda": "F23",
+     "tareas": 9
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Parrillero",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 12
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Cocinero Línea",
+     "molde": "checklist_▸",
+     "celda": "F23",
+     "tareas": 9
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Freidurista",
+     "molde": "checklist_▸",
+     "celda": "F22",
+     "tareas": 8
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Encargado",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 12
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Camarero",
+     "molde": "checklist_▸",
+     "celda": "F25",
+     "tareas": 11
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Limpieza Semanal",
+     "molde": "checklist_▸",
+     "celda": "F21",
+     "tareas": 8
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "FIFO Semanal",
+     "molde": "checklist_▸",
+     "celda": "F22",
+     "tareas": 9
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Mantenimiento Mensual",
+     "molde": "checklist_▸",
+     "celda": "F21",
+     "tareas": 8
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 14
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Noche Fútbol",
+     "molde": "checklist_▸",
+     "celda": "F23",
+     "tareas": 10
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Burger Week",
+     "molde": "checklist_▸",
+     "celda": "F21",
+     "tareas": 8
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Navidad",
+     "molde": "checklist_▸",
+     "celda": "F27",
+     "tareas": 13
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Temporada Terraza",
+     "molde": "checklist_▸",
+     "celda": "F21",
+     "tareas": 8
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Franja Horaria",
+     "molde": "checklist_▸",
+     "celda": "F31",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Área",
+     "molde": "checklist_▸",
+     "celda": "F31",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "molde": "checklist_▸",
+     "celda": "F31",
+     "tareas": 0
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 17
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F25",
+     "tareas": 14
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [
+   {
+    "hoja": "Cierre Sala!A14",
+    "banda": "CIERRE FINAL",
+    "tareas": 3,
+    "casadas": 2,
+    "ratio": 0.67,
+    "destinos": [
+     "08-apertura-cierre-negocio.xlsx"
+    ],
+    "anotada": false
+   },
+   {
+    "hoja": "Apertura Sala!A5",
+    "banda": "SALA",
+    "tareas": 7,
+    "casadas": 2,
+    "ratio": 0.29,
+    "destinos": [
+     "08-apertura-cierre-negocio.xlsx",
+     "09-apertura-cierre-caja.xlsx"
+    ],
+    "anotada": false
+   }
+  ],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-hamburgueseria)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hamburgueseria/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hamburgueseria/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "01-apertura-cierre.xlsx:Apertura Cocina:D46/F46",
+   "entradas": "30 tareas · 3 N/A · 27 ✓",
+   "esperado": "27 de 27",
+   "obtenido": "27 de 27",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hamburgueseria/contador-01-apertura-cierre.xlsx"
+  },
+  {
+   "caso": "denominador-07",
+   "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31",
+   "entradas": "8 tareas escritas, ninguna marcada",
+   "esperado": 8,
+   "obtenido": 8,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-hamburgueseria/plantilla-8-tareas-07-plantilla-personalizable.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-hamburgueseria.bak-20260823-173515"
+}
