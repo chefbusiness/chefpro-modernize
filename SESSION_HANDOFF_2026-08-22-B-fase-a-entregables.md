@@ -53,7 +53,7 @@ producto). `inject_cache.py` cuenta fórmulas por tipo de celda.
    Si interesa: `updateNote?: string` en los 3 types + el bloque condicional de
    `KitTareasLandingPage.astro:234-239` en las 3 plantillas.
 3. Siguen de la sesión anterior: armar el **webhook** (`STRIPE_WEBHOOK_SECRET`), `PURCHASE_VALIDATION`
-   → strict, quitar `aggregateRating`/`reviews` de las 43 landings, **disputa Stripe 650 € antes del 25-ago**.
+   → strict, quitar `aggregateRating`/`reviews` de las 43 landings (la disputa Stripe la lleva John desde el 23-ago: fuera de la lista).
 
 ## 4. Siguiente trabajo (orden)
 
