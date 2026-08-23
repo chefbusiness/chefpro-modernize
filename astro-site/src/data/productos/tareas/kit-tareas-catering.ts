@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para empresas de catering y eventos: producción off-site, transporte, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 346 tareas ya escritas — producción off-site, transporte, apertura/cierre de negocio, caja, montaje, servicio, desmontaje. Bodas, corporativos, cocktails. Solo €12.',
     keywords:
       'checklist catering, tareas evento, checklist montaje evento, tareas catering bodas, control logística catering, plantilla tareas evento, checklist desmontaje, inventario catering, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-catering.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos',
     productDescription:
-      '9 checklists operativos pre-rellenados para empresas de catering y eventos: producción off-site, transporte, montaje, servicio, desmontaje y post-evento.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para catering y eventos con 346 tareas ya escritas — producción off-site, transporte, apertura y cierre de negocio, arqueo de caja, montaje, servicio, desmontaje y post-evento.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -86,10 +86,11 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Catering / Eventos — Del Obrador al Venue',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu empresa de catering: producción off-site, transporte, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 346 tareas de catering y eventos ya escritas: producción off-site, transporte, apertura/cierre de negocio, caja, montaje, servicio, desmontaje y post-evento. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción off-site: mise en place, elaboraciones, empaquetado',
       'Transporte y logística: cadena de frío, carga, descarga',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
       'Montaje y desmontaje del venue: sala, cocina, barra',
       'Tipos de evento: bodas, corporativos, cocktails, outdoor',
       'Plantilla personalizable + briefing pre-evento',
@@ -101,24 +102,24 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de una empresa de catering profesional. Solo ajusta, imprime y delega.',
+      '346 tareas de catering y eventos ya escritas y repartidas por fase, zona y perfil. Ajusta a tu operación, imprime y delega.',
     templates: [
       {
         icon: 'ChefHat',
         title: 'Producción Off-Site',
-        desc: 'Mise en place en cocina central: elaboraciones D-1, cocciones día D, emplatado previo, empaquetado en GN y contenedores isotérmicos. ~30 tareas pre-rellenadas.',
+        desc: 'Higiene personal y arranque seguro de la cocina, elaboraciones D-1, cocciones día D, prevención de ANISAKIS en pescado crudo o semicrudo, emplatado previo y empaquetado en GN e isotermos. 38 tareas ya escritas, con tabla de vida útil en congelación al pie.',
       },
       {
         icon: 'Truck',
         title: 'Transporte y Logística',
-        desc: 'Carga, cadena de frío, monitorización de temperatura, descarga en venue. Cumple normativa APPCC de transporte.',
+        desc: 'Carga con certificado ATP del vehículo, cadena de frío, monitorización de temperatura y descarga en venue. Cumple normativa APPCC de transporte.',
       },
       {
         icon: 'ClipboardList',
         title: 'Tareas del Event Manager',
-        desc: 'Coordinación semana previa, día del evento (pre-servicio, durante, post) y retrospectiva con equipo.',
+        desc: 'Coordinación semana previa, día del evento (pre-servicio, durante, post) y retrospectiva con equipo, con registro de jornada archivado. + hoja Trimestral y Anual: DDD de la cocina central, conductos y extintores, ATP del vehículo, calibración de sondas, gas, aceite usado, carnés de manipulador, póliza de eventos y Verifactu, con nº de parte y firma.',
       },
       {
         icon: 'Users',
@@ -128,17 +129,27 @@ const data: KitTareasData = {
       {
         icon: 'Tent',
         title: 'Montaje y Desmontaje',
-        desc: 'Cocina temporal, sala, buffet/estaciones, check pre-apertura. Desmontaje: sala, cocina, carga y salida.',
+        desc: 'Cocina temporal, sala, buffet/estaciones con los alérgenos señalizados, check pre-apertura. Desmontaje: sala, cocina, control de sobrantes con cadena de frío y merma, carga y salida.',
       },
       {
         icon: 'PartyPopper',
         title: 'Tipos de Evento',
-        desc: 'Bodas, corporativos, cocktail/standing, eventos outdoor. Checklists específicos para cada formato.',
+        desc: 'Bodas con alérgenos e intolerancias en el plano de asientos, corporativos con restricciones por escrito, cocktail/standing con prevención de ANISAKIS en las estaciones de ceviche y tartar, y outdoor con la regla horaria de temperatura ambiente. Checklists específicos para cada formato.',
       },
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por fase, por zona, por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por fase, por zona y por perfil— con las secciones y la columna de cada eje ya puestas: tú solo escribes tus tareas en las celdas verdes. Sin contador: están en blanco para que las completes tú.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del obrador y la base de operaciones completa (no solo cocina): órdenes de servicio del día, hoja de ruta de cada vehículo, carga de isotermos con temperatura de salida, material y accesos de cada recinto. Responsable y hora precargados en 33 tareas.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula.',
       },
       {
         icon: 'Megaphone',
@@ -148,7 +159,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '20 fechas clave para catering: bodas, corporativos, Navidad, comuniones. Con antelación recomendada.',
+        desc: '22 fechas clave para catering: bodas, corporativos, Navidad, comuniones, Día del Padre y el puente de diciembre. Con antelación recomendada.',
       },
     ],
   },
@@ -213,7 +224,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Temporada Alta',
         value: '€9',
-        desc: '20 fechas clave para catering (bodas, corporativos, Navidad, comuniones) con antelación de preparación recomendada.',
+        desc: '22 fechas clave para catering (bodas, corporativos, Navidad, comuniones, Día del Padre, puente de diciembre) con antelación de preparación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-catering-montaje.jpg',
       },
     ],
@@ -262,10 +273,11 @@ const data: KitTareasData = {
   cta: {
     heading: 'Deja de Improvisar en Cada Evento',
     subtitle:
-      '9 checklists operativos para catering por menos de lo que cuesta una hora de consultoría.',
+      '9 plantillas + 2 bonus (11 ficheros) para catering por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Producción off-site: planificación, mise en place, empaquetado',
       'Transporte: cadena de frío, carga, descarga, APPCC',
+      'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
       'Montaje: cocina temporal, sala, buffet, estaciones de acción',
       'Tareas del event manager: semana previa + día del evento',
       'Tareas por perfil: chef, maître, camarero, barman',
@@ -362,7 +374,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-catering',

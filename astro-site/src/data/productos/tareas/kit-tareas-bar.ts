@@ -14,7 +14,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para bar y cocktail bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma. Solo €12.',
+      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para bar y cocktail bar con las tareas más habituales ya escritas — apertura, cierre, coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist bar, tareas bartender, checklist apertura bar, tareas coctelería, control stock bar, plantilla tareas barra, checklist cierre bar, inventario bar, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-bar.jpg',
@@ -23,7 +23,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Bar / Cocktails',
     productDescription:
-      '9 checklists operativos pre-rellenados para bar y cocktail bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario y eventos.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para bar y cocktail bar con 342 tareas ya escritas — apertura, cierre, negocio, caja, coctelería, cerveza de grifo, vinos por copa, terraza, inventario y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -93,13 +93,14 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Bar / Cocktails — Checklists por Turno, Zona y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu bar: coctelería, barra, cerveza de grifo, vinos por copa, terraza, inventario, eventos y perfiles. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 342 tareas de bar ya escritas: apertura, cierre, negocio, caja, partidas de barra, manager, perfiles, eventos y festivos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: barra, coctelería, terraza, bodega',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
       'Partidas: coctelería clásica, cerveza/grifo, vinos por copa, café',
       'Tareas por perfil: head bartender, bartender, barback, camarero',
       'Eventos: Nochevieja, Halloween, after-work, catas y maridajes',
-      'Plantilla en blanco personalizable + briefing de servicio',
+      '3 plantillas maestras personalizables + briefing de servicio',
     ],
     ctaLabel: 'COMPRAR AHORA — €12',
   },
@@ -108,14 +109,14 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de un bar de cocktails. Solo ajusta, imprime y delega.',
+      '342 tareas de bar y cocktail bar ya escritas y repartidas por turno, zona y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
         icon: 'DoorOpen',
         title: 'Apertura y Cierre',
-        desc: 'Checklists completos: mise en place de barra, cristalería, máquina de café, terraza, cierre administrativo y limpieza. ~55 tareas pre-rellenadas.',
+        desc: 'Checklists completos: mise en place de barra, cristalería, máquina de café, terraza, cierre administrativo y limpieza. Cada tarea con responsable, cuándo y firma. 54 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'Wine',
@@ -135,7 +136,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Limpieza profunda de grifos, mantenimiento de espresso, inventario semanal por categoría (spirits, cerveza, vino, mixers).',
+        desc: 'Limpieza profunda de grifos, mantenimiento de espresso, inventario semanal por categoría (spirits, cerveza, vino, mixers). + hoja Trimestral y Anual: DDD, extintores y BIE, conductos de extracción, gas, legionela, limitador acústico, licencia de terraza y revisión del TPV/Verifactu, con nº de parte y firma.',
       },
       {
         icon: 'PartyPopper',
@@ -145,7 +146,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por franja horaria, por zona, por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por franja horaria, por zona y por perfil— con las secciones y la zona o el responsable puestos: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo barra): luces, alarma, TPV, terraza. Responsable y hora límite precargados en las 33 tareas.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula en las 31 filas del mes.',
       },
       {
         icon: 'Megaphone',
@@ -155,7 +166,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '17 fechas clave para bares con preparación especial y antelación recomendada.',
+        desc: '23 fechas clave para bares con preparación especial y antelación recomendada.',
       },
     ],
   },
@@ -219,7 +230,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Fechas Clave',
         value: '€9',
-        desc: '17 fechas clave para bares (Nochevieja, Halloween, St. Patrick, Negroni Week) con preparación especial y antelación recomendada.',
+        desc: '23 fechas clave para bares (Nochevieja, Halloween, St. Patrick, Negroni Week, Carnaval, 15 de agosto, puente de diciembre) con preparación especial y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-bar-terraza.jpg',
       },
     ],
@@ -267,7 +278,7 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 checklists operativos para bar por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) para bar por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: barra, coctelería, terraza',
       'Partidas: spirits, batches, cerveza grifo, vinos, café',
@@ -366,7 +377,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-bar',

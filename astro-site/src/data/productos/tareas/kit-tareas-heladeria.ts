@@ -13,14 +13,14 @@ const data: KitTareasData = {
 
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal | AI Chef Pro',
-    description: '9 checklists operativos pre-rellenados para heladería artesanal: producción, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
+    description: 'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para heladería artesanal con las tareas más habituales ya escritas — producción, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
     keywords: 'checklist heladería, tareas heladero, checklist apertura heladería, tareas producción helados, control stock heladería, plantilla tareas vitrina, checklist cierre heladería, inventario heladería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-heladeria.jpg',
   },
 
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Heladería Artesanal',
-    productDescription: '9 checklists operativos pre-rellenados para heladería artesanal: producción, vitrina, servicio, gestión y temporada.',
+    productDescription: '9 plantillas + 2 bonus (11 ficheros): checklists operativos para heladería artesanal con 298 tareas ya escritas — producción, vitrina, servicio, gestión y temporada.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -81,7 +81,7 @@ const data: KitTareasData = {
     titlePre: 'Kit de Tareas ',
     titleGold: 'Recurrentes',
     subtitleLine: 'Heladería Artesanal — Checklists por Turno, Zona y Perfil',
-    description: '9 plantillas Excel pre-rellenadas para tu heladería artesanal: producción, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
+    description: '9 plantillas + 2 bonus (11 ficheros) en Excel con 298 tareas de heladería artesanal ya escritas: producción, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción: pasteurización, maduración, mantecación, envasado',
       'Servicio: vitrina, toppings, salsas, mostrador',
@@ -96,13 +96,13 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
-    subtitle: 'Cada plantilla viene pre-rellenada con las tareas reales de una heladería artesanal. Solo ajusta, imprime y delega.',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
+    subtitle: '298 tareas de heladería artesanal ya escritas y repartidas por turno, zona y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
         icon: 'IceCream',
         title: 'Apertura y Cierre',
-        desc: 'Checklists completos: vitrina, toppings, salsas, caja, mostrador, limpieza de obrador y cierre administrativo. ~35 tareas pre-rellenadas.',
+        desc: 'Checklists completos: higiene personal y arranque seguro, vitrina, toppings, salsas, caja, mostrador, limpieza de obrador y cierre administrativo. 43 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'Beaker',
@@ -122,7 +122,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Deep clean de obrador, mantenimiento de mantecadora, inventario semanal por categoría (bases, frutas, toppings, envases).',
+        desc: 'Deep clean de obrador, mantenimiento de mantecadora, inventario semanal por categoría (bases, frutas, toppings, envases). + hoja Trimestral y Anual: DDD, conductos de extracción, gases fluorados, extintores, gas, legionela y registro sanitario, con nº de parte y firma.',
       },
       {
         icon: 'Sun',
@@ -132,7 +132,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por zona, por turno y por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por zona, por turno y por perfil— con las secciones ya montadas: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo obrador): luces, alarma, TPV, vitrina y terraza. Responsable y hora límite precargados en las 33 tareas.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula en las 31 filas del mes.',
       },
       {
         icon: 'Megaphone',
@@ -142,7 +152,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '15 fechas clave para heladerías con preparación especial y antelación recomendada.',
+        desc: 'Calendario mensual con los 12 meses del año y las fechas señaladas de heladería ya colocadas dentro de cada mes (Día de la Madre, comuniones, San Juan, verano, 15 de agosto, Navidad y más) con la acción clave de cada una.',
       },
     ],
   },
@@ -204,7 +214,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Heladería',
         value: '€9',
-        desc: '15 fechas clave para heladerías (Día del Helado, verano, ferias, Navidad) con preparación especial y antelación recomendada.',
+        desc: 'Calendario mensual con los 12 meses del año y las fechas señaladas de heladería ya colocadas en cada mes (Día de la Madre, comuniones, San Juan, verano, 15 de agosto, Navidad y más) con la acción clave de cada fecha.',
         image: '/lovable-uploads/ai-gallery/tareas-heladeria-vitrina.jpg',
       },
     ],
@@ -252,7 +262,7 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 checklists operativos para heladería por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) para heladería por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: vitrina, toppings, caja, limpieza',
       'Partidas de producción: pasteurización, mantecación, envasado',
@@ -339,7 +349,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-heladeria',

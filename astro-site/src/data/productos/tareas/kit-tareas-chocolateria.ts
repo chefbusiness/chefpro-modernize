@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para chocolatería artesanal: producción (templado, moldeado, bombones), vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
+      '9 plantillas + 2 bonus (11 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción (templado, moldeado, bombones), apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist chocolatería, tareas chocolatero, checklist apertura chocolatería, tareas producción chocolate, control stock chocolatería, plantilla tareas obrador chocolate, checklist cierre chocolatería, inventario chocolatería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-chocolateria.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate',
     productDescription:
-      '9 checklists operativos pre-rellenados para chocolatería artesanal: producción, vitrina, servicio, gestión y temporada.',
+      '9 plantillas + 2 bonus (11 ficheros) con 338 tareas ya escritas para chocolatería artesanal: producción, apertura y cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -86,9 +86,10 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Chocolatería / Obrador de Chocolate — Checklists por Turno, Zona y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas para tu chocolatería u obrador de chocolate: producción, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 338 tareas de chocolatería artesanal ya escritas: producción, apertura/cierre de negocio, arqueo de caja, vitrina, servicio, gestión y temporada. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Producción: templado, moldeado, bombones, tabletas, envasado',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones y báscula de mostrador',
       'Servicio: vitrina, mostrador, packaging, degustación',
       'Perfiles: chocolatero/maestro, dependiente, encargado',
       'Gestión: manager diario/semanal/mensual + food cost',
@@ -101,14 +102,14 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de una chocolatería artesanal. Solo ajusta, imprime y delega.',
+      '338 tareas de chocolatería artesanal ya escritas y repartidas por turno, zona y perfil. Ajusta a tu obrador, imprime y delega.',
     templates: [
       {
         icon: 'CakeSlice',
         title: 'Apertura y Cierre',
-        desc: 'Checklists completos: vitrina, mostrador, caja, obrador, limpieza de equipos de templado y cierre administrativo. ~35 tareas pre-rellenadas.',
+        desc: 'Checklists completos: vitrina, mostrador, obrador, higiene personal y arranque seguro, control de cámaras y vitrina temperada. 41 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'Beaker',
@@ -128,7 +129,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Deep clean de obrador, mantenimiento de temperadora, inventario semanal por categoría (coberturas, rellenos, packaging, moldes).',
+        desc: 'Deep clean de obrador, mantenimiento de temperadora, inventario semanal por categoría (coberturas, rellenos, packaging, moldes). + hoja Trimestral y Anual: DDD, extintores y BIE, gas, legionela, SAT de temperadora y cámaras, calibración de sondas y báscula, con nº de parte y firma.',
       },
       {
         icon: 'Gift',
@@ -138,7 +139,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por zona, por turno y por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por zona, por turno y por perfil— con el contador ya calculado por fórmula: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo obrador): vitrinas temperadas, escaparate, encargos y mobiliario de tienda. Responsable y hora precargados en 32 tareas.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, báscula de mostrador y cuadre del precio por kilo, con descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula.',
       },
       {
         icon: 'Megaphone',
@@ -148,7 +159,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '15 fechas clave para chocolaterías con preparación especial y antelación recomendada.',
+        desc: 'Calendario mensual de 12 meses con las fechas señaladas dentro de cada mes (Navidad, San Valentín, Pascua, Reyes, comuniones, 15 de agosto, Todos los Santos, puente de diciembre…) y su preparación recomendada.',
       },
     ],
   },
@@ -212,7 +223,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Chocolatería',
         value: '€9',
-        desc: '15 fechas clave para chocolaterías (Navidad, San Valentín, Pascua, Día de la Madre, ferias) con preparación especial y antelación recomendada.',
+        desc: 'Calendario mensual de 12 meses con las fechas señaladas dentro de cada mes (Navidad, San Valentín, Pascua, Día de la Madre, comuniones, ferias…) y su preparación con antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-chocolateria-vitrina.jpg',
       },
     ],
@@ -260,9 +271,10 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Turno',
-    subtitle: '9 checklists operativos para chocolatería por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: vitrina, mostrador, obrador, limpieza',
+      'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
       'Partidas de producción: templado, moldeado, bombones, tabletas',
       'Inventario semanal: coberturas, rellenos, moldes, packaging, consumibles',
       'Checklist diario, semanal y mensual del manager',
@@ -347,7 +359,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-chocolateria',

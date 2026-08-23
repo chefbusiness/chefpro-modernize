@@ -8,7 +8,7 @@
 //
 // DIVERGENCIA ESTRUCTURAL (documentada en types.ts): este es el ÚNICO producto de la
 // línea Tareas cuyo H2 del ContentGrid lleva DOS números dorados en vez de uno
-// ("46 Checklists en 15 Plantillas — 11 Departamentos"). Se resuelve con `grid.headingHtml`.
+// ("53 Hojas de Checklist en 19 Ficheros — 11 Departamentos"). Se resuelve con `grid.headingHtml`.
 import type { KitTareasData } from './types';
 
 const data: KitTareasData = {
@@ -17,18 +17,18 @@ const data: KitTareasData = {
 
   seo: {
     title:
-      'Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo | AI Chef Pro',
+      'Kit de Tareas Recurrentes — 53 Checklists Operativos para Hotel Completo | AI Chef Pro',
     description:
-      '46 checklists operativos en 15 plantillas Excel para 11 departamentos de hotel: F&B, recepción, housekeeping, piscina, mantenimiento, spa y más. Solo €18,50.',
+      '53 checklists operativos en 19 ficheros Excel (636 tareas) para 11 departamentos de hotel: F&B, recepción, housekeeping, piscina, mantenimiento, spa y más. Solo €18,50.',
     keywords:
       'checklist hotel, tareas hotel, checklist housekeeping, checklist recepción hotel, checklist mantenimiento hotel, tareas buffet hotel, checklist room service, plantilla tareas hotel, checklist piscina, spa hotel, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-hotel.jpg',
   },
 
   schema: {
-    productName: 'Kit de Tareas Recurrentes — 46 Checklists Operativos para Hotel Completo',
+    productName: 'Kit de Tareas Recurrentes — 53 Checklists Operativos para Hotel Completo',
     productDescription:
-      '46 checklists operativos en 15 plantillas Excel para 11 departamentos de hotel: F&B (6 outlets), recepción, housekeeping, piscina, terraza, mantenimiento, administración y spa.',
+      '53 checklists operativos en 19 ficheros Excel con 636 tareas ya escritas para 11 departamentos de hotel: F&B (6 outlets), recepción, housekeeping, piscina, terraza, mantenimiento, administración y spa.',
     price: '18.50',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '8', bestRating: '5', worstRating: '1' },
@@ -60,7 +60,7 @@ const data: KitTareasData = {
       },
       {
         q: '¿En qué se diferencia de Trail?',
-        a: 'Trail cobra €60-75/mes por local. Este kit da 46 checklists para todo el hotel en Excel por €18,50, pago único.',
+        a: 'Trail cobra €60-75/mes por local. Este kit da 53 checklists (636 tareas) para todo el hotel en 19 ficheros Excel por €18,50, pago único.',
       },
       {
         q: '¿Hay garantía de devolución?',
@@ -90,13 +90,14 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Hotel Completo — 11 Departamentos',
     description:
-      '46 checklists operativos en 15 plantillas Excel para todo el hotel: F&B (6 outlets), recepción, housekeeping, piscina, terraza, mantenimiento, administración, spa y más. Imprime, delega al equipo, firma y archiva.',
+      '53 checklists operativos en 19 ficheros Excel con 636 tareas ya escritas para todo el hotel: F&B (6 outlets), recepción, housekeeping, piscina, terraza, mantenimiento, administración, spa y más. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'F&B completo: 6 outlets (buffet, à la carte, pool bar, lobby bar, room service, banquetes)',
       'Recepción: 3 turnos + protocolo check-in/out + auditoría nocturna',
       'Housekeeping: checkout, estancia, turndown, deep cleaning, lencería',
       'Piscina, terraza, áreas públicas, spa/wellness',
-      'Mantenimiento: HVAC, fontanería, electricidad + administración y revenue',
+      'Mantenimiento: diario, semanal, mensual y revisión legal Trimestral y Anual (DDD, extintores, gas, legionela) + HVAC, fontanería, electricidad',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones y descuadre automático',
     ],
     ctaLabel: 'COMPRAR AHORA — €18,50',
   },
@@ -104,17 +105,17 @@ const data: KitTareasData = {
   stickyLabel: 'KIT TAREAS HOTEL COMPLETO — €18,50',
 
   grid: {
-    countGold: '46',
-    headingRest: ' Checklists en 15 Plantillas — 11 Departamentos',
+    countGold: '53',
+    headingRest: ' Hojas de Checklist en 19 Ficheros — 11 Departamentos',
     headingHtml:
-      '<span class="text-[#FFD700]">46</span> Checklists en <span class="text-[#FFD700]">15</span> Plantillas — 11 Departamentos',
+      '<span class="text-[#FFD700]">53</span> Hojas de Checklist en <span class="text-[#FFD700]">19</span> Ficheros — 11 Departamentos',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de un hotel profesional. Solo ajusta, imprime y delega.',
+      '636 tareas de hotel profesional ya escritas y repartidas por departamento. Cada plantilla viene pre-rellenada: solo ajusta, imprime y delega.',
     templates: [
       {
         icon: 'Sunrise',
         title: 'Buffet Desayuno',
-        desc: 'Apertura y cierre del buffet: cocina, montaje, reposición, show cooking, mermas. ~40 tareas.',
+        desc: 'Higiene y arranque seguro de cocina, montaje, reposición, show cooking, prevención de anisakis en el pescado crudo o marinado, mermas. 64 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'UtensilsCrossed',
@@ -174,7 +175,7 @@ const data: KitTareasData = {
       {
         icon: 'Wrench',
         title: 'Mantenimiento',
-        desc: 'Ronda diaria, semanal, mensual + HVAC, fontanería y electricidad. 6 checklists técnicos.',
+        desc: 'Ronda diaria, semanal, mensual + HVAC, fontanería y electricidad. Hoja nueva Trimestral y Anual: DDD, conductos de extracción, extintores y BIE, gas, legionela y OCA de baja tensión, con nº de parte y firma. 7 checklists técnicos.',
       },
       {
         icon: 'BarChart3',
@@ -187,6 +188,16 @@ const data: KitTareasData = {
         desc: 'Apertura/cierre, cabinas entre tratamientos, vestuarios. 4 checklists.',
       },
       {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del hotel completo (no solo cocina): luces, alarma, TPV, sistemas. Responsable y hora límite precargados en cada tarea, con ancla a las 05:30.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula en 31 días.',
+      },
+      {
         icon: 'Megaphone',
         title: 'BONUS: Briefing Diario F&B',
         desc: 'Plantilla de reunión diaria: ocupación, VIPs, menú del día, equipo, incidencias.',
@@ -194,7 +205,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '20 fechas clave para F&B hotelero: temporadas, festividades, congresos.',
+        desc: '24 fechas clave para F&B hotelero: temporadas, festividades (Día del Padre, comuniones, puentes de Todos los Santos y de la Constitución) y congresos.',
       },
     ],
   },
@@ -218,7 +229,7 @@ const data: KitTareasData = {
       },
       {
         icon: 'Users',
-        title: '46 Checklists Pre-Rellenados',
+        title: '53 Checklists Pre-Rellenados',
         desc: 'Cada departamento con tareas reales: desde el chef ejecutivo hasta mantenimiento HVAC. Onboarding inmediato.',
       },
       {
@@ -243,7 +254,7 @@ const data: KitTareasData = {
   bonus: {
     headingPre: 'Bonos ',
     headingGold: 'Exclusivos',
-    subtitle: 'Además de las 15 plantillas, recibirás estos recursos adicionales — valorados en €18',
+    subtitle: 'Además de los 17 ficheros operativos, recibirás estos recursos adicionales — valorados en €18',
     items: [
       {
         icon: 'Megaphone',
@@ -258,7 +269,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual F&B Hotelero',
         value: '€9',
-        desc: '20 fechas clave para F&B en hoteles: temporadas alta/baja, festividades, congresos. Con antelación de preparación recomendada.',
+        desc: '24 fechas clave para F&B en hoteles: temporadas alta/baja, festividades (Día del Padre, comuniones, puentes de Todos los Santos y de la Constitución) y congresos. Con antelación de preparación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-hotel-banquete.jpg',
       },
     ],
@@ -292,7 +303,7 @@ const data: KitTareasData = {
     },
     {
       q: '¿En qué se diferencia de Trail u otros sistemas?',
-      a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da 46 checklists para todo el hotel en Excel por €18,50, pago único. Sin suscripción, sin internet, ilimitado en outlets.',
+      a: 'Trail cobra €60-75 al mes por local y requiere tablets/móviles. Este kit te da 53 checklists (636 tareas) para todo el hotel en 19 ficheros Excel por €18,50, pago único. Sin suscripción, sin internet, ilimitado en outlets.',
     },
     {
       q: '¿Puedo usarlo en varios hoteles?',
@@ -307,15 +318,16 @@ const data: KitTareasData = {
   cta: {
     heading: 'Estandariza las Operaciones de Todo Tu Hotel',
     subtitle:
-      '46 checklists operativos en 15 plantillas para 11 departamentos, por menos de lo que cuesta una hora de consultoría.',
+      '53 checklists operativos en 19 ficheros para 11 departamentos, con 636 tareas ya escritas, por menos de lo que cuesta una hora de consultoría.',
     items: [
       'F&B completo: buffet, à la carte, pool bar, lobby bar, room service, banquetes',
       'Recepción: 3 turnos + protocolo check-in/out + auditoría nocturna',
       'Housekeeping: checkout, estancia, turndown, deep cleaning, lencería',
       'Piscina, terraza y áreas públicas (lobby, pasillos, baños, parking)',
-      'Mantenimiento: diario, semanal, mensual + HVAC, fontanería, electricidad',
+      'Mantenimiento: diario, semanal, mensual, trimestral y anual (DDD, extintores, gas, legionela) + HVAC, fontanería, electricidad',
       'Administración: revenue management, reservas, contabilidad, RRHH',
       'Spa / Wellness: apertura, cierre, cabinas, vestuarios',
+      'Apertura y cierre de negocio + arqueo de caja con recuento por denominaciones',
       'BONUS: Briefing Diario F&B (€9) + Calendario Anual Hotelero (€9)',
     ],
     ctaLabel: 'SÍ, QUIERO EL KIT COMPLETO — €18,50',
@@ -406,7 +418,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-hotel',

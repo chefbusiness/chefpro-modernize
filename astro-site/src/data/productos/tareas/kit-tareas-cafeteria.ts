@@ -15,7 +15,7 @@ const data: KitTareasData = {
     title:
       'Kit de Tareas Recurrentes — Checklists Operativos para Cafetería / Brunch | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para cafetería y brunch: apertura, cierre, barista, vitrina, brunch, terraza, manager y eventos. Imprime, delega y firma. Solo €12.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para cafetería y brunch con las tareas más habituales ya escritas — apertura, cierre, barista, vitrina, caja, brunch, manager, perfiles, eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist cafetería, tareas barista, checklist apertura cafetería, lista tareas brunch, checklist manager cafetería, tareas recurrentes hostelería, vitrina pastelería checklist, plantilla tareas cafetería, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-cafeteria.jpg',
@@ -24,7 +24,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Cafetería / Brunch',
     productDescription:
-      '9 checklists operativos pre-rellenados para cafetería y brunch: apertura, cierre, barista, vitrina, brunch dominical, terraza, manager, eventos y festivos.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para cafetería y brunch con 500 tareas ya escritas — apertura, cierre, barista, vitrina de pastelería, arqueo de caja, brunch dominical, manager, perfiles, eventos y festivos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -108,13 +108,14 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Cafetería / Brunch — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu cafetería: apertura, cierre, barista, vitrina, brunch, terraza, manager y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 500 tareas de cafetería y brunch ya escritas: apertura, cierre, negocio, caja, barista, vitrina, manager, perfiles, brunch y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
-      'Checklists de apertura y cierre: barra, sala, terraza, cocina',
+      'Checklists de apertura y cierre por área (cocina, sala, barra café)',
+      'Apertura/cierre de negocio y arqueo de caja con recuento por denominaciones',
       'Tareas del barista: calibración, limpieza, latte art, stock leches',
       'Control de vitrina de pastelería y brunch dominical',
       'Tareas del manager: diario, semanal y mensual',
-      'Plantilla en blanco personalizable + briefing de servicio',
+      '3 plantillas maestras personalizables + briefing de servicio',
     ],
     ctaLabel: 'COMPRAR AHORA — €12',
   },
@@ -123,14 +124,14 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de una cafetería / brunch. Solo ajusta, imprime y delega.',
+      '500 tareas de cafetería y brunch ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
         icon: 'DoorOpen',
         title: 'Apertura y Cierre',
-        desc: '6 checklists: apertura y cierre de barra, sala y terraza/cocina. Cada tarea con responsable, hora límite y firma. ~80 tareas pre-rellenadas.',
+        desc: '6 checklists: apertura cocina, sala, barra café + cierre cocina, sala, barra café. Cada tarea con responsable, cuándo y firma. 130 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'Coffee',
@@ -150,7 +151,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de equipos (cafetera, horno, vitrina).',
+        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de equipos (cafetera, horno, vitrina). + hoja Trimestral y Anual: DDD, extracción, extintores y BIE, gas, legionela, filtro de agua del espresso y revisión del TPV/Verifactu, con nº de parte y firma.',
       },
       {
         icon: 'PartyPopper',
@@ -160,7 +161,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por franja horaria, por área, por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por franja horaria, por área y por perfil— con las secciones y la zona o el responsable puestos: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo barra): luces, alarma, TPV, terraza. Responsable y hora límite precargados para cada tarea.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula.',
       },
       {
         icon: 'Megaphone',
@@ -170,7 +181,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '17 fechas clave de hostelería con tareas asociadas y antelación recomendada. Añade tus fechas locales.',
+        desc: '22 fechas clave de hostelería con tareas asociadas y antelación recomendada, más 5 huecos para las tuyas.',
       },
     ],
   },
@@ -234,7 +245,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Tareas Especiales',
         value: '€9',
-        desc: '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, terraza) con tareas y antelación recomendada.',
+        desc: '22 fechas clave de hostelería (San Valentín, Día del Padre, comuniones, Semana Santa, 15 de agosto, terraza, Todos los Santos, Navidad, puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-cafeteria-terraza.jpg',
       },
     ],
@@ -282,9 +293,10 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 checklists operativos para cafetería por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: barra, sala, terraza, cocina',
+      'Apertura/cierre de negocio y arqueo de caja con descuadre automático',
       'Tareas específicas del barista: calibración, limpieza, stock',
       'Control de vitrina de pastelería y brunch dominical',
       'Checklist diario, semanal y mensual del manager',
@@ -381,7 +393,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-cafeteria',

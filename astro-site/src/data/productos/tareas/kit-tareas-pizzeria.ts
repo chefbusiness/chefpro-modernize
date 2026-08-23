@@ -14,7 +14,7 @@ const data: KitTareasData = {
   seo: {
     title: 'Kit de Tareas Recurrentes — Checklists Operativos para Pizzería | AI Chef Pro',
     description:
-      '9 checklists operativos pre-rellenados para pizzería: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
+      'Kit de 9 plantillas + 2 bonus (11 ficheros): checklists operativos para pizzería con las tareas más habituales ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega y firma. Solo €12.',
     keywords:
       'checklist pizzería, tareas apertura pizzería, checklist horno pizza, tareas pizzero, checklist delivery pizzería, lista tareas pizzería, plantilla tareas pizzería, control horno pizza, masa napolitana checklist, AI Chef Pro',
     ogImage: 'https://aichef.pro/og-kit-tareas-pizzeria.jpg',
@@ -23,7 +23,7 @@ const data: KitTareasData = {
   schema: {
     productName: 'Kit de Tareas Recurrentes — Checklists Operativos para Pizzería',
     productDescription:
-      '9 checklists operativos pre-rellenados para pizzería: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos.',
+      '9 plantillas + 2 bonus (11 ficheros): checklists operativos para pizzería con 373 tareas ya escritas — horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos.',
     price: '12.00',
     priceValidUntil: '2026-12-31',
     aggregateRating: { ratingValue: '4.9', reviewCount: '10', bestRating: '5', worstRating: '1' },
@@ -101,13 +101,13 @@ const data: KitTareasData = {
     titleGold: 'Recurrentes',
     subtitleLine: 'Pizzería — Checklists Operativos por Turno, Área y Perfil',
     description:
-      '9 plantillas Excel pre-rellenadas con todas las tareas de tu pizzería: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
+      '9 plantillas + 2 bonus (11 ficheros) en Excel con 373 tareas de pizzería ya escritas: horno de leña/piedra, masa napolitana, línea de montaje, delivery, perfiles y eventos. Imprime, delega al equipo, firma y archiva.',
     checkItems: [
       'Checklists de apertura y cierre: horno, línea de montaje, sala, barra',
       'Control de horno de leña/piedra: temperatura 400-450 °C, limpieza, encendido',
       'Tareas del pizzero: fermentación lenta, estirado a mano, cocción 60-90s',
       'Gestión de delivery y take-away: packaging, riders, control de tiempos',
-      'Plantilla en blanco personalizable + briefing de servicio',
+      '3 plantillas maestras personalizables + briefing de servicio',
     ],
     ctaLabel: 'COMPRAR AHORA — €12',
   },
@@ -116,14 +116,14 @@ const data: KitTareasData = {
 
   grid: {
     countGold: '9',
-    headingRest: ' Plantillas de Tareas Operativas',
+    headingRest: ' Plantillas de Tareas Operativas + 2 Bonus (11 ficheros)',
     subtitle:
-      'Cada plantilla viene pre-rellenada con las tareas reales de una pizzería. Solo ajusta, imprime y delega.',
+      '373 tareas de pizzería ya escritas y repartidas por turno, área y perfil. Ajusta a tu local, imprime y delega.',
     templates: [
       {
         icon: 'DoorOpen',
         title: 'Apertura y Cierre',
-        desc: '6 checklists: apertura y cierre de horno, línea de montaje, sala y barra. Cada tarea con responsable, hora límite y firma. ~80 tareas pre-rellenadas.',
+        desc: '4 checklists: apertura cocina, apertura sala, cierre cocina, cierre sala. Cada tarea con responsable, hora límite y firma. 76 tareas ya escritas solo en este fichero.',
       },
       {
         icon: 'Flame',
@@ -143,7 +143,7 @@ const data: KitTareasData = {
       {
         icon: 'CalendarDays',
         title: 'Semanales y Mensuales',
-        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de horno, amasadora y cámara de fermentación.',
+        desc: 'Limpieza profunda semanal por zona, revisión FIFO de cámaras y almacén, mantenimiento mensual de horno, amasadora y cámara de fermentación. + hoja Trimestral y Anual: DDD, conductos y chimenea del horno de leña, extintores y BIE, gas, legionela y Verifactu, con nº de parte y firma.',
       },
       {
         icon: 'PartyPopper',
@@ -153,7 +153,17 @@ const data: KitTareasData = {
       {
         icon: 'FileEdit',
         title: 'Plantilla Personalizable',
-        desc: '3 plantillas en blanco (por franja horaria, por área, por perfil) para crear tus propias listas de tareas.',
+        desc: '3 plantillas maestras ya estructuradas —por franja horaria (apertura, servicio, cierre), por área (cocina, sala, barra) y por perfil (cocina, sala, gerencia)— con las secciones y columnas propias de cada eje: tú solo escribes tus tareas en las celdas verdes.',
+      },
+      {
+        icon: 'Building2',
+        title: 'Apertura y Cierre de Negocio',
+        desc: 'Checklist del local completo (no solo cocina): luces, alarma, TPV, terraza. Responsable y hora límite precargados en las 31 tareas.',
+      },
+      {
+        icon: 'Wallet',
+        title: 'Arqueo y Registro de Caja',
+        desc: 'Apertura y cierre de caja con recuento por denominaciones, fondo de caja y descuadre automático frente al Z del TPV. Incluye registro mensual con descuadre por fórmula en las 31 filas del mes.',
       },
       {
         icon: 'Megaphone',
@@ -163,7 +173,7 @@ const data: KitTareasData = {
       {
         icon: 'Calendar',
         title: 'BONUS: Calendario Anual',
-        desc: '17 fechas clave de hostelería con tareas asociadas y antelación recomendada. Añade tus fechas locales.',
+        desc: '22 fechas clave de hostelería con tareas asociadas y antelación recomendada, más 5 huecos para las tuyas.',
       },
     ],
   },
@@ -227,7 +237,7 @@ const data: KitTareasData = {
         label: 'BONUS 2',
         title: 'Calendario Anual de Tareas Especiales',
         value: '€9',
-        desc: '17 fechas clave de hostelería (San Valentín, Navidad, Semana Santa, fútbol) con tareas y antelación recomendada.',
+        desc: '22 fechas clave de hostelería (San Valentín, Semana Santa, Noche de Fútbol, terraza, Día del Padre, comuniones, 15 de agosto, Todos los Santos, Navidad y puente de diciembre) con tareas y antelación recomendada.',
         image: '/lovable-uploads/ai-gallery/tareas-pizzeria-mesa.jpg',
       },
     ],
@@ -275,7 +285,7 @@ const data: KitTareasData = {
 
   cta: {
     heading: 'Deja de Repetir las Mismas Instrucciones Cada Día',
-    subtitle: '9 checklists operativos para pizzería por menos de lo que cuesta una hora de consultoría.',
+    subtitle: '9 plantillas + 2 bonus (11 ficheros) por menos de lo que cuesta una hora de consultoría.',
     items: [
       'Checklists de apertura y cierre: horno, línea, sala, barra',
       'Tareas del pizzero: fermentación, estirado, cocción 60-90s',
@@ -375,7 +385,7 @@ const data: KitTareasData = {
     { href: 'mailto:info@aichef.pro', label: 'Contacto' },
   ],
 
-  updateNote: 'Producto actualizado · Versión 1.1 · agosto 2026',
+  updateNote: 'Producto actualizado · Versión 2.0 · agosto 2026',
 
   alreadyBought: {
     product: 'kit-tareas-pizzeria',
