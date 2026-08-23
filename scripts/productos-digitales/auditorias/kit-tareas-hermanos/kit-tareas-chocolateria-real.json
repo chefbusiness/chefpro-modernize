@@ -1,0 +1,1237 @@
+{
+ "producto": "kit-tareas-chocolateria",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T17:54:13",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria",
+ "contexto": {
+  "kit": "Chocolatería / Bombonería",
+  "pie": "— Kit de Tareas Recurrentes · Chocolatería / Bombonería · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "papeles": {
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true
+   }
+  },
+  "producto": "kit-tareas-chocolateria"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Apertura»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Apertura»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Cierre»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Cierre»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Apertura»: sección nueva «Higiene personal y arranque seguro del obrador» (7 tareas) DELANTE del encendido de equipos: higiene personal y orden seguro extracción → gas → equipos, que no existían en ninguno de los 11 ficheros — DOM-12 / DOM-13 (equivalentes)",
+    "«Apertura»: la cámara se COMPRUEBA desde la noche anterior, con objetivo de temperatura y de humedad y hueco para la lectura — DOM-24 (equivalente)",
+    "«Apertura»: la nevera de rellenos igual, y su objetivo pasa de «4 °C» a la banda real de refrigeración 0-4 °C — DOM-24 (equivalente)",
+    "«Apertura»: control de temperatura de la VITRINA temperada (16-18 °C) antes de montar el género — el kit sólo mandaba encenderla, y en bombonería el punto crítico es que mantenga por debajo del punto de fusión de la manteca de cacao (hallazgo «Vitrinas temperadas sin objetivo de temperatura propio», media)",
+    "«Apertura»: la referencia al APPCC deja de dar por hecho que el cliente lo tiene y ofrece «Notas» como alternativa — §2.5 / DOM-23 (equivalente)",
+    "«Apertura»: el etiquetado nombra los alérgenos que de verdad hay en una vitrina de bombonería y añade el precio por kilo de la venta al peso — DOM-19 (equivalente)",
+    "«Apertura»: el TPV y el fondo de caja se COMPRUEBAN aquí y se cuentan en «Apertura de Caja» del 09, que es donde está el arqueo — antes eran dos recuentos paralelos sin remisión — DOM-09",
+    "«Cierre»: el cuadre de caja deja de duplicar el arqueo entero de «Cierre de Caja» (09) y pasa a comprobar que está cerrado y firmado, con la remisión — DOM-09",
+    "«Cierre»: apagar el TPV era el mismo hito que «Cierre del Negocio» (08) B8; aquí queda la comprobación de que se hizo DESPUÉS del arqueo, que es el orden que se salta todo el mundo — DOM-09",
+    "«Cierre»: las dos temperaturas de cierre con su objetivo y su hueco de lectura (la de apertura ya lo tenía y la de cierre no) — §2.9",
+    "«Cierre»: mermas del día con producto, cantidad y motivo — no se anotaban en ningún cierre — DOM-18 (equivalente)",
+    "«Cierre»: el gas se CIERRA por la llave general, no se «verifica apagado» — cierra el par que abre la apertura — DOM-13 (equivalente)",
+    "Instrucciones: higiene personal, arranque seguro y los cuatro objetivos de temperatura del oficio — DOM-12 / DOM-13 / DOM-24",
+    "«Apertura»: 2 textos normalizados (grados con signo menos tipográfico y espacio antes de la unidad, referencia honesta al Pack APPCC) — DOM-R2-22 / §2.5, que el motor no aplica al molde P4",
+    "«Apertura»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Templado»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Templado»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Moldeado»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Moldeado»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Templado»: temperatura y humedad del OBRADOR antes de templar — la hoja controlaba las tres curvas de cobertura al grado y no el aire de la sala, que es lo que decide si cristaliza — §2.9 (equivalente)",
+    "«Templado»: el test de templado pasa de enumerar tres palabras a decir el criterio (3-5 min a 20 °C) y qué hacer si no lo pasa",
+    "«Templado»: el test de la cobertura CON LECHE deja de ser «test de templado y registrar lote» y trae el criterio de paso/no-paso (capa fina sobre papel, cristaliza en 3-5 min a 18-20 °C con brillo uniforme y sin vetas) desde su punto de trabajo (29-30 °C), más qué hacer si no lo pasa — el criterio sólo estaba en la sección de chocolate negro (hallazgo media de la tanda 3)",
+    "«Templado»: el punto de trabajo de la cobertura BLANCA pasa de 27-28 °C a los 28-29 °C de la curva estándar, que es contra los que se lee su test de templado — sin esto, las dos filas contiguas del mismo bloque darían dos temperaturas distintas",
+    "«Templado»: el test de la cobertura BLANCA, igual: criterio de paso/no-paso desde su punto de trabajo (28-29 °C) y qué hacer si no cristaliza — la blanca es la que menos margen tiene, porque la grasa láctea la deja más blanda (hallazgo media de la tanda 3)",
+    "«Moldeado»: las mermas llevan motivo y el criterio de qué se refunde y qué va a residuo — DOM-18 (equivalente)",
+    "«Moldeado»: el almacenamiento lleva humedad, oscuridad y la advertencia de los olores, y remite a la tabla de vida útil — DOM-29 (equivalente)",
+    "«Moldeado»: etiquetado de lote con consumo preferente por familia — DOM-29 (equivalente)",
+    "«Moldeado»: tabla editable de vida útil y conservación (10 familias) al pie, fuera del rango del contador — DOM-29 (equivalente, portado de CONGELACIÓN a CONSERVACIÓN: congelar chocolate acabado provoca sugar bloom y la tabla lo dice)",
+    "Instrucciones: ventana de templado, tabla de vida útil y por qué no se congela el chocolate acabado — DOM-29 (equivalente)",
+    "«Templado»: 8 textos normalizados (grados con signo menos tipográfico y espacio antes de la unidad, referencia honesta al Pack APPCC) — DOM-R2-22 / §2.5, que el motor no aplica al molde P4",
+    "«Moldeado»: 3 textos normalizados (grados con signo menos tipográfico y espacio antes de la unidad, referencia honesta al Pack APPCC) — DOM-R2-22 / §2.5, que el motor no aplica al molde P4"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Diario»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Diario»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Semanal»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Semanal»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Mensual»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Mensual»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Diario»: cierre y validación del registro diario de jornada del equipo (RD-ley 8/2019, conservación 4 años) — DOM-17 (equivalente)",
+    "«Semanal»: sección nueva «Sábado y domingo — Tienda a pleno» (3 tareas) — el semanal terminaba el viernes en una tienda que factura sábado y domingo — DOM-28 (equivalente)",
+    "«Mensual»: archivo mensual de los registros de jornada — DOM-17 (equivalente)",
+    "Instrucciones: registro de jornada y bloque de fin de semana — DOM-17 / DOM-28 (equivalentes)",
+    "«Semanal»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Chocolatero»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Chocolatero»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Dependiente»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Dependiente»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Encargado»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Encargado»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Dependiente»: el etiquetado nombra los alérgenos reales de una vitrina de bombonería y el precio por kilo de la venta al peso — DOM-19 (equivalente)",
+    "«Dependiente»: al confirmar el encargo se dejan por escrito alérgenos, hora de recogida, señal y cancelación — DOM-19 (equivalente)",
+    "«Dependiente»: la vigilancia de temperatura incluye la VITRINA, que es la que estropea el género, y trae hueco para la lectura — §2.9 (equivalente)",
+    "«Encargado»: 1 textos normalizados (grados con signo menos tipográfico y espacio antes de la unidad, referencia honesta al Pack APPCC) — DOM-R2-22 / §2.5, que el motor no aplica al molde P4"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Semanal»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Semanal»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Mensual»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Mensual»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Semanal»: la verificación semanal de frío nombra los dos equipos con su objetivo y trae hueco para las lecturas — §2.9 (equivalente)",
+    "hoja nueva «Trimestral y Anual» en 05: mantenimiento y documentación que se CONTRATA y que pide una inspección (DDD, conductos, analíticas, carnés, SAT de temperadora y cámaras, calibración de sondas y báscula, extintores, gas, RGSEAA, póliza y Verifactu) — DOM-16 (equivalente); el kit no tenía ninguna capa por encima del mes",
+    "Instrucciones: hoja «Trimestral y Anual» — DOM-16 (equivalente)",
+    "«Mensual»: 1 textos normalizados (grados con signo menos tipográfico y espacio antes de la unidad, referencia honesta al Pack APPCC) — DOM-R2-22 / §2.5, que el motor no aplica al molde P4"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Navidad»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Navidad»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«San Valentín»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«San Valentín»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Pascua»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Pascua»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Navidad»: al confirmar el pedido corporativo se dejan por escrito alérgenos, entrega, señal y cancelación — DOM-19 (equivalente)",
+    "«Navidad»: fecha límite de encargos y horarios del 24 y el 31 publicados en octubre — el kit planificaba la producción y no el corte de pedidos, que es lo que revienta la última semana — TEC-22 (equivalente)",
+    "«San Valentín»: la entrega a domicilio confirma alérgenos y franja, y fija el límite térmico del reparto (18 °C) — DOM-19 (equivalente)",
+    "«Pascua»: el etiquetado enumera lo que exige el Rgto. 1169/2011 (denominación, peso neto, lote, consumo preferente y alérgenos) — DOM-19 (equivalente)",
+    "Instrucciones: confirmación por escrito de los encargos y fecha límite de campaña — DOM-19 / TEC-22 (equivalentes)"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Por Zona»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Zona»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "«Por Turno»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Turno»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "«Por Perfil»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Perfil»: contador con denominador por fórmula (no lo tenía) en la fila 30",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0"
+   ],
+   "formulas_nuevas": 6
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura del Negocio»: Responsable y Hora Límite precargados en 17 tareas (ancla 07:00)",
+    "«Apertura del Negocio»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre del Negocio»: Responsable y Hora Límite precargados en 15 tareas (ancla 07:00)",
+    "«Cierre del Negocio»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura del Negocio»: 3 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Apertura del Negocio»: B20 pasa de encender la vitrina a COMPROBAR que ha alcanzado su rango (16-18 °C y menos del 55 % de humedad) antes de montar el género, con hueco para la lectura; el encendido se va a B11, que es la fila con la hora temprana. Zona «Tienda» → «Vitrina» (hallazgo «Vitrinas temperadas sin objetivo de temperatura propio», media, + la humedad, que no vigilaba ninguna hoja)",
+    "«Apertura del Negocio»: la temperatura del obrador añade la humedad y el hueco de lectura, y queda simétrica con la de cierre — §2.9",
+    "«Apertura del Negocio»: B9 deja de mandar montar una «pizarra de menú» que una bombonería no tiene y monta lo que sí cuelga fuera —horario y cartel de encargos— más la comprobación del sol sobre el escaparate, que funde el género y no la hacía ninguna de las 11 hojas (hallazgo baja de …-ver3.json)",
+    "«Apertura del Negocio»: B11 pasa del «sistema de reservas» de un restaurante al ENCENDIDO de las vitrinas temperadas, que es lo que hay que poner en marcha nada más entrar porque es lo que más tarda en bajar; su comprobación de rango se queda en B20. Zona «Recepción» → «Vitrina»: no hay recepción en un mostrador (hallazgo baja de …-ver3.json)",
+    "«Apertura del Negocio»: B13 pasa de «reservas del día» a los ENCARGOS comprometidos para hoy (unidades, hora de recogida, quién los prepara) y al estuchado de los de la mañana con sus cajas de regalo — el marco: la agenda y los pedidos online siguen en 01 y la señal cobrada, en 09. Zona «Recepción» → «Mostrador» (hallazgo baja de …-ver3.json)",
+    "«Apertura del Negocio»: B16 revisaba «sillas, mesas» en un local sin comedor; pasa al mobiliario que sí hay (mostrador, estanterías y escaparate) y se queda en ESTADO, no en limpieza, que ya es tarea de 01 — barrido de «mesa» del 08/09",
+    "«Apertura del Negocio»: B18 pasa de repasar «las cartas/menús» —que una bombonería no tiene— a comprobar que ninguna bandeja de la vitrina se abre sin etiqueta de precio, precio por kilo del granel y alérgenos, y que hay repuesto en cámara. Zona «Sala» → «Vitrina» (hallazgo baja de …-ver3.json)",
+    "«Cierre del Negocio»: la temperatura de cierre del obrador ya trae objetivo (18-20 °C) y hueco para la lectura; era la única de las dos que no lo tenía (hallazgo «Temperatura de cierre del obrador sin objetivo ni hueco de lectura», media)",
+    "«Cierre del Negocio»: la vitrina no se apaga con el género dentro — primero se retira a la cámara de conservación. Zona «Tienda» → «Vitrina», la misma que su pareja de apertura",
+    "«Apertura del Negocio»: 6 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre del Negocio»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)",
+    "metadata title → Apertura y Cierre del Negocio — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Apertura de Caja»: B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» (T-02: el hito de encender el TPV es del fichero de negocio; aquí se comprueba)",
+    "«Apertura de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Cierre de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Registro Mensual»: columna «Z del TPV» antes de «Descuadre» (DOM-04/TEC-04/COM-14)",
+    "«Registro Mensual»: la columna del efectivo pasa a «Efectivo Contado» (el recuento del cajón; el fondo lo descuenta la fórmula) — DOM-R2-01",
+    "«Registro Mensual»: nota al pie con las tres cifras que NO son una suma (TEC-05/DOM-R2-01/26)",
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Apertura de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre de Caja»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: añadida la denominación de 0,02 €",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Apertura de Caja»: celda editable del fondo de caja (C23)",
+    "«Apertura de Caja»: la tarea del fondo apunta a la celda verde sin hardcodear la coordenada",
+    "«Cierre de Caja»: fila «Fondo de caja inicial (−)» en el Resumen de Cierre",
+    "«Cierre de Caja»: fila «Ventas en efectivo (contado − fondo)» en el Resumen de Cierre",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "«Apertura de Caja»: báscula de mostrador (tara y peso patrón) y cuadre del precio por kilo entre cartel y TPV — el fichero de caja era el genérico de hostelería y en bombonería media caja sale de la báscula (hallazgo «09 no distingue caja de mostrador/venta al peso», baja)",
+    "«Cierre de Caja»: cuadre de la venta al peso y registro de las señales de encargos, que no son venta del día y descuadraban la Z (hallazgo «09 no distingue caja de mostrador/venta al peso», baja)",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C56)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)",
+    "metadata title → Apertura y Cierre de Caja — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate"
+   ],
+   "formulas_nuevas": 80
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Briefing»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Briefing»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Briefing»: la reunión de 5 minutos empieza por el dato que condiciona toda la producción del día —el aire del obrador— y que no se pedía en ninguna parte — §2.9 (equivalente)"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Calendario»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Calendario»: Reyes, comuniones de abril a junio, Asunción del 15 de agosto, Todos los Santos y el puente del 6-8 de diciembre — cinco fechas de tienda llena que no estaban — DOM-20 (equivalente)",
+    "Instrucciones: la portada prometía «15 fechas clave» y la hoja tiene 12 filas, una por mes; ahora dice lo que hay (12 campañas contadas una a una) — COM-24 (equivalente)"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-partidas-produccion.xlsx",
+  "03-tareas-manager.xlsx",
+  "04-tareas-perfiles.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-eventos-temporada.xlsx",
+  "07-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Apertura y Cierre de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura",
+     "dim": "A1:G41",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-produccion.xlsx",
+   "title": "02 · Partidas de Producción de Chocolate · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Templado",
+     "dim": "A1:G36",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Moldeado",
+     "dim": "A1:G49",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 · Tareas del Manager de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Diario",
+     "dim": "A1:G29",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Semanal",
+     "dim": "A1:G43",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 · Tareas por Perfil — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B15",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chocolatero",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Dependiente",
+     "dim": "A1:G33",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Encargado",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Tareas Semanales y Mensuales — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Semanal",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Mensual",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-temporada.xlsx",
+   "title": "06 · Eventos y Temporada — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B18",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Navidad",
+     "dim": "A1:G29",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "San Valentín",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Pascua",
+     "dim": "A1:G27",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 · Plantilla Personalizable — Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Turno",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$30",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Chocolatería / Bombonería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G59",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$59",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 · Briefing Diario de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "A1:G35",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 · Calendario Anual de Chocolatería · Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Chocolatería / Obrador de Chocolate · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B10",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario",
+     "dim": "A1:F18",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-produccion.xlsx",
+    "salida": "02-partidas-produccion.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-temporada.xlsx",
+    "salida": "06-eventos-temporada.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=6 cache_inyectado=6 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 124,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 20,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 32,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 338,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 41,
+    "02-partidas-produccion.xlsx": 41,
+    "03-tareas-manager.xlsx": 47,
+    "04-tareas-perfiles.xlsx": 44,
+    "05-tareas-semanales-mensuales.xlsx": 48,
+    "06-eventos-temporada.xlsx": 40,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 32,
+    "09-apertura-cierre-caja.xlsx": 27,
+    "BONUS-01-briefing-servicio.xlsx": 18,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 59,
+    "p4": 279
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Apertura",
+     "molde": "p4",
+     "celda": "E39",
+     "tareas": 25
+    },
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Cierre",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Templado",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 19
+    },
+    {
+     "fichero": "02-partidas-produccion.xlsx",
+     "hoja": "Moldeado",
+     "molde": "p4",
+     "celda": "E34",
+     "tareas": 22
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Diario",
+     "molde": "p4",
+     "celda": "E27",
+     "tareas": 15
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Semanal",
+     "molde": "p4",
+     "celda": "E41",
+     "tareas": 20
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Mensual",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Chocolatero",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Dependiente",
+     "molde": "p4",
+     "celda": "E31",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Encargado",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Semanal",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Mensual",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E26",
+     "tareas": 14
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Navidad",
+     "molde": "p4",
+     "celda": "E27",
+     "tareas": 15
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "San Valentín",
+     "molde": "p4",
+     "celda": "E24",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-temporada.xlsx",
+     "hoja": "Pascua",
+     "molde": "p4",
+     "celda": "E25",
+     "tareas": 13
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Zona",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Turno",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "07-plantilla-personalizable.xlsx",
+     "hoja": "Por Perfil",
+     "molde": "p4",
+     "celda": "E30",
+     "tareas": 0
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F28",
+     "tareas": 17
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E24",
+     "tareas": 13
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E25",
+     "tareas": 14
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing",
+     "molde": "p4",
+     "celda": "E33",
+     "tareas": 18
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-chocolateria)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56",
+   "entradas": {
+    "Apertura de Caja!C25": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C52": 800,
+    "Cierre de Caja!C55": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C56",
+   "entradas": {
+    "Apertura de Caja!C25": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C52": 800,
+    "Cierre de Caja!C55": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D28/F28",
+   "entradas": "17 tareas · 3 N/A · 14 ✓",
+   "esperado": "14 de 14",
+   "obtenido": "14 de 14",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/contador-08-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Apertura:C39/E39",
+   "entradas": "hoja tal y como se entrega · 25 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 28",
+   "esperado": "0 de 25",
+   "obtenido": "0.0 de 25.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-chocolateria/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-chocolateria.bak-20260823-175355"
+}

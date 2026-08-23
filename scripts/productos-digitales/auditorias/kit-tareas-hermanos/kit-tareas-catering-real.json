@@ -1,0 +1,1136 @@
+{
+ "producto": "kit-tareas-catering",
+ "version": "2.0",
+ "spec": "scripts/productos-digitales/kit-tareas-v2-SPEC.md §1 y §2",
+ "fecha": "2026-08-23T17:51:30",
+ "modo": "produccion",
+ "etapas": [
+  "contenido",
+  "motor"
+ ],
+ "carpeta_origen": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering",
+ "carpeta_trabajo": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering",
+ "contexto": {
+  "kit": "Catering / Eventos",
+  "pie": "— Kit de Tareas Recurrentes · Catering / Eventos · AI Chef Pro · aichef.pro",
+  "sufijo": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+  "hora_apertura": "07:00",
+  "literal_cierre": "Cierre",
+  "f_negocio": "08-apertura-cierre-negocio.xlsx",
+  "f_caja": "09-apertura-cierre-caja.xlsx",
+  "f_areas": null,
+  "ficheros": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "con_checklist": [
+   "08-apertura-cierre-negocio.xlsx",
+   "09-apertura-cierre-caja.xlsx"
+  ],
+  "f_calendario": null,
+  "f_briefing": null,
+  "f_plantilla": null,
+  "f_eventos": null,
+  "f_periodico": null,
+  "areas_nombres": [],
+  "negocio_bandas": [],
+  "papeles": {
+   "08-apertura-cierre-negocio.xlsx": {
+    "ciclo": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "con_notas": [
+     "Apertura del Negocio",
+     "Cierre del Negocio"
+    ],
+    "recuento": false,
+    "registro": false
+   },
+   "09-apertura-cierre-caja.xlsx": {
+    "ciclo": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "con_notas": [
+     "Apertura de Caja",
+     "Cierre de Caja"
+    ],
+    "recuento": true,
+    "registro": true
+   }
+  },
+  "producto": "kit-tareas-catering"
+ },
+ "ficheros": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Producción»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Producción»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Producción»: sección nueva «Higiene personal y arranque seguro de la cocina» (8 tareas) delante de la primera sección que toca género: higiene personal y orden seguro campana → gas → equipos, que no existían — DOM-12 / DOM-13 (equivalentes)",
+    "«Producción»: congelación preventiva frente al ANISAKIS del pescado que se sirve crudo o semicrudo (Rgto. CE 853/2004), que no estaba en ninguno de los 11 ficheros — DOM-02 (equivalente, ALTA)",
+    "«Producción»: mermas de producción del día — DOM-18 (equivalente)",
+    "«Producción»: las cámaras se COMPRUEBAN desde la noche anterior, con objetivo, hueco para la lectura y qué hacer si hay desviación — DOM-24 (equivalente)",
+    "«Producción»: el almacenamiento lleva temperatura, fecha y remisión a la tabla de vida útil — DOM-29 (equivalente)",
+    "«Producción»: desinfección con dosis y aclarado sólo para los vegetales que se sirven crudos, separada del blanqueado — DOM-26 (equivalente)",
+    "«Producción»: la referencia al APPCC deja de dar por hecho que el cliente lo tiene y ofrece la columna «Notas» como alternativa — DOM-R2-09",
+    "«Producción»: tabla editable de vida útil en congelación (10 familias) al pie, fuera del rango del contador — DOM-29 (equivalente)",
+    "Instrucciones: higiene y arranque seguro, anisakis y tabla de vida útil — DOM-12 / DOM-02 / DOM-29"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Transporte»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Transporte»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Transporte»: la temperatura de pre-enfriado se escribe con el signo menos tipográfico y en la misma forma que el resto del corpus («≤ −18 °C»), que era el hallazgo de temperaturas sin normalizar — DOM-R2-22",
+    "«Transporte»: el certificado ATP del vehículo entra en la comprobación previa a la carga (contenido de sector: es la autorización para transportar alimentos a temperatura regulada)",
+    "«Transporte»: la temperatura de carga lleva objetivo y hueco para la lectura — §2.9",
+    "«Transporte»: la referencia al APPCC deja de darse por hecha y se ofrece la columna «Notas» — DOM-R2-09",
+    "«Transporte»: ídem en la descarga, con hueco para la lectura — DOM-R2-09 / §2.9"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Event Manager»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Event Manager»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Event Manager»: cierre, validación y archivo del registro de jornada del equipo del evento, extras incluidos (RD-ley 8/2019, conservación 4 años) — DOM-17 (equivalente)",
+    "hoja nueva «Trimestral y Anual» en 03: mantenimiento y documentación que se CONTRATA y que pide una inspección (DDD, conductos, ATP del vehículo, calibración de sondas, gas, extintores, aceite usado, RGSEAA, carnés de manipulador, póliza de eventos y Verifactu) — DOM-16 (equivalente); el kit no tenía ninguna capa anual",
+    "Instrucciones: hoja «Trimestral y Anual» y registro de jornada — DOM-16 / DOM-17 (equivalentes)",
+    "«Trimestral y Anual»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Chef de Evento»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Chef de Evento»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Maître - Jefe Sala»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Maître - Jefe Sala»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Camarero»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Camarero»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Barman»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Barman»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Chef de Evento»: 1 temperaturas normalizadas al signo menos tipográfico y con espacio antes de la unidad (DOM-R2-22, que el motor no aplica al molde P4)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Montaje»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Montaje»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Desmontaje»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Desmontaje»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Montaje»: la señalización nombra los 14 alérgenos declarados y exige que sala y cocina sepan responderlos — DOM-19 (equivalente)",
+    "«Desmontaje»: el criterio de los sobrantes deja de ser «lo recuperable» y pasa a ser si ha salido a sala y si ha mantenido la cadena de frío; se anota la merma — DOM-18 (equivalente)",
+    "«Montaje»: 1 temperaturas normalizadas al signo menos tipográfico y con espacio antes de la unidad (DOM-R2-22, que el motor no aplica al molde P4)"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Bodas»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Bodas»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Corporativo»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Corporativo»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Cocktail Standing»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Cocktail Standing»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "«Outdoor - Exterior»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Outdoor - Exterior»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Bodas»: alérgenos e intolerancias por escrito y situados en el plano de asientos al confirmar la reserva — DOM-19 (equivalente)",
+    "«Cocktail Standing»: prevención de ANISAKIS en las estaciones de ceviche y tartar (Rgto. CE 853/2004) y alérgenos por bandeja — DOM-02 (equivalente, ALTA) / DOM-19",
+    "«Corporativo»: las restricciones se confirman POR ESCRITO y se pasan a cocina y a sala — DOM-19 (equivalente)",
+    "«Outdoor - Exterior»: la regla de las 2 h entre 5 °C y 65 °C, y 1 h con más de 30 °C de ambiente, en cifras — §2.9 (equivalente)"
+   ],
+   "formulas_nuevas": 8
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Por Fase»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Zona»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Por Perfil»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0"
+   ],
+   "formulas_nuevas": 0
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ],
+   "cambios": [
+    "«Apertura del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Cierre del Negocio»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre del Negocio»: contador agrupado (etiqueta A:C, «x de y» bajo «✓ Completada»)",
+    "«Apertura del Negocio»: Responsable y Hora Límite precargados en 18 tareas (ancla 07:00)",
+    "«Cierre del Negocio»: Responsable y Hora Límite precargados en 15 tareas (ancla 07:00)",
+    "«Cierre del Negocio»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura del Negocio»: 3 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Apertura del Negocio»: 8 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Apertura del Negocio»: 10 tareas reescritas del vocabulario de restaurante con sala (pizarra de menú, reservas, música ambiente, cartas/menús, terraza) al oficio del catering —órdenes de servicio, hoja de ruta de vehículos, carga de isotermos con temperatura de salida, material por evento y accesos del recinto— en las filas B5, B9, B11, B12, B13, B14, B16, B17, B18, B19; D y E (Responsable y Hora) intactas — ver3 §7",
+    "«Cierre del Negocio»: 4 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre del Negocio»: 4 tareas reescritas del vocabulario de restaurante con sala (pizarra de menú, reservas, música ambiente, cartas/menús, terraza) al oficio del catering —órdenes de servicio, hoja de ruta de vehículos, carga de isotermos con temperatura de salida, material por evento y accesos del recinto— en las filas B5, B6, B7, B12; D y E (Responsable y Hora) intactas — ver3 §7",
+    "Instrucciones reescritas (22 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "2 hojas protegidas sin contraseña (de 2 con print_area y A4)",
+    "metadata title → Apertura y Cierre del Negocio — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos"
+   ],
+   "formulas_nuevas": 4
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "guardado": true,
+   "en_alcance": true,
+   "hojas_tocadas": [
+    "Apertura de Caja",
+    "Cierre de Caja",
+    "Registro Mensual"
+   ],
+   "cambios": [
+    "«Apertura de Caja»: B9 «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» (T-02: el hito de encender el TPV es del fichero de negocio; aquí se comprueba)",
+    "«Apertura de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Cierre de Caja»: columna «Firma» y orden de cabeceras del molde ▸ (Hora Límite · ✓ Completada · Firma · Notas)",
+    "«Registro Mensual»: columna «Z del TPV» antes de «Descuadre» (DOM-04/TEC-04/COM-14)",
+    "«Registro Mensual»: la columna del efectivo pasa a «Efectivo Contado» (el recuento del cajón; el fondo lo descuenta la fórmula) — DOM-R2-01",
+    "«Registro Mensual»: nota al pie con las tres cifras que NO son una suma (TEC-05/DOM-R2-01/26)",
+    "«Registro Mensual»: descuadre = IFERROR(Total − Z, 0) en 31 días con aviso ámbar",
+    "«Apertura de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Apertura de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Cierre de Caja»: +6 filas libres dentro del rango contado (total 5)",
+    "«Cierre de Caja»: contador agrupado (etiqueta A:B, «x de y» bajo «✓ Completada»)",
+    "«Apertura de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: Responsable y hora precargados",
+    "«Cierre de Caja»: 1 textos con objetivo de temperatura o referencia honesta al Pack APPCC",
+    "«Cierre de Caja»: cabecera «Hora Límite» → «Cuándo» (la columna no lleva horas)",
+    "«Apertura de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: 2 filas sin altura fija (el texto no cabía y se imprimía recortado)",
+    "«Cierre de Caja»: añadida la denominación de 0,02 €",
+    "«Cierre de Caja»: recuento con validación entera ≥ 0 en 15 denominaciones y TOTAL EFECTIVO al día",
+    "«Apertura de Caja»: celda editable del fondo de caja (C23)",
+    "«Apertura de Caja»: la tarea del fondo apunta a la celda verde sin hardcodear la coordenada",
+    "«Cierre de Caja»: fila «Fondo de caja inicial (−)» en el Resumen de Cierre",
+    "«Cierre de Caja»: fila «Ventas en efectivo (contado − fondo)» en el Resumen de Cierre",
+    "«Cierre de Caja»: TOTAL FACTURADO = (efectivo − fondo) + tarjetas + otros y DESCUADRE con aviso ámbar (C54)",
+    "Instrucciones reescritas (29 bloques) con «Se conecta con», bio anclada y versión 2.0",
+    "3 hojas protegidas sin contraseña (de 3 con print_area y A4)",
+    "metadata title → Apertura y Cierre de Caja — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos"
+   ],
+   "formulas_nuevas": 81
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "«Briefing»: desplegable \"✓,—,N/A\" (venía con la lista vieja «✓,✗,—», que no tiene N/A y deja el producto con dos reglas de conteo)",
+    "«Briefing»: contador honesto — el denominador ya no cuenta las cabeceras repetidas de cada sección y el numerador exige texto en «Tarea»",
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0"
+   ],
+   "formulas_nuevas": 2
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "guardado": true,
+   "en_alcance": false,
+   "hojas_tocadas": [],
+   "cambios": [
+    "Instrucciones: línea de autoría anclada encima de la versión (§2.6)",
+    "Instrucciones: versión 2.0",
+    "«Calendario»: 2 fechas que faltaban (Día del Padre y puente de diciembre; las otras tres del representante ya estaban cubiertas con vocabulario de catering) — DOM-20 (equivalente)",
+    "«Calendario»: el subtítulo dice 22 fechas, que son las que hay",
+    "Instrucciones: el recuento de fechas pasa a 22"
+   ],
+   "formulas_nuevas": 0
+  }
+ ],
+ "fuera_de_alcance": [
+  "01-apertura-cierre.xlsx",
+  "02-partidas-cocina.xlsx",
+  "03-tareas-manager.xlsx",
+  "04-tareas-perfiles.xlsx",
+  "05-tareas-semanales-mensuales.xlsx",
+  "06-eventos-festivos.xlsx",
+  "07-plantilla-personalizable.xlsx",
+  "BONUS-01-briefing-servicio.xlsx",
+  "BONUS-02-calendario-anual-tareas.xlsx"
+ ],
+ "inventario": [
+  {
+   "fichero": "01-apertura-cierre.xlsx",
+   "title": "01 · Preparación y Producción Off-Site · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B20",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Producción",
+     "dim": "A1:G67",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "02-partidas-cocina.xlsx",
+   "title": "02 · Transporte y Logística · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Transporte",
+     "dim": "A1:G41",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "03-tareas-manager.xlsx",
+   "title": "03 · Tareas del Director / Event Manager · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B19",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Event Manager",
+     "dim": "A1:G50",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Trimestral y Anual",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "04-tareas-perfiles.xlsx",
+   "title": "04 · Tareas por Perfil / Rol · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Chef de Evento",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Maître - Jefe Sala",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Camarero",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Barman",
+     "dim": "A1:G30",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "05-tareas-semanales-mensuales.xlsx",
+   "title": "05 · Montaje y Desmontaje del Venue · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Montaje",
+     "dim": "A1:G44",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Desmontaje",
+     "dim": "A1:G31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "06-eventos-festivos.xlsx",
+   "title": "06 · Tipos de Evento — Checklists Específicos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Bodas",
+     "dim": "A1:G24",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Corporativo",
+     "dim": "A1:G21",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cocktail Standing",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    },
+    {
+     "hoja": "Outdoor - Exterior",
+     "dim": "A1:G23",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "07-plantilla-personalizable.xlsx",
+   "title": "07 · Plantilla Personalizable — Catering · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Fase",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Zona",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Por Perfil",
+     "dim": "A1:G54",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  },
+  {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "title": "Apertura y Cierre del Negocio — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B45",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$45",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura del Negocio",
+     "dim": "A1:H31",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura del Negocio'!$A$1:$H$31",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre del Negocio",
+     "dim": "A1:H28",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Cierre del Negocio'!$A$1:$H$28",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "09-apertura-cierre-caja.xlsx",
+   "title": "Apertura y Cierre de Caja — Catering / Eventos · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v2.0",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "A1:B56",
+     "dv": [],
+     "cf": 0,
+     "print_area": "'Instrucciones'!$A$1:$B$56",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Apertura de Caja",
+     "dim": "A1:G26",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "'Apertura de Caja'!$A$1:$G$26",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 2
+    },
+    {
+     "hoja": "Cierre de Caja",
+     "dim": "A1:G57",
+     "dv": [
+      "list:\"✓,—,N/A\"",
+      "whole:0"
+     ],
+     "cf": 2,
+     "print_area": "'Cierre de Caja'!$A$1:$G$57",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 23
+    },
+    {
+     "hoja": "Registro Mensual",
+     "dim": "A1:J38",
+     "dv": [],
+     "cf": 1,
+     "print_area": "'Registro Mensual'!$A$1:$J$38",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": true,
+     "formulas": 70
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-01-briefing-servicio.xlsx",
+   "title": "BONUS 01 · Briefing Pre-Evento · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Briefing",
+     "dim": "A1:G37",
+     "dv": [
+      "list:\"✓,—,N/A\""
+     ],
+     "cf": 1,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 2
+    }
+   ]
+  },
+  {
+   "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+   "title": "BONUS 02 · Calendario Anual de Temporada Alta · Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos",
+   "subject": "Kit de Tareas Recurrentes — Checklists Operativos para Catering / Eventos · v1.1",
+   "hojas": [
+    {
+     "hoja": "Instrucciones",
+     "dim": "B2:B14",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "portrait",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    },
+    {
+     "hoja": "Calendario",
+     "dim": "A1:F26",
+     "dv": [],
+     "cf": 0,
+     "print_area": "",
+     "orient": "landscape",
+     "a4": true,
+     "protegida": false,
+     "formulas": 0
+    }
+   ]
+  }
+ ],
+ "gates": {
+  "idempotencia": {
+   "ejecutada": true,
+   "diferencias": 0,
+   "detalle": []
+  },
+  "inject_cache": [
+   {
+    "fichero": "01-apertura-cierre.xlsx",
+    "salida": "01-apertura-cierre.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "02-partidas-cocina.xlsx",
+    "salida": "02-partidas-cocina.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "03-tareas-manager.xlsx",
+    "salida": "03-tareas-manager.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "04-tareas-perfiles.xlsx",
+    "salida": "04-tareas-perfiles.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "05-tareas-semanales-mensuales.xlsx",
+    "salida": "05-tareas-semanales-mensuales.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "06-eventos-festivos.xlsx",
+    "salida": "06-eventos-festivos.xlsx: formulas=8 cache_inyectado=8 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "07-plantilla-personalizable.xlsx",
+    "salida": "07-plantilla-personalizable.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "08-apertura-cierre-negocio.xlsx",
+    "salida": "08-apertura-cierre-negocio.xlsx: formulas=4 cache_inyectado=4 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "09-apertura-cierre-caja.xlsx",
+    "salida": "09-apertura-cierre-caja.xlsx: formulas=95 cache_inyectado=95 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-01-briefing-servicio.xlsx",
+    "salida": "BONUS-01-briefing-servicio.xlsx: formulas=2 cache_inyectado=2 fallos_pycel=0",
+    "exit": 0
+   },
+   {
+    "fichero": "BONUS-02-calendario-anual-tareas.xlsx",
+    "salida": "BONUS-02-calendario-anual-tareas.xlsx: formulas=0 cache_inyectado=0 fallos_pycel=0",
+    "exit": 0
+   }
+  ],
+  "data_only_formulas_nuevas": {
+   "con_valor": 115,
+   "vacias_por_diseno": 0,
+   "fallos": []
+  },
+  "dv_y_bio": {
+   "hojas_checklist": 4,
+   "hojas_p4": 15,
+   "dv_incorrectas": [],
+   "instrucciones_con_bio": 11,
+   "sin_bio": [],
+   "sin_hoja_instrucciones": [],
+   "version_desfasada": [],
+   "listas_dv_del_producto": [
+    "\"✓,—,N/A\""
+   ],
+   "aviso_dv_mezcladas": []
+  },
+  "negocio_precargado": {
+   "fichero": "08-apertura-cierre-negocio.xlsx",
+   "tareas": 33,
+   "huecos": [],
+   "firma_ok": true,
+   "huecos_firma": [],
+   "checklists_con_notas": [
+    "Apertura del Negocio",
+    "Cierre del Negocio"
+   ]
+  },
+  "recuento_tareas": {
+   "total": 346,
+   "por_fichero": {
+    "01-apertura-cierre.xlsx": 38,
+    "02-partidas-cocina.xlsx": 24,
+    "03-tareas-manager.xlsx": 53,
+    "04-tareas-perfiles.xlsx": 64,
+    "05-tareas-semanales-mensuales.xlsx": 44,
+    "06-eventos-festivos.xlsx": 47,
+    "07-plantilla-personalizable.xlsx": 0,
+    "08-apertura-cierre-negocio.xlsx": 33,
+    "09-apertura-cierre-caja.xlsx": 23,
+    "BONUS-01-briefing-servicio.xlsx": 20,
+    "BONUS-02-calendario-anual-tareas.xlsx": 0
+   },
+   "recuento_por_molde": {
+    "checklist_▸": 56,
+    "p4": 290
+   },
+   "por_hoja": [
+    {
+     "fichero": "01-apertura-cierre.xlsx",
+     "hoja": "Producción",
+     "molde": "p4",
+     "celda": "E52",
+     "tareas": 38
+    },
+    {
+     "fichero": "02-partidas-cocina.xlsx",
+     "hoja": "Transporte",
+     "molde": "p4",
+     "celda": "E39",
+     "tareas": 24
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Event Manager",
+     "molde": "p4",
+     "celda": "E48",
+     "tareas": 33
+    },
+    {
+     "fichero": "03-tareas-manager.xlsx",
+     "hoja": "Trimestral y Anual",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Chef de Evento",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Maître - Jefe Sala",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Camarero",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "04-tareas-perfiles.xlsx",
+     "hoja": "Barman",
+     "molde": "p4",
+     "celda": "E28",
+     "tareas": 16
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Montaje",
+     "molde": "p4",
+     "celda": "E42",
+     "tareas": 27
+    },
+    {
+     "fichero": "05-tareas-semanales-mensuales.xlsx",
+     "hoja": "Desmontaje",
+     "molde": "p4",
+     "celda": "E29",
+     "tareas": 17
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Bodas",
+     "molde": "p4",
+     "celda": "E22",
+     "tareas": 13
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Corporativo",
+     "molde": "p4",
+     "celda": "E19",
+     "tareas": 10
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Cocktail Standing",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "06-eventos-festivos.xlsx",
+     "hoja": "Outdoor - Exterior",
+     "molde": "p4",
+     "celda": "E21",
+     "tareas": 12
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Apertura del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F29",
+     "tareas": 18
+    },
+    {
+     "fichero": "08-apertura-cierre-negocio.xlsx",
+     "hoja": "Cierre del Negocio",
+     "molde": "checklist_▸",
+     "celda": "F26",
+     "tareas": 15
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Apertura de Caja",
+     "molde": "checklist_▸",
+     "celda": "E22",
+     "tareas": 11
+    },
+    {
+     "fichero": "09-apertura-cierre-caja.xlsx",
+     "hoja": "Cierre de Caja",
+     "molde": "checklist_▸",
+     "celda": "E23",
+     "tareas": 12
+    },
+    {
+     "fichero": "BONUS-01-briefing-servicio.xlsx",
+     "hoja": "Briefing",
+     "molde": "p4",
+     "celda": "E35",
+     "tareas": 20
+    }
+   ]
+  },
+  "tpv_duplicado": {
+   "tareas_encender_tpv": [
+    {
+     "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio!B10",
+     "papel": "negocio (hito legítimo)",
+     "texto": "Encender TPV / POS / datáfono"
+    }
+   ],
+   "fuera_del_fichero_de_negocio": []
+  },
+  "bandas_solapadas": [],
+  "censo_entregables": {
+   "exit": 0,
+   "salida": [
+    "11 ficheros censados (11 xlsx, 0 docx, 0 pdf) en 1 productos (only=/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-tareas-catering)",
+    "",
+    "OK: 0 defectos (--fail)"
+   ]
+  }
+ },
+ "demostraciones_spec_6": [
+  {
+   "caso": "arqueo-cuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1800
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 0,
+   "obtenido": 0,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/arqueo-cuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "arqueo-descuadra",
+   "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54",
+   "entradas": {
+    "Apertura de Caja!C23": 150,
+    "Cierre de Caja!B(500/100/50 €)": "2/1/1 = 1.150 €",
+    "Cierre de Caja!C50": 800,
+    "Cierre de Caja!C53": 1790
+   },
+   "efectivo_contado": 1150.0,
+   "total_facturado": 1800,
+   "esperado": 10,
+   "obtenido": 10,
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/arqueo-descuadra-09-apertura-cierre-caja.xlsx"
+  },
+  {
+   "caso": "contador-honesto",
+   "ref": "08-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29",
+   "entradas": "18 tareas · 3 N/A · 15 ✓",
+   "esperado": "15 de 15",
+   "obtenido": "15 de 15",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/contador-08-apertura-cierre-negocio.xlsx"
+  },
+  {
+   "caso": "contador-p4-sin-rotulos",
+   "ref": "01-apertura-cierre.xlsx:Producción:C52/E52",
+   "entradas": "hoja tal y como se entrega · 38 tareas reales, 3 filas de rótulo repetido, 0 marcadas ✓",
+   "formula_vieja_habria_dicho": "3 de 41",
+   "esperado": "0 de 38",
+   "obtenido": "0.0 de 38.0",
+   "ok": true,
+   "copia": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/dryrun-kt/_demos/kit-tareas-catering/p4-recien-impresa-01-apertura-cierre.xlsx"
+  }
+ ],
+ "fallos": [],
+ "exit": 0,
+ "respaldo": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kit-tareas-catering.bak-20260823-175113"
+}
