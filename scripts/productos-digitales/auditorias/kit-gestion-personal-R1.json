@@ -1,0 +1,1006 @@
+{
+ "productId": "kit-gestion-personal",
+ "familia": "kit-excel",
+ "inventario": {
+  "productId": "kit-gestion-personal",
+  "ficheros": [
+   {
+    "nombre": "01-cuadrante-turnos-semanal.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12143,
+    "hojas": [
+     "Instrucciones",
+     "Cuadrante Semanal",
+     "Cuadrante Mensual"
+    ],
+    "formulas": 31,
+    "resumen": "Cuadrante M/T/N/P/L semanal y mensual; Total Horas por empleado y alerta solo si >40h/semana. NO hay fórmula que detecte descanso <11h entre turnos ni rotación/libranzas, pese a que la Instrucciones lo menciona como recordatorio de ley (no automatizado)."
+   },
+   {
+    "nombre": "02-control-horas-extras.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11769,
+    "hojas": [
+     "Instrucciones",
+     "Registro Horas",
+     "Resumen Mensual"
+    ],
+    "formulas": 100,
+    "resumen": "Calcula horas trabajadas y extra por día; Resumen Mensual aplica recargo FIJO ×1.75 (hasta 80h/año) y ×2.0 (por encima), con tarifa base editable en B3 pero el multiplicador no es configurable por convenio."
+   },
+   {
+    "nombre": "03-coste-laboral-mensual.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10570,
+    "hojas": [
+     "Instrucciones",
+     "Nóminas",
+     "Ratio Coste Laboral",
+     "Previsión por Servicio"
+    ],
+    "formulas": 51,
+    "resumen": "SS empresa fija al 30% (disclosed en Instrucciones), ratio coste/ventas con semáforo, y previsión de personal por servicio con ratios covers/puesto."
+   },
+   {
+    "nombre": "04-onboarding-nuevo-empleado.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10689,
+    "hojas": [
+     "Instrucciones",
+     "Checklist Onboarding"
+    ],
+    "formulas": 3,
+    "resumen": "Checklist de 47 tareas numeradas (documentación, formación, equipamiento) — la landing dice '40+ tareas', cifra correcta y conservadora."
+   },
+   {
+    "nombre": "05-planificacion-vacaciones.xlsx",
+    "tipo": "xlsx",
+    "bytes": 12891,
+    "hojas": [
+     "Instrucciones",
+     "Calendario Anual",
+     "Solicitudes",
+     "Cobertura"
+    ],
+    "formulas": 75,
+    "resumen": "Calendario Anual cuenta días 'V' por empleado (columna N); Solicitudes calcula Días Solicit. y Días Restantes=30-Días Usados YTD (este último es un campo de ENTRADA MANUAL en E, no está enlazado a la columna N del Calendario Anual — dos fuentes de 'días usados' que pueden desincronizarse)."
+   },
+   {
+    "nombre": "06-evaluacion-desempeno.xlsx",
+    "tipo": "xlsx",
+    "bytes": 10316,
+    "hojas": [
+     "Instrucciones",
+     "Ficha Evaluación",
+     "Histórico"
+    ],
+    "formulas": 32,
+    "resumen": "Ficha con 10 competencias puntuables 1-5 (coincide con la cifra de landing), media y nivel automáticos; Histórico calcula media anual y tendencia trimestral."
+   },
+   {
+    "nombre": "07-directorio-plantilla.xlsx",
+    "tipo": "xlsx",
+    "bytes": 11593,
+    "hojas": [
+     "Instrucciones",
+     "Plantilla",
+     "Vencimientos"
+    ],
+    "formulas": 96,
+    "resumen": "Plantilla admite hasta ~31 empleados (dims A1:O36) pero la sección 'Contratos a Expirar' de Vencimientos solo tira de las primeras 15 filas de Plantilla (A5:A19) — empleados en las filas 20+ no generan alerta de vencimiento de contrato. Sección separada 'Carnets y Certificados' (filas 26-35) es de entrada manual, correcta."
+   },
+   {
+    "nombre": "BONUS-01-briefing-cambio-turno.xlsx",
+    "tipo": "xlsx",
+    "bytes": 7886,
+    "hojas": [
+     "Instrucciones",
+     "Briefing"
+    ],
+    "formulas": 0,
+    "resumen": "Plantilla de traspaso de turno, campos de texto libre (reservas VIP, incidencias, stock, mantenimiento) — sin fórmulas, coherente con su función."
+   },
+   {
+    "nombre": "BONUS-02-calculadora-plantilla-optima.xlsx",
+    "tipo": "xlsx",
+    "bytes": 9688,
+    "hojas": [
+     "Instrucciones",
+     "Calculadora",
+     "Ratios por Tipo"
+    ],
+    "formulas": 16,
+    "resumen": "Calcula plantilla óptima (cocineros/camareros/barmen) según covers y tipo de negocio; los ratios hardcodeados en las fórmulas SÍ coinciden con los rangos de la hoja de referencia 'Ratios por Tipo' (verificado casual/fine/fast) — consistencia correcta."
+   }
+  ],
+  "dashboard": [
+   {
+    "key": "cuadrante",
+    "title": "Cuadrante de Turnos",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "horas-extra",
+    "title": "Control de Horas Extra",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "coste-laboral",
+    "title": "Coste Laboral Mensual",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "onboarding",
+    "title": "Onboarding Nuevo Empleado",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "vacaciones",
+    "title": "Planificacion Vacaciones",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "evaluacion",
+    "title": "Evaluacion de Desempeno",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "directorio",
+    "title": "Directorio de Plantilla",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "bonus-briefing",
+    "title": "BONUS: Briefing Cambio de Turno",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   },
+   {
+    "key": "bonus-calculadora",
+    "title": "BONUS: Calculadora Plantilla Optima",
+    "ruta": "src/pages/KitGestionPersonalDashboard.tsx"
+   }
+  ],
+  "landing": {
+   "productName": "Kit Gestion de Personal y Turnos — Plantillas Excel para Hosteleria",
+   "cifras_prometidas": [
+    "9 plantillas Excel (correcto, coincide con ficheros y PRODUCT_FILES)",
+    "40+ tareas de onboarding (real: 47 tareas numeradas — cumple con margen)",
+    "10 competencias de evaluación (real: exactamente 10 — cumple)",
+    "Ratio coste laboral con semáforo verde<30% / amarillo 30-35% / rojo>35% (coincide con las fórmulas de 03-coste-laboral)",
+    "14 EUR pago único vs 30-60 EUR/mes software RRHH"
+   ],
+   "entregables_prometidos": [
+    "Cuadrante de Turnos",
+    "Control de Horas Extra",
+    "Coste Laboral Mensual",
+    "Onboarding Nuevo Empleado",
+    "Planificacion Vacaciones",
+    "Evaluacion de Desempeno",
+    "Directorio de Plantilla",
+    "BONUS Briefing Cambio de Turno",
+    "BONUS Calculadora Plantilla Optima"
+   ],
+   "bonus": [
+    "Briefing Cambio de Turno (valorado 9 EUR)",
+    "Calculadora Plantilla Optima (valorado 9 EUR)"
+   ],
+   "faqs": [
+    "¿Incluye registro horario digital?",
+    "¿Las formulas calculan horas extra automaticamente?",
+    "¿Sirve para cualquier tipo de restaurante?",
+    "¿En que se diferencia del software de RRHH?",
+    "¿Puedo usarlo en varios restaurantes?",
+    "¿Hay garantia de devolucion?"
+   ]
+  },
+  "gate": "gate-flujo-postpago.py --offline --only kit-gestion-personal: files=9 cards=9 issues=0; único aviso es el esperado en --offline (sección D: drift del mapa vs Netlify/webhook sin verificar, no aplica a este producto en concreto). censo-entregables.py --only kit-gestion-personal --fail --quiet: 9 ficheros censados (9 xlsx), OK: 0 defectos. Ambos gates deterministas en VERDE — no hay hallazgos de Fase A pendientes en este producto.",
+  "notas": [
+   "Los gates deterministas (censo + gate-flujo-postpago) están en VERDE: no hay nada de Fase A que se le haya escapado a este producto.",
+   "Los hallazgos abajo son de LÓGICA DE NEGOCIO / CONTENIDO, invisibles a un script, encontrados leyendo fórmulas + Instrucciones + landing en paralelo."
+  ],
+  "changelog": "productos-changelog.ts línea 247-264, kit-gestion-personal v1.1 (2026-08-22): 'Checklist de onboarding: el porcentaje de progreso ahora se calcula de verdad', 'Resaltado en verde al marcar', 'Impresión A4 en todas las hojas', 'Metadatos/instrucciones/autoría actualizados en los 9 ficheros'. Estas son las mejoras de Fase A ya aplicadas y confirmadas en el fichero (04-onboarding tiene 3 fórmulas reales de progreso, A4 configurado en todas las hojas revisadas) — no se reporta de nuevo.",
+  "emails": {
+   "verify": "netlify/functions/verify-purchase.ts:126-132 — accessPath '/kit-gestion-personal-access', asunto 'Tu acceso al Kit de Gestión de Personal y Turnos', body 'Tu acceso al Kit de Gestión de Personal y Turnos está listo... descargar las 9 plantillas de gestión de personal' — coincide con las 9 plantillas reales.",
+   "resend": "netlify/functions/resend-access.ts:126-132 — mismo accessPath y misma cifra de '9 plantillas', consistente con verify-purchase.ts. Sin discrepancias entre ambos emails ni con el fichero real."
+  }
+ },
+ "rondas": {
+  "R1": {
+   "coherencia": {
+    "lente": "COHERENCIA COMERCIAL + CLIENTE ESCÉPTICO — cruce de landing (`astro-site/src/data/productos/kits/kit-gestion-personal.ts`), dashboard (`src/pages/KitGestionPersonalDashboard.tsx`), hub (`src/pages/ProductosDigitales.tsx`), email (`netlify/functions/verify-purchase.ts`), catálogo (`src/data/products-catalog.ts`) y changelog (`src/data/productos-changelog.ts`) contra el contenido REAL de los 9 .xlsx (fórmulas, valores cacheados, validaciones y formato condicional leídos con openpyxl).",
+    "hallazgos": [
+     {
+      "id": "COM-01",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts + 01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "kit-gestion-personal.ts:grid.templates[0] / schema.reviews[0] / hero.checkItems[0] / cta.items[0]; xlsx: hoja 'Cuadrante Semanal' J6:J20",
+      "hallazgo": "La landing, el JSON-LD y el dashboard venden «alertas automáticas: descanso mínimo 11h entre turnos, libranzas y rotación de turnos». En el fichero NO existe ninguna fórmula de descanso entre turnos, ni de libranzas, ni de rotación. La única alerta es el exceso de 40h semanales.",
+      "evidencia": "kit-gestion-personal.ts, grid.templates[0].desc: 'Planificacion semanal y mensual con alertas automaticas: descanso minimo 11h entre turnos, maximo 40h/semana, libranzas y rotacion de turnos.' — y schema.reviews[0] (David Ruiz, rating 5, structured data indexable): 'Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente.' El fichero sólo contiene J6='=IF(I6>40,\"⚠ EXCESO\",IF(I6>0,\"OK\",\"\"))' repetido en J6:J20; la propia hoja 'Instrucciones' B12 lo degrada a recordatorio manual: '▸ Recuerda: mínimo 11h de descanso entre turnos (Estatuto Trabajadores Art. 34).' Cero fórmulas que comparen turno del día N con el del día N+1.",
+      "fix": "O se implementa la alerta (columna que compare la hora de fin del turno del día anterior con la de inicio del siguiente usando la tabla de horarios M/T/N/P de Instrucciones B16:B20, marcando N→M como incumplimiento), o se retira la promesa de los 5 sitios: grid.templates[0].desc, hero.checkItems[0], cta.items[0], schema.reviews[0].body y testimonials.items[0].text, además de la tarjeta 'cuadrante' del dashboard ('alertas de cumplimiento legal')."
+     },
+     {
+      "id": "COM-02",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts + 02-control-horas-extras.xlsx",
+      "ubicacion": "kit-gestion-personal.ts:schema.faqs[1] y faqs[1]; xlsx: hoja 'Resumen Mensual' E6:F20",
+      "hallazgo": "La FAQ (on-page y en el FAQPage schema) promete que el coste de la hora extra se calcula «según el porcentaje de TU convenio colectivo». El multiplicador está HARDCODEADO a ×1.75 y ×2.0 dentro de 30 fórmulas; lo único editable es la tarifa base B3.",
+      "evidencia": "faqs[1].a: 'La plantilla de control de horas extra calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo. Solo introduces las horas trabajadas y el sistema hace el resto.' Realidad: E6='=IF(B6=\"\",\"\",MIN(B6,MAX(0,80-(C6-B6)))*$B$3*1.75)' y F6='=IF(B6=\"\",\"\",MAX(0,B6-MIN(B6,MAX(0,80-(C6-B6))))*$B$3*2)', idénticas en las filas 6→20. No hay celda de entrada para el recargo; para aplicar su convenio el cliente tiene que editar 30 fórmulas a mano.",
+      "fix": "Añadir dos celdas de parámetro en 'Resumen Mensual' (p. ej. B1='Recargo primeras 80h' =1,75 y C1='Recargo >80h' =2,0, con relleno de entrada) y sustituir los literales por $B$1/$C$1 en E6:F20. Es un cambio de 30 celdas y elimina literalmente la frase de la FAQ como motivo de reembolso."
+     },
+     {
+      "id": "COM-03",
+      "severidad": "alta",
+      "fichero": "04-onboarding-nuevo-empleado.xlsx + src/data/productos-changelog.ts",
+      "ubicacion": "xlsx: hoja 'Checklist Onboarding' C68, E68, C69, C70; changelog: 'kit-gestion-personal' v1.1, primer bullet",
+      "hallazgo": "El changelog v1.1 —visible en el dashboard— anuncia «el porcentaje de progreso ahora se calcula de verdad» y «contador de tareas completadas». El fichero entregado abre mostrando «4 de 51» completadas y 8,51 % de progreso con el checklist COMPLETAMENTE EN BLANCO, y además se contradice a sí mismo: dice 51 arriba y 47 dos filas más abajo.",
+      "evidencia": "C68='=COUNTIF(F7:F65,\"✓\")' con valor cacheado 4,0 — cuenta los cuatro encabezados de columna que literalmente contienen '✓' (F19, F30, F42, F57), no tareas marcadas. E68='=COUNTIF(B7:B65,\"?*\")' con valor cacheado 51,0 — suma las 47 tareas más los 4 encabezados 'Tarea' (B19, B30, B42, B57). C69=47 (entero literal) y C70='=IF(C69>0,C68/C69*100,0)' cacheado en 8,51063829787234. El cliente lee: 'Total tareas completadas: 4 de 51' / 'Total tareas: 47' / 'Progreso: 8,5 %'.",
+      "fix": "C68 → '=COUNTIF(F7:F16,\"✓\")+COUNTIF(F20:F27,\"✓\")+COUNTIF(F31:F39,\"✓\")+COUNTIF(F43:F54,\"✓\")+COUNTIF(F58:F65,\"✓\")' (o quitar el '✓' de los cuatro encabezados y dejarlos como 'Hecho'). E68 → sustituir por la referencia a C69 o eliminar el 'de 51' para no tener dos denominadores. Reconstruir la caché de valores tras el arreglo."
+     },
+     {
+      "id": "COM-04",
+      "severidad": "alta",
+      "fichero": "06-evaluacion-desempeno.xlsx",
+      "ubicacion": "hoja 'Ficha Evaluación' C22 y C23",
+      "hallazgo": "La plantilla estrella de evaluación se entrega con dos errores #DIV/0! cacheados en las dos celdas de resultado. El cliente que abre el fichero ve «PUNTUACIÓN MEDIA: #DIV/0!» y «NIVEL: #DIV/0!» antes de escribir nada. Es el único fichero del kit que no envuelve el cálculo en un IF de guarda.",
+      "evidencia": "C22='=AVERAGE(C12:C21)' sobre C12:C21 vacías; valor cacheado leído con data_only=True: '#DIV/0!'. C23='=IF(C22>=4.5,\"⭐ EXCELENTE\",...)' propaga el error; valor cacheado: '#DIV/0!'. Contraste: el resto del kit sí protege (02!E5 usa IF(AND(C5<>\"\",D5<>\"\"),...), 06!F5 usa IF(COUNT(B5:E5)>0,...)).",
+      "fix": "C22 → '=IF(COUNT(C12:C21)>0,AVERAGE(C12:C21),\"\")' y C23 → añadir '=IF(C22=\"\",\"\",IF(C22>=4.5,...))'. Regenerar la caché para que el fichero descargado no muestre el error."
+     },
+     {
+      "id": "COM-05",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "hero.badge; why.reasons[2].desc; faqs[0].a y schema.faqs[0].a",
+      "hallazgo": "Todo el gancho legal del hero es una afirmación normativa que no se sostiene: el registro horario NO es obligatorio «desde 2026» (lo es desde el 12-mayo-2019, RD-ley 8/2019, art. 34.9 ET) y la sanción de la LISOS por infracción grave en registro de jornada no es «por empleado». Vender por miedo con una base legal falsa, con una «consultora laboral» entre los testimonios, es el peor sitio donde equivocarse.",
+      "evidencia": "hero.badge: 'Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado'. why.reasons[2].desc: 'El control horario digital es obligatorio en Espana desde 2026.' faqs[0].a: 'El registro/fichaje horario digital requiere un software homologado (obligatoria en Espana desde 2026).' El registro horario obligatorio data de 2019; el registro *digital/telemático* venía del anteproyecto de reducción de jornada, que no llegó a estar en vigor. El importe de 10.000 EUR es el techo del grado máximo de la infracción grave, no un importe multiplicado por trabajador.",
+      "fix": "Antes de seguir vendiendo con este badge, verificar documentalmente el estado normativo a fecha de hoy (BOE) y reescribir a algo defendible: 'Registro de jornada obligatorio en España desde 2019 — sanciones de hasta 10.000 EUR por infracción'. Corregir los tres sitios (hero.badge, why.reasons[2].desc, faqs[0].a + schema.faqs[0].a). Si no se puede documentar la obligación digital de 2026, retirar la palabra 'digital' y el año."
+     },
+     {
+      "id": "COM-06",
+      "severidad": "alta",
+      "fichero": "05-planificacion-vacaciones.xlsx",
+      "ubicacion": "hoja 'Calendario Anual' B5:M5 (cabeceras de mes) y N6:N20",
+      "hallazgo": "El «Calendario de Vacaciones anual» tiene UNA celda por MES, no por día, y la columna «Días Usados» cuenta cuántos MESES están marcados con 'V' (máximo posible: 12). Un empleado que se coge sus 30 días en agosto figura con 1 día usado y 29 restantes. La cifra que el kit presenta como su cálculo automático estrella es numéricamente falsa.",
+      "evidencia": "Cabeceras B5:M5 = 'Ene','Feb',...,'Dic' (12 columnas, una por mes) y N5='Días Usados'. N6='=IF(B6=\"V\",1,0)+IF(C6=\"V\",1,0)+...+IF(M6=\"V\",1,0)' — suma de indicadores mensuales. La hoja 'Instrucciones' B5 dice '▸ En el Calendario Anual, marca con código de color los DÍAS de cada empleado' y B8 '▸ Los días usados y restantes se calculan automáticamente (de 30 días legales)'. Con una sola celda por mes es imposible marcar días.",
+      "fix": "Rehacer el Calendario Anual como rejilla de 12 filas (meses) × 31 columnas (días) por empleado, o al menos como bloque mensual con 31 columnas, y que N sea '=COUNTIF(rango,\"V\")'. Alternativa mínima si no se quiere rehacer: renombrar N5 a 'Meses con vacaciones' y enlazar 'Solicitudes'!E a la suma real de días de las solicitudes aprobadas (SUMIF por empleado sobre D con G=\"Aprobado\"), que hoy es entrada manual desconectada."
+     },
+     {
+      "id": "COM-07",
+      "severidad": "alta",
+      "fichero": "02-control-horas-extras.xlsx",
+      "ubicacion": "hoja 'Registro Horas' E5:E54 y G5:G54",
+      "hallazgo": "El registro de horas devuelve horas NEGATIVAS en cualquier turno que cruce la medianoche — precisamente el turno N (23:00-7:00) que el propio kit define en 01. Un cocinero de turno de noche figura con -16,00 horas trabajadas y 0 horas extra. Con el turno partido pasa lo contrario: no cabe en un solo par entrada/salida.",
+      "evidencia": "E5='=IF(AND(C5<>\"\",D5<>\"\"),(D5-C5)*24,\"\")'. Con C5=23:00 y D5=7:00 → (0,2917-0,9583)*24 = -16,00. G5='=IF(E5<>\"\",MAX(0,E5-F5),\"\")' devuelve 0, así que la hora extra nocturna nunca se paga. El turno de noche está definido en 01-cuadrante-turnos-semanal.xlsx, hoja 'Instrucciones' B18: '▸ N = Noche (23:00-7:00) → 8h', y el partido en B19: '▸ P = Partido (10:00-15:00 + 19:00-23:00) → 9h'. Además C5/D5 tienen number_format 'General', no formato de hora.",
+      "fix": "E5 → '=IF(AND(C5<>\"\",D5<>\"\"),MOD(D5-C5,1)*24,\"\")' (MOD resuelve el cruce de medianoche). Aplicar formato hh:mm a C5:D54. Para el partido, añadir dos columnas más (Entrada 2 / Salida 2) o una columna 'Descanso (h)' que se reste, y documentarlo en Instrucciones B16."
+     },
+     {
+      "id": "COM-08",
+      "severidad": "alta",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "testimonials.items[3], [4], [7], [2] y schema.aggregateRating",
+      "hallazgo": "Cuatro de los ocho testimonios describen funcionalidades concretas que ningún fichero del kit tiene, y el JSON-LD publica un aggregateRating 4,9 con 8 reseñas sin que exista sistema alguno de recogida de reseñas. No es puffing genérico: son afirmaciones verificables y falsas sobre el producto.",
+      "evidencia": "testimonials.items[3] (Lucía Navarro): 'me avisa cuando un cocinero esta cerca del limite legal. Nos hemos ahorrado 3 sanciones' — la única alerta es 02!D6='=IF(C6=\"\",\"\",IF(C6<=80,\"✓ OK\",\"⚠ EXCEDE\"))', que avisa DESPUÉS de superar las 80h, nunca «cerca». items[4] (Alberto Méndez): 'La planificacion de vacaciones con cobertura minima por puesto' — la hoja 'Cobertura' de 05 tiene sólo encabezados (A5:E5 y A11:E11) y CERO fórmulas y CERO validaciones. items[7] (Enrique Vidal): 'necesitabamos 2 personas mas en servicio de viernes y sabado' — BONUS-02 no tiene ninguna dimensión de día de la semana. items[2] (Francisco Torres): 'controlo el coste laboral en tiempo real' — 03 es una hoja mensual de entrada manual. schema.aggregateRating: ratingValue '4.9', reviewCount '8'.",
+      "fix": "Reescribir esos cuatro textos ciñéndolos a lo que las plantillas hacen de verdad (el semáforo de coste, el checklist de onboarding, el histórico de evaluación sí existen y funcionan), y decidir con John si se mantiene el aggregateRating sin sistema de reseñas — es la parte con exposición ante Google y ante consumo."
+     },
+     {
+      "id": "COM-09",
+      "severidad": "media",
+      "fichero": "03-coste-laboral-mensual.xlsx vs BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "03: hoja 'Previsión por Servicio' B10:B16 · BONUS-02: hoja 'Calculadora' B17:B28",
+      "hallazgo": "Dos hojas del MISMO kit, con los mismos datos por defecto (80 covers/día, 1.800 € de salario), dan respuestas incompatibles: 15 personas por turno y 35.100 €/mes en una, 8 por turno / 19 totales y 44.460 €/mes en la otra. La de 03 es la equivocada: aplica ratios por servicio a los covers del DÍA completo y no aplica factor de rotación.",
+      "evidencia": "Valores cacheados. 03!'Previsión por Servicio': B4=80 (etiqueta A4='Covers previstos / día'), B10='=CEILING(B4/B5,1)'→4, B11='=CEILING(B4/B6,1)'→7, B12='=CEILING(B4/B7,1)'→4, B13='=B10+B11+B12'→15 bajo el rótulo A9='PERSONAL NECESARIO POR TURNO', B16='=B13*B15*1.30'→35.100,00 €. BONUS-02!'Calculadora' con los mismos 80 covers: B17='=IF(B7=3,CEILING(B5/2,1),B5)'→40, B21→8, B23='=CEILING(B21*B22*1.15,1)'→19, B28→44.460,00 €. Además 03!B16 multiplica el personal de UN turno por el salario mensual, ignorando que un negocio con dos servicios necesita ~2 turnos más rotación.",
+      "fix": "Alinear 03!'Previsión por Servicio' con la lógica de BONUS-02 (dividir por servicios, multiplicar por turnos/día y aplicar el 1,15 de rotación) o eliminar esa hoja de 03 y remitir explícitamente al BONUS-02, que es el cálculo correcto. Tal como está, el cliente obtiene dos cifras y no sabe cuál usar."
+     },
+     {
+      "id": "COM-10",
+      "severidad": "media",
+      "fichero": "01-cuadrante-turnos-semanal.xlsx y 05-planificacion-vacaciones.xlsx",
+      "ubicacion": "01: 'Instrucciones' B8 y B11, hoja 'Cuadrante Semanal' B6:H20 · 05: 'Instrucciones' B6, hoja 'Calendario Anual' B6:M20",
+      "hallazgo": "Ambos ficheros anuncian código de colores automático por tipo de turno / tipo de ausencia, y uno de ellos promete además marcado en ROJO de los excesos. Ninguno de los dos tiene una sola regla de formato condicional: el color hay que ponerlo a mano celda a celda. Sólo 04 tiene formato condicional en todo el kit (1 regla).",
+      "evidencia": "01!'Instrucciones' B8: '▸ Código de colores: amarillo=mañana, azul=tarde, morado=noche, naranja=partido, verde=libre.' y B11: '▸ La columna Alertas marca en ROJO si un empleado supera 40h semanales.' Barrido de reglas CF en los 9 ficheros: 01→0, 02→0, 03→0, 04→1 ('A7:G65', expression, ['$F7=\"✓\"']), 05→0, 06→0, 07→0, BONUS-01→0, BONUS-02→0. Las celdas B6:H20 de 01 tienen relleno estático uniforme 00E8F5E9 (verde de entrada); la leyenda de colores de la fila 3 (B3 amarillo 00FFF9C4, C3 azul 00BBDEFB, D3 morado 00E1BEE7, E3 naranja 00FFE0B2, F3 verde 00C8E6C9) es decorativa. J6 no tiene ni fuente ni relleno rojo.",
+      "fix": "Añadir 5 reglas de formato condicional en 01!B6:H20 (una por código M/T/N/P/L con los colores exactos de la leyenda de la fila 3), 1 regla en 01!J6:J20 (texto que contiene 'EXCESO' → rojo) y 4 reglas en 05!B6:M20 (V/B/F/P). Si no se implementan, reformular B8/B11/B6 como instrucción al usuario ('colorea manualmente según esta leyenda')."
+     },
+     {
+      "id": "COM-11",
+      "severidad": "media",
+      "fichero": "03-coste-laboral-mensual.xlsx",
+      "ubicacion": "hoja 'Ratio Coste Laboral' B9 frente a A16:C16 y a BONUS-02!'Ratios por Tipo' A12:E12",
+      "hallazgo": "El semáforo que la landing destaca como característica (verde <30 %, amarillo 30-35 %, rojo >35 %) contradice los rangos de referencia que el propio kit publica dos filas más abajo: un fine dining al 37 % o un hotel al 38 % están DENTRO de su rango objetivo y el fichero les dispara «🔴 ACCIÓN CORRECTIVA». La FAQ afirma que el kit sirve para fine dining, hotel y catering.",
+      "evidencia": "B9='=IF(B7<30,\"🟢 EXCELENTE (<30%)\",IF(B7<=35,\"🟡 VIGILAR (30-35%)\",\"🔴 ACCIÓN CORRECTIVA (>35%)\"))' — umbrales fijos. En la misma hoja: A16='Fine Dining / Alta Cocina', B16='35-40%', C16='33-42%'; A17='Catering / Eventos', B17='30-35%'. En BONUS-02!'Ratios por Tipo' A12='Hotel (restaurante)', E12='35-42%'. faqs[2].a de la landing: 'Las plantillas estan disenadas para hosteleria en general: restaurante casual, fine dining, fast casual, hotel, catering, cadenas.'",
+      "fix": "Añadir dos celdas de umbral editables (p. ej. B10='Umbral verde' y B11='Umbral ámbar', precargadas a 30 y 35) y referenciarlas en B9, con una nota que remita a la tabla A14:C19 para fijarlas según el tipo de negocio. Alternativa: desplegable de tipo de negocio en B3 que resuelva los umbrales con BUSCARV sobre A14:C19."
+     },
+     {
+      "id": "COM-12",
+      "severidad": "media",
+      "fichero": "01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "hoja 'Cuadrante Mensual', filas 3-79 completas",
+      "hallazgo": "La hoja 'Cuadrante Mensual' —vendida en el hero, el grid, el CTA y el dashboard como «semanal y mensual»— es una rejilla muerta: 30 celdas de encabezado y nada más. Cero fórmulas, cero desplegables M/T/N/P/L, cero alertas, y la columna 'Horas' de las cuatro semanas está vacía. Además sólo cubre 4 semanas (28 días), no un mes.",
+      "evidencia": "Barrido de filas 5-79: 30 celdas con valor, todas rótulos ('SEMANA 1'..'SEMANA 4', 'Empleado', 'Lunes'..'Domingo', 'Horas'). ws.data_validations = [] y conditional_formatting = [] en esa hoja. Contraste con 'Cuadrante Semanal', que sí tiene I6:I20 con el cálculo de horas, J6:J20 con la alerta y validación de lista 'M,T,N,P,L' en B6:H20. La hoja 'Instrucciones' B7 afirma: '▸ Las horas se calculan automáticamente en la columna Total Horas'.",
+      "fix": "Replicar en I5:I20, I24:I39, I43:I58 e I62:I77 la fórmula de horas de la hoja semanal, copiar la validación de lista 'M,T,N,P,L' a los cuatro bloques, añadir columna de alerta >40h por semana y una quinta semana (o filas 80-98) para cubrir los meses de 31 días."
+     },
+     {
+      "id": "COM-13",
+      "severidad": "media",
+      "fichero": "BONUS-02-calculadora-plantilla-optima.xlsx + kit-gestion-personal.ts",
+      "ubicacion": "xlsx: hoja 'Calculadora' B6 y B8 · ts: grid.templates[8].desc y bonus.items[1].desc",
+      "hallazgo": "El bonus se vende por cuatro variables: covers por servicio, ratio empleado/cubierto, días de apertura y picos de demanda. Los «días de apertura» son una celda inerte que ninguna fórmula lee, y los «picos de demanda» no existen en ninguna parte. Encima, el tipo de negocio no tiene validación: teclear 4 devuelve en silencio los ratios de fast casual.",
+      "evidencia": "grid.templates[8].desc: 'Calcula cuantos empleados necesitas segun covers por servicio, ratio empleado/cubierto, dias de apertura y picos de demanda.' A6='Días apertura / semana:', B6=6 — ninguna de las fórmulas de la hoja (B12,B13,B14,B17,B18,B19,B20,B21,B22,B23,B26,B27,B28,B29,B33,B34) referencia B6; el factor de rotación es fijo: B23='=CEILING(B21*B22*1.15,1)'. B12='=IF(B8=1,20,IF(B8=2,8,30))': cualquier valor de B8 distinto de 1 o 2 cae en la rama 'fast casual'. ws.data_validations = [] en la hoja 'Calculadora'. La hoja 'Ratios por Tipo' lista 9 tipos de negocio (incluidos Hotel, Catering, Pizzería, Dark Kitchen, Heladería) que la calculadora no admite.",
+      "fix": "(1) Usar B6: sustituir el 1,15 fijo por un factor derivado de los días de apertura, p. ej. B23='=CEILING(B21*B22*(B6/5)*1.15,1)' y documentarlo. (2) Añadir validación de lista a B7 (1,2,3) y a B8 (1,2,3), o convertir B8 en desplegable de los 9 tipos con BUSCARV sobre 'Ratios por Tipo'. (3) Retirar «picos de demanda» de grid.templates[8].desc y bonus.items[1].desc, o añadir un input de cover en día pico."
+     },
+     {
+      "id": "COM-14",
+      "severidad": "media",
+      "fichero": "02-control-horas-extras.xlsx",
+      "ubicacion": "hoja 'Resumen Mensual' B6:C20 vs 'Instrucciones' B7",
+      "hallazgo": "Las Instrucciones afirman que el Resumen Mensual «agrega por empleado el total de horas extra». No agrega nada: 'Total H. Extra' (B) y 'H. Acumuladas Año' (C) son entrada manual sin ninguna conexión con la hoja 'Registro Horas'. El cliente tiene que sumar a mano lo que acaba de registrar, y las dos hojas pueden desincronizarse sin aviso.",
+      "evidencia": "'Instrucciones' B7: '▸ El Resumen Mensual agrega por empleado el total de horas extra y su coste.' En la hoja, B6:B20 y C6:C20 están vacías y sin fórmula (sólo D, E, F y G la tienen). Nada en el libro referencia 'Registro Horas'!G. Además C5 ('H. Acumuladas Año') no se define en ninguna parte: la sección 'Columnas del registro' de Instrucciones (B16:B18) sólo documenta las columnas de la otra hoja, y de si C incluye o no las horas del mes en curso depende todo el reparto ×1.75/×2.0 de E6 y F6.",
+      "fix": "B6 → '=IF(A6=\"\",\"\",SUMIF(\\'Registro Horas\\'!$A$5:$A$54,A6,\\'Registro Horas\\'!$G$5:$G$54))'. Añadir a 'Instrucciones' una línea que defina C ('horas extra acumuladas en el año INCLUYENDO las de este mes')."
+     },
+     {
+      "id": "COM-15",
+      "severidad": "media",
+      "fichero": "src/components/kit-gestion-personal/BuyBox.tsx + astro-site/src/data/productos/kits/kit-gestion-personal.ts + src/pages/ProductosDigitales.tsx",
+      "ubicacion": "BuyBox.tsx:15; kit-gestion-personal.ts:pricing (priceOld/discountBadge/heroNote/buyBoxNote); ProductosDigitales.tsx:299-300",
+      "hallazgo": "Ancla de precio permanente: el tachado de 49 EUR y el -71 % están en el producto desde su commit de creación, sin que 49 EUR se haya cobrado nunca, y el aviso de urgencia «Precio especial de lanzamiento. Sube pronto» sigue vivo en la versión 1.1 de agosto de 2026. Anunciar una reducción exige que el precio anterior se haya aplicado realmente durante 30 días (art. 20.4 LOCM tras el RDL 24/2021).",
+      "evidencia": "BuyBox.tsx:15: '<span className=\"text-2xl text-gray-500 line-through\">49 EUR</span>'. kit-gestion-personal.ts: priceOld: '49 EUR', discountBadge: '-71%', heroNote: 'Precio especial de lanzamiento. Sube pronto', buyBoxNote: 'Precio especial de lanzamiento — 71% de descuento'. ProductosDigitales.tsx:299-300: originalPrice: '€49', discount: '-71%'. git log -S'49 EUR' devuelve como origen ef8b213 (commit de creación de la landing) — el precio tachado nunca fue el precio vigente. La tarjeta del hub sigue además con badge: 'Nuevo' mientras la landing dice 'Producto actualizado · Versión 1.1'.",
+      "fix": "Es una decisión de John (ya aparcada como «extender honestidad a 43 landings»). Para este producto: o se retira el tachado y el -71 % dejando 14 EUR como precio único, o se sustituye por un ancla honesta y verificable ('valor de las 9 plantillas por separado', 'menos que una hora de consultoría laboral' — ya está en cta.subtitle y funciona). En cualquier caso quitar «Sube pronto» de heroNote."
+     },
+     {
+      "id": "COM-16",
+      "severidad": "media",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts + 07-directorio-plantilla.xlsx",
+      "ubicacion": "ts:grid.templates[6].desc y dashboard TEMPLATES['directorio'].desc; xlsx: hoja 'Plantilla' A4:O4 y hoja 'Vencimientos' A7:C21",
+      "hallazgo": "El directorio se vende con «convenio» y «carnets (manipulador, PRL)» como campos de la base de datos. No existe columna de convenio ni de carnets en la hoja 'Plantilla' (15 columnas, ninguna de las dos), los carnets viven en un bloque manual de 'Vencimientos' sin ninguna conexión con el directorio, y las alertas de fin de contrato sólo cubren a 15 de los 30 empleados que admite la hoja.",
+      "evidencia": "grid.templates[6].desc: 'Base de datos completa: datos personales, puesto, convenio, vencimiento contrato, carnets (manipulador, PRL), tallas de uniforme.' Cabeceras reales A4:O4: 'Nombre Completo','DNI / NIE','Puesto','Tipo Contrato','Fecha Alta','Fecha Fin Contrato','Jornada','Horas Semanales','Salario Bruto Anual','Teléfono','Email','Contacto Emergencia','Alérgenos Propios','Talla Uniforme','Taquilla'. La sección 'CONTRATOS A EXPIRAR' va de A7 a A21 y referencia Plantilla!A5 hasta Plantilla!A19 (15 filas), mientras la validación de datos de 'Plantilla' llega hasta D34/G34 (30 empleados). La sección 'CARNETS Y CERTIFICADOS' (filas 26-35) es entrada manual y no lee nada de 'Plantilla'.",
+      "fix": "Añadir a 'Plantilla' las columnas 'Convenio Aplicable', 'Caducidad Carnet Manipulador' y 'Caducidad PRL', extender el bloque de vencimientos hasta Plantilla!A34 (filas 7 a 36 de 'Vencimientos') y enlazar el bloque de carnets a esas nuevas columnas. Si no, quitar 'convenio' y 'carnets' de grid.templates[6].desc y de la tarjeta del dashboard."
+     },
+     {
+      "id": "COM-17",
+      "severidad": "media",
+      "fichero": "03-coste-laboral-mensual.xlsx",
+      "ubicacion": "hoja 'Ratio Coste Laboral' B4, B7, B9",
+      "hallazgo": "El fichero se entrega con el semáforo en VERDE y el mensaje «🟢 EXCELENTE (<30%)» sin un solo dato introducido, porque las ventas están vacías y el ratio sale 0. El cliente que abre el fichero recibe un diagnóstico positivo de un negocio que no ha medido.",
+      "evidencia": "Valores cacheados (data_only=True): B4 (Ventas Netas del Mes) = None, B5='=Nóminas!E25' → 0.0, B7='=IF(B4>0,B5/B4*100,0)' → 0.0, B9 → '🟢 EXCELENTE (<30%)'. El semáforo es lo que la landing destaca en hero.checkItems[2], cta.items[2], grid.templates[2] y en la tarjeta 'coste-laboral' del dashboard.",
+      "fix": "B9 → '=IF(OR(B4=\"\",B4=0),\"— introduce las ventas del mes\",IF(B7<30,\"🟢 EXCELENTE (<30%)\",IF(B7<=35,\"🟡 VIGILAR (30-35%)\",\"🔴 ACCIÓN CORRECTIVA (>35%)\")))' y B7 análogo. Regenerar la caché."
+     },
+     {
+      "id": "COM-18",
+      "severidad": "media",
+      "fichero": "02-control-horas-extras.xlsx",
+      "ubicacion": "hoja 'Registro Horas' filas 5-54 (título A1)",
+      "hallazgo": "La hoja se titula «Registro de Horas — Mes: ___» y ofrece 50 filas para TODA la plantilla durante un mes entero. Un equipo de 15 personas genera ~450 registros diarios al mes: la hoja se agota en menos de dos días. Sirviendo de complemento al fichaje, como dice la FAQ, es inutilizable a escala real.",
+      "evidencia": "A1='Registro de Horas — Mes: _______________', fórmulas E y G presentes sólo en las filas 5 a 54 (50 filas), validación de lista en H5:H54. La hoja 'Resumen Mensual' admite 15 empleados (filas 6-20, B22='=SUM(B6:B20)'). 15 empleados × ~26 días = ~390 registros frente a 50 filas disponibles.",
+      "fix": "Extender las fórmulas E/G y la validación de H hasta la fila ~500 (y ajustar el área de impresión A4), o reestructurar como matriz empleado × día del mes. Como mínimo, avisar en 'Instrucciones' de que hay que arrastrar las fórmulas."
+     },
+     {
+      "id": "COM-19",
+      "severidad": "media",
+      "fichero": "02-control-horas-extras.xlsx",
+      "ubicacion": "hoja 'Instrucciones' B10:B12 y hoja 'Resumen Mensual' D6:D20 / hoja 'Registro Horas' H5:H54",
+      "hallazgo": "El fichero presenta los recargos ×1,75 y ×2,0 bajo el epígrafe «Legislación española (Estatuto de los Trabajadores)». El ET no fija esos multiplicadores (art. 35.1: retribución no inferior a la de la hora ordinaria, o compensación en descanso); son convenio. Y aunque el registro distingue el tipo de hora extra, las de fuerza mayor —que por ley NO computan en el tope de 80h/año (art. 35.3)— sí se cuentan en la alerta.",
+      "evidencia": "'Instrucciones' B9='Legislación española (Estatuto de los Trabajadores):', B11='▸ Las primeras 80h se pagan ×1.75 del salario/hora (o según convenio).', B12='▸ Horas por encima de 80 anuales: ×2.0 (o compensación en descanso).' 'Registro Horas' H5:H54 tiene validación 'Voluntaria,Obligatoria' e 'Instrucciones' B18 aclara '▸ Tipo: Voluntaria / Obligatoria (fuerza mayor)', pero 'Resumen Mensual' D6='=IF(C6=\"\",\"\",IF(C6<=80,\"✓ OK\",\"⚠ EXCEDE\"))' opera sobre el total sin filtrar por tipo.",
+      "fix": "Mover B11/B12 fuera del bloque del ET, bajo un rótulo tipo 'Recargos habituales por convenio (ajusta a tu convenio)'. Añadir a 'Resumen Mensual' una columna que separe las horas de fuerza mayor (SUMIFS por A y por H='Obligatoria') y excluirlas del cómputo de las 80h en D."
+     },
+     {
+      "id": "COM-20",
+      "severidad": "media",
+      "fichero": "05-planificacion-vacaciones.xlsx + astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "xlsx: hoja 'Cobertura' A4:E11; ts: grid.templates[4].desc, cta.items[4], dashboard TEMPLATES['vacaciones'].desc",
+      "hallazgo": "«Cobertura mínima por puesto» aparece en el grid, en el CTA, en el dashboard y en un testimonio, pero la hoja 'Cobertura' es una tabla vacía con dos filas de encabezado: no calcula, no valida y no avisa de nada. No hay ninguna comprobación de que el personal disponible en un mes cumpla el mínimo definido.",
+      "evidencia": "Barrido completo de la hoja 'Cobertura': A4='PERSONAL MÍNIMO POR TURNO', A5:E5 = 'Turno','Mínimo Personal','Cocina','Sala','Barra', A6='Mañana', A7='Tarde', A8='Noche' (B6:E8 vacías), A10='COBERTURA: QUIÉN SUSTITUYE A QUIÉN', A11:E11 encabezados, filas 12-28 completamente vacías. ws.data_validations = [] y conditional_formatting = []. cta.items[4]: 'Planificacion de vacaciones con cobertura minima'.",
+      "fix": "Añadir al menos una comprobación por mes: contar en 'Calendario Anual' cuántos empleados NO están de 'V'/'B' y compararla con el mínimo de B6:B8, con alerta si queda por debajo. Si no se implementa, rebajar el texto a 'plantilla para documentar la cobertura y las sustituciones' en las tres ubicaciones."
+     },
+     {
+      "id": "COM-21",
+      "severidad": "baja",
+      "fichero": "06-evaluacion-desempeno.xlsx + kit-gestion-personal.ts",
+      "ubicacion": "xlsx: hoja 'Histórico' G5:G19; ts: grid.templates[5].desc y dashboard TEMPLATES['evaluacion'].desc",
+      "hallazgo": "La columna 'Tendencia' del histórico —vendida como «histórico trimestral»— sólo compara Q4 contra Q3, así que permanece en blanco durante tres de los cuatro trimestres del año. Y el «plan de desarrollo individual» que promete el grid no existe como plantilla en ningún fichero.",
+      "evidencia": "G5='=IF(AND(E5<>\"\",D5<>\"\"),IF(E5>D5,\"↑ Mejora\",IF(E5<D5,\"↓ Baja\",\"→ Estable\")),\"\")' — requiere E (Q4) y D (Q3) rellenos. grid.templates[5].desc: '10 competencias clave para hosteleria con scoring 1-5. Historico trimestral, objetivos por periodo y plan de desarrollo individual.' En 'Ficha Evaluación' existe A35='OBJETIVOS PARA PRÓXIMO PERIODO' (bloque libre) pero no hay ninguna sección ni hoja de plan de desarrollo; la única mención en todo el kit es una tarea del checklist (04!B65='Plan de desarrollo si se confirma en puesto').",
+      "fix": "G5 → comparar contra el último trimestre informado, p. ej. '=IF(COUNT(B5:E5)<2,\"\",IF(INDEX(B5:E5,MATCH(9^9,B5:E5))>INDEX(...),\"↑ Mejora\",...))' o, más simple, comparar la última puntuación disponible con la anterior. Y quitar «plan de desarrollo individual» de grid.templates[5].desc o añadir un bloque a la ficha."
+     },
+     {
+      "id": "COM-22",
+      "severidad": "baja",
+      "fichero": "src/data/products-catalog.ts",
+      "ubicacion": "src/data/products-catalog.ts:56 (description.es de 'kit-gestion-personal')",
+      "hallazgo": "La descripción del catálogo —la que se usa en tarjetas, checkout y correos de plataforma— anuncia «ratios de productividad», que no existen en ningún fichero, y omite tres de las siete plantillas principales (onboarding, vacaciones y evaluación de desempeño), que son justo las que más diferencian el kit.",
+      "evidencia": "products-catalog.ts:56, description.es: 'Cuadrantes, control de horas, ratios de productividad.' En el kit hay ratios covers/empleado (BONUS-02) y ratio coste laboral/ventas (03), pero ningún ratio de productividad (ventas por hora trabajada, covers por hora, etc.). La landing sí enumera las 7+2: grid.templates[0..8].",
+      "fix": "description.es → 'Cuadrantes de turnos, horas extra, coste laboral, onboarding, vacaciones y evaluación de equipo.' Ajustar también description.en en la misma entrada ('Schedules, hour tracking, and productivity ratios')."
+     },
+     {
+      "id": "COM-23",
+      "severidad": "baja",
+      "fichero": "astro-site/src/data/productos/kits/kit-gestion-personal.ts",
+      "ubicacion": "why.reasons[3].title vs faqs[3].a y schema.faqs[2].a",
+      "hallazgo": "El precio del competidor con el que se ancla el valor cambia de cifra dentro de la misma página: 40 EUR/mes en la sección «¿Por qué este kit?» y 30-60 EUR/mes en la FAQ. Ninguna de las dos cita fuente, y un lector escéptico que las vea juntas descuenta las dos.",
+      "evidencia": "why.reasons[3].title: 'Software de Gestión Cobra 40 EUR/mes. Esto es 14 EUR'. faqs[3].a: 'El software de gestion de personal cobra entre 30 y 60 EUR/mes por establecimiento.' schema.faqs[2].a: 'El software de RRHH cobra entre 30 y 60 EUR/mes.'",
+      "fix": "Unificar en el rango '30-60 EUR/mes' en los tres sitios y, si es posible, anclarlo a dos proveedores reales y comprobables (nombre + plan + precio de tarifa pública) en la FAQ."
+     },
+     {
+      "id": "COM-24",
+      "severidad": "baja",
+      "fichero": "05-planificacion-vacaciones.xlsx",
+      "ubicacion": "hoja 'Solicitudes' F5:F34 vs 'Instrucciones' B11:B12",
+      "hallazgo": "«Días Restantes» hardcodea 30 en 30 fórmulas, cuando las propias Instrucciones reconocen que el convenio de hostelería suele fijar 22 días laborables. Un cliente con 22 días verá siempre 8 días de más disponibles y no tiene ninguna celda donde cambiarlo.",
+      "evidencia": "F5='=IF(E5<>\"\",30-E5,\"\")', idéntica hasta F34. 'Instrucciones' B11: '▸ 30 días naturales de vacaciones al año (Art. 38 ET).' B12: '▸ O 22 días laborables según convenio habitual hostelería.'",
+      "fix": "Añadir una celda de parámetro (p. ej. G2='Días de vacaciones por convenio' = 30) y cambiar F5:F34 a '=IF(E5<>\"\",$G$2-E5,\"\")'."
+     },
+     {
+      "id": "COM-25",
+      "severidad": "baja",
+      "fichero": "07-directorio-plantilla.xlsx",
+      "ubicacion": "hoja 'Instrucciones' B14:B17",
+      "hallazgo": "El único fichero del kit que almacena datos personales sensibles (DNI/NIE, teléfono, email, contacto de emergencia, salario, alérgenos propios —dato de salud) instruye al cliente a «proteger con contraseña» pero se entrega sin ninguna protección y sin explicarle cómo hacerlo. Es el fichero con más exposición RGPD y el que menos ayuda ofrece.",
+      "evidencia": "'Instrucciones' B14='Protección de datos (RGPD):', B15='▸ Este archivo contiene datos personales — proteger con contraseña.', B16='▸ Solo acceso para RRHH y dirección.', B17='▸ No compartir por email sin cifrar.' El libro no tiene protección de libro ni de hojas, y M4='Alérgenos Propios' es dato de salud (art. 9 RGPD) sin advertencia específica.",
+      "fix": "Añadir a B15 el cómo, en una línea por plataforma ('Excel: Archivo → Información → Proteger libro → Cifrar con contraseña'), y una línea que señale que 'Alérgenos Propios' es un dato de salud que requiere base jurídica y minimización."
+     },
+     {
+      "id": "COM-26",
+      "severidad": "baja",
+      "fichero": "06-evaluacion-desempeno.xlsx",
+      "ubicacion": "hoja 'Ficha Evaluación' (todo el libro) frente a hoja 'Histórico' A5:A19",
+      "hallazgo": "El libro contiene UNA sola ficha de evaluación, pero el histórico está dimensionado para 15 empleados × 4 trimestres = 60 evaluaciones. Las Instrucciones dicen «completa una ficha por empleado y periodo» sin explicar que hay que duplicar la hoja a mano 60 veces al año, ni cómo volcar el resultado al histórico (no hay enlace alguno entre C22 y la tabla B5:E19).",
+      "evidencia": "Hoja 'Ficha Evaluación' dims A1:D43, una única ficha con B4='Empleado:' y C22='=AVERAGE(C12:C21)'. Hoja 'Histórico' con filas 5-19 (15 empleados) y columnas B4:E4 = Q1..Q4. Ninguna fórmula del 'Histórico' referencia 'Ficha Evaluación'. 'Instrucciones' B5: '▸ Completa una ficha por empleado y periodo de evaluación.'",
+      "fix": "Añadir a 'Instrucciones' el paso explícito ('duplica la hoja Ficha Evaluación —clic derecho → Mover o copiar— y renómbrala Nombre-Q1; después copia la PUNTUACIÓN MEDIA a la celda del Histórico') o, mejor, incluir 3-4 fichas ya duplicadas como ejemplo."
+     }
+    ],
+    "veredicto": "no listo",
+    "motivo": "Los gates deterministas están en verde, pero el cruce comercial refuta que el kit esté listo para un cliente que pagó. Hay ocho defectos de severidad alta y todos son verificables por el comprador en los primeros cinco minutos: (1) la característica más repetida de la landing —«alertas automáticas de descanso mínimo 11h entre turnos»— no existe en el fichero, y además está afirmada en una review del JSON-LD; (2) la FAQ promete que el coste de la hora extra se calcula «según el porcentaje de tu convenio» cuando ×1.75/×2.0 están escritos a fuego en 30 fórmulas; (3) el changelog v1.1 anuncia que «el porcentaje de progreso ahora se calcula de verdad» y el fichero entregado abre marcando «4 de 51» tareas completadas y 8,51 % con el checklist en blanco, porque cuenta como tareas los cuatro encabezados que contienen «✓»; (4) la ficha de evaluación abre con #DIV/0! cacheado en sus dos celdas de resultado; (5) el badge del hero apoya toda la urgencia en una obligación legal fechada en 2026 y en una multa «por empleado» que no es tal; (6) el calendario anual de vacaciones tiene una celda por MES y llama «Días Usados» a un recuento de meses; (7) el registro horario devuelve −16,00 horas en el turno de noche que el propio kit define; y (8) cuatro de los ocho testimonios describen funciones inexistentes (cobertura mínima que no calcula nada, aviso de «cerca del límite legal» que no existe, análisis por día de la semana que la calculadora no tiene). A eso se suman contradicciones internas que el cliente encontrará solo: dos hojas del mismo kit dan 15 vs 8 personas por turno y 35.100 € vs 44.460 € con los mismos datos, y el semáforo de coste laboral marca «acción correctiva» a un fine dining que está dentro del rango que el propio kit publica dos filas más abajo. La mayoría de los arreglos son de pocas celdas (MOD en la resta de horas, IF de guarda en AVERAGE, celdas de parámetro para el recargo y los umbrales, rangos de COUNTIF acotados); lo que no se puede arreglar con una fórmula es el bloque de promesas de la landing, el JSON-LD y el changelog, que hay que decidir si se implementa o si se retira."
+   },
+   "excel": {
+    "lente": "TÉCNICA EXCEL (openpyxl + pycel): fórmulas, rangos, guardas, evaluación con inputs reales, validaciones, formato condicional, formatos numéricos, impresión y coherencia Instrucciones↔hojas↔landing. Producto: kit-gestion-personal (9 xlsx). Fase A NO re-auditada salvo un caso que se le escapó (TEC-03, la caché grabó un #DIV/0!).",
+    "veredicto": "no listo",
+    "motivo": "Siete defectos de severidad alta, y cuatro de ellos los ve el cliente en los primeros treinta segundos sin escribir un solo dato: el checklist de onboarding se abre marcando «4 tareas completadas · 8,5 % de progreso» (justo la mejora que anuncia el changelog v1.1), la Ficha de Evaluación se abre con #DIV/0! en PUNTUACIÓN MEDIA y NIVEL (y la caché de Fase A grabó literalmente el error), el semáforo de coste laboral se abre en «🟢 EXCELENTE» sin ventas introducidas, y el registro de horas devuelve −16,00 h para un turno de noche 23:00→07:00, que es el turno que el propio kit define como estándar en 01. A eso se suman dos promesas publicadas que el fichero no cumple —la reseña JSON-LD de «David Ruiz» (KitGestionPersonal.tsx:60) presume de alertas de 11h de descanso entre turnos que no existen en ninguna fórmula, y la FAQ (FaqAccordion.tsx:12, replicada en JSON-LD) afirma que el coste de la hora extra se calcula «según el porcentaje de tu convenio colectivo» cuando 1,75 y 2,0 están cableados en 30 fórmulas— y dos agujeros silenciosos: el Calendario Anual de vacaciones tiene una celda por MES y cuenta meses como días (máximo 12 frente a los 30 legales que promete), y las alertas de vencimiento de contrato sólo miran a 15 de los 30 empleados que admite el Directorio. Ninguno de los siete lo detecta un gate determinista; los dos gates siguen en verde y siguen teniendo razón sobre lo que miden.",
+    "hallazgos": [
+     {
+      "id": "TEC-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas!E5:E54 (y su cascada G5:G54)",
+      "hallazgo": "Todo turno que cruza medianoche devuelve horas trabajadas NEGATIVAS y cero horas extra. Es el turno de cierre y el turno de noche, es decir el caso más frecuente en hostelería, y el propio kit lo define como estándar en 01 ('N = Noche (23:00-7:00) → 8h').",
+      "evidencia": "E5 = '=IF(AND(C5<>\\\"\\\",D5<>\\\"\\\"),(D5-C5)*24,\\\"\\\")'. Evaluado con pycel: entrada 23:00 / salida 07:00 con H. Contratadas 8 → E5 = -16,00 y G5 = 0. Entrada 19:00 / salida 01:30 → E6 = -17,50 y G6 = 0. La resta directa D-C no contempla el cambio de día.",
+      "fix": "Sustituir en E5:E54 por '=IF(AND(C5<>\"\",D5<>\"\"),MOD(D5-C5,1)*24,\"\")'. MOD devuelve 8,00 para 23:00→07:00 y 6,50 para 19:00→01:30. Añadir en Instrucciones una línea que diga que la hora de salida se introduce sin fecha aunque sea del día siguiente."
+     },
+     {
+      "id": "TEC-02",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding!C68 y C70",
+      "hallazgo": "El checklist recién descargado, sin que nadie marque nada, informa de 4 tareas completadas y un 8,5 % de progreso. El COUNTIF barre las cuatro filas de cabecera intermedias, cuya columna F contiene el propio símbolo '✓' como título de columna. Es precisamente la función que el changelog v1.1 anuncia como «el porcentaje de progreso ahora se calcula de verdad».",
+      "evidencia": "C68 = '=COUNTIF(F7:F65,\"✓\")'. F19, F30, F42 y F57 valen '✓' (son las cabeceras repetidas de las secciones FORMACIÓN OBLIGATORIA, EQUIPAMIENTO, FORMACIÓN OPERATIVA y PERIODO DE PRUEBA) y caen dentro del rango. Valor cacheado en el fichero LIVE: C68 = 4.0, C70 = 8.51063829787234.",
+      "fix": "Excluir las cabeceras sumando por tramos: C68 = '=COUNTIF(F7:F16,\"✓\")+COUNTIF(F20:F27,\"✓\")+COUNTIF(F31:F39,\"✓\")+COUNTIF(F43:F54,\"✓\")+COUNTIF(F58:F65,\"✓\")'. Alternativa más robusta: cambiar el encabezado de la columna F de '✓' a 'Hecho' en las filas 6, 19, 30, 42 y 57. Recachear después."
+     },
+     {
+      "id": "TEC-03",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "Ficha Evaluación!C22 y C23",
+      "hallazgo": "La ficha de evaluación se abre mostrando #DIV/0! en PUNTUACIÓN MEDIA y en NIVEL, porque el AVERAGE no tiene guarda de rango vacío. La hoja Histórico del mismo fichero SÍ la tiene, así que es una inconsistencia interna, no un criterio. Caso que se le escapó a la Fase A: la inyección de caché grabó el error como valor cacheado en lugar de detectarlo.",
+      "evidencia": "C22 = '=AVERAGE(C12:C21)' sin guarda; C23 encadena IF sobre C22. Valores cacheados en el fichero LIVE: C22 = '#DIV/0!' y C23 = '#DIV/0!'. Comparar con Histórico!F5 = '=IF(COUNT(B5:E5)>0,AVERAGE(B5:E5),\"\")', que sí protege. calcPr trae fullCalcOnLoad=\"1\", así que Excel recalcula y el error se mantiene en pantalla.",
+      "fix": "C22 = '=IF(COUNT(C12:C21)>0,AVERAGE(C12:C21),\"\")' y C23 = '=IF(C22=\"\",\"\",IF(C22>=4.5,\"⭐ EXCELENTE\",IF(C22>=3.5,\"✓ BUENO\",IF(C22>=2.5,\"→ ADECUADO\",IF(C22>=1.5,\"⚠ MEJORABLE\",\"✗ DEFICIENTE\")))))'. Recachear. Añadir al postproceso de Fase A un chequeo que aborte si el valor cacheado empieza por '#'."
+     },
+     {
+      "id": "TEC-04",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "Calendario Anual!B5:N20",
+      "hallazgo": "El «Calendario Anual» tiene una única celda por MES y por empleado, y la columna 'Días Usados' cuenta meses marcados como si fueran días. El máximo posible es 12, cuando el propio fichero declara un derecho de 30 días naturales. Marcar las vacaciones de agosto suma 1 día usado y deja 29 pendientes. La hoja no puede hacer lo que su título y sus Instrucciones dicen que hace.",
+      "evidencia": "N6 = '=IF(B6=\"V\",1,0)+IF(C6=\"V\",1,0)+…+IF(M6=\"V\",1,0)' sobre B..M, que son las 12 columnas Ene…Dic (fila 5). N5 = 'Días Usados'. Instrucciones!B8: '▸ Los días usados y restantes se calculan automáticamente (de 30 días legales)' e Instrucciones!B11: '▸ 30 días naturales de vacaciones al año (Art. 38 ET)'. La validación de datos de B6:M20 es la lista 'V,B,F,P,' — un estado único para el mes entero, así que tampoco admite 15 días de vacaciones y el resto trabajado.",
+      "fix": "Dos opciones. (a) Convertir la columna mensual en numérica: el usuario escribe cuántos días de vacaciones toma en cada mes y N6 = '=SUM(B6:M6)'; los códigos B/F/P pasan a una hoja de incidencias aparte. (b) Rehacer el calendario a rejilla de 366 días. La (a) es la que respeta la estructura actual y el ancho de impresión. En cualquier caso renombrar N5 mientras no se arregle, porque hoy 'Días Usados' es 'Meses con vacaciones'."
+     },
+     {
+      "id": "TEC-05",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Semanal!J6:J20 y hoja completa 'Cuadrante Mensual'",
+      "hallazgo": "De las cuatro alertas que la landing vende para este entregable sólo existe una. No hay ninguna fórmula que detecte el descanso mínimo de 11h entre turnos, ni libranzas, ni rotación. Y la 'planificación mensual' que se anuncia en la misma frase es una hoja sin una sola fórmula: la columna 'Horas' de las cuatro semanas está vacía de cálculo. Lo agrava que la afirmación esté puesta en boca de un cliente dentro de un JSON-LD de reseña indexable.",
+      "evidencia": "Única alerta del fichero: J6 = '=IF(I6>40,\"⚠ EXCESO\",IF(I6>0,\"OK\",\"\"))'. Barrido de fórmulas: 'Cuadrante Mensual' = 0 fórmulas (I4, I23, I42, I61 son sólo el encabezado 'Horas'), 0 validaciones de datos y sin paneles inmovilizados. Frente a src/components/kit-gestion-personal/ContentGrid.tsx:8 «Planificacion semanal y mensual con alertas automaticas: descanso minimo 11h entre turnos, maximo 40h/semana, libranzas y rotacion de turnos» y src/pages/KitGestionPersonal.tsx:60 «Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente». Las Instrucciones son más honestas (B12 lo plantea como recordatorio), pero la landing no.",
+      "fix": "Implementar la alerta real: añadir dos filas ocultas por empleado con la hora de fin del turno del día D y la de inicio del D+1 según la tabla de turnos, y una columna 'Descanso <11h' con un OR sobre los siete pares. Portar a 'Cuadrante Mensual' las fórmulas de I y J de 'Cuadrante Semanal' con su validación de datos. Mientras no esté, reescribir ContentGrid.tsx:8 y sustituir la reseña de KitGestionPersonal.tsx:60 por una que no atribuya a un cliente una función inexistente."
+     },
+     {
+      "id": "TEC-06",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Resumen Mensual!E6:F20",
+      "hallazgo": "La FAQ publicada promete que el coste de la hora extra se calcula «según el porcentaje de tu convenio colectivo». No existe tal parámetro: 1,75 y 2,0 están escritos dentro de 30 fórmulas. Sólo la tarifa base (B3) es editable. Cambiar de convenio obliga a editar a mano 30 celdas, y el convenio de hostelería de muchas provincias no usa esos multiplicadores.",
+      "evidencia": "E6 = '=IF(B6=\"\",\"\",MIN(B6,MAX(0,80-(C6-B6)))*$B$3*1.75)' y F6 = '=IF(B6=\"\",\"\",MAX(0,B6-MIN(B6,MAX(0,80-(C6-B6))))*$B$3*2)'; los literales 1.75 y 2 se repiten en las filas 6 a 20. Los encabezados E5 y F5 también los fijan: 'Coste ×1.75' y 'Coste ×2.0'. Frente a src/components/kit-gestion-personal/FaqAccordion.tsx:12 y su copia en el JSON-LD de src/pages/KitGestionPersonal.tsx:71: «calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo».",
+      "fix": "Añadir dos celdas de entrada junto a B3 —B4 'Multiplicador primeras 80h' = 1,75 y B5 'Multiplicador a partir de 80h' = 2,0, con relleno verde de editable— y referenciarlas como $B$4/$B$5 en las 30 fórmulas. Convertir E5/F5 en '=\"Coste ×\"&TEXT($B$4;\"0,00\")'. Sin eso, corregir el texto de la FAQ en los dos sitios."
+     },
+     {
+      "id": "TEC-07",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Vencimientos!A7:E21 frente a Plantilla!A5:O34",
+      "hallazgo": "La hoja 'Plantilla' admite 30 empleados, pero la sección CONTRATOS A EXPIRAR sólo lee los 15 primeros. Del empleado 16 en adelante nadie avisa de que vence el contrato, y la hoja no da ninguna pista de que se ha quedado corta: no hay fila de corte, ni aviso, ni nota. Un temporal cuyo vencimiento pasa desapercibido se convierte en indefinido por ministerio de la ley, así que el fallo silencioso tiene coste jurídico directo.",
+      "evidencia": "La última fila con fórmula de la sección es la 21: A21 = '=IF(Plantilla!A19<>\"\",Plantilla!A19,\"\")'. A22 está vacía. El rango de datos de la hoja origen es Plantilla!A5:O34 (autofiltro declarado A4:O34, 30 filas de empleado). Quedan sin cubrir Plantilla!A20:A34.",
+      "fix": "Extender las fórmulas de A7:E21 hasta A36:E36 para cubrir Plantilla filas 5 a 34, desplazando hacia abajo la sección 'CARNETS Y CERTIFICADOS A RENOVAR' (hoy en 24-35) y su rótulo. Verificar después que el Print_Titles de 'Vencimientos' ($6:$6) sigue apuntando a la cabecera correcta."
+     },
+     {
+      "id": "TEC-08",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Resumen Mensual!B6:B20",
+      "hallazgo": "Las Instrucciones afirman que el Resumen Mensual agrega por empleado el total de horas extra, pero 'Total H. Extra' es una celda de entrada manual: no hay ningún vínculo con la hoja 'Registro Horas', donde el kit ya ha calculado esas horas día a día. El cliente tiene que sumar a mano 50 filas y transcribir el resultado, que es justo el trabajo que compró para no hacer.",
+      "evidencia": "B6:B20 están vacías y sin fórmula (las únicas fórmulas de la fila son D6, E6, F6, G6). La columna A del Resumen (nombres) también es manual. Instrucciones!B7: '▸ El Resumen Mensual agrega por empleado el total de horas extra y su coste.' En 'Registro Horas' el dato ya existe en G5:G54 junto al nombre en A5:A54.",
+      "fix": "B6 = '=IF(A6=\"\",\"\",SUMIF(''Registro Horas''!$A$5:$A$54,A6,''Registro Horas''!$G$5:$G$54))' y arrastrar hasta B20. Mantener C (acumulado del año) como entrada manual, porque el registro sólo cubre un mes, pero documentarlo (ver TEC-18)."
+     },
+     {
+      "id": "TEC-09",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas!G5:G54 y F5:F54",
+      "hallazgo": "Si el usuario no rellena 'H. Contratadas' —columna que está vacía de fábrica y sin valor por defecto— la fórmula de horas extra toma el vacío como 0 y declara EXTRA la jornada entera. Una jornada normal de 9:00 a 17:00 se contabiliza como 8 horas extra, que a la tarifa por defecto de 12 € y con recargo son 168 € inventados por día y empleado.",
+      "evidencia": "G5 = '=IF(E5<>\"\",MAX(0,E5-F5),\"\")': la guarda mira E, no F. Evaluado con pycel dejando F7 vacío: entrada 9:00, salida 17:00 → E7 = 8,0 y G7 = 8. F5:F54 no tienen ni valor precargado ni validación.",
+      "fix": "G5 = '=IF(OR(E5=\"\",F5=\"\"),\"\",MAX(0,E5-F5))' en G5:G54, y precargar F5:F54 con 8 (o añadir validación de decimal entre 1 y 12) para que el olvido sea imposible en vez de silencioso."
+     },
+     {
+      "id": "TEC-10",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Ratio Coste Laboral!B7 y B9",
+      "hallazgo": "El semáforo se abre en verde «EXCELENTE» con el fichero vacío. Sin ventas y sin nóminas el ratio cae a 0 y el primer IF lo interpreta como control excelente. Es un falso positivo en la métrica que la landing vende como argumento principal de este entregable, y el peor tipo: tranquiliza al que no ha introducido nada.",
+      "evidencia": "B4 (Ventas Netas del Mes) está vacía. B7 = '=IF(B4>0,B5/B4*100,0)' → 0. B9 = '=IF(B7<30,\"🟢 EXCELENTE (<30%)\",IF(B7<=35,\"🟡 VIGILAR (30-35%)\",\"🔴 ACCIÓN CORRECTIVA (>35%)\"))'. Valores cacheados en el fichero LIVE: B7 = 0.0 y B9 = '🟢 EXCELENTE (<30%)'.",
+      "fix": "B7 = '=IF(AND(B4>0,B5>0),B5/B4*100,\"\")' y B9 = '=IF(B7=\"\",\"— introduce ventas y nóminas\",IF(B7<30,…))'. Recachear."
+     },
+     {
+      "id": "TEC-11",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Ratio Coste Laboral!B9 frente a A14:C19 de la misma hoja",
+      "hallazgo": "El semáforo usa cortes fijos (verde <30 %, amarillo 30-35 %, rojo >35 %) que contradicen la tabla de referencia impresa doce filas más abajo en la misma hoja. Un fine dining que clave su objetivo verá siempre 'ACCIÓN CORRECTIVA', y un fast casual con 29 % —cuatro puntos por encima de su rango— verá 'EXCELENTE'. El fichero se desmiente a sí mismo en la misma pantalla.",
+      "evidencia": "B9 aplica los cortes 30/35 a cualquier negocio. La tabla de la propia hoja da: A16 'Fine Dining / Alta Cocina' → B16 '35-40%'; A17 'Catering / Eventos' → B17 '30-35%'; A14 'Fast Casual' → B14 '25-28%'. Y BONUS-02-calculadora-plantilla-optima.xlsx, 'Ratios por Tipo'!E12, sube el hotel a '35-42%'. Los mismos cortes fijos están replicados en Instrucciones!B17:B19 y en la landing.",
+      "fix": "Añadir una celda de entrada 'Tipo de negocio' con validación de lista contra A14:A19, y dos celdas que recuperen su rango objetivo con BUSCARV. B9 pasa a comparar B7 contra ese rango en vez de contra 30/35. Si se prefiere no tocar la lógica, cambiar los rótulos de B9 a un lenguaje neutro ('por encima del objetivo del sector') y explicar en Instrucciones que el semáforo es de restaurante casual."
+     },
+     {
+      "id": "TEC-12",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding!C7:C65 (las 47 filas)",
+      "hallazgo": "La columna 'Categoría' está cortada a 14 caracteres exactos en las 47 filas del checklist, con la palabra partida a media sílaba. No es un problema de ancho de columna: el valor guardado en la celda es el texto truncado, así que se ve cortado en pantalla, al imprimir y al filtrar. Delata un slice [:14] del generador.",
+      "evidencia": "C7 = 'DOCUMENTACIÓN ' (14 caracteres, con espacio final), C20 = 'FORMACIÓN OBLI', C31 = 'EQUIPAMIENTO Y', C43 = 'FORMACIÓN OPER', C58 = 'PERIODO DE PRU'. El ancho de la columna C es 16, o sea que cabía más. Los rótulos completos existen en las cabeceras de sección: A5 '📋 DOCUMENTACIÓN LEGAL Y ADMINISTRATIVA', A18 '🎓 FORMACIÓN OBLIGATORIA', A29 '👕 EQUIPAMIENTO Y ACCESOS', A41 '🏢 FORMACIÓN OPERATIVA', A56 '📊 PERIODO DE PRUEBA Y EVALUACIÓN'.",
+      "fix": "Reescribir C7:C65 con etiquetas cortas pero completas ('Documentación', 'Formación obligatoria', 'Equipamiento', 'Formación operativa', 'Periodo de prueba') y subir el ancho de C a 22. Buscar en el generador el recorte a 14 caracteres, porque afectará a los demás kits de la familia."
+     },
+     {
+      "id": "TEC-13",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding!E68 frente a C69",
+      "hallazgo": "El bloque RESUMEN enseña dos totales de tareas contradictorios, uno encima del otro: la fila 68 dice 'de 51' y la fila 69 dice 'Total tareas: 47'. El 51 sale de contar como tareas las cuatro filas de cabecera intermedias. Es el mismo defecto de rango que TEC-02, en el otro contador.",
+      "evidencia": "E68 = '=COUNTIF(B7:B65,\"?*\")'; B19, B30, B42 y B57 valen 'Tarea' (cabeceras de sección) y caen dentro del rango. Recuento verificado: 47 tareas reales + 4 cabeceras = 51. Valor cacheado en el fichero LIVE: E68 = 51.0. C69 = 47 (constante).",
+      "fix": "E68 = '=COUNTIF(B7:B16,\"?*\")+COUNTIF(B20:B27,\"?*\")+COUNTIF(B31:B39,\"?*\")+COUNTIF(B43:B54,\"?*\")+COUNTIF(B58:B65,\"?*\")', y sustituir la constante C69 = 47 por '=E68' para que los dos números no puedan volver a divergir. Recachear."
+     },
+     {
+      "id": "TEC-14",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Nóminas!D5:D24 y Previsión por Servicio!B16",
+      "hallazgo": "El tipo de Seguridad Social a cargo de la empresa está cableado como 0,30 en veinte fórmulas y como 1,30 en otra, sin ninguna celda que permita ajustarlo. Está declarado en Instrucciones, de acuerdo, pero un 30 % plano queda por debajo del tipo real de un indefinido general (contingencias comunes, desempleo, FP, FOGASA y MEI suman por encima) y bastante por debajo del de un temporal, así que el 'Coste Total' que alimenta el semáforo sale corto de forma sistemática. Cambiarlo obliga a editar 21 celdas a mano.",
+      "evidencia": "D5 = '=IF(C5<>\"\",C5*0.30,\"\")', repetida con el mismo literal en D5:D24. El encabezado D4 también lo fija: 'SS Empresa (30%)'. Previsión por Servicio!B16 = '=B13*B15*1.30'. BONUS-02-calculadora-plantilla-optima.xlsx, Calculadora!B27 = '=B26*0.30' repite el cableado en el tercer sitio.",
+      "fix": "Crear en 'Nóminas' una celda de entrada (por ejemplo C2, con relleno verde y formato de porcentaje) rotulada 'Tipo SS empresa' con valor por defecto 0,32, y referenciarla como $C$2 en D5:D24; D4 pasa a '=\"SS Empresa (\"&TEXT($C$2;\"0%\")&\")\"'. Enlazar también Previsión!B16 y, en el BONUS, Calculadora!B27."
+     },
+     {
+      "id": "TEC-15",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora!B17:B28 frente a 03-coste-laboral-mensual.xlsx, Previsión por Servicio!B10:B16",
+      "hallazgo": "Dos hojas del mismo kit responden a la misma pregunta —cuánta plantilla necesito y cuánto me cuesta— con dos modelos incompatibles y resultados que difieren en un 27 %. La calculadora reparte los covers entre servicios, multiplica por turnos y añade un 15 % de rotación; la previsión de 03 no hace ninguna de las tres cosas. El cliente que abra las dos no sabrá a cuál hacer caso, y ninguna de las dos advierte de la existencia de la otra.",
+      "evidencia": "Con los valores por defecto idénticos (80 covers, casual, 1.800 € de salario medio), evaluado con pycel: 03 'Previsión por Servicio' → B13 = 15 personas y B16 = 35.100,00 €/mes. BONUS-02 'Calculadora' → B21 = 8 por turno, B23 = 19 personas (B23 = '=CEILING(B21*B22*1.15,1)') y B28 = 44.460,00 €/mes. Diferencia: 4 personas y 9.360 €/mes. Los ratios base son los mismos (20/12/25); lo que difiere es el modelo, no los datos.",
+      "fix": "Quedarse con el modelo de BONUS-02, que es el correcto (los covers del día se reparten entre servicios y hay que cubrir rotación), y reescribir 03 'Previsión por Servicio' con las mismas etapas: covers por servicio, personal por turno, turnos al día y coeficiente de rotación. Si se prefiere mantener 03 como cálculo rápido de un solo turno, cambiar su rótulo A16 a 'Coste laboral de UN turno (€/mes)' y añadir una línea que remita a la calculadora BONUS para el cálculo completo."
+     },
+     {
+      "id": "TEC-16",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora!B8 y B12:B14",
+      "hallazgo": "La celda 'Tipo negocio' no tiene validación de datos y las fórmulas que la leen usan el tercer IF como cajón de sastre: cualquier valor que no sea 1 ni 2 aplica en silencio los ratios de fast casual. La hoja de referencia del mismo fichero lista diez tipos de negocio y las Instrucciones invitan a consultarla, así que teclear 4 (cafetería), 8 (hotel) o dejarla vacía es el error natural, y devuelve un resultado sin un solo aviso.",
+      "evidencia": "B12 = '=IF(B8=1,20,IF(B8=2,8,30))', B13 = '=IF(B8=1,12,IF(B8=2,6,20))', B14 = '=IF(B8=1,25,IF(B8=2,15,35))'. No hay ninguna validación de datos en la hoja 'Calculadora'. 'Ratios por Tipo'!A5:A14 enumera diez tipos (casual, fine dining, fast casual, cafetería, bar, pizzería, dark kitchen, hotel, catering, heladería) e Instrucciones!B8 dice '▸ Consulta los ratios de referencia en la hoja Ratios por Tipo'.",
+      "fix": "Poner validación de lista en B8 restringida a 1, 2 y 3, y cerrar el cajón de sastre: B12 = '=IF(B8=1,20,IF(B8=2,8,IF(B8=3,30,NA())))'. Mejor aún, cambiar B8 a validación de lista con los diez nombres de 'Ratios por Tipo'!A5:A14 y resolver B12:B14 con BUSCARV sobre esa tabla, que ya tiene los rangos de los diez."
+     },
+     {
+      "id": "TEC-17",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Instrucciones!B8 y B11 frente a Cuadrante Semanal!B6:H20 y J6:J20",
+      "hallazgo": "Las Instrucciones describen un código de colores por tipo de turno y una alerta que se marca «en ROJO», y ni una cosa ni la otra existen: el fichero no tiene un solo formato condicional. Las celdas de turno llevan todas el mismo relleno verde claro de «celda editable», así que M, T, N, P y L son visualmente idénticas. El mismo defecto se repite en otros dos ficheros del kit.",
+      "evidencia": "Recuento de bloques <conditionalFormatting> en el XML: 0 en las tres hojas de 01, 0 en las cuatro de 05, y sólo 1 en 04 (la de Fase A que resalta la fila al marcar ✓). Instrucciones!B8: '▸ Código de colores: amarillo=mañana, azul=tarde, morado=noche, naranja=partido, verde=libre'; B11: '▸ La columna Alertas marca en ROJO si un empleado supera 40h semanales'. Verificado por estilo: B6 y C6 comparten el relleno 00E8F5E9 y J6 no tiene ni relleno ni color de fuente. Mismo patrón en 05-planificacion-vacaciones.xlsx Instrucciones!B6 ('Azul = Vacaciones, Rojo = Baja médica, Verde = Festivo, Naranja = Permiso') sobre un Calendario Anual sin formato condicional, y en 04-onboarding Instrucciones!B11:B15 ('Azul = Documentación legal…'), donde las cinco cabeceras de sección son todas del mismo dorado FFD700.",
+      "fix": "Añadir cinco reglas de formato condicional de tipo 'el texto es igual a' sobre B6:H20 de 01 (M amarillo, T azul, N morado, P naranja, L verde) y cuatro equivalentes sobre B6:M20 del Calendario Anual de 05; en 01 J6:J20, una regla que ponga fondo rojo cuando el texto contenga 'EXCESO'. En 04, colorear las cinco cabeceras de sección con los colores que anuncian sus Instrucciones. Es la vía barata: si no, hay que reescribir cuatro bloques de Instrucciones."
+     },
+     {
+      "id": "TEC-18",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "Solicitudes!F5:F34 y D5:D34",
+      "hallazgo": "'Días Restantes' ignora los días que se están solicitando en esa misma fila, así que la columna contesta a una pregunta que nadie ha hecho. Quien aprueba una solicitud de 14 días con 10 ya consumidos lee 'Restantes 20' cuando después de aprobarla quedarán 6. Además el 30 está cableado, pese a que las propias Instrucciones ofrecen la alternativa de 22 días laborables de convenio.",
+      "evidencia": "F5 = '=IF(E5<>\"\",30-E5,\"\")': no interviene D5 = '=IF(AND(B5<>\"\",C5<>\"\"),C5-B5+1,\"\")', que es la columna 'Días Solicit.'. Instrucciones!B11 '▸ 30 días naturales de vacaciones al año (Art. 38 ET)' y B12 '▸ O 22 días laborables según convenio habitual hostelería'. Ninguna celda permite elegir entre 30 y 22. La columna E ('Días Usados YTD') es además entrada manual sin vínculo con Calendario Anual!N.",
+      "fix": "Añadir una celda de entrada en la cabecera (por ejemplo E2, 'Días de vacaciones por convenio' = 30) y F5 = '=IF(E5=\"\",\"\",$E$2-E5-IF(G5=\"Aprobado\",D5,0))', para que el saldo refleje la solicitud una vez aprobada. Documentar en Instrucciones qué significa exactamente 'Días Usados YTD' (si incluye o no la solicitud en curso), que hoy no se dice en ninguna parte."
+     },
+     {
+      "id": "TEC-19",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Plantilla!A4:O4",
+      "hallazgo": "La landing enumera como columnas del Directorio dos campos que no existen en la hoja: 'convenio' y los carnets de manipulador y PRL. Convenio no está en ninguna de las quince columnas, y los carnets viven en otra hoja, en una sección de entrada manual que no se vincula con el empleado del Directorio, así que hay que teclear el nombre dos veces y nada garantiza que coincidan.",
+      "evidencia": "Las quince columnas reales son A4 'Nombre Completo', B4 'DNI / NIE', C4 'Puesto', D4 'Tipo Contrato', E4 'Fecha Alta', F4 'Fecha Fin Contrato', G4 'Jornada', H4 'Horas Semanales', I4 'Salario Bruto Anual', J4 'Teléfono', K4 'Email', L4 'Contacto Emergencia', M4 'Alérgenos Propios', N4 'Talla Uniforme', O4 'Taquilla'. Frente a src/components/kit-gestion-personal/ContentGrid.tsx:14: «Base de datos completa: datos personales, puesto, convenio, vencimiento contrato, carnets (manipulador, PRL), tallas de uniforme». La sección de carnets está en Vencimientos!A25:E35, con A26:A35 en blanco para teclear a mano.",
+      "fix": "Añadir a 'Plantilla' una columna 'Convenio aplicable' (y actualizar el autofiltro a A4:P34 y el ancho) y, para los carnets, dos columnas de fecha de caducidad ('Carnet manipulador' y 'PRL') desde las que la hoja Vencimientos tire con la misma mecánica que usa para los contratos. Si no se tocan los ficheros, corregir ContentGrid.tsx:14."
+     },
+     {
+      "id": "TEC-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Previsión por Servicio!A16 y B16",
+      "hallazgo": "El rótulo dice 'Coste laboral estimado/mes' a secas, pero la cifra es la de un único turno: el bloque se titula 'PERSONAL NECESARIO POR TURNO' y B16 multiplica ese total por el salario sin considerar cuántos turnos abre el local. Un restaurante que sirva comidas y cenas —lo normal en España, y lo que el propio kit contempla en 01 con turnos M, T y N— verá aproximadamente la mitad de su coste real.",
+      "evidencia": "A9 = 'PERSONAL NECESARIO POR TURNO'; B13 = '=B10+B11+B12' (total por turno); B16 = '=B13*B15*1.30'. No hay ninguna celda de turnos o servicios al día en toda la hoja. La calculadora BONUS sí la tiene: Calculadora!B22 = '=IF(B7=3,2,1)'.",
+      "fix": "Añadir una celda de entrada 'Turnos al día' y llevar B16 a '=B13*<turnos>*B15*1.30'. Como mínimo, renombrar A16 a 'Coste laboral estimado de un turno (€/mes)'."
+     },
+     {
+      "id": "TEC-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora!B29 y A9",
+      "hallazgo": "El coste anual multiplica por 14 un coste mensual que ya incluye Seguridad Social, sin declarar en ninguna parte la hipótesis de las catorce pagas. Como la celda de entrada pide 'Salario medio bruto MENSUAL', el usuario que introduzca ahí su bruto anual dividido entre doce —la lectura natural del rótulo— se lleva un anual inflado un 16,7 %.",
+      "evidencia": "B29 = '=B28*14' sobre B28 = '=B26+B27' (bruto más 30 % de SS). A9 = 'Salario medio bruto mensual (€):' con B9 = 1800. Con los valores por defecto: B28 = 44.460,00 € y B29 = 622.440,00 €; a doce meses serían 533.520,00 €, o sea 88.920 € de diferencia sólo por una convención no explicada. Ninguna nota de la hoja ni de Instrucciones menciona las catorce pagas.",
+      "fix": "Cambiar A9 a 'Salario medio bruto mensual en 14 pagas (€):' y añadir bajo B29 una nota '(14 pagas; si tu convenio prorratea, usa 12)'. O convertir el 14 en celda de entrada 'Pagas al año'."
+     },
+     {
+      "id": "TEC-22",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Plantilla (configuración de página y paneles)",
+      "hallazgo": "La hoja más ancha del kit —quince columnas, 248 unidades de ancho— está forzada a una sola página A4 apaisada, lo que la reduce a un tamaño de letra ilegible al imprimir; y es la única hoja de datos del kit sin panel inmovilizado, de modo que al desplazarse a la derecha para ver el salario o la talla se pierde de vista el nombre del empleado.",
+      "evidencia": "Ancho total de A a O = 248 (en A4 apaisado caben del orden de 110-120 a escala 1:1, así que el ajuste ronda el 45 %). page_setup: orientation=landscape, paperSize=9, fitToWidth=1, fitToPage=True. freeze_panes = None, frente a Cuadrante Semanal (A6), Registro Horas (A5), Nóminas (A5), Checklist Onboarding (A7), Calendario Anual (A6), Solicitudes (A5), Histórico (A5) y Vencimientos (A7), que sí lo tienen. Tampoco hay Print_Titles para 'Plantilla' en los definedNames del libro (sólo lo hay para 'Vencimientos').",
+      "fix": "freeze_panes = 'B5' en 'Plantilla' (fija cabecera y columna del nombre), fitToWidth = 2 para que se imprima en dos páginas legibles en lugar de una ilegible, y declarar Print_Titles $4:$4 y print_title_cols $A:$A para que el nombre se repita en la segunda página."
+     },
+     {
+      "id": "TEC-23",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Mensual (hoja completa) e Instrucciones!B5:B20",
+      "hallazgo": "Además de no calcular nada (TEC-05), la hoja mensual carece de la validación de datos por lista que sí protege a la semanal, no tiene panel inmovilizado en sus cuatro bloques y no se menciona ni una vez en las Instrucciones del fichero, que hablan siempre en singular de 'la columna Total Horas'. El usuario no tiene forma de saber que se espera que la rellene a mano.",
+      "evidencia": "La validación de lista 'M,T,N,P,L' cubre B6:H20 de 'Cuadrante Semanal' y ninguna celda de 'Cuadrante Mensual'. freeze_panes = None en la mensual (la semanal tiene A6). Instrucciones!B5:B20 no contiene la palabra 'mensual'. Los cuatro bloques (filas 4, 23, 42 y 61) repiten cabecera pero el Print_Titles del libro sólo declara 'Cuadrante Semanal'!$5:$5.",
+      "fix": "Al portar las fórmulas (TEC-05), replicar también la validación de lista sobre los cuatro bloques, poner freeze_panes = 'A5' y añadir a Instrucciones una línea que explique para qué sirve la hoja mensual y cómo se relaciona con la semanal."
+     },
+     {
+      "id": "TEC-24",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "Ficha Evaluación!B26:D28, B31:D33 y B36:D38",
+      "hallazgo": "Las tres áreas de texto libre de la ficha —FORTALEZAS DESTACADAS, ÁREAS DE MEJORA y OBJETIVOS PARA PRÓXIMO PERIODO— son celdas combinadas de una sola fila, sin ajuste de texto y sin alto de fila definido. Una celda combinada no autoajusta el alto en Excel, así que cualquier comentario que pase de una línea se corta al imprimir, que es exactamente lo que se hace con una ficha de evaluación que las dos partes firman (A40).",
+      "evidencia": "Combinaciones B26:D26, B27:D27, B28:D28, B31:D31, B32:D32, B33:D33, B36:D36, B37:D37, B38:D38. En B26, B28, B31 y B36: alignment.wrap_text = None. row_dimensions de la hoja: {} (ningún alto definido). Anchos B=35, C=14, D=40, o sea unos 89 caracteres por línea antes del corte. El mismo patrón está en BONUS-01-briefing-cambio-turno.xlsx, Briefing!A46:D49 (OBSERVACIONES GENERALES).",
+      "fix": "Poner wrap_text = True en las nueve celdas combinadas y fijar row_dimensions[26..28].height = 30 (ídem 31-33 y 36-38), y lo mismo en las cuatro filas de observaciones de BONUS-01."
+     },
+     {
+      "id": "TEC-25",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Resumen Mensual!B3; 03 Ratio Coste Laboral!B4:B5; 03 Previsión!B15; BONUS-02 Calculadora!B9",
+      "hallazgo": "Las celdas donde se introduce dinero llevan formato General o numérico sin símbolo, mientras las celdas de resultado del mismo fichero sí llevan €. La incoherencia se ve en pantalla —la tarifa se lee '12' y el coste '€144,00'— y en las hojas de coste laboral deja sin marca de moneda dos importes de cinco o seis cifras.",
+      "evidencia": "02 Resumen Mensual!B3 ('Tarifa hora base (€):') tiene number_format 'General' con valor 12, frente a E6:G20 con '€#,##0.00'. 03 Ratio Coste Laboral!B4 y B5 usan '#,##0.00' (sin €) mientras Nóminas!C5:E24 usa '€#,##0.00'. 03 Previsión!B15 (salario 1800) es 'General' y B16 es '€#,##0.00'. BONUS-02 Calculadora!B9 (1800) es 'General' y B26:B29 son '€#,##0.00'.",
+      "fix": "Aplicar '€#,##0.00' a esas cinco celdas de entrada. Y de paso, en 02 Registro Horas!C5:D54 poner 'hh:mm' en lugar de General, y B5:B54 'DD/MM/YYYY', que hoy dependen de que Excel adivine bien lo que teclea el usuario."
+     },
+     {
+      "id": "TEC-26",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas!H5:H54 y 03-coste-laboral-mensual.xlsx Nóminas!F5:F24",
+      "hallazgo": "Dos columnas con validación y encabezado propios no participan en ningún cálculo ni en ningún resumen: son datos que se piden al usuario y no se usan para nada. 'Tipo Extra' (Voluntaria/Obligatoria) es justamente la distinción que las Instrucciones señalan como relevante, y 'Horas Contratadas' de Nóminas permitiría un coste/hora que el kit no ofrece.",
+      "evidencia": "H5:H54 tiene validación de lista 'Voluntaria,Obligatoria' y ninguna fórmula del libro referencia la columna H; el Resumen Mensual no la desglosa. Nóminas!F4 'Horas Contratadas' no aparece en D5:E24 ni en 'Ratio Coste Laboral' ni en 'Previsión por Servicio'. Instrucciones de 02, B13: '▸ Las horas extra son voluntarias salvo pacto en convenio o contrato' y B18: '▸ Tipo: Voluntaria / Obligatoria (fuerza mayor)'.",
+      "fix": "En 02, desglosar en el Resumen dos columnas más con SUMIFS por tipo, que es lo que hace útil el dato en una inspección. En 03, añadir a Nóminas una columna 'Coste/hora' = coste total dividido entre horas del mes, que es el número que se usa para escandallar mano de obra y engancha con el Kit de Escandallos."
+     },
+     {
+      "id": "TEC-27",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "Histórico!G5:G21",
+      "hallazgo": "La columna 'Tendencia' sólo compara el cuarto trimestre contra el tercero, así que permanece en blanco durante nueve meses del año y nunca informa de la evolución entre Q1 y Q2 o entre Q2 y Q3. Para un fichero cuyo argumento es el seguimiento trimestral, la columna está muerta tres cuartas partes del tiempo.",
+      "evidencia": "G5 = '=IF(AND(E5<>\"\",D5<>\"\"),IF(E5>D5,\"↑ Mejora\",IF(E5<D5,\"↓ Baja\",\"→ Estable\")),\"\")'. E es Q4 y D es Q3 (cabeceras B4:E4 = Q1, Q2, Q3, Q4). Con sólo Q1 y Q2 rellenos devuelve cadena vacía.",
+      "fix": "Comparar los dos últimos trimestres informados: con LOOKUP(2;1/(B5:E5<>\"\");B5:E5) para el último y un equivalente sobre el rango recortado para el anterior, o más simple, una columna auxiliar oculta con el índice del último trimestre relleno."
+     },
+     {
+      "id": "TEC-28",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx",
+      "ubicacion": "Briefing!C16:C22 y A24:A30",
+      "hallazgo": "Las dos columnas del briefing que piden una clasificación —'Gravedad' de la incidencia y 'Prioridad' de la tarea— no tienen validación de lista, cuando el resto del kit sí la usa para campos equivalentes. En un documento que se rellena a toda prisa al final del turno y que sirve de traspaso, dejar el criterio a texto libre hace que cada encargado escriba una escala distinta y que el archivo posterior no sea comparable.",
+      "evidencia": "La hoja 'Briefing' no tiene ninguna entrada en data_validations (0 reglas). Cabeceras C16 'Gravedad' y A24 'Prioridad'. Compárese con 01 Cuadrante Semanal (lista 'M,T,N,P,L'), 02 Registro Horas (lista 'Voluntaria,Obligatoria'), 05 Solicitudes (lista 'Pendiente,Aprobado,Denegado') y 07 Plantilla (dos listas).",
+      "fix": "Validación de lista 'Alta,Media,Baja' en C17:C22 y 'Urgente,Alta,Normal' en A25:A30. Las Instrucciones ya prometen trazabilidad ('▸ Archiva los briefings para trazabilidad'), y sin escala fija no la hay."
+     }
+    ]
+   },
+   "dominio": {
+    "lente": "Director/a de RR. HH. y Operaciones de restauración en España (15 años): cuadrantes y descansos, registro horario, horas extra y convenio de hostelería, coste laboral real, onboarding con alta en SS, vacaciones, evaluación, directorio bajo RGPD, briefing de turno y dimensionamiento de plantilla por cubiertos.",
+    "veredicto": "no listo",
+    "motivo": "El kit falla en lo que vende. Tres ficheros muestran cifras falsas nada más abrirlos (onboarding marca «4 de 51 tareas completadas · 8,51 %» con el checklist vacío; la ficha de evaluación se abre con #DIV/0! en PUNTUACIÓN MEDIA y NIVEL; el semáforo de coste laboral dice «🟢 EXCELENTE» sin datos). El control de horas extra devuelve horas NEGATIVAS y 0 extra en el turno de noche/cierre —justo el que genera horas extra en hostelería— y computa toda la jornada como extra si se olvida una columna. El «Calendario Anual» de vacaciones tiene UNA celda por mes, así que 30 días de agosto cuentan como 1 día usado. Las dos calculadoras de plantilla del mismo kit dan resultados distintos con los mismos ratios y los mismos 80 cubiertos (15 vs 8 personas por turno), y la del BONUS arroja 622.440 €/año de coste laboral para un casual de 80 cubiertos/día — un ratio cercano al 100 % de las ventas, contra el 28-33 % que marca la hoja de al lado. A eso se suman afirmaciones legales incorrectas vendidas como Estatuto de los Trabajadores (11 h de descanso en vez de 12; recargos ×1,75/×2,0 que el ET no fija; «multas hasta 10.000 €/empleado» por un registro horario que el propio kit dice NO incluir), alertas prometidas en la landing que no existen en ningún fichero, y una columna de datos de salud (alérgenos del personal) sin una sola advertencia de RGPD. Nada de esto lo ve un gate determinista, y cualquiera de los cinco primeros hallazgos justifica un reembolso el primer día de uso.",
+    "hallazgos": [
+     {
+      "id": "DOM-01",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding:C68,E68,C69,C70",
+      "hallazgo": "El contador de progreso —la mejora estrella del changelog v1.1 («el porcentaje ahora se calcula de verdad»)— cuenta las CABECERAS de columna como tareas completadas: el fichero recién descargado y sin tocar muestra «Total tareas completadas: 4 de 51» y «Progreso: 8,51 %».",
+      "evidencia": "C68 = '=COUNTIF(F7:F65,\"✓\")' con valor cacheado 4.0. El rango F7:F65 incluye F19, F30, F42 y F57, que son las celdas de cabecera con el literal '✓' de las secciones Formación Obligatoria, Equipamiento, Formación Operativa y Periodo de Prueba. E68 = '=COUNTIF(B7:B65,\"?*\")' cacheado 51.0, porque cuenta también B19/B30/B42/B57 ('Tarea') además de las 47 tareas reales; a dos filas de distancia C69 = 47 y C70 = 8.51063829787234 (=4/47). La hoja se contradice a sí misma en pantalla: «4 de 51» arriba y «Total tareas: 47» debajo.",
+      "fix": "C68 → '=COUNTIF(F7:F16,\"✓\")+COUNTIF(F20:F27,\"✓\")+COUNTIF(F31:F39,\"✓\")+COUNTIF(F43:F54,\"✓\")+COUNTIF(F58:F65,\"✓\")'. E68 y C69 → '=COUNTA(B7:B16,B20:B27,B31:B39,B43:B54,B58:B65)' (47, y se mantiene si se añaden tareas). Regenerar el cache tras el cambio."
+     },
+     {
+      "id": "DOM-02",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "Ficha Evaluación:C22,C23",
+      "hallazgo": "La ficha de evaluación se abre con #¡DIV/0! en «PUNTUACIÓN MEDIA» y en «NIVEL». Es una hoja pensada para imprimirse y firmarse (A4 con firmas de evaluador y empleado), así que el cliente la imprime con dos errores de Excel en el centro del documento.",
+      "evidencia": "C22 = '=AVERAGE(C12:C21)' con valor cacheado literal '#DIV/0!'; C23 = '=IF(C22>=4.5,...)' cacheado también '#DIV/0!'. Son las dos únicas celdas de resultado de la hoja. Barrido de todo el kit: son los únicos #ERROR cacheados de los 9 ficheros.",
+      "fix": "C22 → '=IF(COUNT(C12:C21)=0,\"\",AVERAGE(C12:C21))' y C23 → '=IF(C22=\"\",\"\",IF(C22>=4.5,...))'. Regenerar el cache."
+     },
+     {
+      "id": "DOM-03",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas:E5:E54,G5:G54",
+      "hallazgo": "El cálculo de horas trabajadas no contempla el cruce de medianoche: cualquier turno de noche o de cierre devuelve horas NEGATIVAS y, en consecuencia, CERO horas extra. Es exactamente el turno que más horas extra genera en hostelería, en el fichero que se llama «Control de Horas Extras».",
+      "evidencia": "E5 = '=IF(AND(C5<>\"\",D5<>\"\"),(D5-C5)*24,\"\")'. Con entrada 20:00 y salida 01:30 devuelve (0,0625−0,8333)×24 = −18,50 h. G5 = '=IF(E5<>\"\",MAX(0,E5-F5),\"\")' → MAX(0; −18,50−8) = 0 horas extra. Un cierre de 5,5 h reales se registra como −18,50 h trabajadas y 0 h extra, sin ningún aviso. El turno N documentado en el kit (01-cuadrante, Instrucciones B18: «N = Noche 23:00-7:00») cae siempre en este caso.",
+      "fix": "E5 → '=IF(AND(C5<>\"\",D5<>\"\"),IF(D5<C5,D5+1-C5,D5-C5)*24,\"\")' replicado en E5:E54. Añadir además formato 'hh:mm' a C5:D54, que hoy están en 'General' (escribir «9» en vez de «9:00» produce 192 h trabajadas sin aviso)."
+     },
+     {
+      "id": "DOM-04",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "Calendario Anual:B5:N20 · Solicitudes:F5:F34",
+      "hallazgo": "El «Calendario Anual» de vacaciones tiene UNA sola celda por MES (Ene…Dic), no por día. El máximo de «Días Usados» que puede contar es 12, y un empleado que disfrute las cuatro semanas de agosto figura con 1 día usado y 29 restantes. Encima el saldo de la hoja Solicitudes no lee ese dato: es entrada manual, pese a que las Instrucciones prometen cálculo automático.",
+      "evidencia": "Calendario Anual B5:M5 = 'Ene','Feb',…,'Dic' (12 columnas) y N6 = '=IF(B6=\"V\",1,0)+IF(C6=\"V\",1,0)+…+IF(M6=\"V\",1,0)' → máximo 12. La validación de esas celdas es list \"V,B,F,P,\" (un solo código por mes). En Solicitudes, F5 = '=IF(E5<>\"\",30-E5,\"\")' donde E5 («Días Usados YTD») no tiene fórmula: es manual y está desconectada de N6. Instrucciones B8: «Los días usados y restantes se calculan automáticamente (de 30 días legales)» — falso en las dos mitades.",
+      "fix": "Rehacer el Calendario Anual con 12 bloques de días (o 366 columnas con cabecera de fecha), o como mínimo sustituir el código por mes por un contador numérico de días por mes ('Días V en Ene' … 'Días V en Dic') y N = SUM(B:M). Enlazar F5 → '=IF(A5=\"\",\"\",$B$2-SUMIF(''Calendario Anual''!$A$6:$A$20,A5,''Calendario Anual''!$N$6:$N$20))', con B2 = días de convenio (celda editable), y borrar la columna E manual."
+     },
+     {
+      "id": "DOM-05",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Semanal:J6:J20 · Instrucciones:B11-B12 · src/components/kit-gestion-personal/ContentGrid.tsx:8",
+      "hallazgo": "La landing promete cuatro alertas automáticas en el cuadrante y solo existe UNA. Además la única cita legal del fichero es incorrecta: el Art. 34.3 ET exige 12 horas entre jornadas en España (las 11 h son el mínimo de la Directiva 2003/88/CE), y los propios turnos estándar del kit generan encadenamientos de 8 h de descanso sin que nada avise.",
+      "evidencia": "ContentGrid.tsx:8 — «alertas automaticas: descanso minimo 11h entre turnos, maximo 40h/semana, libranzas y rotacion de turnos». En el fichero, la única fórmula de alerta es J6 = '=IF(I6>40,\"⚠ EXCESO\",IF(I6>0,\"OK\",\"\"))'. No hay ninguna fórmula que mire el turno del día anterior, ni que cuente días libres, ni de rotación. Instrucciones B12: «mínimo 11h de descanso entre turnos (Estatuto Trabajadores Art. 34)». Con los turnos que define el propio fichero (B16-B19), T (15:00-23:00) seguido de M (7:00-15:00) deja 8 h de descanso y N (23:00-7:00) seguido de T deja 8 h: ambas combinaciones son marcables sin aviso y las dos incumplen el ET. El testimonio del JSON-LD de la landing (src/pages/KitGestionPersonal.tsx, review de «David Ruiz») afirma literalmente «Las alertas de 11h entre turnos y maximo 40h/semana me avisan automaticamente».",
+      "fix": "(1) Corregir Instrucciones B12 a «mínimo 12 h entre el final de una jornada y el inicio de la siguiente (Art. 34.3 ET)». (2) Añadir columna de alerta de descanso comparando el turno del día anterior con el del día actual mediante una tabla de hora de fin/inicio por código, y una columna «Días libres» = COUNTIF(B6:H6,\"L\") con alerta si <1,5. (3) Si no se implementan, borrar de ContentGrid.tsx:8 y del testimonio del JSON-LD las alertas de descanso, libranzas y rotación."
+     },
+     {
+      "id": "DOM-06",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/components/kit-gestion-personal/HeroSection.tsx",
+      "ubicacion": "HeroSection.tsx:71 · FaqAccordion.tsx:8",
+      "hallazgo": "El badge de urgencia del hero vende con el miedo a una multa por registro horario que este producto explícitamente NO cubre —lo dice su propia FAQ— y con cifras y fechas legales incorrectas.",
+      "evidencia": "HeroSection.tsx:71 — «Control horario obligatorio 2026 — multas hasta 10.000 EUR/empleado». El registro de jornada es obligatorio en España desde el 12-05-2019 (RD-ley 8/2019), y su incumplimiento es infracción grave del Art. 7.5 LISOS sancionada por centro de trabajo (tramo grave 751-7.500 €), no «por empleado»; la sanción por trabajador y el importe elevado pertenecen al proyecto de reforma, no al régimen vigente. Dos secciones más abajo, FaqAccordion.tsx:8 responde: «No. El registro/fichaje horario digital requiere un software homologado… Este kit es para PLANIFICACION de turnos». La misma frase añade «(obligatoria en Espana desde 2026)» y «software homologado», cuando no existe homologación oficial de sistemas de fichaje.",
+      "fix": "Sustituir el badge por una promesa que el kit sí cumpla (p. ej. «Planifica turnos y controla el coste laboral de tu equipo»). En la FAQ: «El registro de jornada es obligatorio en España desde 2019 (RD-ley 8/2019) y debe hacerse con un sistema de fichaje; este kit no lo sustituye». Eliminar «homologado» y la fecha 2026, o citar expresamente que se refiere a la reforma en tramitación."
+     },
+     {
+      "id": "DOM-07",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Resumen Mensual:E6:F20 · src/components/kit-gestion-personal/FaqAccordion.tsx:12 · src/pages/KitGestionPersonal.tsx (FAQPage JSON-LD)",
+      "hallazgo": "La FAQ —publicada además como structured data FAQPage, es decir, susceptible de aparecer en Google— promete que la plantilla calcula el coste «segun el porcentaje de tu convenio colectivo». No existe ninguna celda de convenio: los multiplicadores están escritos dentro de 30 fórmulas y no se pueden cambiar sin editarlas una a una.",
+      "evidencia": "E6 = '=IF(B6=\"\",\"\",MIN(B6,MAX(0,80-(C6-B6)))*$B$3*1.75)' y F6 = '=…*$B$3*2)'. El literal 1.75 aparece en E6:E20 y el 2 en F6:F20; la única celda parametrizable es B3 (tarifa hora base, 12 €). FaqAccordion.tsx:12: «calcula automaticamente el coste de cada hora extra segun el porcentaje de tu convenio colectivo. Solo introduces las horas trabajadas y el sistema hace el resto». Tampoco es cierto el «resto»: la columna B («Total H. Extra») del Resumen no tiene fórmula, es transcripción manual desde la hoja Registro Horas, que sí calcula pero no agrega por empleado.",
+      "fix": "Añadir en Resumen Mensual dos celdas de parámetro (B2 = recargo primeras 80 h, D2 = recargo por encima) y usar $B$2/$D$2 en lugar de 1.75 y 2. Enlazar B6 → '=IF(A6=\"\",\"\",SUMIF(''Registro Horas''!$A$5:$A$54,A6,''Registro Horas''!$G$5:$G$54))'. Si no, reescribir la FAQ y el JSON-LD: «recargo configurable / dos tramos preconfigurados»."
+     },
+     {
+      "id": "DOM-08",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Nóminas:D5:D24 · Previsión por Servicio:B16 · Ratio Coste Laboral (toda la hoja)",
+      "hallazgo": "El coste laboral se infravalora sistemáticamente: la cotización empresarial se fija en un 30 % (el tipo real en hostelería está en 33-35 %) y no se contemplan las pagas extra. El error combinado ronda el 17 % del coste de personal, y contamina el ratio, el semáforo y cualquier decisión de precio o de plantilla que se tome con él.",
+      "evidencia": "D5 = '=IF(C5<>\"\",C5*0.30,\"\")' — el 0.30 está escrito en las 20 fórmulas D5:D24, no hay celda de tipo editable. Desglose real de un indefinido de hostelería: 23,60 % contingencias comunes + 5,50 % desempleo + ~3,50 % AT/EP + 0,20 % FOGASA + 0,60 % FP + MEI ≈ 34 % (más con temporales). La columna C se llama «Salario Bruto Mes» y no hay ninguna fila, columna ni nota sobre las 14 pagas: si el usuario introduce su nómina mensual, faltan dos pagas al año (×1,1667). Coste real ≈ bruto×1,1667×1,34 = ×1,563 frente al ×1,30 que aplica el fichero. El mismo 0.30 se repite en Previsión por Servicio B16 ('=B13*B15*1.30') y en BONUS-02 Calculadora B27, y la nota A20 de «Ratios por Tipo» lo consagra («incluye SS empresa (~30% sobre bruto)»).",
+      "fix": "Crear en Nóminas una celda de parámetro (p. ej. B2 = 33 % «SS empresa — ajustar a tu CNAE y tipo de contrato») y usar $B$2 en D5:D24; añadir columna «Nº pagas/año» o una nota que exija introducir el bruto prorrateado a 12. Propagar el parámetro a Previsión por Servicio B16 y a BONUS-02 B27, y corregir la nota A20 de Ratios por Tipo."
+     },
+     {
+      "id": "DOM-09",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Previsión por Servicio:B4:B16",
+      "hallazgo": "La «Previsión de Personal por Servicio» confunde cubiertos/DÍA con cubiertos/SERVICIO y devuelve un dimensionamiento absurdo: 15 personas por turno para 80 cubiertos al día. Además contradice al BONUS-02 del mismo kit, que con los mismos ratios y los mismos 80 cubiertos calcula 8 personas por turno.",
+      "evidencia": "Con los valores precargados (B4 = 80 «Covers previstos / día», B5 = 20, B6 = 12, B7 = 25): B10 = CEILING(80/20) = 4 cocineros, B11 = CEILING(80/12) = 7 camareros, B12 = CEILING(80/25) = 4 barmans, B13 = 15 personas/turno (valores cacheados 4.0/7.0/4.0/15.0) y B16 = '=B13*B15*1.30' = 35.100 € cacheado. BONUS-02 Calculadora, con los mismos 80 covers y los mismos ratios, primero divide por servicios (B17 = '=IF(B7=3,CEILING(B5/2,1),B5)' = 40) y obtiene B21 = 8 personas/turno. Dos entregables del mismo kit responden 15 y 8 a la misma pregunta. Encima B16 se etiqueta «Coste laboral estimado/mes» calculando un solo turno.",
+      "fix": "Renombrar B4 a «Cubiertos por SERVICIO (no por día)» o replicar la división por servicios del BONUS-02, y armonizar los dos ficheros con la misma fórmula. Corregir la etiqueta de B16 a «Coste de un turno» o multiplicar por los turnos diarios y el factor de cobertura."
+     },
+     {
+      "id": "DOM-10",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora:B23,B26:B29",
+      "hallazgo": "El resultado por defecto de la calculadora es ruinoso y contradice frontalmente la hoja de referencia que viene al lado: para un restaurante casual de 80 cubiertos/día calcula 19 empleados y 622.440 € de coste laboral anual, lo que supone un ratio cercano al 100 % de las ventas frente al 28-33 % que la propia hoja marca como objetivo.",
+      "evidencia": "Valores cacheados con los datos precargados (80 covers, casual, 1.800 € de salario medio): B23 = 19 personas, B26 = 34.200 €/mes, B27 = 10.260 €, B28 = 44.460 €/mes, B29 = 622.440 €/año. Con 6 días de apertura × 52 semanas × 80 cubiertos = 24.960 cubiertos/año, y un ticket realista de casual (25 €), las ventas serían ~624.000 € → ratio de coste laboral del 99,7 %. La hoja «Ratios por Tipo» E5 dice que un casual debe estar en 28-33 %. La causa es el ratio de sala: 12 covers/camarero aplicado a los 40 cubiertos de un servicio da 4 camareros para 40 comensales (1 por cada 10, ratio de fine dining), y luego se multiplica por 2 turnos y por 1,15.",
+      "fix": "Revisar los ratios de sala a cubiertos atendidos POR SERVICIO en casual (25-40 por camarero) y añadir un control de coherencia en la propia hoja: pedir el ticket medio, calcular las ventas estimadas y mostrar el ratio de coste laboral resultante junto al objetivo de la tabla, con aviso si se desvía. Sin ese contraste la calculadora puede llevar a contratar el doble de plantilla de la necesaria."
+     },
+     {
+      "id": "DOM-11",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas:F5:F54,G5:G54",
+      "hallazgo": "Si la columna «H. Contratadas» se deja vacía —no tiene valor por defecto, ni validación, ni fórmula—, la jornada COMPLETA se computa como horas extra y se paga a ×1,75. Una hoja rellenada a medias multiplica el coste de personal sin un solo aviso.",
+      "evidencia": "G5 = '=IF(E5<>\"\",MAX(0,E5-F5),\"\")'. Con E5 = 8 (jornada normal) y F5 vacía, F5 vale 0 en la resta → G5 = 8 horas extra. Esas 8 h llegan al Resumen Mensual y se valoran a 12 €×1,75 = 21 €/h: 168 € de sobrecoste por un día ordinario. F5:F54 están vacías en el fichero entregado y en formato 'General', sin lista ni valor sugerido.",
+      "fix": "G5 → '=IF(OR(E5=\"\",F5=\"\"),\"\",MAX(0,E5-F5))' en G5:G54, y precargar F5:F54 con 8 o enlazarlas al directorio de plantilla (07, columna H «Horas Semanales»/5)."
+     },
+     {
+      "id": "DOM-12",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Instrucciones:B9-B12",
+      "hallazgo": "El fichero presenta como «Legislación española (Estatuto de los Trabajadores)» dos recargos que el ET no fija. El Art. 35.1 ET remite la cuantía al convenio o al contrato con un único suelo —no inferior al valor de la hora ordinaria—; los ×1,75 y ×2,0 no existen en la ley y en la mayoría de convenios de hostelería el recargo es menor o se compensa con descanso.",
+      "evidencia": "Instrucciones B9 = 'Legislación española (Estatuto de los Trabajadores):', B11 = '▸ Las primeras 80h se pagan ×1.75 del salario/hora (o según convenio).', B12 = '▸ Horas por encima de 80 anuales: ×2.0 (o compensación en descanso).' Además B10 («Máximo 80 horas extra al año») omite dos excepciones del Art. 35.2 que cambian el cómputo: las horas compensadas con descanso dentro de los 4 meses siguientes no computan en ese tope, y las de fuerza mayor tampoco — pese a que la propia hoja Registro Horas tiene una columna H «Tipo Extra» con la lista «Voluntaria,Obligatoria» que no interviene en ningún cálculo.",
+      "fix": "Reescribir B11-B12 como «Recargo orientativo: consulta tu convenio provincial de hostelería. El ET (Art. 35.1) solo exige que la hora extra no valga menos que la ordinaria». Añadir a B10 las dos excepciones y hacer que la columna H excluya del tope de 80 h las marcadas como fuerza mayor."
+     },
+     {
+      "id": "DOM-13",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Plantilla:M4 · Instrucciones:B12,B14-B17",
+      "hallazgo": "El directorio pide registrar los «Alérgenos Propios» de cada empleado —un dato de salud, categoría especial del Art. 9 RGPD— y la sección de protección de datos del propio fichero no lo menciona: habla de contraseñas y de no enviarlo por email, pero no de base jurídica ni de consentimiento explícito. El comprador recopila datos de salud de su plantilla creyendo que el kit ya contempla el RGPD.",
+      "evidencia": "Plantilla M4 = 'Alérgenos Propios', listado en Instrucciones B12 como «Datos operativos: talla uniforme, taquilla, alérgenos propios» — es decir, presentado al mismo nivel que la talla de camiseta. La sección «Protección de datos (RGPD)» (B14-B17) dice solo: «proteger con contraseña», «Solo acceso para RRHH y dirección», «No compartir por email sin cifrar». El tratamiento de datos de salud exige consentimiento explícito (Art. 9.2.a) o una de las excepciones tasadas; no se aporta modelo ni advertencia. La columna L «Contacto Emergencia» recoge además datos de un tercero sin previsión de información. El libro tampoco viene protegido con contraseña pese a recomendarlo.",
+      "fix": "Renombrar M4 a «Alergias/intolerancias (dato de salud — requiere consentimiento explícito por escrito, Art. 9.2.a RGPD)», añadir en Instrucciones la base jurídica, el plazo de conservación y la advertencia de que la columna es opcional, y ofrecer un modelo de consentimiento en el propio kit."
+     },
+     {
+      "id": "DOM-14",
+      "severidad": "alta",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Vencimientos:A7:E21 vs Plantilla:A5:A34",
+      "hallazgo": "La alerta de contratos a expirar —la funcionalidad que justifica la hoja— solo mira a los 15 primeros empleados. Del 16 en adelante, un contrato temporal vence sin que nada avise, en silencio y sin ninguna nota que advierta del límite.",
+      "evidencia": "Las filas de Vencimientos van de A7 = '=IF(Plantilla!A5<>\"\",Plantilla!A5,\"\")' hasta A21 = '=IF(Plantilla!A19<>\"\",Plantilla!A19,\"\")': 15 filas. La hoja Plantilla tiene validación de datos hasta la fila 34 (D5:D34, G5:G34) y dimensiones A1:O36, es decir, capacidad para 30 empleados. Instrucciones B7 promete sin matices: «La hoja 'Vencimientos' te alerta de contratos a punto de expirar». Un temporal que vence sin preaviso (Art. 49.1.c ET, 15 días en contratos de más de un año) o que se encadena puede acabar convertido en indefinido.",
+      "fix": "Extender el bloque de fórmulas de Vencimientos a A7:E36 para cubrir las 30 filas de Plantilla, o sustituirlo por una tabla filtrable. Mientras tanto, indicar el límite en Instrucciones."
+     },
+     {
+      "id": "DOM-15",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding:B10,E7:E65",
+      "hallazgo": "El checklist no dice que el alta en la Seguridad Social debe ser PREVIA al inicio de la prestación, y ninguna de las 47 tareas trae fecha límite precargada, así que el orden queda a criterio del usuario. Es el incumplimiento más caro del onboarding en España y el kit lo lista como un ítem más, en cuarto lugar y sin plazo.",
+      "evidencia": "B10 = 'Alta en Seguridad Social (TA.2/S)', sin ninguna marca de precedencia. La columna E («Fecha Límite») está vacía en las 47 filas. El alta debe cursarse antes del comienzo de la prestación de servicios (Art. 32.3 del RD 84/1996); trabajar sin alta es infracción grave de la LISOS con sanción por trabajador. Faltan además dos trámites con plazo que el checklist no recoge: comunicación del contrato al SEPE vía Contrat@ (10 días hábiles) y entrega de la copia básica a la representación legal (10 días), así como el modelo 145 de IRPF.",
+      "fix": "Renombrar la tarea a «Alta en Seguridad Social (TA.2/S) — OBLIGATORIO antes del inicio de la jornada» y precargar la columna E con hitos relativos («Día −1», «Día 1», «Día 7», «Día 30»). Añadir las tareas de Contrat@, copia básica a la RLT y modelo 145."
+     },
+     {
+      "id": "DOM-16",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Ratio Coste Laboral:B7,B9,A16:C19",
+      "hallazgo": "El semáforo de coste laboral da dos veredictos falsos: dice «🟢 EXCELENTE» con la hoja vacía, y marca en rojo «ACCIÓN CORRECTIVA» a los negocios de alta cocina que están dentro del objetivo que fija la tabla de referencia impresa dos filas más abajo.",
+      "evidencia": "B7 = '=IF(B4>0,B5/B4*100,0)' con B4 (ventas) vacía → 0, y B9 = '=IF(B7<30,\"🟢 EXCELENTE (<30%)\",…)' con valor CACHEADO '🟢 EXCELENTE (<30%)': el fichero recién descargado felicita al usuario. Segundo: los umbrales 30/35 son fijos, mientras que en la misma hoja A16/B16 dicen «Fine Dining / Alta Cocina · Ratio Objetivo 35-40% · Rango Aceptable 33-42%» (y las Instrucciones B13 lo repiten). Un restaurante de alta cocina con un 38 % —en objetivo— recibe «🔴 ACCIÓN CORRECTIVA (>35%)».",
+      "fix": "B9 → '=IF(B4=\"\",\"— introduce las ventas del mes\",IF(B7<$D$4,…))' con los umbrales en celdas editables, y precargarlos según el tipo de negocio elegido (VLOOKUP sobre la tabla A14:C19) en lugar de fijarlos en 30/35."
+     },
+     {
+      "id": "DOM-17",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Mensual:A1:I80",
+      "hallazgo": "La hoja «Cuadrante Mensual» es una rejilla muerta: tiene columna «Horas» en las cuatro semanas y CERO fórmulas, cero validación de datos y ningún total mensual por empleado. La landing y el dashboard venden «planificación semanal y mensual»; la mitad mensual no calcula nada, hay que reescribir los nombres cuatro veces y sumar a mano.",
+      "evidencia": "Recuento sobre el fichero: 0 celdas con fórmula en la hoja 'Cuadrante Mensual' (las 31 fórmulas del libro están todas en 'Cuadrante Semanal'). ws.data_validations vacío para esa hoja, frente a la lista \"M,T,N,P,L\" que sí tiene la semanal. Los encabezados I4/I23/I42/I61 dicen 'Horas' bajo columnas permanentemente vacías. Sin total mensual no hay forma de comprobar el cómputo de jornada en promedio, que es justo para lo que sirve una vista mensual. ContentGrid.tsx:8 y KitGestionPersonalDashboard.tsx:15 («Semanal y mensual con alertas de cumplimiento legal»).",
+      "fix": "Replicar en las columnas I de las cuatro semanas la fórmula de horas de la hoja semanal, añadir la validación de datos, una columna de total mensual por empleado y una alerta de promedio; o enlazar los nombres con la hoja semanal para no teclearlos cuatro veces."
+     },
+     {
+      "id": "DOM-18",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-02-calculadora-plantilla-optima.xlsx",
+      "ubicacion": "Calculadora:B6",
+      "hallazgo": "«Días apertura / semana» es una celda de entrada MUERTA: ninguna fórmula del libro la utiliza. Un negocio que abre 4 días y otro que abre 7 obtienen exactamente el mismo resultado, y la landing vende precisamente ese input.",
+      "evidencia": "B6 = 6 ('Días apertura / semana'). Rastreo de referencias en las 16 fórmulas de la hoja (B12:B14, B17:B23, B26:B29, B33:B34): usan B5, B7, B8, B9, B12, B13, B14, B17, B18, B19, B20, B21, B22, B23, B26, B28, B32. B6 no aparece en ninguna. El único ajuste por descansos es el 1,15 fijo de B23 = '=CEILING(B21*B22*1.15,1)', insuficiente: con 6 días de apertura y jornada de 40 h, solo el descanso semanal ya exige un factor de 1,2, más vacaciones (≈1,09) y absentismo; el factor real en hostelería está en 1,35-1,5. ContentGrid.tsx:16 promete «Calcula cuantos empleados necesitas segun covers por servicio, ratio empleado/cubierto, dias de apertura y picos de demanda» (los picos de demanda tampoco existen en el fichero).",
+      "fix": "B23 → '=CEILING(B21*B22*(B6/5)*1.12,1)' (cobertura de descansos semanales por días de apertura + vacaciones/absentismo), documentando el factor. Si se prefiere no tocar la fórmula, eliminar B6 de la hoja y las «dias de apertura y picos de demanda» de ContentGrid.tsx:16."
+     },
+     {
+      "id": "DOM-19",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "Solicitudes:F5:F34 · Instrucciones:B11-B12",
+      "hallazgo": "El saldo de vacaciones concede 30 días fijos a todo el mundo: no admite el prorrateo por alta a mitad de año ni la alternativa de 22 días laborables que el propio fichero menciona. Es una cifra que se comunica al trabajador y genera reclamación.",
+      "evidencia": "F5 = '=IF(E5<>\"\",30-E5,\"\")', con el 30 escrito en las 30 fórmulas F5:F34. Instrucciones B11: «30 días naturales de vacaciones al año (Art. 38 ET)» y B12: «O 22 días laborables según convenio habitual hostelería» — si el usuario trabaja en laborables, el saldo miente en 8 días. Un empleado que entra el 1 de julio tiene derecho a la parte proporcional (≈15 días naturales) y la hoja le muestra 30. Además D5 = '=IF(AND(B5<>\"\",C5<>\"\"),C5-B5+1,\"\")' cuenta días naturales sin validar que la fecha fin sea posterior a la de inicio (un tecleo invertido da días negativos sin aviso).",
+      "fix": "Sustituir el 30 por una celda de parámetro por empleado (días de convenio) y añadir columna «Fecha alta» para prorratear: días = parámetro × días trabajados en el año / 365. Envolver D5 en '=IF(C5<B5,\"⚠ fechas invertidas\",…)'."
+     },
+     {
+      "id": "DOM-20",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/05-planificacion-vacaciones.xlsx",
+      "ubicacion": "Cobertura:A4:E29",
+      "hallazgo": "La hoja «Cobertura» está completamente vacía: encabezados y nada más, cero fórmulas y cero datos precargados. No comprueba que las vacaciones aprobadas respeten el mínimo de personal, ni avisa de solapes entre empleados del mismo puesto — que es la única razón por la que existe una hoja de cobertura en un cuadrante de vacaciones.",
+      "evidencia": "La hoja tiene 3 filas de turno (A6 'Mañana', A7 'Tarde', A8 'Noche') con B/C/D/E vacías y 17 filas de «quién sustituye a quién» sin una sola fórmula. Ninguna celda referencia a 'Calendario Anual' ni a 'Solicitudes'. Instrucciones B16-B17 se limitan a «Define mínimo de personal por turno y quién cubre a quién». La landing promete además «periodos de maxima demanda» (ContentGrid.tsx:12), que no existen en ninguna parte del fichero.",
+      "fix": "Añadir en el Calendario Anual una fila de recuento por mes ('=COUNTIF(B6:B20,\"V\")') y en Cobertura una alerta que compare ese recuento con el personal mínimo definido; marcar en rojo los meses con solape por encima del umbral. Sombrear julio-agosto y Navidad como temporada alta."
+     },
+     {
+      "id": "DOM-21",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/02-control-horas-extras.xlsx",
+      "ubicacion": "Registro Horas:A4:H4",
+      "hallazgo": "El registro no admite la jornada partida —el turno más común de la hostelería española— porque solo tiene una entrada y una salida por fila, y no hay columna de descanso. Registrado en dos filas, las horas contratadas se restan dos veces y las extras salen a cero.",
+      "evidencia": "Cabeceras A4:H4 = Empleado, Fecha, Hora Entrada, Hora Salida, Horas Trabajadas, H. Contratadas, Horas Extra, Tipo Extra. El propio kit define el turno partido en 01-cuadrante Instrucciones B19: «P = Partido (10:00-15:00 + 19:00-23:00) → 9h». Registrándolo en una fila (10:00-23:00) da 13 h trabajadas y 5 h extra falsas; en dos filas con F=8 en ambas, G = MAX(0;5−8) = 0 y MAX(0;4−8) = 0, cuando la realidad es 1 h extra. Ninguna de las dos formas da el resultado correcto.",
+      "fix": "Añadir columnas «Entrada 2 / Salida 2» (o «Descanso (h)») y calcular E como la suma de los dos tramos menos el descanso, con la comparación contra F. Alternativamente, agregar por empleado+fecha antes de restar las horas contratadas."
+     },
+     {
+      "id": "DOM-22",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding:C7:C65",
+      "hallazgo": "La columna «Categoría» viene con el texto TRUNCADO a 14 caracteres en las 47 filas: el cliente ve etiquetas cortadas a mitad de palabra que no significan nada.",
+      "evidencia": "C7 = 'DOCUMENTACIÓN ' (con espacio final), C20 = 'FORMACIÓN OBLI', C31 = 'EQUIPAMIENTO Y', C43 = 'FORMACIÓN OPER', C58 = 'PERIODO DE PRU'. Los cinco valores miden exactamente 14 caracteres, lo que delata un recorte por longitud fija en el generador sobre los títulos de sección ('📋 DOCUMENTACIÓN LEGAL Y ADMINISTRATIVA', '🎓 FORMACIÓN OBLIGATORIA'…).",
+      "fix": "Sustituir por las etiquetas cortas que ya usan las Instrucciones B11-B15: 'Documentación', 'Formación obligatoria', 'Equipamiento y accesos', 'Formación operativa', 'Periodo de prueba'. Revisar el generador por si el mismo recorte afecta a otros kits de la familia."
+     },
+     {
+      "id": "DOM-23",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/components/kit-gestion-personal/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:16 · BONUS-02 Calculadora:B8 · BONUS-02 'Ratios por Tipo':A5:A14",
+      "hallazgo": "La FAQ afirma que las plantillas sirven para «restaurante casual, fine dining, fast casual, hotel, catering, cadenas» y que «los ratios y formulas se adaptan a cualquier formato». La calculadora solo admite tres tipos: hotel y catering —citados por su nombre en la FAQ— no se pueden calcular.",
+      "evidencia": "FaqAccordion.tsx:16. En el fichero, B8 = 'Tipo negocio (1=casual, 2=fine, 3=fast)' y los ratios se resuelven con B12 = '=IF(B8=1,20,IF(B8=2,8,30))' — cualquier valor distinto de 1 o 2 cae en el 'else' de fast casual, así que teclear «4» da ratios de comida rápida en silencio. La hoja «Ratios por Tipo» del mismo libro lista 10 tipos (A5:A14: casual, fine dining, fast casual, cafetería, bar, pizzería, dark kitchen, hotel, catering, heladería) que la fórmula no cubre. Para dark kitchen (D11 = '—', sin sala) la calculadora seguiría exigiendo camareros y barmans.",
+      "fix": "Sustituir los IF anidados por un VLOOKUP contra la tabla 'Ratios por Tipo' con validación de datos desplegable de los 10 tipos, tratando el '—' como cero puestos. Mientras no exista, ajustar la FAQ a los formatos realmente soportados."
+     },
+     {
+      "id": "DOM-24",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/07-directorio-plantilla.xlsx",
+      "ubicacion": "Plantilla:A4:O4 · src/components/kit-gestion-personal/ContentGrid.tsx:14",
+      "hallazgo": "El directorio no trae la columna «convenio» que la landing enumera, ni los campos que primero pide una gestoría o una inspección: número de afiliación a la Seguridad Social, fecha de nacimiento y grupo profesional del convenio.",
+      "evidencia": "Cabeceras reales A4:O4 = Nombre Completo, DNI/NIE, Puesto, Tipo Contrato, Fecha Alta, Fecha Fin Contrato, Jornada, Horas Semanales, Salario Bruto Anual, Teléfono, Email, Contacto Emergencia, Alérgenos Propios, Talla Uniforme, Taquilla. ContentGrid.tsx:14 promete «datos personales, puesto, convenio, vencimiento contrato, carnets (manipulador, PRL), tallas de uniforme»: ni 'convenio' ni columnas de carnets están en esta hoja (los carnets viven en Vencimientos, en 10 filas de entrada manual para hasta 30 empleados). La fecha de nacimiento importa operativamente: a los menores de 18 años les está prohibida la nocturnidad y las horas extra (Art. 6 ET) y el cuadrante no puede detectarlo si el dato no existe.",
+      "fix": "Añadir columnas 'NAF / Nº Seguridad Social', 'Fecha nacimiento', 'Grupo profesional (convenio)' y 'Fin periodo de prueba'; ampliar la sección de carnets a 2 filas por empleado o convertirla en tabla. Alternativamente, corregir ContentGrid.tsx:14."
+     },
+     {
+      "id": "DOM-25",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Semanal:J6:J20",
+      "hallazgo": "La alerta de exceso usa un umbral fijo de 40 h para toda la plantilla, así que ignora a los contratados a tiempo parcial: un empleado con contrato de 20 h al que se le planifican 32 no dispara ninguna alerta, cuando esas 12 horas son horas complementarias con régimen y límites propios.",
+      "evidencia": "J6 = '=IF(I6>40,\"⚠ EXCESO\",IF(I6>0,\"OK\",\"\"))', replicado en J6:J20 con el 40 escrito en la fórmula. La hoja no tiene columna de horas contratadas por empleado, pese a que el fichero 07 (Plantilla, columnas G 'Jornada' y H 'Horas Semanales') y el 02 (columna F) sí distinguen jornada completa de parcial. La lista de validación del tipo de jornada en 07 incluye 'Parcial'.",
+      "fix": "Añadir una columna 'H. contratadas/semana' junto al nombre y cambiar la alerta a '=IF(I6>$col,\"⚠ EXCESO (+\"&I6-$col&\"h)\",…)', dejando 40 como valor por defecto."
+     },
+     {
+      "id": "DOM-26",
+      "severidad": "media",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/src/components/kit-gestion-personal/FaqAccordion.tsx",
+      "ubicacion": "FaqAccordion.tsx:8,12,16,20,24,28 · ContentGrid.tsx:7-16 · HeroSection.tsx",
+      "hallazgo": "Toda la copia visible de la landing está escrita SIN TILDES ni eñes: «gestion», «formulas», «automaticamente», «Espana», «disenadas», «planificacion», «Desempeno». Se renderiza literalmente en el acordeón de FAQ y en las tarjetas de producto, en una página de venta dirigida al mercado español.",
+      "evidencia": "FaqAccordion.tsx:8 «(obligatoria en Espana desde 2026)»; :16 «Las plantillas estan disenadas para hosteleria»; ContentGrid.tsx:8 «Planificacion semanal y mensual con alertas automaticas»; :13 «Evaluacion de Desempeno». Contrasta con los propios .xlsx, que sí llevan acentuación correcta ('Evaluación de Desempeño', 'Planificación'). Consta como pendiente en la memoria del proyecto (feedback_acentos_tildes.md), así que es un defecto ya censado que sigue vivo en este producto.",
+      "fix": "Reescribir con acentuación correcta las cadenas de FaqAccordion.tsx, ContentGrid.tsx, HeroSection.tsx, WhySection.tsx, BonusSection.tsx y BuyBox.tsx, además del title/description del Helmet y del JSON-LD de KitGestionPersonal.tsx."
+     },
+     {
+      "id": "DOM-27",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Semanal (DV B6:H20) vs 05-planificacion-vacaciones.xlsx Calendario Anual (DV B6:M20)",
+      "hallazgo": "Los dos ficheros que planifican tiempo usan códigos incompatibles y, peor, el mismo código con dos significados: «P» es Partido en el cuadrante y Permiso en el calendario de vacaciones. Además el cuadrante no admite marcar vacaciones ni bajas, así que un mes de vacaciones se ve igual que un mes de descansos.",
+      "evidencia": "01, validación de B6:H20: list \"M,T,N,P,L\" con Instrucciones B19 «P = Partido». 05, validación de B6:M20: list \"V,B,F,P,\" con Instrucciones B6 «Naranja = Permiso». No hay ninguna nota que relacione ambos juegos de códigos.",
+      "fix": "Unificar la leyenda del kit: en el cuadrante, ampliar la lista a \"M,T,N,P,L,V,B\" con horas 0 para V/B y una nota que las distinga de L; y renombrar el permiso del fichero 05 a «PE» para no colisionar con el partido."
+     },
+     {
+      "id": "DOM-28",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/04-onboarding-nuevo-empleado.xlsx",
+      "ubicacion": "Checklist Onboarding:F7:F65 (DV) y C70",
+      "hallazgo": "La lista de validación admite «—» (no aplica) pero el denominador del progreso sigue siendo 47, de modo que un onboarding correctamente terminado nunca llega al 100 %: las cinco tareas marcadas «si aplica» lo dejan como máximo en el 89 %.",
+      "evidencia": "DV de F7:F65: list \"✓,✗,—\". C70 = '=IF(C69>0,C68/C69*100,0)' con C69 = 47 fijo. Tareas condicionales: B27 'Formación en igualdad (si aplica según plantilla)', B39 'EPI adicional si aplica', B50 'Sistema de reservas (si aplica)', B53 'Sistema de pedidos a proveedores (si aplica)'.",
+      "fix": "Denominador = tareas totales menos las marcadas '—': '=COUNTA(...)-COUNTIF(F7:F16,\"—\")-COUNTIF(F20:F27,\"—\")-…' y aplicar el mismo criterio en C68/E68."
+     },
+     {
+      "id": "DOM-29",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/BONUS-01-briefing-cambio-turno.xlsx",
+      "ubicacion": "Briefing:A7:D45",
+      "hallazgo": "Al briefing de cambio de turno le faltan las dos secciones que cualquier traspaso real de hostelería lleva: el arqueo/fondo de caja y el registro de temperaturas de cámaras y neveras, que es además el punto donde el APPCC cambia de responsable.",
+      "evidencia": "Secciones presentes: 'RESERVAS PENDIENTES / VIPs' (A7), 'INCIDENCIAS DEL TURNO' (A15), 'TAREAS PENDIENTES' (A23), 'STOCK BAJO — PEDIDOS URGENTES' (A31), 'PERSONAL: AUSENCIAS Y CAMBIOS' (A39) y observaciones libres. Hay firma de entrega y recepción (A51) pero nada que cuadre dinero ni temperaturas. La columna C16 'Gravedad' tampoco tiene lista de validación, a diferencia de los demás ficheros del kit.",
+      "fix": "Añadir un bloque 'CAJA: fondo inicial / recaudación / diferencias' y otro 'TEMPERATURAS AL CAMBIO DE TURNO (cámara, congelador, expositor)' con la firma de quien las toma; añadir DV \"Leve,Media,Grave\" en C16:C22."
+     },
+     {
+      "id": "DOM-30",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/06-evaluacion-desempeno.xlsx",
+      "ubicacion": "Ficha Evaluación:B12:C21 · Histórico:G5:G19",
+      "hallazgo": "Dos limitaciones de diseño en la evaluación: las 10 competencias son idénticas para cocina y sala sin opción «no aplica» (a un cocinero de partida se le puntúa 'Atención al cliente'), y la columna «Tendencia» del Histórico solo compara el último trimestre con el anterior pese a su nombre.",
+      "evidencia": "Competencias B12:B21 fijas, con DV numérica 1-5 en C12:C21 que no admite texto: dejar la celda vacía la excluye del AVERAGE y hace que dos empleados con distinto número de competencias evaluadas se comparen como si fueran equivalentes. G5 = '=IF(AND(E5<>\"\",D5<>\"\"),IF(E5>D5,\"↑ Mejora\",…))' — con Q1=2, Q2=5, Q3=3 y Q4=3 devuelve «→ Estable». La ficha es única: para evaluar a 10 empleados hay que duplicar la hoja a mano y las Instrucciones (B5) no lo explican.",
+      "fix": "Añadir una fila 'N/A' a la validación (o competencias específicas por área) y calcular la media sobre las puntuadas; cambiar la tendencia a la comparación de la media del último semestre contra el anterior; e indicar en Instrucciones cómo duplicar la ficha por empleado."
+     },
+     {
+      "id": "DOM-31",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/03-coste-laboral-mensual.xlsx",
+      "ubicacion": "Nóminas:F4:F24",
+      "hallazgo": "La columna «Horas Contratadas» de la hoja de nóminas no interviene en ninguna fórmula: es una columna muerta. Con ella se obtendría el coste por hora, que es la métrica que enlazaría este fichero con la «Tarifa hora base» del control de horas extra, hoy un 12 € tecleado a ojo.",
+      "evidencia": "F4 = 'Horas Contratadas'; F5:F24 vacías y sin referencias en las 51 fórmulas del libro (D5:D24, E5:E24, C25/D25/E25, Ratio B5/B7/B9, Previsión B10:B13/B16). En 02-control-horas-extras, Resumen Mensual B3 = 12 es un valor suelto sin origen documentado.",
+      "fix": "Añadir columna 'Coste/hora' = '=IF(F5>0,E5/(F5*4.33),\"\")' y referenciarla desde la tarifa base del fichero 02, o eliminar la columna si no va a usarse."
+     },
+     {
+      "id": "DOM-32",
+      "severidad": "baja",
+      "fichero": "/Users/johnguerrero/chefpro-modernize/astro-site/public/dl/kit-gestion-personal/01-cuadrante-turnos-semanal.xlsx",
+      "ubicacion": "Cuadrante Semanal:A6:A20 · 05 Calendario Anual:A6:A20 · 03 Nóminas:A5:A24 · 07 Plantilla:A5:A34",
+      "hallazgo": "La capacidad de plantilla es incoherente entre los ficheros del kit: el directorio admite 30 empleados, las nóminas 20 y el cuadrante de turnos y el calendario de vacaciones solo 15. La FAQ vende el producto para «grupos de restauracion, multi-unidades y consultores».",
+      "evidencia": "01 Cuadrante Semanal: filas de empleado 6-20 (15). 05 Calendario Anual: filas 6-20 (15). 02 Resumen Mensual: filas 6-20 (15). 03 Nóminas: filas 5-24 (20). 07 Plantilla: validación hasta la fila 34 (30). FaqAccordion.tsx:24: «puedes usar las plantillas en todos los establecimientos que gestiones. Ideal para grupos de restauracion, multi-unidades y consultores».",
+      "fix": "Homogeneizar a 30 filas en los cinco ficheros (extendiendo los bloques de fórmulas y las validaciones), que es la capacidad que ya ofrece el directorio."
+     }
+    ]
+   }
+  }
+ }
+}
