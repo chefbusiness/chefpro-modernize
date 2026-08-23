@@ -1,0 +1,120 @@
+{
+ "pid": "kit-tareas-chocolateria",
+ "rol": "verificador independiente · kit-tareas-chocolateria · sobre motor 2.3 (tanda 4)",
+ "fecha": "2026-08-23",
+ "insumos": [
+  "scripts/productos-digitales/kit-tareas-v2-SPEC.md",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/motor-2.3.json",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/critico-2.json (tabla_por_kit + bloqueados, entrada kit-tareas-chocolateria)",
+  "scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-chocolateria-ver2.json (tanda 3, motor 2.2)",
+  "scripts/productos-digitales/kit-tareas-v2_0/contenido_kit_tareas_chocolateria.py"
+ ],
+ "ejecucion": {
+  "comando": "CLAUDE_SCRATCHPAD=…/scratchpad/propio-verificador-choco3 python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-chocolateria --dry-run --json …/kt-hermanos-4/kit-tareas-chocolateria.json",
+  "dryrun_exit": 0,
+  "alcance_motor": "en alcance 2/11 (08-apertura-cierre-negocio.xlsx, 09-apertura-cierre-caja.xlsx) · resto molde P4, normalizado por motor.normalizar_p4 + contenido_kit_tareas_chocolateria.py",
+  "idempotencia_1a_vs_2a_pasada": 0,
+  "inject_cache": "124 fórmulas nuevas, cache inyectado en las 124, 0 fallos de pycel (main.py) · data_only de fórmulas nuevas: 124 con valor, 0 fallos",
+  "censo_entregables_fail": {"exit": 0, "ficheros_censados": 11, "xlsx": 11, "docx": 0, "pdf": 0, "defectos": 0},
+  "reload_openpyxl_11_ficheros": "los 11 .xlsx abren limpios con openpyxl (data_only=False y data_only=True); grep independiente de #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL! sobre las celdas data_only de los 11 ficheros: 0 apariciones",
+  "gate_tpv": "gates.tpv_duplicado del propio informe: 1 sola tarea «Encender …TPV» en todo el producto (08!B10, papel «negocio (hito legítimo)»), 0 fuera del fichero de negocio — T-02 aplicado y confirmado"
+ },
+ "listas_dv_del_producto": ["\"✓,—,N/A\""],
+ "dv_detalle": {
+  "hojas_con_dv_list": 25,
+  "hojas_checklist_molde_trio": 4,
+  "hojas_p4_con_dv": 20,
+  "hoja_calendario_con_dv": 1,
+  "dv_incorrectas": 0,
+  "nota": "grep independiente con openpyxl sobre los 11 xlsx (data_only=False): 25 validaciones de tipo lista, todas con formula1='\"✓,—,N/A\"' (una sola lista distinta en todo el corpus). El gate del propio main.py reporta 4+20=24 (checklist_▸ + P4); la 25.ª es la del calendario BONUS-02 (D23:D27, §2.8), que el gate no cuenta como 'hoja de tarea' pero que también usa la lista honesta — no es una lista distinta ni una incorrección."
+ },
+ "casos_parrafo6": {
+  "total": 7,
+  "ok": 7,
+  "detalle": [
+   {"caso": "arqueo cuadra: fondo 150, efectivo contado 1150 (2×500+1×100+1×50), tarjetas 800, otros 0, Z 1800 → descuadre 0", "ok": true, "metodo": "pycel INDEPENDIENTE, copia de un solo uso (09test-cuadra.xlsx) en scratchpad/pycel-tests, nunca sobre la copia de trabajo del dry-run: 'Cierre de Caja'!C45=1150, C49=1150, C50=150, C51=1000, C54=1800, C56=0"},
+   {"caso": "arqueo descuadra: mismos valores con Z=1790 → descuadre +10", "ok": true, "metodo": "misma copia con C55=1790 (09test-descuadra.xlsx): pycel evalúa C56=10"},
+   {"caso": "contador honesto con N/A: 17 tareas de 08:Apertura del Negocio, filas 5-19 marcadas ✓ (15), filas 20-21 marcadas N/A (2) → '15 de 15'", "ok": true, "metodo": "pycel INDEPENDIENTE sobre copia de un solo uso (08test-contador.xlsx): D28(numerador)=15, F28(denominador)=15 — las N/A salen del total, ninguna resta por '—' (SPEC §8/§2.1 R2 confirmado de nuevo)"},
+   {"caso": "07 (plantilla personalizable, molde P4) con 8 tareas escritas (5 ✓, 3 —) → '5 de 8', denominador por FÓRMULA", "ok": true, "metodo": "pycel INDEPENDIENTE sobre copia de un solo uso (07test-8tareas.xlsx) de 'Por Zona': C30(numerador)=5, E30(denominador)=8. Fórmula confirmada: E30='=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")', no un 15 literal"},
+   {"caso": "08: ninguna tarea sin Responsable/Hora", "ok": true, "metodo": "lectura directa de las 17+15 filas de 'Apertura del Negocio' y 'Cierre del Negocio': columnas Responsable(C) y Hora Límite/Cuándo(E) pobladas al 100%; gate propio del main.py ('32 tareas, 0 sin Responsable u Hora') reconfirmado"},
+   {"caso": "bio en las Instrucciones de los 11 ficheros, versión 2.0", "ok": true, "metodo": "gate del main.py: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]; confirmado a mano en 07:Instrucciones!B13 y BONUS-01:Instrucciones"},
+   {"caso": "contador P4 recién impreso = «0 de N» sin contar rótulos", "ok": true, "metodo": "01-apertura-cierre.xlsx:'Apertura'!C39/E39 = '0.0 de 25.0' sobre la hoja TAL CUAL se entrega, dato del propio gate del main.py (no tocado por mí)"}
+  ]
+ },
+ "b40_check": {
+  "b40_ok": true,
+  "evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B35 «08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B38 «Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 09-apertura-cierre-caja.xlsx.»: sin contradicción, las dos líneas dicen que 08 es el marco. Misma revisión en 09-apertura-cierre-caja.xlsx:Instrucciones (línea equivalente): 09 se describe como CAJA, sin reclamar ser el marco. T-01 (rama fname==neg / fname==caja de motor.py:_bloque_conecta) verificado resuelto en el fichero real, no sólo en el código."
+ },
+ "tpv_check": {
+  "tpv_ok": true,
+  "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B11 = «Comprobar que el TPV está encendido y abrir turno de caja» (texto exacto de TXT_TPV_CAJA/T-02). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = «Encender TPV / POS / datáfono» (intacto). gates.tpv_duplicado del informe: 1 sola tarea «Encender…TPV» en todo el producto, dentro del fichero de negocio — 0 duplicados."
+ },
+ "frase_t08_check": {
+  "frase_t08_ok": true,
+  "evidencia": "La frase nueva («▸ Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO…») está en las Instrucciones de 08!B37 y 09!B48 — los DOS únicos ficheros donde existe el bloque «Se conecta con» en este kit. La frase vieja «No se duplican: cada uno cubre un nivel.» NO aparece en NINGUNA de las 11 hojas de Instrucciones (grep de la cadena exacta sobre las 11, columnas A y B: 0 apariciones).",
+  "matiz": "Los 9 ficheros restantes (01-07 + BONUS, molde P4) nunca tuvieron el bloque «Se conecta con» ni la frase vieja: en este kit sólo 08/09 pasan por motor.reescribir_instrucciones (molde ▸); el resto usa las Instrucciones cortas del generador v1.1 más los bloques puntuales que añade contenido_kit_tareas_chocolateria.py (p.ej. «Higiene y temperaturas:», «Templado y conservación:»). Es la arquitectura documentada en SPEC §5 y en el docstring del módulo, la misma razón por la que DOM-09 nace ahí — no es un fallo de esta pasada."
+ },
+ "recuento_gate": 338,
+ "tareas_total_manual": 338,
+ "recuento_desviacion_pct": 0.0,
+ "recuento_detalle_manual": {
+  "metodo": "recorrido openpyxl propio (no el gate.recuento_tareas ni motor.geometria*) sobre las 24 hojas de checklist reales: filas con entero en columna A y texto en columna B distinto de 'Tarea'. BONUS-02 Calendario excluido a propósito (tabla de referencia sin columna ✓, igual que hace el propio gate).",
+  "por_hoja": {
+   "01-apertura-cierre.xlsx:Apertura": 25, "01-apertura-cierre.xlsx:Cierre": 16,
+   "02-partidas-produccion.xlsx:Templado": 19, "02-partidas-produccion.xlsx:Moldeado": 22,
+   "03-tareas-manager.xlsx:Diario": 15, "03-tareas-manager.xlsx:Semanal": 20, "03-tareas-manager.xlsx:Mensual": 12,
+   "04-tareas-perfiles.xlsx:Chocolatero": 16, "04-tareas-perfiles.xlsx:Dependiente": 16, "04-tareas-perfiles.xlsx:Encargado": 12,
+   "05-tareas-semanales-mensuales.xlsx:Semanal": 20, "05-tareas-semanales-mensuales.xlsx:Mensual": 14, "05-tareas-semanales-mensuales.xlsx:Trimestral y Anual": 14,
+   "06-eventos-temporada.xlsx:Navidad": 15, "06-eventos-temporada.xlsx:San Valentín": 12, "06-eventos-temporada.xlsx:Pascua": 13,
+   "07-plantilla-personalizable.xlsx (3 hojas)": 0,
+   "08-apertura-cierre-negocio.xlsx:Apertura del Negocio": 17, "08-apertura-cierre-negocio.xlsx:Cierre del Negocio": 15,
+   "09-apertura-cierre-caja.xlsx:Apertura de Caja": 13, "09-apertura-cierre-caja.xlsx:Cierre de Caja": 14,
+   "BONUS-01-briefing-servicio.xlsx:Briefing": 18
+  }
+ },
+ "ficheros_total": 11,
+ "motor_no_resueltos": [],
+ "motor_no_resueltos_nota": "critico-2.json (tanda 3) listaba DOM-09 como no resuelto para este kit: 01:'Apertura'!B30 y 01:'Cierre'!B8-B9 duplicaban hitos de 08/09 sin remisión, porque colapsar_duplicados no corre en molde P4. En esta pasada contenido_kit_tareas_chocolateria.py lo resuelve DESDE CONTENIDO (docstring propio: 'DOM-09 es de MOTOR, pero aquí 01 es P4: se resuelve desde contenido'), reescribiendo 1:1 las tres filas. Verificado abriendo la celda real: 01!Apertura!B30 = 'Comprobar que el TPV está activo y que el fondo de caja ya se ha contado y anotado antes de abrir la puerta: el recuento no se repite aquí, se hace en «Apertura de Caja» del fichero 09 (hito en 08/09)'; 01!Cierre!B8 y B9 con la misma remisión a 09 y a 08 respectivamente. Ninguna fila se borró (el molde P4 sigue numerando el bloque entero). DOM-09 pasa de 'parcial' a RESUELTO para kit-tareas-chocolateria específicamente — sigue abierto como gap estructural del motor para los otros kits P4 que no tengan un módulo de contenido equivalente.",
+ "contenido_no_aplicado": [],
+ "contenido_no_aplicado_nota": "Los 2 hallazgos de la tanda 3 (kit-tareas-chocolateria-ver2.json → hallazgos_nuevos) están aplicados y verificados abriendo la celda real: (1) test de templado sin criterio en leche/blanco — ver aplicados_verificados; (2) DOM-09 en 01 — ver motor_no_resueltos_nota. El hallazgo baja de la tanda 3 (BONUS sin protección) sigue SIN aplicar, pero NO es un tema de la tanda 3 pendiente de resolver: critico-2.json (T-06) documenta que el orquestador decidió 'SIN ACCIÓN' para BONUS-01/02 de catering, hotel y chocolatería — reconfirmado, no cuenta como pendiente.",
+ "aplicados_verificados_abriendo_celda_real": [
+  "02-partidas-produccion.xlsx:Templado!B26 — test de templado de chocolate CON LECHE con criterio de paso/no-paso completo (18-20 °C, 3-5 min, brillo uniforme sin vetas, punto de trabajo 29-30 °C) — antes 'Test de templado y registrar lote' sin criterio (hallazgo media, tanda 3, RESUELTO)",
+  "02-partidas-produccion.xlsx:Templado!B33 — mismo criterio para chocolate BLANCO, punto de trabajo 28-29 °C, alineado con el 'Recalentar a 28-29 °C' de la fila anterior del mismo bloque (RESUELTO, y sin el desajuste de cifras que habría dejado 27-28 vs 28-29 en dos filas contiguas)",
+  "01-apertura-cierre.xlsx:Apertura!B30 — 'Comprobar que el TPV está activo…' con remisión a 09 (antes duplicaba el arqueo, DOM-09 RESUELTO)",
+  "01-apertura-cierre.xlsx:Cierre!B8 — 'Comprobar que el arqueo del día ha quedado cerrado y firmado…' con remisión a 09 (DOM-09 RESUELTO)",
+  "01-apertura-cierre.xlsx:Cierre!B9 — 'Comprobar que el TPV y el terminal de pago quedan cerrados DESPUÉS del arqueo…' con remisión a 08 (DOM-09 RESUELTO)",
+  "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B11 — TXT_TPV_CAJA exacto (T-02 motor 2.3, tanda 4)",
+  "08-apertura-cierre-negocio.xlsx:Instrucciones!B35/B38 y 09:Instrucciones — sin contradicción sobre el marco (T-01 motor 2.3, tanda 4)"
+ ],
+ "integridad_otros_moldes": {
+  "ok": true,
+  "evidencia": "Grep independiente de #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL! sobre los 11 xlsx en data_only=True: 0 apariciones. Los 9 ficheros molde P4 (01-07 + BONUS) no muestran ninguna huella de plantillas de otro molde (cabeceras repetidas correctas por sección, numeración reiniciada por bloque via _renumerar_p4, DV extendido a las filas nuevas via _dv_extender) y los 2 molde ▸ (08/09) conservan su geometría estándar (contador con etiqueta fusionada, filas libres dentro de rango)."
+ },
+ "hallazgos_nuevos": [
+  {
+   "severidad": "media",
+   "donde": "08-apertura-cierre-negocio.xlsx:Instrucciones!B37 y 09-apertura-cierre-caja.xlsx:Instrucciones!B48 (motor.py:FRASE_NIVELES / _bloque_conecta, líneas ~162-167 y ~2553-2554)",
+   "hallazgo": "La misma viñeta se contradice a sí misma en los 5 kits P4 de la familia (catering, chocolatería, heladería, hotel, restaurante-creativo, que no tienen fichero de ÁREAS en molde ▸). El arranque de la frase se compone dinámicamente y en chocolatería dice «Orden de uso: local → caja» (2 pasos, correcto: aquí sólo hay negocio y caja en molde ▸). Pero a continuación se pega, SIN condicionar, el literal fijo FRASE_NIVELES —«Cada fichero cubre un nivel: el de negocio marca el HITO…, el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO»—, que dentro de la MISMA frase impresa nombra un «fichero de áreas» que en este kit no existe (01 es P4, no está designado como f_areas en el contexto). Un chocolatero leyendo la Instrucciones ve dos pasos en la primera mitad de la frase y tres en la segunda. `_bloque_conecta` construye el arranque «Orden de uso: …» a partir de `orden` (que sí sabe si hay áreas) pero pega FRASE_NIVELES tal cual, sin recortar la cláusula de «el de áreas» cuando `areas` es None — es el mismo tipo de fallo que ya corrigió T-01 para el marco (una rama que no comprueba el caso que la contradice), esta vez en T-08."
+  },
+  {
+   "severidad": "baja",
+   "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B9,B11,B13,B18 (molde genérico compartido por los 12 kits, no tocado por contenido_kit_tareas_chocolateria.py)",
+   "hallazgo": "El checklist de negocio conserva vocabulario de restaurante con sala abierta al público que no encaja en una chocolatería/bombonería de mostrador: «Montar señalización exterior / pizarra de menú» (B9), «Encender sistema de reservas / tablet de pedidos» (B11), «Revisar reservas del día y eventos especiales» (B13), «Comprobar que las cartas/menús están en orden» (B18). Una bombonería no tiene carta ni pizarra de menú; lo que sí tiene son encargos (ya cubiertos en 09) y una vitrina de precios. Es el MISMO patrón que critico-2.json documenta como 'DECISIÓN DEL ORQUESTADOR pendiente' para el 08/18/10 de toda la familia (citado allí para dark-kitchen con «terraza») y que kit-tareas-catering-ver3.json encontró de forma independiente para catering — no es un hallazgo nuevo de fondo, pero no estaba señalado explícitamente para chocolatería hasta ahora. Cosmético: no toca ningún gate ni fórmula."
+  },
+  {
+   "severidad": "baja",
+   "donde": "BONUS-01-briefing-servicio.xlsx:Briefing y BONUS-02-calendario-anual-tareas.xlsx:Calendario",
+   "hallazgo": "Reconfirmado tras motor 2.3: ninguna de las dos hojas queda protegida (ws.protection.sheet=False), a pesar de que sus celdas de datos siguen marcadas 'locked=True' por estilo. Ya documentado y decidido explícitamente en critico-2.json (T-06: 'BONUS-01/02 de catering, hotel y chocolatería sin protección… sigue SIN ACCIÓN, como decidió el orquestador') — no bloqueante, no cuenta como pendiente nuevo, se incluye sólo para dejar constancia de que sigue así tras esta pasada."
+  }
+ ],
+ "bloquea_real": false,
+ "motivo_no_bloquea": "Motor: exit 0, 0 diferencias de idempotencia, 0 fallos de pycel/cache (124/124), censo --fail en 0 defectos, 0 errores #REF!/#NAME?/… en los 11 xlsx recargados de forma independiente. DV: una sola lista '\"✓,—,N/A\"' en las 25 hojas con desplegable. Casos §6: 7/7 OK, 4 de ellos re-verificados con pycel INDEPENDIENTE en copias de un solo uso (no reutilizando el pycel interno de main.py). b40_ok, tpv_ok y frase_t08_ok: los 3 true, con matiz documentado en frase_t08 (arquitectura P4, no defecto). recuento_gate (338) = tareas_total_manual (338), 0% de desviación. Los 2 hallazgos de contenido de la tanda 3 (test de templado leche/blanco, DOM-09 en 01) están aplicados y verificados abriendo la celda real; motor_no_resueltos queda VACÍO para este kit (DOM-09 se resolvió desde contenido). Los 3 hallazgos nuevos son media/baja/baja: ninguno alta. El de severidad media (FRASE_NIVELES self-contradictoria) es real y vale la pena corregir en motor.py antes de tocar producción, pero es un texto de referencia impreso, no afecta a ninguna fórmula, dato de dinero ni gate, y no cambia el veredicto de esta verificación.",
+ "notas": [
+  "No se tocó astro-site/public/dl/** en ningún momento: todo el trabajo (dry-run del producto y las 3 copias de pycel de un solo uso) se hizo dentro de scratchpad/propio-verificador-choco3 y scratchpad/pycel-tests, sin KIT_TAREAS_APPLY, sin --producto distinto de kit-tareas-chocolateria, sin git add/commit/stash/clean.",
+  "kit-tareas (el representante) NO se ha tocado ni regenerado en esta verificación.",
+  "Temperatura de CPU vigilada con istats antes de cada arranque de python: máximo medido 41,4 °C en toda la sesión, un intérprete de python a la vez, sin builds ni Playwright.",
+  "No se revisó la landing (kit-tareas-chocolateria.ts): fuera del encargo de esta verificación (motor+contenido sobre los .xlsx), igual que hicieron las tandas anteriores.",
+  "Discrepancia con kit-tareas-chocolateria-ver2.json (tanda 3, motor 2.2) que el orquestador debería registrar: DOM-09 pasa de 'PARCIAL' a RESUELTO gracias al fix aplicado por contenido_kit_tareas_chocolateria.py (no por el motor), y motor_no_resueltos queda vacío en esta pasada frente al ['DOM-09'] de la tanda anterior y al bloqueados de critico-2.json (que se escribió ANTES de este fix de contenido).",
+  "El hallazgo media nuevo (FRASE_NIVELES self-contradictoria) es de motor.py y por tanto se repite, con el mismo texto, en los otros 4 kits P4 sin fichero de áreas (catering, heladería, hotel, restaurante-creativo) — no es exclusivo de chocolatería, pero se reporta aquí por ser donde lo verifiqué."
+ ]
+}

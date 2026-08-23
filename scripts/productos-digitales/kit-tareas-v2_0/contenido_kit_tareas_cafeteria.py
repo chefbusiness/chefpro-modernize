@@ -6,6 +6,9 @@ contenido_kit_tareas_cafeteria.py — CONTENIDO propio de «kit-tareas-cafeteria
 Fuente de los cambios: `auditorias/kit-tareas-hermanos/kit-tareas-cafeteria-verif.json`
 campo `contenido_pendiente` (8 hallazgos: 2 altas, 4 medias, 2 bajas) más los
 equivalentes de §3 del representante que aplican a una cafetería / brunch.
+Más el `hallazgos_nuevos` de la tanda 3
+(`auditorias/kit-tareas-hermanos/kit-tareas-cafeteria-ver2.json`): el espresso
+que se encendía y se limpiaba dos veces entre el 01 y el 08 (`_f08`).
 
 `main.py` lo carga sólo con `--producto kit-tareas-cafeteria` (compone el
 nombre del módulo con el pid), así que aquí se puede hablar de «Apertura Barra
@@ -709,6 +712,85 @@ def _f06(wb, cambios):
 
 
 # ==========================================================================
+# 08 — apertura y cierre del NEGOCIO: aquí va el HITO, el detalle vive en 01
+# ==========================================================================
+#: Hallazgo del verificador de la tanda 3 (media) — la máquina de espresso se
+#: arrancaba y se limpiaba DOS VECES, en dos ficheros y a dos horas que no
+#: cuadran entre sí:
+#:   · 01!«Apertura Barra Café» B6/E6 (06:45, Barista) hace la rutina completa
+#:     —encender, purgar cada grupo, calibrar molienda, presión, portafiltros,
+#:     lanza de vapor— y 08!«Apertura del Negocio» B20/D20 volvía a mandar
+#:     «Encender máquinas de café y molinillo» a las 07:15, media hora después
+#:     de que el barista ya estuviera sacando cafés con ella;
+#:   · 01!«Cierre Barra Café» B6-B11 hace el backflush con pastilla, limpia
+#:     portafiltros, lanza, bandeja y borra y APAGA la máquina (Barista), y
+#:     08!«Cierre del Negocio» B18 mandaba a «Último en salir» «Purgar y
+#:     limpiar grupo de café» otra vez, sobre una máquina ya apagada.
+#: Es la misma familia que el TPV 08↔09, que el motor 2.3 ya resuelve solo
+#: (`RX_TPV_CAJA`/`TXT_TPV_CAJA`): allí el hito es del fichero de NEGOCIO y el
+#: de caja comprueba. Aquí el reparto es el inverso —el detalle del café es del
+#: fichero de ÁREAS, que es donde está el barista— así que la corrección no
+#: puede ser una regla de familia del motor y baja a este módulo: el 08 pasa a
+#: COMPROBAR, remitiendo al 01. Es exactamente lo que promete la línea que el
+#: motor imprime en las 11 Instrucciones (`motor.FRASE_NIVELES`): «el de
+#: negocio marca el HITO […], el de áreas detalla CÓMO se hace en cada zona».
+#:
+#: Sustituciones 1:1 en la columna B: MISMO número de filas, ninguna fila nueva
+#: y NI SE TOCAN las columnas D («Responsable») y E («Hora Límite» / «Cuándo»),
+#: que escribe `motor.precargar_negocio` POR POSICIÓN (`filas[i]`, no por
+#: texto): reescribir el texto de una tarea no puede mover su hora ni su
+#: responsable, y el gate `negocio_precargado` (31 tareas, 0 huecos) sigue
+#: verde. Por eso `_f08` devuelve False: no cambia la estructura y `main.py` no
+#: necesita volver a pasar el motor por este fichero.
+#:
+#: Redacción atada a las trampas del §8 del motor: «está en temperatura» lleva
+#: la palabra que mira `motor.RX_TEMP` y el verbo que mira `RX_VERBO_TEMP`,
+#: pero NO hay equipo de frío (`RX_EQUIPO_FRIO`: cámara/nevera/vitrina/
+#: congelador/abatidor/expositor/mural) —una máquina de espresso calienta, no
+#: enfría—, así que `texto_temperatura` no engancha la coletilla «— anota la
+#: lectura: ____ °C» y la 2.ª pasada lee lo mismo que la 1.ª. Tampoco hay
+#: «APPCC», ni grados, ni «=»: `motor.forma_estable()` devuelve los dos textos
+#: tal cual.
+#:
+#: MEDIDO (trampa R3-d del motor, vista desde el módulo de contenido): hay que
+#: volver a llamar a `motor.autoaltos()` después de escribir. `motor.aplicar`
+#: mide las alturas al FINAL de su pasada; como `_f08` corre después y devuelve
+#: False, en la 1.ª pasada el motor midió los textos CORTOS del original y en
+#: la 2.ª leería ya los largos de aquí y le quitaría la altura fija a la fila
+#: → diferencias de idempotencia sin nada roto. Y los dos textos nuevos son más
+#: largos que los que sustituyen, así que con `wrap_text` y la altura fija se
+#: imprimirían RECORTADOS justo por donde está la remisión al 01. `autoaltos`
+#: sólo QUITA la altura fija de la fila que no cabe (nunca la pone), así que es
+#: idempotente y deja las dos pasadas en el mismo sitio.
+ESPRESSO_HITO = ('Comprobar que la máquina de espresso está en temperatura y '
+                 'purgada (rutina completa en 01)')
+GRUPO_HITO = ('Comprobar que el grupo de café queda limpio y apagado '
+              '(backflush en 01)')
+
+
+def _f08(wb, cambios):
+    ws = wb['Apertura del Negocio']
+    if _sustituir(ws, 'Encender máquinas de café y molinillo', ESPRESSO_HITO):
+        cambios.append('«Apertura del Negocio»: B «Encender máquinas de café '
+                       'y molinillo» (07:15) pasa a ser el HITO «' +
+                       ESPRESSO_HITO + '»: la rutina completa ya la hace el '
+                       'barista a las 06:45 en 01!«Apertura Barra Café» — '
+                       'hallazgo de la tanda 3 (media), 1:1 y sin tocar '
+                       'Responsable ni Hora Límite')
+    motor.autoaltos(ws, cambios)
+
+    ws = wb['Cierre del Negocio']
+    if _sustituir(ws, 'Purgar y limpiar grupo de café', GRUPO_HITO):
+        cambios.append('«Cierre del Negocio»: B «Purgar y limpiar grupo de '
+                       'café» pasa a ser el HITO «' + GRUPO_HITO + '»: el '
+                       'backflush completo y el apagado ya están en '
+                       '01!«Cierre Barra Café» — hallazgo de la tanda 3 '
+                       '(media), 1:1 y sin tocar Responsable ni Cuándo')
+    motor.autoaltos(ws, cambios)
+    return False                       # sólo texto: la estructura no cambia
+
+
+# ==========================================================================
 # BONUS-02 — calendario anual
 # ==========================================================================
 #: Hallazgo «fechas del calendario» (baja) — faltaban las mismas cuatro que
@@ -776,6 +858,7 @@ FICHEROS = {
     '03-tareas-manager.xlsx': _f03,
     '05-tareas-semanales-mensuales.xlsx': _f05,
     '06-eventos-festivos.xlsx': _f06,
+    '08-apertura-cierre-negocio.xlsx': _f08,
     'BONUS-02-calendario-anual-tareas.xlsx': _bonus02,
 }
 

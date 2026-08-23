@@ -41,6 +41,7 @@ import importlib
 import json
 import logging
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -426,21 +427,90 @@ def gate_recuento(carpeta, nombres):
     recuento no se había hecho: 121 era el fichero 01 de la v1.1. La cifra sale
     de los mismos denominadores que enseña el Excel, así que la página de venta
     y el producto no pueden volver a divergir sin que este gate lo cante.
+
+    T-03 (tanda 4) — se suman TODAS las hojas de checklist del producto: el
+    molde ▸, el molde P4 y las plantillas con denominador por fórmula. Antes
+    sólo sumaba el molde ▸ y en los cinco kits P4 (catering, chocolatería,
+    heladería, hotel, restaurante-creativo) devolvía 56 —las tareas de 08 y 09—
+    ignorando los cientos de los 01-07: hotel habría anunciado 56 tareas en vez
+    de 636. Los rótulos repetidos de cada sección del molde P4 NO cuentan: los
+    descuenta la propia fórmula del denominador. `recuento_por_molde` separa de
+    dónde sale cada cifra para que el número de la landing sea auditable.
     """
     por_fichero, total = {}, 0
+    por_molde = {'checklist_▸': 0, 'p4': 0}
+    por_hoja = []
     for n in nombres:
         wbv = openpyxl.load_workbook(os.path.join(carpeta, n), data_only=True)
         wb = openpyxl.load_workbook(os.path.join(carpeta, n))
         n_tareas = 0
         for ws in wb.worksheets:
+            molde = 'checklist_▸'
             g = motor.geometria(ws)
-            if not g or not g['contador']:
+            if not g:
+                g, molde = motor.geometria_p4(ws), 'p4'
+            if not g or not g.get('contador'):
                 continue
             v = wbv[ws.title].cell(row=g['contador'], column=g['marca']).value
-            n_tareas += int(v or 0)
+            try:
+                v = int(v or 0)
+            except (TypeError, ValueError):
+                # Sin cache el denominador vendría como fórmula: se anota en
+                # vez de contarlo como 0 en silencio.
+                por_hoja.append({'fichero': n, 'hoja': ws.title,
+                                 'molde': molde, 'tareas': None,
+                                 'celda': '{}{}'.format(
+                                     motor.get_column_letter(g['marca']),
+                                     g['contador']),
+                                 'aviso': 'denominador sin valor cacheado'})
+                continue
+            n_tareas += v
+            por_molde[molde] += v
+            por_hoja.append({'fichero': n, 'hoja': ws.title, 'molde': molde,
+                             'celda': '{}{}'.format(
+                                 motor.get_column_letter(g['marca']),
+                                 g['contador']),
+                             'tareas': v})
         por_fichero[n] = n_tareas
         total += n_tareas
-    return {'total': total, 'por_fichero': por_fichero}
+    return {'total': total, 'por_fichero': por_fichero,
+            'recuento_por_molde': por_molde, 'por_hoja': por_hoja}
+
+
+#: T-02 — censo de las tareas que ENCIENDEN el TPV en todo el producto. La del
+#: fichero de negocio es el hito legítimo; la del de caja la reescribe el motor;
+#: cualquier otra (heladería 01!B24, pastelería 01!B29) es OTRA CAPA y se deja,
+#: pero queda registrada aquí para que nadie tenga que volver a buscarla.
+RX_TPV_GATE = re.compile(
+    r'(?i)^\s*encender\b.*?(tpv|\bpos\b|caja registradora)')
+
+
+def gate_tpv(carpeta, nombres):
+    encendidos = []
+    for n in nombres:
+        wb = openpyxl.load_workbook(os.path.join(carpeta, n))
+        for ws in wb.worksheets:
+            g = motor.geometria(ws) or motor.geometria_p4(ws)
+            if not g:
+                continue
+            for r in range(g['hr'] + 1, (g.get('contador') or ws.max_row)):
+                v = ws.cell(row=r, column=2).value
+                if not isinstance(v, str) or not RX_TPV_GATE.match(v):
+                    continue
+                if n == motor.CTX.get('f_negocio'):
+                    papel = 'negocio (hito legítimo)'
+                elif n == motor.CTX.get('f_caja'):
+                    papel = 'caja (T-02 NO aplicado: revisar)'
+                elif n == motor.CTX.get('f_areas'):
+                    papel = 'areas (otra capa: se deja)'
+                else:
+                    papel = 'otro fichero (otra capa: se deja)'
+                encendidos.append({'ref': '{}:{}!B{}'.format(n, ws.title, r),
+                                   'papel': papel, 'texto': v})
+    return {'tareas_encender_tpv': encendidos,
+            'fuera_del_fichero_de_negocio': [
+                d['ref'] for d in encendidos
+                if not d['papel'].startswith('negocio')]}
 
 
 def gate_dv_y_bio(carpeta, nombres):
@@ -692,7 +762,21 @@ def main():
         log(f'  {fname}: {estado_txt}')
 
     # R3-f — se fotografía ANTES de la 2.ª pasada, que volvería a acumular.
-    solapes = sorted(motor.SOLAPES, key=lambda d: -d['ratio'])
+    # T-05 — y se DEDUPLICA: cuando el módulo de contenido cambia la estructura
+    # del libro, `procesar` vuelve a pasar el motor sobre el mismo fichero y
+    # cada banda se medía dos veces (pizzería). Sólo afectaba al JSON del
+    # informe, pero falseaba cualquier censo agregado. Si una misma banda
+    # apareciera con DOS medidas distintas se conservan las dos: eso no sería
+    # ruido, sería el motor dando resultados inestables.
+    vistos, unicos = set(), []
+    for d in motor.SOLAPES:
+        clave = (d['hoja'], d['banda'], d['tareas'], d['casadas'], d['ratio'],
+                 tuple(d['destinos']), d['anotada'])
+        if clave in vistos:
+            continue
+        vistos.add(clave)
+        unicos.append(d)
+    solapes = sorted(unicos, key=lambda d: -d['ratio'])
     if solapes:
         log('  solape medido banda↔marco (umbral de anotación '
             f'{motor.UMBRAL_BANDA:.0%}): '
@@ -774,9 +858,17 @@ def main():
     for h in prec['huecos'][:6]:
         log('    ' + h)
     rec = gate_recuento(carpeta, nombres)
-    log(f"  recuento de tareas entregadas: {rec['total']} en total · "
+    log(f"  recuento de tareas entregadas: {rec['total']} en total "
+        f"(molde ▸ {rec['recuento_por_molde']['checklist_▸']} + molde P4 "
+        f"{rec['recuento_por_molde']['p4']}) · "
         + ' · '.join(f'{k.split("-")[0]}={v}'
                      for k, v in rec['por_fichero'].items() if v))
+    tpv = gate_tpv(carpeta, nombres)
+    log(f"  TPV: {len(tpv['tareas_encender_tpv'])} tareas «Encender …TPV» en "
+        f"el producto ({len(tpv['fuera_del_fichero_de_negocio'])} fuera del "
+        'fichero de negocio)')
+    for d in tpv['tareas_encender_tpv']:
+        log(f"    {d['ref']} [{d['papel']}]: {d['texto']}")
 
     log('\n== 7/7 · censo-entregables --fail ==')
     cen = censo(carpeta)
@@ -822,6 +914,7 @@ def main():
             'dv_y_bio': gates,
             'negocio_precargado': prec,
             'recuento_tareas': rec,
+            'tpv_duplicado': tpv,
             'bandas_solapadas': solapes,
             'censo_entregables': cen,
         },

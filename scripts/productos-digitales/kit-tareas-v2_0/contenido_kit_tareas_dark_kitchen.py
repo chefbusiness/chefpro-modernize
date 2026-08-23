@@ -11,7 +11,9 @@ un dark kitchen: orden seguro del gas, higiene personal al inicio, anisakis del
 pescado crudo, aceite sólo en frío, mermas del día, registro diario de jornada,
 hoja «Trimestral y Anual» de mantenimiento legal en el 05, alérgenos al aceptar
 el pedido, calendario del sector, cámaras que se «comprueban» y vida útil de
-congelación.
+congelación. Y, del verificador de la tanda 3
+(`kit-tareas-dark-kitchen-ver2.json`, `hallazgos_nuevos`), el vocabulario de
+sala y terraza que quedaba en 08-apertura-cierre-negocio.xlsx (`_f08`).
 
 NO es de familia. `main.py` lo carga sólo con
 `--producto kit-tareas-dark-kitchen` (compone el nombre del módulo con el pid,
@@ -166,6 +168,33 @@ def _sustituir(ws, viejo, nuevo, col=2):
     r = _exige(ws, viejo, col)
     ws.cell(row=r, column=col).value = nuevo
     return r
+
+
+def _sustituir_con_zona(ws, viejo, nuevo, zona=None):
+    """Sustitución 1:1 de la TAREA y, si procede, de su «Zona» (columna C).
+
+    La zona NO se puede tocar con `_sustituir(col=3)`: sus valores se repiten
+    («Sala» está en DOS filas de «Apertura del Negocio», y «Terraza», «General»
+    o «Acceso» en varias), así que el ancla cazaría la primera fila que
+    coincidiera y reescribiría la zona de otra tarea. Aquí la zona se escribe
+    SIEMPRE en la fila de su propia tarea, localizada por el texto de B.
+
+    Idempotente por partida doble: si B ya está reescrito se localiza por el
+    texto NUEVO y sólo se repasa C, así que una pasada a medias (B escrito y C
+    no) se termina en la siguiente en vez de levantar `AnclaPerdida`.
+
+    Devuelve cuántas celdas ha escrito (0 = ya estaba todo).
+    """
+    r = _fila(ws, nuevo, 2)
+    n = 0
+    if r is None:
+        r = _exige(ws, viejo, 2)
+        ws.cell(row=r, column=2).value = nuevo
+        n += 1
+    if zona is not None and ws.cell(row=r, column=3).value != zona:
+        ws.cell(row=r, column=3).value = zona
+        n += 1
+    return n
 
 
 def _filas_de_bloque(ws, banda):
@@ -819,6 +848,134 @@ def _f06(wb, cambios):
 
 
 # ==========================================================================
+# 08 — apertura y cierre del NEGOCIO (el marco del día)
+# ==========================================================================
+#: Hallazgo del verificador de la tanda 3 (media) — el 08 es el ÚNICO fichero
+#: del kit que seguía escrito para un restaurante con comedor: mandaba
+#: «Montar terraza si aplica (mesas, sillas, sombrillas/estufas)», «Revisar
+#: reservas del día» y «Revisar estado del mobiliario (sillas, mesas...)» en un
+#: negocio 100 % delivery donde no entra ni un comensal. Es el mismo defecto
+#: que ya se corrigió en `BRIEFING` (BONUS-01) para ESTE kit, sólo que en el
+#: fichero que el motor precarga como MARCO del día y que el cliente imprime
+#: cada mañana.
+#:
+#: Todo son sustituciones 1:1: MISMO número de filas, ni una fila nueva, y las
+#: columnas D («Responsable») y E («Hora Límite» / «Cuándo») no se tocan — las
+#: escribe `motor.precargar_negocio` POR POSICIÓN (`filas[i]`, no por texto),
+#: así que reescribir el texto de una tarea no puede mover su responsable ni su
+#: hora, y el gate `negocio_precargado` (2 checklists, 33 tareas, 0 huecos)
+#: sigue verde. Por eso `_f08` devuelve False: no cambia la estructura y
+#: `main.py` no necesita volver a pasar el motor por este fichero.
+#:
+#: Redacción atada a las trampas del §8 del motor (idempotencia de la 2.ª
+#: pasada): ningún texto de aquí dice «temperatura» (RX_TEMP + verbo + equipo
+#: de frío es lo que dispara la coletilla «— anota la lectura: ____ °C»), ni
+#: «APPCC», ni lleva grados ni «=», así que `forma_estable()` los devuelve tal
+#: cual y el motor no puede reescribirlos en la segunda pasada.
+#:
+#: Y ninguno vuelve a decir «Encender ... TPV»: esa tarea es el hito legítimo
+#: del fichero de negocio y ya la tiene B10; una segunda haría saltar el
+#: recuento de TPV del gate de §6.
+#:
+#: MEDIDO — hay que volver a llamar a `motor.autoaltos()` después de escribir.
+#: Es la trampa R3-d del motor vista desde el otro lado: `motor.aplicar` mide
+#: las alturas al final de SU pasada, y como `_f08` corre DESPUÉS y no devuelve
+#: True (no cambia la estructura, así que el motor no vuelve a pasar), en la
+#: 1.ª pasada el motor midió los textos CORTOS del original y dejó la altura
+#: fija de 24 pt, mientras que en la 2.ª leyó ya los largos de aquí y se la
+#: quitó: 2 diferencias de idempotencia («cambia alturas» en las dos hojas del
+#: 08) sin nada roto. Los siete textos nuevos son más largos que los que
+#: sustituyen, así que con `wrap_text` y 24 pt se imprimirían RECORTADOS por el
+#: final —justo donde está el dato— si no se volviera a medir. `autoaltos` es
+#: idempotente (sólo QUITA la altura fija de la fila que no cabe, nunca la
+#: pone), así que llamarlo aquí deja las dos pasadas en el mismo sitio.
+#: (texto viejo, texto nuevo, zona nueva)
+NEGOCIO_APERTURA = [
+    # B11 — «sistema de reservas» en una cocina sin sala: lo que hay que
+    # encender es lo que IMPRIME la comanda. No duplica la tarea de las
+    # tablets (B20): las tablets reciben el pedido, la impresora lo saca.
+    ('Encender sistema de reservas / tablet de pedidos',
+     'Encender la pantalla de comandas y la impresora de tickets de cada '
+     'plataforma y comprobar que imprimen: sin ticket impreso el pedido se '
+     'queda sin salir',
+     'Operaciones'),
+    # B13 — no hay reservas que revisar; hay pedidos programados y un tiempo de
+    # preparación publicado que es lo que decide si la plataforma te manda más
+    # pedidos de los que puedes sacar.
+    ('Revisar reservas del día y eventos especiales',
+     'Revisar los pedidos programados del día y ajustar los tiempos de '
+     'preparación publicados en cada plataforma a la carga prevista',
+     'Operaciones'),
+    # B16 — el mobiliario de un dark kitchen es la zona por la que entran y
+    # salen los riders, que es justo la que nadie revisaba.
+    ('Revisar estado del mobiliario (sillas, mesas, iluminación)',
+     'Revisar la zona de recogida de riders: mostrador de entrega despejado, '
+     'estanterías de expedición señalizadas por marca e iluminación en orden',
+     'Recogida riders'),
+    # B17 — en vez de montar la terraza, se monta el puesto de empaquetado, que
+    # es el cuello de botella real de una cocina de delivery.
+    ('Montar terraza si aplica (mesas, sillas, sombrillas/estufas)',
+     'Montar el puesto de empaquetado y etiquetado: cajas, bolsas, tapas, '
+     'cubiertos, precintos de seguridad y etiquetas de cada marca al alcance',
+     'Packaging'),
+    # B18 — la «carta» que toca el cliente de delivery no es un menú de mesa:
+    # son las etiquetas y los impresos que van DENTRO de la bolsa. No se
+    # convierte en una segunda revisión del menú publicado porque esa ya la
+    # hace 01-apertura-cierre.xlsx y §2.5 prohíbe duplicar el marco.
+    ('Comprobar que las cartas/menús están en orden',
+     'Comprobar que las etiquetas de marca, los flyers y las fichas de '
+     'alérgenos impresas están repuestos en el puesto de empaquetado',
+     'Packaging'),
+]
+
+NEGOCIO_CIERRE = [
+    # B6 — no quedan clientes porque nunca entraron: lo que hay que comprobar
+    # es que no queda un rider esperando ni un pedido sin recoger en la
+    # estantería (el pedido olvidado se paga y se reclama por la plataforma).
+    ('Verificar que no quedan clientes en el local',
+     'Verificar que no queda ningún rider esperando ni pedidos sin recoger en '
+     'la estantería de expedición',
+     'Recogida riders'),
+    # B7 — la terraza que hay que recoger es el puesto de empaquetado y la zona
+    # de entrega, que acaban el día llenos de cartón y de precintos.
+    ('Limpiar y recoger terraza si aplica',
+     'Limpiar y recoger la zona de recogida y el puesto de empaquetado: '
+     'retirar cartón, precintos y etiquetas sobrantes y dejar el mostrador de '
+     'entrega despejado',
+     'Packaging'),
+]
+
+
+def _f08(wb, cambios):
+    n = 0
+    ws = wb['Apertura del Negocio']
+    for viejo, nuevo, zona in NEGOCIO_APERTURA:
+        n += _sustituir_con_zona(ws, viejo, nuevo, zona)
+    motor.autoaltos(ws, cambios)
+    if n:
+        cambios.append('«Apertura del Negocio»: 5 tareas y sus zonas pasan del '
+                       'vocabulario de restaurante con comedor (reservas, '
+                       'mobiliario de sala, montar terraza, cartas) al de una '
+                       'cocina 100 % delivery (impresoras de plataforma, '
+                       'pedidos programados y tiempos de preparación '
+                       'publicados, zona de recogida de riders, puesto de '
+                       'empaquetado y etiquetado) — hallazgo de la tanda 3 '
+                       '(media), 1:1 y sin tocar Responsable ni Hora Límite')
+    m = 0
+    ws = wb['Cierre del Negocio']
+    for viejo, nuevo, zona in NEGOCIO_CIERRE:
+        m += _sustituir_con_zona(ws, viejo, nuevo, zona)
+    motor.autoaltos(ws, cambios)
+    if m:
+        cambios.append('«Cierre del Negocio»: las 2 tareas de sala y terraza '
+                       '(«no quedan clientes en el local», «recoger terraza») '
+                       'pasan a la zona de recogida de riders y al puesto de '
+                       'empaquetado — hallazgo de la tanda 3 (media), 1:1 y '
+                       'sin tocar Responsable ni Cuándo')
+    return False                       # sólo texto: la estructura no cambia
+
+
+# ==========================================================================
 # BONUS-01 — briefing pre-servicio
 # ==========================================================================
 #: Hallazgo «alérgenos ausentes en el flujo de delivery» (ALTA), parte final: el
@@ -1005,6 +1162,7 @@ FICHEROS = {
     '03-tareas-manager.xlsx': _f03,
     '05-tareas-semanales-mensuales.xlsx': _f05,
     '06-eventos-festivos.xlsx': _f06,
+    '08-apertura-cierre-negocio.xlsx': _f08,
     'BONUS-01-briefing-servicio.xlsx': _bonus01,
     'BONUS-02-calendario-anual-tareas.xlsx': _bonus02,
 }

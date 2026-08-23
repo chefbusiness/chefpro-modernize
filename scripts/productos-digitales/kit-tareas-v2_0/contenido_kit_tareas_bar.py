@@ -43,6 +43,26 @@ DIFERENCIAS DE MOLDE frente al representante (medidas, no supuestas):
     representante: las fechas nuevas se escriben a esa cabecera y la columna
     «#» se renumera a mano.
 
+RONDA 2 (post motor 2.3) — lo añadido tras `kit-tareas-bar-ver2.json`:
+  · DOM-23 de CONTENIDO. El bloque «Se conecta con» de las Instrucciones lo
+    pone el motor, pero el hallazgo original tenía una segunda mitad que es de
+    contenido: TAREAS que hacen lo mismo que otro fichero del kit sin remitir a
+    él. Aquí eran TRES recuentos del mismo dinero —«Cierre de Caja» (09),
+    «Cuadrar caja / cierre de TPV» (01) y «Revisar caja y cuadrar con TPV»
+    (03)— y DOS anotaciones de la misma merma (01 y 03). Ninguna fila se borra
+    (el contador cuenta el rango entero): se reescriben 1:1 como comprobación
+    o validación, nombrando el fichero dueño. La parte de APPCC del DOM-23 no
+    aplica: `grep APPCC` sobre los 11 ficheros da 0 resultados.
+  · Barrido de jefe de barra: separador decimal español en la presión de CO₂,
+    «CO2»→«CO₂» en el 08, «Peychaud»→«Peychaud's», «seg»→«segundos»,
+    «si necesario»→«si hace falta», «maridaje food»→«la comida del maridaje»,
+    los meses del calendario que iban en inglés («13 May», «Sep») y el doble
+    paréntesis que dejaba la cola de §2.9 sobre «(limpieza, temperatura)».
+  · Vocabulario: un bar de cócteles NO tiene cocina de partidas, así que dos
+    textos propios que la nombraban («trasladarlos a barra y cocina», «cierre
+    temprano de cocina») pasan a hablar de quien prepara la comida y del
+    horario. Queda «si hay cocina de barra», que es una condición legítima.
+
 ANCLAS, NO NÚMEROS DE FILA: este módulo corre DESPUÉS de `motor.aplicar`, que
 ya insertó las 5 filas libres, reescribió las temperaturas y renombró las
 cabeceras. Si un ancla no aparece se levanta `AnclaPerdida`: mejor caerse que
@@ -254,6 +274,30 @@ MERMAS_BARRA = [
      'Admin', 'Bartender', '02:15'),
 ]
 
+#: DOM-23 — «Cuadrar caja / cierre de TPV» en el CIERRE DE BARRA es, palabra
+#: por palabra, lo que hacen las 12 tareas de «Cierre de Caja» del fichero 09,
+#: y no remitía a él (es el caso literal del hallazgo: «01:Cierre Sala:B21
+#: 'Contar efectivo y cuadrar con TPV' sin ninguna referencia al fichero 09,
+#: que es exactamente eso»). Repetir un arqueo no es redundancia inocua: son
+#: dos recuentos con dos criterios que pueden no cuadrar, y el bartender acaba
+#: dando por bueno el que no hizo. No se borra la fila —el contador cuenta el
+#: rango entero—: se reescribe 1:1 como lo que sí aporta el cierre de barra,
+#: la COMPROBACIÓN de que el hito está hecho, con la remisión al fichero dueño.
+CUADRAR_VIEJO = 'Cuadrar caja / cierre de TPV'
+CUADRAR = ('Comprobar que el arqueo del día ha quedado cerrado y firmado: el '
+           'recuento no se repite aquí, se hace en «Cierre de Caja» del '
+           'fichero 09-apertura-cierre-caja.xlsx')
+
+#: Errata de barra: «si necesario» es una elisión que en español pide verbo.
+FREGADERO_VIEJO = 'Limpiar fregadero de barra (desatascar si necesario)'
+FREGADERO = 'Limpiar fregadero de barra (desatascar si hace falta)'
+
+#: Errata: «seg» no es la abreviatura de segundo (el símbolo es «s») y en una
+#: hoja que se imprime conviene la palabra entera, que no se confunde con nada.
+MOLIENDA_VIEJO = 'Verificar molienda y calibrar (espresso 25-30 seg, 25-30 ml)'
+MOLIENDA = ('Verificar molienda y calibrar (espresso 25-30 segundos, '
+            '25-30 ml)')
+
 
 def _f01(wb, cambios):
     tocado = False
@@ -267,6 +311,9 @@ def _f01(wb, cambios):
         cambios.append('«Apertura Barra»: las cámaras se COMPRUEBAN, no se '
                        'encienden, y la desviación bloquea el género — '
                        'DOM-24 (equivalente)')
+    if _sustituir(ws, MOLIENDA_VIEJO, MOLIENDA):
+        cambios.append('«Apertura Barra»: «25-30 seg» → «25-30 segundos» '
+                       '(«seg» no es abreviatura de segundo)')
     motor.renumerar(ws)
 
     ws = wb['Cierre Barra']
@@ -275,6 +322,12 @@ def _f01(wb, cambios):
         cambios.append('«Cierre Barra»: tarea de mermas del turno con su '
                        'consecuencia (pour cost) — DOM-18 (equivalente)')
         tocado = True
+    if _sustituir(ws, CUADRAR_VIEJO, CUADRAR):
+        cambios.append('«Cierre Barra»: el arqueo se COMPRUEBA aquí y se hace '
+                       'en «Cierre de Caja» del 09 — antes eran dos recuentos '
+                       'paralelos sin remisión — DOM-23')
+    if _sustituir(ws, FREGADERO_VIEJO, FREGADERO):
+        cambios.append('«Cierre Barra»: «si necesario» → «si hace falta»')
     motor.renumerar(ws)
     return tocado
 
@@ -303,6 +356,18 @@ HIELO = ('Reponer hielo cada hora (o antes si hay pico) SIEMPRE con pala o '
          'pinzas, nunca con el vaso: un vaso roto obliga a vaciar la cubeta '
          'entera')
 
+#: Errata: en español el separador decimal es la COMA. «2.5-3.0 bar» además se
+#: lee como dos cifras distintas según el Excel del cliente (el punto es
+#: separador de miles en la configuración española).
+CO2_VIEJO = 'Verificar presión de CO₂ de barriles (2.5-3.0 bar)'
+CO2 = 'Verificar presión de CO₂ de barriles (2,5-3,0 bar)'
+
+#: Errata de barra: el bitter de Nueva Orleans es «Peychaud's» (con genitivo:
+#: es el apellido del boticario), «bitters» va en plural cuando se habla de la
+#: familia, y «orange bitters» no es nombre propio, así que en minúscula.
+BITTER_VIEJO = 'Verificar stock de bitter: Angostura, Peychaud, Orange bitters'
+BITTER = ("Verificar stock de bitters: Angostura, Peychaud's y orange bitters")
+
 
 def _f02(wb, cambios):
     tocado = False
@@ -316,6 +381,16 @@ def _f02(wb, cambios):
     if _sustituir(ws, HIELO_VIEJO, HIELO):
         cambios.append('«Coctelería Clásica»: el hielo se repone con pala o '
                        'pinzas, nunca con el vaso')
+    if _sustituir(ws, BITTER_VIEJO, BITTER):
+        cambios.append('«Coctelería Clásica»: «Peychaud» → «Peychaud\'s» y '
+                       '«bitter/Orange bitters» → «bitters/orange bitters» '
+                       '(nombre real de la marca y minúscula en el genérico)')
+    motor.renumerar(ws)
+
+    ws = wb['Cerveza y Grifo']
+    if _sustituir(ws, CO2_VIEJO, CO2):
+        cambios.append('«Cerveza y Grifo»: «2.5-3.0 bar» → «2,5-3,0 bar» '
+                       '(separador decimal español)')
     motor.renumerar(ws)
     return tocado
 
@@ -339,6 +414,33 @@ JORNADA_MENSUAL = [
      '1ª semana'),
 ]
 
+#: DOM-23 — tercer recuento del mismo dinero: «Cierre de Caja» (09) lo cuenta,
+#: «Cierre Barra» (01) lo cuadraba otra vez y el manager, aquí, un tercera.
+#: El trabajo del responsable no es volver a contar: es MIRAR EL DESCUADRE que
+#: ya calcula la hoja del 09 y firmarlo. Con la remisión al fichero dueño.
+CAJA_MANAGER_VIEJO = 'Revisar caja y cuadrar con TPV'
+CAJA_MANAGER = ('Revisar el DESCUADRE que ha quedado en «Cierre de Caja» del '
+                'fichero 09-apertura-cierre-caja.xlsx y firmarlo: el manager '
+                'valida el arqueo, no lo vuelve a contar')
+
+#: Y el mismo dato dos veces: la barra anota las mermas del turno al cierre
+#: (01, DOM-18) porque es quien sabe qué se ha roto; si el manager las «anota»
+#: también, salen dos cifras distintas y el pour cost del mes se calcula con la
+#: que se mire primero. Aquí se revisa lo anotado y se traslada al control.
+MERMAS_MANAGER_VIEJO = ('Anotar mermas (rotura cristalería, derrames, '
+                        'producto caducado)')
+MERMAS_MANAGER = ('Revisar las mermas que ha anotado la barra al cierre '
+                  '(cristalería rota, derrames, cócteles devueltos y producto '
+                  'caducado) y trasladarlas al control del pour cost')
+
+#: El motor cuelga «(refrigeración 0-4 °C) — anota la lectura: ____ °C» a toda
+#: tarea de frío (§2.9), y esta ya terminaba en su propio paréntesis: el
+#: cliente leía «(limpieza, temperatura) (refrigeración 0-4 °C)». Se reescribe
+#: la base con dos puntos para que la cola del motor case sin chocar.
+CAMARAS_MENSUAL_VIEJO = 'Revisar estado de cámaras frigoríficas (limpieza, temperatura)'
+CAMARAS_MENSUAL = ('Revisar el estado de las cámaras frigoríficas: limpieza, '
+                   'cierre de puertas y temperatura')
+
 
 def _f03(wb, cambios):
     tocado = False
@@ -348,6 +450,15 @@ def _f03(wb, cambios):
         cambios.append('«Diario Manager»: registro diario de jornada '
                        '(obligatorio desde 2019) — DOM-17 (equivalente)')
         tocado = True
+    if _sustituir(ws, CAJA_MANAGER_VIEJO, CAJA_MANAGER):
+        cambios.append('«Diario Manager»: el manager VALIDA el descuadre del '
+                       '09 en vez de hacer un tercer recuento del mismo '
+                       'dinero, y la tarea remite al fichero dueño — DOM-23')
+    if _sustituir(ws, MERMAS_MANAGER_VIEJO, MERMAS_MANAGER):
+        cambios.append('«Diario Manager»: las mermas se ANOTAN una sola vez '
+                       '(en «Cierre Barra», DOM-18) y aquí se revisan: dos '
+                       'anotaciones daban dos cifras para el mismo pour cost '
+                       '— DOM-23')
     motor.renumerar(ws)
 
     ws = wb['Mensual Manager']
@@ -356,6 +467,10 @@ def _f03(wb, cambios):
         cambios.append('«Mensual Manager»: archivo de los registros de '
                        'jornada del mes — DOM-17 (equivalente)')
         tocado = True
+    if _sustituir(ws, CAMARAS_MENSUAL_VIEJO, CAMARAS_MENSUAL):
+        cambios.append('«Mensual Manager»: se va el doble paréntesis '
+                       '«(limpieza, temperatura) (refrigeración 0-4 °C)» que '
+                       'dejaba la cola de §2.9 del motor')
     motor.renumerar(ws)
 
     if _instrucciones(wb, 'El registro de jornada es obligatorio', [
@@ -648,9 +763,12 @@ def _f05(wb, cambios):
 #: escrito. El bloque va DELANTE de «Preparación»: no sirve de nada preguntar
 #: por las intolerancias cuando ya has comprado el queso.
 RESERVA = [
+    # Un bar de cócteles no tiene cocina de partidas (ver la cabecera del
+    # módulo): el maridaje de una cata lo monta la barra o un proveedor.
     ('Recoger POR ESCRITO alérgenos, intolerancias y dietas de los asistentes '
-     'y trasladarlos a barra y cocina (en una cata, frutos secos y sulfitos '
-     'son los dos que siempre aparecen)', 'Admin', 'Manager', 'Al confirmar'),
+     'y trasladarlos a la barra y a quien prepare la comida del maridaje (en '
+     'una cata, frutos secos y sulfitos son los dos que siempre aparecen)',
+     'Admin', 'Manager', 'Al confirmar'),
     ('Cerrar por escrito el precio por persona y qué incluye: número de '
      'piezas, maridaje de comida, copa de despedida y si hay botella para '
      'llevar', 'Admin', 'Manager', 'Al confirmar'),
@@ -671,6 +789,12 @@ ALERGENOS_SNACKS = [
      'informar', 'Barra', 'Manager', '17:30'),
 ]
 
+#: Errata: «maridaje food» es medio inglés y medio español y no significa nada
+#: en ninguno de los dos. Además tiene que decir lo mismo que la tarea que
+#: ahora abre la hoja («…y a quien prepare la comida del maridaje»).
+MARIDAJE_VIEJO = 'Preparar maridaje food (quesos, chocolates, tapas)'
+MARIDAJE = 'Preparar la comida del maridaje (quesos, chocolates y tapas)'
+
 
 def _f06(wb, cambios):
     tocado = False
@@ -681,6 +805,10 @@ def _f06(wb, cambios):
                        '(alérgenos por escrito, precio por persona, señal, '
                        'cancelación) — DOM-19 (equivalente)')
         tocado = True
+    if _sustituir(ws, MARIDAJE_VIEJO, MARIDAJE):
+        cambios.append('«Maridaje Catas»: «maridaje food» → «la comida del '
+                       'maridaje» (ni inglés ni español, y ahora dice lo mismo '
+                       'que la tarea de alérgenos que abre la hoja)')
     motor.renumerar(ws)
 
     ws = wb['After Work']
@@ -704,6 +832,27 @@ def _f06(wb, cambios):
         cambios.append('Instrucciones: qué se cierra al confirmar una cata y '
                        'dónde están los alérgenos — DOM-19 (equivalente)')
     return tocado
+
+
+# ==========================================================================
+# 08 — apertura y cierre del negocio
+# ==========================================================================
+#: Errata de consistencia: el kit escribe «CO₂» con subíndice en los otros dos
+#: sitios donde aparece el gas de la cerveza («Cerveza y Grifo» del 02 y
+#: «Mantenimiento Mensual» del 05) y aquí lo dejaba como «CO2». Es el mismo
+#: gas y el mismo equipo, y esta es la hoja que se imprime todos los días.
+#: NO se toca nada más del 08: es el fichero precargado por el motor.
+CO2_NEGOCIO_VIEJO = 'Verificar grifos de cerveza y presión CO2'
+CO2_NEGOCIO = 'Verificar grifos de cerveza y presión de CO₂'
+
+
+def _f08(wb, cambios):
+    ws = wb['Apertura del Negocio']
+    if _sustituir(ws, CO2_NEGOCIO_VIEJO, CO2_NEGOCIO):
+        cambios.append('«Apertura del Negocio»: «presión CO2» → «presión de '
+                       'CO₂», como en «Cerveza y Grifo» (02) y «Mantenimiento '
+                       'Mensual» (05)')
+    return False                                   # sin cambio estructural
 
 
 # ==========================================================================
@@ -747,10 +896,19 @@ FECHAS = [
       '2 semanas', 'Arranca de hecho la temporada de cenas de empresa')),
     ('Navidad/Empresas', 'despues',
      ('24 Diciembre', 'Nochebuena',
-      'Decidir el horario (muchos bares abren sólo la madrugada), turno '
-      'reducido y cierre temprano de cocina',
+      'Decidir el horario (muchos bares cierran la tarde y abren sólo la '
+      'madrugada), turno reducido y comunicar el horario del día en Google '
+      'Business Profile y en RRSS',
       '3 semanas', 'La copa de después de la cena familiar es un pico corto '
       'y muy rentable')),
+]
+
+#: Erratas del calendario heredado: dos eventos llevan el mes EN INGLÉS y
+#: abreviado en mitad de una hoja escrita en español («13 May», «Sep»). Son la
+#: columna «Evento» (C), que es la que se lee de un vistazo.
+MESES_CAL = [
+    ('World Cocktail Day (13 May)', 'World Cocktail Day (13 de mayo)'),
+    ('Negroni Week (Sep)', 'Negroni Week (septiembre)'),
 ]
 
 
@@ -776,6 +934,10 @@ def _bonus02(wb, cambios):
         cambios.append(f'«Calendario Anual»: {nuevas} fechas que faltaban '
                        '(Año Nuevo, Carnaval, 1 de mayo, 15 de agosto, puente '
                        'de diciembre y Nochebuena)')
+    for viejo, nuevo in MESES_CAL:
+        if _sustituir(ws, viejo, nuevo, col=3):
+            cambios.append(f'«Calendario Anual»: «{viejo}» → «{nuevo}» (el '
+                           'mes iba en inglés y abreviado)')
     # La columna «#» de este molde es TEXTO y no la renumera el motor: sin
     # esto, el calendario se publicaría con dos «1» y saltando del 3 al 5.
     n = 0
@@ -801,6 +963,7 @@ FICHEROS = {
     '03-tareas-manager.xlsx': _f03,
     '05-tareas-semanales-mensuales.xlsx': _f05,
     '06-eventos-festivos.xlsx': _f06,
+    '08-apertura-cierre-negocio.xlsx': _f08,
     'BONUS-02-calendario-anual-tareas.xlsx': _bonus02,
 }
 

@@ -1,0 +1,121 @@
+{
+ "rol": "verificador independiente · kit-tareas-hotel · ver3 (sobre motor 2.3 + contenido_kit_tareas_hotel.py sin cambios)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-hotel",
+ "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=.../propio-verificador3 · astro-site/public/dl/** intacto (git status --porcelain astro-site/public/dl/ = vacío) · sin git add/commit/stash/clean · sin KIT_TAREAS_APPLY",
+ "regla_termica": "istats antes de cada arranque: 40,0 / 40,25 / 42,31 / 43,0 / 43,38 / 41,94 °C — máximo 43,44 °C, muy por debajo de 65 °C; un solo intérprete a la vez; nada de builds ni Playwright",
+
+ "1_regeneracion": {
+  "comando": "main.py --producto kit-tareas-hotel --dry-run (motor 2.3 + contenido, sin --solo)",
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_detalle": "7/7 · censo-entregables --fail sobre la COPIA del scratchpad (19 xlsx, 0 docx, 0 pdf) → 'OK: 0 defectos (--fail)'",
+  "idempotencia_2a_pasada": {"ejecutada": true, "diferencias": 0, "detalle": []},
+  "listas_dv": ["✓,—,N/A"],
+  "listas_dv_detalle": "gates.dv_y_bio: hojas_checklist=4 (molde ▸, 18+19) + hojas_p4=49 = 53 hojas de checklist evaluadas · listas_dv_del_producto=[\"\\\"✓,—,N/A\\\"\"] (UNA sola) · dv_incorrectas=[] · sin_bio=[] · sin_hoja_instrucciones=[] · version_desfasada=[] · aviso_dv_mezcladas=[] — idéntico a lo que reportaba ver2 sobre motor 2.2; motor 2.3 no toca la DV y sigue limpio."
+ },
+
+ "2_casos_seccion6": {
+  "arqueo_cuadra": {"ok": true, "evidencia": "main.py 6/7 (pycel): 19-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 OK"},
+  "arqueo_descuadra": {"ok": true, "evidencia": "main.py 6/7 (pycel): mismo caso con Z alterada → C54 = 10 OK"},
+  "contador_honesto_N_A": {"ok": true, "evidencia": "18-apertura-cierre-negocio.xlsx:Apertura del Negocio:D29/F29 = '15 de 15' OK (main.py + verificado a mano: fila 29 'Tareas completadas', 18 tareas reales en 'Apertura del Negocio', filas libres 23-28 vacías de verdad — columna A None, no cuentan)"},
+  "contador_p4_sin_rotulos": {"ok": true, "evidencia": "01-fb-buffet-desayuno.xlsx:Apertura Desayuno:C63/E63 = '0.0 de 46.0' OK (hoja recién impresa, sin marcar nada)"},
+  "plantilla_personalizable_07": {"ok": true, "aplica": false, "evidencia": "07-recepcion-turnos.xlsx sheetnames = ['Instrucciones','Turno Mañana','Turno Tarde','Turno Noche','Check-in Check-out'] — comprobado directamente con openpyxl sobre la copia del dry-run; sigue sin las hojas 'Por Franja Horaria/Por Área/Por Perfil' del molde del representante, así que DOM-07 no aplica a este hermano, igual que en ver2"},
+  "negocio_08_precargado": {"ok": true, "evidencia": "gates.negocio_precargado: fichero=18-apertura-cierre-negocio.xlsx, tareas=33, huecos=[], firma_ok=true, huecos_firma=[]"},
+  "bio_en_instrucciones": {"ok": true, "evidencia": "gates.dv_y_bio: instrucciones_con_bio=19, sin_bio=[]; verificado además por lectura directa en 01-fb-buffet-desayuno.xlsx:Instrucciones!B19/B20 y 13-mantenimiento.xlsx:Instrucciones!B18/B19 — bio de John Guerrero + 'Versión 2.0 · agosto 2026' en las 19/19 hojas Instrucciones"},
+  "resumen": {"casos6_ok": 7, "casos6_total": 7, "nota": "4 casos verificados con pycel/gate por main.py (arqueo-cuadra, arqueo-descuadra, contador-honesto, contador-p4) + 3 verificados por lectura directa propia (07-no-aplica, 08-precargado, bio) = 7/7; sin regresiones frente a ver2 (motor 2.3 no toca ninguno de estos mecanismos)"}
+ },
+
+ "3_motor_2_3_sobre_hotel": {
+  "T-01_b40": {
+   "ok": true,
+   "que_pedia_la_tarea": "en el fichero de NEGOCIO (18), Instrucciones sin contradicción sobre cuál es el marco",
+   "evidencia": "18-apertura-cierre-negocio.xlsx:Instrucciones!B35 = '▸ Es el checklist del LOCAL COMPLETO: lo que se abre y se cierra del negocio entero, no de cada área. Úsalo como marco del día.' (sección 'Qué resuelve') y !B38 = '▸ Estás en 18-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 19-apertura-cierre-caja.xlsx.' (sección 'Se conecta con'). Las dos líneas dicen lo MISMO. Antes de motor 2.3, !B40 (numeración vieja) decía 'el marco del día está en 01-apertura-cierre.xlsx', que ni siquiera es un fichero de este kit — contradicción resuelta.",
+   "extra": "19-apertura-cierre-caja.xlsx:Instrucciones!B49 = '▸ Estás en 19-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día (fondo, recuento, Z del TPV y descuadre); el marco del día está en 18-apertura-cierre-negocio.xlsx.' — también coherente con !B35/B38 del 18."
+  },
+  "T-02_tpv": {
+   "ok": true,
+   "que_pedia_la_tarea": "en el fichero de CAJA la tarea del TPV dice «Comprobar que el TPV está encendido y abrir turno de caja» y en el de negocio sigue «Encender TPV…»",
+   "evidencia": "18-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = 'Encender TPV / POS / datáfono' (Encargado, 05:30) — SIN CAMBIOS, es el hito legítimo. 19-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = 'Comprobar que el TPV está encendido y abrir turno de caja' (Responsable de caja, 06:00, hora INTACTA) — antes era 'Encender TPV / POS' a las 06:00, mismo verbo que el 18 a las 05:30 sin remisión. gates.tpv_duplicado confirma: 1 sola tarea de 'Encender…TPV' en TODO el producto, la del 18, etiquetada 'negocio (hito legítimo)'; 0 'fuera_del_fichero_de_negocio'. Coherencia horaria: 18 enciende a las 05:30, 19 comprueba a las 06:00 — 30 min después, tiene sentido operativo (se enciende el TPV al abrir el local; el responsable de caja lo comprueba al abrir su turno, más tarde)."
+  },
+  "T-03_recuento": {
+   "ok": true,
+   "gate_recuento_tareas": 636,
+   "desglose_gate": "molde ▸ 56 + molde P4 580 = 636 (recuento_por_molde.checklist_▸=56, recuento_por_molde.p4=580); antes de motor 2.3 el gate devolvía 56 a secas (11 veces menos)"
+  },
+  "T-04_parentesis": {
+   "ok": true,
+   "evidencia": "18:Instrucciones!B37 y 19:Instrucciones!B48 = '▸ Orden de uso: local → caja. Cada fichero cubre un nivel: …' — la enumeración correctamente NO incluye 'áreas' (hotel no tiene un fichero ▸ de áreas en alcance, areas=None en el contexto del kit; su detalle por zona vive en los 15 P4). Antes de T-04 el literal era '(cocina, sala, barra)' hardcodeado para los 12 kits, que habría sido falso aquí.",
+   "matiz": "ver hallazgo nuevo H-01 abajo: el TEXTO FIJO de T-08 (no el de T-04) sí sigue mencionando genéricamente 'el de áreas' en la misma viñeta."
+  },
+  "T-05_bandas_dedup": {"ok": true, "evidencia": "gates.bandas_solapadas = [] para kit-tareas-hotel — no había solapes de banda detectados en este kit ni en motor 2.2, así que no hay nada que deduplicar aquí; el fix se verifica en pizzería (2 entradas en vez de 4), pero no cambia nada propio de hotel"},
+  "T-08_frase": {
+   "ok": true,
+   "resultado_barrido": "frase NUEVA ('Cada fichero cubre un nivel') presente en 2/19 ficheros (18 y 19) · frase VIEJA ('No se duplican: cada uno cubre un nivel.') presente en 0/19 ficheros — grep exhaustivo de las 19 hojas Instrucciones de la copia del dry-run.",
+   "explicacion_del_2_de_19": "el bloque 'Se conecta con' / 'Orden de uso' donde vive esta frase SÓLO existe en las Instrucciones de 18 (negocio) y 19 (caja): son las únicas dos hojas de este kit con esa sección — comprobado leyendo las 19 hojas Instrucciones completas. Los 17 ficheros P4 (01-15 + BONUS-01/02) tienen una sección 'Cómo usar esta plantilla' totalmente distinta, sin 'Se conecta con' ni 'Orden de uso', y NUNCA tuvieron ni la frase vieja ni la nueva — no es un hueco de la regeneración, es que ese bloque no les aplica estructuralmente. frase_t08_ok se da por CUMPLIDA porque en los ÚNICOS 2 ficheros donde el literal existe, está la versión nueva y en NINGUNO de los 19 queda la vieja."
+  }
+ },
+
+ "4_contenido_pendiente_tanda3": {
+  "origen": "kit-tareas-hotel-ver2.json.6_hallazgos_nuevos_jefe_de_cocina (1 media + 1 baja)",
+  "items": [
+   {"tema": "TPV encendido por partida doble entre 18 y 19 con horas contradictorias", "severidad_original": "media", "estado": "resuelto por T-02", "celda": "19-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9", "verificado_abriendo_celda": true},
+   {"tema": "'Actualizar escandallos, precios de carta y tarifas de banquete…' dentro del bloque legal/inspección de 13-Trimestral y Anual (tarea de gestión comercial mezclada con obligaciones normativas)", "severidad_original": "baja", "estado": "NO resuelto — sigue en el mismo sitio", "celda": "13-mantenimiento.xlsx:'Trimestral y Anual':B35 (fila desplazada de B21 a B35 por las inserciones de motor 2.3, mismo texto)", "verificado_abriendo_celda": true, "motivo": "no es un T-item de motor 2.3 (T-01/02/03/04/05/08 no tocan contenido de 13 más allá de la geometría) ni estaba entre las decisiones (T-01..T-08) del mantenedor; sigue pendiente de una mini-ronda de contenido, severidad baja, no bloqueante"}
+  ],
+  "aplicados_verificados_abriendo_celda_real": 1,
+  "contenido_no_aplicado_sin_motivo": ["13-mantenimiento.xlsx:Trimestral y Anual:B35 — 'Actualizar escandallos, precios de carta y tarifas de banquete…' sigue mezclado con DDD/legionela/extintores/OCA; encajaría mejor en 14-administracion.xlsx o en un bloque 'Gestión' propio"]
+ },
+
+ "5_ficheros_de_otro_molde": {
+  "metodo": "19 xlsx del working copy recargados con openpyxl (data_only=False y data_only=True); barrido de #REF!/#NAME?/#VALUE!/#DIV0!/#N/A/#NULL!/#NUM! en TODAS las celdas de TODAS las hojas de los 19 ficheros",
+  "ficheros_abren_sin_error": 19,
+  "ficheros_totales": 19,
+  "errores_formula_encontrados": [],
+  "censo_confirma": "censo-entregables --fail sobre la copia: 0 defectos (creator, bio, box_colA_muerta, noprint, nonlat, empty_str, nocache_real — todo limpio)"
+ },
+
+ "6_recuento_independiente": {
+  "metodo": "script openpyxl PROPIO (no reutiliza motor.py): por cada hoja de checklist (excluidas 'Instrucciones' y 'Calendario'), cuenta filas donde columna A es entero (numeración real de tarea) Y columna B tiene texto no vacío; las filas libres verdaderamente vacías (columna A = None) no cuentan — verificado a mano en 18:Apertura del Negocio filas 23-28.",
+  "tareas_total_manual": 636,
+  "recuento_gate": 636,
+  "diferencia_pct": 0.0,
+  "por_fichero_manual": {
+   "01-fb-buffet-desayuno.xlsx": 64, "02-fb-buffet-comida-cena.xlsx": 35, "03-fb-restaurante-carte.xlsx": 28,
+   "04-fb-outlets.xlsx": 39, "05-fb-room-service-minibar.xlsx": 38, "06-fb-banquetes-eventos.xlsx": 34,
+   "07-recepcion-turnos.xlsx": 48, "08-guest-services.xlsx": 23, "09-housekeeping.xlsx": 52,
+   "10-areas-publicas.xlsx": 28, "11-piscina.xlsx": 28, "12-terraza.xlsx": 17, "13-mantenimiento.xlsx": 69,
+   "14-administracion.xlsx": 28, "15-spa-wellness.xlsx": 28, "18-apertura-cierre-negocio.xlsx": 33,
+   "19-apertura-cierre-caja.xlsx": 23, "BONUS-01-briefing-servicio.xlsx": 21, "BONUS-02-calendario-anual-tareas.xlsx": 0
+  },
+  "coincidencia": "EXACTA, fichero a fichero, con gates.recuento_tareas.por_fichero del informe de main.py y con lo que motor-2.3.json (mantenedor) reportaba en 'pruebas' para hotel — tres fuentes independientes (mi script, el gate del motor, el mantenedor) llegan a los mismos 636"
+ },
+
+ "7_hallazgos_nuevos_jefe_de_cocina": [
+  {
+   "severidad": "baja",
+   "donde": "18-apertura-cierre-negocio.xlsx:Instrucciones!B37 y 19-apertura-cierre-caja.xlsx:Instrucciones!B48 — 'Orden de uso: local → caja. Cada fichero cubre un nivel: el de negocio marca el HITO…, el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO.'",
+   "hallazgo": "El literal fijo de T-08 (FRASE_NIVELES, igual para los 12 kits) sigue nombrando 'el de áreas' como si existiera un tercer fichero ▸ dedicado, cuando en hotel el detalle por zona lo reparten los 15 ficheros P4 (01-15), no uno solo. La frase T-04 de la línea de arriba (B36/B47, 'Orden de uso: local → caja') SÍ se adaptó correctamente y ya no menciona áreas — es sólo esta segunda viñeta (T-08, texto fijo) la que queda genérica. No es falso (el detalle por zona SÍ existe, repartido), pero un cliente que lea las dos viñetas seguidas puede buscar 'el fichero de áreas' y no encontrar uno. Cosmético, no bloqueante — mismo patrón que el mantenedor ya documentó como aceptado para T-08 (una sola frase para toda la familia, coste asumido)."
+  },
+  {
+   "severidad": "baja",
+   "donde": "13-mantenimiento.xlsx:'Trimestral y Anual':B35, dentro del bloque 'Documentación, seguros y personal'",
+   "hallazgo": "Carry-over de ver2 (H-02 de la tanda anterior), NO tocado por motor 2.3: 'Actualizar escandallos, precios de carta y tarifas de banquete con los precios reales de proveedor' sigue mezclada entre obligaciones normativas puras (pólizas, registros de jornada, Verifactu, licencias). No es algo que pida un inspector; es gestión comercial y desentona con el resto del bloque, que se presenta como 'lo que se CONTRATA y se pide por escrito en una inspección'."
+  }
+ ],
+
+ "recuento_gate": 636,
+ "tareas_total_manual": 636,
+ "ficheros_total": 19,
+ "motor_no_resueltos": [],
+ "contenido_no_aplicado": ["13-mantenimiento.xlsx:Trimestral y Anual:B35 — tarea de pricing/gestión comercial dentro del bloque legal/inspección (baja, carry-over, no es T-item de motor 2.3)"],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "motor 2.3 resuelve para hotel los tres T-items que le aplicaban (T-01 sin contradicción de marco, T-02 TPV con texto distinto en negocio/caja y hora coherente, T-03 recuento_tareas=636 correcto) sin romper nada (idempotencia 0, censo 0 defectos, 19/19 ficheros sin #REF!/#NAME!, 0 no-latinos, 0 duplicados de texto exacto entre ficheros); T-04 y T-08 se verifican también, con la salvedad de que T-08 sólo aplica estructuralmente a 2 de los 19 ficheros (18/19), donde está correctamente resuelto; los 6 casos §6 aplicables pasan y el 7.º confirma correctamente que no aplica; la DV sigue siendo UNA sola lista en las 53 hojas; el recuento manual independiente (636) coincide EXACTO con el gate (0,00 % de diferencia, no sólo dentro del ±2 % exigido); los dos hallazgos nuevos son BAJA y ninguno rompe fórmula, gate ni información al cliente — corregibles en una mini-ronda de contenido, no bloqueantes para cerrar esta tanda.",
+
+ "notas": [
+  "Todas las lecturas de celda son sobre el WORKING COPY del dry-run (CLAUDE_SCRATCHPAD=.../propio-verificador3/dryrun-kt/kit-tareas-hotel); astro-site/public/dl/kit-tareas-hotel/ no se ha tocado — comprobado con 'git status --porcelain astro-site/public/dl/' vacío antes y después de este verificador.",
+  "No se ha vuelto a regenerar kit-tareas (el representante): sólo se ha leído lo que motor-2.3.json documenta sobre él en 'afecta_al_representante'.",
+  "landing (astro-site/src/data/productos/tareas/kit-tareas-hotel.ts) sigue desfasada según critico-2.json.capa_producto.por_kit — no es objeto de esta verificación (que es sobre el motor/contenido de los xlsx), pero se deja constancia de que sigue pendiente: publica '46 checklists en 15 plantillas' y '~40 tareas' del 01 cuando el 01 real tiene 64 y el kit entero 636.",
+  "El literal T-08 (FRASE_NIVELES) y el recorte T-04 conviven en dos viñetas contiguas de la misma hoja (Instrucciones!B36-B37 en 18, B47-B48 en 19): una se adaptó a la ausencia de fichero de áreas propio del hotel y la otra no — ver hallazgo nuevo baja arriba."
+ ]
+}

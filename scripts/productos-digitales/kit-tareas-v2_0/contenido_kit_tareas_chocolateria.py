@@ -6,7 +6,14 @@ contenido_kit_tareas_chocolateria.py — CONTENIDO propio de
 Fuente de los cambios: `auditorias/kit-tareas-hermanos/
 kit-tareas-chocolateria-verif.json` campo `contenido_pendiente` (2 medias, 1
 baja) más los equivalentes de §3 del representante que aplican a una
-chocolatería / bombonería con obrador y tienda.
+chocolatería / bombonería con obrador y tienda. Sobre motor 2.3 se añaden los
+dos `hallazgos_nuevos` de severidad media de `…-ver2.json` (tanda 3): el
+criterio de paso/no-paso del test de templado, que sólo estaba escrito para el
+chocolate negro, y DOM-09 —tres tareas de 01 que duplicaban hitos de 08 y 09
+sin remisión—. DOM-09 es de MOTOR, pero `colapsar_duplicados` sólo corre en el
+molde ▸ y aquí 01 es P4: se resuelve desde contenido, reescribiendo las tres
+filas 1:1 (ninguna se borra) como comprobación con la referencia «(hito en
+08/09)».
 
 `main.py` lo carga sólo con `--producto kit-tareas-chocolateria` (compone el
 nombre del módulo con el pid: `contenido_` + pid con guiones bajos), así que
@@ -196,6 +203,44 @@ def _sustituir(ws, viejo, nuevo, col=2):
     if _fila(ws, nuevo, col) is not None:
         return None
     r = _exige(ws, viejo, col)
+    ws.cell(row=r, column=col).value = nuevo
+    return r
+
+
+def _fila_en_seccion(ws, banda, texto, col=2):
+    """Como `_fila`, pero acotado a la sección cuya banda (columna A) es `banda`.
+
+    En «Templado» el texto de fábrica «Test de templado y registrar lote» está
+    DOS veces —una en «Chocolate con leche» y otra en «Chocolate blanco»,
+    medido en el fichero de origen— y `_fila` devuelve siempre la primera. Sin
+    acotar, las dos sustituciones caerían sobre la misma fila o dependerían del
+    orden en que se llamen, que es justo la clase de acierto por casualidad que
+    §2.5 prohíbe (un regex sin acotar no falla: acierta en el sitio
+    equivocado).
+
+    El corte de la sección es la siguiente celda de la columna A que sea texto
+    y no la «#» de la cabecera repetida: la banda de la sección siguiente o,
+    al final del cuerpo, la fila de firma.
+    """
+    ini = _exige(ws, banda, 1)
+    texto = _norm(texto)
+    for r in range(ini + 1, ws.max_row + 1):
+        v = ws.cell(row=r, column=1).value
+        if isinstance(v, str) and v != '#':
+            return None
+        if _norm(ws.cell(row=r, column=col).value) == texto:
+            return r
+    return None
+
+
+def _sustituir_en_seccion(ws, banda, viejo, nuevo, col=2):
+    """`_sustituir` acotado a una sección. Devuelve la fila, o None si ya estaba."""
+    if _fila(ws, nuevo, col) is not None:
+        return None
+    r = _fila_en_seccion(ws, banda, viejo, col)
+    if r is None:
+        raise AnclaPerdida(f'«{ws.title}» / «{banda}»: no encuentro '
+                           f'{L(col)}=«{viejo}» (kit-tareas-chocolateria)')
     ws.cell(row=r, column=col).value = nuevo
     return r
 
@@ -542,6 +587,26 @@ MERMAS_CIERRE = [
 GAS_CIERRE = ('Cerrar la llave general de gas si el obrador la tiene y '
               'verificar que agua y luces quedan apagadas')
 
+#: DOM-09 — 01 es el checklist GENERAL del local y en este kit es molde P4, así
+#: que `motor.colapsar_duplicados` (y con él la remisión «→ ver 08/09» de §2.5)
+#: no llega: tres tareas suyas repetían, con otras palabras, hitos que ya manda
+#: el fichero 09 de caja y el 08 de negocio. Repetir un arqueo no es redundancia
+#: inocua: son dos recuentos con dos criterios que pueden no cuadrar, y el
+#: encargado acaba dando por hecho el que no hizo. No se borra ninguna fila —el
+#: molde P4 numera por bloque y el contador cuenta el rango entero—: se
+#: reescriben 1:1 como lo que sí aporta el checklist del local, una COMPROBACIÓN
+#: de que el hito está hecho, con la remisión al fichero que manda.
+TPV_APERTURA = ('Comprobar que el TPV está activo y que el fondo de caja ya se '
+                'ha contado y anotado antes de abrir la puerta: el recuento no '
+                'se repite aquí, se hace en «Apertura de Caja» del fichero 09 '
+                '(hito en 08/09)')
+CUADRE_CIERRE = ('Comprobar que el arqueo del día ha quedado cerrado y firmado '
+                 'y las ventas registradas: el cuadre no se repite aquí, se '
+                 'hace en «Cierre de Caja» del fichero 09 (hito en 08/09)')
+TPV_CIERRE = ('Comprobar que el TPV y el terminal de pago quedan cerrados '
+              'DESPUÉS del arqueo, nunca antes: el cierre de terminal se manda '
+              'en «Cierre del Negocio» del fichero 08 (hito en 08/09)')
+
 
 def _f01(wb, cambios):
     tocado = False
@@ -584,11 +649,26 @@ def _f01(wb, cambios):
                        'verdad hay en una vitrina de bombonería y añade el '
                        'precio por kilo de la venta al peso — DOM-19 '
                        '(equivalente)')
+    if _sustituir(ws, 'Activar TPV y verificar fondo de caja', TPV_APERTURA):
+        cambios.append('«Apertura»: el TPV y el fondo de caja se COMPRUEBAN '
+                       'aquí y se cuentan en «Apertura de Caja» del 09, que es '
+                       'donde está el arqueo — antes eran dos recuentos '
+                       'paralelos sin remisión — DOM-09')
     _renumerar_p4(ws)
     _dv_extender(ws)
     _freeze(ws)
 
     ws = wb['Cierre']
+    if _sustituir(ws, 'Cuadre de caja y registro de ventas del día',
+                  CUADRE_CIERRE):
+        cambios.append('«Cierre»: el cuadre de caja deja de duplicar el arqueo '
+                       'entero de «Cierre de Caja» (09) y pasa a comprobar que '
+                       'está cerrado y firmado, con la remisión — DOM-09')
+    if _sustituir(ws, 'Apagar TPV y cerrar terminal de pago', TPV_CIERRE):
+        cambios.append('«Cierre»: apagar el TPV era el mismo hito que «Cierre '
+                       'del Negocio» (08) B8; aquí queda la comprobación de '
+                       'que se hizo DESPUÉS del arqueo, que es el orden que se '
+                       'salta todo el mundo — DOM-09')
     if _sustituir(ws, 'Verificar temperaturas de cámaras y registrar',
                   CIERRE_CAMARAS):
         cambios.append('«Cierre»: las dos temperaturas de cierre con su '
@@ -642,6 +722,31 @@ CLIMA_OBRADOR = [
 TEST_NEGRO = ('Test de templado en punta de espátula: debe secar en 3-5 min a '
               '20 °C, con brillo, snap seco y contracción en el molde. Si no, '
               'volver a fundir y templar — no se moldea «a ver si sale»')
+#: Hallazgo de la tanda 3 (media) — el criterio de paso/no-paso del test SÓLO
+#: estaba en la sección de chocolate negro. Las de leche y blanco —mismo
+#: control, mismo riesgo, y encima con menos margen: la manteca lleva grasa
+#: láctea y cristaliza más blanda— se quedaron con el «Test de templado y
+#: registrar lote» de fábrica, que no dice contra qué se compara ni qué se hace
+#: si el lote no pasa. Se les escribe el criterio con el punto de trabajo de SU
+#: cobertura, porque es lo que cambia entre las tres curvas de la hoja.
+TEST_LECHE = ('Test de templado en capa fina sobre papel: a 18-20 °C debe '
+              'cristalizar en 3-5 min, con brillo uniforme y sin vetas, '
+              'partiendo del punto de trabajo de 29-30 °C. Si no, volver a '
+              'fundir y retemplar — no se moldea «a ver si sale». Registrar el '
+              'lote, la hora y la temperatura final')
+TEST_BLANCO = ('Test de templado en capa fina sobre papel: a 18-20 °C debe '
+               'cristalizar en 3-5 min, con brillo uniforme y sin vetas, '
+               'partiendo del punto de trabajo de 28-29 °C. Si no, volver a '
+               'fundir y retemplar — no se moldea «a ver si sale». Registrar '
+               'el lote, la hora y la temperatura final')
+#: El punto de trabajo de la cobertura blanca de la hoja era 27-28 °C y el
+#: criterio del test que pide la tanda 3 son 28-29 °C (la curva estándar de
+#: cobertura blanca: fundir 40-45, sembrar a 25-26 y subir a 28-29). Dejar los
+#: dos números enfrentados DENTRO del mismo bloque de cinco filas sería peor
+#: que cualquiera de los dos por separado: el chocolatero leería «recalentar a
+#: 27-28» en una fila y «partiendo de 28-29» en la de debajo. Se alinean las
+#: dos al valor de oficio.
+TRABAJO_BLANCO = 'Recalentar a 28-29 °C — punto de trabajo'
 #: DOM-18 (equivalente) — «Registrar mermas y chocolate descartado» no dice qué
 #: se hace con ellas, y en chocolatería la diferencia es dinero: el chocolate
 #: sin relleno y sin contaminar se refunde; el que lleva ganache, no.
@@ -759,6 +864,31 @@ def _f02(wb, cambios):
         cambios.append('«Templado»: el test de templado pasa de enumerar tres '
                        'palabras a decir el criterio (3-5 min a 20 °C) y qué '
                        'hacer si no lo pasa')
+    if _sustituir_en_seccion(ws, 'Proceso de templado — Chocolate con leche',
+                             'Test de templado y registrar lote', TEST_LECHE):
+        cambios.append('«Templado»: el test de la cobertura CON LECHE deja de '
+                       'ser «test de templado y registrar lote» y trae el '
+                       'criterio de paso/no-paso (capa fina sobre papel, '
+                       'cristaliza en 3-5 min a 18-20 °C con brillo uniforme y '
+                       'sin vetas) desde su punto de trabajo (29-30 °C), más '
+                       'qué hacer si no lo pasa — el criterio sólo estaba en '
+                       'la sección de chocolate negro (hallazgo media de la '
+                       'tanda 3)')
+    if _sustituir_en_seccion(ws, 'Proceso de templado — Chocolate blanco',
+                             'Recalentar a 27-28°C — punto de trabajo',
+                             TRABAJO_BLANCO):
+        cambios.append('«Templado»: el punto de trabajo de la cobertura BLANCA '
+                       'pasa de 27-28 °C a los 28-29 °C de la curva estándar, '
+                       'que es contra los que se lee su test de templado — sin '
+                       'esto, las dos filas contiguas del mismo bloque darían '
+                       'dos temperaturas distintas')
+    if _sustituir_en_seccion(ws, 'Proceso de templado — Chocolate blanco',
+                             'Test de templado y registrar lote', TEST_BLANCO):
+        cambios.append('«Templado»: el test de la cobertura BLANCA, igual: '
+                       'criterio de paso/no-paso desde su punto de trabajo '
+                       '(28-29 °C) y qué hacer si no cristaliza — la blanca es '
+                       'la que menos margen tiene, porque la grasa láctea la '
+                       'deja más blanda (hallazgo media de la tanda 3)')
     _renumerar_p4(ws)
     _dv_extender(ws)
 

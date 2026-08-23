@@ -69,8 +69,11 @@ hoja a hoja), pero la numeración no coincide con la del representante:
                                        gestión de personal ninguna
   05-tareas-semanales-mensuales.xlsx → el «05» del representante, tal cual
   07-chefs-table-eventos.xlsx        → el «06 Eventos» del representante
-  09-plantilla-personalizable.xlsx   → el «07» del representante (vacío; es un
-                                       hallazgo de MOTOR, fuera de este módulo)
+  09-plantilla-personalizable.xlsx   → el «07» del representante. Sus tres
+                                       hojas se entregaban EN BLANCO (DOM-07):
+                                       el motor no puede llenarlas —no sabe de
+                                       qué va el kit—, así que las tres filas
+                                       de ejemplo las pone este módulo (`_f09`)
 
 Por eso:
   · el registro diario de jornada (DOM-17) va al cierre de 01, que es la única
@@ -83,6 +86,29 @@ Por eso:
   · la hoja «Trimestral y Anual» (DOM-16) se crea en 05, que es el libro de
     CADENCIAS del kit (el representante la pone en su 03 porque allí el 03 es
     el libro del manager; aquí ese papel no existe).
+
+TODA TAREA NUEVA SE CRUZA CONTRA LAS VIEJAS DE SU HOJA
+================================================================================
+Insertar una sección nueva DELANTE de una vieja no es sólo añadir: si la vieja
+cubre el mismo hecho, el cliente se encuentra dos casillas para una sola cosa y
+marca las dos. Le pasó a «Cenas Especiales» (07): la sección «AL CONFIRMAR LA
+RESERVA» pedía los alérgenos por escrito y nueve filas más abajo seguía viva
+«Alérgenos y preferencias confirmados», que es la misma cosa dicha peor.
+
+La regla del módulo, aplicada a todas sus inserciones:
+
+  · la tarea vieja NO se borra —descuadraría el contador y el cliente que ya
+    usa la hoja perdería su fila—: se REESCRIBE en el momento del ciclo que la
+    nueva no cubre (pactar → producir → cotejar en el pase → facturar);
+  · el cruce se hace contra TODA la hoja, no contra las filas contiguas, y
+    contra las otras hojas del mismo fichero cuando el título de la sección
+    nueva las nombra (por eso «Chef's Table» dejó de confirmar comensales y
+    alérgenos por segunda vez: la sección nueva dice «cena privada, evento o
+    chef's table»);
+  · dos tareas del mismo tema NO son un duplicado si son actos distintos:
+    «Verificar flores comestibles (frescura, color)» y desinfectarlas conviven,
+    igual que «cargar N2O según el menú» y «guardar los cartuchos en vertical
+    lejos del calor». Lo que no puede haber es el MISMO control dos veces.
 """
 import copy
 
@@ -665,6 +691,21 @@ ACEITE = [
      'entregarlo a gestor autorizado', 'Limpieza'),
 ]
 
+#: FUSIÓN 5 (mismo patrón, esta vez contra la hoja NUEVA) — «Trimestral y
+#: Anual» trae «Calibración externa certificada de las básculas de precisión
+#: (0,01 g)» y «Contraste de sondas y termómetros contra un patrón conocido».
+#: «Mensuales» ya decía «Calibración profesional de básculas y termómetros»,
+#: que es exactamente eso pedido cada mes: nadie contrata al metrólogo doce
+#: veces al año, así que la tarea no se hacía y la casilla se marcaba igual.
+#: Se queda con lo que SÍ se hace en casa cada mes —la báscula contra su pesa
+#: patrón— y remite a la hoja nueva para lo demás. Queda una escalera sin
+#: solape: semanal (comprobación rápida) → mensual (pesa patrón) → trimestral
+#: (sondas contra agua con hielo) → anual (calibración externa certificada).
+CALIBRACION_MES = ('Verificación interna de las básculas con su pesa patrón y '
+                   'ajuste si hace falta (el contraste de sondas y '
+                   'termómetros y la calibración externa certificada van en '
+                   '«Trimestral y Anual»)')
+
 #: DOM-17 (equivalente) — la otra mitad del registro de jornada: el archivo
 #: mensual. Va al bloque de finanzas y gestión, que es el único del kit donde
 #: alguien se sienta a cerrar el mes.
@@ -949,6 +990,14 @@ def _f05(wb, cambios):
     _dv_extender(ws)
 
     ws = wb['Mensuales']
+    if _sustituir(ws, 'Calibración profesional de básculas y termómetros',
+                  CALIBRACION_MES):
+        cambios.append('«Mensuales»: «Calibración profesional de básculas y '
+                       'termómetros» pedía cada mes lo que la hoja nueva '
+                       '«Trimestral y Anual» contrata cada año; pasa a ser la '
+                       'verificación interna con pesa patrón y remite a la '
+                       'hoja nueva — mismo patrón de duplicado que el '
+                       'verificador señaló en 07')
     if _insertar_tras(ws, 'Revisión de mermas mensuales y plan de reducción',
                       JORNADA_MES):
         cambios.append('«Mensuales»: archivo mensual de los registros de '
@@ -1007,6 +1056,47 @@ RESERVA_TAREAS = [
      'decoración, tarta, horario de salida', 'Eventos'),
 ]
 
+#: FUSIÓN 1 (verificador tanda 3) — la sección nueva se insertó DELANTE de
+#: «🕯️ CENAS PRIVADAS» sin retirar las tareas viejas que cubren el mismo
+#: hecho, y el cliente se encontraba dos controles para una sola cosa a nueve
+#: filas de distancia. La regla que se aplica aquí, y que vale para cualquier
+#: `_insertar_seccion` futuro de este módulo, es: la tarea vieja NO se borra
+#: —rompería el contador y el cliente que ya usa la hoja perdería su fila—,
+#: se REESCRIBE en el momento del ciclo que la nueva no cubre. La nueva pacta
+#: al CONFIRMAR; la vieja pasa a ser el control del SERVICIO.
+#:
+#: «Alérgenos y preferencias confirmados» (Cenas Especiales, la 2.ª de CENAS
+#: PRIVADAS) era la versión débil del control nuevo: «confirmados» no dice ni
+#: por quién, ni cómo, ni contra qué se cotejan. Ahora es el cotejo del pase.
+ALERGENOS_PASE = ('Cotejar en el pase los alérgenos confirmados por escrito '
+                  'con la comanda de cada comensal')
+
+#: FUSIÓN 2 — «Menú personalizado según solicitud del cliente» repetía, ya
+#: dentro de la cena, el «Menú definitivo cerrado con cocina…» de la sección
+#: nueva. Pasa a ser lo que de verdad ocurre después: producirlo.
+MENU_PRIVADA = ('Producir el menú ya cerrado con el cliente: pedido '
+                'específico, mise en place y prueba de los pases exclusivos '
+                'de esta mesa')
+
+#: FUSIÓN 3 — «Presupuesto aprobado y facturación preparada» solapaba a
+#: medias con «Precio por comensal y qué incluye… confirmado por escrito»: el
+#: precio se pacta al confirmar (sección nueva) y la factura se cierra al
+#: terminar la cena, con lo realmente consumido. Se separan los dos momentos.
+FACTURA_PRIVADA = ('Cerrar la facturación al terminar la cena: extras '
+                   'realmente consumidos, señal ya cobrada descontada e IVA '
+                   'aplicado')
+
+#: FUSIÓN 4 — el título de la sección nueva dice «(cena privada, evento o
+#: chef's table)», así que también absorbe la 1.ª tarea de la hoja «Chef's
+#: Table», que confirmaba comensales y alérgenos por segunda vez y sin exigir
+#: que fuera por escrito. No está «a pocas filas» —está en otra hoja del mismo
+#: fichero—, pero es el mismo defecto: dos controles para el mismo hecho.
+#: Pasa a ser el repaso del día, que es lo que falta cuando la reserva ya se
+#: cerró por escrito semanas antes.
+CHEFS_TABLE_REPASO = ('Repasar con cocina el número final de comensales y los '
+                      'alérgenos ya confirmados por escrito al reservar (ver '
+                      '«Cenas Especiales» → «AL CONFIRMAR LA RESERVA»)')
+
 
 def _f07(wb, cambios):
     tocado = False
@@ -1018,8 +1108,37 @@ def _f07(wb, cambios):
                        'condiciones de cancelación — DOM-19 (equivalente)'
                        .format(RESERVA, len(RESERVA_TAREAS)))
         tocado = True
+    if _sustituir(ws, 'Alérgenos y preferencias confirmados', ALERGENOS_PASE):
+        cambios.append('«Cenas Especiales»: la tarea vieja «Alérgenos y '
+                       'preferencias confirmados» dejaba DOS controles para el '
+                       'mismo hecho a nueve filas de la sección nueva; pasa a '
+                       'ser el control de SERVICIO (cotejo en el pase contra '
+                       'la comanda) — fusión pedida por el verificador')
+    if _sustituir(ws, 'Menú personalizado según solicitud del cliente',
+                  MENU_PRIVADA):
+        cambios.append('«Cenas Especiales»: «Menú personalizado según '
+                       'solicitud del cliente» repetía el cierre de menú de la '
+                       'sección nueva; pasa a ser la PRODUCCIÓN de ese menú '
+                       '(pedido, mise en place y prueba de los pases)')
+    if _sustituir(ws, 'Presupuesto aprobado y facturación preparada',
+                  FACTURA_PRIVADA):
+        cambios.append('«Cenas Especiales»: el presupuesto se pacta al '
+                       'confirmar (sección nueva) y la factura se cierra al '
+                       'terminar, con los extras realmente consumidos y la '
+                       'señal descontada: dejan de solapar')
     _renumerar_p4(ws)
     _dv_extender(ws)
+
+    ws = wb["Chef's Table"]
+    if _sustituir(ws, 'Confirmar número de comensales y alérgenos',
+                  CHEFS_TABLE_REPASO):
+        cambios.append('«Chef\'s Table»: la sección nueva ya cubre el chef\'s '
+                       'table, así que la 1.ª tarea de esta hoja duplicaba la '
+                       'confirmación de comensales y alérgenos; pasa a ser el '
+                       'repaso del día contra lo confirmado por escrito')
+    _renumerar_p4(ws)
+    _dv_extender(ws)
+
     if _instrucciones(wb, 'Antes de aceptar una reserva privada:', [
             'La primera sección de «Cenas Especiales» es lo que se pacta AL '
             'CONFIRMAR: alérgenos e intolerancias por escrito, número de '
@@ -1027,9 +1146,112 @@ def _f07(wb, cambios):
             'cancelación. Lo de palabra no se puede demostrar después.',
             'Los alérgenos llegan por escrito y se resuelven con cocina antes '
             'de cerrar el menú, no la misma noche: en un degustación de diez '
-            'pases, una alternativa improvisada rompe la secuencia entera.']):
+            'pases, una alternativa improvisada rompe la secuencia entera.',
+            'La noche de la cena no se vuelve a «confirmar» nada: lo que se '
+            'hace en el pase es COTEJAR los alérgenos ya confirmados por '
+            'escrito con la comanda de cada comensal. Uno pacta y el otro '
+            'comprueba; no son dos veces el mismo control.']):
         cambios.append('Instrucciones: bloque de confirmación de reserva — '
                        'DOM-19 (equivalente)')
+        tocado = True
+    return tocado
+
+
+# ==========================================================================
+# 09-plantilla-personalizable.xlsx — «Plantilla A», «B» y «C»
+# ==========================================================================
+#: DOM-07 — las tres plantillas se entregan con la cabecera puesta y las 25
+#: filas siguientes EN BLANCO: el cliente abre la hoja y no tiene ni una pista
+#: de qué escribir ni con qué nivel de detalle. El motor no puede arreglarlo
+#: (no sabe de qué va el kit), así que el contenido lo pone aquí el módulo:
+#: tres filas de EJEMPLO con el vocabulario de la casa —menú degustación,
+#: chef's table, I+D, plating bible—, en gris y en cursiva para que se lean
+#: como lo que son.
+#:
+#: Van MARCADAS «N/A» a propósito, y ésa es la parte que protege el contador:
+#: el denominador del molde P4 es
+#: `COUNTIF(B,"?*") - COUNTIF(B,"Tarea") - COUNTIF(✓,"N/A")`,
+#: así que una fila de ejemplo marcada N/A no suma. Sin la marca, cada
+#: plantilla se entregaría diciendo «0 de 3» y —peor— `gate_recuento` de
+#: `main.py` sumaría 9 tareas de mentira al recuento del kit, que es la cifra
+#: que va a la landing. Con la marca, el contador sigue en «0 de 0» y el
+#: recuento del producto no se mueve ni una tarea.
+PLANTILLAS = ('Plantilla A', 'Plantilla B', 'Plantilla C')
+GRIS_EJEMPLO = 'FF999999'
+EJEMPLOS = [
+    ('Ejemplo (escribe encima o borra la fila): cerrar los pases del nuevo '
+     'menú degustación con I+D — fichas, orden y tiempos', 'I+D'),
+    ('Ejemplo (escribe encima o borra la fila): briefing del chef\'s table '
+     'del viernes — comensales, alérgenos y storytelling de cada pase',
+     "Chef's table"),
+    ('Ejemplo (escribe encima o borra la fila): prueba de emplatado del plato '
+     'nuevo y foto para la plating bible', 'Emplatado'),
+]
+
+
+def _fila_ejemplo(ws, fila, texto, zona, marca):
+    """Fila de ejemplo: tarea normal + marca «N/A» + gris y cursiva."""
+    _escribir_tarea(ws, fila, texto, zona)
+    ws.cell(row=fila, column=marca).value = 'N/A'
+    for c in range(1, NCOL + 1):
+        cel = ws.cell(row=fila, column=c)
+        f = cel.font
+        cel.font = motor.Font(name=f.name, sz=f.sz, b=f.b, i=True,
+                              underline=f.underline, strike=f.strike,
+                              color=GRIS_EJEMPLO)
+
+
+def _f09(wb, cambios):
+    tocado = False
+    for titulo in PLANTILLAS:
+        if titulo not in wb.sheetnames:
+            raise AnclaPerdida('09-plantilla-personalizable: no encuentro la '
+                               'hoja «{}»'.format(titulo))
+        ws = wb[titulo]
+        if _fila(ws, EJEMPLOS[0][0]) is not None:
+            continue                                   # ya están (2.ª pasada)
+        g = motor.geometria_p4(ws)
+        if not g:
+            raise AnclaPerdida('«{}»: no es una hoja del molde P4'
+                               .format(titulo))
+        # Sólo filas LIBRES y DENTRO del rango que cuenta el contador
+        # (`hr+1` … `contador-1`): ni se inserta ni se desplaza nada.
+        tope = g['contador'] or ws.max_row + 1
+        libres = []
+        for r in range(g['hr'] + 1, tope):
+            if any(ws.cell(row=r, column=c).value is not None
+                   for c in range(1, NCOL + 1)):
+                continue
+            libres.append(r)
+            if len(libres) == len(EJEMPLOS):
+                break
+        if len(libres) < len(EJEMPLOS):
+            cambios.append('«{}»: NO se han puesto las filas de ejemplo — '
+                           'sólo hay {} filas libres dentro del rango del '
+                           'contador y hacen falta {} (DOM-07)'
+                           .format(titulo, len(libres), len(EJEMPLOS)))
+            continue
+        for fila, (texto, zona) in zip(libres, EJEMPLOS):
+            _fila_ejemplo(ws, fila, texto, zona, g['marca'])
+        _renumerar_p4(ws)
+        cambios.append('«{}»: {} filas de EJEMPLO en gris y cursiva con el '
+                       'vocabulario del kit (menú degustación, chef\'s table, '
+                       'I+D, plating bible), marcadas «N/A» para que no '
+                       'cuenten en el contador ni en el recuento del producto; '
+                       'la hoja se entregaba en blanco — DOM-07'
+                       .format(titulo, len(EJEMPLOS)))
+        tocado = True
+    if _instrucciones(wb, 'Las tres filas de ejemplo:', [
+            'Cada plantilla arranca con tres filas de EJEMPLO en gris y en '
+            'cursiva: están para enseñarte el nivel de detalle que funciona, '
+            'no para hacerlas. Escribe encima o bórralas.',
+            'Van marcadas «N/A» a propósito, que es como no cuentan en '
+            '«Tareas completadas». Si escribes tu tarea sobre una de ellas, '
+            'cambia esa marca o la fila seguirá sin sumar.',
+            'El vocabulario es el de esta casa (menú degustación, chef\'s '
+            'table, I+D, plating bible): cámbialo por el tuyo.']):
+        cambios.append('Instrucciones: qué son las tres filas de ejemplo y por '
+                       'qué van marcadas «N/A» — DOM-07')
         tocado = True
     return tocado
 
@@ -1128,6 +1350,7 @@ FICHEROS = {
     '04-tareas-brigada-creativa.xlsx': _f04,
     '05-tareas-semanales-mensuales.xlsx': _f05,
     '07-chefs-table-eventos.xlsx': _f07,
+    '09-plantilla-personalizable.xlsx': _f09,
     'BONUS-02-calendario-anual.xlsx': _bonus02,
 }
 
@@ -1135,7 +1358,6 @@ FICHEROS = {
 #: transversal de grados (no tienen cambios de contenido propios).
 SOLO_GRADOS = ('03-id-desarrollo-menu.xlsx', '06-sumiller-maridajes.xlsx',
                '08-fotografia-storytelling.xlsx',
-               '09-plantilla-personalizable.xlsx',
                'BONUS-01-briefing-servicio.xlsx')
 
 

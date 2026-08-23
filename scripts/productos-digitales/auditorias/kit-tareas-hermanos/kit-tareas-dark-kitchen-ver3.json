@@ -1,0 +1,129 @@
+{
+  "rol": "verificador independiente · kit-tareas-dark-kitchen · tanda 4/5 (motor 2.3)",
+  "pid": "kit-tareas-dark-kitchen",
+  "fecha": "2026-08-23",
+  "fuente": "astro-site/public/dl/kit-tareas-dark-kitchen (LEÍDO, no tocado) → copia scratchpad vía CLAUDE_SCRATCHPAD=propio-verificador",
+  "modo": "SOLO --dry-run de main.py --producto kit-tareas-dark-kitchen (motor.py 2.3 + contenido_kit_tareas_dark_kitchen.py con _f08), sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean",
+  "resultado_dryrun": {
+    "exit": 0,
+    "censo_fail_exit": 0,
+    "idempotencia_1a_vs_2a_pasada": 0,
+    "inject_cache": "133 fórmulas con valor, 0 fallos pycel",
+    "bad_values_ref_name_value_div0_data_only": 0,
+    "ficheros_en_alcance": "11/11 (▸ completo)",
+    "listas_dv_del_producto": ["\"✓,—,N/A\""],
+    "hojas_checklist_con_dv": 28,
+    "dv_incorrectas": [],
+    "instrucciones_con_bio": "11/11, 0 sin_bio, 0 version_desfasada",
+    "recuento_tareas_gate": 331,
+    "recuento_tareas_manual_openpyxl": 331,
+    "diferencia_recuento": "0%",
+    "recuento_por_fichero_gate_vs_manual": {
+      "01-apertura-cierre.xlsx": [55, 55],
+      "02-partidas-cocina.xlsx": [39, 39],
+      "03-tareas-manager.xlsx": [57, 57],
+      "04-tareas-perfiles.xlsx": [52, 52],
+      "05-tareas-semanales-mensuales.xlsx": [39, 39],
+      "06-eventos-festivos.xlsx": [33, 33],
+      "07-plantilla-personalizable.xlsx": [0, 0],
+      "08-apertura-cierre-negocio.xlsx": [33, 33],
+      "09-apertura-cierre-caja.xlsx": [23, 23],
+      "BONUS-01-briefing-servicio.xlsx": [0, 0],
+      "BONUS-02-calendario-anual-tareas.xlsx": [0, 0]
+    }
+  },
+  "casos_6": [
+    {"caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → 0", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel, JSON demostraciones_spec_6)"},
+    {"caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10, CF ámbar", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel)"},
+    {"caso": "Contador con N/A: 31 tareas, 3 N/A, 28 ✓ → «28 de 28»", "ok": true, "ref": "01-apertura-cierre.xlsx:Apertura Cocina:D48/F48 (pycel)"},
+    {"caso": "07 plantilla personalizable: denominador por fórmula, 8 tareas escritas → 8", "ok": true, "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 (pycel)"},
+    {"caso": "08 precargado: ninguna tarea sin Responsable/Hora", "ok": true, "ref": "gates.negocio_precargado: fichero=08-apertura-cierre-negocio.xlsx, 33 tareas, 0 huecos, firma_ok=true; verificado a mano 'Apertura del Negocio'!D5:E22 y 'Cierre del Negocio'!D5:E19"},
+    {"caso": "Bio en todas las Instrucciones", "ok": true, "ref": "gates.dv_y_bio: instrucciones_con_bio=11, sin_bio=[]; verificado literal en 08:Instrucciones!B44 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'"}
+  ],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+  "b40_ok": {
+    "valor": true,
+    "evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B40 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.» — las dos líneas dicen lo mismo, sin contradicción. Fix T-01 confirmado en este hermano. De propina, T-04 también confirmado: !B37 dice «el DETALLE por área (cocina)» — el paréntesis ya no es el hardcode genérico «(cocina, sala, barra)», deriva de la única hoja de zona real del 01 (Apertura/Cierre Cocina)."
+  },
+  "tpv_ok": {
+    "valor": true,
+    "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (fila 9, hora 09:30, Responsable de caja intacto). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = «Encender TPV / POS / datáfono» (09:00, Encargado). gates.tpv_duplicado confirma UNA sola tarea de 'Encender...TPV' en todo el producto, la del negocio, etiquetada 'hito legítimo'; fuera_del_fichero_de_negocio=[]."
+  },
+  "frase_t08_ok": {
+    "valor": true,
+    "evidencia": "Frase nueva («Cada fichero cubre un nivel: el de negocio marca el HITO…») encontrada en las 11 Instrucciones (01 fila25 · 02 fila25 · 03 fila25 · 04 fila25 · 05 fila31 · 06 fila25 · 07 fila44 · 08 fila39 · 09 fila49 · BONUS-01 fila15 · BONUS-02 fila15). Frase vieja «No se duplican: cada uno cubre un nivel.» — 0 apariciones en las 11 hojas."
+  },
+  "recuento_gate": 331,
+  "tareas_total_manual": 331,
+  "diferencia_recuento_gate_vs_manual_pct": 0.0,
+  "motor_ids_r1_reverificados": [
+    "DOM-01/03/04/05/06/07/09/10/11/21/22/25/30: siguen resueltos, sin regresión respecto a ver2.json",
+    "DOM-23: no aplica (dark kitchen sin sala; 0 menciones a APPCC en las 11 hojas)",
+    "T-01 (crítico-2, alta): RESUELTO en este hermano — verificado byte a byte, ver b40_ok",
+    "T-02 (crítico-2, TPV negocio↔caja): RESUELTO — ver tpv_ok",
+    "T-04 (crítico-2, «cocina, sala, barra» hardcodeado): RESUELTO — el paréntesis deriva de CTX['f_areas'] y en este kit imprime sólo «(cocina)»",
+    "T-05 (crítico-2, bandas_solapadas duplicada): RESUELTO PARCIALMENTE — ver hallazgo nuevo #3 (dedup no cubre el caso de reshift de fila entre pasadas)",
+    "T-08 (crítico-2, frase «No se duplican»): RESUELTO — ver frase_t08_ok"
+  ],
+  "motor_no_resueltos": [],
+  "contenido_tanda3_reverificado": {
+    "8_temas_tanda1": "8/8 siguen aplicados (higiene al inicio, orden gas, alérgenos delivery, calendario adaptado, jornada, aceite frío, mermas, vida útil congelación) — releídos celda a celda en esta corrida, sin regresión respecto a ver2.json",
+    "hallazgo_08_vocabulario_restaurante_media": "RESUELTO SÓLO PARCIALMENTE. `_f08` (añadido al módulo de contenido tras ver2.json) sustituye 7 de las ~12 tareas con vocabulario de sala/terraza (Apertura!B11/B13/B16/B17/B18 y Cierre!B6/B7), pero deja 5 celdas sin tocar: Apertura!B9 «Montar señalización exterior / pizarra de menú», Apertura!B12 y Cierre!B5 «música ambiente» (no hay sala donde ponerla), y Apertura!B22 / Cierre!B18 «Activar/Desactivar restaurante en plataformas» (usa «restaurante», vocabulario que el resto del kit no usa — usa «marca(s)»). Detalle en hallazgos_nuevos #1.",
+    "hallazgo_parentesis_cocina_sala_barra_media": "RESUELTO — ver T-04 arriba (era MOTOR, no de este módulo de contenido)",
+    "hallazgo_duplicidad_literal_baja": "SIGUE, sin cambios: 01:'Cierre Cocina'!B24 «Desactivar todas las marcas en plataformas» vs 03:'Diario Manager'!B19 «Desactivar todas las marcas» — mismo concepto, casi el mismo texto, en dos ficheros distintos. Es el hallazgo T-08 de crítico-2.json (revisión del UMBRAL_BANDA), pendiente de decisión del orquestador, no de esta tanda. bandas_solapadas del dry-run lo mide con 'Cierre Cocina' pero con destino 08 (ver hallazgo #3), no con 03 — la superposición 01↔03 sigue sin dispararse por el umbral del 80%."
+  },
+  "contenido_no_aplicado": [
+    "08-apertura-cierre-negocio.xlsx: 5 celdas con vocabulario de restaurante (pizarra de menú, música ambiente ×2, «restaurante» en plataformas ×2) que _f08 no cubre — el hallazgo «08 sin adaptar al sector delivery» de la tanda 3 queda RESUELTO SÓLO AL 58% (7/12 tareas). Ver hallazgos_nuevos #1."
+  ],
+  "hallazgos_nuevos": [
+    {
+      "severidad": "media",
+      "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B9 ('Montar señalización exterior / pizarra de menú'), !B12 ('Poner música ambiente al volumen adecuado'), !B22 ('Activar restaurante en plataformas'); 'Cierre del Negocio'!B5 ('Apagar música ambiente'), !B18 ('Desactivar restaurante en plataformas delivery')",
+      "hallazgo": "`_f08` (contenido_kit_tareas_dark_kitchen.py:949-975) dice en su propio docstring que resuelve 'el vocabulario de sala y terraza que quedaba en 08-apertura-cierre-negocio.xlsx' (el hallazgo media de ver2.json), pero sus listas NEGOCIO_APERTURA/NEGOCIO_CIERRE sólo cubren 7 de las 12 tareas que un jefe de cocina de dark kitchen marcaría como ajenas al sector: quedan 'música ambiente' (dos veces — no hay comensales que la oigan en una cocina de producción 100% delivery), 'pizarra de menú' (señalización para clientes que entran a pie, que en un dark kitchen no existen) y 'restaurante' como sinónimo del negocio (dos veces — el resto del kit, incluidas las 11 Instrucciones y el propio `_f08`, usa siempre 'marca(s)': la ficha de cada marca, activar/pausar marcas, food cost por marca). Es el mismo defecto que el hallazgo original, sólo que a medio corregir; no rompe ninguna fórmula, no toca Responsable/Hora (verificado: las 5 celdas siguen con su Responsable y Hora Límite originales) y no afecta a ningún caso de §6, así que no bloquea — pero un cliente de dark kitchen sigue leyendo instrucciones para encender música ambiente y montar una pizarra de menú en un local sin mostrador de atención al público."
+    },
+    {
+      "severidad": "media",
+      "donde": "main.py:764-785 (deduplicación T-05 de `gates.bandas_solapadas`) — informe de esta corrida: dos entradas 'Cierre Cocina!A28' y 'Cierre Cocina!A29', banda «PREPARACIÓN MAÑANA», tareas=4, casadas=1, ratio=0.25, destinos=['08-apertura-cierre-negocio.xlsx'], anotada=false, IDÉNTICAS salvo el número de fila",
+      "hallazgo": "La deduplicación de T-05 compara por la tupla completa incluyendo `d['hoja']` (que lleva la referencia de celda, p. ej. 'Cierre Cocina!A28'). En kit-tareas-dark-kitchen, `_f01` inserta una fila nueva en 'Cierre Cocina' (MERMAS_CIERRE, tras CONGELAR) y devuelve `tocado=True`, así que `procesar()` vuelve a pasar `motor.aplicar` sobre el mismo fichero: la 1.ª pasada mide la banda «PREPARACIÓN MAÑANA» en la fila 28 (antes de insertar la fila de mermas) y la 2.ª la mide en la fila 29 (después de insertar), con exactamente los mismos números. Como la referencia de celda cambia entre pasadas, el dedup no la reconoce como el mismo evento y el informe la publica dos veces — el mismo tipo de censo agregado falseado que T-05 pretendía cerrar, sólo que en la variante 'la banda se desplaza una fila entre pasadas' en vez de 'se mide literalmente igual dos veces' (que sí cubre la prueba de pizzería documentada en motor-2.3.json). No afecta a ningún .xlsx real ni a los casos §6 — sólo al JSON del informe usado para censos entre hermanos — así que no bloquea, pero conviene que el dedup compare por (hoja SIN número de fila, banda, tareas, casadas, ratio) o se seguirá colando en cualquier kit cuyo módulo de contenido inserte filas por encima de una banda ya solapada."
+    },
+    {
+      "severidad": "baja",
+      "donde": "BONUS-01-briefing-servicio.xlsx:Instrucciones!B6 ('El jefe de sala o manager rellena antes del briefing')",
+      "hallazgo": "Texto que ningún módulo toca (ni `_bonus01`, que sólo reescribe la hoja 'Briefing' con la lista BRIEFING, ni el motor, que no genera esta línea desde CTX): viene baked-in en el molde original del BONUS-01, igual en todos los kits de la familia. 'Jefe de sala' no existe en un dark kitchen (el kit usa 'Manager' y 'Gestor de Plataformas' en el resto del contenido). No es engañoso — el propio texto ya dice 'o manager' como alternativa válida — pero es la misma clase de vocabulario ajeno al sector que ya se corrigió en el resto del BONUS-01 (la hoja 'Briefing' en sí, docstring: 'el briefing entero hablaba de comensales, mesas VIP, barra y carta'). Candidato barato para una mini-ronda de `_instrucciones()` o para que el motor derive también esta línea."
+    },
+    {
+      "severidad": "baja",
+      "donde": "01-apertura-cierre.xlsx:'Cierre Cocina'!B24 ('Desactivar todas las marcas en plataformas') vs 03-tareas-manager.xlsx:'Diario Manager'!B19 ('Desactivar todas las marcas')",
+      "hallazgo": "Ya documentado en ver2.json (tanda 3) y en critico-2.json como T-08 (revisión del UMBRAL_BANDA=0.8, decisión pendiente del orquestador, sin acción hoy). Sigue exactamente igual tras el motor 2.3: casi el mismo texto en dos ficheros de responsabilidades distintas (área de cocina vs manager), 25% de solape medido, por debajo del umbral que dispara la anotación automática en Instrucciones. No es una regresión de esta tanda — se aporta como confirmación de que sigue vivo, para cuando se zanje T-08."
+    },
+    {
+      "severidad": "baja",
+      "donde": "05-tareas-semanales-mensuales.xlsx:'Inventario Diario' (sheet completa)",
+      "hallazgo": "Hoja PRE-EXISTENTE (no tocada por el motor 2.3 ni por ningún módulo de contenido de esta tanda) con 4+ fórmulas activas en columna E (`=IF(B6=\"\",\"\",IF(B6<D6,\"⚠️ PEDIR\",\"OK\"))`) que un cliente rellena a diario en la columna B. No aparece en `dv_y_bio` (0 hojas P4 reconocidas) ni en `recuento_tareas`, y `sheet.protection.sheet = False`: queda fuera del alcance §1-§2 de la SPEC porque no es un checklist con DV «✓,—,N/A», así que el motor la ignora por completo — protección, print_area y A4 incluidos ya venían así en producción. No es una regresión de esta tanda ni de este hermano en particular (comportamiento uniforme de la familia con este tipo de hoja), se deja anotado como observación de bajo coste: un cliente que arrastre para rellenar varias filas de golpe puede pisar la fórmula de la fila de abajo sin que la hoja se lo impida."
+    }
+  ],
+  "verificaciones_directas_celda": [
+    "01-apertura-cierre.xlsx:'Apertura Cocina'!A5:E10 — HIGIENE PERSONAL al inicio (5 tareas), antes de EQUIPOS (fila 11)",
+    "01-apertura-cierre.xlsx:'Apertura Cocina'!A11:E16 — orden campana(12)→gas(13)→equipos(14); cámaras 'han funcionado toda la noche... anota la lectura' fila 16",
+    "02-partidas-cocina.xlsx:'Estación Fría'!B6 lejía 70ppm/5min+aclarado; !B8 tarea ANISAKIS (≥24h a −20°C o 15h a −35°C, U+2212 confirmado)",
+    "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D5:E22 y 'Cierre del Negocio'!D5:E19 — 33 tareas, Responsable y Hora Límite en las 33, 0 huecos; horas escalonadas 09:00→09:15→09:30, todas DESPUÉS de la apertura del local (fila 5, 09:00)",
+    "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B5:E14 — arranca a las 09:15 (después de que 08 abra a las 09:00); B9 comprueba el TPV a las 09:30 (después de que 08!B10 lo encienda a las 09:00)",
+    "Barrido de 8 palabras de vocabulario de sala/comedor ('comensal','mesa','reserva','sala','terraza','carta','camarero','restaurante') en las 11 xlsx: única familia de coincidencias reales en 08 (detalladas en hallazgos_nuevos #1) y en BONUS-01:Instrucciones!B6 (#3); el resto de coincidencias son falsos positivos por subcadena ('Ensaladas', 'sobremesa', comparativas deliberadas de la hoja Trimestral)",
+    "Grep de −18/−20/−35 °C en las 11 xlsx: todas con U+2212 (signo menos tipográfico), ninguna con guion ASCII pegado a la unidad — conforme a DOM-R2-22/§8",
+    "Listas de DV de las 28 hojas de checklist: una sola, «✓,—,N/A», 0 mezcladas",
+    "bad_values (data_only, #REF!/#NAME?/#VALUE!/#DIV0!/#N/A/#NULL!/#NUM!) en las 11 xlsx completas: 0",
+    "Protección de hoja + print_area en las 28 hojas de checklist + Registro Mensual + Briefing + Calendario Anual: todas protegidas con print_area; 'Instrucciones' de los 11 ficheros NO protegida, a propósito"
+  ],
+  "tareas_total": 331,
+  "ficheros_total": 11,
+  "bloquea_real": false,
+  "notas": [
+    "istats antes de cada arranque de python: 40.6-41.6 °C durante todo el trabajo, muy por debajo de 65 °C; un solo intérprete python a la vez; sin builds ni Playwright.",
+    "REGLAS DURAS respetadas: astro-site/public/dl/kit-tareas-dark-kitchen no se ha tocado (sólo LEÍDO por main.py como carpeta_origen); todo con --dry-run y CLAUDE_SCRATCHPAD=…/propio-verificador; sin KIT_TAREAS_APPLY; sin git add/commit/stash/clean.",
+    "Motivo de bloquea_real=false: (1)-(6) pasan todos (exit 0, censo 0, idempotencia 0, DV única lista, casos §6 6/6, recuento_gate=tareas_total_manual=331 con 0% de diferencia, 0 valores de error en el data_only); motor_no_resueltos=[]; los 5 hallazgos nuevos son 2 media + 3 baja, ninguno alto, y ninguno rompe fórmulas, casos §6 ni deja contenido de la tanda 1 sin aplicar.",
+    "El único punto que sí requiere una mini-ronda de contenido (no de motor) antes de publicar es el #1: 5 celdas de 08-apertura-cierre-negocio.xlsx con vocabulario de restaurante que `_f08` no llegó a cubrir — coherente con lo que ya avisaba `motor-2.3.json` en su bloque 'pendiente' ('las dos tareas siguen ahí... está a medias'), sólo que la reescritura parcial de `_f08` ya redujo el problema de 12 a 5 celdas y cambió su naturaleza (ya no son 'terraza'/'reservas'/'sala', sino 'música ambiente'/'pizarra de menú'/'restaurante').",
+    "Coherente con el criterio ya aplicado en tandas anteriores de la familia (p. ej. cafetería ver2): hallazgos de vocabulario/solape en 08, severidad media/baja, no bloquean."
+  ],
+  "fichero_json": "/Users/johnguerrero/chefpro-modernize/scripts/productos-digitales/auditorias/kit-tareas-hermanos/kit-tareas-dark-kitchen-ver3.json"
+}

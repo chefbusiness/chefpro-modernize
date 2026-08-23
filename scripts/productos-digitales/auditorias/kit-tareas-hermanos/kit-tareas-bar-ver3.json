@@ -1,0 +1,104 @@
+{
+ "rol": "verificador independiente · kit-tareas-bar · ronda 3 (post motor 2.3)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-bar",
+
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=.../propio-verificador python3 main.py --producto kit-tareas-bar --dry-run --json .../kt-hermanos-4/kit-tareas-bar.json",
+  "exit": 0,
+  "resumen_consola": "kit «Bar / Cocktails» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · hora ancla 15:30. idempotencia (2.ª pasada sobre un clon, dentro de MI propia ejecución): 0 diferencias. inject_cache 11/11 sin fallos_pycel (133 con valor, 0 fallos). §6: arqueo-cuadra=0 OK, arqueo-descuadra=10 OK, contador-honesto='27 de 27' OK, denominador-07 F37=8 OK. DV 28 hojas checklist, 0 incorrectas. bio 11/11 Instrucciones, 0 sin versión 2.0. 08 precargado: 33 tareas, 0 huecos. tpv_duplicado: 1 sola tarea de encendido en todo el producto (08, hito legítimo), 0 fuera del fichero de negocio. bandas_solapadas: [] (vacío). recuento de tareas: 342 total."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only .../dryrun-kt/kit-tareas-bar --fail --quiet",
+  "exit": 0,
+  "resultado": "OK: 0 defectos (--fail) — 11 xlsx censados en 1 producto (integrado en el paso 7/7 del propio main.py de esta ejecución)"
+ },
+
+ "idempotencia": {
+  "diferencias": 0,
+  "metodo": "2.ª pasada del propio main.py (paso 3/7) sobre un clon de MI copia ya regenerada — regeneré el kit desde cero (no reutilicé el kit-tareas-bar.json del mantenedor ni el kit-tareas-bar-ver2.json del verificador anterior como fuente de verdad, sólo como hipótesis a contrastar)."
+ },
+
+ "reload_openpyxl_11_ficheros": {
+  "resultado": "11/11 ficheros cargan sin excepción (openpyxl, data_only=False y data_only=True) y NINGUNA celda de ningún fichero contiene #REF!/#NAME?/#VALUE!/#DIV/0! tras recargar el .xlsx final (script propio verif_bar.py, barrido celda a celda de las 11 hojas x N filas, independiente del inject_cache del propio main.py)."
+ },
+
+ "listas_dv": {
+  "hallazgo": "UNA sola lista de validación en las 28 hojas de checklist de los 11 ficheros: la cadena literal es \"✓,—,N/A\" (enumerado ws.data_validations.dataValidation de cada hoja de cada uno de los 11 xlsx, no sólo leído del gate del informe)",
+  "lista_unica": "\"✓,—,N/A\""
+ },
+
+ "proteccion_hojas": {
+  "resultado": "Las 28 hojas de checklist + Registro Mensual + BONUS-01 + BONUS-02 (31 hojas de datos en total) están protegidas (ws.protection.sheet=True); las 11 hojas «Instrucciones» NO están protegidas. Confirma T-06/TEC-R2-14 para este kit: los dos BONUS entran en la protección y con print_area presente en sus dos hojas de datos."
+ },
+
+ "casos_spec_6": {
+  "casos6_ok": 5,
+  "casos6_total": 5,
+  "detalle": [
+   {"caso": "arqueo cuadra (fondo 150, efectivo 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel del propio main.py, reconfirmado leyendo la fórmula: C54=IFERROR(C52-C53,0), C52=C49+C50+C51, C49=IFERROR(C47-C48,0), C48=IFERROR('Apertura de Caja'!C23,0))"},
+   {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel), CF ámbar"},
+   {"caso": "contador con N/A", "ok": true, "evidencia": "01-apertura-cierre.xlsx:Apertura Barra:D50/F50 = '27 de 27' con 30 tareas y 3 N/A (pycel); F50 sólo descuenta N/A, no «—» (regla §8 vigente, verificado que 'No se duplican' no aparece y la fórmula del contador es COUNTIF(B,'?*')-COUNTIF(F,'N/A'))"},
+   {"caso": "07 plantilla personalizable por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F37 = 8 (pycel); denominador es fórmula COUNTIF, no un valor fijo. Verificado además que 'Por Zona' precarga Zona real (Barra/Coctelería/…, no 'General') y 'Por Perfil' precarga Responsable (Head Bartender/Bartender/…); ningún placeholder vive en la columna Tarea, sólo en la banda de sección — cumple §2.3 ronda 2."},
+   {"caso": "08 precargado (Responsable/Hora en toda tarea)", "ok": true, "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'/'Cierre del Negocio' — 33 tareas, 0 huecos de Responsable u Hora Límite"}
+  ],
+  "nota_p4": "kit-tareas-bar es «▸ completo» (gates.dv_y_bio.hojas_p4=0); el 6.º caso de §6 (contador P4) no aplica y se excluye del total, como indica el propio enunciado de la tarea."
+ },
+
+ "b40_check": {
+  "b40_ok": true,
+  "evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B40 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.» — LAS DOS LÍNEAS DICEN LO MISMO (T-01 resuelto, celda a celda). Comprobado también en el fichero de CAJA: 09:Instrucciones!B46 dice que 08 es el marco y !B50 «Estás en 09…: esta es la CAJA…; el marco del día está en 08…» — consistente. Y en 01 (áreas): !B33 dice que 08 es el marco y !B37 «es una capa MÁS…, el marco del día está en 08…» — también consistente. Los 3 ficheros con la cola 'Estás en…' (01, 08, 09) concuerdan entre sí y con el bloque 'Se conecta con' de cada uno."
+ },
+
+ "tpv_check": {
+  "tpv_ok": true,
+  "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (Responsable de caja, hora 16:00, escalonada tras el ancla 15:30 del negocio). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 sigue = «Encender TPV / POS / datáfono» (Encargado, 15:30). gates.tpv_duplicado del propio informe: 1 sola tarea de 'Encender…TPV' en todo el producto, la del 08, etiquetada 'negocio (hito legítimo)'; 0 'fuera_del_fichero_de_negocio'."
+ },
+
+ "frase_t08_check": {
+  "frase_t08_ok": true,
+  "evidencia": "La frase nueva («▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO…») está en las 11/11 Instrucciones del producto (01!B36, 02!B31, 03!B36, 04!B30, 05!B37, 06!B35, 07!B30, 08!B39, 09!B49, BONUS-01!B30, BONUS-02!B14), con el MISMO literal en los 11. La frase vieja «No se duplican: cada uno cubre un nivel.» NO aparece en NINGUNA de las 11 hojas de Instrucciones (grep exhaustivo de la cadena 'No se duplican' sobre los 11 xlsx completos, no sólo Instrucciones: 0 apariciones en todo el producto)."
+ },
+
+ "recuento_gate": 342,
+ "tareas_total_manual": 342,
+ "ficheros_total": 11,
+ "recuento_detalle": {
+  "metodo": "Script propio (verif_bar2.py): localizo la cabecera de cada hoja de checklist (col A='Nº'/'#' + col B='Tarea', filas 3-7) y la fila 'Completadas:' que la cierra por su propio regex; cuento las filas de col B no vacías ENTRE esos dos límites (excluyo así los bloques ajenos al contador, como la tabla de vida útil al pie de 'Inventario', que va fuera de rango a propósito). Coincide celda a celda con gates.recuento_tareas.por_hoja del informe: 01=54(Apertura Barra 30+Cierre Barra 24) · 02=32(13+10+9) · 03=50(16+20+14) · 04=47(14+14+13+6) · 05=53(15+11+15+12) · 06=39(9+10+8+12) · 07=0(plantilla en blanco, denominador por fórmula) · 08=33(18+15) · 09=23(11+12) · BONUS-01=11 · BONUS-02=0(no es checklist de tareas). Diferencia con el gate: 0 (0,0 %)."
+ },
+
+ "motor_ids_verificados": [
+  {"id": "DOM-09 (bloque Se conecta con, cola 'Estás en…')", "veredicto": "resuelto", "evidencia": "T-01 de motor 2.3: 08!B36 y !B40 concuerdan, 09!B46/!B50 concuerdan, 01!B33/!B37 concuerdan. Ya no hay autocontradicción en ningún fichero del kit."},
+  {"id": "DOM-23 (motor: remisión en banda de sección, no fila numerada)", "veredicto": "resuelto", "evidencia": "el bloque 'Se conecta con' vive en la banda de Instrucciones, no en una fila de tarea numerada; confirmado en 01/08/09."},
+  {"id": "DOM-23 (contenido: recuentos duplicados del mismo dinero/merma sin remisión)", "veredicto": "resuelto", "evidencia": "01:'Cierre Barra'!B21 'Cuadrar caja / cierre de TPV' → 'Comprobar que el arqueo del día ha quedado cerrado y firmado: … se hace en «Cierre de Caja» del fichero 09…'; 03:'Diario Manager' 'Revisar caja y cuadrar con TPV' → 'Revisar el DESCUADRE que ha quedado en «Cierre de Caja» del fichero 09… y firmarlo'; mermas: 01 las ANOTA (dueño), 03 las REVISA con remisión explícita a 01. gates.bandas_solapadas del informe = [] (vacío): el motor tampoco detecta solape residual por encima del umbral."},
+  {"id": "T-02 (TPV negocio↔caja)", "veredicto": "resuelto", "evidencia": "ver tpv_check arriba; gates.tpv_duplicado = 1 tarea, la legítima del 08."},
+  {"id": "T-04 (paréntesis de áreas derivado, no hardcodeado)", "veredicto": "resuelto", "evidencia": "01:Instrucciones!B34 = '… el mismo día con el DETALLE por área (barra).' — se deriva de las hojas reales del fichero de áreas (Apertura Barra/Cierre Barra), no de un '(cocina, sala, barra)' fijo que sería falso en un bar."},
+  {"id": "TEC-R2-14 / T-06 (protección de los dos BONUS)", "veredicto": "resuelto para este kit", "evidencia": "BONUS-01 y BONUS-02 protegidos (sheet.protection=True) y con print_area en sus hojas de datos; Instrucciones sin proteger en los 11 ficheros."}
+ ],
+
+ "contenido_pendiente_tanda1_reconfirmado": [
+  {"tema": "Registro de jornada del equipo", "fichero": "03-tareas-manager.xlsx", "aplicado": true, "evidencia": "'Diario Manager'!B24 anclada; 'Mensual Manager'!B10 anclada; bloque propio en Instrucciones presente (grep 'registro diario de jornada del equipo' y 'Archivar los registros de jornada del mes')."},
+  {"tema": "Alérgenos e intolerancias en eventos con comida", "fichero": "06-eventos-festivos.xlsx", "aplicado": true, "evidencia": "'Maridaje Catas' bloque 'AL CONFIRMAR LA RESERVA' con 5 tareas presente; 'After Work' tarea de alérgenos de snacks presente."},
+  {"tema": "Calendario anual con menos fechas que el representante", "fichero": "BONUS-02-calendario-anual-tareas.xlsx", "aplicado": true, "evidencia": "23 fechas frente a las 17 originales; se comprobaron literalmente 'Año Nuevo', 'World Cocktail Day (13 de mayo)' y 'Negroni Week (septiembre)' — las erratas de mes en inglés quedaron corregidas."}
+ ],
+
+ "hallazgos_nuevos": [
+  {
+   "severidad": "baja",
+   "donde": "03-tareas-manager.xlsx:'Semanal Manager'!B33 vs 06-eventos-festivos.xlsx:'Nochevieja'!B14",
+   "hallazgo": "El texto «Preparar batches de cócteles de alta rotación» aparece LITERALMENTE idéntico en dos ficheros distintos: la tarea semanal habitual del manager y la preparación específica de Nochevieja. No es del mismo tipo que los duplicados que resolvió DOM-23 (mismo hito, mismo momento, dos recuentos): son dos ocasiones distintas — la rutina semanal de cualquier semana y el refuerzo puntual de la noche más fuerte del año — y es razonable que un bar prepare batches extra para Nochevieja además de su rutina. No bloquea, pero un texto que distinga la cantidad/alcance (p. ej. 'preparar batches EXTRA para Nochevieja, por encima de la rutina semanal') dejaría más claro que no es la misma tarea repetida por error."
+  }
+ ],
+
+ "notas": [
+  "REGLA TÉRMICA respetada: istats antes de cada python, rango medido 39,7-44,8°C durante todo el barrido, muy por debajo del umbral de 60/65°C; python en serie, sin builds ni Playwright.",
+  "astro-site/public/dl/** NO se ha tocado en ningún momento: todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD propio (propio-verificador). No hubo necesidad de leer producción esta vez porque el hallazgo alta de la tanda 3 (autocontradicción B36/B40) ya fue confirmado VIVO en dl/ por el crítico de la tanda 3 y por el propio mantenedor del motor 2.3 en motor-2.3.json — no se repite esa lectura para no reabrir el fichero de producción sin necesidad.",
+  "No se ha hecho git add/commit/stash/clean.",
+  "Verificación INDEPENDIENTE: regeneré el kit desde cero con main.py --producto kit-tareas-bar --dry-run (comando propio, JSON propio en kt-hermanos-4/), y todos los chequeos de b40/tpv/frase-T08/recuento/DV/protección/integridad se hicieron con scripts openpyxl propios (verif_bar.py/2/3/4) que releen los .xlsx ya regenerados, no que reutilizan el JSON del mantenedor ni el de la tanda 2 como fuente de verdad — ambos se usaron sólo como hipótesis a contrastar.",
+  "Comparado contra kit-tareas-bar-ver2.json (mi propia verificación de la ronda anterior, pre motor 2.3): el hallazgo ALTA que entonces forzaba bloquea_real=true (autocontradicción B36/B40 del 08) está RESUELTO por el fix T-01 del mantenedor, confirmado celda a celda en las tres colas 'Estás en…' del kit (01, 08, 09). DOM-09 y DOM-23, que en el crítico de la tanda 3 (critico-2.json) figuraban 'NO resuelto' para kit-tareas-bar, están AMBOS resueltos: DOM-09 por el fix de motor (T-01) y DOM-23 tanto en su mitad de motor (remisión en banda) como en su mitad de contenido (recuentos duplicados de caja y mermas reescritos con remisión explícita al fichero dueño, ya presentes en contenido_kit_tareas_bar.py y confirmados en el .xlsx regenerado).",
+  "El módulo contenido_kit_tareas_bar.py sigue siendo coherente con el sector: excluye deliberadamente anisakis/gas/aceite de freidora (grep de esos términos sobre los 11 ficheros regenerados: 0 apariciones fuera de la condición legítima 'si hay cocina de barra'), y traduce los riesgos reales del oficio (hielo/cítricos manipulados a mano, alérgenos de la carta de cócteles). No se han encontrado erratas, vocabulario ajeno al sector, ni horas incoherentes: 09 (caja) arranca a las 15:45, después del ancla 15:30 de 08 (negocio), escalonada tal como exige §8/DOM-R2-08 — ninguna tarea de 'comprobar' aparece antes que la de 'encender' correspondiente."
+ ],
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Nada bloquea: exit 0 en dry-run y en censo, idempotencia 0 diferencias, DV única en las 28 hojas, protección correcta (30/31 hojas de datos protegidas + 2 hojas Instrucciones extra sin proteger a propósito), 5/5 casos §6 OK, 0 ficheros con #REF!/#NAME?, recuento manual = recuento del gate (342 = 342, 0 % de diferencia), b40_ok/tpv_ok/frase_t08_ok = true, los dos motor_no_resueltos heredados de la tanda 3 (DOM-09, DOM-23) están resueltos, y el único hallazgo nuevo es de severidad BAJA (texto idéntico en dos ocasiones distintas del calendario, no un duplicado real de hito)."
+}

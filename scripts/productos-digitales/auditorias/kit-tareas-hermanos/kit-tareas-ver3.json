@@ -1,0 +1,103 @@
+{
+ "rol": "verificador independiente · kit-tareas (REPRESENTANTE, ya en producción v2.0) · ronda 3 (post motor 2.3)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas",
+
+ "comando_1_dryrun": {
+  "cmd": "CLAUDE_SCRATCHPAD=.../propio-verificador python3 kit-tareas-v2_0/main.py --producto kit-tareas --dry-run --json .../kt-hermanos-4/kit-tareas.json",
+  "exit": 0,
+  "resumen_consola": "kit «Restaurante Casual» · en alcance 11/11 · negocio=08-apertura-cierre-negocio.xlsx caja=09-apertura-cierre-caja.xlsx areas=01-apertura-cierre.xlsx · hora ancla 07:00. idempotencia (2.ª pasada sobre un clon, dentro de MI propia ejecución): 0 diferencias. inject_cache 11/11 sin fallos_pycel (142 con valor, 0 fallos). §6 (4 casos aplicables, sin P4): arqueo-cuadra=0 OK, arqueo-descuadra=10 OK, contador-honesto '22 de 22' OK, denominador-07 F31=8 OK. DV 33 hojas checklist, 0 incorrectas. bio 11/11 Instrucciones, 0 sin versión 2.0. 08 precargado: 28 tareas, 0 huecos. tpv_duplicado: 1 sola tarea de encendido en todo el producto (08, hito legítimo), 0 fuera del fichero de negocio. recuento de tareas: 491 total (molde ▸ 491 + P4 0)."
+ },
+ "comando_2_censo": {
+  "cmd": "censo-entregables.py --only .../dryrun-kt/kit-tareas --fail --quiet (integrado en el paso 7/7 del propio main.py)",
+  "exit": 0,
+  "resultado": "OK: 0 defectos (--fail) — 11 xlsx censados en 1 producto"
+ },
+
+ "diff_celda_a_celda_vs_produccion": {
+  "metodo": "Script propio diff_celda.py (openpyxl, independiente del `digest` interno de main.py): compara los 11 xlsx de astro-site/public/dl/kit-tareas contra mi copia dry-run recién regenerada, celda a celda — valor, number_format, alturas de fila, anchos de columna, merges, TODAS las propiedades de cada data validation (type/formula1/formula2/operator/error/errorTitle/prompt/promptTitle/allow_blank/showErrorMessage), reglas de formato condicional, protección de hoja (14 flags) y protección/locked por celda, fill, negrita, print_area y orientación.",
+  "total_diferencias": 177,
+  "desglose": {"valor": 26, "dv_error_msg": 33, "row_height": 26, "cell_locked": 92},
+  "diferencias_esperadas_confirmadas": [
+   "33 hojas de checklist: dv_error_msg cambia de «…Las marcadas N/A o — salen del total.» a «…N/A = no aplica, sale del total; — = no hecha, cuenta como pendiente.» — CONFIRMADO, 33/33.",
+   "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!B10 = «Total facturado = efectivo + tarjetas + otros» → «Total facturado = efectivo contado − fondo + tarjetas + otros» — CONFIRMADO. Verificado además que la fórmula real (C52=C49+C50+C51, C49=IFERROR(C47-C48,0)) coincide EXACTAMENTE con el nuevo texto: ya no hay contradicción texto↔fórmula.",
+   "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Encender TPV / POS» → «Comprobar que el TPV está encendido y abrir turno de caja» — CONFIRMADO (Responsable de caja y hora 07:30 intactos). 08:'Apertura del Negocio'!B10 sigue «Encender TPV / POS / datáfono» — CONFIRMADO intacto.",
+   "08-apertura-cierre-negocio.xlsx:Instrucciones!B40 (T-01) cambia de «…el marco del día está en 01-apertura-cierre.xlsx.» (contradecía a !B36, que dice que 08 ES el marco) a «este ES el marco del día — el HITO…» — CONFIRMADO, ya no hay autocontradicción.",
+   "frase T-08 («▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel…») presente en las 11/11 Instrucciones, mismo literal, sustituyendo a «No se duplican: cada uno cubre un nivel.» — CONFIRMADO en las 11 celdas (01!B38, 02!B32, 03!B37, 04!B31, 05!B37, 06!B31, 07!B44, 08!B39, 09!B49, BONUS-01!B15, BONUS-02!B15) y 0 apariciones de la frase vieja en todo el producto (grep exhaustivo, no sólo Instrucciones)."
+  ],
+  "diferencias_NO_esperadas": "Ver hallazgos_nuevos — 4 categorías fuera de la lista «Se esperan SOLO» del encargo: (d) paréntesis de áreas quitado en 11 celdas, (e) cola 'Estás en…' de 09 reescrita (no listada, sólo se autorizaba la de 08), (c) 28 alturas de fila (2 cambian de fijo a autoalto), y el calendario BONUS-02 desbloquea 23 filas/92 celdas (rango A5:D27) en vez de las 22 filas/88 celdas indicadas."
+ },
+
+ "listas_dv": ["\"✓,—,N/A\""],
+ "listas_dv_detalle": "1 sola lista, formula1 idéntico en las 33 hojas de checklist de los 11 ficheros (enumerado ws.data_validations.dataValidation por hoja, no leído del gate del informe).",
+
+ "casos6_ok": 4,
+ "casos6_total": 4,
+ "casos6_detalle": [
+  {"caso": "arqueo cuadra (fondo 150, efectivo contado 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09:'Cierre de Caja'!C54 = 0. Trazado a mano: C43(efectivo contado)=1150 → C47=1150 → C48(fondo, IFERROR('Apertura de Caja'!C23,0))=150 → C49(ventas efectivo)=1000 → C52(TOTAL FACTURADO)=1000+800+0=1800 → C53(Z)=1800 → C54=IFERROR(C52-C53,0)=0."},
+  {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "C54 = 10; CF cellIs sobre C54 confirmada (ámbar si ≠0)."},
+  {"caso": "contador honesto", "ok": true, "evidencia": "01:'Cierre Cocina'!D43/F43 = '22 de 22' (pycel del propio main.py)."},
+  {"caso": "denominador-07 por fórmula", "ok": true, "evidencia": "07:'Por Franja Horaria'!F31 = 8 (pycel); es plantilla en blanco (cfg_07 propias=False), 0 tareas escritas — no cambia nada en el representante, confirmado."}
+ ],
+ "nota_casos6": "El representante es «▸ completo» sin hojas P4 (gates.dv_y_bio.hojas_p4=0): sólo aplican 4 de los 6 casos de §6 (arqueo×2, contador honesto, denominador-07), como en los hermanos «sin P4».",
+
+ "b40_ok": true,
+ "b40_evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B40 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.» — las dos líneas concuerdan (T-01 resuelto, celda a celda contra producción, donde !B40 SÍ contradecía a !B36).",
+
+ "tpv_ok": true,
+ "tpv_evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (Responsable de caja, 07:30). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 sigue = «Encender TPV / POS / datáfono» (Encargado, 07:15, ANTES que la comprobación de caja — orden coherente). gates.tpv_duplicado: 1 sola tarea de 'Encender…TPV' en todo el producto.",
+
+ "frase_t08_ok": true,
+ "frase_t08_evidencia": "Frase nueva en 11/11 Instrucciones, mismo literal (ver diff_celda_a_celda_vs_produccion). Grep de 'No se duplican' sobre los 11 xlsx completos (no sólo Instrucciones): 0 apariciones.",
+
+ "recuento_gate": 491,
+ "tareas_total_manual": 491,
+ "ficheros_total": 11,
+ "recuento_detalle": {
+  "metodo": "Script propio recuento_manual.py: localizo la fila de cabecera con 'Tarea' en cada hoja que no sea Instrucciones; cuento filas donde la columna anterior (Nº/#) es numérica Y la columna Tarea tiene texto real no-placeholder (excluye rótulos de sección, filas libres vacías y placeholders '(...)' de 07). NO usa el denominador cacheado del propio gate — es un recuento estructural independiente.",
+  "por_fichero": {"01": 111, "02": 57, "03": 81, "04": 68, "05": 63, "06": 60, "07": 0, "08": 28, "09": 23, "BONUS-01": 0, "BONUS-02": 0},
+  "diferencia_vs_gate": "0 (0,0 %) — 491 = 491, cuadra exacto, dentro de ±2 %."
+ },
+
+ "integridad_otro_molde": {
+  "resultado": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0! en ninguno de los 11 ficheros, releídos con data_only=True tras inject_cache. (Los 4 '#' detectados por el barrido automático son literales de cabecera de columna — 08/09 'Apertura'/'Cierre'!A4 — no errores de fórmula; verificado manualmente.)"
+ },
+
+ "motor_no_resueltos": [],
+
+ "contenido_no_aplicado": [],
+
+ "hallazgos_nuevos": [
+  {
+   "severidad": "alta",
+   "donde": "01!B35 · 02!B29 · 03!B34 · 04!B28 · 05!B34 · 06!B28 · 07!B41 · 08!B36 · 09!B46 · BONUS-01!B12 · BONUS-02!B12 (hoja Instrucciones de los 11 ficheros)",
+   "hallazgo": "T-04 quita el paréntesis «(accesos, luces, clima, terraza)» de la línea que describe el fichero de negocio (08) en las 11 Instrucciones. NO está en la lista «Se esperan SOLO» del encargo (que sólo autorizaba, para 08:Instrucciones, T-01 y la frase T-08), y el propio motor-2.3.json lo marca como decisión PENDIENTE del orquestador ('el paréntesis del fichero de NEGOCIO desaparece en TODOS los kits... Por eso se ha omitido'). Es un cambio de contenido real (11 celdas), no un efecto colateral mecánico, y todavía sin OK explícito."
+  },
+  {
+   "severidad": "alta",
+   "donde": "09-apertura-cierre-caja.xlsx:Instrucciones!B50",
+   "hallazgo": "La cola 'Estás en 09-apertura-cierre-caja.xlsx: …' cambia de texto genérico a un texto específico de CAJA (parte de la misma familia T-01, pero para el fichero 09). La lista del encargo sólo autorizaba explícitamente '08:Instrucciones (T-01, frase T-08)'; no menciona 09. El propio motor-2.3.json lo señala como pendiente ('PARA EL VERIFICADOR — la cola Estás en… del fichero de CAJA también cambia... Si el orquestador prefiere dejar la caja con el texto genérico, es borrar la rama...'), es decir, el propio mantenedor no lo da por aprobado."
+  },
+  {
+   "severidad": "alta",
+   "donde": "28 celdas de altura de fila en las 11 hojas Instrucciones (p.ej. 08!row36/39/40, 09!row46/49/50) + 09:'Apertura de Caja'!row9 y 09:'Cierre de Caja'!row10 (pasan de 24.0 fijo a autoalto/None)",
+   "hallazgo": "26+2=28 celdas cambian de altura de fila, ninguna mencionada en la lista de diferencias esperadas ('alturas' está citada expresamente en el encargo como categoría que dispara ALTA si no está en la lista). Es consecuencia mecánica de los textos más largos de T-01/T-08 (fila de 16→48pt) y de que el texto nuevo de TPV/facturado ya no cabe en la altura fija de 24pt de 09 (pasa a autoalto). No rompe nada visualmente, pero es una diferencia real de formato no comunicada ni aprobada."
+  },
+  {
+   "severidad": "alta",
+   "donde": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual'!A5:D27 (92 celdas, filas 5-27)",
+   "hallazgo": "El encargo esperaba «desbloqueo de las 22 filas del calendario BONUS-02» (=88 celdas, filas 5-26, que son las 22 fechas reales del calendario). El motor desbloquea en realidad 23 filas / 92 celdas: A5:D27. La fila 27 está VACÍA (separador entre las 22 fechas fijas y los 5 placeholders '(Tu fecha)' de las filas 28-32), así que el efecto práctico es inocuo — desbloquear una fila en blanco no cambia nada visible ni editable de más — pero el alcance real (23 filas) no coincide con el número comunicado como esperado (22 filas)."
+  }
+ ],
+
+ "bloquea_real": true,
+ "motivo_bloquea_real": "Los checks (1)-(6) del encargo pasan todos (exit 0, censo 0 defectos, idempotencia 0, DV única, b40_ok/tpv_ok/frase_t08_ok=true, recuento manual=gate exacto, 0 #REF!/#NAME?, 4/4 casos §6), y no hay hallazgos nuevos de contenido/sector (ningún error de vocabulario, duplicado real ni incoherencia horaria detectado leyendo como jefe de cocina). PERO el diff celda a celda contra producción encuentra 4 categorías de diferencias fuera de la lista «Se esperan SOLO» del propio encargo (paréntesis de áreas quitado en 11 celdas, cola 'Estás en…' de 09 reescrita, 28 alturas de fila, y calendario desbloqueando 23 filas en vez de 22). El propio informe del mantenedor (motor-2.3.json) ya señala DOS de estas cuatro (paréntesis y cola de 09) como decisiones PENDIENTES del orquestador, no aprobadas — coincide con el resultado de este diff independiente. Regla del encargo: 'bloquea_real = true si hay una sola diferencia inesperada'. Aquí hay cuatro. No se recomienda ejecutar en real (KIT_TAREAS_APPLY) sobre kit-tareas hasta que el orquestador decida explícitamente sobre (d) y (e), y hasta acotar el desbloqueo del calendario a A5:D26 si se quiere que coincida exactamente con «22 filas».",
+
+ "notas": [
+  "REGLA TÉRMICA respetada: istats antes de cada python (42,5-46,5 °C durante todo el barrido), muy por debajo de 60/65 °C; python en serie, sin builds ni Playwright.",
+  "astro-site/public/dl/kit-tareas NO se ha tocado: sólo LEÍDO (openpyxl en modo lectura) para el diff. Todo el post-proceso corrió con --dry-run y CLAUDE_SCRATCHPAD propio (propio-verificador); sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean.",
+  "Verificación independiente de extremo a extremo: regeneré el kit desde cero con main.py --producto kit-tareas --dry-run (comando y JSON propios en kt-hermanos-4/kit-tareas.json), y TODOS los chequeos (diff celda a celda, listas DV, casos §6, b40/tpv/frase-T08, recuento manual, integridad) se hicieron con scripts openpyxl propios que releen los .xlsx ya regenerados y los .xlsx de producción — no reutilicé el 'afecta_al_representante' de motor-2.3.json como fuente de verdad, sólo como hipótesis a contrastar. El diff celda a celda confirma sus 5 diferencias declaradas como esperadas Y reproduce sus mismas 3 categorías 'NO ESTABA EN LA LISTA' (c, d, e) — con una discrepancia adicional que motor-2.3.json no cuantifica: mi barrido cuenta 92 celdas de desbloqueo del calendario (23 filas, A5:D27), no 88 (22 filas); motor-2.3.json sólo dice '88 celdas… A5:D26' en su resumen de (b) pero no lo verifica fila a fila contra el contenido real de la hoja.",
+  "El calendario BONUS-02 en sí (contenido de las 22 fechas, filas 5-26) es correcto y coincide con lo verificado en tandas anteriores: no hay hallazgo de contenido ahí, sólo de ALCANCE del desbloqueo (una fila de más, vacía).",
+  "Lectura como jefe de cocina del sector: los textos nuevos de T-01/T-02/T-04/T-08 son coherentes y bien escritos (sin vocabulario ajeno, sin horas incoherentes — 08 enciende el TPV a las 07:15 y 09 lo comprueba a las 07:30, orden correcto). No se han encontrado tareas duplicadas entre ficheros ni erratas en el texto nuevo. El único material a decidir es de ALCANCE/AUTORIZACIÓN (los 4 hallazgos de arriba), no de calidad de contenido."
+ ]
+}

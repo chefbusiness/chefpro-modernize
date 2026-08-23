@@ -1,0 +1,195 @@
+{
+  "pid": "kit-tareas-hamburgueseria",
+  "rol": "verificador independiente · tanda 4 (motor 2.3) · re-verificación sobre kit-tareas-hamburgueseria-ver2.json (motor 2.2) y motor-2.3.json (T-01/T-02/T-03/T-04/T-05/T-08)",
+  "fecha": "2026-08-23",
+  "modo": "SOLO dry-run · CLAUDE_SCRATCHPAD=…/scratchpad/propio-verif3 · astro-site/public/dl/kit-tareas-hamburgueseria NO tocado en ningún momento",
+  "comando": "python3 scripts/productos-digitales/kit-tareas-v2_0/main.py --producto kit-tareas-hamburgueseria --dry-run --json …/kt-hermanos-4/kit-tareas-hamburgueseria.json",
+  "resultado_global": {
+    "dryrun_exit": 0,
+    "censo_exit": 0,
+    "idempotencia_diferencias": 0,
+    "data_only_fallos_REF_NAME": 0,
+    "cache_inyectado_vs_formulas": "139/139 (100%)",
+    "ficheros_censados": "11 xlsx, 0 docx, 0 pdf",
+    "bloquea_real": false
+  },
+  "1_dryrun_censo_idempotencia_dv_casos6": {
+    "dryrun_exit": 0,
+    "censo_fail_exit": 0,
+    "segunda_pasada_in_place": {
+      "metodo": "gate interno de main.py (paso 3/7: clon del mismo dry-run, se re-aplica motor.aplicar completo y se compara celda a celda con la 1.ª pasada) + verificación cruzada mía: los 3 casos que dependen de fórmulas que main.py reescribe (T-02 texto TPV en 09, T-01 B36/B40 del 08/09, T-04 paréntesis de áreas) se leyeron directamente del xlsx regenerado y coinciden con el texto ESPERADO de motor-2.3.json sin restos del texto viejo — si la 2.ª pasada hubiese reescrito algo distinto, el gate de idempotencia lo habría marcado como diferencia y no lo hizo",
+      "diferencias": 0,
+      "evidencia": "salida de main.py: '== 3/7 · idempotencia (2.ª pasada sobre un clon) == diferencias 1.ª vs 2.ª pasada: 0'"
+    },
+    "listas_dv_del_producto": [
+      "\"✓,—,N/A\""
+    ],
+    "listas_dv_evidencia": "barrido MÍO independiente con openpyxl (no sólo el gate del informe): recorridas las 31 hojas de checklist de los 11 xlsx buscando toda DataValidation de tipo 'list' que contenga '✓' o 'N/A' → conjunto de fórmulas únicas encontrado = {'\"✓,—,N/A\"'}, 31 hojas con esa DV, 0 con otra lista distinta.",
+    "casos_6": {
+      "total_aplicables": 6,
+      "ok": 6,
+      "detalle": [
+        {
+          "caso": "arqueo cuadra (fondo 150, efectivo contado 1.150 [B29=11×100 + B30=1×50], tarjetas 800, Z 1.800)",
+          "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (vía 'Apertura de Caja'!C23=fondo)",
+          "esperado": 0,
+          "obtenido": 0,
+          "ok": true,
+          "metodo": "pycel PROPIO (no el pycel interno de main.py) sobre una copia de demostración escrita por mí en scratchpad/demos/caja-cuadra.xlsx; también verificado C49 (Ventas en efectivo = 1.000) y C52 (Total facturado = 1.800)"
+        },
+        {
+          "caso": "arqueo descuadra (mismo escenario con Z 1.790)",
+          "ref": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54",
+          "esperado": 10,
+          "obtenido": 10,
+          "ok": true,
+          "metodo": "pycel propio sobre scratchpad/demos/caja-descuadra.xlsx"
+        },
+        {
+          "caso": "contador honesto con N/A (30 tareas escritas, 3 marcadas N/A, 27 marcadas ✓ → «27 de 27», regla vigente §8 sólo descuenta N/A, no «—»)",
+          "ref": "01-apertura-cierre.xlsx:'Apertura Cocina'!D46/F46",
+          "esperado": "27 de 27",
+          "obtenido": "27 de 27",
+          "ok": true,
+          "metodo": "pycel propio sobre scratchpad/demos/apertura-contador.xlsx tras marcar F6/F7/F8='N/A' y las 27 filas de tarea restantes='✓'; fórmula confirmada F46=COUNTIF(B5:B44,\"?*\")-COUNTIF(F5:F44,\"N/A\") (no resta «—»)"
+        },
+        {
+          "caso": "07 con 8 tareas escritas en columna Tarea → «8 de 8», sin que el placeholder de la banda infle el COUNTIF",
+          "ref": "07-plantilla-personalizable.xlsx:'Por Franja Horaria'!F31",
+          "esperado": 8,
+          "obtenido": 8,
+          "ok": true,
+          "metodo": "pycel propio sobre scratchpad/demos/plantilla07-8tareas.xlsx tras escribir 8 filas de tarea reales en columna B (col A conserva el aviso de banda '— escribe aquí abajo…', que vive en columna A, NO en B) y marcarlas ✓"
+        },
+        {
+          "caso": "08 sin tareas sin Responsable/Hora",
+          "ref": "08-apertura-cierre-negocio.xlsx",
+          "esperado": "0 huecos",
+          "obtenido": "31 tareas (17 Apertura + 14 Cierre), 0 sin Responsable u Hora",
+          "ok": true,
+          "metodo": "lectura celda a celda D5:E19 ('Apertura del Negocio') y D5:E17 ('Cierre del Negocio') — Encargado precargado en las 31 filas, horas 10:00→10:45 en apertura"
+        },
+        {
+          "caso": "bio en todas las Instrucciones del kit",
+          "ref": "11 hojas Instrucciones",
+          "esperado": "11/11",
+          "obtenido": "11/11 con línea de bio y 'Versión 2.0 · agosto 2026'",
+          "ok": true,
+          "metodo": "gate dv_y_bio del informe + lectura directa de 08!Instrucciones y 09!Instrucciones (bloque 'Se conecta con' completo, B30-B42/B44-B50)"
+        }
+      ]
+    },
+    "recuento_manual_independiente": {
+      "metodologia": "script PROPIO con openpyxl (no reutiliza motor.geometria ni el código de gate_recuento): para cada una de las 31 hojas con DV '✓,—,N/A', localiza la fila de cabecera por el literal 'Tarea', localiza la fila 'Tareas completadas' como tope, y cuenta las filas del rango con TEXTO no vacío en la columna de Tarea (excluye bandas de sección —que sólo escriben en columna A— y filas libres vacías por definición)",
+      "total_manual": 346,
+      "total_gate_informe": 346,
+      "diferencia_pct": "0% (cuadra exacto, dentro del ±2% exigido)",
+      "por_hoja": {
+        "01-apertura-cierre.xlsx": {"Apertura Cocina": 30, "Apertura Sala": 14, "Cierre Cocina": 18, "Cierre Sala": 10},
+        "02-partidas-cocina.xlsx": {"Plancha Grill": 14, "Línea Montaje": 13, "Freidora": 13},
+        "03-tareas-manager.xlsx": {"Diario Manager": 14, "Semanal Manager": 13, "Mensual Manager": 14, "Handover Turno": 9},
+        "04-tareas-perfiles.xlsx": {"Parrillero": 12, "Cocinero Línea": 9, "Freidurista": 8, "Encargado": 12, "Camarero": 11},
+        "05-tareas-semanales-mensuales.xlsx": {"Limpieza Semanal": 8, "FIFO Semanal": 9, "Mantenimiento Mensual": 8, "Trimestral y Anual": 14},
+        "06-eventos-festivos.xlsx": {"Noche Fútbol": 10, "Burger Week": 8, "Navidad": 13, "Temporada Terraza": 8},
+        "07-plantilla-personalizable.xlsx": {"Por Franja Horaria": 0, "Por Área": 0, "Por Perfil": 0},
+        "08-apertura-cierre-negocio.xlsx": {"Apertura del Negocio": 17, "Cierre del Negocio": 14},
+        "09-apertura-cierre-caja.xlsx": {"Apertura de Caja": 11, "Cierre de Caja": 12}
+      }
+    },
+    "apertura_todos_los_ficheros_data_only": {
+      "metodo": "openpyxl.load_workbook(..., data_only=True) sobre los 11 xlsx regenerados, barrido celda a celda de las 30 hojas de checklist + las hojas auxiliares buscando '#REF!' o '#NAME?' (script propio, independiente del censo)",
+      "resultado": "11/11 abren sin excepción, 0 celdas con #REF!/#NAME? en ninguna hoja",
+      "ficheros_de_otro_molde_intactos": "confirmado: 07 (plantilla), BONUS-01 (briefing), BONUS-02 (calendario), Registro Mensual (dentro de 09) y la hoja NUEVA «Trimestral y Anual» (dentro de 05) abren, sin fórmulas rotas; sus fórmulas nuevas tienen cache 139/139 y 0 fallos de pycel"
+    }
+  },
+  "2_b40_ok_negocio_marco": {
+    "b40_ok": true,
+    "evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B40 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.» — las dos líneas dicen lo MISMO, sin contradicción (T-01 resuelto; antes B40 decía «el marco del día está en 01-apertura-cierre.xlsx», que contradecía a B36). Rama gemela en 09:Instrucciones!B48/B50 también coherente: B48 dice que 09 «es la CAJA» y B50 «esta es la CAJA — el DINERO del día».",
+    "T04_parentesis": "confirmado además que el paréntesis de áreas se deriva de las hojas REALES del fichero de áreas de este kit: !B37 = «01-apertura-cierre.xlsx — el mismo día con el DETALLE por área (cocina, sala).» — hamburguesería no tiene «barra» como zona propia (sus 4 hojas del 01 son Apertura/Cierre Cocina y Apertura/Cierre Sala), y el motor no la inventa."
+  },
+  "3_tpv_ok_negocio_vs_caja": {
+    "tpv_ok": true,
+    "evidencia_09": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (Responsable de caja, hora 10:30, DESPUÉS de la apertura del negocio a las 10:00 — cumple T-04 §1.4: horas del 09 escalonadas tras el 08).",
+    "evidencia_08": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = «Encender TPV / POS / datáfono» (Encargado, 10:00) — texto viejo intacto, es el hito legítimo.",
+    "gate_tpv_duplicado": "gates.tpv_duplicado del informe: 1 sola tarea «Encender…TPV» en TODO el producto (la del 08, etiquetada 'negocio (hito legítimo)'), 0 fuera del fichero de negocio — la del 09 ya no aparece porque T-02 la reescribió."
+  },
+  "4_frase_t08_ok": {
+    "frase_t08_ok": true,
+    "evidencia": "barrido propio con openpyxl sobre las 11 hojas Instrucciones: 'Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.' presente en 11/11 ficheros (01!B39 · 02 · 03 · 04 · 05 · 06 · 07 · 08!B39 · 09!B49 · BONUS-01 · BONUS-02); 0 ficheros conservan la frase vieja «No se duplican: cada uno cubre un nivel.»"
+  },
+  "5_recuento_gate_vs_manual": {
+    "recuento_gate": 346,
+    "tareas_total_manual": 346,
+    "cuadran": true,
+    "nota": "gates.recuento_tareas.total = 346 (molde ▸ 346 + molde P4 0, este hermano no tiene hojas P4); mi recuento manual independiente (openpyxl, metodología propia descrita en §1) da el MISMO número, hoja por hoja, 0% de diferencia. 07 aporta 0 a propósito (plantilla en blanco, no se vende como tareas incluidas)."
+  },
+  "6_ficheros_intactos_otro_molde": {
+    "ok": true,
+    "evidencia": "0 errores #REF!/#NAME? en las 11 xlsx (data_only=True, barrido propio); protección/print_area verificados en BONUS-01 y BONUS-02 (Instrucciones sin proteger a propósito, hoja de trabajo protegida con print_area fijado); hoja nueva «Trimestral y Anual» protegida, con DV '✓,—,N/A' en sus 19 filas de tarea y columna «Nº de parte» (C) verde y desbloqueada (locked=False, fill E8F5E9)"
+  },
+  "7_contenido_pendiente_tanda1_re_verificado": {
+    "total_temas": 10,
+    "aplicados_y_re_verificados_con_motor_2_3": 10,
+    "no_aplicados_sin_motivo": [],
+    "detalle": [
+      {"tema": "Higiene personal al inicio de apertura", "estado": "APLICADO", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina'!A6:B10 — bloque «  HIGIENE PERSONAL» (5 tareas), primero de la hoja"},
+      {"tema": "Orden de encendido inseguro", "estado": "APLICADO", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina'!B12-B13 (campana → comprobar gas, ANTES de plancha B14/freidora B15); B17 reconvertida a «comprobar que la campana tira»"},
+      {"tema": "Aceite de freidora en frío (única inconsistencia interna, alta en R1)", "estado": "APLICADO", "celda": "01-apertura-cierre.xlsx:'Cierre Cocina'!B13 (apagar y dejar enfriar) ANTES de B14 (filtrar <40 °C); 02-partidas-cocina.xlsx:'Freidora'!B con la cifra de 40 °C añadida"},
+      {"tema": "Registro de mermas del día", "estado": "APLICADO", "celda": "01-apertura-cierre.xlsx:'Cierre Cocina'!B25 y 02-partidas-cocina.xlsx:'Línea Montaje' (fila tras «Limpiar línea completa»)"},
+      {"tema": "Verificación de cámaras al abrir", "estado": "APLICADO", "celda": "01-apertura-cierre.xlsx:'Apertura Cocina'!B20 — primera tarea de «  MISE EN PLACE BURGERS», con temperatura 0-4 °C / ≤ −18 °C y hueco de lectura"},
+      {"tema": "Registro de jornada del equipo", "estado": "APLICADO", "celda": "03-tareas-manager.xlsx:'Diario Manager' (cierre/validación diaria) y 'Mensual Manager' (archivo mensual, 4 años)"},
+      {"tema": "Vida útil de congelación por familia", "estado": "APLICADO", "celda": "05-tareas-semanales-mensuales.xlsx:'FIFO Semanal' — tabla editable de 9 familias al pie de la hoja"},
+      {"tema": "Hoja Trimestral y Anual ausente", "estado": "APLICADO", "celda": "05-tareas-semanales-mensuales.xlsx: hoja nueva «Trimestral y Anual», 3 bandas / 14 tareas, columna «Nº de parte» verde"},
+      {"tema": "Alérgenos al confirmar reservas", "estado": "APLICADO", "celda": "06-eventos-festivos.xlsx:'Navidad'!A5:B11 — bloque «  AL CONFIRMAR LA RESERVA» (6 tareas)"},
+      {"tema": "Calendario con fechas nuevas v2.0", "estado": "APLICADO", "celda": "BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual' — 22 fechas con evento real (comprobado fila a fila), 5 nuevas + 1 de Año Nuevo reescrita"}
+    ]
+  },
+  "8_hallazgos_nuevos_lectura_jefe_de_cocina": [
+    {
+      "severidad": "media",
+      "donde": "01-apertura-cierre.xlsx:'Apertura Sala'!B11-B12 (10:15/10:30→11:15, 'Verificar TPV/datáfono' y 'Preparar fondo de caja') + 04-tareas-perfiles.xlsx:'Encargado'!B10 (11:00, 'Preparar caja') + 01-apertura-cierre.xlsx:'Cierre Sala'!B12 (22:45, 'Cuadrar caja') + 04-tareas-perfiles.xlsx:'Encargado'!B17 (22:45, 'Cuadrar caja') vs 09-apertura-cierre-caja.xlsx (todo el checklist de apertura/cierre de caja, único fichero con las fórmulas de arqueo)",
+      "hallazgo": "SIGUE VIVO en motor 2.3 (no es un hallazgo distinto al de la tanda 3, es el mismo, verificado de nuevo tras el fix): tres ficheros distintos piden a roles distintos 'preparar/verificar/cuadrar la caja' sin remitir al 09, tanto en apertura como en cierre. El gate gates.bandas_solapadas lo mide y lo deja SIN anotar (Apertura Sala!A5 29%, Cierre Sala!A14 67%, ambos por debajo del umbral de anotación 80%) porque el DESTINO no es el fichero de negocio sino el de caja, que colapsar_duplicados no compara. No rompe ningún caso de §6 y no es un defecto del motor (T-02 sólo tenía que arreglar el texto DUPLICADO del propio 09, no construir un dedup 08/01/04↔09), pero sigue siendo un hueco de proceso real: un empleado puede marcar 'Preparar caja' en su checklist de perfil sin haber tocado 09!'Apertura de Caja'!C23, la única celda de la que cuelgan las 3 fórmulas de arqueo."
+    },
+    {
+      "severidad": "baja",
+      "donde": "01-apertura-cierre.xlsx:'Apertura Cocina' — columna 'Hora Límite' (E), filas 6-39",
+      "hallazgo": "SIGUE IGUAL que en la tanda 3 (motor 2.3 no toca esta columna, es estructura del kit base): leída de arriba a abajo, la hora no es monótona — 10:00 (HIGIENE PERSONAL) → 10:45 (campana/gas) → 11:00-11:15 (plancha/freidora) → 10:15-10:45 (MISE EN PLACE, con la tarea de cámaras insertada por este módulo, coherente dentro de su propia banda) → 10:00 (STOCK Y DESINFECCIÓN, al final). Es el reflejo de que las bandas son estaciones de trabajo en paralelo, no una línea de tiempo única, pero impresa en papel puede leerse como si el reloj retrocediera dos veces."
+    }
+  ],
+  "9_notas_finales": [
+    "REGLAS DURAS respetadas: astro-site/public/dl/kit-tareas-hamburgueseria/ no tocado en ningún momento (sólo --dry-run con CLAUDE_SCRATCHPAD propio, sin KIT_TAREAS_APPLY); sin git add/commit/stash/clean; un solo intérprete python en serie por llamada; istats antes de cada arranque (máx. 43,5 °C medido, muy por debajo del umbral de 60 °C); nada de builds ni Playwright.",
+    "El representante kit-tareas NO se ha regenerado en esta sesión (fuera del alcance de este encargo); sólo se ha razonado sobre motor-2.3.json, que ya lo verificó por separado.",
+    "T-03 (recuento) verificado con metodología DISTINTA a la del gate (script propio con detección de cabecera/tope por texto, no reutilizando motor.geometria): coincide exacto, 346=346.",
+    "Los dos hallazgos de §8 son continuidad exacta de los dos hallazgos ya reportados en kit-tareas-hamburgueseria-ver2.json (tanda 3, motor 2.2): motor 2.3 no los toca porque son de CONTENIDO (01/04) y de estructura de bandas (01), no de la capa de motor que T-01/T-02/T-03/T-04/T-05/T-08 corrigieron. Ninguno es alto.",
+    "bloquea_real=false: dryrun_exit=0, censo_exit=0, idempotencia=0 diferencias, DV única en 31/31 hojas, 6/6 casos §6 (verificados con pycel PROPIO, no reciclando el del informe), b40_ok=true, tpv_ok=true, frase_t08_ok=true, recuento_gate=recuento_manual=346 (0% de diferencia), 11/11 ficheros sin #REF!/#NAME?, 10/10 temas de contenido de la tanda 1 siguen aplicados y verificados celda a celda, y los 2 hallazgos nuevos son media/baja — ninguno alto."
+  ],
+  "pid_repetido_para_schema": "kit-tareas-hamburgueseria",
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "idempotencia": 0,
+  "listas_dv": ["✓,—,N/A"],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+  "b40_ok": true,
+  "tpv_ok": true,
+  "frase_t08_ok": true,
+  "recuento_gate": 346,
+  "tareas_total_manual": 346,
+  "ficheros_total": 11,
+  "motor_no_resueltos": [],
+  "contenido_no_aplicado": [],
+  "hallazgos_nuevos": [
+    {
+      "severidad": "media",
+      "donde": "01-apertura-cierre.xlsx:'Apertura Sala'!B11-B12 + 'Cierre Sala'!B12 + 04-tareas-perfiles.xlsx:'Encargado'!B10/B17 vs 09-apertura-cierre-caja.xlsx",
+      "hallazgo": "Tres ficheros piden preparar/verificar/cuadrar la caja (apertura y cierre) sin remitir al 09, único fichero con las fórmulas de arqueo; persiste desde la tanda 3, motor 2.3 no lo cubre porque colapsar_duplicados no compara 01/04 contra caja."
+    },
+    {
+      "severidad": "baja",
+      "donde": "01-apertura-cierre.xlsx:'Apertura Cocina'!E6:E39 (columna Hora Límite)",
+      "hallazgo": "La hora no es monótona al leer la hoja de arriba a abajo (10:00→10:45→11:15→10:15→10:00): reflejo de bandas en paralelo, no de un defecto de datos; persiste desde la tanda 3."
+    }
+  ],
+  "bloquea_real": false,
+  "fichero_json": "/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/kt-hermanos-4/kit-tareas-hamburgueseria.json"
+}

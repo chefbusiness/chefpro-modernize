@@ -1,0 +1,109 @@
+{
+  "rol": "verificador independiente · kit-tareas-cafeteria · tanda 4 (motor 2.3)",
+  "pid": "kit-tareas-cafeteria",
+  "fecha": "2026-08-23",
+  "fuente": "astro-site/public/dl/kit-tareas-cafeteria (LEÍDO, no tocado) → copia scratchpad vía CLAUDE_SCRATCHPAD",
+  "modo": "SOLO --dry-run, dos ejecuciones INDEPENDIENTES de main.py --producto kit-tareas-cafeteria (motor 2.3 + contenido_kit_tareas_cafeteria.py, éste ya actualizado con el fix del espresso), sin KIT_TAREAS_APPLY, sin git add/commit/stash/clean",
+
+  "resultado_dryrun": {
+    "exit_1a_corrida": 0,
+    "exit_2a_corrida_independiente": 0,
+    "censo_fail_exit": 0,
+    "censo_defectos": 0,
+    "idempotencia_interna_1a_vs_2a_pasada": 0,
+    "reproducibilidad_entre_corridas_independientes": {
+      "descripcion": "corrida A (CLAUDE_SCRATCHPAD=propio-verificador3) vs corrida B (propio-verificador3b), ambas desde CERO, comparadas celda a celda en las 11 xlsx (todas las hojas, todas las celdas de valor, sin data_only)",
+      "diffs_celda_a_celda": 0,
+      "veredicto": "reproducible; el motor 2.3 + contenido_kit_tareas_cafeteria son deterministas a nivel de contenido"
+    },
+    "inject_cache": "143 fórmulas con valor, 0 fallos pycel (ambas corridas)",
+    "ficheros_todos_abren_sin_roturas": true,
+    "bad_values_ref_name_data_only": 0
+  },
+
+  "listas_dv_del_producto": ["✓,—,N/A"],
+  "hojas_checklist_con_dv": 33,
+  "dv_incorrectas": [],
+  "instrucciones_con_bio": "11/11, 0 sin_bio, 0 version_desfasada",
+
+  "casos_6": [
+    {"caso": "Arqueo cuadra: fondo 150 / efectivo contado 1.150 / tarjetas 800 / Z 1.800 → 0", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 0 (pycel, dos corridas)"},
+    {"caso": "Arqueo descuadra: mismos importes con Z 1.790 → +10, CF ámbar", "ok": true, "ref": "09-apertura-cierre-caja.xlsx:Cierre de Caja:C54 = 10 (pycel, dos corridas)"},
+    {"caso": "Contador con N/A: 22 tareas efectivas → «22 de 22»", "ok": true, "ref": "01-apertura-cierre.xlsx:Apertura Barra Café:D40/F40 (pycel, dos corridas)"},
+    {"caso": "07 plantilla personalizable: denominador por fórmula, 8 tareas escritas → «8»", "ok": true, "ref": "07-plantilla-personalizable.xlsx:Por Franja Horaria:F31 (pycel, dos corridas)"},
+    {"caso": "08 precargado: ninguna tarea sin Responsable/Hora", "ok": true, "ref": "gate negocio_precargado: 31 tareas, huecos=[]"},
+    {"caso": "Bio en todas las Instrucciones, versión 2.0", "ok": true, "ref": "gate dv_y_bio: instrucciones_con_bio=11, sin_bio=[], version_desfasada=[]"}
+  ],
+  "casos6_ok": 6,
+  "casos6_total": 6,
+
+  "b40_ok": true,
+  "b40_evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B40 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.» — mismo mensaje, sin contradicción (T-01 resuelto; antes !B40 decía «el marco del día está en 01-apertura-cierre.xlsx», contradiciendo !B36). 09-apertura-cierre-caja.xlsx:Instrucciones!B46 «la CAJA: fondo, recuento…» y !B50 «esta es la CAJA — el DINERO del día…» también consistentes.",
+
+  "tpv_ok": true,
+  "tpv_evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (Responsable de caja, 07:15, intacto). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = «Encender TPV / POS / datáfono» (Encargado, 06:45, intacto). gates.tpv_duplicado confirma UNA sola tarea «Encender…TPV» en todo el producto, etiquetada «negocio (hito legítimo)».",
+
+  "frase_t08_ok": true,
+  "frase_t08_evidencia": "frase nueva presente en 11/11 Instrucciones dentro de la viñeta «Orden de uso» (01!B25 · 02!B25 · 03!B25 · 04!B25 · 05!B31 · 06!B25 · 07!B44 · 08!B39 · 09!B49 · BONUS-01!B15 · BONUS-02!B15): «▸ Orden de uso: local → áreas → caja. Cada fichero cubre un nivel: el de negocio marca el HITO (encender, abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una es el hito y la otra el detalle.» Texto viejo «No se duplican: cada uno cubre un nivel.» barrido a 0 apariciones (grep de las 33 hojas de checklist + 11 Instrucciones).",
+
+  "recuento_gate": 500,
+  "tareas_total_manual": 500,
+  "recuento_manual_metodo": "openpyxl: por cada hoja de checklist (excluida «Instrucciones» y cualquier hoja sin cabecera «Nº»/«#» + «Tarea»), cuenta filas donde la columna del número es entero Y la columna «Tarea» no está vacía — así excluye rótulos de sección (columna Nº vacía), filas libres vacías (las dos columnas vacías) y los placeholders numerados-pero-en-blanco del 07 (columna Tarea vacía). Desglose idéntico al gate: 01=130 · 02=53 · 03=69 · 04=75 · 05=62 · 06=57 · 07=0 · 08=31 · 09=23 · BONUS-01=0 · BONUS-02=0 → 500. Diferencia con recuento_gate: 0 (0,0 %), dentro de ±2 %.",
+  "ficheros_total": 11,
+
+  "motor_no_resueltos": [
+    "DOM-09 parcial (decisión (f) del mantenedor, umbral 80% de anotar_duplicados — SIN CAMBIO, documentado y aceptado): gates.bandas_solapadas trae 3 bandas con solape real 25-40% sin anotar — Cierre Sala!A22 «CAJA Y CIERRE» 40% (destinos 08+09), Apertura Sala!A25 «LIMPIEZA RÁPIDA» 25% (destino 08), Cierre Sala!A17 «ESTACIONES Y BAÑOS» 25% (destino 08). Verificado que T-05 (dedup de main.py) ya no las duplica en el informe: la tanda 3 contaba 6 (cada banda dos veces), esta tanda cuenta 3 — la única diferencia es de REPORTE, el hallazgo de fondo (solape sin anotar) sigue igual porque es decisión (f), no un bug."
+  ],
+
+  "contenido_no_aplicado": [
+    "BONUS-01-briefing-servicio.xlsx:Briefing!B2 «Turno: ☐ Comida ☐ Cena» — SIGUE SIN CORREGIR (hallazgo baja de la tanda 3, no está en el alcance de contenido_kit_tareas_cafeteria.py, que sólo toca 01/02/03/05/06/08/BONUS-02). Contradice el resto del kit (cafetería/brunch que cierra ~17:00-17:30, sin turno de cena en ningún otro fichero). Nota aparte: el patrón «☐ Mañana ☐ Tarde ☐ Noche» que aparece en la fila 2 de las OTRAS 19 hojas de checklist (01, 02, 03, 04, 06, 07) es la cabecera ESTÁNDAR del molde ▸, compartida por TODA la familia (aparece igual en ficheros que el módulo de contenido de cafetería no toca, como 04-tareas-perfiles.xlsx) — no es contenido propio de este kit y un fix ahí sería de motor, no de este módulo; no se re-reporta como hallazgo nuevo porque ya lo dejó fuera de alcance la tanda 3 al citar sólo BONUS-01 y 06:Navidad, y 06:Navidad usa el mismo patrón compartido (no el «Cena» exclusivo de BONUS-01)."
+  ],
+
+  "hallazgos_resueltos_desde_tanda_3": [
+    {
+      "tema": "TPV encendido dos veces (08 06:45 vs 09 07:15) bajo «No se duplican»",
+      "estado": "resuelto",
+      "evidencia": "T-02 del motor 2.3: 09!B9 pasa a «Comprobar que el TPV está encendido y abrir turno de caja»; 08!B10 mantiene «Encender TPV / POS / datáfono» como hito legítimo del negocio. gates.tpv_duplicado = 1 sola tarea de encendido en todo el producto."
+    },
+    {
+      "tema": "Máquina de espresso encendida y limpiada dos veces (01 Barista vs 08 Negocio)",
+      "estado": "resuelto",
+      "evidencia": "contenido_kit_tareas_cafeteria.py:_f08 (líneas ~765-790): 08!'Apertura del Negocio'!B20 «Encender máquinas de café y molinillo» (07:15) → «Comprobar que la máquina de espresso está en temperatura y purgada (rutina completa en 01)»; 08!'Cierre del Negocio'!B18 «Purgar y limpiar grupo de café» → «Comprobar que el grupo de café queda limpio y apagado (backflush en 01)». Verificado en el xlsx del dry-run: sustitución 1:1, Responsable/Hora intactos (Encargado 07:15 / Último en salir Cierre), 0 filas nuevas."
+    },
+    {
+      "tema": "Contradicción del «marco del día» entre B36 y B40 de las Instrucciones del 08",
+      "estado": "resuelto",
+      "evidencia": "T-01 del motor 2.3, verificado celda a celda (ver b40_evidencia arriba)."
+    },
+    {
+      "tema": "Texto «No se duplican: cada uno cubre un nivel» contradicho por los solapes reales",
+      "estado": "resuelto (por reescritura del texto, no por eliminar el solape residual de DOM-09)",
+      "evidencia": "T-08 del motor 2.3, verificado en 11/11 Instrucciones (ver frase_t08_evidencia arriba). El texto ya no promete «no se duplican»; ahora explica que una tarea en dos ficheros es a propósito (hito vs detalle), lo cual sí es cierto para el caso TPV/espresso ya resuelto y sigue siendo la explicación honesta del solape de bandas de DOM-09 (decisión (f), no bloquea)."
+    }
+  ],
+
+  "hallazgos_nuevos": [
+    {
+      "severidad": "baja",
+      "donde": "BONUS-01-briefing-servicio.xlsx:Briefing!B2",
+      "hallazgo": "«Turno: ☐ Comida ☐ Cena» sigue siendo el único resto de plantilla genérica de restaurante con servicio de noche en un kit de cafetería/brunch que cierra ~17:00-17:30 en todos los demás ficheros (01, 08, 09). No es un hallazgo NUEVO — ya lo reportó la tanda 3 (ver2.json) como baja y sigue sin acción porque BONUS-01 no está en el alcance de contenido_kit_tareas_cafeteria.py; se re-confirma su persistencia tras el motor 2.3."
+    }
+  ],
+
+  "revision_jefe_de_cocina": {
+    "cobertura": "01 (Cocina/Sala/Barra Café, apertura y cierre), 02 (Calientes/Fríos/Pastelería Vitrina), 03 (Manager diario/semanal/mensual/handover), 04 (Encargado/Barista/Pastelero/Camarero/Auxiliar), 05 (semanales/mensuales/FIFO/Trimestral y Anual), 06 (San Valentín/Brunch Dominical/Navidad/Temporada Terraza), 07 (plantillas en blanco), 08/09 (negocio/caja), BONUS-01/02.",
+    "hallazgos": "0 erratas nuevas (barrido automático de palabras duplicadas consecutivas: 0 aciertos), 0 vocabulario ajeno al sector (barrido de términos de pizzería/hamburguesería/marisquería/coctelería/asador: 0 aciertos reales — las 5 coincidencias de «tapas» eran «tapas para vasos», packaging, falso positivo), 0 tareas duplicadas nuevas entre ficheros (las dos ya conocidas —TPV y espresso— están resueltas, ver arriba), horas coherentes: secuencia de apertura 06:30 (pastelero hornea) → 06:45 (barista enciende espresso, negocio enciende TPV/luces) → 07:00-07:15 (resto de apertura, negocio comprueba espresso/TPV a las 07:15 DESPUÉS de que barista y negocio ya los encendieron) → 07:30 (camarero monta sala, encargado supervisa) → apertura al público; cierre en orden inverso coherente (barista hace backflush 17:00-17:15, negocio comprueba a las 17:xx en 'Cierre del Negocio' — ninguna tarea de «comprobar» aparece ANTES que la de «encender» equivalente."
+  },
+
+  "bloquea_real": false,
+  "bloquea_real_motivo": "(1)-(6) todos verdes (exit 0 en dos corridas independientes, censo --fail 0, idempotencia interna 0, reproducibilidad entre corridas 0 diffs, DV única «✓,—,N/A» en 33 hojas, 6/6 casos §6 con pycel, b40/tpv/frase_t08 OK, recuento_gate=tareas_total_manual=500 sin diferencia, 0 #REF!/#NAME? en data_only). 0 hallazgos altos sin resolver (hallazgos_altos=0 en critico-2.json, motor_no_resueltos es una decisión de diseño documentada, no una regresión). 0 hallazgos nuevos altos (el único hallazgo que persiste es baja y ya estaba reportado en la tanda 3).",
+
+  "notas": [
+    "istats antes de cada arranque: 45,4-48,4 °C durante todo el trabajo, muy por debajo de 65 °C; python en serie, nunca dos a la vez; sin builds ni Playwright.",
+    "REGLAS DURAS respetadas: astro-site/public/dl/** no se ha tocado en ningún momento; todo el trabajo corrió con --dry-run y CLAUDE_SCRATCHPAD propio (propio-verificador3 y propio-verificador3b); sin KIT_TAREAS_APPLY; sin git add/commit/stash/clean; kit-tareas (representante) no se ha regenerado.",
+    "El contenido_kit_tareas_cafeteria.py que se ejecutó YA incluye el fix del espresso (_f08, líneas 717-790), citado y comentado como respuesta directa al hallazgo de la tanda 3 (ver2.json) — confirmado que el fix llegó al fichero de código antes de esta verificación, no que yo lo haya aplicado.",
+    "Diferencia respecto a motor-2.3.json: ese informe verificó bar/dark-kitchen/heladería/hotel (y pizzería sólo para T-05); esta es la primera verificación independiente de cafetería sobre motor 2.3 + su propio módulo de contenido actualizado. Los números (500 tareas, 11 ficheros, 33 hojas DV) no cambian respecto a la tanda 3 porque los fixes de esta ronda son sustituciones de TEXTO 1:1 (T-01, T-02, T-08, y el fix de contenido del espresso), no estructurales.",
+    "gates.recuento_tareas para 07 = 0 porque son plantillas en blanco (nada que contar hasta que el cliente escriba); coherente con la SPEC y no es un defecto.",
+    "No se ha vuelto a citar como hallazgo nuevo el patrón «☐ Mañana ☐ Tarde ☐ Noche» de las 19 hojas restantes: es la cabecera compartida del molde ▸ de TODA la familia (motor-level), no contenido de cafetería, y darlo como hallazgo aquí sería scope creep sobre un campo de checkbox no usado que no afirma nada falso (el usuario simplemente no marca «Noche»)."
+  ]
+}

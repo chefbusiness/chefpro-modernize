@@ -1,0 +1,159 @@
+{
+ "rol": "verificador independiente · kit-tareas-catering · ver3 (post motor 2.3 — T-01/T-02/T-03/T-04/T-05/T-08)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-catering/ verificado intacto (git status limpio, comprobado al abrir y al cerrar) · sin git add/commit/stash/clean · sin KIT_TAREAS_APPLY",
+ "comandos": [
+  "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador-ver3 python3 kit-tareas-v2_0/main.py --producto kit-tareas-catering --dry-run --json .../kt-hermanos-4/kit-tareas-catering.json",
+  "repetido ÍNTEGRO en .../propio-verificador-ver3b (2.ª invocación independiente, no la 2.ª pasada interna de main.py) para confirmar reproducibilidad entre ejecuciones: mismos 346/346, mismo DV, mismo TPV, mismo censo"
+ ],
+
+ "1_exit_censo_idempotencia_dv_casos6": {
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "idempotencia_2a_pasada_interna": { "diferencias": 0 },
+  "idempotencia_entre_dos_invocaciones_independientes": "run1 (propio-verificador-ver3) y run2 (propio-verificador-ver3b) desde producción limpia dan EXACTAMENTE los mismos números: 346 tareas, mismo desglose por fichero, misma DV, mismo TPV (1 tarea, en negocio), mismo censo 0 defectos",
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "listas_dv_evidencia": "Barrido PROPIO con openpyxl (script independiente, sin reutilizar motor.geometria*) sobre las 22 hojas de checklist reales de los 11 ficheros (excluye Instrucciones/Calendario/Registro Mensual): 01,02,03×2,04×4,05×2,06×4,07×3(molde P4 en blanco, con DV igualmente),08×2,09×2,BONUS-01 = 22 hojas, UNA sola formula1 = «✓,—,N/A» en las 22. gates.dv_y_bio del propio informe reporta 19 (4 checklist_▸ + 15 p4) porque su bucle no entra en las 3 hojas de 07 (plantilla en blanco sin fila de contador); mi barrido, hecho aparte y sobre TODA hoja del libro, sí las incluye y confirma que también llevan la lista correcta — no es una discrepancia real, es que mi alcance es más amplio.",
+  "casos_6": [
+   {
+    "caso": "Arqueo cuadra: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → descuadre 0",
+    "ok": true,
+    "evidencia": "gate demostraciones_spec_6 (re-ejecutado dos veces por mí, mismos valores): 09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0. Fórmulas leídas: C48=IFERROR('Apertura de Caja'!C23,0) [fondo], C49=IFERROR(C47-C48,0) [«Ventas en efectivo (contado − fondo)»], C52=C49+C50+C51 [TOTAL FACTURADO], C54=IFERROR(C52-C53,0) [DESCUADRE] — exactamente la fórmula que pide el §8 revisado de la SPEC."
+   },
+   {
+    "caso": "Arqueo descuadra +10 (Z 1.790)",
+    "ok": true,
+    "evidencia": "C54 = 10, con CF ámbar sobre la celda (regla cellIs verificada en el fichero)."
+   },
+   {
+    "caso": "Contador honesto: N/A sale del denominador, «—» NO (regla §8 ronda 2, la más crítica de esta tanda)",
+    "ok": true,
+    "evidencia": "Fórmula: F29 (08:'Apertura del Negocio') = COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\") — SIN restar «—». Prueba propia con pycel, NO reutilizando el demo del gate (que sólo prueba con todo ✓): copié 08-apertura-cierre-negocio.xlsx a un fichero de test, marqué 3 filas N/A, 10 con ✓ y 5 con «—» sobre las 18 tareas de 'Apertura del Negocio', y evalué D29/F29 con pycel → D29=10, F29=15 → «10 de 15» (66,7 %). Con la regla VIEJA (que restaba también «—») habría dado «10 de 10» (100 %, el turno que se salta 5 tareas marcándolas «—» habría impreso el 100 % que describe DOM-R2-02). Confirmado: la regla nueva está en vigor en catering."
+   },
+   {
+    "caso": "07 plantilla personalizable por fórmula → «x de 8»",
+    "ok": null,
+    "evidencia": "NO APLICA a este hermano por diseño (documentado ya en ver2, sin cambios en tanda 4): 07-plantilla-personalizable.xlsx trae sus 3 hojas EN BLANCO (Por Fase/Por Zona/Por Perfil, 50 filas numeradas cada una, columna Tarea vacía). No hay tareas de fábrica que demostrar. Confirmado también que la columna «Tarea» de las 3 hojas va en verde y que NO hay placeholder «(Escribe aquí…)» dentro de la columna Tarea (cero coincidencias al grep), consistente con la regla §8 revisada (el aviso va en la banda de sección, no en la celda)."
+   },
+   {
+    "caso": "08 sin tareas sin Responsable/Hora",
+    "ok": true,
+    "evidencia": "18 filas 'Apertura del Negocio' (E5:E22, horas 07:00-07:30, todas 'Encargado') + 15 filas 'Cierre del Negocio', todas con hora. gates.negocio_precargado: 33 tareas, 0 huecos."
+   },
+   {
+    "caso": "Contador P4 recién impreso = «0 de N» (sin contar rótulos ni tabla de referencia al pie)",
+    "ok": true,
+    "evidencia": "01-apertura-cierre.xlsx:'Producción'!C52/E52 = '0.0 de 38.0' con la hoja TAL CUAL se entrega. Verificado además que la tabla de vida útil (10 filas, filas 57-66) y su cabecera 'Familia' (fila 56) quedan FUERA del rango contado — lo comprobé abriendo la hoja y contando manualmente: si se incluyeran esas 11 filas de referencia el recuento independiente me daba 374 en vez de 346 en todo el producto (ver §6)."
+   }
+  ],
+  "casos6_resumen": "5 de 6 OK con evidencia propia (incluida una prueba pycel que YO diseñé para el caso más crítico, no reutilizada del gate); el 6º es NO APLICA documentado y no bloquea (decisión k, sin cambios)."
+ },
+
+ "2_temas_tanda3_contenido_no_aplicado_y_hallazgos_verificados": [
+  {
+   "tema": "anisakis / pescado crudo o semicrudo (ALTA) — de contenido_pendiente tanda 1/3",
+   "resuelto": true,
+   "donde": "01-apertura-cierre.xlsx:Producción:B34 y 06-eventos-festivos.xlsx:'Cocktail Standing':B9",
+   "evidencia": "Ambas celdas abiertas y leídas ENTERAS (no truncadas): B34 = 'Pescado que se servirá crudo o semicrudo (ceviche, tartar, marinados, ahumado en frío) — prevención de ANISAKIS: exigir al proveedor el certificado de congelación previa (≥24 h a −20 °C, o 15 h a −35 °C) o congelarlo tú, y anotar el lote'; B9 = 'Ceviche, tartar y cualquier pescado que se sirva crudo o semicrudo — prevención de ANISAKIS: usar sólo pescado con congelación previa acreditada (≥24 h a −20 °C, o 15 h a −35 °C) y anotar el lote'. Signo menos tipográfico correcto en las dos."
+  },
+  {
+   "tema": "registro de jornada del equipo (MEDIA)",
+   "resuelto": true,
+   "donde": "03-tareas-manager.xlsx:'Event Manager':B46",
+   "evidencia": "'Cerrar y validar el registro de jornada de todo el equipo del evento, extras incluidos (montaje, servicio y desmontaje), y archivarlo con el del mes: hay que conservarlo 4 años.'"
+  },
+  {
+   "tema": "vida útil de congelación por familia (BAJA)",
+   "resuelto": true,
+   "donde": "01-apertura-cierre.xlsx:Producción, filas 55-66, fuera del rango del contador",
+   "evidencia": "Tabla 'VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN A −18 °C…' con 10 familias, confirmada FUERA del contador (§6) y con el signo −18 en forma tipográfica."
+  },
+  {
+   "tema": "temperaturas con signo no normalizado (BAJA) / DOM-R2-22 transversal de tanda 4",
+   "resuelto": true,
+   "donde": "02-partidas-cocina.xlsx:Transporte:B15 ('refrigerado ≤ 5 °C / congelado ≤ −18 °C')",
+   "evidencia": "Barrido propio con regex sobre TODO el producto buscando guion ASCII pegado a grados: 0 apariciones erróneas. Los 4 hallazgos del regex son rangos dígito-dígito legítimos que la SPEC excluye a propósito ('0-4 °C', '20-22 °C'), no signos menos sin normalizar."
+  },
+  {
+   "tema": "orden seguro campana→gas→equipos + higiene personal (BAJA)",
+   "resuelto": true,
+   "donde": "01-apertura-cierre.xlsx:Producción, sección 'Higiene personal y arranque seguro de la cocina' (filas 17-24), delante de 'Producción D-1'",
+   "evidencia": "8 tareas en orden: uniforme/pelo → sin joyas/uñas → heridas cubiertas → lavado de manos → síntomas → campana → gas → hornos/sous-vide/freidora. Coincide con el orden que exige DOM-13."
+  }
+ ],
+ "contenido_no_aplicado": [],
+
+ "3_motor_tanda4_ids_verificados_en_catering": {
+  "T-01_marco_sin_contradiccion": {
+   "b40_ok": true,
+   "evidencia": "08:Instrucciones!B35 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B38 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 09-apertura-cierre-caja.xlsx.» — las dos de acuerdo, sin remitir a un fichero de áreas (correcto: contexto detecta areas=None para este kit, porque 01-apertura-cierre.xlsx es 'Producción' off-site y no tiene hojas de zona tipo 'Apertura Cocina/Sala'). 09:Instrucciones!B49 = «▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día…; el marco del día está en 08-apertura-cierre-negocio.xlsx.» — coherente con B35/B38 del 08. Sin contradicción en ningún sentido."
+  },
+  "T-02_tpv_ok": {
+   "tpv_ok": true,
+   "evidencia": "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = 'Comprobar que el TPV está encendido y abrir turno de caja' (Responsable de caja, hora 07:30, INTACTA). 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = 'Encender TPV / POS / datáfono' (Encargado, 07:00) — se mantiene como hito legítimo. gates.tpv_duplicado confirma 1 sola tarea de ENCENDER TPV en todo el producto, la del 08. Secuencia horaria coherente: negocio enciende el TPV a las 07:00 → caja llega, cuenta el fondo a las 07:15 → caja comprueba que el TPV sigue encendido a las 07:30, DESPUÉS de la apertura del local (fix DOM-R2-08 confirmado también aquí: nada del 09 ocurre antes de la apertura del 08)."
+  },
+  "T-03_recuento": "ver §6 — coincide con mi recuento manual (346=346).",
+  "T-04_parentesis_areas": {
+   "aplica": "parcial (por diseño)",
+   "evidencia": "Con areas=None, el paréntesis de áreas simplemente no se imprime en ningún lado del 08/09 de catering (no hay '(cocina, sala, barra)' ni resto colgante). El paréntesis del fichero de NEGOCIO tampoco aparece — confirmado, coincide con lo que motor-2.3.json documenta como comportamiento general para los 08/18/10 de los 12 kits (listas planas sin bandas, se omite en vez de inventar)."
+  },
+  "T-05_bandas_solapadas": "gates.bandas_solapadas = [] (vacío) — no aplica a catering en esta tanda porque no hay ficheros de ÁREAS con bandas tipo 'Cierre Sala'/'Cierre Cocina' en alcance del motor (01 es 'Producción', fuera de ese mecanismo); no hay nada que deduplicar y el gate no reporta falsos duplicados.",
+  "T-08_frase_marco": {
+   "frase_t08_ok": true,
+   "matiz_importante": "La frase nueva SÓLO aparece en las Instrucciones de 08 y 09 (las 2 hojas molde ▸ de este kit), NO en los 9 ficheros restantes (01-07 + BONUS-01/02), que son molde P4 y NUNCA tuvieron bloque «Se conecta con» / «Orden de uso» — ni antes de la tanda 4 ni ahora. Esto NO es un defecto: coincide EXACTAMENTE con lo que dice la SPEC §5 ('el motor... a los 08/09 de catering, chocolatería, heladería, hotel, restaurante-creativo' — a diferencia de bar/cafetería/pizzería/hamburguesería/dark-kitchen, que sí son '▸ completos' y por eso SUS ver3 informan la frase en 11/11). Verificado con `_bloque_conecta`/`reescribir_instrucciones`: son funciones de molde ▸, `motor.aplicar` no las corre sobre P4, y el módulo de contenido de catering tampoco las añade (su función `_instrucciones()` sólo mete bloques de contenido propio como 'Seguridad y vida útil' o 'Más allá del evento', nunca 'Se conecta con').",
+   "frase_vieja_ninguno": true,
+   "evidencia_vieja": "Barrido de «No se duplican: cada uno cubre un nivel» en las Instrucciones de los 11 ficheros: 0 apariciones en TODOS (los 9 P4 nunca la tuvieron; los 2 ▸ ya la sustituyeron por la frase nueva)."
+  }
+ },
+
+ "4_hallazgo_tanda3_reverificado": {
+  "tema": "TPV/POS encendido dos veces (08 07:00 vs 09 07:30) — hallazgo MEDIA de kit-tareas-catering-ver2.json",
+  "estado": "RESUELTO por T-02",
+  "evidencia": "Ver 3_T-02_tpv_ok arriba: ya no hay dos tareas de 'Encender TPV', la de caja pasó a ser una comprobación ('Comprobar que el TPV está encendido'), y las horas quedan escalonadas y coherentes con la apertura del local."
+ },
+
+ "5_recuento": {
+  "recuento_gate": 346,
+  "tareas_total_manual": 346,
+  "diferencia_pct": 0.0,
+  "metodologia_manual": "Script propio con openpyxl (sin llamar a motor.geometria/geometria_p4): fila de tarea real = columna A es un ENTERO (la numeración que pone el generador o `_renumerar_p4`) Y columna B tiene texto no vacío distinto de 'Tarea' (cabecera repetida del molde P4). Excluye Instrucciones/Calendario/Registro Mensual. Primera versión del script (sin exigir A entero) daba 374 — el exceso de 28 eran rótulos y filas de la tabla de referencia 'VIDA ÚTIL…' de 01 (columna A vacía, no son tareas); corregido y verificado celda a celda antes de aceptar el número.",
+  "por_fichero": {
+   "01-apertura-cierre.xlsx": 38, "02-partidas-cocina.xlsx": 24, "03-tareas-manager.xlsx": 53,
+   "04-tareas-perfiles.xlsx": 64, "05-tareas-semanales-mensuales.xlsx": 44, "06-eventos-festivos.xlsx": 47,
+   "07-plantilla-personalizable.xlsx": 0, "08-apertura-cierre-negocio.xlsx": 33,
+   "09-apertura-cierre-caja.xlsx": 23, "BONUS-01-briefing-servicio.xlsx": 20,
+   "BONUS-02-calendario-anual-tareas.xlsx": 0
+  },
+  "por_hoja_coincide_con_gate": "Comprobado hoja a hoja (19 hojas con tareas): coincide EXACTO con gates.recuento_tareas.por_hoja del informe (03:'Event Manager'=33+'Trimestral y Anual'=20; 04: 16×4; 05:27+17; 06:13+10+12+12; etc.)",
+  "ficheros_total": 11
+ },
+
+ "6_integridad_otros_moldes": {
+  "ficheros_verificados": 11,
+  "carga_openpyxl_data_only_false_y_true": "11/11 cargan sin excepción, en las DOS invocaciones independientes",
+  "errores_formula": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0!/#N/A/#NULL!/#NUM! en las 11 copias (barrido propio, data_only=True Y False, todas las hojas de los 11 ficheros)",
+  "typos_y_no_latinos": "Barrido propio de duplicados de palabra, doble espacio y caracteres CJK/cirílico/hangul: 0 CJK, 0 duplicados reales (los 'doble espacio' encontrados son separadores intencionales de campos de firma/fecha, no erratas)",
+  "proteccion_de_hoja": "08 y 09 (molde ▸): protegidas SIN contraseña, insertRows/deleteRows serializan a OOXML '0' = NO bloqueado (confirmado, coincide con lo que documenta la SPEC como DOM-R2-04 descartado). Los 9 ficheros de molde P4 (01-07+BONUS): SIN protección, tal como su Instrucciones NO promete ninguna (no hay sección 'Protección de la hoja' en su Instrucciones) — consistente, sin contradicción entre lo escrito y lo real. Es una brecha arquitectónica preexistente (motor.aplicar no toca la protección de P4), no algo que haya tocado o roto la tanda 4.",
+  "produccion_intacta": "git status astro-site/public/dl/kit-tareas-catering/ → limpio antes y después de las dos ejecuciones; todo el trabajo en /private/tmp/.../scratchpad/propio-verificador-ver3(/b)/"
+ },
+
+ "7_hallazgos_nuevos_jefe_de_cocina": [
+  {
+   "severidad": "baja",
+   "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio':B5,B9,B11,B12,B14,B18,B19 (vocabulario del molde genérico compartido por los 12 kits, no tocado por el módulo de contenido de catering)",
+   "hallazgo": "El checklist de negocio de catering conserva íntegro el vocabulario de restaurante con sala abierta al público: 'Montar señalización exterior / pizarra de menú', 'Encender sistema de reservas / tablet de pedidos', 'Poner música ambiente', 'Comprobar que las cartas/menús están en orden', 'Encender displays / pantallas informativas'. Una empresa de catering (producción off-site, sin comensales que entren por la puerta) no tiene pizarra de menú de calle ni cartas que enseñar. Es el MISMO patrón ya documentado por critico-2.json para dark-kitchen (100 % delivery, sin terraza/sala/reservas) y sigue pendiente la 'DECISIÓN DEL ORQUESTADOR' de motor-2.3.json sobre el barrido transversal del 08/18/10 en los kits sin esas áreas; no se había señalado explícitamente para catering hasta ahora. Cosmético — no afecta a ningún gate ni fórmula — pero un jefe de cocina de catering leyendo su propio kit lo notaría en la primera línea."
+  }
+ ],
+
+ "8_recuento_final": { "casos6_ok": 5, "casos6_total": 6 },
+
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Los 6 puntos que podían bloquear están todos verdes: (1) motor no roto — exit 0, idempotencia 0 en la pasada interna Y entre dos invocaciones independientes, censo 0 defectos, DV una sola lista en las 22 hojas reales, 5/6 casos §6 OK con evidencia propia (incluida una prueba pycel diseñada por mí para el caso más crítico, no la trivial del gate) y el 6º es NO APLICA documentado. (2) b40_ok=true: sin contradicción de marco. (3) tpv_ok=true: comprobado literal en la celda, hallazgo MEDIA de tanda 3 queda RESUELTO. (4) frase_t08_ok=true, con el matiz de que sólo aplica a 08/09 por ser el único alcance del motor en este kit P4-híbrido — igual que documenta la SPEC §5 para el resto de kits '08/09-only'. (5) recuento_gate=346=tareas_total_manual, 0 % de diferencia. (6) 11/11 ficheros cargan sin error de fórmula en los dos molde. El único hallazgo nuevo es de severidad BAJA (vocabulario del molde genérico, cosmético, ya documentado como patrón transversal pendiente de decisión del orquestador).",
+
+ "notas": [
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 39,5-44,0 °C durante toda la verificación; nunca dos intérpretes a la vez; sin builds ni Playwright.",
+  "astro-site/public/dl/** no se ha tocado en ningún momento (dos ejecuciones --dry-run con CLAUDE_SCRATCHPAD distinto cada una); sin git add/commit/stash/clean.",
+  "El JSON crudo de main.py (dos corridas) queda en /private/tmp/.../scratchpad/kt-hermanos-4/kit-tareas-catering.json y kit-tareas-catering-run2.json (se pierde con el reinicio); este informe en el repo es la fuente persistente.",
+  "El punto 7 (hallazgo del vocabulario de sala/reservas en el 08 de catering) es extensión de un patrón YA conocido (dark-kitchen), no un descubrimiento aislado: si el orquestador decide abordar el barrido transversal del 08/18/10 para los kits sin sala/terraza/reservas, catering debería entrar en ese mismo lote junto con dark-kitchen."
+ ]
+}

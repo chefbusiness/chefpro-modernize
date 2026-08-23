@@ -1,0 +1,94 @@
+{
+  "rol": "verificador independiente · kit-tareas-heladeria · tanda 4 (sobre motor 2.3)",
+  "fecha": "2026-08-23",
+  "pid": "kit-tareas-heladeria",
+  "modo": "SOLO dry-run · astro-site/public/dl/** intacto · CLAUDE_SCRATCHPAD=.../propio-verificador3 · sin git add/commit/stash/clean · un solo intérprete a la vez, istats antes de cada python (39,5-42,6 °C)",
+
+  "resumen": "Regenerado el kit desde cero con motor 2.3 + contenido_kit_tareas_heladeria.py (main.py --producto kit-tareas-heladeria --dry-run, sin --solo). TODO VERDE: exit 0, censo --fail 0 defectos, idempotencia 0 diferencias, cache 127/127 con pycel, DV unificada («✓,—,N/A», 0 incorrectas), bio 11/11 con «Versión 2.0». Los DOS motivos que el crítico de la tanda 3 citó para bloquear este hermano —el TPV encendido por partida doble (08 07:00 vs 09 07:30, contradiciendo «No se duplican») y la errata «manteccar» repetida 4 veces— están RESUELTOS y verificados celda a celda: T-02 reescribió 09!'Apertura de Caja'!B9 a «Comprobar que el TPV está encendido y abrir turno de caja» sin tocar la hora, y _arreglar_erratas corrigió las 4 celdas (03, 04×2, BONUS-01), con 0 apariciones de «mantecc» en todo el kit tras la regeneración. T-01 dejó 08:Instrucciones sin contradicción sobre cuál es el marco del día. Recuento independiente con openpyxl (298) cuadra EXACTO con el gate (298), 0 % de diferencia. Único resto sin resolver: un hallazgo MEDIA que ya constaba en mi propia verificación de la tanda 2 (kit-tareas-heladeria-ver2.json) y que ni el crítico citó como motivo de bloqueo ni motor 2.3 aborda — la vitrina de exposición pide la misma lectura de temperatura DOS VECES en el mismo turno (01!Apertura!B16 y 08!'Apertura del Negocio'!B20-21). Es contenido, no motor, y es MEDIA, así que no activa bloquea_real por sí sola. bloquea_real=false: no hay ningún hallazgo alto vivo, ni nuevo ni heredado.",
+
+  "verificacion_contenido_pendiente_tanda_3": [
+    {
+      "tema": "TPV/POS encendido por partida doble (08 07:00 vs 09 07:30, ALTA, motivo de bloqueo del crítico)",
+      "resuelto": true,
+      "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10=«Encender TPV / POS / datáfono» E10=07:00 (Encargado, zona Caja) · 09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9=«Comprobar que el TPV está encendido y abrir turno de caja» D9=07:30 (Responsable de caja). Secuencia coherente (se enciende a las 07:00, se comprueba a las 07:30 antes de abrir turno), sin contradicción. gates.tpv_duplicado del informe: 2 tareas «Encender…TPV» en TODO el producto — la de 01!Apertura!B36 (\"Encender TPV / caja registradora y verificar fondo de caja\", etiquetada «otro fichero: se deja») y la de 08 («negocio: hito legítimo»). La del 09 ya no aparece porque dejó de decir «Encender»."
+    },
+    {
+      "tema": "Errata «manteccar»/«Manteccar» × 4 (MEDIA, motivo de bloqueo del crítico)",
+      "resuelto": true,
+      "evidencia": "03-tareas-manager.xlsx:'Tareas Diarias'!B9=«…listas para mantecar» · 04-tareas-perfiles.xlsx:'Heladero-Obrador'!B6=«…listas para mantecar» y !B14=«Mantecar sabores según orden de prioridad…» · BONUS-01-briefing-servicio.xlsx:'Briefing Diario'!B7=«…listas para mantecar». Barrido regex insensible a mayúsculas de «mantecc» en las 11 xlsx (100 % de las celdas de texto de los 11 ficheros): 0 apariciones. La forma correcta de referencia (02!Mantecación!B32) sigue intacta."
+    },
+    {
+      "tema": "Vitrina: lectura de temperatura duplicada entre 01 (detalle de área) y 08 (marco del negocio) — MEDIA, de mi propia kit-tareas-heladeria-ver2.json, NO citada por el crítico como motivo de bloqueo",
+      "resuelto": false,
+      "evidencia": "01-apertura-cierre.xlsx:'Apertura'!B16 = «Pasar las vitrinas de exposición de conservación nocturna (−18 °C) a modo servicio (−14 a −12 °C) y comprobar que han mantenido la temperatura toda la noche — anota la lectura: ____ °C» · 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B20 (\"Pasar las vitrinas… con género dentro la vitrina NO se apaga por la noche\") + !B21 (\"Comprobar la temperatura de todas las vitrinas… −14 a −12 °C; por la noche, conservación −18 °C — anota la lectura: ____ °C\"). Sigue pidiendo la MISMA lectura de la MISMA vitrina en el mismo turno con dos huecos «____ °C» separados, sin que ningún bloque «Se conecta con» lo remita. No es tan grave como el TPV (aquí el VALOR objetivo coincide en las dos tareas, no hay contradicción de dato) pero es trabajo duplicado real. Motor 2.3 (T-01/T-02/T-03/T-04/T-05/T-08) no lo toca — su alcance fue exclusivamente el marco/texto genérico y el TPV — y contenido_kit_tareas_heladeria.py tampoco lo aborda en esta versión."
+    }
+  ],
+
+  "dryrun_exit": 0,
+  "censo_exit": 0,
+  "idempotencia": 0,
+
+  "listas_dv": ["\"✓,—,N/A\""],
+  "dv_incorrectas": [],
+  "hojas_con_dv_lista": 26,
+  "nota_dv": "gates.dv_y_bio del informe cuenta 4 hojas_checklist (molde ▸: 08+09) + 21 hojas_p4 = 25; mi barrido crudo con openpyxl encuentra 26 porque además cuenta BONUS-02-calendario-anual-tareas.xlsx:'Calendario Anual' (E5:E16, una marca por mes), que el gate no clasifica como checklist de tareas (recuento_tareas la marca en 0 a propósito: es un calendario, no una lista de tareas). Una sola lista en las 26 hojas, 0 incorrectas.",
+
+  "casos6": [
+    {"caso": "arqueo cuadra (fondo 150, efectivo 1.150, tarjetas 800, Z 1.800)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel vía gate del informe): 0"},
+    {"caso": "arqueo descuadra (Z 1.790)", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 (pycel): 10, con C53=1790"},
+    {"caso": "contador honesto: sólo N/A sale del denominador", "ok": true, "evidencia": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29/F29 — 18 tareas, 3 N/A, 15 ✓ → '15 de 15' (pycel)"},
+    {"caso": "contador P4 recién impreso, sin contar rótulos", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura'!C41/E41 (pycel, hoja recién impresa): '0.0 de 26.0' — 26 tareas reales, 3 filas de rótulo «Tarea» repetido descontadas"},
+    {"caso": "07 plantilla personalizable: denominador por fórmula", "ok": true, "evidencia": "PROBADO A MANO con pycel sobre copia de trabajo (no lo cubre ningún gate automático porque 07 está fuera del alcance ▸): 07-plantilla-personalizable.xlsx:'Por Zona', 8 filas escritas en B5:B12, 5 marcadas ✓ en E5:E9 → C30(num)/E30(den) = '5 de 8', exactamente la fórmula del §2.3"},
+    {"caso": "08 precargado: ninguna tarea sin Responsable/Hora", "ok": true, "evidencia": "gates.negocio_precargado del informe: {fichero: 08-apertura-cierre-negocio.xlsx, tareas: 33, huecos: [], firma_ok: true}"},
+    {"caso": "bio + Versión 2.0 en todas las Instrucciones", "ok": true, "evidencia": "gates.dv_y_bio: instrucciones_con_bio=11, sin_bio=[], sin_hoja_instrucciones=[], version_desfasada=[]"}
+  ],
+
+  "b40_ok": true,
+  "b40_evidencia": "08-apertura-cierre-negocio.xlsx:Instrucciones!B35 = «▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.» y !B38 = «▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 09-apertura-cierre-caja.xlsx.». Las dos líneas concuerdan (sin mención a un fichero de «áreas» ▸ porque este kit sólo tiene negocio+caja en el molde ▸: CTX['f_areas']=None, impreso en el log como «areas=None»). También verificado 09:Instrucciones!B47/B49, coherentes con «esta es la CAJA» en ambas líneas.",
+
+  "tpv_ok": true,
+  "tpv_evidencia": "08!'Apertura del Negocio'!B10 = «Encender TPV / POS / datáfono» (E10=07:00) · 09!'Apertura de Caja'!B9 = «Comprobar que el TPV está encendido y abrir turno de caja» (D9=07:30). Secuencia lógica y sin contradicción del texto «No se duplican» (que en este kit fue reemplazado por la frase T-08, ver abajo).",
+
+  "frase_t08_ok": true,
+  "frase_t08_evidencia": "Frase nueva («Cada fichero cubre un nivel: el de negocio marca el HITO…») presente en 08:Instrucciones!B37 y 09:Instrucciones!B48 — los DOS únicos ficheros de este kit que llevan el bloque «Orden de uso» (estructuralmente exclusivo del molde ▸, que aquí sólo cubre 08/09; los 9 ficheros P4 —01-07 y los 2 BONUS— nunca tuvieron ese bloque en sus Instrucciones, verificado leyendo las 11 hojas completas). Frase vieja «No se duplican: cada uno cubre un nivel» con 0 apariciones en las 11 hojas de Instrucciones del kit.",
+
+  "recuento_gate": 298,
+  "tareas_total_manual": 298,
+  "ficheros_total": 11,
+  "nota_recuento": "Recuento independiente con openpyxl: por cada xlsx, cada hoja salvo 'Instrucciones' y 'Calendario Anual', se cuentan las filas con A=entero (numeración real de tarea) y B=texto no vacío distinto de 'Tarea' (rótulo de cabecera repetida). Por fichero: 01=43 · 02=27 · 03=38 · 04=41 · 05=44 · 06=36 · 07=0 (plantilla en blanco, denominador por fórmula) · 08=33 · 09=23 · BONUS-01=13 · BONUS-02=0 (calendario, no checklist). Total 298, IDÉNTICO al recuento_gate del informe (0 % de diferencia, gates.recuento_tareas.recuento_por_molde = {checklist_▸: 56, p4: 242}).",
+
+  "motor_no_resueltos": [],
+  "bandas_solapadas": [],
+
+  "contenido_no_aplicado": [],
+
+  "integridad_ficheros": {
+    "verificado": true,
+    "metodo": "openpyxl.load_workbook() normal + data_only=True sobre los 11 xlsx regenerados; barrido de todas las celdas buscando literalmente '#REF!'/'#NAME?'/'#VALUE!'/'#DIV/0!'/'#N/A'/'#NULL!'/'#NUM!'",
+    "resultado": "11/11 ficheros recargan sin excepción en los dos modos, 0 errores de fórmula reales en ninguna hoja (un primer barrido con un patrón demasiado laxo -string que empieza por '#'- disparó 60 falsos positivos, todos la cabecera '#' de la columna de numeración del molde P4; repetido con el patrón correcto de errores de Excel, 0 hallazgos)."
+  },
+
+  "hallazgos_nuevos": [
+    {
+      "severidad": "media",
+      "donde": "01-apertura-cierre.xlsx:'Apertura'!B16 frente a 08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B20-B21",
+      "hallazgo": "La temperatura de la vitrina de exposición se pide anotar DOS VECES en el mismo turno de apertura: 01 la resuelve en una sola tarea con hueco «____ °C» y 08 la parte en dos tareas (pasar a servicio + comprobar) con su propio hueco «____ °C». Como 01 es el detalle por ÁREA y 08 es el checklist del LOCAL, un empleado a conciencia rellena dos casillas de lectura para la misma vitrina en el mismo momento del día. No hay contradicción de VALOR (las dos piden −14/−12 °C), sólo trabajo duplicado sin que ningún bloque de Instrucciones lo explique o remita. Ya lo había reportado en mi propia kit-tareas-heladeria-ver2.json (tanda 2); el crítico de la tanda 3 no lo citó entre los motivos de bloqueo y motor 2.3 no lo toca — su alcance fue el texto genérico del marco (T-01/T-04/T-08) y el TPV (T-02), no la coherencia 01↔08 tarea por tarea. No bloquea por sí sola (es MEDIA), pero sigue siendo un defecto de producto real."
+    },
+    {
+      "severidad": "baja",
+      "donde": "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!C11 (zona «Recepción» de la tarea «Encender sistema de reservas / tablet de pedidos»)",
+      "hallazgo": "«Recepción» es vocabulario de hostelería con mostrador de bienvenida (restaurante, hotel) que no encaja bien en una heladería de mostrador directo — no hay una zona de «recepción» separada del propio mostrador de venta. La tarea en sí puede tener sentido (tablet de pedidos para catering/eventos, ya cubierto en 06), pero la etiqueta de zona es residuo del molde base v1.1 compartido por toda la familia de kits y no la toca el módulo de contenido de heladería (fuera de su alcance, que sólo cubre 08/09 con sustituciones 1:1 ancladas). Cosmético, no afecta a ningún gate ni cálculo."
+    }
+  ],
+
+  "bloquea_real": false,
+  "motivo": "Los DOS hallazgos que motivaron el bloqueo en la tanda 3 (TPV duplicado ALTA y errata «manteccar» MEDIA) están resueltos y verificados. No queda ningún hallazgo ALTA vivo, ni heredado ni nuevo. El único resto sin resolver (vitrina: doble lectura 01↔08) es MEDIA y no cumple el criterio de bloqueo de esta tarea. (1)-(6) pasan: exit 0, censo 0 defectos, idempotencia 0, DV unificada 0 incorrectas, casos §6 7/7, recuento_gate=tareas_total_manual=298 (0 % de diferencia). Recomendación: dejar constancia del hallazgo MEDIA de la vitrina para una futura pasada del contenido (no del motor, porque no es un patrón de familia sino una redundancia propia de este kit), pero no impide ejecutar en real.",
+
+  "notas": [
+    "Regenerado con: CLAUDE_SCRATCHPAD=/private/tmp/claude-501/-Users-johnguerrero-chefpro-modernize/7340312f-b4fe-4aa1-b254-4b0c17c8375f/scratchpad/propio-verificador3 python3 main.py --producto kit-tareas-heladeria --dry-run --json .../kt-hermanos-4/kit-tareas-heladeria.json (motor+contenido juntos, sin --solo). astro-site/public/dl/** no se ha tocado en ningún momento.",
+    "El caso §6 del 07 se probó a mano con pycel sobre una copia de trabajo en el scratchpad (no la toca ningún gate automático del informe para este hermano, porque 07 está fuera del alcance ▸ de un kit 'solo 08/09'), igual que hizo la verificación de la tanda 2 con el mismo resultado ('5 de 8').",
+    "Verificado explícitamente que ambos motivos de bloqueo de la tanda 3 (critico-2.json → bloqueados → kit-tareas-heladeria) están resueltos con evidencia celda a celda, no sólo confiando en el resumen de motor-2.3.json.",
+    "Temperatura de CPU vigilada con istats antes de cada python: 39,5-42,6 °C durante toda la verificación, un solo intérprete a la vez, sin builds ni navegador.",
+    "No se ha hecho git add/commit/stash/clean. Este fichero es la única escritura en el repo."
+  ]
+}

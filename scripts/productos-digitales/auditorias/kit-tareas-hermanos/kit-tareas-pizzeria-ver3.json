@@ -1,0 +1,123 @@
+{
+ "rol": "verificador independiente · kit-tareas-pizzeria · tanda 4 (motor 2.3)",
+ "fecha": "2026-08-23",
+ "pid": "kit-tareas-pizzeria",
+ "modo": "SOLO dry-run · astro-site/public/dl/** intacto · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean · CLAUDE_SCRATCHPAD=propio-verificador4",
+ "comando": "CLAUDE_SCRATCHPAD=.../scratchpad/propio-verificador4 python3 kit-tareas-v2_0/main.py --producto kit-tareas-pizzeria --dry-run --json .../kt-hermanos-4/kit-tareas-pizzeria.json",
+
+ "resultado_dryrun": {
+  "exit": 0,
+  "idempotencia_diferencias": 0,
+  "censo_fail_exit": 0,
+  "censo_defectos": 0,
+  "cache_inyectado": "todas las fórmulas nuevas: 0 fallos_pycel en los 11 xlsx (05 tiene 40 fórmulas totales por la hoja Trimestral y Anual, 8 nuevas cacheadas)",
+  "data_only_formulas_nuevas": {"con_valor": 139, "fallos": 0},
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "dv_hojas_checklist": 31,
+  "dv_incorrectas": 0,
+  "bio_instrucciones": "11/11",
+  "version_desfasada": 0,
+  "recuento_tareas_total_gate": 373,
+  "recuento_tareas_por_fichero_gate": {
+   "01-apertura-cierre.xlsx": 76, "02-partidas-cocina.xlsx": 39, "03-tareas-manager.xlsx": 55,
+   "04-tareas-perfiles.xlsx": 63, "05-tareas-semanales-mensuales.xlsx": 47, "06-eventos-festivos.xlsx": 39,
+   "07-plantilla-personalizable.xlsx": 0, "08-apertura-cierre-negocio.xlsx": 31,
+   "09-apertura-cierre-caja.xlsx": 23, "BONUS-01-briefing-servicio.xlsx": 0, "BONUS-02-calendario-anual-tareas.xlsx": 0
+  }
+ },
+
+ "recuento_manual_openpyxl": {
+  "metodo": "por cada xlsx, hojas con cabecera 'Nº'/'#' en col A + 'Tarea' en col B (excluida Instrucciones); cuenta filas donde col A es ORDINAL entero Y col B tiene texto no vacío (excluye rótulos de sección, que no llevan entero en A, y filas libres SIN texto en Tarea)",
+  "total_manual": 373,
+  "total_gate": 373,
+  "diferencia_pct": 0.0,
+  "detalle_por_hoja_coincide_con_gate": true,
+  "nota": "coincidencia EXACTA celda a celda con gates.recuento_tareas.por_hoja del informe (30/14/18/14 en 01, 15/14/10 en 02, 16/15/14/10 en 03, 14/12/13/13/11 en 04, 13/10/9/15 en 05, 10/8/13/8 en 06, 0/0/0 en 07 con 15 filas-plantilla-vacías cada una, 17/14 en 08, 11/12 en 09)"
+ },
+
+ "casos_6": [
+  {"caso": "arqueo-cuadra: fondo 150, contado 1150, tarjetas 800, Z 1800 → DESCUADRE 0", "ok": true, "evidencia": "09-apertura-cierre-caja.xlsx:'Cierre de Caja':C54 evaluado a 0 con pycel"},
+  {"caso": "arqueo-descuadra: Z 1790 → DESCUADRE +10, CF ámbar", "ok": true, "evidencia": "misma celda evaluada a 10 (informe main.py, paso 6/7)"},
+  {"caso": "contador-honesto: N/A sale, «—» no sale", "ok": true, "evidencia": "01-apertura-cierre.xlsx:'Apertura Cocina':F46 → '27 de 27' con pycel"},
+  {"caso": "denominador-07 por fórmula", "ok": true, "evidencia": "07-plantilla-personalizable.xlsx:'Por Franja Horaria':F31 evaluado a 8"},
+  {"caso": "08 precargado sin huecos", "ok": true, "evidencia": "informe: '31 tareas, 0 sin Responsable u Hora'; confirmado a mano fila a fila en 08-apertura-cierre-negocio.xlsx"},
+  {"caso": "bio + versión 2.0 en 11/11 Instrucciones", "ok": true, "evidencia": "gate dv_y_bio 11/11, confirmado a mano en 01-apertura-cierre.xlsx:Instrucciones!B33 = 'Versión 2.0 · agosto 2026 · aichef.pro/kit-tareas-pizzeria · info@aichef.pro'"}
+ ],
+ "casos6_ok": 6,
+ "casos6_total": 6,
+
+ "b40_ok": true,
+ "b40_evidencia": [
+  "08-apertura-cierre-negocio.xlsx:Instrucciones!B36 = '▸ 08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.' y !B40 = '▸ Estás en 08-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DETALLE de cada zona está en 01-apertura-cierre.xlsx y el DINERO, en 09-apertura-cierre-caja.xlsx.' — las dos líneas dicen lo mismo, sin contradicción (antes B40 decía 'el marco del día está en 01-apertura-cierre.xlsx').",
+  "09-apertura-cierre-caja.xlsx:Instrucciones!B48 = '...es la CAJA...' y !B50 = '▸ Estás en 09-apertura-cierre-caja.xlsx: esta es la CAJA — el DINERO del día...; el marco del día está en 08-apertura-cierre-negocio.xlsx...' — coherente.",
+  "Barrido de las 11 Instrucciones (01 a BONUS-02): en TODOS los ficheros que NO son negocio/caja, la línea 'Estás en <fichero>' dice 'es una capa MÁS, no una repetición — el marco del día está en 08-apertura-cierre-negocio.xlsx [y 01-apertura-cierre.xlsx si aplica]' — sin contradecir nunca el bloque 'Se conecta con' que las precede (B22 en la mayoría: '08-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día').",
+  "T-04 verificado de paso: la línea de 01-apertura-cierre.xlsx en 'Se conecta con' dice '(cocina, sala)', derivada de los nombres reales de hoja del propio 01 ('Apertura Cocina'/'Apertura Sala'), no el hardcode '(cocina, sala, barra)' de versiones anteriores. La línea del negocio queda SIN paréntesis en los 11 ficheros ('es el MARCO del día.', sin '(accesos, luces, clima, terraza)'), como predijo motor-2.3.json para los 12 kits sin bandas de sección en el 08."
+ ],
+
+ "tpv_ok": true,
+ "tpv_evidencia": [
+  "09-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = 'Comprobar que el TPV está encendido y abrir turno de caja' (Responsable de caja, 09:30)",
+  "08-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = 'Encender TPV / POS / datáfono' (Encargado, 09:00)",
+  "gates.tpv_duplicado del informe: 1 sola tarea 'Encender...TPV' en TODO el producto (la del 08, etiquetada 'negocio (hito legítimo)'); 0 fuera del fichero de negocio",
+  "Secuencia horaria coherente: negocio enciende a las 09:00, caja lo comprueba a las 09:30 (después, no antes) — cumple §1.4 de la SPEC ('las horas del 09 van DESPUÉS de la apertura del local')"
+ ],
+
+ "frase_t08_ok": true,
+ "frase_t08_evidencia": "Frase nueva ('Cada fichero cubre un nivel: el de negocio marca el HITO...') encontrada en las 11/11 Instrucciones (01!B25 · 02!B25 · 03!B25 · 04!B25 · 05!B32 · 06!B25 · 07!B44 · 08!B39 · 09!B49 · BONUS-01!B15 · BONUS-02!B15). Frase vieja ('No se duplican: cada uno cubre un nivel') en 0/11.",
+
+ "recuento_gate": 373,
+ "tareas_total_manual": 373,
+ "ficheros_total": 11,
+
+ "motor_no_resueltos": [
+  "DOM-09 parcial (decisión f, umbral 80% de anotar_duplicados, sin cambio respecto a tanda 3): 01-apertura-cierre.xlsx:'Cierre Sala' banda 'DELIVERY Y CAJA' ratio 0.33 y 'Cierre Cocina' banda 'HORNO Y EQUIPOS' ratio 0.25 — ambas por debajo del umbral, NO anotadas, mientras 01:Instrucciones sigue con la frase T-08 que dice 'una es el hito y la otra el detalle' (matiz que SÍ cubre el caso, a diferencia de la frase vieja 'No se duplican'). No es una rotura: es el umbral que el orquestador decidió mantener (motor-2.2.json decisión f), documentado desde tanda 1. NO es 'alta' — critico-2.json lo puntúa 0 hallazgos_altos para este kit."
+ ],
+
+ "contenido_no_aplicado": [],
+ "nota_contenido": "Los 10 temas de contenido_pendiente de la tanda 1 (verificados con celda en kit-tareas-pizzeria-ver2.json) siguen aplicados: releído contenido_kit_tareas_pizzeria.py línea a línea (819 líneas) y confirmado que _f01/_f02/_f03/_f05/_f06/_bonus02 siguen intactos y no fueron tocados por el motor 2.3 (T-01/T-02/T-04/T-05/T-08 son cambios de FAMILIA en motor.py/main.py, no de contenido). Ancla por TEXTO confirmada viva: HIGIENE PERSONAL al inicio de 'Apertura Cocina' (fila 5), bloque ENCENDIDO campana→gas→horno (filas 11-19), CÁMARAS con lectura de temperatura (fila 21), hoja 'Trimestral y Anual' completa en 05 (15 tareas, 3 bloques 6/5/4), bloque 'AL CONFIRMAR LA RESERVA' en 06:'Navidad', 5 fechas nuevas en BONUS-02 (22 filas de fecha totales).",
+
+ "hallazgos_tanda3_reverificados": [
+  {
+   "hallazgo_original": "(media) gates.bandas_solapadas registraba CADA banda solapada DOS VECES (T-05 del catálogo transversal)",
+   "estado": "RESUELTO",
+   "evidencia": "gates.bandas_solapadas del informe de esta pasada trae EXACTAMENTE 2 entradas: 'Cierre Sala!A13'/'DELIVERY Y CAJA' ratio 0.33 y 'Cierre Cocina!A11'/'HORNO Y EQUIPOS' ratio 0.25 — una vez cada una, no duplicadas. En la tanda 3 el mismo verificador contó 4 (cada banda dos veces). Confirma la prueba de motor-2.3.json ('gates.bandas_solapadas trae AHORA 2 entradas... en la tanda 3 el verificador contó CUATRO')."
+  },
+  {
+   "hallazgo_original": "(baja) 'Verificar TPV/datáfono funcionando' + 'Preparar fondo de caja' en 01:'Apertura Sala' (11:15) leen como el mismo gesto que 08 (encender TPV, 09:00) y 09 (contar fondo, 09:30)",
+   "estado": "NO resuelto, sin cambio — sigue siendo el mismo texto en las mismas celdas (01-apertura-cierre.xlsx:'Apertura Sala'!B11/B12, filas 11-12)",
+   "juicio": "Fuera de alcance de T-01/T-02/T-04/T-05/T-08 (ninguna decisión aplicada en motor 2.3 tocaba esta variante, que ya se calificó de DEFENDIBLE en tanda 3: es la verificación de sala antes del servicio, no un duplicado de la apertura del negocio ni del arqueo de caja). No bloquea: severidad baja, oportunidad de copy, no de cálculo."
+  },
+  {
+   "hallazgo_original": "(baja) 06-eventos-festivos.xlsx:'Noche Fútbol' mezcla fútbol genérico con Super Bowl, poco reconocible en una pizzería de barrio española",
+   "estado": "NO resuelto, sin cambio — título en fila 1 sigue siendo 'Noche de Fútbol / Super Bowl — Pico de Delivery'",
+   "juicio": "Cosmético, fuera de alcance de la tanda 4 (cambios de FAMILIA, no de contenido de este hermano). No bloquea."
+  }
+ ],
+
+ "hallazgos_nuevos": [
+  {
+   "severidad": "baja",
+   "donde": "01-apertura-cierre.xlsx:'Apertura Sala'!B11-B12 (filas 11-12) vs 08-apertura-cierre-negocio.xlsx!B10 y 09-apertura-cierre-caja.xlsx!B9",
+   "hallazgo": "Persiste (no es nuevo, se re-confirma) el mismo hallazgo baja de tanda 3: 'Verificar TPV/datáfono funcionando' y 'Preparar fondo de caja' en Sala (11:15) leen como el mismo gesto que 08 y 09. Como T-02 sólo reescribió el TEXTO del 09 (no tocó el 01), el trío 08→01→09 sigue sin distinguirse explícitamente por escrito, aunque la secuencia horaria (09:00 → 11:15 → 09:30 del día siguiente, es decir Sala verifica DESPUÉS de que caja ya contó) es operativamente razonable."
+  }
+ ],
+
+ "otro_molde_no_roto": {
+  "comprobacion": "Los 11 xlsx abren sin excepción en modo fórmula y en modo data_only; barrido completo de todas las celdas sin '#REF!', '#NAME?', '#VALUE!', '#DIV' ni '#N/A' cacheados en ningún fichero.",
+  "protecciones": "31/31 hojas de checklist protegidas sin contraseña (incluye BONUS-02:'Calendario Anual', confirmando TEC-R2-14/§2.7 también en este hermano); las 11 hojas 'Instrucciones' SIN proteger, a propósito; insertRows=True en todas (serializa insertRows=\"0\" en OOXML = filas NO bloqueadas, coincide con el descartado DOM-R2-04 de la SPEC).",
+  "hoja_ajena_al_molde": "05-tareas-semanales-mensuales.xlsx:'Inventario Diario' sigue sin proteger y fuera de geometria() — es contenido previo a la v2.0, el motor no la toca a propósito, no es un defecto."
+ },
+
+ "tareas_total": 373,
+ "bloquea_real": false,
+
+ "motivo_bloquea_real": "Nada rompe: exit 0 en dry-run y censo (0 defectos), idempotencia 0, cero fórmulas rotas/#REF en los 11 xlsx, UNA sola lista de DV en las 31 hojas de checklist, 6/6 casos §6 con pycel, recuento del gate (373) = recuento manual con openpyxl (373, 0% de diferencia, coincidencia celda a celda). Las cinco decisiones de la tanda 4 (T-01 contradicción B36/B40, T-02 TPV negocio↔caja, T-04 paréntesis de áreas derivado, T-05 dedup de bandas_solapadas, T-08 frase nueva) están las CINCO resueltas y verificadas con celda en este hermano — ninguna pendiente. El único motor id no resuelto es DOM-09 'parcial', que no es una rotura sino un umbral de anotación (80%) mantenido por decisión explícita del orquestador desde tanda 1, y critico-2.json lo puntúa con 0 hallazgos_altos para este kit. Los 2 hallazgos de tanda 3 que siguen sin resolver son BAJA y estaban fuera del alcance de la tanda 4 (cambios de familia, no de contenido); el único hallazgo que reaparece en mi lectura sectorial es el mismo, sin agravarse. Ningún hallazgo nuevo de severidad alta.",
+
+ "notas": [
+  "Todo verificado sobre una copia DESECHABLE (CLAUDE_SCRATCHPAD=propio-verificador4, carpeta dryrun-kt/kit-tareas-pizzeria); astro-site/public/dl/kit-tareas-pizzeria/ NO se ha tocado ni leído en esta ronda.",
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 45.3 °C al inicio, un solo intérprete de Python en serie, sin builds ni Playwright.",
+  "El representante (kit-tareas) y los demás hermanos NO se han tocado; sólo se ha leído motor-2.3.json y critico-2.json donde documentan su estado.",
+  "contenido_kit_tareas_pizzeria.py releído íntegro (819 líneas): el docstring documenta explícitamente las 4 diferencias estructurales de este hermano frente al kit base (sin fila separadora entre bandas, hora ancla 09:00 no 07:00, Mantenimiento Mensual con 2 bloques no 3, sin pescado crudo → sin tarea de anisakis) y la lectura del fichero regenerado coincide con lo que el código promete.",
+  "El campo 'listas_dv_del_producto' del informe main.py imprime la lista envuelta en comillas tipográficas curvas en el log de consola (“…”) pero el valor real de dv.formula1 en el xlsx es comillas rectas '\"✓,—,N/A\"' (confirmado leyendo ws.data_validations directamente con openpyxl) — es un artefacto de cómo Python representa el string al imprimirlo, no una segunda lista real; sólo hay UNA lista de validación en todo el producto."
+ ]
+}

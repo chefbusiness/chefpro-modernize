@@ -1,0 +1,133 @@
+{
+ "rol": "verificador independiente · kit-tareas-restaurante-creativo · ver3 (post motor 2.3 / tanda 4)",
+ "fecha": "2026-08-23",
+ "modo": "SOLO dry-run · astro-site/public/dl/kit-tareas-restaurante-creativo/ NO tocado (confirmado con `git status --short` sobre dl/, sin diferencias) · sin KIT_TAREAS_APPLY · sin git add/commit/stash/clean",
+ "comando": "CLAUDE_SCRATCHPAD=/private/tmp/.../scratchpad/propio-ver3 python3 kit-tareas-v2_0/main.py --producto kit-tareas-restaurante-creativo --dry-run --json /private/tmp/.../scratchpad/kt-ver3/pase1.json (motor 2.3 + contenido, --solo por defecto)",
+ "1_exit_censo_idempotencia_dv_casos6": {
+  "dryrun_exit": 0,
+  "censo_fail_exit": 0,
+  "censo_independiente": "paso 7/7 de main.py: censo-entregables.py --fail sobre la copia — 13 ficheros censados (13 xlsx, 0 docx, 0 pdf), 0 defectos",
+  "idempotencia_2a_pasada": {
+   "diferencias": 0,
+   "evidencia": "paso 3/7 de main.py: 'diferencias 1.ª vs 2.ª pasada: 0'"
+  },
+  "listas_dv_del_producto": ["\"✓,—,N/A\""],
+  "listas_dv_evidencia": "gates.dv_y_bio: hojas_checklist=4 (10/11, molde ▸), hojas_p4=30 (01-09+BONUS-01/02) = 34 hojas de checklist en total, dv_incorrectas=[], listas_dv_del_producto=[\"✓,—,N/A\"], aviso_dv_mezcladas=[]. UNA sola lista en las 34 hojas",
+  "casos_6": [
+   {"caso": "Arqueo cuadra: fondo 150, efectivo 1.150, tarjetas 800, Z 1.800 → descuadre 0", "ok": true, "evidencia": "demostraciones_spec_6[arqueo-cuadra]: 11-apertura-cierre-caja.xlsx:'Cierre de Caja'!C54 = 0 (pycel, entradas Apertura!C23=150, denominaciones 2/1/1×500/100/50=1.150, C50=800, C53=1800)"},
+   {"caso": "Arqueo descuadra +10 (Z 1.790)", "ok": true, "evidencia": "demostraciones_spec_6[arqueo-descuadra]: 'Cierre de Caja'!C54 = 10 con Z=1.790, misma fórmula"},
+   {"caso": "Contador honesto: N/A sale del denominador, «—» NO", "ok": true, "evidencia": "demostraciones_spec_6[contador-honesto]: 10-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!D29/F29 = '15 de 15' con 18 tareas, 3 N/A, 15 ✓ — leído también a mano: F29='=COUNTIF(B5:B27,\"?*\")-COUNTIF(F5:F27,\"N/A\")' (sólo resta N/A, «—» sigue en el denominador, regla §8 vigente)"},
+   {"caso": "07 (equivalente = 09-plantilla-personalizable.xlsx) por fórmula → «x de N»", "ok": null, "evidencia": "NO APLICA por diseño, documentado igual que en ver2: las 3 hojas Plantilla A/B/C tienen ahora 3 filas de EJEMPLO cada una (antes vacías — ver 3_contenido_pendiente_tanda1 más abajo), pero las 3 van marcadas E='N/A' a propósito para no mover el recuento del producto. gate: recuento_por_hoja no lista 09 (0 tareas contables). Verificado abriendo la celda: 09:'Plantilla A'!E5/E6/E7='N/A', fórmula del contador intacta '=COUNTIF(B5:B29,\"?*\")-COUNTIF(B5:B29,\"Tarea\")-COUNTIF(E5:E29,\"N/A\")'"},
+   {"caso": "08/10 sin tareas sin Responsable/Hora", "ok": true, "evidencia": "gates.negocio_precargado: fichero=10-apertura-cierre-negocio.xlsx, tareas=33, huecos=[], firma_ok=true, huecos_firma=[]"},
+   {"caso": "Bio en TODAS las Instrucciones", "ok": true, "evidencia": "gates.dv_y_bio.instrucciones_con_bio=13, sin_bio=[], sin_hoja_instrucciones=[], version_desfasada=[]. Verificado a mano: 10:Instrucciones!B42 y 11:Instrucciones!B53 = 'Diseñado por John Guerrero — chef y consultor gastronómico desde 2010, en cocina desde los 17 años · johnguerrero.es'"},
+   {"caso": "Contador P4 recién impreso = «0 de N» (sin contar rótulos)", "ok": true, "evidencia": "demostraciones_spec_6[contador-p4-sin-rotulos]: 01-apertura-cierre.xlsx:'Apertura AM'!C47/E47 = '0.0 de 33.0' (33 tareas reales, 3 rótulos 'Tarea' repetidos, 0 marcadas); formula_vieja_habria_dicho='3 de 36'"}
+  ],
+  "casos6_resumen": "6 de 7 OK; el 7º (09-plantilla-personalizable por fórmula) sigue NO APLICA documentado — no es un fallo, mismo criterio que catering/hotel/heladería/chocolatería"
+ },
+ "2_motor_2.3_verificado_por_id": {
+  "T-01_marco_sin_contradiccion": {
+   "resuelto": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Instrucciones!B6 = 'Es el checklist del LOCAL COMPLETO... Úsalo como marco del día.' y !B38 = 'Estás en 10-apertura-cierre-negocio.xlsx: este ES el marco del día — el HITO de abrir y cerrar el local; el DINERO, en 11-apertura-cierre-caja.xlsx.' — las dos líneas concuerdan (antes, tanda 1/ver2, no se había medido la línea de cierre en este hermano). 11-apertura-cierre-caja.xlsx:Instrucciones!B49 = 'Estás en 11-apertura-cierre-caja.xlsx: esta es la CAJA... el marco del día está en 10-apertura-cierre-negocio.xlsx.' — coherente con !B46 ('10... es el MARCO del día'). Sin mención a un fichero de ÁREAS porque este kit no tiene ninguno en alcance (contexto: areas=None)"
+  },
+  "T-02_tpv_no_duplicado": {
+   "resuelto": true,
+   "evidencia": "11-apertura-cierre-caja.xlsx:'Apertura de Caja'!B9 = 'Comprobar que el TPV está encendido y abrir turno de caja' (antes: 'Encender TPV / POS'), hora D9=07:30 intacta. 10-apertura-cierre-negocio.xlsx:'Apertura del Negocio'!B10 = 'Encender TPV / POS / datáfono' (sin cambios), hora E10=07:00. gates.tpv_duplicado: 1 sola tarea 'Encender...TPV' en TODO el producto, la del 10, etiquetada 'negocio (hito legítimo)'; fuera_del_fichero_de_negocio=[]. Resuelve el hallazgo 4.1 de ver2 y el motivo de bloqueo citado en critico-2.json"
+  },
+  "T-03_recuento_gate_correcto": {
+   "resuelto": true,
+   "evidencia": "gates.recuento_tareas.total = 477 (molde ▸ 56 + molde P4 421), idéntico al recuento independiente de ver2 y al mío propio (ver bloque 6). Antes (motor 2.2 / SPEC pendiente) el gate sólo sumaba el molde ▸ y devolvía 56, dejando fuera 421 de 477 tareas (88%). Desglose por_hoja coincide con mi recuento manual celda a celda (ver 6_recuento_verificado_manual)"
+  },
+  "T-04_parentesis_no_inventado": {
+   "resuelto": true,
+   "evidencia": "10-apertura-cierre-negocio.xlsx:Instrucciones!B35 = '▸ 10-apertura-cierre-negocio.xlsx — checklist del LOCAL completo: es el MARCO del día.' SIN paréntesis de zonas (este kit no tiene fichero de áreas en alcance del motor, contexto areas=None) — correcto no inventar '(cocina, sala, barra)' que sería falso para este hermano"
+  },
+  "T-05_bandas_solapadas_sin_duplicar": {
+   "resuelto": "n/a (nada que deduplicar en este kit)",
+   "evidencia": "gates.bandas_solapadas = [] (lista vacía) — el motor de bandas por solape corre sobre el molde ▸ (10/11) y ninguna banda solapó en este hermano, así que no hay entradas duplicadas que verificar. No se puede confirmar la corrección de T-05 con este kit por falta de casos; sí se confirma que no introduce falsos duplicados"
+  },
+  "T-08_frase_nueva_y_vieja": {
+   "resuelto": "resuelto con matiz de alcance — ver frase_t08_ok abajo",
+   "evidencia": "grep de 'No se duplican' sobre las 13 hojas Instrucciones del producto: 0 apariciones. grep de 'Cada fichero cubre un nivel' (frase T-08): presente en 10:Instrucciones!B37 y 11:Instrucciones!B48 — los DOS únicos ficheros molde ▸ de este kit, los únicos que tienen el bloque 'Se conecta con'/'Orden de uso'. Los 11 ficheros restantes (01-09 + BONUS-01/02) son molde P4 con Instrucciones ESCRITAS POR EL MÓDULO DE CONTENIDO (contenido_kit_tareas_restaurante_creativo.py:_instrucciones), que nunca tuvieron ese bloque ni la frase vieja — verificado abriendo 01:Instrucciones íntegro (11 líneas B4-B22, ninguna de tipo 'Orden de uso'/'Se conecta con'). No hay nada que sustituir ahí porque nunca existió"
+  }
+ },
+ "3_contenido_pendiente_tanda1_y_tanda3": [
+  {"tema": "anisakis / pescado crudo (ALTA, tanda 1)", "aplicado": true, "donde": "02-mise-en-place-degustacion.xlsx:'Pre-elab Día'!B18", "verificado_abriendo_celda": true, "nota": "sin cambios desde ver2, sigue aplicado"},
+  {"tema": "registro de jornada del equipo (MEDIA, tanda 1)", "aplicado": true, "donde": "01-apertura-cierre.xlsx:'Cierre PM'!B32", "verificado_abriendo_celda": true},
+  {"tema": "vida útil de congelación por familia (BAJA, tanda 1)", "aplicado": true, "donde": "05-tareas-semanales-mensuales.xlsx:'Semanales'!B39:D50 (tabla al pie, fuera del rango del contador — confirmado, ver nota en bloque 6)", "verificado_abriendo_celda": true},
+  {"tema": "TPV duplicado 10↔11 (hallazgo nuevo tanda 3, MEDIA)", "aplicado": true, "donde": "ver T-02 arriba", "verificado_abriendo_celda": true, "nota": "RESUELTO en esta tanda por el motor, no por el módulo de contenido"},
+  {"tema": "solape 'AL CONFIRMAR LA RESERVA' vs tareas viejas en 07-chefs-table-eventos.xlsx (hallazgo nuevo tanda 3, MEDIA)", "aplicado": true, "donde": "07-chefs-table-eventos.xlsx:'Cenas Especiales'!B24 (antes 'Alérgenos y preferencias confirmados', ahora 'Cotejar en el pase los alérgenos confirmados por escrito con la comanda de cada comensal'), !B23 (antes 'Menú personalizado...', ahora 'Producir el menú ya cerrado con el cliente...'), !B27 (antes 'Presupuesto aprobado y facturación preparada', ahora 'Cerrar la facturación al terminar la cena...') y \"Chef's Table\"!B6 (antes 'Confirmar número de comensales y alérgenos', ahora 'Repasar con cocina el número final de comensales... (ver «Cenas Especiales» → «AL CONFIRMAR LA RESERVA»)')", "verificado_abriendo_celda": true, "nota": "el módulo de contenido incorporó 4 FUSIONES documentadas en su propio código (líneas 1059-1098) citando explícitamente 'FUSIÓN 1' a 'FUSIÓN 4' y 'verificador tanda 3'. Ya no hay dos controles para el mismo hecho: cada tarea vieja pasa a cubrir el momento del ciclo (servicio/producción/facturación) que la sección nueva de confirmación no cubre"}
+ ],
+ "contenido_no_aplicado": [
+  {
+   "tema": "landing kit-tareas-restaurante-creativo.ts línea 114 ('~40 tareas pre-rellenadas para fine dining')",
+   "aplicado": false,
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-restaurante-creativo.ts:114",
+   "motivo": "el recuento real del fichero 01 (al que se refiere esa tarjeta) es 55, no ~40, y si se refiere al kit completo son 477 (gate T-03 ya lo emite correctamente); ninguna cifra de la landing se ha tocado en esta tanda — es capa de PRODUCTO, fuera del alcance de motor 2.3 y de este xlsx. Mismo hallazgo que ver2 (no es nuevo), sigue sin resolver"
+  }
+ ],
+ "casos_verificados_abriendo_celda_real": 15,
+ "4_hallazgos_nuevos_jefe_de_cocina": [
+  {
+   "severidad": "media",
+   "donde": "01-apertura-cierre.xlsx:'Cierre PM'!B25 ('Cierre de caja y registro de ventas del día') vs el fichero completo 11-apertura-cierre-caja.xlsx (arqueo, recuento por denominaciones, Z del TPV, descuadre, registro mensual)",
+   "hallazgo": "A diferencia del TPV (que T-02 dejó como un hito ligero — 'Encender TPV/POS/datáfono' en 10 vs el detalle completo en 11), el cierre de caja aparece en 01 con una frase que describe la MISMA función que el fichero 11 entero: 'cierre de caja Y registro de ventas del día', sin remisión ('ver fichero de caja') ni matiz de que aquí es sólo el HITO. Un cliente que ya usa 11-apertura-cierre-caja.xlsx puede leer esto como una tarea redundante o, peor, hacer el arqueo dos veces con criterios distintos (uno en cada hoja). No lo detecta ningún gate: colapsar_duplicados no cruza 01↔11 (01 no es ni negocio ni caja para este kit) y T-02 sólo pica en el patrón 'Encender...TPV'. Sugerencia: reescribir a algo como 'Entregar turno de cierre a caja (ver 11-apertura-cierre-caja.xlsx)' o retirarla, ya que 11 ya cubre el proceso completo"
+  },
+  {
+   "severidad": "baja",
+   "donde": "astro-site/src/data/productos/tareas/kit-tareas-restaurante-creativo.ts:154 ('3 plantillas en blanco (por partida, por turno y por perfil)')",
+   "hallazgo": "Consecuencia directa del fix de DOM-07 en esta misma tanda: 09-plantilla-personalizable.xlsx ya NO se entrega en blanco — sus 3 hojas Plantilla A/B/C traen ahora 3 filas de ejemplo cada una (marcadas N/A para no mover el contador). La copy de la landing quedó desactualizada por un cambio bueno: describe un estado (vacío) que el producto ya no tiene. Severidad baja porque las filas de ejemplo siguen invitando a 'escribir encima o borrar', pero la palabra 'en blanco' ya no es literalmente cierta"
+  },
+  {
+   "severidad": "baja",
+   "donde": "07-chefs-table-eventos.xlsx:'Cenas Especiales'!B17 ('Precio por comensal y qué incluye... confirmado por escrito') vs !B27 ('Cerrar la facturación al terminar la cena: extras realmente consumidos, señal ya cobrada descontada e IVA aplicado')",
+   "hallazgo": "Solape MENOR ya señalado en ver2 como 'unitario vs global' y parcialmente atendido por FUSIÓN 3, pero sigue habiendo una pequeña zona gris: !B17 fija el precio POR COMENSAL al confirmar y !B27 cierra la factura con 'extras realmente consumidos' — si el evento no tiene extras (la mayoría de cenas privadas cerradas), !B27 es casi un trámite aritmético de !B17 × comensales. No es un duplicado del mismo control (uno pacta precio, el otro liquida importe final), así que no bloquea, pero un cocinero que lea las dos seguidas en la misma hoja lo notaría como 'ya lo hemos dicho', especialmente si el evento no llevó extras"
+  }
+ ],
+ "5_integridad_otros_moldes": {
+  "ficheros_verificados": 13,
+  "carga_openpyxl_data_only_false_y_true": "13/13 cargan sin excepción",
+  "errores_formula": "0 celdas con #REF!/#NAME?/#VALUE!/#DIV/0! en las 13 copias regeneradas (barrido propio, data_only=True, todas las hojas, todos los ficheros)",
+  "produccion_intacta": "confirmado con `git status --short astro-site/public/dl` sin salida — dl/kit-tareas-restaurante-creativo/ no se ha tocado; todo el trabajo en /private/tmp/.../scratchpad/propio-ver3/dryrun-kt/"
+ },
+ "6_recuento_verificado_manual": {
+  "metodologia": "Recuento propio, independiente del gate y de la fórmula: para cada hoja de checklist (excluida 'Instrucciones'), localizar la columna con cabecera literal 'Tarea' y la columna con cabecera '✓', y contar filas con texto no vacío en la columna Tarea, distinto de 'Tarea' y distinto de la fila del propio contador ('Tareas completadas:', identificable porque la celda de la columna ✓ en esa fila es una FÓRMULA, no un valor), excluyendo además las filas marcadas E='N/A'. Dos correcciones necesarias tras un primer barrido ingenuo (490): (a) la fila 'Tareas completadas:' vive en la MISMA columna B que las tareas (no en una columna de rótulo aparte) y su celda de fórmula no es 'N/A' ni vacía — sin excluirla por ser fórmula, se contaba una vez por cada hoja de molde P4 con contador propio (+13 en un primer intento, luego -3 al descartar el bug de la tabla del punto (b)); (b) 05-tareas-semanales-mensuales.xlsx:'Semanales' tiene, FUERA del rango que cuenta el contador (fórmula limitada a B6:B35), una tabla de 'VIDA ÚTIL ORIENTATIVA EN CONGELACIÓN' con cabecera en B40 ('Familia') y 10 filas de familias de producto (B41:B50): un barrido de columna completa sin respetar el rango del contador la cuenta como 11 tareas de más. Corregidas ambas trampas, el recuento manual da EXACTAMENTE 477, y coincide fichero a fichero y hoja a hoja con gates.recuento_tareas del propio informe",
+  "tareas_total_manual": 477,
+  "recuento_gate": 477,
+  "diferencia_pct": 0,
+  "por_fichero": {
+   "01-apertura-cierre.xlsx": 55,
+   "02-mise-en-place-degustacion.xlsx": 63,
+   "03-id-desarrollo-menu.xlsx": 50,
+   "04-tareas-brigada-creativa.xlsx": 60,
+   "05-tareas-semanales-mensuales.xlsx": 63,
+   "06-sumiller-maridajes.xlsx": 32,
+   "07-chefs-table-eventos.xlsx": 44,
+   "08-fotografia-storytelling.xlsx": 34,
+   "09-plantilla-personalizable.xlsx": 0,
+   "10-apertura-cierre-negocio.xlsx": 33,
+   "11-apertura-cierre-caja.xlsx": 23,
+   "BONUS-01-briefing-servicio.xlsx": 20,
+   "BONUS-02-calendario-anual.xlsx": 0
+  }
+ },
+ "b40_ok": true,
+ "tpv_ok": true,
+ "frase_t08_ok": true,
+ "frase_t08_nota_de_alcance": "la frase T-08 sólo existe en 10/11 (molde ▸, únicos ficheros con el bloque 'Se conecta con'); los otros 11 ficheros (molde P4) nunca tuvieron el bloque original ni la frase vieja, así que no hay nada que verificar ahí más allá de confirmar la AUSENCIA de 'No se duplican' (0/13, confirmado)",
+ "recuento_gate": 477,
+ "tareas_total_manual": 477,
+ "ficheros_total": 13,
+ "motor_no_resueltos": [
+  "DOM-07 (mejorado, no totalmente resuelto): 09-plantilla-personalizable.xlsx ya no se entrega en blanco (3 filas de ejemplo por hoja), pero las tres hojas Plantilla A/B/C siguen siendo IDÉNTICAS entre sí — el SPEC §2.3 pide diferenciación (franja horaria / área / perfil) para el '07' del representante, y aquí las tres plantillas tienen el mismo contenido de ejemplo. Es una mejora de contenido (módulo), no del motor: el motor sigue sin reconocer molde ▸ en este fichero, decisión ya documentada como fuera de alcance (SPEC §5)."
+ ],
+ "bloquea_real": false,
+ "motivo_bloquea_real": "Ninguno de los criterios de bloqueo se cumple: (1) el motor no rompe nada — exit 0, censo 0, idempotencia 0, 13/13 ficheros sin error de fórmula; (2) DV = una sola lista en las 34 hojas de checklist; (3) 6 de 7 casos §6 OK, el 7º es NO APLICA documentado (no un fallo); (4) b40_ok, tpv_ok y frase_t08_ok = true, con matiz de alcance documentado y no oculto; (5) recuento_gate y tareas_total_manual cuadran EXACTO (477 = 477, 0% de diferencia); (6) 0 celdas #REF!/#NAME? en los 13 ficheros; (7) los 3 hallazgos nuevos son de severidad MEDIA y BAJA, ninguno ALTA. El único hallazgo alto de tandas previas (anisakis) sigue aplicado y verificado. Los dos hallazgos MEDIA que motivaron el bloqueo en critico-2.json (TPV duplicado y solape de 'AL CONFIRMAR LA RESERVA') están RESUELTOS y verificados celda a celda en esta tanda.",
+ "notas": [
+  "Temperatura CPU vigilada con istats antes de cada arranque de python: 38,9-41,8 °C durante toda la verificación (máximo medido); nunca dos intérpretes a la vez; sin builds ni Playwright.",
+  "No se ha tocado astro-site/public/dl/**; confirmado con `git status --short` sin salida sobre ese directorio. Todo el trabajo en CLAUDE_SCRATCHPAD=.../scratchpad/propio-ver3 y kt-ver3. Sin git add/commit/stash/clean en ningún momento.",
+  "El JSON crudo del propio main.py (pase1.json) queda en el scratchpad (se perderá con el próximo reinicio); este informe en el repo es la fuente persistente.",
+  "El módulo de contenido contenido_kit_tareas_restaurante_creativo.py trae ahora en su propio docstring (líneas 90-111) una sección 'TODA TAREA NUEVA SE CRUZA CONTRA LAS VIEJAS DE SU HOJA' que documenta exactamente el hallazgo que yo mismo habría reportado en ver2 sobre 'AL CONFIRMAR LA RESERVA' — el orquestador/mantenedor ya lo leyó y lo corrigió citándome ('verificador tanda 3') antes de esta verificación. Confirmado que el código, no sólo el comentario, aplica las 4 fusiones.",
+  "gates.bandas_solapadas = [] en este kit (no hay bandas solapadas que deduplicar), así que T-05 no se puede confirmar POSITIVAMENTE con este hermano — sólo se confirma que no introduce falsos duplicados. La prueba real de T-05 vive en el informe de kit-tareas-pizzeria (motor-2.3.json), no en este.",
+  "Discrepancia sobre el criterio de conteo, para quien compare informes: mi primer barrido (naive, sin excluir la fila de fórmula del contador ni respetar el rango real del contador) dio 490, 13 por encima del gate. Documentado el detalle exacto en 6_recuento_verificado_manual para que no se lea como una alarma real — corregido, el número final es 477 = 477."
+ ]
+}

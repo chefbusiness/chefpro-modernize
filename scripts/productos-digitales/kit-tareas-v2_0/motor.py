@@ -139,6 +139,32 @@ RX_MENOS_RANGO = re.compile(
     r'(?<![\d\w])-(?=\s?\d+(?:[.,]\d+)?\s*(?:a|y|hasta|hacia)\s*'
     r'[−-]?\s?\d+(?:[.,]\d+)?\s?°C)')
 
+#: T-02 (tanda 4) — el mismo TPV se ENCENDÍA dos veces en el mismo kit: en el
+#: fichero de NEGOCIO («Encender TPV / POS / datáfono», 07:15) y en el de CAJA
+#: («Encender TPV / POS», 07:30), bajo una línea impresa que promete que los
+#: ficheros no se duplican. El hito de encender es del LOCAL; lo que hace el
+#: responsable de caja es comprobarlo y abrir su turno. Regla de FAMILIA: se
+#: aplica sobre el fichero de caja de cualquier kit, no en los módulos de
+#: contenido. La hora NO se toca (es el escalonado de `precargar_caja`).
+#: Sólo pica cuando la tarea entera es «encender el TPV»: la de pastelería
+#: («Encender el TPV y el datáfono; comprobar el rollo…», que además vive en el
+#: fichero de negocio) no se toca.
+RX_TPV_CAJA = re.compile(
+    r'(?i)^\s*encender\s+(?:el\s+)?tpv(?:\s*/\s*pos)?(?:\s*/\s*dat[áa]fono)?'
+    r'\s*$')
+TXT_TPV_CAJA = 'Comprobar que el TPV está encendido y abrir turno de caja'
+
+#: T-08 (tanda 4) — «No se duplican: cada uno cubre un nivel.» prometía más de
+#: lo que el motor garantiza: `anotar_duplicados` mide solapes reales del 25-40 %
+#: que el umbral del 80 % deja pasar. En vez de bajar el umbral (y borrar
+#: contenido de un hermano a ciegas) se dice la verdad, con el mismo literal en
+#: los 11 ficheros de todos los kits.
+FRASE_NIVELES = (
+    'Cada fichero cubre un nivel: el de negocio marca el HITO (encender, '
+    'abrir, cerrar), el de áreas detalla CÓMO se hace en cada zona y el de '
+    'caja lleva el DINERO. Si una tarea aparece en dos, es a propósito: una '
+    'es el hito y la otra el detalle.')
+
 #: R3-f — solape MEDIDO de cada banda contra el marco (08/09), se anote o no.
 #: El umbral del ≥80 % no lo alcanza ninguna banda de los kits auditados (el
 #: máximo medido es 40 %), así que sin esta lista la regla parecería aplicada
@@ -637,8 +663,13 @@ def contexto(carpeta, ficheros, abrir):
            # DOM-R2-17/COM-R2-13 — para que «Se conecta con» diga algo en los
            # 7 ficheros que no son ni el local, ni las áreas, ni la caja.
            'f_calendario': None, 'f_briefing': None, 'f_plantilla': None,
-           'f_eventos': None, 'f_periodico': None}
+           'f_eventos': None, 'f_periodico': None,
+           # T-04 — de aquí salen los paréntesis de «Se conecta con». Si el kit
+           # no permite derivarlos, quedan vacíos y la frase va SIN paréntesis:
+           # dark-kitchen no tiene terraza y su 01 sólo abre y cierra cocina.
+           'areas_nombres': [], 'negocio_bandas': []}
     horas, cierres, sufijos, kits = {}, {}, [], []
+    zonas, bandas_neg = {}, {}
     candidatos = {'caja': [], 'negocio': [], 'areas': [],
                   'areas2': []}
     papeles, textos = {}, {}
@@ -692,7 +723,16 @@ def contexto(carpeta, ficheros, abrir):
         if papel:
             candidatos[papel].append(fname)
             papeles[fname] = detalle
-        textos[fname] = tareas_del_libro(wb)
+        # T-02 — el marco se lee con la MISMA normalización que se le va a
+        # aplicar (`texto_tpv_caja` sólo en el fichero de caja): si no, la 1.ª
+        # pasada compararía «Encender TPV / POS» y la 2.ª «Comprobar que el
+        # TPV…», y `anotar_duplicados` daría dos resultados distintos.
+        textos[fname] = tareas_del_libro(wb, caja=(papel == 'caja'))
+        # T-04 — nombres reales de zona y bandas reales del negocio.
+        if papel in ('areas', 'areas2'):
+            zonas[fname] = _zonas_del_fichero(wb)
+        elif papel == 'negocio':
+            bandas_neg[fname] = _bandas_del_fichero(wb)
 
         # --- papeles secundarios, también por ESTRUCTURA -------------------
         if any(t == 'calendario' for t in recon.values()):
@@ -745,6 +785,8 @@ def contexto(carpeta, ficheros, abrir):
                         else None)
     ctx['f_areas'] = areas[0] if areas else None
     ctx['papeles'] = papeles
+    ctx['areas_nombres'] = zonas.get(ctx['f_areas'], [])
+    ctx['negocio_bandas'] = bandas_neg.get(ctx['f_negocio'], [])
 
     # La hora ancla y el literal de cierre NO pueden salir de los ficheros de
     # caja y de negocio: son justo los que el motor PRECARGA con esos valores.
@@ -774,13 +816,14 @@ def contexto(carpeta, ficheros, abrir):
     return ctx
 
 
-def tareas_del_libro(wb):
+def tareas_del_libro(wb, caja=False):
     """Todos los textos de la columna «Tarea» de un libro, en forma ESTABLE.
 
     «Estable» = ya pasados por las normalizaciones de texto del motor, que son
     idempotentes: así la 1.ª pasada (que los lee crudos) y la 2.ª (que los lee
     ya reescritos) comparan exactamente lo mismo y `anotar_duplicados` no puede
-    dar un resultado distinto en cada pasada.
+    dar un resultado distinto en cada pasada. `caja=True` añade la de T-02, que
+    sólo se aplica al fichero de caja.
     """
     fuera = []
     for ws in wb.worksheets:
@@ -790,8 +833,65 @@ def tareas_del_libro(wb):
         for r in range(g['hr'] + 1, (g.get('contador') or ws.max_row)):
             v = ws.cell(row=r, column=2).value
             if isinstance(v, str) and v.strip() and v.strip() != 'Tarea':
-                fuera.append(forma_estable(v))
+                fuera.append(forma_estable(texto_tpv_caja(v) if caja else v))
     return fuera
+
+
+#: T-04 — «Apertura Cocina» / «Cierre Sala» → «cocina», «sala». Si la hoja no
+#: lleva zona en el título («Apertura» a secas, «Producción»), no se deriva
+#: nada: el paréntesis se OMITE antes que inventarse una zona.
+RX_CICLO_ZONA = re.compile(
+    r'(?i)^\s*(?:pre[\s-]?apertura|post[\s-]?cierre|apertura|cierre)\s+'
+    r'(?:de\s+(?:la|el|los|las)\s+|del\s+|de\s+)?')
+
+
+def _zonas_del_fichero(wb):
+    """Nombres reales de zona del fichero de ÁREAS, en orden de hoja."""
+    fuera = []
+    for ws in wb.worksheets:
+        if not geometria(ws):
+            continue
+        nombre = RX_CICLO_ZONA.sub('', ws.title).strip()
+        if not nombre or nombre.lower() == ws.title.strip().lower():
+            continue                     # la hoja no nombra ninguna zona
+        clave = nombre.lower()
+        if clave not in fuera:
+            fuera.append(clave)
+    return fuera
+
+
+def _bandas_del_fichero(wb):
+    """Rótulos reales de las bandas de sección del fichero de NEGOCIO.
+
+    Verificado el 2026-08-23 en las 11 carpetas de la familia: los 08/18/10 se
+    entregan como listas PLANAS, sin ninguna banda. Por eso el paréntesis de
+    «(accesos, luces, clima, terraza)» no se puede derivar y se omite: era el
+    único sitio del kit que afirmaba que el local tiene terraza.
+    """
+    fuera = []
+    for ws in wb.worksheets:
+        g = geometria(ws)
+        if not g:
+            continue
+        for r in range(g['hr'] + 1, (g['contador'] or ws.max_row)):
+            if not es_fila_seccion(ws, r):
+                continue
+            v = ws.cell(row=r, column=1).value
+            if not isinstance(v, str):
+                continue
+            nombre = RX_NOTA_DUP.split(_nombre_seccion(v))[0].strip()
+            clave = nombre.lower().strip('→- ')
+            if clave and clave not in fuera:
+                fuera.append(clave)
+    return fuera
+
+
+def parentesis(items, maximo=4):
+    """« (a, b, c)» o cadena vacía si no hay nada que enumerar (T-04)."""
+    items = [i for i in (items or []) if i]
+    if not items:
+        return ''
+    return ' (' + ', '.join(items[:maximo]) + ')'
 
 
 def _tiene(wb, detector):
@@ -1131,6 +1231,37 @@ def texto_facturado(v):
     if not isinstance(v, str) or '=' not in v:
         return v
     return RX_FACTURADO.sub(TXT_FACTURADO, v)
+
+
+def texto_tpv_caja(v):
+    """T-02 — en el fichero de CAJA el TPV no se enciende: se COMPRUEBA.
+
+    Idempotente: el texto de salida no empieza por «Encender», así que la 2.ª
+    pasada no vuelve a picar. Se aplica SÓLO al fichero de caja (`aplicar`) y a
+    la lectura del marco de `tareas_del_libro`, para que `anotar_duplicados`
+    compare lo mismo en las dos pasadas.
+    """
+    if not isinstance(v, str) or not RX_TPV_CAJA.match(v):
+        return v
+    return TXT_TPV_CAJA
+
+
+def tpv_de_caja(ws, cambios):
+    """T-02 sobre una hoja de checklist del fichero de CAJA."""
+    g = geometria(ws)
+    if not g:
+        return 0
+    n = 0
+    for r in range(g['hr'] + 1, (g['contador'] or ws.max_row)):
+        cel = ws.cell(row=r, column=2)
+        nuevo = texto_tpv_caja(cel.value)
+        if nuevo != cel.value:
+            cambios.append(f'«{ws.title}»: B{r} «{cel.value}» → '
+                           f'«{TXT_TPV_CAJA}» (T-02: el hito de encender el '
+                           'TPV es del fichero de negocio; aquí se comprueba)')
+            cel.value = nuevo
+            n += 1
+    return n
 
 
 def texto_grados(v):
@@ -2398,21 +2529,29 @@ def _bloque_conecta(fname):
     neg, caja, areas = (CTX.get('f_negocio'), CTX.get('f_caja'),
                         CTX.get('f_areas'))
     orden = []
+    # T-04 — los paréntesis salen de la ESTRUCTURA del kit (bandas reales del
+    # negocio, nombres reales de hoja del fichero de áreas). Antes iban
+    # hardcodeados para los 12 kits y dark-kitchen imprimía «(accesos, luces,
+    # clima, terraza)» y «(cocina, sala, barra)» en sus 11 ficheros teniendo
+    # sólo «Apertura Cocina» y «Cierre Cocina». Sin datos → sin paréntesis.
     if neg:
         lineas.append(('b', f'{neg} — checklist del LOCAL completo: es el '
-                            'MARCO del día (accesos, luces, clima, terraza).'))
+                            'MARCO del día'
+                            + parentesis(CTX.get('negocio_bandas')) + '.'))
         orden.append('local')
     if areas:
-        lineas.append(('b', f'{areas} — el mismo día con el DETALLE por área '
-                            '(cocina, sala, barra).'))
+        lineas.append(('b', f'{areas} — el mismo día con el DETALLE por área'
+                            + parentesis(CTX.get('areas_nombres')) + '.'))
         orden.append('áreas')
     if caja:
         lineas.append(('b', f'{caja} — la CAJA: fondo, recuento por '
                             'denominaciones, Z del TPV y descuadre.'))
         orden.append('caja')
     if len(orden) > 1:
-        lineas.append(('b', 'Orden de uso: ' + ' → '.join(orden)
-                            + '. No se duplican: cada uno cubre un nivel.'))
+        # T-08 — la promesa impresa era más fuerte que lo que el motor
+        # garantiza (el umbral del 80 % deja pasar solapes del 25-40 %).
+        lineas.append(('b', 'Orden de uso: ' + ' → '.join(orden) + '. '
+                            + FRASE_NIVELES))
     # DOM-R2-17/COM-R2-13 — hasta aquí el bloque es el MISMO en los 11 ficheros
     # y sólo nombra tres. El lector de las semanales acababa leyendo «local →
     # áreas → caja. Estás en 05-…», que no es ninguna de las tres cosas, y el
@@ -2422,7 +2561,31 @@ def _bloque_conecta(fname):
     plant, evt, per = (CTX.get('f_plantilla'), CTX.get('f_eventos'),
                        CTX.get('f_periodico'))
     cola = None
-    if fname == cal and evt:
+    # T-01 — el fichero que ES el marco no puede remitir a OTRO como marco. En
+    # producción, dl/kit-tareas/08-apertura-cierre-negocio.xlsx:Instrucciones
+    # !B36 decía «08 … es el MARCO del día» y cuatro líneas más abajo !B40
+    # «Estás en 08 …: el marco del día está en 01-apertura-cierre.xlsx»: dos
+    # afirmaciones opuestas en la misma hoja impresa. La rama genérica excluía
+    # `fname` de los candidatos pero nunca comprobaba si `fname` ERA el marco.
+    if neg and fname == neg:
+        detalle = []
+        if areas:
+            detalle.append('el DETALLE de cada zona está en ' + areas)
+        if caja:
+            detalle.append('el DINERO, en ' + caja)
+        cola = ('Estás en ' + fname + ': este ES el marco del día — el HITO de '
+                'abrir y cerrar el local'
+                + ('; ' + ' y '.join(detalle) if detalle else '') + '.')
+    elif caja and fname == caja:
+        otros = []
+        if neg:
+            otros.append('el marco del día está en ' + neg)
+        if areas:
+            otros.append('el detalle por zona, en ' + areas)
+        cola = ('Estás en ' + fname + ': esta es la CAJA — el DINERO del día '
+                '(fondo, recuento, Z del TPV y descuadre)'
+                + ('; ' + ' y '.join(otros) if otros else '') + '.')
+    elif fname == cal and evt:
         cola = (f'Estás en {fname}: cada fecha de este calendario se ejecuta '
                 f'con los checklists de {evt}.')
     elif fname == brief:
@@ -2497,8 +2660,11 @@ def instrucciones_negocio(fname):
               'del negocio entero, no de cada área. Úsalo como marco del día.'),
     ]
     if areas:
-        bloques.append(('b', f'El detalle por área (cocina, sala, barra) va '
-                             f'en {areas}: no repitas el trabajo, cada '
+        # T-04 — mismo criterio que en «Se conecta con»: las zonas salen de los
+        # nombres de hoja del fichero de áreas, no de un literal fijo.
+        bloques.append(('b', 'El detalle por área'
+                             + parentesis(CTX.get('areas_nombres'))
+                             + f' va en {areas}: no repitas el trabajo, cada '
                              'fichero cubre un nivel distinto.'))
     bloques += [
         ('h', 'Cómo usar'),
@@ -2701,6 +2867,15 @@ def aplicar(wb, fname, cambios):
 
     es_caja = fname == CTX.get('f_caja')
     es_negocio = fname == CTX.get('f_negocio')
+
+    # 0) T-02 — el TPV se enciende UNA vez en el kit, y es en el fichero de
+    #    negocio. En el de caja la tarea pasa a «Comprobar que el TPV está
+    #    encendido y abrir turno de caja». Va antes que nada porque cambia el
+    #    TEXTO que luego miden `autoaltos` y `anotar_duplicados`.
+    if es_caja:
+        for titulo, tipo in recon.items():
+            if tipo == 'checklist':
+                tpv_de_caja(wb[titulo], cambios)
 
     # 1) cambios de COLUMNA (antes de medir geometrías)
     if es_caja:

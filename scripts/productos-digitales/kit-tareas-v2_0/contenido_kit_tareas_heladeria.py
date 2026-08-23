@@ -6,6 +6,10 @@ contenido_kit_tareas_heladeria.py — CONTENIDO propio de «kit-tareas-heladeria
 Fuente de los cambios: `auditorias/kit-tareas-hermanos/kit-tareas-heladeria-verif.json`
 campo `contenido_pendiente` (1 alta, 2 medias, 2 bajas) más los equivalentes de
 §3 del representante que aplican a una HELADERÍA ARTESANAL con obrador propio.
+`kit-tareas-heladeria-ver2.json` (tanda 3, campo `hallazgos_nuevos`) añade la
+errata «manteccar»/«Manteccar» (doble C, severidad media) que corrige
+`_arreglar_erratas` — sustitución por REGEX en CUALQUIER celda, no por ancla,
+porque la errata puede repetirse con distinta redacción alrededor.
 
 `main.py` lo carga sólo con `--producto kit-tareas-heladeria` (compone el nombre
 del módulo con el pid: `contenido_` + pid con guiones bajos), así que aquí se
@@ -96,6 +100,7 @@ ancla no aparece se levanta `AnclaPerdida`: mejor caerse que publicar medio kit.
 IDEMPOTENCIA: cada operación mira primero si su resultado ya está en el libro.
 """
 import copy
+import re
 
 import motor
 from motor import get_column_letter as L
@@ -332,6 +337,59 @@ def _normalizar_grados(ws, cambios):
         cambios.append(f'«{ws.title}»: {n} temperaturas normalizadas al signo '
                        'menos tipográfico y con espacio antes de la unidad '
                        '(DOM-R2-22, que el motor no aplica al molde P4)')
+    return n
+
+
+#: Hallazgo MEDIA de `kit-tareas-heladeria-ver2.json` (§`hallazgos_nuevos`):
+#: «manteccar»/«Manteccar» (doble C) repetido 4 veces (03!Tareas Diarias!B9,
+#: 04!Heladero-Obrador!B6 y B14, BONUS-01!Briefing Diario!B7) en vez de
+#: «mantecar»/«Mantecar». La forma correcta ya existe en el mismo kit
+#: (02!Mantecación!B32: «Mezcla base pasteurizada, sin mantecar»), lo que
+#: confirma que es errata y no una variante de redacción. «mantecc» no es
+#: sustituible por ancla exacta (`_sustituir`) porque el mismo error puede
+#: repetirse con texto distinto alrededor y en hojas que este módulo ni
+#: siquiera anota (04 y BONUS-01 están en `SOLO_GRADOS`, sin función propia):
+#: se corrige por REGEX insensible a mayúsculas en CUALQUIER celda del kit.
+RX_ERRATAS = [(re.compile(r'mantecc', re.IGNORECASE), 'mantec')]
+
+
+def texto_erratas(v):
+    """Corrige erratas conocidas del kit. Pura e idempotente: en la 2.ª pasada
+    ya no encuentra «mantecc» y devuelve `v` sin tocar.
+    """
+    if not isinstance(v, str) or v.startswith('='):    # texto, no fórmula
+        return v
+    for patt, raiz in RX_ERRATAS:
+        def _caso(m, raiz=raiz):
+            hallado = m.group(0)
+            if hallado.isupper():
+                return raiz.upper()
+            if hallado[0].isupper():
+                return raiz[0].upper() + raiz[1:]
+            return raiz
+        v = patt.sub(_caso, v)
+    return v
+
+
+def _arreglar_erratas(ws, cambios):
+    """Barre TODAS las celdas de texto de `ws` corrigiendo erratas conocidas.
+
+    Sustitución 1:1 de texto: no toca geometría, estilos ni fórmulas. A
+    diferencia de `_sustituir`, no necesita un ancla exacta —vale para
+    cualquier celda del kit, esté o no anotada en las listas de este módulo—.
+    """
+    n = 0
+    for row in ws.iter_rows():
+        for c in row:
+            nuevo = texto_erratas(c.value)
+            if nuevo != c.value:
+                c.value = nuevo
+                n += 1
+    if n:
+        cambios.append(f'«{ws.title}»: {n} errata(s) corregidas («mantecc» '
+                       'doble C → «mantec») — hallazgo MEDIA de '
+                       'kit-tareas-heladeria-ver2.json (hallazgos_nuevos); la '
+                       'forma correcta ya estaba en 02!Mantecación!B32')
     return n
 
 
@@ -1013,6 +1071,9 @@ def _f08(wb, cambios):
                        'objetivo y hueco para la lectura, igual que la de '
                        'apertura — hallazgo MEDIA de la verificación')
     motor.autoaltos(ws, cambios)
+
+    for hoja in wb.worksheets:
+        _arreglar_erratas(hoja, cambios)
     return False
 
 
@@ -1146,6 +1207,7 @@ def post(wb, fname, cambios):
     tocado = bool(fn(wb, cambios)) if fn else False
     for ws in wb.worksheets:
         _normalizar_grados(ws, cambios)
+        _arreglar_erratas(ws, cambios)
     # Contador honesto y formato condicional con la geometría NUEVA. Es
     # idempotente: en la 2.ª pasada `motor.aplicar` ya lo dejó así y esto no
     # encuentra nada que cambiar.
