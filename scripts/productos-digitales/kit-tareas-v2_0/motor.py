@@ -38,8 +38,10 @@ El bloque de caja (`_fondo_de_caja`, `ajustar_09`) se porta de las líneas
 1327-1520 del mismo fichero.
 """
 import copy
+import difflib
 import math
 import re
+import unicodedata
 
 from openpyxl.formatting.formatting import ConditionalFormattingList
 from openpyxl.formatting.rule import CellIsRule, FormulaRule
@@ -60,7 +62,22 @@ FMT_EUR = '#,##0.00 €'
 FMT_ENT = '0'
 
 CAB_MARCA = '✓ Completada'
+#: Molde P4 (catering, chocolatería, heladería, hotel, restaurante-creativo):
+#: la columna de marca se llama «✓» a secas y la cabecera se REPITE en cada
+#: sección. No entra por `geometria`; la trata `normalizar_p4`.
+CAB_P4 = '✓'
 DV_LISTA = '"✓,—,N/A"'          # ✓ , — , N/A   (§1.5 / TEC-08)
+#: DV-R3-C — el mensaje decía «Las marcadas N/A o — salen del total», que
+#: CONTRADICE la fórmula vigente desde DOM-R2-02 (sólo N/A sale). La fórmula
+#: era correcta; el texto que ve el cliente, no. Afecta a los 11 kits.
+DV_ERROR = ('Usa el desplegable: ✓, — o N/A. N/A = no aplica, sale del '
+            'total; — = no hecha, cuenta como pendiente.')
+DV_ERROR_TIT = 'Marca no válida'
+#: Listas de desplegable heredadas que el motor sustituye por `DV_LISTA` en
+#: TODO el kit (§R3-e): un mismo producto no puede entregar dos semánticas de
+#: conteo en dos ficheros distintos.
+def _es_lista_de_marca(f1):
+    return isinstance(f1, str) and f1.startswith('"✓') and f1 != DV_LISTA
 PIE_VIEJO = '© AI Chef Pro — aichef.pro'
 MARCA_OK = '✓'
 MARCA_NO = '—'
@@ -121,6 +138,12 @@ RX_MENOS = re.compile(r'(?<![\d\w])-(?=\s?\d+(?:[.,]\d+)?\s?°C)')
 RX_MENOS_RANGO = re.compile(
     r'(?<![\d\w])-(?=\s?\d+(?:[.,]\d+)?\s*(?:a|y|hasta|hacia)\s*'
     r'[−-]?\s?\d+(?:[.,]\d+)?\s?°C)')
+
+#: R3-f — solape MEDIDO de cada banda contra el marco (08/09), se anote o no.
+#: El umbral del ≥80 % no lo alcanza ninguna banda de los kits auditados (el
+#: máximo medido es 40 %), así que sin esta lista la regla parecería aplicada
+#: cuando en realidad no toca nada. `main.py` la vuelca en el informe.
+SOLAPES = []
 
 #: Registro de TODA fórmula escrita por el motor: `main.py` verifica una por una
 #: que quedó con valor cacheado tras `inject_cache.py`.
@@ -470,11 +493,37 @@ def fila_recuento(ws):
 
 
 def fila_calendario(ws):
-    for r in range(3, 8):
-        fila = tuple(ws.cell(row=r, column=c).value for c in range(1, 5))
-        if fila == CAB_CALENDARIO:
+    """Fila de cabecera de un calendario ▸, o None.
+
+    Hay DOS moldes en la familia y el segundo estaba fuera del motor sin que
+    nadie lo hubiera decidido: el BONUS-02 de bar es «# | Fecha | Evento |
+    Preparación Especial | Antelación | Notas» y quedaba como el único fichero
+    del kit sin bio, sin A4 y con el pie viejo (10/11 tocados frente a los 11
+    del resto). Lo que define la familia es la pareja «Antelación» + una
+    columna de EVENTO; los calendarios de catering («Fecha / Período | Tipo»)
+    y de hotel («Fecha / Período | Impacto») NO la tienen y siguen fuera, que
+    es justo lo que pide el alcance «sólo 08/09» de esos cinco kits.
+    """
+    for r in range(1, 9):
+        txt = [v.strip() for v in
+               (ws.cell(row=r, column=c).value
+                for c in range(1, min(ws.max_column, 10) + 1))
+               if isinstance(v, str) and v.strip()]
+        if 'Antelación' not in txt:
+            continue
+        if 'Fecha / Evento' in txt or 'Evento' in txt:
             return r
     return None
+
+
+def ncol_cabecera(ws, hr):
+    """Última columna con rótulo en la fila de cabecera `hr`."""
+    n = 0
+    for c in range(1, ws.max_column + 1):
+        v = ws.cell(row=hr, column=c).value
+        if isinstance(v, str) and v.strip():
+            n = c
+    return n or ws.max_column
 
 
 def es_briefing(ws):
@@ -529,6 +578,52 @@ def _mayoria(valores):
     return sorted(set(valores), key=lambda v: (-valores.count(v), v))[0]
 
 
+class KitAmbiguo(RuntimeError):
+    """Dos ficheros compiten por el mismo papel: se ABORTA, no se adivina."""
+
+
+def papel_del_fichero(wb):
+    """(papel, detalle) de un fichero del kit, SÓLO por estructura.
+
+    R3-a. Antes el papel salía de «¿cuántos checklists de apertura/cierre
+    tiene?» y en bar y en dark-kitchen el 01 (Apertura Barra / Cierre Barra)
+    tiene exactamente DOS, así que se llevaba el papel de NEGOCIO delante del
+    08 real: DOM-06 se aplicaba al fichero equivocado, el gate lo daba por
+    verde y en bar el nombre del kit crecía en cada pasada.
+
+    Lo que distingue al fichero del LOCAL no es el número de hojas sino su
+    molde: es el único con la columna «Notas» (8 columnas) en sus dos
+    checklists de apertura/cierre. El de CAJA es el del recuento por
+    denominaciones o el del registro mensual. El de ÁREAS, el que trae tres o
+    más ciclos sin «Notas» (y, si el kit no tiene ninguno así, el de dos: en
+    bar y dark-kitchen el detalle por área vive en un solo fichero de dos
+    hojas).
+    """
+    recon = hojas_reconocidas(wb)
+    if not recon:
+        return None, {}
+    ciclo = [t for t, k in recon.items() if k == 'checklist'
+             and (t.lower().startswith('apertura')
+                  or t.lower().startswith('cierre'))]
+    con_notas = []
+    for t in ciclo:
+        g = geometria(wb[t])
+        if g and 'Notas' in g['cols']:
+            con_notas.append(t)
+    detalle = {'ciclo': sorted(ciclo), 'con_notas': sorted(con_notas),
+               'recuento': _tiene(wb, fila_recuento),
+               'registro': _tiene(wb, fila_registro_mensual)}
+    if detalle['recuento'] or detalle['registro']:
+        return 'caja', detalle
+    if len(ciclo) == 2 and len(con_notas) == 2:
+        return 'negocio', detalle
+    if len(ciclo) >= 3:
+        return 'areas', detalle
+    if len(ciclo) == 2:
+        return 'areas2', detalle
+    return None, detalle
+
+
 def contexto(carpeta, ficheros, abrir):
     """Rellena CTX leyendo los ficheros del kit. `abrir(fname)` → Workbook.
 
@@ -544,6 +639,9 @@ def contexto(carpeta, ficheros, abrir):
            'f_calendario': None, 'f_briefing': None, 'f_plantilla': None,
            'f_eventos': None, 'f_periodico': None}
     horas, cierres, sufijos, kits = {}, {}, [], []
+    candidatos = {'caja': [], 'negocio': [], 'areas': [],
+                  'areas2': []}
+    papeles, textos = {}, {}
     for fname in ficheros:
         wb = abrir(fname)
         recon = hojas_reconocidas(wb)
@@ -587,19 +685,14 @@ def contexto(carpeta, ficheros, abrir):
         ctx['ficheros'].append(fname)
         if any(t == 'checklist' for t in recon.values()):
             ctx['con_checklist'].add(fname)
-        # --- papel del fichero, por ESTRUCTURA:
-        #   caja   = el que trae recuento por denominaciones o registro mensual
-        #   negocio= exactamente DOS checklists de apertura/cierre (el local)
-        #   áreas  = TRES o más (uno por área: cocina, sala, barra…)
-        ciclo = [t for t, k in recon.items() if k == 'checklist'
-                 and (t.lower().startswith('apertura')
-                      or t.lower().startswith('cierre'))]
-        if _tiene(wb, fila_recuento) or _tiene(wb, fila_registro_mensual):
-            ctx['f_caja'] = fname
-        elif len(ciclo) == 2 and not ctx['f_negocio']:
-            ctx['f_negocio'] = fname
-        elif len(ciclo) >= 3 and not ctx['f_areas']:
-            ctx['f_areas'] = fname
+        # --- papel del fichero, por ESTRUCTURA (R3-a). Se ACUMULAN los
+        #     candidatos y se decide al final: con `elif` sobre la marcha, el
+        #     orden alfabético del listado elegía por nosotros.
+        papel, detalle = papel_del_fichero(wb)
+        if papel:
+            candidatos[papel].append(fname)
+            papeles[fname] = detalle
+        textos[fname] = tareas_del_libro(wb)
 
         # --- papeles secundarios, también por ESTRUCTURA -------------------
         if any(t == 'calendario' for t in recon.values()):
@@ -634,6 +727,25 @@ def contexto(carpeta, ficheros, abrir):
             if ' — ' in cabeza:
                 kits.append(cabeza.rsplit(' — ', 1)[1].strip())
 
+    # --- resolución de papeles: uno y sólo uno por papel -----------------
+    for papel in ('caja', 'negocio'):
+        if len(candidatos[papel]) > 1:
+            raise KitAmbiguo(
+                f'DETECCIÓN AMBIGUA del fichero de {papel.upper()} en '
+                f'{carpeta}: {candidatos[papel]} cumplen la misma firma '
+                f'estructural ({ {f: papeles[f] for f in candidatos[papel]} }). '
+                'El motor NO adivina: revisa las cabeceras antes de seguir.')
+    areas = candidatos['areas'] or candidatos['areas2']
+    if len(areas) > 1:
+        raise KitAmbiguo(
+            f'DETECCIÓN AMBIGUA del fichero de ÁREAS en {carpeta}: {areas}. '
+            'El motor NO adivina.')
+    ctx['f_caja'] = candidatos['caja'][0] if candidatos['caja'] else None
+    ctx['f_negocio'] = (candidatos['negocio'][0] if candidatos['negocio']
+                        else None)
+    ctx['f_areas'] = areas[0] if areas else None
+    ctx['papeles'] = papeles
+
     # La hora ancla y el literal de cierre NO pueden salir de los ficheros de
     # caja y de negocio: son justo los que el motor PRECARGA con esos valores.
     # Si salieran de ahí, cada pasada leería lo que escribió la anterior y el
@@ -654,7 +766,32 @@ def contexto(carpeta, ficheros, abrir):
                   + 'AI Chef Pro · aichef.pro')
     CTX.clear()
     CTX.update(ctx)
+    # R3-f — los textos del MARCO (08 y 09) viven fuera de `ctx` a propósito:
+    # `main.py` vuelca el contexto entero en el informe y esto son cientos de
+    # frases que no aportan nada allí.
+    CTX['tareas_marco'] = {f: textos.get(f, [])
+                           for f in (ctx['f_negocio'], ctx['f_caja']) if f}
     return ctx
+
+
+def tareas_del_libro(wb):
+    """Todos los textos de la columna «Tarea» de un libro, en forma ESTABLE.
+
+    «Estable» = ya pasados por las normalizaciones de texto del motor, que son
+    idempotentes: así la 1.ª pasada (que los lee crudos) y la 2.ª (que los lee
+    ya reescritos) comparan exactamente lo mismo y `anotar_duplicados` no puede
+    dar un resultado distinto en cada pasada.
+    """
+    fuera = []
+    for ws in wb.worksheets:
+        g = geometria(ws) or geometria_p4(ws)
+        if not g:
+            continue
+        for r in range(g['hr'] + 1, (g.get('contador') or ws.max_row)):
+            v = ws.cell(row=r, column=2).value
+            if isinstance(v, str) and v.strip() and v.strip() != 'Tarea':
+                fuera.append(forma_estable(v))
+    return fuera
 
 
 def _tiene(wb, detector):
@@ -740,7 +877,6 @@ def normalizar_checklist(ws, cambios):
         for nombre, c in g['cols'].items():
             if nombre in EDITABLES:
                 _verde(ws.cell(row=r, column=c))
-        autoalto(ws, r, 2)
 
     # --- validación de datos ---------------------------------------------
     ws.data_validations.dataValidation = [
@@ -748,9 +884,7 @@ def normalizar_checklist(ws, cambios):
     dv = DataValidation(
         type='list', formula1=DV_LISTA, allow_blank=True,
         showErrorMessage=True, errorStyle='stop',
-        errorTitle='Marca no válida',
-        error='Usa el desplegable: ✓ (hecha), — (no hecha) o N/A (no aplica). '
-              'Las marcadas N/A o — salen del total.')
+        errorTitle=DV_ERROR_TIT, error=DV_ERROR)
     ws.add_data_validation(dv)
     for r in range(hr + 1, fin + 1):
         if es_fila_seccion(ws, r):
@@ -796,6 +930,33 @@ def autoalto(ws, fila, col):
         return False
     ws.row_dimensions[fila].height = None
     return True
+
+
+def autoaltos(ws, cambios):
+    """R3-d — la pasada de alturas va DESPUÉS de todos los cambios de texto.
+
+    Vivía dentro de `normalizar_checklist`, que corre ANTES de
+    `textos_de_tarea`: la 1.ª pasada medía el texto CORTO (original) y lo daba
+    por bueno, y la 2.ª medía el largo (ya con «(refrigeración 0-4 °C) — anota
+    la lectura: ____ °C») y le quitaba la altura fija. Una fila de diferencia
+    entre pasadas — heladería, 08-apertura-cierre-negocio.xlsx:'Apertura del
+    Negocio'!21 — y el gate de idempotencia en rojo sin nada realmente roto.
+    Midiendo al final, las dos pasadas leen el MISMO texto.
+    """
+    g = geometria(ws)
+    if not g:
+        return
+    n = 0
+    for r in range(g['hr'] + 1, g['ultima'] + 1):
+        if es_fila_seccion(ws, r):
+            continue
+        if not isinstance(ws.cell(row=r, column=1).value, int):
+            continue
+        if autoalto(ws, r, 2):
+            n += 1
+    if n:
+        cambios.append(f'«{ws.title}»: {n} filas sin altura fija (el texto no '
+                       'cabía y se imprimía recortado)')
 
 
 def _es_color(cel, color):
@@ -957,6 +1118,21 @@ SUST_APPCC = [
 ]
 
 
+#: DOM-01 (texto) — la fórmula del Cierre de Caja descuenta el fondo desde la
+#: v2.0, pero la TAREA que manda calcularlo seguía dictando la cuenta vieja.
+#: El operario que hace caso al texto y no a la hoja se lleva el fondo a las
+#: ventas todos los días.
+RX_FACTURADO = re.compile(
+    r'(?i)total\s+facturado\s*=\s*efectivo\s*\+\s*tarjetas\s*\+\s*otros')
+TXT_FACTURADO = 'Total facturado = efectivo contado − fondo + tarjetas + otros'
+
+
+def texto_facturado(v):
+    if not isinstance(v, str) or '=' not in v:
+        return v
+    return RX_FACTURADO.sub(TXT_FACTURADO, v)
+
+
 def texto_grados(v):
     """DOM-R2-22 — «-18°C» / «>65°C» → «−18 °C» / «>65 °C» en todo el corpus."""
     if not isinstance(v, str) or '°' not in v:
@@ -996,6 +1172,11 @@ def texto_temperatura(v):
     return v + obj + LECTURA
 
 
+def forma_estable(v):
+    """El texto tal y como quedará tras el motor (las tres son idempotentes)."""
+    return texto_temperatura(texto_grados(texto_appcc(texto_facturado(v))))
+
+
 def textos_de_tarea(ws, cambios, col_tarea=None):
     """§2.5 (Pack APPCC) en toda la hoja y §2.9 sólo en la columna «Tarea»."""
     n = 0
@@ -1003,7 +1184,7 @@ def textos_de_tarea(ws, cambios, col_tarea=None):
         for c in row:
             if not isinstance(c.value, str):
                 continue
-            nuevo = texto_grados(texto_appcc(c.value))
+            nuevo = texto_grados(texto_appcc(texto_facturado(c.value)))
             if col_tarea and c.column == col_tarea:
                 nuevo = texto_temperatura(nuevo)
             if nuevo != c.value:
@@ -1085,6 +1266,90 @@ def colapsar_duplicados(ws, cambios):
     renumerar(ws)
 
 
+# ==========================================================================
+# §2.5 (R3-f) — bandas que duplican el marco: se ANOTAN, no se borran
+# ==========================================================================
+#: `colapsar_duplicados` reconoce las bandas por su rótulo LITERAL, tomado del
+#: representante («CIERRE DE CAJA», «CIERRE GENERAL», «SISTEMAS»). En pizzería
+#: las secciones se llaman «SALA», «TERRAZA», «DELIVERY Y CAJA», «BAÑOS» y no
+#: colapsaba nada: quedaban duplicadas y CONTADAS mientras las Instrucciones
+#: prometían «No se duplican». Aquí se reconocen por lo que de verdad importa
+#: —que sus tareas ya estén en 08/09— y se resuelve con una NOTA en la banda:
+#: borrar tareas de un hermano sin leerlas una a una es lo que no se puede
+#: hacer a ciegas.
+NOTA_DUP = ' → estas tareas se detallan en {}'
+RX_NOTA_DUP = re.compile(r'→ estas tareas se detallan en ')
+UMBRAL_BANDA = 0.8          # ≥80 % de las tareas de la banda ya están en 08/09
+UMBRAL_JACCARD = 0.5
+UMBRAL_SECUENCIA = 0.75
+
+
+def _tokens(v):
+    t = unicodedata.normalize('NFD', (v or '').lower())
+    t = ''.join(ch for ch in t if unicodedata.category(ch) != 'Mn')
+    return [w for w in re.split(r'[^a-z0-9]+', t) if len(w) > 2]
+
+
+def _parecidas(a, b):
+    sa, sb = set(a), set(b)
+    if not sa or not sb:
+        return False
+    if len(sa & sb) / len(sa | sb) >= UMBRAL_JACCARD:
+        return True
+    return difflib.SequenceMatcher(
+        None, ' '.join(a), ' '.join(b)).ratio() >= UMBRAL_SECUENCIA
+
+
+def anotar_duplicados(ws, cambios):
+    """Nota «→ estas tareas se detallan en 08/09» en las bandas que duplican."""
+    marco = CTX.get('tareas_marco') or {}
+    if not marco:
+        return
+    tok_marco = {f: [_tokens(t) for t in txt] for f, txt in marco.items()}
+    g = geometria(ws)
+    if not g:
+        return
+    tope = g['contador'] or ws.max_row
+    bandas = [r for r in range(g['hr'] + 1, tope) if es_fila_seccion(ws, r)]
+    for i, banda in enumerate(bandas):
+        rotulo = ws.cell(row=banda, column=1).value
+        if not isinstance(rotulo, str) or RX_NOTA_DUP.search(rotulo):
+            continue
+        fin = bandas[i + 1] if i + 1 < len(bandas) else tope
+        tareas = [forma_estable(ws.cell(row=r, column=2).value)
+                  for r in range(banda + 1, fin)
+                  if isinstance(ws.cell(row=r, column=1).value, int)
+                  and isinstance(ws.cell(row=r, column=2).value, str)
+                  and ws.cell(row=r, column=2).value.strip()]
+        if len(tareas) < 2:
+            continue
+        destinos, casadas = [], 0
+        for t in tareas:
+            tt = _tokens(t)
+            de = [f for f, lista in sorted(tok_marco.items())
+                  if any(_parecidas(tt, m) for m in lista)]
+            if de:
+                casadas += 1
+                for f in de:
+                    if f not in destinos:
+                        destinos.append(f)
+        ratio = casadas / len(tareas)
+        if ratio >= 0.25:
+            SOLAPES.append({'hoja': f'{ws.title}!A{banda}',
+                            'banda': rotulo.strip(),
+                            'tareas': len(tareas), 'casadas': casadas,
+                            'ratio': round(ratio, 2),
+                            'destinos': sorted(destinos),
+                            'anotada': ratio >= UMBRAL_BANDA})
+        if ratio < UMBRAL_BANDA or not destinos:
+            continue
+        ws.cell(row=banda, column=1).value = rotulo.rstrip() + NOTA_DUP.format(
+            ' y '.join(sorted(destinos)))
+        cambios.append(f'«{ws.title}»: la banda «{rotulo.strip()}» remite a '
+                       f'{" y ".join(sorted(destinos))} '
+                       f'({casadas}/{len(tareas)} de sus tareas ya están allí)')
+
+
 def renumerar(ws):
     g = geometria(ws)
     if not g:
@@ -1096,6 +1361,204 @@ def renumerar(ws):
             n += 1
             cel.value = n
     return n
+
+
+# ==========================================================================
+# R3-e — molde P4: UNA sola regla por producto
+# ==========================================================================
+# Los kits de catering, chocolatería, heladería, hotel y restaurante-creativo
+# sólo tienen en alcance su 08/09 (18/19 y 10/11). El motor los dejaba con DOS
+# reglas dentro del mismo producto: 08/09 con «✓,—,N/A» y denominador honesto,
+# y los otros 9-17 ficheros con «✓,✗,—» y `COUNTIF` sin N/A. El cliente veía
+# dos desplegables y dos semánticas de conteo en la misma compra.
+#
+# Aquí se les aplica lo MÍNIMO que cierra esa brecha —desplegable, contador,
+# formato condicional y bio— SIN tocar su maquetación ni sus columnas: no se
+# reordena nada, no se insertan filas libres, no se repintan verdes, no se
+# reescriben las Instrucciones y no se protege ni se cambia la impresión.
+#
+# Y de paso corrige un contador que estaba MINTIENDO: el molde P4 repite la
+# fila de cabecera en cada sección, así que `COUNTIF(E6:E28,"✓")` contaba los
+# «✓» de los ROTULOS y `COUNTIF(B6:B28,"?*")` los «Tarea» de esos mismos
+# rótulos. Medido en heladería, 01-apertura-cierre.xlsx:'Apertura'!C29/E29: la
+# hoja recién impresa, sin marcar nada, anunciaba «2 de 19» cuando sus tareas
+# son 17.
+def geometria_p4(ws):
+    """Geometría de una hoja del molde P4, o None si no lo es."""
+    if geometria(ws):
+        return None                     # es del molde ▸: la trata el motor
+    hr = cols = None
+    for r in range(1, 9):
+        if ws.cell(row=r, column=2).value != 'Tarea':
+            continue
+        if ws.cell(row=r, column=1).value not in ('Nº', '#'):
+            continue
+        c_ = {}
+        for c in range(1, ws.max_column + 1):
+            v = ws.cell(row=r, column=c).value
+            if isinstance(v, str) and v.strip():
+                c_[v.strip()] = c
+        if CAB_P4 in c_ and CAB_MARCA not in c_:
+            hr, cols = r, c_
+            break
+    if hr is None:
+        return None
+    contador = None
+    for r in range(hr + 1, ws.max_row + 1):
+        for c in range(1, min(ws.max_column, 4) + 1):
+            v = ws.cell(row=r, column=c).value
+            if isinstance(v, str) and RX_CONTADOR.match(v):
+                contador = r
+                break
+        if contador:
+            break
+    pie = None
+    for r in range(hr + 1, ws.max_row + 1):
+        v = ws.cell(row=r, column=1).value
+        if isinstance(v, str) and (RX_PIE.match(v) or v.startswith('©')
+                                   or v.startswith('Firma')):
+            pie = r
+            break
+    nuevo = False
+    if contador is None:
+        # Las plantillas personalizables del molde P4 se entregan SIN contador
+        # ninguno: el cliente escribe sus tareas y no hay nada que le diga
+        # cuántas lleva. Se le pone en la fila libre que queda sobre el pie,
+        # con el denominador por FÓRMULA (§2.3), sin mover nada de sitio.
+        hueco = (pie - 1) if pie else ws.max_row
+        if hueco > hr and all(ws.cell(row=hueco, column=c).value is None
+                              for c in range(1, ws.max_column + 1)):
+            contador, nuevo = hueco, True
+        else:
+            return None
+    return {'hr': hr, 'cols': cols, 'marca': cols[CAB_P4],
+            'contador': contador, 'nuevo': nuevo,
+            'ncol': ncol_cabecera(ws, hr)}
+
+
+def _contador_p4(ws, g, cambios):
+    m = get_column_letter(g['marca'])
+    lo, hi = g['hr'] + 1, g['contador'] - 1
+    if hi < lo:
+        return
+    # La corrección de las cabeceras repetidas se hace por fórmula y no
+    # acotando bloques: así el cliente que escriba en una fila en blanco del
+    # medio sigue contando, que es lo que hacía el COUNTIF original.
+    num = (f'=COUNTIFS(B{lo}:B{hi},"?*",{m}{lo}:{m}{hi},"{MARCA_OK}")'
+           f'-COUNTIFS(B{lo}:B{hi},"Tarea",{m}{lo}:{m}{hi},"{MARCA_OK}")')
+    den = (f'=COUNTIF(B{lo}:B{hi},"?*")-COUNTIF(B{lo}:B{hi},"Tarea")'
+           f'-COUNTIF({m}{lo}:{m}{hi},"N/A")')
+    f = g['contador']
+    if g['nuevo']:
+        cel = ws.cell(row=f, column=2, value=ETIQ_CONTADOR)
+        cel.font = Font(bold=True, size=11)
+        cambios.append(f'«{ws.title}»: contador con denominador por fórmula '
+                       f'(no lo tenía) en la fila {f}')
+    antes = (ws.cell(row=f, column=g['marca'] - 2).value,
+             ws.cell(row=f, column=g['marca']).value)
+    ws.cell(row=f, column=g['marca'] - 2).value = num
+    ws.cell(row=f, column=g['marca'] - 1).value = 'de'
+    ws.cell(row=f, column=g['marca']).value = den
+    reg(ws, ws.cell(row=f, column=g['marca'] - 2).coordinate, num)
+    reg(ws, ws.cell(row=f, column=g['marca']).coordinate, den)
+    if antes != (num, den) and not g['nuevo']:
+        cambios.append(f'«{ws.title}»: contador honesto — el denominador ya no '
+                       'cuenta las cabeceras repetidas de cada sección y el '
+                       'numerador exige texto en «Tarea»')
+
+
+def _cf_p4(ws, g):
+    ws.conditional_formatting = ConditionalFormattingList()
+    lo, hi = g['hr'] + 1, g['contador'] - 1
+    if hi < lo:
+        return
+    ws.conditional_formatting.add(
+        f'A{lo}:{get_column_letter(g["ncol"])}{hi}',
+        FormulaRule(formula=[f'${get_column_letter(g["marca"])}{lo}'
+                             f'="{MARCA_OK}"'],
+                    fill=PatternFill('solid', start_color=VERDE_OK,
+                                     end_color=VERDE_OK)))
+
+
+def _dv_p4(ws, cambios):
+    n = 0
+    for dv in ws.data_validations.dataValidation:
+        if dv.type != 'list':
+            continue
+        if not (_es_lista_de_marca(dv.formula1) or dv.formula1 == DV_LISTA):
+            continue
+        if dv.formula1 != DV_LISTA:
+            n += 1
+        dv.formula1 = DV_LISTA
+        dv.showErrorMessage = True
+        dv.errorStyle = 'stop'
+        dv.errorTitle = DV_ERROR_TIT
+        dv.error = DV_ERROR
+    if n:
+        cambios.append(f'«{ws.title}»: desplegable {DV_LISTA} (venía con la '
+                       'lista vieja «✓,✗,—», que no tiene N/A y deja el '
+                       'producto con dos reglas de conteo)')
+    return n
+
+
+def bio_en_instrucciones(wb, cambios):
+    """§2.6 sin reescribir la hoja: bio anclada encima de la versión."""
+    if 'Instrucciones' not in wb.sheetnames:
+        return
+    ws = wb['Instrucciones']
+    col = 2 if any(isinstance(ws.cell(row=r, column=2).value, str)
+                   for r in range(1, min(ws.max_row, 12) + 1)) else 1
+    fila_v = tiene_bio = None
+    for r in range(1, ws.max_row + 1):
+        v = ws.cell(row=r, column=col).value
+        if not isinstance(v, str):
+            continue
+        if RX_BIO.search(v):
+            tiene_bio = r
+        if RX_VERSION.match(v):
+            fila_v = r
+    if fila_v is None:
+        return
+    if tiene_bio is None:
+        sig = fila_v + 1
+        libre = all(ws.cell(row=sig, column=c).value is None
+                    for c in range(1, max(ws.max_column, col) + 1))
+        if not libre:
+            insertar_filas(ws, fila_v)
+            fila_v += 1
+            sig = fila_v
+        estilo = copy.copy(ws.cell(row=fila_v, column=col)._style)
+        alto = ws.row_dimensions[fila_v].height
+        ws.cell(row=sig, column=col).value = None
+        ws.cell(row=sig, column=col)._style = estilo
+        ws.row_dimensions[sig].height = alto
+        ws.cell(row=fila_v, column=col).value = BIO
+        fila_v = sig
+        cambios.append('Instrucciones: línea de autoría anclada encima de la '
+                       'versión (§2.6)')
+    if ws.cell(row=fila_v, column=col).value != version_line():
+        ws.cell(row=fila_v, column=col).value = version_line()
+        cambios.append('Instrucciones: versión 2.0')
+
+
+def normalizar_p4(wb, cambios, saltar=(), bio=True):
+    """DV, contador honesto, CF y bio en las hojas del molde P4."""
+    tocadas, n_dv = [], 0
+    for ws in wb.worksheets:
+        if ws.title in saltar:
+            continue
+        n_dv += _dv_p4(ws, cambios)
+        if ws.title == 'Instrucciones':
+            continue
+        g = geometria_p4(ws)
+        if not g:
+            continue
+        _contador_p4(ws, g, cambios)
+        _cf_p4(ws, g)
+        tocadas.append(ws.title)
+    if bio and (tocadas or n_dv):
+        bio_en_instrucciones(wb, cambios)
+    return tocadas
 
 
 # ==========================================================================
@@ -1656,7 +2119,8 @@ def diferenciar_07(ws, cambios):
 def calendario(ws, cambios):
     hr = fila_calendario(ws)
     if hr is None:
-        return
+        return None
+    ncol = ncol_cabecera(ws, hr)
     libres = [r for r in range(hr + 1, ws.max_row + 1)
               if ws.cell(row=r, column=1).value == '(Tu fecha)']
     n = 0
@@ -1682,11 +2146,15 @@ def calendario(ws, cambios):
                and not es_fila_seccion(ws, r)]
     for i, r in enumerate(eventos):
         color = GRIS if i % 2 == 0 else 'FFFFFF'
-        for c in range(1, 5):
+        # El ancho sale de la CABECERA: el calendario de bar tiene 6 columnas
+        # («# | Fecha | Evento | Preparación Especial | Antelación | Notas») y
+        # con las 4 fijas de antes el rayado se cortaba a media tabla.
+        for c in range(1, ncol + 1):
             _relleno(ws.cell(row=r, column=c), color)
     if eventos:
         cambios.append(f'«{ws.title}»: rayado rehecho por índice en las '
                        f'{len(eventos)} fechas (DOM-R2-20)')
+    return (hr + 1, max(eventos + libres)) if (eventos or libres) else None
 
 
 def briefing(ws, cambios):
@@ -2075,6 +2543,11 @@ def aplicar(wb, fname, cambios):
     """§1 y §2 sobre un libro ya cargado. Devuelve las hojas tocadas."""
     recon = hojas_reconocidas(wb)
     if not recon:
+        # R3-e — el fichero no es del molde ▸, pero puede ser del molde P4
+        # (los 01-07 de catering, chocolatería, heladería, hotel y
+        # restaurante-creativo). Se le pasa la normalización mínima para que el
+        # producto no entregue dos desplegables y dos contadores distintos.
+        normalizar_p4(wb, cambios)
         return {}
 
     # DV y CF se vacían y se reconstruyen enteros (idempotencia)
@@ -2101,6 +2574,13 @@ def aplicar(wb, fname, cambios):
         for titulo in list(recon):
             if recon[titulo] == 'checklist':
                 colapsar_duplicados(wb[titulo], cambios)
+        # R3-f — y las bandas que duplican el marco sin llamarse como en el
+        # representante se ANOTAN (no se borran) en el fichero de ÁREAS, que es
+        # el «01» de la jerarquía.
+        if fname == CTX.get('f_areas'):
+            for titulo in list(recon):
+                if recon[titulo] == 'checklist':
+                    anotar_duplicados(wb[titulo], cambios)
 
     # 3) normalización de los checklists (§2.1/§2.2/§1.5)
     cuerpos = {}
@@ -2121,7 +2601,13 @@ def aplicar(wb, fname, cambios):
                 precargar_caja(ws, cambios)
             diferenciar_07(ws, cambios)
         elif tipo == 'calendario':
-            calendario(ws, cambios)
+            cuerpo = calendario(ws, cambios)
+            # Sin esto `proteger` sólo desbloquea las celdas verdes y el
+            # calendario de bar —que no tiene ninguna— se publicaba con la
+            # hoja entera bloqueada, en el fichero cuya propia portada dice
+            # «Añade las fechas locales de tu zona».
+            if cuerpo:
+                cuerpos[titulo] = cuerpo
         elif tipo == 'briefing':
             briefing(ws, cambios)
         textos_de_tarea(ws, cambios, 2 if tipo == 'checklist' else None)
@@ -2135,6 +2621,17 @@ def aplicar(wb, fname, cambios):
     for titulo, tipo in recon.items():
         if tipo == 'checklist':
             ajustar_cabecera_tiempo(wb[titulo], cambios)
+
+    # 4ter) alturas — R3-d: SIEMPRE después del último cambio de texto, o la
+    #   2.ª pasada mide un texto distinto del que midió la 1.ª.
+    for titulo, tipo in recon.items():
+        if tipo == 'checklist':
+            autoaltos(wb[titulo], cambios)
+
+    # 4quater) las hojas del libro que NO son del molde ▸ (un kit puede
+    #   mezclar: el 05 de cafetería lleva inventarios) pasan por la
+    #   normalización mínima del molde P4.
+    normalizar_p4(wb, cambios, saltar=set(recon), bio=False)
 
     # 5) el arqueo (§1.1) — después de las inserciones de fila del checklist
     if es_caja and 'Cierre de Caja' in wb.sheetnames:

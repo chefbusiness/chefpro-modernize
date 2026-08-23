@@ -389,7 +389,7 @@ def gate_dv_y_bio(carpeta, nombres):
     y el gate lo daba por verde porque sólo miraba lo que había tocado.
     """
     dv_mal, sin_bio, hojas, con_bio = [], [], 0, 0
-    listas_kit = {}
+    listas_kit, hojas_p4 = {}, 0
     for n in nombres:
         wb = openpyxl.load_workbook(os.path.join(carpeta, n))
         for ws in wb.worksheets:
@@ -397,6 +397,17 @@ def gate_dv_y_bio(carpeta, nombres):
                 if dv.type == 'list':
                     listas_kit.setdefault(dv.formula1, []).append(
                         f'{n}:{ws.title}')
+        # R3-e — las hojas del molde P4 también se auditan: son las que dejaban
+        # el producto con dos desplegables y dos semánticas de conteo.
+        for ws in wb.worksheets:
+            if not motor.geometria_p4(ws):
+                continue
+            hojas_p4 += 1
+            listas = {dv.formula1 for dv in ws.data_validations.dataValidation
+                      if dv.type == 'list'}
+            if listas and listas != {motor.DV_LISTA}:
+                dv_mal.append(f'{n}:{ws.title} (molde P4): DV = '
+                              f'{sorted(listas)} (esperada {motor.DV_LISTA})')
         if not motor.en_alcance(wb):
             continue
         for ws in wb.worksheets:
@@ -419,18 +430,39 @@ def gate_dv_y_bio(carpeta, nombres):
     if len(listas_kit) > 1:
         mezcla = [f'{f} en {len(h)} hojas (p.ej. {h[0]})'
                   for f, h in sorted(listas_kit.items())]
-    return {'hojas_checklist': hojas, 'dv_incorrectas': dv_mal,
+    return {'hojas_checklist': hojas, 'hojas_p4': hojas_p4,
+            'dv_incorrectas': dv_mal,
             'instrucciones_con_bio': con_bio, 'sin_bio': sin_bio,
             'listas_dv_del_producto': sorted(listas_kit),
             'aviso_dv_mezcladas': mezcla}
 
 
 def gate_precargado(carpeta):
-    """§6 — «08: ninguna tarea sin Responsable/Hora» (DOM-06/TEC-06)."""
+    """§6 — «08: ninguna tarea sin Responsable/Hora» (DOM-06/TEC-06).
+
+    R3-b — el gate AUDITA QUE ESTÁ AUDITANDO EL FICHERO CORRECTO. En bar y en
+    dark-kitchen daba verde («48 tareas, 0 huecos») sobre 01-apertura-cierre,
+    que ya venía con sus responsables puestos, mientras el 08 real salía con
+    D5:E22 vacías en las 18 tareas. Un gate que no comprueba su propio sujeto
+    no es un gate: por él pasó dark-kitchen con exit 0 estando roto.
+    """
     fname = motor.CTX.get('f_negocio')
     if not fname:
-        return {'fichero': None, 'tareas': 0, 'huecos': []}
+        return {'fichero': None, 'tareas': 0, 'huecos': [],
+                'firma_ok': False,
+                'huecos_firma': ['no se ha identificado el fichero de NEGOCIO '
+                                 'del kit: DOM-06 no se ha aplicado a nada']}
     wb = openpyxl.load_workbook(os.path.join(carpeta, fname))
+    papel, detalle = motor.papel_del_fichero(wb)
+    firma = []
+    if papel != 'negocio':
+        firma.append(f'{fname}: el gate está auditando un fichero que NO es el '
+                     f'de negocio (papel detectado: {papel}; {detalle})')
+    if len(detalle.get('con_notas', [])) != 2:
+        firma.append(f'{fname}: se esperaban 2 checklists de apertura/cierre '
+                     f'con columna «Notas» y hay '
+                     f'{len(detalle.get("con_notas", []))} '
+                     f'({detalle.get("con_notas")})')
     huecos, tareas = [], 0
     for ws in wb.worksheets:
         g = motor.geometria(ws)
@@ -447,7 +479,9 @@ def gate_precargado(carpeta):
                     huecos.append(f'{fname}:{ws.title}!'
                                   f'{motor.get_column_letter(c)}{r}: '
                                   f'{nombre} vacío')
-    return {'fichero': fname, 'tareas': tareas, 'huecos': huecos}
+    return {'fichero': fname, 'tareas': tareas, 'huecos': huecos,
+            'firma_ok': not firma, 'huecos_firma': firma,
+            'checklists_con_notas': detalle.get('con_notas')}
 
 
 def censo(carpeta):
@@ -534,9 +568,23 @@ def main():
 
     nombres = ficheros_de(carpeta)
     log(f'\n== 1/7 · contexto del kit ({len(nombres)} xlsx) ==')
-    ctx = motor.contexto(
-        carpeta, nombres,
-        lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)))
+    try:
+        ctx = motor.contexto(
+            carpeta, nombres,
+            lambda f: openpyxl.load_workbook(os.path.join(carpeta, f)))
+    except motor.KitAmbiguo as e:
+        # R3-a — el motor NO adivina el papel de un fichero. Se aborta con el
+        # informe escrito, para que el orquestador vea por qué.
+        log('\nABORTADO — ' + str(e))
+        if args.json:
+            os.makedirs(os.path.dirname(os.path.abspath(args.json)),
+                        exist_ok=True)
+            with open(args.json, 'w', encoding='utf-8') as fh:
+                json.dump({'producto': pid, 'version': '2.0', 'spec': SPEC,
+                           'modo': 'dry-run' if args.dry_run else 'produccion',
+                           'abortado': str(e), 'fallos': [str(e)], 'exit': 2},
+                          fh, ensure_ascii=False, indent=1)
+        return 2
     ctx['producto'] = pid
     motor.CTX['producto'] = pid
     log(f"  kit «{ctx['kit']}» · en alcance {len(ctx['ficheros'])}/"
@@ -545,12 +593,33 @@ def main():
         f"cierre «{ctx['literal_cierre']}»")
 
     log(f'\n== 2/7 · post-proceso ==')
+    motor.SOLAPES.clear()
     informe_ficheros, registros = [], {}
     for fname in nombres:
         registros[fname] = procesar(carpeta, fname, etapas, contenido,
                                     informe_ficheros)
         f = informe_ficheros[-1]
-        log(f"  {fname}: {'FUERA DE ALCANCE (intacto)' if not f['en_alcance'] else str(len(f['cambios'])) + ' cambios, ' + str(f['formulas_nuevas']) + ' fórmulas'}")
+        if f['en_alcance']:
+            estado_txt = (f"{len(f['cambios'])} cambios, "
+                          f"{f['formulas_nuevas']} fórmulas")
+        elif f['guardado']:
+            # R3-e — «fuera de alcance» ya no significa «intacto»: el molde P4
+            # recibe DV, contador, CF y bio sin entrar en el molde ▸.
+            estado_txt = (f"fuera del molde ▸ · molde P4: "
+                          f"{len(f['cambios'])} cambios, "
+                          f"{f['formulas_nuevas']} fórmulas")
+        else:
+            estado_txt = 'FUERA DE ALCANCE (intacto)'
+        log(f'  {fname}: {estado_txt}')
+
+    # R3-f — se fotografía ANTES de la 2.ª pasada, que volvería a acumular.
+    solapes = sorted(motor.SOLAPES, key=lambda d: -d['ratio'])
+    if solapes:
+        log('  solape medido banda↔marco (umbral de anotación '
+            f'{motor.UMBRAL_BANDA:.0%}): '
+            + ' · '.join(f"{d['hoja']} {d['ratio']:.0%}"
+                         + ('' if d['anotada'] else ' (NO anotada)')
+                         for d in solapes[:6]))
 
     idem = {'ejecutada': False}
     if not args.sin_idempotencia:
@@ -610,8 +679,12 @@ def main():
         log('    AVISO TEC-R2-08 · el producto tiene MÁS de una lista de '
             'desplegable: ' + m)
     prec = gate_precargado(carpeta)
-    log(f"  08 precargado: {prec['tareas']} tareas, {len(prec['huecos'])} sin "
+    log(f"  08 precargado: fichero {prec['fichero']} "
+        f"(firma de negocio {'OK' if prec.get('firma_ok') else 'NO VÁLIDA'}) · "
+        f"{prec['tareas']} tareas, {len(prec['huecos'])} sin "
         'Responsable u Hora')
+    for h in prec.get('huecos_firma', []):
+        log('    ' + h)
     for h in prec['huecos'][:6]:
         log('    ' + h)
     rec = gate_recuento(carpeta, nombres)
@@ -630,6 +703,7 @@ def main():
     fallos += [f"§6 {c['caso']}: esperaba {c['esperado']!r}, dio "
                f"{c['obtenido']!r}" for c in demostraciones if not c['ok']]
     fallos += gates['dv_incorrectas']
+    fallos += prec.get('huecos_firma', [])
     fallos += prec['huecos'][:10]
     fallos += [f'sin bio en Instrucciones: {n}' for n in gates['sin_bio']
                if n in ctx['ficheros']]
@@ -657,6 +731,7 @@ def main():
             'dv_y_bio': gates,
             'negocio_precargado': prec,
             'recuento_tareas': rec,
+            'bandas_solapadas': solapes,
             'censo_entregables': cen,
         },
         'demostraciones_spec_6': demostraciones,
