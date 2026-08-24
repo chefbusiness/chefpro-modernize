@@ -491,6 +491,36 @@ def _ficha(ws, ejemplo=None):
     _merges(ws, merges)
 
 
+def _tendencia(fila):
+    """RD-05/RT-10 — los dos últimos trimestres INFORMADOS, con huecos.
+
+    La versión anterior usaba `INDEX($B5:$E5, COUNT($B5:$E5))`, y ahí está el
+    error: `COUNT` cuenta CUÁNTAS celdas tienen número e `INDEX` toma una
+    POSICIÓN. Sólo coinciden si los trimestres se rellenan de izquierda a
+    derecha sin saltarse ninguno — que es justo lo contrario del caso que el
+    hallazgo original quería cubrir: quien evalúa dos veces al año deja huecos
+    en medio.
+
+    Medido en la copia dry-run: con `Q1=4,0 · Q2 vacío · Q3=4,5`, `COUNT` da 2,
+    `INDEX(…,2)` apunta a Q2 —vacío, que vale 0— y la hoja escribía «↓ Baja»
+    sobre una mejora de medio punto. Y con `Q1=5 · Q2=1 · Q3 vacío · Q4=4`,
+    «↓ Baja» sobre una subida de tres puntos.
+
+    Se sustituye por dos cascadas de `IF` sobre E, D, C y B —el último
+    informado y el anterior a ése—, que no dependen de la posición y usan sólo
+    comparaciones, verificadas con pycel. Nada de `LOOKUP`, que la SPEC no
+    tiene medido.
+    """
+    ult = ('IF($E{f}<>"",$E{f},IF($D{f}<>"",$D{f},'
+           'IF($C{f}<>"",$C{f},$B{f})))'.format(f=fila))
+    pen = ('IF($E{f}<>"",IF($D{f}<>"",$D{f},IF($C{f}<>"",$C{f},$B{f})),'
+           'IF($D{f}<>"",IF($C{f}<>"",$C{f},$B{f}),'
+           'IF($C{f}<>"",$B{f},"")))'.format(f=fila))
+    return ('=IF(COUNT($B{f}:$E{f})<2,"",IF({u}>{p},"↑ Mejora",'
+            'IF({u}<{p},"↓ Baja","→ Estable")))'
+            .format(f=fila, u=ult, p=pen))
+
+
 def _n06_historico(wb, cambios):
     """§4 · TEC-27/COM-21/DOM-30 — la tendencia compara los DOS ÚLTIMOS
     trimestres informados.
@@ -512,17 +542,7 @@ def _n06_historico(wb, cambios):
     for fila in range(r0, r1 + 1):
         _f(ws, 'F{}'.format(fila),
            motor.guarda_media('$B{f}:$E{f}'.format(f=fila)), motor.FMT_DEC2)
-        # `INDEX(rango, COUNT(rango))` es el último trimestre INFORMADO y
-        # `COUNT-1` el anterior. Sustituye al `LOOKUP(9^9;…)` del R1 —medido en
-        # pycel, no hace falta— y exige que los trimestres se rellenen de
-        # izquierda a derecha, que es como se rellena un año.
-        _f(ws, 'G{}'.format(fila),
-           '=IF(COUNT($B{f}:$E{f})<2,"",'
-           'IF(INDEX($B{f}:$E{f},COUNT($B{f}:$E{f}))'
-           '>INDEX($B{f}:$E{f},COUNT($B{f}:$E{f})-1),"↑ Mejora",'
-           'IF(INDEX($B{f}:$E{f},COUNT($B{f}:$E{f}))'
-           '<INDEX($B{f}:$E{f},COUNT($B{f}:$E{f})-1),"↓ Baja",'
-           '"→ Estable")))'.format(f=fila))
+        _f(ws, 'G{}'.format(fila), _tendencia(fila))
         for c in range(2, 6):
             ws.cell(row=fila, column=c).number_format = motor.FMT_DEC1
             ws.cell(row=fila, column=c).alignment = CENTRO
@@ -531,9 +551,10 @@ def _n06_historico(wb, cambios):
     nota0 = r1 + 2
     _nota(ws, nota0,
           '▸ Vuelca aquí la PUNTUACIÓN MEDIA (celda C22) de cada ficha: una '
-          'columna por trimestre y una fila por empleado. Rellena los '
-          'trimestres de izquierda a derecha — la Tendencia compara los dos '
-          'últimos informados, así que un hueco en medio la desplaza.', 7, 30)
+          'columna por trimestre y una fila por empleado. La Tendencia '
+          'compara los DOS ÚLTIMOS trimestres informados aunque haya huecos '
+          'en medio: si evalúas dos veces al año, deja los trimestres que no '
+          'toques en blanco y la comparación sigue siendo la correcta.', 7, 30)
     _nota(ws, nota0 + 1,
           '▸ «Media Anual» se queda en blanco mientras no haya ni una nota: '
           'un empleado sin evaluar no es un empleado con un cero.', 7, 15)
@@ -544,9 +565,11 @@ def _n06_historico(wb, cambios):
     merges.append(_pie(ws, nota0 + 4, 7))
     _merges(ws, merges)
     cambios.append('06:Histórico!G5:G34: la tendencia compara los DOS últimos '
-                   'trimestres informados (antes sólo Q4 contra Q3, en blanco '
-                   'nueve meses al año) y la hoja pasa de 15 a 30 empleados '
-                   '(TEC-27/COM-21/DOM-32)')
+                   'trimestres INFORMADOS aunque falte uno intermedio — el '
+                   'INDEX/COUNT anterior confundía posición con recuento y '
+                   'devolvía el veredicto contrario (Q1=4,0 · Q2 vacío · '
+                   'Q3=4,5 daba «↓ Baja»); la hoja pasa de 15 a 30 empleados '
+                   '(TEC-27/COM-21/DOM-32/RD-05/RT-10)')
 
 
 def _n06_instrucciones(wb, cambios):
@@ -662,7 +685,10 @@ COLS_07 = [
     ('D', 'Tipo Contrato', 16, None),
     ('E', 'Puesto', 20, None),
     ('F', 'Grupo Profesional (convenio)', 20, None),
-    ('G', 'Jornada', 12, None),
+    # RT-20 · la DV de esta columna sólo admite «Completa» y «Parcial»,
+    # y heredaba el '0.00' del bloque numérico vecino: un formato que
+    # contradice lo que se puede escribir en la celda.
+    ('G', 'Jornada', 12, 'General'),
     ('H', 'Horas Semanales', 12, None),
     ('I', 'Convenio Aplicable', 26, None),
     ('J', 'NAF / Nº Seguridad Social', 20, '@'),
@@ -697,10 +723,17 @@ VENC_HDR = 6
 VENC_R0, VENC_R1 = 7, 6 + CAP                 # 7..36
 ANCHO_VENC = 1 + 2 * len(VENCIMIENTOS)        # 9 → A..I
 
-#: 18 años en días. Es el umbral del art. 6 ET: por debajo, ni trabajo nocturno
-#: ni horas extraordinarias. La cifra va en la fórmula y no en una celda a
-#: propósito: no es un parámetro del negocio, es la mayoría de edad.
-DIAS_18 = 6570
+#: RD-15/RT-07 · La mayoría de edad NO se cuenta en días. La versión anterior
+#: usaba `DIAS_18 = 6570` (18 × 365) y el aviso se APAGABA entre cuatro y cinco
+#: días ANTES del 18.º cumpleaños, porque entre 2008 y 2026 hay cinco bisiestos
+#: (2008, 2012, 2016, 2020, 2024): 18 años reales son 6.574-6.575 días. Medido:
+#: nacido el 28/08/2008 —aún menor el 24/08/2026— llevaba 6.570 días y el aviso
+#: ya no salía. Justo en esos días sigue viva la prohibición de nocturnidad y
+#: de horas extra del art. 6 ET.
+#:
+#: Se sustituye por la fecha exacta del cumpleaños con `DATE(YEAR+18, MONTH,
+#: DAY)`, las tres verificadas con pycel en la cabecera de la SPEC.
+FECHA_18 = 'DATE(YEAR($C{f})+18,MONTH($C{f}),DAY($C{f}))'
 
 
 def _n07_plantilla(wb, cambios):
@@ -723,9 +756,9 @@ def _n07_plantilla(wb, cambios):
         # por esto (DOM-24): sin ella, ni el cuadrante ni nadie puede saber que
         # a esa persona no se le puede poner un turno de noche.
         _f(ws, '{}{}'.format(COL_AVISO, fila),
-           '=IF($C{f}="","",IF(TODAY()-$C{f}<{d},'
+           '=IF($C{f}="","",IF({d}>TODAY(),'
            '"⚠ MENOR DE EDAD: sin nocturnidad ni horas extra (art. 6 ET)",'
-           '""))'.format(f=fila, d=DIAS_18))
+           '""))'.format(f=fila, d=FECHA_18.format(f=fila)))
         ws['{}{}'.format(COL_AVISO, fila)].alignment = Alignment(
             wrap_text=True, vertical='center')
 
@@ -754,6 +787,20 @@ def _n07_plantilla(wb, cambios):
                for i in range(4)]
     merges.append(_pie(ws, nota0 + 5, ANCHO_07))
     _merges(ws, merges)
+
+    # RD-06 · el autofiltro venía de la v1.1 con `A4:O34` mientras la tabla
+    # crecía a 22 columnas: ordenar desde el desplegable reordenaba A:O y
+    # dejaba P:V clavadas — salario, teléfono, email, contacto de emergencia,
+    # talla, taquilla y el aviso de menor de edad cruzados con OTRA persona, en
+    # el fichero más sensible del kit. Y `Instrucciones!B6` invita
+    # expresamente a usarlo. Se fija a la última columna real; el gate
+    # `gate_autofiltro` de `main.py` impide que vuelva a quedarse corto.
+    ws.auto_filter.ref = 'A4:{}{}'.format(get_column_letter(ANCHO_07), R1_07)
+    cambios.append('07:Plantilla: auto_filter A4:O34 → A4:{}{} — abarca por '
+                   'fin las 22 columnas; ordenar por el desplegable ya no '
+                   'cruza salario, teléfono, contacto de emergencia y aviso '
+                   'de menor de edad con la persona equivocada (RD-06)'
+                   .format(get_column_letter(ANCHO_07), R1_07))
     cambios.append('07:Plantilla!A4:V4: 22 columnas — entran NAF, fecha de '
                    'nacimiento, convenio aplicable, grupo profesional, fin de '
                    'periodo de prueba, caducidad del carnet de manipulador y '
@@ -1056,6 +1103,12 @@ def _bonus_ratios(wb, cambios):
             cel = ws.cell(row=r, column=1 + j, value=valor)
             if j >= 1:
                 cel.alignment = CENTRO
+            # RT-20 · B:D («22-28», «—») llevaban '0' y H («28-33%») '0.0%',
+            # heredados del bloque numérico vecino: tres columnas de TEXTO con
+            # el formato del tipo contrario. Basta con que alguien teclee un
+            # número donde hay un rango para verlo como porcentaje.
+            if j in (1, 2, 3, 7):
+                cel.number_format = 'General'
         ws.cell(row=r, column=1).alignment = Alignment(vertical='center')
     # 'Ratios por Tipo' está en `motor.SIN_VERDE_AUTO`: el verde de esta hoja
     # se marca a mano y no lo pisa nadie.

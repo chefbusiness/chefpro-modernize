@@ -153,7 +153,12 @@ PIE = '© 2026 AI Chef Pro · aichef.pro'
 #: planifica el turno, con las MISMAS letras que el 05.
 CODIGOS_JORNADA = [
     ('M', 'Mañana',    '07:00', '15:00',  8, 'FFF9C4'),
-    ('T', 'Tarde',     '15:00', '23:00',  8, 'BBDEFB'),
+    # RC-18 · T y V compartían BBDEFB en la MISMA leyenda del 01 (fila 3:
+    # `C3='T=Tarde'` y `H3='V=Vacaciones'`, relleno idéntico) mientras
+    # `Instrucciones!B8` promete que «cada código lleva su color». El azul
+    # BBDEFB se reserva para V —es el que usa el calendario del 05— y la Tarde
+    # pasa al cian B2EBF2, libre en las dos paletas.
+    ('T', 'Tarde',     '15:00', '23:00',  8, 'B2EBF2'),
     ('N', 'Noche',     '23:00', '07:00',  8, 'E1BEE7'),
     ('P', 'Partido',   '10:00', '23:00',  9, 'FFE0B2'),
     ('D', 'Doble',     '07:00', '23:00', 16, 'FFCDD2'),
@@ -661,9 +666,12 @@ PRESENTACION = {
     ],
     '03-coste-laboral-mensual.xlsx': [
         ('Nóminas', 'A5', '$4:$4', None, True, 1),
-        # hoja corta: el freeze deja a la vista el título y el bloque de
-        # parámetros mientras se baja a la tabla de ratios de referencia.
-        ('Ratio Coste Laboral', 'A14', '$13:$13', None, False, 1),
+        # RT-22 · el freeze estaba en A14 e inmovilizaba 13 de las 22 filas de
+        # la hoja: la zona desplazable se quedaba en las nueve de la tabla de
+        # referencia. Se baja a A13 (sólo la cabecera de esa tabla queda fija),
+        # que es lo que hacen 'Previsión' (A4 sobre 26 filas) y 'Nóminas' (A5
+        # sobre 37).
+        ('Ratio Coste Laboral', 'A13', '$13:$13', None, False, 1),
         ('Previsión por Servicio', 'A4', None, None, False, 1),
     ],
     '04-onboarding-nuevo-empleado.xlsx': [
@@ -1770,6 +1778,36 @@ def aplicar_verde(wb, fname, informe):
 # ==========================================================================
 # §1.6 — protección sin contraseña
 # ==========================================================================
+def _propagar_merges(ws):
+    """RT-23 — propaga el RELLENO del ancla a las celdas NO ancla de cada
+    región combinada, antes de bloquear.
+
+    Una `MergedCell` nace con `styleId = 0`, y el estilo 0 del libro acaba
+    siendo el primer `Protection` que se escribe — que en este kit es
+    `locked=False`. Resultado medido en la copia dry-run: 55 celdas
+    desbloqueadas SIN verde (23 en `06!'Ficha Evaluación'` —`D4:D8`,
+    `C27:D29`, `C32:D34`, `C37:D39`—, otras 23 en `06!'Ficha (ejemplo
+    relleno)'` y 9 en `BONUS-01!'Briefing'!B61:D63`), que rompe la invariante
+    de familia «en una hoja protegida sólo las verdes están desbloqueadas».
+
+    En Excel no se veía porque la región combinada se pinta con el estilo del
+    ancla; en los bytes sí, y basta con que alguien deshaga una combinación
+    para que aparezcan celdas editables sin marcar. Propagando el relleno del
+    ancla, el bucle de `proteger` clasifica bien las dos mitades: verde →
+    desbloqueada, resto → bloqueada.
+    """
+    for rango in list(ws.merged_cells.ranges):
+        ancla = ws.cell(row=rango.min_row, column=rango.min_col)
+        relleno = _relleno(ancla)
+        if not relleno:
+            continue
+        for fila in range(rango.min_row, rango.max_row + 1):
+            for col in range(rango.min_col, rango.max_col + 1):
+                if fila == rango.min_row and col == rango.min_col:
+                    continue
+                ws.cell(row=fila, column=col).fill = copy.copy(ancla.fill)
+
+
 def proteger(ws, informe):
     """Protección SIN contraseña: se desbloquean SÓLO las celdas verdes.
 
@@ -1777,6 +1815,7 @@ def proteger(ws, informe):
     entera es peor que dejarla abierta — el cliente no podría escribir nada y
     creería que el fichero está roto.
     """
+    _propagar_merges(ws)
     verdes = 0
     for row in ws.iter_rows():
         for c in row:

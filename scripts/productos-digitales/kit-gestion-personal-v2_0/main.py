@@ -59,6 +59,7 @@ import importlib
 import json
 import logging
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -308,6 +309,114 @@ def gate_errores_cacheados(carpeta, nombres):
         malos = motor.cacheados_con_error(path)
         if malos:
             fuera[n] = malos
+    return fuera
+
+
+#: RT-21 · §1.5 pide cuatro cosas del fichero recién descargado —«ninguna hoja
+#: puede enseñar un `#¡DIV/0!`, un veredicto, un porcentaje ni un contador
+#: distinto de cero»— y sólo la primera estaba implementada. Las otras tres no
+#: se pueden exigir en absoluto: §3 obliga a que el BONUS-02 se entregue con su
+#: caso por defecto RESUELTO (7 FTE, 31,3 %, «🟢 EXCELENTE») y §4 a que el 06
+#: traiga una «Ficha (ejemplo relleno)». Así que la regla se escribe con LISTA
+#: BLANCA: lo deliberado se enumera aquí, celda a celda, y cualquier otro
+#: veredicto o porcentaje cacheado suspende.
+CACHE_DELIBERADO = {
+    'BONUS-02-calculadora-plantilla-optima.xlsx': [
+        ('Calculadora', None),          # la calculadora ES el caso resuelto
+        ('Ratios por Tipo', None),      # tabla de referencia, todo constante
+    ],
+    '03-coste-laboral-mensual.xlsx': [
+        ('Previsión por Servicio', None),   # §7-bis.6: dimensionado de ejemplo
+    ],
+    '06-evaluacion-desempeno.xlsx': [
+        ('Ficha (ejemplo relleno)', None),  # §7-bis.5: existe para verse llena
+    ],
+}
+
+#: Palabras que delatan un VEREDICTO cacheado (los mismos vocabularios del
+#: semáforo, en su forma textual).
+RX_VEREDICTO = re.compile(
+    r'EXCELENTE|CORRECTO|ACCIÓN CORRECTIVA|VIGILAR|EXCEDE|dentro|'
+    r'cerca del límite|CONFORME|FUERA DE RANGO|MEJORA|Baja|Estable|'
+    r'INFRADIMENSIONADA|SOBREDIMENSIONADA|DEFICIENTE|MEJORABLE|BUENO|'
+    r'VENCIDO|URGENTE|EXCESO|TEMP\. ALTA')
+
+
+def _deliberado(fichero, hoja):
+    for h, _celdas in CACHE_DELIBERADO.get(fichero, []):
+        if h == hoja:
+            return True
+    return False
+
+
+def gate_veredictos_cacheados(carpeta, nombres):
+    """RT-21 — ningún veredicto ni porcentaje cacheado fuera de la lista blanca.
+
+    Se mira el valor CACHEADO (`data_only=True`) de las celdas que son FÓRMULA
+    en el libro con fórmulas: una constante escrita a mano (un rótulo, un
+    umbral de la tabla de referencia) no es un veredicto que la hoja «ya haya
+    emitido», es contenido.
+    """
+    fuera = {}
+    for n in nombres:
+        path = os.path.join(carpeta, n)
+        if not os.path.isfile(path):
+            continue
+        wf = openpyxl.load_workbook(path)
+        wv = openpyxl.load_workbook(path, data_only=True)
+        malas = []
+        for ws in wf.worksheets:
+            if _deliberado(n, ws.title):
+                continue
+            wsv = wv[ws.title]
+            for row in ws.iter_rows():
+                for c in row:
+                    if not (isinstance(c.value, str)
+                            and c.value.startswith('=')):
+                        continue
+                    v = wsv[c.coordinate].value
+                    if isinstance(v, str) and RX_VEREDICTO.search(v):
+                        malas.append('{}!{} = «{}» cacheado'
+                                     .format(ws.title, c.coordinate, v[:48]))
+        if malas:
+            fuera[n] = malas
+    return fuera
+
+
+def gate_autofiltro(carpeta, nombres):
+    """RD-06 — el autofiltro tiene que abarcar hasta la ÚLTIMA columna.
+
+    El 07 creció de 15 a 22 columnas y `auto_filter.ref` se quedó en `A4:O34`:
+    ordenar desde el desplegable reordenaba `A:O` y dejaba `P:V` clavadas —
+    salario, teléfono, email, contacto de emergencia, talla, taquilla y el
+    aviso de menor de edad cruzados con la persona equivocada, en el fichero
+    más sensible del kit. El defecto se hereda en cualquier kit al que se le
+    añadan columnas, así que el gate va aquí y no en el grupo.
+    """
+    fuera = {}
+    for n in nombres:
+        path = os.path.join(carpeta, n)
+        if not os.path.isfile(path):
+            continue
+        wb = openpyxl.load_workbook(path)
+        malas = []
+        for ws in wb.worksheets:
+            ref = ws.auto_filter.ref
+            if not ref:
+                continue
+            fin = str(ref).split(':')[-1]
+            m = re.match(r'\$?([A-Z]+)\$?(\d+)', fin)
+            if not m:
+                continue
+            ultima = openpyxl.utils.column_index_from_string(m.group(1))
+            if ultima < ws.max_column:
+                malas.append('{}: auto_filter {} llega a la columna {} y la '
+                             'hoja tiene {} — ordenar dejaría {} columnas '
+                             'clavadas'
+                             .format(ws.title, ref, m.group(1),
+                                     ws.max_column, ws.max_column - ultima))
+        if malas:
+            fuera[n] = malas
     return fuera
 
 
@@ -669,8 +778,23 @@ def demo_leyenda(carpeta):
     return fuera
 
 
+#: RT-12 · única excepción legítima a «toda hoja va protegida»: las
+#: `Instrucciones` no tienen ni una celda verde y `motor.proteger` las deja
+#: abiertas a propósito (dejarlas bloqueadas enteras haría creer que el fichero
+#: está roto). Se declara AQUÍ, en lista blanca explícita, para que el gate
+#: pueda suspender cualquier OTRA hoja sin proteger.
+HOJAS_SIN_PROTEGER_OK = frozenset(['Instrucciones'])
+
+
 def demo_proteccion(carpeta, nombres):
-    """§1.6 — hoja a hoja: protegida sin contraseña y con las verdes abiertas."""
+    """§1.6 — hoja a hoja: protegida sin contraseña y con las verdes abiertas.
+
+    RT-12 · el gate recogía `protegida` y no lo usaba en ninguna condición: una
+    hoja con `protection.sheet=False` pasaba en verde. Y sólo contaba las
+    verdes ABIERTAS, así que tampoco veía el caso contrario —una celda
+    desbloqueada SIN verde—, que es justo lo que dejaban las 55 celdas no ancla
+    de las regiones combinadas (RT-23). Ahora se comprueban las tres cosas.
+    """
     fuera = []
     for n in nombres:
         path = os.path.join(carpeta, n)
@@ -678,19 +802,38 @@ def demo_proteccion(carpeta, nombres):
             continue
         wb = openpyxl.load_workbook(path)
         for ws in wb.worksheets:
-            verdes = sum(1 for row in ws.iter_rows() for c in row
-                         if motor.es_verde(c))
-            abiertas = sum(1 for row in ws.iter_rows() for c in row
-                           if motor.es_verde(c) and not c.protection.locked)
+            verdes = abiertas = sueltas = 0
+            for row in ws.iter_rows():
+                for c in row:
+                    verde = motor.es_verde(c)
+                    libre = not c.protection.locked
+                    if verde:
+                        verdes += 1
+                        if libre:
+                            abiertas += 1
+                    elif libre:
+                        sueltas += 1
             fuera.append({'ref': '{}:{}'.format(n, ws.title),
                           'protegida': bool(ws.protection.sheet),
                           'con_password': bool(ws.protection.password),
-                          'verdes': verdes, 'verdes_desbloqueadas': abiertas})
+                          'verdes': verdes, 'verdes_desbloqueadas': abiertas,
+                          'desbloqueadas_sin_verde': sueltas,
+                          'excepcion_documentada':
+                              ws.title in HOJAS_SIN_PROTEGER_OK})
     fallos = ['{}: {} verdes y sólo {} desbloqueadas'
               .format(d['ref'], d['verdes'], d['verdes_desbloqueadas'])
               for d in fuera if d['verdes'] != d['verdes_desbloqueadas']]
     fallos += ['{}: protegida CON contraseña'.format(d['ref'])
                for d in fuera if d['con_password']]
+    fallos += ['{}: hoja SIN proteger y no está en la lista blanca ({})'
+               .format(d['ref'], ', '.join(sorted(HOJAS_SIN_PROTEGER_OK)))
+               for d in fuera
+               if not d['protegida'] and not d['excepcion_documentada']]
+    fallos += ['{}: {} celdas desbloqueadas SIN verde (la invariante de '
+               'familia es que sólo las verdes se editen)'
+               .format(d['ref'], d['desbloqueadas_sin_verde'])
+               for d in fuera
+               if d['protegida'] and d['desbloqueadas_sin_verde']]
     return {'hojas': fuera, 'fallos': fallos}
 
 
@@ -812,6 +955,20 @@ def main():
     for n, lineas in errores.items():
         for l in lineas[:4]:
             log('    {}: {}'.format(n, l))
+    veredictos = gate_veredictos_cacheados(carpeta, nombres)
+    n_ver = sum(len(v) for v in veredictos.values())
+    log('  veredictos cacheados fuera de la lista blanca (RT-21): {}'
+        .format(n_ver))
+    for n, lineas in veredictos.items():
+        for l in lineas[:4]:
+            log('    {}: {}'.format(n, l))
+    filtros = gate_autofiltro(carpeta, nombres)
+    n_filt = sum(len(v) for v in filtros.values())
+    log('  autofiltros que no llegan a la última columna (RD-06): {}'
+        .format(n_filt))
+    for n, lineas in filtros.items():
+        for l in lineas[:4]:
+            log('    {}: {}'.format(n, l))
 
     log('\n== 5/7 · censo-entregables --fail ==')
     cen = censo(carpeta)
@@ -891,6 +1048,17 @@ def main():
         pendientes_contenido.append(
             'gate de pestañas: {} ficheros citan pestañas inexistentes'
             .format(len(pest)))
+    if n_ver:
+        pendientes_contenido.append(
+            '{} veredictos/porcentajes cacheados fuera de la lista blanca '
+            '(RT-21): {}'
+            .format(n_ver, '; '.join('{}:{}'.format(n, v[0])
+                                     for n, v in list(veredictos.items())[:3])))
+    if n_filt:
+        pendientes_contenido.append(
+            '{} autofiltros que no abarcan toda la tabla (RD-06): {}'
+            .format(n_filt, '; '.join('{}:{}'.format(n, v[0])
+                                      for n, v in list(filtros.items())[:3])))
     fallidas = sorted(k for k, v in demos.items()
                       if isinstance(v, dict) and v.get('ok') is False)
     if fallidas:
@@ -932,6 +1100,8 @@ def main():
                              for n, s, rc in cache],
             'data_only_formulas_nuevas': ver,
             'valores_cacheados_con_error': errores,
+            'veredictos_cacheados_fuera_de_lista_blanca': veredictos,
+            'autofiltro_incompleto': filtros,
             'censo_entregables': cen,
             'pestanas_citadas_inexistentes': pest,
             'citas_legales_obsoletas': citas,
