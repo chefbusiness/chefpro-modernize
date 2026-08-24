@@ -1,0 +1,26 @@
+{
+ "rol": "critico-completitud",
+ "producto": "kit-plan-financiero",
+ "version": "2.0",
+ "fecha": "2026-08-24T11:35:00+02:00",
+ "estado": "EN CURSO (scaffold, se actualiza)",
+ "hallazgos_provisionales": [
+  {
+   "id": "CRIT-01",
+   "severidad": "media-alta",
+   "celda": "07-informe-viabilidad-bancos.xlsx:Ratios:E5 (y E6,E7,E8,E9 igual; E4/E10 al reves)",
+   "que": "El semaforo compara TEXTO con NUMERO. Con el libro tal y como se entrega (C13:C17 y Proyecciones a 0), C5 devuelve el literal 'Indica el prestamo' y E5 =IF($C5>=$F$5,'OK'...) da VERDE, porque en Excel cualquier texto es mayor que cualquier numero. Cache leida del dry-run: E5..E9='OK verde', E4/E10='rojo'. El informe que se lleva al banco sale con 5 checks verdes sin un solo dato."
+  },
+  {
+   "id": "CRIT-02",
+   "severidad": "baja",
+   "celda": "03-cash-flow-forecast.xlsx:Flujo Mensual:B25 / C25 / L25 / M25",
+   "que": "Liquidacion de IVA trimestral: solo 3 de los 4 trimestres se liquidan dentro del ano (E25 Q1, H25 Q2, K25 Q3). El Q4 (K:M) no tiene liquidacion y B25 (enero) es un 0 constante verde."
+  }
+ ],
+ "listo_para_real": null,
+ "bloqueos": [],
+ "cifras_capa_producto": [],
+ "orden_ejecucion_real": [],
+ "recomendacion": ""
+}
